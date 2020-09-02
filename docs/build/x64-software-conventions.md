@@ -36,22 +36,21 @@ Although it's possible to access data with any alignment, it's recommended to al
 
 - Octaword - 128 bits
 
-|||||
-|-|-|-|-|
 |Scalar Type|C Data Type|Storage Size (in bytes)|Recommended Alignment|
-|**INT8**|**`char`**|1|Byte|
-|**UINT8**|**`unsigned char`**|1|Byte|
-|**INT16**|**`short`**|2|Word|
-|**UINT16**|**`unsigned short`**|2|Word|
-|**INT32**|**`int`**, **`long`**|4|Doubleword|
-|**UINT32**|**unsigned int, unsigned long**|4|Doubleword|
-|**INT64**|**`__int64`**|8|Quadword|
-|**UINT64**|**unsigned __int64**|8|Quadword|
-|**FP32 (single precision)**|**`float`**|4|Doubleword|
-|**FP64 (double precision)**|**`double`**|8|Quadword|
-|**POINTER**|__\*__|8|Quadword|
-|**`__m64`**|**struct __m64**|8|Quadword|
-|**`__m128`**|**struct __m128**|16|Octaword|
+|-|-|-|-|
+|**`INT8`**|**`char`**|1|Byte|
+|**`UINT8`**|**`unsigned char`**|1|Byte|
+|**`INT16`**|**`short`**|2|Word|
+|**`UINT16`**|**`unsigned short`**|2|Word|
+|**`INT32`**|**`int`**, **`long`**|4|Doubleword|
+|**`UINT32`**|**`unsigned int`**, **`unsigned long`**|4|Doubleword|
+|**`INT64`**|**`__int64`**|8|Quadword|
+|**`UINT64`**|**`unsigned __int64`**|8|Quadword|
+|**`FP32`** (single precision)|**`float`**|4|Doubleword|
+|**`FP64`** (double precision)|**`double`**|8|Quadword|
+|**`POINTER`**|__\*__|8|Quadword|
+|**`__m64`**|**`struct __m64`**|8|Quadword|
+|**`__m128`**|**`struct __m128`**|16|Octaword|
 
 ### Aggregates and unions
 
@@ -71,22 +70,21 @@ Other types, such as arrays, structs, and unions, have stricter alignment requir
 
 The following table shows the strongly suggested alignment for the scalar members of unions and structures.
 
-||||
-|-|-|-|
 |Scalar Type|C Data Type|Required Alignment|
-|**INT8**|**`char`**|Byte|
-|**UINT8**|**`unsigned char`**|Byte|
-|**INT16**|**`short`**|Word|
-|**UINT16**|**`unsigned short`**|Word|
-|**INT32**|**`int`**, **`long`**|Doubleword|
-|**UINT32**|**unsigned int, unsigned long**|Doubleword|
-|**INT64**|**`__int64`**|Quadword|
-|**UINT64**|**unsigned __int64**|Quadword|
-|**FP32 (single precision)**|**`float`**|Doubleword|
-|**FP64 (double precision)**|**`double`**|Quadword|
-|**POINTER**|<strong>\*</strong>|Quadword|
-|**`__m64`**|**struct __m64**|Quadword|
-|**`__m128`**|**struct __m128**|Octaword|
+|-|-|-|
+|**`INT8`**|**`char`**|Byte|
+|**`UINT8`**|**`unsigned char`**|Byte|
+|**`INT16`**|**`short`**|Word|
+|**`UINT16`**|**`unsigned short`**|Word|
+|**`INT32`**|**`int`**, **`long`**|Doubleword|
+|**`UINT32`**|**`unsigned int`**, **`unsigned long`**|Doubleword|
+|**`INT64`**|**`__int64`**|Quadword|
+|**`UINT64`**|**`unsigned __int64`**|Quadword|
+|**`FP32`** (single precision)|**`float`**|Doubleword|
+|**`FP64`** (double precision)|**`double`**|Quadword|
+|**`POINTER`**|<strong>\*</strong>|Quadword|
+|**`__m64`**|**`struct __m64`**|Quadword|
+|**`__m128`**|**`struct __m128`**|Octaword|
 
 The following aggregate alignment rules apply:
 
@@ -183,9 +181,8 @@ The x64 architecture provides for 16 general-purpose registers (hereafter referr
 
 The following table describes how each register is used across function calls:
 
-||||
-|-|-|-|
 |Register|Status|Use|
+|-|-|-|
 |RAX|Volatile|Return value register|
 |RCX|Volatile|First integer argument|
 |RDX|Volatile|Second integer argument|

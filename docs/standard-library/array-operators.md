@@ -8,10 +8,12 @@ ms.assetid: c8f46282-f179-4909-9a01-639cb8e18c27
 
 The \<array> header includes these **array** non-member comparison template functions.
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
-|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
+[operator!=](#op_neq)\
+[operator&gt;](#op_gt)\
+[operator&gt;=](#op_gt_eq)\
+[operator&lt;](#op_lt)\
+[operator&lt;=](#op_lt_eq)\
+[operator==](#op_eq_eq)
 
 ## <a name="op_neq"></a> operator!=
 

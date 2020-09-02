@@ -29,7 +29,7 @@ An accessor class. The default is `CAccessorBase`.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddRefRows](#addrefrows)|Increments the reference count associated with the current row.|
 |[Close](#close)|Releases rows and the current `IRowset` interface.|

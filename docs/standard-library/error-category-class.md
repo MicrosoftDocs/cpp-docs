@@ -27,13 +27,13 @@ Two predefined objects implement `error_category`: [generic_category](../standar
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[value_type](#value_type)|A type that represents the stored error code value.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[default_error_condition](#default_error_condition)|Stores the error code value for an error condition object.|
 |[equivalent](#equivalent)|Returns a value that specifies whether error objects are equivalent.|
@@ -44,9 +44,9 @@ Two predefined objects implement `error_category`: [generic_category](../standar
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
-|[operator=](#op_as)||
+|[operator=](#op_as)|Assignment operator.|
 |[operator==](#op_eq_eq)|Tests for equality between `error_category` objects.|
 |[operator!=](#op_neq)|Tests for inequality between `error_category` objects.|
 |[operator<](#op_lt)|Tests if the [error_category](../standard-library/error-category-class.md) object is less than the `error_category` object passed in for comparison.|

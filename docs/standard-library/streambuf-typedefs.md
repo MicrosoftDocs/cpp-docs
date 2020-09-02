@@ -6,9 +6,8 @@ ms.assetid: 2678e18f-f0f0-4995-bc53-f1bc7dfc4ec6
 ---
 # &lt;streambuf&gt; typedefs
 
-|||
-|-|-|
-|[streambuf](#streambuf)|[wstreambuf](#wstreambuf)|
+[streambuf](#streambuf)\
+[wstreambuf](#wstreambuf)
 
 ## <a name="streambuf"></a> streambuf
 

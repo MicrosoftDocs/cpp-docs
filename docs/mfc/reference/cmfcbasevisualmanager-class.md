@@ -23,17 +23,15 @@ class CMFCBaseVisualManager: public CObject
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCBaseVisualManager::CMFCBaseVisualManager](#cmfcbasevisualmanager)|Constructs and initializes a `CMFCBaseVisualManager` object.|
 |`CMFCBaseVisualManager::~CMFCBaseVisualManager`|Destructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCBaseVisualManager::DrawCheckBox](#drawcheckbox)|Draws a check box control by using the current Windows theme.|
 |[CMFCBaseVisualManager::DrawComboBorder](#drawcomboborder)|Draws a combo box border using the current Windows theme.|
 |[CMFCBaseVisualManager::DrawComboDropButton](#drawcombodropbutton)|Draws a combo box drop-down button using the current Windows theme.|
@@ -45,9 +43,8 @@ class CMFCBaseVisualManager: public CObject
 
 ### Protected Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCBaseVisualManager::CleanUpThemes](#cleanupthemes)|Calls `CloseThemeData` for all handles obtained in `UpdateSystemColors`.|
 |[CMFCBaseVisualManager::UpdateSystemColors](#updatesystemcolors)|Calls `OpenThemeData` to obtain handles for drawing various controls: windows, toolbars, buttons, and so on.|
 
@@ -188,13 +185,20 @@ virtual BOOL DrawComboDropButton(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pDC*|[in] A pointer to a device context.|
-|*rect*|[in] The bounding rectangle of the combo box drop-down button.|
-|*bDisabled*|[in] Specifies whether the combo box drop-down button is disabled.|
-|*bIsDropped*|[in] Specifies whether the combo box drop-down button is dropped down.|
-|*bIsHighlighted*|[in] Specifies whether the combo box drop-down button is highlighted.|
+*pDC*\
+[in] A pointer to a device context.
+
+*rect*\
+[in] The bounding rectangle of the combo box drop-down button.
+
+*bDisabled*\
+[in] Specifies whether the combo box drop-down button is disabled.
+
+*bIsDropped*\
+[in] Specifies whether the combo box drop-down button is dropped down.
+
+*bIsHighlighted*\
+[in] Specifies whether the combo box drop-down button is highlighted.
 
 ### Return Value
 

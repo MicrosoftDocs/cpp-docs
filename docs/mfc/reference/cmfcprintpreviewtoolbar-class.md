@@ -18,16 +18,14 @@ class CMFCPrintPreviewToolBar : public CMFCToolBar
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCPrintPreviewToolBar::~CMFCPrintPreviewToolBar`|Destructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCPrintPreviewToolBar::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|
 
 ## Inheritance Hierarchy

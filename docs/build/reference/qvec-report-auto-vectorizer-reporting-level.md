@@ -40,4 +40,4 @@ For information about reason codes and messages, see [Vectorizer and Parallelize
 [/Q Options (Low-Level Operations)](q-options-low-level-operations.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
-[Native code vectorization in Visual Studio](https://docs.microsoft.com/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview)
+[Native code vectorization in Visual Studio](/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview)

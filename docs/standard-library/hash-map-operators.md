@@ -6,10 +6,10 @@ ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
 ---
 # &lt;hash_map&gt; operators
 
-|||
-|-|-|
-|[operator!=](#op_neq)|[operator!= (multimap)](#op_neq_mm)|
-|[operator==](#op_eq_eq)|[operator== (multimap)](#op_eq_eq_mm)|
+[operator!=](#op_neq)\
+[operator!= (multimap)](#op_neq_mm)\
+[operator==](#op_eq_eq)\
+[operator== (multimap)](#op_eq_eq_mm)
 
 ## <a name="op_neq"></a> operator!=
 

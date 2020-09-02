@@ -22,7 +22,7 @@ Defines the class template stack and two supporting templates.
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator!=](../standard-library/stack-operators.md#op_neq)|Tests if the stack object on the left side of the operator is not equal to the stack object on the right side.|
 |[operator<](../standard-library/stack-operators.md#op_lt)|Tests if the stack object on the left side of the operator is less than the stack object on the right side.|
@@ -33,7 +33,7 @@ Defines the class template stack and two supporting templates.
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[stack Class](../standard-library/stack-class.md)|A template container adaptor class that provides a restriction of functionality limiting access to the element most recently added to some underlying container type.|
 

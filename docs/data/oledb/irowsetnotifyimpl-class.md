@@ -23,7 +23,7 @@ class ATL_NO_VTABLE IRowsetNotifyImpl : public IRowsetNotify
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[OnFieldChange](#onfieldchange)|Notifies the consumer of any change to the value of a column.|
 |[OnRowChange](#onrowchange)|Notifies the consumer of the first change to a row or of any change that affects the entire row.|

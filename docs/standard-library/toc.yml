@@ -94,6 +94,15 @@
           href: ../standard-library/atomic-functions.md
         - name: <atomic> enums
           href: ../standard-library/atomic-enums.md
+    - name: <bit>
+      expanded: false
+      items: 
+        - name: <bit>
+          href: ../standard-library/bit.md
+        - name: <bit> functions
+          href: ../standard-library/bit-functions.md
+        - name: endian enum
+          href: ../standard-library/bit-enum.md
     - name: <bitset>
       expanded: false
       items: 

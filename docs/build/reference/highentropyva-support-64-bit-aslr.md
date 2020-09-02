@@ -33,4 +33,4 @@ For **`/HIGHENTROPYVA`** to have an effect at load time, [`/DYNAMICBASE`](dynami
 - [MSVC linker options](linker-options.md)
 - [`/DYNAMICBASE`](dynamicbase-use-address-space-layout-randomization.md)
 - [`/LARGEADDRESSAWARE`](largeaddressaware-handle-large-addresses.md)
-- [Windows ISV Software Security Defenses](https://docs.microsoft.com/previous-versions/bb430720(v=msdn.10))
+- [Windows ISV Software Security Defenses](/previous-versions/bb430720(v=msdn.10))

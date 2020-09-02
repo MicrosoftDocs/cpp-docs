@@ -217,9 +217,8 @@ The following sections list the uniform random number generators (URNGs) provide
 
 #### <a name="rd"></a> Non-Deterministic Generator
 
-|||
-|-|-|
-|[random_device Class](../standard-library/random-device-class.md)|Generates a non-deterministic, cryptographically secure random sequence by using an external device. Usually used to seed an engine. Low performance, very high quality. For more information, see [Remarks](#comments).|
+[random_device Class](../standard-library/random-device-class.md)\
+Generates a non-deterministic, cryptographically secure random sequence by using an external device. Usually used to seed an engine. Low performance, very high quality. For more information, see [Remarks](#comments).
 
 #### <a name="typedefs"></a> Engine Typedefs with Predefined Parameters
 
@@ -301,7 +300,7 @@ For instantiating engines and engine adaptors. For more information, see [Engine
 
 Engine templates are used as standalone URNGs or as base engines passed to [engine adaptors](#engadapt). Usually these are instantiated with a [predefined engine typedef](#typedefs) and passed to a [distribution](#distributions). For more information, see the [Engines and Distributions](#engdist) section.
 
-|||
+|Name|Description|
 |-|-|
 |[linear_congruential_engine Class](../standard-library/linear-congruential-engine-class.md)|Generates a random sequence by using the linear congruential algorithm. Most simplistic and lowest quality.|
 |[mersenne_twister_engine Class](../standard-library/mersenne-twister-engine-class.md)|Generates a random sequence by using the Mersenne twister algorithm. Most complex, and is highest quality except for the random_device class. Very fast performance.|
@@ -311,7 +310,7 @@ Engine templates are used as standalone URNGs or as base engines passed to [engi
 
 Engine adaptors are templates that adapt other (base) engines. Usually these are instantiated with a [predefined engine typedef](#typedefs) and passed to a [distribution](#distributions). For more information, see the [Engines and Distributions](#engdist) section.
 
-|||
+|Name|Description|
 |-|-|
 |[discard_block_engine Class](../standard-library/discard-block-engine-class.md)|Generates a random sequence by discarding values returned by its base engine.|
 |[independent_bits_engine Class](../standard-library/independent-bits-engine-class.md)|Generates a random sequence with a specified number of bits by repacking bits from the values returned by its base engine.|
@@ -325,7 +324,7 @@ The following sections list the distributions provided in the \<random> header. 
 
 #### Uniform Distributions
 
-|||
+|Name|Description|
 |-|-|
 |[uniform_int_distribution Class](../standard-library/uniform-int-distribution-class.md)|Produces a uniform integer value distribution across a range in the closed interval \[a, b] (inclusive-inclusive).|
 |[uniform_real_distribution Class](../standard-library/uniform-real-distribution-class.md)|Produces a uniform real (floating-point) value distribution across a range in the half-open interval [a, b) (inclusive-exclusive).|
@@ -335,7 +334,7 @@ The following sections list the distributions provided in the \<random> header. 
 
 #### Bernoulli Distributions
 
-|||
+|Name|Description|
 |-|-|
 |[bernoulli_distribution Class](../standard-library/bernoulli-distribution-class.md)|Produces a Bernoulli distribution of **`bool`** values.|
 |[binomial_distribution Class](../standard-library/binomial-distribution-class.md)|Produces a binomial distribution of integer values.|
@@ -346,7 +345,7 @@ The following sections list the distributions provided in the \<random> header. 
 
 #### Normal Distributions
 
-|||
+|Name|Description|
 |-|-|
 |[cauchy_distribution Class](../standard-library/cauchy-distribution-class.md)|Produces a Cauchy distribution of real (floating point) values.|
 |[chi_squared_distribution Class](../standard-library/chi-squared-distribution-class.md)|Produces a chi-squared distribution of real (floating point) values.|
@@ -359,7 +358,7 @@ The following sections list the distributions provided in the \<random> header. 
 
 #### Poisson Distributions
 
-|||
+|Name|Description|
 |-|-|
 |[exponential_distribution Class](../standard-library/exponential-distribution-class.md)|Produces an exponential distribution of real (floating point) values.|
 |[extreme_value_distribution Class](../standard-library/extreme-value-distribution-class.md)|Produces an extreme value distribution of real (floating point) values.|
@@ -371,7 +370,7 @@ The following sections list the distributions provided in the \<random> header. 
 
 #### Sampling Distributions
 
-|||
+|Name|Description|
 |-|-|
 |[discrete_distribution Class](../standard-library/discrete-distribution-class.md)|Produces a discrete integer distribution.|
 |[piecewise_constant_distribution Class](../standard-library/piecewise-constant-distribution-class.md)|Produces a piecewise constant distribution of real (floating point) values.|
@@ -383,7 +382,7 @@ The following sections list the distributions provided in the \<random> header. 
 
 This section lists the general utility functions provided in the \<random> header.
 
-|||
+|Name|Description|
 |-|-|
 |[seed_seq Class](../standard-library/seed-seq-class.md)|Generates a non-biased scrambled seed sequence. Used to avoid replication of random variate streams. Useful when many URNGs are instantiated from engines.|
 
@@ -391,7 +390,7 @@ This section lists the general utility functions provided in the \<random> heade
 
 This section lists the operators provided in the \<random> header.
 
-|||
+|Name|Description|
 |-|-|
 |`operator==`|Tests whether the URNG on the left side of the operator is equal to the engine on the right side.|
 |`operator!=`|Tests whether the URNG on the left side of the operator is not equal to the engine on the right side.|

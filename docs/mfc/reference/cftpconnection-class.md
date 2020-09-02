@@ -209,10 +209,9 @@ A pointer to a string that will receive the name of the directory.
 *lpdwLen*<br/>
 A pointer to a DWORD that contains the following information:
 
-|||
-|-|-|
-|On entry|The size of the buffer referenced by *pstrDirName*.|
-|On return|The number of characters stored to *pstrDirName*. If the member function fails and ERROR_INSUFFICIENT_BUFFER is returned, then *lpdwLen* contains the number of bytes that the application must allocate in order to receive the string.|
+On entry: The size of the buffer referenced by *pstrDirName*.
+
+On return: The number of characters stored to *pstrDirName*. If the member function fails and ERROR_INSUFFICIENT_BUFFER is returned, then *lpdwLen* contains the number of bytes that the application must allocate in order to receive the string.
 
 ### Return Value
 
@@ -247,10 +246,9 @@ A pointer to a string that will receive the name of the directory.
 *lpdwLen*<br/>
 A pointer to a DWORD that contains the following information:
 
-|||
-|-|-|
-|On entry|The size of the buffer referenced by *pstrDirName*.|
-|On return|The number of characters stored to *pstrDirName*. If the member function fails and ERROR_INSUFFICIENT_BUFFER is returned, then *lpdwLen* contains the number of bytes that the application must allocate in order to receive the string.|
+On entry: The size of the buffer referenced by *pstrDirName*.
+
+On return: The number of characters stored to *pstrDirName*. If the member function fails and ERROR_INSUFFICIENT_BUFFER is returned, then *lpdwLen* contains the number of bytes that the application must allocate in order to receive the string.
 
 ### Return Value
 

@@ -70,13 +70,13 @@ The map orders the elements it controls by calling a stored function object of t
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[map](#map)|Constructs a list of a specific size or with elements of a specific value or with a specific `allocator` or as a copy of some other map.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A typedef for the `allocator` class for the map object.|
 |[const_iterator](#const_iterator)|A typedef for a bidirectional iterator that can read a **`const`** element in the map.|
@@ -127,7 +127,7 @@ The map orders the elements it controls by calling a stored function object of t
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator&#91;&#93;](#op_at)|Inserts an element into a map with a specified key value.|
 |[operator=](#op_eq)|Replaces the elements of a map with a copy of another map.|

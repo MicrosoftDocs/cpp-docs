@@ -139,7 +139,7 @@ Use the following settings to run commands on the Linux system before and after 
 
 ## Next steps
 
-[Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md)
+[Configure CMake debugging sessions](../build/configure-cmake-debugging-sessions.md?toc=/cpp/linux/toc.json&bc=/cpp/_breadcrumb/toc.json)
 
 ## See also
 

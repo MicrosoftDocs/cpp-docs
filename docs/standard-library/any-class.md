@@ -20,13 +20,13 @@ class any
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[any](#any)|Constructs an object of type `any`.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[emplace](#emplace)|Sets an any value.|
 |[has_value](#has_value)|Returns **`true`** if any has a value.|
@@ -36,7 +36,7 @@ class any
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator=](#op_eq)|Replaces the any with a copy of another any.|
 

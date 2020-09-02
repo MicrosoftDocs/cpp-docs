@@ -23,7 +23,7 @@ class CManualAccessor : public CAccessorBase
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddBindEntry](#addbindentry)|Adds a bind entry to the output columns.|
 |[AddParameterEntry](#addparameterentry)|Adds a parameter entry to the parameter accessor.|

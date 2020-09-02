@@ -12,7 +12,7 @@ This data-mapping mechanism maps property page controls to the individual proper
 
 ### Property Page Data Transfer
 
-|||
+|Name|Description|
 |-|-|
 |[DDP_CBIndex](#ddp_cbindex)|Links the selected string's index in a combo box with a control's property.|
 |[DDP_CBString](#ddp_cbstring)|Links the selected string in a combo box with a control's property. The selected string can begin with the same letters as the property's value but does not need to match it fully.|
@@ -31,7 +31,7 @@ The following is a list of macros used to create and manage property pages for a
 
 ### Property Pages
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_PROPPAGEIDS](#begin_proppageids)|Begins the list of property page IDs.|
 |[END_PROPPAGEIDS](#end_proppageids)|Ends the list of property page IDs.|

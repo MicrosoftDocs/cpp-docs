@@ -1104,9 +1104,8 @@ void swap(basic_streambuf& right);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*right*|An lvalue reference to the `basic_streambuf` object that is used to exchange values.|
+*right*\
+An lvalue reference to the `basic_streambuf` object that is used to exchange values.
 
 ### Remarks
 

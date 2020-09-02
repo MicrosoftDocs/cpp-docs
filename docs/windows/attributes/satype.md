@@ -22,9 +22,7 @@ The data type for the `SAFEARRAY` data structure that is being passed as a param
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface parameter, interface method|
 |**Repeatable**|No|

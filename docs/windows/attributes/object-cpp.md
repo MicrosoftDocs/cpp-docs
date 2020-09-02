@@ -27,9 +27,7 @@ See [nonbrowsable](nonbrowsable.md) for an example of how to use **object**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**interface**|
 |**Repeatable**|No|

@@ -49,10 +49,8 @@ The floating-point result type, defaults to **`double`**. For possible types, se
 
 The class template describes a distribution that produces values of a user-specified floating point type, or type **`double`** if none is provided, distributed according to the Weibull Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[weibull_distribution](#weibull_distribution)|`weibull_distribution::a`|`weibull_distribution::param`|
-|`weibull_distribution::operator()`|`weibull_distribution::b`|[param_type](#param_type)|
+[weibull_distribution](#weibull_distribution)\
+[param_type](#param_type)|
 
 The property functions `a()` and `b()` return their respective values for stored distribution parameters *a* and *b*.
 

@@ -22,7 +22,7 @@ Defines the container class template list and several supporting templates.
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator!=](../standard-library/list-operators.md#op_neq)|Tests if the list object on the left side of the operator is not equal to the list object on the right side.|
 |[operator<](../standard-library/list-operators.md#op_lt)|Tests if the list object on the left side of the operator is less than the list object on the right side.|
@@ -33,13 +33,13 @@ Defines the container class template list and several supporting templates.
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[swap](../standard-library/list-functions.md#swap)|Exchanges the elements of two lists.|
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[list Class](../standard-library/list-class.md)|A class template of sequence containers that maintain their elements in a linear arrangement and allow efficient insertions and deletions at any location within the sequence.|
 

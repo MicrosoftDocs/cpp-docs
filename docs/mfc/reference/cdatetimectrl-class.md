@@ -152,9 +152,8 @@ BOOL GetDateTimePickerInfo(LPDATETIMEPICKERINFO pDateTimePickerInfo) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pDateTimePickerInfo*|[out] A pointer to a [DATETIMEPICKERINFO](/windows/win32/api/commctrl/ns-commctrl-datetimepickerinfo) structure that receives a description of the current date and time picker control.<br /><br /> The caller is responsible for allocating this structure. However, this method initializes the *cbSize* member of the structure.|
+*pDateTimePickerInfo*\
+[out] A pointer to a [DATETIMEPICKERINFO](/windows/win32/api/commctrl/ns-commctrl-datetimepickerinfo) structure that receives a description of the current date and time picker control. The caller is responsible for allocating this structure. However, this method initializes the *cbSize* member of the structure.
 
 ### Return Value
 
@@ -337,9 +336,8 @@ BOOL GetIdealSize(LPSIZE psize) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*psize*|[out] Pointer to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure that contains the ideal size for the control.|
+*psize*\
+[out] Pointer to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure that contains the ideal size for the control.
 
 ### Return Value
 
@@ -467,9 +465,8 @@ DWORD SetMonthCalStyle(DWORD dwStyle);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*dwStyle*|[in] A new month calendar control style, which is a bitwise combination (OR) of month calendar control styles. For more information, see [Month Calendar Control Styles](/windows/win32/Controls/month-calendar-control-styles).|
+*dwStyle*\
+[in] A new month calendar control style, which is a bitwise combination (OR) of month calendar control styles. For more information, see [Month Calendar Control Styles](/windows/win32/Controls/month-calendar-control-styles).
 
 ### Return Value
 

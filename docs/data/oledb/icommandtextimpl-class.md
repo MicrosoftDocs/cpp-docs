@@ -30,14 +30,14 @@ The command class derived from `ICommandTextImpl`.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetCommandText](#getcommandtext)|Returns the text command set by the last call to [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).|
 |[SetCommandText](#setcommandtext)|Sets the command text, replacing the existing command text.|
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_strCommandText](#strcommandtext)|Stores the command text.|
 

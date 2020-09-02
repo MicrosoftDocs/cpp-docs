@@ -8,9 +8,8 @@ ms.assetid: b55d67cb-3c69-46bf-ad40-e845fb096c4e
 
 These are the global template operator functions defined in &lt;allocators&gt;. For class member operator functions, see the class documentation.
 
-|||
-|-|-|
-|[operator!=](#op_neq)|[operator==](#op_eq_eq)|
+[operator!=](#op_neq)\
+[operator==](#op_eq_eq)
 
 ## <a name="op_neq"></a> operator!=
 
@@ -25,10 +24,11 @@ bool operator!=(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|One of the allocator objects to be tested for inequality.|
-|*right*|One of the allocator objects to be tested for inequality.|
+*left*\
+One of the allocator objects to be tested for inequality.
+
+*right*\
+One of the allocator objects to be tested for inequality.
 
 ### Return Value
 
@@ -51,10 +51,11 @@ bool operator==(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|One of the allocator objects to be tested for equality.|
-|*right*|One of the allocator objects to be tested for equality.|
+*left*\
+One of the allocator objects to be tested for equality.
+
+*right*\
+One of the allocator objects to be tested for equality.
 
 ### Return Value
 

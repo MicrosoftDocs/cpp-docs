@@ -25,9 +25,7 @@ See the examples for [defaultvalue](defaultvalue.md) and [nonextensible](nonexte
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**interface**|
 |**Repeatable**|No|

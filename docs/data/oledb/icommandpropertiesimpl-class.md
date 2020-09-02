@@ -33,7 +33,7 @@ Your properties class.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetProperties](#getproperties)|Returns the list of properties in the Rowset property group that are currently requested for the rowset.|
 |[SetProperties](#setproperties)|Sets properties in the Rowset property group.|

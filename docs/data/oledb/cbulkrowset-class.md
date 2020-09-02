@@ -29,7 +29,7 @@ An accessor class.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddRefRows](#addrefrows)|Increments the reference count.|
 |[CBulkRowset](#cbulkrowset)|Constructor.|

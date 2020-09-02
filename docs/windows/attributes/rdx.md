@@ -34,9 +34,7 @@ This attribute can be used in conjunction with the [coclass](coclass.md), [progi
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`** or **`struct`** member|
 |**Repeatable**|No|

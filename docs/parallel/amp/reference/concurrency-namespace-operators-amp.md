@@ -5,11 +5,23 @@ ms.assetid: 77f1ae17-1eb2-480d-8fe5-66d4c24bb91e
 ---
 # Concurrency namespace operators (AMP)
 
-||||
-|-|-|-|
-|[operator!=](#operator_neq)|[operator%](#operator_mod)|[operator*](#operator_star)|
-|[operator+](#operator_add)|[operator-](#operator-)|[operator/](#operator_div)|
-|[operator==](#operator_eq_eq)|
+:::row:::
+   :::column span="":::
+      [`operator==`](#operator_eq_eq)\
+      [`operator!=`](#operator_neq)
+   :::column-end:::
+   :::column span="":::
+      [`operator+`](#operator_add)\
+      [`operator-`](#operator-)
+   :::column-end:::
+   :::column span="":::
+      [`operator*`](#operator_star)\
+      [`operator/`](#operator_div)
+   :::column-end:::
+   :::column span="":::
+      [`operator%`](#operator_mod)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="operator_eq_eq"></a> operator==
 

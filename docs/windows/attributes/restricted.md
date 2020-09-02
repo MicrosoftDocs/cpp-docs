@@ -55,9 +55,7 @@ class c : public a, public b
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface method, **interface**, **`class`**, **`struct`**|
 |**Repeatable**|No|

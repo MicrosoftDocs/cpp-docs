@@ -54,9 +54,7 @@ library MyLib {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

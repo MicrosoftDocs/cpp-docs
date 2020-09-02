@@ -286,7 +286,7 @@ The second constructor moves the associated mutex status from *Other*. After the
 
 The remaining constructors store & *Mtx* as the stored `mutex` pointer. Ownership of the `mutex` is determined by the second argument, if it exists.
 
-|||
+|Name|Description|
 |-|-|
 |`No argument`|Ownership is obtained by calling the `lock` method on the associated `mutex` object.|
 |`Adopt`|Ownership is assumed. `Mtx` must be locked when the constructor is called.|

@@ -60,9 +60,7 @@ class CMyCommand {};
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**, member, method, local|
 |**Repeatable**|No|

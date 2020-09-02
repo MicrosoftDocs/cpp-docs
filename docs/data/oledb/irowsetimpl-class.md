@@ -44,7 +44,7 @@ Storage unit for all row handles held by the provider.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddRefRows](#addrefrows)|Adds a reference count to an existing row handle.|
 |[CreateRow](#createrow)|Called by [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) to allocate a new `HROW`. Not called directly by user.|
@@ -59,7 +59,7 @@ Storage unit for all row handles held by the provider.
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_bCanFetchBack](#bcanfetchback)|Indicates whether a provider supports backward fetching.|
 |[m_bCanScrollBack](#bcanscrollback)|Indicates whether a provider can have its cursor scroll backwards.|

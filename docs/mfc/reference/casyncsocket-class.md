@@ -477,7 +477,7 @@ BOOL CreateEx(
 ### Parameters
 
 *pAI*<br/>
-A pointer to a [ADDRINFOT](https://docs.microsoft.com/windows/win32/api/ws2def/ns-ws2def-addrinfoa) to hold socket info such as the family and socket type.
+A pointer to a [ADDRINFOT](/windows/win32/api/ws2def/ns-ws2def-addrinfoa) to hold socket info such as the family and socket type.
 
 *lEvent*<br/>
 A bitmask which specifies a combination of network events in which the application is interested.

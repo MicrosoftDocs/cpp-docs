@@ -1,7 +1,7 @@
 ---
 title: "MSVC Linker options"
 description: "A list of the options supported by the Microsoft LINK linker."
-ms.date: "02/09/2020"
+ms.date: "09/01/2020"
 f1_keywords: ["link"]
 helpviewer_keywords: ["linker [C++]", "linker [C++], options listed", "libraries [C++], linking to COFF", "LINK tool [C++], linker options"]
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
@@ -38,6 +38,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/ASSEMBLYMODULE](assemblymodule-add-a-msil-module-to-the-assembly.md)|Specifies that a Microsoft intermediate language (MSIL) module should be imported into the assembly.|
 |[/ASSEMBLYRESOURCE](assemblyresource-embed-a-managed-resource.md)|Embeds a managed resource file in an assembly.|
 |[/BASE](base-base-address.md)|Sets a base address for the program.|
+|[/CETCOMPAT](cetcompat.md)|Marks the binary as CET Shadow Stack compatible.|
 |[/CGTHREADS](cgthreads-compiler-threads.md)|Sets number of cl.exe threads to use for optimization and code generation when link-time code generation is specified.|
 |[/CLRIMAGETYPE](clrimagetype-specify-type-of-clr-image.md)|Sets the type (IJW, pure, or safe) of a CLR image.|
 |[/CLRSUPPORTLASTERROR](clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md)|Preserves the last error code of functions that are called through the P/Invoke mechanism.|

@@ -1,6 +1,7 @@
 ---
 title: "snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l"
-ms.date: "11/04/2016"
+description: "API reference for snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_, which write formatted data to a string."
+ms.date: "08/27/2020"
 api_name: ["_snwprintf", "_snprintf", "_snprintf_l", "_snwprintf_l", "snprintf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
@@ -101,7 +102,7 @@ For more information, see [Format Specification Syntax: printf and wprintf Funct
 
 ## Return Value
 
-Let **len** be the length of the formatted data string, not including the terminating null. Both **len** and *count* are in bytes for **snprintf** and **_snprintf**, wide characters for **_snwprintf**.
+Let **len** be the length of the formatted data string, not including the terminating null. Both **len** and **count** are the number of characters  for **snprintf** and **_snprintf**, and the number of wide characters for **_snwprintf**.
 
 For all functions, if **len** < *count*, **len** characters are stored in *buffer*, a null-terminator is appended, and **len** is returned.
 

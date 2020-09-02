@@ -94,7 +94,7 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 
 ## Members
 
-|||
+|Name|Description|
 |-|-|
 | **Constructors** | |
 |[shared_ptr](#shared_ptr)|Constructs a `shared_ptr`.|

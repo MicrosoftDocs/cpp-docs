@@ -122,13 +122,31 @@ After you add a common control or rich edit control to a dialog box, it won't ap
 
 Currently, the **Dialog Editor** doesn't automatically add code to your project when you drag and drop the following common controls or rich edit controls onto a dialog box. Nor does Visual Studio provide an error or warning when this problem occurs. To fix, add the code for the control manually.
 
-||||
-|-|-|-|
-|Slider Control|Tree Control|Date Time Picker|
-|Spin Control|Tab Control|Month Calendar|
-|Progress Control|Animation Control|IP Address Control|
-|Hot Key|Rich Edit Control|Extended Combo Box|
-|List Control|Rich Edit 2.0 Control|Custom Control|
+:::row:::
+   :::column span="":::
+      Animation Control\
+      Custom Control\
+      Date Time Picker\
+      Extended Combo Box
+   :::column-end:::
+   :::column span="":::
+      Hot Key\
+      IP Address Control\
+      List Control\
+      Month Calendar
+   :::column-end:::
+   :::column span="":::
+      Progress Control\
+      Rich Edit 2.0 Control\
+      Rich Edit Control\
+      Slider Control
+   :::column-end:::
+   :::column span="":::
+      Spin Control\
+      Tab Control\
+      Tree Control
+   :::column-end:::
+:::row-end:::
 
 To use common controls on a dialog box, you need to call [InitCommonControlsEx](/windows/win32/api/commctrl/nf-commctrl-initcommoncontrolsex) or `AFXInitCommonControls` before you create the dialog box.
 

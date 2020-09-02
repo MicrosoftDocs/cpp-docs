@@ -9,7 +9,7 @@ Provides readable alternatives to certain operators or punctuators. The standard
 
 ## Macros
 
-|||
+|Name|Description|
 |-|-|
 |[and](../c-runtime-library/reference/and.md)|An alternative to the && operator.|
 |[and_eq](../c-runtime-library/reference/and-eq.md)|An alternative to the &= operator.|

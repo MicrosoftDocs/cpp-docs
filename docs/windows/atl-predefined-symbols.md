@@ -10,7 +10,7 @@ These symbols are defined in the ATL header files, but they support standard Win
 
 When you are working with dialogs and controls in the [Dialog Editor](dialog-editor.md), these symbols will appear in the [Properties window](/visualstudio/ide/reference/properties-window) associated with common controls. For instance, if your dialog box has a **Cancel** button, that command will be associated with the symbol IDCANCEL in the **Properties** window.
 
-|||
+|Name|Description|
 |-|-|
 |IDABORT|(control) Dialog box, Abort button|
 |IDC_STATIC|(control) Static control|

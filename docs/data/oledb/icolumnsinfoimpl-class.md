@@ -31,7 +31,7 @@ Your class, derived from `IColumnsInfoImpl`.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetColumnInfo](#getcolumninfo)|Returns the column metadata needed by most consumers.|
 |[MapColumnIDs](#mapcolumnids)|Returns an array of ordinals of the columns in a rowset that are identified by the specified column IDs.|

@@ -34,7 +34,7 @@ A rowset class.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Open](#open)|Opens the table.|
 

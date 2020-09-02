@@ -38,9 +38,7 @@ See the [coclass](coclass.md) example for a sample use of **vi_progid**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|

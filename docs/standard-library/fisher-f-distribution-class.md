@@ -51,10 +51,8 @@ The uniform random number generator engine. For possible types, see [\<random>](
 
 The class template describes a distribution that produces values of a user-specified floating-point type, or type **`double`** if none is provided, distributed according to the Fisher's F-Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[fisher_f_distribution](#fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|
-|`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[param_type](#param_type)|
+[fisher_f_distribution](#fisher_f_distribution)\
+[param_type](#param_type)
 
 The property functions `m()` and `n()` return the values for the stored distribution parameters `m` and `n` respectively.
 

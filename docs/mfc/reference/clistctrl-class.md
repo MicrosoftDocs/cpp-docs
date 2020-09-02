@@ -1089,10 +1089,11 @@ BOOL GetGroupInfoByIndex(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*iIndex*|[in] Zero-based index of a group.|
-|*pGroup*|[out] Pointer to an [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) structure that receives information about the group specified by the *iIndex* parameter.<br /><br /> The caller is responsible for initializing the members of the [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) structure. Set the `cbSize` member to the size of the structure, and the flags of the `mask` member to specify the information to retrieve.|
+*iIndex*\
+[in] Zero-based index of a group.
+
+*pGroup*\
+[out] Pointer to an [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) structure that receives information about the group specified by the *iIndex* parameter. The caller is responsible for initializing the members of the [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) structure. Set the `cbSize` member to the size of the structure, and the flags of the `mask` member to specify the information to retrieve.
 
 ### Return Value
 
@@ -1173,11 +1174,20 @@ BOOL GetGroupRect(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*iGroupId*|[in] Specifies a group.|
-|*lpRect*|[in, out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure. If this method is successful, the structure receives the rectangle coordinates of the group that is specified by *iGroupId*.|
-|*iCoords*|[in] Specifies the rectangle coordinates to retrieve. Use one of these values:<br /><br /> - LVGGR_GROUP - (Default) Coordinates of the entire expanded group.<br />- LVGGR_HEADER - Coordinates of only the header (collapsed group).<br />- LVGGR_SUBSETLINK - Coordinates of only the subset link (markup subset).|
+*iGroupId*\
+[in] Specifies a group.
+
+*lpRect*\
+[in, out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure. If this method is successful, the structure receives the rectangle coordinates of the group that is specified by *iGroupId*.
+
+*iCoords*\
+[in] Specifies the rectangle coordinates to retrieve. Use one of these values:
+
+- LVGGR_GROUP - (Default) Coordinates of the entire expanded group.
+
+- LVGGR_HEADER - Coordinates of only the header (collapsed group).
+
+- LVGGR_SUBSETLINK - Coordinates of only the subset link (markup subset).
 
 ### Return Value
 
@@ -1230,10 +1240,11 @@ UINT GetGroupState(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*iGroupId*|[in] Zero-based index of a group.|
-|*dwMask*|[in] Mask that specifies the state value to retrieve for the specified group. For more information, see the `mask` member of the [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) structure.|
+*iGroupId*\
+[in] Zero-based index of a group.
+
+*dwMask*\
+[in] Mask that specifies the state value to retrieve for the specified group. For more information, see the `mask` member of the [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) structure.
 
 ### Return Value
 
@@ -1520,12 +1531,23 @@ BOOL GetItemIndexRect(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pItemIndex*|[in] Pointer to an [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) structure for the parent item of the subitem.<br /><br /> The caller is responsible for allocating and setting the members of the [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) structure. This parameter cannot be NULL.|
-|*iColumn*|[in] Zero-based index of a column in the control.|
-|*rectType*|[in] Portion of the list-view subitem for which the bounding rectangle is retrieved. Specify one of the following values:<br /><br /> LVIR_BOUNDS - Returns the bounding rectangle of the entire subitem, including the icon and label.<br /><br /> LVIR_ICON - Returns the bounding rectangle of the icon or small icon of the subitem.<br /><br /> LVIR_LABEL - Returns the bounding rectangle of the subitem text.|
-|*pRect*|[out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that receives information about the bounding rectangle of the subitem.<br /><br /> The caller is responsible for allocating the [RECT](/windows/win32/api/windef/ns-windef-rect) structure. This parameter cannot be NULL.|
+*pItemIndex*\
+[in] Pointer to an [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) structure for the parent item of the subitem. The caller is responsible for allocating and setting the members of the [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) structure. This parameter cannot be NULL.
+
+*iColumn*\
+[in] Zero-based index of a column in the control.
+
+*rectType*\
+[in] Portion of the list-view subitem for which the bounding rectangle is retrieved. Specify one of the following values:
+
+- LVIR_BOUNDS - Returns the bounding rectangle of the entire subitem, including the icon and label.
+
+- LVIR_ICON - Returns the bounding rectangle of the icon or small icon of the subitem.
+
+- LVIR_LABEL - Returns the bounding rectangle of the subitem text.
+
+*pRect*\
+[out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that receives information about the bounding rectangle of the subitem. The caller is responsible for allocating the [RECT](/windows/win32/api/windef/ns-windef-rect) structure. This parameter cannot be NULL.
 
 ### Return Value
 
@@ -1688,11 +1710,14 @@ BOOL GetItemSpacing(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*fSmall*|[in] View for which to retrieve the item spacing. Specify TRUE for small icon view, or FALSE for icon view.|
-|*pnHorzSpacing*|[out] Contains the horizontal spacing between items.|
-|*pnVertSpacing*|[out] Contains the vertical spacing between items.|
+*fSmall*\
+[in] View for which to retrieve the item spacing. Specify TRUE for small icon view, or FALSE for icon view.
+
+*pnHorzSpacing*\
+[out] Contains the horizontal spacing between items.
+
+*pnVertSpacing*\
+[out] Contains the vertical spacing between items.
 
 ### Return Value
 
@@ -1826,10 +1851,11 @@ BOOL GetNextItemIndex(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pItemIndex*|[in, out] Pointer to the [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) structure that describes the item where the search begins, or -1 to find the first item that matches the flags in the *nFlags* parameter.<br /><br /> If this method is successful, the `LVITEMINDEX` structure describes the item found by the search.|
-|*nFlags*|[in] A bitwise combination (OR) of flags that specify how to perform the search.<br /><br /> The search can depend on the index, state, or appearance of the target item, or the target item's physical position relative to the item specified by the *pItemIndex* parameter. For more information, see the *flags* parameter in the [LVM_GETNEXTITEMINDEX](/windows/win32/controls/lvm-getnextitemindex) message.|
+*pItemIndex*\
+[in, out] Pointer to the [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) structure that describes the item where the search begins, or -1 to find the first item that matches the flags in the *nFlags* parameter. If this method is successful, the `LVITEMINDEX` structure describes the item found by the search.
+
+*nFlags*\
+[in] A bitwise combination (OR) of flags that specify how to perform the search. The search can depend on the index, state, or appearance of the target item, or the target item's physical position relative to the item specified by the *pItemIndex* parameter. For more information, see the *flags* parameter in the [LVM_GETNEXTITEMINDEX](/windows/win32/controls/lvm-getnextitemindex) message.
 
 ### Return Value
 
@@ -2608,9 +2634,8 @@ BOOL IsItemVisible(int index) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*index*|[in] Zero-based index of an item in the current list-view control.|
+*index*\
+[in] Zero-based index of an item in the current list-view control.
 
 ### Return Value
 
@@ -2630,9 +2655,8 @@ UINT MapIDToIndex(UINT id) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*id*|[in] The unique ID of an item.|
+*id*\
+[in] The unique ID of an item.
 
 ### Return Value
 
@@ -2656,9 +2680,8 @@ UINT MapIndexToID(UINT index) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*index*|[in] The zero-based index of an item.|
+*index*\
+[in] The zero-based index of an item.
 
 ### Return Value
 
@@ -3555,11 +3578,14 @@ BOOL SetItemIndexState(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pItemIndex*|[in] Pointer to an [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) structure that describes an item. The caller is responsible for allocating this structure and setting its members.|
-|*dwState*|[in] The state to set the item, which is a bitwise combination of [list view item states](/windows/win32/Controls/list-view-item-states). Specify zero to reset, or one to set, a state.|
-|*dwMask*|[in] A mask of the valid bits of the state specified by the *dwState* parameter. Specify a bitwise combination (OR) of [list view item states](/windows/win32/Controls/list-view-item-states).|
+*pItemIndex*\
+[in] Pointer to an [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) structure that describes an item. The caller is responsible for allocating this structure and setting its members.
+
+*dwState*\
+[in] The state to set the item, which is a bitwise combination of [list view item states](/windows/win32/Controls/list-view-item-states). Specify zero to reset, or one to set, a state.
+
+*dwMask*\
+[in] A mask of the valid bits of the state specified by the *dwState* parameter. Specify a bitwise combination (OR) of [list view item states](/windows/win32/Controls/list-view-item-states).
 
 ### Return Value
 
@@ -4017,10 +4043,11 @@ BOOL SortItemsEx(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pfnCompare*|[in] Address of the application-defined comparison function.<br /><br /> The sort operation calls the comparison function each time the relative order of two list items needs to be determined. The comparison function must be either a static member of a class or a stand-alone function that is not a member of any class.|
-|*dwData*|[in] Application-defined value passed to the comparison function.|
+*pfnCompare*\
+[in] Address of the application-defined comparison function. The sort operation calls the comparison function each time the relative order of two list items needs to be determined. The comparison function must be either a static member of a class or a stand-alone function that is not a member of any class.
+
+*dwData*\
+[in] Application-defined value passed to the comparison function.
 
 ### Return Value
 

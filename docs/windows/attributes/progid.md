@@ -40,9 +40,7 @@ See the example for [coclass](coclass.md) for a sample use of `progid`.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|`class`, `struct`|
 |**Repeatable**|No|

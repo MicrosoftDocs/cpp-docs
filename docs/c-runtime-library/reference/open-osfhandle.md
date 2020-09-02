@@ -40,8 +40,8 @@ The **_open_osfhandle** function allocates a C run-time file descriptor. It asso
 
 These manifest constants are defined in \<fcntl.h>:
 
-|||
-|-|-|
+| Constant | Description |
+|--|--|
 | **\_O\_APPEND** | Positions a file pointer to the end of the file before every write operation. |
 | **\_O\_RDONLY** | Opens the file for reading only. |
 | **\_O\_TEXT** | Opens the file in text (translated) mode. |

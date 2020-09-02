@@ -136,7 +136,7 @@ Numeric formatting rules for subsequent insertions to `cout` remain the same as 
 
 ### Static Functions
 
-|||
+|Name|Description|
 |-|-|
 |[classic](#classic)|The static member function returns a locale object that represents the classic C locale.|
 |[global](#global)|Resets the default local for the program.|

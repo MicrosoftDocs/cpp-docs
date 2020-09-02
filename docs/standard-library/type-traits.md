@@ -34,22 +34,44 @@ using add_const_t = typename add_const<T>::type;
 
 These are the provided aliases for the `type` members:
 
-||||
-|-|-|-|
-| add_const_t | add_cv_t | add_lvalue_reference_t |
-| add_pointer_t | add_rvalue_reference_t | add_volatile_t |
-| aligned_storage_t | aligned_union_t | common_type_t |
-| conditional_t | decay_t | enable_if_t |
-| invoke_result_t | make_signed_t | make_unsigned_t |
-| remove_all_extents_t | remove_const_t | remove_cv_t |
-| remove_extent_t | remove_pointer_t | remove_reference_t |
-| remove_volatile_t | result_of_t | underlying_type_t |
+:::row:::
+   :::column:::
+      `add_const_t`\
+      `add_cv_t`\
+      `add_lvalue_reference_t`\
+      `add_pointer_t`\
+      `add_rvalue_reference_t`\
+      `add_volatile_t`\
+      `aligned_storage_t`\
+      `aligned_union_t`\
+   :::column-end:::
+   :::column:::
+      `common_type_t`\
+      `conditional_t`\
+      `decay_t`\
+      `enable_if_t`\
+      `invoke_result_t`\
+      `make_signed_t`\
+      `make_unsigned_t`\
+      `remove_all_extents_t`\
+   :::column-end:::
+   :::column:::
+      `remove_const_t`\
+      `remove_cv_t`\
+      `remove_extent_t`\
+      `remove_pointer_t`\
+      `remove_reference_t`\
+      `remove_volatile_t`\
+      `result_of_t`\
+      `underlying_type_t`\
+   :::column-end:::
+:::row-end:::
 
 ### Classes
 
 Helper class and typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[integral_constant](../standard-library/integral-constant-class-bool-constant-class.md)|Makes an integral constant from a type and a value.|
 |[true_type](../standard-library/type-traits-typedefs.md#true_type)|Holds integral constant with true value.|
@@ -57,7 +79,7 @@ Helper class and typedefs
 
 Primary type categories
 
-|||
+|Name|Description|
 |-|-|
 |[is_void](../standard-library/is-void-class.md)|Tests whether the type is **`void`**.|
 |[is_null_pointer](../standard-library/is-null-pointer-class.md)|Tests whether the type is `std::nullptr_t`.|
@@ -76,7 +98,7 @@ Primary type categories
 
 Composite type categories
 
-|||
+|Name|Description|
 |-|-|
 |[is_reference](../standard-library/is-reference-class.md)|Tests whether the type is a reference.|
 |[is_arithmetic](../standard-library/is-arithmetic-class.md)|Tests whether the type is arithmetic.|
@@ -88,7 +110,7 @@ Composite type categories
 
 Type properties
 
-|||
+|Name|Description|
 |-|-|
 |[is_const](../standard-library/is-const-class.md)|Tests whether the type is **`const`**.|
 |[is_volatile](../standard-library/is-volatile-class.md)|Tests whether the type is **`volatile`**.|
@@ -141,7 +163,7 @@ Type properties
 
 Type property queries
 
-|||
+|Name|Description|
 |-|-|
 |[alignment_of](../standard-library/alignment-of-class.md)|Gets the alignment of a type.|
 |[rank](../standard-library/rank-class.md)|Gets the number of array dimensions.|
@@ -149,7 +171,7 @@ Type property queries
 
 Type relations
 
-|||
+|Name|Description|
 |-|-|
 |[is_same](../standard-library/is-same-class.md)|Tests whether two types are the same.|
 |[is_base_of](../standard-library/is-base-of-class.md)|Tests whether one type is a base of another.|
@@ -157,7 +179,7 @@ Type relations
 
 Const-volatile modifications
 
-|||
+|Name|Description|
 |-|-|
 |[add_const](../standard-library/add-const-class.md)|Produces a **`const`** type from type.|
 |[add_volatile](../standard-library/add-volatile-class.md)|Produces a **`volatile`** type from type.|
@@ -168,7 +190,7 @@ Const-volatile modifications
 
 Reference modifications
 
-|||
+|Name|Description|
 |-|-|
 |[add_lvalue_reference](../standard-library/add-lvalue-reference-class.md)|Produces a reference to type from type.|
 |[add_rvalue_reference](../standard-library/add-rvalue-reference-class.md)|Produces an rvalue reference to type from type|
@@ -176,28 +198,28 @@ Reference modifications
 
 Sign modifications
 
-|||
+|Name|Description|
 |-|-|
 |[make_signed](../standard-library/make-signed-class.md)|Produces the type if signed, or the smallest signed type greater than or equal in size to type.|
 |[make_unsigned](../standard-library/make-unsigned-class.md)|Produces the type if unsigned, or the smallest unsigned type greater than or equal in size to type.|
 
 Array modifications
 
-|||
+|Name|Description|
 |-|-|
 |[remove_all_extents](../standard-library/remove-all-extents-class.md)|Produces a non-array type from an array type.|
 |[remove_extent](../standard-library/remove-extent-class.md)|Produces the element type from an array type.|
 
 Pointer modifications
 
-|||
+|Name|Description|
 |-|-|
 |[add_pointer](../standard-library/add-pointer-class.md)|Produces a pointer to type from type.|
 |[remove_pointer](../standard-library/remove-pointer-class.md)|Produces a type from a pointer to type.|
 
 Other transformations
 
-|||
+|Name|Description|
 |-|-|
 |[aligned_storage](../standard-library/aligned-storage-class.md)|Allocates uninitialized memory for an aligned type.|
 |[aligned_union](../standard-library/aligned-union-class.md)|Allocates uninitialized memory for an aligned union with a non-trivial constructor or destructor.|
@@ -211,7 +233,7 @@ Other transformations
 
 Logical operator traits
 
-|||
+|Name|Description|
 |-|-|
 |[conjunction](../standard-library/conjunction-class.md)||
 |[disjunction](../standard-library/disjunction-class.md)||

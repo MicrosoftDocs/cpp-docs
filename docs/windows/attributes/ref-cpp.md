@@ -37,9 +37,7 @@ __interface IFireTabCtrl
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`typedef`**, interface parameter, interface method|
 |**Repeatable**|No|

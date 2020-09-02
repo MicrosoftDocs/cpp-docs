@@ -24,23 +24,23 @@ The `Type` class is useful in applications that must direct processing by using 
 
 ## Public methods
 
-|||
-|-|-|
-|[Type::GetTypeCode Method](#gettypecode)|Returns a [Platform::TypeCode Enumeration](../cppcx/platform-typecode-enumeration.md) value for the object.|
-|[Type::ToString Method](#tostring)|Returns the name of the type as specified in its metadata.|
+| Name | Description |
+|--|--|
+| [Type::GetTypeCode Method](#gettypecode) | Returns a [Platform::TypeCode Enumeration](../cppcx/platform-typecode-enumeration.md) value for the object. |
+| [Type::ToString Method](#tostring) | Returns the name of the type as specified in its metadata. |
 
 ## Public properties
 
-|||
-|-|-|
-|[Type::FullName](#fullname)|Returns a [Platform::String Class](../cppcx/platform-string-class.md)^ that represents the fully qualified name of the type, and uses . (dot) as a separator, not :: (double colon)—for example, `MyNamespace.MyClass`.|
+| Name | Description |
+|--|--|
+| [Type::FullName](#fullname) | Returns a [Platform::String Class](../cppcx/platform-string-class.md)^ that represents the fully qualified name of the type, and uses . (dot) as a separator, not :: (double colon)—for example, `MyNamespace.MyClass`. |
 
 ## Conversion operators
 
-|||
-|-|-|
-|[operator Type^](../cppcx/operator-type-hat.md)|Enables conversion from `Windows::UI::Xaml::Interop::TypeName` to `Platform::Type`.|
-|[operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)|Enables conversion from `Platform::Type` to `Windows::UI::Xaml::Interop::TypeName`.|
+| Name | Description |
+|--|--|
+| [operator Type^](../cppcx/operator-type-hat.md) | Enables conversion from `Windows::UI::Xaml::Interop::TypeName` to `Platform::Type`. |
+| [operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md) | Enables conversion from `Platform::Type` to `Windows::UI::Xaml::Interop::TypeName`. |
 
 ### Requirements
 

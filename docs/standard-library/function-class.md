@@ -87,19 +87,19 @@ An empty `function` object does not hold a callable object or a reference to a c
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[function](#function)|Constructs a wrapper that either is empty or stores a callable object of arbitrary type with a fixed signature.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[result_type](#result_type)|The return type of the stored callable object.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[assign](#assign)|Assigns a callable object to this function object.|
 |[swap](#swap)|Swap two callable objects.|
@@ -108,7 +108,7 @@ An empty `function` object does not hold a callable object or a reference to a c
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator unspecified](#op_unspecified)|Tests if stored callable object exists.|
 |[operator()](#op_call)|Calls a callable object.|

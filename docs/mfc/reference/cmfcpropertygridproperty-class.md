@@ -483,9 +483,8 @@ int GetExpandedSubItems(BOOL bIncludeHidden=TRUE) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*bIncludeHidden*|[in] TRUE to include the hidden sub-items in the count; otherwise, FALSE. The default value is TRUE.|
+*bIncludeHidden*\
+[in] TRUE to include the hidden sub-items in the count; otherwise, FALSE. The default value is TRUE.
 
 ### Return Value
 
@@ -978,9 +977,8 @@ virtual void OnClickName(CPoint C);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*C*|[in] A point, in client coordinates.|
+*C*\
+[in] A point, in client coordinates.
 
 ### Remarks
 
@@ -1228,9 +1226,8 @@ virtual BOOL OnKillFocus(CWnd*);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*CWnd*|[in] (Not used.) Pointer to a window.|
+*CWnd*\
+[in] (Not used.) Pointer to a window.
 
 ### Return Value
 
@@ -1278,9 +1275,8 @@ virtual void OnRClickName(CPoint C);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*C*|[in] A point, in client coordinates.|
+*C*\
+[in] A point, in client coordinates.
 
 ### Remarks
 
@@ -1298,10 +1294,11 @@ virtual void OnRClickValue(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*C*|[in] A point, in client coordinates.|
-|*B*|[in] A Boolean.|
+*C*\
+[in] A point, in client coordinates.
+
+*B*\
+[in] A Boolean.
 
 ### Remarks
 
