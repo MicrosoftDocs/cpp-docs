@@ -1,5 +1,6 @@
 ---
 title: "ctan, ctanf, ctanl"
+description: "API reference for ctan, ctanf, and ctanl; which retrieve the tangent of a complex number."
 ms.date: "11/04/2016"
 api_name: ["ctan", "ctanf", "ctanl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
@@ -55,7 +56,7 @@ Because C++ allows overloading, you can call overloads of **ctan** that take and
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**ctan**,               **ctanf**, **ctanl**|\<complex.h>|\<ccomplex>|
+|**ctan**,  **ctanf**, **ctanl**|\<complex.h>|\<ccomplex>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
