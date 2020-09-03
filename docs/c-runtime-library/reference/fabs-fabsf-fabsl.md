@@ -43,7 +43,7 @@ Floating-point value.
 
 ## Return Value
 
-The **fabs** functions return the absolute value of the argument *x*. There is no error return.
+The **fabs** functions return the absolute value of the argument *x*. There's no error return.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|

@@ -43,6 +43,8 @@ Non-negative floating-point value
 
 Because C++ allows overloading, you can call overloads of **sqrt** that take **`float`** or **`long double`** types. In a C program, **sqrt** always takes and returns **`double`**.
 
+If you use the \<tgmath.h> `sqrt()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Return Value
@@ -54,10 +56,6 @@ The **sqrt** functions return the square-root of *x*. By default, if *x* is nega
 |± QNAN,IND|none|_DOMAIN|
 |- ∞|none|_DOMAIN|
 |x<0|none|_DOMAIN|
-
-## Remarks
-
-If you use the \<tgmath.h> `sqrt()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 ## Requirements
 
