@@ -1,6 +1,6 @@
 ---
 title: "/CETCOMPAT (CET Shadow Stack compatible)"
-ms.date: "06/30/2020"
+ms.date: "09/01/2020"
 f1_keywords: ["/CETCOMPAT"]
 helpviewer_keywords: ["/CETCOMPAT linker option", "/CETCOMPAT"]
 ---
@@ -36,7 +36,7 @@ Starting in Visual Studio 2019 version 16.7:
 
 1. Select the **CET Shadow Stack Compatible** property.
 
-1. In the dropdown control, choose **`Yes (/CETCOMPAT)`** to enable EH continuation metadata, or **`No (/CETCOMPAT:NO)`** to disable it.
+1. In the dropdown control, choose **`Yes (/CETCOMPAT)`** to mark the binary as CET Shadow Stack compatible , or **`No (/CETCOMPAT:NO)`** to mark it as non-compatible.
 
 In previous versions of Visual Studio 2019:
 
@@ -44,7 +44,7 @@ In previous versions of Visual Studio 2019:
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
-1. In the **Additional Options** edit control, add *`/CETCOMPAT`* to enable EH continuation metadata, or *`/CETCOMPAT:NO`* to explicitly disable it.
+1. In the **Additional Options** edit control, add *`/CETCOMPAT`* to mark the binary as CET Shadow Stack compatible, or *`/CETCOMPAT:NO`* to explicitly mark it as non-compatible.
 
 ### To set this linker option programmatically
 
