@@ -82,6 +82,11 @@ The following table lists the macros that are available in \<tgmath.h> and what 
 `cimag` | - | - | - | [cimagf](reference/cimag-cimagf-cimagl.md) | [cimag](reference/cimag-cimagf-cimagl.md) | [cimagl](reference/cimag-cimagf-cimagl.md) |
 `cproj` | - | - | - | [cprojf](reference/cproj-cprojf-cprojl.md) | [cproj](reference/cproj-cprojf-cprojl.md) | [cprojl](reference/cproj-cprojf-cprojl.md) |
 
+## Requirements
+
+`/std:C11` or later is required.
+Windows SDK version 10.0.20201.0 or later.
+
 ## See also
 
 [C Run-Time library reference](c-run-time-library-reference.md)
