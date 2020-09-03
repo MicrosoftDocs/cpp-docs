@@ -7,17 +7,17 @@ helpviewer_keywords: ["CRT tgmath.h"]
 
 # Type-generic math
 
-For C11 and later, the `<tgmath.h>` header, in addition to including `<math.h>` and `<complex.h>`, provides macros that invoke a corresponding math function based on the types of the parameters.
+For ISO C Standard 11 (C11) and later, the \<tgmath.h> header, in addition to including \<math.h> and \<complex.h>, provides macros that invoke a corresponding math function based on the types of the parameters.
 
-C run-time library math functions come in real and complex variants. Each variant comes in three `flavors`, depending on the type of the argument: `float`, `double`, and `long double`.
+C runtime library math functions come in real and complex variants. Each variant comes in three `flavors`, depending on the type of the argument: `float`, `double`, and `long double`. Because C doesn't support overloading like C++ does, each variant has a different name. For example, to get the absolute value of a real floating-point value, you'd call either `fabsf`, `fabs`, or `fabsl` depending on whether you are passing a `float`, `double`, or `long double` value, respectively. To get the complex absolute value, you'd call one of `cabsf`, `cabs`, or `cabsl` depending on whether you are passing a `float`, `double`, and `long double`complex value, respectively.
 
-For example, to get the absolute value of a real floating-point value, you`d call one of `fabsf`, `fabs`, or `fabsl` depending on whether you are passing a `float`, `double`, or `long double` argument, respectively. To get the complex (or norm, modulus, or magnitude) absolute value, you`d call one of `cabsf`, `cabs`, or `cabsl` depending on whether you are passing a `float`, `double`, and `long double`complex argument, respectively.
+\<tgmath.h> contains macros that simplify the selection of the right math function to call. The macros examine the type they are passed and then call the right function. For example, the `sqrt` macro binds `sqrt(9.9f)` to `sqrtf()`, whereas it binds `sqrt(9.9)` to `sqrt()`. If at least one macro argument for a generic parameter is complex, then the macro binds to a complex function; otherwise, it invokes a real function.
 
-`<tgmath.h>` contains macros that simplify the selection of the right math function to call. The macros examine the type that you pass them, and then call the right function. For example, the `sqrt` macro turns `sqrt(9.9f)` into a call to `sqrtf()`, whereas it turns `sqrt(9.9)`into a call to `sqrt()`.
+The type-generic macros in \<tgmath.h> allow you to write more portable code because you don't need to manage casting or selecting different function names depending on the type of argument.
 
-These macros are implemented using the C11 keyword _Generic, so they are portable.
+These macros are in their own header so that programs written using the `<math.h>` header won't break. So `double x = sin(42);` behaves as it always has when you include \<math.h>. Even so, most existing C programs are expected to be unaffected when the \<tgmath.h> header is included instead of \<math.h> or \<complex.h>.
 
-The following table lists the macros that are available and what they expand to:
+The following table lists the macros that are available in \<tgmath.h> and what they expand to. The following functions are not listed in this table because they don't have a corresponding type-generic macro as it wasn't clear how to make them safe without complicating type resolution:`modf()`, `j0()`, `j1()`, `y0()`, `y1()`, and `yn()`.
 
 |Macro  |Real</br>`float`  | Real</br>`double` | Real</br>`long double` | Complex</br>`float` | Complex</br>`double` | Complex</br>`long double` |
 |---------|---------|---------|---------|---------|---------|---------|
@@ -52,35 +52,35 @@ The following table lists the macros that are available and what they expand to:
 `fmax` | [fmaxf](fmax-fmaxf-fmaxl.md) | [fmax](fmax-fmaxf-fmaxl.md) | [fmaxl](fmax-fmaxf-fmaxl.md) | - | - | - |
 `fmin` | [fminf](fmin-fminf-fminl.md) | [fmin](fmin-fminf-fminl.md) | [fminl](fmin-fminf-fminl.md) | - | - | - |
 `fmod` | [fmodf](fmod-fmodf.md) | [fmod](fmod-fmodf.md) | [fmodl](fmod-fmodf.md) | - | - | - |
-`frexp` | [frexpf]() | [frexp]() | [frexpl]() | - | - | - |
-`hypot` | [hypotf]() | [hypot]() | [hypotl]() | - | - | - |
-`ilogb` | [ilogbf]() | [ilogb]() | [ilogbl]() | - | - | - |
-`ldexp` | [ldexpf]() | [ldexp]() | [ldexpl]() | - | - | - |
-`lgamma` | [lgammaf]() | [lgamma]() | [lgammal]() | - | - | - |
-`llrint` | [llrintf]() | [llrint]() | [llrintl]() | - | - | - |
-`llround` | [llroundf]() | [llround]() | [llroundl]() | - | - | - |
-`log10` | [log10f]() | [log10]() | [log10l]() | - | - | - |
-`log1p` | [log1pf]() | [log1p]() | [log1pl]() | - | - | - |
-`log2` | [log2f]() | [log2]() | [log2l]() | - | - | - |
-`logb` | [logbf]() | [logb]() | [logbl]() | - | - | - |
-`lrint` | [lrintf]() | [lrint]() | [lrintl]() | - | - | - |
-`lround` | [lroundf]() | [lround]() | [lroundl]() | - | - | - |
-`nearbyint` | [nearbyintf]() | [nearbyint]() | [nearbyintl]() | - | - | - |
-`nextafter` | [nextafterf]() | [nextafter]() | [nextafterl]() | - | - | - |
-`nexttoward` | [nexttowardf]() | [nexttoward]() | [nexttowardl]() | - | - | - |
-`remainder` | [remainderf]() | [remainder]() | [remainderl]() | - | - | - |
-`remquo` | [remquof]() | [remquo]() | [remquol]() | - | - | - |
-`rint` | [rintf]() | [rint]() | [rintl]() | - | - | - |
-`round` | [roundf]() | [round]() | [roundl]() | - | - | - |
-`scalbln` | [scalblnf]() | [scalbln]() | [scalblnl]() | - | - | - |
-`scalbn` | [scalbnf]() | [scalbn]() | [scalbnl]() | - | - | - |
-`tgamma` | [tgammaf]() | [tgamma]() | [tgammal]() | - | - | - |
-`trunc` | [truncf]() | [trunc]() | [truncl]() | - | - | - |
-`carg` | - | - | - | [cargf]() | [carg]() | [cargl]() |
-`conj` | - | - | - | [conjf]() | [conj]() | [conjl]() |
-`creal` | - | - | - | [crealf]() | [creal]() | [creall]() |
-`cimag` | - | - | - | [cimagf]() | [cimag]() | [cimagl]() |
-`cproj` | - | - | - | [cprojf]() | [cproj]() | [cprojl]() |
+`frexp` | [frexpf](frexp.md) | [frexp](frexp.md) | [frexpl](frexp.md) | - | - | - |
+`hypot` | [hypotf](hypot-hypotf-hypotl-hypot-hypotf-hypotl.md) | [hypot](hypot-hypotf-hypotl-hypot-hypotf-hypotl.md) | [hypotl](hypot-hypotf-hypotl-hypot-hypotf-hypotl.md) | - | - | - |
+`ilogb` | [ilogbf](ilogb-ilogbf-ilogbl2.md) | [ilogb](ilogb-ilogbf-ilogbl2.md) | [ilogbl](ilogb-ilogbf-ilogbl2.md) | - | - | - |
+`ldexp` | [ldexpf](ldexp.md) | [ldexp](ldexp.md) | [ldexpl](ldexp.md) | - | - | - |
+`lgamma` | [lgammaf](lgamma-lgammaf-lgammal.md) | [lgamma](lgamma-lgammaf-lgammal.md) | [lgammal](lgamma-lgammaf-lgammal.md) | - | - | - |
+`llrint` | [llrintf](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md) | [llrint](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md) | [llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md) | - | - | - |
+`llround` | [llroundf](lround-lroundf-lroundl-llround-llroundf-llroundl.md) | [llround](lround-lroundf-lroundl-llround-llroundf-llroundl.md) | [llroundl](lround-lroundf-lroundl-llround-llroundf-llroundl.md) | - | - | - |
+`log10` | [log10f](log-logf-log10-log10f.md) | [log10](log-logf-log10-log10f.md) | [log10l](log-logf-log10-log10f.md) | - | - | - |
+`log1p` | [log1pf](log1p-log1pf-log1pl2.md) | [log1p](log1p-log1pf-log1pl2.md) | [log1pl](log1p-log1pf-log1pl2.md) | - | - | - |
+`log2` | [log2f](log2-log2f-log2l.md) | [log2](log2-log2f-log2l.md) | [log2l](log2-log2f-log2l.md) | - | - | - |
+`logb` | [logbf](logb-logbf-logbl-logb-logbf.md) | [logb](logb-logbf-logbl-logb-logbf.md) | [logbl](logb-logbf-logbl-logb-logbf.md) | - | - | - |
+`lrint` | [lrintf](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md) | [lrint](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md) | [lrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md) | - | - | - |
+`lround` | [lroundf](lround-lroundf-lroundl-llround-llroundf-llroundl.md) | [lround](lround-lroundf-lroundl-llround-llroundf-llroundl.md) | [lroundl](lround-lroundf-lroundl-llround-llroundf-llroundl.md) | - | - | - |
+`nearbyint` | [nearbyintf](nearbyint-nearbyintf-nearbyintl1.md) | [nearbyint](nearbyint-nearbyintf-nearbyintl1.md) | [nearbyintl](nearbyint-nearbyintf-nearbyintl1.md) | - | - | - |
+`nextafter` | [nextafterf](nextafter-functions.md) | [nextafter](nextafter-functions.md) | [nextafterl](nextafter-functions.md) | - | - | - |
+`nexttoward` | [nexttowardf](nextafter-functions.md) | [nexttoward](nextafter-functions.md) | [nexttowardl](nextafter-functions.md) | - | - | - |
+`remainder` | [remainderf](remainder-remainderf-remainderl.md) | [remainder](remainder-remainderf-remainderl.md) | [remainderl](remainder-remainderf-remainderl.md) | - | - | - |
+`remquo` | [remquof](remquo-remquof-remquol.md) | [remquo](remquo-remquof-remquol.md) | [remquol](remquo-remquof-remquol.md) | - | - | - |
+`rint` | [rintf](rint-rintf-rintl.md) | [rint](rint-rintf-rintl.md) | [rintl](rint-rintf-rintl.md) | - | - | - |
+`round` | [roundf](round-roundf-roundl.md) | [round](round-roundf-roundl.md) | [roundl](round-roundf-roundl.md) | - | - | - |
+`scalbln` | [scalblnf](scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md) | [scalbln](scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md) | [scalblnl](scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md) | - | - | - |
+`scalbn` | [scalbnf](scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md) | [scalbn](scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md) | [scalbnl](scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md) | - | - | - |
+`tgamma` | [tgammaf](tgamma-tgammaf-tgammal.md) | [tgamma](tgamma-tgammaf-tgammal.md) | [tgammal](tgamma-tgammaf-tgammal.md) | - | - | - |
+`trunc` | [truncf](trunc-truncf-truncl.md) | [trunc](trunc-truncf-truncl.md) | [truncl](trunc-truncf-truncl.md) | - | - | - |
+`carg` | - | - | - | [cargf](carg-cargf-cargl.md) | [carg](carg-cargf-cargl.md) | [cargl](carg-cargf-cargl.md) |
+`conj` | - | - | - | [conjf](conj-conjf-conjl.md) | [conj](conj-conjf-conjl.md) | [conjl](conj-conjf-conjl.md) |
+`creal` | - | - | - | [crealf](creal-crealf-creall.md) | [creal](creal-crealf-creall.md) | [creall](creal-crealf-creall.md) |
+`cimag` | - | - | - | [cimagf](cimag-cimagf-cimagl.md) | [cimag](cimag-cimagf-cimagl.md) | [cimagl](cimag-cimagf-cimagl.md) |
+`cproj` | - | - | - | [cprojf](cproj-cprojf-cprojl.md) | [cproj](cproj-cprojf-cprojl.md) | [cprojl](cproj-cprojf-cprojl.md) |
 
 ## See also
 
