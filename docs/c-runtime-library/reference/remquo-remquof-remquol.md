@@ -1,6 +1,7 @@
 ---
 title: "remquo, remquof, remquol"
-ms.date: "4/2/2020"
+description: "API reference for remquo, remquof, and remquol; which compute the remainder of two integer values, and stores an integer value with the sign and approximate magnitude of the quotient in a location that's specified in a parameter."
+ms.date: "9/1/2020"
 api_name: ["remquof", "remquo", "remquol", "_o_remquo", "_o_remquof", "_o_remquol"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,6 +20,7 @@ Computes the remainder of two integer values, and stores an integer value with t
 double remquo( double numer, double denom, int* quo );
 float remquof( float numer, float denom, int* quo );
 long double remquol( long double numer, long double denom, int* quo );
+#define remquo(X, Y, INT_PTR) // Requires C11 or higher
 ```
 
 ```cpp
@@ -28,13 +30,13 @@ long double remquo( long double numer, long double denom, int* quo ); /* C++ onl
 
 ### Parameters
 
-*numer*<br/>
+*numer*\
 The numerator.
 
-*denom*<br/>
+*denom*\
 The denominator.
 
-*quo*<br/>
+*quo*\
 A pointer to an integer to store a value that has the sign and approximate magnitude of the quotient.
 
 ## Return Value
@@ -47,6 +49,8 @@ The **remquo** function calculates the floating-point remainder *f* of *x* / *y*
 
 C++ allows overloading, so you can call overloads of **remquo** that take and return **`float`** or **`long double`** values. In a C program, **remquo** always takes two **`double`** arguments and returns a **`double`**.
 
+If you use the \<tgmath.h> `remquo()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
@@ -54,6 +58,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|Required header (C)|Required header (C++)|
 |--------------|---------------------|-|
 |**remquo**, **remquof**, **remquol**|\<math.h>|\<cmath> or \<math.h>|
+|**remquo macro** | \<tgmath.h> ||
 
 For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

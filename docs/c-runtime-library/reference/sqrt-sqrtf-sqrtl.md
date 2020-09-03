@@ -1,6 +1,7 @@
 ---
 title: "sqrt, sqrtf, sqrtl"
-ms.date: "6/5/2020"
+description: "API reference for sqrt, sqrtf, and sqrtl; which calculate a square root of a floating point number."
+ms.date: "08/31/2020"
 api_name: ["sqrtl", "sqrtf", "sqrt", "_o_sqrt", "_o_sqrtf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -54,11 +55,16 @@ The **sqrt** functions return the square-root of *x*. By default, if *x* is nega
 |- ∞|none|_DOMAIN|
 |x<0|none|_DOMAIN|
 
+## Remarks
+
+If you use the \<tgmath.h> `sqrt()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+
 ## Requirements
 
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
 |**sqrt**, **sqrtf**, **sqrtl**|\<math.h>|\<cmath>|
+|**sqrt()** macro | \<tgmath.h> ||
 
 For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

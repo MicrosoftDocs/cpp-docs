@@ -1,6 +1,7 @@
 ---
 title: "trunc, truncf, truncl"
-ms.date: "04/05/2018"
+description: "API reference for trunc, truncf, truncl; which determine the nearest integer that is less than or equal to the specified floating-point value."
+ms.date: "9/1/2020"
 api_name: ["trunc", "truncf", "truncl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -17,8 +18,8 @@ Determines the nearest integer that is less than or equal to the specified float
 
 ```C
 double trunc( double x );
-float trunc( float x ); //C++ only
 long double truncl( long double x );
+#define trunc(X) // Requires C11 or higher
 ```
 
 ```cpp
@@ -28,7 +29,7 @@ float trunc( float x ); //C++ only
 
 ### Parameters
 
-*x*<br/>
+*x*\
 The value to truncate.
 
 ## Return Value
@@ -49,6 +50,8 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 Because C++ allows overloading, you can call overloads of **trunc** that take and return **`float`** and **`long double`** types. In a C program, **trunc** always takes and returns a **`double`**.
 
+If you use the \<tgmath.h> `trunc()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+
 Because the largest floating-point values are exact integers, this function will not overflow on its own. However, you may cause the function to overflow by returning a value into an integer type.
 
 You can also round down by implicitly converting from floating-point to integral; however, doing so is limited to the values that can be stored in the target type.
@@ -58,6 +61,7 @@ You can also round down by implicitly converting from floating-point to integral
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
 |**trunc**, **truncf**, **truncl**|\<math.h>|\<cmath>|
+|**trunc macro** | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

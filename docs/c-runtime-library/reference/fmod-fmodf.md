@@ -1,6 +1,7 @@
 ---
 title: "fmod, fmodf, fmodl"
-ms.date: "4/2/2020"
+description: "API reference for fmod, fmodf, and fmodl; which calculates the floating-point remainder."
+ms.date: "9/1/2020"
 api_name: ["fmod", "fmodf", "fmodl", "_o_fmod"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -36,11 +37,13 @@ long double fmodl(
    long double x,
    long double y
 );
+
+#define fmod(X, Y) // Requires C11 or higher
 ```
 
 ### Parameters
 
-*x*, *y*<br/>
+*x*, *y*\
 Floating-point values.
 
 ## Return Value
@@ -53,6 +56,8 @@ The **fmod** function calculates the floating-point remainder *f* of *x* / *y* s
 
 C++ allows overloading, so you can call overloads of **fmod** that take and return **`float`** and **`long double`** values. In a C program, **fmod** always takes two **`double`** arguments and returns a **`double`**.
 
+If you use the \<tgmath.h> `fmod()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
@@ -60,6 +65,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|Required header|
 |--------------|---------------------|
 |**fmod**, **fmodf**, **fmodl**|\<math.h>|
+|**fmod macro** | \<tgmath.h> |
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

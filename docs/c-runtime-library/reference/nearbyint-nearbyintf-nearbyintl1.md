@@ -1,6 +1,7 @@
 ---
 title: "nearbyint, nearbyintf, nearbyintl"
-ms.date: "4/2/2020"
+description: "API reference for nearbyint, nearbyintf, and nearbyintl; which rounds the specified floating-point value to an integer, and returns that value in a floating-point format."
+ms.date: "9/1/2020"
 api_name: ["nearbyint", "nearbyintf", "nearbyintl", "_o_nearbyint", "_o_nearbyintf", "_o_nearbyintl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,6 +20,7 @@ Rounds the specified floating-point value to an integer, and returns that value 
 double nearbyint( double x );
 float nearbyintf( float x );
 long double nearbyintl( long double x );
+#define nearbyint( X ) // Requires C11 or higher
 ```
 
 ```cpp
@@ -28,7 +30,7 @@ long double nearbyint( long double x ); //C++ only
 
 ### Parameters
 
-*x*<br/>
+*x*\
 The value to round.
 
 ## Return Value
@@ -51,6 +53,8 @@ Because the maximum floating-point values are exact integers, this function will
 
 C++ allows overloading, so you can call overloads of **nearbyint** that take and return **`float`** or **`long double`** parameters. In a C program, **nearbyint** always takes two double values and returns a double value.
 
+If you use the \<tgmath.h> `nearbyint()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
@@ -58,6 +62,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
 |**nearbyint**, **nearbyintf**, **nearbyintl**|\<math.h>|\<cmath> or \<math.h>|
+|**nearbyint macro** | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

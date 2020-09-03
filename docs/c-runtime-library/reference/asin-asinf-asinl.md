@@ -1,6 +1,7 @@
 ---
 title: "asin, asinf, asinl"
-ms.date: "4/2/2020"
+description: "API reference for asin, asinf, and asinl; which calculate the arcsine of a floating-point value."
+ms.date: "08/31/2020"
 api_name: ["asinf", "asinl", "asin", "_o_asin"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,6 +20,7 @@ Calculates the arcsine.
 double asin( double x );
 float asinf ( float x );
 long double asinl( long double x );
+#define asin(X) // Requires C11 or higher
 ```
 
 ```cpp
@@ -47,6 +49,8 @@ By default, if *x* is less than -1 or greater than 1, **asin** returns an indefi
 
 Because C++ allows overloading, you can call overloads of **asin** with **`float`** and **`long double`** values. In a C program, **asin** always takes and returns a **`double`**.
 
+If you use the \<tgmath.h> `asin()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
@@ -54,6 +58,7 @@ By default, this function's global state is scoped to the application. To change
 |Routine|Required header (C)|Required header (C++)|
 |-------------|---------------------|-|
 |**asin**, **asinf**, **asinl**|\<math.h>|\<cmath> or \<math.h>|
+|**asin()** macro | \<tgmath.h> ||
 
 ## Example
 

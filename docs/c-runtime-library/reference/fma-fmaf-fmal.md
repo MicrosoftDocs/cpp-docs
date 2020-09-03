@@ -1,6 +1,7 @@
 ---
 title: "fma, fmaf, fmal"
-ms.date: "4/2/2020"
+description: "API reference for fma, fmaf, and fmal; which multiplies two values together, adds a third value, and then rounds the result, without losing any precision due to intermediary rounding."
+ms.date: "9/1/2020"
 api_name: ["fma", "fmaf", "fmal", "_o_fma", "_o_fmaf", "_o_fmal"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -11,7 +12,7 @@ ms.assetid: 584a6037-da1e-4e86-9f0c-97aae86de0c0
 ---
 # fma, fmaf, fmal
 
-Multiplies two values together,  adds a third value, and then rounds the result, without losing any precision due to intermediary rounding.
+Multiplies two values together, adds a third value, and then rounds the result, without losing any precision due to intermediary rounding.
 
 ## Syntax
 
@@ -45,17 +46,19 @@ long double fmal(
    long double  y,
    long double z
 );
+
+#define fma(X, Y, Z) // Requires C11 or higher
 ```
 
 ### Parameters
 
-*x*<br/>
+*x*\
 The first value to multiply.
 
-*y*<br/>
+*y*\
 The second value to multiply.
 
-*z*<br/>
+*z*\
 The value to add.
 
 ## Return Value
@@ -79,6 +82,8 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 Because C++ allows overloading, you can call overloads of **fma** that take and return **`float`** and **`long double`** types. In a C program, **fma** always takes and returns a **`double`**.
 
+If you use the \<tgmath.h> `fma()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+
 This function computes the value as though it were taken to infinite precision, and then rounds the final result.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
@@ -88,6 +93,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
 |**fma**, **fmaf**, **fmal**|\<math.h>|\<cmath>|
+|**fma macro** | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

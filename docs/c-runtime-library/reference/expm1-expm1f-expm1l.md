@@ -1,6 +1,7 @@
 ---
 title: "expm1, expm1f, expm1l"
-ms.date: "04/05/2018"
+description: "API reference for expm1, expm1f, and expm1; which compute the base-e exponential of a value, minus one."
+ms.date: "9/1/2020"
 api_name: ["expm1l", "expm1", "expm1f"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -31,11 +32,12 @@ float expm1f(
 long double expm1l(
    long double x
 );
+#define expm1(X) // Requires C11 or higher
 ```
 
 ### Parameters
 
-*x*<br/>
+*x*\
 The floating-point exponential value.
 
 ## Return Value
@@ -46,11 +48,14 @@ The **expm1** functions return a floating-point value that represents e<sup>x</s
 
 Because C++ allows overloading, you can call overloads of **expm1** that take and return **`float`** and **`long double`** values. In a C program, **expm1** always takes and returns a **`double`**.
 
+If you use the \<tgmath.h> `expm1()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
 |**expm1**, **expm1f**, **expm1l**|\<math.h>|
+|**expm1 macro** | \<tgmath.h> |
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

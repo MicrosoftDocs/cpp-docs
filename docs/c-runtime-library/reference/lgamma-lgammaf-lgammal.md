@@ -1,6 +1,7 @@
 ---
 title: "lgamma, lgammaf, lgammal"
-ms.date: "4/2/2020"
+description: "API reference for lgamma, lgammaf, and lgammal; which determines the natural logarithm of the absolute value of the gamma function of the specified value."
+ms.date: "9/1/2020"
 api_name: ["lgamma", "lgammaf", "lgammal", "_o_lgamma", "_o_lgammaf", "_o_lgammal"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,6 +20,7 @@ Determines the natural logarithm of the absolute value of the gamma function of 
 double lgamma( double x );
 float lgammaf( float x );
 long double lgammal( long double x );
+#define lgammal(X) // Requires C11 or higher
 ```
 
 ```cpp
@@ -28,7 +30,7 @@ long double lgamma( long double x ); //C++ only
 
 ### Parameters
 
-*x*<br/>
+*x*\
 The value to compute.
 
 ## Return Value
@@ -50,6 +52,8 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 Because C++ allows overloading, you can call overloads of **lgamma** that take and return **`float`** and **`long double`** types. In a C program, **lgamma** always takes and returns a **`double`**.
 
+If you use the \<tgmath.h> `lgamma()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+
 If x is a rational number, this function returns the logarithm of the factorial of (x - 1).
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
@@ -59,6 +63,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
 |**lgamma**, **lgammaf**, **lgammal**|\<math.h>|\<cmath>|
+|**lgamma macro** | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
