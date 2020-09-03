@@ -70,7 +70,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|Required header|
 |--------------|---------------------|
 |**frexp**, **frexpf**, **frexpl**|\<math.h>|
-|**frexp macro** | \<tgmath.h> |
+|**frexp** macro | \<tgmath.h> |
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

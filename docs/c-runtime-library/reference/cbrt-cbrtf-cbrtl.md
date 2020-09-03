@@ -61,7 +61,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
 |**cbrt**, **cbrtf**, **cbrtl**|\<math.h>|\<cmath>|
-|**cbrt macro** | \<tgmath.h> ||
+|**cbrt** macro | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

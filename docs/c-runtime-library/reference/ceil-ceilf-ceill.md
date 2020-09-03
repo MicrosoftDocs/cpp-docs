@@ -63,7 +63,7 @@ By default, this function's global state is scoped to the application. To change
 |Routine|Required header|
 |-------------|---------------------|
 |**ceil**, **ceilf**, **ceill**|\<math.h>|
-|**ceil macro** | \<tgmath.h> ||
+|**ceil** macro | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

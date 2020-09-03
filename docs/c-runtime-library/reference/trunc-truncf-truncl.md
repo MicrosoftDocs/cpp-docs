@@ -61,7 +61,7 @@ You can also round down by implicitly converting from floating-point to integral
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
 |**trunc**, **truncf**, **truncl**|\<math.h>|\<cmath>|
-|**trunc macro** | \<tgmath.h> ||
+|**trunc** macro | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

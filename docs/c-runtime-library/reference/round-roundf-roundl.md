@@ -61,7 +61,7 @@ By default, this function's global state is scoped to the application. To change
 |Routine|Required header|
 |-------------|---------------------|
 |**round**, **roundf**, **roundl**|\<math.h>|
-|**round macro** | \<tgmath.h> ||
+|**round** macro | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

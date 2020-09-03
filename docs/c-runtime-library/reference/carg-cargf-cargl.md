@@ -1,6 +1,7 @@
 ---
 title: "carg, cargf, cargl"
-ms.date: "11/04/2016"
+description: "API reference for carg, cargf, and cargl; which retrieve the argument of a complex number, with a branch cut along the negative real axis."
+ms.date: "9/2/2020"
 api_name: ["carg", "cargf", "cargl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -11,7 +12,7 @@ ms.assetid: 610d6a93-b929-46ab-a966-b77db0b804be
 ---
 # carg, cargf, cargl
 
-Retrieves the argument  of a complex number, with a branch cut along the negative real axis.
+Retrieves the argument of a complex number, with a branch cut along the negative real axis.
 
 ## Syntax
 
@@ -31,11 +32,12 @@ float cargf(
 long double cargl(
    _Lcomplex z
 );
+#define carg(X) // Requires C11 or higher
 ```
 
 ### Parameters
 
-*z*<br/>
+*z*\
 A complex number.
 
 ## Return Value
@@ -46,11 +48,14 @@ The argument (also known as the phase) of *z*. The result is in the interval [-Ï
 
 Because C++ allows overloading, you can call overloads of **carg** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, **carg** always takes a **_Dcomplex** value and returns a **`double`** value.
 
+If you use the \<tgmath.h> `carg()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**carg**,               **cargf**, **cargl**|\<complex.h>|\<ccomplex>|
+|**carg**, **cargf**, **cargl**|\<complex.h>|\<ccomplex>|
+|**carg** macro | \<tgmath.h> ||
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

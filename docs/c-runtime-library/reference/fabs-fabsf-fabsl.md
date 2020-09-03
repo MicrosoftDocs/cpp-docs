@@ -62,7 +62,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|Required C header|Required C++ header|
 |--------------|-----------------------|---------------------------|
 |**fabs**, **fabsf**, **fabsl**|\<math.h>|\<cmath> or \<math.h>|
-|**fabs macro** | \<tgmath.h> ||
+|**fabs** macro | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

@@ -64,7 +64,7 @@ By default, this function's global state is scoped to the application. To change
 |Routine|Required header|
 |-------------|---------------------|
 |**log**, **logf**, **logl**, **log10**, **log10f**, **log10l**|\<math.h>|
-|**log macro** | \<tgmath.h> |
+|**log** macro | \<tgmath.h> |
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

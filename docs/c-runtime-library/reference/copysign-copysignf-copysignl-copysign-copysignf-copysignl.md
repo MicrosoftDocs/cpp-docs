@@ -74,7 +74,7 @@ If you use the \<tgmath.h> `copysign()` macro, the type of the argument determin
 |-------------|---------------------|
 |**_copysign**|\<float.h>|
 |**copysign**, **copysignf**, **copysignl**, **_copysignf**, **_copysignl**|\<math.h>|
-|**copysign macro** | \<tgmath.h> |
+|**copysign** macro | \<tgmath.h> |
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

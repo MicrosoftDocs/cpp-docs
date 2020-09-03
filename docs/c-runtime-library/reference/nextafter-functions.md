@@ -71,7 +71,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------------|-------------------------------|
 |**nextafter**, **nextafterf**, **nextafterl**, **_nextafterf**, **nexttoward**, **nexttowardf**, **nexttowardl**|\<math.h>|\<math.h> or \<cmath>|
 |**_nextafter**|\<float.h>|\<float.h> or \<cfloat>|
-|**nextafter macro**,  **nexttoward macro**| \<tgmath.h> ||
+|**nextafter** macro,  **nexttoward** macro| \<tgmath.h> ||
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

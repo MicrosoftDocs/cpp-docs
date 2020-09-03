@@ -58,7 +58,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|Required header (C)|Required header (C++)|
 |--------------|---------------------|-|
 |**remquo**, **remquof**, **remquol**|\<math.h>|\<cmath> or \<math.h>|
-|**remquo macro** | \<tgmath.h> ||
+|**remquo** macro | \<tgmath.h> ||
 
 For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

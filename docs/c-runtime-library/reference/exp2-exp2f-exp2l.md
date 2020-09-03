@@ -72,7 +72,7 @@ By default, this function's global state is scoped to the application. To change
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
 |**exp2**, **expf2**, **expl2**|\<math.h>|\<cmath>|
-|**exp2 macro** | \<tgmath.h> ||
+|**exp2** macro | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

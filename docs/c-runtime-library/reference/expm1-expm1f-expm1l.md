@@ -55,7 +55,7 @@ If you use the \<tgmath.h> `expm1()` macro, the type of the argument determines 
 |Routine|Required header|
 |-------------|---------------------|
 |**expm1**, **expm1f**, **expm1l**|\<math.h>|
-|**expm1 macro** | \<tgmath.h> |
+|**expm1** macro | \<tgmath.h> |
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

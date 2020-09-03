@@ -70,7 +70,7 @@ By default, this function's global state is scoped to the application. To change
 |Routine|Required header|
 |-------------|---------------------|
 |**hypot**, **hypotf**, **hypotl**, **_hypot**, **_hypotf**, **_hypotl**|\<math.h>|
-|**hypot macro** | \<tgmath.h> |
+|**hypot** macro | \<tgmath.h> |
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

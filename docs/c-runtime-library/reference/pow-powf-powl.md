@@ -67,7 +67,7 @@ By default, this function's global state is scoped to the application. To change
 |Routine|Required header (C)|Required header (C++)|
 |-|-|-|
 |**pow**, **powf**, **powl**|\<math.h>|\<math.h> or \<cmath>|
-|**pow macro** | \<tgmath.h> ||
+|**pow** macro | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

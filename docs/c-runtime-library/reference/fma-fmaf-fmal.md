@@ -93,7 +93,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
 |**fma**, **fmaf**, **fmal**|\<math.h>|\<cmath>|
-|**fma macro** | \<tgmath.h> ||
+|**fma** macro | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

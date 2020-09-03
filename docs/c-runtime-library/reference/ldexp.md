@@ -70,7 +70,7 @@ By default, this function's global state is scoped to the application. To change
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
 |**ldexp**, **ldexpf**, **ldexpl**|\<math.h>|\<cmath>|
-|**ldexp macro** | \<tgmath.h> ||
+|**ldexp** macro | \<tgmath.h> ||
 
 For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

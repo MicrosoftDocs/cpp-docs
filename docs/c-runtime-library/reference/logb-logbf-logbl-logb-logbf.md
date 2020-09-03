@@ -71,7 +71,7 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------|
 |**_logb**|\<float.h>|
 |**logb**, **logbf**, **logbl**, **_logbf**|\<math.h>|
-|**logb macro** | \<tgmath.h> |
+|**logb** macro | \<tgmath.h> |
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

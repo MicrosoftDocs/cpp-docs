@@ -65,7 +65,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|Required header|
 |--------------|---------------------|
 |**fmod**, **fmodf**, **fmodl**|\<math.h>|
-|**fmod macro** | \<tgmath.h> |
+|**fmod** macro | \<tgmath.h> |
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

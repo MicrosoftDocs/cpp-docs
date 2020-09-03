@@ -1,6 +1,7 @@
 ---
 title: "cproj, cprojf, cprojl"
-ms.date: "11/04/2016"
+description: "API reference for cproj, cprojf, and cprojl; which retrieve the projection of a complex number on the Reimann sphere."
+ms.date: "9/2/2020"
 api_name: ["cproj", "cprojf", "cprojl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -31,11 +32,12 @@ _Fcomplex cprojf(
 _Lcomplex cprojl(
    _Lcomplex z
 );
+#define cproj(X) // Requires C11 or higher
 ```
 
 ### Parameters
 
-*z*<br/>
+*z*\
 A complex number.
 
 ## Return Value
@@ -46,11 +48,14 @@ The projection of *z* on the Reimann sphere.
 
 Because C++ allows overloading, you can call overloads of **cproj** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **cproj** always takes and returns a **_Dcomplex** value.
 
+If you use the \<tgmath.h> `cproj()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**cproj**,               **cprojf**, **cprojl**|\<complex.h>|\<ccomplex>|
+|**cproj**, **cprojf**, **cprojl**|\<complex.h>|\<ccomplex>|
+|**cproj** macro | \<tgmath.h> ||
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

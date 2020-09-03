@@ -71,7 +71,7 @@ Calling this function is similar to calling the equivalent **logb** function, th
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
 |**ilogb**, **ilogbf**, **ilogbl**|\<math.h>|\<cmath>|
-|**ilogb macro** | \<tgmath.h> ||
+|**ilogb** macro | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
