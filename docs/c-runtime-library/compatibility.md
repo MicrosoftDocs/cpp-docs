@@ -7,7 +7,7 @@ ms.assetid: 346709cb-edda-4909-9a19-3d253eddb6b7
 ---
 # Compatibility
 
-The Universal C Run-Time Library (UCRT) supports most of the C standard library required for  C++ conformance. It implements the C99 (ISO/IEC 9899:1999) library, with certain exceptions: The type-generic macros defined in \<tgmath.h>, and strict type compatibility in \<complex.h>. The UCRT also implements a large subset of the POSIX.1 (ISO/IEC 9945-1:1996, the POSIX System Application Program Interface) C library. However, it's not fully conformant to any specific POSIX standard. The UCRT also implements several Microsoft-specific functions and macros that aren't part of a standard.
+The Universal C Run-Time Library (UCRT) supports most of the C standard library required for  C++ conformance. It implements the C99 (ISO/IEC 9899:1999) library, with certain exceptions: strict type compatibility in \<complex.h>. The UCRT also implements a large subset of the POSIX.1 (ISO/IEC 9945-1:1996, the POSIX System Application Program Interface) C library. However, it's not fully conformant to any specific POSIX standard. The UCRT also implements several Microsoft-specific functions and macros that aren't part of a standard.
 
 Functions specific to the Microsoft implementation of Visual C++ are found in the vcruntime library.  Many of these functions are for internal use and can't be called by user code. Some are documented for use in debugging and implementation compatibility.
 
