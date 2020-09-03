@@ -35,7 +35,7 @@ _Lcomplex ctanl(
 
 ### Parameters
 
-*z*<br/>
+*z*\
 A complex number that represents the angle, in radians.
 
 ## Return Value

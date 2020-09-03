@@ -38,7 +38,7 @@ long double atan2( long double y, long double x );  // C++ only
 
 ### Parameters
 
-*x*, *y*<br/>
+*x*, *y*\
 Any numbers.
 
 ## Return Value

@@ -29,7 +29,7 @@ long double tan( long double x );  // C++ only
 
 ### Parameters
 
-*x*<br/>
+*x*\
 Angle in radians.
 
 ## Return value

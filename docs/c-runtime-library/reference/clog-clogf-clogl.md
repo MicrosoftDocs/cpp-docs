@@ -35,7 +35,7 @@ _Lcomplex clogl(
 
 ### Parameters
 
-*z*<br/>
+*z*\
 The base of the logarithm.
 
 ## Return Value
