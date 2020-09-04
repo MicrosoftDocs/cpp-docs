@@ -1,5 +1,6 @@
 ---
 title: "abs, labs, llabs, _abs64"
+description: "API reference for abs, labs, llabs, and _abs64; which calculates the absolute value of a value."
 ms.date: "04/05/2018"
 api_name: ["abs", "_abs64", "labs", "llabs"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
@@ -32,7 +33,7 @@ float abs( float n );   // C++ only
 
 ### Parameters
 
-*n*<br/>
+*n*\
 Numeric value.
 
 ## Return Value
