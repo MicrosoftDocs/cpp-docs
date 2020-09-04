@@ -20,7 +20,6 @@ Compute the base-e exponential of a complex number.
 _Dcomplex cexp( _Dcomplex z );
 _Fcomplex cexpf( _Fcomplex z );
 _Lcomplex cexpl( _Lcomplex z );
-#define cexp(X) // Requires C11 or higher
 
 _Fcomplex cexp( _Fcomplex z );  // C++ only
 _Lcomplex cexp( _Lcomplex z );  // C++ only
@@ -49,7 +48,7 @@ For compatibility information, see [Compatibility](../../c-runtime-library/compa
 
 ## See also
 
-[Alphabetical Function Reference](crt-alphabetical-function-reference.md)<br/>
-[cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)<br/>
-[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)<br/>
-[clog, clogf, clogl](clog-clogf-clogl.md)<br/>
+[Alphabetical Function Reference](crt-alphabetical-function-reference.md)\
+[cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)\
+[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)\
+[clog, clogf, clogl](clog-clogf-clogl.md)

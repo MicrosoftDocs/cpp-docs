@@ -32,7 +32,7 @@ float cbrtf(
 long double cbrtl(
    long double x
 );
-#define cbrtl(X) // Requires C11 or higher
+#define cbrt(X) // Requires C11 or higher
 ```
 
 ### Parameters
