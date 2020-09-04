@@ -1,5 +1,6 @@
 ---
 title: "_fileno"
+description: "API reference for _fileno; which gets the file descriptor associated with a stream."
 ms.date: "4/2/2020"
 api_name: ["_fileno", "_o__fileno"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]

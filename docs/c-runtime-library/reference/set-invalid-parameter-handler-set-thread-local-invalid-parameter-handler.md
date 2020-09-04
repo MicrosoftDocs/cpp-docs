@@ -1,5 +1,6 @@
 ---
 title: "_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler"
+description: "API reference for _set_invalid_parameter_handler, and _set_thread_local_invalid_parameter_handler; which set a function to be called when the CRT detects an invalid argument."
 ms.date: "4/2/2020"
 api_name: ["_set_invalid_parameter_handler", "_set_thread_local_invalid_parameter_handler", "_o__set_invalid_parameter_handler", "_o__set_thread_local_invalid_parameter_handler"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]

@@ -1,5 +1,6 @@
 ---
 title: "imaxabs"
+description: "API reference for imaxabs, which calculates the absolute value of an integer of any size."
 ms.date: "04/05/2018"
 api_name: ["imaxabs"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
@@ -31,7 +32,7 @@ Integer value.
 The **imaxabs** function returns the absolute value of the argument. There's no error return.
 
 > [!NOTE]
-> Because the range of negative integers that can be represented by using **intmax_t** is larger than the range of positive integers that can be represented, it's possible to supply an argument to **imaxabs** that can’t be converted. If the absolute value of the argument cannot be represented by the return type, the behavior of **imaxabs** is undefined.
+> Because the range of negative integers that can be represented by using **intmax_t** is larger than the range of positive integers that can be represented, it's possible to supply an argument to **imaxabs** that can't be converted. If the absolute value of the argument cannot be represented by the return type, the behavior of **imaxabs** is undefined.
 
 ## Requirements
 
