@@ -38,7 +38,7 @@ Numeric value.
 
 ## Return Value
 
-The **abs**, **labs**, **llabs** and **_abs64** functions return the absolute value of the parameter *n*. There is no error return.
+The **abs**, **labs**, **llabs**, and **_abs64** functions return the absolute value of the parameter *n*. There's no error return.
 
 ## Remarks
 

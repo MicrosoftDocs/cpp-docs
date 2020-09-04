@@ -39,7 +39,7 @@ I/O port number.
 
 ## Return Value
 
-The functions return the byte, word, or double word read from `port`. There is no error return.
+The functions return the byte, word, or double word read from `port`. There's no error return.
 
 ## Remarks
 

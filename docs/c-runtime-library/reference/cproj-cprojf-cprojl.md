@@ -46,7 +46,7 @@ The projection of *z* on the Reimann sphere.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **cproj** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **cproj** always takes and returns a **_Dcomplex** value.
+Because C++ allows overloading, you can call overloads of **cproj** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **cproj** always takes and returns a **_Dcomplex** value.
 
 If you use the \<tgmath.h> `cproj()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 

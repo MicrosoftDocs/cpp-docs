@@ -21,7 +21,7 @@ int _flushall( void );
 
 ## Return Value
 
-**_flushall** returns the number of open streams (input and output). There is no error return.
+**_flushall** returns the number of open streams (input and output). There's no error return.
 
 ## Remarks
 

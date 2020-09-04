@@ -42,7 +42,7 @@ The floating-point value to round.
 
 ## Return Value
 
-The **round** functions return a floating-point value that represents the nearest integer to *x*. Halfway values are rounded away from zero, regardless of the setting of the floating-point rounding mode. There is no error return.
+The **round** functions return a floating-point value that represents the nearest integer to *x*. Halfway values are rounded away from zero, regardless of the setting of the floating-point rounding mode. There's no error return.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
@@ -50,7 +50,7 @@ The **round** functions return a floating-point value that represents the neares
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **round** that take and return **`float`** and **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **round** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **round** that take and return **`float`** and **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **round** always takes and returns a **`double`**.
 
 If you use the \<tgmath.h> `round()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 

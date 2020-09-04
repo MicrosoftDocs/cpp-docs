@@ -84,7 +84,8 @@ The following table lists the macros that are available in \<tgmath.h> and what 
 
 ## Requirements
 
-`/std:C11` or later is required.
+[std:c++11](../../build/reference/std-specify-language-standard-version.md) or later is required.
+
 Windows SDK version 10.0.20201.0 or later.
 
 ## See also

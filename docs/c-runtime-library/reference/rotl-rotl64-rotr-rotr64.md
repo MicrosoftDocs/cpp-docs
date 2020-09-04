@@ -45,7 +45,7 @@ Number of bits to shift.
 
 ## Return Value
 
-The rotated value. There is no error return.
+The rotated value. There's no error return.
 
 ## Remarks
 

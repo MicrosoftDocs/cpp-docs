@@ -42,7 +42,7 @@ A pointer to a structure of type [tm](../../c-runtime-library/standard-types.md)
 |**tm_yday**|Day of year (0 - 365; January 1 = 0).|
 |**tm_isdst**|Always 0 for **gmtime**.|
 
-Both the 32-bit and 64-bit versions of **gmtime**, [mktime](mktime-mktime32-mktime64.md), [mkgmtime](mkgmtime-mkgmtime32-mkgmtime64.md), and [localtime](localtime-localtime32-localtime64.md) all use one common **tm** structure per thread for the conversion. Each call to one of these functions destroys the result of any previous call. If *sourceTime* represents a date before midnight, January 1, 1970, **gmtime** returns **NULL**. There is no error return.
+Both the 32-bit and 64-bit versions of **gmtime**, [mktime](mktime-mktime32-mktime64.md), [mkgmtime](mkgmtime-mkgmtime32-mkgmtime64.md), and [localtime](localtime-localtime32-localtime64.md) all use one common **tm** structure per thread for the conversion. Each call to one of these functions destroys the result of any previous call. If *sourceTime* represents a date before midnight, January 1, 1970, **gmtime** returns **NULL**. There's no error return.
 
 **_gmtime64**, which uses the **__time64_t** structure, enables dates to be expressed up through 23:59:59, December 31, 3000, UTC, whereas **_gmtime32** only represent dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for both functions.
 

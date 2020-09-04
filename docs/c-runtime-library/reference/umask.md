@@ -26,7 +26,7 @@ Default permission setting.
 
 ## Return Value
 
-**_umask** returns the previous value of *pmode*. There is no error return.
+**_umask** returns the previous value of *pmode*. There's no error return.
 
 ## Remarks
 

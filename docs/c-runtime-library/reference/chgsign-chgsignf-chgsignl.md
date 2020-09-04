@@ -34,7 +34,7 @@ The floating-point value to be changed.
 
 ## Return Value
 
-The **_chgsign** functions return a value that's equal to the floating-point argument *x*, but with its sign reversed. There is no error return.
+The **_chgsign** functions return a value that's equal to the floating-point argument *x*, but with its sign reversed. There's no error return.
 
 ## Requirements
 

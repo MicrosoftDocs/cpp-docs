@@ -24,7 +24,7 @@ int _getpid( void );
 
 ## Return Value
 
-Returns the process ID obtained from the system. There is no error return.
+Returns the process ID obtained from the system. There's no error return.
 
 ## Remarks
 

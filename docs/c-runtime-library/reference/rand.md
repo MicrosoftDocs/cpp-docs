@@ -20,7 +20,7 @@ int rand( void );
 
 ## Return Value
 
-**rand** returns a pseudorandom number, as described above. There is no error return.
+**rand** returns a pseudorandom number, as described above. There's no error return.
 
 ## Remarks
 

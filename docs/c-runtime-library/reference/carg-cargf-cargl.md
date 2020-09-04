@@ -46,7 +46,7 @@ The argument (also known as the phase) of *z*. The result is in the interval [-Ï
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **carg** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **carg** always takes a **_Dcomplex** value and returns a **`double`** value.
+Because C++ allows overloading, you can call overloads of **carg** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **carg** always takes a **_Dcomplex** value and returns a **`double`** value.
 
 If you use the \<tgmath.h> `carg()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 

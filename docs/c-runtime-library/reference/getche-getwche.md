@@ -25,7 +25,7 @@ wint_t _getwche( void );
 
 ## Return Value
 
-Returns the character read. There is no error return.
+Returns the character read. There's no error return.
 
 ## Remarks
 

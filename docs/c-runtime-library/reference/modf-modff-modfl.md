@@ -36,7 +36,7 @@ Pointer to stored integer portion.
 
 ## Return Value
 
-This function returns the signed fractional portion of *x*. There is no error return.
+This function returns the signed fractional portion of *x*. There's no error return.
 
 ## Remarks
 

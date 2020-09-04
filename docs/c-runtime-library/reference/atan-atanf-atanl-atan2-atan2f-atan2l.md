@@ -57,7 +57,7 @@ If you use the \<tgmath.h> `atan()` or `atan2()` macro, the type of the argument
 
 **atan** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](set-sse2-enable.md).
 
-Because C++ allows overloading, you can call overloads of **atan** and **atan2** that take **`float`** or **`long double`** arguments. In a C program, unless you are using the \<tgmath.h> macro to call this function, **atan** and **atan2** always take **`double`** arguments and return a **`double`**.
+Because C++ allows overloading, you can call overloads of **atan** and **atan2** that take **`float`** or **`long double`** arguments. In a C program, unless you're using the \<tgmath.h> macro to call this function, **atan** and **atan2** always take **`double`** arguments and return a **`double`**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

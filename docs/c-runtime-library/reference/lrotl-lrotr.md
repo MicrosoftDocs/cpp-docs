@@ -30,7 +30,7 @@ Number of bits to shift *value*.
 
 ## Return Value
 
-Both functions return the rotated value. There is no error return.
+Both functions return the rotated value. There's no error return.
 
 ## Remarks
 

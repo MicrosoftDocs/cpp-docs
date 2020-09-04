@@ -82,7 +82,7 @@ Length of the buffer in units of the character type. This parameter is inferred 
 
 ## Return Value
 
-Each of these functions returns a pointer to *buffer*. There is no error return.
+Each of these functions returns a pointer to *buffer*. There's no error return.
 
 ## Remarks
 

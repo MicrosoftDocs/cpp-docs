@@ -42,7 +42,7 @@ Floating-point value.
 
 ## Return Value
 
-The **floor** functions return a floating-point value that represents the largest integer that is less than or equal to *x*. There is no error return.
+The **floor** functions return a floating-point value that represents the largest integer that is less than or equal to *x*. There's no error return.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
@@ -52,7 +52,7 @@ The **floor** functions return a floating-point value that represents the larges
 
 ## Remarks
 
-C++ allows overloading, so you can call overloads of **floor** that take and return **`float`** and **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **floor** always takes and returns a **`double`**.
+C++ allows overloading, so you can call overloads of **floor** that take and return **`float`** and **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **floor** always takes and returns a **`double`**.
 
 If you use the \<tgmath.h> `floor()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 

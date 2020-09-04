@@ -66,7 +66,7 @@ The **errno** value is set to ERANGE if *x* = -1. The **errno** value is set to 
 
 The **log1p** functions may be more accurate than using `log(x + 1)` when *x* is near 0.
 
-Because C++ allows overloading, you can call overloads of **log1p** that take and return **`float`** and **`long double`** types. In a C program, unless you are using the \<tgmath.h> macro to call this function, **log1p** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **log1p** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **log1p** always takes and returns a **`double`**.
 
 If you use the \<tgmath.h> `log1p()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
