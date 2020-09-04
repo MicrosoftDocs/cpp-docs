@@ -20,9 +20,8 @@ Compute the base-e exponential of a complex number.
 _Dcomplex cexp( _Dcomplex z );
 _Fcomplex cexpf( _Fcomplex z );
 _Lcomplex cexpl( _Lcomplex z );
-```
+#define cexp(X) // Requires C11 or higher
 
-```cpp
 _Fcomplex cexp( _Fcomplex z );  // C++ only
 _Lcomplex cexp( _Lcomplex z );  // C++ only
 ```

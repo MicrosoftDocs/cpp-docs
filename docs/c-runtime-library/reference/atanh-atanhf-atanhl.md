@@ -21,16 +21,14 @@ double atanh( double x );
 float atanhf( float x );
 long double atanhl( long double x );
 #define atanh(X) // Requires C11 or higher
-```
 
-```cpp
 float atanh( float x );  // C++ only
 long double atanh( long double x );  // C++ only
 ```
 
 ### Parameters
 
-*x*<br/>
+*x*\
 Floating-point value.
 
 ## Return Value
@@ -44,9 +42,9 @@ The **atanh** functions return the inverse hyberbolic tangent (arc hyperbolic ta
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **atanh** that take and return **`float`** or **`long double`** values. In a C program, **atanh** always takes and returns **`double`**.
+Because C++ allows overloading, you can call overloads of **atanh** that take and return **`float`** or **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **atanh** always takes and returns **`double`**.
 
-If you use the \<tgmath.h> `atanh()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `atanh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

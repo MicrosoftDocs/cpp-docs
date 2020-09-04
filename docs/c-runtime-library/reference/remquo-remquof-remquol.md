@@ -21,9 +21,7 @@ double remquo( double numer, double denom, int* quo );
 float remquof( float numer, float denom, int* quo );
 long double remquol( long double numer, long double denom, int* quo );
 #define remquo(X, Y, INT_PTR) // Requires C11 or higher
-```
 
-```cpp
 float remquo( float numer, float denom, int* quo ); /* C++ only */
 long double remquo( long double numer, long double denom, int* quo ); /* C++ only */
 ```
@@ -47,9 +45,9 @@ A pointer to an integer to store a value that has the sign and approximate magni
 
 The **remquo** function calculates the floating-point remainder *f* of *x* / *y* such that *x* = *i* \* *y* + *f*, where *i* is an integer, *f* has the same sign as *x*, and the absolute value of *f* is less than the absolute value of *y*.
 
-C++ allows overloading, so you can call overloads of **remquo** that take and return **`float`** or **`long double`** values. In a C program, **remquo** always takes two **`double`** arguments and returns a **`double`**.
+C++ allows overloading, so you can call overloads of **remquo** that take and return **`float`** or **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **remquo** always takes two **`double`** arguments and returns a **`double`**.
 
-If you use the \<tgmath.h> `remquo()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `remquo()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

@@ -64,9 +64,9 @@ The **copysign** functions return a floating-point value that combines the magni
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **copysign** that take and return **`float`** or **`long double`** values. In a C program, **copysign** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **copysign** that take and return **`float`** or **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **copysign** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `copysign()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `copysign()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 ## Requirements
 

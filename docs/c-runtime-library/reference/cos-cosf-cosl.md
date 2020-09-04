@@ -21,9 +21,7 @@ double cos( double x );
 float cosf( float x );
 long double cosl( long double x );
 #define cos(X) // Requires C11 or higher
-```
 
-```cpp
 float cos( float x );  // C++ only
 long double cos( long double x );  // C++ only
 ```
@@ -44,9 +42,9 @@ The cosine of *x*. If *x* is greater than or equal to 263, or less than or equal
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **cos** that take and return **`float`** or **`long double`** values. In a C program, **cos** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **cos** that take and return **`float`** or **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **cos** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `cos()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `cos()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

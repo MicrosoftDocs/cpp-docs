@@ -30,9 +30,7 @@ long double tgammal(
 );
 
 #define tgamma(X) // Requires C11 or higher
-```
 
-```cpp
 float tgamma(
    float x
 ); //C++ only
@@ -69,9 +67,9 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **tgamma** that take and return **`float`** and **`long double`** types. In a C program, **tgamma** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **tgamma** that take and return **`float`** and **`long double`** types. In a C program, unless you are using the \<tgmath.h> macro to call this function, **tgamma** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `tgamma()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `tgamma()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 If x is a natural number, this function returns the factorial of (x-1).
 

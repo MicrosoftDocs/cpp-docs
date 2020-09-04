@@ -20,10 +20,8 @@ Retrieves the real part of a complex number.
 double creal( _Dcomplex z );
 float crealf( _Fcomplex z );
 long double creall( _Lcomplex z );
-#define creal( X ) // Requires C11 or higher
-```
+#define creal(X) // Requires C11 or higher
 
-```cpp
 float creal( _Fcomplex z );  // C++ only
 long double creal( _Lcomplex z );  // C++ only
 ```
@@ -39,9 +37,9 @@ The real part of *z*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **creal** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, **creal** always takes a **_Dcomplex** value and returns a **`double`** value.
+Because C++ allows overloading, you can call overloads of **creal** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **creal** always takes a **_Dcomplex** value and returns a **`double`** value.
 
-If you use the \<tgmath.h> `creal()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `creal()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 ## Requirements
 

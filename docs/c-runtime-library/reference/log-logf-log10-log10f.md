@@ -17,26 +17,24 @@ Calculates logarithms.
 ## Syntax
 
 ```C
-double log( double x );
-float logf( float x );
-long double logl( double x );
-double log10( double x );
-float log10f ( float x );
-long double log10l( double x );
-#define log( X ) // Requires C11 or higher
-#define log10( X ) // Requires C11 or higher
-```
+double log(double x);
+float logf(float x);
+long double logl(double x);
+double log10(double x);
+float log10f (float x);
+long double log10l(double x);
+#define log(X) // Requires C11 or higher
+#define log10(X) // Requires C11 or higher
 
-```cpp
-float log( float x );  // C++ only
-long double log( long double x );  // C++ only
-float log10( float x );  // C++ only
-long double log10( long double x );  // C++ only
+float log(float x);  // C++ only
+long double log(long double x);  // C++ only
+float log10(float x);  // C++ only
+long double log10(long double x);  // C++ only
 ```
 
 ### Parameters
 
-*x*<br/>
+*x*\
 Value whose logarithm is to be found.
 
 ## Return Value
@@ -53,9 +51,9 @@ The **log** functions return the natural logarithm (base *e*) of *x* if successf
 
 ## Remarks
 
-C++ allows overloading, so you can call overloads of **log** and **log10** that take and return **`float`** or **`long double`** values. In a C program, **log** and **log10** always take and return a **`double`**.
+C++ allows overloading, so you can call overloads of **log** and **log10** that take and return **`float`** or **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **log** and **log10** always take and return a **`double`**.
 
-If you use the \<tgmath.h> `log()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `log()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

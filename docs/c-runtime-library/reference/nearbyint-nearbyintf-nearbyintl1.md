@@ -21,9 +21,7 @@ double nearbyint( double x );
 float nearbyintf( float x );
 long double nearbyintl( long double x );
 #define nearbyint( X ) // Requires C11 or higher
-```
 
-```cpp
 float nearbyint( float x ); //C++ only
 long double nearbyint( long double x ); //C++ only
 ```
@@ -51,9 +49,9 @@ The primary difference between this function and [rint](rint-rintf-rintl.md) is 
 
 Because the maximum floating-point values are exact integers, this function will never overflow by itself; rather, the output may overflow the return value, depending on which version of the function you use.
 
-C++ allows overloading, so you can call overloads of **nearbyint** that take and return **`float`** or **`long double`** parameters. In a C program, **nearbyint** always takes two double values and returns a double value.
+C++ allows overloading, so you can call overloads of **nearbyint** that take and return **`float`** or **`long double`** parameters. In a C program, unless you are using the \<tgmath.h> macro to call this function, **nearbyint** always takes two double values and returns a double value.
 
-If you use the \<tgmath.h> `nearbyint()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `nearbyint()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

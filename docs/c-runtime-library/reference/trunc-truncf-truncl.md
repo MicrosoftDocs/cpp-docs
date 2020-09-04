@@ -20,9 +20,7 @@ Determines the nearest integer that is less than or equal to the specified float
 double trunc( double x );
 long double truncl( long double x );
 #define trunc(X) // Requires C11 or higher
-```
 
-```cpp
 long double trunc( long double x ); //C++ only
 float trunc( float x ); //C++ only
 ```
@@ -48,9 +46,9 @@ Errors are reported as specified in [_matherr](matherr.md).
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **trunc** that take and return **`float`** and **`long double`** types. In a C program, **trunc** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **trunc** that take and return **`float`** and **`long double`** types. In a C program, unless you are using the \<tgmath.h> macro to call this function, **trunc** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `trunc()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `trunc()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 Because the largest floating-point values are exact integers, this function will not overflow on its own. However, you may cause the function to overflow by returning a value into an integer type.
 

@@ -46,9 +46,9 @@ The **expm1** functions return a floating-point value that represents e<sup>x</s
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **expm1** that take and return **`float`** and **`long double`** values. In a C program, **expm1** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **expm1** that take and return **`float`** and **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **expm1** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `expm1()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `expm1()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 ## Requirements
 

@@ -52,9 +52,9 @@ The **floor** functions return a floating-point value that represents the larges
 
 ## Remarks
 
-C++ allows overloading, so you can call overloads of **floor** that take and return **`float`** and **`long double`** values. In a C program, **floor** always takes and returns a **`double`**.
+C++ allows overloading, so you can call overloads of **floor** that take and return **`float`** and **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **floor** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `floor()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `floor()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

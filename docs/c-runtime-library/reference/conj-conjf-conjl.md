@@ -46,9 +46,9 @@ The complex conjugate  of *z*.  The result has the same real and imaginary part 
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **conj** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **conj** always takes and returns a **_Dcomplex** value.
+Because C++ allows overloading, you can call overloads of **conj** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **conj** always takes and returns a **_Dcomplex** value.
 
-If you use the \<tgmath.h> `conj()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `conj()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 ## Requirements
 

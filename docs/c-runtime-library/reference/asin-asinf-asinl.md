@@ -21,16 +21,14 @@ double asin( double x );
 float asinf ( float x );
 long double asinl( long double x );
 #define asin(X) // Requires C11 or higher
-```
 
-```cpp
 float asin( float x );  // C++ only
 long double asin( long double x );  // C++ only
 ```
 
 ### Parameters
 
-*x*<br/>
+*x*\
 Value whose arcsine is to be calculated.
 
 ## Return Value
@@ -47,9 +45,9 @@ By default, if *x* is less than -1 or greater than 1, **asin** returns an indefi
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **asin** with **`float`** and **`long double`** values. In a C program, **asin** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **asin** with **`float`** and **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **asin** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `asin()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `asin()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

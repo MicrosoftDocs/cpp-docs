@@ -21,9 +21,7 @@ double cimag( _Dcomplex z );
 float cimagf( _Fcomplex z );
 long double cimagl( _Lcomplex z );
 #define cimag(X) // Requires C11 or higher
-```
 
-```cpp
 float cimag( _Fcomplex z );  // C++ only
 long double cimag( _Lcomplex z );  // C++ only
 ```
@@ -39,9 +37,9 @@ The imaginary part of *z*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **cimag** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, **cimag** always takes a **_Dcomplex** value and returns a **`double`** value.
+Because C++ allows overloading, you can call overloads of **cimag** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **cimag** always takes a **_Dcomplex** value and returns a **`double`** value.
 
-If you use the \<tgmath.h> `cimag()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `cimag()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 ## Requirements
 

@@ -21,9 +21,7 @@ double acos( double x );
 float acosf( float x );
 long double acosl( long double x );
 #define acos(X) // Requires C11 or higher
-```
 
-```cpp
 float acos( float x );   // C++ only
 long double acos( long double x );   // C++ only
 ```
@@ -47,9 +45,9 @@ By default, if *x* is less than -1 or greater than 1, **acos** returns an indefi
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **acos** that take and return **`float`** and **`long double`** types. In a C program, **acos** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **acos** that take and return **`float`** and **`long double`** types. In a C program, unless you are using the \<tgmath.h> macro to call this function, **acos** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `acos()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `acos()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

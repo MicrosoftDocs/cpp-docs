@@ -21,9 +21,7 @@ double asinh( double x );
 float asinhf( float x );
 long double asinhl( long double x );
 #define asinh(X) // Requires C11 or higher
-```
 
-```cpp
 float asinh( float x );  // C++ only
 long double asinh( long double x );  // C++ only
 ```
@@ -43,9 +41,9 @@ The **asinh** functions return the inverse hyberbolic sine (arc hyperbolic sine)
 
 ## Remarks
 
-When you use C++, you can call overloads of **asinh** that take and return **`float`** or **`long double`** values. In a C program, **asinh** always takes and returns **`double`**.
+When you use C++, you can call overloads of **asinh** that take and return **`float`** or **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **asinh** always takes and returns **`double`**.
 
-If you use the \<tgmath.h> `asinh()` macro, the type of the argument determines which version of the function is selected.See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the \<tgmath.h> `asinh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
