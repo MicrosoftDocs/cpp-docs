@@ -54,11 +54,11 @@ The `assert` macro prints a diagnostic message when *expression* evaluates to **
 
 The diagnostic message is printed in wide (`wchar_t`) characters. Thus, it will work as expected even if there are Unicode characters in the expression.
 
-The destination of the diagnostic message depends on the type of application that called the routine. Console applications receive the message through **stderr**. In a Windows-based application, `assert` calls the Windows [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) function to create a message box to display the message with three buttons: **Abort**, **Retry**, and **Ignore**. If the user clicks **Abort**, the program aborts immediately. If the user clicks **Retry**, the debugger is called and the user can debug the program if just-in-time (JIT) debugging is enabled. If the user clicks **Ignore**, the program will continue with normal execution. Note that clicking **Ignore** when an error condition exists can result in undefined behavior.
+The destination of the diagnostic message depends on the type of application that called the routine. Console applications receive the message through **stderr**. In a Windows-based application, `assert` calls the Windows [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) function to create a message box to display the message with three buttons: **Abort**, **Retry**, and **Ignore**. If the user clicks **Abort**, the program aborts immediately. If the user clicks **Retry**, the debugger is called and the user can debug the program if just-in-time (JIT) debugging is enabled. If the user clicks **Ignore**, the program will continue with normal execution. Note that clicking **Ignore** when an error condition exists can result in undefined behavior since preconditions of the calling code were not met.
 
 To override the default output behavior regardless of the app type, call [`_set_error_mode`](set-error-mode.md) to select between the output-to-stderr and display-dialog-box behavior.
 
-Since `assert` calls [`abort`](abort.md) immediately after displaying the message, the debug behavior for [`abort`](abort.md) will also occur. [`abort`](abort.md) will display a dialog box with the **Abort**, **Retry**, and **Ignore** buttons. This is not the same as the `assert` dialog box described above. In particular, [`abort`](abort.md) always exits the program during its execution, so neither the **Retry** nor **Ignore** button will resume execution following the `assert` call. The [`abort`](abort.md) dialog box is skipped if a dialog box was already displayed during `assert`, so this is only seen when output-to-stderr `assert` behavior is used.
+After `assert` displays its message, it calls [`abort`](abort.md) which displays a dialog box with  **Abort**, **Retry**, and **Ignore** buttons. [`abort`](abort.md) exits the program, so neither the **Retry** nor **Ignore** button will resume execution following the `assert` call. If `assert` displayed a dialog box, the [`abort`](abort.md) dialog box is not shown. The only time the [`abort`](abort.md) dialog box is shown is when `assert` sends its output to stderr.
 
 This means that a dialog box is always displayed following an `assert` call in debug mode. The behavior of each button is captured in the below table.
 
@@ -66,7 +66,7 @@ This means that a dialog box is always displayed following an `assert` call in d
 |----------|----------------|------------------|
 |Abort|Exit immediately with exit code 3|Exit immediately with exit code 3|
 |Retry|Break into debugger during `abort`|Break into debugger during `assert`|
-|Ignore|Finish exiting via `abort`|Continue program as though the assert did not fire (may result in undefined behavior)|
+|Ignore|Finish exiting via `abort`|Continue program as though the assert did not fire (may result in undefined behavior since preconditions of the calling code were not met)|
 
 For more information about CRT debugging, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).
 
