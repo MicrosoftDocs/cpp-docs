@@ -1,6 +1,7 @@
 ---
 title: "cimag, cimagf, cimagl"
-ms.date: "11/04/2016"
+description: "API reference for cimag, cimagf, and cimagl; which retrieve the imaginary part of a complex number."
+ms.date: "9/2/2020"
 api_name: ["cimag", "cimagf", "cimagl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,16 +20,15 @@ Retrieves the imaginary part of a complex number.
 double cimag( _Dcomplex z );
 float cimagf( _Fcomplex z );
 long double cimagl( _Lcomplex z );
-```
+#define cimag(X) // Requires C11 or higher
 
-```cpp
-float cimag( _Fcomplex z );  // C++
-long double cimag( _Lcomplex z );  // C++
+float cimag( _Fcomplex z );  // C++ only
+long double cimag( _Lcomplex z );  // C++ only
 ```
 
 ### Parameters
 
-*z*<br/>
+*z*\
 A complex number.
 
 ## Return Value
@@ -37,13 +37,16 @@ The imaginary part of *z*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **cimag** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, **cimag** always takes a **_Dcomplex** value and returns a **`double`** value.
+Because C++ allows overloading, you can call overloads of **cimag** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **cimag** always takes a **_Dcomplex** value and returns a **`double`** value.
+
+If you use the \<tgmath.h> `cimag()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**cimag**,               **cimagf**, **cimagl**|\<complex.h>|\<ccomplex>|
+|**cimag**, **cimagf**, **cimagl**|\<complex.h>|\<ccomplex>|
+|**cimag** macro | \<tgmath.h> ||
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

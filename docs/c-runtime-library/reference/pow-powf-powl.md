@@ -1,6 +1,7 @@
 ---
 title: "pow, powf, powl"
-ms.date: "4/2/2020"
+description: "API reference for pow, powf, and powl; which calculate raising to a power."
+ms.date: "08/31/2020"
 api_name: ["powl", "pow", "powf", "_o_pow", "_o_powf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,9 +20,8 @@ Calculates *x* raised to the power of *y*.
 double pow( double x, double y );
 float powf( float x, float y );
 long double powl( long double x, long double y );
-```
+define pow(X, Y) // Requires C11 or higher 
 
-```cpp
 double pow( double x, int y );  // C++ only
 float pow( float x, float y );  // C++ only
 float pow( float x, int y );  // C++ only
@@ -31,10 +31,10 @@ long double pow( long double x, int y );  // C++ only
 
 ### Parameters
 
-*x*<br/>
+*x*\
 Base.
 
-*y*<br/>
+*y*\
 Exponent.
 
 ## Return Value
@@ -53,7 +53,9 @@ Returns the value of *x*<sup>*y*</sup>. No error message is printed on overflow 
 
 **pow** has an implementation that uses Streaming SIMD Extensions 2 (SSE2). For information and restrictions about using the SSE2 implementation, see [_set_SSE2_enable](set-sse2-enable.md).
 
-Because C++ allows overloading, you can call any of the various overloads of **pow**. In a C program, **pow** always takes two **`double`** values and returns a **`double`** value.
+Because C++ allows overloading, you can call any of the various overloads of **pow**. In a C program, unless you are using the \<tgmath.h> macro to call this function, **pow** always takes two **`double`** values and returns a **`double`** value.
+
+If you use the \<tgmath.h> `pow()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 The `pow(int, int)` overload is no longer available. If you use this overload, the compiler may emit [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md). To avoid this problem, cast the first parameter to **`double`**, **`float`**, or **`long double`**.
 
@@ -64,6 +66,7 @@ By default, this function's global state is scoped to the application. To change
 |Routine|Required header (C)|Required header (C++)|
 |-|-|-|
 |**pow**, **powf**, **powl**|\<math.h>|\<math.h> or \<cmath>|
+|**pow** macro | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

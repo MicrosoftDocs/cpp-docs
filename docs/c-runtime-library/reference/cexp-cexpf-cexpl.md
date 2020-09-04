@@ -1,5 +1,6 @@
 ---
 title: "cexp, cexpf, cexpl"
+description: "API reference for cexp, cexpf, and cexpl; which compute the base-e exponential of a complex number."
 ms.date: "11/04/2016"
 api_name: ["cexp", "cexpf", "cexpl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
@@ -19,16 +20,15 @@ Compute the base-e exponential of a complex number.
 _Dcomplex cexp( _Dcomplex z );
 _Fcomplex cexpf( _Fcomplex z );
 _Lcomplex cexpl( _Lcomplex z );
-```
+#define cexp(X) // Requires C11 or higher
 
-```cpp
 _Fcomplex cexp( _Fcomplex z );  // C++ only
 _Lcomplex cexp( _Lcomplex z );  // C++ only
 ```
 
 ### Parameters
 
-*z*<br/>
+*z*\
 A complex number that represents the exponent.
 
 ## Return Value

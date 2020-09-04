@@ -1,6 +1,7 @@
 ---
 title: "nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl"
-ms.date: "4/2/2020"
+description: "API reference for nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, and nexttowardl; which return the next representable floating-point value."
+ms.date: "9/1/2020"
 api_name: ["nextafterf", "_nextafterf", "nextafter", "nextafterl", "_nextafter", "nexttoward", "nexttowardf", "nexttowardl", "_o__nextafter", "_o_nextafter", "_o_nextafterf", "_o_nextafterl", "_o_nexttoward", "_o_nexttowardf", "_o_nexttowardl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -23,12 +24,14 @@ long double nextafterl( long double x, long double y );
 double _nextafter( double x, double y );
 float _nextafterf( float x, float y ); /* x64 only */
 
+#define nextafter(X, Y) // Requires C11 or higher
+
 double nexttoward( double x, long double y );
 float nexttowardf( float x, long double y );
 long double nexttowardl( long double x, long double y );
-```
 
-```cpp
+#define nexttoward(X, Y) // Requires C11 or higher
+
 float nextafter( float x, float y ); /* C++ only, requires <cmath> */
 long double nextafter( long double x, long double y ); /* C++ only, requires <cmath> */
 
@@ -38,10 +41,10 @@ long double nexttoward( long double x, long double y ); /* C++ only, requires <c
 
 ### Parameters
 
-*x*<br/>
+*x*\
 The floating-point value to start from.
 
-*y*<br/>
+*y*\
 The floating-point value to go towards.
 
 ## Return Value
@@ -52,7 +55,9 @@ Returns the next representable floating-point value of the return type after *x*
 
 The **nextafter** and **nexttoward** function families are equivalent, except for the parameter type of *y*. If *x* and *y* are equal, the value returned is *y* converted to the return type.
 
-Because C++ allows overloading, if you include \<cmath> you can call overloads of **nextafter** and **nexttoward** that return **`float`** and **`long double`** types. In a C program, **nextafter** and **nexttoward** always return **`double`**.
+Because C++ allows overloading, if you include \<cmath> you can call overloads of **nextafter** and **nexttoward** that return **`float`** and **`long double`** types. In a C program, unless you are using the \<tgmath.h> macro to call this function, **nextafter** and **nexttoward** always return **`double`**.
+
+If you use the \<tgmath.h> `nextafter()` or `nexttoward()`macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 The **_nextafter** and **_nextafterf** functions are Microsoft-specific. The **_nextafterf** function is only available when compiling for x64.
 
@@ -64,10 +69,11 @@ By default, this function's global state is scoped to the application. To change
 |-------------|---------------------------|-------------------------------|
 |**nextafter**, **nextafterf**, **nextafterl**, **_nextafterf**, **nexttoward**, **nexttowardf**, **nexttowardl**|\<math.h>|\<math.h> or \<cmath>|
 |**_nextafter**|\<float.h>|\<float.h> or \<cfloat>|
+|**nextafter** macro,  **nexttoward** macro| \<tgmath.h> ||
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)

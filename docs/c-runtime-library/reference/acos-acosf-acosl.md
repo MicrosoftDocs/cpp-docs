@@ -1,6 +1,7 @@
 ---
 title: "acos, acosf, acosl"
-ms.date: "4/2/2020"
+description: "API reference for `acos`, `acosf`, and `acosl`; which calculate the arccosine of a floating-point value."
+ms.date: "08/31/2020"
 api_name: ["acosf", "acos", "acosl", "_o_acos"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,16 +20,15 @@ Calculates the arccosine.
 double acos( double x );
 float acosf( float x );
 long double acosl( long double x );
-```
+#define acos(X) // Requires C11 or higher
 
-```cpp
 float acos( float x );   // C++ only
 long double acos( long double x );   // C++ only
 ```
 
 ### Parameters
 
-*x*<br/>
+*x*\
 Value between -1 and 1, for which to calculate the arccosine (the inverse cosine).
 
 ## Return Value
@@ -45,7 +45,9 @@ By default, if *x* is less than -1 or greater than 1, **acos** returns an indefi
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **acos** that take and return **`float`** and **`long double`** types. In a C program, **acos** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **acos** that take and return **`float`** and **`long double`** types. In a C program, unless you are using the \<tgmath.h> macro to call this function, **acos** always takes and returns a **`double`**.
+
+If you use the \<tgmath.h> `acos()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -54,6 +56,7 @@ By default, this function's global state is scoped to the application. To change
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
 |**acos**, **acosf**, **acosl**|\<math.h>|\<errno.h>|
+|**acos()** macro | \<tgmath.h> ||
 
 ## Example
 
