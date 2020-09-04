@@ -1,6 +1,6 @@
 ---
 title: "&lt;string_view&gt; operators"
-ms.date: "04/19/2019"
+ms.date: "9/4/2020"
 f1_keywords: ["xstring/basic_string_view::operator!=", "xstring/basic_string_view::operator&gt;", "xstring/basic_string_view::operator&gt;=", "xstring/basic_string_view::operator&lt;", "xstring/basic_string_view::operator&lt;&lt;", "xstring/basic_string_view::operator&lt;=", "xstring/basic_string_view::operator+", "xstring/basic_string_view::operator=="]
 helpviewer_keywords: ["std::basic_string_view::operator!=", "std::basic_string_view::operator&gt;", "std::basic_string_view::operator&gt;=", "std::basic_string_view::operator&lt;", "std::basic_string_view::operator&lt;&lt;", "std::basic_string_view::operator&lt;=, std::basic_string_view::operator=="]
 ---
@@ -309,6 +309,10 @@ using namespace literals::string_view_literals;
     u16string_view sv16{ u"Hello"sv };
     u32string_view sv32{ U"Hello"sv };
 ```
+
+## Requirements
+
+The compiler flag `/std:c++17` is required. Set this in Visual Studio 2019 in **Project Properties** > **General** > **C++ Language Standard**.
 
 ## See also
 
