@@ -1,6 +1,6 @@
 ---
 title: "snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l"
-description: "API reference for snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_, which write formatted data to a string."
+description: "API reference for snprintf, _snprintf, _snprintf_l, _snwprintf, and _snwprintf_; which write formatted data to a string."
 ms.date: "08/27/2020"
 api_name: ["_snwprintf", "_snprintf", "_snprintf_l", "_snwprintf_l", "snprintf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]

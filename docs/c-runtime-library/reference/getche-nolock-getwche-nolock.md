@@ -1,5 +1,6 @@
 ---
 title: "_getche_nolock, _getwche_nolock"
+description: "API reference for _getche_nolock, and _getwche_nolock; which gets a character from the console, with echo and without locking the thread."
 ms.date: "4/2/2020"
 api_name: ["_getche_nolock", "_getwche_nolock", "_o__getche_nolock", "_o__getwche_nolock"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
@@ -25,7 +26,7 @@ wint_t _getwche_nolock( void );
 
 ## Return Value
 
-Returns the character read. There is no error return.
+Returns the character read. There's no error return.
 
 ## Remarks
 
