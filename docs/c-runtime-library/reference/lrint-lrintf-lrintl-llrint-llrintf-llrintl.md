@@ -75,7 +75,7 @@ If successful, returns the rounded integral value of *x*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **lrint** and **llrint** that take **`float`** and **`long double`** types. In a C program, unless you are using the \<tgmath.h> macro to call this function, **lrint** and **llrint** always take a **`double`**.
+Because C++ allows overloading, you can call overloads of **lrint** and **llrint** that take **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **lrint** and **llrint** always take a **`double`**.
 
 If you use the \<tgmath.h> `llrint()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 

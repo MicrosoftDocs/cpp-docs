@@ -42,7 +42,7 @@ Floating-point value.
 
 ## Return Value
 
-The **ceil** functions return a floating-point value that represents the smallest integer that is greater than or equal to *x*. There is no error return.
+The **ceil** functions return a floating-point value that represents the smallest integer that is greater than or equal to *x*. There's no error return.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
@@ -52,7 +52,7 @@ The **ceil** functions return a floating-point value that represents the smalles
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **ceil** that take **`float`** or **`long double`** types. In a C program, unless you are using the \<tgmath.h> macro to call this function, **ceil** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **ceil** that take **`float`** or **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **ceil** always takes and returns a **`double`**.
 
 f you use the <tgmath.h> `ceil()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 

@@ -55,7 +55,7 @@ Returns the next representable floating-point value of the return type after *x*
 
 The **nextafter** and **nexttoward** function families are equivalent, except for the parameter type of *y*. If *x* and *y* are equal, the value returned is *y* converted to the return type.
 
-Because C++ allows overloading, if you include \<cmath> you can call overloads of **nextafter** and **nexttoward** that return **`float`** and **`long double`** types. In a C program, unless you are using the \<tgmath.h> macro to call this function, **nextafter** and **nexttoward** always return **`double`**.
+Because C++ allows overloading, if you include \<cmath> you can call overloads of **nextafter** and **nexttoward** that return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **nextafter** and **nexttoward** always return **`double`**.
 
 If you use the \<tgmath.h> `nextafter()` or `nexttoward()`macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 

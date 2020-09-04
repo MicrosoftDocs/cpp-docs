@@ -45,7 +45,7 @@ By default, if *x* is less than -1 or greater than 1, **asin** returns an indefi
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **asin** with **`float`** and **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **asin** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **asin** with **`float`** and **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **asin** always takes and returns a **`double`**.
 
 If you use the \<tgmath.h> `asin()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 

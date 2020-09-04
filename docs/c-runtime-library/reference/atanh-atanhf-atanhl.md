@@ -42,7 +42,7 @@ The **atanh** functions return the inverse hyberbolic tangent (arc hyperbolic ta
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **atanh** that take and return **`float`** or **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **atanh** always takes and returns **`double`**.
+Because C++ allows overloading, you can call overloads of **atanh** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **atanh** always takes and returns **`double`**.
 
 If you use the \<tgmath.h> `atanh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 

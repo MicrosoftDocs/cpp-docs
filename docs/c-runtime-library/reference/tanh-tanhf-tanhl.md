@@ -19,7 +19,6 @@ Calculates the hyperbolic tangent.
 double tanh( double x );
 float tanhf( float x );
 long double tanhl( long double x );
-long double tanhl( long double x );
 #define tanh(x) // Requires C11 or higher
 ```
 
@@ -35,7 +34,7 @@ Angle in radians.
 
 ## Return value
 
-The **tanh** functions return the hyperbolic tangent of *x*. There is no error return.
+The **tanh** functions return the hyperbolic tangent of *x*. There's no error return.
 
 |Input|SEH Exception|**Matherr** Exception|
 |-----------|-------------------|-------------------------|
@@ -43,7 +42,7 @@ The **tanh** functions return the hyperbolic tangent of *x*. There is no error r
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **tanh** that take and return **`float`** or **`long double`** values. In a C program, unless you are using the \<tgmath.h> macro to call this function, **tanh** always takes and returns **`double`**.
+Because C++ allows overloading, you can call overloads of **tanh** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **tanh** always takes and returns **`double`**.
 
 If you use the \<tgmath.h> `tanh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
