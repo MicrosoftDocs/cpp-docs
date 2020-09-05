@@ -1,6 +1,6 @@
 ---
 title: "/U, /u (Undefine symbols)"
-ms.date: "06/08/2020"
+ms.date: 09/03/2020
 f1_keywords: ["VC.Project.VCCLCompilerTool.UndefinePreprocessorDefinitions", "VC.Project.VCCLWCECompilerTool.UndefinePreprocessorDefinitions", "VC.Project.VCCLCompilerTool.UndefineAllPreprocessorDefinitions", "/u", "VC.Project.VCCLWCECompilerTool.UndefineAllPreprocessorDefinitions"]
 helpviewer_keywords: ["-U compiler option [C++]", "Undefine Symbols compiler option", "/U compiler option [C++]", "U compiler option [C++]"]
 ms.assetid: 7bc0474f-6d1f-419b-807d-0d8816763b2a
@@ -29,14 +29,14 @@ By default, the compiler may define a large number of Microsoft-specific symbols
 
 | Symbol | Function |
 |--|--|
-| `_CHAR_UNSIGNED` | Default char type is unsigned. Defined when the [**`/J`**](j-default-char-type-is-unsigned.md) option is specified. |
-| `_CPPRTTI` | Defined for code compiled with the [**`/GR`**](gr-enable-run-time-type-information.md) option. |
-| `_CPPUNWIND` | Defined for code compiled with the [**`/EHsc`**](eh-exception-handling-model.md) option. |
-| `_DLL` | Defined when the [**`/MD`**](md-mt-ld-use-run-time-library.md) option is specified. |
+| `_CHAR_UNSIGNED` | Default char type is unsigned. Defined when the [`/J`](j-default-char-type-is-unsigned.md) option is specified. |
+| `_CPPRTTI` | Defined for code compiled with the [`/GR`](gr-enable-run-time-type-information.md) option. |
+| `_CPPUNWIND` | Defined for code compiled with the [`/EHsc`](eh-exception-handling-model.md) option. |
+| `_DLL` | Defined when the [`/MD`](md-mt-ld-use-run-time-library.md) option is specified. |
 | `_M_IX86` | By default, defined to 600 for x86 targets. |
 | `_MSC_VER` | Defined as a unique integer value for each compiler version. For more information, see [Predefined macros](../../preprocessor/predefined-macros.md). |
 | `_WIN32` | Defined for WIN32 applications. Always defined. |
-| `_MT` | Defined when the [**`/MD`** or **`/MT`**](md-mt-ld-use-run-time-library.md) option is specified. |
+| `_MT` | Defined when the [`/MD`](md-mt-ld-use-run-time-library.md) or [`/MT`](md-mt-ld-use-run-time-library.md) option is specified. |
 
 For a complete list of Microsoft-specific predefined macros, see [Predefined macros](../../preprocessor/predefined-macros.md).
 
