@@ -43,7 +43,7 @@ int main()
 
 **Namespace:** std
 
-**Compiler Option:** /std:c++latest
+[/std:c++latest](../build/reference/std-specify-language-standard-version.md) is required.
 
 ## Members
 
