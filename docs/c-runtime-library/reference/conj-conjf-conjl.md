@@ -1,6 +1,7 @@
 ---
 title: "conj, conjf, conjl"
-ms.date: "11/04/2016"
+description: "API reference for conj, conjf, and conjl; which retrieve the complex conjugate of a complex number."
+ms.date: "9/2/2020"
 api_name: ["conj", "conjf", "conjl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -31,11 +32,12 @@ _Fcomplex conjf(
 _Lcomplex conjl(
    _Lcomplex z
 );
+#define conj(X) // Requires C11 or higher
 ```
 
 ### Parameters
 
-*z*<br/>
+*z*\
 A complex number.
 
 ## Return Value
@@ -44,13 +46,16 @@ The complex conjugate  of *z*.  The result has the same real and imaginary part 
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **conj** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, **conj** always takes and returns a **_Dcomplex** value.
+Because C++ allows overloading, you can call overloads of **conj** that take and return **_Fcomplex** and **_Lcomplex** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **conj** always takes and returns a **_Dcomplex** value.
+
+If you use the \<tgmath.h> `conj()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
-|**conj**,               **conjf**, **conjl**|\<complex.h>|\<ccomplex>|
+|**conj**, **conjf**, **conjl**|\<complex.h>|\<ccomplex>|
+|**conj** macro | \<tgmath.h> ||
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

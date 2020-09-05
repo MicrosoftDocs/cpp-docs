@@ -1,5 +1,6 @@
 ---
 title: "rand"
+description: "API reference for rand, which generates a pseudorandom number by using a well-known and fully-reproducible algorithm."
 ms.date: "4/2/2020"
 api_name: ["rand", "_o_rand"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
@@ -20,7 +21,7 @@ int rand( void );
 
 ## Return Value
 
-**rand** returns a pseudorandom number, as described above. There is no error return.
+**rand** returns a pseudorandom number, as described above. There's no error return.
 
 ## Remarks
 

@@ -1,6 +1,6 @@
 ---
 title: "CRT Library Features"
-description: "The DLL and library files that are part of the Microsoft C Runtime Library."
+description: "The files that contain the Microsoft C run-time libraries, and their associated compiler options and preprocessor directives."
 ms.date: 09/03/2020
 helpviewer_keywords: ["MSVCR71.dll", "libraries [C++], multithreaded", "library files, run-time", "LIBCMT.lib", "LIBCP.lib", "LIBCPMT.lib", "run-time libraries, C", "CRT, release versions", "MSVCP71.dll", "LIBC.lib", "libraries [C++]", "libraries [C++], run-time", "linking [C++], libraries"]
 ms.assetid: a889fd39-807d-48f2-807f-81492612463f
@@ -66,7 +66,7 @@ For more information on using the CRT with **`/clr`**, see [Mixed (Native and Ma
 
 To build a debug version of your application, the [`_DEBUG`](../c-runtime-library/debug.md) flag must be defined and the application must be linked with a debug version of one of these libraries. For more information about using the debug versions of the library files, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).
 
-This version of the CRT is not fully conformant with the C99 standard. In particular, the \<tgmath.h> header and the `CX_LIMITED_RANGE`/`FP_CONTRACT` pragma macros are not supported. Certain elements such as the meaning of parameter specifiers in standard IO functions use legacy interpretations by default. You can use **`/Zc`** compiler conformance options and specify linker options to control some aspects of library conformance,
+This version of the CRT is not fully conformant with the C99 standard. In versions before Visual Studio 2019 version 16.8, the \<tgmath.h> header is not supported. In all versions, the `CX_LIMITED_RANGE` and `FP_CONTRACT` pragma macros are not supported. Certain elements such as the meaning of parameter specifiers in standard IO functions use legacy interpretations by default. You can use **`/Zc`** compiler conformance options and specify linker options to control some aspects of library conformance.
 
 ## C++ Standard Library
 
