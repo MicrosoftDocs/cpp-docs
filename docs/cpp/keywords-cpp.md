@@ -282,7 +282,7 @@ These identifiers are extended attributes for the **`__declspec`** modifier. The
 
 <sup>f</sup> Applicable to Managed Extensions for C++ only. This syntax is now deprecated. For more information, see [Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md).
 
-<sup>f</sup> Applicable to C++/CLI.
+<sup>g</sup> Applicable to C++/CLI.
 
 ## See also
 
