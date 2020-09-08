@@ -1,5 +1,6 @@
 ---
 title: "clog, clogf, clogl"
+description: "API reference for clog, clogf, and clogl; which retrieve the natural logarithm of a complex number, with a branch cut along the negative real axis."
 ms.date: "11/04/2016"
 api_name: ["clog", "clogf", "clogl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
@@ -35,7 +36,7 @@ _Lcomplex clogl(
 
 ### Parameters
 
-*z*<br/>
+*z*\
 The base of the logarithm.
 
 ## Return Value
