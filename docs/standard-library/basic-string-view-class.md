@@ -1,7 +1,6 @@
 ---
 title: "basic_string_view Class"
 description: "API reference for `basic_string_view` which refers to a constant contiguous sequence of char-like objects."
-description: ":
 ms.date: "9/8/2020"
 f1_keywords: ["xstring/std::basic_string_view", "xstring/std::basic_string_view::allocator_type", "xstring/std::basic_string_view::const_iterator", "xstring/std::basic_string_view::const_pointer", "xstring/std::basic_string_view::const_reference", "xstring/std::basic_string_view::const_reverse_iterator", "xstring/std::basic_string_view::difference_type", "xstring/std::basic_string_view::ends_with", "xstring/std::basic_string_view::starts_with", "xstring/std::basic_string_view::iterator", "xstring/std::basic_string_view::npos", "xstring/std::basic_string_view::pointer", "xstring/std::basic_string_view::reference", "xstring/std::basic_string_view::reverse_iterator", "xstring/std::basic_string_view::size_type", "xstring/std::basic_string_view::traits_type", "xstring/std::basic_string_view::value_type", "xstring/std::basic_string_view::append", "xstring/std::basic_string_view::assign", "xstring/std::basic_string_view::at", "xstring/std::basic_string_view::back", "xstring/std::basic_string_view::begin", "xstring/std::basic_string_view::c_str", "xstring/std::basic_string_view::capacity", "xstring/std::basic_string_view::cbegin", "xstring/std::basic_string_view::cend", "xstring/std::basic_string_view::clear", "xstring/std::basic_string_view::compare", "xstring/std::basic_string_view::copy", "xstring/std::basic_string_view::_Copy_s", "xstring/std::basic_string_view::crbegin", "xstring/std::basic_string_view::crend", "xstring/std::basic_string_view::data", "xstring/std::basic_string_view::empty", "xstring/std::basic_string_view::end", "xstring/std::basic_string_view::erase", "xstring/std::basic_string_view::find", "xstring/std::basic_string_view::find_first_not_of", "xstring/std::basic_string_view::find_first_of", "xstring/std::basic_string_view::find_last_not_of", "xstring/std::basic_string_view::find_last_of", "xstring/std::basic_string_view::front", "xstring/std::basic_string_view::get_allocator", "xstring/std::basic_string_view::insert", "xstring/std::basic_string_view::length", "xstring/std::basic_string_view::max_size", "xstring/std::basic_string_view::pop_back", "xstring/std::basic_string_view::push_back", "xstring/std::basic_string_view::rbegin", "xstring/std::basic_string_view::rend", "xstring/std::basic_string_view::remove_prefix","xstring/std::basic_string_view::remove_suffix", "xstring/std::basic_string_view::replace", "xstring/std::basic_string_view::reserve", "xstring/std::basic_string_view::resize", "xstring/std::basic_string_view::rfind", "xstring/std::basic_string_view::shrink_to_fit", "xstring/std::basic_string_view::size", "xstring/std::basic_string_view::substr", "xstring/std::basic_string_view::swap"]
 helpviewer_keywords: ["std::basic_string_view", "std::basic_string_view, allocator_type", "std::basic_string_view, const_iterator", "std::basic_string_view, const_pointer", "std::basic_string_view, const_reference", "std::basic_string_view, const_reverse_iterator", "std::basic_string_view, difference_type", "std::basic_string_view, iterator", "std::basic_string_view, npos", "std::basic_string_view, pointer", "std::basic_string_view, reference", "std::basic_string_view, reverse_iterator", "std::basic_string_view, size_type", "std::basic_string_view, traits_type", "std::basic_string_view, value_type", "std::basic_string_view, append", "std::basic_string_view, assign", "std::basic_string_view, at", "std::basic_string_view, back", "std::basic_string_view, begin", "std::basic_string_view, c_str", "std::basic_string_view, capacity", "std::basic_string_view, cbegin", "std::basic_string_view, cend", "std::basic_string_view, clear", "std::basic_string_view, compare", "std::basic_string_view, copy", "std::basic_string_view, crbegin", "std::basic_string_view, crend", "std::basic_string_view, data", "std::basic_string_view, empty", "std::basic_string_view, end",  "std::basic_string_view, ends_with", "std::basic_string_view, erase", "std::basic_string_view, find", "std::basic_string_view, find_first_not_of", "std::basic_string_view, find_first_of", "std::basic_string_view, find_last_not_of", "std::basic_string_view, find_last_of", "std::basic_string_view, front", "std::basic_string_view, get_allocator", "std::basic_string_view, insert", "std::basic_string_view, length", "std::basic_string_view, max_size", "std::basic_string_view, pop_back", "std::basic_string_view, push_back", "std::basic_string_view, rbegin", "std::basic_string_view, rend", "std::basic_string_view, remove_prefix","std::basic_string_view, remove_suffix","std::basic_string_view, replace", "std::basic_string_view, reserve", "std::basic_string_view, resize", "std::basic_string_view, rfind", "std::basic_string_view, shrink_to_fit", "std::basic_string_view, size",  "std::basic_string_view, starts_with", "std::basic_string_view, substr", "std::basic_string_view, swap"]
@@ -20,7 +19,7 @@ The standard library defines several specializations based on the type of the el
 
 In this document, the term "string_view" refers generally to any of these typedefs.
 
-A string_view describes the minimum common interface necessary to read string data. It provides const access to the underlying data; it makes no copies (except for the `copy` function). The data may or may not contain null values ('\0') at any position. A string_view has no control over the object's lifetime. It is the caller's responsibility to ensure that the underlying string data is valid.
+A string_view describes the minimum common interface necessary to read string data. It provides const access to the underlying data; it makes no copies (except for the `copy` function). The data may or may not contain null values ('\0') at any position. A string_view has no control over the object's lifetime. It's the caller's responsibility to ensure that the underlying string data is valid.
 
 A function that accepts a parameter of type string_view can be made to work with any string-like type, without making the function into a template, or constraining the function to a particular subset of string types. The only requirement is that an implicit conversion exists from the string type to string_view. All the standard string types are implicitly convertible to a string_view that contains the same element type. In other words, a `std::string` is convertible to a `string_view` but not to a `wstring_view`.
 
@@ -111,7 +110,7 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 |[cend](#cend)|Returns a const iterator that points to one past the last element.|
 |[copy](#copy)|Copies at most a specified number of characters from an indexed position in a source string_view to a target character array. (Not recommended. Use _Copy_s instead.)|
 |[_Copy_s](#_copy_s)|Secure CRT copy function.|
-|[compare](#compare)|Compares a string_view with a specified string_view to determine if they are equal or if one is lexicographically less than the other.|
+|[compare](#compare)|Compares a string_view with a specified string_view to determine if they're equal or if one is lexicographically less than the other.|
 |[crbegin](#crbegin)|Same as [rbegin](#rbegin).|
 |[crend](#crend)|Same as [rend](#rend).|
 |[data](#data)|Returns a raw non-owning pointer to the character sequence.|
@@ -171,7 +170,7 @@ A const_reference to the character at the position specified by the parameter in
 
 The first element has an index of zero and the following elements are indexed consecutively by the positive integers, so that a string_view of length *n* has an *n*th element indexed by the number *n -* 1. **at** throws an exception for invalid indices, unlike [operator\[\]](#op_at).
 
-In general, we recommend that **at** for sequences such as `std::vector` and string_view should never be used. An invalid index passed to a sequence is a logic error that should be discovered and fixed during development. If a program isn't absolutely certain that its indices are valid, it should test them, not call at() and rely on exceptions to defend against careless programming.
+In general, we recommend that **at** for sequences such as `std::vector` and string_view should never be used. An invalid index passed to a sequence is a logic error that should be discovered and fixed during development. If a program isn't certain that its indices are valid, it should test them, not call at() and rely on exceptions to defend against careless programming.
 
 See [basic_string_view::operator\[\]](#op_at) for more information.
 
@@ -212,7 +211,7 @@ Keep in mind that after a string_view is modified, for example by calling `remov
 
 ### Example
 
-A string_view that is constructed with a C string literal does not include the terminating null and therefore in the following example `back` returns 'p' and not '\0'.
+A `string_view` that is constructed with a C string literal does not include the terminating null. So in the following example, `back` returns `'p'` and not `'\0'`.
 
 ```cpp
 char c[] = "Help"; // char[5]
@@ -291,11 +290,11 @@ A **`const`** random-access iterator that points just beyond the end of the rang
 
 ### Remarks
 
-The value returned by `cend` should not be dereferenced.
+The value returned by `cend` shouldn't be dereferenced.
 
 ## <a name="compare"></a> basic_string_view::compare
 
-Performs a case sensitive comparison with a specified string_view (or a convertible string type) to determine if the two objects are equal or if one is lexicographically less than the other. The [\<string_view> operators](string-view-operators.md) use this member function to perform comparisons.
+Does a case-sensitive comparison with a specified string_view (or a convertible string type) to determine if the two objects are equal or if one is lexicographically less than the other. The [\<string_view> operators](string-view-operators.md) use this member function to do comparisons.
 
 ```cpp
 constexpr int compare(basic_string_view strv) const noexcept;
@@ -328,11 +327,13 @@ The C string to be compared to this string_view.
 
 ### Return Value
 
-A negative value if this string_view is less than *strv* or *ptr*; zero if the two character sequences are equal; or a positive value if this string_view is greater than *strv* or *ptr*.
+- A negative value if this `string_view` is less than *strv* or *ptr*
+- Zero if the two character sequences are equal
+- A positive value if this `string_view` is greater than *strv* or *ptr*
 
 ### Remarks
 
-The `compare` member functions perform a case-sensitive comparison of either all or part of each character sequence.
+The `compare` member functions do a case-sensitive comparison of either all or part of each character sequence.
 
 ### Example
 
@@ -463,7 +464,7 @@ The beginning position in the source string_view from which copies are to be mad
 
 ### Return Value
 
-The number of characters actually copied.
+The number of characters copied.
 
 ### Remarks
 
@@ -497,7 +498,7 @@ The beginning position in the source string from which copies are to be made.
 
 ### Return Value
 
-The number of characters actually copied.
+The number of characters copied.
 
 ### Remarks
 
@@ -577,7 +578,7 @@ Returns a random-access const_iterator that points to one past the last element.
 
 ### Remarks
 
-`end` is used to test whether a const_iterator has reached the end of its string_view. The value returned by `end` should not be dereferenced.
+`end` is used to test whether a const_iterator has reached the end of its string_view. The value returned by `end` shouldn't be dereferenced.
 
 ## <a name="ends_with"></a> basic_string_view::ends_with
 
@@ -832,7 +833,7 @@ The maximum number of characters a string_view can contain.
 
 ### Remarks
 
-A exception of type [length_error](../standard-library/length-error-class.md) is thrown when an operation produces a string_view with a length greater than `max_size()`.
+An exception of type [length_error](../standard-library/length-error-class.md) is thrown when an operation produces a string_view with a length greater than `max_size()`.
 
 ## <a name="op_eq"></a> basic_string_view::operator=
 
@@ -932,7 +933,7 @@ A const reverse random-access iterator that points to one past the last element 
 
 ### Remarks
 
-`rend` is used with a reversed string_view just as [end](#end) is used with a string_view. `rend` can be used to test whether a reverse iterator has reached the end of its string_view. The value returned by `rend` should not be dereferenced.
+`rend` is used with a reversed string_view just as [end](#end) is used with a string_view. `rend` can be used to test whether a reverse iterator has reached the end of its string_view. The value returned by `rend` shouldn't be dereferenced.
 
 ## <a name="rfind"></a> basic_string_view::rfind
 
@@ -1050,11 +1051,11 @@ constexpr basic_string_view substr(size_type offset = 0, size_type count = npos)
 An index locating the element at the position from which the copy is made, with a default value of 0.
 
 *count*\
-The number of characters to include in the substring, if they are present.
+The number of characters to include in the substring, if they're present.
 
 ### Return Value
 
-A string_view object that represents the specified sub-sequence of elements.
+A string_view object that represents the specified subsequence of elements.
 
 ## <a name="swap"></a> basic_string_view::swap
 
