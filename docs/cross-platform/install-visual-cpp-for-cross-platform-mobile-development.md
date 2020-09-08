@@ -46,6 +46,9 @@ The Visual Studio Installer includes a **Mobile development with C++** workload.
 
 - Android Native Development Kit (NDK), Apache Ant, and the C++ Android development tools are required to build C++ code that targets the Android platform.
 
+  > [!NOTE]
+  > Some tools in the Android NDK don't support Unicode characters in file paths and file names. If a project or source file has Unicode characters in its path or file name, the project will fail to build.
+
 - The Google Android Emulator and Intel Hardware Accelerated Execution Manager (HAXM) are optional, but recommended, components. (The Intel HAXM drivers only work on Intel processors, and are incompatible with some VMs, including Hyper-V.) You can develop and debug directly on an Android device, but it's often easier to use an emulator on your desktop for debugging.
 
 - C++ iOS development tools are required to build C++ code that targets the iOS platform.
