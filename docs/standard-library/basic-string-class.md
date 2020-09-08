@@ -74,7 +74,7 @@ The type that represents the stored allocator object that encapsulates details a
 |[data](#data)|Converts the contents of a string into an array of characters.|
 |[empty](#empty)|Tests whether the string contains characters.|
 |[end](#end)|Returns an iterator that addresses the location succeeding the last element in a string.|
-|[ends_with](#ends_with)|Checks whether the string ends with the specified suffix.|
+|[ends_with](#ends_with)<sup>20</sup>|Checks whether the string ends with the specified suffix.|
 |[erase](#erase)|Removes an element or a range of elements in a string from a specified position.|
 |[find](#find)|Searches a string in a forward direction for the first occurrence of a substring that matches a specified sequence of characters.|
 |[find_first_not_of](#find_first_not_of)|Searches through a string for the first character that isn't any element of a specified string.|
@@ -96,9 +96,11 @@ The type that represents the stored allocator object that encapsulates details a
 |[rfind](#rfind)|Searches a string in a backward direction for the first occurrence of a substring that matches a specified sequence of characters.|
 |[shrink_to_fit](#shrink_to_fit)|Discards the excess capacity of the string.|
 |[size](#size)|Returns the current number of elements in a string.|
-|[starts_with](#starts_with)|Checks whether the string starts with the specified prefix.|
+|[starts_with](#starts_with)<sup>20</sup>|Checks whether the string starts with the specified prefix.|
 |[substr](#substr)|Copies a substring of at most some number of characters from a string beginning from a specified position.|
 |[swap](#swap)|Exchange the contents of two strings.|
+
+<sup>20</sup> Added in the C++20 standard.\
 
 ### Operators
 

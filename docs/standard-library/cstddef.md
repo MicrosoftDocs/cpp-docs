@@ -70,10 +70,6 @@ template <class IntType>
     IntType to_integer(byte b) noexcept;
 ```
 
-## Requirements
-
-The compiler flag `/std:c++17` is required. Set this in Visual Studio 2019 in **Project Properties** > **General** > **C++ Language Standard**.
-
 ## See also
 
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\

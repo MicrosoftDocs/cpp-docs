@@ -117,7 +117,7 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 |[data](#data)|Returns a raw non-owning pointer to the character sequence.|
 |[empty](#empty)|Tests whether the string_view contains characters.|
 |[end](#end)|Same as [cend](#cend).|
-|[ends_with](#ends_with)|Check whether a string view ends with a specified suffix.|
+|[ends_with](#ends_with)<sup>20</sup>|Check whether a string view ends with a specified suffix.|
 |[find](#find)|Searches in a forward direction for the first occurrence of a substring that matches a specified sequence of characters.|
 |[find_first_not_of](#find_first_not_of)|Searches for the first character that is not any element of a specified string_view or convertible string object.|
 |[find_first_of](#find_first_of)|Searches for the first character that matches any element of a specified string_view or convertible string object.|
@@ -132,9 +132,11 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 |[rend](#rend)|Returns a const iterator that points to one past the last element in a reversed string_view.|
 |[rfind](#rfind)|Searches a string_view in reverse for the first occurrence of a substring that matches a specified sequence of characters.|
 |[size](#size)|Returns the current number of elements.|
-|[starts_with](#starts_with)|Check whether a string view starts with a given prefix.|
+|[starts_with](#starts_with)<sup>20</sup>|Check whether a string view starts with a given prefix.|
 |[substr](#substr)|Returns a substring of a specified length starting at a specified index.|
 |[swap](#swap)|Exchange the contents of two string_views.|
+
+<sup>20</sup> Added in the C++20 standard.\
 
 ## Remarks
 

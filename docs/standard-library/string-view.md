@@ -17,7 +17,7 @@ Defines the class template `basic_string_view` and related types and operators. 
 
 ## Remarks
 
-The `string_view` family of template specializations provides an efficient way to pass a read-only, exception-safe, non-owning handle to the character data of any string-like objects with the first element of the sequence at position zero. A function parameter of type `string_view` (which is a typedef for `basic_string_view<char>`) can accept arguments such as `std::string`, **char\***, or any other string-like class of narrow characters for which an implicit conversion to `string_view` is defined. Similarly, a parameter of `wstring_view`, `u16string_view` or `u32string_view` can accept any string type for which an implicit conversion is defined. For more information, see [basic_string_view Class](../standard-library/basic-string-view-class.md).
+The `string_view` family of template specializations provides an efficient way to pass a read-only, exception-safe, non-owning handle to the character data of any string-like objects with the first element of the sequence at position zero. A function parameter of type `string_view` (which is a typedef for `basic_string_view<char>`) can accept arguments such as `std::string`, `char*`, or any other string-like class of narrow characters for which an implicit conversion to `string_view` is defined. Similarly, a parameter of `wstring_view`, `u16string_view` or `u32string_view` can accept any string type for which an implicit conversion is defined. For more information, see [basic_string_view Class](../standard-library/basic-string-view-class.md).
 
 ### Typedefs
 
@@ -61,7 +61,7 @@ The \<string_view> operators can compare `string_view` objects to objects of any
 
 - **Namespace:** std
 
-- **Compiler Option:** std:c++17 (or later)
+- **Compiler Option:** [std:c++17](../build/reference/std-specify-language-standard-version.md) or later.
 
 ## See also
 
