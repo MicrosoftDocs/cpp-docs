@@ -51,6 +51,9 @@ The Visual Studio Installer includes a **Mobile development with C++** workload.
 - C++ iOS development tools are required to build C++ code that targets the iOS platform.
 
 > [!NOTE]
+> Some tools in the Android NDK does not support Unicode characters in file paths and file names. So if a project or source file has Unicode characters in its path or file name, the project will fail to build.
+
+> [!NOTE]
 > If you're using Visual Studio 2015, see [Install Visual C++ for Cross-Platform Mobile Development (Visual Studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=vs-2015)
 
 ### Install the Mobile development with C++ workload
