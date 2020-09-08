@@ -1,5 +1,6 @@
 ---
 title: "_getche, _getwche"
+description: "API reference for _getche and _getwche; which get a character from the console with echo."
 ms.date: "4/2/2020"
 api_name: ["_getwche", "_getche", "_o__getche", "_o__getwche"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
@@ -25,7 +26,7 @@ wint_t _getwche( void );
 
 ## Return Value
 
-Returns the character read. There is no error return.
+Returns the character read. There's no error return.
 
 ## Remarks
 
