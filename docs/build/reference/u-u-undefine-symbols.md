@@ -1,5 +1,6 @@
 ---
 title: "/U, /u (Undefine symbols)"
+description: "Use the Microsoft C/C++ compiler /U and /u options to undefine preprocessor symbols."
 ms.date: 09/03/2020
 f1_keywords: ["VC.Project.VCCLCompilerTool.UndefinePreprocessorDefinitions", "VC.Project.VCCLWCECompilerTool.UndefinePreprocessorDefinitions", "VC.Project.VCCLCompilerTool.UndefineAllPreprocessorDefinitions", "/u", "VC.Project.VCCLWCECompilerTool.UndefineAllPreprocessorDefinitions"]
 helpviewer_keywords: ["-U compiler option [C++]", "Undefine Symbols compiler option", "/U compiler option [C++]", "U compiler option [C++]"]
