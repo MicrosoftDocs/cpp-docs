@@ -246,7 +246,7 @@ The pointer to the character values.
 *len*\
 The number of characters to include in the view.
 
-## Remarks
+### Remarks
 
 The constructors with a charT* parameter assume that the input is null-terminated, but the terminating null is not included in the string_view.
 
