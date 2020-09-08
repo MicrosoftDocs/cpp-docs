@@ -1,8 +1,8 @@
 ---
 title: "basic_string Class"
-ms.date: "11/12/2019"
-f1_keywords: ["xstring/std::basic_string", "xstring/std::basic_string::allocator_type", "xstring/std::basic_string::const_iterator", "xstring/std::basic_string::const_pointer", "xstring/std::basic_string::const_reference", "xstring/std::basic_string::const_reverse_iterator", "xstring/std::basic_string::difference_type", "xstring/std::basic_string::iterator", "xstring/std::basic_string::npos", "xstring/std::basic_string::pointer", "xstring/std::basic_string::reference", "xstring/std::basic_string::reverse_iterator", "xstring/std::basic_string::size_type", "xstring/std::basic_string::traits_type", "xstring/std::basic_string::value_type", "xstring/std::basic_string::append", "xstring/std::basic_string::assign", "xstring/std::basic_string::at", "xstring/std::basic_string::back", "xstring/std::basic_string::begin", "xstring/std::basic_string::c_str", "xstring/std::basic_string::capacity", "xstring/std::basic_string::cbegin", "xstring/std::basic_string::cend", "xstring/std::basic_string::clear", "xstring/std::basic_string::compare", "xstring/std::basic_string::copy", "xstring/std::basic_string::crbegin", "xstring/std::basic_string::crend", "xstring/std::basic_string::_Copy_s", "xstring/std::basic_string::data", "xstring/std::basic_string::empty", "xstring/std::basic_string::end", "xstring/std::basic_string::erase", "xstring/std::basic_string::find", "xstring/std::basic_string::find_first_not_of", "xstring/std::basic_string::find_first_of", "xstring/std::basic_string::find_last_not_of", "xstring/std::basic_string::find_last_of", "xstring/std::basic_string::front", "xstring/std::basic_string::get_allocator", "xstring/std::basic_string::insert", "xstring/std::basic_string::length", "xstring/std::basic_string::max_size", "xstring/std::basic_string::pop_back", "xstring/std::basic_string::push_back", "xstring/std::basic_string::rbegin", "xstring/std::basic_string::rend", "xstring/std::basic_string::replace", "xstring/std::basic_string::reserve", "xstring/std::basic_string::resize", "xstring/std::basic_string::rfind", "xstring/std::basic_string::shrink_to_fit", "xstring/std::basic_string::size", "xstring/std::basic_string::substr", "xstring/std::basic_string::swap"]
-helpviewer_keywords: ["std::basic_string [C++]", "std::basic_string [C++], allocator_type", "std::basic_string [C++], const_iterator", "std::basic_string [C++], const_pointer", "std::basic_string [C++], const_reference", "std::basic_string [C++], const_reverse_iterator", "std::basic_string [C++], difference_type", "std::basic_string [C++], iterator", "std::basic_string [C++], npos", "std::basic_string [C++], pointer", "std::basic_string [C++], reference", "std::basic_string [C++], reverse_iterator", "std::basic_string [C++], size_type", "std::basic_string [C++], traits_type", "std::basic_string [C++], value_type", "std::basic_string [C++], append", "std::basic_string [C++], assign", "std::basic_string [C++], at", "std::basic_string [C++], back", "std::basic_string [C++], begin", "std::basic_string [C++], c_str", "std::basic_string [C++], capacity", "std::basic_string [C++], cbegin", "std::basic_string [C++], cend", "std::basic_string [C++], clear", "std::basic_string [C++], compare", "std::basic_string [C++], copy", "std::basic_string [C++], crbegin", "std::basic_string [C++], crend", "std::basic_string [C++], _Copy_s", "std::basic_string [C++], data", "std::basic_string [C++], empty", "std::basic_string [C++], end", "std::basic_string [C++], erase", "std::basic_string [C++], find", "std::basic_string [C++], find_first_not_of", "std::basic_string [C++], find_first_of", "std::basic_string [C++], find_last_not_of", "std::basic_string [C++], find_last_of", "std::basic_string [C++], front", "std::basic_string [C++], get_allocator", "std::basic_string [C++], insert", "std::basic_string [C++], length", "std::basic_string [C++], max_size", "std::basic_string [C++], pop_back", "std::basic_string [C++], push_back", "std::basic_string [C++], rbegin", "std::basic_string [C++], rend", "std::basic_string [C++], replace", "std::basic_string [C++], reserve", "std::basic_string [C++], resize", "std::basic_string [C++], rfind", "std::basic_string [C++], shrink_to_fit", "std::basic_string [C++], size", "std::basic_string [C++], substr", "std::basic_string [C++], swap"]
+ms.date: "9/8/2020"
+f1_keywords: ["xstring/std::basic_string", "xstring/std::basic_string::allocator_type", "xstring/std::basic_string::const_iterator", "xstring/std::basic_string::const_pointer", "xstring/std::basic_string::const_reference", "xstring/std::basic_string::const_reverse_iterator", "xstring/std::basic_string::difference_type", "xstring/std::basic_string::iterator", "xstring/std::basic_string::npos", "xstring/std::basic_string::pointer", "xstring/std::basic_string::reference", "xstring/std::basic_string::reverse_iterator", "xstring/std::basic_string::size_type", "xstring/std::basic_string::traits_type", "xstring/std::basic_string::value_type", "xstring/std::basic_string::append", "xstring/std::basic_string::assign", "xstring/std::basic_string::at", "xstring/std::basic_string::back", "xstring/std::basic_string::begin", "xstring/std::basic_string::c_str", "xstring/std::basic_string::capacity", "xstring/std::basic_string::cbegin", "xstring/std::basic_string::cend", "xstring/std::basic_string::clear", "xstring/std::basic_string::compare", "xstring/std::basic_string::copy", "xstring/std::basic_string::crbegin", "xstring/std::basic_string::crend", "xstring/std::basic_string::_Copy_s", "xstring/std::basic_string::data", "xstring/std::basic_string::empty", "xstring/std::basic_string::end", "xstring/std::basic_string::erase", "xstring/std::basic_string::find", "xstring/std::basic_string::find_first_not_of", "xstring/std::basic_string::find_first_of", "xstring/std::basic_string::find_last_not_of", "xstring/std::basic_string::find_last_of", "xstring/std::basic_string::front", "xstring/std::basic_string::get_allocator", "xstring/std::basic_string::insert", "xstring/std::basic_string::length", "xstring/std::basic_string::max_size", "xstring/std::basic_string::pop_back", "xstring/std::basic_string::push_back", "xstring/std::basic_string::rbegin", "xstring/std::basic_string::rend", "xstring/std::basic_string::replace", "xstring/std::basic_string::reserve", "xstring/std::basic_string::resize", "xstring/std::basic_string::rfind", "xstring/std::basic_string::shrink_to_fit", "xstring/std::basic_string::size", "xstring/std::basic_string::substr", "xstring/std::basic_string::ends_with", "xstring/std::basic_string::starts_with", "xstring/std::basic_string::swap"]
+helpviewer_keywords: ["std::basic_string [C++]", "std::basic_string [C++], allocator_type", "std::basic_string [C++], const_iterator", "std::basic_string [C++], const_pointer", "std::basic_string [C++], const_reference", "std::basic_string [C++], const_reverse_iterator", "std::basic_string [C++], difference_type", "std::basic_string [C++], iterator", "std::basic_string [C++], npos", "std::basic_string [C++], pointer", "std::basic_string [C++], reference", "std::basic_string [C++], reverse_iterator", "std::basic_string [C++], size_type", "std::basic_string [C++], traits_type", "std::basic_string [C++], value_type", "std::basic_string [C++], append", "std::basic_string [C++], assign", "std::basic_string [C++], at", "std::basic_string [C++], back", "std::basic_string [C++], begin", "std::basic_string [C++], c_str", "std::basic_string [C++], capacity", "std::basic_string [C++], cbegin", "std::basic_string [C++], cend", "std::basic_string [C++], clear", "std::basic_string [C++], compare", "std::basic_string [C++], copy", "std::basic_string [C++], crbegin", "std::basic_string [C++], crend", "std::basic_string [C++], _Copy_s", "std::basic_string [C++], data", "std::basic_string [C++], empty", "std::basic_string [C++], end", "std::basic_string [C++], erase", "std::basic_string [C++], find", "std::basic_string [C++], find_first_not_of", "std::basic_string [C++], find_first_of", "std::basic_string [C++], find_last_not_of", "std::basic_string [C++], find_last_of", "std::basic_string [C++], front", "std::basic_string [C++], get_allocator", "std::basic_string [C++], insert", "std::basic_string [C++], length", "std::basic_string [C++], max_size", "std::basic_string [C++], pop_back", "std::basic_string [C++], push_back", "std::basic_string [C++], rbegin", "std::basic_string [C++], rend", "std::basic_string [C++], replace", "std::basic_string [C++], reserve", "std::basic_string [C++], resize", "std::basic_string [C++], rfind", "std::basic_string [C++], shrink_to_fit", "std::basic_string [C++], size", "std::basic_string [C++], starts_with", "std::basic_string [C++], ends_with","std::basic_string [C++], substr", "std::basic_string [C++], swap"]
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
 ---
 # basic_string Class
@@ -74,6 +74,7 @@ The type that represents the stored allocator object that encapsulates details a
 |[data](#data)|Converts the contents of a string into an array of characters.|
 |[empty](#empty)|Tests whether the string contains characters.|
 |[end](#end)|Returns an iterator that addresses the location succeeding the last element in a string.|
+|[ends_with](#ends_with)|Checks whether the string ends with the specified suffix.|
 |[erase](#erase)|Removes an element or a range of elements in a string from a specified position.|
 |[find](#find)|Searches a string in a forward direction for the first occurrence of a substring that matches a specified sequence of characters.|
 |[find_first_not_of](#find_first_not_of)|Searches through a string for the first character that isn't any element of a specified string.|
@@ -95,6 +96,7 @@ The type that represents the stored allocator object that encapsulates details a
 |[rfind](#rfind)|Searches a string in a backward direction for the first occurrence of a substring that matches a specified sequence of characters.|
 |[shrink_to_fit](#shrink_to_fit)|Discards the excess capacity of the string.|
 |[size](#size)|Returns the current number of elements in a string.|
+|[starts_with](#starts_with)|Checks whether the string starts with the specified prefix.|
 |[substr](#substr)|Copies a substring of at most some number of characters from a string beginning from a specified position.|
 |[swap](#swap)|Exchange the contents of two strings.|
 
@@ -1776,6 +1778,61 @@ The string is now: No way out.
 The last character-letter of the modified str1 is now: T
 The modified string str1 is now: No way ouT.
 The string str2 is empty.
+```
+
+## <a name="ends_with"></a> basic_string::ends_with
+
+Checks whether the string ends with the specified suffix.
+
+```cpp
+NODISCARD bool ends_with(const basic_string_view Right) const noexcept;
+NODISCARD bool ends_with(const T c) const noexcept;
+NODISCARD bool ends_with(const T* const x) const noexcept;
+```
+
+### Parameters
+
+*c*\
+Single character suffix.
+
+*right*\
+A string view containing the suffix. Also accepts `std::basic_string`.
+
+*x*\
+Null-terminated character string containing the suffix.
+
+### Return Value
+
+`true` if the string ends with the specified suffix; `false` otherwise.
+
+### Remarks
+
+See [starts_with](#starts_with) to check if a string starts with the specified prefix.
+
+### Example
+
+```cpp
+#include <string>
+#include <iostream>
+
+int main()
+{
+    std::basic_string<char> str = "abcdefg";
+
+    std::cout << std::boolalpha << str.ends_with('g') << '\n';
+    std::cout << std::boolalpha << str.ends_with("efG") << '\n';
+
+    std::basic_string<char> str2 = "efg";
+    std::cout << std::boolalpha << str.ends_with(str2);
+
+    return 0;
+}
+```
+
+```Output
+true
+false
+true
 ```
 
 ## <a name="erase"></a> basic_string::erase
@@ -4537,6 +4594,60 @@ int main( )
 ```Output
 The current size of string str1 is: 11.
 The capacity of string str1 is: 15.
+```
+
+## <a name="starts_with"></a> basic_string::starts_with
+
+Checks whether the string starts with the specified prefix.
+
+```cpp
+NODISCARD bool starts_with(const basic_string_view Right) const noexcept;
+NODISCARD bool starts_with(const T c) const noexcept;
+NODISCARD bool starts_with(const T* const x) const noexcept;
+```
+
+### Parameters
+
+*c*\
+Single character prefix.
+
+*right*\
+A string view containing the prefix. Also accepts `std::basic_string`.
+
+*x*\
+Null-terminated character string containing the prefix.
+
+### Return Value
+
+`true` if the string starts with the specified prefix; `false` otherwise.
+
+### Remarks
+
+See [ends_with](#ends_with) to see if a string ends with a postfix.
+
+### Example
+
+```cpp
+#include <string>
+#include <iostream>
+
+int main()
+{
+    std::basic_string<char> str = "abcdefg";
+
+    std::cout << std::boolalpha << str.starts_with('b') << '\n';
+    std::cout << std::boolalpha << str.starts_with("aBc") << '\n';
+
+    std::basic_string<char> str2 = "abc";
+    std::cout << std::boolalpha << str.starts_with(str2);
+    return 0;
+}
+```
+
+```Output
+false
+false
+true
 ```
 
 ## <a name="substr"></a> basic_string::substr

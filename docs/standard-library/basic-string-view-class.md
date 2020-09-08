@@ -2,9 +2,9 @@
 title: "basic_string_view Class"
 description: "API reference for `basic_string_view` which refers to a constant contiguous sequence of char-like objects."
 description: ":
-ms.date: "9/4/2020"
-f1_keywords: ["xstring/std::basic_string_view", "xstring/std::basic_string_view::allocator_type", "xstring/std::basic_string_view::const_iterator", "xstring/std::basic_string_view::const_pointer", "xstring/std::basic_string_view::const_reference", "xstring/std::basic_string_view::const_reverse_iterator", "xstring/std::basic_string_view::difference_type", "xstring/std::basic_string_view::iterator", "xstring/std::basic_string_view::npos", "xstring/std::basic_string_view::pointer", "xstring/std::basic_string_view::reference", "xstring/std::basic_string_view::reverse_iterator", "xstring/std::basic_string_view::size_type", "xstring/std::basic_string_view::traits_type", "xstring/std::basic_string_view::value_type", "xstring/std::basic_string_view::append", "xstring/std::basic_string_view::assign", "xstring/std::basic_string_view::at", "xstring/std::basic_string_view::back", "xstring/std::basic_string_view::begin", "xstring/std::basic_string_view::c_str", "xstring/std::basic_string_view::capacity", "xstring/std::basic_string_view::cbegin", "xstring/std::basic_string_view::cend", "xstring/std::basic_string_view::clear", "xstring/std::basic_string_view::compare", "xstring/std::basic_string_view::copy", "xstring/std::basic_string_view::_Copy_s", "xstring/std::basic_string_view::crbegin", "xstring/std::basic_string_view::crend", "xstring/std::basic_string_view::data", "xstring/std::basic_string_view::empty", "xstring/std::basic_string_view::end", "xstring/std::basic_string_view::erase", "xstring/std::basic_string_view::find", "xstring/std::basic_string_view::find_first_not_of", "xstring/std::basic_string_view::find_first_of", "xstring/std::basic_string_view::find_last_not_of", "xstring/std::basic_string_view::find_last_of", "xstring/std::basic_string_view::front", "xstring/std::basic_string_view::get_allocator", "xstring/std::basic_string_view::insert", "xstring/std::basic_string_view::length", "xstring/std::basic_string_view::max_size", "xstring/std::basic_string_view::pop_back", "xstring/std::basic_string_view::push_back", "xstring/std::basic_string_view::rbegin", "xstring/std::basic_string_view::rend", "xstring/std::basic_string_view::remove_prefix","xstring/std::basic_string_view::remove_suffix", "xstring/std::basic_string_view::replace", "xstring/std::basic_string_view::reserve", "xstring/std::basic_string_view::resize", "xstring/std::basic_string_view::rfind", "xstring/std::basic_string_view::shrink_to_fit", "xstring/std::basic_string_view::size", "xstring/std::basic_string_view::substr", "xstring/std::basic_string_view::swap"]
-helpviewer_keywords: ["std::basic_string_view", "std::basic_string_view, allocator_type", "std::basic_string_view, const_iterator", "std::basic_string_view, const_pointer", "std::basic_string_view, const_reference", "std::basic_string_view, const_reverse_iterator", "std::basic_string_view, difference_type", "std::basic_string_view, iterator", "std::basic_string_view, npos", "std::basic_string_view, pointer", "std::basic_string_view, reference", "std::basic_string_view, reverse_iterator", "std::basic_string_view, size_type", "std::basic_string_view, traits_type", "std::basic_string_view, value_type", "std::basic_string_view, append", "std::basic_string_view, assign", "std::basic_string_view, at", "std::basic_string_view, back", "std::basic_string_view, begin", "std::basic_string_view, c_str", "std::basic_string_view, capacity", "std::basic_string_view, cbegin", "std::basic_string_view, cend", "std::basic_string_view, clear", "std::basic_string_view, compare", "std::basic_string_view, copy", "std::basic_string_view, crbegin", "std::basic_string_view, crend", "std::basic_string_view, data", "std::basic_string_view, empty", "std::basic_string_view, end", "std::basic_string_view, erase", "std::basic_string_view, find", "std::basic_string_view, find_first_not_of", "std::basic_string_view, find_first_of", "std::basic_string_view, find_last_not_of", "std::basic_string_view, find_last_of", "std::basic_string_view, front", "std::basic_string_view, get_allocator", "std::basic_string_view, insert", "std::basic_string_view, length", "std::basic_string_view, max_size", "std::basic_string_view, pop_back", "std::basic_string_view, push_back", "std::basic_string_view, rbegin", "std::basic_string_view, rend", "std::basic_string_view, remove_prefix","std::basic_string_view, remove_suffix","std::basic_string_view, replace", "std::basic_string_view, reserve", "std::basic_string_view, resize", "std::basic_string_view, rfind", "std::basic_string_view, shrink_to_fit", "std::basic_string_view, size", "std::basic_string_view, substr", "std::basic_string_view, swap"]
+ms.date: "9/8/2020"
+f1_keywords: ["xstring/std::basic_string_view", "xstring/std::basic_string_view::allocator_type", "xstring/std::basic_string_view::const_iterator", "xstring/std::basic_string_view::const_pointer", "xstring/std::basic_string_view::const_reference", "xstring/std::basic_string_view::const_reverse_iterator", "xstring/std::basic_string_view::difference_type", "xstring/std::basic_string_view::ends_with", "xstring/std::basic_string_view::starts_with", "xstring/std::basic_string_view::iterator", "xstring/std::basic_string_view::npos", "xstring/std::basic_string_view::pointer", "xstring/std::basic_string_view::reference", "xstring/std::basic_string_view::reverse_iterator", "xstring/std::basic_string_view::size_type", "xstring/std::basic_string_view::traits_type", "xstring/std::basic_string_view::value_type", "xstring/std::basic_string_view::append", "xstring/std::basic_string_view::assign", "xstring/std::basic_string_view::at", "xstring/std::basic_string_view::back", "xstring/std::basic_string_view::begin", "xstring/std::basic_string_view::c_str", "xstring/std::basic_string_view::capacity", "xstring/std::basic_string_view::cbegin", "xstring/std::basic_string_view::cend", "xstring/std::basic_string_view::clear", "xstring/std::basic_string_view::compare", "xstring/std::basic_string_view::copy", "xstring/std::basic_string_view::_Copy_s", "xstring/std::basic_string_view::crbegin", "xstring/std::basic_string_view::crend", "xstring/std::basic_string_view::data", "xstring/std::basic_string_view::empty", "xstring/std::basic_string_view::end", "xstring/std::basic_string_view::erase", "xstring/std::basic_string_view::find", "xstring/std::basic_string_view::find_first_not_of", "xstring/std::basic_string_view::find_first_of", "xstring/std::basic_string_view::find_last_not_of", "xstring/std::basic_string_view::find_last_of", "xstring/std::basic_string_view::front", "xstring/std::basic_string_view::get_allocator", "xstring/std::basic_string_view::insert", "xstring/std::basic_string_view::length", "xstring/std::basic_string_view::max_size", "xstring/std::basic_string_view::pop_back", "xstring/std::basic_string_view::push_back", "xstring/std::basic_string_view::rbegin", "xstring/std::basic_string_view::rend", "xstring/std::basic_string_view::remove_prefix","xstring/std::basic_string_view::remove_suffix", "xstring/std::basic_string_view::replace", "xstring/std::basic_string_view::reserve", "xstring/std::basic_string_view::resize", "xstring/std::basic_string_view::rfind", "xstring/std::basic_string_view::shrink_to_fit", "xstring/std::basic_string_view::size", "xstring/std::basic_string_view::substr", "xstring/std::basic_string_view::swap"]
+helpviewer_keywords: ["std::basic_string_view", "std::basic_string_view, allocator_type", "std::basic_string_view, const_iterator", "std::basic_string_view, const_pointer", "std::basic_string_view, const_reference", "std::basic_string_view, const_reverse_iterator", "std::basic_string_view, difference_type", "std::basic_string_view, iterator", "std::basic_string_view, npos", "std::basic_string_view, pointer", "std::basic_string_view, reference", "std::basic_string_view, reverse_iterator", "std::basic_string_view, size_type", "std::basic_string_view, traits_type", "std::basic_string_view, value_type", "std::basic_string_view, append", "std::basic_string_view, assign", "std::basic_string_view, at", "std::basic_string_view, back", "std::basic_string_view, begin", "std::basic_string_view, c_str", "std::basic_string_view, capacity", "std::basic_string_view, cbegin", "std::basic_string_view, cend", "std::basic_string_view, clear", "std::basic_string_view, compare", "std::basic_string_view, copy", "std::basic_string_view, crbegin", "std::basic_string_view, crend", "std::basic_string_view, data", "std::basic_string_view, empty", "std::basic_string_view, end",  "std::basic_string_view, ends_with", "std::basic_string_view, erase", "std::basic_string_view, find", "std::basic_string_view, find_first_not_of", "std::basic_string_view, find_first_of", "std::basic_string_view, find_last_not_of", "std::basic_string_view, find_last_of", "std::basic_string_view, front", "std::basic_string_view, get_allocator", "std::basic_string_view, insert", "std::basic_string_view, length", "std::basic_string_view, max_size", "std::basic_string_view, pop_back", "std::basic_string_view, push_back", "std::basic_string_view, rbegin", "std::basic_string_view, rend", "std::basic_string_view, remove_prefix","std::basic_string_view, remove_suffix","std::basic_string_view, replace", "std::basic_string_view, reserve", "std::basic_string_view, resize", "std::basic_string_view, rfind", "std::basic_string_view, shrink_to_fit", "std::basic_string_view, size",  "std::basic_string_view, starts_with", "std::basic_string_view, substr", "std::basic_string_view, swap"]
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
 ---
 # basic_string_view Class
@@ -117,8 +117,7 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 |[data](#data)|Returns a raw non-owning pointer to the character sequence.|
 |[empty](#empty)|Tests whether the string_view contains characters.|
 |[end](#end)|Same as [cend](#cend).|
-|[starts_with](#starts_with)|Check whether a string starts with a given prefix.|
-|[ends_with](#ends_with)|Check whether a string ends with a given suffix.|
+|[ends_with](#ends_with)|Check whether a string view ends with a specified suffix.|
 |[find](#find)|Searches in a forward direction for the first occurrence of a substring that matches a specified sequence of characters.|
 |[find_first_not_of](#find_first_not_of)|Searches for the first character that is not any element of a specified string_view or convertible string object.|
 |[find_first_of](#find_first_of)|Searches for the first character that matches any element of a specified string_view or convertible string object.|
@@ -133,6 +132,7 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 |[rend](#rend)|Returns a const iterator that points to one past the last element in a reversed string_view.|
 |[rfind](#rfind)|Searches a string_view in reverse for the first occurrence of a substring that matches a specified sequence of characters.|
 |[size](#size)|Returns the current number of elements.|
+|[starts_with](#starts_with)|Check whether a string view starts with a given prefix.|
 |[substr](#substr)|Returns a substring of a specified length starting at a specified index.|
 |[swap](#swap)|Exchange the contents of two string_views.|
 
@@ -577,6 +577,57 @@ Returns a random-access const_iterator that points to one past the last element.
 
 `end` is used to test whether a const_iterator has reached the end of its string_view. The value returned by `end` should not be dereferenced.
 
+## <a name="ends_with"></a> basic_string_view::ends_with
+
+Checks whether the string view ends with the specified suffix.
+
+```cpp
+NODISCARD bool ends_with(const basic_string_view Right) const noexcept;
+NODISCARD bool ends_with(const T c) const noexcept;
+NODISCARD bool ends_with(const T* const x) const noexcept;
+```
+
+### Parameters
+
+*c*\
+Single character suffix.
+
+*right*\
+A string view containing the suffix. Also accepts `std::basic_string`.
+
+*x*\
+Null-terminated character string containing the suffix.
+
+### Return Value
+
+`true` if the string view ends with the specified suffix; `false` otherwise.
+
+### Remarks
+
+See [starts_with](#starts_with) to check if a string view starts with the specified prefix.
+
+### Example
+
+```cpp
+#include <string>
+#include <iostream>
+
+int main()
+{
+   std::cout << std::boolalpha << std::string_view("abcdefg").ends_with('g') << '\n';
+    std::cout << std::boolalpha << std::string_view("abcdefg").ends_with("efG") << '\n';
+
+    std::basic_string<char> str2 = "efg";
+    std::cout << std::boolalpha << std::string_view("abcdefg").ends_with(str2);
+}
+```
+
+```Output
+true
+false
+true
+```
+
 ## <a name="find"></a> basic_string_view::find
 
 Searches a string_view in a forward direction for the first occurrence of a character or substring that matches a specified sequence of character(s).
@@ -928,6 +979,60 @@ The length of the string_view.
 ### Remarks
 
 A string_view can modify its length, for example by `remove_prefix` and `remove_suffix`. Because this does not modify the underlying string data, the size of a string_view is not necessarily the size of the underlying data.
+
+## <a name="starts_with"></a> basic_string_view::starts_with
+
+Checks whether the string view starts with the specified prefix.
+
+```cpp
+NODISCARD bool starts_with(const basic_string_view Right) const noexcept;
+NODISCARD bool starts_with(const T c) const noexcept;
+NODISCARD bool starts_with(const T* const x) const noexcept;
+```
+
+### Parameters
+
+*c*\
+Single character prefix.
+
+*right*\
+A string view containing the prefix. Also accepts `std::basic_string`.
+
+*x*\
+Null-terminated character string containing the prefix.
+
+### Return Value
+
+`true` if the string starts with the specified prefix; `false` otherwise.
+
+### Remarks
+
+See [ends_with](#ends_with) to see if a string ends with a postfix.
+
+### Example
+
+```cpp
+#include <string>
+#include <iostream>
+
+int main()
+{
+    std::basic_string<char> str = "abcdefg";
+
+    std::cout << std::boolalpha << str.starts_with('g') << '\n';
+    std::cout << std::boolalpha << str.starts_with("efg") << '\n';
+
+    std::basic_string<char> str2 = "abc";
+    std::cout << std::boolalpha << str.starts_with(str2);
+    return 0;
+}
+```
+
+```Output
+false
+false
+true
+```
 
 ## <a name="substr"></a> basic_string_view::substr
 
