@@ -101,7 +101,7 @@ The type that represents the stored allocator object that encapsulates details a
 |[substr](#substr)|Copies a substring of at most some number of characters from a string beginning from a specified position.|
 |[swap](#swap)|Exchange the contents of two strings.|
 
-<sup>20</sup> Added in the C++20 standard.\
+<sup>20</sup> Added in the C++20 standard.
 
 ### Operators
 
@@ -1788,7 +1788,7 @@ The string str2 is empty.
 Checks whether the string ends with the specified suffix.
 
 ```cpp
-NODISCARD bool ends_with(const basic_string_view Right) const noexcept;
+NODISCARD bool ends_with(const basic_string_view sv) const noexcept;
 NODISCARD bool ends_with(const T c) const noexcept;
 NODISCARD bool ends_with(const T* const x) const noexcept;
 ```
@@ -1798,7 +1798,7 @@ NODISCARD bool ends_with(const T* const x) const noexcept;
 *c*\
 Single character suffix.
 
-*right*\
+*sv*\
 A string view containing the suffix. Also accepts `std::basic_string`.
 
 *x*\
@@ -1815,6 +1815,7 @@ See [starts_with](#starts_with) to check if a string starts with the specified p
 ### Example
 
 ```cpp
+// compile with: /std:c++latest
 #include <string>
 #include <iostream>
 
@@ -4604,7 +4605,7 @@ The capacity of string str1 is: 15.
 Checks whether the string starts with the specified prefix.
 
 ```cpp
-NODISCARD bool starts_with(const basic_string_view Right) const noexcept;
+NODISCARD bool starts_with(const basic_string_view sv) const noexcept;
 NODISCARD bool starts_with(const T c) const noexcept;
 NODISCARD bool starts_with(const T* const x) const noexcept;
 ```
@@ -4614,7 +4615,7 @@ NODISCARD bool starts_with(const T* const x) const noexcept;
 *c*\
 Single character prefix.
 
-*right*\
+*sv*\
 A string view containing the prefix. Also accepts `std::basic_string`.
 
 *x*\
@@ -4626,7 +4627,7 @@ Null-terminated character string containing the prefix.
 
 ### Remarks
 
-See [ends_with](#ends_with) to see if a string ends with a postfix.
+See [ends_with](#ends_with) to see if a string ends with the specified postfix.
 
 ### Example
 

@@ -135,7 +135,7 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 |[substr](#substr)|Returns a substring of a specified length starting at a specified index.|
 |[swap](#swap)|Exchange the contents of two string_views.|
 
-<sup>20</sup> Added in the C++20 standard.\
+<sup>20</sup> Added in the C++20 standard.
 
 ## Remarks
 
@@ -585,7 +585,7 @@ Returns a random-access const_iterator that points to one past the last element.
 Checks whether the string view ends with the specified suffix.
 
 ```cpp
-NODISCARD bool ends_with(const basic_string_view Right) const noexcept;
+NODISCARD bool ends_with(const basic_string_view sv) const noexcept;
 NODISCARD bool ends_with(const T c) const noexcept;
 NODISCARD bool ends_with(const T* const x) const noexcept;
 ```
@@ -595,7 +595,7 @@ NODISCARD bool ends_with(const T* const x) const noexcept;
 *c*\
 Single character suffix.
 
-*right*\
+*sv*\
 A string view containing the suffix. Also accepts `std::basic_string`.
 
 *x*\
@@ -617,7 +617,7 @@ See [starts_with](#starts_with) to check if a string view starts with the specif
 
 int main()
 {
-   std::cout << std::boolalpha << std::string_view("abcdefg").ends_with('g') << '\n';
+    std::cout << std::boolalpha << std::string_view("abcdefg").ends_with('g') << '\n';
     std::cout << std::boolalpha << std::string_view("abcdefg").ends_with("efG") << '\n';
 
     std::basic_string<char> str2 = "efg";
@@ -988,7 +988,7 @@ A string_view can modify its length, for example by `remove_prefix` and `remove_
 Checks whether the string view starts with the specified prefix.
 
 ```cpp
-NODISCARD bool starts_with(const basic_string_view Right) const noexcept;
+NODISCARD bool starts_with(const basic_string_view sv) const noexcept;
 NODISCARD bool starts_with(const T c) const noexcept;
 NODISCARD bool starts_with(const T* const x) const noexcept;
 ```
@@ -998,7 +998,7 @@ NODISCARD bool starts_with(const T* const x) const noexcept;
 *c*\
 Single character prefix.
 
-*right*\
+*sv*\
 A string view containing the prefix. Also accepts `std::basic_string`.
 
 *x*\

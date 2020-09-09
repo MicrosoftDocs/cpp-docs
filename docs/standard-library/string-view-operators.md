@@ -1,6 +1,6 @@
 ---
 title: "&lt;string_view&gt; operators"
-descripton: "API reference for the `string_view` operators, which are used to compare two `string_view` objects, or a `string_view` and some other string object" 
+description: "API reference for the `string_view` operators, which are used to compare two `string_view` objects, or a `string_view` and some other string object" 
 ms.date: "9/4/2020"
 f1_keywords: ["xstring/basic_string_view::operator!=", "xstring/basic_string_view::operator&gt;", "xstring/basic_string_view::operator&gt;=", "xstring/basic_string_view::operator&lt;", "xstring/basic_string_view::operator&lt;&lt;", "xstring/basic_string_view::operator&lt;=", "xstring/basic_string_view::operator+", "xstring/basic_string_view::operator=="]
 helpviewer_keywords: ["std::basic_string_view::operator!=", "std::basic_string_view::operator&gt;", "std::basic_string_view::operator&gt;=", "std::basic_string_view::operator&lt;", "std::basic_string_view::operator&lt;&lt;", "std::basic_string_view::operator&lt;=, std::basic_string_view::operator=="]
@@ -313,7 +313,7 @@ using namespace literals::string_view_literals;
 
 ## Requirements
 
-The compiler flag `/std:c++17` is required. Set this in Visual Studio 2019 in **Project Properties** > **General** > **C++ Language Standard**.
+[/std:c++17](../build/reference/std-specify-language-standard-version.md) is required.
 
 ## See also
 
