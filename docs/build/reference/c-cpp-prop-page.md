@@ -1,7 +1,7 @@
 ---
 title: "C/C++ Project Properties (Visual Studio)"
 description: "Reference guide to the Visual Studio Microsoft C/C++ project Property Pages properties."
-ms.date: 07/08/2020
+ms.date: 09/03/2020
 ms.topic: "article"
 ms.assetid: 16375038-4917-4bd0-9a2a-26343c1708b7
 ---
@@ -72,7 +72,7 @@ Treats compiler warnings as errors. For a new project, it may be best to use [`/
 
 ### Warning Version
 
-Hide warnings introduced after a specific version of the compiler. Sets [`/Wv:xx`\[`.yy`\[`.zzzzz`\]\]](wx-treat-linker-warnings-as-errors.md).
+Hide warnings introduced after a specific version of the compiler. Sets [`/Wv:xx[.yy[.zzzzz]]`](wx-treat-linker-warnings-as-errors.md).
 
 ### Diagnostics Format
 
@@ -96,7 +96,7 @@ Multi-processor Compilation.
 
 ### Optimization
 
-Select option for code optimization; choose Custom to use specific optimization options. Sets [/Od](od-disable-debug.md), [/O1, /O2](o-options-optimize-code.md).
+Select option for code optimization; choose Custom to use specific optimization options. Sets [`/Od`](od-disable-debug.md), [`/O1`, `/O2`](o-options-optimize-code.md).
 
 #### Choices
 
@@ -127,8 +127,8 @@ Whether to favor code size or code speed; 'Global Optimization' must be turned o
 
 #### Choices
 
-- **Favor small code** - Favor Small Code. Minimizes the size of EXEs and DLLs by instructing the compiler to favor size over speed.
-- **Favor fast code** - Favor Fast Code. Maximizes the speed of EXEs and DLLs by instructing the compiler to favor speed over size. (This value is the default.)
+- **Favor small code** - Minimizes the size of EXEs and DLLs by instructing the compiler to favor size over speed.
+- **Favor fast code** - Maximizes the speed of EXEs and DLLs by instructing the compiler to favor speed over size. (This value is the default.)
 - **Neither** - No size and speed optimization.
 
 ### Omit Frame Pointers
@@ -141,7 +141,7 @@ Enables memory space optimization when using fibers and thread local storage acc
 
 ### Whole Program Optimization
 
-Enables cross-module optimizations by delaying code generation to link time. Requires the linker option 'Link Time Code Generation'. Sets [`/GL`](gl-whole-program-optimization.md).
+Enables cross-module optimizations by delaying code generation to link time. Requires the linker option **Link Time Code Generation**. Sets [`/GL`](gl-whole-program-optimization.md).
 
 ## C/C++ Preprocessor Properties
 
@@ -171,7 +171,7 @@ Preprocess without #line directives.
 
 ### Keep Comments
 
-Suppresses comment strip from source code; requires that one of the 'Preprocessing' options be set. Sets [`/C`](c-preserve-comments-during-preprocessing.md).
+Suppresses comment strip from source code; requires setting at least one of the **Preprocessing** options. Sets [`/C`](c-preserve-comments-during-preprocessing.md).
 
 ## C/C++ Code Generation Properties
 
@@ -206,7 +206,7 @@ Enable basic runtime error checks, incompatible with any optimization type other
 
 - **Stack Frames** - Enables stack frame run-time error checking.
 - **Uninitialized variables** - Reports when a variable is used without having been initialized.
-- **Both (/RTC1, equiv. to /RTCsu)** - Equivalent of /RTCsu.
+- **Both (/RTC1, equiv. to /RTCsu)** - Equivalent of **`/RTCsu`**.
 - **Default** - Default runtime checks.
 
 ### Runtime Library
@@ -217,8 +217,8 @@ Specify runtime library for linking. Sets [`/MT`, `/MTd`, `/MD`, `/MDd`](md-mt-l
 
 - **Multi-threaded** - Causes your application to use the multithread, static version of the run-time library.
 - **Multi-threaded Debug** - Defines _DEBUG and _MT. This option also causes the compiler to place the library name *LIBCMTD.lib* into the *`.obj`* file so that the linker will use *LIBCMTD.lib* to resolve external symbols.
-- **Multi-threaded DLL** - Causes your application to use the multithread- and DLL-specific version of the run-time library. Defines _MT and _DLL and causes the compiler to place the library name *MSVCRT.lib* into the *`.obj`* file.
-- **Multi-threaded Debug DLL** - Defines _DEBUG, _MT, and _DLL and causes your application to use the debug multithread- and DLL-specific version of the run-time library. It also causes the compiler to place the library name *MSVCRTD.lib* into the *`.obj`* file.
+- **Multi-threaded DLL** - Causes your application to use the multithread- and DLL-specific version of the run-time library. Defines `_MT` and `_DLL` and causes the compiler to place the library name *MSVCRT.lib* into the *`.obj`* file.
+- **Multi-threaded Debug DLL** - Defines `_DEBUG`, `_MT`, and `_DLL` and causes your application to use the debug multithread- and DLL-specific version of the run-time library. It also causes the compiler to place the library name *MSVCRTD.lib* into the *`.obj`* file.
 
 ### Struct Member Alignment
 
@@ -253,7 +253,7 @@ Guard security check helps detect attempts to dispatch to illegal block of code.
 
 ### Enable Function-Level Linking
 
-Allows the compiler to package individual functions in the form of packaged functions (COMDATs). Required for edit and continue to work. Sets [/Gy](gy-enable-function-level-linking.md).
+Allows the compiler to package individual functions in the form of packaged functions (COMDATs). Required for edit and continue to work. Sets [`/Gy`](gy-enable-function-level-linking.md).
 
 ### Enable Parallel Code Generation
 
@@ -261,7 +261,7 @@ Allows the compiler to generate parallel code for loops identified using `#pragm
 
 ### Enable Enhanced Instruction Set
 
-Enable use of instructions found on processors that support enhanced instruction sets. For example, the SSE, SSE2, AVX, and AVX2 enhancements to IA-32. And, the AVX and AVX2 enhancements to x64. Currently **`/arch:SSE`** and **`/arch:SSE2`** are only available when building for the x86 architecture. If no option is specified, the compiler will use instructions found on processors that support SSE2. Use of enhanced instructions can be disabled with **`/arch:IA32`**. For more information, see [`/arch (x86)`](arch-x86.md), [`/arch (x64)`](arch-x64.md) and [`/arch (ARM)`](arch-arm.md).
+Enable use of instructions found on processors that support enhanced instruction sets. For example, the SSE, SSE2, AVX, and AVX2 enhancements to IA-32. And, the AVX and AVX2 enhancements to x64. Currently **`/arch:SSE`** and **`/arch:SSE2`** are only available when building for the x86 architecture. If no option is specified, the compiler will use instructions found on processors that support SSE2. Use of enhanced instructions can be disabled with **`/arch:IA32`**. For more information, see [`/arch (x86)`](arch-x86.md), [`/arch (x64)`](arch-x64.md), and [`/arch (ARM)`](arch-arm.md).
 
 #### Choices
 
@@ -284,11 +284,11 @@ Sets the floating point model. Sets [`/fp:precise`, `/fp:strict`, `/fp:fast`](fp
 
 ### Enable Floating Point Exceptions
 
-Reliable floating-point exception model. Exceptions will be raised immediately after they're triggered. Sets [/fp:except](fp-specify-floating-point-behavior.md).
+Reliable floating-point exception model. Exceptions will be raised immediately after they're triggered. Sets [`/fp:except`](fp-specify-floating-point-behavior.md).
 
 ### Create Hotpatchable Image
 
-When hotpatching is on, the compiler ensures that first instruction of each function is two bytes, as required for hot patching. Sets [/hotpatch](hotpatch-create-hotpatchable-image.md).
+When hotpatching is on, the compiler ensures that first instruction of each function is two bytes, as required for hot patching. Sets [`/hotpatch`](hotpatch-create-hotpatchable-image.md).
 
 ### Spectre Mitigation
 
@@ -315,19 +315,19 @@ When specified, the type **`wchar_t`** becomes a native type that maps to **`__w
 
 ### Force Conformance in For Loop Scope
 
-Used to implement standard C++ behavior for the for statement loops with Microsoft extensions. Sets [`/Za`, `/Ze` (Disable language extensions](za-ze-disable-language-extensions.md). [`/Zc:forScope`](zc-forscope-force-conformance-in-for-loop-scope.md) is on by default.
+Implements standard C++ behavior for the `for` statement loops with Microsoft extensions. Sets [`/Za`, `/Ze` (Disable language extensions](za-ze-disable-language-extensions.md). [`/Zc:forScope`](zc-forscope-force-conformance-in-for-loop-scope.md) is on by default.
 
 ### Remove unreferenced code and data
 
-When specified, compiler no longer generates symbol information for unreferenced code and data.
+When specified, the compiler no longer generates symbol information for unreferenced code and data.
 
 ### Enforce type conversion rules
 
-Used to identify an rvalue reference type as the result of a cast operation per the C++11 standard.
+Used to identify an rvalue reference type as the result of a cast operation according to the C++11 standard.
 
 ### Enable Run-Time Type Information
 
-Adds code for checking C++ object types at run time (runtime type information). Sets [`/GR`, `/GR-`](gr-enable-run-time-type-information.md).
+Adds code for checking C++ object types at run time (*runtime type information*, or RTTI). Sets [`/GR`, `/GR-`](gr-enable-run-time-type-information.md).
 
 ### Open MP Support
 
@@ -356,8 +356,8 @@ Enables creation or use of a precompiled header during the build. Sets [`/Yc`](y
 
 #### Choices
 
-- **Create** - Instructs the compiler to create a precompiled header (.pch) file that represents the state of compilation at a certain point.
-- **Use** - Instructs the compiler to use an existing precompiled header (.pch) file in the current compilation.
+- **Create** - Instructs the compiler to create a precompiled header (*`.pch`*) file that represents the state of compilation at a certain point.
+- **Use** - Instructs the compiler to use an existing precompiled header (*`.pch`*) file in the current compilation.
 - **Not Using Precompiled Headers** - Not using precompiled headers.
 
 ### Precompiled Header File
