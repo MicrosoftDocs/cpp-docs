@@ -1,8 +1,8 @@
 ---
 title: "multiset Class"
-ms.date: "11/04/2016"
-f1_keywords: ["set/std::multiset", "set/std::multiset::allocator_type", "set/std::multiset::const_iterator", "set/std::multiset::const_pointer", "set/std::multiset::const_reference", "set/std::multiset::const_reverse_iterator", "set/std::multiset::difference_type", "set/std::multiset::iterator", "set/std::multiset::key_compare", "set/std::multiset::key_type", "set/std::multiset::pointer", "set/std::multiset::reference", "set/std::multiset::reverse_iterator", "set/std::multiset::size_type", "set/std::multiset::value_compare", "set/std::multiset::value_type", "set/std::multiset::begin", "set/std::multiset::cbegin", "set/std::multiset::cend", "set/std::multiset::clear", "set/std::multiset::count", "set/std::multiset::crbegin", "set/std::multiset::crend", "set/std::multiset::emplace", "set/std::multiset::emplace_hint", "set/std::multiset::empty", "set/std::multiset::end", "set/std::multiset::equal_range", "set/std::multiset::erase", "set/std::multiset::find", "set/std::multiset::get_allocator", "set/std::multiset::insert", "set/std::multiset::key_comp", "set/std::multiset::lower_bound", "set/std::multiset::max_size", "set/std::multiset::rbegin", "set/std::multiset::rend", "set/std::multiset::size", "set/std::multiset::swap", "set/std::multiset::upper_bound", "set/std::multiset::value_comp"]
-helpviewer_keywords: ["std::multiset [C++]", "std::multiset [C++], allocator_type", "std::multiset [C++], const_iterator", "std::multiset [C++], const_pointer", "std::multiset [C++], const_reference", "std::multiset [C++], const_reverse_iterator", "std::multiset [C++], difference_type", "std::multiset [C++], iterator", "std::multiset [C++], key_compare", "std::multiset [C++], key_type", "std::multiset [C++], pointer", "std::multiset [C++], reference", "std::multiset [C++], reverse_iterator", "std::multiset [C++], size_type", "std::multiset [C++], value_compare", "std::multiset [C++], value_type", "std::multiset [C++], begin", "std::multiset [C++], cbegin", "std::multiset [C++], cend", "std::multiset [C++], clear", "std::multiset [C++], count", "std::multiset [C++], crbegin", "std::multiset [C++], crend", "std::multiset [C++], emplace", "std::multiset [C++], emplace_hint", "std::multiset [C++], empty", "std::multiset [C++], end", "std::multiset [C++], equal_range", "std::multiset [C++], erase", "std::multiset [C++], find", "std::multiset [C++], get_allocator", "std::multiset [C++], insert", "std::multiset [C++], key_comp", "std::multiset [C++], lower_bound", "std::multiset [C++], max_size", "std::multiset [C++], rbegin", "std::multiset [C++], rend", "std::multiset [C++], size", "std::multiset [C++], swap", "std::multiset [C++], upper_bound", "std::multiset [C++], value_comp"]
+ms.date: "9/9/2020"
+f1_keywords: ["set/std::multiset", "set/std::multiset::allocator_type", "set/std::multiset::const_iterator", "set/std::multiset::const_pointer", "set/std::multiset::const_reference", "set/std::multiset::const_reverse_iterator", "set/std::multiset::difference_type", "set/std::multiset::iterator", "set/std::multiset::key_compare", "set/std::multiset::key_type", "set/std::multiset::pointer", "set/std::multiset::reference", "set/std::multiset::reverse_iterator", "set/std::multiset::size_type", "set/std::multiset::value_compare", "set/std::multiset::value_type", "set/std::multiset::begin", "set/std::multiset::cbegin", "set/std::multiset::cend", "set/std::multiset::clear", "set/std::multiset::contains", "set/std::multiset::count", "set/std::multiset::crbegin", "set/std::multiset::crend", "set/std::multiset::emplace", "set/std::multiset::emplace_hint", "set/std::multiset::empty", "set/std::multiset::end", "set/std::multiset::equal_range", "set/std::multiset::erase", "set/std::multiset::find", "set/std::multiset::get_allocator", "set/std::multiset::insert", "set/std::multiset::key_comp", "set/std::multiset::lower_bound", "set/std::multiset::max_size", "set/std::multiset::rbegin", "set/std::multiset::rend", "set/std::multiset::size", "set/std::multiset::swap", "set/std::multiset::upper_bound", "set/std::multiset::value_comp"]
+helpviewer_keywords: ["std::multiset [C++]", "std::multiset [C++], allocator_type", "std::multiset [C++], const_iterator", "std::multiset [C++], const_pointer", "std::multiset [C++], const_reference", "std::multiset [C++], const_reverse_iterator", "std::multiset [C++], difference_type", "std::multiset [C++], iterator", "std::multiset [C++], key_compare", "std::multiset [C++], key_type", "std::multiset [C++], pointer", "std::multiset [C++], reference", "std::multiset [C++], reverse_iterator", "std::multiset [C++], size_type", "std::multiset [C++], value_compare", "std::multiset [C++], value_type", "std::multiset [C++], begin", "std::multiset [C++], cbegin", "std::multiset [C++], cend", "std::multiset [C++], clear", "std::multiset [C++], contains", "std::multiset [C++], count", "std::multiset [C++], crbegin", "std::multiset [C++], crend", "std::multiset [C++], emplace", "std::multiset [C++], emplace_hint", "std::multiset [C++], empty", "std::multiset [C++], end", "std::multiset [C++], equal_range", "std::multiset [C++], erase", "std::multiset [C++], find", "std::multiset [C++], get_allocator", "std::multiset [C++], insert", "std::multiset [C++], key_comp", "std::multiset [C++], lower_bound", "std::multiset [C++], max_size", "std::multiset [C++], rbegin", "std::multiset [C++], rend", "std::multiset [C++], size", "std::multiset [C++], swap", "std::multiset [C++], upper_bound", "std::multiset [C++], value_comp"]
 ms.assetid: 630e8c10-0ce9-4ad9-8d79-9e91a600713f
 ---
 # multiset Class
@@ -89,9 +89,10 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 |[cbegin](#cbegin)|Returns a const iterator that addresses the first element in the `multiset`.|
 |[cend](#cend)|Returns a const iterator that addresses the location succeeding the last element in a `multiset`.|
 |[clear](#clear)|Erases all the elements of a `multiset`.|
+|[contains](#contains)|Checks if there is an element with the specified key in the `multiset`.|
 |[count](#count)|Returns the number of elements in a `multiset` whose key matches the key specified as a parameter.|
-|[crbegin](#crbegin)|Returns a const iterator addressing the first element in a reversed set.|
-|[crend](#crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed set.|
+|[crbegin](#crbegin)|Returns a const iterator addressing the first element in a reversed `multiset`.|
+|[crend](#crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `multiset`.|
 |[emplace](#emplace)|Inserts an element constructed in place into a `multiset`.|
 |[emplace_hint](#emplace_hint)|Inserts an element constructed in place into a `multiset`, with a placement hint.|
 |[empty](#empty)|Tests if a `multiset` is empty.|
@@ -372,6 +373,48 @@ A type `const_reverse_iterator` cannot modify the value of an element and is use
 ### Example
 
 See the example for [rend](#rend) for an example of how to declare and use the `const_reverse_iterator`.
+
+## <a name="contains"></a> contains
+
+Checks if there is an element the specified key in the `multiset` .
+
+```cpp
+[[nodiscard]] bool contains(const K& key) const;
+```
+
+### Parameters
+
+*key*\
+The element's key value to look for.
+
+### Return Value
+
+`true` if the element is found in the container; `false` otherwise.
+
+### Remarks
+
+`Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+
+### Example
+
+```cpp
+// Requires /std:c++latest
+#include <set>
+#include <iostream>
+
+int main()
+{
+    std::multiset<int> theMultiSet = {1, 2};
+
+    std::cout << std::boolalpha << theMultiSet.contains(2) << '\n';
+    std::cout << std::boolalpha << theMultiSet.contains(3) << '\n';
+}
+```
+
+```Output
+true
+false
+```
 
 ## <a name="count"></a> multiset::count
 

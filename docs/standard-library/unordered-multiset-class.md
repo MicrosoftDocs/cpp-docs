@@ -1,8 +1,8 @@
 ---
 title: "unordered_multiset Class"
 ms.date: "11/04/2016"
-f1_keywords: ["unordered_set/std::unordered_multiset", "unordered_set/std::unordered_multiset::allocator_type", "unordered_set/std::unordered_multiset::const_iterator", "unordered_set/std::unordered_multiset::const_local_iterator", "unordered_set/std::unordered_multiset::const_pointer", "unordered_set/std::unordered_multiset::const_reference", "unordered_set/std::unordered_multiset::difference_type", "unordered_set/std::unordered_multiset::hasher", "unordered_set/std::unordered_multiset::iterator", "unordered_set/std::unordered_multiset::key_equal", "unordered_set/std::unordered_multiset::key_type", "unordered_set/std::unordered_multiset::local_iterator", "unordered_set/std::unordered_multiset::pointer", "unordered_set/std::unordered_multiset::reference", "unordered_set/std::unordered_multiset::size_type", "unordered_set/std::unordered_multiset::value_type", "unordered_set/std::unordered_multiset::begin", "unordered_set/std::unordered_multiset::bucket", "unordered_set/std::unordered_multiset::bucket_count", "unordered_set/std::unordered_multiset::bucket_size", "unordered_set/std::unordered_multiset::cbegin", "unordered_set/std::unordered_multiset::cend", "unordered_set/std::unordered_multiset::clear", "unordered_set/std::unordered_multiset::count", "unordered_set/std::unordered_multiset::emplace", "unordered_set/std::unordered_multiset::emplace_hint", "unordered_set/std::unordered_multiset::empty", "unordered_set/std::unordered_multiset::end", "unordered_set/std::unordered_multiset::equal_range", "unordered_set/std::unordered_multiset::erase", "unordered_set/std::unordered_multiset::find", "unordered_set/std::unordered_multiset::get_allocator", "unordered_set/std::unordered_multiset::hash", "unordered_set/std::unordered_multiset::insert", "unordered_set/std::unordered_multiset::key_eq", "unordered_set/std::unordered_multiset::load_factor", "unordered_set/std::unordered_multiset::max_bucket_count", "unordered_set/std::unordered_multiset::max_load_factor", "unordered_set/std::unordered_multiset::max_size", "unordered_set/std::unordered_multiset::rehash", "unordered_set/std::unordered_multiset::size", "unordered_set/std::unordered_multiset::swap", "unordered_set/std::unordered_multiset::unordered_multiset", "unordered_set/std::unordered_multiset::operator=", "unordered_set/std::unordered_multiset::hash_function"]
-helpviewer_keywords: ["std::unordered_multiset", "std::unordered_multiset::allocator_type", "std::unordered_multiset::const_iterator", "std::unordered_multiset::const_local_iterator", "std::unordered_multiset::const_pointer", "std::unordered_multiset::const_reference", "std::unordered_multiset::difference_type", "std::unordered_multiset::hasher", "std::unordered_multiset::iterator", "std::unordered_multiset::key_equal", "std::unordered_multiset::key_type", "std::unordered_multiset::local_iterator", "std::unordered_multiset::pointer", "std::unordered_multiset::reference", "std::unordered_multiset::size_type", "std::unordered_multiset::value_type", "std::unordered_multiset::begin", "std::unordered_multiset::bucket", "std::unordered_multiset::bucket_count", "std::unordered_multiset::bucket_size", "std::unordered_multiset::cbegin", "std::unordered_multiset::cend", "std::unordered_multiset::clear", "std::unordered_multiset::count", "std::unordered_multiset::emplace", "std::unordered_multiset::emplace_hint", "std::unordered_multiset::empty", "std::unordered_multiset::end", "std::unordered_multiset::equal_range", "std::unordered_multiset::erase", "std::unordered_multiset::find", "std::unordered_multiset::get_allocator", "std::unordered_multiset::hash", "std::unordered_multiset::insert", "std::unordered_multiset::key_eq", "std::unordered_multiset::load_factor", "std::unordered_multiset::max_bucket_count", "std::unordered_multiset::max_load_factor", "std::unordered_multiset::max_size", "std::unordered_multiset::rehash", "std::unordered_multiset::size", "std::unordered_multiset::swap", "std::unordered_multiset::unordered_multiset", "std::unordered_multiset::operator=", "std::unordered_multiset::allocator_type", "std::unordered_multiset::const_iterator", "std::unordered_multiset::const_local_iterator", "std::unordered_multiset::const_pointer", "std::unordered_multiset::const_reference", "std::unordered_multiset::difference_type", "std::unordered_multiset::hasher", "std::unordered_multiset::iterator", "std::unordered_multiset::key_equal", "std::unordered_multiset::key_type", "std::unordered_multiset::local_iterator", "std::unordered_multiset::pointer", "std::unordered_multiset::reference", "std::unordered_multiset::size_type", "std::unordered_multiset::value_type", "std::unordered_multiset::begin", "std::unordered_multiset::bucket", "std::unordered_multiset::bucket_count", "std::unordered_multiset::bucket_size", "std::unordered_multiset::cbegin", "std::unordered_multiset::cend", "std::unordered_multiset::clear", "std::unordered_multiset::count", "std::unordered_multiset::emplace", "std::unordered_multiset::emplace_hint", "std::unordered_multiset::empty", "std::unordered_multiset::end", "std::unordered_multiset::equal_range", "std::unordered_multiset::erase", "std::unordered_multiset::find", "std::unordered_multiset::get_allocator", "std::unordered_multiset::hash_function", "std::unordered_multiset::insert", "std::unordered_multiset::key_eq", "std::unordered_multiset::load_factor", "std::unordered_multiset::max_bucket_count", "std::unordered_multiset::max_load_factor", "std::unordered_multiset::max_size", "std::unordered_multiset::rehash", "std::unordered_multiset::size", "std::unordered_multiset::swap"]
+f1_keywords: ["unordered_set/std::unordered_multiset", "unordered_set/std::unordered_multiset::allocator_type", "unordered_set/std::unordered_multiset::const_iterator", "unordered_set/std::unordered_multiset::const_local_iterator", "unordered_set/std::unordered_multiset::const_pointer", "unordered_set/std::unordered_multiset::const_reference", "unordered_set/std::unordered_multiset::difference_type", "unordered_set/std::unordered_multiset::hasher", "unordered_set/std::unordered_multiset::iterator", "unordered_set/std::unordered_multiset::key_equal", "unordered_set/std::unordered_multiset::key_type", "unordered_set/std::unordered_multiset::local_iterator", "unordered_set/std::unordered_multiset::pointer", "unordered_set/std::unordered_multiset::reference", "unordered_set/std::unordered_multiset::size_type", "unordered_set/std::unordered_multiset::value_type", "unordered_set/std::unordered_multiset::begin", "unordered_set/std::unordered_multiset::bucket", "unordered_set/std::unordered_multiset::bucket_count", "unordered_set/std::unordered_multiset::bucket_size", "unordered_set/std::unordered_multiset::cbegin", "unordered_set/std::unordered_multiset::cend", "unordered_set/std::unordered_multiset::clear", "unordered_set/std::unordered_multiset::contains", "unordered_set/std::unordered_multiset::count", "unordered_set/std::unordered_multiset::emplace", "unordered_set/std::unordered_multiset::emplace_hint", "unordered_set/std::unordered_multiset::empty", "unordered_set/std::unordered_multiset::end", "unordered_set/std::unordered_multiset::equal_range", "unordered_set/std::unordered_multiset::erase", "unordered_set/std::unordered_multiset::find", "unordered_set/std::unordered_multiset::get_allocator", "unordered_set/std::unordered_multiset::hash", "unordered_set/std::unordered_multiset::insert", "unordered_set/std::unordered_multiset::key_eq", "unordered_set/std::unordered_multiset::load_factor", "unordered_set/std::unordered_multiset::max_bucket_count", "unordered_set/std::unordered_multiset::max_load_factor", "unordered_set/std::unordered_multiset::max_size", "unordered_set/std::unordered_multiset::rehash", "unordered_set/std::unordered_multiset::size", "unordered_set/std::unordered_multiset::swap", "unordered_set/std::unordered_multiset::unordered_multiset", "unordered_set/std::unordered_multiset::operator=", "unordered_set/std::unordered_multiset::hash_function"]
+helpviewer_keywords: ["std::unordered_multiset", "std::unordered_multiset::allocator_type", "std::unordered_multiset::const_iterator", "std::unordered_multiset::const_local_iterator", "std::unordered_multiset::const_pointer", "std::unordered_multiset::const_reference", "std::unordered_multiset::difference_type", "std::unordered_multiset::hasher", "std::unordered_multiset::iterator", "std::unordered_multiset::key_equal", "std::unordered_multiset::key_type", "std::unordered_multiset::local_iterator", "std::unordered_multiset::pointer", "std::unordered_multiset::reference", "std::unordered_multiset::size_type", "std::unordered_multiset::value_type", "std::unordered_multiset::begin", "std::unordered_multiset::bucket", "std::unordered_multiset::bucket_count", "std::unordered_multiset::bucket_size", "std::unordered_multiset::cbegin", "std::unordered_multiset::cend", "std::unordered_multiset::clear", "std::unordered_multiset::contains", "std::unordered_multiset::count", "std::unordered_multiset::emplace", "std::unordered_multiset::emplace_hint", "std::unordered_multiset::empty", "std::unordered_multiset::end", "std::unordered_multiset::equal_range", "std::unordered_multiset::erase", "std::unordered_multiset::find", "std::unordered_multiset::get_allocator", "std::unordered_multiset::hash", "std::unordered_multiset::insert", "std::unordered_multiset::key_eq", "std::unordered_multiset::load_factor", "std::unordered_multiset::max_bucket_count", "std::unordered_multiset::max_load_factor", "std::unordered_multiset::max_size", "std::unordered_multiset::rehash", "std::unordered_multiset::size", "std::unordered_multiset::swap", "std::unordered_multiset::unordered_multiset", "std::unordered_multiset::operator=", "std::unordered_multiset::allocator_type", "std::unordered_multiset::const_iterator", "std::unordered_multiset::const_local_iterator", "std::unordered_multiset::const_pointer", "std::unordered_multiset::const_reference", "std::unordered_multiset::difference_type", "std::unordered_multiset::hasher", "std::unordered_multiset::iterator", "std::unordered_multiset::key_equal", "std::unordered_multiset::key_type", "std::unordered_multiset::local_iterator", "std::unordered_multiset::pointer", "std::unordered_multiset::reference", "std::unordered_multiset::size_type", "std::unordered_multiset::value_type", "std::unordered_multiset::begin", "std::unordered_multiset::bucket", "std::unordered_multiset::bucket_count", "std::unordered_multiset::bucket_size", "std::unordered_multiset::cbegin", "std::unordered_multiset::cend", "std::unordered_multiset::clear", "std::unordered_multiset::count", "std::unordered_multiset::emplace", "std::unordered_multiset::emplace_hint", "std::unordered_multiset::empty", "std::unordered_multiset::end", "std::unordered_multiset::equal_range", "std::unordered_multiset::erase", "std::unordered_multiset::find", "std::unordered_multiset::get_allocator", "std::unordered_multiset::hash_function", "std::unordered_multiset::insert", "std::unordered_multiset::key_eq", "std::unordered_multiset::load_factor", "std::unordered_multiset::max_bucket_count", "std::unordered_multiset::max_load_factor", "std::unordered_multiset::max_size", "std::unordered_multiset::rehash", "std::unordered_multiset::size", "std::unordered_multiset::swap"]
 ms.assetid: 70c8dfc5-492a-4af2-84f5-1aa9cb04b71c
 ---
 # unordered_multiset Class
@@ -62,6 +62,7 @@ The allocator class.
 |[cbegin](#cbegin)|Designates the beginning of the controlled sequence.|
 |[cend](#cend)|Designates the end of the controlled sequence.|
 |[clear](#clear)|Removes all elements.|
+|[contains](#contains)|Checks if there is an element with the specified key.|
 |[count](#count)|Finds the number of elements matching a specified key.|
 |[emplace](#emplace)|Adds an element constructed in place.|
 |[emplace_hint](#emplace_hint)|Adds an element constructed in place, with hint.|
@@ -707,6 +708,48 @@ int main()
 
 ```Output
 [c] [b] [a]
+```
+
+## <a name="contains"></a> contains
+
+Checks if there is an element the specified key in the `unordered_multiset` .
+
+```cpp
+[[nodiscard]] bool contains(const K& key) const;
+```
+
+### Parameters
+
+*key*\
+The element's key value to look for.
+
+### Return Value
+
+`true` if the element is found in the container; `false` otherwise.
+
+### Remarks
+
+`Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+
+### Example
+
+```cpp
+// Requires /std:c++latest
+#include <unordered_set>
+#include <iostream>
+
+int main()
+{
+    std::unordered_multiset<int> theUnorderedMultiSet = { 1, 2 };
+
+    std::cout << std::boolalpha << theUnorderedMultiSet.contains(2) << '\n';
+    std::cout << std::boolalpha << theUnorderedMultiSet.contains(3) << '\n';
+}
+```
+
+```Output
+true
+false
 ```
 
 ## <a name="count"></a> unordered_multiset::count

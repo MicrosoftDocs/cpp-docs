@@ -1,8 +1,8 @@
 ---
 title: "set Class"
-ms.date: "11/04/2016"
-f1_keywords: ["set/std::set", "set/std::set::allocator_type", "set/std::set::const_iterator", "set/std::set::const_pointer", "set/std::set::const_reference", "set/std::set::const_reverse_iterator", "set/std::set::difference_type", "set/std::set::iterator", "set/std::set::key_compare", "set/std::set::key_type", "set/std::set::pointer", "set/std::set::reference", "set/std::set::reverse_iterator", "set/std::set::size_type", "set/std::set::value_compare", "set/std::set::value_type", "set/std::set::begin", "set/std::set::cbegin", "set/std::set::cend", "set/std::set::clear", "set/std::set::count", "set/std::set::crbegin", "set/std::set::crend", "set/std::set::emplace", "set/std::set::emplace_hint", "set/std::set::empty", "set/std::set::end", "set/std::set::equal_range", "set/std::set::erase", "set/std::set::find", "set/std::set::get_allocator", "set/std::set::insert", "set/std::set::key_comp", "set/std::set::lower_bound", "set/std::set::max_size", "set/std::set::rbegin", "set/std::set::rend", "set/std::set::size", "set/std::set::swap", "set/std::set::upper_bound", "set/std::set::value_comp"]
-helpviewer_keywords: ["std::set [C++]", "std::set [C++], allocator_type", "std::set [C++], const_iterator", "std::set [C++], const_pointer", "std::set [C++], const_reference", "std::set [C++], const_reverse_iterator", "std::set [C++], difference_type", "std::set [C++], iterator", "std::set [C++], key_compare", "std::set [C++], key_type", "std::set [C++], pointer", "std::set [C++], reference", "std::set [C++], reverse_iterator", "std::set [C++], size_type", "std::set [C++], value_compare", "std::set [C++], value_type", "std::set [C++], begin", "std::set [C++], cbegin", "std::set [C++], cend", "std::set [C++], clear", "std::set [C++], count", "std::set [C++], crbegin", "std::set [C++], crend", "std::set [C++], emplace", "std::set [C++], emplace_hint", "std::set [C++], empty", "std::set [C++], end", "std::set [C++], equal_range", "std::set [C++], erase", "std::set [C++], find", "std::set [C++], get_allocator", "std::set [C++], insert", "std::set [C++], key_comp", "std::set [C++], lower_bound", "std::set [C++], max_size", "std::set [C++], rbegin", "std::set [C++], rend", "std::set [C++], size", "std::set [C++], swap", "std::set [C++], upper_bound", "std::set [C++], value_comp"]
+ms.date: "9/9/2020"
+f1_keywords: ["set/std::set", "set/std::set::allocator_type", "set/std::set::const_iterator", "set/std::set::const_pointer", "set/std::set::const_reference", "set/std::set::const_reverse_iterator", "set/std::set::difference_type", "set/std::set::iterator", "set/std::set::key_compare", "set/std::set::key_type", "set/std::set::pointer", "set/std::set::reference", "set/std::set::reverse_iterator", "set/std::set::size_type", "set/std::set::value_compare", "set/std::set::value_type", "set/std::set::begin", "set/std::set::cbegin", "set/std::set::cend", "set/std::set::clear", "set/std::set::contains", "set/std::set::count", "set/std::set::crbegin", "set/std::set::crend", "set/std::set::emplace", "set/std::set::emplace_hint", "set/std::set::empty", "set/std::set::end", "set/std::set::equal_range", "set/std::set::erase", "set/std::set::find", "set/std::set::get_allocator", "set/std::set::insert", "set/std::set::key_comp", "set/std::set::lower_bound", "set/std::set::max_size", "set/std::set::rbegin", "set/std::set::rend", "set/std::set::size", "set/std::set::swap", "set/std::set::upper_bound", "set/std::set::value_comp"]
+helpviewer_keywords: ["std::set [C++]", "std::set [C++], allocator_type", "std::set [C++], const_iterator", "std::set [C++], const_pointer", "std::set [C++], const_reference", "std::set [C++], const_reverse_iterator", "std::set [C++], difference_type", "std::set [C++], iterator", "std::set [C++], key_compare", "std::set [C++], key_type", "std::set [C++], pointer", "std::set [C++], reference", "std::set [C++], reverse_iterator", "std::set [C++], size_type", "std::set [C++], value_compare", "std::set [C++], value_type", "std::set [C++], begin", "std::set [C++], cbegin", "std::set [C++], cend", "std::set [C++], clear", "std::set [C++], contains", "std::set [C++], count", "std::set [C++], crbegin", "std::set [C++], crend", "std::set [C++], emplace", "std::set [C++], emplace_hint", "std::set [C++], empty", "std::set [C++], end", "std::set [C++], equal_range", "std::set [C++], erase", "std::set [C++], find", "std::set [C++], get_allocator", "std::set [C++], insert", "std::set [C++], key_comp", "std::set [C++], lower_bound", "std::set [C++], max_size", "std::set [C++], rbegin", "std::set [C++], rend", "std::set [C++], size", "std::set [C++], swap", "std::set [C++], upper_bound", "std::set [C++], value_comp"]
 ms.assetid: 8991f9aa-5509-4440-adc1-371512d32018
 ---
 # set Class
@@ -85,31 +85,32 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 
 |Name|Description|
 |-|-|
-|[begin](#begin)|Returns an iterator that addresses the first element in the set.|
-|[cbegin](#cbegin)|Returns a const iterator that addresses the first element in the set.|
-|[cend](#cend)|Returns a const iterator that addresses the location succeeding the last element in a set.|
-|[clear](#clear)|Erases all the elements of a set.|
-|[count](#count)|Returns the number of elements in a set whose key matches a parameter-specified key.|
-|[crbegin](#rbegin)|Returns a const iterator addressing the first element in a reversed set.|
-|[crend](#rend)|Returns a const iterator that addresses the location succeeding the last element in a reversed set.|
-|[emplace](#emplace)|Inserts an element constructed in place into a set.|
-|[emplace_hint](#emplace_hint)|Inserts an element constructed in place into a set, with a placement hint.|
-|[empty](#empty)|Tests if a set is empty.|
-|[end](#end)|Returns an iterator that addresses the location succeeding the last element in a set.|
-|[equal_range](#equal_range)|Returns a pair of iterators respectively to the first element in a set with a key that is greater than a specified key and to the first element in the set with a key that is equal to or greater than the key.|
+|[begin](#begin)|Returns an iterator that addresses the first element in the `set`.|
+|[cbegin](#cbegin)|Returns a const iterator that addresses the first element in the `set`.|
+|[cend](#cend)|Returns a const iterator that addresses the location succeeding the last element in a `set`.|
+|[clear](#clear)|Erases all the elements of a `set`.|
+|[contains](#contains)|Checks if there is an element with the specified key in the `set`.|
+|[count](#count)|Returns the number of elements in a `set` whose key matches a parameter-specified key.|
+|[crbegin](#rbegin)|Returns a const iterator addressing the first element in a reversed `set`.|
+|[crend](#rend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `set`.|
+|[emplace](#emplace)|Inserts an element constructed in place into a `set`.|
+|[emplace_hint](#emplace_hint)|Inserts an element constructed in place into a `set`, with a placement hint.|
+|[empty](#empty)|Tests if a `set` is empty.|
+|[end](#end)|Returns an iterator that addresses the location succeeding the last element in a `set`.|
+|[equal_range](#equal_range)|Returns a pair of iterators respectively to the first element in a `set` with a key that is greater than a specified key and to the first element in the `set` with a key that is equal to or greater than the key.|
 |[erase](#erase)|Removes an element or a range of elements in a set from specified positions or removes elements that match a specified key.|
-|[find](#find)|Returns an iterator addressing the location of an element in a set that has a key equivalent to a specified key.|
-|[get_allocator](#get_allocator)|Returns a copy of the `allocator` object used to construct the set.|
-|[insert](#insert)|Inserts an element or a range of elements into a set.|
-|[key_comp](#key_comp)|Retrieves a copy of the comparison object used to order keys in a set.|
+|[find](#find)|Returns an iterator addressing the location of an element in a `set` that has a key equivalent to a specified key.|
+|[get_allocator](#get_allocator)|Returns a copy of the `allocator` object used to construct the `set`.|
+|[insert](#insert)|Inserts an element or a range of elements into a `set`.|
+|[key_comp](#key_comp)|Retrieves a copy of the comparison object used to order keys in a `set`.|
 |[lower_bound](#lower_bound)|Returns an iterator to the first element in a set with a key that is equal to or greater than a specified key.|
-|[max_size](#max_size)|Returns the maximum length of the set.|
-|[rbegin](#rbegin)|Returns an iterator addressing the first element in a reversed set.|
-|[rend](#rend)|Returns an iterator that addresses the location succeeding the last element in a reversed set.|
-|[size](#size)|Returns the number of elements in the set.|
-|[swap](#swap)|Exchanges the elements of two sets.|
-|[upper_bound](#upper_bound)|Returns an iterator to the first element in a set with a key that is greater than a specified key.|
-|[value_comp](#value_comp)|Retrieves a copy of the comparison object used to order element values in a set.|
+|[max_size](#max_size)|Returns the maximum length of the `set`.|
+|[rbegin](#rbegin)|Returns an iterator addressing the first element in a reversed `set`.|
+|[rend](#rend)|Returns an iterator that addresses the location succeeding the last element in a reversed `set`.|
+|[size](#size)|Returns the number of elements in the `set`.|
+|[swap](#swap)|Exchanges the elements of two `set`s.|
+|[upper_bound](#upper_bound)|Returns an iterator to the first element in a `set` with a key that is greater than a specified key.|
+|[value_comp](#value_comp)|Retrieves a copy of the comparison object used to order element values in a `set`.|
 
 ### Operators
 
@@ -372,6 +373,48 @@ A type `const_reverse_iterator` cannot modify the value of an element and is use
 ### Example
 
 See the example for [rend](#rend) for an example of how to declare and use the `const_reverse_iterator`.
+
+## <a name="contains"></a> contains
+
+Checks if there is an element the specified key in the `set`.
+
+```cpp
+[[nodiscard]] bool contains(const K& key) const;
+```
+
+### Parameters
+
+*key*\
+The element's key value to look for.
+
+### Return Value
+
+`true` if the element is found in the `set`; `false` otherwise.
+
+### Remarks
+
+`Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+
+### Example
+
+```cpp
+// Requires /std:c++latest
+#include <set>
+#include <iostream>
+
+int main()
+{
+    std::set<int> theSet = {1, 2};
+
+    std::cout << std::boolalpha << theSet.contains(2) << '\n';
+    std::cout << std::boolalpha << theSet.contains(3) << '\n';
+}
+```
+
+```Output
+true
+false
+```
 
 ## <a name="count"></a> count
 

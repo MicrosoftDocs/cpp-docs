@@ -1,8 +1,8 @@
 ---
 title: "map Class"
-ms.date: "10/18/2018"
-f1_keywords: ["map/std::map", "map/std::map::allocator_type", "map/std::map::const_iterator", "map/std::map::const_pointer", "map/std::map::const_reference", "map/std::map::const_reverse_iterator", "map/std::map::difference_type", "map/std::map::iterator", "map/std::map::key_compare", "map/std::map::key_type", "map/std::map::mapped_type", "map/std::map::pointer", "map/std::map::reference", "map/std::map::reverse_iterator", "map/std::map::size_type", "map/std::map::value_type", "map/std::map::at", "map/std::map::begin", "map/std::map::cbegin", "map/std::map::cend", "map/std::map::clear", "map/std::map::count", "map/std::map::crbegin", "map/std::map::crend", "map/std::map::emplace", "map/std::map::emplace_hint", "map/std::map::empty", "map/std::map::end", "map/std::map::equal_range", "map/std::map::erase", "map/std::map::find", "map/std::map::get_allocator", "map/std::map::insert", "map/std::map::key_comp", "map/std::map::lower_bound", "map/std::map::max_size", "map/std::map::rbegin", "map/std::map::rend", "map/std::map::size", "map/std::map::swap", "map/std::map::upper_bound", "map/std::map::value_comp"]
-helpviewer_keywords: ["std::map [C++]", "std::map [C++], allocator_type", "std::map [C++], const_iterator", "std::map [C++], const_pointer", "std::map [C++], const_reference", "std::map [C++], const_reverse_iterator", "std::map [C++], difference_type", "std::map [C++], iterator", "std::map [C++], key_compare", "std::map [C++], key_type", "std::map [C++], mapped_type", "std::map [C++], pointer", "std::map [C++], reference", "std::map [C++], reverse_iterator", "std::map [C++], size_type", "std::map [C++], value_type", "std::map [C++], at", "std::map [C++], begin", "std::map [C++], cbegin", "std::map [C++], cend", "std::map [C++], clear", "std::map [C++], count", "std::map [C++], crbegin", "std::map [C++], crend", "std::map [C++], emplace", "std::map [C++], emplace_hint", "std::map [C++], empty", "std::map [C++], end", "std::map [C++], equal_range", "std::map [C++], erase", "std::map [C++], find", "std::map [C++], get_allocator", "std::map [C++], insert", "std::map [C++], key_comp", "std::map [C++], lower_bound", "std::map [C++], max_size", "std::map [C++], rbegin", "std::map [C++], rend", "std::map [C++], size", "std::map [C++], swap", "std::map [C++], upper_bound", "std::map [C++], value_comp"]
+ms.date: "9/9/2020"
+f1_keywords: ["map/std::map", "map/std::map::allocator_type", "map/std::map::const_iterator", "map/std::map::const_pointer", "map/std::map::const_reference", "map/std::map::const_reverse_iterator", "map/std::map::difference_type", "map/std::map::iterator", "map/std::map::key_compare", "map/std::map::key_type", "map/std::map::mapped_type", "map/std::map::pointer", "map/std::map::reference", "map/std::map::reverse_iterator", "map/std::map::size_type", "map/std::map::value_type", "map/std::map::at", "map/std::map::begin", "map/std::map::cbegin", "map/std::map::cend", "map/std::map::clear", "map/std::map::count", "map/std::map::contains", "map/std::map::crbegin", "map/std::map::crend", "map/std::map::emplace", "map/std::map::emplace_hint", "map/std::map::empty", "map/std::map::end", "map/std::map::equal_range", "map/std::map::erase", "map/std::map::find", "map/std::map::get_allocator", "map/std::map::insert", "map/std::map::key_comp", "map/std::map::lower_bound", "map/std::map::max_size", "map/std::map::rbegin", "map/std::map::rend", "map/std::map::size", "map/std::map::swap", "map/std::map::upper_bound", "map/std::map::value_comp"]
+helpviewer_keywords: ["std::map [C++]", "std::map [C++], allocator_type", "std::map [C++], const_iterator", "std::map [C++], const_pointer", "std::map [C++], const_reference", "std::map [C++], const_reverse_iterator", "std::map [C++], difference_type", "std::map [C++], iterator", "std::map [C++], key_compare", "std::map [C++], key_type", "std::map [C++], mapped_type", "std::map [C++], pointer", "std::map [C++], reference", "std::map [C++], reverse_iterator", "std::map [C++], size_type", "std::map [C++], value_type", "std::map [C++], at", "std::map [C++], begin", "std::map [C++], cbegin", "std::map [C++], cend", "std::map [C++], clear", "std::map [C++], count", "std::map [C++], contains", "std::map [C++], crbegin", "std::map [C++], crend", "std::map [C++], emplace", "std::map [C++], emplace_hint", "std::map [C++], empty", "std::map [C++], end", "std::map [C++], equal_range", "std::map [C++], erase", "std::map [C++], find", "std::map [C++], get_allocator", "std::map [C++], insert", "std::map [C++], key_comp", "std::map [C++], lower_bound", "std::map [C++], max_size", "std::map [C++], rbegin", "std::map [C++], rend", "std::map [C++], size", "std::map [C++], swap", "std::map [C++], upper_bound", "std::map [C++], value_comp"]
 ms.assetid: 7876f4c9-ebb4-4878-af1e-09364c43af0a
 ---
 # map Class
@@ -98,32 +98,33 @@ The map orders the elements it controls by calling a stored function object of t
 
 |Member function|Description|
 |-|-|
-|[at](#at)|Finds an element with a specified key value.|
-|[begin](#begin)|Returns an iterator that points to the first element in the map.|
-|[cbegin](#cbegin)|Returns a const iterator that points to the first element in the map.|
+|[at](#at)|Finds an element with the specified key value.|
+|[begin](#begin)|Returns an iterator that points to the first element in the `map`.|
+|[cbegin](#cbegin)|Returns a const iterator that points to the first element in the `map`.|
 |[cend](#cend)|Returns a const past-the-end iterator.|
-|[clear](#clear)|Erases all the elements of a map.|
+|[clear](#clear)|Erases all the elements of a `map`.|
+|[contains](#contains)|Checks if there is an element with the specified key in the `map`.|
 |[count](#count)|Returns the number of elements in a map whose key matches the key specified in a parameter.|
-|[crbegin](#crbegin)|Returns a const iterator that points to the first element in a reversed map.|
-|[crend](#crend)|Returns a const iterator that points to the location after the last element in a reversed map.|
-|[emplace](#emplace)|Inserts an element constructed in place into the map.|
-|[emplace_hint](#emplace_hint)|Inserts an element constructed in place into the map, with a placement hint.|
-|[empty](#empty)|Returns **`true`** if a map is empty.|
+|[crbegin](#crbegin)|Returns a const iterator that points to the first element in a reversed `map`.|
+|[crend](#crend)|Returns a const iterator that points to the location after the last element in a reversed `map`.|
+|[emplace](#emplace)|Inserts an element constructed in place into the `map`.|
+|[emplace_hint](#emplace_hint)|Inserts an element constructed in place into the `map`, with a placement hint.|
+|[empty](#empty)|Returns **`true`** if a `map` is empty.|
 |[end](#end)|Returns the past-the-end iterator.|
 |[equal_range](#equal_range)|Returns a pair of iterators. The first iterator in the pair points to the first element in a `map` with a key that is greater than a specified key. The second iterator in the pair points to the first element in the `map` with a key that is equal to or greater than the key.|
 |[erase](#erase)|Removes an element or a range of elements in a map from the specified positions.|
-|[find](#find)|Returns an iterator that points to the location of an element in a map that has a key equal to a specified key.|
-|[get_allocator](#get_allocator)|Returns a copy of the `allocator` object that is used to construct the map.|
-|[insert](#insert)|Inserts an element or a range of elements into the map at a specified position.|
-|[key_comp](#key_comp)|Returns a copy of the comparison object that used to order keys in a map.|
-|[lower_bound](#lower_bound)|Returns an iterator to the first element in a map that has a key value that is equal to or greater than that of a specified key.|
-|[max_size](#max_size)|Returns the maximum length of the map.|
-|[rbegin](#rbegin)|Returns an iterator that points to the first element in a reversed map.|
-|[rend](#rend)|Returns an iterator that points to the location after the last element in a reversed map.|
+|[find](#find)|Returns an iterator that points to the location of an element in a `map` that has a key equal to a specified key.|
+|[get_allocator](#get_allocator)|Returns a copy of the `allocator` object that is used to construct the `map`.|
+|[insert](#insert)|Inserts an element or a range of elements into the `map` at a specified position.|
+|[key_comp](#key_comp)|Returns a copy of the comparison object that used to order keys in a `map`.|
+|[lower_bound](#lower_bound)|Returns an iterator to the first element in a `map` that has a key value that is equal to or greater than that of a specified key.|
+|[max_size](#max_size)|Returns the maximum length of the `map`.|
+|[rbegin](#rbegin)|Returns an iterator that points to the first element in a reversed m`ap.|
+|[rend](#rend)|Returns an iterator that points to the location after the last element in a reversed `map`.|
 |[size](#size)|Returns the number of elements in the map.|
 |[swap](#swap)|Exchanges the elements of two maps.|
-|[upper_bound](#upper_bound)|Returns an iterator to the first element in a map that has a key value that is greater than that of a specified key.|
-|[value_comp](#value_comp)|Retrieves a copy of the comparison object that is used to order element values in a map.|
+|[upper_bound](#upper_bound)|Returns an iterator to the first element in a `map` that has a key value that is greater than that of a specified key.|
+|[value_comp](#value_comp)|Retrieves a copy of the comparison object that is used to order element values in a `map`.|
 
 ### Operators
 
@@ -524,6 +525,47 @@ int main()
 The number of elements in m1 with a sort key of 1 is: 1.
 The number of elements in m1 with a sort key of 2 is: 1.
 The number of elements in m1 with a sort key of 3 is: 0.
+```
+
+## <a name="contains"></a> contains
+
+Checks if there is an element the specified key in the `map` .
+
+```cpp
+[[nodiscard]] bool contains(const K& key) const;
+```
+
+### Parameters
+
+*key*\
+The element's key value to look for.
+
+### Return Value
+
+`true` if the element is found in the container; `false` otherwise.
+
+### Remarks
+
+`Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+
+### Example
+
+```cpp
+// Requires /std:c++latest
+#include <map>
+#include <iostream>
+
+int main()
+{
+    std::map<int, bool> theMap = {{0, true},{1, false}};
+    std::cout << std::boolalpha << theMap.contains(1) << '\n';
+    std::cout << std::boolalpha << theMap.contains(2) << '\n';
+}
+```
+
+```Output
+true
+false
 ```
 
 ## <a name="crbegin"></a> crbegin
