@@ -1815,7 +1815,6 @@ See [starts_with](#starts_with) to check if a string starts with the specified p
 ### Example
 
 ```cpp
-// compile with: /std:c++latest
 #include <string>
 #include <iostream>
 

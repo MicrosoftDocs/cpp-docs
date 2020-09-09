@@ -81,7 +81,7 @@ Unlike `array` or `vector`, a span doesn't "own" the elements inside it. A span 
 
 **Namespace:** std
 
-[/std:c++latest](../build/reference/std-specify-language-standard-version.md) is required.
+**Compiler Option:** [/std:c++latest](../build/reference/std-specify-language-standard-version.md)
 
 ## <a name="back"></a> `span::back`
 
