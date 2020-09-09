@@ -1,5 +1,6 @@
 ---
 title: "multiset Class"
+description: "API reference for the C++ Standard Template Library (STL) `multiset` class which  is used for the storage and retrieval of data from a collection in which the values of the elements contained need not be unique and in which they serve as the key values according to which the data is automatically ordered."
 ms.date: "9/9/2020"
 f1_keywords: ["set/std::multiset", "set/std::multiset::allocator_type", "set/std::multiset::const_iterator", "set/std::multiset::const_pointer", "set/std::multiset::const_reference", "set/std::multiset::const_reverse_iterator", "set/std::multiset::difference_type", "set/std::multiset::iterator", "set/std::multiset::key_compare", "set/std::multiset::key_type", "set/std::multiset::pointer", "set/std::multiset::reference", "set/std::multiset::reverse_iterator", "set/std::multiset::size_type", "set/std::multiset::value_compare", "set/std::multiset::value_type", "set/std::multiset::begin", "set/std::multiset::cbegin", "set/std::multiset::cend", "set/std::multiset::clear", "set/std::multiset::contains", "set/std::multiset::count", "set/std::multiset::crbegin", "set/std::multiset::crend", "set/std::multiset::emplace", "set/std::multiset::emplace_hint", "set/std::multiset::empty", "set/std::multiset::end", "set/std::multiset::equal_range", "set/std::multiset::erase", "set/std::multiset::find", "set/std::multiset::get_allocator", "set/std::multiset::insert", "set/std::multiset::key_comp", "set/std::multiset::lower_bound", "set/std::multiset::max_size", "set/std::multiset::rbegin", "set/std::multiset::rend", "set/std::multiset::size", "set/std::multiset::swap", "set/std::multiset::upper_bound", "set/std::multiset::value_comp"]
 helpviewer_keywords: ["std::multiset [C++]", "std::multiset [C++], allocator_type", "std::multiset [C++], const_iterator", "std::multiset [C++], const_pointer", "std::multiset [C++], const_reference", "std::multiset [C++], const_reverse_iterator", "std::multiset [C++], difference_type", "std::multiset [C++], iterator", "std::multiset [C++], key_compare", "std::multiset [C++], key_type", "std::multiset [C++], pointer", "std::multiset [C++], reference", "std::multiset [C++], reverse_iterator", "std::multiset [C++], size_type", "std::multiset [C++], value_compare", "std::multiset [C++], value_type", "std::multiset [C++], begin", "std::multiset [C++], cbegin", "std::multiset [C++], cend", "std::multiset [C++], clear", "std::multiset [C++], contains", "std::multiset [C++], count", "std::multiset [C++], crbegin", "std::multiset [C++], crend", "std::multiset [C++], emplace", "std::multiset [C++], emplace_hint", "std::multiset [C++], empty", "std::multiset [C++], end", "std::multiset [C++], equal_range", "std::multiset [C++], erase", "std::multiset [C++], find", "std::multiset [C++], get_allocator", "std::multiset [C++], insert", "std::multiset [C++], key_comp", "std::multiset [C++], lower_bound", "std::multiset [C++], max_size", "std::multiset [C++], rbegin", "std::multiset [C++], rend", "std::multiset [C++], size", "std::multiset [C++], swap", "std::multiset [C++], upper_bound", "std::multiset [C++], value_comp"]
@@ -7,7 +8,7 @@ ms.assetid: 630e8c10-0ce9-4ad9-8d79-9e91a600713f
 ---
 # multiset Class
 
-The C++ Standard Library multiset class is used for the storage and retrieval of data from a collection in which the values of the elements contained need not be unique and in which they serve as the key values according to which the data is automatically ordered. The key value of an element in a multiset may not be changed directly. Instead, old values must be deleted and elements with new values inserted.
+The C++ Standard Library multiset class is used for the storage and retrieval of data from a collection in which the values of the elements contained need not be unique and in which they serve as the key values according to which the data is automatically ordered. The key value of an element in a `multiset` may not be changed directly. Instead, old values must be deleted and elements with new values inserted.
 
 ## Syntax
 
@@ -19,19 +20,19 @@ class multiset
 ### Parameters
 
 *Key*\
-The element data type to be stored in the multiset.
+The element data type to be stored in the `multiset`.
 
 *Compare*\
-The type that provides a function object that can compare two element values as sort keys to determine their relative order in the multiset. The binary predicate **less**\<Key> is the default value.
+The type that provides a function object that can compare two element values as sort keys to determine their relative order in the `multiset`. The binary predicate **less**\<Key> is the default value.
 
-In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
+In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
 *Allocator*\
-The type that represents the stored allocator object that encapsulates details about the multiset's allocation and deallocation of memory. The default value is `allocator<Key>`.
+The type that represents the stored allocator object that encapsulates details about the `multiset`'s allocation and deallocation of memory. The default value is `allocator<Key>`.
 
 ## Remarks
 
-The C++ Standard Library multiset class is:
+The C++ Standard Library `multiset` class is:
 
 - An associative container, which is a variable size container that supports the efficient retrieval of element values based on an associated key value.
 
@@ -45,13 +46,13 @@ The C++ Standard Library multiset class is:
 
 - A class template, because the functionality it provides is generic and so independent of the specific type of data contained as elements. The data type to be used is, instead, specified as a parameter in the class template along with the comparison function and allocator.
 
-The iterator provided by the multiset class is a bidirectional iterator, but the class member functions [insert](#insert) and [multiset](#multiset) have versions that take as template parameters a weaker input iterator, whose functionality requirements are more minimal than those guaranteed by the class of bidirectional iterators. The different iterator concepts form a family related by refinements in their functionality. Each iterator concept has its own set of requirements and the algorithms that work with them must limit their assumptions to the requirements provided by that type of iterator. It may be assumed that an input iterator may be dereferenced to refer to some object and that it may be incremented to the next iterator in the sequence. This is a minimal set of functionality, but it is enough to be able to talk meaningfully about a range of iterators [ `First`, `Last`) in the context of the class's member functions.
+The iterator provided by the `multiset` class is a bidirectional iterator, but the class member functions [insert](#insert) and [multiset](#multiset) have versions that take as template parameters a weaker input iterator, whose functionality requirements are more minimal than those guaranteed by the class of bidirectional iterators. The different iterator concepts form a family related by refinements in their functionality. Each iterator concept has its own set of requirements and the algorithms that work with them must limit their assumptions to the requirements provided by that type of iterator. It may be assumed that an input iterator may be dereferenced to refer to some object and that it may be incremented to the next iterator in the sequence. This is a minimal set of functionality, but it is enough to be able to talk meaningfully about a range of iterators [ `First`, `Last`) in the context of the class's member functions.
 
 The choice of container type should be based in general on the type of searching and inserting required by the application. Associative containers are optimized for the operations of lookup, insertion and removal. The member functions that explicitly support these operations are efficient, performing them in a time that is on average proportional to the logarithm of the number of elements in the container. Inserting elements invalidates no iterators, and removing elements invalidates only those iterators that had specifically pointed at the removed elements.
 
-The multiset should be the associative container of choice when the conditions associating the values with their keys are satisfies by the application. The elements of a multiset may be multiple and serve as their own sort keys, so keys are not unique. A model for this type of structure is an ordered list of, say, words in which the words may occur more than once. Had multiple occurrences of the words not been allowed, then a set would have been the appropriate container structure. If unique definitions were attached as values to the list of unique key words, then a map would be an appropriate structure to contain this data. If instead the definitions were not unique, then a multimap would be the container of choice.
+The `multiset` should be the associative container of choice when the conditions associating the values with their keys are satisfies by the application. The elements of a `multiset` may be multiple and serve as their own sort keys, so keys are not unique. A model for this type of structure is an ordered list of, say, words in which the words may occur more than once. Had multiple occurrences of the words not been allowed, then a set would have been the appropriate container structure. If unique definitions were attached as values to the list of unique key words, then a map would be an appropriate structure to contain this data. If instead the definitions were not unique, then a multimap would be the container of choice.
 
-The multiset orders the sequence it controls by calling a stored function object of type *Compare*. This stored object is a comparison function that may be accessed by calling the member function [key_comp](#key_comp). In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*( *x*, *y*) is a function object that has two argument objects *x* and *y* and a return value of **`true`** or **`false`**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects x and y are defined to be equivalent when both *f*( *x,y*) and *f*( *y,x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
+The `multiset` orders the sequence it controls by calling a stored function object of type *Compare*. This stored object is a comparison function that may be accessed by calling the member function [key_comp](#key_comp). In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*( *x*, *y*) is a function object that has two argument objects *x* and *y* and a return value of **`true`** or **`false`**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects x and y are defined to be equivalent when both *f*( *x,y*) and *f*( *y,x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
 
 In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
@@ -368,7 +369,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 ### Remarks
 
-A type `const_reverse_iterator` cannot modify the value of an element and is use to iterate through the multiset in reverse.
+A type `const_reverse_iterator` cannot modify the value of an element and is used to iterate through the multiset in reverse.
 
 ### Example
 
@@ -587,7 +588,7 @@ typedef typename allocator_type::difference_type difference_type;
 
 The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range [ `first`, `last`) between the iterators `first` and `last`, includes the element pointed to by `first` and the range of elements up to, but not including, the element pointed to by `last`.
 
-Note that although `difference_type` is available for all iterators that satisfy the requirements of an input iterator, which includes the class of bidirectional iterators supported by reversible containers like set, subtraction between iterators is only supported by random-access iterators provided by a random-access container like vector.
+Although `difference_type` is available for all iterators that satisfy the requirements of an input iterator, which includes the class of bidirectional iterators supported by reversible containers like set, subtraction between iterators is only supported by random-access iterators provided by a random-access container like vector.
 
 ### Example
 
@@ -1556,11 +1557,11 @@ All constructors store a function object of type Compare that is used to establi
 
 The first three constructors specify an empty initial multiset, the second specifying the type of comparison function (*Comp*) to be used in establishing the order of the elements and the third explicitly specifying the allocator type (*Al*) to be used. The keyword **`explicit`** suppresses certain kinds of automatic type conversion.
 
-The fourth constructor specifies a copy of the multiset *Right*.
+The 4th constructor specifies a copy of the multiset *Right*.
 
-The fifth constructor specifies a copy of the multiset by moving *Right*.
+The 5th constructor specifies a copy of the multiset by moving *Right*.
 
-The sixth, seventh, and eighth constructors specify an initializer_list from which to copy the elements.
+The 6th, 7th, and 8th constructors specify an initializer_list from which to copy the elements.
 
 The next three constructors copy the range `[First, Last)` of a multiset with increasing explicitness in specifying the type of comparison function and allocator.
 

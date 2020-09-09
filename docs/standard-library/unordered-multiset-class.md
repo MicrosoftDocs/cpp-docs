@@ -740,10 +740,10 @@ The element's key value to look for.
 
 int main()
 {
-    std::unordered_multiset<int> theUnorderedMultiSet = { 1, 2 };
+    std::unordered_multiset<int> theUnorderedMultiset = { 1, 2, 3 };
 
-    std::cout << std::boolalpha << theUnorderedMultiSet.contains(2) << '\n';
-    std::cout << std::boolalpha << theUnorderedMultiSet.contains(3) << '\n';
+    std::cout << std::boolalpha << theUnorderedMultiset.contains(1) << '\n';
+    std::cout << std::boolalpha << theUnorderedMultiset.contains(3) << '\n';
 }
 ```
 

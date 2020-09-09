@@ -749,10 +749,10 @@ The element's key value to look for.
 
 int main()
 {
-    std::unordered_multimap<int, bool> theUnorderedmultiMap = {{0, false}, {1,true}};
+    std::unordered_multimap<int, bool> theUnorderedMultimap = {{0, false}, {1,true}};
 
-    std::cout << std::boolalpha << theUnorderedmultiMap.contains(1) << '\n';
-    std::cout << std::boolalpha << theUnorderedmultiMap.contains(2) << '\n';
+    std::cout << std::boolalpha << theUnorderedMultimap.contains(1) << '\n';
+    std::cout << std::boolalpha << theUnorderedMultimap.contains(2) << '\n';
 }
 ```
 
