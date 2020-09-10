@@ -33,20 +33,24 @@ public:
 
 The following table lists the constructs to which the Deprecated attribute may be applied:
 
-| |
-|-|
-|XAML control|
-|delegate|
-|event|
-|enum field|
-|enum|
-|struct|
-|method|
-|class|
-|interface|
-|property|
-|struct field|
-|parameterized constructor|
+:::row:::
+   :::column span="":::
+      class\
+      delegate\
+      enum\
+      enum field\
+      event\
+      interface
+   :::column-end:::
+   :::column span="":::
+      method\
+      parameterized constructor\
+      property\
+      struct\
+      struct field\
+      XAML control
+   :::column-end:::
+:::row-end:::
 
 ## See also
 

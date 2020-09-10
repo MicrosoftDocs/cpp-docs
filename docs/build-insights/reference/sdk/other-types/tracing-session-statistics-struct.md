@@ -30,7 +30,7 @@ typedef struct TRACING_SESSION_STATISTICS_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `MSVCEventsLost` | The number of MSVC events that were dropped. |
 | `MSVCBuffersLost` | The number of MSVC event buffers that were dropped. |

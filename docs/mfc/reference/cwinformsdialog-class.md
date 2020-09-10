@@ -40,7 +40,7 @@ The .NET Framework user control to be displayed in the MFC application.
 
 ### Public Operators
 
-|Name||
+|Name|Description|
 |----------|-|
 |[CWinFormsDialog::operator -&gt;](#operator_-_gt)|Replaces [CWinFormsDialog::GetControl](#getcontrol) in expressions.|
 |[CWinFormsDialog::operator TManagedControl^](#operator-tmanagedcontrol-hat)|Casts a type as a reference to a Windows Forms user control.|

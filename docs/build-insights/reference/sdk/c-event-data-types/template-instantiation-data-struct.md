@@ -29,7 +29,7 @@ typedef struct TEMPLATE_INSTANTIATION_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `SpecializationSymbolKey` | The key for the template specialization's type. This value is unique within the trace being analyzed. |
 | `PrimaryTemplateSymbolKey` | The key for the primary template type that was specialized. This value is unique within the trace being analyzed. |
