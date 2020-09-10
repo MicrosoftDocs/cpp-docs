@@ -1,6 +1,6 @@
 ---
 title: "unordered_multimap Class"
-description: "API overview for the C++ Standard Library container class `multimap`."
+description: "API overview for the C++ Standard Library container class `unordered_multimap`."
 ms.date: "9/9/2020"
 f1_keywords: ["unordered_map/std::unordered_multimap", "unordered_map/std::unordered_multimap::allocator_type", "unordered_map/std::unordered_multimap::const_iterator", "unordered_map/std::unordered_multimap::const_local_iterator", "unordered_map/std::unordered_multimap::const_pointer", "unordered_map/std::unordered_multimap::const_reference", "unordered_map/std::unordered_multimap::difference_type", "unordered_map/std::unordered_multimap::hasher", "unordered_map/std::unordered_multimap::iterator", "unordered_map/std::unordered_multimap::key_equal", "unordered_map/std::unordered_multimap::key_type", "unordered_map/std::unordered_multimap::local_iterator", "unordered_map/std::unordered_multimap::mapped_type", "unordered_map/std::unordered_multimap::pointer", "unordered_map/std::unordered_multimap::reference", "unordered_map/std::unordered_multimap::size_type", "unordered_map/std::unordered_multimap::value_type", "unordered_map/std::unordered_multimap::begin", "unordered_map/std::unordered_multimap::bucket", "unordered_map/std::unordered_multimap::bucket_count", "unordered_map/std::unordered_multimap::bucket_size", "unordered_map/std::unordered_multimap::cbegin", "unordered_map/std::unordered_multimap::cend", "unordered_map/std::unordered_multimap::clear",
 "unordered_map/std::unordered_multimap::contains",  "unordered_map/std::unordered_multimap::count", "unordered_map/std::unordered_multimap::emplace", "unordered_map/std::unordered_multimap::emplace_hint", "unordered_map/std::unordered_multimap::empty", "unordered_map/std::unordered_multimap::end", "unordered_map/std::unordered_multimap::equal_range", "unordered_map/std::unordered_multimap::erase", "unordered_map/std::unordered_multimap::find", "unordered_map/std::unordered_multimap::get_allocator", "unordered_map/std::unordered_multimap::hash", "unordered_map/std::unordered_multimap::insert", "unordered_map/std::unordered_multimap::key_eq", "unordered_map/std::unordered_multimap::load_factor", "unordered_map/std::unordered_multimap::max_bucket_count", "unordered_map/std::unordered_multimap::max_load_factor", "unordered_map/std::unordered_multimap::max_size", "unordered_map/std::unordered_multimap::rehash", "unordered_map/std::unordered_multimap::size", "unordered_map/std::unordered_multimap::swap", "unordered_map/std::unordered_multimap::unordered_multimap", "unordered_map/std::unordered_multimap::operator=", "unordered_map/std::unordered_multimap::hash_function"]
@@ -71,7 +71,7 @@ The allocator class.
 |[cbegin](#cbegin)|Designates the beginning of the controlled sequence.|
 |[cend](#cend)|Designates the end of the controlled sequence.|
 |[clear](#clear)|Removes all elements.|
-|[contains](#contains)|Checks if there is an element with the specified key in the `unordered_multimap`.|
+|[contains](#contains)<sup>C++20</sup>|Checks if there is an element with the specified key in the `unordered_multimap`.|
 |[count](#count)|Finds the number of elements matching a specified key.|
 |[emplace](#emplace)|Adds an element constructed in place.|
 |[emplace_hint](#emplace_hint)|Adds an element constructed in place, with hint.|
@@ -722,11 +722,11 @@ int main()
 
 ## <a name="contains"></a> unordered_multimap::contains
 
-Checks if there is an element the specified key in the `unordered_multimap`.
+Checks if there is an element with the specified key in the `unordered_multimap`.
 
 ```cpp
-[[nodiscard]] bool contains(const K& key) const;
-template<class K> [[nodiscard]] bool contains(const K& key) const;
+bool contains(const Key& key) const;
+template<class K> bool contains(const K& key) const;
 ```
 
 ### Parameters
@@ -743,9 +743,9 @@ The element's key value to look for.
 
 ### Remarks
 
-`Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+`contains()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-`template<class K> [[nodiscard]] bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
 
 ### Example
 

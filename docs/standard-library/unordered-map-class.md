@@ -70,7 +70,7 @@ The allocator class.
 |[cend](#cend)|Designates the end of the controlled sequence.|
 |[clear](#clear)|Removes all elements.|
 |[count](#count)|Finds the number of elements matching a specified key.|
-|[contains](#contains)|Checks if there is an element with the specified key in the `unordered_map` .|
+|[contains](#contains)<sup>C++20</sup>|Check if there is an element with the specified key in the `unordered_map`.|
 |[emplace](#emplace)|Adds an element constructed in place.|
 |[emplace_hint](#emplace_hint)|Adds an element constructed in place, with hint.|
 |[empty](#empty)|Tests whether no elements are present.|
@@ -770,8 +770,8 @@ Checks if there is an element in the `unordered_map` with the specified key.
 Introduced in C++20.
 
 ```cpp
-[[nodiscard]] bool contains(const K& key) const;
-<class K> [[nodiscard]] bool contains(const K& key) const;
+bool contains(const Key& key) const;
+<class K> bool contains(const K& key) const;
 ```
 
 ### Parameters
@@ -788,9 +788,9 @@ The key value of the element to look for.
 
 ### Remarks
 
-`Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+`contains()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-`template<class K> [[nodiscard]] bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent.
 
 ### Example
 

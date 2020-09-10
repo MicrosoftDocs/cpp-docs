@@ -1,7 +1,7 @@
 ---
 title: "map Class"
 description: "API reference for the C++ Standard Template Library (STL) `map` class, which is used for the storage and retrieval of data from a collection in which each element is a pair that has both a data value and a sort key."
-ms.date: "9/9/2020"
+ms.date: "9/10/2020"
 f1_keywords: ["map/std::map", "map/std::map::allocator_type", "map/std::map::const_iterator", "map/std::map::const_pointer", "map/std::map::const_reference", "map/std::map::const_reverse_iterator", "map/std::map::difference_type", "map/std::map::iterator", "map/std::map::key_compare", "map/std::map::key_type", "map/std::map::mapped_type", "map/std::map::pointer", "map/std::map::reference", "map/std::map::reverse_iterator", "map/std::map::size_type", "map/std::map::value_type", "map/std::map::at", "map/std::map::begin", "map/std::map::cbegin", "map/std::map::cend", "map/std::map::clear", "map/std::map::count", "map/std::map::contains", "map/std::map::crbegin", "map/std::map::crend", "map/std::map::emplace", "map/std::map::emplace_hint", "map/std::map::empty", "map/std::map::end", "map/std::map::equal_range", "map/std::map::erase", "map/std::map::find", "map/std::map::get_allocator", "map/std::map::insert", "map/std::map::key_comp", "map/std::map::lower_bound", "map/std::map::max_size", "map/std::map::rbegin", "map/std::map::rend", "map/std::map::size", "map/std::map::swap", "map/std::map::upper_bound", "map/std::map::value_comp"]
 helpviewer_keywords: ["std::map [C++]", "std::map [C++], allocator_type", "std::map [C++], const_iterator", "std::map [C++], const_pointer", "std::map [C++], const_reference", "std::map [C++], const_reverse_iterator", "std::map [C++], difference_type", "std::map [C++], iterator", "std::map [C++], key_compare", "std::map [C++], key_type", "std::map [C++], mapped_type", "std::map [C++], pointer", "std::map [C++], reference", "std::map [C++], reverse_iterator", "std::map [C++], size_type", "std::map [C++], value_type", "std::map [C++], at", "std::map [C++], begin", "std::map [C++], cbegin", "std::map [C++], cend", "std::map [C++], clear", "std::map [C++], count", "std::map [C++], contains", "std::map [C++], crbegin", "std::map [C++], crend", "std::map [C++], emplace", "std::map [C++], emplace_hint", "std::map [C++], empty", "std::map [C++], end", "std::map [C++], equal_range", "std::map [C++], erase", "std::map [C++], find", "std::map [C++], get_allocator", "std::map [C++], insert", "std::map [C++], key_comp", "std::map [C++], lower_bound", "std::map [C++], max_size", "std::map [C++], rbegin", "std::map [C++], rend", "std::map [C++], size", "std::map [C++], swap", "std::map [C++], upper_bound", "std::map [C++], value_comp"]
 ms.assetid: 7876f4c9-ebb4-4878-af1e-09364c43af0a
@@ -104,7 +104,7 @@ The map orders the elements it controls by calling a stored function object of t
 |[cbegin](#cbegin)|Returns a const iterator that points to the first element in the `map`.|
 |[cend](#cend)|Returns a const past-the-end iterator.|
 |[clear](#clear)|Erases all the elements of a `map`.|
-|[contains](#contains)|Checks if there's an element with the specified key in the `map`.|
+|[contains](#contains)<sup>C++20</sup>|Check if there's an element with the specified key in the `map`.|
 |[count](#count)|Returns the number of elements in a map whose key matches the key specified in a parameter.|
 |[crbegin](#crbegin)|Returns a const iterator that points to the first element in a reversed `map`.|
 |[crend](#crend)|Returns a const iterator that points to the location after the last element in a reversed `map`.|
@@ -530,11 +530,11 @@ The number of elements in m1 with a sort key of 3 is: 0.
 
 ## <a name="contains"></a> contains
 
-Checks if there's an element the specified key in the `map`.
+Checks if there's an element with the specified key in the `map`.
 
 ```cpp
-[[nodiscard]] bool contains(const K& key) const;
-template<class K> [[nodiscard]] bool contains(const K& key) const;
+bool contains(const Key& key) const;
+template<class K> bool contains(const K& key) const;
 ```
 
 ### Parameters
@@ -551,16 +551,18 @@ The element's key value to look for.
 
 ### Remarks
 
-`Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+`contains()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-`template<class K> [[nodiscard]] bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
 
 ### Example
 
 ```cpp
 // Requires /std:c++latest
 #include <map>
+#include <string>
 #include <iostream>
+#include <functional>
 
 int main()
 {

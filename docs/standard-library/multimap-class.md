@@ -98,7 +98,7 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 |[cbegin](#cbegin)|Returns a const iterator addressing the first element in the `multimap`.|
 |[cend](#cend)|Returns a const iterator that addresses the location succeeding the last element in a `multimap`.|
 |[clear](#clear)|Erases all the elements of a `multimap`.|
-|[contains](#contains)|Checks if there is an element with the specified key in the `multimap`.|
+|[contains](#contains)<sup>C++20</sup>|Checks if there is an element with the specified key in the `multimap`.|
 |[count](#count)|Returns the number of elements in a `multimap` whose key matches a parameter-specified key.|
 |[crbegin](#crbegin)|Returns a const iterator addressing the first element in a reversed `multimap`.|
 |[crend](#crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `multimap`.|
@@ -120,8 +120,6 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 |[swap](#swap)|Exchanges the elements of two `multimap`s.|
 |[upper_bound](#upper_bound)|Returns an iterator to the first element in a `multimap` that with a key that is greater than a specified key.|
 |[value_comp](#value_comp)|The member function returns a function object that determines the order of elements in a `multimap` by comparing their key values.|
-
-### Operators
 
 |Operator|Description|
 |-|-|
@@ -410,11 +408,11 @@ See the example for [rend](#rend) for an example of how to declare and use `cons
 
 ## <a name="contains"></a> multimap::contains
 
-Checks if there is an element the specified key in the `multimap` .
+Checks if there is an element with the specified key in the `multimap` .
 
 ```cpp
-[[nodiscard]] bool contains(const K& key) const;
-template<class K> [[nodiscard]] bool contains(const K& key) const;
+bool contains(const Key& key) const;
+template<class K> bool contains(const K& key) const;
 ```
 
 ### Parameters
@@ -431,9 +429,9 @@ The element's key value to look for.
 
 ### Remarks
 
-`Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+`contains()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-`template<class K> [[nodiscard]] bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
 
 ### Example
 

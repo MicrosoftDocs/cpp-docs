@@ -90,7 +90,7 @@ In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or
 |[cbegin](#cbegin)|Returns a const iterator that addresses the first element in the `multiset`.|
 |[cend](#cend)|Returns a const iterator that addresses the location succeeding the last element in a `multiset`.|
 |[clear](#clear)|Erases all the elements of a `multiset`.|
-|[contains](#contains)|Checks if there's an element with the specified key in the `multiset`.|
+|[contains](#contains)<sup>C++20</sup>|Check if there's an element with the specified key in the `multiset`.|
 |[count](#count)|Returns the number of elements in a `multiset` whose key matches the key specified as a parameter.|
 |[crbegin](#crbegin)|Returns a const iterator addressing the first element in a reversed `multiset`.|
 |[crend](#crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `multiset`.|
@@ -377,11 +377,11 @@ See the example for [rend](#rend) for an example of how to declare and use the `
 
 ## <a name="contains"></a> multiset::contains
 
-Checks if there's an element the specified key in the `multiset` .
+Checks if there's an element with the specified key in the `multiset` .
 
 ```cpp
-[[nodiscard]] bool contains(const K& key) const;
-template<class K> [[nodiscard]] bool contains(const K& key) const;
+bool contains(const Key& key) const;
+template<class K> bool contains(const K& key) const;
 ```
 
 ### Parameters
@@ -398,9 +398,9 @@ The element's key value to look for.
 
 ### Remarks
 
-`Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+`contains()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-`template<class K> [[nodiscard]] bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
 
 ### Example
 
