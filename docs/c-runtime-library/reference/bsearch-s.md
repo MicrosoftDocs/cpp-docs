@@ -54,7 +54,7 @@ If invalid parameters are passed to the function, it invokes the invalid paramet
 
 ### Error conditions
 
-|*key*|*base*|*compare*|*number*|*width*|**`errno`**|
+|*key*|*base*|*compare*|*number*|*width*|**`errno`** value|
 |-|-|-|-|-|-|
 |**NULL**|any|any|any|any|**EINVAL**|
 |any|**NULL**|any|!= 0|any|**EINVAL**|

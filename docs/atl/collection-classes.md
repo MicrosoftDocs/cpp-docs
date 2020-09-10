@@ -1,5 +1,5 @@
 ---
-title: "ATL Collection Classes"
+title: "Collection classes in ATL"
 ms.date: "11/04/2016"
 ms.topic: "reference"
 helpviewer_keywords: ["collection classes"]
@@ -79,7 +79,7 @@ The following classes provide support for arrays, lists, maps, and also traits m
 
 ## Related Articles
 
-[ATL Collection Classes](../atl/atl-collection-classes.md)
+[ATL collection class overview](../atl/atl-collection-classes.md)
 
 ## See also
 

@@ -46,7 +46,7 @@ For links to more information about DLLs, see [Create C/C++ DLLs in Visual Studi
 
 ::: moniker range="vs-2015"
 
-- A copy of Visual Studio. For information on how to download and install Visual Studio 2015, see [Install Visual Studio 2015](/visualstudio/install/install-visual-studio-2015?view=vs-2015). Use a **Custom** installation to install the C++ compiler and tools, since they're not installed by default.
+- A copy of Visual Studio. For information on how to download and install Visual Studio 2015, see [Install Visual Studio 2015](/visualstudio/install/install-visual-studio-2015?view=vs-2015&preserve-view=true). Use a **Custom** installation to install the C++ compiler and tools, since they're not installed by default.
 
 ::: moniker-end
 
