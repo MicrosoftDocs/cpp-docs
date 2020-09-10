@@ -11,7 +11,7 @@ Represents a set of records selected from a data source.
 
 ## Syntax
 
-```
+```cpp
 class CDaoRecordset : public CObject
 ```
 
@@ -165,7 +165,7 @@ For related information, see the topic "Recordset Object" in DAO Help.
 
 Call this member function to add a new record to a table-type or dynaset-type recordset.
 
-```
+```cpp
 virtual void AddNew();
 ```
 
@@ -205,7 +205,7 @@ For related information, see the topics "AddNew Method", "CancelUpdate Method", 
 
 Call this member function to determine whether the previously opened recordset allows you to add new records by calling the [AddNew](#addnew) member function.
 
-```
+```cpp
 BOOL CanAppend() const;
 ```
 
@@ -221,7 +221,7 @@ For related information, see the topic "Append Method" in DAO Help.
 
 Call this member function to determine whether the previously opened recordset allows you to individually mark records using bookmarks.
 
-```
+```cpp
 BOOL CanBookmark();
 ```
 
@@ -239,7 +239,7 @@ For related information, see the topic "Bookmarkable Property" in DAO Help.
 
 The `CancelUpdate` member function cancels any pending updates due to an [Edit](#edit) or [AddNew](#addnew) operation.
 
-```
+```cpp
 virtual void CancelUpdate();
 ```
 
@@ -258,7 +258,7 @@ For related information, see the topic "CancelUpdate Method" in DAO Help.
 
 Call this member function to determine whether the recordset allows restarting its query (to refresh its records) by calling the `Requery` member function.
 
-```
+```cpp
 BOOL CanRestart();
 ```
 
@@ -278,7 +278,7 @@ For related information, see the topic "Restartable Property" in DAO Help.
 
 Call this member function to determine whether the recordset allows scrolling.
 
-```
+```cpp
 BOOL CanScroll() const;
 ```
 
@@ -296,7 +296,7 @@ For related information, see the topic "Positioning the Current Record Pointer w
 
 Call this member function to determine whether the recordset allows transactions.
 
-```
+```cpp
 BOOL CanTransact();
 ```
 
@@ -312,7 +312,7 @@ For related information, see the topic "Transactions Property" in DAO Help.
 
 Call this member function to determine whether the recordset can be updated.
 
-```
+```cpp
 BOOL CanUpdate() const;
 ```
 
@@ -330,7 +330,7 @@ For related information, see the topics "AddNew Method", "Edit Method", "Delete 
 
 Constructs a `CDaoRecordset` object.
 
-```
+```cpp
 CDaoRecordset(CDaoDatabase* pDatabase = NULL);
 ```
 
@@ -352,7 +352,7 @@ Pass NULL to your recordset constructor to have a `CDaoDatabase` object construc
 
 Closing a `CDaoRecordset` object removes it from the collection of open recordsets in the associated database.
 
-```
+```cpp
 virtual void Close();
 ```
 
@@ -370,7 +370,7 @@ For related information, see the topic "Close Method" in DAO Help.
 
 Call this member function to delete the current record in an open dynaset-type or table-type recordset object.
 
-```
+```cpp
 virtual void Delete();
 ```
 
@@ -393,7 +393,7 @@ For related information, see the topics "AddNew Method", "Edit Method", "Delete 
 
 The framework calls this member function to automatically exchange data between the field data members of your recordset object and the corresponding columns of the current record on the data source.
 
-```
+```cpp
 virtual void DoFieldExchange(CDaoFieldExchange* pFX);
 ```
 
@@ -416,7 +416,7 @@ When you declare your derived recordset class with ClassWizard, the wizard write
 
 Call this member function to allow changes to the current record.
 
-```
+```cpp
 virtual void Edit();
 ```
 
@@ -490,7 +490,7 @@ For related information, see the topic "FillCache Method" in DAO Help.
 
 Call this member function to locate a particular string in a dynaset- or snapshot-type recordset using a comparison operator.
 
-```
+```cpp
 virtual BOOL Find(
     long lFindType,
     LPCTSTR lpszFilter);
@@ -533,7 +533,7 @@ For related information, see the topic "FindFirst, FindLast, FindNext, FindPrevi
 
 Call this member function to find the first record that matches a specified condition.
 
-```
+```cpp
 BOOL FindFirst(LPCTSTR lpszFilter);
 ```
 
@@ -587,7 +587,7 @@ For related information, see the topic "FindFirst, FindLast, FindNext, FindPrevi
 
 Call this member function to find the last record that matches a specified condition.
 
-```
+```cpp
 BOOL FindLast(LPCTSTR lpszFilter);
 ```
 
@@ -629,7 +629,7 @@ For related information, see the topic "FindFirst, FindLast, FindNext, FindPrevi
 
 Call this member function to find the next record that matches a specified condition.
 
-```
+```cpp
 BOOL FindNext(LPCTSTR lpszFilter);
 ```
 
@@ -671,7 +671,7 @@ For related information, see the topic "FindFirst, FindLast, FindNext, FindPrevi
 
 Call this member function to find the previous record that matches a specified condition.
 
-```
+```cpp
 BOOL FindPrev(LPCTSTR lpszFilter);
 ```
 
@@ -713,7 +713,7 @@ For related information, see the topic "FindFirst, FindLast, FindNext, FindPrevi
 
 Returns the record number of a recordset object's current record.
 
-```
+```cpp
 long GetAbsolutePosition();
 ```
 
@@ -739,7 +739,7 @@ For related information, see the topic "AbsolutePosition Property" in DAO Help.
 
 Call this member function to obtain the bookmark value in a particular record.
 
-```
+```cpp
 COleVariant GetBookmark();
 ```
 
@@ -762,7 +762,7 @@ For related information, see the topic "Bookmark Property" in DAO Help.
 
 Call this member function to obtain the number of records cached.
 
-```
+```cpp
 long GetCacheSize();
 ```
 
@@ -782,7 +782,7 @@ For related information, see the topic "CacheSize, CacheStart Properties" in DAO
 
 Call this member function to obtain the bookmark value of the first record in the recordset to be cached.
 
-```
+```cpp
 COleVariant GetCacheStart();
 ```
 
@@ -803,7 +803,7 @@ For related information, see the topic "CacheSize, CacheStart Properties" in DAO
 
 Call this member function to determine the index currently in use in an indexed table-type `CDaoRecordset` object.
 
-```
+```cpp
 CString GetCurrentIndex();
 ```
 
@@ -823,7 +823,7 @@ For related information, see the topic "Index Object" and the definition "curren
 
 Call this member function to retrieve the date and time a base table was created.
 
-```
+```cpp
 COleDateTime GetDateCreated();
 ```
 
@@ -841,7 +841,7 @@ For related information, see the topic "DateCreated, LastUpdated Properties" in 
 
 Call this member function to retrieve the date and time the schema was last updated.
 
-```
+```cpp
 COleDateTime GetDateLastUpdated();
 ```
 
@@ -859,7 +859,7 @@ For related information, see the topic "DateCreated, LastUpdated Properties" in 
 
 Call this member function to determine the name of the database for this recordset.
 
-```
+```cpp
 virtual CString GetDefaultDBName();
 ```
 
@@ -879,7 +879,7 @@ The following example illustrates the use of the double backslash (\\\\) in the 
 
 The framework calls this member function to get the default SQL statement on which the recordset is based.
 
-```
+```cpp
 virtual CString GetDefaultSQL();
 ```
 
@@ -899,7 +899,7 @@ If you pass a null SQL string to [Open](#open), then this function is called to 
 
 Call this member function to determine the state of editing, which is one of the following values:
 
-```
+```cpp
 short GetEditMode();
 ```
 
@@ -921,7 +921,7 @@ For related information, see the topic "EditMode Property" in DAO Help.
 
 Call this member function to retrieve the number of fields (columns) defined in the recordset.
 
-```
+```cpp
 short GetFieldCount();
 ```
 
@@ -981,7 +981,7 @@ For related information, see the topic "Attributes Property" in DAO Help.
 
 Call this member function to retrieve data in a recordset.
 
-```
+```cpp
 virtual void GetFieldValue(
     LPCTSTR lpszName,
     COleVariant& varValue);
@@ -1026,7 +1026,7 @@ For related information, see the topics "Field Object" and "Value Property" in D
 
 Call this member function to determine the number of indexes available on the table-type recordset.
 
-```
+```cpp
 short GetIndexCount();
 ```
 
@@ -1088,7 +1088,7 @@ For related information, see the topic "Attributes Property" in DAO Help.
 
 Call this member function to retrieve the bookmark of the most recently added or updated record.
 
-```
+```cpp
 COleVariant GetLastModifiedBookmark();
 ```
 
@@ -1108,7 +1108,7 @@ For related information, see the topic "LastModified Property" in DAO Help.
 
 Call this member function to determine the type of locking in effect for the recordset.
 
-```
+```cpp
 BOOL GetLockingMode();
 ```
 
@@ -1130,7 +1130,7 @@ For related information, see the topics "LockEdits Property" and "Locking Behavi
 
 Call this member function to retrieve the name of the recordset.
 
-```
+```cpp
 CString GetName();
 ```
 
@@ -1148,7 +1148,7 @@ For related information, see the topic "Name Property" in DAO Help.
 
 Call this member function to retrieve the current value of the specified parameter stored in the underlying DAOParameter object.
 
-```
+```cpp
 virtual COleVariant GetParamValue(int nIndex);
 virtual COleVariant GetParamValue(LPCTSTR lpszName);
 ```
@@ -1175,7 +1175,7 @@ For related information, see the topic "Parameter Object" in DAO Help.
 
 When working with a dynaset-type or snapshot-type recordset, if you call `GetPercentPosition` before fully populating the recordset, the amount of movement is relative to the number of records accessed as indicated by calling [GetRecordCount](#getrecordcount).
 
-```
+```cpp
 float GetPercentPosition();
 ```
 
@@ -1195,7 +1195,7 @@ For related information, see the topic "PercentPosition Property" in DAO Help.
 
 Call this member function to find out how many records in a recordset have been accessed.
 
-```
+```cpp
 long GetRecordCount();
 ```
 
@@ -1223,7 +1223,7 @@ For related information, see the topic "RecordCount Property" in DAO Help.
 
 Call this member function to get the SQL statement that was used to select the recordset's records when it was opened.
 
-```
+```cpp
 CString GetSQL() const;
 ```
 
@@ -1246,7 +1246,7 @@ For related information, see the topic "SQL Property" in DAO Help.
 
 Call this member function after opening the recordset to determine the type of the recordset object.
 
-```
+```cpp
 short GetType();
 ```
 
@@ -1268,7 +1268,7 @@ For related information, see the topic "Type Property" in DAO Help.
 
 Call this member function to determine the rule used to validate data.
 
-```
+```cpp
 CString GetValidationRule();
 ```
 
@@ -1288,7 +1288,7 @@ For related information, see the topic "ValidationRule Property" in DAO Help.
 
 Call this member function to retrieve the text of the ValidationText property of the underlying field object.
 
-```
+```cpp
 CString GetValidationText();
 ```
 
@@ -1304,7 +1304,7 @@ For related information, see the topic "ValidationText Property" in DAO Help.
 
 Call this member function before you scroll from record to record to learn whether you have gone before the first record of the recordset.
 
-```
+```cpp
 BOOL IsBOF() const;
 ```
 
@@ -1354,7 +1354,7 @@ For related information, see the topic "BOF, EOF Properties" in DAO Help.
 
 Call this member function to determine whether the current record has been deleted.
 
-```
+```cpp
 BOOL IsDeleted() const;
 ```
 
@@ -1377,7 +1377,7 @@ For related information, see the topics "Delete Method", "LastModified Property"
 
 Call this member function as you scroll from record to record to learn whether you have gone beyond the last record of the recordset.
 
-```
+```cpp
 BOOL IsEOF() const;
 ```
 
@@ -1427,7 +1427,7 @@ For related information, see the topic "BOF, EOF Properties" in DAO Help.
 
 Call this member function to determine whether the specified field data member of a dynaset has been flagged as "dirty" (changed).
 
-```
+```cpp
 BOOL IsFieldDirty(void* pv);
 ```
 
@@ -1450,7 +1450,7 @@ The data in all dirty field data members will be transferred to the record on th
 
 Call this member function to determine whether the specified field data member of a recordset has been flagged as Null.
 
-```
+```cpp
 BOOL IsFieldNull(void* pv);
 ```
 
@@ -1479,7 +1479,7 @@ Nonzero if the specified field data member is flagged as Null; otherwise 0.
 
 Call this member function to determine whether the specified field data member is "nullable" (can be set to a Null value; C++ NULL is not the same as Null, which, in database terminology, means "having no value").
 
-```
+```cpp
 BOOL IsFieldNullable(void* pv);
 ```
 
@@ -1500,7 +1500,7 @@ A field that cannot be Null must have a value. If you attempt to set such a fiel
 
 Call this member function to determine if the recordset is open.
 
-```
+```cpp
 BOOL IsOpen() const;
 ```
 
@@ -1602,7 +1602,7 @@ For related information, see the topic "Sort Property" in DAO Help.
 
 Call this member function to position the recordset *lRows* records from the current record.
 
-```
+```cpp
 virtual void Move(long lRows);
 ```
 
@@ -1744,7 +1744,7 @@ For related information, see the topics "Move Method" and "MoveFirst, MoveLast, 
 
 You must call this member function to retrieve the records for the recordset.
 
-```
+```cpp
 virtual void Open(
     int nOpenType = AFX_DAO_USE_DEFAULT_TYPE,
     LPCTSTR lpszSQL = NULL,
@@ -1867,7 +1867,7 @@ For related information, see the topic "OpenRecordset Method" in DAO Help.
 
 Call this member function to rebuild (refresh) a recordset.
 
-```
+```cpp
 virtual void Requery();
 ```
 
@@ -1897,7 +1897,7 @@ For related information, see the topic "Requery Method" in DAO Help.
 
 Call this member function to locate the record in an indexed table-type recordset object that satisfies the specified criteria for the current index and make that record the current record.
 
-```
+```cpp
 BOOL Seek(
     LPCTSTR lpszComparison,
     COleVariant* pKey1,
@@ -2167,7 +2167,7 @@ will set only `outputColumn` fields to NULL; **param** fields will be unaffected
 
 Call this member function to set the value of a field, either by ordinal position or by changing the value of the string.
 
-```
+```cpp
 virtual void SetFieldValue(
     LPCTSTR lpszName,
     const COleVariant& varValue);
@@ -2259,7 +2259,7 @@ When working with ODBC data sources, the locking mode is always optimistic.
 
 Call this member function to set the value of a parameter in the recordset at run time.
 
-```
+```cpp
 virtual void SetParamValue(
     int nIndex,
     const COleVariant& varValue);
@@ -2335,7 +2335,7 @@ For related information, see the topic "PercentPosition Property" in DAO Help.
 
 Call this member function after a call to the `AddNew` or `Edit` member function.
 
-```
+```cpp
 virtual void Update();
 ```
 

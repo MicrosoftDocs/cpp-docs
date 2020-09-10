@@ -12,15 +12,15 @@ You can define one or more parse trees in your registrar script, where each pars
 
 where:
 
-> \<root key> ::= HKEY_CLASSES_ROOT | HKEY_CURRENT_USER |\
-> &nbsp;&nbsp;&nbsp;&nbsp;HKEY_LOCAL_MACHINE | HKEY_USERS |\
-> &nbsp;&nbsp;&nbsp;&nbsp;HKEY_PERFORMANCE_DATA | HKEY_DYN_DATA |\
-> &nbsp;&nbsp;&nbsp;&nbsp;HKEY_CURRENT_CONFIG | HKCR | HKCU |\
-> &nbsp;&nbsp;&nbsp;&nbsp;HKLM | HKU | HKPD | HKDD | HKCC
+> \<root key> ::= HKEY_CLASSES_ROOT \| HKEY_CURRENT_USER \|\
+> &emsp;HKEY_LOCAL_MACHINE \| HKEY_USERS \|\
+> &emsp;HKEY_PERFORMANCE_DATA \| HKEY_DYN_DATA \|\
+> &emsp;HKEY_CURRENT_CONFIG \| HKCR \| HKCU \|\
+> &emsp;HKLM \| HKU \| HKPD \| HKDD \| HKCC
 
-> \<registry expression> ::= \<Add Key> | \<Delete Key>
+> \<registry expression> ::= \<Add Key> \| \<Delete Key>
 
-> \<Add Key> ::= [**ForceRemove** | **NoRemove** | **val**]\<Key Name> [\<Key Value>][{\<Add Key>}]
+> \<Add Key> ::= \[**ForceRemove** \| **NoRemove** \| **val**]\<Key Name> [\<Key Value>][{\<Add Key>}]
 
 > \<Delete Key> ::= **Delete**\<Key Name>
 
@@ -30,7 +30,7 @@ where:
 
 > \<Key Value> ::= \<Key Type>\<Key Name>
 
-> \<Key Type> ::= **s** | **d**
+> \<Key Type> ::= **s** \| **d**
 
 > \<Key Value> ::= **'**\<AlphaNumeric>**'**
 

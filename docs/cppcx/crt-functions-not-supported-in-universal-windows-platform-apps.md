@@ -12,7 +12,7 @@ The following table lists the CRT functions that are unavailable when you build 
 
 ## Unsupported CRT Functions
 
-|Function|Description|Workaround|
+| Function | Description | Workaround |
 |-|-|-|
 |`_beep` `_sleep` `_seterrormode`|These functions were obsolete in previous versions of the CRT. Also, the corresponding Win32 APIs are not available for UWP apps.|No workaround.|
 |`chdir` `_chdrive` `getcwd`|These functions are obsolete or are not thread-safe.|Use `_chdir`, `_getcwd` and related functions.|
@@ -32,7 +32,7 @@ The following table lists the CRT functions that are unavailable when you build 
 
 The following functions are available in the CRT for UWP apps. However, use them only when you can't use the corresponding Win32 or Windows Runtime APIs, such as when you're porting large code bases:
 
-|Functions|Workaround|
+| Functions | Workaround |
 |-|-|
 |Single-byte string functions—for example, `strcat`, `strcpy`, `strlwr`, and so on.|Make your UWP apps strictly Unicode because all Win32 APIs and Windows Runtime APIs that are exposed use Unicode character sets only.  Single-byte functions were left for porting large code bases, but should otherwise be avoided. The corresponding wide char functions should be used instead when possible.|
 |Stream IO and low-level file IO functions—for example, `fopen`, `open`, and so on.|These functions are synchronous, which isn't recommended for UWP apps. In your UWP apps, use asynchronous APIs to open, read from, and write to files to prevent locking of the UI thread. Examples of such APIs are the ones in the `Windows::Storage::FileIO` class.|
@@ -41,7 +41,7 @@ The following functions are available in the CRT for UWP apps. However, use them
 
 Both the previously mentioned APIs and the following APIs are unavailable in Windows 8.x Store apps and Windows Phone 8.x apps.
 
-|Functions|Description|Workaround|
+| Functions | Description | Workaround |
 |-|-|-|
 |`_beginthread` `_beginthreadex` `_endthread` `_endthreadex`|Threading Win32 APIs are not available in Windows 8.x Store apps.|Use the `Windows Runtime Windows::System::Threading::ThreadPool` or `concurrency::task` instead.|
 |`_chdir` `_wchdir` `_getcwd` `_getdcwd` `_wgetcwd` `_wgetdcwd`|The concept of a working directory doesn't apply to Windows 8.x Store apps.|Use full paths instead.|
