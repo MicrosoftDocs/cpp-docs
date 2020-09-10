@@ -408,7 +408,7 @@ To access the value of the key for the element, use `crIter->first`, which is eq
 
 See the example for [rend](#rend) for an example of how to declare and use `const_reverse_iterator`.
 
-## <a name="contains"></a> contains
+## <a name="contains"></a> multimap::contains
 
 Checks if there is an element the specified key in the `multimap` .
 
@@ -433,7 +433,7 @@ The element's key value to look for.
 
 `Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-`template<class K> [[nodiscard]] bool contains(const K& key) const;`only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+`template<class K> [[nodiscard]] bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
 
 ### Example
 

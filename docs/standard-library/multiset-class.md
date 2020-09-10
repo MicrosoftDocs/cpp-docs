@@ -375,7 +375,7 @@ A type `const_reverse_iterator` can't modify the value of an element and is used
 
 See the example for [rend](#rend) for an example of how to declare and use the `const_reverse_iterator`.
 
-## <a name="contains"></a> contains
+## <a name="contains"></a> multiset::contains
 
 Checks if there's an element the specified key in the `multiset` .
 
@@ -400,7 +400,7 @@ The element's key value to look for.
 
 `Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-`template<class K> [[nodiscard]] bool contains(const K& key) const;`only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+`template<class K> [[nodiscard]] bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
 
 ### Example
 

@@ -764,7 +764,7 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="contains"></a> contains
+## <a name="contains"></a> unordered_map::contains
 
 Checks if there is an element in the `unordered_map` with the specified key.
 Introduced in C++20.
@@ -790,7 +790,7 @@ The key value of the element to look for.
 
 `Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-`template<class K> [[nodiscard]] bool contains(const K& key) const;`only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+`template<class K> [[nodiscard]] bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
 
 ### Example
 
