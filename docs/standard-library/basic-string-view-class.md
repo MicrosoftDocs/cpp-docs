@@ -582,7 +582,7 @@ Returns a random-access const_iterator that points to one past the last element.
 
 ## <a name="ends_with"></a> basic_string_view::ends_with
 
-Checks whether the string view ends with the specified suffix.
+Check whether the string view ends with the specified suffix.
 
 ```cpp
 NODISCARD bool ends_with(const basic_string_view sv) const noexcept;
@@ -593,10 +593,10 @@ NODISCARD bool ends_with(const T* const x) const noexcept;
 ### Parameters
 
 *c*\
-Single character suffix.
+The single character suffix to look for.
 
 *sv*\
-A string view containing the suffix. Also accepts `std::basic_string`.
+A string view containing the suffix (you can pass a `std::basic_string` which is implicitly converted to a `basic_string_view`).
 
 *x*\
 Null-terminated character string containing the suffix.
@@ -633,7 +633,7 @@ true
 
 ## <a name="find"></a> basic_string_view::find
 
-Searches a string_view in a forward direction for the first occurrence of a character or substring that matches a specified sequence of character(s).
+Searches a `string_view` in a forward direction for the first occurrence of a character or substring that matches a specified sequence of character(s).
 
 ```cpp
 constexpr size_type find(basic_string_view str, size_type offset = 0) const noexcept;
@@ -645,7 +645,7 @@ constexpr size_type find(const charT* ptr, size_type offset = 0) const;
 ### Parameters
 
 *str*\
-The string_view for which the member function is to search.
+The `string_view` for which the member function is to search.
 
 *chVal*\
 The character value for which the member function is to search.
@@ -985,21 +985,21 @@ A string_view can modify its length, for example by `remove_prefix` and `remove_
 
 ## <a name="starts_with"></a> basic_string_view::starts_with
 
-Checks whether the string view starts with the specified prefix.
+Check whether the string view starts with the specified prefix.
 
 ```cpp
-NODISCARD bool starts_with(const basic_string_view sv) const noexcept;
 NODISCARD bool starts_with(const T c) const noexcept;
 NODISCARD bool starts_with(const T* const x) const noexcept;
+NODISCARD bool starts_with(const basic_string_view sv) const noexcept;
 ```
 
 ### Parameters
 
 *c*\
-Single character prefix.
+The single character prefix to look for.
 
 *sv*\
-A string view containing the prefix. Also accepts `std::basic_string`.
+A string view containing the prefix (you can pass a `std::basic_string` which is implicitly converted to a `basic_string_view`).
 
 *x*\
 Null-terminated character string containing the prefix.
