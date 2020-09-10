@@ -28,7 +28,7 @@ typedef struct TRACING_SESSION_OPTIONS_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `SystemEventFlags` | A bitmask describing the system events to capture. For more information, see [TRACING_SESSION_SYSTEM_EVENT_FLAGS](tracing-session-system-event-flags-constants.md). |
 | `MsvcEventFlags` | A bitmask describing the MSVC events to capture. For more information, see [TRACING_SESSION_MSVC_EVENT_FLAGS](tracing-session-msvc-event-flags-constants.md). |

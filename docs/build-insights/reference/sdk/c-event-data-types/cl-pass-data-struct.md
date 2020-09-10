@@ -29,7 +29,7 @@ typedef struct CL_PASS_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `TranslationUnitPassCode` | A code identifying the compilation pass being executed. For more information, see [TRANSLATION_UNIT_PASS_CODE](translation-unit-pass-code-enum.md). |
 | `InputSourcePath` | The C or C++ source file on which this compilation pass is being executed. |

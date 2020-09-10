@@ -1330,7 +1330,7 @@ Effect of specific methods on `IsBOF` and `IsEOF` settings:
 
 This table shows which Move operations are allowed with different combinations of `IsBOF`/ `IsEOF`.
 
-||MoveFirst, MoveLast|MovePrev,<br /><br /> Move < 0|Move 0|MoveNext,<br /><br /> Move > 0|
+|State|MoveFirst, MoveLast|MovePrev,<br /><br /> Move < 0|Move 0|MoveNext,<br /><br /> Move > 0|
 |------|-------------------------|-----------------------------|------------|-----------------------------|
 |`IsBOF`=nonzero,<br /><br /> `IsEOF`=0|Allowed|Exception|Exception|Allowed|
 |`IsBOF`=0,<br /><br /> `IsEOF`=nonzero|Allowed|Allowed|Exception|Exception|
@@ -1341,7 +1341,7 @@ Allowing a Move operation does not mean that the operation will successfully loc
 
 The effect of Move operations that do not locate a record on the value of `IsBOF` and `IsEOF` settings is shown in the following table.
 
-||IsBOF|IsEOF|
+|Operations|IsBOF|IsEOF|
 |------|-----------|-----------|
 |`MoveFirst`, `MoveLast`|Nonzero|Nonzero|
 |`Move` 0|No change|No change|
@@ -1403,7 +1403,7 @@ Effect of specific methods on `IsBOF` and `IsEOF` settings:
 
 This table shows which Move operations are allowed with different combinations of `IsBOF`/ `IsEOF`.
 
-||MoveFirst, MoveLast|MovePrev,<br /><br /> Move < 0|Move 0|MoveNext,<br /><br /> Move > 0|
+|State|MoveFirst, MoveLast|MovePrev,<br /><br /> Move < 0|Move 0|MoveNext,<br /><br /> Move > 0|
 |------|-------------------------|-----------------------------|------------|-----------------------------|
 |`IsBOF`=nonzero,<br /><br /> `IsEOF`=0|Allowed|Exception|Exception|Allowed|
 |`IsBOF`=0,<br /><br /> `IsEOF`=nonzero|Allowed|Allowed|Exception|Exception|
@@ -1414,7 +1414,7 @@ Allowing a Move operation does not mean that the operation will successfully loc
 
 The effect of Move operations that do not locate a record on the value of `IsBOF` and `IsEOF` settings is shown in the following table.
 
-||IsBOF|IsEOF|
+|Operations|IsBOF|IsEOF|
 |------|-----------|-----------|
 |`MoveFirst`, `MoveLast`|Nonzero|Nonzero|
 |`Move` 0|No change|No change|

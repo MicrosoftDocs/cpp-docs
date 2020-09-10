@@ -33,7 +33,7 @@ typedef struct RELOG_CALLBACKS_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `OnStartActivity` | Called to process an activity start event. |
 | `OnStopActivity` | Called to process an activity stop event. |

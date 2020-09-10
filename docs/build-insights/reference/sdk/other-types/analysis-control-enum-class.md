@@ -17,7 +17,7 @@ The `AnalysisControl` enum class is used control the flow of an analysis or relo
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `BLOCK` | Prevents the current event from propagating further in the analyzer or relogger group. |
 | `CANCEL` | Cancel the current analysis or relogging session. |
