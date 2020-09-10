@@ -717,7 +717,6 @@ Checks if there is an element the specified key in the `unordered_multiset` .
 
 ```cpp
 [[nodiscard]] bool contains(const K& key) const;
-
 template<class K> [[nodiscard]] bool contains(const K& key) const;
 ```
 
@@ -737,7 +736,7 @@ The element's key value to look for.
 
 `Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-`template<class Key> [[nodiscard]] bool contains(const Key& key) const;`only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+`template<class K> [[nodiscard]] bool contains(const K& key) const;`only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
 
 ### Example
 
@@ -752,7 +751,9 @@ int main()
 
     std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
     std::cout << theUnorderedMultiset.contains(1) << '\n';
-    std::cout << theUnorderedMultiset.contains(3) << '\n';
+    std::cout << theUnorderedMultiset.contains(4) << '\n';
+
+    return 0;
 }
 ```
 
