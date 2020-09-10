@@ -1,5 +1,6 @@
 ---
 title: "set Class"
+description: "API reference for the C++ Standard Library container class `set`, which is used to store and retrieve data from a collection."
 ms.date: "9/9/2020"
 f1_keywords: ["set/std::set", "set/std::set::allocator_type", "set/std::set::const_iterator", "set/std::set::const_pointer", "set/std::set::const_reference", "set/std::set::const_reverse_iterator", "set/std::set::difference_type", "set/std::set::iterator", "set/std::set::key_compare", "set/std::set::key_type", "set/std::set::pointer", "set/std::set::reference", "set/std::set::reverse_iterator", "set/std::set::size_type", "set/std::set::value_compare", "set/std::set::value_type", "set/std::set::begin", "set/std::set::cbegin", "set/std::set::cend", "set/std::set::clear", "set/std::set::contains", "set/std::set::count", "set/std::set::crbegin", "set/std::set::crend", "set/std::set::emplace", "set/std::set::emplace_hint", "set/std::set::empty", "set/std::set::end", "set/std::set::equal_range", "set/std::set::erase", "set/std::set::find", "set/std::set::get_allocator", "set/std::set::insert", "set/std::set::key_comp", "set/std::set::lower_bound", "set/std::set::max_size", "set/std::set::rbegin", "set/std::set::rend", "set/std::set::size", "set/std::set::swap", "set/std::set::upper_bound", "set/std::set::value_comp"]
 helpviewer_keywords: ["std::set [C++]", "std::set [C++], allocator_type", "std::set [C++], const_iterator", "std::set [C++], const_pointer", "std::set [C++], const_reference", "std::set [C++], const_reverse_iterator", "std::set [C++], difference_type", "std::set [C++], iterator", "std::set [C++], key_compare", "std::set [C++], key_type", "std::set [C++], pointer", "std::set [C++], reference", "std::set [C++], reverse_iterator", "std::set [C++], size_type", "std::set [C++], value_compare", "std::set [C++], value_type", "std::set [C++], begin", "std::set [C++], cbegin", "std::set [C++], cend", "std::set [C++], clear", "std::set [C++], contains", "std::set [C++], count", "std::set [C++], crbegin", "std::set [C++], crend", "std::set [C++], emplace", "std::set [C++], emplace_hint", "std::set [C++], empty", "std::set [C++], end", "std::set [C++], equal_range", "std::set [C++], erase", "std::set [C++], find", "std::set [C++], get_allocator", "std::set [C++], insert", "std::set [C++], key_comp", "std::set [C++], lower_bound", "std::set [C++], max_size", "std::set [C++], rbegin", "std::set [C++], rend", "std::set [C++], size", "std::set [C++], swap", "std::set [C++], upper_bound", "std::set [C++], value_comp"]
@@ -7,7 +8,7 @@ ms.assetid: 8991f9aa-5509-4440-adc1-371512d32018
 ---
 # set Class
 
-The C++ Standard Library container class set is used for the storage and retrieval of data from a collection in which the values of the elements contained are unique and serve as the key values according to which the data is automatically ordered. The value of an element in a set may not be changed directly. Instead, you must delete old values and insert elements with new values.
+The C++ Standard Library container class `set` is used to store and retrieve data from a collection. The values of the elements in the `set` are unique and serve as the key values according to which the data is automatically ordered. The value of an element in a `set` may not be changed directly. Instead, you must delete old values and insert elements with new values.
 
 ## Syntax
 
@@ -380,9 +381,14 @@ Checks if there's an element the specified key in the `set`.
 
 ```cpp
 [[nodiscard]] bool contains(const K& key) const;
+
+template<class K> [[nodiscard]] bool contains(const K& key) const;
 ```
 
 ### Parameters
+
+*K*\
+The type of the key.
 
 *key*\
 The element's key value to look for.
@@ -395,6 +401,8 @@ The element's key value to look for.
 
 `Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
+`template<class Key> [[nodiscard]] bool contains(const Key& key) const;`only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+
 ### Example
 
 ```cpp
@@ -406,8 +414,9 @@ int main()
 {
     std::set<int> theSet = {1, 2};
 
-    std::cout << std::boolalpha << theSet.contains(2) << '\n';
-    std::cout << std::boolalpha << theSet.contains(3) << '\n';
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theSet.contains(2) << '\n';
+    std::cout << theSet.contains(3) << '\n';
 }
 ```
 

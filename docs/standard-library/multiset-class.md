@@ -48,13 +48,13 @@ The C++ Standard Library `multiset` class is:
 
 The iterator provided by the `multiset` class is a bidirectional iterator, but the class member functions [insert](#insert) and [multiset](#multiset) have versions that take as template parameters a weaker input iterator, whose functionality requirements are more minimal than those guaranteed by the class of bidirectional iterators. The different iterator concepts form a family related by refinements in their functionality. Each iterator concept has its own set of requirements and the algorithms that work with them must limit their assumptions to the requirements provided by that type of iterator. It may be assumed that an input iterator may be dereferenced to refer to some object and that it may be incremented to the next iterator in the sequence. This is a minimal set of functionality, but it is enough to be able to talk meaningfully about a range of iterators [ `First`, `Last`) in the context of the class's member functions.
 
-The choice of container type should be based in general on the type of searching and inserting required by the application. Associative containers are optimized for the operations of lookup, insertion and removal. The member functions that explicitly support these operations are efficient, performing them in a time that is on average proportional to the logarithm of the number of elements in the container. Inserting elements invalidates no iterators, and removing elements invalidates only those iterators that had specifically pointed at the removed elements.
+The choice of container type should be based in general on the type of searching and inserting required by the application. Associative containers are optimized for the operations of lookup, insertion and removal. The member functions that explicitly support these operations are efficient, performing them in a time that is on average proportional to the logarithm of the number of elements in the container. Inserting elements invalidates no iterators, and removing elements invalidates only those iterators that had pointed at the removed elements.
 
 The `multiset` should be the associative container of choice when the conditions associating the values with their keys are satisfies by the application. The elements of a `multiset` may be multiple and serve as their own sort keys, so keys are not unique. A model for this type of structure is an ordered list of, say, words in which the words may occur more than once. Had multiple occurrences of the words not been allowed, then a set would have been the appropriate container structure. If unique definitions were attached as values to the list of unique key words, then a map would be an appropriate structure to contain this data. If instead the definitions were not unique, then a multimap would be the container of choice.
 
-The `multiset` orders the sequence it controls by calling a stored function object of type *Compare*. This stored object is a comparison function that may be accessed by calling the member function [key_comp](#key_comp). In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*( *x*, *y*) is a function object that has two argument objects *x* and *y* and a return value of **`true`** or **`false`**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects x and y are defined to be equivalent when both *f*( *x,y*) and *f*( *y,x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
+The `multiset` orders the sequence it controls by calling a stored function object of type *Compare*. This stored object is a comparison function that may be accessed by calling the member function [key_comp](#key_comp). In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate *f*(*x*, *y*) is a function object that has two argument objects *x* and *y* and a return value of **`true`** or **`false`**. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects x and y are defined to be equivalent when both *f*(*x,y*) and *f*(*y,x*) are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
 
-In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
+In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
 ### Constructors
 
@@ -381,9 +381,14 @@ Checks if there is an element the specified key in the `multiset` .
 
 ```cpp
 [[nodiscard]] bool contains(const K& key) const;
+
+template<class K> [[nodiscard]] bool contains(const K& key) const;
 ```
 
 ### Parameters
+
+*K*\
+The type of the key.
 
 *key*\
 The element's key value to look for.
@@ -396,6 +401,8 @@ The element's key value to look for.
 
 `Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
+`template<class Key> [[nodiscard]] bool contains(const Key& key) const;`only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+
 ### Example
 
 ```cpp
@@ -407,8 +414,9 @@ int main()
 {
     std::multiset<int> theMultiSet = {1, 2};
 
-    std::cout << std::boolalpha << theMultiSet.contains(2) << '\n';
-    std::cout << std::boolalpha << theMultiSet.contains(3) << '\n';
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theMultiSet.contains(2) << '\n';
+    std::cout << theMultiSet.contains(3) << '\n';
 }
 ```
 
@@ -1557,9 +1565,9 @@ All constructors store a function object of type Compare that is used to establi
 
 The first three constructors specify an empty initial multiset, the second specifying the type of comparison function (*Comp*) to be used in establishing the order of the elements and the third explicitly specifying the allocator type (*Al*) to be used. The keyword **`explicit`** suppresses certain kinds of automatic type conversion.
 
-The 4th constructor specifies a copy of the multiset *Right*.
+The fourth constructor specifies a copy of the multiset *Right*.
 
-The 5th constructor specifies a copy of the multiset by moving *Right*.
+The fifth constructor specifies a copy of the multiset by moving *Right*.
 
 The 6th, 7th, and 8th constructors specify an initializer_list from which to copy the elements.
 

@@ -1,5 +1,6 @@
 ---
 title: "unordered_multimap Class"
+description: "API overview for the C++ Standard Library container class `multimap`."
 ms.date: "9/9/2020"
 f1_keywords: ["unordered_map/std::unordered_multimap", "unordered_map/std::unordered_multimap::allocator_type", "unordered_map/std::unordered_multimap::const_iterator", "unordered_map/std::unordered_multimap::const_local_iterator", "unordered_map/std::unordered_multimap::const_pointer", "unordered_map/std::unordered_multimap::const_reference", "unordered_map/std::unordered_multimap::difference_type", "unordered_map/std::unordered_multimap::hasher", "unordered_map/std::unordered_multimap::iterator", "unordered_map/std::unordered_multimap::key_equal", "unordered_map/std::unordered_multimap::key_type", "unordered_map/std::unordered_multimap::local_iterator", "unordered_map/std::unordered_multimap::mapped_type", "unordered_map/std::unordered_multimap::pointer", "unordered_map/std::unordered_multimap::reference", "unordered_map/std::unordered_multimap::size_type", "unordered_map/std::unordered_multimap::value_type", "unordered_map/std::unordered_multimap::begin", "unordered_map/std::unordered_multimap::bucket", "unordered_map/std::unordered_multimap::bucket_count", "unordered_map/std::unordered_multimap::bucket_size", "unordered_map/std::unordered_multimap::cbegin", "unordered_map/std::unordered_multimap::cend", "unordered_map/std::unordered_multimap::clear",
 "unordered_map/std::unordered_multimap::contains",  "unordered_map/std::unordered_multimap::count", "unordered_map/std::unordered_multimap::emplace", "unordered_map/std::unordered_multimap::emplace_hint", "unordered_map/std::unordered_multimap::empty", "unordered_map/std::unordered_multimap::end", "unordered_map/std::unordered_multimap::equal_range", "unordered_map/std::unordered_multimap::erase", "unordered_map/std::unordered_multimap::find", "unordered_map/std::unordered_multimap::get_allocator", "unordered_map/std::unordered_multimap::hash", "unordered_map/std::unordered_multimap::insert", "unordered_map/std::unordered_multimap::key_eq", "unordered_map/std::unordered_multimap::load_factor", "unordered_map/std::unordered_multimap::max_bucket_count", "unordered_map/std::unordered_multimap::max_load_factor", "unordered_map/std::unordered_multimap::max_size", "unordered_map/std::unordered_multimap::rehash", "unordered_map/std::unordered_multimap::size", "unordered_map/std::unordered_multimap::swap", "unordered_map/std::unordered_multimap::unordered_multimap", "unordered_map/std::unordered_multimap::operator=", "unordered_map/std::unordered_multimap::hash_function"]
@@ -725,9 +726,14 @@ Checks if there is an element the specified key in the `unordered_multimap`.
 
 ```cpp
 [[nodiscard]] bool contains(const K& key) const;
+
+template<class K> [[nodiscard]] bool contains(const K& key) const;
 ```
 
 ### Parameters
+
+*K*\
+The type of the key.
 
 *key*\
 The element's key value to look for.
@@ -740,6 +746,8 @@ The element's key value to look for.
 
 `Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
+`template<class Key> [[nodiscard]] bool contains(const Key& key) const;`only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+
 ### Example
 
 ```cpp
@@ -751,8 +759,11 @@ int main()
 {
     std::unordered_multimap<int, bool> theUnorderedMultimap = {{0, false}, {1,true}};
 
-    std::cout << std::boolalpha << theUnorderedMultimap.contains(1) << '\n';
-    std::cout << std::boolalpha << theUnorderedMultimap.contains(2) << '\n';
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theUnorderedMultimap.contains(1) << '\n';
+    std::cout << theUnorderedMultimap.contains(2) << '\n';
+
+    return 0;
 }
 ```
 

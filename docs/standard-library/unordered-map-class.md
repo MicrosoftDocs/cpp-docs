@@ -770,9 +770,14 @@ Introduced in C++20.
 
 ```cpp
 [[nodiscard]] bool contains(const key_type& key) const;
+
+template<class K> [[nodiscard]] bool contains(const K& key) const;
 ```
 
 ### Parameters
+
+*K*\
+The type of the key.
 
 *key*\
 The key value of the element to look for.
@@ -785,6 +790,8 @@ The key value of the element to look for.
 
 `Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
+`template<class Key> [[nodiscard]] bool contains(const Key& key) const;`only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+
 ### Example
 
 ```cpp
@@ -796,8 +803,9 @@ int main()
 {
     std::unordered_map<int, bool> theUnorderedMap = {{0, false}, {1,true}};
 
-    std::cout << std::boolalpha << theUnorderedMap.contains(1) << '\n';
-    std::cout << std::boolalpha << theUnorderedMap.contains(2) << '\n';
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theUnorderedMap.contains(1) << '\n';
+    std::cout << theUnorderedMap.contains(2) << '\n';
 }
 ```
 

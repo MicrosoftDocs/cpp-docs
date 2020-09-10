@@ -1,5 +1,6 @@
 ---
 title: "unordered_set Class"
+description: "API reference for the C++ Standard Library container class `unordered_set`, which is used to store and retrieve data from an unordered collection."
 ms.date: "9/9/2020"
 f1_keywords: ["unordered_set/std::unordered_set", "unordered_set/std::unordered_set::allocator_type", "unordered_set/std::unordered_set::const_iterator", "unordered_set/std::unordered_set::const_local_iterator", "unordered_set/std::unordered_set::const_pointer", "unordered_set/std::unordered_set::const_reference", "unordered_set/std::unordered_set::difference_type", "unordered_set/std::unordered_set::hasher", "unordered_set/std::unordered_set::iterator", "unordered_set/std::unordered_set::key_equal", "unordered_set/std::unordered_set::key_type", "unordered_set/std::unordered_set::local_iterator", "unordered_set/std::unordered_set::pointer", "unordered_set/std::unordered_set::reference", "unordered_set/std::unordered_set::size_type", "unordered_set/std::unordered_set::value_type", "unordered_set/std::unordered_set::begin", "unordered_set/std::unordered_set::bucket", "unordered_set/std::unordered_set::bucket_count", "unordered_set/std::unordered_set::bucket_size", "unordered_set/std::unordered_set::cbegin", "unordered_set/std::unordered_set::cend", "unordered_set/std::unordered_set::clear", "unordered_set/std::unordered_set::count", "unordered_set/std::unordered_set::contains", "unordered_set/std::unordered_set::emplace", "unordered_set/std::unordered_set::emplace_hint", "unordered_set/std::unordered_set::empty", "unordered_set/std::unordered_set::end", "unordered_set/std::unordered_set::equal_range", "unordered_set/std::unordered_set::erase", "unordered_set/std::unordered_set::find", "unordered_set/std::unordered_set::get_allocator", "unordered_set/std::unordered_set::hash", "unordered_set/std::unordered_set::insert", "unordered_set/std::unordered_set::key_eq", "unordered_set/std::unordered_set::load_factor", "unordered_set/std::unordered_set::max_bucket_count", "unordered_set/std::unordered_set::max_load_factor", "unordered_set/std::unordered_set::max_size", "unordered_set/std::unordered_set::rehash", "unordered_set/std::unordered_set::size", "unordered_set/std::unordered_set::swap", "unordered_set/std::unordered_set::unordered_set", "unordered_set/std::unordered_set::operator=", "unordered_set/std::unordered_set::hash_function"]
 helpviewer_keywords: ["std::unordered_set", "std::unordered_set::allocator_type", "std::unordered_set::const_iterator", "std::unordered_set::const_local_iterator", "std::unordered_set::const_pointer", "std::unordered_set::const_reference", "std::unordered_set::difference_type", "std::unordered_set::hasher", "std::unordered_set::iterator", "std::unordered_set::key_equal", "std::unordered_set::key_type", "std::unordered_set::local_iterator", "std::unordered_set::pointer", "std::unordered_set::reference", "std::unordered_set::size_type", "std::unordered_set::value_type", "std::unordered_set::begin", "std::unordered_set::bucket", "std::unordered_set::bucket_count", "std::unordered_set::bucket_size", "std::unordered_set::cbegin", "std::unordered_set::cend", "std::unordered_set::clear", "std::unordered_set::contains", "std::unordered_set::count", "std::unordered_set::emplace", "std::unordered_set::emplace_hint", "std::unordered_set::empty", "std::unordered_set::end", "std::unordered_set::equal_range", "std::unordered_set::erase", "std::unordered_set::find", "std::unordered_set::get_allocator", "std::unordered_set::hash", "std::unordered_set::insert", "std::unordered_set::key_eq", "std::unordered_set::load_factor", "std::unordered_set::max_bucket_count", "std::unordered_set::max_load_factor", "std::unordered_set::max_size", "std::unordered_set::rehash", "std::unordered_set::size", "std::unordered_set::swap", "std::unordered_set::unordered_set", "std::unordered_set::operator=", "std::unordered_set::allocator_type", "std::unordered_set::const_iterator", "std::unordered_set::const_local_iterator", "std::unordered_set::const_pointer", "std::unordered_set::const_reference", "std::unordered_set::difference_type", "std::unordered_set::hasher", "std::unordered_set::iterator", "std::unordered_set::key_equal", "std::unordered_set::key_type", "std::unordered_set::local_iterator", "std::unordered_set::pointer", "std::unordered_set::reference", "std::unordered_set::size_type", "std::unordered_set::value_type", "std::unordered_set::begin", "std::unordered_set::bucket", "std::unordered_set::bucket_count", "std::unordered_set::bucket_size", "std::unordered_set::cbegin", "std::unordered_set::cend", "std::unordered_set::clear", "std::unordered_set::count", "std::unordered_set::emplace", "std::unordered_set::emplace_hint", "std::unordered_set::empty", "std::unordered_set::end", "std::unordered_set::equal_range", "std::unordered_set::erase", "std::unordered_set::find", "std::unordered_set::get_allocator", "std::unordered_set::hash_function", "std::unordered_set::insert", "std::unordered_set::key_eq", "std::unordered_set::load_factor", "std::unordered_set::max_bucket_count", "std::unordered_set::max_load_factor", "std::unordered_set::max_size", "std::unordered_set::rehash", "std::unordered_set::size", "std::unordered_set::swap"]
@@ -720,9 +721,14 @@ Checks if there is an element the specified key in the `unordered_set`.
 
 ```cpp
 [[nodiscard]] bool contains(const K& key) const;
+
+template<class K> [[nodiscard]] bool contains(const K& key) const;
 ```
 
 ### Parameters
+
+*K*\
+The type of the key.
 
 *key*\
 The element's key value to look for.
@@ -735,6 +741,8 @@ The element's key value to look for.
 
 `Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
+`template<class Key> [[nodiscard]] bool contains(const Key& key) const;`only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+
 ### Example
 
 ```cpp
@@ -746,8 +754,11 @@ int main()
 {
     std::unordered_set<int> theUnorderedSet = { 1, 2 };
 
-    std::cout << std::boolalpha << theUnorderedSet.contains(2) << '\n';
-    std::cout << std::boolalpha << theUnorderedSet.contains(3) << '\n';
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theUnorderedSet.contains(2) << '\n';
+    std::cout << theUnorderedSet.contains(3) << '\n';
+    
+    return 0;
 }
 ```
 

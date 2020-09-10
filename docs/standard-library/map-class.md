@@ -534,9 +534,14 @@ Checks if there's an element the specified key in the `map`.
 
 ```cpp
 [[nodiscard]] bool contains(const K& key) const;
+
+template<class K> [[nodiscard]] bool contains(const K& key) const;
 ```
 
 ### Parameters
+
+*K*\
+The type of the key.
 
 *key*\
 The element's key value to look for.
@@ -549,6 +554,8 @@ The element's key value to look for.
 
 `Contains()` is new in C++20. To use it, specify the [std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
+`template<class Key> [[nodiscard]] bool contains(const Key& key) const;`only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) for more information.
+
 ### Example
 
 ```cpp
@@ -558,15 +565,24 @@ The element's key value to look for.
 
 int main()
 {
-    std::map<int, bool> theMap = {{0, true},{1, false}};
-    std::cout << std::boolalpha << theMap.contains(1) << '\n';
-    std::cout << std::boolalpha << theMap.contains(2) << '\n';
+    std::map<int, bool> m = {{0, true},{1, false}};
+
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << m.contains(1) << '\n';
+    std::cout << m.contains(2) << '\n';
+
+    // call template function
+    std::map<std::string, int, std::less<>> m2 = {{"ten", 10}, {"twenty", 20}, {"thirty", 30}};
+    std::cout << m2.contains("ten");
+    
+    return 0;
 }
 ```
 
 ```Output
 true
 false
+true
 ```
 
 ## <a name="crbegin"></a> crbegin
@@ -1770,9 +1786,9 @@ All constructors store a function object of type Traits that is used to establis
 
 The first three constructors specify an empty initial map, the second specifying the type of comparison function (*Comp*) to be used in establishing the order of the elements and the third explicitly specifying the allocator type (*Al*) to be used. The key word **`explicit`** suppresses certain kinds of automatic type conversion.
 
-The 4th constructor specifies a copy of the map *Right*.
+The fourth constructor specifies a copy of the map *Right*.
 
-The 5th constructor specifies a copy of the map by moving *Right*.
+The fifth constructor specifies a copy of the map by moving *Right*.
 
 The 6th, 7th, and 8th constructors use an initializer_list from which to copy the members.
 
