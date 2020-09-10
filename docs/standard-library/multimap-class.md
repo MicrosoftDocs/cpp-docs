@@ -408,7 +408,7 @@ See the example for [rend](#rend) for an example of how to declare and use `cons
 
 ## <a name="contains"></a> multimap::contains
 
-Checks if there is an element with the specified key in the `multimap` .
+Check if there is an element with the specified key in the `multimap`.
 
 ```cpp
 bool contains(const Key& key) const;
@@ -438,7 +438,9 @@ The element's key value to look for.
 ```cpp
 // Requires /std:c++latest
 #include <map>
+#include <string>
 #include <iostream>
+#include <functional>
 
 int main()
 {

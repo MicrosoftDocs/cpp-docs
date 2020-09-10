@@ -377,7 +377,7 @@ See the example for [rend](#rend) for an example of how to declare and use the `
 
 ## <a name="contains"></a> contains
 
-Checks if there's an element with the specified key in the `set`.
+Check if there's an element with the specified key in the `set`.
 
 ```cpp
 bool contains(const Key& key) const;
