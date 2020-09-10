@@ -1,7 +1,7 @@
 ---
-title: "MSVC experimental preprocessor overview"
+title: "MSVC new preprocessor overview"
 description: "The MSVC preprocessor is being updated for conformance with C/C++ standards."
-ms.date: "02/09/2020"
+ms.date: 09/10/2020
 helpviewer_keywords: ["preprocessor, experimental"]
 ---
 # MSVC experimental preprocessor overview
@@ -16,13 +16,11 @@ Visual Studio 2015 uses the traditional preprocessor, which doesn't conform with
 
 We're updating the Microsoft C++ preprocessor to improve standards conformance, fix longstanding bugs, and change some behaviors that are officially undefined. We've also added new diagnostics to warn on errors in macro definitions.
 
-These changes are available by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch in Visual Studio 2017 or Visual Studio 2019. The default preprocessor behavior remains the same as in previous versions.
-
-Starting in Visual Studio 2019 version 16.5, experimental preprocessor support for the C++20 standard is feature-complete.
+Starting in Visual Studio 2019 version 16.5, preprocessor support for the C++20 standard is feature-complete. These changes are available starting in Visual Studio 2019 version 16.5 by using the [/Zc:preprocessor](../build/reference/zc-preprocessor.md) compiler switch. An experimental version is available in earlier versions starting in Visual Studio 2017 version 15.8 by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch. The default preprocessor behavior remains the same as in previous versions.
 
 ## New predefined macro
 
-You can detect which preprocessor is in use at compile time. Check the value of the predefined macro [\_MSVC\_TRADITIONAL](predefined-macros.md) to tell if the traditional preprocessor is in use. This macro is set unconditionally by versions of the compiler that support it, independent of which preprocessor is invoked. Its value is 1 for the traditional preprocessor. It's 0 for the conforming preprocessor.
+You can detect which preprocessor is in use at compile time. Check the value of the predefined macro [`_MSVC_TRADITIONAL`](predefined-macros.md) to tell if the traditional preprocessor is in use. This macro is set unconditionally by versions of the compiler that support it, independent of which preprocessor is invoked. Its value is 1 for the traditional preprocessor. It's 0 for the conforming preprocessor.
 
 ```cpp
 #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
@@ -238,9 +236,9 @@ DO_THING_FIXED(1, "World");
 // do_thing_one( "Hello", "World");
 ```
 
-## Incomplete features
+## Incomplete features before 16.5
 
-Starting in Visual Studio 2019 version 16.5, the experimental preprocessor is feature-complete for C++20. In previous versions of Visual Studio, the experimental preprocessor is mostly complete, although some preprocessor directive logic still falls back to the traditional behavior. Here's a partial list of incomplete features in Visual Studio versions before 16.5:
+Starting in Visual Studio 2019 version 16.5, the new preprocessor is feature-complete for C++20. In previous versions of Visual Studio, the experimental preprocessor is mostly complete, although some preprocessor directive logic still falls back to the traditional behavior. Here's a partial list of incomplete features in Visual Studio versions before 16.5:
 
 - Support for `_Pragma`
 - C++20 features
