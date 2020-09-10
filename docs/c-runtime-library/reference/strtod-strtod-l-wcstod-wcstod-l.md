@@ -1,6 +1,6 @@
 ---
 title: "strtod, _strtod_l, wcstod, _wcstod_l"
-description: "API reference for strtod, _strtod_l, wcstod, _wcstod_l, which convert strings to a double-precision value."
+description: "API reference for strtod, _strtod_l, wcstod, and _wcstod_l; which convert strings to a double-precision value."
 ms.date: "08/27/2020"
 api_name: ["wcstod", "_wcstod_l", "_strtod_l", "strtod", "_o__strtod_l", "_o__wcstod_l", "_o_strtod", "_o_wcstod"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
@@ -72,7 +72,7 @@ By default, this function's global state is scoped to the application. To change
 |**_tcstod**|**strtod**|**strtod**|**wcstod**|
 |**_tcstod_l**|**_strtod_l**|**_strtod_l**|**_wcstod_l**|
 
-The **LC_NUMERIC** category setting of the current locale determines recognition of the radix point character in *strSource*. For more information, see [setlocale](setlocale-wsetlocale.md). The functions without the **_l** suffix use the current locale; **_strtod_l** is identical to **_strtod_l** except they use the *locale* passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The **LC_NUMERIC** category setting of the current locale determines recognition of the radix point character in *strSource*. For more information, see [setlocale](setlocale-wsetlocale.md). The functions without the **_l** suffix use the current locale; **_strtod_l** is identical to **_strtod** except the former uses the *locale* passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 If *endptr* isn't **NULL**, a pointer to the character that stopped the scan is stored at the location pointed to by *endptr*. If no conversion can be performed (no valid digits were found or an invalid base was specified), the value of *strSource* is stored at the location pointed to by *endptr*.
 

@@ -426,7 +426,7 @@ The compiler option [`/Zc:noexceptTypes`](../build/reference/zc-noexcepttypes.md
 
 <a name="note_B"></a> __B__ Supported in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode in Visual Studio 2017 version 15.7. For more information, see [Two-phase name lookup support comes to MSVC](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/).
 
-<a name="note_C"></a> __C__ The compiler's support for C99 Preprocessor rules is incomplete in Visual Studio 2017. We're overhauling the preprocessor, and began shipping those changes in Visual Studio 2017 version 15.8 with the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch.
+<a name="note_C"></a> __C__ Starting in Visual Studio 2017 version 15.8, the compiler provides support for the C99 preprocessor via the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch. Starting in Visual Studio 2019 version 16.6, the compiler fully implements the C99 preprocessor via the [`/Zc:preprocessor`](../build/reference/zc-conformance.md) switch. It is on by default when the compiler switch `std:/c11` or `std:/c17` is specified.
 
 <a name="note_D"></a> __D__ Supported under [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) with a suppressible warning, [`C4984`](../error-messages/compiler-warnings/compiler-warning-c4984.md).
 
