@@ -46,7 +46,7 @@ typedef struct EVENT_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `EventId` | A number that identifies the event. For a list of event identifiers, see [EVENT_ID](event-id-enum.md). |
 | `EventInstanceId` | A number that uniquely identifies the current event inside a trace. This value doesn't change when analyzing or relogging the same trace multiple times. Use this field to identify the same event in multiple analysis or relogging passes over the same trace. |

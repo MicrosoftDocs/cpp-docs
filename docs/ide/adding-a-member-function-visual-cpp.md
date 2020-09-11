@@ -33,12 +33,25 @@ Once you've added the member function using the wizard, you can edit the code in
 
   Sets the return type for the member function you're adding. You can provide your own return type, or you can select from the list of available types. For information about the types, see [Fundamental types](../cpp/fundamental-types-cpp.md).
 
-  | | | |
-  |---|---|---|
-  | **`char`** | **`int`** | **`unsigned int`** |
-  | **`double`** | **`long`** | **`unsigned long`** |
-  | **`float`** | **`short`** | **`void`** |
-  | `HRESULT` | **`unsigned char`** | |
+:::row:::
+   :::column span="":::
+      **`char`**\
+      **`double`**\
+      **`float`**\
+      **`int`**
+   :::column-end:::
+   :::column span="":::
+      **`long`**\
+      **`short`**\
+      **`unsigned char`**\
+      **`unsigned int`**
+   :::column-end:::
+   :::column span="":::
+      **`unsigned long`**\
+      **`void`**\
+      `HRESULT`
+   :::column-end:::
+:::row-end:::
 
 - **Function name**
 
@@ -48,11 +61,23 @@ Once you've added the member function using the wizard, you can edit the code in
 
   Sets the type of parameter you're adding for the member function, if the member function has parameters. You can provide your own parameter type, or you can select from the list of available types.
 
-  | | | |
-  |---|---|---|
-  | **`char`** | **`int`** | **`unsigned char`** |
-  | **`double`** | **`long`** | **`unsigned int`** |
-  | **`float`** | **`short`** | **`unsigned long`** |
+:::row:::
+   :::column span="":::
+      **`char`**\
+      **`double`**\
+      **`float`**
+   :::column-end:::
+   :::column span="":::
+      **`int`**\
+      **`long`**\
+      **`short`**
+   :::column-end:::
+   :::column span="":::
+      **`unsigned char`**\
+      **`unsigned int`**\
+      **`unsigned long`**
+   :::column-end:::
+:::row-end:::
 
 - **Parameter name**
 

@@ -52,9 +52,9 @@ The **bsearch** function performs a binary search of a sorted array of *number* 
 
 |Value returned by *compare* routine|Description|
 |-----------------------------------------|-----------------|
-|\< 0|Key is less than array element.|
-|0|Key is equal to array element.|
-|> 0|Key is greater than array element.|
+|`< 0`|Key is less than array element.|
+|`0`|Key is equal to array element.|
+|`> 0`|Key is greater than array element.|
 
 This function validates its parameters. If *compare*, *key* or *number* is **NULL**, or if *base* is **NULL** and *number* is nonzero, or if *width* is zero, the function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **errno** is set to `EINVAL` and the function returns **NULL**.
 

@@ -37,7 +37,7 @@ enum class copy_options {
 
 ### Values
 
-|`Name`|Description|
+| Name | Description |
 |------------|-----------------|
 |`none`|Perform the default behavior for the operation.|
 |`skip_existing`|Do not copy if the file already exists, do not report an error.|

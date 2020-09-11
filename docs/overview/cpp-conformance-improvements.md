@@ -738,7 +738,7 @@ int main() {
 
 ### Preprocessor output preserves newlines
 
-The experimental preprocessor now preserves newlines and whitespace when using **`/P`** or **`/E`** with **`/experimental:preprocessor`**. This change can be disabled by using **`/d1experimental:preprocessor:oldWhitespace`**.
+The experimental preprocessor now preserves newlines and whitespace when using **`/P`** or **`/E`** with **`/experimental:preprocessor`**.
 
 Given this example source,
 

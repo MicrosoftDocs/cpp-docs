@@ -141,7 +141,7 @@ _declspec(align(4)) struct {
 }
 ```
 
-![AMD conversion example 2 structure layout](../build/media/vcamd_conv_ex_3_block.png "AMD conversion example 2 structure layout")
+![AMD conversion example 3 structure layout](../build/media/vcamd_conv_ex_3_block.png "AMD conversion example 3 structure layout")
 
 #### Example 4
 
@@ -155,7 +155,7 @@ _declspec(align(8)) union {
 }
 ```
 
-![AMD conversion example 4 union layouit](../build/media/vcamd_conv_ex_4_block.png "AMD conversion example 4 union layouit")
+![AMD conversion example 4 union layout](../build/media/vcamd_conv_ex_4_block.png "AMD conversion example 4 union layout")
 
 ### Bitfields
 
