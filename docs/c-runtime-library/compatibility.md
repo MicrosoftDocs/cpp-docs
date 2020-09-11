@@ -1,13 +1,13 @@
 ---
 title: "Compatibility"
-description: "Describes the compatibility of the Microsoft Universal C runtime library (UCRT) with the Standard C library, POSIX, the Safe CRT, and Store apps."
+description: "Describes the compatibility of the Microsoft Universal C run-time library (UCRT) with the Standard C library, POSIX, the Safe CRT, and Store apps."
 ms.date: "12/06/2019"
 helpviewer_keywords: ["CRT, compatibility", "compatibility, C run-time libraries", "compatibility"]
 ms.assetid: 346709cb-edda-4909-9a19-3d253eddb6b7
 ---
 # Compatibility
 
-The Universal C Run-Time Library (UCRT) supports most of the C standard library required for  C++ conformance. It implements the C99 (ISO/IEC 9899:1999) library, with certain exceptions: strict type compatibility in \<complex.h>. The UCRT also implements a large subset of the POSIX.1 (ISO/IEC 9945-1:1996, the POSIX System Application Program Interface) C library. However, it's not fully conformant to any specific POSIX standard. The UCRT also implements several Microsoft-specific functions and macros that aren't part of a standard.
+The Universal C Runtime Library (UCRT) supports most of the C standard library required for C++ conformance. It implements the C99 (ISO/IEC 9899:1999) library, with certain exceptions: strict type compatibility in \<complex.h>. The UCRT also implements a large subset of the POSIX.1 (ISO/IEC 9945-1:1996, the POSIX System Application Program Interface) C library. However, it's not fully conformant to any specific POSIX standard. The UCRT also implements several Microsoft-specific functions and macros that aren't part of a standard.
 
 Functions specific to the Microsoft implementation of Visual C++ are found in the vcruntime library.  Many of these functions are for internal use and can't be called by user code. Some are documented for use in debugging and implementation compatibility.
 
@@ -21,7 +21,7 @@ Except as noted within the documentation for specific functions, the UCRT is com
 
 |Title|Description|
 |-----------|-----------------|
-|[UWP Apps, the Windows Runtime, and the C Run-Time](../c-runtime-library/windows-store-apps-the-windows-runtime-and-the-c-run-time.md)|Describes when UCRT routines aren't compatible with Universal Windows apps or Microsoft Store apps.|
+|[UWP Apps, the Windows Runtime, and the C runtime](../c-runtime-library/windows-store-apps-the-windows-runtime-and-the-c-run-time.md)|Describes when UCRT routines aren't compatible with Universal Windows apps or Microsoft Store apps.|
 |[ANSI C Compliance](../c-runtime-library/ansi-c-compliance.md)|Describes standard-compliant naming in the UCRT.|
 |[UNIX](../c-runtime-library/unix.md)|Provides guidelines for porting programs to UNIX.|
 |[Windows Platforms (CRT)](../c-runtime-library/windows-platforms-crt.md)|Lists the operating systems that are the CRT supports.|
