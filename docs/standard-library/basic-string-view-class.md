@@ -583,9 +583,9 @@ Returns a random-access const_iterator that points to one past the last element.
 Check whether the string view ends with the specified suffix.
 
 ```cpp
-bool ends_with(const basic_string_view sv) const noexcept;
 bool ends_with(const CharType c) const noexcept;
 bool ends_with(const CharType* const x) const noexcept;
+bool ends_with(const basic_string_view sv) const noexcept;
 ```
 
 ### Parameters
