@@ -1,7 +1,8 @@
 ---
 title: "Walkthrough: Compile a C program on the command line"
+description: "Walkthrough that shows how to create a simple Hello World style C program."
 ms.custom: "conceptual"
-ms.date: "04/25/2019"
+ms.date: "9/10/2020"
 helpviewer_keywords: ["command-line applications [C++], C programs", "Visual C, compiling", "compiling programs [C++]", "C program compiling [C++]"]
 ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
 ---
@@ -168,9 +169,9 @@ The compiler, cl.exe, has many more options you can apply to build, optimize, de
 
 You can use NMAKE and makefiles, or MSBuild and project files to configure and build more complex projects on the command line. For more information on using these tools, see [NMAKE Reference](reference/nmake-reference.md) and [MSBuild](msbuild-visual-cpp.md).
 
-The C and C++ languages are similar, but not the same. The Microsoft C/C++ compiler (MSVC) uses a simple rule to determine which language to use when it compiles your code. By default, the MSVC compiler treats all files that end in .c as C source code, and all files that end in .cpp as C++ source code. To force the compiler to treat all files as C non-dependent of file name extension, use the [/Tc](reference/tc-tp-tc-tp-specify-source-file-type.md) compiler option.
+The C and C++ languages are similar, but not the same. The Microsoft C/C++ compiler (MSVC) uses a simple rule to determine which language to use when it compiles your code. By default, the MSVC compiler treats all files that end in .c as C source code, and all files that end in .cpp as C++ source code. To force the compiler to treat all files as C non-dependent of file name extension, use the [/TC](reference/tc-tp-tc-tp-specify-source-file-type.md) compiler option.
 
-MSVC is compatible with the ISO C99 standard, but not strictly compliant. In most cases, portable C code will compile and run as expected. Visual C++ doesn't support most of the changes in ISO C11. Certain library functions and POSIX function names are deprecated by MSVC. The functions are supported, but the preferred names have changed. For more information, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md) and [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
+MSVC is compatible with the ISO C99 standard, but not strictly compliant. In most cases, portable C code will compile and run as expected. Visual C++ provides support for the changes in ISO C11/C17. To compile with C11/C17 support, use the compiler flag `/std:c11` or `/std:c17`. Certain library functions and POSIX function names are deprecated by MSVC. The functions are supported, but the preferred names have changed. For more information, see [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md) and [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md).
 
 ## See also
 
