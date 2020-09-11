@@ -39,12 +39,12 @@ If there is not enough available memory to expand the block to the given size, t
 
 If *size* is zero, then the block pointed to by *memblock* is freed; the return value is **NULL**, and *memblock* is left pointing at a freed block.
 
-The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than **`void`**, use a type cast on the return value.
+The return value points to a storage space that is suitably aligned for storage of any type of object. To get a pointer to a type other than **`void`**, use a type cast on the return value.
 
 ## Remarks
 
 > [!NOTE]
-> **realloc** hasn't been updated to implement C17 behavior.
+> **realloc** hasn't been updated to implement C17 behavior because the new behavior isn't compatible with the Windows operating system.
 
 The **realloc** function changes the size of an allocated memory block. The *memblock* argument points to the beginning of the memory block. If *memblock* is **NULL**, **realloc** behaves the same way as **malloc** and allocates a new block of *size* bytes. If *memblock* is not **NULL**, it should be a pointer returned by a previous call to **calloc**, **malloc**, or **realloc**.
 

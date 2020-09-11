@@ -1,8 +1,8 @@
 ---
 title: "Compatibility"
-description: "Describes the compatibility of the Microsoft Universal C run-time library (UCRT) with the Standard C library, POSIX, the Safe CRT, and Store apps."
-ms.date: "12/06/2019"
-helpviewer_keywords: ["CRT, compatibility", "compatibility, C run-time libraries", "compatibility"]
+description: "Describes the compatibility of the Microsoft Universal C runtime library (UCRT) with the Standard C library, POSIX, the Safe CRT, and Store apps."
+ms.date: "9/11/2020"
+helpviewer_keywords: ["CRT, compatibility", "compatibility, C runtime libraries", "compatibility"]
 ms.assetid: 346709cb-edda-4909-9a19-3d253eddb6b7
 ---
 # Compatibility
@@ -11,8 +11,9 @@ The Universal C Runtime Library (UCRT) supports most of the C standard library r
 - strict type compatibility in \<complex.h>. 
 - `aligned_alloc`, which will probably not be implemented because the Windows operating system doesn't support aligned allocations. Use the non-standard `_aligned_malloc`, instead.
 -  `strerrorlen_s`
-- stdatomic.h
-- threads.h
+- atomic support in \<stdatomic.h>
+- threading support in \<threads.h>
+
 The UCRT also implements a large subset of the POSIX.1 (ISO/IEC 9945-1:1996, the POSIX System Application Program Interface) C library. However, it's not fully conformant to any specific POSIX standard. The UCRT also implements several Microsoft-specific functions and macros that aren't part of a standard.
 
 Functions specific to the Microsoft implementation of Visual C++ are found in the vcruntime library.  Many of these functions are for internal use and can't be called by user code. Some are documented for use in debugging and implementation compatibility.
