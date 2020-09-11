@@ -22,7 +22,7 @@ By default, LINK reports all warnings. Specify **/IGNORE:**`warning` to tell the
 
 The linker does not allow some warnings to be ignored. This table lists the warnings that are not suppressed by **/IGNORE**:
 
-|Linker Warning||
+| Linker Warning | Message |
 |--------------------|-|
 |LNK4017|`keyword` statement not supported for the target platform; ignored|
 |[LNK4044](../../error-messages/tool-errors/linker-tools-warning-lnk4044.md)|unrecognized option '`option`'; ignored|

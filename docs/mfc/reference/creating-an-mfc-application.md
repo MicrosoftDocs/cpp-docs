@@ -33,7 +33,7 @@ The easiest way to create an MFC application is to use the MFC Application Wizar
 
 For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
 
-![MFC Application Wizard](media/mfc-app-wizard.png)
+![Visual Studio 2019 MFC Application Wizard](media/mfc-app-wizard.png)
 
 ## To create an MFC console application
 
@@ -44,7 +44,7 @@ An MFC console application is a command-line program that uses MFC libraries but
 1. Modify the project name as needed, then press **Next** to open the **Windows Desktop Wizard**.
 1. Check the **MFC Headers** box and set other values as needed, then press **Finish**.
 
-![MFC Application Wizard](media/windows-desktop-wizard.png)
+![Visual Studio 2019 Windows Desktop Project dialog](media/windows-desktop-wizard.png)
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ An MFC console application is a command-line program that uses MFC libraries but
 
 For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
 
-![MFC Application Wizard](media/mfc-app-wizard.png)
+![Visual Studio 2017 MFC Application Wizard](media/mfc-app-wizard.png)
 
 ## To create an MFC console application
 
@@ -71,7 +71,7 @@ An MFC console application is a command-line program that uses MFC libraries but
 1. Modify the project name as needed, then press **OK** to open the **Windows Desktop Wizard**.
 1. Check the **MFC Headers** box and set other values as needed, then press **Finish**.
 
-![MFC Application Wizard](media/windows-desktop-wizard-2017.png)
+![Visual Studio 2017 Windows Desktop Project dialog](media/windows-desktop-wizard-2017.png)
 
 ::: moniker-end
 
@@ -86,7 +86,7 @@ An MFC console application is a command-line program that uses MFC libraries but
 
 For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
 
-![MFC Application Wizard](media/mfc-app-wizard-2015.png)
+![Visual Studio 2015 MFC Application Wizard](media/mfc-app-wizard-2015.png)
 
 ## To create an MFC console application
 

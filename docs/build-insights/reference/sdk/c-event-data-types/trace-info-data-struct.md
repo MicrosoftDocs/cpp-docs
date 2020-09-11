@@ -30,7 +30,7 @@ typedef struct TRACE_INFO_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `LogicalProcessorCount` | The number of logical processors on the machine where the trace was collected. |
 | `TickFrequency` | The number of ticks per second to use when evaluating a duration measured in ticks. |

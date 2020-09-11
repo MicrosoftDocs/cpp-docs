@@ -32,12 +32,12 @@ class boyer_moore_searcher
 
 ## Members
 
-| | |
+| Member | Description |
 | - | - |
 | **Constructor** | |
-|[boyer_moore_searcher](#boyer-moore-searcher-constructor)||
+| [boyer_moore_searcher](#boyer-moore-searcher-constructor) | Constructs a searcher instance. |
 | **Operators** | |
-| [operator()](#operator-call) | |
+| [operator()](#operator-call) | Invokes the operation on the sequence. |
 
 ## <a name="boyer-moore-searcher-constructor"></a> boyer_moore_searcher constructor
 
