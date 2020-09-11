@@ -584,8 +584,8 @@ Check whether the string view ends with the specified suffix.
 
 ```cpp
 bool ends_with(const basic_string_view sv) const noexcept;
-bool ends_with(const T c) const noexcept;
-bool ends_with(const T* const x) const noexcept;
+bool ends_with(const CharType c) const noexcept;
+bool ends_with(const CharType* const x) const noexcept;
 ```
 
 ### Parameters
@@ -993,8 +993,8 @@ A string_view can modify its length, for example by `remove_prefix` and `remove_
 Check whether the string view starts with the specified prefix.
 
 ```cpp
-bool starts_with(const T c) const noexcept;
-bool starts_with(const T* const x) const noexcept;
+bool starts_with(const CharType c) const noexcept;
+bool starts_with(const CharType* const x) const noexcept;
 bool starts_with(const basic_string_view sv) const noexcept;
 ```
 

@@ -1786,8 +1786,8 @@ The string str2 is empty.
 Check whether the string ends with the specified suffix.
 
 ```cpp
-bool ends_with(const T c) const noexcept;
-bool ends_with(const T* const x) const noexcept;
+bool ends_with(const CharType c) const noexcept;
+bool ends_with(const CharType* const x) const noexcept;
 bool ends_with(const basic_string_view sv) const noexcept;
 ```
 
@@ -4607,8 +4607,8 @@ The capacity of string str1 is: 15.
 Check whether the string starts with the specified prefix.
 
 ```cpp
-bool starts_with(const T c) const noexcept;
-bool starts_with(const T* const x) const noexcept;
+bool starts_with(const CharType c) const noexcept;
+bool starts_with(const CharType* const x) const noexcept;
 bool starts_with(const basic_string_view sv) const noexcept;
 ```
 
