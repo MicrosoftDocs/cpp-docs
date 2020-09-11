@@ -1,8 +1,12 @@
 ---
 title: "unordered_multimap Class"
-ms.date: "11/04/2016"
-f1_keywords: ["unordered_map/std::unordered_multimap", "unordered_map/std::unordered_multimap::allocator_type", "unordered_map/std::unordered_multimap::const_iterator", "unordered_map/std::unordered_multimap::const_local_iterator", "unordered_map/std::unordered_multimap::const_pointer", "unordered_map/std::unordered_multimap::const_reference", "unordered_map/std::unordered_multimap::difference_type", "unordered_map/std::unordered_multimap::hasher", "unordered_map/std::unordered_multimap::iterator", "unordered_map/std::unordered_multimap::key_equal", "unordered_map/std::unordered_multimap::key_type", "unordered_map/std::unordered_multimap::local_iterator", "unordered_map/std::unordered_multimap::mapped_type", "unordered_map/std::unordered_multimap::pointer", "unordered_map/std::unordered_multimap::reference", "unordered_map/std::unordered_multimap::size_type", "unordered_map/std::unordered_multimap::value_type", "unordered_map/std::unordered_multimap::begin", "unordered_map/std::unordered_multimap::bucket", "unordered_map/std::unordered_multimap::bucket_count", "unordered_map/std::unordered_multimap::bucket_size", "unordered_map/std::unordered_multimap::cbegin", "unordered_map/std::unordered_multimap::cend", "unordered_map/std::unordered_multimap::clear", "unordered_map/std::unordered_multimap::count", "unordered_map/std::unordered_multimap::emplace", "unordered_map/std::unordered_multimap::emplace_hint", "unordered_map/std::unordered_multimap::empty", "unordered_map/std::unordered_multimap::end", "unordered_map/std::unordered_multimap::equal_range", "unordered_map/std::unordered_multimap::erase", "unordered_map/std::unordered_multimap::find", "unordered_map/std::unordered_multimap::get_allocator", "unordered_map/std::unordered_multimap::hash", "unordered_map/std::unordered_multimap::insert", "unordered_map/std::unordered_multimap::key_eq", "unordered_map/std::unordered_multimap::load_factor", "unordered_map/std::unordered_multimap::max_bucket_count", "unordered_map/std::unordered_multimap::max_load_factor", "unordered_map/std::unordered_multimap::max_size", "unordered_map/std::unordered_multimap::rehash", "unordered_map/std::unordered_multimap::size", "unordered_map/std::unordered_multimap::swap", "unordered_map/std::unordered_multimap::unordered_multimap", "unordered_map/std::unordered_multimap::operator=", "unordered_map/std::unordered_multimap::hash_function"]
-helpviewer_keywords: ["std::unordered_multimap", "std::unordered_multimap::allocator_type", "std::unordered_multimap::const_iterator", "std::unordered_multimap::const_local_iterator", "std::unordered_multimap::const_pointer", "std::unordered_multimap::const_reference", "std::unordered_multimap::difference_type", "std::unordered_multimap::hasher", "std::unordered_multimap::iterator", "std::unordered_multimap::key_equal", "std::unordered_multimap::key_type", "std::unordered_multimap::local_iterator", "std::unordered_multimap::mapped_type", "std::unordered_multimap::pointer", "std::unordered_multimap::reference", "std::unordered_multimap::size_type", "std::unordered_multimap::value_type", "std::unordered_multimap::begin", "std::unordered_multimap::bucket", "std::unordered_multimap::bucket_count", "std::unordered_multimap::bucket_size", "std::unordered_multimap::cbegin", "std::unordered_multimap::cend", "std::unordered_multimap::clear", "std::unordered_multimap::count", "std::unordered_multimap::emplace", "std::unordered_multimap::emplace_hint", "std::unordered_multimap::empty", "std::unordered_multimap::end", "std::unordered_multimap::equal_range", "std::unordered_multimap::erase", "std::unordered_multimap::find", "std::unordered_multimap::get_allocator", "std::unordered_multimap::hash", "std::unordered_multimap::insert", "std::unordered_multimap::key_eq", "std::unordered_multimap::load_factor", "std::unordered_multimap::max_bucket_count", "std::unordered_multimap::max_load_factor", "std::unordered_multimap::max_size", "std::unordered_multimap::rehash", "std::unordered_multimap::size", "std::unordered_multimap::swap", "std::unordered_multimap::unordered_multimap", "std::unordered_multimap::operator=", "std::unordered_multimap::allocator_type", "std::unordered_multimap::const_iterator", "std::unordered_multimap::const_local_iterator", "std::unordered_multimap::const_pointer", "std::unordered_multimap::const_reference", "std::unordered_multimap::difference_type", "std::unordered_multimap::hasher", "std::unordered_multimap::iterator", "std::unordered_multimap::key_equal", "std::unordered_multimap::key_type", "std::unordered_multimap::local_iterator", "std::unordered_multimap::mapped_type", "std::unordered_multimap::pointer", "std::unordered_multimap::reference", "std::unordered_multimap::size_type", "std::unordered_multimap::value_type", "std::unordered_multimap::begin", "std::unordered_multimap::bucket", "std::unordered_multimap::bucket_count", "std::unordered_multimap::bucket_size", "std::unordered_multimap::cbegin", "std::unordered_multimap::cend", "std::unordered_multimap::clear", "std::unordered_multimap::count", "std::unordered_multimap::emplace", "std::unordered_multimap::emplace_hint", "std::unordered_multimap::empty", "std::unordered_multimap::end", "std::unordered_multimap::equal_range", "std::unordered_multimap::erase", "std::unordered_multimap::find", "std::unordered_multimap::get_allocator", "std::unordered_multimap::hash_function", "std::unordered_multimap::insert", "std::unordered_multimap::key_eq", "std::unordered_multimap::load_factor", "std::unordered_multimap::max_bucket_count", "std::unordered_multimap::max_load_factor", "std::unordered_multimap::max_size", "std::unordered_multimap::rehash", "std::unordered_multimap::size", "std::unordered_multimap::swap"]
+description: "API overview for the C++ Standard Library container class `unordered_multimap`."
+ms.date: "9/9/2020"
+f1_keywords: ["unordered_map/std::unordered_multimap", "unordered_map/std::unordered_multimap::allocator_type", "unordered_map/std::unordered_multimap::const_iterator", "unordered_map/std::unordered_multimap::const_local_iterator", "unordered_map/std::unordered_multimap::const_pointer", "unordered_map/std::unordered_multimap::const_reference", "unordered_map/std::unordered_multimap::difference_type", "unordered_map/std::unordered_multimap::hasher", "unordered_map/std::unordered_multimap::iterator", "unordered_map/std::unordered_multimap::key_equal", "unordered_map/std::unordered_multimap::key_type", "unordered_map/std::unordered_multimap::local_iterator", "unordered_map/std::unordered_multimap::mapped_type", "unordered_map/std::unordered_multimap::pointer", "unordered_map/std::unordered_multimap::reference", "unordered_map/std::unordered_multimap::size_type", "unordered_map/std::unordered_multimap::value_type", "unordered_map/std::unordered_multimap::begin", "unordered_map/std::unordered_multimap::bucket", "unordered_map/std::unordered_multimap::bucket_count", "unordered_map/std::unordered_multimap::bucket_size", "unordered_map/std::unordered_multimap::cbegin", "unordered_map/std::unordered_multimap::cend", "unordered_map/std::unordered_multimap::clear",
+"unordered_map/std::unordered_multimap::contains",  "unordered_map/std::unordered_multimap::count", "unordered_map/std::unordered_multimap::emplace", "unordered_map/std::unordered_multimap::emplace_hint", "unordered_map/std::unordered_multimap::empty", "unordered_map/std::unordered_multimap::end", "unordered_map/std::unordered_multimap::equal_range", "unordered_map/std::unordered_multimap::erase", "unordered_map/std::unordered_multimap::find", "unordered_map/std::unordered_multimap::get_allocator", "unordered_map/std::unordered_multimap::hash", "unordered_map/std::unordered_multimap::insert", "unordered_map/std::unordered_multimap::key_eq", "unordered_map/std::unordered_multimap::load_factor", "unordered_map/std::unordered_multimap::max_bucket_count", "unordered_map/std::unordered_multimap::max_load_factor", "unordered_map/std::unordered_multimap::max_size", "unordered_map/std::unordered_multimap::rehash", "unordered_map/std::unordered_multimap::size", "unordered_map/std::unordered_multimap::swap", "unordered_map/std::unordered_multimap::unordered_multimap", "unordered_map/std::unordered_multimap::operator=", "unordered_map/std::unordered_multimap::hash_function"]
+helpviewer_keywords: ["std::unordered_multimap", "std::unordered_multimap::allocator_type", "std::unordered_multimap::const_iterator", "std::unordered_multimap::const_local_iterator", "std::unordered_multimap::const_pointer", "std::unordered_multimap::const_reference", "std::unordered_multimap::difference_type", "std::unordered_multimap::hasher", "std::unordered_multimap::iterator", "std::unordered_multimap::key_equal", "std::unordered_multimap::key_type", "std::unordered_multimap::local_iterator", "std::unordered_multimap::mapped_type", "std::unordered_multimap::pointer", "std::unordered_multimap::reference", "std::unordered_multimap::size_type", "std::unordered_multimap::value_type", "std::unordered_multimap::begin", "std::unordered_multimap::bucket", "std::unordered_multimap::bucket_count", "std::unordered_multimap::bucket_size", "std::unordered_multimap::cbegin", "std::unordered_multimap::cend", "std::unordered_multimap::clear",
+"std::unordered_multimap::contains",
+"std::unordered_multimap::count", "std::unordered_multimap::emplace", "std::unordered_multimap::emplace_hint", "std::unordered_multimap::empty", "std::unordered_multimap::end", "std::unordered_multimap::equal_range", "std::unordered_multimap::erase", "std::unordered_multimap::find", "std::unordered_multimap::get_allocator", "std::unordered_multimap::hash", "std::unordered_multimap::insert", "std::unordered_multimap::key_eq", "std::unordered_multimap::load_factor", "std::unordered_multimap::max_bucket_count", "std::unordered_multimap::max_load_factor", "std::unordered_multimap::max_size", "std::unordered_multimap::rehash", "std::unordered_multimap::size", "std::unordered_multimap::swap", "std::unordered_multimap::unordered_multimap", "std::unordered_multimap::operator=", "std::unordered_multimap::allocator_type", "std::unordered_multimap::const_iterator", "std::unordered_multimap::const_local_iterator", "std::unordered_multimap::const_pointer", "std::unordered_multimap::const_reference", "std::unordered_multimap::difference_type", "std::unordered_multimap::hasher", "std::unordered_multimap::iterator", "std::unordered_multimap::key_equal", "std::unordered_multimap::key_type", "std::unordered_multimap::local_iterator", "std::unordered_multimap::mapped_type", "std::unordered_multimap::pointer", "std::unordered_multimap::reference", "std::unordered_multimap::size_type", "std::unordered_multimap::value_type", "std::unordered_multimap::begin", "std::unordered_multimap::bucket", "std::unordered_multimap::bucket_count", "std::unordered_multimap::bucket_size", "std::unordered_multimap::cbegin", "std::unordered_multimap::cend", "std::unordered_multimap::clear", "std::unordered_multimap::count", "std::unordered_multimap::emplace", "std::unordered_multimap::emplace_hint", "std::unordered_multimap::empty", "std::unordered_multimap::end", "std::unordered_multimap::equal_range", "std::unordered_multimap::erase", "std::unordered_multimap::find", "std::unordered_multimap::get_allocator", "std::unordered_multimap::hash_function", "std::unordered_multimap::insert", "std::unordered_multimap::key_eq", "std::unordered_multimap::load_factor", "std::unordered_multimap::max_bucket_count", "std::unordered_multimap::max_load_factor", "std::unordered_multimap::max_size", "std::unordered_multimap::rehash", "std::unordered_multimap::size", "std::unordered_multimap::swap"]
 ms.assetid: 4baead6c-5870-4b85-940f-a47d6b891c27
 ---
 # unordered_multimap Class
@@ -67,6 +71,7 @@ The allocator class.
 |[cbegin](#cbegin)|Designates the beginning of the controlled sequence.|
 |[cend](#cend)|Designates the end of the controlled sequence.|
 |[clear](#clear)|Removes all elements.|
+|[contains](#contains)<sup>C++20</sup>|Checks if there is an element with the specified key in the `unordered_multimap`.|
 |[count](#count)|Finds the number of elements matching a specified key.|
 |[emplace](#emplace)|Adds an element constructed in place.|
 |[emplace_hint](#emplace_hint)|Adds an element constructed in place, with hint.|
@@ -713,6 +718,57 @@ int main()
 
 ```Output
 [c, 3] [b, 2] [a, 1]
+```
+
+## <a name="contains"></a> unordered_multimap::contains
+
+Checks if there is an element with the specified key in the `unordered_multimap`.
+
+```cpp
+bool contains(const Key& key) const;
+template<class K> bool contains(const K& key) const;
+```
+
+### Parameters
+
+*K*\
+The type of the key.
+
+*key*\
+The element's key value to look for.
+
+### Return Value
+
+`true` if the element is found in the container; `false` otherwise.
+
+### Remarks
+
+`contains()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+
+`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent.
+
+### Example
+
+```cpp
+// Requires /std:c++latest
+#include <unordered_map>
+#include <iostream>
+
+int main()
+{
+    std::unordered_multimap<int, bool> theUnorderedMultimap = {{0, false}, {1,true}};
+
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theUnorderedMultimap.contains(1) << '\n';
+    std::cout << theUnorderedMultimap.contains(2) << '\n';
+
+    return 0;
+}
+```
+
+```Output
+true
+false
 ```
 
 ## <a name="count"></a> unordered_multimap::count
