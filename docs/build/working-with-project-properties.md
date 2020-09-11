@@ -82,11 +82,11 @@ A user-defined macro is stored in a property sheet. If your project does not alr
 
 You can use the Property Editor to modify certain string properties and select macros as values. To access the Property Editor, select a property on a property page and then choose the down arrow button on the right. If the drop-down list contains **\<Edit>**, then you can choose it to display the Property Editor for that property.
 
-![A screenshot of the Property Pages dialog box with Include Directories and Edit highlighted showing the Include Directories property editor.](media/property_editor_dropdown.png "Property_Editor_Dropdown")
+![A property drop-down control is used to access the Property Editor](media/property_editor_dropdown.png "Property Editor dropdown")
 
 In the Property Editor, you can choose the **Macros** button to view the available macros and their current values. The following illustration shows the Property Editor for the **Additional Include Directories** property after the **Macros** button was chosen. When the **Inherit from parent or project defaults** check box is selected and you add a new value, it is appended to any values that are currently being inherited. If you clear the check box, your new value replaces the inherited values. In most cases, leave the check box selected.
 
-![Property editor, Visual C&#43;&#43;](media/propertyeditorvc.png "PropertyEditorVC")
+![The Property Editor dialog for the Include Directories property](media/propertyeditorvc.png "PropertyEditorVC")
 
 ## Add an include directory to the set of default directories
 

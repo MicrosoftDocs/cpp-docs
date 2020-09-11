@@ -51,7 +51,7 @@ You might want to require that all source code check-ins satisfy certain policie
 
 ## Team Build integration
 
-You can use the integrated features of the build system to run code analysis tool as a step of the Azure DevOps build process. For more information, see [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+You can use the integrated features of the build system to run code analysis tool as a step of the Azure DevOps build process. For more information, see [Azure Pipelines](/azure/devops/pipelines/index).
 
 ## See also
 

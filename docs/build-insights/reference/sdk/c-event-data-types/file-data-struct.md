@@ -28,7 +28,7 @@ typedef struct FILE_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `Path` | The file's absolute path |
 | `TypeCode` | A code describing the type of the file. For more information, see [FILE_TYPE_CODE](file-type-code-enum.md). |
