@@ -583,9 +583,9 @@ Returns a random-access const_iterator that points to one past the last element.
 Check whether the string view ends with the specified suffix.
 
 ```cpp
-[[nodiscard]] bool ends_with(const basic_string_view sv) const noexcept;
-[[nodiscard]] bool ends_with(const T c) const noexcept;
-[[nodiscard]] bool ends_with(const T* const x) const noexcept;
+bool ends_with(const basic_string_view sv) const noexcept;
+bool ends_with(const T c) const noexcept;
+bool ends_with(const T* const x) const noexcept;
 ```
 
 ### Parameters
@@ -993,9 +993,9 @@ A string_view can modify its length, for example by `remove_prefix` and `remove_
 Check whether the string view starts with the specified prefix.
 
 ```cpp
-[[nodiscard]] bool starts_with(const T c) const noexcept;
-[[nodiscard]] bool starts_with(const T* const x) const noexcept;
-[[nodiscard]] bool starts_with(const basic_string_view sv) const noexcept;
+bool starts_with(const T c) const noexcept;
+bool starts_with(const T* const x) const noexcept;
+bool starts_with(const basic_string_view sv) const noexcept;
 ```
 
 ### Parameters
