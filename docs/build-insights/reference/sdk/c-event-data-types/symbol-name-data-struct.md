@@ -28,7 +28,7 @@ typedef struct SYMBOL_NAME_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `Key` | The symbol's key. This value is unique within the trace being analyzed. |
 | `Name` | The symbol's name. |

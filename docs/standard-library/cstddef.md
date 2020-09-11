@@ -1,6 +1,7 @@
 ---
 title: "&lt;cstddef&gt;"
-ms.date: "11/04/2016"
+description: "Describes <stddef.h>, which ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace."
+ms.date: "9/4/2020"
 f1_keywords: ["<cstddef>"]
 helpviewer_keywords: ["cstddef header"]
 ms.assetid: be8d1e39-5974-41ee-b41d-eafa6c82ffce

@@ -81,7 +81,7 @@ Instead of using `reinterpret_cast`, or `memcpy()`, `bit_cast()` is a better way
 
 This overload only participates in overload resolution if:
 -  `sizeof(To) == sizeof(From)`
-- `To` and `From` are [is_trivially_copyable](https://docs.microsoft.com/cpp/standard-library/is-trivially-copyable-class?view=vs-2019`).
+- `To` and `From` are [is_trivially_copyable](is-trivially-copyable-class.md).
 
 This function template is `constexpr` if and only if `To`, `From`, and the types of their subobjects are:
 - not a union or pointer type
@@ -700,7 +700,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 **Namespace:** std
 
-`/std:c++latest` is required
+[/std:c++latest](../build/reference/std-specify-language-standard-version.md) is required.
 
 ## See also
 

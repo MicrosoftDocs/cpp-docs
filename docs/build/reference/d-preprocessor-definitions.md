@@ -11,8 +11,8 @@ Defines a preprocessing symbol for a source file.
 
 ## Syntax
 
-> **/D**\[ ]_name_[`=` | `#` [{ *string* | *number* }] ]\
-> **/D**\[ ]`"`_name_[`=` | `#` [{ *string* | *number* }] ]`"`
+> **/D**\[ ]_name_\[`=` \| `#` \[{ *string* \| *number* }] ]\
+> **/D**\[ ]`"`_name_\[`=` \| `#` \[{ *string* \| *number* }] ]`"`
 
 ## Remarks
 

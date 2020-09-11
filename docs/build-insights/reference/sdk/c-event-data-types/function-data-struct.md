@@ -27,7 +27,7 @@ typedef struct FUNCTION_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `Name` | The function's name, encoded in UTF-8. |
 

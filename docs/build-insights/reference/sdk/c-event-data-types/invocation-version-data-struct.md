@@ -30,7 +30,7 @@ typedef struct INVOCATION_VERSION_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `VersionMajor` | The version's major number. |
 | `VersionMinor` | The version's minor number. |

@@ -33,7 +33,7 @@ typedef struct INVOCATION_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `MSVCToolCode` | A code that identifies the invocation's type. For more information, see [MSVC_TOOL_CODE](msvc-tool-code-enum.md). |
 | `ToolVersion` | An object that stores the invoked tool's version as a group of integral values. |

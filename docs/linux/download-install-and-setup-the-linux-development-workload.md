@@ -50,7 +50,7 @@ On Windows 10, you can install and target your favorite Linux distro on the Wind
 
 Linux projects in Visual Studio require the following dependencies to be installed on your remote Linux system or WSL:
 
-- **A compiler** - Visual Studio 2019 has full support for GCC and [Clang](/cpp/build/clang-support-cmake?view=vs-2019).
+- **A compiler** - Visual Studio 2019 has full support for GCC and [Clang](../build/clang-support-cmake.md).
 - **gdb** - Visual Studio automatically launches gdb on the Linux system, and uses the front end of the Visual Studio debugger to provide a full-fidelity debugging experience on Linux.
 - **rsync** and **zip** - the inclusion of rsync and zip allows Visual Studio to extract header files from your Linux system to the Windows filesystem for use by IntelliSense.
 - **make**
