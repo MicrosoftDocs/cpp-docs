@@ -4,7 +4,7 @@ ms.date: "08/28/2019"
 helpviewer_keywords: ["applications [MFC]", "MFC, creating applications", "MFC applications"]
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
 ---
-# C
+# Creating an MFC Application
 
 An MFC application is an executable application for Windows that is based on the Microsoft Foundation Class (MFC) Library. MFC executables generally fall into five types: standard Windows applications, dialog boxes, forms-based applications, Explorer-style applications, and Web browser-style applications. For more information, see:
 
@@ -33,7 +33,7 @@ The easiest way to create an MFC application is to use the MFC Application Wizar
 
 For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
 
-![A screenshot of the MFC Application wizard in Visual Studios 2019.](media/mfc-app-wizard.png)
+![Screenshot of the MFC Application wizard in Visual Studios 2019.](media/mfc-app-wizard.png)
 
 ## To create an MFC console application
 
@@ -59,7 +59,7 @@ An MFC console application is a command-line program that uses MFC libraries but
 
 For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
 
-![A screenshot of the MFC Application wizard in Visual Studios 2017.](media/mfc-app-wizard.png)
+![Screenshot of the MFC Application wizard in Visual Studios 2017.](media/mfc-app-wizard.png)
 
 ## To create an MFC console application
 
@@ -86,7 +86,7 @@ An MFC console application is a command-line program that uses MFC libraries but
 
 For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
 
-![A screenshot of the MFC Application wizard in Visual Studios 2015.](media/mfc-app-wizard-2015.png)
+![Screenshot of the MFC Application wizard in Visual Studios 2015.](media/mfc-app-wizard-2015.png)
 
 ## To create an MFC console application
 

@@ -37,7 +37,7 @@ To start a Live Share session in Visual Studio, click the Share button in the to
 
 To end a session, select **End Collaboration Session** from the **Sharing** dropdown.
 
-![A screenshot of the Sharing dropdown list with the End Collaboration Session option highlighted..](../ide/media/live-share-end-session-cpp.png "Live Share Button")
+![Screenshot of the Sharing dropdown list with the End Collaboration Session option highlighted.](../ide/media/live-share-end-session-cpp.png "Live Share Button")
 
 ## For more information
 

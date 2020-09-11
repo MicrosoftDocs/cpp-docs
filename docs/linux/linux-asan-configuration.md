@@ -43,11 +43,11 @@ To enable ASan for CMake, right-click on the CMakeLists.txt file in **Solution E
 
 Make sure you have a Linux configuration (for example, **Linux-Debug**) selected in the left pane of the dialog:
 
-![A screenshot of the left pane with Linux Debug listed as one of the Configuration options.](media/linux-debug-configuration.png)
+![Screenshot of the left pane with Linux Debug listed as one of the Configuration options.](media/linux-debug-configuration.png)
 
 The ASan options are under **General**. Enter the ASan runtime flags in the format "flag=value", separated by semicolons.
 
-![A screenshot of the Enable Address Sanitizer option showing some Address Sanitizer run time flags.](media/cmake-settings-asan-options.png)
+![Screenshot of the Enable Address Sanitizer option showing some Address Sanitizer run time flags.](media/cmake-settings-asan-options.png)
 
 ## Install the ASan debug symbols
 
