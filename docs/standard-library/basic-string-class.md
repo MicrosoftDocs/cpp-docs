@@ -75,7 +75,7 @@ The type that represents the stored allocator object that encapsulates details a
 |[data](#data)|Converts the contents of a string into an array of characters.|
 |[empty](#empty)|Tests whether the string contains characters.|
 |[end](#end)|Returns an iterator that addresses the location succeeding the last element in a string.|
-|[ends_with](#ends_with)<sup>20</sup>|Checks whether the string ends with the specified suffix.|
+|[ends_with](#ends_with)<sup>C++20</sup>|Checks whether the string ends with the specified suffix.|
 |[erase](#erase)|Removes an element or a range of elements in a string from a specified position.|
 |[find](#find)|Searches a string in a forward direction for the first occurrence of a substring that matches a specified sequence of characters.|
 |[find_first_not_of](#find_first_not_of)|Searches through a string for the first character that isn't any element of a specified string.|
@@ -97,11 +97,9 @@ The type that represents the stored allocator object that encapsulates details a
 |[rfind](#rfind)|Searches a string in a backward direction for the first occurrence of a substring that matches a specified sequence of characters.|
 |[shrink_to_fit](#shrink_to_fit)|Discards the excess capacity of the string.|
 |[size](#size)|Returns the current number of elements in a string.|
-|[starts_with](#starts_with)<sup>20</sup>|Checks whether the string starts with the specified prefix.|
+|[starts_with](#starts_with)<sup>C++20</sup>|Checks whether the string starts with the specified prefix.|
 |[substr](#substr)|Copies a substring of at most some number of characters from a string beginning from a specified position.|
 |[swap](#swap)|Exchange the contents of two strings.|
-
-<sup>20</sup> Added in the C++20 standard.
 
 ### Operators
 
@@ -1788,9 +1786,9 @@ The string str2 is empty.
 Check whether the string ends with the specified suffix.
 
 ```cpp
-NODISCARD bool ends_with(const T c) const noexcept;
-NODISCARD bool ends_with(const T* const x) const noexcept;
-NODISCARD bool ends_with(const basic_string_view sv) const noexcept;
+[[nodiscard]] bool ends_with(const T c) const noexcept;
+[[nodiscard]] bool ends_with(const T* const x) const noexcept;
+[[nodiscard]] bool ends_with(const basic_string_view sv) const noexcept;
 ```
 
 ### Parameters
@@ -1799,10 +1797,11 @@ NODISCARD bool ends_with(const basic_string_view sv) const noexcept;
 The single character suffix to look for.
 
 *sv*\
-A string view containing the suffix (you can pass a `std::basic_string` which is implicitly converted to a `basic_string_view`).
+A string view containing the suffix to look for.\
+You can pass a `std::basic_string`, which converts to a string view.
 
 *x*\
-Null-terminated character string containing the suffix.
+Null-terminated character string containing the suffix to look for.
 
 ### Return Value
 
@@ -1810,11 +1809,14 @@ Null-terminated character string containing the suffix.
 
 ### Remarks
 
+`ends_with()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+
 See [starts_with](#starts_with) to check if a string starts with the specified prefix.
 
 ### Example
 
 ```cpp
+// Requires /std:c++latest
 #include <string>
 #include <iostream>
 
@@ -1822,11 +1824,12 @@ int main()
 {
     std::basic_string<char> str = "abcdefg";
 
-    std::cout << std::boolalpha << str.ends_with('g') << '\n';
-    std::cout << std::boolalpha << str.ends_with("efG") << '\n';
+    std::cout << std::boolalpha; // so booleans show as 'true'/'false'
+    std::cout << str.ends_with('g') << '\n';
+    std::cout << str.ends_with("eFg") << '\n';
 
     std::basic_string<char> str2 = "efg";
-    std::cout << std::boolalpha << str.ends_with(str2);
+    std::cout << str.ends_with(str2);
 
     return 0;
 }
@@ -4604,9 +4607,9 @@ The capacity of string str1 is: 15.
 Check whether the string starts with the specified prefix.
 
 ```cpp
-NODISCARD bool starts_with(const T c) const noexcept;
-NODISCARD bool starts_with(const T* const x) const noexcept;
-NODISCARD bool starts_with(const basic_string_view sv) const noexcept;
+[[nodiscard]] bool starts_with(const T c) const noexcept;
+[[nodiscard]] bool starts_with(const T* const x) const noexcept;
+[[nodiscard]] bool starts_with(const basic_string_view sv) const noexcept;
 ```
 
 ### Parameters
@@ -4615,10 +4618,11 @@ NODISCARD bool starts_with(const basic_string_view sv) const noexcept;
 The single character prefix to look for.
 
 *sv*\
-A string view containing the prefix (you can pass a `std::basic_string` which is implicitly converted to a `basic_string_view`).
+A string view containing the prefix to look for.\
+You can pass a `std::basic_string`, which converts to a string view.
 
 *x*\
-Null-terminated character string containing the prefix.
+Null-terminated character string containing the prefix to look for.
 
 ### Return Value
 
@@ -4626,11 +4630,14 @@ Null-terminated character string containing the prefix.
 
 ### Remarks
 
+`starts_with()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+
 See [ends_with](#ends_with) to see if a string ends with the specified postfix.
 
 ### Example
 
 ```cpp
+// Requires /std:c++latest
 #include <string>
 #include <iostream>
 
@@ -4638,11 +4645,13 @@ int main()
 {
     std::basic_string<char> str = "abcdefg";
 
-    std::cout << std::boolalpha << str.starts_with('b') << '\n';
-    std::cout << std::boolalpha << str.starts_with("aBc") << '\n';
+    std::cout << std::boolalpha; // so booleans show as 'true'/'false'     
+    std::cout << str.starts_with('b') << '\n';
+    std::cout << str.starts_with("aBc") << '\n';
 
     std::basic_string<char> str2 = "abc";
-    std::cout << std::boolalpha << str.starts_with(str2);
+    std::cout << str.starts_with(str2);
+
     return 0;
 }
 ```

@@ -116,7 +116,7 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 |[data](#data)|Returns a raw non-owning pointer to the character sequence.|
 |[empty](#empty)|Tests whether the string_view contains characters.|
 |[end](#end)|Same as [cend](#cend).|
-|[ends_with](#ends_with)<sup>20</sup>|Check whether a string view ends with a specified suffix.|
+|[ends_with](#ends_with)<sup>C++20</sup>|Check whether a string view ends with a specified suffix.|
 |[find](#find)|Searches in a forward direction for the first occurrence of a substring that matches a specified sequence of characters.|
 |[find_first_not_of](#find_first_not_of)|Searches for the first character that is not any element of a specified string_view or convertible string object.|
 |[find_first_of](#find_first_of)|Searches for the first character that matches any element of a specified string_view or convertible string object.|
@@ -131,11 +131,9 @@ Defaults to [char_traits](char-traits-struct.md)<*CharType*>.
 |[rend](#rend)|Returns a const iterator that points to one past the last element in a reversed string_view.|
 |[rfind](#rfind)|Searches a string_view in reverse for the first occurrence of a substring that matches a specified sequence of characters.|
 |[size](#size)|Returns the current number of elements.|
-|[starts_with](#starts_with)<sup>20</sup>|Check whether a string view starts with a given prefix.|
+|[starts_with](#starts_with)<sup>C++20</sup>|Check whether a string view starts with a given prefix.|
 |[substr](#substr)|Returns a substring of a specified length starting at a specified index.|
 |[swap](#swap)|Exchange the contents of two string_views.|
-
-<sup>20</sup> Added in the C++20 standard.
 
 ## Remarks
 
@@ -585,9 +583,9 @@ Returns a random-access const_iterator that points to one past the last element.
 Check whether the string view ends with the specified suffix.
 
 ```cpp
-NODISCARD bool ends_with(const basic_string_view sv) const noexcept;
-NODISCARD bool ends_with(const T c) const noexcept;
-NODISCARD bool ends_with(const T* const x) const noexcept;
+[[nodiscard]] bool ends_with(const basic_string_view sv) const noexcept;
+[[nodiscard]] bool ends_with(const T c) const noexcept;
+[[nodiscard]] bool ends_with(const T* const x) const noexcept;
 ```
 
 ### Parameters
@@ -596,10 +594,11 @@ NODISCARD bool ends_with(const T* const x) const noexcept;
 The single character suffix to look for.
 
 *sv*\
-A string view containing the suffix (you can pass a `std::basic_string` which is implicitly converted to a `basic_string_view`).
+A string view containing the suffix to look for.\
+You can pass a `std::basic_string`, which converts to a string view.
 
 *x*\
-Null-terminated character string containing the suffix.
+Null-terminated character string containing the suffix to look for.
 
 ### Return Value
 
@@ -607,21 +606,27 @@ Null-terminated character string containing the suffix.
 
 ### Remarks
 
+`ends_with()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+
 See [starts_with](#starts_with) to check if a string view starts with the specified prefix.
 
 ### Example
 
 ```cpp
+// Requires /std:c++latest
 #include <string>
 #include <iostream>
 
 int main()
 {
-    std::cout << std::boolalpha << std::string_view("abcdefg").ends_with('g') << '\n';
-    std::cout << std::boolalpha << std::string_view("abcdefg").ends_with("efG") << '\n';
+    std::cout << std::boolalpha; // so booleans show as 'true'/'false'  
+    std::cout << std::string_view("abcdefg").ends_with('g') << '\n';
+    std::cout << std::string_view("abcdefg").ends_with("eFg") << '\n';
 
     std::basic_string<char> str2 = "efg";
-    std::cout << std::boolalpha << std::string_view("abcdefg").ends_with(str2);
+    std::cout << std::string_view("abcdefg").ends_with(str2);
+
+    return 0;
 }
 ```
 
@@ -988,9 +993,9 @@ A string_view can modify its length, for example by `remove_prefix` and `remove_
 Check whether the string view starts with the specified prefix.
 
 ```cpp
-NODISCARD bool starts_with(const T c) const noexcept;
-NODISCARD bool starts_with(const T* const x) const noexcept;
-NODISCARD bool starts_with(const basic_string_view sv) const noexcept;
+[[nodiscard]] bool starts_with(const T c) const noexcept;
+[[nodiscard]] bool starts_with(const T* const x) const noexcept;
+[[nodiscard]] bool starts_with(const basic_string_view sv) const noexcept;
 ```
 
 ### Parameters
@@ -999,10 +1004,11 @@ NODISCARD bool starts_with(const basic_string_view sv) const noexcept;
 The single character prefix to look for.
 
 *sv*\
-A string view containing the prefix (you can pass a `std::basic_string` which is implicitly converted to a `basic_string_view`).
+A string view containing the prefix to look for.\
+You can pass a `std::basic_string`, which converts to a string view.
 
 *x*\
-Null-terminated character string containing the prefix.
+Null-terminated character string containing the prefix to look for.
 
 ### Return Value
 
@@ -1010,11 +1016,14 @@ Null-terminated character string containing the prefix.
 
 ### Remarks
 
+`starts_with()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+
 See [ends_with](#ends_with) to see if a string ends with a postfix.
 
 ### Example
 
 ```cpp
+// Requires /std:c++latest
 #include <string>
 #include <iostream>
 
@@ -1022,11 +1031,13 @@ int main()
 {
     std::basic_string<char> str = "abcdefg";
 
-    std::cout << std::boolalpha << str.starts_with('g') << '\n';
-    std::cout << std::boolalpha << str.starts_with("efg") << '\n';
+    std::cout << std::boolalpha; // so booleans show as 'true'/'false'     
+    std::cout << str.starts_with('b') << '\n';
+    std::cout << str.starts_with("aBc") << '\n';
 
     std::basic_string<char> str2 = "abc";
-    std::cout << std::boolalpha << str.starts_with(str2);
+    std::cout << str.starts_with(str2);
+
     return 0;
 }
 ```
