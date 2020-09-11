@@ -1,5 +1,6 @@
 ---
 title: "What's new for C++ in Visual Studio"
+description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
 ms.date: "05/19/2020"
 ms.technology: "cpp-ide"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
@@ -251,7 +252,7 @@ The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C+
 
 ##### Visual Studio 2017 version 15.8
 
-The [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md) compiler switch enables the new experimental MSVC preprocessor that will eventually conform to all applicable C and C++ standards. For more information, see [MSVC experimental preprocessor overview](../preprocessor/preprocessor-experimental-overview.md).
+The [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md) compiler switch enables the new experimental MSVC preprocessor that will eventually conform to all applicable C and C++ standards. For more information, see [MSVC new preprocessor overview](../preprocessor/preprocessor-experimental-overview.md).
 
 ### New compiler options
 

@@ -744,6 +744,8 @@
                       href: ../build/reference/zc-inline-remove-unreferenced-comdat.md
                     - name: "/Zc:noexceptTypes (C++17 noexcept rules)"
                       href: ../build/reference/zc-noexcepttypes.md
+                    - name: "/Zc:preprocessor (Enable preprocessor conformance mode)"
+                      href: ../build/reference/zc-preprocessor.md
                     - name: "/Zc:referenceBinding (Enforce reference binding rules)"
                       href: ../build/reference/zc-referencebinding-enforce-reference-binding-rules.md
                     - name: "/Zc:rvalueCast (Enforce type conversion rules)"
