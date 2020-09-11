@@ -1,6 +1,7 @@
 ---
 title: "/Zc (Conformance)"
-ms.date: "03/06/2018"
+description: "The /Zc conformance compiler options enable or disable support for conforming or backward-compatible behavior."
+ms.date: 09/10/2020
 helpviewer_keywords: ["/Zc compiler options [C++]", "-Zc compiler options [C++]", "Conformance compiler options", "Zc compiler options [C++]"]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
 ---

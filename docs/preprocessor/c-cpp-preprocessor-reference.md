@@ -1,6 +1,7 @@
 ---
 title: "C/C++ preprocessor reference"
-ms.date: "10/31/2019"
+description: "Reference for the Microsoft C/C++ compiler preprocessor in Visual Studio."
+ms.date: 09/10/2020
 helpviewer_keywords: ["preprocessor", "preprocessor, reference overview"]
 ms.assetid: e4a52843-7016-4f6d-8b40-cb1ace18f805
 ---
@@ -13,7 +14,7 @@ In Visual Studio 2019 the [/experimental:preprocessor](../build/reference/experi
 ## In this section
 
 [Preprocessor](preprocessor.md)\
-Provides an overview of the traditional and new experimental preprocessors.
+Provides an overview of the traditional and new conforming preprocessors.
 
 [Preprocessor directives](../preprocessor/preprocessor-directives.md)\
 Describes directives, typically used to make source programs easy to change and easy to compile in different execution environments.
@@ -22,7 +23,7 @@ Describes directives, typically used to make source programs easy to change and 
 Discusses the four preprocessor-specific operators used in the context of the `#define` directive.
 
 [Predefined macros](../preprocessor/predefined-macros.md)\
-Discusses predefined macros as specified by ANSI and Microsoft C++.
+Discusses predefined macros as specified by the C and C++ standards and by Microsoft C++.
 
 [Pragmas](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
 Discusses pragmas, which offer a way for each compiler to offer machine- and operating system-specific features while retaining overall compatibility with the C and C++ languages.

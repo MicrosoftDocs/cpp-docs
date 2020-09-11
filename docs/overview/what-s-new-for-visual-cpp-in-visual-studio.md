@@ -1,5 +1,6 @@
 ---
 title: "What's new for C++ in Visual Studio"
+description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio."
 ms.date: "05/19/2020"
 ms.technology: "cpp-ide"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
