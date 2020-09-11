@@ -12,7 +12,7 @@ The following table lists the CRT functions that are unavailable when you build 
 
 ## Unsupported CRT Functions
 
-|Function|Description|Workaround|
+| Function | Description | Workaround |
 |-|-|-|
 |`_beep` `_sleep` `_seterrormode`|These functions were obsolete in previous versions of the CRT. Also, the corresponding Win32 APIs are not available for UWP apps.|No workaround.|
 |`chdir` `_chdrive` `getcwd`|These functions are obsolete or are not thread-safe.|Use `_chdir`, `_getcwd` and related functions.|
@@ -27,12 +27,12 @@ The following table lists the CRT functions that are unavailable when you build 
 |`_getsystime` `_setsystime`|These were obsolete APIs in previous CRT versions. Also, a user cannot set the system time in a UWP app due to lack of permissions.|To get the system time only, use the Win32 API `GetSystemTime`. System time cannot be set.|
 |`_environ` `_putenv` `_putenv_s` `_searchenv` `_searchenv_s` `_dupenv_s` `_wputenv` `_wputenv_s` `_wsearchenv` getenv getenv_s putenv `_wdupenv_s` `_wenviron` `_wgetenv` `_wgetenv_s` `_wsearchenv_s` `tzset`|Environment variables are not available to UWP apps.|No workaround. To set the time zone, use `_tzset`.|
 |`_loaddll` `_getdllprocaddr` `_unloaddll`|These were obsolete functions in previous CRT versions. Also, a user can't load DLLs except the ones in the same application package.|Use Win32 APIs `LoadPackagedLibrary`, `GetProcAddress`, and `FreeLibrary` to load and use packaged DLLs.|
-|`_wexecl` `_wexecle` `_wexeclp` `_wexeclpe` `_wexecv` `_wexecve` `_wexecvp` `_wexecvpe` `_execl` `_execle` `_execlp` `_execlpe` `_execv` `_execve` `_execvp` `_execvpe` `_spawnl` `_spawnle` `_spawnlp` `_spawnlpe` `_spawnv` `_spawnve` `_spawnvp` `_spawnvpe` `_wspawnl` `_wspawnle` `_wspawnlp` `_wspawnlpe` `_wspawnv` `_wspawnve` `_wspawnvp` `_wspawnvpe` `_wsystem` `execl` `execle` `execlp` `execlpe` `execv` `execve` `execvp` `execvpe` ``spawnl` `spawnle` `spawnlp` `spawnlpe` `spawnv` `spawnve` `spawnvp` `spawnvpe` `system`|The functionality is not available in UWP apps. A UWP app cannot invoke another UWP app or a desktop app.|No workaround.|
+|`_wexecl` `_wexecle` `_wexeclp` `_wexeclpe` `_wexecv` `_wexecve` `_wexecvp` `_wexecvpe` `_execl` `_execle` `_execlp` `_execlpe` `_execv` `_execve` `_execvp` `_execvpe` `_spawnl` `_spawnle` `_spawnlp` `_spawnlpe` `_spawnv` `_spawnve` `_spawnvp` `_spawnvpe` `_wspawnl` `_wspawnle` `_wspawnlp` `_wspawnlpe` `_wspawnv` `_wspawnve` `_wspawnvp` `_wspawnvpe` `_wsystem` `execl` `execle` `execlp` `execlpe` `execv` `execve` `execvp` `execvpe` `spawnl` `spawnle` `spawnlp` `spawnlpe` `spawnv` `spawnve` `spawnvp` `spawnvpe` `system`|The functionality is not available in UWP apps. A UWP app cannot invoke another UWP app or a desktop app.|No workaround.|
 |`_heapwalk` `_heapadd` `_heapchk` `_heapset` `_heapused`|These functions are typically used to work with the heap. However, corresponding Win32 APIs are not supported in UWP apps. And, apps can no longer create or use private heaps.|No workaround. However, `_heapwalk` is available in the DEBUG CRT, for debugging purposes only. These functions can't be used in apps that are uploaded to the Microsoft Store.|
 
 The following functions are available in the CRT for UWP apps. However, use them only when you can't use the corresponding Win32 or Windows Runtime APIs, such as when you're porting large code bases:
 
-|Functions|Workaround|
+| Functions | Workaround |
 |-|-|
 |Single-byte string functions—for example, `strcat`, `strcpy`, `strlwr`, and so on.|Make your UWP apps strictly Unicode because all Win32 APIs and Windows Runtime APIs that are exposed use Unicode character sets only.  Single-byte functions were left for porting large code bases, but should otherwise be avoided. The corresponding wide char functions should be used instead when possible.|
 |Stream IO and low-level file IO functions—for example, `fopen`, `open`, and so on.|These functions are synchronous, which isn't recommended for UWP apps. In your UWP apps, use asynchronous APIs to open, read from, and write to files to prevent locking of the UI thread. Examples of such APIs are the ones in the `Windows::Storage::FileIO` class.|
@@ -41,7 +41,7 @@ The following functions are available in the CRT for UWP apps. However, use them
 
 Both the previously mentioned APIs and the following APIs are unavailable in Windows 8.x Store apps and Windows Phone 8.x apps.
 
-|Functions|Description|Workaround|
+| Functions | Description | Workaround |
 |-|-|-|
 |`_beginthread` `_beginthreadex` `_endthread` `_endthreadex`|Threading Win32 APIs are not available in Windows 8.x Store apps.|Use the `Windows Runtime Windows::System::Threading::ThreadPool` or `concurrency::task` instead.|
 |`_chdir` `_wchdir` `_getcwd` `_getdcwd` `_wgetcwd` `_wgetdcwd`|The concept of a working directory doesn't apply to Windows 8.x Store apps.|Use full paths instead.|

@@ -28,7 +28,7 @@ typedef struct EVENT_COLLECTION_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `Count` | The number of `EVENT_DATA` elements in the array. |
 | `Elements` | Pointer to the first `EVENT_DATA` element in the array. |

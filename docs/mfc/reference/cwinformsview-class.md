@@ -31,7 +31,7 @@ class CWinFormsView : public CView;
 
 ### Public Operators
 
-|Name||
+|Name|Description|
 |----------|-|
 |[CWinFormsView::operator Control^](#operator_control)|Casts a type as a pointer to a Windows Forms control.|
 

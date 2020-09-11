@@ -28,7 +28,7 @@ typedef struct ANALYSIS_DESCRIPTOR_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `NumberOfPasses` | The number of analysis passes that should be done over the ETW trace. |
 | `Callbacks` | An [ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) object that specifies which functions to call during the analysis session. |

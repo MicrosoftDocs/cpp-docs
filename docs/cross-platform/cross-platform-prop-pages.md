@@ -1,5 +1,5 @@
 ---
-title: "Android Debugger Properties (C++)"
+title: "Android Project Properties (C++)"
 ms.date: "10/23/2017"
 ms.topic: "reference"
 ms.assetid: 3a7ba14f-a628-4c1b-bb89-73b9195769f1

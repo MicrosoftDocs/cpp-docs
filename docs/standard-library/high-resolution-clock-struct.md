@@ -10,7 +10,7 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# steady_clock struct
+# high_resolution_clock struct
 
 Represents a *high_resolution* clock.
 

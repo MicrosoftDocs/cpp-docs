@@ -186,7 +186,7 @@ Whenever the C++ Build Insights SDK gives you an event, it comes in the form of 
 
 The C++ Build Insights SDK gives you every event in a trace, but most of the time you only care about a subset of them. In some cases, you may only care about a subset of *event stacks*. The SDK provides facilities to help you quickly extract the events or event stack you need, and reject the ones you don't. It's done through these matching functions:
 
-|  |  |
+| Function | Description |
 |--|--|
 | [MatchEvent](functions/match-event.md) | Keep an event if it matches one of the specified types. Forward matched events to a lambda or other callable type. The event's parent hierarchy isn't considered by this function. |
 | [MatchEventInMemberFunction](functions/match-event-in-member-function.md) | Keep an event if it matches the type specified in a member function's parameter. Forward matched events to the member function. The event's parent hierarchy isn't considered by this function. |
