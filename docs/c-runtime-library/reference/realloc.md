@@ -1,6 +1,7 @@
 ---
 title: "realloc"
-ms.date: "4/2/2020"
+description: "API reference for realloc(); which reallocates memory blocks."
+ms.date: "9/11/2020"
 api_name: ["realloc", "_o_realloc"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -41,6 +42,9 @@ If *size* is zero, then the block pointed to by *memblock* is freed; the return 
 The return value points to a storage space that is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than **`void`**, use a type cast on the return value.
 
 ## Remarks
+
+> [!NOTE]
+> **realloc** hasn't been updated to implement C17 behavior.
 
 The **realloc** function changes the size of an allocated memory block. The *memblock* argument points to the beginning of the memory block. If *memblock* is **NULL**, **realloc** behaves the same way as **malloc** and allocates a new block of *size* bytes. If *memblock* is not **NULL**, it should be a pointer returned by a previous call to **calloc**, **malloc**, or **realloc**.
 
