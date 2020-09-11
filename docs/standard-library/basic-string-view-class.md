@@ -1018,7 +1018,7 @@ Null-terminated character string containing the prefix to look for.
 
 `starts_with()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-See [ends_with](#ends_with) to see if a string ends with a postfix.
+See [ends_with](#ends_with) to see if a string ends with a suffix.
 
 ### Example
 
