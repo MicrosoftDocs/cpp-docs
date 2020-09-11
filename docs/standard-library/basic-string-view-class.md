@@ -1029,14 +1029,12 @@ See [ends_with](#ends_with) to see if a string ends with a postfix.
 
 int main()
 {
-    std::basic_string<char> str = "abcdefg";
-
-    std::cout << std::boolalpha; // so booleans show as 'true'/'false'     
-    std::cout << str.starts_with('b') << '\n';
-    std::cout << str.starts_with("aBc") << '\n';
+    std::cout << std::boolalpha; // so booleans show as 'true'/'false'  
+    std::cout << std::string_view("abcdefg").starts_with('b') << '\n';
+    std::cout << std::string_view("abcdefg").starts_with("aBc") << '\n';
 
     std::basic_string<char> str2 = "abc";
-    std::cout << str.starts_with(str2);
+    std::cout << std::string_view("abcdefg").starts_with(str2);
 
     return 0;
 }
