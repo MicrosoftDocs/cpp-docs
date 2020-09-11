@@ -53,7 +53,7 @@ Hover over any variable, function, or other symbol to get information about it, 
 
 ::: moniker range="vs-2019"
 
-![A screenshot showing the Quick Info tooltip in Visual Studio 2019.](../ide/media/quick-info-vs2019.png "Quick Info")
+![Screenshot showing the Quick Info tooltip in Visual Studio 2019.](../ide/media/quick-info-vs2019.png "Quick Info")
 
 The **Quick Info** tooltip has a **Search Online** link. Go to **Tools** > **Options** > **Text Editor** > **C++** > **View** to specify the search provider.
 
@@ -65,7 +65,7 @@ If there is an error in your code, you can hover over it and **Quick Info** will
 
 ::: moniker range="<=vs-2017"
 
-![A screenshot showing the Quick Info tooltip in Visual Studio 2017.](../ide/media/quick-info.png "Quick Info")
+![Screenshot showing the Quick Info tooltip in Visual Studio 2017.](../ide/media/quick-info.png "Quick Info")
 
 If there is an error in your code, you can hover over it and **Quick Info** will display the error message. You can also find the error message in the **Error List** window.
 

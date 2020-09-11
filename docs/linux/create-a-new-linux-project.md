@@ -25,7 +25,7 @@ To create a new Linux project in Visual Studio 2017, follow these steps:
 1. Select **File > New Project** in Visual Studio, or press **Ctrl + Shift + N**.
 1. Select the **Visual C++ > Cross Platform > Linux** node, and then select the project type to create. Enter a **Name** and **Location**, and choose **OK**.
 
-   ![A screenshot showing the New Project dialog box with Visual C plus plus > Cross Platform > Linux selected, all of the project types called out, and the Name and Location text boxes also called out.](media/newproject.png)
+   ![Screenshot showing the New Project dialog box with Visual C plus plus > Cross Platform > Linux selected, all of the project types called out, and the Name and Location text boxes also called out.](media/newproject.png)
 
    | Project Type | Description |
    | ------------ | --- |

@@ -164,7 +164,7 @@ It's time to add some math logic.
 
 1. You'll see a green squiggle appear under `Calculate`. It's because we haven't defined the `Calculate` function in the .cpp file. Hover over the word, click the lightbulb (in this case, a screwdriver) that pops up, and choose **Create definition of 'Calculate' in Calculator.cpp**.
 
-   ![A Screenshot of Visual Studio 2019 showing the Create definition of Calculate in Calculator C P P option highlighted.](./media/calc-vs2019-create-definition.png "Create definition of Calculate")
+   ![Screenshot of Visual Studio 2019 showing the Create definition of Calculate in Calculator C P P option highlighted.](./media/calc-vs2019-create-definition.png "Create definition of Calculate")
 
    A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *Calculator.cpp*.
 

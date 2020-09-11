@@ -82,7 +82,7 @@ You can run a text search for anything in your solution with **Find** (**Ctrl+F*
 
 You can organize **Find in Files** results in two windows. You can append results from multiple searches together. Select a result to go to that location in the file.
 
-![A screenshot showing a Find in File search result.](../ide/media/vs2017-find-in-files-results.png "Find in Files")
+![Screenshot showing a Find in File search result.](../ide/media/vs2017-find-in-files-results.png "Find in Files")
 
 For more information, see [Find in Files](/visualstudio/ide/find-in-files) in the Visual Studio documentation.
 
