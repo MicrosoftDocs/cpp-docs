@@ -20,7 +20,7 @@ The **C++ CMake tools for Windows** component uses the [Open Folder](open-folder
 
 **C++ CMake tools for Windows** is installed as part of the **Desktop development with C++** and **Linux Development with C++** workloads. For more information, see [Cross-platform CMake projects](../linux/cmake-linux-project.md).
 
-![CMake component in C++ Desktop workload](media/cmake-install-2019.png)
+![A screenshot of the Desktop development with C plus plus dropdown selected and the C plus plus C Make tolls for Windows option called out.](media/cmake-install-2019.png)
 
 For more information, see [Install the C++ Linux workload in Visual Studio](../linux/download-install-and-setup-the-linux-development-workload.md).
 
@@ -153,7 +153,7 @@ Visual Studio 2017 has rich support for CMake, including [cross-platform CMake p
 
 **Visual C++ Tools for CMake** is installed as part of the **Desktop development with C++** and **Linux Development with C++** workloads.
 
-![CMake component in C++ Desktop workload](media/cmake-install.png)
+![A screenshot of the Individual components tab with the Visual C plus plus tools for C make option called](media/cmake-install.png)
 
 For more information, see [Install the C++ Linux workload in Visual Studio](../linux/download-install-and-setup-the-linux-development-workload.md).
 

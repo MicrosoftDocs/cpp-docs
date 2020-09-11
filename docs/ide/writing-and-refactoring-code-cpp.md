@@ -93,11 +93,11 @@ For some kinds of errors, as well as common coding patterns, the editor will off
 
 In the following example, a `vector` was declared but no definition was found, so the editor offers to include the necessary header file:
 
-![C&#43;&#43; quick fix](../ide/media/quick-fix-for-header-cpp.png "C++ Quick Fix")
+![A screenshot showing error squiggles and the quick fix that the editor offers.](../ide/media/quick-fix-for-header-cpp.png "C++ Quick Fix")
 
 The editor also offers Quick Fixes for some refactoring opportunities. For example, if you declare a class in a header file, Visual Studio will offer to create a definition for it in a separate .cpp file.
 
-![C&#43;&#43; quick fix](../ide/media/quick-fix.png "C++ Quick Fix")
+![A screenshot showing the quick fix with the Create definition of Channel Route Iterator in channels dot C P P option highlighted.](../ide/media/quick-fix.png "C++ Quick Fix")
 
 ## Change tracking
 

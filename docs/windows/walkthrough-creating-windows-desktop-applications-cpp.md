@@ -46,11 +46,11 @@ Follow these steps to create your first Windows desktop project. As you go, you'
 
 1. In **Solution Explorer**, right-click the **DesktopApp** project, choose **Add**, and then choose **New Item**.
 
-   ![Add new item to DesktopApp Project](../build/media/desktop-app-project-add-new-item-153.gif "Add new item to DesktopApp Project")
+   ![A short video showing the user adding a new item to DesktopApp Project in Visual Studio 2019.](../build/media/desktop-app-project-add-new-item-153.gif "Add new item to DesktopApp Project")
 
 1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
 
-   ![Add .cpp file to DesktopApp Project](../build/media/desktop-app-add-cpp-file-153.png "Add .cpp file to DesktopApp Project")
+   ![A screenshot of the Add New Item dialog box in Visual Studio 2019 with Installed > Visual C plus plus selected and the C plus plus File option highlighted.](../build/media/desktop-app-add-cpp-file-153.png "Add .cpp file to DesktopApp Project")
 
 Your project is now created and your source file is opened in the editor. To continue, skip ahead to [Create the code](#create-the-code).
 
@@ -66,17 +66,17 @@ Your project is now created and your source file is opened in the editor. To con
 
    In the **Name** box, type a name for the project, for example, *DesktopApp*. Choose **OK**.
 
-   ![Name the DesktopApp project](../build/media/desktop-app-new-project-name-153.png "Name the DesktopApp project")
+   ![A screenshot of the New Project dialog box in Visual Studio 2017 with Installed > Visual C plus plus > Windows Desktop selected, the Windows Desktop Wizard option highlighted, and DesktopApp typed in the Name text box.](../build/media/desktop-app-new-project-name-153.png "Name the DesktopApp project")
 
 1. In the **Windows Desktop Project** dialog, under **Application type**, select **Windows application (.exe)**. Under **Additional options**, select **Empty project**. Make sure **Precompiled Header** isn't selected. Choose **OK** to create the project.
 
 1. In **Solution Explorer**, right-click the **DesktopApp** project, choose **Add**, and then choose **New Item**.
 
-   ![Add new item to DesktopApp Project](../build/media/desktop-app-project-add-new-item-153.gif "Add new item to DesktopApp Project")
+   ![A short video showing the user adding a new item to DesktopApp Project in Visual Studio 2017.](../build/media/desktop-app-project-add-new-item-153.gif "Add new item to DesktopApp Project")
 
 1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
 
-   ![Add .cpp file to DesktopApp Project](../build/media/desktop-app-add-cpp-file-153.png "Add .cpp file to DesktopApp Project")
+   ![A screenshot of the Add New Item dialog box in Visual Studio 2017 with Installed > Visual C plus plus selected and the C plus plus File option highlighted.](../build/media/desktop-app-add-cpp-file-153.png "Add .cpp file to DesktopApp Project")
 
 Your project is now created and your source file is opened in the editor. To continue, skip ahead to [Create the code](#create-the-code).
 
@@ -92,7 +92,7 @@ Your project is now created and your source file is opened in the editor. To con
 
    In the **Name** box, type a name for the project, for example, *DesktopApp*. Choose **OK**.
 
-   ![Name the DesktopApp project](../build/media/desktop-app-new-project-name-150.png "Name the DesktopApp project")
+   ![A screenshot of the New Project dialog box in Visual Studio 2015 with Installed > Templates > Visual C plus plus > Win32 selected, the Win32 Project option highlighted, and DesktopApp typed in the Name text box.](../build/media/desktop-app-new-project-name-150.png "Name the DesktopApp project")
 
 1. On the **Overview** page of the **Win32 Application Wizard**, choose **Next**.
 
@@ -102,11 +102,11 @@ Your project is now created and your source file is opened in the editor. To con
 
 1. In **Solution Explorer**, right-click the DesktopApp project, choose **Add**, and then choose **New Item**.
 
-   ![Add new item to DesktopApp Project](../build/media/desktop-app-project-add-new-item-150.gif "Add new item to DesktopApp Project")
+   ![A short video showing the user adding a new item to DesktopApp Project in Visual Studio 2015.](../build/media/desktop-app-project-add-new-item-150.gif "Add new item to DesktopApp Project")
 
 1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
 
-   ![Add .cpp file to DesktopApp Project](../build/media/desktop-app-add-cpp-file-150.png "Add .cpp file to DesktopApp Project")
+   ![A screenshot of the Add New Item dialog box in Visual Studio 2015 with Installed > Visual C plus plus selected and the C plus plus File option highlighted.](../build/media/desktop-app-add-cpp-file-150.png "Add .cpp file to DesktopApp Project")
 
 Your project is now created and your source file is opened in the editor.
 

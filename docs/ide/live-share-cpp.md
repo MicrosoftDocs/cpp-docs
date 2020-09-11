@@ -33,11 +33,11 @@ The host and guests can use these IntelliSense features:
 
 To start a Live Share session in Visual Studio, click the Share button in the top right, or go to **File** > **Start Collaboration Session**. This generates a link that you can share with your collaborators.
 
-![C&#43;&#43; Live Share Button](../ide/media/live-share-button-cpp.png "Live Share Button")
+![A small screenshot of the Live Share button.](../ide/media/live-share-button-cpp.png "Live Share Button")
 
 To end a session, select **End Collaboration Session** from the **Sharing** dropdown.
 
-![C&#43;&#43; Live Share Button](../ide/media/live-share-end-session-cpp.png "Live Share Button")
+![A screenshot of the Sharing dropdown list with the End Collaboration Session option highlighted..](../ide/media/live-share-end-session-cpp.png "Live Share Button")
 
 ## For more information
 

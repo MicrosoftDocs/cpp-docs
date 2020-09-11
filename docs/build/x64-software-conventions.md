@@ -141,7 +141,7 @@ _declspec(align(4)) struct {
 }
 ```
 
-![AMD conversion example 2 structure layout](../build/media/vcamd_conv_ex_3_block.png "AMD conversion example 2 structure layout")
+![AMD conversion example 3 structure layout](../build/media/vcamd_conv_ex_3_block.png "AMD conversion example 2 structure layout")
 
 #### Example 4
 
