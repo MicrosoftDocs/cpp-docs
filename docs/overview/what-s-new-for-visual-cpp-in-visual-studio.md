@@ -251,7 +251,7 @@ The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C+
 
 ##### Visual Studio 2017 version 15.8
 
-The [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md) compiler switch enables the new experimental MSVC preprocessor that will eventually conform to all applicable C and C++ standards. For more information, see [MSVC experimental preprocessor overview](../preprocessor/preprocessor-experimental-overview.md).
+The [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md) compiler switch enables the new experimental MSVC preprocessor that will eventually conform to all applicable C and C++ standards. For more information, see [MSVC new preprocessor overview](../preprocessor/preprocessor-experimental-overview.md).
 
 ### New compiler options
 
