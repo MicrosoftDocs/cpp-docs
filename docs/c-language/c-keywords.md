@@ -1,105 +1,128 @@
 ---
 title: "C Keywords"
-ms.date: "10/09/2018"
+description: "Keywords in Standard C and Microsoft C compiler extensions."
+ms.date: 09/12/2020
 helpviewer_keywords: ["keywords [C]", "redefining keywords", "Microsoft-specific keywords"]
 ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
 ---
 # C Keywords
 
-"Keywords" are words that have special meaning to the C compiler. In translation phases 7 and 8, an identifier cannot have the same spelling and case as a C keyword. (See a description of [translation phases](../preprocessor/phases-of-translation.md) in the *Preprocessor Reference*; for information on identifiers, see [Identifiers](../c-language/c-identifiers.md).) The C language uses the following keywords:
+*Keywords* are words that have special meaning to the C compiler. In translation phases 7 and 8, an identifier can't have the same spelling and case as a C keyword. For more information, see [translation phases](../preprocessor/phases-of-translation.md) in the *Preprocessor Reference*. For more information on identifiers, see [Identifiers](../c-language/c-identifiers.md).
+
+## Standard C keywords
+
+The C language uses the following keywords:
 
 :::row:::
     :::column:::
         **`auto`**\
-        **`double`**\
-        **`int`**\
-        **`struct`**\
         **`break`**\
-        **`else`**\
-        **`long`**\
-        **`switch`**
-    :::column-end:::
-    :::column:::
         **`case`**\
-        **`enum`**\
-        **`register`**\
-        **`typedef`**\
         **`char`**\
-        **`extern`**\
-        **`return`**\
-        **`union`**
-    :::column-end:::
-    :::column:::
         **`const`**\
-        **`float`**\
-        **`short`**\
-        **`unsigned`**\
         **`continue`**\
-        **`for`**\
-        **`signed`**\
-        **`void`**
+        **`default`**\
+        **`do`**\
+        **`double`**\
+        **`else`**\
+        **`enum`**
     :::column-end:::
     :::column:::
-        **`default`**\
+        **`extern`**\
+        **`float`**\
+        **`for`**\
         **`goto`**\
-        **`sizeof`**\
-        **`volatile`**\
-        **`do`**\
         **`if`**\
+        **`inline`** <sup>1, a</sup>\
+        **`int`**\
+        **`long`**\
+        **`register`**\
+        **`restrict`** <sup>1, a</sup>\
+        **`return`**
+    :::column-end:::
+    :::column:::
+        **`short`**\
+        **`signed`**\
+        **`sizeof`**\
         **`static`**\
-        **`while`**
+        **`struct`**\
+        **`switch`**\
+        **`typedef`**\
+        **`union`**\
+        **`unsigned`**\
+        **`void`**\
+        **`volatile`**
+    :::column-end:::
+    :::column:::
+        **`while`**\
+        **`_Alignas`** <sup>2, a</sup>\
+        **`_Alignof`** <sup>2, a</sup>\
+        **`_Atomic`** <sup>2, b</sup>\
+        **`_Bool`** <sup>1, a</sup>\
+        **`_Complex`** <sup>1, b</sup>\
+        **`_Generic`** <sup>2, a</sup>\
+        **`_Imaginary`** <sup>1, b</sup>\
+        **`_Noreturn`** <sup>2, a</sup>\
+        **`_Static_assert`** <sup>2, a</sup>\
+        **`_Thread_local`** <sup>2, b</sup>
     :::column-end:::
 :::row-end:::
 
-You can't redefine keywords. However, you can specify text to be substituted for keywords before compilation by using C [preprocessor directives](../preprocessor/preprocessor-directives.md).
+<sup>1</sup>  Keywords introduced in ISO C99.
 
-**Microsoft Specific**
+<sup>2</sup>   Keywords introduced in ISO C11.
 
-The ANSI C standard allows identifiers with two leading underscores to be reserved for compiler implementations. Therefore, the Microsoft convention is to precede Microsoft-specific keyword names with double underscores. These words cannot be used as identifier names. For a description of the ANSI rules for naming identifiers, including the use of double underscores, see [Identifiers](../c-language/c-identifiers.md).
+<sup>a</sup>  Starting in Visual Studio 2019 version 16.8, these keywords are supported in code compiled as C when the **`/std:c11`** or **`/std:c17`** compiler options are specified.
+
+<sup>b</sup>  Starting in Visual Studio 2019 version 16.8, these keywords are recognized but not supported by the compiler in code compiled as C when the **`/std:c11`** or **`/std:c17`** compiler options are specified.
+
+You can't redefine keywords. However, you can specify text to replace keywords before compilation by using C [preprocessor directives](../preprocessor/preprocessor-directives.md).
+
+## Microsoft-specific C keywords
+
+The ANSI and ISO C standards allow identifiers with two leading underscores to be reserved for compiler implementations. The Microsoft convention is to precede Microsoft-specific keyword names with double underscores. These words can't be used as identifier names. For a description of the rules for naming identifiers, including the use of double underscores, see [Identifiers](../c-language/c-identifiers.md).
 
 The following keywords and special identifiers are recognized by the Microsoft C compiler:
 
 :::row:::
     :::column:::
-        **`__asm`**<sup>3</sup>\
-        **`dllimport`**<sup>2</sup>\
-        **`__int8`**<sup>3</sup>\
-        **`naked`**<sup>2</sup>\
-        **`__based`**<sup>1, 3</sup>
+        **`__asm`**<sup>5</sup>\
+        **`dllimport`**<sup>4</sup>\
+        **`__int8`**<sup>5</sup>\
+        **`naked`**<sup>4</sup>\
+        **`__based`**<sup>3, 5</sup>
     :::column-end:::
     :::column:::
-        **`__except`**<sup>3</sup>\
-        **`__int16`**<sup>3</sup>\
-        **`__stdcall`**<sup>3</sup>\
-        **`__cdecl`**<sup>3</sup>\
+        **`__except`**<sup>5</sup>\
+        **`__int16`**<sup>5</sup>\
+        **`__stdcall`**<sup>5</sup>\
+        **`__cdecl`**<sup>5</sup>\
         **`__fastcall`**
     :::column-end:::
     :::column:::
-        **`__int32`**<sup>3</sup>\
-        **`thread`**<sup>2</sup>\
-        **`__declspec`**<sup>3</sup>\
-        **`__finally`**<sup>3</sup>\
-        **`__int64`**<sup>3</sup>
+        **`__int32`**<sup>5</sup>\
+        **`thread`**<sup>4</sup>\
+        **`__declspec`**<sup>5</sup>\
+        **`__finally`**<sup>5</sup>\
+        **`__int64`**<sup>5</sup>
     :::column-end:::
     :::column:::
-        **`__try`**<sup>3</sup>\
-        **`dllexport`**<sup>2</sup>\
-        **`__inline`**<sup>3</sup>\
-        **`__leave`**<sup>3</sup>
+        **`__try`**<sup>5</sup>\
+        **`dllexport`**<sup>4</sup>\
+        **`__inline`**<sup>5</sup>\
+        **`__leave`**<sup>5</sup>
     :::column-end:::
 :::row-end:::
 
-<sup>1</sup> The **`__based`** keyword has limited uses for 32-bit and 64-bit target compilations.
+<sup>3</sup> The **`__based`** keyword has limited uses for 32-bit and 64-bit target compilations.
 
-<sup>2</sup> These are special identifiers when used with **`__declspec`**; their use in other contexts is not restricted.
+<sup>4</sup> These are special identifiers when used with **`__declspec`**; their use in other contexts is unrestricted.
 
-<sup>3</sup> For compatibility with previous versions, these keywords are available both with two leading underscores and a single leading underscore when Microsoft extensions are enabled.
+<sup>5</sup> For compatibility with previous versions, these keywords are available both with two leading underscores and a single leading underscore when Microsoft extensions are enabled.
 
-Microsoft extensions are enabled by default. To ensure that your programs are fully portable, you can disable Microsoft extensions by specifying the [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) option during compilation. When you do this, some Microsoft-specific keywords are disabled.
+Microsoft extensions are enabled by default. To assist in creating portable code, you can disable Microsoft extensions by specifying the [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) option during compilation. When you use this option, some Microsoft-specific keywords are disabled.
 
-When Microsoft extensions are enabled, you can use the keywords listed above in your programs. For ANSI compliance, most of these keywords are prefaced by a double underscore. The four exceptions, **`dllexport`**, **`dllimport`**, **`naked`**, and **`thread`**, are used only with **`__declspec`** and therefore do not require a leading double underscore. For backward compatibility, single-underscore versions of the rest of the keywords are supported.
-
-**END Microsoft Specific**
+When Microsoft extensions are enabled, you can use the keywords listed above in your programs. For standards compliance, most of these keywords are prefaced by a double underscore. The four exceptions, **`dllexport`**, **`dllimport`**, **`naked`**, and **`thread`**, are used only with **`__declspec`** and don't require a leading double underscore. For backward compatibility, single-underscore versions of the rest of the keywords are supported.
 
 ## See also
 

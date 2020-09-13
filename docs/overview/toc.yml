@@ -15,6 +15,8 @@
       href: ../overview/supported-platforms-visual-cpp.md
     - name: C++ Tools and Features in Visual Studio Editions
       href: ../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md
+    - name: Install C11 and C17 support in Visual Studio
+      href: ../overview/install-c17-support.md
     - name: Samples
       href: ../overview/visual-cpp-samples.md
     - name: Help and community
