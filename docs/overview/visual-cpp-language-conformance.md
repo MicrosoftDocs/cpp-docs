@@ -426,7 +426,7 @@ The compiler option [`/Zc:noexceptTypes`](../build/reference/zc-noexcepttypes.md
 
 <a name="note_B"></a> __B__ Supported in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode in Visual Studio 2017 version 15.7. For more information, see [Two-phase name lookup support comes to MSVC](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/).
 
-<a name="note_C"></a> __C__ The compiler's support for C99 Preprocessor rules is incomplete in Visual Studio 2017. We're overhauling the preprocessor, and began shipping those changes in Visual Studio 2017 version 15.8 with the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch.
+<a name="note_C"></a> __C__ Starting in Visual Studio 2017 version 15.8, the compiler provides support for the C99 preprocessor via the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch. Starting in Visual Studio 2019 version 16.6, the compiler fully implements the C99 preprocessor via the [`/Zc:preprocessor`](../build/reference/zc-conformance.md) switch. It is on by default when the compiler switch `/std:c11` or `/std:c17` is specified.
 
 <a name="note_D"></a> __D__ Supported under [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) with a suppressible warning, [`C4984`](../error-messages/compiler-warnings/compiler-warning-c4984.md).
 
@@ -445,7 +445,7 @@ previous `std::experimental` version, made necessary by symlink support, bug fix
 
 <a name="note_byte"></a> __byte__ `std::byte` is enabled by [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) (or [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)), but because it can conflict with the Windows SDK headers in some cases, it has a fine-grained opt-out macro. It can be disabled by defining `_HAS_STD_BYTE` as `0`.
 
-<a name="note_C11"></a> __C11__ The Universal CRT implemented the parts of the C11 Standard Library that are required by C++17, with the exception of C99 `strftime()` E/O alternative conversion specifiers, C11 `fopen()` exclusive mode, and C11 `aligned_alloc()`. The latter is unlikely to be implemented, because C11 specified `aligned_alloc()` in a way that's incompatible with the Microsoft implementation of `free()`: namely, that `free()` must be able to handle highly aligned allocations.
+<a name="note_C11"></a> __C11__ Compiler support for C11 requires Visual Studio version 16.8, or higher. C11 library support requires Windows SDK version 20211, or higher. The Universal CRT implements the parts of the C11 Standard Library that are required by C++17, with the exception of C99 `strftime()` E/O alternative conversion specifiers, and C11 `aligned_alloc()`. The latter is unlikely to be implemented because the Windows operating system doesn't support aligned allocations.
 
 <a name="note_rem"></a> __rem__ Features removed when the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) (or [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)) compiler option is specified. These features can be re-enabled to ease the transition to newer language modes by use of these macros: `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS`, and `_HAS_UNEXPECTED`.
 
