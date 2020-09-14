@@ -1,5 +1,6 @@
 ---
 title: "C complex math support"
+description: "Describes C-language complex math support in the Microsoft C runtime library (CRT)"
 ms.date: "05/14/2019"
 f1_keywords: ["c.complex"]
 helpviewer_keywords: ["complex numbers, math routines", "math routines", "complex numbers"]

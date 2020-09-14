@@ -1,5 +1,6 @@
 ---
 title: "Math and floating-point support"
+description: "Describes floating-point support in the Microsoft Universal C Runtime library (UCRT)"
 ms.date: "9/14/2020"
 f1_keywords: ["c.math"]
 helpviewer_keywords: ["floating-point numbers, math routines", "math routines", "floating-point numbers"]

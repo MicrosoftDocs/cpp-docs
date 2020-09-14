@@ -1,5 +1,6 @@
 ---
 title: "Recommendations for Choosing Between Functions and Macros"
+description: "Explains the differences between using macros vs functions in the Microsoft C runtime library (CRT)"
 ms.date: "11/04/2016"
 f1_keywords: ["c.functions"]
 helpviewer_keywords: ["functions [CRT], vs. macros", "macros, vs. functions"]
