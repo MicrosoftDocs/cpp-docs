@@ -52,7 +52,7 @@ int main() { }
 The **`/translateInclude`** option allows the compiler to import the header units instead of compile the headers again. Here's an example command line that translates the include directives for *`util.h`* and *`app.h`* into imports of the header units instead:
 
 ```CMD
->cl /IC:\ /experimental:module /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit C:\app\app.h=C:\app.h.ifc
+cl /IC:\ /experimental:module /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit C:\app\app.h=C:\app.h.ifc
 ```
 
 ### To set this compiler option in the Visual Studio development environment

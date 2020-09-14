@@ -45,7 +45,7 @@ Examples of full module partition names include:
 If a module reference is created using a *`module-name`*, other modules on the command line don't get searched if the compiler encounters an import of that name. For example, given this command line:
 
 ```cmd
->cl ... /experimental:module /module:reference m.ifc /module:reference m=n.ifc
+cl ... /experimental:module /module:reference m.ifc /module:reference m=n.ifc
 ```
 
 In the case above, if the compiler sees `import m;` then *`m.ifc`* doesn't get searched.
@@ -63,13 +63,13 @@ Given three modules as listed in this table:
 The reference options using a *`filename`* argument could look like:
 
 ```cmd
->cl ... /experimental:module /module:reference m.ifc /module:reference m-part.ifc /module:reference Networking.ifc
+cl ... /experimental:module /module:reference m.ifc /module:reference m-part.ifc /module:reference Networking.ifc
 ```
 
 The reference options using *`module-name=filename`* could look like:
 
 ```cmd
->cl ... /experimental:module /module:reference m=m.ifc /module:reference M:Part1=m-part.ifc /module:reference Core.Networking=Networking.ifc
+cl ... /experimental:module /module:reference m=m.ifc /module:reference M:Part1=m-part.ifc /module:reference Core.Networking=Networking.ifc
 ```
 
 ### To set this compiler option in the Visual Studio development environment

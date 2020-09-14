@@ -39,7 +39,7 @@ Given a project that references two header files and their header units, listed 
 The compiler options to reference the header units for these particular header files might look like this example:
 
 ```CMD
->cl ... /experimental:module /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit C:\app\app.h=C:\app.h.ifc
+cl ... /experimental:module /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit C:\app\app.h=C:\app.h.ifc
 ```
 
 ### To set this compiler option in the Visual Studio development environment

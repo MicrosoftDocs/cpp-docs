@@ -35,13 +35,13 @@ The compiler resolves a *`header-name`* based on the include directory search or
 The argument *`header-name`* must be specified the same way it would appear in source. The argument is sensitive to quoting rules and to `<` and `>` operators on the command line. The properly escaped command to build a header unit such as `<vector>` using the VS2019 command prompt might look like:
 
 ```cmd
->cl ... /experimental:module /module:exportHeader "<vector>"
+cl ... /experimental:module /module:exportHeader "<vector>"
 ```
 
 Building a local project header such as `"utils/util.h"` might look like:
 
 ```cmd
->cl ... /experimental:module /module:exportHeader """util/util.h"""
+cl ... /experimental:module /module:exportHeader """util/util.h"""
 ```
 
 The quoting rules in other command-line processors may differ.
@@ -55,13 +55,13 @@ When using the *`header-name`* form of **`/module:exportHeader`**, you may find 
 Given headers `"C:\util\util.h"` and `"C:\app\app.h"`, you can export them as *`header-name`* arguments by using this command:
 
 ```cmd
->cl /IC:\ /experimental:module /module:exportHeader """util/util.h""" """app/app.h""" /FoC:\obj
+cl /IC:\ /experimental:module /module:exportHeader """util/util.h""" """app/app.h""" /FoC:\obj
 ```
 
 You can export them as *`filename`* arguments by using this command:
 
 ```cmd
->cl /IC:\ /experimental:module /module:exportHeader C:\util\util.h C:\app\app.h /FoC:\obj
+cl /IC:\ /experimental:module /module:exportHeader C:\util\util.h C:\app\app.h /FoC:\obj
 ```
 
 ### To set this compiler option in the Visual Studio development environment
