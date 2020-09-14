@@ -89,4 +89,5 @@ Because complex numbers are not a native type in the Microsoft compiler, the sta
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Type-generic math](tgmath.md)\
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

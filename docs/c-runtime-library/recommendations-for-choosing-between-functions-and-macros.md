@@ -35,4 +35,5 @@ If you need to choose between a function and a macro implementation of a library
 
 ## See also
 
+[Type-generic math](tgmath.md)
 [CRT Library Features](../c-runtime-library/crt-library-features.md)

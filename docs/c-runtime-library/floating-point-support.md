@@ -1,6 +1,6 @@
 ---
 title: "Math and floating-point support"
-ms.date: "01/31/2019"
+ms.date: "9/14/2020"
 f1_keywords: ["c.math"]
 helpviewer_keywords: ["floating-point numbers, math routines", "math routines", "floating-point numbers"]
 ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
@@ -8,6 +8,8 @@ ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
 # Math and floating-point support
 
 The Universal C Runtime library (UCRT) provides many integral and floating-point math library functions, including all of those required by ISO C99. The floating-point functions are implemented to balance performance with correctness. Because producing the correctly rounded result may be prohibitively expensive, these functions are designed to efficiently produce a close approximation to the correctly rounded result. In most cases, the result produced is within +/-1 ulp of the correctly rounded result, though there may be cases where there is greater inaccuracy.
+
+For ISO C Standard 11 (C11) and later, the \<tgmath.h> header, in addition to including \<math.h> and \<complex.h>, provides macros that invoke a corresponding math function based on the types of the parameters. See [Type-generic math](tgmath.md) for details.
 
 Many of the floating point math library functions have different implementations for different CPU architectures. For example, the 32-bit x86 CRT may have a different implementation than the 64-bit x64 CRT. In addition, some of the functions may have multiple implementations for a given CPU architecture. The most efficient implementation is selected dynamically at run-time depending on the instruction sets supported by the CPU. For example, in the 32-bit x86 CRT, some functions have both an x87 implementation and an SSE2 implementation. When running on a CPU that supports SSE2, the faster SSE2 implementation is used. When running on a CPU that does not support SSE2, the slower x87 implementation is used. Because different implementations of the math library functions may use different CPU instructions and different algorithms to produce their results, the functions may produce different results across CPUs. In most cases, the results are within +/-1 ulp of the correctly rounded result, but the actual results may vary across CPUs.
 
@@ -127,5 +129,5 @@ Previous 16-bit versions of Microsoft C/C++ and Microsoft Visual C++ supported t
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
-[Floating-point primitives](../c-runtime-library/reference/floating-point-primitives.md)<br/>
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)\
+[Floating-point primitives](../c-runtime-library/reference/floating-point-primitives.md)
