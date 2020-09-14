@@ -39,4 +39,8 @@ cl /EHsc /MD /experimental:module /module:export /module:name ModuleName /module
 
 ## See also
 
+[`/headerUnit` (Use header unit IFC)](headerunit.md)\
+[`/module:exportHeader` (Create header units)](module-exportheader.md)\
+[`/module:reference` (Use named module IFC)](module-reference.md)\
+[`/translateInclude` (Translate include directives into import directives)](translateinclude.md)\
 [/Zc (Conformance)](zc-conformance.md)
