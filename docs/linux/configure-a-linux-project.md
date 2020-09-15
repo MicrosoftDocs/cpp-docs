@@ -104,13 +104,13 @@ To manage your header cache, navigate to **Tools > Options, Cross Platform > Con
 
 ::: moniker range="vs-2017"
 
-![Remote Header IntelliSense](media/remote-header-intellisense.png)
+![Screenshot showing the Options dialog box with Cross Platform > Connection Manager > Remote Headers IntelliSense Manager selected.](media/remote-header-intellisense.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-![Remote Header IntelliSense](media/connection-manager-vs2019.png)
+![Screenshot showing the Options dialog box with Cross Platform > Connection Manager selected.](media/connection-manager-vs2019.png)
 
 You can enable logging to help troubleshoot problems:
 
