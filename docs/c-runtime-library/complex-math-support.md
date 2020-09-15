@@ -1,5 +1,6 @@
 ---
 title: "C complex math support"
+description: "Describes C-language complex math support in the Microsoft C runtime library (CRT)"
 ms.date: "05/14/2019"
 f1_keywords: ["c.complex"]
 helpviewer_keywords: ["complex numbers, math routines", "math routines", "complex numbers"]
@@ -89,4 +90,5 @@ Because complex numbers are not a native type in the Microsoft compiler, the sta
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Type-generic math](tgmath.md)\
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
