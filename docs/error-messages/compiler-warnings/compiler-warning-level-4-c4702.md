@@ -13,7 +13,7 @@ This warning is the result of compiler conformance work that was done for Visual
 
 For code that is valid in both the Visual Studio .NET 2003 and Visual Studio .NET versions of Visual C++, remove the unreachable code or assure that all source code is reachable by some flow of execution.
 
-## Example
+## Examples
 
 The following sample generates C4702.
 
@@ -27,8 +27,6 @@ int main() {
    printf_s("I won't print.\n");   // C4702 unreachable
 }
 ```
-
-## Example
 
 When compiling with **/GX**, **/EHc**, **/EHsc**, or **/EHac** and using extern C functions, code can become unreachable because extern C functions are assumed to not throw, thus the catch block isn't reachable.  If you feel that this warning is not valid because a function can throw, compile with **/EHa** or **/EHs**, depending on the exception thrown.
 

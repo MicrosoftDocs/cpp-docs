@@ -39,15 +39,13 @@ If you specify the [/c (Compile Without Linking)](c-compile-without-linking.md) 
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OutputFile%2A>.
 
-## Example
+## Examples
 
 The following command line compiles and links all C source files in the current directory. The resulting executable file is named PROCESS.exe and is created in the directory "C:\Users\User Name\repos\My Project\bin".
 
 ```
 CL /Fe"C:\Users\User Name\repos\My Project\bin\PROCESS" *.C
 ```
-
-## Example
 
 The following command line creates an executable file in `C:\BIN` with the same base name as the first source file in the current directory:
 

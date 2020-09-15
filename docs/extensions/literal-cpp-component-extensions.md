@@ -40,7 +40,7 @@ For more information, see [Static](../cpp/storage-classes-cpp.md) and [const](..
 
 **literal** is a context-sensitive keyword. See [Context-Sensitive Keywords](context-sensitive-keywords-cpp-component-extensions.md) for more information.
 
-## Example
+## Examples
 
 This example shows that a **literal** variable implies **`static`**.
 
@@ -55,8 +55,6 @@ int main() {
    int value = X::i;
 }
 ```
-
-## Example
 
 The following sample shows the affect of literal in metadata:
 
@@ -78,8 +76,6 @@ Notice the difference in the metadata for `sc` and `lit`: the `modopt` directive
 ```
 .field public static literal int32 lit = int32(0x0000000A)
 ```
-
-## Example
 
 The following sample, authored in C#, references the metadata created in the previous sample and shows the affect of **literal** and **static const** variables:
 

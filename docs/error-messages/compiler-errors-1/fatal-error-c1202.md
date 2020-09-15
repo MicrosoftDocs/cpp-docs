@@ -11,7 +11,7 @@ recursive type or function dependency context too complex
 
 A template definition was recursive or exceeded complexity limits.
 
-## Example
+## Examples
 
 The following sample generates C1202.
 
@@ -27,8 +27,6 @@ public:
 };
 Factorial<7> facSeven;
 ```
-
-## Example
 
 Possible resolution.
 

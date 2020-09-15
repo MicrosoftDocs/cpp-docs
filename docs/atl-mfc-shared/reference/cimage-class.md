@@ -104,7 +104,7 @@ To determine if an attached bitmap is a DIB section, call [IsDibSection](#isdibs
 
 `CImage` cannot be selected into a new [CDC](../../mfc/reference/cdc-class.md). `CImage` creates its own HDC for the image. Because an HBITMAP can only be selected into one HDC at a time, the HBITMAP associated with the `CImage` cannot be selected into another HDC. If you need a CDC, retrieve the HDC from the `CImage` and give it to [CDC::FromHandle](../../mfc/reference/cdc-class.md#fromhandle).
 
-## Example
+## Examples
 
 ```cpp
 // Get a CDC for the image
@@ -116,8 +116,6 @@ m_myImage.ReleaseDC();
 ```
 
 When you use `CImage` in an MFC project, note which member functions in your project expect a pointer to a [CBitmap](../../mfc/reference/cbitmap-class.md) object. If you want to use `CImage` with such a function, like [CMenu::AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu), use [CBitmap::FromHandle](../../mfc/reference/cbitmap-class.md#fromhandle), pass it your `CImage` HBITMAP, and use the returned `CBitmap*`.
-
-## Example
 
 ```cpp
 void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
