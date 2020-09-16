@@ -21,7 +21,7 @@ When you specify that the default capture mode for a lambda expression is by-val
 
 - Pass the variable by reference to the capture clause. (This might change the behavior of the lambda expression.)
 
-## Example
+## Examples
 
 The following example generates C3489 variable `n` appears by value in the capture clause of a lambda expression whose default mode is by-value:
 
@@ -34,8 +34,6 @@ int main()
    [=, n]() { return n; } (); // C3489
 }
 ```
-
-## Example
 
 The following example shows four possible resolutions to C3489:
 

@@ -17,7 +17,7 @@ Check the number of parameters in your `get` and `set` methods against property 
 
 For more information, see [property](../../extensions/property-cpp-component-extensions.md).
 
-## Example
+## Examples
 
 The following sample generates C3904.
 
@@ -38,8 +38,6 @@ ref class X {
    };
 };
 ```
-
-## Example
 
 The following sample generates C3904.
 

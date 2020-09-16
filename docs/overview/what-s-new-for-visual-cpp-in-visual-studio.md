@@ -644,7 +644,7 @@ The Clang/C2 toolset that ships with Visual Studio 2017 now supports the **`/big
 
 The C++ Core Checkers for enforcing the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines) are now distributed with Visual Studio. Enable the checkers in the **Code Analysis Extensions** page in the project's property pages. The extensions are then included when you run code analysis. For more information, see [Using the C++ Core Guidelines checkers](/cpp/code-quality/using-the-cpp-core-guidelines-checkers).
 
-![Shows how to use the Code Analysis property page to select C++ Core Check rulesets.](media/CppCoreCheck.png "CppCoreCheck properties page")
+![Screenshot of the Property Pages dialog box showing Configuration Properties > Code Analysis > General selected and a number of Core Checks listed in teh Run this rule set section.](media/CppCoreCheck.png "CppCoreCheck properties page")
 
 ##### Visual Studio 2017 version 15.3
 
@@ -692,7 +692,7 @@ Visual Studio Graphics Diagnostics tools: You can use them to record and analyze
 
 - **Search and filter in the object table:** Provides a quick and easy way to find the resources you're looking for.
 
-  ![Shows the location of the filter and search controls on the Object Table window.](media/search.png)
+  ![Screenshot of the Object Table section with the Type drop-down and Search text box called out.](media/search.png)
 
 - **Resource History:** This new view provides a streamlined way of seeing the entire modification history of a resource as it was used during the rendering of a captured frame. To invoke the history for any resource, click the clock icon next to any resource hyperlink.
 

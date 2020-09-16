@@ -13,7 +13,7 @@ You tried to take the address of a member function without qualifying the member
 
 This error can also be generated as a result of compiler conformance work that was done for Visual Studio 2005: enhanced pointer-to-member conformance. Code that compiled prior to Visual Studio 2005 will now generate C3867.
 
-## Example
+## Examples
 
 C3867 can be issued from the compiler with a misleading suggested resolution. Whenever possible, use the most derived class.
 
@@ -36,8 +36,6 @@ void Derived::Bar() {
    &Derived::Test;   // OK
 }
 ```
-
-## Example
 
 The following sample generates C3867 and shows how to fix it.
 
@@ -69,8 +67,6 @@ int main() {
 }
 ```
 
-## Example
-
 The following sample generates C3867 and shows how to fix it.
 
 ```cpp
@@ -87,8 +83,6 @@ int main() {
    void (X::*pmf2)() = &X::mf;
 }
 ```
-
-## Example
 
 The following sample generates C3867.
 
@@ -111,8 +105,6 @@ public:
    }
 };
 ```
-
-## Example
 
 The following sample generates C3867.
 

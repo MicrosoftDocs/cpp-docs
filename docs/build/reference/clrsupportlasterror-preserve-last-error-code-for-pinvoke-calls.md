@@ -40,7 +40,7 @@ You can minimize the performance impact by linking with **/CLRSUPPORTLASTERROR:S
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
-## Example
+## Examples
 
 The following sample defines a native DLL with one exported function that modifies last error.
 
@@ -56,8 +56,6 @@ __declspec(dllexport) double MySqrt(__int64 n) {
    return sqrt(double(n));
 }
 ```
-
-## Example
 
 The following sample consumes the DLL, demonstrating how to use **/CLRSUPPORTLASTERROR**.
 

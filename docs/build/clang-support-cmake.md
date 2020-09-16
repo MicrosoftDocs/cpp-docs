@@ -50,7 +50,7 @@ To modify an existing configuration to use Clang, follow these steps:
 
 1. Under **General** select the **Toolset** dropdown and choose the desired Clang toolset:
 
-   ![CMake Clang toolset](media/cmake-clang-toolset.png)
+   ![Screenshot of the General dialog box showing that the Toolset is selected and clang cl x 86 is highlighted.](media/cmake-clang-toolset.png)
 
 ## Custom Clang locations
 
@@ -61,7 +61,7 @@ By default, Visual Studio looks for Clang in two places:
 
 You can specify another location by setting the **CMAKE_C_COMPILER** and **CMAKE_CXX_COMPILER** CMake variables in **CMake Settings**:
 
-![CMake Clang toolset](media/clang-location-cmake.png)
+![Screenshot of the C Make Settings dialog box with the C Make C X X Compiler highlighted.](media/clang-location-cmake.png)
 
 ## Clang compatibility modes
 

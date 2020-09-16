@@ -36,7 +36,7 @@ Visual C++ might generate this warning for a code path that never executes. You 
 
 This idiom keeps Visual C++ from generating the warning for that specific block of code. The `#pragma warning(push)` preserves the existing state before `#pragma warning(disable: 4789)` changes it. The `#pragma warning(pop)` restores the pushed state, and removes the effects of the `#pragma warning(disable:4789)`. For more information about the C++ preprocessor directive `#pragma`, see [warning](../../preprocessor/warning.md) and [Pragma Directives and the __Pragma Keyword](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
 
-## Example
+## Examples
 
 The following sample generates C4789.
 
@@ -59,8 +59,6 @@ int main()
     memcpy(&c, &w, sizeof(wchar_t));
 }
 ```
-
-## Example
 
 The following sample also generates C4789.
 
