@@ -135,7 +135,7 @@ um2 == um3: false
 */
 ```
 
-## <a name="op_neq_multimap"></a> operator!=
+## <a name="op_neq_multimap"></a> operator!= (multimap)
 
 Tests whether the [unordered_multimap](../standard-library/unordered-multimap-class.md) object on the left side of the operator is not equal to the unordered_multimap object on the right side.
 
@@ -198,7 +198,7 @@ um2 != um3: true
 */
 ```
 
-## <a name="op_eq_eq_multimap"></a> operator==
+## <a name="op_eq_eq_multimap"></a> operator== (multimap)
 
 Tests whether the [unordered_multimap](../standard-library/unordered-multimap-class.md) object on the left side of the operator is equal to the unordered_multimap object on the right side.
 
