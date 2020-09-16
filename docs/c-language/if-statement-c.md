@@ -22,7 +22,7 @@ In the first form of the syntax, if *expression* is true (nonzero), *statement* 
 
 The following are examples of the **`if`** statement:
 
-```
+```C
 if ( i > 0 )
     y = x / i;
 else
@@ -36,7 +36,7 @@ In this example, the statement `y = x/i;` is executed if `i` is greater than 0. 
 
 When nesting **`if`** statements and **`else`** clauses, use braces to group the statements and clauses into compound statements that clarify your intent. If no braces are present, the compiler resolves ambiguities by associating each **`else`** with the closest **`if`** that lacks an **`else`**.
 
-```
+```C
 if ( i > 0 )           /* Without braces */
     if ( j > i )
         x = j;
@@ -46,7 +46,7 @@ if ( i > 0 )           /* Without braces */
 
 The **`else`** clause is associated with the inner **`if`** statement in this example. If `i` is less than or equal to 0, no value is assigned to `x`.
 
-```
+```C
 if ( i > 0 )
 {                      /* With braces */
     if ( j > i )

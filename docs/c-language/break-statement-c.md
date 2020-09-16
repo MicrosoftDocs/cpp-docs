@@ -20,7 +20,7 @@ Within nested statements, the **`break`** statement terminates only the **`do`**
 
 This example illustrates the **`break`** statement:
 
-```
+```C
 #include <stdio.h>
 int main() {
    char c;
