@@ -13,7 +13,7 @@ A `#using` directive was repeated for a given metadata file, but the **`as_frien
 
 For more information, see [Friend Assemblies (C++)](../../dotnet/friend-assemblies-cpp.md).
 
-## Example
+## Examples
 
 The following sample creates a component.
 
@@ -22,8 +22,6 @@ The following sample creates a component.
 // compile with: /clr /LD
 ref class A {};
 ```
-
-## Example
 
 The following sample generates C4364.
 

@@ -11,7 +11,7 @@ ms.assetid: af5d254c-8d4a-4dda-aad9-3c5c1257c868
 
 The compiler detected an ill-formed override. For example, the base class function was not **`virtual`**. For more information, see [override](../../extensions/override-cpp-component-extensions.md).
 
-## Example
+## Examples
 
 The following sample generates C3764.
 
@@ -28,8 +28,6 @@ public ref struct B : A {
    virtual void h(int) override {}   // OK
 };
 ```
-
-## Example
 
 C3764 can also occur when a base class method is both explicitly and named overridden. The following sample generates C3764.
 

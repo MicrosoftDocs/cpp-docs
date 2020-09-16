@@ -61,7 +61,7 @@ A checked iterator refers to an iterator that calls `invalid_parameter_handler` 
 
 The iterator adaptors that support checked iterators are [checked_array_iterator Class](../standard-library/checked-array-iterator-class.md) and [unchecked_array_iterator Class](../standard-library/unchecked-array-iterator-class.md).
 
-## Example
+## Examples
 
 When you compile by using _ITERATOR_DEBUG_LEVEL set to 1 or 2, a runtime error will occur if you attempt to access an element that is outside the bounds of the container by using the indexing operator of certain classes.
 
@@ -90,8 +90,6 @@ int main()
 
 This program prints "67" then pops up an assertion failure dialog box with additional information about the failure.
 
-## Example
-
 Similarly, when you compile by using _ITERATOR_DEBUG_LEVEL set to 1 or 2, a runtime error will occur if you attempt to access an element by using `front` or `back` in container classes when the container is empty.
 
 ```cpp
@@ -113,8 +111,6 @@ int main()
 ```
 
 This program pops up an assertion failure dialog box with additional information about the failure.
-
-## Example
 
 The following code demonstrates various iterator use-case scenarios with comments about each. By default, _ITERATOR_DEBUG_LEVEL is set to 2 in Debug builds, and to 0 in Retail builds.
 

@@ -54,7 +54,7 @@ To specify regular tabs instead of Outlook-style tabs, pass the AFX_CBRS_REGULAR
 
 If you create a tabbed pane with detachable tabs, the pane may be destroyed automatically by the framework, so you should not store the pointer. To get a pointer to the tabbed pane, call the `CBasePane::GetParentTabbedPane` method.
 
-## Example
+## Examples
 
 In this example we create a `CTabbedPane` object. Next, we use [CBaseTabbedPane::AddTab](../../mfc/reference/cbasetabbedpane-class.md#addtab) to attach additional tabs.
 
@@ -86,8 +86,6 @@ pTabbededBar->EnableDocking(CBRS_ALIGN_ANY);
 
 DockPane(pTabbededBar);
 ```
-
-## Example
 
 Another way to create a tabbed control bar object is to use [CDockablePane::AttachToTabWnd](../../mfc/reference/cdockablepane-class.md#attachtotabwnd). The `AttachToTabWnd` method dynamically creates a tabbed pane object using runtime class information set by [CDockablePane::SetTabbedPaneRTC](../../mfc/reference/cdockablepane-class.md#settabbedpanertc).
 

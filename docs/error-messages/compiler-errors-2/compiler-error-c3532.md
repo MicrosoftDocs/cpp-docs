@@ -17,7 +17,7 @@ The indicated type cannot be declared with the **`auto`** keyword. For example, 
 
 1. Ensure that you do not declare an array or a method return type.
 
-## Example
+## Examples
 
 The following example yields C3532 because the **`auto`** keyword cannot declare a method return type.
 
@@ -26,8 +26,6 @@ The following example yields C3532 because the **`auto`** keyword cannot declare
 // Compile with /Zc:auto
 auto f(){}   // C3532
 ```
-
-## Example
 
 The following example yields C3532 because the **`auto`** keyword cannot declare an array.
 
