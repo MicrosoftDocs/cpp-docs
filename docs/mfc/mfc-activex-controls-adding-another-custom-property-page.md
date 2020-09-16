@@ -45,7 +45,7 @@ For more information on using property pages in an ActiveX control, see the foll
 
 1. From the shortcut menu, click **Add** and then click **Add Class**.
 
-   This opens the [Add Class](../ide/add-class-dialog-box.md) dialog box.
+   This opens the [Add Class](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) dialog box.
 
 1. Double-click the **MFC Class** template.
 

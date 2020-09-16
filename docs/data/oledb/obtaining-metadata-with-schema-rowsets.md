@@ -17,13 +17,13 @@ OLE DB Templates provide a set of classes to retrieve schema information; these 
 
 ANSI SQL defines a catalog/schema model for data stores; OLE DB uses this model. In this model, catalogs (databases) have schemas and schemas have tables.
 
-- **Catalog** A catalog is another name for a database. It's a collection of related schemas. To list the catalogs (databases) belonging to a given data source, use [CCatalog](../../data/oledb/ccatalogs-ccataloginfo.md). Because many databases have only one catalog, metadata is sometimes called schema information.
+- **Catalog** A catalog is another name for a database. It's a collection of related schemas. To list the catalogs (databases) belonging to a given data source, use [CCatalog](./schema-rowset-classes-and-typedef-classes.md#catalog). Because many databases have only one catalog, metadata is sometimes called schema information.
 
-- **Schema** A schema is a collection of database objects that are owned or have been created by a particular user. To list the schemas owned by a given user, use [CSchemata](../../data/oledb/cschemata-cschematainfo.md).
+- **Schema** A schema is a collection of database objects that are owned or have been created by a particular user. To list the schemas owned by a given user, use [CSchemata](./schema-rowset-classes-and-typedef-classes.md#schemata).
 
    In Microsoft SQL Server and ODBC 2.x terms, a schema is an owner (for example, dbo is a typical schema name). Also, SQL Server stores metadata in a set of tables: one table contains a list of all the tables and another table contains a list of all the columns. There's no equivalent to a schema in a Microsoft Access database.
 
-- **Table** Tables are collections of columns arranged in specific orders. To list the tables defined in a given catalog (database) and information about those tables, use [CTables](../../data/oledb/ctables-ctableinfo.md)).
+- **Table** Tables are collections of columns arranged in specific orders. To list the tables defined in a given catalog (database) and information about those tables, use [CTables](./schema-rowset-classes-and-typedef-classes.md#table)).
 
 ## Restrictions
 
@@ -35,13 +35,13 @@ SELECT * FROM authors WHERE l_name = 'pivo'
 
 `l_name` is a restriction. This is a simple example with only one restriction; the schema rowset classes support several restrictions.
 
-The [schema rowset typedef classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) encapsulate all the OLE DB schema rowsets so that you can access a schema rowset just like any other rowset by instantiating and opening it. For example, the typedef class [CColumns](../../data/oledb/ccolumns-ccolumnsinfo.md) is defined as:
+The [schema rowset typedef classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) encapsulate all the OLE DB schema rowsets so that you can access a schema rowset just like any other rowset by instantiating and opening it. For example, the typedef class [CColumns](./schema-rowset-classes-and-typedef-classes.md#columns) is defined as:
 
 ```cpp
 CRestrictions<CAccessor<CColumnsInfo>
 ```
 
-The [CRestrictions](../../data/oledb/crestrictions-class.md) class supplies the restriction support. After you create an instance of the schema rowset, call [CRestrictions::Open](../../data/oledb/crestrictions-open.md). This method returns a result set based on the restrictions that you specify.
+The [CRestrictions](../../data/oledb/crestrictions-class.md) class supplies the restriction support. After you create an instance of the schema rowset, call [CRestrictions::Open](./crestrictions-class.md#open). This method returns a result set based on the restrictions that you specify.
 
 To specify restrictions, refer to [Appendix B: Schema Rowsets](/previous-versions/windows/desktop/ms712921(v=vs.85)) and look up the rowset that you're using. For example, `CColumns` corresponds to the [COLUMNS Rowset](/previous-versions/windows/desktop/ms723052(v=vs.85)); that topic lists the restriction columns in the COLUMNS rowset: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. You must follow that order in specifying your restrictions.
 
@@ -69,7 +69,7 @@ So, for example, if you want to restrict by table name, TABLE_NAME is the third 
     }
     ```
 
-1. To fetch the information, access the appropriate data member of the schema rowset object, for example, `ColumnSchemaRowset.m_szColumnName`. This data member corresponds to COLUMN_NAME. To see which OLE DB column each data member corresponds to, see [CColumns](../../data/oledb/ccolumns-ccolumnsinfo.md).
+1. To fetch the information, access the appropriate data member of the schema rowset object, for example, `ColumnSchemaRowset.m_szColumnName`. This data member corresponds to COLUMN_NAME. To see which OLE DB column each data member corresponds to, see [CColumns](./schema-rowset-classes-and-typedef-classes.md#columns).
 
 For the reference of the schema rowset, typedef classes provided in the OLE DB Templates (see [Schema Rowset Classes and Typedef Classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)).
 

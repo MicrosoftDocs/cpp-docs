@@ -38,7 +38,7 @@ In an .mrg file, code that was injected because of an attribute will be delimite
 //--- End Injected Code
 ```
 
-The [no_injected_text](../../windows/no-injected-text.md) attribute is embedded in an .mrg file, which allows for the compilation of the .mrg file without text being reinjected.
+The [no_injected_text](../../windows/attributes/no-injected-text.md) attribute is embedded in an .mrg file, which allows for the compilation of the .mrg file without text being reinjected.
 
 You should be aware that the .mrg source file is intended to be a representation of the source code injected by the compiler. The .mrg file may not compile or run exactly as the original source file.
 

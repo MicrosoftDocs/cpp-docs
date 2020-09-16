@@ -32,7 +32,7 @@ For more information, you can:
 
 ## OLE DB Attributes
 
-The [OLE DB consumer attributes](../../windows/ole-db-consumer-attributes.md) provide a convenient way to create OLE DB consumers. The OLE DB attributes inject code based on the [OLE DB consumer templates](../../data/oledb/ole-db-consumer-templates-reference.md) to create working OLE DB consumers and providers. If you need to specify functionality not supported by the attributes, you can use the OLE DB Templates in conjunction with attributes in your code.
+The [OLE DB consumer attributes](../../windows/attributes/ole-db-consumer-attributes.md) provide a convenient way to create OLE DB consumers. The OLE DB attributes inject code based on the [OLE DB consumer templates](../../data/oledb/ole-db-consumer-templates-reference.md) to create working OLE DB consumers and providers. If you need to specify functionality not supported by the attributes, you can use the OLE DB Templates in conjunction with attributes in your code.
 
 ## MFC OLE DB Classes
 

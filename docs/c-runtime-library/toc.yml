@@ -443,13 +443,13 @@
     - name: _heapset
       href: ../c-runtime-library/heapset.md
     - name: inp, inpw
-      href: ../c-runtime-library/inp-inpw.md
+      href: ./inp-inpw-inpd.md
     - name: _inp, _inpw, _inpd
       href: ../c-runtime-library/inp-inpw-inpd.md
     - name: _lock
       href: ../c-runtime-library/lock.md
     - name: outp, outpw
-      href: ../c-runtime-library/outp-outpw.md
+      href: ./outp-outpw-outpd.md
     - name: _outp, _outpw, _outpd
       href: ../c-runtime-library/outp-outpw-outpd.md
     - name: _set_output_format
@@ -1226,7 +1226,7 @@
     - name: ldexp
       href: ../c-runtime-library/reference/ldexp.md
     - name: ldiv, lldiv
-      href: ../c-runtime-library/reference/ldiv-lldiv.md
+      href: ./reference/div.md
     - name: lfind
       href: ../c-runtime-library/reference/posix-lfind.md
     - name: _lfind

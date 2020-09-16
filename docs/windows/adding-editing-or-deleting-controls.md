@@ -9,7 +9,7 @@ ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
 
 Using the **Dialog Editor**, you can add, resize, edit, and delete controls in dialog boxes. You can also edit the properties of a control, such as its ID, or whether it's initially visible at run time.
 
-The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the **Dialog Editor**. You can also customize the **Toolbox** window for easier use. For more information, see [Using the Toolbox](/visualstudio/ide/using-the-toolbox) and [Show or hide the Toolbox window](showing-or-hiding-the-dialog-editor-toolbar.md).
+The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the **Dialog Editor**. You can also customize the **Toolbox** window for easier use. For more information, see [Using the Toolbox](/visualstudio/ide/using-the-toolbox) and [Show or hide the Toolbox window](./dialog-editor.md).
 
 > [!TIP]
 > While using the **Dialog Editor**, in many instances, you can select the right mouse button to display a shortcut menu of frequently used commands.
@@ -50,7 +50,7 @@ The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/refe
 1. Release the mouse button. The control settles onto the dialog box in the size you specified.
 
 > [!TIP]
-> You can resize the control after dropping it onto the dialog box by moving the sizing handles on the border of the control. For more information, see [Sizing Individual Controls](../windows/sizing-individual-controls.md).
+> You can resize the control after dropping it onto the dialog box by moving the sizing handles on the border of the control. For more information, see [Sizing Individual Controls](./arrangement-of-controls-on-dialog-boxes.md).
 
 ### To add a custom control
 
@@ -85,7 +85,7 @@ You can add custom controls to the dialog box. Select the **Custom Control** ico
 
 1. While pressing the **Ctrl** key, double-click the dialog box control.
 
-   The [Add Member Variable wizard](../ide/add-member-variable-wizard.md) appears.
+   The [Add Member Variable wizard](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard) appears.
 
 1. Type the appropriate information in the **Add Member Variable** wizard. For more information, see [Dialog Data Exchange](../mfc/dialog-data-exchange.md).
 

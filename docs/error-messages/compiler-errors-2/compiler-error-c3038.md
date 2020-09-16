@@ -9,7 +9,7 @@ ms.assetid: 140ada3e-5636-43ef-a4ee-22a9f66a771f
 
 'var' : variable in 'private' clause cannot be a reduction variable in enclosing context
 
-Variables that appear in the [reduction](../../parallel/openmp/reference/reduction.md) clause of a parallel directive cannot be specified in a [private](../../parallel/openmp/reference/private-openmp.md) clause on a work-sharing directive that binds to the parallel construct.
+Variables that appear in the [reduction](../../parallel/openmp/reference/openmp-clauses.md#reduction) clause of a parallel directive cannot be specified in a [private](../../parallel/openmp/reference/openmp-clauses.md#private-openmp) clause on a work-sharing directive that binds to the parallel construct.
 
 The following sample generates C3038:
 

@@ -14,4 +14,4 @@ An identifier's name with external linkage designates the same function or data 
 
 ## See also
 
-[Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
+[Using extern to Specify Linkage](../cpp/extern-cpp.md)

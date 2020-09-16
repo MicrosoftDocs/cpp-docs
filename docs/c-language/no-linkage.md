@@ -20,4 +20,4 @@ If an identifier has no linkage, declaring the same name again (in a declarator 
 
 ## See also
 
-[Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
+[Using extern to Specify Linkage](../cpp/extern-cpp.md)

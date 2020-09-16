@@ -58,5 +58,5 @@ auto *p = x;  // C3535
 
 ## See also
 
-[auto Keyword](../../cpp/auto-keyword.md)<br/>
+[auto Keyword](../../cpp/auto-cpp.md)<br/>
 [Fundamental Types](../../cpp/fundamental-types-cpp.md)

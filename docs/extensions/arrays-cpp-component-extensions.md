@@ -40,7 +40,7 @@ The first example of the syntax uses the **ref new** aggregate keyword to alloca
 ```
 
 *qualifiers*<br/>
-(Optional) One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md).
+(Optional) One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/extern-cpp.md), [static](../cpp/static-members-cpp.md).
 
 *array-type*<br/>
 The type of the array variable. Valid types are Windows Runtime classes and fundamental types, ref classes and structs, value classes and structs, and native pointers (`type*`).
@@ -96,7 +96,7 @@ The first example of the syntax uses the **gcnew** keyword to allocate an array.
 ```
 
 *qualifiers*<br/>
-(Optional) One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md).
+(Optional) One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/extern-cpp.md), [static](../cpp/static-members-cpp.md).
 
 *array-type*<br/>
 The type of the array variable. Valid types are Windows Runtime classes and fundamental types, ref classes and structs, value classes and structs, native pointers (`type*`), and native POD (plain old data) types.
@@ -128,7 +128,7 @@ All managed arrays inherit from `System::Array`. Any method or property of `Syst
 
 When you allocate an array whose element type is pointer-to a managed class, the elements are 0-initialized.
 
-When you allocate an array whose element type is a value type `V`, the default constructor for `V` is applied to each array element. For more information, see [.NET Framework Equivalents to C++ Native Types (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md).
+When you allocate an array whose element type is a value type `V`, the default constructor for `V` is applied to each array element. For more information, see [.NET Framework Equivalents to C++ Native Types (C++/CLI)](../dotnet/managed-types-cpp-cli.md#dotnet).
 
 At compile time, you can detect whether a type is a common language runtime (CLR) array with `__is_ref_array(type)`. For more information, see [Compiler Support for Type Traits](compiler-support-for-type-traits-cpp-component-extensions.md).
 

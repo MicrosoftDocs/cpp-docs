@@ -11,4 +11,4 @@ An internal **`static`** variable (a static variable with local or block scope) 
 
 ## See also
 
-[`auto` Keyword](../cpp/auto-keyword.md)
+[`auto` Keyword](../cpp/auto-cpp.md)

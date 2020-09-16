@@ -6,7 +6,7 @@ ms.assetid: d8a7b656-f86c-456e-9c5d-a7d52f94646e
 ---
 # How to: Convert an OpenMP parallel for Loop to Use the Concurrency Runtime
 
-This example demonstrates how to convert a basic loop that uses the OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) and [for](../../parallel/openmp/reference/for-openmp.md) directives to use the Concurrency Runtime [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm.
+This example demonstrates how to convert a basic loop that uses the OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) and [for](../openmp/reference/openmp-directives.md#for-openmp) directives to use the Concurrency Runtime [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm.
 
 ## Example - prime count
 
@@ -25,7 +25,7 @@ found 107254 prime numbers.
 
 The `parallel_for` algorithm and OpenMP 3.0 allow for the index type to be a signed integral type or an unsigned integral type. The `parallel_for` algorithm also makes sure that the specified range does not overflow a signed type. OpenMP versions 2.0 and 2.5 allow for signed integral index types only. OpenMP also does not validate the index range.
 
-The version of this example that uses the Concurrency Runtime also uses a [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) object in place of the [atomic](../../parallel/openmp/reference/atomic.md) directive to increment the counter value without requiring synchronization.
+The version of this example that uses the Concurrency Runtime also uses a [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) object in place of the [atomic](../openmp/reference/openmp-directives.md#atomic) directive to increment the counter value without requiring synchronization.
 
 For more information about `parallel_for` and other parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md). For more information about the `combinable` class, see [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md).
 

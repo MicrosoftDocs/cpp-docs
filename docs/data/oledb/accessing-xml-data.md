@@ -55,7 +55,7 @@ Use `CXMLAccessor` as you would any other accessor class, passing it as a templa
 CTable<CXMLAccessor, CRowset> rs;
 ```
 
-Use [GetXMLRowData](../../data/oledb/cxmlaccessor-getxmlrowdata.md) to retrieve data from the table one row at a time, and navigate rows using methods such as `MoveNext`, for example:
+Use [GetXMLRowData](./cxmlaccessor-class.md#getxmlrowdata) to retrieve data from the table one row at a time, and navigate rows using methods such as `MoveNext`, for example:
 
 ```cpp
 // Open data source, session, and rowset
@@ -72,7 +72,7 @@ while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )
 }
 ```
 
-You can use [GetXMLColumnData](../../data/oledb/cxmlaccessor-getxmlcolumndata.md) to retrieve the column (data type) information as XML-formatted string data.
+You can use [GetXMLColumnData](./cxmlaccessor-class.md#getxmlcolumndata) to retrieve the column (data type) information as XML-formatted string data.
 
 ## See also
 

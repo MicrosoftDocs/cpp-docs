@@ -10,4 +10,4 @@ Identifier names can refer to different identifiers in different scopes. An iden
 
 ## See also
 
-[Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
+[Using extern to Specify Linkage](../cpp/extern-cpp.md)

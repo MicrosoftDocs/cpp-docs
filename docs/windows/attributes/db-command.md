@@ -117,7 +117,7 @@ When the consumer attribute provider applies this attribute to a class, the comp
 
 ## Examples
 
-This sample defines a command that selects the first and last names from a table where the state column matches 'CA'. **db_command** creates and reads a rowset on which you can call wizard-generated functions such as [OpenAll and CloseAll](../../data/oledb/consumer-wizard-generated-methods.md), as well as `CRowset` member functions such as [MoveNext](../../data/oledb/crowset-movenext.md).
+This sample defines a command that selects the first and last names from a table where the state column matches 'CA'. **db_command** creates and reads a rowset on which you can call wizard-generated functions such as [OpenAll and CloseAll](../../data/oledb/consumer-wizard-generated-methods.md), as well as `CRowset` member functions such as [MoveNext](../../data/oledb/crowset-class.md#movenext).
 
 Note that this code requires you to provide your own connection string that connects to the pubs database. For information on how to do this in the development environment, see [How to: Connect to a Database and Browse Existing Objects](/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects) and [Add new connections](/visualstudio/data-tools/add-new-connections).
 

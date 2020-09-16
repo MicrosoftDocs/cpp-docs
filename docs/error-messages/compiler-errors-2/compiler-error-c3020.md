@@ -30,7 +30,7 @@ int main() {
 }
 ```
 
-A variable declared with [lastprivate](../../parallel/openmp/reference/lastprivate.md) cannot be used as the index inside a parallelized loop.
+A variable declared with [lastprivate](../../parallel/openmp/reference/openmp-clauses.md#lastprivate) cannot be used as the index inside a parallelized loop.
 
 The following sample will give C3020 for the second lastprivate because that lastprivate will trigger a write to idx_a within the outermost for loop. The first lastprivate doesn't give an error because that lastprivate triggers a write to idx_a outside the outermost for loop (technically, at the very end of the last iteration). The following sample generates C3020.
 

@@ -13,7 +13,7 @@ ms.assetid: 29514098-6a1c-4317-af2f-1dc268972780
 
 ## Remarks
 
-The /IGNOREIDL option specifies that any [IDL attributes](../../windows/idl-attributes.md) in source code should not be processed into an .idl file.
+The /IGNOREIDL option specifies that any [IDL attributes](../../windows/attributes/idl-attributes.md) in source code should not be processed into an .idl file.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -36,4 +36,4 @@ The /IGNOREIDL option specifies that any [IDL attributes](../../windows/idl-attr
 [/IDLOUT (Name MIDL Output Files)](idlout-name-midl-output-files.md)<br/>
 [/TLBOUT (Name .TLB File)](tlbout-name-dot-tlb-file.md)<br/>
 [/MIDL (Specify MIDL Command Line Options)](midl-specify-midl-command-line-options.md)<br/>
-[Building an Attributed Program](../../windows/building-an-attributed-program.md)
+[Building an Attributed Program](../../windows/attributes/cpp-attributes-com-net.md)

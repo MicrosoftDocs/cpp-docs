@@ -30,7 +30,7 @@ An `initializer_list` can be constructed using a braced initializer list:
 initializer_list<int> i1{ 1, 2, 3, 4 };
 ```
 
-The compiler transforms braced initializer lists with homogeneous elements into an `initializer_list` whenever the function signature requires an `initializer_list`. For more information about using `initializer_list`, see [Uniform initialization and delegating constructors](../cpp/uniform-initialization-and-delegating-constructors.md)
+The compiler transforms braced initializer lists with homogeneous elements into an `initializer_list` whenever the function signature requires an `initializer_list`. For more information about using `initializer_list`, see [Uniform initialization and delegating constructors](../cpp/initializing-classes-and-structs-without-constructors-cpp.md)
 
 ### Constructors
 

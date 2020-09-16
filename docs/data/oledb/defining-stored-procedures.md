@@ -6,7 +6,7 @@ ms.assetid: 54949b81-3275-4dd9-96e4-3eda1ed755f2
 ---
 # Defining Stored Procedures
 
-Before calling a stored procedure, you must first define it, using the [DEFINE_COMMAND](../../data/oledb/define-command.md) macro. When you define the command, denote parameters with a question mark (?) as the parameter marker:
+Before calling a stored procedure, you must first define it, using the [DEFINE_COMMAND](./macros-and-global-functions-for-ole-db-consumer-templates.md#define_command) macro. When you define the command, denote parameters with a question mark (?) as the parameter marker:
 
 ```cpp
 DEFINE_COMMAND_EX(CMySProcAccessor, _T("{INSERT {name, phone} INTO shippers (?,?)}"))
@@ -49,7 +49,7 @@ HRESULT OpenRowset()
 }
 ```
 
-Also note that you can define a stored procedure using the database attribute [db_command](../../windows/db-command.md) as follows:
+Also note that you can define a stored procedure using the database attribute [db_command](../../windows/attributes/db-command.md) as follows:
 
 ```cpp
 db_command("{ ? = CALL dbo.dt_adduserobject }")

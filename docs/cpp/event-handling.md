@@ -6,7 +6,7 @@ ms.assetid: 82de3f9a-2d88-470c-9527-8a5b54c8ced4
 ---
 # Event Handling
 
-Event handling is primarily supported for COM classes (C++ classes that implement COM objects, typically using ATL classes or the [coclass](../windows/coclass.md) attribute). For more information, see [Event Handling in COM](../cpp/event-handling-in-com.md).
+Event handling is primarily supported for COM classes (C++ classes that implement COM objects, typically using ATL classes or the [coclass](../windows/attributes/coclass.md) attribute). For more information, see [Event Handling in COM](../cpp/event-handling-in-com.md).
 
 Event handling is also supported for native C++ classes (C++ classes that do not implement COM objects), however, that support is deprecated and will be removed in a future release.  For more information, see [Event Handling in Native C++](../cpp/event-handling-in-native-cpp.md).
 

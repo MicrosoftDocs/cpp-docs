@@ -20,7 +20,7 @@ Creating a dialog box for your program requires the following steps:
 
 1. Create a dialog class.
 
-1. Connect the [dialog resource's controls to message handlers](../windows/adding-event-handlers-for-dialog-box-controls.md) in the dialog class.
+1. Connect the [dialog resource's controls to message handlers](../windows/adding-editing-or-deleting-controls.md) in the dialog class.
 
 1. Add data members associated with the dialog box's controls and to specify [dialog data exchange](dialog-data-exchange.md) and [dialog data validations](dialog-data-validation.md) for the controls.
 

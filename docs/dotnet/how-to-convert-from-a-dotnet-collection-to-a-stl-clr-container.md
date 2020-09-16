@@ -16,7 +16,7 @@ This topic shows how to convert .NET collections to their equivalent STL/CLR con
 
 -OR-
 
-1. Create a generic STL/CLR container by creating a [collection_adapter](../dotnet/collection-adapter-stl-clr.md) object. This template class takes a .NET collection interface as an argument. To verify which interfaces are supported, see [collection_adapter (STL/CLR)](../dotnet/collection-adapter-stl-clr.md).
+1. Create a generic STL/CLR container by creating a [collection_adapter](./adapter-stl-clr.md#collection_adapter) object. This template class takes a .NET collection interface as an argument. To verify which interfaces are supported, see [collection_adapter (STL/CLR)](./adapter-stl-clr.md#collection_adapter).
 
 1. Copy the contents of the .NET collection to the container. This can be done by using a STL/CLR [algorithm](../dotnet/algorithm-stl-clr.md), or by iterating over the .NET collection and inserting a copy of each element into the STL/CLR container.
 

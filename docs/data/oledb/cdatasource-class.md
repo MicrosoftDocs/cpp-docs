@@ -37,7 +37,7 @@ class CDataSource
 
 ## Remarks
 
-One or more database sessions can be created for a single connection. These sessions are represented by `CSession`. You must call [CDataSource::Open](../../data/oledb/cdatasource-open.md) to open the connection before creating a session with `CSession::Open`.
+One or more database sessions can be created for a single connection. These sessions are represented by `CSession`. You must call [CDataSource::Open](#open) to open the connection before creating a session with `CSession::Open`.
 
 For an example of how to use `CDataSource`, see the [CatDB](../../overview/visual-cpp-samples.md) sample.
 
@@ -101,7 +101,7 @@ A standard HRESULT.
 
 ### Remarks
 
-To get a single property, use [GetProperty](../../data/oledb/cdatasource-getproperty.md).
+To get a single property, use [GetProperty](#getproperty).
 
 ## <a name="getproperty"></a> CDataSource::GetProperty
 
@@ -132,7 +132,7 @@ A standard HRESULT.
 
 ### Remarks
 
-To get multiple properties, use [GetProperties](../../data/oledb/cdatasource-getproperties.md).
+To get multiple properties, use [GetProperties](#getproperties).
 
 ## <a name="open"></a> CDataSource::Open
 

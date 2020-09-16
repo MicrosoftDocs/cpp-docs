@@ -10,9 +10,9 @@ ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
 You can use selection tools to define an area of an image that you want to cut, copy, clear, resize, invert, or move. With the **Rectangle Selection** tool you can define and select a rectangular region of the image. With the **Irregular Selection** tool you can draw a freehand outline of the area you want to select for the cut, copy, or other operation.
 
 > [!NOTE]
-> See the **Rectangle Selection** and **Irregular Selection** tools pictured in [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md) or view the tool tips associated with each button on the **Image Editor** toolbar.
+> See the **Rectangle Selection** and **Irregular Selection** tools pictured in [Image Editor toolbar](./image-editor-for-icons.md) or view the tool tips associated with each button on the **Image Editor** toolbar.
 
-You can also create a custom brush from a selection. For more information, see [Creating a Custom Brush](../windows/creating-a-custom-brush-image-editor-for-icons.md).
+You can also create a custom brush from a selection. For more information, see [Creating a Custom Brush](./using-a-drawing-tool-image-editor-for-icons.md).
 
 ## How To
 
@@ -77,7 +77,7 @@ Go to menu **Edit** > **Delete**.
 
 1. To anchor the selection in the image at its new location, select outside the selection border.
 
-For more information on drawing with a selection, see [Creating a Custom Brush](../windows/creating-a-custom-brush-image-editor-for-icons.md).
+For more information on drawing with a selection, see [Creating a Custom Brush](./using-a-drawing-tool-image-editor-for-icons.md).
 
 ### To flip an image
 
@@ -106,7 +106,7 @@ There are two mechanisms for resizing an image: the sizing handles and the [Prop
 Sizing handles
 
 > [!NOTE]
-> If you have the **Tile Grid** option selected in the [Grid Settings dialog box](../windows/grid-settings-dialog-box-image-editor-for-icons.md), then resizing snaps to the next tile grid line. If only the **Pixel Grid** option is selected (the default setting), resizing snaps to the next available pixel.
+> If you have the **Tile Grid** option selected in the [Grid Settings dialog box](./image-editor-for-icons.md), then resizing snaps to the next tile grid line. If only the **Pixel Grid** option is selected (the default setting), resizing snaps to the next available pixel.
 
 #### To resize an entire image using the properties window
 
@@ -169,7 +169,7 @@ You can set or modify properties of an image using the [Properties window](/visu
    |**Filename**|Specifies the name of the image file.<br/><br/>By default, Visual Studio assigns a base filename created by removing the first four characters ("IDB_") from the default resource identifier (IDB_BITMAP1) and adding the appropriate extension. The file name for the image in this example would be *BITMAP1.bmp*. You could rename it *MYBITMAP1.bmp*.|
    |**Height**|Sets the height of the image (in pixels). The default value is 48.<br/><br/>The image is cropped or blank space is added below the existing image.|
    |**ID**|Sets the resource's identifier.<br/><br/>For an image, Microsoft Visual Studio, by default, assigns the next available identifier in a series: IDB_BITMAP1, IDB_BITMAP2, and so forth. Similar names are used for icons and cursors.|
-   |**Palette**|Changes color properties.<br/><br/>Double-click to select a color and display the [Custom Color Selector dialog box](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md). Define the color by typing RGB or HSL values in the appropriate text boxes.|
+   |**Palette**|Changes color properties.<br/><br/>Double-click to select a color and display the [Custom Color Selector dialog box](./image-editor-for-icons.md). Define the color by typing RGB or HSL values in the appropriate text boxes.|
    |**SaveCompressed**|Indicates whether the image is in a compressed format. This property is read-only.<br/><br/>Visual Studio doesn't allow you to save images in a compressed format, so for any images created in Visual Studio, this property will be **False**. If you open a compressed image (created in another program) in Visual Studio, this property will be **True**. If you save a compressed image using Visual Studio, it will be uncompressed and this property will revert back to **False**.|
    |**Width**|Sets the width of the image (in pixels). The default value for bitmaps is 48.<br/><br/>The image is cropped or blank space is added to the right of the existing image.|
 

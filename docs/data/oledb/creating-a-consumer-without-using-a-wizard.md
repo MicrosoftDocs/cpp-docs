@@ -39,7 +39,7 @@ Programmatically, a consumer typically performs the following sequence of operat
     HRESULT hr = CoInitialize(NULL);
     ```
 
-- Call [CDataSource::Open](../../data/oledb/cdatasource-open.md) or one of its variations.
+- Call [CDataSource::Open](./cdatasource-class.md#open) or one of its variations.
 
 - Open a connection to the data source, open the session, and open and initialize the rowset (and if a command, also execute it):
 
@@ -61,7 +61,7 @@ Programmatically, a consumer typically performs the following sequence of operat
     ds.Close();
     ```
 
-   If you are using a command, you might want to call `ReleaseCommand` after `Close`. The code example in [CCommand::Close](../../data/oledb/ccommand-close.md) shows how to call `Close` and `ReleaseCommand`.
+   If you are using a command, you might want to call `ReleaseCommand` after `Close`. The code example in [CCommand::Close](./ccommand-class.md#close) shows how to call `Close` and `ReleaseCommand`.
 
 - Call `CoUnInitialize` to uninitialize COM. This is called in the main code.
 

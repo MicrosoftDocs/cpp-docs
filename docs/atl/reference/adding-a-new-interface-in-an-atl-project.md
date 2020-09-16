@@ -17,7 +17,7 @@ You can add a new interface to your control in one of two ways: manually or usin
 
 1. On the shortcut menu, click **Add**, and then click **Implement Interface**.
 
-1. Select the interfaces to implement in the [Implement Interface Wizard](../../ide/implement-interface-wizard.md). If the interface does not exist in any available typelib, then you must add it manually to the .idl file.
+1. Select the interfaces to implement in the [Implement Interface Wizard](../../ide/implementing-an-interface-visual-cpp.md#implement-interface-wizard). If the interface does not exist in any available typelib, then you must add it manually to the .idl file.
 
 ## To add a new interface manually
 

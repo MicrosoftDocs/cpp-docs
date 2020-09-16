@@ -16,7 +16,7 @@ This template library contains two parts:
 
 - [OLE DB provider templates](../data/oledb/ole-db-provider-templates-cpp.md) Used to implement an OLE DB server (provider) application.
 
-In addition, the [OLE DB consumer attributes](../windows/ole-db-consumer-attributes.md) provide a convenient way to create OLE DB consumers. The OLE DB attributes inject code based on the OLE DB consumer templates to create working OLE DB consumers.
+In addition, the [OLE DB consumer attributes](../windows/attributes/ole-db-consumer-attributes.md) provide a convenient way to create OLE DB consumers. The OLE DB attributes inject code based on the OLE DB consumer templates to create working OLE DB consumers.
 
 Note that the MFC library contains one class, [COleDBRecordView](../mfc/reference/coledbrecordview-class.md), that displays database records in controls. The view is a form view directly connected to a `CRowset` object, and displays the fields of the `CRowset` object in the dialog template's controls.
 

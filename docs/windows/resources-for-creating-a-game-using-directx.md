@@ -18,6 +18,6 @@ To create DirectX apps for Windows 7, Windows Vista, or Windows XP, you can down
 
 [DirectX Graphics and Gaming](/windows/win32/directx) has information and samples to help you get started with DirectX programming.
 
-[Win32 Windows Applications](../windows/windows-desktop-applications-cpp.md) contains articles that describe how to create a basic Windows desktop app.
+[Win32 Windows Applications](./desktop-applications-visual-cpp.md) contains articles that describe how to create a basic Windows desktop app.
 
 [Developing Games](/windows/uwp/gaming/getting-started) discusses Universal Windows Platform game development, but many of the concepts also apply to desktop games.

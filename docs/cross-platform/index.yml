@@ -45,7 +45,7 @@ landingContent:
           - text: C++ cross-platform property page reference
             url: cross-platform-prop-pages.md
           - text: Universal Windows Platform (UWP) documentation
-            url: /cpp/cppcx/universal-windows-apps-cpp
+            url: ../cppcx/universal-windows-apps-cpp.md
           - text: iOS API documentation
             url: https://developer.apple.com/reference
           - text: Android API documentation

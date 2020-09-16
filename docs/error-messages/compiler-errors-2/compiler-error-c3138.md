@@ -9,7 +9,7 @@ ms.assetid: 364ee9e8-9358-410e-bd35-9c4a226a3753
 
 'interface' : a 'attribute' interface must inherit from IDispatch, or from an interface that inherits from IDispatch
 
-An interface with the [dual](../../windows/dual.md) or [dispinterface](../../windows/dispinterface.md) attributes does not have `IDispatch` as a direct or indirect base interface.
+An interface with the [dual](../../windows/attributes/dual.md) or [dispinterface](../../windows/attributes/dispinterface.md) attributes does not have `IDispatch` as a direct or indirect base interface.
 
 The following example generates C3138:
 

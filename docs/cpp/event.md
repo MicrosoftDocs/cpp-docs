@@ -67,7 +67,7 @@ See [Event Handling in COM](../cpp/event-handling-in-com.md) for sample code.
 
 For information on coding events in the new syntax, see [event](../extensions/event-cpp-component-extensions.md).
 
-Managed events are data members or methods. When used with an event, the return type of a delegate must be compliant with the [Common Language Specification](/dotnet/standard/language-independence-and-language-independent-components). The return type of the event handler must match the return type of the delegate. For more information on delegates, see [Delegates and Events](../dotnet/delegates-and-events.md). If a managed event is a data member, its type must be a pointer to a delegate.
+Managed events are data members or methods. When used with an event, the return type of a delegate must be compliant with the [Common Language Specification](/dotnet/standard/language-independence-and-language-independent-components). The return type of the event handler must match the return type of the delegate. For more information on delegates, see [Delegates and Events](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md). If a managed event is a data member, its type must be a pointer to a delegate.
 
 In the .NET Framework, you can treat a data member as if it were a method itself (that is, the `Invoke` method of its corresponding delegate). You must predefine the delegate type for declaring a managed event data member. In contrast, a managed event method implicitly defines the corresponding managed delegate if it is not already defined. For example, you can declare an event value such as `OnClick` as an event as follows:
 

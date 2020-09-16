@@ -11,7 +11,7 @@ Stock events differ from custom events in that they are automatically fired by c
 
 ## <a name="_core_stock_events_supported_by_classwizard"></a> Stock Events Supported by the Add Event Wizard
 
-The `COleControl` class provides ten stock events, listed in the following table. You can specify the events you want in your control using the [Add Event Wizard](../ide/add-event-wizard.md).
+The `COleControl` class provides ten stock events, listed in the following table. You can specify the events you want in your control using the [Add Event Wizard](../ide/adding-an-event-visual-cpp.md#add-event-wizard).
 
 ### Stock Events
 

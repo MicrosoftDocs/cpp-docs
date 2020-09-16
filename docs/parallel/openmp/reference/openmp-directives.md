@@ -55,7 +55,7 @@ The statement that has the *lvalue*, whose memory location you want to protect a
 
 The `atomic` directive supports no clauses.
 
-For more information, see [2.6.4 atomic construct](../../../parallel/openmp/2-6-4-atomic-construct.md).
+For more information, see [2.6.4 atomic construct](../2-directives.md#264-atomic-construct).
 
 ### Example
 
@@ -94,7 +94,7 @@ Synchronizes all threads in a team; all threads pause at the barrier, until all 
 
 The `barrier` directive supports no clauses.
 
-For more information, see [2.6.3 barrier directive](../../../parallel/openmp/2-6-3-barrier-directive.md).
+For more information, see [2.6.3 barrier directive](../2-directives.md#263-barrier-directive).
 
 ### Example
 
@@ -120,7 +120,7 @@ Specifies that code is only be executed on one thread at a time.
 
 The `critical` directive supports no clauses.
 
-For more information, see [2.6.2 critical construct](../../../parallel/openmp/2-6-2-critical-construct.md).
+For more information, see [2.6.2 critical construct](../2-directives.md#262-critical-construct).
 
 ### Example
 
@@ -197,7 +197,7 @@ Specifies that all threads have the same view of memory for all shared objects.
 
 The `flush` directive supports no clauses.
 
-For more information, see [2.6.5 flush directive](../../../parallel/openmp/2-6-5-flush-directive.md).
+For more information, see [2.6.5 flush directive](../2-directives.md#265-flush-directive).
 
 ### Example
 
@@ -287,7 +287,7 @@ The `for` directive supports the following clauses:
 
 If `parallel` is also specified, `clauses` can be any clause accepted by the `parallel` or `for` directives, except `nowait`.
 
-For more information, see [2.4.1 for construct](../../../parallel/openmp/2-4-1-for-construct.md).
+For more information, see [2.4.1 for construct](../2-directives.md#241-for-construct).
 
 ### Example
 
@@ -370,7 +370,7 @@ The `master` directive supports no clauses.
 
 The [single](#single) directive lets you specify that a section of code should be executed on a single thread, not necessarily the master thread.
 
-For more information, see [2.6.1 master construct](../../../parallel/openmp/2-6-1-master-construct.md).
+For more information, see [2.6.1 master construct](../2-directives.md#261-master-construct).
 
 ### Example
 
@@ -430,7 +430,7 @@ The `ordered` directive must be within the dynamic extent of a [for](#for-openmp
 
 The `ordered` directive supports no clauses.
 
-For more information, see [2.6.6 ordered construct](../../../parallel/openmp/2-6-6-ordered-construct.md).
+For more information, see [2.6.6 ordered construct](../2-directives.md#266-ordered-construct).
 
 ### Example
 
@@ -517,7 +517,7 @@ The `parallel` directive supports the following clauses:
 
 `parallel` can also be used with the [for](#for-openmp) and [sections](#sections-openmp) directives.
 
-For more information, see [2.3 parallel construct](../../../parallel/openmp/2-3-parallel-construct.md).
+For more information, see [2.3 parallel construct](../2-directives.md#23-parallel-construct).
 
 ### Example
 
@@ -578,7 +578,7 @@ The `sections` directive supports the following clauses:
 
 If `parallel` is also specified, `clauses` can be any clause accepted by the `parallel` or `sections` directives, except `nowait`.
 
-For more information, see [2.4.2 sections construct](../../../parallel/openmp/2-4-2-sections-construct.md).
+For more information, see [2.4.2 sections construct](../2-directives.md#242-sections-construct).
 
 ### Example
 
@@ -630,7 +630,7 @@ The `single` directive supports the following clauses:
 
 The [master](#master) directive lets you specify that a section of code should be executed only on the master thread.
 
-For more information, see [2.4.3 single construct](../../../parallel/openmp/2-4-3-single-construct.md).
+For more information, see [2.4.3 single construct](../2-directives.md#243-single-construct).
 
 ### Example
 
@@ -704,7 +704,7 @@ int main()
 
 Users have no control as to when the threads constituting the parallel region will terminate. If those threads exist when the process exits, the threads won't be notified about the process exit, and the destructor won't be called for `threaded_var` on any thread except the one that exits (here, the primary thread). So code shouldn't count on proper destruction of `threadprivate` variables.
 
-For more information, see [2.7.1 threadprivate directive](../../../parallel/openmp/2-7-1-threadprivate-directive.md).
+For more information, see [2.7.1 threadprivate directive](../2-directives.md#271-threadprivate-directive).
 
 ### Example
 

@@ -48,4 +48,4 @@ void test()
 
 ## See also
 
-- [__assume](/cpp/intrinsics/assume)
+- [__assume](../intrinsics/assume.md)

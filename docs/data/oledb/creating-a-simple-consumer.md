@@ -75,7 +75,7 @@ Next, use the **ATL OLE DB Consumer Wizard** to add an OLE DB consumer object.
 
 1. The wizard completes the names for `Class` and **.h file** based on the name of the table, view, or stored procedure that you selected. You can edit these names if you want.
 
-1. Clear the **Attributed** check box so that the wizard creates the consumer code using [OLE DB Template classes](../../data/oledb/ole-db-consumer-templates-reference.md) instead of the default [OLE DB consumer attributes](../../windows/ole-db-consumer-attributes.md).
+1. Clear the **Attributed** check box so that the wizard creates the consumer code using [OLE DB Template classes](../../data/oledb/ole-db-consumer-templates-reference.md) instead of the default [OLE DB consumer attributes](../../windows/attributes/ole-db-consumer-attributes.md).
 
 1. Under **Type**, select **Command**.
 

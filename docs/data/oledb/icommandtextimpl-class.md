@@ -32,7 +32,7 @@ The command class derived from `ICommandTextImpl`.
 
 | Name | Description |
 |-|-|
-|[GetCommandText](#getcommandtext)|Returns the text command set by the last call to [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).|
+|[GetCommandText](#getcommandtext)|Returns the text command set by the last call to [SetCommandText](#setcommandtext).|
 |[SetCommandText](#setcommandtext)|Sets the command text, replacing the existing command text.|
 
 ### Data Members
@@ -47,7 +47,7 @@ A mandatory interface on commands.
 
 ## <a name="getcommandtext"></a> ICommandTextImpl::GetCommandText
 
-Returns the text command set by the last call to [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md).
+Returns the text command set by the last call to [SetCommandText](#setcommandtext).
 
 ### Syntax
 

@@ -9,7 +9,7 @@ ms.assetid: feadee7a-fcfb-402c-af2f-0e656f814a13
 
 'event': cannot define an event in a class/struct 'type' marked as an event_receiver
 
-If a class is marked with the [event_receiver](../../windows/event-receiver.md) attribute, the class cannot contain an [__event](../../cpp/event.md) declaration.
+If a class is marked with the [event_receiver](../../windows/attributes/event-receiver.md) attribute, the class cannot contain an [__event](../../cpp/event.md) declaration.
 
 The following sample generates C3765:
 

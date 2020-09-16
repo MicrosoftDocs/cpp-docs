@@ -6,7 +6,7 @@ ms.assetid: 03c28196-21ba-439e-8641-afab1c283e1a
 ---
 # How to: Convert an OpenMP Loop that Uses Exception Handling to Use the Concurrency Runtime
 
-This example demonstrates how to convert an OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../../parallel/openmp/reference/for-openmp.md) loop that performs exception handling to use the Concurrency Runtime exception handling mechanism.
+This example demonstrates how to convert an OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../openmp/reference/openmp-directives.md#for-openmp) loop that performs exception handling to use the Concurrency Runtime exception handling mechanism.
 
 In OpenMP, an exception that is thrown in a parallel region must be caught and handled in the same region by the same thread. An exception that escapes the parallel region is caught by the unhandled exception handler, which terminates the process by default.
 

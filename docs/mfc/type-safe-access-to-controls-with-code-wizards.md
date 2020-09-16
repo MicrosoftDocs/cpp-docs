@@ -6,7 +6,7 @@ ms.assetid: b8874393-ee48-4124-8d78-e3648a7e29b9
 ---
 # Type-Safe Access to Controls With Code Wizards
 
-If you are familiar with DDX features, you can use the Control property in the [Add Member Variable Wizard](../ide/add-member-variable-wizard.md) to create type-safe access. This approach is easier than creating controls without code wizards.
+If you are familiar with DDX features, you can use the Control property in the [Add Member Variable Wizard](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard) to create type-safe access. This approach is easier than creating controls without code wizards.
 
 If you simply want access to a control's value, DDX provides it. If you want to do more than access a control's value, use the Add Member Variable Wizard to add a member variable of the appropriate class to your dialog class. Attach this member variable to the Control property.
 

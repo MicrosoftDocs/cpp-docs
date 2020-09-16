@@ -37,7 +37,7 @@ The native type of column data in the data store does not matter; as long as the
 
 Use `CDynamicStringAccessor` methods to obtain column information. You use this column information to create an accessor dynamically at run time.
 
-The column information is stored in a buffer created and managed by this class. Obtain data from the buffer using [GetString](../../data/oledb/cdynamicstringaccessor-getstring.md), or store it to the buffer using [SetString](../../data/oledb/cdynamicstringaccessor-setstring.md).
+The column information is stored in a buffer created and managed by this class. Obtain data from the buffer using [GetString](#getstring), or store it to the buffer using [SetString](#setstring).
 
 For a discussion and examples of using the dynamic accessor classes, see [Using Dynamic Accessors](../../data/oledb/using-dynamic-accessors.md).
 

@@ -18,13 +18,13 @@ The dialog box contains the following properties:
 
 |Property|Description|
 |--------------------------|------------------------------------------|
-|**Name**|Displays the name of the symbol.<br/><br/>For more information, see [Symbol Name Restrictions](../windows/symbol-name-restrictions.md).|
-|**Value**|Displays the numeric value of the symbol.<br/><br/>For more information, see [Symbol Value Restrictions](../windows/symbol-value-restrictions.md).|
+|**Name**|Displays the name of the symbol.<br/><br/>For more information, see [Symbol Name Restrictions](./changing-a-symbol-or-symbol-name-id.md).|
+|**Value**|Displays the numeric value of the symbol.<br/><br/>For more information, see [Symbol Value Restrictions](./changing-a-symbol-or-symbol-name-id.md).|
 |**In Use**|When selected, specifies that the symbol is being used by one or more resources.<br/><br/>The resource or resources are listed in the **Used by** box.|
 |**Show read-only symbols**|When selected, displays read-only resources.<br/><br/>By default, the **Resource Symbol** dialog box displays only the modifiable resources in your resource script file, but with this option selected, modifiable resources appear in bold text and read-only resources appear in plain text.|
 |**Used by**|Displays the resource or resources using the symbol selected in the symbols list.<br/><br/>To move to the editor for a given resource, select the resource in the **Used by** box and choose **View Use**.|
 |**New**|Opens the **New Symbol** dialog box that enables you to define the name and, if necessary, a value for a new symbolic resource identifier.|
-|**Change**|Opens the **Change Symbol** dialog box that allows you to change the name or value of a symbol.<br/><br/>If the symbol is for a control or resource in use, the symbol can be changed only from the corresponding resource editor. For more information, see [Manage Symbols](../windows/changing-unassigned-symbols.md).|
+|**Change**|Opens the **Change Symbol** dialog box that allows you to change the name or value of a symbol.<br/><br/>If the symbol is for a control or resource in use, the symbol can be changed only from the corresponding resource editor. For more information, see [Manage Symbols](./changing-a-symbol-or-symbol-name-id.md).|
 |**View Use**|Opens the resource that contains the symbol in the corresponding resource editor.|
 
 ## Create Symbols

@@ -9,7 +9,7 @@ You freely can mix WRL code with Windows Runtime C++ Template Library (WRL) code
 
 ## WRL development
 
-For more information about authoring and consuming WRL components, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
+For more information about authoring and consuming WRL components, see [Windows Runtime C++ Template Library (WRL)](./wrl/windows-runtime-cpp-template-library-wrl.md).
 
 ### Example
 

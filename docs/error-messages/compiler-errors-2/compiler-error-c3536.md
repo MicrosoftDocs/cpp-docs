@@ -35,4 +35,4 @@ int main()
 
 ## See also
 
-[auto Keyword](../../cpp/auto-keyword.md)
+[auto Keyword](../../cpp/auto-cpp.md)

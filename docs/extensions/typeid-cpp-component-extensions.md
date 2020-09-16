@@ -67,7 +67,7 @@ The name of a type (abstract declarator) for which you want the `System::Type` o
 
 **`typeid`** must be able to evaluate a type name (type) at compile time, whereas GetType evaluates the type to return at run time.
 
-**`typeid`** can take a native type name or common language runtime alias for the native type name; see [.NET Framework Equivalents to C++ Native Types (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md) for more information.
+**`typeid`** can take a native type name or common language runtime alias for the native type name; see [.NET Framework Equivalents to C++ Native Types (C++/CLI)](../dotnet/managed-types-cpp-cli.md#dotnet) for more information.
 
 **`typeid`** also works with native types, although it will still return a `System::Type`.  To get a type_info structure, use [`typeid` Operator](../cpp/typeid-operator.md).
 

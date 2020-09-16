@@ -19,7 +19,7 @@ By default, the ATL Dialog Wizard implements a dialog box derived from [CAxDialo
 
 1. From [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click the project name and click **Add** from the shortcut menu. Click **Add Class**.
 
-1. In the **Templates** pane of the [Add Class](../../ide/add-class-dialog-box.md) dialog box, click **ATL Dialog**. Click **Open** to display the [ATL Dialog Wizard](../../atl/reference/atl-dialog-wizard.md).
+1. In the **Templates** pane of the [Add Class](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) dialog box, click **ATL Dialog**. Click **Open** to display the [ATL Dialog Wizard](../../atl/reference/atl-dialog-wizard.md).
 
 For more information, see [Implementing a Dialog Box](../../atl/implementing-a-dialog-box.md).
 

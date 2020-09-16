@@ -16,7 +16,7 @@ Create a [CDBPropSet](../../data/oledb/cdbpropset-class.md) object using the pro
 CDBPropSet propset(DBPROPSET_ROWSET);
 ```
 
-Call [AddProperty](../../data/oledb/cdbpropset-addproperty.md), passing it the property ID and a value to be assigned to the property. The type of the value depends on the property you're using.
+Call [AddProperty](./cdbpropset-class.md#addproperty), passing it the property ID and a value to be assigned to the property. The type of the value depends on the property you're using.
 
 ```cpp
 CDBPropSet propset(DBPROPSET_ROWSET);

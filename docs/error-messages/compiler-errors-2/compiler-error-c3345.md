@@ -48,4 +48,4 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 
 [__iscsym](../../c-runtime-library/reference/iscsym-functions.md)<br/>
 [Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[module](../../windows/module-cpp.md)
+[module](../../windows/attributes/module-cpp.md)

@@ -65,7 +65,7 @@ The type of interface this control exposes to the container.
 
 - **Custom**: Creates an interface that exposes methods directly through a VTBL.
 
-   If you select **Custom**, then you can specify that the control is **Automation compatible**. If you select **Automation compatible**, then the wizard adds the [oleautomation](../../windows/oleautomation.md) attribute to the interface in the IDL, and the interface can be marshaled by the universal marshaler in oleaut32.dll. See [Marshaling Details](/windows/win32/com/marshaling-details) in the Windows SDK for more information.
+   If you select **Custom**, then you can specify that the control is **Automation compatible**. If you select **Automation compatible**, then the wizard adds the [oleautomation](../../windows/attributes/oleautomation.md) attribute to the interface in the IDL, and the interface can be marshaled by the universal marshaler in oleaut32.dll. See [Marshaling Details](/windows/win32/com/marshaling-details) in the Windows SDK for more information.
 
    Additionally, if you select **Automation compatible**, then all parameters for all methods in the control must be VARIANT compatible.
 

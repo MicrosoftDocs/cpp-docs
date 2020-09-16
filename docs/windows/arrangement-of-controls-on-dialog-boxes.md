@@ -7,7 +7,7 @@ ms.assetid: 832491cf-98af-42e5-a854-2cb135fd45c6
 ---
 # How To: Layout Controls (C++)
 
-The **Dialog Editor** provides layout tools that align and size controls automatically. For most tasks, you can use the [Dialog Editor toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md). All **Dialog Editor** toolbar commands are also available on the **Format** menu, and most have [shortcut keys](../windows/accelerator-keys-for-the-dialog-editor.md).
+The **Dialog Editor** provides layout tools that align and size controls automatically. For most tasks, you can use the [Dialog Editor toolbar](./dialog-editor.md). All **Dialog Editor** toolbar commands are also available on the **Format** menu, and most have [shortcut keys](./dialog-editor.md).
 
 Many layout commands for dialog boxes are available only when more than one control is selected. You can select a single control or multiple controls, and when more than one control is selected, the first one you select is by default the dominant control.
 
@@ -23,7 +23,7 @@ You can arrange controls on dialog boxes with the **Dialog Editor** in one of th
 
 - Without any snap or alignment features.
 
-The [Dialog Editor toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md) contains buttons that control the state.
+The [Dialog Editor toolbar](./dialog-editor.md) contains buttons that control the state.
 
 - To change the state, select the appropriate icon, or go to menu **Format** > **Guide Settings**.
 
@@ -71,7 +71,7 @@ When you're placing or arranging controls in a dialog box, use the layout grid f
 
 - To turn the layout grid on or off, go to menu **Format** > **Guide Settings** and select or clear the **Grid** button.
 
-   You can still control the grid in individual **Dialog Editor** windows using the **Toggle Grid** button on the [Dialog Editor toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
+   You can still control the grid in individual **Dialog Editor** windows using the **Toggle Grid** button on the [Dialog Editor toolbar](./dialog-editor.md).
 
 - To change the size of the layout grid, go to menu **Format** > **Guide Settings** and type the height and width in DLUs for the cells in the grid. The minimum height or width is 4.
 
@@ -90,7 +90,7 @@ You can use special keys in conjunction with the mouse to disable the snapping e
 
 ## Select Controls
 
-Select controls to size, align, move, copy, or delete them, and then complete the operation you want. In most cases, you need to select more than one control to use the sizing and alignment tools on the [Dialog Editor toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
+Select controls to size, align, move, copy, or delete them, and then complete the operation you want. In most cases, you need to select more than one control to use the sizing and alignment tools on the [Dialog Editor toolbar](./dialog-editor.md).
 
 When a control is selected, it has a shaded border around it with solid (active) or hollow (inactive) sizing handles, small squares that appear in the selection border. When multiple controls are selected, the dominant control has solid sizing handles and all the other selected controls have hollow sizing handles.
 
@@ -140,7 +140,7 @@ Use the sizing handles to resize a control. When the pointer is positioned on a 
 
 ### Other Controls
 
-You can size a combo box when you add it to the dialog box. You can also specify the size of the drop-down list box. For more information, see [Adding Values to a Combo Box Control](../windows/adding-values-to-a-combo-box-control.md).
+You can size a combo box when you add it to the dialog box. You can also specify the size of the drop-down list box. For more information, see [Adding Values to a Combo Box Control](./defining-mnemonics-access-keys.md).
 
 1. Select the drop-down arrow button at the right of the combo box.
 

@@ -9,7 +9,7 @@ ms.assetid: 1ce26997-7ef1-4c9f-84da-003ea1a4251e
 
 'module': cannot specify different module attributes in a project
 
-[module](../../windows/module-cpp.md) attributes with different parameter lists were found in two of the files in a compilation. Only one unique `module` attribute can be specified per compilation.
+[module](../../windows/attributes/module-cpp.md) attributes with different parameter lists were found in two of the files in a compilation. Only one unique `module` attribute can be specified per compilation.
 
 Identical `module` attributes can be specified in more than one source code file.
 

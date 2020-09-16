@@ -18,7 +18,7 @@ This article provides details on each of the C++ Build Insights views available 
 - data column descriptions; and
 - available presets for each view, including their intended use and preferred viewing mode.
 
-If you're new to WPA, we recommend that you first familiarize yourself with the [basics of WPA for C++ Build Insights](/cpp/build-insights/tutorials/wpa-basics).
+If you're new to WPA, we recommend that you first familiarize yourself with the [basics of WPA for C++ Build Insights](../tutorials/wpa-basics.md).
 
 ## Build Explorer
 
@@ -120,9 +120,9 @@ The Functions view is used to identify functions with an excessively long code g
 
 ## See also
 
-[Get started with C++ Build Insights](/cpp/build-insights/get-started-with-cpp-build-insights)\
+[Get started with C++ Build Insights](../get-started-with-cpp-build-insights.md)\
 [Reference: vcperf commands](vcperf-commands.md)\
-[Tutorial: Windows Performance Analyzer basics](/cpp/build-insights/tutorials/wpa-basics)\
+[Tutorial: Windows Performance Analyzer basics](../tutorials/wpa-basics.md)\
 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)
 
 ::: moniker-end

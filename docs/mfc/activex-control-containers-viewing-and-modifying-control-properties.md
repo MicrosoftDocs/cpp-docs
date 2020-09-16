@@ -20,7 +20,7 @@ The first step in viewing the control's properties is to add an instance of the 
 
 1. Open your main dialog box template.
 
-1. Insert an ActiveX control using the **Insert ActiveX Control** dialog box. For more information, see [Viewing and Adding ActiveX Controls to a Dialog Box](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md).
+1. Insert an ActiveX control using the **Insert ActiveX Control** dialog box. For more information, see [Viewing and Adding ActiveX Controls to a Dialog Box](../windows/adding-editing-or-deleting-controls.md).
 
 1. Select the ActiveX control in the dialog box.
 

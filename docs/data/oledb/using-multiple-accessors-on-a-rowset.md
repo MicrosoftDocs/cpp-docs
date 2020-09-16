@@ -26,7 +26,7 @@ There are three basic scenarios in which you need to use multiple accessors:
 
 - **Multiple ISequentialStream columns.** In this scenario, you've more than one column holding `ISequentialStream` data. However, each accessor is limited to one `ISequentialStream` data stream. To solve this problem, set up several accessors, each having one `ISequentialStream` pointer.
 
-You normally create accessors using the [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) and [END_ACCESSOR](../../data/oledb/end-accessor.md) macros. You can also use the [db_accessor](../../windows/db-accessor.md) attribute. (Accessors are described further in [User Records](../../data/oledb/user-records.md).) The macros or the attribute specify whether an accessor is an automatic or a non-automatic accessor:
+You normally create accessors using the [BEGIN_ACCESSOR](./macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor) and [END_ACCESSOR](./macros-and-global-functions-for-ole-db-consumer-templates.md#end_accessor) macros. You can also use the [db_accessor](../../windows/attributes/db-accessor.md) attribute. (Accessors are described further in [User Records](../../data/oledb/user-records.md).) The macros or the attribute specify whether an accessor is an automatic or a non-automatic accessor:
 
 - In an automatic accessor, move methods such as `MoveFirst`, `MoveLast`, `MoveNext`, and `MovePrev` retrieve data for all specified columns automatically. Accessor 0 should be the automatic accessor.
 

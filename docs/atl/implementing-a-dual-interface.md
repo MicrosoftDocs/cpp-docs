@@ -22,7 +22,7 @@ To use this class:
 
 ## ATL Simple Object Wizard
 
-If you want to create a new interface and a new class to implement it, you can use the [ATL Add Class dialog box](../ide/add-class-dialog-box.md), and then the [ATL Simple Object Wizard](../atl/reference/atl-simple-object-wizard.md).
+If you want to create a new interface and a new class to implement it, you can use the [ATL Add Class dialog box](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box), and then the [ATL Simple Object Wizard](../atl/reference/atl-simple-object-wizard.md).
 
 ## Implement Interface Wizard
 

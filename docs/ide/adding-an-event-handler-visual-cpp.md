@@ -27,7 +27,7 @@ You can add an event to the class implementing the dialog box using the [Propert
 
    If the selected message type already has an event handler for the selected class, **Add and edit** is unavailable, and **Edit code** is available. Select **Edit code** to open the text editor at the existing function.
 
-Alternately, you can add event handlers from the [Properties window](/visualstudio/ide/reference/properties-window). For more information, see [Adding event handlers for dialog box controls](../windows/adding-event-handlers-for-dialog-box-controls.md).
+Alternately, you can add event handlers from the [Properties window](/visualstudio/ide/reference/properties-window). For more information, see [Adding event handlers for dialog box controls](../windows/adding-editing-or-deleting-controls.md).
 
 ## In this section
 
@@ -35,7 +35,7 @@ Alternately, you can add event handlers from the [Properties window](/visualstud
 
 ## Event handler wizard
 
-This wizard adds an event handler for a dialog box control to the class of your choice. If you add an event handler from the [Properties window](/visualstudio/ide/reference/properties-window), you can add it only to the class that implements the dialog box. For more information, see [Adding event handlers for dialog box controls](../windows/adding-event-handlers-for-dialog-box-controls.md).
+This wizard adds an event handler for a dialog box control to the class of your choice. If you add an event handler from the [Properties window](/visualstudio/ide/reference/properties-window), you can add it only to the class that implements the dialog box. For more information, see [Adding event handlers for dialog box controls](../windows/adding-editing-or-deleting-controls.md).
 
 - **Command name**
 

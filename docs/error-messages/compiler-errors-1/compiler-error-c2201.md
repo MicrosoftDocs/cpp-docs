@@ -22,4 +22,4 @@ __declspec(dllexport) void func2() {}   // OK
 
 ## See also
 
-[Types of Linkage](../../cpp/types-of-linkage.md)
+[Types of Linkage](../../cpp/program-and-linkage-cpp.md)

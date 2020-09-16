@@ -39,7 +39,7 @@ class CSimpleRow
 
 ## Remarks
 
-A row handle is logically a unique tag for a result row. `IRowsetImpl` creates a new `CSimpleRow` for every row requested in [IRowsetImpl::GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md). `CSimpleRow` can also be replaced with your own implementation of the row handle, as it is a default template argument to `IRowsetImpl`. The only requirement to replacing this class is to have the replacement class provide a constructor that accepts a single parameter of type **LONG**.
+A row handle is logically a unique tag for a result row. `IRowsetImpl` creates a new `CSimpleRow` for every row requested in [IRowsetImpl::GetNextRows](./irowsetimpl-class.md#getnextrows). `CSimpleRow` can also be replaced with your own implementation of the row handle, as it is a default template argument to `IRowsetImpl`. The only requirement to replacing this class is to have the replacement class provide a constructor that accepts a single parameter of type **LONG**.
 
 ## <a name="addrefrow"></a> CSimpleRow::AddRefRow
 
@@ -87,7 +87,7 @@ CSimpleRow(DBCOUNTITEM iRowsetCur);
 
 ### Remarks
 
-Sets [m_iRowset](../../data/oledb/csimplerow-m-irowset.md) to *iRowsetCur*.
+Sets [m_iRowset](#irowset) to *iRowsetCur*.
 
 ## <a name="releaserow"></a> CSimpleRow::ReleaseRow
 

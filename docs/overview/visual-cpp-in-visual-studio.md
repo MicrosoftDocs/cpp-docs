@@ -75,7 +75,7 @@ How to use the productivity features in the C++ editor to refactor, navigate, un
 [Debugging Native Code](/visualstudio/debugger/debugging-native-code)<br/>
 Use the Visual Studio debugger with C++ projects.
 
-[Code analysis for C/C++ overview](/cpp/code-quality/code-analysis-for-c-cpp-overview)<br/>
+[Code analysis for C/C++ overview](../code-quality/code-analysis-for-c-cpp-overview.md)<br/>
 Use SAL annotations or the C++ Core Guidelines checkers to perform static analysis.
 
 [Write unit tests for C/C++ in Visual Studio](/visualstudio/test/writing-unit-tests-for-c-cpp)<br/>
@@ -145,7 +145,7 @@ Asynchronous and parallel algorithms that execute on the CPU.
 [C++ AMP (C++ Accelerated Massive Parallelism)](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 Massively parallel algorithms that execute on the GPU.
 
-[Windows Runtime Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)<br/>
+[Windows Runtime Template Library (WRL)](../cppcx/wrl/windows-runtime-cpp-template-library-wrl.md)<br/>
 Universal Windows Platform (UWP) apps and components.
 
 [.NET Programming with C++/CLI](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>

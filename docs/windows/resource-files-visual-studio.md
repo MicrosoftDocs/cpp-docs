@@ -87,7 +87,7 @@ For a Windows XP or Windows Vista application, the manifest resource should spec
 > [!NOTE]
 > You can only have one manifest resource per module.
 
-To view the version and type information contained in a manifest resource, open the file in an XML viewer or the Visual Studio text editor. If you open a manifest resource from [Resource View](../windows/resource-view-window.md), the resource will open in binary format.
+To view the version and type information contained in a manifest resource, open the file in an XML viewer or the Visual Studio text editor. If you open a manifest resource from [Resource View](./how-to-create-a-resource-script-file.md), the resource will open in binary format.
 
 ### To open a manifest resource
 

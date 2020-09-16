@@ -9,7 +9,7 @@ ms.assetid: 6ddf54f6-2c30-4d04-b637-98c6c922c533
 
 'arg' : invalid argument in OpenMP 'default' clause
 
-An incorrect value was passed to a [default](../../parallel/openmp/reference/default-openmp.md) clause.
+An incorrect value was passed to a [default](../../parallel/openmp/reference/openmp-clauses.md#default-openmp) clause.
 
 The following sample generates C3049:
 

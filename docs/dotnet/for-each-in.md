@@ -41,6 +41,19 @@ The *statements* are executed for each element in the array or collection. After
 
 `for each` and `in` are [context-sensitive keywords](../extensions/context-sensitive-keywords-cpp-component-extensions.md).
 
+<<<<<<< HEAD
+=======
+For more information:
+
+- [Iterating Over C++ Standard Library Collection By Using for each]()
+
+- [How to: Iterate Over Arrays with for each]()
+
+- [How to: Iterate Over a Generic Collection with for each]()
+
+- [How to: Iterate Over a User-Defined Collection with for each]()
+
+>>>>>>> df30966701... Links: CPP - Pass 1
 ## Windows Runtime
 
 ### Requirements
@@ -135,5 +148,9 @@ Testing
 
 ## See also
 
+<<<<<<< HEAD
 [Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md)\
 [Range-based for statement (C++)](../cpp/range-based-for-statement-cpp.md)
+=======
+[Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md)
+>>>>>>> df30966701... Links: CPP - Pass 1

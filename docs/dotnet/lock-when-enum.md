@@ -20,7 +20,7 @@ enum lock_when {
 
 ## Remarks
 
-When passed to [lock::lock](../dotnet/lock-lock.md), `lock_later` specifies that the lock is not to be taken now.
+When passed to [lock::lock](./lock-class.md#lock), `lock_later` specifies that the lock is not to be taken now.
 
 ## Example
 

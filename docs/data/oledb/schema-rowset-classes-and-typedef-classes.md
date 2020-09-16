@@ -13,7 +13,7 @@ A schema is a collection of database objects that are owned, or have been create
 
 Schema rowsets are predefined rowsets representing metadata. Schema rowsets are generally used in dynamic programming, where the database structure is not known at compile time. You can use these schema rowsets to obtain information about a database at run time.
 
-Use the typedef classes to instantiate the schema rowsets. The corresponding typedef and schema rowset classes are listed below. You must call [CRestrictions::Open](../../data/oledb/crestrictions-open.md) after you have created an instance of the schema rowset. This method returns a result set based on the restrictions you specify. See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) for information on restriction columns associated with each schema rowset.
+Use the typedef classes to instantiate the schema rowsets. The corresponding typedef and schema rowset classes are listed below. You must call [CRestrictions::Open](./crestrictions-class.md#open) after you have created an instance of the schema rowset. This method returns a result set based on the restrictions you specify. See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) for information on restriction columns associated with each schema rowset.
 
 The following table displays each OLE DB Schema Rowset and its corresponding OLE DB Templates typedef class and info class.
 

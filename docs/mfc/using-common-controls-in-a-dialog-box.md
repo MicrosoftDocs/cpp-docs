@@ -35,7 +35,7 @@ The Windows common controls can be used in [dialog boxes](../mfc/dialog-boxes.md
 
 ## Remarks
 
-The addition of some common controls to a dialog box will cause the dialog box to no longer function. Refer to [Adding Controls to a Dialog Causes the Dialog to No Longer Function](../windows/adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function.md) for more information on handling this situation.
+The addition of some common controls to a dialog box will cause the dialog box to no longer function. Refer to [Adding Controls to a Dialog Causes the Dialog to No Longer Function](../windows/adding-editing-or-deleting-controls.md) for more information on handling this situation.
 
 ## What do you want to do
 

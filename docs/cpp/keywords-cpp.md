@@ -19,7 +19,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
         [`and`](bitwise-and-operator-amp.md) <sup>b</sup>\
         [`and_eq`](assignment-operators.md) <sup>b</sup>\
         [`asm`](../assembler/inline/asm.md) <sup>a</sup>\
-        [`auto`](auto-keyword.md)\
+        [`auto`](./auto-cpp.md)\
         [`bitand`](bitwise-and-operator-amp.md) <sup>b</sup>\
         [`bitor`](bitwise-inclusive-or-operator-pipe.md) <sup>b</sup>\
         [`bool`](bool-cpp.md)\
@@ -54,7 +54,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
         [`enum`](enumerations-cpp.md)\
         [`explicit`](user-defined-type-conversions-cpp.md)\
         **`export`** <sup>c</sup>\
-        [`extern`](using-extern-to-specify-linkage.md)\
+        [`extern`](./extern-cpp.md)\
         [`false`](false-cpp.md)\
         [`float`](fundamental-types-cpp.md)\
         [`for`](for-statement-cpp.md)\
@@ -234,20 +234,20 @@ These identifiers are extended attributes for the **`__declspec`** modifier. The
 
 :::row:::
     :::column:::
-        [`__abstract`](../dotnet/declaration-of-a-managed-class-type.md) <sup>f</sup>\
-        [`__box`](../dotnet/value-type-semantics.md) <sup>f</sup>\
-        [`__delegate`](../dotnet/delegates-and-events.md) <sup>f</sup>\
-        [`__gc`](../dotnet/declaration-of-a-clr-reference-class-object.md) <sup>f</sup>\
+        [`__abstract`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md) <sup>f</sup>\
+        [`__box`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md) <sup>f</sup>\
+        [`__delegate`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md) <sup>f</sup>\
+        [`__gc`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md) <sup>f</sup>\
         [`__identifier`](../extensions/identifier-cpp-cli.md)\
-        [`__nogc`](../dotnet/declaration-of-a-clr-reference-class-object.md) <sup>f</sup>\
+        [`__nogc`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md) <sup>f</sup>\
         [`__noop`](../intrinsics/noop.md)\
         **`__pin`** <sup>f</sup>\
         **`__property`** <sup>f</sup>\
         **`__sealed`** <sup>f</sup>
     :::column-end:::
     :::column:::
-        [`__try_cast`](../dotnet/cast-notation-and-introduction-of-safe-cast-angles.md) <sup>f</sup>\
-        [`__value`](../dotnet/value-type-semantics.md) <sup>f</sup>\
+        [`__try_cast`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md) <sup>f</sup>\
+        [`__value`](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md) <sup>f</sup>\
         [`abstract`](../extensions/abstract-cpp-component-extensions.md) <sup>g</sup>\
         [`array`](../extensions/arrays-cpp-component-extensions.md) <sup>g</sup>\
         [`as_friend`](../preprocessor/hash-using-directive-cpp.md)\

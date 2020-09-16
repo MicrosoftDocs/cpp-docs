@@ -29,7 +29,7 @@ You can use one of the ATL code wizards to add an object or a control to your AT
 
 1. In **Solution Explorer**, right-click the project node and click **Add** from the shortcut menu. Click **Add Class**.
 
-   The [Add Class](../../ide/add-class-dialog-box.md) dialog box appears.
+   The [Add Class](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) dialog box appears.
 
 1. With the **ATL** folder selected in the **Categories** pane, select an object to insert from the **Templates** pane. Click **Open**. The code wizard for the selected object appears.
 

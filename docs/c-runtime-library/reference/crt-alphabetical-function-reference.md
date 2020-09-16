@@ -1470,7 +1470,7 @@ The Universal C Runtime (UCRT, often just CRT) Library reference documentation i
 
 [ldexp](ldexp.md)
 
-[ldiv](ldiv-lldiv.md)
+[ldiv](./div.md)
 
 [_lfind](lfind.md)
 
@@ -1486,7 +1486,7 @@ The Universal C Runtime (UCRT, often just CRT) Library reference documentation i
 
 [llabs](abs-labs-llabs-abs64.md)
 
-[lldiv](ldiv-lldiv.md)
+[lldiv](./div.md)
 
 [llrint](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)
 
