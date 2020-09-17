@@ -57,7 +57,7 @@ Compiler option: **/ZW**
 
 Initializes a one-dimensional, modifiable array of types specified by the class template parameter, *T*.
 
-## Syntax
+### Syntax
 
 ```cpp
 Array(unsigned int size);
@@ -83,7 +83,7 @@ For more information about how to create instances of Platform::Array, see [Arra
 
 Retrieves a reference to the array element at the specified index location.
 
-## Syntax
+### Syntax
 
 ```cpp
 T& get(unsigned int index)  const;
@@ -102,7 +102,7 @@ The array element specified by the `index` parameter.
 
 Retrieves a handle to the current array.
 
-## Syntax
+### Syntax
 
 ```cpp
 property Array^ Value;

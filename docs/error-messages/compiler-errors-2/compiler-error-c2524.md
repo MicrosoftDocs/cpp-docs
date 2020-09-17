@@ -11,7 +11,7 @@ ms.assetid: e71d17f5-2fc2-416b-8dbd-e9bed85eb33a
 
 The destructor or finalizer had a parameter list that is not [void](../../cpp/void-cpp.md). Other parameter types are not allowed.
 
-## Example
+## Examples
 
 The following code reproduces C2524.
 
@@ -25,8 +25,6 @@ class A {
    // ~A() {}
 };
 ```
-
-## Example
 
 The following code reproduces C2524.
 

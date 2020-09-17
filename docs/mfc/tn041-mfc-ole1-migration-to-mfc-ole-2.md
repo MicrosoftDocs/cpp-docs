@@ -46,11 +46,11 @@ As discussed above, [OCLIENT](../overview/visual-cpp-samples.md) was included in
 > [!NOTE]
 > The compiler errors and step-by-step process was created with Visual C++ 2.0. Specific error messages and locations may have changed with Visual C++ 4.0, but the conceptual information remains valid.
 
-## Getting It Up and Running
+### Getting It Up and Running
 
 The approach taken to port the OCLIENT sample to MFC/OLE is to start by building it and fixing the obvious compiler errors that will result. If you take the OCLIENT sample from MFC 2.0 and compile it under this version of MFC, you'll find that there are not that many errors to resolve. The errors in the order in which they occurred are described below.
 
-## Compile and Fix Errors
+### Compile and Fix Errors
 
 ```Output
 \oclient\mainview.cpp(104) : error C2660: 'Draw' : function does not take 4 parameters
@@ -217,7 +217,7 @@ In MFC/OLE1 synchronous API calls from a container to a server were *simulated*,
 
 At this point OCLIENT will compile and link.
 
-## Other Necessary Changes
+### Other Necessary Changes
 
 There are few things that are not done that will keep OCLIENT from running, however. It is better to fix these problems now instead of later.
 
@@ -271,7 +271,7 @@ The implementation of all of these commands is in `COleDocument`, which is the b
 
 At this point, OCLIENT is a functional OLE container application. It is possible to insert items of any type (OLE1 or OLE 2). Since the necessary code to enable in-place activation is not implemented, items are edited in a separate window much like with OLE1. The next section discusses the necessary changes to enable in-place editing (sometimes called "Visual Editing").
 
-## Adding "Visual Editing"
+### Adding "Visual Editing"
 
 One of the most interesting features of OLE is in-place activation (or "Visual Editing"). This feature allows the server application to take over portions of the container's user interface to provided a more seamless editing interface for the user. To implement in-place activation to OCLIENT, some special resources need to be added, as well as some additional code. These resources and the code are normally provided by AppWizard — in fact, much of the code here was borrowed directly from a fresh AppWizard application with "Container" support.
 
@@ -411,11 +411,11 @@ void CMainView::OnSize(UINT nType, int cx, int cy)
 > [!NOTE]
 > The compiler errors and step-by-step process was created with Visual C++ 2.0. Specific error messages and locations may have changed with Visual C++ 4.0, but the conceptual information remains valid.
 
-## Getting It Up and Running
+### Getting It Up and Running
 
 The approach taken to port the HIERSVR sample to MFC/OLE is to start by building it and fixing the obvious compiler errors that will result. If you take the HIERSVR sample from MFC 2.0 and compile it under this version of MFC, you'll find that there are not many errors to resolve (although there are more than with the OCLIENT sample). The errors in the order in which they usually occur are described below.
 
-## Compile and Fix Errors
+### Compile and Fix Errors
 
 ```Output
 \hiersvr\hiersvr.cpp(83) : error C2039: 'RunEmbedded' : is not a member of 'COleTemplateServer'
@@ -616,7 +616,7 @@ Although there were more errors resulting from the compilation of the MFC 2.0 ve
 
 At this point HIERSVR will compile and link and function as an OLE server, but without the in-place editing feature, which will be implemented next.
 
-## Adding "Visual Editing"
+### Adding "Visual Editing"
 
 To add "Visual Editing" (or in-place activation) to this server application, there are only a few things you must take care of:
 

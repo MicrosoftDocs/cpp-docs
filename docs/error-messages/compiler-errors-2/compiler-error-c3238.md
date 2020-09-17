@@ -13,7 +13,7 @@ A type was defined in a client application that is also defined, via type forwar
 
 See [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) for more information.
 
-## Example
+## Examples
 
 The following sample creates an assembly that contains a type that was forwarded from another assembly.
 
@@ -23,8 +23,6 @@ The following sample creates an assembly that contains a type that was forwarded
 public ref class R {};
 ```
 
-## Example
-
 The following sample creates an assembly that used to contain the type definition, but not only contains type forwarding syntax.
 
 ```cpp
@@ -33,8 +31,6 @@ The following sample creates an assembly that used to contain the type definitio
 #using "C3238.dll"
 [ assembly:TypeForwardedTo(R::typeid) ];
 ```
-
-## Example
 
 The following sample generates C3238.
 

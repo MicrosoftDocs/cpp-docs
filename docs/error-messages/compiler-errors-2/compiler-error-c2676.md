@@ -11,7 +11,7 @@ binary 'operator' : 'type' does not define this operator or a conversion to a ty
 
 To use the operator, you must overload it for the specified type or define a conversion to a type for which the operator is defined.
 
-## Example
+## Examples
 
 The following sample generates C2676.
 
@@ -42,8 +42,6 @@ int main() {
                // and then the builtin-operator==(int, int)
 }
 ```
-
-## Example
 
 C2676 can also occur if you attempt to do pointer arithmetic on the **`this`** pointer of a reference type.
 

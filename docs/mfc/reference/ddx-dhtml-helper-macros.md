@@ -48,7 +48,7 @@ The value that you specified for the HTML control's ID parameter.
 *var*<br/>
 The value being exchanged.
 
-## Remarks
+### Remarks
 
 This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLANCHORELEMENT_HREF dispatch ID.
 
@@ -74,7 +74,7 @@ The value that you specified for the HTML control's ID parameter.
 *var*<br/>
 The value being exchanged.
 
-## Remarks
+### Remarks
 
 This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLANCHORELEMENT_TARGET dispatch ID.
 
@@ -100,7 +100,7 @@ The value that you specified for the HTML control's ID parameter.
 *var*<br/>
 The value being exchanged.
 
-## Remarks
+### Remarks
 
 This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLELEMENT_INNERHTML dispatch ID.
 
@@ -126,7 +126,7 @@ The value that you specified for the HTML control's ID parameter.
 *var*<br/>
 The value being exchanged.
 
-## Remarks
+### Remarks
 
 This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLELEMENT_INNERTEXT dispatch ID.
 
@@ -152,7 +152,7 @@ The value that you specified for the HTML control's ID parameter.
 *var*<br/>
 The value being exchanged. See *value* in [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext).
 
-## Remarks
+### Remarks
 
 This macro will only succeed when run on controls that have a Value property. Controls that have a Value property include edit boxes, list boxes, and combo boxes.
 
@@ -180,7 +180,7 @@ The value that you specified for the HTML control's ID parameter.
 *var*<br/>
 The value being exchanged.
 
-## Remarks
+### Remarks
 
 This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLFRAMEBASE_SRC dispatch ID.
 
@@ -206,7 +206,7 @@ The value that you specified for the HTML control's ID parameter.
 *var*<br/>
 The value being exchanged.
 
-## Remarks
+### Remarks
 
 This macro calls the [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) function using the DISPID_IHTMLFRAMEBASE_SRC dispatch ID.
 
@@ -232,7 +232,7 @@ The value that you specified for the HTML control's ID parameter.
 *var*<br/>
 The value being exchanged.
 
-## Remarks
+### Remarks
 
 When using the DDX_DHtml_Img_Src macro to retrieve the src property for an IMAGE element, the Internet Explorer image object will return the fully escaped URL for the image source. For example, if you use the DDX_DHtml_Img_Src macro to set the src property of an IMAGE element to the string "some interesting picture," when you retrieve that property, Internet Explorer will return the string "res://d:\myapplication\myapp.exe/some%20interesting%20picture."
 

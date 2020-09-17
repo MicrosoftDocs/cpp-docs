@@ -11,7 +11,7 @@ ms.assetid: eb0120ad-c850-4bdd-911d-0361229cc859
 
 A pointer to member-function expression must call the member function.
 
-## Example
+## Examples
 
 The following sample generates C2298.
 
@@ -46,8 +46,6 @@ int main() {
    (x.*pmf)();   // uses X::mf
 }
 ```
-
-## Example
 
 The following sample generates C2298.
 

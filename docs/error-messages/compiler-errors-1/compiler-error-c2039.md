@@ -11,7 +11,7 @@ ms.assetid: f9dfd521-9b36-4454-a69c-d63f45b606bb
 
 The code incorrectly calls or refers to a member of a structure, class, or union.
 
-## Example
+## Examples
 
 The following sample generates C2039.
 
@@ -27,8 +27,6 @@ int main() {
 }
 ```
 
-## Example
-
 The following sample generates C2039.
 
 ```cpp
@@ -41,8 +39,6 @@ int main() {
    Console::WriteLine( "{0}", DateTime::Now::get());   // OK
 }
 ```
-
-## Example
 
 The following sample generates C2039.
 
@@ -60,8 +56,6 @@ int S::get_Count() { return 0; }   // C2039
 int S::Count::get() { return 0; }   // OK
 ```
 
-## Example
-
 C2039 can also occur if you attempt to access a default indexer incorrectly. The following sample defines a component authored in C#.
 
 ```
@@ -76,8 +70,6 @@ public class B {
    }
 };
 ```
-
-## Example
 
 The following sample generates C2039.
 
@@ -95,8 +87,6 @@ int main() {
    Console::WriteLine(n);
 }
 ```
-
-## Example
 
 C2039 can also occur if you use generics. The following sample generates C2039.
 
@@ -120,8 +110,6 @@ int main() {
    f(gcnew R());
 }
 ```
-
-## Example
 
 C2039 can occur when you try to release managed or unmanaged resources. For more information, see [Destructors and finalizers](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
 
