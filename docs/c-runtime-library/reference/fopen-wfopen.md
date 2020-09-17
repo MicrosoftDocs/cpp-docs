@@ -121,6 +121,7 @@ The following options can be appended to *mode* to specify additional behaviors.
 
 |*mode* modifier|Behavior|
 |-|-|
+| **x** | Forces the function to fail if *filename* already exists. Can only be used with the "w" or "w+" specifiers. |
 | **c** | Enable the commit flag for the associated *filename* so that the contents of the file buffer are written directly to disk if either **fflush** or **_flushall** is called. |
 | **n** | Reset the commit flag for the associated *filename* to "no-commit." This is the default. It also overrides the global commit flag if you link your program with COMMODE.OBJ. The global commit flag default is "no-commit" unless you explicitly link your program with COMMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)). |
 | **N** | Specifies that the file is not inherited by child processes. |
@@ -142,6 +143,7 @@ Valid characters for the *mode* string that is used in **fopen** and **_fdopen**
 |**w+**|**\_O\_RDWR** (usually **\_O\_RDWR** &#124; **\_O\_CREAT** &#124; **\_O\_TRUNC**)|
 |**b**|**\_O\_BINARY**|
 |**t**|**\_O\_TEXT**|
+|**x**|**\_O\_EXCL**|
 |**c**|None|
 |**n**|None|
 |**S**|**\_O\_SEQUENTIAL**|

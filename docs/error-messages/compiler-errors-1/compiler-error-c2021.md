@@ -11,7 +11,7 @@ expected exponent value, not 'character'
 
 The character used as the exponent of a floating-point constant is not a valid number. Be sure to use an exponent that is in range.
 
-## Example
+## Examples
 
 The following sample generates C2021:
 
@@ -19,8 +19,6 @@ The following sample generates C2021:
 // C2021.cpp
 float test1=1.175494351E;   // C2021
 ```
-
-## Example
 
 Possible resolution:
 

@@ -241,7 +241,7 @@ public:
 *Fun*<br/>
 The type of the stored functor.
 
-## Member Functions
+### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
@@ -621,7 +621,7 @@ public:
 *Fun*<br/>
 The type of the stored functor.
 
-## Member Functions
+### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|

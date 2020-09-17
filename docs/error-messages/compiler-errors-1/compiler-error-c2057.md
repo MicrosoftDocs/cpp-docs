@@ -13,7 +13,7 @@ The context requires a constant expression, an expression whose value is known a
 
 The compiler must know the size of a type at compile time in order to allocate space for an instance of that type.
 
-## Example
+## Examples
 
 The following sample generates C2057 and shows how to fix it:
 
@@ -26,8 +26,6 @@ int main() {
    int b[i]; // OK - value of i is fixed and known to compiler
 }
 ```
-
-## Example
 
 C has more restrictive rules for constant expressions.  The following sample generates C2057 and shows how to fix it:
 

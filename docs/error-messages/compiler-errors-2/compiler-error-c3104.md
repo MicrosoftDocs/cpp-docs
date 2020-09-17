@@ -15,7 +15,7 @@ See [Attribute Parameter Types](../../extensions/attribute-parameter-types-cpp-c
 
 This error can be generated as a result of compiler conformance work that was done for Visual Studio 2005: when passing managed arrays to custom attributes, the type of the array is no longer deduced from the aggregate initialization list. The compiler now requires you to specify the type of the array as well as the initializer list.
 
-## Example
+## Examples
 
 The following sample generates C3104.
 
@@ -35,8 +35,6 @@ public ref struct ABC : public Attribute {
 // [ABC( gcnew array<int> {1,2,3}, param = gcnew array<double>{2.71, 3.14})]
 ref struct AStruct{};
 ```
-
-## Example
 
 The following sample generates C3104.
 

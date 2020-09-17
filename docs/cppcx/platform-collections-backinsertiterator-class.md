@@ -57,7 +57,7 @@ The BackInsertIterator class implements the rules required by the [back_insert_i
 
 Initializes a new instance of the `BackInsertIterator` class.
 
-## Syntax
+### Syntax
 
 ```
 explicit BackInsertIterator(
@@ -77,7 +77,7 @@ A `BackInsertIterator` inserts elements after the last element of the object spe
 
 Appends the specified object to the end of the current sequential collection.
 
-## Syntax
+### Syntax
 
 ```
 BackInsertIterator& operator=( const T& t);
@@ -96,7 +96,7 @@ A reference to the current BackInsertIterator.
 
 Retrieves a reference to the current BackInsertIterator.
 
-## Syntax
+### Syntax
 
 ```
 BackInsertIterator& operator*();
@@ -114,7 +114,7 @@ This operator returns a reference to the current BackInsertIterator; not to any 
 
 Returns a reference to the current BackInsertIterator. The iterator is unmodified.
 
-## Syntax
+### Syntax
 
 ```
 BackInsertIterator& operator++();

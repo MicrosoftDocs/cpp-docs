@@ -185,7 +185,7 @@ For ATL projects, it is possible to provide your own implementation of this func
 
 [!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_2.h)]
 
-## Requirements
+### Requirements
 
 **Header:** atldef.h
 
@@ -207,7 +207,7 @@ If _ATL_NO_EXCEPTIONS is not defined in an ATL project, the function throws a [C
 
 If _ATL_NO_EXCEPTIONS is defined, the function causes an assertion failure instead of throwing an exception.
 
-## Requirements
+### Requirements
 
 **Header:** atldef.h
 
