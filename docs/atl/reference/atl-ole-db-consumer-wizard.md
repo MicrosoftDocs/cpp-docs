@@ -148,7 +148,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
     // for consumer type of 'table'
     ```
 
-     See [Basic Mechanics of Attributes](../../windows/basic-mechanics-of-attributes.md) for more information.
+     See [Basic mechanics of attributes](../../windows/attributes/cpp-attributes-com-net.md#basic-mechanics-of-attributes) for more information.
 
 - **Type**
 
