@@ -23,7 +23,7 @@ class CEnumeratorAccessor
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_bIsParent](#bisparent)|A variable indicating whether the enumerator is a parent enumerator, if the row is an enumerator.|
 |[m_nType](#ntype)|A variable indicating whether the row describes a data source or an enumerator.|

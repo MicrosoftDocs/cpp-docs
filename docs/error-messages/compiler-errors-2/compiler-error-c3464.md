@@ -13,7 +13,7 @@ Type forwarding does not work on nested types.
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Example
+## Examples
 
 The following sample creates a component.
 
@@ -25,8 +25,6 @@ public:
    ref class N {};
 };
 ```
-
-## Example
 
 The following sample generates C3464.
 

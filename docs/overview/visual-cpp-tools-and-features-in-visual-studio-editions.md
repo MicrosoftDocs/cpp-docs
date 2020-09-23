@@ -308,9 +308,8 @@ The following tables show Visual C++ features that are available in Visual Studi
 
 ## Platforms
 
-||||||
-|-|-|-|-|-|
 |Platform|Visual Studio Express for Windows 10|Visual Studio Express for Windows Desktop|Visual Studio Community/Professional|Visual Studio Enterprise|
+|-|-|-|-|-|
 |Windows Desktop||X|X|X|
 |Universal Windows Platform ((phone, tablet, PC, Xbox, IoT, and HoloLens))|X||X|X|
 |Linux|X|X|
@@ -450,9 +449,8 @@ The following tables show Visual C++ features that are available in Visual Studi
 
 ## Application Lifecycle Management Tools
 
-||||||
-|-|-|-|-|-|
 |Tool|Visual Studio Express for Windows|Visual Studio Express for Windows Desktop|Visual Studio Professional / Community|Visual Studio Enterprise|
+|-|-|-|-|-|
 |Unit Testing (native framework)|X|X|X|X|
 |Unit Testing (managed framework)||X|X|X|
 |Code coverage||||X|

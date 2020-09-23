@@ -19,7 +19,7 @@ Defines the class template bitset and two supporting template functions for repr
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator&](../standard-library/bitset-operators.md#op_amp)|Performs a bitwise AND between two bitsets.|
 |[operator<\<](../standard-library/bitset-operators.md#op_lt_lt)|Inserts a text representation of the bit sequence into the standard output stream.|
@@ -29,7 +29,7 @@ Defines the class template bitset and two supporting template functions for repr
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[bitset](../standard-library/bitset-class.md)|The class template describes a type of object that stores a sequence consisting of a fixed number of bits that provide a compact way of keeping flags for a set of items or conditions.|
 

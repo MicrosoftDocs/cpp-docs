@@ -11,7 +11,7 @@ ms.assetid: 55625e46-ddb5-4c7c-99c7-cd4aa9f879bd
 
 A class must implement all members of an interface from which it directly inherits. An implemented member must have public accessibility, and must be marked virtual.
 
-## Example
+## Examples
 
 C4488 can occur if an implemented member is not public. The following sample generates C4488.
 
@@ -31,8 +31,6 @@ public:
    virtual void f1() {}
 };
 ```
-
-## Example
 
 C4488 can occur if an implemented member is not marked virtual. The following sample generates C4488.
 

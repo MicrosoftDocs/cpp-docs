@@ -9,7 +9,7 @@ ms.assetid: c701145b-62a0-4c4b-b32a-db8d69a59720
 
 You can pass a reference class with a CLR array to a native function, and modify the class, using PInvoke services.
 
-## Example
+## Examples
 
 Compile the following native library.
 
@@ -38,8 +38,6 @@ extern "C"  {
     }
 };
 ```
-
-## Example
 
 Compile the following assembly.
 

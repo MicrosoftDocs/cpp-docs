@@ -26,7 +26,7 @@ These class templates and functions are permitted unusual latitude in the intere
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[abs](../standard-library/valarray-functions.md#abs)|Operates on the elements of an input valarray, returning a valarray whose elements are equal to the absolute value of the elements of the input valarray.|
 |[acos](../standard-library/valarray-functions.md#acos)|Operates on the elements of an input valarray, returning a valarray whose elements are equal to the arccosine of the elements of the input valarray.|
@@ -50,7 +50,7 @@ These class templates and functions are permitted unusual latitude in the intere
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator!=](../standard-library/valarray-operators.md#op_neq)|Tests whether the corresponding elements of two equally sized valarrays are unequal or whether all the elements of a valarray are unequal a specified value of the valarray's element type.|
 |[operator%](../standard-library/valarray-operators.md#op_mod)|Obtains the remainder of dividing the corresponding elements of two equally sized valarrays or of dividing a valarray by a specified value of the valarray's element type or of dividing a specified value by a valarray.|
@@ -73,7 +73,7 @@ These class templates and functions are permitted unusual latitude in the intere
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[gslice Class](../standard-library/gslice-class.md)|A utility class to valarray that is used to define multi-dimensional slices of a valarray.|
 |[gslice_array Class](../standard-library/gslice-array-class.md)|An internal, auxiliary class template that supports general slice objects by providing operations between subset arrays defined by the general slice of a valarray.|
@@ -85,7 +85,7 @@ These class templates and functions are permitted unusual latitude in the intere
 
 ### Specializations
 
-|||
+|Name|Description|
 |-|-|
 |[valarray\<bool> Class](../standard-library/valarray-bool-class.md)|A specialized version of the class template valarray\<**Type**> to elements of type **`bool`**.|
 

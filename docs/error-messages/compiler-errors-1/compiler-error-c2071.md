@@ -13,7 +13,7 @@ ms.assetid: f8c09255-a5c4-47e3-8089-3d875ae43cc5
 
 To fix this issue, understand the intended storage class of the identifier—for example, **`static`** or **`extern`**—and correct the declaration to match.
 
-## Example
+## Examples
 
 The following sample generates C2071.
 
@@ -27,8 +27,6 @@ struct D {
    int i;   // OK, no extern on an automatic
 };
 ```
-
-## Example
 
 The following sample generates C2071.
 

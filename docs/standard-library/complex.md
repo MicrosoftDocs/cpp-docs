@@ -67,7 +67,7 @@ Unless otherwise specified, functions that can return multiple values are requir
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[abs](../standard-library/complex-functions.md#abs)|Calculates the modulus of a complex number.|
 |[acos](../standard-library/complex-functions.md#acos)||
@@ -97,7 +97,7 @@ Unless otherwise specified, functions that can return multiple values are requir
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator!=](../standard-library/complex-operators.md#op_neq)|Tests for inequality between two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|
 |[operator*](../standard-library/complex-operators.md#op_star)|Multiplies two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.|
@@ -110,7 +110,7 @@ Unless otherwise specified, functions that can return multiple values are requir
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[complex\<double>](../standard-library/complex-double.md)|The explicitly specialized class template describes an object that stores an ordered pair of objects, both of type **`double`**, where the first represents the real part of a complex number and the second represents the imaginary part.|
 |[complex\<float>](../standard-library/complex-float.md)|The explicitly specialized class template describes an object that stores an ordered pair of objects, both of type **`float`**, where the first represents the real part of a complex number and the second represents the imaginary part.|
@@ -121,7 +121,7 @@ Unless otherwise specified, functions that can return multiple values are requir
 
 The \<complex> header defines the following [user-defined literals](../cpp/user-defined-literals-cpp.md) which create a complex number with the real part being zero and the imaginary part being the value of the input parameter.
 
-|||
+|Declaration|Description|
 |-|-|
 |`constexpr complex<long double> operator""il(long double d)`<br />`constexpr complex<long double> operator""il(unsigned long long d)`|Returns: `complex<long double>{0.0L, static_cast<long double>(d)}`|
 |`constexpr complex<double> operator""i(long double d)`<br />`constexpr complex<double> operator""i(unsigned long long d)`|Returns: `complex<double>{0.0, static_cast<double>(d)}`.|

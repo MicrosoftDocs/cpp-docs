@@ -85,7 +85,7 @@ constexpr float exp(float x, int n)
     return n == 0 ? 1 :
         n % 2 == 0 ? exp(x * x, n / 2) :
         exp(x * x, (n - 1) / 2) * x;
-};
+}
 ```
 
 > [!TIP]
@@ -112,7 +112,7 @@ constexpr float exp(float x, int n)
     return n == 0 ? 1 :
         n % 2 == 0 ? exp(x * x, n / 2) :
         exp(x * x, (n - 1) / 2) * x;
-};
+}
 
 // Pass by reference
 constexpr float exp2(const float& x, const int& n)
@@ -120,7 +120,7 @@ constexpr float exp2(const float& x, const int& n)
     return n == 0 ? 1 :
         n % 2 == 0 ? exp2(x * x, n / 2) :
         exp2(x * x, (n - 1) / 2) * x;
-};
+}
 
 // Compile-time computation of array length
 template<typename T, int N>

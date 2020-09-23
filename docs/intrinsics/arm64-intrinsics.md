@@ -252,7 +252,7 @@ Interlocked intrinsics are a set of intrinsics that are used to perform atomic r
 
 The following table summarizes the ARM64 support of the non-bittest interlocked intrinsics. Each cell in the table corresponds to a name that is derived by appending the operation name in the left-most cell of the row and the type name in the top-most cell of the column to `_Interlocked`. For example, the cell at the intersection of the `Xor` row and the `8` column corresponds to `_InterlockedXor8` and is fully supported. Most of the supported functions offer these optional suffixes: `_acq`, `_rel`, and `_nf`. The `_acq` suffix indicates an "acquire" semantic and the `_rel` suffix indicates a "release" semantic. The `_nf` or "no fence" suffix is unique to ARM and ARM64 and is discussed in the next section.
 
-||8|16|32|64|128|P|
+|Operation|8|16|32|64|128|P|
 |-|-------|--------|--------|--------|-------|-------|
 |Add|None|None|Full|Full|None|None|
 |And|Full|Full|Full|Full|None|None|

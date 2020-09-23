@@ -48,10 +48,8 @@ The floating-point result type, defaults to **`double`**. For possible types, se
 
 The class template describes a distribution that produces values of a user-specified integral type, or type **`double`** if none is provided, distributed according to the Student's *t*-Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[student_t_distribution](#student_t_distribution)|`student_t_distribution::n`|`student_t_distribution::param`|
-|`student_t_distribution::operator()`||[param_type](#param_type)|
+[student_t_distribution](#student_t_distribution)\
+[param_type](#param_type)
 
 The property function `n()` returns the value for the stored distribution parameter `n`.
 

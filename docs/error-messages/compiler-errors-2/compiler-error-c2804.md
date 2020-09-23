@@ -11,7 +11,7 @@ binary 'operator operator' has too many parameters
 
 The overloaded binary operator member function is declared with more than one parameter. The first operand parameter of a binary operator member function, whose type is the operator's enclosing type, is implied.
 
-## Example
+## Examples
 
 The following sample generates C2804 and shows how to fix it.
 
@@ -29,8 +29,6 @@ int main() {
    x += y;   // equivalent to x.operator+=(y)
 }
 ```
-
-## Example
 
 The following sample generates C2804 and shows how to fix it.
 

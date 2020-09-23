@@ -25,9 +25,8 @@ enum IMAGE_EDIT_MODE
 
 ## Members
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |IMAGE_EDIT_MODE_PEN|Used to draw individual pixels.|
 |IMAGE_EDIT_MODE_FILL|Used to fill all adjacent areas that contain the color at the current cursor location.|
 |IMAGE_EDIT_MODE_LINE|Used to draw a line.|

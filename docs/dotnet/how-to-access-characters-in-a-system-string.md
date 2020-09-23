@@ -9,7 +9,7 @@ ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
 
 You can access characters of a <xref:System.String> object for high-performance calls to unmanaged functions that take `wchar_t*` strings. The method yields an interior pointer to the first character of the <xref:System.String> object. This pointer can be manipulated directly or pinned and passed to a function expecting an ordinary **`wchar_t`** string.
 
-## Example
+## Examples
 
 `PtrToStringChars` returns a <xref:System.Char>, which is an interior pointer (also known as a `byref`). As such, it is subject to garbage collection. You don't have to pin this pointer unless you're going to pass it to a native function.
 
@@ -37,8 +37,6 @@ int main() {
 abcdefg
 ```
 
-## Example
-
 This example shows where pinning is needed.
 
 ```cpp
@@ -65,8 +63,6 @@ int main() {
 ```Output
 7
 ```
-
-## Example
 
 An interior pointer has all the properties of a native C++ pointer. For example, you can use it to walk a linked data structure and do insertions and deletions using only one pointer:
 

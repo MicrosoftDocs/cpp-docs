@@ -207,7 +207,7 @@ To change the appearance of your application you must use other classes that pro
 
 All of the drawing methods are virtual. This enables you to create a custom visual style for the GUI of your application. If you want to create your own visual style, derive a class from one of the visual manager classes and override the drawing methods that you want to change.
 
-## Example
+## Examples
 
 This sample demonstrates how to instantiate the standard and custom `CMFCVisualManager` objects.
 
@@ -238,8 +238,6 @@ void CMFCSkinsApp::SetSkin (int iIndex)
     CMFCVisualManager::GetInstance ()->RedrawAll ();
 }
 ```
-
-## Example
 
 The following example demonstrates how to retrieve the default values of a `CMFCVisualManager` object. This code snippet is part of the [Tasks Pane sample](../../overview/visual-cpp-samples.md).
 

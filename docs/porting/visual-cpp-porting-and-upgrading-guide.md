@@ -1,7 +1,7 @@
 ---
 title: "Microsoft C++ porting and upgrading guide"
 description: "Upgrade Microsoft C++ code to the latest version of Visual Studio."
-ms.date: "11/18/2019"
+ms.date: 09/10/2020
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
 ms.topic: "overview"
 ---
@@ -23,7 +23,7 @@ If a legacy application is running satisfactorily, in a secure environment, and 
 
 - Build times are faster, because of performance improvements in the compiler and linker.
 
-- Better standards conformance. The [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option helps you identify code that doesn't conform to the current C++ standard.
+- Better standards conformance. The [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option helps you identify code that doesn't conform to the current C++ standard. The [new preprocessor](../preprocessor/preprocessor-experimental-overview.md) supports code conformance, too.
 
 - Better run-time security, including more secure [C Runtime library](../c-runtime-library/security-features-in-the-crt.md) features. And, compiler features such as [guard checking](../build/reference/guard-enable-guard-checks.md) and address sanitizers (new in Visual Studio 2019 version 16.4).
 

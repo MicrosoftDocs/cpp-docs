@@ -9,7 +9,7 @@ ms.assetid: b9612d30-eb23-46ef-8093-d56f237d3cf1
 
 These functions provide support for COM Map `IUnknown` implementations.
 
-|||
+|Function|Description|
 |-|-|
 |[AtlInternalQueryInterface](#atlinternalqueryinterface)|Delegates to the `IUnknown` of a nonaggregated object.|
 |[InlineIsEqualIUnknown](#inlineisequaliunknown)|Generates efficient code for comparing interfaces against `IUnknown`.|

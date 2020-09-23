@@ -29,7 +29,7 @@ The class that contains the `BEGIN_PROPSET_MAP`.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetPropValue](#getpropvalue)|Gets a property from a property set.|
 |[IsValidValue](#isvalidvalue)|Used to validate a value before setting a property.|

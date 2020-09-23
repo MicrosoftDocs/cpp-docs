@@ -19,10 +19,11 @@ statements
 
 #### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*identifier*|The identifier whose existence you want to test.|
-|*statements*|One or more statements to execute if *identifier* does not exist.|
+*identifier*\
+The identifier whose existence you want to test.
+
+*statements*\
+One or more statements to execute if *identifier* does not exist.
 
 ## Remarks
 

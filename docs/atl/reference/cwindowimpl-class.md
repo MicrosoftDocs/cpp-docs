@@ -40,7 +40,7 @@ A [traits class](../../atl/understanding-window-traits.md) that defines styles f
 
 ### CWindowImplBaseT Methods
 
-|||
+|Name|Description|
 |-|-|
 |[DefWindowProc](#defwindowproc)|Provides default message processing.|
 |[GetCurrentMessage](#getcurrentmessage)|Returns the current message.|
@@ -51,14 +51,14 @@ A [traits class](../../atl/understanding-window-traits.md) that defines styles f
 
 ### Static Methods
 
-|||
+|Name|Description|
 |-|-|
 |[GetWndClassInfo](#getwndclassinfo)|Returns a static instance of [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md), which manages the window class information.|
 |[WindowProc](#windowproc)|Processes messages sent to the window.|
 
 ### Data Members
 
-|||
+|Name|Description|
 |-|-|
 |[m_pfnSuperWindowProc](#m_pfnsuperwindowproc)|Points to the window class's original window procedure.|
 

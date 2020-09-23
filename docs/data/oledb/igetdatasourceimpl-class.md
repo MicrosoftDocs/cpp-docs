@@ -29,7 +29,7 @@ Your class, derived from `IGetDataSourceImpl`.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetDataSource](#getdatasource)|Returns an interface pointer on the data source object that created the session.|
 

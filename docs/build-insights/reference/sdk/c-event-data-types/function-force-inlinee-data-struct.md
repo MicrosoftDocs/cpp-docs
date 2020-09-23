@@ -28,7 +28,7 @@ typedef struct FUNCTION_FORCE_INLINEE_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `Name` | The function's name, encoded in UTF-8. |
 | `Size` | The function's size, as a number of intermediate instructions. |

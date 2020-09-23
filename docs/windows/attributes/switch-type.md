@@ -51,9 +51,7 @@ See the [case](case-cpp.md) example for a sample use of **switch_type**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`typedef`**|
 |**Repeatable**|No|

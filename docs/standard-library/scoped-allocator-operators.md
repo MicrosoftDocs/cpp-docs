@@ -6,9 +6,8 @@ ms.assetid: 4dfe0805-cc6e-479f-887f-a1c164f73837
 ---
 # &lt;scoped_allocator&gt; operators
 
-|||
-|-|-|
-|[operator!=](#op_neq)|[operator==](#op_eq_eq)|
+[operator!=](#op_neq)\
+[operator==](#op_eq_eq)
 
 ## <a name="op_neq"></a> operator!=
 

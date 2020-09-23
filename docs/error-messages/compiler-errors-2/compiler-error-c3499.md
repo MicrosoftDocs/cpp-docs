@@ -19,7 +19,7 @@ The compiler generates this error when a lambda expression that specifies **`voi
 
 - Combine the statements that make up the body of the lambda expression into a single statement.
 
-## Example
+## Examples
 
 The following example generates C3499 because the body of a lambda expression contains multiple statements and returns a value, but the lambda expression does not specify the return type:
 
@@ -31,8 +31,6 @@ int main()
    [](int x) { int n = x * 2; return n; } (5); // C3499
 }
 ```
-
-## Example
 
 The following example shows two possible resolutions to C3499. The first resolution provides the return type of the lambda expression. The second resolution combines the statements that make up the body of the lambda expression into a single statement.
 

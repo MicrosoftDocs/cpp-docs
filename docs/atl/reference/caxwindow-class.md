@@ -22,7 +22,7 @@ class CAxWindow : public CWindow
 
 ### Methods
 
-|||
+|Function|Description|
 |-|-|
 |[AttachControl](#attachcontrol)|Attaches an existing ActiveX control to the `CAxWindow` object.|
 |[CAxWindow](#caxwindow)|Constructs a `CAxWindow` object.|
@@ -36,7 +36,7 @@ class CAxWindow : public CWindow
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator =](#operator_eq)|Assigns an HWND to an existing `CAxWindow` object.|
 

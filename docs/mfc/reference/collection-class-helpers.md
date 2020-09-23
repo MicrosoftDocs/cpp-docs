@@ -12,7 +12,7 @@ The Microsoft Foundation Class Library provides the following global functions i
 
 ### Collection Class Helpers
 
-|||
+|Name|Description|
 |-|-|
 |[CompareElements](#compareelements)|Indicates whether elements are the same.|
 |[CopyElements](#copyelements)|Copies elements from one array to another.|

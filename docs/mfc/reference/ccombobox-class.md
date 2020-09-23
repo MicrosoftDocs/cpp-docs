@@ -1,6 +1,7 @@
 ---
 title: "CComboBox Class"
-ms.date: "11/04/2016"
+description: "API reference for the MFC Windows combo box class CComboBox"
+ms.date: "08/27/2020"
 f1_keywords: ["CComboBox", "AFXWIN/CComboBox", "AFXWIN/CComboBox::CComboBox", "AFXWIN/CComboBox::AddString", "AFXWIN/CComboBox::Clear", "AFXWIN/CComboBox::CompareItem", "AFXWIN/CComboBox::Copy", "AFXWIN/CComboBox::Create", "AFXWIN/CComboBox::Cut", "AFXWIN/CComboBox::DeleteItem", "AFXWIN/CComboBox::DeleteString", "AFXWIN/CComboBox::Dir", "AFXWIN/CComboBox::DrawItem", "AFXWIN/CComboBox::FindString", "AFXWIN/CComboBox::FindStringExact", "AFXWIN/CComboBox::GetComboBoxInfo", "AFXWIN/CComboBox::GetCount", "AFXWIN/CComboBox::GetCueBanner", "AFXWIN/CComboBox::GetCurSel", "AFXWIN/CComboBox::GetDroppedControlRect", "AFXWIN/CComboBox::GetDroppedState", "AFXWIN/CComboBox::GetDroppedWidth", "AFXWIN/CComboBox::GetEditSel", "AFXWIN/CComboBox::GetExtendedUI", "AFXWIN/CComboBox::GetHorizontalExtent", "AFXWIN/CComboBox::GetItemData", "AFXWIN/CComboBox::GetItemDataPtr", "AFXWIN/CComboBox::GetItemHeight", "AFXWIN/CComboBox::GetLBText", "AFXWIN/CComboBox::GetLBTextLen", "AFXWIN/CComboBox::GetLocale", "AFXWIN/CComboBox::GetMinVisible", "AFXWIN/CComboBox::GetTopIndex", "AFXWIN/CComboBox::InitStorage", "AFXWIN/CComboBox::InsertString", "AFXWIN/CComboBox::LimitText", "AFXWIN/CComboBox::MeasureItem", "AFXWIN/CComboBox::Paste", "AFXWIN/CComboBox::ResetContent", "AFXWIN/CComboBox::SelectString", "AFXWIN/CComboBox::SetCueBanner", "AFXWIN/CComboBox::SetCurSel", "AFXWIN/CComboBox::SetDroppedWidth", "AFXWIN/CComboBox::SetEditSel", "AFXWIN/CComboBox::SetExtendedUI", "AFXWIN/CComboBox::SetHorizontalExtent", "AFXWIN/CComboBox::SetItemData", "AFXWIN/CComboBox::SetItemDataPtr", "AFXWIN/CComboBox::SetItemHeight", "AFXWIN/CComboBox::SetLocale", "AFXWIN/CComboBox::SetMinVisibleItems", "AFXWIN/CComboBox::SetTopIndex", "AFXWIN/CComboBox::ShowDropDown"]
 helpviewer_keywords: ["CComboBox [MFC], CComboBox", "CComboBox [MFC], AddString", "CComboBox [MFC], Clear", "CComboBox [MFC], CompareItem", "CComboBox [MFC], Copy", "CComboBox [MFC], Create", "CComboBox [MFC], Cut", "CComboBox [MFC], DeleteItem", "CComboBox [MFC], DeleteString", "CComboBox [MFC], Dir", "CComboBox [MFC], DrawItem", "CComboBox [MFC], FindString", "CComboBox [MFC], FindStringExact", "CComboBox [MFC], GetComboBoxInfo", "CComboBox [MFC], GetCount", "CComboBox [MFC], GetCueBanner", "CComboBox [MFC], GetCurSel", "CComboBox [MFC], GetDroppedControlRect", "CComboBox [MFC], GetDroppedState", "CComboBox [MFC], GetDroppedWidth", "CComboBox [MFC], GetEditSel", "CComboBox [MFC], GetExtendedUI", "CComboBox [MFC], GetHorizontalExtent", "CComboBox [MFC], GetItemData", "CComboBox [MFC], GetItemDataPtr", "CComboBox [MFC], GetItemHeight", "CComboBox [MFC], GetLBText", "CComboBox [MFC], GetLBTextLen", "CComboBox [MFC], GetLocale", "CComboBox [MFC], GetMinVisible", "CComboBox [MFC], GetTopIndex", "CComboBox [MFC], InitStorage", "CComboBox [MFC], InsertString", "CComboBox [MFC], LimitText", "CComboBox [MFC], MeasureItem", "CComboBox [MFC], Paste", "CComboBox [MFC], ResetContent", "CComboBox [MFC], SelectString", "CComboBox [MFC], SetCueBanner", "CComboBox [MFC], SetCurSel", "CComboBox [MFC], SetDroppedWidth", "CComboBox [MFC], SetEditSel", "CComboBox [MFC], SetExtendedUI", "CComboBox [MFC], SetHorizontalExtent", "CComboBox [MFC], SetItemData", "CComboBox [MFC], SetItemDataPtr", "CComboBox [MFC], SetItemHeight", "CComboBox [MFC], SetLocale", "CComboBox [MFC], SetMinVisibleItems", "CComboBox [MFC], SetTopIndex", "CComboBox [MFC], ShowDropDown"]
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
@@ -555,10 +556,11 @@ BOOL GetCueBanner(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpszText*|[out] Pointer to a buffer that receives the cue banner text.|
-|*cchText*|[in] Size of the buffer that the *lpszText* parameter points to.|
+*lpszText*\
+[out] Pointer to a buffer that receives the cue banner text.
+
+*cchText*\
+[in] Size of the buffer that the *lpszText* parameter points to.
 
 ### Return Value
 
@@ -809,7 +811,8 @@ The length (in bytes) of the string, excluding the terminating null character. I
 
 ### Remarks
 
-The second form of this member function fills a `CString` object with the item's text.
+The second form of this member function fills a `CString` object with the item's text.\
+If *nIndex* is invalid, this function throws an `E_INVALIDARG` exception (error code: `-2147024809`, `0x80070057`).
 
 ### Example
 
@@ -1081,9 +1084,8 @@ BOOL SetCueBanner(LPCTSTR lpszText);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpszText*|[in] Pointer to a null-terminated buffer that contains the cue text.|
+*lpszText*\
+[in] Pointer to a null-terminated buffer that contains the cue text.
 
 ### Return Value
 
@@ -1373,9 +1375,8 @@ BOOL SetMinVisibleItems(int iMinVisible);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*iMinVisible*|[in] Specifies the minimum number of visible items.|
+*iMinVisible*\
+[in] Specifies the minimum number of visible items.
 
 ### Return Value
 

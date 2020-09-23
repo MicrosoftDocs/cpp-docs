@@ -10,7 +10,7 @@ When an embedded OLE control fires an event, the control's container receives th
 
 ### Event Sink Maps
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_EVENTSINK_MAP](#begin_eventsink_map)|Starts the definition of an event sink map.|
 |[DECLARE_EVENTSINK_MAP](#declare_eventsink_map)|Declares an event sink map.|

@@ -12,7 +12,7 @@ This group of functions also includes a global routine for displaying a message 
 
 ### CString Functions
 
-|||
+|Name|Description|
 |-|-|
 |[AfxExtractSubString](#afxextractsubstring)|Extracts substrings separated by a single character from a given source string.|
 |[AfxFormatString1](#afxformatstring1)|Substitutes a given string for the format characters "%1" in a string contained in the string table.|

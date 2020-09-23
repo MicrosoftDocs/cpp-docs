@@ -9,9 +9,8 @@ helpviewer_keywords: ["std::array [C++], get", "std::get [C++]", "std::swap [C++
 
 The \<array> header includes two non-member functions, `get` and `swap`, that operate on **array** objects.
 
-|||
-|-|-|
-|[get](#get)|[swap](#swap)|
+[get](#get)\
+[swap](#swap)
 
 ## <a name="get"></a> get
 

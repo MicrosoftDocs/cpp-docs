@@ -21,7 +21,7 @@ The `norm` and `unorm` types are scalar types that limit the range of **`float`*
 
 The Short Vector Library provides some of the functionality of the [Vector Type](https://go.microsoft.com/fwlink/p/?linkid=248500) that's defined in HLSL and is typically used to define texels. A short vector is a data structure that holds one to four values of the same type. The supported types are **`double`**, **`float`**, **`int`**, `norm`, `uint`, and `unorm`. The type names are shown in the following table. For each type, there is also a corresponding **`typedef`** that doesn't have an underscore in the name. The types that have the underscores are in the [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md). The types that don't have the underscores are in the [Concurrency::graphics::direct3d Namespace](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) so that they are clearly separated from the similarly-named fundamental types such as **`__int8`** and **`__int16`**.
 
-||Length 2|Length 3|Length 4|
+|Type|Length 2|Length 3|Length 4|
 |-|--------------|--------------|--------------|
 |double|double_2<br /><br /> double2|double_3<br /><br /> double3|double_4<br /><br /> double4|
 |float|float_2<br /><br /> float2|float_3<br /><br /> float3|float_4<br /><br /> float4|

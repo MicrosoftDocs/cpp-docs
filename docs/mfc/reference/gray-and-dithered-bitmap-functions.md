@@ -13,7 +13,7 @@ MFC provides two functions for giving a bitmap the appearance of a disabled cont
 
 ![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "Comparison of gray and original icon versions")
 
-|||
+|Name|Description|
 |-|-|
 |[AfxDrawGrayBitmap](#afxdrawgraybitmap)|Draws a gray version of a bitmap.|
 |[AfxGetGrayBitmap](#afxgetgraybitmap)|Copies a gray version of a bitmap.|
@@ -24,7 +24,7 @@ MFC also provides two functions for replacing a bitmap's background with a dithe
 
 ![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "Comparison of dithered and original icon versions")
 
-|||
+|Name|Description|
 |-|-|
 |[AfxDrawDitheredBitmap](#afxdrawditheredbitmap)|Draws a bitmap with a dithered background.|
 |[AfxGetDitheredBitmap](#afxgetditheredbitmap)|Copies a bitmap with a dithered background.|

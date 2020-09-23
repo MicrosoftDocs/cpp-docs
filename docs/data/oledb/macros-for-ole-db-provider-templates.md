@@ -11,7 +11,7 @@ The OLE DB Templates Provider macros offer functionality in the following catego
 
 ## Property Set Map Macros
 
-|||
+| Name | Description |
 |-|-|
 |[BEGIN_PROPERTY_SET](#begin_property_set)|Marks the beginning of a property set.|
 |[BEGIN_PROPERTY_SET_EX](#begin_property_set_ex)|Marks the beginning of a property set.|
@@ -25,7 +25,7 @@ The OLE DB Templates Provider macros offer functionality in the following catego
 
 ## Column Map Macros
 
-|||
+| Name | Description |
 |-|-|
 |[BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map)|Marks the beginning of the provider column map entries.|
 |[END_PROVIDER_COLUMN_MAP](#end_provider_column_map)|Marks the end of the provider column map entries.|
@@ -39,7 +39,7 @@ The OLE DB Templates Provider macros offer functionality in the following catego
 
 ## Schema Rowset Macros
 
-|||
+| Name | Description |
 |-|-|
 |[BEGIN_SCHEMA_MAP](#begin_schema_map)|Marks the beginning of a schema map.|
 |[END_SCHEMA_MAP](#end_schema_map)|Marks the end of a schema map.|

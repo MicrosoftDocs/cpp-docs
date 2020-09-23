@@ -10,7 +10,7 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# steady_clock struct
+# high_resolution_clock struct
 
 Represents a *high_resolution* clock.
 
@@ -33,7 +33,7 @@ class high_resolution_clock
 
 ## Functions
 
-|||
+|Name|Description|
 |-|-|
 |`now`|Returns the current time as a `time_point` value.|
 

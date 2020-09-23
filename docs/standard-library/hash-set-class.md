@@ -713,9 +713,8 @@ emplace(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.|
+*val*\
+The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.
 
 ### Return Value
 
@@ -765,10 +764,11 @@ iterator emplace(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.|
-|*_Where*|The place to start searching for the correct point of insertion. (Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows *_Where*.)|
+*val*\
+The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.
+
+*_Where*\
+The place to start searching for the correct point of insertion. (Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows *_Where*.)
 
 ### Return Value
 
@@ -1331,13 +1331,20 @@ hash_set(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Al*|The storage allocator class to be used for this `hash_set` object, which defaults to `Allocator`.|
-|*Comp*|The comparison function of type `const Traits` used to order the elements in the `hash_set`, which defaults to `hash_compare`.|
-|*Right*|The `hash_set` of which the constructed `hash_set` is to be a copy.|
-|*First*|The position of the first element in the range of elements to be copied.|
-|*Last*|The position of the first element beyond the range of elements to be copied.|
+*Al*\
+The storage allocator class to be used for this `hash_set` object, which defaults to `Allocator`.
+
+*Comp*\
+The comparison function of type `const Traits` used to order the elements in the `hash_set`, which defaults to `hash_compare`.
+
+*Right*\
+The `hash_set` of which the constructed `hash_set` is to be a copy.
+
+*First*\
+The position of the first element in the range of elements to be copied.
+
+*Last*\
+The position of the first element beyond the range of elements to be copied.
 
 ### Remarks
 
@@ -1384,13 +1391,20 @@ void insert(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Val*|The value of an element to be inserted into the `hash_set` unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.|
-|*Where*|The place to start searching for the correct point of insertion. (Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows `_Where`.)|
-|*First*|The position of the first element to be copied from a `hash_set`.|
-|*Last*|The position just beyond the last element to be copied from a `hash_set`.|
-|*IList*|The initializer_list from which to copy the elements.|
+*Val*\
+The value of an element to be inserted into the `hash_set` unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.
+
+*Where*\
+The place to start searching for the correct point of insertion. (Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows `_Where`.)
+
+*First*\
+The position of the first element to be copied from a `hash_set`.
+
+*Last*\
+The position just beyond the last element to be copied from a `hash_set`.
+
+*IList*\
+The initializer_list from which to copy the elements.
 
 ### Return Value
 
@@ -1674,9 +1688,8 @@ hash_set& operator=(hash_set&& right);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [hash_set](../standard-library/hash-set-class.md) being copied into the `hash_set`.|
+*right*\
+The [hash_set](../standard-library/hash-set-class.md) being copied into the `hash_set`.
 
 ### Remarks
 

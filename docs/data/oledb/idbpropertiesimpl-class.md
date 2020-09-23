@@ -30,7 +30,7 @@ Your class, derived from `IDBPropertiesImpl`.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetProperties](#getproperties)|Returns the values of properties in the Data Source, Data Source Information, and Initialization property groups that are currently set on the data source object or the values of properties in the Initialization property group that are currently set on the enumerator.|
 |[GetPropertyInfo](#getpropertyinfo)|Returns information about all properties supported by the provider.|

@@ -8,7 +8,7 @@ ms.assetid: 223578cb-6180-4787-a8d8-ba3787a5d3ee
 
 These macros define category maps.
 
-|||
+|Macro|Description|
 |-|-|
 |[BEGIN_CATEGORY_MAP](#begin_category_map)|Marks the beginning of the category map.|
 |[END_CATEGORY_MAP](#end_category_map)|Marks the end of the category map.|

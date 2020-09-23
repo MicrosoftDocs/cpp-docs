@@ -35,7 +35,7 @@ struct Ptr
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |`typedef T2 difference_type`|The type `T2` is `Ptr::difference_type` if that type exists, otherwise `ptrdiff_t`. If `Ptr` is a raw pointer, the type is `ptrdiff_t`.|
 |`typedef T1 element_type`|The type `T1` is `Ptr::element_type` if that type exists, otherwise `Ty`. If `Ptr` is a raw pointer, the type is `Ty`.|
@@ -43,7 +43,7 @@ struct Ptr
 
 ### Structs
 
-|||
+|Name|Description|
 |-|-|
 |`rebind`|Attempts to convert the underlying pointer type to a specified type.|
 

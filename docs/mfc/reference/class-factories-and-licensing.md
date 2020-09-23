@@ -14,7 +14,7 @@ The following table lists several macros and functions used to declare and imple
 
 ### Class Factories and Licensing
 
-|||
+|Macro or function|Description|
 |-|-|
 |[DECLARE_OLECREATE_EX](#declare_olecreate_ex)|Declares the class factory for an OLE control or property page.|
 |[IMPLEMENT_OLECREATE_EX](#implement_olecreate_ex)|Implements the control's `GetClassID` function and declares an instance of the class factory.|

@@ -15,9 +15,8 @@ The **`decltype`** type specifier yields the type of a specified expression. The
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*expression*|An expression. For more information, see [Expressions](../cpp/expressions-cpp.md).|
+*expression*\
+An expression. For more information, see [Expressions](../cpp/expressions-cpp.md).
 
 ## Return Value
 
@@ -90,7 +89,7 @@ Forwarding functions wrap calls to other functions. Consider a function template
 
 In this scenario, you cannot write an appropriate type expression without the **`decltype`** type specifier. The **`decltype`** type specifier enables generic forwarding functions because it does not lose required information about whether a function returns a reference type. For a code example of a forwarding function, see the previous `myFunc` template function example.
 
-## Example
+## Examples
 
 The following code example declares the late-specified return type of template function `Plus()`. The `Plus` function processes its two operands with the **`operator+`** overload. Consequently, the interpretation of the plus operator (**`+`**) and the return type of the `Plus` function depends on the types of the function arguments.
 
@@ -163,8 +162,6 @@ Plus(dx, dy) = 13.5
 Hello, world!
 x3.Dump() = 42
 ```
-
-## Example
 
 **Visual Studio 2017 and later:** The compiler parses **`decltype`** arguments when the templates are declared rather than instantiated. Consequently, if a non-dependent specialization is found in the **`decltype`** argument, it will not be deferred to instantiation-time and will be processed immediately and any resulting errors will be diagnosed at that time.
 

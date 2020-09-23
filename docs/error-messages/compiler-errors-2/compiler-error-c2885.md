@@ -11,9 +11,9 @@ ms.assetid: 7743e5f3-a034-44b4-9ee8-5a6254c27f8c
 
 You used a [using](../../cpp/using-declaration.md) declaration incorrectly.
 
-## Example
-
 This error can be generated as a result of compiler conformance work that was done for Visual Studio 2005: it is no longer valid to have a **`using`** declaration to a nested type; you must explicitly qualify each reference you make to the nested type, put the type in a namespace, or create a typedef.
+
+## Examples
 
 The following sample generates C2885.
 
@@ -43,8 +43,6 @@ int main () {
    X13.i = 9;
 }
 ```
-
-## Example
 
 If you use the **`using`** keyword with a class member, C++ requires you to define that member inside another class (a derived class).
 

@@ -48,14 +48,14 @@ The class that will act as storage for the rowset's data. This parameter default
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[NameFromDBID](#namefromdbid)|Extracts a string from a `DBID` and copies it to the *bstr* passed in.|
 |[SetCommandText](#setcommandtext)|Validates and stores the `DBID`s in the two strings ([m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)).|
 
 ### Overridable Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetColumnInfo](#getcolumninfo)|Retrieves column information for a particular client request.|
 |[GetCommandFromID](#getcommandfromid)|Checks to see if either or both parameters contain string values, and if so, copies the string values to the data members [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).|
@@ -63,7 +63,7 @@ The class that will act as storage for the rowset's data. This parameter default
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_rgRowData](#rgrowdata)|By default, a `CAtlArray` that templatizes on the user record template argument to `CRowsetImpl`. Another array type class can be used by changing the `ArrayType` template argument to `CRowsetImpl`.|
 |[m_strCommandText](#strcommandtext)|Contains the rowset's initial command.|

@@ -1,5 +1,6 @@
 ---
 title: "Global state in the CRT"
+description: "Describes how shared global state is handled in the Universal C Runtime." 
 ms.date: "04/02/2020"
 helpviewer_keywords: ["CRT global state"]
 ---
@@ -23,8 +24,8 @@ The OS-specific versions of these functions are in `ucrt.osmode.lib`. For exampl
 
 There are two ways to isolate your component's CRT state from an app's CRT state:
 
-- Statically link your component by using compiler options /MT (release) or MTd (debug). For details, see [/MD, /MT, /LD](https://docs.microsoft.com/cpp/build/reference/md-mt-ld-use-run-time-library?view=vs-2019). Note that static linking can greatly increase binary size.
-- Starting with Windows 10 20H2, get CRT state isolation by dynamically linking to the CRT but call the OS-mode exports (the functions that begin with _o_). To call the OS-mode exports, statically link as before, but ignore the static UCRT by using linker option `/NODEFAULTLIB:libucrt.lib` (release) or `/NODEFAULTLIB:libucrtd.lib` (debug) See [/NODEFAULTLIB (Ignore Libraries)](https://docs.microsoft.com/cpp/build/reference/nodefaultlib-ignore-libraries?view=vs-2019) for details. And add `ucrt.osmode.lib` to the linker input.
+- Statically link your component by using compiler options /MT (release) or MTd (debug). For details, see [/MD, /MT, /LD](../build/reference/md-mt-ld-use-run-time-library.md). Note that static linking can greatly increase binary size.
+- Starting with Windows 10 20H2, get CRT state isolation by dynamically linking to the CRT but call the OS-mode exports (the functions that begin with _o_). To call the OS-mode exports, statically link as before, but ignore the static UCRT by using linker option `/NODEFAULTLIB:libucrt.lib` (release) or `/NODEFAULTLIB:libucrtd.lib` (debug) See [/NODEFAULTLIB (Ignore Libraries)](../build/reference/nodefaultlib-ignore-libraries.md) for details. And add `ucrt.osmode.lib` to the linker input.
 
 > [!Note]
 > In source code,  write `setlocale()`, not `_o_setlocale()`. When you link against `ucrt.osmode.lib`, the linker will automatically substitute the OS-specific version of the function. That is, `setlocale()` will be substituted with `_o_setlocale()`.

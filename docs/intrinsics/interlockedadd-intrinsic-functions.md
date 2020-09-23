@@ -81,7 +81,7 @@ The versions of these functions with the `_acq` or `_rel` suffixes perform an in
 
 These routines are only available as intrinsics.
 
-## Example
+## Examples
 
 ```cpp
 // interlockedadd.cpp
@@ -107,8 +107,6 @@ int main()
 ```Output
 0xffffff00 0xff0000 0xffffff00
 ```
-
-## Example
 
 ```cpp
 // interlockedadd64.cpp

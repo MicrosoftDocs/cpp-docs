@@ -8,7 +8,7 @@ ms.assetid: 727dbef2-a342-4157-9d64-a421805d9747
 
 This macro sets flags belonging to ActiveX controls.
 
-|||
+|Name|Description|
 |-|-|
 |[DECLARE_OLEMISC_STATUS](#declare_olemisc_status)|Used in ATL ActiveX controls to set the OLEMISC flags.|
 

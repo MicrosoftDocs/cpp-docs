@@ -22,7 +22,7 @@ MIDL_INTERFACE("B2D0778B - AC99 - 4c58 - A5C8 - E7724E5316B5") IAxWinAmbientDisp
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[SetAmbientDispatch](#setambientdispatch)|This method is called to supplement the default ambient property interface with a user-defined interface.|
 

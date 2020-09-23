@@ -11,7 +11,7 @@ nonstandard extension used : 'token' : conversion from 'type' to 'type'
 
 This type conversion is not allowed by the C++ standard, but it is permitted here as an extension. This warning is always followed by at least one line of explanation describing the language rule being violated.
 
-## Example
+## Examples
 
 The following sample generates C4239.
 
@@ -28,8 +28,6 @@ void func(void) {
    rC2;
 }
 ```
-
-## Example
 
 Conversion from integral type to enum type is not strictly allowed.
 

@@ -47,14 +47,29 @@ The **New &lt;Device&gt; Image Type** dialog box enables you to create a new dev
 
 The **Target Image Type** property lists the available image types where you select the image type you want to open:
 
-||||
-|-|-|-|
-|- 16 x 16, 16 colors|- 48 x 48, 16 colors|- 96 x 96, 16 colors|
-|- 16 x 16, 256 colors|- 48 x 48, 256 colors|- 96 x 96, 256 colors|
-|- 16 x 16, Monochrome|- 48 x 48, Monochrome|- 96 x 96, Monochrome|
-|- 32 x 32, 16 colors|- 64 x 64, 16 colors||
-|- 32 x 32, 256 colors|- 64 x 64, 256 colors||
-|- 32 x 32, Monochrome|- 64 x 64, Monochrome||
+:::row:::
+   :::column span="":::
+      16 x 16, 16 colors\
+      32 x 32, 16 colors\
+      48 x 48, 16 colors\
+      64 x 64, 16 colors\
+      96 x 96, 16 colors
+   :::column-end:::
+   :::column span="":::
+      16 x 16, 256 colors\
+      32 x 32, 256 colors\
+      48 x 48, 256 colors\
+      64 x 64, 256 colors\
+      96 x 96, 256 colors
+   :::column-end:::
+   :::column span="":::
+      16 x 16, Monochrome\
+      32 x 32, Monochrome\
+      48 x 48, Monochrome\
+      64 x 64, Monochrome\
+      96 x 96, Monochrome
+   :::column-end:::
+:::row-end:::
 
 > [!NOTE]
 > Any existing images will not be displayed in this list.

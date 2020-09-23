@@ -23,7 +23,7 @@ class CXMLAccessor : public CDynamicStringAccessorW
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetXMLColumnData](#getxmlcolumndata)|Retrieves the column information.|
 |[GetXMLRowData](#getxmlrowdata)|Retrieves the entire contents of a table by rows.|

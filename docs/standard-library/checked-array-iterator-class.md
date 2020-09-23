@@ -25,7 +25,7 @@ This class is defined in the [stdext](../standard-library/stdext-namespace.md) n
 
 For more information and example code on the checked iterator feature, see [Checked Iterators](../standard-library/checked-iterators.md).
 
-## Example
+## Examples
 
 The following sample shows how to define and use a checked array iterator.
 
@@ -75,8 +75,6 @@ int main() {
 ( 0 1 2 3 4 )
 */
 ```
-
-## Example
 
 To avoid the need for the `checked_array_iterator` class when using C++ Standard Library algorithms, consider using a `vector` instead of a dynamically allocated array. The following example demonstrates how to do this.
 

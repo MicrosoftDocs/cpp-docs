@@ -31,7 +31,7 @@ typedef struct RELOG_DESCRIPTOR_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `NumberOfAnalysisPasses` | The number of analysis passes that should be done over the ETW trace during the relogging session's analysis phase. |
 | `AnalysisCallbacks` | An [ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) object that specifies which functions to call during the relogging session's analysis phase. |

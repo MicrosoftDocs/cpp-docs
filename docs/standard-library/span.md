@@ -1,5 +1,6 @@
 ---
 title: "&lt;span&gt;"
+description: "API reference for the Standard Template Library (STL) span namespace, which provides a lightweight view over a contiguous sequence of objects."
 ms.date: "05/28/2020"
 f1_keywords: ["<span>"]
 helpviewer_keywords: ["span header"]
@@ -43,33 +44,33 @@ int main()
 
 **Namespace:** std
 
-**Compiler Option:** /std:c++latest
+**Compiler option:** [/std:c++latest](../build/reference/std-specify-language-standard-version.md)
 
 ## Members
 
 ### Classes
 
-|||
+|Name|Description|
 |-|:-|
 |[span](span-class.md)| Provides a view over a contiguous sequence of objects. |
 
 ### Operators
 
-|||
+|Name|Description|
 |-|:-|
 |[operator=](span-class.md#op_eq)| Span assignment |
 |[operator\[\]](span-class.md#op_at)| Element access |
 
 ### Functions
 
-|||
+|Name|Description|
 |-|:-|
 | [as_bytes](span-functions.md#as_bytes)| Get the underlying read-only bytes of the span. |
 | [as_writable_bytes](span-functions.md#as_writable_bytes) | Get the underlying bytes of the span. |
 
 ### Constants
 
-|||
+|Name|Description|
 |-|:-|
 | **dynamic_extent** | Indicates that the span size is determined at runtime rather than compile time. When the number of elements in the span is known at compile time, it's specified as the `Extent` template parameter. When the number isn't known until runtime, specify `dynamic_extent` instead. |
 

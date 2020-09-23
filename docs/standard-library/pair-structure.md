@@ -62,13 +62,14 @@ A pair whose values are to be used to initialize the elements of another pair.
 
 ## Return Value
 
-The first (default) constructor initializes first element of the pair to the default of type `T1` and second element to default of type `T2`.
+The first (default) constructor initializes the first element of the pair to the default of type `T1` and the second element to default of type `T2`.  It is defined if both types are default-constructible.
 
-The second constructor initializes first element of the pair to *Val1* and second to *Val2.*
+The second constructor initializes the first element of the pair to *Val1* and the second to *Val2.*  It is defined if both types are copy-constructible.
 
-The third (template) constructor initializes first element of the pair to `Right`. **first** and second to `Right`. **second**.
+The third (template) constructor initializes the first element of the pair to `Right`. **first** and the second to `Right`. **second**.  It is defined if both types of the pair are constructible from the value types provided.
 
-The fourth constructor initializes first element of the pair to *Val1* and second to *Val2* using [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
+
+The fourth constructor initializes the first element of the pair to *Val1* and the second to *Val2* using [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  It is defined if both types of the pair are constructible from the value types provided.
 
 ## Remarks
 

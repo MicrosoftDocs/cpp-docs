@@ -1,6 +1,7 @@
 ---
 title: "&lt;charconv&gt; functions"
-ms.date: "07/22/2020"
+description: "Describes the <charconv> library functions that convert integer or floating-point values to or from chars"
+ms.date: "08/20/2020"
 f1_keywords: ["charconv/std::to_chars", "charconv/std::from_chars"]
 helpviewer_keywords: ["std::charconv [C++], to_chars", "std::charconv [C++], from_chars"]
 ---
@@ -96,10 +97,6 @@ The following table describes the conversion behavior given different combinatio
 |  Neither | Whichever of fixed or scientific notation is shorter, preferring fixed as a tiebreaker.</br>This behavior can't be simulated by any overload that takes the `fmt` parameter. |
 | `fmt` | The shortest-round-trip behavior for the specified format, such as the shortest scientific format. |
 | `fmt` and `precision` | Uses the given precision, following `printf()` style, without  shortest-round-trip behavior. |
-
-### Return value
-
-A [to_chars_result](to-chars-result-structure.md) that holds the result of the conversion.
 
 ### Example
 

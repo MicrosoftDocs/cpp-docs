@@ -1,54 +1,53 @@
 ---
 title: "_InterlockedIncrement intrinsic functions"
-ms.date: "09/02/2019"
+description: "Microsoft C/C++ compiler intrinsic functions for interlocked increment."
+ms.date: 09/03/2020
 f1_keywords: ["_InterlockedIncrement_acq", "_InterlockedIncrement16_rel_cpp", "_InterlockedIncrement16_cpp", "_InterlockedIncrement64_rel", "_InterlockedIncrement_rel", "_InterlockedIncrement64_nf", "_InterlockedIncrement16_acq_cpp", "_InterlockedIncrement_rel_cpp", "_InterlockedIncrement64", "_InterlockedIncrement64_rel_cpp", "_InterlockedIncrement16_nf", "_InterlockedIncrement16_rel", "_InterlockedIncrement16_acq", "_InterlockedIncrement_nf", "_InterlockedIncrement_acq_cpp", "_InterlockedIncrement64_cpp", "_InterlockedIncrement64_acq_cpp", "_InterlockedIncrement", "_InterlockedIncrement_cpp", "_InterlockedIncrement64_acq", "_InterlockedIncrement16"]
 helpviewer_keywords: ["_InterlockedIncrement64_rel intrinsic", "_InterlockedIncrement16_rel intrinsic", "InterlockedIncrement64_acq intrinsic", "_InterlockedIncrement16 intrinsic", "_InterlockedIncrement16_acq intrinsic", "_InterlockedIncrement_nf intrinsic", "_InterlockedIncrement_rel intrinsic", "_InterlockedIncrement64_nf intrinsic", "InterlockedIncrement_rel intrinsic", "InterlockedIncrement_acq intrinsic", "_InterlockedIncrement64_acq intrinsic", "_InterlockedIncrement16_nf intrinsic", "_InterlockedIncrement intrinsic", "_InterlockedIncrement64 intrinsic", "InterlockedIncrement64_rel intrinsic", "InterlockedIncrement64 intrinsic", "InterlockedIncrement16 intrinsic", "_InterlockedIncrement_acq intrinsic", "InterlockedIncrement intrinsic"]
 ms.assetid: 37700615-f372-438b-bcef-d76e11839482
 ---
-# _InterlockedIncrement intrinsic functions
+# `_InterlockedIncrement` intrinsic functions
 
-**Microsoft Specific**
-
-Provide compiler intrinsic support for the Win32 Windows SDK [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-interlockedincrement) function.
+Provide compiler intrinsic support for the Win32 Windows SDK [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-interlockedincrement) function. The `_InterlockedIncrement` intrinsic functions are **Microsoft-specific**.
 
 ## Syntax
 
 ```C
 long _InterlockedIncrement(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedIncrement_acq(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedIncrement_rel(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedIncrement_nf(
-   long * lpAddend
+   long volatile * lpAddend
 );
 short _InterlockedIncrement16(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedIncrement16_acq(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedIncrement16_rel(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedIncrement16_nf (
-   short * lpAddend
+   short volatile * lpAddend
 );
 __int64 _InterlockedIncrement64(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedIncrement64_acq(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedIncrement64_rel(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedIncrement64_nf(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 ```
 
@@ -86,8 +85,6 @@ These routines are only available as intrinsics.
 ## Example
 
 For a sample of how to use `_InterlockedIncrement`, see [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).
-
-**END Microsoft Specific**
 
 ## See also
 

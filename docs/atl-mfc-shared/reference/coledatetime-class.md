@@ -1,6 +1,7 @@
 ---
 title: "COleDateTime Class"
-ms.date: "03/27/2019"
+description: "API reference for the MFC COleDateTime class which Encapsulates the `DATE` data type used in OLE automation."
+ms.date: "08/27/2020"
 f1_keywords: ["COleDateTime", "ATLCOMTIME/ATL::COleDateTime", "ATLCOMTIME/ATL::COleDateTime::COleDateTime", "ATLCOMTIME/ATL::COleDateTime::Format", "ATLCOMTIME/ATL::COleDateTime::GetAsDBTIMESTAMP", "ATLCOMTIME/ATL::COleDateTime::GetAsSystemTime", "ATLCOMTIME/ATL::COleDateTime::GetAsUDATE", "ATLCOMTIME/ATL::COleDateTime::GetCurrentTime", "ATLCOMTIME/ATL::COleDateTime::GetDay", "ATLCOMTIME/ATL::COleDateTime::GetDayOfWeek", "ATLCOMTIME/ATL::COleDateTime::GetDayOfYear", "ATLCOMTIME/ATL::COleDateTime::GetHour", "ATLCOMTIME/ATL::COleDateTime::GetMinute", "ATLCOMTIME/ATL::COleDateTime::GetMonth", "ATLCOMTIME/ATL::COleDateTime::GetSecond", "ATLCOMTIME/ATL::COleDateTime::GetStatus", "ATLCOMTIME/ATL::COleDateTime::GetYear", "ATLCOMTIME/ATL::COleDateTime::ParseDateTime", "ATLCOMTIME/ATL::COleDateTime::SetDate", "ATLCOMTIME/ATL::COleDateTime::SetDateTime", "ATLCOMTIME/ATL::COleDateTime::SetStatus", "ATLCOMTIME/ATL::COleDateTime::SetTime", "ATLCOMTIME/ATL::COleDateTime::m_dt", "ATLCOMTIME/ATL::COleDateTime::m_status"]
 helpviewer_keywords: ["shared classes, COleDateTime", "time-only values", "Date data type, MFC encapsulation of", "COleDateTime class", "dates, handling in MFC", "time, handling in MFC"]
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
@@ -419,7 +420,7 @@ For information on other member functions that query the value of this `COleDate
 
 ## <a name="getdayofweek"></a> COleDateTime::GetDayOfWeek
 
-Gets the day of the month represented by this date/time value.
+Gets the day of the week represented by this date/time value.
 
 ```
 int GetDayOfWeek() const throw();
@@ -953,8 +954,14 @@ int SetDate(
 
 ### Parameters
 
-*nYear*, *nMonth*, *nDay*<br/>
-Indicate the date components to be copied into this `COleDateTime` object.
+*nYear*\
+Indicates the year to copy into this `COleDateTime` object.
+
+*nMonth*\
+Indicates the month to copy into this `COleDateTime` object.
+
+*nDay*\
+Indicates the day to copy into this `COleDateTime` object.
 
 ### Return Value
 

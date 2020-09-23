@@ -162,7 +162,7 @@ The input iterator of the first element in a range of elements used to initializ
 The input iterator of the first element after a range of elements used to initialize the current MapView.
 
 *il*<br/>
-A [std::initializer_list<std::pair\<K,V>>](../standard-library/initializer-list-class.md) whose elements will be inserted into the MapView.
+A [std::initializer_list\<std::pair\<K,V>>](../standard-library/initializer-list-class.md) whose elements will be inserted into the MapView.
 
 ## <a name="size"></a> MapView::Size Method
 

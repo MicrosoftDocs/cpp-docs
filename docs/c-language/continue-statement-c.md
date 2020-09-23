@@ -22,7 +22,7 @@ The next iteration of a **`do`**, **`for`**, or **`while`** statement is determi
 
 This is an example of the **`continue`** statement:
 
-```
+```C
 while ( i-- > 0 )
 {
     x = f( i );

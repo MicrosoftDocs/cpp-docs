@@ -136,7 +136,7 @@ Numeric formatting rules for subsequent insertions to `cout` remain the same as 
 
 ### Static Functions
 
-|||
+|Name|Description|
 |-|-|
 |[classic](#classic)|The static member function returns a locale object that represents the classic C locale.|
 |[global](#global)|Resets the default local for the program.|
@@ -599,7 +599,7 @@ loc3 (English_United States.1252) are not equal.
 
 ## <a name="op_call"></a> locale::operator()
 
-Compares two `basic_string` objects according to the lexicographic comparison rules defined by this locale's std::collate<charT> facet.
+Compares two `basic_string` objects according to the lexicographic comparison rules defined by this locale's `std::collate<charT>` facet.
 
 ```cpp
 template <class CharType, class Traits, class Allocator>

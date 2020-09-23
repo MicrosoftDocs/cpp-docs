@@ -22,7 +22,7 @@ interface IAxWinHostWindow : IUnknown
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[AttachControl](#attachcontrol)|Attaches an existing control to the host object.|
 |[CreateControl](#createcontrol)|Creates a control and attaches it to the host object.|

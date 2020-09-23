@@ -1,10 +1,10 @@
 ---
-title: "Create a new C++ Linux project in Visual Studio"
-ms.date: "10/24/2019"
+title: "Create a Linux MSBuild C++ project in Visual Studio"
+ms.date: "08/04/2020"
 description: "Create a new MSBuild-based Linux project in Visual Studio."
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
 ---
-# Create a new Linux project
+# Create a Linux MSBuild C++ project in Visual Studio
 
 ::: moniker range="vs-2015"
 
@@ -25,7 +25,7 @@ To create a new Linux project in Visual Studio 2017, follow these steps:
 1. Select **File > New Project** in Visual Studio, or press **Ctrl + Shift + N**.
 1. Select the **Visual C++ > Cross Platform > Linux** node, and then select the project type to create. Enter a **Name** and **Location**, and choose **OK**.
 
-   ![New Linux Project](media/newproject.png)
+   ![Screenshot showing the New Project dialog box with Visual C plus plus > Cross Platform > Linux selected, all of the project types called out, and the Name and Location text boxes also called out.](media/newproject.png)
 
    | Project Type | Description |
    | ------------ | --- |
@@ -36,7 +36,7 @@ To create a new Linux project in Visual Studio 2017, follow these steps:
 
 ## Next steps
 
-[Configure a Linux project](configure-a-linux-project.md)
+[Configure a MSBuild Linux project](configure-a-linux-project.md)
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ To create a new Linux project in Visual Studio 2019, follow these steps:
 1. Select **File > New Project** in Visual Studio, or press **Ctrl + Shift + N**.
 1. Set the **Language** to **C++** and search for "Linux". Select the project type to create, and then choose **Next**. Enter a **Name** and **Location**, and choose **Create**.
 
-   ![New Linux Project](media/newproject-vs2019.png)
+   ![Screenshot of the Add a new project dialog box with Linux typed in the search text box.](media/newproject-vs2019.png)
 
    | Project Type | Description |
    | ------------ | --- |
@@ -66,6 +66,6 @@ To create a new Linux project in Visual Studio 2019, follow these steps:
 
 ## Next steps
 
-[Configure a Linux project](configure-a-linux-project.md)
+[Configure a Linux MSBuild project](configure-a-linux-project.md)
 
 ::: moniker-end

@@ -30,9 +30,7 @@ See the example for [defaultvalue](defaultvalue.md) for a sample use of **pointe
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**interface**|
 |**Repeatable**|No|

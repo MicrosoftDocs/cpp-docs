@@ -47,10 +47,8 @@ The floating-point result type, defaults to **`double`**. For possible types, se
 
 The class template describes a distribution that produces values of a user-specified integral type, or type **`double`** if none is provided, distributed according to the Log Normal Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[lognormal_distribution](#lognormal_distribution)|`lognormal_distribution::m`|`lognormal_distribution::param`|
-|`lognormal_distribution::operator()`|`lognormal_distribution::s`|[param_type](#param_type)|
+[lognormal_distribution](#lognormal_distribution)\
+[param_type](#param_type)
 
 The property functions `m()` and `s()` return the values for the stored distribution parameters *m* and *s*, respectively.
 

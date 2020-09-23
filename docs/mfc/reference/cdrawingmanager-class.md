@@ -96,13 +96,17 @@ static HBITMAP __stdcall CreateBitmap_32(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*size*|[in] A [CSize](../../atl-mfc-shared/reference/csize-class.md) parameter that indicates the size of the bitmap.|
-|*pBits*|[out] A pointer to a data pointer that receives the location of the DIB's bit values.|
-|*bitmap*|A handle to the original bitmap|
-|*clrTransparent*|An RGB value specifying transparent color of the original bitmap.|
+*size*\
+[in] A [CSize](../../atl-mfc-shared/reference/csize-class.md) parameter that indicates the size of the bitmap.
+
+*pBits*\
+[out] A pointer to a data pointer that receives the location of the DIB's bit values.
+
+*bitmap*\
+A handle to the original bitmap
+
+*clrTransparent*\
+An RGB value specifying transparent color of the original bitmap.
 
 ### Return Value
 
@@ -236,14 +240,20 @@ void DrawLineA(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*x1*|[in] The x coordinate where the line starts.|
-|*y1*|[in] The y coordinate where the line starts.|
-|*x2*|[in] The x coordinate where the line ends.|
-|*y2*|[in] The y coordinate where the line ends.|
-|*clrLine*|[in] The color of the line.|
+*x1*\
+[in] The x coordinate where the line starts.
+
+*y1*\
+[in] The y coordinate where the line starts.
+
+*x2*\
+[in] The x coordinate where the line ends.
+
+*y2*\
+[in] The y coordinate where the line ends.
+
+*clrLine*\
+[in] The color of the line.
 
 ### Remarks
 
@@ -608,12 +618,14 @@ static COLORREF __stdcall HSVtoRGB(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*H*|[in] A number between 0 and 360 that indicates the hue for the color.|
-|*S*|[in] A number between 0 and 1 that indicates the saturation for the color.|
-|*V*|[in] A number between 0 and 1 that indicates the value for the color.|
+*H*\
+[in] A number between 0 and 360 that indicates the hue for the color.
+
+*S*\
+[in] A number between 0 and 1 that indicates the saturation for the color.
+
+*V*\
+[in] A number between 0 and 1 that indicates the value for the color.
 
 ### Return Value
 
@@ -796,13 +808,17 @@ static void __stdcall RGBtoHSL(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*rgb*|[in] The color in RGB values.|
-|*H*|[out] A pointer to a double where the method stores the hue for the color.|
-|*S*|[out] A pointer to a double where the method stores the saturation for the color.|
-|*L*|[out] A pointer to a double where the method stores the lightness for the color.|
+*rgb*\
+[in] The color in RGB values.
+
+*H*\
+[out] A pointer to a double where the method stores the hue for the color.
+
+*S*\
+[out] A pointer to a double where the method stores the saturation for the color.
+
+*L*\
+[out] A pointer to a double where the method stores the lightness for the color.
 
 ### Remarks
 
@@ -906,15 +922,23 @@ static void __stdcall SetPixel(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pBits*|[in] A pointer to the bit values of the bitmap.|
-|*cx*|[in] The total width of the bitmap.|
-|*cy*|[in] The total height of the bitmap.|
-|*x*|[in] The x-coordinate of the pixel in the bitmap to change.|
-|*y*|[in] The y-coordinate of the pixel in the bitmap to change.|
-|*color*|[in] The new color for the pixel identified by the supplied coordinates.|
+*pBits*\
+[in] A pointer to the bit values of the bitmap.
+
+*cx*\
+[in] The total width of the bitmap.
+
+*cy*\
+[in] The total height of the bitmap.
+
+*x*\
+[in] The x-coordinate of the pixel in the bitmap to change.
+
+*y*\
+[in] The y-coordinate of the pixel in the bitmap to change.
+
+*color*\
+[in] The new color for the pixel identified by the supplied coordinates.
 
 ## <a name="smartmixcolors"></a> CDrawingManager::SmartMixColors
 
@@ -931,14 +955,20 @@ static COLORREF __stdcall SmartMixColors(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*color1*|[in] The first color to mix.|
-|*color2*|[in] The second color to mix.|
-|*dblLumRatio*|[in] The ratio for the new color's luminosity. `SmartMixColors` multiplies the luminosity of the mixed color by this ratio before determining a final color.|
-|*k1*|[in] The weighted ratio for the first color.|
-|*k2*|[in] The weighted ratio for the second color.|
+*color1*\
+[in] The first color to mix.
+
+*color2*\
+[in] The second color to mix.
+
+*dblLumRatio*\
+[in] The ratio for the new color's luminosity. `SmartMixColors` multiplies the luminosity of the mixed color by this ratio before determining a final color.
+
+*k1*\
+[in] The weighted ratio for the first color.
+
+*k2*\
+[in] The weighted ratio for the second color.
 
 ### Return Value
 

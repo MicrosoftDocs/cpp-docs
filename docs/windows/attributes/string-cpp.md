@@ -38,9 +38,7 @@ __interface IFireTabCtrl
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Array or pointer to an array, interface parameter, interface method|
 |**Repeatable**|No|

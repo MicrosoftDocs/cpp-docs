@@ -29,7 +29,7 @@ The class by which `IDBSchemaRowsetImpl` is inherited. Typically, this class wil
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CheckRestrictions](#checkrestrictions)|Checks the validity of restrictions against a schema rowset.|
 |[CreateSchemaRowset](#createschemarowset)|Implements a COM object creator function for the object specified by the template parameter.|
@@ -37,7 +37,7 @@ The class by which `IDBSchemaRowsetImpl` is inherited. Typically, this class wil
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetRowset](#getrowset)|Returns a schema rowset.|
 |[GetSchemas](#getschemas)|Returns a list of schema rowsets accessible by [IDBSchemaRowsetImpl::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md).|

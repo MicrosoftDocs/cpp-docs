@@ -16,7 +16,7 @@ This topic shows how to convert STL/CLR containers to their equivalent .NET coll
 
    - To convert an entire container, cast the container to an appropriate .NET collection interface or interface collection. The second example demonstrates this method.
 
-## Example
+## Examples
 
 In this example, we create a STL/CLR `vector` and add 5 elements to it. Then, we create a .NET collection by calling the `make_collection` function. Finally, we display the contents of the newly created collection.
 
@@ -59,8 +59,6 @@ The contents of the System::Collections::Generic::ICollection are:
 5
 7
 ```
-
-## Example
 
 In this example, we create a STL/CLR `map` and add 5 elements to it. Then, we create a .NET <xref:System.Collections.Generic.IDictionary%602> and assign the `map` directly to it. Finally, we display the contents of the newly created collection.
 

@@ -6,53 +6,147 @@ ms.assetid: fae53ab4-d1c5-45bb-a6a0-a74258e9aea3
 ---
 # Concurrency::precise_math namespace functions
 
-||||
-|-|-|-|
-|[acos](#acos)|[acosf](#acosf)|[acosh](#acosh)|
-|[acoshf](#acoshf)|[asin](#asin)|[asinf](#asinf)|
-|[asinh](#asinh)|[asinhf](#asinhf)|[atan](#atan)|
-|[atan2](#atan2)|[atan2f](#atan2f)|[atanf](#atanf)|
-|[atanh](#atanh)|[atanhf](#atanhf)|[cbrt](#cbrt)|
-|[cbrtf](#cbrtf)|[ceil](#ceil)|[ceilf](#ceilf)|
-|[copysign](#copysign)|[copysignf](#copysignf)|[cos](#cos)|
-|[cosf](#cosf)|[cosh](#cosh)|[coshf](#coshf)|
-|[cospi](#cospi)|[cospif](#cospif)|[erf](#erf)|
-|[erfc](#erfc)|[erfcf](#erfcf)|[erfcinv](#erfcinv)|
-|[erfcinvf](#erfcinvf)|[erff](#erff)|[erfinv](#erfinv)|
-|[erfinvf](#erfinvf)|[exp](#exp)|[exp10](#exp10)|
-|[exp10f](#exp10f)|[exp2](#exp2)|[exp2f](#exp2f)|
-|[expf](#expf)|[expm1](#expm1)|[expm1f](#expm1f)|
-|[fabs](#fabs)|[fabsf](#fabsf)|[floor](#floor)|
-|[fdim](#fdim)|[fdimf](#fdimf)||
-|[floorf](#floorf)|[fma](#fma)|[fmaf](#fmaf)|
-[fmax](#fmax)|[fmaxf](#fmaxf)||
-|[fmin](#fmin)|[fminf](#fminf)|[fmod](#fmod)|
-|[fmodf](#fmodf)|[fpclassify](#fpclassify)|[frexp](#frexp)|
-|[frexpf](#frexpf)|[hypot](#hypot)|[hypotf](#hypotf)|
-|[ilogb](#ilogb)|[ilogbf](#ilogbf)|[isfinite](#isfinite)|
-|[isinf](#isinf)|[isnan](#isnan)|[isnormal](#isnormal)|
-|[ldexp](#ldexp)|[ldexpf](#ldexpf)|[lgamma](#lgamma)|
-|[lgammaf](#lgammaf)|[log](#log)|[log10](#log10)|
-|[log10f](#log10f)|[log1p](#log1p)|[log1pf](#log1pf)|
-|[log2](#log2)|[log2f](#log2f)|[logb](#logb)|
-|[logbf](#logbf)|[logf](#logf)|[modf](#modf)|
-|[modff](#modff)|[nan](#nan)|[nanf](#nanf)|
-|[nearbyint](#nearbyint)|[nearbyintf](#nearbyintf)|[nextafter](#nextafter)|
-|[nextafterf](#nextafterf)|[phi](#phi)|[phif](#phif)|
-|[pow](#pow)|[powf](#powf)|[probit](#probit)|
-|[probitf](#probitf)|[rcbrt](#rcbrt)|[rcbrtf](#rcbrtf)|
-|[remainder](#remainder)|[remainderf](#remainderf)|[remquo](#remquo)|
-|[remquof](#remquof)|[round](#round)|[roundf](#roundf)|
-|[rsqrt](#rsqrt)|[rsqrtf](#rsqrtf)|[scalb](#scalb)|
-|[scalbf](#scalbf)|[scalbn](#scalbn)|[scalbnf](#scalbnf)|
-|[signbit](#signbit)|[signbitf](#signbitf)|[sin](#sin)|
-|[sincos](#sincos)|[sincosf](#sincosf)|[sinf](#sinf)|
-|[sinh](#sinh)|[sinhf](#sinhf)|[sinpi](#sinpi)|
-|[sinpif](#sinpif)|[sqrt](#sqrt)|[sqrtf](#sqrtf)|
-|[tan](#tan)|[tanf](#tanf)|[tanh](#tanh)|
-|[tanhf](#tanhf)|[tanpi](#tanpi)|[tanpif](#tanpif)|
-|[tgamma](#tgamma)|[tgammaf](#tgammaf)|[trunc](#trunc)|
-|[truncf](#truncf)|
+:::row:::
+   :::column span="":::
+      [`acos`](#acos)\
+      [`acosf`](#acosf)\
+      [`acosh`](#acosh)\
+      [`acoshf`](#acoshf)\
+      [`asin`](#asin)\
+      [`asinf`](#asinf)\
+      [`asinh`](#asinh)\
+      [`asinhf`](#asinhf)\
+      [`atan`](#atan)\
+      [`atan2`](#atan2)\
+      [`atan2f`](#atan2f)\
+      [`atanf`](#atanf)\
+      [`atanh`](#atanh)\
+      [`atanhf`](#atanhf)\
+      [`cbrt`](#cbrt)\
+      [`cbrtf`](#cbrtf)\
+      [`ceil`](#ceil)\
+      [`ceilf`](#ceilf)\
+      [`copysign`](#copysign)\
+      [`copysignf`](#copysignf)\
+      [`cos`](#cos)\
+      [`cosf`](#cosf)\
+      [`cosh`](#cosh)\
+      [`coshf`](#coshf)\
+      [`cospi`](#cospi)\
+      [`cospif`](#cospif)\
+      [`erf`](#erf)\
+      [`erfc`](#erfc)\
+      [`erfcf`](#erfcf)\
+      [`erfcinv`](#erfcinv)\
+      [`erfcinvf`](#erfcinvf)\
+      [`erff`](#erff)\
+      [`erfinv`](#erfinv)
+   :::column-end:::
+   :::column span="":::
+      [`erfinvf`](#erfinvf)\
+      [`exp`](#exp)\
+      [`exp10`](#exp10)\
+      [`exp10f`](#exp10f)\
+      [`exp2`](#exp2)\
+      [`exp2f`](#exp2f)\
+      [`expf`](#expf)\
+      [`expm1`](#expm1)\
+      [`expm1f`](#expm1f)\
+      [`fabs`](#fabs)\
+      [`fabsf`](#fabsf)\
+      [`floor`](#floor)\
+      [`fdim`](#fdim)\
+      [`fdimf`](#fdimf)|\
+      [`floorf`](#floorf)\
+      [`fma`](#fma)\
+      [`fmaf`](#fmaf)\
+      [`fmax`](#fmax)\
+      [`fmaxf`](#fmaxf)\
+      [`fmin`](#fmin)\
+      [`fminf`](#fminf)\
+      [`fmod`](#fmod)\
+      [`fmodf`](#fmodf)\
+      [`fpclassify`](#fpclassify)\
+      [`frexp`](#frexp)\
+      [`frexpf`](#frexpf)\
+      [`hypot`](#hypot)\
+      [`hypotf`](#hypotf)\
+      [`ilogb`](#ilogb)\
+      [`ilogbf`](#ilogbf)\
+      [`isfinite`](#isfinite)\
+      [`isinf`](#isinf)\
+      [`isnan`](#isnan)
+   :::column-end:::
+   :::column span="":::
+      [`isnormal`](#isnormal)\
+      [`ldexp`](#ldexp)\
+      [`ldexpf`](#ldexpf)\
+      [`lgamma`](#lgamma)\
+      [`lgammaf`](#lgammaf)\
+      [`log`](#log)\
+      [`log10`](#log10)\
+      [`log10f`](#log10f)\
+      [`log1p`](#log1p)\
+      [`log1pf`](#log1pf)\
+      [`log2`](#log2)\
+      [`log2f`](#log2f)\
+      [`logb`](#logb)\
+      [`logbf`](#logbf)\
+      [`logf`](#logf)\
+      [`modf`](#modf)\
+      [`modff`](#modff)\
+      [`nan`](#nan)\
+      [`nanf`](#nanf)\
+      [`nearbyint`](#nearbyint)\
+      [`nearbyintf`](#nearbyintf)\
+      [`nextafter`](#nextafter)\
+      [`nextafterf`](#nextafterf)\
+      [`phi`](#phi)\
+      [`phif`](#phif)\
+      [`pow`](#pow)\
+      [`powf`](#powf)\
+      [`probit`](#probit)\
+      [`probitf`](#probitf)\
+      [`rcbrt`](#rcbrt)\
+      [`rcbrtf`](#rcbrtf)\
+      [`remainder`](#remainder)\
+      [`remainderf`](#remainderf)
+   :::column-end:::
+   :::column span="":::
+      [`remquo`](#remquo)\
+      [`remquof`](#remquof)\
+      [`round`](#round)\
+      [`roundf`](#roundf)\
+      [`rsqrt`](#rsqrt)\
+      [`rsqrtf`](#rsqrtf)\
+      [`scalb`](#scalb)\
+      [`scalbf`](#scalbf)\
+      [`scalbn`](#scalbn)\
+      [`scalbnf`](#scalbnf)\
+      [`signbit`](#signbit)\
+      [`signbitf`](#signbitf)\
+      [`sin`](#sin)\
+      [`sincos`](#sincos)\
+      [`sincosf`](#sincosf)\
+      [`sinf`](#sinf)\
+      [`sinh`](#sinh)\
+      [`sinhf`](#sinhf)\
+      [`sinpi`](#sinpi)\
+      [`sinpif`](#sinpif)\
+      [`sqrt`](#sqrt)\
+      [`sqrtf`](#sqrtf)\
+      [`tan`](#tan)\
+      [`tanf`](#tanf)\
+      [`tanh`](#tanh)\
+      [`tanhf`](#tanhf)\
+      [`tanpi`](#tanpi)\
+      [`tanpif`](#tanpif)\
+      [`tgamma`](#tgamma)\
+      [`tgammaf`](#tgammaf)\
+      [`trunc`](#trunc)\
+      [`truncf`](#truncf)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="acos"></a> acos
 

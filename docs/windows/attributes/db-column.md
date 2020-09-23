@@ -50,7 +50,7 @@ When the consumer attribute provider applies this attribute to a class, the comp
 
 For an example of this attribute used in an application, see [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 
-## Example
+## Examples
 
 This sample binds a column in a table to a **`long`** data member and specifies status and length fields.
 
@@ -69,8 +69,6 @@ class CProducts {
    [ db_column("1", status="m_dwProductIDStatus", length="m_dwProductIDLength") ] LONG m_ProductID;
 };
 ```
-
-## Example
 
 This sample binds four columns to a **`long`**, a character string, a timestamp, and a `DB_NUMERIC` integer, in that order.
 
@@ -92,9 +90,7 @@ class CProducts {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**, member, method|
 |**Repeatable**|No|

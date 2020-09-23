@@ -1109,9 +1109,8 @@ DWORD m_dwRestartManagerSupportFlags;
 
 To enable the restart manager, set `m_dwRestartManagerSupportFlags` to the behavior that you want. The following table shows the flags that are available.
 
-|||
-|-|-|
 |Flag|Description|
+|-|-|
 |AFX_RESTART_MANAGER_SUPPORT_RESTART|The application is registered by using [CWinApp::RegisterWithRestartManager](#registerwithrestartmanager). The restart manager is responsible for restarting the application if it unexpectedly exits.|
 |- AFX_RESTART_MANAGER_SUPPORT_RECOVERY|The application is registered with the restart manager and the restart manager calls the recovery callback function when it restarts the application. The default recovery callback function is [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
 |- AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART|Autosave is enabled and the restart manager autosaves any open documents when the application restarts.|
@@ -1766,17 +1765,29 @@ virtual HRESULT RegisterWithRestartManager(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*bRegisterRecoveryCallback*|[in] TRUE indicates that this instance of the application uses a recovery callback function; FALSE indicates that it does not. The framework calls the recovery callback function when the application exits unexpectedly. For more information, see [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
-|*strRestartIdentifier*|[in] The unique string that identifies this instance of the restart manager. The restart manager identifier is unique for each instance of an application.|
-|*pwzCommandLineArgs*|[in] A string that contains any extra arguments from the command line.|
-|*dwRestartFlags*|[in] Optional flags for the restart manager. For more information, see the Remarks section.|
-|*pRecoveryCallback*|[in] The recovery callback function. This function must take a LPVOID parameter as input and return a DWORD. The default recovery callback function is `CWinApp::ApplicationRecoveryCallback`.|
-|*lpvParam*|[in] The input parameter for the recovery callback function. For more information, see [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
-|*dwPingInterval*|[in] The length of time that the restart manager waits for the recovery callback function to return. This parameter is in milliseconds.|
-|*dwCallbackFlags*|[in] Flags passed to the recovery callback function. Reserved for future use.|
+*bRegisterRecoveryCallback*\
+[in] TRUE indicates that this instance of the application uses a recovery callback function; FALSE indicates that it does not. The framework calls the recovery callback function when the application exits unexpectedly. For more information, see [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).
+
+*strRestartIdentifier*\
+[in] The unique string that identifies this instance of the restart manager. The restart manager identifier is unique for each instance of an application.
+
+*pwzCommandLineArgs*\
+[in] A string that contains any extra arguments from the command line.
+
+*dwRestartFlags*\
+[in] Optional flags for the restart manager. For more information, see the Remarks section.
+
+*pRecoveryCallback*\
+[in] The recovery callback function. This function must take a LPVOID parameter as input and return a DWORD. The default recovery callback function is `CWinApp::ApplicationRecoveryCallback`.
+
+*lpvParam*\
+[in] The input parameter for the recovery callback function. For more information, see [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).
+
+*dwPingInterval*\
+[in] The length of time that the restart manager waits for the recovery callback function to return. This parameter is in milliseconds.
+
+*dwCallbackFlags*\
+[in] Flags passed to the recovery callback function. Reserved for future use.
 
 ### Return Value
 

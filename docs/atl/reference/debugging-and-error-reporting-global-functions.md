@@ -9,7 +9,7 @@ ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
 
 These functions provide useful debugging and trace facilities.
 
-|||
+|Name|Description|
 |-|-|
 |[AtlHresultFromLastError](debugging-and-error-reporting-global-functions.md#atlhresultfromlasterror)|Returns a `GetLastError` error code in the form of an HRESULT.|
 |[AtlHresultFromWin32](debugging-and-error-reporting-global-functions.md#atlhresultfromwin32)|Converts a Win32 error code into an HRESULT.|
@@ -185,7 +185,7 @@ For ATL projects, it is possible to provide your own implementation of this func
 
 [!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_2.h)]
 
-## Requirements
+### Requirements
 
 **Header:** atldef.h
 
@@ -207,7 +207,7 @@ If _ATL_NO_EXCEPTIONS is not defined in an ATL project, the function throws a [C
 
 If _ATL_NO_EXCEPTIONS is defined, the function causes an assertion failure instead of throwing an exception.
 
-## Requirements
+### Requirements
 
 **Header:** atldef.h
 

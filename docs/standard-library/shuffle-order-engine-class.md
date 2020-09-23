@@ -26,10 +26,12 @@ The base engine type.
 
 ## Members
 
-||||
-|-|-|-|
-|`shuffle_order_engine::shuffle_order_engine`|`shuffle_order_engine::base`|`shuffle_order_engine::discard`|
-|`shuffle_order_engine::operator()`|`shuffle_order_engine::base_type`|`shuffle_order_engine::seed`|
+`shuffle_order_engine::shuffle_order_engine`\
+`shuffle_order_engine::base`\
+`shuffle_order_engine::base_type`\
+`shuffle_order_engine::discard`\
+`shuffle_order_engine::operator()`\
+`shuffle_order_engine::seed`
 
 For more information about engine members, see [\<random>](../standard-library/random.md).
 

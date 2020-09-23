@@ -6,9 +6,8 @@ ms.assetid: 2ec4dc52-a01f-4654-bd65-dd5288777c48
 ---
 # &lt;ostream&gt; typedefs
 
-|||
-|-|-|
-|[ostream](#ostream)|[wostream](#wostream)|
+[ostream](#ostream)\
+[wostream](#wostream)
 
 ## <a name="ostream"></a> ostream
 

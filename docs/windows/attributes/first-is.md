@@ -50,9 +50,7 @@ requestedit] HRESULT get_I([out, retval]long *i);
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Field in **`struct`** or **`union`**, interface parameter, interface method|
 |**Repeatable**|No|

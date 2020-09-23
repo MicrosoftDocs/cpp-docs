@@ -19,16 +19,14 @@ class CMFCCustomColorsPropertyPage : public CPropertyPage
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCCustomColorsPropertyPage::CMFCCustomColorsPropertyPage`|Default constructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCCustomColorsPropertyPage::CreateObject`|Used by the framework to create a dynamic instance of this class type.|
 |`CMFCCustomColorsPropertyPage::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|
 |[CMFCCustomColorsPropertyPage::Setup](#setup)|Sets the color components of the property page.|
@@ -74,12 +72,14 @@ void Setup(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*R*|[in] The red component of the RGB value.|
-|*G*|[in] The green component of the RGB value.|
-|*B*|[in] The blue component of the RGB value.|
+*R*\
+[in] The red component of the RGB value.
+
+*G*\
+[in] The green component of the RGB value.
+
+*B*\
+[in] The blue component of the RGB value.
 
 ### Remarks
 

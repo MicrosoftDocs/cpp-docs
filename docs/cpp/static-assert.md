@@ -17,12 +17,13 @@ static_assert( constant-expression, string-literal );
 static_assert( constant-expression ); // C++17 (Visual Studio 2017 and later)
 ```
 
-#### Parameters
+### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*constant-expression*|An integral constant expression that can be converted to a Boolean.<br /><br /> If the evaluated expression is zero (false), the *string-literal* parameter is displayed and the compilation fails with an error. If the expression is nonzero (true), the **`static_assert`** declaration has no effect.|
-|*string-literal*|An message that is displayed if the *constant-expression* parameter is zero. The message is a string of characters in the [base character set](../c-language/ascii-character-set.md) of the compiler; that is, not [multibyte or wide characters](../c-language/multibyte-and-wide-characters.md).|
+*constant-expression*\
+An integral constant expression that can be converted to a Boolean. If the evaluated expression is zero (false), the *string-literal* parameter is displayed and the compilation fails with an error. If the expression is nonzero (true), the **`static_assert`** declaration has no effect.
+
+*string-literal*\
+An message that is displayed if the *constant-expression* parameter is zero. The message is a string of characters in the [base character set](../c-language/ascii-character-set.md) of the compiler; that is, not [multibyte or wide characters](../c-language/multibyte-and-wide-characters.md).
 
 ## Remarks
 
@@ -34,21 +35,21 @@ The compiler examines the **`static_assert`** declaration for syntax errors when
 
 You can use the **`static_assert`** keyword at namespace, class, or block scope. (The **`static_assert`** keyword is technically a declaration, even though it does not introduce new name into your program, because it can be used at namespace scope.)
 
-## Description
+## Description of static_assert with namespace scope
 
 In the following example, the **`static_assert`** declaration has namespace scope. Because the compiler knows the size of type `void *`, the expression is evaluated immediately.
 
-## Example
+## Example of static_assert with namespace scope
 
 ```cpp
 static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");
 ```
 
-## Description
+## Description of static_assert with class scope
 
 In the following example, the **`static_assert`** declaration has class scope. The **`static_assert`** verifies that a template parameter is a *plain old data* (POD) type. The compiler examines the **`static_assert`** declaration when it is declared, but does not evaluate the *constant-expression* parameter until the `basic_string` class template is instantiated in `main()`.
 
-## Example
+## Example of static_assert with class scope
 
 ```cpp
 #include <type_traits>
