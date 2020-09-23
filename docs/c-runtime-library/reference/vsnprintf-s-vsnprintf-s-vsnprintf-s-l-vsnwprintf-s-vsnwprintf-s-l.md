@@ -95,9 +95,11 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 **vsnprintf_s**, **_vsnprintf_s** and **_vsnwprintf_s** return the number of characters written, not including the terminating null, or a negative value if an output error occurs. **vsnprintf_s** is identical to **_vsnprintf_s**. **vsnprintf_s** is included for compliance to the ANSI standard. **_vnsprintf** is retained for backward compatibility.
 
-If the storage required to store *count* characters of data and a terminating null exceeds *sizeOfBuffer*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set **errno** to **ERANGE**, and return -1. Otherwise, if *count* is less than the number of characters of data or if *count* is [_TRUNCATE](../../c-runtime-library/truncate.md) then *count* characters or as much of the string as will fit in *buffer* is written and -1 is returned without invoking the invalid parameter handler. 
+* If the storage required to store the data with a terminating null exceeds *sizeOfBuffer*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set **errno** to **ERANGE**, and return -1.
 
-If *buffer* or *format* is a **NULL** pointer, or if *count* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
+* If *count* is [_TRUNCATE](../../c-runtime-library/truncate.md) and the data with a terminating null exceeds *sizeOfBuffer*, then as much of the string as will fit in *buffer* is written. If *count* is less than *sizeOfBuffer* but the data exceeds *count* characters, then the first *count* characters are written. Either way some truncation of the data occurs and -1 is returned without invoking the invalid parameter handler. 
+
+* If *buffer* or *format* is a **NULL** pointer, or if *count* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
 
 ### Error Conditions
 
