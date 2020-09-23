@@ -42,13 +42,13 @@ The stack objects are equality comparable if and only if the elements of class `
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[stack](#stack)|Constructs a `stack` that is empty or that is a copy of a base container object.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[container_type](#container_type)|A type that provides the base container to be adapted by a `stack`.|
 |[size_type](#size_type)|An unsigned integer type that can represent the number of elements in a `stack`.|
@@ -56,7 +56,7 @@ The stack objects are equality comparable if and only if the elements of class `
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[empty](#empty)|Tests if the `stack` is empty.|
 |[pop](#pop)|Removes the element from the top of the `stack`.|

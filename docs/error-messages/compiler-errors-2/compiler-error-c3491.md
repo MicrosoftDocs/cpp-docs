@@ -17,7 +17,7 @@ A non-mutable lambda expression cannot modify the value of a variable that is ca
 
 - Pass the variable by reference to the capture list of the lambda expression.
 
-## Example
+## Examples
 
 The following example generates C3491 because the body of a non-mutable lambda expression modifies the capture variable `m`:
 
@@ -30,8 +30,6 @@ int main()
    [m](int n) { m = n; }(99); // C3491
 }
 ```
-
-## Example
 
 The following example resolves C3491 by declaring the lambda expression with the **`mutable`** keyword:
 

@@ -14,7 +14,7 @@ The `gcroot` template is implemented using the facilities of the value class Sys
 
 The runtime will maintain an association between the handle and the CLR object, which it references. When the CLR object moves with the garbage-collected heap, the handle will return the new address of the object. A variable does not have to be pinned before it is assigned to a `gcroot` template.
 
-## Example
+## Examples
 
 This sample shows how to create a `gcroot` object on the native stack.
 
@@ -40,8 +40,6 @@ int main() {
 ```Output
 hello
 ```
-
-## Example
 
 This sample shows how to create a `gcroot` object on the native heap.
 
@@ -70,8 +68,6 @@ int main() {
 ```Output
 hello
 ```
-
-## Example
 
 This sample shows how to use `gcroot` to hold references to value types (not reference types) in a native type by using `gcroot` on the boxed type.
 

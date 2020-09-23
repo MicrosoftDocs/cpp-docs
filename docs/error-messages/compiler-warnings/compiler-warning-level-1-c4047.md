@@ -11,7 +11,7 @@ ms.assetid: b75ad6fb-5c93-4434-a85f-c4083051a5de
 
 A pointer can point to a variable (one level of indirection), to another pointer that points to a variable (two levels of indirection), and so on.
 
-## Example
+## Examples
 
 The following sample generates C4047:
 
@@ -30,8 +30,6 @@ int main() {
    p2 = q2;
 }
 ```
-
-## Example
 
 The following sample generates C4047:
 

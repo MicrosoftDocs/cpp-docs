@@ -5,7 +5,7 @@ helpviewer_keywords: ["project properties [C++], modifying outside project file"
 ---
 # How to: Modify C++ project properties and targets without changing the project file
 
-You can override project properties and targets from the MSBuild command prompt without changing the project file. This is useful when you want to apply some properties temporarily or occasionally. It assumes some knowledge of MSBuild. For more information, see [MSBUild](https://docs.microsoft.com/visualstudio/msbuild/msbuild).
+You can override project properties and targets from the MSBuild command prompt without changing the project file. This is useful when you want to apply some properties temporarily or occasionally. It assumes some knowledge of MSBuild. For more information, see [MSBuild](/visualstudio/msbuild/msbuild).
 
 > [!IMPORTANT]
 > You can use the XML Editor in Visual Studio, or any text editor, to create the .props or .targets file. Don't use the **Property Manager** in this scenario because it adds the properties to the project file.

@@ -26,7 +26,7 @@ The same thing can be accomplished more simply with a range-for loop:
 ```cpp
 for (auto num : vec)
 {
-    // no deference operator
+    // no dereference operator
     cout << num << " ";
 }
 ```

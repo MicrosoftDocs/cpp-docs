@@ -78,12 +78,17 @@ virtual BOOL Create(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*dwStyle*|[in] A bitwise combination (OR) of styles to be applied to the control. For more information, see [Button Styles](../../mfc/reference/styles-used-by-mfc.md#button-styles).|
-|*rect*|[in] A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that contains the position and size of the control.|
-|*pParentWnd*|[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|
-|*nID*|[in] The ID of the control.|
+*dwStyle*\
+[in] A bitwise combination (OR) of styles to be applied to the control. For more information, see [Button Styles](../../mfc/reference/styles-used-by-mfc.md#button-styles).
+
+*rect*\
+[in] A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that contains the position and size of the control.
+
+*pParentWnd*\
+[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.
+
+*nID*\
+[in] The ID of the control.
 
 ### Return Value
 
@@ -104,11 +109,14 @@ CSplitButton(CMenu* pMenu)
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*nMenuId*|[in] The resource ID of the menu bar.|
-|*nSubMenuId*|[in] The resource ID of a submenu.|
-|*pMenu*|[in] A pointer to a [CMenu](../../mfc/reference/cmenu-class.md) object that specifies a submenu. The `CSplitButton` object deletes the `CMenu` object and its associated HMENU when the `CSplitButton` object goes out of scope.|
+*nMenuId*\
+[in] The resource ID of the menu bar.
+
+*nSubMenuId*\
+[in] The resource ID of a submenu.
+
+*pMenu*\
+[in] A pointer to a [CMenu](../../mfc/reference/cmenu-class.md) object that specifies a submenu. The `CSplitButton` object deletes the `CMenu` object and its associated HMENU when the `CSplitButton` object goes out of scope.
 
 ### Remarks
 
@@ -126,10 +134,11 @@ afx_msg void OnDropDown(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pNMHDR*|[in] Pointer to an [NMHDR](/windows/win32/api/richedit/ns-richedit-nmhdr) structure that contains information about the [BCN_DROPDOWN](/windows/win32/Controls/bcn-dropdown) notification.|
-|*pResult*|[out] (Not used; no value is returned.) Return value of the [BCN_DROPDOWN](/windows/win32/Controls/bcn-dropdown) notification.|
+*pNMHDR*\
+[in] Pointer to an [NMHDR](/windows/win32/api/richedit/ns-richedit-nmhdr) structure that contains information about the [BCN_DROPDOWN](/windows/win32/Controls/bcn-dropdown) notification.
+
+*pResult*\
+[out] (Not used; no value is returned.) Return value of the [BCN_DROPDOWN](/windows/win32/Controls/bcn-dropdown) notification.
 
 ### Remarks
 
@@ -160,11 +169,14 @@ void SetDropDownMenu(CMenu* pMenu);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*nMenuId*|[in] The resource ID of the menu bar.|
-|*nSubMenuId*|[in] The resource ID of a submenu.|
-|*pMenu*|[in] Pointer to a [CMenu](../../mfc/reference/cmenu-class.md) object that specifies a submenu. The `CSplitButton` object deletes the `CMenu` object and its associated HMENU when the `CSplitButton` object goes out of scope.|
+*nMenuId*\
+[in] The resource ID of the menu bar.
+
+*nSubMenuId*\
+[in] The resource ID of a submenu.
+
+*pMenu*\
+[in] Pointer to a [CMenu](../../mfc/reference/cmenu-class.md) object that specifies a submenu. The `CSplitButton` object deletes the `CMenu` object and its associated HMENU when the `CSplitButton` object goes out of scope.
 
 ### Remarks
 

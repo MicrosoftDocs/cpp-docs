@@ -22,7 +22,7 @@ Defines the container class template **array** and several supporting templates.
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[array](../standard-library/array-class-stl.md)|Stores a fixed-length sequence of elements.|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|Wraps the type of an array element.|
@@ -30,7 +30,7 @@ Defines the container class template **array** and several supporting templates.
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator==](../standard-library/array-operators.md#op_eq_eq)|array comparison, equal|
 |[operator!=](../standard-library/array-operators.md#op_neq)|array comparison, not equal|
@@ -41,7 +41,7 @@ Defines the container class template **array** and several supporting templates.
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[get](../standard-library/array-functions.md#get)|Get specified array element.|
 |[swap](../standard-library/array-functions.md#swap)|Exchanges the contents of one array with the contents of another array.|

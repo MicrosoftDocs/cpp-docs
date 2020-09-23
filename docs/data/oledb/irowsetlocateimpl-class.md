@@ -58,7 +58,7 @@ The storage unit for all row handles held by the bookmark.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Compare](#compare)|Compares two bookmarks.|
 |[GetRowsAt](#getrowsat)|Fetches rows starting with the row specified by an offset from a bookmark.|
@@ -67,7 +67,7 @@ The storage unit for all row handles held by the bookmark.
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_rgBookmarks](#rgbookmarks)|An array of bookmarks.|
 

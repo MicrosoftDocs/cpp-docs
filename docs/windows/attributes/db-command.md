@@ -115,7 +115,7 @@ You can use **db_command** with either class or function scope; the main differe
 
 When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.
 
-## Example
+## Examples
 
 This sample defines a command that selects the first and last names from a table where the state column matches 'CA'. **db_command** creates and reads a rowset on which you can call wizard-generated functions such as [OpenAll and CloseAll](../../data/oledb/consumer-wizard-generated-methods.md), as well as `CRowset` member functions such as [MoveNext](../../data/oledb/crowset-movenext.md).
 
@@ -155,8 +155,6 @@ struct CAuthors {
 };
 ```
 
-## Example
-
 ```cpp
 // db_command.cpp
 // compile with: /c
@@ -184,8 +182,6 @@ int main(int argc, _TCHAR* argv[]) {
    CoUninitialize();
 }
 ```
-
-## Example
 
 This sample uses `db_source` on a data source class `CMySource`, and `db_command` on command classes `CCommand1` and `CCommand2`.
 
@@ -230,9 +226,7 @@ int main() {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**, member, method, local|
 |**Repeatable**|No|

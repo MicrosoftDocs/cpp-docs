@@ -1,24 +1,25 @@
 ---
-title: "Cleaning up Resources"
-ms.date: "11/04/2016"
+title: "Cleaning up resources"
+description: "How to release resources during a termination handler for structured exception handling."
+ms.date: 08/24/2020
 helpviewer_keywords: ["termination handlers [C++], cleaning up resources", "exception handling [C++], cleaning up resources", "C++ exception handling, termination handlers", "resources [C++], cleaning up", "exception handling [C++], cleanup code", "try-catch keyword [C++], termination handlers"]
 ms.assetid: 65753efe-6a27-4750-b90c-50635775c1b6
 ---
-# Cleaning up Resources
+# Cleaning up resources
 
-During termination-handler execution, you may not know which resources are actually allocated before the termination handler was called. It is possible that the **__try** statement block was interrupted before all resources were allocated, so that not all resources were opened.
+During termination-handler execution, you may not know which resources have been acquired before the termination handler was called. It's possible that the **`__try`** statement block was interrupted before all resources were acquired, so that not all resources were opened.
 
-Therefore, to be safe, you should check to see which resources are actually open before proceeding with termination-handling cleanup. A recommended procedure is to:
+To be safe, you should check to see which resources are open before proceeding with termination-handling cleanup. A recommended procedure is to:
 
 1. Initialize handles to NULL.
 
-1. In the **__try** statement block, allocate resources. Handles are set to positive values as the resource is allocated.
+1. In the **`__try`** statement block, acquire resources. Handles are set to positive values as the resource is acquired.
 
 1. In the **`__finally`** statement block, release each resource whose corresponding handle or flag variable is nonzero or not NULL.
 
 ## Example
 
-For example, the following code uses a termination handler to close three files and a memory block that were allocated in the **__try** statement block. Before cleaning up a resource, the code first checks to see if the resource was allocated.
+For example, the following code uses a termination handler to close three files and release a memory block. These resources were acquired in the **`__try`** statement block. Before cleaning up a resource, the code first checks to see if the resource was acquired.
 
 ```cpp
 // exceptions_Cleaning_up_Resources.cpp

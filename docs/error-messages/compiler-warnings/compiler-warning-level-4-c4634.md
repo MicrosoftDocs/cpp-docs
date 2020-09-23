@@ -13,7 +13,7 @@ XML documentation tags can not be applied to all C++ constructs.  For example, y
 
 For more information, see [XML Documentation](../../build/reference/xml-documentation-visual-cpp.md).
 
-## Example
+## Examples
 
 The following sample generates C4634.
 
@@ -25,8 +25,6 @@ namespace hello {
    class MyClass  {};
 };
 ```
-
-## Example
 
 The following sample generates C4634.
 

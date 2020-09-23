@@ -34,7 +34,7 @@ A user-definable property class that defaults to *T*.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetProperties](#getproperties)|Returns the list of properties in the Session property group that are currently set on the session.|
 |[SetProperties](#setproperties)|Sets properties in the Session property group.|

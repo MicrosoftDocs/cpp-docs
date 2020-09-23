@@ -42,9 +42,7 @@ struct MyStruct {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`union`**, **`typedef`**, **`enum`**, **`struct`**, or **`interface`**|
 |**Repeatable**|No|

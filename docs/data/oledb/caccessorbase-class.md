@@ -19,13 +19,13 @@ All accessors in the OLE DB Templates derive from this class. `CAccessorBase` al
 
 ### Methods
 
-|||
-|-|-|
-|[Close](#close)|Closes the accessors.|
-|[GetHAccessor](#geth)|Retrieves the accessor handle.|
-|[GetNumAccessors](#getnum)|Retrieves the number of accessors created by the class.|
-|[IsAutoAccessor](#isauto)|Tests whether the specified accessor is an autoaccessor.|
-|[ReleaseAccessors](#release)|Releases the accessors.|
+| Name | Description |
+|--|--|
+| [Close](#close) | Closes the accessors. |
+| [GetHAccessor](#geth) | Retrieves the accessor handle. |
+| [GetNumAccessors](#getnum) | Retrieves the number of accessors created by the class. |
+| [IsAutoAccessor](#isauto) | Tests whether the specified accessor is an autoaccessor. |
+| [ReleaseAccessors](#release) | Releases the accessors. |
 
 ## Requirements
 

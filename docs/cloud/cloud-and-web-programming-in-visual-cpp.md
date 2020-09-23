@@ -24,7 +24,7 @@ In C++, you have several options for connecting to the web and the cloud.
 
 - [OneDrive and SharePoint in Microsoft Graph](https://dev.onedrive.com/README.htm)
 
-  The OneDrive API provides a set of HTTP services to connect your application to files and folders in Office 365 and SharePoint Server 2016.
+  The OneDrive API provides a set of HTTP services to connect your application to files and folders in Microsoft 365 and SharePoint Server 2016.
 
 ## Windows and cross-platform networking APIs
 

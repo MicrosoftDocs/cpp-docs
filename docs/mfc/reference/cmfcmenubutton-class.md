@@ -154,16 +154,6 @@ BOOL  m_bDefaultClick;
 
 Setting m_bDefaultClick to false causes the button to show the menu when you click anywhere on the button.
 
-## <a name="m_nmenuresult"></a> CMFCMenuButton::m_nMenuResult
-
-An integer that indicates which item the user selects from the pop-up menu.
-
-```
-int m_nMenuResult;
-```
-
-### Remarks
-
 ## <a name="pretranslatemessage"></a> CMFCMenuButton::PreTranslateMessage
 
 Called by the framework to translate window messages before they are dispatched.

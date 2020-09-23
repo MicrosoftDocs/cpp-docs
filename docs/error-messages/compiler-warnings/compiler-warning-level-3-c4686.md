@@ -1,6 +1,7 @@
 ---
 title: "Compiler Warning (level 3) C4686"
-ms.date: "08/27/2018"
+description: "Microsoft C++ compiler warning C4686."
+ms.date: 08/29/2020
 f1_keywords: ["C4686"]
 helpviewer_keywords: ["C4686"]
 ms.assetid: 767c83c2-9e4b-4f9e-88c8-02128ba563f4
@@ -11,9 +12,9 @@ ms.assetid: 767c83c2-9e4b-4f9e-88c8-02128ba563f4
 
 ## Remarks
 
-A class template specialization was not is defined before it was used in a return type. Anything that instantiates the class will resolve C4686; declaring an instance or accessing a member (C\<int>::anything) are also options.
+A class template specialization wasn't defined before it was used in a return type. Anything that instantiates the class resolves C4686; declaring an instance or accessing a member (for example, `C<int>::some_member`) are also options.
 
-This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.
+This warning is off by default. For more information, see [Compiler warnings that are off by default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
 ## Example
 

@@ -42,7 +42,7 @@ The name of the delegate.
 *formal-parameters*<br/>
 (Optional) The parameter list of the delegate.
 
-## Example
+## Examples
 
 The delegate type parameters are specified at the point where a delegate object is created. Both the delegate and method associated with it must have the same signature. The following is an example of a generic delegate declaration.
 
@@ -52,8 +52,6 @@ The delegate type parameters are specified at the point where a delegate object 
 generic <class ItemType>
 delegate ItemType GenDelegate(ItemType p1, ItemType% p2);
 ```
-
-## Example
 
 The following sample shows that
 
@@ -96,8 +94,6 @@ int main() {
       gcnew GenDelegate<int>(&MyClass::MyStaticMethod<int>);
 }
 ```
-
-## Example
 
 The following example declares a generic delegate `GenDelegate<ItemType>`, and then instantiates it by associating it to the method `MyMethod` that uses the type parameter `ItemType`. Two instances of the delegate (an integer and a double) are created and invoked.
 

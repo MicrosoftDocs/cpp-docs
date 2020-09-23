@@ -92,9 +92,8 @@ Projects that use this option present a problem when upgrading, because the cont
 
 The following table shows the libraries whose contents changed starting with Visual Studio 2015. To upgrade, you need to add the new library names in the second column to the libraries in the first column. Some of these libraries are import libraries, but that shouldn't matter.
 
-|||
-|-|-|
 |If you were using:|You need to use these libraries:|
+|-|-|
 |libcmt.lib|libcmt.lib, libucrt.lib, libvcruntime.lib|
 |libcmtd.lib|libcmtd.lib, libucrtd.lib, libvcruntimed.lib|
 |msvcrt.lib|msvcrt.lib, ucrt.lib, vcruntime.lib|

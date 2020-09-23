@@ -29,7 +29,7 @@ For an arbitrary specialization, no members have meaningful values. A member obj
 
 ## Static Functions and Constants
 
-|||
+|Name|Description|
 |-|-|
 |[denorm_min](#denorm_min)|Returns the smallest nonzero denormalized value.|
 |[digits](#digits)|Returns the number of radix digits that the type can represent without loss of precision.|

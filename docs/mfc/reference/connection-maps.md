@@ -14,7 +14,7 @@ Typically, a control will support just two connection points: one for events and
 
 ### Connection Map Declaration and Demarcation
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_CONNECTION_PART](#begin_connection_part)|Declares an embedded class that implements an additional connection point (must be used in the class declaration).|
 |[END_CONNECTION_PART](#end_connection_part)|Ends the declaration of a connection point (must be used in the class declaration).|
@@ -28,7 +28,7 @@ The following functions assist a sink in establishing and disconnecting a connec
 
 ### Initialization/Termination of Connection Points
 
-|||
+|Name|Description|
 |-|-|
 |[AfxConnectionAdvise](#afxconnectionadvise)|Establishes a connection between a source and a sink.|
 |[AfxConnectionUnadvise](#afxconnectionunadvise)|Breaks a connection between a source and a sink.|

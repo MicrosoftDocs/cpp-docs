@@ -30,7 +30,7 @@ A class derived from `IRowsetCreator`.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[SetSite](#setsite)|Sets the site that contains the rowset object.|
 

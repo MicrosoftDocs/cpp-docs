@@ -98,7 +98,7 @@ Determines if the string class needs C Run-Time (CRT) Library support and where 
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[CStringT::operator =](#operator_eq)|Assigns a new value to a `CStringT` object.|
 |[CStringT::operator +](#operator_add)|Concatenates two strings or a character and a string.|

@@ -58,9 +58,7 @@ struct _TREE_NODE_TYPE * right;
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`typedef`**|
 |**Repeatable**|No|

@@ -18,9 +18,8 @@ struct is_standard_layout;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Ty*|The type to query|
+*Ty*\
+The type to query
 
 ## Remarks
 

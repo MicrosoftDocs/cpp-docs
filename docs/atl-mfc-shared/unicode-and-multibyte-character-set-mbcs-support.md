@@ -19,13 +19,34 @@ The entire MFC class library is conditionally enabled for Unicode characters and
 
 These library, debugger, and DLL files are used to support Unicode in MFC:
 
-|||||
-|-|-|-|-|
-|UAFXCW.LIB|UAFXCW.PDB|UAFXCWD.LIB|UAFXCWD.PDB|
-|MFC*version*U.LIB|MFC*version*U.PDB|MFC*version*U.DLL|MFC*version*UD.LIB|
-|MFC*version*UD.PDB|MFC*version*UD.DLL|MFCS*version*U.LIB|MFCS*version*U.PDB|
-|MFCS*version*UD.LIB|MFCS*version*UD.PDB|MFCM*version*U.LIB|MFCM*version*U.PDB|
-|MFCM*version*U.DLL|MFCM*version*UD.LIB|MFCM*version*UD.PDB|MFCM*version*UD.DLL|
+:::row:::
+   :::column span="":::
+      MFC*version*U.LIB\
+      MFC*version*UD.LIB\
+      MFCM*version*U.LIB\
+      MFCM*version*UD.LIB\
+      MFCS*version*U.LIB\
+      MFCS*version*UD.LIB\
+      UAFXCW.LIB\
+      UAFXCWD.LIB
+   :::column-end:::
+   :::column span="":::
+      MFC*version*U.PDB\
+      MFC*version*UD.PDB\
+      MFCM*version*U.PDB\
+      MFCM*version*UD.PDB\
+      MFCS*version*U.PDB\
+      MFCS*version*UD.PDB\
+      UAFXCW.PDB\
+      UAFXCWD.PDB
+   :::column-end:::
+   :::column span="":::
+      MFC*version*U.DLL\
+      MFC*version*UD.DLL\
+      MFCM*version*U.DLL\
+      MFCM*version*UD.DLL
+   :::column-end:::
+:::row-end:::
 
 (*version* represents the version number of the file; for example, '140' means version 14.0.)
 
@@ -45,7 +66,7 @@ To complete Unicode programming of your application, you must also:
 
   - Use LPTSTR where you would use **`char`**<strong>\*</strong>.
 
-  - Use LPCTSTR where you would use **const char**<strong>\*</strong>. `CString` provides the operator LPCTSTR to convert between `CString` and LPCTSTR.
+  - Use LPCTSTR where you would use **`const char`**<strong>\*</strong>. `CString` provides the operator LPCTSTR to convert between `CString` and LPCTSTR.
 
 `CString` also supplies Unicode-aware constructors, assignment operators, and comparison operators.
 
@@ -66,7 +87,7 @@ Under DBCS, a given string can contain all single-byte ANSI characters, all doub
 
 `CString` member functions use special "generic text" versions of the C run-time functions they call, or they use Unicode-aware functions. Therefore, for example, if a `CString` function would typically call `strcmp`, it calls the corresponding generic-text function `_tcscmp` instead. Depending on how the symbols _MBCS and _UNICODE are defined, `_tcscmp` maps as follows:
 
-|||
+|Symbols|Function|
 |-|-|
 |_MBCS defined|`_mbscmp`|
 |_UNICODE defined|`wcscmp`|

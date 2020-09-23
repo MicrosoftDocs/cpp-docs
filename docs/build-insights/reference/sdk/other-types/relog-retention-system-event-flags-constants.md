@@ -27,7 +27,7 @@ static const unsigned long long
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `RELOG_RETENTION_SYSTEM_EVENT_FLAGS_CPU_SAMPLES` | Keep CPU sample system events in a relogged trace. |
 | `RELOG_RETENTION_SYSTEM_EVENT_FLAGS_ALL` | Keep all system events in a relogged trace. |

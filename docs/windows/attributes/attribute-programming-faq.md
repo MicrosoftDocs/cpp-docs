@@ -69,19 +69,49 @@ class CMyClass
 
 However, the following attributes have single, unnamed parameters:
 
-||||
-|-|-|-|
-|[call_as](call-as.md)|[case](case-cpp.md)|[cpp_quote](cpp-quote.md)|
-|[default](default-cpp.md)|[defaultvalue](defaultvalue.md)|[defaultvtable](defaultvtable.md)|
-|[emitidl](emitidl.md)|[entry](entry.md)|[first_is](first-is.md)|
-|[helpcontext](helpcontext.md)|[helpfile](helpfile.md)|[helpstring](helpstring.md)|
-|[helpstringcontext](helpstringcontext.md)|[helpstringdll](helpstringdll.md)|[id](id.md)|
-|[iid_is](iid-is.md)|[import](import.md)|[importlib](importlib.md)|
-|[include](include-cpp.md)|[includelib](includelib-cpp.md)|[last_is](last-is.md)|
-|[length_is](length-is.md)|[max_is](max-is.md)|[no_injected_text](no-injected-text.md)|
-|[pointer_default](pointer-default.md)|[pragma](pragma.md)|[restricted](restricted.md)|
-|[size_is](size-is.md)|[source](source-cpp.md)|[switch_is](switch-is.md)|
-|[switch_type](switch-type.md)|[transmit_as](transmit-as.md)|[wire_marshal](wire-marshal.md)|
+:::row:::
+   :::column span="":::
+      [`call_as`](call-as.md)\
+      [`case`](case-cpp.md)\
+      [`cpp_quote`](cpp-quote.md)\
+      [`default`](default-cpp.md)\
+      [`defaultvalue`](defaultvalue.md)\
+      [`defaultvtable`](defaultvtable.md)\
+      [`emitidl`](emitidl.md)\
+      [`entry`](entry.md)\
+      [`first_is`](first-is.md)
+   :::column-end:::
+   :::column span="":::
+      [`helpcontext`](helpcontext.md)\
+      [`helpfile`](helpfile.md)\
+      [`helpstring`](helpstring.md)\
+      [`helpstringcontext`](helpstringcontext.md)\
+      [`helpstringdll`](helpstringdll.md)\
+      [`id`](id.md)\
+      [`iid_is`](iid-is.md)\
+      [`import`](import.md)
+   :::column-end:::
+   :::column span="":::
+      [`importlib`](importlib.md)\
+      [`include`](include-cpp.md)\
+      [`includelib`](includelib-cpp.md)\
+      [`last_is`](last-is.md)\
+      [`length_is`](length-is.md)\
+      [`max_is`](max-is.md)\
+      [`no_injected_text`](no-injected-text.md)\
+      [`pointer_default`](pointer-default.md)
+   :::column-end:::
+   :::column span="":::
+      [`pragma`](pragma.md)\
+      [`restricted`](restricted.md)\
+      [`size_is`](size-is.md)\
+      [`source`](source-cpp.md)\
+      [`switch_is`](switch-is.md)\
+      [`switch_type`](switch-type.md)\
+      [`transmit_as`](transmit-as.md)\
+      [`wire_marshal`](wire-marshal.md)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="vcconattributeprogrammmingfaqanchor3"></a> Can I use comments in an attribute block?
 

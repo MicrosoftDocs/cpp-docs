@@ -30,9 +30,7 @@ By default, only COM-interfaces that are base classes of the `coclass` are added
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|Yes|
@@ -41,7 +39,7 @@ By default, only COM-interfaces that are base classes of the `coclass` are added
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 
-## Example
+## Examples
 
 The following example is in three parts: an .idl file and its associated .h file, and a C++ file.
 
@@ -90,8 +88,6 @@ library odod
    };
 }
 ```
-
-## Example
 
 And the following .h file, which also needs to be available to the compiler.
 
@@ -370,8 +366,6 @@ CBar;
 #endif
 #endif
 ```
-
-## Example
 
 In the following program, without implements, `IBar1`, `IBar2`, and `ISna` will not be in the `coclass` in the generated IDL.
 

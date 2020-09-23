@@ -1,6 +1,6 @@
 ---
 title: "TRACING_SESSION_OPTIONS structure"
-description: "The C++ Build Insights SDK TRACING_SESSION_OPTIONS structure reference."
+description: "Learn about the C++ Build Insights SDK TRACING_SESSION_OPTIONS structure reference."
 ms.date: "02/12/2020"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "TRACING_SESSION_OPTIONS", "throughput analysis", "build time analysis", "vcperf.exe"]
 ---
@@ -28,7 +28,7 @@ typedef struct TRACING_SESSION_OPTIONS_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `SystemEventFlags` | A bitmask describing the system events to capture. For more information, see [TRACING_SESSION_SYSTEM_EVENT_FLAGS](tracing-session-system-event-flags-constants.md). |
 | `MsvcEventFlags` | A bitmask describing the MSVC events to capture. For more information, see [TRACING_SESSION_MSVC_EVENT_FLAGS](tracing-session-msvc-event-flags-constants.md). |

@@ -54,7 +54,7 @@ The class used to manage the type information for *T*. The default value is `CCo
 
 ### Public Methods
 
-|||
+|Name|Description|
 |-|-|
 |[get_Appearance](#get_appearance)|Call this method to get the paint style used by the control, for example, flat or 3D.|
 |[get_AutoSize](#get_autosize)|Call this method to get the status of the flag that indicates if the control cannot be any other size.|

@@ -34,7 +34,7 @@ class CComSafeDeleteCriticalSection : public CComCriticalSection
 
 ### Data Members
 
-|||
+|Data member|Description|
 |-|-|
 |[m_bInitialized](#m_binitialized)|Flags whether the internal `CRITICAL_SECTION` object has been initialized.|
 

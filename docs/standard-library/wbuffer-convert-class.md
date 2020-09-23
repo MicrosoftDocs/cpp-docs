@@ -19,11 +19,14 @@ class wbuffer_convert
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Codecvt*|The [locale](../standard-library/locale-class.md) facet that represents the conversion object.|
-|*Elem*|The wide-character element type.|
-|*Traits*|The traits associated with *Elem*.|
+*Codecvt*\
+The [locale](../standard-library/locale-class.md) facet that represents the conversion object.
+
+*Elem*\
+The wide-character element type.
+
+*Traits*\
+The traits associated with *Elem*.
 
 ## Remarks
 

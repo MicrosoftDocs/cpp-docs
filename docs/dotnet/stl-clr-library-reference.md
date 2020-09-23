@@ -39,18 +39,32 @@ Shows how to display the elements of several STL/CLR containers written in a C++
 
 In addition, this section also describes the following components of STL/CLR:
 
-|||
-|-|-|
-|[adapter (STL/CLR)](../dotnet/adapter-stl-clr.md)|[algorithm (STL/CLR)](../dotnet/algorithm-stl-clr.md)|
-|[deque (STL/CLR)](../dotnet/deque-stl-clr.md)|[for each, in](../dotnet/for-each-in.md)|
-|[functional (STL/CLR)](../dotnet/functional-stl-clr.md)|[hash_map (STL/CLR)](../dotnet/hash-map-stl-clr.md)|
-|[hash_multimap (STL/CLR)](../dotnet/hash-multimap-stl-clr.md)|[hash_multiset (STL/CLR)](../dotnet/hash-multiset-stl-clr.md)|
-|[hash_set (STL/CLR)](../dotnet/hash-set-stl-clr.md)|[list (STL/CLR)](../dotnet/list-stl-clr.md)|
-|[map (STL/CLR)](../dotnet/map-stl-clr.md)|[multimap (STL/CLR)](../dotnet/multimap-stl-clr.md)|
-|[multiset (STL/CLR)](../dotnet/multiset-stl-clr.md)|[numeric (STL/CLR)](../dotnet/numeric-stl-clr.md)|
-|[priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md)|[queue (STL/CLR)](../dotnet/queue-stl-clr.md)|
-|[set (STL/CLR)](../dotnet/set-stl-clr.md)|[stack (STL/CLR)](../dotnet/stack-stl-clr.md)|
-|[utility (STL/CLR)](../dotnet/utility-stl-clr.md)|[vector (STL/CLR)](../dotnet/vector-stl-clr.md)|
+:::row:::
+   :::column span="":::
+      [`adapter` (STL/CLR)](../dotnet/adapter-stl-clr.md)\
+      [`algorithm` (STL/CLR)](../dotnet/algorithm-stl-clr.md)\
+      [`deque` (STL/CLR)](../dotnet/deque-stl-clr.md)\
+      [`for each`, `in`](../dotnet/for-each-in.md)\
+      [`functional` (STL/CLR)](../dotnet/functional-stl-clr.md)\
+      [`hash_map` (STL/CLR)](../dotnet/hash-map-stl-clr.md)\
+      [`hash_multimap` (STL/CLR)](../dotnet/hash-multimap-stl-clr.md)\
+      [`hash_multiset` (STL/CLR)](../dotnet/hash-multiset-stl-clr.md)\
+      [`hash_set` (STL/CLR)](../dotnet/hash-set-stl-clr.md)\
+      [`list` (STL/CLR)](../dotnet/list-stl-clr.md)\
+   :::column-end:::
+   :::column span="":::
+      [`map` (STL/CLR)](../dotnet/map-stl-clr.md)\
+      [`multimap` (STL/CLR)](../dotnet/multimap-stl-clr.md)\
+      [`multiset` (STL/CLR)](../dotnet/multiset-stl-clr.md)\
+      [`numeric` (STL/CLR)](../dotnet/numeric-stl-clr.md)\
+      [`priority_queue` (STL/CLR)](../dotnet/priority-queue-stl-clr.md)\
+      [`queue` (STL/CLR)](../dotnet/queue-stl-clr.md)\
+      [`set` (STL/CLR)](../dotnet/set-stl-clr.md)\
+      [`stack` (STL/CLR)](../dotnet/stack-stl-clr.md)\
+      [`utility` (STL/CLR)](../dotnet/utility-stl-clr.md)\
+      [`vector` (STL/CLR)](../dotnet/vector-stl-clr.md)\
+   :::column-end:::
+:::row-end:::
 
 ## See also
 

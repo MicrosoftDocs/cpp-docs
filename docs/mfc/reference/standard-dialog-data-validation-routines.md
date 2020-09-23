@@ -13,7 +13,7 @@ This topic lists the standard dialog data validation (DDV) routines used for com
 
 ### DDV Functions
 
-|||
+|Name|Description|
 |-|-|
 |[DDV_MaxChars](#ddv_maxchars)|Verifies the number of characters in a given control value does not exceed a given maximum.|
 |[DDV_MinMaxByte](#ddv_minmaxbyte)|Verifies a given control value does not exceed a given **BYTE** range.|

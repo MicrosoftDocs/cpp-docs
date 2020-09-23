@@ -46,9 +46,7 @@ Each time the compiler encounters a new file, **emitidl** is implicitly set to *
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

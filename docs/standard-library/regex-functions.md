@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::regex_match [C++]", "std::regex_replace [C++]", "std
 ---
 # &lt;regex&gt; functions
 
-|||
+|Name|Description|
 |-|-|
 |[regex_match](#regex_match)|Tests whether a regular expression matches the entire target string.|
 |[regex_replace](#regex_replace)|Replaces matched regular expressions.|

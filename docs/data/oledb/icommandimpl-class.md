@@ -32,7 +32,7 @@ A command interface. The default is `ICommand`.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Cancel](#cancel)|Cancels the current command execution.|
 |[CancelExecution](#cancelexecution)|Cancels the current command execution.|
@@ -43,7 +43,7 @@ A command interface. The default is `ICommand`.
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_bCancel](#bcancel)|Indicates whether the command is to be canceled.|
 |[m_bCancelWhenExecuting](#bcancelwhenexecuting)|Indicates whether the command is to be canceled when executing.|

@@ -32,7 +32,7 @@ The size of the bookmark buffer in bytes. When *nSize* is zero, the bookmark buf
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CBookmark](#cbookmark)|The constructor|
 |[GetBuffer](#getbuffer)|Retrieves the pointer to the buffer.|
@@ -41,7 +41,7 @@ The size of the bookmark buffer in bytes. When *nSize* is zero, the bookmark buf
 
 ### Operators
 
-|||
+| Name | Description |
 |-|-|
 |[operator =](#operator)|Assigns one `CBookmark` class to another.|
 

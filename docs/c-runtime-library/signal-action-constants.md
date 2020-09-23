@@ -19,7 +19,7 @@ The action taken when the interrupt signal is received depends on the value of `
 
 The `func` argument must be either a function address or one of the manifest constants listed below and defined in SIGNAL.H.
 
-|||
+|Constant|Description|
 |-|-|
 | `SIG_DFL`  | Uses system-default response. If the calling program uses stream I/O, buffers created by the run-time library are not flushed.  |
 | `SIG_IGN`  | Ignores interrupt signal. This value should never be given for `SIGFPE`, since the floating-point state of the process is left undefined.  |

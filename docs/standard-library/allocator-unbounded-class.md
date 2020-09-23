@@ -18,9 +18,8 @@ class allocator_unbounded;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Type*|The type of elements allocated by the allocator.|
+*Type*\
+The type of elements allocated by the allocator.
 
 ## Remarks
 

@@ -24,7 +24,7 @@ typedef enum CALLBACK_CODE (BUILD_INSIGHTS_API *OnBeginEndPassFunc)(
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `callbackContext` |  |
 

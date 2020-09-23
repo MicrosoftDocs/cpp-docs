@@ -19,25 +19,22 @@ class CMFCDesktopAlertWndButton : public CMFCButton
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCDesktopAlertWndButton::CMFCDesktopAlertWndButton`|Default constructor.|
 |`CMFCDesktopAlertWndButton::~CMFCDesktopAlertWndButton`|Destructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCDesktopAlertWndButton::IsCaptionButton](#iscaptionbutton)|Determines whether the button is displayed in the caption area of the alert dialog box.|
 |[CMFCDesktopAlertWndButton::IsCloseButton](#isclosebutton)|Determines whether the button closes the alert dialog box.|
 
 ### Data Members
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCDesktopAlertWndButton::m_bIsCaptionButton`|A Boolean value that specifies whether the button is displayed in the caption area of the alert dialog box.|
 |`CMFCDesktopAlertWndButton::m_bIsCloseButton`|A Boolean value that specifies whether the button closes the alert dialog box.|
 

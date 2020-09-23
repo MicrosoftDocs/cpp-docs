@@ -25,9 +25,7 @@ See the [idl_module](idl-module.md) example for a sample of how to use **usesget
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**module** attribute|
 |**Repeatable**|No|

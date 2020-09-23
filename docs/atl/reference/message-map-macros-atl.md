@@ -8,7 +8,7 @@ ms.assetid: eefdd546-8934-4a30-b263-9c06a8addcbd
 
 These macros define message maps and entries.
 
-|||
+|Name|Description|
 |-|-|
 |[ALT_MSG_MAP](#alt_msg_map)|Marks the beginning of an alternate message map.|
 |[BEGIN_MSG_MAP](#begin_msg_map)|Marks the beginning of the default message map.|

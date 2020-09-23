@@ -13,7 +13,7 @@ A character constant contains more than two characters. The limit is one charact
 
 An escape sequence, such as \t, is converted to a single character.
 
-## Example
+## Examples
 
 The following sample generates C2015:
 
@@ -24,8 +24,6 @@ The following sample generates C2015:
 char test1 = 'error';   // C2015
 char test2 = 'e';   // OK
 ```
-
-## Example
 
 C2015 can also occur when using a Microsoft extension, character constants converted to integers.  The following sample generates C2015:
 

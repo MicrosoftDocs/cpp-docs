@@ -42,8 +42,6 @@ An initial reference count.
 
 Its behavior is determined by the named locale *_Locname*. Each constructor initializes its base object with [time_get](../standard-library/time-get-class.md#time_get)\<CharType, InputIterator>( `_Refs`).
 
-## Requirements
-
 **Header:** \<locale>
 
 **Namespace:** std

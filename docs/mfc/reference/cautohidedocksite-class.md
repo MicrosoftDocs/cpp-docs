@@ -19,7 +19,7 @@ class CAutoHideDockSite : public CDockSite
 
 ### Public Constructors
 
-|||
+| Name | Description |
 |-|-|
 |Name|Description|
 |`CAutoHideDockSite::CAutoHideDockSite`|Constructs a `CAutoHideDockSite` object.|
@@ -27,7 +27,7 @@ class CAutoHideDockSite : public CDockSite
 
 ### Public Methods
 
-|||
+| Name | Description |
 |-|-|
 |Name|Description|
 |`CAutoHideDockSite::AllowShowOnPaneMenu`|Indicates whether the `CAutoHideDockSite` is shown on the pane menu.|
@@ -41,7 +41,7 @@ class CAutoHideDockSite : public CDockSite
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |Name|Description|
 |[CAutoHideDockSite::m_nExtraSpace](#m_nextraspace)|Defines the size of the space between the toolbars and the edge of the docking bar. This space is measured from either the left edge or the top edge, depending on the alignment for the dock space.|
@@ -84,10 +84,8 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pBar*|[in] The base pane that the framework tests.|
+*pBar*\
+[in] The base pane that the framework tests.
 
 ### Return Value
 
@@ -110,12 +108,14 @@ virtual void DockPane(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pWnd*|[in] The pane that the framework docks.|
-|*dockMethod*|[in] Docking options for the pane.|
-|*lpRect*|[in] A rectangle that specifies the boundaries for the docked pane.|
+*pWnd*\
+[in] The pane that the framework docks.
+
+*dockMethod*\
+[in] Docking options for the pane.
+
+*lpRect*\
+[in] A rectangle that specifies the boundaries for the docked pane.
 
 ### Remarks
 
@@ -133,10 +133,8 @@ void GetAlignRect(CRect& rect) const;
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*rect*|[in] A reference to a rectangle. The method stores the size of the dock site in this rectangle.|
+*rect*\
+[in] A reference to a rectangle. The method stores the size of the dock site in this rectangle.
 
 ### Remarks
 
@@ -198,10 +196,8 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*rectNewClientArea*|[in] A reserved value.|
+*rectNewClientArea*\
+[in] A reserved value.
 
 ### Remarks
 
@@ -217,10 +213,8 @@ void UnSetAutoHideMode(CMFCAutoHideBar* pAutoHideToolbar);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pAutoHideToolbar*|[in] A pointer to a [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) object pane located on the `CAutoHideDockSite`.|
+*pAutoHideToolbar*\
+[in] A pointer to a [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) object pane located on the `CAutoHideDockSite`.
 
 ### Remarks
 

@@ -44,13 +44,13 @@ Source control enables you to coordinate work among multiple developers, isolate
 
 ::: moniker range="vs-2019"
 
-![Team Explorer](media/vs2019-team-explorer.png "Visual Studio 2017 Team Explorer")
+![Screenshot of the Team Explorer window in Visual Studio 2019.](media/vs2019-team-explorer.png "Visual Studio 2017 Team Explorer")
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-![Team Explorer](media/vs2017-team-explorer.png "Visual Studio 2017 Team Explorer")
+![Screenshot of the Team Explorer window in Visual Studio 2017.](media/vs2017-team-explorer.png "Visual Studio 2017 Team Explorer")
 
 ::: moniker-end
 

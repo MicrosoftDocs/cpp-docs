@@ -323,9 +323,8 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpToolInfo*|[out] Pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) structure that receives information about the current tooltip window.|
+*lpToolInfo*\
+[out] Pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) structure that receives information about the current tooltip window.
 
 ### Return Value
 
@@ -476,9 +475,8 @@ void GetTitle(PTTGETTITLE pttgt) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pttgt*|[out] Pointer to a [TTGETTITLE](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) structure that contains information about the ToolTip control. When this method returns, the *pszTitle* member of the [TTGETTITLE](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) structure points to the text of the title.|
+*pttgt*\
+[out] Pointer to a [TTGETTITLE](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) structure that contains information about the ToolTip control. When this method returns, the *pszTitle* member of the [TTGETTITLE](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) structure points to the text of the title.
 
 ### Remarks
 

@@ -48,9 +48,7 @@ __interface IFireTabCtrl {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Nonencapsulated unions|
 |**Repeatable**|No|

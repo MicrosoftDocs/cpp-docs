@@ -1,5 +1,6 @@
 ---
 title: "_lrotl, _lrotr"
+description: "API reference for _lrotl and _lrotr; which rotate bits to the left (_lrotl) or right (_lrotr). "
 ms.date: "04/04/2018"
 api_name: ["_lrotl", "_lrotr"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
@@ -30,7 +31,7 @@ Number of bits to shift *value*.
 
 ## Return Value
 
-Both functions return the rotated value. There is no error return.
+Both functions return the rotated value. There's no error return.
 
 ## Remarks
 

@@ -37,7 +37,7 @@ Removes the **float_control** setting from the top of the internal compiler stac
 
 The **float_control** pragma doesn't have the same behavior as the [/fp](../build/reference/fp-specify-floating-point-behavior.md) compiler option. The **float_control** pragma only governs part of the floating-point behavior. It must be combined with [fp_contract](../preprocessor/fp-contract.md) and [fenv_access](../preprocessor/fenv-access.md) pragmas to recreate the **/fp** compiler options. The following table shows the equivalent pragma settings for each compiler option:
 
-| | float_control(precise, \*) | float_control(except, \*) | fp_contract(\*) | fenv_access(\*) |
+| Option | float_control(precise, \*) | float_control(except, \*) | fp_contract(\*) | fenv_access(\*) |
 |-|-|-|-|-|
 | /fp:strict             | on  | on  | off | on  |
 | /fp:precise            | on  | off | on  | off |

@@ -1,6 +1,6 @@
 ---
 title: "TRACING_SESSION_STATISTICS structure"
-description: "The C++ Build Insights SDK TRACING_SESSION_OPTIONS structure reference."
+description: "Learn about the C++ Build Insights SDK TRACING_SESSION_STATISTICS structure reference."
 ms.date: "02/12/2020"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "TRACING_SESSION_STATISTICS", "throughput analysis", "build time analysis", "vcperf.exe"]
 ---
@@ -30,7 +30,7 @@ typedef struct TRACING_SESSION_STATISTICS_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `MSVCEventsLost` | The number of MSVC events that were dropped. |
 | `MSVCBuffersLost` | The number of MSVC event buffers that were dropped. |

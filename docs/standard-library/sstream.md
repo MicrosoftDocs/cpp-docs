@@ -62,10 +62,11 @@ void swap (
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|Reference to an `sstream` object.|
-|*right*|Reference to an `sstream` object.|
+*left*\
+Reference to an `sstream` object.
+
+*right*\
+Reference to an `sstream` object.
 
 ## Remarks
 
@@ -86,7 +87,7 @@ Objects of type `char *` can use the functionality in [\<strstream>](../standard
 
 ### Manipulators
 
-|||
+|Name|Description|
 |-|-|
 |[swap](../standard-library/sstream-functions.md#sstream_swap)|Exchanges the values between two `sstream` objects.|
 

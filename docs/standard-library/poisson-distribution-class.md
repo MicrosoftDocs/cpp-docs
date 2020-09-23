@@ -49,10 +49,8 @@ The integer result type, defaults to **`int`**. For possible types, see [\<rando
 
 The class template describes a distribution that produces values of a user-specified integral type with a Poisson distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[poisson_distribution](#poisson_distribution)|`poisson_distribution::mean`|`poisson_distribution::param`|
-|`poisson_distribution::operator()`||[param_type](#param_type)|
+[poisson_distribution](#poisson_distribution)\
+[param_type](#param_type)
 
 The property function `mean()` returns the value for stored distribution parameter *mean*.
 

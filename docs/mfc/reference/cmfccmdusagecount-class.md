@@ -19,17 +19,15 @@ class CMFCCmdUsageCount : public CObject
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCCmdUsageCount::CMFCCmdUsageCount`|Default constructor.|
 |`CMFCCmdUsageCount::~CMFCCmdUsageCount`|Destructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCCmdUsageCount::AddCmd](#addcmd)|Increments by one the counter that is associated with the given command.|
 |[CMFCCmdUsageCount::GetCount](#getcount)|Retrieves the usage count that is associated with the given command ID.|
 |[CMFCCmdUsageCount::HasEnoughInformation](#hasenoughinformation)|Determines whether this object has collected the minimum amount of tracking data.|
@@ -40,9 +38,8 @@ class CMFCCmdUsageCount : public CObject
 
 ### Data Members
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`m_CmdUsage`|A `CMap` object that maps commands to their usage counts.|
 |`m_nMinUsagePercentage`|The minimum usage percentage for a command to be frequently used.|
 |`m_nStartCount`|The start counter that is used to determine whether this object has collected the minimum amount of tracking data.|
@@ -74,10 +71,8 @@ void AddCmd(UINT uiCmd);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*uiCmd*|[in] Specifies the command counter to increment.|
+*uiCmd*\
+[in] Specifies the command counter to increment.
 
 ### Remarks
 
@@ -101,10 +96,8 @@ UINT GetCount(UINT uiCmd) const;
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*uiCmd*|[in] The ID of the command counter to retrieve.|
+*uiCmd*\
+[in] The ID of the command counter to retrieve.
 
 ### Return Value
 
@@ -138,10 +131,8 @@ BOOL IsFreqeuntlyUsedCmd(UINT uiCmd) const;
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*uiCmd*|[in] Specifies the command to check.|
+*uiCmd*\
+[in] Specifies the command to check.
 
 ### Return Value
 
@@ -175,10 +166,8 @@ virtual void Serialize(CArchive& ar);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*ar*|[in] A `CArchive` object to serialize from or to.|
+*ar*\
+[in] A `CArchive` object to serialize from or to.
 
 ### Remarks
 
@@ -198,11 +187,11 @@ static BOOL __stdcall SetOptions(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*nStartCount*|[in] The new initial count of all tracked commands.|
-|*nMinUsagePercentage*|[in] The new minimum usage percentage.|
+*nStartCount*\
+[in] The new initial count of all tracked commands.
+
+*nMinUsagePercentage*\
+[in] The new minimum usage percentage.
 
 ### Return Value
 

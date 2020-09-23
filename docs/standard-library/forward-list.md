@@ -22,7 +22,7 @@ Defines the container class template forward_list and several supporting templat
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator==](../standard-library/forward-list-operators.md#op_eq_eq)|Tests if the forward list object on the left side of the operator is equal to the forward list object on the right side.|
 |[operator!=](../standard-library/forward-list-operators.md#op_neq)|Tests if the forward list object on the left side of the operator is not equal to the forward list object on the right side.|
@@ -33,13 +33,13 @@ Defines the container class template forward_list and several supporting templat
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[swap](../standard-library/forward-list-functions.md#swap)|Exchanges the elements of two forward lists.|
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[forward_list](../standard-library/forward-list-class.md)|Describes an object that controls a varying-length sequence of elements. The sequence is stored as a singly-linked list of elements, each containing a member of type `Type`.|
 

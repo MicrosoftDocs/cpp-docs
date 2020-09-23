@@ -19,13 +19,13 @@ class condition_variable;
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[condition_variable](#condition_variable)|Constructs a `condition_variable` object.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[native_handle](#native_handle)|Returns the implementation-specific type representing the condition_variable handle.|
 |[notify_all](#notify_all)|Unblocks all threads that are waiting for the `condition_variable` object.|

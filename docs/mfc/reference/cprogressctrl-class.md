@@ -336,9 +336,8 @@ COLORREF SetBarColor(COLORREF clrBar);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*clrBar*|[in] A [COLORREF](/windows/win32/gdi/colorref) value that specifies the new color of the progress indicator bar. Specify CLR_DEFAULT to cause the progress bar to use its default color.|
+*clrBar*\
+[in] A [COLORREF](/windows/win32/gdi/colorref) value that specifies the new color of the progress indicator bar. Specify CLR_DEFAULT to cause the progress bar to use its default color.
 
 ### Return Value
 
@@ -395,10 +394,11 @@ BOOL SetMarquee(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*fMarqueeMode*|[in] TRUE to turn marquee mode on, or FALSE to turn marquee mode off.|
-|*nInterval*|[in] Time in milliseconds between updates of the marquee animation.|
+*fMarqueeMode*\
+[in] TRUE to turn marquee mode on, or FALSE to turn marquee mode off.
+
+*nInterval*\
+[in] Time in milliseconds between updates of the marquee animation.
 
 ### Return Value
 
@@ -487,9 +487,12 @@ int SetState(int iState);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*iState*|[in] The state to set the progress bar. Use one of the following values:<br /><br /> - PBST_NORMAL - In progress<br />- PBST_ERROR - Error<br />- PBST_PAUSED - Paused|
+*iState*\
+[in] The state to set the progress bar. Use one of the following values:
+
+- `PBST_NORMAL` - In progress
+- `PBST_ERROR` - Error
+- `PBST_PAUSED` - Paused
 
 ### Return Value
 

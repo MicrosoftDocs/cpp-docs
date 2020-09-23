@@ -474,10 +474,11 @@ BOOL GetItemDropDownRect(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*iItem*|[in] Zero-based index of a header item whose style is HDF_SPLITBUTTON. For more information, see the `fmt` member of the [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) structure.|
-|*lpRect*|[out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure to receive the bounding rectangle information.|
+*iItem*\
+[in] Zero-based index of a header item whose style is HDF_SPLITBUTTON. For more information, see the `fmt` member of the [HDITEM](/windows/win32/api/commctrl/ns-commctrl-hditemw) structure.
+
+*lpRect*\
+[out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure to receive the bounding rectangle information.
 
 ### Return Value
 
@@ -565,9 +566,8 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpRect*|[out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that receives the bounding rectangle information.|
+*lpRect*\
+[out] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that receives the bounding rectangle information.
 
 ### Return Value
 
@@ -601,9 +601,8 @@ int HitTest(LPHDHITTESTINFO* phdhti);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*phdhti*|[in, out] Pointer to a [HDHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-hdhittestinfo) structure that specifies the point to test and receives the results of the test.|
+*phdhti*\
+[in, out] Pointer to a [HDHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-hdhittestinfo) structure that specifies the point to test and receives the results of the test.
 
 ### Return Value
 
@@ -757,9 +756,8 @@ BOOL SetFocusedItem(int iItem);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*iItem*|[in] Zero-based index of a header item.|
+*iItem*\
+[in] Zero-based index of a header item.
 
 ### Return Value
 

@@ -6,11 +6,14 @@ ms.assetid: 8dddef2d-7f17-42a6-ba08-6f6f20597d23
 ---
 # &lt;fstream&gt; typedefs
 
-||||
-|-|-|-|
-|[filebuf](#filebuf)|[fstream](#fstream)|[ifstream](#ifstream)|
-|[ofstream](#ofstream)|[wfilebuf](#wfilebuf)|[wfstream](#wfstream)|
-|[wifstream](#wifstream)|[wofstream](#wofstream)|
+[filebuf](#filebuf)\
+[fstream](#fstream)\
+[ifstream](#ifstream)\
+[ofstream](#ofstream)\
+[wfilebuf](#wfilebuf)\
+[wfstream](#wfstream)\
+[wifstream](#wifstream)\
+[wofstream](#wofstream)
 
 ## <a name="filebuf"></a> filebuf
 

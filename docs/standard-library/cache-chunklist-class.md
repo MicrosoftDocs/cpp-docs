@@ -18,9 +18,8 @@ class cache_chunklist
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Sz*|The number of elements in the array to be allocated.|
+*Sz*\
+The number of elements in the array to be allocated.
 
 ## Remarks
 
@@ -57,9 +56,8 @@ void *allocate(std::size_t count);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*count*|The number of elements in the array to be allocated.|
+*count*\
+The number of elements in the array to be allocated.
 
 ### Return Value
 
@@ -87,10 +85,11 @@ void deallocate(void* ptr, std::size_t count);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*ptr*|A pointer to the first object to be deallocated from storage.|
-|*count*|The number of objects to be deallocated from storage.|
+*ptr*\
+A pointer to the first object to be deallocated from storage.
+
+*count*\
+The number of objects to be deallocated from storage.
 
 ### Remarks
 

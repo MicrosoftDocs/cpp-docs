@@ -66,13 +66,15 @@ This wizard adds a member variable declaration to the header file. Depending on 
 
     For information about the types, see [fundamental types](../cpp/fundamental-types-cpp.md).
 
-    |||
-    |-|-|
-    |**`char`**|**`short`**|
-    |**`double`**|**`unsigned char`**|
-    |**`float`**|**`unsigned int`**|
-    |**`int`**|**`unsigned long`**|
-    |**`long`**||
+    - **`char`**
+    - **`double`**
+    - **`float`**
+    - **`int`**
+    - **`long`**
+    - **`short`**
+    - **`unsigned char`**
+    - **`unsigned int`**
+    - **`unsigned long`**
 
   - If you're adding a member variable for a dialog box control, this box is filled with the type of object that is returned for a control or value. If you select **Control**, then **Variable type** specifies the base class of the control you select in the **Control ID** box. If the dialog box control can hold a value, and if you select **Value**, then **Variable type** specifies the appropriate type for the value that control can hold. For more information, see [dialog box controls and variable types](#dialog-box-controls-and-variable-types).
 

@@ -27,7 +27,7 @@ typedef struct FRONT_END_FILE_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `Path` | The file's absolute path, encoded in UTF-8. |
 

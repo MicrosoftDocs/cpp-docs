@@ -27,7 +27,7 @@ typedef struct NAME_VALUE_PAIR_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `Name` | The name. |
 | `Value` | The value. |

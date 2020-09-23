@@ -22,7 +22,7 @@ To support event maps, MFC provides the following macros:
 
 ### Event Map Declaration and Demarcation
 
-|||
+|Name|Description|
 |-|-|
 |[DECLARE_EVENT_MAP](#declare_event_map)|Declares that an event map will be used in a class to map events to event-firing functions (must be used in the class declaration).|
 |[BEGIN_EVENT_MAP](#begin_event_map)|Begins the definition of an event map (must be used in the class implementation).|
@@ -30,14 +30,14 @@ To support event maps, MFC provides the following macros:
 
 ### Event Mapping Macros
 
-|||
+|Name|Description|
 |-|-|
 |[EVENT_CUSTOM](#event_custom)|Indicates which event-firing function will fire the specified event.|
 |[EVENT_CUSTOM_ID](#event_custom_id)|Indicates which event-firing function will fire the specified event, with a designated dispatch ID.|
 
 ### Message Mapping Macros
 
-|||
+|Name|Description|
 |-|-|
 |[ON_OLEVERB](#on_oleverb)|Indicates a custom verb handled by the OLE control.|
 |[ON_STDOLEVERB](#on_stdoleverb)|Overrides a standard verb mapping of the OLE control.|

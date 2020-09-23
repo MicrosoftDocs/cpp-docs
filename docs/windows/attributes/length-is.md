@@ -30,9 +30,7 @@ See [first_is](first-is.md) for an example of how to specify a section of an arr
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Field in **`struct`** or **`union`**, interface parameter, interface method|
 |**Repeatable**|No|

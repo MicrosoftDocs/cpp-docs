@@ -13,7 +13,7 @@ The TypeForwardedTo attribute must be applied to a type in referenced metadata.
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Example
+## Examples
 
 The following sample creates a component.
 
@@ -22,8 +22,6 @@ The following sample creates a component.
 // compile with: /clr /LD
 public ref class R {};
 ```
-
-## Example
 
 The following sample generates C3462.
 

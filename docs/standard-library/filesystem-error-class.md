@@ -22,13 +22,13 @@ The class serves as the base class for all exceptions thrown to report an error 
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[filesystem_error](#filesystem_error)|Constructs a `filesystem_error` message.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[path1](#path1)|Returns `mypval1`|
 |[path2](#path2)|Returns `mypval2`|

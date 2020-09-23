@@ -26,7 +26,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
 1. In the **Configure your new project** dialog, enter *HelloWorld* in the **Project name** edit box. Choose **Create** to create the project.
 
-   ![Name and create the new project](media/vs2019-configure-new-project-hello-world.png "Name and create the new project")
+   ![Screenshot of the Configure your new project dialog box with Hello World typed in the Project name text field.](media/vs2019-configure-new-project-hello-world.png "Name and create the new project")
 
    Visual Studio creates a new project. It's ready for you to add and edit your source code. By default, the Console App template fills in your source code with a "Hello World" app:
 
@@ -46,7 +46,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
 1. In the **New Project** dialog, select **Installed > Visual C++** if it isn't selected already, and then choose the **Empty Project** template. In the **Name** field, enter *HelloWorld*. Choose **OK** to create the project.
 
-   ![Name and create the new project](media/vscpp-concierge-project-name-callouts.png "Name and create the new project")
+   ![Screenshot of the New Project dialog box with Installed > Visual C plus plus selected and called out, the Empty Project option called out, and Hellow World typed in the Name text box.](media/vscpp-concierge-project-name-callouts.png "Name and create the new project")
 
 Visual Studio creates a new, empty project. It's ready for you to specialize for the kind of app you want to create and to add your source code files. You'll do that next.
 

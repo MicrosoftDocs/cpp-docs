@@ -30,21 +30,40 @@ The above code template is exactly the same as the one AppWizard creates for the
 
 [!code-cpp[NVC_MFCSerialization#10](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_4.cpp)]
 
-The library defines **<\<** and **>>** operators for `CArchive` as the first operand and the following data types and class types as the second operand:
+The library defines **`<<`** and **`>>`** operators for `CArchive` as the first operand and the following data types and class types as the second operand:
 
-||||
-|-|-|-|
-|`CObject*`|**SIZE** and `CSize`|**`float`**|
-|**WORD**|`CString`|**POINT** and `CPoint`|
-|`DWORD`|**BYTE**|`RECT` and `CRect`|
-|**Double**|**LONG**|`CTime` and `CTimeSpan`|
-|`Int`|**COleCurrency**|`COleVariant`|
-|`COleDateTime`|`COleDateTimeSpan`||
+:::row:::
+   :::column span="":::
+      `BYTE`\
+      `CObject*`\
+      `COleCurrency`\
+      `COleDateTime`\
+      `COleDateTimeSpan`
+   :::column-end:::
+   :::column span="":::
+      `COleVariant`\
+      `CString`\
+      `CTime` and `CTimeSpan`\
+      `Double`
+   :::column-end:::
+   :::column span="":::
+      `DWORD`\
+      `Float`\
+      `Int`\
+      `LONG`
+   :::column-end:::
+   :::column span="":::
+      `POINT` and `CPoint`\
+      `RECT` and `CRect`\
+      `SIZE` and `CSize`\
+      `WORD`
+   :::column-end:::
+:::row-end:::
 
 > [!NOTE]
 > Storing and loading `CObject`s via an archive requires extra consideration. For more information, see [Storing and Loading CObjects via an Archive](../mfc/storing-and-loading-cobjects-via-an-archive.md).
 
-The **CArchive <\<** and **>>** operators always return a reference to the `CArchive` object, which is the first operand. This enables you to chain the operators, as illustrated below:
+The `CArchive` **`<<`** and **`>>`** operators always return a reference to the `CArchive` object, which is the first operand. This enables you to chain the operators, as illustrated below:
 
 [!code-cpp[NVC_MFCSerialization#11](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_5.cpp)]
 

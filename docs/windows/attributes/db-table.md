@@ -56,9 +56,7 @@ For an example of this attribute used in an application, see [MultiRead](https:/
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|

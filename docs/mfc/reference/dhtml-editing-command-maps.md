@@ -9,7 +9,7 @@ The following macros can be used to map DHTML editing commands in [CHtmlEditView
 
 ### DHTML Editing Command Map Macros
 
-|||
+|Name|Description|
 |-|-|
 |[DECLARE_DHTMLEDITING_CMDMAP](#declare_dhtmlediting_cmdmap)|Declares a DHTML editing command map in a class.|
 |[BEGIN_DHTMLEDITING_CMDMAP](#begin_dhtmlediting_cmdmap)|Starts the definition of a DHTML editing command map within a class.|

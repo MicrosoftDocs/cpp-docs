@@ -27,7 +27,7 @@ The compiler may generate this error when you use square brackets as part of the
 
    For more information about lambda expression syntax, see [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md).
 
-## Example
+## Examples
 
 The following example generates C3409.
 
@@ -45,8 +45,6 @@ __interface x {};
 [coclass, uuid("00000000-0000-0000-0000-000000000001")]
 class b : public x {};
 ```
-
-## Example
 
 The following example generates C3409 because a lambda expression uses the **`mutable`** specification, but does not provide a parameter list. The compiler cannot determine whether the square brackets are part of the definition of a lambda expression or of an attribute block.
 

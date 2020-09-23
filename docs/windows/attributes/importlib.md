@@ -37,9 +37,7 @@ The following code shows an example of how to use **importlib**:
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

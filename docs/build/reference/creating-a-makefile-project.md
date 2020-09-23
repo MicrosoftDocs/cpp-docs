@@ -98,6 +98,6 @@ The next time you open your makefile project in the Visual Studio development en
 
 [Using IntelliSense](/visualstudio/ide/using-intellisense)<br>
 [NMAKE Reference](nmake-reference.md)<br>
-[How to: Create a C++ Project from Existing Code](../how-to-create-a-cpp-project-from-existing-code.md)
+[How to: Create a C++ Project from Existing Code](../how-to-create-a-cpp-project-from-existing-code.md)<br>
 [Special Characters in a Makefile](special-characters-in-a-makefile.md)<br/>
 [Contents of a Makefile](contents-of-a-makefile.md)<br/>

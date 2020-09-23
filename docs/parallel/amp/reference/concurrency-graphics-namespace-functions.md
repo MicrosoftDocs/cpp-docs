@@ -6,9 +6,8 @@ ms.assetid: ace01cd5-29d3-4356-930e-c81a61c5f934
 ---
 # Concurrency::graphics namespace functions
 
-|||
-|-|-|
-|[copy](#copy)|[copy_async](#copy_async)|
+[copy](#copy)\
+[copy_async](#copy_async)
 
 ## <a name="copy"></a> copy Function (Concurrency::graphics Namespace)
 

@@ -84,7 +84,7 @@ For more information and code examples, see [File system navigation (C++)](../st
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[directory_entry class](../standard-library/directory-entry-class.md)|Describes an object that is returned by a `directory_iterator` or a `recursive_directory_iterator` and contains a `path`.|
 |[directory_iterator class](../standard-library/directory-iterator-class.md)|Describes an input iterator that sequences through the file names in a file-system directory.|
@@ -95,7 +95,7 @@ For more information and code examples, see [File system navigation (C++)](../st
 
 ### Structs
 
-|||
+|Name|Description|
 |-|-|
 |[space_info structure](../standard-library/space-info-structure.md)|Holds information about a volume.|
 
@@ -109,7 +109,7 @@ For more information and code examples, see [File system navigation (C++)](../st
 
 ## Enumerations
 
-|||
+|Name|Description|
 |-|-|
 |[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|An enumeration that is used with [copy_file](../standard-library/filesystem-functions.md#copy_file) and determines behavior if a destination file already exists.|
 |[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|An enumeration that specifies options for directory iterators.|

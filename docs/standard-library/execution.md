@@ -23,7 +23,7 @@ namespace std::execution {
 
 ### Classes and Structs
 
-|||
+|Name|Description|
 |-|-|
 |[is_execution_policy Struct](is-execution-policy-struct.md)|Detects execution policies for the purpose of excluding function signatures from otherwise ambiguous overload resolution participation.|
 |[parallel_policy Class](parallel-policy-class.md)|Used as a unique type to disambiguate parallel algorithm overloading and indicate that a parallel algorithm’s execution may be parallelized.|

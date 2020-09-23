@@ -9,7 +9,7 @@ ms.assetid: 0f33656d-321f-4996-90cc-9a7f21ab73c3
 
 These macros define COM interface maps.
 
-|||
+|Macro|Description|
 |-|-|
 |[BEGIN_COM_MAP](#begin_com_map)|Marks the beginning of the COM interface map entries.|
 |[END_COM_MAP](#end_com_map)|Marks the end of the COM interface map entries.|

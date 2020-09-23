@@ -108,7 +108,7 @@ The following example shows a basic rule set file that you can use as a starting
 
 ## Ruleset schema
 
-The following ruleset schema describes the XML schema of a ruleset file. The ruleset schema is stored in *`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Schemas\RuleSet.xsd`*. You can use it to author your own rulesets programmatically or to validate whether your custom rulesets adhere to the correct format. For more information, see [How to: Create an XML document based on an XSD schema](https://docs.microsoft.com/visualstudio/xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema?view=vs-2019).
+The following ruleset schema describes the XML schema of a ruleset file. The ruleset schema is stored in *`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Schemas\RuleSet.xsd`*. You can use it to author your own rulesets programmatically or to validate whether your custom rulesets adhere to the correct format. For more information, see [How to: Create an XML document based on an XSD schema](/visualstudio/xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

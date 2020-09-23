@@ -583,6 +583,8 @@
                   href: ../build/reference/gz-enable-stack-frame-run-time-error-checking.md
                 - name: /H (Restrict length of external names)
                   href: ../build/reference/h-restrict-length-of-external-names.md
+                - name: /headerUnit (Use header unit IFC)
+                  href: ../build/reference/headerunit.md
                 - name: /HELP (Compiler command-line help)
                   href: ../build/reference/help-compiler-command-line-help.md
                 - name: /homeparams (Copy register parameters to stack)
@@ -603,6 +605,10 @@
                   href: ../build/reference/ln-create-msil-module.md
                 - name: /MD, /MT, /LD (Use Run-time library)
                   href: ../build/reference/md-mt-ld-use-run-time-library.md
+                - name: /module:exportHeader (Create header units)
+                  href: ../build/reference/module-exportheader.md
+                - name: /module:reference (Use named module IFC)
+                  href: ../build/reference/module-reference.md
                 - name: /MP (Build with multiple processes)
                   href: ../build/reference/mp-build-with-multiple-processes.md
                 - name: /nologo (Suppress startup banner) (C/C++)
@@ -675,6 +681,8 @@
                   href: ../build/reference/std-specify-language-standard-version.md
                 - name: /Tc, /Tp, /TC, /TP (Specify source file type)
                   href: ../build/reference/tc-tp-tc-tp-specify-source-file-type.md
+                - name: /translateInclude (Translate include directives into import directives)
+                  href: ../build/reference/translateinclude.md
                 - name: /U, /u (Undefine symbols)
                   href: ../build/reference/u-u-undefine-symbols.md
                 - name: /utf-8 (Set source and executable character sets to UTF-8)
@@ -744,6 +752,8 @@
                       href: ../build/reference/zc-inline-remove-unreferenced-comdat.md
                     - name: "/Zc:noexceptTypes (C++17 noexcept rules)"
                       href: ../build/reference/zc-noexcepttypes.md
+                    - name: "/Zc:preprocessor (Enable preprocessor conformance mode)"
+                      href: ../build/reference/zc-preprocessor.md
                     - name: "/Zc:referenceBinding (Enforce reference binding rules)"
                       href: ../build/reference/zc-referencebinding-enforce-reference-binding-rules.md
                     - name: "/Zc:rvalueCast (Enforce type conversion rules)"

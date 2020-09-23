@@ -1,5 +1,6 @@
 ---
 title: "span class (C++ Standard Library)| Microsoft Docs"
+description: "API reference for the Standard Template Library (STL) span class, which provides a lightweight view over a contiguous sequence of objects."
 ms.date: "05/28/2020"
 f1_keywords: ["span/std::span", "span/std::span::const_pointer", "span/std::span::const_reference", "span/std::span::difference_type", "span/std::span::element_type", "span/std::span::iterator", "span/std::span::pointer", "span/std::span::reference", "span/std::span::reverse_iterator", "span/std::span::size_type", "span/std::span::value_type", "span/std::span::at", "span/std::span::assign", "span/std::span::back", "span/std::span::begin", "span/std::span::data", "span/std::span::empty", "span/std::span::end", "span/std::span::front", "span/std::span::rbegin", "span/std::span::rend",
 "span/std::span::size", "span/std::span::size_bytes", "span/std::span::operator=", "span/std::span::operator[]"]
@@ -22,10 +23,11 @@ class span;
 
 ### Template parameters
 
-|Parameter|Description|
-|-|-|
-|`T`| The type of the elements in the span. |
-|`Extent`| The number of elements in the span if specified at compile time. Otherwise  `std::dynamic_extent` if the number of elements will be specified at run-time. |
+`T`\
+ The type of the elements in the span.
+
+`Extent`\
+ The number of elements in the span if specified at compile time. Otherwise  `std::dynamic_extent` if the number of elements will be specified at run-time.
 
 [Deduction guide](#deduction_guides)
 
@@ -79,7 +81,7 @@ Unlike `array` or `vector`, a span doesn't "own" the elements inside it. A span 
 
 **Namespace:** std
 
-**Compiler Option:** /std:c++latest
+**Compiler Option:** [/std:c++latest](../build/reference/std-specify-language-standard-version.md)
 
 ## <a name="back"></a> `span::back`
 

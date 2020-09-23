@@ -19,9 +19,8 @@ void __lidt(void * Source);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Source*|[in] Pointer to the value to be copied to the IDTR.|
+*Source*\
+[in] Pointer to the value to be copied to the IDTR.
 
 ## Requirements
 

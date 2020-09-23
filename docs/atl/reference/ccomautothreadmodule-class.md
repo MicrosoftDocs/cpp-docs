@@ -28,7 +28,7 @@ class CComAutoThreadModule : public CComModule
 
 ### Methods
 
-|||
+|Function|Description|
 |-|-|
 |[CreateInstance](#createinstance)|Selects a thread and then creates an object in the associated apartment.|
 |[GetDefaultThreads](#getdefaultthreads)|(Static) Dynamically calculates the number of threads for the module based on the number of processors.|
@@ -38,9 +38,7 @@ class CComAutoThreadModule : public CComModule
 
 ### Data Members
 
-### Data Members
-
-|||
+|Data member|Description|
 |-|-|
 |[dwThreadID](#dwthreadid)|Contains the identifier of the current thread.|
 |[m_Allocator](#m_allocator)|Manages thread selection.|

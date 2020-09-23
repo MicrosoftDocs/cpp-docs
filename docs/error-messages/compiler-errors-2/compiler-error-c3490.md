@@ -15,7 +15,7 @@ A lambda expression that is declared in a **`const`** method cannot modify non-m
 
 - Remove the **`const`** modifier from your method declaration.
 
-## Example
+## Examples
 
 The following example generates C3490 because it modifies the member variable `_i` in a **`const`** method:
 
@@ -33,8 +33,6 @@ class C
    int _i;
 };
 ```
-
-## Example
 
 The following example resolves C3490 by removing the **`const`** modifier from the method declaration:
 

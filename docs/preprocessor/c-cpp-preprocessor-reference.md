@@ -1,6 +1,7 @@
 ---
 title: "C/C++ preprocessor reference"
-ms.date: "10/31/2019"
+description: "Reference for the Microsoft C/C++ compiler preprocessor in Visual Studio."
+ms.date: 09/10/2020
 helpviewer_keywords: ["preprocessor", "preprocessor, reference overview"]
 ms.assetid: e4a52843-7016-4f6d-8b40-cb1ace18f805
 ---
@@ -8,12 +9,12 @@ ms.assetid: e4a52843-7016-4f6d-8b40-cb1ace18f805
 
 The *C/C++ preprocessor reference* explains the preprocessor as it is implemented in Microsoft C/C++. The preprocessor performs preliminary operations on C and C++ files before they are passed to the compiler. You can use the preprocessor to conditionally compile code, insert files, specify compile-time error messages, and apply machine-specific rules to sections of code.
 
-In Visual Studio 2019 the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler option enables a new implementation of the preprocessor. The new implementation is still in progress, and is therefore considered experimental. It is intended to eventually be conformant with C99, C11, and C++20. For more information, see [MSVC experimental preprocessor overview](preprocessor-experimental-overview.md).
+In Visual Studio 2019 the [/Zc:preprocessor](../build/reference/zc-preprocessor.md) compiler option provides a fully conformant C11 and C17 preprocessor. This is the default when you use the compiler flag `/std:c11` or `/std:c17`.
 
 ## In this section
 
 [Preprocessor](preprocessor.md)\
-Provides an overview of the traditional and new experimental preprocessors.
+Provides an overview of the traditional and new conforming preprocessors.
 
 [Preprocessor directives](../preprocessor/preprocessor-directives.md)\
 Describes directives, typically used to make source programs easy to change and easy to compile in different execution environments.
@@ -22,7 +23,7 @@ Describes directives, typically used to make source programs easy to change and 
 Discusses the four preprocessor-specific operators used in the context of the `#define` directive.
 
 [Predefined macros](../preprocessor/predefined-macros.md)\
-Discusses predefined macros as specified by ANSI and Microsoft C++.
+Discusses predefined macros as specified by the C and C++ standards and by Microsoft C++.
 
 [Pragmas](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
 Discusses pragmas, which offer a way for each compiler to offer machine- and operating system-specific features while retaining overall compatibility with the C and C++ languages.

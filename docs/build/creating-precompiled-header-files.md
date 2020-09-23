@@ -81,22 +81,54 @@ Pragmas processed during the creation of a PCH file usually affect the file with
 
 These pragmas affect only the code within the PCH file; they do not affect code that subsequently uses the PCH file:
 
-||||
-|-|-|-|
-|`comment`|`page`|`subtitle`|
-|`linesize`|`pagesize`|`title`|
-|`message`|`skip`||
+:::row:::
+   :::column span="":::
+      `comment`\
+      `linesize`
+   :::column-end:::
+   :::column span="":::
+      `message`\
+      `page`
+   :::column-end:::
+   :::column span="":::
+      `pagesize`\
+      `skip`
+   :::column-end:::
+   :::column span="":::
+      `subtitle`\
+      `title`
+   :::column-end:::
+:::row-end:::
 
 These pragmas are retained as part of a precompiled header, and affect the remainder of a compilation that uses the precompiled header:
 
-||||
-|-|-|-|
-|`alloc_text`|`include_alias`|`pack`|
-|`auto_inline`|`init_seg`|`pointers_to_members`|
-|`check_stack`|`inline_depth`|`setlocale`|
-|`code_seg`|`inline_recursion`|`vtordisp`|
-|`data_seg`|`intrinsic`|`warning`|
-|`function`|`optimize`||
+:::row:::
+   :::column span="":::
+      `alloc_text`\
+      `auto_inline`\
+      `check_stack`\
+      `code_seg`\
+      `data_seg`
+   :::column-end:::
+   :::column span="":::
+      `function`\
+      `include_alias`\
+      `init_seg`\
+      `inline_depth`
+   :::column-end:::
+   :::column span="":::
+      `inline_recursion`\
+      `intrinsic`\
+      `optimize`\
+      `pack`
+   :::column-end:::
+   :::column span="":::
+      `pointers_to_members`\
+      `setlocale`\
+      `vtordisp`\
+      `warning`
+   :::column-end:::
+:::row-end:::
 
 ## Consistency Rules for /Yc and /Yu
 
