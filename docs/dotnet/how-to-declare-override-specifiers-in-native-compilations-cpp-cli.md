@@ -62,7 +62,7 @@ public:
 };
 ```
 
-## Example showing that abstract is valid
+## Example showing abstract is valid
 
 ### Description
 

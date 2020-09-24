@@ -12,7 +12,7 @@ An **interior_ptr** can be used with a value type.
 > [!IMPORTANT]
 > This language feature is supported by the `/clr` compiler option, but not by the `/ZW` compiler option.
 
-## Example using interior_ptr with a value type
+## Example using interior_ptr with value type
 
 ### Description
 

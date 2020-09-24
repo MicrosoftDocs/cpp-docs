@@ -95,7 +95,7 @@ namespace msclr {
 }
 ```
 
-## Example extending the marshaling library
+## Example extending marshaling library
 
 The following example extends the marshaling library with a conversion that does not require a context. In this example, the code converts the employee information from a native data type to a managed data type.
 
@@ -157,7 +157,7 @@ Managed address: 123 Main Street
 Managed zip code: 98111
 ```
 
-## Example converting the employee information
+## Example converting employee information
 
 The following example converts the employee information from a managed data type to a native data type. This conversion requires a marshaling context.
 

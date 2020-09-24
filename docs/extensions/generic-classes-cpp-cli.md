@@ -272,7 +272,7 @@ The signature of a non-generic method can include one or more type parameters of
 
 The body of such methods can also use these type parameters.
 
-## Example declaring a non-generic method
+## Example declaring non-generic method
 
 The following example declares a non-generic method, `ProtectData`, inside a generic class, `MyClass<ItemType>`. The method uses the class type parameter `ItemType` in its signature in an open constructed type.
 
@@ -443,7 +443,7 @@ Since there is no way to refer to the outer type parameter, the compiler will pr
 
 When constructed nested generic types are named, the type parameter for the outer type is not included in the type parameter list for the inner type, even though the inner type is implicitly parameterized by the outer type's type parameter. In the above case, a name of a constructed type would be `Outer<int>::Inner<string>`.
 
-## Example building and reading a linked list
+## Example building and reading linked list
 
 The following example demonstrates building and reading a linked list using nested types in generic classes.
 
@@ -546,7 +546,7 @@ Reading nodes:
 
 - Properties, events, indexers and operators cannot themselves be parameterized.
 
-## Example declaring an instance property
+## Example declaring instance property
 
 This example shows declarations of an instance property within a generic class.
 
@@ -586,7 +586,7 @@ int main() {
 John, 234
 ```
 
-## Example of a generic class with an event
+## Example of generic class with event
 
 The next example shows a generic class with an event.
 
@@ -653,7 +653,7 @@ int main() {
 
 The rules for declaring and using generic structs are the same as those for generic classes, except for the differences noted in the Visual C++ language reference.
 
-## Example declaring a generic struct
+## Example declaring generic struct
 
 The following example declares a generic struct, `MyGenStruct`, with one field, `myField`, and assigns values of different types (**`int`**, **`double`**, `String^`) to this field.
 
