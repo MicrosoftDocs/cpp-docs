@@ -12,7 +12,7 @@ When using <xref:System.Diagnostics.Debug> in a Visual C++ application, the beha
 
 The behavior for <xref:System.Diagnostics.Trace> is identical to the behavior for the Debug class, but is dependent on the symbol TRACE being defined. This means that you must `#ifdef` any Trace-related code to prevent debug behavior in a release build.
 
-## Example
+## Example that always executes the output statements
 
 ### Description
 
@@ -49,7 +49,7 @@ Hello World.
 test
 ```
 
-## Example
+## Example using the #ifdef and #endif directives
 
 ### Description
 

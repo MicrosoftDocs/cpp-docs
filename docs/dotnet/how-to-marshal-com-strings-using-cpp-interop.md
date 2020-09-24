@@ -15,7 +15,7 @@ This topic demonstrates how a BSTR (the basic string format favored in COM progr
 
 The following code examples use the [managed, unmanaged](../preprocessor/managed-unmanaged.md) #pragma directives to implement managed and unmanaged functions in the same file, but these functions interoperate in the same manner if defined in separate files. Files containing only unmanaged functions do not need to be compiled with [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md).
 
-## Example
+## Example passing a BSTR from a managed to an unmanaged function
 
 The following example demonstrates how a BSTR (a string format used in COM programming) can be passed from a managed to an unmanaged function. The calling managed function uses <xref:System.Runtime.InteropServices.Marshal.StringToBSTR%2A> to obtain the address of a BSTR representation of the contents of a .NET System.String. This pointer is pinned using [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) to ensure that its physical address is not changed during a garbage collection cycle while the unmanaged function executes. The garbage collector is prohibited from moving the memory until the [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) goes out of scope.
 
@@ -52,7 +52,7 @@ int main() {
 }
 ```
 
-## Example
+## Example passing a BSTR from a an unmanaged to a managed function
 
 The following example demonstrates how a BSTR can be passed from an unmanaged to an unmanaged function. The receiving managed function can either use the string in as a BSTR or use <xref:System.Runtime.InteropServices.Marshal.PtrToStringBSTR%2A> to convert it to a <xref:System.String> for use with other managed functions. Because the memory representing the BSTR is allocated on the unmanaged heap, no pinning is necessary, because there is no garbage collection on the unmanaged heap.
 

@@ -8,7 +8,7 @@ ms.assetid: 3fc0a194-3fdb-4eba-8b8a-b890981a985d
 
 This example shows how to use the [concurrency::task](../../parallel/concrt/reference/task-class.md), [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md), [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md), [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md), [concurrency::timer](../../parallel/concrt/reference/timer-class.md), and [concurrency::call](../../parallel/concrt/reference/call-class.md) classes to create a task that completes after a delay. You can use this method to build loops that occasionally poll for data, introduce timeouts, delay handling of user input for a predetermined time, and so on.
 
-## Example
+## Example using the the complete_after and cancel_after_timeout functions
 
 The following example shows the `complete_after` and `cancel_after_timeout` functions. The `complete_after` function creates a `task` object that completes after the specified delay. It uses a `timer` object and a `call` object to set a `task_completion_event` object after the specified delay. By using the `task_completion_event` class, you can define a task that completes after a thread or another task signals that a value is available. When the event is set, listener tasks complete and their continuations are scheduled to run.
 
@@ -19,7 +19,7 @@ The `cancel_after_timeout` function builds on the `complete_after` function to c
 
 [!code-cpp[concrt-task-delay#1](../../parallel/concrt/codesnippet/cpp/how-to-create-a-task-that-completes-after-a-delay_1.cpp)]
 
-## Example
+## Example that computes the count of prime numbers
 
 The following example computes the count of prime numbers in the range [0, 100000] multiple times. The operation fails if it does not complete in a given time limit. The `count_primes` function demonstrates how to use the `cancel_after_timeout` function. It counts the number of primes in the given range and fails if the task does not complete in the provided time. The `wmain` function calls the `count_primes` function multiple times. Each time, it halves the time limit. The program finishes after the operation does not complete in the current time limit.
 
@@ -27,7 +27,7 @@ The following example computes the count of prime numbers in the range [0, 10000
 
 When you use this technique to cancel tasks after a delay, any unstarted tasks will not start after the overall task is canceled. However, it is important for any long-running tasks to respond to cancellation in a timely manner. For more information about task cancellation, see [Cancellation in the PPL](cancellation-in-the-ppl.md).
 
-## Example
+## Complete code example
 
 Here is the complete code for this example:
 
