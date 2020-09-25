@@ -152,7 +152,7 @@ See [CAxWindow2T::CreateControlLic](../../atl/reference/caxwindow2t-class.md#cre
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CreateControl`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample that uses `CreateControl`.
 
 ## <a name="createcontrolex"></a> CAxWindow::CreateControlEx
 
@@ -224,7 +224,7 @@ See [CAxWindow2T::CreateControlLicEx](../../atl/reference/caxwindow2t-class.md#c
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CreateControlEx`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample that uses `CreateControlEx`.
 
 ## <a name="getwndclassname"></a> CAxWindow::GetWndClassName
 

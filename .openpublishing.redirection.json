@@ -8377,12 +8377,12 @@
     },
     {
       "source_path": "docs/windows/editing-properties-for-an-activex-control.md",
-      "redirect_url": "/cpp/windows/viewing-and-adding-activex-controls-to-a-dialog-box",
+      "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/windows/insert-activex-control-dialog-box.md",
-      "redirect_url": "/cpp/windows/viewing-and-adding-activex-controls-to-a-dialog-box",
+      "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
       "redirect_document_id": false
     },
     {

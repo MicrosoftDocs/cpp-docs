@@ -1872,7 +1872,7 @@ Because IntelliSense processes only the information that you require at the mome
 
 **MFC Class Wizard.** Visual C++ 2010 brings back the well-regarded MFC Class Wizard tool. The MFC Class Wizard is a convenient way to add classes, messages, and variables to a project without having to manually modify sets of source files.
 
-**ATL Control Wizard.** The ATL Control Wizard no longer automatically populates the `ProgID` field. If an ATL control does not have a `ProgID`, other tools may not work with it. One example of a tool that requires controls to have a `ProgID` is the **Insert Active Control** dialog box. For more information about the dialog box, see **Insert ActiveX Control Dialog Box**.
+**ATL Control Wizard.** The ATL Control Wizard no longer automatically populates the `ProgID` field. If an ATL control does not have a `ProgID`, other tools may not work with it. One example of a tool that requires controls to have a `ProgID` is the **Insert Active Control** dialog box. For more information about the dialog box, see [Insert ActiveX controls](../windows/adding-editing-or-deleting-controls.md#insert-activex-controls).
 
 ### Microsoft Macro Assembler Reference
 

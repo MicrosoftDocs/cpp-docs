@@ -15,11 +15,11 @@ Header files for the C++ standard library and extensions, by category.
 
 | Category | Headers |
 | - | - |
-| [Algorithms](../cpp/algorithms-modern-cpp.md) | [\<algorithm>](algorithm.md), [\<cstdlib>](cstdlib.md), [\<numeric>](numeric.md) |
+| [Algorithms](./algorithms.md) | [\<algorithm>](algorithm.md), [\<cstdlib>](cstdlib.md), [\<numeric>](numeric.md) |
 | Atomic operations |  [\<atomic>](atomic.md)<sup>11</sup> |
 | C library wrappers | [\<cassert>](cassert.md), [\<ccomplex>](ccomplex.md)<sup>11 a b</sup>, [\<cctype>](cctype.md), [\<cerrno>](cerrno.md), [\<cfenv>](cfenv.md)<sup>11</sup>, [\<cfloat>](cfloat.md), [\<cinttypes>](cinttypes.md)<sup>11</sup>, [\<ciso646>](ciso646.md)<sup>b</sup>, [\<climits>](climits.md), [\<clocale>](clocale.md), [\<cmath>](cmath.md), [\<csetjmp>](csetjmp.md), [\<csignal>](csignal.md), [\<cstdalign>](cstdalign.md)<sup>11 a b</sup>, [\<cstdarg>](cstdarg.md), [\<cstdbool>](cstdbool.md)<sup>11 a b</sup>, [\<cstddef>](cstddef.md), [\<cstdint>](cstdint.md)<sup>11</sup>, [\<cstdio>](cstdio.md), [\<cstdlib>](cstdlib.md), [\<cstring>](cstring.md), [\<ctgmath>](ctgmath.md)<sup>11 a b</sup>, [\<ctime>](ctime.md), [\<cuchar>](cuchar.md)<sup>11</sup>, [\<cwchar>](cwchar.md), [\<cwctype>](cwctype.md) |
 | Concepts | \<concepts><sup>20</sup> |
-| [Containers](../cpp/containers-modern-cpp.md) | |
+| [Containers](./stl-containers.md) | |
 | Sequence containers | [\<array>](array.md)<sup>11</sup>, [\<deque>](deque.md), [\<forward_list>](forward-list.md)<sup>11</sup>, [\<list>](list.md), [\<vector>](vector.md) |
 | Ordered associative containers| [\<map>](map.md), [\<set>](set.md) |
 | Unordered associative containers | [\<unordered_map>](unordered-map.md)<sup>11</sup>, [\<unordered_set>](unordered-set.md)<sup>11</sup> |
@@ -53,9 +53,9 @@ Header files for the C++ standard library and extensions, by category.
 
 |Category|Headers|
 |-|-|
-|[Algorithms](../cpp/algorithms-modern-cpp.md)|[\<algorithm>](algorithm.md)|
+|[Algorithms](./algorithms.md)|[\<algorithm>](algorithm.md)|
 |C library wrappers|[\<cassert>](cassert.md), [\<cctype>](cctype.md), [\<cerrno>](cerrno.md), [\<cfenv>](cfenv.md), [\<cfloat>](cfloat.md), [\<cinttypes>](cinttypes.md), [\<ciso646>](ciso646.md), [\<climits>](climits.md), [\<clocale>](clocale.md), [\<cmath>](cmath.md), [\<csetjmp>](csetjmp.md), [\<csignal>](csignal.md), [\<cstdarg>](cstdarg.md), [\<cstdbool>](cstdbool.md), [\<cstddef>](cstddef.md), [\<cstdint>](cstdint.md), [\<cstdio>](cstdio.md), [\<cstdlib>](cstdlib.md), [\<cstring>](cstring.md), [\<ctgmath>](ctgmath.md), [\<ctime>](ctime.md), [\<cwchar>](cwchar.md), [\<cwctype>](cwctype.md)|
-|[Containers](../cpp/containers-modern-cpp.md)||
+|[Containers](./stl-containers.md)||
 |Sequence containers|[\<array>](array.md), [\<deque>](deque.md), [\<forward_list>](forward-list.md), [\<list>](list.md), [\<vector>](vector.md)|
 |Ordered associative containers| [\<map>](map.md), [\<set>](set.md)|
 |Unordered associative containers|[\<unordered_map>](unordered-map.md), [\<unordered_set>](unordered-set.md)|
