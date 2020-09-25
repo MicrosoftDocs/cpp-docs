@@ -104,7 +104,7 @@ if (( _access( "datafile",2 )) == -1 )
 }
 ```
 
-If *strErrMsg* is **NULL**, **_strerror_s** returns a string in *buffer* containing the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* is not equal to **NULL**, then **_strerror_s** returns a string in *buffer* containing (in order) your string message, a colon, a space, the system error message for the last library call producing an error, and a newline character. Your string message can be, at most, 94 characters long.
+If *strErrMsg* is **NULL**, **_strerror_s** returns a string in *buffer* that contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* isn't equal to **NULL**, then **_strerror_s** returns a string in *buffer* that contains (in order) your string message, a colon, a space, the system error message for the last library call that produced an error, and a newline character. Your string message can be, at most, 94 characters long.
 
 These functions truncate the error message if its length exceeds the size of the buffer - 1. The resulting string in *buffer* will always be null-terminated.
 
@@ -114,7 +114,7 @@ The actual error number for **_strerror_s** is stored in the variable [errno](..
 
 These functions validate their parameters. If buffer is **NULL** or if the size parameter is 0, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the functions return **EINVAL** and set **errno** to **EINVAL**.
 
-**_strerror_s**, **_wcserror_s**, and **__wcserror_s** are not part of the ANSI definition but are instead Microsoft extensions to it. Do not use them where portability is desired; for ANSI compatibility, use **strerror_s** instead.
+**_strerror_s**, **_wcserror_s**, and **__wcserror_s** aren't part of the ANSI definition but are instead Microsoft extensions to it. Don't use them where portability is desired; for ANSI compatibility, use **strerror_s** instead.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
