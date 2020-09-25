@@ -37,7 +37,7 @@ The Microsoft run-time library defines the following standard types and typedefs
 |`_CRT_REPORT_HOOK`,<br /><br /> `_CRT_REPORT_HOOKW`,<br /><br /> `_CRT_REPORT_HOOKW_M`|A type define for a call-back function that will get called in [_CrtDbgReport](../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md).<br /><br /> The parameters for this function are: report type, output message and the return value from the call-back function.|CRTDBG.H|
 |`dev_t`, `_dev_t` short or unsigned integer|Represents device handles.|SYS\TYPES.H|
 |`_diskfree_t` structure|Contains information about a disk drive. Used by [_getdiskfree](../c-runtime-library/reference/getdiskfree.md)**.**|DOS.H and DIRECT.H|
-|`div_t`, `ldiv_t` and `lldiv_t` structures|Store values returned by [div](../c-runtime-library/reference/div.md), [ldiv](../c-runtime-library/reference/ldiv-lldiv.md), and [lldiv](../c-runtime-library/reference/ldiv-lldiv.md), respectively.|STDLIB.H|
+|`div_t`, `ldiv_t` and `lldiv_t` structures|Store values returned by [div](reference/div.md), [ldiv](../c-runtime-library/reference/ldiv-lldiv.md), and [lldiv](../c-runtime-library/reference/ldiv-lldiv.md), respectively.|STDLIB.H|
 |`errno_t` integer|Used for a function return type or parameter that deals with the error codes of `errno`.|STDDEF.H,<br /><br /> CRTDEFS.H|
 |`_exception` structure|Stores error information for [_matherr](../c-runtime-library/reference/matherr.md).|MATH.H|
 |`_EXCEPTION_POINTERS`|Contains an exception record. See [EXCEPTION_POINTERS](/windows/win32/api/winnt/ns-winnt-exception_pointers) for more information.|FPIEEE.H|
