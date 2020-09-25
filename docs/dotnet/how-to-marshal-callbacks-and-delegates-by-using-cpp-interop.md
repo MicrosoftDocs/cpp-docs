@@ -11,7 +11,7 @@ This topic demonstrates the marshalling of callbacks and delegates (the managed 
 
 The following code examples use the [managed, unmanaged](../preprocessor/managed-unmanaged.md) #pragma directives to implement managed and unmanaged functions in the same file, but the functions could also be defined in separate files. Files containing only unmanaged functions do not need to be compiled with the [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md).
 
-## Example configuring unmanaged API to trigger managed delegate
+## Example: Configure unmanaged API to trigger managed delegate
 
 The following example demonstrates how to configure an unmanaged API to trigger a managed delegate. A managed delegate is created and one of the interop methods, <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate%2A>, is used to retrieve the underlying entry point for the delegate. This address is then passed to the unmanaged function, which calls it with no knowledge of the fact that it is implemented as a managed function.
 
@@ -65,7 +65,7 @@ int main() {
 }
 ```
 
-## Example with function pointer stored by unmanaged API
+## Example: Function pointer stored by unmanaged API
 
 The following example is similar to the previous example, but in this case the provided function pointer is stored by the unmanaged API, so it can be invoked at any time, requiring that garbage collection be suppressed for an arbitrary length of time. As a result, the following example uses a global instance of <xref:System.Runtime.InteropServices.GCHandle> to prevent the delegate from being relocated, independent of function scope. As discussed in the first example, using pin_ptr is unnecessary for these examples, but in this case wouldn't work anyway, as the scope of a pin_ptr is limited to a single function.
 

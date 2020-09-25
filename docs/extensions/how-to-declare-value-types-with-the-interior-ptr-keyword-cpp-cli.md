@@ -12,7 +12,7 @@ An **interior_ptr** can be used with a value type.
 > [!IMPORTANT]
 > This language feature is supported by the `/clr` compiler option, but not by the `/ZW` compiler option.
 
-## Example using interior_ptr with value type
+## Example: interior_ptr with value type
 
 ### Description
 
@@ -57,7 +57,7 @@ int main() {
 3
 ```
 
-## Example using this pointer
+## Example: this pointer
 
 ### Description
 
@@ -79,7 +79,7 @@ value struct V {
 };
 ```
 
-## Example using address-of operator
+## Example: address-of operator
 
 ### Description
 

@@ -147,7 +147,7 @@ This section demonstrates the use of instance and static fields in generic class
 
 Instance variables of a generic class can have types and variable initializers that include any type parameters from the enclosing class.
 
-## Example of different generic classes
+## Example: Different generic classes
 
 In the following example, three different instances of the generic class, MyClass\<ItemType>, are created by using the appropriate type arguments (**`int`**, **`double`**, and **string**).
 
@@ -195,7 +195,7 @@ On the creation of a new generic type, new instances of any static variables are
 
 Static variables can use any type parameters from the enclosing class.
 
-## Example using static variables
+## Example: Use static variables
 
 The following example demonstrates using static fields and a static constructor within a generic class.
 
@@ -272,7 +272,7 @@ The signature of a non-generic method can include one or more type parameters of
 
 The body of such methods can also use these type parameters.
 
-## Example declaring non-generic method
+## Example: Declare non-generic method
 
 The following example declares a non-generic method, `ProtectData`, inside a generic class, `MyClass<ItemType>`. The method uses the class type parameter `ItemType` in its signature in an open constructed type.
 
@@ -333,7 +333,7 @@ Amount: $123.00**
 
 You can declare generic methods in both generic and non-generic classes. For example:
 
-## Example declaring generic and non-generic methods
+## Example: Declare generic and non-generic methods
 
 ```cpp
 // generics_method2.cpp
@@ -359,7 +359,7 @@ The non-generic method is still generic in the sense that it is parameterized by
 
 All types of methods in generic classes can be generic, including static, instance, and virtual methods.
 
-## Example declaring and using generic methods
+## Example: Declare and using generic methods
 
 The following example demonstrates declaring and using generic methods within generic classes:
 
@@ -443,7 +443,7 @@ Since there is no way to refer to the outer type parameter, the compiler will pr
 
 When constructed nested generic types are named, the type parameter for the outer type is not included in the type parameter list for the inner type, even though the inner type is implicitly parameterized by the outer type's type parameter. In the above case, a name of a constructed type would be `Outer<int>::Inner<string>`.
 
-## Example building and reading linked list
+## Example: Build and read linked list
 
 The following example demonstrates building and reading a linked list using nested types in generic classes.
 
@@ -546,7 +546,7 @@ Reading nodes:
 
 - Properties, events, indexers and operators cannot themselves be parameterized.
 
-## Example declaring instance property
+## Example: Declare instance property
 
 This example shows declarations of an instance property within a generic class.
 
@@ -586,7 +586,7 @@ int main() {
 John, 234
 ```
 
-## Example of generic class with event
+## Example: Generic class with event
 
 The next example shows a generic class with an event.
 
@@ -653,7 +653,7 @@ int main() {
 
 The rules for declaring and using generic structs are the same as those for generic classes, except for the differences noted in the Visual C++ language reference.
 
-## Example declaring generic struct
+## Example: Declare generic struct
 
 The following example declares a generic struct, `MyGenStruct`, with one field, `myField`, and assigns values of different types (**`int`**, **`double`**, `String^`) to this field.
 

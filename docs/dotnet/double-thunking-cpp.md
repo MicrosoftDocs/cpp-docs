@@ -18,7 +18,7 @@ Similarly, if you export ([dllexport, dllimport](../cpp/dllexport-dllimport.md))
 
 The compiler has been updated to reduce unnecessary double thunking. For example, any function with a managed type in the signature (including return type) will implicitly be marked as `__clrcall`.
 
-## Example of double thunking
+## Example: Double thunking
 
 ### Description
 
@@ -76,7 +76,7 @@ after calling struct S
 __thiscall T::~T(void)
 ```
 
-## Example of the effect of double thunking
+## Example: Effect of double thunking
 
 ### Description
 
