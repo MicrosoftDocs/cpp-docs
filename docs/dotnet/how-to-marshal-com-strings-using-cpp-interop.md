@@ -52,9 +52,9 @@ int main() {
 }
 ```
 
-## Example: Pass BSTR from unmanaged to unmanaged function
+## Example: Pass BSTR from unmanaged to managed function
 
-The following example demonstrates how a BSTR can be passed from an unmanaged to an unmanaged function. The receiving managed function can either use the string in as a BSTR or use <xref:System.Runtime.InteropServices.Marshal.PtrToStringBSTR%2A> to convert it to a <xref:System.String> for use with other managed functions. Because the memory representing the BSTR is allocated on the unmanaged heap, no pinning is necessary, because there is no garbage collection on the unmanaged heap.
+The following example demonstrates how a BSTR can be passed from an unmanaged to a managed function. The receiving managed function can either use the string in as a BSTR or use <xref:System.Runtime.InteropServices.Marshal.PtrToStringBSTR%2A> to convert it to a <xref:System.String> for use with other managed functions. Because the memory representing the BSTR is allocated on the unmanaged heap, no pinning is necessary, because there is no garbage collection on the unmanaged heap.
 
 ```cpp
 // MarshalBSTR2.cpp
