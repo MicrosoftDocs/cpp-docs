@@ -45,7 +45,7 @@ Make sure you have a Linux configuration (for example, **Linux-Debug**) selected
 
 ![Screenshot of the left pane with Linux Debug listed as one of the Configuration options.](media/linux-debug-configuration.png)
 
-The ASan options are under **General**. Enter the ASan runtime flags in the format "flag=value", separated by spaces. The UI incorrectly suggests using semi-colons. Use spaces or colons, instead.
+The ASan options are under **General**. Enter the ASan runtime flags in the format "flag=value", separated by spaces. The UI incorrectly suggests using semi-colons. Use spaces or colons to separate flags.
 
 ![Screenshot of the Enable Address Sanitizer option showing some Address Sanitizer run time flags.](media/cmake-settings-asan-options.png)
 
