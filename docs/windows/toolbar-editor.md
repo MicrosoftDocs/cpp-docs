@@ -41,7 +41,7 @@ A toolbar button has the following properties:
 |**ID**|Defines the ID for the button. The drop-down list provides common **ID** names.|
 |**Width**|Sets the width of the button. 16 pixels is recommended.|
 |**Height**|Sets the height of the button. The height of one button changes the height of all buttons on the toolbar. 15 pixels is recommended.|
-|**Prompt**|Defines the message displayed in the status bar. Adding *\n* and a name adds a **ToolTip** to that toolbar button. For more information, see [Creating a ToolTip](../windows/creating-a-tool-tip-for-a-toolbar-button.md).|
+|**Prompt**|Defines the message displayed in the status bar. Adding *\n* and a name adds a **ToolTip** to that toolbar button. For more information, see [To create a tool tip for a toolbar button](#to-create-a-tool-tip-for-a-toolbar-button).|
 
 **Width** and **Height** apply to all buttons. A bitmap that is used to create a toolbar has a maximum width of 2048, so if you set the button width to *512*, you can only have four buttons and if you set the width to *513*, you can only have three buttons.
 

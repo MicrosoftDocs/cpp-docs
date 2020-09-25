@@ -149,7 +149,7 @@ The procedures below refer to the use of standard property pages, however, both 
 1. Go to the [Properties window](/visualstudio/ide/reference/properties-window) and type in the values you want all of the selected accelerators to share.
 
 > [!NOTE]
-> Each modifier value appears as a Boolean property in the **Properties** window. If you change a [Modifier](../windows/accelerator-modifier-property.md) value in the **Properties** window, the accelerator table treats the new modifier as an addition to any modifiers that were previously there. Because of this, if you set any modifier values, you'll need to set all of them to ensure that every accelerator shares the same **Modifier** settings.
+> Each modifier value appears as a Boolean property in the **Properties** window. If you change a modifier value in the **Properties** window, the accelerator table treats the new modifier as an addition to any modifiers that were previously there. Because of this, if you set any modifier values, you'll need to set all of them to ensure that every accelerator shares the same **Modifier** settings.
 
 ## Requirements
 
