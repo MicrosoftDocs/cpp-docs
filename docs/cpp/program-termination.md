@@ -10,8 +10,8 @@ no-loc: [exit, abort, return, main, atexit, void]
 
 In C++, you can exit a program in these ways:
 
-- Call the [exit](exit-function.md) function.
-- Call the [abort](abort-function.md) function.
+- Call the [exit](../c-runtime-library/reference/exit-exit-exit.md) function.
+- Call the [abort](../c-runtime-library/reference/abort.md) function.
 - Execute a [return](return-statement-cpp.md) statement from `main`.
 
 ## exit function
