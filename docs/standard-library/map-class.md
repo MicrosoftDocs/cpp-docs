@@ -2700,6 +2700,6 @@ int main( )
 
 ## See also
 
-[Containers](../cpp/containers-modern-cpp.md)\
+[Containers](./stl-containers.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

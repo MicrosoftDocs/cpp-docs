@@ -157,7 +157,7 @@ To use RichEdit controls, you must call `LoadLibrary`. For more information, see
 >
 > You may use the current [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) class with the older RichEdit 1.0 control, but `CRichEditCtrl` is only designed to support the RichEdit 2.0 control. Because RichEdit 1.0 and RichEdit 2.0 are similar, most methods will work. However, there are some differences between the 1.0 and 2.0 controls, so some methods might work incorrectly or not work at all.
 
-### ActiveX Controls
+## Insert ActiveX controls
 
 Visual Studio enables you to insert ActiveX controls into your dialog box. For more information, see [MFC ActiveX Controls](../mfc/mfc-activex-controls.md) and [ActiveX Control Containers](../mfc/activex-control-containers.md).
 
@@ -171,7 +171,7 @@ The **Insert ActiveX Control** dialog box enables you to insert ActiveX controls
 > [!CAUTION]
 > It may not be legal to distribute all of the ActiveX controls on your system. Refer to the license agreement for the software that installed the controls or contact the software company.
 
-#### To add an ActiveX control
+### To add an ActiveX control
 
 1. Open a dialog box in the **Dialog Editor**.
 
@@ -186,7 +186,7 @@ The **Insert ActiveX Control** dialog box enables you to insert ActiveX controls
 > [!TIP]
 > You can use the shortcut menu in the **Dialog Editor** to quickly add registered ActiveX controls to a dialog box, or try adding ActiveX controls to the **Toolbox** window for easy access.
 
-#### To edit properties for an ActiveX control
+### To edit properties for an ActiveX control
 
 ActiveX controls supplied by independent vendors may come equipped with their own properties and characteristics. These properties are displayed in the **Properties** window. Any property pages created by the writers of the ActiveX control are displayed in the **Properties Pages** dialog box. (To view the **Property Page** for a specific ActiveX control, select the **Property Page** button in the [Properties window](/visualstudio/ide/reference/properties-window)).
 
