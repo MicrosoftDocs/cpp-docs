@@ -359,7 +359,7 @@ The non-generic method is still generic in the sense that it is parameterized by
 
 All types of methods in generic classes can be generic, including static, instance, and virtual methods.
 
-## Example: Declare and using generic methods
+## Example: Declare and use generic methods
 
 The following example demonstrates declaring and using generic methods within generic classes:
 

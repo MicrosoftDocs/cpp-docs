@@ -9,7 +9,7 @@ ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
 
 This topic demonstrates how to convert various Visual C++ string types into other strings. The strings types that are covered include `char *`, `wchar_t*`, [_bstr_t](../cpp/bstr-t-class.md), [CComBSTR](../atl/reference/ccombstr-class.md), [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), and <xref:System.String?displayProperty=fullName>. In all cases, a copy of the string is made when converted to the new type. Any changes made to the new string will not affect the original string, and vice versa.
 
-## Example converting from char *
+## Example: Convert from char *
 
 ### Description
 
@@ -108,7 +108,7 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Example converting from wchar_t *
+## Example: Convert from wchar_t *
 
 ### Description
 
@@ -230,7 +230,7 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Example converting from _bstr_t
+## Example: Convert from _bstr_t
 
 ### Description
 
@@ -328,7 +328,7 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Example converting from CComBSTR
+## Example: Convert from CComBSTR
 
 ### Description
 
@@ -436,7 +436,7 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Example converting from CString
+## Example: Convert from CString
 
 ### Description
 
@@ -578,7 +578,7 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Example converting from basic_string
+## Example: Convert from basic_string
 
 ### Description
 
@@ -672,7 +672,7 @@ Hello, World! (CStringW)
 Hello, World! (System::String)
 ```
 
-## Example converting from System::String
+## Example: Convert from System::String
 
 ### Description
 
