@@ -111,14 +111,15 @@ After you select a target, CMake runs automatically on the Linux system to gener
 
 If you're targeting Windows Subsystem for Linux (WSL), you don't need to add a remote connection.
 
-To target WSL, select **Manage Configurations** in the configuration dropdown in the main toolbar.\
+To target WSL, select **Manage Configurations** in the configuration dropdown in the main toolbar:
+
 ![CMake Manage Configurations](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
 
-The **CMakeSettings.json** window appears. Press **Add Configuration** (the green '+' button) and then choose **Linux-GCC-Debug** or **Linux-GCC-Release** if using GCC. Use the Clang variants if you are using the Clang/LLVM toolset. 
+The **CMakeSettings.json** window appears.
 
 ![Add configuration](media/cmake-linux-configurations.png "Add a configuration to CMake settings")
 
-Press **Select** and then **Ctrl+S** to save the configuration.
+Press **Add Configuration** (the green '+' button) and then choose **Linux-GCC-Debug** or **Linux-GCC-Release** if using GCC. Use the Clang variants if you are using the Clang/LLVM toolset.  Press **Select** and then **Ctrl+S** to save the configuration.
 
 **Visual Studio 2019 version 16.1** When you target WSL, Visual Studio doesn't need to copy source files and maintain two synchronous copies of your build tree because the compiler on Linux has direct access to your source files in the mounted Windows file system.
 ::: moniker-end
