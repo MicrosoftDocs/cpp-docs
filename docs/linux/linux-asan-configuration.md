@@ -1,7 +1,7 @@
 ---
 title: "Configure Linux projects to use Address Sanitizer"
 description: "Describes how to configure C++ Linux projects in Visual Studio to use Address Sanitizer."
-ms.date: "06/07/2019"
+ms.date: "09/25/2020"
 ---
 # Configure Linux projects to use Address Sanitizer
 
@@ -27,7 +27,7 @@ You can also view the full ASan output (including where the corrupted memory was
 ## Enable ASan for MSBuild-based Linux projects
 
 > [!NOTE]
-> Starting in Visual Studio 2019 version 16.4, AddressSanitizer for Linux projects is enabled via **Configuration Properties** > **C/C++** > **Enable Address Sanitizer**.
+> Starting in Visual Studio 2019 version 16.4, AddressSanitizer for Linux projects is enabled via **Project properties** > **Configuration Properties** > **C/C++** > **Enable Address Sanitizer**.
 
 To enable ASan for MSBuild-based Linux projects, right-click on the project in **Solution Explorer** and select **Properties**. Next, navigate to **Configuration Properties** > **C/C++** > **Sanitizers**. ASan is enabled via compiler and linker flags, and requires your project to be recompiled to work.
 
@@ -45,7 +45,7 @@ Make sure you have a Linux configuration (for example, **Linux-Debug**) selected
 
 ![Screenshot of the left pane with Linux Debug listed as one of the Configuration options.](media/linux-debug-configuration.png)
 
-The ASan options are under **General**. Enter the ASan runtime flags in the format "flag=value", separated by semicolons.
+The ASan options are under **General**. Enter the ASan runtime flags in the format "flag=value", separated by spaces. The UI incorrectly suggests using semi-colons. Use spaces or colons, instead.
 
 ![Screenshot of the Enable Address Sanitizer option showing some Address Sanitizer run time flags.](media/cmake-settings-asan-options.png)
 

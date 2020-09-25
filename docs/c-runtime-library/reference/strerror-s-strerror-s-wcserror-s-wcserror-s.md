@@ -1,6 +1,7 @@
 ---
 title: "strerror_s, _strerror_s, _wcserror_s, __wcserror_s"
-ms.date: "06/09/2020"
+description: "Functions with security enhancements to get a system error message or print a user-supplied error message."
+ms.date: "09/25/2020"
 api_name: ["__wcserror_s", "_strerror_s", "_wcserror_s", "strerror_s", "_o__strerror_s", "_o__wcserror_s", "_o_strerror_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -36,6 +37,9 @@ errno_t __wcserror_s(
    size_t sizeInWords,
    const wchar_t *strErrMsg
 );
+```
+
+```cpp
 template <size_t size>
 errno_t strerror_s(
    char (&buffer)[size],
@@ -60,26 +64,26 @@ errno_t __wcserror_s(
 
 ### Parameters
 
-*buffer*<br/>
+*buffer*\
 Buffer to hold error string.
 
-*sizeInBytes*<br/>
+*sizeInBytes*\
 The number of bytes in the buffer.
 
-*sizeInWords*<br/>
+*sizeInWords*\
 The number of words in the buffer.
 
-*errnum*<br/>
+*errnum*\
 Error number.
 
-*strErrMsg*<br/>
+*strErrMsg*\
 User-supplied message.
 
 ## Return Value
 
 Zero if successful, an error code on failure.
 
-### Error Condtions
+### Error conditions
 
 |*buffer*|*sizeInBytes/sizeInWords*|*strErrMsg*|Contents of *buffer*|
 |--------------|------------------------|-----------------|--------------------------|
@@ -87,6 +91,8 @@ Zero if successful, an error code on failure.
 |any|0|any|not modified|
 
 ## Remarks
+
+The **strerror_s** function is thread-safe.
 
 The **strerror_s** function maps *errnum* to an error-message string, returning the string in *buffer*. **_strerror_s** doesn't take the error number; it uses the current value of **errno** to determine the appropriate message. Neither **strerror_s** nor **_strerror_s** actually prints the message: For that, you need to call an output function such as [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
 
@@ -137,7 +143,7 @@ See the example for [perror](perror-wperror.md).
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[clearerr](clearerr.md)<br/>
-[ferror](ferror.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)\
+[clearerr](clearerr.md)\
+[ferror](ferror.md)\
+[perror, _wperror](perror-wperror.md)

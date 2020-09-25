@@ -96,7 +96,7 @@ When you do a build:
 
 ## Choose a Linux target
 
-When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, you'll change the project settings to **Linux-Debug** or **Linux-Release**.
+When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, you'll change the project settings, based on your Linux compiler, to something like **Linux-Debug** or **Linux-Release**.
 
 If you specify a remote Linux target, your source is copied to the remote system.
 
