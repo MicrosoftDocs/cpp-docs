@@ -211,7 +211,6 @@ int main()
 
 ## See also
 
-[`auto` Keyword](../cpp/auto-keyword.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)<br/>
 [`/Zc:auto` (Deduce Variable Type)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
 [`sizeof` Operator](../cpp/sizeof-operator.md)<br/>
