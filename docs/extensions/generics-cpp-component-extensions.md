@@ -1,6 +1,7 @@
 ---
 title: "Generics  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+description: "Links to content about the C++/CLI and C++/CX generics features, types, and methods."
+ms.date: 09/25/2020
 ms.topic: "reference"
 f1_keywords: ["generic_cpp", "generic"]
 helpviewer_keywords: ["generics [C++]"]
@@ -8,14 +9,14 @@ ms.assetid: c7ccc316-a411-4c00-b2e2-f0c0eadc6cfd
 ---
 # Generics  (C++/CLI and C++/CX)
 
-Generics are parameterized types and methods. In this section, find out which generic features are supported by both the Windows Runtime and the common language runtime, and which are supported by only the common language runtime. Also, find out how to author your own generic methods and types in C++/CLI, and how to use generic types authored in a .NET Framework language in C++/CLI. Finally, this section provides a comparison of generics and C++ templates.
+Generics are parameterized types and methods. In this section, find out which generic features both the Windows Runtime and the common language runtime support, and which ones only the common language runtime supports. You'll also find out how to author your own generic methods and types in C++/CLI, and how to use generic types authored in a .NET Framework language in C++/CLI. Finally, this section provides a comparison of generics and C++ templates.
 
 ## In This Section
 
 ### Supported by the Windows Runtime and the Common Language Runtime
 
 [Overview of Generics in C++/CLI](overview-of-generics-in-visual-cpp.md)<br/>
-Information about generics are, the motivation for the language feature, definitions of terms used to describe generics, and information about the use of reference types and value types as type parameters for generics.
+Information about what generics are, the motivation for the language feature, and definitions of terms that are used to describe generics. Also, information about the use of reference types and value types as type parameters for generics.
 
 [Generic Interfaces (C++/CLI)](generic-interfaces-visual-cpp.md)<br/>
 Information about defining and using generic interfaces.
@@ -42,7 +43,6 @@ Information about defining and using generic classes.
 
 ## Related Sections
 
-[How to: Iterate Over a Generic Collection with for each](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)<br/>
 Using the [for each, in](../dotnet/for-each-in.md) keyword on a generic collection.
 
 ## See also
