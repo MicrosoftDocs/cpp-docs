@@ -9,7 +9,7 @@ ms.assetid: 0c3a364b-2747-43f3-bb8d-b7d3b7023f79
 ---
 # for each, in
 
-Iterates through an array or collection. This non-standard keyword is available in both C++/CLI and native C++ projects. However, its use is not recommended. Consider using a standard [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md) instead.
+Iterates through an array or collection. This non-standard keyword is available in both C++/CLI and native C++ projects. However, its use isn't recommended. Consider using a standard [Range-based for Statement (C++)](../cpp/range-based-for-statement-cpp.md) instead.
 
 ## All Runtimes
 
@@ -35,7 +35,7 @@ One or more statements to be executed.
 
 ### Remarks
 
-The `for each` statement is used to iterate through a collection. You can modify elements in a collection, but you cannot add or delete elements.
+The `for each` statement is used to iterate through a collection. You can modify elements in a collection, but you can't add or delete elements.
 
 The *statements* are executed for each element in the array or collection. After the iteration has been completed for all the elements in the collection, control is transferred to the statement that follows the `for each` block.
 
