@@ -6,7 +6,7 @@ ms.assetid: bfab7d9e-f323-4404-bcb8-712b15f831eb
 ---
 # Initialization of Mixed Assemblies
 
-Windows developers must always be wary of loader lock when running code during `DllMain`. However, there are some additional issues to consider when dealing with C++/clr mixed-mode assemblies.
+Windows developers must always be wary of loader lock when running code during `DllMain`. However, there are some additional issues to consider when dealing with C++/CLI mixed-mode assemblies.
 
 Code within [DllMain](/windows/win32/Dlls/dllmain) must not access the .NET Common Language Runtime (CLR). That means that `DllMain` should make no calls to managed functions, directly or indirectly; no managed code should be declared or implemented in `DllMain`; and no garbage collection or automatic library loading should take place within `DllMain`.
 
