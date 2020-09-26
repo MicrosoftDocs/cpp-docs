@@ -1,6 +1,7 @@
 ---
 title: "Generics  (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+description: "Links to content about the C++/CLI and C++/CX generics features, types, and methods."
+ms.date: 09/25/2020
 ms.topic: "reference"
 f1_keywords: ["generic_cpp", "generic"]
 helpviewer_keywords: ["generics [C++]"]
@@ -42,7 +43,6 @@ Information about defining and using generic classes.
 
 ## Related Sections
 
-[How to: Iterate Over a Generic Collection with for each](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)<br/>
 Using the [for each, in](../dotnet/for-each-in.md) keyword on a generic collection.
 
 ## See also

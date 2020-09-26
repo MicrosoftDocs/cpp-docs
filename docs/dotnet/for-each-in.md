@@ -1,6 +1,7 @@
 ---
 title: "for each, in"
-ms.date: "11/04/2016"
+description: "C++/CLI for each, in statement description and examples."
+ms.date: 09/25/2020
 ms.topic: "reference"
 f1_keywords: ["cliext::foreach", "for", "each", "in"]
 helpviewer_keywords: ["for each keyword [C++]"]
@@ -40,16 +41,6 @@ The *statements* are executed for each element in the array or collection. After
 
 `for each` and `in` are [context-sensitive keywords](../extensions/context-sensitive-keywords-cpp-component-extensions.md).
 
-For more information:
-
-- [Iterating Over C++ Standard Library Collection By Using for each](../dotnet/iterating-over-stl-collection-by-using-for-each.md)
-
-- [How to: Iterate Over Arrays with for each](../dotnet/how-to-iterate-over-arrays-with-for-each.md)
-
-- [How to: Iterate Over a Generic Collection with for each](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)
-
-- [How to: Iterate Over a User-Defined Collection with for each](../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md)
-
 ## Windows Runtime
 
 ### Requirements
@@ -86,8 +77,6 @@ int main() {
 }
 ```
 
-**Output**
-
 ```Output
 abcd
 
@@ -96,7 +85,7 @@ Testing
 
 ## Common Language Runtime
 
-**Remarks**
+### Remarks
 
 The CLR syntax is the same as the **All Runtimes** syntax, except as follows.
 
@@ -138,8 +127,6 @@ int main() {
 }
 ```
 
-**Output**
-
 ```Output
 abcd
 
@@ -148,4 +135,5 @@ Testing
 
 ## See also
 
-[Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md)
+[Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md)\
+[Range-based for statement (C++)](../cpp/range-based-for-statement-cpp.md)
