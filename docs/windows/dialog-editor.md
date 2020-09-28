@@ -108,4 +108,4 @@ Win32
 [Controls](../mfc/controls-mfc.md)<br/>
 [Control Classes](../mfc/control-classes.md)<br/>
 [Dialog Box Classes](../mfc/dialog-box-classes.md)<br/>
-[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)-->
+[Dialog Box Controls and Variable Types](../ide/adding-a-member-variable-visual-cpp.md#dialog-box-controls-and-variable-types)-->

@@ -7,7 +7,7 @@ ms.assetid: dea8e938-c5d8-45ab-86de-eb8fbf534ffb
 ---
 # IErrorRecordsImpl Class
 
-Implements the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) interface, adding records to and retrieving records from a data member ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) of type **CAtlArray<**`RecordClass`**>**.
+Implements the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) interface, adding records to and retrieving records from a data member ([m_rgErrors](#rgerrors)) of type **CAtlArray<**`RecordClass`**>**.
 
 ## Syntax
 

@@ -76,14 +76,17 @@ std::bit_cat<int>(f) = 7f800000
 Low-level code often needs to interpret an object of one type as another type. The reinterpreted object has the same bit representation as the original, but is a different type.
 
 Instead of using `reinterpret_cast`, or `memcpy()`, `bit_cast()` is a better way to make these conversions. It's better because:
+
 - `bit_cast()` is `constexpr`
 - `bit_cast()` requires the types to be trivially copyable and the same size. This prevents potential problems that you could encounter using `reinterpret_cast` and `memcpy` because they could be used to inadvertently, and incorrectly, convert non-trivially-copyable types. Also, `memcpy()` could be used to inadvertently copy between types that aren't the same size. For example, a double (8 bytes) into an unsigned int (4 bytes), or the other way around.
 
 This overload only participates in overload resolution if:
--  `sizeof(To) == sizeof(From)`
+
+- `sizeof(To) == sizeof(From)`
 - `To` and `From` are [is_trivially_copyable](is-trivially-copyable-class.md).
 
 This function template is `constexpr` if and only if `To`, `From`, and the types of their subobjects are:
+
 - not a union or pointer type
 - not a pointer to member type
 - not volatile-qualified
@@ -460,7 +463,7 @@ This template function only participates in overload resolution if `T` is an uns
 ## <a name="has_single_bit"></a>`has_single_bit`
 
 Check if a value has only one bit set.This is the same as testing whether a value is a power of two.
- 
+
 ```cpp
 template <class T>
 [[nodiscard]] constexpr bool has_single_bit(T value) noexcept;
@@ -514,7 +517,7 @@ This template function only participates in overload resolution if `T` is an uns
 ## <a name="popcount"></a>`popcount`
 
 Count the number of bits set to one in an unsigned integer value.
- 
+
 ```cpp
 template<class T>
 [[nodiscard]] constexpr int popcount(T value) noexcept;
@@ -573,7 +576,7 @@ This template function only participates in overload resolution if `T` is an uns
 ## <a name="rotl"></a>`rotl`
 
 Rotates the bits of  an unsigned integer value left the specified number of times. Bits that "fall out" of the leftmost bit are rotated into the rightmost bit.
- 
+
 ```cpp
 template<class T>
 [[nodiscard]] constexpr T rotl(T value, int s) noexcept;
@@ -635,7 +638,7 @@ This template function only participates in overload resolution if `T` is an uns
 ## <a name="rotr"></a>`rotr`
 
 Rotates the bits of `value` right the specified number of times. Bits that 'fall out' of the rightmost bit are rotated back into the leftmost bit.
- 
+
 ```cpp
 template<class T>
 [[nodiscard]] constexpr T rotr(T value, int s) noexcept;

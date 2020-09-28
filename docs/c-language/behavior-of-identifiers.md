@@ -13,4 +13,4 @@ ms.assetid: 2ce0890f-9f04-47d8-9c77-187627576b94
 
 ## See also
 
-[Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
+[Using extern to Specify Linkage](../cpp/extern-cpp.md)

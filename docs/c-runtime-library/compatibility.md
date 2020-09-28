@@ -8,9 +8,10 @@ ms.assetid: 346709cb-edda-4909-9a19-3d253eddb6b7
 # Compatibility
 
 The Universal C Runtime Library (UCRT) supports most of the C standard library required for C++ conformance. It implements the C99 (ISO/IEC 9899:1999) library, with certain exceptions:
-- strict type compatibility in \<complex.h>. 
+
+- strict type compatibility in \<complex.h>.
 - `aligned_alloc`, which will probably not be implemented because the Windows operating system doesn't support aligned allocations. Use the non-standard `_aligned_malloc`, instead.
--  `strerrorlen_s`
+- `strerrorlen_s`
 - atomic support in \<stdatomic.h>
 - threading support in \<threads.h>
 

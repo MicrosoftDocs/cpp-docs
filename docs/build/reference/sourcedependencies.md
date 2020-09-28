@@ -10,6 +10,7 @@ helpviewer_keywords: ["/sourceDependencies compiler option", "/sourceDependencie
 Instructs the compiler to generate a JSON file that details the source-level dependencies consumed during compilation.
 
 The JSON file contains a list of the source dependencies, which include:
+
 - Header files (both transitive and directly included headers).
 - The PCH used (if **`/Yu`** is specified).
 - Imported modules and imported header units (both transitive and directly imported modules/header units).

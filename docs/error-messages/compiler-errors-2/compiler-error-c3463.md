@@ -9,7 +9,7 @@ ms.assetid: 153efcc0-085c-4615-84ea-d22942618bdf
 
 'type': type not allowed in attribute 'implements'
 
-An invalid type was passed to the [implements](../../windows/implements-cpp.md) attribute. For example, you can pass an interface to `implements`, but you cannot pass a pointer to an interface.
+An invalid type was passed to the [implements](../../windows/attributes/implements-cpp.md) attribute. For example, you can pass an interface to `implements`, but you cannot pass a pointer to an interface.
 
 ## Example
 

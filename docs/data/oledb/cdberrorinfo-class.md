@@ -34,7 +34,7 @@ class CDBErrorInfo
 
 ## Remarks
 
-This interface returns one or more error records to the user. Call [CDBErrorInfo::GetErrorRecords](../../data/oledb/cdberrorinfo-geterrorrecords.md) first, to get a count of error records. Then call one of the access functions, such as [CDBErrorInfo::GetAllErrorInfo](../../data/oledb/cdberrorinfo-getallerrorinfo.md), to retrieve error information for each record.
+This interface returns one or more error records to the user. Call [CDBErrorInfo::GetErrorRecords](#geterrorrecords) first, to get a count of error records. Then call one of the access functions, such as [CDBErrorInfo::GetAllErrorInfo](#getallerrorinfo), to retrieve error information for each record.
 
 ## <a name="getallerrorinfo"></a> CDBErrorInfo::GetAllErrorInfo
 

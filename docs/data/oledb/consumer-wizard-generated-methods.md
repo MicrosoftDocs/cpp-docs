@@ -36,7 +36,7 @@ HRESULT OpenAll();
 void CloseAll();
 ```
 
-The following example shows how you can call `OpenAll` and `CloseAll` when you execute the same command repeatedly. Compare the code example in [CCommand::Close](../../data/oledb/ccommand-close.md), which shows a variation that calls `Close` and `ReleaseCommand` instead of `CloseAll`.
+The following example shows how you can call `OpenAll` and `CloseAll` when you execute the same command repeatedly. Compare the code example in [CCommand::Close](./ccommand-class.md#close), which shows a variation that calls `Close` and `ReleaseCommand` instead of `CloseAll`.
 
 ```cpp
 int main(int argc, char* argv[])
@@ -148,7 +148,7 @@ void CloseDataSource();
 
 ### Remarks
 
-The wizard defines the methods `OpenDataSource` and `CloseDataSource`; `OpenDataSource` calls [CDataSource::OpenFromInitializationString](../../data/oledb/cdatasource-openfrominitializationstring.md).
+The wizard defines the methods `OpenDataSource` and `CloseDataSource`; `OpenDataSource` calls [CDataSource::OpenFromInitializationString](./cdatasource-class.md#openfrominitializationstring).
 
 ::: moniker-end
 

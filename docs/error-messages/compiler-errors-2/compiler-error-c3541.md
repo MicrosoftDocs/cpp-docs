@@ -29,6 +29,6 @@ int main() {
 
 ## See also
 
-[auto Keyword](../../cpp/auto-keyword.md)<br/>
+[auto Keyword](../../cpp/auto-cpp.md)<br/>
 [/Zc:auto (Deduce Variable Type)](../../build/reference/zc-auto-deduce-variable-type.md)<br/>
 [typeid](../../extensions/typeid-cpp-component-extensions.md)

@@ -64,4 +64,4 @@ s1 = 'string two', s2 = 'string one'
 ## See also
 
 [auto_gcroot](../dotnet/auto-gcroot.md)<br/>
-[auto_gcroot::swap](../dotnet/auto-gcroot-swap.md)
+[auto_gcroot::swap](./auto-gcroot-class.md#swap)

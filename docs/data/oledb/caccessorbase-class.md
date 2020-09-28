@@ -43,7 +43,7 @@ void Close();
 
 ### Remarks
 
-You must call [ReleaseAccessors](../../data/oledb/caccessorbase-releaseaccessors.md) first.
+You must call [ReleaseAccessors](#release) first.
 
 ## <a name="geth"></a> CAccessorBase::GetHAccessor
 
@@ -118,7 +118,7 @@ A standard HRESULT.
 
 ### Remarks
 
-Called from [CAccessorRowset::Close](../../data/oledb/caccessorrowset-close.md).
+Called from [CAccessorRowset::Close](./caccessorrowset-class.md#close).
 
 ## See also
 

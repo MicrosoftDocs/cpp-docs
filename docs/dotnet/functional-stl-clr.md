@@ -353,7 +353,7 @@ The first argument to wrap.
 
 ### Remarks
 
-The template function returns [binder1st (STL/CLR)](../dotnet/binder1st-stl-clr.md)`<Fun>(functor, left)`. You use it as a convenient way to wrap a two-argument functor and its first argument in a one-argument functor that calls it with a second argument.
+The template function returns [binder1st (STL/CLR)](#binder1st)`<Fun>(functor, left)`. You use it as a convenient way to wrap a two-argument functor and its first argument in a one-argument functor that calls it with a second argument.
 
 ### Example
 
@@ -434,7 +434,7 @@ The second argument to wrap.
 
 ### Remarks
 
-The template function returns [binder2nd (STL/CLR)](../dotnet/binder2nd-stl-clr.md)`<Fun>(functor, right)`. You use it as a convenient way to wrap a two-argument functor and its second argument in a one-argument functor that calls it with a first argument.
+The template function returns [binder2nd (STL/CLR)](#binder2nd)`<Fun>(functor, right)`. You use it as a convenient way to wrap a two-argument functor and its second argument in a one-argument functor that calls it with a first argument.
 
 ### Example
 
@@ -2109,7 +2109,7 @@ The functor to wrap.
 
 ### Remarks
 
-The template function returns [unary_negate (STL/CLR)](../dotnet/unary-negate-stl-clr.md)`<Fun>(functor)`. You use it as a convenient way to wrap a one-argument functor in a functor that delivers its logical NOT.
+The template function returns [unary_negate (STL/CLR)](#unary_negate)`<Fun>(functor)`. You use it as a convenient way to wrap a one-argument functor in a functor that delivers its logical NOT.
 
 ### Example
 
@@ -2181,7 +2181,7 @@ The functor to wrap.
 
 ### Remarks
 
-The template function returns [binary_negate (STL/CLR)](../dotnet/binary-negate-stl-clr.md)`<Fun>(functor)`. You use it as a convenient way to wrap a two-argument functor in a functor that delivers its logical NOT.
+The template function returns [binary_negate (STL/CLR)](#negate)`<Fun>(functor)`. You use it as a convenient way to wrap a two-argument functor in a functor that delivers its logical NOT.
 
 ### Example
 

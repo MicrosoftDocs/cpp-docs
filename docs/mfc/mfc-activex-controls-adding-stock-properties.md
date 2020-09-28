@@ -37,7 +37,7 @@ Adding stock properties requires less code than adding custom properties because
 
 1. From the shortcut menu, click **Add** and then click **Add Property**.
 
-   This opens the [Add Property Wizard](../ide/names-add-property-wizard.md).
+   This opens the [Add Property Wizard](../ide/adding-a-property-visual-cpp.md#names-add-property-wizard).
 
 1. In the **Property Name** box, click **Caption**.
 

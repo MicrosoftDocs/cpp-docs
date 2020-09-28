@@ -12,7 +12,7 @@ This topic shows how to convert STL/CLR containers to their equivalent .NET coll
 
 1. Use one of the following methods:
 
-   - To convert part of a container, call the [make_collection](../dotnet/make-collection-stl-clr.md) function, and pass the begin iterator and end iterator of the STL/CLR container to be copied into the .NET collection. This template function takes an STL/CLR iterator as a template argument. The first example demonstrates this method.
+   - To convert part of a container, call the [make_collection](./adapter-stl-clr.md#make_collection) function, and pass the begin iterator and end iterator of the STL/CLR container to be copied into the .NET collection. This template function takes an STL/CLR iterator as a template argument. The first example demonstrates this method.
 
    - To convert an entire container, cast the container to an appropriate .NET collection interface or interface collection. The second example demonstrates this method.
 
@@ -105,4 +105,4 @@ Key: 74.00 Value: 74
 
 [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md)<br/>
 [How to: Convert from a .NET Collection to a STL/CLR Container](../dotnet/how-to-convert-from-a-dotnet-collection-to-a-stl-clr-container.md)<br/>
-[range_adapter (STL/CLR)](../dotnet/range-adapter-stl-clr.md)
+[range_adapter (STL/CLR)](./adapter-stl-clr.md#range_adapter)

@@ -74,7 +74,7 @@ The following steps vary depending on which version of Visual Studio you are usi
 
 1. Click in the newly created tab in Visual Studio and type a valid Visual C++ program, or copy and paste one of the sample programs.
 
-   For example, you can use the [How to: Write a Text File (C++/CLI)](how-to-write-a-text-file-cpp-cli.md) sample program (in the **File Handling and I/O** node of the Programming Guide).
+   For example, you can use the [How to: Write a Text File (C++/CLI)](./file-handling-and-i-o-cpp-cli.md#write_text) sample program (in the **File Handling and I/O** node of the Programming Guide).
 
    If you use the sample program, notice that you use the **`gcnew`** keyword instead of **`new`** when creating a .NET object, and that **`gcnew`** returns a handle (`^`) rather than a pointer (`*`):
 

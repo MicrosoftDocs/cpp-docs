@@ -68,7 +68,6 @@ The second constructor initializes the first element of the pair to *Val1* and t
 
 The third (template) constructor initializes the first element of the pair to `Right`. **first** and the second to `Right`. **second**.  It is defined if both types of the pair are constructible from the value types provided.
 
-
 The fourth constructor initializes the first element of the pair to *Val1* and the second to *Val2* using [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  It is defined if both types of the pair are constructible from the value types provided.
 
 ## Remarks
