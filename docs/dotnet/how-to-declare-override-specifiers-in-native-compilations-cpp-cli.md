@@ -11,7 +11,7 @@ ms.assetid: d0551836-9ac7-41eb-a6e9-a4b3ef60767d
 > [!NOTE]
 > The ISO C++11 Standard language has the [override](../cpp/override-specifier.md) identifier and the [final](../cpp/final-specifier.md) identifier, and both are supported in Visual Studio  Use `final` instead of **`sealed`** in code that is meant to be compiled as native-only.
 
-## Example
+## Example: sealed is valid
 
 ### Description
 
@@ -40,7 +40,7 @@ public:
 };
 ```
 
-## Example
+## Example: override is valid
 
 ### Description
 
@@ -62,7 +62,7 @@ public:
 };
 ```
 
-## Example
+## Example: abstract is valid
 
 ### Description
 
