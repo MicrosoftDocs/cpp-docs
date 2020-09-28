@@ -91,7 +91,7 @@ The **_sprintf_p** function formats and stores a series of characters and values
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## Example
+## Example: Use _sprintf_p to format data
 
 ```C
 // crt_sprintf_p.c
@@ -134,7 +134,7 @@ Output:
 character count = 79
 ```
 
-## Example
+## Example: _swprintf_p returns error code
 
 ```C
 // crt_swprintf_p.c

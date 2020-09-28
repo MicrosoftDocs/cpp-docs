@@ -39,7 +39,7 @@ You can use the **`static_assert`** keyword at namespace, class, or block scope.
 
 In the following example, the **`static_assert`** declaration has namespace scope. Because the compiler knows the size of type `void *`, the expression is evaluated immediately.
 
-## Example of static_assert with namespace scope
+## Example: static_assert with namespace scope
 
 ```cpp
 static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");
@@ -49,7 +49,7 @@ static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");
 
 In the following example, the **`static_assert`** declaration has class scope. The **`static_assert`** verifies that a template parameter is a *plain old data* (POD) type. The compiler examines the **`static_assert`** declaration when it is declared, but does not evaluate the *constant-expression* parameter until the `basic_string` class template is instantiated in `main()`.
 
-## Example of static_assert with class scope
+## Example: static_assert with class scope
 
 ```cpp
 #include <type_traits>
@@ -74,11 +74,11 @@ int main()
 }
 ```
 
-## Description
+## Description of static_assert with block scope
 
 In the following example, the **`static_assert`** declaration has block scope. The **`static_assert`** verifies that the size of the VMPage structure is equal to the virtual memory pagesize of the system.
 
-## Example
+## Example: static_assert with block scope
 
 ```cpp
 #include <sys/param.h> // defines PAGESIZE

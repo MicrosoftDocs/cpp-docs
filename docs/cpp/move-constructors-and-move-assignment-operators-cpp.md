@@ -161,7 +161,7 @@ The following procedures describe how to write a move constructor and a move ass
     return *this;
     ```
 
-## Example
+## Example: Complete move constructor and assignment operator
 
 The following example shows the complete move constructor and move assignment operator for the `MemoryBlock` class:
 
@@ -210,7 +210,7 @@ MemoryBlock& operator=(MemoryBlock&& other) noexcept
 }
 ```
 
-## Example
+## Example Use move semantics to improve performance
 
 The following example shows how move semantics can improve the performance of your applications. The example adds two elements to a vector object and then inserts a new element between the two existing elements. The `vector` class uses move semantics to perform the insertion operation efficiently by moving the elements of the vector instead of copying them.
 

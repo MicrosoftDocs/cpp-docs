@@ -68,6 +68,8 @@ int main() {
 &d equals &rd
 ```
 
+## Example: address-of
+
 The following example uses the address-of operator to pass a pointer argument to a function:
 
 ```cpp
@@ -89,7 +91,7 @@ int main() {
 }
 ```
 
-## Output
+## Output: address-of operator
 
 ```Output
 25

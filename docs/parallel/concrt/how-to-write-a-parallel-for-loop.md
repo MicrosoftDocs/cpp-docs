@@ -8,13 +8,13 @@ ms.assetid: adb4d64e-5514-4b70-8dcb-b9210e6b5a1c
 
 This example demonstrates how to use [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) to compute the product of two matrices.
 
-## Example
+## Example: matrix_multiply function
 
 The following example shows the `matrix_multiply` function, which computes the product of two square matrices.
 
 [!code-cpp[concrt-parallel-matrix-multiply#1](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_1.cpp)]
 
-## Example
+## Example: parallel_matrix_multiply function
 
 The following example shows the `parallel_matrix_multiply` function, which uses the `parallel_for` algorithm to perform the outer loop in parallel.
 
@@ -22,7 +22,7 @@ The following example shows the `parallel_matrix_multiply` function, which uses 
 
 This example parallelizes the outer loop only because it performs enough work to benefit from the overhead for parallel processing. If you parallelize the inner loop, you will not receive a gain in performance because the small amount of work that the inner loop performs does not overcome the overhead for parallel processing. Therefore, parallelizing the outer loop only is the best way to maximize the benefits of concurrency on most systems.
 
-## Example
+## Complete code example
 
 The following more complete example compares the performance of the `matrix_multiply` function versus the `parallel_matrix_multiply` function.
 

@@ -30,7 +30,7 @@ using declarator-list ;
 
 A using declaration introduces an unqualified name as a synonym for an entity declared elsewhere. It allows a single name from a specific namespace to be used without explicit qualification in the declaration region in which it appears. This is in contrast to the [using directive](../cpp/namespaces-cpp.md#using_directives), which allows *all* the names in a namespace to be used without qualification. The **`using`** keyword is also used for [type aliases](../cpp/aliases-and-typedefs-cpp.md).
 
-## Example
+## Example: using declaration in class field
 
 A using declaration can be used in a class definition.
 
@@ -76,7 +76,7 @@ In B::f()
 In B::g()
 ```
 
-## Example
+## Example: using declaration to declare a member
 
 When used to declare a member, a using declaration must refer to a member of a base class.
 
@@ -116,7 +116,7 @@ int main() {
 In B::f()
 ```
 
-## Example
+## Example: using declaration with explicit qualification
 
 Members declared by using a using declaration can be referenced by using explicit qualification. The `::` prefix refers to the global namespace.
 
@@ -156,7 +156,7 @@ In f
 In A::g
 ```
 
-## Example
+## Example: using declaration synonyms and aliases
 
 When a using declaration is made, the synonym created by the declaration refers only to definitions that are valid at the point of the using declaration. Definitions added to a namespace after the using declaration are not valid synonyms.
 
@@ -185,7 +185,7 @@ void b() {
 }
 ```
 
-## Example
+## Example: local declarations and using declarations
 
 With respect to functions in namespaces, if a set of local declarations and using declarations for a single name are given in a declarative region, they must all refer to the same entity, or they must all refer to functions.
 
@@ -208,7 +208,7 @@ void g() {
 
 In the example above, the `using B::i` statement causes a second `int i` to be declared in the `g()` function. The `using B::f` statement does not conflict with the `f(char)` function because the function names introduced by `B::f` have different parameter types.
 
-## Example
+## Example: local function declarations and using declarations
 
 A local function declaration cannot have the same name and type as a function introduced by using declaration. For example:
 
@@ -235,7 +235,7 @@ void h() {
 }
 ```
 
-## Example
+## Example: using declaration and inheritance
 
 With respect to inheritance, when a using declaration introduces a name from a base class into a derived class scope, member functions in the derived class override virtual member functions with the same name and argument types in the base class.
 
@@ -293,7 +293,7 @@ In B::g
 In D::g(char)
 ```
 
-## Example
+## Example: using declaration accessibility
 
 All instances of a name mentioned in a using declaration must be accessible. In particular, if a derived class uses a using declaration to access a member of a base class, the member name must be accessible. If the name is that of an overloaded member function, then all functions named must be accessible.
 

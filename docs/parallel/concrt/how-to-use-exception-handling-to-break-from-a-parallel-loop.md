@@ -10,19 +10,19 @@ This topic shows how to write a search algorithm for a basic tree structure.
 
 The topic [Cancellation](cancellation-in-the-ppl.md) explains the role of cancellation in the Parallel Patterns Library. The use of exception handling is a less efficient way to cancel parallel work than the use of the [concurrency::task_group::cancel](reference/task-group-class.md#cancel) and [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) methods. However, one scenario where the use of exception handling to cancel work is appropriate is when you call into a third-party library that uses tasks or parallel algorithms but does not provide a `task_group` or `structured_task_group` object to cancel.
 
-## Example
+## Example: Basic tree type
 
 The following example shows a basic `tree` type that contains a data element and a list of child nodes. The following section shows the body of the `for_all` method, which recursively performs a work function on each child node.
 
 [!code-cpp[concrt-task-tree-search#2](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_1.cpp)]
 
-## Example
+## Example: for_all method
 
 The following example shows the `for_all` method. It uses the [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm to perform a work function on each node of the tree in parallel.
 
 [!code-cpp[concrt-task-tree-search#1](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_2.cpp)]
 
-## Example
+## Example: search_for_value function
 
 The following example shows the `search_for_value` function, which searches for a value in the provided `tree` object. This function passes to the `for_all` method a work function that throws when it finds a tree node that contains the provided value.
 
@@ -32,7 +32,7 @@ When the work function that you provide to a task group throws an exception, the
 
 [!code-cpp[concrt-task-tree-search#3](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_3.cpp)]
 
-## Example
+## Example: Create and search a tree object
 
 The following example creates a `tree` object and searches it for several values in parallel. The `build_tree` function is shown later in this topic.
 
@@ -40,7 +40,7 @@ The following example creates a `tree` object and searches it for several values
 
 This example uses the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algorithm to search for values in parallel. For more information about this algorithm, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).
 
-## Example
+## Complete code example
 
 The following complete example uses exception handling to search for values in a basic tree structure.
 

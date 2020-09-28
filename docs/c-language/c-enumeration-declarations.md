@@ -12,7 +12,7 @@ Variables of **`enum`** type can be used in indexing expressions and as operands
 
 In ANSI C, the expressions that define the value of an enumerator constant always have **`int`** type; thus, the storage associated with an enumeration variable is the storage required for a single **`int`** value. An enumeration constant or a value of enumerated type can be used anywhere the C language permits an integer expression.
 
-## Syntax
+## Syntax: Enumeration declaration
 
 *enum-specifier*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**`enum`** *identifier*<sub>opt</sub> **{** *enumerator-list* **}**<br/>
@@ -31,7 +31,7 @@ declares *identifier* to be the tag of the enumeration specified by the *enumera
 
 If the declaration of a tag is visible, subsequent declarations that use the tag but omit *enumerator-list* specify the previously declared enumerated type. The tag must refer to a defined enumeration type, and that enumeration type must be in current scope. Since the enumeration type is defined elsewhere, the *enumerator-list* does not appear in this declaration. Declarations of types derived from enumerations and **`typedef`** declarations for enumeration types can use the enumeration tag before the enumeration type is defined.
 
-## Syntax
+## Syntax: Enumeration with declaration of tag
 
 *enumerator-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*enumerator*<br/>

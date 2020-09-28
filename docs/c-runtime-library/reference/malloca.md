@@ -57,7 +57,7 @@ In addition to the above restrictions, when using the [/clr (Common Language Run
 |-------------|---------------------|
 |**_malloca**|\<malloc.h>|
 
-## Example
+## Example: malloca simple
 
 ```C
 // crt_malloca_simple.c
@@ -77,7 +77,7 @@ int main()
 }
 ```
 
-## Example
+## Example: malloca exception
 
 ```C
 // crt_malloca_exception.c

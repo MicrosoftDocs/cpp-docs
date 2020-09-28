@@ -63,7 +63,7 @@ Specifies type to be allocated; it can be either a built-in or user-defined type
 *initializer*<br/>
 Provides a value for the initialized object. Initializers cannot be specified for arrays. The **`new`** operator will create arrays of objects only if the class has a default constructor.
 
-## Example
+## Example: Allocates character array and object
 
 The following code example allocates a character array and an object of class `CName` and then frees them.
 
@@ -108,7 +108,7 @@ int main() {
 }
 ```
 
-## Example
+## Example: new operator
 
 If you use the placement new form of the **`new`** operator, the form with arguments in addition to the size of the allocation, the compiler does not support a placement form of the **`delete`** operator if the constructor throws an exception. For example:
 

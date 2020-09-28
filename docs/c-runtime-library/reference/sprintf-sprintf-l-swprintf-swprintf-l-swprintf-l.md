@@ -115,7 +115,7 @@ In C++, these functions have template overloads that invoke the newer, secure co
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## Example
+## Example: Use sprintf to format data
 
 ```C
 // crt_sprintf.c
@@ -152,7 +152,7 @@ Output:
 character count = 79
 ```
 
-## Example
+## Example: swprintf returns error code
 
 ```C
 // crt_swprintf.c

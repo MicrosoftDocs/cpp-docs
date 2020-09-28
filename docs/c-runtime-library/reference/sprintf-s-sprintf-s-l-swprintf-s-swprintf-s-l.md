@@ -111,7 +111,7 @@ There are versions of **sprintf_s** that offer additional control over what happ
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## Example
+## Example: Uses sprintf_s to format data
 
 ```C
 // crt_sprintf_s.c
@@ -147,7 +147,7 @@ Output:
 character count = 79
 ```
 
-## Example
+## Example: swprintf_s returns error code
 
 ```C
 // crt_swprintf_s.c

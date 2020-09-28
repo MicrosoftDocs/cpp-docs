@@ -12,7 +12,7 @@ Adds recommended Security Development Lifecycle (SDL) checks. These checks inclu
 
 > **`/sdl`**[**`-`**]
 
-## Remarks
+## Initial remarks
 
 **/sdl** enables a superset of the baseline security checks provided by [`/GS`](gs-buffer-security-check.md) and overrides **`/GS-`**. By default, **`/sdl`** is off. **`/sdl-`** disables the additional security checks.
 
@@ -52,7 +52,7 @@ When **`/sdl`** is enabled, the compiler generates code to perform these checks 
 
   To be initialized by the compiler-generated class initialization function, a member must be a pointer, and not a property or constant.
 
-## Remarks
+## Final remarks
 
 For more information, see [Warnings, /sdl, and improving uninitialized variable detection](https://cloudblogs.microsoft.com/microsoftsecure/2012/06/06/warnings-sdl-and-improving-uninitialized-variable-detection/).
 
