@@ -416,7 +416,7 @@ int main()
     std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
     std::cout << theMultiSet.contains(2) << '\n';
     std::cout << theMultiSet.contains(3) << '\n';
-    
+
     return 0;
 }
 ```

@@ -4645,7 +4645,7 @@ int main()
 {
     std::basic_string<char> str = "abcdefg";
 
-    std::cout << std::boolalpha; // so booleans show as 'true'/'false'     
+    std::cout << std::boolalpha; // so booleans show as 'true'/'false'
     std::cout << str.starts_with('b') << '\n';
     std::cout << str.starts_with("aBc") << '\n';
 

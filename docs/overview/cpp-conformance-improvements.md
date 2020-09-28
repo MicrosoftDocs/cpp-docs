@@ -1427,7 +1427,7 @@ The unordered container `reserve` function now actually reserves for N elements,
 
 - Added the overloads for container merge and extract member functions that accept rvalue containers. For more information, see [P0083 "Splicing Maps And Sets"](https://wg21.link/p0083r3)
 
-### `std::basic_istream::read` processing of `\r\n`` => `\n`
+### `std::basic_istream::read` processing of `\r\n`` =>`\n`
 
 `std::basic_istream::read` was fixed to not write into parts of the supplied buffer temporarily as part of `\r\n` => `\n` processing. This change gives up some of the performance advantage that was gained in Visual Studio 2017 15.8 for reads larger than 4K in size. However, efficiency improvements from avoiding three virtual calls per character are still present.
 

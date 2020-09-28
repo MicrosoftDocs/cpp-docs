@@ -62,7 +62,7 @@ The following optimizations are available under **`/Og`**:
    > [!NOTE]
    > You can enable or disable global optimization on a function-by-function basis using the `optimize` pragma together with the `g` option.
 
-For related information, see [`/Oi` (Generate intrinsic functions)](oi-generate-intrinsic-functions.md) and [`/Ox `(Enable most speed optimizations)](ox-full-optimization.md).
+For related information, see [`/Oi` (Generate intrinsic functions)](oi-generate-intrinsic-functions.md) and [`/Ox`(Enable most speed optimizations)](ox-full-optimization.md).
 
 ### To set this compiler option in the Visual Studio development environment
 

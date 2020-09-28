@@ -20,7 +20,7 @@ Calculates *x* raised to the power of *y*.
 double pow( double x, double y );
 float powf( float x, float y );
 long double powl( long double x, long double y );
-define pow(X, Y) // Requires C11 or higher 
+define pow(X, Y) // Requires C11 or higher
 
 double pow( double x, int y );  // C++ only
 float pow( float x, float y );  // C++ only
