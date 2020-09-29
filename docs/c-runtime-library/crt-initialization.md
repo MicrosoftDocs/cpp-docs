@@ -34,9 +34,9 @@ According to the C/C++ standard, `func()` must be called before `main()` is exec
 
 One way to determine this is to set a breakpoint in `func()`, debug the application, and examine the stack. This is possible because the CRT source code is included with Visual Studio.
 
-When you browse the functions on the stack, you will find that the CRT is looping through a list of function pointers and calling each one as it encounters them. These functions are either similar to `func()` or constructors for class instances.
+When you browse the functions on the stack, you'll see that the CRT is looping through a list of function pointers and calling each one. These functions are similar to `func()`, or constructors for class instances.
 
-The CRT obtains the list of function pointers from the Microsoft C++ compiler. When the compiler sees a global initializer, it generates a dynamic initializer in the `.CRT$XCU` section (where `CRT` is the section name and `XCU` is the group name). To obtain a list of those dynamic initializers run the command **dumpbin /all main.obj**, and then search the `.CRT$XCU` section (when main.cpp is compiled as a C++ file, not a C file). It will be similar to the following:
+The CRT gets the list of function pointers from the Microsoft C++ compiler. When the compiler sees a global initializer, it generates a dynamic initializer in the `.CRT$XCU` section where `CRT` is the section name and `XCU` is the group name. To obtain a list of dynamic initializers, run the command **dumpbin /all main.obj**, and then search the `.CRT$XCU` section. This applies when main.cpp is compiled as a C++ file, not a C file.. It will be similar to the following:
 
 ```
 SECTION HEADER #6
@@ -70,7 +70,7 @@ The CRT defines two pointers:
 
 - `__xc_z` in `.CRT$XCZ`
 
-Both groups do not have any other symbols defined except `__xc_a` and `__xc_z`.
+Neither group has any other symbols defined except `__xc_a` and `__xc_z`.
 
 Now, when the linker reads various `.CRT` groups, it combines them in one section and orders them alphabetically. This means that the user-defined global initializers (which the Microsoft C++ compiler puts in `.CRT$XCU`) will always come after `.CRT$XCA` and before `.CRT$XCZ`.
 
@@ -86,7 +86,7 @@ The section will resemble the following:
             __xc_z
 ```
 
-So, the CRT library uses both `__xc_a` and `__xc_z` to determine the start and end of the global initializers list because of the way in which they are laid out in memory after the image is loaded.
+So, the CRT library uses both `__xc_a` and `__xc_z` to determine the start and end of the global initializers list because of the way in which they're laid out in memory after the image is loaded.
 
 ## See also
 

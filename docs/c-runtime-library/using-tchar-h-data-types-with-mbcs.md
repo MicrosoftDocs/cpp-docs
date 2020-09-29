@@ -1,6 +1,6 @@
 ---
 title: "Using TCHAR.H Data Types with _MBCS"
-description: "An overview of how Microsoft C runtime text routines are mapped when you use TCHAR.H data types with the multi byte constant _MBCS ."
+description: "An overview of how Microsoft C runtime text routines are mapped when you use TCHAR.H data types with the multibyte constant _MBCS."
 ms.topic: "conceptual"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["TCHAR.H data types", "MBCS data type", "_MBCS data type"]
@@ -47,17 +47,17 @@ Following are three solutions for preventing this type conflict (and the C compi
    #define _MB_MAP_DIRECT
    ```
 
-   This approach provides a fast alternative if you do not want to use the default behavior or cannot use inlining. It causes the generic-text routine to be mapped by a macro directly to the MBCS version of the routine, as in the following example from TCHAR.H.
+   This approach provides a quick alternative if you do not want to use the default behavior or cannot use inlining. A macro maps the generic-text routine to the MBCS version of the routine, as in the following example from TCHAR.H.
 
    ```C
    #define _tcschr _mbschr
    ```
 
-When you take this approach, you must be careful to ensure that appropriate data types are used for string arguments and string return values. You can use type casting to ensure proper type matching or you can use the **_TXCHAR** generic-text data type. **_TXCHAR** maps to type **`char`** in SBCS code but maps to type **`unsigned char`** in MBCS code. For more information about generic-text macros, see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md).
+When you take this approach, be careful to ensure that appropriate data types are used for string arguments and string return values. You can use type casting to ensure proper type matching or you can use the **_TXCHAR** generic-text data type. **_TXCHAR** maps to type **`char`** in SBCS code but maps to type **`unsigned char`** in MBCS code. For more information about generic-text macros, see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md).
 
 **END Microsoft Specific**
 
 ## See also
 
-[Internationalization](../c-runtime-library/internationalization.md)<br/>
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Internationalization](../c-runtime-library/internationalization.md)\
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)
