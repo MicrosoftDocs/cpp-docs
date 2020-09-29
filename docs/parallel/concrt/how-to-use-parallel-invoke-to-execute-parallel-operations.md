@@ -16,7 +16,7 @@ Consider the following code example that creates a variable of type `MyDataType`
 
 If the `lengthy_operation1`, `lengthy_operation2`, and `lengthy_operation3` functions do not modify the `MyDataType` variable, these functions can be executed in parallel without additional modifications.
 
-## Example: Run the example in parallel
+## Example: Run previous example in parallel
 
 The following example modifies the previous example to run in parallel. The `parallel_invoke` algorithm executes each task in parallel and returns after all tasks are finished.
 
