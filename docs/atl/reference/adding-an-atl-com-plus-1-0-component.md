@@ -21,7 +21,7 @@ This wizard adds an object to your project that supports COM+ 1.0 services, incl
 
 1. On the shortcut menu, click **Add**, and then click **Add Class**.
 
-1. In the [Add Class](../../ide/add-class-dialog-box.md) dialog box, in the **Templates** pane, click **ATL COM+ 1.0 Component**, and then click **Open** to display the [ATL COM+ 1.0 Component Wizard](../../atl/reference/atl-com-plus-1-0-component-wizard.md).
+1. In the [Add Class](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) dialog box, in the **Templates** pane, click **ATL COM+ 1.0 Component**, and then click **Open** to display the [ATL COM+ 1.0 Component Wizard](../../atl/reference/atl-com-plus-1-0-component-wizard.md).
 
 ## See also
 

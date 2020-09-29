@@ -406,7 +406,7 @@ bool empty();
 
 ### Remarks
 
-The member function returns true for an empty controlled sequence. It is equivalent to [queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md)`() == 0`. You use it to test whether the queue is empty.
+The member function returns true for an empty controlled sequence. It is equivalent to [queue::size (STL/CLR)](#size)`() == 0`. You use it to test whether the queue is empty.
 
 ### Example
 
@@ -1011,7 +1011,7 @@ size_type size();
 
 ### Remarks
 
-The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [queue::empty (STL/CLR)](../dotnet/queue-empty-stl-clr.md)`()`.
+The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [queue::empty (STL/CLR)](#empty)`()`.
 
 ### Example
 
@@ -1291,7 +1291,7 @@ Right container to compare.
 
 ### Remarks
 
-The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->`[queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md)`() <` `right->size()` You use it to test whether *left* is ordered before *right* when the two queues are compared element by element.
+The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->`[queue::size (STL/CLR)](#size)`() <` `right->size()` You use it to test whether *left* is ordered before *right* when the two queues are compared element by element.
 
 ### Example
 

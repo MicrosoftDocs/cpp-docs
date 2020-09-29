@@ -22,7 +22,7 @@ In this topic, you will open the Ribbon Designer, add a button, and then link an
 
 1. Right-click the button, and click **Add Event Handler**.
 
-1. In the **Event Handler Wizard**, confirm the default settings and click **Add and Edit**. For more information, see [Event Handler Wizard](../ide/event-handler-wizard.md).
+1. In the **Event Handler Wizard**, confirm the default settings and click **Add and Edit**. For more information, see [Event Handler Wizard](../ide/adding-an-event-handler-visual-cpp.md#event-handler-wizard).
 
 1. In the code editor, add the following code into the handler function:
 

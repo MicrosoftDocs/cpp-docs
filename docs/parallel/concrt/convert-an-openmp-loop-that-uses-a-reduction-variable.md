@@ -6,7 +6,7 @@ ms.assetid: 96623f36-5e57-4d3f-8c13-669e6cd535b1
 ---
 # How to: Convert an OpenMP Loop that Uses a Reduction Variable to Use the Concurrency Runtime
 
-This example demonstrates how to convert an OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../../parallel/openmp/reference/for-openmp.md) loop that uses the [reduction](../../parallel/openmp/reference/reduction.md) clause to use the Concurrency Runtime.
+This example demonstrates how to convert an OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../openmp/reference/openmp-directives.md#for-openmp) loop that uses the [reduction](../openmp/reference/openmp-clauses.md#reduction) clause to use the Concurrency Runtime.
 
 The OpenMP `reduction` clause lets you specify one or more thread-private variables that are subject to a reduction operation at the end of the parallel region. OpenMP predefines a set of reduction operators. Each reduction variable must be a scalar (for example, **`int`**, **`long`**, and **`float`**). OpenMP also defines several restrictions on how reduction variables are used in a parallel region.
 

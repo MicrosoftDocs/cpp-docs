@@ -784,7 +784,7 @@ The key value of the element to look for.
 
 ### Return Value
 
-`true` if the element is found in the container; `false` otherwise. 
+`true` if the element is found in the container; `false` otherwise.
 
 ### Remarks
 
@@ -806,7 +806,7 @@ int main()
     std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
     std::cout << theUnorderedMap.contains(1) << '\n';
     std::cout << theUnorderedMap.contains(2) << '\n';
-    
+
     return 0;
 }
 ```
@@ -2782,6 +2782,4 @@ int main()
 ## See also
 
 [<unordered_map>](../standard-library/unordered-map.md)\
-[Containers](./stl-containers.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

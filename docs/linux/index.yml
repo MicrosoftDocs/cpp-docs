@@ -57,4 +57,4 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Create C++ cross-platform projects in Visual Studio
-            url: /cpp/build/get-started-linux-cmake
+            url: ../build/get-started-linux-cmake.md

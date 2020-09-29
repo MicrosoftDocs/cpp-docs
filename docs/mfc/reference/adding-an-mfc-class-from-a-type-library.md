@@ -19,7 +19,7 @@ A type library contains a binary description of the interfaces exposed by a comp
 
 1. From the shortcut menu, click **Add**, and then click **Add Class**.
 
-1. In the [Add Class](../../ide/add-class-dialog-box.md) dialog box, in the Templates pane, click **MFC Class from Typelib**, and then click **Open** to display the [Add Class from Typelib Wizard](../../mfc/reference/add-class-from-typelib-wizard.md).
+1. In the [Add Class](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) dialog box, in the Templates pane, click **MFC Class from Typelib**, and then click **Open** to display the [Add Class from Typelib Wizard](../../mfc/reference/add-class-from-typelib-wizard.md).
 
 In the wizard, you can add more than one class in a type library. Likewise, you can add classes from more than one type library in a single wizard session.
 

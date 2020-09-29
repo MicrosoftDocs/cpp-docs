@@ -6,7 +6,7 @@ ms.assetid: 7d373554-7330-43ae-abf1-4bb14e437b4a
 ---
 # Dialog Data Exchange and Validation
 
-Dialog data exchange (DDX) is an easy way to initialize the controls in your dialog box and to gather data input by the user. Dialog data validation (DDV) is an easy way to validate data entry in a dialog box. To take advantage of DDX and DDV in your dialog boxes, use the [Add Member Variable Wizard](../ide/add-member-variable-wizard.md) to create the data members and set their data types and specify validation rules.
+Dialog data exchange (DDX) is an easy way to initialize the controls in your dialog box and to gather data input by the user. Dialog data validation (DDV) is an easy way to validate data entry in a dialog box. To take advantage of DDX and DDV in your dialog boxes, use the [Add Member Variable Wizard](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard) to create the data members and set their data types and specify validation rules.
 
 ## What do you want to know more about
 

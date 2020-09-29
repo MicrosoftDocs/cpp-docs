@@ -32,13 +32,13 @@ Any desktop application in C++ can use C Runtime (CRT) and Standard Library clas
 
 |Title|Description|
 |-----------|-----------------|
-|[Windows Console Applications in C++](console-applications-in-visual-cpp.md)|Contains information about console apps. A Win32 (or Win64) console application has no window of its own and no message loop. It runs in the console window, and input and output are handled through the command line.|
+|[Windows Console Applications in C++](./overview-of-windows-programming-in-cpp.md)|Contains information about console apps. A Win32 (or Win64) console application has no window of its own and no message loop. It runs in the console window, and input and output are handled through the command line.|
 |[Walkthrough: Creating Windows Desktop Applications (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Create a simple Windows desktop application.|
-|[Creating an Empty Windows Desktop Application](creating-an-empty-windows-desktop-application.md)|How to create a Windows desktop project that has no default files.|
-|[Adding Files to an Empty Win32 Applications](adding-files-to-an-empty-win32-applications.md)|How to add files to an empty project.|
+|[Creating an Empty Windows Desktop Application](./overview-of-windows-programming-in-cpp.md)|How to create a Windows desktop project that has no default files.|
+|[Adding Files to an Empty Win32 Applications](./overview-of-windows-programming-in-cpp.md)|How to add files to an empty project.|
 |[Working with Resource Files](working-with-resource-files.md)|How to add images, icons, string tables, and other resources to a desktop application.|
 |[Resources for Creating a Game Using DirectX (C++)](resources-for-creating-a-game-using-directx.md)|Links to content for creating games in C++.|
-|[Walkthrough: Creating and Using a Static Library](walkthrough-creating-and-using-a-static-library-cpp.md)|How to create a .lib binary file.|
+|[Walkthrough: Creating and Using a Static Library](../build/walkthrough-creating-and-using-a-static-library-cpp.md)|How to create a .lib binary file.|
 |[How to: Use the Windows 10 SDK in a Windows Desktop Application](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Contains steps for setting up your project to build using the Windows 10 SDK.|
 
 ## Related Articles

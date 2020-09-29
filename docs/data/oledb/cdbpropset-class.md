@@ -129,7 +129,7 @@ void SetGUID(const GUID& guid) throw();
 
 ### Remarks
 
-This field can be set by the [constructor](../../data/oledb/cdbpropset-cdbpropset.md) as well.
+This field can be set by the [constructor](#cdbpropset) as well.
 
 ## <a name="op_equal"></a> CDBPropSet::operator =
 

@@ -89,4 +89,4 @@ is :- "private: void __thiscall a::func1(int)"
 ## See also
 
 [Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
-[Using extern to Specify Linkage](../../cpp/using-extern-to-specify-linkage.md)
+[Using extern to Specify Linkage](../../cpp/extern-cpp.md)

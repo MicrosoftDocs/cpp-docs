@@ -46,7 +46,7 @@ Calling conventions ([__cdecl](../../cpp/cdecl.md), [__stdcall](../../cpp/stdcal
 
 ### A symbol is defined in a C file, but declared without using extern "C" in a C++ file
 
-Symbols defined in a file that is compiled as C have different decorated names than symbols declared in a C++ file unless you use an [extern "C"](../../cpp/using-extern-to-specify-linkage.md) modifier. Make sure the declaration matches the compilation linkage for each symbol. Similarly, if you define a symbol in a C++ file that will be used by a C program, use `extern "C"` in the definition.
+Symbols defined in a file that is compiled as C have different decorated names than symbols declared in a C++ file unless you use an [extern "C"](../../cpp/extern-cpp.md) modifier. Make sure the declaration matches the compilation linkage for each symbol. Similarly, if you define a symbol in a C++ file that will be used by a C program, use `extern "C"` in the definition.
 
 ### A symbol is defined as static and then later referenced outside the file
 
@@ -90,7 +90,7 @@ C++ language conformance work that was done in Visual Studio 2005 made **`wchar_
 
 ## Third-party library issues and vcpkg
 
-If you see this error when you're trying to configure a third-party library as part of your build, consider using [vcpkg](../../vcpkg.md), a C++ package manager, to install and build the library. vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports). It sets all the configuration properties and dependencies required for successful builds as part of your project.
+If you see this error when you're trying to configure a third-party library as part of your build, consider using [vcpkg](../../build/vcpkg.md), a C++ package manager, to install and build the library. vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports). It sets all the configuration properties and dependencies required for successful builds as part of your project.
 
 ## Diagnosis tools
 

@@ -35,7 +35,7 @@ A rowset class.
 
 | Name | Description |
 |--|--|
-| [Bind](#bind) | Creates bindings (used when `bBind` is specified as **`false`** in [CCommand::Open](../../data/oledb/ccommand-open.md)). |
+| [Bind](#bind) | Creates bindings (used when `bBind` is specified as **`false`** in [CCommand::Open](./ccommand-class.md#open)). |
 | [CAccessorRowset](#caccessorrowset) | Constructor. |
 | [Close](#close) | Closes the rowset and any accessors. |
 | [FreeRecordMemory](#freerecordmemory) | Frees any columns in the current record that need to be freed. |
@@ -47,7 +47,7 @@ Class `TAccessor` manages the accessor. Class *TRowset* manages the rowset.
 
 ## <a name="bind"></a> CAccessorRowset::Bind
 
-Creates the bindings if you specified `bBind` as **`false`** in [CCommand::Open](../../data/oledb/ccommand-open.md).
+Creates the bindings if you specified `bBind` as **`false`** in [CCommand::Open](./ccommand-class.md#open).
 
 ### Syntax
 

@@ -49,8 +49,8 @@ This image shows an example bar graph of a link invocation. We use the gear icon
 ## See also
 
 [Tutorial: vcperf and Windows Performance Analyzer](vcperf-and-wpa.md)\
-[Reference: vcperf commands](/cpp/build-insights/reference/vcperf-commands)\
-[Reference: Windows Performance Analyzer views](/cpp/build-insights/reference/wpa-views)\
+[Reference: vcperf commands](../reference/vcperf-commands.md)\
+[Reference: Windows Performance Analyzer views](../reference/wpa-views.md)\
 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)
 
 ::: moniker-end
