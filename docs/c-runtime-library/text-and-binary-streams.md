@@ -14,10 +14,10 @@ Positioning within a text stream is limited. You can obtain the current file-pos
 
 For maximum portability, the program shouldn't write:
 
-- Empty files.\
-- Space characters at the end of a line.\
-- Partial lines (by omitting the `NL` at the end of a file).\
-- characters other than the printable characters, NL, and `HT` (horizontal tab).\
+- Empty files.
+- Space characters at the end of a line.
+- Partial lines (by omitting the `NL` at the end of a file).
+- characters other than the printable characters, NL, and `HT` (horizontal tab).
 
 If you follow these rules, the sequence of characters you read from a text stream (either as byte or multibyte characters) will match the sequence of characters you wrote to the text stream when you created the file. Otherwise, the library functions can remove a file you create if the file is empty when you close it. Or they can alter or delete characters you write to the file.
 
