@@ -11,4 +11,4 @@ Identifiers are significant to 247 characters. The compiler does not restrict th
 
 ## See also
 
-[Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
+[Using extern to Specify Linkage](../cpp/extern-cpp.md)

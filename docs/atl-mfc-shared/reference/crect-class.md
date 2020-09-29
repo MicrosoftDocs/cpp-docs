@@ -284,15 +284,15 @@ Specifies the bottom-right position of `CRect`.
 
 ### Remarks
 
-If no arguments are given, `left`, `top`, `right`, and `bottom` members are not initialized.
+If no arguments are given, `left`, `top`, `right`, and `bottom` members are set to 0.
 
 The `CRect`(`const RECT&`) and `CRect`(`LPCRECT`) constructors perform a [CopyRect](#copyrect). The other constructors initialize the member variables of the object directly.
 
 ### Example
 
 ```cpp
-// default constructor doesn't initialize!
-CRect rectUnknown;
+// default constructor is equivalent to CRect(0, 0, 0, 0)
+CRect emptyRect;
 
 // four-integers are left, top, right, and bottom
 CRect rect(0, 0, 100, 50);

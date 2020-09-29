@@ -68,7 +68,7 @@ Add support for one of the libraries supplied in Visual C++.
 
 ## Remarks
 
-Once you have created a Windows desktop application, you can add generic C++ classes using the [Generic](../ide/generic-cpp-class-wizard.md) Code Wizard. You can add other items, such as HTML files, header files, resources, or text files.
+Once you have created a Windows desktop application, you can add generic C++ classes using the [Generic](../ide/adding-a-generic-cpp-class.md#generic-c-class-wizard) Code Wizard. You can add other items, such as HTML files, header files, resources, or text files.
 
 > [!NOTE]
 > You cannot add ATL classes, and you can add MFC classes only to those Windows desktop application types that support MFC (see the previous table).

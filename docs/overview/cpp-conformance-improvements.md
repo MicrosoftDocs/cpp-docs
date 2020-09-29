@@ -1427,7 +1427,7 @@ The unordered container `reserve` function now actually reserves for N elements,
 
 - Added the overloads for container merge and extract member functions that accept rvalue containers. For more information, see [P0083 "Splicing Maps And Sets"](https://wg21.link/p0083r3)
 
-### `std::basic_istream::read` processing of `\r\n`` => `\n`
+### `std::basic_istream::read` processing of `\r\n`` =>`\n`
 
 `std::basic_istream::read` was fixed to not write into parts of the supplied buffer temporarily as part of `\r\n` => `\n` processing. This change gives up some of the performance advantage that was gained in Visual Studio 2017 15.8 for reads larger than 4K in size. However, efficiency improvements from avoiding three virtual calls per character are still present.
 
@@ -1616,7 +1616,7 @@ void f(E e) {
 
 ## <a name="improvements_150"></a> Conformance improvements in Visual Studio 2017 RTW (version 15.0)
 
-With support for generalized **`constexpr`** and non-static data member initialization (NSDMI) for aggregates, the Microsoft C++ compiler in Visual Studio 2017 is now complete for features added in the C++14 standard. However, the compiler still lacks a few features from the C++11 and C++98 standards. See [Microsoft C++ language conformance table](../visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
+With support for generalized **`constexpr`** and non-static data member initialization (NSDMI) for aggregates, the Microsoft C++ compiler in Visual Studio 2017 is now complete for features added in the C++14 standard. However, the compiler still lacks a few features from the C++11 and C++98 standards. See [Microsoft C++ language conformance table](./visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
 ### C++11: Expression SFINAE support in more libraries
 
@@ -3642,7 +3642,7 @@ To avoid the error, remove the **`constexpr`** qualifier from the explicit insta
 
 ## C++ conformance improvements in Visual Studio 2015
 
-We have a complete list of conformance improvements up through Visual Studio 2015 Update 3. For more information, see [Visual C++ What's New 2003 through 2015](/cpp/porting/visual-cpp-what-s-new-2003-through-2015).
+We have a complete list of conformance improvements up through Visual Studio 2015 Update 3. For more information, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
 ::: moniker-end
 

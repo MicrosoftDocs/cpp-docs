@@ -9,7 +9,7 @@ ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
 
 When you create a new resource or resource object, the development environment assigns it a default symbol name, for example, `IDD_DIALOG1`. You can use the [Properties window](/visualstudio/ide/reference/properties-window) to change the default symbol name or to change the name of any symbol already associated with a resource.
 
-For symbols associated with a single resource, you can also use the **Properties** window to change the symbol value. You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the value of symbols not currently assigned to a resource.
+For symbols associated with a single resource, you can also use the **Properties** window to change the symbol value. You can use the [Resource Symbols dialog box](./creating-new-symbols.md) to change the value of symbols not currently assigned to a resource.
 
 Normally all symbol definitions are saved in `Resource.h`. However, you may need to change this include filename so that you can, for example, work with more than one resource file in the same directory.
 
@@ -55,7 +55,7 @@ Symbol names have descriptive prefixes that indicate the kind of resource or obj
    If you type a new symbol name, it's automatically assigned a value.
 
 > [!NOTE]
-> You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the names of symbols not currently assigned to a resource.
+> You can use the [Resource Symbols dialog box](./creating-new-symbols.md) to change the names of symbols not currently assigned to a resource.
 
 ## Symbol Value Restrictions
 
@@ -104,7 +104,7 @@ Some limitations of symbol values are:
 
 ## Change or Delete Symbols
 
-While in the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md), you can edit or delete existing symbols that aren't already assigned to a resource or object.
+While in the [Resource Symbols dialog box](./creating-new-symbols.md), you can edit or delete existing symbols that aren't already assigned to a resource or object.
 
 ### To change an unassigned symbol
 
@@ -124,7 +124,7 @@ In the **Resource Symbols** dialog box, select the symbol that you want to delet
 
 ## Include Symbols
 
-The first time the development environment reads a resource file created by another application, it marks all included header files as read-only. Though you can use the [Resource Includes dialog box](../windows/resource-includes-dialog-box.md) to add additional read-only symbol header files.
+The first time the development environment reads a resource file created by another application, it marks all included header files as read-only. Though you can use the [Resource Includes dialog box](./how-to-include-resources-at-compile-time.md) to add additional read-only symbol header files.
 
 One reason you may want to use read-only symbol definitions is for symbol files that you plan to share among several projects.
 
@@ -148,7 +148,7 @@ The environment will correctly interpret these calculated symbols as long as:
 
 ### To include shared (read-only) symbols in your resource file
 
-1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click your *.rc* file and select [Resource Includes](../windows/resource-includes-dialog-box.md).
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click your *.rc* file and select [Resource Includes](./how-to-include-resources-at-compile-time.md).
 
 1. In the **Read-only symbol directives** box, use the `#include` compiler directive to specify the file where you want the read-only symbols to be kept.
 
@@ -167,7 +167,7 @@ The environment will correctly interpret these calculated symbols as long as:
 
 ### To change the name of the resource symbol header file
 
-1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click your *.rc* file and choose [Resource Includes](../windows/resource-includes-dialog-box.md).
+1. In [Resource View](how-to-create-a-resource-script-file.md#create-resources), right-click your *.rc* file and choose [Resource Includes](./how-to-include-resources-at-compile-time.md).
 
 1. In the **Symbol header file** box, type the new name for the include file.
 

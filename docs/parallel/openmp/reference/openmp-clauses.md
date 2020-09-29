@@ -55,7 +55,7 @@ The `threadprivate` variable that will be initialized with the variable's value 
 - [for](openmp-directives.md#for-openmp)
 - [sections](openmp-directives.md#sections-openmp)
 
-For more information, see [2.7.2.7 copyin](../../../parallel/openmp/2-7-2-7-copyin.md).
+For more information, see [2.7.2.7 copyin](../2-directives.md#2727-copyin).
 
 ### Example
 
@@ -78,7 +78,7 @@ One or more variables to share. If more than one variable is specified, separate
 
 `copyprivate` applies to the [single](openmp-directives.md#single) directive.
 
-For more information, see [2.7.2.8 copyprivate](../../../parallel/openmp/2-7-2-8-copyprivate.md).
+For more information, see [2.7.2.8 copyprivate](../2-directives.md#2728-copyprivate).
 
 ### Example
 
@@ -164,7 +164,7 @@ default(shared | none)
 - [for](openmp-directives.md#for-openmp)
 - [sections](openmp-directives.md#sections-openmp)
 
-For more information, see [2.7.2.5 default](../../../parallel/openmp/2-7-2-5-default.md).
+For more information, see [2.7.2.5 default](../2-directives.md#2725-default).
 
 ### Example
 
@@ -192,7 +192,7 @@ The variable to have instances in each thread and that will be initialized with 
 - [sections](openmp-directives.md#sections-openmp)
 - [single](openmp-directives.md#single)
 
-For more information, see [2.7.2.2 firstprivate](../../../parallel/openmp/2-7-2-2-firstprivate.md).
+For more information, see [2.7.2.2 firstprivate](../2-directives.md#2722-firstprivate).
 
 ### Example
 
@@ -219,7 +219,7 @@ An integral expression that, if it evaluates to true (nonzero), causes the code 
 - [for](openmp-directives.md#for-openmp)
 - [sections](openmp-directives.md#sections-openmp)
 
-For more information, see [2.3 parallel construct](../../../parallel/openmp/2-3-parallel-construct.md).
+For more information, see [2.3 parallel construct](../2-directives.md#23-parallel-construct).
 
 ### Example
 
@@ -277,7 +277,7 @@ The variable that is set equal to the private version of whichever thread execut
 - [for](openmp-directives.md#for-openmp)
 - [sections](openmp-directives.md#sections-openmp)
 
-For more information, see [2.7.2.3 lastprivate](../../../parallel/openmp/2-7-2-3-lastprivate.md).
+For more information, see [2.7.2.3 lastprivate](../2-directives.md#2723-lastprivate).
 
 ### Example
 
@@ -299,7 +299,7 @@ nowait
 - [sections](openmp-directives.md#sections-openmp)
 - [single](openmp-directives.md#single)
 
-For more information, see [2.4.1 for construct](../../../parallel/openmp/2-4-1-for-construct.md), [2.4.2 sections construct](../../../parallel/openmp/2-4-2-sections-construct.md), and [2.4.3 single construct](../../../parallel/openmp/2-4-3-single-construct.md).
+For more information, see [2.4.1 for construct](../2-directives.md#241-for-construct), [2.4.2 sections construct](../2-directives.md#242-sections-construct), and [2.4.3 single construct](../2-directives.md#243-single-construct).
 
 ### Example
 
@@ -371,7 +371,7 @@ The `num_threads` clause has the same functionality as the [omp_set_num_threads]
 - [for](openmp-directives.md#for-openmp)
 - [sections](openmp-directives.md#sections-openmp)
 
-For more information, see [2.3 parallel construct](../../../parallel/openmp/2-3-parallel-construct.md).
+For more information, see [2.3 parallel construct](../2-directives.md#23-parallel-construct).
 
 ### Example
 
@@ -389,7 +389,7 @@ ordered
 
 `ordered` applies to the [for](openmp-directives.md#for-openmp) directive.
 
-For more information, see [2.4.1 for construct](../../../parallel/openmp/2-4-1-for-construct.md).
+For more information, see [2.4.1 for construct](../2-directives.md#241-for-construct).
 
 ### Example
 
@@ -417,7 +417,7 @@ The variable to have instances in each thread.
 - [sections](openmp-directives.md#sections-openmp)
 - [single](openmp-directives.md#single)
 
-For more information, see [2.7.2.1 private](../../../parallel/openmp/2-7-2-1-private.md).
+For more information, see [2.7.2.1 private](../2-directives.md#2721-private).
 
 ### Example
 
@@ -621,7 +621,7 @@ One or more variables on which to do scalar reduction. If more than one variable
 - [for](openmp-directives.md#for-openmp)
 - [sections](openmp-directives.md#sections-openmp)
 
-For more information, see [2.7.2.6 reduction](../../../parallel/openmp/2-7-2-6-reduction.md).
+For more information, see [2.7.2.6 reduction](../2-directives.md#2726-reduction).
 
 ### Example
 
@@ -754,7 +754,7 @@ The kind of scheduling, either `dynamic`, `guided`, `runtime`, or `static`.
 
 ### Remarks
 
-For more information, see [2.4.1 for construct](../../../parallel/openmp/2-4-1-for-construct.md).
+For more information, see [2.4.1 for construct](../2-directives.md#241-for-construct).
 
 ### Example
 
@@ -893,7 +893,7 @@ Another way to share variables among threads is with the [copyprivate](#copypriv
 - [for](openmp-directives.md#for-openmp)
 - [sections](openmp-directives.md#sections-openmp)
 
-For more information, see [2.7.2.4 shared](../../../parallel/openmp/2-7-2-4-shared.md).
+For more information, see [2.7.2.4 shared](../2-directives.md#2724-shared).
 
 ### Example
 

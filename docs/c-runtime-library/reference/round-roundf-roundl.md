@@ -124,4 +124,4 @@ roundl(-2.499999900000000163657887242152355611324310302734375) is -2
 [lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)\
 [lround, lroundf, lroundl, llround, llroundf, llroundl](lround-lroundf-lroundl-llround-llroundf-llroundl.md)\
 [nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)\
-[rint, rintf, rintl](rint-rintf-rintl.md)\
+[rint, rintf, rintl](rint-rintf-rintl.md)
