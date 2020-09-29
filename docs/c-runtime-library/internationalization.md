@@ -9,11 +9,15 @@ ms.assetid: ee536a04-3558-4729-8e10-6dabcde055fd
 
 # Internationalization
 
-The Microsoft runtime library provides many routines that you can use to customize your app for international markets. This includes [locale-related routines](../c-runtime-library/locale.md), wide-character routines, multibyte-character routines, and generic-text routines.
+The Microsoft runtime library provides many routines that you can use to customize your app for international markets such as:
+- [locale-related routines](../c-runtime-library/locale.md)
+- wide-character routines
+- multibyte-character routines
+- generic-text routines
 
-For convenience, most locale-related routines are also categorized by what they do. 
+For convenience, most locale-related routines are also categorized by what they do.
 
-In this section, and in the alphabetic reference, multibyte and wide-character routines are described along with their single-byte-character counterparts, when they exist.
+Multibyte routines and wide-character routines are described alongside their single-byte-character counterparts, when they exist.
 
 ISO646 operator alternatives are also included.
 
