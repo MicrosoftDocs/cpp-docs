@@ -185,7 +185,7 @@ void b() {
 }
 ```
 
-## Example: local declarations and using declarations
+## Example: Local declarations and using declarations
 
 With respect to functions in namespaces, if a set of local declarations and using declarations for a single name are given in a declarative region, they must all refer to the same entity, or they must all refer to functions.
 
@@ -208,7 +208,7 @@ void g() {
 
 In the example above, the `using B::i` statement causes a second `int i` to be declared in the `g()` function. The `using B::f` statement does not conflict with the `f(char)` function because the function names introduced by `B::f` have different parameter types.
 
-## Example: local function declarations and using declarations
+## Example: Local function declarations and using declarations
 
 A local function declaration cannot have the same name and type as a function introduced by using declaration. For example:
 

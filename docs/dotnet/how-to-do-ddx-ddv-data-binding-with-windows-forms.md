@@ -50,7 +50,7 @@ void CMFC01Dlg::DoDataExchange(CDataExchange* pDX)
 }
 ```
 
-## Example: Add the handler method
+## Example: Add handler method
 
 Now we will add the handler method for a click on the OK button. Click the **Resource View** tab. In Resource View, double-click on `IDD_MFC01_DIALOG`. The dialog resource appears in Resource Editor. Then double click the OK button..
 
