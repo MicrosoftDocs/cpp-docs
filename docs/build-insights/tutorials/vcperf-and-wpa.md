@@ -113,10 +113,10 @@ Other views are available in the Graph Explorer panel. Drag them into the Analys
 [Tutorial: Windows Performance Analyzer basics](wpa-basics.md)\
 Learn about common WPA operations that can help you analyze your build traces.
 
-[Reference: vcperf commands](/cpp/build-insights/reference/vcperf-commands)\
+[Reference: vcperf commands](../reference/vcperf-commands.md)\
 The *vcperf.exe* command reference lists all the available command options.
 
-[Reference: Windows Performance Analyzer views](/cpp/build-insights/reference/wpa-views)\
+[Reference: Windows Performance Analyzer views](../reference/wpa-views.md)\
 Refer to this article for details about the C++ Build Insights views in WPA.
 
 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)\

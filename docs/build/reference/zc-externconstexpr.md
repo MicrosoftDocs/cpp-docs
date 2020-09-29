@@ -30,4 +30,4 @@ If a header file contains a variable declared `extern constexpr`, it must be mar
 ## See also
 
 [`/Zc` (Conformance)](zc-conformance.md)<br/>
-[`auto` Keyword](../../cpp/auto-keyword.md)
+[`auto` Keyword](../../cpp/auto-cpp.md)

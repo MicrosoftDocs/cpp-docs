@@ -45,7 +45,7 @@ There are often times you want a menu command and a keyboard combination to issu
 
    The menu command in the **Menu Editor** is updated to reflect the new caption as you type it.
 
-1. [Create the accelerator-table entry](../windows/adding-an-entry-to-an-accelerator-table.md) in the **Accelerator** editor and assign it the same identifier as the menu command. Use a key combination that you think will be easy to remember.
+1. [Create the accelerator-table entry](./accelerator-editor.md) in the **Accelerator** editor and assign it the same identifier as the menu command. Use a key combination that you think will be easy to remember.
 
 Your MFC application can display descriptive text for each of the menu commands a user may select. Display descriptive text by assigning a text string to each menu command using the **Prompt** property in the **Properties** window. If you have a string in the [string table](../windows/string-editor.md) whose ID is the same as the command, an MFC application will automatically display this string resource in the status bar of the running application when a user hovers over a menu item.
 

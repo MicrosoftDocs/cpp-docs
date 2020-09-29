@@ -25,7 +25,7 @@ The procedures use the following names and values:
 
 ### To display a modal dialog box
 
-1. Create the menu command; see [Creating Menus or Menu Items](../windows/creating-a-menu.md).
+1. Create the menu command; see [Creating Menus or Menu Items](../windows/menu-editor.md).
 
 1. Create the dialog box; see [Starting the Dialog Editor](../windows/creating-a-new-dialog-box.md).
 

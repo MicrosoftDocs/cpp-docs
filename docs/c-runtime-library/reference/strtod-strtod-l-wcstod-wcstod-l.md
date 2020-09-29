@@ -90,9 +90,9 @@ The optional leading *whitespace* may consist of space and tab characters, which
 *radix* is the radix point character, either a period (.) in the default "C" locale, or the locale-specific value if the current locale is different or when *locale* is specified.\
  A *sequence* is a sequence of alphanumeric or underscore characters.
 
-In both decimal and hexadecimal number forms, if no digits appear before the radix point character, at least one must appear after the radix point character. 
+In both decimal and hexadecimal number forms, if no digits appear before the radix point character, at least one must appear after the radix point character.
 
-In the decimal form, the decimal digits can be followed by an exponent, which consists of an introductory letter (**e** or **E**) and an optionally signed integer. 
+In the decimal form, the decimal digits can be followed by an exponent, which consists of an introductory letter (**e** or **E**) and an optionally signed integer.
 
 In the hexadecimal form, the hexadecimal digits can be followed by an exponent, which consists of an introductory letter (**p** or **P**) and an optionally signed decimal integer that represents the exponent as a power of 2.
 

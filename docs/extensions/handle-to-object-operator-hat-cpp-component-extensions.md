@@ -7,7 +7,7 @@ ms.assetid: 70c411e6-be57-4468-a944-6ea7be89f392
 ---
 # Handle to Object Operator (^)  (C++/CLI and C++/CX)
 
-The *handle declarator* (`^`, pronounced "hat"), modifies the type [specifier](../cpp/overview-of-declarators.md) to mean that the declared object should be automatically deleted when the system determines that the object is no longer accessible.
+The *handle declarator* (`^`, pronounced "hat"), modifies the type [specifier](../cpp/declarations-and-definitions-cpp.md) to mean that the declared object should be automatically deleted when the system determines that the object is no longer accessible.
 
 ## Accessing the Declared Object
 
