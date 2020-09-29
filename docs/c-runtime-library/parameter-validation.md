@@ -1,6 +1,8 @@
 ---
 title: "Parameter Validation"
+description: "A description of parameter validation in the Microsoft C runtime library."
 ms.date: "11/04/2016"
+ms.topic: "conceptual"
 helpviewer_keywords: ["parameters, validation"]
 ms.assetid: 019dd5f0-dc61-4d2e-b4e9-b66409ddf1f2
 ---

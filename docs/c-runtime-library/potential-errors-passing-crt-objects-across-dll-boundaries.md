@@ -1,6 +1,8 @@
 ---
 title: "Potential Errors Passing CRT Objects Across DLL Boundaries"
+description: "An overview of potential problems you may encounter when passing Microsoft C runtime objects across a dynamic link library (DLL) boundary."
 ms.date: "11/04/2016"
+ms.topic: "conceptual"
 helpviewer_keywords: ["DLL conflicts [C++]"]
 ms.assetid: c217ffd2-5d9a-4678-a1df-62a637a96460
 ---

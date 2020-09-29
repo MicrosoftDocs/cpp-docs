@@ -1,6 +1,8 @@
 ---
 title: "Secure Template Overloads"
+description: "A description of Microsoft C runtime template overloads that provide security-enhanced functions."
 ms.date: "11/04/2016"
+ms.topic: "conceptual"
 f1_keywords: ["_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES", "_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES", "_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT"]
 helpviewer_keywords: ["_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES", "_CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES", "_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT", "secure template overloads"]
 ms.assetid: 562741d0-39c0-485e-8529-73d740f29f8f

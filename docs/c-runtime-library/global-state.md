@@ -1,6 +1,7 @@
 ---
 title: "Global state in the CRT"
-description: "Describes how shared global state is handled in the Universal C Runtime." 
+description: "Describes how shared global state is handled in the Microsoft Universal C Runtime." 
+ms.topic: "conceptual"
 ms.date: "04/02/2020"
 helpviewer_keywords: ["CRT global state"]
 ---

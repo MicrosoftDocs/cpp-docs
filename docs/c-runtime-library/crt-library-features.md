@@ -1,7 +1,8 @@
 ---
 title: "CRT Library Features"
-description: "The files that contain the Microsoft C run-time libraries, and their associated compiler options and preprocessor directives."
+description: "List of files that contain the Microsoft C run-time libraries, and their associated compiler options and preprocessor directives."
 ms.date: 09/03/2020
+ms.topic: "conceptual"
 helpviewer_keywords: ["MSVCR71.dll", "libraries [C++], multithreaded", "library files, run-time", "LIBCMT.lib", "LIBCP.lib", "LIBCPMT.lib", "run-time libraries, C", "CRT, release versions", "MSVCP71.dll", "LIBC.lib", "libraries [C++]", "libraries [C++], run-time", "linking [C++], libraries"]
 ms.assetid: a889fd39-807d-48f2-807f-81492612463f
 ---

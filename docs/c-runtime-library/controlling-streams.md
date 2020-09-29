@@ -1,6 +1,8 @@
 ---
 title: "Controlling Streams"
+description: "An overview of working with streams in the Microsoft C runtime library."
 ms.date: "11/04/2016"
+ms.topic: "conceptual"
 f1_keywords: ["Controlling Streams"]
 helpviewer_keywords: ["streams, controlling", "controlling streams", "streams"]
 ms.assetid: 267e9013-9afc-45f6-91e3-ca093230d9d9

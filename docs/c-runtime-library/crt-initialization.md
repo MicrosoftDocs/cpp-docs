@@ -1,12 +1,14 @@
 ---
 title: "CRT Initialization"
+description: "Describes how the CRT initializes global state in native code."
+ms.topic: "conceptual"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CRT initialization [C++]"]
 ms.assetid: e7979813-1856-4848-9639-f29c86b74ad7
 ---
 # CRT Initialization
 
-This topic describes how the CRT initializes global states in native code.
+This topic describes how the CRT initializes global state in native code.
 
 By default, the linker includes the CRT library, which provides its own startup code. This startup code initializes the CRT library, calls global initializers, and then calls the user-provided `main` function for console applications.
 

@@ -1,6 +1,8 @@
 ---
 title: "UNIX"
+description: "Guidelines for porting your program to Unix."
 ms.date: "11/04/2016"
+ms.topic: "conceptual"
 f1_keywords: ["unix"]
 helpviewer_keywords: ["UNIX", "POSIX compatibility", "POSIX file names", "UNIX, compatibility"]
 ms.assetid: 40792414-7a5b-415d-bfa8-2bfb1ebb3731

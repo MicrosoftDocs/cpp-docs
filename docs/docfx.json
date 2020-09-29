@@ -96,6 +96,7 @@
         "atl-mfc-shared/**.md": "reference",
         "build/reference/**.md": "reference",
         "c-language/**.md": "language-reference",
+        "c-runtime-library/**.md": "reference",
         "c-runtime-library/reference/**.md": "reference",
         "code-quality/**.md": "reference",
         "cpp/**.md": "language-reference",

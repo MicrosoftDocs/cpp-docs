@@ -1,6 +1,8 @@
 ---
 title: "Text and Binary Streams"
+description: "A description of text and binary streams in the Microsoft C runtime library."
 ms.date: "11/04/2016"
+ms.topic: "conceptual"
 helpviewer_keywords: ["binary streams", "text streams"]
 ms.assetid: 57035e4a-955d-4e04-a560-fcf67ce68b4e
 ---
