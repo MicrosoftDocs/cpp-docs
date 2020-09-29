@@ -22,7 +22,7 @@ Make sure you really need dynamic column binding. You might need it because:
     static ATLCOLUMNINFO* GetColumnInfo(void* pThis, ULONG* pcCols);
     ```
 
-1. Implement the `GetColumnInfo` function. This function lays out how the information is stored. You might need to get properties or other information for this function. You might want to create a macro, similar to the [COLUMN_ENTRY](../../data/oledb/column-entry.md) macro, to add your own information.
+1. Implement the `GetColumnInfo` function. This function lays out how the information is stored. You might need to get properties or other information for this function. You might want to create a macro, similar to the [COLUMN_ENTRY](./macros-and-global-functions-for-ole-db-consumer-templates.md#column_entry) macro, to add your own information.
 
    The following example shows a `GetColumnInfo` function.
 

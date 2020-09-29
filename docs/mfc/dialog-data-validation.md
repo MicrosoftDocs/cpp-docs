@@ -10,7 +10,7 @@ You can specify validation in addition to data exchange by calling DDV functions
 
 You can also define your own custom DDX and DDV routines. For details on this and other aspects of DDX and DDV, see [MFC Technical Note 26](tn026-ddx-and-ddv-routines.md).
 
-The [Add Member Variable Wizard](../ide/add-member-variable-wizard.md) will write all of the DDX and DDV calls in the data map for you.
+The [Add Member Variable Wizard](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard) will write all of the DDX and DDV calls in the data map for you.
 
 ## See also
 

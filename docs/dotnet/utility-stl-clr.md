@@ -242,11 +242,11 @@ The constructor:
 
 `pair(pair<Value1, Value2>% right);`
 
-initializes the stored pair with `right.`[pair::first (STL/CLR)](../dotnet/pair-first-stl-clr.md) and `right.`[pair::second (STL/CLR)](../dotnet/pair-second-stl-clr.md).
+initializes the stored pair with `right.`[pair::first (STL/CLR)](#first) and `right.`[pair::second (STL/CLR)](#second).
 
 `pair(pair<Value1, Value2>^ right);`
 
-initializes the stored pair with `right->`[pair::first (STL/CLR)](../dotnet/pair-first-stl-clr.md) and `right>`[pair::second (STL/CLR)](../dotnet/pair-second-stl-clr.md).
+initializes the stored pair with `right->`[pair::first (STL/CLR)](#first) and `right>`[pair::second (STL/CLR)](#second).
 
 The constructor:
 

@@ -65,7 +65,7 @@ A `COleDateTimeSpan` keeps time in days.
 
 `COleDateTimeSpan` is used with its companion class [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md). `COleDateTime` encapsulates the `DATE` data type of OLE automation. `COleDateTime` represents absolute time values. All `COleDateTime` calculations involve `COleDateTimeSpan` values. The relation between these classes is analogous to the one between [CTime](../../atl-mfc-shared/reference/ctime-class.md) and [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md).
 
-For more information on the `COleDateTime` and `COleDateTimeSpan` classes, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information on the `COleDateTime` and `COleDateTimeSpan` classes, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ## Requirements
 
@@ -134,7 +134,7 @@ All of these constructors create new `COleDateTimeSpan` objects initialized to t
 
 The status of the new `COleDateTimeSpan` object is set to valid.
 
-For more information about the bounds for `COleDateTimeSpan` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTimeSpan` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ### Example
 
@@ -375,7 +375,7 @@ The status of a `COleDateTimeSpan` object is invalid in the following cases:
 
 For more information about the operations that may set the status to invalid, see [COleDateTimeSpan::operator +, -](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_-) and [COleDateTimeSpan::operator +=, -=](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_eq_-_eq).
 
-For more information about the bounds for `COleDateTimeSpan` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTimeSpan` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ## <a name="gettotaldays"></a> COleDateTimeSpan::GetTotalDays
 
@@ -575,7 +575,7 @@ For more information about the operations that may set the status to invalid, se
 > [!CAUTION]
 > This data member is for advanced programming situations. You should use the inline member functions [GetStatus](#getstatus) and [SetStatus](#setstatus). See `SetStatus` for further cautions regarding explicitly setting this data member.
 
-For more information about the bounds for `COleDateTimeSpan` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTimeSpan` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ## <a name="operator_eq"></a> COleDateTimeSpan::operator =
 

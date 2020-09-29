@@ -47,6 +47,7 @@ The default configuration for Linux-Debug in Visual Studio 2017 (and Visual Stud
       "inheritEnvironments": [ "linux-x64" ]
 }
 ```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -91,6 +92,7 @@ In Visual Studio 2019 version 16.6 or later, Ninja is the default generator for 
 For more information about these settings, see [CMakeSettings.json reference](../build/cmakesettings-reference.md).
 
 When you do a build:
+
 - If you're targeting a remote system, Visual Studio chooses the first remote system in the list under **Tools** > **Options** > **Cross Platform** > **Connection Manager** by default for remote targets.
 - If no remote connections are found, you're prompted to create one. For more information, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
 

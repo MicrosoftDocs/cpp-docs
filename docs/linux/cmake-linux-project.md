@@ -61,6 +61,7 @@ To help you make sense of, edit, and author your CMake scripts in Visual Studio 
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
+
 ## Open a CMake project folder
 
 When you open a folder that contains an existing CMake project, Visual Studio uses variables in the CMake cache to automatically configure IntelliSense and builds. Local configuration and debugging settings get stored in JSON files. You can optionally share these files with others who are using Visual Studio.

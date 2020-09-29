@@ -12,4 +12,4 @@ Within one translation unit, each instance of an identifier with internal linkag
 
 ## See also
 
-[Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
+[Using extern to Specify Linkage](../cpp/extern-cpp.md)

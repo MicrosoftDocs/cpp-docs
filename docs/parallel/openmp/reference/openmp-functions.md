@@ -70,7 +70,7 @@ A variable of type `omp_lock_t` that was initialized with [omp_init_lock](#omp-i
 
 ### Remarks
 
-For more information, see [3.2.2 omp_destroy_lock and omp_destroy_nest_lock functions](../../../parallel/openmp/3-2-2-omp-destroy-lock-and-omp-destroy-nest-lock-functions.md).
+For more information, see [3.2.2 omp_destroy_lock and omp_destroy_nest_lock functions](../3-run-time-library-functions.md#322-omp_destroy_lock-and-omp_destroy_nest_lock-functions).
 
 ### Example
 
@@ -93,7 +93,7 @@ A variable of type `omp_nest_lock_t` that was initialized with [omp_init_nest_lo
 
 ### Remarks
 
-For more information, see [3.2.2 omp_destroy_lock and omp_destroy_nest_lock functions](../../../parallel/openmp/3-2-2-omp-destroy-lock-and-omp-destroy-nest-lock-functions.md).
+For more information, see [3.2.2 omp_destroy_lock and omp_destroy_nest_lock functions](../3-run-time-library-functions.md#322-omp_destroy_lock-and-omp_destroy_nest_lock-functions).
 
 ### Example
 
@@ -115,7 +115,7 @@ A nonzero value means threads will be dynamically adjusted.
 
 Dynamic adjustment of threads is specified with [omp_set_dynamic](#omp-set-dynamic) and [OMP_DYNAMIC](openmp-environment-variables.md#omp-dynamic).
 
-For more information, see [3.1.7 omp_set_dynamic function](../../../parallel/openmp/3-1-7-omp-set-dynamic-function.md).
+For more information, see [3.1.7 omp_set_dynamic function](../3-run-time-library-functions.md#317-omp_set_dynamic-function).
 
 ### Example
 
@@ -131,7 +131,7 @@ int omp_get_max_threads( )
 
 ### Remarks
 
-For more information, see [3.1.3 omp_get_max_threads function](../../../parallel/openmp/3-1-3-omp-get-max-threads-function.md).
+For more information, see [3.1.3 omp_get_max_threads function](../3-run-time-library-functions.md#313-omp_get_max_threads-function).
 
 ### Example
 
@@ -187,7 +187,7 @@ A nonzero value means nested parallelism is enabled.
 
 Nested parallelism is specified with [omp_set_nested](#omp-set-nested) and [OMP_NESTED](openmp-environment-variables.md#omp-nested).
 
-For more information, see [3.1.10 omp_get_nested function](../../../parallel/openmp/3-1-10-omp-get-nested-function.md).
+For more information, see [3.1.10 omp_get_nested function](../3-run-time-library-functions.md#3110-omp_get_nested-function).
 
 ### Example
 
@@ -203,7 +203,7 @@ int omp_get_num_procs();
 
 ### Remarks
 
-For more information, see [3.1.5 omp_get_num_procs function](../../../parallel/openmp/3-1-5-omp-get-num-procs-function.md).
+For more information, see [3.1.5 omp_get_num_procs function](../3-run-time-library-functions.md#315-omp_get_num_procs-function).
 
 ### Example
 
@@ -240,7 +240,7 @@ int omp_get_num_threads( );
 
 ### Remarks
 
-For more information, see [3.1.2 omp_get_num_threads function](../../../parallel/openmp/3-1-2-omp-get-num-threads-function.md).
+For more information, see [3.1.2 omp_get_num_threads function](../3-run-time-library-functions.md#312-omp_get_num_threads-function).
 
 ### Example
 
@@ -290,7 +290,7 @@ int omp_get_thread_num( );
 
 ### Remarks
 
-For more information, see [3.1.4 omp_get_thread_num function](../../../parallel/openmp/3-1-4-omp-get-thread-num-function.md).
+For more information, see [3.1.4 omp_get_thread_num function](../3-run-time-library-functions.md#314-omp_get_thread_num-function).
 
 ### Example
 
@@ -306,7 +306,7 @@ double omp_get_wtick( );
 
 ### Remarks
 
-For more information, see [3.3.2 omp_get_wtick function](../../../parallel/openmp/3-3-2-omp-get-wtick-function.md).
+For more information, see [3.3.2 omp_get_wtick function](../3-run-time-library-functions.md#332-omp_get_wtick-function).
 
 ### Example
 
@@ -328,7 +328,7 @@ Returns a value in seconds of the time elapsed from some arbitrary, but consiste
 
 That point will remain consistent during program execution, making upcoming comparisons possible.
 
-For more information, see [3.3.1 omp_get_wtime function](../../../parallel/openmp/3-3-1-omp-get-wtime-function.md).
+For more information, see [3.3.1 omp_get_wtime function](../3-run-time-library-functions.md#331-omp_get_wtime-function).
 
 ### Example
 
@@ -371,7 +371,7 @@ int omp_in_parallel( );
 
 ### Remarks
 
-For more information, see [3.1.6 omp_in_parallel function](../../../parallel/openmp/3-1-6-omp-in-parallel-function.md).
+For more information, see [3.1.6 omp_in_parallel function](../3-run-time-library-functions.md#316-omp_in_parallel-function).
 
 ### Example
 
@@ -416,7 +416,7 @@ A variable of type `omp_lock_t`.
 
 ### Remarks
 
-For more information, see [3.2.1 omp_init_lock and omp_init_nest_lock functions](../../../parallel/openmp/3-2-1-omp-init-lock-and-omp-init-nest-lock-functions.md).
+For more information, see [3.2.1 omp_init_lock and omp_init_nest_lock functions](../3-run-time-library-functions.md#321-omp_init_lock-and-omp_init_nest_lock-functions).
 
 ### Example
 
@@ -510,7 +510,7 @@ A variable of type `omp_nest_lock_t`.
 
 The initial nesting count is zero.
 
-For more information, see [3.2.1 omp_init_lock and omp_init_nest_lock functions](../../../parallel/openmp/3-2-1-omp-init-lock-and-omp-init-nest-lock-functions.md).
+For more information, see [3.2.1 omp_init_lock and omp_init_nest_lock functions](../3-run-time-library-functions.md#321-omp_init_lock-and-omp_init_nest_lock-functions).
 
 ### Example
 
@@ -599,7 +599,7 @@ Use [omp_get_dynamic](#omp-get-dynamic) to display the current setting of `omp_s
 
 The setting for `omp_set_dynamic` will override the setting of the [OMP_DYNAMIC](openmp-environment-variables.md#omp-dynamic) environment variable.
 
-For more information, see [3.1.7 omp_set_dynamic function](../../../parallel/openmp/3-1-7-omp-set-dynamic-function.md).
+For more information, see [3.1.7 omp_set_dynamic function](../3-run-time-library-functions.md#317-omp_set_dynamic-function).
 
 ### Example
 
@@ -644,7 +644,7 @@ A variable of type `omp_lock_t` that was initialized with [omp_init_lock](#omp-i
 
 ### Remarks
 
-For more information, see [3.2.3 omp_set_lock and omp_set_nest_lock functions](../../../parallel/openmp/3-2-3-omp-set-lock-and-omp-set-nest-lock-functions.md).
+For more information, see [3.2.3 omp_set_lock and omp_set_nest_lock functions](../3-run-time-library-functions.md#323-omp_set_lock-and-omp_set_nest_lock-functions).
 
 ### Examples
 
@@ -667,7 +667,7 @@ A variable of type `omp_nest_lock_t` that was initialized with [omp_init_nest_lo
 
 ### Remarks
 
-For more information, see [3.2.3 omp_set_lock and omp_set_nest_lock functions](../../../parallel/openmp/3-2-3-omp-set-lock-and-omp-set-nest-lock-functions.md).
+For more information, see [3.2.3 omp_set_lock and omp_set_nest_lock functions](../3-run-time-library-functions.md#323-omp_set_lock-and-omp_set_nest_lock-functions).
 
 ### Examples
 
@@ -698,7 +698,7 @@ Enabling the environment variable can break an otherwise operational program, be
 
 Use [omp_get_nested](#omp-get-nested) to display the current setting of `omp_set_nested`.
 
-For more information, see [3.1.9 omp_set_nested function](../../../parallel/openmp/3-1-9-omp-set-nested-function.md).
+For more information, see [3.1.9 omp_set_nested function](../3-run-time-library-functions.md#319-omp_set_nested-function).
 
 ### Example
 
@@ -743,7 +743,7 @@ The number of threads in the parallel region.
 
 ### Remarks
 
-For more information, see [3.1.1 omp_set_num_threads function](../../../parallel/openmp/3-1-1-omp-set-num-threads-function.md).
+For more information, see [3.1.1 omp_set_num_threads function](../3-run-time-library-functions.md#311-omp_set_num_threads-function).
 
 ### Example
 
@@ -766,7 +766,7 @@ A variable of type `omp_lock_t` that was initialized with [omp_init_lock](#omp-i
 
 ### Remarks
 
-For more information, see [3.2.5 omp_test_lock and omp_test_nest_lock functions](../../../parallel/openmp/3-2-5-omp-test-lock-and-omp-test-nest-lock-functions.md).
+For more information, see [3.2.5 omp_test_lock and omp_test_nest_lock functions](../3-run-time-library-functions.md#325-omp_test_lock-and-omp_test_nest_lock-functions).
 
 ### Example
 
@@ -839,7 +839,7 @@ A variable of type `omp_nest_lock_t` that was initialized with [omp_init_nest_lo
 
 ### Remarks
 
-For more information, see [3.2.5 omp_test_lock and omp_test_nest_lock functions](../../../parallel/openmp/3-2-5-omp-test-lock-and-omp-test-nest-lock-functions.md).
+For more information, see [3.2.5 omp_test_lock and omp_test_nest_lock functions](../3-run-time-library-functions.md#325-omp_test_lock-and-omp_test_nest_lock-functions).
 
 ### Example
 
@@ -930,7 +930,7 @@ A variable of type `omp_lock_t` that was initialized with [omp_init_lock](#omp-i
 
 ### Remarks
 
-For more information, see [3.2.4 omp_unset_lock and omp_unset_nest_lock functions](../../../parallel/openmp/3-2-4-omp-unset-lock-and-omp-unset-nest-lock-functions.md).
+For more information, see [3.2.4 omp_unset_lock and omp_unset_nest_lock functions](../3-run-time-library-functions.md#324-omp_unset_lock-and-omp_unset_nest_lock-functions).
 
 ### Example
 
@@ -953,7 +953,7 @@ A variable of type `omp_nest_lock_t` that was initialized with [omp_init_nest_lo
 
 ### Remarks
 
-For more information, see [3.2.4 omp_unset_lock and omp_unset_nest_lock functions](../../../parallel/openmp/3-2-4-omp-unset-lock-and-omp-unset-nest-lock-functions.md).
+For more information, see [3.2.4 omp_unset_lock and omp_unset_nest_lock functions](../3-run-time-library-functions.md#324-omp_unset_lock-and-omp_unset_nest_lock-functions).
 
 ### Example
 

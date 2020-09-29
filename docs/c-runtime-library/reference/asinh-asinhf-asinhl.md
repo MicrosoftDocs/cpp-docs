@@ -45,7 +45,6 @@ When you use C++, you can call overloads of **asinh** that take and return **`fl
 
 If you use the \<tgmath.h> `asinh()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
-
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements

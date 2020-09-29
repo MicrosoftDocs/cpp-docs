@@ -109,7 +109,7 @@ int main()
 
 The following code example shows how to read binary data from a file, by using two classes from the <xref:System.IO?displayProperty=fullName> namespace: <xref:System.IO.FileStream> and <xref:System.IO.BinaryReader>. <xref:System.IO.FileStream> represents the actual file. <xref:System.IO.BinaryReader> provides an interface to the stream that allows binary access.
 
-The code example reads a file that's named data.bin and contains integers in binary format. For information about this kind of file, see [How to: Write a Binary File (C++/CLI)](../dotnet/how-to-write-a-binary-file-cpp-cli.md).
+The code example reads a file that's named data.bin and contains integers in binary format. For information about this kind of file, see [How to: Write a Binary File (C++/CLI)](#write_binary).
 
 ### Example
 
@@ -150,7 +150,7 @@ int main()
 
 The following code example demonstrates how to open and read a text file one line at a time, by using the <xref:System.IO.StreamReader> class that's defined in the <xref:System.IO?displayProperty=fullName> namespace. An instance of this class is used to open a text file and then the <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=fullName> method is used to retrieve each line.
 
-This code example reads a file that's named textfile.txt and contains text. For information about this kind of file, see [How to: Write a Text File (C++/CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md).
+This code example reads a file that's named textfile.txt and contains text. For information about this kind of file, see [How to: Write a Text File (C++/CLI)](#write_text).
 
 ### Example
 
@@ -234,7 +234,7 @@ int main()
 
 The following code example demonstrates writing binary data to a file. Two classes from the <xref:System.IO> namespace are used: <xref:System.IO.FileStream> and <xref:System.IO.BinaryWriter>. <xref:System.IO.FileStream> represents the actual file, while <xref:System.IO.BinaryWriter> provides an interface to the stream that allows binary access.
 
-The following code example writes a file containing integers in binary format. This file can be read with the code in [How to: Read a Binary File (C++/CLI)](../dotnet/how-to-read-a-binary-file-cpp-cli.md).
+The following code example writes a file containing integers in binary format. This file can be read with the code in [How to: Read a Binary File (C++/CLI)](#read_binary).
 
 ### Example
 

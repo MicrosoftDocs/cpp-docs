@@ -425,7 +425,7 @@ size_type capacity();
 
 ### Remarks
 
-The member function returns the storage currently allocated to hold the controlled sequence, a value at least as large as [vector::size (STL/CLR)](../dotnet/vector-size-stl-clr.md)`()`. You use it to determine how much the container can grow before it must reallocate storage for the controlled sequence.
+The member function returns the storage currently allocated to hold the controlled sequence, a value at least as large as [vector::size (STL/CLR)](#size)`()`. You use it to determine how much the container can grow before it must reallocate storage for the controlled sequence.
 
 ### Example
 
@@ -475,7 +475,7 @@ void clear();
 
 ### Remarks
 
-The member function effectively calls [vector::erase (STL/CLR)](../dotnet/vector-erase-stl-clr.md)`(` [vector::begin (STL/CLR)](../dotnet/vector-begin-stl-clr.md)`(),` [vector::end (STL/CLR)](../dotnet/vector-end-stl-clr.md)`())`. You use it to ensure that the controlled sequence is empty.
+The member function effectively calls [vector::erase (STL/CLR)](#erase)`(` [vector::begin (STL/CLR)](#begin)`(),` [vector::end (STL/CLR)](#end)`())`. You use it to ensure that the controlled sequence is empty.
 
 ### Example
 
@@ -713,7 +713,7 @@ bool empty();
 
 ### Remarks
 
-The member function returns true for an empty controlled sequence. It is equivalent to [vector::size (STL/CLR)](../dotnet/vector-size-stl-clr.md)`() == 0`. You use it to test whether the vector is empty.
+The member function returns true for an empty controlled sequence. It is equivalent to [vector::size (STL/CLR)](#size)`() == 0`. You use it to test whether the vector is empty.
 
 ### Example
 
@@ -836,7 +836,7 @@ The first member function removes the element of the controlled sequence pointed
 
 The second member function removes the elements of the controlled sequence in the range [`first`, `last`). You use it to remove zero or more contiguous elements.
 
-Both member functions return an iterator that designates the first element remaining beyond any elements removed, or [vector::end (STL/CLR)](../dotnet/vector-end-stl-clr.md)`()` if no such element exists.
+Both member functions return an iterator that designates the first element remaining beyond any elements removed, or [vector::end (STL/CLR)](#end)`()` if no such element exists.
 
 When erasing elements, the number of element copies is linear in the number of elements between the end of the erasure and the nearer end of the sequence. (When erasing one or more elements at either end of the sequence, no element copies occur.)
 
@@ -1818,7 +1818,7 @@ Value of the padding element.
 
 ### Remarks
 
-The member functions both ensure that [vector::size (STL/CLR)](../dotnet/vector-size-stl-clr.md)`()` henceforth returns *new_size*. If it must make the controlled sequence longer, the first member function appends elements with value `value_type()`, while the second member function appends elements with value *val*. To make the controlled sequence shorter, both member functions effectively erase the last element [vector::size (STL/CLR)](../dotnet/vector-size-stl-clr.md)`() -` `new_size` times. You use it to ensure that the controlled sequence has size *new_size*, by either trimming or padding the current controlled sequence.
+The member functions both ensure that [vector::size (STL/CLR)](#size)`()` henceforth returns *new_size*. If it must make the controlled sequence longer, the first member function appends elements with value `value_type()`, while the second member function appends elements with value *val*. To make the controlled sequence shorter, both member functions effectively erase the last element [vector::size (STL/CLR)](#size)`() -` `new_size` times. You use it to ensure that the controlled sequence has size *new_size*, by either trimming or padding the current controlled sequence.
 
 ### Example
 
@@ -1918,7 +1918,7 @@ size_type size();
 
 ### Remarks
 
-The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [vector::empty (STL/CLR)](../dotnet/vector-empty-stl-clr.md)`()`.
+The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [vector::empty (STL/CLR)](#empty)`()`.
 
 ### Example
 

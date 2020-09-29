@@ -57,7 +57,7 @@ Some data conversions require a marshal context. For more information about whic
 
 ### Example
 
-See the example for [marshal_context::marshal_as](../dotnet/marshal-context-marshal-as.md).
+See the example for [marshal_context::marshal_as](#marshal-as).
 
 ## <a name="tilde-marshal-context"></a> marshal_context::~marshal_context
 

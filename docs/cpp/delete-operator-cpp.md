@@ -40,7 +40,7 @@ When **`delete`** is used to deallocate memory for a C++ class object, the objec
 
 If the operand to the **`delete`** operator is a modifiable l-value, its value is undefined after the object is deleted.
 
-If the [/sdl (Enable additional security checks)](/cpp/build/reference/sdl-enable-additional-security-checks) compiler option is specified, the operand to the **`delete`** operator is set to an invalid value after the object is deleted.
+If the [/sdl (Enable additional security checks)](../build/reference/sdl-enable-additional-security-checks.md) compiler option is specified, the operand to the **`delete`** operator is set to an invalid value after the object is deleted.
 
 ## Using delete
 

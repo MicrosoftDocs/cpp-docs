@@ -93,7 +93,7 @@ You can create a new custom or data resource by placing the resource in a separa
 
 1. Select **OK** to record your changes.
 
-Another way to create a custom resource is to import an external file as the custom resource, see [How to: Manage Resources](../windows/how-to-import-and-export-resources.md).
+Another way to create a custom resource is to import an external file as the custom resource, see [How to: Manage Resources](./how-to-copy-resources.md).
 
 > [!NOTE]
 > Creating new custom or data resources requires Win32.
