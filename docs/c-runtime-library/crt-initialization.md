@@ -32,11 +32,11 @@ int main()
 
 According to the C/C++ standard, `func()` must be called before `main()` is executed. But who calls it?
 
-One way to determine this is to set a breakpoint in `func()`, debug the application, and examine the stack. This is possible because the CRT source code is included with Visual Studio.
+One way to determine the caller is to set a breakpoint in `func()`, debug the application, and examine the stack. This is possible because the CRT source code is included with Visual Studio.
 
-When you browse the functions on the stack, you'll see that the CRT is looping through a list of function pointers and calling each one. These functions are similar to `func()`, or constructors for class instances.
+When you browse the functions on the stack, you'll see that the CRT is calling a list of function pointers. These functions are similar to `func()`, or constructors for class instances.
 
-The CRT gets the list of function pointers from the Microsoft C++ compiler. When the compiler sees a global initializer, it generates a dynamic initializer in the `.CRT$XCU` section where `CRT` is the section name and `XCU` is the group name. To obtain a list of dynamic initializers, run the command **dumpbin /all main.obj**, and then search the `.CRT$XCU` section. This applies when main.cpp is compiled as a C++ file, not a C file.. It will be similar to the following:
+The CRT gets the list of function pointers from the Microsoft C++ compiler. When the compiler sees a global initializer, it generates a dynamic initializer in the `.CRT$XCU` section where `CRT` is the section name and `XCU` is the group name. To get a list of dynamic initializers, run the command **dumpbin /all main.obj**, and then search the `.CRT$XCU` section. This applies when main.cpp is compiled as a C++ file, not a C file. It will be similar to the following example:
 
 ```
 SECTION HEADER #6
@@ -58,10 +58,10 @@ RAW DATA #6
   00000000: 00 00 00 00                                      ....
 
 RELOCATIONS #6
-                                                Symbol    Symbol
+                                               Symbol    Symbol
 Offset    Type              Applied To         Index     Name
---------  ----------------  -----------------  --------  ------
-00000000  DIR32                      00000000         C  ??__Egi@@YAXXZ (void __cdecl `dynamic initializer for 'gi''(void))
+--------  ----------------  -----------------  --------  -------
+00000000  DIR32             00000000           C         ??__Egi@@YAXXZ (void __cdecl `dynamic initializer for 'gi''(void))
 ```
 
 The CRT defines two pointers:
@@ -74,7 +74,7 @@ Neither group has any other symbols defined except `__xc_a` and `__xc_z`.
 
 Now, when the linker reads various `.CRT` groups, it combines them in one section and orders them alphabetically. This means that the user-defined global initializers (which the Microsoft C++ compiler puts in `.CRT$XCU`) will always come after `.CRT$XCA` and before `.CRT$XCZ`.
 
-The section will resemble the following:
+The section will resemble the following example:
 
 ```
 .CRT$XCA

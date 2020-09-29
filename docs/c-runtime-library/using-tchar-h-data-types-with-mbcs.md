@@ -14,7 +14,7 @@ As the table of generic-text routine mappings indicates (see [Generic-Text Mappi
 
 - An SBCS routine that handles multibyte bytes, characters, and strings appropriately. In this case, the string arguments are expected to be of type **char&#42;**. For example, **_tprintf** maps to **printf**; the string arguments to **printf** are of type **char&#42;**. If you use the **_TCHAR** generic-text data type for your string types, the formal and actual parameter types for **printf** match because **_TCHAR&#42;** maps to **char&#42;**.
 
-- An MBCS-specific routine. In this case, the string arguments are expected to be of type __unsigned char&#42;__. For example, **_tcsrev** maps to **_mbsrev**, which expects and returns a string of type __unsigned char&#42;__. Again, if you use the **_TCHAR** generic-text data type for your string types, there is a potential type conflict because **_TCHAR** maps to type **`char`**.
+- An MBCS-specific routine. In this case, the string arguments are expected to be of type __unsigned char&#42;__. For example, **_tcsrev** maps to **_mbsrev**, which expects and returns a string of type __unsigned char&#42;__. Again, if you use the **_TCHAR** generic-text data type for your string types, there's a potential type conflict because **_TCHAR** maps to type **`char`**.
 
 Following are three solutions for preventing this type conflict (and the C compiler warnings or C++ compiler errors that would result):
 
@@ -24,7 +24,7 @@ Following are three solutions for preventing this type conflict (and the C compi
    char *_tcsrev(char *);
    ```
 
-   In the default case, the prototype for **_tcsrev** maps to **_mbsrev** through a thunk in LIBC.LIB. This changes the types of the **_mbsrev** incoming parameters and outgoing return value from **_TCHAR &#42;** (such as **char &#42;**) to **unsigned char &#42;**. This method ensures type matching when you are using **_TCHAR**, but it is relatively slow because of the function call overhead.
+   In the default case, the prototype for **_tcsrev** maps to **_mbsrev** through a thunk in LIBC.LIB. This changes the types of the **_mbsrev** incoming parameters and outgoing return value from **_TCHAR &#42;** (such as **char &#42;**) to **unsigned char &#42;**. This method ensures type matching when you're using **_TCHAR**, but it's relatively slow because of the function call overhead.
 
 - Use function inlining by incorporating the following preprocessor statement in your code.
 
@@ -47,7 +47,7 @@ Following are three solutions for preventing this type conflict (and the C compi
    #define _MB_MAP_DIRECT
    ```
 
-   This approach provides a quick alternative if you do not want to use the default behavior or cannot use inlining. A macro maps the generic-text routine to the MBCS version of the routine, as in the following example from TCHAR.H.
+   This approach provides a quick alternative if you don't want to use the default behavior or can't use inlining. A macro maps the generic-text routine to the MBCS version of the routine, as in the following example from TCHAR.H.
 
    ```C
    #define _tcschr _mbschr
