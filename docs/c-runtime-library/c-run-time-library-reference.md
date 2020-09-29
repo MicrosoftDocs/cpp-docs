@@ -1,5 +1,6 @@
 ---
 title: "C Run-Time Library Reference"
+description: "Links to information and reference for the Microsoft C runtime library functions."
 ms.date: "11/04/2016"
 f1_keywords: ["c.runtime"]
 helpviewer_keywords: ["CRT", "run-time libraries", "CRT, reference"]
