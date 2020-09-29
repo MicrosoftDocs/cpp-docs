@@ -92,7 +92,7 @@ ref class ClassC {};   // Positional argument
 ref class ClassD {};   // Positional and named
 ```
 
-## Example: ONe-dimensional arrays
+## Example: One-dimensional arrays
 
 ### Description
 

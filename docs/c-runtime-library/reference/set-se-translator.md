@@ -133,7 +133,7 @@ In __finally
 Caught a __try exception, error c0000094.
 ```
 
-## Example: Caught SE_Exception error
+## Example: Catch SE_Exception error
 
 Although the functionality provided by **_set_se_translator** is not available in managed code, it is possible to use this mapping in native code, even if that native code is in a compilation under the **/clr** switch, as long as the native code is indicated using `#pragma unmanaged`. If a structured exception is being thrown in managed code that is to be mapped, the code that generates and handles the exception must be marked `#pragma unmanaged`. The following code shows a possible use. For more information, see [Pragma Directives and the __Pragma Keyword](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
 

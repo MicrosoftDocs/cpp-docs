@@ -90,7 +90,7 @@ int main( void )
 'stdin' successfully changed to binary mode
 ```
 
-## Example: _setmode to change stdout
+## Example: Use _setmode to change stdout
 
 ```C
 // crt_setmodeunicode.c

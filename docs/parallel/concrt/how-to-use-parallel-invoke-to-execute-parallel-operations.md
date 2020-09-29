@@ -22,7 +22,7 @@ The following example modifies the previous example to run in parallel. The `par
 
 [!code-cpp[concrt-parallel-word-mining#2](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-execute-parallel-operations_2.cpp)]
 
-## Example: Perform multiple operations on a downloaded file
+## Example: Perform multiple operations on downloaded file
 
 The following example downloads *The Iliad* by Homer from gutenberg.org and performs multiple operations on that file. The example first performs these operations serially and then performs the same operations in parallel.
 
