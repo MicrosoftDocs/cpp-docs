@@ -1,5 +1,7 @@
 ---
 title: "Using Generic-Text Mappings"
+description: "An introduction to Microsoft-specific mappings for data types, routines, and other objects in the C runtime."
+ms.topic: "conceptual"
 ms.date: "11/04/2016"
 f1_keywords: ["_UNICODE"]
 helpviewer_keywords: ["_TXCHAR type", "TINT type", "_TCHAR type", "TSCHAR type", "TEXT type", "TCHAR type", "TCHAR.H data types, mappings defined in", "generic-text data types", "_TINT type", "TUCHAR type", "_UNICODE constant", "TXCHAR type", "generic-text mappings", "_TSCHAR type", "T type", "mappings, generic-text", "_TUCHAR type", "MBCS data type", "_MBCS data type", "_TEXT type", "UNICODE constant", "_T type"]

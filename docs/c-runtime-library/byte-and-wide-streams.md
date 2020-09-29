@@ -1,6 +1,8 @@
 ---
 title: "Byte and Wide Streams"
+description: "An overview of byte streams in the Microsoft C runtime library."
 ms.date: "11/04/2016"
+ms.topic: "conceptual"
 f1_keywords: ["Byte and Wide Streams"]
 helpviewer_keywords: ["byte streams", "wide streams"]
 ms.assetid: 61ef0587-4cbc-4eb8-aae5-4c298dbbc6f9

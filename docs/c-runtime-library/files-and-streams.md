@@ -1,6 +1,8 @@
 ---
 title: "Files and Streams"
+description: "An overview of files and streams in the Microsoft C runtime library."
 ms.date: "11/04/2016"
+ms.topic: "conceptual"
 helpviewer_keywords: ["files [C++]", "streams"]
 ms.assetid: f61e712b-eac9-4c28-bb18-97c3786ef387
 ---
