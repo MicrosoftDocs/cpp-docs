@@ -1,5 +1,7 @@
 ---
 title: "Locale Names, Languages, and Country-Region Strings"
+description: "An overview of using Microsoft Universal CRT locale, language, and country and region strings."
+ms.topic: "conceptual"
 ms.date: "12/10/2018"
 helpviewer_keywords: ["country/region strings", "localization, locale", "locales", "setlocale function", "language strings"]
 ms.assetid: a0e5a0c5-5602-4da0-b65f-de3d6c8530a2
