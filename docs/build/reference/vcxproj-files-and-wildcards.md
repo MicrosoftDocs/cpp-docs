@@ -18,6 +18,8 @@ We've recently seen an increase of reports of related build crashes from custome
 
 We chose the second option, to help people bring their projects into a supported state. The modified projects aren't saved automatically. You'll see warnings in the Output window during solution load that mention automatic wildcards expansion. If you don't want your project modified in this way, you can unload the project without saving it. This behavior is equivalent to the first option, that fails to load the project.
 
+## Mark your project as read-only
+
 In Visual Studio 2019 version 16.7 and later, you can mark projects as *read-only*. To mark your project read-only, add the following property to your *`.vcxproj`* file, or to any of the files it imports:
 
 ```xml
@@ -30,9 +32,9 @@ The `<ReadOnlyProject>` setting prevents Visual Studio from editing and saving t
 
 It's important to know that the project cache isn't available if Visual Studio detects wildcards in project items in the *`.vcxproj`* file or any of its imports. Solution load times in the IDE are much longer if you have lots of projects that use wildcards.
 
-## What if I need to use wildcards and I don't want to make the project read-only
+## Use wildcards in a project that's not read-only
 
-Currently, there's no way to make wildcard expansion items visible in the Solution Explorer window in a non-read-only project. It requires full wildcards support in *`.vcxproj`* projects. Instead, you must change your projects to list all items explicitly.
+Currently, there's no way to make wildcard expansion items visible in the Solution Explorer window in a non-read-only project. That would require full wildcard support in *`.vcxproj`* projects. Instead, you must change your projects to list all items explicitly.
 
 Maybe you don't need to see the wildcard items in the Solution Explorer, but you do want to use wildcards. You might use them for gathering resources, adding generated sources, and so on. If so, you can use this procedure instead:
 
