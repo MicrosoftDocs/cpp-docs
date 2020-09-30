@@ -21,7 +21,7 @@ If you choose to manually edit a *`.vcxproj`* file, be aware of these facts:
    <ClCompile Include="*.cpp"/>
    ```
 
-   For more information on wildcard support in projects, see [`.vcxproj` files and wildcards](vcxproj-files-and-wildcards).
+   For more information on wildcard support in projects, see [`.vcxproj` files and wildcards](vcxproj-files-and-wildcards.md).
 
 1. The Visual Studio C++ project system currently doesn't support macros in project item paths. For example, this form isn't supported:
 
