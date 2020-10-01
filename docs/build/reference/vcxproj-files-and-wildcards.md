@@ -19,13 +19,13 @@ These construct examples aren't supported by the IDE:
 </ItemGroup>
 ```
 
-In versions of Visual Studio before 16.7, if a `.vcxproj` project file that includes these constructs gets loaded in the IDE, the project may seem to work at first. However, issues are likely as soon as the project is modified by Visual Studio and then saved on disk. You may experience random crashes and undefined behavior.
+If a `.vcxproj` project file that includes these constructs gets loaded in the IDE, the project may seem to work at first. However, issues are likely as soon as the project is modified by Visual Studio and then saved on disk. You may experience random crashes and undefined behavior.
 
-To mitigate this problem, starting in Visual Studio 2019 version 16.7, when Visual Studio loads a `.vcxproj` project file, it automatically transforms unsupported entries in project items. You'll see warnings in the Output window during solution load that mention automatic wildcards expansion. If you don't want your project modified in this way, you can unload the project without saving it.
+In Visual Studio 2019 version 16.7, when Visual Studio loads a `.vcxproj` project file, it automatically detects unsupported entries in project items. You'll see warnings in the Output window during solution load.
 
 Visual Studio 2019 version 16.7 also adds read-only project support. Read-only support allows the IDE to use manually authored projects that don't have the additional limitations of IDE-editable projects.
 
-If you have a `.vcxproj` file that uses one or more of the unsupported constructs, you can make it load in the IDE by using one of these options:
+If you have a `.vcxproj` file that uses one or more of the unsupported constructs, you can make it load without warnings in the IDE by using one of these options:
 
 - List all items explicitly
 - Mark your project as read-only
@@ -44,8 +44,6 @@ To make `.vcxproj` projects automatically expand wildcards in Visual Studio 2019
   </PropertyGroup>
 </Project>
 ```
-
-This property is a way to explicitly specify the same actions that Visual Studio 2019 version 16.7 or later takes on project load.
 
 ## Mark your project as read-only
 
