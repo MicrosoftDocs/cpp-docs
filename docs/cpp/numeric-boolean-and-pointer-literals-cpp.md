@@ -22,7 +22,7 @@ Sometimes it's important to tell the compiler how to interpret a literal, or wha
 
 ## Integer literals
 
-Integer literals begin with a digit and have no fractional parts or exponents. You can specify integer literals in decimal, octal, or hexadecimal form. You can specify signed or unsigned types, and long or medium types.
+Integer literals begin with a digit and have no fractional parts or exponents. You can specify integer literals in decimal, binary, octal, or hexadecimal form. You can optionally specify an integer literal as unsigned, and as a long or long long type, by using a suffix.
 
 When no prefix or suffix is present, the compiler will give an integral literal value type **`int`** (32 bits), if the value will fit, otherwise it will give it type **`long long`** (64 bits).
 
