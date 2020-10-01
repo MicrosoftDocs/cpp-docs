@@ -7,16 +7,45 @@ ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
 ---
 # `.vcxproj` files and wildcards
 
-As mentioned in [`.vcxproj` and `.props` file structure](vcxproj-file-structure.md), wildcards aren't supported in project items in *`.vcxproj`* files.
+The Visual Studio IDE doesn't support certain constructs in project items in *`.vcxproj`* files. These unsupported constructs include wildcards, semi-colon delimited lists, or MSBuild macros that expand to multiple files. The `.vcxproj` project system for C++ builds is more restrictive than MSBuild. Each project item is required to have its own MSBuild item. For more information on the `.vcxproj` file format, see [`.vcxproj` and `.props` file structure](vcxproj-file-structure.md).
 
-It's possible to edit a project file to add wildcards. The project may seem to work at first. However, as soon as the project is modified by Visual Studio and then saved on disk, build issues are sure to occur. The issues will grow, and eventually cause random crashes and undefined behavior in the IDE. The more files a wildcard expands to, the sooner the problems manifest themselves.
+These construct examples aren't supported by the IDE:
 
-We've recently seen an increase of reports of related build crashes from customers. We worked on addressing them as a bug fix in Visual Studio 2019 version 16.6. The choices were either to:
+```xml
+<ItemGroup>
+  <None Include="*.txt">
+  <ClCompile Include="a.cpp;b.cpp"/>
+  <ClCompile Include="@(SomeItems)" />
+</ItemGroup>
+```
 
-- fail project load in the IDE if it contains wildcards, or
-- automatically modify the project, so it doesn't contain wildcards.
+In versions of Visual Studio before 16.7, if a `.vcxproj` project file that includes these constructs gets loaded in the IDE, the project may seem to work at first. However, issues are likely as soon as the project is modified by Visual Studio and then saved on disk. You may experience random crashes and undefined behavior.
 
-We chose the second option, to help people bring their projects into a supported state. The modified projects aren't saved automatically. You'll see warnings in the Output window during solution load that mention automatic wildcards expansion. If you don't want your project modified in this way, you can unload the project without saving it. This behavior is equivalent to the first option, that fails to load the project.
+To mitigate this problem, starting in Visual Studio 2019 version 16.7, when Visual Studio loads a `.vcxproj` project file, it automatically transforms unsupported entries in project items. You'll see warnings in the Output window during solution load that mention automatic wildcards expansion. If you don't want your project modified in this way, you can unload the project without saving it.
+
+Visual Studio 2019 version 16.7 also adds read-only project support. Read-only support allows the IDE to use manually authored projects that don't have the additional limitations of IDE-editable projects.
+
+If you have a `.vcxproj` file that uses one or more of the unsupported constructs, you can make it load in the IDE by using one of these options:
+
+- List all items explicitly
+- Mark your project as read-only
+- Move wildcard items to a target body
+
+## List all items explicitly
+
+Currently, there's no way to make wildcard expansion items visible in the Solution Explorer window in a non-read-only project. Solution Explorer expects projects to list all items explicitly.
+
+To make `.vcxproj` projects automatically expand wildcards in Visual Studio 2019 version 16.7 or later, set the `ReplaceWildcardsInProjectItems` property to `true`. We recommend you create a *`Directory.Build.props`* file in a root directory, and use this content:
+
+```xml
+<Project>
+  <PropertyGroup>
+    <ReplaceWildcardsInProjectItems>true</ReplaceWildcardsInProjectItems>
+  </PropertyGroup>
+</Project>
+```
+
+This property is a way to explicitly specify the same actions that Visual Studio 2019 version 16.7 or later takes on project load.
 
 ## Mark your project as read-only
 
@@ -32,11 +61,9 @@ The `<ReadOnlyProject>` setting prevents Visual Studio from editing and saving t
 
 It's important to know that the project cache isn't available if Visual Studio detects wildcards in project items in the *`.vcxproj`* file or any of its imports. Solution load times in the IDE are much longer if you have lots of projects that use wildcards.
 
-## Use wildcards in a project that's not read-only
+## Move wildcard items to a target body
 
-Currently, there's no way to make wildcard expansion items visible in the Solution Explorer window in a non-read-only project. That would require full wildcard support in *`.vcxproj`* projects. Instead, you must change your projects to list all items explicitly.
-
-Maybe you don't need to see the wildcard items in the Solution Explorer, but you do want to use wildcards. You might use them for gathering resources, adding generated sources, and so on. If so, you can use this procedure instead:
+You may want to use wildcards to gather resources, add generated sources, and so on. If you don't need them listed in the Solution Explorer window, you can use this procedure instead:
 
 1. Change the name of the item group to add wildcards. For instance, instead of:
 
@@ -52,7 +79,7 @@ Maybe you don't need to see the wildcard items in the Solution Explorer, but you
    <_WildCardClCompile Include="*.cpp" />
    ```
 
-1. Add this content to your *`.vcxproj`* file. Or, add it to *`Directory.Build.targets`* in a root directory, to affect all projects under that root:
+1. Add this content to your *`.vcxproj`* file. Or, add it to a *`Directory.Build.targets`* file in a root directory, to affect all projects under that root:
 
    ```xml
    <Target Name="AddWildCardItems"
@@ -64,7 +91,7 @@ Maybe you don't need to see the wildcard items in the Solution Explorer, but you
    </Target>
    ```
 
-   This change makes the build see the items as they're defined in the *`.vcxproj`* file. However, now they aren't visible in the Solution Explorer window, and they won't cause build problems.
+   This change makes the build see the items as they're defined in the *`.vcxproj`* file. However, now they aren't visible in the Solution Explorer window, and they won't cause problems in the IDE.
 
 1. To show correct IntelliSense for `_WildCardClCompile` items when you open those files in the editor, add the following content:
 
@@ -80,17 +107,7 @@ Maybe you don't need to see the wildcard items in the Solution Explorer, but you
 Effectively, you can use wildcards for any items inside a target body. You can also use wildcards in an `ItemGroup` that isn't defined as a project item by a [`ProjectSchemaDefinition`](https://devblogs.microsoft.com/cppblog/vc-MSBuild-extensibility-example/).
 
 > [!NOTE]
-> If you move wildcard includes from a *`.vcxproj`* file to an imported file, they won't be visible in the Solution Explorer window. This change also allows project load in the IDE without modification. We don't recommend this approach, because it disables the project cache.
-
-## Why `.vcxproj` projects don't have the same wildcard support as C# projects
-
-The reason for the current C++ *`.vcxproj`* project structure and feature set is historical. The original C++ project system in Visual Studio existed before MSBuild and C# were created. When the Visual Studio C++ build system moved to MSBuild, the main goal was to allow the best conversion from the old project format. We wanted to maintain all the features of the original C++ build system. The *`.vcxproj`* projects were never designed to be human editable, even before MSBuild. So, Visual Studio has never supported all MSBuild constructs in *`.vcxproj`* files. Visual Studio needs the ability to automatically edit the project. It's required so the right things happen during a build, and to show the correct things in the Property Pages UI. This automation means the project has to have a particular structure, correctly ordered groups, and strictly limited conditions.  
-
-This inflexibility causes a number of pain points in manually created *`.vcxproj`* files. There are extra rules and limitations on them so they're editable in the IDE: more than what's needed to just build them in MSBuild. Currently, we recommend you only create and edit *`.vcxproj`* projects in the IDE, and avoid manual editing as much as possible. Instead, add custom props or targets if you need more customizations. Handy places to insert customizations are the *`Directory.Build.props`* and *`Directory.Build.targets`* files, which are automatically imported in all MSBuild-based projects.
-
-In Visual Studio 2019 version 16.7, we've also added read-only project support. Read-only support allows the IDE to use manually authored projects that don't have the additional limitations of IDE-editable projects.
-
-Performance and scalability have always been high priorities for Microsoft C++, so developers can work with large codebases of 10,000 projects or more. Wildcard support hasn't been a priority before. Future wildcard support in *`.vcxproj`* files is possible, but it's not simple. It has significant performance implications. That's because of the inevitable increase in disk I/O during solution load, up-to-date checks (F5), and IntelliSense operations. If you'd like to voice your support for wildcards in C++ projects in the IDE, you can [upvote this suggestion ticket on Developer Community](https://developercommunity.visualstudio.com/idea/1080317/support-globwildcards-first-class-in-visual-studio.html).
+> If you move wildcard includes from a *`.vcxproj`* file to an imported file, they won't be visible in the Solution Explorer window. This change also allows your project to load in the IDE without modification. However, we don't recommend this approach, because it disables the project cache.
 
 ## See also
 

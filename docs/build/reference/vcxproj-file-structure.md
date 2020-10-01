@@ -7,7 +7,15 @@ ms.assetid: 14d0c552-29db-480e-80c1-7ea89d6d8e9c
 ---
 # `.vcxproj` and `.props` file structure
 
-[MSBuild](../msbuild-visual-cpp.md) is the default project system in Visual Studio; when you choose **File** > **New Project** in Visual C++ you're creating an MSBuild project whose settings are stored in an XML project file that has the extension *`.vcxproj`*. The project file may also import *`.props`* files and *`.targets`* files where settings can be stored. In most cases, you never need to manually edit the project file. In practice, you should never edit it manually unless you have a good understanding of MSBuild. Whenever possible you should use the Visual Studio property pages to modify project settings. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md). However, in some cases you may need to modify a project file or property sheet manually. For those scenarios, this article contains basic information about the structure of the file.
+[MSBuild](../msbuild-visual-cpp.md) is the default project system in Visual Studio; when you choose **File** > **New Project** in Visual C++ you're creating an MSBuild project whose settings are stored in an XML project file that has the extension *`.vcxproj`*. The project file may also import *`.props`* files and *`.targets`* files where settings can be stored.
+
+We recommend you only create and modify *`.vcxproj`* projects in the IDE, and avoid manual editing as much as possible. In most cases, you never need to manually edit the project file. Whenever possible you should use the Visual Studio property pages to modify project settings. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+
+If you need customizations that aren't possible in the IDE, we recommend you add custom props or targets. Handy places to insert customizations are the *`Directory.Build.props`* and *`Directory.Build.targets`* files, which are automatically imported in all MSBuild-based projects.
+
+In some cases, you may still need to modify a *`.vcxproj`* project file or property sheet manually. We don't recommend you edit it manually unless you have a good understanding of MSBuild, and follow the guidelines in this article. In order for the IDE to load and update *`.vcxproj`* files automatically, these files have several restrictions that don't apply to other MSBuild project files. They weren't designed for manual editing. Mistakes can cause the IDE to crash or behave in unexpected ways.
+
+For manual editing scenarios, this article contains basic information about the structure of *`.vcxproj`* and related files.
 
 **Important:**
 
@@ -15,18 +23,23 @@ If you choose to manually edit a *`.vcxproj`* file, be aware of these facts:
 
 1. The structure of the file must follow a prescribed form, which is described in this article.
 
-1. The Visual Studio C++ project system currently doesn't support wildcards directly in project items. For example, this form isn't supported:
+1. The Visual Studio C++ project system currently doesn't support wildcards or lists directly in project items. For example, these forms aren't supported:
 
    ```xml
-   <ClCompile Include="*.cpp"/>
+   <ItemGroup>
+     <None Include="*.txt"/>
+     <ClCompile Include="a.cpp;b.cpp"/>
+   </ItemGroup>
    ```
 
-   For more information on wildcard support in projects, see [`.vcxproj` files and wildcards](vcxproj-files-and-wildcards.md).
+   For more information on wildcard support in projects and possible workarounds, see [`.vcxproj` files and wildcards](vcxproj-files-and-wildcards.md).
 
 1. The Visual Studio C++ project system currently doesn't support macros in project item paths. For example, this form isn't supported:
 
    ```xml
-   <ClCompile Include="$(IntDir)\generated.cpp"/>
+   <ItemGroup>
+     <ClCompile Include="$(IntDir)\generated.cpp"/>
+   </ItemGroup>
    ```
 
    "Not supported" means that macros aren't guaranteed to work for all operations in the IDE. Macros that don't change their value in different configurations should work, but might not be preserved if an item is moved to a different filter or project. Macros that change their value for different configurations will cause problems. That's because the IDE doesn't expect project item paths to be different for different project configurations.
@@ -208,7 +221,7 @@ Contains item definitions. These definitions must follow the same conditions rul
 <ItemGroup />
 ```
 
-Contains the items (source files, and so on) in the project. Conditions aren't supported for Project items (that is, item types that are treated as project items by rules definitions).
+`ItemGroup` elements contain the items (source files, and so on) in the project. Conditions aren't supported for Project items (that is, item types that are treated as project items by rules definitions).
 
 The metadata should have configuration conditions for each configuration, even if they're all the same. For example:
 
@@ -289,5 +302,6 @@ To make your own property sheet, copy one of the *`.props`* files in the *`VCTar
 
 ## See also
 
-[Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md)<br/>
-[Property Page XML Files](property-page-xml-files.md)
+[Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md)\
+[Property Page XML Files](property-page-xml-files.md)\
+[`.vcxproj` files and wildcards](vcxproj-files-and-wildcards.md)
