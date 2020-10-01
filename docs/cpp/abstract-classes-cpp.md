@@ -29,7 +29,7 @@ The only difference between this declaration and the previous one is that `Print
 
 ## Restrictions on abstract classes
 
-Abstract classes cannot be used for:
+Abstract classes cannot be used for :
 
 - Variables or member data
 
@@ -43,7 +43,7 @@ Another restriction is that if the constructor for an abstract class calls a pur
 
 Pure virtual functions can be defined for abstract classes, but they can be called directly only by using the syntax:
 
-*abstract-class-name*::*function-name*()
+***abstract-class-name* : : *function-name*()**
 
 This helps when designing class hierarchies whose base class(es) include pure virtual destructors, because base class destructors are always called in the process of destroying an object. Consider the following example:
 
