@@ -29,7 +29,7 @@ The only difference between this declaration and the previous one is that `Print
 
 ## Restrictions on abstract classes
 
-Abstract classes cannot be used for :
+#### Abstract classes cannot be used for :
 
 - Variables or member data
 
