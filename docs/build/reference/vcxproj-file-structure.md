@@ -21,9 +21,9 @@ For manual editing scenarios, this article contains basic information about the 
 
 If you choose to manually edit a *`.vcxproj`* file, be aware of these facts:
 
-1. The structure of the file must follow a prescribed form, which is described in this article.
+- The structure of the file must follow a prescribed form, which is described in this article.
 
-1. The Visual Studio C++ project system currently doesn't support wildcards or lists directly in project items. For example, these forms aren't supported:
+- The Visual Studio C++ project system currently doesn't support wildcards or lists directly in project items. For example, these forms aren't supported:
 
    ```xml
    <ItemGroup>
@@ -34,7 +34,7 @@ If you choose to manually edit a *`.vcxproj`* file, be aware of these facts:
 
    For more information on wildcard support in projects and possible workarounds, see [`.vcxproj` files and wildcards](vcxproj-files-and-wildcards.md).
 
-1. The Visual Studio C++ project system currently doesn't support macros in project item paths. For example, this form isn't supported:
+- The Visual Studio C++ project system currently doesn't support macros in project item paths. For example, this form isn't supported:
 
    ```xml
    <ItemGroup>
@@ -44,13 +44,13 @@ If you choose to manually edit a *`.vcxproj`* file, be aware of these facts:
 
    "Not supported" means that macros aren't guaranteed to work for all operations in the IDE. Macros that don't change their value in different configurations should work, but might not be preserved if an item is moved to a different filter or project. Macros that change their value for different configurations will cause problems. That's because the IDE doesn't expect project item paths to be different for different project configurations.
 
-1. To add, remove, or modify project properties correctly when you edit them in the **Project Properties** dialog, the file must contain separate groups for each project configuration. The conditions must be in this form:
+- To add, remove, or modify project properties correctly when you edit them in the **Project Properties** dialog, the file must contain separate groups for each project configuration. The conditions must be in this form:
 
    ```xml
    Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"
    ```
 
-1. Each property must be specified in the group with correct label, as specified in the property rule file. For more information, see [Property page xml rule files](property-page-xml-files.md).
+- Each property must be specified in the group with its correct label, as specified in the property rule file. For more information, see [Property page xml rule files](property-page-xml-files.md).
 
 ## `.vcxproj` file elements
 
