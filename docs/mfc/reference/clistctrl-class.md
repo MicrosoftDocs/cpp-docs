@@ -3649,7 +3649,7 @@ BOOL SetItemState(
 ### Parameters
 
 *nItem*<br/>
-Index of the item whose state is to be set.
+Index of the item whose state is to be set. If this parameter is -1, then the state change is applied to all items.
 
 *pItem*<br/>
 Address of an [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) structure, as described in the Windows SDK. The structure's `stateMask` member specifies which state bits to change, and the structure's `state` member contains the new values for those bits. The other members are ignored.
