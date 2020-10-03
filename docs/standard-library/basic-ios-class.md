@@ -20,10 +20,10 @@ class basic_ios : public ios_base
 ### Parameters
 
 *Elem*\
-A type.
+A character type.
 
 *Traits*\
-A variable of type `char_traits`.
+A type providing information about the character type, defaults to `char_traits < Elem >`.
 
 ## Remarks
 
