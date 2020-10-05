@@ -35,7 +35,7 @@ Each resource type has a resource editor specific to that resource type. You can
 
 Some resource types are individual files that can be imported and used in various ways; these include bitmaps, icons, cursors, toolbars, and html files. Such resources have file names and [resource identifiers](../windows/symbols-resource-identifiers.md). Others, such as dialogs, menus, and string tables in Win32 projects, exist only as part of a resource script (.rc) file or resource template (.rct) file.
 
-Resources can also be edited outside of the project without having the project open. For more information, see [How to: Create Resources](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).
+Resources can also be edited outside of the project without having the project open. For more information, see [How to: Create Resources](./how-to-create-a-resource-script-file.md).
 
 > [!NOTE]
 > Properties of a resource can be modified using the **Properties** window.

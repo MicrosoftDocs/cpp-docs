@@ -18,7 +18,7 @@ If you plan to port your programs to UNIX, follow these guidelines:
 - Use paths and filenames that work correctly in UNIX, which is case-sensitive. The file allocation table (FAT) file system in Win32 operating systems isn't case-sensitive. The NTFS file system preserves case for directory listings, but ignores case in file searches and other system operations.
 
 > [!NOTE]
->  In this version of Visual C++, UNIX compatibility information has been removed from the function descriptions.
+> In this version of Visual C++, UNIX compatibility information has been removed from the function descriptions.
 
 ## See also
 
