@@ -16,20 +16,26 @@ Functions to load and execute a new process.
 [Filename search functions](filename-search-functions.md)\
 Functions to search for specified file names, and to close searches.
 
-[Format specification field characters: `scanf` and `wscanf`](format-specification-fields-scanf-and-wscanf-functions.md)\
-Describes the format specification fields for parsing an input stream for the entire `scanf` family of functions.
-
 [Format specification syntax for `printf` and `wprintf`](format-specification-syntax-printf-and-wprintf-functions.md)\
 Describes the format string and arguments for `printf` and `wprintf`.
 
+[Format specification field characters: `scanf` and `wscanf`](format-specification-fields-scanf-and-wscanf-functions.md)\
+Describes the format specification fields for parsing an input stream for the entire `scanf` family of functions.
+
 [`is`, `isw` functions](is-isw-routines.md)\
-The functions for testing characters for things like whether they are uppercase, ASCII, numeric, punctuation, and so on.
+Functions for testing characters for things like whether they are uppercase, ASCII, numeric, punctuation, and so on.
 
 [`_ismbb` functions](ismbb-routines.md)\
-The functions for testing an integer value for whether it represents an alpha character, blank character, a print character, and so on.
+Functions for testing an integer value for whether it represents an alpha character, blank character, a print character, and so on.
 
 [`_ismbc` functions](ismbc-routines.md)\
-The functions for testing a multibyte character for whether it represents an alpha character, blank character, a print character, and so on.
+Functions for testing a multibyte character for whether it represents an alpha character, blank character, a print character, and so on.
+
+[operator `delete` (CRT)](delete-operator-crt)\
+Beginning in Visual Studio 2013, the Universal C Runtime (UCRT) no longer supports the C++-specific operator delete function. It is now part of the C++ Standard Library.
+
+[operator `new` (CRT)](new-operator-crt)\
+Beginning in Visual Studio 2013, the Universal C Runtime (UCRT) no longer supports the C++-specific operator new function. It is now part of the C++ Standard Library.
 
 [Positional parameter `printf` functions](printf-p-positional-parameters.md)\
 Positional parameters specify by number which of the arguments is to be substituted into a field in a format string.
