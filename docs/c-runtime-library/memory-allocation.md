@@ -1,23 +1,23 @@
 ---
 title: "Memory Allocation"
 ms.date: "11/04/2016"
+description: "Lists the Microsoft C runtime functions used to allocated, free, and reallocate memory."
 f1_keywords: ["c.memory"]
 helpviewer_keywords: ["memory allocation, routines", "memory, managing", "memory, allocation"]
 ms.assetid: b4470556-a128-4782-9943-2ccf7a7d9979
 ---
-# Memory Allocation
+# Memory allocation
 
 Use these routines to allocate, free, and reallocate memory.
 
-## Memory-Allocation Routines
+## Memory-allocation routines
 
 |Routine|Use|
 |-------------|---------|
 |[_alloca](../c-runtime-library/reference/alloca.md), [_malloca](../c-runtime-library/reference/malloca.md)|Allocate memory from stack|
 |[calloc](../c-runtime-library/reference/calloc.md)|Allocate storage for array, initializing every byte in allocated block to 0|
 |[_calloc_dbg](../c-runtime-library/reference/calloc-dbg.md)|Debug version of **calloc**; only available in the debug versions of the run-time libraries|
-|[operator delete](../c-runtime-library/operator-delete-crt.md)|Free allocated block|
-|[operator delete&#91;&#93;](../c-runtime-library/delete-operator-crt.md)|Free allocated block|
+|[operator delete, operator delete&#91;&#93;](../c-runtime-library/delete-operator-crt.md)|Free allocated block|
 |[_expand](../c-runtime-library/reference/expand.md)|Expand or shrink block of memory without moving it|
 |[_expand_dbg](../c-runtime-library/reference/expand-dbg.md)|Debug version of **_expand**; only available in the debug versions of the run-time libraries|
 |[free](../c-runtime-library/reference/free.md)|Free allocated block|
@@ -33,8 +33,7 @@ Use these routines to allocate, free, and reallocate memory.
 |[_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)|Debug version of **malloc**; only available in the debug versions of the run-time libraries|
 |[_msize](../c-runtime-library/reference/msize.md)|Return size of allocated block|
 |[_msize_dbg](../c-runtime-library/reference/msize-dbg.md)|Debug version of **_msize**; only available in the debug versions of the run-time libraries|
-|[new](../c-runtime-library/operator-new-crt.md)|Allocate block of memory from heap|
-|[new&#91;&#93;](../c-runtime-library/new-operator-crt.md)|Allocate block of memory from heap|
+|[new, new&#91;&#93;](../c-runtime-library/new-operator-crt.md)|Allocate block of memory from heap|
 |[_query_new_handler](../c-runtime-library/reference/query-new-handler.md)|Return address of current new handler routine as set by **_set_new_handler**|
 |[_query_new_mode](../c-runtime-library/reference/query-new-mode.md)|Return integer indicating new handler mode set by **_set_new_mode** for **malloc**|
 |[realloc](../c-runtime-library/reference/realloc.md)|Reallocate block to new size|
