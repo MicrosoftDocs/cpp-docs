@@ -7,6 +7,8 @@ topic_type: ["apiref"]
 f1_keywords: ["delete"]
 helpviewer_keywords: ["scalar delete", "operator delete"]
 ms.assetid: bcd0066a-0022-45f5-af4c-9007c64a6b89
+ms.author: twhitney
+ROBOTS: NOINDEX
 ---
 # operator delete (CRT)
 

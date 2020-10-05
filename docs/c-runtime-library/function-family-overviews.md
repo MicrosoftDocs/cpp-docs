@@ -13,7 +13,7 @@ This section lists C runtime library routines by function family.
 [_exec, _wexec](exec-wexec-functions.md)\
 Functions to load and execute a new process.
 
-[Filename search functions](filename-search-functions)\
+[Filename search functions](filename-search-functions.md)\
 Functions to search for specified file names, and to close searches.
 
 [Format specification field characters: `scanf` and `wscanf`](format-specification-fields-scanf-and-wscanf-functions.md)\
@@ -22,13 +22,13 @@ Describes the format specification fields for parsing an input stream for the en
 [Format specification syntax for `printf` and `wprintf`](format-specification-syntax-printf-and-wprintf-functions.md)\
 Describes the format string and arguments for `printf` and `wprintf`.
 
-[`is`, `isw` functions](c-runtime-library/is-isw-routines.md)\
+[`is`, `isw` functions](is-isw-routines.md)\
 The functions for testing characters for things like whether they are uppercase, ASCII, numeric, punctuation, and so on.
 
-[`_ismbb` functions](c-runtime-library/ismbb-routines)\
+[`_ismbb` functions](ismbb-routines.md)\
 The functions for testing an integer value for whether it represents an alpha character, blank character, a print character, and so on.
 
-[`_ismbc` functions](c-runtime-library/ismbc-routines)\
+[`_ismbc` functions](ismbc-routines.md)\
 The functions for testing a multibyte character for whether it represents an alpha character, blank character, a print character, and so on.
 
 [Positional parameter `printf` functions](printf-p-positional-parameters.md)\

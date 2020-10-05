@@ -6,6 +6,8 @@ api_type: ["DLLExport"]
 topic_type: ["apiref"]
 helpviewer_keywords: ["operator new", "scalar new"]
 ms.assetid: 4ae51618-a4e6-4172-b324-b99d86d1bdca
+ms.author: twhitney
+ROBOTS: NOINDEX
 ---
 # operator new (CRT)
 
