@@ -1,5 +1,6 @@
 ---
 title: "Compiler Warning (level 3) C4316"
+description: "Description of C++ compiler warning C4316"
 ms.date: "11/04/2016"
 f1_keywords: ["C4316"]
 helpviewer_keywords: ["C4316"]
