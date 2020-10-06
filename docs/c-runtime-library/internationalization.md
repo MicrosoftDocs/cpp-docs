@@ -10,6 +10,7 @@ ms.assetid: ee536a04-3558-4729-8e10-6dabcde055fd
 # Internationalization
 
 The Microsoft runtime library provides many routines that you can use to customize your app for international markets such as:
+
 - [locale-related routines](../c-runtime-library/locale.md)
 - wide-character routines
 - multibyte-character routines
