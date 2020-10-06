@@ -13422,12 +13422,12 @@
     },
     {
       "source_path": "docs/c-runtime-library/operator-delete-crt.md",
-      "redirect_url": "docs/c-runtime-library/delete-operator-crt.md",
+      "redirect_url": "docs/c-runtime-library/delete-operator-crt",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/c-runtime-library/operator-new-crt.md",
-      "redirect_url": "docs/c-runtime-library/new-operator-crt.md",
+      "redirect_url": "docs/c-runtime-library/new-operator-crt",
       "redirect_document_id": false
     }
   ]
