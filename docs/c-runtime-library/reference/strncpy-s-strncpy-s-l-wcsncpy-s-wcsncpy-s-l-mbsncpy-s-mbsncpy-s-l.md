@@ -187,7 +187,7 @@ By default, this function's global state is scoped to the application. To change
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## Example: Copy chars to buffer dest
+## Example: Copy chars to buffer
 
 ```cpp
 // crt_strncpy_s_1.cpp
@@ -314,7 +314,7 @@ Invalid parameter handler invoked: (L"Buffer is too small" && 0)
     new contents of dest: ''
 ```
 
-## Example: strncpy VS strncpy_s
+## Example: strncpy and strncpy_s
 
 ```C
 // crt_strncpy_s_2.c

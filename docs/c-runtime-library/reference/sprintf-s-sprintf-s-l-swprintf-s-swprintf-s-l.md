@@ -111,7 +111,7 @@ There are versions of **sprintf_s** that offer additional control over what happ
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## Example: Uses sprintf_s to format data
+## Example: Use sprintf_s to format data
 
 ```C
 // crt_sprintf_s.c
