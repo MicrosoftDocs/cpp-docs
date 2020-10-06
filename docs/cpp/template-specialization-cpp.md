@@ -171,7 +171,7 @@ Null pointer!
 3 87 8 100
 ```
 
-## Example: Define partial specialization so one type is in
+## Example: Define partial specialization so one type is `int`
 
 The following example defines a template class that takes pairs of any two types and then defines a partial specialization of that template class specialized so that one of the types is **`int`**. The specialization defines an additional sort method that implements a simple bubble sort based on the integer.
 

@@ -31,7 +31,7 @@ class CMFC01Dlg : public CDialog
 };
 ```
 
-## Example: Add to CMFC01Dlg
+## Example: Extending CMFC01Dlg
 
 Put the following code in the implementation of CMFC01Dlg:
 
@@ -64,7 +64,7 @@ void CMFC01Dlg::OnBnClickedOk()
 }
 ```
 
-## Example: Add to BOOL CMFC01Dlg::OnInitDialog()
+## Example: Add line of code to BOOL CMFC01Dlg::OnInitDialog()
 
 And add the following line to the implementation of BOOL CMFC01Dlg::OnInitDialog().
 

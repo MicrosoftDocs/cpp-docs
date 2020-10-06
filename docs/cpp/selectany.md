@@ -28,7 +28,7 @@ A global data item can normally be initialized only once in an EXE or DLL projec
 > [!NOTE]
 > **`selectany`** can only be applied to the actual initialization of global data items that are externally visible.
 
-## Example: selectany attribute
+## Example: `selectany` attribute
 
 This code shows how to use the **`selectany`** attribute:
 
@@ -62,7 +62,7 @@ int i;
 __declspec(selectany) X x(1);
 ```
 
-## Example: Use selectany attribute to ensure data COMDAT folding
+## Example: Use `selectany` attribute to ensure data COMDAT folding
 
 This code shows how to use the **`selectany`** attribute to ensure data COMDAT folding when you also use the [`/OPT:ICF`](../build/reference/opt-optimizations.md) linker option. Note that data must be marked with **`selectany`** and placed in a **`const`** (readonly) section. You must explicitly specify the read-only section.
 

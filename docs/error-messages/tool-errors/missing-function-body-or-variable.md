@@ -21,7 +21,7 @@ int main() {
 }
 ```
 
-## Example: Include implementation of specific function
+## Example: Include the implementation of a specific function for a class
 
 In C++, make sure that you include the implementation of a specific function for a class and not just a prototype in the class definition. If you are defining the class outside of the header file, be sure to include the class name before the function (`Classname::memberfunction`).
 

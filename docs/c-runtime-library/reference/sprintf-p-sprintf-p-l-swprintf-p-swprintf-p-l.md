@@ -134,7 +134,7 @@ Output:
 character count = 79
 ```
 
-## Example: _swprintf_p returns error code
+## Example: Error code handling
 
 ```C
 // crt_swprintf_p.c

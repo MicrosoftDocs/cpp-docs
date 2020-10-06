@@ -40,7 +40,7 @@ The following example creates a `tree` object and searches it for several values
 
 This example uses the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algorithm to search for values in parallel. For more information about this algorithm, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).
 
-## Complete code example
+## Example: Complete code example
 
 The following complete example uses exception handling to search for values in a basic tree structure.
 

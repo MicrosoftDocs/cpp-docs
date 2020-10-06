@@ -32,7 +32,7 @@ Because the `transformer` object receives only prime numbers, the `transformer` 
 
 The `transformer` object now processes only those values that are prime. In the previous example, `transformer` object processes all messages. Therefore, the previous example must receive the same number of messages that it sends. This example uses the result of the [concurrency::send](reference/concurrency-namespace-functions.md#send) function to determine how many messages to receive from the `transformer` object. The `send` function returns **`true`** when the message buffer accepts the message and **`false`** when the message buffer rejects the message. Therefore, the number of times that the message buffer accepts the message matches the count of prime numbers.
 
-## Complete code example
+## Example: Complete code example
 
 The following code shows the complete example. The example calls both the `count_primes` function and the `count_primes_filter` function.
 

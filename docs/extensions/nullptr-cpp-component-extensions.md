@@ -43,7 +43,7 @@ Function calls among languages that use null pointer values for error checking s
 
 You cannot initialize a handle to zero; only **`nullptr`** can be used. Assignment of constant 0 to an object handle produces a boxed `Int32` and a cast to `Object^`.
 
-## Example: Use nullptr keyword
+## Example: Use `nullptr` keyword
 
 The following code example demonstrates that the **`nullptr`** keyword can be used wherever a handle, native pointer, or function argument can be used. And the example demonstrates that the **`nullptr`** keyword can be used to check a reference before it is used.
 
@@ -72,7 +72,7 @@ int main() {
 }
 ```
 
-## Example: Use nullptr and zero interchangeably
+## Example: Use `nullptr` and zero interchangeably
 
 The following code example shows that **`nullptr`** and zero can be used interchangeably on native pointers.
 
@@ -111,7 +111,7 @@ pMyClass == nullptr
 pMyClass == 0
 ```
 
-## Example: nullptr interpreted as handle
+## Example: `nullptr` interpreted as handle
 
 The following code example shows that **`nullptr`** is interpreted as a handle to any type or a native pointer to any type. In case of function overloading with handles to different types, an ambiguity error will be generated. The **`nullptr`** would have to be explicitly cast to a type.
 
@@ -129,7 +129,7 @@ void f_null() {
 }
 ```
 
-## Example: nullptr returns pointer or handle
+## Example: Cast `nullptr`
 
 The following code example shows that casting **`nullptr`** is allowed and returns a pointer or handle to the cast type that contains the **`nullptr`** value.
 
@@ -150,7 +150,7 @@ int main() {
 }
 ```
 
-## Example: nullptr as function parameter
+## Example: Pass `nullptr` as a function parameter
 
 The following code example shows that **`nullptr`** can be used as a function parameter.
 

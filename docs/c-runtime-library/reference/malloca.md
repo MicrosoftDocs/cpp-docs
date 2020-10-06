@@ -57,7 +57,7 @@ In addition to the above restrictions, when using the [/clr (Common Language Run
 |-------------|---------------------|
 |**_malloca**|\<malloc.h>|
 
-## Example: malloca simple
+## Example: malloca
 
 ```C
 // crt_malloca_simple.c

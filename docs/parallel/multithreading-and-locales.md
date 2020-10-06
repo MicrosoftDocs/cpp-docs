@@ -21,7 +21,7 @@ To change the locale using the C++ Runtime Library, use the [locale Class](../st
 
 The following examples show how to use the [setlocale](../preprocessor/setlocale.md) function, the [locale Class](../standard-library/locale-class.md), and the [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md) function to change the locale of an application in several different scenarios.
 
-## Example: Use setlocale in Thread A to change locale
+## Example: Change the locale
 
 In this example, the main thread spawns two child threads. The first thread, Thread A, enables per-thread locale by calling `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. The second thread, Thread B, as well as the main thread, do not enable per-thread locale. Thread A then proceeds to change the locale using the [setlocale](../preprocessor/setlocale.md) function of the C Runtime Library.
 
