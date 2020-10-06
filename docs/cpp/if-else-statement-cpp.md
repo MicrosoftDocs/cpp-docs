@@ -1,13 +1,12 @@
 ---
-title: "if-else Statement (C++)"
-description: "The if-else, if-else with initializer, and if-constexpr statements in the C++ programming language."
+title: "if-else statement (C++)"
+description: "Use if-else, if-else with initializer, and if-constexpr statements to control conditional branching."
 ms.date: 10/02/2020
-description: "Use if-else statements in C++ to control conditional branching."
 f1_keywords: ["else_cpp", "if_cpp"]
 helpviewer_keywords: ["if keyword [C++]", "else keyword [C++]"]
 ms.assetid: f8c45cde-6bce-42ae-81db-426b3dbd4caa
 ---
-# if-else Statement (C++)
+# if-else statement (C++)
 
 An if-else statement controls conditional branching. Statements in the *`if-branch`* are executed only if the *`condition`* evaluates to a non-zero value (or **`true`**). If the value of *`condition`* is nonzero, the following statement gets executed, and the statement following the optional **`else`** gets skipped. Otherwise, the following statement gets skipped, and if there's an **`else`** then the statement following the **`else`** gets executed.
 
@@ -52,9 +51,15 @@ An if-else statement controls conditional branching. Statements in the *`if-bran
 &emsp; **`if`** **`constexpr`**<sub>*opt*</sub><sup>17</sup> **`(`** *`init-statement`*<sub>*opt*</sub><sup>17</sup> *`condition`* **`)`** *`if-branch`*\
 &emsp; **`if`** **`constexpr`**<sub>*opt*</sub><sup>17</sup> **`(`** *`init-statement`*<sub>*opt*</sub><sup>17</sup> *`condition`* **`)`** *`if-branch`* **`else`** *`else-branch`*
 
-<sup>17</sup> This element is available starting in C++17.
+<sup>17</sup> This optional element is available starting in C++17.
 
-## Example if-else statements
+## if-else statements
+
+In all forms of the **`if`** statement, *`condition`*, which can have any value except a structure, is evaluated, including all side effects. Control passes from the **`if`** statement to the next statement in the program unless the executed *`if-branch`* or *`else-branch`* contains a [`break`](../cpp/break-statement-cpp.md), [`continue`](../cpp/continue-statement-cpp.md), or [`goto`](../cpp/goto-statement-cpp.md).
+
+The **`else`** clause of an `if...else` statement is associated with the closest previous **`if`** statement in the same scope that does not have a corresponding **`else`** statement.
+
+### Example
 
 This sample code shows several **`if`** statements in use, both with and without **`else`**:
 
@@ -150,10 +155,6 @@ int main()
     }
 }
 ```
-
-In all forms of the **`if`** statement, *`condition`*, which can have any value except a structure, is evaluated, including all side effects. Control passes from the **`if`** statement to the next statement in the program unless the executed *`if-branch`* or *`else-branch`* contains a [`break`](../cpp/break-statement-cpp.md), [`continue`](../cpp/continue-statement-cpp.md), or [`goto`](../cpp/goto-statement-cpp.md).
-
-The **`else`** clause of an `if...else` statement is associated with the closest previous **`if`** statement in the same scope that does not have a corresponding **`else`** statement.
 
 ## <a name="if_constexpr"> if constexpr statements
 
