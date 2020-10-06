@@ -37,7 +37,7 @@ Beginning in Visual Studio 2013, the Universal C Runtime (UCRT) no longer suppor
 [operator `new` (CRT)](new-operator-crt.md)\
 Beginning in Visual Studio 2013, the Universal C Runtime (UCRT) no longer supports the C++-specific operator new function. It is now part of the C++ Standard Library.
 
-[Positional parameter `printf` functions](printf-p-positional-parameters.md)\
+[`printf` positional parameter functions](printf-p-positional-parameters.md)\
 Positional parameters specify by number which of the arguments is to be substituted into a field in a format string.
 
 [`scanf` type field characters](scanf-type-field-characters.md)\
@@ -53,10 +53,10 @@ Functions to create and execute a new process.
 The `strcoll` and `wcscoll` functions compare two strings according to the `LC_COLLATE` category setting of the locale code page.
 
 [String to numeric value functions](string-to-numeric-value-functions.md)\
-The `strtod` family of functions converts a null-terminated string to a numeric value.
+The `strtod` family of functions convert a null-terminated string to a numeric value.
 
 [`vprintf` functions](vprintf-functions.md)\
-The `vprintf` functions take a pointer to an argument list, then formats and writes the given data to a particular destination. The functions differ in the parameter validation performed, whether the functions take wide or single-byte character strings, the output destination, and the support for specifying the order in which parameters are used in the format string.
+The `vprintf` functions take a pointer to an argument list, formats it, and writes the result to the specified destination. The functions differ in the parameter validation performed, whether they take wide or single-byte character strings, the output destination, and support for specifying the order in which parameters are used in the format string.
 
 ## See also
 
