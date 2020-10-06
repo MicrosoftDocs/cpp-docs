@@ -31,10 +31,10 @@ Functions for testing an integer value for whether it represents an alpha charac
 [`_ismbc` functions](ismbc-routines.md)\
 Functions for testing a multibyte character for whether it represents an alpha character, blank character, a print character, and so on.
 
-[operator `delete` (CRT)](delete-operator-crt)\
+[operator `delete` (CRT)](delete-operator-crt.md)\
 Beginning in Visual Studio 2013, the Universal C Runtime (UCRT) no longer supports the C++-specific operator delete function. It is now part of the C++ Standard Library.
 
-[operator `new` (CRT)](new-operator-crt)\
+[operator `new` (CRT)](new-operator-crt.md)\
 Beginning in Visual Studio 2013, the Universal C Runtime (UCRT) no longer supports the C++-specific operator new function. It is now part of the C++ Standard Library.
 
 [Positional parameter `printf` functions](printf-p-positional-parameters.md)\
