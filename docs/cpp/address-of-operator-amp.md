@@ -22,7 +22,7 @@ When applied to functions or l-values, the result of the expression is a pointer
 
 The address of an overloaded function can be taken only when it's clear which version of the function is being referenced. See [Function Overloading](function-overloading.md) for information about how to obtain the address of a particular overloaded function.
 
-When the address-of operator is applied to a qualified name, the result depends on whether the *qualified-name* specifies a static member. If so, the result is a pointer to the type specified in the declaration of the member. If the member isn't static, the result is a pointer to the member *name* of the class indicated by *qualified-class-name*. For more information about *qualified-class-name*, see [Primary expressions](../cpp/primary-expressions.md).
+When the address-of operator is applied to a qualified name, the result depends on whether the *qualified-name* specifies a static member. If so, the result is a pointer to the type specified in the declaration of the member. For a member that isn't static, the result is a pointer to the member *name* of the class indicated by *qualified-class-name*. For more information about *qualified-class-name*, see [Primary expressions](../cpp/primary-expressions.md).
 
 ## Example: Address of static member
 

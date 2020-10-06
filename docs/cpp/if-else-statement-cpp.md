@@ -15,7 +15,7 @@ An if-else statement controls conditional branching. Statements in the *`if-bran
 - **`true`**
 - a non-null pointer,
 - any non-zero arithmetic value, or
-- a class type that defines an unambiguous conversion to an arithmetic, boolean or pointer type. (For information about conversions, see [Standard Conversions](../cpp/standard-conversions.md).)
+- a class type that defines an unambiguous conversion to an arithmetic, boolean, or pointer type. (For information about conversions, see [Standard Conversions](../cpp/standard-conversions.md).)
 
 ## Syntax
 
@@ -57,7 +57,7 @@ An if-else statement controls conditional branching. Statements in the *`if-bran
 
 In all forms of the **`if`** statement, *`condition`*, which can have any value except a structure, is evaluated, including all side effects. Control passes from the **`if`** statement to the next statement in the program unless the executed *`if-branch`* or *`else-branch`* contains a [`break`](../cpp/break-statement-cpp.md), [`continue`](../cpp/continue-statement-cpp.md), or [`goto`](../cpp/goto-statement-cpp.md).
 
-The **`else`** clause of an `if...else` statement is associated with the closest previous **`if`** statement in the same scope that does not have a corresponding **`else`** statement.
+The **`else`** clause of an `if...else` statement is associated with the closest previous **`if`** statement in the same scope that doesn't have a corresponding **`else`** statement.
 
 ### Example
 
@@ -162,7 +162,7 @@ Starting in C++17, you can use an **`if constexpr`** statement in function templ
 
 ### Example
 
-This example shows how you can write a single function that handles parameter unpacking (no zero-parameter overload is needed):
+This example shows how you can write a single function that handles parameter unpacking. No zero-parameter overload is needed:
 
 ```cpp
 template <class T, class... Rest>

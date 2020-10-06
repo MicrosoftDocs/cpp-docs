@@ -35,7 +35,7 @@ public:
 
 For more information about modifying the type of the **`this`** pointer, see [`this` pointer](this-pointer.md).
 
-The scope-resolution operator (**`::`**) followed by a name is a primary expression.  Such names must be names at global scope, not member names.  The type of the expression is determined by the declaration of the name. It's an l-value (that is, it can appear on the left-hand side of an assignment expression) if the declaring name is an l-value. The scope-resolution operator allows a global name to be referred to, even if that name is hidden in the current scope. See [Scope](../cpp/scope-visual-cpp.md) for an example of how to use the scope-resolution operator.
+The scope-resolution operator (**`::`**) followed by a name is a primary expression.  Such names must be names at global scope, not member names. The type of the expression is determined by the declaration of the name. It's an l-value (that is, it can appear on the left-hand side of an assignment expression) if the declaring name is an l-value. The scope-resolution operator allows a global name to be referred to, even if that name is hidden in the current scope. See [Scope](../cpp/scope-visual-cpp.md) for an example of how to use the scope-resolution operator.
 
 An expression enclosed in parentheses is a primary expression. Its type and value are identical to the type and value of the unparenthesized expression. It's an l-value if the unparenthesized expression is an l-value.
 
