@@ -1,6 +1,8 @@
 ---
 title: "Security Features in the CRT"
-ms.date: "11/04/2016"
+description: "An overview of secure CRT functions in the Microsoft C runtime."
+ms.date: "09/29/2020"
+ms.topic: "conceptual"
 f1_keywords: ["_CRT_SECURE_NO_DEPRECATE", "_CRT_NONSTDC_NO_WARNINGS", "_CRT_SECURE_NO_WARNINGS"]
 helpviewer_keywords: ["security deprecation warnings [C++]", "CRT_NONSTDC_NO_DEPRECATE", "buffers [C++], buffer overruns", "deprecation warnings (security-related), disabling", "_CRT_NONSTDC_NO_WARNINGS", "security [CRT]", "_CRT_SECURE_NO_WARNINGS", "_CRT_NONSTDC_NO_DEPRECATE", "_CRT_SECURE_NO_DEPRECATE", "security-enhanced CRT", "CRT_SECURE_NO_WARNINGS", "CRT_SECURE_NO_DEPRECATE", "deprecation warnings (security-related)", "buffer overruns", "CRT_NONSTDC_NO_WARNINGS", "CRT, security enhancements", "parameters [C++], validation"]
 ms.assetid: d9568b08-9514-49cd-b3dc-2454ded195a3
@@ -9,17 +11,17 @@ ms.assetid: d9568b08-9514-49cd-b3dc-2454ded195a3
 
 Many old CRT functions have newer, more secure versions. If a secure function exists, the older, less secure version is marked as deprecated and the new version has the `_s` ("secure") suffix.
 
-In this context, "deprecated" just means that a function's use is not recommended; it does not indicate that the function is scheduled to be removed from the CRT.
+In this context, "deprecated" means using the function's isn't recommended. It doesn't mean the function is scheduled to be removed from the CRT.
 
-The secure functions do not prevent or correct security errors; rather, they catch errors when they occur. They perform additional checks for error conditions, and in the case of an error, they invoke an error handler (see [Parameter Validation](../c-runtime-library/parameter-validation.md)).
+The secure functions don't prevent or correct security errors. Instead, they catch errors when they occur. They do additional checks for error conditions. If there is an error, they invoke an error handler (see [Parameter Validation](../c-runtime-library/parameter-validation.md)).
 
-For example, the `strcpy` function has no way of telling if the string that it is copying is too big for its destination buffer. However, its secure counterpart, `strcpy_s`, takes the size of the buffer as a parameter, so it can determine if a buffer overrun will occur. If you use `strcpy_s` to copy eleven characters into a ten-character buffer, that is an error on your part; `strcpy_s` cannot correct your mistake, but it can detect your error and inform you by invoking the invalid parameter handler.
+For example, the `strcpy` function can't tell if the string it's copying is too large for the destination buffer. Its secure counterpart, `strcpy_s`, takes the size of the buffer as a parameter. So it can determine if a buffer overrun will occur. If you use `strcpy_s` to copy 11 characters into a 10 character buffer, that is an error on your part; `strcpy_s` can't correct your mistake. But it can detect your error and inform you by invoking the invalid parameter handler.
 
 ## Eliminating deprecation warnings
 
-There are several ways to eliminate deprecation warnings for the older, less secure functions. The simplest is simply to define `_CRT_SECURE_NO_WARNINGS` or use the [warning](../preprocessor/warning.md) pragma. Either will disable deprecation warnings, but of course the security issues that caused the warnings still exist. It is far better to leave deprecation warnings enabled and take advantage of the new CRT security features.
+There are several ways to eliminate deprecation warnings for the older, less secure functions. The simplest is simply to define `_CRT_SECURE_NO_WARNINGS` or use the [warning](../preprocessor/warning.md) pragma. Either will disable deprecation warnings, but the security issues that caused the warnings still exist. It's better to leave deprecation warnings enabled and take advantage of the new CRT security features.
 
-In C++, the easiest way to do that is to use [Secure Template Overloads](../c-runtime-library/secure-template-overloads.md), which in many cases will eliminate deprecation warnings by replacing calls to deprecated functions with calls to the new secure versions of those functions. For example, consider this deprecated call to `strcpy`:
+In C++, the easiest way to do that is to use [Secure Template Overloads](../c-runtime-library/secure-template-overloads.md). This will eliminate deprecation warnings, in many cases, by replacing calls to deprecated functions with calls to secure versions of those functions. For example, consider this deprecated call to `strcpy`:
 
 ```
 char szBuf[10];
@@ -34,25 +36,23 @@ Another source of deprecation warnings, unrelated to security, is the POSIX func
 
 ## Additional Security Features
 
-Some of the security features include the following:
+Some of the security features include:
 
-- `Parameter Validation`. Parameters passed to CRT functions are validated, in both secure functions and in many preexisting versions of functions. These validations include:
+- `Parameter Validation`. Secure functions, and many of their unsecure counterparts, validate parameters. Validation may  include:
 
-  - Checking for **NULL** values passed to the functions.
-
+  - Checking for **NULL** values.
   - Checking enumerated values for validity.
-
   - Checking that integral values are in valid ranges.
 
 - For more information, see [Parameter Validation](../c-runtime-library/parameter-validation.md).
 
-- A handler for invalid parameters is also accessible to the developer. When an encountering an invalid parameter, instead of asserting and exiting the application, the CRT provides a way to check these problems with the [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) function.
+- A handler for invalid parameters is also accessible to the developer. When a function encounters an invalid parameter, instead of asserting and exiting the application, the CRT allows you to check these problems via [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md).
 
-- `Sized Buffers`. The secure functions require that the buffer size be passed to any function that writes to a buffer. The secure versions validate that the buffer is large enough before writing to it, helping to avoid dangerous buffer overrun errors that could allow malicious code to execute. These functions usually return an `errno` type of error code and invoke the invalid parameter handler if the size of the buffer is too small. Functions that read from input buffers, such as `gets`, have secure versions that require you to specify a maximum size.
+- `Sized Buffers`. You must pass the buffer size to any secure function that writes to a buffer. The secure versions validate that the buffer is large enough before writing to it. Which helps avoid dangerous buffer overrun errors that could allow malicious code to execute. These functions usually return an `errno` error code and invoke the invalid parameter handler if the size of the buffer is too small. Functions that read from input buffers, such as `gets`, have secure versions that require you to specify a maximum size.
 
-- `Null termination`. Some functions that left potentially non-terminated strings have secure versions which ensure that strings are properly null-terminated.
+- `Null termination`. Some functions that left potentially non-terminated strings have secure versions, which ensure that strings are properly null-terminated.
 
-- `Enhanced error reporting`. The secure functions return error codes with more error information than was available with the preexisting functions. The secure functions and many of the preexisting functions now set `errno` and often return an `errno` code type as well, to provide better error reporting.
+- `Enhanced error reporting`. The secure functions return error codes with more error information than was available with the pre-existing functions. The secure functions and many of the pre-existing functions now set `errno` and often return an `errno` code type as well, to provide better error reporting.
 
 - `Filesystem security`. Secure file I/O APIs support secure file access in the default case.
 

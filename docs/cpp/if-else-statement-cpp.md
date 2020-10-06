@@ -1,60 +1,67 @@
 ---
-title: "if-else Statement (C++)"
-ms.date: "07/20/2019"
-description: "Use if-else statements in C++ to control conditional branching."
+title: "if-else statement (C++)"
+description: "Use if-else, if-else with initializer, and if-constexpr statements to control conditional branching."
+ms.date: 10/02/2020
 f1_keywords: ["else_cpp", "if_cpp"]
 helpviewer_keywords: ["if keyword [C++]", "else keyword [C++]"]
 ms.assetid: f8c45cde-6bce-42ae-81db-426b3dbd4caa
 ---
-# if-else Statement (C++)
+# if-else statement (C++)
 
-Controls conditional branching. Statements in the *if-block* are executed only if the *if-expression* evaluates to a non-zero value (or **`true`**). If the value of *expression* is nonzero, *statement1* and any other statements in the block are executed and the else-block, if present, is skipped. If the value of *expression* is zero, then the if-block is skipped and the else-block, if present, is executed. Expressions that evaluate to non-zero are
+An if-else statement controls conditional branching. Statements in the *`if-branch`* are executed only if the *`condition`* evaluates to a non-zero value (or **`true`**). If the value of *`condition`* is nonzero, the following statement gets executed, and the statement following the optional **`else`** gets skipped. Otherwise, the following statement gets skipped, and if there's an **`else`** then the statement following the **`else`** gets executed.
+
+*`condition`* expressions that evaluate to non-zero are:
 
 - **`true`**
 - a non-null pointer,
 - any non-zero arithmetic value, or
-- a class type that defines an unambiguous conversion to an arithmetic, boolean or pointer type. (For information about conversions, see [Standard Conversions](../cpp/standard-conversions.md).)
+- a class type that defines an unambiguous conversion to an arithmetic, boolean, or pointer type. (For information about conversions, see [Standard Conversions](../cpp/standard-conversions.md).)
 
 ## Syntax
 
-```cpp
-if ( expression )
-{
-   statement1;
-   ...
-}
-else  // optional
-{
-   statement2;
-   ...
-}
+*`init-statement`*:\
+&emsp; *`expression-statement`*\
+&emsp; *`simple-declaration`*
 
-// C++17 - Visual Studio 2017 version 15.3 and later:
-if ( initialization; expression )
-{
-   statement1;
-   ...
-}
-else  // optional
-{
-   statement2;
-   ...
-}
+*`condition`*:\
+&emsp; *`expression`*\
+&emsp; *`attribute-specifier-seq`*<sub>*opt*</sub> *`decl-specifier-seq`* *`declarator`* *`brace-or-equal-initializer`*
 
-// C++17 - Visual Studio 2017 version 15.3 and later:
-if constexpr (expression)
-{
-    statement1;
-    ...
-}
-else  // optional
-{
-   statement2;
-   ...
-}
-```
+*`statement`*:\
+&emsp; *`expression-statement`*\
+&emsp; *`compound-statement`*
 
-## Example: if-else statement
+*`expression-statement`*:\
+&emsp; *`expression`*<sub>*opt*</sub> **`;`**
+
+*`compound-statement`*:\
+&emsp; **`{`** *`statement-seq`*<sub>*opt*</sub> **`}`**
+
+*`statement-seq`*:\
+&emsp; *`statement`*\
+&emsp; *`statement-seq`* *`statement`*
+
+*`if-branch`*:\
+&emsp; *`statement`*
+
+*`else-branch`*:\
+&emsp; *`statement`*
+
+*`selection-statement`*:\
+&emsp; **`if`** **`constexpr`**<sub>*opt*</sub><sup>17</sup> **`(`** *`init-statement`*<sub>*opt*</sub><sup>17</sup> *`condition`* **`)`** *`if-branch`*\
+&emsp; **`if`** **`constexpr`**<sub>*opt*</sub><sup>17</sup> **`(`** *`init-statement`*<sub>*opt*</sub><sup>17</sup> *`condition`* **`)`** *`if-branch`* **`else`** *`else-branch`*
+
+<sup>17</sup> This optional element is available starting in C++17.
+
+## if-else statements
+
+In all forms of the **`if`** statement, *`condition`*, which can have any value except a structure, is evaluated, including all side effects. Control passes from the **`if`** statement to the next statement in the program unless the executed *`if-branch`* or *`else-branch`* contains a [`break`](../cpp/break-statement-cpp.md), [`continue`](../cpp/continue-statement-cpp.md), or [`goto`](../cpp/goto-statement-cpp.md).
+
+The **`else`** clause of an `if...else` statement is associated with the closest previous **`if`** statement in the same scope that doesn't have a corresponding **`else`** statement.
+
+### Example
+
+This sample code shows several **`if`** statements in use, both with and without **`else`**:
 
 ```cpp
 // if_else_statement.cpp
@@ -101,9 +108,11 @@ int main()
 }
 ```
 
-## <a name="if_with_init"></a>Example: if statement with an initializer
+## <a name="if_with_init"></a> if statement with an initializer
 
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): An **`if`** statement may also contain an expression that declares and initializes a named variable. Use this form of the if-statement when the variable is only needed within the scope of the if-block.
+Starting in C++17, an **`if`** statement may also contain an *`init-statement`* expression that declares and initializes a named variable. Use this form of the if-statement when the variable is only needed within the scope of the if-statement. **Microsoft-specific**: This form is available starting in Visual Studio 2017 version 15.3, and requires at least the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option.
+
+### Example
 
 ```cpp
 #include <iostream>
@@ -147,13 +156,13 @@ int main()
 }
 ```
 
-In all forms of the **`if`** statement, *expression*, which can have any value except a structure, is evaluated, including all side effects. Control passes from the **`if`** statement to the next statement in the program unless one of the *statement*s contains a [break](../cpp/break-statement-cpp.md), [continue](../cpp/continue-statement-cpp.md), or [goto](../cpp/goto-statement-cpp.md).
-
-The **`else`** clause of an `if...else` statement is associated with the closest previous **`if`** statement in the same scope that does not have a corresponding **`else`** statement.
-
 ## <a name="if_constexpr"> if constexpr statements
 
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): In function templates, you can use an **if constexpr** statement to make compile-time branching decisions without having to resort to multiple function overloads. For example, you can write a single function that handles parameter unpacking (no zero-parameter overload is needed):
+Starting in C++17, you can use an **`if constexpr`** statement in function templates to make compile-time branching decisions without having to resort to multiple function overloads. **Microsoft-specific**: This form is available starting in Visual Studio 2017 version 15.3, and requires at least the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option.
+
+### Example
+
+This example shows how you can write a single function that handles parameter unpacking. No zero-parameter overload is needed:
 
 ```cpp
 template <class T, class... Rest>
@@ -176,6 +185,6 @@ void f(T&& t, Rest&&... r)
 
 ## See also
 
-[Selection Statements](../cpp/selection-statements-cpp.md)<br/>
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[switch Statement (C++)](../cpp/switch-statement-cpp.md)
+[Selection Statements](../cpp/selection-statements-cpp.md)\
+[Keywords](../cpp/keywords-cpp.md)\
+[`switch` Statement (C++)](../cpp/switch-statement-cpp.md)

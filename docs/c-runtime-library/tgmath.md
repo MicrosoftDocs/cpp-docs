@@ -1,6 +1,7 @@
 ---
 title: "Type-generic math"
 description: "Describes macros in <tgmath.h> that make it easier to write C code that calls the right math function, based on argument type." 
+ms.topic: "conceptual"
 ms.date: "9/3/2020"
 helpviewer_keywords: ["CRT tgmath.h"]
 ---

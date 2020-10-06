@@ -30,7 +30,7 @@ These options are deprecated starting in Visual Studio 2015:
 (Optional) Disables link-time code generation. This behavior is the same as when **`/LTCG`** isn't specified on the command line.
 
 **`PGINSTRUMENT`**<br/>
-(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **`/LTCG`** and `[/GENPROFILE` or `/FASTGENPROFILE`](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) to generate an instrumented build for profile-guided optimization. The data that is collected from instrumented runs is used to create an optimized image. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md). The short form of this option is **`/LTCG:PGI`**.
+(Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **`/LTCG`** and [`/GENPROFILE` or `/FASTGENPROFILE`](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) to generate an instrumented build for profile-guided optimization. The data that is collected from instrumented runs is used to create an optimized image. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md). The short form of this option is **`/LTCG:PGI`**.
 
 **`PGOPTIMIZE`**<br/>
 (Optional) This option is deprecated starting in Visual Studio 2015. Instead, use **`/LTCG`** and  [`/USEPROFILE`](useprofile.md) to build an optimized image. For more information, see [Profile-Guided Optimizations](../profile-guided-optimizations.md). The short form of this option is **`/LTCG:PGO`**.

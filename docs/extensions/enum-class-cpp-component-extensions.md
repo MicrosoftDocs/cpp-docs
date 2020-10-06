@@ -53,7 +53,7 @@ For more information, and examples, see [Enums](../cppcx/enums-c-cx.md).
 
 Note that the compiler emits error messages if the constant expression that defines the value of an enumerator cannot be represented by the *underlying-type*.  However, the compiler does not report an error for a value that is inappropriate for the underlying type. For example:
 
-- If *underlying-type* is numeric, and an enumerator specifies the maximum value for that type, the value of the next implicitly defined enumeratoin cannot be represented.
+- If *underlying-type* is numeric, and an enumerator specifies the maximum value for that type, the value of the next implicitly defined enumeration cannot be represented.
 
 - If *underlying-type* is **`bool`**, and more than two enumerators are implicitly defined, the enumerators after the first two cannot be represented.
 
