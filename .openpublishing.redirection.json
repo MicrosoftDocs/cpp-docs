@@ -13419,6 +13419,16 @@
       "source_path": "docs/parallel/openmp/a-31-thread-safe-lock-functions.md",
       "redirect_url": "/cpp/parallel/openmp/a-examples#a31-thread-safe-lock-functions",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-runtime-library/operator-delete-crt.md",
+      "redirect_url": "docs/c-runtime-library/delete-operator-crt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-runtime-library/operator-new-crt.md",
+      "redirect_url": "docs/c-runtime-library/new-operator-crt",
+      "redirect_document_id": false
     }
   ]
 }

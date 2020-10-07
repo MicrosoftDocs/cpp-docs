@@ -405,12 +405,8 @@
       href: ../c-runtime-library/ismbc-routines.md
     - name: operator new(CRT)
       href: ../c-runtime-library/new-operator-crt.md
-    - name: operator new (CRT)
-      href: ../c-runtime-library/operator-new-crt.md
     - name: operator delete(CRT)
       href: ../c-runtime-library/delete-operator-crt.md
-    - name: operator delete (CRT)
-      href: ../c-runtime-library/operator-delete-crt.md
     - name: printf_p positional parameters
       href: ../c-runtime-library/printf-p-positional-parameters.md
     - name: scanf type field characters
