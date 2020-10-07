@@ -23,7 +23,7 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 
 ## Syntax
 
-> **ConnectionManager.exe** *command* \[*arguments*] \[*options*]
+> **`ConnectionManager.exe`** *command* \[*arguments*] \[*options*]
 
 ### Commands and arguments
 
@@ -47,7 +47,7 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 
   Deletes header cache for connections that no longer exist. 
 
-- **`list`** \[`**`--properties`**`]
+- **`list`** \[**`--properties`**]
 
   Displays information, IDs, and properties of all stored connections. 
 
@@ -79,7 +79,7 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 
 - **`--no-telemetry`**
 
-  Disable sending usage data back to Microsoft. Usage data is collected and sent back to Microsoft unless the **--no-telemetry** flag is passed.  
+  Disable sending usage data back to Microsoft. Usage data is collected and sent back to Microsoft unless the **`--no-telemetry`** flag is passed.  
 
 - **`-n`**, **`--dry-run`**
 
