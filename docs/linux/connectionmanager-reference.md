@@ -1,5 +1,6 @@
 ---
 title: "ConnectionManager reference"
+description: "How to manage your remote SSH connections from a command line tool."
 ms.date: "01/17/2020"
 f1_keywords: ["ConnectionManager"]
 helpviewer_keywords: ["ConnectionManager program"]
@@ -33,14 +34,22 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 - **remove** \[*connection_id* \| *user\@host* \[**--port** *port*]]
 
   Removes a connection. If no arguments are specified, you're prompted to specify which connection to remove.
+  
+- **modify** \[default \| *connection_id* \| *user\@host* \[**--port** *port*]] \[**--property** *key=value*]
+
+  Defines or modifies a property on a connection. If *value* is empty then the property *key* is deleted. If authentication fails then no changes will be made.
 
 - **remove-all**
 
   Removes all stored connections.
+  
+- **clean**
 
-- **list**
+  Deletes header cache for connections that no longer exist. 
 
-  Displays information and IDs of all stored connections.
+- **list** \[--properties]
+
+  Displays information, IDs and properties of all stored connections. 
 
 - **help**
 
@@ -49,6 +58,8 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 - **version**
 
   Displays version information.
+
+  
 
 ### Options
 
@@ -75,8 +86,8 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 - **-n**, **--dry-run**
 
   Does a dry run of the command.
-
-- **-p**
+ 
+- **--p**
 
   Same as **--password**.
 
@@ -96,6 +107,12 @@ This command removes the connection that has ID 1975957870 from the list of conn
 
 ```cmd
 ConnectionManager.exe remove 1975957870
+```
+
+This command overrides the choice of shell for the connection with connection ID 21212121. Supported shells are **sh, csh, bash, tcsh, ksh, zsh, and dash**. If the shell found on the Linux system is not supported, then we fall back to explicitly use “sh” for all commands.
+
+```cmd
+ConnectionManager.exe modify 21212121 --property shell=csh
 ```
 
 ## See also

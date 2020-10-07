@@ -79,4 +79,6 @@ You can install the ASan debug bits on Linux distros that use apt with the follo
 sudo apt-get install libasan4-dbg
 ```
 
+Full intructions for installing debug symbol packages on Ubuntu can be found [here](https://wiki.ubuntu.com/Debug%20Symbol%20Packages).
+
 If ASan is enabled, Visual Studio prompts you at the top of the **Debug** pane of the **Output** window to install the ASan debug symbols.
