@@ -116,7 +116,7 @@ int main() {
 In B::f()
 ```
 
-## Example: using declaration with explicit qualification
+## Example: `using` declaration with explicit qualification
 
 Members declared by using a using declaration can be referenced by using explicit qualification. The `::` prefix refers to the global namespace.
 
@@ -156,7 +156,7 @@ In f
 In A::g
 ```
 
-## Example: using declaration synonyms and aliases
+## Example: `using` declaration synonyms and aliases
 
 When a using declaration is made, the synonym created by the declaration refers only to definitions that are valid at the point of the using declaration. Definitions added to a namespace after the using declaration are not valid synonyms.
 

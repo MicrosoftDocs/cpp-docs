@@ -40,7 +40,7 @@ This example prints the prime factors for each Carmichael number if that number 
 
 [!code-cpp[concrt-carmichael-primes#4](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_4.cpp)]
 
-## Example: Complete code example
+## Example: Complete code sample
 
 The following code shows the complete example, which uses parallel containers to compute the prime factors of the Carmichael numbers.
 

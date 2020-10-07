@@ -198,7 +198,7 @@ int main() {
 NULL
 ```
 
-## Example: nullptr assigned to native pointer
+## Example: `nullptr` assigned to native pointer
 
 The following code example shows that **`nullptr`** can be assigned to a native pointer when you compile with `/clr`.
 

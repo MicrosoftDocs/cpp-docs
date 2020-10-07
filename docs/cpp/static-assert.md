@@ -35,7 +35,7 @@ The compiler examines the **`static_assert`** declaration for syntax errors when
 
 You can use the **`static_assert`** keyword at namespace, class, or block scope. (The **`static_assert`** keyword is technically a declaration, even though it does not introduce new name into your program, because it can be used at namespace scope.)
 
-## Description of static_assert with namespace scope
+## Description of `static_assert` with namespace scope
 
 In the following example, the **`static_assert`** declaration has namespace scope. Because the compiler knows the size of type `void *`, the expression is evaluated immediately.
 
@@ -45,7 +45,7 @@ In the following example, the **`static_assert`** declaration has namespace scop
 static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");
 ```
 
-## Description of static_assert with class scope
+## Description of `static_assert` with class scope
 
 In the following example, the **`static_assert`** declaration has class scope. The **`static_assert`** verifies that a template parameter is a *plain old data* (POD) type. The compiler examines the **`static_assert`** declaration when it is declared, but does not evaluate the *constant-expression* parameter until the `basic_string` class template is instantiated in `main()`.
 

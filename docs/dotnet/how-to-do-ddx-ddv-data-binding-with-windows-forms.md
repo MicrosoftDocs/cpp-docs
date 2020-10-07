@@ -64,7 +64,7 @@ void CMFC01Dlg::OnBnClickedOk()
 }
 ```
 
-## Example: Add line of code to BOOL CMFC01Dlg::OnInitDialog()
+## Example: Add a line of code to BOOL CMFC01Dlg::OnInitDialog()
 
 And add the following line to the implementation of BOOL CMFC01Dlg::OnInitDialog().
 
