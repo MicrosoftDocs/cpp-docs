@@ -1,7 +1,7 @@
 ---
 title: "ConnectionManager reference"
-description: "How to manage your remote SSH connections from a command line tool."
-ms.date: "01/17/2020"
+description: "How to manage your remote SSH connections from a command-line tool."
+ms.date: "10/7/2020"
 f1_keywords: ["ConnectionManager"]
 helpviewer_keywords: ["ConnectionManager program"]
 ---
@@ -15,7 +15,7 @@ ConnectionManager.exe is available in Visual Studio 2019 version 16.5 and later.
 
 ::: moniker range="vs-2019"
 
-ConnectionManager.exe is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, use it to set up Visual Studio for continuous integration. You can use it in a Developer Command Prompt window. For more information about the Developer Command Prompt, see [Use the Microsoft C++ toolset from the command line](../build/building-on-the-command-line.md).
+ConnectionManager.exe is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, use it to setup Visual Studio for continuous integration. You can use it in a Developer Command Prompt window. For more information about the Developer Command Prompt, see [Use the Microsoft C++ toolset from the command line](../build/building-on-the-command-line.md).
 
 ConnectionManager.exe is available in Visual Studio 2019 version 16.5 and later. It's part of the **Linux development with C++** workload in the Visual Studio Installer. It's also installed automatically when you choose the **Connection Manager** component in the installer. It's installed in *%VCIDEInstallDir%\\Linux\\bin\\ConnectionManagerExe\\ConnectionManager.exe*.
 
@@ -27,73 +27,71 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 
 ### Commands and arguments
 
-- **add** *user\@host* \[**--port** *port*] \[**--password** *password*] \[**--privatekey** *privatekey_file*]
+- **`add`** *user\@host* \[**`--port`** *port*] \[**`--password`** *password*] \[**`--privatekey`** *privatekey_file*]
 
-  Authenticates and adds a new connection. By default, it uses port 22 and password authentication. (You'll be prompted to enter a password.) Use both **--password** and **--privatekey** to specify a password for a private key.
+  Authenticates and adds a new connection. By default, it uses port 22 and password authentication. (You'll be prompted to enter a password.) Use both **-`-password`** and **`--privatekey`** to specify a password for a private key.
 
-- **remove** \[*connection_id* \| *user\@host* \[**--port** *port*]]
+- **`remove`** \[*connection_id* \| *user\@host* \[**`--port`** *port*]]
 
   Removes a connection. If no arguments are specified, you're prompted to specify which connection to remove.
   
-- **modify** \[default \| *connection_id* \| *user\@host* \[**--port** *port*]] \[**--property** *key=value*]
+- **`modify`** \[`**default**` \| *connection_id* \| *user\@host* \[**`--port`** *port*]] \[**`--property`** *key=value*]
 
-  Defines or modifies a property on a connection. If *value* is empty then the property *key* is deleted. If authentication fails then no changes will be made.
+  Defines or modifies a property on a connection. If *value* is empty, then the property *key* is deleted. If authentication fails, no changes will be made.
 
-- **remove-all**
+- **`remove-all`**
 
   Removes all stored connections.
   
-- **clean**
+- **`clean`**
 
   Deletes header cache for connections that no longer exist. 
 
-- **list** \[--properties]
+- **`list`** \[--properties]
 
   Displays information, IDs and properties of all stored connections. 
 
-- **help**
+- **`help`**
 
   Displays a help screen.
 
-- **version**
+- **`version`**
 
   Displays version information.
 
-  
-
 ### Options
 
-- **-q**, **--quiet**
+- **`-q`**, **`--quiet`**
 
   Prevents output to `stdout` or `stderr`.
 
-- **--no-prompt**
+- **`--no-prompt`**
 
   Fail instead of prompt, when appropriate.
 
-- **--no-verify**
+- **`--no-verify`**
 
   Add or modify a connection without authentication.
 
-- **--file** *filename*
+- **`--file`** *filename*
 
   Read connection information from the provided *filename*.
 
-- **--no-telemetry**
+- **`--no-telemetry`**
 
   Disable sending usage data back to Microsoft. Usage data is collected and sent back to Microsoft unless the **--no-telemetry** flag is passed.  
 
-- **-n**, **--dry-run**
+- **`-n`**, **`--dry-run`**
 
   Does a dry run of the command.
  
-- **--p**
+- **`--p`**
 
   Same as **--password**.
 
-- **-i**
+- **`-i`**
 
-  Same as **--privatekey**.
+  Same as **`--privatekey`**.
 
 ## Examples
 
@@ -109,7 +107,7 @@ This command removes the connection that has ID 1975957870 from the list of conn
 ConnectionManager.exe remove 1975957870
 ```
 
-This command overrides the choice of shell for the connection with connection ID 21212121. Supported shells are **sh, csh, bash, tcsh, ksh, zsh, and dash**. If the shell found on the Linux system is not supported, then we fall back to explicitly use “sh” for all commands.
+This command overrides the choice of shell for the connection with connection ID 21212121. Supported shells are **sh, csh, bash, tcsh, ksh, zsh, and dash**. If the shell found on the Linux system isn't supported, then we fall back to explicitly use “sh” for all commands.
 
 ```cmd
 ConnectionManager.exe modify 21212121 --property shell=csh
