@@ -7,7 +7,7 @@ ms.assetid: 743b88f3-de11-48f4-ae83-931449ea3886
 
 The template's name itself can be referred to with or without the template arguments. In the scope of a class template, the name itself refers to the template. In the scope of a template specialization or partial specialization, the name alone refers to the specialization or partial specialization. Other specializations or partial specializations of the template can also be referenced, with the appropriate template arguments.
 
-## Example: Specialization VS partial specialization
+## Example: Specialization versus partial specialization
 
 The following code shows that the class template's name A is interpreted differently in the scope of a specialization or partial specialization.
 

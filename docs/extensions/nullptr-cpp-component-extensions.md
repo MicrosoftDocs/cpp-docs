@@ -171,7 +171,7 @@ int main() {
 test
 ```
 
-## Example: Handle declared and not initialized
+## Example: Default initialization
 
 The following code example shows that when handles are declared and not explicitly initialized, they are default initialized to **`nullptr`**.
 
