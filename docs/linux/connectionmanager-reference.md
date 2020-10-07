@@ -38,8 +38,8 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 - **`modify`** \[default \| *connection_id* \| *user\@host* \[**`--port`** *port*]] \[**`--property`** *key=value*]
 
   Defines or modifies a property on a connection.\
-  If *value* is empty, then the property *key* is deleted.  
-  If authentication fails, no changes will be made.
+  If *value* is empty, then the property *key* is deleted.\
+  If authentication fails, no changes will be made.\
   If no connection is specified (what is mean by the *default* option, above), the user's default remote connection is used.
 
 - **`remove-all`**
