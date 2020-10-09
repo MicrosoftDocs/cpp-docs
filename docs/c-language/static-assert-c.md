@@ -1,12 +1,12 @@
 ---
-title: "static_assert"
+title: "static_assert (C11)"
 description: "Describes the C11 static_assert keyword"
 ms.date: "10/9/2020"
 f1_keywords: ["static_assert_c"]
 helpviewer_keywords: ["assertions [C], static_assert"]
 ---
 
-# static_assert
+# static_assert (C11)
 
 New in C11. Tests an assertion at compile time. If the specified constant expression is **`false`**, the compiler displays the specified message and the compilation fails with error E1754; otherwise, the declaration has no effect.
 
