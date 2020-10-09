@@ -8,13 +8,13 @@ ms.assetid: adb4d64e-5514-4b70-8dcb-b9210e6b5a1c
 
 This example demonstrates how to use [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) to compute the product of two matrices.
 
-## Example: matrix_multiply function
+## Example: Compute the product of two matrices
 
 The following example shows the `matrix_multiply` function, which computes the product of two square matrices.
 
 [!code-cpp[concrt-parallel-matrix-multiply#1](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_1.cpp)]
 
-## Example: parallel_matrix_multiply function
+## Example: Compute a matrix multiply in parallel
 
 The following example shows the `parallel_matrix_multiply` function, which uses the `parallel_for` algorithm to perform the outer loop in parallel.
 

@@ -92,7 +92,7 @@ ref class ClassC {};   // Positional argument
 ref class ClassD {};   // Positional and named
 ```
 
-## Example: One-dimensional arrays
+## Example: One-dimensional array attribute parameter
 
 ### Description
 

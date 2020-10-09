@@ -16,13 +16,13 @@ The following example shows a basic `tree` type that contains a data element and
 
 [!code-cpp[concrt-task-tree-search#2](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_1.cpp)]
 
-## Example: for_all method
+## Example: Perform work in parallel
 
 The following example shows the `for_all` method. It uses the [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algorithm to perform a work function on each node of the tree in parallel.
 
 [!code-cpp[concrt-task-tree-search#1](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_2.cpp)]
 
-## Example: search_for_value function
+## Example:  Search the tree for a value
 
 The following example shows the `search_for_value` function, which searches for a value in the provided `tree` object. This function passes to the `for_all` method a work function that throws when it finds a tree node that contains the provided value.
 
@@ -32,7 +32,7 @@ When the work function that you provide to a task group throws an exception, the
 
 [!code-cpp[concrt-task-tree-search#3](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_3.cpp)]
 
-## Example: Create and search a tree object
+## Example: Create and search a tree in parallel
 
 The following example creates a `tree` object and searches it for several values in parallel. The `build_tree` function is shown later in this topic.
 

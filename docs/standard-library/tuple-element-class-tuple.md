@@ -78,7 +78,7 @@ The template specializations for `pair` types each provide a single member typed
 
 Use the [get Function &lt;utility&gt;](../standard-library/utility-functions.md#get) to return the element at a specified position, or of a specified type.
 
-## Example: Use tuple
+## Example: Get an element from a tuple
 
 ```cpp
 #include <tuple>
@@ -103,7 +103,7 @@ int main() {
 0 1.5 Tail
 ```
 
-## Example: Use array
+## Example: Get an element from an array
 
 ```cpp
 #include <array>
@@ -133,7 +133,7 @@ int main()
 0
 ```
 
-## Example: Use pair
+## Example: Get an element from a pair
 
 ```cpp
 #include <utility>

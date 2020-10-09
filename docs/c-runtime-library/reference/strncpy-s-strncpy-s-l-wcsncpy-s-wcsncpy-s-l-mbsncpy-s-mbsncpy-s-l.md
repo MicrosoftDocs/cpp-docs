@@ -187,7 +187,7 @@ By default, this function's global state is scoped to the application. To change
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## Example: Copy chars to buffer
+## Example: Copy chars to a buffer
 
 ```cpp
 // crt_strncpy_s_1.cpp

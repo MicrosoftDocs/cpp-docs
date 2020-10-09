@@ -31,7 +31,7 @@ class CMFC01Dlg : public CDialog
 };
 ```
 
-## Example: Extending CMFC01Dlg
+## Example: Implement DoDataExchange()
 
 Put the following code in the implementation of CMFC01Dlg:
 
@@ -64,7 +64,7 @@ void CMFC01Dlg::OnBnClickedOk()
 }
 ```
 
-## Example: Add a line of code to BOOL CMFC01Dlg::OnInitDialog()
+## Example: Set the textBox text
 
 And add the following line to the implementation of BOOL CMFC01Dlg::OnInitDialog().
 
