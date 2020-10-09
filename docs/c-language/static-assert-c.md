@@ -22,7 +22,7 @@ static_assert(constant-expression, string-literal);
 An integral constant expression that can be evaluated at compile time. If the evaluated expression is zero (false), the *string-literal* parameter is displayed and the compilation fails with an error. If the expression is nonzero (true), the **`static_assert`** declaration has no effect.
 
 *string-literal*\
-An message that is displayed if the *constant-expression* parameter is zero. The message is a string of characters using the [base character set](../c-language/ascii-character-set.md) of the compiler; that is, not [multibyte or wide characters](../c-language/multibyte-and-wide-characters.md).
+The message to displayif the *constant-expression* evaluates to zero (false). The message is a string of characters using the [base character set](../c-language/ascii-character-set.md) of the compiler; that is, not [multibyte or wide characters](../c-language/multibyte-and-wide-characters.md).
 
 ## Remarks
 
@@ -48,7 +48,7 @@ static_assert( Last==3, "Expected enum to have three elements");
 
 ## Example of `static_assert` in a function
 
-In the following example, the **`static_assert`** declaration has function scope. The **`static_assert`** verifies that the size of the integer parameter is 32 bits.
+In the following example, the **`static_assert`** declaration is at function scope and verifies that the size of the integer parameter is 32 bits.
 
 ```c
 void test(int x)
@@ -59,4 +59,5 @@ void test(int x)
 
 ## See also
 
-[_STATIC_ASSERT Macro](../c-runtime-library/reference/static-assert-macro.md)
+[_STATIC_ASSERT Macro](../c-runtime-library/reference/static-assert-macro.md) 
+[assert macro and _assert and _wassert functions](../c-runtime-library/reference/assert-macro-assert-wassert.md)
