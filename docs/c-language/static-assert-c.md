@@ -35,6 +35,7 @@ You can use the **`static_assert`** keyword at global or function scope.
 In the following example, the **`static_assert`** is at global scope. Because the compiler knows the value of the enum elements, the expression can be evaluated at compile time.
 
 ```c
+// requires /std:c17
 enum
 {
     A=0,
@@ -51,6 +52,7 @@ static_assert( Last==3, "Expected enum to have three elements");
 In the following example, the **`static_assert`** declaration is at function scope and verifies that the size of the integer parameter is 32 bits.
 
 ```c
+// requires /std:c17
 void test(int x)
 {
     static_assert(sizeof(x)==4, "Expecting 32 bit integers");
