@@ -8,7 +8,7 @@ ms.assetid: 1a88d809-b14f-46a4-97c4-3e48beb418f2
 
 With just a function prototype, the compiler can continue without error, but the linker cannot resolve a call to an address because there is no function code or variable space reserved. You will not see this error until you create a call to the function that the linker must resolve.
 
-## Example: Function call in main
+## Example: Call to an undefined function
 
 The function call in main will cause LNK2019 because the prototype allows the compiler to think the function exists.  The linker finds that it doesn't.
 
