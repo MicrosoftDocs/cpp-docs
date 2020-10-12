@@ -10,13 +10,13 @@ This topic shows how to use parallel containers to efficiently store and access 
 
 The example code computes the set of prime and Carmichael numbers in parallel. Then, for each Carmichael number, the code computes the prime factors of that number.
 
-## Example
+## Example: Determine if an input value is a prime number
 
 The following example shows the `is_prime` function, which determines whether an input value is a prime number, and the `is_carmichael` function, which determines whether the input value is a Carmichael number.
 
 [!code-cpp[concrt-carmichael-primes#1](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_1.cpp)]
 
-## Example
+## Example: Compute prime and Carmichael numbers
 
 The following example uses the `is_prime` and `is_carmichael` functions to compute the sets of prime and Carmichael numbers. The example uses the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) and [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithms to compute each set in parallel. For more information about parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).
 
@@ -24,7 +24,7 @@ This example uses a [concurrency::concurrent_queue](../../parallel/concrt/refere
 
 [!code-cpp[concrt-carmichael-primes#2](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_2.cpp)]
 
-## Example
+## Example: Find all prime factors of a given value
 
 The following example shows the `prime_factors_of` function, which uses trial division to find all prime factors of the given value.
 
@@ -32,7 +32,7 @@ This function uses the [concurrency::parallel_for_each](reference/concurrency-na
 
 [!code-cpp[concrt-carmichael-primes#3](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_3.cpp)]
 
-## Example
+## Example: Processes each element in the queue of Carmichael numbers
 
 This example processes each element in the queue of Carmichael numbers by calling the `prime_factors_of` function to compute its prime factors. It uses a task group to perform this work in parallel. For more information about task groups, see [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
@@ -40,7 +40,7 @@ This example prints the prime factors for each Carmichael number if that number 
 
 [!code-cpp[concrt-carmichael-primes#4](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_4.cpp)]
 
-## Example
+## Example: Finished parallel container code sample
 
 The following code shows the complete example, which uses parallel containers to compute the prime factors of the Carmichael numbers.
 

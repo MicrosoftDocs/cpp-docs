@@ -25,11 +25,13 @@ Because the members of managed structures are sometimes rearranged for performan
 
 1. Now managed code can pass the managed version of the structure to the unmanaged functions as though they are actually managed functions. These structures can be passed either by value or by reference, as demonstrated in the following example.
 
-## Example
+## Unmanaged and a managed modules
 
 The following code consists of an unmanaged and a managed module. The unmanaged module is a DLL that defines a structure called Location and a function called GetDistance that accepts two instances of the Location structure. The second module is a managed command-line application that imports the GetDistance function, but defines it in terms of a managed equivalent of the Location structure, MLocation. In practice the same name would probably be used for both versions of the structure; however, a different name is used here to demonstrate that the DllImport prototype is defined in terms of the managed version.
 
 Note that no portion of the DLL is exposed to the managed code using the traditional #include directive. In fact, the DLL is accessed at run time only, so problems with functions imported with DllImport will not be detected at compile time.
+
+### Example: Unmanaged DLL module
 
 ```cpp
 // TraditionalDll3.cpp
@@ -75,7 +77,7 @@ void InitLocation(Location* lp) {
 }
 ```
 
-## Example
+### Example: Managed command-line application module
 
 ```cpp
 // MarshalStruct_pi.cpp

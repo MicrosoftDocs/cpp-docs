@@ -41,8 +41,6 @@ Include the STL/CLR header `<cliext/utility>` to define the template class `pair
 |--------------|-----------------|
 |[make_pair (STL/CLR)](#make_pair)|Make a pair from a pair of values.|
 
-## Members
-
 ## <a name="pair"></a> pair (STL/CLR)
 
 The template class describes an object that wraps a pair of values.

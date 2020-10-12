@@ -153,7 +153,7 @@ In C++, these functions have template overloads that invoke the newer, secure co
 
 The **_vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** and **_vsnwprintf_l** functions are Microsoft-specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## Example
+## Example: Use wide characters with `_vsnwprintf()`
 
 ```C
 // crt_vsnwprintf.c
@@ -195,7 +195,7 @@ nSize: -1, buff: Hi there!
 
 The behavior changes if you use vsnprintf instead, along with narrow-string parameters. The *count* parameter can be the entire size of the buffer, and the return value is the number of characters that would have been written if *count* was large enough:
 
-## Example
+## Example: Use `vsnprintf()` with narrow strings
 
 ```C
 // crt_vsnprintf.c
