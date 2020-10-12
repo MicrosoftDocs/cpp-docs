@@ -1,7 +1,7 @@
 ---
 title: "static_assert (C11)"
 description: "Describes the C11 static_assert keyword"
-ms.date: "10/9/2020"
+ms.date: "10/12/2020"
 f1_keywords: ["static_assert_c"]
 helpviewer_keywords: ["assertions [C], static_assert"]
 ---
@@ -22,7 +22,7 @@ static_assert(constant-expression, string-literal);
 An integral constant expression that can be evaluated at compile time. If the evaluated expression is zero (false), the *string-literal* parameter is displayed and the compilation fails with an error. If the expression is nonzero (true), the **`static_assert`** declaration has no effect.
 
 *string-literal*\
-The message to displayif the *constant-expression* evaluates to zero (false). The message is a string of characters using the [base character set](../c-language/ascii-character-set.md) of the compiler; that is, not [multibyte or wide characters](../c-language/multibyte-and-wide-characters.md).
+The message to display if the *constant-expression* evaluates to zero (false). The message is a string of characters using the [base character set](../c-language/ascii-character-set.md) of the compiler; that is, not [multibyte or wide characters](../c-language/multibyte-and-wide-characters.md).
 
 ## Remarks
 
@@ -36,15 +36,15 @@ In the following example, the **`static_assert`** is at global scope. Because th
 
 ```c
 // requires /std:c17
-enum
+enum Items
 {
-    A=0,
+    A,
     B,
     C,
-    Last
+    LENGTH
 };
 
-static_assert( Last==3, "Expected enum to have three elements");
+static_assert( LENGTH==3, "Expected enum to have three elements");
 ```
 
 ## Example of `static_assert` in a function

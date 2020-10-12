@@ -1,7 +1,7 @@
 ---
 title: "C Keywords"
 description: "Keywords in Standard C and Microsoft C compiler extensions."
-ms.date: 09/12/2020
+ms.date: 10/12/2020
 helpviewer_keywords: ["keywords [C]", "redefining keywords", "Microsoft-specific keywords"]
 ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
 ---
@@ -45,6 +45,7 @@ The C language uses the following keywords:
         **`signed`**\
         **`sizeof`**\
         **`static`**\
+        **`static_assert`**\
         **`struct`**\
         **`switch`**\
         **`typedef`**\
