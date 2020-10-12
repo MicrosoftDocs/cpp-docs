@@ -45,7 +45,7 @@ The C language uses the following keywords:
         **`signed`**\
         **`sizeof`**\
         **`static`**\
-        **`static_assert`**\
+        **`static_assert`** <sup>2, a</sup>\
         **`struct`**\
         **`switch`**\
         **`typedef`**\
