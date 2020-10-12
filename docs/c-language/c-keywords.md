@@ -52,9 +52,9 @@ The C language uses the following keywords:
         **`union`**\
         **`unsigned`**\
         **`void`**\
-        **`volatile`**
     :::column-end:::
     :::column:::
+        **`volatile`**
         **`while`**\
         **`_Alignas`** <sup>2, a</sup>\
         **`_Alignof`** <sup>2, a</sup>\
