@@ -63,7 +63,7 @@ Specifies type to be allocated; it can be either a built-in or user-defined type
 *initializer*<br/>
 Provides a value for the initialized object. Initializers cannot be specified for arrays. The **`new`** operator will create arrays of objects only if the class has a default constructor.
 
-## Example: Allocate character array and object
+## Example: Allocate and free a character array
 
 The following code example allocates a character array and an object of class `CName` and then frees them.
 

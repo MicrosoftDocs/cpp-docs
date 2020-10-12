@@ -78,7 +78,7 @@ int main()
 
 In the following example, the **`static_assert`** declaration has block scope. The **`static_assert`** verifies that the size of the VMPage structure is equal to the virtual memory pagesize of the system.
 
-## Example: `static_assert` with block scope
+## Example: `static_assert` at block scope
 
 ```cpp
 #include <sys/param.h> // defines PAGESIZE

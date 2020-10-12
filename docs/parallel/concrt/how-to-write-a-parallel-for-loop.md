@@ -22,7 +22,7 @@ The following example shows the `parallel_matrix_multiply` function, which uses 
 
 This example parallelizes the outer loop only because it performs enough work to benefit from the overhead for parallel processing. If you parallelize the inner loop, you will not receive a gain in performance because the small amount of work that the inner loop performs does not overcome the overhead for parallel processing. Therefore, parallelizing the outer loop only is the best way to maximize the benefits of concurrency on most systems.
 
-## Example: Complete parallel_for loop code sample
+## Example: Finished parallel_for loop code sample
 
 The following more complete example compares the performance of the `matrix_multiply` function versus the `parallel_matrix_multiply` function.
 

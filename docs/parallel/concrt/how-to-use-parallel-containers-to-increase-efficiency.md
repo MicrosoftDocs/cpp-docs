@@ -16,7 +16,7 @@ The following example shows the `is_prime` function, which determines whether an
 
 [!code-cpp[concrt-carmichael-primes#1](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_1.cpp)]
 
-## Example: Compute Carmichael function
+## Example: Compute prime and Carmichael numbers
 
 The following example uses the `is_prime` and `is_carmichael` functions to compute the sets of prime and Carmichael numbers. The example uses the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) and [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithms to compute each set in parallel. For more information about parallel algorithms, see [Parallel Algorithms](../../parallel/concrt/parallel-algorithms.md).
 
@@ -40,7 +40,7 @@ This example prints the prime factors for each Carmichael number if that number 
 
 [!code-cpp[concrt-carmichael-primes#4](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_4.cpp)]
 
-## Example: Complete parallel container code sample
+## Example: Finished parallel container code sample
 
 The following code shows the complete example, which uses parallel containers to compute the prime factors of the Carmichael numbers.
 
