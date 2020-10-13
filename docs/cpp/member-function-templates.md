@@ -10,7 +10,7 @@ The term member template refers to both member function templates and nested cla
 
 Member functions can be function templates in several contexts. All functions of class templates are generic but are not referred to as member templates or member function templates. If these member functions take their own template arguments, they are considered to be member function templates.
 
-## Example
+## Example: Declare member function templates
 
 Member function templates of nontemplate or template classes are declared as function templates with their template parameters.
 
@@ -29,7 +29,7 @@ int main()
 }
 ```
 
-## Example
+## Example: Member function template of template class
 
 The following example shows a member function template of a template class.
 
@@ -50,7 +50,7 @@ int main()
 }
 ```
 
-## Example
+## Example: Define member templates outside class
 
 ```cpp
 // defining_member_templates_outside_class.cpp
@@ -72,7 +72,7 @@ int main()
 }
 ```
 
-## Example
+## Example: Templated user-defined conversion
 
 Local classes are not allowed to have member templates.
 

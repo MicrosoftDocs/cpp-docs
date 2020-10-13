@@ -21,7 +21,7 @@ To change the locale using the C++ Runtime Library, use the [locale Class](../st
 
 The following examples show how to use the [setlocale](../preprocessor/setlocale.md) function, the [locale Class](../standard-library/locale-class.md), and the [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md) function to change the locale of an application in several different scenarios.
 
-## Example
+## Example: Change locale with per-thread locale enabled
 
 In this example, the main thread spawns two child threads. The first thread, Thread A, enables per-thread locale by calling `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. The second thread, Thread B, as well as the main thread, do not enable per-thread locale. Thread A then proceeds to change the locale using the [setlocale](../preprocessor/setlocale.md) function of the C Runtime Library.
 
@@ -120,7 +120,7 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "C"
 ```
 
-## Example
+## Example: Change global locale with per-thread locale enabled
 
 In this example, the main thread spawns two child threads. The first thread, Thread A, enables per-thread locale by calling `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. The second thread, Thread B, as well as the main thread, do not enable per-thread locale. Thread A then proceeds to change the locale using the [locale::global](../standard-library/locale-class.md#global) method of the C++ Standard Library.
 
@@ -219,7 +219,7 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "French_France.1252"
 ```
 
-## Example
+## Example: Change locale without per-thread locale enabled
 
 In this example, the main thread spawns two child threads. The first thread, Thread A, enables per-thread locale by calling `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. The second thread, Thread B, as well as the main thread, do not enable per-thread locale. Thread B then proceeds to change the locale using the [setlocale](../preprocessor/setlocale.md) function of the C Runtime Library.
 
@@ -322,7 +322,7 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "C"
 ```
 
-## Example
+## Example: Change global locale without per-thread locale enabled
 
 In this example, the main thread spawns two child threads. The first thread, Thread A, enables per-thread locale by calling `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. The second thread, Thread B, as well as the main thread, do not enable per-thread locale. Thread B then proceeds to change the locale using the [locale::global](../standard-library/locale-class.md#global) method of the C++ Standard Library.
 

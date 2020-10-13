@@ -14,7 +14,7 @@ The [DynamicConsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008S
 
 [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) allows you to access a data source when you have no knowledge of the database schema (the database's underlying structure). `CDynamicAccessor` methods get column information such as column names, count, and data type. You use this column information to create an accessor dynamically at run time. The column information is stored in a buffer that is created and managed by this class. Get data from the buffer using the [GetValue](./cdynamicaccessor-class.md#getvalue) method.
 
-## Example
+## Example: CDynamic accessors
 
 ```cpp
 // Using_Dynamic_Accessors.cpp
@@ -86,7 +86,7 @@ int main(int argc, char* argv[] )
 
 Use `CDynamicStringAccessor` methods to get column information. You use this column information to create an accessor dynamically at run time. The column information is stored in a buffer created and managed by this class. Get data from the buffer using [CDynamicStringAccessor::GetString](./cdynamicstringaccessor-class.md#getstring) or store it to the buffer using [CDynamicStringAccessor::SetString](./cdynamicstringaccessor-class.md#setstring).
 
-## Example
+## Example: CDynamicStringAccessor
 
 ```cpp
 // Using_Dynamic_Accessors_b.cpp

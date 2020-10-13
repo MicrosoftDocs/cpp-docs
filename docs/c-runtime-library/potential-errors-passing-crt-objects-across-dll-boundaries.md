@@ -26,7 +26,7 @@ Because each copy of the CRT library has its own heap manager, allocating memory
 
 The DLL and its clients normally use the same copy of the CRT library only if both are linked at load time to the same version of the CRT DLL. Because the DLL version of the Universal CRT library used by Visual Studio 2015, and later on Windows 10, is now a centrally deployed Windows component (ucrtbase.dll), it's the same for apps built with Visual Studio 2015 and later versions. However, even when the CRT code is identical, you can't give memory allocated in one heap to a component that uses a different heap.
 
-## Example
+## Example: Pass file handle across DLL boundary
 
 ### Description
 
@@ -68,7 +68,7 @@ int main(void)
 this is a string
 ```
 
-## Example
+## Example: Pass environment variables across DLL boundary
 
 ### Description
 
