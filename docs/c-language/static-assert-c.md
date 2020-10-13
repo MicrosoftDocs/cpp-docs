@@ -8,7 +8,7 @@ helpviewer_keywords: ["assertions [C], _Static_assert, static_assert"]
 
 # _Static_assert keyword and static_assert macro (C11)
 
-New in C11. Tests an assertion at compile time. If the specified constant expression is **`false`**, the compiler displays the specified message and the compilation fails with error C2338; otherwise, there's no effect.
+Tests an assertion at compile time. If the specified constant expression is **`false`**, the compiler displays the specified message and the compilation fails with error C2338; otherwise, there's no effect. New in C11.
 
 **`_Static_assert`** is a keyword introduced in C11.
 **`static_assert`** is a macro, introduced in C11, that maps to the **`_Static_assert`** keyword.
@@ -23,26 +23,24 @@ static_assert(constant-expression, string-literal);
 ### Parameters
 
 *constant-expression*\
-An integral constant expression that can be evaluated at compile time. If the evaluated expression is zero (false), the *string-literal* parameter is displayed and the compilation fails with an error. If the expression is nonzero (true), then there's no effect.
+An integral constant expression that can be evaluated at compile time. If the expression is zero (false), displays the *string-literal* parameter and the compilation fails with an error. If the expression is nonzero (true), then there's no effect.
 
 *string-literal*\
-The message to display if the *constant-expression* evaluates to zero (false). The message is a string of characters using the [base character set](../c-language/ascii-character-set.md) of the compiler; that is, not [multibyte or wide characters](../c-language/multibyte-and-wide-characters.md).
+The message displayed if *constant-expression* evaluates to zero (false). The message must be made using the [base character set](../c-language/ascii-character-set.md) of the compiler. The characters can't be [multibyte or wide characters](../c-language/multibyte-and-wide-characters.md).
 
 ## Remarks
 
-The **`_Static_assert`** keyword, and the **`static_assert`** macro, test a software assertion at compile time. They can be used at global or function scope.
+The **`_Static_assert`** keyword, and the **`static_assert`** macro, both test a software assertion at compile time. They can be used at global or function scope.
 
 In contrast, the [assert macro and _assert and _wassert functions](../c-runtime-library/reference/assert-macro-assert-wassert.md) test a software assertion at runtime and incur a runtime cost.
 
 **Microsoft-specific behavior**\
 
-In C, if you don't include <assert.h>, the Microsoft Visual C/C++ compiler treats **`static_assert`** as a keyword that maps to **`_Static_assert`**. The reason for this mapping is that C++ has a **`static_assert`** keyword.
-
-Using the **`static_assert`** macro is preferred because the same code will work in both C and C++.
+In C, when you don't include <assert.h>, the Microsoft Visual C/C++ compiler treats **`static_assert`** as a keyword that maps to **`_Static_assert`**. Using the **`static_assert`** macro is preferred because the same code will work in both C and C++.
 
 ## Example of a compile-time assert
 
-In the following example, **`static_assert`** and **`_Static_assert`** are used to verify that the `Items` enum only contains three elements, and that integers are 32 bits wide.
+In the following example, **`static_assert`** and **`_Static_assert`** are used to verify how many elements are in an enum and that integers are 32 bits wide.
 
 ```C
 // requires /std:c11 or higher

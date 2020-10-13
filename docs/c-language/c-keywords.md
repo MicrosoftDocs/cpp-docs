@@ -111,7 +111,7 @@ The following keywords and special identifiers are recognized by the Microsoft C
         **`dllexport`**<sup>4</sup>\
         **`__inline`**<sup>5</sup>\
         **`__leave`**<sup>5</sup>\
-        **`static_assert`**<sup>6</sup>\
+        **`static_assert`**<sup>6</sup>
     :::column-end:::
 :::row-end:::
 
