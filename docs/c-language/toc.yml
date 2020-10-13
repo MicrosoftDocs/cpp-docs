@@ -400,6 +400,8 @@
         href: ../c-language/null-statement-c.md
       - name: return statement (C)
         href: ../c-language/return-statement-c.md
+      - name: static_assert statement (C11)
+        href: ../c-language/static-assert-c.md
       - name: switch statement (C)
         href: ../c-language/switch-statement-c.md
       - name: try-except statement (C)
