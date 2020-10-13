@@ -8,7 +8,7 @@ helpviewer_keywords: ["assertions [C], _Static_assert, static_assert"]
 
 # _Static_assert keyword and static_assert macro (C11)
 
-New in C11. Tests an assertion at compile time. If the specified constant expression is **`false`**, the compiler displays the specified message and the compilation fails with error C2338; otherwise, there is no effect.
+New in C11. Tests an assertion at compile time. If the specified constant expression is **`false`**, the compiler displays the specified message and the compilation fails with error C2338; otherwise, there's no effect.
 
 **`_Static_assert`** is a keyword introduced in C11.
 **`static_assert`** is a macro, introduced in C11, that maps to the **`_Static_assert`** keyword.
@@ -23,7 +23,7 @@ static_assert(constant-expression, string-literal);
 ### Parameters
 
 *constant-expression*\
-An integral constant expression that can be evaluated at compile time. If the evaluated expression is zero (false), the *string-literal* parameter is displayed and the compilation fails with an error. If the expression is nonzero (true), then there is no effect.
+An integral constant expression that can be evaluated at compile time. If the evaluated expression is zero (false), the *string-literal* parameter is displayed and the compilation fails with an error. If the expression is nonzero (true), then there's no effect.
 
 *string-literal*\
 The message to display if the *constant-expression* evaluates to zero (false). The message is a string of characters using the [base character set](../c-language/ascii-character-set.md) of the compiler; that is, not [multibyte or wide characters](../c-language/multibyte-and-wide-characters.md).
@@ -34,7 +34,7 @@ The **`_Static_assert`** keyword, and the **`static_assert`** macro, test a soft
 
 In contrast, the [assert macro and _assert and _wassert functions](../c-runtime-library/reference/assert-macro-assert-wassert.md) test a software assertion at runtime and incur a runtime cost.
 
-**Microsoft specific behavior**\
+**Microsoft-specific behavior**\
 
 In C, if you don't include <assert.h>, the Microsoft Visual C/C++ compiler treats **`static_assert`** as a keyword that maps to **`_Static_assert`**. The reason for this mapping is that C++ has a **`static_assert`** keyword.
 
@@ -42,7 +42,7 @@ Using the **`static_assert`** macro is preferred because the same code will work
 
 ## Example of a compile-time assert
 
-In the following example, **`static_assert`** and **`_Static_assert`** are used to verify that the `Items` enum only contains 3 elements, and that integers are 32 bits wide.
+In the following example, **`static_assert`** and **`_Static_assert`** are used to verify that the `Items` enum only contains three elements, and that integers are 32 bits wide.
 
 ```C
 // requires /std:c11 or higher
@@ -79,4 +79,4 @@ int main()
 
 [_STATIC_ASSERT Macro](../c-runtime-library/reference/static-assert-macro.md)\
 [assert macro and _assert and _wassert functions](../c-runtime-library/reference/assert-macro-assert-wassert.md)
-[/std (Specify language standard version)](../build/reference/std-specify-language-standard-version)
+[/std (Specify language standard version)](../build/reference/std-specify-language-standard-version.md)
