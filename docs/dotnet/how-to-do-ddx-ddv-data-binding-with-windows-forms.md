@@ -13,7 +13,7 @@ Call `DDX_ManagedControl` in [CWnd::DoDataExchange](../mfc/reference/cwnd-class.
 
 The following example shows how to bind a native C++ string to a .NET user control.
 
-## Example
+## Example: DDX/DDV data binding
 
 The following is an example of DDX/DDV data binding of an MFC string `m_str` with the user-defined `NameText` property of a .NET user control.
 
@@ -31,7 +31,7 @@ class CMFC01Dlg : public CDialog
 };
 ```
 
-## Example
+## Example: Implement DoDataExchange()
 
 Put the following code in the implementation of CMFC01Dlg:
 
@@ -50,7 +50,7 @@ void CMFC01Dlg::DoDataExchange(CDataExchange* pDX)
 }
 ```
 
-## Example
+## Example: Add handler method
 
 Now we will add the handler method for a click on the OK button. Click the **Resource View** tab. In Resource View, double-click on `IDD_MFC01_DIALOG`. The dialog resource appears in Resource Editor. Then double click the OK button..
 
@@ -64,7 +64,7 @@ void CMFC01Dlg::OnBnClickedOk()
 }
 ```
 
-## Example
+## Example: Set the textBox text
 
 And add the following line to the implementation of BOOL CMFC01Dlg::OnInitDialog().
 

@@ -33,7 +33,7 @@ Values passed to attributes must be known to the compiler at compile time.  Attr
 
 - **`enum`**
 
-## Example
+## Example: Attribute parameter types
 
 ### Code
 
@@ -58,7 +58,7 @@ ref struct MyStruct {
 };
 ```
 
-## Example
+## Example: Unnamed arguments precede named arguments
 
 ### Description
 
@@ -92,7 +92,7 @@ ref class ClassC {};   // Positional argument
 ref class ClassD {};   // Positional and named
 ```
 
-## Example
+## Example: One-dimensional array attribute parameter
 
 ### Description
 
