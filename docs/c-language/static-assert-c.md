@@ -1,41 +1,53 @@
 ---
-title: "static_assert (C11)"
-description: "Describes the C11 static_assert keyword"
-ms.date: "10/12/2020"
-f1_keywords: ["static_assert_c"]
-helpviewer_keywords: ["assertions [C], static_assert"]
+title: "_Static_assert keyword and static_assert macro (C11)"
+description: "Describes the C11 _Static_assert keyword and the C11 static_assert macro."
+ms.date: "10/13/2020"
+f1_keywords: ["static_assert_c", "_Static_assert"]
+helpviewer_keywords: ["assertions [C], _Static_assert, static_assert"]
 ---
 
-# static_assert (C11)
+# _Static_assert keyword and static_assert macro (C11)
 
-New in C11. Tests an assertion at compile time. If the specified constant expression is **`false`**, the compiler displays the specified message and the compilation fails with error E1754; otherwise, the declaration has no effect.
+New in C11. Tests an assertion at compile time. If the specified constant expression is **`false`**, the compiler displays the specified message and the compilation fails with error C2338; otherwise, there is no effect.
+
+**`_Static_assert`** is a keyword introduced in C11.
+**`static_assert`** is a macro, introduced in C11, that maps to the **`_Static_assert`** keyword.
 
 ## Syntax
 
 ```C
+_Static_assert(constant-expression, string-literal);
 static_assert(constant-expression, string-literal);
 ```
 
 ### Parameters
 
 *constant-expression*\
-An integral constant expression that can be evaluated at compile time. If the evaluated expression is zero (false), the *string-literal* parameter is displayed and the compilation fails with an error. If the expression is nonzero (true), the **`static_assert`** declaration has no effect.
+An integral constant expression that can be evaluated at compile time. If the evaluated expression is zero (false), the *string-literal* parameter is displayed and the compilation fails with an error. If the expression is nonzero (true), then there is no effect.
 
 *string-literal*\
 The message to display if the *constant-expression* evaluates to zero (false). The message is a string of characters using the [base character set](../c-language/ascii-character-set.md) of the compiler; that is, not [multibyte or wide characters](../c-language/multibyte-and-wide-characters.md).
 
 ## Remarks
 
-The **`static_assert`** declaration tests a software assertion at compile time. In contrast, the [assert macro and _assert and _wassert functions](../c-runtime-library/reference/assert-macro-assert-wassert.md) test a software assertion at runtime and incur a runtime cost.
+The **`_Static_assert`** keyword, and the **`static_assert`** macro, test a software assertion at compile time. They can be used at global or function scope.
 
-You can use the **`static_assert`** keyword at global or function scope.
+In contrast, the [assert macro and _assert and _wassert functions](../c-runtime-library/reference/assert-macro-assert-wassert.md) test a software assertion at runtime and incur a runtime cost.
 
-## Example of `static_assert` at global scope
+**Microsoft specific behavior**\
 
-In the following example, the **`static_assert`** is at global scope. Because the compiler knows the value of the enum elements, the expression can be evaluated at compile time.
+In C, if you don't include <assert.h>, the Microsoft Visual C/C++ compiler treats **`static_assert`** as a keyword that maps to **`_Static_assert`**. The reason for this mapping is that C++ has a **`static_assert`** keyword.
 
-```c
-// requires /std:c17
+Using the **`static_assert`** macro is preferred because the same code will work in both C and C++.
+
+## Example of a compile-time assert
+
+In the following example, **`static_assert`** and **`_Static_assert`** are used to verify that the `Items` enum only contains 3 elements, and that integers are 32 bits wide.
+
+```C
+// requires /std:c11 or higher
+#include <assert.h>
+
 enum Items
 {
     A,
@@ -44,22 +56,27 @@ enum Items
     LENGTH
 };
 
-static_assert( LENGTH==3, "Expected enum to have three elements");
-```
-
-## Example of `static_assert` in a function
-
-In the following example, the **`static_assert`** declaration is at function scope and verifies that the size of the integer parameter is 32 bits.
-
-```c
-// requires /std:c17
-void test(int x)
+int main()
 {
-    static_assert(sizeof(x)==4, "Expecting 32 bit integers");
+    
+    // _Static_assert is a C11 keyword
+    _Static_assert(LENGTH == 3, "Expected Items enum to have three elements");
+
+    // Preferred: static_assert maps to _Static_Assert and is compatible with C++
+    static_assert(sizeof(int) == 4, "Expecting 32 bit integers"); 
+
+    return 0;
 }
 ```
 
+## Requirements
+
+|Macro|Required header|
+|-------------|---------------------|
+|**`static_assert`**|\<assert.h>|
+
 ## See also
 
-[_STATIC_ASSERT Macro](../c-runtime-library/reference/static-assert-macro.md) 
+[_STATIC_ASSERT Macro](../c-runtime-library/reference/static-assert-macro.md)\
 [assert macro and _assert and _wassert functions](../c-runtime-library/reference/assert-macro-assert-wassert.md)
+[/std (Specify language standard version)](../build/reference/std-specify-language-standard-version)

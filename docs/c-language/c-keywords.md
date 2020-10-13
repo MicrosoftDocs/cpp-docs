@@ -45,16 +45,15 @@ The C language uses the following keywords:
         **`signed`**\
         **`sizeof`**\
         **`static`**\
-        **`static_assert`** <sup>2, a</sup>\
         **`struct`**\
         **`switch`**\
         **`typedef`**\
         **`union`**\
         **`unsigned`**\
         **`void`**\
+        **`volatile`**
     :::column-end:::
     :::column:::
-        **`volatile`**
         **`while`**\
         **`_Alignas`** <sup>2, a</sup>\
         **`_Alignof`** <sup>2, a</sup>\
@@ -111,7 +110,8 @@ The following keywords and special identifiers are recognized by the Microsoft C
         **`__try`**<sup>5</sup>\
         **`dllexport`**<sup>4</sup>\
         **`__inline`**<sup>5</sup>\
-        **`__leave`**<sup>5</sup>
+        **`__leave`**<sup>5</sup>\
+        **`static_assert`**<sup>6</sup>\
     :::column-end:::
 :::row-end:::
 
@@ -120,6 +120,8 @@ The following keywords and special identifiers are recognized by the Microsoft C
 <sup>4</sup> These are special identifiers when used with **`__declspec`**; their use in other contexts is unrestricted.
 
 <sup>5</sup> For compatibility with previous versions, these keywords are available both with two leading underscores and a single leading underscore when Microsoft extensions are enabled.
+
+<sup>6</sup> When <assert.h> is not included, the Microsoft Visual C compiler maps **`static_assert`** to the C11 **`_Static_assert`** keyword.
 
 Microsoft extensions are enabled by default. To assist in creating portable code, you can disable Microsoft extensions by specifying the [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) option during compilation. When you use this option, some Microsoft-specific keywords are disabled.
 
