@@ -34,9 +34,9 @@ The **`_Static_assert`** keyword, and the **`static_assert`** macro, both test a
 
 In contrast, the [assert macro and _assert and _wassert functions](../c-runtime-library/reference/assert-macro-assert-wassert.md) test a software assertion at runtime and incur a runtime cost.
 
-**Microsoft-specific behavior**\
+**Microsoft-specific behavior**
 
-In C, when you don't include <assert.h>, the Microsoft Visual C/C++ compiler treats **`static_assert`** as a keyword that maps to **`_Static_assert`**. Using the **`static_assert`** macro is preferred because the same code will work in both C and C++.
+In C, when you don't include `<assert.h>`, the Microsoft Visual C/C++ compiler treats **`static_assert`** as a keyword that maps to **`_Static_assert`**. Using **`static_assert`** is preferred because the same code will work in both C and C++.
 
 ## Example of a compile-time assert
 
@@ -56,7 +56,6 @@ enum Items
 
 int main()
 {
-    
     // _Static_assert is a C11 keyword
     _Static_assert(LENGTH == 3, "Expected Items enum to have three elements");
 
