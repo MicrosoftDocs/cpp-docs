@@ -21,7 +21,7 @@ To implement a window, derive a class from `CWindowImpl`. In your derived class,
 > [!NOTE]
 > `CWindowImpl` passes NULL to the `DECLARE_WND_CLASS` macro, which means ATL will generate a Windows class name. To specify your own name, pass a string to DECLARE_WND_CLASS in your `CWindowImpl`-derived class.
 
-## Example: Implement a window based on a new Window class
+## Example: Implement a window
 
 Following is an example of a class that implements a window based on a new Windows class:
 
@@ -38,7 +38,7 @@ The [DECLARE_WND_SUPERCLASS](reference/window-class-macros.md#declare_wnd_superc
 
 When you use DECLARE_WND_SUPERCLASS, a new Windows class will be registered. This new class will be the same as the existing class you specify, but will replace the window procedure with `CWindowImpl::WindowProc` (or with your function that overrides this method).
 
-## Example: Class that superclasses the standard Edit class
+## Example: Superclasses the Edit class
 
 Following is an example of a class that superclasses the standard Edit class:
 
