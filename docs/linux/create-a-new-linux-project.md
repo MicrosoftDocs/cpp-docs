@@ -16,7 +16,7 @@ Linux projects are available in Visual Studio 2017 and later.
 
 First, make sure you have the **Linux Development Workload** for Visual Studio installed. For more information, see [Download, install, and setup the Linux workload](download-install-and-setup-the-linux-development-workload.md).
 
-For cross-platform compilation, we recommend using CMake. CMake support is more complete in Visual Studio 2019. If CMake is not an option, and you have an existing Windows Visual Studio solution that you would like to extend to compile for Linux, you can add a Visual Studio Linux project to the Windows solution, along with a **Shared Items** project. Put the code that is shared between both platforms in the Shared Items project, and add a reference to that project from the Windows and Linux projects.
+For cross-platform compilation, we recommend using CMake. CMake support is more complete in Visual Studio 2019. If CMake isn't an option, and you have an existing Windows Visual Studio solution that you would like to extend to compile for Linux, you can add a Visual Studio Linux project to the Windows solution, along with a **Shared Items** project. Put the code that is shared between both platforms in the Shared Items project, and add a reference to that project from the Windows and Linux projects.
 
 ## To create a new Linux project
 
@@ -44,9 +44,9 @@ To create a new Linux project in Visual Studio 2017, follow these steps:
 
 First, make sure you have the **Linux Development Workload** for Visual Studio installed. For more information, see [Download, install, and set up the Linux workload](download-install-and-setup-the-linux-development-workload.md).
 
-When you create a new C++ project for Linux in Visual Studio, you can choose to create a Visual Studio project or a CMake project. This article describes how to create a Visual Studio project. In general, for new projects that might include open-source code or that you intend to compile for cross-platform development, we recommend that you use CMake with Visual Studio. With a CMake project you can build and debug the same project on both Windows and Linux. For more information, see [Create and configure a Linux CMake Project](cmake-linux-project.md).
+When you create a new C++ project for Linux in Visual Studio, you can choose to create a Visual Studio project or a CMake project. This article describes how to create a Visual Studio project. In general, for new projects that might include open-source code or you intend to compile for cross-platform development, we recommend you use CMake with Visual Studio. With a CMake project, you can build and debug the same project on both Windows and Linux. For more information, see [Create and configure a Linux CMake Project](cmake-linux-project.md).
 
-If you have an existing Windows Visual Studio solution that you would like to extend to compile for Linux, and CMake is not an option, then you can add a Visual Studio Linux project to the Windows solution, along with a **Shared Items** project. Put the code that is shared between both platforms in the Shared Items project, and add a reference to that project from the Windows and Linux projects.
+If you have an existing Windows Visual Studio solution that you would like to extend to compile for Linux, and CMake isn't an option, then you can add a Visual Studio Linux project to the Windows solution, along with a **Shared Items** project. Put the code that is shared between both platforms in the Shared Items project, and add a reference to that project from the Windows and Linux projects.
 
 ## Create a new Linux project
 

@@ -1,5 +1,6 @@
 ---
 title: "C/C++ Properties (Linux C++)"
+description:"Describes the Linux compilation options on the Visual Studio C/C++ properties page"
 ms.date: "10/14/2020"
 ms.assetid: 4bb8894b-c874-4a68-935e-b127d54e484f
 f1_keywords: []
@@ -30,9 +31,9 @@ Linux support is available in Visual Studio 2017 and later.
 | C++ Compiler | Specifies the program to invoke during compilation of C++ source files, or the path to the C++ compiler on the remote system. |
 | Compile Timeout | Remote compilation timeout, in milliseconds. |
 | Copy Object Files | Specifies whether to copy the compiled object files from the remote system to the local machine. |
-| Max Parallel Compilation Jobs | The number of process to create in parallel during compilation. The default is 1. If you are using Windows Subsystem for Linux (WSL) version 1, then the limit is 64. |
+| Max Parallel Compilation Jobs | The number of processes to create in parallel during compilation. The default is 1. If you're using Windows Subsystem for Linux (WSL) version 1, the limit is 64. |
 | Validate Architecture | Specify whether to check if the platform the project targets matches the remote system.|
-| Enable Address Sanitizer | Compile the program with Address Sanitizer, which is a fast memory error detector that can find runtime memory issues such as use-after-free and perform out of bounds checks.|
+| Enable Address Sanitizer | Compile the program with Address Sanitizer, which is a fast memory error detector that can find runtime memory issues such as use-after-free, and perform out of bounds checks.|
 
 ## Optimization
 
