@@ -50,7 +50,7 @@ To change settings related to the remote Linux computer, configure the remote se
 
    ::: moniker range="vs-2019"
 
-   **Visual Studio 2019 version 16.1**: To target Windows Subsystem for Linux, click the down arrow for **Platform Toolset** and choose **WSL_1_0**. The other remote options will disappear and the path to the default WSL shell will appear in their place:
+   **Visual Studio 2019 version 16.7**: To target Windows Subsystem for Linux (WSL), set the **Platform Toolset** drop-down to **GCC for Windows Subsystem for Linux**. The other remote options will disappear and the path to the default WSL shell will appear in their place:
 
    ![WSL build machine](media/wsl-remote-vs2019.png)
 

@@ -23,6 +23,7 @@ Linux support is available in Visual Studio 2017 and later.
 | Extensions to Delete on Clean | Semi-colon-delimited wildcard specification for which files in the intermediate directory to delete on clean or rebuild. |
 | Build Log File | Specifies the build log file to write to when build logging is enabled. |
 | Platform Toolset | Specifies the toolset used for building the current configuration. If not set, the default toolset is used. |
+| WSL *.exe full path | **Visual Studio 2019 version 16.1** Full path to the Windows Subsystem for Linux (WSL) executable used to build and debug. |
 | Remote Build Machine | Displays the target machine or device to use for remote build, deploy, and debug. You can add or edit a target machine connection by using **Tools** > **Options** > **Cross Platform** > **Connection Manager**.<br /> **Visual Studio 2019 version 16.1** You can specify a different machine for debugging on the [Debugging](debugging-linux.md) page. |
 | Remote Build Root Directory | Specifies a path to a directory on the remote machine or device. |
 | Remote Build Project Directory | Specifies a path to a directory on the remote machine or device for the project. |

@@ -1,6 +1,6 @@
 ---
 title: "Create a Linux MSBuild C++ project in Visual Studio"
-ms.date: "08/04/2020"
+ms.date: "10/1/52020"
 description: "Create a new MSBuild-based Linux project in Visual Studio."
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
 ---
@@ -29,10 +29,10 @@ To create a new Linux project in Visual Studio 2017, follow these steps:
 
    | Project Type | Description |
    | ------------ | --- |
-   | **Blink (Raspberry)**           | Project targeted for a Raspberry Pi device, with sample code that blinks an LED |
+   | **Blink (Raspberry)** | Project targeted for a Raspberry Pi device, with sample code that blinks an LED |
    | **Console Application (Linux)** | Project targeted for any Linux computer, with sample code that outputs text to the console |
-   | **Empty Project (Linux)**       | Project targeted for any Linux computer, with no sample code |
-   | **Makefile Project (Linux)**    | Project targeted for any Linux computer, built using a standard Makefile build system |
+   | **Empty Project (Linux)** | Project targeted for any Linux computer, with no sample code |
+   | **Makefile Project (Linux)** | Project targeted for any Linux computer, built using a standard Makefile build system |
 
 ## Next steps
 
@@ -53,8 +53,7 @@ If you have an existing Windows Visual Studio solution that you would like to ex
 To create a new Linux project in Visual Studio 2019, follow these steps:
 
 1. Select **File > New Project** in Visual Studio, or press **Ctrl + Shift + N**. The Create a new project dialog appears.
-1. Set the language drop-down to **C++**.
-1. Set the platform drop-down to **Linux**.
+1. In the **Search for templates** textbox, enter **Linux** to list the available templates for Linux projects.
 1. Select the project type to create, for example **Console Application**, and then choose **Next**. Enter a **Name** and **Location**, and choose **Create**.
 
    ![Screenshot of the new project dialog box with the language drop-down set to C++ and the platform drop-down set to Linux.](media/newproject-vs2019.png)
