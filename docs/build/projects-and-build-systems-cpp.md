@@ -54,41 +54,41 @@ You can invoke MSBuild from the command line by passing it a .vcxproj file along
 
 ## In This Section
 
-[Visual Studio projects](creating-and-managing-visual-cpp-projects.md)
+[Visual Studio projects](creating-and-managing-visual-cpp-projects.md)\
 How to create, configure, and build C++ projects in Visual Studio using its native build system (MSBuild).
 
-[CMake projects](cmake-projects-in-visual-studio.md)
+[CMake projects](cmake-projects-in-visual-studio.md)\
 How to code, build, and deploy CMake projects in Visual Studio.
 
-[Open Folder projects](open-folder-projects-cpp.md)
-How to use Visual Studio to code, build and deploy C++ projects based on any arbitrary build system, or no build system. at all.
+[Open Folder projects](open-folder-projects-cpp.md)\
+How to use Visual Studio to code, build and deploy C++ projects based on any arbitrary build system, or no build system at all.
 
-[Release builds](release-builds.md)
+[Release builds](release-builds.md)\
 How to create and troubleshoot optimized release builds for deployment to end users.
 
-[Use the MSVC toolset from the command line](building-on-the-command-line.md)<br/>
+[Use the MSVC toolset from the command line](building-on-the-command-line.md)\
 Discusses how to use the C/C++ compiler and build tools directly from the command line rather than using the Visual Studio IDE.
 
-[Building DLLs in Visual Studio](dlls-in-visual-cpp.md)
+[Building DLLs in Visual Studio](dlls-in-visual-cpp.md)\
 How to create, debug and deploy C/C++ DLLs (shared libraries) in Visual Studio.
 
-[Walkthrough: Creating and Using a Static Library](walkthrough-creating-and-using-a-static-library-cpp.md)
+[Walkthrough: Creating and Using a Static Library](walkthrough-creating-and-using-a-static-library-cpp.md)\
 How to create a .lib binary file.
 
-[Building C/C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+[Building C/C++ Isolated Applications and Side-by-side Assemblies](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)\
 Describes the deployment model for Windows Desktop applications, based on the idea of isolated applications and side-by-side assemblies.
 
-[Configure C++ projects for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md)
+[Configure C++ projects for 64-bit, x64 targets](configuring-programs-for-64-bit-visual-cpp.md)\
 How to target 64-bit x64 hardware with the MSVC build tools.
 
-[Configure C++ projects for ARM processors](configuring-programs-for-arm-processors-visual-cpp.md)
+[Configure C++ projects for ARM processors](configuring-programs-for-arm-processors-visual-cpp.md)\
 How to use the MSVC build tools to target ARM hardware.
 
-[Optimizing Your Code](optimizing-your-code.md)
+[Optimizing Your Code](optimizing-your-code.md)\
 How to optimize your code in various ways including program guided optimizations.
 
-[Configuring Programs for Windows XP](configuring-programs-for-windows-xp.md)
+[Configuring Programs for Windows XP](configuring-programs-for-windows-xp.md)\
 How to target Windows XP with the MSVC build tools.
 
-[C/C++ Building Reference](reference/c-cpp-building-reference.md)<br/>
+[C/C++ Building Reference](reference/c-cpp-building-reference.md)\
 Provides links to reference articles about program building in C++, compiler and linker options, and various build tools.

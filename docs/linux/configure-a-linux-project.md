@@ -20,7 +20,7 @@ You can configure a Linux project to target a physical Linux machine, a virtual 
 
 **Visual Studio 2019 version 16.1**:
 
-- When targeting WSL, you can avoid the copy operations that are necessary for building and IntelliSense when targeting remote Linux systems.
+- When you target WSL, you can avoid the copy operations needed to build and get IntelliSense that are required when you target a remote Linux system.
 
 - You can specify separate Linux targets for building and debugging.
 
@@ -33,6 +33,10 @@ To view configuration options, select the **Project > Properties** menu, or righ
 ![General configuration](media/settings_general.png)
 
 By default, an executable (.out) is built. To build a static or dynamic library, or to use an existing Makefile, use the **Configuration Type** setting.
+
+If you are building for Windows Subsystem for Linux (WSL), be aware that there are some differences between WSL version 1 and 2.
+- Version 1 is limited to 64 parallel compilation processes. This is goverened by the Max Parallel Compilation Jobs settings in **Configuration properties > C/C++ > General** (JTW LINK). 
+- If you intend to use more than 64 parallel compilation processes, we recommend that you build with Ninja, which generally will be faster and more reliable. This is governed by the **Enable Incremental Build** setting in **Configuration properties > General**.
 
 For more information about the settings in the property pages, see [Linux Project Property Page Reference](prop-pages-linux.md).
 
