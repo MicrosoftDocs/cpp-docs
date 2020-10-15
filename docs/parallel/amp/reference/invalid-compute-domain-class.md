@@ -41,7 +41,7 @@ class invalid_compute_domain : public runtime_exception;
 
 Initializes a new instance of the class.
 
-## Syntax
+### Syntax
 
 ```cpp
 explicit invalid_compute_domain(
