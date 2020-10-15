@@ -1,7 +1,7 @@
 ---
 title: "C/C++ Properties (Linux C++)"
-description:"Describes the Linux compilation options on the Visual Studio C/C++ properties page"
 ms.date: "10/14/2020"
+description: "Describes the Linux compilation options on the Visual Studio C/C++ properties page"
 ms.assetid: 4bb8894b-c874-4a68-935e-b127d54e484f
 f1_keywords: []
 ---
