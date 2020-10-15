@@ -31,6 +31,8 @@ Linux support is available in Visual Studio 2017 and later.
 | Compile Timeout | Remote compilation timeout, in milliseconds. |
 | Copy Object Files | Specifies whether to copy the compiled object files from the remote system to the local machine. |
 | Max Parallel Compilation Jobs | The number of process to create in parallel during compilation. The default is 1. If you are using Windows Subsystem for Linux (WSL) version 1, then the limit is 64 ttys. |
+| Validate Architecture | Specify whether to check if the platform the project targets matches the remote system.|
+| Enable Address Sanitizer | Compile the program with Address Sanitizer, which is a fast memory error detector that can find runtime memory issues such as use-after-free and perform out of bounds checks.|
 
 ## Optimization
 
