@@ -38,7 +38,7 @@ The [DECLARE_WND_SUPERCLASS](reference/window-class-macros.md#declare_wnd_superc
 
 When you use DECLARE_WND_SUPERCLASS, a new Windows class will be registered. This new class will be the same as the existing class you specify, but will replace the window procedure with `CWindowImpl::WindowProc` (or with your function that overrides this method).
 
-## Example: Superclasses the Edit class
+## Example: Superclass the Edit class
 
 Following is an example of a class that superclasses the standard Edit class:
 
