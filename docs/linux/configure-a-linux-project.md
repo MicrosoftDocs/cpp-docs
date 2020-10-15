@@ -1,6 +1,6 @@
 ---
 title: "Configure a Linux MSBuild C++ project in Visual Studio"
-ms.date: "10/1/52020"
+ms.date: "10/15/2020"
 description: "Configure a MSBuild-based Linux project in Visual Studio so you can build it."
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
 ---
