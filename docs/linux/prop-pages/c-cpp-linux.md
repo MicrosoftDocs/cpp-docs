@@ -48,8 +48,8 @@ Linux support is available in Visual Studio 2017 and later.
 
 ## Preprocessor
 
-| Property | Description | Choices |
-|--|--|--|
+| Property | Description |
+|--|--|
 | Preprocessor Definitions | Defines preprocessing symbols for your source file. (-D) |
 | Undefine Preprocessor Definitions | Specifies one or more preprocessor undefines.  (-U \[macro]) |
 | Undefine All Preprocessor Definitions | Undefines all previously defined preprocessor values.  (-undef) |
