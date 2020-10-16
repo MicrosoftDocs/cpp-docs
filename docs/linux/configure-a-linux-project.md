@@ -34,7 +34,7 @@ To view configuration options, select the **Project > Properties** menu, or righ
 
 By default, an executable (.out) is built. To build a static or dynamic library, or to use an existing Makefile, use the **Configuration Type** setting.
 
-If you're building for Windows Subsystem for Linux (WSL), be aware that WSL Version 1 is limited to 64 parallel compilation processes. This is goverened by the **Max Parallel Compilation Jobs** setting in **Configuration properties > C/C++ > General**.
+If you're building for Windows Subsystem for Linux (WSL), WSL Version 1 is limited to 64 parallel compilation processes. This is governed by the **Max Parallel Compilation Jobs** setting in **Configuration properties > C/C++ > General**.
 
 Regardless of the WSL version you are using, if you intend to use more than 64 parallel compilation processes, we recommend that you build with Ninja--which generally will be faster and more reliable. To build with Ninja, use the **Enable Incremental Build** setting in **Configuration properties > General**.
 
