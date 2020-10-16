@@ -1,6 +1,7 @@
 ---
 title: "ConnectionManager reference"
-ms.date: "01/17/2020"
+description: "How to manage your remote SSH connections from a command-line tool."
+ms.date: "10/7/2020"
 f1_keywords: ["ConnectionManager"]
 helpviewer_keywords: ["ConnectionManager program"]
 ---
@@ -22,67 +23,78 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 
 ## Syntax
 
-> **ConnectionManager.exe** *command* \[*arguments*] \[*options*]
+> **`ConnectionManager.exe`** *command* \[*arguments*] \[*options*]
 
 ### Commands and arguments
 
-- **add** *user\@host* \[**--port** *port*] \[**--password** *password*] \[**--privatekey** *privatekey_file*]
+- **`add`** *user\@host* \[**`--port`** *port*] \[**`--password`** *password*] \[**`--privatekey`** *privatekey_file*]
 
-  Authenticates and adds a new connection. By default, it uses port 22 and password authentication. (You'll be prompted to enter a password.) Use both **--password** and **--privatekey** to specify a password for a private key.
+  Authenticates and adds a new connection. By default, it uses port 22 and password authentication. (You'll be prompted to enter a password.) Use both **-`-password`** and **`--privatekey`** to specify a password for a private key.
 
-- **remove** \[*connection_id* \| *user\@host* \[**--port** *port*]]
+- **`remove`** \[*connection_id* \| *user\@host* \[**`--port`** *port*]]
 
   Removes a connection. If no arguments are specified, you're prompted to specify which connection to remove.
+  
+- **`modify`** \[*default* \| *connection_id* \| *user\@host* \[**`--port`** *port*]] \[**`--property`** *key=value*]
 
-- **remove-all**
+  Defines or modifies a property on a connection.\
+  If *value* is empty, then the property *key* is deleted.\
+  If authentication fails, no changes will be made.\
+  If no connection is specified (what is meant by *default*, above), the user's default remote connection is used.
+
+- **`remove-all`**
 
   Removes all stored connections.
+  
+- **`clean`**
 
-- **list**
+  Deletes header cache for connections that no longer exist. 
 
-  Displays information and IDs of all stored connections.
+- **`list`** \[**`--properties`**]
 
-- **help**
+  Displays information, IDs, and properties of all stored connections. 
+
+- **`help`**
 
   Displays a help screen.
 
-- **version**
+- **`version`**
 
   Displays version information.
 
 ### Options
 
-- **-q**, **--quiet**
+- **`-q`**, **`--quiet`**
 
   Prevents output to `stdout` or `stderr`.
 
-- **--no-prompt**
+- **`--no-prompt`**
 
   Fail instead of prompt, when appropriate.
 
-- **--no-verify**
+- **`--no-verify`**
 
   Add or modify a connection without authentication.
 
-- **--file** *filename*
+- **`--file`** *filename*
 
   Read connection information from the provided *filename*.
 
-- **--no-telemetry**
+- **`--no-telemetry`**
 
-  Disable sending usage data back to Microsoft. Usage data is collected and sent back to Microsoft unless the **--no-telemetry** flag is passed.  
+  Disable sending usage data back to Microsoft. Usage data is collected and sent back to Microsoft unless the **`--no-telemetry`** flag is passed.  
 
-- **-n**, **--dry-run**
+- **`-n`**, **`--dry-run`**
 
   Does a dry run of the command.
+ 
+- **`--p`**
 
-- **-p**
+  Same as **`--password`**.
 
-  Same as **--password**.
+- **`-i`**
 
-- **-i**
-
-  Same as **--privatekey**.
+  Same as **`--privatekey`**.
 
 ## Examples
 
@@ -96,6 +108,12 @@ This command removes the connection that has ID 1975957870 from the list of conn
 
 ```cmd
 ConnectionManager.exe remove 1975957870
+```
+
+This command overrides the choice of shell for the connection with connection ID 21212121. Supported shells are: **`sh, csh, bash, tcsh, ksh, zsh, dash`**. If the shell found on the Linux system isn't supported, then we fall back to explicitly use **`sh`** for all commands.
+
+```cmd
+ConnectionManager.exe modify 21212121 --property shell=csh
 ```
 
 ## See also

@@ -36,7 +36,7 @@ Most C++ Build Insights WPA views have multiple presets for you to choose from. 
 
 Some build traces are so large it's hard to make out the details. To zoom in on an area that interests you, right-click on the graph and select **Zoom**. You can always go back to the previous setting by choosing **Undo Zoom**. This image shows an example of using a selection and the **Zoom** command to zoom in on a section of the graph:
 
-![Zooming in on a graph.](media/wpa-zooming.gif)
+![Short video showing zooming in on a graph.](media/wpa-zooming.gif)
 
 ## Group by different columns
 
@@ -44,13 +44,13 @@ You can customize the way your trace is displayed. Click on the gear icon at the
 
 This image shows an example bar graph of a link invocation. We use the gear icon to open the Build Explorer View Editor dialog. Then we drag the Component and Name column entries above the yellow line. The configuration is changed to increase the level of detail, and to see what actually happened inside the linker:
 
-![Zooming in on a graph.](media/wpa-grouping.gif)
+![Short video showing showing how you can group by different columns.](media/wpa-grouping.gif)
 
 ## See also
 
 [Tutorial: vcperf and Windows Performance Analyzer](vcperf-and-wpa.md)\
-[Reference: vcperf commands](/cpp/build-insights/reference/vcperf-commands)\
-[Reference: Windows Performance Analyzer views](/cpp/build-insights/reference/wpa-views)\
+[Reference: vcperf commands](../reference/vcperf-commands.md)\
+[Reference: Windows Performance Analyzer views](../reference/wpa-views.md)\
 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)
 
 ::: moniker-end

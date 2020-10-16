@@ -9,7 +9,7 @@ ms.assetid: 9500173d-870b-49b3-8e88-0ee93586d19a
 
 'symbol' : symbol is not in the same scope with 'threadprivate' directive
 
-A symbol used in a [threadprivate](../../parallel/openmp/reference/threadprivate.md) clause must be in the same scope as the `threadprivate` clause.
+A symbol used in a [threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadprivate) clause must be in the same scope as the `threadprivate` clause.
 
 The following sample generates C3056:
 

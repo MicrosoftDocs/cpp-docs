@@ -44,13 +44,11 @@ The following figure depicts a dialog that contains a network address control. T
 
 ![Dialog with a network address control and infotip.](../../mfc/reference/media/cnetaddctrl.png "Dialog with a network address control and infotip.")
 
-## Example
+## Examples
 
 The following code example is a portion of a dialog that validates a network address. The event handlers for three radio buttons specify that the network address can be one of three address types. The user enters an address in the text box of the network control, then presses a button to validate the address. If the address is valid, a success message is displayed; otherwise, the predefined infotip error message is displayed.
 
 [!code-cpp[NVC_MFC_CNetAddressCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cnetaddressctrl-class_1.cpp)]
-
-## Example
 
 The following code example from the dialog header file defines the [NC_ADDRESS](/windows/win32/api/shellapi/ns-shellapi-nc_address) and [NET_ADDRESS_INFO](/windows/win32/shell/hkey-type) variables that are required by the [CNetAddressCtrl::GetAddress](#getaddress) method.
 

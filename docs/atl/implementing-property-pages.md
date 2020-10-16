@@ -14,13 +14,13 @@ The ATL Property Page wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker range="<=vs-2017"
 
-Property pages are COM objects that implement the `IPropertyPage` or `IPropertyPage2` interface. ATL provides support for implementing property pages through the [ATL Property Page Wizard](../atl/reference/atl-property-page-wizard.md) in the [Add Class dialog box](../ide/add-class-dialog-box.md).
+Property pages are COM objects that implement the `IPropertyPage` or `IPropertyPage2` interface. ATL provides support for implementing property pages through the [ATL Property Page Wizard](../atl/reference/atl-property-page-wizard.md) in the [Add Class dialog box](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box).
 
 To create a property page using ATL:
 
 - Create or open an ATL Dynamic-link library (DLL) server project.
 
-- Open the [Add Class dialog box](../ide/add-class-dialog-box.md) and select **ATL Property Page**.
+- Open the [Add Class dialog box](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) and select **ATL Property Page**.
 
 - Make sure your property page is apartment threaded (since it has a user interface).
 

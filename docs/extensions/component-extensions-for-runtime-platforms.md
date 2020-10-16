@@ -99,7 +99,7 @@ This section lists additional programming constructs, and topics that pertain to
 |-----------|-----------------|
 |[__identifier (C++/CLI)](identifier-cpp-cli.md)|(Windows Runtime and CLR) Enables the use of keywords as identifiers.|
 |[Variable Argument Lists (...) (C++/CLI)](variable-argument-lists-dot-dot-dot-cpp-cli.md)|(Windows Runtime and CLR) Enables a function to take a variable number of arguments.|
-|[.NET Framework Equivalents to C++ Native Types (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md)|Lists the CLR types that are used in place of C++ integral types.|
+|[.NET Framework Equivalents to C++ Native Types (C++/CLI)](../dotnet/managed-types-cpp-cli.md#dotnet)|Lists the CLR types that are used in place of C++ integral types.|
 |[appdomain](../cpp/appdomain.md) **`__declspec`** modifier|**`__declspec`** modifier that mandates that static and global variables exist per appdomain.|
 |[C-Style Casts with /clr (C++/CLI)](c-style-casts-with-clr-cpp-cli.md)|Describes how C-style casts are interpreted.|
 |[__clrcall](../cpp/clrcall.md) calling convention|Indicates the CLR-compliant calling convention.|

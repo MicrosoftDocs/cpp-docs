@@ -62,11 +62,11 @@ To apply a text filter, start your search query with the filter's corresponding 
 
 The following example shows results from a *Go To Files* operation by using the "f" filter:
 
-![C&#43;&#43; Go To Menu](../ide/media/vs2017-go-to-results.png "Go To Menu")
+![Screenshot of the Go to Files menu.](../ide/media/vs2017-go-to-results.png "Go To Menu")
 
 To see the list of text filters, type a ? followed by a space. You also can access the **Go To** commands with the **Edit** menu. This is another way to remind yourself of the main **Go To** keyboard shortcuts.
 
-![C&#43;&#43; Go To Menu](../ide/media/go-to-menu-cpp.png "Go To Menu")
+![Screenshot of the Go To menu.](../ide/media/go-to-menu-cpp.png "Go To Menu")
 
 ## Find or Find in Files
 
@@ -78,11 +78,11 @@ You can run a text search for anything in your solution with **Find** (**Ctrl+F*
 
 **Find in Files** is a more powerful version of **Find** that displays results in the **Find Results** window. You can search external code dependencies, filter by file types, and more.
 
-![C&#43;&#43; Find in Files](../ide/media/find-in-files-cpp.png "Find in Files")
+![Screenshot of the Find and Replace window showing the Find in Files page.](../ide/media/find-in-files-cpp.png "Find in Files")
 
 You can organize **Find in Files** results in two windows. You can append results from multiple searches together. Select a result to go to that location in the file.
 
-![C&#43;&#43; Find in Files](../ide/media/vs2017-find-in-files-results.png "Find in Files")
+![Screenshot showing a Find in File search result.](../ide/media/vs2017-find-in-files-results.png "Find in Files")
 
 For more information, see [Find in Files](/visualstudio/ide/find-in-files) in the Visual Studio documentation.
 

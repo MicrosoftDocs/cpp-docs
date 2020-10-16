@@ -13,7 +13,7 @@ The C4754 warning is issued because the result of the comparison is always the s
 
 Integer conversion rules are complex and there are many subtle pitfalls. As an alternative to fixing each C4754 warning, you can update the code to use the [SafeInt Library](../../safeint/safeint-library.md).
 
-## Example
+## Examples
 
 This sample generates C4754:
 
@@ -50,8 +50,6 @@ To eliminate the warning, you can change the assignment statement to cast the op
 unsigned long long x =
    (unsigned long long)a + (unsigned long long)b;
 ```
-
-## Example
 
 The next sample also generates C4754.
 

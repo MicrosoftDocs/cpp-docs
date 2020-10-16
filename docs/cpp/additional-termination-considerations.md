@@ -10,4 +10,4 @@ You can terminate a C++ program by using `exit`, **`return`**, or `abort`. You c
 
 ## See also
 
-[Startup and Termination](../cpp/startup-and-termination-cpp.md)
+[Startup and Termination](./main-function-command-line-args.md)

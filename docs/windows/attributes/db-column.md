@@ -42,7 +42,7 @@ The ordinal column number (`DBCOLUMNINFO` ordinal) or column name (ANSI or Unico
 
 ## Remarks
 
-**db_column** binds the specified table column to a variable in the rowset. It delimits member data that can participate in OLE DB `IAccessor`-based binding. This attribute sets up the column map normally defined using the OLE DB consumer macros [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md), [END_COLUMN_MAP](../../data/oledb/end-column-map.md), and [COLUMN_ENTRY](../../data/oledb/column-entry.md). These manipulate the OLE DB [DBBINDING structure](/previous-versions/windows/desktop/ms716845(v=vs.85)) to bind the specified column. Each member you mark with the **db_column** attribute will occupy one entry in the column map in the form of a column entry. Therefore, you call this attribute where you would put the column map, that is, in the command or table class.
+**db_column** binds the specified table column to a variable in the rowset. It delimits member data that can participate in OLE DB `IAccessor`-based binding. This attribute sets up the column map normally defined using the OLE DB consumer macros [BEGIN_COLUMN_MAP](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#begin_column_map), [END_COLUMN_MAP](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#end_column_map), and [COLUMN_ENTRY](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#column_entry). These manipulate the OLE DB [DBBINDING structure](/previous-versions/windows/desktop/ms716845(v=vs.85)) to bind the specified column. Each member you mark with the **db_column** attribute will occupy one entry in the column map in the form of a column entry. Therefore, you call this attribute where you would put the column map, that is, in the command or table class.
 
 Use **db_column** in conjunction with either the [db_table](db-table.md) or [db_command](db-command.md) attributes.
 
@@ -50,7 +50,7 @@ When the consumer attribute provider applies this attribute to a class, the comp
 
 For an example of this attribute used in an application, see [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 
-## Example
+## Examples
 
 This sample binds a column in a table to a **`long`** data member and specifies status and length fields.
 
@@ -69,8 +69,6 @@ class CProducts {
    [ db_column("1", status="m_dwProductIDStatus", length="m_dwProductIDLength") ] LONG m_ProductID;
 };
 ```
-
-## Example
 
 This sample binds four columns to a **`long`**, a character string, a timestamp, and a `DB_NUMERIC` integer, in that order.
 

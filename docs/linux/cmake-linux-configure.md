@@ -47,6 +47,7 @@ The default configuration for Linux-Debug in Visual Studio 2017 (and Visual Stud
       "inheritEnvironments": [ "linux-x64" ]
 }
 ```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -91,12 +92,13 @@ In Visual Studio 2019 version 16.6 or later, Ninja is the default generator for 
 For more information about these settings, see [CMakeSettings.json reference](../build/cmakesettings-reference.md).
 
 When you do a build:
+
 - If you're targeting a remote system, Visual Studio chooses the first remote system in the list under **Tools** > **Options** > **Cross Platform** > **Connection Manager** by default for remote targets.
 - If no remote connections are found, you're prompted to create one. For more information, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
 
 ## Choose a Linux target
 
-When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, you'll change the project settings to **Linux-Debug** or **Linux-Release**.
+When you open a CMake project folder, Visual Studio parses the *CMakeLists.txt* file and specifies a Windows target of **x86-Debug**. To target a remote Linux system, you'll change the project settings based on your Linux compiler. For example, if you are using GCC on Linux and compiling with debug info, you'll chose:  **Linux-GCC-Debug** or **Linux-GCC-Release**.
 
 If you specify a remote Linux target, your source is copied to the remote system.
 
@@ -111,7 +113,15 @@ After you select a target, CMake runs automatically on the Linux system to gener
 
 If you're targeting Windows Subsystem for Linux (WSL), you don't need to add a remote connection.
 
-To target WSL, select **Manage Configurations** in the configuration dropdown in the main toolbar. Then press the **Add Configuration** button and choose **WSL-Debug** or **WSL-Release** if using GCC. Use the Clang variants if using the Clang/LLVM toolset.
+To target WSL, select **Manage Configurations** in the configuration dropdown in the main toolbar:
+
+![CMake Manage Configurations](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
+
+The **CMakeSettings.json** window appears.
+
+![Add configuration](media/cmake-linux-configurations.png "Add a configuration to CMake settings")
+
+Press **Add Configuration** (the green '+' button) and then choose **Linux-GCC-Debug** or **Linux-GCC-Release** if using GCC. Use the Clang variants if you are using the Clang/LLVM toolset.  Press **Select** and then **Ctrl+S** to save the configuration.
 
 **Visual Studio 2019 version 16.1** When you target WSL, Visual Studio doesn't need to copy source files and maintain two synchronous copies of your build tree because the compiler on Linux has direct access to your source files in the mounted Windows file system.
 ::: moniker-end

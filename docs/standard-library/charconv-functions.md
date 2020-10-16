@@ -113,7 +113,7 @@ template <typename T> void TestToChars(const T t)
     char buf[100]; // 100 is large enough for double and long double values because the longest possible outputs are "-1.23456735e-36" and "-1.2345678901234567e-100".
     constexpr size_t size = IsFloat ? 15 : 24;
     const std::to_chars_result res = std::to_chars(buf, buf + size, t);  // points to buffer area it can use. Must be char, not wchar_t, etc.
-    
+
     if (res.ec == std::errc{}) // no error
     {
         // %.*s provides the exact number of characters to output because the output range, [buf, res.ptr), isn't null-terminated

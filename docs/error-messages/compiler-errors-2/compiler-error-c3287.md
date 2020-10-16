@@ -1,17 +1,20 @@
 ---
 title: "Compiler Error C3287"
-ms.date: "11/04/2016"
+description: "Describes Microsoft C++ compiler error C3287."
+ms.date: 09/25/2020
 f1_keywords: ["C3287"]
 helpviewer_keywords: ["C3287"]
 ms.assetid: c1fa73d2-2c82-4136-a7da-0e75e3b420ad
 ---
 # Compiler Error C3287
 
-the type 'type' (return type of GetEnumerator) must have a suitable public MoveNext member function and public Current property
+> the type '*type*' (return type of GetEnumerator) must have a suitable public MoveNext member function and public Current property
+
+## Remarks
 
 User-defined collection classes must contain definitions for `MoveNext` and `Current`.
 
-See [How to: Iterate Over a User-Defined Collection with for each](../../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md) for more information.
+For more information, see [for each, in](../../dotnet/for-each-in.md).
 
 ## Example
 

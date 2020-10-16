@@ -9,7 +9,7 @@ ms.assetid: 6e043f4c-c601-4b77-8130-920cff1d912e
 
 'class' : coclass does not specify a default interface
 
-A [default](../../windows/default-cpp.md) interface was not specified for a class that was marked with the [coclass](../../windows/coclass.md) attribute. In order for an object to be useful, it must implement an interface.
+A [default](../../windows/attributes/default-cpp.md) interface was not specified for a class that was marked with the [coclass](../../windows/attributes/coclass.md) attribute. In order for an object to be useful, it must implement an interface.
 
 The following sample generates C4680:
 

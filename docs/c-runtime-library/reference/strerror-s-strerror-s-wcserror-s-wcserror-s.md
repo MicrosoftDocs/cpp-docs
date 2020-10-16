@@ -1,6 +1,7 @@
 ---
 title: "strerror_s, _strerror_s, _wcserror_s, __wcserror_s"
-ms.date: "06/09/2020"
+description: "Functions with security enhancements to get a system error message or print a user-supplied error message."
+ms.date: "09/25/2020"
 api_name: ["__wcserror_s", "_strerror_s", "_wcserror_s", "strerror_s", "_o__strerror_s", "_o__wcserror_s", "_o_strerror_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -36,6 +37,9 @@ errno_t __wcserror_s(
    size_t sizeInWords,
    const wchar_t *strErrMsg
 );
+```
+
+```cpp
 template <size_t size>
 errno_t strerror_s(
    char (&buffer)[size],
@@ -60,26 +64,26 @@ errno_t __wcserror_s(
 
 ### Parameters
 
-*buffer*<br/>
+*buffer*\
 Buffer to hold error string.
 
-*sizeInBytes*<br/>
+*sizeInBytes*\
 The number of bytes in the buffer.
 
-*sizeInWords*<br/>
+*sizeInWords*\
 The number of words in the buffer.
 
-*errnum*<br/>
+*errnum*\
 Error number.
 
-*strErrMsg*<br/>
+*strErrMsg*\
 User-supplied message.
 
 ## Return Value
 
 Zero if successful, an error code on failure.
 
-### Error Condtions
+### Error conditions
 
 |*buffer*|*sizeInBytes/sizeInWords*|*strErrMsg*|Contents of *buffer*|
 |--------------|------------------------|-----------------|--------------------------|
@@ -87,6 +91,8 @@ Zero if successful, an error code on failure.
 |any|0|any|not modified|
 
 ## Remarks
+
+The **strerror_s** function is thread-safe.
 
 The **strerror_s** function maps *errnum* to an error-message string, returning the string in *buffer*. **_strerror_s** doesn't take the error number; it uses the current value of **errno** to determine the appropriate message. Neither **strerror_s** nor **_strerror_s** actually prints the message: For that, you need to call an output function such as [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md):
 
@@ -98,7 +104,7 @@ if (( _access( "datafile",2 )) == -1 )
 }
 ```
 
-If *strErrMsg* is **NULL**, **_strerror_s** returns a string in *buffer* containing the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* is not equal to **NULL**, then **_strerror_s** returns a string in *buffer* containing (in order) your string message, a colon, a space, the system error message for the last library call producing an error, and a newline character. Your string message can be, at most, 94 characters long.
+If *strErrMsg* is **NULL**, **_strerror_s** returns a string in *buffer* that contains the system error message for the last library call that produced an error. The error-message string is terminated by the newline character ('\n'). If *strErrMsg* isn't equal to **NULL**, then **_strerror_s** returns a string in *buffer* that contains (in order) your string message, a colon, a space, the system error message for the last library call that produced an error, and a newline character. Your string message can be, at most, 94 characters long.
 
 These functions truncate the error message if its length exceeds the size of the buffer - 1. The resulting string in *buffer* will always be null-terminated.
 
@@ -108,7 +114,7 @@ The actual error number for **_strerror_s** is stored in the variable [errno](..
 
 These functions validate their parameters. If buffer is **NULL** or if the size parameter is 0, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the functions return **EINVAL** and set **errno** to **EINVAL**.
 
-**_strerror_s**, **_wcserror_s**, and **__wcserror_s** are not part of the ANSI definition but are instead Microsoft extensions to it. Do not use them where portability is desired; for ANSI compatibility, use **strerror_s** instead.
+**_strerror_s**, **_wcserror_s**, and **__wcserror_s** aren't part of the ANSI definition but are instead Microsoft extensions to it. Don't use them where portability is desired; for ANSI compatibility, use **strerror_s** instead.
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically, eliminating the need to specify a size argument. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -137,7 +143,7 @@ See the example for [perror](perror-wperror.md).
 
 ## See also
 
-[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[clearerr](clearerr.md)<br/>
-[ferror](ferror.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+[String Manipulation](../../c-runtime-library/string-manipulation-crt.md)\
+[clearerr](clearerr.md)\
+[ferror](ferror.md)\
+[perror, _wperror](perror-wperror.md)

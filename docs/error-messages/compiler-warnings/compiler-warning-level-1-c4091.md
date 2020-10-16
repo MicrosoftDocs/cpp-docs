@@ -11,7 +11,7 @@ ms.assetid: 3a404967-ab42-49b0-b324-fd7ba1859d78
 
 The compiler detected a situation where the user probably intended a variable to be declared, but the compiler was not able to declare the variable.
 
-## Example
+## Examples
 
 A **`__declspec`** attribute at the beginning of a user-defined type declaration applies to the variable of that type. C4091 indicates no variable is declared. The following sample generates C4091.
 
@@ -27,8 +27,6 @@ __declspec(dllimport) class X2 {} varX;
 // applies to user defined type
 class __declspec(dllimport) X3 {};
 ```
-
-## Example
 
 If an identifier is a typedef, it cannot also be a variable name. The following sample generates C4091.
 

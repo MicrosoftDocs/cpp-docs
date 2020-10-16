@@ -41,7 +41,7 @@ Optional list of classes or structures this class will derive its members from. 
 List of class members. Refer to [Class Member Overview](../cpp/class-member-overview.md) for more information.
 
 *declarators*<br/>
-Declarator list specifying the names of one or more instances of the class type. Declarators may include initializer lists if all data members of the class are **`public`**. This is more common in structures, whose data members are **`public`** by default, than in classes. See [Overview of Declarators](../cpp/overview-of-declarators.md) for more information.
+Declarator list specifying the names of one or more instances of the class type. Declarators may include initializer lists if all data members of the class are **`public`**. This is more common in structures, whose data members are **`public`** by default, than in classes. See [Overview of Declarators](./declarations-and-definitions-cpp.md) for more information.
 
 ## Remarks
 

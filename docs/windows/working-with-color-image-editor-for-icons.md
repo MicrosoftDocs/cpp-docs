@@ -7,11 +7,11 @@ ms.assetid: d34ff96f-241d-494f-abdd-13811ada8cd3
 ---
 # How to: Work with Color
 
-The **Image Editor** contains many features that specifically handle and customize colors. You can set a foreground or background color, fill bounded areas with color, or select a color on an image to use as the current foreground or background color. You can use tools on the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md) along with the colors palette in the **Colors** window to create images.
+The **Image Editor** contains many features that specifically handle and customize colors. You can set a foreground or background color, fill bounded areas with color, or select a color on an image to use as the current foreground or background color. You can use tools on the [Image Editor toolbar](./image-editor-for-icons.md) along with the colors palette in the **Colors** window to create images.
 
 All colors for monochrome and 16-color images are shown in the **Colors** palette in the **Colors** window. Along with the 16 standard colors, you can create your own custom colors. Changing any of the colors in the palette will immediately change the corresponding color in the image.
 
-When working with 256-color icon and cursor images, the **Colors** property in the [Properties window](/visualstudio/ide/reference/properties-window) is used. For more information, see [Creating a 256-color icon or cursor](creating-a-256-color-icon-or-cursor-image-editor-for-icons.md).
+When working with 256-color icon and cursor images, the **Colors** property in the [Properties window](/visualstudio/ide/reference/properties-window) is used. For more information, see [Creating a 256-color icon or cursor](./creating-an-icon-or-other-image-image-editor-for-icons.md).
 
 True-color images can also be created. However, true color samples don't appear in the full palette in the **Colors** window; they appear only in the foreground or background color indicator area. True colors are created using the **Custom Color Selector** dialog box.
 
@@ -29,9 +29,9 @@ The **Colors** window has two parts:
 > [!NOTE]
 > The **Screen color** and **Inverse color** tools are only available for icons and cursors.
 
-You can use the **Colors** window with the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md).
+You can use the **Colors** window with the [Image Editor toolbar](./image-editor-for-icons.md).
 
-- To display the **Colors** window, right-click in an **Image Editor** pane and choose **Show Colors Window**, or go to menu [Image](../windows/image-menu-image-editor-for-icons.md) > **Show Colors Window**.
+- To display the **Colors** window, right-click in an **Image Editor** pane and choose **Show Colors Window**, or go to menu [Image](./image-editor-for-icons.md) > **Show Colors Window**.
 
 - To hide the **Colors** window, unpin the window (this action will allow the window to auto hide when it's not in use) or select the **Close** button.
 
@@ -82,7 +82,7 @@ The **Image Editor** provides the **Fill** tool for filling any enclosed image a
 
 1. Use the **Image Editor** toolbar or go to menu **Image** > **Tools** and select the **Fill** tool.
 
-1. If necessary, choose drawing colors. In the [Colors palette](../windows/colors-window-image-editor-for-icons.md), select the left mouse button to select a foreground color or the right mouse button to select a background color.
+1. If necessary, choose drawing colors. In the [Colors palette](./image-editor-for-icons.md), select the left mouse button to select a foreground color or the right mouse button to select a background color.
 
 1. Move the **Fill** tool to the area you want to fill.
 

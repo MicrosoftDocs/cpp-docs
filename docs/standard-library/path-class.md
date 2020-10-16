@@ -44,7 +44,7 @@ class path;
 |[empty](#empty)|Returns `mypath.empty()`.|
 |[end](#end)|Returns an end-of-sequence iterator of type `iterator`.|
 |[extension](#extension)|Returns the suffix of `filename()`.|
-|[filename](#filename)|Returns the root directory component of myname, specifically `empty() path() : *--end()`. The component may be empty.|
+|[filename](#filename)|Returns the root directory component of myname, specifically `empty() ? path() : *--end()`. The component may be empty.|
 |[generic_string](#generic_string)|Returns `this->string<Elem, Traits, Alloc>(al)` with (under Windows) any backslash converted to a forward slash.|
 |[generic_u16string](#generic_u16string)|Returns `u16string()` with (under Windows) any backslash converted to a forward slash.|
 |[generic_u32string](#generic_u32string)|Returns `u32string()` with (under Windows) any backslash converted to a forward slash.|

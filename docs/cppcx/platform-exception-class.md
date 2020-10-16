@@ -114,7 +114,7 @@ public:
     property int HResult { int get(); }
 ```
 
-## Property Value
+### Property Value
 
 An HRESULT value.
 
@@ -132,7 +132,7 @@ Message that describes the error.
 public:property String^ Message;
 ```
 
-## Property Value
+### Property Value
 
 In exceptions that originate in the Windows Runtime, this is a system-supplied description of the error.
 

@@ -44,13 +44,13 @@ Source control enables you to coordinate work among multiple developers, isolate
 
 ::: moniker range="vs-2019"
 
-![Team Explorer](media/vs2019-team-explorer.png "Visual Studio 2017 Team Explorer")
+![Screenshot of the Team Explorer window in Visual Studio 2019.](media/vs2019-team-explorer.png "Visual Studio 2017 Team Explorer")
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-![Team Explorer](media/vs2017-team-explorer.png "Visual Studio 2017 Team Explorer")
+![Screenshot of the Team Explorer window in Visual Studio 2017.](media/vs2017-team-explorer.png "Visual Studio 2017 Team Explorer")
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ If your program has a user interface, you can use a designer to quickly populate
 
 For more information about designing a user interface for a Universal Windows Platform app, see [Design and UI](https://developer.microsoft.com/windows/design).
 
-For more information about creating a user interface for an MFC application, see [MFC Desktop Applications](../mfc/mfc-desktop-applications.md). For information about Win32 Windows programs, see [Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md).
+For more information about creating a user interface for an MFC application, see [MFC Desktop Applications](../mfc/mfc-desktop-applications.md). For information about Win32 Windows programs, see [Windows Desktop Applications](../windows/desktop-applications-visual-cpp.md).
 
 ## Write code
 
@@ -110,7 +110,7 @@ For more information, see [Verifying Code by Using Unit Tests](/visualstudio/tes
 
 ## Analyze
 
-Visual Studio includes static code analysis tools that can detect potential problems in your source code. These tools include an implementation of the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) rules checkers. For more information, see [Code analysis for C/C++ overview](/cpp/code-quality/code-analysis-for-c-cpp-overview).
+Visual Studio includes static code analysis tools that can detect potential problems in your source code. These tools include an implementation of the [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) rules checkers. For more information, see [Code analysis for C/C++ overview](../code-quality/code-analysis-for-c-cpp-overview.md).
 
 ## Deploy completed applications
 

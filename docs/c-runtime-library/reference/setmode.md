@@ -62,7 +62,7 @@ By default, this function's global state is scoped to the application. To change
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## Example
+## Example: Use _setmode to change stdin
 
 ```C
 // crt_setmode.c
@@ -90,7 +90,7 @@ int main( void )
 'stdin' successfully changed to binary mode
 ```
 
-## Example
+## Example: Use _setmode to change stdout
 
 ```C
 // crt_setmodeunicode.c

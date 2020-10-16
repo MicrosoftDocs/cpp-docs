@@ -9,7 +9,7 @@ ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
 
 Using the **Dialog Editor**, you can add, resize, edit, and delete controls in dialog boxes. You can also edit the properties of a control, such as its ID, or whether it's initially visible at run time.
 
-The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the **Dialog Editor**. You can also customize the **Toolbox** window for easier use. For more information, see [Using the Toolbox](/visualstudio/ide/using-the-toolbox) and [Show or hide the Toolbox window](showing-or-hiding-the-dialog-editor-toolbar.md).
+The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the **Dialog Editor**. You can also customize the **Toolbox** window for easier use. For more information, see [Using the Toolbox](/visualstudio/ide/using-the-toolbox) and [Show or hide the Toolbox window](./dialog-editor.md).
 
 > [!TIP]
 > While using the **Dialog Editor**, in many instances, you can select the right mouse button to display a shortcut menu of frequently used commands.
@@ -50,7 +50,7 @@ The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/refe
 1. Release the mouse button. The control settles onto the dialog box in the size you specified.
 
 > [!TIP]
-> You can resize the control after dropping it onto the dialog box by moving the sizing handles on the border of the control. For more information, see [Sizing Individual Controls](../windows/sizing-individual-controls.md).
+> You can resize the control after dropping it onto the dialog box by moving the sizing handles on the border of the control. For more information, see [Sizing Individual Controls](./arrangement-of-controls-on-dialog-boxes.md).
 
 ### To add a custom control
 
@@ -85,7 +85,7 @@ You can add custom controls to the dialog box. Select the **Custom Control** ico
 
 1. While pressing the **Ctrl** key, double-click the dialog box control.
 
-   The [Add Member Variable wizard](../ide/add-member-variable-wizard.md) appears.
+   The [Add Member Variable wizard](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard) appears.
 
 1. Type the appropriate information in the **Add Member Variable** wizard. For more information, see [Dialog Data Exchange](../mfc/dialog-data-exchange.md).
 
@@ -157,7 +157,7 @@ To use RichEdit controls, you must call `LoadLibrary`. For more information, see
 >
 > You may use the current [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) class with the older RichEdit 1.0 control, but `CRichEditCtrl` is only designed to support the RichEdit 2.0 control. Because RichEdit 1.0 and RichEdit 2.0 are similar, most methods will work. However, there are some differences between the 1.0 and 2.0 controls, so some methods might work incorrectly or not work at all.
 
-### ActiveX Controls
+## Insert ActiveX controls
 
 Visual Studio enables you to insert ActiveX controls into your dialog box. For more information, see [MFC ActiveX Controls](../mfc/mfc-activex-controls.md) and [ActiveX Control Containers](../mfc/activex-control-containers.md).
 
@@ -171,7 +171,7 @@ The **Insert ActiveX Control** dialog box enables you to insert ActiveX controls
 > [!CAUTION]
 > It may not be legal to distribute all of the ActiveX controls on your system. Refer to the license agreement for the software that installed the controls or contact the software company.
 
-#### To add an ActiveX control
+### To add an ActiveX control
 
 1. Open a dialog box in the **Dialog Editor**.
 
@@ -186,7 +186,7 @@ The **Insert ActiveX Control** dialog box enables you to insert ActiveX controls
 > [!TIP]
 > You can use the shortcut menu in the **Dialog Editor** to quickly add registered ActiveX controls to a dialog box, or try adding ActiveX controls to the **Toolbox** window for easy access.
 
-#### To edit properties for an ActiveX control
+### To edit properties for an ActiveX control
 
 ActiveX controls supplied by independent vendors may come equipped with their own properties and characteristics. These properties are displayed in the **Properties** window. Any property pages created by the writers of the ActiveX control are displayed in the **Properties Pages** dialog box. (To view the **Property Page** for a specific ActiveX control, select the **Property Page** button in the [Properties window](/visualstudio/ide/reference/properties-window)).
 

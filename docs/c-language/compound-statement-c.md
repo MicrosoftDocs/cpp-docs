@@ -31,7 +31,7 @@ Variables declared in a block with the **`auto`** or **`register`** keyword are 
 
 This example illustrates a compound statement:
 
-```
+```C
 if ( i > 0 )
 {
     line[i] = x;

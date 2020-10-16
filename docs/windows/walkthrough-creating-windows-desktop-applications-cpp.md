@@ -46,11 +46,11 @@ Follow these steps to create your first Windows desktop project. As you go, you'
 
 1. In **Solution Explorer**, right-click the **DesktopApp** project, choose **Add**, and then choose **New Item**.
 
-   ![Add new item to DesktopApp Project](../build/media/desktop-app-project-add-new-item-153.gif "Add new item to DesktopApp Project")
+   ![Short video showing the user adding a new item to DesktopApp Project in Visual Studio 2019.](../build/media/desktop-app-project-add-new-item-153.gif "Add new item to DesktopApp Project")
 
 1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
 
-   ![Add .cpp file to DesktopApp Project](../build/media/desktop-app-add-cpp-file-153.png "Add .cpp file to DesktopApp Project")
+   ![Screenshot of the Add New Item dialog box in Visual Studio 2019 with Installed > Visual C plus plus selected and the C plus plus File option highlighted.](../build/media/desktop-app-add-cpp-file-153.png "Add .cpp file to DesktopApp Project")
 
 Your project is now created and your source file is opened in the editor. To continue, skip ahead to [Create the code](#create-the-code).
 
@@ -66,17 +66,17 @@ Your project is now created and your source file is opened in the editor. To con
 
    In the **Name** box, type a name for the project, for example, *DesktopApp*. Choose **OK**.
 
-   ![Name the DesktopApp project](../build/media/desktop-app-new-project-name-153.png "Name the DesktopApp project")
+   ![Screenshot of the New Project dialog box in Visual Studio 2017 with Installed > Visual C plus plus > Windows Desktop selected, the Windows Desktop Wizard option highlighted, and DesktopApp typed in the Name text box.](../build/media/desktop-app-new-project-name-153.png "Name the DesktopApp project")
 
 1. In the **Windows Desktop Project** dialog, under **Application type**, select **Windows application (.exe)**. Under **Additional options**, select **Empty project**. Make sure **Precompiled Header** isn't selected. Choose **OK** to create the project.
 
 1. In **Solution Explorer**, right-click the **DesktopApp** project, choose **Add**, and then choose **New Item**.
 
-   ![Add new item to DesktopApp Project](../build/media/desktop-app-project-add-new-item-153.gif "Add new item to DesktopApp Project")
+   ![Short video showing the user adding a new item to DesktopApp Project in Visual Studio 2017.](../build/media/desktop-app-project-add-new-item-153.gif "Add new item to DesktopApp Project")
 
 1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
 
-   ![Add .cpp file to DesktopApp Project](../build/media/desktop-app-add-cpp-file-153.png "Add .cpp file to DesktopApp Project")
+   ![Screenshot of the Add New Item dialog box in Visual Studio 2017 with Installed > Visual C plus plus selected and the C plus plus File option highlighted.](../build/media/desktop-app-add-cpp-file-153.png "Add .cpp file to DesktopApp Project")
 
 Your project is now created and your source file is opened in the editor. To continue, skip ahead to [Create the code](#create-the-code).
 
@@ -92,7 +92,7 @@ Your project is now created and your source file is opened in the editor. To con
 
    In the **Name** box, type a name for the project, for example, *DesktopApp*. Choose **OK**.
 
-   ![Name the DesktopApp project](../build/media/desktop-app-new-project-name-150.png "Name the DesktopApp project")
+   ![Screenshot of the New Project dialog box in Visual Studio 2015 with Installed > Templates > Visual C plus plus > Win32 selected, the Win32 Project option highlighted, and DesktopApp typed in the Name text box.](../build/media/desktop-app-new-project-name-150.png "Name the DesktopApp project")
 
 1. On the **Overview** page of the **Win32 Application Wizard**, choose **Next**.
 
@@ -102,11 +102,11 @@ Your project is now created and your source file is opened in the editor. To con
 
 1. In **Solution Explorer**, right-click the DesktopApp project, choose **Add**, and then choose **New Item**.
 
-   ![Add new item to DesktopApp Project](../build/media/desktop-app-project-add-new-item-150.gif "Add new item to DesktopApp Project")
+   ![Short video showing the user adding a new item to DesktopApp Project in Visual Studio 2015.](../build/media/desktop-app-project-add-new-item-150.gif "Add new item to DesktopApp Project")
 
 1. In the **Add New Item** dialog box, select **C++ File (.cpp)**. In the **Name** box, type a name for the file, for example, *HelloWindowsDesktop.cpp*. Choose **Add**.
 
-   ![Add .cpp file to DesktopApp Project](../build/media/desktop-app-add-cpp-file-150.png "Add .cpp file to DesktopApp Project")
+   ![Screenshot of the Add New Item dialog box in Visual Studio 2015 with Installed > Visual C plus plus selected and the C plus plus File option highlighted.](../build/media/desktop-app-add-cpp-file-150.png "Add .cpp file to DesktopApp Project")
 
 Your project is now created and your source file is opened in the editor.
 
@@ -132,7 +132,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    For information about the parameters and return value of this function, see [WinMain entry point](/windows/win32/api/winbase/nf-winbase-winmain).
 
    > [!NOTE]
-   > What are all those extra words, such as `CALLBACK`, or `HINSTANCE`, or `_In_`? The traditional Windows API uses typedefs and preprocessor macros extensively to abstract away some of the details of types and platform-specific code, such as calling conventions, **`__declspec`** declarations, and compiler pragmas. In Visual Studio, you can use the IntelliSense [Quick Info](/visualstudio/ide/using-intellisense#quick-info) feature to see what these typedefs and macros define. Hover your mouse over the word of interest, or select it and press **Ctrl**+**K**, **Ctrl**+**I** for a small pop-up window that contains the definition. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense). Parameters and return types often use *SAL Annotations* to help you catch programming errors. For more information, see [Using SAL Annotations to Reduce C/C++ Code Defects](/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
+   > What are all those extra words, such as `CALLBACK`, or `HINSTANCE`, or `_In_`? The traditional Windows API uses typedefs and preprocessor macros extensively to abstract away some of the details of types and platform-specific code, such as calling conventions, **`__declspec`** declarations, and compiler pragmas. In Visual Studio, you can use the IntelliSense [Quick Info](/visualstudio/ide/using-intellisense#quick-info) feature to see what these typedefs and macros define. Hover your mouse over the word of interest, or select it and press **Ctrl**+**K**, **Ctrl**+**I** for a small pop-up window that contains the definition. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense). Parameters and return types often use *SAL Annotations* to help you catch programming errors. For more information, see [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md).
 
 1. Windows desktop programs require &lt;windows.h>. &lt;tchar.h> defines the `TCHAR` macro, which resolves ultimately to **`wchar_t`** if the UNICODE symbol is defined in your project, otherwise it resolves to **`char`**.  If you always build with UNICODE enabled, you don't need TCHAR and can just use **`wchar_t`** directly.
 
@@ -583,4 +583,4 @@ Congratulations! You've completed this walkthrough and built a traditional Windo
 
 ## See also
 
-[Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)
+[Windows Desktop Applications](./desktop-applications-visual-cpp.md)

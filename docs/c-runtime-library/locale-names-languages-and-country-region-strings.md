@@ -1,5 +1,7 @@
 ---
 title: "Locale Names, Languages, and Country-Region Strings"
+description: "An overview of using Microsoft Universal CRT locale, language, and country and region strings."
+ms.topic: "conceptual"
 ms.date: "12/10/2018"
 helpviewer_keywords: ["country/region strings", "localization, locale", "locales", "setlocale function", "language strings"]
 ms.assetid: a0e5a0c5-5602-4da0-b65f-de3d6c8530a2
@@ -37,11 +39,9 @@ _wsetlocale(LC_ALL, L"de-DE");
 _wsetlocale(LC_ALL, L"LC_MONETARY=en-GB;LC_TIME=es-ES");
 ```
 
-
 ## UTF-8 Support
 
 UTF-8 support can be enabled by using the UTF-8 code page in your locale string. See the [UTF-8 Support section of `setlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md#utf-8-support) for more information.
-
 
 ## See also
 

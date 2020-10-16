@@ -81,7 +81,7 @@ Expression (including pointers) that evaluates to nonzero or 0.
 
 In debug builds, ATLASSERT evaluates *booleanExpression* and generates a debug report when the result is false.
 
-## Requirements
+### Requirements
 
 **Header:** atldef.h
 
@@ -118,7 +118,7 @@ The difference between ATLENSURE and ATLASSERT is that ATLENSURE throws an excep
 
 [!code-cpp[NVC_ATL_Utilities#108](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_1.cpp)]
 
-## Requirements
+### Requirements
 
 **Header:** afx.h
 
@@ -143,7 +143,7 @@ In release builds, simply returns E_NOTIMPL.
 
 [!code-cpp[NVC_ATL_Utilities#127](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_2.cpp)]
 
-## Requirements
+### Requirements
 
 **Header:** atltrace.h
 

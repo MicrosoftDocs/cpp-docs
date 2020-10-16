@@ -104,7 +104,7 @@ To summarize, use constraints in your code according to the following rules:
     ref class G2{};
     ```
 
-## Example
+## Examples
 
 The following example demonstrates using constraints to call instance methods on type parameters.
 
@@ -165,8 +165,6 @@ int main() {
 "parent" is not a senior
 "grandfather" is a senior
 ```
-
-## Example
 
 When a generic type parameter is used as a constraint, it is called a naked type constraint. Naked type constraints are useful when a member function with its own type parameter needs to constrain that parameter to the type parameter of the containing type.
 

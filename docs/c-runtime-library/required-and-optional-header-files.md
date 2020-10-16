@@ -1,6 +1,8 @@
 ---
 title: "Required and Optional Header Files"
+description: "When to use required versus optional header files from the Microsoft C runtime library."
 ms.date: "11/04/2016"
+ms.topic: "conceptual"
 f1_keywords: ["c.headers"]
 helpviewer_keywords: ["include files, required in run time", "header files, required in run time"]
 ms.assetid: f64d0bf5-e2c3-4b42-97d0-443b3d901d9f

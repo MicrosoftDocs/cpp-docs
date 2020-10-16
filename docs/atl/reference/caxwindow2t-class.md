@@ -59,7 +59,7 @@ Class `CAxWindow2` is implemented as a specialization of the `CAxWindow2T` class
 > [!NOTE]
 > `CAxWindowT` members are documented under [CAxWindow](../../atl/reference/caxwindow-class.md).
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses the members of this class.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample that uses the members of this class.
 
 ## Inheritance Hierarchy
 
@@ -111,7 +111,7 @@ See `CWindow::Create` for a description of the parameters and return value.
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CAxWindow2T::Create`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample that uses `CAxWindow2T::Create`.
 
 ## <a name="createcontrollic"></a> CAxWindow2T::CreateControlLic
 
@@ -142,7 +142,7 @@ See [CAxWindow::CreateControl](../../atl/reference/caxwindow-class.md#createcont
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CAxWindow2T::CreateControlLic`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample that uses `CAxWindow2T::CreateControlLic`.
 
 ## <a name="createcontrollicex"></a> CAxWindow2T::CreateControlLicEx
 
@@ -179,7 +179,7 @@ See [CAxWindow::CreateControlEx](../../atl/reference/caxwindow-class.md#createco
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CAxWindow2T::CreateControlLicEx`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample that uses `CAxWindow2T::CreateControlLicEx`.
 
 ## <a name="getwndclassname"></a> CAxWindow2T::GetWndClassName
 

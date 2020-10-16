@@ -13,9 +13,9 @@ The CL.EXE command-line parser found *value* where it was expecting a numerical 
 
 A C1049 error may occur when the compiler can’t find a numerical argument for one of these compiler options:
 
-[/constexpr:depth](/cpp/build/reference/constexpr-control-constexpr-evaluation)\
-[/constexpr:backtrace](/cpp/build/reference/constexpr-control-constexpr-evaluation)\
-[/constexpr:steps](/cpp/build/reference/constexpr-control-constexpr-evaluation)
+[/constexpr:depth](../../build/reference/constexpr-control-constexpr-evaluation.md)\
+[/constexpr:backtrace](../../build/reference/constexpr-control-constexpr-evaluation.md)\
+[/constexpr:steps](../../build/reference/constexpr-control-constexpr-evaluation.md)
 
 Command-line compiler options that expect a numerical argument may also report `Command line error D8004`, `Command line error D8021`, `Command line warning D9002`, `Command line warning D9014`, or `Command line warning D9024`.
 

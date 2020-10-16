@@ -126,7 +126,7 @@ When users want to apply their changes to the objects, the property page site wi
 
 To display this page, you need to create a simple helper object. The helper object will provide a method that simplifies the `OleCreatePropertyFrame` API for displaying a single page connected to a single object. This helper will be designed so that it can be used from Visual Basic.
 
-Use the [Add Class dialog box](../ide/add-class-dialog-box.md) and the [ATL Simple Object Wizard](../atl/reference/atl-simple-object-wizard.md) to generate a new class and use `Helper` as its short name. Once created, add a method as shown in the table below.
+Use the [Add Class dialog box](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) and the [ATL Simple Object Wizard](../atl/reference/atl-simple-object-wizard.md) to generate a new class and use `Helper` as its short name. Once created, add a method as shown in the table below.
 
 |Item|Value|
 |----------|-----------|

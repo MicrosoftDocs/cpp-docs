@@ -1,6 +1,6 @@
 ---
 title: "Running NMAKE"
-description: "Reference guide to the Microsoft NMAKE command-line options."
+description: "Learn about running NMAKE."
 ms.date: "02/09/2020"
 helpviewer_keywords: ["targets, building", "response files, NMAKE", "targets", "command files", "NMAKE program, targets", "NMAKE program, running", "command files, NMAKE"]
 ms.assetid: 0421104d-8b7b-4bf3-86c1-928d9b7c1a8c

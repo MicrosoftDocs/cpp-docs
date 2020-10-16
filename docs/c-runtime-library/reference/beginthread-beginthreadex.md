@@ -124,7 +124,7 @@ Multithreaded versions of the [C run-time libraries](../../c-runtime-library/crt
 
 To use **_beginthread** or **_beginthreadex**, the application must link with one of the multithreaded C run-time libraries.
 
-## Example
+## Examples
 
 The following example uses **_beginthread** and **_endthread**.
 
@@ -243,8 +243,6 @@ void Bounce( void * parg )
 ```
 
 Press any key to end the sample application.
-
-## Example
 
 The following sample code demonstrates how you can use the thread handle that's returned by **_beginthreadex** with the synchronization API [WaitForSingleObject](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject). The main thread waits for the second thread to terminate before it continues. When the second thread calls **_endthreadex**, it causes its thread object to go to the signaled state. This allows the primary thread to continue running. This cannot be done with **_beginthread** and **_endthread**, because **_endthread** calls **CloseHandle**, which destroys the thread object before it can be set to the signaled state.
 

@@ -65,7 +65,7 @@ A bookmark is a column that uniquely identifies rows in the table. Typically it'
 
 - Request a bookmark column from the provider by setting the `DBPROP_IRowsetLocate` property.
 
-- Add a bookmark entry to the column map by using the [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md) macro.
+- Add a bookmark entry to the column map by using the [BOOKMARK_ENTRY](./macros-and-global-functions-for-ole-db-consumer-templates.md#bookmark_entry) macro.
 
 The previous steps give you bookmark support and a bookmark object with which to work. This code example demonstrates a bookmark as follows:
 
@@ -73,7 +73,7 @@ The previous steps give you bookmark support and a bookmark object with which to
 
 - Output rowset data to the file row by row.
 
-- Move the rowset cursor to the bookmark by calling [MoveToBookmark](../../data/oledb/crowset-movetobookmark.md).
+- Move the rowset cursor to the bookmark by calling [MoveToBookmark](./crowset-class.md#movetobookmark).
 
 - Output the bookmarked row, appending it to the end of the file.
 
