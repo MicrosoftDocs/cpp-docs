@@ -12,13 +12,13 @@ The `_Noreturn` keyword was introduced in C11. It tells the compiler that the fu
 
 A convenience macro, `noreturn`, provided in <stdnoreturn.h>, maps to the `_Noreturn` keyword.
 
-The primary benefits for using `_Noreturn` (or the equivalent `noreturn`) are making the intention of the function clear in the code for future readers, and for detecting unintentionally unreachable code.
+The primary benefits for using `_Noreturn` (or the equivalent `noreturn`) are making the intention of the function clear in the code for future readers, and detecting unintentionally unreachable code.
 
 ## Example using `noreturn` macro and `_Noreturn `keyword
 
 The following example demonstrates the `_Noreturn` keyword and the equivalent `noreturn` macro.
 
-IntelliSense may generate a spurious error, `E0065`, on the macro version that you can ignore. It doesn't prevent you from running the sample.
+IntelliSense may generate a spurious error, `E0065`, if you use the macro `noreturn` that you can ignore. It doesn't prevent you from running the sample.
 
 ```C
 // Compile with Warning Level4 (/W4) and /std:c11
