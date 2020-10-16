@@ -51,7 +51,7 @@ Declarations of the interface members.
 *declarators*<br/>
 (Optional) Declarations of variables based on this type.
 
-## Example
+## Example: How to declare and instantiate a generic interface
 
 The following example demonstrates how to declare and instantiate a generic interface. In the example, the generic interface `IList<ItemType>` is declared. It is then implemented by two generic classes, `List1<ItemType>` and `List2<ItemType>`, with different implementations.
 
@@ -228,7 +228,7 @@ Array List
 List2
 ```
 
-## Example
+## Example: Declare a generic interface
 
 This example declares a generic interface, `IMyGenIface`, and two non-generic interfaces, `IMySpecializedInt` and `ImySpecializedString`, that specialize `IMyGenIface`. The two specialized interfaces are then implemented by two classes, `MyIntClass` and `MyStringClass`. The example shows how to specialize generic interfaces, instantiate generic and non-generic interfaces, and call the explicitly implemented members on the interfaces.
 
