@@ -1,6 +1,6 @@
 ---
 title: "Configure a Linux MSBuild C++ project in Visual Studio"
-ms.date: "10/15/2020"
+ms.date: "10/16/2020"
 description: "Configure a MSBuild-based Linux project in Visual Studio so you can build it."
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
 ---
@@ -34,9 +34,9 @@ To view configuration options, select the **Project > Properties** menu, or righ
 
 By default, an executable (.out) is built. To build a static or dynamic library, or to use an existing Makefile, use the **Configuration Type** setting.
 
-If you're building for Windows Subsystem for Linux (WSL), be aware that there are some differences between WSL version 1 and 2:
-- Version 1 is limited to 64 parallel compilation processes. This is goverened by the **Max Parallel Compilation Jobs** setting in **Configuration properties > C/C++ > General**. 
-- If you intend to use more than 64 parallel compilation processes, we recommend that you build with Ninja--which generally will be faster and more reliable. To build with Ninja, use the **Enable Incremental Build** setting in **Configuration properties > General**.
+If you're building for Windows Subsystem for Linux (WSL), be aware that WSL Version 1 is limited to 64 parallel compilation processes. This is goverened by the **Max Parallel Compilation Jobs** setting in **Configuration properties > C/C++ > General**.
+
+Regardless of the WSL version , if you intend to use more than 64 parallel compilation processes, we recommend that you build with Ninja--which generally will be faster and more reliable. To build with Ninja, use the **Enable Incremental Build** setting in **Configuration properties > General**.
 
 For more information about the settings in the property pages, see [Linux Project Property Page Reference](prop-pages-linux.md).
 
