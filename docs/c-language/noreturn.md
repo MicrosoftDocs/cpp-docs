@@ -6,7 +6,7 @@ f1_keywords: ["_Noreturn_c", "noreturn"]
 helpviewer_keywords: ["keywords [C]"]
 ---
 
-# _Noreturn keyword and noreturn macro (C11)
+# `_Noreturn` keyword and `noreturn` macro (C11)
 
 The `_Noreturn` keyword was introduced in C11. It tells the compiler that the function it's applied to doesn't return. The compiler knows that the code following a call to a `_Noreturn` function is unreachable.
 
