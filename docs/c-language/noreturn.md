@@ -65,4 +65,4 @@ int main(void)
 [/std (Specify language standard version)](../build/reference/std-specify-language-standard-version.md)\
 [/W4 (Specify warning level)](../build/reference/compiler-option-warning-level.md)\
 [C4702 warning](../error-messages\compiler-warnings\compiler-warning-level-4-c4702.md)\
-[_declspec(noreturn)](../cpp/noreturn.md)
+[__declspec(noreturn)](../cpp/noreturn.md)
