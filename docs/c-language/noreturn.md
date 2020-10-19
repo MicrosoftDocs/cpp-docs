@@ -14,7 +14,7 @@ The keyword is typically used through the convenience macro, `noreturn`, provide
 
 The primary benefits for using `_Noreturn` (or the equivalent `noreturn`) are making the intention of the function clear in the code for future readers, and detecting unintentionally unreachable code.
 
-A function marked `noreturn` should not include a return type because it doesn't return a value to the caller. It should be `void`.
+A function marked `noreturn` shouldn't include a return type because it doesn't return a value to the caller. It should be `void`.
 
 ## Example using `noreturn` macro and `_Noreturn `keyword
 
