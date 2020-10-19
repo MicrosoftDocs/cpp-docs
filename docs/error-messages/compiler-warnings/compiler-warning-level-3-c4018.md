@@ -1,31 +1,44 @@
 ---
 title: "Compiler Warning (level 3) C4018"
-ms.date: "11/04/2016"
+description: "Microsoft C/C++ compiler warning C4018, its causes and resolution."
+ms.date: 10/16/2020
 f1_keywords: ["C4018"]
 helpviewer_keywords: ["C4018"]
-ms.assetid: 6e8cbb04-d914-4319-b431-cbc2fbe40eb1
 ---
 # Compiler Warning (level 3) C4018
 
-'expression' : signed/unsigned mismatch
+> '*token*' : signed/unsigned mismatch
 
-Comparing a signed and unsigned number required the compiler to convert the signed value to unsigned.
+Using the *token* operator to compare **`signed`** and **`unsigned`** numbers required the compiler to convert the **`signed`** value to **`unsigned`**.
 
-This warning may be fixed if you cast one of the two types when testing signed and unsigned types.
+## Remarks
 
-The following sample generates C4018:
+One way to fix this warning is if you cast one of the two types when you compare **`signed`** and **`unsigned`** types.
+
+## Example
+
+This sample generates C4018 and shows how to fix it:
 
 ```cpp
 // C4018.cpp
-// compile with: /W3
+// compile with: cl /EHsc /W4 C4018.cpp
 int main() {
-   unsigned int uc = 0;
-   int c = 0;
-   unsigned int c2 = 0;
+    unsigned int uc = 0;
+    int c = 0;
+    unsigned int c2 = c; // implicit conversion
 
-   if (uc < c) uc = 0;   // C4018
+    if (uc < c)           // C4018
+        uc = 0;
 
-   // OK
-   if (uc == c2) uc = 0;
+    if (uc < unsigned(c)) // OK
+        uc = 0;
+
+    if (uc < c2)          // Also OK
+       uc = 0;
 }
 ```
+
+## See also
+
+[Compiler Warning (Level 4) C4388](c4388.md)\
+[Compiler Warning (Level 4) C4389](compiler-warning-level-4-c4389.md)

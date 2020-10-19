@@ -3629,6 +3629,8 @@
           href: compiler-warnings/compiler-warning-level-1-c4383.md
         - name: Compiler warning (level 1) C4384
           href: compiler-warnings/compiler-warning-level-1-c4384.md
+        - name: Compiler warning (level 4) C4388
+          href: compiler-warnings/c4388.md
         - name: Compiler warning (level 4) C4389
           href: compiler-warnings/compiler-warning-level-4-c4389.md
         - name: Compiler warning (level 3) C4390
