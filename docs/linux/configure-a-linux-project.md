@@ -1,6 +1,6 @@
 ---
 title: "Configure a Linux MSBuild C++ project in Visual Studio"
-ms.date: "08/06/2020"
+ms.date: "10/16/2020"
 description: "Configure a MSBuild-based Linux project in Visual Studio so you can build it."
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
 ---
@@ -20,7 +20,7 @@ You can configure a Linux project to target a physical Linux machine, a virtual 
 
 **Visual Studio 2019 version 16.1**:
 
-- When targeting WSL, you can avoid the copy operations that are necessary for building and IntelliSense when targeting remote Linux systems.
+- When you target WSL, you can avoid the copy operations needed to build and get IntelliSense that are required when you target a remote Linux system.
 
 - You can specify separate Linux targets for building and debugging.
 
@@ -34,6 +34,10 @@ To view configuration options, select the **Project > Properties** menu, or righ
 
 By default, an executable (.out) is built. To build a static or dynamic library, or to use an existing Makefile, use the **Configuration Type** setting.
 
+If you're building for Windows Subsystem for Linux (WSL), WSL Version 1 is limited to 64 parallel compilation processes. This is governed by the **Max Parallel Compilation Jobs** setting in **Configuration properties > C/C++ > General**.
+
+Regardless of the WSL version you are using, if you intend to use more than 64 parallel compilation processes, we recommend that you build with Ninja--which generally will be faster and more reliable. To build with Ninja, use the **Enable Incremental Build** setting in **Configuration properties > General**.
+
 For more information about the settings in the property pages, see [Linux Project Property Page Reference](prop-pages-linux.md).
 
 ## Remote settings
@@ -46,7 +50,7 @@ To change settings related to the remote Linux computer, configure the remote se
 
    ::: moniker range="vs-2019"
 
-   **Visual Studio 2019 version 16.1**: To target Windows Subsystem for Linux, click the down arrow for **Platform Toolset** and choose **WSL_1_0**. The other remote options will disappear and the path to the default WSL shell will appear in their place:
+   **Visual Studio 2019 version 16.7**: To target Windows Subsystem for Linux (WSL), set the **Platform Toolset** drop-down to **GCC for Windows Subsystem for Linux**. The other remote options will disappear and the path to the default WSL shell will appear in their place:
 
    ![WSL build machine](media/wsl-remote-vs2019.png)
 
@@ -61,7 +65,7 @@ To change settings related to the remote Linux computer, configure the remote se
 - The **Remote Build Project Directory** is where this specific project will be built on the remote Linux computer. This will default to **$(RemoteRootDir)/$(ProjectName)**, which will expand to a directory named after the current project, under the root directory set above.
 
 > [!NOTE]
-> To change the default C and C++ compilers, or the Linker and Archiver used to build the project, use the appropriate entries in the **C/C++ > General** section and the **Linker > General** section. You can specify a certain version of GCC or Clang, for example. For more information see [C/C++ Properties (Linux C++)](prop-pages/c-cpp-linux.md) and [Linker Properties (Linux C++)](prop-pages/linker-linux.md).
+> To change the default C and C++ compilers, or the Linker and Archiver used to build the project, use the appropriate entries in the **C/C++ > General** section and the **Linker > General** section. You can specify a certain version of GCC or Clang, for example. For more information, see [C/C++ Properties (Linux C++)](prop-pages/c-cpp-linux.md) and [Linker Properties (Linux C++)](prop-pages/linker-linux.md).
 
 ## Copy sources (remote systems only)
 
@@ -100,7 +104,7 @@ This functionality depends on the Linux machine having zip installed. You can in
 sudo apt install zip
 ```
 
-To manage your header cache, navigate to **Tools > Options, Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. To update the header cache after making changes on your Linux machine, select the remote connection and then select **Update**. Select **Delete** to remove the headers without deleting the connection itself. Select **Explore** to open the local directory in **File Explorer**. Treat this folder as read-only. To download headers for an existing connection that was created prior to Visual Studio 2017 version 15.3, select the connection and then select **Download**.
+To manage your header cache, navigate to **Tools > Options, Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. To update the header cache after making changes on your Linux machine, select the remote connection and then select **Update**. Select **Delete** to remove the headers without deleting the connection itself. Select **Explore** to open the local directory in **File Explorer**. Treat this folder as read-only. To download headers for an existing connection that was created before Visual Studio 2017 version 15.3, select the connection and then select **Download**.
 
 ::: moniker range="vs-2017"
 
