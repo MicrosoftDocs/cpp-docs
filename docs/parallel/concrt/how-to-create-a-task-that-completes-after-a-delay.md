@@ -7,7 +7,7 @@ ms.assetid: 3fc0a194-3fdb-4eba-8b8a-b890981a985d
 ---
 # How to: Create a task that completes after a delay
 
-This example shows how to use the [concurrency::task](../../parallel/concrt/reference/task-class.md), [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md), [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md), [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md), [concurrency::timer](../../parallel/concrt/reference/timer-class.md), and [concurrency::call](../../parallel/concrt/reference/call-class.md) classes to create a task that completes after a delay. You can use this method to build loops that occasionally poll for data, introduce timeouts, delay handling of user input for a predetermined time, and so on.
+This example shows how to use the [`concurrency::task`](../../parallel/concrt/reference/task-class.md), [`concurrency::cancellation_token_source`](../../parallel/concrt/reference/cancellation-token-source-class.md), [`concurrency::cancellation_token`](../../parallel/concrt/reference/cancellation-token-class.md), [`concurrency::task_completion_event`](../../parallel/concrt/reference/task-completion-event-class.md), [`concurrency::timer`](../../parallel/concrt/reference/timer-class.md), and [`concurrency::call`](../../parallel/concrt/reference/call-class.md) classes to create a task that completes after a delay. You can use this method to build loops that occasionally poll for data. You can also introduce timeouts, delay handling of user input for a predetermined time, and so on.
 
 ## Example: complete_after and cancel_after_timeout functions
 
