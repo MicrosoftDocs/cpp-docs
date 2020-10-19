@@ -151,7 +151,7 @@ The target machine running Fedora uses the **dnf** package installer. To downloa
 
 You're now ready to create or open a Linux project and configure it to run on the target system. For more information, see:
 
-- [Create a new Linux project](create-a-new-linux-project.md)
+- [Create a new Linux MSBuild C++ project](create-a-new-linux-project.md)
 - [Configure a Linux CMake project](cmake-linux-project.md)
 
 ::: moniker-end
