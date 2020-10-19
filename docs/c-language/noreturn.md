@@ -1,18 +1,20 @@
 ---
 title: "_Noreturn keyword and noreturn macro (C11)"
 description: "Describes the `_Noreturn` keyword and `noreturn` macro."
-ms.date: 10/16/2020
+ms.date: 10/19/2020
 f1_keywords: ["_Noreturn_c", "noreturn"]
 helpviewer_keywords: ["keywords [C]"]
 ---
 
 # `_Noreturn` keyword and `noreturn` macro (C11)
 
-The `_Noreturn` keyword was introduced in C11. It tells the compiler that the function it's applied to doesn't return. The compiler knows that the code following a call to a `_Noreturn` function is unreachable.
+The `_Noreturn` keyword was introduced in C11. It tells the compiler that the function it's applied to doesn't return to the caller. The compiler knows that the code following a call to a `_Noreturn` function is unreachable. An example of a function that doesn't return is `abort()`. If there's a possibility for control flow to return to the caller, the function must not have the `_Noreturn` attribute.
 
-A convenience macro, `noreturn`, provided in <stdnoreturn.h>, maps to the `_Noreturn` keyword.
+The keyword is typically used through the convenience macro, `noreturn`, provided in <stdnoreturn.h>, which to the `_Noreturn` keyword.
 
 The primary benefits for using `_Noreturn` (or the equivalent `noreturn`) are making the intention of the function clear in the code for future readers, and detecting unintentionally unreachable code.
+
+A function marked `noreturn` should not include a return type because it doesn't return a value to the caller. It should be `void`.
 
 ## Example using `noreturn` macro and `_Noreturn `keyword
 
@@ -61,5 +63,5 @@ int main(void)
 ## See also
 
 [/std (Specify language standard version)](../build/reference/std-specify-language-standard-version.md)\
-[/W4 (Specify warning level)](../build/reference/compiler-option-warning-level.md)
+[/W4 (Specify warning level)](../build/reference/compiler-option-warning-level.md)\
 [C4702 warning](../error-messages\compiler-warnings\compiler-warning-level-4-c4702.md)
