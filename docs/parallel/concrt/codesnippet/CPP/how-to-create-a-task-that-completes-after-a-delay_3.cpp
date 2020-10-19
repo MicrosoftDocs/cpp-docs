@@ -1,6 +1,5 @@
 // task-delay.cpp
 // compile with: /EHsc
-#include <ppl.h>
 #include <ppltasks.h>
 #include <agents.h>
 #include <iostream>
@@ -92,10 +91,10 @@ bool count_primes(unsigned int max_value, unsigned int timeout)
 
     // Create a task that computes the count of prime numbers.
     // The task is canceled after the specified timeout.
-    auto t = cancel_after_timeout(task<size_t>([max_value, timeout, cts]
+    auto t = cancel_after_timeout(task<size_t>([max_value, timeout]
     {
         combinable<size_t> counts;
-        parallel_for<unsigned int>(0, max_value + 1, [&counts, cts](unsigned int n) 
+        parallel_for<unsigned int>(0, max_value + 1, [&counts](unsigned int n) 
         {
             // Respond if the overall task is cancelled by canceling 
             // the current task.
@@ -125,7 +124,7 @@ bool count_primes(unsigned int max_value, unsigned int timeout)
               << timeout << L" ms." << endl;
         return true;
     }
-    catch (const task_canceled&)
+    catch (const task_canceled& e)
     {
         wcout << L"The task timed out." << endl;
         return false;
