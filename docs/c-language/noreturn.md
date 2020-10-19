@@ -8,9 +8,9 @@ helpviewer_keywords: ["keywords [C]"]
 
 # `_Noreturn` keyword and `noreturn` macro (C11)
 
-The `_Noreturn` keyword was introduced in C11. It tells the compiler that the function it's applied to doesn't return to the caller. The compiler knows that the code following a call to a `_Noreturn` function is unreachable. An example of a function that doesn't return is `abort()`. If there's a possibility for control flow to return to the caller, the function must not have the `_Noreturn` attribute.
+The `_Noreturn` keyword was introduced in C11. It tells the compiler that the function it's applied to doesn't return to the caller. The compiler knows that the code following a call to a `_Noreturn` function is unreachable. An example of a function that doesn't return is [abort](../c-runtime-library/reference/abort.md). If there's a possibility for control flow to return to the caller, the function must not have the `_Noreturn` attribute.
 
-The keyword is typically used through the convenience macro, `noreturn`, provided in <stdnoreturn.h>, which to the `_Noreturn` keyword.
+The keyword is typically used through the convenience macro, `noreturn`, provided in <stdnoreturn.h>, which maps to the `_Noreturn` keyword.
 
 The primary benefits for using `_Noreturn` (or the equivalent `noreturn`) are making the intention of the function clear in the code for future readers, and detecting unintentionally unreachable code.
 
@@ -64,4 +64,5 @@ int main(void)
 
 [/std (Specify language standard version)](../build/reference/std-specify-language-standard-version.md)\
 [/W4 (Specify warning level)](../build/reference/compiler-option-warning-level.md)\
-[C4702 warning](../error-messages\compiler-warnings\compiler-warning-level-4-c4702.md)
+[C4702 warning](../error-messages\compiler-warnings\compiler-warning-level-4-c4702.md)\
+[_declspec(noreturn)](../cpp/noreturn.md)
