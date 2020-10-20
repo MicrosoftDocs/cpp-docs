@@ -19,10 +19,10 @@ bool count_primes(unsigned int max_value, unsigned int timeout)
 
     // Create a task that computes the count of prime numbers.
     // The task is canceled after the specified timeout.
-    auto t = cancel_after_timeout(task<size_t>([max_value, timeout]
+    auto t = cancel_after_timeout(task<size_t>([max_value, timeout, cts]
     {
         combinable<size_t> counts;
-        parallel_for<unsigned int>(0, max_value + 1, [&counts](unsigned int n) 
+        parallel_for<unsigned int>(0, max_value + 1, [&counts, cts](unsigned int n) 
         {
             // Respond if the overall task is cancelled by canceling 
             // the current task.
@@ -52,7 +52,7 @@ bool count_primes(unsigned int max_value, unsigned int timeout)
               << timeout << L" ms." << endl;
         return true;
     }
-    catch (const task_canceled& e)
+    catch (const task_canceled&)
     {
         wcout << L"The task timed out." << endl;
         return false;
