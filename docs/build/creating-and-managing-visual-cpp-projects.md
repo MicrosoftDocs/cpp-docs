@@ -10,7 +10,7 @@ A *Visual Studio project* is a project based on the MSBuild build system. MSBuil
 
 ## Create a project
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 You can create C++ projects by choosing **File** > **New** > **Project**, then setting the **Language** to C++. In the results list you see a list of project templates which you can filter by setting the **Platform** or **Project Type** and by typing keywords into the search box.
 
@@ -18,7 +18,7 @@ You can create C++ projects by choosing **File** > **New** > **Project**, then s
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 You can create C++ projects by choosing **File** > **New** > **Project**, then choosing Visual C++ in the left pane. In the center pane you see a list of project templates:
 

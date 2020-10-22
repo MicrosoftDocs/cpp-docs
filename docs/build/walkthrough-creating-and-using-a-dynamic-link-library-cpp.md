@@ -36,7 +36,7 @@ For links to more information about DLLs, see [Create C/C++ DLLs in Visual Studi
 
 - A computer that runs Microsoft Windows 7 or later versions. We recommend Windows 10 for the best development experience.
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 - A copy of Visual Studio. For information on how to download and install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). When you run the installer, make sure that the **Desktop development with C++** workload is checked. Don't worry if you didn't install this workload when you installed Visual Studio. You can run the installer again and install it now.
 
@@ -44,7 +44,7 @@ For links to more information about DLLs, see [Create C/C++ DLLs in Visual Studi
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 - A copy of Visual Studio. For information on how to download and install Visual Studio 2015, see [Install Visual Studio 2015](/visualstudio/install/install-visual-studio-2015?view=vs-2015&preserve-view=true). Use a **Custom** installation to install the C++ compiler and tools, since they're not installed by default.
 
@@ -54,7 +54,7 @@ For links to more information about DLLs, see [Create C/C++ DLLs in Visual Studi
 
 - An understanding of enough of the fundamentals of the C++ language to follow along. Don't worry, we don't do anything too complicated.
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 > [!NOTE]
 > This walkthrough assumes you're using Visual Studio 2017 version 15.9 or later. Some earlier versions of Visual Studio 2017 had defects in the code templates, or used different user interface dialogs. To avoid problems, use the Visual Studio Installer to update Visual Studio 2017 to version 15.9 or later.
@@ -65,7 +65,7 @@ For links to more information about DLLs, see [Create C/C++ DLLs in Visual Studi
 
 In this set of tasks, you create a project for your DLL, add code, and build it. To begin, start the Visual Studio IDE, and sign in if you need to. The instructions vary slightly depending on which version of Visual Studio you're using. Make sure you have the correct version selected in the control in the upper left of this page.
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 ### To create a DLL project in Visual Studio 2019
 
@@ -87,7 +87,7 @@ When the solution is created, you can see the generated project and source files
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ### To create a DLL project in Visual Studio 2017
 
@@ -105,7 +105,7 @@ When the solution is created, you can see the generated project and source files
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ### To create a DLL project in Visual Studio 2015 and older versions
 
@@ -192,7 +192,7 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
 
 ### To add an implementation to the DLL
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. In **Solution Explorer**, right-click on the **Source Files** node and choose **Add** > **New Item**. Create a new .cpp file called *MathLibrary.cpp*, in the same way that you added a new header file in the previous step.
 
@@ -261,7 +261,7 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 1. In the editor window, select the tab for **MathLibrary.cpp** if it's already open. If not, in **Solution Explorer**, double-click **MathLibrary.cpp** in the **Source Files** folder of the **MathLibrary** project to open it.
 
@@ -330,7 +330,7 @@ When the **MATHLIBRARY&#95;EXPORTS** macro is defined, the **MATHLIBRARY&#95;API
 
 To verify that everything works so far, compile the dynamic link library. To compile, choose **Build** > **Build Solution** on the menu bar. The DLL and related compiler output are placed in a folder called *Debug* directly below the solution folder. If you create a Release build, the output is placed in a folder called *Release*. The output should look something like this:
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 ```Output
 1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------
@@ -345,7 +345,7 @@ To verify that everything works so far, compile the dynamic link library. To com
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ```Output
 1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------
@@ -360,7 +360,7 @@ To verify that everything works so far, compile the dynamic link library. To com
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ```Output
 1>------ Build started: Project: MathLibrary, Configuration: Debug Win32 ------
@@ -385,7 +385,7 @@ Whether it's your own or from a third-party, your client app project needs sever
 
 To avoid out-of-sync code, we recommend you set the include path in your client project to include the DLL header files directly from your DLL project. Also, set the library path in your client project to include the DLL import libraries from the DLL project. And finally, copy the built DLL from the DLL project into your client build output directory. This step allows your client app to use the same DLL code you build.
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 ### To create a client app in Visual Studio
 
@@ -405,7 +405,7 @@ A minimal console application project is created for you. The name for the main 
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ### To create a client app in Visual Studio 2017
 
@@ -421,7 +421,7 @@ A minimal console application project is created for you. The name for the main 
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ### To create a client app in Visual Studio 2015
 

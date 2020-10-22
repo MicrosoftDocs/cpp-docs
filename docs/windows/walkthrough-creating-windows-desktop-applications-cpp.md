@@ -30,7 +30,7 @@ The Windows API (also known as the Win32 API, Windows Desktop API, and Windows C
 
 Follow these steps to create your first Windows desktop project. As you go, you'll enter the code for a working Windows desktop application. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create a Windows desktop project in Visual Studio 2019
 
@@ -56,7 +56,7 @@ Your project is now created and your source file is opened in the editor. To con
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ### To create a Windows desktop project in Visual Studio 2017
 
@@ -82,7 +82,7 @@ Your project is now created and your source file is opened in the editor. To con
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ### To create a Windows desktop project in Visual Studio 2015
 

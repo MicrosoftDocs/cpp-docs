@@ -8,19 +8,19 @@ helpviewer_keywords: ["property page XML files"]
 
 The project property pages in the IDE are configured by XML files in the default rules folder. The XML files describe the names of the rules, the categories, and the individual properties, their data type, default values, and how to display them. When you set a property in the IDE, the new value is stored in the project file.
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 The path to the default rules folder depends on the locale and the version of Visual Studio in use. In a Visual Studio 2015 or earlier developer command prompt, the rules folder is *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\<locale>`*. The `<version>` value is *`v140`* in Visual Studio 2015. The `<locale>` is an LCID, for example, `1033` for English. You'll use a different path for each edition of Visual Studio that's installed, and for each language. For example, the default rules folder path for Visual Studio 2015 Community edition in English could be *`C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\v140\1033\`*.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 The path to the default rules folder depends on the locale and the version of Visual Studio in use. In a Visual Studio 2017 developer command prompt, the rules folder is *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\<locale>\`*. The `<locale>` is an LCID, for example, `1033` for English. In a Visual Studio 2015 or earlier developer command prompt, the rules folder is *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\<locale>\`*, where the `<version>` value is *`v140`* in Visual Studio 2015. You'll use a different path for each edition of Visual Studio that's installed, and for each language. For example, the default rules folder path for Visual Studio 2017 Community edition in English could be *`C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\1033\`*.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 The path to the default rules folder depends on the locale and the version of Visual Studio in use. In a Visual Studio 2019 or later developer command prompt, the rules folder is *`%VSINSTALLDIR%MSBuild\Microsoft\VC\<version>\<locale>\`*, where the `<version>` value is *`v160`* in Visual Studio 2019. The `<locale>` is an LCID, for example, `1033` for English. In Visual Studio 2017, the rules folder is *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\<locale>\`*. In a Visual Studio 2015 or earlier developer command prompt, the rules folder is *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\<locale>\`*. You'll use a different path for each edition of Visual Studio that's installed, and for each language. For example, the default rules folder path for Visual Studio 2019 Community edition in English could be *`C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\1033\`*.
 

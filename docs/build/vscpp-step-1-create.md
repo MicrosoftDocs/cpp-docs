@@ -18,7 +18,7 @@ The usual starting point for a C++ programmer is a "Hello, world!" application t
 
 Visual Studio uses *projects* to organize the code for an app, and *solutions* to organize your projects. A project contains all the options, configurations, and rules used to build your apps. It manages the relationship between all the project's files and any external files. To create your app, first, you'll create a new project and solution.
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. In Visual Studio, open the **File** menu and choose **New > Project** to open the **Create a new Project** dialog. Select the **Console App** template that has **C++**, **Windows**, and **Console** tags, and then choose **Next**.
 
@@ -38,7 +38,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 1. In Visual Studio, open the **File** menu and choose **New > Project** to open the **New Project** dialog.
 
@@ -113,7 +113,7 @@ Come here for solutions to common issues when you create your first C++ project.
 
 ### Create your app project: issues
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The **New Project** dialog should show a **Console App** template that has **C++**, **Windows**, and **Console** tags. If you don't see it, there are two possible causes. It might be filtered out of the list, or it might not be installed. First, check the filter dropdowns at the top of the list of templates. Set them to **C++**, **Windows**, and **Console**. The C++ **Console App** template should appear; otherwise, the **Desktop development with C++** workload isn't installed.
 
@@ -125,13 +125,13 @@ If another project with the same name already exists, choose another name for yo
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 If the **New Project** dialog doesn't show a **Visual C++** entry under **Installed**, your copy of Visual Studio probably doesn't have the **Desktop development with C++** workload installed. You can run the installer right from the **New Project** dialog. Choose the **Open Visual Studio Installer** link to start the installer again. If the **User Account Control** dialog requests permissions, choose **Yes**. Update the installer if necessary. In the installer, make sure the **Desktop development with C++** workload is checked, and choose **OK** to update your Visual Studio installation.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 If another project with the same name already exists, choose another name for your project. Or, delete the existing project and try again. To delete an existing project, delete the solution folder (the folder that contains the *helloworld.sln* file) in File Explorer.
 

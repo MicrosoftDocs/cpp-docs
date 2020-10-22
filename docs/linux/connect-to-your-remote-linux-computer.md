@@ -5,39 +5,39 @@ ms.date: "01/17/2020"
 ---
 # Connect to your target Linux system in Visual Studio
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux support is available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 You can configure a Linux project to target a remote machine or the Windows Subsystem for Linux (WSL). For both remote machines and for WSL, you need to set up a remote connection in Visual Studio 2017.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 You can configure a Linux project to target a remote machine or the Windows Subsystem for Linux (WSL). For a remote machine, you need to set up a remote connection in Visual Studio. To connect to WSL, skip ahead to the [Connect to WSL](#connect-to-wsl) section.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 When using a remote connection, Visual Studio builds C++ Linux projects on the remote machine. It doesn't matter if it's a physical machine, a VM in the cloud, or WSL.
 To build the project, Visual Studio copies the source code to your remote Linux computer. Then, the code gets compiled based on Visual Studio settings.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 > [!NOTE]
 > Visual Studio 2019 version 16.5 and later also supports secure, Federal Information Processing Standard (FIPS) 140-2 compliant cryptographic connections to Linux systems for remote development. To use a FIPS-compliant connection, follow the steps in [Set up FIPS-compliant secure remote Linux development](set-up-fips-compliant-secure-remote-linux-development.md) instead.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## Set up the SSH server on the remote system
 
@@ -96,7 +96,7 @@ If ssh isn't already set up and running on your Linux system, follow these steps
 
    ::: moniker-end
 
-   ::: moniker range="vs-2019"
+   ::: moniker range="msvc-160"
 
 ## Logging for remote connections
 
@@ -114,7 +114,7 @@ If ssh isn't already set up and running on your Linux system, follow these steps
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## TCP Port Forwarding
 
@@ -134,13 +134,13 @@ gdbserver can be used for debugging on embedded devices. If you can't enable TCP
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 In Visual Studio 2017, you use the same steps to connect to WSL as you use for a remote Linux machine. Use **localhost** for the **Host Name**.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Visual Studio 2019 version 16.1 added native support for using C++ with the [Windows Subsystem for Linux (WSL)](/windows/wsl/about). That means you can build and debug on your local WSL installation directly. You no longer need to add a remote connection or configure SSH. You can find details on [how to install WSL](/windows/wsl/install-win10) here.
 

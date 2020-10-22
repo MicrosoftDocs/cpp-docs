@@ -6,13 +6,13 @@ ms.assetid: 56c800a9-3df9-4196-87b2-81adb00e4767
 ---
 # General properties (Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux support is available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 | Property | Description |
 |--|--|

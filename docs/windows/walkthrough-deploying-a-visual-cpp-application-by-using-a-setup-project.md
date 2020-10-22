@@ -20,7 +20,7 @@ You need the following components to complete this walkthrough:
 
 Instructions for creating a setup project vary depending on which version of Visual Studio you have installed. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="=vs-2019"
+::: moniker range="=msvc-160"
 
 ### To create the project in Visual Studio 2019
 
@@ -50,7 +50,7 @@ Instructions for creating a setup project vary depending on which version of Vis
 
 ::: moniker-end
 
-::: moniker range="=vs-2017"
+::: moniker range="=msvc-150"
 
 ### To create the project in Visual Studio 2017
 
@@ -75,7 +75,7 @@ Instructions for creating a setup project vary depending on which version of Vis
 
 ::: moniker-end
 
-::: moniker range="=vs-2015"
+::: moniker range="=msvc-140"
 
 ### To create the project in Visual Studio 2015
 

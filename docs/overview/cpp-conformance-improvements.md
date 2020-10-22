@@ -8,7 +8,7 @@ ms.technology: "cpp-language"
 
 Microsoft C++ makes conformance improvements and bug fixes in every release. This article lists the improvements by major release, then by version. It also lists major bug fixes by version. To jump directly to the changes for a specific version, use the **In this article** list.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## <a name="improvements_160"></a> Conformance improvements in Visual Studio 2019 RTW (version 16.0)
 
@@ -1612,7 +1612,7 @@ void f(E e) {
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ## <a name="improvements_150"></a> Conformance improvements in Visual Studio 2017 RTW (version 15.0)
 
@@ -3638,7 +3638,7 @@ To avoid the error, remove the **`constexpr`** qualifier from the explicit insta
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ## C++ conformance improvements in Visual Studio 2015
 

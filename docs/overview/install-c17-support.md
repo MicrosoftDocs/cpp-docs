@@ -7,13 +7,13 @@ ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ---
 # Install C11 and C17 support in Visual Studio
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Support for C11 and C17 standards requires Visual Studio 2019 version 16.8 or later. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Support for C11 and C17 standards is available starting in Visual Studio 2019 version 16.8. Support requires an updated Universal C Runtime (UCRT) and the latest Windows SDK updates, to work properly with the conforming preprocessor ([`/Zc:preprocessor`](../build/reference/zc-preprocessor.md)).
 

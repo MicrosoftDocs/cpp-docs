@@ -228,7 +228,7 @@
     "dest": "vcppdocs",
     "groups": {
       "group-vc2015": {
-        "moniker_range": ">= vs-2015",
+        "moniker_range": ">= msvc-140",
         "dest": "vcppdocs-2015"
       }
     },

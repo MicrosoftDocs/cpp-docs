@@ -6,13 +6,13 @@ helpviewer_keywords: ["Clang support for C++ CMake projects"]
 ---
 # Clang/LLVM support in Visual Studio CMake projects
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Clang support is available in Visual Studio 2019.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 You can use Visual Studio with Clang to edit and debug C++ CMake projects that target Windows or Linux.
 

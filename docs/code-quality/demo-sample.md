@@ -22,7 +22,7 @@ The procedures also provide the code for the header and *.cpp* files for the sta
 
 ## Create the CppDemo solution and the CodeDefects project
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. Open Visual Studio and select **Create a new project**
 
@@ -44,7 +44,7 @@ The procedures also provide the code for the header and *.cpp* files for the sta
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 1. Open Visual Studio. On the menu bar, choose **File** > **New** > **Project**.
 
@@ -66,7 +66,7 @@ The procedures also provide the code for the header and *.cpp* files for the sta
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 1. Open Visual Studio. On the menu bar, choose **File** > **New** > **Project**.
 
@@ -197,7 +197,7 @@ The procedures also provide the code for the header and *.cpp* files for the sta
 
 ## Add the Annotations project and configure it as a static library
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. In Solution Explorer, right-click **CppDemo** to open the context menu. Choose **Add** > **New Project**.
 
@@ -213,7 +213,7 @@ The procedures also provide the code for the header and *.cpp* files for the sta
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 1. In Solution Explorer, right-click **CppDemo** to open the context menu. Choose **Add** > **New Project**.
 
@@ -231,7 +231,7 @@ The procedures also provide the code for the header and *.cpp* files for the sta
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 1. In Solution Explorer, right-click **CppDemo** to open the context menu. Choose **Add** > **New Project**.
 
@@ -322,7 +322,7 @@ The procedures also provide the code for the header and *.cpp* files for the sta
 
 The solution is now complete and should build without errors.
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 > [!NOTE]
 > In Visual Studio 2017, you may see a spurious warning `E1097 unknown attribute "no_init_all"` in the IntelliSense engine. You can safely ignore this warning.

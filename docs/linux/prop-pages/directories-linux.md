@@ -5,13 +5,13 @@ ms.assetid: 12d45b93-0a5c-455e-b12a-9b9aad9a6d6c
 ---
 # VC++ Directories (Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux support is available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 | Property | Description |
 |--|--|

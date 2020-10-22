@@ -11,7 +11,7 @@ This article describes how to install the tools and third-party software require
 
 ## Requirements
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 - For installation requirements, see [Visual Studio product family system requirements](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
@@ -19,7 +19,7 @@ This article describes how to install the tools and third-party software require
    > If you are using Windows 7 or Windows Server 2008 R2, you can develop code for Windows Desktop applications, Android Native Activity apps and libraries, and apps and code libraries for iOS, but not Windows Store or UWP apps.
 
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 - For installation requirements, see [Visual Studio product family system requirements](/visualstudio/releases/2019/system-requirements).
 

@@ -5,11 +5,11 @@ ms.date: "08/08/2020"
 ---
 # Configure a Linux CMake project in Visual Studio
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 Linux support is available in Visual Studio 2017 and later. To see the documentation for these versions, set the **Version** drop-down located above the table of contents to **Visual Studio 2017** or **Visual Studio 2019**.
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 This topic describes how to add a Linux configuration to a CMake project that targets either a remote Linux system or Windows Subsystem for Linux (WSL). It continues the series that began with [Create a Linux CMake project in Visual Studio](cmake-linux-project.md). If you are using MSBuild, instead, see [Configure a Linux MSBuild Project in Visual Studio](configure-a-linux-project.md)
 
 ## Add a Linux configuration
@@ -17,7 +17,7 @@ This topic describes how to add a Linux configuration to a CMake project that ta
 A configuration can be used to target different platforms (Windows, WSL, a remote system) with the same source code. A configuration is also used to set your compilers, pass environment variables, and customize how CMake is invoked. The *CMakeSettings.json* file specifies some or all of the properties listed in [Customize CMake settings](../build/customize-cmake-settings.md), plus additional properties that control the build settings on the remote Linux machine.
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 To change the default CMake settings in Visual Studio 2017, choose **CMake** > **Change CMake Settings** > **CMakeLists.txt** from the main menu. Or, right-click *CMakeLists.txt* in **Solution Explorer** and choose **Change CMake Settings**. Visual Studio then creates a new *CMakeSettings.json* file in your root project folder. To make changes, open the file and modify it directly. For more information, see [Customize CMake settings](../build/customize-cmake-settings.md).
 
 The default configuration for Linux-Debug in Visual Studio 2017 (and Visual Studio 2019 version 16.0) looks like this:
@@ -50,7 +50,7 @@ The default configuration for Linux-Debug in Visual Studio 2017 (and Visual Stud
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 To change the default CMake settings in Visual Studio 2019, from the main toolbar, open the **Configuration** dropdown and choose **Manage Configurations**.
 
 ![CMake Manage Configurations](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
@@ -88,7 +88,7 @@ The default Linux-Debug configuration in Visual Studio 2019 version 16.1, and la
 In Visual Studio 2019 version 16.6 or later, Ninja is the default generator for configurations targeting a remote system or WSL. For more information, see this post on the [C++ Team Blog](https://devblogs.microsoft.com/cppblog/linux-development-with-visual-studio-first-class-support-for-gdbserver-improved-build-times-with-ninja-and-updates-to-the-connection-manager/).
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 For more information about these settings, see [CMakeSettings.json reference](../build/cmakesettings-reference.md).
 
 When you do a build:
@@ -107,7 +107,7 @@ After you select a target, CMake runs automatically on the Linux system to gener
 ![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### Target Windows Subsystem for Linux
 
@@ -125,7 +125,7 @@ Press **Add Configuration** (the green '+' button) and then choose **Linux-GCC-D
 
 **Visual Studio 2019 version 16.1** When you target WSL, Visual Studio doesn't need to copy source files and maintain two synchronous copies of your build tree because the compiler on Linux has direct access to your source files in the mounted Windows file system.
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ### IntelliSense
 
