@@ -21,7 +21,7 @@ Used in profile-guided optimization to write all profile data from a running pro
 
 - **`/reset`** resets counts to zero after sweep. This behavior is the default.
 
-- **`/pid:`**_`N`_ only sweeps the specified PID.
+- **`/pid:n`** only sweeps the specified PID, where *n* is the PID number.
 
 - **`/wait`** waits for the specified PID to terminate before collecting counts.
 
@@ -45,7 +45,7 @@ The **`pgosweep`** command works on programs that were built by using the [`/GEN
 
 An alternative use for **`pgosweep`** is to retrieve profile information just for the normal operation of the application. For example, you could run **`pgosweep`** shortly after you start the application and discard that file. This command would remove profile data associated with startup costs. Then, you can run **`pgosweep`** before ending the application. Now the collected data has profile information only from the time the user could interact with the program.
 
-When you name a PGC file (by using the *pgcfile* parameter) you can use the standard format, which is *`appname!<n>.pgc`*. If you use this format, the compiler automatically finds this data in the **`/LTCG /USEPROFILE`** or **`/LTCG:PGO`** phase. If you don't use the standard format, you must use [`pgomgr`](pgomgr.md) to merge the PGC files.
+When you name a PGC file (by using the *pgcfile* parameter) you can use the standard format, which is *`appname!n.pgc`*. The *n* represents an increasing numeric value for each file. If you use this format, the compiler automatically finds this data in the **`/LTCG /USEPROFILE`** or **`/LTCG:PGO`** phase. If you don't use the standard format, you must use [`pgomgr`](pgomgr.md) to merge the PGC files.
 
 > [!NOTE]
 > You can start this tool only from a Visual Studio developer command prompt. You can't start it from a system command prompt or from File Explorer.
