@@ -1,6 +1,7 @@
 ---
 title: "_cwait"
-ms.date: "4/2/2020"
+description: "API reference for the Microsoft Visual C runtime `_cwait()` function."
+ms.date: "10/23/2020"
 api_name: ["_cwait", "_o__cwait"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -28,13 +29,13 @@ intptr_t _cwait(
 
 ### Parameters
 
-*termstat*<br/>
+*termstat*\
 Pointer to a buffer where the result code of the specified process will be stored, or **NULL**.
 
-*procHandle*<br/>
+*procHandle*\
 The handle to the process to wait on (that is, the process that has to terminate before **_cwait** can return).
 
-*action*<br/>
+*action*\
 NULL: Ignored by Windows operating system applications; for other applications: action code to perform on *procHandle*.
 
 ## Return Value
@@ -89,43 +90,45 @@ For more compatibility information, see [Compatibility](../../c-runtime-library/
 
 struct PROCESS
 {
-   int     nPid;
-   char    name[40];
+    intptr_t hProcess;
+    char    name[40];
 } process[4] = { { 0, "Ann" }, { 0, "Beth" }, { 0, "Carl" }, { 0, "Dave" } };
 
-int main( int argc, char *argv[] )
+int main(int argc, char* argv[])
 {
-   int termstat, c;
-   unsigned int number;
+    int termstat, c;
+    unsigned int number;
 
-   srand( (unsigned)time( NULL ) );    // Seed randomizer
+    srand((unsigned)time(NULL));    // Seed randomizer
 
-   // If no arguments, this is the calling process
-   if ( argc == 1 )
-   {
-      // Spawn processes in numeric order
-      for ( c = 0; c < 4; c++ ) {
-         _flushall();
-         process[c].nPid = _spawnl( _P_NOWAIT, argv[0], argv[0],
-                                    process[c].name, NULL );
-      }
+    // If no arguments, this is the calling process
+    if (argc == 1)
+    {
+        // Spawn processes in numeric order
+        for (c = 0; c < 4; c++) {
+            _flushall();
+            process[c].hProcess = _spawnl(_P_NOWAIT, argv[0], argv[0],
+                process[c].name, NULL);
+        }
 
-      // Wait for randomly specified process, and respond when done
-      c = getrandom( 0, 3 );
-      printf( "Come here, %s.\n", process[c].name );
-      _cwait( &termstat, process[c].nPid, _WAIT_CHILD );
-      printf( "Thank you, %s.\n", process[c].name );
+        // Wait for randomly specified process, and respond when done
+        c = getrandom(0, 3);
+        printf("Come here, %s.\n", process[c].name);
+        _cwait(&termstat, process[c].hProcess, _WAIT_CHILD);
+        printf("Thank you, %s.\n", process[c].name);
 
-   }
-   // If there are arguments, this must be a spawned process
-   else
-   {
-      // Delay for a period that's determined by process number
-      Sleep( (argv[1][0] - 'A' + 1) * 1000L );
-      printf( "Hi, Dad. It's %s.\n", argv[1] );
-   }
+    }
+    // If there are arguments, this must be a spawned process
+    else
+    {
+        // Delay for a period that's determined by process number
+        Sleep((argv[1][0] - 'A' + 1) * 1000L);
+        printf("Hi, Dad. It's %s.\n", argv[1]);
+    }
 }
 ```
+
+The order of the output will vary from run to run.
 
 ```Output
 Hi, Dad. It's Ann.
@@ -138,5 +141,5 @@ Hi, Dad. It's Dave.
 
 ## See also
 
-[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[Process and Environment Control](../../c-runtime-library/process-and-environment-control.md)\
+[_spawn, _wspawn Functions](../../c-runtime-library/spawn-wspawn-functions.md)
