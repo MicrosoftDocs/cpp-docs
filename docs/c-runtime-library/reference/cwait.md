@@ -30,13 +30,13 @@ intptr_t _cwait(
 ### Parameters
 
 *`termstat`*\
-Pointer to a buffer where the result code of the specified process will be stored, or **NULL**.
+Pointer to a buffer where the result code of the specified process will be stored, or **`NULL`**.
 
 *`procHandle`*\
 The handle to the process to wait on (that is, the process that has to terminate before **_cwait** can return).
 
 *`action`*\
-`NULL`: Ignored by Windows operating system applications; for other applications: action code to perform on *`procHandle`*.
+**`NULL`**: Ignored by Windows operating system applications; for other applications: action code to perform on *`procHandle`*.
 
 ## Return Value
 
@@ -45,7 +45,7 @@ When the specified process has successfully completed, returns the handle of the
 |Value|Description|
 |-----------|-----------------|
 |**`ECHILD`**|No specified process exists, *`procHandle`* is invalid, or the call to the [`GetExitCodeProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess) or [`WaitForSingleObject`](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) API failed.|
-|**`EINVAL`**|*action* is invalid.|
+|**`EINVAL`**|*`action`* is invalid.|
 
 For more information about these and other return codes, see [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
