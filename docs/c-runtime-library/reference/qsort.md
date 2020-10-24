@@ -118,5 +118,5 @@ boy deserves every favor good
 ## See also
 
 [Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)\
-[bsearch](bsearch.md)\
-[_lsearch](lsearch.md)
+[`bsearch`](bsearch.md)\
+[`_lsearch`](lsearch.md)
