@@ -1,8 +1,8 @@
 ---
 title: "How to: Create a Classic COM Component Using WRL"
-ms.date: "11/04/2016"
+description: "Use the Windows Runtime C++ Template Library (WRL) to create basic classic COM components for use in desktop apps."
+ms.date: 10/23/2020
 ms.topic: "reference"
-ms.assetid: 5efe7690-90d5-4c3c-9e53-11a14cefcb19
 ---
 # How to: Create a Classic COM Component Using WRL
 
@@ -30,7 +30,7 @@ This document shows how to use the Windows Runtime C++ Template Library to creat
 
    [!code-cpp[wrl-classic-com-component#3](../codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_3.cpp)]
 
-7. Add a **Module-Definition File (.def)** file to the project. Name the file, for example, `CalculatorComponent.def`. This file gives the linker the names of the functions to be exported.
+7. Add a **Module-Definition File (.def)** file to the project. Name the file, for example, `CalculatorComponent.def`. This file gives the linker the names of the functions to be exported. Open the **Property Pages** dialog for your project, then under **Configuration Properties** > **Linker** > **Input**, set the **Module Definition File** property to your DEF file.
 
 8. Add this code to CalculatorComponent.def:
 
@@ -43,7 +43,7 @@ This document shows how to use the Windows Runtime C++ Template Library to creat
         DllCanUnloadNow         PRIVATE
     ```
 
-9. Add runtimeobject.lib to the linker line. To learn how, see [.Lib Files as Linker Input](../../build/reference/dot-lib-files-as-linker-input.md).
+9. Add runtimeobject.lib to the linker line. To learn how, see [`.Lib` Files as Linker Input](../../build/reference/dot-lib-files-as-linker-input.md).
 
 ### To consume the COM component from a desktop app
 
