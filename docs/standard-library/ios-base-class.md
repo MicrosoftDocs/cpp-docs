@@ -483,16 +483,17 @@ See [`xalloc`](#xalloc) for a sample of how to use `iword`.
 Describes how to interact with a stream.
 
 ```cpp
-using openmode = int;
-
-static constexpr _Openmode in         = static_cast<_Openmode>(0x01);
-static constexpr _Openmode out        = static_cast<_Openmode>(0x02);
-static constexpr _Openmode ate        = static_cast<_Openmode>(0x04);
-static constexpr _Openmode app        = static_cast<_Openmode>(0x08);
-static constexpr _Openmode trunc      = static_cast<_Openmode>(0x10);
-static constexpr _Openmode _Nocreate  = static_cast<_Openmode>(0x40);
-static constexpr _Openmode _Noreplace = static_cast<_Openmode>(0x80);
-static constexpr _Openmode binary     = static_cast<_Openmode>(0x20);
+class ios_base {
+public:
+   typedef implementation-defined-bitmask-type openmode;
+   static const openmode  in;
+   static const openmode  out;
+   static const openmode  ate;
+   static const openmode  app;
+   static const openmode  trunc;
+   static const openmode  binary;
+   // ...
+};
 ```
 
 ### Remarks
