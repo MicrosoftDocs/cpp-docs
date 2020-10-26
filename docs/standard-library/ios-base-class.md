@@ -498,19 +498,16 @@ public:
 
 ### Remarks
 
-The type is a `bitmask type` that describes an object that can store the opening mode for several `iostream` objects. The distinct flag values (elements) are:
+The opening mode for several `iostream` objects. The flag values are:
 
-- `app`, to seek to the end of a stream before each insertion.
-
-- `ate`, to seek to the end of a stream when its controlling object is first created.
-
-- `binary`, to read a file as a binary stream, rather than as a text stream.
-
-- `in`, to permit extraction from a stream.
-
-- `out`, to permit insertion to a stream.
-
-- `trunc`, to delete contents of an existing file when its controlling object is created.
+| Constant | Effect  |
+|---------|---------|
+| `app` | Seek to the end of the stream before each write |
+| `ate`  | Seek to the end of the stream immediately after open |
+| `binary`| Open in binary mode. (See [fopen](fopen-wfopen.md) for a description of binary mode.)|
+| `in` |   Open for reading |
+| `out` | Open for writing |
+| `trunc` | delete the contents of the file after open |
 
 ### Example
 
