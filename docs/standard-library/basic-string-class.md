@@ -499,7 +499,7 @@ The first element of the string has an index of zero and the following elements 
 
 The member [`operator`&#91;&#93;](#op_at) is faster than the member function `at` for providing read and write access to the elements of a string.
 
-The member `operator[]` does not check whether the index passed as a parameter is valid but the member function `at` does and so should be used if the validity isn't certain. An invalid index, which is an index less that zero or greater than or equal to the size of the string, passed to the member function `at` throws an [out_of_range Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to the `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null-character when passed this index.
+The member `operator[]` doesn't check whether the index passed as a parameter is valid but the member function `at` does and so should be used if the validity isn't certain. An invalid index, which is an index less that zero or greater than or equal to the size of the string, passed to the member function `at` throws an [out_of_range Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to the `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null-character when passed this index.
 
 The reference returned may be invalidated by string reallocations or modifications for the non- **`const`** strings.
 
@@ -633,7 +633,7 @@ basic_string(
 ### Parameters
 
 *`ptr`*\
-The C-string whose characters are to be used to initialize the `string` being constructed. This value cannot be a null pointer.
+The C-string whose characters are to be used to initialize the `string` being constructed. This value can't be a null pointer.
 
 *`alloc_type`*\
 The storage allocator class for the string object being constructed.
@@ -779,7 +779,7 @@ A pointer to the C-style version of the invoking string.  The pointer value isn'
 
 ### Remarks
 
-Objects of type string belonging to the class template `basic_string<char>` are not necessarily null terminated. The null character `' \0 '` is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character. There is an automatic conversion from **`const char *`** into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **`basic_string<char>`**.
+Objects of type string belonging to the class template `basic_string<char>` aren't necessarily null terminated. The null character `' \0 '` is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character. There's an automatic conversion from **`const char *`** into strings, but the string class doesn't provide for automatic conversions from C-style strings to objects of type **`basic_string<char>`**.
 
 The returned C-style string shouldn't be modified, as this could invalidate the pointer to the string, or deleted, as the string has a limited lifetime and is owned by the class string.
 
@@ -913,7 +913,7 @@ A **`const`** random-access iterator that points at the first element of the ran
 
 ### Remarks
 
-With the return value of `cbegin`, the elements in the range cannot be modified.
+With the return value of `cbegin`, the elements in the range can't be modified.
 
 You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
@@ -1006,7 +1006,7 @@ Nothing printed above because the string str1 is empty.
 
 ## <a name="compare"></a> `basic_string::compare`
 
-Performs a case sensitive comparison with a specified string to determine if the two strings are equal or if one is lexicographically less than the other.
+Does a case-sensitive comparison with a specified string to determine if the two strings are equal or if one is lexicographically less than the other.
 
 ```cpp
 int compare(
@@ -1070,7 +1070,7 @@ A negative value if the operand string is less than the parameter string; zero i
 
 The `compare` member functions compare either all or part of the parameter and operand strings depending on which in used.
 
-The comparison performed is case sensitive.
+The comparison is case-sensitive.
 
 ### Example
 
@@ -1275,7 +1275,7 @@ typedef implementation-defined const_iterator;
 
 ### Remarks
 
-A type `const_iterator` cannot be used to modify the value of a character and is used to iterate through a string in a forward direction.
+A type `const_iterator` can't be used to modify the value of a character and is used to iterate through a string in a forward direction.
 
 ### Example
 
@@ -1295,7 +1295,7 @@ The type is a synonym for `allocator_type::const_pointer`.
 
 For type **`string`**, it's equivalent to **`char*`**.
 
-Pointers that are declared const must be initialized when they are declared. Const pointers always point to the same memory location and may point to constant or non-constant data.
+Pointers that are declared const must be initialized when they're declared. Const pointers always point to the same memory location and may point to constant or non-constant data.
 
 ### Example
 
@@ -1331,7 +1331,7 @@ typedef typename allocator_type::const_reference const_reference;
 
 ### Remarks
 
-A type `const_reference` cannot be used to modify the value of an element.
+A type `const_reference` can't be used to modify the value of an element.
 
 The type is a synonym for `allocator_type::const_reference`. For string `type`, it's equivalent to const `char&`.
 
@@ -1349,7 +1349,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 ### Remarks
 
-A type `const_reverse_iterator` cannot modify the value of a character and is used to iterate through a string in reverse.
+A type `const_reverse_iterator` can't modify the value of a character and is used to iterate through a string in reverse.
 
 ### Example
 
@@ -1562,7 +1562,7 @@ The pointer returned by `data` points at a valid range `[data(), data() + size()
 
 If you modify the contents of the string returned by the **`const`** overload of `data`, the behavior is undefined. You also get undefined behavior if the terminal null character is changed to any other value. The returned pointer may be invalidated if a non-const reference to the string is passed to a standard library function. It can also be invalidated by a call to a non-const member function. Calls to members `at`, `back`, `begin`, `end`, `front`, `rbegin`, `rend`, and `operator[]` don't invalidate the pointer.
 
-Prior to C++11, `data` didn't guarantee the returned string was null-terminated. Since C++11, `data` and `c_str` both return a null-terminated string, and are effectively the same.
+Before C++11, `data` didn't guarantee the returned string was null-terminated. Since C++11, `data` and `c_str` both return a null-terminated string, and are effectively the same.
 
 The non-const overload is new in C++17. To use it, specify the **`/std:c++17`** or **`/std:c++latest`** compiler option.
 
@@ -1726,7 +1726,7 @@ Returns a random-access iterator that addresses the location succeeding the last
 
 `end` is often used to test whether an iterator has reached the end of its string. The value returned by `end` shouldn't be dereferenced.
 
-If the return value of `end` is assigned to a `const_iterator`, the string object cannot be modified. If the return value of `end` is assigned to an `iterator`, the string object can be modified.
+If the return value of `end` is assigned to a `const_iterator`, the string object can't be modified. If the return value of `end` is assigned to an `iterator`, the string object can be modified.
 
 ### Example
 
@@ -3191,7 +3191,7 @@ The maximum number of characters a string could contain.
 
 ### Remarks
 
-A exception of type [length_error Class](../standard-library/length-error-class.md) is thrown when an operation produces a string with a length greater than the maximum size.
+An exception of type [length_error Class](../standard-library/length-error-class.md) is thrown when an operation produces a string with a length greater than the maximum size.
 
 ### Example
 
@@ -3470,7 +3470,7 @@ The first element of the string has an index of zero, and the following elements
 
 `operator[]` is faster than the member function [`at`](#at) for providing read and write access to the elements of a string.
 
-`operator[]` does not check whether the index passed as a parameter is valid, but the member function `at` does and so should be used in the validity isn't certain. An invalid index (an index less that zero or greater than or equal to the size of the string) passed to the member function `at` throws an [out_of_range Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null character when passed this index.
+`operator[]` doesn't check whether the index passed as a parameter is valid, but the member function `at` does and so should be used in the validity isn't certain. An invalid index (an index less that zero or greater than or equal to the size of the string) passed to the member function `at` throws an [out_of_range Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null character when passed this index.
 
 The reference returned may be invalidated by string reallocations or modifications for the non- **`const`** strings.
 
@@ -3637,7 +3637,7 @@ Returns a random-access iterator to the first element in a reversed string, addr
 
 `rbegin` is used with a reversed string just as [`begin`](#begin) is used with a string.
 
-If the return value of `rbegin` is assigned to a `const_reverse_iterator`, the string object cannot be modified. If the return value of `rbegin` is assigned to a `reverse_iterator`, the string object can be modified.
+If the return value of `rbegin` is assigned to a `const_reverse_iterator`, the string object can't be modified. If the return value of `rbegin` is assigned to a `reverse_iterator`, the string object can be modified.
 
 `rbegin` can be used to initialize an iteration through a string backwards.
 
@@ -3733,7 +3733,7 @@ A reverse random-access iterator that addresses the location succeeding the last
 
 `rend` is used with a reversed string just as [`end`](#end) is used with a string.
 
-If the return value of `rend` is assigned to a `const_reverse_iterator`, the string object cannot be modified. If the return value of `rend` is assigned to a `reverse_iterator`, the string object can be modified.
+If the return value of `rend` is assigned to a `const_reverse_iterator`, the string object can't be modified. If the return value of `rend` is assigned to a `reverse_iterator`, the string object can be modified.
 
 `rend` can be used to test whether a reverse iterator has reached the end of its string.
 
@@ -4678,7 +4678,7 @@ basic_string<CharType, Traits, Allocator> substr(
 An index locating the element at the position from which the copy of the string is made, with a default value of 0.
 
 *`count`*\
-The number of characters that are to be copied if they are present.
+The number of characters that are to be copied if they're present.
 
 ### Return Value
 
@@ -4743,7 +4743,7 @@ If the strings being swapped have the same allocator object, the `swap` member f
 - Throws no exceptions.
 - Invalidates no references, pointers, or iterators that designate elements in the two strings.
 
-Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
+Otherwise, it does a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
 
 ### Example
 
