@@ -8,7 +8,7 @@ ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
 ---
 # `/clr` (Common Language Runtime Compilation)
 
-Enables applications and components to use features from the common language runtime (CLR).
+Enables applications and components to use features from the common language runtime (CLR) and enables C++/CLI compilation.
 
 ## Syntax
 
@@ -21,7 +21,15 @@ One or more of the following comma-separated arguments.
 
 - none
 
-   With no options, **`/clr`** creates metadata for the application. The metadata can be consumed by other CLR applications, and enables the application to consume types and data in the metadata of other CLR components. For more information, see [Mixed (Native and Managed) Assemblies](../../dotnet/mixed-native-and-managed-assemblies.md).
+   With no options, **`/clr`** creates metadata for the component. The metadata can be consumed by other CLR applications, and enables the component to consume types and data in the metadata of other CLR components. For more information, see [Mixed (Native and Managed) Assemblies](../../dotnet/mixed-native-and-managed-assemblies.md).
+
+- **`NetCore`**
+
+   **`/clr:NetCore`** creates metadata for the component. The metadata can be consumed by other .NET Core applications, and enables the component to consume types and data in the metadata of other .NET Core components.
+
+- **`nostdlib`**
+
+   Instructs the compiler to ignore the default *`\clr`* directory. The compiler produces errors if you include multiple versions of a DLL, such as System.dll. This option lets you specify the specific framework to use during compilation.
 
 - **`pure`**
 
@@ -43,11 +51,7 @@ One or more of the following comma-separated arguments.
 
 - **`initialAppDomain`**
 
-   Enables a C++/CLI application to run on version 1 of the CLR.  An application that's compiled by using **`initialAppDomain`** shouldn't be used by an application that uses ASP.NET because it's not supported in version 1 of the CLR.
-
-- **`nostdlib`**
-
-   Instructs the compiler to ignore the default *`\clr`* directory. The compiler produces errors if you include multiple versions of a DLL, such as System.dll. This option lets you specify the specific framework to use during compilation.
+   **`initialAppDomain` is obsolete**. Enables a C++/CLI application to run on version 1 of the CLR.  An application that's compiled by using **`initialAppDomain`** shouldn't be used by an application that uses ASP.NET because it's not supported in version 1 of the CLR.
 
 ## Remarks
 
@@ -95,7 +99,7 @@ Use ildasm.exe to view metadata.
 
 1. Set the **Configuration** dropdown to **All configurations**, and set the **Platform** dropdown to **All Platforms**.
 
-1. Select the **Configuration Properties** > **Advanced** page.
+1. Select the **Configuration Properties** > **C/C++** > **General** page.
 
 1. Modify the **Common Language Runtime Support** property. Choose **OK** to save your changes.
 
