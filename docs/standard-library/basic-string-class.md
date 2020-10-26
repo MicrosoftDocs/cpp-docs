@@ -1,12 +1,12 @@
 ---
 title: "basic_string Class"
-description: "API reference for the `basic_string` class, which is the Standard C++ string class."
-ms.date: "9/10/2020"
+description: "API reference for the Standard C++ string class, `basic_string`."
+ms.date: "10/26/2020"
 f1_keywords: ["xstring/std::basic_string", "xstring/std::basic_string::allocator_type", "xstring/std::basic_string::const_iterator", "xstring/std::basic_string::const_pointer", "xstring/std::basic_string::const_reference", "xstring/std::basic_string::const_reverse_iterator", "xstring/std::basic_string::difference_type", "xstring/std::basic_string::iterator", "xstring/std::basic_string::npos", "xstring/std::basic_string::pointer", "xstring/std::basic_string::reference", "xstring/std::basic_string::reverse_iterator", "xstring/std::basic_string::size_type", "xstring/std::basic_string::traits_type", "xstring/std::basic_string::value_type", "xstring/std::basic_string::append", "xstring/std::basic_string::assign", "xstring/std::basic_string::at", "xstring/std::basic_string::back", "xstring/std::basic_string::begin", "xstring/std::basic_string::c_str", "xstring/std::basic_string::capacity", "xstring/std::basic_string::cbegin", "xstring/std::basic_string::cend", "xstring/std::basic_string::clear", "xstring/std::basic_string::compare", "xstring/std::basic_string::copy", "xstring/std::basic_string::crbegin", "xstring/std::basic_string::crend", "xstring/std::basic_string::_Copy_s", "xstring/std::basic_string::data", "xstring/std::basic_string::empty", "xstring/std::basic_string::end", "xstring/std::basic_string::erase", "xstring/std::basic_string::find", "xstring/std::basic_string::find_first_not_of", "xstring/std::basic_string::find_first_of", "xstring/std::basic_string::find_last_not_of", "xstring/std::basic_string::find_last_of", "xstring/std::basic_string::front", "xstring/std::basic_string::get_allocator", "xstring/std::basic_string::insert", "xstring/std::basic_string::length", "xstring/std::basic_string::max_size", "xstring/std::basic_string::pop_back", "xstring/std::basic_string::push_back", "xstring/std::basic_string::rbegin", "xstring/std::basic_string::rend", "xstring/std::basic_string::replace", "xstring/std::basic_string::reserve", "xstring/std::basic_string::resize", "xstring/std::basic_string::rfind", "xstring/std::basic_string::shrink_to_fit", "xstring/std::basic_string::size", "xstring/std::basic_string::substr", "xstring/std::basic_string::ends_with", "xstring/std::basic_string::starts_with", "xstring/std::basic_string::swap"]
 helpviewer_keywords: ["std::basic_string [C++]", "std::basic_string [C++], allocator_type", "std::basic_string [C++], const_iterator", "std::basic_string [C++], const_pointer", "std::basic_string [C++], const_reference", "std::basic_string [C++], const_reverse_iterator", "std::basic_string [C++], difference_type", "std::basic_string [C++], iterator", "std::basic_string [C++], npos", "std::basic_string [C++], pointer", "std::basic_string [C++], reference", "std::basic_string [C++], reverse_iterator", "std::basic_string [C++], size_type", "std::basic_string [C++], traits_type", "std::basic_string [C++], value_type", "std::basic_string [C++], append", "std::basic_string [C++], assign", "std::basic_string [C++], at", "std::basic_string [C++], back", "std::basic_string [C++], begin", "std::basic_string [C++], c_str", "std::basic_string [C++], capacity", "std::basic_string [C++], cbegin", "std::basic_string [C++], cend", "std::basic_string [C++], clear", "std::basic_string [C++], compare", "std::basic_string [C++], copy", "std::basic_string [C++], crbegin", "std::basic_string [C++], crend", "std::basic_string [C++], _Copy_s", "std::basic_string [C++], data", "std::basic_string [C++], empty", "std::basic_string [C++], end", "std::basic_string [C++], erase", "std::basic_string [C++], find", "std::basic_string [C++], find_first_not_of", "std::basic_string [C++], find_first_of", "std::basic_string [C++], find_last_not_of", "std::basic_string [C++], find_last_of", "std::basic_string [C++], front", "std::basic_string [C++], get_allocator", "std::basic_string [C++], insert", "std::basic_string [C++], length", "std::basic_string [C++], max_size", "std::basic_string [C++], pop_back", "std::basic_string [C++], push_back", "std::basic_string [C++], rbegin", "std::basic_string [C++], rend", "std::basic_string [C++], replace", "std::basic_string [C++], reserve", "std::basic_string [C++], resize", "std::basic_string [C++], rfind", "std::basic_string [C++], shrink_to_fit", "std::basic_string [C++], size", "std::basic_string [C++], starts_with", "std::basic_string [C++], ends_with","std::basic_string [C++], substr", "std::basic_string [C++], swap"]
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
 ---
-# basic_string Class
+# `basic_string` Class
 
 The sequences controlled by an object of type `basic_string` are the Standard C++ string class and are usually referred to as strings, but they shouldn't be confused with the null-terminated C-style strings used throughout the C++ Standard Library. The Standard C++ string is a container that enables the use of strings as normal types, such as comparison and concatenation operations, iterators, C++ Standard Library algorithms, and copying and assigning with class allocator managed memory. If you need to convert a Standard C++ string to a null-terminated C-style string, use the [basic_string::c_str](#c_str) member.
 
@@ -19,99 +19,99 @@ class basic_string;
 
 ### Parameters
 
-*CharType*\
-The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this class template, with the type definitions [string](../standard-library/string-typedefs.md#string) for elements of type **`char`**, [wstring](../standard-library/string-typedefs.md#wstring), for **`wchar_t`**, [u16string](../standard-library/string-typedefs.md#u16string) for **`char16_t`**, and [u32string](../standard-library/string-typedefs.md#u32string) for **`char32_t`**.
+*`CharType`*\
+The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this class template, with the type definitions [`string`](../standard-library/string-typedefs.md#string) for elements of type **`char`**, [`wstring`](../standard-library/string-typedefs.md#wstring), for **`wchar_t`**, [`u16string`](../standard-library/string-typedefs.md#u16string) for **`char16_t`**, and [`u32string`](../standard-library/string-typedefs.md#u32string) for **`char32_t`**.
 
-*Traits*\
-Various important properties of the `CharType` elements in a basic_string specialization are described by the class `Traits`. The default value is `char_traits`< `CharType`>.
+*`Traits`*\
+Various important properties of the `CharType` elements in a basic_string specialization are described by the class `Traits`. The default value is `char_traits`<`CharType`>.
 
-*Allocator*\
+*`Allocator`*\
 The type that represents the stored allocator object that encapsulates details about the string's allocation and deallocation of memory. The default value is `allocator<CharType>`.
 
 ### Constructors
 
 |Constructor|Description|
 |-|-|
-|[basic_string](#basic_string)|Constructs a string that is empty or initialized by specific characters or that is a copy of all or part of some other string object or C-string.|
+|[`basic_string`](#basic_string)|Constructs a string that is empty or initialized by specific characters or that is a copy of all or part of some other string object or C-string.|
 
 ### Typedefs
 
 |Type name|Description|
 |-|-|
-|[allocator_type](#allocator_type)|A type that represents the `allocator` class for a string object.|
-|[const_iterator](#const_iterator)|A type that provides a random-access iterator that can access and read a **`const`** element in the string.|
-|[const_pointer](#const_pointer)|A type that provides a pointer to a **`const`** element in a string.|
-|[const_reference](#const_reference)|A type that provides a reference to a **`const`** element stored in a string for reading and performing **`const`** operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a random-access iterator that can read any **`const`** element in the string.|
-|[difference_type](#difference_type)|A type that provides the difference between two iterators that refer to elements within the same string.|
-|[iterator](#iterator)|A type that provides a random-access iterator that can read or modify any element in a string.|
-|[npos](#npos)|An unsigned integral value initialized to -1 that indicates either "not found" or "all remaining characters" when a search function fails.|
-|[pointer](#pointer)|A type that provides a pointer to a character element in a string or character array.|
-|[reference](#reference)|A type that provides a reference to an element stored in a string.|
-|[reverse_iterator](#reverse_iterator)|A type that provides a random-access iterator that can read or modify an element in a reversed string.|
-|[size_type](#size_type)|An unsigned integral type for the number of elements in a string.|
-|[traits_type](#traits_type)|A type for the character traits of the elements stored in a string.|
-|[value_type](#value_type)|A type that represents the type of characters stored in a string.|
+|[`allocator_type`](#allocator_type)|A type that represents the `allocator` class for a string object.|
+|[`const_iterator`](#const_iterator)|A type that provides a random-access iterator that can access and read a **`const`** element in the string.|
+|[`const_pointer`](#const_pointer)|A type that provides a pointer to a **`const`** element in a string.|
+|[`const_reference`](#const_reference)|A type that provides a reference to a **`const`** element stored in a string for reading and performing **`const`** operations.|
+|[`const_reverse_iterator`](#const_reverse_iterator)|A type that provides a random-access iterator that can read any **`const`** element in the string.|
+|[`difference_type`](#difference_type)|A type that provides the difference between two iterators that refer to elements within the same string.|
+|[`iterator`](#iterator)|A type that provides a random-access iterator that can read or modify any element in a string.|
+|[`npos`](#npos)|An unsigned integral value initialized to -1 that indicates either "not found" or "all remaining characters" when a search function fails.|
+|[`pointer`](#pointer)|A type that provides a pointer to a character element in a string or character array.|
+|[`reference`](#reference)|A type that provides a reference to an element stored in a string.|
+|[`reverse_iterator`](#reverse_iterator)|A type that provides a random-access iterator that can read or modify an element in a reversed string.|
+|[`size_type`](#size_type)|An unsigned integral type for the number of elements in a string.|
+|[`traits_type`](#traits_type)|A type for the character traits of the elements stored in a string.|
+|[`value_type`](#value_type)|A type that represents the type of characters stored in a string.|
 
 ### Member functions
 
 |Member function|Description|
 |-|-|
-|[append](#append)|Adds characters to the end of a string.|
-|[assign](#assign)|Assigns new character values to the contents of a string.|
-|[at](#at)|Returns a reference to the element at a specified location in the string.|
-|[back](#back)||
-|[begin](#begin)|Returns an iterator addressing the first element in the string.|
-|[c_str](#c_str)|Converts the contents of a string as a C-style, null-terminated, string.|
-|[capacity](#capacity)|Returns the largest number of elements that could be stored in a string without increasing the memory allocation of the string.|
-|[cbegin](#cbegin)|Returns a const iterator addressing the first element in the string.|
-|[cend](#cend)|Returns a const iterator that addresses the location succeeding the last element in a string.|
-|[clear](#clear)|Erases all elements of a string.|
-|[compare](#compare)|Compares a string with a specified string to determine if the two strings are equal or if one is lexicographically less than the other.|
-|[copy](#copy)|Copies at most a specified number of characters from an indexed position in a source string to a target character array. Deprecated. Use [basic_string::_Copy_s](#copy_s) instead.|
-|[crbegin](#crbegin)|Returns a const iterator that addresses the first element in a reversed string.|
-|[crend](#crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed string.|
-|[_Copy_s](#copy_s)|Copies at most a specified number of characters from an indexed position in a source string to a target character array.|
-|[data](#data)|Converts the contents of a string into an array of characters.|
-|[empty](#empty)|Tests whether the string contains characters.|
-|[end](#end)|Returns an iterator that addresses the location succeeding the last element in a string.|
-|[ends_with](#ends_with)<sup>C++20</sup>|Checks whether the string ends with the specified suffix.|
-|[erase](#erase)|Removes an element or a range of elements in a string from a specified position.|
-|[find](#find)|Searches a string in a forward direction for the first occurrence of a substring that matches a specified sequence of characters.|
-|[find_first_not_of](#find_first_not_of)|Searches through a string for the first character that isn't any element of a specified string.|
-|[find_first_of](#find_first_of)|Searches through a string for the first character that matches any element of a specified string.|
-|[find_last_not_of](#find_last_not_of)|Searches through a string for the last character that isn't any element of a specified string.|
-|[find_last_of](#find_last_of)|Searches through a string for the last character that is an element of a specified string.|
-|[front](#front)|Returns a reference to the first element in a string.|
-|[get_allocator](#get_allocator)|Returns a copy of the `allocator` object used to construct the string.|
-|[insert](#insert)|Inserts an element or a number of elements or a range of elements into the string at a specified position.|
-|[length](#length)|Returns the current number of elements in a string.|
-|[max_size](#max_size)|Returns the maximum number of characters a string could contain.|
-|[pop_back](#pop_back)|Erases the last element of the string.|
-|[push_back](#push_back)|Adds an element to the end of the string.|
-|[rbegin](#rbegin)|Returns an iterator to the first element in a reversed string.|
-|[rend](#rend)|Returns an iterator that points just beyond the last element in a reversed string.|
-|[replace](#replace)|Replaces elements in a string at a specified position with specified characters or characters copied from other ranges or strings or C-strings.|
-|[reserve](#reserve)|Sets the capacity of the string to a number at least as great as a specified number.|
-|[resize](#resize)|Specifies a new size for a string, appending or erasing elements as required.|
-|[rfind](#rfind)|Searches a string in a backward direction for the first occurrence of a substring that matches a specified sequence of characters.|
-|[shrink_to_fit](#shrink_to_fit)|Discards the excess capacity of the string.|
-|[size](#size)|Returns the current number of elements in a string.|
-|[starts_with](#starts_with)<sup>C++20</sup>|Checks whether the string starts with the specified prefix.|
-|[substr](#substr)|Copies a substring of at most some number of characters from a string beginning from a specified position.|
-|[swap](#swap)|Exchange the contents of two strings.|
+|[`append`](#append)|Adds characters to the end of a string.|
+|[`assign`](#assign)|Assigns new character values to the contents of a string.|
+|[`at`](#at)|Returns a reference to the element at a specified location in the string.|
+|[`back`](#back)||
+|[`begin`](#begin)|Returns an iterator addressing the first element in the string.|
+|[`c_str`](#c_str)|Converts the contents of a string as a C-style, null-terminated, string.|
+|[`capacity`](#capacity)|Returns the largest number of elements that could be stored in a string without increasing the memory allocation of the string.|
+|[`cbegin`](#cbegin)|Returns a const iterator addressing the first element in the string.|
+|[`cend`](#cend)|Returns a const iterator that addresses the location succeeding the last element in a string.|
+|[`clear`](#clear)|Erases all elements of a string.|
+|[`compare`](#compare)|Compares a string with a specified string to determine if the two strings are equal or if one is lexicographically less than the other.|
+|[`copy`](#copy)|Copies at most a specified number of characters from an indexed position in a source string to a target character array. Deprecated. Use [`basic_string::_Copy_s`](#copy_s) instead.|
+|[`crbegin`](#crbegin)|Returns a const iterator that addresses the first element in a reversed string.|
+|[`crend`](#crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed string.|
+|[`_Copy_s`](#copy_s)|Copies at most a specified number of characters from an indexed position in a source string to a target character array.|
+|[`data`](#data)|Converts the contents of a string into an array of characters.|
+|[`empty`](#empty)|Tests whether the string contains characters.|
+|[`end`](#end)|Returns an iterator that addresses the location succeeding the last element in a string.|
+|[`ends_with`](#ends_with)<sup>C++20</sup>|Checks whether the string ends with the specified suffix.|
+|[`erase`](#erase)|Removes an element or a range of elements in a string from a specified position.|
+|[`find`](#find)|Searches a string in a forward direction for the first occurrence of a substring that matches a specified sequence of characters.|
+|[`find_first_not_of`](#find_first_not_of)|Searches through a string for the first character that isn't any element of a specified string.|
+|[`find_first_of`](#find_first_of)|Searches through a string for the first character that matches any element of a specified string.|
+|[`find_last_not_of`](#find_last_not_of)|Searches through a string for the last character that isn't any element of a specified string.|
+|[`find_last_of`](#find_last_of)|Searches through a string for the last character that is an element of a specified string.|
+|[`front`](#front)|Returns a reference to the first element in a string.|
+|[`get_allocator`](#get_allocator)|Returns a copy of the `allocator` object used to construct the string.|
+|[`insert`](#insert)|Inserts an element or a number of elements or a range of elements into the string at a specified position.|
+|[`length`](#length)|Returns the current number of elements in a string.|
+|[`max_size`](#max_size)|Returns the maximum number of characters a string could contain.|
+|[`pop_back`](#pop_back)|Erases the last element of the string.|
+|[`push_back`](#push_back)|Adds an element to the end of the string.|
+|[`rbegin`](#rbegin)|Returns an iterator to the first element in a reversed string.|
+|[`rend`](#rend)|Returns an iterator that points just beyond the last element in a reversed string.|
+|[`replace`](#replace)|Replaces elements in a string at a specified position with specified characters or characters copied from other ranges or strings or C-strings.|
+|[`reserve`](#reserve)|Sets the capacity of the string to a number at least as great as a specified number.|
+|[`resize`](#resize)|Specifies a new size for a string, appending or erasing elements as required.|
+|[`rfind`](#rfind)|Searches a string in a backward direction for the first occurrence of a substring that matches a specified sequence of characters.|
+|[`shrink_to_fit`](#shrink_to_fit)|Discards the excess capacity of the string.|
+|[`size`](#size)|Returns the current number of elements in a string.|
+|[`starts_with`](#starts_with)<sup>C++20</sup>|Checks whether the string starts with the specified prefix.|
+|[`substr`](#substr)|Copies a substring of at most some number of characters from a string beginning from a specified position.|
+|[`swap`](#swap)|Exchange the contents of two strings.|
 
 ### Operators
 
 |Operator|Description|
 |-|-|
-|[operator+=](#op_add_eq)|Appends characters to a string.|
-|[operator=](#op_eq)|Assigns new character values to the contents of a string.|
-|[operator&#91;&#93;](#op_at)|Provides a reference to the character with a specified index in a string.|
+|[`operator+=`](#op_add_eq)|Appends characters to a string.|
+|[`operator=`](#op_eq)|Assigns new character values to the contents of a string.|
+|[`operator`&#91;&#93;](#op_at)|Provides a reference to the character with a specified index in a string.|
 
 ## Remarks
 
-If a function is asked to generate a sequence longer than [max_size](#max_size) elements, the function reports a length error by throwing an object of type [length_error](../standard-library/length-error-class.md).
+If a function is asked to generate a sequence longer than [`max_size`](#max_size) elements, the function reports a length error by throwing an object of type [`length_error`](../standard-library/length-error-class.md).
 
 References, pointers, and iterators that designate elements of the controlled sequence can become invalid after any call to a function that alters the controlled sequence, or after the first call to a non- **`const`** member function.
 
@@ -121,7 +121,7 @@ References, pointers, and iterators that designate elements of the controlled se
 
 **Namespace:** std
 
-## <a name="allocator_type"></a> basic_string::allocator_type
+## <a name="allocator_type"></a> `basic_string::allocator_type`
 
 A type that represents the allocator class for a string object.
 
@@ -152,7 +152,7 @@ int main( )
 }
 ```
 
-## <a name="append"></a> basic_string::append
+## <a name="append"></a> `basic_string::append`
 
 Adds characters to the end of a string.
 
@@ -192,26 +192,26 @@ basic_string<CharType, Traits, Allocator>& append(
 
 ### Parameters
 
-*ptr*\
+*`ptr`*\
 The C-string to be appended.
 
-*str*\
+*`str`*\
 The string whose characters are to be appended.
 
-*offset*\
+*`offset`*\
 The index of the part of the source string supplying the characters to be appended.
 
-*count*\
+*`count`*\
 The number of characters to be appended, at most, from the source string.
 
-*char_value*\
+*`char_value`*\
 The character value to be appended.
 
-*first*\
+*`first`*\
 An input iterator addressing the first element in the range to be appended.
 
-*last*\
-An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the range to be appended.
+*`last`*\
+An input iterator, `const_pointer`, or `const_iterator` addressing the position of the one beyond the last element in the range to be appended.
 
 ### Return Value
 
@@ -219,7 +219,7 @@ A reference to the string object that is being appended with the characters pass
 
 ### Remarks
 
-Characters may be appended to a string using the [operator+=](#op_add_eq) or the member functions `append` or [push_back](#push_back). `operator+=` appends single-argument values while the multiple-argument `append` member function allows a specific part of a string to be specified for adding.
+Characters may be appended to a string using the [`operator+=`](#op_add_eq) or the member functions `append` or [`push_back`](#push_back). `operator+=` appends single-argument values while the multiple-argument `append` member function allows a specific part of a string to be specified for adding.
 
 ### Example
 
@@ -313,7 +313,7 @@ The string str2f is: Wide World
 The appended string str1 is: Hello World.
 ```
 
-## <a name="assign"></a> basic_string::assign
+## <a name="assign"></a> `basic_string::assign`
 
 Assigns new character values to the contents of a string.
 
@@ -353,25 +353,25 @@ basic_string<CharType, Traits, Allocator>& assign(
 
 ### Parameters
 
-*ptr*\
+*`ptr`*\
 A pointer to the characters of the C-string to be assigned to the target string.
 
-*count*\
+*`count`*\
 The number of characters to be assigned, from the source string.
 
-*str*\
+*`str`*\
 The source string whose characters are to be assigned to the target string.
 
-*char_value*\
+*`char_value`*\
 The character value to be assigned.
 
-*first*\
+*`first`*\
 An input iterator, const_pointer, or const_iterator addressing the first character in the range of the source string to be assigned to the target range.
 
-*last*\
+*`last`*\
 An input iterator, const_pointer, or const_iterator addressing the one beyond the last character in the range of the source string to be assigned to the target range.
 
-*off*\
+*`off`*\
 The position at which new characters will start to be assigned.
 
 ### Return Value
@@ -380,7 +380,7 @@ A reference to the string object that is being assigned new characters by the me
 
 ### Remarks
 
-The strings can be assigned new character values. The new value can be either a string and C-string or a single character. The [operator=](#op_eq) may be used if the new value can be described by a single parameter; otherwise the member function `assign`, which has multiple parameters, can be used to specify which part of the string is to be assigned to a target string.
+The strings can be assigned new character values. The new value can be either a string and C-string or a single character. The [`operator=`](#op_eq) may be used if the new value can be described by a single parameter; otherwise the member function `assign`, which has multiple parameters, can be used to specify which part of the string is to be assigned to a target string.
 
 ### Example
 
@@ -474,7 +474,7 @@ The string str2f is: Wide World
 The string str1 assigned a range of string str2f is: World.
 ```
 
-## <a name="at"></a> basic_string::at
+## <a name="at"></a> `basic_string::at`
 
 Provides a reference to the character with a specified index in a string.
 
@@ -486,7 +486,7 @@ reference at(size_type offset);
 
 ### Parameters
 
-*offset*\
+*`offset`*\
 The index of the position of the element to be referenced.
 
 ### Return Value
@@ -497,7 +497,7 @@ A reference to the character of the string at the position specified by the para
 
 The first element of the string has an index of zero and the following elements are indexed consecutively by the positive integers, so that a string of length *n* has an *n*th element indexed by the number *n -* 1.
 
-The member [operator&#91;&#93;](#op_at) is faster than the member function `at` for providing read and write access to the elements of a string.
+The member [`operator`&#91;&#93;](#op_at) is faster than the member function `at` for providing read and write access to the elements of a string.
 
 The member `operator[]` does not check whether the index passed as a parameter is valid but the member function `at` does and so should be used if the validity isn't certain. An invalid index, which is an index less that zero or greater than or equal to the size of the string, passed to the member function `at` throws an [out_of_range Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to the `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null-character when passed this index.
 
@@ -542,7 +542,7 @@ int main( )
 }
 ```
 
-## <a name="back"></a> basic_string::back
+## <a name="back"></a> `basic_string::back`
 
 Returns a reference to the last element in the string.
 
@@ -558,7 +558,7 @@ A reference to the last element of the string, which must be non-empty.
 
 ### Remarks
 
-## <a name="basic_string"></a> basic_string::basic_string
+## <a name="basic_string"></a> `basic_string::basic_string`
 
 Constructs a string that is empty, initialized by specific characters, or is a copy of all or part of another string object or C style (null-terminated) string.
 
@@ -632,28 +632,28 @@ basic_string(
 
 ### Parameters
 
-*ptr*\
+*`ptr`*\
 The C-string whose characters are to be used to initialize the `string` being constructed. This value cannot be a null pointer.
 
-*alloc_type*\
+*`alloc_type`*\
 The storage allocator class for the string object being constructed.
 
-*count*\
+*`count`*\
 The number of characters to be initialized.
 
-*right*\
+*`right`*\
 The string to initialize the string being constructed.
 
-*right_offset*\
+*`right_offset`*\
 The index of a character in a string that is the first to be used to initialize character values for the string being constructed.
 
-*char_value*\
+*`char_value`*\
 The character value to be copied into the string being constructed.
 
-*first*\
+*`first`*\
 An input iterator, const_pointer, or const_iterator addressing the first element in the source range to be inserted.
 
-*last*\
+*`last`*\
 An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the source range to be inserted.
 
 ### Return Value
@@ -662,7 +662,7 @@ A reference to the string object that is being constructed by the constructors.
 
 ### Remarks
 
-All constructors store an [basic_string::allocator_type](#allocator_type) and initialize the controlled sequence. The allocator object is the argument `al`, if present. For the copy constructor, it's `right.`[basic_string::get_allocator](#get_allocator)`()`. Otherwise, the allocator is `Alloc()`.
+All constructors store an [`basic_string::allocator_type`](#allocator_type) and initialize the controlled sequence. The allocator object is the argument `al`, if present. For the copy constructor, it's `right.`[`basic_string::get_allocator`](#get_allocator)`()`. Otherwise, the allocator is `Alloc()`.
 
 The controlled sequence is initialized to a copy of the operand sequence specified by the remaining operands. A constructor without an operand sequence specifies an empty initial controlled sequence. If `InputIterator` is an integer type in a template constructor, the operand sequence `first,  last` behaves the same as `(size_type) first, (value_type) last`.
 
@@ -715,7 +715,7 @@ int main( )
 }
 ```
 
-## <a name="begin"></a> basic_string::begin
+## <a name="begin"></a> `basic_string::begin`
 
 Returns an iterator addressing the first element in the string.
 
@@ -765,7 +765,7 @@ int main( ) {
 }
 ```
 
-## <a name="c_str"></a> basic_string::c_str
+## <a name="c_str"></a> `basic_string::c_str`
 
 Converts the contents of a string as a C-style, null-terminated string.
 
@@ -779,7 +779,7 @@ A pointer to the C-style version of the invoking string.  The pointer value isn'
 
 ### Remarks
 
-Objects of type string belonging to the class template basic_string\<char> are not necessarily null terminated. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character. There is an automatic conversion from **const char**<strong>\*</strong> into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **basic_string\<char>**.
+Objects of type string belonging to the class template `basic_string<char>` are not necessarily null terminated. The null character `' \0 '` is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character. There is an automatic conversion from **`const char *`** into strings, but the string class does not provide for automatic conversions from C-style strings to objects of type **`basic_string<char>`**.
 
 The returned C-style string shouldn't be modified, as this could invalidate the pointer to the string, or deleted, as the string has a limited lifetime and is owned by the class string.
 
@@ -829,7 +829,7 @@ The C-style string c_str1 is: Hello world
 The length of C-style string str1 = 11
 ```
 
-## <a name="capacity"></a> basic_string::capacity
+## <a name="capacity"></a> `basic_string::capacity`
 
 Returns the largest number of elements that could be stored in a string without increasing the memory allocation of the string.
 
@@ -843,7 +843,7 @@ The size of storage currently allocated in memory to hold the string.
 
 ### Remarks
 
-The member function returns the storage currently allocated to hold the controlled sequence, a value at least as large as [size](#size).
+The member function returns the storage currently allocated to hold the controlled sequence, a value at least as large as [`size`](#size).
 
 ### Example
 
@@ -899,7 +899,7 @@ int main( )
 }
 ```
 
-## <a name="cbegin"></a> basic_string::cbegin
+## <a name="cbegin"></a> `basic_string::cbegin`
 
 Returns a **`const`** iterator that addresses the first element in the range.
 
@@ -925,7 +925,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a> basic_string::cend
+## <a name="cend"></a> `basic_string::cend`
 
 Returns a **`const`** iterator that addresses the location just beyond the last element in a range.
 
@@ -953,7 +953,7 @@ auto i2 = Container.cend();
 
 The value returned by `cend` shouldn't be dereferenced.
 
-## <a name="clear"></a> basic_string::clear
+## <a name="clear"></a> `basic_string::clear`
 
 Erases all elements of a string.
 
@@ -1004,7 +1004,7 @@ The modified string str1 is:
 Nothing printed above because the string str1 is empty.
 ```
 
-## <a name="compare"></a> basic_string::compare
+## <a name="compare"></a> `basic_string::compare`
 
 Performs a case sensitive comparison with a specified string to determine if the two strings are equal or if one is lexicographically less than the other.
 
@@ -1041,25 +1041,25 @@ int compare(
 
 ### Parameters
 
-*str*\
+*`str`*\
 The string that is to be compared to the operand string.
 
-*position_1*\
+*`position_1`*\
 The index of the operand string at which the comparison begins.
 
-*number_1*\
+*`number_1`*\
 The maximum number of characters from the operand string to be compared.
 
-*number_2*\
+*`number_2`*\
 The maximum number of characters from the parameter string to be compared.
 
-*offset*\
+*`offset`*\
 The index of the parameter string at which the comparison begins.
 
-*count*\
+*`count`*\
 The maximum number of characters from the parameter string to be compared.
 
-*ptr*\
+*`ptr`*\
 The C-string to be compared to the operand string.
 
 ### Return Value
@@ -1265,7 +1265,7 @@ The 3 characters from position 2 of the operand string are equal to
 the first 3 characters of the parameter C-string.
 ```
 
-## <a name="const_iterator"></a> basic_string::const_iterator
+## <a name="const_iterator"></a> `basic_string::const_iterator`
 
 A type that provides a random-access iterator that can access and read a **`const`** element in the string.
 
@@ -1279,9 +1279,9 @@ A type `const_iterator` cannot be used to modify the value of a character and is
 
 ### Example
 
-See the example for [begin](#begin) for an example of how to declare and use `const_iterator`.
+See the example for [`begin`](#begin) for an example of how to declare and use `const_iterator`.
 
-## <a name="const_pointer"></a> basic_string::const_pointer
+## <a name="const_pointer"></a> `basic_string::const_pointer`
 
 A type that provides a pointer to a **`const`** element in a string.
 
@@ -1293,9 +1293,9 @@ typedef typename allocator_type::const_pointer const_pointer;
 
 The type is a synonym for `allocator_type::const_pointer`.
 
-For type `string`, it's equivalent to **`char*`**.
+For type **`string`**, it's equivalent to **`char*`**.
 
-Pointers that are declared const must be initialized when they are declared. Const pointers always point to the same memory location and may point to constant or nonconstant data.
+Pointers that are declared const must be initialized when they are declared. Const pointers always point to the same memory location and may point to constant or non-constant data.
 
 ### Example
 
@@ -1321,7 +1321,7 @@ The string pstr1a is: In Here.
 The C-string cstr1c is: Out There.
 ```
 
-## <a name="const_reference"></a> basic_string::const_reference
+## <a name="const_reference"></a> `basic_string::const_reference`
 
 A type that provides a reference to a **`const`** element stored in a string for reading and performing **`const`** operations.
 
@@ -1337,9 +1337,9 @@ The type is a synonym for `allocator_type::const_reference`. For string `type`, 
 
 ### Example
 
-See the example for [at](#at) for an example of how to declare and use `const_reference`.
+See the example for [`at`](#at) for an example of how to declare and use `const_reference`.
 
-## <a name="const_reverse_iterator"></a> basic_string::const_reverse_iterator
+## <a name="const_reverse_iterator"></a> `basic_string::const_reverse_iterator`
 
 A type that provides a random-access iterator that can read any **`const`** element in the string.
 
@@ -1353,13 +1353,13 @@ A type `const_reverse_iterator` cannot modify the value of a character and is us
 
 ### Example
 
-See the example for [rbegin](#rbegin) for an example of how to declare and use `const_reverse_iterator`.
+See the example for [`rbegin`](#rbegin) for an example of how to declare and use `const_reverse_iterator`.
 
-## <a name="copy"></a> basic_string::copy
+## <a name="copy"></a> `basic_string::copy`
 
 Copies at most a specified number of characters from an indexed position in a source string to a target character array.
 
-This method is potentially unsafe, as it relies on the caller to check that the passed values are correct. Consider using [basic_string::_Copy_s](#copy_s) instead.
+This method is potentially unsafe, as it relies on the caller to check that the passed values are correct. Consider using [`basic_string::_Copy_s`](#copy_s) instead.
 
 ```cpp
 size_type copy(
@@ -1370,13 +1370,13 @@ size_type copy(
 
 ### Parameters
 
-*ptr*\
+*`ptr`*\
 The target character array to which the elements are to be copied.
 
-*count*
+*`count`*
 The number of characters to be copied, at most, from the source string.
 
-*offset*\
+*`offset`*\
 The beginning position in the source string from which copies are to be made.
 
 ### Return Value
@@ -1436,7 +1436,7 @@ The number of copied characters in array2 is: 5
 The copied characters array2 is: World
 ```
 
-## <a name="crbegin"></a> basic_string::crbegin
+## <a name="crbegin"></a> `basic_string::crbegin`
 
 Returns a const iterator that addresses the first element in a reversed string.
 
@@ -1448,9 +1448,9 @@ const_reverse_iterator crbegin() const;
 
 A reverse iterator that points just beyond the end of the string. The position designates the beginning of the reverse string.
 
-## <a name="crend"></a> basic_string::crend
+## <a name="crend"></a> `basic_string::crend`
 
-Returns a const iterator that addresses the location succeeding the last element in a reversed string.
+Returns a `const` iterator that addresses the location succeeding the last element in a reversed string.
 
 ```cpp
 const_reverse_iterator crend() const;
@@ -1458,11 +1458,11 @@ const_reverse_iterator crend() const;
 
 ### Return Value
 
-A const reverse iterator that addresses the location succeeding the last element in a reversed string (the location that had preceded the first element in the unreversed string).
+A `const` reverse iterator that addresses the location succeeding the last element in a reversed string (the location that had preceded the first element in the unreversed string).
 
 ### Remarks
 
-## <a name="copy_s"></a> basic_string::_Copy_s
+## <a name="copy_s"></a> `basic_string::_Copy_s`
 
 Copies at most a specified number of characters from an indexed position in a source string to a target character array.
 
@@ -1476,16 +1476,16 @@ size_type _Copy_s(
 
 ### Parameters
 
-*dest*\
+*`dest`*\
 The target character array to which the elements are to be copied.
 
-*dest_size*\
+*`dest_size`*\
 The size of *dest*.
 
-*count*
+*`count`*
 The number of characters to be copied, at most, from the source string.
 
-*offset*\
+*`offset`*\
 The beginning position in the source string from which copies are to be made.
 
 ### Return Value
@@ -1543,7 +1543,7 @@ The number of copied characters in array2 is: 5
 The copied characters array2 is: World
 ```
 
-## <a name="data"></a> basic_string::data
+## <a name="data"></a> `basic_string::data`
 
 Converts the contents of a string into a null-terminated array of characters.
 
@@ -1564,7 +1564,7 @@ If you modify the contents of the string returned by the **`const`** overload of
 
 Prior to C++11, `data` didn't guarantee the returned string was null-terminated. Since C++11, `data` and `c_str` both return a null-terminated string, and are effectively the same.
 
-The non-const overload is new in C++17. To use it, specify the **/std:c++17** or **/std:c++latest** compiler option.
+The non-const overload is new in C++17. To use it, specify the **`/std:c++17`** or **`/std:c++latest`** compiler option.
 
 ### Example
 
@@ -1612,7 +1612,7 @@ The C-style string c_str1 is: Hello world
 The length of C-style string str1 = 11
 ```
 
-## <a name="difference_type"></a> basic_string::difference_type
+## <a name="difference_type"></a> `basic_string::difference_type`
 
 A type that provides the difference between two iterators that refer to elements within the same string.
 
@@ -1660,7 +1660,7 @@ The last character i is at position: 8.
 The difference is: 6.
 ```
 
-## <a name="empty"></a> basic_string::empty
+## <a name="empty"></a> `basic_string::empty`
 
 Tests whether the string contains characters or not.
 
@@ -1708,7 +1708,7 @@ int main() {
 }
 ```
 
-## <a name="end"></a> basic_string::end
+## <a name="end"></a> `basic_string::end`
 
 Returns an iterator that addresses the location succeeding the last element in a string.
 
@@ -1781,7 +1781,7 @@ The modified string str1 is now: No way ouT.
 The string str2 is empty.
 ```
 
-## <a name="ends_with"></a> basic_string::ends_with
+## <a name="ends_with"></a> `basic_string::ends_with`
 
 Check whether the string ends with the specified suffix.
 
@@ -1793,14 +1793,14 @@ bool ends_with(const basic_string_view sv) const noexcept;
 
 ### Parameters
 
-*c*\
+*`c`*\
 The single character suffix to look for.
 
-*sv*\
+*`sv`*\
 A string view containing the suffix to look for.\
 You can pass a `std::basic_string`, which converts to a string view.
 
-*x*\
+*`x`*\
 Null-terminated character string containing the suffix to look for.
 
 ### Return Value
@@ -1809,9 +1809,9 @@ Null-terminated character string containing the suffix to look for.
 
 ### Remarks
 
-`ends_with()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+`ends_with()` is new in C++20. To use it, specify the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-See [starts_with](#starts_with) to check if a string starts with the specified prefix.
+See [`starts_with`](#starts_with) to check if a string starts with the specified prefix.
 
 ### Example
 
@@ -1841,7 +1841,7 @@ false
 true
 ```
 
-## <a name="erase"></a> basic_string::erase
+## <a name="erase"></a> `basic_string::erase`
 
 Removes an element or a range of elements in a string from a specified position.
 
@@ -1860,20 +1860,20 @@ basic_string<CharType, Traits, Allocator>& erase(
 
 ### Parameters
 
-*first*\
+*`first`*\
 An iterator addressing the position of the first element in the range to be erased.
 
-*last*\
+*`last`*\
 An iterator addressing the position one past the last element in the range to be erased.
 
-*iter*\
+*`iter`*\
 An iterator addressing the position of the element in the string to be erased.
 
-*offset*\
+*`offset`*\
 The index of the first character in the string to be removed.
 
-*count*\
-The number of elements that will be removed if there are as many in the range of the string beginning with *offset*.
+*`count`*\
+The number of elements that will be removed if there are as many in the range of the string beginning with *`offset`*.
 
 ### Return Value
 
@@ -1881,7 +1881,7 @@ For the first two member functions, an iterator addressing the first character a
 
 ### Remarks
 
-The third member function returns **\*this**.
+The third member function returns `*this`.
 
 ### Example
 
@@ -1944,7 +1944,7 @@ The original string object str3 is: Hello computer.
 The modified string object str3m is: Hello .
 ```
 
-## <a name="find"></a> basic_string::find
+## <a name="find"></a> `basic_string::find`
 
 Searches a string in a forward direction for the first occurrence of a substring that matches a specified sequence of characters.
 
@@ -1969,19 +1969,19 @@ size_type find(
 
 ### Parameters
 
-*char_value*\
+*`char_value`*\
 The character value for which the member function is to search.
 
-*offset*\
+*`offset`*\
 Index of the position at which the search is to begin.
 
-*ptr*\
+*`ptr`*\
 The C-string for which the member function is to search.
 
-*count*\
+*`count`*\
 The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*\
+*`str`*\
 The string for which the member function is to search.
 
 ### Return Value
@@ -2119,7 +2119,7 @@ the 5th position in str4 is: 25
 The index of the 1st element of 'clear' in str4 is: 0
 ```
 
-## <a name="find_first_not_of"></a> basic_string::find_first_not_of
+## <a name="find_first_not_of"></a> `basic_string::find_first_not_of`
 
 Searches through a string for the first character that isn't an element of a specified string.
 
@@ -2144,19 +2144,19 @@ size_type find_first_not_of(
 
 ### Parameters
 
-*char_value*\
+*`char_value`*\
 The character value for which the member function is to search.
 
-*offset*\
+*`offset`*\
 Index of the position at which the search is to begin.
 
-*ptr*\
+*`ptr`*\
 The C-string for which the member function is to search.
 
-*count*\
+*`count`*\
 The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*\
+*`str`*\
 The string for which the member function is to search.
 
 ### Return Value
@@ -2307,7 +2307,7 @@ The index of the 1st non occurrence of an element of '12' in str4 after
 the 0th position is: 2
 ```
 
-## <a name="find_first_of"></a> basic_string::find_first_of
+## <a name="find_first_of"></a> `basic_string::find_first_of`
 
 Searches through a string for the first character that matches any element of a specified string.
 
@@ -2332,19 +2332,19 @@ size_type find_first_of(
 
 ### Parameters
 
-*char_value*\
+*`char_value`*\
 The character value for which the member function is to search.
 
-*offset*\
+*`offset`*\
 Index of the position at which the search is to begin.
 
-*ptr*\
+*`ptr`*\
 The C-string for which the member function is to search.
 
-*count*\
+*`count`*\
 The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*\
+*`str`*\
 The string for which the member function is to search.
 
 ### Return Value
@@ -2494,7 +2494,7 @@ The index of the 1st occurrence of an element of 'a2' in str4 after
 the 0th position is: 1
 ```
 
-## <a name="find_last_not_of"></a> basic_string::find_last_not_of
+## <a name="find_last_not_of"></a> `basic_string::find_last_not_of`
 
 Searches through a string for the last character that isn't any element of a specified string.
 
@@ -2519,19 +2519,19 @@ size_type find_last_not_of(
 
 ### Parameters
 
-*char_value*\
+*`char_value`*\
 The character value for which the member function is to search.
 
-*offset*\
+*`offset`*\
 Index of the position at which the search is to finish.
 
-*ptr*\
+*`ptr`*\
 The C-string for which the member function is to search.
 
-*count*\
+*`count`*\
 The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*\
+*`str`*\
 The string for which the member function is to search.
 
 ### Return Value
@@ -2683,7 +2683,7 @@ The index of the last occurrence of an element not in '12'
 in str4 before the end position is: 10
 ```
 
-## <a name="find_last_of"></a> basic_string::find_last_of
+## <a name="find_last_of"></a> `basic_string::find_last_of`
 
 Searches through a string for the last character that matches any element of a specified string.
 
@@ -2708,19 +2708,19 @@ size_type find_last_of(
 
 ### Parameters
 
-*char_value*\
+*`char_value`*\
 The character value for which the member function is to search.
 
-*offset*\
+*`offset`*\
 Index of the position at which the search is to finish.
 
-*ptr*\
+*`ptr`*\
 The C-string for which the member function is to search.
 
-*count*\
+*`count`*\
 The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*\
+*`str`*\
 The string for which the member function is to search.
 
 ### Return Value
@@ -2857,7 +2857,7 @@ The index of the last occurrence of an element of 'a2' in str4 before
 the 0th position is: 9
 ```
 
-## <a name="front"></a> basic_string::front
+## <a name="front"></a> `basic_string::front`
 
 Returns a reference to the first element in a string.
 
@@ -2873,7 +2873,7 @@ A reference to the first element of the string, which must be non-empty.
 
 ### Remarks
 
-## <a name="get_allocator"></a> basic_string::get_allocator
+## <a name="get_allocator"></a> `basic_string::get_allocator`
 
 Returns a copy of the allocator object used to construct the string.
 
@@ -2916,7 +2916,7 @@ int main( )
 }
 ```
 
-## <a name="insert"></a> basic_string::insert
+## <a name="insert"></a> `basic_string::insert`
 
 Inserts an element or a number of elements or a range of elements into the string at a specified position.
 
@@ -2975,32 +2975,32 @@ void insert(
 
 ### Parameters
 
-*position*\
+*`position`*\
 The index of the position behind the point of insertion the new characters.
 
-*ptr*\
+*`ptr`*\
 The C-string to be wholly or partly inserted into the string.
 
-*count*\
+*`count`*\
 The number of characters to be inserted.
 
-*str*\
+*`str`*\
 The string to be wholly or partly inserted into the target string.
 
-*offset*\
+*`offset`*\
 The index of the part of the source string supplying the characters to be appended.
 
-*char_value*\
+*`char_value`*\
 The character value of the elements to be inserted.
 
-*iter*\
+*`iter`*\
 An iterator addressing the position behind which a character is to be inserted.
 
-*first*\
-An input iterator, const_pointer, or const_iterator addressing the first element in the source range to be inserted.
+*`first`*\
+An input iterator, `const_pointer`, or `const_iterator` addressing the first element in the source range to be inserted.
 
-*last*\
-An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the source range to be inserted.
+*`last`*\
+An input iterator, `const_pointer`, or `const_iterator` addressing the position of the one beyond the last element in the source range to be inserted.
 
 ### Return Value
 
@@ -3095,7 +3095,7 @@ The string with a character inserted from a range is: ABCDefgHIJ
 The string with a character inserted from a range is: ABCDeeeHIJ
 ```
 
-## <a name="iterator"></a> basic_string::iterator
+## <a name="iterator"></a> `basic_string::iterator`
 
 A type that provides a random-access iterator that can access and read a **`const`** element in the string.
 
@@ -3109,9 +3109,9 @@ A type `iterator` can be used to modify the value of a character and is used to 
 
 ### Example
 
-See the example for [begin](#begin) for an example of how to declare and use `iterator`.
+See the example for [`begin`](#begin) for an example of how to declare and use `iterator`.
 
-## <a name="length"></a> basic_string::length
+## <a name="length"></a> `basic_string::length`
 
 Returns the current number of elements in a string.
 
@@ -3121,7 +3121,7 @@ size_type length() const;
 
 ### Remarks
 
-The member function is the same as [size](#size).
+The member function is the same as [`size`](#size).
 
 ### Example
 
@@ -3177,7 +3177,7 @@ int main( )
 }
 ```
 
-## <a name="max_size"></a> basic_string::max_size
+## <a name="max_size"></a> `basic_string::max_size`
 
 Returns the maximum number of characters a string could contain.
 
@@ -3247,7 +3247,7 @@ int main( )
 }
 ```
 
-## <a name="npos"></a> basic_string::npos
+## <a name="npos"></a> `basic_string::npos`
 
 An unsigned integral value initialized to -1 that indicates either "not found" or "all remaining characters" when a search function fails.
 
@@ -3257,13 +3257,13 @@ static const size_type npos = -1;
 
 ### Remarks
 
-When the return value is to be checked for the `npos` value, it might not work unless the return value is of type [size_type](#size_type) and not either **`int`** or **`unsigned`**.
+When the return value is to be checked for the `npos` value, it might not work unless the return value is of type [`size_type`](#size_type) and not either **`int`** or **`unsigned`**.
 
 ### Example
 
-See the example for [find](#find) for an example of how to declare and use `npos`.
+See the example for [`find`](#find) for an example of how to declare and use `npos`.
 
-## <a name="op_add_eq"></a> basic_string::operator+=
+## <a name="op_add_eq"></a> `basic_string::operator+=`
 
 Appends characters to a string.
 
@@ -3280,13 +3280,13 @@ basic_string<CharType, Traits, Allocator>& operator+=(
 
 ### Parameters
 
-*char_value*\
+*`char_value`*\
 The character to be appended.
 
-*ptr*\
+*`ptr`*\
 The characters of the C-string to be appended.
 
-*right*\
+*`right`*\
 The characters of the string to be appended.
 
 ### Return Value
@@ -3295,7 +3295,7 @@ A reference to the string object that is being appended with the characters pass
 
 ### Remarks
 
-Characters may be appended to a string using the `operator+=` or the member functions [append](#append) or [push_back](#push_back). The `operator+=` appends single-argument values while the multiple argument append member function allows a specific part of a string to be specified for adding.
+Characters may be appended to a string using the `operator+=` or the member functions [`append`](#append) or [`push_back`](#push_back). The `operator+=` appends single-argument values while the multiple argument append member function allows a specific part of a string to be specified for adding.
 
 ### Example
 
@@ -3352,7 +3352,7 @@ The appended string str1d is: Hello Wide .
 The doubly appended strig str1 is: Hello Wide World.
 ```
 
-## <a name="op_eq"></a> basic_string::operator=
+## <a name="op_eq"></a> `basic_string::operator=`
 
 Assigns new character values to the contents of a string.
 
@@ -3372,13 +3372,13 @@ basic_string<CharType, Traits, Allocator>& operator=(
 
 ### Parameters
 
-*char_value*\
+*`char_value`*\
 The character value to be assigned.
 
-*ptr*\
+*`ptr`*\
 A pointer to the characters of the C-string to be assigned to the target string.
 
-*right*\
+*`right`*\
 The source string whose characters are to be assigned to the target string.
 
 ### Return Value
@@ -3387,7 +3387,7 @@ A reference to the string object that is being assigned new characters by the me
 
 ### Remarks
 
-The strings may be assigned new character values. The new value may be either a string and C-string or a single character. The `operator=` may be used if the new value can be described by a single parameter, otherwise the member function [assign](#assign), which has multiple parameters, may be used to specify which part of the string is to be assigned to a target string.
+The strings may be assigned new character values. The new value may be either a string and C-string or a single character. The `operator=` may be used if the new value can be described by a single parameter, otherwise the member function [`assign`](#assign), which has multiple parameters, may be used to specify which part of the string is to be assigned to a target string.
 
 ### Example
 
@@ -3446,7 +3446,7 @@ The string str3c is: World.
 The string str1 reassigned with string str3c is: World.
 ```
 
-## <a name="op_at"></a> basic_string::operator[]
+## <a name="op_at"></a> `basic_string::operator[]`
 
 Provides a reference to the character with a specified index in a string.
 
@@ -3457,7 +3457,7 @@ reference operator[](size_type offset);
 
 ### Parameters
 
-*offset*\
+*`offset`*\
 The index of the position of the element to be referenced.
 
 ### Return Value
@@ -3468,7 +3468,7 @@ A reference to the character of the string at the position specified by the para
 
 The first element of the string has an index of zero, and the following elements are indexed consecutively by the positive integers, so that a string of length *n* has an *n*th element indexed by the number *n* - 1.
 
-`operator[]` is faster than the member function [at](#at) for providing read and write access to the elements of a string.
+`operator[]` is faster than the member function [`at`](#at) for providing read and write access to the elements of a string.
 
 `operator[]` does not check whether the index passed as a parameter is valid, but the member function `at` does and so should be used in the validity isn't certain. An invalid index (an index less that zero or greater than or equal to the size of the string) passed to the member function `at` throws an [out_of_range Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null character when passed this index.
 
@@ -3515,7 +3515,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a> basic_string::pointer
+## <a name="pointer"></a> `basic_string::pointer`
 
 A type that provides a pointer to a character element in a string or character array.
 
@@ -3527,7 +3527,7 @@ typedef typename allocator_type::pointer pointer;
 
 The type is a synonym for `allocator_type::pointer`.
 
-For type `string`, it's equivalent to **`char`**<strong>\*</strong>.
+For type `string`, it's equivalent to `char *`.
 
 ### Example
 
@@ -3552,7 +3552,7 @@ The string pstr1a is: In Here.
 The C-string cstr1b is: Out There.
 ```
 
-## <a name="pop_back"></a> basic_string::pop_back
+## <a name="pop_back"></a> `basic_string::pop_back`
 
 Erases the last element of the string.
 
@@ -3564,7 +3564,7 @@ void pop_back();
 
 This member function effectively calls `erase(size() - 1)` to erase the last element of the sequence, which must be non-empty.
 
-## <a name="push_back"></a> basic_string::push_back
+## <a name="push_back"></a> `basic_string::push_back`
 
 Adds an element to the end of the string.
 
@@ -3574,12 +3574,12 @@ void push_back(value_type char_value);
 
 ### Parameters
 
-*char_value*\
+*`char_value`*\
 The character to be added to the end of the string.
 
 ### Remarks
 
-The member function effectively calls [insert](#insert)( [end](#end), *char_value* ).
+The member function effectively calls [`insert`](#insert)( [`end`](#end), *char_value* ).
 
 ### Example
 
@@ -3619,7 +3619,7 @@ The last character-letter of the modified str1 is now: c
 The modified string str1 is: abc
 ```
 
-## <a name="rbegin"></a> basic_string::rbegin
+## <a name="rbegin"></a> `basic_string::rbegin`
 
 Returns an iterator to the first element in a reversed string.
 
@@ -3635,7 +3635,7 @@ Returns a random-access iterator to the first element in a reversed string, addr
 
 ### Remarks
 
-`rbegin` is used with a reversed string just as [begin](#begin) is used with a string.
+`rbegin` is used with a reversed string just as [`begin`](#begin) is used with a string.
 
 If the return value of `rbegin` is assigned to a `const_reverse_iterator`, the string object cannot be modified. If the return value of `rbegin` is assigned to a `reverse_iterator`, the string object can be modified.
 
@@ -3666,7 +3666,7 @@ int main( )
    cout << endl;
 
    // The dereferenced iterator can be used to modify a character
-*str1_rIter = 'A';
+   *str1_rIter = 'A';
    cout << "The first character-letter of the modified str1 is now: "
         << *str1_rIter << endl;
    cout << "The full modified reversed string str1 is now:\n ";
@@ -3695,7 +3695,7 @@ AblE was I ere I saw elbA
 The string str2 is empty.
 ```
 
-## <a name="reference"></a> basic_string::reference
+## <a name="reference"></a> `basic_string::reference`
 
 A type that provides a reference to an element stored in a string.
 
@@ -3713,9 +3713,9 @@ For type `string`, it's equivalent to `chr&`.
 
 ### Example
 
-See the example for [at](#at) for an example of how to declare and use `reference`.
+See the example for [`at`](#at) for an example of how to declare and use `reference`.
 
-## <a name="rend"></a> basic_string::rend
+## <a name="rend"></a> `basic_string::rend`
 
 Returns an iterator that addresses the location succeeding the last element in a reversed string.
 
@@ -3731,7 +3731,7 @@ A reverse random-access iterator that addresses the location succeeding the last
 
 ### Remarks
 
-`rend` is used with a reversed string just as [end](#end) is used with a string.
+`rend` is used with a reversed string just as [`end`](#end) is used with a string.
 
 If the return value of `rend` is assigned to a `const_reverse_iterator`, the string object cannot be modified. If the return value of `rend` is assigned to a `reverse_iterator`, the string object can be modified.
 
@@ -3793,7 +3793,7 @@ ablE was I ere I saw elbo
 The string str2 is empty.
 ```
 
-## <a name="replace"></a> basic_string::replace
+## <a name="replace"></a> `basic_string::replace`
 
 Replaces elements in a string at a specified position with specified characters or characters copied from other ranges or strings or C-strings.
 
@@ -3871,40 +3871,40 @@ basic_string<CharType, Traits, Allocator>& replace(
 
 ### Parameters
 
-*str*\
+*`str`*\
 The string that is to be a source of characters for the operand string.
 
-*position_1*\
+*`position_1`*\
 The index of the operand string at which the replacement begins.
 
-*number_1*\
+*`number_1`*\
 The maximum number of characters to be replaced in the operand string.
 
-*position_2*\
+*`position_2`*\
 The index of the parameter string at which the copying begins.
 
-*number_2*\
+*`number_2`*\
 The maximum number of characters to be used from the parameter C-string.
 
-*ptr*\
+*`ptr`*\
 The C-string that is to be a source of characters for the operand string.
 
-*char_value*\
+*`char_value`*\
 The character to be copied into the operand string.
 
-*first0*\
+*`first0`*\
 An iterator addressing the first character to be removed in the operand string.
 
-*last0*\
+*`last0`*\
 An iterator addressing the last character to be removed in the operand string.
 
-*first*\
+*`first`*\
 An iterator, const_pointer, or const_iterator addressing the first character to be copied in the parameter string.
 
-*last*\
+*`last`*\
 An iterator, const_pointer, or const_iterator addressing the last character to be copied in the parameter string.
 
-*count*\
+*`count`*\
 The number of times *char_value* is copied into the operand string.
 
 ### Return Value
@@ -4090,7 +4090,7 @@ The result of s7o.replace (IterF3 ,IterL3 ,IterF4 ,IterL4)
 is the string: OPPOOOO.
 ```
 
-## <a name="reserve"></a> basic_string::reserve
+## <a name="reserve"></a> `basic_string::reserve`
 
 Sets the capacity of the string to a number at least as great as a specified number.
 
@@ -4100,7 +4100,7 @@ void reserve(size_type count = 0);
 
 ### Parameters
 
-*count*\
+*`count`*\
 The number of characters for which memory is being reserved.
 
 ### Remarks
@@ -4180,7 +4180,7 @@ The current size of string str1 is: 11.
 The reduced capacity of string str1 is: 47.
 ```
 
-## <a name="resize"></a> basic_string::resize
+## <a name="resize"></a> `basic_string::resize`
 
 Specifies a new size for a string, appending or erasing elements as required.
 
@@ -4195,10 +4195,10 @@ void resize(
 
 ### Parameters
 
-*count*\
+*`count`*\
 The new size of the string.
 
-*char_value*\
+*`char_value`*\
 The value that appended characters are initialized with if additional elements are required.
 
 ### Remarks
@@ -4290,7 +4290,7 @@ The current size of downsized string str1 is: 5.
 The capacity of downsized string str1 is: 47.
 ```
 
-## <a name="reverse_iterator"></a> basic_string::reverse_iterator
+## <a name="reverse_iterator"></a> `basic_string::reverse_iterator`
 
 A type that provides a reference to an element stored in a string.
 
@@ -4304,9 +4304,9 @@ A type `reverse_iterator` can be used to modify the value of a character and is 
 
 ### Example
 
-See the example for [rbegin](#rbegin) for an example of how to declare and use `reverse_iterator`.
+See the example for [`rbegin`](#rbegin) for an example of how to declare and use `reverse_iterator`.
 
-## <a name="rfind"></a> basic_string::rfind
+## <a name="rfind"></a> `basic_string::rfind`
 
 Searches a string in a backward direction for the first occurrence of a substring that matches a specified sequence of characters.
 
@@ -4331,19 +4331,19 @@ size_type rfind(
 
 ### Parameters
 
-*char_value*\
+*`char_value`*\
 The character value for which the member function is to search.
 
-*offset*\
+*`offset`*\
 Index of the position at which the search is to begin.
 
-*ptr*\
+*`ptr`*\
 The C-string for which the member function is to search.
 
-*count*\
+*`count`*\
 The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*\
+*`str`*\
 The string for which the member function is to search.
 
 ### Return Value
@@ -4481,7 +4481,7 @@ The substring 'clear' was not found in str4 before the 15th position.
 The index of the 1st element of 'clear' in str4 is: 17
 ```
 
-## <a name="shrink_to_fit"></a> basic_string::shrink_to_fit
+## <a name="shrink_to_fit"></a> `basic_string::shrink_to_fit`
 
 Discards the excess capacity of the string.
 
@@ -4493,7 +4493,7 @@ void shrink_to_fit();
 
 This member function eliminates any unneeded storage in the container.
 
-## <a name="size"></a> basic_string::size
+## <a name="size"></a> `basic_string::size`
 
 Returns the current number of elements in a string.
 
@@ -4559,7 +4559,7 @@ int main( )
 }
 ```
 
-## <a name="size_type"></a> basic_string::size_type
+## <a name="size_type"></a> `basic_string::size_type`
 
 An unsigned integer type that can represent the number of elements and indices in a string.
 
@@ -4602,7 +4602,7 @@ The current size of string str1 is: 11.
 The capacity of string str1 is: 15.
 ```
 
-## <a name="starts_with"></a> basic_string::starts_with
+## <a name="starts_with"></a> `basic_string::starts_with`
 
 Check whether the string starts with the specified prefix.
 
@@ -4614,14 +4614,14 @@ bool starts_with(const basic_string_view sv) const noexcept;
 
 ### Parameters
 
-*c*\
+*`c`*\
 The single character prefix to look for.
 
-*sv*\
+*`sv`*\
 A string view containing the prefix to look for.\
 You can pass a `std::basic_string`, which converts to a string view.
 
-*x*\
+*`x`*\
 Null-terminated character string containing the prefix to look for.
 
 ### Return Value
@@ -4630,9 +4630,9 @@ Null-terminated character string containing the prefix to look for.
 
 ### Remarks
 
-`starts_with()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+`starts_with()` is new in C++20. To use it, specify the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
-See [ends_with](#ends_with) to see if a string ends with the specified suffix.
+See [`ends_with`](#ends_with) to see if a string ends with the specified suffix.
 
 ### Example
 
@@ -4662,7 +4662,7 @@ false
 true
 ```
 
-## <a name="substr"></a> basic_string::substr
+## <a name="substr"></a> `basic_string::substr`
 
 Copies a substring of at most some number of characters from a string beginning from a specified position.
 
@@ -4674,10 +4674,10 @@ basic_string<CharType, Traits, Allocator> substr(
 
 ### Parameters
 
-*offset*\
+*`offset`*\
 An index locating the element at the position from which the copy of the string is made, with a default value of 0.
 
-*count*\
+*`count`*\
 The number of characters that are to be copied if they are present.
 
 ### Return Value
@@ -4721,7 +4721,7 @@ Heterological paradoxes are persistent.
 which is the entire original string.
 ```
 
-## <a name="swap"></a> basic_string::swap
+## <a name="swap"></a> `basic_string::swap`
 
 Exchange the contents of two strings.
 
@@ -4732,7 +4732,7 @@ void swap(
 
 ### Parameters
 
-*str*\
+*`str`*\
 The source string whose elements are to be exchanged with those in the destination string.
 
 ### Remarks
@@ -4740,9 +4740,7 @@ The source string whose elements are to be exchanged with those in the destinati
 If the strings being swapped have the same allocator object, the `swap` member function:
 
 - Occurs in constant time.
-
 - Throws no exceptions.
-
 - Invalidates no references, pointers, or iterators that designate elements in the two strings.
 
 Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
@@ -4782,7 +4780,7 @@ The basic_string s1 = Tweedledum.
 The basic_string s2 = Tweedledee.
 ```
 
-## <a name="traits_type"></a> basic_string::traits_type
+## <a name="traits_type"></a> `basic_string::traits_type`
 
 A type for the character traits of the elements stored in a string.
 
@@ -4794,13 +4792,13 @@ typedef Traits traits_type;
 
 The type is a synonym for the second template parameter `Traits`.
 
-For type `string`, it's equivalent to **char_traits\<char>**.
+For type `string`, it's equivalent to `char_traits<char>`.
 
 ### Example
 
-See the example for [copy](../standard-library/char-traits-struct.md#copy) for an example of how to declare and use `traits_type`.
+See the example for [`copy`](../standard-library/char-traits-struct.md#copy) for an example of how to declare and use `traits_type`.
 
-## <a name="value_type"></a> basic_string::value_type
+## <a name="value_type"></a> `basic_string::value_type`
 
 A type that represents the type of characters stored in a string.
 
@@ -4840,5 +4838,5 @@ The character ch2 is: H.
 
 ## See also
 
-[\<string>](../standard-library/string.md)\
+[`<string>`](../standard-library/string.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
