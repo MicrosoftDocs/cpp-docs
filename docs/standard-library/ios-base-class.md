@@ -502,7 +502,7 @@ The opening mode for several `iostream` objects. The flag values are:
 |---------|---------|
 | `app` | Seek to the end of the stream before each write |
 | `ate`  | Seek to the end of the stream immediately after open |
-| `binary`| Open in binary mode. (See [`fopen`](reference/fopen-wfopen.md) for a description of binary mode.)|
+| `binary`| Open in binary mode. (See [`fopen`](../c-runtime-library/reference/fopen-wfopen.md) for a description of binary mode.)|
 | `in` |   Open for reading |
 | `out` | Open for writing |
 | `trunc` | delete the contents of the file after open |
