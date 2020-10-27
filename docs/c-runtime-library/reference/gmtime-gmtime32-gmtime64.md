@@ -1,6 +1,6 @@
 ---
 title: "gmtime, _gmtime32, _gmtime64"
-description: "API reference for `gmtime`, `_gmtime32`, and `_gmtime64` which convert a `time_t` value to a `tm` structure."
+description: "API reference for `gmtime`, `_gmtime32`, and `_gmtime64`, which convert a `time_t` value to a `tm` structure."
 ms.date: "10/27/2020"
 api_name: ["_gmtime32", "gmtime", "_gmtime64", "_o__gmtime32", "_o__gmtime64"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
@@ -45,7 +45,7 @@ A pointer to a structure of type [`tm`](../../c-runtime-library/standard-types.m
 
 Both the 32-bit and 64-bit versions of **`gmtime`**, [`mktime`](mktime-mktime32-mktime64.md), [`mkgmtime`](mkgmtime-mkgmtime32-mkgmtime64.md), and [`localtime`](localtime-localtime32-localtime64.md) all use one common `tm` structure per thread for the conversion. Each call to one of these functions destroys the result of any previous call. If *`sourceTime`* represents a date before midnight, January 1, 1970, **`gmtime`** returns `NULL`. There's no error return.
 
-**_gmtime64**, which uses the `__time64_t` structure, enables dates to be expressed up through 23:59:59, December 31, 3000, UTC, whereas **`_gmtime32`** only represent dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for both functions.
+**_gmtime64**, which uses the `__time64_t` structure, enables dates to be expressed up through 23:59:59, December 31, 3000, UTC. **`_gmtime32`** only represent dates through 23:59:59 January 18, 2038, UTC. Midnight, January 1, 1970, is the lower bound of the date range for both functions.
 
 **`gmtime`** is an inline function that evaluates to **`_gmtime64`**, and `time_t` is equivalent to `__time64_t` unless `_USE_32BIT_TIME_T` is defined. If you must force the compiler to interpret `time_t` as the old 32-bit `time_t`, you can define `_USE_32BIT_TIME_T`, but doing so causes **`gmtime`** to be in-lined to **`_gmtime32`** and `time_t` to be defined as `__time32_t`. We don't recommend that you do this, because it isn't  allowed on 64-bit platforms. In any case, your application may fail after January 18, 2038.
 
