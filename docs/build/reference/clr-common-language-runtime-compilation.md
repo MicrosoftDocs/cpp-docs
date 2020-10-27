@@ -104,7 +104,7 @@ Use ildasm.exe to view metadata.
 1. Modify the **Common Language Runtime Support** property. Choose **OK** to save your changes.
 
 > [!NOTE]
-In the Visual Studio IDE, the **`/clr`** compiler option can be individually set on the **Configuration Properties** > **C/C++** > **General** page of the Property Pages dialog. However, we recommend you use a CLR template to create your project. It sets all of the properties required for successful creation of a CLR component. Another way to set these properties is to use the **Common Language Runtime Support** property on the **Configuration Properties** > **Advanced** page of the Property Pages dialog. This property sets all the other CLR-related tool options at once.
+> In the Visual Studio IDE, the **`/clr`** compiler option can be individually set on the **Configuration Properties** > **C/C++** > **General** page of the Property Pages dialog. However, we recommend you use a CLR template to create your project. It sets all of the properties required for successful creation of a CLR component. Another way to set these properties is to use the **Common Language Runtime Support** property on the **Configuration Properties** > **Advanced** page of the Property Pages dialog. This property sets all the other CLR-related tool options at once.
 
 ### To set this compiler option programmatically
 
