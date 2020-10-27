@@ -1,7 +1,7 @@
 ---
 title: "/clr (Common Language Runtime compilation)"
 description: "Use the Microsoft C++ compiler option /clr to compile C++/CLI and C++ code as managed code."
-ms.date: 10/25/2020
+ms.date: 10/27/2020
 f1_keywords: ["/CLR", "VC.Project.VCNMakeTool.CompileAsManaged", "VC.Project.VCCLCompilerTool.CompileAsManaged"]
 helpviewer_keywords: ["cl.exe compiler, common language runtime option", "-clr compiler option [C++]", "clr compiler option [C++]", "/clr compiler option [C++]", "Managed Extensions for C++, compiling", "common language runtime, /clr compiler option"]
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
@@ -25,7 +25,7 @@ One or more of the following comma-separated arguments.
 
 - **`NetCore`**
 
-   **`/clr:NetCore`** creates metadata for the component. The metadata can be consumed by other .NET Core applications, and enables the component to consume types and data in the metadata of other .NET Core components.
+   **`/clr:NetCore`** creates metadata and code for the component using the latest cross-platform .NET framework, also known as .NET Core. The metadata can be consumed by other .NET Core applications. And, the option enables the component to consume types and data in the metadata of other .NET Core components.
 
 - **`nostdlib`**
 
@@ -55,7 +55,7 @@ One or more of the following comma-separated arguments.
 
 ## Remarks
 
-Managed code is code that can be inspected and managed by the CLR. Managed code can access managed objects. For more information, see [`/clr `Restrictions](clr-restrictions.md).
+*Managed code* is code that can be inspected and managed by the CLR. Managed code can access managed objects. For more information, see [`/clr` Restrictions](clr-restrictions.md).
 
 For information about how to develop applications that define and consume managed types in C++, see [Component Extensions for Runtime Platforms](../../extensions/component-extensions-for-runtime-platforms.md).
 
@@ -102,6 +102,9 @@ Use ildasm.exe to view metadata.
 1. Select the **Configuration Properties** > **C/C++** > **General** page.
 
 1. Modify the **Common Language Runtime Support** property. Choose **OK** to save your changes.
+
+> [!NOTE]
+In the Visual Studio IDE, the **`/clr`** compiler option can be individually set on the **Configuration Properties** > **C/C++** > **General** page of the Property Pages dialog. However, we recommend you use a CLR template to create your project. It sets all of the properties required for successful creation of a CLR component. Another way to set these properties is to use the **Common Language Runtime Support** property on the **Configuration Properties** > **Advanced** page of the Property Pages dialog. This property sets all the other CLR-related tool options at once.
 
 ### To set this compiler option programmatically
 
