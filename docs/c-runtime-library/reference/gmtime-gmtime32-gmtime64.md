@@ -111,4 +111,4 @@ Coordinated universal time is Tue Feb 12 23:11:31 2002
 [`localtime`, `_localtime32`, `_localtime64`](localtime-localtime32-localtime64.md)\
 [`_mkgmtime`, `_mkgmtime32`, `_mkgmtime64`](mkgmtime-mkgmtime32-mkgmtime64.md)\
 [`mktime`, `_mktime32`, `_mktime64`](mktime-mktime32-mktime64.md)\
-[`time`, `_time32`, `_time64`](time-time32-time64.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)

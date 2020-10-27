@@ -178,7 +178,7 @@ Some types are different sizes in 32-bit and 64-bit code. For example, `size_t` 
 |`__int64`<br />`unsigned __int64`|**`I64`**|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
 |`intmax_t`<br />`uintmax_t`|**`j`** or **`I64`**|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
 |`long double`|**`l`** (lowercase L) or **`L`**|**`a`**, **`A`**, **`e`**, **`E`**, **`f`**, **`F`**, **`g`**, or **`G`**|
-|`long int`<br />`long unsigned int``|`**`l`** (lowercase L)|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
+|`long int`<br />`long unsigned int`|**`l`** (lowercase L) |**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`** |
 |`long long int`<br />`unsigned long long int`|**`ll`**  (lowercase LL)|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
 |`ptrdiff_t`|**`t`** or **`I`** (uppercase i)|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
 |`size_t`|**`z`** or **`I`** (uppercase i)|**`d`**, **`i`**, **`o`**, **`u`**, **`x`**, or **`X`**|
