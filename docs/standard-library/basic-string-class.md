@@ -20,7 +20,7 @@ class basic_string;
 ### Parameters
 
 *`CharType`*\
-The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this class template, with the type definitions [`string`](../standard-library/string-typedefs.md#string) for elements of type **`char`**, [`wstring`](../standard-library/string-typedefs.md#wstring), for **`wchar_t`**, [`u16string`](../standard-library/string-typedefs.md#u16string) for **`char16_t`**, and [`u32string`](../standard-library/string-typedefs.md#u32string) for **`char32_t`**.
+The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this class template, with the type definitions [`string`](../standard-library/string-typedefs.md#string) for elements of type `char`, [`wstring`](../standard-library/string-typedefs.md#wstring), for `wchar_t`, [`u16string`](../standard-library/string-typedefs.md#u16string) for `char16_t`, and [`u32string`](../standard-library/string-typedefs.md#u32string) for `char32_t`.
 
 *`Traits`*\
 Various important properties of the `CharType` elements in a basic_string specialization are described by the class `Traits`. The default value is `char_traits`<`CharType`>.
@@ -39,10 +39,10 @@ The type that represents the stored allocator object that encapsulates details a
 |Type name|Description|
 |-|-|
 |[`allocator_type`](#allocator_type)|A type that represents the `allocator` class for a string object.|
-|[`const_iterator`](#const_iterator)|A type that provides a random-access iterator that can access and read a **`const`** element in the string.|
-|[`const_pointer`](#const_pointer)|A type that provides a pointer to a **`const`** element in a string.|
-|[`const_reference`](#const_reference)|A type that provides a reference to a **`const`** element stored in a string for reading and performing **`const`** operations.|
-|[`const_reverse_iterator`](#const_reverse_iterator)|A type that provides a random-access iterator that can read any **`const`** element in the string.|
+|[`const_iterator`](#const_iterator)|A type that provides a random-access iterator that can access and read a `const` element in the string.|
+|[`const_pointer`](#const_pointer)|A type that provides a pointer to a `const` element in a string.|
+|[`const_reference`](#const_reference)|A type that provides a reference to a `const` element stored in a string for reading and performing `const` operations.|
+|[`const_reverse_iterator`](#const_reverse_iterator)|A type that provides a random-access iterator that can read any `const` element in the string.|
 |[`difference_type`](#difference_type)|A type that provides the difference between two iterators that refer to elements within the same string.|
 |[`iterator`](#iterator)|A type that provides a random-access iterator that can read or modify any element in a string.|
 |[`npos`](#npos)|An unsigned integral value initialized to -1 that indicates either "not found" or "all remaining characters" when a search function fails.|
@@ -113,7 +113,7 @@ The type that represents the stored allocator object that encapsulates details a
 
 If a function is asked to generate a sequence longer than [`max_size`](#max_size) elements, the function reports a length error by throwing an object of type [`length_error`](../standard-library/length-error-class.md).
 
-References, pointers, and iterators that designate elements of the controlled sequence can become invalid after any call to a function that alters the controlled sequence, or after the first call to a non- **`const`** member function.
+References, pointers, and iterators that designate elements of the controlled sequence can become invalid after any call to a function that alters the controlled sequence, or after the first call to a non-`const` member function.
 
 ## Requirements
 
@@ -501,7 +501,7 @@ The member [`operator`&#91;&#93;](#op_at) is faster than the member function `at
 
 The member `operator[]` doesn't check whether the index passed as a parameter is valid but the member function `at` does and so should be used if the validity isn't certain. An invalid index, which is an index less that zero or greater than or equal to the size of the string, passed to the member function `at` throws an [out_of_range Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to the `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null-character when passed this index.
 
-The reference returned may be invalidated by string reallocations or modifications for the non- **`const`** strings.
+The reference returned may be invalidated by string reallocations or modifications for the non-`const` strings.
 
 ### Example
 
@@ -662,7 +662,7 @@ A reference to the string object that is being constructed by the constructors.
 
 ### Remarks
 
-All constructors store an [`basic_string::allocator_type`](#allocator_type) and initialize the controlled sequence. The allocator object is the argument `al`, if present. For the copy constructor, it's `right.`[`basic_string::get_allocator`](#get_allocator)`()`. Otherwise, the allocator is `Alloc()`.
+All constructors store a [`basic_string::allocator_type`](#allocator_type) and initialize the controlled sequence. The allocator object is the argument `al`, if present. For the copy constructor, it's `right.`[`basic_string::get_allocator`](#get_allocator)`()`. Otherwise, the allocator is `Alloc()`.
 
 The controlled sequence is initialized to a copy of the operand sequence specified by the remaining operands. A constructor without an operand sequence specifies an empty initial controlled sequence. If `InputIterator` is an integer type in a template constructor, the operand sequence `first,  last` behaves the same as `(size_type) first, (value_type) last`.
 
@@ -775,11 +775,11 @@ const value_type *c_str() const;
 
 ### Return Value
 
-A pointer to the C-style version of the invoking string.  The pointer value isn't valid after calling a non-const function, including the destructor, in the basic_string class on the object.
+A pointer to the C-style version of the invoking string.  The pointer value isn't valid after calling a non-`const` function, including the destructor, in the basic_string class on the object.
 
 ### Remarks
 
-Objects of type string belonging to the class template `basic_string<char>` aren't necessarily null terminated. The null character `' \0 '` is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character. There's an automatic conversion from **`const char *`** into strings, but the string class doesn't provide for automatic conversions from C-style strings to objects of type **`basic_string<char>`**.
+Objects of type string belonging to the class template `basic_string<char>` aren't necessarily null terminated. The null character ' \0 ' is used as a special character in a C-string to mark the end of the string but has no special meaning in an object of type string and may be a part of the string just like any other character. There's an automatic conversion from `const char *` into strings, but the string class doesn't provide for automatic conversions from C-style strings to objects of type `basic_string<char>`.
 
 The returned C-style string shouldn't be modified, as this could invalidate the pointer to the string, or deleted, as the string has a limited lifetime and is owned by the class string.
 
@@ -901,7 +901,7 @@ int main( )
 
 ## <a name="cbegin"></a> `basic_string::cbegin`
 
-Returns a **`const`** iterator that addresses the first element in the range.
+Returns a `const` iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -909,13 +909,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A **`const`** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A `const` random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range can't be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non-`const`) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -927,7 +927,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a> `basic_string::cend`
 
-Returns a **`const`** iterator that addresses the location just beyond the last element in a range.
+Returns a `const` iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const;
@@ -935,13 +935,13 @@ const_iterator cend() const;
 
 ### Return Value
 
-A **`const`** random-access iterator that points just beyond the end of the range.
+A `const` random-access iterator that points just beyond the end of the range.
 
 ### Remarks
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non-`const`) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -1068,7 +1068,7 @@ A negative value if the operand string is less than the parameter string; zero i
 
 ### Remarks
 
-The `compare` member functions compare either all or part of the parameter and operand strings depending on which in used.
+The `compare` member functions compare either all, or part, of the parameter and operand strings depending on which in used.
 
 The comparison is case-sensitive.
 
@@ -1267,7 +1267,7 @@ the first 3 characters of the parameter C-string.
 
 ## <a name="const_iterator"></a> `basic_string::const_iterator`
 
-A type that provides a random-access iterator that can access and read a **`const`** element in the string.
+A type that provides a random-access iterator that can access and read a `const` element in the string.
 
 ```cpp
 typedef implementation-defined const_iterator;
@@ -1283,7 +1283,7 @@ See the example for [`begin`](#begin) for an example of how to declare and use `
 
 ## <a name="const_pointer"></a> `basic_string::const_pointer`
 
-A type that provides a pointer to a **`const`** element in a string.
+A type that provides a pointer to a `const` element in a string.
 
 ```cpp
 typedef typename allocator_type::const_pointer const_pointer;
@@ -1293,7 +1293,7 @@ typedef typename allocator_type::const_pointer const_pointer;
 
 The type is a synonym for `allocator_type::const_pointer`.
 
-For type **`string`**, it's equivalent to **`char*`**.
+For type `string`, it's equivalent to `char*`.
 
 Pointers that are declared const must be initialized when they're declared. Const pointers always point to the same memory location and may point to constant or non-constant data.
 
@@ -1323,7 +1323,7 @@ The C-string cstr1c is: Out There.
 
 ## <a name="const_reference"></a> `basic_string::const_reference`
 
-A type that provides a reference to a **`const`** element stored in a string for reading and performing **`const`** operations.
+A type that provides a reference to a `const` element stored in a string for reading and performing `const` operations.
 
 ```cpp
 typedef typename allocator_type::const_reference const_reference;
@@ -1333,7 +1333,7 @@ typedef typename allocator_type::const_reference const_reference;
 
 A type `const_reference` can't be used to modify the value of an element.
 
-The type is a synonym for `allocator_type::const_reference`. For string `type`, it's equivalent to const `char&`.
+The type is a synonym for `allocator_type::const_reference`. For type `string`, it's equivalent to const `char&`.
 
 ### Example
 
@@ -1341,7 +1341,7 @@ See the example for [`at`](#at) for an example of how to declare and use `const_
 
 ## <a name="const_reverse_iterator"></a> `basic_string::const_reverse_iterator`
 
-A type that provides a random-access iterator that can read any **`const`** element in the string.
+A type that provides a random-access iterator that can read any `const` element in the string.
 
 ```cpp
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
@@ -1381,7 +1381,7 @@ The beginning position in the source string from which copies are to be made.
 
 ### Return Value
 
-The number of characters actually copied.
+The number of characters copied.
 
 ### Remarks
 
@@ -1558,13 +1558,13 @@ A pointer to the first element of the null-terminated array containing the conte
 
 ### Remarks
 
-The pointer returned by `data` points at a valid range `[data(), data() + size()]`. Each element in the range corresponds to the current data in the string. That is, for every valid offset *n* in the range, `data() + n == addressof(operator[](n))`.
+The pointer returned by `data` points at a valid range `[data(), data() + size()]`. Each element in the range corresponds to the current data in the string. That is, for every valid offset *`n`* in the range, `data() + n == addressof(operator[](n))`.
 
-If you modify the contents of the string returned by the **`const`** overload of `data`, the behavior is undefined. You also get undefined behavior if the terminal null character is changed to any other value. The returned pointer may be invalidated if a non-const reference to the string is passed to a standard library function. It can also be invalidated by a call to a non-const member function. Calls to members `at`, `back`, `begin`, `end`, `front`, `rbegin`, `rend`, and `operator[]` don't invalidate the pointer.
+If you modify the contents of the string returned by the `const` overload of `data`, the behavior is undefined. You also get undefined behavior if the terminal null character is changed to any other value. The returned pointer may be invalidated if a non-`const` reference to the string is passed to a standard library function. It can also be invalidated by a call to a non-`const` member function. Calls to members `at`, `back`, `begin`, `end`, `front`, `rbegin`, `rend`, and `operator[]` don't invalidate the pointer.
 
 Before C++11, `data` didn't guarantee the returned string was null-terminated. Since C++11, `data` and `c_str` both return a null-terminated string, and are effectively the same.
 
-The non-const overload is new in C++17. To use it, specify the **`/std:c++17`** or **`/std:c++latest`** compiler option.
+The non-`const` overload is new in C++17. To use it, specify the **`/std:c++17`** or **`/std:c++latest`** compiler option.
 
 ### Example
 
@@ -1670,7 +1670,7 @@ bool empty() const;
 
 ### Return Value
 
-**`true`** if the string object contains no characters; **`false`** if it has at least one character.
+`true` if the string object contains no characters; `false` if it has at least one character.
 
 ### Remarks
 
@@ -3097,7 +3097,7 @@ The string with a character inserted from a range is: ABCDeeeHIJ
 
 ## <a name="iterator"></a> `basic_string::iterator`
 
-A type that provides a random-access iterator that can access and read a **`const`** element in the string.
+A type that provides a random-access iterator that can access and read a `const` element in the string.
 
 ```cpp
 typedef implementation-defined iterator;
@@ -3257,7 +3257,7 @@ static const size_type npos = -1;
 
 ### Remarks
 
-When the return value is to be checked for the `npos` value, it might not work unless the return value is of type [`size_type`](#size_type) and not either **`int`** or **`unsigned`**.
+When the return value is to be checked for the `npos` value, it might not work unless the return value is of type [`size_type`](#size_type) and not either `int` or `unsigned`.
 
 ### Example
 
@@ -3472,7 +3472,7 @@ The first element of the string has an index of zero, and the following elements
 
 `operator[]` doesn't check whether the index passed as a parameter is valid, but the member function `at` does and so should be used in the validity isn't certain. An invalid index (an index less that zero or greater than or equal to the size of the string) passed to the member function `at` throws an [out_of_range Class](../standard-library/out-of-range-class.md) exception. An invalid index passed to `operator[]` results in undefined behavior, but the index equal to the length of the string is a valid index for const strings and the operator returns the null character when passed this index.
 
-The reference returned may be invalidated by string reallocations or modifications for the non- **`const`** strings.
+The reference returned may be invalidated by string reallocations or modifications for the non-`const` strings.
 
 When compiling with [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debug-level.md) set to 1 or 2, a runtime error will occur if you attempt to access an element outside the bounds of the string. For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 
@@ -3764,7 +3764,7 @@ int main( )
    cout << endl;
 
    // The dereferenced iterator can be used to modify a character
-*str1_rIter = 'o';
+   *str1_rIter = 'o';
    cout << "The last character-letter of the modified str1 is now: "
         << *str1_rIter << endl;
    cout << "The full modified reversed string str1 is now:\n ";
@@ -4107,7 +4107,7 @@ The number of characters for which memory is being reserved.
 
 Having sufficient capacity is important because reallocations is a time-consuming process and invalidates all references, pointers, and iterators that refer to characters in a string.
 
-The concept of capacity for objects of type strings is the same as for objects of type vector. Unlike vector, the member function `reserve` may be called to shrink the capacity of an object. The request is nonbinding and may or may not happen. As the default value for the parameter is zero, a call of `reserve` is a non-binding request to shrink the capacity of the string to fit the number of characters currently in the string. The capacity is never reduced below the current number of characters.
+The concept of capacity for objects of type strings is the same as for objects of type `vector`. Unlike `vector`, the member function `reserve` may be called to shrink the capacity of an object. The request is nonbinding and may or may not happen. As the default value for the parameter is zero, a call of `reserve` is a non-binding request to shrink the capacity of the string to fit the number of characters currently in the string. The capacity is never reduced below the current number of characters.
 
 Calling `reserve` is the only possible way to shrink the capacity of a string. However, as noted above, this request is nonbinding and may not happen.
 
@@ -4808,7 +4808,7 @@ typedef typename allocator_type::value_type value_type;
 
 ### Remarks
 
-It's equivalent to `traits_type::char_type` and is equivalent to **`char`** for objects of type `string`.
+It's equivalent to `traits_type::char_type` and is equivalent to `char` for objects of type `string`.
 
 ### Example
 
