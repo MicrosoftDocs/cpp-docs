@@ -12,7 +12,7 @@ Enables code analysis and control options.
 
 ## Syntax
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 > **`/analyze`**\
 > **`/analyze-`**\
@@ -29,7 +29,7 @@ Enables code analysis and control options.
 > **`/analyze:WX-`**
 
 ::: moniker-end
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 > **`/analyze`**\
 > **`/analyze-`**\
@@ -69,14 +69,14 @@ Typically, the compiler generates code and does more syntax checking after it ru
 **`/analyze:plugin`** *plugin-dll*\
 Enables the specified PREfast plugin as part of code analysis runs.
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 LocalEspC.dll is the plugin that implements concurrency-related code analysis checks in the range of C261XX warnings. For example, [C26100](../../code-quality/c26100.md), [C26101](../../code-quality/c26101.md), ...,  [C26167](../../code-quality/c26167.md).
 
 To run LocalEspC.dll, use this compiler option: **`/analyze:plugin LocalEspC.dll`**
 
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 ConcurrencyCheck.dll implements concurrency-related code analysis checks in the range of C261XX warnings. For example, [C26100](../../code-quality/c26100.md), [C26101](../../code-quality/c26101.md), ...,  [C26167](../../code-quality/c26167.md).
 
@@ -101,7 +101,7 @@ Then use this compiler option: **`/analyze:plugin EspXEngine.dll`**.
 **`/analyze:quiet`**\
 Turns off analyzer output to the console or Visual Studio **Output** window.
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 **`/analyze:ruleset`** *file_path.ruleset*\
 Lets you specify which rule sets to analyze, including custom rule sets that you can create yourself. When this switch is set, the rules engine is more efficient, because it excludes non-members of the specified rule set before running. Otherwise, the engine checks all rules.

@@ -6,13 +6,13 @@ ms.assetid: dba0538f-2afe-4354-8cbb-f202ea8ade5a
 ---
 # Consumer Wizard-Generated Classes
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 When you use the **ATL OLE DB Consumer Wizard** to generate a consumer, you have the choice of using OLE DB Templates or OLE DB attributes. In both cases, the wizard generates a command class and a user record class. The command class contains code to open the data source and rowset you specified in the wizard. The user record class contains a column map for the database table you selected. However, the generated code differs in each case:
 

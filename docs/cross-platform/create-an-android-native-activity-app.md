@@ -15,7 +15,7 @@ Before you can create an Android Native Activity app, you must make sure you've 
 
 In this tutorial, you'll first create a new Android Native Activity project and then build and run the default app in an Android emulator.
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 1. In Visual Studio, choose **File** > **New** > **Project**.
 
@@ -31,7 +31,7 @@ In this tutorial, you'll first create a new Android Native Activity project and 
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. In Visual Studio, choose **File** > **New** > **Project**.
 

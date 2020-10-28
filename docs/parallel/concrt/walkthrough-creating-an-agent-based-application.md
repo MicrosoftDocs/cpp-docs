@@ -34,7 +34,7 @@ This walkthrough demonstrates how to perform the following tasks:
 
 This section shows how to create a C++ console application that references the header files that the program will use. The initial steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create a C++ console application in Visual Studio 2019
 
@@ -50,7 +50,7 @@ This section shows how to create a C++ console application that references the h
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### To create a C++ console application in Visual Studio 2017 and earlier
 

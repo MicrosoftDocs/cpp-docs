@@ -43,7 +43,7 @@ You can specify only the major number, the major and minor numbers, or the major
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the **`/Wv`** compiler option. The **`/Wv`** option can't suppress warnings that aren't listed, which predate the specified versions of the compiler.
 
-::: moniker range=">= vs-2019"
+::: moniker range=">= msvc-160"
 
 ## Warnings introduced in Visual Studio 2019 version 16.7 (compiler version 19.27.29112.0)
 
@@ -143,7 +143,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C5051 | `attribute 'attribute-name' requires at least 'standard-level'; ignored` |
 
 ::: moniker-end
-::: moniker range=">= vs-2017"
+::: moniker range=">= msvc-150"
 
 ## Warnings introduced in Visual Studio 2017 version 15.8 (compiler version 19.15.26726.0)
 

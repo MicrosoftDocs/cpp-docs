@@ -29,21 +29,21 @@ You need these prerequisites to complete this walkthrough:
 
 - A general understanding of the MSBuild system.
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 > [!NOTE]
 > Most of the low-level build instructions are contained in the *`.targets`* and *`.props`* files that are defined under the default targets folder, stored in the property `$(VCTargetsPath)`. It's where you'll find files such as *`Microsoft.Cpp.Common.props`*. The default path for these files in Visual Studio 2015 and earlier versions is under *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\`*.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 > [!NOTE]
 > Most of the low-level build instructions are contained in the *`.targets`* and *`.props`* files that are defined under the default targets folder, stored in the property `$(VCTargetsPath)`. It's where you'll find files such as *`Microsoft.Cpp.Common.props`*. The default path for these files in Visual Studio 2017 is under *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\`*. Visual Studio 2015 and earlier versions stored them under *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\`*.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 > [!NOTE]
 > Most of the low-level build instructions are contained in the *`.targets`* and *`.props`* files that are defined under the default targets folder, stored in the property `$(VCTargetsPath)`. It's where you'll find files such as *`Microsoft.Cpp.Common.props`*. The default path for these files is under *`%VSINSTALLDIR%MSBuild\Microsoft\VC\<version>\`*. The `<version>` path element is specific to the version of Visual Studio. It's *`v160`* for Visual Studio 2019. Visual Studio 2017 stored these files under *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\`*. Visual Studio 2015 and earlier versions stored them under *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\`*.

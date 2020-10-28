@@ -11,7 +11,7 @@ A static library that's used in a Universal Windows Platform (UWP) app can conta
 
 Instructions for creating a new project vary depending on which version of Visual Studio you have installed. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create a UWP static library in Visual Studio 2019
 
@@ -25,7 +25,7 @@ Instructions for creating a new project vary depending on which version of Visua
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### To create a UWP static library in Visual Studio 2017 or Visual Studio 2015
 

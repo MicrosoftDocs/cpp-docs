@@ -7,13 +7,13 @@ ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
 ---
 # Options, ATL Property Page Wizard
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The ATL Property Page wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Use this page of the wizard to define the threading model and aggregation level of property page you are creating.
 

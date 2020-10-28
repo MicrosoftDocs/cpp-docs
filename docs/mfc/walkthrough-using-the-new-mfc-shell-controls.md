@@ -18,7 +18,7 @@ In this walkthrough, you'll create an application that resembles File Explorer. 
 
 These steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create an MFC project in Visual Studio 2019
 
@@ -46,7 +46,7 @@ These steps vary depending on which version of Visual Studio you are using. To s
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### To create an MFC project in Visual Studio 2017 or earlier
 

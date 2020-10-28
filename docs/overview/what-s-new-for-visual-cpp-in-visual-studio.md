@@ -7,9 +7,9 @@ ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 ---
 # What's new for C++ in Visual Studio
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
-Visual Studio 2019 brings many updates and fixes to the Microsoft C++ environment. We've fixed many bugs and issues in the compiler and tools. Many of these issues were submitted by customers through the [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019&preserve-view=true) and [Provide a Suggestion](https://developercommunity.visualstudio.com/spaces/62/index.html) options under **Send Feedback**. Thank you for reporting bugs! For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio 2019](/visualstudio/ide/whats-new-visual-studio-2019). For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](?preserve-view=true&view=vs-2017). For information on what's new for C++ in Visual Studio 2015 and earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+Visual Studio 2019 brings many updates and fixes to the Microsoft C++ environment. We've fixed many bugs and issues in the compiler and tools. Many of these issues were submitted by customers through the [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019&preserve-view=true) and [Provide a Suggestion](https://developercommunity.visualstudio.com/spaces/62/index.html) options under **Send Feedback**. Thank you for reporting bugs! For more information on what's new in all of Visual Studio, visit [What's new in Visual Studio 2019](/visualstudio/ide/whats-new-visual-studio-2019). For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](?preserve-view=true&view=msvc-150). For information on what's new for C++ in Visual Studio 2015 and earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
 ## C++ compiler
 
@@ -232,9 +232,9 @@ The Managed C++ Test Project template is no longer available. You can continue u
 
 ::: moniker-end
 
-::: moniker range="=vs-2017"
+::: moniker range="=msvc-150"
 
-Visual Studio 2017 brings many updates and fixes to the C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools. Many were submitted by customers through the [Report a Problem and Provide a Suggestion](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2017&preserve-view=true) options under **Send Feedback**. Thank you for reporting bugs! For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2017](/visualstudio/ide/whats-new-visual-studio-2017?view=vs-2017&preserve-view=true). For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio](?preserve-view=true&view=vs-2019). For information on what's new for C++ in Visual Studio 2015 and earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+Visual Studio 2017 brings many updates and fixes to the C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools. Many were submitted by customers through the [Report a Problem and Provide a Suggestion](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2017&preserve-view=true) options under **Send Feedback**. Thank you for reporting bugs! For more information on what's new in all of Visual Studio, see [What's new in Visual Studio 2017](/visualstudio/ide/whats-new-visual-studio-2017?view=vs-2017&preserve-view=true). For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio](?preserve-view=true&view=msvc-160). For information on what's new for C++ in Visual Studio 2015 and earlier versions, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
 ## Visual Studio 2017 C++ compiler
 
@@ -730,14 +730,14 @@ Visual Studio Graphics Diagnostics tools: You can use them to record and analyze
 
 ::: moniker-end
 
-::: moniker range="=vs-2015"
+::: moniker range="=msvc-140"
 
 For the complete list of what's new through Visual Studio 2015 Update 3, see [Visual C++ What's New 2003 through 2015](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
 For more information on what's new in all of Visual Studio 2015, see the release notes. They're linked from [Visual Studio 2015 Release Notes History](/visualstudio/releasenotes/vs2015-version-history).
 
-For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019](?preserve-view=true&view=vs-2019).
+For information on what's new for C++ in Visual Studio 2019, see [What's new for C++ in Visual Studio 2019](?preserve-view=true&view=msvc-160).
 
-For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](?preserve-view=true&view=vs-2017).
+For information on what's new for C++ in Visual Studio 2017, see [What's new for C++ in Visual Studio 2017](?preserve-view=true&view=msvc-150).
 
 ::: moniker-end

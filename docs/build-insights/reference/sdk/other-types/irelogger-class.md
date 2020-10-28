@@ -6,12 +6,12 @@ helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "IRelogger
 ---
 # IRelogger class
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 The `IRelogger` class provides an interface for relogging an Event Tracing for Windows (ETW) trace. It's used with the [MakeDynamicReloggerGroup](../functions/make-dynamic-relogger-group.md) and [MakeStaticReloggerGroup](../functions/make-static-analyzer-group.md) functions. Use `IRelogger` as a base class to create your own relogger that can be part of a relogger group.
 

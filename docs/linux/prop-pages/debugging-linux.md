@@ -5,13 +5,13 @@ ms.assetid: 0c1c0fcc-a49b-451c-a5cb-ce9711fac064
 ---
 # C++ Debugging Properties (Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux support is available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 | Property | Description | Choices |
 |--|--|--|
