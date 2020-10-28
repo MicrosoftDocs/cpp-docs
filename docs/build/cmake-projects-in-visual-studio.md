@@ -12,7 +12,7 @@ CMake is a cross-platform, open-source tool for defining build processes that ru
 > [!NOTE]
 > CMake has become more and more integrated with Visual Studio over the past few releases. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The **C++ CMake tools for Windows** component uses the [Open Folder](open-folder-projects-cpp.md) feature to consume CMake project files (such as *CMakeLists.txt*) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, it generates a temporary project file and passes it to msbuild.exe. However, the project is never loaded for IntelliSense or browsing purposes. You can also import an existing CMake cache.
 
@@ -145,7 +145,7 @@ If you have installed CMake from the Visual Studio Installer, you can run it fro
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 Visual Studio 2017 has rich support for CMake, including [cross-platform CMake projects](../linux/cmake-linux-project.md). The **Visual C++ Tools for CMake** component uses the **Open Folder** feature to enable the IDE to consume CMake project files (such as *CMakeLists.txt*) directly for the purposes of IntelliSense and browsing. Both Ninja and Visual Studio generators are supported. If you use a Visual Studio generator, it generates a temporary project file and passes it to msbuild.exe. However, the project is never loaded for IntelliSense or browsing purposes. You also can import an existing CMake cache.
 
@@ -288,7 +288,7 @@ If you have installed CMake from the Visual Studio Installer, you can run it fro
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 In Visual Studio 2015, Visual Studio users can use a [CMake generator](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html) to generate MSBuild project files, which the IDE then consumes for IntelliSense, browsing, and compilation.
 

@@ -6,13 +6,13 @@ ms.assetid: 2506ba8f-010d-4231-aac1-387432f7b6b9
 ---
 # Creating the Provider
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ## To create an OLE DB provider with the ATL OLE DB Provider Wizard
 

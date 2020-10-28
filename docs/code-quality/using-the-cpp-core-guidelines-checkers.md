@@ -16,7 +16,7 @@ Created by Bjarne Stroustrup and others, the C++ Core Guidelines are a guide to 
 
 ## Enable the C++ Core Check guidelines in Code Analysis
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 A subset of C++ Core Check rules is included in the Microsoft Native Recommended rule set. It's the ruleset that runs by default when code analysis is enabled.
 
@@ -35,7 +35,7 @@ To enable additional Core Check rules, open the dropdown list and choose which r
 ![Dropdown for additional C++ Core Check rule sets](media/cppcorecheck_codeanalysis_extensions.png)
 
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 A subset of C++ Core Check rules is included in the Microsoft Native Recommended rule set. It's the ruleset that runs by default when Microsoft code analysis is enabled.
 
@@ -158,12 +158,12 @@ As new rules are added to the C++ Core Guidelines Checker, the number of warning
 
 You can choose to limit warnings to just one or a few of the groups. The **Native Minimum** and **Native Recommended** rule sets include C++ Core Check rules and other PREfast checks.
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 To see the available rule sets, open the **Project Properties** dialog. In the **Property Pages** dialog box, select the **Configuration Properties** > **Code Analysis** > **General** property page. Then, open the dropdown in the **Rule Sets** combo-box to see the available rule sets. To build a custom combination of rule sets, select **Choose multiple rule sets**. The **Add or Remove Rule Sets** dialog lists the rules you can choose from. For more information about using Rule Sets in Visual Studio, see [Use rule sets to specify the C++ rules to run](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 To see the available rule sets, open the **Project Properties** dialog. In the **Property Pages** dialog box, select the **Configuration Properties** > **Code Analysis** > **Microsoft** property page. Then, open the dropdown in the **Active Rules** combo-box to see the available rule sets. To build a custom combination of rule sets, select **Choose multiple rule sets**. The **Add or Remove Rule Sets** dialog lists the rules you can choose from. For more information about using Rule Sets in Visual Studio, see [Use rule sets to specify the C++ rules to run](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
@@ -305,7 +305,7 @@ Code Analysis requires a few environment variables and compiler command-line opt
 
 The Guideline Support Library (GSL) is designed to help you follow the Core Guidelines. The GSL includes definitions that let you replace error-prone constructs with safer alternatives. For example, you can replace a `T*, length` pair of parameters with the `span<T>` type. The GSL is available at [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). The library is open-source, so you can view the sources, make comments, or contribute. The project can be found at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ## <a name="vs2015_corecheck"></a> Use the C++ Core Check guidelines in Visual Studio 2015 projects
 

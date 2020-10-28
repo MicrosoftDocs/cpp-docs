@@ -6,12 +6,12 @@ helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time a
 ---
 # Tutorial: Windows Performance Analyzer basics
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 The C++ Build Insights tools are available in Visual Studio 2019. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Using C++ Build Insights effectively requires some knowledge of Windows Performance Analyzer (WPA). This article helps you become familiar with common WPA operations. For more information on how to use WPA, see the [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) documentation.
 

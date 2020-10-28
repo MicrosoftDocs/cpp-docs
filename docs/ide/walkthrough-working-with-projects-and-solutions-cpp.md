@@ -20,7 +20,7 @@ It helps if you understand the fundamentals of the C++ language, and know what a
 
 To create a project, first choose a project-type template. For each project type, Visual Studio sets compiler settings and—depending on the type—generates starter code that you can modify later. The following steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create a project in Visual Studio 2019
 
@@ -40,7 +40,7 @@ To create a project, first choose a project-type template. For each project type
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ### To create a project in Visual Studio 2017
 
@@ -62,7 +62,7 @@ To create a project, first choose a project-type template. For each project type
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ### To create a project in Visual Studio 2015
 

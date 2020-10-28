@@ -63,7 +63,7 @@ For more information, see the official [Microsoft Security Advisory ADV180002, G
 
 ### To set this compiler option in the Visual Studio development environment
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
@@ -73,7 +73,7 @@ For more information, see the official [Microsoft Security Advisory ADV180002, G
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 

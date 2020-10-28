@@ -25,7 +25,7 @@ In this walkthrough, you'll:
 
 ### To run code defect analysis on native code
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. Open the CppDemo solution in Visual Studio.
 
@@ -51,7 +51,7 @@ In this walkthrough, you'll:
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 1. Open the CppDemo solution in Visual Studio.
 
@@ -118,7 +118,7 @@ In this walkthrough, you'll:
 
 ### To enable the source code annotation warnings in annotation.c
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. In Solution Explorer, select the Annotations project.
 
@@ -132,7 +132,7 @@ In this walkthrough, you'll:
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 1. In Solution Explorer, select the Annotations project.
 

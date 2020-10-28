@@ -6,13 +6,13 @@ ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
 ---
 # Example: Implementing a Property Page
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The ATL Property Page wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 This example shows how to build a property page that displays (and allows you to change) properties of the [Document Classes](../mfc/document-classes.md) interface.
 

@@ -6,13 +6,13 @@ ms.assetid: 2fbe259c-6be1-4d0e-9cfe-721c75c97cb1
 ---
 # COM+ 1.0, ATL COM+ 1.0 Component Wizard
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 This wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Use this page of the ATL COM+ 1.0 Component Wizard to specify interface type and additional interfaces to be supported.
 

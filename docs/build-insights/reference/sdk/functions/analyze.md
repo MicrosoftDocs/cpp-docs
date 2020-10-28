@@ -6,12 +6,12 @@ helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "Analyze",
 ---
 # Analyze
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 The `Analyze` function is used to analyze an Event Tracing for Windows (ETW) trace obtained from MSVC while tracing a C++ build. The events in the ETW trace are forwarded sequentially to an analyzer group provided by the caller. This function supports multi-pass analyses that allow forwarding the event stream to the analyzer group multiple times in a row.
 

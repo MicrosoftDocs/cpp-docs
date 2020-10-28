@@ -20,13 +20,13 @@ Visual Studio provides support for any project system or custom build tools that
 
 - **MSBuild** is the native project system for Visual Studio. When you select **File** > **New** > **Project** from the main menu, you see many kinds of MSBuild *project templates* that get you started quickly developing different kinds of C++ applications.
 
-   ::: moniker range="vs-2019"
+   ::: moniker range="msvc-160"
 
    ![New Project Templates](../build/media/mathclient-project-name-2019.png "Visual Studio 2019 New Project Dialog")
 
    ::: moniker-end
 
-   ::: moniker range="<=vs-2017"
+   ::: moniker range="<=msvc-150"
 
    ![Project Templates](media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
 
@@ -42,13 +42,13 @@ Visual Studio provides support for any project system or custom build tools that
 
 Source control enables you to coordinate work among multiple developers, isolate in-progress work from production code, and backup your source code. Visual Studio supports Git and [Team Foundation Version Control \(TFVC\)](/azure/devops/repos/tfvc/) through its **Team Explorer** window.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ![Screenshot of the Team Explorer window in Visual Studio 2019.](media/vs2019-team-explorer.png "Visual Studio 2017 Team Explorer")
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ![Screenshot of the Team Explorer window in Visual Studio 2017.](media/vs2017-team-explorer.png "Visual Studio 2017 Team Explorer")
 

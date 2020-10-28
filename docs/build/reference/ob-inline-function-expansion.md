@@ -11,13 +11,13 @@ Controls inline expansion of functions. By default, when optimizing, expansion o
 
 ## Syntax
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 > **/Ob**{**0**|**1**|**2**|**3**}
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 > **/Ob**{**0**|**1**|**2**}
 
@@ -34,7 +34,7 @@ Allows expansion only of functions marked [inline](../../cpp/inline-functions-cp
 **2**\
 The default value under [/O1](o1-o2-minimize-size-maximize-speed.md) and [/O2](o1-o2-minimize-size-maximize-speed.md). Allows the compiler to expand any function not explicitly marked for no inlining.
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 **3**\
 This option specifies more aggressive inlining than **/Ob2**, but has the same restrictions. The **/Ob3** option is available starting in Visual Studio 2019.
@@ -58,7 +58,7 @@ To exclude functions from consideration as candidates for inline expansion, you 
 
 1. Modify the **Inline Function Expansion** property.
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 The **/Ob3** option isn't available in the **Inline Function Expansion** property. To set **/Ob3**:
 

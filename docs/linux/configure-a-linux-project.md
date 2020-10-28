@@ -6,7 +6,7 @@ ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
 ---
 # Configure a Linux MSBuild C++ project in Visual Studio
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux support is available in Visual Studio 2017 and later.
 
@@ -16,7 +16,7 @@ This topic describes how to configure a MSBuild-based Linux project as described
 
 You can configure a Linux project to target a physical Linux machine, a virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about) (WSL).
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 **Visual Studio 2019 version 16.1**:
 
@@ -48,7 +48,7 @@ To change settings related to the remote Linux computer, configure the remote se
 
    ![Build Machine](media/remote-build-machine-vs2019.png)
 
-   ::: moniker range="vs-2019"
+   ::: moniker range="msvc-160"
 
    **Visual Studio 2019 version 16.7**: To target Windows Subsystem for Linux (WSL), set the **Platform Toolset** drop-down to **GCC for Windows Subsystem for Linux**. The other remote options will disappear and the path to the default WSL shell will appear in their place:
 
@@ -69,7 +69,7 @@ To change settings related to the remote Linux computer, configure the remote se
 
 ## Copy sources (remote systems only)
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 This section doesn't apply when targeting WSL.
 
@@ -106,13 +106,13 @@ sudo apt install zip
 
 To manage your header cache, navigate to **Tools > Options, Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. To update the header cache after making changes on your Linux machine, select the remote connection and then select **Update**. Select **Delete** to remove the headers without deleting the connection itself. Select **Explore** to open the local directory in **File Explorer**. Treat this folder as read-only. To download headers for an existing connection that was created before Visual Studio 2017 version 15.3, select the connection and then select **Download**.
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ![Screenshot showing the Options dialog box with Cross Platform > Connection Manager > Remote Headers IntelliSense Manager selected.](media/remote-header-intellisense.png)
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ![Screenshot showing the Options dialog box with Cross Platform > Connection Manager selected.](media/connection-manager-vs2019.png)
 

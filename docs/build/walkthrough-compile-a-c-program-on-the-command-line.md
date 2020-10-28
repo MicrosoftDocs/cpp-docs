@@ -27,7 +27,7 @@ Before you can build a C or C++ program on the command line, you must verify tha
 
 These instructions vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## Open a developer command prompt in Visual Studio 2019
 
@@ -37,7 +37,7 @@ If you're using a different version of Windows, look in your Start menu or Start
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ## Open a developer command prompt in Visual Studio 2017
 
@@ -47,7 +47,7 @@ If you're running a different version of Windows, look in your Start menu or Sta
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ## Open a developer command prompt in Visual Studio 2015
 

@@ -26,7 +26,7 @@ By default, the makefile project displays no files in Solution Explorer. The mak
 
 The output file that you specify in the project has no effect on the name that the build script generates; it declares only an intention. Your makefile still controls the build process and specifies the build targets.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create a makefile project in Visual Studio 2019
 
@@ -38,7 +38,7 @@ The output file that you specify in the project has no effect on the name that t
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### To create a makefile project in Visual Studio 2015 or Visual Studio 2017
 

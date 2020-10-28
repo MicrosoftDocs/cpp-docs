@@ -36,7 +36,7 @@ Before you start this walkthrough:
 
 The instructions for creating a project vary depending on which version of Visual Studio you are using. Make sure you have the correct version selected in the upper left of this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create the sample project in Visual Studio 2019
 
@@ -52,7 +52,7 @@ The instructions for creating a project vary depending on which version of Visua
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### To create the sample project in Visual Studio 2017 or Visual Studio 2015
 

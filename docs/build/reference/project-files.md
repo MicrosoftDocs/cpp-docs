@@ -10,13 +10,13 @@ A C++ project file in Visual Studio is an XML-based file that has the .vcxproj f
 
 ## Example
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 The following sample .vcxproj file was produced by choosing **Windows Desktop Wizard** in the **New Project** dialog box. To process a project file use either the msbuild.exe tool at the command line, or the **Build** command in the IDE. (This sample cannot be processed because the required source and header files are not provided.) For more information about the XML elements in a project file, see [Project File Schema Reference](/visualstudio/msbuild/msbuild-project-file-schema-reference).
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 The following sample .vcxproj file was produced by specifying a **Win32 Console Application** in the **New Project** dialog box. To process a project file use either the msbuild.exe tool at the command line, or the **Build** command in the IDE. (This sample cannot be processed because the required source and header files are not provided.) For more information about the XML elements in a project file, see [Project File Schema Reference](/visualstudio/msbuild/msbuild-project-file-schema-reference).
 

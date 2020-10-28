@@ -6,13 +6,13 @@ ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
 ---
 # Implementing Property Pages
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The ATL Property Page wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Property pages are COM objects that implement the `IPropertyPage` or `IPropertyPage2` interface. ATL provides support for implementing property pages through the [ATL Property Page Wizard](../atl/reference/atl-property-page-wizard.md) in the [Add Class dialog box](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box).
 
