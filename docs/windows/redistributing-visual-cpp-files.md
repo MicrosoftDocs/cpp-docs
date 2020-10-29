@@ -14,19 +14,19 @@ ms.assetid: d201b2ce-36f1-44e5-a96c-0db81a1ba652
 
 When you deploy an application, you must also deploy the files that are required to support it. If any of these files are provided by Microsoft, check whether you're permitted to redistribute them. You'll find a link to the Visual Studio license terms in the IDE. Use the License terms link in the About Microsoft Visual Studio dialog box. Or, download the relevant EULAs and licenses from the Visual Studio [License Directory](https://visualstudio.microsoft.com/license-terms/).
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 To view the "REDIST list" that's referenced in the "Distributable Code" section of the Visual Studio 2019 Microsoft Software License Terms, see [Distributable Code Files for Microsoft Visual Studio 2019](/visualstudio/releases/2019/redistribution#-distributable-code-files-for-visual-studio-2019)
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 To view the "REDIST list" that's referenced in the "Distributable Code" section of the Visual Studio 2017 Microsoft Software License Terms, see [Distributable Code Files for Microsoft Visual Studio 2017](/visualstudio/productinfo/2017-redistribution-vs#-distributable-code-files-for-visual-studio-2017).
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 To view the "REDIST list" that's referenced in the "Distributable Code" section of the Visual Studio 2015 Microsoft Software License Terms, see [Distributable Code Files for Microsoft Visual Studio 2015](/visualstudio/productinfo/2015-redistribution-vs#-distributable-code-files-for-visual-studio-2015).
 

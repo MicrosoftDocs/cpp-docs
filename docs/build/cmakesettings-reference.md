@@ -6,13 +6,13 @@ ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 ---
 # CMakeSettings.json schema reference
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 CMake projects are supported in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 The **CMakeSettings.json** file contains information that Visual Studio uses for IntelliSense and to construct the command-line arguments that it passes to cmake.exe for a specified *configuration* and compiler *environment*. A configuration specifies properties that apply to a specific platform and build-type, for example, `x86-Debug` or `Linux-Release`. Each configuration specifies an environment, which encapsulates information about the compiler toolset, for example MSVC, GCC, or Clang. CMake uses the command-line arguments to regenerate the root *CMakeCache.txt* file and other project files for the project. The values can be overridden in the *CMakeLists.txt* files.
 

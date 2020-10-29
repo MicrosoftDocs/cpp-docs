@@ -9,7 +9,7 @@ ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ---
 # Create a console calculator in C++
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you'll create first in Visual Studio in this article, and then we'll move on to something more challenging: a calculator app.
 
@@ -379,7 +379,7 @@ Congratulations! You've completed the code for the calculator app, and built and
 
 ::: moniker-end
 
-::: moniker range="<vs-2019"
+::: moniker range="<msvc-160"
 
 The usual starting point for a C++ programmer is a "Hello, world!" application that runs on the command line. That's what you'll create in Visual Studio in this article, and then we'll move on to something more challenging: a calculator app.
 

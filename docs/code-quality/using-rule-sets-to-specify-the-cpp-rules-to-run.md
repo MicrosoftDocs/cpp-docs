@@ -17,7 +17,7 @@ To create a new custom rule set, you save it by using a new file name. The custo
 
 ## To create a custom rule from a single existing rule set
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 1. In Solution Explorer, open the shortcut menu for the project and then choose **Properties**.
 
@@ -34,7 +34,7 @@ To create a new custom rule set, you save it by using a new file name. The custo
 1. Choose **Open** to display the rules in the rule set editor.
 
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. In Solution Explorer, open the shortcut menu for the project and then choose **Properties**.
 

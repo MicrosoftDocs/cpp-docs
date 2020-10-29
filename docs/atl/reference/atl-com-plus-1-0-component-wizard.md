@@ -6,13 +6,13 @@ ms.assetid: 11670681-8671-4122-96a4-2e52f8dadce0
 ---
 # ATL COM+ 1.0 Component Wizard
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 This wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Use this wizard to add an object to your project that supports COM+ 1.0 services, including transactions.
 

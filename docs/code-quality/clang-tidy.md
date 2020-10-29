@@ -7,13 +7,13 @@ f1_keywords: ["vs.codeanalysis.clangtidy"]
 ---
 # Using Clang-Tidy in Visual Studio
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Support for Clang-Tidy requires Visual Studio 2019 version 16.4 or later. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 Code Analysis natively supports [Clang-Tidy](https://clang.llvm.org/extra/clang-tidy/) for both MSBuild and CMake projects, whether using Clang or MSVC toolsets. Clang-Tidy checks can run as part of background code analysis. They appear as in-editor warnings (squiggles), and display in the Error List.
 

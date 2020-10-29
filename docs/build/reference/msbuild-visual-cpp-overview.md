@@ -14,7 +14,7 @@ Most targets and properties in the support files exist solely to implement the b
 
 By default, the primary Visual Studio support files are located in the following directories. This information is version-specific.
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 ### Visual Studio 2019
 
@@ -32,7 +32,7 @@ By default, the primary Visual Studio support files are located in the following
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ### Visual Studio 2017
 

@@ -14,7 +14,7 @@ A resource-only DLL is a DLL that contains nothing but resources, such as icons,
 
 To create a resource-only DLL, you create a new Windows DLL (non-MFC) project, and add your resources to the project:
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 1. Select **Win32 Project** in the **New Project** dialog box. Enter the project and solution names, and choose **OK**.
 
@@ -29,7 +29,7 @@ To create a resource-only DLL, you create a new Windows DLL (non-MFC) project, a
 1. Build the DLL.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 1. Select **Windows Desktop Wizard** in the **New Project** dialog box and choose **Next**. In the **Configure your new project** page, enter the project and solution names, and choose **Create**.
 

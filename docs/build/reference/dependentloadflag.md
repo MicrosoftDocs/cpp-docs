@@ -7,13 +7,13 @@ helpviewer_keywords: ["LINK tool [C++], dependent load flags", "-DEPENDENTLOADFL
 ---
 # /DEPENDENTLOADFLAG (Set default dependent load flags)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 The **/DEPENDENTLOADFLAG** option requires Visual Studio 2017 or later.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 Sets the default load flags used when the operating system resolves the statically linked imports of a module.
 
