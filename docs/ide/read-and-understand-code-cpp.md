@@ -51,7 +51,7 @@ When **Map Mode** is off, the scroll bar still highlights the changes you have m
 
 Hover over any variable, function, or other symbol to get information about it, including the declaration, and any comments that are located just preceding it.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ![Screenshot showing the Quick Info tooltip in Visual Studio 2019.](../ide/media/quick-info-vs2019.png "Quick Info")
 
@@ -63,7 +63,7 @@ If there is an error in your code, you can hover over it and **Quick Info** will
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ![Screenshot showing the Quick Info tooltip in Visual Studio 2017.](../ide/media/quick-info.png "Quick Info")
 

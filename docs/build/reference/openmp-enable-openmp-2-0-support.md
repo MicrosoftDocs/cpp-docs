@@ -11,13 +11,13 @@ Causes the compiler to process [`#pragma omp`](../../preprocessor/omp.md) direct
 
 ## Syntax
 
-::: moniker range=">= vs-2019"
+::: moniker range=">= msvc-160"
 
 > **/openmp**\[**:**__experimental__]
 
 ::: moniker-end
 
-::: moniker range="<= vs-2017"
+::: moniker range="<= msvc-150"
 
 > **/openmp**
 
@@ -27,7 +27,7 @@ Causes the compiler to process [`#pragma omp`](../../preprocessor/omp.md) direct
 
 `#pragma omp` is used to specify [Directives](../../parallel/openmp/reference/openmp-directives.md) and [Clauses](../../parallel/openmp/reference/openmp-clauses.md). If **/openmp** isn't specified in a compilation, the compiler ignores OpenMP clauses and directives. [OpenMP Function](../../parallel/openmp/reference/openmp-functions.md) calls are processed by the compiler even if **/openmp** isn't specified.
 
-::: moniker range=">= vs-2019"
+::: moniker range=">= msvc-160"
 
 The C++ compiler currently supports the OpenMP 2.0 standard. However, Visual Studio 2019 also now offers SIMD functionality. To use SIMD, compile by using the **/openmp:experimental** option. This option enables both the usual OpenMP features, and additional OpenMP SIMD features not available when using the **/openmp** switch.
 

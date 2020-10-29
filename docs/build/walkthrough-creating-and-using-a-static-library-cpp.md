@@ -30,7 +30,7 @@ An understanding of the fundamentals of the C++ language.
 
 The instructions for how to create the project vary depending on your version of Visual Studio. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create a static library project in Visual Studio 2019
 
@@ -50,7 +50,7 @@ The instructions for how to create the project vary depending on your version of
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ### To create a static library project in Visual Studio 2017
 
@@ -68,7 +68,7 @@ The instructions for how to create the project vary depending on your version of
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ### To create a static library project in Visual Studio 2015
 
@@ -162,7 +162,7 @@ The instructions for how to create the project vary depending on your version of
 
 ## <a name="CreateAppToRefTheLib"></a> Create a C++ console app that references the static library
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create a C++ console app that references the static library in Visual Studio 2019
 
@@ -178,7 +178,7 @@ The instructions for how to create the project vary depending on your version of
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ### To create a C++ console app that references the static library in Visual Studio 2017
 
@@ -198,7 +198,7 @@ The instructions for how to create the project vary depending on your version of
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ### To create a C++ console app that references the static library in Visual Studio 2015
 

@@ -10,19 +10,19 @@ The Visual Studio native project system is based on MSBuild. MSBuild defines fil
 
 ## The .vcxproj file, .props files and .targets files
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Project properties are stored in several files. Some are stored directly in the *`.vcxproj`* project file. Others come from other *`.targets`* or *`.props`* files that the project file imports and which supply default values. You'll find the Visual Studio 2015 project files in a locale-specific folder under the base directory, *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\v140`*.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 Project properties are stored in several files. Some are stored directly in the *`.vcxproj`* project file. Others come from other *`.targets`* or *`.props`* files that the project file imports and which supply default values. You'll find the Visual Studio 2017 project files in a locale-specific folder under the base directory, *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\`*.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 Project properties are stored in several files. Some are stored directly in the *`.vcxproj`* project file. Others come from other *`.targets`* or *`.props`* files that the project file imports and which supply default values. You'll find the Visual Studio project files in a locale-specific folder under the base directory, *`%VSINSTALLDIR%MSBuild\Microsoft\VC\<version>`*. The `<version>` is specific to the version of Visual Studio. It's *`v160`* for Visual Studio 2019.
 

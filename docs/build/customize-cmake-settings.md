@@ -5,7 +5,7 @@ helpviewer_keywords: ["CMake build settings"]
 ---
 # Customize CMake build settings
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 In Visual Studio 2019 and later, you can add configurations and customize their settings by using the **CMake settings editor**. The editor is intended to be a simpler alternative to manually editing the *CMakeSettings.json* file, but if you prefer to edit the file directly, you can click the **Edit JSON** link in the upper right of the editor.
 
@@ -151,7 +151,7 @@ For more information about each of the properties in the file, see [CMakeSetting
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Visual Studio 2017 provides several CMake configurations that define how CMake.exe is invoked to create the CMake cache for a given project. To add a new configuration, click the configuration drop-down in the toolbar and choose **Manage Configurations**:
 

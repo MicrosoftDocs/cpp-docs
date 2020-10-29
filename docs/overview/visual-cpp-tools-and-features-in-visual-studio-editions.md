@@ -6,7 +6,7 @@ ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 ---
 # C++ Tools and Features in Visual Studio Editions
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 The following C++ features are available in Visual Studio 2019. Unless stated otherwise, all features are available in all editions: Visual Studio Community, Visual Studio Professional, and Visual Studio Enterprise. Some features require specific workloads or optional components, which you can install with the Visual Studio Installer.
 
@@ -302,7 +302,7 @@ Linux:
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 The following tables show Visual C++ features that are available in Visual Studio 2017. An X in a cell indicates that the feature is available; an empty cell indicates that the feature is not available. Notes in parentheses indicate that a feature is available, but restricted.
 

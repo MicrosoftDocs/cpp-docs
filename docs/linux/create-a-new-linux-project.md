@@ -6,13 +6,13 @@ ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
 ---
 # Create a Linux MSBuild C++ project in Visual Studio
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux projects are available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 First, make sure you have the **Linux Development Workload** for Visual Studio installed. For more information, see [Download, install, and setup the Linux workload](download-install-and-setup-the-linux-development-workload.md).
 
@@ -40,7 +40,7 @@ To create a new Linux project in Visual Studio 2017, follow these steps:
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 First, make sure you have the **Linux Development Workload** for Visual Studio installed. For more information, see [Download, install, and set up the Linux workload](download-install-and-setup-the-linux-development-workload.md).
 

@@ -11,7 +11,7 @@ Header files for the C++ standard library and extensions, by category.
 
 ## Headers by category
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 | Category | Headers |
 | - | - |
@@ -49,7 +49,7 @@ Header files for the C++ standard library and extensions, by category.
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 |Category|Headers|
 |-|-|

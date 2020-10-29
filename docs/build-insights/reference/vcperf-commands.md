@@ -6,12 +6,12 @@ helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time a
 ---
 # Reference: vcperf commands
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 The C++ Build Insights tools are available in Visual Studio 2019. To see the documentation for that version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 This article lists and describes the commands available in *vcperf.exe*, and how to use them.
 

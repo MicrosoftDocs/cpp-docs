@@ -6,13 +6,13 @@ ms.description: "Use the Advanced property page in Visual Studio 2019 to set var
 ---
 # Advanced Property Page
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 The Advanced property page is available in Visual Studio 2019 and later. To see the documentation for that version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The Advanced property page is available in Visual Studio 2019 and later.
 

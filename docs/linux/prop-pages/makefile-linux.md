@@ -5,13 +5,13 @@ ms.assetid: 3dec6853-43f6-412b-9806-9bfad333a204
 ---
 # Makefile Project Properties (Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux support is available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 This is a partial list of the properties available in a Linux Makefile project. Many Makefile project properties are identical to the Linux C++ Console Application project properties.
 

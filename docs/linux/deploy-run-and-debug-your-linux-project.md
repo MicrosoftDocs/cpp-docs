@@ -6,13 +6,13 @@ ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
 ---
 # Deploy, run, and debug your Linux MSBuild project
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 Linux support is available in Visual Studio 2017 and later. To see the documentation for these versions, set the **Version** drop-down located above the table of contents to **Visual Studio 2017** or **Visual Studio 2019**.
 ::: moniker-end
 
 Once you've created a MSBuild-based Linux C++ project in Visual Studio and you've connected to the project using the [Linux Connection Manager](connect-to-your-remote-linux-computer.md), you can run and debug the project. You compile, execute, and debug the code on the remote target.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 **Visual Studio 2019 version 16.1** You can target different Linux systems for debugging and building. For example, you can cross-compile on x64 and deploy to an ARM device when targeting IoT scenarios. For more information, see [Specify different machines for building and debugging](#separate_build_debug) later in this article.
 
@@ -28,7 +28,7 @@ There are several ways to interact with and debug your Linux project.
 
 1. Select debugging mode in the **Debugging** property page.
 
-   ::: moniker range="vs-2019"
+   ::: moniker range="msvc-160"
 
    GDB is used to debug applications running on Linux. When debugging on a remote system (not WSL) GDB can run in two different modes, which can be selected from the **Debugging Mode** option in the project's **Debugging** property page:
 
@@ -36,7 +36,7 @@ There are several ways to interact with and debug your Linux project.
 
    ::: moniker-end
 
-   ::: moniker range="vs-2017"
+   ::: moniker range="msvc-150"
 
    GDB is used to debug applications running on Linux. GDB can run in two different modes, which can be selected from the **Debugging Mode** option in the project's **Debugging** property page:
 
@@ -115,7 +115,7 @@ ExePath="C:\temp\ConsoleApplication17\ConsoleApplication17\bin\x64\Debug\Console
 
 The **AttachOptionsForConnection** has most of the attributes you might need. The example above shows how to specify a location to search for additional .so libraries. The child element **ServerOptions** enables attaching to the remote process with gdbserver instead. To do that, you need to specify a local gdb client (the one shipped in Visual Studio 2017 is shown above) and a local copy of the binary with symbols. The **SetupCommands** element enables you to pass commands directly to gdb. You can find all the options available in the [LaunchOptions.xsd schema](https://github.com/Microsoft/MIEngine/blob/master/src/MICore/LaunchOptions.xsd) on GitHub.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## <a name="separate_build_debug"></a> Specify different machines for building and debugging in MSBuild-based Linux projects
 

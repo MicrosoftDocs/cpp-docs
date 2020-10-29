@@ -6,12 +6,12 @@ helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time a
 ---
 # Get started with C++ Build Insights
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 The C++ Build Insights tools are available in Visual Studio 2019. To see the documentation for that version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 C++ Build Insights is a collection of tools that provides increased visibility into the Microsoft Visual C++ (MSVC) tool chain. The tools collect data about your C++ builds, and present it in a format that can help you answer common questions, like:
 

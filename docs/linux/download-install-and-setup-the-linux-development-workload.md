@@ -6,13 +6,13 @@ ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 ---
 # Download, install, and set up the Linux workload
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux projects are supported in Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 You can use the Visual Studio IDE on Windows to create, edit, and debug C++ projects that execute on a remote Linux system, virtual machine, or the [Windows Subsystem for Linux](/windows/wsl/about).
 
@@ -22,7 +22,7 @@ For any of these scenarios, the **Linux development with C++** workload is requi
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## Visual Studio setup
 
@@ -46,7 +46,7 @@ On Windows 10, you can install and target your favorite Linux distro on the Wind
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Linux projects in Visual Studio require the following dependencies to be installed on your remote Linux system or WSL:
 
@@ -62,7 +62,7 @@ The following commands assume you're using g++ instead of clang.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 Linux projects in Visual Studio require the following dependencies to be installed on your remote Linux system or WSL:
 
@@ -75,7 +75,7 @@ Linux projects in Visual Studio require the following dependencies to be install
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## Linux setup: Ubuntu on WSL
 
@@ -87,7 +87,7 @@ sudo apt-get install g++ gdb make ninja-build rsync zip
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## Ubuntu on remote Linux systems
 
@@ -111,7 +111,7 @@ The target Linux system must have **openssh-server**, **g++**, **gdb**, and **ma
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## Fedora on WSL
 
@@ -125,7 +125,7 @@ Fedora uses the **dnf** package installer. To download **g++**, **gdb**, **make*
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## Fedora on remote Linux systems
 

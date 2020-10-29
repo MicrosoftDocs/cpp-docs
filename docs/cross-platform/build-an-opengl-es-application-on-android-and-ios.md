@@ -19,7 +19,7 @@ To build and test the iOS app, you'll need a Mac computer. Set it up according t
 
 In this tutorial, you first create a new OpenGL ES Application project. and then build and run the default app in an Android emulator. Next you build the app for iOS and run the app on an iOS device.
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 1. In Visual Studio, choose **File** > **New** > **Project**.
 
@@ -35,7 +35,7 @@ In this tutorial, you first create a new OpenGL ES Application project. and then
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. In Visual Studio, choose **File** > **New** > **Project**.
 

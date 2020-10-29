@@ -6,13 +6,13 @@ helpviewer_keywords: ["CMake debugging"]
 ---
 # Configure CMake debugging sessions
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Native CMake support is available in Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 All executable CMake targets are shown in the **Startup Item** dropdown in the **General** toolbar. Select one to start a debugging session and launch the debugger.
 
@@ -218,7 +218,7 @@ You can configure the `cppdbg` configuration to debug using `gdbserver`. You can
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## See also
 
