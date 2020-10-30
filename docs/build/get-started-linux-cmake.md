@@ -137,7 +137,7 @@ In this step, we'll debug an example program that demonstrates the Bullet Physic
 
 ## Add a Linux configuration and connect to the remote machine
 
-1. Add a Linux configuration. Right-click the CMakeSettings.json file in the **Solution Explorer** view and select **Add Configuration**. You see the same Add Configuration to CMakeSettings dialog as before. Select **Linux-Debug** this time.
+1. Add a Linux configuration. Right-click the CMakeSettings.json file in the **Solution Explorer** view and select **Add Configuration**. You see the same Add Configuration to CMakeSettings dialog as before. Select **Linux-Debug** this time, then save the CMakeSettings.json file (ctrl + s).
 
 1. **Visual Studio 2019 version 16.6 or later** Scroll down to the bottom of the CMake Settings Editor and select **Show advanced settings**. Select **Unix Makefiles** as the **CMake generator**, then save the CMakeSettings.json file (ctrl + s).
 
