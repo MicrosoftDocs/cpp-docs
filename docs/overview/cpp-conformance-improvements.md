@@ -1150,6 +1150,33 @@ void f() {
 }
 ```
 
+<!-- TODO 16.8 -->
+## <a name="improvements_168"></a> Conformance improvements in Visual Studio 2019 version 16.8
+
+### `/permissive-` and C++20 Modules are on by default under `/std:c++latest`
+
+C++20 Modules is now supported, by default, under **`/std:c++latest`**. For more details regarding this change and scenarios where module and import are conditionally treated as keywords, see [Standard C++20 Modules support with MSVC in Visual Studio 2019 version 16.8](https://devblogs.microsoft.com/cppblog/standard-c20-modules-support-with-msvc-in-visual-studio-2019-version-16-8/).
+
+As a prerequisite for Modules support, **`/permissive-`** is now enabled when **`/std:c++latest`** is specified. For more information, see [`/permissive-`](../build/reference/permissive-standards-conformance.md).
+For code that previously compiled under **`/std:c++latest`** and requires non-conformant compiler behaviors, /permissive may be specified to turn off strict conformance mode in the compiler and must appear after **`/std:c++latest`** in the command line argument list. However, specifying /permissive will result in an error if Modules usage is encountered.
+
+error C1214: Modules conflict with non-standard behavior requested via '[option]'
+Where the most common values for [option] are:
+
+Option	Description
+/Zc:twoPhase-	Two Phase name lookup (/Zc:twoPhase) is required for C++20 Modules and implied by /permissive-. See also /Zc:twoPhase documentation .
+/Zc:hiddenFriend-	Enables standard hidden friend name lookup rules is required for C++20 Modules and implied by /permissive-.
+/Zc:preprocessor-	Use of the conformant preprocessor (/Zc:preprocessor) is required for C++20 header unit usage and creation only. Named Modules do not require this option. See also /Zc:preprocessor documentation 
+When using the std.* Modules which ship with Visual Studio the option /experimental:module is still required for their use as they are not yet standardized.
+
+Using /experimental:module also implies /Zc:twoPhase and /Zc:hiddenFriend. Previously code compiled with Modules could sometimes be compiled with /Zc:twoPhase- if the Module was only consumed, this behavior is no longer supported.
+### 'Class rvalue used as lvalue' extension
+### 'Class rvalue used as lvalue' extension
+### 'Class rvalue used as lvalue' extension
+### 'Class rvalue used as lvalue' extension
+### 'Class rvalue used as lvalue' extension
+### 'Class rvalue used as lvalue' extension
+
 ## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
 
 ### `reinterpret_cast` in a `constexpr` function
