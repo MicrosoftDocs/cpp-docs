@@ -43,7 +43,7 @@ These functions affect the behavior of **`setlocale`**, **`_tsetlocale`**, **`_w
 
 If you use **`_configthreadlocale`** to enable a per-thread locale, we recommend that you call **`setlocale`** or **`_wsetlocale`** to set the preferred locale in that thread immediately afterward.
 
-If *`per_thread_locale_type`* is not one of the values listed in the table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns -1.
+If *`per_thread_locale_type`* isn't one of the values listed in the table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns -1.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
