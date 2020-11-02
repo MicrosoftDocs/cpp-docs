@@ -12,7 +12,7 @@ This walkthrough modifies the classic Scribble 1.0 MFC sample that lets you use 
 
 ## Prerequisites
 
-The [Scribble 1.0 MFC sample](https://www.softpedia.com/get/Office-tools/Diary-Organizers-Calendar/SCRIBBLE.shtml). For help on converting to Visual Studio 2017 or later, see [Porting Guide: MFC Scribble](../porting/porting-guide-mfc-scribble.md).
+The [Scribble 1.0 MFC sample](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/MFC/general/Scribble). For help on converting to Visual Studio 2017 or later, see [Porting Guide: MFC Scribble](../porting/porting-guide-mfc-scribble.md).
 
 ## <a name="top"></a> Sections
 
