@@ -1,7 +1,7 @@
 ---
 title: "/std (Specify Language Standard Version)"
 description: "The MSVC compiler option /std specifies the C or C++ language standard supported by the compiler."
-ms.date: 09/11/2020
+ms.date: 10/29/2020
 f1_keywords: ["/std", "-std", "/std:c++14", "/std:c++17", "/std:c11", "/std:c17", "VC.Project.VCCLCompilerTool.CppLanguageStandard"]
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
 ---
@@ -64,7 +64,7 @@ Starting in Visual Studio 2019 version 16.8, you may specify **`/std:c11`** or *
 
 When you specify **`/std:c11`** or **`/std:c17`**, MSVC supports all the required features of C11 and C17. The compiler options enable support for these functionalities:
 
-- **`_Pragma`**
+- [`_Pragma`](../../preprocessor/pragma-directives-and-the-pragma-keyword.md#the-_pragma-preprocessing-operator-c99-c11)
 
 - **`restrict`**
 
