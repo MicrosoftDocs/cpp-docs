@@ -16,7 +16,7 @@ Graphical resources are the images you define for your application. You can draw
 
 You can also use the **Image Editor** and the [Binary Editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors don't support editing embedded resources.
 
-In addition to creating new graphical resources, you can [import existing images](../windows/how-to-copy-resources.md#import-and-export-resources) for editing and then add them to your project. You can also open and edit images that are not part of a project for [stand-alone image editing](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md).
+In addition to creating new graphical resources, you can [import existing images](../windows/how-to-copy-resources.md#import-and-export-resources) for editing and then add them to your project. You can also open and edit images that are not part of a project for [stand-alone image editing](./selecting-an-area-of-an-image-image-editor-for-icons.md).
 
 For information on the **Image Editor**, see how to [Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md), [Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), [Use a Drawing Tool](../windows/using-a-drawing-tool-image-editor-for-icons.md), [Work with Color](../windows/working-with-color-image-editor-for-icons.md), and [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md).
 
@@ -40,10 +40,10 @@ The **Image** menu, which appears only when the **Image Editor** is active, has 
 |**Load Palette**|Opens the **Load Color Palette** dialog box, which enables you to load palette colors previously saved to a .pal file.|
 |**Save Palette**|Saves the palette colors to a .pal file.|
 |**Draw Opaque**|When selected, makes the current selection opaque.<br/><br/>When cleared, makes the current selection transparent.|
-|**Toolbar Editor**|Opens the [New Toolbar Resource dialog box](../windows/new-toolbar-resource-dialog-box.md).|
+|**Toolbar Editor**|Opens the [New Toolbar Resource dialog box](./toolbar-editor.md).|
 |**Grid Settings**|Opens the **Grid Settings** dialog box in which you can specify grids for your image.|
-|**New Image Type**|Opens the [New \<Device> Image Type dialog box](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md).<br/><br/>A single icon resource can contain several images of different sizes and windows can use the appropriate icon size depending on how it's going to be displayed. A new device type doesn't modify the size of the icon, but rather creates a new image within the icon. Only applies to icons and cursors.|
-|**Current Icon/Cursor Image Type**|Opens a submenu that lists the first nine available cursor or icon images. The last command on the submenu, **More**, opens the [Open \<Device> Image dialog box](../windows/open-device-image-dialog-box-image-editor-for-icons.md).|
+|**New Image Type**|Opens the [New \<Device> Image Type dialog box](./creating-an-icon-or-other-image-image-editor-for-icons.md).<br/><br/>A single icon resource can contain several images of different sizes and windows can use the appropriate icon size depending on how it's going to be displayed. A new device type doesn't modify the size of the icon, but rather creates a new image within the icon. Only applies to icons and cursors.|
+|**Current Icon/Cursor Image Type**|Opens a submenu that lists the first nine available cursor or icon images. The last command on the submenu, **More**, opens the [Open \<Device> Image dialog box](./creating-an-icon-or-other-image-image-editor-for-icons.md).|
 |**Delete Image Type**|Deletes the selected device image.|
 |**Tools**|Launches a submenu that contains all the tools available from the **Image Editor** toolbar.|
 

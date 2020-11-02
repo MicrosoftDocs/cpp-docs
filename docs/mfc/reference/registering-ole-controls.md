@@ -12,7 +12,7 @@ The following functions allow you to add and remove the control's class, propert
 
 ### Registering OLE Controls
 
-|||
+|Name|Description|
 |-|-|
 |[AfxOleRegisterControlClass](#afxoleregistercontrolclass)|Adds the control's class to the registration database.|
 |[AfxOleRegisterPropertyPageClass](#afxoleregisterpropertypageclass)|Adds a control property page to the registration database.|

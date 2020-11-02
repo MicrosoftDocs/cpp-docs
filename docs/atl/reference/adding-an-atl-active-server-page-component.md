@@ -5,15 +5,15 @@ ms.assetid: 7be2204c-6e58-4099-8892-001b848c8987
 ---
 # Adding an ATL Active Server Page Component
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The ATL Active Server Pages component wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-To add an Active Template Library (ATL) object to your project, your project must have been created as an ATL COM application or as an MFC application that contains ATL support. You can use the [ATL Project Wizard](../../atl/reference/atl-project-wizard.md) to create an ATL application, you can select **Add ATL Support to MFC** from the [Add Class Dialog Box](../../ide/add-class-dialog-box.md) dialog box, or you can [add an ATL object to your MFC application](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) to implement ATL support for an MFC application.
+To add an Active Template Library (ATL) object to your project, your project must have been created as an ATL COM application or as an MFC application that contains ATL support. You can use the [ATL Project Wizard](../../atl/reference/atl-project-wizard.md) to create an ATL application, you can select **Add ATL Support to MFC** from the [Add Class Dialog Box](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) dialog box, or you can [add an ATL object to your MFC application](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) to implement ATL support for an MFC application.
 
 Active Server Pages components are part of the Internet Information Services architecture, which provides the following advanced Web development features:
 
@@ -29,7 +29,7 @@ Active Server Pages components are part of the Internet Information Services arc
 
 1. From the shortcut menu, click **Add**, and then click **Add Class**.
 
-1. In the [Add Class](../../ide/add-class-dialog-box.md) dialog box, in the **Templates** pane, click **ATL Active Server Page Component**, and then click **Open** to display the [ATL Active Server Page Component Wizard](../../atl/reference/atl-active-server-page-component-wizard.md).
+1. In the [Add Class](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) dialog box, in the **Templates** pane, click **ATL Active Server Page Component**, and then click **Open** to display the [ATL Active Server Page Component Wizard](../../atl/reference/atl-active-server-page-component-wizard.md).
 
 ::: moniker-end
 

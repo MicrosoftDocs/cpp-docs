@@ -1,6 +1,8 @@
 ---
 title: "Global state in the CRT"
-ms.date: "04/02/2020"
+description: "Describes how shared global state is handled in the Microsoft Universal C Runtime." 
+ms.topic: "conceptual"
+ms.date: "10/02/2020"
 helpviewer_keywords: ["CRT global state"]
 ---
 
@@ -8,7 +10,7 @@ helpviewer_keywords: ["CRT global state"]
 
 Some functions in the Universal C Runtime (UCRT) use global state. For example, `setlocale()` sets the locale for the entire program, which affects the digit separators, text code page, and so on.
 
-The UCRT's global state is not shared between applications and the OS. For example, if your application calls `setlocale()`, it won't affect the locale for any OS components that uses the C run-time, or vice-versa.
+The UCRT's global state isn't shared between applications and the OS. For example, if your application calls `setlocale()`, it won't affect the locale for any OS components that uses the C run-time, or the other way around.
 
 ## OS-specific versions of CRT functions
 
@@ -23,8 +25,8 @@ The OS-specific versions of these functions are in `ucrt.osmode.lib`. For exampl
 
 There are two ways to isolate your component's CRT state from an app's CRT state:
 
-- Statically link your component by using compiler options /MT (release) or MTd (debug). For details, see [/MD, /MT, /LD](https://docs.microsoft.com/cpp/build/reference/md-mt-ld-use-run-time-library?view=vs-2019). Note that static linking can greatly increase binary size.
-- Starting with Windows 10 20H2, get CRT state isolation by dynamically linking to the CRT but call the OS-mode exports (the functions that begin with _o_). To call the OS-mode exports, statically link as before, but ignore the static UCRT by using linker option `/NODEFAULTLIB:libucrt.lib` (release) or `/NODEFAULTLIB:libucrtd.lib` (debug) See [/NODEFAULTLIB (Ignore Libraries)](https://docs.microsoft.com/cpp/build/reference/nodefaultlib-ignore-libraries?view=vs-2019) for details. And add `ucrt.osmode.lib` to the linker input.
+- Statically link your component by using compiler options `/MT` (release) or `/MTd` (debug). For details, see [/MD, /MT, /LD](../build/reference/md-mt-ld-use-run-time-library.md). Static linking can greatly increase binary size.
+- Starting with Windows 10 version 2004, dynamically link to the CRT but call the OS-mode exports (the functions that begin with _o_). To call the OS-mode exports, statically link as before, but ignore the static UCRT by using linker option `/NODEFAULTLIB:libucrt.lib` (release) or `/NODEFAULTLIB:libucrtd.lib` (debug). And add `ucrt.osmode.lib` to the linker input. See [/NODEFAULTLIB (Ignore Libraries)](../build/reference/nodefaultlib-ignore-libraries.md) for details.
 
 > [!Note]
 > In source code,  write `setlocale()`, not `_o_setlocale()`. When you link against `ucrt.osmode.lib`, the linker will automatically substitute the OS-specific version of the function. That is, `setlocale()` will be substituted with `_o_setlocale()`.
@@ -51,7 +53,7 @@ Global state affected by the separation of app and OS state includes:
 - The buffer used by [_putch, _putwch](reference/putch-putwch.md)
 - [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)
 - [_set_new_handler](reference/set-new-handler.md) and [_set_new_mode](reference/set-new-mode.md)
-- [fmode] (text-and-binary-mode-file-i-o.md)
+- [fmode](text-and-binary-mode-file-i-o.md)
 - [Time zone information](time-management.md)
 
 ## See also

@@ -44,7 +44,7 @@ A mutex type is also known as a *lockable type*. If it does not provide the memb
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[lock_guard Class](../standard-library/lock-guard-class.md)|Represents a template that can be instantiated to create an object whose destructor unlocks a `mutex`.|
 |[mutex Class (C++ Standard Library)](../standard-library/mutex-class-stl.md)|Represents a mutex type. Use objects of this type to enforce mutual exclusion within a program.|
@@ -56,7 +56,7 @@ A mutex type is also known as a *lockable type*. If it does not provide the memb
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[call_once](../standard-library/mutex-functions.md#call_once)|Provides a mechanism for calling a specified callable object exactly once during execution.|
 |[lock](../standard-library/mutex-functions.md#lock)|Attempts to lock all arguments without deadlock.|
@@ -65,7 +65,7 @@ A mutex type is also known as a *lockable type*. If it does not provide the memb
 
 ### Structs
 
-|||
+|Name|Description|
 |-|-|
 |[adopt_lock_t Structure](../standard-library/adopt-lock-t-structure.md)|Represents a type that is used to define an `adopt_lock`.|
 |[defer_lock_t Structure](../standard-library/defer-lock-t-structure.md)|Represents a type that defines a `defer_lock` object that is used to select one of the overloaded constructors of `unique_lock`.|
@@ -74,7 +74,7 @@ A mutex type is also known as a *lockable type*. If it does not provide the memb
 
 ### Variables
 
-|||
+|Name|Description|
 |-|-|
 |[adopt_lock](../standard-library/mutex-functions.md#adopt_lock)|Represents an object that can be passed to constructors for `lock_guard` and `unique_lock` to indicate that the mutex object that is also being passed to the constructor is locked.|
 |[defer_lock](../standard-library/mutex-functions.md#defer_lock)|Represents an object that can be passed to the constructor for `unique_lock`, to indicate that the constructor should not lock the mutex object that is also being passed to it.|

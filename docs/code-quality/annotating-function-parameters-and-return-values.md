@@ -266,15 +266,37 @@ For the annotations in the following table, when a pointer parameter is annotate
 When a pointer parameter annotation includes `_opt_`, it indicates that the parameter may be null. Otherwise, the annotation behaves the same as the version that doesn't include `_opt_`. Here is a list of the `_opt_` variants of the pointer parameter annotations:
 
 :::row:::
-    :::column:::
-        `_In_opt_`<br /><br /> `_Out_opt_`<br /><br /> `_Inout_opt_`<br /><br /> `_In_opt_z_`<br /><br /> `_Inout_opt_z_`<br /><br /> `_In_reads_opt_`<br /><br /> `_In_reads_bytes_opt_`<br /><br /> `_In_reads_opt_z_`
-    :::column-end:::
-    :::column:::
-        `_Out_writes_opt_`<br /><br /> `_Out_writes_opt_z_`<br /><br /> `_Inout_updates_opt_`<br /><br /> `_Inout_updates_bytes_opt_`<br /><br /> `_Inout_updates_opt_z_`<br /><br /> `_Out_writes_to_opt_`<br /><br /> `_Out_writes_bytes_to_opt_`<br /><br /> `_Out_writes_all_opt_`<br /><br /> `_Out_writes_bytes_all_opt_`
-    :::column-end:::
-    :::column:::
-        `_Inout_updates_to_opt_`<br /><br /> `_Inout_updates_bytes_to_opt_`<br /><br /> `_Inout_updates_all_opt_`<br /><br /> `_Inout_updates_bytes_all_opt_`<br /><br /> `_In_reads_to_ptr_opt_`<br /><br /> `_In_reads_to_ptr_opt_z_`<br /><br /> `_Out_writes_to_ptr_opt_`<br /><br /> `_Out_writes_to_ptr_opt_z_`
-    :::column-end:::
+   :::column:::
+      `_In_opt_`\
+      `_Out_opt_`\
+      `_Inout_opt_`\
+      `_In_opt_z_`\
+      `_Inout_opt_z_`\
+      `_In_reads_opt_`\
+      `_In_reads_bytes_opt_`\
+      `_In_reads_opt_z_`
+   :::column-end:::
+   :::column:::
+      `_Out_writes_opt_`\
+      `_Out_writes_opt_z_`\
+      `_Inout_updates_opt_`\
+      `_Inout_updates_bytes_opt_`\
+      `_Inout_updates_opt_z_`\
+      `_Out_writes_to_opt_`\
+      `_Out_writes_bytes_to_opt_`\
+      `_Out_writes_all_opt_`\
+      `_Out_writes_bytes_all_opt_`
+   :::column-end:::
+   :::column:::
+      `_Inout_updates_to_opt_`\
+      `_Inout_updates_bytes_to_opt_`\
+      `_Inout_updates_all_opt_`\
+      `_Inout_updates_bytes_all_opt_`\
+      `_In_reads_to_ptr_opt_`\
+      `_In_reads_to_ptr_opt_z_`\
+      `_Out_writes_to_ptr_opt_`\
+      `_Out_writes_to_ptr_opt_z_`
+   :::column-end:::
 :::row-end:::
 
 ## Output pointer parameters
@@ -433,12 +455,25 @@ A common use of the reference parameter is for output parameters. For simple out
 The return value of a function resembles an `_Out_` parameter but is at a different level of de-reference, and you don't have to consider the concept of the pointer to the result. For the following annotations, the return value is the annotated object—a scalar, a pointer to a struct, or a pointer to a buffer. These annotations have the same semantics as the corresponding `_Out_` annotation.
 
 :::row:::
-    :::column:::
-        `_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`
-    :::column-end:::
-    :::column:::
-        `_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`
-    :::column-end:::
+   :::column:::
+      `_Ret_z_`\
+      `_Ret_writes_(s)`\
+      `_Ret_writes_bytes_(s)`\
+      `_Ret_writes_z_(s)`\
+      `_Ret_writes_to_(s,c)`\
+      `_Ret_writes_maybenull_(s)`\
+      `_Ret_writes_to_maybenull_(s)`\
+      `_Ret_writes_maybenull_z_(s)`
+   :::column-end:::
+   :::column:::
+      `_Ret_maybenull_`\
+      `_Ret_maybenull_z_`\
+      `_Ret_null_`\
+      `_Ret_notnull_`\
+      `_Ret_writes_bytes_to_`\
+      `_Ret_writes_bytes_maybenull_`\
+      `_Ret_writes_bytes_to_maybenull_`
+   :::column-end:::
 :::row-end:::
 
 ## Format string parameters

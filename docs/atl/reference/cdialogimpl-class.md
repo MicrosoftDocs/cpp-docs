@@ -32,7 +32,7 @@ The base class of your new class. The default base class is [CWindow](../../atl/
 
 ### Methods
 
-|||
+|Function|Description|
 |-|-|
 |[Create](#create)|Creates a modeless dialog box.|
 |[DestroyWindow](#destroywindow)|Destroys a modeless dialog box.|
@@ -41,7 +41,7 @@ The base class of your new class. The default base class is [CWindow](../../atl/
 
 ### CDialogImplBaseT Methods
 
-|||
+|Function|Description|
 |-|-|
 |[GetDialogProc](#getdialogproc)|Returns the current dialog box procedure.|
 |[MapDialogRect](#mapdialogrect)|Maps the dialog-box units of the specified rectangle to screen units (pixels).|
@@ -49,7 +49,7 @@ The base class of your new class. The default base class is [CWindow](../../atl/
 
 ### Static Functions
 
-|||
+|Function|Description|
 |-|-|
 |[DialogProc](#dialogproc)|Processes messages sent to the dialog box.|
 |[StartDialogProc](#startdialogproc)|Called when the first message is received to process messages sent to the dialog box.|

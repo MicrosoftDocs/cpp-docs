@@ -24,7 +24,7 @@ class CEnumerator :
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Find](#find)|Searches through available providers (data sources) looking for one with the specified name.|
 |[GetMoniker](#getmoniker)|Retrieves the `IMoniker` interface for the current record.|
@@ -73,7 +73,7 @@ HRESULT GetMoniker(LPMONIKER* ppMoniker,
 #### Parameters
 
 *ppMoniker*<br/>
-[out] The moniker parsed from the display name ([CEnumeratorAccessor::m_szParseName](../../data/oledb/cenumeratoraccessor-m-szparsename.md)) of the current row.
+[out] The moniker parsed from the display name ([CEnumeratorAccessor::m_szParseName](./cenumeratoraccessor-class.md#szparsename)) of the current row.
 
 *lpszDisplayName*<br/>
 [in] The display name to parse.

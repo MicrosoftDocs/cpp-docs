@@ -11,7 +11,7 @@ ms.assetid: cc18611d-9454-40a4-ad73-69823d5888fb
 
 Two definitions in a file differ in their use of [dllimport](../../cpp/dllexport-dllimport.md).
 
-## Example
+## Examples
 
 The following sample generates C4273.
 
@@ -21,8 +21,6 @@ The following sample generates C4273.
 char __declspec(dllimport) c;
 char c;   // C4273, delete this line or the line above to resolve
 ```
-
-## Example
 
 The following sample generates C4273.
 

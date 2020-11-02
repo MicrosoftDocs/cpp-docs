@@ -54,9 +54,7 @@ class CMyClass {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Class method, method|
 |**Repeatable**|No|

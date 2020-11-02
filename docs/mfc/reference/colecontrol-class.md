@@ -868,7 +868,7 @@ The *pbParams* argument is a space-separated list of **VTS_**. One or more of th
 |VTS_YSIZE_HIMETRIC|OLE_XSIZE_HIMETRIC|
 
 > [!NOTE]
-> Additional variant constants have been defined for all variant types, with the exception of VTS_FONT and VTS_PICTURE, that provide a pointer to the variant data constant. These constants are named using the **VTS_P**`constantname` convention. For example, VTS_PCOLOR is a pointer to a VTS_COLOR constant.
+> Additional variant constants have been defined for all variant types, with the exception of VTS_FONT and VTS_PICTURE, that provide a pointer to the variant data constant. These constants are named using the VTS_P\<CONSTANT-NAME> convention. For example, VTS_PCOLOR is a pointer to a VTS_COLOR constant.
 
 ## <a name="firekeydown"></a> COleControl::FireKeyDown
 
@@ -1095,7 +1095,7 @@ void FireReadyStateChange();
 
 The ready state can be one of the following values:
 
-|||
+|Name|Description|
 |-|-|
 |READYSTATE_UNINITIALIZED|Default initialization state|
 |READYSTATE_LOADING|Control is currently loading its properties|
@@ -1119,7 +1119,7 @@ virtual DWORD GetActivationPolicy();
 
 A combination of flags from the POINTERINACTIVE enumeration. Possible flags are:
 
-|||
+|Name|Description|
 |-|-|
 |POINTERINACTIVE_ACTIVATEONENTRY|The object should be in-place activated when the mouse enters it during a mouse move operation.|
 |POINTERINACTIVE_DEACTIVATEONLEAVE|The object should be deactivated when the mouse leaves the object during a mouse move operation.|
@@ -1345,7 +1345,7 @@ enum ControlFlags {
 
 By default, `GetControlFlags` returns `fastBeginPaint | clipPaintDC`.
 
-|||
+|Name|Description|
 |-|-|
 |`fastBeginPaint`|If set, uses a begin-paint function tailored for OLE controls instead of the [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint) API (set by default).|
 |`clipPaintDC`|If not set, disables the call to `IntersectClipRect` made by `COleControl` and gains a small speed advantage. If you are using windowless activation, the flag has no effect.|
@@ -1568,7 +1568,7 @@ long GetReadyState();
 
 The readiness state of the control, one of the following values:
 
-|||
+|Name|Description|
 |-|-|
 |READYSTATE_UNINITIALIZED|Default initialization state|
 |READYSTATE_LOADING|Control is currently loading its properties|
@@ -1716,7 +1716,7 @@ void InternalSetReadyState(long lNewReadyState);
 *lNewReadyState*<br/>
 The readiness state to set for the control, one of the following values:
 
-|||
+|Name|Description|
 |-|-|
 |READYSTATE_UNINITIALIZED|Default initialization state|
 |READYSTATE_LOADING|Control is currently loading its properties|
@@ -2497,7 +2497,7 @@ virtual DWORD OnGetViewStatus();
 
 One of the values of the VIEWSTATUS enumeration if successful; otherwise 0. Possible values are any combination of the following:
 
-|||
+|Name|Description|
 |-|-|
 |VIEWSTATUS_OPAQUE|Object is completely opaque. If this bit is not set, the object contains transparent parts. This bit applies only to content-related aspects and not to DVASPECT_ICON or DVASPECT_DOCPRINT.|
 |VIEWSTATUS_SOLIDBKGND|Object has a solid background (consisting in a solid color, not a brush pattern). This bit is meaningful only if VIEWSTATUS_OPAQUE is set and applies only to content-related aspects and not to DVASPECT_ICON or DVASPECT_DOCPRINT.|

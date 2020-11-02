@@ -56,7 +56,7 @@ You can define the following operators:
 |&#124;&#124;|Binary|
 |~|Unary|
 
-## Example
+## Example: User-defined operators
 
 ```cpp
 // mcppv2_user-defined_operators.cpp
@@ -128,7 +128,7 @@ int main() {
 -3
 ```
 
-## Example
+## Example: Operator synthesis
 
 The following sample demonstrates operator synthesis, which is only available when you use **/clr** to compile. Operator synthesis creates the assignment form of a binary operator, if one is not defined, where the left-hand side of the assignment operator has a CLR type.
 

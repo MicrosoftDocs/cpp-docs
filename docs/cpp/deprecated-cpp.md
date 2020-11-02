@@ -19,7 +19,7 @@ With the exceptions noted below, the **`deprecated`** declaration offers the sam
 
 If the compiler encounters the use of a deprecated identifier or the standard [`[[deprecated]]`](attributes.md) attribute, a [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) warning is thrown.
 
-## Example
+## Examples
 
 The following sample shows how to mark functions as deprecated, and how to specify a message that will be displayed at compile time, when the deprecated function is used.
 
@@ -39,8 +39,6 @@ int main() {
    func3(1);   // C4996
 }
 ```
-
-## Example
 
 The following sample shows how to mark classes as deprecated, and how to specify a message that will be displayed at compile time, when the deprecated class is used.
 

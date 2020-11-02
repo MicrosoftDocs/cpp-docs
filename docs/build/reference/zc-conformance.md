@@ -1,6 +1,7 @@
 ---
 title: "/Zc (Conformance)"
-ms.date: "03/06/2018"
+description: "The /Zc conformance compiler options enable or disable support for conforming or backward-compatible behavior."
+ms.date: 09/10/2020
 helpviewer_keywords: ["/Zc compiler options [C++]", "-Zc compiler options [C++]", "Conformance compiler options", "Zc compiler options [C++]"]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
 ---
@@ -28,6 +29,7 @@ These are the **`/Zc`** compiler options:
 | [`/ZcimplicitNoexcept`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Enable implicit **`noexcept`** on required functions (on by default). |
 | [`/Zc:inline`](zc-inline-remove-unreferenced-comdat.md) | Remove unreferenced function or data if it is COMDAT or has internal linkage only (off by default). |
 | [`/Zc:noexceptTypes`](zc-noexcepttypes.md) | Enforce C++17 **`noexcept`** rules (on by default in C++17 or later). |
+| [`/Zc:preprocessor`](zc-preprocessor.md) | Use the new conforming preprocessor (off by default, except in C11/C17). |
 | [`/Zc:referenceBinding`](zc-referencebinding-enforce-reference-binding-rules.md) | A UDT temporary will not bind to an non-const lvalue reference (off by default). |
 | [`/Zc:rvalueCast`](zc-rvaluecast-enforce-type-conversion-rules.md) | Enforce Standard C++ explicit type conversion rules (off by default). |
 | [`/Zc:sizedDealloc`](zc-sizeddealloc-enable-global-sized-dealloc-functions.md) | Enable C++14 global sized deallocation functions (on by default). |

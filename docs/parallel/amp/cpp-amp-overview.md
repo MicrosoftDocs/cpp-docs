@@ -497,4 +497,4 @@ Modulus and division of unsigned integers have significantly better performance 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)<br/>
 [Reference (C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)<br/>
-[Parallel Programming in Native Code Blog](https://go.microsoft.com/fwlink/p/?linkid=238472)
+[Parallel Programming in Native Code Blog](/archive/blogs/nativeconcurrency/)

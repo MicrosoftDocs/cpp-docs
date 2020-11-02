@@ -13,7 +13,7 @@ A type does not have a default, indexed property.
 
 For more information, see [property](../../extensions/property-cpp-component-extensions.md).
 
-## Example
+## Examples
 
 The following sample generates C3915.
 
@@ -37,8 +37,6 @@ int main() {
    System::Console::WriteLine(x[1]);   // C3915
 }
 ```
-
-## Example
 
 C3915 can also occur if you attempt to consume a default indexer in the same compiland where it was defined with <xref:System.Reflection.DefaultMemberAttribute>.
 

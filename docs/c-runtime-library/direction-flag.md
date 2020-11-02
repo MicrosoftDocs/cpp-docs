@@ -1,6 +1,8 @@
 ---
 title: "Direction Flag"
+description: "Describes the effect of the CPU direction flag on Microsoft C runtime functions."
 ms.date: "11/04/2016"
+ms.topic: "conceptual"
 helpviewer_keywords: ["direction flag"]
 ms.assetid: 0836b4af-dbbb-4ab8-a4b2-156f2e2099e2
 ---

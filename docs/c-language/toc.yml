@@ -400,6 +400,8 @@
         href: ../c-language/null-statement-c.md
       - name: return statement (C)
         href: ../c-language/return-statement-c.md
+      - name: static_assert statement (C11)
+        href: ../c-language/static-assert-c.md
       - name: switch statement (C)
         href: ../c-language/switch-statement-c.md
       - name: try-except statement (C)
@@ -432,6 +434,8 @@
                 href: ../c-language/inline-functions.md
               - name: Inline assembler (C)
                 href: ../c-language/inline-assembler-c.md
+              - name: _Noreturn (C)
+                href: ../c-language/noreturn.md                
           - name: DLL import and export functions
             items: 
               - name: DLL import and export functions
@@ -477,23 +481,7 @@
       - name: Definitions and conventions
         href: ../c-language/definitions-and-conventions.md
       - name: Lexical grammar
-        items: 
-          - name: Lexical grammar
-            href: ../c-language/lexical-grammar.md
-          - name: Summary of tokens
-            href: ../c-language/summary-of-tokens.md
-          - name: Summary of keywords
-            href: ../c-language/summary-of-keywords.md
-          - name: Summary of identifiers
-            href: ../c-language/summary-of-identifiers.md
-          - name: Summary of constants
-            href: ../c-language/summary-of-constants.md
-          - name: Summary of string literals
-            href: ../c-language/summary-of-string-literals.md
-          - name: Operators (C)
-            href: ../c-language/operators-c.md
-          - name: Punctuators
-            href: ../c-language/punctuators.md
+        href: ../c-language/lexical-grammar.md
       - name: Phrase structure grammar
         items: 
           - name: Phrase structure grammar

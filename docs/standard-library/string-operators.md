@@ -7,11 +7,15 @@ helpviewer_keywords: ["std::operator!= (string)", "std::operator&gt; (string)", 
 ---
 # &lt;string&gt; operators
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;&gt;](#op_gt_gt)|
-|[operator&gt;=](#op_gt_eq)|[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|
-|[operator&lt;=](#op_lt_eq)|[operator+](#op_add)|[operator==](#op_eq_eq)|
+[operator!=](#op_neq)\
+[operator&gt;](#op_gt)\
+[operator&gt;&gt;](#op_gt_gt)\
+[operator&gt;=](#op_gt_eq)\
+[operator&lt;](#op_lt)\
+[operator&lt;&lt;](#op_lt_lt)\
+[operator&lt;=](#op_lt_eq)\
+[operator+](#op_add)\
+[operator==](#op_eq_eq)
 
 ## <a name="op_add"></a> operator+
 

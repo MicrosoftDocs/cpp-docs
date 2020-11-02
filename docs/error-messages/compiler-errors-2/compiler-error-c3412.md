@@ -11,7 +11,7 @@ ms.assetid: aa4dd43b-54ce-4cda-85c1-1a77dd6e34fa
 
 A template cannot be specialized at class scope, only in global or namespace scope.
 
-## Example
+## Examples
 
 The following sample generates C3412.
 
@@ -23,8 +23,6 @@ struct S {
    struct S<int> {};   // C3412 in a class
 };
 ```
-
-## Example
 
 The following sample shows a possible resolution.
 

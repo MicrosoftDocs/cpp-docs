@@ -34,7 +34,7 @@ A user-definable property class that defaults to *T*.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetProperties](#getproperties)|Returns the current settings of all properties supported by the rowset.|
 |[GetReferencedRowset](#getreferencedrowset)|Returns an interface pointer to the rowset to which a bookmark applies.|
@@ -42,7 +42,7 @@ A user-definable property class that defaults to *T*.
 
 ## Remarks
 
-A mandatory interface on rowsets. This class implements the rowset properties by using the [property set map](../../data/oledb/begin-propset-map.md) defined in your command class. Although the rowset class appears to be using the command class' property sets, the rowset is supplied with its own copy of the run-time properties, when it is created by a command or session object.
+A mandatory interface on rowsets. This class implements the rowset properties by using the [property set map](./macros-for-ole-db-provider-templates.md#begin_propset_map) defined in your command class. Although the rowset class appears to be using the command class' property sets, the rowset is supplied with its own copy of the run-time properties, when it is created by a command or session object.
 
 ## <a name="getproperties"></a> IRowsetInfoImpl::GetProperties
 

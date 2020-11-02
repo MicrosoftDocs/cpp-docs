@@ -6,30 +6,81 @@ ms.assetid: f5763d62-795b-4de6-a7a5-c7115f158708
 ---
 # Concurrency::fast_math namespace functions
 
-||||
-|-|-|-|
-|[acos](#acos)|[acosf](#acosf)|[asin](#asin)|
-|[asinf](#asinf)|[atan](#atan)|[atan2](#atan2)|
-|[atan2f](#atan2f)|[atanf](#atanf)|[ceil](#ceil)|
-|[ceilf](#ceilf)|[cos](#cos)|[cosf](#cosf)|
-|[cosh](#cosh)|[coshf](#coshf)|[exp](#exp)|
-|[exp2](#exp2)|[exp2f](#exp2f)|[expf](#expf)|
-|[fabs](#fabs)|[fabsf](#fabsf)|[floor](#floor)|
-|[floorf](#floorf)|[fmax](#fmax)|[fmaxf](#fmaxf)|
-|[fmin](#fmin)|[fminf](#fminf)|[fmod](#fmod)|
-|[fmodf](#fmodf)|[frexp](#frexp)|[frexpf](#frexpf)|
-|[isfinite](#isfinite)|[isinf](#isinf)|[isnan](#isnan)|
-|[ldexp](#ldexp)|[ldexpf](#ldexpf)|[log](#log)|
-|[log10](#log10)|[log10f](#log10f)|[log2](#log2)|
-|[log2f](#log2f)|[logf](#logf)|[modf](#modf)|
-|[modff](#modff)|[pow](#pow)|[powf](#powf)|
-|[round](#round)|[roundf](#roundf)|[rsqrt](#rsqrt)|
-|[rsqrtf](#rsqrtf)|[signbit](#signbit)|[signbitf](#signbitf)|
-|[sin](#sin)|[sincos](#sincos)|[sincosf](#sincosf)|
-|[sinf](#sinf)|[sinh](#sinh)|[sinhf](#sinhf)|
-|[sqrt](#sqrt)|[sqrtf](#sqrtf)|[tan](#tan)|
-|[tanf](#tanf)|[tanh](#tanh)|[tanhf](#tanhf)|
-|[trunc](#trunc)|[truncf](#truncf)|
+:::row:::
+   :::column span="":::
+      [`acos`](#acos)\
+      [`acosf`](#acosf)\
+      [`asin`](#asin)\
+      [`asinf`](#asinf)\
+      [`atan`](#atan)\
+      [`atan2`](#atan2)\
+      [`atan2f`](#atan2f)\
+      [`atanf`](#atanf)\
+      [`ceil`](#ceil)\
+      [`ceilf`](#ceilf)\
+      [`cos`](#cos)\
+      [`cosf`](#cosf)\
+      [`cosh`](#cosh)\
+      [`coshf`](#coshf)\
+      [`exp`](#exp)\
+      [`exp2`](#exp2)\
+      [`exp2f`](#exp2f)
+   :::column-end:::
+   :::column span="":::
+      [`expf`](#expf)\
+      [`fabs`](#fabs)\
+      [`fabsf`](#fabsf)\
+      [`floor`](#floor)\
+      [`floorf`](#floorf)\
+      [`fmax`](#fmax)\
+      [`fmaxf`](#fmaxf)\
+      [`fmin`](#fmin)\
+      [`fminf`](#fminf)\
+      [`fmod`](#fmod)\
+      [`fmodf`](#fmodf)\
+      [`frexp`](#frexp)\
+      [`frexpf`](#frexpf)\
+      [`isfinite`](#isfinite)\
+      [`isinf`](#isinf)\
+      [`isnan`](#isnan)
+   :::column-end:::
+   :::column span="":::
+      [`ldexp`](#ldexp)\
+      [`ldexpf`](#ldexpf)\
+      [`log`](#log)\
+      [`log10`](#log10)\
+      [`log10f`](#log10f)\
+      [`log2`](#log2)\
+      [`log2f`](#log2f)\
+      [`logf`](#logf)\
+      [`modf`](#modf)\
+      [`modff`](#modff)\
+      [`pow`](#pow)\
+      [`powf`](#powf)\
+      [`round`](#round)\
+      [`roundf`](#roundf)\
+      [`rsqrt`](#rsqrt)\
+      [`rsqrtf`](#rsqrtf)
+   :::column-end:::
+   :::column span="":::
+      [`signbit`](#signbit)\
+      [`signbitf`](#signbitf)\
+      [`sin`](#sin)\
+      [`sincos`](#sincos)\
+      [`sincosf`](#sincosf)\
+      [`sinf`](#sinf)\
+      [`sinh`](#sinh)\
+      [`sinhf`](#sinhf)\
+      [`sqrt`](#sqrt)\
+      [`sqrtf`](#sqrtf)\
+      [`tan`](#tan)\
+      [`tanf`](#tanf)\
+      [`tanh`](#tanh)\
+      [`tanhf`](#tanhf)\
+      [`trunc`](#trunc)\
+      [`truncf`](#truncf)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="acos"></a> acos
 

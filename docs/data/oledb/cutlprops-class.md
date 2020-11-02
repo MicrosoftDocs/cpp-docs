@@ -29,7 +29,7 @@ The class that contains the `BEGIN_PROPSET_MAP`.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetPropValue](#getpropvalue)|Gets a property from a property set.|
 |[IsValidValue](#isvalidvalue)|Used to validate a value before setting a property.|
@@ -41,9 +41,9 @@ The class that contains the `BEGIN_PROPSET_MAP`.
 
 Most of this class is an implementation detail.
 
-`CUtlProps` contains two members for setting properties internally: [GetPropValue](../../data/oledb/cutlprops-getpropvalue.md) and [SetPropValue](../../data/oledb/cutlprops-setpropvalue.md).
+`CUtlProps` contains two members for setting properties internally: [GetPropValue](#getpropvalue) and [SetPropValue](#setpropvalue).
 
-For more information on the macros used in a property set map, see [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) and [END_PROPSET_MAP](../../data/oledb/end-propset-map.md).
+For more information on the macros used in a property set map, see [BEGIN_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#begin_propset_map) and [END_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#end_propset_map).
 
 ## <a name="getpropvalue"></a> CUtlProps::GetPropValue
 
@@ -132,7 +132,7 @@ If a consumer opens an object and requests an optional interface, the provider s
 
 - `IRowsetScroll`
 
-If you wish to handle other interfaces, override this function in your data source, session, command, or rowset class to process functions. Your override should go through the normal set/get properties interfaces to ensure that setting properties also sets any chained properties (see [OnPropertyChanged](../../data/oledb/cutlprops-onpropertychanged.md)).
+If you wish to handle other interfaces, override this function in your data source, session, command, or rowset class to process functions. Your override should go through the normal set/get properties interfaces to ensure that setting properties also sets any chained properties (see [OnPropertyChanged](#onpropertychanged)).
 
 ## <a name="onpropertychanged"></a> CUtlProps::OnPropertyChanged
 

@@ -19,13 +19,13 @@ All accessors in the OLE DB Templates derive from this class. `CAccessorBase` al
 
 ### Methods
 
-|||
-|-|-|
-|[Close](#close)|Closes the accessors.|
-|[GetHAccessor](#geth)|Retrieves the accessor handle.|
-|[GetNumAccessors](#getnum)|Retrieves the number of accessors created by the class.|
-|[IsAutoAccessor](#isauto)|Tests whether the specified accessor is an autoaccessor.|
-|[ReleaseAccessors](#release)|Releases the accessors.|
+| Name | Description |
+|--|--|
+| [Close](#close) | Closes the accessors. |
+| [GetHAccessor](#geth) | Retrieves the accessor handle. |
+| [GetNumAccessors](#getnum) | Retrieves the number of accessors created by the class. |
+| [IsAutoAccessor](#isauto) | Tests whether the specified accessor is an autoaccessor. |
+| [ReleaseAccessors](#release) | Releases the accessors. |
 
 ## Requirements
 
@@ -43,7 +43,7 @@ void Close();
 
 ### Remarks
 
-You must call [ReleaseAccessors](../../data/oledb/caccessorbase-releaseaccessors.md) first.
+You must call [ReleaseAccessors](#release) first.
 
 ## <a name="geth"></a> CAccessorBase::GetHAccessor
 
@@ -118,7 +118,7 @@ A standard HRESULT.
 
 ### Remarks
 
-Called from [CAccessorRowset::Close](../../data/oledb/caccessorrowset-close.md).
+Called from [CAccessorRowset::Close](./caccessorrowset-class.md#close).
 
 ## See also
 

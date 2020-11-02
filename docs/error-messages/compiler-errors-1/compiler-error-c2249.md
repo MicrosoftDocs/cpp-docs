@@ -11,7 +11,7 @@ ms.assetid: bdd6697c-e04b-49b9-8e40-d9eb6d74f2b6
 
 The `member` is inherited from a nonpublic **`virtual`** base class or structure.
 
-## Example
+## Examples
 
 The following sample generates C2249.
 
@@ -31,8 +31,6 @@ int main() {
    b.pubFunc();    // OK
 }
 ```
-
-## Example
 
 C2249 can also occur if you try to assign a stream from the C++ Standard Library to another stream.  The following sample generates C2249.
 

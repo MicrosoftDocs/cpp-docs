@@ -12,11 +12,15 @@ ms.assetid: c0adcbd0-07fe-4c55-a8fd-8c2c65ecdaad
 
 You can use one of the ATL code wizards to add an object or a control to your ATL- or MFC-based projects. For each COM object or control you add, the wizard generates .cpp and .h files, as well as an .rgs file for script-based registry support. The following ATL code wizards are available in Visual Studio:
 
-||||
-|-|-|-|
-|[ATL Simple Object](../../atl/reference/atl-simple-object-wizard.md)|[ATL Dialog](../../atl/reference/atl-dialog-wizard.md)|[ATL Control](../../atl/reference/atl-control-wizard.md)|
-|[ATL Property Page](../../atl/reference/atl-property-page-wizard.md)|[ATL Active Server Page Component](../../atl/reference/atl-active-server-page-component-wizard.md)|[ATL OLE DB Consumer](../../atl/reference/atl-ole-db-consumer-wizard.md)|
-|[Add ATL Support to MFC](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)|[ATL COM+ 1.0 Component Wizard](../../atl/reference/atl-com-plus-1-0-component-wizard.md)|[ATL OLE DB Provider](../../atl/reference/atl-ole-db-provider-wizard.md)|
+- [ATL Simple Object](../../atl/reference/atl-simple-object-wizard.md)
+- [ATL Dialog](../../atl/reference/atl-dialog-wizard.md)
+- [ATL Control](../../atl/reference/atl-control-wizard.md)
+- [ATL Property Page](../../atl/reference/atl-property-page-wizard.md)
+- [ATL Active Server Page Component](../../atl/reference/atl-active-server-page-component-wizard.md)
+- [ATL OLE DB Consumer](../../atl/reference/atl-ole-db-consumer-wizard.md)
+- [Add ATL Support to MFC](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)
+- [ATL COM+ 1.0 Component Wizard](../../atl/reference/atl-com-plus-1-0-component-wizard.md)
+- [ATL OLE DB Provider](../../atl/reference/atl-ole-db-provider-wizard.md)
 
 > [!NOTE]
 > Before adding an ATL object to your project, you should review the details and requirements for the object in its related Help topics.
@@ -25,7 +29,7 @@ You can use one of the ATL code wizards to add an object or a control to your AT
 
 1. In **Solution Explorer**, right-click the project node and click **Add** from the shortcut menu. Click **Add Class**.
 
-   The [Add Class](../../ide/add-class-dialog-box.md) dialog box appears.
+   The [Add Class](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) dialog box appears.
 
 1. With the **ATL** folder selected in the **Categories** pane, select an object to insert from the **Templates** pane. Click **Open**. The code wizard for the selected object appears.
 

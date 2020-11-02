@@ -6,12 +6,12 @@ helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "INVOCATIO
 ---
 # INVOCATION_DATA structure
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 The `INVOCATION_DATA` structure describes a compiler or linker invocation.
 
@@ -33,7 +33,7 @@ typedef struct INVOCATION_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `MSVCToolCode` | A code that identifies the invocation's type. For more information, see [MSVC_TOOL_CODE](msvc-tool-code-enum.md). |
 | `ToolVersion` | An object that stores the invoked tool's version as a group of integral values. |

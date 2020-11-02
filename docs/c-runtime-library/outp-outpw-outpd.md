@@ -53,7 +53,7 @@ The `_outp`, `_outpw`, and `_outpd` functions write a byte, a word, and a double
 
 Because these functions write directly to an I/O port, they can't be used in user-mode Windows code.
 
-For information about using I/O ports in the Windows operating system, see [Serial Communications](https://docs.microsoft.com/previous-versions/ff802693(v=msdn.10)).
+For information about using I/O ports in the Windows operating system, see [Serial Communications](/previous-versions/ff802693(v=msdn.10)).
 
 The `outp` and `outpw` names are older, deprecated names for the `_outp` and `_outpw` functions. For more information, see [POSIX function names](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names).
 

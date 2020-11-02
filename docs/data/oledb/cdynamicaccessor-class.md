@@ -23,7 +23,7 @@ class CDynamicAccessor : public CAccessorBase
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddBindEntry](#addbindentry)|Adds a bind entry to the output columns when overriding the default accessor.|
 |[CDynamicAccessor](#cdynamicaccessor)|Instantiates and initializes the `CDynamicAccessor` object.|
@@ -50,7 +50,7 @@ class CDynamicAccessor : public CAccessorBase
 
 Use `CDynamicAccessor` methods to obtain column information such as column names, column count, data type, and so on. You then use this column information to create an accessor dynamically at run time.
 
-The column information is stored in a buffer that is created and managed by this class. Obtain data from the buffer using [GetValue](../../data/oledb/cdynamicaccessor-getvalue.md).
+The column information is stored in a buffer that is created and managed by this class. Obtain data from the buffer using [GetValue](#getvalue).
 
 For a discussion and examples of using the dynamic accessor classes, see [Using Dynamic Accessors](../../data/oledb/using-dynamic-accessors.md).
 
@@ -91,10 +91,10 @@ CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
 #### Parameters
 
 *eBlobHandling*<br/>
-Specifies how the binary large object (BLOB) data is to be handled. The default value is DBBLOBHANDLING_DEFAULT. See [SetBlobHandling](../../data/oledb/cdynamicaccessor-setblobhandling.md) for a description of the DBBLOBHANDLINGENUM values.
+Specifies how the binary large object (BLOB) data is to be handled. The default value is DBBLOBHANDLING_DEFAULT. See [SetBlobHandling](#setblobhandling) for a description of the DBBLOBHANDLINGENUM values.
 
 *nBlobSize*<br/>
-The maximum BLOB size in bytes; column data over this value is treated as a BLOB. The default value is 8,000. See [SetBlobSizeLimit](../../data/oledb/cdynamicaccessor-setblobsizelimit.md) for details.
+The maximum BLOB size in bytes; column data over this value is treated as a BLOB. The default value is 8,000. See [SetBlobSizeLimit](#setblobsizelimit) for details.
 
 ### Remarks
 
@@ -124,7 +124,7 @@ const DBBLOBHANDLINGENUM GetBlobHandling() const;
 
 ### Remarks
 
-Returns the BLOB handling value *eBlobHandling* as set by [SetBlobHandling](../../data/oledb/cdynamicaccessor-setblobhandling.md).
+Returns the BLOB handling value *eBlobHandling* as set by [SetBlobHandling](#setblobhandling).
 
 ## <a name="getblobsizelimit"></a> CDynamicAccessor::GetBlobSizeLimit
 
@@ -138,7 +138,7 @@ const DBLENGTH GetBlobSizeLimit() const;
 
 ### Remarks
 
-Returns the BLOB handling value *nBlobSize* as set by [SetBlobSizeLimit](../../data/oledb/cdynamicaccessor-setblobsizelimit.md).
+Returns the BLOB handling value *nBlobSize* as set by [SetBlobSizeLimit](#setblobsizelimit).
 
 ## <a name="getbookmark"></a> CDynamicAccessor::GetBookmark
 

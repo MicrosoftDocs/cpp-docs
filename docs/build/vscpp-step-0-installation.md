@@ -11,7 +11,7 @@ ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 
 If you haven't downloaded and installed Visual Studio and the Microsoft C/C++ tools yet, here's how to get started.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## Visual Studio 2019 Installation
 
@@ -119,7 +119,7 @@ You can reduce the installation footprint of Visual Studio on your system drive.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ## Visual Studio 2017 Installation
 
@@ -175,7 +175,7 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
 ::: moniker-end
 
-::: moniker range="<vs-2017"
+::: moniker range="<msvc-150"
 
 ## Visual Studio 2015 Installation
 

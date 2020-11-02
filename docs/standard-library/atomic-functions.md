@@ -7,18 +7,35 @@ helpviewer_keywords: ["std::atomic_compare_exchange_strong [C++]", "std::atomic_
 ---
 # &lt;atomic&gt; functions
 
-||||
-|-|-|-|
-|[atomic_compare_exchange_strong](#atomic_compare_exchange_strong)|[atomic_compare_exchange_strong_explicit](#atomic_compare_exchange_strong_explicit)|[atomic_compare_exchange_weak](#atomic_compare_exchange_weak)|
-|[atomic_compare_exchange_weak_explicit](#atomic_compare_exchange_weak_explicit)|[atomic_exchange](#atomic_exchange)|[atomic_exchange_explicit](#atomic_exchange_explicit)|
-|[atomic_fetch_add](#atomic_fetch_add)|[atomic_fetch_add_explicit](#atomic_fetch_add_explicit)|[atomic_fetch_and](#atomic_fetch_and)|
-|[atomic_fetch_and_explicit](#atomic_fetch_and_explicit)|[atomic_fetch_or](#atomic_fetch_or)|[atomic_fetch_or_explicit](#atomic_fetch_or_explicit)|
-|[atomic_fetch_sub](#atomic_fetch_sub)|[atomic_fetch_sub_explicit](#atomic_fetch_sub_explicit)|[atomic_fetch_xor](#atomic_fetch_xor)|
-|[atomic_fetch_xor_explicit](#atomic_fetch_xor_explicit)|[atomic_flag_clear](#atomic_flag_clear)|[atomic_flag_clear_explicit](#atomic_flag_clear_explicit)|
-|[atomic_flag_test_and_set](#atomic_flag_test_and_set)|[atomic_flag_test_and_set_explicit](#atomic_flag_test_and_set_explicit)|[atomic_init](#atomic_init)|
-|[atomic_is_lock_free](#atomic_is_lock_free)|[atomic_load](#atomic_load)|[atomic_load_explicit](#atomic_load_explicit)|
-|[atomic_signal_fence](#atomic_signal_fence)|[atomic_store](#atomic_store)|[atomic_store_explicit](#atomic_store_explicit)|
-|[atomic_thread_fence](#atomic_thread_fence)|[kill_dependency](#kill_dependency)|
+[atomic_compare_exchange_strong](#atomic_compare_exchange_strong)\
+[atomic_compare_exchange_strong_explicit](#atomic_compare_exchange_strong_explicit)\
+[atomic_compare_exchange_weak](#atomic_compare_exchange_weak)\
+[atomic_compare_exchange_weak_explicit](#atomic_compare_exchange_weak_explicit)\
+[atomic_exchange](#atomic_exchange)\
+[atomic_exchange_explicit](#atomic_exchange_explicit)\
+[atomic_fetch_add](#atomic_fetch_add)\
+[atomic_fetch_add_explicit](#atomic_fetch_add_explicit)\
+[atomic_fetch_and](#atomic_fetch_and)\
+[atomic_fetch_and_explicit](#atomic_fetch_and_explicit)\
+[atomic_fetch_or](#atomic_fetch_or)\
+[atomic_fetch_or_explicit](#atomic_fetch_or_explicit)\
+[atomic_fetch_sub](#atomic_fetch_sub)\
+[atomic_fetch_sub_explicit](#atomic_fetch_sub_explicit)\
+[atomic_fetch_xor](#atomic_fetch_xor)\
+[atomic_fetch_xor_explicit](#atomic_fetch_xor_explicit)\
+[atomic_flag_clear](#atomic_flag_clear)\
+[atomic_flag_clear_explicit](#atomic_flag_clear_explicit)\
+[atomic_flag_test_and_set](#atomic_flag_test_and_set)\
+[atomic_flag_test_and_set_explicit](#atomic_flag_test_and_set_explicit)\
+[atomic_init](#atomic_init)\
+[atomic_is_lock_free](#atomic_is_lock_free)\
+[atomic_load](#atomic_load)\
+[atomic_load_explicit](#atomic_load_explicit)\
+[atomic_signal_fence](#atomic_signal_fence)\
+[atomic_store](#atomic_store)\
+[atomic_store_explicit](#atomic_store_explicit)\
+[atomic_thread_fence](#atomic_thread_fence)\
+[kill_dependency](#kill_dependency)
 
 ## <a name="atomic_compare_exchange_strong"></a> atomic_compare_exchange_strong
 
@@ -804,7 +821,7 @@ A memory ordering constraint that determines fence type.
 
 The *Order* argument determines fence type.
 
-|||
+|Value|Description|
 |-|-|
 |`memory_order_relaxed`|The fence has no effect.|
 |`memory_order_consume`|The fence is an acquire fence.|
@@ -886,7 +903,7 @@ A memory ordering constraint that determines fence type.
 
 The *Order* argument determines fence type.
 
-|||
+|Value|Description|
 |-|-|
 |`memory_order_relaxed`|The fence has no effect.|
 |`memory_order_consume`|The fence is an acquire fence.|

@@ -1,6 +1,7 @@
 ---
 title: "Compiler Warnings by compiler version"
-ms.date: "04/22/2019"
+description: "Table of Microsoft C/C++ compiler warnings by compiler version."
+ms.date: 10/18/2020
 helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting warning options"]
 ---
 # Compiler Warnings by compiler version
@@ -36,12 +37,33 @@ These versions of the compiler introduced new warnings:
 | Visual Studio 2019 version 16.4 | 19.24.28314.0 |
 | Visual Studio 2019 version 16.5 | 19.25.28610.0 |
 | Visual Studio 2019 version 16.6 | 19.26.28805.0 |
+| Visual Studio 2019 version 16.7 | 19.26.29112.0 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the **`/Wv`** option. The compiler reports all warnings that match versions that begin with the specified number. It suppresses all warnings for versions greater than the specified number. For example, **`/Wv:17`** reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use **`/Wv:19.00.23506`**. Use **`/Wv:19.11`** to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the **`/Wv`** compiler option. The **`/Wv`** option can't suppress warnings that aren't listed, which predate the specified versions of the compiler.
 
-::: moniker range=">= vs-2019"
+::: moniker range=">= msvc-160"
+
+## Warnings introduced in Visual Studio 2019 version 16.7 (compiler version 19.27.29112.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.26`**.
+
+| Warning | Message |
+|--|--|
+| C5207 | `the simple requirement asserts the validity of expression 'e->id'. Did you mean '{ e } -> id'? You can suppress the warning using '{ e->id }'` |
+| C5209 | `the C++20 syntax for an init-capture has changed to '& ...opt identifier initializer'` |
+| C5210 | `'name' is not a valid header unit reference; ignoring` |
+| C5212 | `'name' is not a valid named reference; treating as reference to file` |
+| C5213 | `'name' named reference is treated as a named partition but the name is not specified; treating as reference to file` |
+| C5214 | `applying 'modifier' to an operand with a volatile qualified type is deprecated in C++20` |
+| C5215 | `'name' a function parameter with a volatile qualified type is deprecated in C++20` |
+| C5216 | `'name' a volatile qualified return type is deprecated in C++20` |
+| C5217 | `a structured binding declaration that includes volatile is deprecated in C++20` |
+| C5218 | `destroying delete may not behave as intended when non-conforming switches '/Zc:sizedDealloc-' or '/Zc:alignedNew-' are used` |
+| C5219 | `implicit conversion from 'type-1' to 'type-2', possible loss of data` |
+| C5220 | `'name': a non-static data member with a volatile qualified type no longer implies%$N that compiler generated copy/move constructors and copy/move assignment operators are not trivial` |
+| C5221 | `xfg::rename is deprecated.` |
 
 ## Warnings introduced in Visual Studio 2019 version 16.6 (compiler version 19.26.28805.0)
 
@@ -121,7 +143,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 | C5051 | `attribute 'attribute-name' requires at least 'standard-level'; ignored` |
 
 ::: moniker-end
-::: moniker range=">= vs-2017"
+::: moniker range=">= msvc-150"
 
 ## Warnings introduced in Visual Studio 2017 version 15.8 (compiler version 19.15.26726.0)
 

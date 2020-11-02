@@ -51,10 +51,8 @@ The uniform random number generator engine. For possible types, see [\<random>](
 
 The class template describes a distribution that produces values of a user-specified floating-point type, or type **`double`** if none is provided, distributed according to the Chi-Squared Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)|`chi_squared_distribution::n`|`chi_squared_distribution::param`|
-|`chi_squared_distribution::operator()`||[param_type](#param_type)|
+[chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)\
+[param_type](#param_type)
 
 The property function `n()` returns the value for the stored distribution parameter `n`.
 

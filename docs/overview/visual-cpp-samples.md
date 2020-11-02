@@ -9,7 +9,7 @@ ms.assetid: 76798022-5886-48e7-a7f2-f99352b15cbf
 
 Samples for Visual Studio C++ are available on the web. Microsoft has produced many C++ samples that demonstrate different functionalities across multiple technologies. Here are a few of the places to find additional samples:
 
-- [Microsoft Docs samples - C++](https://docs.microsoft.com/samples/browse/?term=c%2B%2B)
+- [Microsoft Docs samples - C++](/samples/browse/?term=c%2B%2B)
 
 - [Windows samples on GitHub](https://microsoft.github.io/windows/)
 
@@ -19,7 +19,7 @@ Samples for Visual Studio C++ are available on the web. Microsoft has produced m
 
 - [ADO code samples](/office/client-developer/access/desktop-database-reference/ado-code-examples-in-microsoft-visual-c)
 
-- [Windows Hardware development samples](https://docs.microsoft.com/samples/browse/?products=windows-wdk)
+- [Windows Hardware development samples](/samples/browse/?products=windows-wdk)
 
 ## Archived C++ samples on GitHub
 

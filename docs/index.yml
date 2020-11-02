@@ -43,23 +43,23 @@ conceptualContent:
     - title: Learn to use the Visual Studio IDE
       links:
         - text: Start a guided tour of Visual Studio
-          url: https://docs.microsoft.com/visualstudio/ide/visual-studio-ide
+          url: /visualstudio/ide/visual-studio-ide
           itemType: overview
         - text: Open code from a repo
-          url: https://docs.microsoft.com/visualstudio/get-started/tutorial-open-project-from-repo
+          url: /visualstudio/get-started/tutorial-open-project-from-repo
           itemType: tutorial
         - text: Write and edit code
-          url: https://docs.microsoft.com/visualstudio/ide/index-writing-code
+          url: /visualstudio/ide/index-writing-code
           itemType: tutorial
         - text: Build your code
-          url: https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio
+          url: /visualstudio/ide/compiling-and-building-in-visual-studio
           itemType: tutorial 
         - text: Debug your code
           itemType: tutorial
-          url: https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-cplusplus
+          url: /visualstudio/debugger/quickstart-debug-with-cplusplus
         - text: Test your code
           itemType: tutorial 
-          url: https://docs.microsoft.com/visualstudio/test/writing-unit-tests-for-c-cpp
+          url: /visualstudio/test/writing-unit-tests-for-c-cpp
     # Card
     - title: Write C++ and C apps in Visual Studio
       links:
@@ -163,7 +163,7 @@ additionalContent:
             - text: Universal Windows Platform development
               url: cppcx/universal-windows-apps-cpp.md
             - text: Windows Desktop development
-              url: windows/windows-desktop-applications-cpp.md
+              url: ./windows/desktop-applications-visual-cpp.md
             - text: Linux development
               url: linux/index.yml
             - text: Mobile development
@@ -178,11 +178,11 @@ additionalContent:
             - text: Build code projects
               url: build/projects-and-build-systems-cpp.md
             - text: Debug your code
-              url: https://docs.microsoft.com/visualstudio/debugger/debugging-native-code
+              url: /visualstudio/debugger/debugging-native-code
             - text: Analyze your code
               url: code-quality/index.yml
             - text: Improve app performance
-              url: https://docs.microsoft.com/visualstudio/profiling
+              url: /visualstudio/profiling
             - text: Port and upgrade code
               url: porting/visual-cpp-porting-and-upgrading-guide.md
         # Card
@@ -201,4 +201,4 @@ additionalContent:
             - text: Universal Windows Platform libraries
               url: cppcx/namespaces-reference-c-cx.md
   # footer (optional)
-  footer: "[Blogs](https://devblogs.microsoft.com/cppblog/) - [Twitter](https://twitter.com/visualc) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-c++) - [Report an issue](overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md) - [Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html) - Contribute to C++ docs: Read our [contributor guide](https://docs.microsoft.com/contribute/)."
+  footer: "[Blogs](https://devblogs.microsoft.com/cppblog/) - [Twitter](https://twitter.com/visualc) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-c++) - [Report an issue](overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md) - [Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html) - Contribute to C++ docs: Read our [contributor guide](/contribute/)."

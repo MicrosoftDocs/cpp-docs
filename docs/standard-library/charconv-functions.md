@@ -1,6 +1,7 @@
 ---
 title: "&lt;charconv&gt; functions"
-ms.date: "07/22/2020"
+description: "Describes the <charconv> library functions that convert integer or floating-point values to or from chars"
+ms.date: "08/20/2020"
 f1_keywords: ["charconv/std::to_chars", "charconv/std::from_chars"]
 helpviewer_keywords: ["std::charconv [C++], to_chars", "std::charconv [C++], from_chars"]
 ---
@@ -13,13 +14,13 @@ The \<charconv> header includes the following non-member functions:
 |[to_chars](#to_chars) | Convert an integer or floating-point value to a sequence of **`char`**. |
 |[from_chars](#from_chars) | Convert a sequence of **`char`** to  an integer or floating-point value. |
 
-These conversion functions are tuned for performance, and also support shortest-round-trip behavior. Shortest-round-trip behavior means that when a number is converted to chars, only enough precision is written out to enable recovering the original number when converting those chars back to a floating-point.
+These conversion functions are tuned for performance, and also support shortest-round-trip behavior. Shortest-round-trip behavior means when a number is converted to chars, only enough precision is written out to enable recovering the original number when converting those chars back to a floating-point.
 
-- When converting chars to a number, the numeric value does not need to be null-terminated. Likewise, when converting a number to chars, the result is not null-terminated.
+- When converting chars to a number, the numeric value doesn't need to be null-terminated. Likewise, when converting a number to chars, the result isn't null-terminated.
 - The conversion functions don't allocate memory. You own the buffer in all cases.
 - The conversion functions don't throw. A result is returned from which you can determine if the conversion succeeded.
-- The conversion functions are not runtime rounding-mode sensitive.
-- The conversion functions are not locale aware. They always print and parse decimal points as `'.'`, and never as ',' for locales that use commas.
+- The conversion functions aren't runtime rounding-mode sensitive.
+- The conversion functions aren't locale aware. They always print and parse decimal points as `'.'`, and never as ',' for locales that use commas.
 
 ## `to_chars`
 
@@ -87,19 +88,15 @@ A [to_chars_result](to-chars-result-structure.md) containing the result of the c
 ### Remarks
 
 Functions taking a [chars_format](chars-format-class.md) parameter determine the conversion specifier as if they were using `printf()` as follows:
-The conversion specifier is `f` if `fmt` is `chars_format::fixed`, `e` if `fmt` is `chars_format::scientific`, `a` (without leading "0x" in the result) if `fmt` is `chars_format::hex`, and `g` if `fmt` is `chars_format::general`. Specifying the shortest fixed notation may still result in lengthy output because it may be the shortest possible representation when the value is very large or very small.
+The conversion specifier is `'f'` if `fmt` is `chars_format::fixed`, `'e'` if `fmt` is `chars_format::scientific`, `'a'` (without the leading `0x` in the result) if `fmt` is `chars_format::hex`, and `'g'` if `fmt` is `chars_format::general`. Specifying the shortest fixed notation may still result in lengthy output because it may be the shortest possible representation when the value is very large or very small.
 
-The following table describes the conversion behavior given different combinations of `fmt` and `precision` parameters. The term "shortest round-trip" refers to writing the fewest number of digits necessary such that parsing that representation using the corresponding `from_chars` function will recover the value exactly.
+The following table describes the conversion behavior given different combinations of `fmt` and `precision` parameters. The term "shortest-round-trip behavior" refers to writing the fewest number of digits necessary such that parsing that representation using the corresponding `from_chars` function will recover the value exactly.
 
 | `fmt` and `precision` combination | Output |
 |--|--|
 |  Neither | Whichever of fixed or scientific notation is shorter, preferring fixed as a tiebreaker.</br>This behavior can't be simulated by any overload that takes the `fmt` parameter. |
-| `fmt` | The shortest round-trip behavior for the specified format, such as the shortest scientific format. |
-| `fmt` and `precision` | Uses the given precision, following `printf()` style, without  shortest round-trip behavior. |
-
-### Return value
-
-A [to_chars_result](to-chars-result-structure.md) that holds the result of the conversion.
+| `fmt` | The shortest-round-trip behavior for the specified format, such as the shortest scientific format. |
+| `fmt` and `precision` | Uses the given precision, following `printf()` style, without  shortest-round-trip behavior. |
 
 ### Example
 
@@ -116,7 +113,7 @@ template <typename T> void TestToChars(const T t)
     char buf[100]; // 100 is large enough for double and long double values because the longest possible outputs are "-1.23456735e-36" and "-1.2345678901234567e-100".
     constexpr size_t size = IsFloat ? 15 : 24;
     const std::to_chars_result res = std::to_chars(buf, buf + size, t);  // points to buffer area it can use. Must be char, not wchar_t, etc.
-    
+
     if (res.ec == std::errc{}) // no error
     {
         // %.*s provides the exact number of characters to output because the output range, [buf, res.ptr), isn't null-terminated
@@ -229,7 +226,16 @@ int main()
 }
 ```
 
+## Requirements
+
+**Header:** \<charconv>
+
+**Namespace:** std
+
+/std:c++17, or later, is required.
+
 ## See also
 
 [\<charconv>](charconv.md)  
 [The shortest decimal string that round-trips](https://www.exploringbinary.com/the-shortest-decimal-string-that-round-trips-examples/)
+[printf() format specifiers](..\c-runtime-library\format-specification-syntax-printf-and-wprintf-functions.md)

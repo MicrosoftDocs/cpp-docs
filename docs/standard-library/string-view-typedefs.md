@@ -5,10 +5,10 @@ f1_keywords: ["xstring/std::string_view", "xstring/std::u16string_view", "xstrin
 ---
 # &lt;string_view&gt; typedefs
 
-||||
-|-|-|-|
-|[string_view](#string_view)|[u16string_view](#u16string_view)|[u32string_view](#u32string_view)|
-|[wstring_view](#wstring_view)|
+[string_view](#string_view)\
+[u16string_view](#u16string_view)\
+[u32string_view](#u32string_view)\
+[wstring_view](#wstring_view)
 
 ## <a name="string_view"></a> string_view
 

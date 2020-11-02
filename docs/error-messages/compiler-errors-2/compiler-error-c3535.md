@@ -19,7 +19,7 @@ The type of the variable declared by the **`auto`** keyword cannot be deduced fr
 
 1. Ensure that if the declaration is a pointer to a type, the initialization expression is a pointer type.
 
-## Example
+## Examples
 
 The following example yields C3535 because the initialization expression evaluates to **`void`**.
 
@@ -34,8 +34,6 @@ int main()
 }
 ```
 
-## Example
-
 The following example yields C3535 because the statement declares variable `x` as a pointer to a deduced type, but the type of the initializer expression is double. Consequently, the compiler cannot deduce the type of the variable.
 
 ```cpp
@@ -47,8 +45,6 @@ int main()
    return 0;
 }
 ```
-
-## Example
 
 The following example yields C3535 because variable `p` declares a pointer to a deduced type, but the initialization expression is not a pointer type.
 
@@ -62,5 +58,5 @@ auto *p = x;  // C3535
 
 ## See also
 
-[auto Keyword](../../cpp/auto-keyword.md)<br/>
+[auto Keyword](../../cpp/auto-cpp.md)<br/>
 [Fundamental Types](../../cpp/fundamental-types-cpp.md)

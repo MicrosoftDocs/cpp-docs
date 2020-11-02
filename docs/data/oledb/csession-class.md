@@ -23,7 +23,7 @@ class CSession
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Abort](#abort)|Cancels (terminates) the transaction.|
 |[Close](#close)|Closes the session.|
@@ -34,7 +34,7 @@ class CSession
 
 ## Remarks
 
-One or more sessions can be associated with each provider connection (data source), which is represented by a [CDataSource](../../data/oledb/cdatasource-class.md) object. To create a new `CSession` for a `CDataSource`, call [CSession::Open](../../data/oledb/csession-open.md). To begin a database transaction, `CSession` provides the `StartTransaction` method. Once a transaction is started, you can commit to it using the `Commit` method, or cancel it using the `Abort` method.
+One or more sessions can be associated with each provider connection (data source), which is represented by a [CDataSource](../../data/oledb/cdatasource-class.md) object. To create a new `CSession` for a `CDataSource`, call [CSession::Open](#open). To begin a database transaction, `CSession` provides the `StartTransaction` method. Once a transaction is started, you can commit to it using the `Commit` method, or cancel it using the `Abort` method.
 
 ## <a name="abort"></a> CSession::Abort
 
@@ -58,7 +58,7 @@ A standard HRESULT.
 
 ## <a name="close"></a> CSession::Close
 
-Closes the session, which was opened by [CSession::Open](../../data/oledb/csession-open.md).
+Closes the session, which was opened by [CSession::Open](#open).
 
 ### Syntax
 
@@ -145,7 +145,7 @@ A standard HRESULT.
 
 ### Remarks
 
-You must open the data source object using [CDataSource::Open](../../data/oledb/cdatasource-open.md) before passing it to `CSession::Open`.
+You must open the data source object using [CDataSource::Open](./cdatasource-class.md#open) before passing it to `CSession::Open`.
 
 ## <a name="starttransaction"></a> CSession::StartTransaction
 

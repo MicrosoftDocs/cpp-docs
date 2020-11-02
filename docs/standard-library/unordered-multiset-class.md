@@ -1,8 +1,9 @@
 ---
 title: "unordered_multiset Class"
-ms.date: "11/04/2016"
-f1_keywords: ["unordered_set/std::unordered_multiset", "unordered_set/std::unordered_multiset::allocator_type", "unordered_set/std::unordered_multiset::const_iterator", "unordered_set/std::unordered_multiset::const_local_iterator", "unordered_set/std::unordered_multiset::const_pointer", "unordered_set/std::unordered_multiset::const_reference", "unordered_set/std::unordered_multiset::difference_type", "unordered_set/std::unordered_multiset::hasher", "unordered_set/std::unordered_multiset::iterator", "unordered_set/std::unordered_multiset::key_equal", "unordered_set/std::unordered_multiset::key_type", "unordered_set/std::unordered_multiset::local_iterator", "unordered_set/std::unordered_multiset::pointer", "unordered_set/std::unordered_multiset::reference", "unordered_set/std::unordered_multiset::size_type", "unordered_set/std::unordered_multiset::value_type", "unordered_set/std::unordered_multiset::begin", "unordered_set/std::unordered_multiset::bucket", "unordered_set/std::unordered_multiset::bucket_count", "unordered_set/std::unordered_multiset::bucket_size", "unordered_set/std::unordered_multiset::cbegin", "unordered_set/std::unordered_multiset::cend", "unordered_set/std::unordered_multiset::clear", "unordered_set/std::unordered_multiset::count", "unordered_set/std::unordered_multiset::emplace", "unordered_set/std::unordered_multiset::emplace_hint", "unordered_set/std::unordered_multiset::empty", "unordered_set/std::unordered_multiset::end", "unordered_set/std::unordered_multiset::equal_range", "unordered_set/std::unordered_multiset::erase", "unordered_set/std::unordered_multiset::find", "unordered_set/std::unordered_multiset::get_allocator", "unordered_set/std::unordered_multiset::hash", "unordered_set/std::unordered_multiset::insert", "unordered_set/std::unordered_multiset::key_eq", "unordered_set/std::unordered_multiset::load_factor", "unordered_set/std::unordered_multiset::max_bucket_count", "unordered_set/std::unordered_multiset::max_load_factor", "unordered_set/std::unordered_multiset::max_size", "unordered_set/std::unordered_multiset::rehash", "unordered_set/std::unordered_multiset::size", "unordered_set/std::unordered_multiset::swap", "unordered_set/std::unordered_multiset::unordered_multiset", "unordered_set/std::unordered_multiset::operator=", "unordered_set/std::unordered_multiset::hash_function"]
-helpviewer_keywords: ["std::unordered_multiset", "std::unordered_multiset::allocator_type", "std::unordered_multiset::const_iterator", "std::unordered_multiset::const_local_iterator", "std::unordered_multiset::const_pointer", "std::unordered_multiset::const_reference", "std::unordered_multiset::difference_type", "std::unordered_multiset::hasher", "std::unordered_multiset::iterator", "std::unordered_multiset::key_equal", "std::unordered_multiset::key_type", "std::unordered_multiset::local_iterator", "std::unordered_multiset::pointer", "std::unordered_multiset::reference", "std::unordered_multiset::size_type", "std::unordered_multiset::value_type", "std::unordered_multiset::begin", "std::unordered_multiset::bucket", "std::unordered_multiset::bucket_count", "std::unordered_multiset::bucket_size", "std::unordered_multiset::cbegin", "std::unordered_multiset::cend", "std::unordered_multiset::clear", "std::unordered_multiset::count", "std::unordered_multiset::emplace", "std::unordered_multiset::emplace_hint", "std::unordered_multiset::empty", "std::unordered_multiset::end", "std::unordered_multiset::equal_range", "std::unordered_multiset::erase", "std::unordered_multiset::find", "std::unordered_multiset::get_allocator", "std::unordered_multiset::hash", "std::unordered_multiset::insert", "std::unordered_multiset::key_eq", "std::unordered_multiset::load_factor", "std::unordered_multiset::max_bucket_count", "std::unordered_multiset::max_load_factor", "std::unordered_multiset::max_size", "std::unordered_multiset::rehash", "std::unordered_multiset::size", "std::unordered_multiset::swap", "std::unordered_multiset::unordered_multiset", "std::unordered_multiset::operator=", "std::unordered_multiset::allocator_type", "std::unordered_multiset::const_iterator", "std::unordered_multiset::const_local_iterator", "std::unordered_multiset::const_pointer", "std::unordered_multiset::const_reference", "std::unordered_multiset::difference_type", "std::unordered_multiset::hasher", "std::unordered_multiset::iterator", "std::unordered_multiset::key_equal", "std::unordered_multiset::key_type", "std::unordered_multiset::local_iterator", "std::unordered_multiset::pointer", "std::unordered_multiset::reference", "std::unordered_multiset::size_type", "std::unordered_multiset::value_type", "std::unordered_multiset::begin", "std::unordered_multiset::bucket", "std::unordered_multiset::bucket_count", "std::unordered_multiset::bucket_size", "std::unordered_multiset::cbegin", "std::unordered_multiset::cend", "std::unordered_multiset::clear", "std::unordered_multiset::count", "std::unordered_multiset::emplace", "std::unordered_multiset::emplace_hint", "std::unordered_multiset::empty", "std::unordered_multiset::end", "std::unordered_multiset::equal_range", "std::unordered_multiset::erase", "std::unordered_multiset::find", "std::unordered_multiset::get_allocator", "std::unordered_multiset::hash_function", "std::unordered_multiset::insert", "std::unordered_multiset::key_eq", "std::unordered_multiset::load_factor", "std::unordered_multiset::max_bucket_count", "std::unordered_multiset::max_load_factor", "std::unordered_multiset::max_size", "std::unordered_multiset::rehash", "std::unordered_multiset::size", "std::unordered_multiset::swap"]
+description: "API reference for the C++ Standard Library container class `unordered_multiset`, which describes an object used for the storage and retrieval of data from a collection in which the values of the elements contained need not be unique and in which they serve as the key values. The data isn't automatically ordered."
+ms.date: "9/10/2020"
+f1_keywords: ["unordered_set/std::unordered_multiset", "unordered_set/std::unordered_multiset::allocator_type", "unordered_set/std::unordered_multiset::const_iterator", "unordered_set/std::unordered_multiset::const_local_iterator", "unordered_set/std::unordered_multiset::const_pointer", "unordered_set/std::unordered_multiset::const_reference", "unordered_set/std::unordered_multiset::difference_type", "unordered_set/std::unordered_multiset::hasher", "unordered_set/std::unordered_multiset::iterator", "unordered_set/std::unordered_multiset::key_equal", "unordered_set/std::unordered_multiset::key_type", "unordered_set/std::unordered_multiset::local_iterator", "unordered_set/std::unordered_multiset::pointer", "unordered_set/std::unordered_multiset::reference", "unordered_set/std::unordered_multiset::size_type", "unordered_set/std::unordered_multiset::value_type", "unordered_set/std::unordered_multiset::begin", "unordered_set/std::unordered_multiset::bucket", "unordered_set/std::unordered_multiset::bucket_count", "unordered_set/std::unordered_multiset::bucket_size", "unordered_set/std::unordered_multiset::cbegin", "unordered_set/std::unordered_multiset::cend", "unordered_set/std::unordered_multiset::clear", "unordered_set/std::unordered_multiset::contains", "unordered_set/std::unordered_multiset::count", "unordered_set/std::unordered_multiset::emplace", "unordered_set/std::unordered_multiset::emplace_hint", "unordered_set/std::unordered_multiset::empty", "unordered_set/std::unordered_multiset::end", "unordered_set/std::unordered_multiset::equal_range", "unordered_set/std::unordered_multiset::erase", "unordered_set/std::unordered_multiset::find", "unordered_set/std::unordered_multiset::get_allocator", "unordered_set/std::unordered_multiset::hash", "unordered_set/std::unordered_multiset::insert", "unordered_set/std::unordered_multiset::key_eq", "unordered_set/std::unordered_multiset::load_factor", "unordered_set/std::unordered_multiset::max_bucket_count", "unordered_set/std::unordered_multiset::max_load_factor", "unordered_set/std::unordered_multiset::max_size", "unordered_set/std::unordered_multiset::rehash", "unordered_set/std::unordered_multiset::size", "unordered_set/std::unordered_multiset::swap", "unordered_set/std::unordered_multiset::unordered_multiset", "unordered_set/std::unordered_multiset::operator=", "unordered_set/std::unordered_multiset::hash_function"]
+helpviewer_keywords: ["std::unordered_multiset", "std::unordered_multiset::allocator_type", "std::unordered_multiset::const_iterator", "std::unordered_multiset::const_local_iterator", "std::unordered_multiset::const_pointer", "std::unordered_multiset::const_reference", "std::unordered_multiset::difference_type", "std::unordered_multiset::hasher", "std::unordered_multiset::iterator", "std::unordered_multiset::key_equal", "std::unordered_multiset::key_type", "std::unordered_multiset::local_iterator", "std::unordered_multiset::pointer", "std::unordered_multiset::reference", "std::unordered_multiset::size_type", "std::unordered_multiset::value_type", "std::unordered_multiset::begin", "std::unordered_multiset::bucket", "std::unordered_multiset::bucket_count", "std::unordered_multiset::bucket_size", "std::unordered_multiset::cbegin", "std::unordered_multiset::cend", "std::unordered_multiset::clear", "std::unordered_multiset::contains", "std::unordered_multiset::count", "std::unordered_multiset::emplace", "std::unordered_multiset::emplace_hint", "std::unordered_multiset::empty", "std::unordered_multiset::end", "std::unordered_multiset::equal_range", "std::unordered_multiset::erase", "std::unordered_multiset::find", "std::unordered_multiset::get_allocator", "std::unordered_multiset::hash", "std::unordered_multiset::insert", "std::unordered_multiset::key_eq", "std::unordered_multiset::load_factor", "std::unordered_multiset::max_bucket_count", "std::unordered_multiset::max_load_factor", "std::unordered_multiset::max_size", "std::unordered_multiset::rehash", "std::unordered_multiset::size", "std::unordered_multiset::swap", "std::unordered_multiset::unordered_multiset", "std::unordered_multiset::operator=", "std::unordered_multiset::allocator_type", "std::unordered_multiset::const_iterator", "std::unordered_multiset::const_local_iterator", "std::unordered_multiset::const_pointer", "std::unordered_multiset::const_reference", "std::unordered_multiset::difference_type", "std::unordered_multiset::hasher", "std::unordered_multiset::iterator", "std::unordered_multiset::key_equal", "std::unordered_multiset::key_type", "std::unordered_multiset::local_iterator", "std::unordered_multiset::pointer", "std::unordered_multiset::reference", "std::unordered_multiset::size_type", "std::unordered_multiset::value_type", "std::unordered_multiset::begin", "std::unordered_multiset::bucket", "std::unordered_multiset::bucket_count", "std::unordered_multiset::bucket_size", "std::unordered_multiset::cbegin", "std::unordered_multiset::cend", "std::unordered_multiset::clear", "std::unordered_multiset::count", "std::unordered_multiset::emplace", "std::unordered_multiset::emplace_hint", "std::unordered_multiset::empty", "std::unordered_multiset::end", "std::unordered_multiset::equal_range", "std::unordered_multiset::erase", "std::unordered_multiset::find", "std::unordered_multiset::get_allocator", "std::unordered_multiset::hash_function", "std::unordered_multiset::insert", "std::unordered_multiset::key_eq", "std::unordered_multiset::load_factor", "std::unordered_multiset::max_bucket_count", "std::unordered_multiset::max_load_factor", "std::unordered_multiset::max_size", "std::unordered_multiset::rehash", "std::unordered_multiset::size", "std::unordered_multiset::swap"]
 ms.assetid: 70c8dfc5-492a-4af2-84f5-1aa9cb04b71c
 ---
 # unordered_multiset Class
@@ -21,12 +22,17 @@ class unordered_multiset;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Key*|The key type.|
-|*Hash*|The hash function object type.|
-|*Pred*|The equality comparison function object type.|
-|*Alloc*|The allocator class.|
+*Key*\
+The key type.
+
+*Hash*\
+The hash function object type.
+
+*Pred*\
+The equality comparison function object type.
+
+*Alloc*\
+The allocator class.
 
 ## Members
 
@@ -57,6 +63,7 @@ class unordered_multiset;
 |[cbegin](#cbegin)|Designates the beginning of the controlled sequence.|
 |[cend](#cend)|Designates the end of the controlled sequence.|
 |[clear](#clear)|Removes all elements.|
+|[contains](#contains)<sup>C++20</sup>|Checks if there's an element with the specified key.|
 |[count](#count)|Finds the number of elements matching a specified key.|
 |[emplace](#emplace)|Adds an element constructed in place.|
 |[emplace_hint](#emplace_hint)|Adds an element constructed in place, with hint.|
@@ -152,9 +159,8 @@ const_local_iterator begin(size_type nbucket) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*nbucket*|The bucket number.|
+*nbucket*\
+The bucket number.
 
 ### Remarks
 
@@ -705,6 +711,57 @@ int main()
 [c] [b] [a]
 ```
 
+## <a name="contains"></a> unordered_multiset::contains
+
+Checks if there's an element with the specified key in the `unordered_multiset`.
+
+```cpp
+bool contains(const Key& key) const;
+template<class K> bool contains(const K& key) const;
+```
+
+### Parameters
+
+*K*\
+The type of the key.
+
+*key*\
+The element's key value to look for.
+
+### Return Value
+
+`true` if the element is found in the container; `false` otherwise.
+
+### Remarks
+
+`contains()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+
+`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent.
+
+### Example
+
+```cpp
+// Requires /std:c++latest
+#include <unordered_set>
+#include <iostream>
+
+int main()
+{
+    std::unordered_multiset<int> theUnorderedMultiset = { 1, 2, 3 };
+
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theUnorderedMultiset.contains(1) << '\n';
+    std::cout << theUnorderedMultiset.contains(4) << '\n';
+
+    return 0;
+}
+```
+
+```Output
+true
+false
+```
+
 ## <a name="count"></a> unordered_multiset::count
 
 Finds the number of elements matching a specified key.
@@ -830,9 +887,8 @@ iterator emplace(Args&&... args);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the unordered_multiset.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the unordered_multiset.
 
 ### Return Value
 
@@ -859,10 +915,11 @@ iterator emplace_hint(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the unordered_multiset.|
-|*where*|A hint regarding the place to start searching for the correct point of insertion.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the unordered_multiset.
+
+*where*\
+A hint regarding the place to start searching for the correct point of insertion.
 
 ### Return Value
 
@@ -1332,15 +1389,26 @@ IList);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Val*|The value of an element to be inserted into the unordered_multiset.|
-|*Where*|The place to start searching for the correct point of insertion.|
-|*ValTy*|Template parameter that specifies the argument type that the unordered_multiset can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.|
-|*First*|The position of the first element to be copied.|
-|*Last*|The position just beyond the last element to be copied.|
-|*InputIterator*|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
-|*IList*|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
+*Val*\
+The value of an element to be inserted into the unordered_multiset.
+
+*Where*\
+The place to start searching for the correct point of insertion.
+
+*ValTy*\
+Template parameter that specifies the argument type that the unordered_multiset can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.
+
+*First*\
+The position of the first element to be copied.
+
+*Last*\
+The position just beyond the last element to be copied.
+
+*InputIterator*\
+Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.
+
+*IList*\
+The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.
 
 ### Return Value
 
@@ -1852,9 +1920,8 @@ unordered_multiset& operator=(unordered_multiset&& right);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [unordered_multiset](../standard-library/unordered-multiset-class.md) being copied into the `unordered_multiset`.|
+*right*\
+The [unordered_multiset](../standard-library/unordered-multiset-class.md) being copied into the `unordered_multiset`.
 
 ### Remarks
 
@@ -2298,15 +2365,26 @@ unordered_multiset(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*InputIterator*|The iterator type.|
-|*Al*|The allocator object to store.|
-|*Comp*|The comparison function object to store.|
-|*Hash*|The hash function object to store.|
-|*Bucket_count*|The minimum number of buckets.|
-|*Right*|The container to copy.|
-|*IList*|The initializer_list from which to copy.|
+*InputIterator*\
+The iterator type.
+
+*Al*\
+The allocator object to store.
+
+*Comp*\
+The comparison function object to store.
+
+*Hash*\
+The hash function object to store.
+
+*Bucket_count*\
+The minimum number of buckets.
+
+*Right*\
+The container to copy.
+
+*IList*\
+The initializer_list from which to copy.
 
 ### Remarks
 
@@ -2379,6 +2457,6 @@ int main()
 ## See also
 
 [<unordered_set>](../standard-library/unordered-set.md)\
-[Containers](../cpp/containers-modern-cpp.md)\
+[Containers](./stl-containers.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

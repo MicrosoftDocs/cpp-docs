@@ -23,12 +23,17 @@ namespace std
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*unspecified*|An unspecified internal class that is used to implement the `exception_ptr` type.|
-|*p*|An `exception_ptr` object that references an exception.|
-|*E*|A class that represents an exception.|
-|*e*|An instance of the parameter `E` class.|
+*unspecified*\
+An unspecified internal class that is used to implement the `exception_ptr` type.
+
+*p*\
+An `exception_ptr` object that references an exception.
+
+*E*\
+A class that represents an exception.
+
+*e*\
+An instance of the parameter `E` class.
 
 ## Return value
 

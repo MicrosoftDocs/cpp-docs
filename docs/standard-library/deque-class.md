@@ -46,13 +46,13 @@ Otherwise, inserting or erasing an element invalidates all iterators and referen
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[deque](#deque)|Constructs a `deque`. Several constructors are provided to set up the contents of the new `deque` in different ways: empty; loaded with a specified number of empty elements; contents moved or copied from another `deque`; contents copied or moved by using an iterator; and one element copied into the `deque` `count` times. Some of the constructors enable using a custom `allocator` to create elements.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the `deque` object.|
 |[const_iterator](#const_iterator)|A type that provides a random-access iterator that can access and read elements in the `deque` as **`const`**|
@@ -69,7 +69,7 @@ Otherwise, inserting or erasing an element invalidates all iterators and referen
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[assign](#assign)|Erases elements from a `deque` and copies a new sequence of elements to the target `deque`.|
 |[at](#at)|Returns a reference to the element at a specified location in the `deque`.|
@@ -103,7 +103,7 @@ Otherwise, inserting or erasing an element invalidates all iterators and referen
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator&#91;&#93;](#op_at)|Returns a reference to the `deque` element at a specified position.|
 |[operator=](#op_eq)|Replaces the elements of the `deque` with a copy of another `deque`.|

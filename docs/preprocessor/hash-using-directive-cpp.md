@@ -58,7 +58,7 @@ The compiler searches for references along the following path:
 
 - Directories on LIBPATH environment variable.
 
-## Example
+## Examples
 
 You can build an assembly that references a second assembly that itself references a third assembly. You only have to explicitly reference the third assembly from the first one if you explicitly use one of its types.
 
@@ -67,8 +67,6 @@ You can build an assembly that references a second assembly that itself referenc
 // compile with: /clr /LD
 public ref class A {};
 ```
-
-## Example
 
 ```cpp
 // using_assembly_B.cpp
@@ -80,8 +78,6 @@ public:
    void Test() {}
 };
 ```
-
-## Example
 
 In the following sample, there's the compiler doesn't report an error about referencing *using_assembly_A.dll*, because the program doesn't use any of the types defined in *using_assembly_A.cpp*.
 

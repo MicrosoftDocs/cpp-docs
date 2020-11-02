@@ -6,12 +6,12 @@ helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time a
 ---
 # Tutorial: vcperf and Windows Performance Analyzer
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 The C++ Build Insights tools are available in Visual Studio 2019. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 In this tutorial, you'll learn how to use *vcperf.exe* to collect a trace of your C++ build. You'll also learn how to view this trace in Windows Performance Analyzer.
 
@@ -25,7 +25,7 @@ A version of WPA that supports C++ Build Insights is currently only available in
 
 NOTE: Windows 8 or above is required for installing the Windows Performance Analyzer.
 
-1. Browse to the Windows ADK [download page](https://docs.microsoft.com/windows-hardware/get-started/adk-install).
+1. Browse to the Windows ADK [download page](/windows-hardware/get-started/adk-install).
 
 1. Download and install the latest version of the Windows ADK.
 
@@ -113,10 +113,10 @@ Other views are available in the Graph Explorer panel. Drag them into the Analys
 [Tutorial: Windows Performance Analyzer basics](wpa-basics.md)\
 Learn about common WPA operations that can help you analyze your build traces.
 
-[Reference: vcperf commands](/cpp/build-insights/reference/vcperf-commands)\
+[Reference: vcperf commands](../reference/vcperf-commands.md)\
 The *vcperf.exe* command reference lists all the available command options.
 
-[Reference: Windows Performance Analyzer views](/cpp/build-insights/reference/wpa-views)\
+[Reference: Windows Performance Analyzer views](../reference/wpa-views.md)\
 Refer to this article for details about the C++ Build Insights views in WPA.
 
 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)\

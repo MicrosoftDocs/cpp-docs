@@ -6,13 +6,13 @@ ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
 ---
 # ATL OLE DB Consumer Wizard
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 This wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 This wizard sets up an OLE DB consumer class with the data bindings necessary to access the specified data source through the specified OLE DB provider.
 
@@ -148,7 +148,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
     // for consumer type of 'table'
     ```
 
-     See [Basic Mechanics of Attributes](../../windows/basic-mechanics-of-attributes.md) for more information.
+     See [Basic mechanics of attributes](../../windows/attributes/cpp-attributes-com-net.md#basic-mechanics-of-attributes) for more information.
 
 - **Type**
 

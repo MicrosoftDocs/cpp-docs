@@ -37,13 +37,13 @@ Storage unit for column information. The default is [CAtlMap](../../atl/referenc
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[IAccessorImpl](#iaccessorimpl)|The constructor.|
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddRefAccessor](#addrefaccessor)|Adds a reference count to an existing accessor.|
 |[CreateAccessor](#createaccessor)|Creates an accessor from a set of bindings.|

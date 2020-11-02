@@ -5,13 +5,13 @@ ms.assetid: a0243a94-8164-425b-b2fe-b84ff363d546
 ---
 # Linker Properties (Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux support is available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## General
 

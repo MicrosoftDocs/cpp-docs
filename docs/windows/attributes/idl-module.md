@@ -70,9 +70,7 @@ void FuncName(int i);
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

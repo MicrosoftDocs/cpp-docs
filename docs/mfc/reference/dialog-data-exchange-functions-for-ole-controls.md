@@ -11,7 +11,7 @@ This topic lists the DDX_OC functions used to exchange data between a property o
 
 ### DDX_OC Functions
 
-|||
+|Name|Description|
 |-|-|
 |[DDX_OCBool](#ddx_ocbool)|Manages the transfer of **BOOL** data between a property of an OLE control and a **BOOL** data member.|
 |[DDX_OCBoolRO](#ddx_ocboolro)|Manages the transfer of **BOOL** data between a read-only property of an OLE control and a **BOOL** data member.|

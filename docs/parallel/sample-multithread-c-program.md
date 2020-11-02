@@ -13,7 +13,7 @@ Programs are compiled as multithreaded by default.
 
 ### To compile and link the multithread program Bounce.c from within the development environment
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. On the **File** menu, choose **New** > **Project**.
 
@@ -31,7 +31,7 @@ Programs are compiled as multithreaded by default.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 1. On the **File** menu, choose **New** > **Project**.
 

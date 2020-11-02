@@ -7,13 +7,13 @@ ms.assetid: aa66bad0-008f-4886-94c1-2a0a0d04bce4
 ---
 # Details of ATL Support Added by the ATL Wizard
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 When you [add ATL support to an existing MFC executable or DLL](../../mfc/reference/adding-atl-support-to-your-mfc-project.md), Visual Studio adds a header file called *framework.h* by default, which contains `#include` and `#define` preprocessor directives to enable the use of ATL in your project. No additional files or classes are added, as was done in previous versions of Visual Studio.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 When you [add ATL support to an existing MFC executable or DLL](../../mfc/reference/adding-atl-support-to-your-mfc-project.md), Visual Studio makes the following modifications to the existing MFC project (in this example, the project is called `MFCEXE`):
 

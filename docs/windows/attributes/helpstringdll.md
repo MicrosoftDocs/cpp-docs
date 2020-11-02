@@ -41,9 +41,7 @@ __interface IMyI
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **interface**, interface method|
 |**Repeatable**|No|

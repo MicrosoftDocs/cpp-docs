@@ -8,11 +8,9 @@ ms.assetid: b2a6857c-fdd3-45ec-8fd8-2e71fac77582
 
 Three callback functions appear in the Microsoft Foundation Class Library. These callback functions are passed to [CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects), [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring), and [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc). Note that all callback functions must trap MFC exceptions before returning to Windows, since exceptions cannot be thrown across callback boundaries. For more information about exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).
 
-|Name||
-|----------|-----------------|
-|[Callback Function for CDC::EnumObjects](#enum_objects)||
-|[Callback Function for CDC::GrayString](#graystring)||
-|[Callback Function for CDC::SetAbortProc](#setabortproc)||
+[Callback Function for CDC::EnumObjects](#enum_objects)\
+[Callback Function for CDC::GrayString](#graystring)\
+[Callback Function for CDC::SetAbortProc](#setabortproc)
 
 ## Requirements
 

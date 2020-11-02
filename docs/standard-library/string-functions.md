@@ -7,12 +7,18 @@ helpviewer_keywords: ["std::getline [C++]", "std::stod [C++]", "std::stof [C++]"
 ---
 # &lt;string&gt; functions
 
-||||
-|-|-|-|
-|[getline](#getline)|[stod](#stod)|[stof](#stof)|
-|[stoi](#stoi)|[stol](#stol)|[stold](#stold)|
-|[stoll](#stoll)|[stoul](#stoul)|[stoull](#stoull)|
-|[swap](#swap)|[to_string](#to_string)|[to_wstring](#to_wstring)|
+[getline](#getline)\
+[stod](#stod)\
+[stof](#stof)\
+[stoi](#stoi)\
+[stol](#stol)\
+[stold](#stold)\
+[stoll](#stoll)\
+[stoul](#stoul)\
+[stoull](#stoull)\
+[swap](#swap)\
+[to_string](#to_string)\
+[to_wstring](#to_wstring)
 
 ## <a name="getline"></a> getline
 

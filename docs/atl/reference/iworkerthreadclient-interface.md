@@ -22,7 +22,7 @@ __interface IWorkerThreadClient
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[CloseHandle](#closehandle)|Implement this method to close the handle associated with this object.|
 |[Execute](#execute)|Implement this method to execute code when the handle associated with this object becomes signaled.|

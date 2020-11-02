@@ -1,6 +1,7 @@
 ---
 title: "COleDateTime Class"
-ms.date: "03/27/2019"
+description: "API reference for the MFC COleDateTime class which Encapsulates the `DATE` data type used in OLE automation."
+ms.date: "08/27/2020"
 f1_keywords: ["COleDateTime", "ATLCOMTIME/ATL::COleDateTime", "ATLCOMTIME/ATL::COleDateTime::COleDateTime", "ATLCOMTIME/ATL::COleDateTime::Format", "ATLCOMTIME/ATL::COleDateTime::GetAsDBTIMESTAMP", "ATLCOMTIME/ATL::COleDateTime::GetAsSystemTime", "ATLCOMTIME/ATL::COleDateTime::GetAsUDATE", "ATLCOMTIME/ATL::COleDateTime::GetCurrentTime", "ATLCOMTIME/ATL::COleDateTime::GetDay", "ATLCOMTIME/ATL::COleDateTime::GetDayOfWeek", "ATLCOMTIME/ATL::COleDateTime::GetDayOfYear", "ATLCOMTIME/ATL::COleDateTime::GetHour", "ATLCOMTIME/ATL::COleDateTime::GetMinute", "ATLCOMTIME/ATL::COleDateTime::GetMonth", "ATLCOMTIME/ATL::COleDateTime::GetSecond", "ATLCOMTIME/ATL::COleDateTime::GetStatus", "ATLCOMTIME/ATL::COleDateTime::GetYear", "ATLCOMTIME/ATL::COleDateTime::ParseDateTime", "ATLCOMTIME/ATL::COleDateTime::SetDate", "ATLCOMTIME/ATL::COleDateTime::SetDateTime", "ATLCOMTIME/ATL::COleDateTime::SetStatus", "ATLCOMTIME/ATL::COleDateTime::SetTime", "ATLCOMTIME/ATL::COleDateTime::m_dt", "ATLCOMTIME/ATL::COleDateTime::m_status"]
 helpviewer_keywords: ["shared classes, COleDateTime", "time-only values", "Date data type, MFC encapsulation of", "COleDateTime class", "dates, handling in MFC", "time, handling in MFC"]
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
@@ -83,7 +84,7 @@ The `DATE` type is implemented as a floating-point value. Days are measured from
 > [!CAUTION]
 > In the table above, although day values become negative before midnight on December 30, 1899, time-of-day values do not. For example, 6:00 AM is always represented by a fractional value 0.25 regardless of whether the integer representing the day is positive (after December 30, 1899) or negative (before December 30, 1899). This means that a simple floating point comparison would erroneously sort a `COleDateTime` representing 6:00 AM on 12/29/1899 as **later** than one representing 7:00 AM on the same day.
 
-The `COleDateTime` class handles dates from January 1, 100, through December 31, 9999. The `COleDateTime` class uses the Gregorian calendar; it does not support Julian dates. `COleDateTime` ignores Daylight Saving Time. (See [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).)
+The `COleDateTime` class handles dates from January 1, 100, through December 31, 9999. The `COleDateTime` class uses the Gregorian calendar; it does not support Julian dates. `COleDateTime` ignores Daylight Saving Time. (See [Date and Time: Automation Support](../date-and-time.md).)
 
 > [!NOTE]
 > You can use the `%y` format to retrieve a two-digit year only for dates starting at 1900. If you use the `%y` format on a date before 1900, the code generates an ASSERT failure.
@@ -98,7 +99,7 @@ To avoid problems, specify a four-digit date. For example:
 
 Basic arithmetic operations for the `COleDateTime` values use the companion class [COleDateTimeSpan](../../atl-mfc-shared/reference/coledatetimespan-class.md). `COleDateTimeSpan` values define a time interval. The relationship between these classes is similar to the one between [CTime](../../atl-mfc-shared/reference/ctime-class.md) and [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md).
 
-For more information about the `COleDateTime` and `COleDateTimeSpan` classes, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the `COleDateTime` and `COleDateTimeSpan` classes, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ## Requirements
 
@@ -230,7 +231,7 @@ For more information on the `time_t` data type, see the [time](../../c-runtime-l
 
 For more information, see the [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) and [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) structures in the Windows SDK.
 
-For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 > [!NOTE]
 > The constructor using `DBTIMESTAMP` parameter is only available when OLEDB.h is included.
@@ -419,7 +420,7 @@ For information on other member functions that query the value of this `COleDate
 
 ## <a name="getdayofweek"></a> COleDateTime::GetDayOfWeek
 
-Gets the day of the month represented by this date/time value.
+Gets the day of the week represented by this date/time value.
 
 ```
 int GetDayOfWeek() const throw();
@@ -616,7 +617,7 @@ Valid return values range between 0 and 59.
 > [!NOTE]
 > The `COleDateTime` class does not support leap seconds.
 
-For more information about the implementation for `COleDateTime`, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the implementation for `COleDateTime`, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 For information on other member functions that query the value of this `COleDateTime` object, see the following member functions:
 
@@ -698,7 +699,7 @@ For more information about the operations that may set the status to invalid, se
 
 - [operator +=, -=](#operator_add_eq_-_eq)
 
-For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ### Example
 
@@ -736,7 +737,7 @@ For information on other member functions that query the value of this `COleDate
 
 - [GetDayOfYear](#getdayofyear)
 
-For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ### Example
 
@@ -755,7 +756,7 @@ DATE m_dt;
 > [!CAUTION]
 > Changing the value in the `DATE` object accessed by the pointer returned by this function will change the value of this `COleDateTime` object. It does not change the status of this `COleDateTime` object.
 
-For more information about the implementation of the `DATE` object, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the implementation of the `DATE` object, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ## <a name="m_status"></a> COleDateTime::m_status
 
@@ -810,7 +811,7 @@ For more information on the `time_t` data type, see the [time](../../c-runtime-l
 
 For more information, see the [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) and [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) structures in the Windows SDK.
 
-For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ## <a name="operator_add_-"></a> COleDateTime::operator +, -
 
@@ -836,7 +837,7 @@ The **+** and **-** operators will assert if the `COleDateTime` object is set to
 
 For more information on the valid, invalid, and null status values, see the [m_status](#m_status) member variable.
 
-For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ### Example
 
@@ -863,7 +864,7 @@ For more information on the valid, invalid, and null status values, see the [m_s
 
 The **+=** and **-=** operators will assert if the `COleDateTime` object is set to null. See [COleDateTime Relational Operators](#coledatetime_relational_operators) for an example.
 
-For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ## <a name="operator_date"></a> COleDateTime::operator DATE
 
@@ -875,7 +876,7 @@ operator DATE() const throw();
 
 ### Remarks
 
-This operator returns a `DATE` object whose value is copied from this `COleDateTime` object. For more information about the implementation of the `DATE` object, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+This operator returns a `DATE` object whose value is copied from this `COleDateTime` object. For more information about the implementation of the `DATE` object, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 The `DATE` operator will assert if the `COleDateTime` object is set to null. See [COleDateTime Relational Operators](#coledatetime_relational_operators) for an example.
 
@@ -938,7 +939,7 @@ In the case of VAR_DATEVALUEONLY, the time value is set to time 0, or midnight. 
 
 If the string could not be converted to a date/time value or if there was a numerical overflow, the status of this `COleDateTime` object is invalid.
 
-For more information about the bounds and implementation for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds and implementation for `COleDateTime` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ## <a name="setdate"></a> COleDateTime::SetDate
 
@@ -953,8 +954,14 @@ int SetDate(
 
 ### Parameters
 
-*nYear*, *nMonth*, *nDay*<br/>
-Indicate the date components to be copied into this `COleDateTime` object.
+*nYear*\
+Indicates the year to copy into this `COleDateTime` object.
+
+*nMonth*\
+Indicates the month to copy into this `COleDateTime` object.
+
+*nDay*\
+Indicates the day to copy into this `COleDateTime` object.
 
 ### Return Value
 
@@ -1005,7 +1012,7 @@ For information on member functions that query the value of this `COleDateTime` 
 
 - [GetDayOfYear](#getdayofyear)
 
-For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ### Example
 
@@ -1089,7 +1096,7 @@ For information on member functions that query the value of this `COleDateTime` 
 
 - [GetDayOfYear](#getdayofyear)
 
-For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ### Example
 
@@ -1182,7 +1189,7 @@ For information on member functions that query the value of this `COleDateTime` 
 
 - [GetDayOfYear](#getdayofyear)
 
-For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTime` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ### Example
 

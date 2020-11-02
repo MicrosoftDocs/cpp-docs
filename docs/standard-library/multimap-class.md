@@ -1,13 +1,14 @@
 ---
 title: "multimap Class"
-ms.date: "10/18/2018"
-f1_keywords: ["map/std::multimap", "map/std::multimap::allocator_type", "map/std::multimap::const_iterator", "map/std::multimap::const_pointer", "map/std::multimap::const_reference", "map/std::multimap::const_reverse_iterator", "map/std::multimap::difference_type", "map/std::multimap::iterator", "map/std::multimap::key_compare", "map/std::multimap::key_type", "map/std::multimap::mapped_type", "map/std::multimap::pointer", "map/std::multimap::reference", "map/std::multimap::reverse_iterator", "map/std::multimap::size_type", "map/std::multimap::value_type", "map/std::multimap::begin", "map/std::multimap::cbegin", "map/std::multimap::cend", "map/std::multimap::clear", "map/std::multimap::count", "map/std::multimap::crbegin", "map/std::multimap::crend", "map/std::multimap::emplace", "map/std::multimap::emplace_hint", "map/std::multimap::empty", "map/std::multimap::end", "map/std::multimap::equal_range", "map/std::multimap::erase", "map/std::multimap::find", "map/std::multimap::get_allocator", "map/std::multimap::insert", "map/std::multimap::key_comp", "map/std::multimap::lower_bound", "map/std::multimap::max_size", "map/std::multimap::rbegin", "map/std::multimap::rend", "map/std::multimap::size", "map/std::multimap::swap", "map/std::multimap::upper_bound", "map/std::multimap::value_comp"]
-helpviewer_keywords: ["std::multimap [C++]", "std::multimap [C++], allocator_type", "std::multimap [C++], const_iterator", "std::multimap [C++], const_pointer", "std::multimap [C++], const_reference", "std::multimap [C++], const_reverse_iterator", "std::multimap [C++], difference_type", "std::multimap [C++], iterator", "std::multimap [C++], key_compare", "std::multimap [C++], key_type", "std::multimap [C++], mapped_type", "std::multimap [C++], pointer", "std::multimap [C++], reference", "std::multimap [C++], reverse_iterator", "std::multimap [C++], size_type", "std::multimap [C++], value_type", "std::multimap [C++], begin", "std::multimap [C++], cbegin", "std::multimap [C++], cend", "std::multimap [C++], clear", "std::multimap [C++], count", "std::multimap [C++], crbegin", "std::multimap [C++], crend", "std::multimap [C++], emplace", "std::multimap [C++], emplace_hint", "std::multimap [C++], empty", "std::multimap [C++], end", "std::multimap [C++], equal_range", "std::multimap [C++], erase", "std::multimap [C++], find", "std::multimap [C++], get_allocator", "std::multimap [C++], insert", "std::multimap [C++], key_comp", "std::multimap [C++], lower_bound", "std::multimap [C++], max_size", "std::multimap [C++], rbegin", "std::multimap [C++], rend", "std::multimap [C++], size", "std::multimap [C++], swap", "std::multimap [C++], upper_bound", "std::multimap [C++], value_comp"]
+description: "API reference for the C++ Standard Template Library (STL) `multimap` class, which is used for the storage and retrieval of data from a collection in which each element is a pair that has both a data value and a sort key."
+ms.date: "9/9/2020"
+f1_keywords: ["map/std::multimap", "map/std::multimap::allocator_type", "map/std::multimap::const_iterator", "map/std::multimap::const_pointer", "map/std::multimap::const_reference", "map/std::multimap::const_reverse_iterator", "map/std::multimap::difference_type", "map/std::multimap::iterator", "map/std::multimap::key_compare", "map/std::multimap::key_type", "map/std::multimap::mapped_type", "map/std::multimap::pointer", "map/std::multimap::reference", "map/std::multimap::reverse_iterator", "map/std::multimap::size_type", "map/std::multimap::value_type", "map/std::multimap::begin", "map/std::multimap::cbegin", "map/std::multimap::cend", "map/std::multimap::clear", "map/std::multimap::contains", "map/std::multimap::count", "map/std::multimap::crbegin", "map/std::multimap::crend", "map/std::multimap::emplace", "map/std::multimap::emplace_hint", "map/std::multimap::empty", "map/std::multimap::end", "map/std::multimap::equal_range", "map/std::multimap::erase", "map/std::multimap::find", "map/std::multimap::get_allocator", "map/std::multimap::insert", "map/std::multimap::key_comp", "map/std::multimap::lower_bound", "map/std::multimap::max_size", "map/std::multimap::rbegin", "map/std::multimap::rend", "map/std::multimap::size", "map/std::multimap::swap", "map/std::multimap::upper_bound", "map/std::multimap::value_comp"]
+helpviewer_keywords: ["std::multimap [C++]", "std::multimap [C++], allocator_type", "std::multimap [C++], const_iterator", "std::multimap [C++], const_pointer", "std::multimap [C++], const_reference", "std::multimap [C++], const_reverse_iterator", "std::multimap [C++], difference_type", "std::multimap [C++], iterator", "std::multimap [C++], key_compare", "std::multimap [C++], key_type", "std::multimap [C++], mapped_type", "std::multimap [C++], pointer", "std::multimap [C++], reference", "std::multimap [C++], reverse_iterator", "std::multimap [C++], size_type", "std::multimap [C++], value_type", "std::multimap [C++], begin", "std::multimap [C++], cbegin", "std::multimap [C++], cend", "std::multimap [C++], clear", "std::multimap [C++], contains", "std::multimap [C++], count", "std::multimap [C++], crbegin", "std::multimap [C++], crend", "std::multimap [C++], emplace", "std::multimap [C++], emplace_hint", "std::multimap [C++], empty", "std::multimap [C++], end", "std::multimap [C++], equal_range", "std::multimap [C++], erase", "std::multimap [C++], find", "std::multimap [C++], get_allocator", "std::multimap [C++], insert", "std::multimap [C++], key_comp", "std::multimap [C++], lower_bound", "std::multimap [C++], max_size", "std::multimap [C++], rbegin", "std::multimap [C++], rend", "std::multimap [C++], size", "std::multimap [C++], swap", "std::multimap [C++], upper_bound", "std::multimap [C++], value_comp"]
 ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
 ---
 # multimap Class
 
-The C++ Standard Library multimap class is used for the storage and retrieval of data from a collection in which the each element is a pair that has both a data value and a sort key. The value of the key does not need to be unique and is used to order the data automatically. The value of an element in a multimap, but not its associated key value, may be changed directly. Instead, key values associated with old elements must be deleted and new key values associated with new elements inserted.
+The C++ Standard Library multimap class is used for the storage and retrieval of data from a collection in which the each element is a pair that has both a data value and a sort key. The value of the key doesn't need to be unique and is used to order the data automatically. The value of an element in a multimap, but not its associated key value, may be changed directly. Instead, key values associated with old elements must be deleted and new key values associated with new elements inserted.
 
 ## Syntax
 
@@ -45,7 +46,7 @@ The C++ Standard Library multimap class is
 
 - Sorted, because its elements are ordered by key values within the container in accordance with a specified comparison function.
 
-- Multiple, because its elements do not need to have a unique keys, so that one key value may have many element data values associated with it.
+- Multiple, because its elements don't need to have a unique key, so that one key value may have many element data values associated with it.
 
 - A pair associative container, because its element data values are distinct from its key values.
 
@@ -53,13 +54,13 @@ The C++ Standard Library multimap class is
 
 The iterator provided by the map class is a bidirectional iterator, but the class member functions [insert](#insert) and [multimap](#multimap) have versions that take as template parameters a weaker input iterator, whose functionality requirements are more minimal than those guaranteed by the class of bidirectional iterators. The different iterator concepts form a family related by refinements in their functionality. Each iterator concept has its own set of requirements and the algorithms that work with them must limit their assumptions to the requirements provided by that type of iterator. It may be assumed that an input iterator may be dereferenced to refer to some object and that it may be incremented to the next iterator in the sequence. This is a minimal set of functionality, but it is enough to be able to talk meaningfully about a range of iterators `[First, Last)` in the context of the class's member functions.
 
-The choice of container type should be based in general on the type of searching and inserting required by the application. Associative containers are optimized for the operations of lookup, insertion and removal. The member functions that explicitly support these operations are efficient, performing them in a time that is on average proportional to the logarithm of the number of elements in the container. Inserting elements invalidates no iterators, and removing elements invalidates only those iterators that had specifically pointed at the removed elements.
+The choice of container type should be based in general on the type of searching and inserting required by the application. Associative containers are optimized for the operations of lookup, insertion, and removal. The member functions that explicitly support these operations are efficient, performing them in a time that is on average proportional to the logarithm of the number of elements in the container. Inserting elements invalidates no iterators, and removing elements invalidates only those iterators that had pointed at the removed elements.
 
-The multimap should be the associative container of choice when the conditions associating the values with their keys are satisfied by the application. A model for this type of structure is an ordered list of key words with associated string values providing, say, definitions, where the words were not always uniquely defined. If, instead, the key words were uniquely defined so that keys were unique, then a map would be the container of choice. If, on the other hand, just the list of words were being stored, then a set would be the correct container. If multiple occurrences of the words were allowed, then a multiset would be the appropriate container structure.
+The multimap should be the associative container of choice when the conditions associating the values with their keys are satisfied by the application. A model for this type of structure is an ordered list of key words with associated string values providing, say, definitions, where the words weren't always uniquely defined. If, instead, the key words were uniquely defined so that keys were unique, then a map would be the container of choice. If, on the other hand, just the list of words were being stored, then a set would be the correct container. If multiple occurrences of the words were allowed, then a `multiset` would be the appropriate container structure.
 
 The multimap orders the sequence it controls by calling a stored function object of type [key_compare](#key_compare). This stored object is a comparison function that may be accessed by calling the member function [key_comp](#key_comp). In general, the elements need be merely less than comparable to establish this order: so that, given any two elements, it may be determined either that they are equivalent (in the sense that neither is less than the other) or that one is less than the other. This results in an ordering between the nonequivalent elements. On a more technical note, the comparison function is a binary predicate that induces a strict weak ordering in the standard mathematical sense. A binary predicate `f(x,y)` is a function object that has two argument objects `x` and `y` and a return value of true or false. An ordering imposed on a set is a strict weak ordering if the binary predicate is irreflexive, antisymmetric, and transitive and if equivalence is transitive, where two objects `x` and `y` are defined to be equivalent when both `f(x,y)` and `f(y,x)` are false. If the stronger condition of equality between keys replaces that of equivalence, then the ordering becomes total (in the sense that all the elements are ordered with respect to each other) and the keys matched will be indiscernible from each other.
 
-In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
+In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. See [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers) for more information.
 
 ## Members
 
@@ -81,7 +82,7 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 |[difference_type](#difference_type)|A signed integer type that can be used to represent the number of elements of a `multimap` in a range between elements pointed to by iterators.|
 |[iterator](#iterator)|A type that provides the difference between two iterators that refer to elements within the same `multimap`.|
 |[key_compare](#key_compare)|A type that provides a function object that can compare two sort keys to determine the relative order of two elements in the `multimap`.|
-|[key_type](#key_type)|A type that describes the sort key object that constitutes each element of the `multimap`.|
+|[key_type](#key_type)|A type that describes the sort key object that makes up each element of the `multimap`.|
 |[mapped_type](#mapped_type)|A type that represents the data type stored in a `multimap`.|
 |[pointer](#pointer)|A type that provides a pointer to a **`const`** element in a `multimap`.|
 |[reference](#reference)|A type that provides a reference to an element stored in a `multimap`.|
@@ -97,6 +98,7 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 |[cbegin](#cbegin)|Returns a const iterator addressing the first element in the `multimap`.|
 |[cend](#cend)|Returns a const iterator that addresses the location succeeding the last element in a `multimap`.|
 |[clear](#clear)|Erases all the elements of a `multimap`.|
+|[contains](#contains)<sup>C++20</sup>|Checks if there is an element with the specified key in the `multimap`.|
 |[count](#count)|Returns the number of elements in a `multimap` whose key matches a parameter-specified key.|
 |[crbegin](#crbegin)|Returns a const iterator addressing the first element in a reversed `multimap`.|
 |[crend](#crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `multimap`.|
@@ -118,8 +120,6 @@ In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or 
 |[swap](#swap)|Exchanges the elements of two `multimap`s.|
 |[upper_bound](#upper_bound)|Returns an iterator to the first element in a `multimap` that with a key that is greater than a specified key.|
 |[value_comp](#value_comp)|The member function returns a function object that determines the order of elements in a `multimap` by comparing their key values.|
-
-### Operators
 
 |Operator|Description|
 |-|-|
@@ -214,7 +214,7 @@ A **`const`** bidirectional-access iterator that points at the first element of 
 
 ### Remarks
 
-With the return value of `cbegin`, the elements in the range cannot be modified.
+With the return value of `cbegin`, the elements in the range can't be modified.
 
 You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
@@ -252,7 +252,7 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-The value returned by `cend` should not be dereferenced.
+The value returned by `cend` shouldn't be dereferenced.
 
 ## <a name="clear"></a> multimap::clear
 
@@ -308,7 +308,7 @@ typedef implementation-defined const_iterator;
 
 ### Remarks
 
-A type `const_iterator` cannot be used to modify the value of an element.
+A type `const_iterator` can't be used to modify the value of an element.
 
 The `const_iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair<const Key, Type>`. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.
 
@@ -330,7 +330,7 @@ typedef typename allocator_type::const_pointer const_pointer;
 
 ### Remarks
 
-A type `const_pointer` cannot be used to modify the value of an element.
+A type `const_pointer` can't be used to modify the value of an element.
 
 In most cases, an [iterator](#iterator) should be used to access the elements in a multimap object.
 
@@ -364,7 +364,7 @@ int main( )
    const int &Ref1 = ( m1.begin( ) -> first );
 
    // The following line would cause an error because the
-   // non-const_reference cannot be used to access the key
+   // non-const_reference can't be used to access the key
    // int &Ref1 = ( m1.begin( ) -> first );
 
    cout << "The key of the first element in the multimap is "
@@ -394,7 +394,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 ### Remarks
 
-A type `const_reverse_iterator` cannot modify the value of an element and is use to iterate through the multimap in reverse.
+A type `const_reverse_iterator` can't modify the value of an element and is used to iterate through the multimap in reverse.
 
 The `const_reverse_iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair<const Key, Type>`. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.
 
@@ -405,6 +405,64 @@ To access the value of the key for the element, use `crIter->first`, which is eq
 ### Example
 
 See the example for [rend](#rend) for an example of how to declare and use `const_reverse_iterator`.
+
+## <a name="contains"></a> multimap::contains
+
+Check if there is an element with the specified key in the `multimap`.
+
+```cpp
+bool contains(const Key& key) const;
+template<class K> bool contains(const K& key) const;
+```
+
+### Parameters
+
+*K*\
+The type of the key.
+
+*key*\
+The element's key value to look for.
+
+### Return Value
+
+`true` if the element is found in the container; `false` otherwise.
+
+### Remarks
+
+`contains()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+
+`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](./stl-containers.md#heterogeneous-lookup-in-associative-containers-c14) for more information.
+
+### Example
+
+```cpp
+// Requires /std:c++latest
+#include <map>
+#include <string>
+#include <iostream>
+#include <functional>
+
+int main()
+{
+    std::multimap<int, bool> m = {{0, false}, {1, true}};
+
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << m.contains(1) << '\n';
+    std::cout << m.contains(2) << '\n';
+
+    // call template function
+    std::multimap<std::string, int, std::less<>> m2 = {{"ten", 10}, {"twenty", 20}, {"thirty", 30}};
+    std::cout << m2.contains("ten");
+
+    return 0;
+}
+```
+
+```Output
+true
+false
+true
+```
 
 ## <a name="count"></a> multimap::count
 
@@ -453,7 +511,7 @@ int main( )
     m1.insert(Int_Pair(1, 4));
     m1.insert(Int_Pair(2, 1));
 
-    // Elements do not need to have unique keys in multimap,
+    // Elements don't need to have unique keys in multimap,
     // so duplicates are allowed and counted
     i = m1.count(1);
     cout << "The number of elements in m1 with a sort key of 1 is: "
@@ -491,7 +549,7 @@ A const reverse bidirectional iterator addressing the first element in a reverse
 
 `crbegin` is used with a reversed `multimap` just as [begin](#begin) is used with a `multimap`.
 
-With the return value of `crbegin`, the `multimap` object cannot be modified.
+With the return value of `crbegin`, the `multimap` object can't be modified.
 
 `crbegin` can be used to iterate through a `multimap` backwards.
 
@@ -541,11 +599,11 @@ A const reverse bidirectional iterator that addresses the location succeeding th
 
 `crend` is used with a reversed `multimap` just as [multimap::end](#end) is used with a `multimap`.
 
-With the return value of `crend`, the `multimap` object cannot be modified.
+With the return value of `crend`, the `multimap` object can't be modified.
 
 `crend` can be used to test to whether a reverse iterator has reached the end of its `multimap`.
 
-The value returned by `crend` should not be dereferenced.
+The value returned by `crend` shouldn't be dereferenced.
 
 ### Example
 
@@ -590,7 +648,7 @@ typedef typename allocator_type::difference_type difference_type;
 
 The `difference_type` is the type returned when subtracting or incrementing through iterators of the container. The `difference_type` is typically used to represent the number of elements in the range [*first*, *last*) between the iterators `first` and `last`, includes the element pointed to by `first` and the range of elements up to, but not including, the element pointed to by `last`.
 
-Note that although `difference_type` is available for all iterators that satisfy the requirements of an input iterator, which includes the class of bidirectional iterators supported by reversible containers such as set, subtraction between iterators is only supported by random-access iterators provided by a random-access container such as vector.
+Although `difference_type` is available for all iterators that satisfy the requirements of an input iterator, which includes the class of bidirectional iterators supported by reversible containers such as set, subtraction between iterators is only supported by random-access iterators provided by a random-access container such as vector.
 
 ### Example
 
@@ -647,9 +705,8 @@ iterator emplace(Args&&... args);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the multimap.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the multimap.
 
 ### Return Value
 
@@ -717,10 +774,11 @@ iterator emplace_hint(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the multimap.|
-|*where*|The place to start searching for the correct point of insertion. (If that point immediately precedes *where*, insertion can occur in amortized constant time instead of logarithmic time.)|
+*args*\
+The arguments forwarded to construct an element to be inserted into the multimap.
+
+*where*\
+The place to start searching for the correct point of insertion. (If that point immediately precedes *where*, insertion can occur in amortized constant time instead of logarithmic time.)
 
 ### Return Value
 
@@ -799,7 +857,7 @@ The past-the-end iterator. If the multimap is empty, then `multimap::end() == mu
 
 **end** is used to test whether an iterator has passed the end of its multimap.
 
-The value returned by **end** should not be dereferenced.
+The value returned by **end** shouldn't be dereferenced.
 
 For a code example, see [multimap::find](#find).
 
@@ -947,7 +1005,7 @@ An iterator that refers to the location of an element with a specified key, or t
 
 The member function returns an iterator that refers to an element in the multimap whose sort key is equivalent to the argument key under a binary predicate that induces an ordering based on a less than comparability relation.
 
-If the return value of `find` is assigned to a `const_iterator`, the multimap object cannot be modified. If the return value of `find` is assigned to an `iterator`, the multimap object can be modified.
+If the return value of `find` is assigned to a `const_iterator`, the multimap object can't be modified. If the return value of `find` is assigned to an `iterator`, the multimap object can be modified.
 
 ### Example
 
@@ -1123,15 +1181,26 @@ IList);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Val*|The value of an element to be inserted into the multimap.|
-|*Where*|The place to start searching for the correct point of insertion. (If that point immediately precedes *Where*, insertion can occur in amortized constant time instead of logarithmic time.)|
-|*ValTy*|Template parameter that specifies the argument type that the map can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.|
-|*First*|The position of the first element to be copied.|
-|*Last*|The position just beyond the last element to be copied.|
-|*InputIterator*|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
-|*IList*|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
+*Val*\
+The value of an element to be inserted into the multimap.
+
+*Where*\
+The place to start searching for the correct point of insertion. (If that point immediately precedes *Where*, insertion can occur in amortized constant time instead of logarithmic time.)
+
+*ValTy*\
+Template parameter that specifies the argument type that the map can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.
+
+*First*\
+The position of the first element to be copied.
+
+*Last*\
+The position just beyond the last element to be copied.
+
+*InputIterator*\
+Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.
+
+*IList*\
+The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.
 
 ### Return Value
 
@@ -1147,7 +1216,7 @@ During the insertion of just one element, if an exception is thrown, the contain
 
 The [value_type](../standard-library/map-class.md#value_type) of a container is a typedef that belongs to the container, and for map, `multimap<K, V>::value_type` is `pair<const K, V>`. The value of an element is an ordered pair in which the first component is equal to the key value and the second component is equal to the data value of the element.
 
-The range member function (5) inserts the sequence of element values into a multimap that corresponds to each element addressed by an iterator in the range `[First, Last)`; therefore, *Last* does not get inserted. The container member function `end()` refers to the position just after the last element in the container—for example, the statement `m.insert(v.begin(), v.end());` inserts all elements of `v` into `m`.
+The range member function (5) inserts the sequence of element values into a multimap that corresponds to each element addressed by an iterator in the range `[First, Last)`; therefore, *Last* doesn't get inserted. The container member function `end()` refers to the position just after the last element in the container—for example, the statement `m.insert(v.begin(), v.end());` inserts all elements of `v` into `m`.
 
 The initializer list member function (6) uses an [initializer_list](../standard-library/initializer-list.md) to copy elements into the map.
 
@@ -1348,7 +1417,7 @@ typedef Traits key_compare;
 
 `key_compare` is a synonym for the template parameter `Traits`.
 
-For more information on `Traits` see the [multimap Class](../standard-library/multimap-class.md) topic.
+For more information on `Traits`, see the [multimap Class](../standard-library/multimap-class.md) topic.
 
 ### Example
 
@@ -1391,7 +1460,7 @@ The argument key to be compared with the sort key of an element from the multima
 
 An iterator or `const_iterator` that addresses the location of an element in a multimap that with a key that is equal to or greater than the argument key, or that addresses the location succeeding the last element in the multimap if no match is found for the key.
 
-If the return value of `lower_bound` is assigned to a `const_iterator`, the multimap object cannot be modified. If the return value of `lower_bound` is assigned to an **iterator**, the multimap object can be modified.
+If the return value of `lower_bound` is assigned to a `const_iterator`, the multimap object can't be modified. If the return value of `lower_bound` is assigned to an **iterator**, the multimap object can be modified.
 
 ### Example
 
@@ -1472,7 +1541,7 @@ typedef Type mapped_type;
 
 `mapped_type` is a synonym for the template parameter `Type`.
 
-For more information on `Type` see the [multimap Class](../standard-library/multimap-class.md) topic.
+For more information on `Type`, see the [multimap Class](../standard-library/multimap-class.md) topic.
 
 ### Example
 
@@ -1563,14 +1632,23 @@ multimap(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Al*|The storage allocator class to be used for this multimap object, which defaults to Allocator.|
-|*Comp*|The comparison function of type `constTraits` used to order the elements in the map, which defaults to `Traits`.|
-|*Right*|The map of which the constructed set is to be a copy.|
-|*First*|The position of the first element in the range of elements to be copied.|
-|*Last*|The position of the first element beyond the range of elements to be copied.|
-|*IList*|The initializer_list from which to copy the elements.|
+*Al*\
+The storage allocator class to be used for this multimap object, which defaults to Allocator.
+
+*Comp*\
+The comparison function of type `constTraits` used to order the elements in the map, which defaults to `Traits`.
+
+*Right*\
+The map of which the constructed set is to be a copy.
+
+*First*\
+The position of the first element in the range of elements to be copied.
+
+*Last*\
+The position of the first element beyond the range of elements to be copied.
+
+*IList*\
+The initializer_list from which to copy the elements.
 
 ### Remarks
 
@@ -1586,7 +1664,7 @@ The fourth constructor specifies a copy of the multimap *Right*.
 
 The fifth constructor specifies a copy of the multimap by moving *Right*.
 
-The sixth, seventh, and eighth constructors copy the members of an initializer_list.
+The 6th, 7th, and 8th constructors copy the members of an initializer_list.
 
 The next three constructors copy the range `[First, Last)` of a map with increasing explicitness in specifying the type of comparison function of class `Traits` and allocator.
 
@@ -1710,9 +1788,8 @@ multimap& operator=(multimap&& right);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [multimap](../standard-library/multimap-class.md) being copied into the `multimap`.|
+*right*\
+The [multimap](../standard-library/multimap-class.md) being copied into the `multimap`.
 
 ### Remarks
 
@@ -1787,7 +1864,7 @@ A reverse bidirectional iterator addressing the first element in a reversed mult
 
 `rbegin` is used with a reversed multimap just as [begin](#begin) is used with a multimap.
 
-If the return value of `rbegin` is assigned to a `const_reverse_iterator`, then the multimap object cannot be modified. If the return value of `rbegin` is assigned to a `reverse_iterator`, then the multimap object can be modified.
+If the return value of `rbegin` is assigned to a `const_reverse_iterator`, then the multimap object can't be modified. If the return value of `rbegin` is assigned to a `reverse_iterator`, then the multimap object can be modified.
 
 `rbegin` can be used to iterate through a multimap backwards.
 
@@ -1879,7 +1956,7 @@ int main( )
    const int &Ref1 = ( m1.begin( ) -> first );
 
    // The following line would cause an error because the
-   // non-const_reference cannot be used to access the key
+   // non-const_reference can't be used to access the key
    // int &Ref1 = ( m1.begin( ) -> first );
 
    cout << "The key of first element in the multimap is "
@@ -1924,11 +2001,11 @@ A reverse bidirectional iterator that addresses the location succeeding the last
 
 `rend` is used with a reversed multimap just as [end](../standard-library/map-class.md#end) is used with a multimap.
 
-If the return value of `rend` is assigned to a `const_reverse_iterator`, then the multimap object cannot be modified. If the return value of `rend` is assigned to a `reverse_iterator`, then the multimap object can be modified.
+If the return value of `rend` is assigned to a `const_reverse_iterator`, then the multimap object can't be modified. If the return value of `rend` is assigned to a `reverse_iterator`, then the multimap object can be modified.
 
 `rend` can be used to test to whether a reverse iterator has reached the end of its multimap.
 
-The value returned by `rend` should not be dereferenced.
+The value returned by `rend` shouldn't be dereferenced.
 
 ### Example
 
@@ -2000,7 +2077,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 ### Remarks
 
-A type `reverse_iterator` is use to iterate through the multimap in reverse.
+A type `reverse_iterator` is used to iterate through the multimap in reverse.
 
 The `reverse_iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair<const Key, Type>`. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.
 
@@ -2156,7 +2233,7 @@ The argument key to be compared with the sort key of an element from the multima
 
 An iterator or `const_iterator` that addresses the location of an element in a multimap that with a key that is greater than the argument key, or that addresses the location succeeding the last element in the multimap if no match is found for the key.
 
-If the return value is assigned to a `const_iterator`, the multimap object cannot be modified. If the return value is assigned to a `iterator`, the multimap object can be modified.
+If the return value is assigned to a `const_iterator`, the multimap object can't be modified. If the return value is assigned to a `iterator`, the multimap object can be modified.
 
 ### Example
 
@@ -2350,6 +2427,6 @@ The values of the mapped elements are: 10 20.
 
 ## See also
 
-[Containers](../cpp/containers-modern-cpp.md)\
+[Containers](./stl-containers.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

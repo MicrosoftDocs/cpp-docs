@@ -41,9 +41,9 @@ For SEH section info found in COMDATs, but not compiled using **`/guard:ehcont`*
 
 If the linker is unable to generate metadata, it emits one of the following errors:
 
-- **`LNK2046`**`: module contains _local_unwind but was not compiled with /guard:ehcont`
+- `LNK2046: module contains _local_unwind but was not compiled with /guard:ehcont`
 
-- **`LNK2047`**`: module contains C++ EH or complex EH metadata but was not compiled with /guard:ehcont.`
+- `LNK2047: module contains C++ EH or complex EH metadata but was not compiled with /guard:ehcont.`
 
 To check if a binary contains EHCONT data, look for the following elements when dumping the binary's load config:
 

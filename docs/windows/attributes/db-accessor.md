@@ -25,7 +25,7 @@ A Boolean value that specifies whether the accessor is automatically retrieved (
 
 ## Remarks
 
-**db_accessor** defines the underlying OLE DB accessor for subsequent `db_column` and `db_param` attributes within the same class or function. **db_accessor** is usable at member level and is used to group `db_column` attributes that participate in OLE DB `IAccessor`-based binding. It is used in conjunction with either the `db_table` or `db_command` attributes. Calling this attribute is similar to calling the [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) and [END_ACCESSOR](../../data/oledb/end-accessor.md) macros.
+**db_accessor** defines the underlying OLE DB accessor for subsequent `db_column` and `db_param` attributes within the same class or function. **db_accessor** is usable at member level and is used to group `db_column` attributes that participate in OLE DB `IAccessor`-based binding. It is used in conjunction with either the `db_table` or `db_command` attributes. Calling this attribute is similar to calling the [BEGIN_ACCESSOR](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor) and [END_ACCESSOR](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#end_accessor) macros.
 
 **db_accessor** generates a rowset and binds it to the corresponding accessor maps. If you do not call **db_accessor**, accessor 0 will automatically be generated, and all column bindings will be mapped to this accessor block.
 
@@ -59,9 +59,7 @@ public:
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Attribute blocks|
 |**Repeatable**|No|

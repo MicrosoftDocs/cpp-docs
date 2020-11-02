@@ -103,7 +103,7 @@ This class is used by the methods [CRBTree::GetAt](#getat), [CRBTree::GetNext](#
 
 The members are as follows:
 
-|||
+|Data member|Description|
 |-|-|
 |`m_key`|The data member storing the key element.|
 |`m_value`|The data member storing the value element.|

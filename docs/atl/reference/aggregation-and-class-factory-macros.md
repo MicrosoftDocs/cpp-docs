@@ -1,28 +1,28 @@
 ---
 title: "Aggregation and Class Factory Macros"
-ms.date: "11/04/2016"
-f1_keywords: ["atlcom/ATL::DECLARE_AGGREGATABLE", "atlcom/ATL::DECLARE_CLASSFACTORY", "atlcom/ATL::DECLARE_CLASSFACTORY_EX", "atlcom/ATL::DECLARE_CLASSFACTORY_AUTO_THREAD", "atlcom/ATL::DECLARE_CLASSFACTORY_SINGLETON", "atlcom/ATL::DECLARE_GET_CONTROLLING_UNKNOWN", "atlcom/ATL::DECLARE_NOT_AGGREGATABLE", "atlcom/ATL::DECLARE_ONLY_AGGREGATABLE", "atlcom/ATL::DECLARE_POLY_AGGREGATABLE", "atlcom/ATL::DECLARE_PROTECT_FINAL_CONSTRUCT", "atlcom/ATL::DECLARE_VIEW_STATUS"]
-helpviewer_keywords: ["class factories, ATL macros", "aggregation [C++], ATL macros"]
+ms.date: 08/12/2020
+f1_keywords: ["ATLCOM/ATL::DECLARE_AGGREGATABLE", "ATLCOM/ATL::DECLARE_CLASSFACTORY", "ATLCOM/ATL::DECLARE_CLASSFACTORY_EX", "ATLCOM/ATL::DECLARE_CLASSFACTORY_AUTO_THREAD", "ATLCOM/ATL::DECLARE_CLASSFACTORY_SINGLETON", "ATLCOM/ATL::DECLARE_GET_CONTROLLING_UNKNOWN", "ATLCOM/ATL::DECLARE_NOT_AGGREGATABLE", "ATLCOM/ATL::DECLARE_ONLY_AGGREGATABLE", "ATLCOM/ATL::DECLARE_POLY_AGGREGATABLE", "ATLCOM/ATL::DECLARE_PROTECT_FINAL_CONSTRUCT", "ATLCOM/ATL::DECLARE_VIEW_STATUS", "ATLDEF/ATL::DECLARE_AGGREGATABLE", "ATLDEF/ATL::DECLARE_CLASSFACTORY", "ATLDEF/ATL::DECLARE_CLASSFACTORY_EX", "ATLDEF/ATL::DECLARE_CLASSFACTORY_AUTO_THREAD", "ATLDEF/ATL::DECLARE_CLASSFACTORY_SINGLETON", "ATLDEF/ATL::DECLARE_GET_CONTROLLING_UNKNOWN", "ATLDEF/ATL::DECLARE_NOT_AGGREGATABLE", "ATLDEF/ATL::DECLARE_ONLY_AGGREGATABLE", "ATLDEF/ATL::DECLARE_POLY_AGGREGATABLE", "ATLDEF/ATL::DECLARE_PROTECT_FINAL_CONSTRUCT", "ATLDEF/ATL::DECLARE_VIEW_STATUS", "ATLCOM/DECLARE_AGGREGATABLE", "ATLCOM/DECLARE_CLASSFACTORY", "ATLCOM/DECLARE_CLASSFACTORY_EX", "ATLCOM/DECLARE_CLASSFACTORY_AUTO_THREAD", "ATLCOM/DECLARE_CLASSFACTORY_SINGLETON", "ATLCOM/DECLARE_GET_CONTROLLING_UNKNOWN", "ATLCOM/DECLARE_NOT_AGGREGATABLE", "ATLCOM/DECLARE_ONLY_AGGREGATABLE", "ATLCOM/DECLARE_POLY_AGGREGATABLE", "ATLCOM/DECLARE_PROTECT_FINAL_CONSTRUCT", "ATLCOM/DECLARE_VIEW_STATUS", "ATL::DECLARE_AGGREGATABLE", "ATL::DECLARE_CLASSFACTORY", "ATL::DECLARE_CLASSFACTORY_EX", "ATL::DECLARE_CLASSFACTORY_AUTO_THREAD", "ATL::DECLARE_CLASSFACTORY_SINGLETON", "ATL::DECLARE_GET_CONTROLLING_UNKNOWN", "ATL::DECLARE_NOT_AGGREGATABLE", "ATL::DECLARE_ONLY_AGGREGATABLE", "ATL::DECLARE_POLY_AGGREGATABLE", "ATL::DECLARE_PROTECT_FINAL_CONSTRUCT", "ATL::DECLARE_VIEW_STATUS", "DECLARE_AGGREGATABLE", "DECLARE_CLASSFACTORY", "DECLARE_CLASSFACTORY_EX", "DECLARE_CLASSFACTORY_AUTO_THREAD", "DECLARE_CLASSFACTORY_SINGLETON", "DECLARE_GET_CONTROLLING_UNKNOWN", "DECLARE_NOT_AGGREGATABLE", "DECLARE_ONLY_AGGREGATABLE", "DECLARE_POLY_AGGREGATABLE", "DECLARE_PROTECT_FINAL_CONSTRUCT", "DECLARE_VIEW_STATUS"]
+helpviewer_keywords: ["class factories, ATL macros", "aggregation [C++], ATL macros", "ATL::DECLARE_AGGREGATABLE", "ATL::DECLARE_CLASSFACTORY", "ATL::DECLARE_CLASSFACTORY_EX", "ATL::DECLARE_CLASSFACTORY_AUTO_THREAD", "ATL::DECLARE_CLASSFACTORY_SINGLETON", "ATL::DECLARE_GET_CONTROLLING_UNKNOWN", "ATL::DECLARE_NOT_AGGREGATABLE", "ATL::DECLARE_ONLY_AGGREGATABLE", "ATL::DECLARE_POLY_AGGREGATABLE", "ATL::DECLARE_PROTECT_FINAL_CONSTRUCT", "ATL::DECLARE_VIEW_STATUS"]
 ms.assetid: d99d379a-0eec-481f-8daa-252dac18f163
 ---
 # Aggregation and Class Factory Macros
 
 These macros provide ways of controlling aggregation and of declaring class factories.
 
-|||
-|-|-|
-|[DECLARE_AGGREGATABLE](#declare_aggregatable)|Declares that your object can be aggregated (the default).|
-|[DECLARE_CLASSFACTORY](#declare_classfactory)|Declares the class factory to be [CComClassFactory](../../atl/reference/ccomclassfactory-class.md), the ATL default class factory.|
-|[DECLARE_CLASSFACTORY_EX](#declare_classfactory_ex)|Declares your class factory object to be the class factory.|
-|[DECLARE_CLASSFACTORY2](#declare_classfactory2)|Declares [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) to be the class factory.|
-|[DECLARE_CLASSFACTORY_AUTO_THREAD](#declare_classfactory_auto_thread)|Declares [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) to be the class factory.|
-|[DECLARE_CLASSFACTORY_SINGLETON](#declare_classfactory_singleton)|Declares [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md) to be the class factory.|
-|[DECLARE_GET_CONTROLLING_UNKNOWN](#declare_get_controlling_unknown)|Declares a virtual `GetControllingUnknown` function.|
-|[DECLARE_NOT_AGGREGATABLE](#declare_not_aggregatable)|Declares that your object cannot be aggregated.|
-|[DECLARE_ONLY_AGGREGATABLE](#declare_only_aggregatable)|Declares that your object must be aggregated.|
-|[DECLARE_POLY_AGGREGATABLE](#declare_poly_aggregatable)|Checks the value of the outer unknown and declares your object aggregatable or not aggregatable, as appropriate.|
-|[DECLARE_PROTECT_FINAL_CONSTRUCT](#declare_protect_final_construct)|Protects the outer object from deletion during construction of an inner object.|
-|[DECLARE_VIEW_STATUS](#declare_view_status)|Specifies the VIEWSTATUS flags to the container.|
+| Macro | Description |
+|--|--|
+| [DECLARE_AGGREGATABLE](#declare_aggregatable) | Declares that your object can be aggregated (the default). |
+| [DECLARE_CLASSFACTORY](#declare_classfactory) | Declares the class factory to be [CComClassFactory](../../atl/reference/ccomclassfactory-class.md), the ATL default class factory. |
+| [DECLARE_CLASSFACTORY_EX](#declare_classfactory_ex) | Declares your class factory object to be the class factory. |
+| [DECLARE_CLASSFACTORY2](#declare_classfactory2) | Declares [CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md) to be the class factory. |
+| [DECLARE_CLASSFACTORY_AUTO_THREAD](#declare_classfactory_auto_thread) | Declares [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) to be the class factory. |
+| [DECLARE_CLASSFACTORY_SINGLETON](#declare_classfactory_singleton) | Declares [CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md) to be the class factory. |
+| [DECLARE_GET_CONTROLLING_UNKNOWN](#declare_get_controlling_unknown) | Declares a virtual `GetControllingUnknown` function. |
+| [DECLARE_NOT_AGGREGATABLE](#declare_not_aggregatable) | Declares that your object cannot be aggregated. |
+| [DECLARE_ONLY_AGGREGATABLE](#declare_only_aggregatable) | Declares that your object must be aggregated. |
+| [DECLARE_POLY_AGGREGATABLE](#declare_poly_aggregatable) | Checks the value of the outer unknown and declares your object aggregatable or not aggregatable, as appropriate. |
+| [DECLARE_PROTECT_FINAL_CONSTRUCT](#declare_protect_final_construct) | Protects the outer object from deletion during construction of an inner object. |
+| [DECLARE_VIEW_STATUS](#declare_view_status) | Specifies the VIEWSTATUS flags to the container. |
 
 ## Requirements
 

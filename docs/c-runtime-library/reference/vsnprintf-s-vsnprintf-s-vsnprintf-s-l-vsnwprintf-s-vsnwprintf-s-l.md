@@ -93,11 +93,19 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Return Value
 
-**vsnprintf_s**, **_vsnprintf_s** and **_vsnwprintf_s** return the number of characters written, not including the terminating null, or a negative value if an output error occurs. **vsnprintf_s** is identical to **_vsnprintf_s**. **vsnprintf_s** is included for compliance to the ANSI standard. **_vnsprintf** is retained for backward compatibility.
+**vsnprintf_s**, **_vsnprintf_s** and **_vsnwprintf_s** return the number of characters written, not including the terminating null, or a negative value if either truncation of the data or an output error occurs.
 
-If the storage required to store the data and a terminating null exceeds *sizeOfBuffer*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), unless *count* is [_TRUNCATE](../../c-runtime-library/truncate.md), in which case as much of the string as will fit in *buffer* is written and -1 returned. If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set **errno** to **ERANGE**, and return -1.
+* If *count* is less than *sizeOfBuffer* and the number of characters of data is less than or equal to *count*, or *count* is [_TRUNCATE](../../c-runtime-library/truncate.md) and the number of characters of data is less than *sizeOfBuffer*, then all of the data is written and the number of characters is returned.
 
-If *buffer* or *format* is a **NULL** pointer, or if *count* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
+* If *count* is less than *sizeOfBuffer* but the data exceeds *count* characters, then the first *count* characters are written. Truncation of the remaining data occurs and -1 is returned without invoking the invalid parameter handler.
+
+* If *count* is [_TRUNCATE](../../c-runtime-library/truncate.md) and the number of characters of data equals or exceeds *sizeOfBuffer*, then as much of the string as will fit in *buffer* (with terminating null) is written. Truncation of the remaining data occurs and -1 is returned without invoking the invalid parameter handler.
+
+* If *count* is equal to or exceeds *sizeOfBuffer* but the number of characters of data is less than *sizeOfBuffer*, then all of the data is written (with terminating null) and the number of characters is returned.
+
+* If *count* and the number of characters of data both equal or exceed *sizeOfBuffer*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set **errno** to **ERANGE**, and return -1.
+
+* If *buffer* or *format* is a **NULL** pointer, or if *count* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set **errno** to **EINVAL** and return -1.
 
 ### Error Conditions
 
@@ -109,6 +117,8 @@ If *buffer* or *format* is a **NULL** pointer, or if *count* is less than or equ
 |*sizeOfBuffer* too small (and *count* != **_TRUNCATE**)|-1 (and *buffer* set to an empty string)|**ERANGE**|
 
 ## Remarks
+
+**vsnprintf_s** is identical to **_vsnprintf_s**. **vsnprintf_s** is included for compliance to the ANSI standard. **_vnsprintf** is retained for backward compatibility.
 
 Each of these functions takes a pointer to an argument list, then formats and writes up to *count* characters of the given data to the memory pointed to by *buffer* and appends a terminating null.
 

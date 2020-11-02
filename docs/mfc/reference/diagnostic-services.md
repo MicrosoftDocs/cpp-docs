@@ -26,7 +26,7 @@ In addition, the C run-time library also supports a set of diagnostic functions 
 
 ### MFC General Diagnostic Macros
 
-|||
+|Name|Description|
 |-|-|
 |[ASSERT](#assert)|Prints a message and then aborts the program if the specified expression evaluates to FALSE in the Debug version of the library.|
 |[ASSERT_KINDOF](#assert_kindof)|Tests that an object is an object of the specified class or of a class derived from the specified class.|
@@ -40,7 +40,7 @@ In addition, the C run-time library also supports a set of diagnostic functions 
 
 ### MFC General Diagnostic Variables and Functions
 
-|||
+|Name|Description|
 |-|-|
 |[afxDump](#afxdump)|Global variable that sends [CDumpContext](../../mfc/reference/cdumpcontext-class.md) information to the debugger output window or to the debug terminal.|
 |[afxMemDF](#afxmemdf)|Global variable that controls the behavior of the debugging memory allocator.|
@@ -59,14 +59,14 @@ In addition, the C run-time library also supports a set of diagnostic functions 
 
 ### MFC Object Diagnostic Functions
 
-|||
+|Name|Description|
 |-|-|
 |[AfxDoForAllClasses](#afxdoforallclasses)|Performs a specified function on all `CObject`-derived classes that support run-time type checking.|
 |[AfxDoForAllObjects](#afxdoforallobjects)|Performs a specified function on all `CObject`-derived objects that were allocated with **`new`**.|
 
 ### MFC Compilation Macros
 
-|||
+|Name|Description|
 |-|-|
 |[_AFX_SECURE_NO_WARNINGS](#afx_secure_no_warnings)|Suppresses compiler warnings for the use of deprecated MFC functions.|
 

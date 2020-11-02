@@ -8,7 +8,7 @@ ms.assetid: a6aea69b-d647-4b7e-bf3b-e6a6a9880072
 
 This example shows how to use the [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algorithm to improve the performance of a program that performs multiple operations on a shared data source. Because no operations modify the source, they can be executed in parallel in a straightforward manner.
 
-## Example
+## Example: Create, initialize, and perform operations on a variable
 
 Consider the following code example that creates a variable of type `MyDataType`, calls a function to initialize that variable, and then performs multiple lengthy operations on that data.
 
@@ -16,13 +16,13 @@ Consider the following code example that creates a variable of type `MyDataType`
 
 If the `lengthy_operation1`, `lengthy_operation2`, and `lengthy_operation3` functions do not modify the `MyDataType` variable, these functions can be executed in parallel without additional modifications.
 
-## Example
+## Example: Run previous example in parallel
 
 The following example modifies the previous example to run in parallel. The `parallel_invoke` algorithm executes each task in parallel and returns after all tasks are finished.
 
 [!code-cpp[concrt-parallel-word-mining#2](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-execute-parallel-operations_2.cpp)]
 
-## Example
+## Example: Perform multiple operations on a downloaded file
 
 The following example downloads *The Iliad* by Homer from gutenberg.org and performs multiple operations on that file. The example first performs these operations serially and then performs the same operations in parallel.
 

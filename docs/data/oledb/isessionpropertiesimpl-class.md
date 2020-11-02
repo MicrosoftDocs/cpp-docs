@@ -34,14 +34,14 @@ A user-definable property class that defaults to *T*.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetProperties](#getproperties)|Returns the list of properties in the Session property group that are currently set on the session.|
 |[SetProperties](#setproperties)|Sets properties in the Session property group.|
 
 ## Remarks
 
-A mandatory interface on sessions. This class implements session properties by calling a static function defined by the [property set map](../../data/oledb/begin-propset-map.md). The property set map should be specified in your session class.
+A mandatory interface on sessions. This class implements session properties by calling a static function defined by the [property set map](./macros-for-ole-db-provider-templates.md#begin_propset_map). The property set map should be specified in your session class.
 
 ## <a name="getproperties"></a> ISessionPropertiesImpl::GetProperties
 

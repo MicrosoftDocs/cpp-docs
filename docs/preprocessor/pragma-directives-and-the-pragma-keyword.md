@@ -1,6 +1,7 @@
 ---
 title: "Pragma directives and the __pragma keyword"
-ms.date: "08/29/2019"
+description: "Describes the pragma directives available in Microsoft Visual C and C++ (MSVC)"
+ms.date: "10/30/2020"
 f1_keywords: ["#pragma"]
 helpviewer_keywords: ["#pragma directives, C/C++", "__pragma keyword", "pragma directives, C/C++", "pragmas, C/C++", "preprocessor", "pragmas", "preprocessor, pragmas", "pragma directives (#pragma)"]
 ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
@@ -11,8 +12,9 @@ Pragma directives specify machine- or operating system-specific compiler feature
 
 ## Syntax
 
-> **#pragma** *token-string*\
-> **__pragma(** *token-string* **)**
+> **#`pragma`** *token-string*\
+> **`__pragma(`** *token-string* **`)`** // two leading underscores - Microsoft specific extension
+> **`_Pragma(`** *string-literal* **`)`** // C99
 
 ## Remarks
 
@@ -20,28 +22,65 @@ Each implementation of C and C++ supports some features unique to its host machi
 
 Pragmas are machine- or operating system-specific by definition, and are typically different for every compiler. Pragmas can be used in conditional directives, to provide new preprocessor functionality, or to provide implementation-defined information to the compiler.
 
-The *token-string* is a series of characters that gives a specific compiler instruction and arguments, if any. The number sign (**#**) must be the first non-white-space character on the line that contains the pragma. White-space characters can separate the number sign and the word "pragma". Following **#pragma**, write any text that the translator can parse as preprocessing tokens. The argument to **#pragma** is subject to macro expansion.
+The *token-string* is a series of characters representing a specific compiler instruction and arguments, if any. The number sign (**#**) must be the first non-white-space character on the line that contains the pragma. White-space characters can separate the number sign and the word "pragma". Following **#pragma**, write any text that the translator can parse as preprocessing tokens. The argument to **#pragma** is subject to macro expansion.
+
+The *string-literal* is the input to `_Pragma`. Outer quotes and leading/trailing whitespace are removed. `\"` is replaced with `"` and `\\` is replaced with `\`.
 
 The compiler issues a warning when it finds a pragma that it doesn't recognize, and continues compilation.
 
 The Microsoft C and C++ compilers recognize the following pragmas:
 
-||||
-|-|-|-|
-|[alloc_text](../preprocessor/alloc-text.md)|[auto_inline](../preprocessor/auto-inline.md)|[bss_seg](../preprocessor/bss-seg.md)|
-|[check_stack](../preprocessor/check-stack.md)|[code_seg](../preprocessor/code-seg.md)|[comment](../preprocessor/comment-c-cpp.md)|
-|[component](../preprocessor/component.md)|[conform](../preprocessor/conform.md) <sup>1</sup>|[const_seg](../preprocessor/const-seg.md)|
-|[data_seg](../preprocessor/data-seg.md)|[deprecated](../preprocessor/deprecated-c-cpp.md)|[detect_mismatch](../preprocessor/detect-mismatch.md)|
-|[fenv_access](../preprocessor/fenv-access.md)|[float_control](../preprocessor/float-control.md)|[fp_contract](../preprocessor/fp-contract.md)|
-|[function](../preprocessor/function-c-cpp.md)|[hdrstop](../preprocessor/hdrstop.md)|[include_alias](../preprocessor/include-alias.md)|
-|[init_seg](../preprocessor/init-seg.md) <sup>1</sup>|[inline_depth](../preprocessor/inline-depth.md)|[inline_recursion](../preprocessor/inline-recursion.md)|
-|[intrinsic](../preprocessor/intrinsic.md)|[loop](../preprocessor/loop.md) <sup>1</sup>|[make_public](../preprocessor/make-public.md)|
-|[managed](../preprocessor/managed-unmanaged.md)|[message](../preprocessor/message.md)|[omp](../preprocessor/omp.md)|
-|[once](../preprocessor/once.md)|[optimize](../preprocessor/optimize.md)|[pack](../preprocessor/pack.md)|
-|[pointers_to_members](../preprocessor/pointers-to-members.md) <sup>1</sup>|[pop_macro](../preprocessor/pop-macro.md)|[push_macro](../preprocessor/push-macro.md)|
-|[region, endregion](../preprocessor/region-endregion.md)|[runtime_checks](../preprocessor/runtime-checks.md)|[section](../preprocessor/section.md)|
-|[setlocale](../preprocessor/setlocale.md)|[strict_gs_check](../preprocessor/strict-gs-check.md)|[unmanaged](../preprocessor/managed-unmanaged.md)|
-|[vtordisp](../preprocessor/vtordisp.md) <sup>1</sup>|[warning](../preprocessor/warning.md)||
+:::row:::
+   :::column span="":::
+      [`alloc_text`](../preprocessor/alloc-text.md)\
+      [`auto_inline`](../preprocessor/auto-inline.md)\
+      [`bss_seg`](../preprocessor/bss-seg.md)\
+      [`check_stack`](../preprocessor/check-stack.md)\
+      [`code_seg`](../preprocessor/code-seg.md)\
+      [`comment`](../preprocessor/comment-c-cpp.md)\
+      [`component`](../preprocessor/component.md)\
+      [`conform`](../preprocessor/conform.md) <sup>1</sup>\
+      [`const_seg`](../preprocessor/const-seg.md)\
+      [`data_seg`](../preprocessor/data-seg.md)\
+      [`deprecated`](../preprocessor/deprecated-c-cpp.md)
+   :::column-end:::
+   :::column span="":::
+      [`detect_mismatch`](../preprocessor/detect-mismatch.md)\
+      [`fenv_access`](../preprocessor/fenv-access.md)\
+      [`float_control`](../preprocessor/float-control.md)\
+      [`fp_contract`](../preprocessor/fp-contract.md)\
+      [`function`](../preprocessor/function-c-cpp.md)\
+      [`hdrstop`](../preprocessor/hdrstop.md)\
+      [`include_alias`](../preprocessor/include-alias.md)\
+      [`init_seg`](../preprocessor/init-seg.md) <sup>1</sup>\
+      [`inline_depth`](../preprocessor/inline-depth.md)\
+      [`inline_recursion`](../preprocessor/inline-recursion.md)
+   :::column-end:::
+   :::column span="":::
+      [`intrinsic`](../preprocessor/intrinsic.md)\
+      [`loop`](../preprocessor/loop.md) <sup>1</sup>\
+      [`make_public`](../preprocessor/make-public.md)\
+      [`managed`](../preprocessor/managed-unmanaged.md)\
+      [`message`](../preprocessor/message.md)\
+      [`omp`](../preprocessor/omp.md)\
+      [`once`](../preprocessor/once.md)\
+      [`optimize`](../preprocessor/optimize.md)\
+      [`pack`](../preprocessor/pack.md)\
+      [`pointers_to_members`](../preprocessor/pointers-to-members.md) <sup>1</sup>
+   :::column-end:::
+   :::column span="":::
+      [`pop_macro`](../preprocessor/pop-macro.md)\
+      [`push_macro`](../preprocessor/push-macro.md)\
+      [`region`, endregion](../preprocessor/region-endregion.md)\
+      [`runtime_checks`](../preprocessor/runtime-checks.md)\
+      [`section`](../preprocessor/section.md)\
+      [`setlocale`](../preprocessor/setlocale.md)\
+      [`strict_gs_check`](../preprocessor/strict-gs-check.md)\
+      [`unmanaged`](../preprocessor/managed-unmanaged.md)\
+      [`vtordisp`](../preprocessor/vtordisp.md) <sup>1</sup>\
+      [`warning`](../preprocessor/warning.md)
+   :::column-end:::
+:::row-end:::
 
 <sup>1</sup> Supported only by the C++ compiler.
 
@@ -64,9 +103,9 @@ cl /Zp8 some_file.cpp
 
 ## The __pragma() keyword
 
-The compiler also supports the Microsoft-specific **__pragma** keyword, which has the same functionality as the **#pragma** directive. The difference is, the **__pragma** keyword is usable inline in a macro definition. The **#pragma** directive isn't usable in a macro definition, because the compiler interprets the number sign character ('#') in the directive as the [stringizing operator (#)](../preprocessor/stringizing-operator-hash.md).
+The compiler also supports the Microsoft-specific **`__pragma`** keyword, which has the same functionality as the **`#pragma`** directive. The difference is, the **`__pragma`** keyword is usable inline in a macro definition. The **`#pragma`** directive isn't usable in a macro definition, because the compiler interprets the number sign character ('#') in the directive as the [stringizing operator (#)](../preprocessor/stringizing-operator-hash.md).
 
-The following code example demonstrates how the **__pragma** keyword can be used in a macro. This code is excerpted from the mfcdual.h header in the ACDUAL sample in "Compiler COM Support Samples":
+The following code example demonstrates how the **`__pragma`** keyword can be used in a macro. This code is excerpted from the *mfcdual.h* header in the ACDUAL sample in "Compiler COM Support Samples":
 
 ```cpp
 #define CATCH_ALL_DUAL \
@@ -84,6 +123,48 @@ _hr = DualHandleException(_riidSource, e); \
 } \
 END_CATCH_ALL \
 return _hr; \
+```
+
+## The `_Pragma` preprocessing operator (C99, C++11)
+
+`_Pragma` is similar to the Microsoft-specific [`__pragma`](#the-__pragma-keyword) keyword, except it's part of the standard. It was introduced for C in C99. For C++, it was introduced in C++11.
+
+ It allows you to put pragmas into a macro definition. It has one leading underscore `_` instead of two leading underscores `__` that the Microsoft-specific keyword has, and the first letter is capitalized.
+
+The string literal should be what you would otherwise put following a *`#pragma`* statement. For example:
+
+```c
+#pragma message("--the #pragma way")
+_Pragma ("message( \"the _Pragma way\")") 
+```
+
+Quotation marks and back-slashes should be escaped, as shown above. A pragma string that isn't recognized is ignored.
+
+The following code example demonstrates how the **`_Pragma`** keyword could be used in an assert-like macro when you don't want to get a warning when the condition expression happens to be constant. 
+
+The macro definition uses the do/while(0) idiom for multi-statement macros so that it can be used as though it were one statement. See [C multi-line macro](https://stackoverflow.com/questions/1067226/c-multi-line-macro-do-while0-vs-scope-block) on Stack Overflow for more info. The _Pragma statement only applies to the line of code that follows it.
+
+```C
+// Compile with /W4
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MY_ASSERT(BOOL_EXPRESSION) \
+    do { \
+        _Pragma("warning(suppress: 4127)") /* C4127 conditional expression is constant */  \
+        if (!(BOOL_EXPRESSION)) {   \
+            printf("MY_ASSERT FAILED: \"" #BOOL_EXPRESSION "\" on %s(%d)", __FILE__, __LINE__); \
+            exit(-1); \
+        } \
+    } while (0)
+
+int main()
+{
+    MY_ASSERT(0 && "Note that there is no warning: C4127 conditional expression is constant");
+
+    return 0;
+}
 ```
 
 ## See also

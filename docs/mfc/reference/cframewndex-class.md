@@ -604,7 +604,7 @@ TRUE if the point is located in an alignment zone; otherwise, FALSE.
 
 The following table lists the possible values for the *dwBarAlignment* parameter.
 
-|||
+|Value|Description|
 |-|-|
 |CBRS_ALIGN_TOP|Aligned to the top.  |
 |CBRS_ALIGN_RIGHT|Aligned to the right.  |
@@ -718,7 +718,7 @@ afx_msg void OnActivate(
 
 The following table lists the possible values for the *nState* parameter.
 
-|||
+|Value|Description|
 |-|-|
 |WA_ACTIVE|The frame is selected by a method other than a mouse click.  |
 |WA_CLICKACTIVE|The frame is selected by a mouse click.  |
@@ -1137,11 +1137,11 @@ afx_msg LRESULT OnMenuChar(
 
 The high-order word must be one of the following values.
 
-|||
-|-|-|
-`0` | The framework should ignore the keystroke.
-`1`  | The framework should close the menu.
-`2`  | The framework should select one of the items displayed in the menu. The low-order word contains the ID of the command to select.
+| Value | Description |
+|--|--|
+| `0` | The framework should ignore the keystroke. |
+| `1` | The framework should close the menu. |
+| `2` | The framework should select one of the items displayed in the menu. The low-order word contains the ID of the command to select. |
 
 ## <a name="onmousemove"></a> CFrameWndEx::OnMouseMove
 

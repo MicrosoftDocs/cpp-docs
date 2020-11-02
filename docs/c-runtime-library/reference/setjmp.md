@@ -1,5 +1,6 @@
 ---
 title: "setjmp"
+description: "API reference for setjmp; which saves the current state of the program."
 ms.date: "08/14/2018"
 api_name: ["setjmp"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
@@ -28,7 +29,7 @@ Variable in which environment is stored.
 
 ## Return Value
 
-Returns 0 after saving the stack environment. If **setjmp** returns as a result of a `longjmp` call, it returns the *value* argument of `longjmp`, or if the *value* argument of `longjmp` is 0, **setjmp** returns 1. There is no error return.
+Returns 0 after saving the stack environment. If **setjmp** returns as a result of a `longjmp` call, it returns the *value* argument of `longjmp`, or if the *value* argument of `longjmp` is 0, **setjmp** returns 1. There's no error return.
 
 ## Remarks
 

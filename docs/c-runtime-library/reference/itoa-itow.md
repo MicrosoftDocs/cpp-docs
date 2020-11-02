@@ -1,5 +1,6 @@
 ---
 title: "_itoa, _itow functions"
+description: "API reference for _itoa, and _itow; which convert an integer to a string."
 ms.date: "4/2/2020"
 api_name: ["itoa", "_itoa", "ltoa", "_ltoa", "ultoa", "_ultoa", "_i64toa", "_ui64toa", "_itow", "_ltow", "_ultow", "_i64tow", "_ui64tow", "_o__i64toa", "_o__i64tow", "_o__itoa", "_o__itow", "_o__ltoa", "_o__ltow", "_o__ui64toa", "_o__ui64tow", "_o__ultoa", "_o__ultow"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
@@ -11,7 +12,7 @@ ms.assetid: 46592a00-77bb-4e73-98c0-bf629d96cea6
 ---
 # itoa, _itoa, ltoa, _ltoa, ultoa, _ultoa, _i64toa, _ui64toa, _itow, _ltow, _ultow, _i64tow, _ui64tow
 
-Converts an integer to a string. More secure versions of these functions are available; see [_itoa_s, _itow_s functions](itoa-s-itow-s.md).
+Converts an integer to a string. More secure versions of these functions are available, see [_itoa_s, _itow_s functions](itoa-s-itow-s.md).
 
 ## Syntax
 
@@ -82,7 +83,7 @@ Length of the buffer in units of the character type. This parameter is inferred 
 
 ## Return Value
 
-Each of these functions returns a pointer to *buffer*. There is no error return.
+Each of these functions returns a pointer to *buffer*. There's no error return.
 
 ## Remarks
 
@@ -120,9 +121,8 @@ To help you create secure buffers for conversions, the CRT includes some conveni
 
 To use one of these macros in a string conversion function, declare your conversion buffer of the appropriate character type and use the macro value for the integer type and base as the buffer dimension. This table lists the macros that are appropriate for each function for the listed bases:
 
-||||
-|-|-|-|
 |Functions|radix|Macros|
+|-|-|-|
 |**_itoa**, **_itow**|16<br/>10<br/>8<br/>2|**_MAX_ITOSTR_BASE16_COUNT**<br/>**_MAX_ITOSTR_BASE10_COUNT**<br/>**_MAX_ITOSTR_BASE8_COUNT**<br/>**_MAX_ITOSTR_BASE2_COUNT**|
 |**_ltoa**, **_ltow**|16<br/>10<br/>8<br/>2|**_MAX_LTOSTR_BASE16_COUNT**<br/>**_MAX_LTOSTR_BASE10_COUNT**<br/>**_MAX_LTOSTR_BASE8_COUNT**<br/>**_MAX_LTOSTR_BASE2_COUNT**|
 |**_ultoa**, **_ultow**|16<br/>10<br/>8<br/>2|**_MAX_ULTOSTR_BASE16_COUNT**<br/>**_MAX_ULTOSTR_BASE10_COUNT**<br/>**_MAX_ULTOSTR_BASE8_COUNT**<br/>**_MAX_ULTOSTR_BASE2_COUNT**|

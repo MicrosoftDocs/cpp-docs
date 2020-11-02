@@ -60,7 +60,7 @@ The [/Za](za-ze-disable-language-extensions.md) (ANSI compatibility) option is n
 
 The compiler provides three pragma directives to override the floating-point behavior specified on the command-line: [float_control](../../preprocessor/float-control.md), [fenv_access](../../preprocessor/fenv-access.md), and [fp_contract](../../preprocessor/fp-contract.md). You can use these directives to control floating-point behavior at function-level, not within a function. Note that these directives do not correspond directly to the `/fp` options. This table shows how the `/fp` options and pragma directives map to each other. For more information, see the documentation for the individual options and pragma directives.
 
-||float_control(precise)|float_control(except)|fenv_access|fp_contract|
+| Option | float_control(precise) | float_control(except) | fenv_access | fp_contract |
 |-|-|-|-|-|
 |`/fp:fast`|off|off|off|on|
 |`/fp:precise`|on|off|off|on|

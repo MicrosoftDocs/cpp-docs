@@ -30,9 +30,7 @@ See the example for [module](module-cpp.md) for an example of how to use **helpf
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**interface**, **`typedef`**, **`class`**, method, **`property`**|
 |**Repeatable**|No|

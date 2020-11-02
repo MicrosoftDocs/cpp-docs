@@ -47,9 +47,7 @@ The **event_source** C++ attribute specifies that the class or structure to whic
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|

@@ -11,7 +11,7 @@ ms.assetid: 037e44ae-16c8-489a-a512-dcdf7f7795a6
 
 Arrays of functions are not allowed. Use an array of pointers to functions.
 
-## Example
+## Examples
 
 The following sample generates C2092:
 
@@ -20,8 +20,6 @@ The following sample generates C2092:
 typedef void (F) ();
 typedef F AT[10];   // C2092
 ```
-
-## Example
 
 Possible resolution:
 

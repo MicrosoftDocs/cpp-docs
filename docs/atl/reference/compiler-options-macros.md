@@ -9,7 +9,7 @@ ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
 
 These macros control specific compiler features.
 
-|||
+|Macro|Description|
 |-|-|
 |[_ATL_ALL_WARNINGS](#_atl_all_warnings)|A symbol that enables errors in projects converted from previous versions of ATL.|
 |[_ATL_APARTMENT_THREADED](#_atl_apartment_threaded)|Define if one or more of your objects use apartment threading.|

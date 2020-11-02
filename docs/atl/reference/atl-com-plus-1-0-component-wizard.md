@@ -6,13 +6,13 @@ ms.assetid: 11670681-8671-4122-96a4-2e52f8dadce0
 ---
 # ATL COM+ 1.0 Component Wizard
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 This wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Use this wizard to add an object to your project that supports COM+ 1.0 services, including transactions.
 
@@ -54,7 +54,7 @@ Specify the names for the object, interface, and classes to be added to your pro
 
    Any objects you add following setting this option are designated as attributed by default (the check box is selected). You can clear this box to add an object that does not use attributes.
 
-   See [Application Settings, ATL Project Wizard](../../atl/reference/application-settings-atl-project-wizard.md) and [Basic Mechanics of Attributes](../../windows/basic-mechanics-of-attributes.md) for more information.
+   See [Application Settings, ATL Project Wizard](../../atl/reference/application-settings-atl-project-wizard.md) and [Basic mechanics of attributes](../../windows/attributes/cpp-attributes-com-net.md#basic-mechanics-of-attributes) for more information.
 
 ### COM
 

@@ -6,13 +6,13 @@ ms.assetid: cf91ba78-01d1-4d12-b673-e95d96bfbebe
 ---
 # ATL OLE DB Provider Wizard
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 This wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ## Remarks
 

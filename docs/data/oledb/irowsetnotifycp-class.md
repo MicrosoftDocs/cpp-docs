@@ -43,7 +43,7 @@ An array of type [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-c
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Fire_OnFieldChange](#onfieldchange)|Notifies the consumer of a change to the value of a column.|
 |[Fire_OnRowChange](#onrowchange)|Notifies the consumer of a change affecting the rows.|

@@ -20,7 +20,7 @@ For this procedure, you can type your own C++ program or use one of the sample p
 
 The following steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create a C++/CLI project in Visual Studio 2019
 
@@ -32,7 +32,7 @@ The following steps vary depending on which version of Visual Studio you are usi
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ### To create a C++/CLI project in Visual Studio 2017
 
@@ -46,7 +46,7 @@ The following steps vary depending on which version of Visual Studio you are usi
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ### To create a C++/CLI project in Visual Studio 2015
 
@@ -74,7 +74,7 @@ The following steps vary depending on which version of Visual Studio you are usi
 
 1. Click in the newly created tab in Visual Studio and type a valid Visual C++ program, or copy and paste one of the sample programs.
 
-   For example, you can use the [How to: Write a Text File (C++/CLI)](how-to-write-a-text-file-cpp-cli.md) sample program (in the **File Handling and I/O** node of the Programming Guide).
+   For example, you can use the [How to: Write a Text File (C++/CLI)](./file-handling-and-i-o-cpp-cli.md#write_text) sample program (in the **File Handling and I/O** node of the Programming Guide).
 
    If you use the sample program, notice that you use the **`gcnew`** keyword instead of **`new`** when creating a .NET object, and that **`gcnew`** returns a handle (`^`) rather than a pointer (`*`):
 

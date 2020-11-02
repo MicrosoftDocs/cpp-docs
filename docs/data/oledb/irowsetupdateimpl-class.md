@@ -53,13 +53,13 @@ The storage unit for all row handles held by the provider.
 
 ### Interface Methods (Used with IRowsetChange)
 
-|||
+| Name | Description |
 |-|-|
 |[SetData](#setdata)|Sets data values in one or more columns.|
 
 ### Interface Methods (Used with IRowsetUpdate)
 
-|||
+| Name | Description |
 |-|-|
 |[GetOriginalData](#getoriginaldata)|Gets the data most recently transmitted to or obtained from the data source, ignoring pending changes.|
 |[GetPendingRows](#getpendingrows)|Returns a list of rows with pending changes.|
@@ -69,13 +69,13 @@ The storage unit for all row handles held by the provider.
 
 ### Implementation Methods (Callback)
 
-|||
+| Name | Description |
 |-|-|
 |[IsUpdateAllowed](#isupdateallowed)|Used to check for security, integrity, and so on before allowing updates.|
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_mapCachedData](#mapcacheddata)|Contains the original data for the deferred operation.|
 
@@ -112,7 +112,7 @@ See [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232(v=vs.85
 
 ### Remarks
 
-This method overrides the [IRowsetChangeImpl::SetData](../../data/oledb/irowsetchangeimpl-setdata.md) method but includes caching of original data to permit either immediate or deferred processing of the operation.
+This method overrides the [IRowsetChangeImpl::SetData](./irowsetchangeimpl-class.md#setdata) method but includes caching of original data to permit either immediate or deferred processing of the operation.
 
 ## <a name="getoriginaldata"></a> IRowsetUpdateImpl::GetOriginalData
 
@@ -227,7 +227,7 @@ For other parameters, see [IRowsetUpdate::Update](/previous-versions/windows/des
 
 ### Remarks
 
-Changes are transmitted by calling [IRowsetChangeImpl::FlushData](../../data/oledb/irowsetchangeimpl-flushdata.md). The consumer must call [CRowset::Update](../../data/oledb/crowset-update.md) for the changes to take effect. Set *prgRowstatus* to an appropriate value as described in [Row States](/previous-versions/windows/desktop/ms722752(v=vs.85)) in the *OLE DB Programmer's Reference*.
+Changes are transmitted by calling [IRowsetChangeImpl::FlushData](./irowsetchangeimpl-class.md#flushdata). The consumer must call [CRowset::Update](./crowset-class.md#update) for the changes to take effect. Set *prgRowstatus* to an appropriate value as described in [Row States](/previous-versions/windows/desktop/ms722752(v=vs.85)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="isupdateallowed"></a> IRowsetUpdateImpl::IsUpdateAllowed
 
@@ -254,7 +254,7 @@ HRESULT IsUpdateAllowed(DBPENDINGSTATUS /* [in] */ /* status */,
 
 ### Remarks
 
-If you determine that an update should be allowed, returns S_OK; otherwise returns E_FAIL. If you allow an update, you also need to set the `DBROWSTATUS` in [IRowsetUpdateImpl::Update](../../data/oledb/irowsetupdateimpl-update.md) to an appropriate [row state](/previous-versions/windows/desktop/ms722752(v=vs.85)).
+If you determine that an update should be allowed, returns S_OK; otherwise returns E_FAIL. If you allow an update, you also need to set the `DBROWSTATUS` in [IRowsetUpdateImpl::Update](#update) to an appropriate [row state](/previous-versions/windows/desktop/ms722752(v=vs.85)).
 
 ## <a name="mapcacheddata"></a> IRowsetUpdateImpl::m_mapCachedData
 

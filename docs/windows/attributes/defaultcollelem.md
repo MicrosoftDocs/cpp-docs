@@ -38,9 +38,7 @@ __interface IMyForm
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface method|
 |**Repeatable**|No|

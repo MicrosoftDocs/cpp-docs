@@ -6,13 +6,13 @@ ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
 # Open Folder support for C++ build systems in Visual Studio
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 The Open Folder feature is available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 In Visual Studio 2017 and later, the "Open Folder" feature enables you to open a folder of source files and immediately start coding with support for IntelliSense, browsing, refactoring, debugging, and so on. As you edit, create, move, or delete files, Visual Studio tracks the changes automatically and continuously updates its IntelliSense index. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. This feature enables you to integrate any third-party build system into Visual Studio. For general information about Open Folder, see [Develop code in Visual Studio without projects or solutions](/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions).
 
@@ -24,7 +24,7 @@ CMake is integrated in the Visual Studio IDE as a component of the C++ desktop w
 
 To use the Visual Studio IDE with a build system or compiler toolset that is not directly supported from the main menu select **File | Open | Folder** or press **Ctrl + Shift + Alt + O**. Navigate to the folder that contains your source code files. To build the project, configure IntelliSense and set debugging parameters, you add three JSON files:
 
-| | |
+| File | Description |
 |-|-|
 |CppProperties.json|Specify custom configuration information for browsing. Create this file, if needed, in your root project folder. (Not used in CMake projects.)|
 |tasks.vs.json|Specify custom build commands. Accessed via the **Solution Explorer** context menu item **Configure Tasks**.|

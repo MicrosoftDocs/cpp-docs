@@ -1,8 +1,9 @@
 ---
 title: "unordered_map Class"
-ms.date: "11/04/2016"
-f1_keywords: ["unordered_map/std::unordered_map", "unordered_map/std::unordered_map::allocator_type", "unordered_map/std::unordered_map::const_iterator", "unordered_map/std::unordered_map::const_local_iterator", "unordered_map/std::unordered_map::const_pointer", "unordered_map/std::unordered_map::const_reference", "unordered_map/std::unordered_map::difference_type", "unordered_map/std::unordered_map::hasher", "unordered_map/std::unordered_map::iterator", "unordered_map/std::unordered_map::key_equal", "unordered_map/std::unordered_map::key_type", "unordered_map/std::unordered_map::local_iterator", "unordered_map/std::unordered_map::mapped_type", "unordered_map/std::unordered_map::pointer", "unordered_map/std::unordered_map::reference", "unordered_map/std::unordered_map::size_type", "unordered_map/std::unordered_map::value_type", "unordered_map/std::unordered_map::at", "unordered_map/std::unordered_map::begin", "unordered_map/std::unordered_map::bucket", "unordered_map/std::unordered_map::bucket_count", "unordered_map/std::unordered_map::bucket_size", "unordered_map/std::unordered_map::cbegin", "unordered_map/std::unordered_map::cend", "unordered_map/std::unordered_map::clear", "unordered_map/std::unordered_map::count", "unordered_map/std::unordered_map::emplace", "unordered_map/std::unordered_map::emplace_hint", "unordered_map/std::unordered_map::empty", "unordered_map/std::unordered_map::end", "unordered_map/std::unordered_map::equal_range", "unordered_map/std::unordered_map::erase", "unordered_map/std::unordered_map::find", "unordered_map/std::unordered_map::get_allocator", "unordered_map/std::unordered_map::hash", "unordered_map/std::unordered_map::insert", "unordered_map/std::unordered_map::key_eq", "unordered_map/std::unordered_map::load_factor", "unordered_map/std::unordered_map::max_bucket_count", "unordered_map/std::unordered_map::max_load_factor", "unordered_map/std::unordered_map::max_size", "unordered_map/std::unordered_map::rehash", "unordered_map/std::unordered_map::size", "unordered_map/std::unordered_map::swap", "unordered_map/std::unordered_map::unordered_map", "unordered_map/std::unordered_map::hash_function"]
-helpviewer_keywords: ["std::unordered_map", "std::unordered_map::allocator_type", "std::unordered_map::const_iterator", "std::unordered_map::const_local_iterator", "std::unordered_map::const_pointer", "std::unordered_map::const_reference", "std::unordered_map::difference_type", "std::unordered_map::hasher", "std::unordered_map::iterator", "std::unordered_map::key_equal", "std::unordered_map::key_type", "std::unordered_map::local_iterator", "std::unordered_map::mapped_type", "std::unordered_map::pointer", "std::unordered_map::reference", "std::unordered_map::size_type", "std::unordered_map::value_type", "std::unordered_map::at", "std::unordered_map::begin", "std::unordered_map::bucket", "std::unordered_map::bucket_count", "std::unordered_map::bucket_size", "std::unordered_map::cbegin", "std::unordered_map::cend", "std::unordered_map::clear", "std::unordered_map::count", "std::unordered_map::emplace", "std::unordered_map::emplace_hint", "std::unordered_map::empty", "std::unordered_map::end", "std::unordered_map::equal_range", "std::unordered_map::erase", "std::unordered_map::find", "std::unordered_map::get_allocator", "std::unordered_map::hash", "std::unordered_map::insert", "std::unordered_map::key_eq", "std::unordered_map::load_factor", "std::unordered_map::max_bucket_count", "std::unordered_map::max_load_factor", "std::unordered_map::max_size", "std::unordered_map::rehash", "std::unordered_map::size", "std::unordered_map::swap", "std::unordered_map::unordered_map", "std::unordered_map::allocator_type", "std::unordered_map::const_iterator", "std::unordered_map::const_local_iterator", "std::unordered_map::const_pointer", "std::unordered_map::const_reference", "std::unordered_map::difference_type", "std::unordered_map::hasher", "std::unordered_map::iterator", "std::unordered_map::key_equal", "std::unordered_map::key_type", "std::unordered_map::local_iterator", "std::unordered_map::mapped_type", "std::unordered_map::pointer", "std::unordered_map::reference", "std::unordered_map::size_type", "std::unordered_map::value_type", "std::unordered_map::at", "std::unordered_map::begin", "std::unordered_map::bucket", "std::unordered_map::bucket_count", "std::unordered_map::bucket_size", "std::unordered_map::cbegin", "std::unordered_map::cend", "std::unordered_map::clear", "std::unordered_map::count", "std::unordered_map::emplace", "std::unordered_map::emplace_hint", "std::unordered_map::empty", "std::unordered_map::end", "std::unordered_map::equal_range", "std::unordered_map::erase", "std::unordered_map::find", "std::unordered_map::get_allocator", "std::unordered_map::hash_function", "std::unordered_map::insert", "std::unordered_map::key_eq", "std::unordered_map::load_factor", "std::unordered_map::max_bucket_count", "std::unordered_map::max_load_factor", "std::unordered_map::max_size", "std::unordered_map::rehash", "std::unordered_map::size", "std::unordered_map::swap"]
+description: "API reference for the C++ Standard Library container class `unordered_map`, which controls a varying-length sequence of elements."
+ms.date: "9/9/2020"
+f1_keywords: ["unordered_map/std::unordered_map", "unordered_map/std::unordered_map::allocator_type", "unordered_map/std::unordered_map::const_iterator", "unordered_map/std::unordered_map::const_local_iterator", "unordered_map/std::unordered_map::const_pointer", "unordered_map/std::unordered_map::const_reference", "unordered_map/std::unordered_map::difference_type", "unordered_map/std::unordered_map::hasher", "unordered_map/std::unordered_map::iterator", "unordered_map/std::unordered_map::key_equal", "unordered_map/std::unordered_map::key_type", "unordered_map/std::unordered_map::local_iterator", "unordered_map/std::unordered_map::mapped_type", "unordered_map/std::unordered_map::pointer", "unordered_map/std::unordered_map::reference", "unordered_map/std::unordered_map::size_type", "unordered_map/std::unordered_map::value_type", "unordered_map/std::unordered_map::at", "unordered_map/std::unordered_map::begin", "unordered_map/std::unordered_map::bucket", "unordered_map/std::unordered_map::bucket_count", "unordered_map/std::unordered_map::bucket_size", "unordered_map/std::unordered_map::cbegin", "unordered_map/std::unordered_map::cend", "unordered_map/std::unordered_map::clear", "unordered_map/std::unordered_map::contains", "unordered_map/std::unordered_map::count", "unordered_map/std::unordered_map::emplace", "unordered_map/std::unordered_map::emplace_hint", "unordered_map/std::unordered_map::empty", "unordered_map/std::unordered_map::end", "unordered_map/std::unordered_map::equal_range", "unordered_map/std::unordered_map::erase", "unordered_map/std::unordered_map::find", "unordered_map/std::unordered_map::get_allocator", "unordered_map/std::unordered_map::hash", "unordered_map/std::unordered_map::insert", "unordered_map/std::unordered_map::key_eq", "unordered_map/std::unordered_map::load_factor", "unordered_map/std::unordered_map::max_bucket_count", "unordered_map/std::unordered_map::max_load_factor", "unordered_map/std::unordered_map::max_size", "unordered_map/std::unordered_map::rehash", "unordered_map/std::unordered_map::size", "unordered_map/std::unordered_map::swap", "unordered_map/std::unordered_map::unordered_map", "unordered_map/std::unordered_map::hash_function"]
+helpviewer_keywords: ["std::unordered_map", "std::unordered_map::allocator_type", "std::unordered_map::const_iterator", "std::unordered_map::const_local_iterator", "std::unordered_map::const_pointer", "std::unordered_map::const_reference", "std::unordered_map::difference_type", "std::unordered_map::hasher", "std::unordered_map::iterator", "std::unordered_map::key_equal", "std::unordered_map::key_type", "std::unordered_map::local_iterator", "std::unordered_map::mapped_type", "std::unordered_map::pointer", "std::unordered_map::reference", "std::unordered_map::size_type", "std::unordered_map::value_type", "std::unordered_map::at", "std::unordered_map::begin", "std::unordered_map::bucket", "std::unordered_map::bucket_count", "std::unordered_map::bucket_size", "std::unordered_map::cbegin", "std::unordered_map::cend", "std::unordered_map::clear", "std::unordered_map::contains", "std::unordered_map::count", "std::unordered_map::emplace", "std::unordered_map::emplace_hint", "std::unordered_map::empty", "std::unordered_map::end", "std::unordered_map::equal_range", "std::unordered_map::erase", "std::unordered_map::find", "std::unordered_map::get_allocator", "std::unordered_map::hash", "std::unordered_map::insert", "std::unordered_map::key_eq", "std::unordered_map::load_factor", "std::unordered_map::max_bucket_count", "std::unordered_map::max_load_factor", "std::unordered_map::max_size", "std::unordered_map::rehash", "std::unordered_map::size", "std::unordered_map::swap", "std::unordered_map::unordered_map", "std::unordered_map::allocator_type", "std::unordered_map::const_iterator", "std::unordered_map::const_local_iterator", "std::unordered_map::const_pointer", "std::unordered_map::const_reference", "std::unordered_map::difference_type", "std::unordered_map::hasher", "std::unordered_map::iterator", "std::unordered_map::key_equal", "std::unordered_map::key_type", "std::unordered_map::local_iterator", "std::unordered_map::mapped_type", "std::unordered_map::pointer", "std::unordered_map::reference", "std::unordered_map::size_type", "std::unordered_map::value_type", "std::unordered_map::at", "std::unordered_map::begin", "std::unordered_map::bucket", "std::unordered_map::bucket_count", "std::unordered_map::bucket_size", "std::unordered_map::cbegin", "std::unordered_map::cend", "std::unordered_map::clear", "std::unordered_map::count", "std::unordered_map::emplace", "std::unordered_map::emplace_hint", "std::unordered_map::empty", "std::unordered_map::end", "std::unordered_map::equal_range", "std::unordered_map::erase", "std::unordered_map::find", "std::unordered_map::get_allocator", "std::unordered_map::hash_function", "std::unordered_map::insert", "std::unordered_map::key_eq", "std::unordered_map::load_factor", "std::unordered_map::max_bucket_count", "std::unordered_map::max_load_factor", "std::unordered_map::max_size", "std::unordered_map::rehash", "std::unordered_map::size", "std::unordered_map::swap"]
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
 ---
 # unordered_map Class
@@ -22,13 +23,20 @@ class unordered_map;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Key*|The key type.|
-|*Ty*|The mapped type.|
-|*Hash*|The hash function object type.|
-|*Pred*|The equality comparison function object type.|
-|*Alloc*|The allocator class.|
+*Key*\
+The key type.
+
+*Ty*\
+The mapped type.
+
+*Hash*\
+The hash function object type.
+
+*Pred*\
+The equality comparison function object type.
+
+*Alloc*\
+The allocator class.
 
 ## Members
 
@@ -62,6 +70,7 @@ class unordered_map;
 |[cend](#cend)|Designates the end of the controlled sequence.|
 |[clear](#clear)|Removes all elements.|
 |[count](#count)|Finds the number of elements matching a specified key.|
+|[contains](#contains)<sup>C++20</sup>|Check if there is an element with the specified key in the `unordered_map`.|
 |[emplace](#emplace)|Adds an element constructed in place.|
 |[emplace_hint](#emplace_hint)|Adds an element constructed in place, with hint.|
 |[empty](#empty)|Tests whether no elements are present.|
@@ -152,9 +161,8 @@ const Ty& at(const Key& key) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*key*|The key value to find.|
+*key*\
+The key value to find.
 
 ### Return Value
 
@@ -204,9 +212,8 @@ const_local_iterator begin(size_type nbucket) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*nbucket*|The bucket number.|
+*nbucket*\
+The bucket number.
 
 ### Remarks
 
@@ -757,6 +764,58 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
+## <a name="contains"></a> unordered_map::contains
+
+Checks if there is an element in the `unordered_map` with the specified key.
+Introduced in C++20.
+
+```cpp
+bool contains(const Key& key) const;
+<class K> bool contains(const K& key) const;
+```
+
+### Parameters
+
+*K*\
+The type of the key.
+
+*key*\
+The key value of the element to look for.
+
+### Return Value
+
+`true` if the element is found in the container; `false` otherwise.
+
+### Remarks
+
+`contains()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+
+`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent.
+
+### Example
+
+```cpp
+// Requires /std:c++latest
+#include <unordered_map>
+#include <iostream>
+
+int main()
+{
+    std::unordered_map<int, bool> theUnorderedMap = {{0, false}, {1,true}};
+
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theUnorderedMap.contains(1) << '\n';
+    std::cout << theUnorderedMap.contains(2) << '\n';
+
+    return 0;
+}
+```
+
+```Output
+true
+false
+```
+
 ## <a name="count"></a> unordered_map::count
 
 Finds the number of elements matching a specified key.
@@ -882,9 +941,8 @@ pair<iterator, bool>  emplace( Args&&... args);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the unordered_map unless it already contains an element whose value is equivalently ordered.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the `unordered_map` unless it already contains an element whose value is equivalently ordered.
 
 ### Return Value
 
@@ -911,10 +969,11 @@ iterator emplace_hint(const_iterator where, Args&&... args);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*args*|The arguments forwarded to construct an element to be inserted into the unordered_map unless the unordered_map already contains that element or, more generally, unless it already contains an element whose key is equivalently ordered.|
-|*where*|A hint regarding the place to start searching for the correct point of insertion.|
+*args*\
+The arguments forwarded to construct an element to be inserted into the unordered_map unless the unordered_map already contains that element or, more generally, unless it already contains an element whose key is equivalently ordered.
+
+*where*\
+A hint regarding the place to start searching for the correct point of insertion.
 
 ### Return Value
 
@@ -1012,9 +1071,8 @@ const_local_iterator end(size_type nbucket) const;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*nbucket*|The bucket number.|
+*nbucket*\
+The bucket number.
 
 ### Remarks
 
@@ -1330,15 +1388,26 @@ IList);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Val*|The value of an element to be inserted into the unordered_map unless it already contains an element whose key is equivalently ordered.|
-|*Where*|The place to start searching for the correct point of insertion.|
-|*ValTy*|Template parameter that specifies the argument type that the unordered_map can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.|
-|*First*|The position of the first element to be copied.|
-|*Last*|The position just beyond the last element to be copied.|
-|*InputIterator*|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
-|*IList*|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
+*Val*\
+The value of an element to be inserted into the unordered_map unless it already contains an element whose key is equivalently ordered.
+
+*Where*\
+The place to start searching for the correct point of insertion.
+
+*ValTy*\
+Template parameter that specifies the argument type that the unordered_map can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.
+
+*First*\
+The position of the first element to be copied.
+
+*Last*\
+The position just beyond the last element to be copied.
+
+*InputIterator*\
+Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.
+
+*IList*\
+The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.
 
 ### Return Value
 
@@ -1957,9 +2026,8 @@ Ty& operator[](Key&& keyval);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Keyval*|The key value to find or insert.|
+*Keyval*\
+The key value to find or insert.
 
 ### Return Value
 
@@ -2484,16 +2552,29 @@ unordered_map(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Al*|The allocator object to store.|
-|*Comp*|The comparison function object to store.|
-|*Hash*|The hash function object to store.|
-|*Bucket_count*|The minimum number of buckets.|
-|*Right*|The container to copy.|
-|*First*||
-|*Last*||
-|*IList*|The initializer_list that contains the elements to be copied.|
+*Al*\
+The allocator object to store.
+
+*Comp*\
+The comparison function object to store.
+
+*Hash*\
+The hash function object to store.
+
+*Bucket_count*\
+The minimum number of buckets.
+
+*Right*\
+The container to copy.
+
+*First*\
+The position of the first element to be copied.
+
+*Last*\
+The position just beyond the last element to be copied.
+
+*IList*\
+The initializer_list that contains the elements to be copied.
 
 ### Remarks
 
@@ -2701,6 +2782,4 @@ int main()
 ## See also
 
 [<unordered_map>](../standard-library/unordered-map.md)\
-[Containers](../cpp/containers-modern-cpp.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)

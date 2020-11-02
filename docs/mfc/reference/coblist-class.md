@@ -7,7 +7,7 @@ ms.assetid: 80699c93-33d8-4f8b-b8cf-7b58aeab64ca
 ---
 # CObList Class
 
-fSupports ordered lists of nonunique `CObject` pointers accessible sequentially or by pointer value.
+Supports ordered lists of nonunique `CObject` pointers accessible sequentially or by pointer value.
 
 ## Syntax
 

@@ -30,7 +30,7 @@ template<class T> optional(T) -> optional<T>;
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 | **Constructors and destructor** | |
 |[optional](#optional) | Constructs an object of type `optional`. |

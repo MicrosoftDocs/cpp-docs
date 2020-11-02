@@ -33,7 +33,7 @@ Fill character.
 
 `_heapset` returns one of the following integer manifest constants defined in Malloc.h.
 
-|||
+|Value|Description|
 |-|-|
 | `_HEAPBADBEGIN`  | Initial header information invalid or not found.  |
 | `_HEAPBADNODE`  | Heap damaged or bad node found.  |

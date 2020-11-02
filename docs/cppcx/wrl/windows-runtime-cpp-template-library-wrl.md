@@ -11,7 +11,7 @@ The Windows Runtime C++ Template Library (WRL) is a template library that provid
 > [!NOTE]
 > WRL is now superseded by C++/WinRT, a standard C++17 language projection for Windows Runtime APIs. C++/WinRT is available in the Windows 10 SDK from version 1803 onward. C++/WinRT is implemented entirely in header files, and designed to provide you with first-class access to the modern Windows API.
 >
-> With C++/WinRT, you can both consume and author Windows Runtime APIs using any standards-compliant C++17 compiler. C++/WinRT typically performs better and produces smaller binaries than any other language option for the Windows Runtime. We will continue to support C++/CX and WRL, but highly recommend that new applications use C++/WinRT. For more information, see [C++/WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).
+> With C++/WinRT, you can both consume and author Windows Runtime APIs using any standards-compliant C++17 compiler. C++/WinRT typically performs better and produces smaller binaries than any other language option for the Windows Runtime. We will continue to support C++/CX and WRL, but highly recommend that new applications use C++/WinRT. For more information, see [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/index).
 
 ## Benefits
 
@@ -26,7 +26,7 @@ The Windows Runtime C++ Template Library and C++/CX provide different benefits. 
 - C++/CX represents COM HRESULT values as exceptions. If you’ve inherited a code base that uses COM, or one that doesn’t use exceptions, you might find that the Windows Runtime C++ Template Library is a more natural way to work with the Windows Runtime because you don't have to use exceptions.
 
    > [!NOTE]
-   > The Windows Runtime C++ Template Library uses HRESULT values and does not throw exceptions. In addition, the Windows Runtime C++ Template Library uses smart pointers and the RAII pattern to help guarantee that objects are destroyed correctly when your application code throws an exception. For more info about smart pointers and RAII, see [Smart Pointers](../../cpp/smart-pointers-modern-cpp.md) and [Objects Own Resources (RAII)](../../cpp/objects-own-resources-raii.md).
+   > The Windows Runtime C++ Template Library uses HRESULT values and does not throw exceptions. In addition, the Windows Runtime C++ Template Library uses smart pointers and the RAII pattern to help guarantee that objects are destroyed correctly when your application code throws an exception. For more info about smart pointers and RAII, see [Smart Pointers](../../cpp/smart-pointers-modern-cpp.md) and [Objects Own Resources (RAII)](../../cpp/object-lifetime-and-resource-management-modern-cpp.md).
 
 - The purpose and design of the Windows Runtime C++ Template Library is inspired by the Active Template Library (ATL), which is a set of template-based C++ classes that simplify the programming of COM objects. Because Windows Runtime C++ Template Library uses standard C++ to wrap the Windows Runtime, you can more easily port and interact with many existing COM components written in ATL to the Windows Runtime. If you already know ATL, you might find that Windows Runtime C++ Template Library programming is easier.
 
@@ -67,7 +67,7 @@ Uses the `HttpRequest` class that's defined in [Walkthrough: Connecting Using Ta
 [Creating a Windows Runtime DLL component with C++ sample](https://github.com/Microsoft/VCSamples/tree/master/VC2012Samples/Windows%208%20samples/C%2B%2B/Windows%208%20app%20samples)<br/>
 Shows how to use the Windows Runtime C++ Template Library to create an in-process DLL component and consume it from C++/CX, JavaScript, and C#.
 
-[DirectX marble maze game sample](https://docs.microsoft.com/samples/microsoft/windows-appsample-marble-maze/directx-marble-maze-game-sample/)<br/>
+[DirectX marble maze game sample](/samples/microsoft/windows-appsample-marble-maze/directx-marble-maze-game-sample/)<br/>
 Demonstrates how to use the Windows Runtime C++ Template Library to manage the lifetime of COM components such as DirectX and Media Foundation in the context of a complete 3-D game.
 
 [Toast notifications from desktop apps](/windows/uwp/design/shell/tiles-and-notifications/toast-desktop-apps)<br/>
@@ -137,9 +137,14 @@ A `WeakRef` object typically represents an object whose existence is controlled 
 
 ## Related Topics
 
-|||
-|-|-|
-|[Key APIs by Category](key-wrl-apis-by-category.md)|Highlights the primary Windows Runtime C++ Template Library types, functions, and macros.|
-|[Reference](wrl-reference.md)|Contains reference information for the Windows Runtime C++ Template Library.|
-|[Quick Reference (C++/CX)](../../cppcx/quick-reference-c-cx.md)|Briefly describes the C++/CX features that support the Windows Runtime.|
-|[Using Windows Runtime Components in Visual C++](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)|Shows how to use C++/CX to create a basic Windows Runtime component.|
+[Key APIs by Category](key-wrl-apis-by-category.md)\
+Highlights the primary Windows Runtime C++ Template Library types, functions, and macros.
+
+[Reference](wrl-reference.md)\
+Contains reference information for the Windows Runtime C++ Template Library.
+
+[Quick Reference (C++/CX)](../../cppcx/quick-reference-c-cx.md)\
+Briefly describes the C++/CX features that support the Windows Runtime.
+
+[Using Windows Runtime Components in Visual C++](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)\
+Shows how to use C++/CX to create a basic Windows Runtime component.

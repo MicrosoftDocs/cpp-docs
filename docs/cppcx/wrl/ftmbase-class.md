@@ -81,7 +81,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 ### Remarks
 
-For more information, see [`IGlobalInterfaceTable`](https://docs.microsoft.com/windows/win32/api/objidl/nn-objidl-iglobalinterfacetable).
+For more information, see [`IGlobalInterfaceTable`](/windows/win32/api/objidl/nn-objidl-iglobalinterfacetable).
 
 ## <a name="disconnectobject"></a> FtmBase::DisconnectObject
 

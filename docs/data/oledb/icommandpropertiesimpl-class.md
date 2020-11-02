@@ -33,14 +33,14 @@ Your properties class.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetProperties](#getproperties)|Returns the list of properties in the Rowset property group that are currently requested for the rowset.|
 |[SetProperties](#setproperties)|Sets properties in the Rowset property group.|
 
 ## Remarks
 
-This is mandatory on commands. The implementation is provided by a static function defined by the [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) macro.
+This is mandatory on commands. The implementation is provided by a static function defined by the [BEGIN_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#begin_propset_map) macro.
 
 ## <a name="getproperties"></a> ICommandPropertiesImpl::GetProperties
 
@@ -61,7 +61,7 @@ See [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723
 
 ### Remarks
 
-See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+See [BEGIN_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#begin_propset_map).
 
 ## <a name="setproperties"></a> ICommandPropertiesImpl::SetProperties
 

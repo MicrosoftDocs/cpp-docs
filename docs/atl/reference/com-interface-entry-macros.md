@@ -9,7 +9,7 @@ ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
 
 These macros enter an object's interfaces into its COM map so that they can be accessed by `QueryInterface`. The order of entries in the COM map is the order interfaces will be checked for a matching IID during `QueryInterface`.
 
-|||
+|Macro|Description|
 |-|-|
 |[COM_INTERFACE_ENTRY](#com_interface_entry)|Enters interfaces into the COM interface map.|
 |[COM_INTERFACE_ENTRY2](#com_interface_entry2)|Use this macro to disambiguate two branches of inheritance.|

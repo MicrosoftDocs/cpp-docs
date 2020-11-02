@@ -19,7 +19,7 @@ __interface IAtlStringMgr
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[Allocate](#allocate)|Call this method to allocate a new string data structure.|
 |[Clone](#clone)|Call this method to return a pointer to a new string manager for use with another instance of `CSimpleStringT`.|

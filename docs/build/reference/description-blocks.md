@@ -16,7 +16,7 @@ targets... : dependents...
 
 ## Dependency lines
 
-A *dependency line* specifies one or more targets, and zero or more dependents. If a target doesn't exist, or has an earlier timestamp than a dependent, NMAKE executes the commands in the command block. NMAKE also executes the command block if the target is a [pseudotarget](pseudotargets.md). Here's an example dependency line:
+A *dependency line* specifies one or more targets, and zero or more dependents. If a target doesn't exist, or has an earlier timestamp than a dependent, NMAKE executes the commands in the command block. NMAKE also executes the command block if the target is a [pseudotarget](#pseudotargets). Here's an example dependency line:
 
 ```makefile
 hi_bye.exe : hello.obj goodbye.obj helper.lib
@@ -30,7 +30,7 @@ Before it executes command blocks, NMAKE scans all the dependencies and any appl
 
 ## <a name="targets"></a> Targets
 
-The targets section of a dependency line specifies one or more targets. A target can be any valid filename, directory name, or [pseudotarget](pseudotargets.md). Separate multiple targets by using one or more spaces or tabs. Targets aren't case-sensitive. Paths are permitted with filenames. A target and its path can't exceed 256 characters. If the target preceding the colon is a single character, use a separating space. Otherwise, NMAKE interprets the letter-colon combination as a drive specifier.
+The targets section of a dependency line specifies one or more targets. A target can be any valid filename, directory name, or [pseudotarget](#pseudotargets). Separate multiple targets by using one or more spaces or tabs. Targets aren't case-sensitive. Paths are permitted with filenames. A target and its path can't exceed 256 characters. If the target preceding the colon is a single character, use a separating space. Otherwise, NMAKE interprets the letter-colon combination as a drive specifier.
 
 ### <a name="multiple-targets"></a> Multiple targets
 
@@ -179,7 +179,7 @@ setenv :
 
 ## <a name="dependents"></a> Dependents
 
-In a dependency line, specify zero or more dependents after the colon (`:`) or double colon (`::`), using any valid filename or [pseudotarget](pseudotargets.md). Separate multiple dependents by using one or more spaces or tabs. Dependents aren't case-sensitive. Paths are permitted with filenames.
+In a dependency line, specify zero or more dependents after the colon (`:`) or double colon (`::`), using any valid filename or [pseudotarget](#pseudotargets). Separate multiple dependents by using one or more spaces or tabs. Dependents aren't case-sensitive. Paths are permitted with filenames.
 
 ### <a name="inferred-dependents"></a> Inferred dependents
 

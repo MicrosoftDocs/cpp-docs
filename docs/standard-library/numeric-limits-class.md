@@ -29,7 +29,7 @@ For an arbitrary specialization, no members have meaningful values. A member obj
 
 ## Static Functions and Constants
 
-|||
+|Name|Description|
 |-|-|
 |[denorm_min](#denorm_min)|Returns the smallest nonzero denormalized value.|
 |[digits](#digits)|Returns the number of radix digits that the type can represent without loss of precision.|
@@ -273,7 +273,7 @@ static constexpr float_denorm_style has_denorm = denorm_absent;
 
 #### Return Value
 
-An enumeration value of type **`const`**`float_denorm_style`, indicating whether the type allows denormalized values.
+An enumeration value of type `const float_denorm_style`, indicating whether the type allows denormalized values.
 
 #### Remarks
 

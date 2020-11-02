@@ -1,5 +1,6 @@
 ---
 title: "vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l"
+description: "API reference for vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, and _vsnwprintf_l; which write formatted output using a pointer to a list of arguments."
 ms.date: "06/24/2020"
 api_name: ["_vsnprintf", "_vsnprintf_l", "_vsnwprintf", "_vsnwprintf_l", "_vsnprintf", "_vsnprintf;", "vsnprintf; _vsnprintf", "_vsnwprintf;", "_vsnprintf_l;", "_vsnwprintf_l;"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntoskrnl.exe", "ucrtbase.dll"]
@@ -130,7 +131,7 @@ Each of these functions takes a pointer to an argument list, then formats the da
 >
 > Because **vsnprintf** always writes the terminating null, the *count* parameter may be equal to the size of the buffer.
 
-Beginning with the UCRT in Visual Studio 2015 and Windows 10,         **vsnprintf** is no longer identical to **_vsnprintf**. The **vsnprintf** function complies with the C99 standard; **_vnsprintf** is kept for backward compatibility with older Visual Studio code.
+Beginning with the UCRT in Visual Studio 2015 and Windows 10, **vsnprintf** is no longer identical to **_vsnprintf**. The **vsnprintf** function complies with the C99 standard; **_vnsprintf** is kept for backward compatibility with older Visual Studio code.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
@@ -152,7 +153,7 @@ In C++, these functions have template overloads that invoke the newer, secure co
 
 The **_vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** and **_vsnwprintf_l** functions are Microsoft-specific. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## Example
+## Example: Use wide characters with `_vsnwprintf()`
 
 ```C
 // crt_vsnwprintf.c
@@ -194,7 +195,7 @@ nSize: -1, buff: Hi there!
 
 The behavior changes if you use vsnprintf instead, along with narrow-string parameters. The *count* parameter can be the entire size of the buffer, and the return value is the number of characters that would have been written if *count* was large enough:
 
-## Example
+## Example: Use `vsnprintf()` with narrow strings
 
 ```C
 // crt_vsnprintf.c

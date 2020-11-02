@@ -37,17 +37,17 @@ The command prompt shortcuts are installed in a version-specific Visual Studio f
 - **x86_x64 Cross Tools Command Prompt** - Sets the environment to use 32-bit, x86-native tools to build 64-bit, x64-native code.
 - **x64_x86 Cross Tools Command Prompt** - Sets the environment to use 64-bit, x64-native tools to build 32-bit, x86-native code.
 
-::: moniker range=">= vs-2019"
+::: moniker range=">= msvc-160"
 
 The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2019, and you gave it a nickname of *Latest*. The developer command prompt shortcut is named **Developer Command Prompt for VS 2019 (Latest)**, in a folder named **Visual Studio 2019**.
 
 ::: moniker-end
-::: moniker range="= vs-2017"
+::: moniker range="= msvc-150"
 
 The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2017, and you gave it a nickname of *Latest*. The developer command prompt shortcut is named **Developer Command Prompt for VS 2017 (Latest)**, in a folder named **Visual Studio 2017**.
 
 ::: moniker-end
-::: moniker range="< vs-2017"
+::: moniker range="< msvc-150"
 
 The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. For example, suppose you installed Visual Studio 2015. The developer command prompt shortcut is named **Developer Command Prompt for VS 2015**.
 
@@ -65,17 +65,17 @@ For an even faster way to open a developer command prompt, enter *developer comm
 
 If you prefer to set the build environment in an existing command prompt window, you can use one of the command files created by the installer. We recommend you set the environment in a new command prompt window. We don't recommend you later switch environments in the same command window.
 
-::: moniker range=">= vs-2019"
+::: moniker range=">= msvc-160"
 
 The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2019, the typical installation location on a 64-bit system is in \\Program Files (x86)\\Microsoft Visual Studio\\2019\\*edition*. *Edition* may be Community, Professional, Enterprise, BuildTools, or another nickname you supplied.
 
 ::: moniker-end
-::: moniker range="= vs-2017"
+::: moniker range="= msvc-150"
 
 The command file location depends on the version of Visual Studio you installed, and on choices you made during installation. For Visual Studio 2017, the typical installation location on a 64-bit system is in \\Program Files (x86)\\Microsoft Visual Studio\\2017\\*edition*. *Edition* may be Community, Professional, Enterprise, BuildTools, or another nickname you supplied.
 
 ::: moniker-end
-::: moniker range="< vs-2017"
+::: moniker range="< msvc-150"
 
 The command file location depends on the Visual Studio version, and the installation directory. For Visual Studio 2015, the typical installation location is in \\Program Files (x86)\\Microsoft Visual Studio 14.0.
 
@@ -83,12 +83,12 @@ The command file location depends on the Visual Studio version, and the installa
 
 The primary developer command prompt command file, VsDevCmd.bat, is located in the Common7\\Tools subdirectory. When no parameters are specified, it sets the environment to use the x86-native tools to build 32-bit x86 code.
 
-::: moniker range=">= vs-2017"
+::: moniker range=">= msvc-150"
 
 More command files are available to set up specific build architectures. The command files available depend on the Visual Studio workloads and options you've installed. In Visual Studio 2017 and Visual Studio 2019, you'll find them in the VC\\Auxiliary\\Build subdirectory.
 
 ::: moniker-end
-::: moniker range="< vs-2017"
+::: moniker range="< msvc-150"
 
 More command files are available to set up specific build architectures. The command files available depend on the Visual Studio workloads and options you've installed. In Visual Studio 2015, they're located in the VC, VC\\bin, or VC\\bin\\*architecture* subdirectories, where *architecture* is one of the native or cross-compiler options.
 
@@ -144,14 +144,14 @@ Optionally specifies the version of the Windows SDK to use. By default, the late
 *vcversion*<br/>
 Optionally specifies the Visual Studio compiler toolset to use. By default, the environment is set to use the current Visual Studio compiler toolset.
 
-::: moniker range=">= vs-2019"
+::: moniker range=">= msvc-160"
 
 Use **-vcvars_ver=14.2x.yyyyy** to specify a specific version of the Visual Studio 2019 compiler toolset.
 
 Use **-vcvars_ver=14.16** to specify the latest version of the Visual Studio 2017 compiler toolset.
 
 ::: moniker-end
-::: moniker range="= vs-2017"
+::: moniker range="= msvc-150"
 
 Use **-vcvars_ver=14.16** to specify the latest version of the Visual Studio 2017 compiler toolset.
 
@@ -171,21 +171,21 @@ Use **-vcvars_ver=14.0** to specify the Visual Studio 2015 compiler toolset.
 
 ## Create your own command prompt shortcut
 
-::: moniker range=">= vs-2019"
+::: moniker range=">= msvc-160"
 
 Open the Properties dialog for a developer command prompt shortcut to see the command target used. For example, the target for the **x64 Native Tools Command Prompt for VS 2019** shortcut is something similar to:
 
 `%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"`
 
 ::: moniker-end
-::: moniker range="= vs-2017"
+::: moniker range="= msvc-150"
 
 Open the Properties dialog for a developer command prompt shortcut to see the command target used. For example, the target for the **x64 Native Tools Command Prompt for VS 2017** shortcut is something similar to:
 
 `%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"`
 
 ::: moniker-end
-::: moniker range="< vs-2017"
+::: moniker range="< msvc-150"
 
 Open the Properties dialog for a developer command prompt shortcut to see the command target used. For example, the target for the **VS2015 x64 Native Tools Command Prompt** shortcut is something similar to:
 
@@ -195,17 +195,17 @@ Open the Properties dialog for a developer command prompt shortcut to see the co
 
 The architecture-specific batch files set the *architecture* parameter and call vcvarsall.bat. You can pass the same options to these batch files as you would pass to vcvarsall.bat, or you can just call vcvarsall.bat directly. To specify parameters for your own command shortcut, add them to the end of the command in double-quotes. For example, here's a shortcut to build ARM code for UWP on a 64-bit platform, using the latest Windows SDK. To use an earlier compiler toolset, specify the version number. Use something like this command target in your shortcut:
 
-::: moniker range=">= vs-2019"
+::: moniker range=">= msvc-160"
 
 `%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm uwp -vcvars_ver=14.16`
 
 ::: moniker-end
-::: moniker range="= vs-2017"
+::: moniker range="= msvc-150"
 
 `%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm uwp -vcvars_ver=14.0`
 
 ::: moniker-end
-::: moniker range="< vs-2017"
+::: moniker range="< msvc-150"
 
 `%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64 -vcvars_ver=12.0`
 
@@ -226,7 +226,7 @@ Use the linker (link.exe) to link compiled object files and libraries into apps 
 [NMAKE](reference/nmake-reference.md)<br/>
 Use NMAKE (nmake.exe) on Windows to build C++ projects based on a traditional makefile.
 
-When you build on the command line, the F1 command isn't available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages. You can also download and use the offline help files. To use the search in [docs.microsoft.com](https://docs.microsoft.com/cpp/), enter your query in the search box at the top of any article.
+When you build on the command line, the F1 command isn't available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages. You can also download and use the offline help files. To use the search in docs.microsoft.com, enter your query in the search box at the top of any article.
 
 ## Command-line project management tools
 

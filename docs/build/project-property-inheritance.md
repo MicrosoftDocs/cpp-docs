@@ -10,17 +10,35 @@ The Visual Studio native project system is based on MSBuild. MSBuild defines fil
 
 ## The .vcxproj file, .props files and .targets files
 
-Project properties are stored either directly in the project file (*`.vcxproj`*) or in other *`.targets`* or *`.props`* files that the project file imports and which supply default values. For Visual Studio 2015, these files are located in *`\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140`*. For Visual Studio 2017, these files are located in *`\Program Files (x86)\Microsoft Visual Studio\2017\<edition>\Common7\IDE\VC\VCTargets`*, where *`<edition>`* is the Visual Studio edition installed. In Visual Studio 2019, these files are located in *`\Program Files (x86)\Microsoft Visual Studio\2019\<edition>\MSBuild\Microsoft\VC\v160`*. Properties are also stored in any custom *`.props`* files that you might add to your own project. We highly recommend that you NOT edit those files manually. Instead, use the property pages in the IDE to modify all properties, especially the ones that participate in inheritance, unless you have a deep understanding of MSBuild.
+::: moniker range="msvc-140"
 
-As shown earlier, the same property for the same configuration may be assigned a different value in these different files. When you build a project, the MSBuild engine evaluates the project file and all the imported files in a well-defined order (described below). As each file is evaluated, any property values defined in that file will override the existing values. Any values that aren't specified are inherited from files that were evaluated earlier. When you set a property with property pages, it's also important to pay attention to where you set it. If you set a property to "X" in a *`.props`* file, but the property is set to "Y" in the project file, then the project will build with the property set to "Y". If the same property is set to "Z" on a project item, such as a *`.cpp`* file, then the MSBuild engine will use the "Z" value.
+Project properties are stored in several files. Some are stored directly in the *`.vcxproj`* project file. Others come from other *`.targets`* or *`.props`* files that the project file imports and which supply default values. You'll find the Visual Studio 2015 project files in a locale-specific folder under the base directory, *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\v140`*.
+
+::: moniker-end
+
+::: moniker range="msvc-150"
+
+Project properties are stored in several files. Some are stored directly in the *`.vcxproj`* project file. Others come from other *`.targets`* or *`.props`* files that the project file imports and which supply default values. You'll find the Visual Studio 2017 project files in a locale-specific folder under the base directory, *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\`*.
+
+::: moniker-end
+
+::: moniker range=">=msvc-160"
+
+Project properties are stored in several files. Some are stored directly in the *`.vcxproj`* project file. Others come from other *`.targets`* or *`.props`* files that the project file imports and which supply default values. You'll find the Visual Studio project files in a locale-specific folder under the base directory, *`%VSINSTALLDIR%MSBuild\Microsoft\VC\<version>`*. The `<version>` is specific to the version of Visual Studio. It's *`v160`* for Visual Studio 2019.
+
+::: moniker-end
+
+Properties are also stored in any custom *`.props`* files that you might add to your own project. We highly recommend that you *NOT* edit those files manually. Instead, use the property pages in the IDE to modify all properties, especially the ones that participate in inheritance, unless you have a deep understanding of MSBuild and *`.vcxproj`* files.
+
+As shown earlier, the same property for the same configuration may be assigned a different value in these different files. When you build a project, the MSBuild engine evaluates the project file and all the imported files in a well-defined order that's described later. As each file is evaluated, any property values defined in that file will override the existing values. Any values that aren't specified are inherited from files that were evaluated earlier. When you set a property with property pages, it's also important to pay attention to where you set it. If you set a property to "X" in a *`.props`* file, but the property is set to "Y" in the project file, then the project will build with the property set to "Y". If the same property is set to "Z" on a project item, such as a *`.cpp`* file, then the MSBuild engine will use the "Z" value.
 
 Here's the basic inheritance tree:
 
-1. Default settings from the MSBuild CPP Toolset (..\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.Cpp.Default.props, which is imported by the *`.vcxproj`* file.)
+1. Default settings from the MSBuild CPP Toolset (the *`Microsoft.Cpp.Default.props`* file in the base directory, which is imported by the *`.vcxproj`* file.)
 
 1. Property sheets
 
-1. *`.vcxproj`* file. (Can override the default and property sheet settings.)
+1. *`.vcxproj`* file. (This file can override the default and property sheet settings.)
 
 1. Items metadata
 

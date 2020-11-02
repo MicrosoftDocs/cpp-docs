@@ -29,10 +29,12 @@ The unsigned integer result type. For possible types, see [\<random>](../standar
 
 ## Members
 
-||||
-|-|-|-|
-|`independent_bits_engine::independent_bits_engine`|`independent_bits_engine::base`|`independent_bits_engine::discard`|
-|`independent_bits_engine::operator()`|`independent_bits_engine::base_type`|`independent_bits_engine::seed`|
+`independent_bits_engine::independent_bits_engine`\
+`independent_bits_engine::base`\
+`independent_bits_engine::base_type`\
+`independent_bits_engine::discard`\
+`independent_bits_engine::operator()`\
+`independent_bits_engine::seed`
 
 For more information about engine members, see [\<random>](../standard-library/random.md).
 

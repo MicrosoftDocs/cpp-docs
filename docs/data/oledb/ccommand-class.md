@@ -40,7 +40,7 @@ To use an OLE DB command that can return multiple results, specify [CMultipleRes
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Close](#close)|Closes the current command.|
 |[GetNextResult](#getnextresult)|Fetches the next result when using multiple result sets.|
@@ -48,7 +48,7 @@ To use an OLE DB command that can return multiple results, specify [CMultipleRes
 
 ### Inherited Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Create](#create)|Creates a new command for the specified session, then sets the command text.|
 |[CreateCommand](#createcommand)|Creates a new command.|
@@ -80,7 +80,7 @@ void Close();
 
 A command uses a rowset, result set accessor, and (optionally) a parameter accessor (unlike tables, which do not support parameters and do not need a parameter accessor).
 
-When you execute a command, you should call both `Close` and [ReleaseCommand](../../data/oledb/ccommand-releasecommand.md) after the command.
+When you execute a command, you should call both `Close` and [ReleaseCommand](#releasecommand) after the command.
 
 When you want to execute the same command repeatedly, you should release each result set accessor by calling `Close` before calling `Execute`. At the end of the series, you should release the parameter accessor by calling `ReleaseCommand`. Another common scenario is calling a stored procedure that has output parameters. On many providers (such as the OLE DB provider for SQL Server) the output parameter values will not be accessible until you close the result set accessor. Call `Close` to close the returned rowset and result set accessor, but not the parameter accessor, thus allowing you to retrieve the output parameter values.
 
@@ -162,7 +162,7 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 [in] The session in which to execute the command.
 
 *wszCommand*<br/>
-[in] The command to execute, passed as a Unicode string. Can be NULL when using `CAccessor`, in which case the command will be retrieved from the value passed to the [DEFINE_COMMAND](../../data/oledb/define-command.md) macro. See [ICommand::Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) in the *OLE DB Programmer's Reference* for details.
+[in] The command to execute, passed as a Unicode string. Can be NULL when using `CAccessor`, in which case the command will be retrieved from the value passed to the [DEFINE_COMMAND](./macros-and-global-functions-for-ole-db-consumer-templates.md#define_command) macro. See [ICommand::Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) in the *OLE DB Programmer's Reference* for details.
 
 *szCommand*<br/>
 [in] Same as *wszCommand* except that this parameter takes an ANSI command string. The fourth form of this method can take a NULL value. See "Remarks" later in this topic for details.
@@ -202,14 +202,14 @@ The second form of `Open` takes an ANSI command string and no default value (pro
 
 The third form of `Open` allows the command string to be NULL, because of type **`int`** with a default value of NULL. It is provided for calling `Open(session, NULL);` or `Open(session);` because NULL is of type **`int`**. This version requires and asserts that the **`int`** parameter be NULL.
 
-Use the fourth form of `Open` when you have already created a command and you want to perform a single [Prepare](../../data/oledb/ccommand-prepare.md) and multiple executions.
+Use the fourth form of `Open` when you have already created a command and you want to perform a single [Prepare](#prepare) and multiple executions.
 
 > [!NOTE]
 > `Open` calls `Execute`, which in turn calls `GetNextResult`.
 
 ## <a name="create"></a> CCommand::Create
 
-Calls [CCommand::CreateCommand](../../data/oledb/ccommand-createcommand.md) to create a command for the specified session, then calls [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709825(v=vs.85)) to specify the command text.
+Calls [CCommand::CreateCommand](#createcommand) to create a command for the specified session, then calls [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709825(v=vs.85)) to specify the command text.
 
 ### Syntax
 
@@ -323,7 +323,7 @@ void CCommandBase::ReleaseCommand() throw();
 
 ### Remarks
 
-`ReleaseCommand` is used in conjunction with `Close`. See [Close](../../data/oledb/ccommand-close.md) for usage details.
+`ReleaseCommand` is used in conjunction with `Close`. See [Close](#close) for usage details.
 
 ## <a name="setparameterinfo"></a> CCommand::SetParameterInfo
 

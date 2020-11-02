@@ -51,7 +51,7 @@ extern "C" {
 
 - [Decorated names](reference/decorated-names.md)
 
-- [Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
+- [Using extern to Specify Linkage](../cpp/extern-cpp.md)
 
 ## See also
 

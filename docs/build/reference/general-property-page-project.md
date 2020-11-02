@@ -6,9 +6,9 @@ helpviewer_keywords: ["Clean Build option", "output files, setting directory", "
 ---
 # General Property Page (Project)
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
-This topic applies to Visual Studio projects for Windows. For Linux projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md). For CMake projects, see [CMake projects in Visual Studio](../cmake-projects-in-visual-studio.md). For Android projects, see [General Project Properties (Android C++)](/cpp/cross-platform/general-android-prop-page). For Android Makefile projects, see [General Project Properties (Android C++ Makefile)](/cpp/cross-platform/general-makefile-android-prop-page)
+This topic applies to Visual Studio projects for Windows. For Linux projects, see [Linux C++ Property Page Reference](../../linux/prop-pages-linux.md). For CMake projects, see [CMake projects in Visual Studio](../cmake-projects-in-visual-studio.md). For Android projects, see [General Project Properties (Android C++)](../../cross-platform/general-android-prop-page.md). For Android Makefile projects, see [General Project Properties (Android C++ Makefile)](../../cross-platform/general-makefile-android-prop-page.md)
 
 When you right-click on a project node in Solution Explorer, and select **Properties**, the **General** property page under the **Configuration Properties** node in the left pane displays these properties:
 
@@ -72,7 +72,7 @@ When you right-click on a project node in Solution Explorer, and select **Proper
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 In Visual Studio 2015 and Visual Studio 2017, when you right-click on a project node in **Solution Explorer**, and select **Properties**, the **General** property page under the **Configuration Properties** node in the left pane displays two sections of properties:
 

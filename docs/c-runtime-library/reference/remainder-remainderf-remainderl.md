@@ -1,6 +1,7 @@
 ---
 title: "remainder, remainderf, remainderl"
-ms.date: "4/2/2020"
+description: "API reference for remainder, remainderf, and remainderl; which compute the remainder of the quotient of two floating-point values, rounded to the nearest integral value."
+ms.date: "9/1/2020"
 api_name: ["remainderl", "remainder", "remainderf", "_o_remainder", "_o_remainderf", "_o_remainderl"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,19 +20,18 @@ Computes the remainder of the quotient of two floating-point values, rounded to 
 double remainder( double x, double y );
 float remainderf( float x, float y );
 long double remainderl( long double x, long double y );
-```
+#define remainder(X, Y) // Requires C11 or higher
 
-```cpp
 float remainder( float x, float y ); /* C++ only */
 long double remainder( long double x, long double y ); /* C++ only */
 ```
 
 ### Parameters
 
-*x*<br/>
+*x*\
 The numerator.
 
-*y*<br/>
+*y*\
 The denominator.
 
 ## Return Value
@@ -42,7 +42,9 @@ The floating-point remainder of *x* / *y*. If the value of *y* is 0.0, **remaind
 
 The **remainder** functions calculate the floating-point remainder *r* of *x* / *y* such that *x* = *n* \* *y* + *r*, where *n*is the integer nearest in value to *x* / *y* and *n*is even whenever &#124; *n* - *x* / *y* &#124; = 1/2. When *r* = 0, *r* has the same sign as *x*.
 
-Because C++ allows overloading, you can call overloads of **remainder** that take and return **`float`** or **`long double`** values. In a C program, **remainder** always takes two **`double`** arguments and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **remainder** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **remainder** always takes two **`double`** arguments and returns a **`double`**.
+
+If you use the \<tgmath.h> `remainder()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -51,6 +53,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|Required header (C)|Required header (C++)|
 |--------------|---------------------|-|
 |**remainder**, **remainderf**, **remainderl**|\<math.h>|\<cmath> or \<math.h>|
+|**remainder** macro | \<tgmath.h> ||
 
 For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -78,8 +81,8 @@ The remainder of -10.00 / 3.00 is -1.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[ldiv, lldiv](ldiv-lldiv.md)<br/>
-[imaxdiv](imaxdiv.md)<br/>
-[fmod, fmodf](fmod-fmodf.md)<br/>
-[remquo, remquof, remquol](remquo-remquof-remquol.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[ldiv, lldiv](./div.md)\
+[imaxdiv](imaxdiv.md)\
+[fmod, fmodf](fmod-fmodf.md)\
+[remquo, remquof, remquol](remquo-remquof-remquol.md)

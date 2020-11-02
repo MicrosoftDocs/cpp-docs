@@ -1,13 +1,14 @@
 ---
 title: "unordered_set Class"
-ms.date: "11/04/2016"
-f1_keywords: ["unordered_set/std::unordered_set", "unordered_set/std::unordered_set::allocator_type", "unordered_set/std::unordered_set::const_iterator", "unordered_set/std::unordered_set::const_local_iterator", "unordered_set/std::unordered_set::const_pointer", "unordered_set/std::unordered_set::const_reference", "unordered_set/std::unordered_set::difference_type", "unordered_set/std::unordered_set::hasher", "unordered_set/std::unordered_set::iterator", "unordered_set/std::unordered_set::key_equal", "unordered_set/std::unordered_set::key_type", "unordered_set/std::unordered_set::local_iterator", "unordered_set/std::unordered_set::pointer", "unordered_set/std::unordered_set::reference", "unordered_set/std::unordered_set::size_type", "unordered_set/std::unordered_set::value_type", "unordered_set/std::unordered_set::begin", "unordered_set/std::unordered_set::bucket", "unordered_set/std::unordered_set::bucket_count", "unordered_set/std::unordered_set::bucket_size", "unordered_set/std::unordered_set::cbegin", "unordered_set/std::unordered_set::cend", "unordered_set/std::unordered_set::clear", "unordered_set/std::unordered_set::count", "unordered_set/std::unordered_set::emplace", "unordered_set/std::unordered_set::emplace_hint", "unordered_set/std::unordered_set::empty", "unordered_set/std::unordered_set::end", "unordered_set/std::unordered_set::equal_range", "unordered_set/std::unordered_set::erase", "unordered_set/std::unordered_set::find", "unordered_set/std::unordered_set::get_allocator", "unordered_set/std::unordered_set::hash", "unordered_set/std::unordered_set::insert", "unordered_set/std::unordered_set::key_eq", "unordered_set/std::unordered_set::load_factor", "unordered_set/std::unordered_set::max_bucket_count", "unordered_set/std::unordered_set::max_load_factor", "unordered_set/std::unordered_set::max_size", "unordered_set/std::unordered_set::rehash", "unordered_set/std::unordered_set::size", "unordered_set/std::unordered_set::swap", "unordered_set/std::unordered_set::unordered_set", "unordered_set/std::unordered_set::operator=", "unordered_set/std::unordered_set::hash_function"]
-helpviewer_keywords: ["std::unordered_set", "std::unordered_set::allocator_type", "std::unordered_set::const_iterator", "std::unordered_set::const_local_iterator", "std::unordered_set::const_pointer", "std::unordered_set::const_reference", "std::unordered_set::difference_type", "std::unordered_set::hasher", "std::unordered_set::iterator", "std::unordered_set::key_equal", "std::unordered_set::key_type", "std::unordered_set::local_iterator", "std::unordered_set::pointer", "std::unordered_set::reference", "std::unordered_set::size_type", "std::unordered_set::value_type", "std::unordered_set::begin", "std::unordered_set::bucket", "std::unordered_set::bucket_count", "std::unordered_set::bucket_size", "std::unordered_set::cbegin", "std::unordered_set::cend", "std::unordered_set::clear", "std::unordered_set::count", "std::unordered_set::emplace", "std::unordered_set::emplace_hint", "std::unordered_set::empty", "std::unordered_set::end", "std::unordered_set::equal_range", "std::unordered_set::erase", "std::unordered_set::find", "std::unordered_set::get_allocator", "std::unordered_set::hash", "std::unordered_set::insert", "std::unordered_set::key_eq", "std::unordered_set::load_factor", "std::unordered_set::max_bucket_count", "std::unordered_set::max_load_factor", "std::unordered_set::max_size", "std::unordered_set::rehash", "std::unordered_set::size", "std::unordered_set::swap", "std::unordered_set::unordered_set", "std::unordered_set::operator=", "std::unordered_set::allocator_type", "std::unordered_set::const_iterator", "std::unordered_set::const_local_iterator", "std::unordered_set::const_pointer", "std::unordered_set::const_reference", "std::unordered_set::difference_type", "std::unordered_set::hasher", "std::unordered_set::iterator", "std::unordered_set::key_equal", "std::unordered_set::key_type", "std::unordered_set::local_iterator", "std::unordered_set::pointer", "std::unordered_set::reference", "std::unordered_set::size_type", "std::unordered_set::value_type", "std::unordered_set::begin", "std::unordered_set::bucket", "std::unordered_set::bucket_count", "std::unordered_set::bucket_size", "std::unordered_set::cbegin", "std::unordered_set::cend", "std::unordered_set::clear", "std::unordered_set::count", "std::unordered_set::emplace", "std::unordered_set::emplace_hint", "std::unordered_set::empty", "std::unordered_set::end", "std::unordered_set::equal_range", "std::unordered_set::erase", "std::unordered_set::find", "std::unordered_set::get_allocator", "std::unordered_set::hash_function", "std::unordered_set::insert", "std::unordered_set::key_eq", "std::unordered_set::load_factor", "std::unordered_set::max_bucket_count", "std::unordered_set::max_load_factor", "std::unordered_set::max_size", "std::unordered_set::rehash", "std::unordered_set::size", "std::unordered_set::swap"]
+description: "API reference for the C++ Standard Library container class `unordered_set`, which is used to store and retrieve data from an unordered collection."
+ms.date: "9/9/2020"
+f1_keywords: ["unordered_set/std::unordered_set", "unordered_set/std::unordered_set::allocator_type", "unordered_set/std::unordered_set::const_iterator", "unordered_set/std::unordered_set::const_local_iterator", "unordered_set/std::unordered_set::const_pointer", "unordered_set/std::unordered_set::const_reference", "unordered_set/std::unordered_set::difference_type", "unordered_set/std::unordered_set::hasher", "unordered_set/std::unordered_set::iterator", "unordered_set/std::unordered_set::key_equal", "unordered_set/std::unordered_set::key_type", "unordered_set/std::unordered_set::local_iterator", "unordered_set/std::unordered_set::pointer", "unordered_set/std::unordered_set::reference", "unordered_set/std::unordered_set::size_type", "unordered_set/std::unordered_set::value_type", "unordered_set/std::unordered_set::begin", "unordered_set/std::unordered_set::bucket", "unordered_set/std::unordered_set::bucket_count", "unordered_set/std::unordered_set::bucket_size", "unordered_set/std::unordered_set::cbegin", "unordered_set/std::unordered_set::cend", "unordered_set/std::unordered_set::clear", "unordered_set/std::unordered_set::count", "unordered_set/std::unordered_set::contains", "unordered_set/std::unordered_set::emplace", "unordered_set/std::unordered_set::emplace_hint", "unordered_set/std::unordered_set::empty", "unordered_set/std::unordered_set::end", "unordered_set/std::unordered_set::equal_range", "unordered_set/std::unordered_set::erase", "unordered_set/std::unordered_set::find", "unordered_set/std::unordered_set::get_allocator", "unordered_set/std::unordered_set::hash", "unordered_set/std::unordered_set::insert", "unordered_set/std::unordered_set::key_eq", "unordered_set/std::unordered_set::load_factor", "unordered_set/std::unordered_set::max_bucket_count", "unordered_set/std::unordered_set::max_load_factor", "unordered_set/std::unordered_set::max_size", "unordered_set/std::unordered_set::rehash", "unordered_set/std::unordered_set::size", "unordered_set/std::unordered_set::swap", "unordered_set/std::unordered_set::unordered_set", "unordered_set/std::unordered_set::operator=", "unordered_set/std::unordered_set::hash_function"]
+helpviewer_keywords: ["std::unordered_set", "std::unordered_set::allocator_type", "std::unordered_set::const_iterator", "std::unordered_set::const_local_iterator", "std::unordered_set::const_pointer", "std::unordered_set::const_reference", "std::unordered_set::difference_type", "std::unordered_set::hasher", "std::unordered_set::iterator", "std::unordered_set::key_equal", "std::unordered_set::key_type", "std::unordered_set::local_iterator", "std::unordered_set::pointer", "std::unordered_set::reference", "std::unordered_set::size_type", "std::unordered_set::value_type", "std::unordered_set::begin", "std::unordered_set::bucket", "std::unordered_set::bucket_count", "std::unordered_set::bucket_size", "std::unordered_set::cbegin", "std::unordered_set::cend", "std::unordered_set::clear", "std::unordered_set::contains", "std::unordered_set::count", "std::unordered_set::emplace", "std::unordered_set::emplace_hint", "std::unordered_set::empty", "std::unordered_set::end", "std::unordered_set::equal_range", "std::unordered_set::erase", "std::unordered_set::find", "std::unordered_set::get_allocator", "std::unordered_set::hash", "std::unordered_set::insert", "std::unordered_set::key_eq", "std::unordered_set::load_factor", "std::unordered_set::max_bucket_count", "std::unordered_set::max_load_factor", "std::unordered_set::max_size", "std::unordered_set::rehash", "std::unordered_set::size", "std::unordered_set::swap", "std::unordered_set::unordered_set", "std::unordered_set::operator=", "std::unordered_set::allocator_type", "std::unordered_set::const_iterator", "std::unordered_set::const_local_iterator", "std::unordered_set::const_pointer", "std::unordered_set::const_reference", "std::unordered_set::difference_type", "std::unordered_set::hasher", "std::unordered_set::iterator", "std::unordered_set::key_equal", "std::unordered_set::key_type", "std::unordered_set::local_iterator", "std::unordered_set::pointer", "std::unordered_set::reference", "std::unordered_set::size_type", "std::unordered_set::value_type", "std::unordered_set::begin", "std::unordered_set::bucket", "std::unordered_set::bucket_count", "std::unordered_set::bucket_size", "std::unordered_set::cbegin", "std::unordered_set::cend", "std::unordered_set::clear", "std::unordered_set::count", "std::unordered_set::emplace", "std::unordered_set::emplace_hint", "std::unordered_set::empty", "std::unordered_set::end", "std::unordered_set::equal_range", "std::unordered_set::erase", "std::unordered_set::find", "std::unordered_set::get_allocator", "std::unordered_set::hash_function", "std::unordered_set::insert", "std::unordered_set::key_eq", "std::unordered_set::load_factor", "std::unordered_set::max_bucket_count", "std::unordered_set::max_load_factor", "std::unordered_set::max_size", "std::unordered_set::rehash", "std::unordered_set::size", "std::unordered_set::swap"]
 ms.assetid: ac08084e-05a7-48c0-9ae4-d40c529922dd
 ---
 # unordered_set Class
 
-The class template describes an object that controls a varying-length sequence of elements of type `const Key`. The sequence is weakly ordered by a hash function, which partitions the sequence into an ordered set of subsequences called buckets. Within each bucket a comparison function determines whether any pair of elements has equivalent ordering. Each element serves as both a sort key and a value. The sequence is represented in a way that permits lookup, insertion, and removal of an arbitrary element with a number of operations that can be independent of the number of elements in the sequence (constant time), at least when all buckets are of roughly equal length. In the worst case, when all of the elements are in one bucket, the number of operations is proportional to the number of elements in the sequence (linear time). Moreover, inserting an element invalidates no iterators, and removing an element invalidates only those iterators which point at the removed element.
+The class template describes an object that controls a varying-length sequence of elements of type `const Key`. The sequence is weakly ordered by a hash function, which partitions the sequence into an ordered set of subsequences called buckets. Within each bucket, a comparison function determines whether any pair of elements has equivalent ordering. Each element serves as both a sort key and a value. The sequence is represented in a way that permits lookup, insertion, and removal of an arbitrary element with a number of operations that can be independent of the number of elements in the sequence (constant time), at least when all buckets are of roughly equal length. In the worst case, when all of the elements are in one bucket, the number of operations is proportional to the number of elements in the sequence (linear time). Inserting an element invalidates no iterators, and removing an element invalidates only those iterators, which point at the removed element.
 
 ## Syntax
 
@@ -38,7 +39,7 @@ The allocator class.
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|The type of an allocator for managing storage.|
 |[const_iterator](#const_iterator)|The type of a constant iterator for the controlled sequence.|
@@ -58,7 +59,7 @@ The allocator class.
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[begin](#begin)|Designates the beginning of the controlled sequence.|
 |[bucket](#bucket)|Gets the bucket number for a key value.|
@@ -67,6 +68,7 @@ The allocator class.
 |[cbegin](#cbegin)|Designates the beginning of the controlled sequence.|
 |[cend](#cend)|Designates the end of the controlled sequence.|
 |[clear](#clear)|Removes all elements.|
+|[contains](#contains)<sup>C++20</sup>|Check if there's an element with the specified key in the `unordered_set`.|
 |[count](#count)|Finds the number of elements matching a specified key.|
 |[emplace](#emplace)|Adds an element constructed in place.|
 |[emplace_hint](#emplace_hint)|Adds an element constructed in place, with hint.|
@@ -90,7 +92,7 @@ The allocator class.
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[unordered_set::operator=](#op_eq)|Copies a hash table.|
 
@@ -100,9 +102,9 @@ The object orders the sequence it controls by calling two stored objects, a comp
 
 The object also stores a maximum load factor, which specifies the maximum desired average number of elements per bucket. If inserting an element causes [unordered_set::load_factor](#load_factor)`()` to exceed the maximum load factor, the container increases the number of buckets and rebuilds the hash table as needed.
 
-The actual order of elements in the controlled sequence depends on the hash function, the comparison function, the order of insertion, the maximum load factor, and the current number of buckets. You cannot in general predict the order of elements in the controlled sequence. You can always be assured, however, that any subset of elements that have equivalent ordering are adjacent in the controlled sequence.
+The actual order of elements in the controlled sequence depends on the hash function, the comparison function, the order of insertion, the maximum load factor, and the current number of buckets. You can't in general predict the order of elements in the controlled sequence. You can always be assured, however, that any subset of elements that have equivalent ordering are adjacent in the controlled sequence.
 
-The object allocates and frees storage for the sequence it controls through a stored allocator object of type [unordered_set::allocator_type](#allocator_type). Such an allocator object must have the same external interface as an object of type `allocator`. Note that the stored allocator object is not copied when the container object is assigned.
+The object allocates and frees storage for the sequence it controls through a stored allocator object of type [unordered_set::allocator_type](#allocator_type). Such an allocator object must have the same external interface as an object of type `allocator`. The stored allocator object isn't copied when the container object is assigned.
 
 ## <a name="allocator_type"></a> unordered_set::allocator_type
 
@@ -430,7 +432,7 @@ A **`const`** forward-access iterator that points at the first element of the ra
 
 ### Remarks
 
-With the return value of `cbegin`, the elements in the range cannot be modified.
+With the return value of `cbegin`, the elements in the range can't be modified.
 
 You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
@@ -468,7 +470,7 @@ auto i2 = Container.cend();
 // i2 isContainer<T>::const_iterator
 ```
 
-The value returned by `cend` should not be dereferenced.
+The value returned by `cend` shouldn't be dereferenced.
 
 ## <a name="clear"></a> clear
 
@@ -544,7 +546,7 @@ typedef T1 const_iterator;
 
 ### Remarks
 
-The type describes an object that can serve as a constant forward iterator for the controlled sequence. It is described here as a synonym for the implementation-defined type `T1`.
+The type describes an object that can serve as a constant forward iterator for the controlled sequence. It's described here as a synonym for the implementation-defined type `T1`.
 
 ### Example
 
@@ -586,7 +588,7 @@ typedef T5 const_local_iterator;
 
 ### Remarks
 
-The type describes an object that can serve as a constant forward iterator for a bucket. It is described here as a synonym for the implementation-defined type `T5`.
+The type describes an object that can serve as a constant forward iterator for a bucket. It's described here as a synonym for the implementation-defined type `T5`.
 
 ### Example
 
@@ -713,6 +715,57 @@ int main()
 [c] [b] [a]
 ```
 
+## <a name="contains"></a> contains
+
+Checks if there's an element with the specified key in the `unordered_set`.
+
+```cpp
+bool contains(const Key& key) const;
+template<class K> bool contains(const K& key) const;
+```
+
+### Parameters
+
+*K*\
+The type of the key.
+
+*key*\
+The element's key value to look for.
+
+### Return Value
+
+`true` if the element is found in the container; `false` otherwise.
+
+### Remarks
+
+`contains()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+
+`template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent.
+
+### Example
+
+```cpp
+// Requires /std:c++latest
+#include <unordered_set>
+#include <iostream>
+
+int main()
+{
+    std::unordered_set<int> theUnorderedSet = { 1, 2 };
+
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theUnorderedSet.contains(2) << '\n';
+    std::cout << theUnorderedSet.contains(3) << '\n';
+
+    return 0;
+}
+```
+
+```Output
+true
+false
+```
+
 ## <a name="count"></a> count
 
 Finds the number of elements matching a specified key.
@@ -777,7 +830,7 @@ typedef T3 difference_type;
 
 ### Remarks
 
-The signed integer type describes an object that can represent the difference between the addresses of any two elements in the controlled sequence. It is described here as a synonym for the implementation-defined type `T3`.
+The signed integer type describes an object that can represent the difference between the addresses of any two elements in the controlled sequence. It's described here as a synonym for the implementation-defined type `T3`.
 
 ### Example
 
@@ -849,7 +902,7 @@ To access the iterator component of a pair `pr` returned by this member function
 
 No iterators or references are invalidated by this function.
 
-During the insertion, if an exception is thrown but does not occur in the container's hash function, the container is not modified. If the exception is thrown in the hash function, the result is undefined.
+During the insertion, if an exception is thrown but doesn't occur in the container's hash function, the container isn't modified. If the exception is thrown in the hash function, the result is undefined.
 
 For a code example, see [set::emplace](../standard-library/set-class.md#emplace).
 
@@ -870,7 +923,7 @@ Args&&... args);
 The arguments forwarded to construct an element to be inserted into the unordered_set unless the unordered_set already contains that element or, more generally, unless it already contains an element whose key is equivalently ordered.
 
 *where*\
-A hint regarding the place to start searching for the correct point of insertion.
+A hint about the place to start searching for the correct point of insertion.
 
 ### Return Value
 
@@ -882,7 +935,7 @@ If the insertion failed because the element already exists, returns an iterator 
 
 No iterators or references are invalidated by this function.
 
-During the insertion, if an exception is thrown but does not occur in the container's hash function, the container is not modified. If the exception is thrown in the hash function, the result is undefined.
+During the insertion, if an exception is thrown but doesn't occur in the container's hash function, the container isn't modified. If the exception is thrown in the hash function, the result is undefined.
 
 For a code example, see [set::emplace_hint](../standard-library/set-class.md#emplace_hint).
 
@@ -1355,13 +1408,13 @@ The single-element-with-hint member functions, (3) and (4), return an iterator t
 
 No iterators, pointers, or references are invalidated by this function.
 
-During the insertion of just one element, if an exception is thrown but does not occur in the container's hash function, the container's state is not modified. If the exception is thrown in the hash function, the result is undefined. During the insertion of multiple elements, if an exception is thrown, the container is left in an unspecified but valid state.
+During the insertion of just one element, if an exception is thrown but doesn't occur in the container's hash function, the container's state isn't modified. If the exception is thrown in the hash function, the result is undefined. During the insertion of multiple elements, if an exception is thrown, the container is left in an unspecified but valid state.
 
 To access the iterator component of a `pair` `pr` that's returned by the single-element member functions, use `pr.first`; to dereference the iterator within the returned pair, use`*pr.first`, giving you an element. To access the **`bool`** component, use `pr.second`. For an example, see the sample code later in this article.
 
 The [value_type](../standard-library/map-class.md#value_type) of a container is a typedef that belongs to the container, and, for set, `unordered_set<V>::value_type` is type `const V`.
 
-The range member function (5) inserts the sequence of element values into an unordered_set that corresponds to each element addressed by an iterator in the range `[First, Last)`; therefore, *Last* does not get inserted. The container member function `end()` refers to the position just after the last element in the container—for example, the statement `s.insert(v.begin(), v.end());` attempts to insert all elements of `v` into `s`. Only elements that have unique values in the range are inserted; duplicates are ignored. To observe which elements are rejected, use the single-element versions of `insert`.
+The range member function (5) inserts the sequence of element values into an unordered_set that corresponds to each element addressed by an iterator in the range `[First, Last)`; therefore, *Last* doesn't get inserted. The container member function `end()` refers to the position just after the last element in the container—for example, the statement `s.insert(v.begin(), v.end());` attempts to insert all elements of `v` into `s`. Only elements that have unique values in the range are inserted; duplicates are ignored. To observe which elements are rejected, use the single-element versions of `insert`.
 
 The initializer list member function (6) uses an [initializer_list](../standard-library/initializer-list.md) to copy elements into the unordered_set.
 
@@ -1608,7 +1661,7 @@ typedef T4 local_iterator;
 
 ### Remarks
 
-The type describes an object that can serve as a forward iterator for a bucket. It is described here as a synonym for the implementation-defined type `T4`.
+The type describes an object that can serve as a forward iterator for a bucket. It's described here as a synonym for the implementation-defined type `T4`.
 
 ### Example
 
@@ -2157,7 +2210,7 @@ typedef T2 size_type;
 
 ### Remarks
 
-The unsigned integer type describes an object that can represent the length of any controlled sequence. It is described here as a synonym for the implementation-defined type `T2`.
+The unsigned integer type describes an object that can represent the length of any controlled sequence. It's described here as a synonym for the implementation-defined type `T2`.
 
 ### Example
 
@@ -2328,13 +2381,13 @@ The first constructor specifies a copy of the sequence controlled by *Right*. Th
 
 All constructors also initialize several stored values. For the copy constructor, the values are obtained from *Right*. Otherwise:
 
-The minimum number of buckets is the argument *bucket_count*, if present; otherwise it is a default value described here as the implementation-defined value `N0`.
+The minimum number of buckets is the argument *bucket_count*, if present; otherwise it's a default value described here as the implementation-defined value `N0`.
 
-The hash function object is the argument *Hash*, if present; otherwise it is `Hash()`.
+The hash function object is the argument *Hash*, if present; otherwise it's `Hash()`.
 
-The comparison function object is the argument *Comp*, if present; otherwise it is `Comp()`.
+The comparison function object is the argument *Comp*, if present; otherwise it's `Comp()`.
 
-The allocator object is the argument *Al*, if present; otherwise, it is `Alloc()`.
+The allocator object is the argument *Al*, if present; otherwise, it's `Alloc()`.
 
 ## <a name="value_type"></a> value_type
 

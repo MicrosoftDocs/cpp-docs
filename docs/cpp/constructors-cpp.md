@@ -632,9 +632,9 @@ Derived d3 = d2 calls: Base(Base&)
 Derived d4 calls: Base()*/
 ```
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-**Visual Studio 2017 and later**: The **`using`** statement in **/std:c++17** mode brings into scope all constructors from the base class except those that have an identical signature to constructors in the derived class. In general, it is best to use inheriting constructors when the derived class declares no new data members or constructors. See also [Improvements in Visual Studio 2017 version 15.7](https://docs.microsoft.com/cpp/overview/cpp-conformance-improvements?view=vs-2017#improvements_157).
+**Visual Studio 2017 and later**: The **`using`** statement in **/std:c++17** mode brings into scope all constructors from the base class except those that have an identical signature to constructors in the derived class. In general, it is best to use inheriting constructors when the derived class declares no new data members or constructors.
 
 ::: moniker-end
 

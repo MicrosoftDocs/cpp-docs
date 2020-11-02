@@ -50,10 +50,8 @@ The integer result type, defaults to **`int`**. For possible types, see [\<rando
 
 The class template describes a distribution that produces values of a user-specified integral type, or type **`int`** if none is provided, distributed according to the Negative Binomial Distribution discrete probability function. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[negative_binomial_distribution](#negative_binomial_distribution)|`negative_binomial_distribution::k`|`negative_binomial_distribution::param`|
-|`negative_binomial_distribution::operator()`|`negative_binomial_distribution::p`|[param_type](#param_type)|
+[negative_binomial_distribution](#negative_binomial_distribution)\
+[param_type](#param_type)
 
 The property members `k()` and `p()` return the currently stored distribution parameter values *k* and *p* respectively.
 

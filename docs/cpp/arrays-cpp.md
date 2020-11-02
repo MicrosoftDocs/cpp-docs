@@ -1,16 +1,16 @@
 ---
 title: "Arrays (C++)"
-ms.date: "11/14/2019"
+ms.date: 08/03/2020
 helpviewer_keywords: ["declaring arrays [C++], about declaring arrays", "multidimensional arrays [C++]", "arrays [C++]"]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
 ---
 # Arrays (C++)
 
-An array is a sequence of objects of the same type that occupy a contiguous area of memory. Traditional C-style arrays are the source of many bugs, but are still common, especially in older code bases. In modern C++, we strongly recommend using [std::vector](../standard-library/vector-class.md) or [std::array](../standard-library/array-class-stl.md) instead of C-style arrays described in this section. Both of these standard library types store their elements as a contiguous block of memory but provide much greater type safety along with iterators that are guaranteed to point to a valid location within the sequence. For more information, see [Containers (Modern C++)](containers-modern-cpp.md).
+An array is a sequence of objects of the same type that occupy a contiguous area of memory. Traditional C-style arrays are the source of many bugs, but are still common, especially in older code bases. In modern C++, we strongly recommend using [std::vector](../standard-library/vector-class.md) or [std::array](../standard-library/array-class-stl.md) instead of C-style arrays described in this section. Both of these standard library types store their elements as a contiguous block of memory. However, they provide much greater type safety, and support iterators that are guaranteed to point to a valid location within the sequence. For more information, see [Containers](../standard-library/stl-containers.md).
 
 ## Stack declarations
 
-In a C++ array declaration, the array size is specified after the variable name, not after the type name as in some other languages. The following example declares an array of 1000 doubles to be allocated on the stack. The number of elements must be supplied as an integer literal or else as a constant expression because the compiler has to know how much stack space to allocate; it cannot use a value computed at run-time. Each element in the array is assigned a default value of 0. If you do not assign a default value, each element will initially contain whatever random values happen to be at that location.
+In a C++ array declaration, the array size is specified after the variable name, not after the type name as in some other languages. The following example declares an array of 1000 doubles to be allocated on the stack. The number of elements must be supplied as an integer literal or else as a constant expression. That's because the compiler has to know how much stack space to allocate; it can't use a value computed at run-time. Each element in the array is assigned a default value of 0. If you don't assign a default value, each element initially contains whatever random values happen to be at that memory location.
 
 ```cpp
     constexpr size_t size = 1000;
@@ -35,20 +35,20 @@ In a C++ array declaration, the array size is specified after the variable name,
     }
 ```
 
-The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The number of elements in the declaration must be of an integral type and must be greater than 0. It is your responsibility to ensure that your program never passes a value to the subscript operator that is greater than `(size - 1)`.
+The first element in the array is the zeroth element. The last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The number of elements in the declaration must be of an integral type and must be greater than 0. It is your responsibility to ensure that your program never passes a value to the subscript operator that is greater than `(size - 1)`.
 
-A zero-sized array is legal only when the array is the last field in a **`struct`** or **`union`** and when the Microsoft extensions (/Ze) are enabled.
+A zero-sized array is legal only when the array is the last field in a **`struct`** or **`union`** and when the Microsoft extensions are enabled (**`/Za`** or **`/permissive-`** isn't set).
 
-Stack-based arrays are faster to allocate and access than heap-based arrays, but the number of elements can't be so large that it uses up too much stack memory. How much is too much depends on your program. You can use profiling tools to determine whether an array is too large.
+Stack-based arrays are faster to allocate and access than heap-based arrays. However, stack space is limited. The number of array elements can't be so large that it uses up too much stack memory. How much is too much depends on your program. You can use profiling tools to determine whether an array is too large.
 
 ## Heap declarations
 
-If you require an array that is too large to be allocated on the stack, or whose size cannot be known at compile time, you can allocate it on the heap with a [new\[\]](new-operator-cpp.md) expression. The operator returns a pointer to the first element. You can use the subscript operator with the pointer variable just as with a stack-based array. You can also use [pointer arithmetic](../c-language/pointer-arithmetic.md) to move the pointer to any arbitrary elements in the array. It is your responsibility to ensure that:
+You may require an array that's too large to allocate on the stack, or whose size isn't known at compile time. It's possible to allocate this array on the heap by using a [`new[]`](new-operator-cpp.md) expression. The operator returns a pointer to the first element. The subscript operator works on the pointer variable the same way it does on a stack-based array. You can also use [pointer arithmetic](../c-language/pointer-arithmetic.md) to move the pointer to any arbitrary elements in the array. It's your responsibility to ensure that:
 
 - you always keep a copy of the original pointer address so that you can delete the memory when you no longer need the array.
-- you do not increment or decrement the pointer address past the array bounds.
+- you don't increment or decrement the pointer address past the array bounds.
 
-The following example shows how to define an array on the heap at run time, and how to access the array elements using the subscript operator or by using pointer arithmetic:
+The following example shows how to define an array on the heap at run time. It shows how to access the array elements using the subscript operator and by using pointer arithmetic:
 
 ```cpp
 
@@ -122,9 +122,9 @@ You can initialize an array in a loop, one element at a time, or in a single sta
 
 ## Passing arrays to functions
 
-When an array is passed to a function, it is passed as a pointer to the first element. This is true for both stack-based and heap-based arrays. The pointer contains no additional size or type information. This behavior is called *pointer decay*. When you pass an array to a function, you must always specify the number of elements in a separate parameter. This behavior also implies that the array elements are not copied when the array is passed to a function. To prevent the function from modifying the elements, specify the parameter as a pointer to **`const`** elements.
+When an array is passed to a function, it's passed as a pointer to the first element, whether it's a stack-based or heap-based array. The pointer contains no additional size or type information. This behavior is called *pointer decay*. When you pass an array to a function, you must always specify the number of elements in a separate parameter. This behavior also implies that the array elements aren't copied when the array gets passed to a function. To prevent the function from modifying the elements, specify the parameter as a pointer to **`const`** elements.
 
-The following example shows a function that accepts an array and a length. The pointer points to the original array, not a copy. Because the parameter is not **`const`**, the function can modify the array elements.
+The following example shows a function that accepts an array and a length. The pointer points to the original array, not a copy. Because the parameter isn't **`const`**, the function can modify the array elements.
 
 ```cpp
 void process(double p*, const size_t len)
@@ -147,7 +147,7 @@ The same function can also be declared in these ways, with no change in behavior
 
 ```cpp
 // Unsized array
-void process(const double p[] const size_t len);
+void process(const double p[], const size_t len);
 
 // Fixed-size array. Length must still be specified explicitly.
 void process(const double p[1000], const size_t len);
@@ -166,7 +166,7 @@ It specifies an array of type **`int`**, conceptually arranged in a two-dimensio
 ![Conceptual layout of a multi&#45;dimensional array](../cpp/media/vc38rc1.gif "Conceptual layout of a multi&#45;dimensional array") <br/>
 Conceptual layout of a multi-dimensional array
 
-In declarations of multidimensioned arrays that have an initializer list (as described in [Initializers](../cpp/initializers.md)), the constant expression that specifies the bounds for the first dimension can be omitted. For example:
+You can declare multidimensioned arrays that have an initializer list (as described in [Initializers](../cpp/initializers.md)). In these declarations, the constant expression that specifies the bounds for the first dimension can be omitted. For example:
 
 ```cpp
 // arrays2.cpp
@@ -188,7 +188,7 @@ C++ arrays are stored in row-major order. Row-major order means the last subscri
 
 ## Example
 
-The technique of omitting the bounds specification for the first dimension of a multidimensional array can also be used in function declarations as follows:
+You can also omit the bounds specification for the first dimension of a multidimensional array in function declarations, as shown here:
 
 ```cpp
 // multidimensional_arrays.cpp
@@ -241,11 +241,11 @@ double FindMinToMkt(int Mkt, double myTransportCosts[][cMkts], int mycFacts) {
 The minimum cost to Market 3 is: 17.29
 ```
 
-The function `FindMinToMkt` is written such that adding new factories does not require any code changes, just a recompilation.
+The function `FindMinToMkt` is written such that adding new factories doesn't require any code changes, just a recompilation.
 
 ## Initializing Arrays
 
-If a class has a constructor, arrays of that class are initialized by a constructor. If there are fewer items in the initializer list than elements in the array, the default constructor is used for the remaining elements. If no default constructor is defined for the class, the initializer list must be complete — that is, there must be one initializer for each element in the array.
+Arrays of objects that have a class constructor are initialized by the constructor. When there are fewer items in the initializer list than elements in the array, the default constructor is used for the remaining elements. If no default constructor is defined for the class, the initializer list must be *complete*, that is, there must be one initializer for each element in the array.
 
 Consider the `Point` class that defines two constructors:
 
@@ -294,7 +294,7 @@ int main()
 
 ## Accessing array elements
 
-You can access individual elements of an array by using the array subscript operator (`[ ]`). If a one-dimensional array is used in an expression that has no subscript, the array name evaluates to a pointer to the first element in the array.
+You can access individual elements of an array by using the array subscript operator (`[ ]`). If you use the name of a one-dimensional array without a subscript, it gets evaluated as a pointer to the array's first element.
 
 ```cpp
 // using_arrays.cpp
@@ -327,7 +327,7 @@ int main() {
 }
 ```
 
-In the preceding code, `multi` is a three-dimensional array of type **`double`**. The `p2multi` pointer points to an array of type **`double`** of size three. In this example, the array is used with one, two, and three subscripts. Although it is more common to specify all subscripts, as in the `cout` statement, it is sometimes useful to select a specific subset of array elements, as shown in the statements that follow `cout`.
+In the preceding code, `multi` is a three-dimensional array of type **`double`**. The `p2multi` pointer points to an array of type **`double`** of size three. In this example, the array is used with one, two, and three subscripts. Although it's more common to specify all subscripts, as in the `cout` statement, sometimes it's useful to select a specific subset of array elements, as shown in the statements that follow `cout`.
 
 ## Overloading subscript operator
 
@@ -335,7 +335,7 @@ Like other operators, the subscript operator (`[]`) can be redefined by the user
 
 `*((array_name) + (subscript))`
 
-As in all addition that involves pointer types, scaling is performed automatically to adjust for the size of the type. Therefore, the resultant value is not *n* bytes from the origin of array-name; rather, it is the *n*th element of the array. For more information about this conversion, see [Additive operators](additive-operators-plus-and.md).
+As in all addition that involves pointer types, scaling is done automatically to adjust for the size of the type. The resultant value isn't *n* bytes from the origin of `array_name`; instead, it's the *n*th element of the array. For more information about this conversion, see [Additive operators](additive-operators-plus-and.md).
 
 Similarly, for multidimensional arrays, the address is derived using the following method:
 
@@ -343,14 +343,14 @@ Similarly, for multidimensional arrays, the address is derived using the followi
 
 ## Arrays in Expressions
 
-When an identifier of an array type appears in an expression other than **`sizeof`**, address-of (`&`), or initialization of a reference, it is converted to a pointer to the first array element. For example:
+When an identifier of an array type appears in an expression other than **`sizeof`**, address-of (`&`), or initialization of a reference, it's converted to a pointer to the first array element. For example:
 
 ```cpp
 char szError1[] = "Error: Disk drive not ready.";
 char *psz = szError1;
 ```
 
-The pointer `psz` points to the first element of the array `szError1`. Arrays, unlike pointers, are not modifiable l-values. Therefore, the following assignment is illegal:
+The pointer `psz` points to the first element of the array `szError1`. Arrays, unlike pointers, aren't modifiable l-values. That's why the following assignment is illegal:
 
 ```cpp
 szError1 = psz;

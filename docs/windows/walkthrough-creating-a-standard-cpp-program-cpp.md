@@ -22,7 +22,7 @@ To complete this walkthrough, you must understand the fundamentals of the C++ la
 
 The following steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create a C++ project in Visual Studio 2019
 
@@ -36,7 +36,7 @@ The following steps vary depending on which version of Visual Studio you are usi
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ### To create a C++ project in Visual Studio 2017
 
@@ -50,7 +50,7 @@ The following steps vary depending on which version of Visual Studio you are usi
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ### To create a C++ project in Visual Studio 2015
 
@@ -98,7 +98,7 @@ The following steps vary depending on which version of Visual Studio you are usi
 
 ## Next Steps
 
-**Previous:** [Console Applications in Visual C++](../windows/console-applications-in-visual-cpp.md)<br/>
+**Previous:** [Console Applications in Visual C++](./overview-of-windows-programming-in-cpp.md)<br/>
 **Next:** [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)
 
 ## See also

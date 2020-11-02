@@ -16,13 +16,13 @@ This topic shows how to convert .NET collections to their equivalent STL/CLR con
 
 -OR-
 
-1. Create a generic STL/CLR container by creating a [collection_adapter](../dotnet/collection-adapter-stl-clr.md) object. This template class takes a .NET collection interface as an argument. To verify which interfaces are supported, see [collection_adapter (STL/CLR)](../dotnet/collection-adapter-stl-clr.md).
+1. Create a generic STL/CLR container by creating a [collection_adapter](./adapter-stl-clr.md#collection_adapter) object. This template class takes a .NET collection interface as an argument. To verify which interfaces are supported, see [collection_adapter (STL/CLR)](./adapter-stl-clr.md#collection_adapter).
 
 1. Copy the contents of the .NET collection to the container. This can be done by using a STL/CLR [algorithm](../dotnet/algorithm-stl-clr.md), or by iterating over the .NET collection and inserting a copy of each element into the STL/CLR container.
 
    The second example demonstrates this procedure.
 
-## Example
+## Examples
 
 In this example, we create a generic <xref:System.Collections.Generic.List%601> and add 5 elements to it. Then, we create a `vector` using the constructor that takes a <xref:System.Collections.Generic.IEnumerable%601> as an argument.
 
@@ -67,8 +67,6 @@ The contents of the cliext::vector are:
 7
 11
 ```
-
-## Example
 
 In this example, we create a generic <xref:System.Collections.Generic.Dictionary%602> and add 5 elements to it. Then, we create a `collection_adapter` to wrap the <xref:System.Collections.Generic.Dictionary%602> as a simple STL/CLR container. Finally, we create a `map` and copy the contents of the <xref:System.Collections.Generic.Dictionary%602> to the `map` by iterating over the `collection_adapter`. During this process, we create a new pair by using the `make_pair` function, and insert the new pair directly into the `map`.
 

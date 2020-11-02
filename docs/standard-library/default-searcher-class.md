@@ -28,12 +28,12 @@ class default_searcher
 
 ## Members
 
-| | |
+| Member | Description |
 | - | - |
 | **Constructor** | |
-| [default_searcher](#default-searcher-constructor) | |
+| [default_searcher](#default-searcher-constructor) | Constructs a searcher instance. |
 | **Operators** | |
-| [operator()](#operator-call) | |
+| [operator()](#operator-call) | Invokes the operation on the sequence. |
 
 ## <a name="default-searcher-constructor"></a> default_searcher constructor
 

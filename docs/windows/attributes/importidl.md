@@ -37,9 +37,7 @@ You may want to use **importidl**, for example, if you want to use a hand-coded 
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

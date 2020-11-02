@@ -12,10 +12,9 @@ ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
 
 Each of the **to** functions and its associated macro, if any, converts a single character to another character.
 
-|||
-|-|-|
-|[__toascii](../c-runtime-library/reference/toascii-toascii.md)|[toupper, _toupper, towupper](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)|
-|[tolower, _tolower, towlower](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)||
+[__toascii](../c-runtime-library/reference/toascii-toascii.md)\
+[tolower, _tolower, towlower](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)\
+[toupper, _toupper, towupper](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)
 
 ## Remarks
 

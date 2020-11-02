@@ -32,7 +32,7 @@ A command interface. The default is `ICommand`.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Cancel](#cancel)|Cancels the current command execution.|
 |[CancelExecution](#cancelexecution)|Cancels the current command execution.|
@@ -43,7 +43,7 @@ A command interface. The default is `ICommand`.
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_bCancel](#bcancel)|Indicates whether the command is to be canceled.|
 |[m_bCancelWhenExecuting](#bcancelwhenexecuting)|Indicates whether the command is to be canceled when executing.|
@@ -79,7 +79,7 @@ HRESULT CancelExecution();
 
 ## <a name="createrowset"></a> ICommandImpl::CreateRowset
 
-Called by [Execute](../../data/oledb/icommandimpl-execute.md) to create a single rowset.
+Called by [Execute](#execute) to create a single rowset.
 
 ### Syntax
 
@@ -148,7 +148,7 @@ See [ICommand::Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) in
 
 The outgoing interface requested will be an interface acquired from the rowset object that this function creates.
 
-`Execute` calls [CreateRowset](../../data/oledb/icommandimpl-createrowset.md). Override the default implementation to create more than one rowset or to provide your own conditions for creating different rowsets.
+`Execute` calls [CreateRowset](#createrowset). Override the default implementation to create more than one rowset or to provide your own conditions for creating different rowsets.
 
 ## <a name="getdbsession"></a> ICommandImpl::GetDBSession
 

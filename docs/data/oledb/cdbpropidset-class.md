@@ -7,7 +7,7 @@ ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
 ---
 # CDBPropIDSet Class
 
-Inherits from the `DBPROPIDSET` structure and adds a constructor that initializes key fields as well as the [AddPropertyID](../../data/oledb/cdbpropidset-addpropertyid.md) access method.
+Inherits from the `DBPROPIDSET` structure and adds a constructor that initializes key fields as well as the [AddPropertyID](#addpropertyid) access method.
 
 ## Syntax
 
@@ -23,7 +23,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddPropertyID](#addpropertyid)|Adds a property to the property ID set.|
 |[CDBPropIDSet](#cdbpropidset)|Constructor.|
@@ -31,7 +31,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 ### Operators
 
-|||
+| Name | Description |
 |-|-|
 |[operator =](#op_equal)|Assigns the contents of one property ID set to another.|
 
@@ -93,7 +93,7 @@ void SetGUID(const GUID& guid) throw();
 
 ### Remarks
 
-This field can be set by the [constructor](../../data/oledb/cdbpropidset-cdbpropidset.md) as well. Call this function if you use the default constructor for this class.
+This field can be set by the [constructor](#cdbpropidset) as well. Call this function if you use the default constructor for this class.
 
 ## <a name="op_equal"></a> CDBPropIDSet::operator =
 

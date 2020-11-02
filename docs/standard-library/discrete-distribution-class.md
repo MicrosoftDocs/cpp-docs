@@ -56,10 +56,8 @@ This sampling distribution has uniform-width intervals with uniform probability 
 
 The following table links to articles about individual members:
 
-|||
-|-|-|
-|[discrete_distribution](#discrete_distribution)|`discrete_distribution::param`|
-|`discrete_distribution::operator()`|[param_type](#param_type)|
+[discrete_distribution](#discrete_distribution)\
+[param_type](#param_type)
 
 The property function `vector<double> probabilities()` returns the individual probabilities for each integer generated.
 

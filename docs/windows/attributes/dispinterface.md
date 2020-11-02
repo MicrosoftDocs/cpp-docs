@@ -36,9 +36,7 @@ See the example for [bindable](bindable.md) for an example of how to use **dispi
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**interface**|
 |**Repeatable**|No|

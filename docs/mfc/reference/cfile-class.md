@@ -536,12 +536,12 @@ While the `CFile` constructor throws an exception in an error condition, `Open` 
 
 The following table describes the possible results of `Open`.
 
-|`pError`|Error encountered|Return value|CFileException content|
-|--------------|------------------------|------------------|----------------------------|
-|NULL|No|TRUE|n/a|
-|ptr to `CFileException`|No|TRUE|unchanged|
-|NULL|Yes|FALSE|n/a|
-|ptr to `CFileException`|Yes|FALSE|initialized to describe error|
+| `pError` | Error encountered | Return value | CFileException content |
+|--|--|--|--|
+| NULL | No | TRUE | n/a |
+| ptr to `CFileException` | No | TRUE | unchanged |
+| NULL | Yes | FALSE | n/a |
+| ptr to `CFileException` | Yes | FALSE | initialized to describe error |
 
 ### Example
 

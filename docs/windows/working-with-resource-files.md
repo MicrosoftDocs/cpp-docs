@@ -48,5 +48,5 @@ Provides links to information on using the documentation set, contacting product
 
 ## See also
 
-[Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)<br/>
+[Windows Desktop Applications](./desktop-applications-visual-cpp.md)<br/>
 [Menus and Other Resources](/windows/win32/menurc/resources)

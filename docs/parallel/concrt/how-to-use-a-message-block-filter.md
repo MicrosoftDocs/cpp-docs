@@ -14,7 +14,7 @@ Filter functions are important because they enable you to connect message blocks
 
 This document provides a basic example of how to use a message filter. For additional examples that use message filters and the dataflow model to connect message blocks, see [Walkthrough: Creating a Dataflow Agent](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md) and [Walkthrough: Creating an Image-Processing Network](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
 
-## Example
+## Example: count_primes function
 
 Consider the following function, `count_primes`, which illustrates the basic usage of a message block that does not filter incoming messages. The message block appends prime numbers to a [std::vector](../../standard-library/vector-class.md) object. The `count_primes` function sends several numbers to the message block, receives the output values from the message block, and prints those numbers that are prime to the console.
 
@@ -22,7 +22,7 @@ Consider the following function, `count_primes`, which illustrates the basic usa
 
 The `transformer` object processes all input values; however, it requires only those values that are prime. Although the application could be written so that the message sender sends only prime numbers, the requirements of the message receiver cannot always be known.
 
-## Example
+## Example: count_primes_filter function
 
 The following function, `count_primes_filter`, performs the same task as the `count_primes` function. However, the `transformer` object in this version uses a filter function to accept only those values that are prime. The function that performs the action only receives prime numbers; therefore, it does not have to call the `is_prime` function.
 
@@ -32,7 +32,7 @@ Because the `transformer` object receives only prime numbers, the `transformer` 
 
 The `transformer` object now processes only those values that are prime. In the previous example, `transformer` object processes all messages. Therefore, the previous example must receive the same number of messages that it sends. This example uses the result of the [concurrency::send](reference/concurrency-namespace-functions.md#send) function to determine how many messages to receive from the `transformer` object. The `send` function returns **`true`** when the message buffer accepts the message and **`false`** when the message buffer rejects the message. Therefore, the number of times that the message buffer accepts the message matches the count of prime numbers.
 
-## Example
+## Example: Finished message block filter code sample
 
 The following code shows the complete example. The example calls both the `count_primes` function and the `count_primes_filter` function.
 

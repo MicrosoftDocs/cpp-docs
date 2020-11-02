@@ -12,7 +12,7 @@ These functions return common well-known SID objects.
 > [!IMPORTANT]
 > The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
-|||
+|Name|Description|
 |-|-|
 |[Sids::AccountOps](#accountops)|Returns the DOMAIN_ALIAS_RID_ACCOUNT_OPS SID.|
 |[Sids::Admins](#admins)|Returns the DOMAIN_ALIAS_RID_ADMINS SID.|

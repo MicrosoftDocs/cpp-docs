@@ -17,7 +17,7 @@ template<
    typename TCallback
 >
 ComPtr<TDelegateInterface> Callback(
-   TCallbackcallback
+   TCallback callback
 );
 template<
    typename TDelegateInterface,

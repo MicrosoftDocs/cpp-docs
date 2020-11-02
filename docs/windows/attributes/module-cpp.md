@@ -140,9 +140,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

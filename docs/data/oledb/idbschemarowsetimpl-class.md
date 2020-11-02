@@ -29,7 +29,7 @@ The class by which `IDBSchemaRowsetImpl` is inherited. Typically, this class wil
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CheckRestrictions](#checkrestrictions)|Checks the validity of restrictions against a schema rowset.|
 |[CreateSchemaRowset](#createschemarowset)|Implements a COM object creator function for the object specified by the template parameter.|
@@ -37,16 +37,16 @@ The class by which `IDBSchemaRowsetImpl` is inherited. Typically, this class wil
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetRowset](#getrowset)|Returns a schema rowset.|
-|[GetSchemas](#getschemas)|Returns a list of schema rowsets accessible by [IDBSchemaRowsetImpl::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md).|
+|[GetSchemas](#getschemas)|Returns a list of schema rowsets accessible by [IDBSchemaRowsetImpl::GetRowset](#getrowset).|
 
 ## Remarks
 
-This class implements the [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) interface and the templatized creator function [CreateSchemaRowset](../../data/oledb/idbschemarowsetimpl-createschemarowset.md).
+This class implements the [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) interface and the templatized creator function [CreateSchemaRowset](#createschemarowset).
 
-OLE DB uses schema rowsets to return data about the data in a provider. Such data is often called "metadata." By default, a provider must always support `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS`, and `DBSCHEMA_PROVIDER_TYPES`, as described in [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) in the *OLE DB Programmer's Reference*. Schema rowsets are designated in a schema map. For information about the schema map entries, see [SCHEMA_ENTRY](../../data/oledb/schema-entry.md).
+OLE DB uses schema rowsets to return data about the data in a provider. Such data is often called "metadata." By default, a provider must always support `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS`, and `DBSCHEMA_PROVIDER_TYPES`, as described in [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) in the *OLE DB Programmer's Reference*. Schema rowsets are designated in a schema map. For information about the schema map entries, see [SCHEMA_ENTRY](./macros-for-ole-db-provider-templates.md#schema_entry).
 
 The OLE DB Provider Wizard, in the ATL Object Wizard, automatically generates code for the schema rowsets in your project. (By default, the wizard supports the mandatory schema rowsets previously mentioned.) When you create a consumer using the ATL Object Wizard, the wizard uses schema rowsets to bind the correct data to a provider. If you do not implement your schema rowsets to provide the correct metadata, the wizard will not bind the correct data.
 
@@ -74,13 +74,13 @@ HRESULT CheckRestrictions(REFGUID rguidSchema,
 [in] The number of restrictions that the consumer passed in for the schema rowset.
 
 *rgRestrictions*<br/>
-[in] An array of length *cRestrictions* of restriction values to be set. For more information, see the description of the *rgRestrictions* parameter in [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md).
+[in] An array of length *cRestrictions* of restriction values to be set. For more information, see the description of the *rgRestrictions* parameter in [SetRestrictions](#setrestrictions).
 
 ### Remarks
 
 Use `CheckRestrictions` to check the validity of restrictions against a schema rowset. It checks restrictions for `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS`, and `DBSCHEMA_PROVIDER_TYPES` schema rowsets. Call it to determine if a consumer's call to `IDBSchemaRowset::GetRowset` is correct. If you want to support schema rowsets other than those listed above, you should create your own function to carry out this task.
 
-`CheckRestrictions` determines if the consumer is calling [GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md) with the correct restriction and the correct restriction type (for example, a VT_BSTR for a string) that the provider supports. It also determines if the correct number of restrictions are supported. By default, `CheckRestrictions` will ask the provider, through the [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) call, which restrictions it supports on a given rowset. It then compares the restrictions from the consumer against those supported by the provider and either succeeds or fails.
+`CheckRestrictions` determines if the consumer is calling [GetRowset](#getrowset) with the correct restriction and the correct restriction type (for example, a VT_BSTR for a string) that the provider supports. It also determines if the correct number of restrictions are supported. By default, `CheckRestrictions` will ask the provider, through the [SetRestrictions](#setrestrictions) call, which restrictions it supports on a given rowset. It then compares the restrictions from the consumer against those supported by the provider and either succeeds or fails.
 
 For more information on schema rowsets, see [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) in the *OLE DB Programmer's Reference* in the Windows SDK.
 
@@ -161,7 +161,7 @@ void SetRestrictions(ULONG cRestrictions,
 
 ### Remarks
 
-The `IDBSchemaRowset` object calls `SetRestrictions` to determine which restrictions you support on a particular schema rowset (it is called by [GetSchemas](../../data/oledb/idbschemarowsetimpl-getschemas.md) through an upcasted pointer). Restrictions allow consumers to fetch only matching rows (for example, find all the columns in the table "MyTable"). Restrictions are optional, and in the case in which none are supported (the default), all data is always returned.
+The `IDBSchemaRowset` object calls `SetRestrictions` to determine which restrictions you support on a particular schema rowset (it is called by [GetSchemas](#getschemas) through an upcasted pointer). Restrictions allow consumers to fetch only matching rows (for example, find all the columns in the table "MyTable"). Restrictions are optional, and in the case in which none are supported (the default), all data is always returned.
 
 The default implementation of this method sets the *rgRestrictions* array elements to 0. Override the default in your session class to set restrictions other than the default.
 
@@ -216,13 +216,13 @@ STDMETHOD (GetRowset)(IUnknown *pUnkOuter,
 
 ### Remarks
 
-This method requires the user to have a schema map in the session class. Using the schema map information, `GetRowset` creates a given rowset object if the *rguidSchema* parameter is equal to one of the map entries GUIDs. See [SCHEMA_ENTRY](../../data/oledb/schema-entry.md) for a description of the map entry.
+This method requires the user to have a schema map in the session class. Using the schema map information, `GetRowset` creates a given rowset object if the *rguidSchema* parameter is equal to one of the map entries GUIDs. See [SCHEMA_ENTRY](./macros-for-ole-db-provider-templates.md#schema_entry) for a description of the map entry.
 
 See [IDBSchemaRowset::GetRowset](/previous-versions/windows/desktop/ms722634(v=vs.85)) in the Windows SDK.
 
 ## <a name="getschemas"></a> IDBSchemaRowsetImpl::GetSchemas
 
-Returns a list of schema rowsets accessible by [IDBSchemaRowsetImpl::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md).
+Returns a list of schema rowsets accessible by [IDBSchemaRowsetImpl::GetRowset](#getrowset).
 
 ### Syntax
 
@@ -253,5 +253,5 @@ The implementation of this function requires the user to have a schema map in th
 
 [Schema Rowset Classes and Typedef Classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)<br/>
 [Supporting Schema Rowsets](../../data/oledb/supporting-schema-rowsets.md)<br/>
-[SCHEMA_ENTRY](../../data/oledb/schema-entry.md)<br/>
+[SCHEMA_ENTRY](./macros-for-ole-db-provider-templates.md#schema_entry)<br/>
 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider)

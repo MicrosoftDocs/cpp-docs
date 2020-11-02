@@ -32,7 +32,7 @@ It is also strongly recommended to generate debug symbols, even with optimized r
 
 The **`/Op`** compiler option has been removed, and the following four compiler options dealing with floating point optimizations have been added:
 
-|||
+|Option|Description|
 |-|-|
 |**`/fp:precise`**|This is the default recommendation and should be used in most cases.|
 |**`/fp:fast`**|Recommended if performance is of the utmost importance, for example in games. This will result in the fastest performance.|

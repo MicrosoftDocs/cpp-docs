@@ -6,12 +6,12 @@ helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "Analyzing
 ---
 # C++ Build Insights SDK
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 The C++ Build Insights SDK is a collection of APIs that allow you to create personalized tools on top of the C++ Build Insights platform. This page provides a high-level overview to help you get started.
 
@@ -186,7 +186,7 @@ Whenever the C++ Build Insights SDK gives you an event, it comes in the form of 
 
 The C++ Build Insights SDK gives you every event in a trace, but most of the time you only care about a subset of them. In some cases, you may only care about a subset of *event stacks*. The SDK provides facilities to help you quickly extract the events or event stack you need, and reject the ones you don't. It's done through these matching functions:
 
-|  |  |
+| Function | Description |
 |--|--|
 | [MatchEvent](functions/match-event.md) | Keep an event if it matches one of the specified types. Forward matched events to a lambda or other callable type. The event's parent hierarchy isn't considered by this function. |
 | [MatchEventInMemberFunction](functions/match-event-in-member-function.md) | Keep an event if it matches the type specified in a member function's parameter. Forward matched events to the member function. The event's parent hierarchy isn't considered by this function. |

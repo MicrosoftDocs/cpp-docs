@@ -10,25 +10,25 @@ Schema rowsets allow consumers to get information about a data store without kno
 
 `IDBSchemaRowsetImpl` supports the following methods:
 
-- [CheckRestrictions](../../data/oledb/idbschemarowsetimpl-checkrestrictions.md) checks the validity of restrictions against a schema rowset.
+- [CheckRestrictions](./idbschemarowsetimpl-class.md#checkrestrictions) checks the validity of restrictions against a schema rowset.
 
-- [CreateSchemaRowset](../../data/oledb/idbschemarowsetimpl-createschemarowset.md) implements a COM object creator function for the object specified by the template parameter.
+- [CreateSchemaRowset](./idbschemarowsetimpl-class.md#createschemarowset) implements a COM object creator function for the object specified by the template parameter.
 
-- [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) specifies which restrictions you support on a particular schema rowset.
+- [SetRestrictions](./idbschemarowsetimpl-class.md#setrestrictions) specifies which restrictions you support on a particular schema rowset.
 
-- [IDBSchemaRowset::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md) returns a schema rowset (inherited from interface).
+- [IDBSchemaRowset::GetRowset](./idbschemarowsetimpl-class.md#getrowset) returns a schema rowset (inherited from interface).
 
-- [GetSchemas](../../data/oledb/idbschemarowsetimpl-getschemas.md) returns a list of schema rowsets accessible by `IDBSchemaRowsetImpl::GetRowset` (inherited from interface).
+- [GetSchemas](./idbschemarowsetimpl-class.md#getschemas) returns a list of schema rowsets accessible by `IDBSchemaRowsetImpl::GetRowset` (inherited from interface).
 
 ## ATL OLE DB Provider Wizard Support
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 The **ATL OLE DB Provider Wizard** creates three schema classes in the session header file:
 
@@ -84,7 +84,7 @@ class CUpdateSessionTRSchemaRowset :
                     ULONG cRestrictions, const VARIANT* rgRestrictions)
 ```
 
-`CUpdateSession` inherits from `IDBSchemaRowsetImpl`, so it has all the restriction handling methods. Using `CSchemaRowsetImpl`, declare three child classes (listed in the schema map above): `CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, and `CUpdateSessionPTSchemaRowset`. Each of these child classes has an `Execute` method that handles its respective set of restrictions (search criteria). Each `Execute` method compares the values of the *cRestrictions* and *rgRestrictions* parameters. See the description of these parameters in [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md).
+`CUpdateSession` inherits from `IDBSchemaRowsetImpl`, so it has all the restriction handling methods. Using `CSchemaRowsetImpl`, declare three child classes (listed in the schema map above): `CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, and `CUpdateSessionPTSchemaRowset`. Each of these child classes has an `Execute` method that handles its respective set of restrictions (search criteria). Each `Execute` method compares the values of the *cRestrictions* and *rgRestrictions* parameters. See the description of these parameters in [SetRestrictions](./idbschemarowsetimpl-class.md#setrestrictions).
 
 For more information about which restrictions correspond to a particular schema rowset, see the table of schema rowset GUIDs in [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) in the **OLE DB Programmer's Reference** in the Windows SDK.
 

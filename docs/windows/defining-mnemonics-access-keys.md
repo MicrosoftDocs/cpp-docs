@@ -80,14 +80,14 @@ You can add values to a combo box control as long as you have the **Dialog Edito
 
 1. Press **Enter** when you are finished adding values.
 
-For information on enlarging the drop-down portion of a combo box, see [Setting the Size of the Combo Box and Its Drop-Down List](setting-the-size-of-the-combo-box-and-its-drop-down-list.md).
+For information on enlarging the drop-down portion of a combo box, see [Setting the Size of the Combo Box and Its Drop-Down List](./arrangement-of-controls-on-dialog-boxes.md).
 
 > [!NOTE]
 > You can't add values to Win32 projects using this procedure (the **Data** property is grayed out for Win32 projects). Because Win32 projects do not have libraries that add this capability, you must add values to a combo box with a Win32 project programmatically.
 
 ### To test the appearance of values in a combo box
 
-1. After entering values in the **Data** property, select the **Test** button on the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
+1. After entering values in the **Data** property, select the **Test** button on the [Dialog Editor Toolbar](./dialog-editor.md).
 
 1. Try scrolling down the entire value list. Values appear exactly as they are typed in the **Data** property in the **Properties** window. There is no spelling or capitalization checking.
 
@@ -95,7 +95,7 @@ For information on enlarging the drop-down portion of a combo box, see [Setting 
 
 ## Radio Button Values
 
-When you add radio buttons to a dialog box, treat them as a group by setting a **Group** property in the **Properties** window for the first button in the group. A control ID for that radio button then appears in the [Add Member Variable Wizard](../ide/add-member-variable-wizard.md), allowing you to add a member variable for the group of radio buttons.
+When you add radio buttons to a dialog box, treat them as a group by setting a **Group** property in the **Properties** window for the first button in the group. A control ID for that radio button then appears in the [Add Member Variable Wizard](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard), allowing you to add a member variable for the group of radio buttons.
 
 You can have more than one group of radio buttons on a dialog box. Add each group using the following procedure.
 
@@ -116,7 +116,7 @@ You can have more than one group of radio buttons on a dialog box. Add each grou
 
 1. Right-click the first radio button control in the tab order (the dominant control and the one with the **Group** property set to **True**) and choose **Add Variable**.
 
-1. In the [Add Member Variable wizard](../ide/add-member-variable-wizard.md), select the **Control variable** check box, then select the **Value** radio button.
+1. In the [Add Member Variable wizard](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard), select the **Control variable** check box, then select the **Value** radio button.
 
    - In the **Variable name** box, type a name for the new member variable.
 

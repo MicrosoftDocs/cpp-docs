@@ -30,7 +30,7 @@ Your class, derived from `IDBPropertiesImpl`.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetProperties](#getproperties)|Returns the values of properties in the Data Source, Data Source Information, and Initialization property groups that are currently set on the data source object or the values of properties in the Initialization property group that are currently set on the enumerator.|
 |[GetPropertyInfo](#getpropertyinfo)|Returns information about all properties supported by the provider.|
@@ -38,7 +38,7 @@ Your class, derived from `IDBPropertiesImpl`.
 
 ## Remarks
 
-[IDBProperties](/previous-versions/windows/desktop/ms719607(v=vs.85)) is a mandatory interface for data source objects and an optional interface for enumerators. However, if an enumerator exposes [IDBInitialize](/previous-versions/windows/desktop/ms713706(v=vs.85)), it must expose `IDBProperties`. `IDBPropertiesImpl` implements `IDBProperties` by using a static function defined by [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+[IDBProperties](/previous-versions/windows/desktop/ms719607(v=vs.85)) is a mandatory interface for data source objects and an optional interface for enumerators. However, if an enumerator exposes [IDBInitialize](/previous-versions/windows/desktop/ms713706(v=vs.85)), it must expose `IDBProperties`. `IDBPropertiesImpl` implements `IDBProperties` by using a static function defined by [BEGIN_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#begin_propset_map).
 
 ## <a name="getproperties"></a> IDBPropertiesImpl::GetProperties
 
@@ -97,7 +97,7 @@ Some parameters correspond to *OLE DB Programmer's Reference* parameters of diff
 
 ### Remarks
 
-Uses [IDBInitializeImpl::m_pCUtlPropInfo](../../data/oledb/idbinitializeimpl-m-pcutlpropinfo.md) to implement this functionality.
+Uses [IDBInitializeImpl::m_pCUtlPropInfo](./idbinitializeimpl-class.md#pcutlpropinfo) to implement this functionality.
 
 ## <a name="setproperties"></a> IDBPropertiesImpl::SetProperties
 

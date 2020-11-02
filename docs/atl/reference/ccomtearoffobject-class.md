@@ -42,13 +42,13 @@ ATL implements its tear-off interfaces in two phases — the `CComTearOffObjectB
 
 ### CComTearOffObjectBase Methods
 
-|||
+|Function|Description|
 |-|-|
 |[CComTearOffObjectBase](#ccomtearoffobjectbase)|Constructor.|
 
 ### CComTearOffObjectBase Data Members
 
-|||
+|Data member|Description|
 |-|-|
 |[m_pOwner](#m_powner)|A pointer to a `CComObject` derived from the owner class.|
 
