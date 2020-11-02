@@ -481,23 +481,7 @@
       - name: Definitions and conventions
         href: ../c-language/definitions-and-conventions.md
       - name: Lexical grammar
-        items: 
-          - name: Lexical grammar
-            href: ../c-language/lexical-grammar.md
-          - name: Summary of tokens
-            href: ../c-language/summary-of-tokens.md
-          - name: Summary of keywords
-            href: ../c-language/summary-of-keywords.md
-          - name: Summary of identifiers
-            href: ../c-language/summary-of-identifiers.md
-          - name: Summary of constants
-            href: ../c-language/summary-of-constants.md
-          - name: Summary of string literals
-            href: ../c-language/summary-of-string-literals.md
-          - name: Operators (C)
-            href: ../c-language/operators-c.md
-          - name: Punctuators
-            href: ../c-language/punctuators.md
+        href: ../c-language/lexical-grammar.md
       - name: Phrase structure grammar
         items: 
           - name: Phrase structure grammar

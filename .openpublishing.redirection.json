@@ -701,6 +701,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/c-language/operators-c.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-language/punctuators.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-language/summary-of-constants.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-language/summary-of-identifiers.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-language/summary-of-keywords.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-language/summary-of-string-literals.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-language/summary-of-tokens.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/cloud/index.md",
       "redirect_url": "/cpp/cloud/cloud-and-web-programming-in-visual-cpp",
       "redirect_document_id": false
