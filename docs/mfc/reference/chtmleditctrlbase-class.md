@@ -1478,7 +1478,7 @@ long QueryStatus(long cmdID) const;
 ### Parameters
 
 *cmdID*<br/>
-The command ID. Command identifiers are taken from the CGID_MSHTML command group. These commands are defined in Mshtmcid.h. You can also find the list online at [MSHTML Command Identifiers](https://go.microsoft.com/fwlink/p/?linkid=149220).
+The command ID. Command identifiers are taken from the CGID_MSHTML command group. These commands are defined in Mshtmcid.h. You can also find the list online at [MSHTML Command Identifiers](/previous-versions//aa741315(v=vs.85)).
 
 ### Return Value
 
