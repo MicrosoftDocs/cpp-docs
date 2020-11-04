@@ -19,7 +19,7 @@ The `norm` and `unorm` types are scalar types that limit the range of **`float`*
 
 ## Short Vector Library
 
-The Short Vector Library provides some of the functionality of the [Vector Type](https://go.microsoft.com/fwlink/p/?linkid=248500) that's defined in HLSL and is typically used to define texels. A short vector is a data structure that holds one to four values of the same type. The supported types are **`double`**, **`float`**, **`int`**, `norm`, `uint`, and `unorm`. The type names are shown in the following table. For each type, there is also a corresponding **`typedef`** that doesn't have an underscore in the name. The types that have the underscores are in the [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md). The types that don't have the underscores are in the [Concurrency::graphics::direct3d Namespace](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) so that they are clearly separated from the similarly-named fundamental types such as **`__int8`** and **`__int16`**.
+The Short Vector Library provides some of the functionality of the [Vector Type](/windows/win32/direct3dhlsl/dx-graphics-hlsl-vector) that's defined in HLSL and is typically used to define texels. A short vector is a data structure that holds one to four values of the same type. The supported types are **`double`**, **`float`**, **`int`**, `norm`, `uint`, and `unorm`. The type names are shown in the following table. For each type, there is also a corresponding **`typedef`** that doesn't have an underscore in the name. The types that have the underscores are in the [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md). The types that don't have the underscores are in the [Concurrency::graphics::direct3d Namespace](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) so that they are clearly separated from the similarly-named fundamental types such as **`__int8`** and **`__int16`**.
 
 |Type|Length 2|Length 3|Length 4|
 |-|--------------|--------------|--------------|
@@ -61,7 +61,7 @@ Many GPUs have hardware and caches that are optimized to fetch pixels and texels
 
 - A short vector that has two or four components. The only exception is `double_4`, which is not allowed.
 
-The `texture` object can have a rank of 1, 2, or 3. The `texture` object can be captured only by reference in the lambda of a call to `parallel_for_each`. The texture is stored on the GPU as Direct3D texture objects. For more information about textures and texels in Direct3D, see [Introduction to Textures in Direct3D 11](https://go.microsoft.com/fwlink/p/?linkid=248502).
+The `texture` object can have a rank of 1, 2, or 3. The `texture` object can be captured only by reference in the lambda of a call to `parallel_for_each`. The texture is stored on the GPU as Direct3D texture objects. For more information about textures and texels in Direct3D, see [Introduction to Textures in Direct3D 11](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures-intro).
 
 The texel type you use might be one of the many texture formats that are used in graphics programming. For example, an RGBA format could use 32 bits, with 8 bits each for the R, G, B, and A scalar elements. The texture hardware of a graphics card can access the individual elements based on the format. For example, if you are using the RGBA format, the texture hardware can extract each 8-bit element into a 32-bit form. In C++ AMP, you can set the bits per scalar element of your texel so that you can automatically access the individual scalar elements in the code without using bit-shifting.
 
@@ -398,7 +398,7 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 
 ## Interoperability
 
-The C++ AMP runtime supports interoperability between `texture<T,1>` and the [ID3D11Texture1D interface](https://go.microsoft.com/fwlink/p/?linkId=248503), between `texture<T,2>` and the [ID3D11Texture2D interface](https://go.microsoft.com/fwlink/p/?linkId=255317), and between `texture<T,3>` and the [ID3D11Texture3D interface](https://go.microsoft.com/fwlink/p/?linkId=255377). The [get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) method takes a `texture` object and returns an `IUnknown` interface. The [make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) method takes an `IUnknown` interface and an `accelerator_view` object and returns a `texture` object.
+The C++ AMP runtime supports interoperability between `texture<T,1>` and the [ID3D11Texture1D interface](/windows/win32/api/d3d11/nn-d3d11-id3d11texture1d), between `texture<T,2>` and the [ID3D11Texture2D interface](/windows/win32/api/d3d11/nn-d3d11-id3d11texture2d), and between `texture<T,3>` and the [ID3D11Texture3D interface](/windows/win32/api/d3d11/nn-d3d11-id3d11texture3d). The [get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) method takes a `texture` object and returns an `IUnknown` interface. The [make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) method takes an `IUnknown` interface and an `accelerator_view` object and returns a `texture` object.
 
 ## See also
 
