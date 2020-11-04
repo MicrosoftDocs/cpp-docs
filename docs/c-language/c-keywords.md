@@ -1,7 +1,7 @@
 ---
 title: "C Keywords"
 description: "Keywords in Standard C and Microsoft C compiler extensions."
-ms.date: 10/15/2020
+ms.date: 10/30/2020
 helpviewer_keywords: ["keywords [C]", "redefining keywords", "Microsoft-specific keywords"]
 ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
 ---
@@ -87,31 +87,30 @@ The following keywords and special identifiers are recognized by the Microsoft C
 :::row:::
     :::column:::
         **`__asm`**<sup>5</sup>\
-        **`dllimport`**<sup>4</sup>\
-        **`__int8`**<sup>5</sup>\
-        **`naked`**<sup>4</sup>\
-        **`__based`**<sup>3, 5</sup>
-    :::column-end:::
-    :::column:::
-        **`__except`**<sup>5</sup>\
-        **`__int16`**<sup>5</sup>\
-        **`__stdcall`**<sup>5</sup>\
+        **`__based`**<sup>3, 5</sup>\
         **`__cdecl`**<sup>5</sup>\
-        **`__fastcall`**
-    :::column-end:::
-    :::column:::
-        **`__int32`**<sup>5</sup>\
-        **`thread`**<sup>4</sup>\
         **`__declspec`**<sup>5</sup>\
-        **`__finally`**<sup>5</sup>\
-        **`__int64`**<sup>5</sup>
+        **`__except`**<sup>5</sup>\
+        **`__fastcall`**\
+        **`__finally`**<sup>5</sup>
     :::column-end:::
     :::column:::
+        **`__inline`**<sup>5</sup>\
+        **`__int16`**<sup>5</sup>\
+        **`__int32`**<sup>5</sup>\
+        **`__int64`**<sup>5</sup>\
+        **`__int8`**<sup>5</sup>\
+        **`__leave`**<sup>5</sup>\
+        **`__restrict`**
+    :::column-end:::
+    :::column:::
+        **`__stdcall`**<sup>5</sup>\
         **`__try`**<sup>5</sup>\
         **`dllexport`**<sup>4</sup>\
-        **`__inline`**<sup>5</sup>\
-        **`__leave`**<sup>5</sup>\
-        **`static_assert`**<sup>6</sup>
+        **`dllimport`**<sup>4</sup>\
+        **`naked`**<sup>4</sup>\
+        **`static_assert`**<sup>6</sup>\
+        **`thread`**<sup>4</sup>
     :::column-end:::
 :::row-end:::
 
