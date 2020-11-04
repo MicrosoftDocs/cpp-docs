@@ -59,7 +59,7 @@ When you choose a configuration, it is added to the *CMakeSettings.json* file in
       "inheritEnvironments": [
         "linux_x64"
       ]
-    }
+}
 
 {
       "name": "Linux-Release",
