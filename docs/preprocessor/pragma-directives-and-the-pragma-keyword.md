@@ -134,7 +134,7 @@ return _hr; \
 The string literal should be what you would otherwise put following a *`#pragma`* statement. For example:
 
 ```c
-#pragma message("--the #pragma way")
+#pragma message("the #pragma way")
 _Pragma ("message( \"the _Pragma way\")") 
 ```
 

@@ -52,9 +52,9 @@ If the specification of an array type includes type qualifiers, the element is q
  
 ## `restrict`
 
-The **`restrict`** type qualifier, introduced in C99, is used with pointer declarations. It qualifies the pointer, not the object being pointed to. It is a hint to the compiler that for the lifetime of the pointer, only the pointer itself or a value derived from it (such as pointer + 1) will be used to access the object it points at. This means that any loads and stores through the restricted pointer are the only loads and stores to that address for the lifetime of the pointer. This helps the compiler optimize the performance of code that uses the pointer.
+The **`restrict`** type qualifier, introduced in C99, can be applied to pointer declarations. For example: `int* restrict ptr;` It qualifies the pointer, not what the pointer points at.
 
-If you try to alias the pointer, you will get warning: 4245  For example:
+It is an optimization hint to the compiler that no other pointer refers to it. That is, only the pointer itself or a value derived from it (such as pointer + 1) will be used to access the object it points at. This means that any loads and stores through the restricted pointer are the only loads and stores to that address for the lifetime of the pointer. This helps the compiler optimize the performance of code that uses the pointer.
 
 ```c
 // compile with: /std:c11
