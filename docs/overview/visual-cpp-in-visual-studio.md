@@ -166,8 +166,8 @@ Learn how to create effective error reports against the Visual C++ toolset (comp
 Microsoft [C++ Team Blog](https://devblogs.microsoft.com/cppblog/)<br/>
 Learn more about new features and the latest information from the developers of the C++ tools in Visual Studio.
 
-[Visual Studio Developer Community](https://developercommunity.visualstudio.com/)<br/>
-Find out how to get help, file bugs, and make suggestions for Visual Studio.
+[Visual Studio C++ Developer Community](https://aka.ms/vsfeedback/browsecpp)<br/>
+Find out how to get help, file bugs, and make suggestions for C++ in Visual Studio.
 
 ## See also
 

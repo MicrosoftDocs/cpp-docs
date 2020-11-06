@@ -201,4 +201,4 @@ additionalContent:
             - text: Universal Windows Platform libraries
               url: cppcx/namespaces-reference-c-cx.md
   # footer (optional)
-  footer: "[Microsoft Docs Q&A](/answers/topics/c%2B%2B.html) - [Blogs](https://devblogs.microsoft.com/cppblog/) - [Twitter](https://twitter.com/visualc) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-c++) - [Report an issue](overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md) - [Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html) - Contribute to C++ docs: Read our [contributor guide](/contribute/)."
+  footer: "[Microsoft Docs Q&A](/answers/topics/c%2B%2B.html) - [Blogs](https://devblogs.microsoft.com/cppblog/) - [Twitter](https://twitter.com/visualc) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-c++) - [Report an issue](overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md) - [Developer Community](https://aka.ms/feedback/report?space=62) - Contribute to C++ docs: Read our [contributor guide](/contribute/)."
