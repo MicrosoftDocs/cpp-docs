@@ -1,28 +1,29 @@
 ---
-title: "__restrict"
-ms.date: "10/10/2018"
+title: "`__restrict`"
+descripton: "Describes the Microsoft Visual C++ `__restrict` keyword." 
+ms.date: "11/6/2020"
 f1_keywords: ["__restrict_cpp", "__restrict", "_restrict"]
 helpviewer_keywords: ["__restrict keyword [C++]"]
 ms.assetid: 2d151b4d-f930-49df-bd16-d8757ec7fa83
 ---
-# __restrict
+# `__restrict`
 
-Like the **__declspec ( [restrict](../cpp/restrict.md) )** modifier, the **`__restrict`** keyword indicates that a symbol is not aliased in the current scope. The **`__restrict`** keyword differs from the `__declspec ( restrict )` modifier in the following ways:
+Like the **`__declspec` ( [`restrict`](../cpp/restrict.md) )** modifier, the **`__restrict`** keyword (two leading underscores '_') indicates that a symbol isn't aliased in the current scope. The **`__restrict`** keyword differs from the `__declspec (restrict)` modifier in the following ways:
 
-- The **`__restrict`** keyword is valid only on variables, and `__declspec ( restrict )` is only valid on function declarations and definitions.
+- The **`__restrict`** keyword is valid only on variables, and `__declspec (restrict)` is only valid on function declarations and definitions.
 
-- **`__restrict`** is similar to [`restrict`](../c-language/type-qualifiers.md#restrict) from the C99 spec, but **`__restrict`** can be used in both C++ and C programs.
+- **`__restrict`** is similar to [`restrict`](../c-language/type-qualifiers.md#restrict) for C starting in C99, but **`__restrict`** can be used in both C++ and C programs.
 
-- When **`__restrict`** is used, the compiler will not propagate the no-alias property of a variable. That is, if you assign a **`__restrict`** variable to a non-**`__restrict`** variable, the compiler will still allow the non-__restrict variable to be aliased. This is different from the behavior of the **`restrict`** keyword from the C99 specification.
+- When **`__restrict`** is used, the compiler won't propagate the no-alias property of a variable. That is, if you assign a **`__restrict`** variable to a non-**`__restrict`** variable, the compiler will still allow the non-__restrict variable to be aliased. This is different from the behavior of the C99 C language **`restrict`** keyword.
 
-Generally, if you affect the behavior of an entire function, it is better to use `__declspec ( restrict )` than the keyword.
+Generally, if you want to affect the behavior of an entire function, use **`__declspec (restrict)`** instead of the keyword.
 
-For compatibility with previous versions, **_restrict** is a synonym for **`__restrict`** unless compiler option [/Za \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
+For compatibility with previous versions, **`_restrict`** is a synonym for **`__restrict`** unless compiler option [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified.
 
 In Visual Studio 2015 and later, **`__restrict`** can be used on C++ references.
 
 > [!NOTE]
-> When used on a variable that also has the [volatile](../cpp/volatile-cpp.md) keyword, **`volatile`** will take precedence.
+> When used on a variable that also has the [`volatile`](../cpp/volatile-cpp.md) keyword, **`volatile`** will take precedence.
 
 ## Example
 
