@@ -7,7 +7,7 @@ helpviewer_keywords: ["Visual C++, home page"]
 ---
 # C++ in Visual Studio
 
-:::moniker range="msvc160"
+:::moniker range="msvc-160"
 
 > [!NOTE]
 > This developer documentation applies to Visual Studio 2019. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
@@ -18,7 +18,7 @@ helpviewer_keywords: ["Visual C++, home page"]
 
 :::moniker-end
 
-:::moniker range="msvc150"
+:::moniker range="msvc-150"
 
 > [!NOTE]
 > This developer documentation applies to Visual Studio 2017. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
@@ -27,7 +27,7 @@ helpviewer_keywords: ["Visual C++, home page"]
 
 :::moniker-end
 
-:::moniker range="msvc140"
+:::moniker range="msvc-140"
 
 > [!NOTE]
 > This developer documentation applies to Visual Studio 2015. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.

@@ -1,5 +1,6 @@
 ---
 title: "Microsoft C/C++ change history 2003 - 2015"
+description: "Find all the breaking changes in Microsoft C/C++ from Visual Studio 2003 through Visual Studio 2015 here."
 ms.date: "10/21/2019"
 helpviewer_keywords: ["breaking changes [C++]"]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
