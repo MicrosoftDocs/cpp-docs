@@ -1,5 +1,6 @@
 ---
 title: "&lt;ios&gt; typedefs"
+description: "Describes the C++ standard template library (STL) `basic_ios` class"
 ms.date: "11/04/2016"
 f1_keywords: ["iosfwd/std::ios", "iosfwd/std::streamoff", "iosfwd/std::streampos", "iosfwd/std::streamsize", "iosfwd/std::wios", "iosfwd/std::wstreampos"]
 ms.assetid: 0b962632-3439-44de-bf26-20c67a7f0ff3
@@ -61,7 +62,7 @@ int main( )
    ofstream x( "iostream.txt" );
    x << "testing";
    streampos y = x.tellp( );
-   cout << streamoff(y) << '\n`;
+   cout << streamoff(y) << '\n';
 }
 ```
 
