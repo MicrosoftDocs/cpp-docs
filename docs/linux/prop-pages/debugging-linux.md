@@ -1,5 +1,6 @@
 ---
 title: "Debugger Properties (Linux C++)| Microsoft Docs"
+description: "Describes the Microsoft Visual Studio Linux C++ debugger properties"
 ms.date: "06/07/2019"
 ms.assetid: 0c1c0fcc-a49b-451c-a5cb-ce9711fac064
 ---
@@ -29,5 +30,6 @@ Linux support is available in Visual Studio 2017 and later.
 | Enable Python Pretty Printing | Enable pretty printing of expression values. Only supported in gdb debugging mode. |
 | Visualization File | Default native visualization file (.natvis) containing visualization directives for SLT types. Other .natvis files that belong to the current solution are loaded automatically. |
 | Additional Sources File Path Map | Additional path equivalences for the debugger to use to map Windows source file names to Linux source file names. The format is "\<windows-path>=\<linux-path>;...". A source file name found under the Windows path is referenced as if it's found in the same relative position under the Linux path. Files found in the local project don't require additional mapping. |
+| GDB Path | **Visual Studio 2019 version 16.9**: Specifies the path to the GDB executable to be used by Visual Studio. |
 
 ::: moniker-end

@@ -1,8 +1,8 @@
 ---
 title: Install C and C++ support in Visual Studio
-description: "Install Visual Studio support for Visual C++"
+description: "Learn how to install Visual Studio with support for Microsoft C/C++ and related workloads."
 ms.custom: "mvc"
-ms.date: "04/02/2019"
+ms.date: 11/05/2020
 ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
@@ -40,14 +40,14 @@ For questions about running previous versions of Visual Studio side by side with
 
 ### Step 2 - Download Visual Studio
 
-Next, download the Visual Studio bootstrapper file. To do so, choose the following button, choose the edition of Visual Studio that you want, choose **Save**, and then choose **Open folder**.
+Next, download the Visual Studio bootstrapper file. To do so, choose the following button to go to the Visual Studio download page. Select the edition of Visual Studio that you want and choose the **Free trial** or **Free download** button.
 
  > [!div class="button"]
  > [Download Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
 ### Step 3 - Install the Visual Studio installer
 
-Run the bootstrapper file to install the Visual Studio Installer. This new lightweight installer includes everything you need to both install and customize Visual Studio.
+Run the bootstrapper file you downloaded to install the Visual Studio Installer. This new lightweight installer includes everything you need to both install and customize Visual Studio.
 
 1. From your **Downloads** folder, double-click the bootstrapper that matches or is similar to one of the following files:
 
@@ -55,7 +55,7 @@ Run the bootstrapper file to install the Visual Studio Installer. This new light
    - **vs_professional.exe** for Visual Studio Professional
    - **vs_enterprise.exe** for Visual Studio Enterprise
 
-   If you receive a User Account Control notice, choose **Yes**.
+   If you receive a User Account Control notice, choose **Yes** to allow the bootstrapper to run.
 
 1. We'll ask you to acknowledge the Microsoft [License Terms](https://visualstudio.microsoft.com/license-terms/) and the Microsoft [Privacy Statement](https://privacy.microsoft.com/privacystatement). Choose **Continue**.
 
@@ -137,15 +137,12 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
 ### Download and install
 
-1. Download the latest Visual Studio 2017 installer for Windows.
-
-   > [!div class="nextstepaction"]
-   > [Install Visual Studio 2017 Community](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+1. To download the latest Visual Studio 2017 installer for Windows, go to the Microsoft Visual Studio [Older downloads](https://www.visualstudio.com/vs/older-downloads/) page. Expand the **2017** section, and choose the **Download** button.
 
    >[!Tip]
-   > The Community edition is for individual developers, classroom learning, academic research, and open source development. For other uses, install [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) or [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+   > The Community edition is for individual developers, classroom learning, academic research, and open source development. For other uses, install Visual Studio 2017 Professional or Visual Studio 2017 Enterprise.
 
-1. Find the installer file you downloaded and run it. It may be displayed in your browser, or you may find it in your Downloads folder. The installer needs Administrator privileges to run. You may see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you're having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
+1. Find the installer file you downloaded and run it. The downloaded file may be displayed in your browser, or you may find it in your Downloads folder. The installer needs Administrator privileges to run. You may see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you're having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
 
    ![Download and install the Visual Studio Installer](media/vscpp-concierge-run-installer.gif "Download and install the Visual Studio Installer")
 
@@ -179,7 +176,7 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
 ## Visual Studio 2015 Installation
 
-To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component. To add C and C++ support to an existing Visual Studio 2015 installation, click on the Windows Start button and type **Add Remove Programs**. Open the program from the results list and then find your Visual Studio 2015 installation in the list of installed programs. Double-click it, then choose **Modify** and select the Visual C++ components to install.
+To install Visual Studio 2015, go to the Microsoft Visual Studio [Older downloads](https://www.visualstudio.com/vs/older-downloads/) page. Expand the **2015** section, and choose the **Download** button. Run the downloaded setup program and choose **Custom installation** and then choose the C++ component. To add C and C++ support to an existing Visual Studio 2015 installation, click on the Windows Start button and type **Add Remove Programs**. Open the program from the results list and then find your Visual Studio 2015 installation in the list of installed programs. Double-click it, then choose **Modify** and select the Visual C++ components to install.
 
 In general, we highly recommend that you use the latest version of Visual Studio even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
 
