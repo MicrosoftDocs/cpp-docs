@@ -125,7 +125,7 @@ As new rules are added to the C++ Core Guidelines Checker, the number of warning
 
 - **Enum Rules**: These rules enforce [enum-related checks from the C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum).<sup>16.3</sup>
 
-- **Experimental Rules** These are experimental C++ Core Check rules that are useful but not ready for everyday use. Try them out and [provide feedback](https://developercommunity.visualstudio.com/content/idea/post.html?space=62).<sup>16.0</sup>
+- **Experimental Rules** These are experimental C++ Core Check rules that are useful but not ready for everyday use. Try them out and [provide feedback](https://aka.ms/feedback/suggest?space=62).<sup>16.0</sup>
 
 - **Function Rules**: Two checks that help with adoption of the **`noexcept`** specifier. They're part of the guidelines for [clear function design and implementation](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).<sup>15.5</sup>
 
