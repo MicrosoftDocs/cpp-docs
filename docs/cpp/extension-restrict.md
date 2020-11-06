@@ -13,7 +13,7 @@ Like the **`__declspec` ( [`restrict`](../cpp/restrict.md) )** modifier, the **`
 
 - **`__restrict`** is similar to [`restrict`](../c-language/type-qualifiers.md#restrict) for C starting in C99, but **`__restrict`** can be used in both C++ and C programs.
 
-- When **`__restrict`** is used, the compiler won't propagate the no-alias property of a variable. That is, if you assign a **`__restrict`** variable to a non-**`__restrict`** variable, the compiler will still allow the non-__restrict variable to be aliased. This is different from the behavior of the C99 C language **`restrict`** keyword which does propagate the no-alias property of a variable.
+- When **`__restrict`** is used, the compiler won't propagate the no-alias property of a variable. That is, if you assign a **`__restrict`** variable to a non-**`__restrict`** variable, the compiler will still allow the non-__restrict variable to be aliased. This is different from the behavior of the C99 C language **`restrict`** keyword.
 
 Generally, if you want to affect the behavior of an entire function, use **`__declspec (restrict)`** instead of the keyword.
 
