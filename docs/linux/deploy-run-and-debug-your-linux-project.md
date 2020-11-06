@@ -86,13 +86,15 @@ There are several ways to interact with and debug your Linux project.
 ## Configure other debugging options (MSBuild projects)
 
 - Command-line arguments can be passed to the executable using the **Program Arguments** item in the project's **Debugging** property page.
-- You can export the `DISPLAY` environment variable by using the **Pre-Launch Command** in the project's**Debugging** property pages. For example: `export DISPLAY=:0.0`
+- You can export the `DISPLAY` environment variable by using the **Pre-Launch Command** in the project's **Debugging** property pages. For example: `export DISPLAY=:0.0`
 
    ![Program Arguments](media/settings_programarguments.png)
 
 - Specific debugger options can be passed to GDB using the **Additional Debugger Commands** entry.  For example, you might want to ignore SIGILL (illegal instruction) signals.  You could use the **handle** command to achieve this by adding the following to the **Additional Debugger Commands** entry as shown above:
 
    `handle SIGILL nostop noprint`
+   
+- You can specify the path to the GDB used by Visual Studio using the **GDB Path** item in the project's **Debugging** property page. This property is available in Visual Studio 2019 version 16.9 and later.
 
 ## Debug with Attach to Process
 
