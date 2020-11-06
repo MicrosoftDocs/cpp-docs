@@ -9,7 +9,7 @@ ms.assetid: bb4c6744-1dd7-40a8-b4eb-f5585be30908
 
 Type qualifiers give one of two properties to an identifier. The **`const`** type qualifier declares an object to be nonmodifiable. The **`volatile`** type qualifier declares an item whose value can legitimately be changed by something beyond the control of the program in which it appears, such as a concurrently executing thread.
 
-The type qualifiers, **`_Atomic`**, **`const`**, **`restrict`**, and **`volatile`**, can appear only once in a declaration. Type qualifiers can appear with any type specifier; however, they can't appear after the first comma in a multiple item declaration. For example, the following declarations are legal:
+The type qualifiers, **`const`**, **`restrict`**, and **`volatile`**, can appear only once in a declaration. Type qualifiers can appear with any type specifier; however, they can't appear after the first comma in a multiple item declaration. For example, the following declarations are legal:
 
 ```c
 typedef volatile int VI;
@@ -30,8 +30,7 @@ Type qualifiers are relevant only when accessing identifiers as l-values in expr
 *`type-qualifier`*:\
 &emsp;**`const`**\
 &emsp;**`restrict`**\
-&emsp;**`volatile`**\
-&emsp;**`_Atomic`**
+&emsp;**`volatile`**
 
 ## `const` and `volatile`
 
