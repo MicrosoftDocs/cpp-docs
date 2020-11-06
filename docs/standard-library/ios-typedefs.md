@@ -32,7 +32,7 @@ Supports internal operations.
 
 ### Remarks
 
-The type is a signed integer that describes an object that can store a byte offset involved in various stream positioning operations. Its representation has at least 32 value bits. It is not necessarily large enough to represent an arbitrary byte position within a stream. The value `streamoff(-1)` generally indicates an erroneous offset.
+The type is a signed integer. It describes an object that can store a byte offset in stream positioning operations. Its representation has at least 32 value bits. It isn't necessarily large enough to represent an arbitrary byte position within a stream. The value `streamoff(-1)` generally indicates an erroneous offset.
 
 ## `streampos`
 
@@ -83,7 +83,7 @@ Denotes the size of the stream.
 
 ### Remarks
 
-The type is a signed integer that describes an object that can store a count of the number of elements involved in various stream operations. Its representation has at least 16 bits. It is not necessarily large enough to represent an arbitrary byte position within a stream.
+The type is a signed integer that describes an object that can store a count of the number of elements involved in various stream operations. Its representation has at least 16 bits. It isn't necessarily large enough to represent an arbitrary byte position within a stream.
 
 ### Example
 
@@ -107,7 +107,7 @@ int main( )
 
 ## `wios`
 
-Supports the `wios` class from the old iostream library.
+Supports the `wios` class from the old `iostream` library.
 
 ```cpp
 typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
