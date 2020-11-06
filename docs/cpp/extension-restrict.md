@@ -1,6 +1,6 @@
 ---
 title: "`__restrict`"
-descripton: "Describes the Microsoft Visual C++ `__restrict` keyword." 
+description: "Describes the Microsoft Visual C++ `__restrict` keyword." 
 ms.date: "11/6/2020"
 f1_keywords: ["__restrict_cpp", "__restrict", "_restrict"]
 helpviewer_keywords: ["__restrict keyword [C++]"]
