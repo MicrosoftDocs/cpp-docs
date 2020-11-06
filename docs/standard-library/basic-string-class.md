@@ -2059,7 +2059,7 @@ int main( )
       cout << "The index of the 1st element of sample "
            << "in str3 is: " << indexCh3a << endl;
    else
-      cout << "The substring 'perfect' was not found in str3 ."
+      cout << "The substring 'sample' was not found in str3 ."
            << endl;
 
    const char *cstr3b = "for";
