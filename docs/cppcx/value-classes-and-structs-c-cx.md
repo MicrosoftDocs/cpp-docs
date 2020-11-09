@@ -56,7 +56,7 @@ The following code fragment declares the `Coordinates` and `City` types as value
 
 ## Parameter passing for value types
 
-If you have a value type as a function or method parameter, it is normally passed by value. For larger objects, this can cause a performance problem. In Visual Studio2013 and earlier, value types in C++/CX were always passed by value. In Visual Studio 2015 and later, you can pass value types by reference or by value.
+If you have a value type as a function or method parameter, it is normally passed by value. For larger objects, this can cause a performance problem. In Visual Studio 2013 and earlier, value types in C++/CX were always passed by value. In Visual Studio 2015 and later, you can pass value types by reference or by value.
 
 To declare a parameter that passes a value type by value, use code like the following:
 
