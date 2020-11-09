@@ -1,6 +1,7 @@
 ---
 title: "Arrays (C++)"
-ms.date: 08/03/2020
+description: "Learn how to declare and use the native array type in the standard C++ programming language."
+ms.date: 11/08/2020
 helpviewer_keywords: ["declaring arrays [C++], about declaring arrays", "multidimensional arrays [C++]", "arrays [C++]"]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
 ---
@@ -127,7 +128,7 @@ When an array is passed to a function, it's passed as a pointer to the first ele
 The following example shows a function that accepts an array and a length. The pointer points to the original array, not a copy. Because the parameter isn't **`const`**, the function can modify the array elements.
 
 ```cpp
-void process(double p*, const size_t len)
+void process(double *p, const size_t len)
 {
     std::cout << "process:\n";
     for (size_t i = 0; i < len; ++i)
@@ -137,10 +138,10 @@ void process(double p*, const size_t len)
 }
 ```
 
-Declare the array as const to make it read-only within the function block:
+Declare and define the array parameter `p` as **`const`** to make it read-only within the function block:
 
 ```cpp
-void process(const double p*, const size_t len);
+void process(const double *p, const size_t len);
 ```
 
 The same function can also be declared in these ways, with no change in behavior. The array is still passed as a pointer to the first element:
