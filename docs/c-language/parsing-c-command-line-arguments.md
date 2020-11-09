@@ -22,6 +22,8 @@ Microsoft C startup code uses the following rules when interpreting arguments gi
 
 - If an odd number of backslashes is followed by a double quotation mark, then one backslash (**\\**) is placed in the `argv` array for every pair of backslashes (**\\\\**) and the double quotation mark is interpreted as an escape sequence by the remaining backslash, causing a literal double quotation mark (**"**) to be placed in `argv`.
 
+- A double quotation mark appearing after a closing double quotation mark, **"*""**, will be interpreted as a literal double quotation mark (**\*"**). It might also (depending on the target program) delimit the start of a new string region.
+
 This list illustrates the rules above by showing the interpreted result passed to `argv` for several examples of command-line arguments. The output listed in the second, third, and fourth columns is from the ARGS.C program that follows the list.
 
 |Command-Line Input|argv[1]|argv[2]|argv[3]|
@@ -31,6 +33,9 @@ This list illustrates the rules above by showing the interpreted result passed t
 |`a\\\b d"e f"g h`|`a\\\b`|`de fg`|`h`|
 |`a\\\"b c d`|`a\"b`|`c`|`d`|
 |`a\\\\"b c" d e`|`a\\b c`|`d`|`e`|
+|`a"b"" c d`|`ab"`|`c`|`d`|
+
+Note that the command itself (**argv[0]**) may use different parsing rules, and often does not treat a backslash as an escape character.
 
 ## Example
 
