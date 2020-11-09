@@ -61,7 +61,7 @@ int main( )
    ofstream x( "iostream.txt" );
    x << "testing";
    streampos y = x.tellp( );
-   cout << y << endl;
+   cout << streamoff( y ) << '\n';
 }
 ```
 
@@ -143,7 +143,7 @@ int main( )
    wofstream xw( "wiostream.txt" );
    xw << L"testing";
    wstreampos y = xw.tellp( );
-   cout << y << endl;
+   cout << streamoff( y ) << '\n';
 }
 ```
 
