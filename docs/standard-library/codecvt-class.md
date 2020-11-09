@@ -8,7 +8,7 @@ ms.assetid: 37d3efa1-2b7f-42b6-b04f-7a972c8c2c86
 ---
 # `codecvt` Class
 
-A class template that describes an object that can serve as a locale facet. It is able to control conversions between a sequence of values used to encode characters within the program and a sequence of values used to encode characters outside the program.
+A class template that describes an object that can serve as a locale facet. It can control conversions between a sequence of values used to encode characters within the program and a sequence of values used to encode characters outside the program.
 
 ## Syntax
 
@@ -173,7 +173,7 @@ The possible values for the *`refs`* parameter and their significance are:
 - 1: The lifetime of the object must be manually managed.
 
 
-- 2: These values are not defined.
+- 2: These values aren't defined.
 
 The constructor initializes its `locale::facet` base object with [`locale::facet`](../standard-library/locale-class.md#facet_class)`(refs)`.
 
@@ -195,7 +195,7 @@ The template version always returns **`true`**.
 
 See the example for [`always_noconv`](#always_noconv), which calls `do_always_noconv`.
 
-## `codecvt::do_encoding`
+## <a name="do_encoding"></a> `codecvt::do_encoding`
 
 A virtual function that tests if the encoding of the `Byte` stream is state dependent, whether the ratio between the `Byte` values used and the `CharType` values produced is constant and, if so, determines the value of that ratio.
 
@@ -265,7 +265,7 @@ A return that indicates the success, partial success, or failure of the operatio
 
 - `codecvt_base::ok` if the conversion succeeds.
 
-- `codecvt_base::partial` if the source is insufficient or if the destination is not large enough, for the conversion to succeed.
+- `codecvt_base::partial` if the source is insufficient or if the destination isn't large enough, for the conversion to succeed.
 
 ### Remarks
 
@@ -309,7 +309,7 @@ An integer that represents a count of the maximum number of conversions, not gre
 
 The protected virtual member function effectively calls `do_in( state, first1, last1, next1, buf, buf + len2, next2)` for *state* (a copy of state), some buffer `buf`, and pointers `next1` and `next2`.
 
-It then returns `next2` - `buf`. Thus, it counts the maximum number of conversions, not greater than *len2*, defined by the source sequence at [ `first1`, `last1`).
+It then returns `next2` - `buf`. It counts the maximum number of conversions, not greater than *len2*, defined by the source sequence at [ `first1`, `last1`).
 
 The template version always returns the lesser of *`last1`* - *`first1`* and *`len2`*.
 
@@ -385,7 +385,7 @@ The function returns:
 
 - `codecvt_base::ok` if the conversion succeeds.
 
-- `codecvt_base::partial` if the source is insufficient or if the destination is not large enough for the conversion to succeed.
+- `codecvt_base::partial` if the source is insufficient or if the destination isn't large enough for the conversion to succeed.
 
 ### Remarks
 
@@ -431,7 +431,7 @@ The function returns:
 
 - `codecvt_base::ok` if the conversion succeeds
 
-- `codecvt_base::partial` if the destination is not large enough for the conversion to succeed
+- `codecvt_base::partial` if the destination isn't large enough for the conversion to succeed
 
 ### Remarks
 
@@ -554,7 +554,7 @@ A return that indicates the success, partial success, or failure of the operatio
 
 - `codecvt_base::ok` if the conversion succeeds.
 
-- `codecvt_base::partial` if the source is insufficient or if the destination is not large enough for the conversion to succeed.
+- `codecvt_base::partial` if the source is insufficient or if the destination isn't large enough for the conversion to succeed.
 
 ### Remarks
 
@@ -845,7 +845,7 @@ The function returns:
 
 - `codecvt_base::ok` if the conversion succeeds.
 
-- `codecvt_base::partial` if the destination is not large enough for the conversion to succeed.
+- `codecvt_base::partial` if the destination isn't large enough for the conversion to succeed.
 
 ### Remarks
 
