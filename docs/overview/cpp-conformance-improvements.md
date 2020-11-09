@@ -1153,29 +1153,44 @@ void f() {
 <!-- TODO 16.8 -->
 ## <a name="improvements_168"></a> Conformance improvements in Visual Studio 2019 version 16.8
 
+### 'Class rvalue used as lvalue' extension
+
+
+### 'Explicit specialization in non-namespace scope' extension
+
+
+### Checking for abstract class types
+
+
+### Support for P0960R3 - allow initializing aggregates from a parenthesized list of values
+
+
+### Overload resolution involving function templates
+
+
+### Migrating from `/await` to C++20 coroutines
+
 ### `/permissive-` and C++20 Modules are on by default under `/std:c++latest`
 
-C++20 Modules is now supported, by default, under **`/std:c++latest`**. For more details regarding this change and scenarios where module and import are conditionally treated as keywords, see [Standard C++20 Modules support with MSVC in Visual Studio 2019 version 16.8](https://devblogs.microsoft.com/cppblog/standard-c20-modules-support-with-msvc-in-visual-studio-2019-version-16-8/).
+C++20 Modules support is on by default under **`/std:c++latest`**. For more information about this change, and the scenarios where **`module`** and **`import`** are conditionally treated as keywords, see [Standard C++20 Modules support with MSVC in Visual Studio 2019 version 16.8](https://devblogs.microsoft.com/cppblog/standard-c20-modules-support-with-msvc-in-visual-studio-2019-version-16-8/).
 
-As a prerequisite for Modules support, **`/permissive-`** is now enabled when **`/std:c++latest`** is specified. For more information, see [`/permissive-`](../build/reference/permissive-standards-conformance.md).
-For code that previously compiled under **`/std:c++latest`** and requires non-conformant compiler behaviors, /permissive may be specified to turn off strict conformance mode in the compiler and must appear after **`/std:c++latest`** in the command line argument list. However, specifying /permissive will result in an error if Modules usage is encountered.
+As a prerequisite for Modules support, **`permissive-`** is now enabled when **`/std:c++latest`** is specified. For more information, see [`/permissive-`](../build/reference/permissive-standards-conformance.md).
 
-error C1214: Modules conflict with non-standard behavior requested via '[option]'
-Where the most common values for [option] are:
+For code that previously compiled under **`/std:c++latest`** and requires non-conforming compiler behaviors, **`permissive`** may be specified to turn off strict conformance mode in the compiler. The compiler option must appear after **`/std:c++latest`** in the command-line argument list. However, **`permissive`** results in an error if Modules usage is encountered:
 
-Option	Description
-/Zc:twoPhase-	Two Phase name lookup (/Zc:twoPhase) is required for C++20 Modules and implied by /permissive-. See also /Zc:twoPhase documentation .
-/Zc:hiddenFriend-	Enables standard hidden friend name lookup rules is required for C++20 Modules and implied by /permissive-.
-/Zc:preprocessor-	Use of the conformant preprocessor (/Zc:preprocessor) is required for C++20 header unit usage and creation only. Named Modules do not require this option. See also /Zc:preprocessor documentation 
-When using the std.* Modules which ship with Visual Studio the option /experimental:module is still required for their use as they are not yet standardized.
+> error C1214: Modules conflict with non-standard behavior requested via '*option*'
 
-Using /experimental:module also implies /Zc:twoPhase and /Zc:hiddenFriend. Previously code compiled with Modules could sometimes be compiled with /Zc:twoPhase- if the Module was only consumed, this behavior is no longer supported.
-### 'Class rvalue used as lvalue' extension
-### 'Class rvalue used as lvalue' extension
-### 'Class rvalue used as lvalue' extension
-### 'Class rvalue used as lvalue' extension
-### 'Class rvalue used as lvalue' extension
-### 'Class rvalue used as lvalue' extension
+The most common values for *option* are:
+
+| Option | Description |
+|--|--|
+| [`/Zc:twoPhase-`](../build/reference/zc-twophase.md) | Two Phase name lookup is required for C++20 Modules and implied by **`permissive-`**. |
+| [`/Zc:hiddenFriend-`](../build/reference/zc-hiddenfriend.md) | Enables standard hidden friend name lookup rules. Required for C++20 Modules and implied by **`permissive-`**. |
+| [`/Zc:preprocessor-`](../build/reference/zc-preprocessor.md) | The conforming preprocessor is required for C++20 header unit usage and creation only. Named Modules don't require this option. |
+
+The [`/experimental:module`](../build/reference/experimental-module.md) option is still required to use the *`std.*`* Modules that ship with Visual Studio, because they're not standardized yet.
+
+The **`/experimental:module`** option also implies **`/Zc:twoPhase`** and **`/Zc:hiddenFriend`**. Previously, code compiled with Modules could sometimes be compiled with **`/Zc:twoPhase-`** if the Module was only consumed. This behavior is no longer supported.
 
 ## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
 

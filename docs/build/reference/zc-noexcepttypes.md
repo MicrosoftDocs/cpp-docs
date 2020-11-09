@@ -72,6 +72,6 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 ## See also
 
-[**`/Zc`** (Conformance)](zc-conformance.md)\
+[`/Zc` (Conformance)](zc-conformance.md)\
 [noexcept](../../cpp/noexcept-cpp.md)\
 [Exception specifications (throw)](../../cpp/exception-specifications-throw-cpp.md)
