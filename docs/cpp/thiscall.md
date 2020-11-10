@@ -1,5 +1,6 @@
 ---
 title: "__thiscall"
+description: "Learn about the Microsoft-specific __thiscall calling convention for x86 class member functions in Microsoft C++."
 ms.date: "05/22/2020"
 f1_keywords: ["__thiscall", "__thiscall_cpp"]
 helpviewer_keywords: ["__thiscall keyword [C++]"]
@@ -15,7 +16,7 @@ On ARM, ARM64, and x64 machines, **`__thiscall`** is accepted and ignored by the
 
 One reason to use **`__thiscall`** is in classes whose member functions use **`__clrcall`** by default. In that case, you can use **`__thiscall`** to make individual member functions callable from native code.
 
-When compiling with [**`/clr:pure`**](../build/reference/clr-common-language-runtime-compilation.md), all functions and function pointers are **`__clrcall`** unless specified otherwise. The **`/clr:pure`** and **`/clr:safe`** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+When compiling with [`/clr:pure`](../build/reference/clr-common-language-runtime-compilation.md), all functions and function pointers are **`__clrcall`** unless specified otherwise. The **`/clr:pure`** and **`/clr:safe`** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
 
 `vararg` member functions use the **`__cdecl`** calling convention. All function arguments are pushed on the stack, with the **`this`** pointer placed on the stack last.
 
