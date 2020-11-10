@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements"
-ms.date: 08/04/2020
 description: "Microsoft C++ in Visual Studio is progressing toward full conformance with the C++20 language standard."
+ms.date: 11/10/2020
 ms.technology: "cpp-language"
 ---
 # C++ conformance improvements in Visual Studio
@@ -1149,6 +1149,338 @@ void f() {
     B b2[1]; // OK: calls default ctor for each array element
 }
 ```
+
+## <a name="improvements_168"></a> Conformance improvements in Visual Studio 2019 version 16.8
+
+### 'Class rvalue used as lvalue' extension
+
+MSVC has an extension that allows using a class rvalue as an lvalue. The extension doesn't extend the lifetime of the class rvalue and can lead to undefined behavior at runtime. We now enforce the standard rule and disallow this extension under **`/permissive-`**.
+If you can't use **`/permissive-`** yet, you can use **`/we4238`** to explicitly disallow the extension. Here's an example:
+
+```cpp
+// Compiling with /permissive- now gives:
+// error C2102: '&' requires l-value
+struct S {};
+
+S f();
+
+void g()
+{
+    auto p1 = &(f()); // The temporary returned by 'f' is destructed after this statement. So 'p1' points to an invalid object.
+
+    const auto &r = f(); // This extends the lifetime of the temporary returned by 'f'
+    auto p2 = &r; // 'p2' points to a valid object
+}
+```
+
+### 'Explicit specialization in non-namespace scope' extension
+
+MSVC had an extension that allowed explicit specialization in non-namespace scope. It's now part of the standard, after the resolution of CWG 727. However, there are behavior differences. We've adjusted the behavior of our compiler to align with the standard.
+
+```cpp
+// Compiling with 'cl a.cpp b.cpp /permissive-' now gives:
+//   error LNK2005: "public: void __thiscall S::f<int>(int)" (??$f@H@S@@QAEXH@Z) already defined in a.obj
+// To fix the linker error,
+// 1. Mark the explicit specialization with 'inline' explicitly. Or,
+// 2. Move its definition to a source file.
+
+// common.h
+struct S {
+    template<typename T> void f(T);
+    template<> void f(int);
+};
+
+// This explicit specialization is implicitly inline in the default mode.
+template<> void S::f(int) {}
+
+// a.cpp
+#include "common.h"
+
+int main() {}
+
+// b.cpp
+#include "common.h"
+```
+
+### Checking for abstract class types
+
+The C++20 Standard changed the process by which the use of an abstract class type as a function parameter is detected by a compiler. Specifically, it's no longer a SFINAE error. Previously, if the compiler detected that a specialization of a function template would have a function parameter whose type was an instance of an abstract class type, then that specialization would be considered ill-formed. It wouldn't be added to the set of viable functions. In C++20, the check for a parameter of abstract class type doesn't happen until the function is called. It means that code that used to compile won't cause an error. Here's an example:
+
+```cpp
+class Node {
+public:
+    int index() const;
+};
+
+class String : public Node {
+public:
+    virtual int size() const = 0;
+};
+
+class Identifier : public Node {
+public:
+    const String& string() const;
+};
+
+template<typename T>
+int compare(T x, T y)
+{
+    return x < y ? -1 : (x > y ? 1 : 0);
+}
+
+int compare(const Node& x, const Node& y)
+{
+    return compare(x.index(), y.index());
+}
+
+int f(const Identifier& x, const String& y)
+{
+    return compare(x.string(), y);
+}
+```
+
+Previously, the call to `compare` would have attempted to specialize the function template `compare` with the template argument for `T` being `String`. It would fail to generate a valid specialization, because `String` is an abstract class. The only viable candidate would have been `compare(const Node&, const Node&)`. However, under C++20 the check for the abstract class type doesn't happen until the function is called. So, the specialization `compare(String, String)` gets added to the set of viable candidates, and it's chosen as the best candidate because the conversion from `const String&` to `String` is a better conversion sequence than the conversion from `const String&` to `const Node&`.
+
+Under C++20, one possible fix for this example is to use concepts; that is, change the definition of `compare` to:
+
+```cpp
+template<typename T>
+int compare(T x, T y) requires !std::is_abstract_v<T>
+{
+    return x < y ? -1 : (x > y ? 1 : 0);
+}
+```
+
+Or, if C++ concepts aren't available, you can fall back to SFINAE:
+
+```cpp
+template<typename T, std::enable_if_t<!std::is_abstract_v<T>, int> = 0>
+int compare(T x, T y)
+{
+    return x < y ? -1 : (x > y ? 1 : 0);
+}
+```
+
+### Support for P0960R3 - allow initializing aggregates from a parenthesized list of values
+
+C++20 adds support for initializing an aggregate using a parenthesized initializer-list. For example, the following code is valid in C++20:
+
+```cpp
+struct S {
+    int i;
+    int j;
+};
+
+S s(1, 2);
+```
+
+Most of this feature is additive, that is, code now compiles that didn't compile before. However, it does change the behavior of `std::is_constructible`. In C++17 mode this **`static_assert`** fails, but in C++20 mode it succeeds:
+
+`static_assert(std::is_constructible_v<S, int, int>, "Assertion failed!");`
+
+If this type-trait is used to control overload resolution, it can lead to a change in behavior between C++17 and C++20.
+
+### Overload resolution involving function templates
+
+Previously, the compiler allowed some code to compile under **`/permissive-`** that shouldn't compile. The effect was, the compiler called the wrong function leading to a change in runtime behavior:
+
+```cpp
+int f(int);
+
+namespace N
+{
+    using ::f;
+    template<typename T>
+    T f(T);
+}
+
+template<typename T>
+void g(T&& t)
+{
+}
+
+void h()
+{
+    using namespace N;
+    g(f);
+}
+```
+
+The call to `g` uses an overload set that contains two functions, `::f` and `N::f`. Since `N::f` is a function template, the compiler should treat the function argument as a *non-deduced context*. It means that, in this case, the call to `g` should fail, as the compiler can't deduce a type for the template parameter `T`. Unfortunately, the compiler didn't discard the fact that it had already decided that `::f` was a good match for the function call. Instead of emitting an error, the compiler would generate code to call `g` using `::f` as the argument.
+
+Given that in many cases using `::f` as the function argument is what the user expects, we only emit an error if the code is compiled with **`/permissive-`**.
+
+### Migrating from `/await` to C++20 coroutines
+
+Standard C++20 coroutines are now on by default under **`/std:c++latest`**. They differ from the Coroutines TS and the support under the **`/await`** switch. Migrating from **`/await`** to standard coroutines may require some source changes.
+
+#### Non-standard keywords
+
+The old **`await`** and **`yield`** keywords aren't supported in C++20 mode. Code must use **`co_await`** and **`co_yield`** instead. Standard mode also doesn't allow the use of `return` in a coroutine. Every **`return`** in a coroutine must use **`co_return`**.
+
+```cpp
+// /await
+task f_legacy() {
+    ...
+    await g();
+    return n;
+}
+// /std:c++latest
+task f() {
+    ...
+    co_await g();
+    co_return n;
+}
+```
+
+#### Types of initial_suspend/final_suspend
+
+Under **`/await`**, the promise initial and suspend functions may be declared as returning **`bool`**. This behavior isn't standard. In C++20, these functions must return an awaitable class type, often one of the trivial awaitables `std::suspend_always` if the function previously returned **`true`** or `std::suspend_never` if it returned **`false`**.
+
+```cpp
+// /await
+struct promise_type_legacy {
+    bool initial_suspend() noexcept { return false; }
+    bool final_suspend() noexcept { return true; }
+    ...
+};
+
+// /std:c++latest
+struct promise_type {
+    auto initial_susepend() noexcept { return std::suspend_never{}; }
+    auto final_suspend() noexcept { return std::suspend_always{}; }
+    ...
+};
+```
+
+#### Type of `yield_value`
+
+In C++20, the promise `yield_value` function must return an awaitable. In **`/await`** mode, the `yield_value` function was permitted to return **`void`**, and would always suspend. Such functions can be replaced with a function that returns `std::suspend_always`.
+
+```cpp
+// /await
+struct promise_type_legacy {
+    ...
+    void yield_value(int x) { next = x; };
+};
+
+// /std:c++latest
+struct promise_type {
+    ...
+    auto yield_value(int x) { next = x; return std::suspend_always{}; }
+};
+```
+
+#### Exception handling function
+
+**`/await`** supports a promise type with either no exception-handling function or an exception handling function named `set_exception` that takes a `std::exception_ptr`. In C++20, the promise type must have a function named `unhandled_exception` that takes no arguments. The exception object can be obtained from `std::current_exception` if needed.
+
+```cpp
+// /await
+struct promise_type_legacy {
+    void set_exception(std::exception_ptr e) { saved_exception = e; }
+    ...
+};
+// /std:c++latest
+struct promise_type {
+    void unhandled_exception() { saved_exception = std::current_exception(); }
+    ...
+};
+```
+
+#### Deduced return types of coroutines not supported
+
+C++20 doesn't support coroutines with a return type that includes a placeholder type such as **`auto`**. Return types of coroutines must be explicitly declared. Under **`/await`**, these deduced types always involve an experimental type and require inclusion of a header that defines the required type: One of `std::experimental::task<T>`, `std::experimental::generator<T>`, or `std::experimental::async_stream<T>`.
+
+```cpp
+// /await
+auto my_generator() {
+    ...
+    co_yield next;
+};
+
+// /std:c++latest
+#include <experimental/generator>
+std::experimental::generator<int> my_generator() {
+    ...
+    co_yield next;
+};
+```
+
+#### Return type of `return_value`
+
+The return type of the promise `return_value` function must be **`void`**. In **`/await`** mode, the return type can be anything, and is ignored. This diagnostic can help detect subtle errors where the author incorrectly assumes the return value of `return_value` is returned to a caller.
+
+```cpp
+// /await
+struct promise_type_legacy {
+    ...
+    int return_value(int x) { return x; } // incorrect, the return value of this function is unused and the value is lost.
+};
+
+// /std:c++latest
+struct promise_type {
+    ...
+    void return_value(int x) { value = x; }; // save return value
+};
+```
+
+#### Return object conversion behavior
+
+If the declared return type of a coroutine doesn't match the return type of the promise `get_return_object` function, the object returned from `get_return_object` gets converted to the return type of the coroutine. Under **`/await`**, this conversion is done early, before the coroutine body has a chance to execute. In **`/std:c++latest`**, this conversion is performed only when the value is actually returned to the caller. It allows coroutines that don't suspend at the initial suspend point to make use of the object returned by `get_return_object` within the coroutine body.
+
+#### Coroutine promise parameters
+
+In C++20, the compiler attempts to pass the coroutine parameters (if any) to a constructor of the promise type. If it fails, it retries with a default constructor. In **`/await`** mode, only the default constructor was used. This change can lead to a difference in behavior if the promise has multiple constructors, or if there's a conversion from a coroutine parameter to the promise type.
+
+```cpp
+struct coro {
+    struct promise_type {
+        promise_type() { ... }
+        promise_type(int x) { ... }
+        ...
+    };
+};
+
+coro f1(int x);
+
+// Under /await the promise gets constructed using the default constructor.
+// Under /std:c++latest the promise gets constructed using the 1-argument constructor.
+f1(0);
+
+struct Object {
+template <typename T> operator T() { ... } // Converts to anything!
+};
+
+coro f2(Object o);
+
+// Under /await the promise gets constructed using the default constructor
+// Under /std:c++latest the promise gets copy- or move-constructed from the result of
+// Object::operator coro::promise_type().
+f2(Object{});
+```
+
+### `/permissive-` and C++20 Modules are on by default under `/std:c++latest`
+
+C++20 Modules support is on by default under **`/std:c++latest`**. For more information about this change, and the scenarios where **`module`** and **`import`** are conditionally treated as keywords, see [Standard C++20 Modules support with MSVC in Visual Studio 2019 version 16.8](https://devblogs.microsoft.com/cppblog/standard-c20-modules-support-with-msvc-in-visual-studio-2019-version-16-8/).
+
+As a prerequisite for Modules support, **`permissive-`** is now enabled when **`/std:c++latest`** is specified. For more information, see [`/permissive-`](../build/reference/permissive-standards-conformance.md).
+
+For code that previously compiled under **`/std:c++latest`** and requires non-conforming compiler behaviors, **`permissive`** may be specified to turn off strict conformance mode in the compiler. The compiler option must appear after **`/std:c++latest`** in the command-line argument list. However, **`permissive`** results in an error if Modules usage is encountered:
+
+> error C1214: Modules conflict with non-standard behavior requested via '*option*'
+
+The most common values for *option* are:
+
+| Option | Description |
+|--|--|
+| **`/Zc:twoPhase-`** | Two Phase name lookup is required for C++20 Modules and implied by **`permissive-`**. |
+| **`/Zc:hiddenFriend-`** | Enables standard hidden friend name lookup rules. Required for C++20 Modules and implied by **`permissive-`**. |
+| **`/Zc:preprocessor-`** | The conforming preprocessor is required for C++20 header unit usage and creation only. Named Modules don't require this option. |
+
+The [`/experimental:module`](../build/reference/experimental-module.md) option is still required to use the *`std.*`* Modules that ship with Visual Studio, because they're not standardized yet.
+
+The **`/experimental:module`** option also implies **`/Zc:twoPhase`** and **`/Zc:hiddenFriend`**. Previously, code compiled with Modules could sometimes be compiled with **`/Zc:twoPhase-`** if the Module was only consumed. This behavior is no longer supported.
 
 ## <a name="update_160"></a> Bug fixes and behavior changes in Visual Studio 2019
 
