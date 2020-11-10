@@ -479,11 +479,11 @@ using namespace std;
 int main( )
 {
    locale loc ( "German_Germany" );
-   int result1 = use_facet<codecvt<char, char, mbstate_t> > ( loc ).encoding ( );
+   int result1 = use_facet<codecvt<char, char, mbstate_t>> ( loc ).encoding ( );
    cout << result1 << '\n';
-   result1 = use_facet<codecvt<wchar_t, char, mbstate_t> > ( loc ).encoding( );
+   result1 = use_facet<codecvt<wchar_t, char, mbstate_t>> ( loc ).encoding( );
    cout << result1 << '\n';
-   result1 = use_facet<codecvt<char, wchar_t, mbstate_t> > ( loc ).encoding( );
+   result1 = use_facet<codecvt<char, wchar_t, mbstate_t>> ( loc ).encoding( );
    cout << result1 << '\n';
 }
 ```
@@ -581,7 +581,7 @@ int main( )
    wchar_t* pwszNext;
    mbstate_t state = {0}; // zero-initialization represents the initial conversion state for mbstate_t
    locale loc("C");//English_Britain");//German_Germany
-   int res = use_facet<codecvt<wchar_t, char, mbstate_t> >
+   int res = use_facet<codecvt<wchar_t, char, mbstate_t>>
      ( loc ).in( state,
           pszExt, &pszExt[strlen(pszExt)], pszNext,
           pwszInt, &pwszInt[strlen(pszExt)], pwszNext );
@@ -657,10 +657,10 @@ using namespace std;
 #define LEN 90
 int main( )
 {
-   char* pszExt = "This is the string whose length is to be measured!";
+   const char* pszExt = "This is the string whose length is to be measured!";
    mbstate_t state = {0}; // zero-initialization represents the initial conversion state for mbstate_t
-   locale loc("C");//English_Britain");//German_Germany
-   int res = use_facet<codecvt<wchar_t, char, mbstate_t> >
+   locale loc("C"); // English_Britain"); //German_Germany
+   int res = use_facet<codecvt<wchar_t, char, mbstate_t>>
      ( loc ).length( state,
           pszExt, &pszExt[strlen(pszExt)], LEN );
    cout << "The length of the string is: ";
@@ -703,7 +703,7 @@ using namespace std;
 int main( )
 {
    locale loc( "C");//English_Britain" );//German_Germany
-   int res = use_facet<codecvt<char, char, mbstate_t> >
+   int res = use_facet<codecvt<char, char, mbstate_t>>
      ( loc ).max_length( );
    wcout << res << '\n';
 }
