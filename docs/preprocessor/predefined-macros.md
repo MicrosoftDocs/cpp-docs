@@ -38,19 +38,19 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 - `__LINE__` Defined as the integer line number in the current source file. The value of the `__LINE__` macro can be changed by using a `#line` directive. This macro is always defined.
 
-- `__STDC__` Defined as 1 only when compiled as C and if the [**`/Za`**](../build/reference/za-ze-disable-language-extensions.md) compiler option is specified. Otherwise, undefined.
+- `__STDC__` Defined as 1 only when compiled as C and if the [`/Za`](../build/reference/za-ze-disable-language-extensions.md) compiler option is specified. Otherwise, undefined.
 
 - `__STDC_HOSTED__` Defined as 1 if the implementation is a *hosted implementation*, one that supports the entire required standard library. Otherwise, defined as 0.
 
-- `__STDC_NO_ATOMICS__` Defined as 1 if the implementation doesn't support optional standard atomics. The MSVC implementation defines it as 1 when compiled as C and one of the [**`/std`**](../build/reference/std-specify-language-standard-version.md) C11 or C17 options is specified.
+- `__STDC_NO_ATOMICS__` Defined as 1 if the implementation doesn't support optional standard atomics. The MSVC implementation defines it as 1 when compiled as C and one of the [`/std`](../build/reference/std-specify-language-standard-version.md) C11 or C17 options is specified.
 
-- `__STDC_NO_COMPLEX__` Defined as 1 if the implementation doesn't support optional standard complex numbers. The MSVC implementation defines it as 1 when compiled as C and one of the [**`/std`**](../build/reference/std-specify-language-standard-version.md) C11 or C17 options is specified.
+- `__STDC_NO_COMPLEX__` Defined as 1 if the implementation doesn't support optional standard complex numbers. The MSVC implementation defines it as 1 when compiled as C and one of the [`/std`](../build/reference/std-specify-language-standard-version.md) C11 or C17 options is specified.
 
-- `__STDC_NO_THREADS__` Defined as 1 if the implementation doesn't support optional standard threads. The MSVC implementation defines it as 1 when compiled as C and one of the [**`/std`**](../build/reference/std-specify-language-standard-version.md) C11 or C17 options is specified.
+- `__STDC_NO_THREADS__` Defined as 1 if the implementation doesn't support optional standard threads. The MSVC implementation defines it as 1 when compiled as C and one of the [`/std`](../build/reference/std-specify-language-standard-version.md) C11 or C17 options is specified.
 
-- `__STDC_NO_VLA__` Defined as 1 if the implementation doesn't support standard variable length arrays. The MSVC implementation defines it as 1 when compiled as C and one of the [**`/std`**](../build/reference/std-specify-language-standard-version.md) C11 or C17 options is specified.
+- `__STDC_NO_VLA__` Defined as 1 if the implementation doesn't support standard variable length arrays. The MSVC implementation defines it as 1 when compiled as C and one of the [`/std`](../build/reference/std-specify-language-standard-version.md) C11 or C17 options is specified.
 
-- `__STDC_VERSION__` Defined when compiled as C and one of the **`/std`** C11 or C17 options is specified. It expands to `201112L` for [**`/std:c11`**](../build/reference/std-specify-language-standard-version.md), and `201710L` for [**`/std:c17`**](../build/reference/std-specify-language-standard-version.md).
+- `__STDC_VERSION__` Defined when compiled as C and one of the **`/std`** C11 or C17 options is specified. It expands to `201112L` for [`/std:c11`](../build/reference/std-specify-language-standard-version.md), and `201710L` for [`/std:c17`](../build/reference/std-specify-language-standard-version.md).
 
 - `__STDCPP_THREADS__` Defined as 1 if and only if a program can have more than one thread of execution, and compiled as C++. Otherwise, undefined.
 
@@ -60,25 +60,25 @@ The compiler supports these predefined macros specified by the ISO C99, C11, C17
 
 MSVC supports these additional predefined macros.
 
-- `__ATOM__` Defined as 1 when the [**`/favor:ATOM`**](../build/reference/favor-optimize-for-architecture-specifics.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__ATOM__` Defined as 1 when the [`/favor:ATOM`](../build/reference/favor-optimize-for-architecture-specifics.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX__` Defined as 1 when the [**`/arch:AVX`**](../build/reference/arch-x86.md), [**`/arch:AVX2`**](../build/reference/arch-x86.md), or [**`/arch:AVX512`**](../build/reference/arch-x86.md) compiler options are set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX__` Defined as 1 when the [`/arch:AVX`](../build/reference/arch-x86.md), [`/arch:AVX2`](../build/reference/arch-x86.md), or [`/arch:AVX512`](../build/reference/arch-x86.md) compiler options are set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX2__` Defined as 1 when the [**`/arch:AVX2`**](../build/reference/arch-x86.md) or [**`/arch:AVX512`**](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX2__` Defined as 1 when the [`/arch:AVX2`](../build/reference/arch-x86.md) or [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512BW__` Defined as 1 when the [**`/arch:AVX512`**](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512BW__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512CD__` Defined as 1 when the [**`/arch:AVX512`**](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512CD__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512DQ__` Defined as 1 when the [**`/arch:AVX512`**](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512DQ__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512F__` Defined as 1 when the [**`/arch:AVX512`**](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512F__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- `__AVX512VL__` Defined as 1 when the [**`/arch:AVX512`**](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
+- `__AVX512VL__` Defined as 1 when the [`/arch:AVX512`](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
 - `_CHAR_UNSIGNED` Defined as 1 if the default **`char`** type is unsigned. This value is defined when the [**`/J`** (Default char type is unsigned)](../build/reference/j-default-char-type-is-unsigned.md) compiler option is set. Otherwise, undefined.
 
-- `__CLR_VER` Defined as an integer literal that represents the version of the Common Language Runtime (CLR) used to compile the app. The value is encoded in the form `Mmmbbbbb`, where `M` is the major version of the runtime, `mm` is the minor version of the runtime, and `bbbbb` is the build number. `__CLR_VER` is defined if the [**`/clr`**](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
+- `__CLR_VER` Defined as an integer literal that represents the version of the Common Language Runtime (CLR) used to compile the app. The value is encoded in the form `Mmmbbbbb`, where `M` is the major version of the runtime, `mm` is the minor version of the runtime, and `bbbbb` is the build number. `__CLR_VER` is defined if the [`/clr`](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
 
     ```cpp
     // clr_ver.cpp
@@ -135,7 +135,7 @@ MSVC supports these additional predefined macros.
     }
     ```
 
-- `__cplusplus_cli` Defined as the integer literal value 200406 when compiled as C++ and a [**`/clr`**](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined. When defined, `__cplusplus_cli` is in effect throughout the translation unit.
+- `__cplusplus_cli` Defined as the integer literal value 200406 when compiled as C++ and a [`/clr`](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined. When defined, `__cplusplus_cli` is in effect throughout the translation unit.
 
     ```cpp
     // cplusplus_cli.cpp
@@ -156,19 +156,19 @@ MSVC supports these additional predefined macros.
 
 - `_CPPUNWIND` Defined as 1 if one or more of the [**`/GX`** (Enable Exception Handling)](../build/reference/gx-enable-exception-handling.md), [**`/clr`** (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md), or [**`/EH`** (Exception Handling Model)](../build/reference/eh-exception-handling-model.md) compiler options are set. Otherwise, undefined.
 
-- `_DEBUG` Defined as 1 when the [**`/LDd`**](../build/reference/md-mt-ld-use-run-time-library.md), [**`/MDd`**](../build/reference/md-mt-ld-use-run-time-library.md), or [**`/MTd`**](../build/reference/md-mt-ld-use-run-time-library.md) compiler option is set. Otherwise, undefined.
+- `_DEBUG` Defined as 1 when the [`/LDd`](../build/reference/md-mt-ld-use-run-time-library.md), [`/MDd`](../build/reference/md-mt-ld-use-run-time-library.md), or [`/MTd`](../build/reference/md-mt-ld-use-run-time-library.md) compiler option is set. Otherwise, undefined.
 
-- `_DLL` Defined as 1 when the [**`/MD`**](../build/reference/md-mt-ld-use-run-time-library.md) or [**`/MDd`**](../build/reference/md-mt-ld-use-run-time-library.md) (Multithreaded DLL) compiler option is set. Otherwise, undefined.
+- `_DLL` Defined as 1 when the [`/MD`](../build/reference/md-mt-ld-use-run-time-library.md) or [`/MDd`](../build/reference/md-mt-ld-use-run-time-library.md) (Multithreaded DLL) compiler option is set. Otherwise, undefined.
 
-- `__FUNCDNAME__` Defined as a string literal that contains the [decorated name](../build/reference/decorated-names.md) of the enclosing function. The macro is defined only within a function. The `__FUNCDNAME__` macro isn't expanded if you use the [**`/EP`**](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) or [**`/P`**](../build/reference/p-preprocess-to-a-file.md) compiler option.
+- `__FUNCDNAME__` Defined as a string literal that contains the [decorated name](../build/reference/decorated-names.md) of the enclosing function. The macro is defined only within a function. The `__FUNCDNAME__` macro isn't expanded if you use the [`/EP`](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) or [`/P`](../build/reference/p-preprocess-to-a-file.md) compiler option.
 
    This example uses the `__FUNCDNAME__`, `__FUNCSIG__`, and `__FUNCTION__` macros to display function information.
 
    [!code-cpp[NVC_Predefined_Macros_Examples#1](../preprocessor/codesnippet/CPP/predefined-macros_1.cpp)]
 
-- `__FUNCSIG__` Defined as a string literal that contains the signature of the enclosing function. The macro is defined only within a function. The `__FUNCSIG__` macro isn't expanded if you use the [**`/EP`**](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) or [**`/P`**](../build/reference/p-preprocess-to-a-file.md) compiler option. When compiled for a 64-bit target, the calling convention is **`__cdecl`** by default. For an example of usage, see the `__FUNCDNAME__` macro.
+- `__FUNCSIG__` Defined as a string literal that contains the signature of the enclosing function. The macro is defined only within a function. The `__FUNCSIG__` macro isn't expanded if you use the [`/EP`](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) or [`/P`](../build/reference/p-preprocess-to-a-file.md) compiler option. When compiled for a 64-bit target, the calling convention is **`__cdecl`** by default. For an example of usage, see the `__FUNCDNAME__` macro.
 
-- `__FUNCTION__` Defined as a string literal that contains the undecorated name of the enclosing function. The macro is defined only within a function. The `__FUNCTION__` macro isn't expanded if you use the [**`/EP`**](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) or [**`/P`**](../build/reference/p-preprocess-to-a-file.md) compiler option. For an example of usage, see the `__FUNCDNAME__` macro.
+- `__FUNCTION__` Defined as a string literal that contains the undecorated name of the enclosing function. The macro is defined only within a function. The `__FUNCTION__` macro isn't expanded if you use the [`/EP`](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) or [`/P`](../build/reference/p-preprocess-to-a-file.md) compiler option. For an example of usage, see the `__FUNCDNAME__` macro.
 
 - `_INTEGRAL_MAX_BITS` Defined as the integer literal value 64, the maximum size (in bits) for a non-vector integral type. This macro is always defined.
 
@@ -182,7 +182,7 @@ MSVC supports these additional predefined macros.
 
 - `__INTELLISENSE__` Defined as 1 during an IntelliSense compiler pass in the Visual Studio IDE. Otherwise, undefined. You can use this macro to guard code the IntelliSense compiler doesn't understand, or use it to toggle between the build and IntelliSense compiler. For more information, see [Troubleshooting Tips for IntelliSense Slowness](https://devblogs.microsoft.com/cppblog/troubleshooting-tips-for-intellisense-slowness/).
 
-- `_ISO_VOLATILE` Defined as 1 if the [**`/volatile:iso`**](../build/reference/volatile-volatile-keyword-interpretation.md) compiler option is set. Otherwise, undefined.
+- `_ISO_VOLATILE` Defined as 1 if the [`/volatile:iso`](../build/reference/volatile-volatile-keyword-interpretation.md) compiler option is set. Otherwise, undefined.
 
 - `_KERNEL_MODE` Defined as 1 if the [**`/kernel`** (Create Kernel Mode Binary)](../build/reference/kernel-create-kernel-mode-binary.md) compiler option is set. Otherwise, undefined.
 
@@ -190,9 +190,9 @@ MSVC supports these additional predefined macros.
 
 - `_M_ARM` Defined as the integer literal value 7 for compilations that target ARM processors. Otherwise, undefined.
 
-- `_M_ARM_ARMV7VE` Defined as 1 when the [**`/arch:ARMv7VE`**](../build/reference/arch-arm.md) compiler option is set for compilations that target ARM processors. Otherwise, undefined.
+- `_M_ARM_ARMV7VE` Defined as 1 when the [`/arch:ARMv7VE`](../build/reference/arch-arm.md) compiler option is set for compilations that target ARM processors. Otherwise, undefined.
 
-- `_M_ARM_FP` Defined as an integer literal value that indicates which [**`/arch`**](../build/reference/arch-arm.md) compiler option was set for ARM processor targets. Otherwise, undefined.
+- `_M_ARM_FP` Defined as an integer literal value that indicates which [`/arch`](../build/reference/arch-arm.md) compiler option was set for ARM processor targets. Otherwise, undefined.
 
   - A value in the range 30-39 if no **`/arch`** ARM option was specified, indicating the default architecture for ARM was set (`VFPv3`).
 
@@ -204,21 +204,21 @@ MSVC supports these additional predefined macros.
 
 - `_M_CEE` Defined as 001 if any [**`/clr`** (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
 
-- `_M_CEE_PURE` Deprecated beginning in Visual Studio 2015. Defined as 001 if the [**`/clr:pure`**](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
+- `_M_CEE_PURE` Deprecated beginning in Visual Studio 2015. Defined as 001 if the [`/clr:pure`](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
 
-- `_M_CEE_SAFE` Deprecated beginning in Visual Studio 2015. Defined as 001 if the [**`/clr:safe`**](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
+- `_M_CEE_SAFE` Deprecated beginning in Visual Studio 2015. Defined as 001 if the [`/clr:safe`](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
 
-- `_M_FP_EXCEPT` Defined as 1 if the [**`/fp:except`**](../build/reference/fp-specify-floating-point-behavior.md) or [**`/fp:strict`**](../build/reference/fp-specify-floating-point-behavior.md) compiler option is set. Otherwise, undefined.
+- `_M_FP_EXCEPT` Defined as 1 if the [`/fp:except`](../build/reference/fp-specify-floating-point-behavior.md) or [`/fp:strict`](../build/reference/fp-specify-floating-point-behavior.md) compiler option is set. Otherwise, undefined.
 
-- `_M_FP_FAST` Defined as 1 if the [**`/fp:fast`**](../build/reference/fp-specify-floating-point-behavior.md) compiler option is set. Otherwise, undefined.
+- `_M_FP_FAST` Defined as 1 if the [`/fp:fast`](../build/reference/fp-specify-floating-point-behavior.md) compiler option is set. Otherwise, undefined.
 
-- `_M_FP_PRECISE` Defined as 1 if the [**`/fp:precise`**](../build/reference/fp-specify-floating-point-behavior.md) compiler option is set. Otherwise, undefined.
+- `_M_FP_PRECISE` Defined as 1 if the [`/fp:precise`](../build/reference/fp-specify-floating-point-behavior.md) compiler option is set. Otherwise, undefined.
 
-- `_M_FP_STRICT` Defined as 1 if the [**`/fp:strict`**](../build/reference/fp-specify-floating-point-behavior.md) compiler option is set. Otherwise, undefined.
+- `_M_FP_STRICT` Defined as 1 if the [`/fp:strict`](../build/reference/fp-specify-floating-point-behavior.md) compiler option is set. Otherwise, undefined.
 
 - `_M_IX86` Defined as the integer literal value 600 for compilations that target x86 processors. This macro isn't defined for x64 or ARM compilation targets.
 
-- `_M_IX86_FP` Defined as an integer literal value that indicates the [**`/arch`**](../build/reference/arch-arm.md) compiler option that was set, or the default. This macro is always defined when the compilation target is an x86 processor. Otherwise, undefined. When defined, the value is:
+- `_M_IX86_FP` Defined as an integer literal value that indicates the [`/arch`](../build/reference/arch-arm.md) compiler option that was set, or the default. This macro is always defined when the compilation target is an x86 processor. Otherwise, undefined. When defined, the value is:
 
   - 0 if the `/arch:IA32` compiler option was set.
 
@@ -230,7 +230,7 @@ MSVC supports these additional predefined macros.
 
 - `_M_X64` Defined as the integer literal value 100 for compilations that target x64 processors. Otherwise, undefined.
 
-- `_MANAGED` Defined as 1 when the [**`/clr`**](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
+- `_MANAGED` Defined as 1 when the [`/clr`](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
 
 - `_MSC_BUILD` Defined as an integer literal that contains the revision number element of the compiler's version number. The revision number is the fourth element of the period-delimited version number. For example, if the version number of the Microsoft C/C++ compiler is 15.00.20706.01, the `_MSC_BUILD` macro evaluates to 1. This macro is always defined.
 
@@ -282,11 +282,11 @@ MSVC supports these additional predefined macros.
 
    For more information, see [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) in the Microsoft C++ Team Blog.
 
-- `_MSVC_LANG` Defined as an integer literal that specifies the C++ language standard targeted by the compiler. It's set only in code compiled as C++. The macro is the integer literal value 201402L by default, or when the [**`/std:c++14`**](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to 201703L if the [**`/std:c++17`**](../build/reference/std-specify-language-standard-version.md) compiler option is specified. It's set to a higher, unspecified value when the [**`/std:c++latest`**](../build/reference/std-specify-language-standard-version.md) option is specified. Otherwise, the macro is undefined. The `_MSVC_LANG` macro and [**`/std`** (Specify Language Standard Version)](../build/reference/std-specify-language-standard-version.md) compiler options are available beginning in Visual Studio 2015 Update 3.
+- `_MSVC_LANG` Defined as an integer literal that specifies the C++ language standard targeted by the compiler. It's set only in code compiled as C++. The macro is the integer literal value 201402L by default, or when the [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. The macro is set to 201703L if the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) compiler option is specified. It's set to a higher, unspecified value when the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) option is specified. Otherwise, the macro is undefined. The `_MSVC_LANG` macro and [**`/std`** (Specify Language Standard Version)](../build/reference/std-specify-language-standard-version.md) compiler options are available beginning in Visual Studio 2015 Update 3.
 
-- `__MSVC_RUNTIME_CHECKS` Defined as 1 when one of the [**`/RTC`**](../build/reference/rtc-run-time-error-checks.md) compiler options is set. Otherwise, undefined.
+- `__MSVC_RUNTIME_CHECKS` Defined as 1 when one of the [`/RTC`](../build/reference/rtc-run-time-error-checks.md) compiler options is set. Otherwise, undefined.
 
-- `_MSVC_TRADITIONAL` Defined as 0 when the preprocessor conformance mode [**`/experimental:preprocessor`**](../build/reference/experimental-preprocessor.md) compiler option is set. Defined as 1 by default, or when the [**`/experimental:preprocessor-`**](../build/reference/experimental-preprocessor.md) compiler option is set, to indicate the traditional preprocessor is in use. The `_MSVC_TRADITIONAL` macro and [**`/experimental:preprocessor`** (Enable preprocessor conformance mode)](../build/reference/experimental-preprocessor.md) compiler option is available beginning in Visual Studio 2017 version 15.8.
+- `_MSVC_TRADITIONAL` Defined as 0 when the preprocessor conformance mode [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md) compiler option is set. Defined as 1 by default, or when the [`/experimental:preprocessor-`](../build/reference/experimental-preprocessor.md) compiler option is set, to indicate the traditional preprocessor is in use. The `_MSVC_TRADITIONAL` macro and [**`/experimental:preprocessor`** (Enable preprocessor conformance mode)](../build/reference/experimental-preprocessor.md) compiler option is available beginning in Visual Studio 2017 version 15.8.
 
    ```cpp
    #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
@@ -298,7 +298,7 @@ MSVC supports these additional predefined macros.
 
 - `_MT` Defined as 1 when [**`/MD`** or **`/MDd`** (Multithreaded DLL)](../build/reference/md-mt-ld-use-run-time-library.md) or [**`/MT`** or **`/MTd`** (Multithreaded)](../build/reference/md-mt-ld-use-run-time-library.md) is specified. Otherwise, undefined.
 
-- `_NATIVE_WCHAR_T_DEFINED` Defined as 1 when the [**`/Zc:wchar_t`**](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) compiler option is set. Otherwise, undefined.
+- `_NATIVE_WCHAR_T_DEFINED` Defined as 1 when the [`/Zc:wchar_t`](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) compiler option is set. Otherwise, undefined.
 
 - `_OPENMP` Defined as integer literal 200203, if the [**`/openmp`** (Enable OpenMP 2.0 Support)](../build/reference/openmp-enable-openmp-2-0-support.md) compiler option is set. This value represents the date of the OpenMP specification implemented by MSVC. Otherwise, undefined.
 
@@ -311,13 +311,13 @@ MSVC supports these additional predefined macros.
    }
    ```
 
-- `_PREFAST_` Defined as 1 when the [**`/analyze`**](../build/reference/analyze-code-analysis.md) compiler option is set. Otherwise, undefined.
+- `_PREFAST_` Defined as 1 when the [`/analyze`](../build/reference/analyze-code-analysis.md) compiler option is set. Otherwise, undefined.
 
 - `__TIMESTAMP__` Defined as a string literal that contains the date and time of the last modification of the current source file, in the abbreviated, constant length form returned by the CRT [`asctime`](../c-runtime-library/reference/asctime-wasctime.md) function, for example, `Fri 19 Aug 13:32:58 2016`. This macro is always defined.
 
 - `_VC_NODEFAULTLIB` Defined as 1 when the [**`/Zl`** (Omit Default Library Name)](../build/reference/zl-omit-default-library-name.md) compiler option is set. Otherwise, undefined.
 
-- `_WCHAR_T_DEFINED` Defined as 1 when the default [**`/Zc:wchar_t`**](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) compiler option is set. The `_WCHAR_T_DEFINED` macro is defined but has no value if the **`/Zc:wchar_t-`** compiler option is set, and **`wchar_t`** is defined in a system header file included in your project. Otherwise, undefined.
+- `_WCHAR_T_DEFINED` Defined as 1 when the default [`/Zc:wchar_t`](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) compiler option is set. The `_WCHAR_T_DEFINED` macro is defined but has no value if the **`/Zc:wchar_t-`** compiler option is set, and **`wchar_t`** is defined in a system header file included in your project. Otherwise, undefined.
 
 - `_WIN32` Defined as 1 when the compilation target is 32-bit ARM, 64-bit ARM, x86, or x64. Otherwise, undefined.
 

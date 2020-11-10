@@ -1,7 +1,7 @@
 ---
 title: "/permissive- (Standards conformance)"
 description: "Reference guide to the Microsoft C++ /permissive- (Standards conformance) compiler option."
-ms.date: "06/04/2020"
+ms.date: 10/28/2020
 f1_keywords: ["/permissive", "VC.Project.VCCLCompilerTool.ConformanceMode"]
 helpviewer_keywords: ["/permissive compiler options [C++]", "-permissive compiler options [C++]", "Standards conformance compiler options", "permissive compiler options [C++]"]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
@@ -12,25 +12,28 @@ Specify standards conformance mode to the compiler. Use this option to help you 
 
 ## Syntax
 
-> **`/permissive-`**
+> **`/permissive-`**\
+> **`/permissive`**
 
 ## Remarks
 
-This option is supported in Visual Studio 2017 and later.
+The **`/permissive-`** option is supported in Visual Studio 2017 and later. **`/permissive`** is supported in Visual Studio 2019 version 16.8 and later.
 
-You can use the **`/permissive-`** compiler option to specify standards-conforming compiler behavior. This option disables permissive behaviors, and sets the [**`/Zc`**](zc-conformance.md) compiler options for strict conformance. In the IDE, this option also makes the IntelliSense engine underline non-conforming code.
+You can use the **`/permissive-`** compiler option to specify standards-conforming compiler behavior. This option disables permissive behaviors, and sets the [`/Zc`](zc-conformance.md) compiler options for strict conformance. In the IDE, this option also makes the IntelliSense engine underline non-conforming code.
+
+The **`/permissive-`** option uses the conformance support in the current compiler version to determine which language constructs are non-conforming. The option doesn't determine if your code conforms to a specific version of the C++ standard. To enable all implemented compiler support for the latest draft standard, use the [`/std:c++latest`](std-specify-language-standard-version.md) option. To restrict the compiler support to the currently implemented C++17 standard, use the [`/std:c++17`](std-specify-language-standard-version.md) option. To restrict the compiler support to more closely match the C++14 standard, use the [`/std:c++14`](std-specify-language-standard-version.md) option, which is the default.
+
+Starting in Visual Studio 2019 version 16.8, the **`/std:c++latest`** option implicitly sets the **`/permissive-`** option. It's required for C++20 Modules support. Perhaps your code doesn't need modules support but requires other features enabled under **`/std:c++latest`**. You can explicitly enable Microsoft extension support by using the **`/permissive`** option without the trailing dash.
 
 By default, the **`/permissive-`** option is set in new projects created by Visual Studio 2017 version 15.5 and later versions. It's not set by default in earlier versions. When the option is set, the compiler generates diagnostic errors or warnings when non-standard language constructs are detected in your code. These constructs include some common bugs in pre-C++11 code.
 
 The **`/permissive-`** option is compatible with almost all of the header files from the latest Windows Kits, such as the Software Development Kit (SDK) or Windows Driver Kit (WDK), starting in the Windows Fall Creators SDK (10.0.16299.0). Older versions of the SDK may fail to compile under **`/permissive-`** for various source code conformance reasons. The compiler and SDKs ship on different release timelines, so there are some remaining issues. For specific header file issues, see [Windows header issues](#windows-header-issues) below.
 
-The **`/permissive-`** option sets the [**`/Zc:referenceBinding`**](zc-referencebinding-enforce-reference-binding-rules.md), [**`/Zc:strictStrings`**](zc-strictstrings-disable-string-literal-type-conversion.md), and [**`/Zc:rvalueCast`**](zc-rvaluecast-enforce-type-conversion-rules.md) options to conforming behavior. These options defaults to non-conforming behavior. You can pass specific **`/Zc`** options after **`/permissive-`** on the command line to override this behavior.
+The **`/permissive-`** option sets the [`/Zc:referenceBinding`](zc-referencebinding-enforce-reference-binding-rules.md), [`/Zc:strictStrings`](zc-strictstrings-disable-string-literal-type-conversion.md), and [`/Zc:rvalueCast`](zc-rvaluecast-enforce-type-conversion-rules.md) options to conforming behavior. These options defaults to non-conforming behavior. You can pass specific **`/Zc`** options after **`/permissive-`** on the command line to override this behavior.
 
-In versions of the compiler beginning in Visual Studio 2017 version 15.3, the **`/permissive-`** option sets the [**`/Zc:ternary`**](zc-ternary.md) option. The compiler also implements more of the requirements for two-phase name look-up. When the **`/permissive-`** option is set, the compiler parses function and class template definitions, and identifies dependent and non-dependent names used in the templates. In this release, only name dependency analysis is performed.
+In versions of the compiler beginning in Visual Studio 2017 version 15.3, the **`/permissive-`** option sets the [`/Zc:ternary`](zc-ternary.md) option. The compiler also implements more of the requirements for two-phase name look-up. When the **`/permissive-`** option is set, the compiler parses function and class template definitions, and identifies dependent and non-dependent names used in the templates. In this release, only name dependency analysis is performed.
 
 Environment-specific extensions and language areas that the standard leaves up to the implementation are not affected by **`/permissive-`**. For example, the Microsoft-specific **`__declspec`**, calling convention and structured exception handling keywords, and compiler-specific pragma directives or attributes are not flagged by the compiler in **`/permissive-`** mode.
-
-The **`/permissive-`** option uses the conformance support in the current compiler version to determine which language constructs are non-conforming. The option doesn't determine if your code conforms to a specific version of the C++ standard. To enable all implemented compiler support for the latest draft standard, use the [**`/std:c++latest`**](std-specify-language-standard-version.md) option. To restrict the compiler support to the currently implemented C++17 standard, use the [**`/std:c++17`**](std-specify-language-standard-version.md) option. To restrict the compiler support to more closely match the C++14 standard, use the [**`/std:c++14`**](std-specify-language-standard-version.md) option, which is the default.
 
 Not all C++11, C++14, or C++17 standards-conforming code is supported by the MSVC compiler in all versions of Visual Studio 2017. Depending on the version of Visual Studio, the **`/permissive-`** option may not detect issues in some aspects of two-phase name lookup, binding a non-const reference to a temporary, treating copy init as direct init, allowing multiple user-defined conversions in initialization, or alternative tokens for logical operators, and other non-supported conformance areas. For more information about conformance issues in Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md). To get the most out of **`/permissive-`**, update Visual Studio to the latest version.
 
@@ -414,7 +417,7 @@ These issues are specific to User Mode headers in the Windows Fall Creators Upda
    typedef enum UICCDATASTOREACCESSMODE UICCDATASTOREACCESSMODE; // C4471
    ```
 
-   The forward declaration of unscoped enum is a Microsoft extension. To address this issue, compile files that include cellularapi_oem.h without the **`/permissive-`** option, or use the [**`/wd`**](compiler-option-warning-level.md) option to silence warning C4471.
+   The forward declaration of unscoped enum is a Microsoft extension. To address this issue, compile files that include cellularapi_oem.h without the **`/permissive-`** option, or use the [`/wd`](compiler-option-warning-level.md) option to silence warning C4471.
 
 - Issue in um/omscript.h
 
