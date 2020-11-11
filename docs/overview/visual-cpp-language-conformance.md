@@ -420,7 +420,7 @@ __VS 2019 16.4__ indicates features that are supported in Visual Studio 2019 ver
 __VS 2019 16.5__ indicates features that are supported in Visual Studio 2019 version 16.5.\
 __VS 2019 16.6__ indicates features that are supported in Visual Studio 2019 version 16.6.\
 __VS 2019 16.7__ indicates features that are supported in Visual Studio 2019 version 16.7.\
-__VS 2019 16.7__ indicates features that are supported in Visual Studio 2019 version 16.8.
+__VS 2019 16.8__ indicates features that are supported in Visual Studio 2019 version 16.8.
 
 ### Notes
 
