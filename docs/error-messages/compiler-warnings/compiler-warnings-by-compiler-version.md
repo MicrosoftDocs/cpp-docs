@@ -37,7 +37,7 @@ These versions of the compiler introduced new warnings:
 | Visual Studio 2019 version 16.4 | 19.24.28314.0 |
 | Visual Studio 2019 version 16.5 | 19.25.28610.0 |
 | Visual Studio 2019 version 16.6 | 19.26.28805.0 |
-| Visual Studio 2019 version 16.7 | 19.26.29112.0 |
+| Visual Studio 2019 version 16.7 | 19.27.29112.0 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the **`/Wv`** option. The compiler reports all warnings that match versions that begin with the specified number. It suppresses all warnings for versions greater than the specified number. For example, **`/Wv:17`** reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use **`/Wv:19.00.23506`**. Use **`/Wv:19.11`** to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
 
