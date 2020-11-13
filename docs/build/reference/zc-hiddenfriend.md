@@ -21,7 +21,7 @@ The **`/Zc:hiddenFriend`** option tells the compiler to conform to the standard 
 
 The C++20 standard clarified allowed compiler behavior. A hidden friend can't appear to have a visible declaration at namespace scope. The hidden friend doesn't participate in overload resolution in all contexts that use the enclosing namespace. The restriction allows you to use hidden friends to keep operations on a type from applying to implicit conversions. Hidden friends can only participate in ADL on explicit instances of the enclosing class type.
 
-Standard C++ hidden friend behavior is enabled by default under [`/permissive-`](permissive-standards-conformance.md). To specify legacy hidden friend behavior when the **`/permissive-`** option is specified, use **`/Zc:hiddenFriend-`**. Use of C++20 Modules requires standard hidden friend behavior.
+Standard C++ hidden friend behavior is enabled by default under **`/permissive-`**. To specify legacy hidden friend behavior when the **`/permissive-`** option is specified, use **`/Zc:hiddenFriend-`**. Use of C++20 Modules requires standard hidden friend behavior.
 
 The **`/Zc:hiddenFriend`** option is available starting in Visual Studio 2019 version 16.4.
 
