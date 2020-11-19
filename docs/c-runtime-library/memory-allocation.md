@@ -14,16 +14,16 @@ These routines allocate, free, and reallocate memory.
 |Routine|Use|
 |-------------|---------|
 |[`_alloca`](../c-runtime-library/reference/alloca.md), [`_malloca`](../c-runtime-library/reference/malloca.md)|Allocate memory from the stack|
-|[`calloc`](../c-runtime-library/reference/calloc.md)|Allocate storage for array, initializing every byte in allocated block to 0|
-|[`_calloc_dbg`](../c-runtime-library/reference/calloc-dbg.md)|Debug version of **`calloc`**; only available in the debug versions of the run-time libraries|
+|[`calloc`](../c-runtime-library/reference/calloc.md)|Allocate storage for array and initialize every byte in the allocated block to 0 (zero)|
+|[`_calloc_dbg`](../c-runtime-library/reference/calloc-dbg.md)|Debug version of **`calloc`**. Only available in the debug versions of the run-time libraries|
 |[`operator delete`, `operator delete[]`](../c-runtime-library/delete-operator-crt.md)|Free allocated block|
-|[`_expand`](../c-runtime-library/reference/expand.md)|Expand or shrink block of memory without moving it|
-|[`_expand_dbg`](../c-runtime-library/reference/expand-dbg.md)|Debug version of **`_expand`**; only available in the debug versions of the run-time libraries|
+|[`_expand`](../c-runtime-library/reference/expand.md)|Expand or shrink a block of memory without moving it|
+|[`_expand_dbg`](../c-runtime-library/reference/expand-dbg.md)|Debug version of **`_expand`**. Only available in the debug versions of the run-time libraries|
 |[`free`](../c-runtime-library/reference/free.md)|Free allocated block|
-|[`_free_dbg`](../c-runtime-library/reference/free-dbg.md)|Debug version of **`free`**; only available in the debug versions of the run-time libraries|
+|[`_free_dbg`](../c-runtime-library/reference/free-dbg.md)|Debug version of **`free`**. Only available in the debug versions of the run-time libraries|
 |[`_freea`](../c-runtime-library/reference/freea.md)|Free allocated block from the stack|
-|[`_get_heap_handle`](../c-runtime-library/reference/get-heap-handle.md)|Get Win32 HANDLE of the CRT heap.|
-|[`_heapadd`](../c-runtime-library/heapadd.md)|Add memory to heap|
+|[`_get_heap_handle`](../c-runtime-library/reference/get-heap-handle.md)|Get Win32 `HANDLE` of the CRT heap.|
+|[`_heapadd`](../c-runtime-library/heapadd.md)|Add memory to the heap|
 |[`_heapchk`](../c-runtime-library/reference/heapchk.md)|Check heap for consistency|
 |[`_heapmin`](../c-runtime-library/reference/heapmin.md)|Release unused memory in heap|
 |[`_heapset`](../c-runtime-library/heapset.md)|Fill free heap entries with specified value|
