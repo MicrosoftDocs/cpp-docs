@@ -42,7 +42,7 @@ Type of access permitted.
 
 ## Return Value
 
-Zero if successful; an error code on failure. See [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information about these error codes.
+Zero if successful; an error code on failure. For more information about these error codes, see [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### Error Conditions
 
@@ -62,7 +62,7 @@ The **`fopen_s`** function opens the file that's specified by *filename*. **`_wf
 
 These functions validate their parameters. If *`pFile`*, *`filename`*, or *`mode`* is a null pointer, these functions generate an invalid parameter exception, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
-Always check the return value to see if the function succeeded before you do any further operations on the file. If an error occurs, the error code is returned and the global variable **`errno`** is set. See [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) for more information.
+Always check the return value to see if the function succeeded before you do any further operations on the file. If an error occurs, the error code is returned and the global variable **`errno`** is set. For more information, see [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -112,7 +112,7 @@ The character string *`mode`* specifies the kind of access that's requested for 
 
 When a file is opened by using the **`"a"`** or **`"a+"`** access type, all write operations occur at the end of the file. The file pointer can be repositioned by using [`fseek`](fseek-fseeki64.md) or [`rewind`](rewind.md), but it's always moved back to the end of the file before any write operation is carried out so that existing data cannot be overwritten.
 
-The **`"a"`** mode doesn't remove the EOF marker before appending to the file. After appending has occurred, the MS-DOS TYPE command only shows data up to the original EOF marker and not any data that's appended to the file. The **`"a+"`** mode does remove the EOF marker before appending to the file. After appending, the MS-DOS TYPE command shows all data in the file. The **`"a+"`** mode is required for appending to a stream file that is terminated by using the `CTRL+Z` EOF marker.
+The **`"a"`** mode doesn't remove the EOF marker before appending to the file. After appending has occurred, the MS-DOS `TYPE` command only shows data up to the original EOF marker and not any data that's appended to the file. The **`"a+"`** mode does remove the EOF marker before appending to the file. After appending, the MS-DOS `TYPE` command shows all data in the file. The **`"a+"`** mode is required for appending to a stream file that is terminated with the `CTRL+Z` EOF marker.
 
 When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both reading and writing are allowed. (The file is said to be open for "update".) However, when you switch from reading to writing, the input operation must come across an EOF marker. If there's no EOF marker, you must use an intervening call to a file-positioning function. The file-positioning functions are **`fsetpos`**, [`fseek`](fseek-fseeki64.md), and [`rewind`](rewind.md). When you switch from writing to reading, you must use an intervening call to either **`fflush`** or to a file-positioning function.
 
@@ -148,7 +148,7 @@ Valid characters for the *`mode`* string used in **`fopen_s`** and [`_fdopen`](f
 |-------------------------------|----------------------------------------------------|
 |**`a`**|**`_O_WRONLY`** &#124; **`_O_APPEND`** (usually **`_O_WRONLY`** &#124; **`_O_CREAT`** &#124; **`_O_APPEND`**)|
 |**`a+`**|**`_O_RDWR`** &#124; **`_O_APPEND`** (usually **`_O_RDWR`** &#124; **`_O_APPEND`** &#124; **`_O_CREAT`**)|
-|**`R`**|**_O_RDONLY**|
+|**`R`**|**`_O_RDONLY`**|
 |**`r+`**|**`_O_RDWR`**|
 |**`w`**|**`_O_WRONLY`** (usually **`_O_WRONLY`** &#124; **`_O_CREAT`** &#124; **_O_TRUNC**)|
 |**`w+`**|**`_O_RDWR`** (usually **`_O_RDWR`** &#124; **`_O_CREAT`** &#124; **_O_TRUNC**)|
