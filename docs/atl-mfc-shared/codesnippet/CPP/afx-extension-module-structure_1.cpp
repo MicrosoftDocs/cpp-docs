@@ -1,4 +1,4 @@
-static AFX_EXTENSION_MODULE NVC_MFC_DLLDLL = { 0 };
+static AFX_EXTENSION_MODULE NVC_MFC_DLLDLL;
 extern "C" int APIENTRY
 DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 {
