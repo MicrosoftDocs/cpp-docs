@@ -163,7 +163,7 @@ The following table shows example input and expected output, demonstrating the r
 
 The Microsoft compiler optionally allows you to use *wildcard* characters, the question mark (**`?`**) and asterisk (**`*`**), to specify filename and path arguments on the command line.
 
-Command-line arguments are handled by an internal routine in the runtime startup code,, which by default doesn't expand wildcards into separate strings in the `argv` string array. You can enable wildcard expansion by including the *`setargv.obj`* file (*`wsetargv.obj`* file for `wmain`) in your **`/link`** compiler options or your **`LINK`** command line.
+Command-line arguments are handled by an internal routine in the runtime startup code, which by default doesn't expand wildcards into separate strings in the `argv` string array. You can enable wildcard expansion by including the *`setargv.obj`* file (*`wsetargv.obj`* file for `wmain`) in your **`/link`** compiler options or your **`LINK`** command line.
 
 For more information on runtime startup linker options, see [Link options](../c-runtime-library/link-options.md).
 
