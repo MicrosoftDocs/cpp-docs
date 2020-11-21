@@ -18,10 +18,10 @@ C++/CX supports declaring an *event member* or an *event block*. An event member
 
 ```cpp
 // event data member
-modifiereventdelegate^ event_name;
+modifier event delegate^ event_name;
 
 // event block
-modifiereventdelegate^ event_name
+modifier event delegate^ event_name
 {
    modifier return_value add(delegate^ name);
    modifier void remove(delegate^ name);
@@ -82,12 +82,12 @@ The **event** keyword lets you declare an event. An event is a way for a class t
 
 ```cpp
 // event data member
-modifiereventdelegate^ event_name;
+modifier event delegate^ event_name;
 
 // event block
-modifiereventdelegate^ event_name
+modifier event delegate^ event_name
 {
-   modifierreturn_valueadd(delegate^ name);
+   modifier return_value add(delegate^ name);
    modifier void remove(delegate^ name);
    modifier void raise(parameters);
 }

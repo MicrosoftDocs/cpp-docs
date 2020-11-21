@@ -61,9 +61,9 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 
 ## See also
 
-[Compiler Attributes](compiler-attributes.md)\
-[event_receiver](event-receiver.md)\
-[__event](../../cpp/event.md)\
-[__hook](../../cpp/hook.md)\
-[__unhook](../../cpp/unhook.md)\
-[Class Attributes](class-attributes.md)
+[Compiler attributes](compiler-attributes.md)\
+[`event_receiver`](event-receiver.md)\
+[`__event`](../../cpp/event.md)\
+[`__hook`](../../cpp/hook.md)\
+[`__unhook`](../../cpp/unhook.md)\
+[Class attributes](class-attributes.md)

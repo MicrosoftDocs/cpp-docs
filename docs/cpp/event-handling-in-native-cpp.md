@@ -87,4 +87,4 @@ MyHandler1 was called with value 123.
 
 ## See also
 
-[Event Handling](../cpp/event-handling.md)
+[Event handling](../cpp/event-handling.md)

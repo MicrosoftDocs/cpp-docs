@@ -55,4 +55,7 @@ int main() {
 
 [Keywords](../cpp/keywords-cpp.md)\
 [Event handling](../cpp/event-handling.md)\
+[`__event`](../cpp/event.md)\
+[`__hook`](../cpp/hook.md)\
+[`__unhook`](../cpp/unhook.md)\
 [Component extensions for .NET and UWP](../extensions/component-extensions-for-runtime-platforms.md)
