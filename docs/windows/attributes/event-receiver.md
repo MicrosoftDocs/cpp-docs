@@ -10,7 +10,7 @@ helpviewer_keywords: ["event_receiver attribute", "event receivers", "events [C+
 Creates an event receiver (sink).
 
 > [!NOTE]
-> Event attributes in native C++ are incompatible with Standard C++. They don't compile when you specify [`/permissive-`](../build/reference/permissive-standards-conformance.md) conformance mode.
+> Event attributes in native C++ are incompatible with Standard C++. They don't compile when you specify [`/permissive-`](../../build/reference/permissive-standards-conformance.md) conformance mode.
 
 ## Syntax
 

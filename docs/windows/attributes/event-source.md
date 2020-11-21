@@ -10,7 +10,7 @@ helpviewer_keywords: ["event handling, attributes", "event logs, event source", 
 Creates an event source.
 
 > [!NOTE]
-> Event attributes in native C++ are incompatible with Standard C++. They don't compile when you specify [`/permissive-`](../build/reference/permissive-standards-conformance.md) conformance mode.
+> Event attributes in native C++ are incompatible with Standard C++. They don't compile when you specify [`/permissive-`](../../build/reference/permissive-standards-conformance.md) conformance mode.
 
 ## Syntax
 
