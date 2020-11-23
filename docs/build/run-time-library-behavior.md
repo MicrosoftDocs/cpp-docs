@@ -116,7 +116,7 @@ The wizard provides the following code for MFC extension DLLs. In the code, `PRO
 #undef THIS_FILE
 static char THIS_FILE[] = __FILE__;
 #endif
-static AFX_EXTENSION_MODULE PROJNAMEDLL = { NULL, NULL };
+static AFX_EXTENSION_MODULE PROJNAMEDLL;
 
 extern "C" int APIENTRY
 DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
