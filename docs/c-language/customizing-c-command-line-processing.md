@@ -1,17 +1,20 @@
 ---
-title: "Customizing C Command-Line Processing"
-ms.date: "11/04/2016"
+title: "Customizing C command-line processing"
+description: "How to suppress `main` function argument and environment parameter handling in the runtime startup code."
+ms.date: 11/19/2020
 helpviewer_keywords: ["_spawn functions", "command line, processing", "command-line processing", "startup code, customizing command-line processing", "environment, environment-processing routine", "_setargv function", "command line, processing arguments", "suppressing environment processing", "_exec function"]
-ms.assetid: c20fa11d-b35b-4f3e-93b6-2cd5a1c3c993
 ---
-# Customizing C Command-Line Processing
+# Customizing C command-line processing
 
-If your program does not take command-line arguments, you can save a small amount of space by suppressing use of the library routine that performs command-line processing. This routine is called **_setargv** (or **_wsetargv** in the wide-character environment), as described in [Expanding Wildcard Arguments](../c-language/expanding-wildcard-arguments.md). To suppress its use, define a routine that does nothing in the file containing the **main** function and name it **_setargv** (or **_wsetargv** in the wide-character environment). The call to **_setargv** or **_wsetargv** is then satisfied by your definition of **_setargv** or **_wsetargv** , and the library version is not loaded.
+If your program doesn't take command-line arguments, you can suppress the command-line processing routine to save a small amount of space. To suppress its use, include the *`noarg.obj`* file (for both `main` and `wmain`) in your **`/link`** compiler options or your **`LINK`** command line.
 
-Similarly, if you never access the environment table through the `envp` argument, you can provide your own empty routine to be used in place of **_setenvp** (or **_wsetenvp**), the environment-processing routine.
+Similarly, if you never access the environment table through the *`envp`* argument, you can suppress the internal environment-processing routine. To suppress its use, include the *`noenv.obj`* file (for both `main` and `wmain`) in your **`/link`** compiler options or your **`LINK`** command line.
 
-If your program makes calls to the **_spawn** or **_exec** family of routines in the C run-time library, you should not suppress the environment-processing routine, since this routine is used to pass an environment from the spawning process to the new process.
+For more information on runtime startup linker options, see [Link options](../c-runtime-library/link-options.md).
+
+Your program might make calls to the `spawn` or `exec` family of routines in the C runtime library. If it does, you shouldn't suppress the environment-processing routine, since it's used to pass an environment from the parent process to the child process.
 
 ## See also
 
-[main Function and Program Execution](../c-language/main-function-and-program-execution.md)
+[`main` function and program execution](../c-language/main-function-and-program-execution.md)\
+[Link options](../c-runtime-library/link-options.md).
