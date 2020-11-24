@@ -1,32 +1,35 @@
 ---
-title: "Event Handling in Native C++"
-ms.date: "05/07/2019"
+title: "Event handling in native C++"
+description: "Learn how to use the Microsoft C++ extensions for native C++ event handling."
+ms.date: 11/20/2020
 helpviewer_keywords: ["event handling [C++]"]
-ms.assetid: e4b9219a-15d8-42fb-83c8-6d2e4e087c8d
 ---
-# Event Handling in Native C++
+# Event handling in native C++
 
-In native C++ event handling, you set up an event source and event receiver using the [event_source](../windows/attributes/event-source.md) and [event_receiver](../windows/attributes/event-receiver.md) attributes, respectively, specifying `type`=`native`. These attributes allow the classes to which they are applied to fire events and handle events in a native, non-COM context.
+In native C++ event handling, you set up an event source and event receiver using the [event_source](../windows/attributes/event-source.md) and [event_receiver](../windows/attributes/event-receiver.md) attributes, respectively, specifying `type`=`native`. These attributes allow the classes they're applied on to fire events and handle events in a native, non-COM context.
 
-## Declaring Events
+> [!NOTE]
+> Event attributes in native C++ are incompatible with Standard C++. They don't compile when you specify [`/permissive-`](../build/reference/permissive-standards-conformance.md) conformance mode.
 
-In an event source class, use the [__event](../cpp/event.md) keyword on a method declaration to declare the method as an event. Make sure to declare the method, but do not define it; to do so will generate a compiler error, because the compiler defines the method implicitly when it is made into an event. Native events can be methods with zero or more parameters. The return type can be void or any integral type.
+## Declaring events
 
-## Defining Event Handlers
+In an event source class, use the [`__event`](../cpp/event.md) keyword on a method declaration to declare the method as an event. Make sure to declare the method, but don't define it. If you do, it generates a compiler error, because the compiler defines the method implicitly when it's made into an event. Native events can be methods with zero or more parameters. The return type can be **`void`** or any integral type.
 
-In an event receiver class, you define event handlers, which are methods with signatures (return types, calling conventions, and arguments) that match the event that they will handle.
+## Defining event handlers
 
-## Hooking Event Handlers to Events
+In an event receiver class, you define event handlers. Event handlers are methods with signatures (return types, calling conventions, and arguments) that match the event that they'll handle.
 
-Also in an event receiver class, you use the intrinsic function [__hook](../cpp/hook.md) to associate events with event handlers and [__unhook](../cpp/unhook.md) to dissociate events from event handlers. You can hook several events to an event handler, or several event handlers to an event.
+## Hooking event handlers to events
 
-## Firing Events
+Also in an event receiver class, you use the intrinsic function [`__hook`](../cpp/hook.md) to associate events with event handlers and [`__unhook`](../cpp/unhook.md) to disassociate events from event handlers. You can hook several events to an event handler, or several event handlers to an event.
 
-To fire an event, simply call the method declared as an event in the event source class. If handlers have been hooked to the event, the handlers will be called.
+## Firing events
 
-### Native C++ Event Code
+To fire an event, call the method declared as an event in the event source class. If handlers have been hooked to the event, the handlers will be called.
 
-The following example shows how to fire an event in native C++. To compile and run the example, refer to the comments in the code.
+### Native C++ event code
+
+The following example shows how to fire an event in native C++. To compile and run the example, refer to the comments in the code. To build the code in the Visual Studio IDE, verify that the **`/permissive-`** option is turned off.
 
 ## Example
 
@@ -34,6 +37,7 @@ The following example shows how to fire an event in native C++. To compile and r
 
 ```cpp
 // evh_native.cpp
+// compile by using: cl /EHsc /W3 evh_native.cpp
 #include <stdio.h>
 
 [event_source(native)]
@@ -83,4 +87,4 @@ MyHandler1 was called with value 123.
 
 ## See also
 
-[Event Handling](../cpp/event-handling.md)
+[Event handling](../cpp/event-handling.md)
