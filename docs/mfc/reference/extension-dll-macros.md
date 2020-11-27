@@ -201,7 +201,7 @@ TRUE if the MFC extension DLL is successfully initialized; otherwise, FALSE.
 For example:
 
 ```cpp
-static AFX_EXTENSION_MODULE NVC_MFC_DLLDLL = { NULL, NULL };
+static AFX_EXTENSION_MODULE NVC_MFC_DLLDLL;
 extern "C" int APIENTRY
 DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 {
