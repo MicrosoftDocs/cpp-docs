@@ -49,7 +49,6 @@ To reference any key in a *CMakeSettings.json* file, prepend `cmake.` to it in *
 ```json
 {
   "version": "0.2.1",
-  "defaults": {},
   "configurations": [
     {
       "type": "default",
