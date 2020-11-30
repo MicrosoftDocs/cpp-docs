@@ -2,12 +2,12 @@
 title: "Tutorial: Debug a CMake project on a remote Windows machine"
 ms.date: "12/2/2020"
 ms.topic: tutorial
-description: "How to use Visual Studio C++ on Windows to create and build a CMake project that you can deploy and debug on a remote Windows machine."
+description: "How to use Visual Studio C++ on Windows to create and build a CMake project. You'll then deploy and debug it on a remote Windows machine."
 ---
 
 # Tutorial: Debug a CMake project on a remote Windows machine
 
-This tutorial shows how to use Visual Studio C++ on Windows to create and build a CMake project that you can deploy and debug on a remote Windows machine. This tutorial is specific to ARM64, but the  steps can be generalized to remotely deploy and debug a CMake project on other architectures.
+This tutorial shows how to use Visual Studio C++ on Windows to create and build a CMake project that you can deploy and debug on a remote Windows machine. This tutorial is specific to ARM64, but the  steps can be generalized for other architectures.
 
 This tutorial focuses on ARM64 because that's the default remote debugging experience. Attempting to debug without configuring your CMake project as shown in this tutorial will result in an error that Visual Studio can't find the remote machine.
 
@@ -78,7 +78,7 @@ Change the **Solution Explorer** view to targets view by selecting the **Switch 
 
 Then double-click **CMake Targets View**. The **CMake Targets View** appears.
 
-In the **Solution Explorer**, open the project folder, **CMakeProject3 Project**, this this example, and then right-click the executable and select **Add Debug Configuration**:
+In the **Solution Explorer**, open the project folder, **CMakeProject3 Project**, this example, and then right-click the executable and select **Add Debug Configuration**:
 
 ![Select add debug configuration](media/cmake-targets-add-debug-configuration.png)
 
