@@ -1,15 +1,15 @@
 ---
-title: "Tutorial: Debug a CMake project on a remote ARM64 Windows machine"
-ms.date: "11/21/2020"
+title: "Tutorial: Debug a CMake project on a remote Windows machine"
+ms.date: "12/2/2020"
 ms.topic: tutorial
-description: "How to use Visual Studio C++ on Windows to create and build a CMake project that you can deploy and debug on a remote ARM64 Windows machine."
+description: "How to use Visual Studio C++ on Windows to create and build a CMake project that you can deploy and debug on a remote Windows machine."
 ---
 
-# Tutorial: Debug a CMake project on a remote ARM64 Windows machine
+# Tutorial: Debug a CMake project on a remote Windows machine
 
-This tutorial shows how to use Visual Studio C++ on Windows to create and build a CMake project that you can deploy and debug on a remote ARM64 Windows machine. These steps can be generalized to remotely deploy and debug a CMake project on other architectures.
+This tutorial shows how to use Visual Studio C++ on Windows to create and build a CMake project that you can deploy and debug on a remote Windows machine. This tutorial is specific to ARM64, but the  steps can be generalized to remotely deploy and debug a CMake project on other architectures.
 
-This tutorial focuses on ARM64 because the default debugging experience for ARM64 is remote debugging. Attempting to debug ARM64 without configuring your CMake project as shown in this tutorial results in an error that Visual Studio can't find the remote machine.
+This tutorial focuses on ARM64 because that's the default remote debugging experience. Attempting to debug without configuring your CMake project as shown in this tutorial will result in an error that Visual Studio can't find the remote machine.
 
 In this tutorial, you'll learn how to:
 
@@ -24,7 +24,7 @@ In this tutorial, you'll learn how to:
 
 ### On the host machine
 
-To set up Visual Studio for cross-platform C++ development, install the ARM64 build tools:
+To set up Visual Studio for cross-platform C++ development, install the tools that allow you to build for the target architecture. For this tutorial, install the ARM64 build tools:
 
 1. Run the Visual Studio Installer. If you haven't installed Visual Studio yet, see [Install Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio#:~:text=Install%20Visual%20Studio%201%20Make%20sure%20your%20computer,...%204%20Choose%20workloads.%20...%20More%20items...%20)
 1. On the Visual Studio Installer home screen, choose **Modify**. (Look under **More** if you don't see it).
@@ -37,8 +37,8 @@ To set up Visual Studio for cross-platform C++ development, install the ARM64 bu
 
 ### On the remote machine
 
-1. Install the ARM64 remote tools on the remote machine as described in [Download and Install the remote tools](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-cpp?%23download-and-install-the-remote-tools#download-and-install-the-remote-tools).
-1. Follow the directions in [set up the remote debugger](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-cpp?%23download-and-install-the-remote-tools#BKMK_setup) on the remote ARM64 Windows machine.
+1. Install the remote tools on the remote machine. For this tutorial, install the ARM64 tools as described in [Download and Install the remote tools](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-cpp?%23download-and-install-the-remote-tools#download-and-install-the-remote-tools).
+1. Install a remote debugger on the remote machine. For this tutorial, follow the directions in [set up the remote debugger](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-cpp?%23download-and-install-the-remote-tools#BKMK_setup) on the remote  Windows machine.
 
 ## Create a CMake project
 
@@ -62,16 +62,15 @@ Select the **Toolset** dropdown. From the list of build tools, choose **msvc_arm
 ![CMake settings dialog](media/cmake-settings-editor2.png)
 
 > [!Note]
-> In the **Toolset** dropdown, **msvc_arm64** builds for 64-bit ARM. **msvc_arm64 x64** uses the 64-bit host tools to cross-compile for ARM64--which is what you will do in this tutorial.
+> In the **Toolset** dropdown, **msvc_arm64** uses the 32-bit host tools to build for 64-bit ARM. **msvc_arm64 x64** uses the 64-bit host tools to cross-compile for ARM64--which is what you will do in this tutorial.
 
 Save the `CMakeSettings.json` file and ensure that your **arm64-debug** configuration is selected in the configuration dropdown:
 
 ![Ensure that arm64-debug is selected in the Visual Studio configurations drop-down](media/vs2019-cmake-manage-configurations-arm.png) 
 
-
 ## Add a debug configuration file
 
-Next, add configuration information that tells Visual Studio where to find your remote machine, and other configuration details.
+Next, add configuration information that tells Visual Studio where to find your remote machine, along with other configuration details.
 
 Change the **Solution Explorer** view to targets view by selecting the **Switch Views** button:
 
@@ -79,18 +78,21 @@ Change the **Solution Explorer** view to targets view by selecting the **Switch 
 
 Then double-click **CMake Targets View**. The **CMake Targets View** appears.
 
-In the **Solution Explorer**, right-click the executable and select **Add Debug Configuration**:
+In the **Solution Explorer**, open the project folder, **CMakeProject3 Project**, this this example, and then right-click the executable and select **Add Debug Configuration**:
 
 ![Select add debug configuration](media/cmake-targets-add-debug-configuration.png)
 
 This creates a `launch.vs.json` file in your project. Open it and change the following entries to enable remote debugging:
 
-- `projectTarget` : set to the name of your target, for example, `CMakeProject3.exe` You can check the startup item dropdown for the .exe file to get this name.
+- `projectTarget` : this will be set correctly if you added the debug configuration file from the **Solution Explorer** targets view. If you added it from folder view, check the startup item dropdown to get the unique name of your target, for example, `CMakeProject3.exe', in this tutorial.
 - `remoteMachineName` : set to the IP address of the remote ARM64 machine, or its machine name.
 
-## Start the remote debugger monitor on the ARM64 Windows machine
+> [!Note]
+>  If you want to remain in the folder view, in the **Solution Explorer**, right-click the `CMakeLists.txt` file and select **Add Debug Configuration**. This experiences differs in two ways from adding the debug configuration from the targets view. First, you'll be asked to select a debugger (you'd select  **C/C++ Remote Windows Debug** in this case). Second, Visual Studio will provide less configuration template information that you'll need to provide yourself, such as changing the **`type`** to **remoteWindows** and  adding the **`remoteMachineName`** entry. 
 
-Before you run your CMake project, ensure that the Visual Studio 2019 remote debugger is running on the remote ARM64 Windows machine.  You may need to change the remote debugger options depending on your authentication situation.
+## Start the remote debugger monitor on the remote Windows machine
+
+Before you run your CMake project, ensure that the Visual Studio 2019 remote debugger is running on the remote Windows machine.  You may need to change the remote debugger options depending on your authentication situation.
 
 From the Visual Studio Remote Debugger menu bar, select **Tools** > **Options**. Then set authentication to match how your environment is set up:
 
@@ -141,7 +143,7 @@ To start debugging, on the Visual Studio toolbar choose **Debug** > **Start Debu
 If it doesn't start, ensure that the following are set correctly in the `launch.vs.json` file:
 - `"remoteMachineName"` should be set to the IP address, or machine name, of the remote ARM64 Windows machine.
 - `"name"` should match the selection in the Visual Studio startup item dropdown.
-- `"projectTarget"` should match the name of the executable file.
+- `"projectTarget"` should match the name of the CMake target you want to debug.
 - `"type"` should be `"remoteWindows"`
 - If the authentication type on the remote debugger is set to **No Authentication**, you should have `"windowsAuthenticationType": "Remote Windows with No authentication"` set in the `launch.vs.json` file.
 
