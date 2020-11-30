@@ -88,7 +88,7 @@ This creates a `launch.vs.json` file in your project. Open it and change the fol
 - `remoteMachineName` : set to the IP address of the remote ARM64 machine, or its machine name.
 
 > [!Note]
->  If you want to remain in the folder view, in the **Solution Explorer**, right-click the `CMakeLists.txt` file and select **Add Debug Configuration**. This experiences differs in two ways from adding the debug configuration from the targets view. First, you'll be asked to select a debugger (you'd select  **C/C++ Remote Windows Debug** in this case). Second, Visual Studio will provide less configuration template information that you'll need to provide yourself, such as changing the **`type`** to **remoteWindows** and  adding the **`remoteMachineName`** entry. 
+>  If you want to use the folder view instead of the targets view, in the **Solution Explorer**, note that you'll right-click the `CMakeLists.txt` file and select **Add Debug Configuration**. This experience differs in two ways from adding the debug configuration from the targets view. First, you'll be asked to select a debugger (select  **C/C++ Remote Windows Debug** in this case). Second, Visual Studio will provide less configuration template information in the `launch.vs.json` file that you'll need to add yourself, such as changing the **`type`** to **remoteWindows** and  adding the **`remoteMachineName`** entry.
 
 ## Start the remote debugger monitor on the remote Windows machine
 
