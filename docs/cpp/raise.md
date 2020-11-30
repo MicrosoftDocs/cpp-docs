@@ -1,23 +1,24 @@
 ---
 title: "__raise"
-ms.date: "11/04/2016"
+description: "Learn how to use the Microsoft C++ extension keyword `__raise` for native event handling."
+ms.date: 11/20/2020
 f1_keywords: ["__raise", "__raise_cpp"]
 helpviewer_keywords: ["__raise keyword [C++]"]
-ms.assetid: 6f1ae418-5f0f-48b6-9f6e-8ea7e66b239a
 ---
-# __raise
+# `__raise` keyword
 
 Emphasizes the call site of an event.
 
+> [!NOTE]
+> Event attributes in native C++ are incompatible with Standard C++. They don't compile when you specify [`/permissive-`](../build/reference/permissive-standards-conformance.md) conformance mode.
+
 ## Syntax
 
-```
-__raise method-declarator;
-```
+> **`__raise`** *`method-declarator`* **`;`**
 
 ## Remarks
 
-From managed code, an event can only be raised from within the class where it is defined. See [event](../extensions/event-cpp-component-extensions.md) for more information.
+From managed code, an event can only be raised from within the class where it's defined. For more information, see [`event`](../extensions/event-cpp-component-extensions.md).
 
 The keyword **`__raise`** causes an error to be emitted if you call a non-event.
 
@@ -52,6 +53,9 @@ int main() {
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
-[Event Handling](../cpp/event-handling.md)<br/>
-[Component Extensions for Runtime Platforms](../extensions/component-extensions-for-runtime-platforms.md)
+[Keywords](../cpp/keywords-cpp.md)\
+[Event handling](../cpp/event-handling.md)\
+[`__event`](../cpp/event.md)\
+[`__hook`](../cpp/hook.md)\
+[`__unhook`](../cpp/unhook.md)\
+[Component extensions for .NET and UWP](../extensions/component-extensions-for-runtime-platforms.md)
