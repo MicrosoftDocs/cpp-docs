@@ -1,6 +1,7 @@
 ---
 title: "launch.vs.json schema reference (C++)"
-ms.date: "08/20/2019"
+description: "Describes the schema elements for the `launch.vs.json` file"
+ms.date: "12/02/2020"
 helpviewer_keywords: ["launch.vs.json file [C++]"]
 ---
 # launch.vs.json schema reference (C++)
@@ -11,20 +12,22 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 
 |Property|Type|Description|
 |-|-|-|
-|`name`|string|Specifies the name of the entry in the Debug target dropdown.|
-|`type`|string|Specifies whether the project is a dll or .exe (Defaults to .exe)|
-|`project`|string|Specifies the relative path to the project file.|
-|`projectTarget`|string|Specifies the optional target invoked when building `project`. This `projectTarget` must exist already and match the name in the **Debug Target** dropdown.|
-|`debugType`|string|Specifies the debugging mode according to the type of code (native, managed, or mixed). This will automatically be detected unless this parameter is set. Allowed values: "native", "managed", "mixed".|
-|`inheritEnvironments`|array|Specifies a set of environment variables inherited from multiple sources. You can define some variables in files like *CMakeSettings.json* or *CppProperties.json* and make them available to debug context.  **Visual Studio 16.4:**: Specify environment variables on a per-target basis using the `env.VARIABLE_NAME` syntax. To unset a variable, set it to "null".|
 |`args`|array|Specifies the command-line arguments passed to the launched program.|
+|`buildConfigurations`|array| A key-value pair that specifies the name of the build mode to apply the configurations. For example, `Debug` or `Release` and the configurations to use according to the selected build mode.
 |`currentDir`|string|Specifies the full directory path to the Build Target. This will automatically be detected unless this parameter is set.|
+|`cwd`|string|Full path to the directory on the remote system where the program will run. Defaults to `"${debugInfo.defaultWorkingDirectory}"`|
+|`debugType`|string|Specifies the debugging mode according to the type of code (native, managed, or mixed). This is automatically detected unless this parameter is set. Allowed values: `"native"`", `"managed"`, `"mixed"`.|
+|`env`|array| Specifies a key-value list of custom environment variables. For example: `env:{"myEnv":"myVal"}`.|
+|`inheritEnvironments`|array|Specifies a set of environment variables inherited from multiple sources. You can define some variables in files like *`CMakeSettings.json`* or *`CppProperties.json`* and make them available to debug context.  **Visual Studio 16.4:**: Specify environment variables on a per-target basis using the `env.VARIABLE_NAME` syntax. To unset a variable, set it to `"null"`.|
+|`name`|string|Specifies the name of the entry in the **Startup Item** dropdown.|
 |`noDebug`|boolean|Specifies whether to debug the launched program. The default value for this parameter is **`false`** if not specified.|
+|`portName`|string|Specifies the name of port when attaching to a running process.|
+| `program`|string|The debug command to execute. Defaults to `"${debugInfo.fullTargetPath}"`.|
+|`project`|string|Specifies the relative path to the project file. Normally, you don't need to change this value when debugging a CMake project. |
+|`projectTarget`|string|Specifies the optional target invoked when building `project`. The target must match the name in the **Startup Item** dropdown.|
 |`stopOnEntry`|boolean|Specifies whether to break a soon as the process is launched and the debugger attaches. The default value for this parameter is **`false`**.|
 |`remoteMachine`|string|Specifies the name of the remote machine where the program is launched.|
-|`env`|array| Specifies a key-value list of custom environment variables. env:{"myEnv":"myVal"}.|
-|`portName`|string|Specifies the name of port when attaching to a running process.|
-|`buildConfigurations`|array| A key-value pair that specifies the name of the build mode to apply the configurations. For example, `Debug` or `Release` and the configurations to use according to the selected build mode.
+|`type`|string|Specifies whether the project is a `dll` or `exe` Defaults to .exe|
 
 ## C++ Linux properties
 
@@ -41,7 +44,6 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 |`visualizerFile`|string|.natvis file to be used when debugging this process. This option is not compatible with GDB pretty printing. See "showDisplayString" if using this setting.|
 |`showDisplayString`|boolean|When a visualizerFile is specified, showDisplayString will enable the display string. Turning on this option can cause slower performance during debugging.|
 |`remoteMachineName`|string|The remote Linux machine that hosts gdb and the program to debug. Use the Connection Manager for adding new Linux machines. When using CMake, the macro `${debugInfo.remoteMachineName}` can be used as the value of this field.|
-|`cwd`|string|The working directory of the target on the remote machine. When using CMake, the macro `${debugInfo.defaultWorkingDirectory}` can be used as the value of this field. Default value is the remote workspace root, unless overridden in the *CMakeLists.txt* file.|
 |`miDebuggerPath`|string|The path to the MI-enabled debugger (such as gdb). When unspecified, it will search PATH first for the debugger.|
 |`miDebuggerServerAddress`|string|Network address of the MI-enabled debugger server to connect to. Example: localhost:1234.|
 |`setupCommands`|array|One or more GDB/LLDB commands to execute in order to set up the underlying debugger. Example: `"setupCommands": [ { "text": "-enable-pretty-printing", "description": "Enable GDB pretty printing", "ignoreFailures": true }]`. See [Launch setup commands](#launch_setup_commands).|
@@ -53,6 +55,17 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 |`coreDumpPath`|string|Optional full path to a core dump file for the specified program. Defaults to null.|
 externalConsole|boolean|If true, a console is launched for the debuggee. If **`false`**, no console is launched. Defaults to **`false`**. NOTE: This option is ignored in some cases for technical reasons.|
 |`pipeTransport`|string|When present, this tells the debugger to connect to a remote computer using another executable as a pipe that will relay standard input/output between Visual Studio and the MI-enabled debugger (such as gdb). Allowed values: one or more [Pipe Transport Options](#pipe_transport_options).|
+
+## <a name="remote_deploy_debug"></a> Remote debug and deploy options
+
+|`cwd`|string|The working directory of the target on the remote machine. When using CMake, the macro `${debugInfo.defaultWorkingDirectory}` can be used as the value of this field. The default value is the remote workspace root, unless overridden in the *`CMakeLists.txt`* file.|
+|`deploy`|string|Specifies extra files/directories to deploy. For example: `deployDirectory:{"sourcePath1":"targetPath1", sourcePath2":"targetPath2"}`|
+|`deployDirectory`|string|The location on the remote machine where project outputs are automatically deployed to. Defaults to `%temp%/<targetname>`|
+|`deployDebugRuntimeLibraries`|string|Specifies to deploy the debug runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"Debug"`|
+|`deployRuntimeLibraries`|string|Specifies to deploy the runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"MinSizeRel"`, `"RelWithDebInfo"`, or `"Release"`.|
+|`disableDeploy` | boolean | Specifies whether any files should be deployed. |
+|`remoteMachineName`|string|Specifies the name of the remote ARM64 Windows machine where the program is launched. May be the server name or the remote machine's IP address|
+|`windowsAuthenticationType`|string|Specifies the type of remote connection. Possible values are `"Remote Windows authentication"` and `"Remote Windows with No authentication"` The default is `"Remote Windows authentication"`.|
 
 ## <a name="launch_setup_commands"></a> Launch setup commands
 
