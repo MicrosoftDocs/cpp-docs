@@ -1,15 +1,15 @@
 ---
 title: "div, ldiv, lldiv"
-ms.date: "04/05/2018"
-api_name: ["div"]
+description: "The Microsoft C runtime library div, ldiv, and lldiv functions compute the quotient and the remainder of two integer values."
+ms.date: 11/21/2020
+api_name: ["div", "ldiv", "lldiv"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
-f1_keywords: ["div"]
+f1_keywords: ["div", "ldiv", "lldiv"]
 helpviewer_keywords: ["div function", "quotients, computing", "quotients", "dividing integers", "remainder computing"]
-ms.assetid: 8ae80d97-54fd-499e-b14c-e30993b58119
 ---
-# div, ldiv, lldiv
+# `div`, `ldiv`, `lldiv`
 
 Computes the quotient and the remainder of two integer values.
 
@@ -43,27 +43,27 @@ lldiv_t div(
 
 ### Parameters
 
-*numer*<br/>
+*`numer`*\
 The numerator.
 
-*denom*<br/>
+*`denom`*\
 The denominator.
 
 ## Return Value
 
-**div** called by using arguments of type **`int`** returns a structure of type **div_t**, which comprises the quotient and the remainder. The return value with arguments of type **`long`** is **ldiv_t**, and the return value with arguments of type **`long long`** is **lldiv_t**. **div_t**, **ldiv_t**, and **lldiv_t** are defined in \<stdlib.h>.
+**`div`** called by using arguments of type **`int`** returns a structure of type `div_t`, which contains the quotient and the remainder. The return value with arguments of type **`long`** is `ldiv_t`, and the return value with arguments of type **`long long`** is `lldiv_t`. The `div_t`, `ldiv_t`, and `lldiv_t` types are defined in \<stdlib.h>.
 
 ## Remarks
 
-The **div** function divides *numer* by *denom* and thereby computes the quotient and the remainder. The [div_t](../../c-runtime-library/standard-types.md) structure contains the quotient, **quot**, and the remainder, **rem**. The sign of the quotient is the same as that of the mathematical quotient. Its absolute value is the largest integer that is less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.
+The **`div`** function divides *`numer`* by *`denom`* and computes the quotient and the remainder. The [`div_t`](../../c-runtime-library/standard-types.md) structure contains the quotient, `quot`, and the remainder, `rem`. The sign of the quotient is the same as the sign of the mathematical quotient. Its absolute value is the largest integer that's less than the absolute value of the mathematical quotient. If the denominator is 0, the program terminates with an error message.
 
-The overloads of **div** that take arguments of type **`long`** or **`long long`** are only available to C++ code. The return types [ldiv_t](../../c-runtime-library/standard-types.md) and [lldiv_t](../../c-runtime-library/standard-types.md) contains members **quot** and **rem**, which have the same meanings as the members of **div_t**.
+The overloads of **`div`** that take arguments of type **`long`** or **`long long`** are only available to C++ code. The return types [`ldiv_t`](../../c-runtime-library/standard-types.md) and [`lldiv_t`](../../c-runtime-library/standard-types.md) contains members `quot` and `rem`, which have the same meanings as the members of `div_t`.
 
 ## Requirements
 
-|Routine|Required header|
-|-------------|---------------------|
-|**div**, **ldiv**, **lldiv**|\<stdlib.h>|
+| Routine | Required header |
+|--|--|
+| **`div`**, **`ldiv`**, **`lldiv`** | \<stdlib.h> |
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -107,6 +107,5 @@ The quotient is 67, and the remainder is 5
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[ldiv, lldiv]()<br/>
-[imaxdiv](imaxdiv.md)<br/>
+[Floating-point support](../../c-runtime-library/floating-point-support.md)\
+[`imaxdiv`](imaxdiv.md)
