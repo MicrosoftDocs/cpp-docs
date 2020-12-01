@@ -7,9 +7,9 @@ description: "How to use Visual Studio C++ on Windows to create and build a CMak
 
 # Tutorial: Debug a CMake project on a remote Windows machine
 
-This tutorial shows how to use Visual Studio C++ on Windows to create and build a CMake project that you can deploy and debug on a remote Windows machine. This tutorial is specific to ARM64, but the  steps can be generalized for other architectures.
+This tutorial shows how to use Visual Studio C++ on Windows to create and build a CMake project that you can deploy and debug on a remote Windows machine. This tutorial is specific to ARM64, but the steps can be generalized for other architectures.
 
-This tutorial focuses on ARM64 because that's the default remote debugging experience. Attempting to debug without configuring your CMake project as shown in this tutorial will result in an error that Visual Studio can't find the remote machine.
+The default debugging experience for ARM64 is remote debugging on Windows. Debugging an ARM64 CMake project without configuring your debug settings as shown in this tutorial will result in an error that Visual Studio can't find the remote machine.
 
 In this tutorial, you'll learn how to:
 
@@ -62,7 +62,7 @@ Select the **Toolset** dropdown. From the list of build tools, choose **msvc_arm
 ![CMake settings dialog](media/cmake-settings-editor2.png)
 
 > [!Note]
-> In the **Toolset** dropdown, **msvc_arm64** uses the 32-bit host tools to build for 64-bit ARM. **msvc_arm64 x64** uses the 64-bit host tools to cross-compile for ARM64--which is what you will do in this tutorial.
+> In the **Toolset** dropdown, **msvc_arm64** uses the 32-bit host tools to cross-compile ARM64, whereas **msvc_arm64 x64** uses the 64-bit host tools to cross-compile for ARM64--which is what you will do in this tutorial.
 
 Save the `CMakeSettings.json` file and ensure that your **arm64-debug** configuration is selected in the configuration dropdown:
 
@@ -84,11 +84,16 @@ In the **Solution Explorer**, open the project folder, **CMakeProject3 Project**
 
 This creates a `launch.vs.json` file in your project. Open it and change the following entries to enable remote debugging:
 
-- `projectTarget` : this will be set correctly if you added the debug configuration file from the **Solution Explorer** targets view. If you added it from folder view, check the startup item dropdown to get the unique name of your target, for example, `CMakeProject3.exe', in this tutorial.
+- `projectTarget` : this is set for you if you added the debug configuration file from the **Solution Explorer** targets view.
 - `remoteMachineName` : set to the IP address of the remote ARM64 machine, or its machine name.
 
+For more information about these, and other `launch.vs.json` settings, see [launch.vs.json schema reference](launch-vs-schema-reference-cpp.md).
+
 > [!Note]
->  If you want to use the folder view instead of the targets view, in the **Solution Explorer**, note that you'll right-click the `CMakeLists.txt` file and select **Add Debug Configuration**. This experience differs in two ways from adding the debug configuration from the targets view. First, you'll be asked to select a debugger (select  **C/C++ Remote Windows Debug** in this case). Second, Visual Studio will provide less configuration template information in the `launch.vs.json` file that you'll need to add yourself, such as changing the **`type`** to **remoteWindows** and  adding the **`remoteMachineName`** entry.
+>  If you want to use the folder view instead of the targets view in **Solution Explorer**, right-click the `CMakeLists.txt` file and select **Add Debug Configuration**. This experience differs from adding the debug configuration from the targets view in the following ways:
+> - You'll be asked to select a debugger (select  **C/C++ Remote Windows Debug** in this case).
+> - Visual Studio will provide less configuration template information in the `launch.vs.json` file that you'll need to add yourself, such as the `remoteMachineName` and `projectTarget` entries. When you add the configuration from the targets view, you only need to specify `remoteMachineName`.
+> - For the `projectTarget` setting value, check the startup item dropdown to get the unique name of your target, for example, `CMakeProject3.exe', in this tutorial.
 
 ## Start the remote debugger monitor on the remote Windows machine
 
@@ -160,7 +165,8 @@ In this tutorial, you created a CMake project, configured it to build for Window
 Learn more about configuring and debugging CMake projects in Visual Studio:
 
 > [!div class="nextstepaction"]
-> [CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)<br/><br/>
-> [Customize CMake build settings](customize-cmake-settings.md)<br/><br/>
-> [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)<br/><br/>
-> [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)
+> [CMake Projects in Visual Studio](cmake-projects-in-visual-studio.md)\
+> [Customize CMake build settings](customize-cmake-settings.md)\
+> [Configure CMake debugging sessions](configure-cmake-debugging-sessions.md)\
+> [CMake predefined configuration reference](cmake-predefined-configuration-reference.md)\
+[launch.vs.json schema reference](launch-vs-schema-reference-cpp.md)
