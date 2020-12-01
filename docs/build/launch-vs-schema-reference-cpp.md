@@ -18,7 +18,7 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 |`cwd`|string|Full path to the directory on the remote system where the program will run. Defaults to `"${debugInfo.defaultWorkingDirectory}"`|
 |`debugType`|string|Specifies the debugging mode according to the type of code (native, managed, or mixed). This is automatically detected unless this parameter is set. Allowed values: `"native"`", `"managed"`, `"mixed"`.|
 |`env`|array| Specifies a key-value list of custom environment variables. For example: `env:{"myEnv":"myVal"}`.|
-|`inheritEnvironments`|array|Specifies a set of environment variables inherited from multiple sources. You can define some variables in files like *`CMakeSettings.json`* or *`CppProperties.json`* and make them available to debug context.  **Visual Studio 16.4:**: Specify environment variables on a per-target basis using the `env.VARIABLE_NAME` syntax. To unset a variable, set it to `"null"`.|
+|`inheritEnvironments`|array|Specifies a set of environment variables inherited from multiple sources. You can define some variables in files like *`CMakeSettings.json`* or *`CppProperties.json`* and make them available to debug context.  **Visual Studio 16.4:** Specify environment variables on a per-target basis using the `env.VARIABLE_NAME` syntax. To unset a variable, set it to `"null"`.|
 |`name`|string|Specifies the name of the entry in the **Startup Item** dropdown.|
 |`noDebug`|boolean|Specifies whether to debug the launched program. The default value for this parameter is **`false`** if not specified.|
 |`portName`|string|Specifies the name of port when attaching to a running process.|
@@ -37,35 +37,39 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 |`processId`|integer|Optional process ID to attach the debugger to.|
 |`sourceFileMap`|object|Optional source file mappings passed to the debug engine. Format: `{ "\<Compiler source location>": "\<Editor source location>" }` or `{ "\<Compiler source location>": { "editorPath": "\<Editor source location>", "useForBreakpoints": true } }`. Example: `{ "/home/user/foo": "C:\\foo" }` or `{ "/home/user/foo": { "editorPath": "c:\\foo", "useForBreakpoints": true } }`. See [Source file map options](#source_file_map_options).|
 |`additionalProperties`|string|One of the sourceFileMapOptions. (See below.)|
-|`MIMode`|string|Indicates the type of MI-enabled console debugger that the MIDebugEngine will connect to. Allowed values are "gdb", "lldb".|
+|`MIMode`|string|Indicates the type of MI-enabled console debugger that the MIDebugEngine will connect to. Allowed values are `"gdb"`, `"lldb"`.|
 |`args`|array|Command-line arguments passed to the program.|
-|`environment`|array|Environment variables to add to the environment for the program. Example: [ { "name": "squid", "value": "clam" } ].|
-|`targetArchitecture`|string|The architecture of the debuggee. This will automatically be detected unless this parameter is set. Allowed values are x86, arm, arm64, mips, x64, amd64, x86_64.|
-|`visualizerFile`|string|.natvis file to be used when debugging this process. This option is not compatible with GDB pretty printing. See "showDisplayString" if using this setting.|
-|`showDisplayString`|boolean|When a visualizerFile is specified, showDisplayString will enable the display string. Turning on this option can cause slower performance during debugging.|
+|`environment`|array|Environment variables to add to the environment for the program. Example: `[ { "name": "squid", "value": "clam" } ]`.|
+|`targetArchitecture`|string|The architecture of the debuggee. This will automatically be detected unless this parameter is set. Allowed values are `x86`, `arm`, `arm64`, `mips`, `x64`, `amd64`, `x86_64`.|
+|`visualizerFile`|string|The .natvis file to be used when debugging this process. This option isn't compatible with GDB pretty printing. See `"showDisplayString"` if you use this setting.|
+|`showDisplayString`|boolean|When a visualizerFile is specified, `showDisplayString` will enable the display string. Turning on this option can slow performance during debugging.|
 |`remoteMachineName`|string|The remote Linux machine that hosts gdb and the program to debug. Use the Connection Manager for adding new Linux machines. When using CMake, the macro `${debugInfo.remoteMachineName}` can be used as the value of this field.|
 |`miDebuggerPath`|string|The path to the MI-enabled debugger (such as gdb). When unspecified, it will search PATH first for the debugger.|
 |`miDebuggerServerAddress`|string|Network address of the MI-enabled debugger server to connect to. Example: localhost:1234.|
-|`setupCommands`|array|One or more GDB/LLDB commands to execute in order to set up the underlying debugger. Example: `"setupCommands": [ { "text": "-enable-pretty-printing", "description": "Enable GDB pretty printing", "ignoreFailures": true }]`. See [Launch setup commands](#launch_setup_commands).|
-|`customLaunchSetupCommands`|array|If provided, this replaces the default commands used to launch a target with some other commands. For example, this can be "-target-attach" in order to attach to a target process. An empty command list replaces the launch commands with nothing, which can be useful if the debugger is being provided launch options as command-line options. Example: `"customLaunchSetupCommands": [ { "text": "target-run", "description": "run target", "ignoreFailures": false }]`.|
+|`setupCommands`|array|One or more GDB/LLDB commands to execute to set up the underlying debugger. Example: `"setupCommands": [ { "text": "-enable-pretty-printing", "description": "Enable GDB pretty printing", "ignoreFailures": true }]`. See [Launch setup commands](#launch_setup_commands).|
+|`customLaunchSetupCommands`|array|If provided, this replaces the default commands used to launch a target with some other commands. For example, this can be "-target-attach" to attach to a target process. An empty command list replaces the launch commands with nothing, which can be useful if the debugger is being provided launch options as command-line options. Example: `"customLaunchSetupCommands": [ { "text": "target-run", "description": "run target", "ignoreFailures": false }]`.|
 |`launchCompleteCommand`|string|The command to execute after the debugger is fully set up, to cause the target process to run. Allowed values are "exec-run", "exec-continue", "None". The default value is "exec-run".|
 |`debugServerPath`|string|Optional full path to debug server to launch. Defaults to null.|
 |`debugServerArgs`|string|Optional debug server args. Defaults to null.|
 |`filterStderr`|boolean|Search stderr stream for server-started pattern and log stderr to debug output. Defaults to **`false`**.|
 |`coreDumpPath`|string|Optional full path to a core dump file for the specified program. Defaults to null.|
-externalConsole|boolean|If true, a console is launched for the debuggee. If **`false`**, no console is launched. Defaults to **`false`**. NOTE: This option is ignored in some cases for technical reasons.|
+externalConsole|boolean|If true, a console is launched for the debuggee. If **`false`**, no console is launched. The default for this setting is **`false`**. This option is ignored in some cases for technical reasons.|
 |`pipeTransport`|string|When present, this tells the debugger to connect to a remote computer using another executable as a pipe that will relay standard input/output between Visual Studio and the MI-enabled debugger (such as gdb). Allowed values: one or more [Pipe Transport Options](#pipe_transport_options).|
 
 ## <a name="remote_deploy_debug"></a> Remote debug and deploy options
 
-|`cwd`|string|The working directory of the target on the remote machine. When using CMake, the macro `${debugInfo.defaultWorkingDirectory}` can be used as the value of this field. The default value is the remote workspace root, unless overridden in the *`CMakeLists.txt`* file.|
+Used when debugging and deploying an app on a remote machine.
+
+|Property|Type|Description|
+|-|-|-|
+|`cwd`|string|The working directory of the target on the remote machine. When using CMake, the macro `${debugInfo.defaultWorkingDirectory}` can be used as the value of this field. The default value is the remote workspace root unless overridden in the *`CMakeLists.txt`* file.|
 |`deploy`|string|Specifies extra files/directories to deploy. For example: `deployDirectory:{"sourcePath1":"targetPath1", sourcePath2":"targetPath2"}`|
 |`deployDirectory`|string|The location on the remote machine where project outputs are automatically deployed to. Defaults to `%temp%/<targetname>`|
 |`deployDebugRuntimeLibraries`|string|Specifies to deploy the debug runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"Debug"`|
 |`deployRuntimeLibraries`|string|Specifies to deploy the runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"MinSizeRel"`, `"RelWithDebInfo"`, or `"Release"`.|
 |`disableDeploy` | boolean | Specifies whether any files should be deployed. |
 |`remoteMachineName`|string|Specifies the name of the remote ARM64 Windows machine where the program is launched. May be the server name or the remote machine's IP address|
-|`windowsAuthenticationType`|string|Specifies the type of remote connection. Possible values are `"Remote Windows authentication"` and `"Remote Windows with No authentication"` The default is `"Remote Windows authentication"`.|
+|`windowsAuthenticationType`|string|Specifies the type of remote connection. Possible values are `"Remote Windows authentication"` and `"Remote Windows with No authentication"`. The default is `"Remote Windows authentication"`.|
 
 ## <a name="launch_setup_commands"></a> Launch setup commands
 
