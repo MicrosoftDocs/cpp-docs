@@ -90,9 +90,9 @@ This creates a `launch.vs.json` file in your project. Open it and change the fol
 For more information about these, and other `launch.vs.json` settings, see [launch.vs.json schema reference](launch-vs-schema-reference-cpp.md).
 
 > [!Note]
->  If you want to use the folder view instead of the targets view in **Solution Explorer**, right-click the `CMakeLists.txt` file and select **Add Debug Configuration**. This experience differs from adding the debug configuration from the targets view in the following ways:
+>  If you are using the folder view instead of the targets view in **Solution Explorer**, right-click the `CMakeLists.txt` file and select **Add Debug Configuration**. This experience differs from adding the debug configuration from the targets view in the following ways:
 > - You'll be asked to select a debugger (select  **C/C++ Remote Windows Debug** in this case).
-> - Visual Studio will provide less configuration template information in the `launch.vs.json` file that you'll need to add yourself, such as the `remoteMachineName` and `projectTarget` entries. When you add the configuration from the targets view, you only need to specify `remoteMachineName`.
+> - Visual Studio will provide less configuration template information in the `launch.vs.json` file so you'll need to add it yourself, such as the `remoteMachineName` and `projectTarget` entries. Alternatively, when you add the configuration from the targets view, you only need to specify `remoteMachineName`.
 > - For the `projectTarget` setting value, check the startup item dropdown to get the unique name of your target, for example, `CMakeProject3.exe', in this tutorial.
 
 ## Start the remote debugger monitor on the remote Windows machine
