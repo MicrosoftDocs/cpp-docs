@@ -7,9 +7,9 @@ description: "How to use Visual Studio C++ on Windows to create and build a CMak
 
 # Tutorial: Debug a CMake project on a remote Windows machine
 
-This tutorial shows how to use Visual Studio C++ on Windows to create and build a CMake project that you can deploy and debug on a remote Windows machine. This tutorial is specific to ARM64, but the steps can be generalized for other architectures.
+This tutorial uses Visual Studio C++ on Windows to create and build a CMake project that you can deploy and debug on a remote Windows machine. This tutorial is specific to Windows ARM64, but the steps can be generalized for other architectures.
 
-The default debugging experience for ARM64 is remote debugging on Windows. Debugging an ARM64 CMake project without configuring your debug settings as shown in this tutorial will result in an error that Visual Studio can't find the remote machine.
+In Visual Studio, the default debugging experience for ARM64 is remote debugging an ARM64 Windows machine. Debugging an ARM64 CMake project without configuring your debug settings as shown in this tutorial will result in an error that Visual Studio can't find the remote machine.
 
 In this tutorial, you'll learn how to:
 
@@ -24,10 +24,10 @@ In this tutorial, you'll learn how to:
 
 ### On the host machine
 
-To set up Visual Studio for cross-platform C++ development, install the tools that allow you to build for the target architecture. For this tutorial, install the ARM64 build tools:
+To set up Visual Studio for cross-platform C++ development, install the build tools for the target architecture. For this tutorial, install the ARM64 build tools by following these steps:
 
 1. Run the Visual Studio Installer. If you haven't installed Visual Studio yet, see [Install Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio#:~:text=Install%20Visual%20Studio%201%20Make%20sure%20your%20computer,...%204%20Choose%20workloads.%20...%20More%20items...%20)
-1. On the Visual Studio Installer home screen, choose **Modify**. (Look under **More** if you don't see it).
+1. On the Visual Studio Installer home screen, choose **Modify** (look under **More** if you don't see it).
 1. From the choices at the top, choose **Individual components**.
 1. Scroll down to the **Compilers, build tools, and runtimes** section.
 1. Ensure that the following are selected:
@@ -51,18 +51,22 @@ Give Visual Studio a few moments to create the project and populate the **Soluti
 
 ## Change the configuration to target ARM64
 
-Because you're targeting an ARM64 Windows machine, you need to use the ARM64 build tools. To select the ARM64 build tools, select the Visual Studio **Configuration** dropdown and select **Manage Configurations...**
+To target an ARM64 Windows machine, you need to build with ARM64 build tools. Select the Visual Studio **Configuration** dropdown and select **Manage Configurations...**
 
 ![Choose Manage Configurations in the Visual Studio configurations drop-down](media/vs2019-cmake-manage-configurations.png)
 
-Change the **Configuration name** to **arm64-debug**. This is a unique, friendly name to make it easier for you to identify these settings in the **Configuration** dropdown.
+Add a new configuration by selecting the green **+** button. Choose **arm64-debug** in the dialog that appears and press the **Select** button:
 
-Select the **Toolset** dropdown. From the list of build tools, choose **msvc_arm64_x64**. Your settings should now look something like this:
+![Add arm64-debug configuration](media/cmake-add-config-icon-with-target-dialog.png)
+
+This will add a debug configuration named **arm64-Debug** to the *`CmakeSettings.json`* file. This configuration name is a unique, friendly name to make it easier for you to identify these settings in the **Configuration** dropdown.
+
+The **Toolset** dropdown will be set to **msvc_arm64_x64**. Your settings should now look something like this:
 
 ![CMake settings dialog](media/cmake-settings-editor2.png)
 
 > [!Note]
-> In the **Toolset** dropdown, **msvc_arm64** uses the 32-bit host tools to cross-compile ARM64, whereas **msvc_arm64 x64** uses the 64-bit host tools to cross-compile for ARM64--which is what you will do in this tutorial.
+> In the **Toolset** dropdown, **msvc_arm64** uses 32-bit host tools to cross-compile to ARM64, whereas **msvc_arm64 x64** uses 64-bit host tools to cross-compile to ARM64--which is what you will do in this tutorial.
 
 Save the `CMakeSettings.json` file and ensure that your **arm64-debug** configuration is selected in the configuration dropdown:
 

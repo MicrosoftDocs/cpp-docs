@@ -56,20 +56,20 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 externalConsole|boolean|If true, a console is launched for the debuggee. If **`false`**, no console is launched. The default for this setting is **`false`**. This option is ignored in some cases for technical reasons.|
 |`pipeTransport`|string|When present, this tells the debugger to connect to a remote computer using another executable as a pipe that will relay standard input/output between Visual Studio and the MI-enabled debugger (such as gdb). Allowed values: one or more [Pipe Transport Options](#pipe_transport_options).|
 
-## <a name="remote_deploy_debug"></a> Remote debug and deploy properties
+## <a name="remote_deploy_debug"></a> C++ Windows remote debug and deploy properties
 
 Used when debugging and deploying an app on a remote machine.
 
 |Property|Type|Description|
 |-|-|-|
-|`cwd`|string|The working directory of the target on the remote machine. When using CMake, the macro `${debugInfo.defaultWorkingDirectory}` can be used as the value of this field. The default value is the remote workspace root unless overridden in the *`CMakeLists.txt`* file.|
-|`deploy`|string|Specifies extra files/directories to deploy. For example: `deployDirectory:{"sourcePath1":"targetPath1", sourcePath2":"targetPath2"}`|
-|`deployDirectory`|string|The location on the remote machine where project outputs are automatically deployed to. Defaults to `%temp%/<targetname>`|
+|`cwd`|string|The working directory of the target on the remote machine. When using CMake, the macro `${debugInfo.defaultWorkingDirectory}` can be used as the value of this field. The default value is the directory of the debug program/command.|
+|`deploy`|string|Specifies extra files/directories to deploy. For example:<br> `"deploy": {"sourcePath":"<Full path to source file/directory on host machine>", "targetPath":"<Full destination path to file/directory on target machine>"}` |
+|`deployDirectory`|string|The location on the remote machine where project outputs are automatically deployed to. Defaults to "`C:\Windows Default Deploy Directory\<name of launch entry>`|
 |`deployDebugRuntimeLibraries`|string|Specifies to deploy the debug runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"Debug"`|
 |`deployRuntimeLibraries`|string|Specifies to deploy the runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"MinSizeRel"`, `"RelWithDebInfo"`, or `"Release"`.|
 |`disableDeploy` | boolean | Specifies whether any files should be deployed. |
 |`remoteMachineName`|string|Specifies the name of the remote ARM64 Windows machine where the program is launched. May be the server name or the remote machine's IP address|
-|`windowsAuthenticationType`|string|Specifies the type of remote connection. Possible values are `"Remote Windows authentication"` and `"Remote Windows with No authentication"`. The default is `"Remote Windows authentication"`.|
+|`windowsAuthenticationType`|string|Specifies the type of remote connection. Possible values are `"Remote Windows authentication"` and `"Remote Windows with No authentication"`. The default is `"Remote Windows authentication"`. This should match the authentication setting specified on the remote debugger running on the remote macihne.|
 
 ## <a name="launch_setup_commands"></a> Launch setup commands
 
