@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Document Templates and the Document/View Creation Process"
 title: "Document Templates and the Document-View Creation Process"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["icons, for multiple document templates", "document templates [MFC], and views", "document/view architecture [MFC], creating document/view", "single document template", "MFC, document templates", "multiple document template", "CDocTemplate class [MFC]", "templates [MFC], document templates"]

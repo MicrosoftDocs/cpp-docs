@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Containers: User-Interface Issues"
 title: "Containers: User-Interface Issues"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["containers [MFC], user-interface issues", "OLE containers [MFC], user interface", "user interface issues"]

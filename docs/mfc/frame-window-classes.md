@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Frame-Window Classes"
 title: "Frame-Window Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["frame window classes [MFC], about frame window classes", "frame window classes [MFC]", "windows [MFC], MDI", "document frame windows [MFC], classes", "single document interface (SDI), frame windows", "window classes [MFC], frame", "MFC, frame windows", "MDI [MFC], frame windows", "classes [MFC], window"]

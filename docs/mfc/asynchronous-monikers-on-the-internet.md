@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Asynchronous Monikers on the Internet"
 title: "Asynchronous Monikers on the Internet"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ActiveX controls [MFC], asynchronous", "MFC, asynchronous monikers", "asynchronous monikers [MFC]", "Web applications [MFC], asynchronous", "downloading Internet resources and asynchronous monikers", "optimization [MFC], asynchronous downloading across Internet", "Internet [MFC], asynchronous downloading"]

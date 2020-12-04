@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Declare Pinning Pointers and Value Types"
 title: "How to: Declare Pinning Pointers and Value Types"
 ms.date: "10/12/2018"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: pin_ptr (C++/CLI)"
 title: "pin_ptr (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActiveX Control Containers: Using Controls in a Non-Dialog Container"
 title: "ActiveX Control Containers: Using Controls in a Non-Dialog Container"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Create method [MFC], ActiveX controls", "CreateControl method [MFC]", "ActiveX controls [MFC], creating", "ActiveX control containers [MFC], non-dialog containers", "ActiveX control containers [MFC], inserting controls"]

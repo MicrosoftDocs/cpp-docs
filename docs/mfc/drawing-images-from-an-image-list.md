@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Drawing Images from an Image List"
 title: "Drawing Images from an Image List"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CImageList class [MFC], drawing images from", "drawing [MFC], images from image lists", "image lists [MFC], drawing images from", "images [MFC], drawing"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Common Control Sample List"
 title: "Common Control Sample List"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sample applications [MFC], common controls"]

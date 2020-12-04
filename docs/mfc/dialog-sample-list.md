@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Sample List"
 title: "Dialog Sample List"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sample applications [MFC], dialog boxes"]

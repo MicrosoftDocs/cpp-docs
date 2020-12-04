@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How WinInet Makes It Easier to Create Internet Client Applications"
 title: "How WinInet Makes It Easier to Create Internet Client Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows Sockets [MFC], vs. WinInet", "WinInet classes [MFC], vs. WinSock", "WinInet classes [MFC], Internet client applications"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing Working Areas in List Controls"
 title: "Implementing Working Areas in List Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["list controls [MFC], working areas", "working areas in list control [MFC]"]

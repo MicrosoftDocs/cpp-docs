@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Error LNK1282"
 title: "Linker Tools Error LNK1282"
 ms.date: "11/04/2016"
 f1_keywords: ["LNK1282"]

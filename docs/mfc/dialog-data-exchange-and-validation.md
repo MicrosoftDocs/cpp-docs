@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Data Exchange and Validation"
 title: "Dialog Data Exchange and Validation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data validation [MFC], dialog boxes", "dialog box data [MFC]", "dialog boxes [MFC], validating data", "validating data [MFC], dialog box data entry", "DDX (dialog data exchange) [MFC], data validation", "dialog box data [MFC], retrieving", "Windows common controls [MFC], dialog boxes", "DDV (dialog data validation) [MFC]", "data [MFC], dialog boxes", "common controls [MFC], dialog boxes", "dialog boxes [MFC], retrieving data", "retrieving dialog box data"]

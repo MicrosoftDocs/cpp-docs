@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _BitScanReverse, _BitScanReverse64"
 title: "_BitScanReverse, _BitScanReverse64"
 ms.date: "09/02/2019"
 f1_keywords: ["_BitScanReverse64", "_BitScanReverse_cpp", "_BitScanReverse", "_BitScanReverse64_cpp"]

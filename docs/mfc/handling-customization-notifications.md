@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling Customization Notifications"
 title: "Handling Customization Notifications"
 ms.date: "11/04/2016"
 f1_keywords: ["TBN_CUSTHELP", "TBN_QUERYINSERT", "TBNOTIFY", "NMHDR", "TBN_TOOLBARCHANGE", "TBN_ENDDRAG", "NM_SETFOCUS", "TBN_RESET", "NM_RETURN", "NM_ENDWAIT", "NM_STARTWAIT", "TBN_BEGINDRAG", "NM_OUTOFMEMORY", "TBN_QUERYDELETE", "NM_DBLCLK", "TBN_ENDADJUST", "NM_KILLFOCUS", "NM_RCLICK", "TBN_BEGINADJUST", "NM_CLICK"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _bittestandcomplement, _bittestandcomplement64"
 title: "_bittestandcomplement, _bittestandcomplement64"
 ms.date: "09/02/2019"
 f1_keywords: ["_bittestandcomplement64", "_bittestandcomplement64_cpp", "_bittestandcomplement_cpp", "_bittestandcomplement"]

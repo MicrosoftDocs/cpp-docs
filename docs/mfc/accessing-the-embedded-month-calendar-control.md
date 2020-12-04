@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing the Embedded Month Calendar Control"
 title: "Accessing the Embedded Month Calendar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DateTimePicker control [MFC], accessing month calendar", "CDateTimeCtrl class [MFC], accessing embedded control", "month calendar controls [MFC], embedded in date/time picker", "CMonthCalCtrl class [MFC], changing the font", "month calendar controls [MFC], changing the font", "DateTimePicker control [MFC]"]

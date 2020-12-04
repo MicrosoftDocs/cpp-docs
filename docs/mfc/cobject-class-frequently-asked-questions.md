@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CObject Class: Frequently Asked Questions"
 title: "CObject Class: Frequently Asked Questions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CObject class [MFC], FAQ"]

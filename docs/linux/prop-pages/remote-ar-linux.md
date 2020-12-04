@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Remote Archive Properties (C++ Linux)"
 title: "Remote Archive Properties (C++ Linux)"
 ms.date: "06/07/2019"
 ms.assetid: 5ee1e44c-8337-4c3a-b2f3-35e4be954f9f

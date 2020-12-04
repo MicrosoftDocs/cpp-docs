@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling Windows Messages in Your Dialog Box"
 title: "Handling Windows Messages in Your Dialog Box"
 ms.date: "09/05/2019"
 helpviewer_keywords: ["MFC dialog boxes [MFC], Windows messages", "Windows messages [MFC], handling", "message handling [MFC], in dialog boxes"]

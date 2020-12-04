@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Date and Time Picker Control Examples"
 title: "Date and Time Picker Control Examples"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DateTimePicker control [MFC]"]

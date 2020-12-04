@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Activation: Verbs"
 title: "Activation: Verbs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["verbs [MFC]", "OLE [MFC], activation", "edit verb [MFC]", "activation [MFC], verbs", "OLE [MFC], editing", "Primary verb [MFC]", "OLE activation {MFC]"]

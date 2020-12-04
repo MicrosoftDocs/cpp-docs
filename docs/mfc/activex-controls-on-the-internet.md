@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActiveX Controls on the Internet"
 title: "ActiveX Controls on the Internet"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["ActiveX controls [MFC], creating", "ActiveX controls [MFC], Internet", "downloading data with ActiveX controls", "OLE controls [MFC], upgrading to ActiveX", "Internet applications [MFC], ActiveX controls", "networks [MFC], downloading with ActiveX controls"]

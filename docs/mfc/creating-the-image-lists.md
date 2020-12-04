@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating the Image Lists"
 title: "Creating the Image Lists"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], creating image lists for", "image lists [MFC], creating for CListCtrl", "lists [MFC], image"]

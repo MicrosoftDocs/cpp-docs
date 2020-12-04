@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: General MFC Topics"
 title: "General MFC Topics"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["MFC", "class libraries [MFC], MFC", "MFC, application development"]

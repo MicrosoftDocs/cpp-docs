@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __readcr2"
 title: "__readcr2"
 ms.date: "09/02/2019"
 f1_keywords: ["__readcr2"]

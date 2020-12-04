@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extensions That Are Specific to C++/CLI"
 title: "Extensions That Are Specific to C++/CLI"
 ms.date: "10/12/2018"
 ms.topic: "reference"

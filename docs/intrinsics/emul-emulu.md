@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __emul, __emulu"
 title: "__emul, __emulu"
 ms.date: "09/02/2019"
 f1_keywords: ["__emulu_cpp", "__emul", "__emul_cpp", "__emulu"]

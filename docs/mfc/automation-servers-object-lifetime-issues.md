@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Automation Servers: Object-Lifetime Issues"
 title: "Automation Servers: Object-Lifetime Issues"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [MFC], lifetime", "lifetime, automation server", "Automation servers, object lifetime", "servers, lifetime of Automation"]

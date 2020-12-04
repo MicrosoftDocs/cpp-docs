@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Frame Window Classes (Windows)"
 title: "Frame Window Classes (Windows)"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.frame"]

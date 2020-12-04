@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _InterlockedCompareExchange128 intrinsic functions"
 title: "_InterlockedCompareExchange128 intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedCompareExchange128_cpp", "_InterlockedCompareExchange128", "_InterlockedCompareExchange128_acq", "_InterlockedCompareExchange128_nf", "_InterlockedCompareExchange128_np", "_InterlockedCompareExchange128_rel"]

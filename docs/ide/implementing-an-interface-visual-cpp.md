@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implement an interface"
 title: "Implement an interface"
 ms.date: "11/12/2018"
 f1_keywords: ["vc.codewiz.impl.interface.overview"]

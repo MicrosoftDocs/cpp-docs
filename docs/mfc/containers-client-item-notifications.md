@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Containers: Client-Item Notifications"
 title: "Containers: Client-Item Notifications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["notifications [MFC], container client item", "OLE containers [MFC], client-item notifications", "client items and OLE containers"]

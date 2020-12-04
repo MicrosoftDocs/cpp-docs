@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: new (new slot in vtable)  (C++/CLI and C++/CX)"
 title: "new (new slot in vtable)  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

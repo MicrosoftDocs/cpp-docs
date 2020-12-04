@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internet Information by Task"
 title: "Internet Information by Task"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["MFC, Internet applications"]

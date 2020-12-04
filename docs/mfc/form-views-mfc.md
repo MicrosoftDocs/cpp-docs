@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Form Views (MFC)"
 title: "Form Views (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["user interfaces [MFC], forms", "forms [MFC]", "applications [MFC], forms-based", "forms-based applications [MFC]", "forms [MFC], adding to applications"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating the List Control"
 title: "Creating the List Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], creating control", "list controls [MFC]"]

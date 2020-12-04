@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActiveX Control Containers"
 title: "ActiveX Control Containers"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["ActiveX control containers [MFC]", "OLE controls [MFC], containers"]

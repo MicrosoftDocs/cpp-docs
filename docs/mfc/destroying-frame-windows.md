@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Destroying Frame Windows"
 title: "Destroying Frame Windows"
 ms.date: "11/04/2016"
 f1_keywords: ["PostNcDestroy"]

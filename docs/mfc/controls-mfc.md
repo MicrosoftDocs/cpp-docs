@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Controls (MFC)"
 title: "Controls (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows common controls [MFC]", "common controls [MFC]", "controls [MFC]"]

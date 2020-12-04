@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Derived View Classes Available in MFC"
 title: "Derived View Classes Available in MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CView class [MFC], classes derived from", "classes [MFC], derived", "derived classes [MFC], view classes", "view classes [MFC], derived"]

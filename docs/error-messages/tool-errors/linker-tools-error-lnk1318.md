@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Error LNK1318"
 title: "Linker Tools Error LNK1318"
 ms.date: "05/29/2018"
 f1_keywords: ["LNK1318"]

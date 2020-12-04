@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling Reflected Messages"
 title: "Handling Reflected Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message handling [MFC], reflected messages", "reflected messages, handling"]

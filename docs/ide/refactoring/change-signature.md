@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Change Signature"
 title: "Change Signature"
 ms.date: "11/16/2016"
 ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454

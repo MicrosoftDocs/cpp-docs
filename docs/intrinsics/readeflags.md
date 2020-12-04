@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __readeflags"
 title: "__readeflags"
 ms.date: "09/02/2019"
 f1_keywords: ["__readeflags"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform, default, and cli Namespaces  (C++/CLI and C++/CX)"
 title: "Platform, default, and cli Namespaces  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

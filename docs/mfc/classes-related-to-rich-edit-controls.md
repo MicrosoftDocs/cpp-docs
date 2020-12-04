@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Classes Related to Rich Edit Controls"
 title: "Classes Related to Rich Edit Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rich edit controls [MFC], and CRichEditItem", "CRichEditCtrl class [MFC], related classes", "CRichEditDoc class [MFC], Rich Edit controls", "rich edit controls [MFC], classes related to", "classes [MFC], related to rich edit controls", "rich edit controls [MFC], and CRichEditView", "CRichEditCtrlItem class and CRichEditCtrl", "rich edit controls [MFC], and CRichEditDoc", "CRichEditView class [MFC], and CRichEditCtrl"]

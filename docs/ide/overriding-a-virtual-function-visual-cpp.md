@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Override a virtual function"
 title: "Override a virtual function"
 ms.date: "11/12/2018"
 f1_keywords: ["vc.codewiz.virtualfunc.override"]

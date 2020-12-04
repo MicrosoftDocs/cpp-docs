@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Deriving a Class from CObject"
 title: "Deriving a Class from CObject"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DECLARE_DYNCREATE macro [MFC]", "DECLARE_SERIAL macro [MFC]", "macros [MFC], serialization", "serialization [MFC], macros", "DECLARE_DYNAMIC macro [MFC]", "derived classes [MFC], from CObject", "CObject class [MFC], deriving serializable classes", "CObject class [MFC], deriving from"]

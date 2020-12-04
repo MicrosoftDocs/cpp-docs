@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating the Dialog Resource"
 title: "Creating the Dialog Resource"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dialog resources", "MFC dialog boxes [MFC], creating", "dialog templates [MFC], creating dialog resource", "templates [MFC], creating", "resources [MFC], creating dialog boxes", "MFC dialog boxes [MFC], dialog resource"]
