@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Editing a Message Handler"
 title: "Editing a Message Handler"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.editing.msghandler"]

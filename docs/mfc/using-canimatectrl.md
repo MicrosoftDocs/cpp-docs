@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CAnimateCtrl"
 title: "Using CAnimateCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["animation controls [MFC], CAnimateCtrl class", "controls [MFC], animation", "CAnimateCtrl class [MFC], about CAnimateCtrl class [MFC]"]

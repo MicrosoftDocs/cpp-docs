@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Application Architecture Classes"
 title: "MFC Application Architecture Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, classes", "MFC, application development", "classes [MFC], MFC", "application architecture classes [MFC]"]

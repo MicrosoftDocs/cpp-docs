@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sequence of Operations for Creating OLE Applications"
 title: "Sequence of Operations for Creating OLE Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE applications [MFC], creating", "OLE applications [MFC]", "applications [OLE], creating", "applications [OLE]"]

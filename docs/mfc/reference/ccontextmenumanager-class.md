@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CContextMenuManager Class"
 title: "CContextMenuManager Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CContextMenuManager", "AFXCONTEXTMENUMANAGER/CContextMenuManager", "AFXCONTEXTMENUMANAGER/CContextMenuManager::CContextMenuManager", "AFXCONTEXTMENUMANAGER/CContextMenuManager::AddMenu", "AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuById", "AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuByName", "AFXCONTEXTMENUMANAGER/CContextMenuManager::GetMenuNames", "AFXCONTEXTMENUMANAGER/CContextMenuManager::LoadState", "AFXCONTEXTMENUMANAGER/CContextMenuManager::ResetState", "AFXCONTEXTMENUMANAGER/CContextMenuManager::SaveState", "AFXCONTEXTMENUMANAGER/CContextMenuManager::SetDontCloseActiveMenu", "AFXCONTEXTMENUMANAGER/CContextMenuManager::ShowPopupMenu", "AFXCONTEXTMENUMANAGER/CContextMenuManager::TrackPopupMenu"]

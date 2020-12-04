@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDBException Class"
 title: "CDBException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDBException", "AFXDB/CDBException", "AFXDB/CDBException::m_nRetCode", "AFXDB/CDBException::m_strError", "AFXDB/CDBException::m_strStateNativeOrigin"]

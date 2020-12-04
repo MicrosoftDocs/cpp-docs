@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Processing Notification Messages in Date and Time Picker Controls"
 title: "Processing Notification Messages in Date and Time Picker Controls"
 ms.date: "11/04/2016"
 f1_keywords: ["DTN_CLOSEUP", "DTN_DATETIMECHANGE", "DTN_DROPDOWN"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Event Sink Maps"
 title: "Event Sink Maps"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event sink maps [MFC]"]

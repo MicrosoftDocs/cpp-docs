@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN028: Context-Sensitive Help Support"
 title: "TN028: Context-Sensitive Help Support"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.help"]

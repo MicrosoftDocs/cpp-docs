@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CUserTool Class"
 title: "CUserTool Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CUserTool", "AFXUSERTOOL/CUserTool", "AFXUSERTOOL/CUserTool::CopyIconToClipboard", "AFXUSERTOOL/CUserTool::DrawToolIcon", "AFXUSERTOOL/CUserTool::GetCommand", "AFXUSERTOOL/CUserTool::GetCommandId", "AFXUSERTOOL/CUserTool::Invoke", "AFXUSERTOOL/CUserTool::Serialize", "AFXUSERTOOL/CUserTool::SetCommand", "AFXUSERTOOL/CUserTool::SetToolIcon", "AFXUSERTOOL/CUserTool::LoadDefaultIcon", "AFXUSERTOOL/CUserTool::m_strArguments", "AFXUSERTOOL/CUserTool::m_strInitialDirectory", "AFXUSERTOOL/CUserTool::m_strLabel"]

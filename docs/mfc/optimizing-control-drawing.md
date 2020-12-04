@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Optimizing Control Drawing"
 title: "Optimizing Control Drawing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], optimizing"]

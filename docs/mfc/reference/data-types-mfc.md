@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Types (MFC)"
 title: "Data Types (MFC)"
 ms.date: "11/04/2016"
 f1_keywords: ["LPCRECT", "POSITION"]

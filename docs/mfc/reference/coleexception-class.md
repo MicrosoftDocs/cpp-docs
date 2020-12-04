@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleException Class"
 title: "COleException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleException", "AFXDISP/COleException", "AFXDISP/COleException::Process", "AFXDISP/COleException::m_sc"]

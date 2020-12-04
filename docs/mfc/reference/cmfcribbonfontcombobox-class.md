@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonFontComboBox Class"
 title: "CMFCRibbonFontComboBox Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::BuildFonts", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetCharSet", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontDesc", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontType", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetPitchAndFamily", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::RebuildFonts", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::SetFont"]

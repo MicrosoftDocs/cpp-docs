@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonContextCaption Class"
 title: "CMFCRibbonContextCaption Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonContextCaption", "AFXRIBBONBAR/CMFCRibbonContextCaption", "AFXRIBBONBAR/CMFCRibbonContextCaption::GetColor", "AFXRIBBONBAR/CMFCRibbonContextCaption::GetRightTabX"]

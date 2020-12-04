@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Notifications from a Rich Edit Control"
 title: "Notifications from a Rich Edit Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["messages [MFC], notification [MFC]", "CRichEditCtrl class [MFC], notifications", "rich edit controls [MFC], notifications", "notifications [MFC], from CRichEditCtrl"]

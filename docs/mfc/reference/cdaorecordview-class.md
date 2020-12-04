@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDaoRecordView Class"
 title: "CDaoRecordView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDaoRecordView", "AFXDAO/CDaoRecordView", "AFXDAO/CDaoRecordView::CDaoRecordView", "AFXDAO/CDaoRecordView::IsOnFirstRecord", "AFXDAO/CDaoRecordView::IsOnLastRecord", "AFXDAO/CDaoRecordView::OnGetRecordset", "AFXDAO/CDaoRecordView::OnMove"]

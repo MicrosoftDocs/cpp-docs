@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleDocObjectItem Class"
 title: "COleDocObjectItem Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDocObjectItem", "AFXOLE/COleDocObjectItem", "AFXOLE/COleDocObjectItem::COleDocObjectItem", "AFXOLE/COleDocObjectItem::DoDefaultPrinting", "AFXOLE/COleDocObjectItem::ExecCommand", "AFXOLE/COleDocObjectItem::GetActiveView", "AFXOLE/COleDocObjectItem::GetPageCount", "AFXOLE/COleDocObjectItem::OnPreparePrinting", "AFXOLE/COleDocObjectItem::OnPrint", "AFXOLE/COleDocObjectItem::QueryCommand", "AFXOLE/COleDocObjectItem::Release"]

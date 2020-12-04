@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE Background: Containers and Servers"
 title: "OLE Background: Containers and Servers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE full-server applications [MFC]", "server applications [MFC], communication with containers", "full-server [MFC]", "server applications [MFC], requirements", "server applications [MFC], defined", "OLE server applications [MFC], about server applications", "server applications [MFC], full-server vs. mini-server", "OLE server applications [MFC], mini-server applications", "OLE containers [MFC], container applications", "containers [MFC], OLE container applications", "server applications [MFC]"]

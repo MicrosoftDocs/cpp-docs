@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAsyncMonikerFile Class"
 title: "CAsyncMonikerFile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile::CAsyncMonikerFile", "AFXOLE/CAsyncMonikerFile::Close", "AFXOLE/CAsyncMonikerFile::GetBinding", "AFXOLE/CAsyncMonikerFile::GetFormatEtc", "AFXOLE/CAsyncMonikerFile::Open", "AFXOLE/CAsyncMonikerFile::CreateBindStatusCallback", "AFXOLE/CAsyncMonikerFile::GetBindInfo", "AFXOLE/CAsyncMonikerFile::GetPriority", "AFXOLE/CAsyncMonikerFile::OnDataAvailable", "AFXOLE/CAsyncMonikerFile::OnLowResource", "AFXOLE/CAsyncMonikerFile::OnProgress", "AFXOLE/CAsyncMonikerFile::OnStartBinding", "AFXOLE/CAsyncMonikerFile::OnStopBinding"]

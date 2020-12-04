@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Event Maps"
 title: "Event Maps"
 ms.date: "09/07/2019"
 helpviewer_keywords: ["event maps [MFC]"]

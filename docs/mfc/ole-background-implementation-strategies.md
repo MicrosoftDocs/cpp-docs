@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE Background: Implementation Strategies"
 title: "OLE Background: Implementation Strategies"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE [MFC], development strategy", "OLE applications [MFC], implementing OLE", "applications [OLE], implementing OLE"]

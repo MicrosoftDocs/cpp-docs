@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WM_ Messages: T - Z"
 title: "WM_ Messages: T - Z"
 ms.date: "11/04/2016"
 f1_keywords: ["ON_WM_TCARD", "ON_WM_WININICHANGE", "ON_WM_VSCROLLCLIPBOARD", "ON_WM_VSCROLL", "ON_WM_WINDOWPOSCHANGED", "ON_WM_TIMECHANGE", "ON_WM_TIMER", "ON_WM_VKEYTOITEM", "ON_WM_WINDOWPOSCHANGING"]

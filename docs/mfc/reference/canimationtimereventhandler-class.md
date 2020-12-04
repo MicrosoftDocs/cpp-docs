@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAnimationTimerEventHandler Class"
 title: "CAnimationTimerEventHandler Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationTimerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::CreateInstance", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnPostUpdate", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnPreUpdate", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::OnRenderingTooSlow", "AFXANIMATIONCONTROLLER/CAnimationTimerEventHandler::SetAnimationController"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WM_ Message Handlers: D - E"
 title: "WM_ Message Handlers: D - E"
 ms.date: "11/04/2016"
 f1_keywords: ["ON_WM_ERASEBKGND", "ON_WM_DEVICECHANGE", "ON_WM_ENTERIDLE", "ON_WM_DESTROYCLIPBOARD", "ON_WM_DESTROY", "ON_WM_DEADCHAR", "ON_WM_DELETEITEM", "ON_WM_DROPFILES", "ON_WM_DEVMODECHANGE", "ON_WM_ENDSESSION", "ON_WM_ENABLE", "ON_WM_DRAWITEM", "ON_WM_DRAWCLIPBOARD"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CListView Class"
 title: "CListView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CListView", "AFXCVIEW/CListView", "AFXCVIEW/CListView::CListView", "AFXCVIEW/CListView::GetListCtrl", "AFXCVIEW/CListView::RemoveImageList"]

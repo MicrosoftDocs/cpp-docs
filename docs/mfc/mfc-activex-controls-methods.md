@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Methods"
 title: "MFC ActiveX Controls: Methods"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], methods"]

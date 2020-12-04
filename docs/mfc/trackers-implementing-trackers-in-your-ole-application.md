@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Trackers: Implementing Trackers in Your OLE Application"
 title: "Trackers: Implementing Trackers in Your OLE Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["trackers [MFC]", "OLE applications [MFC], trackers", "applications [OLE], trackers", "tracking OLE items [MFC]", "OLE containers [MFC], trackers", "CRectTracker class [MFC], implementing trackers"]

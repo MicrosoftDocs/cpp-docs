@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCCustomColorsPropertyPage Class"
 title: "CMFCCustomColorsPropertyPage Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCCustomColorsPropertyPage", "AFXCUSTOMCOLORSPROPERTYPAGE/CMFCCustomColorsPropertyPage", "AFXCUSTOMCOLORSPROPERTYPAGE/CMFCCustomColorsPropertyPage::Setup"]

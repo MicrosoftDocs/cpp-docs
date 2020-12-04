@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDialog Class"
 title: "CDialog Class"
 ms.date: "09/07/2019"
 f1_keywords: ["CDialog", "AFXWIN/CDialog", "AFXWIN/CDialog::CDialog", "AFXWIN/CDialog::Create", "AFXWIN/CDialog::CreateIndirect", "AFXWIN/CDialog::DoModal", "AFXWIN/CDialog::EndDialog", "AFXWIN/CDialog::GetDefID", "AFXWIN/CDialog::GotoDlgCtrl", "AFXWIN/CDialog::InitModalIndirect", "AFXWIN/CDialog::MapDialogRect", "AFXWIN/CDialog::NextDlgCtrl", "AFXWIN/CDialog::OnInitDialog", "AFXWIN/CDialog::OnSetFont", "AFXWIN/CDialog::PrevDlgCtrl", "AFXWIN/CDialog::SetDefID", "AFXWIN/CDialog::SetHelpID", "AFXWIN/CDialog::OnCancel", "AFXWIN/CDialog::OnOK"]

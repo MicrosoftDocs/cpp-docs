@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Adding Stock Events to an ActiveX Control"
 title: "MFC ActiveX Controls: Adding Stock Events to an ActiveX Control"
 ms.date: "11/04/2016"
 f1_keywords: ["EVENT__STOCK_ERROR", "EVENT__STOCK_READYSTATECHANGE", "ReadyStateChange", "EVENT__STOCK_MOUSEMOVE", "EVENT__STOCK_MOUSEUP", "EVENT__STOCK_DBLCLICK", "KeyPress", "EVENT__STOCK_KEYDOWN", "EVENT__STOCK", "EVENT__STOCK_MOUSEDOWN", "EVENT__STOCK_KEYPRESS", "EVENT__STOCK_CLICK", "EVENT__STOCK_KEYUP"]

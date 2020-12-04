@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CInterpolatorBase Class"
 title: "CInterpolatorBase Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInterpolatorBase", "AFXANIMATIONCONTROLLER/CInterpolatorBase", "AFXANIMATIONCONTROLLER/CInterpolatorBase::CInterpolatorBase", "AFXANIMATIONCONTROLLER/CInterpolatorBase::CreateInstance", "AFXANIMATIONCONTROLLER/CInterpolatorBase::GetDependencies", "AFXANIMATIONCONTROLLER/CInterpolatorBase::GetDuration", "AFXANIMATIONCONTROLLER/CInterpolatorBase::GetFinalValue", "AFXANIMATIONCONTROLLER/CInterpolatorBase::InterpolateValue", "AFXANIMATIONCONTROLLER/CInterpolatorBase::InterpolateVelocity", "AFXANIMATIONCONTROLLER/CInterpolatorBase::SetCustomInterpolator", "AFXANIMATIONCONTROLLER/CInterpolatorBase::SetDuration", "AFXANIMATIONCONTROLLER/CInterpolatorBase::SetInitialValueAndVelocity"]

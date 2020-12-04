@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Processing Notification Messages in Extended Combo Box Controls"
 title: "Processing Notification Messages in Extended Combo Box Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["extended combo boxes [MFC], notifications", "notifications [MFC], extended combo box controls"]

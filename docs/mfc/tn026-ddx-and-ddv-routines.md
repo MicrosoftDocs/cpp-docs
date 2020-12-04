@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN026: DDX and DDV Routines"
 title: "TN026: DDX and DDV Routines"
 ms.date: "06/28/2018"
 f1_keywords: ["DDX", "DDV"]

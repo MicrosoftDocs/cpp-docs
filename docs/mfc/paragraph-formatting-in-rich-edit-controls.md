@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Paragraph Formatting in Rich Edit Controls"
 title: "Paragraph Formatting in Rich Edit Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rich edit controls [MFC], paragraph formatting in", "paragraph formatting in CRichEditCtrl [MFC]", "CRichEditCtrl class [MFC], paragraph formatting in", "formatting [MFC], paragraphs"]

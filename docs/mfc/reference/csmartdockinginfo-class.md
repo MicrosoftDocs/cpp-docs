@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSmartDockingInfo Class"
 title: "CSmartDockingInfo Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CSmartDockingInfo", "AFXDOCKINGMANAGER/CSmartDockingInfo", "AFXDOCKINGMANAGER/CSmartDockingInfo::CopyTo", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_bUseThemeColorInShading", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrBaseBackground", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneDest", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneSrc", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrTransparent", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_nCentralGroupOffset", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_sizeTotal", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerBmpResID", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerLightBmpResID"]

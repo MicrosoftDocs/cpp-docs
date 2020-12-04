@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container"
 title: "ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["ActiveX control containers [MFC], accessing ActiveX controls", "Confirm Classes dialog box", "wrapper classes [MFC], ActiveX controls", "ActiveX control containers [MFC], wrapper classes", "ActiveX controls [MFC], accessing", "MFC ActiveX controls [MFC], accessing in containers", "header files [MFC], for ActiveX control wrapper class", "wrapper classes [MFC], using", "ActiveX controls [MFC], wrapper classes"]

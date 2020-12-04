@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSettingsStoreSP Class"
 title: "CSettingsStoreSP Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSettingsStoreSP", "AFXSETTINGSSTORE/CSettingsStoreSP", "AFXSETTINGSSTORE/CSettingsStoreSP::CSettingsStoreSP", "AFXSETTINGSSTORE/CSettingsStoreSP::Create", "AFXSETTINGSSTORE/CSettingsStoreSP::SetRuntimeClass"]

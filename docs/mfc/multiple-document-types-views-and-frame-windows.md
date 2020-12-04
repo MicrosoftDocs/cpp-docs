@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multiple Document Types, Views, and Frame Windows"
 title: "Multiple Document Types, Views, and Frame Windows"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["static splitter windows [MFC]", "multiple views [MFC]", "multiple document types [MFC]", "multiple views [MFC], frame windows", "document classes [MFC], multiple", "documents [MFC], multiple types of", "splitter windows [MFC], dynamic", "dynamic splitter windows [MFC]", "windows [MFC], dynamic splitter", "windows [MFC], static splitter", "multiple frame windows [MFC]", "splitter windows [MFC], static"]

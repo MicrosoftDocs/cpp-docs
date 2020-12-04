@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Callback Functions Used by MFC"
 title: "Callback Functions Used by MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["callback functions [MFC], MFC", "MFC, callback functions", "functions [MFC], callback", "callback functions [MFC]"]

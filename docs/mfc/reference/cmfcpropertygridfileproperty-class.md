@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCPropertyGridFileProperty Class"
 title: "CMFCPropertyGridFileProperty Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCPropertyGridFileProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFileProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty"]

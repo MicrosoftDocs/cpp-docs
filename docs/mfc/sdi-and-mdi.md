@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SDI and MDI"
 title: "SDI and MDI"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["frame windows [MFC], SDI applications", "frame windows [MFC], MDI applications", "MFC, windows", "single document interface (SDI) [MFC], applications", "MDI [MFC], vs. SDI"]

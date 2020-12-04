@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Adding Stock Properties"
 title: "MFC ActiveX Controls: Adding Stock Properties"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["BackColor property [MFC]", "properties [MFC], adding stock", "ForeColor property [MFC]", "MFC ActiveX controls [MFC], properties", "foreground colors, ActiveX controls", "foreground colors [MFC]"]

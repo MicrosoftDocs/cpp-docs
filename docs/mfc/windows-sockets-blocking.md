@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets: Blocking"
 title: "Windows Sockets: Blocking"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sockets [MFC], blocking mode", "Windows Sockets [MFC], Windows platforms", "Windows Sockets [MFC], blocking mode", "sockets [MFC], behavior on different Windows platforms", "blocking mode sockets"]

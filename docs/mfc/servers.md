@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Servers"
 title: "Servers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE server applications [MFC]", "OLE server applications [MFC], activation", "full-server", "servers", "mini-server", "OLE server applications [MFC], server types", "server applications [MFC]"]

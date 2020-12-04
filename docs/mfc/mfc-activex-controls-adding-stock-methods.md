@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Adding Stock Methods"
 title: "MFC ActiveX Controls: Adding Stock Methods"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], stock methods", "MFC ActiveX controls [MFC], methods", "DoClick method [MFC]"]

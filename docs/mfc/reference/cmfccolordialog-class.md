@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCColorDialog Class"
 title: "CMFCColorDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog::CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog::GetColor", "AFXCOLORDIALOG/CMFCColorDialog::GetPalette", "AFXCOLORDIALOG/CMFCColorDialog::RebuildPalette", "AFXCOLORDIALOG/CMFCColorDialog::SetCurrentColor", "AFXCOLORDIALOG/CMFCColorDialog::SetNewColor", "AFXCOLORDIALOG/CMFCColorDialog::SetPageOne", "AFXCOLORDIALOG/CMFCColorDialog::SetPageTwo"]

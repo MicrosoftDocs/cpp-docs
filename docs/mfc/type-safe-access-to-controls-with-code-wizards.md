@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type-Safe Access to Controls With Code Wizards"
 title: "Type-Safe Access to Controls With Code Wizards"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DDX (dialog data exchange), access to controls", "code wizards", "dialog boxes [MFC], access to controls", "dialog box controls [MFC], accessing"]

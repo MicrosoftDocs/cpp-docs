@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Servers: User-Interface Issues"
 title: "Servers: User-Interface Issues"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE server applications [MFC], user interface", "servers, user-interface issues", "user interface issues"]

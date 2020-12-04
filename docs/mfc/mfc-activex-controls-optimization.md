@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Optimization"
 title: "MFC ActiveX Controls: Optimization"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], windowless", "flicker-free ActiveX controls", "MFC ActiveX controls [MFC], mouse interaction", "device contexts, unclipped for MFC ActiveX controls", "MFC ActiveX controls [MFC], optimizing", "performance, ActiveX controls", "optimization, ActiveX controls", "MFC ActiveX controls [MFC], flicker-free", "windowless MFC ActiveX controls", "MFC ActiveX controls [MFC], active/inactive state", "optimizing performance, ActiveX controls"]

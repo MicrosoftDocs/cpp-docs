@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Menus and Resources: Server Additions"
 title: "Menus and Resources: Server Additions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE visual editing servers [MFC]", "accelerator tables [MFC], server applications", "visual editing [MFC], application menus and resources", "server applications [MFC], accelerator table", "string tables [MFC], visual editing applications", "servers [MFC], menu additions", "resources [MFC], server applications", "OLE server applications [MFC], menus and resources", "string editing [MFC], visual editing applications", "IDP_OLE_INIT_FAILED macro [MFC]", "server applications [MFC], OLE menus and resources", "OLE initialization failure [MFC]"]

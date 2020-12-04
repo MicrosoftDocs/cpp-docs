@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Memory Management: Heap Allocation"
 title: "Memory Management: Heap Allocation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory [MFC], detecting leaks", "delete operator [MFC], using with debug MFC", "heap allocation [MFC], described", "memory allocation [MFC], heap memory", "memory leaks [MFC], detecting", "new operator [MFC], using with debug MFC", "heap allocation [MFC]", "detecting memory leaks [MFC]"]

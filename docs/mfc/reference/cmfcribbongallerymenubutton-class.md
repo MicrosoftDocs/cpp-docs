@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonGalleryMenuButton Class"
 title: "CMFCRibbonGalleryMenuButton Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CopyFrom", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CreatePopupMenu", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::GetPalette", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::HasButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed"]

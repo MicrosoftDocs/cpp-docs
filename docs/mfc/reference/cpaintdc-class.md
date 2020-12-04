@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPaintDC Class"
 title: "CPaintDC Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPaintDC", "AFXWIN/CPaintDC", "AFXWIN/CPaintDC::CPaintDC", "AFXWIN/CPaintDC::m_ps", "AFXWIN/CPaintDC::m_hWnd"]

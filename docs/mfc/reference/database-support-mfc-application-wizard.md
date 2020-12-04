@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Database Support, MFC Application Wizard"
 title: "Database Support, MFC Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.exe.database"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCDesktopAlertWndInfo Class"
 title: "CMFCDesktopAlertWndInfo Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CMFCDesktopAlertWndInfo", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_hIcon", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_nURLCmdID", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strText", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strURL"]

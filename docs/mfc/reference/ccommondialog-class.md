@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCommonDialog Class"
 title: "CCommonDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCommonDialog", "AFXDLGS/CCommonDialog", "AFXDLGS/CCommonDialog::CCommonDialog"]

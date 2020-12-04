@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICommandUI Interface"
 title: "ICommandUI Interface"
 ms.date: "09/07/2019"
 f1_keywords: ["ICommandUI", "AFXWINFORMS/ICommandUI", "AFXWINFORMS/icommandui__Check", "AFXWINFORMS/ICommandUI::ContinueRouting", "AFXWINFORMS/ICommandUI::Enabled", "AFXWINFORMS/ICommandUI::ID", "AFXWINFORMS/ICommandUI::Index", "AFXWINFORMS/ICommandUI::Radio", "AFXWINFORMS/ICommandUI::Text"]

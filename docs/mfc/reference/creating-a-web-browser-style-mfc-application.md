@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a Web Browser-Style MFC Application"
 title: "Creating a Web Browser-Style MFC Application"
 ms.date: "06/25/2018"
 f1_keywords: ["vc.appwiz.mfcweb.project"]

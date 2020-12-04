@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE in MFC"
 title: "OLE in MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, OLE and", "OLE items", "OLE applications [MFC], about OLE", "OLE [MFC]", "OLE containers [MFC], about OLE", "applications [OLE], about OLE", "OLE component object model (COM)"]

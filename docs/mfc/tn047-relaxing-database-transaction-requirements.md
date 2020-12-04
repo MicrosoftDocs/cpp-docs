@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN047: Relaxing Database Transaction Requirements"
 title: "TN047: Relaxing Database Transaction Requirements"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.data"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Providing Windowless Activation"
 title: "Providing Windowless Activation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["windowless activation of MFC ActiveX controls", "activation [MFC], MFC ActiveX controls", "MFC ActiveX controls [MFC], activate options", "activation [MFC], windowless"]

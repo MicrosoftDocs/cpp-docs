@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application Settings, MFC ActiveX Control Wizard"
 title: "Application Settings, MFC ActiveX Control Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.ctl.appset"]

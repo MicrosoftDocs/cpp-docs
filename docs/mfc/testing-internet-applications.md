@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Testing Internet Applications"
 title: "Testing Internet Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Web applications [MFC], testing", "debugging Web applications [MFC], testing applications", "testing [MFC], Internet applications", "debugging [MFC], Web applications", "Internet debugging and testing"]

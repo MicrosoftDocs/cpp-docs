@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DBitmap Class"
 title: "CD2DBitmap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DBitmap", "AFXRENDERTARGET/CD2DBitmap", "AFXRENDERTARGET/CD2DBitmap::CD2DBitmap", "AFXRENDERTARGET/CD2DBitmap::Attach", "AFXRENDERTARGET/CD2DBitmap::CopyFromBitmap", "AFXRENDERTARGET/CD2DBitmap::CopyFromMemory", "AFXRENDERTARGET/CD2DBitmap::CopyFromRenderTarget", "AFXRENDERTARGET/CD2DBitmap::Create", "AFXRENDERTARGET/CD2DBitmap::Destroy", "AFXRENDERTARGET/CD2DBitmap::Detach", "AFXRENDERTARGET/CD2DBitmap::Get", "AFXRENDERTARGET/CD2DBitmap::GetDPI", "AFXRENDERTARGET/CD2DBitmap::GetPixelFormat", "AFXRENDERTARGET/CD2DBitmap::GetPixelSize", "AFXRENDERTARGET/CD2DBitmap::GetSize", "AFXRENDERTARGET/CD2DBitmap::IsValid", "AFXRENDERTARGET/CD2DBitmap::CommonInit", "AFXRENDERTARGET/CD2DBitmap::m_bAutoDestroyHBMP", "AFXRENDERTARGET/CD2DBitmap::m_hBmpSrc", "AFXRENDERTARGET/CD2DBitmap::m_lpszType", "AFXRENDERTARGET/CD2DBitmap::m_pBitmap", "AFXRENDERTARGET/CD2DBitmap::m_sizeDest", "AFXRENDERTARGET/CD2DBitmap::m_strPath", "AFXRENDERTARGET/CD2DBitmap::m_uiResID"]

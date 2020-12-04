@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Registration"
 title: "Registration"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["servers [MFC], initializing", "initializing servers [MFC]", "OLE, registration", "installing servers [MFC]", "registry [MFC], OLE item database", "registration databases [MFC]", "servers [MFC], installing", "OLE server applications [MFC], registering servers"]

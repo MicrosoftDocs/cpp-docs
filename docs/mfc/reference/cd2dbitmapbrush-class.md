@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DBitmapBrush Class"
 title: "CD2DBitmapBrush Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DBitmapBrush", "AFXRENDERTARGET/CD2DBitmapBrush", "AFXRENDERTARGET/CD2DBitmapBrush::CD2DBitmapBrush", "AFXRENDERTARGET/CD2DBitmapBrush::Attach", "AFXRENDERTARGET/CD2DBitmapBrush::Create", "AFXRENDERTARGET/CD2DBitmapBrush::Destroy", "AFXRENDERTARGET/CD2DBitmapBrush::Detach", "AFXRENDERTARGET/CD2DBitmapBrush::Get", "AFXRENDERTARGET/CD2DBitmapBrush::GetBitmap", "AFXRENDERTARGET/CD2DBitmapBrush::GetExtendModeX", "AFXRENDERTARGET/CD2DBitmapBrush::GetExtendModeY", "AFXRENDERTARGET/CD2DBitmapBrush::GetInterpolationMode", "AFXRENDERTARGET/CD2DBitmapBrush::SetBitmap", "AFXRENDERTARGET/CD2DBitmapBrush::SetExtendModeX", "AFXRENDERTARGET/CD2DBitmapBrush::SetExtendModeY", "AFXRENDERTARGET/CD2DBitmapBrush::SetInterpolationMode", "AFXRENDERTARGET/CD2DBitmapBrush::CommonInit", "AFXRENDERTARGET/CD2DBitmapBrush::m_pBitmap", "AFXRENDERTARGET/CD2DBitmapBrush::m_pBitmapBrush", "AFXRENDERTARGET/CD2DBitmapBrush::m_pBitmapBrushProperties"]

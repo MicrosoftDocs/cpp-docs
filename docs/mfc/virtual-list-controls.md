@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Virtual List Controls"
 title: "Virtual List Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["cache, virtual list control item data", "list controls [MFC], virtual", "list controls [MFC], List view", "virtual list controls"]

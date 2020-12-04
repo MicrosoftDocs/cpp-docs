@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DSolidColorBrush Class"
 title: "CD2DSolidColorBrush Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CD2DSolidColorBrush", "AFXRENDERTARGET/CD2DSolidColorBrush", "AFXRENDERTARGET/CD2DSolidColorBrush::CD2DSolidColorBrush", "AFXRENDERTARGET/CD2DSolidColorBrush::Attach", "AFXRENDERTARGET/CD2DSolidColorBrush::Create", "AFXRENDERTARGET/CD2DSolidColorBrush::Destroy", "AFXRENDERTARGET/CD2DSolidColorBrush::Detach", "AFXRENDERTARGET/CD2DSolidColorBrush::Get", "AFXRENDERTARGET/CD2DSolidColorBrush::GetColor", "AFXRENDERTARGET/CD2DSolidColorBrush::SetColor", "AFXRENDERTARGET/CD2DSolidColorBrush::m_colorSolid", "AFXRENDERTARGET/CD2DSolidColorBrush::m_pSolidColorBrush"]

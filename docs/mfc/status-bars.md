@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Status Bars"
 title: "Status Bars"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["status bars", "control bars [MFC], status bar"]

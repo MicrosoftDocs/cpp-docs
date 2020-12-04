@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: View Classes (Architecture)"
 title: "View Classes (Architecture)"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["form and record views [MFC]", "view classes [MFC]", "control views [MFC]", "view classes [MFC], architecture"]
