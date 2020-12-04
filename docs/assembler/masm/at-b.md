@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: \@B"
+description: "Learn more about: @B"
 title: "@B"
 ms.date: "12/17/2019"
 f1_keywords: ["@B"]

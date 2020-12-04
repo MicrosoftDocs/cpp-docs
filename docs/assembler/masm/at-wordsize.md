@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: \@WordSize"
+description: "Learn more about: @WordSize"
 title: "@WordSize"
 ms.date: "12/17/2019"
 f1_keywords: ["@WordSize"]

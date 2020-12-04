@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: \@Version"
+description: "Learn more about: @Version"
 title: "@Version"
 ms.date: "12/17/2019"
 f1_keywords: ["@Version"]
