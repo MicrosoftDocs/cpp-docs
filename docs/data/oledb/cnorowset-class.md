@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CNoRowset Class"
 title: "CNoRowset Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL.CNoRowset", "ATL::CNoRowset<TAccessor>", "CNoRowset", "ATL.CNoRowset<TAccessor>", "ATL::CNoRowset"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _tell, _telli64"
 title: "_tell, _telli64"
 ms.date: "4/2/2020"
 api_name: ["_telli64", "_tell", "_o__tell", "_o__telli64"]

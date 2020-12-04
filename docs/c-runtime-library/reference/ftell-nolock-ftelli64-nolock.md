@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ftell_nolock, _ftelli64_nolock"
 title: "_ftell_nolock, _ftelli64_nolock"
 ms.date: "4/2/2020"
 api_name: ["_ftelli64_nolock", "_ftell_nolock", "_o__ftell_nolock", "_o__ftelli64_nolock"]

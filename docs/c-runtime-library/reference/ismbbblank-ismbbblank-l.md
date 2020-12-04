@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ismbbblank, _ismbbblank_l"
 title: "_ismbbblank, _ismbbblank_l"
 ms.date: "4/2/2020"
 api_name: ["_ismbbblank_l", "_ismbbblank", "_o__ismbbblank", "_o__ismbbblank_l"]

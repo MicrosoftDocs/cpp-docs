@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCustomSource (CustomDS.h)"
 title: "CCustomSource (CustomDS.H)"
 ms.date: "10/22/2018"
 f1_keywords: ["myproviderds.h", "cmyprovidersource", "customds.h", "ccustomsource"]

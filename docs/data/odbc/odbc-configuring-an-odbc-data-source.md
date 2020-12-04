@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ODBC: Configuring an ODBC Data Source"
 title: "ODBC: Configuring an ODBC Data Source"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC data sources, configuring", "ODBC connections, configuring", "configuring ODBC data sources"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Record Field Exchange (RFX)"
 title: "Record Field Exchange (RFX)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["RFX (ODBC) [C++]", "data [MFC], moving between sources and recordsets", "database classes [C++], RFX", "data [MFC]", "ODBC [C++], RFX"]

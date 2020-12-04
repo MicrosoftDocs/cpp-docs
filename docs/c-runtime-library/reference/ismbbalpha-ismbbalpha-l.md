@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ismbbalpha, _ismbbalpha_l"
 title: "_ismbbalpha, _ismbbalpha_l"
 ms.date: "4/2/2020"
 api_name: ["_ismbbalpha", "_ismbbalpha_l", "_o__ismbbalpha", "_o__ismbbalpha_l"]

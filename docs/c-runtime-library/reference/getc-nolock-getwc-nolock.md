@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _getc_nolock, _getwc_nolock"
 title: "_getc_nolock, _getwc_nolock"
 ms.date: "4/2/2020"
 api_name: ["_getc_nolock", "_getwc_nolock", "_o__getc_nolock", "_o__getwc_nolock"]

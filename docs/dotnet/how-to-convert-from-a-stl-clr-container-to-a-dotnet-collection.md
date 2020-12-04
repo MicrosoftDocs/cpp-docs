@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Convert from a STL/CLR Container to a .NET Collection"
 title: "How to: Convert from a STL/CLR Container to a .NET Collection"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["STL/CLR Containers [STL/CLR]", "STL/CLR, converting to .NET collections"]

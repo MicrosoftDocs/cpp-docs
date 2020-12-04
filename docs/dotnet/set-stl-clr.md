@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: set (STL/CLR)"
 title: "set (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

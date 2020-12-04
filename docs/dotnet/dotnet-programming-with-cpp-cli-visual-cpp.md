@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .NET Programming with C++/CLI (Visual C++)"
 title: ".NET Programming with C++/CLI (Visual C++)"
 ms.date: "09/18/2018"
 helpviewer_keywords: ["programming [C++], .NET programming", ".NET Framework [C++]", ".NET applications [C++]", "Visual C++, .NET programming"]

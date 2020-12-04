@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Tracking References in C++/CLI"
 title: "How to: Use Tracking References in C++/CLI"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CLR types, passing by reference"]

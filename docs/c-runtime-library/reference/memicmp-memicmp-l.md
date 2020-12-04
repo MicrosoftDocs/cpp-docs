@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _memicmp, _memicmp_l"
 title: "_memicmp, _memicmp_l"
 ms.date: "4/2/2020"
 api_name: ["_memicmp_l", "_memicmp", "_o__memicmp", "_o__memicmp_l"]

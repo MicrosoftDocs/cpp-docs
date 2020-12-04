@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: auto_handle Class"
 title: "auto_handle Class"
 ms.date: "01/16/2019"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Boxing (C++/CLI)"
 title: "Boxing (C++/CLI)"
 ms.date: "11/04/2016"
 ms.assetid: f4ee27a8-6a34-432d-b9ec-39285d513b23

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _spawnvp, _wspawnvp"
 title: "_spawnvp, _wspawnvp"
 ms.date: "4/2/2020"
 api_name: ["_wspawnvp", "_spawnvp", "_o__spawnvp", "_o__wspawnvp"]

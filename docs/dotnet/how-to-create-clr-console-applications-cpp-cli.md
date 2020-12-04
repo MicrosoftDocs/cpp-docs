@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create CLR Console Applications (C++/CLI)"
 title: "How to: Create CLR Console Applications (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["console applications, templates", "CLR console applications, project template"]

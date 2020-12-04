@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAccessorBase Class"
 title: "CAccessorBase Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAccessorBase", "CAccessorBase.Close", "CAccessorBase::Close", "GetHAccessor", "CAccessorBase::GetHAccessor", "CAccessorBase.GetHAccessor", "CAccessorBase::GetNumAccessors", "GetNumAccessors", "CAccessorBase.GetNumAccessors", "IsAutoAccessor", "CAccessorBase.IsAutoAccessor", "CAccessorBase::IsAutoAccessor", "CAccessorBase::ReleaseAccessors", "CAccessorBase.ReleaseAccessors", "ReleaseAccessors"]

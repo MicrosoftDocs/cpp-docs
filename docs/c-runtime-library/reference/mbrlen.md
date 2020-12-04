@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: mbrlen"
 title: "mbrlen"
 ms.date: "4/2/2020"
 api_name: ["mbrlen", "_o_mbrlen"]

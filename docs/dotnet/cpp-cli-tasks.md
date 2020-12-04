@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++/CLI Tasks"
 title: "C++/CLI Tasks"
 ms.date: "11/04/2016"
 ms.assetid: 5851b113-91f9-4062-9427-c0669f333636

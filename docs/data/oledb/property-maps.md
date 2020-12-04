@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property Maps"
 title: "Property Maps"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["OLE DB providers, properties", "maps, property", "property maps"]

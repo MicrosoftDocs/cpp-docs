@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Manual Accessors"
 title: "Using Manual Accessors"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["command handling, OLE DB Templates", "manual accessors", "accessors [C++], manual"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _scprintf, _scprintf_l, _scwprintf, _scwprintf_l"
 title: "_scprintf, _scprintf_l, _scwprintf, _scwprintf_l"
 ms.date: "11/04/2016"
 api_name: ["_scprintf_l", "_scwprintf", "_scwprintf_l", "_scprintf"]

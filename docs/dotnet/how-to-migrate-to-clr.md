@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Migrate to /clr"
 title: "How to: Migrate to -clr"
 ms.custom: "get-started-article"
 ms.date: "09/18/2018"

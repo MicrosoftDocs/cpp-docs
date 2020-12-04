@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Define an Interface Static Constructor (C++/CLI)"
 title: "How to: Define an Interface Static Constructor (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["constructors [C++]", "static constructors, interface", "interface static constructor"]

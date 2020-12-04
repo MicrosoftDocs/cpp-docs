@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Supporting Schema Rowsets"
 title: "Supporting Schema Rowsets"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["schema rowsets", "OLE DB consumer templates, schema rowsets", "OLE DB providers, schema rowsets", "OLE DB, schema rowsets"]

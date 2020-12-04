@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Calling Native Functions from Managed Code"
 title: "Calling Native Functions from Managed Code"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["native functions called from managed code [C++]", "managed code [C++], interoperability", "platform invoke [C++], interoperability", "interoperabiliy [C++], calling native functions from managed code", "calling native functions from managed code", "interop [C++], calling native functions from managed code"]

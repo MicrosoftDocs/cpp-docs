@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Access to ODBC and SQL"
 title: "Access to ODBC and SQL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["API calls [C++], calling DAO or ODBC directly", "Windows API [C++], calling from MFC", "ODBC API functions [C++]", "ODBC API functions [C++], calling from MFC", "SQL [C++], calling ODBC API functions", "ODBC [C++], API functions"]

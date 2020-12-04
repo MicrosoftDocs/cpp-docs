@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Convert System::String to wchar_t* or char*"
 title: "How to: Convert System::String to wchar_t* or char*"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

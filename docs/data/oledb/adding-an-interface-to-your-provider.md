@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an Interface to Your Provider"
 title: "Adding an Interface to Your Provider"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB provider templates, object interfaces"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isupper, _isupper_l, iswupper, _iswupper_l"
 title: "isupper, _isupper_l, iswupper, _iswupper_l"
 ms.date: "4/2/2020"
 api_name: ["isupper", "iswupper", "_iswupper_l", "_isupper_l", "_o_isupper", "_o_iswupper"]

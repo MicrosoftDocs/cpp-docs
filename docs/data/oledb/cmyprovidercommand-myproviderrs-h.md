@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCustomCommand (CustomRS.H)"
 title: "CCustomCommand (CustomRS.H)"
 ms.date: "10/22/2018"
 f1_keywords: ["cmyprovidercommand", "ccustomcommand"]

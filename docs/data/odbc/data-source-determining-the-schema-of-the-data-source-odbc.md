@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Source: Determining the Schema of the Data Source (ODBC)"
 title: "Data Source: Determining the Schema of the Data Source (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC data sources [C++], schema", "schemas [C++], data sources", "data sources [C++], determining schema"]

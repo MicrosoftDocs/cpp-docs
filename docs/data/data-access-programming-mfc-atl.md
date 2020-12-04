@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Access Programming (MFC/ATL)"
 title: "Data Access Programming (MFC-ATL)"
 ms.date: "11/16/2018"
 helpviewer_keywords: ["MFC [C++], data access applications", "databases [C++], MFC", "OLE DB [C++], data access technologies", "data [C++], data access technologies", "data access [C++], class libraries for databases"]

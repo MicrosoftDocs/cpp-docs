@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _query_new_mode"
 title: "_query_new_mode"
 ms.date: "11/04/2016"
 api_name: ["_query_new_mode"]

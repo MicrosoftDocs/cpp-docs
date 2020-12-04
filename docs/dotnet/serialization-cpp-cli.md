@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Serialization (C++/CLI)"
 title: "Serialization (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["serialization [C++]", "SerializableAttribute class, managed applications", "NonSerializedAttribute class, managed applications", "managed code [C++], serializing", ".NET Framework [C++], serialization", "serialization [C++], about serialization"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transaction: How Transactions Affect Updates (ODBC)"
 title: "Transaction: How Transactions Affect Updates (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["transactions, updating recordsets", "ODBC recordsets, transactions", "transactions, rolling back", "CommitTrans method", "Rollback method, ODBC transactions"]

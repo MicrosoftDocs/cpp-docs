@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Sources and Sessions"
 title: "Data Sources and Sessions"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["data sources [C++], OLE DB", "connections [C++], data source", "OLE DB consumer templates [C++], data sources"]

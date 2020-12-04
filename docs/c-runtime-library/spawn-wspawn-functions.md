@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _spawn, _wspawn Functions"
 title: "_spawn, _wspawn Functions"
 ms.date: "11/04/2016"
 api_location: ["msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcrt.dll", "msvcr120.dll", "msvcr100.dll", "msvcr90.dll"]

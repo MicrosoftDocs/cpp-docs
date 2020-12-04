@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: unexpected (CRT)"
 title: "unexpected (CRT)"
 ms.date: "11/04/2016"
 api_name: ["unexpected"]

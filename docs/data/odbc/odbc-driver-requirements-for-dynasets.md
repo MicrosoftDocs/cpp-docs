@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ODBC Driver Requirements for Dynasets"
 title: "ODBC Driver Requirements for Dynasets"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC recordsets, dynasets", "drivers, for dynasets", "drivers, ODBC", "recordsets, dynasets", "dynasets", "ODBC drivers, dynasets"]

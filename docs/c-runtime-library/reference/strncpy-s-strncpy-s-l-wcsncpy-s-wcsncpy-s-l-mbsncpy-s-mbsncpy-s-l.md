@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l"
 title: "strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l"
 ms.date: "4/2/2020"
 api_name: ["_mbsncpy_s_l", "wcsncpy_s", "_strncpy_s_l", "strncpy_s", "_mbsncpy_s", "_wcsncpy_s_l", "_o__mbsncpy_s", "_o__mbsncpy_s_l", "_o_strncpy_s", "_o_wcsncpy_s"]

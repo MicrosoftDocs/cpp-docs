@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use a Native Type in a /clr Compilation"
 title: "How to: Use a Native Type in a -clr Compilation"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

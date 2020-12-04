@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Sink Windows Forms Events from Native C++ Classes"
 title: "How to: Sink Windows Forms Events from Native C++ Classes"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

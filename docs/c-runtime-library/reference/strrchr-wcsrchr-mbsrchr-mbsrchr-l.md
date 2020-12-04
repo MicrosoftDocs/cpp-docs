@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strrchr, wcsrchr, _mbsrchr, _mbsrchr_l"
 title: "strrchr, wcsrchr, _mbsrchr, _mbsrchr_l"
 ms.date: "4/2/2020"
 api_name: ["strrchr", "wcsrchr", "_mbsrchr", "_mbsrchr_l", "_o__mbsrchr", "_o__mbsrchr_l"]

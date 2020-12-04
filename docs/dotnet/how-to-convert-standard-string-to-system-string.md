@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Convert Standard String to System::String"
 title: "How to: Convert Standard String to System::String"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

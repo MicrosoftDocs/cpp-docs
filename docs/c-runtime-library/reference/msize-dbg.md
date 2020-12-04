@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _msize_dbg"
 title: "_msize_dbg"
 ms.date: "11/04/2016"
 api_name: ["_msize_dbg"]

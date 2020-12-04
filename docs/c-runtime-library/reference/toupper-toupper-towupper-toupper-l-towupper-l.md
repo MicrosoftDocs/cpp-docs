@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: toupper, _toupper, towupper, _toupper_l, _towupper_l"
 title: "toupper, _toupper, towupper, _toupper_l, _towupper_l"
 ms.date: "4/2/2020"
 api_name: ["_toupper_l", "towupper", "toupper", "_towupper_l", "_toupper", "_o__toupper", "_o__toupper_l", "_o__towupper_l", "_o_toupper", "_o_towupper"]

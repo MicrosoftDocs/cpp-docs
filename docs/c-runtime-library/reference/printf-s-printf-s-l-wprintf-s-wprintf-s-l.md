@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: printf_s, _printf_s_l, wprintf_s, _wprintf_s_l"
 title: "printf_s, _printf_s_l, wprintf_s, _wprintf_s_l"
 ms.date: "11/04/2016"
 api_name: ["_printf_s_l", "wprintf_s", "_wprintf_s_l", "printf_s"]

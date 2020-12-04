@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Consumer Templates Reference"
 title: "OLE DB Consumer Templates Reference"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE DB consumer templates, classes"]

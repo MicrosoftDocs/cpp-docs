@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Storing Strings in the OLE DB Provider"
 title: "Storing Strings in the OLE DB Provider"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["user records, editing"]

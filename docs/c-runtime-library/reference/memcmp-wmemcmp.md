@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: memcmp, wmemcmp"
 title: "memcmp, wmemcmp"
 ms.date: "11/04/2016"
 api_name: ["memcmp", "wmemcmp"]

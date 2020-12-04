@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overriding a Dynamic Accessor"
 title: "Overriding a Dynamic Accessor"
 ms.date: "10/19/2018"
 helpviewer_keywords: ["accessors [C++], dynamic", "dynamic accessors", "overriding, dynamic accessors"]

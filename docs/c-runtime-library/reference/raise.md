@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: raise"
 title: "raise"
 ms.date: "4/2/2020"
 api_name: ["raise", "_o_raise"]

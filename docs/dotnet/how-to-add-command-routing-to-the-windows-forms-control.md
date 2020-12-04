@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Add Command Routing to the Windows Forms Control"
 title: "How to: Add Command Routing to the Windows Forms Control"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

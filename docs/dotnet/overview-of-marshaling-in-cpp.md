@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overview of Marshaling in C++/CLI"
 title: "Overview of Marshaling in C++"
 ms.date: "07/12/2019"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l"
 title: "_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l"
 ms.date: "4/2/2020"
 api_name: ["_wcsset", "_mbsset", "_strset_l", "_strset", "_wcsset_l", "_mbsset_l", "_o__mbsset", "_o__mbsset_l", "_o__wcsset"]

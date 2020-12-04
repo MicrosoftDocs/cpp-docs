@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strcoll Functions"
 title: "strcoll Functions"
 ms.date: "11/04/2016"
 api_location: ["msvcr120.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110.dll"]

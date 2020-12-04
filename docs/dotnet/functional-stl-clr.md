@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: functional (STL/CLR)"
 title: "functional (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

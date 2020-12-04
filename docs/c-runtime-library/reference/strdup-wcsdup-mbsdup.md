@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strdup, _wcsdup, _mbsdup"
 title: "_strdup, _wcsdup, _mbsdup"
 ms.date: "4/2/2020"
 api_name: ["_strdup", "_mbsdup", "_wcsdup", "_o__strdup", "_o__wcsdup"]
