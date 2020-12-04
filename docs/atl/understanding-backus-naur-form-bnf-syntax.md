@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Understanding Backus-Naur form (BNF) syntax"
 title: "ATL Registrar and Backus-Naur form (BNF) syntax"
 ms.date: "05/14/2019"
 helpviewer_keywords: ["BNF notation", "Backus-Naur form (BNF) syntax"]

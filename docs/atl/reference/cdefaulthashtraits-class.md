@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDefaultHashTraits Class"
 title: "CDefaultHashTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDefaultHashTraits", "ATLCOLL/ATL::CDefaultHashTraits", "ATLCOLL/ATL::CDefaultHashTraits::Hash"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Registry Macros"
 title: "Registry Macros"
 ms.date: "08/19/2019"
 f1_keywords: ["atlcom/ATL::_ATL_STATIC_REGISTRY", "atlcom/ATL::DECLARE_LIBID", "atlcom/ATL::DECLARE_NO_REGISTRY", "atlcom/ATL::DECLARE_REGISTRY", "atlcom/ATL::DECLARE_REGISTRY_APPID_RESOURCEID", "atlcom/ATL::DECLARE_REGISTRY_RESOURCE", "atlcom/ATL::DECLARE_REGISTRY_RESOURCEID"]

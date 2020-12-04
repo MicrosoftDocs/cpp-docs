@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .K3D (32-bit MASM)"
 title: ".K3D"
 ms.date: "11/05/2019"
 f1_keywords: [".K3D"]

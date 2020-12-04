@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using C or C++ Symbols in __asm Blocks"
 title: "Using C or C++ Symbols in __asm Blocks"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["__asm keyword [C++], syntax", "symbols, in __asm blocks", "Visual C, symbols in __asm blocks", "__asm keyword [C++], C/C++ elements in", "Visual C++, in __asm blocks"]

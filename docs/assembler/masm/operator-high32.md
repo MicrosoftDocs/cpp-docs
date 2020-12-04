@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator HIGH32"
 title: "operator HIGH32"
 ms.date: "12/17/2019"
 f1_keywords: ["HIGH32", "operator HIGH32"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAtlException Class"
 title: "CAtlException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlException", "ATLEXCEPT/ATL::CAtlException", "ATLEXCEPT/ATL::CAtlException::CAtlException", "ATLEXCEPT/ATL::CAtlException::m_hr"]

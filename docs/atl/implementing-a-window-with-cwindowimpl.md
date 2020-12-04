@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing a Window with CWindowImpl"
 title: "Implementing a Window with CWindowImpl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, windows", "windows [C++], subclassing", "windows [C++], superclassing", "windows [C++], ATL", "subclassing ATL window classes", "superclassing, ATL"]

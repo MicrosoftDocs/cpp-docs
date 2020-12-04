@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ALLOWISOLATION (Manifest Lookup)"
 title: "/ALLOWISOLATION (Manifest Lookup)"
 ms.date: "11/04/2016"
 f1_keywords: ["/ALLOWISOLATION", "VC.Project.VCLinkerTool.AllowIsolation"]

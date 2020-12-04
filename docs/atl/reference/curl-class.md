@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CUrl Class"
 title: "CUrl Class"
 ms.date: "05/06/2019"
 f1_keywords: ["CUrl", "ATLUTIL/ATL::CUrl", "ATLUTIL/ATL::CUrl::CUrl", "ATLUTIL/ATL::CUrl::Canonicalize", "ATLUTIL/ATL::CUrl::Clear", "ATLUTIL/ATL::CUrl::CrackUrl", "ATLUTIL/ATL::CUrl::CreateUrl", "ATLUTIL/ATL::CUrl::GetExtraInfo", "ATLUTIL/ATL::CUrl::GetExtraInfoLength", "ATLUTIL/ATL::CUrl::GetHostName", "ATLUTIL/ATL::CUrl::GetHostNameLength", "ATLUTIL/ATL::CUrl::GetPassword", "ATLUTIL/ATL::CUrl::GetPasswordLength", "ATLUTIL/ATL::CUrl::GetPortNumber", "ATLUTIL/ATL::CUrl::GetScheme", "ATLUTIL/ATL::CUrl::GetSchemeName", "ATLUTIL/ATL::CUrl::GetSchemeNameLength", "ATLUTIL/ATL::CUrl::GetUrlLength", "ATLUTIL/ATL::CUrl::GetUrlPath", "ATLUTIL/ATL::CUrl::GetUrlPathLength", "ATLUTIL/ATL::CUrl::GetUserName", "ATLUTIL/ATL::CUrl::GetUserNameLength", "ATLUTIL/ATL::CUrl::SetExtraInfo", "ATLUTIL/ATL::CUrl::SetHostName", "ATLUTIL/ATL::CUrl::SetPassword", "ATLUTIL/ATL::CUrl::SetPortNumber", "ATLUTIL/ATL::CUrl::SetScheme", "ATLUTIL/ATL::CUrl::SetSchemeName", "ATLUTIL/ATL::CUrl::SetUrlPath", "ATLUTIL/ATL::CUrl::SetUserName"]

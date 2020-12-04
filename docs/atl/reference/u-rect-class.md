@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _U_RECT Class"
 title: "_U_RECT Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::_U_RECT", "_U_RECT", "ATL._U_RECT"]

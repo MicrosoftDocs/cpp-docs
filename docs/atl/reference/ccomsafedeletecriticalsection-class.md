@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComSafeDeleteCriticalSection Class"
 title: "CComSafeDeleteCriticalSection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Init", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Lock", "ATLCORE/ATL::CComSafeDeleteCriticalSection::Term", "ATLCORE/ATL::m_bInitialized"]

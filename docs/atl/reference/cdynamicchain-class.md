@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDynamicChain Class"
 title: "CDynamicChain Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDynamicChain", "ATLWIN/ATL::CDynamicChain", "ATLWIN/ATL::CDynamicChain::CDynamicChain", "ATLWIN/ATL::CDynamicChain::CallChain", "ATLWIN/ATL::CDynamicChain::RemoveChainEntry", "ATLWIN/ATL::CDynamicChain::SetChainEntry"]

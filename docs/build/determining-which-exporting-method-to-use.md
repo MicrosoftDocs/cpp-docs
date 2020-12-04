@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Determine Which Exporting Method to Use"
 title: "Determine Which Exporting Method to Use"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["__declspec(dllexport) keyword [C++]", "exporting DLLs [C++], method comparison", "def files [C++], exporting from DLLs", ".def files [C++], exporting from DLLs"]

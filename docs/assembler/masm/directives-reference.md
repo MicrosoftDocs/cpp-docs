@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Directives Reference"
 title: "Directives Reference"
 ms.date: 07/15/2020
 f1_keywords: ["Directives Reference"]

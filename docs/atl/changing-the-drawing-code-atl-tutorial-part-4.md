@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Changing the Drawing Code (ATL Tutorial, Part 4)"
 title: "Changing the Drawing Code (ATL Tutorial, Part 4)"
 ms.custom: "get-started-article"
 ms.date: "09/26/2018"

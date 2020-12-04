@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Encoding Reference"
 title: "ATL Encoding Reference"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["encoding", "encoding, functions"]

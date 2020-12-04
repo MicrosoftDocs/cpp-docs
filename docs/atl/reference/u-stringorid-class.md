@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _U_STRINGorID Class"
 title: "_U_STRINGorID Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL._U_STRINGorID", "ATL::_U_STRINGorID", "_U_STRINGorID"]

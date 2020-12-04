@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWindowImpl Class"
 title: "CWindowImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWindowImpl", "ATLWIN/ATL::CWindowImpl", "ATLWIN/ATL::CWindowImpl::Create", "ATLWIN/ATL::CWindowImpl::DefWindowProc", "ATLWIN/ATL::CWindowImpl::GetCurrentMessage", "ATLWIN/ATL::CWindowImpl::GetWindowProc", "ATLWIN/ATL::CWindowImpl::OnFinalMessage", "ATLWIN/ATL::CWindowImpl::SubclassWindow", "ATLWIN/ATL::CWindowImpl::UnsubclassWindow", "ATLWIN/ATL::CWindowImpl::GetWndClassInfo", "ATLWIN/ATL::CWindowImpl::WindowProc", "ATLWIN/ATL::CWindowImpl::m_pfnSuperWindowProc"]

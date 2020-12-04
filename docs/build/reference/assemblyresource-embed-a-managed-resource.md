@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ASSEMBLYRESOURCE (Embed a Managed Resource)"
 title: "/ASSEMBLYRESOURCE (Embed a Managed Resource)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.EmbedManagedResourceFile", "/ASSEMBLYRESOURCE"]

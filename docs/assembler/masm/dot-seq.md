@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .SEQ (32-bit MASM)"
 title: ".SEQ"
 ms.date: "11/05/2019"
 f1_keywords: [".SEQ"]

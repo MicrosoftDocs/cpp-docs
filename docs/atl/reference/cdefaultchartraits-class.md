@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDefaultCharTraits Class"
 title: "CDefaultCharTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDefaultCharTraits", "ATLCOLL/ATL::CDefaultCharTraits", "ATLCOLL/ATL::CDefaultCharTraits::CharToLower", "ATLCOLL/ATL::CDefaultCharTraits::CharToUpper"]

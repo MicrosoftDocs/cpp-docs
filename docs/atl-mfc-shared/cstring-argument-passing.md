@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CString Argument Passing"
 title: "CString Argument Passing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["strings [C++], as function input/output", "argument passing [C++]", "arguments [C++], passing", "functions [C++], strings as input/output", "argument passing [C++], C strings", "passing arguments, C strings", "CString objects, passing arguments", "string arguments"]

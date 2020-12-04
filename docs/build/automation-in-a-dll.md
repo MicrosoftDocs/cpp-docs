@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Automation in a DLL"
 title: "Automation in a DLL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DLLs [C++], Automation", "Automation [C++], DLLs"]

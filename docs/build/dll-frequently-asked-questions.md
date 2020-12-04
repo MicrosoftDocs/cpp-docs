@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DLL Frequently Asked Questions"
 title: "MFC DLL Frequently Asked Questions"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["troubleshooting [C++], DLLs", "DLLs [C++], frequently asked questions", "FAQs [C++], DLLs"]

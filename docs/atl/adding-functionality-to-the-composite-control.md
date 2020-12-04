@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding Functionality to the Composite Control"
 title: "Adding Functionality to the Composite Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event handlers [C++], ActiveX controls", "composite controls, handling events", "ActiveX controls [C++], events"]

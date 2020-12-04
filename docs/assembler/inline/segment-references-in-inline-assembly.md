@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Segment References in Inline Assembly"
 title: "Segment References in Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["references, inline assembly", "segment references in inline assembly", "inline assembly, segment references", "registers", "inline assembly, registers", "registers, inline assembly"]

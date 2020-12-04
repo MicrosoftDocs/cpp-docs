@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Services"
 title: "ATL Services"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CServiceModule class", "COM objects, ATL", "services, ATL", "ATL services"]

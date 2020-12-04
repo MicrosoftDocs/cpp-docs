@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFirePropNotifyEvent Class"
 title: "CFirePropNotifyEvent Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CFirePropNotifyEvent", "ATLCTL/ATL::CFirePropNotifyEvent", "ATLCTL/ATL::CFirePropNotifyEvent::FireOnChanged", "ATLCTL/ATL::CFirePropNotifyEvent::FireOnRequestEdit"]

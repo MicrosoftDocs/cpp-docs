@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Device Context Global Functions"
 title: "Device Context Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlwin/ATL::AtlCreateTargetDC"]

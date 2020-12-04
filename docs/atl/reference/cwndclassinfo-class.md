@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWndClassInfo Class"
 title: "CWndClassInfo Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWndClassInfo", "ATLWIN/ATL::CWndClassInfo", "ATLWIN/ATL::Register", "ATLWIN/ATL::m_atom", "ATLWIN/ATL::m_bSystemCursor", "ATLWIN/ATL::m_lpszCursorID", "ATLWIN/ATL::m_lpszOrigName", "ATLWIN/ATL::m_szAutoName", "ATLWIN/ATL::m_wc", "ATLWIN/ATL::pWndProc"]

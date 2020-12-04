@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Manifest Generation at the Command Line"
 title: "Manifest Generation at the Command Line"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["manifests [C++]", "manifest tool (mt.exe)"]

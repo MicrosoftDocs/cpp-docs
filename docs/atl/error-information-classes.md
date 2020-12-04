@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Error Information Classes"
 title: "Error Information Classe  (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

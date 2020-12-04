@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Server Registration Global Functions"
 title: "Server Registration Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlComModuleRegisterServer", "atlbase/ATL::AtlComModuleUnregisterServer", "atlbase/ATL::AtlComModuleRegisterClassObjects", "atlbase/ATL::AtlComModuleRevokeClassObjects", "atlbase/ATL::AtlComModuleGetClassObject"]

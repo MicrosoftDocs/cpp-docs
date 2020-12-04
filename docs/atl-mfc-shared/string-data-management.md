@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: String Data Management"
 title: "String Data Management"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Unicode, string objects"]

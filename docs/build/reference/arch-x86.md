@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /arch (x86)"
 title: "/arch (x86)"
 ms.date: "10/01/2019"
 ms.assetid: 9dd5a75d-06e4-4674-aade-33228486078d

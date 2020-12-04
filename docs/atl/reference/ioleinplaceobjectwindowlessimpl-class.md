@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IOleInPlaceObjectWindowlessImpl Class"
 title: "IOleInPlaceObjectWindowlessImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IOleInPlaceObjectWindowlessImpl", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::GetDropTarget", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::GetWindow", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::OnWindowMessage", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::SetObjectRects", "ATLCTL/ATL::IOleInPlaceObjectWindowlessImpl::UIDeactivate"]

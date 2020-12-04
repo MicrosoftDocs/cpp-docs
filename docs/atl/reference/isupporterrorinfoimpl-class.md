@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISupportErrorInfoImpl Class"
 title: "ISupportErrorInfoImpl Class"
 ms.date: "06/13/2019"
 f1_keywords: ["ISupportErrorInfoImpl", "ATLCOM/ATL::ISupportErrorInfoImpl", "ATLCOM/ATL::ISupportErrorInfoImpl::InterfaceSupportsErrorInfo"]

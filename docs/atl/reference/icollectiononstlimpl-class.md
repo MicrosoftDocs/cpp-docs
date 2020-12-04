@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICollectionOnSTLImpl Class"
 title: "ICollectionOnSTLImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ICollectionOnSTLImpl", "ATLCOM/ATL::ICollectionOnSTLImpl", "ATLCOM/ATL::ICollectionOnSTLImpl::get__NewEnum", "ATLCOM/ATL::ICollectionOnSTLImpl::getcount", "ATLCOM/ATL::ICollectionOnSTLImpl::get_Item", "ATLCOM/ATL::ICollectionOnSTLImpl::m_coll"]

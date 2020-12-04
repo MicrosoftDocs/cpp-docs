@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL and the Free Threaded Marshaler"
 title: "ATL and the Free Threaded Marshaler"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, free threaded marshaler", "free threaded marshaler", "threading [C++], marshaler in ATL", "threading [ATL], free threaded marshaler", "FTM in ATL"]

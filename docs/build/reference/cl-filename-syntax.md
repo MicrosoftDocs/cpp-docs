@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CL Filename Syntax"
 title: "CL Filename Syntax"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["syntax, compiler filename", "paths, CL compiler filename syntax", "cl.exe compiler, filename syntax", "extensions, specifying to compiler", "file names [C++], CL compiler", "file names [C++]"]

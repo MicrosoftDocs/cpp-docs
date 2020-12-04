@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using a Template Library"
 title: "Using a Template Library (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["template libraries"]

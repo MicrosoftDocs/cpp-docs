@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComObjectNoLock Class"
 title: "CComObjectNoLock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComObjectNoLock", "ATLCOM/ATL::CComObjectNoLock", "ATLCOM/ATL::CComObjectNoLock::CComObjectNoLock", "ATLCOM/ATL::CComObjectNoLock::AddRef", "ATLCOM/ATL::CComObjectNoLock::QueryInterface", "ATLCOM/ATL::CComObjectNoLock::Release"]

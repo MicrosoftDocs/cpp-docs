@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Avoidance of Heap Contention"
 title: "Avoidance of Heap Contention"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["heap contention"]

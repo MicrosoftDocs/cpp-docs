@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: PgoAutoSweep"
 title: "PgoAutoSweep"
 ms.date: "07/02/2019"
 f1_keywords: ["PgoAutoSweep", "PogoAutoSweepA", "PogoAutoSweepW"]

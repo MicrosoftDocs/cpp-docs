@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Benefits and Tradeoffs of the Method Used to Link to the CRT"
 title: "Benefits and Tradeoffs of the Method Used to Link to the CRT"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["_ATL_MIN_CRT macro"]

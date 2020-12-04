@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Programming with CComBSTR (ATL)"
 title: "Programming with CComBSTR (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CComBSTR class, programming with", "Unicode, using CComBSTR [ATL]"]

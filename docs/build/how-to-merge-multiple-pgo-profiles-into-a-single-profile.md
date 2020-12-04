@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Merge Multiple PGO Profiles into a Single Profile"
 title: "How to: Merge Multiple PGO Profiles into a Single Profile"
 ms.date: "03/14/2018"
 helpviewer_keywords: ["merging profiles", "profile-guided optimizations, merging profiles"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAutoPtr Class"
 title: "CAutoPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAutoPtr", "ATLBASE/ATL::CAutoPtr", "ATLBASE/ATL::CAutoPtr::CAutoPtr", "ATLBASE/ATL::CAutoPtr::Attach", "ATLBASE/ATL::CAutoPtr::Detach", "ATLBASE/ATL::CAutoPtr::Free", "ATLBASE/ATL::CAutoPtr::m_p"]

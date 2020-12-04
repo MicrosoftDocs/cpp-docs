@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CGlobalHeap Class"
 title: "CGlobalHeap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CGlobalHeap", "ATLMEM/ATL::CGlobalHeap", "ATLMEM/ATL::CGlobalHeap::Allocate", "ATLMEM/ATL::CGlobalHeap::Free", "ATLMEM/ATL::CGlobalHeap::GetSize", "ATLMEM/ATL::CGlobalHeap::Reallocate"]

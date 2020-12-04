@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing Property Pages"
 title: "Implementing Property Pages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["IPropertyPage2 class", "IPropertyPage class", "property pages, implementing"]

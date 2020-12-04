@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MSBuild on the command line - C++"
 title: "MSBuild on the command line - C++"
 ms.date: "12/12/2018"
 helpviewer_keywords: ["MSBuild"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTimeSpan Class"
 title: "CTimeSpan Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CTimeSpan", "ATLTIME/ATL::CTimeSpan", "ATLTIME/ATL::CTimeSpan::CTimeSpan", "ATLTIME/ATL::CTimeSpan::Format", "ATLTIME/ATL::CTimeSpan::GetDays", "ATLTIME/ATL::CTimeSpan::GetHours", "ATLTIME/ATL::CTimeSpan::GetMinutes", "ATLTIME/ATL::CTimeSpan::GetSeconds", "ATLTIME/ATL::CTimeSpan::GetTimeSpan", "ATLTIME/ATL::CTimeSpan::GetTotalHours", "ATLTIME/ATL::CTimeSpan::GetTotalMinutes", "ATLTIME/ATL::CTimeSpan::GetTotalSeconds", "ATLTIME/ATL::CTimeSpan::Serialize64"]

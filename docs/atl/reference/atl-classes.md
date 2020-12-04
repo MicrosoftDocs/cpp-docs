@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL classes and structs"
 title: "ATL classes and structs| Microsoft Docs"
 ms.date: "05/03/2018"
 helpviewer_keywords: ["classes [C++], ATL", "ATL, classes"]

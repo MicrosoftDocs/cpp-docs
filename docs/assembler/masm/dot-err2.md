@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .ERR2"
 title: ".ERR2"
 ms.date: "12/17/2019"
 f1_keywords: [".ERR2"]

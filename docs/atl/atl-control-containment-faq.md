@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Control Containment FAQ"
 title: "ATL Control Containment FAQ"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["hosting controls using ATL", "ActiveX control containers [C++], ATL control hosting", "ATL, hosting ActiveX controls", "ActiveX controls [C++], hosting", "controls [ATL]"]

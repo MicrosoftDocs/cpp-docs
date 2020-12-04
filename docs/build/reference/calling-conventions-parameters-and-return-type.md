@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Calling Conventions, Parameters, and Return Type"
 title: "Calling Conventions, Parameters, and Return Type"
 ms.date: "02/13/2019"
 helpviewer_keywords: ["calling conventions, helper functions", "helper functions, calling conventions", "helper functions, return types"]
