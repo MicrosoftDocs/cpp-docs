@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1 and 3) C4793"
 title: "Compiler Warning (level 1 and 3) C4793"
 ms.date: "11/04/2016"
 f1_keywords: ["C4793"]

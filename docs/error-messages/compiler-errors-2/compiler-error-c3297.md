@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3297"
 title: "Compiler Error C3297"
 ms.date: "11/04/2016"
 f1_keywords: ["C3297"]

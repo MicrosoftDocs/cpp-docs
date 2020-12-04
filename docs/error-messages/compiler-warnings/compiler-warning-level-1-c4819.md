@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4819"
 title: "Compiler Warning (level 1) C4819"
 ms.date: "04/08/2019"
 f1_keywords: ["C4819"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3445"
 title: "Compiler Error C3445"
 ms.date: "04/10/2017"
 f1_keywords: ["C3445"]

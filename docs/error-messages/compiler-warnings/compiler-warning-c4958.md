@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning C4958"
 title: "Compiler Warning C4958"
 ms.date: "11/04/2016"
 f1_keywords: ["C4958"]
