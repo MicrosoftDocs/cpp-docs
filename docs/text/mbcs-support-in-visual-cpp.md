@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MBCS Support in Visual C++"
 title: "MBCS Support in Visual C++"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tools [C++], MBCS support", "Asian languages [C++]", "Code Editor [C++], MBCS support", "IME [C++]", "Chinese characters [C++]", "Input Method Editor [C++], MBCS", "resource editors [C++], MBCS support", "debugger [C++], MBCS support", "character sets [C++], multibyte", "Japanese characters [C++]", "multibyte characters [C++]", "Kanji character support [C++]", "NMAKE program, MBCS support", "double-byte character sets [C++]", "IME [C++], MBCS", "Input Method Editor [C++]", "MBCS [C++], enabling"]

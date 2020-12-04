@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Predefined Symbols"
 title: "ATL Predefined Symbols"
 ms.date: "02/14/2019"
 helpviewer_keywords: ["symbols [C++], ATL predefined", "ATL symbols"]

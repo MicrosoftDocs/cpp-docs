@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: shared_future Class"
 title: "shared_future Class"
 ms.date: "11/04/2016"
 f1_keywords: ["future/std::shared_future", "future/std::shared_future::shared_future", "future/std::shared_future::get", "future/std::shared_future::valid", "future/std::shared_future::wait", "future/std::shared_future::wait_for", "future/std::shared_future::wait_until"]

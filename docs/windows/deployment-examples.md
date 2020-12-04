@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Deployment Examples"
 title: "Deployment Examples"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application deployment [C++], examples", "deploying applications [C++], examples", "examples [C++], deployment"]

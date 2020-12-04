@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Typedef, Enum, Union, and Struct Attributes"
 title: "Typedef, Enum, Union, and Struct Attributes (C++ COM)"
 ms.date: "10/02/2018"
 helpviewer_keywords: ["union attributes", "attributes [C++/CLI], reference topics"]

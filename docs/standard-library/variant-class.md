@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: variant Class"
 title: "variant Class"
 ms.date: "04/04/2019"
 f1_keywords: ["variant/std::variant", "variant/std::variant::emplace", "variant/std::variant::index", "variant/std::variant::valueless_by_exception"]

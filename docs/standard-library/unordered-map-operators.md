@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;unordered_map&gt; operators"
 title: "&lt;unordered_map&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["unordered_map/std::operator!=", "unordered_map/std::operator=="]

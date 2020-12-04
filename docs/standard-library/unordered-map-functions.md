@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;unordered_map&gt; functions"
 title: "&lt;unordered_map&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["unordered_map/std::swap", "unordered_map/std::swap (unordered_map)", "unordered_map/std::swap (unordered_multimap)"]

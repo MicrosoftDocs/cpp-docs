@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: public (C++ Attributes)"
 title: "public (C++ Attributes) (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.public"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ Standard Library Containers"
 title: "C++ Standard Library Containers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["C++ Standard Library, class template containers", "containers, C++ Standard Library"]

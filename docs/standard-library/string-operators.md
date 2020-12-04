@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;string&gt; operators"
 title: "&lt;string&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["string/std::operator!=", "string/std::operator&gt;", "string/std::operator&gt;&gt;", "string/std::operator&gt;=", "string/std::operator&lt;", "string/std::operator&lt;&lt;", "string/std::operator&lt;=", "string/std::operator+", "string/std::operator=="]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create Resources (C++)"
 title: "How to: Create Resources (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.resvw.add.MFC", "vs.resourceview.F1", "vc.editors.insertresource", "vc.editors.newcustomresource"]

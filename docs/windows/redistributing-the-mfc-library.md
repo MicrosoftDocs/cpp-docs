@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Redistributing the MFC Library"
 title: "Redistributing the MFC Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, redistributing", "redistributing MFC library"]

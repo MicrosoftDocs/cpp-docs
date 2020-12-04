@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: requires_category"
 title: "requires_category (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.requires_category"]

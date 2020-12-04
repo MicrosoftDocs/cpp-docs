@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: vector&lt;bool&gt;::reference::operator bool"
 title: "vector&lt;bool&gt;::reference::operator bool"
 ms.date: "11/04/2016"
 f1_keywords: ["operatorbool", "vector<bool>::reference::operatorbool", "bool", "std::vector<bool>::reference::operatorbool"]

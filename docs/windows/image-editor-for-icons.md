@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Image Editor for Icons (C++)"
 title: "Image Editor for Icons (C++)"
 ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.cursor.F1", "vc.editors.icon.F1", "vc.editors.cursor", "vc.editors.bitmap.F1", "vc.editors.bitmap", "vc.editors.dialog.GridSettings", "vc.editors.gridsettings", "vc.editors.icon", "vc.editors.texttool"]

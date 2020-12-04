@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: stack Class"
 title: "stack Class"
 ms.date: "11/04/2016"
 f1_keywords: ["stack/std::stack::container_type", "stack/std::stack::size_type", "stack/std::stack::value_type", "stack/std::stack::empty", "stack/std::stack::pop", "stack/std::stack::push", "stack/std::stack::size", "stack/std::stack::top"]

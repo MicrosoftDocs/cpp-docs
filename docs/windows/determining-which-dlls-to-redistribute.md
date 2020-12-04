@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Determining Which DLLs to Redistribute"
 title: "Determining Which DLLs to Redistribute"
 ms.date: "07/15/2019"
 helpviewer_keywords: ["redistributing DLLs", "DLLs [C++], redistributing", "dependencies [C++], application deployment and", "application deployment [C++], DLL redistribution", "deploying applications [C++], DLL redistribution"]

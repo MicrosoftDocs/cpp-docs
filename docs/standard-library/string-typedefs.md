@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;string&gt; typedefs"
 title: "&lt;string&gt; typedefs"
 ms.date: "11/04/2016"
 f1_keywords: ["string/std::string", "string/std::u16string", "string/std::u32string", "string/std::wstring"]

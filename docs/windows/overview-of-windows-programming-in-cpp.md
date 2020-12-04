@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overview of Windows Programming in C++"
 title: "Overview of Windows Programming in C++"
 ms.date: "09/17/2019"
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d

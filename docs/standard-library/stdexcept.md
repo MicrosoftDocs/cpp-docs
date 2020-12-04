@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;stdexcept&gt;"
 title: "&lt;stdexcept&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<stdexcept>"]

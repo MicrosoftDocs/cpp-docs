@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: db_command"
 title: "db_command (C++ COM Attribute)"
 ms.date: "07/10/2018"
 f1_keywords: ["vc-attr.db_command"]
