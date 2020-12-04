@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: register Storage-Class Specifier"
 title: "register Storage-Class Specifier"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["register variables", "register storage class"]

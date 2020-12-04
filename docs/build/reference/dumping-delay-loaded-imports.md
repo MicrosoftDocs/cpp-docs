@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dumping Delay-Loaded Imports"
 title: "Dumping Delay-Loaded Imports"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["delay-loaded imports, dumping", "imports (delay-loaded)", "delay-loaded imports"]

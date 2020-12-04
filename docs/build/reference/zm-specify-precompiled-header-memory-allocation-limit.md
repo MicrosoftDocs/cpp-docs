@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zm (Specify Precompiled Header Memory Allocation Limit)"
 title: "/Zm (Specify Precompiled Header Memory Allocation Limit)"
 ms.date: "03/08/2019"
 f1_keywords: ["/zm"]

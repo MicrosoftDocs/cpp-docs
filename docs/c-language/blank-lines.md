@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Blank Lines"
 title: "Blank Lines"
 ms.date: "11/04/2016"
 ms.assetid: 793a7b8f-6e8a-4641-a354-9f66e3c96ee2

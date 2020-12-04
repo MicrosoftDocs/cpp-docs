@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using an NMAKE Macro"
 title: "Using an NMAKE Macro"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["macros, NMAKE", "NMAKE macros, using"]

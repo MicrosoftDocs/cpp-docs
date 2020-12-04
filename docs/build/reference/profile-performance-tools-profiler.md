@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /PROFILE (Performance Tools Profiler)"
 title: "/PROFILE (Performance Tools Profiler)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.Profile"]

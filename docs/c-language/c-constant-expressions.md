@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Constant Expressions"
 title: "C Constant Expressions"
 ms.date: "06/14/2018"
 helpviewer_keywords: ["constant expressions, syntax", "constant expressions", "expressions [C++], constant"]

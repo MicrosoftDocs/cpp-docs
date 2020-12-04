@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Regular MFC DLLs Statically Linked to MFC"
 title: "Regular MFC DLLs Statically Linked to MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["regular MFC DLLs [C++]", "DLLs [C++], regular", "USRDLLs", "USRDLLs, statically linked to MFC", "statically linked DLLs [C++]", "regular MFC DLLs [C++], statically linked to MFC"]

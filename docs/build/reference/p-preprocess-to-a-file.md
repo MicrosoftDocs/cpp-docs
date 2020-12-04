@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /P (Preprocess to a File)"
 title: "/P (Preprocess to a File)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.GeneratePreprocessedFile", "/p", "VC.Project.VCCLWCECompilerTool.GeneratePreprocessedFile"]

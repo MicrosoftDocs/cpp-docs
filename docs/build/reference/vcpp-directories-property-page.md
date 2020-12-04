@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: VC++ Directories Property Page (Windows)"
 title: "VC++ Directories Property Page"
 ms.date: "07/17/2019"
 f1_keywords: ["VC.Project.VCDirectories.IncludePath", "VC.Project.VCDirectories.ReferencePath", "VC.Project.VCDirectories.SourcePath", "VC.Project.VCDirectories.LibraryWPath", "VC.Project.VCDirectories.ExecutablePath", "VC.Project.VCDirectories.LibraryPath", "VS.ToolsOptionsPages.Projects.VCDirectories", "VC.Project.VCDirectories.ExcludePath"]

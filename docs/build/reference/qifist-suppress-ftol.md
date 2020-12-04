@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /QIfist (Suppress _ftol)"
 title: "/QIfist (Suppress _ftol)"
 ms.date: "11/04/2016"
 f1_keywords: ["/qifist"]

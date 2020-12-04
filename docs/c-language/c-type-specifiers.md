@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Type Specifiers"
 title: "C Type Specifiers"
 ms.date: "01/29/2018"
 helpviewer_keywords: ["type specifiers, C", "specifiers, type"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /USEPROFILE (Run PGO in thread safe mode)"
 title: "/USEPROFILE (Use PGO data with LTCG)"
 ms.date: "03/14/2018"
 f1_keywords: ["USEPROFILE"]

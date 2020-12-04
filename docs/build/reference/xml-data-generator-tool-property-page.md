@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XML Data Generator Tool Property Page"
 title: "XML Data Generator Tool Property Page"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCXMLDataGeneratorTool.GeneratedProxyLanguage", "VC.Project.VCXMLDataGeneratorTool.Output", "VC.Project.VCXMLDataGeneratorTool.SuppressStartupBanner"]

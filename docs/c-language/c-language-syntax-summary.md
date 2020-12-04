@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Language Syntax Summary"
 title: "C Language Syntax Summary"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Visual C, syntax notation", "syntax, C notation", "notation in C", "syntax"]

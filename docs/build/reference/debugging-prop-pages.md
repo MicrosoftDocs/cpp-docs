@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ Debugging Property Pages"
 title: "C++ Debugging Property Pages"
 ms.date: "07/24/2019"
 ms.topic: "article"

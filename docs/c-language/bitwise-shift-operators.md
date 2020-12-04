@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Bitwise Shift Operators"
 title: "Bitwise Shift Operators"
 ms.date: "10/18/2018"
 helpviewer_keywords: ["operators [C++], bitwise", "shift operators, bitwise", "bitwise-shift operators", "operators [C++], shift"]

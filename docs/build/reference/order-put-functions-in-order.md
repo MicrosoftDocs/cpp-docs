@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ORDER (Put Functions in Order)"
 title: "/ORDER (Put Functions in Order)"
 ms.date: "09/05/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.FunctionOrder", "/order"]

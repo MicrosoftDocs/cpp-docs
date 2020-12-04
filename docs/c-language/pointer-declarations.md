@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Pointer Declarations"
 title: "Pointer Declarations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["pointer declarations", "declarations, pointers", "const keyword [C]", "pointers, declarations"]

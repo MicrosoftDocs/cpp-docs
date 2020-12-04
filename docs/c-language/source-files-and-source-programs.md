@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Source Files and Source Programs"
 title: "Source Files and Source Programs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["files [C++], source", "programs [C++], source", "source files, specifying in compiler", "source programs"]

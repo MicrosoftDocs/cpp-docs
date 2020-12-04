@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type char"
 title: "Type char"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["type char", "unsigned char keyword [C]", "char keyword [C]"]

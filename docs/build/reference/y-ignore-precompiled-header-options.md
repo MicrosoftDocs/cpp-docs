@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Y- (Ignore Precompiled Header Options)"
 title: "/Y- (Ignore Precompiled Header Options)"
 ms.date: "11/04/2016"
 f1_keywords: ["/y-"]

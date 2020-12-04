@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Multiplicative Operators"
 title: "C Multiplicative Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["arithmetic operators [C++], multiplicative operators", "/ operator", "/ operator, multiplicative operators", "remainder operator (%)", "operators [C], multiplication", "% operator", "slash (/) operator", "multiplication operator [C++], multiplicative operators"]

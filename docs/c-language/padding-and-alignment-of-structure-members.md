@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Padding and Alignment of Structure Members"
 title: "Padding and Alignment of Structure Members"
 ms.date: "10/18/2018"
 helpviewer_keywords: ["structure members, padding and alignment"]

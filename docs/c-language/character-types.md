@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Character Types"
 title: "Character Types"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["character data types [C]", "types [C], character"]

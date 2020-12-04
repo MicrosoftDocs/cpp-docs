@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /GX (Enable Exception Handling)"
 title: "/GX (Enable Exception Handling)"
 ms.date: "11/19/2019"
 f1_keywords: ["/gx"]

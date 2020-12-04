@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /HEADERS"
 title: "/HEADERS"
 ms.date: "11/04/2016"
 f1_keywords: ["/headers"]

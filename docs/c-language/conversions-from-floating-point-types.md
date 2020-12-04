@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Conversions from floating-point types"
 title: "Conversions from floating-point types"
 ms.date: "10/02/2019"
 helpviewer_keywords: ["converting floating point", "floating-point conversion"]

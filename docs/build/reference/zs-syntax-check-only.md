@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zs (Syntax Check Only)"
 title: "/Zs (Syntax Check Only)"
 ms.date: "11/04/2016"
 f1_keywords: ["/zs"]

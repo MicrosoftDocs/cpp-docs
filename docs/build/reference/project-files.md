@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Project Files"
 title: "Example Project File"
 ms.date: "08/19/2019"
 helpviewer_keywords: [".vcxproj files", "C++ projects, project file format"]

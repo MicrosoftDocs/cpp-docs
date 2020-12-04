@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Comments"
 title: "C Comments"
 ms.date: "06/25/2018"
 helpviewer_keywords: ["code comments, C code", "comments, documenting code", "comments, C code", "/* */ comment delimiters", "comments"]

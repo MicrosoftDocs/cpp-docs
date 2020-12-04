@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DUMPBIN Reference"
 title: "DUMPBIN Reference"
 ms.date: "11/04/2016"
 f1_keywords: ["dumpbin"]

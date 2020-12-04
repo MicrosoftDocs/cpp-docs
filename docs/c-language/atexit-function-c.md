@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: atexit Function (C)"
 title: "atexit Function (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["atexit function"]

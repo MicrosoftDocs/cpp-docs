@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DUMPBIN Command Line"
 title: "DUMPBIN Command Line"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DUMPBIN program, command line"]

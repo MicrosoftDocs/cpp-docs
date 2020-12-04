@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DYNAMICBASE"
 title: "/DYNAMICBASE"
 ms.date: "06/12/2018"
 f1_keywords: ["/dynamicbase"]

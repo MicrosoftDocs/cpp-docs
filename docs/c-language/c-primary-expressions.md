@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Primary Expressions"
 title: "C Primary Expressions"
 ms.date: "10/21/2018"
 helpviewer_keywords: ["primary expressions"]

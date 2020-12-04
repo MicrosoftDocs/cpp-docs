@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /V (Version Number)"
 title: "/V (Version Number)"
 ms.date: "11/04/2016"
 f1_keywords: ["/v"]

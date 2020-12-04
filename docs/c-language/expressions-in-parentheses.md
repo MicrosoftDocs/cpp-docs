@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expressions in Parentheses"
 title: "Expressions in Parentheses"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["parentheses", "expression evaluation, evaluation order", "expressions [C++], evaluating", "parentheses, expressions"]

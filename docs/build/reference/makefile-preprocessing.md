@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Makefile Preprocessing"
 title: "Makefile Preprocessing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["preprocessing makefiles", "makefiles, preprocessing"]

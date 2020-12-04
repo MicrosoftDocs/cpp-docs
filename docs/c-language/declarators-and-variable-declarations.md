@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Declarators and Variable Declarations"
 title: "Declarators and Variable Declarations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["declaring variables, declarators", "declarators, definition", "declaring variables, declaration statements"]

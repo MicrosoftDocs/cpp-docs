@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Identifiers in Primary Expressions"
 title: "Identifiers in Primary Expressions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["identifiers, designating objects"]

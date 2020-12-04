@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Search Paths in Rules"
 title: "Search Paths in Rules"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["search paths in NMAKE inference rules", "inference rules in NMAKE", "rules, inference"]

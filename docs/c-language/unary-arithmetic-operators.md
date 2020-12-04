@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unary Arithmetic Operators"
 title: "Unary Arithmetic Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operators [C], unary", "tilde (~) one's complement operator", "bitwise-complement operator", "arithmetic operators [C++], unary", "+ operator, unary operators", "unary operators", "exclamation points", "~ operator, one's complement operator", "logical negation", "! operator, unary arithmetic operators"]

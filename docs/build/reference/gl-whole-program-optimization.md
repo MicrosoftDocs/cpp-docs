@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /GL (Whole Program Optimization)"
 title: "/GL (Whole Program Optimization)"
 ms.date: "11/04/2016"
 f1_keywords: ["/gl"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Subtraction (-)"
 title: "Subtraction (-)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operators [C], subtraction", "subtraction operator, syntax"]

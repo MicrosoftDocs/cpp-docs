@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: String Literals in Primary Expressions"
 title: "String Literals in Primary Expressions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["string literals, in primary expressions"]

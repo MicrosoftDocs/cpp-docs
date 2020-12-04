@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Casting Integers to Floating-Point Values"
 title: "Casting Integers to Floating-Point Values"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["integers, casting to floating-point values"]

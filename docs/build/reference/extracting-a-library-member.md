@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extracting a Library Member"
 title: "Extracting a Library Member"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["LIB [C++], extracting library members", "EXTRACT library manager option", "libraries, extracting members", "-EXTRACT library manager option", "extracting library members", "/EXTRACT library manager option"]

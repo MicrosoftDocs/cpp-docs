@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SECTIONS (C/C++)"
 title: "SECTIONS (C/C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["SECTIONS"]

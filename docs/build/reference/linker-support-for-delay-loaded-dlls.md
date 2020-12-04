@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Support for Delay-Loaded DLLs"
 title: "Linker Support for Delay-Loaded DLLs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["delayed loading of DLLs, linker support"]

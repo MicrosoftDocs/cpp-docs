@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using the Debug Build to Check for Memory Overwrite"
 title: "Using the Debug Build to Check for Memory Overwrite"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory, overwrites"]

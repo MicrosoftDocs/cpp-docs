@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XML Document Generator Tool Property Pages"
 title: "XML Document Generator Tool Property Pages"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCXDCMakeTool.ValidateIntelliSense", "VC.Project.VCXDCMakeTool.SuppressStartupBanner", "VC.Project.VCXDCMakeTool.DocumentLibraryDependencies", "VC.Project.VCXDCMakeTool.OutputDocumentFile", "VC.Project.VCXDCMakeTool.AdditionalDocumentFiles"]

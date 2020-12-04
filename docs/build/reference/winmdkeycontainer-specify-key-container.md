@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /WINMDKEYCONTAINER (Specify Key Container)"
 title: "/WINMDKEYCONTAINER (Specify Key Container)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.WINMDKEYCONTAINER"]

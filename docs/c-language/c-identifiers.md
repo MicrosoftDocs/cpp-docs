@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Identifiers"
 title: "C Identifiers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["identifiers, C", "naming identifiers", "identifiers", "symbols, C identifiers", "identifiers, case sensitivity", "symbols, case sensitivity"]

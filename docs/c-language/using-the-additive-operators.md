@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using the Additive Operators"
 title: "Using the Additive Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operators [C++], addition", "additive operators"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Project and Solution Files"
 title: "Project and Solution Files"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["project files [C++]", "file types [C++], makefiles", ".sdf, browsing database file", "Makefile projects", "browsing database file, .sdf", "file types [C++], project files"]

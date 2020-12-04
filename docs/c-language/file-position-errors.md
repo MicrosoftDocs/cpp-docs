@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File Position Errors"
 title: "File Position Errors"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["file pointers [C++], file position errors"]

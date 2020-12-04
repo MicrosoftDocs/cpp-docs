@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: String Literal Concatenation"
 title: "String Literal Concatenation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["concatenating strings", "strings [C++], concatenating"]
