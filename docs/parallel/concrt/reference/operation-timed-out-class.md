@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operation_timed_out Class"
 title: "operation_timed_out Class"
 ms.date: "11/04/2016"
 f1_keywords: ["operation_timed_out", "CONCRT/concurrency::operation_timed_out", "CONCRT/concurrency::operation_timed_out::operation_timed_out"]

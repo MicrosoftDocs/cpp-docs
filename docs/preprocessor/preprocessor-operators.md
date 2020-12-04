@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Preprocessor operators"
 title: "Preprocessor operators"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["preprocessor operators", "operators [C++], preprocessor"]

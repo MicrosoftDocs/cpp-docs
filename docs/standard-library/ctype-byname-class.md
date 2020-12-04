@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ctype_byname Class"
 title: "ctype_byname Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocale/std::ctype_byname"]

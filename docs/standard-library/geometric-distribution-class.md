@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: geometric_distribution Class"
 title: "geometric_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::geometric_distribution", "random/std::geometric_distribution::reset", "random/std::geometric_distribution::p", "random/std::geometric_distribution::param", "random/std::geometric_distribution::min", "random/std::geometric_distribution::max", "random/std::geometric_distribution::operator()", "random/std::geometric_distribution::param_type", "random/std::geometric_distribution::param_type::p", "random/std::geometric_distribution::param_type::operator==", "random/std::geometric_distribution::param_type::operator!="]

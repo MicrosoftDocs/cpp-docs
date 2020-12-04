@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with the Toolbar Control"
 title: "Working with the Toolbar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["GetToolBarCtrl method [MFC]", "toolbars [MFC], accessing common control", "CToolBarCtrl class [MFC], accessing toolbar", "toolbar controls [MFC], accessing"]

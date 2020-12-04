@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: lognormal_distribution Class"
 title: "lognormal_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::lognormal_distribution", "random/std::lognormal_distribution::reset", "random/std::lognormal_distribution::m", "random/std::lognormal_distribution::s", "random/std::lognormal_distribution::param", "random/std::lognormal_distribution::min", "random/std::lognormal_distribution::max", "random/std::lognormal_distribution::operator()", "random/std::lognormal_distribution::param_type", "random/std::lognormal_distribution::param_type::m", "random/std::lognormal_distribution::param_type::s", "random/std::lognormal_distribution::param_type::operator==", "random/std::lognormal_distribution::param_type::operator!="]

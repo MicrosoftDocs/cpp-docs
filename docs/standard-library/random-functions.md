@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;random&gt; functions"
 title: "&lt;random&gt; functions"
 ms.date: "09/04/2019"
 f1_keywords: ["random/std::generate_canonical"]

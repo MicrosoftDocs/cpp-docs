@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::size"
 title: "Container Class::size"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["size method"]

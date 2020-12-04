@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency::graphics namespace enums"
 title: "Concurrency::graphics namespace enums"
 ms.date: "11/04/2016"
 f1_keywords: ["amp_graphics/concurrency::graphics::address_mode", "amp_graphics/concurrency::graphics::filter_mode"]

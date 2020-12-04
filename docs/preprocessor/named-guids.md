@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: named_guids import attribute"
 title: "named_guids import attribute"
 ms.date: "08/29/2019"
 f1_keywords: ["named_guids"]

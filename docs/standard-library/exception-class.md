@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: exception Class"
 title: "exception Class"
 ms.date: "11/04/2016"
 f1_keywords: ["exception/std::exception"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Passing Functions"
 title: "Message Passing Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message passing functions"]

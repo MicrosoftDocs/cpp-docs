@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: recursive_mutex Class"
 title: "recursive_mutex Class"
 ms.date: "11/04/2016"
 f1_keywords: ["mutex/std::recursive_mutex", "mutex/std::recursive_mutex::recursive_mutex", "mutex/std::recursive_mutex::lock", "mutex/std::recursive_mutex::try_lock", "mutex/std::recursive_mutex::unlock"]

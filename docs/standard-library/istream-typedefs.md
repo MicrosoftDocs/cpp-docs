@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;istream&gt; typedefs"
 title: "&lt;istream&gt; typedefs"
 ms.date: "11/04/2016"
 f1_keywords: ["istream/std::iostream", "istream/std::istream", "istream/std::wiostream", "istream/std::wistream"]

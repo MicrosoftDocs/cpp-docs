@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Manipulators with Arguments"
 title: "Custom Manipulators with Arguments"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["custom stream manipulators", "streams, custom stream manipulators", "output streams, custom stream manipulators"]

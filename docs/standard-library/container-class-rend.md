@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::rend"
 title: "Container Class::rend"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rend method"]

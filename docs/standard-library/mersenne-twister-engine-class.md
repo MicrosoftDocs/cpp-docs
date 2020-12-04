@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: mersenne_twister_engine Class"
 title: "mersenne_twister_engine Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::mersenne_twister_engine"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exception Handling in the Concurrency Runtime"
 title: "Exception Handling in the Concurrency Runtime"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["lightweight tasks, exception handling [Concurrency Runtime]", "exception handling [Concurrency Runtime]", "structured task groups, exception handling [Concurrency Runtime]", "agents, exception handling [Concurrency Runtime]", "task groups, exception handling [Concurrency Runtime]"]

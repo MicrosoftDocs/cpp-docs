@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: optimize pragma"
 title: "optimize pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.optimize", "optimize_CPP"]

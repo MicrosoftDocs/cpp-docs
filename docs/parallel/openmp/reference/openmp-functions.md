@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OpenMP Functions"
 title: "OpenMP Functions"
 ms.date: "03/20/2019"
 f1_keywords: ["OpenMP functions", "omp_destroy_lock", "omp_destroy_nest_lock", "omp_get_dynamic", "omp_get_max_threads", "omp_get_nested", "omp_get_num_procs", "omp_get_num_threads", "omp_get_thread_num", "omp_get_wtick", "omp_get_wtime", "omp_in_parallel", "omp_init_lock", "omp_init_nest_lock", "omp_set_dynamic", "omp_set_lock", "omp_set_nest_lock", "omp_set_nested", "omp_set_num_threads", "omp_test_lock", "omp_test_nest_lock", "omp_unset_lock", "omp_unset_nest_lock"]

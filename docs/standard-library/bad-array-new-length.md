@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bad_array_new_length Class"
 title: "bad_array_new_length Class"
 ms.date: "11/04/2016"
 f1_keywords: ["new/std::bad_array_new_length"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;memory&gt; enums"
 title: "&lt;memory&gt; enums"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::pointer_safety"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: future Class"
 title: "future Class"
 ms.date: "11/04/2016"
 f1_keywords: ["future/std::future", "future/std::future::future", "future/std::future::get", "future/std::future::share", "future/std::future::valid", "future/std::future::wait", "future/std::future::wait_for", "future/std::future::wait_until"]

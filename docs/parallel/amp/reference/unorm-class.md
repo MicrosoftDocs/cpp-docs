@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: unorm Class"
 title: "unorm Class"
 ms.date: "11/04/2016"
 f1_keywords: ["unorm", "AMP_SHORT_VECTORS/unorm", "AMP_SHORT_VECTORS/Concurrency::graphics::unorm Constructor"]

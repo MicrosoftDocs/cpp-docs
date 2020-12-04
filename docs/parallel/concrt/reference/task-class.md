@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: task Class (Concurrency Runtime)"
 title: "task Class (Concurrency Runtime)"
 ms.date: "07/30/2019"
 f1_keywords: ["task", "PPLTASKS/concurrency::task", "PPLTASKS/concurrency::task::task", "PPLTASKS/concurrency::task::get", "PPLTASKS/concurrency::task::is_apartment_aware", "PPLTASKS/concurrency::task::is_done", "PPLTASKS/concurrency::task::scheduler", "PPLTASKS/concurrency::task::then", "PPLTASKS/concurrency::task::wait"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cmath&gt;"
 title: "&lt;cmath&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<cmath>"]

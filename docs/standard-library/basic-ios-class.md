@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: basic_ios Class"
 title: "basic_ios Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ios/std::basic_ios", "ios/std::basic_ios::char_type", "ios/std::basic_ios::int_type", "ios/std::basic_ios::off_type", "ios/std::basic_ios::pos_type", "ios/std::basic_ios::traits_type", "ios/std::basic_ios::bad", "ios/std::basic_ios::clear", "ios/std::basic_ios::copyfmt", "ios/std::basic_ios::eof", "ios/std::basic_ios::exceptions", "ios/std::basic_ios::fail", "ios/std::basic_ios::fill", "ios/std::basic_ios::good", "ios/std::basic_ios::imbue", "ios/std::basic_ios::init", "ios/std::basic_ios::move", "ios/std::basic_ios::narrow", "ios/std::basic_ios::rdbuf", "ios/std::basic_ios::rdstate", "ios/std::basic_ios::set_rdbuf", "ios/std::basic_ios::setstate", "ios/std::basic_ios::swap", "ios/std::basic_ios::tie", "ios/std::basic_ios::widen", "ios/std::basic_ios::explicit operator bool"]

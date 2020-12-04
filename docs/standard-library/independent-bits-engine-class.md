@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: independent_bits_engine Class"
 title: "independent_bits_engine Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::independent_bits_engine"]

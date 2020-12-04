@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;new&gt; operators and enums"
 title: "&lt;new&gt; operators and enums"
 ms.date: "11/04/2016"
 f1_keywords: ["new/std::operator delete", "new/std::operator new"]

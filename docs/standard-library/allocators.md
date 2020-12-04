@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Allocators"
 title: "Allocators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["allocators", "C++ Standard Library, allocators"]

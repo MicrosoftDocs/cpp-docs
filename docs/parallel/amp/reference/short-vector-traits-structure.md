@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: short_vector_traits Structure"
 title: "short_vector_traits Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["short_vector_traits", "AMP_SHORT_VECTORS/short_vector_traits", "AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::short_vector_traits", "AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::size Constant"]

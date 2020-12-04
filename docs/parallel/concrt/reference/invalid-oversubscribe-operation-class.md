@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: invalid_oversubscribe_operation Class"
 title: "invalid_oversubscribe_operation Class"
 ms.date: "11/04/2016"
 f1_keywords: ["invalid_oversubscribe_operation", "CONCRT/concurrency::invalid_oversubscribe_operation", "CONCRT/concurrency::invalid_oversubscribe_operation::invalid_oversubscribe_operation"]

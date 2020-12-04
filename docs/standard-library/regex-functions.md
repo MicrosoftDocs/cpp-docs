@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;regex&gt; functions"
 title: "&lt;regex&gt; functions"
 ms.date: "09/10/2018"
 f1_keywords: ["regex/std::regex_match", "regex/std::regex_replace", "regex/std::regex_search", "regex/std::swap"]

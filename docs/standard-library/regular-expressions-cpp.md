@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Regular Expressions (C++)"
 title: "Regular Expressions (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["regular expressions [C++]"]

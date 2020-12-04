@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;random&gt;"
 title: "&lt;random&gt;"
 ms.date: "08/24/2017"
 f1_keywords: ["<random>"]

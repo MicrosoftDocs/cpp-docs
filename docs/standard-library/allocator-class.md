@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: allocator Class"
 title: "allocator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::allocator", "memory/std::allocator::const_pointer", "memory/std::allocator::const_reference", "memory/std::allocator::difference_type", "memory/std::allocator::pointer", "memory/std::allocator::reference", "memory/std::allocator::size_type", "memory/std::allocator::value_type", "memory/std::allocator::address", "memory/std::allocator::allocate", "memory/std::allocator::construct", "memory/std::allocator::deallocate", "memory/std::allocator::destroy", "memory/std::allocator::max_size", "memory/std::allocator::rebind"]

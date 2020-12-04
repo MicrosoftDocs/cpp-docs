@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: common_type Structure"
 title: "common_type Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["chrono/std::common_type"]

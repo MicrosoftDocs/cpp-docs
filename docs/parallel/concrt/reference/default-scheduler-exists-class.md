@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: default_scheduler_exists Class"
 title: "default_scheduler_exists Class"
 ms.date: "11/04/2016"
 f1_keywords: ["default_scheduler_exists", "CONCRT/concurrency::default_scheduler_exists", "CONCRT/concurrency::default_scheduler_exists::default_scheduler_exists"]

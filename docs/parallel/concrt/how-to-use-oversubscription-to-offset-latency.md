@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Oversubscription to Offset Latency"
 title: "How to: Use Oversubscription to Offset Latency"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["oversubscription, using [Concurrency Runtime]", "using oversubscription [Concurrency Runtime]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How User Account Control (UAC) Affects Your Application"
 title: "How User Account Control (UAC) Affects Your Application"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["UAC [C++]", "security [C++], User Account Control", "user accounts [C++]", "User Account Control [C++]"]

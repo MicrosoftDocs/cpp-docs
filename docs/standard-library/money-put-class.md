@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: money_put Class"
 title: "money_put Class"
 ms.date: "11/01/2018"
 f1_keywords: ["xlocmon/std::money_put", "xlocmon/std::money_put::char_type", "xlocmon/std::money_put::iter_type", "xlocmon/std::money_put::string_type", "xlocmon/std::money_put::do_put", "xlocmon/std::money_put::put"]

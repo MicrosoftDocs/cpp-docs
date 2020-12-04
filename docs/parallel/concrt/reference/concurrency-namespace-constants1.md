@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: concurrency namespace constants"
 title: "concurrency namespace constants"
 ms.date: "11/04/2016"
 f1_keywords: ["concrt/concurrency::AgentEventGuid", "concrt/concurrency::COOPERATIVE_TIMEOUT_INFINITE", "concrt/concurrency::COOPERATIVE_WAIT_TIMEOUT", "concrt/concurrency::ConcRTEventGuid", "concrt/concurrency::ConcRT_ProviderGuid", "concrt/concurrency::INHERIT_THREAD_PRIORITY", "concrt/concurrency::LockEventGuid", "concrt/concurrency::PPLParallelForEventGuid", "concrt/concurrency::PPLParallelForeachEventGuid", "concrt/concurrency::ResourceManagerEventGuid", "concrt/concurrency::ScheduleGroupEventGuid", "concrt/concurrency::VirtualProcessorEventGuid"]

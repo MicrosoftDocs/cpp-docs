@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Supported Platforms (Visual C++)"
 title: "Supported Platforms (Visual C++)"
 ms.date: "12/02/2019"
 ms.technology: "cpp-tools"

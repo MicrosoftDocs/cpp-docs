@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Parallel Containers to Increase Efficiency"
 title: "How to: Use Parallel Containers to Increase Efficiency"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["increasing efficiency with parallel containers [Concurrency Runtime]", "concurrent_queue class, examples", "concurrent_vector class, examples"]

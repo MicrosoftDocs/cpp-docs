@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: nullopt_t Struct"
 title: "nullopt_t Struct"
 ms.date: "08/04/2019"
 f1_keywords: ["optional/std::nullopt_t", "optional/std::nullopt"]

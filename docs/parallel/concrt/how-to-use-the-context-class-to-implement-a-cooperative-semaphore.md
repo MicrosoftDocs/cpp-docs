@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use the Context Class to Implement a Cooperative Semaphore"
 title: "How to: Use the Context Class to Implement a Cooperative Semaphore"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["cooperative semaphore implementing", "context class"]

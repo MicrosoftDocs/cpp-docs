@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: adopt_lock_t Structure"
 title: "adopt_lock_t Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["mutex/std::adopt_lock_t"]

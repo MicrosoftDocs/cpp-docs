@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use parallel_invoke to Execute Parallel Operations"
 title: "How to: Use parallel_invoke to Execute Parallel Operations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["parallel_invoke function, example", "calling multiple functions in parallel [Concurrency Runtime]"]

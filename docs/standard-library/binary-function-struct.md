@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: binary_function Struct"
 title: "binary_function Struct"
 ms.date: "02/21/2019"
 f1_keywords: ["functional/std::binary_function"]

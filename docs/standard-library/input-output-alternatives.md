@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Input/Output Alternatives"
 title: "Input-Output Alternatives"
 ms.date: "05/07/2019"
 helpviewer_keywords: ["I/O [C++], alternatives"]

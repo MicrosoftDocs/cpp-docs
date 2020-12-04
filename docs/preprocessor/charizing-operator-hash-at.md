@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Charizing operator (#@)"
 title: "Charizing operator (#@)"
 ms.date: "08/29/2019"
 f1_keywords: ["#@"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Select Among Completed Tasks"
 title: "How to: Select Among Completed Tasks"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["selecting among completed tasks [Concurrency Runtime]", "completed tasks, selecting among [Concurrency Runtime]"]

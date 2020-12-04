@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Synchronization Data Structures"
 title: "Synchronization Data Structures"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["synchronization data structures"]

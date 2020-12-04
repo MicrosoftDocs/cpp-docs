@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Convert an OpenMP Loop that Uses Exception Handling to Use the Concurrency Runtime"
 title: "How to: Convert an OpenMP Loop that Uses Exception Handling to Use the Concurrency Runtime"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exception handling, converting from OpenMP to the Concurrency Runtime", "converting from OpenMP to the Concurrency Runtime, exception handling"]

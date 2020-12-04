@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;forward_list&gt; operators"
 title: "&lt;forward_list&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["forward_list/std::operator!=", "forward_list/std::operator==", "forward_list/std::operatoroperator&gt;", "forward_list/std::operatoroperator&gt=;", "forward_list/std::operatoroperator&lt;", "forward_list/std::operatoroperator&lt;="]

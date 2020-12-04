@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Implementing Futures"
 title: "Walkthrough: Implementing Futures"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["implementing futures [Concurrency Runtime]", "futures, implementing [Concurrency Runtime]"]

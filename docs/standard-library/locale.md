@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;locale&gt;"
 title: "&lt;locale&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<locale>", "locale/std::<locale>", "std::<locale>"]

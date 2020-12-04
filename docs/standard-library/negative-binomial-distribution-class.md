@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: negative_binomial_distribution Class"
 title: "negative_binomial_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::negative_binomial_distribution", "random/std::negative_binomial_distribution::reset", "random/std::negative_binomial_distribution::k", "random/std::negative_binomial_distribution::p", "random/std::negative_binomial_distribution::param", "random/std::negative_binomial_distribution::min", "random/std::negative_binomial_distribution::max", "random/std::negative_binomial_distribution::operator()", "random/std::negative_binomial_distribution::param_type", "random/std::negative_binomial_distribution::param_type::k", "random/std::negative_binomial_distribution::param_type::p", "random/std::negative_binomial_distribution::param_type::operator==", "random/std::negative_binomial_distribution::param_type::operator!="]

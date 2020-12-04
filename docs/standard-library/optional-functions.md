@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;optional&gt; functions"
 title: "&lt;optional&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["optional/std::swap"]

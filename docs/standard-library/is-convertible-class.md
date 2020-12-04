@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_convertible Class"
 title: "is_convertible Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_convertible"]

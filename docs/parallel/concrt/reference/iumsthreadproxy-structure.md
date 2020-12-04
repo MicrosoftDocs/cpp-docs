@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IUMSThreadProxy Structure"
 title: "IUMSThreadProxy Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["IUMSThreadProxy", "CONCRTRM/concurrency::IUMSThreadProxy", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::EnterCriticalRegion", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::EnterHyperCriticalRegion", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::ExitCriticalRegion", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::ExitHyperCriticalRegion", "CONCRTRM/concurrency::IUMSThreadProxy::IUMSThreadProxy::GetCriticalRegionType"]

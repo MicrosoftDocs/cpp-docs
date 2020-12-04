@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;deque&gt; operators"
 title: "&lt;deque&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["deque/std::operator!=", "deque/std::operator&gt;", "deque/std::operator&gt;=", "deque/std::operator&lt;", "deque/std::operator&lt;=", "deque/std::operator=="]

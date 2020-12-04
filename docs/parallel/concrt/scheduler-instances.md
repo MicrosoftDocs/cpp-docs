@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Scheduler Instances"
 title: "Scheduler Instances"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["scheduler instances"]

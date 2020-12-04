@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: multitype_join Class"
 title: "multitype_join Class"
 ms.date: "11/04/2016"
 f1_keywords: ["multitype_join", "AGENTS/concurrency::multitype_join", "AGENTS/concurrency::multitype_join::multitype_join", "AGENTS/concurrency::multitype_join::accept", "AGENTS/concurrency::multitype_join::acquire_ref", "AGENTS/concurrency::multitype_join::consume", "AGENTS/concurrency::multitype_join::link_target", "AGENTS/concurrency::multitype_join::release", "AGENTS/concurrency::multitype_join::release_ref", "AGENTS/concurrency::multitype_join::reserve", "AGENTS/concurrency::multitype_join::unlink_target", "AGENTS/concurrency::multitype_join::unlink_targets"]

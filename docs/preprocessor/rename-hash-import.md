@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: rename import attribute"
 title: "rename import attribute"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["rename attribute"]

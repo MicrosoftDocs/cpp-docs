@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: in_place_t Struct"
 title: "in_place_t Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["utility<in_place_t>", "utility/std::in_place_t"]
