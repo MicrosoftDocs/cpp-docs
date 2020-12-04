@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C2000 through C2099"
 title: "Compiler errors C2000 through C2099"
 ms.date: "04/21/2019"
 f1_keywords: ["C2000", "C2016", "C2023", "C2024", "C2025", "C2029", "C2031", "C2035", "C2037", "C2038", "C2049", "C2068", "C2076", "C2080", "C2096", "C2098"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2672"
 title: "Compiler Error C2672"
 ms.date: "10/24/2017"
 f1_keywords: ["C2672"]

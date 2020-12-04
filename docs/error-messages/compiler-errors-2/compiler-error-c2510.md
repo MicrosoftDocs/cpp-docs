@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2510"
 title: "Compiler Error C2510"
 ms.date: "11/04/2016"
 f1_keywords: ["C2510"]

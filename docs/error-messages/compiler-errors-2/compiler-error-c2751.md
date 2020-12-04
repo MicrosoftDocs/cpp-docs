@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2751"
 title: "Compiler Error C2751"
 ms.date: "11/04/2016"
 f1_keywords: ["C2751"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C2300 Through C2399"
 title: "Compiler errors C2300 Through C2399"
 ms.date: "04/21/2019"
 f1_keywords: ["C2303", "C2304", "C2305", "C2306", "C2314", "C2321", "C2323", "C2328", "C2329", "C2330", "C2331", "C2335", "C2336", "C2339", "C2340", "C2342", "C2343", "C2347", "C2354", "C2358", "C2359", "C2363", "C2366", "C2367", "C2398", "C2399"]
