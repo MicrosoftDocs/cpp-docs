@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Scope Resolution Operator: ::"
 title: "Scope Resolution Operator: ::"
 ms.date: "11/04/2016"
 f1_keywords: ["::"]

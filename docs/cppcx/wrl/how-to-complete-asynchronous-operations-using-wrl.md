@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Complete Asynchronous Operations Using WRL"
 title: "How to: Complete Asynchronous Operations Using WRL"
 ms.date: "11/04/2016"
 ms.topic: "reference"

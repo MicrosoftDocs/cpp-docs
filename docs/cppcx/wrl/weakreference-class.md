@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WeakReference Class"
 title: "WeakReference Class"
 ms.date: "09/24/2018"
 ms.topic: "reference"

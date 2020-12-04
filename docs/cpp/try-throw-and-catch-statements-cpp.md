@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: try, throw, and catch Statements (C++)"
 title: "try, throw, and catch Statements (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["catch_cpp", "try_cpp", "throw_cpp"]

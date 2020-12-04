@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: c16rtomb, c32rtomb"
 title: "c16rtomb, c32rtomb"
 ms.date: "10/22/2019"
 api_name: ["c16rtomb", "c32rtomb"]

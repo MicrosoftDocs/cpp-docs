@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Rules and Limitations for Naked Functions"
 title: "Rules and Limitations for Naked Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["naked functions [C++]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reference-Type Function Arguments"
 title: "Reference-Type Function Arguments"
 ms.date: "08/27/2018"
 helpviewer_keywords: ["arguments [C++], function", "functions [C++], parameters", "function parameters [C++], reference-type", "function arguments [C++], reference-type", "passing parameters [C++], reference-type arguments"]

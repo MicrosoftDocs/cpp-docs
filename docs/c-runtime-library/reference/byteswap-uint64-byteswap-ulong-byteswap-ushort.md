@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _byteswap_uint64, _byteswap_ulong, _byteswap_ushort"
 title: "_byteswap_uint64, _byteswap_ulong, _byteswap_ushort"
 ms.date: "11/04/2016"
 api_name: ["_byteswap_uint64", "_byteswap_ulong", "_byteswap_ushort"]

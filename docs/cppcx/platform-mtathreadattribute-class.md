@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::MTAThreadAttribute Class"
 title: "Platform::MTAThreadAttribute Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _aligned_offset_realloc"
 title: "_aligned_offset_realloc"
 ms.date: "4/2/2020"
 api_name: ["_aligned_offset_realloc", "_o__aligned_offset_realloc"]

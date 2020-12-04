@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: default::(type_name)::GetHashCode Method"
 title: "default::(type_name)::GetHashCode Method"
 ms.date: "12/30/2016"
 ms.assetid: 58ea60f8-f820-4103-9b9b-b6635ada3fa5

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fseek, _lseek Constants"
 title: "fseek, _lseek Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["SEEK_END", "SEEK_SET", "SEEK_CUR"]

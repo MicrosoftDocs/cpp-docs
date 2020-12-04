@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler COM Support Classes"
 title: "Compiler COM Support Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["cl.exe compiler, COM support", "COM, compiler support"]

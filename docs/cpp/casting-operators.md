@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Casting Operators"
 title: "Casting Operators"
 ms.custom: "index-page"
 ms.date: "11/04/2016"

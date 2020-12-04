@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cprintf"
 title: "cprintf"
 ms.date: "12/16/2019"
 api_name: ["cprintf"]

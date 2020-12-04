@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _bstr_t Operators"
 title: "_bstr_t Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_bstr_t class [C++], operators"]

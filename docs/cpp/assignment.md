@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Assignment"
 title: "Assignment"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operators [C++], assignment", "assignment operators [C++], overloaded"]

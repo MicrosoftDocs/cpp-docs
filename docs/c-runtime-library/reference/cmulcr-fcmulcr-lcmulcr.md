@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _Cmulcr, _FCmulcr, _LCmulcr"
 title: "_Cmulcr, _FCmulcr, _LCmulcr"
 ms.date: "03/30/2018"
 api_name: ["_Cmulcr", "_FCmulcr", "_LCmulcr"]

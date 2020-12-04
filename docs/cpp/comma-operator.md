@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comma Operator: ,"
 title: "Comma Operator: ,"
 ms.date: "11/04/2016"
 f1_keywords: ["%2C"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SRWLock Class"
 title: "SRWLock Class"
 ms.date: "09/25/2018"
 ms.topic: "reference"

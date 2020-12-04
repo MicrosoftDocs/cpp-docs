@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ cross-platform property page reference"
 title: "Android Project Properties (C++)"
 ms.date: "10/23/2017"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exception-Handling Constants"
 title: "Exception-Handling Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["EXCEPTION_CONTINUE_SEARCH", "EXCEPTION_CONTINUE_EXECUTION", "EXCEPTION_EXECUTE_HANDLER"]

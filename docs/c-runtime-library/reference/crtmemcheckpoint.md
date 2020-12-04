@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CrtMemCheckpoint"
 title: "_CrtMemCheckpoint"
 ms.date: "11/04/2016"
 api_name: ["_CrtMemCheckpoint"]

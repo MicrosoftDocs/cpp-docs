@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unhandled C++ exceptions"
 title: "Unhandled C++ exceptions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event handlers [C++], unhandled exceptions", "catch keyword [C++], handler not found", "exceptions [C++], unhandled", "C++ exception handling, unhandled exceptions", "unhandled exceptions [C++]"]

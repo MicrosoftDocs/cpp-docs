@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fegetround, fesetround"
 title: "fegetround, fesetround"
 ms.date: "04/05/2018"
 api_name: ["fegetround", "fesetround"]

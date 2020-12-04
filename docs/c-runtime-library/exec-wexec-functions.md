@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _exec, _wexec Functions"
 title: "_exec, _wexec Functions"
 ms.date: "11/04/2016"
 api_location: ["msvcr110_clr0400.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr100.dll", "msvcr110.dll", "msvcr80.dll"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Numerical Limits (C++)"
 title: "Numerical Limits (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["numerical limits"]

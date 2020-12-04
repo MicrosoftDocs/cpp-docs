@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Member Access Operators: . and -&gt;"
 title: "Member Access Operators: . and -&gt;"
 ms.date: "11/04/2016"
 f1_keywords: [".", "->"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Explicitly Defaulted and Deleted Functions"
 title: "Explicitly Defaulted and Deleted Functions"
 ms.date: "11/04/2016"
 ms.assetid: 5a588478-fda2-4b3f-a279-db3967f5e07e

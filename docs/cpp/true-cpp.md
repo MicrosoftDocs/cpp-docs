@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: true (C++)"
 title: "true (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["true_cpp"]

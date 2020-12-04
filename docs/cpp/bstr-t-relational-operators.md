@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _bstr_t Relational Operators"
 title: "_bstr_t Relational Operators"
 ms.date: "05/07/2019"
 f1_keywords: ["_bstr_t::operator>", "_bstr_t::operator==", "_bstr_t::operator>=", "_bstr_t::operator!=", "_bstr_t::operator<", "_bstr_t::operator<=", "_bstr_t::operator!"]

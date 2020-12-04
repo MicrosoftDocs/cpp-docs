@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Clang Linker properties (Android C++)"
 title: "Clang Linker Properties (Android C++)"
 ms.date: "10/23/2017"
 ms.assetid: 66e88848-116c-4eb0-bc57-183394d35b57

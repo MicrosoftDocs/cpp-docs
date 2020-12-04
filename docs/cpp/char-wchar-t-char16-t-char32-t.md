@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: char, wchar_t, char16_t, char32_t"
 title: "char, wchar_t, char16_t, char32_t"
 ms.date: "02/14/2018"
 ms.assetid: 6b33e9f5-455b-4e49-8f12-a150cbfe2e5b

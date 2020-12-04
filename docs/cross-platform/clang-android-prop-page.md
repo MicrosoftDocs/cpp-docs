@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Clang project properties (Android C++)"
 title: "Clang Project Properties (Android C++)"
 ms.date: "10/23/2017"
 ms.assetid: 663140ea-a568-472b-a79a-dfea8818e06a

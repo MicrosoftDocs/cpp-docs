@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Integer Limits"
 title: "Integer Limits"
 ms.date: "01/29/2018"
 helpviewer_keywords: ["integral limits", "limits, integer", "limits.h header file", "integer limits"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft Extensions"
 title: "Microsoft Extensions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Microsoft extensions to C/C++"]

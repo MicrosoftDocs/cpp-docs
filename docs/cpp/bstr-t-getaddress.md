@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _bstr_t::GetAddress"
 title: "_bstr_t::GetAddress"
 ms.date: "11/04/2016"
 f1_keywords: ["_bstr_t::GetAddress"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Base Classes"
 title: "Base Classes"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["inheritance, multiple", "base classes [C++], virtual", "derived classes [C++], multiple bases", "multiple inheritance, base classes", "virtual base classes [C++]", "base classes [C++]"]

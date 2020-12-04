@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Bessel Functions: _j0, _j1, _jn, _y0, _y1, _yn"
 title: "Bessel Functions: _j0, _j1, _jn, _y0, _y1, _yn"
 ms.date: "4/2/2020"
 api_name: ["_j0", "_j1", "_jn", "_y0", "_y1", "_yn", "_o__j0", "_o__j1", "_o__jn", "_o__y0", "_o__y1", "_o__yn"]

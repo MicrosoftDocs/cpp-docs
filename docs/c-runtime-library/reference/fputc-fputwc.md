@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fputc, fputwc"
 title: "fputc, fputwc"
 ms.date: "4/2/2020"
 api_name: ["fputc", "fputwc", "_o_fputc", "_o_fputwc"]

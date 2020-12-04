@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sync changes between Xcode and Visual Studio"
 title: "Sync changes between Xcode and Visual Studio"
 ms.date: "10/17/2019"
 ms.assetid: c71a4d7c-120e-4559-a114-3a99c4b860a9

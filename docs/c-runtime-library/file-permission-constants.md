@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File Permission Constants"
 title: "File Permission Constants"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["S_IWRITE constant", "constants [C++], file attributes", "S_IREAD constant", "file permissions [C++]", "_S_IWRITE constant", "_S_IREAD constant"]

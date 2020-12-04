@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Based Pointers (C++)"
 title: "Based Pointers (C++)"
 ms.date: "10/09/2018"
 f1_keywords: ["__based", "_based", "__based_cpp"]

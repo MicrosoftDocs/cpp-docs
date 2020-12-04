@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _controlfp_s"
 title: "_controlfp_s"
 ms.date: "4/2/2020"
 api_name: ["_controlfp_s", "_o__controlfp_s"]

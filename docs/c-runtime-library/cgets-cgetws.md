@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _cgets, _cgetws"
 title: "_cgets, _cgetws"
 ms.date: "4/2/2020"
 api_name: ["_cgetws", "_cgets", "_o__cgets", "_o__cgetws"]

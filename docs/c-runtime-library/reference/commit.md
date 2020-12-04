@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _commit"
 title: "_commit"
 ms.date: "4/2/2020"
 api_name: ["_commit", "_o__commit"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _create_locale, _wcreate_locale"
 title: "_create_locale, _wcreate_locale"
 ms.date: "4/2/2020"
 api_name: ["_create_locale", "__create_locale", "_wcreate_locale", "_o__create_locale", "_o__wcreate_locale"]

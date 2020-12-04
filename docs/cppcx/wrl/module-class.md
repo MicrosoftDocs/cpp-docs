@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Module Class"
 title: "Module Class"
 ms.date: "10/18/2018"
 ms.topic: "reference"

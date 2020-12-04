@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Interface between exceptional and non-exceptional code"
 title: "How to: Interface between exceptional and non-exceptional code"
 ms.custom: "how-to"
 ms.date: "11/19/2019"

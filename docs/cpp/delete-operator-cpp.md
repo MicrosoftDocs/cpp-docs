@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: delete Operator (C++)"
 title: "delete Operator (C++)"
 ms.date: "08/12/2019"
 f1_keywords: ["delete_cpp"]

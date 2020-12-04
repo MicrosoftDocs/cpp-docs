@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _locking Constants"
 title: "_locking Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["_LK_RLCK", "_LK_NBLCK", "_LK_LOCK", "_LK_NBRLCK", "_LK_UNLCK"]

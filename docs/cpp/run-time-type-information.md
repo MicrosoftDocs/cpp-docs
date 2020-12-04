@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Run-Time Type Information"
 title: "Run-Time Type Information"
 ms.custom: "index-page"
 ms.date: "11/04/2016"

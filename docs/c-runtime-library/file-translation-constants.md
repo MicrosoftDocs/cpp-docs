@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File Translation Constants"
 title: "File Translation Constants"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["translation constants", "file translation [C++], constants", "translation, file translation constants", "translation, constants", "constants [C++], file translation mode", "file translation [C++]"]

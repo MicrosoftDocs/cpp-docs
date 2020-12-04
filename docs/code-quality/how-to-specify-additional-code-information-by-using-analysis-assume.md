@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify Additional Code Information by Using _Analysis_assume"
 title: "Use _Analysis_assume for code analysis hints"
 ms.date: 11/04/2016
 ms.topic: "conceptual"

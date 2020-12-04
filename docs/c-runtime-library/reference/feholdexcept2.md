@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: feholdexcept"
 title: "feholdexcept"
 ms.date: "04/05/2018"
 api_name: ["feholdexcept"]

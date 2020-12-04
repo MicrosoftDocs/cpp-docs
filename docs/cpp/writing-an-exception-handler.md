@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Writing an Exception Handler"
 title: "Writing an Exception Handler"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["structured exception handling [C++], exception handlers", "exception handling [C++], exception handlers"]

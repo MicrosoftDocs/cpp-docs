@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: restrict"
 title: "restrict"
 ms.date: "02/09/2018"
 f1_keywords: ["restrict_cpp"]

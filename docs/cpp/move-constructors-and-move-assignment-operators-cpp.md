@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Move Constructors and Move Assignment Operators (C++)"
 title: "How to: Define move constructors and move assignment operators (C++)"
 ms.date: "03/05/2018"
 helpviewer_keywords: ["move constructor [C++]"]

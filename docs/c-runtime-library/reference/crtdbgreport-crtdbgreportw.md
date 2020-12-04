@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CrtDbgReport, _CrtDbgReportW"
 title: "_CrtDbgReport, _CrtDbgReportW"
 ms.date: "11/04/2016"
 api_name: ["_CrtDbgReport", "_CrtDbgReportW"]

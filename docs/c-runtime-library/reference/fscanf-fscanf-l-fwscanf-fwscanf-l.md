@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fscanf, _fscanf_l, fwscanf, _fwscanf_l"
 title: "fscanf, _fscanf_l, fwscanf, _fwscanf_l"
 ms.date: "11/04/2016"
 api_name: ["fscanf", "_fwscanf_l", "_fscanf_l", "fwscanf"]

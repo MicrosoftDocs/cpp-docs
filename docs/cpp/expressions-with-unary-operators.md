@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expressions with Unary Operators"
 title: "Expressions with Unary Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["expressions [C++], unary operators", "unary operators [C++], expressions with", "expressions [C++], operators"]

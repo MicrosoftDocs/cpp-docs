@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Default Arguments"
 title: "Default Arguments"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["arguments [C++], function", "function declarators", "functions [C++], default arguments", "declaring functions [C++], declarators", "default arguments", "arguments [C++], default", "defaults [C++], arguments"]

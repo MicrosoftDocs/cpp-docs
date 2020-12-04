@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create and use CComPtr and CComQIPtr instances"
 title: "How to: Create and use CComPtr and CComQIPtr instances"
 ms.custom: "how-to"
 ms.date: "11/19/2019"

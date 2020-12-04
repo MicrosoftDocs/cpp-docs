@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Class Member Overview"
 title: "Class Member Overview"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["members [C++], types of class members", "members [C++]", "class members [C++], types of", "class members"]

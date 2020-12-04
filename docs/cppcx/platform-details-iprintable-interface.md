@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Details::IPrintable Interface"
 title: "Platform::Details::IPrintable Interface"
 ms.date: "12/30/2016"
 ms.topic: "reference"

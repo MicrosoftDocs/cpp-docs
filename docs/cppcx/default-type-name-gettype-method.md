@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: default::(type_name)::GetType Method"
 title: "default::(type_name)::GetType Method"
 ms.date: "12/30/2016"
 f1_keywords: ["VCCORLIB/Platform::Object::GetType"]

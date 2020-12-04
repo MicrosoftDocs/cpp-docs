@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AsyncBase Class"
 title: "AsyncBase Class"
 ms.date: "10/08/2018"
 ms.topic: "reference"

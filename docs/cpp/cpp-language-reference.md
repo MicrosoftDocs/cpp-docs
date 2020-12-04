@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ Language Reference"
 title: "C++ Language Reference"
 ms.custom: "index-page"
 ms.date: "12/10/2019"

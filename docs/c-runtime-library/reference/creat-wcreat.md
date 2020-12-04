@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _creat, _wcreat"
 title: "_creat, _wcreat"
 ms.date: "4/2/2020"
 api_name: ["_creat", "_wcreat", "_o__creat", "_o__wcreat"]
