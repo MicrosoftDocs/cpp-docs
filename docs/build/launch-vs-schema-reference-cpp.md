@@ -69,7 +69,7 @@ Used when debugging and deploying an app on a remote machine.
 |`deployRuntimeLibraries`|string|Specifies to deploy the runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"MinSizeRel"`, `"RelWithDebInfo"`, or `"Release"`.|
 |`disableDeploy` | boolean | Specifies whether any files should be deployed. |
 |`remoteMachineName`|string|Specifies the name of the remote ARM64 Windows machine where the program is launched. May be the server name or the remote machine's IP address|
-|`windowsAuthenticationType`|string|Specifies the type of remote connection. Possible values are `"Remote Windows authentication"` and `"Remote Windows with No authentication"`. The default is `"Remote Windows authentication"`. This should match the authentication setting specified on the remote debugger running on the remote macihne.|
+|`windowsAuthenticationType`|string|Specifies the type of remote connection. Possible values are `"Remote Windows authentication"` and `"Remote Windows with No authentication"`. The default is `"Remote Windows authentication"`. This should match the authentication setting specified on the remote debugger running on the remote machine.|
 
 ## <a name="launch_setup_commands"></a> Launch setup commands
 
