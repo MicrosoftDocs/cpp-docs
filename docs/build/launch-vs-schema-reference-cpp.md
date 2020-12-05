@@ -63,13 +63,13 @@ Used when debugging and deploying an app on a remote machine.
 |Property|Type|Description|
 |-|-|-|
 |`cwd`|string|The working directory of the target on the remote machine. When using CMake, the macro `${debugInfo.defaultWorkingDirectory}` can be used as the value of this field. The default value is the directory of the debug program/command.|
-|`deploy`|string|Specifies extra files/directories to deploy. For example:<br> `"deploy": {"sourcePath":"<Full path to source file/directory on host machine>", "targetPath":"<Full destination path to file/directory on target machine>"}` |
-|`deployDirectory`|string|The location on the remote machine where project outputs are automatically deployed to. Defaults to "`C:\Windows Default Deploy Directory\<name of launch entry>`|
-|`deployDebugRuntimeLibraries`|string|Specifies to deploy the debug runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"Debug"`|
-|`deployRuntimeLibraries`|string|Specifies to deploy the runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"MinSizeRel"`, `"RelWithDebInfo"`, or `"Release"`.|
-|`disableDeploy` | boolean | Specifies whether any files should be deployed. |
-|`remoteMachineName`|string|Specifies the name of the remote ARM64 Windows machine where the program is launched. May be the server name or the remote machine's IP address|
-|`windowsAuthenticationType`|string|Specifies the type of remote connection. Possible values are `"Remote Windows authentication"` and `"Remote Windows with No authentication"`. The default is `"Remote Windows authentication"`. This should match the authentication setting specified on the remote debugger running on the remote machine.|
+|`deploy`|string|Specifies extra files or directories to deploy. For example:<br> `"deploy": {"sourcePath":"<Full path to source file/directory on host machine>", "targetPath":"<Full destination path to file/directory on target machine>"}` |
+|`deployDirectory`|string|The location on the remote machine where project outputs are automatically deployed to. Defaults to "`C:\Windows Default Deploy Directory\<name of app>`|
+|`deployDebugRuntimeLibraries`|string|Specifies whether to deploy the debug runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"Debug"`|
+|`deployRuntimeLibraries`|string|Specifies whether to deploy the runtime libraries for the active platform. Defaults to `"true"` if the active configurationType is `"MinSizeRel"`, `"RelWithDebInfo"`, or `"Release"`.|
+|`disableDeploy` | boolean | Specifies whether files should be deployed. |
+|`remoteMachineName`|string|Specifies the name of the remote ARM64 Windows machine where the program is launched. May be the server name or the remote machine's IP address. |
+|`windowsAuthenticationType`|string|Specifies the type of remote connection. Possible values are `"Remote Windows authentication"` and `"Remote Windows with No authentication"`. The default is `"Remote Windows authentication"`. This should match the authentication setting specified on the remote debugger that is running on the remote machine.|
 
 ## <a name="launch_setup_commands"></a> Launch setup commands
 
