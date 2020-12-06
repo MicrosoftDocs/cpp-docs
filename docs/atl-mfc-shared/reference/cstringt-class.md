@@ -493,7 +493,7 @@ Because the constructors copy the input data into new allocated storage, memory 
 - **`CStringT`**( `const unsigned char*` `psz` ): Allows you to construct a **`CStringT`** from a pointer to **`unsigned char`**.
 
 > [!NOTE]
-> Define the` _CSTRING_DISABLE_NARROW_WIDE_CONVERSION` macro to turn off implicit string conversion between ANSI and Unicode strings. The macro excludes from compilation constructors that support conversion.
+> Define the `_CSTRING_DISABLE_NARROW_WIDE_CONVERSION` macro to turn off implicit string conversion between ANSI and Unicode strings. The macro excludes from compilation constructors that support conversion.
 
 The *`strSrc`* parameter can be either a **`CStringT`** or `CThisSimpleString` object. For **`CStringT`**, use one of its default instantiations (`CString`, `CStringA`, or `CStringW`); for `CThisSimpleString`, use a **`this`** pointer. `CThisSimpleString` declares an instance of the [CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md), which is a smaller string class with less built-in functionality than the **`CStringT`** class.
 
@@ -1560,8 +1560,6 @@ Unlike the CRT tokenize functions like [`strtok_s, _strtok_s_l, wcstok_s, _wcsto
 
 [!code-cpp[NVC_ATLMFC_Utilities#135](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_39.cpp)]
 
-### Remarks
-
 The output from this example is as follows:
 
 ```Output
@@ -1605,8 +1603,6 @@ Removes all leading and trailing occurrences of one of the following:
 ### Example
 
 [!code-cpp[NVC_ATLMFC_Utilities#136](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_40.cpp)]
-
-### Remarks
 
 The output from this example is as follows:
 
