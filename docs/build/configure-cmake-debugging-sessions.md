@@ -1,7 +1,7 @@
 ---
 title: "Configure CMake debugging sessions in Visual Studio"
 description: "Describes how to use Visual Studio to configure CMake debugger settings."
-ms.date: "04/02/2020"
+ms.date: "12/07/2020"
 helpviewer_keywords: ["CMake debugging"]
 ---
 # Configure CMake debugging sessions
@@ -93,14 +93,6 @@ In Visual Studio 2019 version 16.6, we added a new debug configuration of `type:
 - `args`: Command-line arguments passed on startup to the program being debugged.
 - `env`: Additional environment variables passed to the program being debugged. For example, `{"DISPLAY": "0.0"}`.
 - `processID`: Linux process ID to attach to. Only used when attaching to a remote process. For more information, see [Troubleshoot attaching to processes using GDB](https://github.com/Microsoft/MIEngine/wiki/Troubleshoot-attaching-to-processes-using-GDB).
-
-#### Additional options for the `gdb` configuration
-
-- `program`: Defaults to `"${debugInfo.fullTargetPath}"`. The Unix path to the application to debug. Only required if different than the target executable in the build or deploy location.
-- `remoteMachineName`: Defaults to `"${debugInfo.remoteMachineName}"`. Name of the remote system that hosts the program to debug. Only required if different than the build system. Must have an existing entry in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md). Press **Ctrl+Space** to view a list of all existing remote connections.
-- `cwd`: Defaults to `"${debugInfo.defaultWorkingDirectory}"`. The Unix path to the directory on the remote system where `program` is run. The directory must exist.
-- `gdbpath`: Defaults to `/usr/bin/gdb`. Full Unix path to the `gdb` used to debug. Only required if using a custom version of `gdb`.
-- `preDebugCommand`: A Linux command to run immediately before invoking `gdb`. `gdb` doesn't start until the command completes. You can use the option to run a script before the execution of `gdb`.
 
 #### Additional options allowed with the `gdbserver` configuration (16.7 or later)
 
