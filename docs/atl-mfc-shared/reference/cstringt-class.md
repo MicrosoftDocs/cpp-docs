@@ -1,11 +1,11 @@
 ---
 title: "**`CStringT`** Class"
 description: "API reference for the Microsoft ATL **`CStringT`** class"
-ms.date: "11/13/2020"
-f1_keywords: ["CStringT", "ATLSTR/ATL::CStringT", "ATLSTR/ATL::CStringT::CStringT", "ATLSTR/ATL::CStringT::AllocSysString", "ATLSTR/ATL::CStringT::AnsiToOem", "ATLSTR/ATL::CStringT::AppendFormat", "ATLSTR/ATL::CStringT::Collate", "ATLSTR/ATL::CStringT::CollateNoCase", "ATLSTR/ATL::CStringT::Compare", "ATLSTR/ATL::CStringT::CompareNoCase", "ATLSTR/ATL::CStringT::Delete", "ATLSTR/ATL::CStringT::Find", "ATLSTR/ATL::CStringT::FindOneOf", "ATLSTR/ATL::CStringT::Format", "ATLSTR/ATL::CStringT::FormatMessage", "ATLSTR/ATL::CStringT::FormatMessageV", "ATLSTR/ATL::CStringT::FormatV", "ATLSTR/ATL::CStringT::GetEnvironmentVariable", "ATLSTR/ATL::CStringT::Insert", "ATLSTR/ATL::CStringT::Left", "ATLSTR/ATL::CStringT::LoadString", "ATLSTR/ATL::CStringT::MakeLower", "ATLSTR/ATL::CStringT::MakeReverse", "ATLSTR/ATL::CStringT::MakeUpper", "ATLSTR/ATL::CStringT::Mid", "ATLSTR/ATL::CStringT::OemToAnsi", "ATLSTR/ATL::CStringT::Remove", "ATLSTR/ATL::CStringT::Replace", "ATLSTR/ATL::CStringT::ReverseFind", "ATLSTR/ATL::CStringT::Right", "ATLSTR/ATL::CStringT::SetSysString", "ATLSTR/ATL::CStringT::SpanExcluding", "ATLSTR/ATL::CStringT::SpanIncluding", "ATLSTR/ATL::CStringT::Tokenize", "ATLSTR/ATL::CStringT::Trim", "ATLSTR/ATL::CStringT::TrimLeft", "ATLSTR/ATL::CStringT::TrimRight", "CSTRINGT/CStringT", "CSTRINGT/CStringT::CStringT", "CSTRINGT/CStringT::AllocSysString", "CSTRINGT/CStringT::AnsiToOem", "CSTRINGT/CStringT::AppendFormat", "CSTRINGT/CStringT::Collate", "CSTRINGT/CStringT::CollateNoCase", "CSTRINGT/CStringT::Compare", "CSTRINGT/CStringT::CompareNoCase", "CSTRINGT/CStringT::Delete", "CSTRINGT/CStringT::Find", "CSTRINGT/CStringT::FindOneOf", "CSTRINGT/CStringT::Format", "CSTRINGT/CStringT::FormatMessage", "CSTRINGT/CStringT::FormatMessageV", "CSTRINGT/CStringT::FormatV", "CSTRINGT/CStringT::GetEnvironmentVariable", "CSTRINGT/CStringT::Insert", "CSTRINGT/CStringT::Left", "CSTRINGT/CStringT::LoadString", "CSTRINGT/CStringT::MakeLower", "CSTRINGT/CStringT::MakeReverse", "CSTRINGT/CStringT::MakeUpper", "CSTRINGT/CStringT::Mid", "CSTRINGT/CStringT::OemToAnsi", "CSTRINGT/CStringT::Remove", "CSTRINGT/CStringT::Replace", "CSTRINGT/CStringT::ReverseFind", "CSTRINGT/CStringT::Right", "CSTRINGT/CStringT::SetSysString", "CSTRINGT/CStringT::SpanExcluding", "CSTRINGT/CStringT::SpanIncluding", "CSTRINGT/CStringT::Tokenize", "CSTRINGT/CStringT::Trim", "CSTRINGT/CStringT::TrimLeft", "CSTRINGT/CStringT::TrimRight"]
+ms.date: 12/06/2020
+f1_keywords: ["CStringT", "CSTRINGT/ATL::CStringT", "CSTRINGT/ATL::CStringT::CStringT", "CSTRINGT/ATL::CStringT::AllocSysString", "CSTRINGT/ATL::CStringT::AnsiToOem", "CSTRINGT/ATL::CStringT::AppendFormat", "CSTRINGT/ATL::CStringT::Collate", "CSTRINGT/ATL::CStringT::CollateNoCase", "CSTRINGT/ATL::CStringT::Compare", "CSTRINGT/ATL::CStringT::CompareNoCase", "CSTRINGT/ATL::CStringT::Delete", "CSTRINGT/ATL::CStringT::Find", "CSTRINGT/ATL::CStringT::FindOneOf", "CSTRINGT/ATL::CStringT::Format", "CSTRINGT/ATL::CStringT::FormatMessage", "CSTRINGT/ATL::CStringT::FormatMessageV", "CSTRINGT/ATL::CStringT::FormatV", "CSTRINGT/ATL::CStringT::GetEnvironmentVariable", "CSTRINGT/ATL::CStringT::Insert", "CSTRINGT/ATL::CStringT::Left", "CSTRINGT/ATL::CStringT::LoadString", "CSTRINGT/ATL::CStringT::MakeLower", "CSTRINGT/ATL::CStringT::MakeReverse", "CSTRINGT/ATL::CStringT::MakeUpper", "CSTRINGT/ATL::CStringT::Mid", "CSTRINGT/ATL::CStringT::OemToAnsi", "CSTRINGT/ATL::CStringT::Remove", "CSTRINGT/ATL::CStringT::Replace", "CSTRINGT/ATL::CStringT::ReverseFind", "CSTRINGT/ATL::CStringT::Right", "CSTRINGT/ATL::CStringT::SetSysString", "CSTRINGT/ATL::CStringT::SpanExcluding", "CSTRINGT/ATL::CStringT::SpanIncluding", "CSTRINGT/ATL::CStringT::Tokenize", "CSTRINGT/ATL::CStringT::Trim", "CSTRINGT/ATL::CStringT::TrimLeft", "CSTRINGT/ATL::CStringT::TrimRight"]
 helpviewer_keywords: ["strings [C++], in ATL", "shared classes, CStringT", "CStringT class"]
 ---
-# CStringT Class
+# `CStringT` Class
 
 This class represents a **`CStringT`** object.
 
@@ -493,7 +493,7 @@ Because the constructors copy the input data into new allocated storage, memory 
 - **`CStringT`**( `const unsigned char*` `psz` ): Allows you to construct a **`CStringT`** from a pointer to **`unsigned char`**.
 
 > [!NOTE]
-> Define the` _CSTRING_DISABLE_NARROW_WIDE_CONVERSION` macro to turn off implicit string conversion between ANSI and Unicode strings. The macro excludes from compilation constructors that support conversion.
+> Define the `_CSTRING_DISABLE_NARROW_WIDE_CONVERSION` macro to turn off implicit string conversion between ANSI and Unicode strings. The macro excludes from compilation constructors that support conversion.
 
 The *`strSrc`* parameter can be either a **`CStringT`** or `CThisSimpleString` object. For **`CStringT`**, use one of its default instantiations (`CString`, `CStringA`, or `CStringW`); for `CThisSimpleString`, use a **`this`** pointer. `CThisSimpleString` declares an instance of the [CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md), which is a smaller string class with less built-in functionality than the **`CStringT`** class.
 
@@ -1560,8 +1560,6 @@ Unlike the CRT tokenize functions like [`strtok_s, _strtok_s_l, wcstok_s, _wcsto
 
 [!code-cpp[NVC_ATLMFC_Utilities#135](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_39.cpp)]
 
-### Remarks
-
 The output from this example is as follows:
 
 ```Output
@@ -1605,8 +1603,6 @@ Removes all leading and trailing occurrences of one of the following:
 ### Example
 
 [!code-cpp[NVC_ATLMFC_Utilities#136](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_40.cpp)]
-
-### Remarks
 
 The output from this example is as follows:
 
