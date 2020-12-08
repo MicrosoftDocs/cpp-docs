@@ -40,7 +40,7 @@ int main()
 }
 ```
 
-The `exit` and **`return`** statements in the preceding example are functionally identical. However, C++ requires that functions that have return types other than **`void`** return a value. The **`return`** statement allows you to return a value from `main`.
+The `exit` and **`return`** statements in the preceding example are functionally identical. Normally, C++ requires that functions that have return types other than **`void`** return a value. The `main` function is an exception; it can end without a **`return`** statement. In that case, it returns an implementation-specific value to the invoking process. The **`return`** statement allows you to specify a return value from `main`.
 
 ## Destruction of static objects
 
