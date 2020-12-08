@@ -1,6 +1,6 @@
 ---
 title: "C++ program termination"
-description: "Describes the ways to exit a C++-language program."
+description: "Learn about the standard ways to exit a C++-language program."
 ms.date: 12/07/2020
 helpviewer_keywords: ["terminating execution", "quitting applications", "exiting applications", "programs [C++], terminating"]
 ---
