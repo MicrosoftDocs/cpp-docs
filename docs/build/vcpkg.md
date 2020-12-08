@@ -221,6 +221,8 @@ The vcpkg package manager is updated regularly on GitHub. To update your clone o
 
 To uninstall vcpkg, just delete the vcpkg directory. Deleting this directory uninstalls the vcpkg distribution, and all the libraries that vcpkg has installed.
 
+However if you have executed **`vcpkg integrate install`** you should execute **`vcpkg integrate remove`** to ensure the integration is cleaned, before the folder is removed.
+
 ## Send feedback about vcpkg
 
 Use the **`vcpkg contact --survey`** command to send feedback to Microsoft about vcpkg, including bug reports and suggestions for features.
