@@ -97,8 +97,6 @@ In Visual Studio 2019 version 16.6, we added a new debug configuration of `type:
 #### Additional options for the `gdb` configuration
 
 - `program`: Defaults to `"${debugInfo.fullTargetPath}"`. The Unix path to the application to debug. Only required if different than the target executable in the build or deploy location.
-> [!TIP]
-> Deploy is not yet supported for WSL local cross-compilation scenarios. If you are cross-compiling on Windows (for example, using a cross-compiler on Windows to build an ARM executable) then you'll need to manually copy the binary to the location specified by `program` on the remote ARM machine before debugging.
 - `remoteMachineName`: Defaults to `"${debugInfo.remoteMachineName}"`. Name of the remote system that hosts the program to debug. Only required if different than the build system. Must have an existing entry in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md). Press **Ctrl+Space** to view a list of all existing remote connections.
 - `cwd`: Defaults to `"${debugInfo.defaultWorkingDirectory}"`. The Unix path to the directory on the remote system where `program` is run. The directory must exist.
 - `gdbpath`: Defaults to `/usr/bin/gdb`. Full Unix path to the `gdb` used to debug. Only required if using a custom version of `gdb`.
