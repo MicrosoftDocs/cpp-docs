@@ -1,17 +1,15 @@
 ---
 title: "Generic selection (C11)"
 description: "Describes the C11 _Generic keyword used in the Microsoft Visual C compiler"
-ms.date: "12/8/2020"
+ms.date: "12/9/2020"
 helpviewer_keywords: ["_Generic keyword [C]"]
 ---
 
 # Generic selection (C11)
 
-Use the **`_Generic`** keyword to write code that makes a compile-time decision based on the type of the argument.
+Use the **`_Generic`** keyword to write code that selects an expression at compile time based on the type of the argument. It's similar to overloading in C++ where the type of the argument selects which function to call, except that the type of the argument selects which expression to evaluate.
 
-**`_Generic`** selects an expression based on a type at compile time. It's similar to overloading in C++ where the type of the argument selects which function to call, except that the type of the argument selects which expression to evaluate.
-
-For example, the expression `_Generic(42, int: "integer", char: "character", default: "unknown");` evaluates the type of `42` and looks for the matching type, `int` in the list. It will find it and return `"integer"`.
+For example, the expression `_Generic(42, int: "integer", char: "character", default: "unknown");` evaluates the type of `42` and looks for the matching type, `int`, in the list. It finds it and returns `"integer"`.
 
 ## Syntax
 
@@ -26,9 +24,9 @@ For example, the expression `_Generic(42, int: "integer", char: "character", def
 &nbsp;&nbsp;&nbsp;&nbsp;*`type-name`* : *`assignment-expression`*\
 &nbsp;&nbsp;&nbsp;&nbsp;**`default`** : *`assignment-expression`*
 
-The first *`assignment-expression`* is called the controlling expression. The controlling expression is evaluated at compile time and matched against the *`assoc-list`* to find which expression to evaluate and return.
+The first *`assignment-expression`* is called the controlling expression. The type of the controlling expression is determined at compile time and matched against the *`assoc-list`* to find which expression to evaluate and return. The controlling expression is not evaluated. For example, `_Generic(intFunc(), int: "integer", default: "error");` doesn't result in a call at runtime to `intFunc()`. 
 
-When the controlling expression is evaluated, `const`,  `volatile`, and `restrict` are removed before matching against *`assoc-list`*.
+When the type of the controlling expression is determined, `const`,  `volatile`, and `restrict` are removed before matching against *`assoc-list`*.
 
 Entries in the `assoc-list` that aren't chosen aren't evaluated.
 
