@@ -1,36 +1,34 @@
 ---
 title: "C++ program termination"
-description: "Describes the ways to exit a C++-language program."
-ms.date: "01/15/2020"
+description: "Learn about the standard ways to exit a C++-language program."
+ms.date: 12/07/2020
 helpviewer_keywords: ["terminating execution", "quitting applications", "exiting applications", "programs [C++], terminating"]
-ms.assetid: fa0ba9de-b5f1-4e7b-aa65-e7932068b48c
-no-loc: [exit, abort, return, main, atexit, void]
 ---
 # C++ program termination
 
 In C++, you can exit a program in these ways:
 
-- Call the [exit](../c-runtime-library/reference/exit-exit-exit.md) function.
-- Call the [abort](../c-runtime-library/reference/abort.md) function.
-- Execute a [return](return-statement-cpp.md) statement from `main`.
+- Call the [`exit`](../c-runtime-library/reference/exit-exit-exit.md) function.
+- Call the [`abort`](../c-runtime-library/reference/abort.md) function.
+- Execute a [`return`](return-statement-cpp.md) statement from `main`.
 
-## exit function
+## `exit` function
 
-The [exit](../c-runtime-library/reference/exit-exit-exit.md) function, declared in \<stdlib.h>, terminates a C++ program. The value supplied as an argument to `exit` is returned to the operating system as the program's return code or exit code. By convention, a return code of zero means that the program completed successfully. You can use the constants EXIT_FAILURE and EXIT_SUCCESS, also defined in \<stdlib.h>, to indicate success or failure of your program.
+The [`exit`](../c-runtime-library/reference/exit-exit-exit.md) function, declared in \<stdlib.h>, terminates a C++ program. The value supplied as an argument to `exit` is returned to the operating system as the program's return code or exit code. By convention, a return code of zero means that the program completed successfully. You can use the constants `EXIT_FAILURE` and `EXIT_SUCCESS`, also defined in \<stdlib.h>, to indicate success or failure of your program.
 
 Issuing a **`return`** statement from the `main` function is equivalent to calling the `exit` function with the return value as its argument.
 
-## abort function
+## `abort` function
 
-The [abort](../c-runtime-library/reference/abort.md) function, also declared in the standard include file \<stdlib.h>, terminates a C++ program. The difference between `exit` and `abort` is that `exit` allows the C++ run-time termination processing to take place (global object destructors will be called), whereas `abort` terminates the program immediately. The `abort` function bypasses the normal destruction process for initialized global static objects. It also bypasses any special processing that was specified using the [atexit](../c-runtime-library/reference/atexit.md) function.
+The [`abort`](../c-runtime-library/reference/abort.md) function, also declared in the standard include file \<stdlib.h>, terminates a C++ program. The difference between `exit` and `abort` is that `exit` allows the C++ run-time termination processing to take place (global object destructors get called), but `abort` terminates the program immediately. The `abort` function bypasses the normal destruction process for initialized global static objects. It also bypasses any special processing that was specified using the [`atexit`](../c-runtime-library/reference/atexit.md) function.
 
-## atexit function
+## `atexit` function
 
-Use the [atexit](../c-runtime-library/reference/atexit.md) function to specify actions that execute prior to program termination. No global static objects initialized prior to the call to **atexit** are destroyed prior to execution of the exit-processing function.
+Use the [`atexit`](../c-runtime-library/reference/atexit.md) function to specify actions that execute before the program terminates. No global static objects initialized before the call to `atexit` are destroyed before execution of the exit-processing function.
 
-## return statement in main
+## `return` statement in `main`
 
-Issuing a [return](return-statement-cpp.md) statement from `main` is functionally equivalent to calling the `exit` function. Consider the following example:
+Issuing a [`return`](return-statement-cpp.md) statement from `main` is functionally equivalent to calling the `exit` function. Consider the following example:
 
 ```cpp
 // return_statement.cpp
@@ -42,7 +40,7 @@ int main()
 }
 ```
 
-The `exit` and **`return`** statements in the preceding example are functionally identical. However, C++ requires that functions that have return types other than **`void`** return a value. The **`return`** statement allows you to return a value from `main`.
+The `exit` and **`return`** statements in the preceding example are functionally identical. Normally, C++ requires that functions that have return types other than **`void`** return a value. The `main` function is an exception; it can end without a **`return`** statement. In that case, it returns an implementation-specific value to the invoking process. The **`return`** statement allows you to specify a return value from `main`.
 
 ## Destruction of static objects
 
@@ -92,7 +90,7 @@ Another way to write this code is to declare the `ShowData` objects with block s
 
 ```cpp
 int main() {
-   ShowData sd1, sd2( "hello.dat" );
+   ShowData sd1( "CON" ), sd2( "hello.dat" );
 
    sd1.Disp( "hello to default device\n" );
    sd2.Disp( "hello to file hello.dat\n" );
@@ -101,4 +99,4 @@ int main() {
 
 ## See also
 
-[main function and command-line arguments](main-function-command-line-args.md)
+[`main` function and command-line arguments](main-function-command-line-args.md)
