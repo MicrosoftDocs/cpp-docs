@@ -5,18 +5,18 @@ ms.date: "12/8/2020"
 helpviewer_keywords: ["_Generic keyword [C]"]
 ---
 
-# Generic Selection (C11)
+# Generic selection (C11)
 
 Use the **`_Generic`** keyword to write code that makes a compile-time decision based on the type of the argument.
 
-**`_Generic`** selects an expression based on a type at compile time. It's similar to overloading in C++ where the type of the argument is used to select which function to call. In this case, the type of the argument selects which expression to evaluate.
+**`_Generic`** selects an expression based on a type at compile time. It's similar to overloading in C++ where the type of the argument selects which function to call, except that the type of the argument selects which expression to evaluate.
 
-For example, the expression `_Generic(42, int:"integer", char:"character", default:"unknown");` evaluates the type of `42` and looks for the matching type, `int` in the list. It will find it and return `"integer"`.
+For example, the expression `_Generic(42, int: "integer", char: "character", default: "unknown");` evaluates the type of `42` and looks for the matching type, `int` in the list. It will find it and return `"integer"`.
 
 ## Syntax
 
 *`generic-selection`*:\
-&nbsp;&nbsp;&nbsp;&nbsp;**`_Generic`** **(** *`assignment-expression`, `assoc-list`* **)** 
+&nbsp;&nbsp;&nbsp;&nbsp;**`_Generic`** **(** *`assignment-expression`, `assoc-list`* **)**
 
 *`assoc-list`*:\
 &nbsp;&nbsp;&nbsp;&nbsp;*`association`*\
@@ -40,7 +40,7 @@ Entries in the `assoc-list` that aren't chosen aren't evaluated.
 
 ## Example
 
-One way to use **`_Generic`** is in a macro. The <tgmath.h> header file uses **_Generic** to call the right math function depending on the type of argument. For example, the macro for `cos()` maps a call with a float to `cosf()`, but a call with a complex double is mapped to `ccos()`.
+One way to use **`_Generic`** is in a macro. The <tgmath.h> header file uses **_Generic** to call the right math function depending on the type of argument. For example, the macro for `cos()` maps a call with a float to `cosf()`, while mapping a call with a complex double to `ccos()`.
 
 The following example shows how to write a macro that identifies the type of the argument you pass to it. It produces `"unknown"` if no entry in the *`assoc-list`* matches the controlling expression:
 
@@ -51,8 +51,8 @@ The following example shows how to write a macro that identifies the type of the
 
 /* Get a type name string for the argument x */
 #define TYPE_NAME(X) _Generic((X), \
-           int: "int", \
-         char: "char", \
+      int: "int", \
+      char: "char", \
       double: "double", \
       default: "unknown")
 
@@ -63,7 +63,7 @@ int main()
     // The following would result in a compile error because 
     // 42.4 is a double, doesn't match anything in the list, 
     // and there is no default.
-    // _Generic(42.4, int:"integer", char : "character"));
+    // _Generic(42.4, int: "integer", char: "character"));
 }
 
 /* Output:

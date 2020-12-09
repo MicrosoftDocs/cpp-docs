@@ -23,13 +23,13 @@ This documentation generally uses the forms of the type specifiers listed in the
 | **`float`** | — |
 | **`long double`**<sup>2</sup> | — |
 
-<sup>1</sup> When you make the **`char`** type unsigned by default (by specifying the **`/J`** compiler option), you cannot abbreviate **`signed char`** as **`char`**.
+<sup>1</sup> When you make the **`char`** type unsigned by default (by specifying the **`/J`** compiler option), you can't abbreviate **`signed char`** as **`char`**.
 
 <sup>2</sup> In 32-bit and 64-bit operating systems, the Microsoft C compiler maps **`long double`** to type **`double`**.
 
 **Microsoft specific**
 
-You can specify the **`/J`** compiler option to change the default **`char`** type from **`signed char`** to **`unsigned char`**. When this option is in effect, **`char`** means the same as **`unsigned char`**, and you must use the **`signed`** keyword to declare a signed character value. If a **`char`** value is explicitly declared **`signed`**, the **`/J`** option does not affect it, and the value is sign-extended when widened to an **`int`** type. The **`char`** type is zero-extended when widened to **`int`** type.
+You can specify the **`/J`** compiler option to change the default **`char`** type from **`signed char`** to **`unsigned char`**. When this option is in effect, **`char`** means the same as **`unsigned char`**, and you must use the **`signed`** keyword to declare a signed character value. If a **`char`** value is explicitly declared **`signed`**, the **`/J`** option doesn't affect it, and the value is sign-extended when widened to an **`int`** type. The **`char`** type is zero-extended when widened to **`int`** type.
 
 **END Microsoft specific**
 

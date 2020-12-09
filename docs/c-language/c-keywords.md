@@ -1,7 +1,7 @@
 ---
 title: "C Keywords"
 description: "Keywords in Standard C and Microsoft C compiler extensions."
-ms.date: 12/8/2020
+ms.date: "12/8/2020"
 helpviewer_keywords: ["keywords [C]", "redefining keywords", "Microsoft-specific keywords"]
 ---
 # C Keywords
