@@ -1,5 +1,6 @@
 ---
 title: "Data type specifiers and equivalents"
+description: "Describes Microsoft Visual C data type specifiers and their equivalents."
 ms.date: "11/04/2016"
 helpviewer_keywords: ["type specifiers [C++], list", "widening integers", "data types [C++], equivalents", "sign-extending integral types", "zero-extending", "identifiers, data type", "data types [C++], specifiers", "simple types, names", "type names [C++], simple"]
 ---

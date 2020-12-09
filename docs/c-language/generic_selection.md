@@ -75,4 +75,4 @@ Type name: double
 ## See also
 
 [`/std` (Specify Language Standard Version)](../build/reference/std-specify-language-standard-version.md)\
-[Type-generic math](../cpp/c-runtime-library/tgmath.md)
+[Type-generic math](../c-runtime-library/tgmath.md)
