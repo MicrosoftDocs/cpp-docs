@@ -6,20 +6,20 @@ helpviewer_keywords: ["primary expressions"]
 ---
 # C primary expressions
 
-Primary expressions are the building blocks of more complex expressions. They may be constants, identifiers, and in C11, a [Generic selection](generic_selection.md) . An expression in parentheses is also a primary expression.
+Primary expressions are the building blocks of more complex expressions. They may be constants, identifiers, and in C11, a [Generic selection](generic_selection.md). An expression in parentheses is also a primary expression.
 
 ## Syntax
 
-*primary-expression*:\
-&nbsp;&nbsp;&nbsp;&nbsp;*identifier*\
-&nbsp;&nbsp;&nbsp;&nbsp;*constant*\
-&nbsp;&nbsp;&nbsp;&nbsp;*string-literal*\
-&nbsp;&nbsp;&nbsp;&nbsp;*_Generic(assignment expression, generic-assoc-list)*\
-&nbsp;&nbsp;&nbsp;&nbsp;**(** *expression* **)**
+*`primary-expression`*:\
+&nbsp;&nbsp;&nbsp;&nbsp;*`identifier`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`constant`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`string-literal`*\
+&nbsp;&nbsp;&nbsp;&nbsp;**(** *`expression`* **)**\
+&nbsp;&nbsp;&nbsp;&nbsp;*`generic-selection`*
 
 *expression*:\
-&nbsp;&nbsp;&nbsp;&nbsp;*assignment-expression*\
-&nbsp;&nbsp;&nbsp;&nbsp;*expression* **,** *assignment-expression*
+&nbsp;&nbsp;&nbsp;&nbsp;*`assignment-expression`*\
+&nbsp;&nbsp;&nbsp;&nbsp;*`expression`***,** *`assignment-expression`*
 
 ## See also
 
