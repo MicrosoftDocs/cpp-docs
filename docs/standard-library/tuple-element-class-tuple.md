@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: tuple_element Class"
 title: "tuple_element Class"
 ms.date: "11/04/2016"
 f1_keywords: ["utility/std::tuple_element"]

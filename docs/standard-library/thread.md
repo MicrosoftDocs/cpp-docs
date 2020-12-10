@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;thread&gt;"
 title: "&lt;thread&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<thread>"]

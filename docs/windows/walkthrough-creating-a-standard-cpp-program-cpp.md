@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Creating a Standard C++ Program (C++)"
 title: "Walkthrough: Creating a Standard C++ Program (C++)"
 ms.custom: "get-started-article"
 ms.date: "04/25/2019"

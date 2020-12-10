@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;valarray&gt; operators"
 title: "&lt;valarray&gt; operators"
 ms.date: "03/27/2019"
 f1_keywords: ["valarray/std::operator!=", "valarray/std::operator%", "valarray/std::operator&amp;", "valarray/std::operator&amp;&amp;", "valarray/std::operator&gt;", "valarray/std::operator&gt;&gt;", "valarray/std::operator&gt;=", "valarray/std::operator&lt;", "valarray/std::operator&lt;&lt;", "valarray/std::operator&lt;=", "valarray/std::operator*", "valarray/std::operator+", "valarray/std::operator-", "valarray/std::operator/", "valarray/std::operator==", "valarray/std::operator^", "valarray/std::operator|", "valarray/std::operator||"]

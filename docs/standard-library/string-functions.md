@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;string&gt; functions"
 title: "&lt;string&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["string/std::getline", "string/std::stod", "string/std::stof", "string/std::stoi", "string/std::stol", "string/std::stold", "string/std::stoll", "string/std::stoul", "string/std::stoull", "string/std::swap", "string/std::to_string", "string/std::to_wstring"]

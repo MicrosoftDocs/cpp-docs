@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Win32 Predefined Symbols"
 title: "Win32 Predefined Symbols"
 ms.date: "02/14/2019"
 helpviewer_keywords: ["Win32 [C++], predefined symbols", "symbols [C++], Win32 predefined", "Windows API [C++], predefined symbols"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Preparing a Test Machine To Run a Debug Executable"
 title: "Preparing a Test Machine To Run a Debug Executable"
 ms.date: "07/02/2019"
 helpviewer_keywords: ["debug executable, preparing a test machine to run"]

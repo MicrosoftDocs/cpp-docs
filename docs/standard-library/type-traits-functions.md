@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;type_traits&gt; functions"
 title: "&lt;type_traits&gt; functions"
 ms.date: "11/04/2016"
 ms.assetid: dce4492f-f3e4-4d5e-bdb4-5875321254ec

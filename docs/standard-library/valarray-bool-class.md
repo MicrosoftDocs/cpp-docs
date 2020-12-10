@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: valarray&lt;bool&gt; Class"
 title: "valarray&lt;bool&gt; Class"
 ms.date: "11/04/2016"
 f1_keywords: ["valarray<bool>", "valarray/std::valarray<bool>"]

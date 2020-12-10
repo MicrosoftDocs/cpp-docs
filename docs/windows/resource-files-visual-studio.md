@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Files (C++)"
 title: "Resource Files (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.resource"]

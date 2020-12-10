@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;system_error&gt; functions"
 title: "&lt;system_error&gt; functions"
 ms.date: "03/15/2019"
 f1_keywords: ["system_error/std::generic_category", "system_error/std::make_error_code", "system_error/std::make_error_condition", "system_error/std::system_category"]

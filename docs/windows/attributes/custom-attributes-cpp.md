@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Attributes (C++)"
 title: "Custom Attributes (C++)"
 ms.date: "10/02/2018"
 helpviewer_keywords: ["custom attributes", "custom attributes, defining"]

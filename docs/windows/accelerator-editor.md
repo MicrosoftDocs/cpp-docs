@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accelerator Editor (C++)"
 title: "Accelerator Editor (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.accelerator.F1", "vc.editors.accelerator"]

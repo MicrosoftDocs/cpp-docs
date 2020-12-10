@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using C++ Library Headers"
 title: "Using C++ Library Headers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["headers, naming in C++ include directive", "standard header in C++", "headers", "INCLUDE directive", "headers, C++ Standard Library", "library headers", "C++ Standard Library, headers"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: uses_allocator Structure"
 title: "uses_allocator Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["future/std::uses_allocator"]
