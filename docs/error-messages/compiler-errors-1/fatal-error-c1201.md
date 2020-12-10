@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fatal Error C1201"
 title: "Fatal Error C1201"
 ms.date: "11/04/2016"
 f1_keywords: ["C1201"]

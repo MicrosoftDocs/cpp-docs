@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2429"
 title: "Compiler Error C2429"
 ms.date: "11/16/2017"
 f1_keywords: ["C2429"]

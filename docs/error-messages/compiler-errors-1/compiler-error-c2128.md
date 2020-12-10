@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2128"
 title: "Compiler Error C2128"
 ms.date: "11/04/2016"
 f1_keywords: ["c2128"]
