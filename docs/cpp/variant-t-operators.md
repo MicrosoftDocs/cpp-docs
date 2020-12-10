@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _variant_t Operators"
 title: "_variant_t Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_variant_t class [C++], operators"]

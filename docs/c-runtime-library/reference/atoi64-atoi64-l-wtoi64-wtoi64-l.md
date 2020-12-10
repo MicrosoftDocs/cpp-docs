@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _atoi64, _atoi64_l, _wtoi64, _wtoi64_l"
 title: "_atoi64, _atoi64_l, _wtoi64, _wtoi64_l"
 ms.date: "4/2/2020"
 api_name: ["_atoi64_l", "_wtoi64", "_atoi64", "_wtoi64_l", "_o__atoi64", "_o__atoi64_l", "_o__wtoi64", "_o__wtoi64_l"]

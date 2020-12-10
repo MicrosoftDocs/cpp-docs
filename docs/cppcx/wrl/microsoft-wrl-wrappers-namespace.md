@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft::WRL::Wrappers Namespace"
 title: "Microsoft::WRL::Wrappers Namespace"
 ms.date: "11/04/2016"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Ref classes and structs (C++/CX)"
 title: "Ref classes and structs (C++/CX)"
 ms.date: "01/22/2017"
 ms.assetid: 3d736b82-0bf0-48cf-bac1-cc9d110b70d1

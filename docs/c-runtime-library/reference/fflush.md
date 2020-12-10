@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fflush"
 title: "fflush"
 ms.date: "4/2/2020"
 api_name: ["fflush", "_o_fflush"]

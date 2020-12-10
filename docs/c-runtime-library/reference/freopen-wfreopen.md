@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: freopen, _wfreopen"
 title: "freopen, _wfreopen"
 ms.date: "4/2/2020"
 api_name: ["freopen", "_wfreopen", "_o__wfreopen", "_o_freopen"]

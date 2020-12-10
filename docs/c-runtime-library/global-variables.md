@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Global Variables"
 title: "Global Variables"
 ms.date: "11/04/2016"
 f1_keywords: ["c.variables"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Indirection Operator: *"
 title: "Indirection Operator: *"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["* operator", "indirection operator", "operators [C++], indirection", "indirection operator [C++], syntax"]

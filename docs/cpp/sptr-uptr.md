@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __sptr, __uptr"
 title: "__sptr, __uptr"
 ms.date: "10/10/2018"
 f1_keywords: ["__uptr_cpp", "__sptr_cpp", "__uptr", "__sptr", "_uptr", "_sptr"]

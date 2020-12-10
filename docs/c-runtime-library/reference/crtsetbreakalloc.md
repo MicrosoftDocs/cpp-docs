@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CrtSetBreakAlloc"
 title: "_CrtSetBreakAlloc"
 ms.date: "11/04/2016"
 api_name: ["_CrtSetBreakAlloc"]

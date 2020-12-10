@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __fastcall"
 title: "__fastcall"
 ms.date: "12/17/2018" 
 f1_keywords: ["__fastcall_cpp", "__fastcall", "_fastcall"]

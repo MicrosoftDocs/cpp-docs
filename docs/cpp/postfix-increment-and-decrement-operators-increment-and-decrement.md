@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Postfix Increment and Decrement Operators: ++ and --"
 title: "Postfix Increment and Decrement Operators: ++ and --"
 ms.date: "11/04/2016"
 f1_keywords: ["--", "++"]

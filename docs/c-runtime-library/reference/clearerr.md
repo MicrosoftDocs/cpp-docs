@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: clearerr"
 title: "clearerr"
 ms.date: "4/2/2020"
 api_name: ["clearerr", "_o_clearerr"]

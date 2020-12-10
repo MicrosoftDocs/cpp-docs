@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Constructors (C++)"
 title: "Constructors (C++)"
 ms.date: "12/27/2019"
 helpviewer_keywords: ["constructors [C++]", "objects [C++], creating", "instance constructors"]

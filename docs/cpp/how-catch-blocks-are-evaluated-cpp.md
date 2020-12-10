@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How Catch Blocks are Evaluated (C++)"
 title: "How Catch Blocks are Evaluated (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["try-catch keyword [C++], catchable types", "catch keyword [C++], types of catch handlers", "C++ exception handling, catch handlers", "exception handling, catching and deleting exceptions", "types [C++], exception handling"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _abnormal_termination"
 title: "_abnormal_termination"
 ms.date: "11/04/2016"
 api_name: ["_abnormal_termination"]

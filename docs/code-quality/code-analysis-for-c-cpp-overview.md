@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Code analysis for C/C++ overview"
 title: Code analysis for C/C++ overview
 ms.date: 04/28/2018
 ms.topic: conceptual

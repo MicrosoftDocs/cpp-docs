@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transporting exceptions between threads"
 title: "Transporting exceptions between threads"
 ms.date: "05/07/2019"
 helpviewer_keywords: ["std::current_exception", "transporting exceptions between threads", "std::copy_exception", "exception_ptr", "std::exception_ptr", "std::rethrow_exception", "current_exception", "transport exceptions between threads", "copy_exception", "rethrow_exception", "move exceptions between threads"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: A Sample Generic-Text Program"
 title: "A Sample Generic-Text Program"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_TCHAR type", "mappings, TCHAR.H data types", "generic-text example [CRT]", "TCHAR type", "TCHAR.H data types, mapping"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler and Linker options (C++/CX)"
 title: "Compiler and Linker options (C++/CX)"
 ms.date: "01/22/2017"
 ms.assetid: ecfadce8-3a3f-40cc-bb01-b4731f8d2fcb

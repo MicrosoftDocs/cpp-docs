@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: csqrt, csqrtf, csqrtl"
 title: "csqrt, csqrtf, csqrtl"
 ms.date: "11/04/2016"
 api_name: ["csqrt", "csqrtf", "csqrtl"]

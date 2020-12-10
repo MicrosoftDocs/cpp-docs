@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: public (C++)"
 title: "public (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["public_cpp"]

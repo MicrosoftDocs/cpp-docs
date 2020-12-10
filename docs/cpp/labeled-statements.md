@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Labeled Statements"
 title: "Labeled Statements"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["labeled statement", "statements, labeled"]

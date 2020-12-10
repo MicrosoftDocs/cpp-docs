@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bad_cast exception"
 title: "bad_cast exception"
 ms.date: "10/04/2019"
 f1_keywords: ["bad_cast", "bad_cast_cpp"]

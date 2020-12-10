@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _variant_t::Attach"
 title: "_variant_t::Attach"
 ms.date: "11/04/2016"
 f1_keywords: ["_variant_t::Attach", "_variant_t.Attach"]

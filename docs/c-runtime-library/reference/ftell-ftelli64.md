@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ftell, _ftelli64"
 title: "ftell, _ftelli64"
 ms.date: "4/2/2020"
 api_name: ["_ftelli64", "ftell", "_o__ftelli64", "_o_ftell"]

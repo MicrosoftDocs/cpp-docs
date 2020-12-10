@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections::VectorView Class"
 title: "Platform::Collections::VectorView Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"

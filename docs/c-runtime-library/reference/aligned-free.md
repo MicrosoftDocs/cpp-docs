@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _aligned_free"
 title: "_aligned_free"
 ms.date: "4/2/2020"
 api_name: ["_aligned_free", "_o__aligned_free"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __crtLCMapStringW"
 title: "__crtLCMapStringW"
 ms.date: "11/04/2016"
 api_name: ["__crtLCMapStringW"]

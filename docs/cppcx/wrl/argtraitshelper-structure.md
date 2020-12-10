@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ArgTraitsHelper Structure"
 title: "ArgTraitsHelper Structure"
 ms.date: "09/21/2018"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: default namespace"
 title: "default namespace"
 ms.date: "12/30/2016"
 ms.assetid: 4712e9dc-57ba-43cc-811e-022e1dae4de8

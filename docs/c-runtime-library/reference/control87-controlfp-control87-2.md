@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _control87, _controlfp, __control87_2"
 title: "_control87, _controlfp, __control87_2"
 ms.date: "08/29/2019"
 api_name: ["_control87", "_controlfp", "__control87_2"]

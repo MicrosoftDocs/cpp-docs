@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: alignof Operator"
 title: "alignof Operator"
 ms.date: "12/17/2018" 
 f1_keywords: ["__alignof_cpp", "alignof_cpp", "__alignof", "_alignof"]

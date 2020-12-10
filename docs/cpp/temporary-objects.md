@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Temporary Objects"
 title: "Temporary Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["temporary objects", "objects [C++], temporary"]

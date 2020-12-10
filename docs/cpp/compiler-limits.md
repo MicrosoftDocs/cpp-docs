@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Limits"
 title: "Compiler Limits"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["cl.exe compiler, limits for language constructs"]

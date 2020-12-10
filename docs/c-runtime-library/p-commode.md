@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __p__commode"
 title: "__p__commode"
 ms.date: "4/2/2020"
 api_name: ["__p__commode", "_o___p__commode"]

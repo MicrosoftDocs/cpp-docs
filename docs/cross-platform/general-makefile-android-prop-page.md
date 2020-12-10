@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: General project properties (Android C++ Makefile)"
 title: "General Project Properties (Android C++ Makefile)"
 ms.date: "10/23/2017"
 ms.assetid: f76d717c-56ed-4373-8cf9-9bd1a053a4cd

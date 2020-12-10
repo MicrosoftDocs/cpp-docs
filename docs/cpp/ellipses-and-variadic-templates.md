@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Ellipsis and Variadic Templates"
 title: "Ellipsis and Variadic Templates"
 ms.date: "11/04/2016"
 ms.assetid: f20967d9-c967-4fd2-b902-2bb1d5ed87e3

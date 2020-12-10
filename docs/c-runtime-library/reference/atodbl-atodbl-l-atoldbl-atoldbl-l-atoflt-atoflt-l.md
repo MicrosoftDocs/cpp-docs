@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l"
 title: "_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l"
 ms.date: "4/2/2020"
 api_name: ["_atoldbl", "_atoldbl_l", "_atodbl", "_atoflt", "_atoflt_l", "_atodbl_l", "_o__atodbl", "_o__atodbl_l", "_o__atoflt", "_o__atoflt_l", "_o__atoldbl", "_o__atoldbl_l"]

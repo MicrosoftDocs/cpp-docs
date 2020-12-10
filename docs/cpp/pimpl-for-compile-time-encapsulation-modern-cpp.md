@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Pimpl For Compile-Time Encapsulation (Modern C++)"
 title: "Pimpl For Compile-Time Encapsulation (Modern C++)"
 ms.date: "11/04/2016"
 ms.topic: "conceptual"

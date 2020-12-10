@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CIexp"
 title: "_CIexp"
 ms.date: "4/2/2020"
 api_name: ["_CIexp", "_o__CIexp"]

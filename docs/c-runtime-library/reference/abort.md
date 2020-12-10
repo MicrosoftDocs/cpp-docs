@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: abort"
 title: "abort"
 ms.date: "4/2/2020"
 api_name: ["abort", "_o_abort"]

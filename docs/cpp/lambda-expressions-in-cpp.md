@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Lambda Expressions in C++"
 title: "Lambda Expressions in C++"
 ms.date: "05/07/2019"
 helpviewer_keywords: ["lambda expressions [C++]", "lambda expressions [C++], overview", "lambda expressions [C++], vs. function objects"]

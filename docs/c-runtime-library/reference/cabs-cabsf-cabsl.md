@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cabs, cabsf, cabsl"
 title: "cabs, cabsf, cabsl"
 ms.date: "11/04/2016"
 api_name: ["cabs", "cabsf", "cabsl"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: noinline"
 title: "noinline"
 ms.date: "11/04/2016"
 f1_keywords: ["noinline_cpp"]

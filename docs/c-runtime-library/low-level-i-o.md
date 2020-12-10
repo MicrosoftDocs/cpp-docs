@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Low-Level I/O"
 title: "Low-Level I/O"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["I/O [CRT], low-level", "I/O [CRT], functions", "low-level I/O routines", "file handles [C++]", "file handles [C++], I/O functions"]

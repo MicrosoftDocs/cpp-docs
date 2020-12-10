@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NULL (CRT)"
 title: "NULL (CRT)"
 ms.date: "11/04/2016"
 f1_keywords: ["null"]

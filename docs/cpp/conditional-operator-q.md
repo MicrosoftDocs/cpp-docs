@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Conditional Operator: &quest; :"
 title: "Conditional Operator: &quest; :"
 ms.date: "11/04/2016"
 f1_keywords: ["?:", "?"]

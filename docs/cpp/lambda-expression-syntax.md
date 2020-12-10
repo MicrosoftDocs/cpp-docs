@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Lambda Expression Syntax"
 title: "Lambda Expression Syntax"
 ms.date: "05/07/2019"
 helpviewer_keywords: ["lambda expressions [C++], syntax"]

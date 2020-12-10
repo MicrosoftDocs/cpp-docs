@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _com_ptr_t Member Functions"
 title: "_com_ptr_t Member Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_com_ptr_t class [C++], member functions"]

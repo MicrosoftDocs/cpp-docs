@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ChainInterfaces Structure"
 title: "ChainInterfaces Structure"
 ms.date: "10/03/2018"
 ms.topic: "reference"

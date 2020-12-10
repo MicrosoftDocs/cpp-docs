@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: dllexport, dllimport"
 title: "dllexport, dllimport"
 ms.date: "11/04/2016"
 f1_keywords: ["dllimport_cpp", "dllexport_cpp"]

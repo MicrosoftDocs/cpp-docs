@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Value classes and structs (C++/CX)"
 title: "Value classes and structs (C++/CX)"
 ms.date: "12/30/2016"
 helpviewer_keywords: ["value struct", "value class"]

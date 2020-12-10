@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fread_s"
 title: "fread_s"
 ms.date: "4/2/2020"
 api_name: ["fread_s", "_o_fread_s"]

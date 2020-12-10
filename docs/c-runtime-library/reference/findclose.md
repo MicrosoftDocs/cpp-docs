@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _findclose"
 title: "_findclose"
 ms.date: "4/2/2020"
 api_name: ["_findclose", "_o__findclose"]

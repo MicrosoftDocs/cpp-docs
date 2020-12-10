@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: free"
 title: "free"
 ms.date: "4/2/2020"
 api_name: ["free", "_o_free"]

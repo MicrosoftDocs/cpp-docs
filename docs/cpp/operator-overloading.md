@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Operator overloading"
 title: "Operator Overloading"
 ms.date: "11/04/2016"
 f1_keywords: ["operator_cpp", "operator"]

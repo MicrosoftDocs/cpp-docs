@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _dupenv_s, _wdupenv_s"
 title: "_dupenv_s, _wdupenv_s"
 ms.date: "4/2/2020"
 api_name: ["_dupenv_s", "_wdupenv_s", "_o__dupenv_s", "_o__wdupenv_s"]

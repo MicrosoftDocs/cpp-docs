@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `__uuidof` Operator"
 title: "__uuidof Operator"
 ms.date: "10/10/2018"
 f1_keywords: ["__LIBID_cpp", "__uuidof_cpp", "__uuidof", "_uuidof"]

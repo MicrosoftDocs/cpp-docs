@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: default::(type_name)::Equals Method"
 title: "default::(type_name)::Equals Method"
 ms.date: "12/30/2016"
 ms.assetid: 4450f835-06fc-4758-8d0a-72cf00007873

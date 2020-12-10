@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Install cross-platform mobile development with C++"
 title: "Install cross-platform mobile development with C++"
 ms.date: "10/17/2019"
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257

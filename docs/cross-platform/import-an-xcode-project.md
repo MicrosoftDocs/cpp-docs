@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Import an Xcode project"
 title: "Import an Xcode project"
 ms.date: "10/17/2019"
 ms.assetid: aa4b8161-d98f-4a1a-9db3-520133bfc82f
