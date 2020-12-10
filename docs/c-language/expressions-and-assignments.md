@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expressions and Assignments"
 title: "Expressions and Assignments"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["assignment statements, values in expressions", "expressions [C]", "expressions [C], assigning values", "Visual C, expressions", "assignment operators, assigning values in expressions", "operators [C], assigning values", "assigning values in C", "Visual C, assignments"]

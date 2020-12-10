@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Constraints of Delay Loading DLLs"
 title: "Constraints of Delay Loading DLLs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["constraints [C++], delayed loading of DLLs", "delayed loading of DLLs, constraints", "DLLs [C++], constraints"]

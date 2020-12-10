@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;returns&gt;"
 title: "&lt;returns> (C++ Documentation Comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["returns", "<returns>"]

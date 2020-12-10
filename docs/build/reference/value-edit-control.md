@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Value Edit Control"
 title: "Value Edit Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Value edit control"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Import into an application using __declspec(dllimport)"
 title: "Import into an application using __declspec(dllimport)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["__declspec(dllimport) keyword [C++]", "importing DLLs [C++], __declspec(dllimport)"]

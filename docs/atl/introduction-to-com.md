@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Introduction to COM"
 title: "Introduction to COM"
 ms.custom: "index-page"
 ms.date: "11/04/2016"

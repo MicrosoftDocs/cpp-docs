@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multiple Dual Interfaces"
 title: "Multiple Dual Interfaces"
 ms.date: "11/04/2016"
 ms.topic: "reference"

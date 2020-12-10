@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /OUT (Output File Name)"
 title: "/OUT (Output File Name)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.OutputFile", "/out"]

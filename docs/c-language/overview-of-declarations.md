@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overview of Declarations"
 title: "Overview of Declarations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["declarations, about declarations", "type qualifiers"]

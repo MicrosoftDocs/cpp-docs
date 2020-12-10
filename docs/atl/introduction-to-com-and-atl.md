@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Introduction to COM and ATL"
 title: "Introduction to COM and ATL"
 ms.custom: "index-page"
 ms.date: "11/04/2016"

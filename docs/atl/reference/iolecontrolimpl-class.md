@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IOleControlImpl Class"
 title: "IOleControlImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IOleControlImpl", "ATLCTL/ATL::IOleControlImpl", "ATLCTL/ATL::IOleControlImpl::FreezeEvents", "ATLCTL/ATL::IOleControlImpl::GetControlInfo", "ATLCTL/ATL::IOleControlImpl::OnAmbientPropertyChange", "ATLCTL/ATL::IOleControlImpl::OnMnemonic"]

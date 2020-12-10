@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /validate-charset (Validate for compatible characters)"
 title: "/validate-charset (Validate for compatible characters)"
 ms.date: "02/06/2019"
 f1_keywords: ["/validate-charset", "validate-charset"]

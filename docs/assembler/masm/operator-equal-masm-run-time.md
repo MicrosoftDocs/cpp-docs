@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator == (MASM Run Time)"
 title: "operator == (MASM Run Time)"
 ms.date: "12/17/2019"
 f1_keywords: ["operator =="]

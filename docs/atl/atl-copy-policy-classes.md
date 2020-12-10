@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Copy Policy Classes"
 title: "ATL Copy Policy Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data [C++], ATL", "classes [C++], copy policy", "copy policy classes [C++]", "_Copy class", "_CopyInterface class"]

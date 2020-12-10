@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Filename-Parts Syntax"
 title: "Filename-Parts Syntax"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["syntax, filename-parts", "filename-parts syntax in NMAKE", "NMAKE program, syntax"]

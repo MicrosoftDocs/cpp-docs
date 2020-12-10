@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Registry Support Classes"
 title: "Registry Support Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

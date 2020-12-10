@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Range of Integer Values"
 title: "Range of Integer Values"
 ms.date: "11/04/2016"
 ms.assetid: 0e9c6161-8f3f-4bfb-9fcc-a6c8dc97d702

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type and Variable Sizes in Inline Assembly"
 title: "Type and Variable Sizes in Inline Assembly"
 ms.date: "08/30/2018"
 ms.topic: "reference"

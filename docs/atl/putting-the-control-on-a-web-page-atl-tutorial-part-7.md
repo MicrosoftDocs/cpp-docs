@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Putting the Control on a Web Page (ATL Tutorial, Part 7)"
 title: "Putting the Control on a Web Page (ATL Tutorial, Part 7)"
 ms.custom: "get-started-article"
 ms.date: "05/06/2019"

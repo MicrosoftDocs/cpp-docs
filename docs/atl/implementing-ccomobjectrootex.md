@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing CComObjectRootEx"
 title: "Implementing CComObjectRootEx"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CComObjectRoot class, implementing", "CComObjectRootEx class"]

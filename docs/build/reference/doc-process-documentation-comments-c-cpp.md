@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /doc (Process Documentation Comments) (C/C++)"
 title: "/doc (Process Documentation Comments) (C/C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.GenerateXMLDocumentationFiles", "/doc", "VC.Project.VCCLCompilerTool.XMLDocumentationFileName"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Pixel/HIMETRIC Conversion Global Functions"
 title: "Pixel-HIMETRIC Conversion Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlwin/ATL::AtlHiMetricToPixel", "atlwin/ATL::AtlPixelToHiMetric"]

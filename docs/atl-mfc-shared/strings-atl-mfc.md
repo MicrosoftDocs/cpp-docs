@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Strings (ATL/MFC)"
 title: "Strings (ATL-MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["const char pointers", "strings [C++], in ATL", "MFC [C++], string handling class", "MBCS [C++], CString support", "strings [C++], class CStringT", "char pointers", "reference counting [C++]", "strings [C++], string operations", "portability [C++], Unicode and ANSI string objects", "literal strings [C++], class CString", "copying string objects", "ATL, string handling class", "strings [C++], in MFC", "strings [C++]", "C-style strings", "language portability [C++]", "strings [C++], class CString", "literal strings [C++], class CStringT"]

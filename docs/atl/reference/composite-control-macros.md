@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Composite Control Macros"
 title: "Composite Control Macros"
 ms.date: "05/06/2019"
 f1_keywords: ["atlcom/ATL::BEGIN_SINK_MAP", "atlcom/ATL::END_SINK_MAP", "atlcom/ATL::SINK_ENTRY"]

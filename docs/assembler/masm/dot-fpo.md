@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .FPO (32-bit MASM)"
 title: ".FPO"
 ms.date: "11/05/2019"
 f1_keywords: [".FPO"]

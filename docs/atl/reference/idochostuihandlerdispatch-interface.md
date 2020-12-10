@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDocHostUIHandlerDispatch Interface"
 title: "IDocHostUIHandlerDispatch Interface"
 ms.date: "07/02/2019"
 f1_keywords: ["IDocHostUIHandlerDispatch", "atlbase/ATL::IDocHostUIHandlerDispatch"]

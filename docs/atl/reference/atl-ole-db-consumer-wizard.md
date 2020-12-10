@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL OLE DB Consumer Wizard"
 title: "ATL OLE DB Consumer Wizard"
 ms.date: "07/02/2019"
 helpviewer_keywords: ["ATL projects, adding ATL OLE DB consumers"]

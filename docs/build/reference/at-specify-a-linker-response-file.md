@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: @ (Specify a Linker Response File)"
 title: "@ (Specify a Linker Response File)"
 ms.date: "09/05/2018"
 f1_keywords: ["@"]

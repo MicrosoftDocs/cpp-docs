@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /EP (Preprocess to stdout Without #line Directives)"
 title: "/EP (Preprocess to stdout Without #line Directives)"
 ms.date: "11/04/2016"
 f1_keywords: ["/ep", "VC.Project.VCCLCompilerTool.GeneratePreprocessedFileNoLines"]

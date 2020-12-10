@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAutoPtrList Class"
 title: "CAutoPtrList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAutoPtrList", "ATLCOLL/ATL::CAutoPtrList", "ATLCOLL/ATL::CAutoPtrList::CAutoPtrList"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL COM Property Pages"
 title: "ATL COM Property Pages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["property pages, COM", "ATL COM objects", "COM property pages", "property pages, ATL", "COM objects, ATL", "ATL property pages"]

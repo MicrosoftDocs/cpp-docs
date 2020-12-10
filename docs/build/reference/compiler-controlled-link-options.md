@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler-Controlled LINK Options"
 title: "Compiler-Controlled LINK Options"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["LINK tool [C++], compiler-controlled options", "linker [C++], CL compiler control", "linking [C++], affected by CL features", "cl.exe compiler [C++], features that affect linking", "cl.exe compiler [C++], controlling linker"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recommendations for Choosing Between ATL and MFC"
 title: "Recommendations for Choosing Between ATL and MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, ATL support", "ATL, vs. MFC"]

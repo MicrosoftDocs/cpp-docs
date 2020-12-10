@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LIB Reference"
 title: "LIB Reference"
 ms.date: "11/04/2016"
 f1_keywords: ["Lib"]

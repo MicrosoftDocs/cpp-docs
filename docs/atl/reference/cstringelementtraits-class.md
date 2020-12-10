@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CStringElementTraits Class"
 title: "CStringElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStringElementTraits", "CSTRINGT/ATL::CStringElementTraits", "CSTRINGT/ATL::CStringElementTraits::INARGTYPE", "CSTRINGT/ATL::CStringElementTraits::OUTARGTYPE", "CSTRINGT/ATL::CStringElementTraits::CompareElements", "CSTRINGT/ATL::CStringElementTraits::CompareElementsOrdered", "CSTRINGT/ATL::CStringElementTraits::CopyElements", "CSTRINGT/ATL::CStringElementTraits::Hash", "CSTRINGT/ATL::CStringElementTraits::RelocateElements"]

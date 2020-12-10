@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRTThreadTraits Class"
 title: "CRTThreadTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRTThreadTraits", "ATLBASE/ATL::CRTThreadTraits", "ATLBASE/ATL::CRTThreadTraits::CreateThread"]

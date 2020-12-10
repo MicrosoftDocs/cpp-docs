@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /LARGEADDRESSAWARE (Handle Large Addresses)"
 title: "/LARGEADDRESSAWARE (Handle Large Addresses)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.LargeAddressAware", "/largeaddressaware"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComPolyObject Class"
 title: "CComPolyObject Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComPolyObject", "ATLCOM/ATL::CComPolyObject", "ATLCOM/ATL::CComPolyObject::CComPolyObject", "ATLCOM/ATL::CComPolyObject::AddRef", "ATLCOM/ATL::CComPolyObject::CreateInstance", "ATLCOM/ATL::CComPolyObject::FinalConstruct", "ATLCOM/ATL::CComPolyObject::FinalRelease", "ATLCOM/ATL::CComPolyObject::QueryInterface", "ATLCOM/ATL::CComPolyObject::Release", "ATLCOM/ATL::CComPolyObject::m_contained"]

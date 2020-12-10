@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Supporting IDispatch and IErrorInfo"
 title: "Supporting IDispatch and IErrorInfo"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ISupportErrorInfoImpl method", "IErrorInfo class suppor in ATL", "IDispatchImpl class", "IDispatch class support in ATL"]

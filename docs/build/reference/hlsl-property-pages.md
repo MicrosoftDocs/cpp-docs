@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HLSL Compiler Property Pages"
 title: "HLSL Property Pages"
 ms.date: "07/24/2019"
 ms.assetid: 0c65f5ec-a2a5-4f5b-8d4c-fa57113a5a1d

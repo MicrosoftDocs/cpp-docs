@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /IDLOUT (Name MIDL Output Files)"
 title: "/IDLOUT (Name MIDL Output Files)"
 ms.date: "11/04/2016"
 f1_keywords: ["/idlout", "VC.Project.VCLinkerTool.MergedIDLBaseFileName"]

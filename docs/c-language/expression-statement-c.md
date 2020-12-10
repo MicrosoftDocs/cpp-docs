@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expression Statement (C)"
 title: "Expression Statement (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["statements, expression", "expression statements"]

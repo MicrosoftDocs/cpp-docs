@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .Pdb Files as Linker Input"
 title: ".Pdb Files as Linker Input"
 ms.date: "11/04/2016"
 helpviewer_keywords: [".pdb files, as linker input", "PDB files, as linker input"]

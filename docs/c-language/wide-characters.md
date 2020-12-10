@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Wide Characters"
 title: "Wide Characters"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["wide characters"]

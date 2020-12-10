@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Default ATL Project Configurations"
 title: "Default ATL Project Configurations"
 ms.date: "10/20/2017"
 helpviewer_keywords: ["ATL projects, default configurations"]

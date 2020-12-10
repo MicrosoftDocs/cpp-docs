@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /TLBOUT (Name .TLB File)"
 title: "/TLBOUT (Name .TLB File)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.TypeLibraryFile", "/tlbout"]

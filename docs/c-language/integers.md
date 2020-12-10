@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Integers"
 title: "Integers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["integers"]

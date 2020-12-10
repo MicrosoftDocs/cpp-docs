@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Understanding Window Traits"
 title: "ATL Window Traits"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["window traits"]

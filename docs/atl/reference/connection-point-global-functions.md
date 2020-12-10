@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Connection Point Global Functions"
 title: "Connection Point Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlAdvise", "atlbase/ATL::AtlUnadvise", "atlbase/ATL::AtlAdviseSinkMap"]

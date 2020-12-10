@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Array Declarations"
 title: "Array Declarations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["multidimensional arrays", "declaring arrays", "arrays [C++], declaring"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Debug a Release Build"
 title: "How to: Debug a Release Build"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["debugging [C++], release builds", "release builds, debugging"]

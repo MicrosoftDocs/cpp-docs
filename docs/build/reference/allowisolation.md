@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ALLOWISOLATION"
 title: "/ALLOWISOLATION"
 ms.date: "11/04/2016"
 f1_keywords: ["/ALLOWISOLATION_EDITBIN"]

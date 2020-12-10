@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `/Zc:strictStrings` (Disable string literal type conversion)"
 title: "/Zc:strictStrings (Disable string literal type conversion)"
 ms.date: "03/06/2018"
 f1_keywords: ["/Zc:strictStrings", "strictStrings"]

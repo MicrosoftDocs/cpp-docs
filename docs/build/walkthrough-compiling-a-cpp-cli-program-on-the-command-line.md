@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Compiling a C++/CLI Program on the Command Line"
 title: "Walkthrough: Compiling a C++/CLI Program on the Command Line"
 ms.date: "04/23/2019"
 ms.assetid: cef41c88-faf9-439d-8423-25aa3f5674dd

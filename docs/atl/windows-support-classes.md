@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Support Classes"
 title: "Windows Support Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: String Conversion Macros"
 title: "String Conversion Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlconv/ATL::DEVMODEA2W", "atlconv/ATL::TEXTMETRICA2W", "atlconv/ATL::DEVMODEOLE2T", "atlconv/ATL::TEXTMETRICOLE2T", "atlconv/ATL::DEVMODET2OLE", "atlconv/ATL::TEXTMETRICT2OLE", "atlconv/ATL::DEVMODEW2A", "atlconv/ATL::TEXTMETRICW2A"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /MIDL (Specify MIDL Command Line Options)"
 title: "/MIDL (Specify MIDL Command Line Options)"
 ms.date: "09/05/2018"
 f1_keywords: ["/midl", "VC.Project.VCLinkerTool.MidlCommandFile"]

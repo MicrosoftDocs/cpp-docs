@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: STACKSIZE"
 title: "STACKSIZE"
 ms.date: "11/04/2016"
 f1_keywords: ["STACKSIZE"]

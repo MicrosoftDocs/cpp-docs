@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `__asm`"
 title: "__asm"
 ms.date: "10/09/2018"
 f1_keywords: ["__asm", "_asm", "__asm_cpp"]

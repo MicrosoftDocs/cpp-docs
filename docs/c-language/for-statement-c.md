@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: for Statement (C)"
 title: "for Statement (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["for keyword [C]"]

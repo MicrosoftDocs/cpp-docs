@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Calling DLL Functions from Visual Basic Applications"
 title: "Calling DLL Functions from Visual Basic Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["functions [C++], calling DLL functions from Visual Basic", "DLL functions [C++]", "function calls [C++], DLL functions", "DLLs [C++], calling", "calling DLL functions from VB applications [C++]", "__stdcall keyword [C++]", "DLL functions [C++], calling"]

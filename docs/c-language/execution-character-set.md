@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Execution Character Set"
 title: "Execution Character Set"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["execution character set [C++]", "character sets [C++], execution and source", "source character set [C++]"]

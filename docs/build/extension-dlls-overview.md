@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC extension DLLs: Overview"
 title: "Extension DLLs: Overview"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["AFXDLL library", "MFC DLLs [C++], MFC extension DLLs", "DLLs [C++], extension", "shared DLL versions [C++]", "extension DLLs [C++], about MFC extension DLLs"]

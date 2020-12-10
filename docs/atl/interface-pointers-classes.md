@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interface Pointers Classes"
 title: "Interface Pointers Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

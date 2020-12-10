@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IConnectionPointContainerImpl Class"
 title: "IConnectionPointContainerImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IConnectionPointContainerImpl", "ATLCOM/ATL::IConnectionPointContainerImpl", "ATLCOM/ATL::IConnectionPointContainerImpl::EnumConnectionPoints", "ATLCOM/ATL::IConnectionPointContainerImpl::FindConnectionPoint"]

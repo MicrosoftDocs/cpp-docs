@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reading Pointer Values"
 title: "Reading Pointer Values"
 ms.date: "11/04/2016"
 ms.assetid: 3dd1cf15-30ac-4dec-9b14-258d20501fcf

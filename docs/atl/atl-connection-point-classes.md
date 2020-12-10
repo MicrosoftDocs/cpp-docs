@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Connection Point Classes"
 title: "ATL Connection Point Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CFirePropNotifyEvent class, connection point classes", "connection points [C++], ATL classes", "ATL, connection points", "CComDynamicUnkArray class, connection point classes", "CFirePropNotifyEvent class", "CComUnkArray class, connection point classes"]

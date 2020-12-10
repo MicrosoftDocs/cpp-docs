@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WHILE"
 title: "WHILE (MASM)"
 ms.date: "12/16/2019"
 helpviewer_keywords: ["WHILE directive"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reserved words"
 title: "Reserved words"
 ms.date: "11/04/2016"
 f1_keywords: ["code", "CONFORMING", "DISCARDABLE", "Description", "base", "APPLOADER", "Data", "DYNAMIC", "DEV386"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .BREAK (32-bit MASM)"
 title: ".BREAK"
 ms.date: "11/05/2019"
 f1_keywords: [".BREAK"]

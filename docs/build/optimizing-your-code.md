@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Optimizing your code"
 title: "Optimizing Your Code"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["performance, optimizing code", "optimization", "cl.exe compiler, performance", "optimization, C++ code", "code, optimizing", "performance, compiler"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Structure and Constant Definitions"
 title: "Structure and Constant Definitions"
 ms.date: "11/04/2016"
 ms.assetid: 1df7cf46-b853-4788-a257-100d5c37997f

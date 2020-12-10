@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Checking for Memory Overwrites"
 title: "Checking for Memory Overwrites"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory, overwrites"]

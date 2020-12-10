@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Prefix Increment and Decrement Operators"
 title: "Prefix Increment and Decrement Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["increment operators, types of", "decrement operators, syntax", "decrement operators"]

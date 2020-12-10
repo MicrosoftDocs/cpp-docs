@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Add Custom Build Tools to MSBuild Projects"
 title: "How to: Add Custom Build Tools to MSBuild Projects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["msbuild (c++), howto: add custom build tools"]

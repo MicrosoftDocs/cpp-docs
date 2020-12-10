@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IServiceProviderImpl Class"
 title: "IServiceProviderImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IServiceProviderImpl", "ATLCOM/ATL::IServiceProviderImpl", "ATLCOM/ATL::IServiceProviderImpl::QueryService"]

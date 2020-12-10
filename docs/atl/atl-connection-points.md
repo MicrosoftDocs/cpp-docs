@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Connection Points"
 title: "ATL Connection Points"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["connections, connection points", "ATL, connection points", "connection points [C++], about connection points"]

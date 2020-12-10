@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Hint Files"
 title: "Hint Files"
 ms.date: "02/26/2019"
 f1_keywords: ["cpp.hint", "vc.hint.file"]

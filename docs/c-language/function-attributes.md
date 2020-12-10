@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Attributes"
 title: "Function Attributes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["attributes [C]", "attributes [C], reference topics", "functions [C], attributes", "function attributes"]

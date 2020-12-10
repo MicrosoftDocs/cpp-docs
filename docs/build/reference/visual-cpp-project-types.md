@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ project templates"
 title: "Visual C++ Project Types"
 ms.date: "08/13/2019"
 helpviewer_keywords: ["programs [C++], projects", "project templates [Visual Studio], C++", "TODO comments [C++]", "projects [C++], types", "templates [C++], projects", "applications [C++], projects", "C++ projects, types"]

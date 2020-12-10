@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Qpar-report (Auto-Parallelizer Reporting Level)"
 title: "/Qpar-report (Auto-Parallelizer Reporting Level)"
 ms.date: "11/04/2016"
 ms.assetid: 562673b9-02da-4bf8-bb64-70bc25ef4651

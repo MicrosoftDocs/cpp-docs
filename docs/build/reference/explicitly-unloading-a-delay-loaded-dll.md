@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Explicitly Unloading a Delay-Loaded DLL"
 title: "Explicitly Unloading a Delay-Loaded DLL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["/DELAY:UNLOAD linker option", "DELAY:UNLOAD linker option", "__FUnloadDelayLoadedDLL2", "delayed loading of DLLs, unloading"]

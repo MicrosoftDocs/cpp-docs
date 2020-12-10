@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Structure of a Library"
 title: "Structure of a Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["libraries, structure"]

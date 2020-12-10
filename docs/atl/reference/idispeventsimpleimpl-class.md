@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDispEventSimpleImpl Class"
 title: "IDispEventSimpleImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IDispEventSimpleImpl", "ATLCOM/ATL::IDispEventSimpleImpl", "ATLCOM/ATL::IDispEventSimpleImpl::Advise", "ATLCOM/ATL::IDispEventSimpleImpl::DispEventAdvise", "ATLCOM/ATL::IDispEventSimpleImpl::DispEventUnadvise", "ATLCOM/ATL::IDispEventSimpleImpl::GetIDsOfNames", "ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfo", "ATLCOM/ATL::IDispEventSimpleImpl::GetTypeInfoCount", "ATLCOM/ATL::IDispEventSimpleImpl::Invoke", "ATLCOM/ATL::IDispEventSimpleImpl::Unadvise"]

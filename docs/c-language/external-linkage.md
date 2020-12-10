@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: External Linkage"
 title: "External Linkage"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["linkage [C++], external", "external linkage, about external linkage", "external linkage"]

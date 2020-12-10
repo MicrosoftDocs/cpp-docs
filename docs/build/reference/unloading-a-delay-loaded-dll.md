@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unloading a Delay-Loaded DLL"
 title: "Unloading a Delay-Loaded DLL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["__FUnloadDelayLoadedDLL2", "delayed loading of DLLs, unloading"]

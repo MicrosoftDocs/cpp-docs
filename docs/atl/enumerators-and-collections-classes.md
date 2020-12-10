@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Enumerators and Collections Classes"
 title: "Enumerators and Collections Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

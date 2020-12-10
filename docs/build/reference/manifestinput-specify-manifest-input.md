@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /MANIFESTINPUT (Specify Manifest Input)"
 title: "/MANIFESTINPUT (Specify Manifest Input)"
 ms.date: "07/24/2019"
 ms.assetid: a0b0c21e-1f9b-4d8c-bb3f-178f57fa7f1b

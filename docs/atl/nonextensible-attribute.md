@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: nonextensible Attribute"
 title: "nonextensible Attribute"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["nonextensible attribute", "dual interfaces, nonextensible attribute"]

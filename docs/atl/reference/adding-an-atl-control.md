@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an ATL Control"
 title: "Adding an ATL Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL projects, adding controls", "controls [ATL], adding to projects"]

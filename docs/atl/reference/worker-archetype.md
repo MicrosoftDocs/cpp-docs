@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Worker Archetype"
 title: "Worker Archetype"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Worker archetype"]

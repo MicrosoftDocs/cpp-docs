@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Rules and Limitations for Using Naked Functions"
 title: "Rules and Limitations for Using Naked Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["naked functions"]

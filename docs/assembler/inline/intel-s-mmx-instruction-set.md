@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Intel&#39;s MMX Instruction Set"
 title: "Intel&#39;s MMX Instruction Set"
 ms.date: "08/30/2018"
 ms.topic: "reference"

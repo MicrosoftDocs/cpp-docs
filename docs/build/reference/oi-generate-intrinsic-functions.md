@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Oi (Generate Intrinsic Functions)"
 title: "/Oi (Generate Intrinsic Functions)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableIntrinsicFunctions", "/oi", "VC.Project.VCCLWCECompilerTool.EnableIntrinsicFunctions"]

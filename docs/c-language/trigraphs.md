@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Trigraphs"
 title: "Trigraphs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["??) trigraph", "??- trigraph", "question mark, in trigraphs", "??= trigraph", "?? trigraph", "??< trigraph", "??/ trigraph", "trigraphs", "? symbol, trigraph", "??> trigraph", "??! trigraph", "??' trigraph"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Qpar (Auto-Parallelizer)"
 title: "/Qpar (Auto-Parallelizer)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration"]

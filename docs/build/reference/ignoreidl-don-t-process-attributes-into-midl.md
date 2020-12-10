@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /IGNOREIDL (Don&#39;t Process Attributes into MIDL)"
 title: "/IGNOREIDL (Don&#39;t Process Attributes into MIDL)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.IgnoreEmbeddedIDL", "/ignoreidl"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Modifying the ATL Project"
 title: "Modifying the ATL Project"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [ATL], adding to composite controls", "Dialog editor, working with composite controls", "composite controls, adding controls"]

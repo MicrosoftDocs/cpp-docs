@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Connection Point Macros"
 title: "Connection Point Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcom/ATL::BEGIN_CONNECTION_POINT_MAP", "atlcom/ATL::END_CONNECTION_POINT_MAP"]

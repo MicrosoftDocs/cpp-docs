@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFixedStringT Class"
 title: "CFixedStringT Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CFixedStringT", "CSTRINGT/ATL::CFixedStringT", "CSTRINGT/ATL::CFixedStringT::CFixedStringT"]

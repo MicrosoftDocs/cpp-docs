@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reading Ranges"
 title: "Reading Ranges"
 ms.date: "11/04/2016"
 ms.assetid: 99de29ce-ab14-46f4-97e1-2081fd996b53

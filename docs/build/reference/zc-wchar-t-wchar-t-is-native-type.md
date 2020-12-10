@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zc:wchar_t (wchar_t Is Native Type)"
 title: "/Zc:wchar_t (wchar_t Is Native Type)"
 ms.date: "03/01/2018"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.TreatWChar_tAsBuiltInType", "VC.Project.VCCLCompilerTool.TreatWChar_tAsBuiltInType", "/Zc:wchar_t"]

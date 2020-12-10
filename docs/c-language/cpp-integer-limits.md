@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C and C++ Integer Limits"
 title: "C and C++ Integer Limits"
 ms.date: "10/21/2019"
 helpviewer_keywords: ["limits, integer", "limits, integer constants", "integer limits"]

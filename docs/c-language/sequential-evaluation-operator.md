@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sequential-Evaluation Operator"
 title: "Sequential-Evaluation Operator"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operators [C++], sequential-evaluation", "sequential-evaluation operator", "comma operator"]

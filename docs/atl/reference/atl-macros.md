@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Macros"
 title: "ATL Macros"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, macros", "macros, ATL"]

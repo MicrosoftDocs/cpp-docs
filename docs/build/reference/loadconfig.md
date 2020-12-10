@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /LOADCONFIG"
 title: "/LOADCONFIG"
 ms.date: "11/04/2016"
 f1_keywords: ["/loadconfig"]

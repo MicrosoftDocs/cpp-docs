@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Defining a Rule"
 title: "Defining a Rule"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, inference rules", "defining inference rules"]

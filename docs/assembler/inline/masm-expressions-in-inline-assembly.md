@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MASM Expressions in Inline Assembly"
 title: "MASM Expressions in Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["expressions [C++], MASM", "expressions [C++], inline assembly", "inline assembly, MASM expressions", "MASM (Microsoft Macro Assembler), expressions"]

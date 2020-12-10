@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BSCMAKE Command Line"
 title: "BSCMAKE Command Line"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["BSCMAKE, command line"]

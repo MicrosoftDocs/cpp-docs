@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Registry Component (Registrar)"
 title: "ATL Registry Component (Registrar)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["scripting, registry scripting", "ATL, registry", "registrar scripts [ATL]", "registry, accessing", "ATL Registrar", "scripts, Registrar scripts", "registry, Registrar"]

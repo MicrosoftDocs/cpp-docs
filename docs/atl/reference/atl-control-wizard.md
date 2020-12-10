@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Control Wizard"
 title: "ATL Control Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.control.overview"]

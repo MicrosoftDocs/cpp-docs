@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAtlStringMgr Class"
 title: "IAtlStringMgr Class"
 ms.date: "10/18/2018"
 f1_keywords: ["IAtlStringMgr", "ATLSIMPSTR/ATL::IAtlStringMgr", "ATLSIMPSTR/ATL::Allocate", "ATLSIMPSTR/ATL::Clone", "ATLSIMPSTR/ATL::Free", "ATLSIMPSTR/ATL::GetNilString", "ATLSIMPSTR/ATL::Reallocate"]

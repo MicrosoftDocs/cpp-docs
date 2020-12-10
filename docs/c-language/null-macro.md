@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NULL Macro"
 title: "NULL Macro"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["NULL, macro"]

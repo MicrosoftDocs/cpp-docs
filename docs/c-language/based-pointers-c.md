@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Based Pointers (C)"
 title: "Based Pointers (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["__based keyword [C]", "based pointers", "pointers, based", "based addressing"]

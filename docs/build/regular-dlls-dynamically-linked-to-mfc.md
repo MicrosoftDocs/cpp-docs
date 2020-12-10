@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Regular MFC DLLs Dynamically Linked to MFC"
 title: "Regular MFC DLLs Dynamically Linked to MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["regular MFC DLLs [C++], dynamically linked to MFC", "AFX_MANAGE_STATE macro", "DLLs [C++], regular", "shared DLL versions [C++]", "dynamically linked DLLs [C++]"]
