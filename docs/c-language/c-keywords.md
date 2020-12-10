@@ -54,8 +54,8 @@ The C language uses the following keywords:
     :::column-end:::
     :::column:::
         **`while`**\
-        **`_Alignas`** <sup>2, a</sup>\
-        **`_Alignof`** <sup>2, a</sup>\
+        **[`_Alignas`](alignment-c.md)** <sup>2, a</sup>\
+        **[`_Alignof`](alignment-c.md)** <sup>2, a</sup>\
         **`_Atomic`** <sup>2, b</sup>\
         **`_Bool`** <sup>1, a</sup>\
         **`_Complex`** <sup>1, b</sup>\

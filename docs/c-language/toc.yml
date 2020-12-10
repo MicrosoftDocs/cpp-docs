@@ -139,7 +139,7 @@
   - name: Declarations and types
     items: 
       - name: Alignment
-        href: ../c-language/alignment.md
+        href: ../c-language/alignment-c.md
       - name: Declarations and types
         href: ../c-language/declarations-and-types.md
       - name: Overview of declarations
