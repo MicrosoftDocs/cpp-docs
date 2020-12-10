@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Types Associated with User-Interface Objects"
 title: "Message Types Associated with User-Interface Objects"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.uiobject.msgs"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMonikerFile Class"
 title: "CMonikerFile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMonikerFile", "AFXOLE/CMonikerFile", "AFXOLE/CMonikerFile::CMonikerFile", "AFXOLE/CMonikerFile::Close", "AFXOLE/CMonikerFile::Detach", "AFXOLE/CMonikerFile::GetMoniker", "AFXOLE/CMonikerFile::Open", "AFXOLE/CMonikerFile::CreateBindContext"]

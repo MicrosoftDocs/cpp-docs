@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Settings for the Tool Tip Control"
 title: "Settings for the Tool Tip Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tool tips [MFC], activating", "CToolTipCtrl class [MFC], settings"]

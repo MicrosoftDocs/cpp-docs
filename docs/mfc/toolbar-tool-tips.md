@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Toolbar Tool Tips"
 title: "Toolbar Tool Tips"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tool tips [MFC], activating", "CBRS_TOOLTIPS constant [MFC]", "tool tips [MFC], adding text", "updates [MFC]", "CBRS_FLYBY constant [MFC]", "tool tips [MFC]", "updating status bar messages", "updates, status bar messages", "status bars [MFC], tool tips", "flyby status bar updates"]

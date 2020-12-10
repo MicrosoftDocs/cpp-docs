@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDiscreteTransition Class"
 title: "CDiscreteTransition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition::CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition::Create", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_delay", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_hold"]

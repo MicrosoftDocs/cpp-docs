@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCReBar Class"
 title: "CMFCReBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCReBar", "AFXREBAR/CMFCReBar", "AFXREBAR/CMFCReBar::AddBar", "AFXREBAR/CMFCReBar::CalcFixedLayout", "AFXREBAR/CMFCReBar::CanFloat", "AFXREBAR/CMFCReBar::Create", "AFXREBAR/CMFCReBar::EnableDocking", "AFXREBAR/CMFCReBar::GetReBarBandInfoSize", "AFXREBAR/CMFCReBar::GetReBarCtrl", "AFXREBAR/CMFCReBar::OnShowControlBarMenu", "AFXREBAR/CMFCReBar::OnToolHitTest", "AFXREBAR/CMFCReBar::OnUpdateCmdUI", "AFXREBAR/CMFCReBar::SetPaneAlignment"]

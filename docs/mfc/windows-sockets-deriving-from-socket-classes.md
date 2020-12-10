@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets: Deriving from Socket Classes"
 title: "Windows Sockets: Deriving from Socket Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["derived classes [MFC], from socket classes", "Windows Sockets [MFC], deriving from socket classes", "sockets [MFC], deriving from socket classes"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMultiPageDHtmlDialog Class"
 title: "CMultiPageDHtmlDialog Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CMultiPageDHtmlDialog", "AFXDHTML/CMultiPageDHtmlDialog", "AFXDHTML/CMultiPageDHtmlDialog::CMultiPageDHtmlDialog"]

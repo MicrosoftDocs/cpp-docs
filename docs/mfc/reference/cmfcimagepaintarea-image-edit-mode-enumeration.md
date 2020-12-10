@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration"
 title: "CMFCImagePaintArea::IMAGE_EDIT_MODE Enumeration"
 ms.date: "11/04/2016"
 f1_keywords: ["IMAGE_EDIT_MODE Enumeration"]

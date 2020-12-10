@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Prerequisites for Internet Client Classes"
 title: "Prerequisites for Internet Client Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Internet files [MFC], writing to", "Internet [MFC], connections", "FTP (File Transfer Protocol), MFC classes", "Gopher prerequisites [MFC]", "files [MFC], writing to", "classes [MFC], connections", "HTTP [MFC], prerequisites for Internet clients", "connections [MFC], classes for", "Internet client class prerequisites [MFC]", "files [MFC], reading", "URLs [MFC], Internet client applications", "prerequisites, Internet client classes [MFC]", "Gopher client applications [MFC]"]

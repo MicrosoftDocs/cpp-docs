@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating an MFC ActiveX Control Container"
 title: "Creating an MFC ActiveX Control Container"
 ms.date: "09/12/2018"
 f1_keywords: ["vc.appwiz.activex.container"]

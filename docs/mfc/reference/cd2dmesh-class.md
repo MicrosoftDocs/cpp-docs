@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DMesh Class"
 title: "CD2DMesh Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DMesh", "AFXRENDERTARGET/CD2DMesh", "AFXRENDERTARGET/CD2DMesh::CD2DMesh", "AFXRENDERTARGET/CD2DMesh::Attach", "AFXRENDERTARGET/CD2DMesh::Create", "AFXRENDERTARGET/CD2DMesh::Destroy", "AFXRENDERTARGET/CD2DMesh::Detach", "AFXRENDERTARGET/CD2DMesh::Get", "AFXRENDERTARGET/CD2DMesh::IsValid", "AFXRENDERTARGET/CD2DMesh::Open", "AFXRENDERTARGET/CD2DMesh::m_pMesh"]

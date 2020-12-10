@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Structures Used by MFC"
 title: "Structures Used by MFC"
 ms.date: "12/03/2018"
 helpviewer_keywords: ["structures", "structures, MFC"]

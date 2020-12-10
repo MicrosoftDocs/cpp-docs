@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MAPI Samples"
 title: "MAPI Samples"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MAPI, MFC", "sample applications [MFC], MAPI"]

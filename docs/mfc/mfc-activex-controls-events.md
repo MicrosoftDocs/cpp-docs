@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Events"
 title: "MFC ActiveX Controls: Events"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], events", "notifications [MFC], notifying containers of events", "custom events [MFC], adding to ActiveX controls", "events [MFC], mapping", "COleControl class [MFC], handling of events", "mappings [MFC], events", "stock events [MFC]", "container events [MFC]", "events [MFC], ActiveX controls", "OLE events [MFC]"]

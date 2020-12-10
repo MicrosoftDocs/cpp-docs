@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CClientDC Class"
 title: "CClientDC Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CClientDC", "AFXWIN/CClientDC", "AFXWIN/CClientDC::CClientDC", "AFXWIN/CClientDC::m_hWnd"]

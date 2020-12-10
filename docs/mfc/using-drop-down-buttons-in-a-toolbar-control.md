@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Drop-Down Buttons in a Toolbar Control"
 title: "Using Drop-Down Buttons in a Toolbar Control"
 ms.date: "11/04/2016"
 f1_keywords: ["TBN_DROPDOWN", "TBSTYLE_EX_DRAWDDARROWS"]

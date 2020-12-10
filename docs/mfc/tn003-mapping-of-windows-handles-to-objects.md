@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN003: Mapping of Windows Handles to Objects"
 title: "TN003: Mapping of Windows Handles to Objects"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.mapping"]

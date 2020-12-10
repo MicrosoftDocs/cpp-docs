@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Standard Dialog Data Validation Routines"
 title: "Standard Dialog Data Validation Routines"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["standard dialog, data validation routines"]

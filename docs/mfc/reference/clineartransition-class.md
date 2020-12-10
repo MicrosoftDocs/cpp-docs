@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLinearTransition Class"
 title: "CLinearTransition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition::CLinearTransition", "AFXANIMATIONCONTROLLER/CLinearTransition::Create", "AFXANIMATIONCONTROLLER/CLinearTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CLinearTransition::m_duration"]

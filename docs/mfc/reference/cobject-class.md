@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CObject Class"
 title: "CObject Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CObject", "AFX/CObject", "AFX/CObject::CObject", "AFX/CObject::AssertValid", "AFX/CObject::Dump", "AFX/CObject::GetRuntimeClass", "AFX/CObject::IsKindOf", "AFX/CObject::IsSerializable", "AFX/CObject::Serialize"]

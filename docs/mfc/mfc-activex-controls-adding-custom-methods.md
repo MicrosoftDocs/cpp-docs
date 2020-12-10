@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Adding Custom Methods"
 title: "MFC ActiveX Controls: Adding Custom Methods"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], methods", "PtInCircle custom method [MFC]"]

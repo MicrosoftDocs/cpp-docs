@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Advanced Property Implementation"
 title: "MFC ActiveX Controls: Advanced Property Implementation"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], error codes", "properties [MFC], ActiveX controls", "MFC ActiveX controls [MFC], properties"]

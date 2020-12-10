@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tabs and Tab Control Attributes"
 title: "Tabs and Tab Control Attributes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["attributes [MFC], reference topics", "tab controls [MFC], attributes", "tabs [MFC]", "tabs [MFC], attributes", "CTabCtrl class [MFC], tab control attributes"]

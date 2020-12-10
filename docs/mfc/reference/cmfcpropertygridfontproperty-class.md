@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCPropertyGridFontProperty Class"
 title: "CMFCPropertyGridFontProperty Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCPropertyGridFontProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetLogFont"]

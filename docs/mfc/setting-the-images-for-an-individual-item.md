@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Setting the Images for an Individual Item"
 title: "Setting the Images for an Individual Item"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["extended combo boxes [MFC], images", "images [MFC], combo box items"]

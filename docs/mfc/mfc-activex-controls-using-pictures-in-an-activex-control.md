@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Using Pictures in an ActiveX Control"
 title: "MFC ActiveX Controls: Using Pictures in an ActiveX Control"
 ms.date: "11/04/2016"
 f1_keywords: ["LPPICTUREDISP"]

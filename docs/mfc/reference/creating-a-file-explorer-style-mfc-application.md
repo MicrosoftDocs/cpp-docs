@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a File Explorer-Style MFC Application"
 title: "Creating a File Explorer-Style MFC Application"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfcexplorer.project"]

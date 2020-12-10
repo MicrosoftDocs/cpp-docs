@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Relationships Among MFC Objects"
 title: "Relationships Among MFC Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, relationships between key objects", "objects [MFC], relationships", "relationships, MFC objects", "MFC object relationships"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating an MFC DLL Project"
 title: "Creating an MFC DLL Project"
 ms.date: "08/19/2019"
 f1_keywords: ["vc.appwiz.mfcdll.project"]

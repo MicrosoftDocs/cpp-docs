@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonLinkCtrl Class"
 title: "CMFCRibbonLinkCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonLinkCtrl", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::CMFCRibbonLinkCtrl", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::CopyFrom", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetCompactSize", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetLink", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetRegularSize", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::GetToolTipText", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::IsDrawTooltipImage", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnDraw", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnDrawMenuImage", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnMouseMove", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OnSetIcon", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::OpenLink", "AFXRIBBONLINKCTRL/CMFCRibbonLinkCtrl::SetLink"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Painting an ActiveX Control"
 title: "MFC ActiveX Controls: Painting an ActiveX Control"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], painting", "MFC ActiveX controls [MFC], optimizing"]

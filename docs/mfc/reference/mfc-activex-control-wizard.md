@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Control Wizard"
 title: "MFC ActiveX Control Wizard"
 ms.date: "09/12/2018"
 f1_keywords: ["vc.appwiz.mfc.ctl.overview"]

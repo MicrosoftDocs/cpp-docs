@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Methods of Creating a Toolbar"
 title: "Methods of Creating a Toolbar"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CToolBarCtrl class [MFC], and CToolBar class [MFC]", "CToolBar class [MFC], creating toolbars", "MFC toolbars", "toolbar controls [MFC]", "toolbar controls [MFC], creating", "CToolBarCtrl class [MFC], creating toolbars"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CStatusBar Class"
 title: "CStatusBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStatusBar", "AFXEXT/CStatusBar", "AFXEXT/CStatusBar::CStatusBar", "AFXEXT/CStatusBar::CommandToIndex", "AFXEXT/CStatusBar::Create", "AFXEXT/CStatusBar::CreateEx", "AFXEXT/CStatusBar::DrawItem", "AFXEXT/CStatusBar::GetItemID", "AFXEXT/CStatusBar::GetItemRect", "AFXEXT/CStatusBar::GetPaneInfo", "AFXEXT/CStatusBar::GetPaneStyle", "AFXEXT/CStatusBar::GetPaneText", "AFXEXT/CStatusBar::GetStatusBarCtrl", "AFXEXT/CStatusBar::SetIndicators", "AFXEXT/CStatusBar::SetPaneInfo", "AFXEXT/CStatusBar::SetPaneStyle", "AFXEXT/CStatusBar::SetPaneText"]

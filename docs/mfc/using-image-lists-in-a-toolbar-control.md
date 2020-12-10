@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Image Lists in a Toolbar Control"
 title: "Using Image Lists in a Toolbar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["toolbar controls [MFC], image", "image lists [MFC], toolbar controls", "CToolBarCtrl class [MFC], image lists"]

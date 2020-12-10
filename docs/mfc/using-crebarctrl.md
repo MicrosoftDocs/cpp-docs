@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CReBarCtrl"
 title: "Using CReBarCtrl"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["child windows [MFC], rebar controls", "combo boxes [MFC], in rebar controls", "rebar controls"]

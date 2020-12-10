@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCMaskedEdit Class"
 title: "CMFCMaskedEdit Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCMaskedEdit", "AFXMASKEDEDIT/CMFCMaskedEdit", "AFXMASKEDEDIT/CMFCMaskedEdit::DisableMask", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableGetMaskedCharsOnly", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableMask", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableSelectByGroup", "AFXMASKEDEDIT/CMFCMaskedEdit::EnableSetMaskedCharsOnly", "AFXMASKEDEDIT/CMFCMaskedEdit::GetWindowText", "AFXMASKEDEDIT/CMFCMaskedEdit::SetValidChars", "AFXMASKEDEDIT/CMFCMaskedEdit::SetWindowText", "AFXMASKEDEDIT/CMFCMaskedEdit::IsMaskedChar"]

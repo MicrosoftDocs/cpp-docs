@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFileException Class"
 title: "CFileException Class"
 ms.date: "06/09/2020"
 f1_keywords: ["CFileException", "AFX/CFileException", "AFX/CFileException::CFileException", "AFX/CFileException::ErrnoToException", "AFX/CFileException::GetErrorMessage", "AFX/CFileException::OsErrorToException", "AFX/CFileException::ThrowErrno", "AFX/CFileException::ThrowOsError", "AFX/CFileException::m_cause", "AFX/CFileException::m_lOsError", "AFX/CFileException::m_strFileName"]

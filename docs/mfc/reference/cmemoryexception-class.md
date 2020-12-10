@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMemoryException Class"
 title: "CMemoryException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMemoryException", "AFX/CMemoryException", "AFX/CMemoryException::CMemoryException"]

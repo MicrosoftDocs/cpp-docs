@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCImageEditorDialog Class"
 title: "CMFCImageEditorDialog Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CMFCImageEditorDialog", "AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog", "AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog::CMFCImageEditorDialog"]

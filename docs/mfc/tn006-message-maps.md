@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN006: Message Maps"
 title: "TN006: Message Maps"
 ms.date: "06/25/2018"
 f1_keywords: ["vc.messages.maps"]

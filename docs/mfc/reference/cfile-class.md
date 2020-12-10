@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFile Class"
 title: "CFile Class"
 ms.date: "06/12/2018"
 f1_keywords: ["CFile", "AFX/CFile", "AFX/CFile::CFile", "AFX/CFile::Abort", "AFX/CFile::Close", "AFX/CFile::Duplicate", "AFX/CFile::Flush", "AFX/CFile::GetFileName", "AFX/CFile::GetFilePath", "AFX/CFile::GetFileTitle", "AFX/CFile::GetLength", "AFX/CFile::GetPosition", "AFX/CFile::GetStatus", "AFX/CFile::LockRange", "AFX/CFile::Open", "AFX/CFile::Read", "AFX/CFile::Remove", "AFX/CFile::Rename", "AFX/CFile::Seek", "AFX/CFile::SeekToBegin", "AFX/CFile::SeekToEnd", "AFX/CFile::SetFilePath", "AFX/CFile::SetLength", "AFX/CFile::SetStatus", "AFX/CFile::UnlockRange", "AFX/CFile::Write", "AFX/CFile::hFileNull", "AFX/CFile::m_hFile", "AFX/CFile::m_pTM"]

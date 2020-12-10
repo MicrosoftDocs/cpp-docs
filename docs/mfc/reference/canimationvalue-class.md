@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAnimationValue Class"
 title: "CAnimationValue Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationValue", "AFXANIMATIONCONTROLLER/CAnimationValue", "AFXANIMATIONCONTROLLER/CAnimationValue::CAnimationValue", "AFXANIMATIONCONTROLLER/CAnimationValue::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationValue::GetValue", "AFXANIMATIONCONTROLLER/CAnimationValue::GetVariable", "AFXANIMATIONCONTROLLER/CAnimationValue::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationValue::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationValue::m_value"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CToolBarCtrl"
 title: "Using CToolBarCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CToolBarCtrl class [MFC]", "toolbar controls [MFC], creating"]

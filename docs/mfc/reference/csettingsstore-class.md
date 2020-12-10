@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSettingsStore Class"
 title: "CSettingsStore Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSettingsStore", "AFXSETTINGSSTORE/CSettingsStore", "AFXSETTINGSSTORE/CSettingsStore::CSettingsStore", "AFXSETTINGSSTORE/CSettingsStore::Close", "AFXSETTINGSSTORE/CSettingsStore::CreateKey", "AFXSETTINGSSTORE/CSettingsStore::DeleteKey", "AFXSETTINGSSTORE/CSettingsStore::DeleteValue", "AFXSETTINGSSTORE/CSettingsStore::Open", "AFXSETTINGSSTORE/CSettingsStore::Read", "AFXSETTINGSSTORE/CSettingsStore::Write"]

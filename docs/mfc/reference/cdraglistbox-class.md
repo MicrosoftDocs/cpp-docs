@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDragListBox Class"
 title: "CDragListBox Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDragListBox", "AFXCMN/CDragListBox", "AFXCMN/CDragListBox::CDragListBox", "AFXCMN/CDragListBox::BeginDrag", "AFXCMN/CDragListBox::CancelDrag", "AFXCMN/CDragListBox::Dragging", "AFXCMN/CDragListBox::DrawInsert", "AFXCMN/CDragListBox::Dropped", "AFXCMN/CDragListBox::ItemFromPt"]

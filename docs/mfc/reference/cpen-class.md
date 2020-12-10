@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPen Class"
 title: "CPen Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPen", "AFXWIN/CPen", "AFXWIN/CPen::CPen", "AFXWIN/CPen::CreatePen", "AFXWIN/CPen::CreatePenIndirect", "AFXWIN/CPen::FromHandle", "AFXWIN/CPen::GetExtLogPen", "AFXWIN/CPen::GetLogPen"]

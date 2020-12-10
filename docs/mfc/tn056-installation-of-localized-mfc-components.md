@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN056: Installation of Localized MFC Components"
 title: "TN056: Installation of Localized MFC Components"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["components [MFC]", "TN056", "resources [MFC], localization", "localization [MFC], MFC resources", "MFC70LOC.DLL", "MFC DLLs [MFC], localizing", "components [MFC], installing", "DLLs [MFC], localizing MFC", "CTL3D32.DLL", "localization [MFC], resources", "installing MFC components"]

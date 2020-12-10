@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSplitterWndEx Class"
 title: "CSplitterWndEx Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSplitterWndEx", "AFXSPLITTERWNDEX/CSplitterWndEx", "AFXSPLITTERWNDEX/CSplitterWndEx::OnDrawSplitter"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWindowDC Class"
 title: "CWindowDC Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWindowDC", "AFXWIN/CWindowDC", "AFXWIN/CWindowDC::CWindowDC", "AFXWIN/CWindowDC::m_hWnd"]

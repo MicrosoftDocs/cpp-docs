@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MDI Tabbed Groups"
 title: "MDI Tabbed Groups"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["mdi [MFC], tabbed groups", "tabbed grous [MFC]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN032: MFC Exception Mechanism"
 title: "TN032: MFC Exception Mechanism"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["TN032", "MFC, exceptions", "CException class [MFC], using"]

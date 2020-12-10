@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CInternetConnection Class"
 title: "CInternetConnection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInternetConnection", "AFXINET/CInternetConnection", "AFXINET/CInternetConnection::CInternetConnection", "AFXINET/CInternetConnection::GetContext", "AFXINET/CInternetConnection::GetServerName", "AFXINET/CInternetConnection::GetSession"]

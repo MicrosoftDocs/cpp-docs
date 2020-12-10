@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPagerCtrl Class"
 title: "CPagerCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPagerCtrl", "AFXCMN/CPagerCtrl", "AFXCMN/CPagerCtrl::CPagerCtrl", "AFXCMN/CPagerCtrl::Create", "AFXCMN/CPagerCtrl::CreateEx", "AFXCMN/CPagerCtrl::ForwardMouse", "AFXCMN/CPagerCtrl::GetBkColor", "AFXCMN/CPagerCtrl::GetBorder", "AFXCMN/CPagerCtrl::GetButtonSize", "AFXCMN/CPagerCtrl::GetButtonState", "AFXCMN/CPagerCtrl::GetDropTarget", "AFXCMN/CPagerCtrl::GetScrollPos", "AFXCMN/CPagerCtrl::IsButtonDepressed", "AFXCMN/CPagerCtrl::IsButtonGrayed", "AFXCMN/CPagerCtrl::IsButtonHot", "AFXCMN/CPagerCtrl::IsButtonInvisible", "AFXCMN/CPagerCtrl::IsButtonNormal", "AFXCMN/CPagerCtrl::RecalcSize", "AFXCMN/CPagerCtrl::SetBkColor", "AFXCMN/CPagerCtrl::SetBorder", "AFXCMN/CPagerCtrl::SetButtonSize", "AFXCMN/CPagerCtrl::SetChild", "AFXCMN/CPagerCtrl::SetScrollPos"]

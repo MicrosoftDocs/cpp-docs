@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Tooltips in a CStatusBarCtrl Object"
 title: "Using Tooltips in a CStatusBarCtrl Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tool tips [MFC], using in status bars", "status bars [MFC], tool tips", "CStatusBarCtrl class [MFC], tool tips"]

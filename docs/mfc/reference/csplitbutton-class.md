@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSplitButton Class"
 title: "CSplitButton Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CSplitButton", "AFXCMN/CSplitButton", "AFXCMN/CSplitButton::CSplitButton", "AFXCMN/CSplitButton::Create", "AFXCMN/CSplitButton::SetDropDownMenu", "AFXCMN/CSplitButton::OnDropDown"]

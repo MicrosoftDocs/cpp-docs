@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Run-Time Object Model Services"
 title: "Run-Time Object Model Services"
 ms.date: "03/27/2019"
 helpviewer_keywords: ["run-time object model services macros"]

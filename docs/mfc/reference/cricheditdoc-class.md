@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRichEditDoc Class"
 title: "CRichEditDoc Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRichEditDoc", "AFXRICH/CRichEditDoc", "AFXRICH/CRichEditDoc::CreateClientItem", "AFXRICH/CRichEditDoc::GetStreamFormat", "AFXRICH/CRichEditDoc::GetView", "AFXRICH/CRichEditDoc::m_bRTF"]

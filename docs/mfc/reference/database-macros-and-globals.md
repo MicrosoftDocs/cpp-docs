@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Database Macros and Globals"
 title: "Database Macros and Globals"
 ms.date: "11/04/2016"
 f1_keywords: ["AFXDB/AFX_ODBC_CALL", "AFXDB/AFX_SQL_ASYNC", "AFXDB/AFX_SQL_SYNC", "AFXDB/AfxGetHENV"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDocObjectServer Class"
 title: "CDocObjectServer Class"
 ms.date: "09/12/2018"
 f1_keywords: ["CDocObjectServer", "AFXDOCOB/CDocObjectServer", "AFXDOCOB/CDocObjectServer::CDocObjectServer", "AFXDOCOB/CDocObjectServer::ActivateDocObject", "AFXDOCOB/CDocObjectServer::OnActivateView", "AFXDOCOB/CDocObjectServer::OnApplyViewState", "AFXDOCOB/CDocObjectServer::OnSaveViewState"]

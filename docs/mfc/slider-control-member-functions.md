@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Slider Control Member Functions"
 title: "Slider Control Member Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CSliderCtrl class [MFC], methods", "slider controls [MFC], member functions"]

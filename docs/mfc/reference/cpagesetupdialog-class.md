@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPageSetupDialog Class"
 title: "CPageSetupDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPageSetupDialog", "AFXDLGS/CPageSetupDialog", "AFXDLGS/CPageSetupDialog::CPageSetupDialog", "AFXDLGS/CPageSetupDialog::CreatePrinterDC", "AFXDLGS/CPageSetupDialog::DoModal", "AFXDLGS/CPageSetupDialog::GetDeviceName", "AFXDLGS/CPageSetupDialog::GetDevMode", "AFXDLGS/CPageSetupDialog::GetDriverName", "AFXDLGS/CPageSetupDialog::GetMargins", "AFXDLGS/CPageSetupDialog::GetPaperSize", "AFXDLGS/CPageSetupDialog::GetPortName", "AFXDLGS/CPageSetupDialog::OnDrawPage", "AFXDLGS/CPageSetupDialog::PreDrawPage", "AFXDLGS/CPageSetupDialog::m_psd"]

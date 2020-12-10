@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Creating an Automation Server"
 title: "MFC ActiveX Controls: Creating an Automation Server"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Automation servers [MFC], MFC ActiveX controls", "ActiveX controls [MFC], Automation server", "MFC ActiveX controls [MFC], Automation server"]

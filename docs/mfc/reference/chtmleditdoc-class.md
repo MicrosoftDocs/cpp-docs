@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CHtmlEditDoc Class"
 title: "CHtmlEditDoc Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHtmlEditDoc", "AFXHTML/CHtmlEditDoc", "AFXHTML/CHtmlEditDoc::CHtmlEditDoc", "AFXHTML/CHtmlEditDoc::GetView", "AFXHTML/CHtmlEditDoc::IsModified", "AFXHTML/CHtmlEditDoc::OpenURL"]

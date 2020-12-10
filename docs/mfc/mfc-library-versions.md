@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Library Versions"
 title: "MFC Library Versions"
 ms.date: "05/08/2019"
 helpviewer_keywords: ["class libraries [MFC], building versions", "version information [MFC], MFC library", "MFC class library", "MFC class library, building", "MFC libraries", "MFC, library versions", "libraries [MFC], versions"]

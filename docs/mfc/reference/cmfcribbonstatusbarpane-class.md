@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonStatusBarPane Class"
 title: "CMFCRibbonStatusBarPane Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonStatusBarPane", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::CMFCRibbonStatusBarPane", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::GetAlmostLargeText", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::GetTextAlign", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::IsAnimation", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::IsExtended", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::OnDrawBorder", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::OnFillBackground", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::SetAlmostLargeText", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::SetAnimationList", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::SetTextAlign", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::StartAnimation", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::StopAnimation", "AFXRIBBONSTATUSBARPANE/CMFCRibbonStatusBarPane::OnFinishAnimation"]

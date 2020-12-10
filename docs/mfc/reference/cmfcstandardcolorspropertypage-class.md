@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCStandardColorsPropertyPage Class"
 title: "CMFCStandardColorsPropertyPage Class"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CMFCStandardColorsPropertyPage class [MFC]"]

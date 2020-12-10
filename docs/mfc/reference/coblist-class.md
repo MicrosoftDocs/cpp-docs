@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CObList Class"
 title: "CObList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CObList", "AFXCOLL/CObList", "AFXCOLL/CObList::CObList", "AFXCOLL/CObList::AddHead", "AFXCOLL/CObList::AddTail", "AFXCOLL/CObList::Find", "AFXCOLL/CObList::FindIndex", "AFXCOLL/CObList::GetAt", "AFXCOLL/CObList::GetCount", "AFXCOLL/CObList::GetHead", "AFXCOLL/CObList::GetHeadPosition", "AFXCOLL/CObList::GetNext", "AFXCOLL/CObList::GetPrev", "AFXCOLL/CObList::GetSize", "AFXCOLL/CObList::GetTail", "AFXCOLL/CObList::GetTailPosition", "AFXCOLL/CObList::InsertAfter", "AFXCOLL/CObList::InsertBefore", "AFXCOLL/CObList::IsEmpty", "AFXCOLL/CObList::RemoveAll", "AFXCOLL/CObList::RemoveAt", "AFXCOLL/CObList::RemoveHead", "AFXCOLL/CObList::RemoveTail", "AFXCOLL/CObList::SetAt"]

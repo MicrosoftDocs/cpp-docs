@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCAcceleratorKeyAssignCtrl Class"
 title: "CMFCAcceleratorKeyAssignCtrl Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CMFCAcceleratorKeyAssignCtrl", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::GetAccel", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::IsFocused", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::IsKeyDefined", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage", "AFXACCELERATORKEYASSIGNCTRL/CMFCAcceleratorKeyAssignCtrl::ResetKey"]

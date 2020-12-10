@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCToolBarComboBoxEdit Class"
 title: "CMFCToolBarComboBoxEdit Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCToolBarComboBoxEdit", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxEdit", "AFXTOOLBARCOMBOBOXBUTTON/CMFCToolBarComboBoxEdit::CMFCToolBarComboBoxEdit"]

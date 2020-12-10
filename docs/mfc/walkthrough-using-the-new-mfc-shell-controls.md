@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Using the New MFC Shell Controls"
 title: "Walkthrough: Using the New MFC Shell Controls"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["shell controls (MFC)"]

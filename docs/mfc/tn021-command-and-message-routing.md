@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN021: Command and Message Routing"
 title: "TN021: Command and Message Routing"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.routing"]

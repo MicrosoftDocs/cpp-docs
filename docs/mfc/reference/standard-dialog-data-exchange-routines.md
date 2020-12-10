@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Standard Dialog Data Exchange Routines"
 title: "Standard Dialog Data Exchange Routines"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["standard dialog, data exchange routines"]

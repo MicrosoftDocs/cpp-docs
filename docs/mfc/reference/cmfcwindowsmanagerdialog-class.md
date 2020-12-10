@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCWindowsManagerDialog Class"
 title: "CMFCWindowsManagerDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCWindowsManagerDialog", "AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog", "AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog::CMFCWindowsManagerDialog"]

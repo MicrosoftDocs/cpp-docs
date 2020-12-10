@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Optimizing Persistence and Initialization"
 title: "Optimizing Persistence and Initialization"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], optimizing", "performance, ActiveX controls", "optimization, ActiveX controls", "optimizing performance, ActiveX controls"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using a Common Control as a Child Window"
 title: "Using a Common Control as a Child Window"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [MFC], using as child windows", "windows [MFC], common controls as", "child windows [MFC], common controls as", "common controls [MFC], child windows", "Windows common controls [MFC], child windows"]

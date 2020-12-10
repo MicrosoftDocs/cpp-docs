@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Relationship Between a C++ Window Object and an HWND"
 title: "Relationship Between a C++ Window Object and an HWND"
 ms.date: "11/19/2018"
 f1_keywords: ["HWND"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CToolTipCtrl to Create and Manipulate a CToolTipCtrl Object"
 title: "Using CToolTipCtrl to Create and Manipulate a CToolTipCtrl Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tool tips [MFC], creating", "CToolTipCtrl class [MFC], using"]

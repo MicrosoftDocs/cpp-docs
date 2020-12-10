@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC DLL Wizard"
 title: "MFC DLL Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.dll.overview"]

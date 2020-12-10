@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using the MFC source files"
 title: "Using the MFC source files"
 ms.date: "08/19/2019"
 helpviewer_keywords: ["public members", "source files", "MFC, source files", "MFC source files", "comments, MFC", "private member access", "protected member access", "source files, MFC"]

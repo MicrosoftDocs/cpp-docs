@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Technical Notes by Number"
 title: "Technical Notes by Number"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.tables.mfc.technotes"]

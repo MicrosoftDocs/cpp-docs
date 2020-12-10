@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE Background"
 title: "OLE Background"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE, about OLE"]
