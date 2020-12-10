@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _umask_s"
 title: "_umask_s"
 ms.date: "4/2/2020"
 api_name: ["_umask_s", "_o__umask_s"]

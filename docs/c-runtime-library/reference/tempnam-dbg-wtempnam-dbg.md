@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _tempnam_dbg, _wtempnam_dbg"
 title: "_tempnam_dbg, _wtempnam_dbg"
 ms.date: "11/04/2016"
 api_name: ["_wtempnam_dbg", "_tempnam_dbg"]

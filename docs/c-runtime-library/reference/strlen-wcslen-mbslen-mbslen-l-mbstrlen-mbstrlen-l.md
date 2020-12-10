@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l"
 title: "strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l"
 ms.date: "4/2/2020"
 api_name: ["_mbslen", "_mbslen_l", "_mbstrlen", "wcslen", "_mbstrlen_l", "strlen", "_o__mbslen", "_o__mbslen_l", "_o__mbstrlen", "_o__mbstrlen_l"]

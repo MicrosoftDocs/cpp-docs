@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l"
 title: "_strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l"
 ms.date: "4/2/2020"
 api_name: ["_strncoll", "_mbsncoll_l", "_wcsncoll", "_wcsncoll_l", "_mbsncoll", "_strncoll_l", "_o__mbsncoll", "_o__mbsncoll_l", "_o__strncoll", "_o__strncoll_l", "_o__wcsncoll", "_o__wcsncoll_l"]

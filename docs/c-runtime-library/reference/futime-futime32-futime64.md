@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _futime, _futime32, _futime64"
 title: "_futime, _futime32, _futime64"
 ms.date: "4/2/2020"
 api_name: ["_futime64", "_futime32", "_futime", "_o__futime32", "_o__futime64"]

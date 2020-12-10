@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Load Unmanaged Resources into a Byte Array"
 title: "How to: Load Unmanaged Resources into a Byte Array"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

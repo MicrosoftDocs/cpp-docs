@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _RTC_GetErrDesc"
 title: "_RTC_GetErrDesc"
 ms.date: "11/04/2016"
 api_name: ["_RTC_GetErrDesc"]

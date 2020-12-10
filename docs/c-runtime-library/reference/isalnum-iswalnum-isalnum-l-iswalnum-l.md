@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isalnum, iswalnum, _isalnum_l, _iswalnum_l"
 title: "isalnum, iswalnum, _isalnum_l, _iswalnum_l"
 ms.date: "4/2/2020"
 api_name: ["_iswalnum_l", "_isalnum_l", "iswalnum", "isalnum", "_o_isalnum", "_o_iswalnum"]

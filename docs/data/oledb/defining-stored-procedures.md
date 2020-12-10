@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Defining Stored Procedures"
 title: "Defining Stored Procedures"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["stored procedures, syntax", "OLE DB, stored procedures", "stored procedures, defining", "stored procedures, OLE DB"]

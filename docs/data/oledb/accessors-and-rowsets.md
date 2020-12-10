@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessors and Rowsets"
 title: "Accessors and Rowsets"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["accessors [C++]", "OLE DB consumer templates, rowset support", "OLE DB consumer templates, accessors", "rowsets [C++], accessing", "bulk rowsets", "CAccessorRowset class, accessor types", "single rowsets", "CArrayRowset class, accessors", "CBulkRowset class, accessors", "array rowsets", "CAccessorBase class", "CRowset class, accessors and rowsets", "accessors [C++], rowsets", "rowsets [C++], supported types"]

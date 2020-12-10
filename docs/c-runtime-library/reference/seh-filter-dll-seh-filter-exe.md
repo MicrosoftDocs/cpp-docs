@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _seh_filter_dll, _seh_filter_exe"
 title: "_seh_filter_dll, _seh_filter_exe"
 ms.date: "4/2/2020"
 api_name: ["_XcptFilter", "_seh_filter_dll", "_seh_filter_exe", "_o__seh_filter_dll", "_o__seh_filter_exe"]

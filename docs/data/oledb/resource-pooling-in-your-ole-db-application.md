@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Pooling in Your OLE DB Application"
 title: "Resource Pooling in Your OLE DB Application"
 ms.date: "10/29/2018"
 helpviewer_keywords: ["OLE DB services [OLE DB], resource pooling", "resource pooling [OLE DB], services", "OLE DB, resource pooling", "OLE DB providers, resource pooling"]

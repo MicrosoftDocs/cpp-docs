@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Source Object Interfaces"
 title: "Data Source Object Interfaces"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["data source objects [C++], interfaces", "data source objects [C++]", "interfaces [C++], OLE DB", "interfaces [C++], list of", "OLE DB provider templates [C++], object interfaces", "OLE DB [C++], interfaces"]

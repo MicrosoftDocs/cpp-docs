@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reflection (C++/CLI)"
 title: "Reflection (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["typeid keyword [C++]", "reflection [C++}, about reflection", "metadata, reflection", "GetType method", ".NET Framework [C++], reflection", "data types [C++], reflection", "reflection [C++}", "plug-ins [C++]", "reflection [C++}, plug-ins", "assemblies [C++], enumerating data types in", "public types [C++]", "reflection [C++], external assemblies", "assemblies [C++]", "data types [C++], enumerating", "public members [C++]"]

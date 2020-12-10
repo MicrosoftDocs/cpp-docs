@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: signal Constants"
 title: "signal Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["SIGTERM", "SIGFPE", "SIGABRT", "SIGILL", "SIGINT", "SIGSEGV"]

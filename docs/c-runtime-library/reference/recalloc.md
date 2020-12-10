@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _recalloc"
 title: "_recalloc"
 ms.date: "4/2/2020"
 api_name: ["_recalloc", "_o__recalloc"]

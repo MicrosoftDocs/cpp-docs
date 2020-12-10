@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Bookmarks and Absolute Positions (ODBC)"
 title: "Recordset: Bookmarks and Absolute Positions (ODBC)"
 ms.date: "11/04/2016"
 f1_keywords: ["SetAbsolutePosition"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Passing OLE DB Conformance Tests"
 title: "Passing OLE DB Conformance Tests"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "conformance testing", "conformance testing [OLE DB]", "OLE DB providers, testing"]

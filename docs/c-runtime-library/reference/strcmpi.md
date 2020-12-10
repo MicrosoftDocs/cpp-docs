@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strcmpi"
 title: "strcmpi"
 ms.date: "12/16/2019"
 api_name: ["_strcmpi", "strcmpi"]

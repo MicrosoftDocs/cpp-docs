@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ispunct, iswpunct, _ispunct_l, _iswpunct_l"
 title: "ispunct, iswpunct, _ispunct_l, _iswpunct_l"
 ms.date: "4/2/2020"
 api_name: ["ispunct", "_iswpunct_l", "iswpunct", "_ispunct_l", "_o_ispunct", "_o_iswpunct"]

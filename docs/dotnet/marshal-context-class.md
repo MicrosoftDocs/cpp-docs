@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: marshal_context Class"
 title: "marshal_context Class"
 ms.date: "01/16/2019"
 ms.topic: "reference"

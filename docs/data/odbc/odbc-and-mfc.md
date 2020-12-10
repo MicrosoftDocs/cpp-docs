@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ODBC and MFC"
 title: "ODBC and MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC [C++], MFC", "connections [C++], databases", "connections [C++], data source", "databases [C++], connecting to", "data sources [C++], connecting to", "MFC [C++], ODBC and", "database connections [C++], MFC ODBC classes"]

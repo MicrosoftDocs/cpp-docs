@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: queue (STL/CLR)"
 title: "queue (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

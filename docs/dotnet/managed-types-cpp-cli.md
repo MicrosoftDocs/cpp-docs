@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Managed Types (C++/CLI)"
 title: "Managed Types (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data types [C++], managed", "managed data types [C++]", ".NET Framework [C++], managed types", "data types [C++], .NET feature access", "main function, in managed applications", "managed code, main() function", ".NET Framework [C++], C++ equivalents", "__nogc type declarations", "__value keyword, issues when nesting", "equality, testing for", "versioning, diagnosing conflicts", "versioning", "exceptions, diagnosing odd behavior", "compatibility, between assemblies"]

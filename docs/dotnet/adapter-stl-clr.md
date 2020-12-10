@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: adapter (STL/CLR)"
 title: "adapter (STL/CLR)"
 ms.date: "06/15/2018"
 ms.topic: "reference"

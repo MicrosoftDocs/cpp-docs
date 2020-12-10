@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: User Records"
 title: "User Records"
 ms.date: "05/09/2019"
 f1_keywords: ["COLUMN_ENTRY_MAP"]

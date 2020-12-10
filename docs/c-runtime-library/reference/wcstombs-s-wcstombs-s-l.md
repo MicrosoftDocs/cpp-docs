@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: wcstombs_s, _wcstombs_s_l"
 title: "wcstombs_s, _wcstombs_s_l"
 ms.date: "4/2/2020"
 api_name: ["_wcstombs_s_l", "wcstombs_s", "_o__wcstombs_s_l", "_o_wcstombs_s"]

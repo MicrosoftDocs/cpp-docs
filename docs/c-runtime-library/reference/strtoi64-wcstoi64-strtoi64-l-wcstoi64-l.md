@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l"
 title: "_strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l"
 ms.date: "4/2/2020"
 api_name: ["_strtoi64", "_strtoi64_l", "_wcstoi64_l", "_wcstoi64", "_o__strtoi64", "_o__strtoi64_l", "_o__wcstoi64", "_o__wcstoi64_l"]

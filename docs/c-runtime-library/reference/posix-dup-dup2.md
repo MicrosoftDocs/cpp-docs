@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: dup, dup2"
 title: "dup, dup2"
 ms.date: "12/16/2019"
 api_name: ["dup2", "dup"]

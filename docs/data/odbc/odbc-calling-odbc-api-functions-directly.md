@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ODBC: Calling ODBC API Functions Directly"
 title: "ODBC: Calling ODBC API Functions Directly"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC API functions [C++], calling", "ODBC [C++], catalog functions", "ODBC API functions [C++]", "APIs [C++], calling", "ODBC classes [C++], vs. ODBC API", "direct ODBC API calls", "catalog functions (ODBC)", "catalog functions (ODBC), calling", "ODBC [C++], API functions"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strtoll, _strtoll_l, wcstoll, _wcstoll_l"
 title: "strtoll, _strtoll_l, wcstoll, _wcstoll_l"
 ms.date: "4/2/2020"
 api_name: ["strtoll", "wcstoll", "_strtoll_l", "_wcstoll_l", "_o__strtoll_l", "_o__wcstoll_l", "_o_strtoll", "_o_wcstoll"]

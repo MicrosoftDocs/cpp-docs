@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Access Using ADO.NET (C++/CLI)"
 title: "Data Access Using ADO.NET (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ADO.NET [C++]", ".NET Framework [C++], data access", "databases [C++], accessing in C++", "data access [C++], ADO.NET", "data [C++], ADO.NET", "native strings [C++]", "ADO.NET [C++], marshaling ANSI strings", "strings [C++], ADO.NET", "BSTRs, strings", "ADO.NET [C++], marshaling BSTR strings", "strings [C++], marshaling BSTR strings", "ADO.NET [C++], marshaling Unicode strings", "Unicode [C++], strings", "strings [C++], Unicode", "VARIANT, marshaling", "ADO.NET [C++], marshaling VARIANT types", "VARIANT", "SAFEARRAY, marshaling", "ADO.NET [C++], marshaling SAFEARRAY types"]

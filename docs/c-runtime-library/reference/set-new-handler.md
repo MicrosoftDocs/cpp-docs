@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _set_new_handler"
 title: "_set_new_handler"
 ms.date: "4/2/2020"
 api_name: ["_set_new_handler", "_o__set_new_handler"]

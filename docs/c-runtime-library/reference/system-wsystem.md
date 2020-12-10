@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: system, _wsystem"
 title: "system, _wsystem"
 ms.date: "4/2/2020"
 api_name: ["system", "_wsystem", "_o__wsystem", "_o_system"]

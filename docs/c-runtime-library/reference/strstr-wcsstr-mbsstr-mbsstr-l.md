@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strstr, wcsstr, _mbsstr, _mbsstr_l"
 title: "strstr, wcsstr, _mbsstr, _mbsstr_l"
 ms.date: "4/2/2020"
 api_name: ["_mbsstr", "wcsstr", "_mbsstr_l", "strstr", "_o__mbsstr", "_o__mbsstr_l"]

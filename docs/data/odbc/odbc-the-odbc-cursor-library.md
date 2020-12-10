@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ODBC: The ODBC Cursor Library"
 title: "ODBC: The ODBC Cursor Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["cursor library [ODBC]", "snapshots, support in ODBC", "timestamps, ODBC timestamp columns", "ODBC cursor library [ODBC]", "static cursors", "ODBC drivers, Level 1", "ODBC drivers, cursor support", "positioned updates", "cursors, ODBC cursor library", "Level 1 ODBC drivers", "cursor library [ODBC], snapshots", "ODBC, timestamp", "positioning cursors"]

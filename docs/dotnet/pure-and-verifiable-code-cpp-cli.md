@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Pure and verifiable code (C++/CLI)"
 title: "Pure and Verifiable Code (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["/clr compiler option [C++], verifiable assemblies", "/clr compiler option [C++], mixed assemblies", "pure MSIL [C++]", "verifiable assemblies [C++]", "verifiably type-safe code [C++]", "/clr compiler option [C++], pure assemblies", ".NET Framework [C++], pure and verifiable code", "assemblies [C++], mixed code", "verifiable assemblies [C++], about verifiable assemblies", "mixed assemblies [C++], about mixed assemblies", "pure MSIL [C++], about pure code", "assemblies [C++], verifiable code", "mixed assemblies [C++]", "assemblies [C++], pure code"]

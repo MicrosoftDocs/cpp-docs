@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_current_locale"
 title: "_get_current_locale"
 ms.date: "11/04/2016"
 api_name: ["_get_current_locale"]

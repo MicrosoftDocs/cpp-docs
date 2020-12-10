@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Requerying a Recordset (ODBC)"
 title: "Recordset: Requerying a Recordset (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["recordsets, requerying", "requerying recordsets", "Requery method", "ODBC recordsets, requerying", "refreshing recordsets"]

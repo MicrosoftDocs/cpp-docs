@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _getcwd_dbg, _wgetcwd_dbg"
 title: "_getcwd_dbg, _wgetcwd_dbg"
 ms.date: "11/04/2016"
 api_name: ["_wgetcwd_dbg", "_getcwd_dbg"]

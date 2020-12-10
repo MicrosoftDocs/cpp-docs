@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Snapshot"
 title: "Snapshot"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC cursor library [ODBC], snapshots", "cursors [ODBC], static", "recordsets, snapshots", "snapshots, support in ODBC", "static cursors", "ODBC recordsets, snapshots", "cursor library [ODBC], snapshots", "snapshots"]

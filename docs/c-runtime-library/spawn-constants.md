@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: spawn Constants"
 title: "spawn Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["_P_NOWAIT", "_P_OVERLAY", "_P_WAIT", "_P_DETACH", "_P_NOWAITO"]

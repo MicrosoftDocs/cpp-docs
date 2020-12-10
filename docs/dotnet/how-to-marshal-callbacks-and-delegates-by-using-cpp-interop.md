@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Marshal Callbacks and Delegates By Using C++ Interop"
 title: "How to: Marshal Callbacks and Delegates By Using C++ Interop"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

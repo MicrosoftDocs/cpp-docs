@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: setvbuf Constants"
 title: "setvbuf Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["_IOFBF", "_IONBF", "_IOLBF"]

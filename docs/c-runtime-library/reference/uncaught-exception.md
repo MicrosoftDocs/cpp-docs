@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __uncaught_exception"
 title: "__uncaught_exception"
 ms.date: "11/04/2016"
 api_name: ["__uncaught_exception"]

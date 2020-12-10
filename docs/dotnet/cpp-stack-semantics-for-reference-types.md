@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ Stack Semantics for Reference Types"
 title: "C++ Stack Semantics for Reference Types"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["reference types, C++ stack semantics for"]

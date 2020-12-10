@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISessionPropertiesImpl Class"
 title: "ISessionPropertiesImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ISessionPropertiesImpl", "ISessionPropertiesImpl::GetProperties", "ISessionPropertiesImpl.GetProperties", "ISessionPropertiesImpl.SetProperties", "ISessionPropertiesImpl::SetProperties"]

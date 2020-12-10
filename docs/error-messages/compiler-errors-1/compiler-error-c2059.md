@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2059"
 title: "Compiler Error C2059"
 ms.date: "03/26/2019"
 f1_keywords: ["C2059"]

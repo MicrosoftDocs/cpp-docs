@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Call Native DLLs from Managed Code Using PInvoke"
 title: "How to: Call Native DLLs from Managed Code Using PInvoke"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

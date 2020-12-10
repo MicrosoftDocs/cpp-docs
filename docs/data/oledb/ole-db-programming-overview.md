@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Programming Overview"
 title: "OLE DB Programming Overview"
 ms.date: "10/22/2018"
 helpviewer_keywords: ["Universal Data Access", "OLE DB, about OLE DB"]

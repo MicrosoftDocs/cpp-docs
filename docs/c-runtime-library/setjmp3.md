@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _setjmp3"
 title: "_setjmp3"
 ms.date: "11/04/2016"
 api_name: ["_setjmp3"]

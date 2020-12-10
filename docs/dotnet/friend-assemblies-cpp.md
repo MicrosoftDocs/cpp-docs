@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Friend Assemblies (C++)"
 title: "Friend Assemblies (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["friend assemblies, Visual C++"]

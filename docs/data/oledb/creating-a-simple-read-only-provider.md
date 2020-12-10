@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a Simple Read-Only Provider"
 title: "Creating a Simple Read-Only Provider"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB providers, creating", "OLE DB provider templates, creating providers"]

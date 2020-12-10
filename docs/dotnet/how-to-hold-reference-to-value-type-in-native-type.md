@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Hold Reference to Value Type in Native Type"
 title: "How to: Hold Reference to Value Type in Native Type"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

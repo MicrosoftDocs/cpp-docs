@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Command Object Interfaces"
 title: "Command Object Interfaces"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["command object interfaces [C++]", "command objects [OLE DB]", "OLE DB [C++], command object interfaces"]

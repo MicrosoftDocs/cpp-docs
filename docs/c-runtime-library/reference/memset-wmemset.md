@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: memset, wmemset"
 title: "memset, wmemset"
 ms.date: "11/04/2016"
 api_name: ["wmemset", "memset"]

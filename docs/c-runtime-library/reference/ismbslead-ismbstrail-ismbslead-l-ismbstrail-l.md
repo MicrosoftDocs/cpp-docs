@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l"
 title: "_ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l"
 ms.date: "4/2/2020"
 api_name: ["_ismbstrail", "_ismbslead_l", "_ismbslead", "_ismbstrail_l", "_o__ismbslead", "_o__ismbslead_l", "_o__ismbstrail", "_o__ismbstrail_l"]

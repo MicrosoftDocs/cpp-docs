@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WCHAR_MAX"
 title: "WCHAR_MAX"
 ms.date: "11/04/2016"
 f1_keywords: ["WCHAR_MAX"]

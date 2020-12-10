@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mbsnbcmp, _mbsnbcmp_l"
 title: "_mbsnbcmp, _mbsnbcmp_l"
 ms.date: "4/2/2020"
 api_name: ["_mbsnbcmp", "_mbsnbcmp_l", "_o__mbsnbcmp", "_o__mbsnbcmp_l"]

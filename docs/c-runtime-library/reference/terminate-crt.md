@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: terminate (CRT)"
 title: "terminate (CRT)"
 ms.date: "4/2/2020"
 api_name: ["terminate", "_o_terminate"]

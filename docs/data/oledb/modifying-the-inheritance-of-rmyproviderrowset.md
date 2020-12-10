@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Modifying the Inheritance of RCustomRowset"
 title: "Modifying the Inheritance of RCustomRowset"
 ms.date: "10/26/2018"
 helpviewer_keywords: ["RMyProviderRowset", "inheritance [C++]", "RCustomRowset"]

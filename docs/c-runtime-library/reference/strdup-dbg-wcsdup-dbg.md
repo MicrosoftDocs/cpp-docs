@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strdup_dbg, _wcsdup_dbg"
 title: "_strdup_dbg, _wcsdup_dbg"
 ms.date: "11/04/2016"
 api_name: ["_strdup_dbg", "_wcsdup_dbg"]

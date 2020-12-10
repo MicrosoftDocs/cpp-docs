@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Testing Your Provider"
 title: "Testing Your Provider"
 ms.date: "10/29/2018"
 helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "OLE DB providers, testing"]

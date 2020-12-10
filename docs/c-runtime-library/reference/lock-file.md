@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _lock_file"
 title: "_lock_file"
 ms.date: "4/2/2020"
 api_name: ["_lock_file", "_o__lock_file"]

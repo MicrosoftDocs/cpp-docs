@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __min"
 title: "__min"
 ms.date: "04/05/2018"
 api_name: ["__min"]
