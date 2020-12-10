@@ -1,5 +1,4 @@
 ---
-description: "Learn more about: How to: Create CLR Console Applications (C++/CLI)"
 title: "How to: Create CLR Console Applications (C++/CLI)"
 description: "Learn how to create CLR Console App projects to use C++/CLI in Visual Studio."
 ms.date: 12/08/2020
