@@ -1,7 +1,7 @@
 ---
 title: "Configure CMake debugging sessions in Visual Studio"
 description: "Describes how to use Visual Studio to configure CMake debugger settings."
-ms.date: "04/02/2020"
+ms.date: "12/07/2020"
 helpviewer_keywords: ["CMake debugging"]
 ---
 # Configure CMake debugging sessions
@@ -105,6 +105,8 @@ In Visual Studio 2019 version 16.6, we added a new debug configuration of `type:
 #### Additional options allowed with the `gdbserver` configuration (16.7 or later)
 
 - `program`: Defaults to `"${debugInfo.fullTargetPath}"`. The Unix path to the application to debug. Only required if different than the target executable in the build or deploy location.
+> [!TIP]
+> Deploy is not yet supported for local cross-compilation scenarios. If you are cross-compiling on Windows (for example, using a cross-compiler on Windows to build a Linux ARM executable) then you'll need to manually copy the binary to the location specified by `program` on the remote ARM machine before debugging.
 - `remoteMachineName`:  Defaults to `"${debugInfo.remoteMachineName}"`. Name of the remote system that hosts the program to debug. Only required if different than the build system. Must have an existing entry in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md). Press **Ctrl+Space** to view a list of all existing remote connections.
 - `cwd`: Defaults to `"${debugInfo.defaultWorkingDirectory}"`. Full Unix path to the directory on the remote system where `program` is run. The directory must exist.
 - `gdbPath`: Defaults to `${debugInfo.vsInstalledGdb}`. Full Windows path to the `gdb` used to debug. Defaults to the `gdb` installed with the Linux development with C/C++ workload.

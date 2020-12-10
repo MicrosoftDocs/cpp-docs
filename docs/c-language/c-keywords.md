@@ -1,9 +1,8 @@
 ---
 title: "C Keywords"
 description: "Keywords in Standard C and Microsoft C compiler extensions."
-ms.date: 10/30/2020
+ms.date: "12/8/2020"
 helpviewer_keywords: ["keywords [C]", "redefining keywords", "Microsoft-specific keywords"]
-ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
 ---
 # C Keywords
 
@@ -60,7 +59,7 @@ The C language uses the following keywords:
         **`_Atomic`** <sup>2, b</sup>\
         **`_Bool`** <sup>1, a</sup>\
         **`_Complex`** <sup>1, b</sup>\
-        **`_Generic`** <sup>2, a</sup>\
+        **[`_Generic`](generic_selection.md)** <sup>2, a</sup>\
         **`_Imaginary`** <sup>1, b</sup>\
         **`_Noreturn`** <sup>2, a</sup>\
         **`_Static_assert`** <sup>2, a</sup>\
