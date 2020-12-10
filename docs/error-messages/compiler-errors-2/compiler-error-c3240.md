@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3240"
 title: "Compiler Error C3240"
 ms.date: "11/04/2016"
 f1_keywords: ["C3240"]

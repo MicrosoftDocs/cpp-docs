@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3276"
 title: "Compiler Error C3276"
 ms.date: "11/04/2016"
 f1_keywords: ["C3276"]

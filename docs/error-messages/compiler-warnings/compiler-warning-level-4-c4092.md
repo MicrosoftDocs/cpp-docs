@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4092"
 title: "Compiler Warning (level 4) C4092"
 ms.date: "11/04/2016"
 f1_keywords: ["C4092"]

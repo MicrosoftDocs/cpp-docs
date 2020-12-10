@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3409"
 title: "Compiler Error C3409"
 ms.date: "11/06/2018"
 f1_keywords: ["C3409"]
