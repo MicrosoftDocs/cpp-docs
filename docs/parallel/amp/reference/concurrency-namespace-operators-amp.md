@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency namespace operators (AMP)"
 title: "Concurrency namespace operators (AMP)"
 ms.date: "11/04/2016"
 ms.assetid: 77f1ae17-1eb2-480d-8fe5-66d4c24bb91e

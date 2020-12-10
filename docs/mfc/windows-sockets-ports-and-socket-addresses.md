@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets: Ports and Socket Addresses"
 title: "Windows Sockets: Ports and Socket Addresses"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ports [MFC], definition", "Windows Sockets [MFC], ports", "Windows Sockets [MFC], addresses", "ports [MFC]", "addresses [MFC], socket", "sockets [MFC], addresses", "sockets [MFC], ports"]

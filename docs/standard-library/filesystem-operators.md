@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;filesystem&gt; operators"
 title: "&lt;filesystem&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["FILESYSTEM/std::experimental::filesystem::operator==", "FILESYSTEM/std::experimental::filesystem::operator!=", "FILESYSTEM/std::experimental::filesystem::operator<", "FILESYSTEM/std::experimental::filesystem::operator<=", "FILESYSTEM/std::experimental::filesystem::operator>", "FILESYSTEM/std::experimental::filesystem::operator>=", "FILESYSTEM/std::experimental::filesystem::operator/", "FILESYSTEM/std::experimental::filesystem::operator<<", "FILESYSTEM/std::experimental::filesystem::operator>>"]

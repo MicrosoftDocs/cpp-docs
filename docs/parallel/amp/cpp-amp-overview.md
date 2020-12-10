@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ AMP Overview"
 title: "C++ AMP Overview"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["C++ Accelerated Massive Parallelism, requirements", "C++ Accelerated Massive Parallelism, architecture", "C++ AMP", "C++ Accelerated Massive Parallelism, overview", "C++ Accelerated Massive Parallelism"]

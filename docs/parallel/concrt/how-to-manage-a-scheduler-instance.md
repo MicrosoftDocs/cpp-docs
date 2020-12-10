@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Manage a Scheduler Instance"
 title: "How to: Manage a Scheduler Instance"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["managing a scheduler instance [Concurrency Runtime]", "scheduler instances, managing [Concurrency Runtime]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Input Streams"
 title: "Input Streams"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["reading data [C++], from input streams", "data [C++], reading from input stream", "input streams", "input stream objects"]

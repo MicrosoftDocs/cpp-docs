@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multithreading: MFC Programming Tips"
 title: "Multithreading: MFC Programming Tips"
 ms.date: "08/27/2018"
 helpviewer_keywords: ["multithreading [C++], programming tips", "handle maps [C++]", "access control [C++], multithreading", "objects [C++], multiple threads and", "non-MFC threads [C++]", "threading [MFC], programming tips", "critical sections [C++]", "synchronization [C++], multithreading", "programming [C++], multithreaded", "communications [C++], between threads", "threading [C++], best practices", "troubleshooting [C++], multithreading", "Windows handle maps [C++]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;allocators&gt;"
 title: "&lt;allocators&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<allocators>"]

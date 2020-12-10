@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;scoped_allocator&gt; operators"
 title: "&lt;scoped_allocator&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["scoped_allocator/std::operator!=", "scoped_allocator/std::operator=="]

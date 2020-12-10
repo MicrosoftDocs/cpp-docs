@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ Program Startup and Termination"
 title: "C++ Program Startup and Termination"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["C++ Standard Library, program startup and termination", "terminating execution", "Function Main procedures", "control text streams", "startup code, and C++ program termination", "main function, program startup"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;future&gt; functions"
 title: "&lt;future&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["future/std::async", "future/std::future_category", "future/std::make_error_code", "future/std::make_error_condition", "future/std::swap"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: invalid_multiple_scheduling Class"
 title: "invalid_multiple_scheduling Class"
 ms.date: "11/04/2016"
 f1_keywords: ["invalid_multiple_scheduling", "CONCRT/concurrency::invalid_multiple_scheduling", "CONCRT/concurrency::invalid_multiple_scheduling::invalid_multiple_scheduling"]

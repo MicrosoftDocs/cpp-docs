@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: nothrow_t Structure"
 title: "nothrow_t Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["nothrow_t"]

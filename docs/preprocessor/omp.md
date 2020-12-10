@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: omp pragma"
 title: "omp pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.omp", "omp_CPP"]

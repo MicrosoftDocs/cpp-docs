@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WinInet Basics"
 title: "WinInet Basics"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OnStatusCallback method [MFC]", "WinInet classes [MFC], displaying progress", "WinInet classes [MFC], about WinInet classes"]

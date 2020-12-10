@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: exponential_distribution Class"
 title: "exponential_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::exponential_distribution", "random/std::exponential_distribution::reset", "random/std::exponential_distribution::lambda", "random/std::exponential_distribution::param", "random/std::exponential_distribution::min", "random/std::exponential_distribution::max", "random/std::exponential_distribution::operator()", "random/std::exponential_distribution::param_type", "random/std::exponential_distribution::param_type::lambda", "random/std::exponential_distribution::param_type::operator==", "random/std::exponential_distribution::param_type::operator!="]

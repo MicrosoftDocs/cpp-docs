@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: istreambuf_iterator Class"
 title: "istreambuf_iterator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["streambuf/std::istreambuf_iterator", "iterator/std::istreambuf_iterator::char_type", "iterator/std::istreambuf_iterator::int_type", "iterator/std::istreambuf_iterator::istream_type", "iterator/std::istreambuf_iterator::streambuf_type", "iterator/std::istreambuf_iterator::traits_type", "iterator/std::istreambuf_iterator::equal"]

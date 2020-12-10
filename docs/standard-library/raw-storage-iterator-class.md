@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: raw_storage_iterator Class"
 title: "raw_storage_iterator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::raw_storage_iterator", "memory/std::raw_storage_iterator::element_type", "memory/std::raw_storage_iterator::iter_type"]

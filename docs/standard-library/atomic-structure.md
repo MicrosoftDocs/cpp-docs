@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: atomic Structure"
 title: "atomic Structure"
 ms.date: "04/20/2018"
 f1_keywords: ["atomic/std::atomic"]

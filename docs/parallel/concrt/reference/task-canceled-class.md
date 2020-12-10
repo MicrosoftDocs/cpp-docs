@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: task_canceled Class"
 title: "task_canceled Class"
 ms.date: "11/04/2016"
 f1_keywords: ["task_canceled", "CONCRT/concurrency::task_canceled", "CONCRT/concurrency::task_canceled::task_canceled"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: invalid_argument Class"
 title: "invalid_argument Class"
 ms.date: "11/04/2016"
 f1_keywords: ["stdexcept/std::invalid_argument"]

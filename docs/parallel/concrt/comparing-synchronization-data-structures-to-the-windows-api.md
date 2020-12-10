@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comparing Synchronization Data Structures to the Windows API"
 title: "Comparing Synchronization Data Structures to the Windows API"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["synchronization data structures, compared to Windows API", "event class, example"]

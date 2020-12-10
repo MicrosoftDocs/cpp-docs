@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::size_type"
 title: "Container Class::size_type"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["size_type typedef"]

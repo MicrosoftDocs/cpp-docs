@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ScheduleGroup Class"
 title: "ScheduleGroup Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ScheduleGroup", "CONCRT/concurrency::ScheduleGroup", "CONCRT/concurrency::ScheduleGroup::Id", "CONCRT/concurrency::ScheduleGroup::Reference", "CONCRT/concurrency::ScheduleGroup::Release", "CONCRT/concurrency::ScheduleGroup::ScheduleTask"]

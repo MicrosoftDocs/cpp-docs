@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: messages Class"
 title: "messages Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocmes/std::messages", "xlocmes/std::messages::char_type", "xlocmes/std::messages::string_type", "xlocmes/std::messages::close", "xlocmes/std::messages::do_close", "xlocmes/std::messages::do_get", "xlocmes/std::messages::do_open", "xlocmes/std::messages::get", "xlocmes/std::messages::open"]

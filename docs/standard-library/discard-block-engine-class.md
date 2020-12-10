@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: discard_block_engine Class"
 title: "discard_block_engine Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::discard_block_engine"]

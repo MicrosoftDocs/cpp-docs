@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: char_traits&lt;char32_t&gt; Struct"
 title: "char_traits&lt;char32_t&gt; Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["iosfwd/std::char_traits<char_32t>", "char_traits<char32_t>"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;exception&gt;"
 title: "&lt;exception&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<exception>"]

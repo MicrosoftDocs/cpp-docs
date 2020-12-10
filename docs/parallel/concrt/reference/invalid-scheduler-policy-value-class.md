@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: invalid_scheduler_policy_value Class"
 title: "invalid_scheduler_policy_value Class"
 ms.date: "11/04/2016"
 f1_keywords: ["concrt/concurrency::invalid_scheduler_policy_value"]

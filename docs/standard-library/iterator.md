@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;iterator&gt;"
 title: "&lt;iterator&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<iterator>", "iterator/std::<iterator>"]

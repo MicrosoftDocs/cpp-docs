@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: max_variable_size Class"
 title: "max_variable_size Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::max_variable_size", "allocators/stdext::max_variable_size::allocated", "allocators/stdext::max_variable_size::deallocated", "allocators/stdext::max_variable_size::full", "allocators/stdext::max_variable_size::released", "allocators/stdext::max_variable_size::saved"]

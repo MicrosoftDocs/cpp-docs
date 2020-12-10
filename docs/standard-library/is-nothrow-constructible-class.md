@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_nothrow_constructible Class"
 title: "is_nothrow_constructible Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_nothrow_constructible"]

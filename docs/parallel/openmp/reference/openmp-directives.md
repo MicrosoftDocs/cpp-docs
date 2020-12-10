@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OpenMP Directives"
 title: "OpenMP Directives"
 ms.date: "03/20/2019"
 f1_keywords: ["OpenMP directives", "atomic", "barrier", "critical", "flush", "for", "master", "parallel", "section", "single", "threadprivate"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: default_delete Struct"
 title: "default_delete Struct"
 ms.date: "04/04/2019"
 f1_keywords: ["memory/std::default_delete"]

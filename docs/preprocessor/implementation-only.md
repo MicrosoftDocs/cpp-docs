@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: implementation_only import attribute"
 title: "implementation_only import attribute"
 ms.date: "08/29/2019"
 f1_keywords: ["implementation_only"]

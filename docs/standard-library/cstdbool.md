@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cstdbool&gt;"
 title: "&lt;cstdbool&gt;"
 ms.date: "07/11/2019"
 f1_keywords: ["<cstdbool>", "cstdbool"]

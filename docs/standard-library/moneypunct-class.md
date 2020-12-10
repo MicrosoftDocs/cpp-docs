@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: moneypunct Class"
 title: "moneypunct Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocmon/std::moneypunct", "xlocmon/std::moneypunct::char_type", "xlocmon/std::moneypunct::string_type", "xlocmon/std::moneypunct::curr_symbol", "xlocmon/std::moneypunct::decimal_point", "xlocmon/std::moneypunct::do_curr_symbol", "xlocmon/std::moneypunct::do_decimal_point", "xlocmon/std::moneypunct::do_frac_digits", "xlocmon/std::moneypunct::do_grouping", "xlocmon/std::moneypunct::do_neg_format", "xlocmon/std::moneypunct::do_negative_sign", "xlocmon/std::moneypunct::do_pos_format", "xlocmon/std::moneypunct::do_positive_sign", "xlocmon/std::moneypunct::do_thousands_sep", "xlocmon/std::moneypunct::frac_digits", "xlocmon/std::moneypunct::grouping", "xlocmon/std::moneypunct::neg_format", "xlocmon/std::moneypunct::negative_sign", "xlocmon/std::moneypunct::pos_format", "xlocmon/std::moneypunct::positive_sign", "xlocmon/std::moneypunct::thousands_sep"]

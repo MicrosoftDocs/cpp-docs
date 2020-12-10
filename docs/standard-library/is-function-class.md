@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_function Class"
 title: "is_function Class"
 ms.date: "02/21/2019"
 f1_keywords: ["type_traits/std::is_function"]

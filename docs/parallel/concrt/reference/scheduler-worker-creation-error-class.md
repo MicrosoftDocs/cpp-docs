@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: scheduler_worker_creation_error Class"
 title: "scheduler_worker_creation_error Class"
 ms.date: "11/04/2016"
 f1_keywords: ["scheduler_worker_creation_error", "CONCRT/concurrency::scheduler_worker_creation_error", "CONCRT/concurrency::scheduler_worker_creation_error::scheduler_worker_creation_error"]

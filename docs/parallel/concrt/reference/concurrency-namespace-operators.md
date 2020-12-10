@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: concurrency namespace Operators"
 title: "concurrency namespace Operators"
 ms.date: "11/04/2016"
 f1_keywords: ["concrt/concurrency::operator!=", "concrt/concurrency:[operator&amp;&amp"]

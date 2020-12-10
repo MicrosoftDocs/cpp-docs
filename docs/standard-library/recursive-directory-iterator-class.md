@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: recursive_directory_iterator Class"
 title: "recursive_directory_iterator Class"
 ms.date: "09/10/2018"
 f1_keywords: ["filesystem/std::tr2::sys::recursive_directory_iterator"]

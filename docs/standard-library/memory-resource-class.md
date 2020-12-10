@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: memory_resource Class"
 title: "memory_resource Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory_resource/std::memory_resource"]

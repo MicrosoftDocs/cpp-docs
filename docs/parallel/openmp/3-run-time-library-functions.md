@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 3. Run-time library functions"
 title: "3. Run-time library functions"
 ms.date: "05/13/2019"
 ms.assetid: b226e512-6822-4cbe-a2ca-74cc2bb7e880

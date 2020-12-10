@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::max_size"
 title: "Container Class::max_size"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["max_size method"]

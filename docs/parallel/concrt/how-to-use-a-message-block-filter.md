@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use a Message Block Filter"
 title: "How to: Use a Message Block Filter"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message-block filters, using [Concurrency Runtime]", "using message-block filters [Concurrency Runtime]"]

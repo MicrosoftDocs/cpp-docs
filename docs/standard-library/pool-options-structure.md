@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: pool_options Structure"
 title: "pool_options Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["memory_resource/std::pool_options"]

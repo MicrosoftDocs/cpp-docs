@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;regex&gt; operators"
 title: "&lt;regex&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["regex/std::operator!=", "regex/std::operator>", "regex/std::operator>=", "regex/std::operator<", "regex/std::operator<=", "regex/std::operator==", "regex/std::operator<<"]

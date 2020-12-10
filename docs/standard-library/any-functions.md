@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;any&gt; functions"
 title: "&lt;any&gt; functions"
 ms.date: "04/04/2019"
 f1_keywords: ["any/std::any_cast", "any/std::make_any", "any/std::swap"]

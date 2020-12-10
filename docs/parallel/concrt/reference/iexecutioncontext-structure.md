@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IExecutionContext Structure"
 title: "IExecutionContext Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["IExecutionContext", "CONCRTRM/concurrency::IExecutionContext", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::Dispatch", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetId", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetProxy", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetScheduler", "CONCRTRM/concurrency::IExecutionContext::IExecutionContext::SetProxy"]

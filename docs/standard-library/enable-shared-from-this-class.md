@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: enable_shared_from_this Class"
 title: "enable_shared_from_this Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::enable_shared_from_this"]

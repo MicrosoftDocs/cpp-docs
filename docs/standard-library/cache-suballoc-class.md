@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cache_suballoc Class"
 title: "cache_suballoc Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::cache_suballoc", "allocators/stdext::cache_suballoc::allocate", "allocators/stdext::cache_suballoc::deallocate"]

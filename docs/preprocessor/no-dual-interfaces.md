@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: no_dual_interfaces import attribute"
 title: "no_dual_interfaces import attribute"
 ms.date: "08/29/2019"
 f1_keywords: ["no_dual_interfaces"]

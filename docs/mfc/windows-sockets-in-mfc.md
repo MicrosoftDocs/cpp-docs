@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets in MFC"
 title: "Windows Sockets in MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["WINSOCK.DLL", "sockets [MFC], programming models", "MFC, Windows Sockets", "Windows Sockets [MFC], MFC support", "Windows Sockets [MFC], programming models", "WSOCK32.DLL", "sockets [MFC], MFC"]

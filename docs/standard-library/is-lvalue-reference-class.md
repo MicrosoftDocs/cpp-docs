@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_lvalue_reference Class"
 title: "is_lvalue_reference Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_lvalue_reference"]

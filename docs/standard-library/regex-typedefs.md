@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;regex&gt; typedefs"
 title: "&lt;regex&gt; typedefs"
 ms.date: "11/04/2016"
 f1_keywords: ["regex/std::cmatch", "regex/std::cregex_iterator", "regex/std::cregex_token_iterator", "regex/std::csub_match", "regex/std::regex", "regex/std::smatch", "regex/std::sregex_iterator", "regex/std::sregex_token_iterator", "regex/std::ssub_match", "regex/std::wcmatch", "regex/std::wcregex_iterator", "regex/std::wcregex_token_iterator", "regex/std::wcsub_match", "regex/std::wregex", "regex/std::wsmatch", "regex/std::wsregex_iterator", "regex/std::wsregex_token_iterator", "regex/std::wssub_match"]

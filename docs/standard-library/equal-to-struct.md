@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: equal_to Struct"
 title: "equal_to Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::equal_to"]

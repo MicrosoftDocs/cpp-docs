@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: array Class (C++ Standard Library)"
 title: "array Class (C++ Standard Library)| Microsoft Docs"
 ms.date: "11/13/2019"
 f1_keywords: ["array/std::array", "array/std::array::const_iterator", "array/std::array::const_pointer", "array/std::array::const_reference", "array/std::array::const_reverse_iterator", "array/std::array::difference_type", "array/std::array::iterator", "array/std::array::pointer", "array/std::array::reference", "array/std::array::reverse_iterator", "array/std::array::size_type", "array/std::array::value_type", "array/std::array::assign", "array/std::array::at", "array/std::array::back", "array/std::array::begin", "array/std::array::cbegin", "array/std::array::cend", "array/std::array::crbegin", "array/std::array::crend", "array/std::array::data", "array/std::array::empty", "array/std::array::end", "array/std::array::fill", "array/std::array::front", "array/std::array::max_size", "array/std::array::rbegin", "array/std::array::rend", "array/std::array::size", "array/std::array::swap", "array/std::array::operator=", "array/std::array::operator[]"]

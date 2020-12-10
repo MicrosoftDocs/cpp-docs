@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;algorithm&gt;"
 title: "&lt;algorithm&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<algorithm>"]

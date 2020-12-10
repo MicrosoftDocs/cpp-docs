@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency::fast_math Namespace"
 title: "Concurrency::fast_math Namespace"
 ms.date: "11/04/2016"
 f1_keywords: ["amp_math/Concurrency::fast_math"]

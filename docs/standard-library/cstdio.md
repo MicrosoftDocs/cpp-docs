@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cstdio&gt;"
 title: "&lt;cstdio&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<cstdio>"]

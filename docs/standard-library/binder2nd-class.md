@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: binder2nd Class"
 title: "binder2nd Class"
 ms.date: "02/21/2019"
 f1_keywords: ["functional/std::binder2nd"]

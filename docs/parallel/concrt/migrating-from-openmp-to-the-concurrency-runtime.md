@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Migrating from OpenMP to the Concurrency Runtime"
 title: "Migrating from OpenMP to the Concurrency Runtime"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Concurrency Runtime, migrating from OpenMP", "OpenMP, migrating to the Concurrency Runtime"]

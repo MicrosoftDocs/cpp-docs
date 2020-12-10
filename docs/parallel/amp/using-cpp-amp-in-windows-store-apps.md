@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using C++ AMP in UWP Apps"
 title: "Using C++ AMP in UWP Apps"
 ms.date: "11/04/2016"
 ms.assetid: 85577298-2c28-4209-9470-eb21048615db

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: result_of Class"
 title: "result_of Class"
 ms.date: "02/21/2019"
 f1_keywords: ["type_traits/std::result_of", "type_traits/std::result_of_t", "type_traits/std::result_of::type"]

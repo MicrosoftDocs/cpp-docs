@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Send a Message at a Regular Interval"
 title: "How to: Send a Message at a Regular Interval"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["timer class, example", "sending messages at regular intervals [Concurrency Runtime]"]

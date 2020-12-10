@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Schedule Groups"
 title: "Schedule Groups"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["schedule groups"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;fstream&gt;"
 title: "&lt;fstream&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<fstream>"]

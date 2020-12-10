@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: chi_squared_distribution Class"
 title: "chi_squared_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::chi_squared_distribution", "random/std::chi_squared_distribution::reset", "random/std::chi_squared_distribution::n", "random/std::chi_squared_distribution::param", "random/std::chi_squared_distribution::min", "random/std::chi_squared_distribution::max", "random/std::chi_squared_distribution::operator()", "random/std::chi_squared_distribution::param_type", "random/std::chi_squared_distribution::param_type::n", "random/std::chi_squared_distribution::param_type::operator==", "random/std::chi_squared_distribution::param_type::operator!="]

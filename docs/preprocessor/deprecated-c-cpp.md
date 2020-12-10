@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: deprecated pragma"
 title: "deprecated pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.deprecated"]

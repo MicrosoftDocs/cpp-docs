@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Convert an OpenMP parallel for Loop to Use the Concurrency Runtime"
 title: "How to: Convert an OpenMP parallel for Loop to Use the Concurrency Runtime"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["converting from OpenMP to the Concurrency Runtime, parallel for loops", "converting from OpenMP to the Concurrency Runtime, parallel loops", "parallel for loops, converting from OpenMP to the Concurrency Runtime", "parallel loops, converting from OpenMP to the Concurrency Runtime"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Provide Work Functions to the call and transformer Classes"
 title: "How to: Provide Work Functions to the call and transformer Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["call class, example", "using the transformer class [Concurrency Runtime]", "using the call class [Concurrency Runtime]"]

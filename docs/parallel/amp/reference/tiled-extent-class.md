@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: tiled_extent Class"
 title: "tiled_extent Class"
 ms.date: "11/04/2016"
 f1_keywords: ["tiled_extent", "AMP/tiled_extent", "AMP/Concurrency::tiled_extent::tiled_extent", "AMP/Concurrency::tiled_extent::get_tile_extent", "AMP/Concurrency::tiled_extent::pad", "AMP/Concurrency::tiled_extent::truncate", "AMP/Concurrency::tiled_extent::tile_dim0", "AMP/Concurrency::tiled_extent::tile_dim1", "AMP/Concurrency::tiled_extent::tile_dim2", "AMP/Concurrency::tiled_extent::tile_extent"]

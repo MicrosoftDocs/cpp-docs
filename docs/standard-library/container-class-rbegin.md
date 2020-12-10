@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::rbegin"
 title: "Container Class::rbegin"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rbegin method"]

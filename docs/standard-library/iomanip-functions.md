@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;iomanip&gt; functions"
 title: "&lt;iomanip&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["iomanip/std::get_money", "iomanip/std::get_time", "iomanip/std::put_money", "iomanip/std::put_time", "iomanip/std::quoted", "iomanip/std::resetiosflags", "iomanip/std::setbase", "iomanip/std::setfill", "iomanip/std::setiosflags", "iomanip/std::setprecision", "iomanip/std::setw"]

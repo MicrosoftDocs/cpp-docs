@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Memory Management Functions"
 title: "Memory Management Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory management functions [Concurrency Runtime]"]

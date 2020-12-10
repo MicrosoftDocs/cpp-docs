@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: scheduler_interface Structure"
 title: "scheduler_interface Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["scheduler_interface", "PPLINTERFACE/concurrency::scheduler_interface", "PPLINTERFACE/concurrency::scheduler_interface::scheduler_interface::schedule"]

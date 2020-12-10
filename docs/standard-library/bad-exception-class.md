@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bad_exception Class"
 title: "bad_exception Class"
 ms.date: "11/04/2016"
 f1_keywords: ["exception/std::bad_exception"]

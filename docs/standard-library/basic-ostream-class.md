@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: basic_ostream Class"
 title: "basic_ostream Class"
 ms.date: "03/27/2019"
 f1_keywords: ["ostream/std::basic_ostream", "ostream/std::basic_ostream::flush", "ostream/std::basic_ostream::put", "ostream/std::basic_ostream::seekp", "ostream/std::basic_ostream::sentry", "ostream/std::basic_ostream::swap", "ostream/std::basic_ostream::tellp", "ostream/std::basic_ostream::write"]

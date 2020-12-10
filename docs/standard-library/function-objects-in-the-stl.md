@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Objects in the C++ Standard Library"
 title: "Function Objects in the C++ Standard Library"
 ms.date: "03/15/2019"
 helpviewer_keywords: ["functors", "C++ Standard Library, functors", "C++ Standard Library, function objects", "function objects"]
