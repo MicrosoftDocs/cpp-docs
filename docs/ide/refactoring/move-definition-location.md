@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Move Definition Location"
 title: "Move Definition Location"
 ms.date: "11/16/2016"
 ms.assetid: c6d507ac-c61e-4da2-95c8-d504b42e2520

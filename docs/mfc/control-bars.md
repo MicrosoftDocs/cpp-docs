@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Control Bars"
 title: "Control Bars"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["command bars [MFC], types of", "toolbars [MFC], control bars", "control bars [MFC]", "MFC, control bars", "control bars [MFC], types of", "CDialogBar class [MFC], control bars", "status bars [MFC], control bars", "CControlBar class [MFC], MFC control bars", "dialog bars [MFC], control bars", "CToolBar class [MFC], control bars", "CStatusBar class [MFC], control bars"]

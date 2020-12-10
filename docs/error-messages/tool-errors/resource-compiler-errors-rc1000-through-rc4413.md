@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource compiler errors and warnings (RCxxxx, RWxxxx)"
 title: "Resource compiler errors and warnings"
 ms.date: "04/17/2019"
 ms.assetid: 0819f955-0561-491d-af3d-2453f4e2d035

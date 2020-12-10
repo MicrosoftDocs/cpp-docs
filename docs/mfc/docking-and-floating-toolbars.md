@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Docking and Floating Toolbars"
 title: "Docking and Floating Toolbars"
 ms.date: "11/04/2016"
 f1_keywords: ["CBRS_SIZE_DYNAMIC", "CBRS_SIZE_FIXED"]

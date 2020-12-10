@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Compiler Fatal Error RC1101"
 title: "Resource Compiler Fatal Error RC1101"
 ms.date: "08/27/2018"
 f1_keywords: ["RC1101"]

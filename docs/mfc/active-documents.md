@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Active Documents"
 title: "Active Documents"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["active documents [MFC]", "active documents [MFC], requirements", "view objects [MFC], requirements", "OLE [MFC], active documents", "views [MFC], active documents", "active documents [MFC], views"]

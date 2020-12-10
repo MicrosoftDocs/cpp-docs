@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Managing the State Data of MFC Modules"
 title: "Managing the State Data of MFC Modules"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["global state [MFC]", "data management [MFC], MFC modules", "window procedure entry points [MFC]", "exported interfaces and global state [MFC]", "module states [MFC], saving and restoring", "data management [MFC]", "MFC, managing state data", "multiple modules [MFC]", "module state restored [MFC]"]

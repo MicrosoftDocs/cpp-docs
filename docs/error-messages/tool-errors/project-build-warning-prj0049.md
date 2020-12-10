@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Project Build Warning PRJ0049"
 title: "Project Build Warning PRJ0049"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["PRJ0049"]

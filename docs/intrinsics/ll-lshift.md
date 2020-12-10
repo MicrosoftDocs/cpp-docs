@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __ll_lshift"
 title: "__ll_lshift"
 ms.date: "09/02/2019"
 f1_keywords: ["__ll_lshift_cpp", "__ll_lshift"]

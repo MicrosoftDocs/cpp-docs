@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Customization for MFC"
 title: "Customization for MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["customizations, MFC Extensions"]

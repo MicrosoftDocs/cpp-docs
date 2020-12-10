@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Initializing the Dialog Box"
 title: "Initializing the Dialog Box"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["initializing dialog boxes [MFC]", "OnInitDialog method [MFC]", "modal dialog boxes [MFC], initializing", "modeless dialog boxes [MFC], initializing", "MFC dialog boxes [MFC], initializing"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWinApp: The Application Class"
 title: "CWinApp: The Application Class"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application class [MFC]", "CWinApp class [MFC], CWinThread", "MFC, WinMain and", "CWinApp class [MFC], multithreading", "CWinThread class [MFC], and CWinApp", "InitApplication method [MFC]", "WinMain method [MFC]", "WinMain method [MFC], in MFC", "CWinApp class [MFC], WinMain"]

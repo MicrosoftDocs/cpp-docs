@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Error LNK2038"
 title: "Linker Tools Error LNK2038"
 ms.date: "12/15/2017"
 f1_keywords: ["LNK2038"]

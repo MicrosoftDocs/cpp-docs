@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __vmx_vmptrld"
 title: "__vmx_vmptrld"
 ms.date: "09/02/2019"
 f1_keywords: ["__vmx_vmptrld"]

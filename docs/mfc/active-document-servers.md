@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Active Document Servers"
 title: "Active Document Servers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["active documents [MFC], servers", "servers [MFC], active document", "active document servers [MFC]"]

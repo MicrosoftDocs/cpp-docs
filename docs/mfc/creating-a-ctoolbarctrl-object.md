@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a CToolBarCtrl Object"
 title: "Creating a CToolBarCtrl Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["toolbar controls [MFC], creating", "CToolBarCtrl class [MFC], creating toolbars"]

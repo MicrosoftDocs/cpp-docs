@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler intrinsics"
 title: "Compiler intrinsics"
 ms.date: "09/02/2019"
 helpviewer_keywords: ["intrinsics, compiler", "compiler intrinsics", "cl.exe compiler, performance", "cl.exe compiler, intrinsics"]

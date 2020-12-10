@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Current Selection in a Rich Edit Control"
 title: "Current Selection in a Rich Edit Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["current selection in CRichEditCtrls", "CRichEditCtrl class [MFC], current selection in", "rich edit controls [MFC], current selection in", "selection, current in CRichEditCtrl"]

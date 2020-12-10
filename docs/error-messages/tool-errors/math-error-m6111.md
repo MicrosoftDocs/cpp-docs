@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Math Error M6111"
 title: "Math Error M6111"
 ms.date: "11/04/2016"
 f1_keywords: ["M6111"]

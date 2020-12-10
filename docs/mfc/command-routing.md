@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Command Routing"
 title: "Command Routing"
 ms.date: "09/06/2019"
 helpviewer_keywords: ["MFC, command routing", "command handling [MFC], routing commands", "handlers [MFC]", "handlers, command [MFC]", "command routing"]

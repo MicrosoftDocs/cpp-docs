@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _InterlockedCompareExchangePointer intrinsic functions"
 title: "_InterlockedCompareExchangePointer intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedCompareExchangePointer_HLERelease", "_InterlockedCompareExchangePointer_rel", "_InterlockedCompareExchangePointer_acq_cpp", "_InterlockedCompareExchangePointer", "_InterlockedCompareExchangePointer_cpp", "_InterlockedCompareExchangePointer_np", "_InterlockedCompareExchangePointer_rel_cpp", "_InterlockedCompareExchangePointer_HLEAcquire", "_InterlockedCompareExchangePointer_acq", "_InterlockedCompareExchangePointer_nf"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Data Exchange"
 title: "Dialog Data Exchange"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["initializing dialog boxes", "canceling data exchange", "dialog box data, retrieving", "DDX (dialog data exchange), data exchange mechanism", "dialog boxes [MFC], initializing", "dialog boxes [MFC], retrieving user input using DDX", "dialog box data", "dialog boxes [MFC], data exchange", "CDataExchange class [MFC], using DDX", "DoDataExchange method [MFC]", "user input [MFC], retrieving from MFC dialog boxes", "capturing user input [MFC]", "transferring dialog box data", "DDX (dialog data exchange), canceling", "UpdateData method [MFC]", "retrieving dialog box data [MFC]"]

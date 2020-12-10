@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _InterlockedAnd intrinsic functions"
 title: "_InterlockedAnd intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedAnd_rel", "_InterlockedAnd_cpp", "_InterlockedAnd8_nf", "_InterlockedAnd", "_InterlockedAnd_HLERelease", "_InterlockedAnd8_np", "_InterlockedAnd16_rel", "_InterlockedAnd64_np", "_InterlockedAnd_np", "_InterlockedAnd64_HLERelease", "_InterlockedAnd64", "_InterlockedAnd64_nf", "_InterlockedAnd64_HLEAcquire", "_InterlockedAnd16", "_InterlockedAnd16_nf", "_InterlockedAnd8", "_InterlockedAnd_HLEAcquire", "_InterlockedAnd_acq", "_InterlockedAnd16_np", "_InterlockedAnd64_cpp", "_InterlockedAnd64_acq", "_InterlockedAnd16_acq", "_InterlockedAnd8_acq", "_InterlockedAnd64_rel", "_InterlockedAnd_nf", "_InterlockedAnd8_rel"]

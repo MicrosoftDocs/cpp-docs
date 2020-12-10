@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BSCMAKE Warning BK4502"
 title: "BSCMAKE Warning BK4502"
 ms.date: "11/04/2016"
 f1_keywords: ["BK4502"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic Delegates (C++/CLI)"
 title: "Generic Delegates (C++/CLI)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

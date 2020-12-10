@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic Functions (C++/CLI)"
 title: "Generic Functions (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

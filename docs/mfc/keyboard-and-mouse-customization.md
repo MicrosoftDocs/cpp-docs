@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Keyboard and Mouse Customization"
 title: "Keyboard and Mouse Customization"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["customizations [MFC], keyboard and mouse (MFC Extensions)", "keyboard and mouse customizations (MFC Extensions)"]

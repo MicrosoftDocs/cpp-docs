@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Deleting All Objects in a CObject Collection"
 title: "Deleting All Objects in a CObject Collection"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [MFC], deleting in collections", "objects in CObject collections, deleting", "CObject class [MFC], deleting in collection", "collection classes [MFC], deleting all objects", "CObject class collection", "objects in CObject collections", "collection classes [MFC], shared objects"]

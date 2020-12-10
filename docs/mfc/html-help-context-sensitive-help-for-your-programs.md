@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HTML Help: Context-Sensitive Help for Your Programs"
 title: "HTML Help: Context-Sensitive Help for Your Programs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["context-sensitive Help [MFC], HTML Help", "HTML Help [MFC], context-sensitive"]

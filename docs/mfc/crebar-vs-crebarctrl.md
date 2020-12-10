@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CReBar vs. CReBarCtrl"
 title: "CReBar vs. CReBarCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CReBar class [MFC], vs. CReBarCtrl", "rebar controls [MFC], CReBarCtrl class [MFC]", "GetReBarCtrl class [MFC]"]

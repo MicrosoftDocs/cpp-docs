@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Advantages of the Document/View Architecture"
 title: "Advantages of the Document-View Architecture"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["views [MFC], advantages", "document/view architecture [MFC], advantages of"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4931"
 title: "Compiler Warning (level 4) C4931"
 ms.date: "08/27/2018"
 f1_keywords: ["C4931"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Alternatives to the Document/View Architecture"
 title: "Alternatives to the Document-View Architecture"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["documents [MFC], applications without", "CDocument class [MFC], space requirements", "views [MFC], applications without"]

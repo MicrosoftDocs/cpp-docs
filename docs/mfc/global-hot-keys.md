@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Global Hot Keys"
 title: "Global Hot Keys"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["keyboard shortcuts [MFC], hot keys", "CHotKeyCtrl class [MFC], global hot keys", "access keys [MFC], hot keys", "global hot keys [MFC]"]

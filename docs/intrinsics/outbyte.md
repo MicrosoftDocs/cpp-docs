@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __outbyte"
 title: "__outbyte"
 ms.date: "09/02/2019"
 f1_keywords: ["__outbyte"]

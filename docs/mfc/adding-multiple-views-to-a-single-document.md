@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding Multiple Views to a Single Document"
 title: "Adding Multiple Views to a Single Document"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["multiple views [MFC], SDI applications", "documents [MFC], multiple views", "single document interface (SDI), adding views", "views [MFC], SDI applications"]

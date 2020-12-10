@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions: Freeing Objects in Exceptions"
 title: "Exceptions: Freeing Objects in Exceptions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["throwing exceptions [MFC], freeing objects in exceptions", "local exception handling", "memory leaks, caused by exception", "try-catch exception handling [MFC], destroying objects", "destroying objects [MFC]", "freeing objects [MFC]", "throwing exceptions [MFC], after destroying", "exception handling [MFC], destroying objects"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Communicating with a Tree Control"
 title: "Communicating with a Tree Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tree controls [MFC], communicating with", "CTreeCtrl class [MFC], calling member functions", "communications, tree controls", "tree controls"]
