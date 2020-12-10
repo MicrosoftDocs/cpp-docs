@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Consuming Generics (C++/CLI)"
 title: "Consuming Generics (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

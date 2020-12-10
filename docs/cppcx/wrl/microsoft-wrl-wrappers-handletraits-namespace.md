@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft::WRL::Wrappers::HandleTraits Namespace"
 title: "Microsoft::WRL::Wrappers::HandleTraits Namespace"
 ms.date: "11/04/2016"
 ms.topic: "reference"

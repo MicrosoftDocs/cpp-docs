@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: front_insert_iterator Class"
 title: "front_insert_iterator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["iterator/std::front_insert_iterator", "iterator/std::front_insert_iterator::container_type", "iterator/std::front_insert_iterator::reference"]

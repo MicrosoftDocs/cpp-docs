@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add a member variable"
 title: "Add a member variable"
 ms.date: "11/09/2018"
 f1_keywords: ["vc.codewiz.classes.member.variable", "vc.codewiz.variable.overview"]

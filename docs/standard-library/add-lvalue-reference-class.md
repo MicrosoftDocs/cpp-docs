@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: add_lvalue_reference Class"
 title: "add_lvalue_reference Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::add_lvalue_reference"]

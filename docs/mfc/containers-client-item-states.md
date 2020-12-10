@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Containers: Client-Item States"
 title: "Containers: Client-Item States"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE containers [MFC], client-item states", "states, OLE container client-item", "lifetime, lifetime states and OLE container client items", "client items and OLE containers"]

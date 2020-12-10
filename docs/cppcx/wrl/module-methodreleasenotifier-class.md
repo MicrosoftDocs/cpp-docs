@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Module::MethodReleaseNotifier Class"
 title: "Module::MethodReleaseNotifier Class"
 ms.date: "09/17/2018"
 ms.topic: "reference"

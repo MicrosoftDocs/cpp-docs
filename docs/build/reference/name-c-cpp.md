@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NAME (C/C++)"
 title: "NAME (C/C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["name"]

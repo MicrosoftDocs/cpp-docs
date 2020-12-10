@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .ERRDIF, .ERRDIFI"
 title: ".ERRDIF, .ERRDIFI"
 ms.date: "05/23/2019"
 f1_keywords: [".ERRDIF", ".ERRDIFI"]

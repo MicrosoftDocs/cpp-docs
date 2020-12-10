@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Enums (C++/CX)"
 title: "Enums (C++/CX)"
 ms.date: "12/30/2016"
 ms.assetid: 99fbbe28-c1cd-43af-9ead-60f90eba6e68

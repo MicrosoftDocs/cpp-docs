@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Box Classes"
 title: "Dialog Box Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.dialog"]

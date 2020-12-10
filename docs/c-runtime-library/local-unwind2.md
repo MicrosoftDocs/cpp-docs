@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _local_unwind2"
 title: "_local_unwind2"
 ms.date: "11/04/2016"
 api_name: ["_local_unwind2"]

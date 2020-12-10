@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Non-MFC DLLs: Overview"
 title: "Non-MFC DLLs: Overview"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["non-MFC DLLs [C++]", "DLLs [C++], non-MFC"]

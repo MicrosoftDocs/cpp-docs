@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Country/Region Strings"
 title: "Country-Region Strings"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["country/region strings"]

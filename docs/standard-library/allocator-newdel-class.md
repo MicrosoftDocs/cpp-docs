@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: allocator_newdel Class"
 title: "allocator_newdel Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::allocators::allocator_newdel", "allocators/stdext::allocator_newdel", "stdext::allocators::allocator_newdel"]

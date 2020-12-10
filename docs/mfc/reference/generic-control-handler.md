@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic Control Handler"
 title: "Generic Control Handler"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["handlers [MFC], ON_CONTROL", "handlers [MFC]", "GenericControl Handler [MFC]", "ON_CONTROL macro [MFC]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DELAYLOAD (Delay Load Import)"
 title: "/DELAYLOAD (Delay Load Import)"
 ms.date: "11/04/2016"
 f1_keywords: ["/delayload", "VC.Project.VCLinkerTool.DelayLoadDLLS"]

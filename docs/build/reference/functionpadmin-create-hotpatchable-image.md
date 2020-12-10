@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /FUNCTIONPADMIN (Create Hotpatchable Image)"
 title: "/FUNCTIONPADMIN (Create Hotpatchable Image)"
 ms.date: "03/09/2018"
 f1_keywords: ["/functionpadmin"]

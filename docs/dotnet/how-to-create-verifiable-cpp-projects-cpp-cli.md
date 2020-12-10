@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: create verifiable C++ projects (C++/CLI)"
 title: "How to: Create Verifiable C++ Projects (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["verifiable assemblies [C++], creating", "conversions, C++ projects", "Visual Studio C++ projects"]

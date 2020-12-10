@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strinc, _wcsinc, _mbsinc, _mbsinc_l"
 title: "_strinc, _wcsinc, _mbsinc, _mbsinc_l"
 ms.date: "4/2/2020"
 api_name: ["_mbsinc", "_wcsinc", "_mbsinc_l", "_strinc", "_o__mbsinc", "_o__mbsinc_l"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l"
 title: "_ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l"
 ms.date: "4/2/2020"
 api_name: ["_ismbcalpha", "_ismbcalnum", "_ismbcdigit", "_ismbcalnum_l", "_ismbcdigit_l", "_ismbcalpha_l", "_o__ismbcalnum", "_o__ismbcalnum_l", "_o__ismbcalpha", "_o__ismbcalpha_l", "_o__ismbcdigit", "_o__ismbcdigit_l"]

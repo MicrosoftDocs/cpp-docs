@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Override Specifiers  (C++/CLI and C++/CX)"
 title: "Override Specifiers  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

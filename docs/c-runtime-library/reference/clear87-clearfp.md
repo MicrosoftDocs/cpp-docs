@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _clear87, _clearfp"
 title: "_clear87, _clearfp"
 ms.date: "04/05/2018"
 api_name: ["_clearfp", "_clear87"]

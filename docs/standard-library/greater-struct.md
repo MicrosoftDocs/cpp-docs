@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: greater Struct"
 title: "greater Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::greater"]

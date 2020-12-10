@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File and Database Classes"
 title: "File and Database Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["database classes [MFC], MFC", "database classes [MFC]", "file classes [MFC]"]

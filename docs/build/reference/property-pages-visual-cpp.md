@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows C++ project property page reference"
 title: "Windows C++ project property page reference - Visual Studio"
 ms.date: "08/28/2019"
 helpviewer_keywords: ["project-file macro", "project properties [C++], default values", "user-defined values", "project properties [C++], setting", "macros, project-file", "property pages, project settings", "C++ projects, properties", "build macro", "user-defined macros"]

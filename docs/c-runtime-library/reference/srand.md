@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: srand"
 title: "srand"
 ms.date: "4/2/2020"
 api_name: ["srand", "_o_srand"]

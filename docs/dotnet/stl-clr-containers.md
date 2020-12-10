@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: STL/CLR Containers"
 title: "STL/CLR Containers"
 ms.date: "09/18/2018"
 ms.topic: "reference"

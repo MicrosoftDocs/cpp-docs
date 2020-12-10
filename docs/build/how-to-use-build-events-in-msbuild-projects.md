@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Build Events in MSBuild Projects"
 title: "How to: Use Build Events in MSBuild Projects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["msbuild (c++), howto: use build events in projects"]

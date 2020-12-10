@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: out_of_memory Class"
 title: "out_of_memory Class"
 ms.date: "11/04/2016"
 f1_keywords: ["out_of_memory", "AMPRT/out_of_memory", "AMPRT/Concurrency::out_of_memory::out_of_memory"]

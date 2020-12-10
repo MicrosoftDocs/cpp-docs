@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NMake properties (Android C++)"
 title: "NMake Properties (Android C++)"
 ms.date: "10/23/2017"
 ms.assetid: d901c572-16c4-402a-b230-7ae59ce9fad4

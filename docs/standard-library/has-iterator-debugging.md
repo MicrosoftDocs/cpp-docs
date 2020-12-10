@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _HAS_ITERATOR_DEBUGGING"
 title: "_HAS_ITERATOR_DEBUGGING"
 ms.date: "11/04/2016"
 f1_keywords: ["_HAS_ITERATOR_DEBUGGING"]

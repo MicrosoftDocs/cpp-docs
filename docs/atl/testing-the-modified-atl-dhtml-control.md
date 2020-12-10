@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Testing the Modified ATL DHTML Control"
 title: "Testing the Modified ATL DHTML Control"
 ms.date: "11/06/2018"
 helpviewer_keywords: ["HTML controls, testing", "testing controls", "DHTML controls, testing"]

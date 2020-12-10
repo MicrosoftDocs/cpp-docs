@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ODBC Administrator"
 title: "ODBC Administrator"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["installing ODBC", "ODBC data sources [C++], ODBC Administrator", "ODBC drivers [C++], installing", "ODBC [C++], ODBC Administrator", "Administrator in ODBC", "administration ODBC Administrator", "ODBC Administrator [C++]", "drivers [C++], ODBC"]

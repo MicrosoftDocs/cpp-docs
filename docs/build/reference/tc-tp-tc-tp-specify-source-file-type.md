@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Tc, /Tp, /TC, /TP (Specify Source File Type)"
 title: "/Tc, /Tp, /TC, /TP (Specify Source File Type)"
 ms.date: "01/11/2018"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.CompileAs", "VC.Project.VCCLCompilerTool.CompileAs", "/Tp", "/tc"]

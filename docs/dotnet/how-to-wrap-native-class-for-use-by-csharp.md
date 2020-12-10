@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Wrap Native Class for Use by C#"
 title: "How to: Wrap Native Class for Use by C#"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

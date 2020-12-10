@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _dupenv_s_dbg, _wdupenv_s_dbg"
 title: "_dupenv_s_dbg, _wdupenv_s_dbg"
 ms.date: "11/04/2016"
 api_name: ["_dupenv_s_dbg", "_wdupenv_s_dbg"]

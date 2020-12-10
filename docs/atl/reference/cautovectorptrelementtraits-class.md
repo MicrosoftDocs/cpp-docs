@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAutoVectorPtrElementTraits Class"
 title: "CAutoVectorPtrElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAutoVectorPtrElementTraits", "ATLCOLL/ATL::CAutoVectorPtrElementTraits", "ATLCOLL/ATL::CAutoVectorPtrElementTraits::INARGTYPE", "ATLCOLL/ATL::CAutoVectorPtrElementTraits::OUTARGTYPE"]

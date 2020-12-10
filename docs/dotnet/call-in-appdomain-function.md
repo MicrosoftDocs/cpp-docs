@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: call_in_appdomain Function"
 title: "call_in_appdomain Function"
 ms.date: "11/04/2016"
 ms.topic: "reference"

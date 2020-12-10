@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Categories"
 title: "Message Categories"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["messages [MFC], categories", "control-notification messages [MFC]", "Windows messages [MFC], categories", "controls [MFC], notifications", "command messages [MFC]", "messages [MFC], Windows", "message handling [MFC], message types"]

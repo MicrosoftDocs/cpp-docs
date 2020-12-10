@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: add_const Class"
 title: "add_const Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::add_const"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ASSEMBLYLINKRESOURCE (Link to .NET Framework Resource)"
 title: "/ASSEMBLYLINKRESOURCE (Link to .NET Framework Resource)"
 ms.date: "11/04/2016"
 f1_keywords: ["/ASSEMBLYLINKRESOURCE", "VC.Project.VCLinkerTool.AssemblyLinkResource"]

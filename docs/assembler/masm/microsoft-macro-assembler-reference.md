@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft Macro Assembler reference"
 title: "Microsoft Macro Assembler reference"
 ms.date: "12/17/2019"
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), reference", "MASM (Microsoft Macro Assembler), overview", "MASM (Microsoft Macro Assembler)", "MASM (Microsoft Macro Assembler), documentation overview"]

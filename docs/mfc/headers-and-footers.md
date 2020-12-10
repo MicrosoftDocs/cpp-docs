@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Headers and Footers"
 title: "Headers and Footers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["printing [MFC], multipage documents", "page headers [MFC], printing", "headers [MFC], printing", "footers [MFC], printing", "page footers [MFC], printing", "page headers [MFC]", "printing [MFC], headers and footers", "page footers [MFC]"]

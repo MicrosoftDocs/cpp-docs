@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Win32 Internet Extensions (WinInet)"
 title: "Win32 Internet Extensions (WinInet)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Internet applications [MFC], Win32 Internet Extensions", "Internet client applications [MFC], about Internet client applications", "client applications [MFC], Win32 Internet", "WinInet classes [MFC], about WinInet classes"]

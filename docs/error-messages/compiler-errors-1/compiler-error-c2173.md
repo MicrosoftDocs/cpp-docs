@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2173"
 title: "Compiler Error C2173"
 ms.date: "11/04/2016"
 f1_keywords: ["C2173"]

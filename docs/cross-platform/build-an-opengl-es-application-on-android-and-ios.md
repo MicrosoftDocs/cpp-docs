@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Build an OpenGL ES application on Android and iOS"
 title: "Build an OpenGL ES application on Android and iOS"
 ms.date: "10/09/2019"
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b

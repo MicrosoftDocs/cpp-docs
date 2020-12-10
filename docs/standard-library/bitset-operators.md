@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;bitset&gt; operators"
 title: "&lt;bitset&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["bitset/std::operator&amp;", "bitset/std::operator&gt;&gt;", "bitset/std::operator&lt;&lt;", "bitset/std::operator^", "bitset/std::operator|"]

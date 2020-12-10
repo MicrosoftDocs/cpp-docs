@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Modifying the ATL DHTML Control"
 title: "Modifying the ATL DHTML Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HTML controls, modifying", "DHTML controls", "DHTML controls, modifying"]

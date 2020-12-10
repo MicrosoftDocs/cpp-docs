@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /OPT (Optimizations)"
 title: "/OPT (Optimizations)"
 ms.date: "05/18/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.OptimizeReferences", "/opt", "VC.Project.VCLinkerTool.OptimizeForWindows98", "VC.Project.VCLinkerTool.EnableCOMDATFolding", "VC.Project.VCLinkerTool.OptimizeFolding", "VC.Project.VCLinkerTool.FoldingIterations", "VC.Project.VCLinkerTool.OptimizeFoldingIterations"]

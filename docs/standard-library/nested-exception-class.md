@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: nested_exception Class"
 title: "nested_exception Class"
 ms.date: "11/04/2016"
 f1_keywords: ["exception/std::nested_exception"]

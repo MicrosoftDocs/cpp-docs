@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE Automation Classes"
 title: "OLE Automation Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Automation, classes", "Automation classes [MFC], OLE classes", "OLE Automation [MFC], classes", "Automation classes [MFC]", "OLE Automation [MFC]"]

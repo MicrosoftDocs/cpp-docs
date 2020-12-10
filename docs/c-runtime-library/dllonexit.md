@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __dllonexit"
 title: "__dllonexit"
 ms.date: "11/04/2016"
 api_name: ["__dllonexit"]

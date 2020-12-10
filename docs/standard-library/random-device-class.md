@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: random_device Class"
 title: "random_device Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::random_device", "random/std::random_device::min", "random/std::random_device::max", "random/std::random_device::entropy", "random/std::random_device::operator()"]

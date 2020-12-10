@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;string&gt;"
 title: "&lt;string&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["string/std::<string>", "<string>"]

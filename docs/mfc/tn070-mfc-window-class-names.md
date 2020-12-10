@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN070: MFC Window Class Names"
 title: "TN070: MFC Window Class Names"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["window class names [MFC]", "TN070 [MFC]"]

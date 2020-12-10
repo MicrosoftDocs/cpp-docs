@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE Initialization"
 title: "OLE Initialization"
 ms.date: "11/04/2016"
 f1_keywords: ["afxdisp/AfxOleInit", "afxdisp/AfxEnableControlContainer"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Compiler Fatal Error RC1004"
 title: "Resource Compiler Fatal Error RC1004"
 ms.date: "11/04/2016"
 f1_keywords: ["RC1004"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l"
 title: "_ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l"
 ms.date: "4/2/2020"
 api_name: ["_ismbckata", "_ismbchira_l", "_ismbchira", "_ismbckata_l", "_o__ismbchira", "_o__ismbchira_l", "_o__ismbckata", "_o__ismbckata_l"]

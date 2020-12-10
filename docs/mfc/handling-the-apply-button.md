@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling the Apply Button"
 title: "Handling the Apply Button"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Apply button in property sheet", "property sheets, Apply button"]

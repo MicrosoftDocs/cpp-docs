@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Adapting Existing Code to Use Lightweight Tasks"
 title: "Walkthrough: Adapting Existing Code to Use Lightweight Tasks"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["using lightweight tasks [Concurrency Runtime]", "lightweight tasks, using [Concurrency Runtime]"]

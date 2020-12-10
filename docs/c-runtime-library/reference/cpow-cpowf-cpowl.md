@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cpow, cpowf, cpowl"
 title: "cpow, cpowf, cpowl"
 ms.date: "11/04/2016"
 api_name: ["cpow", "cpowf", "cpowl"]

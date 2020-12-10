@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dragging and Dropping Files in a Frame Window"
 title: "Dragging and Dropping Files in a Frame Window"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["drag and drop [MFC], files", "drag and drop [MFC], File Manager", "Windows Explorer [MFC]", "File Manager drag and drop support [MFC]", "files [MFC], drag and drop", "frame windows [MFC], dragging and dropping files in", "drag and drop [MFC], Windows Explorer"]

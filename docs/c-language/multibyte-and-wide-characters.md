@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multibyte and Wide Characters"
 title: "Multibyte and Wide Characters"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["globalization [C++], character sets", "character data types [C]", "Unicode [C++], wide character set", "types [C], character", "characters [C++], wide", "international applications [C++], character display", "multibyte characters [C++]", "wide characters [C++]", "characters [C++], codes", "character codes [C++], wide", "character codes [C++], multibyte"]

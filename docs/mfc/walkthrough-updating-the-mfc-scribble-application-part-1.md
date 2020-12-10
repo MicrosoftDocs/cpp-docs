@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Updating the MFC Scribble Application (Part 1)"
 title: "Walkthrough: Updating the MFC Scribble Application (Part 1)"
 ms.date: "09/09/2019"
 helpviewer_keywords: ["examples [MFC], update existing application", "ribbon UI, porting to", "Office Fluent UI, porting to", "samples [MFC], update existing application", "MFC Feature Pack, update existing application", "walkthroughs [MFC], update existing application"]

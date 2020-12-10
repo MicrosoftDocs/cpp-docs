@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: #if, #elif, #else, and #endif directives (C/C++)"
 title: "#if, #elif, #else, and #endif directives (C/C++)"
 ms.date: "08/29/2019"
 f1_keywords: ["#else", "#endif", "#if", "#elif", "defined", "__has_include"]

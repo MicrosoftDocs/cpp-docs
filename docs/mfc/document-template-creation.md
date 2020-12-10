@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Document Template Creation"
 title: "Document Template Creation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["document templates [MFC]", "constructors [MFC], document template", "document templates [MFC], creating", "MFC, document templates", "templates [MFC], document templates"]

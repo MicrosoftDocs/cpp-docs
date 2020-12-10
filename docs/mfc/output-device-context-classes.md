@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Output (Device Context) Classes"
 title: "Output (Device Context) Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.output"]

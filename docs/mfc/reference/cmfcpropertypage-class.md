@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCPropertyPage Class"
 title: "CMFCPropertyPage Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCPropertyPage", "AFXPROPERTYPAGE/CMFCPropertyPage", "AFXPROPERTYPAGE/CMFCPropertyPage::CMFCPropertyPage"]

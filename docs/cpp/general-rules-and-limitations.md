@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: General Rules and Limitations"
 title: "General Rules and Limitations"
 ms.date: "11/04/2016"
 ms.assetid: 6c48902d-4259-4761-95d4-e421d69aa050

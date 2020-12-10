@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ComPtr Class"
 title: "ComPtr Class"
 ms.date: "06/02/2020"
 ms.topic: "reference"

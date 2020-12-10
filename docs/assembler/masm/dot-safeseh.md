@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .SAFESEH (32-bit MASM)"
 title: ".SAFESEH"
 ms.date: "11/05/2019"
 f1_keywords: [".SAFESEH"]

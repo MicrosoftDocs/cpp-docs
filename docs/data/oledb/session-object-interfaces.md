@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Session Object Interfaces"
 title: "Session Object Interfaces"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["session objects [OLE DB]", "session objects [OLE DB], interfaces", "OLE DB provider templates, object interfaces", "interfaces, session object", "interfaces, list of"]

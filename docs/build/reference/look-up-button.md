@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Look Up Button"
 title: "Look Up Button"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Look Up button"]

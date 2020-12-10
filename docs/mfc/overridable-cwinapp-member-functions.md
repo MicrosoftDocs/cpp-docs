@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overridable CWinApp Member Functions"
 title: "Overridable CWinApp Member Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["overriding [MFC], overridable functions in CWinApp", "application class [MFC]", "CWinApp class [MFC], overridables"]

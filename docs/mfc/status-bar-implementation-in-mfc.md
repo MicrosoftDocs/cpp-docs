@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Status Bar Implementation in MFC"
 title: "Status Bar Implementation in MFC"
 ms.date: "11/19/2018"
 f1_keywords: ["COldStatusBar"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling Commands in the Document"
 title: "Handling Commands in the Document"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message maps [MFC], in document class", "command handling [MFC]", "documents [MFC], message maps", "message handling [MFC], WM_COMMAND messages", "command handling [MFC], commands in documents", "documents [MFC], handling messages in"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMapStringToString Class"
 title: "CMapStringToString Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMapStringToString", "AFXCOLL/CMapStringToString", "AFXCOLL/CMapStringToString::CPair", "AFXCOLL/CMapStringToString::CMapStringToString", "AFXCOLL/CMapStringToString::GetCount", "AFXCOLL/CMapStringToString::GetHashTableSize", "AFXCOLL/CMapStringToString::GetNextAssoc", "AFXCOLL/CMapStringToString::GetSize", "AFXCOLL/CMapStringToString::GetStartPosition", "AFXCOLL/CMapStringToString::HashKey", "AFXCOLL/CMapStringToString::InitHashTable", "AFXCOLL/CMapStringToString::IsEmpty", "AFXCOLL/CMapStringToString::Lookup", "AFXCOLL/CMapStringToString::LookupKey", "AFXCOLL/CMapStringToString::PGetFirstAssoc", "AFXCOLL/CMapStringToString::PGetNextAssoc", "AFXCOLL/CMapStringToString::PLookup", "AFXCOLL/CMapStringToString::RemoveAll", "AFXCOLL/CMapStringToString::RemoveKey", "AFXCOLL/CMapStringToString::SetAt"]

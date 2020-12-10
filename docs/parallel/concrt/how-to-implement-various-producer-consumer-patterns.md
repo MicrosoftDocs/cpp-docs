@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Implement Various Producer-Consumer Patterns"
 title: "How to: Implement Various Producer-Consumer Patterns"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["producer-consumer patterns, implementing [Concurrency Runtime]", "implementing producer-consumer patterns [Concurrency Runtime]"]

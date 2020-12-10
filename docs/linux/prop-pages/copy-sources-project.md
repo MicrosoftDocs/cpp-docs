@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Copy Sources Project Properties (Linux C++)"
 title: "Copy Sources Project Properties (Linux C++)"
 ms.date: "10/16/2019"
 ms.assetid: 1a44230d-5dd8-4d33-93b4-e77e03e00150

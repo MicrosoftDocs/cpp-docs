@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Loading All Imports for a Delay-Loaded DLL"
 title: "Loading All Imports for a Delay-Loaded DLL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["__HrLoadAllImportsForDll linker option"]

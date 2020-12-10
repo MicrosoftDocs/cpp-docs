@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: improper_scheduler_attach Class"
 title: "improper_scheduler_attach Class"
 ms.date: "11/04/2016"
 f1_keywords: ["improper_scheduler_attach", "CONCRT/concurrency::improper_scheduler_attach", "CONCRT/concurrency::improper_scheduler_attach::improper_scheduler_attach"]

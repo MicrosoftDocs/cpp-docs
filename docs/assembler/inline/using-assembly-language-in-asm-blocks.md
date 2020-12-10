@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Assembly Language in __asm Blocks"
 title: "Using Assembly Language in __asm Blocks"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["assembly language [C++], features", "assembly language [C++]", "__asm keyword [C++], assembly language in"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: typeid Operator"
 title: "typeid Operator"
 ms.date: "10/04/2019"
 helpviewer_keywords: ["typeid operator"]

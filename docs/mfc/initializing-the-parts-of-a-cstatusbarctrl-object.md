@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Initializing the Parts of a CStatusBarCtrl Object"
 title: "Initializing the Parts of a CStatusBarCtrl Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CStatusBarCtrl class [MFC], simple mode", "status bars [MFC], declaring parts of", "simple status bars [MFC]", "status bars [MFC], icons", "status bars [MFC], simple mode", "icons, using in status bars", "CStatusBarCtrl class [MFC], declaring parts of"]

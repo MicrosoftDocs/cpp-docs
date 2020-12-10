@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: remove_volatile Class"
 title: "remove_volatile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::remove_volatile"]

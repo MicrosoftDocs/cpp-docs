@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Automation Clients"
 title: "Automation Clients"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["clients, Automation", "Automation clients", "type libraries, Automation clients", "clients"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Architectural Design Issues"
 title: "OLE DB Architectural Design Issues"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB, application design considerations"]

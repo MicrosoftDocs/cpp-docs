@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Handler Functions"
 title: "Message Handler Functions"
 ms.date: "11/04/2016"
 ms.topic: "reference"

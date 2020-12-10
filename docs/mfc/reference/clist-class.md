@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CList Class"
 title: "CList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CList", "AFXTEMPL/CList", "AFXTEMPL/CList::CList", "AFXTEMPL/CList::AddHead", "AFXTEMPL/CList::AddTail", "AFXTEMPL/CList::Find", "AFXTEMPL/CList::FindIndex", "AFXTEMPL/CList::GetAt", "AFXTEMPL/CList::GetCount", "AFXTEMPL/CList::GetHead", "AFXTEMPL/CList::GetHeadPosition", "AFXTEMPL/CList::GetNext", "AFXTEMPL/CList::GetPrev", "AFXTEMPL/CList::GetSize", "AFXTEMPL/CList::GetTail", "AFXTEMPL/CList::GetTailPosition", "AFXTEMPL/CList::InsertAfter", "AFXTEMPL/CList::InsertBefore", "AFXTEMPL/CList::IsEmpty", "AFXTEMPL/CList::RemoveAll", "AFXTEMPL/CList::RemoveAt", "AFXTEMPL/CList::RemoveHead", "AFXTEMPL/CList::RemoveTail", "AFXTEMPL/CList::SetAt"]

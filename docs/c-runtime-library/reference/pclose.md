@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _pclose"
 title: "_pclose"
 ms.date: "4/2/2020"
 api_name: ["_pclose", "_o__pclose"]

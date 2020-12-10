@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: section pragma"
 title: "section pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["section_CPP", "vc-pragma.section"]

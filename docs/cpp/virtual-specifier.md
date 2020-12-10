@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: virtual Specifier"
 title: "virtual Specifier"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function specifiers, virtual", "virtual keyword [C++]"]

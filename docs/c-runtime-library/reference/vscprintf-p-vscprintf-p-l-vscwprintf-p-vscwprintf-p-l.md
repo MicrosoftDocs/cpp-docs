@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l"
 title: "_vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l"
 ms.date: "11/04/2016"
 api_name: ["_vscprintf_p_l", "_vscprintf_p", "_vscwprintf_p_l", "_vscwprintf_p"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __func__"
 title: "__func__"
 ms.date: "10/19/2017"
 f1_keywords: ["__func__"]

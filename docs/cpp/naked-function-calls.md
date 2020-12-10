@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Naked Function Calls"
 title: "Naked Function Calls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["virtual device drivers", "VXD virtual device drivers", "virtual device drivers, naked function calls", "naked functions", "prolog code", "epilog code", "naked keyword [C++]", "naked keyword [C++], storage-class attribute"]

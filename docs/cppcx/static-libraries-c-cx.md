@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Static libraries (C++/CX)"
 title: "Static libraries (C++/CX)"
 ms.date: "02/03/2017"
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa

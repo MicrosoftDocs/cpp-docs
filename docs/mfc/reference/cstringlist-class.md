@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CStringList Class"
 title: "CStringList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStringList", "AFXCOLL/CStringList", "AFXCOLL/CStringList::CStringList", "AFXCOLL/CStringList::AddHead", "AFXCOLL/CStringList::AddTail", "AFXCOLL/CStringList::Find", "AFXCOLL/CStringList::FindIndex", "AFXCOLL/CStringList::GetAt", "AFXCOLL/CStringList::GetCount", "AFXCOLL/CStringList::GetHead", "AFXCOLL/CStringList::GetHeadPosition", "AFXCOLL/CStringList::GetNext", "AFXCOLL/CStringList::GetPrev", "AFXCOLL/CStringList::GetSize", "AFXCOLL/CStringList::GetTail", "AFXCOLL/CStringList::GetTailPosition", "AFXCOLL/CStringList::InsertAfter", "AFXCOLL/CStringList::InsertBefore", "AFXCOLL/CStringList::IsEmpty", "AFXCOLL/CStringList::RemoveAll", "AFXCOLL/CStringList::RemoveAt", "AFXCOLL/CStringList::RemoveHead", "AFXCOLL/CStringList::RemoveTail", "AFXCOLL/CStringList::SetAt"]

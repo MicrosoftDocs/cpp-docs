@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zc:rvalueCast (Enforce type conversion rules)"
 title: "/Zc:rvalueCast (Enforce type conversion rules)"
 ms.date: "02/18/2020"
 f1_keywords: ["rvaluecast", "/Zc:rvalueCast", "VC.Project.VCCLCompilerTool.EnforceTypeConversionRules"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _heapchk"
 title: "_heapchk"
 ms.date: "4/2/2020"
 api_name: ["_heapchk", "_o__heapchk"]

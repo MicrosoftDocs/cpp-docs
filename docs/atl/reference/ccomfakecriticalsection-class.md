@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComFakeCriticalSection Class"
 title: "CComFakeCriticalSection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComFakeCriticalSection", "ATLCORE/ATL::CComFakeCriticalSection", "ATLCORE/ATL::CComFakeCriticalSection::Init", "ATLCORE/ATL::CComFakeCriticalSection::Lock", "ATLCORE/ATL::CComFakeCriticalSection::Term", "ATLCORE/ATL::CComFakeCriticalSection::Unlock"]

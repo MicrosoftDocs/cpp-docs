@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRowsetImpl Class"
 title: "CRowsetImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRowsetImpl", "ATL.CRowsetImpl", "ATL::CRowsetImpl", "CRowsetImpl.NameFromDBID", "CRowsetImpl::NameFromDBID", "CRowsetImpl.SetCommandText", "CRowsetImpl::SetCommandText", "CRowsetImpl.GetColumnInfo", "CRowsetImpl::GetColumnInfo", "CRowsetImpl::GetCommandFromID", "GetCommandFromID", "CRowsetImpl.GetCommandFromID", "CRowsetImpl.ValidateCommandID", "CRowsetImpl::ValidateCommandID", "CRowsetImpl.m_rgRowData", "CRowsetImpl::m_rgRowData", "CRowsetImpl::m_strCommandText", "CRowsetImpl.m_strCommandText", "CRowsetImpl::m_strIndexText", "CRowsetImpl.m_strIndexText"]

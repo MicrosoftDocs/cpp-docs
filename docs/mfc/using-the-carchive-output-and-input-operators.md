@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using the CArchive &lt;&lt; and &gt;&gt; Operators"
 title: "Using the CArchive &lt;&lt; and &gt;&gt; Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [MFC], loading from previously stored values", "CArchive class [MFC], storing and loading objects", "CArchive class [MFC], operators"]

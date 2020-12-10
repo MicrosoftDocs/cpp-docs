@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Toolbars"
 title: "Toolbars"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["toolbars [MFC]", "command bars [MFC], MFC toolbars"]

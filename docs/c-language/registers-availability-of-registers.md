@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Registers: Availability of Registers"
 title: "Registers: Availability of Registers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["registers"]

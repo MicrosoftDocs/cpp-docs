@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Field Status Data Members in Wizard-Generated Accessors"
 title: "Field Status Data Members in Wizard-Generated Accessors"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB consumer templates, field status", "field status in OLE DB templates"]

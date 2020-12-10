@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Member Access Control (C++)"
 title: "Member Access Control (C++)"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["access control [C++]", "member access [C++]", "member-access control [C++]"]

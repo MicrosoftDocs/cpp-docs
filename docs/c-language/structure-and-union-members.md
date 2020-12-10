@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Structure and Union Members"
 title: "Structure and Union Members"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["member-selection operators", "structure members, referencing", "-> operator, structure and union members", "dot operator (.)", "referencing structure members", ". operator", "operators [C], member selection", "structure member selection"]

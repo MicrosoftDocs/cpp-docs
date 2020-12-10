@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /MERGE (Combine Sections)"
 title: "/MERGE (Combine Sections)"
 ms.date: "11/04/2016"
 f1_keywords: ["/merge", "VC.Project.VCLinkerTool.MergeSections"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonMainPanel Class"
 title: "CMFCRibbonMainPanel Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonMainPanel", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::Add", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddRecentFilesList", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddToBottom", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::AddToRight", "AFXRIBBONMAINPANEL/CMFCRibbonMainPanel::GetCommandsFrame"]

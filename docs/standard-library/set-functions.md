@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;set&gt; functions"
 title: "&lt;set&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["set/std::swap (map)", "set/std::swap (multiset)"]

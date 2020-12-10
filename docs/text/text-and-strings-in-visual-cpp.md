@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Text and Strings in Visual C++"
 title: "Text and Strings in Visual C++"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["globalization [C++], character sets", "programming [C++], international", "multiple language support [C++]", "Unicode [C++]", "international applications [C++], about international applications", "portability [C++]", "translation [C++], character sets", "non-European characters [C++]", "character sets [C++]", "globalization [C++]", "Japanese characters [C++]", "Kanji character support [C++]", "local character sets [C++]", "ASCII characters [C++]", "character sets [C++], about character sets", "localization [C++], character sets", "translating code [C++]", "localization [C++]", "character sets [C++], non-European", "portability [C++], character sets", "MBCS [C++], international programming"]

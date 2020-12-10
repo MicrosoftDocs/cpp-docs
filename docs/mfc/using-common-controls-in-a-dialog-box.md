@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Common Controls in a Dialog Box"
 title: "Using Common Controls in a Dialog Box"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["common controls [MFC], in dialog boxes", "dialog box controls [MFC], common controls", "Windows common controls [MFC], in dialog boxes"]

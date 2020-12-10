@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fpclassify"
 title: "fpclassify"
 ms.date: "04/05/2018"
 api_name: ["fpclassify"]

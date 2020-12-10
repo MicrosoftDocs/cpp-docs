@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: single_assignment Class"
 title: "single_assignment Class"
 ms.date: "11/04/2016"
 f1_keywords: ["single_assignment", "AGENTS/concurrency::single_assignment", "AGENTS/concurrency::single_assignment::single_assignment", "AGENTS/concurrency::single_assignment::has_value", "AGENTS/concurrency::single_assignment::value", "AGENTS/concurrency::single_assignment::accept_message", "AGENTS/concurrency::single_assignment::consume_message", "AGENTS/concurrency::single_assignment::link_target_notification", "AGENTS/concurrency::single_assignment::propagate_message", "AGENTS/concurrency::single_assignment::propagate_to_any_targets", "AGENTS/concurrency::single_assignment::release_message", "AGENTS/concurrency::single_assignment::reserve_message", "AGENTS/concurrency::single_assignment::resume_propagation", "AGENTS/concurrency::single_assignment::send_message"]

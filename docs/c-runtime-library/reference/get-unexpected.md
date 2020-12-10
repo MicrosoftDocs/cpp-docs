@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_unexpected"
 title: "_get_unexpected"
 ms.date: "11/04/2016"
 api_name: ["_get_unexpected"]

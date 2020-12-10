@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCTasksPaneTask Class"
 title: "CMFCTasksPaneTask Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CMFCTasksPaneTask", "AFXTASKSPANE/CMFCTasksPaneTask", "AFXTASKSPANE/CMFCTasksPaneTask::CMFCTasksPaneTask", "AFXTASKSPANE/CMFCTasksPaneTask::SetACCData", "AFXTASKSPANE/CMFCTasksPaneTask::m_bAutoDestroyWindow", "AFXTASKSPANE/CMFCTasksPaneTask::m_bIsBold", "AFXTASKSPANE/CMFCTasksPaneTask::m_dwUserData", "AFXTASKSPANE/CMFCTasksPaneTask::m_hwndTask", "AFXTASKSPANE/CMFCTasksPaneTask::m_nIcon", "AFXTASKSPANE/CMFCTasksPaneTask::m_nWindowHeight", "AFXTASKSPANE/CMFCTasksPaneTask::m_pGroup", "AFXTASKSPANE/CMFCTasksPaneTask::m_rect", "AFXTASKSPANE/CMFCTasksPaneTask::m_strName", "AFXTASKSPANE/CMFCTasksPaneTask::m_uiCommandID"]

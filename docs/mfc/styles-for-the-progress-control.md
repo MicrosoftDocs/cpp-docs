@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Styles for the Progress Control"
 title: "Styles for the Progress Control"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["PBS_SMOOTH style", "progress controls [MFC], styles", "PBS_VERTICAL style", "CProgressCtrl class [MFC], styles"]

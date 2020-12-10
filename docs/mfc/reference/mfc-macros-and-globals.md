@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Macros and Globals"
 title: "MFC Macros and Globals"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, global functions and variables", "MFC, macros", "global functions, MFC", "macros, MFC", "global functions [MFC]", "global variables, MFC", "Afx naming convention", "macros"]

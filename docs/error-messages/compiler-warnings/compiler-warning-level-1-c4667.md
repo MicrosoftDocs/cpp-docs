@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4667"
 title: "Compiler Warning (level 1) C4667"
 ms.date: "11/04/2016"
 f1_keywords: ["C4667"]

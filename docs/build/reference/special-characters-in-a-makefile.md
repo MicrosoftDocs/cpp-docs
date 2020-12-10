@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Special Characters in a Makefile"
 title: "Special Characters in a Makefile"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, special characters", "makefiles, special characters", "special characters, in NMAKE macros", "macros, special characters"]

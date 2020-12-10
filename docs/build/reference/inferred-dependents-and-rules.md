@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inferred Dependents and Rules"
 title: "Inferred Dependents and Rules"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rules, inferred", "inferred dependents in NMAKE", "inferred rules in NMAKE", "dependents, inferred"]

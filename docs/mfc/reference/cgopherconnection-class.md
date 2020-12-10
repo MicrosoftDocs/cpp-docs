@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CGopherConnection Class"
 title: "CGopherConnection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CGopherConnection", "AFXINET/CGopherConnection", "AFXINET/CGopherConnection::CGopherConnection", "AFXINET/CGopherConnection::CreateLocator", "AFXINET/CGopherConnection::GetAttribute", "AFXINET/CGopherConnection::OpenFile"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMap Class"
 title: "CMap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMap", "AFXTEMPL/CMap", "AFXTEMPL/CMap::CPair", "AFXTEMPL/CMap::CMap", "AFXTEMPL/CMap::GetCount", "AFXTEMPL/CMap::GetHashTableSize", "AFXTEMPL/CMap::GetNextAssoc", "AFXTEMPL/CMap::GetSize", "AFXTEMPL/CMap::GetStartPosition", "AFXTEMPL/CMap::InitHashTable", "AFXTEMPL/CMap::IsEmpty", "AFXTEMPL/CMap::Lookup", "AFXTEMPL/CMap::PGetFirstAssoc", "AFXTEMPL/CMap::PGetNextAssoc", "AFXTEMPL/CMap::PLookup", "AFXTEMPL/CMap::RemoveAll", "AFXTEMPL/CMap::RemoveKey", "AFXTEMPL/CMap::SetAt"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;queue&gt;"
 title: "&lt;queue&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<queue>"]

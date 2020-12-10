@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __assume"
 title: "__assume"
 ms.date: "09/02/2019"
 f1_keywords: ["__assume", "_assume", "__assume_cpp"]

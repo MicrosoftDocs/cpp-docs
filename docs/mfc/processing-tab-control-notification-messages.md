@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Processing Tab Control Notification Messages"
 title: "Processing Tab Control Notification Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["notifications [MFC], tab controls", "CTabCtrl class [MFC], processing notifications", "notifications [MFC], processing in CTabCtrl", "processing notifications [MFC]", "tab controls [MFC], processing notifications"]

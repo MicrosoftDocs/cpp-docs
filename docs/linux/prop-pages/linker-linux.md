@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Properties (Linux C++)"
 title: "Linker Properties (Linux C++)"
 ms.date: "06/07/2019"
 ms.assetid: a0243a94-8164-425b-b2fe-b84ff363d546

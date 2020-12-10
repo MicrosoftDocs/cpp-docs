@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: runtime_checks pragma"
 title: "runtime_checks pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.runtime_checks", "runtime_checks_CPP"]

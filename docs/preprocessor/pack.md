@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: pack pragma"
 title: "pack pragma"
 ms.date: 07/22/2020
 f1_keywords: ["pack_CPP", "vc-pragma.pack"]

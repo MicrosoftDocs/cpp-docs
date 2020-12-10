@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Built-in types (C++)"
 title: "Built-in types  (C++)"
 ms.date: 07/22/2020
 f1_keywords: ["__int128_cpp", "__wchar_t_cpp", "char_cpp", "char8_t_cpp", "char16_t_cpp", "char32_t_cpp", "double_cpp", "float_cpp", "int_cpp", "long_cpp", "long_double_cpp", "short_cpp", "signed_cpp", "unsigned_cpp", "unsigned_int_cpp", "wchar_t_cpp"]

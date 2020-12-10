@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using a Record View  (MFC Data Access)"
 title: "Using a Record View  (MFC Data Access)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["record views, customizing default code"]

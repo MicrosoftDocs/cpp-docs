@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;optional&gt; operators"
 title: "&lt;optional&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["optional/std::operator!=", "optional/std::operator==", "optional/std::operatoroperator&gt;", "optional/std::operatoroperator&gt=;", "optional/std::operatoroperator&lt;", "optional/std::operatoroperator&lt;="]

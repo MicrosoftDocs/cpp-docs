@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IScheduler Structure"
 title: "IScheduler Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["IScheduler", "CONCRTRM/concurrency::IScheduler", "CONCRTRM/concurrency::IScheduler::IScheduler::AddVirtualProcessors", "CONCRTRM/concurrency::IScheduler::IScheduler::GetId", "CONCRTRM/concurrency::IScheduler::IScheduler::GetPolicy", "CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyBusy", "CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyIdle", "CONCRTRM/concurrency::IScheduler::IScheduler::RemoveVirtualProcessors", "CONCRTRM/concurrency::IScheduler::IScheduler::Statistics"]

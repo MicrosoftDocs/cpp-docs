@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: catanh, catanhf, catanhl"
 title: "catanh, catanhf, catanhl"
 ms.date: "11/04/2016"
 api_name: ["catanh", "catanhf", "catanhl"]

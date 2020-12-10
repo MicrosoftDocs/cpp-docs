@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Messages and Commands in the Framework"
 title: "Messages and Commands in the Framework"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["events [MFC], command routing in MFC", "event-driven programming [MFC]", "events [MFC], event-driven programming", "message-driven programming [MFC]"]

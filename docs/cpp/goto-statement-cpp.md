@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: goto Statement (C++)"
 title: "goto Statement (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["goto_cpp"]

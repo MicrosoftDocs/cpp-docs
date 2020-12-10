@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Destructors (C++)"
 title: "Destructors (C++)"
 ms.date: "07/20/2019"
 helpviewer_keywords: ["objects [C++], destroying", "destructors, C++"]

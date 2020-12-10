@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using SAL Annotations to Reduce C/C++ Code Defects"
 title: Using SAL Annotations to Reduce C/C++ Code Defects
 ms.date: 11/04/2016
 ms.topic: "conceptual"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using C or C++ in __asm Blocks"
 title: "Using C or C++ in __asm Blocks"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["inline assembly, mixing instructions with C/C++ statements", "symbols, in __asm blocks", "macros, __asm blocks", "preprocessor directives, used in __asm blocks", "type names, used in __asm blocks", "preprocessor directives", "preprocessor, directives", "constants, in __asm blocks", "comments, in __asm blocks", "typedef names, used in __asm blocks", "__asm keyword [C++], C/C++ elements in"]

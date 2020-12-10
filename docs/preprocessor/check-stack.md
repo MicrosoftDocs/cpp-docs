@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: check_stack pragma"
 title: "check_stack pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.check_stack", "check_stack_CPP"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: type_info Class"
 title: "type_info Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_info"]

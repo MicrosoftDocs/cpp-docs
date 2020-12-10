@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: scanf Type Field Characters"
 title: "scanf Type Field Characters"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["scanf function, type field characters"]

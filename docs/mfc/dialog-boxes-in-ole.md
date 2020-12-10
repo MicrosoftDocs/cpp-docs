@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Boxes in OLE"
 title: "Dialog Boxes in OLE"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC dialog boxes [MFC], OLE dialog boxes", "OLE dialog boxes", "dialog boxes", "OLE dialog boxes [MFC], about OLE dialog boxes", "dialog boxes [MFC], about dialog boxes", "dialog boxes [MFC], OLE", "Insert object"]

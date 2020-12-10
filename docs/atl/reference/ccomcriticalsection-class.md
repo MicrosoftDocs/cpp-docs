@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComCriticalSection Class"
 title: "CComCriticalSection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComCriticalSection", "ATLCORE/ATL::CComCriticalSection", "ATLCORE/ATL::CComCriticalSection::CComCriticalSection", "ATLCORE/ATL::CComCriticalSection::Init", "ATLCORE/ATL::CComCriticalSection::Lock", "ATLCORE/ATL::CComCriticalSection::Term", "ATLCORE/ATL::CComCriticalSection::Unlock", "ATLCORE/ATL::CComCriticalSection::m_sec"]

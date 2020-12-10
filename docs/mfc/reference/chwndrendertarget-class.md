@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CHwndRenderTarget Class"
 title: "CHwndRenderTarget Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHwndRenderTarget", "AFXRENDERTARGET/CHwndRenderTarget", "AFXRENDERTARGET/CHwndRenderTarget::CHwndRenderTarget", "AFXRENDERTARGET/CHwndRenderTarget::Attach", "AFXRENDERTARGET/CHwndRenderTarget::CheckWindowState", "AFXRENDERTARGET/CHwndRenderTarget::Create", "AFXRENDERTARGET/CHwndRenderTarget::Detach", "AFXRENDERTARGET/CHwndRenderTarget::GetHwnd", "AFXRENDERTARGET/CHwndRenderTarget::GetHwndRenderTarget", "AFXRENDERTARGET/CHwndRenderTarget::ReCreate", "AFXRENDERTARGET/CHwndRenderTarget::Resize", "AFXRENDERTARGET/CHwndRenderTarget::m_pHwndRenderTarget"]

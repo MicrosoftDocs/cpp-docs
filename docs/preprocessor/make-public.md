@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: make_public pragma"
 title: "make_public pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.make_public", "make_public_CPP"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Modify the Target Framework and Platform Toolset"
 title: "How to: Modify the Target Framework and Platform Toolset"
 ms.custom: "conceptual"
 ms.date: "07/24/2019"

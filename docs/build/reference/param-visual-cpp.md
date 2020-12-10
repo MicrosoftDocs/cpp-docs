@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;param&gt;"
 title: "&lt;param> (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["param", "<param>"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CA2CAEX Class"
 title: "CA2CAEX Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CA2CAEX", "ATLCONV/ATL::CA2CAEX", "ATLCONV/ATL::CA2CAEX::CA2CAEX", "ATLCONV/ATL::CA2CAEX::m_psz"]

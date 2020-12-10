@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `noalias`"
 title: "noalias"
 ms.date: 07/07/2020
 f1_keywords: ["noalias_cpp"]

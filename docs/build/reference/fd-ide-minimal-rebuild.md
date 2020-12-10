@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /FD (IDE Minimal Rebuild)"
 title: "/FD (IDE Minimal Rebuild)"
 ms.date: "04/08/2019"
 helpviewer_keywords: ["/FD compiler option [C++]", "-FD compiler option [C++]", "FD compiler option [C++]"]

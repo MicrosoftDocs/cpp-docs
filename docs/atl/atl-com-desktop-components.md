@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL COM Desktop Components"
 title: "ATL COM Desktop Components"
 ms.date: "10/19/2018"
 helpviewer_keywords: ["ATL, reference", "ATL, about ATL"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Document Template Strings, MFC Application Wizard"
 title: "Document Template Strings, MFC Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.exe.doctemp"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Command Targets"
 title: "Command Targets"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["command targets", "command mapping", "messages, command [MFC]", "command routing [MFC], command targets"]

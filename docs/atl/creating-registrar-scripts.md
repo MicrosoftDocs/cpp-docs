@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating Registrar scripts"
 title: "Creating scripts for ATL Registrar"
 ms.date: "05/14/2014"
 helpviewer_keywords: ["scripting, registry scripting", "ATL, registry", "registrar scripts [ATL]", "scripts, Registrar scripts", "scripts, creating"]

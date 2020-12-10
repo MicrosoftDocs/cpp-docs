@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: extreme_value_distribution Class"
 title: "extreme_value_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::extreme_value_distribution", "random/std::extreme_value_distribution::reset", "random/std::extreme_value_distribution::a", "random/std::extreme_value_distribution::b", "random/std::extreme_value_distribution::param", "random/std::extreme_value_distribution::min", "random/std::extreme_value_distribution::max", "random/std::extreme_value_distribution::operator()", "random/std::extreme_value_distribution::param_type", "random/std::extreme_value_distribution::param_type::a", "random/std::extreme_value_distribution::param_type::b", "random/std::extreme_value_distribution::param_type::operator==", "random/std::extreme_value_distribution::param_type::operator!="]

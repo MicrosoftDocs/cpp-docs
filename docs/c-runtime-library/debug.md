@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _DEBUG"
 title: "_DEBUG"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DEBUG macro", "_DEBUG macro"]

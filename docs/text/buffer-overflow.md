@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Buffer Overflow"
 title: "Buffer Overflow"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["buffers [C++], character sizes", "buffer overflows [C++]", "MBCS [C++], buffer overflow"]

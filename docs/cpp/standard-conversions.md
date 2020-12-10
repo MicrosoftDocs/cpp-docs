@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Standard conversions"
 title: "Standard conversions"
 ms.date: "10/02/2019"
 helpviewer_keywords: ["standard conversions, categories of", "L-values [C++]", "conversions, standard"]

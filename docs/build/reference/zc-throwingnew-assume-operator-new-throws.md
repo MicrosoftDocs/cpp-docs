@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zc:throwingNew (Assume operator new throws)"
 title: "/Zc:throwingNew (Assume operator new throws)"
 ms.date: "03/01/2018"
 f1_keywords: ["throwingNew", "/Zc:throwingNew"]

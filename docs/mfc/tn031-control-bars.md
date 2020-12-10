@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN031: Control Bars"
 title: "TN031: Control Bars"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.controls.bars"]

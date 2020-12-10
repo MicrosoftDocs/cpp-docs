@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parameters"
 title: "Parameters"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["arguments [C++], function", "function parameters", "parameters [C++]", "function arguments, vs. parameters", "parameters [C++], function", "functions [C], parameters", "function parameters, syntax", "ellipsis (...), parameters", "... ellipsis"]

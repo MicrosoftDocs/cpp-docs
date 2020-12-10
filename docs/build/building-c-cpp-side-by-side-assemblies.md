@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building C/C++ Side-by-side Assemblies"
 title: "Building C/C++ Side-by-side Assemblies"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["side-by-side applications [C++]"]

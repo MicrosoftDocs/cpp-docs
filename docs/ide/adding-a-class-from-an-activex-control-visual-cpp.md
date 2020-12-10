@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add a class from an ActiveX control"
 title: "Add a class from an ActiveX control"
 ms.date: "11/08/2018"
 f1_keywords: ["vc.codewiz.class.axcontrol"]

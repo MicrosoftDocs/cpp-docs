@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: scheduler_resource_allocation_error Class"
 title: "scheduler_resource_allocation_error Class"
 ms.date: "11/04/2016"
 f1_keywords: ["scheduler_resource_allocation_error", "CONCRT/concurrency::scheduler_resource_allocation_error", "CONCRT/concurrency::scheduler_resource_allocation_error::scheduler_resource_allocation_error", "CONCRT/concurrency::scheduler_resource_allocation_error::get_error_code"]

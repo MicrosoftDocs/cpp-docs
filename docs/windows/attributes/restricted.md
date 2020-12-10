@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: restricted"
 title: "restricted (C++ COM Attribute)"
 ms.date: "10/03/2018"
 f1_keywords: ["vc-attr.restricted"]

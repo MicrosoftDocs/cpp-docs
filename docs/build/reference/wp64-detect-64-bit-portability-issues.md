@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Wp64 (Detect 64-Bit Portability Issues)"
 title: "/Wp64 (Detect 64-Bit Portability Issues)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.Detect64BitPortabilityProblems", "VC.Project.VCCLCompilerTool.Detect64BitPortabilityProblems", "/wp64"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Frame Window Classes (Architecture)"
 title: "Frame Window Classes (Architecture)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["frame window classes [MFC], document/view architecture"]

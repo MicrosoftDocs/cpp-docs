@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NotifyHandler"
 title: "NotifyHandler"
 ms.date: "11/04/2016"
 ms.topic: "reference"

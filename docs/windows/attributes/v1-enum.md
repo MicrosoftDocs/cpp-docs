@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: v1_enum"
 title: "v1_enum (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.v1_enum"]

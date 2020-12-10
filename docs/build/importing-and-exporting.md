@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Importing and Exporting"
 title: "Importing and Exporting"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["DLLs [C++], importing", "exporting DLLs [C++]", "importing DLLs [C++]", "DLLs [C++], exporting from", "__declspec(dllimport) keyword [C++]"]

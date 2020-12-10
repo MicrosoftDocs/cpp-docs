@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Graphic Objects"
 title: "Graphic Objects"
 ms.date: "11/04/2016"
 f1_keywords: ["HRGN", "HFONT", "HBITMAP"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NMAKE Fatal Error U1033"
 title: "NMAKE Fatal Error U1033"
 ms.date: "11/04/2016"
 f1_keywords: ["U1033"]

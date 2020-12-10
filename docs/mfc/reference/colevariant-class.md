@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleVariant Class"
 title: "COleVariant Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleVariant", "AFXDISP/COleVariant", "AFXDISP/COleVariant::COleVariant", "AFXDISP/COleVariant::Attach", "AFXDISP/COleVariant::ChangeType", "AFXDISP/COleVariant::Clear", "AFXDISP/COleVariant::Detach", "AFXDISP/COleVariant::GetByteArrayFromVariantArray", "AFXDISP/COleVariant::SetString"]

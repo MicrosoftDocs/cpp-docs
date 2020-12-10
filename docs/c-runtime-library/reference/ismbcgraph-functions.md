@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l"
 title: "_ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l"
 ms.date: "4/2/2020"
 api_name: ["_ismbcpunct_l", "_ismbcblank", "_ismbcprint", "_ismbcgraph_l", "_ismbcblank_l", "_ismbcpunct", "_ismbcprint_l", "_ismbcspace_l", "_ismbcspace", "_ismbcgraph", "_o__ismbcblank", "_o__ismbcblank_l", "_o__ismbcgraph", "_o__ismbcgraph_l", "_o__ismbcprint", "_o__ismbcprint_l", "_o__ismbcpunct", "_o__ismbcpunct_l", "_o__ismbcspace", "_o__ismbcspace_l"]

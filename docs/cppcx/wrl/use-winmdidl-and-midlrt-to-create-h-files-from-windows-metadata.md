@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use winmdidl.exe and midlrt.exe to create .h files from windows metadata"
 title: "How to: Use winmdidl.exe and midlrt.exe to create .h files from windows metadata"
 ms.date: "11/04/2016"
 ms.topic: "reference"

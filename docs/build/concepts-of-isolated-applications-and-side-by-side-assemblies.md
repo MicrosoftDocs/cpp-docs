@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concepts of Isolated Applications and Side-by-side Assemblies"
 title: "Concepts of Isolated Applications and Side-by-side Assemblies"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["side-by-side assemblies [C++]", "isolated assemblies [C++]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRect Class"
 title: "CRect Class"
 ms.date: "11/06/2018"
 f1_keywords: ["CRect", "ATLTYPES/ATL::CRect", "ATLTYPES/ATL::CRect::CRect", "ATLTYPES/ATL::CRect::BottomRight", "ATLTYPES/ATL::CRect::CenterPoint", "ATLTYPES/ATL::CRect::CopyRect", "ATLTYPES/ATL::CRect::DeflateRect", "ATLTYPES/ATL::CRect::EqualRect", "ATLTYPES/ATL::CRect::Height", "ATLTYPES/ATL::CRect::InflateRect", "ATLTYPES/ATL::CRect::IntersectRect", "ATLTYPES/ATL::CRect::IsRectEmpty", "ATLTYPES/ATL::CRect::IsRectNull", "ATLTYPES/ATL::CRect::MoveToX", "ATLTYPES/ATL::CRect::MoveToXY", "ATLTYPES/ATL::CRect::MoveToY", "ATLTYPES/ATL::CRect::NormalizeRect", "ATLTYPES/ATL::CRect::OffsetRect", "ATLTYPES/ATL::CRect::PtInRect", "ATLTYPES/ATL::CRect::SetRect", "ATLTYPES/ATL::CRect::SetRectEmpty", "ATLTYPES/ATL::CRect::Size", "ATLTYPES/ATL::CRect::SubtractRect", "ATLTYPES/ATL::CRect::TopLeft", "ATLTYPES/ATL::CRect::UnionRect", "ATLTYPES/ATL::CRect::Width"]

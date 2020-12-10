@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CObject"
 title: "Using CObject"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["examples [MFC], CObject", "root base class for MFC", "derived classes [MFC], from CObject", "MFC, base class", "CObject class [MFC]"]

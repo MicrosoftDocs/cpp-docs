@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CriticalSection Class"
 title: "CriticalSection Class"
 ms.date: "09/24/2018"
 ms.topic: "reference"

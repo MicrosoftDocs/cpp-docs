@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ALIGN (Section Alignment)"
 title: "/ALIGN (Section Alignment)"
 ms.date: "12/29/2017"
 f1_keywords: ["VC.Project.VCLinkerTool.Alignment", "/align"]

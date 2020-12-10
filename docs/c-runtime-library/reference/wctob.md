@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: wctob"
 title: "wctob"
 ms.date: "4/2/2020"
 api_name: ["wctob", "_o_wctob"]

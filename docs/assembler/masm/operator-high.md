@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator HIGH"
 title: "operator HIGH"
 ms.date: "12/17/2019"
 f1_keywords: ["HIGH", "operator HIGH"]

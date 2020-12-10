@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tree Control Styles"
 title: "Tree Control Styles"
 ms.date: "11/04/2016"
 f1_keywords: ["TVS_SINGLEEXPAND", "TVS_LINESATROOT", "TVS_HASBUTTONS", "TVS_NOTOOLTIPS", "TVS_HASLINES"]

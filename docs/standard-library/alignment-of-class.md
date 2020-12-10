@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: alignment_of Class"
 title: "alignment_of Class"
 ms.date: "12/11/2019"
 f1_keywords: ["type_traits/std::alignment_of"]

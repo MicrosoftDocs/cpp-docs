@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Details::IEquatable Interface"
 title: "Platform::Details::IEquatable Interface"
 ms.date: "12/30/2016"
 ms.topic: "reference"

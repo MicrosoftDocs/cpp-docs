@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: return Statement (C++)"
 title: "return Statement (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["return_cpp"]

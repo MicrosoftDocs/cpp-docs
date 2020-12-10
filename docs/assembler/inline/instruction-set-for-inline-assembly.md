@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Instruction Set for Inline Assembly"
 title: "Instruction Set for Inline Assembly"
 ms.date: "08/30/2018"
 ms.topic: "reference"

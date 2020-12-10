@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _malloc_dbg"
 title: "_malloc_dbg"
 ms.date: "11/04/2016"
 api_name: ["_malloc_dbg"]

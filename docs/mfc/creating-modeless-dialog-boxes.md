@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating Modeless Dialog Boxes"
 title: "Creating Modeless Dialog Boxes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC dialog boxes [MFC], modeless", "modeless dialog boxes [MFC], creating", "MFC dialog boxes [MFC], creating"]

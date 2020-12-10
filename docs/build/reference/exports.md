@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EXPORTS"
 title: "EXPORTS"
 ms.date: "09/07/2018"
 f1_keywords: ["EXPORTS"]

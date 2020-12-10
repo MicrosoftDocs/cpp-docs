@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: difftime, _difftime32, _difftime64"
 title: "difftime, _difftime32, _difftime64"
 ms.date: "4/2/2020"
 api_name: ["_difftime32", "difftime", "_difftime64", "_o__difftime32", "_o__difftime64"]

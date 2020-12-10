@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCPropertyGridColorProperty Class"
 title: "CMFCPropertyGridColorProperty Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableAutomaticButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableOtherButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::GetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColumnsNumber", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetOriginalValue"]

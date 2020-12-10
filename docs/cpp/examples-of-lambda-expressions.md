@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Examples of Lambda Expressions"
 title: "Examples of Lambda Expressions"
 ms.date: "05/07/2019"
 helpviewer_keywords: ["lambda expressions [C++], examples"]

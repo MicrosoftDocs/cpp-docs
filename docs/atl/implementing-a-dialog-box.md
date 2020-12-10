@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing a Dialog Box"
 title: "Implementing a Dialog Box"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CSimpleDialog class, implementing dialog boxes in ATL", "dialog boxes, ATL", "CAxDialogImpl class, implementing dialog boxes in ATL", "ATL, dialog boxes"]

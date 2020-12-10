@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN044: MFC Support for DBCS"
 title: "TN044: MFC Support for DBCS"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["TN044"]

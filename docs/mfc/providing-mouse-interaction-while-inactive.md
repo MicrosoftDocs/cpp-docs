@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Providing Mouse Interaction While Inactive"
 title: "Providing Mouse Interaction While Inactive"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], mouse interaction"]

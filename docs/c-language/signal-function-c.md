@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: signal Function (C)"
 title: "signal Function (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["signal function"]

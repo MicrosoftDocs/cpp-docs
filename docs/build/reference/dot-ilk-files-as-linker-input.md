@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .Ilk Files as Linker Input"
 title: ".Ilk Files as Linker Input"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ILK files", ".ilk files"]

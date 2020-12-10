@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Error LNK1248"
 title: "Linker Tools Error LNK1248"
 ms.date: "12/28/2017"
 f1_keywords: ["LNK1248"]

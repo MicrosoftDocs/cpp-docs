@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /NATVIS (Add Natvis to PDB)"
 title: "/NATVIS (Add Natvis to PDB)"
 ms.date: "08/10/2017"
 f1_keywords: ["/natvis"]

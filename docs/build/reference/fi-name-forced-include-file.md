@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /FI (Name Forced Include File)"
 title: "/FI (Name Forced Include File)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCNMakeTool.ForcedIncludes", "VC.Project.VCCLCompilerTool.ForcedIncludeFiles", "VC.Project.VCCLWCECompilerTool.ForcedIncludeFiles"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Adding a CTaskDialog to an Application"
 title: "Walkthrough: Adding a CTaskDialog to an Application"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["CTaskDialog, adding", "walkthroughs [MFC], dialogs"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Vectorizer and parallelizer messages"
 title: "Vectorizer and parallelizer messages"
 ms.date: "04/17/2019"
 f1_keywords: ["C5011", "C5002", "C5021", "C5001", "C5012"]

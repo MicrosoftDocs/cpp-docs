@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OpenMP in Visual C++"
 title: "OpenMP in Visual C++"
 ms.date: "03/20/2019"
 helpviewer_keywords: ["OpenMP in Visual C++", "explicit parallelization", "explicit parallelization, OpenMP in Visual C++"]

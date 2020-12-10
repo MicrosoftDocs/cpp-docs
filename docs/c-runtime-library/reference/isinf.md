@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isinf"
 title: "isinf"
 ms.date: "01/31/2019"
 f1_keywords: ["isinf", "math/isinf"]

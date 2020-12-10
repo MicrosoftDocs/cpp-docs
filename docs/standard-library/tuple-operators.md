@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;tuple&gt; operators"
 title: "&lt;tuple&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["tuple/std::operator!=", "tuple/std::operator>", "tuple/std::operator>=", "tuple/std::operator<", "tuple/std::operator<=", "tuple/std::operator=="]

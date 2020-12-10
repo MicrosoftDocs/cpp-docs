@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleLinksDialog Class"
 title: "COleLinksDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleLinksDialog", "AFXODLGS/COleLinksDialog", "AFXODLGS/COleLinksDialog::COleLinksDialog", "AFXODLGS/COleLinksDialog::DoModal", "AFXODLGS/COleLinksDialog::m_el"]

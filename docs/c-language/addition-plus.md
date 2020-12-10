@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Addition (+)"
 title: "Addition (+)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["pointers, adding integers"]

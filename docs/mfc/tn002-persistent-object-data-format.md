@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN002: Persistent Object Data Format"
 title: "TN002: Persistent Object Data Format"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["VERSIONABLE_SCHEMA macro [MFC]", "persistent object data", "CArchive class [MFC], support for persistent data", "persistent C++ objects [MFC]", "TN002"]

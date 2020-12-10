@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActivatableClass Macros"
 title: "ActivatableClass Macros"
 ms.date: "11/04/2016"
 ms.topic: "reference"

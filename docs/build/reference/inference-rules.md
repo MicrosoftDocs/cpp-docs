@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inference Rules"
 title: "Inference Rules"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["inference rules in NMAKE", "rules, inference", "NMAKE program, inference rules"]

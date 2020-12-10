@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ComposableBase Class"
 title: "ComposableBase Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"

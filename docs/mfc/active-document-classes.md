@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Active Document Classes"
 title: "Active Document Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Active document classes [MFC]"]

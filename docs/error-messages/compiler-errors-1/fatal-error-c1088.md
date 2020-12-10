@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fatal Error C1088"
 title: "Fatal Error C1088"
 ms.date: "11/04/2016"
 f1_keywords: ["C1088"]

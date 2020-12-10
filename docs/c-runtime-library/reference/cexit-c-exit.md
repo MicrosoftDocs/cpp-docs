@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _cexit, _c_exit"
 title: "_cexit, _c_exit"
 ms.date: "4/2/2020"
 api_name: ["_c_exit", "_cexit", "_o__cexit"]

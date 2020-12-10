@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: unary_function Struct"
 title: "unary_function Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::unary"]

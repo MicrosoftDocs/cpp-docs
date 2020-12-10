@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /SUMMARY"
 title: "/SUMMARY"
 ms.date: "11/04/2016"
 f1_keywords: ["/summary"]

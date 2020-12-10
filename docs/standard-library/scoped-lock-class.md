@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: scoped_lock Class"
 title: "scoped_lock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["mutex/std::scoped_lock"]

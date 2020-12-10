@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: memcpy_s, wmemcpy_s"
 title: "memcpy_s, wmemcpy_s"
 ms.date: "4/2/2020"
 api_name: ["memcpy_s", "wmemcpy_s", "_o_memcpy_s", "_o_wmemcpy_s"]

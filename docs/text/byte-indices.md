@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Byte Indices"
 title: "Byte Indices"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MBCS [C++], byte indices", "byte indices [C++]"]

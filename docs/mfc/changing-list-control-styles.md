@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Changing List Control Styles"
 title: "Changing List Control Styles"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["styles [MFC], CListCtrl", "CListCtrl class [MFC], styles", "CListCtrl class [MFC], changing styles"]

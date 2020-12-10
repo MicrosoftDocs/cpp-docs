@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EOF, WEOF"
 title: "EOF, WEOF"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["EOF function", "WEOF function", "end of file"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Deriving Controls from a Standard Control"
 title: "Deriving Controls from a Standard Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["standard controls [MFC], deriving controls from", "common controls [MFC], deriving from", "derived controls", "controls [MFC], derived", "Windows common controls [MFC], deriving from", "standard controls"]

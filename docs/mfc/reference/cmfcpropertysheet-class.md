@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCPropertySheet Class"
 title: "CMFCPropertySheet Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet::CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet::AddPage", "AFXPROPERTYSHEET/CMFCPropertySheet::AddPageToTree", "AFXPROPERTYSHEET/CMFCPropertySheet::AddTreeCategory", "AFXPROPERTYSHEET/CMFCPropertySheet::EnablePageHeader", "AFXPROPERTYSHEET/CMFCPropertySheet::GetHeaderHeight", "AFXPROPERTYSHEET/CMFCPropertySheet::GetLook", "AFXPROPERTYSHEET/CMFCPropertySheet::GetNavBarWidth", "AFXPROPERTYSHEET/CMFCPropertySheet::GetTab", "AFXPROPERTYSHEET/CMFCPropertySheet::InitNavigationControl", "AFXPROPERTYSHEET/CMFCPropertySheet::OnActivatePage", "AFXPROPERTYSHEET/CMFCPropertySheet::OnDrawPageHeader", "AFXPROPERTYSHEET/CMFCPropertySheet::OnRemoveTreePage", "AFXPROPERTYSHEET/CMFCPropertySheet::RemoveCategory", "AFXPROPERTYSHEET/CMFCPropertySheet::RemovePage", "AFXPROPERTYSHEET/CMFCPropertySheet::SetIconsList", "AFXPROPERTYSHEET/CMFCPropertySheet::SetLook"]

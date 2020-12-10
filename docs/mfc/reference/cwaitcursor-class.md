@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWaitCursor Class"
 title: "CWaitCursor Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWaitCursor", "AFXWIN/CWaitCursor", "AFXWIN/CWaitCursor::CWaitCursor", "AFXWIN/CWaitCursor::Restore"]

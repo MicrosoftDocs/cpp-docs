@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ Standard Library Overview"
 title: "C++ Standard Library Overview"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["headers, C++ library", "C++ Standard Library", "libraries, Standard C++", "C++ Standard Library, headers"]

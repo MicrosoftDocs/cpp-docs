@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: D. The schedule clause"
 title: "D. The schedule clause"
 ms.date: "01/22/2019"
 ms.assetid: bf3d8f51-ea05-4803-bf55-657c12e91efe

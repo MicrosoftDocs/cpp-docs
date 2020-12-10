@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Output Parameters"
 title: "Output Parameters"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["OLE DB, stored procedures", "stored procedures, calling", "stored procedures, parameters", "procedure calls", "procedure calls, stored procedures"]

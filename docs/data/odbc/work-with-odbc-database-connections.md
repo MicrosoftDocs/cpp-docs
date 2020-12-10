@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Work with ODBC Database Connections"
 title: "Work with ODBC Database Connections"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["database connections [C++], ODBC", "ODBC connections [C++]", "ODBC [C++], connectivity", "connections [C++], databases", "databases [C++], connecting to", "ODBC connections [C++], databases"]

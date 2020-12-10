@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Asynchronous Agents"
 title: "Asynchronous Agents"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["asynchronous agents", "agents [Concurrency Runtime]"]

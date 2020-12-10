@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComEnumImpl Class"
 title: "CComEnumImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComEnumImpl", "ATLCOM/ATL::CComEnumImpl", "ATLCOM/ATL::CComEnumImpl::CComEnumImpl", "ATLCOM/ATL::CComEnumImpl::Clone", "ATLCOM/ATL::CComEnumImpl::Init", "ATLCOM/ATL::CComEnumImpl::Next", "ATLCOM/ATL::CComEnumImpl::Reset", "ATLCOM/ATL::CComEnumImpl::Skip", "ATLCOM/ATL::CComEnumImpl::m_begin", "ATLCOM/ATL::CComEnumImpl::m_dwFlags", "ATLCOM/ATL::CComEnumImpl::m_end", "ATLCOM/ATL::CComEnumImpl::m_iter", "ATLCOM/ATL::CComEnumImpl::m_spUnk"]

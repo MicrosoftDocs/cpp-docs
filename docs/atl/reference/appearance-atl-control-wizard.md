@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Appearance, ATL Control Wizard"
 title: "Appearance, ATL Control Wizard"
 ms.date: "08/31/2018"
 f1_keywords: ["vc.codewiz.class.atl.control.misc"]

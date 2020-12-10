@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tree Control Item Selection"
 title: "Tree Control Item Selection"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tree controls [MFC], item selection", "controls [MFC], selecting items in", "CTreeCtrl class [MFC], item selection", "item selection in tree controls"]

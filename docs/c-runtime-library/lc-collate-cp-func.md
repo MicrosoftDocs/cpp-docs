@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ___lc_collate_cp_func"
 title: "___lc_collate_cp_func"
 ms.date: "4/2/2020"
 api_name: ["___lc_collate_cp_func", "_o____lc_collate_cp_func"]

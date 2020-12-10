@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCShellListCtrl Class"
 title: "CMFCShellListCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCShellListCtrl", "AFXSHELLLISTCTRL/CMFCShellListCtrl", "AFXSHELLLISTCTRL/CMFCShellListCtrl::DisplayFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::DisplayParentFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::EnableShellContextMenu", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentFolderName", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentItemIdList", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentShellFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetItemPath", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetItemTypes", "AFXSHELLLISTCTRL/CMFCShellListCtrl::IsDesktop", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnCompareItems", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnFormatFileDate", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnFormatFileSize", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnGetItemIcon", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnGetItemText", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnSetColumns", "AFXSHELLLISTCTRL/CMFCShellListCtrl::Refresh", "AFXSHELLLISTCTRL/CMFCShellListCtrl::SetItemTypes"]

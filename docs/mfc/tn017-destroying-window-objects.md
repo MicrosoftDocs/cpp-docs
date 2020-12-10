@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN017: Destroying Window Objects"
 title: "TN017: Destroying Window Objects"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.objects"]

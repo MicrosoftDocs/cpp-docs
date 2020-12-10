@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Menu Editor (C++)"
 title: "Menu Editor (C++)"
 ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.menu.F1", "vc.editors.menu"]

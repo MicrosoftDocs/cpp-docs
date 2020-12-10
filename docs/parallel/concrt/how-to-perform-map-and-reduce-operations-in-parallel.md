@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Perform Map and Reduce Operations in Parallel"
 title: "How to: Perform Map and Reduce Operations in Parallel"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["parallel_transform function, example", "parallel map and reduce, example", "parallel_reduce function, example"]

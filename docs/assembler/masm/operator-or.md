@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator OR"
 title: "operator OR"
 ms.date: "12/17/2019"
 helpviewer_keywords: ["operator OR", "OR operator, bitwise"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Active Technology and DLLs"
 title: "Active Technology and DLLs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["in-process server DLLs", "Automation [C++], DLLs", "DLLs [C++], Active Technology", "Active technology [C++]", "MFC DLLs [C++], Active Technology"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDaoWorkspaceInfo Structure"
 title: "CDaoWorkspaceInfo Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["CDaoWorkspaceInfo"]

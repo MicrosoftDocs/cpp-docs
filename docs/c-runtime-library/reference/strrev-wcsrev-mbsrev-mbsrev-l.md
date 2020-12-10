@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strrev, _wcsrev, _mbsrev, _mbsrev_l"
 title: "_strrev, _wcsrev, _mbsrev, _mbsrev_l"
 ms.date: "4/2/2020"
 api_name: ["_wcsrev", "_mbsrev", "_strrev", "_mbsrev_l", "_o__mbsrev", "_o__mbsrev_l"]

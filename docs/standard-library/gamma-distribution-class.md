@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: gamma_distribution Class"
 title: "gamma_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::gamma_distribution", "random/std::gamma_distribution::reset", "random/std::gamma_distribution::alpha", "random/std::gamma_distribution::beta", "random/std::gamma_distribution::param", "random/std::gamma_distribution::min", "random/std::gamma_distribution::max", "random/std::gamma_distribution::operator()", "random/std::gamma_distribution::param_type", "random/std::gamma_distribution::param_type::alpha", "random/std::gamma_distribution::param_type::beta", "random/std::gamma_distribution::param_type::operator==", "random/std::gamma_distribution::param_type::operator!="]

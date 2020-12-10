@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fullpath_dbg, _wfullpath_dbg"
 title: "_fullpath_dbg, _wfullpath_dbg"
 ms.date: "11/04/2016"
 api_name: ["_wfullpath_dbg", "_fullpath_dbg"]

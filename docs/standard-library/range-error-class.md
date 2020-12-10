@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: range_error Class"
 title: "range_error Class"
 ms.date: "08/14/2018"
 f1_keywords: ["stdexcept/std::range_error"]

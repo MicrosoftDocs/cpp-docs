@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Yc (Create Precompiled Header File)"
 title: "/Yc (Create Precompiled Header File)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.UsePrecompiledHeader", "/yc", "VC.Project.VCCLWCECompilerTool.PrecompiledHeaderThrough", "VC.Project.VCCLWCECompilerTool.UsePrecompiledHeader", "VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough"]

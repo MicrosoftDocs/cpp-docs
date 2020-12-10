@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bernoulli_distribution Class"
 title: "bernoulli_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::bernoulli_distribution", "random/std::bernoulli_distribution::reset", "random/std::bernoulli_distribution::p", "random/std::bernoulli_distribution::param", "random/std::bernoulli_distribution::min", "random/std::bernoulli_distribution::max", "random/std::bernoulli_distribution::operator()", "random/std::bernoulli_distribution::param_type", "random/std::bernoulli_distribution::param_type::p", "random/std::bernoulli_distribution::param_type::operator==", "random/std::bernoulli_distribution::param_type::operator!="]

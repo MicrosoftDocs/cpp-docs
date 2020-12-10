@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCShellTreeCtrl Class"
 title: "CMFCShellTreeCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCShellTreeCtrl", "AFXSHELLTREECTRL/CMFCShellTreeCtrl", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::EnableShellContextMenu", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetFlags", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetItemPath", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetRelatedList", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnChildNotify", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnGetItemIcon", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnGetItemText", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::Refresh", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SelectPath", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SetFlags", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SetRelatedList"]

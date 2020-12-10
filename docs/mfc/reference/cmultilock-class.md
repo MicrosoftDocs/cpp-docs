@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMultiLock Class"
 title: "CMultiLock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMultiLock", "AFXMT/CMultiLock", "AFXMT/CMultiLock::CMultiLock", "AFXMT/CMultiLock::IsLocked", "AFXMT/CMultiLock::Lock", "AFXMT/CMultiLock::Unlock"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _write"
 title: "_write"
 ms.date: "4/2/2020"
 api_name: ["_write", "_o__write"]

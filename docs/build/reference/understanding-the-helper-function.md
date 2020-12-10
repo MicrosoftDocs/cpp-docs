@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Understanding the Helper Function"
 title: "Understanding the Helper Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["delayed loading of DLLs, helper function", "__delayLoadHelper2 function", "delayimp.lib", "__delayLoadHelper function", "delayhlp.cpp", "delayimp.h", "helper functions"]

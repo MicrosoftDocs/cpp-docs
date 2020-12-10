@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cache_freelist Class"
 title: "cache_freelist Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::cache_freelist", "allocators/stdext::cache_freelist::allocate", "allocators/stdext::cache_freelist::deallocate"]

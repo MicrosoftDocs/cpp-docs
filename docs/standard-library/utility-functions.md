@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;utility&gt; functions"
 title: "&lt;utility&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["utility/std::exchange", "utility/std::forward", "utility/std::make_pair", "utility/std::move", "utility/std::swap"]

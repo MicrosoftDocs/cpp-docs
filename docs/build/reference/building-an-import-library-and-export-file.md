@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building an Import Library and Export File"
 title: "Building an Import Library and Export File"
 ms.date: "09/05/2018"
 f1_keywords: ["VC.Project.VCLibrarianTool.ModuleDefinitionFile", "VC.Project.VCLibrarianTool.ExportNamedFunctions", "VC.Project.VCLibrarianTool.GenerateDebug", "VC.Project.VCLibrarianTool.ForceSymbolReferences"]

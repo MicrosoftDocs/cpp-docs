@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections Namespace"
 title: "Platform::Collections Namespace"
 ms.date: "01/18/2018"
 ms.topic: "reference"

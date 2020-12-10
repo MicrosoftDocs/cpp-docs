@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Choosing a Deployment Method"
 title: "Choosing a Deployment Method"
 ms.date: "03/14/2019"
 helpviewer_keywords: ["redistributing DLLs", "manifests [C++]", "DLLs [C++], redistributing", "side-by-side assemblies [C++]", "dynamic linking [C++]", "application deployment [C++], methods", "deploying applications [C++], methods", "static linking [C++]", "libraries [C++], application deployment issues"]

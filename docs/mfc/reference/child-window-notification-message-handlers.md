@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Child Window Notification Message Handlers"
 title: "Child Window Notification Message Handlers"
 ms.date: "11/04/2016"
 f1_keywords: ["ChildWindow"]

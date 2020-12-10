@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CGopherFileFind Class"
 title: "CGopherFileFind Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CGopherFileFind", "AFXINET/CGopherFileFind", "AFXINET/CGopherFileFind::CGopherFileFind", "AFXINET/CGopherFileFind::FindFile", "AFXINET/CGopherFileFind::FindNextFile", "AFXINET/CGopherFileFind::GetCreationTime", "AFXINET/CGopherFileFind::GetLastAccessTime", "AFXINET/CGopherFileFind::GetLastWriteTime", "AFXINET/CGopherFileFind::GetLength", "AFXINET/CGopherFileFind::GetLocator", "AFXINET/CGopherFileFind::GetScreenName", "AFXINET/CGopherFileFind::IsDots"]

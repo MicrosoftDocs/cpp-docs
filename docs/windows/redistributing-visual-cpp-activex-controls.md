@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Redistributing Visual C++ ActiveX Controls"
 title: "Redistributing Visual C++ ActiveX Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [C++], redistributing", "controls [C++], distributing"]

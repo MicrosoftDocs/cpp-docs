@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: String  (C++/CLI and C++/CX)"
 title: "String  (C++/CLI and C++/CX)"
 ms.date: "10/08/2018"
 ms.topic: "reference"

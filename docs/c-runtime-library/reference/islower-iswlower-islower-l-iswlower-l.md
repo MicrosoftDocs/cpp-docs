@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: islower, iswlower, _islower_l, _iswlower_l"
 title: "islower, iswlower, _islower_l, _iswlower_l"
 ms.date: "4/2/2020"
 api_name: ["iswlower", "_islower_l", "islower", "_iswlower_l", "_o_islower", "_o_iswlower"]

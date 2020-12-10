@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRecentDockSiteInfo Class"
 title: "CRecentDockSiteInfo Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRecentDockSiteInfo", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::CleanUp", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDefaultPaneDivider", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDockedPercent", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDockedRect", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentListOfPanes", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentPaneContainer", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentTabContainer", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::Init", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::IsRecentLeftPane", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::SaveListOfRecentPanes", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::SetInfo", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::StoreDockInfo"]

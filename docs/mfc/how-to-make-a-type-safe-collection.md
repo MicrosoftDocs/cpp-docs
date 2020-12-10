@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Make a Type-Safe Collection"
 title: "How to: Make a Type-Safe Collection"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["type-safe collections [MFC]", "serializing collection-class elements [MFC]", "collection classes [MFC], type safety", "SerializeElements function [MFC]", "collection classes [MFC], template-based", "serialization [MFC], collection classes", "collection classes [MFC], deriving from nontemplate"]

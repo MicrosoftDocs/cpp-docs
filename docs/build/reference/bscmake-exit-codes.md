@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BSCMAKE Exit Codes"
 title: "BSCMAKE Exit Codes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exit codes", "BSCMAKE, exit codes"]

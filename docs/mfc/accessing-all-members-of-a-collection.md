@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing All Members of a Collection"
 title: "Accessing All Members of a Collection"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, collections", "enumerations [MFC]", "enumerating collections [MFC]", "collections [MFC], accessing", "collection classes [MFC]", ", ", ", ", ", ", ", ", ", ", ", ", ", "]

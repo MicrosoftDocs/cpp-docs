@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCtrlView Class"
 title: "CCtrlView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCtrlView", "AFXWIN/CCtrlView", "AFXWIN/CCtrlView::CCtrlView", "AFXWIN/CCtrlView::OnDraw", "AFXWIN/CCtrlView::PreCreateWindow", "AFXWIN/CCtrlView::m_dwDefaultStyle", "AFXWIN/CCtrlView::m_strClass"]

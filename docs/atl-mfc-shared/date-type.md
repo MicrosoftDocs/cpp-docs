@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DATE Type"
 title: "DATE Type"
 ms.date: "11/04/2016"
 f1_keywords: ["DATE"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l"
 title: "_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l"
 ms.date: "4/2/2020"
 api_name: ["_mbsnset", "_strnset", "_mbsnset_l", "_wcsnset_l", "_wcsnset", "_strnset_l", "_o__mbsnset", "_o__mbsnset_l", "_o__wcsnset"]

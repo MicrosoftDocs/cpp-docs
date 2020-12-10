@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Defining an NMAKE Macro"
 title: "Defining an NMAKE Macro"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["macros, NMAKE", "defining NMAKE macros", "NMAKE macros, defining"]

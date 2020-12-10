@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2372"
 title: "Compiler Error C2372"
 ms.date: "03/23/2020"
 f1_keywords: ["C2372"]

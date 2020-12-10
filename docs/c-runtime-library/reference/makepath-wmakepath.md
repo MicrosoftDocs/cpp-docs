@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _makepath, _wmakepath"
 title: "_makepath, _wmakepath"
 ms.date: "4/2/2020"
 api_name: ["_makepath", "_wmakepath", "_o__makepath", "_o__wmakepath"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWinFormsControl Class"
 title: "CWinFormsControl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWinFormsControl", "AFXWINFORMS/CWinFormsControl", "AFXWINFORMS/CWinFormsControl::CWinFormsControl", "AFXWINFORMS/CWinFormsControl::CreateManagedControl", "AFXWINFORMS/CWinFormsControl::GetControl", "AFXWINFORMS/CWinFormsControl::GetControlHandle"]

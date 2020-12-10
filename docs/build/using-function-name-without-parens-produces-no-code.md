@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Function Name Without () Produces No Code"
 title: "Using Function Name Without () Produces No Code"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["functions [C++], without parentheses"]

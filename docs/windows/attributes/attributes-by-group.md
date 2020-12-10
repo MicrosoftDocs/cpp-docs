@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Attributes by Group"
 title: "Attributes by Group"
 ms.custom: "index-page"
 ms.date: "10/02/2018"

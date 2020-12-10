@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _aligned_offset_malloc"
 title: "_aligned_offset_malloc"
 ms.date: "4/2/2020"
 api_name: ["_aligned_offset_malloc", "_o__aligned_offset_malloc"]

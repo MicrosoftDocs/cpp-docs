@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implement a connection point"
 title: "Implement a connection point"
 ms.date: "05/14/2019"
 helpviewer_keywords: ["connection points [C++], implementing", "implement connection point wizard [C++]"]

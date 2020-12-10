@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: allocator_chunklist Class"
 title: "allocator_chunklist Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::allocator_chunklist", "allocators/stdext::allocators::allocator_chunklist"]

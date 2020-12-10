@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dual Interfaces Classes"
 title: "Dual Interfaces Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

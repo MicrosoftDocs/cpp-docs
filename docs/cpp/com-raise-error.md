@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _com_raise_error"
 title: "_com_raise_error"
 ms.date: "11/04/2016"
 f1_keywords: ["_com_raise_error"]

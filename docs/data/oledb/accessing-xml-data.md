@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing XML Data"
 title: "Accessing XML Data"
 ms.date: "10/18/2018"
 helpviewer_keywords: ["data access [C++], XML data", "XML [C++], accessing data", "CXMLAccessor class, retrieving XML data", "data [C++], XML data access", "rowsets [C++], retrieving XML data", "CStreamRowset class, retrieving XML data"]

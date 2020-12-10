@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building apps and libraries (C++/CX)"
 title: "Building apps and libraries (C++/CX)"
 ms.date: "12/30/2016"
 ms.assetid: ec2821a5-3479-4e64-9c2d-c777049f2cdc

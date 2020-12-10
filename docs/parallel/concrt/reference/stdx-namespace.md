@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: stdx Namespace"
 title: "stdx Namespace"
 ms.date: "11/04/2016"
 f1_keywords: ["ppltasks/stdx"]

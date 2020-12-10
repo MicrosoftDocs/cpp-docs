@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: once pragma"
 title: "once pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.once", "once_CPP"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TMP_MAX, L_tmpnam"
 title: "TMP_MAX, L_tmpnam"
 ms.date: "11/04/2016"
 f1_keywords: ["TMP_MAX", "L_tmpnam"]

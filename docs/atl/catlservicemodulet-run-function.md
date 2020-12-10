@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAtlServiceModuleT::Run Function"
 title: "CAtlServiceModuleT::Run Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL services, security"]

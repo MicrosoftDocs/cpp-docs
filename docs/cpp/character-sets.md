@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tokens and character sets"
 title: "Tokens and character sets"
 ms.date: "12/10/2019"
 helpviewer_keywords: ["Tokens (C++)", "Character sets", "basic source character set (C++)", "universal character names", "basic execution character set (C++)"]

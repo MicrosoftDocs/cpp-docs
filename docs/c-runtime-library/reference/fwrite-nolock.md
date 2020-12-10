@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fwrite_nolock"
 title: "_fwrite_nolock"
 ms.date: "4/2/2020"
 api_name: ["_fwrite_nolock", "_o__fwrite_nolock"]

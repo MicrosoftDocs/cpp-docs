@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _setmaxstdio"
 title: "_setmaxstdio"
 ms.date: "05/21/2019"
 api_name: ["_setmaxstdio"]

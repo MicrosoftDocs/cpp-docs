@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 2. Directives"
 title: "2. Directives"
 ms.date: "01/18/2019"
 ms.assetid: d1a69374-6c03-45fb-8c86-e91cea8adae8

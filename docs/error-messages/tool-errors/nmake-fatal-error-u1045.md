@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NMAKE Fatal Error U1045"
 title: "NMAKE Fatal Error U1045"
 ms.date: "08/11/2019"
 f1_keywords: ["U1045"]

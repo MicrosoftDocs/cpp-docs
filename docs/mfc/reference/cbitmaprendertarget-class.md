@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CBitmapRenderTarget Class"
 title: "CBitmapRenderTarget Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CBitmapRenderTarget", "AFXRENDERTARGET/CBitmapRenderTarget", "AFXRENDERTARGET/CBitmapRenderTarget::CBitmapRenderTarget", "AFXRENDERTARGET/CBitmapRenderTarget::Attach", "AFXRENDERTARGET/CBitmapRenderTarget::Detach", "AFXRENDERTARGET/CBitmapRenderTarget::GetBitmap", "AFXRENDERTARGET/CBitmapRenderTarget::GetBitmapRenderTarget", "AFXRENDERTARGET/CBitmapRenderTarget::m_pBitmapRenderTarget"]

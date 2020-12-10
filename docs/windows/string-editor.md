@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: String Editor (C++)"
 title: "String Editor (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.string.F1", "vc.editors.string"]

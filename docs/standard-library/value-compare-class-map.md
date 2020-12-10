@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: value_compare Class (&lt;map&gt;)"
 title: "value_compare Class (&lt;map&gt;)"
 ms.date: "11/04/2016"
 f1_keywords: ["std::value_compare", "std.value_compare", "map/std::value_compare"]

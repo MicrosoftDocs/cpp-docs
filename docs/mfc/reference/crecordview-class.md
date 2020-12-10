@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRecordView Class"
 title: "CRecordView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRecordView", "AFXDB/CRecordView", "AFXDB/CRecordView::CRecordView", "AFXDB/CRecordView::IsOnFirstRecord", "AFXDB/CRecordView::IsOnLastRecord", "AFXDB/CRecordView::OnGetRecordset", "AFXDB/CRecordView::OnMove"]

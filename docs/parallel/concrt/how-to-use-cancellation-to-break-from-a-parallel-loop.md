@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Cancellation to Break from a Parallel Loop"
 title: "How to: Use Cancellation to Break from a Parallel Loop"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["writing a parallel search algorithm [Concurrency Runtime]", "parallel search algorithm, writing [Concurrency Runtime]"]

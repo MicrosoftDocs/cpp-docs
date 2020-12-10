@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: appdomain"
 title: "appdomain"
 ms.date: "11/04/2016"
 f1_keywords: ["appdomain_cpp"]

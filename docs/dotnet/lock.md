@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: lock"
 title: "lock"
 ms.date: "11/04/2016"
 ms.topic: "reference"

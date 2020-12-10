@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Creating and Closing Recordsets (ODBC)"
 title: "Recordset: Creating and Closing Recordsets (ODBC)"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["ODBC recordsets, creating", "recordsets, creating", "recordsets, opening", "recordsets, closing", "ODBC recordsets, closing", "ODBC recordsets, opening"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2449"
 title: "Compiler Error C2449"
 ms.date: "11/04/2016"
 f1_keywords: ["C2449"]

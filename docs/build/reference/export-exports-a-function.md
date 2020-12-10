@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /EXPORT (Exports a Function)"
 title: "/EXPORT (Exports a Function)"
 ms.date: "09/05/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.ExportFunctions", "/export"]

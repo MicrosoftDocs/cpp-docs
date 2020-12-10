@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISchedulerProxy Structure"
 title: "ISchedulerProxy Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["ISchedulerProxy", "CONCRTRM/concurrency::ISchedulerProxy", "CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::BindContext", "CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::CreateOversubscriber", "CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::RequestInitialVirtualProcessors", "CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::Shutdown", "CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::SubscribeCurrentThread", "CONCRTRM/concurrency::ISchedulerProxy::ISchedulerProxy::UnbindContext"]

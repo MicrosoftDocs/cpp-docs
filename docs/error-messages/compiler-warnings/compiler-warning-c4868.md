@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4868"
 title: "Compiler Warning C4868"
 ms.date: "10/26/2017"
 f1_keywords: ["C4868"]

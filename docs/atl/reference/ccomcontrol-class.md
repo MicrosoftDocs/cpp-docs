@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComControl Class"
 title: "CComControl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComControl", "ATLCTL/ATL::CComControl", "ATLCTL/ATL::CComControl::CComControl", "ATLCTL/ATL::CComControl::ControlQueryInterface", "ATLCTL/ATL::CComControl::CreateControlWindow", "ATLCTL/ATL::CComControl::FireOnChanged", "ATLCTL/ATL::CComControl::FireOnRequestEdit", "ATLCTL/ATL::CComControl::MessageBox"]

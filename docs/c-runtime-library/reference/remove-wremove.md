@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: remove, _wremove"
 title: "remove, _wremove"
 ms.date: "4/2/2020"
 api_name: ["_wremove", "remove", "_o__wremove", "_o_remove"]

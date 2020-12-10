@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _status87, _statusfp, _statusfp2"
 title: "_status87, _statusfp, _statusfp2"
 ms.date: "04/05/2018"
 api_name: ["_statusfp2", "_statusfp", "_status87"]

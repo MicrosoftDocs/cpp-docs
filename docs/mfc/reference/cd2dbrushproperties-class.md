@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DBrushProperties Class"
 title: "CD2DBrushProperties Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DBrushProperties", "AFXRENDERTARGET/CD2DBrushProperties", "AFXRENDERTARGET/CD2DBrushProperties::CD2DBrushProperties", "AFXRENDERTARGET/CD2DBrushProperties::CommonInit"]

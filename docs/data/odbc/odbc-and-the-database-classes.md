@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ODBC and the Database Classes"
 title: "ODBC and the Database Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["database classes [C++], ODBC", "ODBC API functions [C++]", "ODBC classes [C++], MFC database classes", "MFC [C++], ODBC and"]

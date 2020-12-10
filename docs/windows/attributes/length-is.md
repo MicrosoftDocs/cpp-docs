@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: length_is"
 title: "length_is (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.length_is"]

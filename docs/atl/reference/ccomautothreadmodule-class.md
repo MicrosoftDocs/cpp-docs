@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComAutoThreadModule Class"
 title: "CComAutoThreadModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComAutoThreadModule", "ATLBASE/ATL::CComAutoThreadModule", "ATLBASE/ATL::CreateInstance", "ATLBASE/ATL::GetDefaultThreads", "ATLBASE/ATL::Init", "ATLBASE/ATL::Lock", "ATLBASE/ATL::Unlock", "ATLBASE/ATL::dwThreadID", "ATLBASE/ATL::m_Allocator", "ATLBASE/ATL::m_nThreads", "ATLBASE/ATL::m_pApartments"]

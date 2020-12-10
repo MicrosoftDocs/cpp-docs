@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _matherr"
 title: "_matherr"
 ms.date: "04/05/2018"
 api_name: ["_matherr"]

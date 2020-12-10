@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Dialog Box (C++)"
 title: "How To: Create a Dialog Box (C++)"
 ms.date: "02/15/2019"
 helpviewer_keywords: ["dialog boxes [C++], creating", "Dialog Editor [C++], creating dialog boxes", "modal dialog boxes [C++], logon screens", "logon screens", "Test Dialog command", "testing, dialog boxes", "dialog boxes [C++], testing", "dialog boxes [C++], size", "dialog boxes [C++], positioning"]

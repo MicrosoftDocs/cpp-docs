@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `.ERRNZ`"
 title: ".ERRNZ"
 ms.date: "12/17/2019"
 f1_keywords: [".ERRNZ"]

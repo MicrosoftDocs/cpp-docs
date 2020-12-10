@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Templates"
 title: "Function Templates"
 ms.date: "07/15/2019"
 helpviewer_keywords: ["function templates", "templates, function", "function templates, about function templates"]

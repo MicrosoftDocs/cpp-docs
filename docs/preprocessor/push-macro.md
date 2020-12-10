@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: push_macro pragma"
 title: "push_macro pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.push_macro", "push_macro_CPP"]

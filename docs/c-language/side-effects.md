@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Side Effects"
 title: "Side Effects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["expression evaluation, side effects", "side effects in expression evaluation"]

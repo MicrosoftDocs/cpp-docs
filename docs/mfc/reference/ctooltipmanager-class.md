@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTooltipManager Class"
 title: "CTooltipManager Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTooltipManager", "AFXTOOLTIPMANAGER/CTooltipManager", "AFXTOOLTIPMANAGER/CTooltipManager::CreateToolTip", "AFXTOOLTIPMANAGER/CTooltipManager::DeleteToolTip", "AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipParams", "AFXTOOLTIPMANAGER/CTooltipManager::SetTooltipText", "AFXTOOLTIPMANAGER/CTooltipManager::UpdateTooltips"]

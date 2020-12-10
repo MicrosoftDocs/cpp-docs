@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Clipboard"
 title: "Clipboard"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["cutting and copying data", "copying data", "Clipboard", "Clipboard, programming", "transferring data"]

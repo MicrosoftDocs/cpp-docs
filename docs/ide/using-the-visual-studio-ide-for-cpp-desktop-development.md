@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using the Visual Studio IDE for C++ Desktop Development"
 title: "Using the Visual Studio IDE for C++ Desktop Development"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["IDE [C++]", "Visual Studio IDE [C++]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDatabase Class"
 title: "CDatabase Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDatabase", "AFXDB/CDatabase", "AFXDB/CDatabase::CDatabase", "AFXDB/CDatabase::BeginTrans", "AFXDB/CDatabase::BindParameters", "AFXDB/CDatabase::Cancel", "AFXDB/CDatabase::CanTransact", "AFXDB/CDatabase::CanUpdate", "AFXDB/CDatabase::Close", "AFXDB/CDatabase::CommitTrans", "AFXDB/CDatabase::ExecuteSQL", "AFXDB/CDatabase::GetBookmarkPersistence", "AFXDB/CDatabase::GetConnect", "AFXDB/CDatabase::GetCursorCommitBehavior", "AFXDB/CDatabase::GetCursorRollbackBehavior", "AFXDB/CDatabase::GetDatabaseName", "AFXDB/CDatabase::IsOpen", "AFXDB/CDatabase::OnSetOptions", "AFXDB/CDatabase::Open", "AFXDB/CDatabase::OpenEx", "AFXDB/CDatabase::Rollback", "AFXDB/CDatabase::SetLoginTimeout", "AFXDB/CDatabase::SetQueryTimeout", "AFXDB/CDatabase::m_hdbc"]

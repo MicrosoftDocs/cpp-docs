@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator PTR"
 title: "operator PTR"
 ms.date: "12/17/2019"
 f1_keywords: ["PTR", "operator PTR"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Name Spaces"
 title: "Name Spaces"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["union keyword [C], tags", "enumeration tags", "structure tags", "names [C++], declared elements", "name spaces [C++]", "tags, structure tags", "union keyword [C]"]

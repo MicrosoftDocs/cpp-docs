@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IProvideClassInfo2Impl Class"
 title: "IProvideClassInfo2Impl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl::IProvideClassInfo2Impl", "ATLCOM/ATL::IProvideClassInfo2Impl::GetClassInfo", "ATLCOM/ATL::IProvideClassInfo2Impl::GetGUID", "ATLCOM/ATL::IProvideClassInfo2Impl::_tih"]

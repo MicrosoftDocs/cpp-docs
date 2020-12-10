@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .MODEL (32-bit MASM)"
 title: ".MODEL"
 ms.date: "11/05/2019"
 f1_keywords: [".MODEL"]

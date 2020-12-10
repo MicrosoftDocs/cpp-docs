@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Provider Template Architecture"
 title: "OLE DB Provider Template Architecture"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["OLE DB [C++], object model", "architecture [C++], OLE DB Provider", "OLE DB provider templates, object model"]

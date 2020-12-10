@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GROUP"
 title: "GROUP"
 ms.date: "11/05/2019"
 f1_keywords: ["group"]

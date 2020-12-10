@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _onexit, _onexit_m"
 title: "_onexit, _onexit_m"
 ms.date: "11/04/2016"
 api_name: ["_onexit", "_onexit_m"]

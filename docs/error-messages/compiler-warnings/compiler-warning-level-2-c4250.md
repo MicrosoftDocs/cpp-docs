@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 2) C4250"
 title: "Compiler Warning (level 2) C4250"
 ms.date: "11/04/2016"
 f1_keywords: ["C4250"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Database Classes (OLE DB Templates)"
 title: "ATL Database Classes (OLE DB Templates)"
 ms.date: "05/02/2019"
 helpviewer_keywords: ["OLE DB templates [C++], ATL database classes", "database classes [C++], OLE DB", "database classes [C++], ATL"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Properties and Property Pages Classes"
 title: "Properties and Property Pages Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

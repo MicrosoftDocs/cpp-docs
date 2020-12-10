@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleStreamFile Class"
 title: "COleStreamFile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleStreamFile", "AFXOLE/COleStreamFile", "AFXOLE/COleStreamFile::COleStreamFile", "AFXOLE/COleStreamFile::Attach", "AFXOLE/COleStreamFile::CreateMemoryStream", "AFXOLE/COleStreamFile::CreateStream", "AFXOLE/COleStreamFile::Detach", "AFXOLE/COleStreamFile::GetStream", "AFXOLE/COleStreamFile::OpenStream"]

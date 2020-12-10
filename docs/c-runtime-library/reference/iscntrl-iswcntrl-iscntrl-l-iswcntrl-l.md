@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l"
 title: "iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l"
 ms.date: "4/2/2020"
 api_name: ["iscntrl", "_iswcntrl_l", "_iscntrl_l", "iswcntrl", "_o_iscntrl", "_o_iswcntrl"]

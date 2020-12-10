@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DRoundedRect Class"
 title: "CD2DRoundedRect Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DRoundedRect", "AFXRENDERTARGET/CD2DRoundedRect", "AFXRENDERTARGET/CD2DRoundedRect::CD2DRoundedRect"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sample Makefile"
 title: "Sample Makefile"
 ms.date: "11/04/2016"
 ms.assetid: 8343ce71-5556-4ae0-8d1e-7efd82673070

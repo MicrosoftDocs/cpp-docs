@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency::graphics Namespace"
 title: "Concurrency::graphics Namespace"
 ms.date: "11/04/2016"
 f1_keywords: ["AMP_GRAPHICS/Concurrency"]

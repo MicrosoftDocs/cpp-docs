@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Updating Rowsets"
 title: "Updating Rowsets"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["rowsets, updating data", "updating data, rowsets", "updating rowsets", "rowsets"]

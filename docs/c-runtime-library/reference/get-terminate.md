@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_terminate"
 title: "_get_terminate"
 ms.date: "4/2/2020"
 api_name: ["_get_terminate", "_o__get_terminate"]

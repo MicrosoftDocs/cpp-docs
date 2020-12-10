@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zc:referenceBinding (Enforce reference binding rules)"
 title: "/Zc:referenceBinding (Enforce reference binding rules)"
 ms.date: "03/06/2018"
 f1_keywords: ["referenceBinding", "/Zc:referenceBinding"]

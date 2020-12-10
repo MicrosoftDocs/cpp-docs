@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Matrix Multiplication"
 title: "Walkthrough: Matrix Multiplication"
 ms.date: "04/23/2019"
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf

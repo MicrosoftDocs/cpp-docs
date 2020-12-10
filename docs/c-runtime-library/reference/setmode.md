@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _setmode"
 title: "_setmode"
 ms.date: "4/2/2020"
 api_name: ["_setmode", "_o__setmode"]

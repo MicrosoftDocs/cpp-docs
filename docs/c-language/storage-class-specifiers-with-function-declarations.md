@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Storage-Class Specifiers with Function Declarations"
 title: "Storage-Class Specifiers with Function Declarations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function specifiers, storage class", "declaring functions, specifiers", "external declarations", "specifiers, function", "external linkage, function declarations", "external linkage, storage-class specifiers"]

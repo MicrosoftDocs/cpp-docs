@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComQIPtrElementTraits Class"
 title: "CComQIPtrElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComQIPtrElementTraits", "ATLCOLL/ATL::CComQIPtrElementTraits", "ATLCOLL/ATL::CComQIPtrElementTraits::INARGTYPE"]

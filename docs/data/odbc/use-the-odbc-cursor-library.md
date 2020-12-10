@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Use the ODBC Cursor Library"
 title: "Use the ODBC Cursor Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["cursor library [ODBC], disabling", "ODBC cursor library [ODBC], disabling"]

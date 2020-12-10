@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Boxes"
 title: "Dialog Boxes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["modeless dialog boxes [MFC], MFC dialog boxes", "MFC, dialog boxes", "modal dialog boxes [MFC], MFC dialog boxes", "CDialog class [MFC], MFC dialog boxes", "MFC dialog boxes"]

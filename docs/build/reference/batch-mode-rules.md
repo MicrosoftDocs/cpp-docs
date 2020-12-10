@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Batch-Mode Rules"
 title: "Batch-Mode Rules"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["inference rules in NMAKE", "NMAKE program, inference rules", "batch-mode inference rules in NMAKE"]

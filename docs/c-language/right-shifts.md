@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Right Shifts"
 title: "Right Shifts"
 ms.date: "11/04/2016"
 ms.assetid: c878e97d-ea3c-4c6b-90a8-b1b24b2d5b19

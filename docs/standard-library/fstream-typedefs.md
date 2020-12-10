@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;fstream&gt; typedefs"
 title: "&lt;fstream&gt; typedefs"
 ms.date: "11/04/2016"
 f1_keywords: ["fstream/std::filebuf", "fstream/std::fstream", "fstream/std::ifstream", "fstream/std::ofstream", "fstream/std::wfilebuf", "fstream/std::wfstream", "fstream/std::wifstream", "fstream/std::wofstream"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use transformer in a Data Pipeline"
 title: "How to: Use transformer in a Data Pipeline"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["transformer class, example", "data pipelines, using transformer [Concurrency Runtime]", "using transformer in data pipelines [Concurrency Runtime]"]

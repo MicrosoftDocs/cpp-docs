@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DLL (Build a DLL)"
 title: "/DLL (Build a DLL)"
 ms.date: "11/04/2016"
 f1_keywords: ["/dll"]

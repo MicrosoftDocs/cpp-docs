@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN029: Splitter Windows"
 title: "TN029: Splitter Windows"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.windows.splitter"]

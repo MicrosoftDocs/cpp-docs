@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;memory_resource&gt; operators"
 title: "&lt;memory_resource&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["memory_resource/std::operator!=", "memory_resource/std::operator=="]

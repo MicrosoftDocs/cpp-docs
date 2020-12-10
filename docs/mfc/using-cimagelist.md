@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CImageList"
 title: "Using CImageList"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["image list control", "CImageList class [MFC], using"]

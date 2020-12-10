@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /GR (Enable Run-Time Type Information)"
 title: "/GR (Enable Run-Time Type Information)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.RuntimeTypeInfo", "VC.Project.VCCLCompilerTool.RuntimeTypeInfo"]

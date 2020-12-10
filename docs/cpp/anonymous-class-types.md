@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Anonymous Class Types"
 title: "Anonymous Class Types"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["class types [C++], anonymous", "anonymous class types"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL_URL_SCHEME"
 title: "ATL_URL_SCHEME enumeration"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATLUTIL/ATL::ATL_URL_SCHEME"]

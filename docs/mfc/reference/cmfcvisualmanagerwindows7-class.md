@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCVisualManagerWindows7 Class"
 title: "CMFCVisualManagerWindows7 Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::GetRibbonEditBackgroundColor", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::OnFillMenuImageRect"]

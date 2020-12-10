@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /OUT (DUMPBIN)"
 title: "/OUT (DUMPBIN)"
 ms.date: "11/04/2016"
 f1_keywords: ["/out_dumpbin"]

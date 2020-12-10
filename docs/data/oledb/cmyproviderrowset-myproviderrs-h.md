@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCustomRowset (CustomRS.H)"
 title: "CCustomRowset (CustomRS.H)"
 ms.date: "10/22/2018"
 f1_keywords: ["cmyproviderrowset", "ccustomrowset"]

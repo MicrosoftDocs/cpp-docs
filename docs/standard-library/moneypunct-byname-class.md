@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: moneypunct_byname Class"
 title: "moneypunct_byname Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocmon/std::moneypunct_byname"]

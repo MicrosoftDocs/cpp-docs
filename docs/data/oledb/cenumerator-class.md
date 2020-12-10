@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CEnumerator Class"
 title: "CEnumerator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CEnumerator", "CEnumerator::Find", "ATL::CEnumerator::Find", "ATL.CEnumerator.Find", "CEnumerator.Find", "GetMoniker", "CEnumerator.GetMoniker", "CEnumerator::GetMoniker", "ATL.CEnumerator.GetMoniker", "ATL::CEnumerator::GetMoniker", "ATL.CEnumerator.Open", "CEnumerator::Open", "ATL::CEnumerator::Open", "CEnumerator.Open"]

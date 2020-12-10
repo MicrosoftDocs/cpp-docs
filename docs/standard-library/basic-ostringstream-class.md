@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: basic_ostringstream Class"
 title: "basic_ostringstream Class"
 ms.date: "11/04/2016"
 f1_keywords: ["sstream/std::basic_ostringstream", "sstream/std::basic_ostringstream::allocator_type", "sstream/std::basic_ostringstream::rdbuf", "sstream/std::basic_ostringstream::str"]

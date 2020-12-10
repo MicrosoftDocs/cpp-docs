@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Error Handling and Notification"
 title: "Error Handling and Notification"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["error handling, and notification"]

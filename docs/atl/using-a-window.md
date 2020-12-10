@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using a Window"
 title: "Using a Window (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, windows", "CWindow class, about CWindow class", "windows [C++], ATL"]

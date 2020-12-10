@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Gm (Enable Minimal Rebuild)"
 title: "/Gm (Enable Minimal Rebuild)"
 ms.date: "11/12/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.MinimalRebuild", "/Gm", "VC.Project.VCCLWCECompilerTool.MinimalRebuild"]

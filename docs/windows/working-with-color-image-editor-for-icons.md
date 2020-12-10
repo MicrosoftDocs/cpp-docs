@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Work with Color"
 title: "How to: Work with Color"
 ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.image.color", "vc.editors.customcolorselector", "vc.editors.loadcolorpalette", "vc.editors.colorswindow"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Mapping Messages to Functions"
 title: "Mapping Messages to Functions"
 ms.date: "09/06/2019"
 f1_keywords: ["vc.codewiz.mapping.msg.function"]

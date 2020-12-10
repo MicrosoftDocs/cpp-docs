@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Operands and Expressions"
 title: "Operands and Expressions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["expressions [C++], syntax", "operands, definition", "operands"]

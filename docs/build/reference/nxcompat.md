@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /NXCOMPAT"
 title: "/NXCOMPAT"
 ms.date: "11/04/2016"
 f1_keywords: ["/NXCOMPAT_editbin"]

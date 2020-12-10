@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCDynamicLayout Class"
 title: "CMFCDynamicLayout Class"
 ms.date: "08/29/2019"
 f1_keywords: ["CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout::AddItem", "AFXLAYOUT/CMFCDynamicLayout::Adjust", "AFXLAYOUT/CMFCDynamicLayout::Create", "AFXLAYOUT/CMFCDynamicLayout::GetHostWnd", "AFXLAYOUT/CMFCDynamicLayout::GetMinSize", "AFXLAYOUT/CMFCDynamicLayout::GetWindowRect", "AFXLAYOUT/CMFCDynamicLayout::HasItem", "AFXLAYOUT/CMFCDynamicLayout::IsEmpty", "AFXLAYOUT/CMFCDynamicLayout::LoadResource", "AFXLAYOUT/CMFCDynamicLayout::SetMinSize"]

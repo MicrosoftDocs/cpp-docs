@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleDBRecordView Class"
 title: "COleDBRecordView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDBRecordView", "AFXOLEDB/COleDBRecordView", "AFXOLEDB/COleDBRecordView::COleDBRecordView", "AFXOLEDB/COleDBRecordView::OnGetRowset", "AFXOLEDB/COleDBRecordView::OnMove"]

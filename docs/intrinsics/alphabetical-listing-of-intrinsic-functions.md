@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Alphabetical listing of intrinsic functions"
 title: "Alphabetical listing of intrinsic functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["cl.exe compiler intrinsics", "intrinsics, alphabetical list", "intrinsics"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tool Tips in Windows Not Derived from CFrameWnd"
 title: "Tool Tips in Windows Not Derived from CFrameWnd"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["enabling tool tips [MFC]", "TOOLTIPTEXT structure [MFC]", "Help [MFC], tool tips for controls", "TTN_NEEDTEXT message [MFC]", "controls [MFC], tool tips", "handler functions [MFC], tool tips"]

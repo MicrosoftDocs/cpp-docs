@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Environment-Variable Macros"
 title: "Environment-Variable Macros"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, environment variable macros", "environment variables, macros in NMAKE", "macros, environment-variable"]

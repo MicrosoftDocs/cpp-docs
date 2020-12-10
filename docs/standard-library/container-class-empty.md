@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::empty"
 title: "Container Class::empty"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["empty method"]

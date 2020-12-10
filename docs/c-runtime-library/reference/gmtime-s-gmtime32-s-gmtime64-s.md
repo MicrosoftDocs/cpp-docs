@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: gmtime_s, _gmtime32_s, _gmtime64_s"
 title: "gmtime_s, _gmtime32_s, _gmtime64_s"
 ms.date: "4/2/2020"
 api_name: ["_gmtime32_s", "gmtime_s", "_gmtime64_s", "_o__gmtime32_s", "_o__gmtime64_s"]

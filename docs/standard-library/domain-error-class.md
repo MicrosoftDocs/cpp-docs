@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: domain_error Class"
 title: "domain_error Class"
 ms.date: "11/04/2016"
 f1_keywords: ["stdexcept/std::domain_error"]

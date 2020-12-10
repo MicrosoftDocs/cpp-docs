@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleIPFrameWnd Class"
 title: "COleIPFrameWnd Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleIPFrameWnd", "AFXOLE/COleIPFrameWnd", "AFXOLE/COleIPFrameWnd::COleIPFrameWnd", "AFXOLE/COleIPFrameWnd::OnCreateControlBars", "AFXOLE/COleIPFrameWnd::RepositionFrame"]

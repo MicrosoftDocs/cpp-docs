@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: stdin, stdout, stderr"
 title: "stdin, stdout, stderr"
 ms.date: "10/23/2018"
 f1_keywords: ["stdin", "stderr", "stdout"]

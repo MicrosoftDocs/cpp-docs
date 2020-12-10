@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: condition_variable Class"
 title: "condition_variable Class"
 ms.date: "11/04/2016"
 f1_keywords: ["condition_variable/std::condition", "condition_variable/std::condition_variable::condition_variable", "condition_variable/std::condition_variable::native_handle", "condition_variable/std::condition_variable::notify_all", "condition_variable/std::condition_variable::notify_one", "condition_variable/std::condition_variable::wait", "condition_variable/std::condition_variable::wait_for", "condition_variable/std::condition_variable::wait_until"]

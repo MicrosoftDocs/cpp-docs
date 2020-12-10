@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: out_of_range Class"
 title: "out_of_range Class"
 ms.date: "11/04/2016"
 f1_keywords: ["stdexcept/std::out_of_range"]

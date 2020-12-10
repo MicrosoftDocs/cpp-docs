@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDebugReportHook Class"
 title: "CDebugReportHook Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDebugReportHook", "ATLUTIL/ATL::CDebugReportHook", "ATLUTIL/ATL::CDebugReportHook::CDebugReportHook", "ATLUTIL/ATL::CDebugReportHook::CDebugReportHookProc", "ATLUTIL/ATL::CDebugReportHook::RemoveHook", "ATLUTIL/ATL::CDebugReportHook::SetHook", "ATLUTIL/ATL::CDebugReportHook::SetPipeName", "ATLUTIL/ATL::CDebugReportHook::SetTimeout"]

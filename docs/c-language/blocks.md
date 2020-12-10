@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Blocks"
 title: "Blocks"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function definitions, blocks in code", "blocks", "compound statements", "statements, compound"]

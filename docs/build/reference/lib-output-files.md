@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LIB Output Files"
 title: "LIB Output Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["output files, LIB"]

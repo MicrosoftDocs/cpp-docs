@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isfinite, _finite, _finitef"
 title: "isfinite, _finite, _finitef"
 ms.date: "01/31/2019"
 api_name: ["_finite", "_finitef"]

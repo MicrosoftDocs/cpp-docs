@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: begin Function"
 title: "begin Function"
 ms.date: "01/22/2017"
 f1_keywords: ["collection/Windows::Foundation::Collections::begin"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: towctrans"
 title: "towctrans"
 ms.date: "11/04/2016"
 api_name: ["towctrans"]

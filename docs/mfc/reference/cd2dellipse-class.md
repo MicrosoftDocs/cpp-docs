@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DEllipse Class"
 title: "CD2DEllipse Class"
 ms.date: "08/29/2019"
 f1_keywords: ["CD2DEllipse", "AFXRENDERTARGET/CD2DEllipse", "AFXRENDERTARGET/CD2DEllipse::CD2DEllipse"]

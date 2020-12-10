@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Add Class Wizard"
 title: "MFC Add Class Wizard"
 ms.date: "09/06/2019"
 f1_keywords: ["vc.codewiz.class.mfc.simple.overview"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a Dialog Class with Code Wizards"
 title: "Creating a Dialog Class with Code Wizards"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dialog boxes [MFC], creating", "MFC dialog boxes, creating", "code wizards", "dialog classes [MFC], creating"]

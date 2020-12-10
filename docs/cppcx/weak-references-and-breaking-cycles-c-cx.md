@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Weak references and breaking cycles (C++/CX)"
 title: "Weak references and breaking cycles (C++/CX)"
 ms.date: "01/22/2017"
 ms.assetid: 1acb6402-05f0-4951-af94-0e9dab41c53e

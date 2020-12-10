@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAccessorRowset Class"
 title: "CAccessorRowset Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAccessorRowset", "ATL.CAccessorRowset", "ATL::CAccessorRowset", "CAccessorRowset.Bind", "CAccessorRowset::Bind", "CAccessorRowset::CAccessorRowset", "CAccessorRowset.CAccessorRowset", "ATL.CAccessorRowset.CAccessorRowset", "ATL::CAccessorRowset::CAccessorRowset", "CAccessorRowset.Close", "CAccessorRowset::Close", "CAccessorRowset::FreeRecordMemory", "CAccessorRowset.FreeRecordMemory", "CAccessorRowset.GetColumnInfo", "CAccessorRowset::GetColumnInfo"]

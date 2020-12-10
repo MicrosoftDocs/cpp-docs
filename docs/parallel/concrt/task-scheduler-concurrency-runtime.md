@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Task Scheduler (Concurrency Runtime)"
 title: "Task Scheduler (Concurrency Runtime)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["oversubscription [Concurrency Runtime]", "task scheduler [Concurrency Runtime], oversubscription", "schedule groups [Concurrency Runtime]", "task scheduler [Concurrency Runtime], lightweight tasks", "task scheduler [Concurrency Runtime]", "lightweight tasks [Concurrency Runtime]", "task scheduler [Concurrency Runtime], scheduler policies", "task scheduler [Concurrency Runtime], schedule groups", "wait function [Concurrency Runtime]", "task scheduler [Concurrency Runtime], scheduler instances", "scheduler instances [Concurrency Runtime]", "scheduler policies [Concurrency Runtime]", "task scheduler [Concurrency Runtime], wait function"]

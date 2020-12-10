@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overriding Provider Service Defaults"
 title: "Overriding Provider Service Defaults"
 ms.date: "10/29/2018"
 helpviewer_keywords: ["service providers [OLE DB]", "OLE DB services [OLE DB], overriding defaults"]

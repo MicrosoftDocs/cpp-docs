@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Declaring a Class for a Predefined Query (ODBC)"
 title: "Recordset: Declaring a Class for a Predefined Query (ODBC)"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["ODBC recordsets, queries", "predefined queries and recordsets", "stored procedures, and recordsets", "recordsets, predefined queries", "recordsets, stored procedures"]

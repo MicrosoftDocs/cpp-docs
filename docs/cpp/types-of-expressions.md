@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Types of Expressions"
 title: "Types of Expressions"
 ms.custom: "index-page"
 ms.date: "11/04/2016"

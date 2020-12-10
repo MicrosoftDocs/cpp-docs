@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /E (Preprocess to stdout)"
 title: "/E (Preprocess to stdout)"
 ms.date: "11/04/2016"
 f1_keywords: ["/e"]

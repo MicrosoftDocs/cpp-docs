@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Marshal Arrays Using C++ Interop"
 title: "How to: Marshal Arrays Using C++ Interop"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

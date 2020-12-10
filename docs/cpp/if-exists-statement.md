@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __if_exists Statement"
 title: "__if_exists Statement"
 ms.date: "11/04/2016"
 f1_keywords: ["__if_exists_cpp"]

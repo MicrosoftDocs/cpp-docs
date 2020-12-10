@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;set&gt; operators"
 title: "&lt;set&gt; operators"
 ms.date: "03/27/2019"
 f1_keywords: ["set/std::operator!=", "set/std::operator&gt;", "set/std::operator&gt;=", "set/std::operator&lt;", "set/std::operator&lt;=", "set/std::operator=="]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: void (C++)"
 title: "void (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["void_cpp"]

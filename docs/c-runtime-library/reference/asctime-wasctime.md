@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: asctime, _wasctime"
 title: "asctime, _wasctime"
 ms.date: "4/2/2020"
 api_name: ["_wasctime", "asctime", "_o__wasctime", "_o_asctime"]

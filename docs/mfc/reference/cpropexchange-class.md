@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPropExchange Class"
 title: "CPropExchange Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPropExchange", "AFXCTL/CPropExchange", "AFXCTL/CPropExchange::ExchangeBlobProp", "AFXCTL/CPropExchange::ExchangeFontProp", "AFXCTL/CPropExchange::ExchangePersistentProp", "AFXCTL/CPropExchange::ExchangeProp", "AFXCTL/CPropExchange::ExchangeVersion", "AFXCTL/CPropExchange::GetVersion", "AFXCTL/CPropExchange::IsAsynchronous", "AFXCTL/CPropExchange::IsLoading"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strrev, wcsrev"
 title: "strrev, wcsrev"
 ms.date: "12/16/2019"
 api_name: ["strrev", "wcsrev"]

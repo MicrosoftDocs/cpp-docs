@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Delegate and interface map macros"
 title: "Delegate and Interface Map Macros (MFC)"
 ms.date: "03/30/2017"
 helpviewer_keywords: ["delegate map macros [MFC]", "event map macros [MFC]", "interface map macros [MFC]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CListCtrl"
 title: "Using CListCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], using"]

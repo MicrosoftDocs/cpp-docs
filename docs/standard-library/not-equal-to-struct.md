@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: not_equal_to Struct"
 title: "not_equal_to Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::not_equal_to"]

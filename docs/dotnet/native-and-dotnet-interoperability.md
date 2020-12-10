@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Native and .NET Interoperability"
 title: "Native and .NET Interoperability"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["interop [C++]", ".NET Framework [C++], interoperability with Visual C++", "interoperability [C++], about .NET interoperability", "interop [C++], about .NET interoperability", "managed code [C++], interoperability", "native code [C++]", "interoperability [C++]", "MFC [C++], .NET integration", "unmanaged code interoperability [C++]", "Visual C++, interoperability", "native code [C++], .NET interoperatibility"]

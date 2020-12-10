@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ARM Assembler Reference"
 title: "ARM Assembler Reference"
 ms.date: "08/28/2017"
 ms.assetid: f8a076cc-9627-4328-a34a-9c44f7a3aab1

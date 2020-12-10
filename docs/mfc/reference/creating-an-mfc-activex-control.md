@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating an MFC ActiveX Control"
 title: "Creating an MFC ActiveX Control"
 ms.date: "08/19/2019"
 f1_keywords: ["vc.appwiz.activex.project"]

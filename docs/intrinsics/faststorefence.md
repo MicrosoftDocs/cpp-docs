@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __faststorefence"
 title: "__faststorefence"
 ms.date: "09/02/2019"
 f1_keywords: ["__faststorefence_cpp", "__faststorefence"]

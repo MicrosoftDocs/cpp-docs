@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Convert to Raw String Literal"
 title: "Convert to Raw String Literal"
 ms.date: "11/16/2016"
 ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51

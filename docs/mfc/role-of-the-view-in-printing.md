@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Role of the View in Printing"
 title: "Role of the View in Printing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["views [MFC], printing", "OnDraw method [MFC], and printing", "printing [MFC], OnDraw method [MFC]", "printing [MFC], views", "CView class [MFC], role in printing", "printing views [MFC]"]

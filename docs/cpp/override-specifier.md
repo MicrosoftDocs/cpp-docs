@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: override Specifier"
 title: "override Specifier"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["override Identifier"]

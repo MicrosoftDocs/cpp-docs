@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DEBUGTYPE (Debug Info Options)"
 title: "/DEBUGTYPE (Debug Info Options)"
 ms.date: "11/04/2016"
 f1_keywords: ["/debugtype"]

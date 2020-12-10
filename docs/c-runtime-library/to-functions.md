@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: to Functions"
 title: "to Functions"
 ms.date: "11/04/2016"
 api_location: ["msvcr120.dll", "msvcr90.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr80.dll", "msvcr100.dll"]

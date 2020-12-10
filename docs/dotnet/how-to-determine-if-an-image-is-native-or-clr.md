@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Determine if an Image is Native or CLR"
 title: "How to: Determine if an Image is Native or CLR"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

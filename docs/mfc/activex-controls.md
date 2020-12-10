@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActiveX Controls"
 title: "ActiveX Controls"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["ActiveX controls [MFC]"]
