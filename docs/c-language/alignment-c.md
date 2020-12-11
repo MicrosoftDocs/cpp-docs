@@ -117,5 +117,5 @@ Windows SDK version 10.0.20201.0 or later. This is currently an Insider build wh
 ## See also
 
 [`/std` (Specify Language Standard Version)](../build/reference/std-specify-language-standard-version.md)\
-[C++ `alignof` and `alignas`](../cpp/alignment-cpp-declarations#alignof-and-alignas)\
-[Compiler handling of data alignment](../cpp/alignment-cpp-declarations#compiler-handling-of-data-alignment)
+[C++ `alignof` and `alignas`](../cpp/alignment-cpp-declarations.md#alignof-and-alignas)\
+[Compiler handling of data alignment](../cpp/alignment-cpp-declarations.md#compiler-handling-of-data-alignment)
