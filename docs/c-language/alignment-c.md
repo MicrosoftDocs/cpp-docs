@@ -1,20 +1,20 @@
 ---
-title: "Alignment"
+title: "Alignment (C11)"
 description: "Describes Microsoft Visual C type alignment"
 ms.date: "12/10/2020"
 helpviewer_keywords: ["_Alignof keyword [C]", "_Alignas keyword [C]", "memory, alignment"]
 ---
-# Alignment
+# Alignment (C11)
 
 One of the low-level features of C is the ability to specify the precise alignment of objects in memory to take maximum advantage of the hardware architecture.
 
-CPUs read and write memory more efficiently when data is stored at an address that is a multiple of the data size. For example, a 4 byte integer is accessed more efficiently if it is stored in an address that is a multiple of 4. When data is not aligned, the CPU needs to do more work to access the data.
+CPUs read and write memory more efficiently when data is stored at an address that is a multiple of the data size. For example, a 4-byte integer is accessed more efficiently if it's stored in an address that is a multiple of 4. When data isn't aligned, the CPU needs to do more work to access the data.
 
 By default, the compiler aligns data based on its size: **`char`** on 1-byte boundaries, **`short`** on 2-byte boundaries, **`int`**, **`long`**, and **`float`** on 4-byte boundaries, **`double`** on 8-byte boundaries, and so on.
 
-Additionally, by aligning frequently used data to the processor's cache line size, you improve cache performance. For example, if you define a structure whose size is less than 32 bytes, you may want 32 byte alignment to make sure that objects of that structure type are cached efficiently.
+Additionally, by aligning frequently used data to the processor's cache line size, you improve cache performance. For example, if you define a structure whose size is less than 32 bytes, you may want 32 byte alignment to make sure objects of that structure type are cached efficiently.
 
-Usually you don't need to be concerned with alignment because the default alignment is typically good enough. In some cases, however, you can achieve performance improvements, or memory savings, by specifying a custom alignment for your data structures.
+Usually you don't worry about alignment because the default alignment is typically good enough. In some cases, however, you can achieve performance improvements, or memory savings, by specifying a custom alignment for your data structures.
 
 Use the C11 keywords **`_Alignof`** to get the preferred alignment of a type or variable, and **`_Alignas`** to specify custom alignment for a variable or user-defined type.
 
@@ -39,7 +39,7 @@ _Alignas(constant-expression)
 
 ### `alignas` example
 
-This examples uses the convenience macro **`alignof`** because it's portable to C++. The behavior is the same if you use `_Alignof`.
+This example uses the convenience macro **`alignof`** because it's portable to C++. The behavior is the same if you use `_Alignof`.
 
 ```c
 // Compile with /std:c11
@@ -83,7 +83,7 @@ _Alignof(type)
 
 ### `alignof` example
 
-This examples uses the convenience macro **`alignof`** because it's portable to C++. The behavior is the same if you use `_Alignof`.
+This example uses the convenience macro **`alignof`** because it's portable to C++. The behavior is the same if you use `_Alignof`.
 
 ```c
 // Compile with /std:c11
@@ -117,5 +117,5 @@ Windows SDK version 10.0.20201.0 or later. This is currently an Insider build wh
 ## See also
 
 [`/std` (Specify Language Standard Version)](../build/reference/std-specify-language-standard-version.md)\
-[C++ `alignof` and `alignas`](..\cpp\alignment-cpp-declarations#alignof-and-alignas)
-[Compiler handling of data alignment](..\cpp\alignment-cpp-declarations#compiler-handling-of-data-alignment)
+[C++ `alignof` and `alignas`](../cpp/alignment-cpp-declarations#alignof-and-alignas)\
+[Compiler handling of data alignment](../cpp/alignment-cpp-declarations#compiler-handling-of-data-alignment)
