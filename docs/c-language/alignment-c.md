@@ -12,17 +12,17 @@ CPUs read and write memory more efficiently when data is stored at an address th
 
 By default, the compiler aligns data based on its size: **`char`** on a 1-byte boundary, **`short`** on a 2-byte boundary, **`int`**, **`long`**, and **`float`** on a 4-byte boundary, **`double`** on 8-byte boundary, and so on.
 
-Additionally, by aligning frequently used data with the processor's cache line size, you can improve cache performance. For example, if you define a structure whose size is less than 32 bytes, you may want 32 byte alignment to ensure that objects of that structure type are cached efficiently.
+Additionally, by aligning frequently used data with the processor's cache line size, you can improve cache performance. For example, if you define a structure whose size is less than 32 bytes you may want 32-byte alignment to ensure that objects of that structure type are cached efficiently.
 
 Usually, you don't need to worry about alignment because the default alignment is typically good enough. In some cases, however, you can achieve performance improvements, or memory savings, by specifying a custom alignment for your data structures.
 
 Use the C11 keyword **`_Alignof`** to get the preferred alignment of a type or variable, and **`_Alignas`** to specify a custom alignment for a variable or user-defined type.
 
-The convenience macros **`alignof`** and **`alignas`**, defined in `<stdalign.h>`, map directly to **`_Alignof`** and **`_Alignas`**, respectively. These macros also match the same keywords used in C++. So using the macros instead of the C keywords may be helpful in terms of code portability if you share any code between the two languages.
+The convenience macros **`alignof`** and **`alignas`**, defined in `<stdalign.h>`, map directly to **`_Alignof`** and **`_Alignas`**, respectively. These macros also match the same keywords used in C++. So using the macros instead of the C keywords may be helpful for code portability if you share any code between the two languages.
 
 ## `alignas` and `_Alignas` (C11)
 
-Use **`alignas`** or **`_Alignas`** to specify custom alignment for a variable or user-defined type.  They can be applied to a struct, union, enumeration, or variable.
+Use **`alignas`** or **`_Alignas`** to specify custom alignment for a variable or user-defined type. They can be applied to a struct, union, enumeration, or variable.
 
 ### `alignas` syntax
 
