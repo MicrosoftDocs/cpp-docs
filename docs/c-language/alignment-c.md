@@ -14,7 +14,7 @@ By default, the compiler aligns data based on its size: **`char`** on a 1-byte b
 
 Additionally, by aligning frequently used data with the processor's cache line size, you can improve cache performance. For example, if you define a structure whose size is less than 32 bytes you may want 32-byte alignment to ensure that objects of that structure type are cached efficiently.
 
-Usually, you don't need to worry about alignment because the default alignment is typically good enough. In some cases, however, you can achieve performance improvements, or memory savings, by specifying a custom alignment for your data structures.
+Usually, you don't need to worry about alignment. The compiler generally aligns data on natural boundaries based on the target processor and the size of the data, up to 4-byte boundaries on 32-bit processors, and 8-byte boundaries on 64-bit processors. In some cases, however, you can achieve performance improvements, or memory savings, by specifying a custom alignment for your data structures.
 
 Use the C11 keyword **`_Alignof`** to get the preferred alignment of a type or variable, and **`_Alignas`** to specify a custom alignment for a variable or user-defined type.
 
@@ -36,6 +36,10 @@ _Alignas(constant-expression)
 ### Remarks
 
 `_Alignas` can't be used in the declaration of a typedef, bit-field, function, function parameter, or an object declared with the `register` specifier.
+
+Specify an alignment that is a power of two such as 1,2,4,8,16, etc. Don't use a value smaller than the size of the type.
+
+If there are multiple **`alignas`**  specifiers in a declaration (for example, a struct with several members that have differing **`alignas`** specifiers ), the alignment will be that of the largest (i.e. strictest) one.
 
 ### `alignas` example
 
