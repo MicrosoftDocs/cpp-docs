@@ -39,7 +39,9 @@ _Alignas(constant-expression)
 
 Specify an alignment that is a power of two such as 1,2,4,8,16, and so on. Don't use a value smaller than the size of the type.
 
-If there are multiple **`alignas`**  specifiers in a declaration (for example, a struct with several members that have differing **`alignas`** specifiers), the alignment will be that of the largest one.
+Structs and unions have an alignment equal to the largest alignment of any member. Padding bytes are added within structs to ensure individual member alignment requirements are met.
+
+If there are multiple **`alignas`**  specifiers in a declaration (for example, a struct with several members that have differing **`alignas`** specifiers), the alignment of the struct will be that of the largest one.
 
 ### `alignas` example
 
@@ -53,25 +55,20 @@ This example uses the convenience macro **`alignof`** because it's portable to C
 
 typedef struct 
 {
-    int value; // aligns on a 4-byte boundary
+    int value; // aligns on a 4-byte boundary. There will be 28 bytes of padding between value and alignas
     alignas(32) char alignedMemory[32]; // assuming a 32 byte friendly cache alignment
-} cacheFriendly;
-
-typedef struct
-{
-    int a; // aligns on 4-byte boundary
-    double b; // aligns on 8-byte boundary.
-} test;
+} cacheFriendly; // this struct will be 32-byte aligned because alignedMemory is 32-byte alligned and is the largest alignment specified in the struct
 
 int main()
 {
-    printf("sizeof(cacheFriendly): %d\n", sizeof(cacheFriendly)); // 4 bytes for int value + 32 bytes for alignedMemory[] + padding to get  alignment
-    printf("alignof(cacheFriendly): %d\n", alignof(cacheFriendly)); // 32 due to alignedMemory[] being aligned on a 32 byte boundary
+    printf("sizeof(cacheFriendly): %d\n", sizeof(cacheFriendly)); // 4 bytes for int value + 32 bytes for alignedMemory[] + padding to ensure  alignment
+    printf("alignof(cacheFriendly): %d\n", alignof(cacheFriendly)); // 32 because alignedMemory[] is aligned on a 32-byte boundary
 
     /* output
         sizeof(cacheFriendly): 64
         alignof(cacheFriendly): 32
     */
+}
 ```
 
 ## `alignof` and `_Alignof` (C11)
@@ -93,14 +90,16 @@ This example uses the convenience macro **`alignof`** because it's portable to C
 // Compile with /std:c11
 
 #include <stdalign.h>
+#include <stdio.h>
 
 int main()
 {
-    size_t alignment = alignof(short); // 2
-    alignment = alignof(int); // 4
-    alignment = alignof(long); // 4
-    alignment = alignof(float); // 4
-    alignment = alignof(double); // 8
+    size_t alignment = alignof(short);
+    printf("alignof(short) = %d\n", alignment); // 2
+    printf("alignof(int) = %d\n", alignof(int)); // 4
+    printf("alignof(long) = %d\n", alignof(long)); // 4
+    printf("alignof(float) = %d\n", alignof(float)); // 4
+    printf("alignof(double) = %d\n", alignof(double)); // 8
 
     typedef struct
     {
@@ -108,7 +107,17 @@ int main()
         double b;
     } test;
 
-    alignment = alignof(test); // returns 8 because that is the alignment of the largest element in the structure
+    printf("alignof(test) = %d\n", alignof(test)); // 8 because that is the alignment of the largest element in the structure
+
+    /* output
+        
+       alignof(short) = 2
+       alignof(int) = 4
+       alignof(long) = 4
+       alignof(float) = 4
+       alignof(double) = 8
+       alignof(test) = 8
+    */
 }
 ```
 
@@ -116,7 +125,7 @@ int main()
 
 [std:c++11](../build/reference/std-specify-language-standard-version.md) or later is required.
 
-Windows SDK version 10.0.20201.0 or later. This version is currently an Insider build which you can download from [Windows Insider Preview Downloads](https://www.microsoft.com/software-download/windowsinsiderpreviewSDK). See [C11 and C17: Getting Started](https://devblogs.microsoft.com/cppblog/c11-and-c17-standard-support-arriving-in-msvc/#c11-and-c17-getting-started) for instructions about installing and using this SDK.
+Windows SDK version 10.0.20201.0 or later. This version is currently an Insider build, which you can download from [Windows Insider Preview Downloads](https://www.microsoft.com/software-download/windowsinsiderpreviewSDK). See [C11 and C17: Getting Started](https://devblogs.microsoft.com/cppblog/c11-and-c17-standard-support-arriving-in-msvc/#c11-and-c17-getting-started) for instructions about installing and using this SDK.
 
 ## See also
 
