@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Hierarchy Chart"
 title: "Hierarchy Chart"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["object models, MFC", "classes [MFC], MFC hierarchy", "MFC, object model"]

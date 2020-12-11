@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;allocators&gt; macros"
 title: "&lt;allocators&gt; macros"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/std::ALLOCATOR_DECL", "allocators/std::CACHE_CHUNKLIST", "allocators/std::CACHE_FREELIST", "allocators/std::CACHE_SUBALLOC", "allocators/std::SYNC_DEFAULT"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding Functionality with Code Wizards (C++)"
 title: "Adding Functionality with Code Wizards (C++)"
 ms.date: "05/14/2019"
 helpviewer_keywords: ["code wizards [C++]"]

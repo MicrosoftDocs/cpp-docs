@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l"
 title: "strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l"
 ms.date: "4/2/2020"
 api_name: ["wcscoll", "_mbscoll", "_mbscoll_l", "strcoll", "_strcoll_l", "_wcscoll_l", "_o__mbscoll", "_o__mbscoll_l", "_o__strcoll_l", "_o__wcscoll_l", "_o_strcoll", "_o_wcscoll"]

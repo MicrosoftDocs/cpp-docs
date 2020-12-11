@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Types of Image Lists"
 title: "Types of Image Lists"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["lists [MFC], image", "image lists [MFC], types of", "CImageList class [MFC], types"]

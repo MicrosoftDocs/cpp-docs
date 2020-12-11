@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: deprecated (C++)"
 title: "deprecated (C++)"
 ms.date: "03/28/2017"
 f1_keywords: ["deprecated_cpp"]

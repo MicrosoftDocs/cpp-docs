@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: multi_link_registry Class"
 title: "multi_link_registry Class"
 ms.date: "11/04/2016"
 f1_keywords: ["multi_link_registry", "AGENTS/concurrency::multi_link_registry", "AGENTS/concurrency::multi_link_registry::multi_link_registry", "AGENTS/concurrency::multi_link_registry::add", "AGENTS/concurrency::multi_link_registry::begin", "AGENTS/concurrency::multi_link_registry::contains", "AGENTS/concurrency::multi_link_registry::count", "AGENTS/concurrency::multi_link_registry::remove", "AGENTS/concurrency::multi_link_registry::set_bound"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .FARDATA? (32-bit MASM)"
 title: ".FARDATA?"
 ms.date: "11/05/2019"
 f1_keywords: [".FARDATA?"]

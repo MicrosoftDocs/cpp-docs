@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Installing Database Support (MFC/ATL)"
 title: "Installing Database Support (MFC-ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data access [C++], installing database support", "installing database support", "ATL [C++], database support", "databases [C++], installing database support"]

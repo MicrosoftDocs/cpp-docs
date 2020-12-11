@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN062: Message Reflection for Windows Controls"
 title: "TN062: Message Reflection for Windows Controls"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.controls.messages"]

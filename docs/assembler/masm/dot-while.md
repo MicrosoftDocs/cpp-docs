@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .WHILE (32-bit MASM)"
 title: ".WHILE"
 ms.date: "11/05/2019"
 f1_keywords: [".WHILE"]

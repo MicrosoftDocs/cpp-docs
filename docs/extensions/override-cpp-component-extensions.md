@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: override  (C++/CLI and C++/CX)"
 title: "override  (C++/CLI and C++/CX)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

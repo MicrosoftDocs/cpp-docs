@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL_DRAWINFO Structure"
 title: "ATL_DRAWINFO Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::ATL_DRAWINFO", "ATL_DRAWINFO", "ATL.ATL_DRAWINFO"]

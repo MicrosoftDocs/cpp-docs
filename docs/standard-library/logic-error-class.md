@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: logic_error Class"
 title: "logic_error Class"
 ms.date: "11/04/2016"
 f1_keywords: ["stdexcept/std::logic_error"]

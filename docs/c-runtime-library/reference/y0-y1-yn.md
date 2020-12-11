@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: y0, y1, yn"
 title: "y0, y1, yn"
 ms.date: "12/16/2019"
 api_name: ["y1", "yn", "y0"]

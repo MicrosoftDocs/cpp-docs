@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMiniFrameWnd Class"
 title: "CMiniFrameWnd Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMiniFrameWnd", "AFXWIN/CMiniFrameWnd", "AFXWIN/CMiniFrameWnd::CMiniFrameWnd", "AFXWIN/CMiniFrameWnd::Create", "AFXWIN/CMiniFrameWnd::CreateEx"]

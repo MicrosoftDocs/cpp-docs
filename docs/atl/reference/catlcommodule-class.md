@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAtlComModule Class"
 title: "CAtlComModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlComModule", "ATLBASE/ATL::CAtlComModule", "ATLBASE/ATL::CAtlComModule::CAtlComModule", "ATLBASE/ATL::CAtlComModule::RegisterServer", "ATLBASE/ATL::CAtlComModule::RegisterTypeLib", "ATLBASE/ATL::CAtlComModule::UnregisterServer", "ATLBASE/ATL::CAtlComModule::UnRegisterTypeLib"]

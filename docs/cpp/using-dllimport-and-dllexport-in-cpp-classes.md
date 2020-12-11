@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using dllimport and dllexport in C++ Classes"
 title: "Using dllimport and dllexport in C++ Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exporting classes [C++]", "declarations [C++], class", "exportable classes [C++]", "classes [C++], declaring", "classes [C++], exportable and inheritance", "inheritance [C++], exportable classes [C++]", "dllimport attribute [C++], classes", "declaring classes [C++]", "dllexport attribute [C++]", "dllexport attribute [C++], classes [C++]"]

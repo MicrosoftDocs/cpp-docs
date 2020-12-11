@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Attributes"
 title: "Compiler Attributes (C++ COM)"
 ms.date: "10/02/2018"
 helpviewer_keywords: ["cl.exe compiler, attributes", "attributes [C++/CLI], compiler"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: International Enabling"
 title: "International Enabling"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["globalization [C++], character sets", "strings [C++], international enabling", "localization [C++], character sets", "MBCS [C++], enabling", "Unicode [C++], enabling"]

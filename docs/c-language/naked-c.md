@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Naked (C)"
 title: "Naked (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["naked keyword [C], storage-class attribute", "naked keyword [C]", "prolog code", "epilog code"]

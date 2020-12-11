@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inserting a Composite Control"
 title: "Inserting a Composite Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["composite controls, inserting with ATL Object Wizard", "composite controls", "ATL Control Wizard"]

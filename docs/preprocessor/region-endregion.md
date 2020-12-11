@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: region, endregion pragmas"
 title: "region, endregion pragmas"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.endregion", "endregion_CPP", "region_CPP", "vc-pragma.region"]

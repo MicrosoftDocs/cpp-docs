@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an MFC Message Handler"
 title: "Adding an MFC Message Handler"
 ms.date: "09/06/2019"
 f1_keywords: ["vc.codewiz.adding.mfc.msghandler"]

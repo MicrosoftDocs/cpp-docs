@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Identifying the Elements of the DHTML Control Project"
 title: "Identifying the Elements of the DHTML Control Project"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["HTML controls, ATL support", "DHTML controls, ATL support"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: wctomb_s, _wctomb_s_l"
 title: "wctomb_s, _wctomb_s_l"
 ms.date: "4/2/2020"
 api_name: ["_wctomb_s_l", "wctomb_s", "_o__wctomb_s_l", "_o_wctomb_s"]

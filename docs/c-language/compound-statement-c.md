@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compound Statement (C)"
 title: "Compound Statement (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["compound statements", "statements, compound"]

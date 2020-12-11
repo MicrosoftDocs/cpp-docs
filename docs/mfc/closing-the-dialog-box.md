@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Closing the Dialog Box"
 title: "Closing the Dialog Box"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC dialog boxes [MFC], closing", "dialog boxes [MFC], closing"]

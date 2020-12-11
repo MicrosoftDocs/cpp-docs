@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing a C++ Standard Library-Based Collection"
 title: "Implementing a C++ Standard Library-Based Collection"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ICollectionOnSTLImpl interface"]

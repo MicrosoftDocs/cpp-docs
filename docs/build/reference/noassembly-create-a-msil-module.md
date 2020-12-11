@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /NOASSEMBLY (Create a MSIL Module)"
 title: "/NOASSEMBLY (Create a MSIL Module)"
 ms.date: "11/04/2016"
 f1_keywords: ["/NOASSEMBLY", "VC.Project.VCLinkerTool.TurnOffAssemblyGeneration"]

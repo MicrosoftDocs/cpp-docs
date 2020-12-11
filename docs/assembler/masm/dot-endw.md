@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .ENDW (32-bit MASM)"
 title: ".ENDW"
 ms.date: "11/05/2019"
 f1_keywords: [".ENDW"]

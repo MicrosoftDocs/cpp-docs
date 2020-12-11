@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fseek, _fseeki64"
 title: "fseek, _fseeki64"
 ms.date: "4/2/2020"
 api_name: ["_fseeki64", "fseek", "_o__fseeki64", "_o_fseek"]

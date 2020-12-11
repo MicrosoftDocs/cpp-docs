@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSocket Class"
 title: "CSocket Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSocket", "AFXSOCK/CSocket", "AFXSOCK/CSocket::CSocket", "AFXSOCK/CSocket::Attach", "AFXSOCK/CSocket::CancelBlockingCall", "AFXSOCK/CSocket::Create", "AFXSOCK/CSocket::FromHandle", "AFXSOCK/CSocket::IsBlocking", "AFXSOCK/CSocket::OnMessagePending"]

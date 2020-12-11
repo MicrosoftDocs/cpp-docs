@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ features deprecated in Visual Studio 2019"
 title: "C++ features deprecated in Visual Studio 2019"
 ms.date: "07/30/2019"
 helpviewer_keywords: ["Features deprecated in Visual Studio 2019"]

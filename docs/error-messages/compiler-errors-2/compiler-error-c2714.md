@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2714"
 title: "Compiler Error C2714"
 ms.date: 07/22/2020
 f1_keywords: ["C2714"]

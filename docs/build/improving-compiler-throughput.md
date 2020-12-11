@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Improving Compiler Throughput"
 title: "Improving Compiler Throughput"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["throughput, C++ compiler", "cl.exe compiler, performance", "performance, compiler", "cl.exe compiler, throughput"]

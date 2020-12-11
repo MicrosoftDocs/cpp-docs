@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .Exe Files as Linker Input"
 title: ".Exe Files as Linker Input"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["executable files, as linker output", ".exe files"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Basic CString Operations"
 title: "Basic CString Operations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CString objects, basic operations", "string literals, CString operations", "literal strings, CString operations", "CString objects", "string comparison, CString operations", "characters, accessing in CStrings"]

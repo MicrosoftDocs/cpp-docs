@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions: Examining Exception Contents"
 title: "Exceptions: Examining Exception Contents"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exception handling [MFC], MFC", "try-catch exception handling [MFC], MFC function exceptions", "catch blocks, MFC function exceptions", "CException class [MFC], class exceptions", "try-catch exception handling [MFC], exception contents", "throwing exceptions [MFC], exception contents"]

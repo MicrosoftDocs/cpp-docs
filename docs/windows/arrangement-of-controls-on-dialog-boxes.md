@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How To: Layout Controls (C++)"
 title: "How To: Layout Controls (C++)| Microsoft Docs"
 ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.dialog.grouping", "vc.editors.dialog.combo"]

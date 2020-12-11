@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: poisson_distribution Class"
 title: "poisson_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::poisson_distribution", "random/std::poisson_distribution::reset", "random/std::poisson_distribution::mean", "random/std::poisson_distribution::param", "random/std::poisson_distribution::min", "random/std::poisson_distribution::max", "random/std::poisson_distribution::operator()", "random/std::poisson_distribution::param_type", "random/std::poisson_distribution::param_type::mean", "random/std::poisson_distribution::param_type::operator==", "random/std::poisson_distribution::param_type::operator!="]

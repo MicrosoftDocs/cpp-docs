@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Relational Operators: &lt;, &gt;, &lt;=, and &gt;="
 title: "Relational Operators: &lt;, &gt;, &lt;=, and &gt;="
 ms.date: "11/04/2016"
 f1_keywords: ["<", ">"]

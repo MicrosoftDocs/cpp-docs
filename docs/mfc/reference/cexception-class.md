@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CException Class"
 title: "CException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CException", "AFX/CException", "AFX/CException::CException", "AFX/CException::Delete", "AFX/CException::ReportError"]

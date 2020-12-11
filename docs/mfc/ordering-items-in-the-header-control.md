@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Ordering Items in the Header Control"
 title: "Ordering Items in the Header Control"
 ms.date: "11/04/2016"
 f1_keywords: ["DS_DRAGDROP"]

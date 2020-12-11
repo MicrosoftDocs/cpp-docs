@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Upgrading an Existing ActiveX Control"
 title: "Upgrading an Existing ActiveX Control"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["ActiveX controls [MFC], Internet", "LPK files for Internet controls", "safe for scripting and initialization (controls)", "OLE controls [MFC], upgrading to ActiveX", "CAB files, for ActiveX controls", "Internet applications [MFC], ActiveX controls", "Internet applications [MFC], packaging code for download", "upgrading ActiveX controls", "licensing ActiveX controls"]

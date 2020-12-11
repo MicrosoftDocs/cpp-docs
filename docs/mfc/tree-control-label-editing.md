@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tree Control Label Editing"
 title: "Tree Control Label Editing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["editing tree control labels", "CTreeCtrl class [MFC], editing labels", "label editing in CTreeCtrl class [MFC]", "tree controls [MFC], label editing"]

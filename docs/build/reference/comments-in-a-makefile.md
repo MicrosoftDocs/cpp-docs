@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comments in a Makefile"
 title: "Comments in a Makefile"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["makefiles, comments"]

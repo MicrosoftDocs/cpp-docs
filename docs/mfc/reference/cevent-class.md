@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CEvent Class"
 title: "CEvent Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CEvent", "AFXMT/CEvent", "AFXMT/CEvent::CEvent", "AFXMT/CEvent::PulseEvent", "AFXMT/CEvent::ResetEvent", "AFXMT/CEvent::SetEvent", "AFXMT/CEvent::Unlock"]

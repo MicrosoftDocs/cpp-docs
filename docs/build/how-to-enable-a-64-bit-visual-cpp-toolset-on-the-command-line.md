@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Enable a 64-Bit, x64 hosted MSVC toolset on the command line"
 title: "How to: Enable a 64-Bit MSVC Toolset on the Command Line"
 ms.date: "07/24/2019"
 helpviewer_keywords: ["x64 [C++]", "64-bit compiler [C++], command line usage", "64-bit compiler [C++], toolset enabling at command line", "command line [C++], 64-bit compiler", "Itanium [C++], command-line compiler", "IPF", "Itanium [C++]", "IPF, command-line compiler", "x64 [C++], command-line compiler"]

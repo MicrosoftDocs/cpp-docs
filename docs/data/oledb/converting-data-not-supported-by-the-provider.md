@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Converting Data Not Supported by the Provider"
 title: "Converting Data Not Supported by the Provider"
 ms.date: "10/29/2018"
 helpviewer_keywords: ["OLE DB provider templates, unsupported data types"]

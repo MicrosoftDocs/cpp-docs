@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;future&gt; enums"
 title: "&lt;future&gt; enums"
 ms.date: "11/04/2016"
 f1_keywords: ["future/std::future_errc", "future/std::future_status", "future/std::launch"]

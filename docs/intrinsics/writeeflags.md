@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __writeeflags"
 title: "__writeeflags"
 ms.date: "09/02/2019"
 f1_keywords: ["__writeeflags"]

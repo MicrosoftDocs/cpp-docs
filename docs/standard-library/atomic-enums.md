@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;atomic&gt; enums"
 title: "&lt;atomic&gt; enums"
 ms.date: "11/04/2016"
 f1_keywords: ["atomic/std::memory_order"]

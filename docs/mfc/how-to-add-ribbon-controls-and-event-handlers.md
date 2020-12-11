@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Add Ribbon Controls and Event Handlers"
 title: "How to: Add Ribbon Controls and Event Handlers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event handlers [MFC], adding", "ribbon controls [MFC], adding"]

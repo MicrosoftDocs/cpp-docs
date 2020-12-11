@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: auto_inline pragma"
 title: "auto_inline pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["auto_inline_CPP", "vc-pragma.auto_inline"]

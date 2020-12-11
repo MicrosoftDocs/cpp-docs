@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l"
 title: "_ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l"
 ms.date: "4/2/2020"
 api_name: ["_ismbcl2", "_ismbcl1", "_ismbcl0", "_ismbcl2_l", "_ismbcl1_l", "_ismbcl0_l", "_o__ismbcl0", "_o__ismbcl0_l", "_o__ismbcl1", "_o__ismbcl1_l", "_o__ismbcl2", "_o__ismbcl2_l"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Declarators: Maximum number"
 title: "Declarators: Maximum number"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["declarators, maximum number of"]

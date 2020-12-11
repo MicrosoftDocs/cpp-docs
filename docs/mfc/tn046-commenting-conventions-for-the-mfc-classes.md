@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN046: Commenting Conventions for the MFC Classes"
 title: "TN046: Commenting Conventions for the MFC Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["TN046"]

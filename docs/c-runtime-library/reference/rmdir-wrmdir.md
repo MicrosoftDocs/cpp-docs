@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _rmdir, _wrmdir"
 title: "_rmdir, _wrmdir"
 ms.date: "4/2/2020"
 api_name: ["_wrmdir", "_rmdir", "_o__rmdir", "_o__wrmdir"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_execution_policy Struct"
 title: "is_execution_policy Struct"
 ms.date: "04/18/2019"
 f1_keywords: ["execution/std::is_execution_policy"]

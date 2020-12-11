@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Alignment"
 title: "Data Alignment"
 ms.date: "11/04/2016"
 f1_keywords: ["data.alignment"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDaoException Class"
 title: "CDaoException Class"
 ms.date: "09/17/2019"
 f1_keywords: ["CDaoException", "AFXDAO/CDaoException", "AFXDAO/CDaoException::CDaoException", "AFXDAO/CDaoException::GetErrorCount", "AFXDAO/CDaoException::GetErrorInfo", "AFXDAO/CDaoException::m_nAfxDaoError", "AFXDAO/CDaoException::m_pErrorInfo", "AFXDAO/CDaoException::m_scode"]

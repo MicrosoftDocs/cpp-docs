@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: casinh, casinhf, casinhl"
 title: "casinh, casinhf, casinhl"
 ms.date: "11/04/2016"
 api_name: ["casinh", "casinhl", "casinhf"]

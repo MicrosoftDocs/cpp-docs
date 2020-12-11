@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __vmx_vmclear"
 title: "__vmx_vmclear"
 ms.date: "09/02/2019"
 f1_keywords: ["__vmx_vmclear"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: synchronized_pool_resource Class"
 title: "synchonized_pool_resource Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory_resource/std::synchronized_pool_resource"]

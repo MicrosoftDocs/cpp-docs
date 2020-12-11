@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /VERSION (Version Information)"
 title: "/VERSION (Version Information)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.Version", "/version"]

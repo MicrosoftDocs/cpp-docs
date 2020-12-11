@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mm_stream_sd"
 title: "_mm_stream_sd"
 ms.date: "09/02/2019"
 f1_keywords: ["_mm_stream_sd"]

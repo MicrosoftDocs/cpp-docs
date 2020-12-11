@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Implement Tracking in Your Code"
 title: "How to: Implement Tracking in Your Code"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CRectTracker class [MFC], implementing trackers"]

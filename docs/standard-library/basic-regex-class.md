@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: basic_regex Class"
 title: "basic_regex Class"
 ms.date: "03/27/2019"
 f1_keywords: ["regex/std::basic_regex"]

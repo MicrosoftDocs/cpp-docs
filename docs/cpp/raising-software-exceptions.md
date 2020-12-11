@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Raising software exceptions"
 title: "Raising software exceptions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["run-time errors, treating as exceptions", "exception handling [C++], errors as exceptions", "exceptions [C++], flagging errors as exceptions", "errors [C++], treating as exceptions", "exception handling [C++], detecting errors", "structured exception handling [C++], errors as exceptions", "exceptions [C++], software", "RaiseException function", "software exceptions [C++]", "formats [C++], exception codes"]

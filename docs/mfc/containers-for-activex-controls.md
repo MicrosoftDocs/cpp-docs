@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Containers for ActiveX Controls"
 title: "Containers for ActiveX Controls"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["ActiveX control containers [MFC], application support"]

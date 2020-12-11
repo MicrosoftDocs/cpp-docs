@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CRT_DISABLE_PERFCRIT_LOCKS"
 title: "_CRT_DISABLE_PERFCRIT_LOCKS"
 ms.date: "11/04/2016"
 f1_keywords: ["_CRT_DISABLE_PERFCRIT_LOCKS", "CRT_DISABLE_PERFCRIT_LOCKS"]

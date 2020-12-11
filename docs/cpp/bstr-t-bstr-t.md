@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _bstr_t::_bstr_t"
 title: "_bstr_t::_bstr_t"
 ms.date: "11/04/2016"
 f1_keywords: ["_bstr_t::_bstr_t"]

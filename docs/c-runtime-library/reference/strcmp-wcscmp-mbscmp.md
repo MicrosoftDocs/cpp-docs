@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strcmp, wcscmp, _mbscmp, _mbscmp_l"
 title: "strcmp, wcscmp, _mbscmp, _mbscmp_l"
 ms.date: "4/2/2020"
 api_name: ["wcscmp", "_mbscmp", "_mbscmp_l", "strcmp", "_o__mbscmp", "_o__mbscmp_l"]

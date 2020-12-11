@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Input Stream Member Functions"
 title: "Input Stream Member Functions"
 ms.date: "07/19/2019"
 helpviewer_keywords: ["input stream objects", "input streams, member functions"]

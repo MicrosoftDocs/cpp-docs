@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SimpleActivationFactory Class"
 title: "SimpleActivationFactory Class"
 ms.date: "09/07/2018"
 ms.topic: "reference"

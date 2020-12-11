@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDWordArray Class"
 title: "CDWordArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDWordArray", "AFXCOLL/CDWordArray", "AFXCOLL/CDWordArray::CDWordArray", "AFXCOLL/CDWordArray::Add", "AFXCOLL/CDWordArray::Append", "AFXCOLL/CDWordArray::Copy", "AFXCOLL/CDWordArray::ElementAt", "AFXCOLL/CDWordArray::FreeExtra", "AFXCOLL/CDWordArray::GetAt", "AFXCOLL/CDWordArray::GetCount", "AFXCOLL/CDWordArray::GetData", "AFXCOLL/CDWordArray::GetSize", "AFXCOLL/CDWordArray::GetUpperBound", "AFXCOLL/CDWordArray::InsertAt", "AFXCOLL/CDWordArray::IsEmpty", "AFXCOLL/CDWordArray::RemoveAll", "AFXCOLL/CDWordArray::RemoveAt", "AFXCOLL/CDWordArray::SetAt", "AFXCOLL/CDWordArray::SetAtGrow", "AFXCOLL/CDWordArray::SetSize"]

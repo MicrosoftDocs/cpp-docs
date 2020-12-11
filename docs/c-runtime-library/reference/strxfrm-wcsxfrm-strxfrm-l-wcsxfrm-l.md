@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l"
 title: "strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l"
 ms.date: "4/2/2020"
 api_name: ["strxfrm", "_wcsxfrm_l", "_strxfrm_l", "wcsxfrm", "_o__strxfrm_l", "_o__wcsxfrm_l"]

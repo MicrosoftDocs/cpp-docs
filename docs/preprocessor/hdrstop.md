@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: hdrstop pragma"
 title: "hdrstop pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["hdrstop_CPP", "vc-pragma.hdrstop"]

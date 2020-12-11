@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _cscanf, _cscanf_l, _cwscanf, _cwscanf_l"
 title: "_cscanf, _cscanf_l, _cwscanf, _cwscanf_l"
 ms.date: "10/21/2019"
 api_name: ["_cscanf_l", "_cscanf", "_cwscanf", "_cwscanf_l"]

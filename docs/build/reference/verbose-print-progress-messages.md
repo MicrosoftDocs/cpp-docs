@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /VERBOSE (Print progress messages)"
 title: "/VERBOSE (Print progress messages)"
 ms.date: "06/13/2019"
 f1_keywords: ["/verbose", "VC.Project.VCLinkerTool.ShowProgress"]

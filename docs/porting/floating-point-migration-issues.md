@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Floating-point migration issues"
 title: "Floating-point migration issues"
 ms.date: "05/17/2017"
 ms.assetid: 36a1b552-2f2b-4919-bc9d-c17f42434954

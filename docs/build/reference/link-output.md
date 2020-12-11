@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LINK Output"
 title: "LINK Output"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["mapfiles [C++]", "ILK files", "output files [C++], linker", "files [C++], LINK", ".ilk files", "LINK tool [C++], output", "import libraries [C++], creating", "executable files [C++], as linker output", "mapfiles [C++], LINK output", "linker [C++], output files", "DLLs [C++], as linker output", "LINK tool [C++], mapfile"]

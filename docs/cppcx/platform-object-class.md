@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Object Class"
 title: "Platform::Object Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"

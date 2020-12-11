@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Convert Between System::Guid and _GUID"
 title: "How to: Convert Between System::Guid and _GUID"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

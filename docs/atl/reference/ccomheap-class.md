@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComHeap Class"
 title: "CComHeap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComHeap", "ATLCOMMEM/ATL::CComHeap", "ATLCOMMEM/ATL::CComHeap::Allocate", "ATLCOMMEM/ATL::CComHeap::Free", "ATLCOMMEM/ATL::CComHeap::GetSize", "ATLCOMMEM/ATL::CComHeap::Reallocate"]

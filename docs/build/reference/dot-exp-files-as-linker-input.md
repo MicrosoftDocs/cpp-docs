@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .Exp Files as Linker Input"
 title: ".Exp Files as Linker Input"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exporting functions", "import libraries, linker files", "linking [C++], exports", "exporting functions, information about exported functions", "exporting data, export (.exp) files", "functions [C++], exporting", ".exp files [C++]", "EXP files"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exporting from a DLL Using __declspec(dllexport)"
 title: "Exporting from a DLL Using __declspec(dllexport)"
 ms.date: "05/06/2019"
 f1_keywords: ["dllexport"]

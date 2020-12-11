@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ AMP (C++ Accelerated Massive Parallelism)"
 title: "C++ AMP (C++ Accelerated Massive Parallelism)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["C++ AMP (see C++ Accelerated Massive Parallelism)", "C++ Accelerated Massive Parallelism, getting started"]

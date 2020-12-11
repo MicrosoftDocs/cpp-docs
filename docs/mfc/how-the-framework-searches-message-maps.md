@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How the Framework Searches Message Maps"
 title: "How the Framework Searches Message Maps"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message maps [MFC], searching"]

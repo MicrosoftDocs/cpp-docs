@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Building a Project (C++)"
 title: "Walkthrough: Building a Project (C++)"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["building projects [C++]", "projects [C++], building", "project building [C++]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use a Drawing Tool"
 title: "How to: Use a Drawing Tool"
 ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.image.drawing"]

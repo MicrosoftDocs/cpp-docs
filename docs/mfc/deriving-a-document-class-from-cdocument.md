@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Deriving a Document Class from CDocument"
 title: "Deriving a Document Class from CDocument"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CDocument class [MFC], deriving from", "classes [MFC], deriving from CDocument", "document objects [MFC], derived", "derived classes [MFC], functions often overridden", "document classes [MFC], functions often overridden"]

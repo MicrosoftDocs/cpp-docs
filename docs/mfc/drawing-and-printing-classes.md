@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Drawing and Printing Classes"
 title: "Drawing and Printing Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["output [MFC], graphical classes", "drawing [MFC], classes", "printing classes [MFC]", "graphics [MFC], graphical output classes"]

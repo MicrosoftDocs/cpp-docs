@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SRWLockSharedTraits Structure"
 title: "SRWLockSharedTraits Structure"
 ms.date: "09/27/2018"
 ms.topic: "reference"

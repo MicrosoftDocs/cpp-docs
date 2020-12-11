@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: multiset (STL/CLR)"
 title: "multiset (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Synchronization (lock Class)"
 title: "Synchronization (lock Class)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

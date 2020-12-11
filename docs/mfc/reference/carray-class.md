@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CArray Class"
 title: "CArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CArray", "AFXTEMPL/CArray", "AFXTEMPL/CArray::CArray", "AFXTEMPL/CArray::Add", "AFXTEMPL/CArray::Append", "AFXTEMPL/CArray::Copy", "AFXTEMPL/CArray::ElementAt", "AFXTEMPL/CArray::FreeExtra", "AFXTEMPL/CArray::GetAt", "AFXTEMPL/CArray::GetCount", "AFXTEMPL/CArray::GetData", "AFXTEMPL/CArray::GetSize", "AFXTEMPL/CArray::GetUpperBound", "AFXTEMPL/CArray::InsertAt", "AFXTEMPL/CArray::IsEmpty", "AFXTEMPL/CArray::RemoveAll", "AFXTEMPL/CArray::RemoveAt", "AFXTEMPL/CArray::SetAt", "AFXTEMPL/CArray::SetAtGrow", "AFXTEMPL/CArray::SetSize"]

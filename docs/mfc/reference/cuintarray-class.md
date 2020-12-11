@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CUIntArray Class"
 title: "CUIntArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CUIntArray", "AFXCOLL/CUIntArray", "AFXCOLL/CUIntArray::CUIntArray", "AFXCOLL/CUIntArray::Add", "AFXCOLL/CUIntArray::Append", "AFXCOLL/CUIntArray::Copy", "AFXCOLL/CUIntArray::ElementAt", "AFXCOLL/CUIntArray::FreeExtra", "AFXCOLL/CUIntArray::GetAt", "AFXCOLL/CUIntArray::GetCount", "AFXCOLL/CUIntArray::GetData", "AFXCOLL/CUIntArray::GetSize", "AFXCOLL/CUIntArray::GetUpperBound", "AFXCOLL/CUIntArray::InsertAt", "AFXCOLL/CUIntArray::IsEmpty", "AFXCOLL/CUIntArray::RemoveAll", "AFXCOLL/CUIntArray::RemoveAt", "AFXCOLL/CUIntArray::SetAt", "AFXCOLL/CUIntArray::SetAtGrow", "AFXCOLL/CUIntArray::SetSize"]

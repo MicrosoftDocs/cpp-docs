@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: directory_iterator Class"
 title: "directory_iterator Class"
 ms.date: "09/10/2018"
 f1_keywords: ["filesystem/std::experimental::filesystem::directory_iterator", "filesystem/std::experimental::filesystem::_Directory_iterator::_Directory_iterator", "filesystem/std::experimental::filesystem::directory_iterator::directory_iterator", "filesystem/std::experimental::filesystem::directory_iterator::increment", "filesystem/std::experimental::filesystem::directory_iterator::operator=", "filesystem/std::experimental::filesystem::directory_iterator::operator==", "filesystem/std::experimental::filesystem::directory_iterator::operator!=", "filesystem/std::experimental::filesystem::directory_iterator::operator*", "filesystem/std::experimental::filesystem::directory_iterator::operator-&gt;", "filesystem/std::experimental::filesystem::directory_iterator::operator++"]

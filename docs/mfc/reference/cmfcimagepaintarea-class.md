@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCImagePaintArea Class"
 title: "CMFCImagePaintArea Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCImagePaintArea", "AFXIMAGEPAINTAREA/CMFCImagePaintArea", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::CMFCImagePaintArea", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::GetMode", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetBitmap", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetColor", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetMode"]

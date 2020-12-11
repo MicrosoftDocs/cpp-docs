@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IExecutionResource Structure"
 title: "IExecutionResource Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["IExecutionResource", "CONCRTRM/concurrency::IExecutionResource", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::CurrentSubscriptionLevel", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetExecutionResourceId", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetNodeId", "CONCRTRM/concurrency::IExecutionResource::IExecutionResource::Remove"]

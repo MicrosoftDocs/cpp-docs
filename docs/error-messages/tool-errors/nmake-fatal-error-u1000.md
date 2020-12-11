@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NMAKE Fatal Error U1000"
 title: "NMAKE Fatal Error U1000"
 ms.date: "08/27/2018"
 f1_keywords: ["U1000"]

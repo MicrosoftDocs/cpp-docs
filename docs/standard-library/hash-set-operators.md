@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;hash_set&gt; operators"
 title: "&lt;hash_set&gt; operators"
 ms.date: "03/27/2019"
 f1_keywords: ["hash_set/std::operator!=", "hash_set/std::operator=="]

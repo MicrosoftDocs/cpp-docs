@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Null directive"
 title: "Null directive"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["preprocessor directives, Null", "null directive", "preprocessor directives", "preprocessor, directives"]

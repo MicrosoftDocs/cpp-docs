@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isascii, __isascii, iswascii"
 title: "isascii, __isascii, iswascii"
 ms.date: "4/2/2020"
 api_name: ["iswascii", "__isascii", "_o_iswascii"]

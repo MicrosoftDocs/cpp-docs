@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Thread Local Storage"
 title: "Thread Local Storage"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["thread-local variables", "TLS (thread local storage)", "thread storage-class attribute", "thread-local storage", "storage, thread local storage"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: time, _time32, _time64"
 title: "time, _time32, _time64"
 ms.date: "11/06/2018"
 api_name: ["time", "_time64", "_time32"]

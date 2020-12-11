@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAxWinAmbientDispatchEx Interface"
 title: "IAxWinAmbientDispatchEx Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IAxWinAmbientDispatchEx", "ATLIFACE/ATL::IAxWinAmbientDispatchEx", "ATLIFACE/ATL::SetAmbientDispatch"]

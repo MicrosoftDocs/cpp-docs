@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDockablePaneAdapter Class"
 title: "CDockablePaneAdapter Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDockablePaneAdapter", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::GetWrappedWnd", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::LoadState", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SaveState", "AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SetWrappedWnd"]

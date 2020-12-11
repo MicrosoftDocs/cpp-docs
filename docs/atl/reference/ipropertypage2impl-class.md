@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IPropertyPage2Impl Class"
 title: "IPropertyPage2Impl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IPropertyPage2Impl", "ATLCTL/ATL::IPropertyPage2Impl", "ATLCTL/ATL::IPropertyPage2Impl::EditProperty"]

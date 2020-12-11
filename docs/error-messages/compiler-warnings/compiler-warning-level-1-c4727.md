@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4727"
 title: "Compiler Warning (level 1) C4727"
 ms.date: "08/19/2019"
 f1_keywords: ["C4727"]

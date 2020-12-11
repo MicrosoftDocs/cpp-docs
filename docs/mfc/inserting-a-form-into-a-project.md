@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inserting a Form into a Project"
 title: "Inserting a Form into a Project"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["inserting forms [MFC]", "Insert New dialog box [MFC]", "forms, adding to projects"]

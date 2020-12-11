@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with Documents and Views"
 title: "Working with Documents and Views"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC [C++], documents", "MFC [C++], views", "views [C++], MFC", "documents [C++], MFC"]

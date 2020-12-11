@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with Resource Files"
 title: "Working with Resource Files (C++)"
 ms.date: "02/14/2019"
 helpviewer_keywords: ["resources [C++], about resources", "resources [C++], about resource files", "resource files [C++], about resource files"]

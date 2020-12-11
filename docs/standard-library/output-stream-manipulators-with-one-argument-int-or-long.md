@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Output Stream Manipulators with One Argument (int or long)"
 title: "Output Stream Manipulators with One Argument (int or long)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["output streams, int or long argument manipulators"]

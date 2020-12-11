@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding Controls By Hand"
 title: "Adding Controls By Hand"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows common controls [MFC], adding", "dialog box controls [MFC], adding to dialog boxes", "controlling input focus", "input focus control", "focus, controlling input [MFC]", "controls [MFC], adding to dialog boxes", "common controls [MFC], adding"]

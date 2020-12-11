@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating an OLE DB Consumer Using a Wizard"
 title: "Creating an OLE DB Consumer Using a Wizard"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB consumers, creating"]

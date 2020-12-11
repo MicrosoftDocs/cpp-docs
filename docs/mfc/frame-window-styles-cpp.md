@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Frame-Window Styles (C++)"
 title: "Frame-Window Styles (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["window styles [MFC]", "PreCreateWindow method, setting window styles", "windows [MFC], MFC", "frame windows [MFC], styles", "MFC, frame windows", "styles [MFC], windows"]

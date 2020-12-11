@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;stack&gt;"
 title: "&lt;stack&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<stack>"]

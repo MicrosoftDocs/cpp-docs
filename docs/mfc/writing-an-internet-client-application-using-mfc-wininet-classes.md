@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Writing an Internet Client Application Using MFC WinInet Classes"
 title: "Writing an Internet Client Application Using MFC WinInet Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Internet client applications [MFC]", "WinInet classes [MFC], programming", "Internet client applications [MFC], writing", "Internet applications [MFC], WinInet", "Internet applications [MFC], client applications", "MFC, Internet applications"]

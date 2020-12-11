@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: binary_negate Class"
 title: "binary_negate Class"
 ms.date: "02/21/2019"
 f1_keywords: ["functional/std::binary_negate"]

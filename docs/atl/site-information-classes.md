@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Site Information Classes"
 title: "Site Information Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interpreting User Input Through a View"
 title: "Interpreting User Input Through a View"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["interpreting user input through views [MFC]", "views [MFC], user interface and input", "input [MFC], view class [MFC]", "CView class [MFC], interpreting user input", "user input [MFC], interpreting through view class [MFC]"]

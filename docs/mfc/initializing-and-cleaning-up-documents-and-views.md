@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Initializing and Cleaning Up Documents and Views"
 title: "Initializing and Cleaning Up Documents and Views"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["initializing documents [MFC]", "views [MFC], cleaning up", "documents [MFC], initializing", "documents [MFC], cleaning up", "views [MFC], initializing", "initializing objects [MFC], document objects", "document objects [MFC], life cycle of", "initializing views [MFC]"]

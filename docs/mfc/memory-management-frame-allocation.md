@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Memory Management: Frame Allocation"
 title: "Memory Management: Frame Allocation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory leaks [MFC], frame allocation", "memory [MFC], detecting leaks", "memory [MFC], reclaiming", "memory allocation [MFC], frames", "frame variables [MFC], automatic deletion of", "scope [MFC], frame variables", "heap allocation [MFC], vs. frame allocation", "variables [MFC], frame variables", "memory leaks [MFC], detecting", "memory, releasing [MFC]", "stack frames [MFC]", "memory leaks [MFC], allocating objects on the frame", "detecting memory leaks [MFC]", "frame allocation [MFC]", "frame variables [MFC]"]

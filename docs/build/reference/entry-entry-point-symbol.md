@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ENTRY (Entry-Point Symbol)"
 title: "/ENTRY (Entry-Point Symbol)"
 ms.date: "11/04/2016"
 f1_keywords: ["/entry", "VC.Project.VCLinkerTool.EntryPointSymbol"]

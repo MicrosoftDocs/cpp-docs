@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How To: Add, Edit, or Delete Controls (C++)"
 title: "How To: Add, Edit, or Delete Controls (C++)"
 ms.date: "02/15/2019"
 f1_keywords: ["vc.controls.activex", "vc.editors.dialog.insertActiveXControls"]

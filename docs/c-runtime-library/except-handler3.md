@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _except_handler3"
 title: "_except_handler3"
 ms.date: "11/04/2016"
 api_name: ["_except_handler3"]

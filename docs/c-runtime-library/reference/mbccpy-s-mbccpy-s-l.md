@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mbccpy_s, _mbccpy_s_l"
 title: "_mbccpy_s, _mbccpy_s_l"
 ms.date: "4/2/2020"
 api_name: ["_mbccpy_s", "_mbccpy_s_l", "_o__mbccpy_s", "_o__mbccpy_s_l"]

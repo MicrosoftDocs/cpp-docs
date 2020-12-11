@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Containers"
 title: "Containers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["containers [MFC]", "OLE containers", "application containers [MFC]", "containers [MFC], OLE container applications", "containers [MFC], container applications"]

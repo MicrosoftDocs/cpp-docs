@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CGopherLocator Class"
 title: "CGopherLocator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CGopherLocator", "AFXINET/CGopherLocator", "AFXINET/CGopherLocator::CGopherLocator", "AFXINET/CGopherLocator::GetLocatorType"]

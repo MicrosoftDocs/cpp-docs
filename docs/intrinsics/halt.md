@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __halt"
 title: "__halt"
 ms.date: "09/02/2019"
 f1_keywords: ["__halt", "__halt_cpp"]

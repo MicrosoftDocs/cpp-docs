@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Retrieving Data from the Dialog Object"
 title: "Retrieving Data from the Dialog Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dialog boxes [MFC], retrieving user data", "dialog box data [MFC]", "data [MFC], retrieving", "GetDlgItemText method [MFC]", "SetDlgItemText method [MFC]", "SetWindowText method [MFC]", "dialog box data [MFC], retrieving", "retrieving data [MFC]", "user input [MFC], retrieving from MFC dialog boxes", "capturing user input [MFC]", "dialog box controls [MFC], initializing values", "DDX (dialog data exchange) [MFC]", "MFC dialog boxes [MFC], retrieving user input", "data retrieval [MFC], dialog boxes", "data [MFC], dialog boxes", "DDX (dialog data exchange) [MFC], about DDX", "DDX (dialog data exchange) [MFC], retrieving data from Dialog object", "GetWindowText method [MFC]"]

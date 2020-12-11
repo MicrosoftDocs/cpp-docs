@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Retrieving a BLOB"
 title: "Retrieving a BLOB"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["retrieving BLOBs", "BLOB (binary large object), retrieving", "OLE DB, BLOBs (binary large objects)"]

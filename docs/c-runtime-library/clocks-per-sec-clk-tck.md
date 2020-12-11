@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLOCKS_PER_SEC, CLK_TCK"
 title: "CLOCKS_PER_SEC, CLK_TCK"
 ms.date: "11/04/2016"
 f1_keywords: ["CLOCKS_PER_SEC", "CLK_TCK"]

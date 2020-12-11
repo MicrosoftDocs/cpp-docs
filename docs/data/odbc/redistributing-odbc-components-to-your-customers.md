@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Redistributing ODBC Components to Your Customers"
 title: "Redistributing ODBC Components to Your Customers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC components, redistributing", "ODBC, distributing components", "components [C++], distributing", "ODBC Administrator", "components [C++]", "components [C++], redistributing"]

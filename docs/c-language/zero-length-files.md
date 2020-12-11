@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Zero-Length Files"
 title: "Zero-Length Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["files [C++], zero-length", "zero-length files"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding a New Interface in an ATL Project"
 title: "Adding a New Interface in an ATL Project"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.ATL.interface"]

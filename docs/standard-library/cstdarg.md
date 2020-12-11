@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cstdarg&gt;"
 title: "&lt;cstdarg&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<cstdarg>"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMakeSettings.json schema reference"
 title: "CMakeSettings.json schema reference"
 ms.date: "11/22/2019"
 helpviewer_keywords: ["CMake in Visual C++"]

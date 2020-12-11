@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exception Processing"
 title: "Exception Processing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["macros [MFC], exception handling", "DAO (Data Access Objects), exceptions [MFC]", "OLE exceptions [MFC], MFC functions", "exceptions [MFC], processing", "exception macros [MFC]", "termination functions, MFC", "MFC, exceptions", "exceptions [MFC], MFC throwing functions"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Fx (Merge Injected Code)"
 title: "/Fx (Merge Injected Code)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.ExpandAttributedSource", "/Fx", "VC.Project.VCCLCompilerTool.ExpandAttributedSource"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: hash Structure (C++ Standard Library)"
 title: "hash Structure (C++ Standard Library)| Microsoft Docs"
 ms.date: "11/04/2016"
 f1_keywords: ["thread/std::hash"]

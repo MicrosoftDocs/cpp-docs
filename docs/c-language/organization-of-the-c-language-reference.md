@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Organization of the C Language Reference"
 title: "Organization of the C Language Reference"
 ms.date: "11/04/2016"
 ms.assetid: 7e42daa4-9c9e-4c2d-bbc4-e45405803c20

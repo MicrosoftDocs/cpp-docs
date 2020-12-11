@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: feraiseexcept"
 title: "feraiseexcept"
 ms.date: "04/05/2018"
 api_name: ["feraiseexcept"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions (C++/CX)"
 title: "Exceptions (C++/CX)"
 ms.date: "07/02/2019"
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f

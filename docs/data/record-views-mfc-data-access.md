@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Record Views  (MFC Data Access)"
 title: "Record Views  (MFC Data Access)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC [C++], record views", "ODBC recordsets [C++], record views", "databases [C++], record views", "record views [C++]", "forms [C++], data access tasks"]

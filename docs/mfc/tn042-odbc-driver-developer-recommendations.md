@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN042: ODBC Driver Developer Recommendations"
 title: "TN042: ODBC Driver Developer Recommendations"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.odbc"]

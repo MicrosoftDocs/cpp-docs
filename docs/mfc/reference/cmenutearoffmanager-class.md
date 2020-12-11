@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMenuTearOffManager Class"
 title: "CMenuTearOffManager Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Build", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::GetRegPath", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Initialize", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::IsDynamicID", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Parse", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Reset", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetInUse", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetupTearOffMenus"]

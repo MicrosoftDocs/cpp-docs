@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Introduction to Microsoft C++ for UNIX Users"
 title: "Introduction to Microsoft C++ for UNIX Users"
 ms.date: "10/23/2019"
 helpviewer_keywords: ["UNIX [C++]"]

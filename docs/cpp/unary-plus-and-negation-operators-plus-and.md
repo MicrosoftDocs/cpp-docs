@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unary Plus and Negation Operators: + and -"
 title: "Unary Plus and Negation Operators: + and -"
 ms.date: "11/04/2016"
 f1_keywords: ["+", "-"]

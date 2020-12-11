@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CInternetFile Class"
 title: "CInternetFile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInternetFile", "AFXINET/CInternetFile", "AFXINET/CInternetFile::CInternetFile", "AFXINET/CInternetFile::Abort", "AFXINET/CInternetFile::Close", "AFXINET/CInternetFile::Flush", "AFXINET/CInternetFile::GetLength", "AFXINET/CInternetFile::Read", "AFXINET/CInternetFile::ReadString", "AFXINET/CInternetFile::Seek", "AFXINET/CInternetFile::SetReadBufferSize", "AFXINET/CInternetFile::SetWriteBufferSize", "AFXINET/CInternetFile::Write", "AFXINET/CInternetFile::WriteString", "AFXINET/CInternetFile::m_hFile"]

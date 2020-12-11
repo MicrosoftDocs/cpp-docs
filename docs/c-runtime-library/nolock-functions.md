@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _nolock Functions"
 title: "_nolock Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_nolock functions", "nolock functions"]

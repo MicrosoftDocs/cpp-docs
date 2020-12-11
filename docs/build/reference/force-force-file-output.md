@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /FORCE (Force File Output)"
 title: "/FORCE (Force File Output)"
 ms.date: "07/19/2019"
 f1_keywords: ["VC.Project.VCLinkerTool.ForceLink", "/force"]

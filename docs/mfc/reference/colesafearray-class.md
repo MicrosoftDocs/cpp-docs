@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleSafeArray Class"
 title: "COleSafeArray Class"
 ms.date: "08/29/2019"
 f1_keywords: ["COleSafeArray", "AFXDISP/COleSafeArray", "AFXDISP/COleSafeArray::COleSafeArray", "AFXDISP/COleSafeArray::AccessData", "AFXDISP/COleSafeArray::AllocData", "AFXDISP/COleSafeArray::AllocDescriptor", "AFXDISP/COleSafeArray::Attach", "AFXDISP/COleSafeArray::Clear", "AFXDISP/COleSafeArray::Copy", "AFXDISP/COleSafeArray::Create", "AFXDISP/COleSafeArray::CreateOneDim", "AFXDISP/COleSafeArray::Destroy", "AFXDISP/COleSafeArray::DestroyData", "AFXDISP/COleSafeArray::DestroyDescriptor", "AFXDISP/COleSafeArray::Detach", "AFXDISP/COleSafeArray::GetByteArray", "AFXDISP/COleSafeArray::GetDim", "AFXDISP/COleSafeArray::GetElement", "AFXDISP/COleSafeArray::GetElemSize", "AFXDISP/COleSafeArray::GetLBound", "AFXDISP/COleSafeArray::GetOneDimSize", "AFXDISP/COleSafeArray::GetUBound", "AFXDISP/COleSafeArray::Lock", "AFXDISP/COleSafeArray::PtrOfIndex", "AFXDISP/COleSafeArray::PutElement", "AFXDISP/COleSafeArray::Redim", "AFXDISP/COleSafeArray::ResizeOneDim", "AFXDISP/COleSafeArray::UnaccessData", "AFXDISP/COleSafeArray::Unlock"]

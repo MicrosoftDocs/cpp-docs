@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fclose, _fcloseall"
 title: "fclose, _fcloseall"
 ms.date: "4/2/2020"
 api_name: ["fclose", "_fcloseall", "_o__fcloseall", "_o_fclose"]

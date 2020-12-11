@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Connection Maps"
 title: "Connection Maps"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["connection maps"]

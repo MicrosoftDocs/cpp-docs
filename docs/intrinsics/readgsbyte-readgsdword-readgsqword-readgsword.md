@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __readgsbyte, __readgsdword, __readgsqword, __readgsword"
 title: "__readgsbyte, __readgsdword, __readgsqword, __readgsword"
 ms.date: "09/02/2019"
 f1_keywords: ["__readgsbyte", "__readgsdword", "__readgsqword", "__readgsword"]

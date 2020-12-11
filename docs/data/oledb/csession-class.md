@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSession Class"
 title: "CSession Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSession", "ATL::CSession", "ATL.CSession", "CSession.Abort", "CSession::Abort", "ATL.CSession.Abort", "ATL::CSession::Abort", "CSession::Close", "ATL.CSession.Close", "CSession.Close", "ATL::CSession::Close", "CSession.Commit", "ATL.CSession.Commit", "ATL::CSession::Commit", "CSession::Commit", "GetTransactionInfo", "CSession.GetTransactionInfo", "ATL.CSession.GetTransactionInfo", "CSession::GetTransactionInfo", "ATL::CSession::GetTransactionInfo", "ATL::CSession::Open", "CSession::Open", "CSession.Open", "ATL.CSession.Open", "CSession::StartTransaction", "StartTransaction", "ATL.CSession.StartTransaction", "CSession.StartTransaction", "ATL::CSession::StartTransaction"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Editor (C++)"
 title: "Dialog Editor (C++)"
 ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.dialog.dialog", "vc.editors.dialog.F1", "vc.editors.dialog"]

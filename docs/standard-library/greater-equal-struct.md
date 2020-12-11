@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: greater_equal Struct"
 title: "greater_equal Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::greater_equal"]

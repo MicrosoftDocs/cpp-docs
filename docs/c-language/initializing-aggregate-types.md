@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Initializing Aggregate Types"
 title: "Initializing Aggregate Types"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["aggregate types [C++]", "union keyword [C], declarations", "types [C], initializing", "union keyword [C]", "aggregates [C++], initializing"]

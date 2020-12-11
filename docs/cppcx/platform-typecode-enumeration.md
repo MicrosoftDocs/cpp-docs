@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::TypeCode Enumeration"
 title: "Platform::TypeCode Enumeration"
 ms.date: "12/30/2016"
 ms.topic: "reference"

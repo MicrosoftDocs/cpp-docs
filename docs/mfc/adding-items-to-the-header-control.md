@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding Items to the Header Control"
 title: "Adding Items to the Header Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [MFC], header", "CHeaderCtrl class [MFC], adding items", "header controls [MFC], adding items to"]

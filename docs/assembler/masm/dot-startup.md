@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .STARTUP (32-bit MASM)"
 title: ".STARTUP"
 ms.date: "11/05/2019"
 f1_keywords: [".STARTUP"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator &#39; &#39;"
 title: "operator &#39; &#39;"
 ms.date: "12/17/2019"
 f1_keywords: ["operator ' '", "' '"]

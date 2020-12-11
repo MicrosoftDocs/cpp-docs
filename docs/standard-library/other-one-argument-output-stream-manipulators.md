@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Other One-Argument Output Stream Manipulators"
 title: "Other One-Argument Output Stream Manipulators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["output streams, one-argument manipulators"]

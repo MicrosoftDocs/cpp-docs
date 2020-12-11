@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recommendations for Handling Input/Output"
 title: "Recommendations for Handling Input-Output"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["I/O [MFC], about I/O", "file-based I/O options", "I/O [MFC]", "I/O [MFC], options", "I/O [MFC], file-based options"]

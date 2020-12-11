@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Open Database Connectivity (ODBC)"
 title: "Open Database Connectivity (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC [C++]", "databases [C++], ODBC", "data access [C++], ODBC"]

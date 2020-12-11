@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Document and View Classes Created by the MFC Application Wizard"
 title: "Document and View Classes Created by the MFC Application Wizard"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["document classes [MFC]", "document classes [MFC], created by application wizards", "application wizards [MFC], document/view classes created", "view classes [MFC], created by application wizards"]

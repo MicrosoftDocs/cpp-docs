@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: LINK Input Files"
 title: "LINK Input Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["files [C++], LINK", "module definition files", "resources [C++], linker files", "LINK tool [C++], input files", "module definition files, linker files", "input files [C++], LINK", "linker [C++], input files", "import libraries [C++], linker files", "command input to linker files [C++]"]

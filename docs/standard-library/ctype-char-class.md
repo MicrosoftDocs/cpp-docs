@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ctype&lt;char&gt; Class"
 title: "ctype&lt;char&gt; Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ctype<char>", "locale/std::ctype<char>"]

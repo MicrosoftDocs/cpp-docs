@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCColorPickerCtrl Class"
 title: "CMFCColorPickerCtrl Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CMFCColorPickerCtrl", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::CMFCColorPickerCtrl", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetColor", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetHLS", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetHue", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetLuminance", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::GetSaturation", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SelectCellHexagon", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetColor", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetHLS", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetHue", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetLuminance", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetLuminanceBarWidth", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetOriginalColor", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetPalette", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetSaturation", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetType", "AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::DrawCursor"]

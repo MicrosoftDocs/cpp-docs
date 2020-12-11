@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComObjectRoot Class"
 title: "CComObjectRoot Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComObjectRoot", "atlcom/ATL::CComObjectRoot"]

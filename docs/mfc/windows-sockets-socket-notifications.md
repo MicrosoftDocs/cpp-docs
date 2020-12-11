@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets: Socket Notifications"
 title: "Windows Sockets: Socket Notifications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows Sockets [MFC], notifications", "notifications [MFC], socket", "sockets [MFC], notifications"]

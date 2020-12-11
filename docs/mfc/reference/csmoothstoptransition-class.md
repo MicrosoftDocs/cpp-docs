@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSmoothStopTransition Class"
 title: "CSmoothStopTransition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSmoothStopTransition", "AFXANIMATIONCONTROLLER/CSmoothStopTransition", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::CSmoothStopTransition", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::Create", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CSmoothStopTransition::m_maximumDuration"]

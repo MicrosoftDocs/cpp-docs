@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multithreading Support for Older Code (Visual C++)"
 title: "Multithreading Support for Older Code (Visual C++)"
 ms.date: "08/27/2018"
 helpviewer_keywords: ["threading [C++]", "multiple threads", "concurrent programming [C++]", "programming [C++], multithreaded", "multithreading [C++], about multithreading", "multiple concurrent threads", "multithreading [C++]"]

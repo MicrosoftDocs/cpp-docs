@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: spectre"
 title: "spectre"
 ms.date: "01/23/2018"
 f1_keywords: ["spectre_cpp", "spectre", "nomitigation"]

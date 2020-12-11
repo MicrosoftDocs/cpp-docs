@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Output File Stream Member Functions"
 title: "Output File Stream Member Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["output streams [C++], member functions"]

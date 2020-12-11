@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: parallel_policy Class"
 title: "parallel_policy Class"
 ms.date: "04/18/2019"
 f1_keywords: ["execution/std::execution::parallel_policy"]

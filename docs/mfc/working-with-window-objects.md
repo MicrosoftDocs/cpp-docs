@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with Window Objects"
 title: "Working with Window Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["child windows [MFC], working with", "window objects [MFC], working with"]

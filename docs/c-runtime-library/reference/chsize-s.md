@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _chsize_s"
 title: "_chsize_s"
 ms.date: "4/2/2020"
 api_name: ["_chsize_s", "_o__chsize_s"]

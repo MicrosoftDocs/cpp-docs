@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleLinkingDoc Class"
 title: "COleLinkingDoc Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleLinkingDoc", "AFXOLE/COleLinkingDoc", "AFXOLE/COleLinkingDoc::COleLinkingDoc", "AFXOLE/COleLinkingDoc::Register", "AFXOLE/COleLinkingDoc::Revoke", "AFXOLE/COleLinkingDoc::OnFindEmbeddedItem", "AFXOLE/COleLinkingDoc::OnGetLinkedItem"]

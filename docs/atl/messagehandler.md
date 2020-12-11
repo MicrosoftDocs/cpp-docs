@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MessageHandler"
 title: "MessageHandler"
 ms.date: "11/04/2016"
 ms.topic: "reference"

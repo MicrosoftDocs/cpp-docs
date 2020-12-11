@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: warning pragma"
 title: "warning pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["warning_CPP", "vc-pragma.warning"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Templates (C++)"
 title: "Templates (C++)"
 ms.date: "12/27/2019"
 f1_keywords: ["template_cpp"]

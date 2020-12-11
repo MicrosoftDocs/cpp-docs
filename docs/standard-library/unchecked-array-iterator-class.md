@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: unchecked_array_iterator Class"
 title: "unchecked_array_iterator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["stdext::unchecked_array_iterator"]

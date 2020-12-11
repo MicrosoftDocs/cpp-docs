@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: max_fixed_size Class"
 title: "max_fixed_size Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::max_fixed_size", "allocators/stdext::max_fixed_size::allocated", "allocators/stdext::max_fixed_size::deallocated", "allocators/stdext::max_fixed_size::full", "allocators/stdext::max_fixed_size::released", "allocators/stdext::max_fixed_size::saved"]

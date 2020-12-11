@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Null and Undefined Macros"
 title: "Null and Undefined Macros"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, undefined macros", "Null macros in NMAKE", "macros, null and undefined", "undefined macros and NMAKE", "NMAKE program, null macros"]

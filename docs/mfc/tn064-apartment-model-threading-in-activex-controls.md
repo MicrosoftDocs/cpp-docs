@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN064: Apartment-Model Threading in ActiveX Controls"
 title: "TN064: Apartment-Model Threading in ActiveX Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE controls [MFC], container support", "containers [MFC], multithreaded", "TN064 [MFC]", "multithread container [MFC]", "apartment model threading [MFC]"]

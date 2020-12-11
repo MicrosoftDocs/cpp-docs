@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Marshaling Global Functions"
 title: "Marshaling Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlFreeMarshalStream", "atlbase/ATL::AtlMarshalPtrInProc", "atlbase/ATL::AtlUnmarshalPtr"]

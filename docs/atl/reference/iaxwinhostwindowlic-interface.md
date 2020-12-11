@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAxWinHostWindowLic Interface"
 title: "IAxWinHostWindowLic Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IAxWinHostWindowLic", "ATLIFACE/ATL::IAxWinHostWindowLic", "ATLIFACE/ATL::CreateControlLic", "ATLIFACE/ATL::CreateControlLicEx"]

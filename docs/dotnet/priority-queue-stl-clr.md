@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: priority_queue (STL/CLR)"
 title: "priority_queue (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

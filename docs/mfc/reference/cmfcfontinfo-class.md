@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCFontInfo Class"
 title: "CMFCFontInfo Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCFontInfo", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::GetFullName", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nCharSet", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nPitchAndFamily", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nType", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strName", "AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strScript"]

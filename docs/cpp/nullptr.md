@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: nullptr"
 title: "nullptr"
 ms.date: 07/22/2020
 f1_keywords: ["nullptr_cpp"]

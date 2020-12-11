@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding Controls to a Property Sheet"
 title: "Adding Controls to a Property Sheet"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [MFC], adding to property sheets", "property sheets, adding controls"]

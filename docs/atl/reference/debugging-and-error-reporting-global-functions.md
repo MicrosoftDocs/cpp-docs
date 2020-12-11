@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debugging and Error Reporting Global Functions"
 title: "Debugging and Error Reporting Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcomcli/ATL::AtlHresultFromLastError", "atlcom/ATL::AtlReportError", "atldef/ATL::AtlThrow"]

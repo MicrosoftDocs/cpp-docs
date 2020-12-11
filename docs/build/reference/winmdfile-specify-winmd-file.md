@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /WINMDFILE (Specify winmd File)"
 title: "/WINMDFILE (Specify winmd File)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateWindowsMetadataFile"]

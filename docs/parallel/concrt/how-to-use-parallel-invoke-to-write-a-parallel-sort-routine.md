@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use parallel_invoke to Write a Parallel Sort Routine"
 title: "How to: Use parallel_invoke to Write a Parallel Sort Routine"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["task_handle class, example", "task_group class, example", "make_task function, example", "structured_task_group class, example", "improving parallel performance with task groups [Concurrency Runtime]"]

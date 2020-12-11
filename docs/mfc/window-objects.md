@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Window Objects"
 title: "Window Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [MFC], window", "Windows window [MFC]", "MFC, windows", "frame windows [MFC], C++ window objects", "window objects [MFC]", "windows [MFC], C++ window objects", "window messages [MFC]", "HWND", "messages [MFC], Windows", "Visual C++, window objects [MFC]", "HWND, window objects [MFC]"]

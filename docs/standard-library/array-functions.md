@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;array&gt; functions"
 title: "&lt;array&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["array/std::array::get", "array/std::get", "array/std::swap"]

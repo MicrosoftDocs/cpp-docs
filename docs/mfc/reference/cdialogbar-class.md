@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDialogBar Class"
 title: "CDialogBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDialogBar", "AFXEXT/CDialogBar", "AFXEXT/CDialogBar::CDialogBar", "AFXEXT/CDialogBar::Create"]

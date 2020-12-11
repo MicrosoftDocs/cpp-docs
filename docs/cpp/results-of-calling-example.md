@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Results of Calling Example"
 title: "Results of Calling Example"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["examples [C++], results of calling", "results, thiscall call", "results, __fastcall keyword call", "results, __cdecl call", "results, __stdcall call"]

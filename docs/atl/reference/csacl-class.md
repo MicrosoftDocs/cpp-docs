@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSacl Class"
 title: "CSacl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSacl", "ATLSECURITY/ATL::CSacl", "ATLSECURITY/ATL::CSacl::CSacl", "ATLSECURITY/ATL::CSacl::AddAuditAce", "ATLSECURITY/ATL::CSacl::GetAceCount", "ATLSECURITY/ATL::CSacl::RemoveAce", "ATLSECURITY/ATL::CSacl::RemoveAllAces"]

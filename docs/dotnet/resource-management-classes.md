@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Management Classes"
 title: "Resource Management Classes"
 ms.date: "11/04/2016"
 ms.topic: "reference"

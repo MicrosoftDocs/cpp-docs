@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fegetexceptflag"
 title: "fegetexceptflag"
 ms.date: "04/05/2018"
 api_name: ["fegetexceptflag"]

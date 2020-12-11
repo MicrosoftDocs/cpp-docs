@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How Noncommand Messages Reach Their Handlers"
 title: "How Noncommand Messages Reach Their Handlers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["messages [MFC], routing", "noncommand messages", "Windows messages [MFC], routing", "message handling [MFC], noncommand messages"]

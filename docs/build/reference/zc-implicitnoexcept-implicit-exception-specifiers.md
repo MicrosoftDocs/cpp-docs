@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zc:implicitNoexcept (Implicit Exception Specifiers)"
 title: "/Zc:implicitNoexcept (Implicit Exception Specifiers)"
 ms.date: "03/06/2018"
 f1_keywords: ["/Zc:implicitNoexcept"]

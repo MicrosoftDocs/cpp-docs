@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3708"
 title: "Compiler Error C3708"
 ms.date: "11/04/2016"
 f1_keywords: ["C3708"]

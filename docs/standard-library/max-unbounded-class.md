@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: max_unbounded Class"
 title: "max_unbounded Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::max_unbounded", "allocators/stdext::max_unbounded::allocated", "allocators/stdext::max_unbounded::deallocated", "allocators/stdext::max_unbounded::full", "allocators/stdext::max_unbounded::released", "allocators/stdext::max_unbounded::saved"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type long double"
 title: "Type long double"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["long double keyword [C]", "double data type, long double"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL COM+ 1.0 Component Wizard"
 title: "ATL COM+ 1.0 Component Wizard"
 ms.date: "05/08/2019"
 helpviewer_keywords: ["ATL projects, adding components"]

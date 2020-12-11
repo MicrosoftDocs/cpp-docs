@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Where to Find Message Maps"
 title: "Where to Find Message Maps"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["macros, message map", "locating message maps", "message classes [MFC], finding", "message-map macros"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __outwordstring"
 title: "__outwordstring"
 ms.date: "09/02/2019"
 f1_keywords: ["__outwordstring"]

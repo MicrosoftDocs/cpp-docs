@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an ATL Simple Object"
 title: "Adding an ATL Simple Object"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.classes.adding.atl"]

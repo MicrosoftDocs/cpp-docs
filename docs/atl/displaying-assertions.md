@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Displaying Assertions"
 title: "Displaying Assertions"
 ms.date: "05/05/2019"
 helpviewer_keywords: ["debugging [ATL], displaying assertions", "assertions, displaying", "debugging assertions", "assertions, debugging"]

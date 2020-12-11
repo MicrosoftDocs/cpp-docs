@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN036: Using CFormView with AppWizard and ClassWizard"
 title: "TN036: Using CFormView with AppWizard and ClassWizard"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["TN036"]

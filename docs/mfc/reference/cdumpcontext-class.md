@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDumpContext Class"
 title: "CDumpContext Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDumpContext", "AFX/CDumpContext", "AFX/CDumpContext::CDumpContext", "AFX/CDumpContext::DumpAsHex", "AFX/CDumpContext::Flush", "AFX/CDumpContext::GetDepth", "AFX/CDumpContext::HexDump", "AFX/CDumpContext::SetDepth"]

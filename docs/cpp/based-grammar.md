@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __based Grammar"
 title: "__based Grammar"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["based addressing"]

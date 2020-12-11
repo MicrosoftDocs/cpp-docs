@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: #using directive (C++/CLI)"
 title: "#using directive (C++/CLI)"
 ms.date: "08/29/2019"
 f1_keywords: ["friend_as_cpp", "#using", "friend_as", "#using_cpp"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: istrstream Class"
 title: "istrstream Class"
 ms.date: "11/04/2016"
 f1_keywords: ["strstream/std::istrstream::rdbuf", "strstream/std::istrstream::str"]

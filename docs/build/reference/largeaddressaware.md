@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /LARGEADDRESSAWARE"
 title: "/LARGEADDRESSAWARE"
 ms.date: "11/04/2016"
 f1_keywords: ["/largeaddressaware_editbin"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _spawnlp, _wspawnlp"
 title: "_spawnlp, _wspawnlp"
 ms.date: "11/04/2016"
 api_name: ["_wspawnlp", "_spawnlp"]

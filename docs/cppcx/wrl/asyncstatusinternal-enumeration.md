@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AsyncStatusInternal Enumeration"
 title: "AsyncStatusInternal Enumeration"
 ms.date: "11/04/2016"
 ms.topic: "reference"

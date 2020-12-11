@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fwrite"
 title: "fwrite"
 ms.date: "4/2/2020"
 api_name: ["fwrite", "_o_fwrite"]

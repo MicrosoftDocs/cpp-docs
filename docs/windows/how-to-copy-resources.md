@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Manage Resources (C++)"
 title: "How to: Manage Resources (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.resvw.resource.copying", "vs.resvw.resource.copying", "vc.resvw.resource.changing", "vb.xmldesigner.data", "vs.resvw.resource.importing", "vc.resvw.resource.importing"]

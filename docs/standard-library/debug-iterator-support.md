@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debug Iterator Support"
 title: "Debug Iterator Support"
 ms.date: "09/13/2018"
 helpviewer_keywords: ["Safe Libraries", "Safe Libraries, C++ Standard Library", "Safe C++ Standard Library", "C++ Standard Library, debug iterator support", "iterators, debug iterator support", "iterators, incompatible", "incompatible iterators", "debug iterator support"]

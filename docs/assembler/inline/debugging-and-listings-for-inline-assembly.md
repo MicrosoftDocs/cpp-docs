@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debugging and Listings for Inline Assembly"
 title: "Debugging and Listings for Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["source level debugger", "__asm keyword [C++], debugging", "inline assembly, listings", "bugs, __asm blocks", "debugging [C++], inline assembly code", "inline assembly, debugging"]

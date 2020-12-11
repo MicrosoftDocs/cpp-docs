@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SimpleClassFactory Class"
 title: "SimpleClassFactory Class"
 ms.date: "09/7/2018"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cerrno&gt;"
 title: "&lt;cerrno&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<cerrno>"]

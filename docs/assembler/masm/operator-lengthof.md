@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator LENGTHOF"
 title: "operator LENGTHOF"
 ms.date: "12/17/2019"
 f1_keywords: ["operator LENGTHOF", "LENGTHOF"]

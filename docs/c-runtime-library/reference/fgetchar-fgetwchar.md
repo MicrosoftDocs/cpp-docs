@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fgetchar, _fgetwchar"
 title: "_fgetchar, _fgetwchar"
 ms.date: "4/2/2020"
 api_name: ["_fgetchar", "_fgetwchar", "_o__fgetchar", "_o__fgetwchar"]

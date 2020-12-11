@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SIMD Extension"
 title: "SIMD Extension"
 ms.date: "03/20/2019"
 helpviewer_keywords: ["SIMD", "OpenMP in Visual C++, new features", "explicit parallelization, new features"]

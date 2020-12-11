@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parallel Patterns Library (PPL)"
 title: "Parallel Patterns Library (PPL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Parallel Patterns Library (PPL)"]

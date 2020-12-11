@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE (MFC)"
 title: "OLE (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE [MFC], user-interface topics", "OLE applications [MFC], user interface", "user interfaces, OLE", "applications [OLE], user interface"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Storage Class"
 title: "Storage Class"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["linkage [C++], external", "function storage class", "function specifiers, storage class", "storage classes", "Microsoft-specific storage classes", "external linkage, storage-class specifiers", "static storage class specifiers"]

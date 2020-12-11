@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ungetc, ungetwc"
 title: "ungetc, ungetwc"
 ms.date: "4/2/2020"
 api_name: ["ungetwc", "ungetc", "_o_ungetc", "_o_ungetwc"]

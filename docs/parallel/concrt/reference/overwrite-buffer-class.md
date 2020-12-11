@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: overwrite_buffer Class"
 title: "overwrite_buffer Class"
 ms.date: "11/04/2016"
 f1_keywords: ["overwrite_buffer", "AGENTS/concurrency::overwrite_buffer", "AGENTS/concurrency::overwrite_buffer::overwrite_buffer", "AGENTS/concurrency::overwrite_buffer::has_value", "AGENTS/concurrency::overwrite_buffer::value", "AGENTS/concurrency::overwrite_buffer::accept_message", "AGENTS/concurrency::overwrite_buffer::consume_message", "AGENTS/concurrency::overwrite_buffer::link_target_notification", "AGENTS/concurrency::overwrite_buffer::propagate_message", "AGENTS/concurrency::overwrite_buffer::propagate_to_any_targets", "AGENTS/concurrency::overwrite_buffer::release_message", "AGENTS/concurrency::overwrite_buffer::reserve_message", "AGENTS/concurrency::overwrite_buffer::resume_propagation", "AGENTS/concurrency::overwrite_buffer::send_message", "AGENTS/concurrency::overwrite_buffer::supports_anonymous_source"]

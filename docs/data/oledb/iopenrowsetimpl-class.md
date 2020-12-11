@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IOpenRowsetImpl Class"
 title: "IOpenRowsetImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IOpenRowsetImpl", "IOpenRowsetImpl.CreateRowset", "IOpenRowsetImpl::CreateRowset", "OpenRowset", "IOpenRowsetImpl::OpenRowset", "IOpenRowsetImpl.OpenRowset"]

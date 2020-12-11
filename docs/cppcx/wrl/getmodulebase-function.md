@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetModuleBase function"
 title: "GetModuleBase Function"
 ms.date: "11/04/2016"
 ms.topic: "reference"

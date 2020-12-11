@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: perror, _wperror"
 title: "perror, _wperror"
 ms.date: "4/2/2020"
 api_name: ["_wperror", "perror", "_o__wperror"]

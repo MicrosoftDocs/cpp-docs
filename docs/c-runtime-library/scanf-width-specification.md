@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `scanf` width specification"
 title: "scanf width specification"
 ms.date: "10/22/2019"
 helpviewer_keywords: ["scanf function, width specification"]

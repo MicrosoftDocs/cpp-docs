@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding Items to the Control"
 title: "Adding Items to the Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], adding items"]

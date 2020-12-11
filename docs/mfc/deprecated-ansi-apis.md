@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Deprecated ANSI APIs"
 title: "Deprecated ANSI APIs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, ANSI deprecated methods"]

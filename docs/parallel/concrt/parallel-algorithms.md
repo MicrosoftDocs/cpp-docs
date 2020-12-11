@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parallel Algorithms"
 title: "Parallel Algorithms"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["parallel algorithms [Concurrency Runtime]"]

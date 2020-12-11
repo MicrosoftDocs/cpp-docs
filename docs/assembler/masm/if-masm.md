@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IF"
 title: "IF (MASM)"
 ms.date: "12/17/2019"
 helpviewer_keywords: ["IF directive"]

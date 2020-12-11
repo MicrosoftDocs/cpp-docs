@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Supporting Transactions in OLE DB"
 title: "Supporting Transactions in OLE DB"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["OLE DB consumer templates [C++], transaction support", "transactions [C++], OLE DB support for", "nested transactions [C++]", "OLE DB [C++], transaction support", "databases [C++], transactions", "distributed transactions [C++]"]

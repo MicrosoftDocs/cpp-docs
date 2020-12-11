@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: User-Interface Objects and Command IDs"
 title: "User-Interface Objects and Command IDs"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["keyboard shortcuts, associating with IDs", "MFC, command routing", "toolbar controls [MFC], command ID", "menu items, associating with IDs", "user interface objects [MFC], associating with IDs", "command IDs, user interface objects", "command routing [MFC], MFC", "command handling [MFC], user-interface objects"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: affinity_partitioner Class"
 title: "affinity_partitioner Class"
 ms.date: "11/04/2016"
 f1_keywords: ["affinity_partitioner", "PPL/concurrency::affinity_partitioner", "PPL/concurrency::affinity_partitioner::affinity_partitioner"]

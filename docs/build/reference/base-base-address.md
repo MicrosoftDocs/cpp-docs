@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /BASE (Base Address)"
 title: "/BASE (Base Address)"
 ms.date: "09/05/2018"
 f1_keywords: ["/base", "VC.Project.VCLinkerTool.BaseAddress"]

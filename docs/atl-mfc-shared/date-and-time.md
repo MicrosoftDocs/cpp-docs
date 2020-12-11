@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Date and Time"
 title: "Date and Time"
 ms.date: "08/13/2019"
 helpviewer_keywords: ["time, MFC programming", "time", "MFC, date and time", "dates, MFC"]

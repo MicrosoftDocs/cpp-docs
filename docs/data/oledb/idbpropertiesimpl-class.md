@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDBPropertiesImpl Class"
 title: "IDBPropertiesImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IDBPropertiesImpl", "ATL.IDBPropertiesImpl", "ATL.IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl", "IDBPropertiesImpl::GetProperties", "IDBPropertiesImpl.GetProperties", "IDBPropertiesImpl::GetPropertyInfo", "IDBPropertiesImpl.GetPropertyInfo", "GetPropertyInfo", "IDBPropertiesImpl.SetProperties", "IDBPropertiesImpl::SetProperties"]

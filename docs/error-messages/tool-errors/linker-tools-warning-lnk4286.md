@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Warning LNK4286"
 title: "Linker Tools Warning LNK4286"
 ms.date: "04/15/2019"
 f1_keywords: ["LNK4286"]

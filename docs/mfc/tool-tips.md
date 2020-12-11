@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tool Tips"
 title: "Tool Tips"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CFrameWnd class [MFC], tool tips", "Help [MFC], tool tips for controls", "tool tips [MFC], CFrameWnd", "controls [MFC], tool tips", "buttons [MFC], tool tips"]

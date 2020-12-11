@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create Symbols (C++)"
 title: "How to: Create Symbols (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.symbol.creating", "vc.editors.symbol.managing", "vc.editors.resourcesymbols", "vc.editors.symbol.resource"]

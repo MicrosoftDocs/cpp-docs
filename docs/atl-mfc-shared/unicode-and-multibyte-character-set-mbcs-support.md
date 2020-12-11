@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unicode and Multibyte Character Set (MBCS) Support"
 title: "Unicode and Multibyte Character Set (MBCS) Support"
 ms.date: "01/09/2017"
 helpviewer_keywords: ["MFC [C++], character set support", "MBCS [C++], strings and MFC support", "strings [C++], MBCS support in MFC", "character sets [C++], multibyte", "Unicode [C++], MFC strings", "Unicode [C++], string objects", "strings [C++], Unicode", "strings [C++], character set support"]

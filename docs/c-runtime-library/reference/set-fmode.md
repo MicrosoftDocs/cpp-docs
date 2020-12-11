@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _set_fmode"
 title: "_set_fmode"
 ms.date: "4/2/2020"
 api_name: ["_set_fmode", "_o__set_fmode"]

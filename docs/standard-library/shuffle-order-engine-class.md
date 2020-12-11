@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: shuffle_order_engine Class"
 title: "shuffle_order_engine Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::shuffle_order_engine", "random/std::shuffle_order_engine::base", "random/std::shuffle_order_engine::discard", "random/std::shuffle_order_engine::operator()", "random/std::shuffle_order_engine::base_type", "random/std::shuffle_order_engine::seed"]

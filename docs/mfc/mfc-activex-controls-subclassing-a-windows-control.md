@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Subclassing a Windows Control"
 title: "MFC ActiveX Controls: Subclassing a Windows Control"
 ms.date: "09/12/2018"
 f1_keywords: ["precreatewindow", "IsSubclassed"]

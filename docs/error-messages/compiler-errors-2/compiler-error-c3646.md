@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3646"
 title: "Compiler Error C3646"
 ms.date: "06/14/2018"
 f1_keywords: ["C3646"]

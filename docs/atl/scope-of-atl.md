@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Scope of ATL"
 title: "Scope of ATL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, scope"]

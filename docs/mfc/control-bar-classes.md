@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Control Bar Classes"
 title: "Control Bar Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["control bars [MFC], classes"]

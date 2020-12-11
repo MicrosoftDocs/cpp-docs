@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;ctgmath&gt;"
 title: "&lt;ctgmath&gt;"
 ms.date: "07/11/2019"
 f1_keywords: ["<ctgmath>", "ctgmath"]

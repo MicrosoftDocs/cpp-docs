@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3861"
 title: "Compiler Error C3861"
 ms.date: "03/23/2018"
 f1_keywords: ["C3861"]

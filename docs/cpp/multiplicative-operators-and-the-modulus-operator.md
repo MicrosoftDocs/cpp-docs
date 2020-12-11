@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multiplicative Operators and the Modulus Operator"
 title: "Multiplicative Operators and the Modulus Operator"
 ms.date: "11/04/2016"
 f1_keywords: ["%", "/"]

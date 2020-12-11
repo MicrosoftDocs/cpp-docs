@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C2000 - C3999"
 title: "Compiler errors C2000 - C3999"
 ms.date: "04/22/2019"
 ---

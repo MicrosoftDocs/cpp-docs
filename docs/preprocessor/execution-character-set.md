@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: execution_character_set pragma"
 title: "execution_character_set pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["execution_character_set", "vc-pragma.execution_character_set"]

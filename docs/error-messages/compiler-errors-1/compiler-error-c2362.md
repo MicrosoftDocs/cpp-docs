@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2362"
 title: "Compiler Error C2362"
 ms.date: "06/03/2019"
 f1_keywords: ["C2362"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComClassFactoryAutoThread Class"
 title: "CComClassFactoryAutoThread Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComClassFactoryAutoThread", "ATLCOM/ATL::CComClassFactoryAutoThread", "ATLCOM/ATL::CComClassFactoryAutoThread::CreateInstance", "ATLCOM/ATL::CComClassFactoryAutoThread::LockServer"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWinApp and the MFC Application Wizard"
 title: "CWinApp and the MFC Application Wizard"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application wizards [MFC], and CWinApp", "CWinApp class [MFC], and MFC Application Wizard", "MFC, wizards"]

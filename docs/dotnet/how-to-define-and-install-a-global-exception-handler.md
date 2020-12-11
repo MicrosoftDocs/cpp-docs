@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Define and Install a Global Exception Handler"
 title: "How to: Define and Install a Global Exception Handler"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["handlers, global"]

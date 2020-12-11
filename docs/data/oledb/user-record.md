@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: User Record"
 title: "User Record"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["records, user", "OLE DB providers, user record", "user records", "user records, described", "rowsets, user record"]

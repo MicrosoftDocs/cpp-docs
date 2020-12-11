@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Consuming libraries and components"
 title: "Consuming libraries and components in C++ projects"
 ms.date: "12/10/2018"
 f1_keywords: ["VC.Project.References"]

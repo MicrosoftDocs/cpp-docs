@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Body"
 title: "Function Body"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["functions [C], syntax", "variables, function syntax", "function definitions, function body", "function body"]

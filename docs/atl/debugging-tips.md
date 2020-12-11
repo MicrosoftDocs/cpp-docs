@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debugging Tips"
 title: "Debugging Tips (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, debugging", "services, debugging"]

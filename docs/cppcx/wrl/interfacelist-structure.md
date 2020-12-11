@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: InterfaceList Structure"
 title: "InterfaceList Structure"
 ms.date: "10/03/2018"
 ms.topic: "reference"

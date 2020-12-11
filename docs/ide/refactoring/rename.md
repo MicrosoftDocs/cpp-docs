@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Rename"
 title: "Rename"
 ms.date: "11/16/2016"
 ms.assetid: 64b42a88-3bd9-4399-8b96-75bceffc353b

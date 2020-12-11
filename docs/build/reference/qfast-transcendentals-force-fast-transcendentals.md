@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Qfast_transcendentals (Force Fast Transcendentals)"
 title: "/Qfast_transcendentals (Force Fast Transcendentals)"
 ms.date: "11/04/2016"
 f1_keywords: ["/Qfast_transcendentals"]

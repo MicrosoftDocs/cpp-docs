@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l"
 title: "strtoumax, _strtoumax_l, wcstoumax, _wcstoumax_l"
 ms.date: "11/04/2016"
 api_name: ["_wcstoumax_l", "_strtoumax_l", "wcstoumax", "strtoumax"]

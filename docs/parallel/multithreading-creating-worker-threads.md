@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multithreading: Creating Worker Threads in MFC"
 title: "Multithreading: Creating Worker Threads in MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["multithreading [C++], worker threads", "background tasks [C++]", "threading [C++], worker threads", "worker threads [C++]", "threading [C++], creating threads", "threading [MFC], worker threads", "threading [C++], user input not required"]

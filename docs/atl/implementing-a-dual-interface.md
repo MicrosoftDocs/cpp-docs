@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing a Dual Interface"
 title: "Implementing a Dual Interface (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["IDispatchImpl class, implementing dual interfaces", "dual interfaces, implementing"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Compiler Error RW2001"
 title: "Resource Compiler Error RW2001"
 ms.date: "11/04/2016"
 f1_keywords: ["RW2001"]

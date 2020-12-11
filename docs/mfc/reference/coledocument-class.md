@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleDocument Class"
 title: "COleDocument Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDocument", "AFXOLE/COleDocument", "AFXOLE/COleDocument::COleDocument", "AFXOLE/COleDocument::AddItem", "AFXOLE/COleDocument::ApplyPrintDevice", "AFXOLE/COleDocument::EnableCompoundFile", "AFXOLE/COleDocument::GetInPlaceActiveItem", "AFXOLE/COleDocument::GetNextClientItem", "AFXOLE/COleDocument::GetNextItem", "AFXOLE/COleDocument::GetNextServerItem", "AFXOLE/COleDocument::GetPrimarySelectedItem", "AFXOLE/COleDocument::GetStartPosition", "AFXOLE/COleDocument::HasBlankItems", "AFXOLE/COleDocument::OnShowViews", "AFXOLE/COleDocument::RemoveItem", "AFXOLE/COleDocument::UpdateModifiedFlag", "AFXOLE/COleDocument::OnEditChangeIcon", "AFXOLE/COleDocument::OnEditConvert", "AFXOLE/COleDocument::OnEditLinks", "AFXOLE/COleDocument::OnFileSendMail", "AFXOLE/COleDocument::OnUpdateEditChangeIcon", "AFXOLE/COleDocument::OnUpdateEditLinksMenu", "AFXOLE/COleDocument::OnUpdateObjectVerbMenu", "AFXOLE/COleDocument::OnUpdatePasteLinkMenu", "AFXOLE/COleDocument::OnUpdatePasteMenu"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Unbox"
 title: "How to: Unbox"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["unboxing"]

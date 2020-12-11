@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Enabling and Disabling Services for a Provider"
 title: "Enabling and Disabling Services for a Provider"
 ms.date: "07/30/2019"
 helpviewer_keywords: ["OLE DB services [OLE DB], enabling and disabling", "service providers [OLE DB]"]

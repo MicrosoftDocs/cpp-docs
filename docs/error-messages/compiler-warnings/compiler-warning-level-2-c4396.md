@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 2) C4396"
 title: "Compiler Warning (level 2) C4396"
 ms.date: "11/04/2016"
 f1_keywords: ["C4396"]

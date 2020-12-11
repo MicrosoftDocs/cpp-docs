@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: forward_iterator_tag Struct"
 title: "forward_iterator_tag Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["xutility/std::forward_iterator_tag"]

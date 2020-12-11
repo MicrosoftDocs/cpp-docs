@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Making Owner-Drawn Header Controls"
 title: "Making Owner-Drawn Header Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header controls [MFC], owner-drawn", "drawing [MFC], header controls", "CHeaderCtrl class [MFC], making owner-drawn", "controls [MFC], header", "owner-drawn header controls [MFC]"]

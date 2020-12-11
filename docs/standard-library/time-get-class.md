@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: time_get Class"
 title: "time_get Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xloctime/std::time_get", "locale/std::time_get::char_type", "locale/std::time_get::iter_type", "locale/std::time_get::date_order", "locale/std::time_get::do_date_order", "locale/std::time_get::do_get", "locale/std::time_get::do_get_date", "locale/std::time_get::do_get_monthname", "locale/std::time_get::do_get_time", "locale/std::time_get::do_get_weekday", "locale/std::time_get::do_get_year", "locale/std::time_get::get", "locale/std::time_get::get_date", "locale/std::time_get::get_monthname", "locale/std::time_get::get_time", "locale/std::time_get::get_weekday", "locale/std::time_get::get_year"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAccessor Class"
 title: "CAccessor Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL.CAccessor<T>", "ATL::CAccessor", "CAccessor", "ATL::CAccessor<T>", "ATL.CAccessor"]

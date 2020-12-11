@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;istream&gt; functions"
 title: "&lt;istream&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["istream/std::swap", "istream/std::ws"]

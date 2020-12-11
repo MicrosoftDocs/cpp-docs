@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Help Files (HTML Help)"
 title: "Help Files (HTML Help)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["file types [C++], HTML Help files"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expressions (C++)"
 title: "Expressions (C++)"
 ms.custom: "index-page"
 ms.date: "11/04/2016"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strdec, _wcsdec, _mbsdec, _mbsdec_l"
 title: "_strdec, _wcsdec, _mbsdec, _mbsdec_l"
 ms.date: "4/2/2020"
 api_name: ["_wcsdec", "_strdec", "_mbsdec", "_mbsdec_l", "_o__mbsdec", "_o__mbsdec_l"]

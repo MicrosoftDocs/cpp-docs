@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Selecting and Manipulating Records"
 title: "Selecting and Manipulating Records"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["records, selecting", "record selection, MFC ODBC classes", "ODBC recordsets, selecting records"]

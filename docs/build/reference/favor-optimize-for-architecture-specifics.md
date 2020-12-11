@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /favor (Optimize for Architecture Specifics)"
 title: "/favor (Optimize for Architecture Specifics)"
 ms.date: "11/04/2016"
 f1_keywords: ["/favor"]

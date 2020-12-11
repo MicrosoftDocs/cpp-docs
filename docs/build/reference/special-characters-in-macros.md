@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Special Characters in Macros"
 title: "Special Characters in Macros"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["special characters, in NMAKE macros"]

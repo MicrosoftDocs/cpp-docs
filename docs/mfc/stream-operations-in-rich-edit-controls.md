@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Stream Operations in Rich Edit Controls"
 title: "Stream Operations in Rich Edit Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CRichEditCtrl class [MFC], stream operations", "CRichEditCtrl class [MFC], stream storage", "rich edit controls [MFC], stream operations", "storage, stream in CRichEditCtrl", "stream operations in CRichEditCtrl", "stream storage and CRichEditCtrl"]

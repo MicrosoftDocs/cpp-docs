@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Wizards and Dialog Boxes"
 title: "ATL Wizards and Dialog Boxes"
 ms.date: "06/26/2020"
 helpviewer_keywords: ["ATL, class wizards"]

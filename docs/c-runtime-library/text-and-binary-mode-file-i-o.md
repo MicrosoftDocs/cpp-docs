@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Text and Binary Mode File I/O"
 title: "Text and Binary Mode File I/O"
 ms.date: "04/11/2018"
 helpviewer_keywords: ["files [C++], open functions", "I/O [CRT], text files", "functions [CRT], file access", "binary access, binary mode file I/O", "translation, modes", "I/O [CRT], binary", "text files, I/O", "I/O [CRT], translation modes", "translation modes (file I/O)", "binary access"]

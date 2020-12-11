@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3012"
 title: "Compiler Error C3012"
 ms.date: "11/04/2016"
 f1_keywords: ["C3012"]

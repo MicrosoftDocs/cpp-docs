@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ON_UPDATE_COMMAND_UI Macro"
 title: "ON_UPDATE_COMMAND_UI Macro"
 ms.date: "09/06/2019"
 f1_keywords: ["ON_UPDATE_COMMAND_UI"]

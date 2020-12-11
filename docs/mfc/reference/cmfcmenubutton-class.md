@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCMenuButton Class"
 title: "CMFCMenuButton Class"
 ms.date: "07/15/2019"
 f1_keywords: ["CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton::CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton::PreTranslateMessage", "AFXMENUBUTTON/CMFCMenuButton::SizeToContent", "AFXMENUBUTTON/CMFCMenuButton::m_bOSMenu", "AFXMENUBUTTON/CMFCMenuButton::m_bRightArrow", "AFXMENUBUTTON/CMFCMenuButton::m_bStayPressed", "AFXMENUBUTTON/CMFCMenuButton::m_hMenu", "AFXMENUBUTTON/CMFCMenuButton::m_nMenuResult", "AFXMENUBUTTON/CMFCMenuButton::m_bDefaultClick"]

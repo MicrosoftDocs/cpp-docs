@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows"
 title: "Windows"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [MFC], window", "windows [MFC]", "MFC, windows", "window objects [MFC], MFC Framework"]

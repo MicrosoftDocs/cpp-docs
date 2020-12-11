@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fcvt_s"
 title: "_fcvt_s"
 ms.date: "4/2/2020"
 api_name: ["_fcvt_s", "_o__fcvt_s"]

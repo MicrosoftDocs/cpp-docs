@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Class Factories Classes"
 title: " ATL Class Factories Classes"
 ms.date: "11/04/2016"
 ms.topic: "reference"

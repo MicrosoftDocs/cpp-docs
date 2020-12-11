@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linkage"
 title: "Linkage"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["linkage [C++]", "linkage [C++], identifier names and scope"]

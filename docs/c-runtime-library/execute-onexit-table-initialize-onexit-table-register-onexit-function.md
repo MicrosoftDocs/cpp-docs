@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _execute_onexit_table, _initialize_onexit_table, _register_onexit_function"
 title: "_execute_onexit_table, _initialize_onexit_table, _register_onexit_function"
 ms.date: "4/2/2020"
 api_name: ["_execute_onexit_table", "_initialize_onexit_table", "_register_onexit_function", "_o__execute_onexit_table", "_o__initialize_onexit_table", "_o__register_onexit_function"]

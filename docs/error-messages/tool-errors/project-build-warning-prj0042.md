@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Project Build Warning PRJ0042"
 title: "Project Build Warning PRJ0042"
 ms.date: "08/27/2018"
 f1_keywords: ["PRJ0042"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _WAIT_CHILD, _WAIT_GRANDCHILD"
 title: "_WAIT_CHILD, _WAIT_GRANDCHILD"
 ms.date: "11/04/2016"
 f1_keywords: ["_WAIT_GRANDCHILD", "WAIT_CHILD", "WAIT_GRANDCHILD", "_WAIT_CHILD"]

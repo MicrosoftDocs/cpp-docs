@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overload Resolution of Function Template Calls"
 title: "Overload Resolution of Function Template Calls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function templates overload resolution"]

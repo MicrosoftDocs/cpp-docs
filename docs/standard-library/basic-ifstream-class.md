@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: basic_ifstream Class"
 title: "basic_ifstream Class"
 ms.date: "11/04/2016"
 f1_keywords: ["fstream/std::basic_ifstream", "fstream/std::basic_ifstream::close", "fstream/std::basic_ifstream::is_open", "fstream/std::basic_ifstream::open", "fstream/std::basic_ifstream::rdbuf", "fstream/std::basic_ifstream::swap"]

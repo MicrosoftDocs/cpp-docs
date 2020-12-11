@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an ATL Dialog Box"
 title: "Adding an ATL Dialog Box"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL projects, adding dialog resources", "MFC dialog boxes, ATL dialogs", "dialog boxes, ATL"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strtof, _strtof_l, wcstof, _wcstof_l"
 title: "strtof, _strtof_l, wcstof, _wcstof_l"
 ms.date: "4/2/2020"
 api_name: ["_strtof_l", "wcstof", "strtof", "_wcstof_l", "_o__strtof_l", "_o__wcstof_l", "_o_strtof", "_o_wcstof"]

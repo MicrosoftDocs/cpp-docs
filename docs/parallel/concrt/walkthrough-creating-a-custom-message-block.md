@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Creating a Custom Message Block"
 title: "Walkthrough: Creating a Custom Message Block"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["creating custom message blocks Concurrency Runtime]", "custom message blocks, creating [Concurrency Runtime]"]

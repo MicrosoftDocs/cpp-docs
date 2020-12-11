@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compound Statements (Blocks)"
 title: "Compound Statements (Blocks)"
 ms.date: "11/04/2016"
 f1_keywords: ["}", "{"]

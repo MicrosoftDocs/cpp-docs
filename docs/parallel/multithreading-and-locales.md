@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multithreading and Locales"
 title: "Multithreading and Locales"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["locales [C++], multithreading", "multithreading [C++], locales", "threading [C++], locales", "per-thread locale"]

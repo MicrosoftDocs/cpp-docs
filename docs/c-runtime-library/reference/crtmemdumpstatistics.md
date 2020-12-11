@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CrtMemDumpStatistics"
 title: "_CrtMemDumpStatistics"
 ms.date: "11/04/2016"
 api_name: ["_CrtMemDumpStatistics"]

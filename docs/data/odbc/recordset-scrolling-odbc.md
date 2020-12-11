@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Scrolling (ODBC)"
 title: "Recordset: Scrolling (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["recordsets [C++], end of", "recordsets [C++], beginning of", "navigation [C++], recordsets", "recordsets [C++], moving to records", "ODBC recordsets, scrolling", "recordsets [C++], navigating", "scrolling [C++], recordsets", "Move method (recordsets)"]

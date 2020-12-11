@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComCompositeControl Class"
 title: "CComCompositeControl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComCompositeControl", "ATLCTL/ATL::CComCompositeControl", "ATLCTL/ATL::CComCompositeControl::CComCompositeControl", "ATLCTL/ATL::CComCompositeControl::AdviseSinkMap", "ATLCTL/ATL::CComCompositeControl::CalcExtent", "ATLCTL/ATL::CComCompositeControl::Create", "ATLCTL/ATL::CComCompositeControl::CreateControlWindow", "ATLCTL/ATL::CComCompositeControl::SetBackgroundColorFromAmbient", "ATLCTL/ATL::CComCompositeControl::m_hbrBackground", "ATLCTL/ATL::CComCompositeControl::m_hWndFocus"]

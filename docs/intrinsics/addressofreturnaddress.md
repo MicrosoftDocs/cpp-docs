@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _AddressOfReturnAddress"
 title: "_AddressOfReturnAddress"
 ms.date: "09/02/2019"
 f1_keywords: ["_AddressOfReturnAddress_cpp", "_AddressOfReturnAddress"]

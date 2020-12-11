@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property Sheets (MFC)"
 title: "Property Sheets (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dialog boxes [MFC], tabs", "property sheets", "dialog boxes [MFC], property sheets", "tab dialog boxes"]

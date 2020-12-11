@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zc:threadSafeInit (Thread-safe Local Static Initialization)"
 title: "/Zc:threadSafeInit (Thread-safe Local Static Initialization)"
 ms.date: "03/14/2018"
 f1_keywords: ["threadSafeInit", "/Zc:threadSafeInit"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __rdtscp"
 title: "__rdtscp"
 ms.date: "09/02/2019"
 f1_keywords: ["__rdtscp"]

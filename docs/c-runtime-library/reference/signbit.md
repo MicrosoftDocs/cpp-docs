@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: signbit"
 title: "signbit"
 ms.date: "01/31/2019"
 f1_keywords: ["signbit", "math/signbit"]

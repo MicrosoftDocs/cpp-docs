@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: sync_shared Class"
 title: "sync_shared Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::sync_shared", "allocators/stdext::sync_shared::allocate", "allocators/stdext::sync_shared::deallocate", "allocators/stdext::sync_shared::equals"]

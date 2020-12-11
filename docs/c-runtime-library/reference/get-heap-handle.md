@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_heap_handle"
 title: "_get_heap_handle"
 ms.date: "4/2/2020"
 api_name: ["_get_heap_handle", "_o__get_heap_handle"]

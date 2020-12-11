@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _set_output_format"
 title: "_set_output_format"
 ms.date: "11/04/2016"
 api_name: ["_set_output_format"]

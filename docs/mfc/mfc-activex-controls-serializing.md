@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Serializing"
 title: "MFC ActiveX Controls: Serializing"
 ms.date: "09/12/2018"
 f1_keywords: ["_wVerMinor", "DoPropExchange", "_wVerMajor"]

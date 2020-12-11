@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: tempnam"
 title: "tempnam"
 ms.date: "12/16/2019"
 api_name: ["tempnam"]

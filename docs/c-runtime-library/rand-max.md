@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: RAND_MAX"
 title: "RAND_MAX"
 ms.date: "11/04/2016"
 f1_keywords: ["RAND_MAX"]

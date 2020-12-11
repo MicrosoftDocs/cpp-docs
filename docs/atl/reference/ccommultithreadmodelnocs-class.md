@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComMultiThreadModelNoCS Class"
 title: "CComMultiThreadModelNoCS Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComMultiThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModelNoCS::AutoCriticalSection", "ATLBASE/ATL::CComMultiThreadModelNoCS::CriticalSection", "ATLBASE/ATL::CComMultiThreadModelNoCS::ThreadModelNoCS", "ATLBASE/ATL::CComMultiThreadModelNoCS::Decrement", "ATLBASE/ATL::CComMultiThreadModelNoCS::Increment"]

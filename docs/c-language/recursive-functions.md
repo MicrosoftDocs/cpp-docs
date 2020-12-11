@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recursive Functions"
 title: "Recursive Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["functions [C], recursive", "function calls, recursive", "functions [C], calling recursively", "recursive function calls"]

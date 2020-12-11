@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Summary of Lifetime and Visibility"
 title: "Summary of Lifetime and Visibility"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["lifetime, and visibility", "visibility, identifiers"]

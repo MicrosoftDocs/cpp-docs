@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /J (Default char Type Is unsigned)"
 title: "/J (Default char Type Is unsigned)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.DefaultCharIsUnsigned", "VC.Project.VCCLWCECompilerTool.DefaultCharIsUnsigned", "/j"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: How AddNew, Edit, and Delete Work (ODBC)"
 title: "Recordset: How AddNew, Edit, and Delete Work (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["records [C++], updating", "record editing [C++], in recordsets", "recordsets [C++], adding records", "records [C++], adding", "ODBC recordsets [C++], adding records", "recordsets [C++], editing records", "recordsets [C++], updating", "AddNew method", "ODBC recordsets [C++], deleting records", "records [C++], deleting in recordsets", "data in recordsets [C++]", "recordsets [C++], deleting records", "ODBC recordsets [C++], editing records", "records [C++], editing"]

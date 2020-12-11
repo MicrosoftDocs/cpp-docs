@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: aligned_union Class"
 title: "aligned_union Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::aligned_union"]

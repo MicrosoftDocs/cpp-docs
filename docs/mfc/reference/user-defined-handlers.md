@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: User-Defined Handlers"
 title: "User-Defined Handlers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ON_REGISTERED_MESSAGE macro [MFC]", "ON_MESSAGE macro [MFC]", "user-defined handlers [MFC]"]

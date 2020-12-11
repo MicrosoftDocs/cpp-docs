@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding a Control (ATL Tutorial, Part 2)"
 title: "Adding a Control (ATL Tutorial, Part 2)"
 ms.custom: "get-started-article"
 ms.date: "08/19/2019"

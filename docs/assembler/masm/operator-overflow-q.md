@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator OVERFLOW?"
 title: "operator OVERFLOW?"
 ms.date: "12/17/2019"
 f1_keywords: ["operator OVERFLOW?", "OVERFLOW?"]

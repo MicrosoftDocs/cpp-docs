@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency namespace functions (AMP)"
 title: "Concurrency namespace functions (AMP)"
 ms.date: "11/04/2016"
 f1_keywords: ["amp/Concurrency::all_memory_fence", "amp/Concurrency::atomic_compare_exchange", "amp/Concurrency::atomic_fetch_dec", "amp/Concurrency::atomic_fetch_max", "amp/Concurrency::atomic_fetch_min", "amp/Concurrency::copy", "amp/Concurrency::direct3d_abort", "amp/Concurrency::direct3d_printf", "amp/Concurrency::global_memory_fence", "amp/Concurrency::tile_static_memory_fence"]

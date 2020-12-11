@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __addfsbyte, __addfsword, __addfsdword"
 title: "__addfsbyte, __addfsword, __addfsdword"
 ms.date: "09/02/2019"
 f1_keywords: ["__addfsbyte_cpp", "__addfsdword", "__addfsword_cpp", "__addfsbyte", "__addfsword", "__addfsdword_cpp"]

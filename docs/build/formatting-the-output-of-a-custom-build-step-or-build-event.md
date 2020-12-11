@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Formatting the Output of a Custom Build Step or Build Event"
 title: "Formatting the Output of a Custom Build Step or Build Event"
 ms.date: "08/27/2018"
 helpviewer_keywords: ["builds [C++], build events", "custom build steps [C++], output format", "events [C++], build", "build events [C++], output format", "build steps [C++], output format", "builds [C++], custom build steps"]

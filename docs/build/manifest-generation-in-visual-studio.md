@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Manifest Generation in Visual Studio"
 title: "Manifest Generation in Visual Studio"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["manifests [C++]"]

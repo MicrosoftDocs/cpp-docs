@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: atomic_flag Structure"
 title: "atomic_flag Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["atomic/std::atomic_flag", "atomic/std::atomic_flag::clear", "atomic/std::atomic_flag::test_and_set"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: code_seg pragma"
 title: "code_seg pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.code_seg"]

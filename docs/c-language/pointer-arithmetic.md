@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Pointer Arithmetic"
 title: "Pointer Arithmetic"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["pointer arithmetic", "arithmetic pointer"]

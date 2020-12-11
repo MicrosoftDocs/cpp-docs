@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `auto` (C++)"
 title: "auto (C++)"
 ms.date: "12/10/2019"
 f1_keywords: ["auto_CPP", "auto"]

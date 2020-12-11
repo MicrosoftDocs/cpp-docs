@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _heapwalk"
 title: "_heapwalk"
 ms.date: "11/04/2016"
 api_name: ["_heapwalk"]

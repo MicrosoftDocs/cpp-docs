@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator OFFSET"
 title: "operator OFFSET"
 ms.date: "12/17/2019"
 f1_keywords: ["Offset", "operator OFFSET"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Catalog Information  (MFC Data Access)"
 title: "Catalog Information  (MFC Data Access)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tables [C++], catalog information", "tables [C++]", "ODBC [C++], catalog information", "catalog information database [C++]", "databases [C++], catalog information database"]

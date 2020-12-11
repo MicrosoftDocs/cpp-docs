@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections::VectorViewIterator Class"
 title: "Platform::Collections::VectorViewIterator Class"
 ms.date: "03/27/2019"
 ms.topic: "reference"

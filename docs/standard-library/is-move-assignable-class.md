@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_move_assignable Class"
 title: "is_move_assignable Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_move_assignable"]

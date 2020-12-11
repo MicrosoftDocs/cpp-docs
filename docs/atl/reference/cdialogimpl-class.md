@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDialogImpl Class"
 title: "CDialogImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDialogImpl", "ATLWIN/ATL::CDialogImpl", "ATLWIN/ATL::Create", "ATLWIN/ATL::DestroyWindow", "ATLWIN/ATL::DoModal", "ATLWIN/ATL::EndDialog", "ATLWIN/ATL::GetDialogProc", "ATLWIN/ATL::MapDialogRect", "ATLWIN/ATL::OnFinalMessage", "ATLWIN/ATL::DialogProc", "ATLWIN/ATL::StartDialogProc"]

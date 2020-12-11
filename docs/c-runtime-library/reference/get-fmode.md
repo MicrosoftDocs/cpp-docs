@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_fmode"
 title: "_get_fmode"
 ms.date: "4/2/2020"
 api_name: ["_get_fmode", "_o__get_fmode"]

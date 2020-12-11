@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create Agents that Use Specific Scheduler Policies"
 title: "How to: Create Agents that Use Specific Scheduler Policies"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["scheduler policies, agents [Concurrency Runtime]", "creating agents that use specific policies [Concurrency Runtime]"]

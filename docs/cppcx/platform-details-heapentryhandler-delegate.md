@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Details::HeapEntryHandler Delegate"
 title: "Platform::Details::HeapEntryHandler Delegate"
 ms.date: "12/30/2016"
 ms.topic: "reference"

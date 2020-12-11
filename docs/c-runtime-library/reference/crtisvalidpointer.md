@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CrtIsValidPointer"
 title: "_CrtIsValidPointer"
 ms.date: "11/04/2016"
 api_name: ["_CrtIsValidPointer"]

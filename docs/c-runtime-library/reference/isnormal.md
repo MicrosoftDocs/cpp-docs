@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isnormal"
 title: "isnormal"
 ms.date: "01/31/2019"
 f1_keywords: ["isnormal", "math/isnormal"]

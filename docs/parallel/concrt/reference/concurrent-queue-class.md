@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: concurrent_queue Class"
 title: "concurrent_queue Class"
 ms.date: "11/04/2016"
 f1_keywords: ["concurrent_queue", "CONCURRENT_QUEUE/concurrency::concurrent_queue", "CONCURRENT_QUEUE/concurrency::concurrent_queue::concurrent_queue", "CONCURRENT_QUEUE/concurrency::concurrent_queue::clear", "CONCURRENT_QUEUE/concurrency::concurrent_queue::empty", "CONCURRENT_QUEUE/concurrency::concurrent_queue::get_allocator", "CONCURRENT_QUEUE/concurrency::concurrent_queue::push", "CONCURRENT_QUEUE/concurrency::concurrent_queue::try_pop", "CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_begin", "CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_end", "CONCURRENT_QUEUE/concurrency::concurrent_queue::unsafe_size"]

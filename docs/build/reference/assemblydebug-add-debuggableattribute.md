@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ASSEMBLYDEBUG (Add DebuggableAttribute)"
 title: "/ASSEMBLYDEBUG (Add DebuggableAttribute)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.AssemblyDebug", "/ASSEMBLYDEBUG"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .Lib Files as Linker Input"
 title: ".Lib Files as Linker Input"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.AdditionalDependencies"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DELAYSIGN (Partially Sign an Assembly)"
 title: "/DELAYSIGN (Partially Sign an Assembly)"
 ms.date: "11/04/2016"
 f1_keywords: ["/delaysign", "VC.Project.VCLinkerTool.DelaySign"]

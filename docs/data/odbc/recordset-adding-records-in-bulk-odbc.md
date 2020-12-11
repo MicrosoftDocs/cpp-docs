@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Adding Records in Bulk (ODBC)"
 title: "Recordset: Adding Records in Bulk (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC recordsets, adding records", "recordsets, adding records", "bulk record additions to recordsets"]

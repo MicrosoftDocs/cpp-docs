@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CInterfaceList Class"
 title: "CInterfaceList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInterfaceList", "ATLCOLL/ATL::CInterfaceList", "ATLCOLL/ATL::CInterfaceList::CInterfaceList"]

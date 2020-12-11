@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CVTRES Fatal Error CVT1105"
 title: "CVTRES Fatal Error CVT1105"
 ms.date: "11/04/2016"
 f1_keywords: ["CVT1105"]

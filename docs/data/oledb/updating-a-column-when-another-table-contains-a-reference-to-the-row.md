@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Updating a Column When Another Table Contains a Reference to the Row"
 title: "Update a column when another table contains a reference to the row"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["rowsets, column updates"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: underflow_error Class"
 title: "underflow_error Class"
 ms.date: "11/04/2016"
 f1_keywords: ["stdexcept/std::underflow_error"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Notifications Sent by Animation Controls"
 title: "Notifications Sent by Animation Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["notifications [MFC], animation controls", "CAnimateCtrl class [MFC], notifications", "controls [MFC], animation", "animation controls [MFC], notifications"]

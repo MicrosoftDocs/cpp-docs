@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _chdrive"
 title: "_chdrive"
 ms.date: "4/2/2020"
 api_name: ["_chdrive", "_o__chdrive"]

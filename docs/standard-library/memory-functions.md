@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;memory&gt; functions"
 title: "&lt;memory&gt; functions"
 ms.date: "08/05/2019"
 f1_keywords: ["memory/std::addressof", "memory/std::align", "memory/std::allocate_shared", "memory/std::const_pointer_cast", "memory/std::declare_no_pointers", "memory/std::declare_reachable", "memory/std::dynamic_pointer_cast", "memory/std::get_deleter", "memory/std::get_pointer_safety", "memory/std::get_temporary_buffer", "xmemory/std::get_temporary_buffer", "memory/std::make_shared", "memory/std::make_unique", "memory/std::owner_less", "memory/std::reinterpret_pointer_cast", "memory/std::return_temporary_buffer", "xmemory/std::return_temporary_buffer", "memory/std::static_pointer_cast", "memory/std::swap", "memory/std::undeclare_no_pointers", "memory/std::undeclare_reachable", "memory/std::uninitialized_copy", "memory/std::uninitialized_copy_n", "memory/std::uninitialized_fill", "memory/std::uninitialized_fill_n"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inheritance Keywords"
 title: "Inheritance Keywords"
 ms.date: "11/04/2016"
 f1_keywords: ["__multiple_inheritance", "__single_inheritance_cpp", "__virtual_inheritance_cpp", "__virtual_inheritance", "__multiple_inheritance_cpp", "__single_inheritance"]

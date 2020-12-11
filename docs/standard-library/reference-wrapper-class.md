@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: reference_wrapper Class"
 title: "reference_wrapper Class"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::reference_wrapper", "type_traits/std::reference_wrapper", "xrefwrap/std::reference_wrapper", "type_traits/std::reference_wrapper::get", "type_traits/std::reference_wrapper::operator()", "functional/std::reference_wrapper::result_type", "functional/std::reference_wrapper::type", "functional/std::reference_wrapper::get", "functional/std::reference_wrapper::operator()"]

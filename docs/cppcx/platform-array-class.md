@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Array Class"
 title: "Platform::Array Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"

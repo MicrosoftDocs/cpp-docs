@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Math Constants"
 title: "Math Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["c.constants.math"]

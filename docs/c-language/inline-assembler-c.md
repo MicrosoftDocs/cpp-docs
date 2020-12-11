@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inline Assembler (C)"
 title: "Inline Assembler (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["__asm keyword [C]", "inline assembler [C]"]

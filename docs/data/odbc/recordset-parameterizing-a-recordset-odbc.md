@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Parameterizing a Recordset (ODBC)"
 title: "Recordset: Parameterizing a Recordset (ODBC)"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["parameterizing recordsets", "ODBC recordsets, parameterizing", "recordsets, parameterizing", "passing parameters, to queries at runtime"]

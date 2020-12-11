@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binary Operators"
 title: "Binary Operators"
 ms.date: "06/14/2018"
 helpviewer_keywords: ["member-selection operators [C++]", "operators [C++], binary", "binary operators [C++]"]

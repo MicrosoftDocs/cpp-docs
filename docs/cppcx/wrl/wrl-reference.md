@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WRL Reference"
 title: "WRL Reference"
 ms.date: "11/04/2016"
 ms.topic: "reference"

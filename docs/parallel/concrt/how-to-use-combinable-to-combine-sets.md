@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use combinable to Combine Sets"
 title: "How to: Use combinable to Combine Sets"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["combinable class, example", "combining sets with combinable [Concurrency Runtime]"]

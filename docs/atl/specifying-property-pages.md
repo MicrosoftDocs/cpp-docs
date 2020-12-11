@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specifying Property Pages"
 title: "Specifying Property Pages (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ISpecifyPropertyPages method", "property pages, specifying"]

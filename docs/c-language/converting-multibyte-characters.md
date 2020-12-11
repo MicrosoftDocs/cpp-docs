@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Converting Multibyte Characters"
 title: "Converting Multibyte Characters"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["multibyte characters, converting"]

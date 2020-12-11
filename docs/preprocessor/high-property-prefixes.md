@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: high_property_prefixes import attribute"
 title: "high_property_prefixes import attribute"
 ms.date: "08/29/2019"
 f1_keywords: ["high_property_prefixes"]

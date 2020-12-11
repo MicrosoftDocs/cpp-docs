@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Operators"
 title: "ATL Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operators [ATL]"]

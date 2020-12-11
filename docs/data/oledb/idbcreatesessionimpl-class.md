@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDBCreateSessionImpl Class"
 title: "IDBCreateSessionImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IDBCreateSessionImpl", "ATL.IDBCreateSessionImpl", "ATL::IDBCreateSessionImpl", "IDBCreateSessionImpl::CreateSession", "IDBCreateSessionImpl.CreateSession", "CreateSession"]

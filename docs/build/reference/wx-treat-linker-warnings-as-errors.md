@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /WX (Treat Linker Warnings as Errors)"
 title: "/WX (Treat Linker Warnings as Errors)"
 ms.date: "11/04/2016"
 f1_keywords: ["/WX"]

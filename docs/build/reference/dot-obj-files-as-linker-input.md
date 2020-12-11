@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .Obj Files as Linker Input"
 title: ".Obj Files as Linker Input"
 ms.date: "12/29/2017"
 helpviewer_keywords: ["linker [C++], OBJ files as input", "object files, linker output", "OMF object files", "LINK tool [C++], .obj files", "COFF files", "OBJ files as linker input", ".obj files as linker input"]

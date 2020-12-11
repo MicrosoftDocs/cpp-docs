@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonProgressBar Class"
 title: "CMFCRibbonProgressBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonProgressBar", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::CMFCRibbonProgressBar", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetPos", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRangeMax", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRangeMin", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRegularSize", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::IsInfiniteMode", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::OnDraw", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetInfiniteMode", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetPos", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetRange"]

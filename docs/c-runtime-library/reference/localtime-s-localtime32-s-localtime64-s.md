@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: localtime_s, _localtime32_s, _localtime64_s"
 title: "localtime_s, _localtime32_s, _localtime64_s"
 ms.date: "4/2/2020"
 api_name: ["_localtime64_s", "_localtime32_s", "localtime_s", "_o__localtime32_s", "_o__localtime64_s"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _SECURE_SCL"
 title: "_SECURE_SCL"
 ms.date: "11/04/2016"
 f1_keywords: ["_SECURE_SCL"]

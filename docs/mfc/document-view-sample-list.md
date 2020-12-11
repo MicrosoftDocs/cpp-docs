@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Document/View Sample List"
 title: "Document-View Sample List"
 ms.date: "11/04/2016"
 ms.assetid: 6f087ce8-2f46-433c-b674-4c110743b289

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;complex&gt;"
 title: "&lt;complex&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<complex>", "std::<complex>"]

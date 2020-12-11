@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: memmove_s, wmemmove_s"
 title: "memmove_s, wmemmove_s"
 ms.date: "4/2/2020"
 api_name: ["wmemmove_s", "memmove_s", "_o_wmemmove_s"]

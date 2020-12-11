@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: scheduler_not_attached Class"
 title: "scheduler_not_attached Class"
 ms.date: "11/04/2016"
 f1_keywords: ["scheduler_not_attached", "CONCRT/concurrency::scheduler_not_attached", "CONCRT/concurrency::scheduler_not_attached::scheduler_not_attached"]

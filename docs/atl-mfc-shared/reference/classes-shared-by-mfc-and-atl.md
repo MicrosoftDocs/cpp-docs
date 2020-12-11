@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Classes Shared by MFC and ATL"
 title: "Classes Shared by MFC and ATL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["shared classes, classes"]

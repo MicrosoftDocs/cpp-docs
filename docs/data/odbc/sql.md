@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL"
 title: "SQL"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["database classes [C++], SQL statements", "SQL [C++]", "SQL [C++], ODBC", "ODBC [C++], SQL implementation"]

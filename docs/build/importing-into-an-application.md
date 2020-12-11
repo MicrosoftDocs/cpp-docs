@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Importing into an Application"
 title: "Importing into an Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DLLs [C++], importing", "importing DLLs [C++], applications", "applications [C++], importing into"]

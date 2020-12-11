@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: rts_alloc Class"
 title: "rts_alloc Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::rts_alloc", "allocators/stdext::rts_alloc::allocate", "allocators/stdext::rts_alloc::deallocate", "allocators/stdext::rts_alloc::equals"]

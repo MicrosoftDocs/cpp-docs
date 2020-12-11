@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `/cgthreads` (Code generation threads)"
 title: "/cgthreads (Code generation threads)"
 ms.date: 07/31/2020
 f1_keywords: ["/cgthreads"]

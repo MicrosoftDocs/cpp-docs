@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Rebar Controls and Bands"
 title: "Rebar Controls and Bands"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rebar controls [MFC], working with bands in", "bands, in rebar controls"]

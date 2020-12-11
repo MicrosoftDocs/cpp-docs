@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ASCII Character Set"
 title: "ASCII Character Set"
 ms.date: "11/04/2016"
 ms.assetid: 2390fd40-5fe2-4410-a06c-ccc0fea2709b

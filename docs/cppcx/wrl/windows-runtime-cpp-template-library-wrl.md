@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Runtime C++ Template Library (WRL)"
 title: "Windows Runtime C++ Template Library (WRL)"
 ms.date: "11/04/2016"
 ms.topic: "overview"

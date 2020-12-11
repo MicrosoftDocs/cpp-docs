@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Arrays and Pointers"
 title: "Arrays and Pointers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["arrays [C++], pointers"]

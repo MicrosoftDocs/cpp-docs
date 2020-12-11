@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Based Addressing"
 title: "Based Addressing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["based addressing [C++]", "addresses [C++]", "addresses [C++], based"]

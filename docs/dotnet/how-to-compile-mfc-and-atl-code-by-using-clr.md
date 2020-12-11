@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Compile MFC and ATL Code By Using /clr"
 title: "How to: Compile MFC and ATL Code By Using -clr"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

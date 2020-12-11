@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: More About Updates (ODBC)"
 title: "Recordset: More About Updates (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["records, updating", "transactions, updating recordsets", "ODBC recordsets, updating", "multiuser environments, updates to recordsets", "scrolling, updates to recordsets", "updating recordsets", "recordsets, updating"]

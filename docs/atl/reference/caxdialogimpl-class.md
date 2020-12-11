@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAxDialogImpl Class"
 title: "CAxDialogImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAxDialogImpl", "ATLWIN/ATL::CAxDialogImpl", "ATLWIN/ATL::CAxDialogImpl::AdviseSinkMap", "ATLWIN/ATL::CAxDialogImpl::Create", "ATLWIN/ATL::CAxDialogImpl::DestroyWindow", "ATLWIN/ATL::CAxDialogImpl::DoModal", "ATLWIN/ATL::CAxDialogImpl::EndDialog", "ATLWIN/ATL::CAxDialogImpl::GetDialogProc", "ATLWIN/ATL::CAxDialogImpl::GetIDD", "ATLWIN/ATL::CAxDialogImpl::IsDialogMessage", "ATLWIN/ATL::CAxDialogImpl::m_bModal"]

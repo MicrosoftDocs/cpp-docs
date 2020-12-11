@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _aligned_msize"
 title: "_aligned_msize"
 ms.date: "4/2/2020"
 api_name: ["_aligned_msize", "_o__aligned_msize"]

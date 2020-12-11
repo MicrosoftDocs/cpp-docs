@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _searchenv_s, _wsearchenv_s"
 title: "_searchenv_s, _wsearchenv_s"
 ms.date: "4/2/2020"
 api_name: ["_wsearchenv_s", "_searchenv_s", "_o__searchenv_s", "_o__wsearchenv_s"]

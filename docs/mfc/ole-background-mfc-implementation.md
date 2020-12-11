@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE Background: MFC Implementation"
 title: "OLE Background: MFC Implementation"
 ms.date: "11/04/2016"
 f1_keywords: ["IMarshall", "IMoniker"]

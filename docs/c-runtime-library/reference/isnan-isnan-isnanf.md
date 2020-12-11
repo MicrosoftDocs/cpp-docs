@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isnan, _isnan, _isnanf"
 title: "isnan, _isnan, _isnanf"
 ms.date: "01/31/2019"
 api_name: ["_isnan", "_isnanf", "isnan"]

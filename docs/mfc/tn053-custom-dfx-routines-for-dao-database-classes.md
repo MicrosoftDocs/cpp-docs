@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN053: Custom DFX Routines for DAO Database Classes"
 title: "TN053: Custom DFX Routines for DAO Database Classes"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["MFC, DAO and", "database classes [MFC], DAO", "DAO [MFC], MFC", "DFX (DAO record field exchange) [MFC], custom routines", "TN053", "DAO [MFC], classes", "DFX (DAO record field exchange) [MFC]", "custom DFX routines [MFC]"]

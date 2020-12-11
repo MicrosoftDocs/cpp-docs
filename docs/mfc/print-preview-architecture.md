@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Print Preview Architecture"
 title: "Print Preview Architecture"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["print preview [MFC], process", "previewing printing", "print preview [MFC], architecture", "printing [MFC], print preview", "print preview [MFC], modifications to MFC"]

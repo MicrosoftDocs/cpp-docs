@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating an Extended Combo Box Control"
 title: "Creating an Extended Combo Box Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["extended combo boxes", "CComboBoxEx class [MFC], creating extended combo box controls", "extended combo boxes [MFC], creating"]

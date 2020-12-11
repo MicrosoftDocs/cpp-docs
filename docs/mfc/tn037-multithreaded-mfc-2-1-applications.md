@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN037: Multithreaded MFC 2.1 Applications"
 title: "TN037: Multithreaded MFC 2.1 Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["TN037"]

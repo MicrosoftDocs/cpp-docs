@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Record Field Exchange: Using RFX"
 title: "Record Field Exchange: Using RFX"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["RFX (ODBC), implementing"]

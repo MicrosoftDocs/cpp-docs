@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DDX_DHtml Helper Macros"
 title: "DDX_DHtml Helper Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["AFXDHTML/DDX_DHtml_ElementValue", "AFXDHTML/DDX_DHtml_ElementInnerText", "AFXDHTML/DDX_DHtml_ElementInnerHtml", "AFXDHTML/DDX_DHtml_Anchor_Href", "AFXDHTML/DDX_DHtml_Anchor_Target", "AFXDHTML/DDX_DHtml_Img_Src", "AFXDHTML/DDX_DHtml_Frame_Src", "AFXDHTML/DDX_DHtml_IFrame_Src"]

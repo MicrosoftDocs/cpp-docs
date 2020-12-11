@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: btowc"
 title: "btowc"
 ms.date: "4/2/2020"
 api_name: ["btowc", "_o_btowc"]

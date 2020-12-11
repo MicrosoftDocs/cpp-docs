@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specifying DLLs to Delay Load"
 title: "Specifying DLLs to Delay Load"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DELAYLOAD linker option", "delayed loading of DLLs", "delayed loading of DLLs, specifying", "/DELAYLOAD linker option"]

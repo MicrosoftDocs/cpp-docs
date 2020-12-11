@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: codecvt_byname Class"
 title: "codecvt_byname Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocale/std::codecvt_byname"]

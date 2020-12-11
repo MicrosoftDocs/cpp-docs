@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: interior_ptr (C++/CLI)"
 title: "interior_ptr (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

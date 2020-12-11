@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Null Statement (C)"
 title: "Null Statement (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["semicolon, C null statement", "expressions [C++], null", "null statement", "null values, expressions"]

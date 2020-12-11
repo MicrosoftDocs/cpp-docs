@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Character Constants and Conditional Inclusion"
 title: "Character Constants and Conditional Inclusion"
 ms.date: "11/04/2016"
 ms.assetid: 1692207b-0707-4908-9e05-f8ed7ae0dd76

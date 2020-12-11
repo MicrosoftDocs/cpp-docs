@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Qspectre"
 title: "/Qspectre"
 ms.date: "09/06/2019"
 f1_keywords: ["VC.Project.VCCLCompilerTool.SpectreMitigation"]

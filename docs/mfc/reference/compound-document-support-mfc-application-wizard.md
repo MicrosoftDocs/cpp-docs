@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compound Document Support, MFC Application Wizard"
 title: "Compound Document Support, MFC Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.exe.compdoc"]

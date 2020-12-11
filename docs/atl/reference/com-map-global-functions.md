@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COM Map Global Functions"
 title: "COM Map Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlInternalQueryInterface", "atlbase/ATL::InlineIsEqualIUnknown"]

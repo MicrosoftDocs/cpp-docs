@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /KEYFILE (Specify Key or Key Pair to Sign an Assembly)"
 title: "/KEYFILE (Specify Key or Key Pair to Sign an Assembly)"
 ms.date: "11/04/2016"
 f1_keywords: ["/keyfile", "VC.Project.VCLinkerTool.KeyFile"]

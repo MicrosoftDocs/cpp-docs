@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OnIdle Member Function"
 title: "OnIdle Member Function"
 ms.date: "11/19/2018"
 f1_keywords: ["OnIdle"]

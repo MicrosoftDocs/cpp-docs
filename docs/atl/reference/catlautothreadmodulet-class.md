@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAtlAutoThreadModuleT Class"
 title: "CAtlAutoThreadModuleT Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlAutoThreadModuleT", "ATLBASE/ATL::CAtlAutoThreadModuleT", "ATLBASE/ATL::CAtlAutoThreadModuleT::GetDefaultThreads"]

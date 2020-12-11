@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;value&gt;"
 title: "&lt;value> (C++ Documentation Comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["value", "<value>"]

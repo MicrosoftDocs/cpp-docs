@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Options, ATL Simple Object Wizard"
 title: "Options, ATL Simple Object Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.simple.options"]

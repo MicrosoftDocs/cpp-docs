@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: remove_cv Class"
 title: "remove_cv Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::remove_cv"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLR integration (C++/CX)"
 title: "CLR integration (C++/CX)"
 ms.date: "01/22/2017"
 ms.assetid: 76e213cf-2f3d-4181-b35b-9fd25d5b307c

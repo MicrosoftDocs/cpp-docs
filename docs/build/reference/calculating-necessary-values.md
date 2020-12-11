@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Calculating Necessary Values"
 title: "Calculating Necessary Values"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["helper functions, calculating necessary values"]

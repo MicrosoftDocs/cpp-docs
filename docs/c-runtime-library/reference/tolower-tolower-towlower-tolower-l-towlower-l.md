@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: tolower, _tolower, towlower, _tolower_l, _towlower_l"
 title: "tolower, _tolower, towlower, _tolower_l, _towlower_l"
 ms.date: "4/2/2020"
 api_name: ["_tolower_l", "towlower", "tolower", "_tolower", "_towlower_l", "_o__tolower", "_o__tolower_l", "_o__towlower_l", "_o_tolower", "_o_towlower"]

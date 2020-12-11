@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPtrList Class"
 title: "CPtrList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPtrList"]

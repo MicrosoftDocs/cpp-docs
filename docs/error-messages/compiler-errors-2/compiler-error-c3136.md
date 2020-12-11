@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3136"
 title: "Compiler Error C3136"
 ms.date: "10/03/2018"
 f1_keywords: ["C3136"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: weibull_distribution Class"
 title: "weibull_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::weibull_distribution", "random/std::weibull_distribution::reset", "random/std::weibull_distribution::a", "random/std::weibull_distribution::b", "random/std::weibull_distribution::param", "random/std::weibull_distribution::min", "random/std::weibull_distribution::max", "random/std::weibull_distribution::operator()", "random/std::weibull_distribution::param_type", "random/std::weibull_distribution::param_type::a", "random/std::weibull_distribution::param_type::b", "random/std::weibull_distribution::param_type::operator==", "random/std::weibull_distribution::param_type::operator!="]

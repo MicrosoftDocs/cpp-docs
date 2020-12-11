@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fundamentals of ATL COM Objects"
 title: "Fundamentals of ATL COM Objects"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["COM, and ATL", "ATL, COM", "ATL COM objects", "COM objects, ATL"]
