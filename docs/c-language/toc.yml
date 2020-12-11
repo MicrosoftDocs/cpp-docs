@@ -138,7 +138,7 @@
         href: ../c-language/name-spaces.md
   - name: Declarations and types
     items: 
-      - name: Alignment
+      - name: Alignment (C11)
         href: ../c-language/alignment-c.md
       - name: Declarations and types
         href: ../c-language/declarations-and-types.md

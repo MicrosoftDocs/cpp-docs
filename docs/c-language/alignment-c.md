@@ -8,21 +8,21 @@ helpviewer_keywords: ["_Alignof keyword [C]", "_Alignas keyword [C]", "memory, a
 
 One of the low-level features of C is the ability to specify the precise alignment of objects in memory to take maximum advantage of the hardware architecture.
 
-CPUs read and write memory more efficiently when data is stored at an address that is a multiple of the data size. For example, a 4-byte integer is accessed more efficiently if it's stored in an address that is a multiple of 4. When data isn't aligned, the CPU needs to do more work to access the data.
+CPUs read and write memory more efficiently when data is stored at an address that is a multiple of the data size. For example, a 4-byte integer is accessed more efficiently if it's stored at an address that is a multiple of 4. When data isn't aligned, the CPU does more work to access the data.
 
-By default, the compiler aligns data based on its size: **`char`** on 1-byte boundaries, **`short`** on 2-byte boundaries, **`int`**, **`long`**, and **`float`** on 4-byte boundaries, **`double`** on 8-byte boundaries, and so on.
+By default, the compiler aligns data based on its size: **`char`** on a 1-byte boundary, **`short`** on a 2-byte boundary, **`int`**, **`long`**, and **`float`** on a 4-byte boundary, **`double`** on 8-byte boundary, and so on.
 
-Additionally, by aligning frequently used data to the processor's cache line size, you improve cache performance. For example, if you define a structure whose size is less than 32 bytes, you may want 32 byte alignment to make sure objects of that structure type are cached efficiently.
+Additionally, by aligning frequently used data with the processor's cache line size, you can improve cache performance. For example, if you define a structure whose size is less than 32 bytes, you may want 32 byte alignment to ensure that objects of that structure type are cached efficiently.
 
-Usually you don't worry about alignment because the default alignment is typically good enough. In some cases, however, you can achieve performance improvements, or memory savings, by specifying a custom alignment for your data structures.
+Usually, you don't need to worry about alignment because the default alignment is typically good enough. In some cases, however, you can achieve performance improvements, or memory savings, by specifying a custom alignment for your data structures.
 
-Use the C11 keywords **`_Alignof`** to get the preferred alignment of a type or variable, and **`_Alignas`** to specify custom alignment for a variable or user-defined type.
+Use the C11 keyword **`_Alignof`** to get the preferred alignment of a type or variable, and **`_Alignas`** to specify a custom alignment for a variable or user-defined type.
 
-The convenience macros **`alignof`** and **`alignas`**, defined in `<stdalign.h>`, map directly to **`_Alignof`** and **`_Alignas`**, respectively.
+The convenience macros **`alignof`** and **`alignas`**, defined in `<stdalign.h>`, map directly to **`_Alignof`** and **`_Alignas`**, respectively. These macros also match the same keywords used in C++. So using the macros instead of the C keywords may be helpful in terms of code portability if you share any code between the two languages.
 
 ## `alignas` and `_Alignas` (C11)
 
-Use **`alignas`** or **`_Alignas`** to specify custom alignment for a variable or user-defined type.  It can be applied to a struct, union, enumeration, or variable.
+Use **`alignas`** or **`_Alignas`** to specify custom alignment for a variable or user-defined type.  They can be applied to a struct, union, enumeration, or variable.
 
 ### `alignas` syntax
 
@@ -61,7 +61,7 @@ typedef struct
 
 int main()
 {
-    printf("sizeof(cacheFriendly): %d\n", sizeof(cacheFriendly)); // 4 bytes for int value + 32 bytes for alignedMemory[] + padding for alignment
+    printf("sizeof(cacheFriendly): %d\n", sizeof(cacheFriendly)); // 4 bytes for int value + 32 bytes for alignedMemory[] + padding to get  alignment
     printf("alignof(cacheFriendly): %d\n", alignof(cacheFriendly)); // 32 due to alignedMemory[] being aligned on a 32 byte boundary
 
     /* output
@@ -104,7 +104,7 @@ int main()
         double b;
     } test;
 
-    alignment = alignof(test); // returns 8 because that is the alignment requirement of the largest element in the structure
+    alignment = alignof(test); // returns 8 because that is the alignment of the largest element in the structure
 }
 ```
 
@@ -112,7 +112,7 @@ int main()
 
 [std:c++11](../build/reference/std-specify-language-standard-version.md) or later is required.
 
-Windows SDK version 10.0.20201.0 or later. This is currently an Insider build which you can download from [Windows Insider Preview Downloads](https://www.microsoft.com/software-download/windowsinsiderpreviewSDK). See [C11 and C17: Getting Started](https://devblogs.microsoft.com/cppblog/c11-and-c17-standard-support-arriving-in-msvc/#c11-and-c17-getting-started) for instructions on installing and using this SDK.
+Windows SDK version 10.0.20201.0 or later. This version is currently an Insider build which you can download from [Windows Insider Preview Downloads](https://www.microsoft.com/software-download/windowsinsiderpreviewSDK). See [C11 and C17: Getting Started](https://devblogs.microsoft.com/cppblog/c11-and-c17-standard-support-arriving-in-msvc/#c11-and-c17-getting-started) for instructions about installing and using this SDK.
 
 ## See also
 
