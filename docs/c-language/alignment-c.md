@@ -12,13 +12,13 @@ CPUs read and write memory more efficiently when data is stored at an address th
 
 By default, the compiler aligns data based on its size: **`char`** on a 1-byte boundary, **`short`** on a 2-byte boundary, **`int`**, **`long`**, and **`float`** on a 4-byte boundary, **`double`** on 8-byte boundary, and so on.
 
-Additionally, by aligning frequently used data with the processor's cache line size, you can improve cache performance. For example, if you define a structure whose size is less than 32 bytes you may want 32-byte alignment to ensure that objects of that structure type are cached efficiently.
+Additionally, by aligning frequently used data with the processor's cache line size, you can improve cache performance. For example, if you define a structure whose size is less than 32 bytes, you may want 32-byte alignment to ensure that instances of the structure are cached efficiently.
 
-Usually, you don't need to worry about alignment. The compiler generally aligns data on natural boundaries that are based on the target processor and the size of the data. For example, data is aligned on up to 4-byte boundaries on 32-bit processors, and 8-byte boundaries on 64-bit processors. In some cases, however, you can achieve performance improvements, or memory savings, by specifying a custom alignment for your data structures.
+Usually, you don't need to worry about alignment. The compiler generally aligns data on natural boundaries that are based on the target processor and the size of the data. Data is aligned on up to 4-byte boundaries on 32-bit processors, and 8-byte boundaries on 64-bit processors. In some cases, however, you can achieve performance improvements, or memory savings, by specifying a custom alignment for your data structures.
 
 Use the C11 keyword **`_Alignof`** to get the preferred alignment of a type or variable, and **`_Alignas`** to specify a custom alignment for a variable or user-defined type.
 
-The convenience macros **`alignof`** and **`alignas`**, defined in `<stdalign.h>`, map directly to **`_Alignof`** and **`_Alignas`**, respectively. These macros also match the same keywords used in C++. So using the macros instead of the C keywords may be helpful for code portability if you share any code between the two languages.
+The convenience macros **`alignof`** and **`alignas`**, defined in `<stdalign.h>`, map directly to **`_Alignof`** and **`_Alignas`**, respectively. These macros match the keywords used in C++. So using the macros instead of the C keywords may be helpful for code portability if you share any code between the two languages.
 
 ## `alignas` and `_Alignas` (C11)
 
