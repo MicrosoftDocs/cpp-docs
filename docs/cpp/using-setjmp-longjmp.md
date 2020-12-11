@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using setjmp and longjmp"
 title: "Using setjmp and longjmp"
 ms.date: "08/14/2018"
 f1_keywords: ["longjmp_cpp", "setjmp_cpp"]

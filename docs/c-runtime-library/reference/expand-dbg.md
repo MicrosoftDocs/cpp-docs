@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _expand_dbg"
 title: "_expand_dbg"
 ms.date: "11/04/2016"
 api_name: ["_expand_dbg"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /SUBSYSTEM"
 title: "/SUBSYSTEM"
 ms.date: "11/04/2016"
 f1_keywords: ["/subsystem_editbin"]

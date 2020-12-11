@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Semantics of Expressions"
 title: "Semantics of Expressions"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["grammar, expressions", "expressions [C++], semantics", "expression evaluation", "expression evaluation, about expression evaluation"]

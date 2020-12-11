@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Compiler Fatal Error RW1030"
 title: "Resource Compiler Fatal Error RW1030"
 ms.date: "11/04/2016"
 f1_keywords: ["RW1030"]

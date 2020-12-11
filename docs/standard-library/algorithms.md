@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Algorithms"
 title: "Algorithms"
 ms.date: "10/18/2018"
 helpviewer_keywords: ["libraries [C++], C++ algorithm conventions", "algorithms [C++], C++", "C++ Standard Library, algorithms", "algorithm template function C++ library conventions", "conventions [C++], C++ algorithm"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: inline_recursion pragma"
 title: "inline_recursion pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["inline_recursion_CPP", "vc-pragma.inline_recursion"]

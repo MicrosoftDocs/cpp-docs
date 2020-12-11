@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Lifetime, Scope, Visibility, and Linkage"
 title: "Lifetime, Scope, Visibility, and Linkage"
 ms.date: "11/04/2016"
 ms.assetid: c7678bb8-9d79-40ed-b352-abab876f0b17

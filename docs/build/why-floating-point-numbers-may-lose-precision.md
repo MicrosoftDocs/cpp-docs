@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Why Floating-Point Numbers May Lose Precision"
 title: "Why Floating-Point Numbers May Lose Precision"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DBL_EPSILON constant", "FLT_EPSILON constant", "floating-point numbers, precision"]

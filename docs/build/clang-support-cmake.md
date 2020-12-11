@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Clang/LLVM support in Visual Studio CMake projects"
 title: "Clang/LLVM support in Visual Studio CMake projects"
 ms.date: "07/01/2019"
 ms.description: "Configure a CMake project in Visual Studio to use the Clang/LLVM toolchain."

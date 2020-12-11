@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CScrollView Class"
 title: "CScrollView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CScrollView", "AFXWIN/CScrollView", "AFXWIN/CScrollView::CScrollView", "AFXWIN/CScrollView::CheckScrollBars", "AFXWIN/CScrollView::FillOutsideRect", "AFXWIN/CScrollView::GetDeviceScrollPosition", "AFXWIN/CScrollView::GetDeviceScrollSizes", "AFXWIN/CScrollView::GetScrollPosition", "AFXWIN/CScrollView::GetTotalSize", "AFXWIN/CScrollView::ResizeParentToFit", "AFXWIN/CScrollView::ScrollToPosition", "AFXWIN/CScrollView::SetScaleToFitSize", "AFXWIN/CScrollView::SetScrollSizes"]

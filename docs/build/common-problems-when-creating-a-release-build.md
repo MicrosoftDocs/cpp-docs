@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Common Problems When Creating a Release Build"
 title: "Common Problems When Creating a Release Build"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["unexpected code generation", "debugging [MFC], release builds", "release builds, troubleshooting", "stray pointers", "debug builds, difference from release builds", "MFC [C++], release builds", "heap layout problems", "pointers, stray", "release builds, building applications", "debug memory allocator", "optimization [C++], compiler", "projects [C++], debug configuration", "troubleshooting release builds", "memory [C++], overwrites"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bss_seg pragma"
 title: "bss_seg pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.bss_seg", "bss_seg_CPP"]

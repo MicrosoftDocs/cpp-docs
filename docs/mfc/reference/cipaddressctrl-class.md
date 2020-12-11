@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CIPAddressCtrl Class"
 title: "CIPAddressCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CIPAddressCtrl", "AFXCMN/CIPAddressCtrl", "AFXCMN/CIPAddressCtrl::CIPAddressCtrl", "AFXCMN/CIPAddressCtrl::ClearAddress", "AFXCMN/CIPAddressCtrl::Create", "AFXCMN/CIPAddressCtrl::CreateEx", "AFXCMN/CIPAddressCtrl::GetAddress", "AFXCMN/CIPAddressCtrl::IsBlank", "AFXCMN/CIPAddressCtrl::SetAddress", "AFXCMN/CIPAddressCtrl::SetFieldFocus", "AFXCMN/CIPAddressCtrl::SetFieldRange"]

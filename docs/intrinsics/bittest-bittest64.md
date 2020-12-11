@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _bittest, _bittest64"
 title: "_bittest, _bittest64"
 ms.date: "09/02/2019"
 f1_keywords: ["_bittest64", "_bittest_cpp", "_bittest64_cpp", "_bittest"]

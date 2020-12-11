@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: error_code Class"
 title: "error_code Class"
 ms.date: "11/04/2016"
 f1_keywords: ["system_error/std::error_code", "system_error/std::error_code::value_type", "system_error/std::error_code::assign", "system_error/std::error_code::category", "system_error/std::error_code::clear", "system_error/std::error_code::default_error_condition", "system_error/std::error_code::message", "system_error/std::error_code::operator bool"]

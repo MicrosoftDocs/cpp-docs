@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OPTION"
 title: "OPTION (MASM)"
 ms.date: 07/15/2020
 f1_keywords: ["option"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .CONST (32-bit MASM)"
 title: ".CONST"
 ms.date: "12/17/2019"
 f1_keywords: [".CONST"]

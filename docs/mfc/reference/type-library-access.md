@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type Library Access"
 title: "Type Library Access"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["type libraries [MFC], accessing"]

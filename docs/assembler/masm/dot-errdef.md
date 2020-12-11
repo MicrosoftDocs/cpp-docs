@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .ERRDEF"
 title: ".ERRDEF"
 ms.date: "12/17/2019"
 f1_keywords: [".ERRDEF"]

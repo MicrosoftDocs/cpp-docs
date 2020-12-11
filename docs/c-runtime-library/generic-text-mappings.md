@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic-Text Mappings"
 title: "Generic-Text Mappings"
 ms.date: "11/04/2016"
 f1_keywords: ["c.mappings"]

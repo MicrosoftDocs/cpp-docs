@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN049: MFC/OLE MBCS to Unicode Translation Layer (MFCANS32)"
 title: "TN049: MFC-OLE MBCS to Unicode Translation Layer (MFCANS32)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFCANS32.DLL", "TN049"]

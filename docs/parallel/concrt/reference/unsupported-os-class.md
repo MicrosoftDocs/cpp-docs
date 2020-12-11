@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: unsupported_os Class"
 title: "unsupported_os Class"
 ms.date: "11/04/2016"
 f1_keywords: ["unsupported_os", "CONCRT/concurrency::unsupported_os", "CONCRT/concurrency::unsupported_os::unsupported_os"]

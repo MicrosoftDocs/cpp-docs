@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Macros and C++"
 title: "Macros and C++"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["macros, C++", "macros"]

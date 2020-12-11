@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Thread Safety in the C++ Standard Library"
 title: "Thread Safety in the C++ Standard Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["thread safety", "C++ Standard Library, thread safety", "thread safety, C++ Standard Library"]

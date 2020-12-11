@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Module States of a Regular MFC DLL Dynamically Linked to MFC"
 title: "Module States of a Regular MFC DLL Dynamically Linked to MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["regular MFC DLLs [C++], dynamically linked to MFC", "module states [C++]", "MFC DLLs [C++], regular MFC DLLs", "module states [C++], regular MFC DLLs dynamically linked to", "DLLs [C++], module states"]

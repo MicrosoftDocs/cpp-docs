@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: char_traits Struct"
 title: "char_traits Struct"
 ms.date: "05/07/2019"
 f1_keywords: ["iosfwd/std::char_traits", "iosfwd/std::char_traits::char_type", "iosfwd/std::char_traits::int_type", "iosfwd/std::char_traits::off_type", "iosfwd/std::char_traits::pos_type", "iosfwd/std::char_traits::state_type", "iosfwd/std::char_traits::assign", "iosfwd/std::char_traits::compare", "iosfwd/std::char_traits::copy", "iosfwd/std::char_traits::_Copy_s", "iosfwd/std::char_traits::eof", "iosfwd/std::char_traits::eq", "iosfwd/std::char_traits::eq_int_type", "iosfwd/std::char_traits::find", "iosfwd/std::char_traits::length", "iosfwd/std::char_traits::lt", "iosfwd/std::char_traits::move", "iosfwd/std::char_traits::_Move_s", "iosfwd/std::char_traits::not_eof", "iosfwd/std::char_traits::to_char_type", "iosfwd/std::char_traits::to_int_type"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;condition_variable&gt;"
 title: "&lt;condition_variable&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<condition_variable>"]

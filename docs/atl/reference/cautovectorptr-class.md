@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAutoVectorPtr Class"
 title: "CAutoVectorPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAutoVectorPtr", "ATLBASE/ATL::CAutoVectorPtr", "ATLBASE/ATL::CAutoVectorPtr::CAutoVectorPtr", "ATLBASE/ATL::CAutoVectorPtr::Allocate", "ATLBASE/ATL::CAutoVectorPtr::Attach", "ATLBASE/ATL::CAutoVectorPtr::Detach", "ATLBASE/ATL::CAutoVectorPtr::Free", "ATLBASE/ATL::CAutoVectorPtr::m_p"]

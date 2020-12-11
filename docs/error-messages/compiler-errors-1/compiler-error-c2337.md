@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2337"
 title: "Compiler Error C2337"
 ms.date: "09/19/2019"
 f1_keywords: ["C2337"]

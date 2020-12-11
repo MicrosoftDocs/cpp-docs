@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Call Operator: ()"
 title: "Function-call operator: ()"
 ms.date: "06/11/2020"
 helpviewer_keywords: ["( ) function call operator", "function calls, C++ functions", "() function call operator", "postfix operators [C++]", "function calls, operator", "functions [C++], function-call operator", "function call operator ()"]

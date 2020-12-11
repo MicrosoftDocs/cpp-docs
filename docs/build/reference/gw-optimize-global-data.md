@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Gw (Optimize Global Data)"
 title: "/Gw (Optimize Global Data)"
 ms.date: "11/04/2016"
 f1_keywords: ["/Gw"]

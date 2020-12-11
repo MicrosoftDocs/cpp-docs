@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Command Modifiers"
 title: "Command Modifiers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, command modifiers", "command modifiers"]

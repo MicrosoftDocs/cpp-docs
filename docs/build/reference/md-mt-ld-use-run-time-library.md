@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /MD, /MT, /LD (Use Run-Time Library)"
 title: "/MD, -MT, -LD (Use Run-Time Library)"
 ms.date: "07/17/2019"
 f1_keywords: ["/ld", "/mt", "VC.Project.VCCLWCECompilerTool.RuntimeLibrary", "VC.Project.VCCLCompilerTool.RuntimeLibrary", "/md", "/ml"]

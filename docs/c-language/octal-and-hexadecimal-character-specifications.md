@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Octal and Hexadecimal Character Specifications"
 title: "Octal and Hexadecimal Character Specifications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["octal characters", "hexadecimal characters"]

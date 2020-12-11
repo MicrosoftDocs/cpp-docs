@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCLinkCtrl Class"
 title: "CMFCLinkCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCLinkCtrl", "AFXLINKCTRL/CMFCLinkCtrl", "AFXLINKCTRL/CMFCLinkCtrl::SetURL", "AFXLINKCTRL/CMFCLinkCtrl::SetURLPrefix", "AFXLINKCTRL/CMFCLinkCtrl::SizeToContent", "AFXLINKCTRL/CMFCLinkCtrl::OnDrawFocusRect"]

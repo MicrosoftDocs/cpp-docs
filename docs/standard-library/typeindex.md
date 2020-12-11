@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;typeindex&gt;"
 title: "&lt;typeindex&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<typeindex>"]

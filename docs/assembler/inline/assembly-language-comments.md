@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Assembly-Language Comments"
 title: "Assembly-Language Comments"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["assembly language [C++], comments", "comments [C++], assembly language", "macros [C++], assembly language", "__asm keyword [C++], instructions"]

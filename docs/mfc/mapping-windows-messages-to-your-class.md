@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Mapping Windows Messages to Your Class"
 title: "Mapping Windows Messages to Your Class"
 ms.date: "09/06/2019"
 helpviewer_keywords: ["MFC dialog boxes [MFC], Windows messages", "message maps [MFC], in dialog class", "Windows messages [MFC], mapping in dialog classes", "messages to dialog class [MFC]", "mappings [MFC], messages to dialog class [MFC]", "message maps [MFC], mapping Windows messages to classes", "messages to dialog class [MFC], mapping", "Class Wizard [MFC]"]

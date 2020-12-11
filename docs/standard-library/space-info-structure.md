@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: space_info Structure"
 title: "space_info Structure"
 ms.date: "09/10/2018"
 f1_keywords: ["filesystem/std::tr2::sys::space_info"]

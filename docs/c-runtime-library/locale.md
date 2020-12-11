@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Locale"
 title: "Locale"
 ms.date: "04/11/2018"
 f1_keywords: ["c.international"]

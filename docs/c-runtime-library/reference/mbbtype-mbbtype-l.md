@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mbbtype, _mbbtype_l"
 title: "_mbbtype, _mbbtype_l"
 ms.date: "4/2/2020"
 api_name: ["_mbbtype", "_mbbtype_l", "_o__mbbtype", "_o__mbbtype_l"]

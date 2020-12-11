@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Failure Hooks"
 title: "Failure Hooks"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["delayed loading of DLLs, failure hooks"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: queue Class"
 title: "queue Class"
 ms.date: "11/04/2016"
 f1_keywords: ["queue/std::queue::container_type", "queue/std::queue::size_type", "queue/std::queue::value_type", "queue/std::queue::back", "queue/std::queue::empty", "queue/std::queue::front", "queue/std::queue::pop", "queue/std::queue::push", "queue/std::queue::size"]

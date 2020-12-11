@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Set the Path and Environment Variables for Command-Line Builds"
 title: "Set the Path and Environment Variables for Command-Line Builds"
 ms.custom: "conceptual"
 ms.date: "07/24/2019"

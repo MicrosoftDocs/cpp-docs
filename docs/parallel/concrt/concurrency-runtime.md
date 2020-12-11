@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency Runtime"
 title: "Concurrency Runtime"
 ms.date: "07/20/2018"
 helpviewer_keywords: ["Concurrency Runtime, getting started", "ConcRT (see Concurrency Runtime)", "Concurrency Runtime"]

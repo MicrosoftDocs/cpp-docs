@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: remove_const Class"
 title: "remove_const Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::remove_const"]

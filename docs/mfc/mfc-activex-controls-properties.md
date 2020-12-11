@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Properties"
 title: "MFC ActiveX Controls: Properties"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["properties [MFC], ActiveX controls", "MFC ActiveX controls [MFC], properties", "properties [MFC]"]

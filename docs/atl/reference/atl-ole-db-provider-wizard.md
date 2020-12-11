@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL OLE DB Provider Wizard"
 title: "ATL OLE DB Provider Wizard"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["ATL projects, adding ATL OLE DB providers"]

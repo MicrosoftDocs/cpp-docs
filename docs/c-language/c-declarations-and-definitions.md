@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Declarations and Definitions"
 title: "C Declarations and Definitions"
 ms.date: "11/04/2016"
 ms.assetid: 575f0c9b-5554-4346-be64-b2129ca9227f

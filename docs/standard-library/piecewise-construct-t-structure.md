@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: piecewise_contruct_t Structure"
 title: "piecewise_contruct_t Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["utility/std::piecewise_contruct_t"]

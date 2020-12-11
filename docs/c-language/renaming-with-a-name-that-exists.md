@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Renaming with a Name That Exists"
 title: "Renaming with a Name That Exists"
 ms.date: "11/04/2016"
 ms.assetid: fc2a8f29-f757-4ce0-8d7f-7f8cff7f49ab

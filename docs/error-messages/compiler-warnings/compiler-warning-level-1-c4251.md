@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4251"
 title: "Compiler Warning (level 1) C4251"
 ms.date: "04/21/2020"
 f1_keywords: ["C4251"]

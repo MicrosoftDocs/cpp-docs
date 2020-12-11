@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3142"
 title: "Compiler Error C3142"
 ms.date: "11/04/2016"
 f1_keywords: ["C3142"]

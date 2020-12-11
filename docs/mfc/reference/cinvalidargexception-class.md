@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CInvalidArgException Class"
 title: "CInvalidArgException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInvalidArgException", "AFX/CInvalidArgException", "AFX/CInvalidArgException::CInvalidArgException"]

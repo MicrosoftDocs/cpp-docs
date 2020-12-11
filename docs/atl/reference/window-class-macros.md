@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Window Class Macros"
 title: "Window Class Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlwin/ATL::DECLARE_WND_CLASS", "atlwin/ATL::DECLARE_WND_SUPERCLASS", "atlwin/ATL::DECLARE_WND_CLASS_EX"]

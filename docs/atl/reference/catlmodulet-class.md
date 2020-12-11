@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAtlModuleT Class"
 title: "CAtlModuleT Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlModuleT", "ATLBASE/ATL::CAtlModuleT", "ATLBASE/ATL::CAtlModuleT::CAtlModuleT", "ATLBASE/ATL::CAtlModuleT::InitLibId", "ATLBASE/ATL::CAtlModuleT::RegisterAppId", "ATLBASE/ATL::CAtlModuleT::RegisterServer", "ATLBASE/ATL::CAtlModuleT::UnregisterAppId", "ATLBASE/ATL::CAtlModuleT::UnregisterServer", "ATLBASE/ATL::CAtlModuleT::UpdateRegistryAppId"]

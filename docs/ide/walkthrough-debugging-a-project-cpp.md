@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Debugging a Project (C++)"
 title: "Walkthrough: Debugging a Project (C++)"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["projects [C++], debugging", "project debugging [C++]", "debugging projects"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Image Lists with Header Controls"
 title: "Using Image Lists with Header Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header controls [MFC], image lists", "CHeaderCtrl class [MFC], image lists", "image lists [MFC], header controls"]

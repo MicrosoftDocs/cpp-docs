@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Macro Substitution"
 title: "Macro Substitution"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, macro substitution", "macros, NMAKE", "substitution macros in NMAKE"]

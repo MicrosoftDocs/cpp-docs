@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Relational Function Templates"
 title: "Relational Function Templates"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["relational function templates"]

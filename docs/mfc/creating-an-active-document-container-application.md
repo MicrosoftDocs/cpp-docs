@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating an Active Document Container Application"
 title: "Creating an Active Document Container Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["active documents [MFC], containers", "containers [MFC], active document", "active document containers [MFC], creating", "MFC COM, active document containment", "applications [MFC], active document container"]

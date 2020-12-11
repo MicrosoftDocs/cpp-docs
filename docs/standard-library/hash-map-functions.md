@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;hash_map&gt; functions"
 title: "&lt;hash_map&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["hash_map/std::swap", "hash_map/std::swap (hash_map)"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strcpy, wcscpy, _mbscpy"
 title: "strcpy, wcscpy, _mbscpy"
 ms.date: "4/2/2020"
 api_name: ["strcpy", "wcscpy", "_mbscpy", "_o_wcscpy"]

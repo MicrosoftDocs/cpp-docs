@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Embed a Manifest Inside a C/C++ Application"
 title: "How to: Embed a Manifest Inside a C/C++ Application"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["manifests [C++]", "embedding manifests", "makefiles, updating to embed manifest"]

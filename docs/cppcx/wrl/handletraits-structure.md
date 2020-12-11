@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HANDLETraits Structure"
 title: "HANDLETraits Structure"
 ms.date: "09/27/2018"
 ms.topic: "reference"

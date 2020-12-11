@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CByteArray Class"
 title: "CByteArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CByteArray", "AFXCOLL/CByteArray", "AFXCOLL/CByteArray::CByteArray", "AFXCOLL/CByteArray::Add", "AFXCOLL/CByteArray::Append", "AFXCOLL/CByteArray::Copy", "AFXCOLL/CByteArray::ElementAt", "AFXCOLL/CByteArray::FreeExtra", "AFXCOLL/CByteArray::GetAt", "AFXCOLL/CByteArray::GetCount", "AFXCOLL/CByteArray::GetData", "AFXCOLL/CByteArray::GetSize", "AFXCOLL/CByteArray::GetUpperBound", "AFXCOLL/CByteArray::InsertAt", "AFXCOLL/CByteArray::IsEmpty", "AFXCOLL/CByteArray::RemoveAll", "AFXCOLL/CByteArray::RemoveAt", "AFXCOLL/CByteArray::SetAt", "AFXCOLL/CByteArray::SetAtGrow", "AFXCOLL/CByteArray::SetSize"]

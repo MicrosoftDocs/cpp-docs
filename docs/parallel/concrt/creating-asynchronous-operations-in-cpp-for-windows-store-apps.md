@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating Asynchronous Operations in C++ for UWP Apps"
 title: "Creating Asynchronous Operations in C++ for UWP Apps"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["Windows 8.x apps, creating C++ async operations", "Creating C++ async operations"]

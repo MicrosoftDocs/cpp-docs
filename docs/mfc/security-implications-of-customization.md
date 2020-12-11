@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Security Implications of Customization"
 title: "Security Implications of Customization"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["security, MFC Feature Pack", "MFC Feature Pack, security"]

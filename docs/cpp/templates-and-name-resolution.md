@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Templates and Name Resolution"
 title: "Templates and Name Resolution"
 ms.date: "11/04/2016"
 ms.assetid: 519ba7b5-cd25-4549-865a-9a7b9dffdc28

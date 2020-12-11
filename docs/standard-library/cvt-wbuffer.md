@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cvt/wbuffer&gt;"
 title: "&lt;cvt-wbuffer&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["stdext.cvt.<cvt/wbuffer>", "stdext::cvt::<cvt/wbuffer>", "<cvt/wbuffer>"]

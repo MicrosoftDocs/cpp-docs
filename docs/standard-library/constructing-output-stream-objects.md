@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Constructing Output Stream Objects"
 title: "Constructing Output Stream Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["output stream objects"]

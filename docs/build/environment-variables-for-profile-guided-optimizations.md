@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Environment Variables for Profile-Guided Optimizations"
 title: "Environment Variables for Profile-Guided Optimizations"
 ms.date: "03/14/2018"
 helpviewer_keywords: ["profile-guided optimizations, environment variables"]

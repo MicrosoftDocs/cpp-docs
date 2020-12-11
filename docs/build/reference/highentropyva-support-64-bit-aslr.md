@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /HIGHENTROPYVA (Support 64-Bit ASLR)"
 title: "/HIGHENTROPYVA (Support 64-Bit ASLR)"
 ms.date: "06/12/2018"
 ms.assetid: fe35f9f7-d28e-4694-9aeb-a79db06168e0

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Functions"
 title: "ATL Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["functions [ATL]", "ATL, global functions"]

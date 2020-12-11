@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Static Members (C++)"
 title: "Static Members (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["class members [C++], static", "instance constructors, static members", "class members [C++], shared", "members [C++], static data members", "static members [C++], data members", "static data members [C++]", "data members [C++], static data members", "class instances [C++], shared members", "instance constructors, shared members", "class instances [C++], static members"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: com_interface_entry (C++)"
 title: "com_interface_entry  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.com_interface_entry"]

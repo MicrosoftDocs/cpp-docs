@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: hash Structure"
 title: "hash Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["typeindex/std::hash"]

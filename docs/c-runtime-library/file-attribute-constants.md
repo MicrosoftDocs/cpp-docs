@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File Attribute Constants"
 title: "File Attribute Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["A_HIDDEN", "_A_NORMAL", "_A_SUBDIR", "_A_RDONLY", "A_NORMAL", "A_SUBDIR", "_A_SYSTEM", "c.constants.file", "_A_HIDDEN", "A_RDONLY", "_A_ARCH", "A_ARCH"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IRowsetCreatorImpl Class"
 title: "IRowsetCreatorImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::IRowsetCreatorImpl", "ATL.IRowsetCreatorImpl", "ATL::IRowsetCreatorImpl<T>", "ATL.IRowsetCreatorImpl<T>", "IRowsetCreatorImpl", "IRowsetCreatorImpl.SetSite", "IRowsetCreatorImpl<T>::SetSite", "IRowsetCreatorImpl::SetSite", "SetSite", "ATL.IRowsetCreatorImpl.SetSite", "ATL::IRowsetCreatorImpl<T>::SetSite", "ATL::IRowsetCreatorImpl::SetSite", "ATL.IRowsetCreatorImpl<T>.SetSite"]

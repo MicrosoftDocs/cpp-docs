@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .REPEAT (32-bit MASM)"
 title: ".REPEAT"
 ms.date: "11/05/2019"
 f1_keywords: [".REPEAT"]

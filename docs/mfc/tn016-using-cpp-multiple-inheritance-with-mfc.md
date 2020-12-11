@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN016: Using C++ Multiple Inheritance with MFC"
 title: "TN016: Using C++ Multiple Inheritance with MFC"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.inheritance"]

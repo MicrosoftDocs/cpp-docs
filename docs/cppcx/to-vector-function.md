@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: to_vector Function"
 title: "to_vector Function"
 ms.date: "12/30/2016"
 f1_keywords: ["collection/Windows::Foundation::Collections::to_vector"]

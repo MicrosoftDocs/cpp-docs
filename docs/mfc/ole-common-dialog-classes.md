@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE Common Dialog Classes"
 title: "OLE Common Dialog Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ActiveX classes [MFC]", "dialog classes [MFC], OLE", "OLE common dialog classes [MFC]", "common dialog classes [MFC]"]

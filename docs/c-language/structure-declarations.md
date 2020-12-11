@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Structure Declarations"
 title: "Structure Declarations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["structure declarations", "anonymous structures", "types [C], declarations", "structure members", "embedded structures"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cancellation in the PPL"
 title: "Cancellation in the PPL"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["parallel algorithms, canceling [Concurrency Runtime]", "canceling parallel algorithms [Concurrency Runtime]", "parallel tasks, canceling [Concurrency Runtime]", "cancellation in the PPL", "parallel work trees [Concurrency Runtime]", "canceling parallel tasks [Concurrency Runtime]"]

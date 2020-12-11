@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Language Strings"
 title: "Language Strings"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["language strings"]

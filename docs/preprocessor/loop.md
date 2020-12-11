@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: loop pragma"
 title: "loop pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["loop_CPP", "vc-pragma.loop"]

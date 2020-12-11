@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;streambuf&gt;"
 title: "&lt;streambuf&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<streambuf>"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding ATL Support to Your MFC Project"
 title: "Adding ATL Support to Your MFC Project"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.adding.atl.mfc"]

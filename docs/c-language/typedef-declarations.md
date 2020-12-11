@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Typedef Declarations"
 title: "Typedef Declarations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["declarations, typedef", "typedef declarations", "types [C], declarations"]

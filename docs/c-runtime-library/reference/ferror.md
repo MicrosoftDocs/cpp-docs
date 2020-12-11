@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ferror"
 title: "ferror"
 ms.date: "4/2/2020"
 api_name: ["ferror", "_o_ferror"]

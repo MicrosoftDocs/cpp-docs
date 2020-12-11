@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C/C++ Compiler and build tools errors and warnings"
 title: "C/C++ build tools errors and warnings"
 ms.date: "11/17/2017"
 helpviewer_keywords: ["builds [C++], errors", "errors [C++]", "error messages [C++], build errors", "errors [C++], builds"]

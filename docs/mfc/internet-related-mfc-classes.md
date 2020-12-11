@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internet-Related MFC Classes"
 title: "Internet-Related MFC Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, Internet classes"]

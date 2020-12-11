@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /await (Enable coroutine support)"
 title: "/await (Enable coroutine support)"
 ms.date: "08/15/2017"
 f1_keywords: ["/await", "-await"]

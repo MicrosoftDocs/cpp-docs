@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specifying the Pathname"
 title: "Specifying the Pathname"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["names [C++], compiler output files", "cl.exe compiler, output files", "output files, specifying pathnames"]

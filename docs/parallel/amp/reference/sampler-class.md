@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: sampler Class"
 title: "sampler Class"
 ms.date: "06/28/2018"
 f1_keywords: ["sampler", "AMP_GRAPHICS/sampler", "AMP_GRAPHICS/concurrency::sampler::graphics::sampler", "AMP_GRAPHICS/concurrency::sampler::graphics::get_address_mode", "AMP_GRAPHICS/concurrency::sampler::graphics::get_border_color", "AMP_GRAPHICS/concurrency::sampler::graphics::get_filter_mode", "AMP_GRAPHICS/concurrency::sampler::graphics::address_mode", "AMP_GRAPHICS/concurrency::sampler::graphics::border_color", "AMP_GRAPHICS/concurrency::sampler::graphics::filter_mode"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: typeid  (C++/CLI and C++/CX)"
 title: "typeid  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

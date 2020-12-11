@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Za, /Ze (Disable Language Extensions)"
 title: "/Za, /Ze (Disable Language Extensions)"
 ms.date: "02/19/2019"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.DisableLanguageExtensions", "/za", "/ze", "VC.Project.VCCLCompilerTool.DisableLanguageExtensions"]

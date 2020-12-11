@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Printing"
 title: "Printing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["view classes [MFC], print operations", "documents [MFC], printing", "printing [MFC], from framework", "printing [MFC]"]

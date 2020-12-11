@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Obtaining Metadata with Schema Rowsets"
 title: "Obtaining Metadata with Schema Rowsets"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["schema rowsets, getting OLE DB provider metadata", "OLE DB consumer templates, getting provider metadata", "metadata, getting (OLE DB Templates)"]

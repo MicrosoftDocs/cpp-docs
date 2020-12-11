@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comments (C++)"
 title: "Comments (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["code comments, C++", "comments, documenting code", "comments, C++ code", "white space, C++ comments"]

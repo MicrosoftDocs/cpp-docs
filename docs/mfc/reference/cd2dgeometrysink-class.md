@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DGeometrySink Class"
 title: "CD2DGeometrySink Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DGeometrySink", "AFXRENDERTARGET/CD2DGeometrySink", "AFXRENDERTARGET/CD2DGeometrySink::CD2DGeometrySink", "AFXRENDERTARGET/CD2DGeometrySink::AddArc", "AFXRENDERTARGET/CD2DGeometrySink::AddBezier", "AFXRENDERTARGET/CD2DGeometrySink::AddBeziers", "AFXRENDERTARGET/CD2DGeometrySink::AddLine", "AFXRENDERTARGET/CD2DGeometrySink::AddLines", "AFXRENDERTARGET/CD2DGeometrySink::AddQuadraticBezier", "AFXRENDERTARGET/CD2DGeometrySink::AddQuadraticBeziers", "AFXRENDERTARGET/CD2DGeometrySink::BeginFigure", "AFXRENDERTARGET/CD2DGeometrySink::Close", "AFXRENDERTARGET/CD2DGeometrySink::EndFigure", "AFXRENDERTARGET/CD2DGeometrySink::Get", "AFXRENDERTARGET/CD2DGeometrySink::IsValid", "AFXRENDERTARGET/CD2DGeometrySink::SetFillMode", "AFXRENDERTARGET/CD2DGeometrySink::SetSegmentFlags", "AFXRENDERTARGET/CD2DGeometrySink::m_pSink"]

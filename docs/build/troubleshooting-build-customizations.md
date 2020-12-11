@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Troubleshooting Build Customizations"
 title: "Troubleshooting Build Customizations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["build events [C++], troubleshooting", "builds [C++], build events", "troubleshooting [C++], builds", "build steps [C++], troubleshooting", "events [C++], build", "builds [C++], troubleshooting", "custom build steps [C++], troubleshooting"]

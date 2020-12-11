@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /GZ (Enable Stack Frame Run-Time Error Checking)"
 title: "/GZ (Enable Stack Frame Run-Time Error Checking)"
 ms.date: "11/04/2016"
 f1_keywords: ["/gz"]

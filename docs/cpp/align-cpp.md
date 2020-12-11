@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: align (C++)"
 title: "align (C++)"
 ms.date: "12/17/2018" 
 f1_keywords: ["align_cpp"]

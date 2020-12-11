@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s"
 title: "ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s"
 ms.date: "4/2/2020"
 api_name: ["_ctime64_s", "_wctime32_s", "ctime_s", "_wctime64_s", "_ctime32_s", "_wctime_s", "_o__ctime32_s", "_o__ctime64_s", "_o__wctime32_s", "_o__wctime64_s"]

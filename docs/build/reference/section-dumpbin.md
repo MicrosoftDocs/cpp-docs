@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /SECTION (DUMPBIN)"
 title: "/SECTION (DUMPBIN)"
 ms.date: "11/04/2016"
 f1_keywords: ["/section_dumpbin"]

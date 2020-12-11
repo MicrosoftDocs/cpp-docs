@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPrintDialog Class"
 title: "CPrintDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPrintDialog", "AFXDLGS/CPrintDialog", "AFXDLGS/CPrintDialog::CPrintDialog", "AFXDLGS/CPrintDialog::CreatePrinterDC", "AFXDLGS/CPrintDialog::DoModal", "AFXDLGS/CPrintDialog::GetCopies", "AFXDLGS/CPrintDialog::GetDefaults", "AFXDLGS/CPrintDialog::GetDeviceName", "AFXDLGS/CPrintDialog::GetDevMode", "AFXDLGS/CPrintDialog::GetDriverName", "AFXDLGS/CPrintDialog::GetFromPage", "AFXDLGS/CPrintDialog::GetPortName", "AFXDLGS/CPrintDialog::GetPrinterDC", "AFXDLGS/CPrintDialog::GetToPage", "AFXDLGS/CPrintDialog::PrintAll", "AFXDLGS/CPrintDialog::PrintCollate", "AFXDLGS/CPrintDialog::PrintRange", "AFXDLGS/CPrintDialog::PrintSelection", "AFXDLGS/CPrintDialog::m_pd"]

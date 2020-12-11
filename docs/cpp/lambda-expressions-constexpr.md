@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: constexpr lambda expressions in C++"
 title: "constexpr lambda expressions in C++"
 ms.date: "04/08/2019"
 helpviewer_keywords: ["lambda expressions [C++], constexpr"]

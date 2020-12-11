@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: basic_iostream Class"
 title: "basic_iostream Class"
 ms.date: "11/04/2016"
 f1_keywords: ["istream/std::basic_iostream", "istream/std::basic_iostream::swap"]

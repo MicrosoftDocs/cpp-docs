@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Display Command Information in the Status Bar"
 title: "How to: Display Command Information in the Status Bar"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["prompts [MFC]", "displaying command status [MFC]", "status bars [MFC], message area", "status bars [MFC], displaying command information"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sign of Bit Fields"
 title: "Sign of Bit Fields"
 ms.date: "11/04/2016"
 ms.assetid: a8895b95-5504-4e30-9ad2-2498bd5c23ed

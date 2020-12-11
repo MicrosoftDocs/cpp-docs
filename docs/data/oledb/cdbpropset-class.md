@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDBPropSet Class"
 title: "CDBPropSet Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDBPropSet", "ATL.CDBPropSet", "ATL::CDBPropSet", "CDBPropSet::AddProperty", "CDBPropSet.AddProperty", "AddProperty", "ATL::CDBPropSet::AddProperty", "ATL.CDBPropSet.AddProperty", "CDBPropSet.CDBPropSet", "CDBPropSet::CDBPropSet", "ATL::CDBPropSet::CDBPropSet", "ATL.CDBPropSet.CDBPropSet", "CDBPropSet.operator=", "ATL::CDBPropSet::operator=", "ATL.CDBPropSet.operator=", "CDBPropSet::operator=", "ATL.CDBPropSet.SetGUID", "CDBPropSet.SetGUID", "ATL::CDBPropSet::SetGUID", "CDBPropSet::SetGUID"]

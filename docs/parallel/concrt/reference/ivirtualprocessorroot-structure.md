@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IVirtualProcessorRoot Structure"
 title: "IVirtualProcessorRoot Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["IVirtualProcessorRoot", "CONCRTRM/concurrency::IVirtualProcessorRoot", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::Activate", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::Deactivate", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::EnsureAllTasksVisible", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::GetId"]

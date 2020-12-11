@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _InterlockedExchangeAdd intrinsic functions"
 title: "_InterlockedExchangeAdd intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedExchangeAdd64_nf", "_InterlockedExchangeAdd64_rel", "_InterlockedExchangeAdd16_rel", "_InterlockedExchangeAdd_acq", "_InterlockedExchangeAdd_nf", "_InterlockedExchangeAdd_rel", "_InterlockedExchangeAdd8_acq", "_InterlockedExchangeAdd16_nf", "_InterlockedExchangeAdd_acq_cpp", "_InterlockedExchangeAdd64_acq_cpp", "_InterlockedExchangeAdd16_acq", "_InterlockedExchangeAdd_HLERelease", "_InterlockedExchangeAdd64_cpp", "_InterlockedExchangeAdd64_HLERelease", "_InterlockedExchangeAdd64_acq", "_InterlockedExchangeAdd8", "_InterlockedExchangeAdd64", "_InterlockedExchangeAdd8_nf", "_InterlockedExchangeAdd16", "_InterlockedExchangeAdd64_rel_cpp", "_InterlockedExchangeAdd_cpp", "_InterlockedExchangeAdd8_rel", "_InterlockedExchangeAdd_HLEAcquire", "_InterlockedExchangeAdd64_HLEAcquire", "_InterlockedExchangeAdd"]

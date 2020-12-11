@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DHTML Event Maps"
 title: "DHTML Event Maps"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.macros.shared"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CProgressCtrl Class"
 title: "CProgressCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CProgressCtrl", "AFXCMN/CProgressCtrl", "AFXCMN/CProgressCtrl::CProgressCtrl", "AFXCMN/CProgressCtrl::Create", "AFXCMN/CProgressCtrl::CreateEx", "AFXCMN/CProgressCtrl::GetBarColor", "AFXCMN/CProgressCtrl::GetBkColor", "AFXCMN/CProgressCtrl::GetPos", "AFXCMN/CProgressCtrl::GetRange", "AFXCMN/CProgressCtrl::GetState", "AFXCMN/CProgressCtrl::GetStep", "AFXCMN/CProgressCtrl::OffsetPos", "AFXCMN/CProgressCtrl::SetBarColor", "AFXCMN/CProgressCtrl::SetBkColor", "AFXCMN/CProgressCtrl::SetMarquee", "AFXCMN/CProgressCtrl::SetPos", "AFXCMN/CProgressCtrl::SetRange", "AFXCMN/CProgressCtrl::SetState", "AFXCMN/CProgressCtrl::SetStep", "AFXCMN/CProgressCtrl::StepIt"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mbsbtype, _mbsbtype_l"
 title: "_mbsbtype, _mbsbtype_l"
 ms.date: "4/2/2020"
 api_name: ["_mbsbtype_l", "_mbsbtype", "_o__mbsbtype", "_o__mbsbtype_l"]

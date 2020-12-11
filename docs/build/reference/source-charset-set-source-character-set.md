@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /source-charset (Set Source Character Set)"
 title: "/source-charset (Set Source Character Set)"
 ms.date: "02/06/2019"
 f1_keywords: ["source-charset", "/source-charset"]

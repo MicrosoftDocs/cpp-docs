@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Unary Operators"
 title: "C Unary Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operators [C], unary", "unary operators"]

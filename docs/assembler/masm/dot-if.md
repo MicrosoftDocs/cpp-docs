@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .IF (32-bit MASM)"
 title: ".IF"
 ms.date: "11/05/2019"
 f1_keywords: [".IF"]

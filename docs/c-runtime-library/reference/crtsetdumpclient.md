@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CrtSetDumpClient"
 title: "_CrtSetDumpClient"
 ms.date: "11/04/2016"
 api_name: ["_CrtSetDumpClient"]

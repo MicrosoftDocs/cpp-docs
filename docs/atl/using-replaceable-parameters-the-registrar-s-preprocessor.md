@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Replaceable Parameters (The Registrar&#39;s Preprocessor)"
 title: "Using Replaceable Parameters (ATL Registrar)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["%MODULE%"]

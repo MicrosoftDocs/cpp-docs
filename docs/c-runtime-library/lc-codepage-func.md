@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ___lc_codepage_func"
 title: "___lc_codepage_func"
 ms.date: "4/2/2020"
 api_name: ["___lc_codepage_func", "_o____lc_codepage_func"]

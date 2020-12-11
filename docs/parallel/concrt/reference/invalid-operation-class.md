@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: invalid_operation Class"
 title: "invalid_operation Class"
 ms.date: "11/04/2016"
 f1_keywords: ["invalid_operation", "CONCRT/concurrency::invalid_operation", "CONCRT/concurrency::invalid_operation::invalid_operation"]

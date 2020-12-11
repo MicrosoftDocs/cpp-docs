@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: List Box Handlers"
 title: "List Box Handlers"
 ms.date: "11/04/2016"
 f1_keywords: ["ON_LBN_DBLCLK", "ON_LBN_ERRSPACE", "ON_LBN_SETFOCUS", "ON_LBN_SELCHANGE", "ON_LBN_KILLFOCUS"]

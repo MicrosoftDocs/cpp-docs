@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: first_is"
 title: "first_is (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.first_is"]

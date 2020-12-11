@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets: How Sockets with Archives Work"
 title: "Windows Sockets: How Sockets with Archives Work"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["Windows Sockets [MFC], synchronous", "sockets [MFC], synchronous operation", "sockets [MFC], with archives", "synchronous state socket", "Windows Sockets [MFC], with archives", "two-state socket object"]

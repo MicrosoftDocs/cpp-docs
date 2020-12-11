@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: binomial_distribution Class"
 title: "binomial_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::binomial_distribution", "random/std::binomial_distribution::reset", "random/std::binomial_distribution::p", "random/std::binomial_distribution::t", "random/std::binomial_distribution::param", "random/std::binomial_distribution::min", "random/std::binomial_distribution::max", "random/std::binomial_distribution::operator()", "random/std::binomial_distribution::param_type", "random/std::binomial_distribution::param_type::p", "random/std::binomial_distribution::param_type::t", "random/std::binomial_distribution::param_type::operator==", "random/std::binomial_distribution::param_type::operator!="]

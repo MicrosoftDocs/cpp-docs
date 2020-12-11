@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: student_t_distribution Class"
 title: "student_t_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::student_t_distribution", "random/std::student_t_distribution::result_type", "random/std::student_t_distribution::reset", "random/std::student_t_distribution::operator()", "random/std::student_t_distribution::n", "random/std::student_t_distribution::param", "random/std::student_t_distribution::min", "random/std::student_t_distribution::max", "random/std::student_t_distribution::param_type"]

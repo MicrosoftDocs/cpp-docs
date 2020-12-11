@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: once_flag Structure"
 title: "once_flag Structure"
 ms.date: "09/17/2018"
 f1_keywords: ["mutex/std::once_flag"]

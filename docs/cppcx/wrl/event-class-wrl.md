@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Event Class (WRL)"
 title: "Event Class (WRL)"
 ms.date: "09/24/2018"
 ms.topic: "reference"

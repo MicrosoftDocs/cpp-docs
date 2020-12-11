@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Locales and Code Pages"
 title: "Locales and Code Pages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["locales [C++], about locales", "locale IDs [C++]", "locales [C++]", "code pages [C++]", "code pages [C++], dynamically changing", "character sets [C++], code pages", "multibyte code pages [C++]", "character sets [C++], locales", "localization [C++], code pages", "localization [C++], locales", "code pages [C++], locales", "conventions [C++], international character support"]

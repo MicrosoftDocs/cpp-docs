@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C String Literals"
 title: "C String Literals"
 ms.date: "08/31/2018"
 helpviewer_keywords: ["string literals, syntax", "strings [C++], string literals", "literal strings, C"]

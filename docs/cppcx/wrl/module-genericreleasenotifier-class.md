@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Module::GenericReleaseNotifier Class"
 title: "Module::GenericReleaseNotifier Class"
 ms.date: "09/17/2018"
 ms.topic: "reference"

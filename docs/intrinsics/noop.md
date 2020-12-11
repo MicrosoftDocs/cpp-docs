@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __noop"
 title: "__noop"
 ms.date: "09/02/2019"
 f1_keywords: ["__noop_cpp", "__noop"]

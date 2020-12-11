@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DISASM"
 title: "/DISASM"
 ms.date: "01/17/2018"
 f1_keywords: ["/disasm"]

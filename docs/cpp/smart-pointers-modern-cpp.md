@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Smart pointers (Modern C++)"
 title: "Smart pointers (Modern C++)"
 ms.date: "11/19/2019"
 ms.topic: "conceptual"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating Windows"
 title: "Creating Windows"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["object creation [MFC], windows", "windows [MFC], creating", "CWnd objects [MFC]", "CWnd objects [MFC], creating"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Header files (C++)"
 title: "Header files (C++)"
 ms.date: "12/11/2019"
 helpviewer_keywords: ["header files [C++]"]

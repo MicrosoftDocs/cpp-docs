@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: improper_lock Class"
 title: "improper_lock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["improper_lock", "CONCRT/concurrency::improper_lock", "CONCRT/concurrency::improper_lock::improper_lock"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: break Statement (C)"
 title: "break Statement (C)"
 ms.date: "11/04/2016"
 f1_keywords: ["break"]

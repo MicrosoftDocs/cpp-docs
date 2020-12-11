@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CL environment variables"
 title: "CL environment variables"
 ms.date: "06/06/2019"
 helpviewer_keywords: ["INCLUDE environment variable", "cl.exe compiler, environment variables", "LIBPATH environment variable", "environment variables, CL compiler"]

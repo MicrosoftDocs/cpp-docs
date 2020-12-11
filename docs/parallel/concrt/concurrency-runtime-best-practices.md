@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency Runtime Best Practices"
 title: "Concurrency Runtime Best Practices"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["best practices [Concurrency Runtime]", "Concurrency Runtime, practices to avoid", "practices to avoid [Concurrency Runtime]", "Concurrency Runtime, best practices"]

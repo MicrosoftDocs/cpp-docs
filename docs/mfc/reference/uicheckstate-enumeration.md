@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: UICheckState Enumeration"
 title: "UICheckState Enumeration"
 ms.date: "04/03/2017"
 f1_keywords: ["afxwinforms/uicheckstate"]

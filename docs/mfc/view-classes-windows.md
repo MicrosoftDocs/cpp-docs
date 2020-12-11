@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: View Classes (Windows)"
 title: "View Classes (Windows)"
 ms.date: "09/17/2019"
 f1_keywords: ["vc.classes.view"]

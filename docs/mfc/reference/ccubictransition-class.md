@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCubicTransition Class"
 title: "CCubicTransition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCubicTransition", "AFXANIMATIONCONTROLLER/CCubicTransition", "AFXANIMATIONCONTROLLER/CCubicTransition::CCubicTransition", "AFXANIMATIONCONTROLLER/CCubicTransition::Create", "AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalVelocity", "AFXANIMATIONCONTROLLER/CCubicTransition::m_duration"]

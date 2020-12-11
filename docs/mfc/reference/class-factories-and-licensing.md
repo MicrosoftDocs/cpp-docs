@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Class Factories and Licensing"
 title: "Class Factories and Licensing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["class factories [MFC], and licensing"]

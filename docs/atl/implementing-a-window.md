@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing a Window"
 title: "Implementing a Window (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, windows", "CWindowImpl class, using", "windows [C++], implementing in ATL"]

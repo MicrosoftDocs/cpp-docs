@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Locking Records (ODBC)"
 title: "Recordset: Locking Records (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["locks [C++], recordsets", "optimistic locking", "pessimistic locking in ODBC", "recordsets [C++], locking records", "optimistic locking, ODBC", "ODBC recordsets [C++], locking records", "data [C++], locking"]

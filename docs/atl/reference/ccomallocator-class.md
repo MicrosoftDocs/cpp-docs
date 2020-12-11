@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComAllocator Class"
 title: "CComAllocator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComAllocator", "ATLBASE/ATL::CComAllocator", "ATLBASE/ATL::CComAllocator::Allocate", "ATLBASE/ATL::CComAllocator::Free", "ATLBASE/ATL::CComAllocator::Reallocate"]

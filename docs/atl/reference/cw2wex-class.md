@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CW2WEX Class"
 title: "CW2WEX Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CW2WEX", "ATLCONV/ATL::CW2WEX", "ATLCONV/ATL::CW2WEX::CW2WEX", "ATLCONV/ATL::CW2WEX::m_psz", "ATLCONV/ATL::CW2WEX::m_szBuffer"]

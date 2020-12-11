@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /MAPINFO (Include Information in Mapfile)"
 title: "/MAPINFO (Include Information in Mapfile)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.MapLines", "VC.Project.VCLinkerTool.MapInfoFixups", "VC.Project.VCLinkerTool.MapExports", "/mapinfo"]

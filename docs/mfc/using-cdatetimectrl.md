@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CDateTimeCtrl"
 title: "Using CDateTimeCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DateTimePicker control [MFC], CDateTimeCtrl class"]

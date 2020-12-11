@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /volatile (volatile Keyword Interpretation)"
 title: "/volatile (volatile Keyword Interpretation)"
 ms.date: "11/04/2016"
 f1_keywords: ["/volatile:iso", "/volatile:ms", "/volatile"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTable Class"
 title: "CTable Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::CTable", "ATL.CTable", "CTable", "ATL.CTable.Open", "ATL::CTable::Open", "CTable::Open", "CTable.Open"]

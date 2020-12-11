@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ Developer Guidance for Speculative Execution Side Channels"
 title: "C++ Developer Guidance for Speculative Execution Side Channels"
 ms.date: "07/10/2018"
 helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++], best practices", "Spectre", "CVE-2017-5753", "Speculative Execution"]

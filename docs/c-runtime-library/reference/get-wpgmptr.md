@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_wpgmptr"
 title: "_get_wpgmptr"
 ms.date: "4/2/2020"
 api_name: ["_get_wpgmptr", "_o__get_wpgmptr"]

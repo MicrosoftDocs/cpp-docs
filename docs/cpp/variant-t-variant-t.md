@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _variant_t::_variant_t"
 title: "_variant_t::_variant_t"
 ms.date: "11/04/2016"
 f1_keywords: ["_variant_t::_variant_t"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Rvalue Reference Declarator: &amp;&amp;"
 title: "Rvalue Reference Declarator: &amp;&amp;"
 ms.date: "11/04/2016"
 f1_keywords: ["&&"]

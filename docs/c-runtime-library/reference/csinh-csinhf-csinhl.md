@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: csinh, csinhf, csinhl"
 title: "csinh, csinhf, csinhl"
 ms.date: "11/04/2016"
 api_name: ["csinh", "csinhf", "csinhl"]

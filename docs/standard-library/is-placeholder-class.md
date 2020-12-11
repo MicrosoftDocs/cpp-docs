@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_placeholder Class"
 title: "is_placeholder Class"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::is_placeholder"]

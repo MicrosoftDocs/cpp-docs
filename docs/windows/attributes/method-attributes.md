@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Method Attributes"
 title: "Method Attributes (C++ COM)"
 ms.date: "10/02/2018"
 helpviewer_keywords: ["method attributes", "attributes [C++/CLI], reference topics"]

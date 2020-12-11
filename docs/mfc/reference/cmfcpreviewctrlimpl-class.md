@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCPreviewCtrlImpl Class"
 title: "CMFCPreviewCtrlImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCPreviewCtrlImpl", "AFXWIN/CMFCPreviewCtrlImpl", "AFXWIN/CMFCPreviewCtrlImpl::CMFCPreviewCtrlImpl", "AFXWIN/CMFCPreviewCtrlImpl::Create", "AFXWIN/CMFCPreviewCtrlImpl::Destroy", "AFXWIN/CMFCPreviewCtrlImpl::Focus", "AFXWIN/CMFCPreviewCtrlImpl::GetDocument", "AFXWIN/CMFCPreviewCtrlImpl::Redraw", "AFXWIN/CMFCPreviewCtrlImpl::SetDocument", "AFXWIN/CMFCPreviewCtrlImpl::SetHost", "AFXWIN/CMFCPreviewCtrlImpl::SetPreviewVisuals", "AFXWIN/CMFCPreviewCtrlImpl::SetRect", "AFXWIN/CMFCPreviewCtrlImpl::DoPaint", "AFXWIN/CMFCPreviewCtrlImpl::m_clrBackColor", "AFXWIN/CMFCPreviewCtrlImpl::m_clrTextColor", "AFXWIN/CMFCPreviewCtrlImpl::m_font", "AFXWIN/CMFCPreviewCtrlImpl::m_pDocument"]

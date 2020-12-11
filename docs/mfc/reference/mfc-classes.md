@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Classes"
 title: "MFC Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, classes", "classes [MFC], MFC"]

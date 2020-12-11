@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Default Date and Time"
 title: "Default Date and Time"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["time, default", "dates, default for _DATE and _TIME"]

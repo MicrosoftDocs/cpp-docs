@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _InterlockedAddLargeStatistic"
 title: "_InterlockedAddLargeStatistic"
 ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedAddLargeStatistic", "_InterlockedAddLargeStatistic_cpp"]

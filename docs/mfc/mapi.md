@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MAPI"
 title: "MAPI"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["messaging [MFC], client applications", "enabling applications for MAPI [MFC]", "MAPI support in MFC", "e-mail [MFC], enabling", "mail [MFC], enabling your application", "MAPI, MFC", "enabling applications for mail [MFC]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dual Interfaces and Events"
 title: "Dual Interfaces and Events"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["events [C++], dual interfaces", "dual interfaces, events"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: basic_stringstream Class"
 title: "basic_stringstream Class"
 ms.date: "11/04/2016"
 f1_keywords: ["sstream/std::basic_stringstream", "sstream/std::basic_stringstream::allocator_type", "sstream/std::basic_stringstream::rdbuf", "sstream/std::basic_stringstream::str"]

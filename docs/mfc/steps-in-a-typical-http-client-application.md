@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Steps in a Typical HTTP Client Application"
 title: "Steps in a Typical HTTP Client Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HTTP client applications [MFC]", "client applications [MFC], HTTP", "Internet applications [MFC], HTTP client applications", "applications [MFC], HTTP client", "Internet client applications [MFC], HTTP table", "WinInet classes [MFC], HTTP"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: invoke_result Class"
 title: "invoke_result Class"
 ms.date: "02/21/2019"
 f1_keywords: ["type_traits/std::invoke_result", "type_traits/std::invoke_result_t", "type_traits/std::invoke_result::type"]

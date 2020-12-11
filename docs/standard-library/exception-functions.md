@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;exception&gt; functions"
 title: "&lt;exception&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["exception/std::current_exception", "exception/std::get_terminate", "exception/std::get_unexpected", "exception/std::make_exception_ptr", "exception/std::rethrow_exception", "exception/std::set_terminate", "exception/std::set_unexpected", "exception/std::terminate", "exception/std::uncaught_exception", "exception/std::unexpected"]

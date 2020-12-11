@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /SUBSYSTEM (Specify Subsystem)"
 title: "/SUBSYSTEM (Specify Subsystem)"
 ms.date: "11/04/2016"
 f1_keywords: ["/subsystem", "VC.Project.VCLinkerTool.SubSystem", "VC.Project.VCLinkerTool.SubSystemVersion"]

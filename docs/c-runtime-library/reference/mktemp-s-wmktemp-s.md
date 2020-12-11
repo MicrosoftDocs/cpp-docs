@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mktemp_s, _wmktemp_s"
 title: "_mktemp_s, _wmktemp_s"
 ms.date: "4/2/2020"
 api_name: ["_mktemp_s", "_wmktemp_s", "_o__mktemp_s", "_o__wmktemp_s"]

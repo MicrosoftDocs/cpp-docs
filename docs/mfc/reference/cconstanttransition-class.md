@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CConstantTransition Class"
 title: "CConstantTransition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition::CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition::Create", "AFXANIMATIONCONTROLLER/CConstantTransition::m_duration"]

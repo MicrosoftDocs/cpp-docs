@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Sequence Points"
 title: "C Sequence Points"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sequence points"]

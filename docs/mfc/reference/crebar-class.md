@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CReBar Class"
 title: "CReBar Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CReBar", "AFXEXT/CReBar", "AFXEXT/CReBar::AddBar", "AFXEXT/CReBar::Create", "AFXEXT/CReBar::GetReBarCtrl"]

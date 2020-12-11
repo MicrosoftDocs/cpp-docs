@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: UCRT alphabetical function reference"
 title: "UCRT alphabetical function reference"
 ms.date: "01/31/2019"
 f1_keywords: ["vc.tables.runtime"]

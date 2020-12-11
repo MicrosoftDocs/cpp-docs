@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isblank, iswblank, _isblank_l, _iswblank_l"
 title: "isblank, iswblank, _isblank_l, _iswblank_l"
 ms.date: "4/2/2020"
 api_name: ["isblank", "_isblank_l", "iswblank", "_iswblank_l", "_o_isblank", "_o_iswblank"]

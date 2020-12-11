@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::iterator"
 title: "Container Class::iterator"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["iterator method"]

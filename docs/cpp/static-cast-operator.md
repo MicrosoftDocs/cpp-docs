@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: static_cast Operator"
 title: "static_cast Operator"
 ms.date: "11/04/2016"
 f1_keywords: ["static_cast_cpp"]

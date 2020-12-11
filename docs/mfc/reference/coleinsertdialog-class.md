@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleInsertDialog Class"
 title: "COleInsertDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleInsertDialog", "AFXODLGS/COleInsertDialog", "AFXODLGS/COleInsertDialog::COleInsertDialog", "AFXODLGS/COleInsertDialog::CreateItem", "AFXODLGS/COleInsertDialog::DoModal", "AFXODLGS/COleInsertDialog::GetClassID", "AFXODLGS/COleInsertDialog::GetDrawAspect", "AFXODLGS/COleInsertDialog::GetIconicMetafile", "AFXODLGS/COleInsertDialog::GetPathName", "AFXODLGS/COleInsertDialog::GetSelectionType", "AFXODLGS/COleInsertDialog::m_io"]

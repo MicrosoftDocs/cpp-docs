@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: location Class"
 title: "location Class"
 ms.date: "11/04/2016"
 f1_keywords: ["location", "CONCRT/concurrency::location", "CONCRT/concurrency::location::location", "CONCRT/concurrency::location::current", "CONCRT/concurrency::location::from_numa_node"]

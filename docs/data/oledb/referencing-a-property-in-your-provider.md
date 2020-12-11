@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Referencing a Property in Your Provider"
 title: "Referencing a Property in Your Provider"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE DB providers, properties", "references, to properties in providers", "referencing properties in providers"]

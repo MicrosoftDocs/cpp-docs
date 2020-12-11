@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE Server Classes"
 title: "OLE Server Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE server applications [MFC], server classes", "OLE server documents", "COM components, classes [MFC]", "component classes [MFC]"]

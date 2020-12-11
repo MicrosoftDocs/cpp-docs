@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN057: Localization of MFC Components"
 title: "TN057: Localization of MFC Components"
 ms.date: "06/28/2018"
 helpviewer_keywords: ["components [MFC], localizing", "TN057", "resources [MFC], localization", "localization [MFC], MFC resources", "localization [MFC], MFC components", "MFC DLLs [MFC], localizing", "DLLs [MFC], localizing MFC", "localization [MFC], resources"]

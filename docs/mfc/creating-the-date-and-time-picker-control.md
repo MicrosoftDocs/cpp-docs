@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating the Date and Time Picker Control"
 title: "Creating the Date and Time Picker Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DateTimePicker control [MFC], creating", "CDateTimeCtrl class [MFC], creating"]

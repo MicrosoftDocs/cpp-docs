@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: hash&lt;string_view&gt; Specialization"
 title: "hash&lt;string_view&gt; Specialization"
 ms.date: "04/19/2019"
 f1_keywords: ["xstring/basic_string_view::hash"]

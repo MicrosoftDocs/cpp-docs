@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Include Resources at Compile Time (C++)"
 title: "How to: Include Resources at Compile Time (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vs.resvw.resource.including", "vc.resvw.resource.including", "vc.editors.resourceincludes"]

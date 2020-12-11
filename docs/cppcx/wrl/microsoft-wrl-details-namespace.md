@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft::WRL::Details Namespace"
 title: "Microsoft::WRL::Details Namespace"
 ms.date: "11/04/2016"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /hotpatch (Create Hotpatchable Image)"
 title: "/hotpatch (Create Hotpatchable Image)"
 ms.date: "11/12/2018"
 f1_keywords: ["/hotpatch", "VC.Project.VCCLCompilerTool.CreateHotpatchableImage"]

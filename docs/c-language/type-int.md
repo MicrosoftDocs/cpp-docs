@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type int"
 title: "Type int"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["int data type", "type int", "portability [C++], type int", "signed integers"]

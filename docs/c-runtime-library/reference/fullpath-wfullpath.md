@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fullpath, _wfullpath"
 title: "_fullpath, _wfullpath"
 ms.date: "4/2/2020"
 api_name: ["_fullpath", "_wfullpath", "_o__fullpath", "_o__wfullpath"]

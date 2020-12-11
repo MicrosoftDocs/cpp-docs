@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Subscripting"
 title: "Subscripting"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["subscript operator [C++], overloaded", "arrays [C++], subscripting", "subscripting [C++]", "operators [C++], overloading", "operator overloading [C++], examples", "subscript operator"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: task_group Class"
 title: "task_group Class"
 ms.date: "07/20/2018"
 f1_keywords: ["task_group", "PPL/concurrency::task_group", "PPL/concurrency::task_group::task_group"]

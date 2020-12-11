@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing a Simple Consumer"
 title: "Implementing a Simple Consumer"
 ms.date: "08/19/2019"
 helpviewer_keywords: ["OLE DB consumers, implementing"]

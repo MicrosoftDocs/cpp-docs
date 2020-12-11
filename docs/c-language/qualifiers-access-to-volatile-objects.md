@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Qualifiers: Access to Volatile Objects"
 title: "Qualifiers: Access to Volatile Objects"
 ms.date: "11/04/2016"
 ms.assetid: b5644d4a-d93a-4f33-880a-76eb88d5ad7a

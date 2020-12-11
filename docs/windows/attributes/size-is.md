@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: size_is"
 title: "size_is (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.size_is"]

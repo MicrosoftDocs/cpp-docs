@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /RANGE"
 title: "/RANGE"
 ms.date: "11/04/2016"
 f1_keywords: ["/RANGE"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multiple Base Classes"
 title: "Multiple Base Classes"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["base classes [C++], multiple", "derived classes [C++], multiple bases", "multiple inheritance, class declaration", "multiple base classes [C++]"]

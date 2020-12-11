@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPictureHolder Class"
 title: "CPictureHolder Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPictureHolder", "AFXCTL/CPictureHolder", "AFXCTL/CPictureHolder::CPictureHolder", "AFXCTL/CPictureHolder::CreateEmpty", "AFXCTL/CPictureHolder::CreateFromBitmap", "AFXCTL/CPictureHolder::CreateFromIcon", "AFXCTL/CPictureHolder::CreateFromMetafile", "AFXCTL/CPictureHolder::GetDisplayString", "AFXCTL/CPictureHolder::GetPictureDispatch", "AFXCTL/CPictureHolder::GetType", "AFXCTL/CPictureHolder::Render", "AFXCTL/CPictureHolder::SetPictureDispatch", "AFXCTL/CPictureHolder::m_pPict"]

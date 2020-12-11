@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GetActivationFactory Function"
 title: "GetActivationFactory Function"
 ms.date: "11/04/2016"
 ms.topic: "reference"

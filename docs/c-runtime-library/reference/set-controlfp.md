@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _set_controlfp"
 title: "_set_controlfp"
 ms.date: "04/05/2018"
 api_name: ["_set_controlfp"]

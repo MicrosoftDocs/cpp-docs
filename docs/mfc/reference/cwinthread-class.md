@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWinThread Class"
 title: "CWinThread Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWinThread", "AFXWIN/CWinThread", "AFXWIN/CWinThread::CWinThread", "AFXWIN/CWinThread::CreateThread", "AFXWIN/CWinThread::ExitInstance", "AFXWIN/CWinThread::GetMainWnd", "AFXWIN/CWinThread::GetThreadPriority", "AFXWIN/CWinThread::InitInstance", "AFXWIN/CWinThread::IsIdleMessage", "AFXWIN/CWinThread::OnIdle", "AFXWIN/CWinThread::PostThreadMessage", "AFXWIN/CWinThread::PreTranslateMessage", "AFXWIN/CWinThread::ProcessMessageFilter", "AFXWIN/CWinThread::ProcessWndProcException", "AFXWIN/CWinThread::PumpMessage", "AFXWIN/CWinThread::ResumeThread", "AFXWIN/CWinThread::Run", "AFXWIN/CWinThread::SetThreadPriority", "AFXWIN/CWinThread::SuspendThread", "AFXWIN/CWinThread::m_bAutoDelete", "AFXWIN/CWinThread::m_hThread", "AFXWIN/CWinThread::m_nThreadID", "AFXWIN/CWinThread::m_pActiveWnd", "AFXWIN/CWinThread::m_pMainWnd"]

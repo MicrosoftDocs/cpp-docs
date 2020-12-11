@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SafeIntException Class"
 title: "SafeIntException Class"
 ms.date: "10/22/2018"
 ms.topic: "reference"

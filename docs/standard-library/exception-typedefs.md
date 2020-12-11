@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;exception&gt; typedefs"
 title: "&lt;exception&gt; typedefs"
 ms.date: "11/04/2016"
 f1_keywords: ["exception/std::exception_ptr", "exception/std::terminate_handler", "exception/std::unexpected_handler"]

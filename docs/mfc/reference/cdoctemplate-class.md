@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDocTemplate Class"
 title: "CDocTemplate Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDocTemplate", "AFXWIN/CDocTemplate", "AFXWIN/CDocTemplate::CDocTemplate", "AFXWIN/CDocTemplate::AddDocument", "AFXWIN/CDocTemplate::CloseAllDocuments", "AFXWIN/CDocTemplate::CreateNewDocument", "AFXWIN/CDocTemplate::CreateNewFrame", "AFXWIN/CDocTemplate::CreateOleFrame", "AFXWIN/CDocTemplate::CreatePreviewFrame", "AFXWIN/CDocTemplate::GetDocString", "AFXWIN/CDocTemplate::GetFirstDocPosition", "AFXWIN/CDocTemplate::GetNextDoc", "AFXWIN/CDocTemplate::InitialUpdateFrame", "AFXWIN/CDocTemplate::LoadTemplate", "AFXWIN/CDocTemplate::MatchDocType", "AFXWIN/CDocTemplate::OpenDocumentFile", "AFXWIN/CDocTemplate::RemoveDocument", "AFXWIN/CDocTemplate::SaveAllModified", "AFXWIN/CDocTemplate::SetContainerInfo", "AFXWIN/CDocTemplate::SetDefaultTitle", "AFXWIN/CDocTemplate::SetPreviewInfo", "AFXWIN/CDocTemplate::SetServerInfo"]

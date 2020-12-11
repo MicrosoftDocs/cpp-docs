@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handlers for WM_ Messages"
 title: "Handlers for WM_ Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["WM_ messages [MFC]"]

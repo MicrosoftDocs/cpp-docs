@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _getdcwd_nolock, _wgetdcwd_nolock"
 title: "_getdcwd_nolock, _wgetdcwd_nolock"
 ms.date: "11/04/2016"
 api_name: ["_wgetdcwd_nolock", "_getdcwd_nolock"]

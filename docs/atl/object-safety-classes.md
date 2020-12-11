@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object Safety Classes"
 title: "Object Safety Classes (ATL)| Microsoft Docs"
 ms.date: "11/04/2016"
 ms.topic: "reference"

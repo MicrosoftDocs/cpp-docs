@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Task Parallelism (Concurrency Runtime)"
 title: "Task Parallelism (Concurrency Runtime)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["structured task groups [Concurrency Runtime]", "structured tasks [Concurrency Runtime]", "task groups [Concurrency Runtime]", "task parallelism", "tasks [Concurrency Runtime]"]

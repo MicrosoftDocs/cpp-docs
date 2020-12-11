@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Active Template Library (ATL) Concepts"
 title: "Active Template Library (ATL) Concepts"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["ATL, about ATL"]

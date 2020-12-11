@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Namespaces Reference (C++/CX)"
 title: "Namespaces Reference (C++/CX)"
 ms.date: "01/22/2017"
 helpviewer_keywords: ["C++/CX namespaces"]

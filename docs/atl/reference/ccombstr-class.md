@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComBSTR Class"
 title: "CComBSTR Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComBSTR", "ATLBASE/ATL::CComBSTR", "ATLBASE/ATL::CComBSTR::CComBSTR", "ATLBASE/ATL::CComBSTR::Append", "ATLBASE/ATL::CComBSTR::AppendBSTR", "ATLBASE/ATL::CComBSTR::AppendBytes", "ATLBASE/ATL::CComBSTR::ArrayToBSTR", "ATLBASE/ATL::CComBSTR::AssignBSTR", "ATLBASE/ATL::CComBSTR::Attach", "ATLBASE/ATL::CComBSTR::BSTRToArray", "ATLBASE/ATL::CComBSTR::ByteLength", "ATLBASE/ATL::CComBSTR::Copy", "ATLBASE/ATL::CComBSTR::CopyTo", "ATLBASE/ATL::CComBSTR::Detach", "ATLBASE/ATL::CComBSTR::Empty", "ATLBASE/ATL::CComBSTR::Length", "ATLBASE/ATL::CComBSTR::LoadString", "ATLBASE/ATL::CComBSTR::ReadFromStream", "ATLBASE/ATL::CComBSTR::ToLower", "ATLBASE/ATL::CComBSTR::ToUpper", "ATLBASE/ATL::CComBSTR::WriteToStream", "ATLBASE/ATL::CComBSTR::m_str"]

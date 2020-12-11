@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _isctype, iswctype, _isctype_l, _iswctype_l"
 title: "_isctype, iswctype, _isctype_l, _iswctype_l"
 ms.date: "4/2/2020"
 api_name: ["_isctype_l", "iswctype", "_iswctype_l", "_isctype", "_o__isctype", "_o__isctype_l", "_o__iswctype_l", "_o_iswctype"]

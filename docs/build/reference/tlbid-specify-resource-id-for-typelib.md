@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /TLBID (Specify Resource ID for TypeLib)"
 title: "/TLBID (Specify Resource ID for TypeLib)"
 ms.date: "11/04/2016"
 f1_keywords: ["/tlbid", "VC.Project.VCLinkerTool.TypeLibraryResourceID"]

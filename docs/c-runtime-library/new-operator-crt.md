@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator new(CRT)"
 title: "operator new(CRT)"
 ms.date: "11/04/2016"
 api_location: ["msvcr110_clr0400.dll", "msvcr100.dll", "msvcr120.dll", "msvcr110.dll", "msvcr80.dll", "msvcr90.dll"]

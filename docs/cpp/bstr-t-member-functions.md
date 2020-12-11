@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _bstr_t Member Functions"
 title: "_bstr_t Member Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_bstr_t class [C++], member functions"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Window Destruction Sequence"
 title: "Window Destruction Sequence"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["destruction, windows", "destroying windows", "sequence [MFC], window destruction", "CWnd objects [MFC], destruction sequence", "sequence [MFC]", "windows [MFC], destroying"]

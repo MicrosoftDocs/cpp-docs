@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Visual Studio projects - C++"
 title: "Visual Studio Projects - C++"
 ms.date: "10/25/2019"
 helpviewer_keywords: ["ATL projects, creating", "Visual Studio C++ projects, creating", "projects [C++], creating", "Visual Studio C++ projects", "ATL projects"]

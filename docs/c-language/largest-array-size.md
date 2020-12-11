@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Largest Array Size"
 title: "Largest Array Size"
 ms.date: "11/04/2016"
 ms.assetid: 4c782cf6-73f3-40b0-b306-229d22da4ee1

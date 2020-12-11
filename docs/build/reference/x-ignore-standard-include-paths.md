@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `/X` (Ignore standard include paths)"
 title: "/X (Ignore standard include paths)"
 ms.date: 07/31/2020
 f1_keywords: ["/x", "VC.Project.VCCLCompilerTool.OVERWRITEStandardIncludePath", "VC.Project.VCCLWCECompilerTool.OVERWRITEStandardIncludePath", "VC.Project.VCCLCompilerTool.IgnoreStandardIncludePath"]

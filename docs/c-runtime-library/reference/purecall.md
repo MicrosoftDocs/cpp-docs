@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _purecall"
 title: "_purecall"
 ms.date: "4/2/2020"
 api_name: ["_purecall", "_o__purecall"]

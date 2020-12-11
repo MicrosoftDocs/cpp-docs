@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Terminating Newline Characters"
 title: "Terminating Newline Characters"
 ms.date: "11/04/2016"
 ms.assetid: ab145180-a098-41b5-8db0-2520272964ba

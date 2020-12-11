@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComObjectRootEx Class"
 title: "CComObjectRootEx Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComObjectRootEx", "ATLCOM/ATL::CComObjectRootEx", "ATLCOM/ATL::InternalAddRef", "ATLCOM/ATL::InternalRelease", "ATLCOM/ATL::Lock", "ATLCOM/ATL::Unlock", "ATLCOM/ATL::FinalConstruct", "ATLCOM/ATL::FinalRelease", "ATLCOM/ATL::OuterAddRef", "ATLCOM/ATL::OuterQueryInterface", "ATLCOM/ATL::OuterRelease", "ATLCOM/ATL::InternalQueryInterface", "ATLCOM/ATL::ObjectMain", "ATLCOM/ATL::m_dwRef", "ATLCOM/ATL::m_pOuterUnknown"]

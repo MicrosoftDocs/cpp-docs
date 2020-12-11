@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Writing a Termination Handler"
 title: "Writing a Termination Handler"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["structured exception handling [C++], termination handlers", "exceptions [C++], terminating", "termination handlers [C++], writing", "handlers [C++]", "handlers [C++], termination", "termination handlers", "exception handling [C++], termination handlers", "try-catch keyword [C++], termination handlers"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;istream&gt;"
 title: "&lt;istream&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["istream/std::<istream>", "<istream>", "std::<istream>"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CStringRefElementTraits Class"
 title: "CStringRefElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits::CompareElements", "ATLCOLL/ATL::CStringRefElementTraits::CompareElementsOrdered", "ATLCOLL/ATL::CStringRefElementTraits::Hash"]

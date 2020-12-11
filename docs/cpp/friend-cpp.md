@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: friend (C++)"
 title: "friend (C++)"
 ms.date: "07/15/2019"
 f1_keywords: ["friend_cpp"]

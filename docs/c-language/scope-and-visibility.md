@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Scope and Visibility"
 title: "Scope and Visibility"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["scope, levels", "visibility", "file scope [C++]"]

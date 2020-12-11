@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4179"
 title: "Compiler Warning (level 1) C4179"
 ms.date: "06/25/2018"
 f1_keywords: ["C4179"]

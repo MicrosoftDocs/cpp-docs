@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: type_index Class"
 title: "type_index Class"
 ms.date: "11/04/2016"
 f1_keywords: ["typeindex/std::type_index"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ToolBar Control Styles"
 title: "ToolBar Control Styles"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ToolBar control styles [MFC]"]

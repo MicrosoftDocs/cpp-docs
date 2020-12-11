@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Licensing an ActiveX Control"
 title: "MFC ActiveX Controls: Licensing an ActiveX Control"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["COleObjectFactory class [MFC], licensing controls", "MFC ActiveX controls [MFC], licensing", "VerifyLicenseKey method [MFC]", "VerifyUserLicense method [MFC]", "GetLicenseKey method [MFC]", "licensing ActiveX controls"]

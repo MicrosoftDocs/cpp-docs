@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tree Control Image Lists"
 title: "Tree Control Image Lists"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["images [MFC], lists in tree controls", "tree controls [MFC], image lists", "CTreeCtrl class [MFC], image lists"]

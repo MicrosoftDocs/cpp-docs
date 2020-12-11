@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __stdcall"
 title: "__stdcall"
 ms.date: "10/10/2018"
 f1_keywords: ["__stdcall_cpp", "__stdcall", "_stdcall"]

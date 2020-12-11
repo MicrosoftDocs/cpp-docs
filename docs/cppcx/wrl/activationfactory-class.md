@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActivationFactory Class"
 title: "ActivationFactory Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"

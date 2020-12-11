@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: agent Class"
 title: "agent Class"
 ms.date: "11/04/2016"
 f1_keywords: ["agent", "AGENTS/concurrency::agent", "AGENTS/concurrency::agent::agent", "AGENTS/concurrency::agent::cancel", "AGENTS/concurrency::agent::start", "AGENTS/concurrency::agent::status", "AGENTS/concurrency::agent::status_port", "AGENTS/concurrency::agent::wait", "AGENTS/concurrency::agent::wait_for_all", "AGENTS/concurrency::agent::wait_for_one", "AGENTS/concurrency::agent::done", "AGENTS/concurrency::agent::run"]

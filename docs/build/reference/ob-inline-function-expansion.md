@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Ob (Inline Function Expansion)"
 title: "/Ob (Inline Function Expansion)"
 ms.date: "08/08/2019"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.InlineFunctionExpansion", "VC.Project.VCCLCompilerTool.InlineFunctionExpansion", "/ob"]

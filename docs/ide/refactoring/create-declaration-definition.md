@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Create Declaration / Definition"
 title: "Create Declaration / Definition"
 ms.date: "10/19/2018"
 ms.assetid: 6b1cdcb2-765e-4b93-8cef-92b861f64eba

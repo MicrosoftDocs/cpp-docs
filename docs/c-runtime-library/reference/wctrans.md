@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: wctrans"
 title: "wctrans"
 ms.date: "11/04/2016"
 api_name: ["wctrans"]

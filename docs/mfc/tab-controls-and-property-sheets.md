@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tab Controls and Property Sheets"
 title: "Tab Controls and Property Sheets"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["property sheets, tab controls", "tab controls [MFC], and property sheets", "CTabCtrl class [MFC], and property sheets"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Pointers to Members"
 title: "Pointers to Members"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["declarations, pointers", "class members [C++], pointers to", "pointers, to members", "members [C++], pointers to", "pointers, declarations"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object Map Macros"
 title: "Object Map Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcom/ATL::DECLARE_OBJECT_DESCRIPTION", "atlcom/ATL::OBJECT_ENTRY_AUTO", "atlcom/ATL::OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO"]

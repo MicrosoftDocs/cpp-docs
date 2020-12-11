@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN060: The New Windows Common Controls"
 title: "TN060: The New Windows Common Controls"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.controls.common"]

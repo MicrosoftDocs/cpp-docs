@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Handling and Mapping"
 title: "Message Handling and Mapping"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, messages", "message handling [MFC]", "message maps [MFC]"]

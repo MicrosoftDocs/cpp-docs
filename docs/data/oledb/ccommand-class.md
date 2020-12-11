@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCommand Class"
 title: "CCommand Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::CCommand", "CCommand", "ATL.CCommand", "CCommand.Close", "CCommand::Close", "CCommand.Create", "CCommand::Create", "CCommand.CreateCommand", "CreateCommand", "CCommand::CreateCommand", "ATL::CCommand::GetNextResult", "CCommand::GetNextResult", "GetNextResult", "CCommand.GetNextResult", "ATL.CCommand.GetNextResult", "GetParameterInfo", "CCommand.GetParameterInfo", "CCommand::GetParameterInfo", "ATL.CCommand.Open", "ATL::CCommand::Open", "CCommand.Open", "CCommand::Open", "CCommand.Prepare", "CCommand::Prepare", "Prepare", "CCommand.ReleaseCommand", "ReleaseCommand", "CCommand::ReleaseCommand", "SetParameterInfo", "CCommand.SetParameterInfo", "CCommand::SetParameterInfo", "Unprepare", "CCommand.Unprepare", "CCommand::Unprepare"]

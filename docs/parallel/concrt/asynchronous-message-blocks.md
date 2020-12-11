@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Asynchronous Message Blocks"
 title: "Asynchronous Message Blocks"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["non-greedy join [Concurrency Runtime]", "asynchronous message blocks", "greedy join [Concurrency Runtime]"]

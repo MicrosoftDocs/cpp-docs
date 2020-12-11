@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AgileEventSource Class"
 title: "AgileEventSource Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"

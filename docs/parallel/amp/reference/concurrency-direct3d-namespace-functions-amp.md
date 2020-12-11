@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency::direct3d namespace functions (AMP)"
 title: "Concurrency::direct3d namespace functions (AMP)"
 ms.date: "08/31/2018"
 f1_keywords: ["amp/Concurrency::direct3d::abs", "amp/Concurrency::direct3d::countbits", "amp/Concurrency::direct3d::create_accelerator_view", "amp/Concurrency::direct3d::d3d_access_lock", "amp/Concurrency::direct3d::d3d_access_unlock", "amp/Concurrency::direct3d::firstbithigh", "amp/Concurrency::direct3d::get_buffer", "amp/Concurrency::direct3d::get_device", "amp/Concurrency::direct3d::imax", "amp/Concurrency::direct3d::is_timeout_disabled", "amp/Concurrency::direct3d::mad", "amp/Concurrency::direct3d::noise", "amp/Concurrency::direct3d::radians", "amp/Concurrency::direct3d::reversebits", "amp/Concurrency::direct3d::saturate", "amp/Concurrency::direct3d::smoothstep", "amp/Concurrency::direct3d::step", "amp/Concurrency::direct3d::umin"]

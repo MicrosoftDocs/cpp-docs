@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Preprocessor directives"
 title: "Preprocessor directives"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["directives, preprocessor", "preprocessor, directives"]

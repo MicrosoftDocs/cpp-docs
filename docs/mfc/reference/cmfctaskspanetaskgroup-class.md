@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCTasksPaneTaskGroup Class"
 title: "CMFCTasksPaneTaskGroup Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CMFCTasksPaneTaskGroup", "AFXTASKSPANE/CMFCTasksPaneTaskGroup", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::CMFCTasksPaneTaskGroup", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::SetACCData", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsBottom", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsCollapsed", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_bIsSpecial", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_lstTasks", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rect", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rectGroup", "AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_strName"]

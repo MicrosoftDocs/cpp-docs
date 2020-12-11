@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleDispatchException Class"
 title: "COleDispatchException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDispatchException", "AFXDISP/COleDispatchException", "AFXDISP/COleDispatchException::m_dwHelpContext", "AFXDISP/COleDispatchException::m_strDescription", "AFXDISP/COleDispatchException::m_strHelpFile", "AFXDISP/COleDispatchException::m_strSource", "AFXDISP/COleDispatchException::m_wCode"]

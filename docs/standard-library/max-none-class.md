@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: max_none Class"
 title: "max_none Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::max_none", "allocators/stdext::max_none::allocated", "allocators/stdext::max_none::deallocated", "allocators/stdext::max_none::full", "allocators/stdext::max_none::released", "allocators/stdext::max_none::saved"]

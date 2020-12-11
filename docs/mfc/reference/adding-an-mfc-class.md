@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an MFC Class"
 title: "Adding an MFC Class"
 ms.date: "09/06/2019"
 f1_keywords: ["vc.codewiz.classes.adding.mfc"]

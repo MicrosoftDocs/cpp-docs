@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: auto_ptr Class"
 title: "auto_ptr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::auto_ptr", "memory/std::auto_ptr::element_type", "memory/std::auto_ptr::get", "memory/std::auto_ptr::release", "memory/std::auto_ptr::reset"]

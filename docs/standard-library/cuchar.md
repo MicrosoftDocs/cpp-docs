@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cuchar&gt;"
 title: "&lt;cuchar&gt;"
 ms.date: "07/17/2019"
 f1_keywords: ["<cuchar>", "cuchar"]

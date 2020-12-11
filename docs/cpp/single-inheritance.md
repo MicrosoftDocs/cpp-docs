@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Single Inheritance"
 title: "Single Inheritance"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["single inheritance", "base classes [C++], indirect", "scope, scope resolution operator", "operators [C++], scope resolution", "scope resolution operator", "derived classes [C++], single base class", "inheritance, single"]

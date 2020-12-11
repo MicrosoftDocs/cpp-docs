@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMapPtrToPtr Class"
 title: "CMapPtrToPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMapPtrToPtr", "AFXCOLL/CMapPtrToPtr", "AFXCOLL/CMapPtrToPtr::CMapPtrToPtr", "AFXCOLL/CMapPtrToPtr::GetCount", "AFXCOLL/CMapPtrToPtr::GetHashTableSize", "AFXCOLL/CMapPtrToPtr::GetNextAssoc", "AFXCOLL/CMapPtrToPtr::GetSize", "AFXCOLL/CMapPtrToPtr::GetStartPosition", "AFXCOLL/CMapPtrToPtr::HashKey", "AFXCOLL/CMapPtrToPtr::InitHashTable", "AFXCOLL/CMapPtrToPtr::IsEmpty", "AFXCOLL/CMapPtrToPtr::Lookup", "AFXCOLL/CMapPtrToPtr::LookupKey", "AFXCOLL/CMapPtrToPtr::RemoveAll", "AFXCOLL/CMapPtrToPtr::RemoveKey", "AFXCOLL/CMapPtrToPtr::SetAt"]

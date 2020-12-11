@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ftime, _ftime32, _ftime64"
 title: "_ftime, _ftime32, _ftime64"
 ms.date: "4/2/2020"
 api_name: ["_ftime64", "_ftime", "_ftime32", "_o__ftime32", "_o__ftime64"]

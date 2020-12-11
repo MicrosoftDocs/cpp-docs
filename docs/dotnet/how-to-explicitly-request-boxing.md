@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Explicitly Request Boxing"
 title: "How to: Explicitly Request Boxing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["boxing, explicitly requesting"]

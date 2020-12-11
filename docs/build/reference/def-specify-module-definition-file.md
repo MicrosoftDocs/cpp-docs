@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DEF (Specify Module-Definition File)"
 title: "/DEF (Specify Module-Definition File)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.ModuleDefinitionFile", "/def"]

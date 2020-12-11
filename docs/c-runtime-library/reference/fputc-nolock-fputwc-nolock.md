@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fputc_nolock, _fputwc_nolock"
 title: "_fputc_nolock, _fputwc_nolock"
 ms.date: "4/2/2020"
 api_name: ["_fputwc_nolock", "_fputc_nolock", "_o__fputc_nolock", "_o__fputwc_nolock"]

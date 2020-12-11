@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ctype_base Class"
 title: "ctype_base Class"
 ms.date: "11/04/2016"
 f1_keywords: ["locale/std::ctype_base"]

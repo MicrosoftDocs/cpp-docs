@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ML Nonfatal Error A2069"
 title: "ML Nonfatal Error A2069"
 ms.date: "12/17/2019"
 ms.custom: "error-reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: detect_mismatch pragma"
 title: "detect_mismatch pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.detect_mismatch", "detect_mismatch_CPP"]

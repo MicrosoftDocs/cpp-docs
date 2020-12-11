@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Lightweight Tasks"
 title: "Lightweight Tasks"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["lightweight tasks"]

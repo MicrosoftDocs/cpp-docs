@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: allocator&lt;void&gt; Class"
 title: "allocator&lt;void&gt; Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::allocator<void>", "allocator<void>"]

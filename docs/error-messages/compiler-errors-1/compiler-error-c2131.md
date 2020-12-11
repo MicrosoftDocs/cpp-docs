@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2131"
 title: "Compiler Error C2131"
 ms.date: "02/28/2019"
 f1_keywords: ["C2131"]

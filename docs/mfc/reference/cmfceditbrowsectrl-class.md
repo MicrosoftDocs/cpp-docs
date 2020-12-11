@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCEditBrowseCtrl Class"
 title: "CMFCEditBrowseCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCEditBrowseCtrl", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFileBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::EnableFolderBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::GetMode", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnAfterUpdate", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnBrowse", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnChangeLayout", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnDrawBrowseButton", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnIllegalFileName", "AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::SetBrowseButtonImage"]

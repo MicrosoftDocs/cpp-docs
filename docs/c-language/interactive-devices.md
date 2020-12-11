@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interactive Devices"
 title: "Interactive Devices"
 ms.date: "11/04/2016"
 ms.assetid: a15ac95d-faf8-4fcf-80ab-0e346d1a5b5a

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Common Visual C++ 64-bit Migration Issues"
 title: "Common Visual C++ 64-bit Migration Issues"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["64-bit programming [C++], migration", "64-bit compiler [C++], migration", "porting 32-bit code to 64-bit code", "migration [C++], 64-bit code issues", "32-bit code porting [C++]", "64-bit applications [C++]", "64-bit compiler [C++], porting 32-bit code", "Win64 [C++]"]

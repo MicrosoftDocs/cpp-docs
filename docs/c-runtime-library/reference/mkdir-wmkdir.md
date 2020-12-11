@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mkdir, _wmkdir"
 title: "_mkdir, _wmkdir"
 ms.date: "4/2/2020"
 api_name: ["_wmkdir", "_mkdir", "_o__mkdir", "_o__wmkdir"]

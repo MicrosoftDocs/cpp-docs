@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Manipulating the Progress Control"
 title: "Manipulating the Progress Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CProgressCtrl class [MFC], working with", "progress controls [MFC], manipulating", "CProgressCtrl class [MFC], manipulating", "controlling progress controls [MFC]", "CProgressCtrl class [MFC], using"]

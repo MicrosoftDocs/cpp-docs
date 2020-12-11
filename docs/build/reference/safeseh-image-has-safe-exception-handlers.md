@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /SAFESEH (Image has Safe Exception Handlers)"
 title: "/SAFESEH (Image has Safe Exception Handlers)"
 ms.date: "11/04/2016"
 f1_keywords: ["/SAFESEH"]

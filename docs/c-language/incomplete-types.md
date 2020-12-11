@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Incomplete Types"
 title: "Incomplete Types"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["void keyword [C], incomplete", "types [C], incomplete", "incomplete types", "unions, incomplete", "arrays [C], incomplete types", "void keyword [C]", "structures, incomplete"]

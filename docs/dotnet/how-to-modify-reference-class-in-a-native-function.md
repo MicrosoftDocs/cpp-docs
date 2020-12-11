@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Modify Reference Class in a Native Function"
 title: "How to: Modify Reference Class in a Native Function"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

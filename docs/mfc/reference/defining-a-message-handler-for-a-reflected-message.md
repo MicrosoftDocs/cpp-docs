@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Defining a Message Handler for a Reflected Message"
 title: "Defining a Message Handler for a Reflected Message"
 ms.date: "09/07/2019"
 f1_keywords: ["vc.codewiz.defining.msg.msghandler"]

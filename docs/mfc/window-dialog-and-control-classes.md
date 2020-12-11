@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Window, Dialog, and Control Classes"
 title: "Window, Dialog, and Control Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["windows [MFC], dialog and control classes"]

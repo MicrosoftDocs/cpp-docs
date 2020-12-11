@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fundamental types (C++/CX)"
 title: "Fundamental types (C++/CX)"
 ms.date: "01/22/2017"
 ms.assetid: c9f82907-25f2-440b-91d6-afb8dbd46ea6

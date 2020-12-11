@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IUMSUnblockNotification Structure"
 title: "IUMSUnblockNotification Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["IUMSUnblockNotification", "CONCRTRM/concurrency::IUMSUnblockNotification", "CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetContext", "CONCRTRM/concurrency::IUMSUnblockNotification::IUMSUnblockNotification::GetNextUnblockNotification"]

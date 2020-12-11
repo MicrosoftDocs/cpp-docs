@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Checked Iterators"
 title: "Checked Iterators"
 ms.date: "11/04/2016"
 f1_keywords: ["_SECURE_SCL_THROWS"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Module Classes"
 title: "ATL Module Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CComModule class, what's changed", "ATL, module classes", "module classes"]

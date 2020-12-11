@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: messages_base Class"
 title: "messages_base Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocmes/std::messages_base"]

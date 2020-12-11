@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _AtlCreateWndData Structure"
 title: "_AtlCreateWndData Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::_AtlCreateWndData", "ATL._AtlCreateWndData", "_AtlCreateWndData"]

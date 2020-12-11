@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CNotSupportedException Class"
 title: "CNotSupportedException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CNotSupportedException", "AFX/CNotSupportedException", "AFX/CNotSupportedException::CNotSupportedException"]

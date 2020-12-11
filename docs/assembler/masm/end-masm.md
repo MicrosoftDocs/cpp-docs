@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: END"
 title: "END (MASM)"
 ms.date: "12/06/2019"
 f1_keywords: ["end"]

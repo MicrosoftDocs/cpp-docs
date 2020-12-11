@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DEPENDENTS"
 title: "/DEPENDENTS"
 ms.date: "07/15/2019"
 f1_keywords: ["/dependents"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Events in C++/CLI"
 title: "How to: Use Events in C++/CLI"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["events [C++], accessing in interfaces"]

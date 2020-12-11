@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COM Interface Entry Points"
 title: "COM Interface Entry Points"
 ms.date: "03/27/2019"
 helpviewer_keywords: ["entry points, COM interfaces", "state management, OLE/COM interfaces", "MFC COM, COM interface entry points", "OLE, interface entry points", "MFC, managing state data", "COM interfaces, entry points"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE Drag-and-Drop and Data Transfer Classes"
 title: "OLE Drag-and-Drop and Data Transfer Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ActiveX classes [MFC]", "OLE drag and drop [MFC], and data transfer classes", "drag and drop [MFC], classes", "data transfer [MFC], OLE", "data transfer classes [MFC]"]

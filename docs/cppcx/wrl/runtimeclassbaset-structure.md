@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: RuntimeClassBaseT Structure"
 title: "RuntimeClassBaseT Structure"
 ms.date: "10/03/2018"
 ms.topic: "reference"

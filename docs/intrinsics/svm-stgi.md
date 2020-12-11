@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __svm_stgi"
 title: "__svm_stgi"
 ms.date: "09/02/2019"
 f1_keywords: ["__svm_stgi"]

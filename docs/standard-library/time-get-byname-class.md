@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: time_get_byname Class"
 title: "time_get_byname Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xloctime/std::time_get_byname"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCPrintPreviewToolBar Class"
 title: "CMFCPrintPreviewToolBar Class"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CMFCPrintPreviewToolBar class [MFC]", "CMFCPrintPreviewToolBar class [MFC], destructor"]

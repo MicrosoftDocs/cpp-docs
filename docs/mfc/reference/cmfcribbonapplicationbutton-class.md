@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonApplicationButton Class"
 title: "CMFCRibbonApplicationButton Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::SetImage"]

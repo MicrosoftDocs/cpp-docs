@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _invalid_parameter, _invalid_parameter_noinfo, _invalid_parameter_noinfo_noreturn, _invoke_watson"
 title: "_invalid_parameter, _invalid_parameter_noinfo, _invalid_parameter_noinfo_noreturn, _invoke_watson"
 ms.date: "4/2/2020"
 api_name: ["_invalid_parameter", "_invalid_parameter_noinfo", "_invalid_parameter_noinfo_noreturn", "_invoke_watson", "_o__invalid_parameter_noinfo", "_o__invalid_parameter_noinfo_noreturn"]

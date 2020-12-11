@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: filesystem_error Class"
 title: "filesystem_error Class"
 ms.date: "09/10/2018"
 f1_keywords: ["filesystem/std::experimental::filesystem::filesystem_error"]

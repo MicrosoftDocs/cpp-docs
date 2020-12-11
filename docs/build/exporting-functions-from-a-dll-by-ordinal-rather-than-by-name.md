@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exporting Functions from a DLL by Ordinal Rather Than by Name"
 title: "Exporting Functions from a DLL by Ordinal Rather Than by Name"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exporting functions [C++], ordinal values", "ordinal exports [C++]", "exporting DLLs [C++], ordinal values", "NONAME attribute"]

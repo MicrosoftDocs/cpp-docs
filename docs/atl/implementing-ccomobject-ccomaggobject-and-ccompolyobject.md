@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing CComObject, CComAggObject, and CComPolyObject"
 title: "Implementing CComObject, CComAggObject, and CComPolyObject"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CComPolyObject class, implementing", "CreateInstance method", "CComAggObject class", "CComObject class, implementing"]

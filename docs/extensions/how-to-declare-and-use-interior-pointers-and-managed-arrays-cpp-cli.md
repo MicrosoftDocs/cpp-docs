@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Declare and Use Interior Pointers and Managed Arrays (C++/CLI)"
 title: "How to: Declare and Use Interior Pointers and Managed Arrays (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

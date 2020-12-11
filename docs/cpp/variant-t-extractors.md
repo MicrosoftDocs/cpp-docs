@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _variant_t Extractors"
 title: "_variant_t Extractors"
 ms.date: "11/04/2016"
 f1_keywords: ["_variant_t.operatordouble", "operatorlong", "_variant_t::operator_bstr_t", "operatordouble", "_variant_t.operatorCY", "operatorCY", "_variant_t::operatorCY", "_variant_t::operatordouble", "operatorfloat", "operatorBYTE", "_variant_t.operatorDECIMAL", "_variant_t::operatorlong", "operatorIDispatch", "_variant_t.operatorBYTE", "operatorDECIMAL", "_variant_t.operator_bstr_t", "_variant_t::operatorDECIMAL", "_variant_t.operatorIUnknown", "_variant_t.operatorlong", "_variant_t::operatorIDispatch", "_variant_t::operatorIUnknown", "operatorIUnknown", "_variant_t.operatorbool", "_variant_t::operatorBYTE", "_variant_t.operatorfloat", "operator_bstr_t", "_variant_t::operatorbool", "operatorshort", "_variant_t::operatorshort", "_variant_t::operatorfloat", "_variant_t.operatorIDispatch", "_variant_t.operatorshort"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ordered_message_processor Class"
 title: "ordered_message_processor Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ordered_message_processor", "AGENTS/concurrency::ordered_message_processor", "AGENTS/concurrency::ordered_message_processor::ordered_message_processor", "AGENTS/concurrency::ordered_message_processor::async_send", "AGENTS/concurrency::ordered_message_processor::initialize", "AGENTS/concurrency::ordered_message_processor::initialize_batched_processing", "AGENTS/concurrency::ordered_message_processor::sync_send", "AGENTS/concurrency::ordered_message_processor::wait", "AGENTS/concurrency::ordered_message_processor::process_incoming_message"]

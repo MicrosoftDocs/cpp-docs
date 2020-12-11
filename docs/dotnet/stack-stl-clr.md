@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: stack (STL/CLR)"
 title: "stack (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

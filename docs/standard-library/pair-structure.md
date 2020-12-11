@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: pair Structure"
 title: "pair Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["utility/std::pair"]

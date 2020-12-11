@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: scoped_d3d_access_lock Class"
 title: "scoped_d3d_access_lock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["scoped_d3d_access_lock", "AMPRT/scoped_d3d_access_lock", "AMPRT/concurrency::direct3d::scoped_d3d_access_lock::scoped_d3d_access_lock"]

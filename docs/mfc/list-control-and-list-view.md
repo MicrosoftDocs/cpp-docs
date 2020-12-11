@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: List Control and List View"
 title: "List Control and List View"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListView class [MFC], and CListCtrl", "views [MFC], list and list control", "CListCtrl class [MFC], and CListView", "list views [MFC]", "list controls [MFC], List view"]

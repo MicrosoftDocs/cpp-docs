@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CGopherFile Class"
 title: "CGopherFile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CGopherFile", "AFXINET/CGopherFile", "AFXINET/CGopherFile::CGopherFile"]

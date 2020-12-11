@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specifying an Inline File"
 title: "Specifying an Inline File"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, inline files", "inline files [C++], specifying NMAKE", "files [C++], inline"]

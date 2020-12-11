@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Security Best Practices for C++"
 title: "Security Best Practices for C++"
 ms.date: "05/08/2018"
 f1_keywords: ["securitybestpracticesVC"]

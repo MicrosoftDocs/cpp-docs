@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Multiple Result Sets from One Stored Procedure"
 title: "Using Multiple Result Sets from One Stored Procedure"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["stored procedures, returning result sets", "multiple result sets"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Key WRL APIs by Category"
 title: "Key WRL APIs by Category"
 ms.date: "11/04/2016"
 ms.topic: "reference"

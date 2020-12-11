@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bsearch_s"
 title: "bsearch_s"
 ms.date: "4/2/2020"
 api_name: ["bsearch_s", "_o_bsearch_s"]

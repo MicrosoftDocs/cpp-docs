@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSimpleDialog Class"
 title: "CSimpleDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSimpleDialog", "ATLWIN/ATL::CSimpleDialog", "ATLWIN/ATL::CSimpleDialog::DoModal"]

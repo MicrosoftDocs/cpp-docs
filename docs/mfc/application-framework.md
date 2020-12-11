@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application Framework"
 title: "Application Framework"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application framework [MFC], building applications", "applications [MFC]", "application framework [MFC]"]

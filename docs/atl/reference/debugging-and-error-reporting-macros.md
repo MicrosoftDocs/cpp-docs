@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debugging and Error Reporting Macros"
 title: "Debugging and Error Reporting Macros"
 ms.date: "05/06/2019"
 f1_keywords: ["atldef/ATL::_ATL_DEBUG_INTERFACES", "atldef/ATL::_ATL_DEBUG_QI", "atldef/ATL::ATLASSERT", "afx/ATL::ATLENSURE", "atltrace/ATL::ATLTRACENOTIMPL", "atltrace/ATL::ATLTRACE"]

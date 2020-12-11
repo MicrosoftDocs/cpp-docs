@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling Tool Tip Notifications"
 title: "Handling Tool Tip Notifications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["TOOLTIPTEXT structure [MFC]", "CToolBarCtrl class [MFC], handling notifications", "notifications [MFC], tool tips", "tool tips [MFC], notifications"]

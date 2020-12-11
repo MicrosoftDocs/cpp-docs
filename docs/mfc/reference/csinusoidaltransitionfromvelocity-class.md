@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSinusoidalTransitionFromVelocity Class"
 title: "CSinusoidalTransitionFromVelocity Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSinusoidalTransitionFromVelocity", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::CSinusoidalTransitionFromVelocity", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::Create", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_duration", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_period"]

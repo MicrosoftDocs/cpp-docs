@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: norm, normf, norml"
 title: "norm, normf, norml"
 ms.date: "04/05/2018"
 api_name: ["norm", "normf", "norml"]

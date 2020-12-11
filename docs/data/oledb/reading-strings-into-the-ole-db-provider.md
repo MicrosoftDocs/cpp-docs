@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reading Strings into the OLE DB Provider"
 title: "Reading Strings into the OLE DB Provider"
 ms.date: "10/13/2018"
 helpviewer_keywords: ["OLE DB providers, reading strings into"]

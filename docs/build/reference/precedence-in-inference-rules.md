@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Precedence in Inference Rules"
 title: "Precedence in Inference Rules"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["inference rules in NMAKE", "rules, inference", "precedence, inference rule"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Organize Project Output Files for Builds"
 title: "How to: Organize Project Output Files for Builds"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["C++, output files", "output files, organizing"]

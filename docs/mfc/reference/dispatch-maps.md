@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dispatch Maps"
 title: "Dispatch Maps"
 ms.date: "06/20/2018"
 helpviewer_keywords: ["dispatch maps [MFC], macros", "dispatch maps [MFC]", "dispatch map macros [MFC]"]

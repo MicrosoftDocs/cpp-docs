@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __CxxFrameHandler"
 title: "__CxxFrameHandler"
 ms.date: "11/04/2016"
 api_name: ["__CxxFrameHandler"]

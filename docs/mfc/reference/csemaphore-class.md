@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSemaphore Class"
 title: "CSemaphore Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSemaphore", "AFXMT/CSemaphore", "AFXMT/CSemaphore::CSemaphore"]

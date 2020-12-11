@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN001: Window Class Registration"
 title: "TN001: Window Class Registration"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.registration"]

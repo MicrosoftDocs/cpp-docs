@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /INCLUDE (Force Symbol References)"
 title: "/INCLUDE (Force Symbol References)"
 ms.date: "11/04/2016"
 f1_keywords: ["/include", "VC.Project.VCLinkerTool.ForceSymbolReferences"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Profile-Guided Optimization Warning PG1087"
 title: "Profile-Guided Optimization Warning PG1087"
 ms.date: "11/04/2016"
 f1_keywords: ["PG1087"]

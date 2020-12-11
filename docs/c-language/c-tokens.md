@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Tokens"
 title: "C Tokens"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tokens", "translation units"]

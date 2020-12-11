@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Constructing Input Stream Objects"
 title: "Constructing Input Stream Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["input stream objects"]

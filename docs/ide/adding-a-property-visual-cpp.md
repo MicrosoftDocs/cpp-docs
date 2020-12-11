@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add a property"
 title: "Add a property"
 ms.date: "11/09/2018"
 f1_keywords: ["vc.codewiz.prop.overview", "vc.codewiz.prop.idlattributes"]

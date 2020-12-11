@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Clipboard: Using the Windows Clipboard"
 title: "Clipboard: Using the Windows Clipboard"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Clipboard commands", "Cut/Copy and Paste command handler functions [MFC]", "handler functions, Cut/Copy and Paste commands", "Clipboard [MFC], commands", "commands [MFC], implementing Edit", "Clipboard commands [MFC], implementing", "Windows Clipboard [MFC]", "Clipboard [MFC], Windows Clipboard API"]

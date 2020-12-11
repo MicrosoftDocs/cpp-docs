@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isgraph, iswgraph, _isgraph_l, _iswgraph_l"
 title: "isgraph, iswgraph, _isgraph_l, _iswgraph_l"
 ms.date: "4/2/2020"
 api_name: ["isgraph", "iswgraph", "_iswgraph_l", "_isgraph_l", "_o_isgraph", "_o_iswgraph"]

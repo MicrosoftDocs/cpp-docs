@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create and Use shared_ptr instances"
 title: "How to: Create and use shared_ptr instances"
 ms.custom: "how-to"
 ms.date: "11/19/2019"

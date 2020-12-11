@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dynaset"
 title: "Dynaset"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC recordsets, dynasets", "ODBC cursor library [ODBC], dynasets", "keyset-driven cursors in dynasets", "cursors [ODBC], keyset-driven cursors in dynasets", "cursor library [ODBC], dynaset availability", "recordsets [C++], dynasets", "dynasets"]

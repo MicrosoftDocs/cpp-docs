@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __cpuid, __cpuidex"
 title: "__cpuid, __cpuidex"
 ms.date: "09/02/2019"
 f1_keywords: ["__cpuid_cpp", "__cpuid"]

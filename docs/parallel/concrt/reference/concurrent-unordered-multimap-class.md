@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: concurrent_unordered_multimap Class"
 title: "concurrent_unordered_multimap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["concurrent_unordered_multimap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::concurrent_unordered_multimap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::hash_function", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::insert", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::key_eq", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::swap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_multimap::unsafe_erase"]

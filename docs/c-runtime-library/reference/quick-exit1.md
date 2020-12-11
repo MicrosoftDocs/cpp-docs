@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: quick_exit"
 title: "quick_exit1"
 ms.date: "11/04/2016"
 api_name: ["quick_exit"]

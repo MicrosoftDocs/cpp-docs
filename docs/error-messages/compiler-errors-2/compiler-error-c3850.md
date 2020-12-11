@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3850"
 title: "Compiler Error C3850"
 ms.date: "09/05/2018"
 f1_keywords: ["C3850"]

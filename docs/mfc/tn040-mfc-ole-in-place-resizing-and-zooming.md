@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN040: MFC/OLE In-Place Resizing and Zooming"
 title: "TN040: MFC-OLE In-Place Resizing and Zooming"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["resizing in-place", "TN040", "zooming and in-place activation", "in-place activation, zooming and resizing"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /LINKERMEMBER"
 title: "/LINKERMEMBER"
 ms.date: "11/04/2016"
 f1_keywords: ["/linkermember"]

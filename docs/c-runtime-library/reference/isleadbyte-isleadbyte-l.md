@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isleadbyte, _isleadbyte_l"
 title: "isleadbyte, _isleadbyte_l"
 ms.date: "4/2/2020"
 api_name: ["_isleadbyte_l", "isleadbyte", "_o__isleadbyte_l", "_o_isleadbyte"]

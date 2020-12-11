@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internet and Networking Classes"
 title: "Internet and Networking Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.net"]

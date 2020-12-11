@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SemaphoreTraits Structure"
 title: "SemaphoreTraits Structure"
 ms.date: "09/27/2018"
 ms.topic: "reference"

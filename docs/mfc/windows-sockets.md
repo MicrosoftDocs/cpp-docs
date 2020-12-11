@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets"
 title: "Windows Sockets"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sockets [MFC], Windows sockets", "networks [MFC], Windows Sockets", "programming [MFC], network", "sockets [MFC]", "Windows Sockets [MFC]"]

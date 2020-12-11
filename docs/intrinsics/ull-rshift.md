@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __ull_rshift"
 title: "__ull_rshift"
 ms.date: "09/02/2019"
 f1_keywords: ["__ull_rshift"]

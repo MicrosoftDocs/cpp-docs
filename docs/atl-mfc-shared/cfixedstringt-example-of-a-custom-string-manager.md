@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFixedStringT: Example of a Custom String Manager"
 title: "CFixedStringT: Example of a Custom String Manager"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CFixedStringT class, using a custom string manager"]

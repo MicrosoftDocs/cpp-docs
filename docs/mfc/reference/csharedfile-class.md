@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSharedFile Class"
 title: "CSharedFile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSharedFile", "AFXADV/CSharedFile", "AFXADV/CSharedFile::CSharedFile", "AFXADV/CSharedFile::Detach", "AFXADV/CSharedFile::SetHandle"]

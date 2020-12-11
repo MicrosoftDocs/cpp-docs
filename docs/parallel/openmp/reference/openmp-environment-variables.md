@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OpenMP Environment Variables"
 title: "OpenMP Environment Variables"
 ms.date: "03/20/2019"
 f1_keywords: ["OpenMP environment variables", "OMP_DYNAMIC", "OMP_NESTED", "OMP_NUM_THREADS", "OMP_SCHEDULE"]

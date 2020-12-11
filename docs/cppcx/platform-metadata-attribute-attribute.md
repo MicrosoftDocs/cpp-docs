@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Metadata::Attribute Attribute"
 title: "Platform::Metadata::Attribute Attribute"
 ms.date: "12/30/2016"
 ms.topic: "reference"

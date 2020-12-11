@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Architecture (ODBC)"
 title: "Recordset: Architecture (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["recordsets, data members", "field data members, recordset architecture", "field data members", "m_nParams data member, recordsets", "recordsets, architecture", "parameter data members in recordsets", "m_nFields data member", "ODBC recordsets, architecture", "m_nParams data member", "m_nFields data member, recordsets"]

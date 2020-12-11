@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCBaseToolBar Class"
 title: "CMFCBaseToolBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCBaseToolBar", "AFXBASETOOLBAR/CMFCBaseToolBar", "AFXBASETOOLBAR/CMFCBaseToolBar::GetDockingMode", "AFXBASETOOLBAR/CMFCBaseToolBar::GetMinSize", "AFXBASETOOLBAR/CMFCBaseToolBar::OnAfterChangeParent"]

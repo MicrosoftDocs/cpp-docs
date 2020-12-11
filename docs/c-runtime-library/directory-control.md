@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Directory Control"
 title: "Directory Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [C++], directory", "directory control routines"]

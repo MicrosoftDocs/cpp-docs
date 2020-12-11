@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CIsin"
 title: "_CIsin"
 ms.date: "4/2/2020"
 api_name: ["_CIsin", "_o__CIsin"]

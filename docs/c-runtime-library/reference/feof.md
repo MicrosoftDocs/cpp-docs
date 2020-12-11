@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: feof"
 title: "feof"
 ms.date: "4/2/2020"
 api_name: ["feof", "_o_feof"]

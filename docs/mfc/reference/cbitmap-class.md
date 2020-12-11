@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CBitmap Class"
 title: "CBitmap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CBitmap", "AFXWIN/CBitmap", "AFXWIN/CBitmap::CBitmap", "AFXWIN/CBitmap::CreateBitmap", "AFXWIN/CBitmap::CreateBitmapIndirect", "AFXWIN/CBitmap::CreateCompatibleBitmap", "AFXWIN/CBitmap::CreateDiscardableBitmap", "AFXWIN/CBitmap::FromHandle", "AFXWIN/CBitmap::GetBitmap", "AFXWIN/CBitmap::GetBitmapBits", "AFXWIN/CBitmap::GetBitmapDimension", "AFXWIN/CBitmap::LoadBitmap", "AFXWIN/CBitmap::LoadMappedBitmap", "AFXWIN/CBitmap::LoadOEMBitmap", "AFXWIN/CBitmap::SetBitmapBits", "AFXWIN/CBitmap::SetBitmapDimension"]

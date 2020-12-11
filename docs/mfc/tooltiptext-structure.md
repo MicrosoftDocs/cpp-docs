@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TOOLTIPTEXT Structure"
 title: "TOOLTIPTEXT Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["TOOLTIPTEXT"]

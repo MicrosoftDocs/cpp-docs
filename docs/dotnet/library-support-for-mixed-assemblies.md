@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Library Support for Mixed Assemblies"
 title: "Library Support for Mixed Assemblies"
 ms.date: "09/18/2018"
 helpviewer_keywords: ["msvcm90[d].dll", "mixed assemblies [C++], library support", "msvcmrt[d].lib", "libraries [C++], mixed assemblies"]

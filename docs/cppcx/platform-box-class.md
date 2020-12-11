@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Box Class"
 title: "Platform::Box Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"

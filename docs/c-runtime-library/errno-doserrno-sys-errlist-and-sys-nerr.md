@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: errno, _doserrno, _sys_errlist, and _sys_nerr"
 title: "errno, _doserrno, _sys_errlist, and _sys_nerr"
 ms.date: "11/04/2016"
 api_name: ["_errno"]

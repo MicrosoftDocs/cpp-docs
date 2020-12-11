@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CColorDialog Class"
 title: "CColorDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CColorDialog", "AFXDLGS/CColorDialog", "AFXDLGS/CColorDialog::CColorDialog", "AFXDLGS/CColorDialog::DoModal", "AFXDLGS/CColorDialog::GetColor", "AFXDLGS/CColorDialog::GetSavedCustomColors", "AFXDLGS/CColorDialog::SetCurrentColor", "AFXDLGS/CColorDialog::OnColorOK", "AFXDLGS/CColorDialog::m_cc"]

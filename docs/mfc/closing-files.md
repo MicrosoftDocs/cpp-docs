@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Closing Files"
 title: "Closing Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, file operations", "files [MFC], closing"]

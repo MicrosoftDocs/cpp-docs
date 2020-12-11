@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions: Exceptions in Constructors"
 title: "Exceptions: Exceptions in Constructors"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["constructors [MFC], exceptions", "throwing exceptions [MFC], in constructors", "exceptions [MFC], in constructors"]

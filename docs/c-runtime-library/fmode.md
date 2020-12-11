@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fmode"
 title: "_fmode"
 ms.date: "11/04/2016"
 f1_keywords: ["fmode", "_fmode"]

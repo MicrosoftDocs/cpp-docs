@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: scheduler_ptr Structure"
 title: "scheduler_ptr Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["scheduler_ptr", "PPLINTERFACE/concurrency::scheduler_ptr", "PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::scheduler_ptr", "PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::get", "PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::operator bool"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isprint, iswprint, _isprint_l, _iswprint_l"
 title: "isprint, iswprint, _isprint_l, _iswprint_l"
 ms.date: "4/2/2020"
 api_name: ["iswprint", "isprint", "_isprint_l", "_iswprint_l", "_o_isprint", "_o_iswprint"]

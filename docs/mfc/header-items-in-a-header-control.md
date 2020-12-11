@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Header Items in a Header Control"
 title: "Header Items in a Header Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header controls [MFC], header items in", "header items in header controls [MFC]", "CHeaderCtrl class [MFC], header items in", "controls [MFC], header"]

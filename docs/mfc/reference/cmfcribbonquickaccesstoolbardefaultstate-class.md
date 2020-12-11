@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonQuickAccessToolBarDefaultState Class"
 title: "CMFCRibbonQuickAccessToolBarDefaultState Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonQuickAccessToolBarDefaultState", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::CMFCRibbonQuickAccessToolBarDefaultState", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::AddCommand", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::CopyFrom", "AFXRIBBONQUICKACCESSTOOLBAR/CMFCRibbonQuickAccessToolBarDefaultState::RemoveAll"]

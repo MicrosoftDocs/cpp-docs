@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zc:__cplusplus (Enable updated __cplusplus macro)"
 title: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
 ms.date: "05/16/2019"
 f1_keywords: ["/Zc:__cplusplus"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Month Calendar Control Examples"
 title: "Month Calendar Control Examples"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["month calendar controls [MFC], examples", "CMonthCalCtrl class [MFC], examples"]

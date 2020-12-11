@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Database Classes"
 title: "MFC Database Classes (ODBC and DAO)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC, ODBC classes", "MFC, database applications"]

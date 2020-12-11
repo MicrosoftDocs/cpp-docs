@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Warning LNK4217"
 title: "Linker Tools Warning LNK4217"
 ms.date: "07/23/2019"
 f1_keywords: ["LNK4217"]

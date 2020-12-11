@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _com_ptr_t Operators"
 title: "_com_ptr_t Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_com_ptr_t class [C++], operators"]

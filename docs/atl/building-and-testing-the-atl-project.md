@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building and Testing the ATL Project"
 title: "Building and Testing the ATL Project"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["composite controls, building and testing the project", "composite controls, containers for"]

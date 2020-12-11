@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MASM Operators reference"
 title: "MASM Operators reference"
 ms.date: 07/15/2020
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), operators reference", "operators [MASM]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Profile-guided optimizations"
 title: "Profile-guided optimizations"
 ms.date: "04/23/2019"
 helpviewer_keywords: ["profile-guided optimizations", "optimization, profile-guided [C++]"]

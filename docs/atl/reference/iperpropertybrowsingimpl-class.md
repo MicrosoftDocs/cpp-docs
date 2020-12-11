@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IPerPropertyBrowsingImpl Class"
 title: "IPerPropertyBrowsingImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IPerPropertyBrowsingImpl", "ATLCTL/ATL::IPerPropertyBrowsingImpl", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetDisplayString", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedStrings", "ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedValue", "ATLCTL/ATL::IPerPropertyBrowsingImpl::MapPropertyToPage"]

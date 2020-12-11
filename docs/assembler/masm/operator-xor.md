@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator XOR"
 title: "operator XOR"
 ms.date: "12/17/2019"
 f1_keywords: ["operator XOR", "Xor"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Initialization"
 title: "Initialization"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["initializers, variable", "types [C], initializing", "initializing variables", "initializers"]

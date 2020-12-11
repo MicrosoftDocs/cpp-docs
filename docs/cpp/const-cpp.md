@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: const (C++)"
 title: "const (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["const_cpp"]

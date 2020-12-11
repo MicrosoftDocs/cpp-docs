@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMutex Class"
 title: "CMutex Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMutex", "AFXMT/CMutex", "AFXMT/CMutex::CMutex"]

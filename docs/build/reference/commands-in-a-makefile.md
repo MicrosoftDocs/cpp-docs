@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Commands in a Makefile"
 title: "Commands in a Makefile"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["commands, makefiles"]

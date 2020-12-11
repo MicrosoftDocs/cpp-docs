@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: One-Stage and Two-Stage Construction of Objects"
 title: "One-Stage and Two-Stage Construction of Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [MFC], creating graphic objects", "object creation [MFC], graphic objects", "objects [MFC], graphic objects", "one-stage and two-stage construction of objects [MFC]"]

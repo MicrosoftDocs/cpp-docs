@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Objects and Data Sources (OLE)"
 title: "Data Objects and Data Sources (OLE)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data objects [MFC], definition", "data transfer [MFC]", "OLE [MFC], data transfer", "data sources [MFC], definition", "data transfer [MFC], definition", "OLE [MFC], data objects", "OLE [MFC], data sources"]

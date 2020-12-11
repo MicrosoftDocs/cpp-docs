@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CNoMultipleResults Class"
 title: "CNoMultipleResults Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CNoMultipleResults", "ATL.CNoMultipleResults", "ATL::CNoMultipleResults"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __vmx_vmresume"
 title: "__vmx_vmresume"
 ms.date: "09/02/2019"
 f1_keywords: ["__vmx_vmresume"]

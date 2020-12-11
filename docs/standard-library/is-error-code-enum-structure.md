@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_error_code_enum Structure"
 title: "is_error_code_enum Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["future/std::is_error_code_enum"]

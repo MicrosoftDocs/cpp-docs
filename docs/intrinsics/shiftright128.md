@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __shiftright128"
 title: "__shiftright128"
 ms.date: "09/02/2019"
 f1_keywords: ["__shiftright128"]

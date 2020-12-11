@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /POGOSAFEMODE (Run PGO in thread safe mode)"
 title: "/POGOSAFEMODE (Run PGO in thread safe mode)"
 ms.date: "03/14/2018"
 f1_keywords: ["POGOSAFEMODE"]

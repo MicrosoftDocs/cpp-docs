@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: raw_property_prefixes import attribute"
 title: "raw_property_prefixes import attribute"
 ms.date: "08/29/2019"
 f1_keywords: ["raw_property_prefixes"]

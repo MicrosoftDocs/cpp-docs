@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Schedule Groups to Influence Order of Execution"
 title: "How to: Use Schedule Groups to Influence Order of Execution"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["schedule groups, using [Concurrency Runtime]", "using schedule groups [Concurrency Runtime]"]

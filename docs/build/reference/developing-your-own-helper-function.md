@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Developing Your Own Helper Function"
 title: "Developing Your Own Helper Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["helper functions"]

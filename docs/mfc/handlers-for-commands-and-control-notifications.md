@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handlers for Commands and Control Notifications"
 title: "Handlers for Commands and Control Notifications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["commands [MFC], handlers for", "functions [MFC], handler", "handlers [MFC]", "controls [MFC], notifications", "handlers [MFC], control notification [MFC]", "notifications [MFC], handlers for control", "handlers [MFC], command"]

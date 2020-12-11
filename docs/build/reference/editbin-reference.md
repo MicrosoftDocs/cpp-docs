@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EDITBIN Reference"
 title: "EDITBIN Reference"
 ms.date: "11/04/2016"
 f1_keywords: ["editbin"]

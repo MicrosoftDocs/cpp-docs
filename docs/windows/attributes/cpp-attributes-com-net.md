@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ Attributes for COM and .NET"
 title: "C++ Attributes for COM and .NET"
 ms.custom: "index-page"
 ms.date: "11/19/2018"

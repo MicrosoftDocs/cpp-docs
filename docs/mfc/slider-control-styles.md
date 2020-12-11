@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Slider Control Styles"
 title: "Slider Control Styles"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["slider controls [MFC], styles", "CSliderCtrl class [MFC], styles", "styles [MFC], CSliderCtrl", "styles [MFC], slider controls"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /FR, /Fr (Create .Sbr File)"
 title: "/FR, /Fr (Create .Sbr File)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.BrowseInformation", "VC.Project.VCCLCompilerTool.BrowseInformation", "/fr", "VC.Project.VCCLCompilerTool.BrowseInformationFile", "VC.Project.VCCLWCECompilerTool.BrowseInformationFile"]

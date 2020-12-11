@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Consumer Templates (C++)"
 title: "OLE DB Consumer Templates (C++)"
 ms.date: "10/22/2018"
 helpviewer_keywords: ["databases [C++], OLE DB templates", "OLE DB consumers [C++], data access", "OLE DB consumer templates [C++]", "databases [C++], consumers"]

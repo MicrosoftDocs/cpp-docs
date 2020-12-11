@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Tree Controls"
 title: "Using Tree Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CTreeCtrl class [MFC], using", "tree controls [MFC], about tree controls"]

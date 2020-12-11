@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ built-in operators, precedence, and associativity"
 title: "C++ built-in operators, precedence, and associativity"
 ms.date: 07/23/2020
 helpviewer_keywords: ["operators (C++), hierarchy", "operator precedence", "precedence, operators", "operators (C++), associativity", "multiple operators [C++]", "associativity of operators [C++]", "operators [C++], precedence", "evaluation order", "hierarchy, operator"]

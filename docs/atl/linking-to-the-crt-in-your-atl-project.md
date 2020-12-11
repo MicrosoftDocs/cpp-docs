@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linking to the CRT in Your ATL Project"
 title: "Linking to the CRT in Your ATL Project"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CRT, linking with ATL", "WinMainCRTStartup method", "DllMainCRTStartup method", "wWinMainCRTStartup method", "ATL, C Run-Time library (CRT)"]

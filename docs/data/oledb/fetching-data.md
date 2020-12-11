@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fetching Data"
 title: "Fetching Data"
 ms.date: "10/19/2018"
 helpviewer_keywords: ["data [C++], fetching", "rowsets [C++], fetching", "fetching", "OLE DB consumer templates [C++], fetching data"]

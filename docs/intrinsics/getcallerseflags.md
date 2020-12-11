@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __getcallerseflags"
 title: "__getcallerseflags"
 ms.date: "09/02/2019"
 f1_keywords: ["_getcallerseflags", "_getcallerseflags_cpp"]

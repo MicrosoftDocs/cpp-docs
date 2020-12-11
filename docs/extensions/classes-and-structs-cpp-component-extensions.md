@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ref class and ref struct  (C++/CLI and C++/CX)"
 title: "ref class and ref struct (C++/CLI and C++/CX)"
 ms.date: "05/30/2019"
 ms.topic: "reference"

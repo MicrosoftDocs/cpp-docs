@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Isolation of the MFC Common Controls Library"
 title: "Isolation of the MFC Common Controls Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, Common Controls library"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2164"
 title: "Compiler Error C2164"
 ms.date: "11/04/2016"
 f1_keywords: ["C2164"]

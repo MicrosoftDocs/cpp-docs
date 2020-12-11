@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Runtime and Managed Templates (C++/CLI and C++/CX)"
 title: "Windows Runtime and Managed Templates (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

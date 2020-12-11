@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN066: Common MFC 3.x to 4.0 Porting Issues"
 title: "TN066: Common MFC 3.x to 4.0 Porting Issues"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["porting MFC, 3.x to 4.0", "TN066 [MFC]", "porting MFC"]

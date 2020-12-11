@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Creating an Image-Processing Network"
 title: "Walkthrough: Creating an Image-Processing Network"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["image-processing networks, creating [Concurrency Runtime]", "creating image-processing networks [Concurrency Runtime]"]

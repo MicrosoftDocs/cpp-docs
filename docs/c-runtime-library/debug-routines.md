@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debug routines"
 title: "Debug routines"
 ms.date: "04/10/2018"
 f1_keywords: ["c.debug"]

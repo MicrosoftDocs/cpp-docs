@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inheritance  (C++)"
 title: "Inheritance  (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["derived classes [C++]", "derived classes [C++], about derived classes", "classes [C++], derived"]

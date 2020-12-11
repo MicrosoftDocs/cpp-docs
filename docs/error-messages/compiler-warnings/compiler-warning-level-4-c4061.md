@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4061"
 title: "Compiler Warning (level 4) C4061"
 ms.date: "04/05/2019"
 f1_keywords: ["C4061"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Intrinsics available on all architectures"
 title: "Intrinsics available on all architectures"
 ms.date: "09/02/2019"
 helpviewer_keywords: ["cl.exe compiler, intrinsics"]

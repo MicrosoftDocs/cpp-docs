@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Desktop Applications (Visual C++)"
 title: "Desktop Applications (Visual C++)"
 ms.date: "07/28/2019"
 ms.assetid: a020b534-293c-44e2-aa48-516c43ddeb8f

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multithreading: When to Use the MFC Synchronization Classes"
 title: "Multithreading: When to Use the MFC Synchronization Classes"
 ms.date: "08/27/2018"
 helpviewer_keywords: ["threading [MFC], synchronization classes", "resources [C++], multithreading", "synchronization classes [C++]", "synchronization [C++], multithreading", "controlled resource access [C++]", "synchronization access classes [C++]", "threading [C++], synchronization", "multithreading [C++], synchronization classes"]

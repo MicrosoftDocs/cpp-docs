@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: support_error_info"
 title: "support_error_info (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.support_error_info"]

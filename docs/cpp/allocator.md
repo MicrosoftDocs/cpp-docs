@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `allocator`"
 title: "allocator"
 ms.date: "03/21/2019"
 f1_keywords: ["allocator_cpp"]
