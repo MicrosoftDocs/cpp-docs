@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /RELOCATIONS"
 title: "/RELOCATIONS"
 ms.date: "11/04/2016"
 f1_keywords: ["/relocations"]

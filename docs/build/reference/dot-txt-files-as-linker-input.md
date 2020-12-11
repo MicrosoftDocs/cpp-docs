@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .Txt Files as Linker Input"
 title: ".Txt Files as Linker Input"
 ms.date: "11/04/2016"
 helpviewer_keywords: [".txt files, linker input", "text files, linker input", "txt files, linker input"]

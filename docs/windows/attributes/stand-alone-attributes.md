@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Stand-Alone Attributes"
 title: "Stand-Alone Attributes (C++ COM)"
 ms.date: "10/02/2018"
 helpviewer_keywords: ["standalone attributes", "attributes [C++/CLI], standalone"]

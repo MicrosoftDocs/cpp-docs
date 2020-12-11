@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Menu Commands (C++)"
 title: "Menu Commands (C++)"
 ms.date: "02/15/2019"
 helpviewer_keywords: ["menu items, properties", "keyboard shortcuts [C++], menu association", "commands [C++], associating menu commands with accelerator keys", "menu commands [C++], associating with keyboard shortcuts", "status bars [C++], associating menu items", "menus [C++], status bar text", "access keys [C++], checking", "menus [C++], shortcut keys", "keyboard shortcuts [C++], command assignments", "access keys [C++], assigning", "mnemonics [C++], adding to menus", "keyboard shortcuts [C++], uniqueness checking", "mnemonics [C++], uniqueness checking", "Check Mnemonics command"]

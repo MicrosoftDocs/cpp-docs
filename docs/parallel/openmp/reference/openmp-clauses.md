@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OpenMP Clauses"
 title: "OpenMP Clauses"
 ms.date: "03/20/2019"
 f1_keywords: ["OpenMP clauses", "copyin", "copyprivate", "default", "firstprivate", "lastprivate", "nowait", "num_threads", "ordered", "private", "reduction", "schedule", "shared"]

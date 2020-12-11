@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _kbhit"
 title: "_kbhit"
 ms.date: "4/2/2020"
 api_name: ["_kbhit", "_o__kbhit"]

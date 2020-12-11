@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions: Throwing Exceptions from Your Own Functions"
 title: "Exceptions: Throwing Exceptions from Your Own Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["throwing exceptions [MFC], from functions", "functions [MFC], throwing exceptions", "exceptions [MFC], throwing"]

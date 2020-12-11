@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Collections (C++/CX)"
 title: "Collections (C++/CX)"
 ms.date: "11/19/2018"
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c

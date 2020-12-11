@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAtlServiceModuleT::Handler Function"
 title: "CAtlServiceModuleT::Handler Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Handler method"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _InterlockedOr intrinsic functions"
 title: "_InterlockedOr intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedOr8_nf", "_InterlockedOr_HLEAcquire", "_InterlockedOr16_nf", "_InterlockedOr64", "_InterlockedOr8_np", "_InterlockedOr64_cpp", "_InterlockedOr8_acq", "_InterlockedOr_nf", "_InterlockedOr64_acq", "_InterlockedOr_np", "_InterlockedOr8", "_InterlockedOr", "_InterlockedOr64_np", "_InterlockedOr_acq", "_InterlockedOr64_HLERelease", "_InterlockedOr16_np", "_InterlockedOr_cpp", "_InterlockedOr8_rel", "_InterlockedOr64_rel", "_InterlockedOr16_acq", "_InterlockedOr_rel", "_InterlockedOr16_rel", "_InterlockedOr_HLERelease", "_InterlockedOr64_HLEAcquire", "_InterlockedOr16", "_InterlockedOr64_nf"]

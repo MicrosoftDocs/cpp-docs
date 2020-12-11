@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Hierarchy Chart Categories"
 title: "Hierarchy Chart Categories"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["MFC, hierarchy"]

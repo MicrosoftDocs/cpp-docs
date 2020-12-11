@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonCustomizeDialog Class"
 title: "CMFCRibbonCustomizeDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonCustomizeDialog", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog"]

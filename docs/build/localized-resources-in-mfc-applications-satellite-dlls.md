@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Localized Resources in MFC Applications: Satellite DLLs"
 title: "Localized Resources in MFC Applications: Satellite DLLs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["multiple language support [C++]", "localization [C++], MFC resources", "localized resources [C++]", "MFC DLLs [C++], localizing", "DLLs [C++], localizing MFC", "resources [MFC], localizing", "resource-only DLLs [C++]", "resource-only DLLs [C++], MFC applications", "satellite DLLs [C++]"]

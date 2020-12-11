@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler COM Support"
 title: "Compiler COM Support"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["cl.exe compiler, COM support", "COM, compiler support"]

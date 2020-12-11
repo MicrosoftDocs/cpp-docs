@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Conversions from other types"
 title: "Conversions from Other Types"
 ms.date: "01/29/2018"
 helpviewer_keywords: ["values, converting", "type casts, conversion"]

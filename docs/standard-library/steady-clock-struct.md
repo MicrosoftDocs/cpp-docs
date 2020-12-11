@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: steady_clock struct"
 title: "steady_clock struct"
 ms.date: "05/22/2018"
 f1_keywords: ["chrono/std::chrono::steady_clock"]

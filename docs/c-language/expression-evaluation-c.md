@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expression Evaluation (C)"
 title: "Expression Evaluation (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["expression evaluation", "expressions [C++], evaluating"]

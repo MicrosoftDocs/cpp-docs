@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Significant Characters Without External Linkage"
 title: "Significant Characters Without External Linkage"
 ms.date: "11/04/2016"
 ms.assetid: 396cfb36-391a-4aa9-885d-20198d4dc2ec

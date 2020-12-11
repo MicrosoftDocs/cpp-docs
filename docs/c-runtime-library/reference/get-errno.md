@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_errno"
 title: "_get_errno"
 ms.date: "4/2/2020"
 api_name: ["_get_errno", "_o__get_errno"]

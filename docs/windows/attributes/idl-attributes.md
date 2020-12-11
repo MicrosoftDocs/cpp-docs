@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDL Attributes"
 title: "IDL Attributes (C++ COM)"
 ms.date: "10/02/2018"
 helpviewer_keywords: ["attributes [C++/CLI], reference topics", "IDL attributes", ".idl files [C++], attributes", "IDL files [C++], attributes", ".idl files [C++]"]

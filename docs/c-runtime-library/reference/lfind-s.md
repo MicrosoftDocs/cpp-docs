@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _lfind_s"
 title: "_lfind_s"
 ms.date: "4/2/2020"
 api_name: ["_lfind_s", "_o__lfind_s"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: STL/CLR Library Reference"
 title: "STL/CLR Library Reference"
 ms.date: 09/18/2018
 ms.topic: "reference"

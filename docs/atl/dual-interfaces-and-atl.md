@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dual Interfaces and ATL"
 title: "Dual Interfaces and ATL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["COM, and ATL", "ATL, dual interfaces", "dual interfaces, about dual interfaces"]

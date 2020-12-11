@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Storage of Arrays"
 title: "Storage of Arrays"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["storage, arrays", "arrays [C], storage", "arrays [C]", "storing arrays"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: static_assert"
 title: "static_assert"
 ms.date: "07/29/2019"
 f1_keywords: ["static_assert_cpp"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a Rebar Control"
 title: "Creating a Rebar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rebar controls [MFC], creating", "CReBarCtrl class [MFC], creating"]

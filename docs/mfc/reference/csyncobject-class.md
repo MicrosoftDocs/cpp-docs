@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSyncObject Class"
 title: "CSyncObject Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSyncObject", "AFXMT/CSyncObject", "AFXMT/CSyncObject::CSyncObject", "AFXMT/CSyncObject::Lock", "AFXMT/CSyncObject::Unlock", "AFXMT/CSyncObject::m_hObject"]

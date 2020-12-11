@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Link an executable to a DLL"
 title: "Link an executable to a DLL"
 ms.date: "08/22/2019"
 helpviewer_keywords: ["run time [C++], linking", "dynamic load linking [C++]", "linking [C++], DLLs", "DLLs [C++], linking", "implicit linking [C++]", "explicit linking [C++]", "executable files [C++], linking to DLLs", "loading DLLs [C++]"]

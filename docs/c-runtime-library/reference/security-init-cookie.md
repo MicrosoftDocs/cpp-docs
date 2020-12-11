@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __security_init_cookie"
 title: "__security_init_cookie"
 ms.date: "11/04/2016"
 api_name: ["__security_init_cookie"]

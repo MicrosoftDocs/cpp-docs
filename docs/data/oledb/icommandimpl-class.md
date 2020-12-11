@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICommandImpl Class"
 title: "ICommandImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ICommandImpl", "ICommandImpl::Cancel", "Cancel", "ICommandImpl.Cancel", "ICommandImpl::CancelExecution", "ATL::ICommandImpl::CancelExecution", "ATL.ICommandImpl.CancelExecution", "CancelExecution", "ICommandImpl.CancelExecution", "ICommandImpl::CreateRowset", "ICommandImpl.CreateRowset", "CreateRowset", "ICommandImpl::Execute", "ICommandImpl.Execute", "ICommandImpl::GetDBSession", "GetDBSession", "ICommandImpl.GetDBSession", "ATL.ICommandImpl.ICommandImpl", "ATL::ICommandImpl::ICommandImpl", "ICommandImpl::ICommandImpl", "ICommandImpl.ICommandImpl", "ICommandImpl::m_bCancel", "ICommandImpl.m_bCancel", "m_bCancel", "ATL::ICommandImpl::m_bCancel", "ATL.ICommandImpl.m_bCancel", "ICommandImpl::m_bCancelWhenExecuting", "ICommandImpl.m_bCancelWhenExecuting", "ATL::ICommandImpl::m_bCancelWhenExecuting", "m_bCancelWhenExecuting", "ATL.ICommandImpl.m_bCancelWhenExecuting", "ICommandImpl.m_bIsExecuting", "ATL::ICommandImpl::m_bIsExecuting", "m_bIsExecuting", "ATL.ICommandImpl.m_bIsExecuting", "ICommandImpl::m_bIsExecuting"]

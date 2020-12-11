@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Mixed (native and managed) assemblies"
 title: "Mixed (Native and Managed) Assemblies"
 ms.date: "09/18/2018"
 helpviewer_keywords: ["interop [C++], mixed assemblies", "/clr compiler option [C++], mixed assemblies", "managed code [C++], interoperability", "interoperability [C++], mixed assemblies", "mixed DLL loading [C++]", "mixed assemblies [C++], about mixed assemblies", "assemblies [C++], mixed", "mixed assemblies [C++]", "native code [C++], .NET interoperatibility"]

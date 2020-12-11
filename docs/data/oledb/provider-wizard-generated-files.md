@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Provider Wizard-Generated Files"
 title: "Provider Wizard-Generated Files"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB providers, wizard-generated files"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_dstbias"
 title: "_get_dstbias"
 ms.date: "4/2/2020"
 api_name: ["_get_dstbias", "__dstbias", "_o___dstbias", "_o__get_dstbias"]

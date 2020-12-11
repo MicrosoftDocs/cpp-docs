@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fdopen"
 title: "fdopen"
 ms.date: "12/16/2019"
 api_name: ["fdopen"]

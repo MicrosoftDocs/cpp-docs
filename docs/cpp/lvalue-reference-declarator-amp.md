@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Lvalue Reference Declarator: &amp;"
 title: "Lvalue Reference Declarator: &amp;"
 ms.date: "11/04/2016"
 f1_keywords: ["&"]

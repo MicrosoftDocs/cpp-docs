@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sample Container Class"
 title: "Sample Container Class"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["container classes [C++]"]

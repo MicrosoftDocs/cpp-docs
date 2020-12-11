@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CStringData Class"
 title: "CStringData Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStringData", "ATLSIMPSTR/ATL::CStringData", "ATLSIMPSTR/ATL::AddRef", "ATLSIMPSTR/ATL::data", "ATLSIMPSTR/ATL::IsLocked", "ATLSIMPSTR/ATL::IsShared", "ATLSIMPSTR/ATL::Lock", "ATLSIMPSTR/ATL::Release", "ATLSIMPSTR/ATL::Unlock", "ATLSIMPSTR/ATL::nAllocLength", "ATLSIMPSTR/ATL::nDataLength", "ATLSIMPSTR/ATL::nRefs", "ATLSIMPSTR/ATL::pStringMgr"]

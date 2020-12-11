@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;complex&gt; operators"
 title: "&lt;complex&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["xcomplex/std::operator!=", "xcomplex/std::operator&gt;&gt;", "xcomplex/std::operator&lt;&lt;", "xcomplex/std::operator*", "xcomplex/std::operator+", "xcomplex/std::operator-", "xcomplex/std::operator/", "xcomplex/std::operator=="]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCachedDataPathProperty Class"
 title: "CCachedDataPathProperty Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCachedDataPathProperty", "AFXCTL/CCachedDataPathProperty", "AFXCTL/CCachedDataPathProperty::CCachedDataPathProperty", "AFXCTL/CCachedDataPathProperty::m_Cache"]

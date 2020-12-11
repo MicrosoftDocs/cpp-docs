@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonLabel Class"
 title: "CMFCRibbonLabel Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel::CMFCRibbonLabel", "AFXRIBBONLABEL/CMFCRibbonLabel::SetACCData"]

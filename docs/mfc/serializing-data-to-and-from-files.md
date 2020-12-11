@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Serializing Data to and from Files"
 title: "Serializing Data to and from Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["documents [MFC], serialization", "documents [MFC], saving", "saving documents", "deserialization [MFC]", "serialization [MFC], role of document", "serialization [MFC], role of data", "data [MFC]", "data [MFC], serializing", "document data [MFC]"]

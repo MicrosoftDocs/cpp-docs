@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: tuple Class"
 title: "tuple Class"
 ms.date: "11/04/2016"
 f1_keywords: ["tuple/std::tuple", "tuple/std::tuple::operator="]

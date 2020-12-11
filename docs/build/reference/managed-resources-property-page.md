@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Managed Resources Property Page"
 title: "Managed Resources Property Page"
 ms.date: "08/28/2019"
 f1_keywords: ["VC.Project.VCManagedResourceCompilerTool.ResourceFileName", "VC.Project.VCManagedResourceCompilerTool.OutputFileName", "VC.Project.VCManagedResourceCompilerTool.DefaultLocalizedResources"]

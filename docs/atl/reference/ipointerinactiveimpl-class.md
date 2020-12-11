@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IPointerInactiveImpl Class"
 title: "IPointerInactiveImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IPointerInactiveImpl", "ATLCTL/ATL::IPointerInactiveImpl", "ATLCTL/ATL::IPointerInactiveImpl::GetActivationPolicy", "ATLCTL/ATL::IPointerInactiveImpl::OnInactiveMouseMove", "ATLCTL/ATL::IPointerInactiveImpl::OnInactiveSetCursor"]

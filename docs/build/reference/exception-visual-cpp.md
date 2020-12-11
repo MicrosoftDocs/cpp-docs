@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;exception&gt; tag"
 title: "&lt;exception> (C++ documentation comments)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["<exception> C++ XML tag", "exception C++ XML tag"]

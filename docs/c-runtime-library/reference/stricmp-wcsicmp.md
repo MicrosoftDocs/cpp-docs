@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: stricmp, wcsicmp"
 title: "stricmp, wcsicmp"
 ms.date: "12/16/2019"
 api_name: ["stricmp", "wcsicmp"]

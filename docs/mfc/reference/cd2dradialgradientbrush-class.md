@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DRadialGradientBrush Class"
 title: "CD2DRadialGradientBrush Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DRadialGradientBrush", "AFXRENDERTARGET/CD2DRadialGradientBrush", "AFXRENDERTARGET/CD2DRadialGradientBrush::CD2DRadialGradientBrush", "AFXRENDERTARGET/CD2DRadialGradientBrush::Attach", "AFXRENDERTARGET/CD2DRadialGradientBrush::Create", "AFXRENDERTARGET/CD2DRadialGradientBrush::Destroy", "AFXRENDERTARGET/CD2DRadialGradientBrush::Detach", "AFXRENDERTARGET/CD2DRadialGradientBrush::Get", "AFXRENDERTARGET/CD2DRadialGradientBrush::GetCenter", "AFXRENDERTARGET/CD2DRadialGradientBrush::GetGradientOriginOffset", "AFXRENDERTARGET/CD2DRadialGradientBrush::GetRadiusX", "AFXRENDERTARGET/CD2DRadialGradientBrush::GetRadiusY", "AFXRENDERTARGET/CD2DRadialGradientBrush::SetCenter", "AFXRENDERTARGET/CD2DRadialGradientBrush::SetGradientOriginOffset", "AFXRENDERTARGET/CD2DRadialGradientBrush::SetRadiusX", "AFXRENDERTARGET/CD2DRadialGradientBrush::SetRadiusY", "AFXRENDERTARGET/CD2DRadialGradientBrush::m_pRadialGradientBrush", "AFXRENDERTARGET/CD2DRadialGradientBrush::m_RadialGradientBrushProperties"]

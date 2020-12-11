@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CElementTraitsBase Class"
 title: "CElementTraitsBase Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CElementTraitsBase", "ATLCOLL/ATL::CElementTraitsBase", "ATLCOLL/ATL::CElementTraitsBase::INARGTYPE", "ATLCOLL/ATL::CElementTraitsBase::OUTARGTYPE", "ATLCOLL/ATL::CElementTraitsBase::CopyElements", "ATLCOLL/ATL::CElementTraitsBase::RelocateElements"]

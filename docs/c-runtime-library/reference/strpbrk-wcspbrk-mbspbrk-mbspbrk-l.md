@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l"
 title: "strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l"
 ms.date: "4/2/2020"
 api_name: ["_mbspbrk", "wcspbrk", "_mbspbrk_l", "strpbrk", "_o__mbspbrk", "_o__mbspbrk_l"]

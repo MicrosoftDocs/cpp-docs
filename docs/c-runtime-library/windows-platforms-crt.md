@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Platforms (CRT)"
 title: "Windows Platforms (CRT)"
 ms.date: "02/02/2018"
 helpviewer_keywords: ["CRT, compatibility", "backward compatibility [C++], C run-time libraries", "compatibility [C++], C run-time libraries", "MBCS [C++], Win32 platforms", "operating systems [C++]", "Unicode [C++], Win32 platforms"]

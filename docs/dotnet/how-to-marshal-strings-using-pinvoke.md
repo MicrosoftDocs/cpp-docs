@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Marshal Strings Using PInvoke"
 title: "How to: Marshal Strings Using PInvoke"
 ms.custom: "get-started-article"
 ms.date: "09/09/2016"

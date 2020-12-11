@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Optimization best practices"
 title: "Optimization best practices"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["C++, optimization", "optimization, best practices"]

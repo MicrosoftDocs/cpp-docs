@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Template Specialization (C++)"
 title: "Template Specialization (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["partial specialization of class templates"]

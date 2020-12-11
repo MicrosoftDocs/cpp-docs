@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Bars"
 title: "Dialog Bars"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["MFC, control bars", "CDialogBar class [MFC], dialog bars", "control bars [MFC], dialog bars", "dialog bars", "dialog bars [MFC], about dialog bars"]

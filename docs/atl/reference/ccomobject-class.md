@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComObject Class"
 title: "CComObject Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComObject", "ATLCOM/ATL::CComObject", "ATLCOM/ATL::CComObject::CComObject", "ATLCOM/ATL::CComObject::AddRef", "ATLCOM/ATL::CComObject::CreateInstance", "ATLCOM/ATL::CComObject::QueryInterface", "ATLCOM/ATL::CComObject::Release"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActiveX Control Containers: Handling Events from an ActiveX Control"
 title: "ActiveX Control Containers: Handling Events from an ActiveX Control"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["event handlers [MFC], ActiveX controls", "ActiveX control containers [MFC], event sinks", "event handling [MFC], ActiveX controls", "ON_EVENT macro [MFC]", "ActiveX controls [MFC], events [MFC]", "END_EVENTSINK_MAP macro, using", "events [MFC], ActiveX controls", "BEGIN_EVENTSINK_MAP macro"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: XML Documentation (Visual C++)"
 title: "XML Documentation (Visual C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["XML documentation", "XML, documentation comments in source code", "comments, C++ source code files", "/// delimiter for C++ documentation"]

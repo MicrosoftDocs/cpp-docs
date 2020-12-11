@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Version Information Editor (C++)"
 title: "Version Information Editor (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.version.F1", "vc.editors.version"]

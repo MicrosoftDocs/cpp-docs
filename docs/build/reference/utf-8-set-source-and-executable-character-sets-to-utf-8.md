@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `/utf-8` (Set Source and Executable character sets to UTF-8)"
 title: "/utf-8 (Set Source and Executable character sets to UTF-8)"
 ms.date: "04/26/2020"
 f1_keywords: ["/utf-8"]

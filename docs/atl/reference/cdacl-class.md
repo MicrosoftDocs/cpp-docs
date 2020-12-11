@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDacl Class"
 title: "CDacl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDacl", "ATLSECURITY/ATL::CDacl", "ATLSECURITY/ATL::CDacl::CDacl", "ATLSECURITY/ATL::CDacl::AddAllowedAce", "ATLSECURITY/ATL::CDacl::AddDeniedAce", "ATLSECURITY/ATL::CDacl::GetAceCount", "ATLSECURITY/ATL::CDacl::RemoveAce", "ATLSECURITY/ATL::CDacl::RemoveAllAces"]

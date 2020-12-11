@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Summary of Scope Rules"
 title: "Summary of Scope Rules"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["class scope [C++], rules", "classes [C++], scope", "class names [C++], scope rules", "names [C++], class", "scope [C++], class names"]

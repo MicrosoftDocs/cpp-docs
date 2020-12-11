@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Compiler Warning RC4214"
 title: "Resource Compiler Warning RC4214"
 ms.date: "11/04/2016"
 f1_keywords: ["RC4214"]

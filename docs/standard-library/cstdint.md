@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cstdint&gt;"
 title: "&lt;cstdint&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<cstdint>"]

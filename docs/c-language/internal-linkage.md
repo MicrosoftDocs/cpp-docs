@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internal Linkage"
 title: "Internal Linkage"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["internal linkage", "linkage [C++], internal"]

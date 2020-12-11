@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: match_results Class"
 title: "match_results Class"
 ms.date: "09/10/2018"
 f1_keywords: ["regex/std::match_results"]

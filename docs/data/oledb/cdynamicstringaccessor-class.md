@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDynamicStringAccessor Class"
 title: "CDynamicStringAccessor Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDynamicStringAccessor", "CDynamicStringAccessor.GetString", "CDynamicStringAccessor::GetString", "CDynamicStringAccessor::SetString", "CDynamicStringAccessor.SetString"]

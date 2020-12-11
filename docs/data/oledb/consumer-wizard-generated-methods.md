@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Consumer Wizard-Generated Methods"
 title: "Consumer Wizard-Generated Methods"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB consumers, wizard-generated classes and methods"]

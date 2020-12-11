@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l"
 title: "_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l"
 ms.date: "4/2/2020"
 api_name: ["_ismbclower", "_ismbclower_l", "_ismbcupper_l", "_ismbcupper", "_o__ismbclower", "_o__ismbclower_l", "_o__ismbcupper", "_o__ismbcupper_l"]

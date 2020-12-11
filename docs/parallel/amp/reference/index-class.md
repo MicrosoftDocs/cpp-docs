@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: index Class"
 title: "index Class"
 ms.date: "03/27/2019"
 f1_keywords: ["AMP/index", "AMP/Concurrency::index::index", "AMP/Concurrency::index::rank"]

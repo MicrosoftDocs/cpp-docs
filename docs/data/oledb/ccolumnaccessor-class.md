@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CColumnAccessor Class"
 title: "CColumnAccessor Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CColumnAccessor", "ATL::CColumnAccessor", "ATL.CColumnAccessor"]

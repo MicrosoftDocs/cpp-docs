@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OnCmdMsg Handler"
 title: "OnCmdMsg Handler"
 ms.date: "11/04/2016"
 f1_keywords: ["OnCmdMsg"]

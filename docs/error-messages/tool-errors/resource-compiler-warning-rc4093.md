@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Compiler Warning RC4093"
 title: "Resource Compiler Warning RC4093"
 ms.date: "11/04/2016"
 f1_keywords: ["RC4093"]

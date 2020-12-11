@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::const_reverse_iterator"
 title: "Container Class::const_reverse_iterator"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["const_reverse_iterator method"]

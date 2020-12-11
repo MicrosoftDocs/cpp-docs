@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Source: Programmatically Creating a Table in an ODBC Data Source"
 title: "Programmatically Create a Table in an ODBC Data Source"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["programmatically creating ODBC tables [C++]", "tables [C++]", "ODBC data sources, creating tables in", "tables [C++], creating programmatically"]

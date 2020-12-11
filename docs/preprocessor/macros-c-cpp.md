@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Macros (C/C++)"
 title: "Macros (C/C++)"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["preprocessor", "preprocessor, macros", "Visual C++, preprocessor macros"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add Class from Typelib Wizard"
 title: "Add Class from Typelib Wizard"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["COM interfaces, adding classes"]

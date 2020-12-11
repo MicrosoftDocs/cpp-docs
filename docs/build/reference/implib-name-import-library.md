@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /IMPLIB (Name Import Library)"
 title: "/IMPLIB (Name Import Library)"
 ms.date: "11/04/2016"
 f1_keywords: ["/implib", "VC.Project.VCLinkerTool.ImportLIbrary"]

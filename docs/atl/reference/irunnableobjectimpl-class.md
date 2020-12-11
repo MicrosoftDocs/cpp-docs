@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IRunnableObjectImpl Class"
 title: "IRunnableObjectImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IRunnableObjectImpl", "ATLCTL/ATL::IRunnableObjectImpl", "ATLCTL/ATL::IRunnableObjectImpl::GetRunningClass", "ATLCTL/ATL::IRunnableObjectImpl::IsRunning", "ATLCTL/ATL::IRunnableObjectImpl::LockRunning", "ATLCTL/ATL::IRunnableObjectImpl::Run", "ATLCTL/ATL::IRunnableObjectImpl::SetContainedObject"]

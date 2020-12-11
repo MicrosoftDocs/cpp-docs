@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: defer_lock_t Structure"
 title: "defer_lock_t Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["mutex/std::defer_lock_t"]

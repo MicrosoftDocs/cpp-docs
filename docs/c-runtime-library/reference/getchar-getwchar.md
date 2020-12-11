@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: getchar, getwchar"
 title: "getchar, getwchar"
 ms.date: "06/23/2020"
 api_name: ["getchar", "getwchar", "_o_getchar", "_o_getwchar"]

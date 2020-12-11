@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Lifetime"
 title: "Lifetime"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["local variables, lifetime", "variables, automatic", "storage classes, lifetime", "variables, lifetime", "automatic storage class", "automatic storage class, duration", "storage class specifiers, storage duration", "memory allocation, dynamic allocation", "functions [C++], lifetime", "storage duration", "dynamic memory allocation", "memory allocation, dynamic", "lifetime", "global variables, lifetime"]

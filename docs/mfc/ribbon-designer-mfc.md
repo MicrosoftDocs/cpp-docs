@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Ribbon Designer (MFC)"
 title: "Ribbon Designer (MFC)"
 ms.date: "11/19/2018"
 f1_keywords: ["vc.editors.ribbon.F1"]

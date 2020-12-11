@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a Project for the Provider"
 title: "Creating a Project for the Provider"
 ms.date: "10/22/2018"
 helpviewer_keywords: ["ATL projects, creating", "OLE DB providers, projects", "projects [C++], creating"]

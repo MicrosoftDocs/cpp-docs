@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add an event handler"
 title: "Add an event handler"
 ms.date: "11/12/2018"
 f1_keywords: ["vc.codewiz.eventhandler.overview"]

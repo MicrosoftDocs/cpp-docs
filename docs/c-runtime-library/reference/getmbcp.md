@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _getmbcp"
 title: "_getmbcp"
 ms.date: "4/2/2020"
 api_name: ["_getmbcp", "_o__getmbcp"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: JavaScript integration (C++/CX)"
 title: "JavaScript integration (C++/CX)"
 ms.date: "01/18/2018"
 ms.assetid: 5b3b4406-e20e-4c40-9d1d-5dcd860beeac

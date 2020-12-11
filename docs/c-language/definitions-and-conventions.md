@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Definitions and Conventions"
 title: "Definitions and Conventions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["nonterminals definition"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;codecvt&gt; enums"
 title: "&lt;codecvt&gt; enums"
 ms.date: "11/04/2016"
 f1_keywords: ["codecvt/std::codecvt_mode"]

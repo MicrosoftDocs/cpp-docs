@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sample Multithread C Program"
 title: "Sample Multithread C Program"
 ms.date: "08/09/2019"
 ms.assetid: 4706f6cd-ff9c-4dbf-99a2-1c999b568f17

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .XMM (32-bit MASM)"
 title: ".XMM"
 ms.date: "11/05/2019"
 f1_keywords: [".XMM"]

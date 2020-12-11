@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWinFormsDialog Class"
 title: "CWinFormsDialog Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog::CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog::GetControl", "AFXWINFORMS/CWinFormsDialog::GetControlHandle", "AFXWINFORMS/CWinFormsDialog::OnInitDialog"]

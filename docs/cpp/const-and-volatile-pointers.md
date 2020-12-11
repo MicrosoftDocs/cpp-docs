@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: const and volatile pointers"
 title: "const and volatile pointers"
 ms.date: "11/19/2019"
 helpviewer_keywords: ["volatile keyword [C++], and pointers", "pointers, and const", "pointers, and volatile", "const keyword [C++], volatile pointers"]

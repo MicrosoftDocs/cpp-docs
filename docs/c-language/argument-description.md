@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Argument Description"
 title: "Argument Description"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["envp argument", "main function, syntax", "arguments [C++], for main function", "argv argument", "argc argument"]

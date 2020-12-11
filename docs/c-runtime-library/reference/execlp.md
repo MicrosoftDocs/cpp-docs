@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: execlp"
 title: "execlp"
 ms.date: "12/16/2019"
 api_name: ["execlp"]

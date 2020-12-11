@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Manifest Tool Property Pages"
 title: "Manifest Tool Property Pages"
 ms.date: "07/24/2019"
 ms.topic: "article"

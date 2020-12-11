@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Internet Programming Tasks"
 title: "MFC Internet Programming Tasks"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["Internet applications [MFC], getting started", "Internet applications [MFC], first steps"]

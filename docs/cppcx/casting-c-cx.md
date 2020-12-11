@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Casting (C++/CX)"
 title: "Casting (C++/CX)"
 ms.date: "06/19/2018"
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455

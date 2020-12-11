@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Steps in a Typical FTP Client Application"
 title: "Steps in a Typical FTP Client Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Internet client applications [MFC], FTP table", "FTP (File Transfer Protocol)", "WinInet classes [MFC], FTP", "FTP (File Transfer Protocol) [MFC], client applications", "Internet applications [MFC], FTP client applications"]

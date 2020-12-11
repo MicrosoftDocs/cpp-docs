@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `switch` Statement (C)"
 title: "switch  Statement (C)"
 ms.date: "04/25/2020"
 f1_keywords: ["switch"]

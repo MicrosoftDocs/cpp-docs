@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Programming"
 title: "OLE DB Programming"
 ms.date: "05/02/2019"
 helpviewer_keywords: ["OLE DB [C++]", "data access [C++], OLE DB programming", "OLE DB [C++], about OLE DB"]

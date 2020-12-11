@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Wildcards and NMAKE"
 title: "Wildcards and NMAKE"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, wildcards", "wildcards, expanding"]

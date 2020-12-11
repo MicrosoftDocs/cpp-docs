@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Statements: Limits on Switch Statements"
 title: "Statements: Limits on Switch Statements"
 ms.date: "11/04/2016"
 ms.assetid: d327ef3f-2b11-4bd6-abfe-539697fd21a7

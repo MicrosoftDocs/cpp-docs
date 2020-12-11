@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /GS (Buffer Security Check)"
 title: "/GS (Buffer Security Check)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.BufferSecurityCheck", "VC.Project.VCCLCompilerTool.BufferSecurityCheck"]

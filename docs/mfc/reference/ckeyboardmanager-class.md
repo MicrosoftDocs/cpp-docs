@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CKeyboardManager Class"
 title: "CKeyboardManager Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager::CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager::CleanUp", "AFXKEYBOARDMANAGER/CKeyboardManager::FindDefaultAccelerator", "AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyHandled", "AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyPrintable", "AFXKEYBOARDMANAGER/CKeyboardManager::IsShowAllAccelerators", "AFXKEYBOARDMANAGER/CKeyboardManager::LoadState", "AFXKEYBOARDMANAGER/CKeyboardManager::ResetAll", "AFXKEYBOARDMANAGER/CKeyboardManager::SaveState", "AFXKEYBOARDMANAGER/CKeyboardManager::ShowAllAccelerators", "AFXKEYBOARDMANAGER/CKeyboardManager::TranslateCharToUpper", "AFXKEYBOARDMANAGER/CKeyboardManager::UpdateAccelTable"]

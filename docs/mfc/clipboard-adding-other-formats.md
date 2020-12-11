@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Clipboard: Adding Other Formats"
 title: "Clipboard: Adding Other Formats"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["formats [MFC], Clipboard", "Clipboard, formats", "custom formats, placing on Clipboard", "custom formats", "registering custom Clipboard data formats", "custom Clipboard data formats"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __vectorcall"
 title: "__vectorcall"
 ms.date: "12/17/2018" 
 f1_keywords: ["__vectorcall_cpp", "__vectorcall", "_vectorcall"]

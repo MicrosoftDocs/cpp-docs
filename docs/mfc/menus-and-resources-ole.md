@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Menus and Resources (OLE)"
 title: "Menus and Resources (OLE)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE visual editing servers [MFC]", "status bars [MFC], OLE document applications", "visual editing [MFC], application menus and resources", "string tables [MFC], visual editing applications", "OLE containers [MFC], menus and resources", "OLE applications [MFC], menus and resources", "OLE server applications [MFC], menus and resources", "toolbars [MFC], OLE document applications", "string editing [MFC], visual editing applications", "server applications [MFC], OLE menus and resources", "applications [OLE], menus and resources", "menus [MFC], OLE document applications", "in-place activation [MFC], OLE menus and resources", "containers [MFC], OLE container applications", "OLE menus and resources [MFC]"]

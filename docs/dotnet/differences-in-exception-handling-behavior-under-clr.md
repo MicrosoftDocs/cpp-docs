@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Differences in Exception Handling Behavior Under /CLR"
 title: "Differences in Exception Handling Behavior Under -CLR"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["EXCEPTION_CONTINUE_EXECUTION macro", "set_se_translator function"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWin32Heap Class"
 title: "CWin32Heap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWin32Heap", "ATLMEM/ATL::CWin32Heap", "ATLMEM/ATL::CWin32Heap::CWin32Heap", "ATLMEM/ATL::CWin32Heap::Allocate", "ATLMEM/ATL::CWin32Heap::Attach", "ATLMEM/ATL::CWin32Heap::Detach", "ATLMEM/ATL::CWin32Heap::Free", "ATLMEM/ATL::CWin32Heap::GetSize", "ATLMEM/ATL::CWin32Heap::Reallocate", "ATLMEM/ATL::CWin32Heap::m_bOwnHeap", "ATLMEM/ATL::CWin32Heap::m_hHeap"]

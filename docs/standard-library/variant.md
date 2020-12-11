@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;variant&gt;"
 title: "&lt;variant&gt;"
 ms.date: "04/04/2019"
 f1_keywords: ["<variant>"]

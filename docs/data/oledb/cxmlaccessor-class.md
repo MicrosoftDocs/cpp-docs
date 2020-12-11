@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CXMLAccessor Class"
 title: "CXMLAccessor Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::CXMLAccessor", "CXMLAccessor", "ATL.CXMLAccessor", "ATL.CXMLAccessor.GetXMLColumnData", "CXMLAccessor::GetXMLColumnData", "CXMLAccessor.GetXMLColumnData", "ATL::CXMLAccessor::GetXMLColumnData", "GetXMLColumnData", "ATL::CXMLAccessor::GetXMLRowData", "ATL.CXMLAccessor.GetXMLRowData", "CXMLAccessor::GetXMLRowData", "CXMLAccessor.GetXMLRowData", "GetXMLRowData"]

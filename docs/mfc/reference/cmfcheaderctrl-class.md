@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCHeaderCtrl Class"
 title: "CMFCHeaderCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCHeaderCtrl", "AFXHEADERCTRL/CMFCHeaderCtrl", "AFXHEADERCTRL/CMFCHeaderCtrl::CMFCHeaderCtrl", "AFXHEADERCTRL/CMFCHeaderCtrl::EnableMultipleSort", "AFXHEADERCTRL/CMFCHeaderCtrl::GetColumnState", "AFXHEADERCTRL/CMFCHeaderCtrl::GetSortColumn", "AFXHEADERCTRL/CMFCHeaderCtrl::IsAscending", "AFXHEADERCTRL/CMFCHeaderCtrl::IsDialogControl", "AFXHEADERCTRL/CMFCHeaderCtrl::IsMultipleSort", "AFXHEADERCTRL/CMFCHeaderCtrl::RemoveSortColumn", "AFXHEADERCTRL/CMFCHeaderCtrl::SetSortColumn", "AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawItem", "AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawSortArrow", "AFXHEADERCTRL/CMFCHeaderCtrl::OnFillBackground"]

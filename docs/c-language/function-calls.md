@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Calls"
 title: "Function Calls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function calls, C functions", "functions [C], calling", "function calls, about function calls", "function calls"]

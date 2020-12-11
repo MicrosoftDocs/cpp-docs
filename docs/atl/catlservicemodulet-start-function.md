@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAtlServiceModuleT::Start Function"
 title: "CAtlServiceModuleT::Start Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Start method"]

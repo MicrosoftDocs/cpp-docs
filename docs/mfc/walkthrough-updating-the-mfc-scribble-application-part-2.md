@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Updating the MFC Scribble Application (Part 2)"
 title: "Walkthrough: Updating the MFC Scribble Application (Part 2)"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["walkthroughs [MFC]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Use Rule Sets to Specify the C++ Rules to Run"
 title: Using Rule Sets to Specify the C++ Rules to Run
 ms.date: 07/27/2020
 ms.topic: "conceptual"

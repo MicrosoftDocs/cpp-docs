@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: hash Class"
 title: "hash Class"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::hash", "bitset/std::hash", "memory/std::hash", "string/std::hash", "system_error/std::hash", "vector/std::hash", "XSTDDEF/std::hash", "xstring/std::hash"]

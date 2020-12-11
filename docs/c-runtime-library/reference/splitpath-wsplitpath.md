@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _splitpath, _wsplitpath"
 title: "_splitpath, _wsplitpath"
 ms.date: "4/2/2020"
 api_name: ["_wsplitpath", "_splitpath", "_o__splitpath", "_o__wsplitpath"]

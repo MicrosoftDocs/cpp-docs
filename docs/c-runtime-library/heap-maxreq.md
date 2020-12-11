@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _HEAP_MAXREQ"
 title: "_HEAP_MAXREQ"
 ms.date: "11/04/2016"
 f1_keywords: ["HEAP_MAXREQ", "_HEAP_MAXREQ"]

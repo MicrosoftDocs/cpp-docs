@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Variadic macros"
 title: "Variadic macros"
 ms.date: "10/17/2019"
 helpviewer_keywords: ["variadic macros [C++]", "__VA_ARGS__ variadic macro specifier"]

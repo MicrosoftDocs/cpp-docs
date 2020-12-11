@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SIZESTR"
 title: "SIZESTR"
 ms.date: "12/17/2019"
 f1_keywords: ["SIZESTR"]

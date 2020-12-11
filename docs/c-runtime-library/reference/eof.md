@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _eof"
 title: "_eof"
 ms.date: "4/2/2020"
 api_name: ["_eof", "_o__eof"]

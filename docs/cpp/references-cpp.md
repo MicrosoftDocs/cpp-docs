@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: References (C++)"
 title: "References (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [C++], referencing", "references [C++]", "references, to pointers", "declarations, references", "references, declaring", "referencing objects, declarator syntax"]

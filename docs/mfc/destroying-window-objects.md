@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Destroying Window Objects"
 title: "Destroying Window Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["frame windows [MFC], destroying", "window objects [MFC], deleting", "window objects [MFC], destroying", "window objects [MFC], removing"]

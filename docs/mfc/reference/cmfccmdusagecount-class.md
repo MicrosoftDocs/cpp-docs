@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCCmdUsageCount Class"
 title: "CMFCCmdUsageCount Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCCmdUsageCount", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::AddCmd", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::GetCount", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::HasEnoughInformation", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::IsFreqeuntlyUsedCmd", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Reset", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Serialize", "AFXCMDUSAGECOUNT/CMFCCmdUsageCount::SetOptions"]

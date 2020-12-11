@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Rules and Limitations for dllimport/dllexport"
 title: "Rules and Limitations for dllimport-dllexport"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dllexport attribute [C++], limitations and rules", "dllimport attribute [C++], limitations and rules", "dllexport attribute [C++]"]

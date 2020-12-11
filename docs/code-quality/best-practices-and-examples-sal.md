@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Best Practices and Examples (SAL)"
 title: Best Practices and Examples (SAL)
 ms.date: 11/04/2016
 ms.topic: "conceptual"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ Bit Fields"
 title: "C++ Bit Fields"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["bitfields [C++]", "fields [C++], bit", "bit fields"]

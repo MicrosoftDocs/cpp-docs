@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WinModule Global Functions"
 title: "WinModule Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlWinModuleAddCreateWndData", "atlbase/ATL::AtlWinModuleExtractCreateWndData"]

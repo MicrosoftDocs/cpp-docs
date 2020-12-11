@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specifying When and Where an Annotation Applies"
 title: Specifying When and Where an Annotation Applies
 ms.date: 11/04/2016
 ms.topic: "conceptual"

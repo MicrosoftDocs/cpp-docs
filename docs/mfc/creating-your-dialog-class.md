@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating Your Dialog Class"
 title: "Creating Your Dialog Class"
 ms.date: "09/06/2019"
 helpviewer_keywords: ["dialog boxes [MFC], creating", "MFC dialog boxes [MFC], creating", "files [MFC], creating", "dialog classes [MFC], Add Class Wizard", "dialog classes [MFC], creating"]

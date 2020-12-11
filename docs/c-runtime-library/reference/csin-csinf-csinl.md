@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: csin, csinf, csinl"
 title: "csin, csinf, csinl"
 ms.date: "11/04/2016"
 api_name: ["csin", "csinf", "csinl"]

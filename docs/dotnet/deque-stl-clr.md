@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: deque (STL/CLR)"
 title: "deque (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

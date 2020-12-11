@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonCustomizePropertyPage Class"
 title: "CMFCRibbonCustomizePropertyPage Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonCustomizePropertyPage", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::AddCustomCategory", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::OnOK"]

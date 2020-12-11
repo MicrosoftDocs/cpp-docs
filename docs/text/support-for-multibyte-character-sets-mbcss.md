@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Support for Multibyte Character Sets (MBCSs)"
 title: "Support for Multibyte Character Sets (MBCSs)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MBCS [C++], about MBCS", "character sets [C++], multibyte", "multibyte characters [C++]", "MBCS [C++]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IThreadPoolConfig Interface"
 title: "IThreadPoolConfig Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IThreadPoolConfig", "ATLUTIL/ATL::IThreadPoolConfig", "ATLUTIL/ATL::GetSize", "ATLUTIL/ATL::GetTimeout", "ATLUTIL/ATL::SetSize", "ATLUTIL/ATL::SetTimeout"]

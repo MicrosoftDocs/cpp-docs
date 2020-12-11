@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /c (Compile Without Linking)"
 title: "/c (Compile Without Linking)"
 ms.date: "11/04/2016"
 f1_keywords: ["/c"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCKeyMapDialog Class"
 title: "CMFCKeyMapDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCKeyMapDialog", "AFXKEYMAPDIALOG/CMFCKeyMapDialog", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::CMFCKeyMapDialog", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::DoModal", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::FormatItem", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::GetCommandKeys", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnInsertItem", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnPrintHeader", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnPrintItem", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnSetColumns", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::PrintKeyMap", "AFXKEYMAPDIALOG/CMFCKeyMapDialog::SetColumnsWidth"]

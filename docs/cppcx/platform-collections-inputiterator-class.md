@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections::InputIterator Class"
 title: "Platform::Collections::InputIterator Class"
 ms.date: "03/27/2019"
 ms.topic: "reference"

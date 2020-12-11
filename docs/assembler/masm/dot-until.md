@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .UNTIL (32-bit MASM)"
 title: ".UNTIL"
 ms.date: "11/05/2019"
 f1_keywords: [".UNTIL"]

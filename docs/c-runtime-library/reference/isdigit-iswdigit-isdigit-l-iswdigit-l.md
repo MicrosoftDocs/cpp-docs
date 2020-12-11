@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isdigit, iswdigit, _isdigit_l, _iswdigit_l"
 title: "isdigit, iswdigit, _isdigit_l, _iswdigit_l"
 ms.date: "4/2/2020"
 api_name: ["_isdigit_l", "iswdigit", "_iswdigit_l", "isdigit", "_o_isdigit", "_o_iswdigit"]

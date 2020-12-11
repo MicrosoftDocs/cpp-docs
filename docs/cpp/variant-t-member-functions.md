@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _variant_t Member Functions"
 title: "_variant_t Member Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_variant_t class [C++], member functions"]

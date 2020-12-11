@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Yd (Place Debug Information in Object File)"
 title: "/Yd (Place Debug Information in Object File)"
 ms.date: "11/04/2016"
 f1_keywords: ["/yd"]

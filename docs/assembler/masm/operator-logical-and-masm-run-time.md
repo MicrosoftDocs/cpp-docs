@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator &amp;&amp; (MASM Run Time)"
 title: "operator &amp;&amp; (MASM Run Time)"
 ms.date: "12/17/2019"
 f1_keywords: ["operator &&"]

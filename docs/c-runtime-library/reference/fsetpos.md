@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fsetpos"
 title: "fsetpos"
 ms.date: "4/2/2020"
 api_name: ["fsetpos", "_o_fsetpos"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: novtable"
 title: "novtable"
 ms.date: "11/04/2016"
 f1_keywords: ["novtable_cpp"]

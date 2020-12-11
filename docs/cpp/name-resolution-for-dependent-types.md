@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Name Resolution for Dependent Types"
 title: "Name Resolution for Dependent Types"
 ms.date: "11/04/2016"
 ms.assetid: 34066bb4-0c79-4fd8-bda7-539a60a277ab

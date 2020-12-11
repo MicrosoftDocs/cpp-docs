@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: volatile (C++)"
 title: "volatile (C++)"
 ms.date: "05/07/2019"
 f1_keywords: ["volatile_cpp"]

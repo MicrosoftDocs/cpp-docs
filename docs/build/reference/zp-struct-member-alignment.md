@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zp (Struct Member Alignment)"
 title: "/Zp (Struct Member Alignment)"
 ms.date: "04/04/2019" 
 f1_keywords: ["/zp", "VC.Project.VCCLCompilerTool.StructMemberAlignment", "VC.Project.VCCLWCECompilerTool.StructMemberAlignment"]

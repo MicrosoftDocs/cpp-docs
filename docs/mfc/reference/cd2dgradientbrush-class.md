@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DGradientBrush Class"
 title: "CD2DGradientBrush Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CD2DGradientBrush", "AFXRENDERTARGET/CD2DGradientBrush", "AFXRENDERTARGET/CD2DGradientBrush::CD2DGradientBrush", "AFXRENDERTARGET/CD2DGradientBrush::Destroy", "AFXRENDERTARGET/CD2DGradientBrush::m_arGradientStops", "AFXRENDERTARGET/CD2DGradientBrush::m_colorInterpolationGamma", "AFXRENDERTARGET/CD2DGradientBrush::m_extendMode", "AFXRENDERTARGET/CD2DGradientBrush::m_pGradientStops"]

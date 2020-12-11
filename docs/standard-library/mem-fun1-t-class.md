@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: mem_fun1_t Class"
 title: "mem_fun1_t Class"
 ms.date: "02/21/2019"
 f1_keywords: ["functional/std::mem_fun1_t"]

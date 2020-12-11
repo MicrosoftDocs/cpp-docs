@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Activate and Use a Windows Runtime Component Using WRL"
 title: "How to: Activate and Use a Windows Runtime Component Using WRL"
 ms.date: "11/04/2016"
 ms.topic: "reference"

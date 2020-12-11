@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fatal Error C1076"
 title: "Fatal Error C1076"
 ms.date: "03/08/2019"
 f1_keywords: ["C1076"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: tmpnam_s, _wtmpnam_s"
 title: "tmpnam_s, _wtmpnam_s"
 ms.date: "4/2/2020"
 api_name: ["tmpnam_s", "_wtmpnam_s", "_o__wtmpnam_s", "_o_tmpnam_s"]

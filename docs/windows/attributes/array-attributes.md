@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Array Attributes"
 title: "Array Attributes (C++ COM)"
 ms.date: "10/02/2018"
 helpviewer_keywords: ["arrays [C++], attributes"]

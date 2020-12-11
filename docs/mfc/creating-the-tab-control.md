@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating the Tab Control"
 title: "Creating the Tab Control"
 ms.date: "11/04/2016"
 f1_keywords: ["TCS_EX_REGISTERDROP", "TCS_EX_FLATSEPARATORS"]

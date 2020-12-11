@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: memchr, wmemchr"
 title: "memchr, wmemchr"
 ms.date: "03/31/2019"
 api_name: ["wmemchr", "memchr"]

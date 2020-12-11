@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Customizing the Appearance of a Toolbar Control"
 title: "Customizing the Appearance of a Toolbar Control"
 ms.date: "11/04/2016"
 f1_keywords: ["TBSTYLE_"]

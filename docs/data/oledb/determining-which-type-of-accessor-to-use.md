@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Determining Which Type of Accessor to Use"
 title: "Determining Which Type of Accessor to Use"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["rowsets [C++], data types", "accessors [C++], types"]

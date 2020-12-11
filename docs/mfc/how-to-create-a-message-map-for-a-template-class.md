@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Message Map for a Template Class"
 title: "How to: Create a Message Map for a Template Class"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["template classes [MFC], creating message maps", "message maps [MFC], template classes"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCommandLineInfo Class"
 title: "CCommandLineInfo Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCommandLineInfo", "AFXWIN/CCommandLineInfo", "AFXWIN/CCommandLineInfo::CCommandLineInfo", "AFXWIN/CCommandLineInfo::ParseParam", "AFXWIN/CCommandLineInfo::m_bRunAutomated", "AFXWIN/CCommandLineInfo::m_bRunEmbedded", "AFXWIN/CCommandLineInfo::m_bShowSplash", "AFXWIN/CCommandLineInfo::m_nShellCommand", "AFXWIN/CCommandLineInfo::m_strDriverName", "AFXWIN/CCommandLineInfo::m_strFileName", "AFXWIN/CCommandLineInfo::m_strPortName", "AFXWIN/CCommandLineInfo::m_strPrinterName", "AFXWIN/CCommandLineInfo::m_strRestartIdentifier"]

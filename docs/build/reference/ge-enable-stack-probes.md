@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Ge (Enable Stack Probes)"
 title: "/Ge (Enable Stack Probes)"
 ms.date: "11/04/2016"
 f1_keywords: ["/ge"]

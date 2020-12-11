@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binding Imports"
 title: "Binding Imports"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["/DELAY:NOBIND linker option", "DELAY:NOBIND linker option"]

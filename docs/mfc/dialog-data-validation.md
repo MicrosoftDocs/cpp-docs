@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Data Validation"
 title: "Dialog Data Validation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["validating data [MFC], message boxes", "data validation [MFC], dialog boxes", "dialog boxes [MFC], validating data", "validating data [MFC], dialog box data entry", "DDV (dialog data validation) [MFC]", "data validation [MFC], message boxes"]

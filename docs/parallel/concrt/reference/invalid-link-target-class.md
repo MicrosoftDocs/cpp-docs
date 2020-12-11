@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: invalid_link_target Class"
 title: "invalid_link_target Class"
 ms.date: "11/04/2016"
 f1_keywords: ["invalid_link_target", "CONCRT/concurrency::invalid_link_target", "CONCRT/concurrency::invalid_link_target::invalid_link_target"]

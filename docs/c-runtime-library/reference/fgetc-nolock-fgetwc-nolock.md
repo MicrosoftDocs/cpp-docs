@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fgetc_nolock, _fgetwc_nolock"
 title: "_fgetc_nolock, _fgetwc_nolock"
 ms.date: "4/2/2020"
 api_name: ["_fgetc_nolock", "_fgetwc_nolock", "_o__fgetc_nolock", "_o__fgetwc_nolock"]

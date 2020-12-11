@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: task_handle Class"
 title: "task_handle Class"
 ms.date: "03/27/2019"
 f1_keywords: ["task_handle", "PPL/concurrency::task_handle", "PPL/concurrency::task_handle::task_handle"]

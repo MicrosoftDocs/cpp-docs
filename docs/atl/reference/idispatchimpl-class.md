@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDispatchImpl Class"
 title: "IDispatchImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IDispatchImpl", "ATLCOM/ATL::IDispatchImpl", "ATLCOM/ATL::IDispatchImpl::IDispatchImpl", "ATLCOM/ATL::IDispatchImpl::GetIDsOfNames", "ATLCOM/ATL::IDispatchImpl::GetTypeInfo", "ATLCOM/ATL::IDispatchImpl::GetTypeInfoCount", "ATLCOM/ATL::IDispatchImpl::Invoke"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Assignment conversions"
 title: "Assignment conversions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["conversions, assignment", "assignment conversions"]

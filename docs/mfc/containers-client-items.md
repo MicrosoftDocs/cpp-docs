@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Containers: Client Items"
 title: "Containers: Client Items"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE containers [MFC], client items", "client items and OLE containers"]

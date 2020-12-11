@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: sync_per_thread Class"
 title: "sync_per_thread Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::sync_per_thread", "allocators/stdext::sync_per_thread::allocate", "allocators/stdext::sync_per_thread::deallocate", "allocators/stdext::sync_per_thread::equals"]

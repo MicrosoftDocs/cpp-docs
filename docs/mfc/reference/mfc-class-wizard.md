@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Class Wizard"
 title: "MFC Class Wizard"
 ms.date: "09/06/2019"
 f1_keywords: ["vc.wizards.classwizard"]

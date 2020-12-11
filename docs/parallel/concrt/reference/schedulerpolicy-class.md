@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SchedulerPolicy Class"
 title: "SchedulerPolicy Class"
 ms.date: "11/04/2016"
 f1_keywords: ["SchedulerPolicy", "concrt/concurrency::SchedulerPolicy", "concrt/concurrency::SchedulerPolicy::SchedulerPolicy", "concrt/concurrency::SchedulerPolicy::GetPolicyValue", "concrt/concurrency::SchedulerPolicy::SetConcurrencyLimits", "concrt/concurrency::SchedulerPolicy::SetPolicyValue"]

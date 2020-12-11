@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPalette Class"
 title: "CPalette Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPalette", "AFXWIN/CPalette", "AFXWIN/CPalette::CPalette", "AFXWIN/CPalette::AnimatePalette", "AFXWIN/CPalette::CreateHalftonePalette", "AFXWIN/CPalette::CreatePalette", "AFXWIN/CPalette::FromHandle", "AFXWIN/CPalette::GetEntryCount", "AFXWIN/CPalette::GetNearestPaletteIndex", "AFXWIN/CPalette::GetPaletteEntries", "AFXWIN/CPalette::ResizePalette", "AFXWIN/CPalette::SetPaletteEntries"]

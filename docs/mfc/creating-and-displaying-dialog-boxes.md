@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating and Displaying Dialog Boxes"
 title: "Creating and Displaying Dialog Boxes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["modal dialog boxes [MFC], creating", "opening dialog boxes", "modeless dialog boxes [MFC], creating", "MFC dialog boxes [MFC], creating", "MFC dialog boxes [MFC], displaying"]

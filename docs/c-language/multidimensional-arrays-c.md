@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multidimensional Arrays (C)"
 title: "Multidimensional Arrays (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["arrays [C], multidimensional", "multidimensional arrays", "subscript expressions"]

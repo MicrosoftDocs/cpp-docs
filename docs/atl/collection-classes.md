@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Collection Classes"
 title: "Collection classes in ATL"
 ms.date: "11/04/2016"
 ms.topic: "reference"

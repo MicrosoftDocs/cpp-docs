@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTypedPtrArray Class"
 title: "CTypedPtrArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTypedPtrArray", "AFXTEMPL/CTypedPtrArray", "AFXTEMPL/CTypedPtrArray::Add", "AFXTEMPL/CTypedPtrArray::Append", "AFXTEMPL/CTypedPtrArray::Copy", "AFXTEMPL/CTypedPtrArray::ElementAt", "AFXTEMPL/CTypedPtrArray::GetAt", "AFXTEMPL/CTypedPtrArray::InsertAt", "AFXTEMPL/CTypedPtrArray::SetAt", "AFXTEMPL/CTypedPtrArray::SetAtGrow"]

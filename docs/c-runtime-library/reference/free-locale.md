@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _free_locale"
 title: "_free_locale"
 ms.date: "4/2/2020"
 api_name: ["_free_locale", "_o__free_locale"]

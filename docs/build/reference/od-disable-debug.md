@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Od (Disable (Debug))"
 title: "/Od (Disable (Debug))"
 ms.date: "11/04/2016"
 f1_keywords: ["/od"]

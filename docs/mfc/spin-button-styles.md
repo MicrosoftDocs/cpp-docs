@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Spin Button Styles"
 title: "Spin Button Styles"
 ms.date: "09/09/2019"
 helpviewer_keywords: ["styles [MFC], CSpinButtonCtrl", "CSpinButtonCtrl class [MFC], styles", "styles [MFC], spin button control", "spin button control, styles"]

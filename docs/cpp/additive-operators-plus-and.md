@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Additive Operators: + and -"
 title: "Additive Operators: + and -"
 ms.date: "11/04/2016"
 f1_keywords: ["+", "-"]

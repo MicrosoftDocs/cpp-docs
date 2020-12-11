@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Command-Line Error D8027"
 title: "Command-Line Error D8027"
 ms.date: "11/04/2016"
 f1_keywords: ["D8027"]

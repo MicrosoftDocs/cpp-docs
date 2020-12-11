@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cancellation_token_registration Class"
 title: "cancellation_token_registration Class"
 ms.date: "11/04/2016"
 f1_keywords: ["cancellation_token_registration", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_registration::cancellation_token_registration"]

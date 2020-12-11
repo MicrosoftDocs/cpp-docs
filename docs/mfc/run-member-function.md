@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Run Member Function"
 title: "Run Member Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["WinMain method [MFC]"]

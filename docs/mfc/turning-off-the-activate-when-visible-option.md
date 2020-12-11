@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Turning off the Activate When Visible Option"
 title: "Turning off the Activate When Visible Option"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], activate options", "Activate When Visible option [MFC]"]

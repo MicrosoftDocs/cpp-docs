@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Menus (MFC)"
 title: "Menus (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["menus [MFC], updating as context changes", "menus [MFC], MFC resources for working with", "menus [MFC], manipulating during execution", "menus [MFC]"]

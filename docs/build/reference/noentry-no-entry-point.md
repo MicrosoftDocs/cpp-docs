@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /NOENTRY (No Entry Point)"
 title: "/NOENTRY (No Entry Point)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.ResourceOnlyDLL", "/noentry"]

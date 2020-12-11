@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CHotKeyCtrl Class"
 title: "CHotKeyCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHotKeyCtrl", "AFXCMN/CHotKeyCtrl", "AFXCMN/CHotKeyCtrl::CHotKeyCtrl", "AFXCMN/CHotKeyCtrl::Create", "AFXCMN/CHotKeyCtrl::CreateEx", "AFXCMN/CHotKeyCtrl::GetHotKey", "AFXCMN/CHotKeyCtrl::GetHotKeyName", "AFXCMN/CHotKeyCtrl::GetKeyName", "AFXCMN/CHotKeyCtrl::SetHotKey", "AFXCMN/CHotKeyCtrl::SetRules"]

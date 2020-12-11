@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __incfsbyte, __incfsword, __incfsdword"
 title: "__incfsbyte, __incfsword, __incfsdword"
 ms.date: "09/02/2019"
 f1_keywords: ["__incfsword", "__incfsbyte_cpp", "__incfsbyte", "__incfsdword", "__incfsword_cpp", "__incfsdword_cpp"]

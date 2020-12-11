@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COM+ 1.0 Support in ATL Projects"
 title: "COM+ 1.0 Support in ATL Projects"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.ATL.MTS"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;allocators&gt; operators"
 title: "&lt;allocators&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/std::operator!=", "allocators/std::operator=="]

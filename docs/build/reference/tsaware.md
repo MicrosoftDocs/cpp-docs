@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /TSAWARE"
 title: "/TSAWARE"
 ms.date: "11/04/2016"
 f1_keywords: ["/tsaware_editbin"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Command IDs"
 title: "Command IDs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["command IDs, MFC", "command IDs"]

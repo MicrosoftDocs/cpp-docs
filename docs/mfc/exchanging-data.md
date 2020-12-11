@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exchanging Data"
 title: "Exchanging Data"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["property sheets [MFC], data exchange", "exchanging data with property sheets [MFC]", "DDX (dialog data exchange) [MFC], property sheets"]

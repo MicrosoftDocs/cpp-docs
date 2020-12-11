@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Initializing Documents and Views"
 title: "Initializing Documents and Views"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["initializing documents [MFC]", "documents [MFC], initializing", "views [MFC], initializing", "initializing objects [MFC], document objects", "initializing views [MFC]"]

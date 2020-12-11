@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File I/O Classes"
 title: "File I-O Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.file"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Processing Notification Messages in Month Calendar Controls"
 title: "Processing Notification Messages in Month Calendar Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], notifications", "CMonthCalCtrl class [MFC], day states", "month calendar controls [MFC], notification messages", "notifications [MFC], for CMonthCalCtrl", "notifications [MFC], month calendar control"]

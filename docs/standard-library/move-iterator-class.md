@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: move_iterator Class"
 title: "move_iterator Class"
 ms.date: "03/27/2019"
 f1_keywords: ["iterator/std::move_iterator", "iterator/std::move_iterator::iterator_type", "iterator/std::move_iterator::iterator_category", "iterator/std::move_iterator::value_type", "iterator/std::move_iterator::difference_type", "iterator/std::move_iterator::pointer", "iterator/std::move_iterator::reference", "iterator/std::move_iterator::base"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler intrinsics and assembly language"
 title: "Compiler Intrinsics and Assembly Language"
 ms.date: "09/02/2019"
 ms.assetid: ddd51620-d01b-44cf-853b-e11420d13137

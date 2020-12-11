@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CScrollBar Class"
 title: "CScrollBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CScrollBar", "AFXWIN/CScrollBar", "AFXWIN/CScrollBar::CScrollBar", "AFXWIN/CScrollBar::Create", "AFXWIN/CScrollBar::EnableScrollBar", "AFXWIN/CScrollBar::GetScrollBarInfo", "AFXWIN/CScrollBar::GetScrollInfo", "AFXWIN/CScrollBar::GetScrollLimit", "AFXWIN/CScrollBar::GetScrollPos", "AFXWIN/CScrollBar::GetScrollRange", "AFXWIN/CScrollBar::SetScrollInfo", "AFXWIN/CScrollBar::SetScrollPos", "AFXWIN/CScrollBar::SetScrollRange", "AFXWIN/CScrollBar::ShowScrollBar"]

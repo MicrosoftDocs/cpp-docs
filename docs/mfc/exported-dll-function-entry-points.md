@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exported DLL Function Entry Points"
 title: "Exported DLL Function Entry Points"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exporting DLLs [MFC], functions", "MFC, managing state data", "state management [MFC], exported DLLs"]

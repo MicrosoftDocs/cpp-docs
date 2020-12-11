@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: duration Class"
 title: "duration Class"
 ms.date: "03/27/2016"
 f1_keywords: ["chrono/std::chrono::duration", "chrono/std::chrono::duration::duration", "chrono/std::chrono::duration::count", "chrono/std::chrono::duration::max", "chrono/std::chrono::duration::min", "chrono/std::chrono::duration::zero"]

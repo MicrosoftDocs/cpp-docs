@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using a Windows Form User Control in MFC"
 title: "Using a Windows Form User Control in MFC"
 ms.date: "01/08/2018"
 helpviewer_keywords: ["MFC [C++], Windows Forms support", "interoperability [C++], Windows Forms in MFC", "interoperability [C++], MFC", "interop [C++], Windows Forms in MFC", "interop [C++], MFC", "Windows Forms [C++], MFC support"]

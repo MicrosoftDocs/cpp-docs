@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMetaFileDC Class"
 title: "CMetaFileDC Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMetaFileDC", "AFXEXT/CMetaFileDC", "AFXEXT/CMetaFileDC::CMetaFileDC", "AFXEXT/CMetaFileDC::Close", "AFXEXT/CMetaFileDC::CloseEnhanced", "AFXEXT/CMetaFileDC::Create", "AFXEXT/CMetaFileDC::CreateEnhanced"]

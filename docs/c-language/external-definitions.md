@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: External Definitions"
 title: "External Definitions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["external definitions", "external linkage, variable declarations"]

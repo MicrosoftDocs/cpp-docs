@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Methods of Creating a Status Bar"
 title: "Methods of Creating a Status Bar"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CStatusBar class [MFC], vs. CStatusBarCtrl", "methods [MFC], creating status bars", "CStatusBarCtrl class [MFC], vs. CStatusBar", "CStatusBarCtrl class [MFC], creating", "methods [MFC]", "status bars [MFC], creating"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Visual C++ What&#39;s New 2003 through 2015"
 title: "Visual C++ What&#39;s New 2003 through 2015"
 ms.date: "07/02/2019"
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26

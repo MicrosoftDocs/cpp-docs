@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Abstract Declarators"
 title: "C Abstract Declarators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["declarators, abstract", "abstract declarations"]

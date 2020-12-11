@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDataPathProperty Class"
 title: "CDataPathProperty Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDataPathProperty", "AFXCTL/CDataPathProperty", "AFXCTL/CDataPathProperty::CDataPathProperty", "AFXCTL/CDataPathProperty::GetControl", "AFXCTL/CDataPathProperty::GetPath", "AFXCTL/CDataPathProperty::Open", "AFXCTL/CDataPathProperty::ResetData", "AFXCTL/CDataPathProperty::SetControl", "AFXCTL/CDataPathProperty::SetPath"]

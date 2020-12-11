@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CString Semantics"
 title: "CString Semantics"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["semantics in Cstring", "CString objects, assignment semantics", "assignment statements, assigning CString objects"]

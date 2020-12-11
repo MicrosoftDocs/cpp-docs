@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _getdrives"
 title: "_getdrives"
 ms.date: "4/2/2020"
 api_name: ["_getdrives", "_o__getdrives"]

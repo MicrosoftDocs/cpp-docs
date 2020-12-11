@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (Level 1) C4742"
 title: "Compiler Warning (Level 1) C4742"
 ms.date: 07/22/2020
 f1_keywords: ["C4742"]

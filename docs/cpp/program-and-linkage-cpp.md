@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Translation units and linkage"
 title: "Translation units and linkage (C++)"
 ms.date: "12/11/2019"
 ms.assetid: a6493ba0-24e2-4c89-956e-9da1dea660cb

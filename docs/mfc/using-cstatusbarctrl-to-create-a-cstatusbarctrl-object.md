@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CStatusBarCtrl to Create a CStatusBarCtrl Object"
 title: "Using CStatusBarCtrl to Create a CStatusBarCtrl Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["status bar controls [MFC], creating", "CStatusBarCtrl class [MFC], creating"]

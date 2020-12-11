@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overview of Functions"
 title: "Overview of Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["functions [C++]", "control flow, function calls"]

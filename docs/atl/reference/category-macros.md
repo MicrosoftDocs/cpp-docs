@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Category Macros"
 title: "Category Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcom/ATL::BEGIN_CATEGORY_MAP", "atlcom/ATL::END_CATEGORY_MAP", "atlcom/ATL::IMPLEMENTED_CATEGORY", "atlcom/ATL::REQUIRED_CATEGORY"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Menus and Resources: Container Additions"
 title: "Menus and Resources: Container Additions"
 ms.date: "11/04/2016"
 f1_keywords: ["IDP_OLE_INIT_FAILED", "IDP_FAILED_TO_CREATE", "VK_ESCAPE"]

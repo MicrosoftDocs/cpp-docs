@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPtrArray Class"
 title: "CPtrArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPtrArray", "AFXCOLL/CPtrArray", "AFXCOLL/CPtrArray::CPtrArray", "AFXCOLL/CPtrArray::Add", "AFXCOLL/CPtrArray::Append", "AFXCOLL/CPtrArray::Copy", "AFXCOLL/CPtrArray::ElementAt", "AFXCOLL/CPtrArray::FreeExtra", "AFXCOLL/CPtrArray::GetAt", "AFXCOLL/CPtrArray::GetCount", "AFXCOLL/CPtrArray::GetData", "AFXCOLL/CPtrArray::GetSize", "AFXCOLL/CPtrArray::GetUpperBound", "AFXCOLL/CPtrArray::InsertAt", "AFXCOLL/CPtrArray::IsEmpty", "AFXCOLL/CPtrArray::RemoveAll", "AFXCOLL/CPtrArray::RemoveAt", "AFXCOLL/CPtrArray::SetAt", "AFXCOLL/CPtrArray::SetAtGrow", "AFXCOLL/CPtrArray::SetSize"]

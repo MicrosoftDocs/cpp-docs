@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Serialization: Serialization vs. Database Input/Output"
 title: "Serialization: Serialization vs. Database Input-Output"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["database applications [MFC], file I/O vs. serialization", "serialization [MFC], vs. database I/O", "I/O [MFC], vs. serialization", "databases [MFC], input/output handling"]

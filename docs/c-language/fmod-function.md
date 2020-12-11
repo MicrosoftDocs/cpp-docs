@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fmod Function"
 title: "fmod Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["fmod function"]

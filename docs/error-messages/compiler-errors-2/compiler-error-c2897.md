@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2897"
 title: "Compiler Error C2897"
 ms.date: "11/04/2016"
 f1_keywords: ["C2897"]

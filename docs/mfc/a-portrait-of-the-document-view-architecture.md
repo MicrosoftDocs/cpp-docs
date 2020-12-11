@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: A Portrait of the Document/View Architecture"
 title: "A Portrait of the Document-View Architecture"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["documents [MFC], views", "multiple views [MFC], updating from document", "document/view architecture [MFC]", "views [MFC], and user input", "documents [MFC], accessing data from view", "views [MFC], updating", "input [MFC], view class", "documents [MFC], multiple views", "document/view architecture [MFC], accessing data from view", "document/view architecture [MFC], about document/view architecture", "views [MFC], accessing document data from"]

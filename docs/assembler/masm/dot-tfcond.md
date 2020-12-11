@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .TFCOND"
 title: ".TFCOND"
 ms.date: "12/16/2019"
 f1_keywords: [".TFCOND"]

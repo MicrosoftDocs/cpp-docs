@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: writeonly_texture_view Class"
 title: "writeonly_texture_view Class"
 ms.date: "11/04/2016"
 f1_keywords: ["writeonly_texture_view", "AMP_GRAPHICS/writeonly_texture_view", "AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view", "AMP_GRAPHICS/Concurrency::graphics::writeonly_texture_view::set", "AMP_GRAPHICS/Concurrency::graphics::rank Constant"]

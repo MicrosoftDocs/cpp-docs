@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TYPEDEF"
 title: "TYPEDEF (MASM)"
 ms.date: "12/16/2019"
 f1_keywords: ["typedef"]

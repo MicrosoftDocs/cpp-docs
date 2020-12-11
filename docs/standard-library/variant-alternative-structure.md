@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: variant_alternative Struct"
 title: "variant_alternative Struct"
 ms.date: "04/04/2019"
 f1_keywords: ["variant/std::variant_alternative"]

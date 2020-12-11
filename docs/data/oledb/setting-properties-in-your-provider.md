@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Setting Properties in Your Provider"
 title: "Setting Properties in Your Provider"
 ms.date: "10/29/2018"
 helpviewer_keywords: ["OLE DB providers, properties", "properties [C++], OLE DB provider"]

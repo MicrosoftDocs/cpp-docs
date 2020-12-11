@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;map&gt; operators"
 title: "&lt;map&gt; operators"
 ms.date: "03/27/2019"
 f1_keywords: ["map/std::operator!=", "map/std::operator&gt;", "map/std::operator&gt;=", "map/std::operator&lt;", "map/std::operator&lt;=", "map/std::operator=="]

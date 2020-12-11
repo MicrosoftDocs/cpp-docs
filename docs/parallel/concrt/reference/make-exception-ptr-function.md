@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: make_exception_ptr Function"
 title: "make_exception_ptr Function"
 ms.date: "11/04/2016"
 f1_keywords: ["ppltasks/std::make_exception_ptr"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: gslice Class"
 title: "gslice Class"
 ms.date: "11/04/2016"
 f1_keywords: ["valarray/std::gslice", "valarray/std::gslice::size", "valarray/std::gslice::start", "valarray/std::gslice::stride"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Deploying a Visual C++ Application By Using a Setup Project"
 title: "Deploy a Visual C++ Application By Using a Setup Project"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["deployment for Visual C++"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: pgomgr"
 title: "pgomgr"
 ms.date: "03/14/2018"
 helpviewer_keywords: ["pgomgr program", "profile-guided optimizations, pgomgr"]

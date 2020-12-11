@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions: OLE Exceptions"
 title: "Exceptions: OLE Exceptions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE, exceptions", "OLE exceptions [MFC]", "exceptions [MFC], OLE", "exception handling [MFC], OLE", "OLE exceptions [MFC], classes for handling"]

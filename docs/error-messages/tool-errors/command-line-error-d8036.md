@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Command-Line Error D8036"
 title: "Command-Line Error D8036"
 ms.date: "11/04/2016"
 f1_keywords: ["D8036"]

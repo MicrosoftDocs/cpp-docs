@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BSCMAKE Error BK1508"
 title: "BSCMAKE Error BK1508"
 ms.date: "11/04/2016"
 f1_keywords: ["BK1508"]

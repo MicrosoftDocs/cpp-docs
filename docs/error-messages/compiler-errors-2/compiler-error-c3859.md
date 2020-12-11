@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3859"
 title: "Compiler Error C3859"
 ms.date: "03/08/2019"
 f1_keywords: ["C3859"]

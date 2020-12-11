@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Security-Enhanced Versions of CRT Functions"
 title: "Security-Enhanced Versions of CRT Functions"
 ms.date: "03/21/2018"
 helpviewer_keywords: ["security [CRT]", "security-enhanced CRT", "CRT, security enhancements"]

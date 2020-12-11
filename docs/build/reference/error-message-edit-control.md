@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Error Message Edit Control"
 title: "Error Message Edit Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Error Message edit control"]

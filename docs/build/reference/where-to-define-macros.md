@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Where to Define Macros"
 title: "Where to Define Macros"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["defining macros", "macros, NMAKE", "NMAKE program, defining macros"]

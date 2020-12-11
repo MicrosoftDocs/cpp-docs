@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Default Signals"
 title: "Default Signals"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["default signals", "defaults, signals"]

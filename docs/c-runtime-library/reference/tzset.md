@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _tzset"
 title: "_tzset"
 ms.date: "4/2/2020"
 api_name: ["_tzset", "_o__tzset"]

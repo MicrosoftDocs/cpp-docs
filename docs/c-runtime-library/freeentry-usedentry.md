@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _FREEENTRY, _USEDENTRY"
 title: "_FREEENTRY, _USEDENTRY"
 ms.date: "11/04/2016"
 f1_keywords: ["USEDENTRY", "_USEDENTRY", "_FREEENTRY", "FREEENTRY"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Compiler Error RC2116"
 title: "Resource Compiler Error RC2116"
 ms.date: "11/04/2016"
 f1_keywords: ["RC2116"]

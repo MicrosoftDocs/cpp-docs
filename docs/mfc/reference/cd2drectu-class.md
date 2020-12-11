@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DRectU Class"
 title: "CD2DRectU Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DRectU", "AFXRENDERTARGET/CD2DRectU", "AFXRENDERTARGET/CD2DRectU::CD2DRectU", "AFXRENDERTARGET/CD2DRectU::IsNull"]

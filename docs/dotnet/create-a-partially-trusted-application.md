@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Partially Trusted Application by Removing Dependency on the CRT Library DLL"
 title: "How to: Create a Partially Trusted Application (C++/CLI)"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

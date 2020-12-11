@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Safe Libraries: C++ Standard Library"
 title: "Safe Libraries: C++ Standard Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Safe Libraries", "Safe Libraries, C++ Standard Library", "Safe C++ Standard Library"]

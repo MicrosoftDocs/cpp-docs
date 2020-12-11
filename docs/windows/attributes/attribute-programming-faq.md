@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Attribute Programming FAQ"
 title: "Attribute Programming FAQ"
 ms.date: "10/02/2018"
 ms.topic: "conceptual"

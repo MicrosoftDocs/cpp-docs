@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Example Program"
 title: "Example Program"
 ms.date: "11/04/2016"
 ms.assetid: fc22ef82-9caa-425f-b201-2891bc123d1f

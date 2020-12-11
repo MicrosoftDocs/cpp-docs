@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ Tools and Features in Visual Studio Editions"
 title: "C++ Tools and Features in Visual Studio Editions"
 ms.date: "05/21/2019"
 helpviewer_keywords: ["tools and platforms [C++]"]

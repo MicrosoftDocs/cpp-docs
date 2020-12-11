@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: One-Dimensional Arrays"
 title: "One-Dimensional Arrays"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["brackets [ ]", "brackets [ ], arrays", "one-dimensional arrays", "arrays [C++], one-dimensional", "square brackets [ ]", "square brackets [ ], arrays", "subscript expressions"]

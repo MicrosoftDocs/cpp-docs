@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use safe_cast in C++/CLI"
 title: "How to: Use safe_cast in C++/CLI"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["safe_cast keyword [C++], upcasting"]

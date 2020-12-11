@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DLL Import and Export"
 title: "DLL Import and Export"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dllimport attribute [C++], storage-class attribute", "dllexport attribute [C++]", "dllexport attribute [C++], storage-class attribute"]

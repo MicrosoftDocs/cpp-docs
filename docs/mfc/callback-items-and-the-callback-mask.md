@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Callback Items and the Callback Mask"
 title: "Callback Items and the Callback Mask"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["callback items in CListCtrl class [MFC]", "CListCtrl class [MFC], callback item and callback mask"]

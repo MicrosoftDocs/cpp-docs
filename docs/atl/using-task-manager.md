@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Task Manager"
 title: "Using Task Manager"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Task Manager", "breakpoints, Task Manager", "debugging [ATL], using Task Manager"]

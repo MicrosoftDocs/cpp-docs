@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .MMX (32-bit MASM)"
 title: ".MMX"
 ms.date: "11/05/2019"
 f1_keywords: [".MMX"]

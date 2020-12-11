@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debug Class (C++/CLI)"
 title: "Debug Class (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Trace class, Visual C++", ".NET Framework [C++], Debug class", "Debug class"]

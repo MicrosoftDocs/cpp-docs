@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: hidden"
 title: "hidden (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.hidden"]

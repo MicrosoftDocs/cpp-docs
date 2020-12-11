@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Displaying and Manipulating Data in a Form"
 title: "Displaying and Manipulating Data in a Form"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["forms [C++], displaying data", "displaying data [C++], forms", "ODBC [C++], forms", "record views [C++], displaying data", "data [MFC]", "data [MFC], displaying in a form"]

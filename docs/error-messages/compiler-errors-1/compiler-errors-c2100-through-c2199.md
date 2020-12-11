@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C2100 through C2199"
 title: "Compiler errors C2100 through C2199"
 ms.date: "04/21/2019"
 f1_keywords: ["C2119", "C2123", "C2125", "C2126", "C2127", "C2136", "C2176", "C2187", "C2189"]

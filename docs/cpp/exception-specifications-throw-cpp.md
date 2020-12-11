@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exception specifications (throw, noexcept) (C++)"
 title: "Exception specifications (throw, noexcept) (C++)"
 ms.date: "01/18/2018"
 helpviewer_keywords: ["exceptions [C++], exception specifications", "throwing exceptions [C++], throw keyword", "C++ exception handling [C++], throwing exceptions", "throw keyword [C++]", "noexcept keyword [C++]"]

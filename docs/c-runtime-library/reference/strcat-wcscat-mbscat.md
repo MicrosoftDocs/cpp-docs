@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strcat, wcscat, _mbscat"
 title: "strcat, wcscat, _mbscat"
 ms.date: "11/04/2016"
 api_name: ["_mbscat", "wcscat", "strcat"]

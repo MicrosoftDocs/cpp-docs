@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Bit Fields"
 title: "C Bit Fields"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["bitfields", "bit fields"]

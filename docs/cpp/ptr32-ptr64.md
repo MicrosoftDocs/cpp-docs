@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __ptr32, __ptr64"
 title: "__ptr32, __ptr64"
 ms.date: "10/09/2018"
 f1_keywords: ["__ptr32_cpp", "__ptr64_cpp", "__ptr32", "__ptr64", "_ptr32", "_ptr64"]

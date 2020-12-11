@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fclose_nolock"
 title: "_fclose_nolock"
 ms.date: "4/2/2020"
 api_name: ["_fclose_nolock", "_o__fclose_nolock"]

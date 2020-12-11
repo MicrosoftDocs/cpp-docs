@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DPointF Class"
 title: "CD2DPointF Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DPointF", "AFXRENDERTARGET/CD2DPointF", "AFXRENDERTARGET/CD2DPointF::CD2DPointF"]

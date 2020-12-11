@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Files Created for CLR Projects"
 title: "Files Created for CLR Projects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Visual Studio C++ projects, CLR programming", ".NET applications, C++"]

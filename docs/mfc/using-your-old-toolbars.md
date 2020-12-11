@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Your Old Toolbars"
 title: "Using Your Old Toolbars"
 ms.date: "11/04/2016"
 f1_keywords: ["COldToolBar"]

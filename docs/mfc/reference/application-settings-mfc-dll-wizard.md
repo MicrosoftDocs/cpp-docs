@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application Settings, MFC DLL Wizard"
 title: "Application Settings, MFC DLL Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.dll.appset"]

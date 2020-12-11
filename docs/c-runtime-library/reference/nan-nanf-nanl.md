@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: nan, nanf, nanl"
 title: "nan, nanf, nanl"
 ms.date: "4/2/2020"
 api_name: ["nanf", "nan", "nanl", "_o_nan", "_o_nanf", "_o_nanl"]

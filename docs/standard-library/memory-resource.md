@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;memory_resource&gt;"
 title: "&lt;memory_resource&gt;"
 ms.date: "04/04/2019"
 f1_keywords: ["<memory_resource>"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Scope of this Manual"
 title: "Scope of this Manual"
 ms.date: "11/04/2016"
 ms.assetid: 406e7cc0-27cb-46b4-b38e-c200f3fddafd

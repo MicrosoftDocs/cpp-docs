@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN063: Debugging Internet MFC extension DLLs"
 title: "TN063: Debugging Internet MFC extension DLLs"
 ms.date: "11/04/2016"
 f1_keywords: ["vs.debug.dlls"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interoperating with Other Languages (C++/CX)"
 title: "Interoperating with Other Languages (C++/CX)"
 ms.date: "12/30/2016"
 ms.assetid: f74db99f-7dbd-421e-99e6-c34bbebf5cea

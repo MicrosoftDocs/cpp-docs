@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Desktop Applications"
 title: "MFC Desktop Applications"
 ms.date: "07/28/2019"
 f1_keywords: ["MFC"]

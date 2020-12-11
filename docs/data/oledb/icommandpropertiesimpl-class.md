@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICommandPropertiesImpl Class"
 title: "ICommandPropertiesImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ICommandPropertiesImpl", "ATL.ICommandPropertiesImpl", "ATL::ICommandPropertiesImpl", "ICommandPropertiesImpl::GetProperties", "ICommandPropertiesImpl.GetProperties", "ICommandPropertiesImpl.SetProperties", "ICommandPropertiesImpl::SetProperties"]

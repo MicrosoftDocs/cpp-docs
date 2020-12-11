@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAtlFileMapping Class"
 title: "CAtlFileMapping Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlFileMapping", "atlfile/ATL::CAtlFileMapping"]

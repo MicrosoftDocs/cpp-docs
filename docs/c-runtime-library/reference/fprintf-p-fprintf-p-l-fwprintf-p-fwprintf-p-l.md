@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l"
 title: "_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l"
 ms.date: "11/04/2016"
 api_name: ["_fwprintf_p", "_fprintf_p_l", "_fwprintf_p_l", "_fprintf_p"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How the Framework Calls a Handler"
 title: "How the Framework Calls a Handler"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, command routing", "handler functions, MFC framework", "command handling [MFC], calling handlers and code in MFC", "command routing [MFC], MFC"]

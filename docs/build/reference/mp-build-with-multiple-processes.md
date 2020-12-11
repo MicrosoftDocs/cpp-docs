@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /MP (Build with Multiple Processes)"
 title: "/MP (Build with Multiple Processes)"
 ms.date: "04/08/2019"
 f1_keywords: ["VC.Project.VCCLCompilerTool.MultiProcessorCompilation"]

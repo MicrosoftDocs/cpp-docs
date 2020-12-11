@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _variant_t::Detach"
 title: "_variant_t::Detach"
 ms.date: "11/04/2016"
 f1_keywords: ["_variant_t::Detach", "_variant_t.Detach"]

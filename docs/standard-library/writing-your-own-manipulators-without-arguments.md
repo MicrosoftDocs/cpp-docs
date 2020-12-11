@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Writing Your Own Manipulators Without Arguments"
 title: "Writing Your Own Manipulators Without Arguments"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["manipulators"]

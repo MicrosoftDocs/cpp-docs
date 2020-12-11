@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /PDB (Use Program Database)"
 title: "/PDB (Use Program Database)"
 ms.date: "11/04/2016"
 f1_keywords: ["/pdb", "VC.Project.VCLinkerTool.ProgramDatabaseFile"]

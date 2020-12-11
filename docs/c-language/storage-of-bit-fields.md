@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Storage of Bit Fields"
 title: "Storage of Bit Fields"
 ms.date: "11/04/2016"
 ms.assetid: 4816a241-1580-4d1c-82ed-13d359733959

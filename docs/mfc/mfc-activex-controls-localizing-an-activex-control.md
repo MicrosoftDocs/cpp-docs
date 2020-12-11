@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Localizing an ActiveX Control"
 title: "MFC ActiveX Controls: Localizing an ActiveX Control"
 ms.date: "09/12/2018"
 f1_keywords: ["LocaleID", "AfxOleRegisterTypeLib"]

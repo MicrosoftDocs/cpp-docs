@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2065"
 title: "Compiler Error C2065"
 ms.date: "08/19/2019"
 f1_keywords: ["C2065"]

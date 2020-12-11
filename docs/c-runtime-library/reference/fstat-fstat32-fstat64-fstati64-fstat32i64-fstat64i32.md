@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32"
 title: "_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32"
 ms.date: "4/2/2020"
 api_name: ["_fstat32", "_fstat64", "_fstati64", "_fstat", "_fstat64i32", "_fstat32i64", "_o__fstat32", "_o__fstat32i64", "_o__fstat64", "_o__fstat64i32"]

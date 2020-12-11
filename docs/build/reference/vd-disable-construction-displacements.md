@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /vd (Disable Construction Displacements)"
 title: "/vd (Disable Construction Displacements)"
 ms.date: "11/04/2016"
 f1_keywords: ["/vd"]

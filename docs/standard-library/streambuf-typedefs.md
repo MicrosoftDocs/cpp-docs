@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;streambuf&gt; typedefs"
 title: "&lt;streambuf&gt; typedefs"
 ms.date: "11/04/2016"
 f1_keywords: ["iosfwd/std::streambuf", "iosfwd/std::wstreambuf"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Servers: Server Items"
 title: "Servers: Server Items"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["server items, implementing", "servers [MFC], server items", "architecture [MFC], server-item", "server items", "OLE server applications [MFC], server items"]

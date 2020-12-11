@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: General MBCS Programming Advice"
 title: "General MBCS Programming Advice"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MBCS [C++], dialog box fonts", "MS Shell Dlg", "MBCS [C++], programming", "dialog boxes [C++], fonts"]

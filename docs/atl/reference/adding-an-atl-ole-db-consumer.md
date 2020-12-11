@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an ATL OLE DB Consumer"
 title: "Adding an ATL OLE DB Consumer"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["ATL OLE DB consumers"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cpp_quote"
 title: "cpp_quote (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.cpp_quote"]

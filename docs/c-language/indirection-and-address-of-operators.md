@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Indirection and Address-of Operators"
 title: "Indirection and Address-of Operators"
 ms.date: "02/16/2018"
 helpviewer_keywords: ["address-of operator (&)", "* operator", "operators [C++], address-of", "ampersand operator (&)", "* operator, indirection operator", "addresses [C++], indirection", "addresses [C++]", "indirection operator", "& operator, address-of operator", "null pointers [C++]", "* operator, address-of operator", "operators [C++], indirection"]

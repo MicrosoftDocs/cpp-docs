@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Compiler Warning RW4003"
 title: "Resource Compiler Warning RW4003"
 ms.date: "11/04/2016"
 f1_keywords: ["RW4003"]

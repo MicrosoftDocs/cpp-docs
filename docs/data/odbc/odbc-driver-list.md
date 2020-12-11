@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ODBC Driver List"
 title: "ODBC Driver List"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC drivers", "ODBC drivers, list of", "drivers, ODBC"]

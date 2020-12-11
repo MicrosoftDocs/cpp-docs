@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Files in MFC"
 title: "Files in MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["serialization [MFC], MFC files", "I/O [MFC], MFC classes", "files [MFC], MFC", "files [MFC], serialization", "binary access, binary file operations in MFC", "file I/O classes [MFC]", "I/O [MFC]", "persistence [MFC]", "MFC, file operations", "files [MFC], manipulating", "binary access [MFC]"]

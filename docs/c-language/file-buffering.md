@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File Buffering"
 title: "File Buffering"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["buffering", "buffers [C++], file buffering", "files [C++], buffering"]

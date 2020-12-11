@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an ATL Property Page"
 title: "Adding an ATL Property Page"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["property pages, adding", "ATL projects, adding property pages", "controls [ATL], property pages"]

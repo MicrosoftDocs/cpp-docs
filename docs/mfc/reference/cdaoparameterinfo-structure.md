@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDaoParameterInfo Structure"
 title: "CDaoParameterInfo Structure"
 ms.date: "09/17/2019"
 f1_keywords: ["CDaoParameterInfo"]

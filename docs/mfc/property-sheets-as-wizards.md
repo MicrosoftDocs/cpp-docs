@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property Sheets as Wizards"
 title: "Property Sheets as Wizards"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["property sheets, as wizards"]

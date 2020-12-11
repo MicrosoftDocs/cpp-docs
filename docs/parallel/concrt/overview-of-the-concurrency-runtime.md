@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overview of the Concurrency Runtime"
 title: "Overview of the Concurrency Runtime"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["Concurrency Runtime, requirements", "Concurrency Runtime, architecture", "Concurrency Runtime, overview", "Concurrency Runtime, lambda expressions"]

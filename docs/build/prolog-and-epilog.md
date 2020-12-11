@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: x64 prolog and epilog"
 title: "x64 prolog and epilog"
 ms.date: "12/17/2018" 
 ms.assetid: 0453ed1a-3ff1-4bee-9cc2-d6d3d6384984

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWordArray Class"
 title: "CWordArray Class"
 ms.date: "09/07/2019"
 f1_keywords: ["CWordArray", "AFXCOLL/CWordArray", "AFXCOLL/CWordArray::CWordArray", "AFXCOLL/CWordArray::Add", "AFXCOLL/CWordArray::Append", "AFXCOLL/CWordArray::Copy", "AFXCOLL/CWordArray::ElementAt", "AFXCOLL/CWordArray::FreeExtra", "AFXCOLL/CWordArray::GetAt", "AFXCOLL/CWordArray::GetCount", "AFXCOLL/CWordArray::GetData", "AFXCOLL/CWordArray::GetSize", "AFXCOLL/CWordArray::GetUpperBound", "AFXCOLL/CWordArray::InsertAt", "AFXCOLL/CWordArray::IsEmpty", "AFXCOLL/CWordArray::RemoveAll", "AFXCOLL/CWordArray::RemoveAt", "AFXCOLL/CWordArray::SetAt", "AFXCOLL/CWordArray::SetAtGrow", "AFXCOLL/CWordArray::SetSize"]

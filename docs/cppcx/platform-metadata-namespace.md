@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Metadata Namespace"
 title: "Platform::Metadata Namespace"
 ms.date: "12/30/2016"
 ms.topic: "reference"

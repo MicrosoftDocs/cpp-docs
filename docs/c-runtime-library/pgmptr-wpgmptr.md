@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _pgmptr, _wpgmptr"
 title: "_pgmptr, _wpgmptr"
 ms.date: "11/04/2016"
 f1_keywords: ["pgmptr", "_pgmptr", "wpgmptr", "_wpgmptr"]

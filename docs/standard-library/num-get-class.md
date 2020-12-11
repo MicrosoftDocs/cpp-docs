@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: num_get Class"
 title: "num_get Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocnum/std::num_get", "locale/std::num_get::char_type", "locale/std::num_get::iter_type", "locale/std::num_get::do_get", "locale/std::num_get::get"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCustomSession (CustomSess.H)"
 title: "CCustomSession (CustomSess.H)"
 ms.date: "10/22/2018"
 f1_keywords: ["cmyprovidersession", "myprovidersess.h", "ccustomsession", "customsess.h"]

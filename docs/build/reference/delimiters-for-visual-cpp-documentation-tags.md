@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Delimiters for Visual C++ Documentation Tags"
 title: "Delimiters for Visual C++ Documentation Tags"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["XML documentation, delimiters"]

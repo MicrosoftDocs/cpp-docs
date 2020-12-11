@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComHeapPtr Class"
 title: "CComHeapPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComHeapPtr", "ATLBASE/ATL::CComHeapPtr", "ATLBASE/ATL::CComHeapPtr::CComHeapPtr"]

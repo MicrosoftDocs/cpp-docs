@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _rmtmp"
 title: "_rmtmp"
 ms.date: "4/2/2020"
 api_name: ["_rmtmp", "_o__rmtmp"]

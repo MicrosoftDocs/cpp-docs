@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDataObjectImpl Class"
 title: "IDataObjectImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IDataObjectImpl", "ATLCTL/ATL::IDataObjectImpl", "ATLCTL/ATL::IDataObjectImpl::DAdvise", "ATLCTL/ATL::IDataObjectImpl::DUnadvise", "ATLCTL/ATL::IDataObjectImpl::EnumDAdvise", "ATLCTL/ATL::IDataObjectImpl::EnumFormatEtc", "ATLCTL/ATL::IDataObjectImpl::FireDataChange", "ATLCTL/ATL::IDataObjectImpl::GetCanonicalFormatEtc", "ATLCTL/ATL::IDataObjectImpl::GetData", "ATLCTL/ATL::IDataObjectImpl::GetDataHere", "ATLCTL/ATL::IDataObjectImpl::QueryGetData", "ATLCTL/ATL::IDataObjectImpl::SetData"]

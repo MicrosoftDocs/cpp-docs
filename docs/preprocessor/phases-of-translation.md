@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Phases of translation"
 title: "Phases of translation"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["translation phases", "preprocessor, translation", "translation, compiler process", "preprocessor", "file translation [C++], compiler process", "files [C++], translation"]

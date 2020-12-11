@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Array and WriteOnlyArray (C++/CX)"
 title: "Array and WriteOnlyArray (C++/CX)"
 ms.date: "01/22/2017"
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4

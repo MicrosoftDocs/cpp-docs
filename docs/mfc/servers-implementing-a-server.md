@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Servers: Implementing a Server"
 title: "Servers: Implementing a Server"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["servers, implementing", "OLE server applications [MFC], implementing OLE servers"]

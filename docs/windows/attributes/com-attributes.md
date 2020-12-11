@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COM Attributes"
 title: "COM Attributes"
 ms.date: "10/03/2018"
 helpviewer_keywords: ["attributes [C++/CLI], reference topics", "attributes [COM]", "COM, attributes"]

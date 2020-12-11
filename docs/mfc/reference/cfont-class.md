@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFont Class"
 title: "CFont Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CFont", "AFXWIN/CFont", "AFXWIN/CFont::CFont", "AFXWIN/CFont::CreateFont", "AFXWIN/CFont::CreateFontIndirect", "AFXWIN/CFont::CreatePointFont", "AFXWIN/CFont::CreatePointFontIndirect", "AFXWIN/CFont::FromHandle", "AFXWIN/CFont::GetLogFont"]

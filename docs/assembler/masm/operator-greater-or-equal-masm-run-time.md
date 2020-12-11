@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator &gt;= (MASM Run Time)"
 title: "operator &gt;= (MASM Run Time)"
 ms.date: "12/17/2019"
 f1_keywords: ["operator >="]

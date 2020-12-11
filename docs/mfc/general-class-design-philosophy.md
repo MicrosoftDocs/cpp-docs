@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: General Class Design Philosophy"
 title: "General Class Design Philosophy"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["designing classes [MFC]", "MFC, Windows API", "Visual C, Windows API calls", "classes [MFC], MFC class design", "Windows API [MFC], and MFC"]

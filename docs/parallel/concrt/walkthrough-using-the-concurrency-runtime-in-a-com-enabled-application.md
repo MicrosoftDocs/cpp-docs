@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Using the Concurrency Runtime in a COM-Enabled Application"
 title: "Walkthrough: Using the Concurrency Runtime in a COM-Enabled Application"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["Concurrency Runtime, use with COM", "COM, use with the Concurrency Runtime"]

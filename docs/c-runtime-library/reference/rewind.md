@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: rewind"
 title: "rewind"
 ms.date: "4/2/2020"
 api_name: ["rewind", "_o_rewind"]

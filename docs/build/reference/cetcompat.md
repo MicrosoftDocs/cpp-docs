@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /CETCOMPAT (CET Shadow Stack compatible)"
 title: "/CETCOMPAT (CET Shadow Stack compatible)"
 ms.date: "09/01/2020"
 f1_keywords: ["/CETCOMPAT"]

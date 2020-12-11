@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Add Restart Manager Support"
 title: "How to: Add Restart Manager Support"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Restart manager [MFC]", "C++, application crash support"]

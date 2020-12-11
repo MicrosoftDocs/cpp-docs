@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sequence of Operations for Creating Database Applications"
 title: "Sequence of Operations for Creating Database Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["applications [MFC], database", "database applications [MFC]", "database applications [MFC], creating", "MFC, database applications"]

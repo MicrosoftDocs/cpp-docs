@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN014: Custom Controls"
 title: "TN014: Custom Controls"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.controls"]

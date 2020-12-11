@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IPersistPropertyBagImpl Class"
 title: "IPersistPropertyBagImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IPersistPropertyBagImpl", "ATLCOM/ATL::IPersistPropertyBagImpl", "ATLCOM/ATL::IPersistPropertyBagImpl::GetClassID", "ATLCOM/ATL::IPersistPropertyBagImpl::InitNew", "ATLCOM/ATL::IPersistPropertyBagImpl::Load", "ATLCOM/ATL::IPersistPropertyBagImpl::Save"]

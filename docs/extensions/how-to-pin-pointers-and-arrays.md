@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Pin Pointers and Arrays"
 title: "How to: Pin Pointers and Arrays"
 ms.date: "10/12/2018"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Requirements for STL/CLR Container Elements"
 title: "Requirements for STL/CLR Container Elements"
 ms.date: "11/04/2016"
 ms.topic: "reference"

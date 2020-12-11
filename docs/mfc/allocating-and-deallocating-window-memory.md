@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Allocating and Deallocating Window Memory"
 title: "Allocating and Deallocating Window Memory"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory allocation, window objects", "memory deallocation", "storage for window objects [MFC]", "memory deallocation, window memory", "window objects [MFC], deallocating memory for", "storage for window objects [MFC], allocating"]

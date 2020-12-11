@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EDITBIN Command Line"
 title: "EDITBIN Command Line"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["EDITBIN program, command line"]

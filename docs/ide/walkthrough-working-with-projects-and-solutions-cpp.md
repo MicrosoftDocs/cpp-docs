@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Working with Projects and Solutions (C++)"
 title: "Walkthrough: Working with Projects and Solutions (C++)"
 ms.date: "05/14/2019"
 helpviewer_keywords: ["solutions [C++]", "projects [C++], about projects", "projects [C++]", "solutions [C++], about solutions"]

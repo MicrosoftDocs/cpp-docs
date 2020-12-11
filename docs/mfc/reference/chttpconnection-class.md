@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CHttpConnection Class"
 title: "CHttpConnection Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CHttpConnection", "AFXINET/CHttpConnection", "AFXINET/CHttpConnection::CHttpConnection", "AFXINET/CHttpConnection::OpenRequest"]

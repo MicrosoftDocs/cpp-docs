@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fgets, fgetws"
 title: "fgets, fgetws"
 ms.date: "4/2/2020"
 api_name: ["fgets", "fgetws", "_o_fgets", "_o_fgetws"]

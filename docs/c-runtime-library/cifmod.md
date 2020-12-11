@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CIfmod"
 title: "_CIfmod"
 ms.date: "4/2/2020"
 api_name: ["_CIfmod", "_o__CIfmod"]

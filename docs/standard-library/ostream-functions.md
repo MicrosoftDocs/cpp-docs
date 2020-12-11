@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;ostream&gt; functions"
 title: "&lt;ostream&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["ostream/std::swap", "ostream/std::endl", "ostream/std::ends", "ostream/std::flush"]

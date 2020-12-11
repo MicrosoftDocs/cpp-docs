@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: source_link_manager Class"
 title: "source_link_manager Class"
 ms.date: "11/04/2016"
 f1_keywords: ["source_link_manager", "AGENTS/concurrency::source_link_manager", "AGENTS/concurrency::source_link_manager::source_link_manager", "AGENTS/concurrency::source_link_manager::add", "AGENTS/concurrency::source_link_manager::begin", "AGENTS/concurrency::source_link_manager::contains", "AGENTS/concurrency::source_link_manager::count", "AGENTS/concurrency::source_link_manager::reference", "AGENTS/concurrency::source_link_manager::register_target_block", "AGENTS/concurrency::source_link_manager::release", "AGENTS/concurrency::source_link_manager::remove", "AGENTS/concurrency::source_link_manager::set_bound"]

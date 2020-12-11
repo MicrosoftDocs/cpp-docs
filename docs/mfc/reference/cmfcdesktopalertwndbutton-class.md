@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCDesktopAlertWndButton Class"
 title: "CMFCDesktopAlertWndButton Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCDesktopAlertWndButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCaptionButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCloseButton"]

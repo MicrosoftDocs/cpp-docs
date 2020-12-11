@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Initializing Strings"
 title: "Initializing Strings"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["character arrays, initializing", "strings [C++], initializing", "initializing arrays, strings"]

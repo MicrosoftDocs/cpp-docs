@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3291"
 title: "Compiler Error C3291"
 ms.date: "11/04/2016"
 f1_keywords: ["C3291"]

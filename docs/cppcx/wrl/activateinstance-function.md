@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActivateInstance Function"
 title: "ActivateInstance Function"
 ms.date: "11/04/2016"
 ms.topic: "reference"

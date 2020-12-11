@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Messages Macros"
 title: "Windows Messages Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::WM_FORWARDMSG"]

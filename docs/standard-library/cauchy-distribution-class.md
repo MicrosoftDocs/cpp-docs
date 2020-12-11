@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cauchy_distribution Class"
 title: "cauchy_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::cauchy_distribution", "random/std::cauchy_distribution::reset", "random/std::cauchy_distribution::a", "random/std::cauchy_distribution::b", "random/std::cauchy_distribution::param", "random/std::cauchy_distribution::min", "random/std::cauchy_distribution::max", "random/std::cauchy_distribution::operator()", "random/std::cauchy_distribution::param_type", "random/std::cauchy_distribution::param_type::a", "random/std::cauchy_distribution::param_type::b", "random/std::cauchy_distribution::param_type::operator==", "random/std::cauchy_distribution::param_type::operator!="]

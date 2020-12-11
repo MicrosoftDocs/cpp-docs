@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application Design Choices"
 title: "Application Design Choices"
 ms.date: "09/12/2019"
 helpviewer_keywords: ["design", "application design [MFC], design goals", "application design [MFC], Internet applications", "Internet applications [MFC], designing applications", "Internet [MFC], vs. intranets", "applications [MFC], Internet", "server applications [MFC], vs. client applications on Internet", "client applications [MFC], vs. server applications on Internet"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: General Rules for Operator Overloading"
 title: "General Rules for Operator Overloading"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operator overloading [C++], rules"]

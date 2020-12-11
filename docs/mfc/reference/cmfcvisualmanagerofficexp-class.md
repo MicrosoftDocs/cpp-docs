@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCVisualManagerOfficeXP Class"
 title: "CMFCVisualManagerOfficeXP Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCVisualManagerOfficeXP"]

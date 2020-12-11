@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDaoFieldExchange Class"
 title: "CDaoFieldExchange Class"
 ms.date: "09/17/2019"
 f1_keywords: ["CDaoFieldExchange", "AFXDAO/CDaoFieldExchange", "AFXDAO/CDaoFieldExchange::IsValidOperation", "AFXDAO/CDaoFieldExchange::SetFieldType", "AFXDAO/CDaoFieldExchange::m_nOperation", "AFXDAO/CDaoFieldExchange::m_prs"]

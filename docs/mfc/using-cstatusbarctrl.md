@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CStatusBarCtrl"
 title: "Using CStatusBarCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CStatusBarCtrl class [MFC], using", "status bar controls [MFC], about status bar controls"]

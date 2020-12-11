@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Effects of Buffering"
 title: "Effects of Buffering"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["buffers, effects of buffering", "buffering, effects of"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Filenames"
 title: "Filenames"
 ms.date: "11/04/2016"
 ms.assetid: f08d2b81-4bfc-49bc-986c-bfb2face8138

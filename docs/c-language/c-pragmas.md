@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Pragmas"
 title: "C Pragmas"
 ms.date: 07/26/2020
 helpviewer_keywords: ["pragmas, C/C++"]

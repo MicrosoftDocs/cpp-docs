@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Editors (C++)"
 title: "Resource Editors (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vs.editors.resource", "vc.resvw.resource.editors", "vs.resvw.resource.editors", "vs.resourceview", "vc.resvw.resource.previewing", "vs.resvw.resource.previewing"]

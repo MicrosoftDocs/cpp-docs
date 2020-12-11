@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_bind_expression Class"
 title: "is_bind_expression Class"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::is_bind_expression"]

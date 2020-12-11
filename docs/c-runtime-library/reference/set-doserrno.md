@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _set_doserrno"
 title: "_set_doserrno"
 ms.date: "4/2/2020"
 api_name: ["_set_doserrno", "_o__set_doserrno"]

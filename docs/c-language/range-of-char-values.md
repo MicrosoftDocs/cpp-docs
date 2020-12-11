@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Range of char Values"
 title: "Range of char Values"
 ms.date: "11/04/2016"
 ms.assetid: 15ae9781-ec21-4333-bba8-6d2383bbf7f1

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /fp (Specify floating-point behavior)"
 title: "/fp (Specify floating-point behavior)"
 ms.date: "11/09/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.floatingPointModel", "VC.Project.VCCLWCECompilerTool.FloatingPointExceptions", "/fp", "VC.Project.VCCLWCECompilerTool.floatingPointModel", "VC.Project.VCCLCompilerTool.FloatingPointExceptions"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type System (C++/CX)"
 title: "Type System (C++/CX)"
 ms.date: "02/03/2017"
 ms.assetid: b67bee8a-b526-4872-969e-ef22724e88fe

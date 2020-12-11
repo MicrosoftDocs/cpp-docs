@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Record Field Exchange: Working with the Wizard Code"
 title: "Record Field Exchange: Working with the Wizard Code"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["DoFieldExchange method, overriding", "Unicode, with database classes", "field data members, declaring", "RFX (ODBC), wizard code", "RFX (ODBC), implementing", "field data members", "ODBC, RFX", "m_nParams data member, initializing", "m_nFields data member", "m_nParams data member", "overriding, DoFieldExchange", "m_nFields data member, initializing"]

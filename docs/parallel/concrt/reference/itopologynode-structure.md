@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITopologyNode Structure"
 title: "ITopologyNode Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["ITopologyNode", "CONCRTRM/concurrency::ITopologyNode", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetExecutionResourceCount", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetFirstExecutionResource", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetId", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetNext", "CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetNumaNode"]

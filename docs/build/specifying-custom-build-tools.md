@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specify custom build tools"
 title: "Specifying Custom Build Tools"
 ms.date: "06/05/2018"
 f1_keywords: ["VC.Project.VCCustomBuildTool.CustomBuildToolBeforeTargets", "VC.Project.VCCustomBuildTool.Outputs", "VC.Project.VCCustomBuildTool.Command", "VC.Project.VCCustomBuildTool.CommandLine", "VC.Project.VCCustomBuildTool.AdditionalDependencies", "VC.Project.VCCustomBuildTool.Message", "VC.Project.VCCustomBuildTool.CustomBuildToolAfterTargets", "VC.Project.VCCustomBuildTool.Description", "VC.Project.VCCustomBuildTool.AdditionalInputs"]

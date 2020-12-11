@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Obsolete Forms of Function Declarations and Definitions"
 title: "Obsolete Forms of Function Declarations and Definitions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["old style function declarations"]

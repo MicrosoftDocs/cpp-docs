@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ___setlc_active_func, ___unguarded_readlc_active_add_func"
 title: "___setlc_active_func, ___unguarded_readlc_active_add_func"
 ms.date: "11/04/2016"
 api_name: ["___setlc_active_func", "___unguarded_readlc_active_add_func"]

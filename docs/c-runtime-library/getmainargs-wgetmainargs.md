@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __getmainargs, __wgetmainargs"
 title: "__getmainargs, __wgetmainargs"
 ms.date: "11/04/2016"
 api_name: ["__wgetmainargs", "__getmainargs"]

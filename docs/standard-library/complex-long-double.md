@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: complex&lt;long double&gt;"
 title: "complex&lt;long double&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["std::complex<long double>", "complex<long double>", "std.complex<long double>"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Instantiate WRL Components Directly"
 title: "How to: Instantiate WRL Components Directly"
 ms.date: "11/04/2016"
 ms.topic: "reference"

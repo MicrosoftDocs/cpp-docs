@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bad_typeid exception"
 title: "bad_typeid exception"
 ms.date: "10/04/2019"
 f1_keywords: ["bad_typeid", "bad_typeid_cpp"]

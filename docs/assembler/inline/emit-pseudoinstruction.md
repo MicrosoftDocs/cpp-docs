@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _emit Pseudoinstruction"
 title: "_emit Pseudoinstruction"
 ms.date: "08/30/2018"
 f1_keywords: ["_emit"]

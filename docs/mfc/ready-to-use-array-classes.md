@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Ready-to-Use Array Classes"
 title: "Ready-to-Use Array Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.array"]

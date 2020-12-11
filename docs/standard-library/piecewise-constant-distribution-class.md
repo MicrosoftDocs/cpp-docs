@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: piecewise_constant_distribution Class"
 title: "piecewise_constant_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::piecewise_constant_distribution", "random/std::piecewise_constant_distribution::reset", "random/std::piecewise_constant_distribution::intervals", "random/std::piecewise_constant_distribution::densities", "random/std::piecewise_constant_distribution::param", "random/std::piecewise_constant_distribution::min", "random/std::piecewise_constant_distribution::max", "random/std::piecewise_constant_distribution::operator()", "random/std::piecewise_constant_distribution::param_type", "random/std::piecewise_constant_distribution::param_type::intervals", "random/std::piecewise_constant_distribution::param_type::densities", "random/std::piecewise_constant_distribution::param_type::operator==", "random/std::piecewise_constant_distribution::param_type::operator!="]

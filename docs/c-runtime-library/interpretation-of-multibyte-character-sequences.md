@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interpretation of multibyte-character sequences"
 title: "Interpretation of multibyte-character sequences"
 ms.date: "10/22/2019"
 f1_keywords: ["c.character.multibyte"]

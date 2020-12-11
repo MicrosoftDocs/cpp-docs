@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Bottomless Rich Edit Controls"
 title: "Bottomless Rich Edit Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["bottomless rich edit controls", "rich edit controls [MFC], bottomless", "CRichEditCtrl class [MFC], bottomless"]

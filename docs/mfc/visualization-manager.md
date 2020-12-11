@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Visualization Manager"
 title: "Visualization Manager"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["Visualization Manager"]

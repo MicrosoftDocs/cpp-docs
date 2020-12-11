@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Nested Class Declarations"
 title: "Nested Class Declarations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["classes [C++], declaring", "declarations, class", "nested classes [C++]", "nested classes [C++], declaring", "declaring classes [C++]", "declarations, nested classes"]

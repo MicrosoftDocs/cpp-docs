@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Testing the Read-Only Provider"
 title: "Testing the Read-Only Provider"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "OLE DB providers, calling", "OLE DB providers, testing"]

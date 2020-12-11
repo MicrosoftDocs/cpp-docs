@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Global Variables"
 title: "ATL Global Variables"
 ms.date: "12/06/2017"
 f1_keywords: ["ATLBASE/_pAtlModule"]

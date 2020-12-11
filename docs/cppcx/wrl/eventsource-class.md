@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EventSource Class"
 title: "EventSource Class"
 ms.date: "09/12/2018"
 ms.topic: "reference"

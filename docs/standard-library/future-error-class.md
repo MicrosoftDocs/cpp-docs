@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: future_error Class"
 title: "future_error Class"
 ms.date: "11/04/2016"
 f1_keywords: ["future/std::future_error"]

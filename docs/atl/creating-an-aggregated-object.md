@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating an Aggregated Object"
 title: "Creating an Aggregated Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["aggregation [C++], creating aggregated objects", "aggregate objects [C++], creating"]

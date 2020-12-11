@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transfers of Control"
 title: "Transfers of Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["control flow, branching", "control flow, transferring control"]

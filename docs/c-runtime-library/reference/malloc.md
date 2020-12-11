@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: malloc"
 title: "malloc"
 ms.date: "4/2/2020"
 api_name: ["malloc", "_o_malloc"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fegetenv"
 title: "fegetenv"
 ms.date: "04/05/2018"
 api_name: ["fetegenv"]

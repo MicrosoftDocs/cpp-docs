@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Processing Header-Control Notifications"
 title: "Processing Header-Control Notifications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CHeaderCtrl class [MFC], processing notifications", "controls [MFC], header", "notifications [MFC], processing for CHeaderCtrl", "header controls [MFC], processing notifications", "header control notifications"]

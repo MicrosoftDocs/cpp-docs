@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: no_smart_pointers import attribute"
 title: "no_smart_pointers import attribute"
 ms.date: "08/29/2019"
 f1_keywords: ["no_smart_pointers"]

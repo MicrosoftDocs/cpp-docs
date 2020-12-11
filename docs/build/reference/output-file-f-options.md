@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Output-File (/F) Options"
 title: "Output-File (-F) Options"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["output files", "output files, compiler options [C++]", "cl.exe compiler, output files"]

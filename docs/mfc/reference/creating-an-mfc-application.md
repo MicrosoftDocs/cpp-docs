@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating an MFC Application"
 title: "Creating an MFC Application"
 ms.date: "08/28/2019"
 helpviewer_keywords: ["applications [MFC]", "MFC, creating applications", "MFC applications"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strset, wcsset"
 title: "strset, wcsset"
 ms.date: "11/04/2016"
 api_name: ["wcsset", "strset"]

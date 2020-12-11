@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DAO Database Engine Initialization and Termination"
 title: "DAO Database Engine Initialization and Termination"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["DAO (Data Access Objects), termination", "DAO (Data Access Objects), initialization"]

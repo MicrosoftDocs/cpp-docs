@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3495"
 title: "Compiler Error C3495"
 ms.date: "11/04/2016"
 f1_keywords: ["C3495"]

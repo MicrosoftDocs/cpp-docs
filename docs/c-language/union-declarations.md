@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Union Declarations"
 title: "Union Declarations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["unions", "union keyword [C], declarations", "variant records"]

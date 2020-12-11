@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Math Error Constants"
 title: "Math Error Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["_PLOSS", "_UNDERFLOW", "_TLOSS", "_SING", "_DOMAIN", "_OVERFLOW"]

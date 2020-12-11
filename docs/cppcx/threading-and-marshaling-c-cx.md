@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Threading and Marshaling (C++/CX)"
 title: "Threading and Marshaling (C++/CX)"
 ms.date: "12/30/2016"
 f1_keywords: ["C4451"]

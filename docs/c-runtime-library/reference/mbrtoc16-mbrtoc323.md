@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: mbrtoc16, mbrtoc32"
 title: "mbrtoc16, mbrtoc323"
 ms.date: "4/2/2020"
 api_name: ["mbrtoc16", "mbrtoc32", "_o_mbrtoc16", "_o_mbrtoc32"]

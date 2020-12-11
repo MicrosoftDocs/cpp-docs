@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /KEYCONTAINER (Specify a Key Container to Sign an Assembly)"
 title: "/KEYCONTAINER (Specify a Key Container to Sign an Assembly)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.KeyContainer", "/keycontainer"]

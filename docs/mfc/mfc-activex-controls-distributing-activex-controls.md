@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Distributing ActiveX Controls"
 title: "MFC ActiveX Controls: Distributing ActiveX Controls"
 ms.date: "09/12/2018"
 f1_keywords: ["GetWindowsDirectory", "GetSystemDirectory"]

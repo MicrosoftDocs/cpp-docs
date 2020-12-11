@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Relationship to the C-Language API"
 title: "Relationship to the C-Language API"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["books [MFC], about MFC and Windows SDK", "books [MFC]", "MFC, Windows API", "Visual C, Windows API calls", "Windows API [MFC], and MFC"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: indirect_array Class"
 title: "indirect_array Class"
 ms.date: "11/04/2016"
 f1_keywords: ["valarray/std::indirect_array"]

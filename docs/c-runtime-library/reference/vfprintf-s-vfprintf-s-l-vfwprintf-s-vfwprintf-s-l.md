@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: vfprintf_s, _vfprintf_s_l, vfwprintf_s, _vfwprintf_s_l"
 title: "vfprintf_s, _vfprintf_s_l, vfwprintf_s, _vfwprintf_s_l"
 ms.date: "11/04/2016"
 api_name: ["vfwprintf_s", "_vfprintf_s_l", "vfprintf_s", "_vfwprintf_s_l"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /HEAP (Set Heap Size)"
 title: "/HEAP (Set Heap Size)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.HeapCommitSize", "VC.Project.VCLinkerTool.HeapReserveSize"]

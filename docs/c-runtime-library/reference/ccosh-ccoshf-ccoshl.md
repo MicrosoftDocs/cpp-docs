@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ccosh, ccoshf, ccoshl"
 title: "ccosh, ccoshf, ccoshl"
 ms.date: "11/04/2016"
 api_name: ["ccosh", "ccoshf", "ccoshl"]

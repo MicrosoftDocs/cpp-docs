@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic Interfaces (C++/CLI)"
 title: "Generic Interfaces (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

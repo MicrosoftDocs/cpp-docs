@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating the Month Calendar Control"
 title: "Creating the Month Calendar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], creating", "month calendar controls [MFC], creating", "month calendar controls [MFC]"]

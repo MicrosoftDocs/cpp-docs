@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: file_status Class"
 title: "file_status Class"
 ms.date: "09/10/2018"
 f1_keywords: ["filesystem/std::experimental::filesystem::file_status", "filesystem/std::experimental::filesystem::file_status::operator=", "filesystem/std::experimental::filesystem::file_status::type", "filesystem/std::experimental::filesystem::file_status::permissions"]

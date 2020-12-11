@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITopologyExecutionResource Structure"
 title: "ITopologyExecutionResource Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["ITopologyExecutionResource", "CONCRTRM/concurrency::ITopologyExecutionResource", "CONCRTRM/concurrency::ITopologyExecutionResource::ITopologyExecutionResource::GetId", "CONCRTRM/concurrency::ITopologyExecutionResource::ITopologyExecutionResource::GetNext"]

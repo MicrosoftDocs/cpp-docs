@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fatal Error C1510"
 title: "Fatal Error C1510"
 ms.date: "04/11/2017"
 f1_keywords: ["C1510"]

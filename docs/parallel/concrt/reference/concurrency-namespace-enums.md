@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: concurrency namespace enums"
 title: "concurrency namespace enums"
 ms.date: "11/04/2016"
 f1_keywords: ["CONCRT/concurrency::Agents_EventType", "CONCRT/concurrency::Concrt_TraceFlags", "CONCRT/concurrency::CriticalRegionType", "CONCRT/concurrency::PolicyElementKey", "CONCRT/concurrency::SchedulerType", "CONCRT/concurrency::SwitchingProxyState", "CONCRT/concurrency::WinRTInitializationType", "CONCRT/concurrency::join_type", "CONCRT/concurrency::message_status Enumeration"]

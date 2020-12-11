@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN030: Customizing Printing and Print Preview"
 title: "TN030: Customizing Printing and Print Preview"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.print"]

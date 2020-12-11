@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: runtime_error Class"
 title: "runtime_error Class"
 ms.date: "11/04/2016"
 f1_keywords: ["stdexcept/std::runtime_error"]

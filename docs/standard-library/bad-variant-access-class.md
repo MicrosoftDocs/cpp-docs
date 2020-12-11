@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bad_variant_access Class"
 title: "bad_variant_access Class"
 ms.date: "04/04/2019"
 f1_keywords: ["variant/std::bad_variant_access"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /MACHINE (Specify Target Platform)"
 title: "/MACHINE (Specify Target Platform)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.TargetMachine", "/machine"]

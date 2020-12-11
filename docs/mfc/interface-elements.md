@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interface Elements"
 title: "Interface Elements"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["architecture [MFC], MFC Feature Pack", "MFC Feature Pack, architecture"]

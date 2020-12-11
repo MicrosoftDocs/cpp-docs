@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator IMAGEREL"
 title: "operator IMAGEREL"
 ms.date: "12/17/2019"
 f1_keywords: ["operator IMAGEREL", "IMAGEREL"]

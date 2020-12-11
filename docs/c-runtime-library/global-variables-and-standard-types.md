@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Global Variables and Standard Types"
 title: "Global Variables and Standard Types"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["global variables, CRT", "standard types, CRT", "standard types", "types [CRT]"]

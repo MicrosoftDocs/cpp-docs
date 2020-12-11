@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Declare Handles in Native Types"
 title: "How to: Declare Handles in Native Types"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

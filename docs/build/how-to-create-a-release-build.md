@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Release Build"
 title: "How to: Create a Release Build"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Win32, release build", "release builds, creating"]

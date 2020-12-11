@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Clipboard: When to Use Each Clipboard Mechanism"
 title: "Clipboard: When to Use Each Clipboard Mechanism"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["applications [OLE], Clipboard", "OLE Clipboard, guidelines", "Clipboard [MFC], mechanisms", "OLE Clipboard, formats", "formats [MFC], Clipboard for OLE", "Clipboard [MFC], formats"]

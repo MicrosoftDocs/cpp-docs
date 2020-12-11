@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: unique_ptr Class"
 title: "unique_ptr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::unique_ptr", "memory/std::unique_ptr::deleter_type", "memory/std::unique_ptr::element_type", "memory/std::unique_ptr::pointer", "memory/std::unique_ptr::get", "memory/std::unique_ptr::get_deleter", "memory/std::unique_ptr::release", "memory/std::unique_ptr::reset", "memory/std::unique_ptr::swap"]

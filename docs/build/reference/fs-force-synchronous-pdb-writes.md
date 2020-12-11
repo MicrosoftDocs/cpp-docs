@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /FS (Force Synchronous PDB Writes)"
 title: "/FS (Force Synchronous PDB Writes)"
 ms.date: "11/04/2016"
 f1_keywords: ["/FS"]

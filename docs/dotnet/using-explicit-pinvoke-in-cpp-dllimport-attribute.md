@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Explicit PInvoke in C++ (DllImport Attribute)"
 title: "Using Explicit PInvoke in C++ (DllImport Attribute)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["marshaling [C++], platform invoke", "C++ Interop, platform invoke", "interop [C++], platform invoke", "platform invoke [C++], marshaling in C++", "data marshaling [C++], platform invoke"]

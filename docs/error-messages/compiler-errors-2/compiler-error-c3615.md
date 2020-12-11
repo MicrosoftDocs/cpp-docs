@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3615"
 title: "Compiler Error C3615"
 ms.date: "10/24/2017"
 f1_keywords: ["C3615"]

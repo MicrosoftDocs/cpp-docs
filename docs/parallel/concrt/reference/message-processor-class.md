@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: message_processor Class"
 title: "message_processor Class"
 ms.date: "11/04/2016"
 f1_keywords: ["message_processor", "AGENTS/concurrency::message_processor", "AGENTS/concurrency::message_processor::async_send", "AGENTS/concurrency::message_processor::sync_send", "AGENTS/concurrency::message_processor::wait", "AGENTS/concurrency::message_processor::process_incoming_message"]

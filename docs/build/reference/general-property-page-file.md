@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: General Property Page (File)"
 title: "General Property Page (File)"
 ms.date: "08/30/2019"
 f1_keywords: ["VC.Project.VCFileConfiguration.ExcludedFromBuild", "VC.Project.VCFileConfiguration.Tool"]

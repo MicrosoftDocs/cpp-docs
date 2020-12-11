@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: com::ptr Class"
 title: "com::ptr Class"
 ms.date: "01/16/2019"
 ms.topic: "reference"

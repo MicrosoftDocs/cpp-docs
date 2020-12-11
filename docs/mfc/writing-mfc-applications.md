@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Writing MFC Applications"
 title: "Writing MFC Applications"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["Internet applications [MFC], MFC", "MFC, Internet applications", "application wizards [MFC], Internet applications", "MFC, application development"]

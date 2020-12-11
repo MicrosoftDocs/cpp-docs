@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;functional&gt;"
 title: "&lt;functional&gt;"
 ms.date: "02/21/2019"
 f1_keywords: ["<functional>", "functional/std::<functional>", "std::<functional>"]

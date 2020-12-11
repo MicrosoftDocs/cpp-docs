@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Convert an Existing MFC Ribbon to a Ribbon Resource"
 title: "How to: Convert an Existing MFC Ribbon to a Ribbon Resource"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ribbon resource, converting from an MFC ribbon", "MFC ribbon, converting to a ribbon resource"]

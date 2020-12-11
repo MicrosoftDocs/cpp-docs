@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Strings, ATL Property Page Wizard"
 title: "Strings, ATL Property Page Wizard"
 ms.date: "05/09/2019"
 f1_keywords: ["vc.codewiz.class.atl.ppg.strings"]

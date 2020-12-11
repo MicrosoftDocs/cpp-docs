@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: RuntimeClassFlags Structure"
 title: "RuntimeClassFlags Structure"
 ms.date: "10/03/2018"
 ms.topic: "reference"

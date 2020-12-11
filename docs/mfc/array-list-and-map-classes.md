@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Array, List, and Map Classes"
 title: "Array, List, and Map Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["arrays [MFC], classes", "list classes [MFC]", "collection classes [MFC], maps", "map classes [MFC]", "collection classes [MFC], lists"]
