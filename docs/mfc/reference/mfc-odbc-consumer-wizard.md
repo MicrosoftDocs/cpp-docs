@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ODBC Consumer Wizard"
 title: "MFC ODBC Consumer Wizard"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["wizards [MFC]"]

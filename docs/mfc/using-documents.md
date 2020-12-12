@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Documents"
 title: "Using Documents"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["documents [MFC], C++ applications", "data [MFC], reading", "documents [MFC]", "files [MFC], writing to", "data [MFC], documents", "files [MFC]", "views [MFC], C++ applications", "document/view architecture [MFC], documents", "reading data [MFC], documents and views", "printing [MFC], documents", "writing to files [MFC]"]

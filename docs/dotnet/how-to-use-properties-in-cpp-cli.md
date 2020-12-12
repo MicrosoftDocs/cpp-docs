@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Properties in C++/CLI"
 title: "How to: Use Properties in C++/CLI"
 ms.date: "07/21/2017"
 helpviewer_keywords: ["simple properties", "properties [C++], simple"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __cdecl"
 title: "__cdecl"
 ms.date: "10/09/2018"
 f1_keywords: ["__cdecl_cpp", "__cdecl", "_cdecl", "cdecl"]

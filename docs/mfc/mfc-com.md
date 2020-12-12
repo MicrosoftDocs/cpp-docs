@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC COM"
 title: "MFC COM"
 ms.date: "09/12/2018"
 f1_keywords: ["MFC COM (MFC)"]

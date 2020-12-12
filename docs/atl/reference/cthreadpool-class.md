@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CThreadPool Class"
 title: "CThreadPool Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CThreadPool", "ATLUTIL/ATL::CThreadPool", "ATLUTIL/ATL::CThreadPool::CThreadPool", "ATLUTIL/ATL::CThreadPool::AddRef", "ATLUTIL/ATL::CThreadPool::GetNumThreads", "ATLUTIL/ATL::CThreadPool::GetQueueHandle", "ATLUTIL/ATL::CThreadPool::GetSize", "ATLUTIL/ATL::CThreadPool::GetTimeout", "ATLUTIL/ATL::CThreadPool::Initialize", "ATLUTIL/ATL::CThreadPool::QueryInterface", "ATLUTIL/ATL::CThreadPool::QueueRequest", "ATLUTIL/ATL::CThreadPool::Release", "ATLUTIL/ATL::CThreadPool::SetSize", "ATLUTIL/ATL::CThreadPool::SetTimeout", "ATLUTIL/ATL::CThreadPool::Shutdown"]

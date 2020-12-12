@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tree Control Parent and Child Items"
 title: "Tree Control Parent and Child Items"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["parent items in CTreeCtrl [MFC]", "child items in tree control [MFC]", "CTreeCtrl class [MFC], parent and child items", "tree controls [MFC], parent and child items"]

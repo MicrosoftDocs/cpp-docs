@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MAPI Support in MFC"
 title: "MAPI Support in MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, MAPI support", "MAPI support in MFC", "CDocument class [MFC], and MAPI", "OnUpdateFileSendMail method [MFC]", "MAPI, MFC", "OnFileSendMail method [MFC]"]

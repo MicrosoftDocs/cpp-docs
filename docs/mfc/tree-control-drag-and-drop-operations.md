@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tree Control Drag-and-Drop Operations"
 title: "Tree Control Drag-and-Drop Operations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CTreeCtrl class [MFC], drag and drop operations", "drag and drop [MFC], CTreeCtrl", "tree controls [MFC], drag and drop operations"]

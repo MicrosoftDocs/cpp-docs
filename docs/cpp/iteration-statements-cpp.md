@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Iteration Statements (C++)"
 title: "Iteration Statements (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["iteration statements", "loop structures, iteration statements"]

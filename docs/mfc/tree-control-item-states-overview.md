@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tree Control Item States Overview"
 title: "Tree Control Item States Overview"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["states, CTreeCtrl items", "tree controls [MFC], item states overview", "CTreeCtrl class [MFC], item states"]

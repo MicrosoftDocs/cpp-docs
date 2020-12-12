@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: do-while Statement (C++)"
 title: "do-while Statement (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["do_cpp"]

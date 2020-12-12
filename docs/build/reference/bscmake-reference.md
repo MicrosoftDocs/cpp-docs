@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BSCMAKE Reference"
 title: "BSCMAKE Reference"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["BSCMAKE, reference", "Microsoft Browse Information Maintenance Utility", "browse windows", "browse information files (.bsc), building", ".bsc files, building", "bsc files, building", "BSCMAKE"]

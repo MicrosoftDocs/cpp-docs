@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /PDBALTPATH (Use Alternate PDB Path)"
 title: "/PDBALTPATH (Use Alternate PDB Path)"
 ms.date: "11/04/2016"
 f1_keywords: ["/pdbaltpath"]

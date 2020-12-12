@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CBaseKeyFrame Class"
 title: "CBaseKeyFrame Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CBaseKeyFrame", "AFXANIMATIONCONTROLLER/CBaseKeyFrame", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::CBaseKeyFrame", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::AddToStoryboard", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::GetAnimationKeyframe", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::IsAdded", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::IsKeyframeAtOffset", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bAdded", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bIsKeyframeAtOffset", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_keyframe"]

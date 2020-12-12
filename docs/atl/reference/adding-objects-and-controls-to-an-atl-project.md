@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding Objects and Controls to an ATL Project"
 title: "Adding Objects and Controls to an ATL Project"
 ms.date: "05/09/2019"
 f1_keywords: ["vc.appwiz.ATL.controls"]

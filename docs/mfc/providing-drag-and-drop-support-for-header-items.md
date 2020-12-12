@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Providing Drag-and-Drop Support for Header Items"
 title: "Providing Drag-and-Drop Support for Header Items"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HDS_DRAGDROP style", "header items in header controls", "CHeaderCtrl class [MFC], drag and drop support", "HDN_ notifications [MFC]"]

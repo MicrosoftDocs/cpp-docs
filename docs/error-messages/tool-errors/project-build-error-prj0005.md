@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Project Build Error PRJ0005"
 title: "Project Build Error PRJ0005"
 ms.date: "11/04/2016"
 f1_keywords: ["PRJ0005"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Mutable Data Members (C++)"
 title: "Mutable Data Members (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["mutable_cpp"]

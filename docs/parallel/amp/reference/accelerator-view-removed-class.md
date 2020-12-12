@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: accelerator_view_removed Class"
 title: "accelerator_view_removed Class"
 ms.date: "03/27/2019"
 f1_keywords: ["accelerator_view_removed", "AMPRT/accelerator_view_removed", "AMPRT/Concurrency::accelerator_view_removed::accelerator_view_removed", "AMPRT/Concurrency::accelerator_view_removed::get_view_removed_reason"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MBCS Programming Tips"
 title: "MBCS Programming Tips"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["programming [C++], MBCS", "character sets [C++], multibyte", "MBCS [C++], programming", "multibyte characters [C++]"]

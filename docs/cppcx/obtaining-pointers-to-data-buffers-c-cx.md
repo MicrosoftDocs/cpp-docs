@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Obtaining pointers to data buffers (C++/CX)"
 title: "Obtaining pointers to data buffers (C++/CX)"
 ms.date: "11/19/2018"
 ms.assetid: db4f9370-dd95-4896-b5b8-4b202284f579

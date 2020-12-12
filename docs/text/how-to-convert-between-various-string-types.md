@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Convert Between Various String Types"
 title: "How to: Convert Between Various String Types"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

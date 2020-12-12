@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Deployment in Visual C++"
 title: "Deployment in Visual C++"
 ms.date: "05/11/2018"
 helpviewer_keywords: ["deploying applications [C++]", "application deployment [C++]"]

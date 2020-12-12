@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C logical operators"
 title: "C logical operators"
 ms.date: "06/14/2018"
 helpviewer_keywords: ["logical operators, expression sequence points", "logical operators, C", "logical AND operator", "|| operator", "operators [C], logical", "short-circuit evaluation", "&& operator", "logical OR operator"]

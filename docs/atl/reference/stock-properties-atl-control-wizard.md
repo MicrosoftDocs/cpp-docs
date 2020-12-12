@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Stock Properties, ATL Control Wizard"
 title: "Stock Properties, ATL Control Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.control.stockprops"]

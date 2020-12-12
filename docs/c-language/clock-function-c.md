@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: clock Function (C)"
 title: "clock Function (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["clock function"]

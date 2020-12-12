@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;array&gt; operators"
 title: "&lt;array&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["array/std::array::operator!=", "array/std::array::operator<", "array/std::array::operator<=", "array/std::array::operator>", "array/std::array::operator>=", "array/std::array::operator=="]

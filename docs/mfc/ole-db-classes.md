@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Classes"
 title: "OLE DB Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE DB consumers, support", "COleDBRecordView class [MFC]"]

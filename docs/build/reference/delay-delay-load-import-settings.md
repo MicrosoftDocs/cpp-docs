@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DELAY (Delay Load Import Settings)"
 title: "/DELAY (Delay Load Import Settings)"
 ms.date: "11/04/2016"
 f1_keywords: ["/delay", "VC.Project.VCLinkerTool.DelayNoBind", "VC.Project.VCLinkerTool.SupportUnloadOfDelayLoadedDLL", "VC.Project.VCLinkerTool.DelayUnload"]

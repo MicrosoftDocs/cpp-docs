@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /C (Preserve Comments During Preprocessing)"
 title: "/C (Preserve Comments During Preprocessing)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.KeepComments", "VC.Project.VCCLWCECompilerTool.KeepComments"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (Level 1) C4743"
 title: "Compiler Warning (Level 1) C4743"
 ms.date: "05/13/2019"
 f1_keywords: ["C4743"]

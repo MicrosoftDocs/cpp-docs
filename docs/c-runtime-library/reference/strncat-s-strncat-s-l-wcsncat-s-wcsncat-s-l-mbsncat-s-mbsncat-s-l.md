@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l"
 title: "strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l"
 ms.date: "4/2/2020"
 api_name: ["_wcsncat_s_l", "wcsncat_s", "_mbsncat_s_l", "_mbsncat_s", "strncat_s", "_strncat_s_l", "_o__mbsncat_s", "_o__mbsncat_s_l", "_o_strncat_s", "_o_wcsncat_s"]

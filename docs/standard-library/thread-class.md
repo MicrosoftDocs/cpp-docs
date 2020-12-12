@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: thread Class"
 title: "thread Class"
 ms.date: "11/04/2016"
 f1_keywords: ["thread/std::thread", "thread/std::thread::id Class", "thread/std::thread::thread", "thread/std::thread::detach", "thread/std::thread::get_id", "thread/std::thread::hardware_concurrency", "thread/std::thread::join", "thread/std::thread::joinable", "thread/std::thread::native_handle", "thread/std::thread::swap"]

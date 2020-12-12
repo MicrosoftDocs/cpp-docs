@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::swap"
 title: "Container Class::swap"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["swap method"]

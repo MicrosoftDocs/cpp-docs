@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isspace, iswspace, _isspace_l, _iswspace_l"
 title: "isspace, iswspace, _isspace_l, _iswspace_l"
 ms.date: "4/2/2020"
 api_name: ["iswspace", "_isspace_l", "_iswspace_l", "isspace", "_o_isspace", "_o_iswspace"]

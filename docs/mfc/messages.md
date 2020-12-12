@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Messages"
 title: "Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["messages, MFC", "messages [MFC]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows::Foundation Namespace"
 title: "Windows::Foundation Namespace"
 ms.date: "11/04/2016"
 ms.topic: "reference"

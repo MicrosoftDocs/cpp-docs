@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HString Class"
 title: "HString Class"
 ms.date: "07/15/2019"
 ms.topic: "reference"

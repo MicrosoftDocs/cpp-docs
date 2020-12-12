@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zf (Faster PDB generation)"
 title: "/Zf (Faster PDB generation)"
 ms.date: "03/29/2018"
 f1_keywords: ["/Zf"]

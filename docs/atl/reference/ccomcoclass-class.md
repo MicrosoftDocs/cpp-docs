@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComCoClass Class"
 title: "CComCoClass Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComCoClass", "ATLCOM/ATL::CComCoClass", "ATLCOM/ATL::CComCoClass::CreateInstance", "ATLCOM/ATL::CComCoClass::Error", "ATLCOM/ATL::CComCoClass::GetObjectCLSID", "ATLCOM/ATL::CComCoClass::GetObjectDescription"]

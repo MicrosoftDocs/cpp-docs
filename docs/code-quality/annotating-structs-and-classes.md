@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Annotating Structs and Classes"
 title: Annotating Structs and Classes
 ms.date: 06/28/2019
 ms.topic: "conceptual"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: iterator Struct"
 title: "iterator Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["xutility/std::iterator"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IUMSCompletionList Structure"
 title: "IUMSCompletionList Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["IUMSCompletionList", "CONCRTRM/concurrency::IUMSCompletionList", "CONCRTRM/concurrency::IUMSCompletionList::IUMSCompletionList::GetUnblockNotifications"]

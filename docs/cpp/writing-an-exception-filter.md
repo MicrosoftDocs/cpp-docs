@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Writing an exception filter"
 title: "Writing an exception filter"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exception handling [C++], filters"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interpreting More Complex Declarators"
 title: "Interpreting More Complex Declarators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["complex declarators", "interpreting complex declarators"]

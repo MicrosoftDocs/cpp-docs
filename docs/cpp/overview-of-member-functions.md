@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overview of Member Functions"
 title: "Overview of Member Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["this pointer, and nonstatic member functions", "nonstatic member functions [C++]", "inline functions [C++], treating member functions as", "member functions [C++], definition in class declaration"]

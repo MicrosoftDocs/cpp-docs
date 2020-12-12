@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internal Classes"
 title: "Internal Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["CPreviewViewEx", "m_bPreMultiplyCheck", "CMFCRibbonPanelMenuBar.IsCategoryPopup", "CMFCCustomizeMenuButton.SetSiblingsButton"]

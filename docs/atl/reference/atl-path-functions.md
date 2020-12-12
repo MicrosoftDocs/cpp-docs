@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Path functions"
 title: "ATL Path functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, path"]

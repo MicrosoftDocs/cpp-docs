@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleCmdUI Class"
 title: "COleCmdUI Class"
 ms.date: 07/24/2020
 f1_keywords: ["COleCmdUI", "AFXDOCOBJ/COleCmdUI", "AFXDOCOBJ/COleCmdUI::COleCmdUI", "AFXDOCOBJ/COleCmdUI::Enable", "AFXDOCOBJ/COleCmdUI::SetCheck", "AFXDOCOBJ/COleCmdUI::SetText"]

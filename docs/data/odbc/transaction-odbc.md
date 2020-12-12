@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transaction (ODBC)"
 title: "Transaction (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC recordsets [C++], updating", "transactions [C++], MFC ODBC classes", "ODBC [C++], transactions", "recordsets [C++], updating", "databases [C++], transactions", "recordsets [C++], transactions", "ODBC recordsets [C++], transactions"]

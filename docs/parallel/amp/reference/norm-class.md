@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: norm Class"
 title: "norm Class"
 ms.date: "11/04/2016"
 f1_keywords: ["AMP_SHORT_VECTORS/norm", "AMP_SHORT_VECTORS/Concurrency::graphics::norm Constructor"]

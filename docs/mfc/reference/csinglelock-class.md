@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSingleLock Class"
 title: "CSingleLock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSingleLock", "AFXMT/CSingleLock", "AFXMT/CSingleLock::CSingleLock", "AFXMT/CSingleLock::IsLocked", "AFXMT/CSingleLock::Lock", "AFXMT/CSingleLock::Unlock"]

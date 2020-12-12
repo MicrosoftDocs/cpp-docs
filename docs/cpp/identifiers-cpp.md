@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Identifiers (C++)"
 title: "Identifiers (C++)"
 ms.date: "05/07/2019"
 helpviewer_keywords: ["decorated names", "decorated names, about decorated names", "identifiers, C++", "white space, in C++ identifiers", "identifiers [C++]"]

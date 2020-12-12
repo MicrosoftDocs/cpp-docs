@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Y (Precompiled Headers)"
 title: "/Y (Precompiled Headers)"
 ms.date: "11/04/2016"
 f1_keywords: ["/Y"]

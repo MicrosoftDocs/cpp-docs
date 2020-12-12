@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_floating_point Class"
 title: "is_floating_point Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_floating_point"]

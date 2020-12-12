@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expressions with Binary Operators"
 title: "Expressions with Binary Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operators [C++], binary", "binary operators [C++]", "expressions [C++], binary operators"]

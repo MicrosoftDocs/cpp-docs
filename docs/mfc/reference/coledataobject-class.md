@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleDataObject Class"
 title: "COleDataObject Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDataObject", "AFXOLE/COleDataObject", "AFXOLE/COleDataObject::COleDataObject", "AFXOLE/COleDataObject::Attach", "AFXOLE/COleDataObject::AttachClipboard", "AFXOLE/COleDataObject::BeginEnumFormats", "AFXOLE/COleDataObject::Detach", "AFXOLE/COleDataObject::GetData", "AFXOLE/COleDataObject::GetFileData", "AFXOLE/COleDataObject::GetGlobalData", "AFXOLE/COleDataObject::GetNextFormat", "AFXOLE/COleDataObject::IsDataAvailable", "AFXOLE/COleDataObject::Release"]

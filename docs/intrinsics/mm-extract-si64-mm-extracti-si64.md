@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mm_extract_si64, _mm_extracti_si64"
 title: "_mm_extract_si64, _mm_extracti_si64"
 ms.date: "09/02/2019"
 f1_keywords: ["_mm_extracti_si64", "_mm_extract_si64"]

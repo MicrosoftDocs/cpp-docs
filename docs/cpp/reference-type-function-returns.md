@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reference-Type Function Returns"
 title: "Reference-Type Function Returns"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function return types [C++], reference type", "data types [C++], function return types", "functions [C++], return types"]

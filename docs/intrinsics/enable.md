@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _enable"
 title: "_enable"
 ms.date: "09/02/2019"
 f1_keywords: ["_enable", "_enable_cpp"]

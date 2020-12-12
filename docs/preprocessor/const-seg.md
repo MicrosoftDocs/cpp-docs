@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: const_seg pragma"
 title: "const_seg pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.const_seg", "const_seg_CPP"]

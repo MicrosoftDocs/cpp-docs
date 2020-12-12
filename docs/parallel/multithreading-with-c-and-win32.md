@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multithreading with C and Win32"
 title: "Multithreading with C and Win32"
 ms.date: "08/09/2019"
 helpviewer_keywords: ["Windows API [C++], multithreading", "multithreading [C++], C and Win32", "Visual C, multithreading", "Win32 applications [C++], multithreading", "threading [C++], C and Win32", "Win32 [C++], multithreading", "threading [C]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Extended Storage-Class Attributes"
 title: "C Extended Storage-Class Attributes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["__declspec keyword [C]", "extended attributes", "extended storage-class attributes", "storage class specifiers, C storage classes"]

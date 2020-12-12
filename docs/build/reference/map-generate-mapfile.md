@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /MAP (Generate Mapfile)"
 title: "/MAP (Generate Mapfile)"
 ms.date: "11/04/2016"
 f1_keywords: ["/map", "VC.Project.VCLinkerTool.MapFileName", "VC.Project.VCLinkerTool.GenerateMapFile"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /arch (Minimum CPU Architecture)"
 title: "/arch (Minimum CPU Architecture)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableEnhancedInstructionSet", "/arch"]

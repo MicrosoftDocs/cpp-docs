@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accelerator Keys (C++)"
 title: "Accelerator Keys (C++)"
 ms.date: "02/14/2019"
 helpviewer_keywords: ["accelerator keys", "keyboard shortcuts", "keyboard shortcuts [C++], predefined", "menus [C++], shortcut keys", "keyboard shortcuts [C++], menu association"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Environmental Constants"
 title: "Environmental Constants"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MAX_ENV constant", "_MAX_ENV constant"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max"
 title: "___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max"
 ms.date: "4/2/2020"
 api_name: ["___mb_cur_max_l_func", "__p___mb_cur_max", "___mb_cur_max_func", "__mb_cur_max", "_o____mb_cur_max_func"]

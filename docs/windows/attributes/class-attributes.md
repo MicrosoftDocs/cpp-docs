@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Class Attributes"
 title: "Class Attributes (C++ COM)"
 ms.date: "10/02/2018"
 helpviewer_keywords: ["attributes [C++/CLI], class attributes"]

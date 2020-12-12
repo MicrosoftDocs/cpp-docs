@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Event Handling Global Functions"
 title: "Event Handling Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlWaitWithMessageLoop"]

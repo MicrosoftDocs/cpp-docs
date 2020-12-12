@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dynamic Object Creation"
 title: "Dynamic Object Creation"
 ms.date: "03/27/2020"
 helpviewer_keywords: ["object creation [MFC], dynamically at run time", "CObject class [MFC], dynamic object creation", "objects [MFC], creating dynamically at run time", "dynamic object creation [MFC]"]

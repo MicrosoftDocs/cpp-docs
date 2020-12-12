@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DLayer Class"
 title: "CD2DLayer Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DLayer", "AFXRENDERTARGET/CD2DLayer", "AFXRENDERTARGET/CD2DLayer::CD2DLayer", "AFXRENDERTARGET/CD2DLayer::Attach", "AFXRENDERTARGET/CD2DLayer::Create", "AFXRENDERTARGET/CD2DLayer::Destroy", "AFXRENDERTARGET/CD2DLayer::Detach", "AFXRENDERTARGET/CD2DLayer::Get", "AFXRENDERTARGET/CD2DLayer::GetSize", "AFXRENDERTARGET/CD2DLayer::IsValid", "AFXRENDERTARGET/CD2DLayer::m_pLayer"]

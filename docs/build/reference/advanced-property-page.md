@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Advanced Property Page"
 title: "Advanced Property Page (Project)"
 ms.date: 08/10/2020
 f1_keywords: ["VC.Project.VCConfiguration.VCToolsVersion"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strerror Function"
 title: "strerror Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["strerror function"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Classes and Structs (C++)"
 title: "Classes and Structs (C++)"
 ms.date: "05/07/2019"
 helpviewer_keywords: ["C++, classes and structs"]

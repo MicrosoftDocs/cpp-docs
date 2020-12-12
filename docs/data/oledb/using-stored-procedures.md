@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Stored Procedures"
 title: "Using Stored Procedures"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["OLE DB, stored procedures", "stored procedures, Visual C++", "stored procedures, about stored procedures", "OLE DB provider templates, stored procedures", "stored procedures, OLE DB"]

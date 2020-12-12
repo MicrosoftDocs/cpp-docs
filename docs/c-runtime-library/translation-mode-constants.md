@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Translation Mode Constants"
 title: "Translation Mode Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["_O_BINARY", "_O_TEXT", "_O_RAW"]

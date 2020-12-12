@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Advantages of Inline Assembly"
 title: "Advantages of Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["assembler [C++], advantages", "inline assembly [C++], about inline assembly", "inline assembly [C++], using"]

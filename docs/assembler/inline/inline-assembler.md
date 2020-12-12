@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inline Assembler"
 title: "Inline Assembler"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["assembler [C++]", "assembler [C++], inline", "assembly language [C++], inline", "inline assembler [C++]", "inline assembly [C++]"]

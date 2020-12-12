@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /link (Pass Options to Linker)"
 title: "/link (Pass Options to Linker)"
 ms.date: "03/25/2019"
 f1_keywords: ["/link"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Statements (C)"
 title: "Statements (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["statements, C", "Visual C, statements", "statements"]

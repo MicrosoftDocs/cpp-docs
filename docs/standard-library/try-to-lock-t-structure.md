@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: try_to_lock_t Structure"
 title: "try_to_lock_t Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["mutex/std::try_to_lock_t"]

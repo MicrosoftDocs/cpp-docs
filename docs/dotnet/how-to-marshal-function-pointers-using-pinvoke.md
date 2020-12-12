@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Marshal Function Pointers Using PInvoke"
 title: "How to: Marshal Function Pointers Using PInvoke"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

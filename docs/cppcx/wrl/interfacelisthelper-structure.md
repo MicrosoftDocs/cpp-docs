@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: InterfaceListHelper Structure"
 title: "InterfaceListHelper Structure"
 ms.date: "10/03/2018"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CElementTraits Class"
 title: "CElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CElementTraits", "atlcoll/ATL::CElementTraits"]

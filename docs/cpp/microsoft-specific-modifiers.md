@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft-specific modifiers"
 title: "Microsoft-specific modifiers"
 ms.date: "08/16/2018"
 ms.assetid: 22c7178c-f854-47fa-9de6-07d23fda58e1

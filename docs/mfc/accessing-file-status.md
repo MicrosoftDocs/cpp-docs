@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing File Status"
 title: "Accessing File Status"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["files [MFC], status information", "examples [MFC], file status", "files [MFC], accessing", "file status [MFC]", "status of files [MFC]"]

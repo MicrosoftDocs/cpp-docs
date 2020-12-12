@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Gy (Enable Function-Level Linking)"
 title: "/Gy (Enable Function-Level Linking)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableFunctionLevelLinking", "/gy", "VC.Project.VCCLWCECompilerTool.EnableFunctionLevelLinking"]

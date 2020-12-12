@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Sized Integer Types"
 title: "C Sized Integer Types"
 ms.date: 07/22/2020
 helpviewer_keywords: ["sized integer types"]

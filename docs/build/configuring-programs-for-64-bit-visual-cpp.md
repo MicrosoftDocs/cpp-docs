@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Configure C++ projects for 64-bit, x64 targets"
 title: "Configure C++ projects for 64-bit, x64 targets"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["64-bit compiler [C++], options", "64-bit compiler [C++]", "64-bit programming [C++], about 64-bit programming", "programming [C++], 64-bit"]

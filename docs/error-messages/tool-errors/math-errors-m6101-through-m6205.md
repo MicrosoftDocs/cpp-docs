@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Math errors (Mxxxx)"
 title: "Math errors"
 ms.date: "04/16/2019"
 ms.assetid: bdf3dc2a-d993-4f53-b0f2-9604e4914127

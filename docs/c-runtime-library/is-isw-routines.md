@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is, isw Routines"
 title: "is, isw Routines"
 ms.date: "11/04/2016"
 api_location: ["msvcr110_clr0400.dll", "msvcr90.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110.dll", "msvcr120.dll"]

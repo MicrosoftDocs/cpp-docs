@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDaoIndexFieldInfo Structure"
 title: "CDaoIndexFieldInfo Structure"
 ms.date: "09/17/2019"
 f1_keywords: ["CDaoIndexFieldInfo"]

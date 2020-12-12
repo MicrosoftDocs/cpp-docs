@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CppProperties.json reference"
 title: "CppProperties.json reference"
 ms.date: "08/09/2019"
 helpviewer_keywords: ["CppProperties.json file [C++]"]

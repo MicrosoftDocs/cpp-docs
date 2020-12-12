@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN025: Document, View, and Frame Creation"
 title: "TN025: Document, View, and Frame Creation"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.creation"]

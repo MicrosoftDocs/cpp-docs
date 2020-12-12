@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .ALPHA (32-bit MASM)"
 title: ".ALPHA"
 ms.date: "11/05/2019"
 f1_keywords: [".ALPHA"]

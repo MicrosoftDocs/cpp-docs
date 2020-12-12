@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internet Security (C++)"
 title: "Internet Security (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["code signing [MFC], Internet security", "sandboxing [MFC]", "digital signatures [MFC], Internet security", "code signing [MFC]", "Web application security [MFC]", "code access security [MFC], Internet security considerations", "security [MFC]", "security [MFC], Internet", "Internet applications [MFC], security", "Web application security [MFC], Internet security approaches"]

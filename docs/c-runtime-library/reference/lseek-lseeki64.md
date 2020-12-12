@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _lseek, _lseeki64"
 title: "_lseek, _lseeki64"
 ms.date: "4/2/2020"
 api_name: ["_lseeki64", "_lseek", "_o__lseek", "_o__lseeki64"]

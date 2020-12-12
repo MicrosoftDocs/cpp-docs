@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;stack&gt; operators"
 title: "&lt;stack&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["stack/std::operator!=", "stack/std::operator&gt;", "stack/std::operator&gt;=", "stack/std::operator&lt;", "stack/std::operator&lt;=", "stack/std::operator=="]

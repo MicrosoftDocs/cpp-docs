@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Aliases and typedefs (C++)"
 title: "Aliases and typedefs (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["typedef_cpp"]

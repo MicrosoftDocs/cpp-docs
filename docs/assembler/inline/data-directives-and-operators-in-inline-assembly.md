@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Directives and Operators in Inline Assembly"
 title: "Data Directives and Operators in Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["data directives [C++]", "__asm keyword [C++], referencing limitations", "MASM (Microsoft Macro Assembler), directives", "directives [C++], MASM", "MASM (Microsoft Macro Assembler), structures", "operators [MASM]", "inline assembly, operators", "inline assembly, data directives", "MASM (Microsoft Macro Assembler), operators", "structures [C++], MASM"]

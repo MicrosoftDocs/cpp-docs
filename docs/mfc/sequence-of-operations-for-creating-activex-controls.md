@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sequence of Operations for Creating ActiveX Controls"
 title: "Sequence of Operations for Creating ActiveX Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], creating", "ActiveX controls [MFC], creating", "sequence [MFC], for creating ActiveX controls", "OLE controls [MFC], MFC", "sequence [MFC]"]

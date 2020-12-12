@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interoperability with Other .NET Languages (C++/CLI)"
 title: "Interoperability with Other .NET Languages (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["C++, indexers", "indexers, consuming C#", "as C# keyword [C++]", "is C# keyword [C++]", "lock statement", "lock C# keyword [C++]"]

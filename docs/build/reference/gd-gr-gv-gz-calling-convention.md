@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Gd, /Gr, /Gv, /Gz (Calling Convention)"
 title: "/Gd, /Gr, /Gv, /Gz (Calling Convention)"
 ms.date: "09/05/2018"
 f1_keywords: ["/Gr", "/Gv", "/Gd", "VC.Project.VCCLCompilerTool.CallingConvention"]

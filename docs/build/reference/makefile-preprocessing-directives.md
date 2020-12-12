@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Makefile Preprocessing Directives"
 title: "Makefile Preprocessing Directives"
 ms.date: "08/11/2019"
 f1_keywords: ["!UNDEF", "!INCLUDE", "!IFNDEF", "!MESSAGE"]

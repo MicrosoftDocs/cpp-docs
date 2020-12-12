@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: launch.vs.json schema reference (C++)"
 title: "launch.vs.json schema reference (C++)"
 description: "Describes the schema elements for the `launch.vs.json` file"
 ms.date: "12/02/2020"

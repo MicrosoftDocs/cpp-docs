@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Character Sets"
 title: "Character Sets"
 ms.date: "11/04/2016"
 ms.assetid: ef21daa0-b4b4-4f1a-86f4-25904d83fc86

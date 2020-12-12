@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __debugbreak"
 title: "__debugbreak"
 ms.date: "09/02/2019"
 f1_keywords: ["__debugbreak_cpp", "__debugbreak"]

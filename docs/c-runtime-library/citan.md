@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CItan"
 title: "_CItan"
 ms.date: "4/2/2020"
 api_name: ["_CItan", "_o__CItan"]

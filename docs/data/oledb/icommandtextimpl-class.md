@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICommandTextImpl Class"
 title: "ICommandTextImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ICommandText", "GetCommandText", "ICommandTextImpl.GetCommandText", "ICommandTextImpl::GetCommandText", "ATL::ICommandTextImpl::m_strCommandText", "ICommandTextImpl<T>::m_strCommandText", "m_strCommandText", "ICommandTextImpl.m_strCommandText", "ICommandTextImpl::m_strCommandText", "ATL::ICommandTextImpl<T>::m_strCommandText", "ATL.ICommandTextImpl.m_strCommandText", "ICommandTextImpl.SetCommandText", "ICommandTextImpl::SetCommandText", "SetCommandText"]

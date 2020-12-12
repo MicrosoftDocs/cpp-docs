@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __lzcnt16, __lzcnt, __lzcnt64"
 title: "__lzcnt16, __lzcnt, __lzcnt64"
 ms.date: "09/02/2019"
 f1_keywords: ["__lzcnt64", "__lzcnt16", "__lzcnt"]

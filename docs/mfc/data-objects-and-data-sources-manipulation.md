@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Objects and Data Sources: Manipulation"
 title: "Data Objects and Data Sources: Manipulation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data objects [MFC], manipulating", "data sources [MFC], data operations", "data sources [MFC], inserting data", "Clipboard [MFC], determining available formats", "OLE [MFC], data objects", "Clipboard [MFC], passing format information", "data sources [MFC], determining available formats", "delayed rendering [MFC]", "OLE [MFC], data sources"]

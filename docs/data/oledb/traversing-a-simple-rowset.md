@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Traversing a Simple Rowset"
 title: "Traversing a Simple Rowset"
 ms.date: "10/19/2018"
 helpviewer_keywords: ["data access [C++], rowsets", "rowsets [C++], accessing", "simple rowsets", "OLE DB consumers [C++], database attributes", "accessors [C++], rowsets"]

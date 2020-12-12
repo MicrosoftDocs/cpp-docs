@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;iterator&gt; operators"
 title: "&lt;iterator&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["xutility/std::operator!=", "xutility/std::operator&gt;", "xutility/std::operator&gt;=", "xutility/std::operator&lt;", "xutility/std::operator&lt;=", "xutility/std::operator+", "xutility/std::operator-", "xutility/std::operator=="]

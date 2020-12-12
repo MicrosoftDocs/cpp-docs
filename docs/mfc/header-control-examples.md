@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Header Control Examples"
 title: "Header Control Examples"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sample applications [MFC], header controls", "controls [MFC], header"]

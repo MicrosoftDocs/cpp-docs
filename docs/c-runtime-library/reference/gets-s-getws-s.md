@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: gets_s, _getws_s"
 title: "gets_s, _getws_s"
 ms.date: "4/2/2020"
 api_name: ["_getws_s", "gets_s", "_o__getws_s", "_o_gets_s"]

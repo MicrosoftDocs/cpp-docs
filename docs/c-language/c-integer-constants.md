@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Integer Constants"
 title: "C Integer Constants"
 ms.date: "02/27/2018"
 helpviewer_keywords: ["integer constants"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SyncLockT Class"
 title: "SyncLockT Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"

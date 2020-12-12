@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Example: Implementing a Property Page"
 title: "Implementing a Property Page (ATL)"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["property pages, implementing"]

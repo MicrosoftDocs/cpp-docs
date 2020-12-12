@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: signal"
 title: "signal"
 ms.date: "04/12/2018"
 api_name: ["signal"]

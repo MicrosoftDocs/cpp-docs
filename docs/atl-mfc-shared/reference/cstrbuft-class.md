@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CStrBufT Class"
 title: "CStrBufT Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CStrBufT", "ATLSIMPSTR/ATL::CStrBufT", "ATLSIMPSTR/ATL::CStrBufT::CStrBufT", "ATLSIMPSTR/ATL::CStrBufT::SetLength", "ATLSIMPSTR/ATL::CStrBufT::AUTO_LENGTH", "ATLSIMPSTR/ATL::CStrBufT::SET_LENGTH"]

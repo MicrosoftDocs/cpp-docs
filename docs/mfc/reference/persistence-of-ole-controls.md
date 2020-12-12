@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Persistence of OLE Controls"
 title: "Persistence of OLE Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE controls [MFC], persistence", "persistence, OLE controls"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Routine Mappings"
 title: "Routine Mappings"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_tWinMain", "TCHAR.H data types, list of routine mappings", "generic-text mappings"]

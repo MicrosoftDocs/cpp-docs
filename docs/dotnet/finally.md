@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: finally"
 title: "finally"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["finally keyword [C++]"]

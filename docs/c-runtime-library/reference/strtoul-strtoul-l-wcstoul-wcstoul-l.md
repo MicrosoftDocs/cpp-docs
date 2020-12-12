@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strtoul, _strtoul_l, wcstoul, _wcstoul_l"
 title: "strtoul, _strtoul_l, wcstoul, _wcstoul_l"
 ms.date: "4/2/2020"
 api_name: ["_wcstoul_l", "_strtoul_l", "strtoul", "wcstoul", "_o__strtoul_l", "_o__wcstoul_l", "_o_strtoul", "_o_wcstoul"]

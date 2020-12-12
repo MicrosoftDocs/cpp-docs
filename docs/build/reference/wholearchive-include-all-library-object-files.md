@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /WHOLEARCHIVE (Include All Library Object Files)"
 title: "/WHOLEARCHIVE (Include All Library Object Files)"
 ms.date: "02/12/2020"
 ms.assetid: ee92d12f-18af-4602-9683-d6223be62ac9

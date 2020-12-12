@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Declare Value Types with the interior_ptr Keyword (C++/CLI)"
 title: "How to: Declare Value Types with the interior_ptr Keyword (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CInstantaneousTransition Class"
 title: "CInstantaneousTransition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInstantaneousTransition", "AFXANIMATIONCONTROLLER/CInstantaneousTransition", "AFXANIMATIONCONTROLLER/CInstantaneousTransition::CInstantaneousTransition", "AFXANIMATIONCONTROLLER/CInstantaneousTransition::Create", "AFXANIMATIONCONTROLLER/CInstantaneousTransition::m_dblFinalValue"]

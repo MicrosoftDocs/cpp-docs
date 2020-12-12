@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: allocator_unbounded Class"
 title: "allocator_unbounded Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::allocator_unbounded", "allocators/stdext::allocators::allocator_unbounded"]

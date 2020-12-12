@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overriding the Standard Command Routing"
 title: "Overriding the Standard Command Routing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, command routing", "command routing [MFC], overriding", "command handling [MFC], routing commands", "overriding, standard command routing"]

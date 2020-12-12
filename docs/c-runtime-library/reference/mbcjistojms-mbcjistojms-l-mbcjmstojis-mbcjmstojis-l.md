@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l"
 title: "_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l"
 ms.date: "4/2/2020"
 api_name: ["_mbcjistojms", "_mbcjmstojis", "_mbcjistojms_l", "_mbcjmstojis_l", "_o__mbcjistojms", "_o__mbcjistojms_l", "_o__mbcjmstojis", "_o__mbcjmstojis_l"]

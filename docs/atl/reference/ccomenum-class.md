@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComEnum Class"
 title: "CComEnum Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComEnum", "atlcom/ATL::CComEnum"]

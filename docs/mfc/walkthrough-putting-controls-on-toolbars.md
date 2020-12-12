@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Putting Controls On Toolbars"
 title: "Walkthrough: Putting Controls On Toolbars"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["Customize dialog box, adding controls", "toolbars [MFC], adding controls"]

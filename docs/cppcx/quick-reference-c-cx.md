@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Quick Reference (C++/CX)"
 title: "Quick Reference (C++/CX)"
 ms.date: "12/30/2016"
 ms.assetid: ba457195-26e5-43aa-b99d-24a871e550f4

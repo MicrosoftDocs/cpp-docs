@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: GOTO"
 title: "GOTO (MASM)"
 ms.date: "12/16/2019"
 helpviewer_keywords: ["GOTO directive"]

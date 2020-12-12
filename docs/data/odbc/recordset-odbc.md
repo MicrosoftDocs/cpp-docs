@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset (ODBC)"
 title: "Recordset (ODBC)"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["recordsets, snapshots", "recordsets, creating", "dynamic recordsets", "forward-only recordsets", "recordsets, dynasets", "ODBC recordsets, CRecordset objects", "ODBC recordsets", "recordsets, about recordsets", "snapshots, ODBC recordsets", "dynasets"]

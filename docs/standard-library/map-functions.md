@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;map&gt; functions"
 title: "&lt;map&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["map/std::swap (map)", "map/std::swap (multimap)"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3037"
 title: "Compiler Error C3037"
 ms.date: "11/04/2016"
 f1_keywords: ["C3037"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)"
 title: "Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["SQL, retrieving aggregate values from recordsets", "recordsets, retrieving SQL aggregate values", "retrieving SQL aggregate values from recordsets", "ODBC recordsets, retrieving SQL aggregate values", "SQL aggregate values", "SQL Server projects, retrieving aggregate values from recordsets", "SQL aggregate values, retrieving from recordsets"]

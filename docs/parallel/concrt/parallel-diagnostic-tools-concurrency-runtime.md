@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parallel Diagnostic Tools (Concurrency Runtime)"
 title: "Parallel Diagnostic Tools (Concurrency Runtime)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Parallel Diagnostic Tools [Concurrency Runtime]"]

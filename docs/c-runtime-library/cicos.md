@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CIcos"
 title: "_CIcos"
 ms.date: "4/2/2020"
 api_name: ["_CIcos", "_o__CIcos"]

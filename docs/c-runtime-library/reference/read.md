@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _read"
 title: "_read"
 ms.date: "4/2/2020"
 api_name: ["_read", "_o__read"]

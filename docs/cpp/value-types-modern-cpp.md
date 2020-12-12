@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ classes as value types"
 title: "C++ classes as value types"
 ms.date: "11/19/2019"
 ms.topic: "conceptual"

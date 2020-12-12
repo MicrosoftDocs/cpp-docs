@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Postfix Increment and Decrement Operators"
 title: "C Postfix Increment and Decrement Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["increment operators, syntax", "scalar operators", "types [C], scalar"]

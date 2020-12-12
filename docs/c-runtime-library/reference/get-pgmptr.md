@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_pgmptr"
 title: "_get_pgmptr"
 ms.date: "4/2/2020"
 api_name: ["_get_pgmptr", "_o__get_pgmptr"]

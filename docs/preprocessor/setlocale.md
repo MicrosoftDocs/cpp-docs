@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: setlocale pragma"
 title: "setlocale pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["setlocale_CPP", "vc-pragma.setlocale"]

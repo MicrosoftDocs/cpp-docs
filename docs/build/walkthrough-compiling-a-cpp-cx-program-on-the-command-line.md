@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Compiling a C++/CX Program on the Command Line"
 title: "Walkthrough: Compiling a C++/CX Program on the Command Line"
 ms.date: "04/23/2019"
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2

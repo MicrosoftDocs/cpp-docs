@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: progress_reporter Class"
 title: "progress_reporter Class"
 ms.date: "11/04/2016"
 f1_keywords: ["progress_reporter", "PPLTASKS/concurrency::progress_reporter", "PPLTASKS/concurrency::progress_reporter::progress_reporter", "PPLTASKS/concurrency::progress_reporter::report"]

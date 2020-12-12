@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NAME"
 title: "NAME (MASM)"
 ms.date: "12/17/2019"
 helpviewer_keywords: ["NAME directive"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3830"
 title: "Compiler Error C3830"
 ms.date: "11/04/2016"
 f1_keywords: ["C3830"]

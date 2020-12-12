@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: pop_macro pragma"
 title: "pop_macro pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.pop_macro", "pop_macro_CPP"]

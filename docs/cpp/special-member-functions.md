@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Special member functions"
 title: "Special member functions"
 ms.date: "12/06/2016"
 helpviewer_keywords: ["special member functions [C++]", "constructors [C++]", "destructors [C++]", "copy operators [C++]", "move operators [C++]", "assignment operators [C++]"]

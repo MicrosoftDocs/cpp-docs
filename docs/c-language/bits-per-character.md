@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Bits per Character"
 title: "Bits per Character"
 ms.date: "11/04/2016"
 ms.assetid: ce317fce-67bf-4963-9e6d-13682cda5f3f

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;mutex&gt; functions and variables"
 title: "&lt;mutex&gt; functions and variables"
 ms.date: "11/04/2016"
 f1_keywords: ["mutex/std::adopt_lock", "mutex/std::call_once", "mutex/std::defer_lock", "mutex/std::lock", "mutex/std::try_to_lock"]

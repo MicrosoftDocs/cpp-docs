@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComSimpleThreadAllocator Class"
 title: "CComSimpleThreadAllocator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComSimpleThreadAllocator", "ATLBASE/ATL::CComSimpleThreadAllocator", "ATLBASE/ATL::CComSimpleThreadAllocator::GetThread"]

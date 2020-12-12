@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Running Linux programs on Windows"
 title: "Running Linux programs on Windows"
 ms.date: "07/31/2019"
 helpviewer_keywords: ["Linux [C++], porting to Win32"]

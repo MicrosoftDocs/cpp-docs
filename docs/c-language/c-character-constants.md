@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Character Constants"
 title: "C Character Constants"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["characters, constants", "(') single quotation mark", "constants, character", "single quotation mark"]

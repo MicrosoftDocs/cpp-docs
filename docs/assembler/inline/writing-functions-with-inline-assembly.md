@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Writing Functions with Inline Assembly"
 title: "Writing Functions with Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["functions [C++], inline assembly", "inline assembly [C++], writing functions", "assembler [C++], writing functions", "__asm keyword [C++], in functions"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing the Event Handling Interface"
 title: "Implementing the Event Handling Interface"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, event handling", "event handling, ATL", "interfaces, event and event sink"]

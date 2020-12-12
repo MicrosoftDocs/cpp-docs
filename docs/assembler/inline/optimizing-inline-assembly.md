@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Optimizing Inline Assembly"
 title: "Optimizing Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["storage, optimizing in inline assembly", "optimization, inline assembly", "inline assembly, optimizing", "optimizing performance, inline assembly", "__asm keyword [C++], optimizing"]

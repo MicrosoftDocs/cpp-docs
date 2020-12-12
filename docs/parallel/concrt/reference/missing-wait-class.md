@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: missing_wait Class"
 title: "missing_wait Class"
 ms.date: "11/04/2016"
 f1_keywords: ["missing_wait", "CONCRT/concurrency::missing_wait", "CONCRT/concurrency::missing_wait::missing_wait"]

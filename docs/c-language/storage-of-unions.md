@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Storage of Unions"
 title: "Storage of Unions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["storage, union", "union keyword [C], storage", "union keyword [C]"]

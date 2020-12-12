@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File Constants"
 title: "File Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["_O_EXCL", "_O_RDWR", "_O_APPEND", "_O_RDONLY", "_O_TRUNC", "_O_CREAT", "_O_WRONLY"]

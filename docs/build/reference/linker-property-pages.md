@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Property Pages"
 title: "Linker Property Pages"
 ms.date: "07/24/2019"
 ms.topic: "article"

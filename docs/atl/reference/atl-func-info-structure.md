@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ATL_FUNC_INFO Structure"
 title: "_ATL_FUNC_INFO Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["_ATL_FUNC_INFO", "ATL::_ATL_FUNC_INFO", "ATL._ATL_FUNC_INFO"]

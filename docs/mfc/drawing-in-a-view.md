@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Drawing in a View"
 title: "Drawing in a View"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["drawing [MFC], in views", "views [MFC], printing", "views [MFC], updating", "printing [MFC], views", "views [MFC], rendering", "printing views [MFC]", "paint messages in view class [MFC]", "device contexts, screen drawings"]

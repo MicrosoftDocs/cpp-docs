@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /bigobj (Increase Number of Sections in .Obj file)"
 title: "/bigobj (Increase Number of Sections in .Obj file)"
 ms.date: "03/26/2019"
 f1_keywords: ["/bigobj"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDaoDatabaseInfo Structure"
 title: "CDaoDatabaseInfo Structure"
 ms.date: "09/17/2019"
 f1_keywords: ["CDaoDatabaseInfo"]

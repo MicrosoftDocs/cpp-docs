@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: basic_ofstream Class"
 title: "basic_ofstream Class"
 ms.date: "11/04/2016"
 f1_keywords: ["fstream/std::basic_ofstream", "fstream/std::basic_ofstream::close", "fstream/std::basic_ofstream::is_open", "fstream/std::basic_ofstream::open", "fstream/std::basic_ofstream::rdbuf", "fstream/std::basic_ofstream::swap"]

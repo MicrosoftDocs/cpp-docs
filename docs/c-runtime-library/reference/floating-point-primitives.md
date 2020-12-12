@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Floating-point primitives"
 title: "Floating-point primitives"
 ms.date: "4/2/2020"
 api_name: ["_dclass", "_ldclass", "_fdclass", "_dsign", "_ldsign", "_fdsign", "_dpcomp", "_ldpcomp", "_fdpcomp", "_dtest", "_ldtest", "_fdtest", "_d_int", "_ld_int", "_fd_int", "_dscale", "_ldscale", "_fdscale", "_dunscale", "_ldunscale", "_fdunscale", "_dexp", "_ldexp", "_fdexp", "_dnorm", "_fdnorm", "_dpoly", "_ldpoly", "_fdpoly", "_dlog", "_ldlog", "_fdlog", "_dsin", "_ldsin", "_fdsin", "_o__d_int", "_o__dclass", "_o__dlog", "_o__dnorm", "_o__dpcomp", "_o__dpoly", "_o__dscale", "_o__dsign", "_o__dsin", "_o__dtest", "_o__dunscale", "_o__fd_int", "_o__fdclass", "_o__fdexp", "_o__fdlog", "_o__fdpcomp", "_o__fdpoly", "_o__fdscale", "_o__fdsign", "_o__fdsin", "_o__ld_int", "_o__ldclass", "_o__ldexp", "_o__ldlog", "_o__ldpcomp", "_o__ldpoly", "_o__ldscale", "_o__ldsign", "_o__ldsin", "_o__ldtest", "_o__ldunscale"]

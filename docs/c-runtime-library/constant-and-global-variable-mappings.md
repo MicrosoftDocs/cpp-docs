@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Constant and Global Variable Mappings"
 title: "Constant and Global Variable Mappings"
 ms.date: "11/04/2016"
 f1_keywords: ["_tenviron", "_TEOF", "_tfinddata_t"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l"
 title: "_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l"
 ms.date: "4/2/2020"
 api_name: ["_strnextc", "_mbsnextc_l", "_mbsnextc", "_wcsnextc", "_o__mbsnextc", "_o__mbsnextc_l"]

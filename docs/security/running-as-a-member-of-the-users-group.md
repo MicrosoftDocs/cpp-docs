@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Running as a Member of the Users Group"
 title: "Running as a Member of the Users Group"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Users Group [C++]", "security [C++], Users Group", "Windows accounts [C++]", "non administrator users [C++]", "user accounts [C++]", "administrator (not running as) [C++]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /LIBPATH (Additional Libpath)"
 title: "/LIBPATH (Additional Libpath)"
 ms.date: "11/04/2016"
 f1_keywords: ["/libpath", "VC.Project.VCLinkerTool.AdditionalLibraryDirectories"]

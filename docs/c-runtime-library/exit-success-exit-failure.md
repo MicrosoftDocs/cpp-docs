@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EXIT_SUCCESS, EXIT_FAILURE"
 title: "EXIT_SUCCESS, EXIT_FAILURE"
 ms.date: "06/25/2018"
 f1_keywords: ["EXIT_FAILURE", "EXIT_SUCCESS"]

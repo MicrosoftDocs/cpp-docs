@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAnimationRect Class"
 title: "CAnimationRect Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationRect", "AFXANIMATIONCONTROLLER/CAnimationRect", "AFXANIMATIONCONTROLLER/CAnimationRect::CAnimationRect", "AFXANIMATIONCONTROLLER/CAnimationRect::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationRect::GetBottom", "AFXANIMATIONCONTROLLER/CAnimationRect::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationRect::GetLeft", "AFXANIMATIONCONTROLLER/CAnimationRect::GetRight", "AFXANIMATIONCONTROLLER/CAnimationRect::GetTop", "AFXANIMATIONCONTROLLER/CAnimationRect::GetValue", "AFXANIMATIONCONTROLLER/CAnimationRect::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationRect::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationRect::m_bFixedSize", "AFXANIMATIONCONTROLLER/CAnimationRect::m_bottomValue", "AFXANIMATIONCONTROLLER/CAnimationRect::m_leftValue", "AFXANIMATIONCONTROLLER/CAnimationRect::m_rightValue", "AFXANIMATIONCONTROLLER/CAnimationRect::m_szInitial", "AFXANIMATIONCONTROLLER/CAnimationRect::m_topValue"]

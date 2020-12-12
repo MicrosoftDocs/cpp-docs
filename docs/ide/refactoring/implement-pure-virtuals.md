@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implement Pure Virtuals"
 title: "Implement Pure Virtuals"
 ms.date: "11/16/2016"
 ms.assetid: ea9b4719-34a3-474a-b4ec-05b1859f80f1

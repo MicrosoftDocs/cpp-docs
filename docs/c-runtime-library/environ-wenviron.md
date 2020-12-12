@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _environ, _wenviron"
 title: "_environ, _wenviron"
 ms.date: "11/04/2016"
 f1_keywords: ["environ", "wenviron", "_wenviron", "_environ"]

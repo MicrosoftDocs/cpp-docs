@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recommended Tags for Documentation Comments"
 title: "Recommended Tags for Documentation Comments (C++ documentation comments)"
 ms.date: "11/04/2016"
 ms.assetid: 6548e798-5235-4a38-9482-bdc7b88f40a9

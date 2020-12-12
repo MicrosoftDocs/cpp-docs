@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCriticalSection Class"
 title: "CCriticalSection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCriticalSection", "AFXMT/CCriticalSection", "AFXMT/CCriticalSection::CCriticalSection", "AFXMT/CCriticalSection::Lock", "AFXMT/CCriticalSection::Unlock", "AFXMT/CCriticalSection::m_sect"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Character Testing"
 title: "Character Testing"
 ms.date: "11/04/2016"
 ms.assetid: 376ba061-bae3-427e-9569-33fa5949a199

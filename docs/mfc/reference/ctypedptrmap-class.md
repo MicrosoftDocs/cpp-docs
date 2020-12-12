@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTypedPtrMap Class"
 title: "CTypedPtrMap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTypedPtrMap", "AFXTEMPL/CTypedPtrMap", "AFXTEMPL/CTypedPtrMap::GetNextAssoc", "AFXTEMPL/CTypedPtrMap::Lookup", "AFXTEMPL/CTypedPtrMap::RemoveKey", "AFXTEMPL/CTypedPtrMap::SetAt"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HUGE_VAL, _HUGE"
 title: "HUGE_VAL, _HUGE"
 ms.date: "11/04/2016"
 api_name: ["_HUGE"]

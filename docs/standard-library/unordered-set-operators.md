@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;unordered_set&gt; operators"
 title: "&lt;unordered_set&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["unordered_set/std::operator!=", "unordered_set/std::operator=="]

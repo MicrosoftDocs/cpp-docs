@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __int8, __int16, __int32, __int64"
 title: "__int8, __int16, __int32, __int64"
 ms.date: "10/09/2018"
 f1_keywords: ["__int8_cpp", "__int16_cpp", "__int32_cpp", "__int64_cpp", "__int8", "__int16", "__int32", "__int64", "_int8", "_int16", "_int32", "_int64"]

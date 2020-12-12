@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with a Header Control"
 title: "Working with a Header Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header controls [MFC], working with", "header controls"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ismbb Routines"
 title: "_ismbb Routines"
 ms.date: "11/04/2016"
 api_location: ["msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr90.dll", "msvcr100.dll"]

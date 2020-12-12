@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Redistributing Web Client Applications"
 title: "Redistributing Web Client Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Web applications [C++], redistributing", "deploying applications [C++], Web applications", "Internet applications [C++], redistributing", "application deployment [C++], Web applications"]

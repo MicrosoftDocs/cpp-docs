@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Frame Windows"
 title: "Using Frame Windows"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["windows [MFC], frame windows", "frame windows [MFC], using", "MFC, frame windows"]

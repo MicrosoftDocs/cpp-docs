@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fread_nolock"
 title: "_fread_nolock"
 ms.date: "4/2/2020"
 api_name: ["_fread_nolock", "_o__fread_nolock"]

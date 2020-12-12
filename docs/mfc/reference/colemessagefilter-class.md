@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleMessageFilter Class"
 title: "COleMessageFilter Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleMessageFilter", "AFXOLE/COleMessageFilter", "AFXOLE/COleMessageFilter::COleMessageFilter", "AFXOLE/COleMessageFilter::BeginBusyState", "AFXOLE/COleMessageFilter::EnableBusyDialog", "AFXOLE/COleMessageFilter::EnableNotRespondingDialog", "AFXOLE/COleMessageFilter::EndBusyState", "AFXOLE/COleMessageFilter::OnMessagePending", "AFXOLE/COleMessageFilter::Register", "AFXOLE/COleMessageFilter::Revoke", "AFXOLE/COleMessageFilter::SetBusyReply", "AFXOLE/COleMessageFilter::SetMessagePendingDelay", "AFXOLE/COleMessageFilter::SetRetryReply"]

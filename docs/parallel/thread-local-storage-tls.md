@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Thread Local Storage (TLS)"
 title: "Thread Local Storage (TLS)"
 ms.date: "08/09/2019"
 helpviewer_keywords: ["multithreading [C++], Thread Local Storage", "TLS [C++]", "threading [C++], Thread Local Storage", "storing thread-specific data", "thread attribute", "Thread Local Storage [C++]"]

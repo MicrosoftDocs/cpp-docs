@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Assertion and User-Supplied Messages (C++)"
 title: "Assertion and User-Supplied Messages (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["user-supplied messages [C++], run time", "user-supplied messages [C++], preprocessor time", "#error%2C assert%2C static_assert [C++]", "user-supplied messages [C++], compile time"]

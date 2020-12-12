@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Common Dialog Classes"
 title: "Common Dialog Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dialog classes [MFC]", "dialog boxes [MFC], Windows common dialogs", "common dialog boxes [MFC], common dialog classes", "common dialog classes [MFC]", "MFC dialog boxes [MFC], Windows common dialogs", "Windows common dialogs [MFC]", "dialog classes [MFC], common", "common dialog boxes [MFC]"]

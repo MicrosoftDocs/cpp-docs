@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /MANIFEST (Create Side-by-Side Assembly Manifest)"
 title: "/MANIFEST (Create Side-by-Side Assembly Manifest)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateManifest"]

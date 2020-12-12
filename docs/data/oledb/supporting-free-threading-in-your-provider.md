@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Supporting Free Threading in Your Provider"
 title: "Supporting Free Threading in Your Provider"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE DB providers, multithreaded", "threading [C++], providers"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Postfix Expressions"
 title: "Postfix Expressions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operators [C++], postfix", "postfix expressions", "expressions [C++], postfix"]

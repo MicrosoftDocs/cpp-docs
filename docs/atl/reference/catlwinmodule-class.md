@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAtlWinModule Class"
 title: "CAtlWinModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlWinModule", "ATLBASE/ATL::CAtlWinModule", "ATLBASE/ATL::CAtlWinModule::CAtlWinModule", "ATLBASE/ATL::CAtlWinModule::AddCreateWndData", "ATLBASE/ATL::CAtlWinModule::ExtractCreateWndData"]

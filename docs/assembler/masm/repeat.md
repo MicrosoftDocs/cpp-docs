@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: REPEAT"
 title: "REPEAT"
 ms.date: "12/17/2019"
 f1_keywords: ["REPEAT"]

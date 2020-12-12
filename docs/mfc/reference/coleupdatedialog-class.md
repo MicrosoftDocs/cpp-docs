@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleUpdateDialog Class"
 title: "COleUpdateDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleUpdateDialog", "AFXODLGS/COleUpdateDialog", "AFXODLGS/COleUpdateDialog::COleUpdateDialog", "AFXODLGS/COleUpdateDialog::DoModal"]

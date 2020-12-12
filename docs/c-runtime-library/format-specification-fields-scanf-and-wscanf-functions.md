@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Format Specification Fields: scanf and wscanf Functions"
 title: "Format Specification Fields: scanf and wscanf Functions"
 ms.date: "11/04/2016"
 ms.topic: "reference"

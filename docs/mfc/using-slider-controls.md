@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Slider Controls"
 title: "Using Slider Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CSliderCtrl class [MFC], using", "slider controls", "slider controls [MFC], using"]

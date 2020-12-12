@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL class overview"
 title: "ATL class overview"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["classes [C++], ATL", "ATL, class reference"]

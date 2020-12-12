@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _stat Structure st_mode Field Constants"
 title: "_stat Structure st_mode Field Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["S_IFCHR", "S_IFDIR", "_S_IWRITE", "S_IFMT", "_S_IFDIR", "_S_IREAD", "S_IEXEC", "_S_IEXEC", "_S_IFMT", "S_IWRITE", "S_IFREG", "S_IREAD", "_S_IFCHR", "_S_IFREG"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Explicit Overrides (C++)"
 title: "Explicit Overrides (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["virtual functions [C++], explicit overrides", "overriding, functions", "derived classes [C++], virtual functions", "explicit virtual function overrides", "explicit override of virtual function"]

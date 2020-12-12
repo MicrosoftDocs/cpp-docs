@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strtime_s, _wstrtime_s"
 title: "_strtime_s, _wstrtime_s"
 ms.date: "4/2/2020"
 api_name: ["_wstrtime_s", "_strtime_s", "_o__strtime_s", "_o__wstrtime_s"]

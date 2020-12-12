@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4471"
 title: "Compiler Warning (level 4) C4471"
 ms.date: "04/24/2017"
 f1_keywords: ["C4471"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Conversions to and from Pointer Types"
 title: "Conversions to and from Pointer Types"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["pointers, converting", "conversions, pointer", "type casts, involving pointers", "void pointers"]

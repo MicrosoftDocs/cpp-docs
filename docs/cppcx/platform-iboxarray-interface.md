@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::IBoxArray Interface"
 title: "Platform::IBoxArray Interface"
 ms.date: "12/30/2016"
 ms.topic: "reference"

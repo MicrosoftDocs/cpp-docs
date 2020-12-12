@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementing the Simple Read-Only Provider"
 title: "Implementing the Simple Read-Only Provider"
 ms.date: "10/26/2018"
 helpviewer_keywords: ["read-only provider"]

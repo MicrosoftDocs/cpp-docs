@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FactoryCache Structure"
 title: "FactoryCache Structure"
 ms.date: "09/21/2018"
 ms.topic: "reference"

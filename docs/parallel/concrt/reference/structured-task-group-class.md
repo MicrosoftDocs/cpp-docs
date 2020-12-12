@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: structured_task_group Class"
 title: "structured_task_group Class"
 ms.date: "11/04/2016"
 f1_keywords: ["structured_task_group", "PPL/concurrency::structured_task_group", "PPL/concurrency::structured_task_group::structured_task_group", "PPL/concurrency::structured_task_group::cancel", "PPL/concurrency::structured_task_group::is_canceling", "PPL/concurrency::structured_task_group::run", "PPL/concurrency::structured_task_group::run_and_wait", "PPL/concurrency::structured_task_group::wait"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .ENDIF (32-bit MASM)"
 title: ".ENDIF"
 ms.date: "11/05/2019"
 f1_keywords: [".ENDIF"]

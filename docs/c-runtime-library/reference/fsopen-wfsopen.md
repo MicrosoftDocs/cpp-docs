@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fsopen, _wfsopen"
 title: "_fsopen, _wfsopen"
 ms.date: "4/2/2020"
 api_name: ["_wfsopen", "_fsopen", "_o__fsopen", "_o__wfsopen"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Connecting to a Data Source"
 title: "Connecting to a Data Source"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["database connections [C++], ODBC", "ODBC connections [C++], using", "connections [C++], data source", "databases [C++], connecting to", "data sources [C++], connecting to", "ODBC data sources [C++], connections", "database connections [C++], MFC ODBC classes"]

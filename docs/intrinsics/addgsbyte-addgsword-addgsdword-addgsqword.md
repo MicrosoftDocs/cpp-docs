@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __addgsbyte, __addgsword, __addgsdword, __addgsqword"
 title: "__addgsbyte, __addgsword, __addgsdword, __addgsqword"
 ms.date: "09/02/2019"
 f1_keywords: ["__addgsdword", "__addgsqword", "__addgsword_cpp", "__addgsword", "__addgsbyte_cpp", "__addgsqword_cpp", "__addgsbyte", "__addgsdword_cpp"]

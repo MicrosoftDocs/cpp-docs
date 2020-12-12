@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets: Byte Ordering"
 title: "Windows Sockets: Byte Ordering"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["byte order issues in sockets programming", "sockets [MFC], byte order issues", "Windows Sockets [MFC], byte order issues"]

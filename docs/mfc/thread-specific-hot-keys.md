@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Thread-Specific Hot Keys"
 title: "Thread-Specific Hot Keys"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CHotKeyCtrl class [MFC], thread-specific hot keys", "keyboard shortcuts [MFC], hot keys", "threading [MFC], hot keys in CHotKeyCtrl", "access keys [MFC], hot keys"]

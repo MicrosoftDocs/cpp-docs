@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: no_auto_exclude import attribute"
 title: "no_auto_exclude import attribute"
 ms.date: "08/29/2019"
 f1_keywords: ["no_auto_exclude"]

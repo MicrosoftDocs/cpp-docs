@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets: Using Sockets with Archives"
 title: "Windows Sockets: Using Sockets with Archives"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows Sockets [MFC], archives", "sockets [MFC], with archives", "archives [MFC], and Windows Sockets", "CSocket class [MFC], programming model"]

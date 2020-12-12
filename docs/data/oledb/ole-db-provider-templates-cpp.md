@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Provider Templates (C++)"
 title: "OLE DB Provider Templates (C++)"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["OLE DB providers [C++], about providers", "databases [C++], OLE DB templates", "OLE DB provider templates [C++], about OLE DB provider templates", "templates [C++], OLE DB"]

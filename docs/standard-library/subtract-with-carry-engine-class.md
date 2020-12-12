@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: subtract_with_carry_engine Class"
 title: "subtract_with_carry_engine Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::subtract_with_carry_engine", "random/std::subtract_with_carry_engine::default_seed", "random/std::subtract_with_carry_engine::discard", "random/std::subtract_with_carry_engine::min", "random/std::subtract_with_carry_engine::max", "random/std::subtract_with_carry_engine::seed"]

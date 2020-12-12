@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Properties (C++/CX)"
 title: "Properties (C++/CX)"
 ms.date: "01/22/2017"
 ms.assetid: 64c7bc56-3191-4cd5-bdf4-476d07d285d5

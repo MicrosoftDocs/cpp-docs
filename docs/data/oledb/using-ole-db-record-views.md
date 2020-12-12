@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using OLE DB Record Views"
 title: "Using OLE DB Record Views"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["OLE DB record views", "COleDBRecordView class, overview", "rowsets, record views", "record views, record view objects", "OLE DB, record views", "MFC, record views"]

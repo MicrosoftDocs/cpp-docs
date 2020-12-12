@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: checked_array_iterator Class"
 title: "checked_array_iterator Class"
 ms.date: "03/27/2019"
 f1_keywords: ["iterator/checked_array_iterator", "iterator/stdext::checked_array_iterator::difference_type", "iterator/stdext::checked_array_iterator::pointer", "iterator/stdext::checked_array_iterator::reference", "iterator/stdext::checked_array_iterator::base"]

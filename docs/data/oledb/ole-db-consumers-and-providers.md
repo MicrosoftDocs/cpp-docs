@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Consumers and Providers"
 title: "OLE DB Consumers and Providers"
 ms.date: "10/22/2018"
 helpviewer_keywords: ["OLE DB providers, OLE DB data architecture", "OLE DB providers", "OLE DB consumers, OLE DB data architecture", "OLE DB consumers", "OLE DB, data model"]

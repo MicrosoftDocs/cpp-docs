@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fputchar, _fputwchar"
 title: "_fputchar, _fputwchar"
 ms.date: "4/2/2020"
 api_name: ["_fputchar", "_fputwchar", "_o__fputchar", "_o__fputwchar"]

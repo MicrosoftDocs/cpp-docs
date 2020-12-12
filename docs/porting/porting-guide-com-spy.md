@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Porting Guide: COM Spy"
 title: "Porting Guide: COM Spy"
 ms.date: "11/04/2016"
 ms.assetid: 24aa0d52-4014-4acb-8052-f4e2e4bbc3bb

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Destroying the List Control"
 title: "Destroying the List Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["list controls [MFC], destroying", "CListCtrl class [MFC], destroying controls"]

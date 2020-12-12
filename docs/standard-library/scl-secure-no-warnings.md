@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _SCL_SECURE_NO_WARNINGS"
 title: "_SCL_SECURE_NO_WARNINGS"
 ms.date: "11/04/2016"
 f1_keywords: ["_SCL_SECURE_NO_DEPRECATE", "_SCL_SECURE_NO_WARNINGS"]

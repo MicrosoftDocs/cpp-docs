@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: wctype"
 title: "wctype"
 ms.date: "11/04/2016"
 api_name: ["wctype"]

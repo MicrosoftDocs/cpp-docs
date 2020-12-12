@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strict_gs_check pragma"
 title: "strict_gs_check pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["strict_gs_check", "strict_gs_check_CPP"]

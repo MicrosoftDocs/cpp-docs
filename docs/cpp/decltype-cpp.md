@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: decltype  (C++)"
 title: "decltype  (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["decltype_cpp"]

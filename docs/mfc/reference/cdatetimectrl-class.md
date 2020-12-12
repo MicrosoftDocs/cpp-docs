@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDateTimeCtrl Class"
 title: "CDateTimeCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDateTimeCtrl", "AFXDTCTL/CDateTimeCtrl", "AFXDTCTL/CDateTimeCtrl::CDateTimeCtrl", "AFXDTCTL/CDateTimeCtrl::CloseMonthCal", "AFXDTCTL/CDateTimeCtrl::Create", "AFXDTCTL/CDateTimeCtrl::GetDateTimePickerInfo", "AFXDTCTL/CDateTimeCtrl::GetIdealSize", "AFXDTCTL/CDateTimeCtrl::GetMonthCalColor", "AFXDTCTL/CDateTimeCtrl::GetMonthCalCtrl", "AFXDTCTL/CDateTimeCtrl::GetMonthCalFont", "AFXDTCTL/CDateTimeCtrl::GetMonthCalStyle", "AFXDTCTL/CDateTimeCtrl::GetRange", "AFXDTCTL/CDateTimeCtrl::GetTime", "AFXDTCTL/CDateTimeCtrl::SetFormat", "AFXDTCTL/CDateTimeCtrl::SetMonthCalColor", "AFXDTCTL/CDateTimeCtrl::SetMonthCalFont", "AFXDTCTL/CDateTimeCtrl::SetMonthCalStyle", "AFXDTCTL/CDateTimeCtrl::SetRange", "AFXDTCTL/CDateTimeCtrl::SetTime"]

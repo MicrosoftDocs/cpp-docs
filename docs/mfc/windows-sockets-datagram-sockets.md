@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets: Datagram Sockets"
 title: "Windows Sockets: Datagram Sockets"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sockets [MFC], datagram", "Windows Sockets [MFC], bi-directional data flow", "datagram sockets [MFC]", "Windows Sockets [MFC], datagram", "sockets [MFC], bi-directional data flow"]

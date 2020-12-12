@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: inline_depth pragma"
 title: "inline_depth pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["inline_depth_CPP", "vc-pragma.inline_depth"]

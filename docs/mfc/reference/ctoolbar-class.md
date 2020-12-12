@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CToolBar Class"
 title: "CToolBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CToolBar", "AFXEXT/CToolBar", "AFXEXT/CToolBar::CToolBar", "AFXEXT/CToolBar::CommandToIndex", "AFXEXT/CToolBar::Create", "AFXEXT/CToolBar::CreateEx", "AFXEXT/CToolBar::GetButtonInfo", "AFXEXT/CToolBar::GetButtonStyle", "AFXEXT/CToolBar::GetButtonText", "AFXEXT/CToolBar::GetItemID", "AFXEXT/CToolBar::GetItemRect", "AFXEXT/CToolBar::GetToolBarCtrl", "AFXEXT/CToolBar::LoadBitmap", "AFXEXT/CToolBar::LoadToolBar", "AFXEXT/CToolBar::SetBitmap", "AFXEXT/CToolBar::SetButtonInfo", "AFXEXT/CToolBar::SetButtons", "AFXEXT/CToolBar::SetButtonStyle", "AFXEXT/CToolBar::SetButtonText", "AFXEXT/CToolBar::SetHeight", "AFXEXT/CToolBar::SetSizes"]

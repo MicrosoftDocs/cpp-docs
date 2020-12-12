@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C3200 Through C3299"
 title: "Compiler errors C3200 Through C3299"
 ms.date: "04/21/2019"
 f1_keywords: ["C3220", "C3221", "C3245", "C3249", "C3250", "C3256", "C3257", "C3258", "C3259", "C3260", "C3261", "C3263", "C3267", "C3281", "C3294"]

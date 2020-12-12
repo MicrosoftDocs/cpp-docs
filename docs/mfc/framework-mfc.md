@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Framework (MFC)"
 title: "Framework (MFC)"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["encapsulation [MFC], Win32 API", "MFC, application framework", "wrapper classes [MFC], explained", "Win32 [MFC], API encapsulation by MFC", "application framework [MFC], about MFC application framework", "APIs [MFC], encapsulation by MFC Win32", "encapsulation [MFC]", "Windows API [MFC], encapsulation by MFC", "encapsulated Win32 API [MFC]"]

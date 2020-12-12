@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /CLRIMAGETYPE (Specify Type of CLR Image)"
 title: "/CLRIMAGETYPE (Specify Type of CLR Image)"
 ms.date: "05/16/2019"
 f1_keywords: ["/CLRIMAGETYPE", "VC.Project.VCLinkerTool.CLRImageType"]

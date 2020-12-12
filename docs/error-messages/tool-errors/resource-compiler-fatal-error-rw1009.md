@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Compiler Fatal Error RW1009"
 title: "Resource Compiler Fatal Error RW1009"
 ms.date: "11/04/2016"
 f1_keywords: ["RW1009"]

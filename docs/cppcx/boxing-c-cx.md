@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Boxing (C++/CX)"
 title: "Boxing (C++/CX)"
 ms.date: "12/30/2016"
 ms.assetid: edfb12fa-2a9b-42f6-bdac-d4d76cb8274e

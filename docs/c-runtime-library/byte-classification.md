@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Byte classification"
 title: "Byte classification"
 ms.date: "04/04/2018"
 f1_keywords: ["c.types.bytes"]

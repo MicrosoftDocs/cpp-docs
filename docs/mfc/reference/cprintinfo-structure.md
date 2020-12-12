@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPrintInfo Structure"
 title: "CPrintInfo Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["CPrintInfo"]

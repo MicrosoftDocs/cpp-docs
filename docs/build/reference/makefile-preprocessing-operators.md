@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Makefile Preprocessing Operators"
 title: "Makefile Preprocessing Operators"
 ms.date: "06/14/2018"
 helpviewer_keywords: ["operators [C++], makefile preprocessing", "EXIST operator", "preprocessing NMAKE makefile operators", "NMAKE program, operators", "DEFINED operator", "makefiles, preprocessing operators"]

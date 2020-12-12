@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _daylight, _dstbias, _timezone, and _tzname"
 title: "_daylight, _dstbias, _timezone, and _tzname"
 ms.date: "11/04/2016"
 f1_keywords: ["tzname", "_timezone", "timezone", "_daylight", "_tzname", "daylight"]

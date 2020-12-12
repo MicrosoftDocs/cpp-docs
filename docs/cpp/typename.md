@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: typename"
 title: "typename"
 ms.date: "11/04/2016"
 f1_keywords: ["typename_cpp"]

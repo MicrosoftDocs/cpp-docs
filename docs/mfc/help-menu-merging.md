@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Help Menu Merging"
 title: "Help Menu Merging"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["menus [MFC], merging", "merging Help menus [MFC]", "Help [MFC], for active document containers"]

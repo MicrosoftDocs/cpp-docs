@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::value_type"
 title: "Container Class::value_type"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["value_type typedef"]

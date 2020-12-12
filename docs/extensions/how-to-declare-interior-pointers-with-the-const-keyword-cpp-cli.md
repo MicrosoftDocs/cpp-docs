@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Declare Interior Pointers with the const Keyword (C++/CLI)"
 title: "How to: Declare Interior Pointers with the const Keyword (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Source (ODBC)"
 title: "Data Source (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC data sources, configuring", "CDatabase class, data source connections", "ODBC data sources", "configuring ODBC data sources", "ODBC data sources, represented by CDatabase"]

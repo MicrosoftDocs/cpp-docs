@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Maps (MFC)"
 title: "Message Maps (MFC)"
 ms.date: "09/07/2019"
 helpviewer_keywords: ["message maps [MFC], MFC", "Windows messages [MFC], message maps", "messages [MFC], Windows", "MFC, messages"]

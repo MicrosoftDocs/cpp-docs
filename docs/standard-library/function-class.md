@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: function Class"
 title: "function Class"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::function", "functional/std::function::result_type", "functional/std::function::assign", "functional/std::function::swap", "functional/std::function::target", "functional/std::function::target_type", "functional/std::function::operator unspecified", "functional/std::function::operator()"]

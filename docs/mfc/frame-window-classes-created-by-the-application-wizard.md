@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Frame-Window Classes Created by the Application Wizard"
 title: "Frame-Window Classes Created by the Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["CMainFrame"]

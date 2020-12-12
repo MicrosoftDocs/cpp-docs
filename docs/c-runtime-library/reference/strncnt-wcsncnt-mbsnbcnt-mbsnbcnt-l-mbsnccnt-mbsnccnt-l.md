@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l"
 title: "_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l"
 ms.date: "4/2/2020"
 api_name: ["_mbsnbcnt_l", "_mbsnccnt", "_wcsncnt", "_strncnt", "_mbsnccnt_l", "_mbsnbcnt", "_o__mbsnbcnt", "_o__mbsnbcnt_l", "_o__mbsnccnt", "_o__mbsnccnt_l"]

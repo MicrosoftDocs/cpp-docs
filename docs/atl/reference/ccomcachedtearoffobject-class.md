@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComCachedTearOffObject Class"
 title: "CComCachedTearOffObject Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComCachedTearOffObject", "ATLCOM/ATL::CComCachedTearOffObject", "ATLCOM/ATL::CComCachedTearOffObject::CComCachedTearOffObject", "ATLCOM/ATL::CComCachedTearOffObject::AddRef", "ATLCOM/ATL::CComCachedTearOffObject::FinalConstruct", "ATLCOM/ATL::CComCachedTearOffObject::FinalRelease", "ATLCOM/ATL::CComCachedTearOffObject::QueryInterface", "ATLCOM/ATL::CComCachedTearOffObject::Release", "ATLCOM/ATL::CComCachedTearOffObject::m_contained"]

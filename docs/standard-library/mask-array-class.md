@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: mask_array Class"
 title: "mask_array Class"
 ms.date: "11/04/2016"
 f1_keywords: ["valarray/std::mask_array"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2094"
 title: "Compiler Error C2094"
 ms.date: "11/04/2016"
 f1_keywords: ["C2094"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Calls with a Variable Number of Arguments"
 title: "Calls with a Variable Number of Arguments"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["arguments [C++], function", "arguments [C++], variable number of", "VARARGS.H", "ellipsis (...), variable number of arguments", "STDARGS.H", "function calls, arguments", "... ellipsis", "function calls, variable number of arguments"]

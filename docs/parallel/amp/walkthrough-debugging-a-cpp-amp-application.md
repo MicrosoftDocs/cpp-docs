@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Debugging a C++ AMP Application"
 title: "Walkthrough: Debugging a C++ AMP Application"
 ms.date: "04/23/2019"
 helpviewer_keywords: ["debugging, C++ Accelerated Massive Parallelism", "C++ AMP, debugging", "C++ Accelerated Massive Parallelism, debugging", "debugging, C++ AMP"]

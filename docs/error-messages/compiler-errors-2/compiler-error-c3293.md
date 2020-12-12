@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3293"
 title: "Compiler Error C3293"
 ms.date: "07/21/2017"
 f1_keywords: ["C3293"]

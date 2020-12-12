@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions (C/C++)"
 title: "DLL loading exception codes (C/C++)"
 ms.date: "11/19/2019"
 f1_keywords: ["ERROR_MOD_NOT_FOUND", "vcppException", "ERROR_SEVERITY_ERROR"]

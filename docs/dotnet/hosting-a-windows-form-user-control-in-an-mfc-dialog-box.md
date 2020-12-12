@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Hosting a Windows Form User Control in an MFC Dialog Box"
 title: "Hosting a Windows Form User Control in an MFC Dialog Box"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC [C++], Windows Forms support", "hosting Windows Forms control [C++]", "Windows Forms [C++], MFC support"]

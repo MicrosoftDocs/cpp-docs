@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSimpleException Class"
 title: "CSimpleException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSimpleException", "AFX/CSimpleException", "AFX/CSimpleException::CSimpleException", "AFX/CSimpleException::GetErrorMessage"]

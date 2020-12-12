@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Methods of Creating Tool Tips"
 title: "Methods of Creating Tool Tips"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CToolTipCtrl class [MFC], creating tool tips", "tool tips [MFC], tool tip controls", "tool tips [MFC], creating"]

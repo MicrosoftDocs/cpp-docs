@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_scalar Class"
 title: "is_scalar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_scalar"]

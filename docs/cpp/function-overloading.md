@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Overloading"
 title: "Function Overloading"
 ms.date: "03/27/2019"
 helpviewer_keywords: ["function overloading [C++], about function overloading", "function overloading", "declaring functions [C++], overloading"]

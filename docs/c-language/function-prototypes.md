@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Prototypes"
 title: "Function Prototypes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function prototypes", "function return types, function prototypes", "data types [C], function return types", "functions [C], return types", "prototypes [C++], function"]

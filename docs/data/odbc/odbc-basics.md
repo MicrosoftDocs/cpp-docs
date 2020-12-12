@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ODBC Basics"
 title: "ODBC Basics"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC cursor library [ODBC], ODBC components", "ODBC components", "ODBC components, required components", "ODBC, about ODBC", "ODBC, components"]

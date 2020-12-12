@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN011: Using MFC as Part of a DLL"
 title: "TN011: Using MFC as Part of a DLL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_USRDLL symbol", "USRDLLs, compiler switches", "TN011", "DLLs [MFC], linking", "MFC DLLs [MFC], linking regular MFC DLLs to MFC"]

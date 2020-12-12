@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::const_reference"
 title: "Container Class::const_reference"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["const_reference method"]

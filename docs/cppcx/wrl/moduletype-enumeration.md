@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ModuleType Enumeration"
 title: "ModuleType Enumeration"
 ms.date: "11/04/2016"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Namespaces (C++)"
 title: "Namespaces (C++)"
 ms.date: "08/30/2017"
 f1_keywords: ["namespace_CPP", "using_CPP"]

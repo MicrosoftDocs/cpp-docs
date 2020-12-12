@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections::Map Class"
 title: "Platform::Collections::Map Class"
 ms.date: "10/01/2019"
 ms.topic: "reference"

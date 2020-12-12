@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using a Dialog Template in Memory"
 title: "Using a Dialog Template in Memory"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["templates [MFC], for dialog boxes", "dialog templates [MFC]", "dialog templates [MFC], in memory", "MFC dialog boxes [MFC], dialog templates"]

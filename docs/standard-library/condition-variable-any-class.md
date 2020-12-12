@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: condition_variable_any Class"
 title: "condition_variable_any Class"
 ms.date: "11/04/2016"
 f1_keywords: ["condition_variable/std::condition_variable_any", "condition_variable/std::condition_variable_any::condition_variable_any", "condition_variable/std::condition_variable_any::notify_all", "condition_variable/std::condition_variable_any::notify_one", "condition_variable/std::condition_variable_any::wait", "condition_variable/std::condition_variable_any::wait_for", "condition_variable/std::condition_variable_any::wait_until"]

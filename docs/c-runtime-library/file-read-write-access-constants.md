@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File Read/Write Access Constants"
 title: "File Read-Write Access Constants"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["read/write access constants", "write access constants", "access constants for file read/write", "constants [C++], file attributes", "file read/write access constants"]

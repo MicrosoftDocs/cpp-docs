@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: E. Implementation-defined behaviors in OpenMP C/C++"
 title: "E. Implementation-defined behaviors in OpenMP C/C++"
 ms.date: "01/22/2019"
 ms.assetid: b8d660ca-9bb3-4b6b-87af-45c67d43a731

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Options, ATL Active Server Page Component Wizard"
 title: "Options, ATL Active Server Page Component Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.asp.options"]

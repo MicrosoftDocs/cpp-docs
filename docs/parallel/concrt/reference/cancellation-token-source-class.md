@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cancellation_token_source Class"
 title: "cancellation_token_source Class"
 ms.date: "11/04/2016"
 f1_keywords: ["cancellation_token_source", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::cancellation_token_source", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::cancel", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::create_linked_source", "PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::get_token"]

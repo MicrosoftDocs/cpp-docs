@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: extern Storage-Class Specifier"
 title: "extern Storage-Class Specifier"
 ms.date: "07/10/2018"
 helpviewer_keywords: ["extern keyword [C]", "storage class specifiers, extern", "extern keyword [C], storage class specifier", "external linkage, storage-class specifiers", "external linkage, extern modifier"]

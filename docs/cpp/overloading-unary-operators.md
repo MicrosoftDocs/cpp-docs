@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overloading Unary Operators"
 title: "Overloading Unary Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["unary operators [C++], plus", "increment operators [C++], overloaded", "unary operators [C++], minus", "operators [C++], unary", "redefinable unary operators [C++]", "unary operators [C++]", "pointer dereference operator overloading", "plus operator"]

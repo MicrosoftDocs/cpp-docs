@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type Casting of MFC Class Objects"
 title: "Type Casting of MFC Class Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["macros [MFC], type casting", "pointers [MFC], type casting", "type casts [MFC]", "casting types [MFC]", "macros [MFC], casting pointers"]

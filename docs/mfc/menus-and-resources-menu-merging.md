@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Menus and Resources: Menu Merging"
 title: "Menus and Resources: Menu Merging"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["status bars [MFC], OLE document applications", "visual editing [MFC], application menus and resources", "coordinating menu layouts [MFC]", "OLE containers [MFC], menus and resources", "toolbars [MFC], OLE document applications", "merging toolbar and status bar [MFC]", "menus [MFC], OLE document applications"]

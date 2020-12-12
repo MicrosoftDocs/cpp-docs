@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overloading the &lt;&lt; Operator for Your Own Classes"
 title: "Overloading the &lt;&lt; Operator for Your Own Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operator<<, overloading for your own classes", "operator <<, overloading for your own classes"]

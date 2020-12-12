@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: num_put Class"
 title: "num_put Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocnum/std::num_put", "locale/std::num_put::char_type", "locale/std::num_put::iter_type", "locale/std::num_put::do_put", "locale/std::num_put::put"]

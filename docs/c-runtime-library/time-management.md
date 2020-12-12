@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Time Management"
 title: "Time Management"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dates, run-time library members", "time, time management", "date functions", "time functions"]

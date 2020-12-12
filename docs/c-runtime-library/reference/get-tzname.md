@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_tzname"
 title: "_get_tzname"
 ms.date: "4/2/2020"
 api_name: ["_get_tzname", "_o__get_tzname"]

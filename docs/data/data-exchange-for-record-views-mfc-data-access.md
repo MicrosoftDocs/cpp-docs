@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Exchange for Record Views   (MFC Data Access)"
 title: "Data Exchange for Record Views   (MFC Data Access)"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["RFX (record field exchange), data exchange mechanism", "RFX (record field exchange), record views", "record views, data exchange", "DDX (dialog data exchange), record views", "RFX (record field exchange)"]

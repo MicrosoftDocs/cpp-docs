@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets: Sequence of Operations"
 title: "Windows Sockets: Sequence of Operations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows Sockets [MFC], operations", "Windows Sockets [MFC], stream sockets", "sockets [MFC], stream sockets", "sockets [MFC], operations", "stream sockets [MFC]"]

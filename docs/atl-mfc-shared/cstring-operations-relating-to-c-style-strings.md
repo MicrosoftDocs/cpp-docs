@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CString Operations Relating to C-Style Strings"
 title: "CString Operations Relating to C-Style Strings"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CString objects, basic operations", "MFC [C++], string handling class", "string conversion [C++], C-style strings", "strings [C++], string operations", "standard run-time library string functions", "null values, Null-terminated string conversion", "string functions", "strings [C++], in C", "string arguments", "C-style strings", "strings [C++], class CString", "casting CString objects"]

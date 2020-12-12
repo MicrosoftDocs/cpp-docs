@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type for String Literals"
 title: "Type for String Literals"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["string literals, type", "types [C], string literals"]

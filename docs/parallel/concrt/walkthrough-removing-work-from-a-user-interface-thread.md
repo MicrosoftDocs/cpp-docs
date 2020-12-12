@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Removing Work from a User-Interface Thread"
 title: "Walkthrough: Removing Work from a User-Interface Thread"
 ms.date: "08/19/2019"
 helpviewer_keywords: ["user-interface threads, removing work from [Concurrency Runtime]", "removing work from user-interface threads [Concurrency Runtime]"]

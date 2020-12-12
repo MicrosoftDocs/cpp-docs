@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Fetching Records in Bulk (ODBC)"
 title: "Recordset: Fetching Records in Bulk (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["bulk row fetching, implementing", "ODBC recordsets, bulk row fetching", "bulk record field exchange", "bulk row fetching", "bulk RFX functions", "recordsets, bulk row fetching", "DoBulkFieldExchange method", "fetching ODBC records in bulk", "RFX (ODBC), bulk", "rowsets, bulk row fetching", "RFX (ODBC), bulk row fetching"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Lvalues and Rvalues (C++)"
 title: "Value Categories: Lvalues and Rvalues (C++)"
 ms.date: "05/07/2019"
 helpviewer_keywords: ["R-values [C++]", "L-values [C++]"]

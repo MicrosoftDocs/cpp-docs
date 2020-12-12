@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Operators"
 title: "C Operators"
 ms.date: "06/14/2018"
 helpviewer_keywords: ["ternary operators", "operators [C]", "symbols, operators", "binary operators", "associativity of operators", "binary data, binary expressions"]

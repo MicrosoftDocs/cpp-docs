@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multibyte Characters"
 title: "Multibyte Characters"
 ms.date: "11/04/2016"
 ms.assetid: 09fe1431-1006-41f9-bf47-ca82724c23ae

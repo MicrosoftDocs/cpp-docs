@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CUtlProps Class"
 title: "CUtlProps Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CUtlProps", "CUtlProps::GetPropValue", "CUtlProps.GetPropValue", "GetPropValue", "CUtlProps::IsValidValue", "CUtlProps.IsValidValue", "IsValidValue", "OnPropertyChanged", "CUtlProps.OnPropertyChanged", "CUtlProps::OnPropertyChanged", "SetPropValue", "ATL::CUtlProps<T>::SetPropValue", "ATL.CUtlProps<T>.SetPropValue", "ATL.CUtlProps.SetPropValue", "CUtlProps::SetPropValue", "CUtlProps<T>::SetPropValue", "CUtlProps.SetPropValue", "CUtlProps<T>.SetPropValue", "ATL::CUtlProps::SetPropValue"]

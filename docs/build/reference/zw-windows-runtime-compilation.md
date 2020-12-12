@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ZW (Windows Runtime Compilation)"
 title: "/ZW (Windows Runtime Compilation)"
 ms.date: "04/08/2019"
 f1_keywords: ["VC.Project.VCCLCompilerTool.CompileAsWinRT", "/zw"]

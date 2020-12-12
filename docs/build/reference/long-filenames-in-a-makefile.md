@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Long Filenames in a Makefile"
 title: "Long Filenames in a Makefile"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, long filenames", "long filenames"]

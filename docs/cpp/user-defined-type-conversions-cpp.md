@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: User-Defined Type Conversions (C++)"
 title: "User-Defined Type Conversions (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["explicit_cpp"]

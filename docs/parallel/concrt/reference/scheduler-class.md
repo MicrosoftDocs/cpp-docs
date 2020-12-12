@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Scheduler Class"
 title: "Scheduler Class"
 ms.date: "11/04/2016"
 f1_keywords: ["Scheduler", "CONCRT/concurrency::Scheduler", "CONCRT/concurrency::Scheduler::Scheduler", "CONCRT/concurrency::Scheduler::Attach", "CONCRT/concurrency::Scheduler::Create", "CONCRT/concurrency::Scheduler::CreateScheduleGroup", "CONCRT/concurrency::Scheduler::GetNumberOfVirtualProcessors", "CONCRT/concurrency::Scheduler::GetPolicy", "CONCRT/concurrency::Scheduler::Id", "CONCRT/concurrency::Scheduler::IsAvailableLocation", "CONCRT/concurrency::Scheduler::Reference", "CONCRT/concurrency::Scheduler::RegisterShutdownEvent", "CONCRT/concurrency::Scheduler::Release", "CONCRT/concurrency::Scheduler::ResetDefaultSchedulerPolicy", "CONCRT/concurrency::Scheduler::ScheduleTask", "CONCRT/concurrency::Scheduler::SetDefaultSchedulerPolicy"]

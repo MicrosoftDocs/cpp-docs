@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Snap-In Object Macros"
 title: "Snap-In Object Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlsnap/ATL::BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP", "atlsnap/ATL::BEGIN_SNAPINTOOLBARID_MAP", "atlsnap/ATL::END_EXTENSION_SNAPIN_NODEINFO_MAP", "atlsnap/ATL::END_SNAPINTOOLBARID_MAP", "atlsnap/ATL::EXTENSION_SNAPIN_DATACLASS", "atlsnap/ATL::EXTENSION_SNAPIN_NODEINFO_ENTRY", "atlsnap/ATL::SNAPINMENUID", "atlsnap/ATL::SNAPINTOOLBARID_ENTRY"]

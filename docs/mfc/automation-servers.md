@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Automation Servers"
 title: "Automation Servers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Automation servers", "COM components, Automation servers", "dispatch maps [MFC], Automation servers", "servers, Automation"]

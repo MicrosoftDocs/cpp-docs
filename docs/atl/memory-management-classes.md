@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Memory Management Classes"
 title: "Memory Management Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

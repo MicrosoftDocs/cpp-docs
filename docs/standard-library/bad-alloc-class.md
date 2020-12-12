@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bad_alloc Class"
 title: "bad_alloc Class"
 ms.date: "11/04/2016"
 f1_keywords: ["new/std::bad_alloc"]

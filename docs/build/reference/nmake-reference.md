@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NMAKE Reference"
 title: "NMAKE Reference"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Microsoft program maintenance utility", "preprocessing NMAKE", "program execution [C++]", "NMAKE program"]

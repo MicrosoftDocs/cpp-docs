@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _bittestandset, _bittestandset64"
 title: "_bittestandset, _bittestandset64"
 ms.date: "09/02/2019"
 f1_keywords: ["_bittestandset_cpp", "_bittestandset64_cpp", "_bittestandset64", "_bittestandset"]

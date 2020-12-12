@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Precompiled Header Files"
 title: "Precompiled Header Files"
 ms.date: "10/24/2019"
 helpviewer_keywords: ["precompiled header files, creating", "PCH files, creating", "cl.exe compiler, precompiling code", ".pch files, creating"]

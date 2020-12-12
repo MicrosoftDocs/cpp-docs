@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: unsynchronized_pool_resource Class"
 title: "unsynchonized_pool_resource Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory_resource/std::unsynchronized_pool_resource"]

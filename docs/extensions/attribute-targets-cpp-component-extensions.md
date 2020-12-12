@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Attribute Targets (C++/CLI and C++/CX)"
 title: "Attribute Targets (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

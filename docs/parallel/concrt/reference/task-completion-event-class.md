@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: task_completion_event Class"
 title: "task_completion_event Class"
 ms.date: "11/04/2016"
 f1_keywords: ["task_completion_event", "PPLTASKS/concurrency::task_completion_event", "PPLTASKS/concurrency::task_completion_event::task_completion_event", "PPLTASKS/concurrency::task_completion_event::set", "PPLTASKS/concurrency::task_completion_event::set_exception"]

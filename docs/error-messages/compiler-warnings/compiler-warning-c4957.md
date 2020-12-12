@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning C4957"
 title: "Compiler Warning C4957"
 ms.date: "11/04/2016"
 f1_keywords: ["C4957"]

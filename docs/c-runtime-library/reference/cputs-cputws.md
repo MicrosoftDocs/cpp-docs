@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _cputs, _cputws"
 title: "_cputs, _cputws"
 ms.date: "4/2/2020"
 api_name: ["_cputws", "_cputs", "_o__cputs", "_o__cputws"]

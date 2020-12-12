@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator PARITY?"
 title: "operator PARITY?"
 ms.date: "12/17/2019"
 f1_keywords: ["PARITY?", "operator PARITY?"]

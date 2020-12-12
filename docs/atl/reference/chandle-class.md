@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CHandle Class"
 title: "CHandle Class"
 ms.date: "07/09/2019"
 f1_keywords: ["CHandle", "ATLBASE/ATL::CHandle", "ATLBASE/ATL::CHandle::CHandle", "ATLBASE/ATL::CHandle::Attach", "ATLBASE/ATL::CHandle::Close", "ATLBASE/ATL::CHandle::Detach", "ATLBASE/ATL::CHandle::m_h"]

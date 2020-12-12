@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Record View Code Created by Application Wizard  (MFC Data Access)"
 title: "Record View Code Created by Application Wizard  (MFC Data Access)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application wizards [C++], record view code", "record views, refreshing controls", "record views, application wizard code"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an MFC Class from a Type Library"
 title: "Adding an MFC Class from a Type Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["classes [MFC], adding MFC", "MFC, adding classes from type libraries", "type libraries, adding MFC classes from"]

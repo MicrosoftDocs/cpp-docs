@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls)"
 title: "/CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls)"
 ms.date: "11/04/2016"
 f1_keywords: ["/CLRSUPPORTLASTERROR"]

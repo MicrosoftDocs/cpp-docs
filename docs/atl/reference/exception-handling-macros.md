@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exception Handling Macros"
 title: "Exception Handling Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atldef/ATL::_ATLCATCH", "atldef/ATL::_ATLCATCHALL", "atldef/ATL::_ATLTRY"]

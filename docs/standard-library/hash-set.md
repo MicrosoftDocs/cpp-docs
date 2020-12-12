@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;hash_set&gt;"
 title: "&lt;hash_set&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<hash_set>", "std::<hash_set>"]

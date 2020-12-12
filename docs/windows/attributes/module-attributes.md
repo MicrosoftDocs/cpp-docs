@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Module Attributes"
 title: "Module Attributes (C++ COM)"
 ms.date: "10/02/2018"
 helpviewer_keywords: ["module attributes", "attributes [C++/CLI], reference topics"]

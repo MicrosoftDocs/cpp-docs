@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Bitwise Operators"
 title: "C Bitwise Operators"
 ms.date: "01/29/2018"
 helpviewer_keywords: ["| operator, bitwise operators", "bitwise operators, Visual C", "bitwise operators", "operators [C], bitwise", "^ operator, bitwise operators", "AND operator", "ampersand operator (&)", "^ operator", "& operator, bitwise operators"]

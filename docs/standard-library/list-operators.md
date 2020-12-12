@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;list&gt; operators"
 title: "&lt;list&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["list/std::operator!=", "list/std::operator&gt;", "list/std::operator&gt;=", "list/std::operator&lt;", "list/std::operator&lt;=", "list/std::operator=="]

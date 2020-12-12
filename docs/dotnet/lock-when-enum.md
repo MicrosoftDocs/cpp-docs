@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: lock_when Enum"
 title: "lock_when Enum"
 ms.date: "11/04/2016"
 ms.topic: "reference"

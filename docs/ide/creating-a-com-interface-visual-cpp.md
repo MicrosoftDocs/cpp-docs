@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Create a COM interface"
 title: "Create a COM interface"
 ms.date: "05/14/2019"
 helpviewer_keywords: ["COM interfaces, creating", "methods [C++], adding to COM interfaces", "COM interfaces, editing", "properties [C++], adding to COM interfaces"]

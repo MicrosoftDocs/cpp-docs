@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Predefined Rules"
 title: "Predefined Rules"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rules, predefined", "NMAKE program, predefined rules", "predefined rules in NMAKE"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Name Resolution for Locally Declared Names"
 title: "Name Resolution for Locally Declared Names"
 ms.date: "11/04/2016"
 ms.assetid: 743b88f3-de11-48f4-ae83-931449ea3886

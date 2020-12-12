@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling TTN_NEEDTEXT Notification for Tool Tips"
 title: "Handling TTN_NEEDTEXT Notification for Tool Tips"
 ms.date: "11/04/2016"
 f1_keywords: ["TTN_NEEDTEXT"]

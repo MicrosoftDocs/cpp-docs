@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: unsupported_feature Class"
 title: "unsupported_feature Class"
 ms.date: "03/27/2019"
 f1_keywords: ["unsupported_feature", "AMPRT/unsupported_feature", "AMPRT/Concurrency::unsupported_feature"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: promise Class"
 title: "promise Class"
 ms.date: "10/18/2018"
 f1_keywords: ["future/std::promise", "future/std::promise::promise", "future/std::promise::get_future", "future/std::promise::set_exception", "future/std::promise::set_exception_at_thread_exit", "future/std::promise::set_value", "future/std::promise::set_value_at_thread_exit", "future/std::promise::swap"]

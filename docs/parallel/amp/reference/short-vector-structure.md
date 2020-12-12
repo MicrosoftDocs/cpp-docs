@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: short_vector Structure"
 title: "short_vector Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["short_vector", "AMP_SHORT_VECTORS/short_vector", "AMP_SHORT_VECTORS/Concurrency::graphics::short_vector::short_vector Constructor"]

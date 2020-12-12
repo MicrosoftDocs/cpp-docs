@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Punctuation and Special Characters"
 title: "Punctuation and Special Characters"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["number sign", "characters, special", "punctuation", "# preprocessor operator", "special characters"]

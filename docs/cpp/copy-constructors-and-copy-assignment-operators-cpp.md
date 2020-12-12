@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Copy Constructors and Copy Assignment Operators (C++)"
 title: "Copy Constructors and Copy Assignment Operators (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["= operator [C++], copying objects", "assignment statements [C++], copying objects", "assignment operators [C++], for copying objects", "objects [C++], copying", "initializing objects, by copying objects", "copying objects", "assigning values to copy objects"]

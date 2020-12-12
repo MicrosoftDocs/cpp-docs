@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Game Development with C++"
 title: "Game Development with C++"
 ms.date: "02/26/2019"
 ---

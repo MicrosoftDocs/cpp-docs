@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binary Editor (C++)"
 title: "Binary Editor (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.binary.F1", "vc.editors.binary"]

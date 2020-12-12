@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using an Image List with a Rebar Control"
 title: "Using an Image List with a Rebar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["image lists [MFC], rebar controls", "rebar controls [MFC], image lists"]

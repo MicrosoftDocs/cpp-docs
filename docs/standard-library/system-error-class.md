@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: system_error Class"
 title: "system_error Class"
 ms.date: "11/04/2016"
 f1_keywords: ["system_error/std::system_error"]

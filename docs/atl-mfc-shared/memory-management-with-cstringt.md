@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Memory Management with CStringT"
 title: "Memory Management with CStringT"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CString objects, memory management", "memory [C++], usage", "IAtlStringMgr class, using", "strings [C++], custom memory management", "CFixedStringT class, description of", "strings [C++], memory management", "CStringT class, memory management"]

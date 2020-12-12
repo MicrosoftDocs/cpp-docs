@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /SYMBOLS"
 title: "/SYMBOLS"
 ms.date: "09/05/2018"
 f1_keywords: ["/symbols"]

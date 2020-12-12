@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Hardware exceptions"
 title: "Hardware exceptions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exceptions [C++], hardware", "errors [C++], low-level", "errors [C++], hardware", "hardware exceptions [C++]", "low level errors"]

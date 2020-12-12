@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: swap Function (auto_handle)"
 title: "swap Function (auto_handle)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

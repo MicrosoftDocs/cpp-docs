@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CMonthCalCtrl"
 title: "Using CMonthCalCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CMonthCalCtrl class [MFC], about CMonthCalCtrl class"]

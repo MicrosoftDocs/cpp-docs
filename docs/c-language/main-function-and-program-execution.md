@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: main Function and Program Execution"
 title: "main Function and Program Execution"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["program startup [C++]", "entry points, program", "main function, program execution", "startup code, main function", "main function", "programs [C++], terminating"]

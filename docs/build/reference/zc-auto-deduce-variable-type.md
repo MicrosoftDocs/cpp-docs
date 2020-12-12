@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `/Zc:auto` (Deduce Variable Type)"
 title: "/Zc:auto (Deduce Variable Type)"
 ms.date: "02/28/2018"
 f1_keywords: ["/Zc:auto"]

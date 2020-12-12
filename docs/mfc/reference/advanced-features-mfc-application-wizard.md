@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Advanced Features, MFC Application Wizard"
 title: "Advanced Features, MFC Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.exe.advanced"]

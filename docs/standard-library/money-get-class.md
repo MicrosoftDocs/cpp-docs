@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: money_get Class"
 title: "money_get Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocmon/std::money_get", "xlocmon/std::money_get::char_type", "xlocmon/std::money_get::iter_type", "xlocmon/std::money_get::string_type", "xlocmon/std::money_get::do_get", "xlocmon/std::money_get::get"]

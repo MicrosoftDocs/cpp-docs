@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CComboBoxEx"
 title: "Using CComboBoxEx"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["combo boxes [MFC], extended", "extended combo boxes [MFC], about extended combo boxes", "combo boxes [MFC], CComboBoxEx class", "CComboBox class [MFC], extended"]

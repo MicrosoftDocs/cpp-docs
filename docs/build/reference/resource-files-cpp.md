@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Project Resource Files (C++)"
 title: "Project Resource Files (C++)"
 ms.date: "05/14/2019"
 helpviewer_keywords: ["resource files", "resources [C++]"]

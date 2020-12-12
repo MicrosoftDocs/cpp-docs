@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: memcpy, wmemcpy"
 title: "memcpy, wmemcpy"
 ms.date: "11/04/2016"
 api_name: ["memcpy", "wmemcpy"]

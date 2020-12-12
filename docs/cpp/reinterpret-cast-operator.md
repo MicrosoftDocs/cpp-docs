@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: reinterpret_cast Operator"
 title: "reinterpret_cast Operator"
 ms.date: "11/04/2016"
 f1_keywords: ["reinterpret_cast_cpp"]

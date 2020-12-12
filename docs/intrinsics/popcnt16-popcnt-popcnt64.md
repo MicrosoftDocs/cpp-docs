@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __popcnt16, __popcnt, __popcnt64"
 title: "__popcnt16, __popcnt, __popcnt64"
 ms.date: "09/02/2019"
 f1_keywords: ["__popcnt64", "__popcnt", "__popcnt16"]

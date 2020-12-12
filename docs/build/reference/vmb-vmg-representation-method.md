@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /vmb, /vmg (Representation Method)"
 title: "/vmb, /vmg (Representation Method)"
 ms.date: "11/04/2016"
 f1_keywords: ["/vmb", "/vmg"]

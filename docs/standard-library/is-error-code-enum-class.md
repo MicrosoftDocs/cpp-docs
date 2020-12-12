@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_error_code_enum Class"
 title: "is_error_code_enum Class"
 ms.date: "11/04/2016"
 f1_keywords: ["system_error/std::is_error_code_enum"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Collection Class Helpers"
 title: "Collection Class Helpers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DestructElements function", "ConstructElements function", "SerializeElements function", "collection classes [MFC], helper functions", "helper functions collection class [MFC]"]

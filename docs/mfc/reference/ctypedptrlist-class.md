@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTypedPtrList Class"
 title: "CTypedPtrList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTypedPtrList", "AFXTEMPL/CTypedPtrList", "AFXTEMPL/CTypedPtrList::AddHead", "AFXTEMPL/CTypedPtrList::AddTail", "AFXTEMPL/CTypedPtrList::GetAt", "AFXTEMPL/CTypedPtrList::GetHead", "AFXTEMPL/CTypedPtrList::GetNext", "AFXTEMPL/CTypedPtrList::GetPrev", "AFXTEMPL/CTypedPtrList::GetTail", "AFXTEMPL/CTypedPtrList::RemoveHead", "AFXTEMPL/CTypedPtrList::RemoveTail", "AFXTEMPL/CTypedPtrList::SetAt"]

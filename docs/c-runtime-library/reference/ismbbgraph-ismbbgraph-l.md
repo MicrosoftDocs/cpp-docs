@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ismbbgraph, _ismbbgraph_l"
 title: "_ismbbgraph, _ismbbgraph_l"
 ms.date: "4/2/2020"
 api_name: ["_ismbbgraph_l", "_ismbbgraph", "_o__ismbbgraph", "_o__ismbbgraph_l"]

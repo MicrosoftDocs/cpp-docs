@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /CGTHREADS (Compiler Threads)"
 title: "/CGTHREADS (Compiler Threads)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["/CGTHREADS linker option", "-CGTHREADS linker option", "CGTHREADS linker option"]

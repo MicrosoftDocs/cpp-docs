@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Active Technology on the Internet"
 title: "Active Technology on the Internet"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["Internet applications [MFC], Active technology"]

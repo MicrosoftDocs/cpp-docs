@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;limits&gt;"
 title: "&lt;limits&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["limits/std::<limits>", "<limits>"]

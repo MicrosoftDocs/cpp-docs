@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: const_cast Operator"
 title: "const_cast Operator"
 ms.date: "11/04/2016"
 f1_keywords: ["const_cast_cpp"]

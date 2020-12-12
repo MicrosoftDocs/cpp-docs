@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CloakedIid Structure"
 title: "CloakedIid Structure"
 ms.date: "11/04/2016"
 ms.topic: "reference"

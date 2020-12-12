@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /STUB (MS-DOS Stub File Name)"
 title: "/STUB (MS-DOS Stub File Name)"
 ms.date: "11/04/2016"
 f1_keywords: ["/stub", "VC.Project.VCLinkerTool.DosStub"]

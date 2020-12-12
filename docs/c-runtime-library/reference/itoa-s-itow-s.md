@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s,  _ltow_s,  _ultow_s, _i64tow_s, _ui64tow_s"
 title: "_itoa_s, _itow_s functions"
 ms.date: "4/2/2020"
 api_name: ["_itoa_s", "_ltoa_s", "_ultoa_s", "_i64toa_s", "_ui64toa_s", "_itow_s", "_ltow_s", "_ultow_s", "_i64tow_s", "_ui64tow_s", "_o__i64toa_s", "_o__i64tow_s", "_o__itoa_s", "_o__itow_s", "_o__ltoa_s", "_o__ltow_s", "_o__ui64toa_s", "_o__ui64tow_s", "_o__ultoa_s", "_o__ultow_s"]

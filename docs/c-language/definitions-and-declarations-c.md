@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Definitions and Declarations (C)"
 title: "Definitions and Declarations (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["export functions"]

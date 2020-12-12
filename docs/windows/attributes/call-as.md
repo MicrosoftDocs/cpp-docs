@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: call_as"
 title: "call_as (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.call_as"]

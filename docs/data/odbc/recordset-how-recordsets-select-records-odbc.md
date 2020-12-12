@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: How Recordsets Select Records (ODBC)"
 title: "Recordset: How Recordsets Select Records (ODBC)"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["recordsets, selecting records", "record selection, ODBC recordsets", "SQL statements, recordset", "records, selecting", "recordsets, constructing SQL statements", "ODBC recordsets, selecting records"]

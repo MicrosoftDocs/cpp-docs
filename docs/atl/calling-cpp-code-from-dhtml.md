@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Calling C++ Code from DHTML"
 title: "Calling C++ Code from DHTML"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DHTML, calling C++ code from"]

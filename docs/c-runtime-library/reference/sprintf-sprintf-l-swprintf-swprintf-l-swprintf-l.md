@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l"
 title: "sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l"
 ms.date: "06/23/2020"
 api_name: ["__swprintf_l", "sprintf", "_sprintf_l", "_swprintf_l", "swprintf"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActiveX Control Containers: Manually Enabling ActiveX Control Containment"
 title: "ActiveX Control Containers: Manually Enabling ActiveX Control Containment"
 ms.date: "09/12/2018"
 helpviewer_keywords: ["AfxEnableControlContainer method [MFC]", "ActiveX control containers [MFC], enabling", "ActiveX controls [MFC], enabling containers"]

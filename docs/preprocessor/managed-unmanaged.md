@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: managed, unmanaged pragmas"
 title: "managed, unmanaged pragmas"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.unmanaged", "managed_CPP", "unmanaged_CPP", "vc-pragma.managed"]

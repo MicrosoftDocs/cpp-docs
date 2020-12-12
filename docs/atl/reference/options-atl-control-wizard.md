@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Options, ATL Control Wizard"
 title: "Options, ATL Control Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.class.atl.control.options"]

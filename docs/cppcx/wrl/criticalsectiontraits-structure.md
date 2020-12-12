@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CriticalSectionTraits Structure"
 title: "CriticalSectionTraits Structure"
 ms.date: "09/26/2018"
 ms.topic: "reference"

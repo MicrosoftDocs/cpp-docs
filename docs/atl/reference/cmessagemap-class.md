@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMessageMap Class"
 title: "CMessageMap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMessageMap", "ATLWIN/ATL::CMessageMap", "ATLWIN/ATL::CMessageMap::ProcessWindowMessage"]

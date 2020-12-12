@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Connecting Using Tasks and XML HTTP Requests"
 title: "Walkthrough: Connecting Using Tasks and XML HTTP Requests"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["connecting to web services, UWP apps [C++]", "IXMLHTTPRequest2 and tasks, example", "IXHR2 and tasks, example"]

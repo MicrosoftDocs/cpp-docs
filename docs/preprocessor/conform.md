@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: conform pragma"
 title: "conform pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["conform_CPP", "vc-pragma.conform"]

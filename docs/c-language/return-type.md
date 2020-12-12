@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Return Type"
 title: "Return Type"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function return types", "return values [C++], function procedures", "function return types, syntax", "return values [C++]", "data types [C++], function return types", "return keyword [C++], function return types", "functions [C++], return types"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: no_injected_text"
 title: "no_injected_text (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.no_injected_text"]

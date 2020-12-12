@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Contexts"
 title: "Contexts"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["contexts [Concurrency Runtime]"]

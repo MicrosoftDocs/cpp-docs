@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCDisableMenuAnimation Class"
 title: "CMFCDisableMenuAnimation Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCDisableMenuAnimation", "AFXPOPUPMENU/CMFCDisableMenuAnimation", "AFXPOPUPMENU/CMFCDisableMenuAnimation::Restore"]

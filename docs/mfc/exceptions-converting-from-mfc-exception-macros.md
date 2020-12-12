@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions: Converting from MFC Exception Macros"
 title: "Exceptions: Converting from MFC Exception Macros"
 ms.date: "08/27/2018"
 helpviewer_keywords: ["converting exceptions [MFC]", "exception objects [MFC]", "conversions [MFC], code written with MFC macros", "keywords [MFC], macros", "macrosv, C++ keywords", "exception objects [MFC], deleting", "CException class [MFC], deleting CException class objects", "exceptions [MFC], converting", "exceptions [MFC], deleting exception objects", "catch blocks [MFC], delimiting", "exception handling [MFC], converting exceptions"]

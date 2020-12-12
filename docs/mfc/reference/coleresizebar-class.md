@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleResizeBar Class"
 title: "COleResizeBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleResizeBar", "AFXOLE/COleResizeBar", "AFXOLE/COleResizeBar::COleResizeBar", "AFXOLE/COleResizeBar::Create"]

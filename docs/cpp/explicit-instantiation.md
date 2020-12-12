@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Explicit Instantiation"
 title: "Explicit Instantiation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["templates, instantiation", "explicit instantiation", "instantiation, explicit"]

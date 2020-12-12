@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;chrono&gt; operators"
 title: "&lt;chrono&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["chrono/std::operator modulo"]

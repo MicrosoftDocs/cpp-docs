@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: No Linkage"
 title: "No Linkage"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["no linkage", "linkage [C++], none"]

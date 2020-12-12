@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ClickOnce Deployment for Visual C++ Applications"
 title: "ClickOnce Deployment for Visual C++ Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["deploying applications [C++], ClickOnce", "application deployment [C++], ClickOnce", "ClickOnce deployment [C++], C++ applications"]

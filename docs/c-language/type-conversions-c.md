@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type Conversions (C)"
 title: "Type Conversions (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["conversions, type", "type conversion", "converting types", "integral promotions", "type casts, when performed"]

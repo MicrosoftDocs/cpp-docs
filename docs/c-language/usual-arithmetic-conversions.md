@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Usual Arithmetic Conversions"
 title: "Usual Arithmetic Conversions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["arithmetic conversions [C++]", "type conversion [C++], arithmetic", "operators [C], arithmetic conversions", "data type conversion [C++], arithmetic", "conversions [C++], arithmetic", "arithmetic operators [C++], type conversions"]

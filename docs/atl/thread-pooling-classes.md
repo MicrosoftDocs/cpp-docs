@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Thread Pooling Classes"
 title: "Thread Pooling Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Lambdas, Function Objects, and Restricted Functions"
 title: "Using Lambdas, Function Objects, and Restricted Functions"
 ms.date: "11/04/2016"
 ms.assetid: 25346cc9-869d-4ada-aad3-e2228cad3d6c

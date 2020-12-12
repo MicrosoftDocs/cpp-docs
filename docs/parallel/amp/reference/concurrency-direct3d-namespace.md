@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency::direct3d Namespace"
 title: "Concurrency::direct3d Namespace"
 ms.date: "11/04/2016"
 f1_keywords: ["amp/Concurrency::direct3d", "amprt/Concurrency::direct3d", "amp_short_vectors/Concurrency::direct3d", "amp_graphics/Concurrency::direct3d", "amp_math/Concurrency::direct3d"]

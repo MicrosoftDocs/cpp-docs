@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3052"
 title: "Compiler Error C3052"
 ms.date: "11/04/2016"
 f1_keywords: ["C3052"]

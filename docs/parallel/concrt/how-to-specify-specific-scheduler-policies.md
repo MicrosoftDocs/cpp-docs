@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify Specific Scheduler Policies"
 title: "How to: Specify Specific Scheduler Policies"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["specifying scheduler policies [Concurrency Runtime]", "scheduler policies, specifying [Concurrency Runtime]"]

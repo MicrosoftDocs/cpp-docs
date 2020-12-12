@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with OLE DB Provider Templates"
 title: "Working with OLE DB Provider Templates"
 ms.date: "10/29/2018"
 helpviewer_keywords: ["reference, OLE DB provider templates", "OLE DB, provider templates", "templates, OLE DB provider", "OLE DB providers, templates"]

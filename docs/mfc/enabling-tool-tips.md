@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Enabling Tool Tips"
 title: "Enabling Tool Tips"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["initializing tool tips [MFC]", "enabling tool tips [MFC]", "tool tips [MFC], initializing", "tool tips [MFC], enabling"]

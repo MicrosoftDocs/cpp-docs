@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: message_not_found Class"
 title: "message_not_found Class"
 ms.date: "11/04/2016"
 f1_keywords: ["message_not_found", "CONCRT/concurrency::message_not_found", "CONCRT/concurrency::message_not_found::message_not_found"]

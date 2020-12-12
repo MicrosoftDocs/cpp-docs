@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _amsg_exit"
 title: "_amsg_exit"
 ms.date: "11/04/2016"
 api_name: ["_amsg_exit"]

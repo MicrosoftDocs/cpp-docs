@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: optional Class"
 title: "optional Class"
 ms.date: "11/04/2016"
 f1_keywords: ["optional/std::optional", "optional/std::optional::has_value", "optional/std::optional::reset", "optional/std::optional::value", "optional/std::optional::value_or"]

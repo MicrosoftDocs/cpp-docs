@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l"
 title: "_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l"
 ms.date: "4/2/2020"
 api_name: ["_stricmp_l", "_mbsicmp", "_wcsicmp", "_mbsicmp_l", "_stricmp", "_wcsicmp_l", "_o__mbsicmp", "_o__mbsicmp_l", "_o__stricmp", "_o__stricmp_l", "_o__wcsicmp", "_o__wcsicmp_l"]

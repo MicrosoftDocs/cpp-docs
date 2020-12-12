@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Improper Access to a Union"
 title: "Improper Access to a Union"
 ms.date: "11/04/2016"
 ms.assetid: b273d984-62a8-4003-9a87-bf0149d3f2dd

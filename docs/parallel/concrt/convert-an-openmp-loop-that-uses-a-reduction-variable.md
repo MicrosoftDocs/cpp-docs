@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Convert an OpenMP Loop that Uses a Reduction Variable to Use the Concurrency Runtime"
 title: "How to: Convert an OpenMP Loop that Uses a Reduction Variable to Use the Concurrency Runtime"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["converting from OpenMP to the Concurrency Runtime, reduction variables", "reduction variables, converting from OpenMP to the Concurrency Runtime"]

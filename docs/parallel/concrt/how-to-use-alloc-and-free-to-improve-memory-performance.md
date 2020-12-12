@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Alloc and Free to Improve Memory Performance"
 title: "How to: Use Alloc and Free to Improve Memory Performance"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Alloc and Free, using [Concurrency Runtime]", "Using Alloc and Free [Concurrency Runtime]"]

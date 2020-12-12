@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using a Hot Key Control"
 title: "Using a Hot Key Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CHotKeyCtrl class [MFC], using", "hot key controls"]

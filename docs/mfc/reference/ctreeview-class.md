@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTreeView Class"
 title: "CTreeView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTreeView", "AFXCVIEW/CTreeView", "AFXCVIEW/CTreeView::CTreeView", "AFXCVIEW/CTreeView::GetTreeCtrl"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: vfscanf, vfwscanf"
 title: "vfscanf, vfwscanf"
 ms.date: "11/04/2016"
 api_name: ["vfwscanf", "vfscanf"]

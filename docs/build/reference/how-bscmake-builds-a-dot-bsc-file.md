@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How BSCMAKE Builds a .Bsc File"
 title: "How BSCMAKE Builds a .Bsc File"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["browse information files (.bsc), building"]

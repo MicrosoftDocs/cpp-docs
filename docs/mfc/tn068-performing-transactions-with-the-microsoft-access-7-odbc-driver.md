@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN068: Performing Transactions with the Microsoft Access 7 ODBC Driver"
 title: "TN068: Performing Transactions with the Microsoft Access 7 ODBC Driver"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.data.odbc"]

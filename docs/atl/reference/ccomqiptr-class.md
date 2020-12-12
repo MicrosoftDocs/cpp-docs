@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComQIPtr Class"
 title: "CComQIPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComQIPtr", "ATLCOMCLI/ATL::CComQIPtr", "ATLCOMCLI/ATL::CComQIPtr::CComQIPtr"]

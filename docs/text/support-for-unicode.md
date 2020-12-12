@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Support for Unicode"
 title: "Support for Unicode"
 ms.date: "01/09/2018"
 helpviewer_keywords: ["globalization [C++], character sets", "portable data types [MFC]", "Unicode [C++]", "wide characters [C++], about wide characters", "character sets [C++], Unicode", "localization [C++], character sets", "Unicode [C++], installing support"]

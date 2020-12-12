@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::ReCreateException Method"
 title: "Platform::RecreateException Method"
 ms.date: "12/30/2016"
 ms.topic: "reference"

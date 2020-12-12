@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Control Containment Classes"
 title: "Control Containment Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

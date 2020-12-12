@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /vmm, /vms, /vmv (General Purpose Representation)"
 title: "/vmm, -vms, -vmv (General Purpose Representation)"
 ms.date: "11/04/2016"
 f1_keywords: ["/vms", "/vmm", "/vmv"]

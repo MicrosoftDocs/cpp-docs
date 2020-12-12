@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;set&gt;"
 title: "&lt;set&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<set>"]

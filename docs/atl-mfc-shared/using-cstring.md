@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CString"
 title: "Using CString"
 ms.date: "06/18/2018"
 helpviewer_keywords: ["CString objects, C++ string manipulation", "CString objects, reference counting", "CString class (Visual C++)"]

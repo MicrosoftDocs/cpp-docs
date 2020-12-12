@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Error LNK2027"
 title: "Linker Tools Error LNK2027"
 ms.date: "11/04/2016"
 f1_keywords: ["LNK2027"]

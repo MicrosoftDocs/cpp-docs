@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: virtual (C++)"
 title: "virtual (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["virtual_cpp", "virtual"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exception Handling Routines"
 title: "Exception Handling Routines"
 ms.date: "11/04/2016"
 f1_keywords: ["c.exceptions"]

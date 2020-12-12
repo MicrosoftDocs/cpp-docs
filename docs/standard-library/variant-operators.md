@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;variant&gt; operators"
 title: "&lt;variant&gt; operators"
 ms.date: "04/04/2019"
 f1_keywords: ["variant/std::operator!=", "variant/std::operator==", "variant/std::operatoroperator&gt;", "variant/std::operatoroperator&gt=;", "variant/std::operatoroperator&lt;", "variant/std::operatoroperator&lt;="]

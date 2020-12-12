@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DSizeF Class"
 title: "CD2DSizeF Class"
 ms.date: "08/29/2019"
 f1_keywords: ["CD2DSizeF", "AFXRENDERTARGET/CD2DSizeF", "AFXRENDERTARGET/CD2DSizeF::CD2DSizeF", "AFXRENDERTARGET/CD2DSizeF::IsNull"]

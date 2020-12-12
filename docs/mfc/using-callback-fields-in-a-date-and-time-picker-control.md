@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Callback Fields in a Date and Time Picker Control"
 title: "Using Callback Fields in a Date and Time Picker Control"
 ms.date: "11/04/2016"
 f1_keywords: ["DTN_FORMATQUERY", "DTN_FORMAT"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMDIFrameWnd Class"
 title: "CMDIFrameWnd Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMDIFrameWnd", "AFXWIN/CMDIFrameWnd", "AFXWIN/CMDIFrameWnd::CMDIFrameWnd", "AFXWIN/CMDIFrameWnd::CreateClient", "AFXWIN/CMDIFrameWnd::CreateNewChild", "AFXWIN/CMDIFrameWnd::GetWindowMenuPopup", "AFXWIN/CMDIFrameWnd::MDIActivate", "AFXWIN/CMDIFrameWnd::MDICascade", "AFXWIN/CMDIFrameWnd::MDIGetActive", "AFXWIN/CMDIFrameWnd::MDIIconArrange", "AFXWIN/CMDIFrameWnd::MDIMaximize", "AFXWIN/CMDIFrameWnd::MDINext", "AFXWIN/CMDIFrameWnd::MDIPrev", "AFXWIN/CMDIFrameWnd::MDIRestore", "AFXWIN/CMDIFrameWnd::MDISetMenu", "AFXWIN/CMDIFrameWnd::MDITile"]

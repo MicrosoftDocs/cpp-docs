@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Composite Control Fundamentals"
 title: "ATL Composite Control Fundamentals"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["composite controls, about composite controls"]

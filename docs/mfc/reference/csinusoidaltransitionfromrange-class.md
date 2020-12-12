@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSinusoidalTransitionFromRange Class"
 title: "CSinusoidalTransitionFromRange Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSinusoidalTransitionFromRange", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::Create", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_dblMaximumValue", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_dblMinimumValue", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_duration", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_period", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_slope"]

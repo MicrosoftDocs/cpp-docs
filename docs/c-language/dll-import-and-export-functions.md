@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DLL Import and Export Functions"
 title: "DLL Import and Export Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DLLs [C++], importing", "dllimport attribute [C++], storage-class attribute", "DLL exports [C++]", "declaring functions, with dllexport and dllimport", "extended storage-class attributes", "dllexport attribute [C++], storage-class attribute"]

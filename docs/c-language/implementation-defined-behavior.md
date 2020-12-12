@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementation-Defined Behavior"
 title: "Implementation-Defined Behavior"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Visual C, portability of Microsoft C", "portability [C++], Microsoft C to ANSI C", "ANSI [C++], C standard", "implementation-defined behavior"]

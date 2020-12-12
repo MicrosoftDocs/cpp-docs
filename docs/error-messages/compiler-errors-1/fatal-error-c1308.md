@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fatal Error C1308"
 title: "Fatal Error C1308"
 ms.date: "11/04/2016"
 f1_keywords: ["C1308"]

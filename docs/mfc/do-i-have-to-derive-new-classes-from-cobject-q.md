@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Do I Have to Derive New Classes from CObject?"
 title: "Do I Have to Derive New Classes from CObject?"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["derived classes [MFC], from CObject", "CObject class [MFC], when to use"]

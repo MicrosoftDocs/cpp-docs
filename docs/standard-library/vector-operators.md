@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;vector&gt; operators"
 title: "&lt;vector&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["vector/std::operator!=", "vector/std::operator&gt;", "vector/std::operator&gt;=", "vector/std::operator&lt;", "vector/std::operator&lt;=", "vector/std::operator=="]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Customize the Application Button"
 title: "How to: Customize the Application Button"
 ms.date: "09/07/2019"
 helpviewer_keywords: ["application button [MFC], customizing"]
