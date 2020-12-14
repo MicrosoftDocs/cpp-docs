@@ -1,9 +1,8 @@
 ---
 description: "Learn more about: Compiler Options"
 title: "MSVC Compiler Options"
-ms.date: "05/06/2019"
+ms.date: "12/14/2020"
 helpviewer_keywords: ["cl.exe compiler", "x86 MSVC compiler", "ARM MSVC compiler", "compiler options, C++", "x64 MSVC compiler"]
-ms.assetid: ed3376c8-bef4-4c9a-80e9-3b5da232644c
 ---
 # Compiler Options
 
