@@ -1,7 +1,8 @@
 ---
 title: "Walkthrough: Create and use your own Dynamic Link Library (C++)"
 description: "Use C++ to create a Windows dynamic-link library (DLL) in Visual Studio."
-ms.custom: ["walkthrough",  "contperfq2"]
+ms.custom: "contperf-fy21q2"
+ms.topic: tutorial
 ms.date: "08/22/2019"
 helpviewer_keywords: ["libraries [C++], DLLs", "DLLs [C++], walkthroughs"]
 ---
