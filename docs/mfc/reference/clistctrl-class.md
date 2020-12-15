@@ -266,7 +266,7 @@ CSize ApproximateViewRect(
 The proposed dimensions of the control, in pixels. If dimensions are not specified, the framework uses the current width or height values of the control.
 
 *iCount*<br/>
-Number of items to be displayed in the control. If this parameter is -1, the framework uses the total number of items currently in the control.
+Number of items to be displayed in the control. Pass -1 to apply the state change to all items.
 
 ### Return Value
 
