@@ -81,8 +81,6 @@ If the file name is fully specified for an include file that has a path that inc
 
 For include files that are specified as `#include "path-spec"`, directory searching begins with the directory of the parent file and then proceeds through the directories of any grandparent files. That is, searching begins relative to the directory that contains the source file that contains the **#include** directive that's being processed. If there is no grandparent file and the file has not been found, the search continues as if the file name were enclosed in angle brackets.
 
-**END Microsoft Specific**
-
 ## See also
 
 [Preprocessor directives](../preprocessor/preprocessor-directives.md)\
