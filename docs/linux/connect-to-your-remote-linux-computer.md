@@ -118,7 +118,7 @@ If ssh isn't already set up and running on your Linux system, follow these steps
 
 ## TCP Port Forwarding
 
-Visual Studio's Linux support has a dependency on TCP port forwarding. **Rsync** and **gdbserver** are affected if TCP port forwarding is disabled on your remote system. If you're impacted by this dependency, you can upvote this [suggestion ticket](https://developercommunity.visualstudio.com/idea/840265/dont-rely-on-ssh-tcp-port-forwarding-for-c-remote.html) on Developer Community.
+Visual Studio's Linux support has a dependency on TCP port forwarding. **Rsync** and **gdbserver** are affected if TCP port forwarding is disabled on your remote system. If you're impacted by this dependency, you can upvote this [suggestion ticket](https://developercommunity2.visualstudio.com/t/shDonshshtsh-shrelysh-s/840265?space=62) on Developer Community.
 
 rsync is used by both MSBuild-based Linux projects and CMake projects to [copy headers from your remote system to Windows for use by IntelliSense](configure-a-linux-project.md#remote_intellisense). When you can't enable TCP port forwarding, disable the automatic download of remote headers. To disable it, use **Tools > Options > Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. If the remote system doesn't have TCP port forwarding enabled, you'll see this error when the download of remote headers for IntelliSense begins:
 

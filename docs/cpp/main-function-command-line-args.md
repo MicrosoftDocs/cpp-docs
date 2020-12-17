@@ -1,7 +1,7 @@
 ---
 title: "`main` function and command-line arguments (C++)"
 description: "The `main` function is the entry point for a C++ program."
-ms.date: 11/19/2020
+ms.date: 12/16/2020
 no-loc: [main, wmain, inline, static, _tmain, void, exit, argc, argv, envp, CreateProcess, GetModuleFileName, char, wchar_t, extern]
 ---
 # `main` function and command-line arguments
@@ -88,19 +88,21 @@ The following example shows how to use the *`argc`*, *`argv`*, and *`envp`* argu
 #include <string.h>
 
 using namespace std;
-int main( int argc, char *argv[], char *envp[] ) {
-    int iNumberLines = 0;    // Default is no line numbers.
+int main( int argc, char *argv[], char *envp[] )
+{
+    bool numberLines = false;    // Default is no line numbers.
 
     // If /n is passed to the .exe, display numbered listing
     // of environment variables.
-
     if ( (argc == 2) && _stricmp( argv[1], "/n" ) == 0 )
-         iNumberLines = 1;
+         numberLines = true;
 
     // Walk through list of strings until a NULL is encountered.
-    for( int i = 0; envp[i] != NULL; ++i ) {
-        if( iNumberLines )
-            cout << i << ": " << envp[i] << "\n";
+    for ( int i = 0; envp[i] != NULL; ++i )
+    {
+        if ( numberLines )
+            cout << i << ": "; // Prefix with numbers if /n specified
+        cout << envp[i] << "\n";
     }
 }
 ```
