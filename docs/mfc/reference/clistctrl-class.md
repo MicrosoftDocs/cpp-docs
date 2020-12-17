@@ -267,7 +267,7 @@ CSize ApproximateViewRect(
 The proposed dimensions of the control, in pixels. If dimensions are not specified, the framework uses the current width or height values of the control.
 
 *iCount*<br/>
-Number of items to be displayed in the control. If this parameter is -1, the framework uses the total number of items currently in the control.
+Number of items to be displayed in the control. Pass -1 to use the total number of items currently in the control.
 
 ### Return Value
 
@@ -3650,7 +3650,7 @@ BOOL SetItemState(
 ### Parameters
 
 *nItem*<br/>
-Index of the item whose state is to be set.
+Index of the item whose state is to be set. Pass -1 to apply the state change to all items.
 
 *pItem*<br/>
 Address of an [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) structure, as described in the Windows SDK. The structure's `stateMask` member specifies which state bits to change, and the structure's `state` member contains the new values for those bits. The other members are ignored.
