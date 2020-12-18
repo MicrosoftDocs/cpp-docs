@@ -1,6 +1,7 @@
 ---
 title: "vcpkg: a C++ package manager for Windows, Linux, and macOS"
 description: "vcpkg is a command-line package manager that greatly simplifies the acquisition and installation of open-source C++ libraries on Windows, macOS, and Linux."
+ms.custom: "contperf-fy21q2"
 ms.date: 12/11/2020
 ms.topic: "overview"
 ms.technology: "cpp-ide"
