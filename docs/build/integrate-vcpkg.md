@@ -14,7 +14,7 @@ vcpkg is a cross-platform command-line package manager for C and C++ libraries. 
 
 From the vcpkg root directory, run **`vcpkg integrate install`** to configure Visual Studio to locate all vcpkg header files and binaries on a per-user basis. There's no need to edit the VC++ Directories paths in Visual Studio. If you have multiple clones of vcpkg, the clone you run this command from becomes the new default location.
 
-Now you can `#include` headers by typing the folder or header name, and autocomplete assists you. No additional steps are required to link to libraries or to add project references. The following illustration shows how Visual Studio finds the *`azure-storage-cpp`* headers. vcpkg places its headers in the *`/installed`* subfolder, partitioned by target platform. The following diagram shows the list of include files in the *`/was`* subfolder for the library:
+Now you can include headers by typing the folder or header name, and autocomplete assists you. You don't need any extra steps to link to libraries or to add project references. The following illustration shows how Visual Studio finds the *`azure-storage-cpp`* headers. vcpkg places its headers in the *`/installed`* subfolder, partitioned by target platform. The following diagram shows the list of include files in the *`/was`* subfolder for the library:
 
 ![An IntelliSense autocompletion pop-up window in the Visual Studio editor](media/vcpkg-intellisense.png "vcpkg and IntelliSense")
 
@@ -38,7 +38,7 @@ In your shell or Terminal window, change directories to the vcpkg root directory
 
 ## Remove vcpkg integration
 
-If you've used the **`integrate`** option, you should remove the integration before you remove a vcpkg instance. To remove and clean up your integration, change directories to the vcpkg root directory. On Windows, run **`vcpkg integrate remove`** to ensure the integration is cleaned. On Linux or macOS, run the **`./vcpkg integrate remove`** command.
+If you've used the **`integrate`** option, you should remove the integration before you remove a vcpkg instance. To remove and clean up your integration, change directories to the vcpkg root directory. On Windows, run **`vcpkg integrate remove`** to ensure the integration gets cleaned up. On Linux or macOS, run the **`./vcpkg integrate remove`** command.
 
 ## See also
 
