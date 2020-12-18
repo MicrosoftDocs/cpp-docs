@@ -143,7 +143,7 @@ array_view<int, 3> a(2, 3, 4, aCPP);
 index<3> idx(0, 1, 3);
 
 std::cout << a[idx] << "\n";
-// Output: 8
+// Output: 11
 ```
 
 ### extent Class
