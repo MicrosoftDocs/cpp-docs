@@ -68,7 +68,18 @@
     - name: CMake predefined configuration schema reference
       href: ../build/cmake-predefined-configuration-reference.md
 - name: "vcpkg: A package manager for C++"
-  href: ../build/vcpkg.md
+  expanded: false
+  items: 
+    - name: "vcpkg: A package manager for C++"
+      href: ../build/vcpkg.md
+    - name: "Install vcpkg"
+      href: ../build/install-vcpkg.md
+    - name: "Integrate vcpkg"
+      href: ../build/integrate-vcpkg.md
+    - name: "Manage libraries with vcpkg"
+      href: ../build/manage-libraries-with-vcpkg.md
+    - name: "vcpkg command-line reference"
+      href: ../build/vcpkg-command-line-reference.md
 - name: "C++ Build Insights"
   href: ../build-insights/get-started-with-cpp-build-insights.md
 - name: Precompiled header files
