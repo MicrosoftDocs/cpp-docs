@@ -8,9 +8,8 @@ public:
    {
       // Initialize the COM library on the current thread.
       HRESULT hr = CoInitializeEx(NULL, dwCoInit);
-      if (FAILED(hr))
-         throw hr;
-      _coinitialized = true;
+      if (hr == S_OK)
+         _coinitialized = true;
    }
    ~CCoInitializer()
    {
