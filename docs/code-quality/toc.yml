@@ -38,7 +38,7 @@
     href: ../code-quality/intrinsic-functions.md
   - name: Best practices and examples (SAL)
     href: ../code-quality/best-practices-and-examples-sal.md
-- name: Specify additional code information by using _Analysis_assume
+- name: Specify additional code information by using _Analysis_assume_
   href: ../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md
 - name: C++ Core Guidelines checker warnings
   items:
