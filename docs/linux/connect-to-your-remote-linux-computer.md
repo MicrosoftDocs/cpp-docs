@@ -1,7 +1,7 @@
 ---
 title: "Connect to your target Linux system in Visual Studio"
 description: "How to connect to a remote Linux machine or Windows Subsystem for Linux from inside a Visual Studio C++ project."
-ms.date: "01/17/2020"
+ms.date: "01/8/2021"
 ---
 # Connect to your target Linux system in Visual Studio
 
@@ -97,6 +97,76 @@ If ssh isn't already set up and running on your Linux system, follow these steps
    ::: moniker-end
 
    ::: moniker range="msvc-160"
+
+## Supported SSH encryption, HMAC, key exchange, and host key algorithms
+
+Starting in Visual Studio version 16.9, support for older, insecure SSH algorithms used to encrypt data and exchange keys, has been removed. Only the following algorithms are supported. The are supported for both client-to-server and server-to-client SSH communication:
+
+|Algorithm type|Supported algorithms|
+|---|---|
+| Encryption| aes128-cbc</br>aes128-cbc</br>aes192-cbc</br>aes192-ctr</br>aes256-cbc</br>aes256-ctr|
+| HMAC | hmac-sha2-256</br>hmac-sha2-256 |
+| Key exchange| diffie-hellman-group14-sha256</br>diffie-hellman-group16-sha512</br>diffie-hellman-group-exchange-sha256</br>ecdh-sha2-nistp256</br>ecdh-sha2-nistp384</br>ecdh-sha2-nistp521|
+|Host key|ecdsa-sha2-nistp256</br>ecdsa-sha2-nistp384</br>ecdsa-sha2-nistp521</br>ssh-dss</br>ssh-rsa|
+
+### Configure the SSH server
+
+First, a little background. You can't select the SSH algorithm to use from Visual Studio. Instead, the algorithm is determined during the initial handshake with the SSH server. Each side (client and server) provides a list of algorithms it supports, and then the first algorithm common to both is selected. As long as there is at least one algorithm in common between Visual Studio and the server for encryption, HMAC, key exchange, and so on, the connection will succeed.
+
+The Open SSH configuration file (**sshd_config**) doesn't configure which algorithm to use by default. The SSH server should use secure defaults when no algorithms are specified, but those defaults depend on the version and vendor of the SSH server.  If those defaults aren't supported by Visual Studio, or the SSH server is configured to use algorithms that aren't supported by Visual Studio, you'll likely see an error like:
+
+>> **Could not connect to the remote system. No common client to server HMAC algorithm was found.**
+
+A default SSH server on most modern Linux distributions should work out-of-the-box with Visual Studio. But if you are running an older SSH server that is configured to use older, insecure algorithms, the following explains how to update to more secure versions.
+
+In the following example, the SSH server uses the insecure `hmac-sha1` algorithm, which isn't supported by Visual Studio 16.9. If the SSH server uses OpenSSH, you can edit the `/etc/ssh/sshd_config` file as shown below to enable more secure algorithms. For other SSH servers, refer to the server's documentation for how to configure them.
+
+First, verify that the set of algorithms your server is using  includes algorithms supported by Visual Studio. Run the following  command on the remote machine, and it will list the algorithms supported by the server.
+
+```bash
+$ ssh -Q cipher; ssh -Q mac; ssh -Q kex; ssh -Q key
+```
+
+It will produce output like:
+
+```bash
+3des-cbc
+aes128-cbc
+aes192-cbc
+aes256-cbc
+...
+ecdsa-sha2-nistp521-cert-v01@openssh.com
+sk-ecdsa-sha2-nistp256-cert-v01@openssh.com
+```
+
+This output will list all the encryption, HMAC, key exchange, and host key algorithms supported by your SSH server. If this list doesn't include algorithms supported by Visual Studio, then you'll need to upgrade your SSH server before proceeding.
+
+You can enable algorithms supported by Visual Studio by editing `/etc/ssh/sshd_config`. The following examples show how to add various types of algorithms to the configuration file.
+
+These examples can be added anywhere in `/etc/ssh/sshd_config`. Ensure that they are on their own lines.
+
+After editing the file, restart the SSH server (`sudo service ssh restart` on Ubuntu) and attempt to connect again from Visual Studio.
+
+#### Cipher  example
+
+Add: `Ciphers <algorithms to enable>`  
+For example: `Ciphers aes128-cbc,aes256-cbc`
+
+#### HMAC example
+
+Add: `MACs <algorithms to enable>`  
+For example: `MACs hmac-sha2-256,hmac-sha2-512`
+
+#### Key exchange example
+
+Add: `KexAlgorithms <algorithms to enable>`  
+For example: `KexAlgorithms ecdh-sha2-nistp256,ecdh-sha2-nistp384`
+
+
+#### Host key example
+
+Add: `HostKeyAlgorithms <algorithms to enable>`  
+For example: `HostKeyAlgorithms ssh-dss,ssh-rsa`
 
 ## Logging for remote connections
 
