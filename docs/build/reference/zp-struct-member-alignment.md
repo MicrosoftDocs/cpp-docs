@@ -31,7 +31,7 @@ The available packing values are described in the following table:
 Don't use this option unless you have specific alignment requirements.
 
 > [!WARNING]
-> C++ headers in the Windows SDK set and assume **`/Zp8`** packing internally. Memory corruption may occur if the **`/Zp`** setting is changed inside the Windows SDK headers. The headers aren't affected by any **`/Zp`** option you set on the command line.
+> C++ headers in the Windows SDK assume **`/Zp8`** packing internally. Memory corruption may occur if the **`/Zp`** setting is changed while #include-ing Windows SDK headers, whether on the command line or with #pragma pack.
 
 You can also use [`pack`](../../preprocessor/pack.md) to control structure packing. For more information about alignment, see:
 
