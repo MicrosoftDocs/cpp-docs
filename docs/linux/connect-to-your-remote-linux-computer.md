@@ -162,7 +162,6 @@ For example: `MACs hmac-sha2-256,hmac-sha2-512`
 Add: `KexAlgorithms <algorithms to enable>`  
 For example: `KexAlgorithms ecdh-sha2-nistp256,ecdh-sha2-nistp384`
 
-
 #### Host key example
 
 Add: `HostKeyAlgorithms <algorithms to enable>`  
