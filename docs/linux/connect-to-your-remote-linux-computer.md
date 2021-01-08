@@ -100,7 +100,7 @@ If ssh isn't already set up and running on your Linux system, follow these steps
 
 ## Supported SSH algorithms
 
-Starting in Visual Studio version 16.9, support for older, insecure SSH algorithms used to encrypt data and exchange keys, has been removed. Only the following algorithms are supported. The are supported for both client-to-server and server-to-client SSH communication:
+Starting in Visual Studio version 16.9, support for older, insecure SSH algorithms used to encrypt data and exchange keys, has been removed. Only the following algorithms are supported. They are supported for both client-to-server and server-to-client SSH communication:
 
 |Algorithm type|Supported algorithms|
 |---|---|
@@ -113,9 +113,7 @@ Starting in Visual Studio version 16.9, support for older, insecure SSH algorith
 
 First, a little background. You can't select the SSH algorithm to use from Visual Studio. Instead, the algorithm is determined during the initial handshake with the SSH server. Each side (client and server) provides a list of algorithms it supports, and then the first algorithm common to both is selected. As long as there is at least one algorithm in common between Visual Studio and the server for encryption, HMAC, key exchange, and so on, the connection will succeed.
 
-The Open SSH configuration file (**sshd_config**) doesn't configure which algorithm to use by default. The SSH server should use secure defaults when no algorithms are specified. Those defaults depend on the version and vendor of the SSH server.  If Visual Studio doesn't support those defaults, or the SSH server is configured to use algorithms that Visual Studio doesn't support, you'll likely see an error like:
-
->> **Could not connect to the remote system. No common client to server HMAC algorithm was found.**
+The Open SSH configuration file (**sshd_config**) doesn't configure which algorithm to use by default. The SSH server should use secure defaults when no algorithms are specified. Those defaults depend on the version and vendor of the SSH server.  If Visual Studio doesn't support those defaults, or the SSH server is configured to use algorithms that Visual Studio doesn't support, you'll likely see an error like: **Could not connect to the remote system. No common client to server HMAC algorithm was found.**
 
 A default SSH server on most modern Linux distributions should work out-of-the-box with Visual Studio. But if you're running an older SSH server that is configured to use older, insecure algorithms, the following explains how to update to more secure versions.
 
