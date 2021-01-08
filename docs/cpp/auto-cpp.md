@@ -40,7 +40,16 @@ Conversion cases in which you might not want to use **`auto`**:
 
 To use the **`auto`** keyword, use it instead of a type to declare a variable, and specify an initialization expression. In addition, you can modify the **`auto`** keyword by using specifiers and declarators such as **`const`**, **`volatile`**, pointer (**`*`**), reference (**`&`**), and rvalue reference (**`&&`**). The compiler evaluates the initialization expression and then uses that information to deduce the type of the variable.
 
-The initialization expression can be passed using an assignment syntax (`auto x = 0;`), a block syntax (`auto x { 0 };`} or a constructor syntax (`auto x (0);`). It is also used to declare the loop variable in a container-based iterator loop (`for (auto x : vector)`).  For more information, see [Initializers](../cpp/initializers.md) and the code examples later in this document.
+The **`auto`** initialization expression can take several forms:
+
+- Universal initialization syntax, such as `auto a { 42 };`.
+- Assignment syntax, such as `auto b = 0;`.
+- Universal assignment syntax, which combines the two previous forms, such as `auto c = { 3.14156 };`.
+- Direct initialization, or constructor-style syntax, such as `auto d( 1.41421f );`.
+
+For more information, see [Initializers](../cpp/initializers.md) and the code examples later in this document.
+
+When **`auto`** is used to declare the loop parameter in a range-based **`for`** statement, it uses a different initialization syntax, for example `for (auto& i : iterable) do_action(i);`. For more information, see [Range-based `for` Statement (C++)](../cpp/range-based-for-statement-cpp.md).
 
 The **`auto`** keyword is a placeholder for a type, but it is not itself a type. Therefore, the **`auto`** keyword cannot be used in casts or operators such as [`sizeof`](../cpp/sizeof-operator.md) and (for C++/CLI) [`typeid`](../extensions/typeid-cpp-component-extensions.md).
 
