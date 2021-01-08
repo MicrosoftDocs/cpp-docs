@@ -141,7 +141,7 @@ sk-ecdsa-sha2-nistp256-cert-v01@openssh.com
 
 This output will list all the encryption, HMAC, key exchange, and host key algorithms supported by your SSH server. If this list doesn't include algorithms supported by Visual Studio, then you'll need to upgrade your SSH server before proceeding.
 
-You can enable algorithms supported by Visual Studio by editing `/etc/ssh/sshd_config`. The following examples show how to add various types of algorithms to the configuration file.
+You can enable algorithms supported by Visual Studio by editing `/etc/ssh/sshd_config` on the remote machine. The following examples show how to add various types of algorithms to that configuration file.
 
 These examples can be added anywhere in `/etc/ssh/sshd_config`. Ensure that they are on their own lines.
 
