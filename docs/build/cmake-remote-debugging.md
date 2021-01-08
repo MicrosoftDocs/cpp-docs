@@ -111,7 +111,7 @@ For example, on the remote machine, from the Visual Studio Remote Debugger menu 
 
 ![Remote debugger authentication options](media/remote-debugger-options.png)
 
-Then, in Visual Studio on the host machine, update the `launch.vs.json` file to match. For example, if you choose **No Authentication** on the remote debugger, update the `launch.vs.json` file in your project by adding **"windowsAuthenticationType": "Remote Windows with No authentication"** to the `configurations` section `launch.vs.json`. Otherwise, `"windowsAuthenticationType"` defaults to `"Remote Windows authentication"` and doesn't need to be explicitly stated. This example shows a `launch.vs.json` file configured for no authentication:
+Then, in Visual Studio on the host machine, update the `launch.vs.json` file to match. For example, if you choose **No Authentication** on the remote debugger, update the `launch.vs.json` file in your project by adding **"authenticationType": "none"** to the `configurations` section `launch.vs.json`. Otherwise, `"authenticationType"` defaults to `"windows"` and doesn't need to be explicitly stated. This example shows a `launch.vs.json` file configured for no authentication:
 
 ``` XAML
 {
@@ -120,7 +120,7 @@ Then, in Visual Studio on the host machine, update the `launch.vs.json` file to 
   "configurations": [
     {
         "type": "remoteWindows",
-        "windowsAuthenticationType": "Remote Windows with No authentication"
+        "authenticationType": "none"
         "name": "CMakeLists.txt",
         "project": "CMakeLists.txt",
         "projectTarget": "CMakeProject3.exe",
@@ -158,7 +158,7 @@ If it doesn't start, ensure that the following are set correctly in the `launch.
 - `"name"` should match the selection in the Visual Studio startup item dropdown.
 - `"projectTarget"` should match the name of the CMake target you want to debug.
 - `"type"` should be `"remoteWindows"`
-- If the authentication type on the remote debugger is set to **No Authentication**, you should have `"windowsAuthenticationType": "Remote Windows with No authentication"` set in the `launch.vs.json` file.
+- If the authentication type on the remote debugger is set to **No Authentication**, you should have `"authenticationType": "none"` set in the `launch.vs.json` file.
 - If you are using Windows authentication, sign in when prompted using an account recognized by the remote machine.
 
 After the project builds, the app should appear on the remote ARM64 Windows machine:
