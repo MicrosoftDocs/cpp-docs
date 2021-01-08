@@ -98,7 +98,7 @@ If ssh isn't already set up and running on your Linux system, follow these steps
 
    ::: moniker range="msvc-160"
 
-## Supported SSH encryption, HMAC, key exchange, and host key algorithms
+## Supported SSH algorithms
 
 Starting in Visual Studio version 16.9, support for older, insecure SSH algorithms used to encrypt data and exchange keys, has been removed. Only the following algorithms are supported. The are supported for both client-to-server and server-to-client SSH communication:
 
