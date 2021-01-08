@@ -26,7 +26,7 @@ These are the **`/Zc`** compiler options:
 | [`/Zc:__cplusplus`](zc-cplusplus.md) | Enable the `__cplusplus` macro to report the supported standard (off by default). |
 | [`/Zc:externConstexpr`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables (off by default). |
 | [`/Zc:forScope`](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules (on by default). |
-| [`/ZcimplicitNoexcept`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Enable implicit **`noexcept`** on required functions (on by default). |
+| [`/Zc:implicitNoexcept`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Enable implicit **`noexcept`** on required functions (on by default). |
 | [`/Zc:inline`](zc-inline-remove-unreferenced-comdat.md) | Remove unreferenced function or data if it is COMDAT or has internal linkage only (off by default). |
 | [`/Zc:noexceptTypes`](zc-noexcepttypes.md) | Enforce C++17 **`noexcept`** rules (on by default in C++17 or later). |
 | [`/Zc:preprocessor`](zc-preprocessor.md) | Use the new conforming preprocessor (off by default, except in C11/C17). |
