@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /Zp (Struct Member Alignment)"
 title: "/Zp (Struct Member Alignment)"
-ms.date: "04/04/2019" 
+ms.date: "01/08/2021" 
 f1_keywords: ["/zp", "VC.Project.VCCLCompilerTool.StructMemberAlignment", "VC.Project.VCCLWCECompilerTool.StructMemberAlignment"]
 helpviewer_keywords: ["Struct Member Alignment compiler option", "Zp compiler option", "/Zp compiler option [C++]", "-Zp compiler option [C++]"]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
@@ -31,9 +31,9 @@ The available packing values are described in the following table:
 Don't use this option unless you have specific alignment requirements.
 
 > [!WARNING]
-> C++ headers in the Windows SDK assume **`/Zp8`** packing internally. Memory corruption may occur if the **`/Zp`** setting is changed while #include-ing Windows SDK headers, whether on the command line or with #pragma pack.
+> The C/C++ headers in the Windows SDK assume **`/Zp8`** packing internally. Don't change the setting from the default when you include the Windows SDK headers, either by using **`/Zp`** on the command line or by using `#pragma pack`. Otherwise, your application may cause memory corruption at runtime.
 
-You can also use [`pack`](../../preprocessor/pack.md) to control structure packing. For more information about alignment, see:
+You can also use the [`pack` pragma](../../preprocessor/pack.md) to control structure packing. For more information about alignment, see:
 
 - [`align`](../../cpp/align-cpp.md)
 
