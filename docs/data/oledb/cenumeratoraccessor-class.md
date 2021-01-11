@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CEnumeratorAccessor Class"
 title: "CEnumeratorAccessor Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::CEnumeratorAccessor", "CEnumeratorAccessor", "ATL.CEnumeratorAccessor", "CEnumeratorAccessor.m_bIsParent", "ATL::CEnumeratorAccessor::m_bIsParent", "m_bIsParent", "ATL.CEnumeratorAccessor.m_bIsParent", "CEnumeratorAccessor::m_bIsParent", "ATL::CEnumeratorAccessor::m_nType", "CEnumeratorAccessor.m_nType", "CEnumeratorAccessor::m_nType", "ATL.CEnumeratorAccessor.m_nType", "ATL::CEnumeratorAccessor::m_szDescription", "CEnumeratorAccessor.m_szDescription", "CEnumeratorAccessor::m_szDescription", "ATL.CEnumeratorAccessor.m_szDescription", "CEnumeratorAccessor::m_szName", "ATL.CEnumeratorAccessor.m_szName", "ATL::CEnumeratorAccessor::m_szName", "CEnumeratorAccessor.m_szName", "CEnumeratorAccessor::m_szParseName", "ATL::CEnumeratorAccessor::m_szParseName", "m_szParseName", "CEnumeratorAccessor.m_szParseName", "ATL.CEnumeratorAccessor.m_szParseName"]

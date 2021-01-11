@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expression Statement"
 title: "Expression Statement"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["statements [C++], expression", "expression statements"]

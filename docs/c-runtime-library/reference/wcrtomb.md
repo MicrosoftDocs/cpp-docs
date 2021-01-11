@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: wcrtomb"
 title: "wcrtomb"
 ms.date: "4/2/2020"
 api_name: ["wcrtomb", "_o_wcrtomb"]

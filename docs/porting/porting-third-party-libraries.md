@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Porting third-party libraries"
 title: "Porting Third-Party Libraries"
 ms.date: "10/29/2019"
 helpviewer_keywords: ["3rd-party libraries", "vspkg"]

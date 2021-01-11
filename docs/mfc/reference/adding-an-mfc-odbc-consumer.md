@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an MFC ODBC Consumer"
 title: "Adding an MFC ODBC Consumer"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ODBC consumers"]

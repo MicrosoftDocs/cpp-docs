@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Basic Concepts in Using Managed Exceptions"
 title: "Basic Concepts in Using Managed Exceptions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["try-catch exception handling, managed applications", "__finally keyword, managed exceptions", "exceptions, managed", "try-catch exception handling", "catch blocks", "throwing exceptions, managed exceptions", "Visual C++, handling managed exceptions"]

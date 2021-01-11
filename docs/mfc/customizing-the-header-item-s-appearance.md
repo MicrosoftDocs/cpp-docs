@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Customizing the Header Item&#39;s Appearance"
 title: "Customizing the Header Item&#39;s Appearance"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header controls [MFC], customization of items", "CHeaderCtrl class [MFC], customizing the items", "HDS_ styles"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;sstream&gt; typedefs"
 title: "&lt;sstream&gt; typedefs"
 ms.date: "11/04/2016"
 f1_keywords: ["iosfwd/std::istringstream", "iosfwd/std::ostringstream", "iosfwd/std::stringbuf", "iosfwd/std::stringstream", "iosfwd/std::wistringstream", "iosfwd/std::wostringstream", "iosfwd/std::wstringbuf", "iosfwd/std::wstringstream"]

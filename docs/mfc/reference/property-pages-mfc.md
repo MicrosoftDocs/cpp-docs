@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property Pages (MFC)"
 title: "Property Pages (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["property page data transfer functions in MFC", "property pages [MFC], global MFC functions"]

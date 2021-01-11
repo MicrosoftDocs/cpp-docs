@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _aligned_free_dbg"
 title: "_aligned_free_dbg"
 ms.date: "11/04/2016"
 api_name: ["_aligned_free_dbg"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CStringElementTraitsI Class"
 title: "CStringElementTraitsI Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStringElementTraitsI", "ATLCOLL/ATL::CStringElementTraitsI", "ATLCOLL/ATL::CStringElementTraitsI::INARGTYPE", "ATLCOLL/ATL::CStringElementTraitsI::OUTARGTYPE", "ATLCOLL/ATL::CStringElementTraitsI::CompareElements", "ATLCOLL/ATL::CStringElementTraitsI::CompareElementsOrdered", "ATLCOLL/ATL::CStringElementTraitsI::Hash"]

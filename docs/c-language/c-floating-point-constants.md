@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Floating-Point Constants"
 title: "C Floating-Point Constants"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["types [C], constants", "floating-point numbers, floating-point constants", "constants, floating-point", "floating-point constants", "floating-point constants, about floating-point constants", "double data type, floating-point constants"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: References to pointers"
 title: "References to pointers"
 ms.date: "06/13/2019"
 helpviewer_keywords: ["references, to pointers"]

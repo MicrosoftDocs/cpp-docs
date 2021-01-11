@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Compound Assignment"
 title: "C Compound Assignment"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operators [C], assignment", "compound assignment operators", "assignment operators, compound"]

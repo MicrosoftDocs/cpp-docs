@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: EXTERN"
 title: "EXTERN (MASM)"
 ms.date: "12/06/2019"
 helpviewer_keywords: ["EXTERN directive"]

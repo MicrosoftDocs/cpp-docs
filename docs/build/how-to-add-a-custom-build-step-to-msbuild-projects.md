@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Add a Custom Build Step to MSBuild Projects"
 title: "How to: Add a Custom Build Step to MSBuild Projects"
 ms.date: "10/16/2019"
 helpviewer_keywords: ["msbuild (c++), howto: add a custom build step"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parallel Containers and Objects"
 title: "Parallel Containers and Objects"
 ms.date: "03/27/2019"
 helpviewer_keywords: ["parallel objects", "parallel containers", "concurrent containers"]

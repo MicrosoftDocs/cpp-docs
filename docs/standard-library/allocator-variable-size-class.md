@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: allocator_variable_size Class"
 title: "allocator_variable_size Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::allocator_variable_size", "allocators/stdext::allocators::allocator_variable_size", "stdext::allocators::allocator_variable_size"]

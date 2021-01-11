@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections::UnorderedMapView Class"
 title: "Platform::Collections::UnorderedMapView Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"

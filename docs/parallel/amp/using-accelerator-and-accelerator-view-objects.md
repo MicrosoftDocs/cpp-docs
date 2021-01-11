@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using accelerator and accelerator_view Objects"
 title: "Using accelerator and accelerator_view Objects"
 ms.date: "11/04/2016"
 ms.assetid: 18f0dc66-8236-4420-9f46-1a14f2c3fba1

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating Inline File Text"
 title: "Creating Inline File Text"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["inline files, creating text", "NMAKE program, inline files", "text, inline file"]

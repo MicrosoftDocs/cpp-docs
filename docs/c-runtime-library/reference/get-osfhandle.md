@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_osfhandle"
 title: "_get_osfhandle"
 ms.date: "4/2/2020"
 api_name: ["_get_osfhandle", "_o__get_osfhandle"]

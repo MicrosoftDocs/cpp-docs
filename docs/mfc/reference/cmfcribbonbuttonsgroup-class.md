@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonButtonsGroup Class"
 title: "CMFCRibbonButtonsGroup Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonButtonsGroup", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::AddButton", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::AddButtons", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetButton", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetCount", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetImageSize", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::GetRegularSize", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::HasImages", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::OnDrawImage", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::RemoveAll", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::SetImages", "AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::SetParentCategory"]

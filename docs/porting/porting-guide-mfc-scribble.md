@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Porting Guide: MFC Scribble"
 title: "Porting Guide: MFC Scribble"
 ms.date: "10/23/2019"
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8

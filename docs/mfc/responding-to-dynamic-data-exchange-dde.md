@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Responding to Dynamic Data Exchange (DDE)"
 title: "Responding to Dynamic Data Exchange (DDE)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["registry [MFC], most recently used files", "frame windows [MFC], dynamic data exchange (DDE)", "DDE (Dynamic Data Exchange), frame windows", "registration [MFC], shell", "Shell [MFC], registering file types", "windows [MFC], and dynamic data exchange", "responding to dynamic data exchange (DDE)", "frame windows [MFC], shell registration"]

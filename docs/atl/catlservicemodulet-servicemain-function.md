@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAtlServiceModuleT::ServiceMain Function"
 title: "CAtlServiceModuleT::ServiceMain Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ServiceMain method"]

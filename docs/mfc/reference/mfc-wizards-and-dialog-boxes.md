@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Wizards and Dialog Boxes"
 title: "MFC Wizards and Dialog Boxes"
 ms.date: "11/04/2016"
 ms.assetid: 2fae0a2c-d147-4468-a547-f7b85df767a1

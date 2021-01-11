@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COlePasteSpecialDialog Class"
 title: "COlePasteSpecialDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COlePasteSpecialDialog", "AFXODLGS/COlePasteSpecialDialog", "AFXODLGS/COlePasteSpecialDialog::COlePasteSpecialDialog", "AFXODLGS/COlePasteSpecialDialog::AddFormat", "AFXODLGS/COlePasteSpecialDialog::AddLinkEntry", "AFXODLGS/COlePasteSpecialDialog::AddStandardFormats", "AFXODLGS/COlePasteSpecialDialog::CreateItem", "AFXODLGS/COlePasteSpecialDialog::DoModal", "AFXODLGS/COlePasteSpecialDialog::GetDrawAspect", "AFXODLGS/COlePasteSpecialDialog::GetIconicMetafile", "AFXODLGS/COlePasteSpecialDialog::GetPasteIndex", "AFXODLGS/COlePasteSpecialDialog::GetSelectionType", "AFXODLGS/COlePasteSpecialDialog::m_ps"]

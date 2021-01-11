@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCAcceleratorKey Class"
 title: "CMFCAcceleratorKey Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey::CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey::Format", "AFXACCELERATORKEY/CMFCAcceleratorKey::SetAccelerator"]

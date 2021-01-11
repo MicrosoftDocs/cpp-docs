@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IUMSScheduler Structure"
 title: "IUMSScheduler Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["IUMSScheduler", "CONCRTRM/concurrency::IUMSScheduler", "CONCRTRM/concurrency::IUMSScheduler::IUMSScheduler::SetCompletionList"]

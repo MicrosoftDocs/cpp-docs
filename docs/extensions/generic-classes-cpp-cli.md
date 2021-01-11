@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic Classes (C++/CLI)"
 title: "Generic Classes (C++/CLI)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

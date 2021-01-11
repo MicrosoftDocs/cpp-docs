@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Character Comparison"
 title: "Character Comparison"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["comparing characters", "MBCS [C++], character comparison", "characters [C++], comparing"]

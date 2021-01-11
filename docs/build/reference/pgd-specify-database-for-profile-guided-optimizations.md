@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /PGD (Specify Database for Profile-Guided Optimizations)"
 title: "/PGD (Specify Database for Profile-Guided Optimizations)"
 ms.date: "03/14/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.ProfileGuidedDatabase"]

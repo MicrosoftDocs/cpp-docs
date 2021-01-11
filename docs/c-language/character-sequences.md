@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Character Sequences"
 title: "Character Sequences"
 ms.date: "11/04/2016"
 ms.assetid: 1e6961a9-150e-4c13-b427-9af4b6a1fb7a

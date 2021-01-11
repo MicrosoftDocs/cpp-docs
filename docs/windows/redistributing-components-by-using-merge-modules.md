@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Redistributing Components By Using Merge Modules"
 title: "Redistributing Components By Using Merge Modules"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["merge modules, using", "redistributing applications, using merge modules"]

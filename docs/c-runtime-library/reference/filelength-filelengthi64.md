@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _filelength, _filelengthi64"
 title: "_filelength, _filelengthi64"
 ms.date: "4/2/2020"
 api_name: ["_filelengthi64", "_filelength", "_o__filelength", "_o__filelengthi64"]

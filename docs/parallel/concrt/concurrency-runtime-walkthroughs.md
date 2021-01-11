@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency Runtime Walkthroughs"
 title: "Concurrency Runtime Walkthroughs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["walkthroughs [Concurrency Runtime]", "Concurrency Runtime, walkthroughs"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generics and Templates (C++/CLI)"
 title: "Generics and Templates (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

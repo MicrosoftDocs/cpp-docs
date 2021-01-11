@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How Default Printing Is Done"
 title: "How Default Printing Is Done"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["default printing", "printing [MFC], default", "defaults, printing"]

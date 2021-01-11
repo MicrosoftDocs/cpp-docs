@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HandleT Class"
 title: "HandleT Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application Type, MFC Application Wizard"
 title: "Application Type, MFC Application Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.exe.apptype"]

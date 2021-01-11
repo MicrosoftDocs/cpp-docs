@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: library_block"
 title: "library_block (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.library_block"]

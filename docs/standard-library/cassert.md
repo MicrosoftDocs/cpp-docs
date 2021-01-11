@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cassert&gt;"
 title: "&lt;cassert&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<cassert>"]

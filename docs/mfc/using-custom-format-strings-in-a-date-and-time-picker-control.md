@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Custom Format Strings in a Date and Time Picker Control"
 title: "Using Custom Format Strings in a Date and Time Picker Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CDateTimeCtrl class [MFC], display styles", "DateTimePicker control [MFC], display styles", "DateTimePicker control [MFC]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IWorkerThreadClient Interface"
 title: "IWorkerThreadClient Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IWorkerThreadClient", "ATLUTIL/ATL::IWorkerThreadClient", "ATLUTIL/ATL::CloseHandle", "ATLUTIL/ATL::Execute"]

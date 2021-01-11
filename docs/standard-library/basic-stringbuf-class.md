@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: basic_stringbuf Class"
 title: "basic_stringbuf Class"
 ms.date: "11/04/2016"
 f1_keywords: ["sstream/std::basic_stringbuf", "sstream/std::basic_stringbuf::allocator_type", "sstream/std::basic_stringbuf::char_type", "sstream/std::basic_stringbuf::int_type", "sstream/std::basic_stringbuf::off_type", "sstream/std::basic_stringbuf::pos_type", "sstream/std::basic_stringbuf::traits_type", "sstream/std::basic_stringbuf::overflow", "sstream/std::basic_stringbuf::pbackfail", "sstream/std::basic_stringbuf::seekoff", "sstream/std::basic_stringbuf::seekpos", "sstream/std::basic_stringbuf::str", "sstream/std::basic_stringbuf::underflow"]

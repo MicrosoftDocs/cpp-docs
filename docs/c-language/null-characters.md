@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Null Characters"
 title: "Null Characters"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["null values, appended to binary stream"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRestrictions Class"
 title: "CRestrictions Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::CRestrictions", "CRestrictions", "ATL.CRestrictions", "CRestrictions.Open", "ATL::CRestrictions::Open", "ATL.CRestrictions.Open", "CRestrictions::Open"]

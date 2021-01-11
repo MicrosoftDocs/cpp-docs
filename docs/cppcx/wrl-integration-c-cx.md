@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WRL integration (C++/CX)"
 title: "WRL integration (C++/CX)"
 ms.date: "01/22/2017"
 ms.assetid: 3ad43894-c574-477c-ad3e-240301f381d4

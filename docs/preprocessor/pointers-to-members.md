@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: pointers_to_members pragma"
 title: "pointers_to_members pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["pointers_to_members_CPP", "vc-pragma.pointers_to_members"]

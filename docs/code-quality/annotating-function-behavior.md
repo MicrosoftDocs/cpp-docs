@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Annotating function behavior"
 title: Annotating function behavior
 ms.date: 11/04/2016
 ms.topic: "conceptual"

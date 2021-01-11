@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;hash_map&gt; operators"
 title: "&lt;hash_map&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["hash_map/std::operator!=", "hash_map/std::operator=="]

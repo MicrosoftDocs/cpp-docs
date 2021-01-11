@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE Container Classes"
 title: "OLE Container Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ActiveX classes [MFC]", "container classes [MFC]", "OLE classes [MFC]", "visual editing [MFC], classes", "OLE [MFC], classes", "containers [MFC], OLE container applications"]

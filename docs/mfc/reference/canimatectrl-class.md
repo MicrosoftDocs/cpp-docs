@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAnimateCtrl Class"
 title: "CAnimateCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimateCtrl", "AFXCMN/CAnimateCtrl", "AFXCMN/CAnimateCtrl::CAnimateCtrl", "AFXCMN/CAnimateCtrl::Close", "AFXCMN/CAnimateCtrl::Create", "AFXCMN/CAnimateCtrl::CreateEx", "AFXCMN/CAnimateCtrl::IsPlaying", "AFXCMN/CAnimateCtrl::Open", "AFXCMN/CAnimateCtrl::Play", "AFXCMN/CAnimateCtrl::Seek", "AFXCMN/CAnimateCtrl::Stop"]

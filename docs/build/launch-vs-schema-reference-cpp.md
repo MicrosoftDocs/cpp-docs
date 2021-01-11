@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: launch.vs.json schema reference (C++)"
 title: "launch.vs.json schema reference (C++)"
 ms.date: "08/20/2019"
 helpviewer_keywords: ["launch.vs.json file [C++]"]

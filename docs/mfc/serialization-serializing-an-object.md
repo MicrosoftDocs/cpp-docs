@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Serialization: Serializing an Object"
 title: "Serialization: Serializing an Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["serializing objects [MFC]", "serialization [MFC], objects", "objects [MFC], serializing"]

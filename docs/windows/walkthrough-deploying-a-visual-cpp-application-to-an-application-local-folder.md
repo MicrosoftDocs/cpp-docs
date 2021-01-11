@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Deploying a Visual C++ Application to an Application-local Folder"
 title: "Deploy a Visual C++ Application to an App-local Folder"
 ms.date: "04/23/2019"
 helpviewer_keywords: ["deploying Visual C++ applications"]

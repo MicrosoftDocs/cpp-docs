@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Schema Rowsets"
 title: "Schema Rowsets"
 ms.date: "10/22/2018"
 helpviewer_keywords: ["schema rowsets, defined"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: thread"
 title: "thread"
 ms.date: "05/07/2019"
 f1_keywords: ["thread_cpp"]

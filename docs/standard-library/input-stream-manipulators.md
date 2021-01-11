@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Input Stream Manipulators"
 title: "Input Stream Manipulators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["input streams, manipulators", "input stream objects"]

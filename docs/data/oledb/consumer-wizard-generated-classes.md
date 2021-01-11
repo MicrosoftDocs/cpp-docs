@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Consumer Wizard-Generated Classes"
 title: "Consumer Wizard-Generated Classes"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["user record classes in OLE DB consumer"]

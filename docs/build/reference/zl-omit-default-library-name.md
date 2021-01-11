@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zl (Omit Default Library Name)"
 title: "/Zl (Omit Default Library Name)"
 ms.date: "11/04/2016"
 f1_keywords: ["/zl", "VC.Project.VCCLCompilerTool.OmitDefaultLibName"]

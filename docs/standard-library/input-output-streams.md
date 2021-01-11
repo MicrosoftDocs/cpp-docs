@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Input/Output Streams"
 title: "Input-Output Streams"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["I/O [C++], stream", "stream I/O"]

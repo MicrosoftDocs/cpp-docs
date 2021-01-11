@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Extract Function"
 title: "Extract Function"
 ms.date: "11/16/2016"
 ms.assetid: e31d1249-9705-4511-acbd-9f6fe73bdf2d

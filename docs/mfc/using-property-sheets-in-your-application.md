@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Property Sheets in Your Application"
 title: "Using Property Sheets in Your Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dialog templates [MFC], property sheets", "dialog resources", "property pages [MFC], property sheets", "DoModal method property sheets", "AddPage method [MFC]", "property sheets, about property sheets", "Create method [MFC], property sheets", "CPropertyPage class [MFC], styles"]

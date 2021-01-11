@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Optimization Pragmas and Keywords"
 title: "Optimization Pragmas and Keywords"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["keywords [C++], for optimization", "pragmas, for optimization", "optimization, keywords and pragmas"]

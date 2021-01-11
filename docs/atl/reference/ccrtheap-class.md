@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCRTHeap Class"
 title: "CCRTHeap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCRTHeap", "ATLMEM/ATL::CCRTHeap", "ATLMEM/ATL::CCRTHeap::Allocate", "ATLMEM/ATL::CCRTHeap::Free", "ATLMEM/ATL::CCRTHeap::GetSize", "ATLMEM/ATL::CCRTHeap::Reallocate"]

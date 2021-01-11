@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3066"
 title: "Compiler Error C3066"
 ms.date: "03/28/2017"
 f1_keywords: ["C3066"]

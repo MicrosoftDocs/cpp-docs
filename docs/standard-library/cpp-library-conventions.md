@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ Library Conventions"
 title: "C++ Library Conventions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["C++ Standard Library, conventions", "classes [C++]", "functions [C++], library naming conventions", "naming conventions [C++], C++ Standard Library", "conventions [C++], C++ Standard Library", "function names [C++]", "coding conventions, C++ Standard Library", "naming conventions [C++], C++ library"]

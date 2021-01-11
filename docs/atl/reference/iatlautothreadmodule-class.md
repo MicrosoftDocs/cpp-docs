@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAtlAutoThreadModule Class"
 title: "IAtlAutoThreadModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IAtlAutoThreadModule", "atlbase/ATL::IAtlAutoThreadModule"]

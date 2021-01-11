@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CException Class"
 title: "CException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CException", "AFX/CException", "AFX/CException::CException", "AFX/CException::Delete", "AFX/CException::ReportError"]
@@ -216,5 +217,4 @@ else
 
 [CObject Class](cobject-class.md)<br/>
 [Hierarchy Chart](../hierarchy-chart.md)<br/>
-[Exception Processing](exception-processing.md)<br/>
-[How Do I: Create my Own Custom Exception Classes](https://go.microsoft.com/fwlink/p/?linkid=128045)
+[Exception Processing](exception-processing.md)

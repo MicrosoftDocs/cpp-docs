@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Performance Considerations for Interop (C++)"
 title: "Performance Considerations for Interop (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["/clr compiler option [C++], interop performance considerations", "platform invoke [C++], interoperability", "interop [C++], performance consideraitons", "mixed assemblies [C++], performance considerations", "interoperability [C++], performance considerations"]

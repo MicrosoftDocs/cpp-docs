@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ExitInstance Member Function"
 title: "ExitInstance Member Function"
 ms.date: "11/04/2016"
 f1_keywords: []

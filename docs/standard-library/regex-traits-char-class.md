@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: regex_traits&lt;char&gt; Class"
 title: "regex_traits&lt;char&gt; Class"
 ms.date: "09/10/2018"
 f1_keywords: ["regex/std::regex_traits<char>"]

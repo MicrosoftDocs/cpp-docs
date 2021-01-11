@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Mapping Messages"
 title: "Mapping Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message maps [MFC], about message maps", "mappings [MFC], commands", "commands [MFC], mapping", "command mapping [MFC]", "message handling [MFC], connecting to handler functions", "commands [MFC], connecting to handler functions", "mappings [MFC], messages", "messages [MFC], mapping"]

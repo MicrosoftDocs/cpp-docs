@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Create an Android Native Activity App"
 title: "Create an Android Native Activity App"
 ms.date: "10/17/2019"
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMultipleResults Class"
 title: "CMultipleResults Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL.CMultipleResults", "ATL::CMultipleResults", "CMultipleResults"]

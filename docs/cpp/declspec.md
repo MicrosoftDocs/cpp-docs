@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `__declspec`"
 title: "__declspec"
 ms.date: "03/21/2019"
 f1_keywords: ["__declspec_cpp", "__declspec", "_declspec"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleTemplateServer Class"
 title: "COleTemplateServer Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleTemplateServer", "AFXDISP/COleTemplateServer", "AFXDISP/COleTemplateServer::COleTemplateServer", "AFXDISP/COleTemplateServer::ConnectTemplate", "AFXDISP/COleTemplateServer::Unregister", "AFXDISP/COleTemplateServer::UpdateRegistry"]

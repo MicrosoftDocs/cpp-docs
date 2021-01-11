@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: any Class"
 title: "any Class"
 ms.date: "04/04/2019"
 f1_keywords: ["any/std::any", "any/std::any::emplace", "any/std::any::has_value", "any/std::any::reset", "any/std::any::swap", "any/std::any::type"]

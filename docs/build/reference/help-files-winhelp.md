@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Help Files (WinHelp)"
 title: "Help Files (WinHelp)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["file types [C++], WinHelp files"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLocalHeap Class"
 title: "CLocalHeap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CLocalHeap", "ATLMEM/ATL::CLocalHeap", "ATLMEM/ATL::CLocalHeap::Allocate", "ATLMEM/ATL::CLocalHeap::Free", "ATLMEM/ATL::CLocalHeap::GetSize", "ATLMEM/ATL::CLocalHeap::Reallocate"]

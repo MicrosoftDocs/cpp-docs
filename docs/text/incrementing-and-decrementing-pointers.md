@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Incrementing and Decrementing Pointers"
 title: "Incrementing and Decrementing Pointers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["incrementing pointers", "MBCS [C++], pointers", "pointers [C++], multibyte characters", "decrementing pointers"]

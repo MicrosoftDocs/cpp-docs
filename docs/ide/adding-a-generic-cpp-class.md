@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add a generic C++ class"
 title: "Add a generic C++ class"
 ms.date: "11/09/2018"
 f1_keywords: ["vc.codewiz.classes.adding.generic", "vc.codewiz.class.generic"]

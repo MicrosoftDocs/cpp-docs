@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: if Statement (C)"
 title: "if Statement (C)"
 ms.date: "11/04/2016"
 f1_keywords: ["else", "if"]

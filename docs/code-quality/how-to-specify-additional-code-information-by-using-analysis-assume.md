@@ -1,33 +1,33 @@
 ---
-title: "Use _Analysis_assume for code analysis hints"
-ms.date: 11/04/2016
+description: "Learn more about how to specify additional code information by using _Analysis_assume_."
+title: "Use _Analysis_assume_ for code analysis hints"
+ms.date: 12/16/2020
 ms.topic: "conceptual"
 f1_keywords:
-  - "_Analysis_assume"
+  - "_Analysis_assume_"
 helpviewer_keywords:
-  - "_Analysis_assume"
-ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
+  - "_Analysis_assume_"
 ---
-# How to: Specify Additional Code Information by Using _Analysis_assume
+# How to specify additional code information by using `_Analysis_assume_`
 
-You can provide hints to the code analysis tool for C/C++ code that will help the analysis process and reduce warnings. To provide additional information, use the following function:
+You can provide hints to the code analysis tool for C/C++ code that will help the analysis process and reduce warnings. To provide additional information, use the following function macro:
 
-`_Analysis_assume(`  `expr`  `)`
+`_Analysis_assume( expr )`
 
-`expr` - any expression that is assumed to evaluate to true.
+*`expr`* - any expression that is assumed to evaluate to true.
 
-The code analysis tool assumes that the condition represented by the expression is true at the point where the function appears and remains true until expression is altered, for example, by assignment to a variable.
+The code analysis tool assumes that the condition represented by the expression *`expr`* is true at the point where the function appears. And, it remains true until *`expr`* is altered, for example, by assignment to a variable.
 
 > [!NOTE]
-> `_Analysis_assume` does not impact code optimization. Outside the code analysis tool, `_Analysis_assume` is defined as a no-op.
+> `_Analysis_assume_` does not impact code optimization. Outside the code analysis tool, `_Analysis_assume_` is defined as a no-op.
 
 ## Example
 
-The following code uses `_Analysis_assume` to correct the code analysis warning [C6388](../code-quality/c6388.md):
+The following code uses `_Analysis_assume_` to correct the code analysis warning [C6388](../code-quality/c6388.md):
 
 ```cpp
-#include<windows.h>
-#include<codeanalysis\sourceannotations.h>
+#include <windows.h>
+#include <codeanalysis\sourceannotations.h>
 
 using namespace vc_attributes;
 
@@ -41,7 +41,7 @@ void test()
 {
     char pc = (char)malloc(5);
     FreeAndNull(&pc);
-    _Analysis_assume(pc == NULL);
+    _Analysis_assume_(pc == NULL);
     f(pc);
 }
 ```

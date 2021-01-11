@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: exit, _Exit, _exit"
 title: "exit, _Exit, _exit"
 ms.date: "4/2/2020"
 api_name: ["_exit", "exit", "_o__exit", "_o_exit"]

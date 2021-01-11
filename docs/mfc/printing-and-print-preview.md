@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Printing and Print Preview"
 title: "Printing and Print Preview"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["printing [MFC]", "previewing printing", "printing [MFC]", "print preview", "printing [MFC], print preview"]

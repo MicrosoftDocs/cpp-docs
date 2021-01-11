@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DRIVER (Windows NT Kernel Mode Driver)"
 title: "/DRIVER (Windows NT Kernel Mode Driver)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.driver", "/driver"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: hash_compare Class"
 title: "hash_compare Class"
 ms.date: "11/04/2016"
 f1_keywords: ["hash_set/stdext::hash_compare"]

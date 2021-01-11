@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Convert char * String to System::Byte Array"
 title: "How to: Convert char * String to System::Byte Array"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

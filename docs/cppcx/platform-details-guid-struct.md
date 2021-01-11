@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Details::__GUID Struct"
 title: "Platform::Details::__GUID Struct"
 ms.date: "12/30/2016"
 ms.topic: "reference"

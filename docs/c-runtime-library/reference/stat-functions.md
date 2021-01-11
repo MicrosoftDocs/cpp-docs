@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32"
 title: "_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32"
 ms.date: "4/2/2020"
 api_name: ["_wstat64", "_stati64", "_stat32", "_stat32i64", "_stat", "_wstati64", "_wstat32", "_wstat64i32", "_wstat", "_stat64", "_stat64i32", "_wstat32i64", "_o__stat32", "_o__stat32i64", "_o__stat64", "_o__stat64i32", "_o__wstat32", "_o__wstat32i64", "_o__wstat64", "_o__wstat64i32"]

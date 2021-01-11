@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE Control Classes"
 title: "OLE Control Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ActiveX classes [MFC]", "custom controls [MFC], classes", "ActiveX controls [MFC], OLE control classes", "ActiveX control classes [MFC]", "OLE controls [MFC], classes", "OLE control classes [MFC]", "reusable component classes [MFC]"]

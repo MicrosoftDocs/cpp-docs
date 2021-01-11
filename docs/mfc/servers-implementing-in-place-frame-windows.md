@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Servers: Implementing In-Place Frame Windows"
 title: "Servers: Implementing In-Place Frame Windows"
 ms.date: "09/09/2019"
 helpviewer_keywords: ["frame windows [MFC], implementing", "OLE server applications [MFC], frame windows", "servers, in-place frame windows", "frame windows [MFC], in-place", "in-place frame windows"]

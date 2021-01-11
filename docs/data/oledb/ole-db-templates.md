@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Templates"
 title: "OLE DB Templates"
 ms.date: "05/09/2019"
 f1_keywords: ["vc.templates.ole"]

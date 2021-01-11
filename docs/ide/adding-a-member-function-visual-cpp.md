@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add a member function"
 title: "Add a member function"
 ms.date: "11/09/2018"
 f1_keywords: ["vc.codewiz.classes.member.function", "vc.codewiz.function.overview"]

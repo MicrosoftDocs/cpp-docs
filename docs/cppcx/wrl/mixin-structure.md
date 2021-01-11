@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MixIn Structure"
 title: "MixIn Structure"
 ms.date: "10/03/2018"
 ms.topic: "reference"

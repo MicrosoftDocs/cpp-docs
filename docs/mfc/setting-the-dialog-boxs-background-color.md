@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Setting the Dialog Box’s Background Color"
 title: "Setting the Dialog Box’s Background Color"
 ms.date: "07/12/2018"
 helpviewer_keywords: ["CSS, background attributes in styles [MFC]", "HTML element formatting, background attributes", "colors, dialog box", "dialog boxes [MFC], colors", "background colors, dialog boxes", "MFC dialog boxes [MFC], colors"]

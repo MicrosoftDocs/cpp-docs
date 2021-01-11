@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _initterm, _initterm_e"
 title: "_initterm, _initterm_e"
 ms.date: "11/04/2016"
 api_name: ["_initterm_e", "_initterm"]

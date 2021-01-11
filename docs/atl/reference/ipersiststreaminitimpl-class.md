@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IPersistStreamInitImpl Class"
 title: "IPersistStreamInitImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IPersistStreamInitImpl", "ATLCOM/ATL::IPersistStreamInitImpl", "ATLCOM/ATL::IPersistStreamInitImpl::GetClassID", "ATLCOM/ATL::IPersistStreamInitImpl::GetSizeMax", "ATLCOM/ATL::IPersistStreamInitImpl::InitNew", "ATLCOM/ATL::IPersistStreamInitImpl::IsDirty", "ATLCOM/ATL::IPersistStreamInitImpl::Load", "ATLCOM/ATL::IPersistStreamInitImpl::Save"]

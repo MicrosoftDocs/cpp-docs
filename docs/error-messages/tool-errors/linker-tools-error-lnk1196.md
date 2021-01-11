@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Error LNK1196"
 title: "Linker Tools Error LNK1196"
 ms.date: "11/04/2016"
 f1_keywords: ["LNK1196"]

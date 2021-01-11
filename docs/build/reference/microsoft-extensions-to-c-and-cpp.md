@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft extensions to C and C++"
 title: "Microsoft extensions to C and C++"
 ms.date: "06/14/2018"
 helpviewer_keywords: ["or_eq operator", "~ operator, extensions to C/C++", "& operator, extensions to C/C++", "&= operator", "iso646.h header", "Xor operator, Microsoft extensions to C/C++", "!= operator", "! operator, extension to C++", "Or operator, Microsoft extensions to C/C++", "^ operator, extensions to C/C++", "^= operator, C++ extensions", "xor_eq operator", "and_eq operator", "Microsoft extensions to C/C++", "|= operator", "|| operator", "And operator, extensions to C/C++", "NOT operator", "&& operator", "extensions, C language", "Visual C++, extensions to C/C++", "| operator, extensions", "not_eq operator", "Visual C, Microsoft extensions", "extensions", "compl method"]

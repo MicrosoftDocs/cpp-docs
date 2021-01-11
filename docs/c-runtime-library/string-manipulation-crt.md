@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: String Manipulation (CRT)"
 title: "String Manipulation (CRT)"
 ms.date: "11/04/2016"
 f1_keywords: ["c.strings"]

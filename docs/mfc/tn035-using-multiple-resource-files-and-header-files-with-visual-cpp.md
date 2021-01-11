@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN035: Using Multiple Resource Files and Header Files with Visual C++"
 title: "TN035: Using Multiple Resource Files and Header Files with Visual C++"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.resources"]

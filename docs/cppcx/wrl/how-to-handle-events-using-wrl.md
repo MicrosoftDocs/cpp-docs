@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Handle Events Using WRL"
 title: "How to: Handle Events Using WRL"
 ms.date: "11/04/2016"
 ms.topic: "reference"

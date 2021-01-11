@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: pointer_to_unary_function Class"
 title: "pointer_to_unary_function Class"
 ms.date: "02/21/2019"
 f1_keywords: ["functional/std::pointer_to_unary"]

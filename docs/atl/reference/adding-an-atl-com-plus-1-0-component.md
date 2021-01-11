@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an ATL COM+ 1.0 Component"
 title: "Adding an ATL COM+ 1.0 Component"
 ms.date: "05/09/2019"
 ms.assetid: c6c95e64-9ee4-4a6e-8804-5930202ce1b9

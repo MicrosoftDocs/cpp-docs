@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;mutex&gt;"
 title: "&lt;mutex&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<mutex>"]

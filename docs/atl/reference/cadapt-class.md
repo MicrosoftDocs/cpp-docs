@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAdapt Class"
 title: "CAdapt Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAdapt", "ATLCOMCLI/ATL::CAdapt", "ATLCOMCLI/ATL::CAdapt::CAdapt", "ATLCOMCLI/ATL::CAdapt::m_T"]

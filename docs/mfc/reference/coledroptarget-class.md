@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleDropTarget Class"
 title: "COleDropTarget Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDropTarget", "AFXOLE/COleDropTarget", "AFXOLE/COleDropTarget::COleDropTarget", "AFXOLE/COleDropTarget::OnDragEnter", "AFXOLE/COleDropTarget::OnDragLeave", "AFXOLE/COleDropTarget::OnDragOver", "AFXOLE/COleDropTarget::OnDragScroll", "AFXOLE/COleDropTarget::OnDrop", "AFXOLE/COleDropTarget::OnDropEx", "AFXOLE/COleDropTarget::Register", "AFXOLE/COleDropTarget::Revoke"]

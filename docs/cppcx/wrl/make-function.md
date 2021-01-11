@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Make Function"
 title: "Make Function"
 ms.date: "11/04/2016"
 ms.topic: "reference"

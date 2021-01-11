@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unicode Programming Summary"
 title: "Unicode Programming Summary"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Unicode [C++], programming with", "Unicode [C++], MFC and C run-time functions"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFtpFileFind Class"
 title: "CFtpFileFind Class"
 ms.date: "05/28/2020"
 f1_keywords: ["CFtpFileFind", "AFXINET/CFtpFileFind", "AFXINET/CFtpFileFind::CFtpFileFind", "AFXINET/CFtpFileFind::FindFile", "AFXINET/CFtpFileFind::FindNextFile", "AFXINET/CFtpFileFind::GetFileURL"]

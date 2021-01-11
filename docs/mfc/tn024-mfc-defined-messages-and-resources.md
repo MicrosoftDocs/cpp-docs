@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN024: MFC-Defined Messages and Resources"
 title: "TN024: MFC-Defined Messages and Resources"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["resources [MFC]", "Windows messages [MFC], MFC-defined", "messages [MFC], MFC", "TN024"]

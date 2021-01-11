@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IObjectWithSiteImpl Class"
 title: "IObjectWithSiteImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IObjectWithSiteImpl", "ATLCOM/ATL::IObjectWithSiteImpl", "ATLCOM/ATL::IObjectWithSiteImpl::GetSite", "ATLCOM/ATL::IObjectWithSiteImpl::SetChildSite", "ATLCOM/ATL::IObjectWithSiteImpl::SetSite", "ATLCOM/ATL::IObjectWithSiteImpl::m_spUnkSite"]

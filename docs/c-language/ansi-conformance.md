@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ANSI Conformance"
 title: "ANSI Conformance"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ANSI [C++]", "ANSI [C++], C standard"]

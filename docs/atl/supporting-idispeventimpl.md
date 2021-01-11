@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Supporting IDispEventImpl"
 title: "Supporting IDispEventImpl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event sink maps, declaring", "IDispEventImpl class, advising and unadvising", "SINK_ENTRY macro", "type libraries, importing", "ATL, IDispEventImpl support in COM objects", "BEGIN_SINK_MAP macro", "IDispEventImpl class, declaring"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Character Formatting in Rich Edit Controls"
 title: "Character Formatting in Rich Edit Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["formatting [MFC], characters", "rich edit controls [MFC], character formatting in", "CRichEditCtrl class [MFC], character formatting in"]

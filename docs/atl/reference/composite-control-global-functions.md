@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Composite Control Global Functions"
 title: "Composite Control Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlhost/ATL::AtlAxDialogBox", "atlhost/ATL::AtlAxCreateDialog", "atlhost/ATL::AtlAxCreateControl", "atlhost/ATL::AtlAxCreateControlEx", "atlhost/ATL::AtlAxCreateControlLic", "atlhost/ATL::AtlAxCreateControlLicEx", "atlhost/ATL::AtlAxAttachControl", "atlhost/ATL::AtlAxGetHost", "atlhost/ATL::AtlAxGetControl", "atlhost/ATL::AtlSetChildSite", "atlhost/ATL::AtlAxWinInit", "atlhost/ATL::AtlAxWinTerm", "atlhost/ATL::AtlGetObjectSourceInterface"]

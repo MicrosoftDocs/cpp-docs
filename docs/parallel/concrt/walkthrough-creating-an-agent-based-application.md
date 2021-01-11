@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Creating an Agent-Based Application"
 title: "Walkthrough: Creating an Agent-Based Application"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["asynchronous agents, creating", "agent class, example"]

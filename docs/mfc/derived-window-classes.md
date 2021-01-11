@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Derived Window Classes"
 title: "Derived Window Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["window class hierarchy", "hierarchies, window classes", "classes [MFC], derived", "CWnd class [MFC], classes derived from", "derived classes [MFC], window classes", "window classes [MFC], derived"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Header Control and List Control"
 title: "Header Control and List Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], with CHeaderCtrl", "CListCtrl class [MFC], header controls", "CHeaderCtrl class [MFC], with CListCtrl", "controls [MFC], header", "header controls [MFC]", "header controls [MFC], list controls used with"]

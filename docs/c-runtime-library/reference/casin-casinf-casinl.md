@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: casin, casinf, casinl"
 title: "casin, casinf, casinl"
 ms.date: "11/04/2016"
 api_name: ["casin", "casinf", "casinl"]

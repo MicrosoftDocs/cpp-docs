@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ReadBarrier"
 title: "_ReadBarrier"
 ms.date: "09/02/2019"
 f1_keywords: ["_ReadBarrier"]

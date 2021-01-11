@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CArrayRowset Class"
 title: "CArrayRowset Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL.CArrayRowset<TAccessor>", "ATL.CArrayRowset", "CArrayRowset", "ATL::CArrayRowset", "ATL::CArrayRowset<TAccessor>", "ATL::CArrayRowset::CArrayRowset", "CArrayRowset.CArrayRowset", "ATL.CArrayRowset.CArrayRowset", "ATL.CArrayRowset<TAccessor>.CArrayRowset", "CArrayRowset::CArrayRowset", "CArrayRowset<TAccessor>::CArrayRowset", "ATL::CArrayRowset<TAccessor>::CArrayRowset", "CArrayRowset<TAccessor>.Snapshot", "ATL::CArrayRowset::Snapshot", "Snapshot", "CArrayRowset<TAccessor>::Snapshot", "ATL.CArrayRowset.Snapshot", "ATL.CArrayRowset<TAccessor>.Snapshot", "ATL::CArrayRowset<TAccessor>::Snapshot", "CArrayRowset::Snapshot", "CArrayRowset.Snapshot", "CArrayRowset::operator[]", "CArrayRowset.operator[]", "ATL::CArrayRowset::m_nRowsRead", "ATL::CArrayRowset<TAccessor>::m_nRowsRead", "CArrayRowset<TAccessor>::m_nRowsRead", "ATL.CArrayRowset<TAccessor>.m_nRowsRead", "CArrayRowset.m_nRowsRead", "m_nRowsRead", "ATL.CArrayRowset.m_nRowsRead", "CArrayRowset::m_nRowsRead"]

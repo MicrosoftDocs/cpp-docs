@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: duration_values Structure"
 title: "duration_values Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["chrono/std::chrono::duration_values", "chrono/std::chrono::duration_values::max", "chrono/std::chrono::duration_values::min", "chrono/std::chrono::duration_values::zero"]

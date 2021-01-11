@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Automation"
 title: "Automation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Automation servers, about Automation servers", "clients, Automation", "programmatic control [MFC]", "properties [MFC], Automation", "MFC, COM support", "OLE Automation", "Automation", "servers [MFC], Automation", "Automation clients", "sample applications [MFC], Automation", "methods [MFC]", "passing parameters, Automation", "Automation method [MFC]", "Automation, passing parameters", "Automation property [MFC]", "MFC COM, Automation", "methods [MFC], Automation"]

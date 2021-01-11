@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComCurrency Class"
 title: "CComCurrency Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComCurrency", "ATLCUR/ATL::CComCurrency", "ATLCUR/ATL::CComCurrency::CComCurrency", "ATLCUR/ATL::CComCurrency::GetCurrencyPtr", "ATLCUR/ATL::CComCurrency::GetFraction", "ATLCUR/ATL::CComCurrency::GetInteger", "ATLCUR/ATL::CComCurrency::Round", "ATLCUR/ATL::CComCurrency::SetFraction", "ATLCUR/ATL::CComCurrency::SetInteger", "ATLCUR/ATL::CComCurrency::m_currency"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN023: Standard MFC Resources"
 title: "TN023: Standard MFC Resources"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["resources [MFC]", "TN023", "standard resources"]

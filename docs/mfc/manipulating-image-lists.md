@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Manipulating Image Lists"
 title: "Manipulating Image Lists"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["image lists [MFC], manipulating", "lists [MFC], image", "CImageList class [MFC], manipulating"]

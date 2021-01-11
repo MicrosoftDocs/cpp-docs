@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: InvokeHelper Structure"
 title: "InvokeHelper Structure"
 ms.date: "10/18/2018"
 ms.topic: "reference"

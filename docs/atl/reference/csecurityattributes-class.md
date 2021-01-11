@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSecurityAttributes Class"
 title: "CSecurityAttributes Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSecurityAttributes", "ATLSECURITY/ATL::CSecurityAttributes", "ATLSECURITY/ATL::CSecurityAttributes::CSecurityAttributes", "ATLSECURITY/ATL::CSecurityAttributes::Set"]

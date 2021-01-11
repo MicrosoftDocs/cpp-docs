@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN051: Using CTL3D Now and in the Future"
 title: "TN051: Using CTL3D Now and in the Future"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["TN051", "CTL3D.DLL", "3D effect"]

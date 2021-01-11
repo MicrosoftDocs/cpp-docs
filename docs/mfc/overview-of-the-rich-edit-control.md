@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overview of the Rich Edit Control"
 title: "Overview of the Rich Edit Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rich edit controls [MFC]"]

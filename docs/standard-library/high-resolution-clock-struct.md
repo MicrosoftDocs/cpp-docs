@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: high_resolution_clock struct"
 title: "high_resolution_clock struct | Microsoft Docs"
 ms.custom: ""
 ms.date: "05/22/2018"

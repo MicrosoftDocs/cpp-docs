@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ASSEMBLYMODULE (Add a MSIL Module to the Assembly)"
 title: "/ASSEMBLYMODULE (Add a MSIL Module to the Assembly)"
 ms.date: "11/04/2016"
 f1_keywords: ["/assemblymodule", "VC.Project.VCLinkerTool.AddModuleNamesToAssembly"]

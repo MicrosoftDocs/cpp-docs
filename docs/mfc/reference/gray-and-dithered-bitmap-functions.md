@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Gray and Dithered Bitmap Functions"
 title: "Gray and Dithered Bitmap Functions"
 ms.date: "11/19/2018"
 f1_keywords: ["AFXWIN/AfxDrawGrayBitmap", "AFXWIN/AfxGetGrayBitmap", "AFXWIN/AfxDrawDitheredBitmap", "AFXWIN/AfxGetDitheredBitmap"]

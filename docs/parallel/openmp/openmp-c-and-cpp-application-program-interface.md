@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OpenMP C and C++ Application Program Interface"
 title: "OpenMP C and C++ Application Program Interface"
 ms.date: "03/20/2019"
 ms.assetid: efec8865-a755-452f-838f-ddbfecab44d4

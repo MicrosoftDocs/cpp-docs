@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Integer Types"
 title: "Integer Types"
 ms.date: 07/22/2020
 helpviewer_keywords: ["integer data type, integer types in C++", "integer constants", "integer types", "integers, types"]

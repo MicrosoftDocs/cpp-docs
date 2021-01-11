@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: property (C++)"
 title: "property (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["property_cpp"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating the Project (ATL Tutorial, Part 1)"
 title: "Creating the Project (ATL Tutorial, Part 1)"
 ms.custom: "get-started-article"
 ms.date: "08/19/2019"

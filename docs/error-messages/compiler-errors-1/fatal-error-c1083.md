@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fatal Error C1083"
 title: "Fatal Error C1083"
 ms.date: "09/01/2017"
 f1_keywords: ["C1083"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BoolStruct Structure"
 title: "BoolStruct Structure"
 ms.date: "09/21/2018"
 ms.topic: "reference"

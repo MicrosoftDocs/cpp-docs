@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL: Making Direct SQL Calls (ODBC)"
 title: "SQL: Making Direct SQL Calls (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["SQL, direct calls from ODBC", "SQL, calling directly from ODBC", "ODBC, SQL calls", "SQL calls", "direct SQL calls from ODBC"]

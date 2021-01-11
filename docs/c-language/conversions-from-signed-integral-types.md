@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Conversions from signed integral types"
 title: "Conversions from signed integral types"
 ms.date: "10/02/2019"
 helpviewer_keywords: ["integral conversions, from signed", "integers, converting", "conversions [C++], integral", "data type conversion [C++], signed and unsigned integers", "type conversion [C++], signed and unsigned integers"]

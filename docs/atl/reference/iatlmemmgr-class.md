@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAtlMemMgr Class"
 title: "IAtlMemMgr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IAtlMemMgr", "ATLMEM/ATL::IAtlMemMgr", "ATLMEM/ATL::Allocate", "ATLMEM/ATL::Free", "ATLMEM/ATL::GetSize", "ATLMEM/ATL::Reallocate"]

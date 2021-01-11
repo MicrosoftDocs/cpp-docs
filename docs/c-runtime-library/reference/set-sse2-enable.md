@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _set_SSE2_enable"
 title: "_set_SSE2_enable"
 ms.date: "04/05/2018"
 api_name: ["_set_SSE2_enable"]

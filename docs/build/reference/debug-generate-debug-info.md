@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DEBUG (Generate Debug Info)"
 title: "/DEBUG (Generate Debug Info)"
 ms.date: "05/16/2019"
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateDebugInformation", "/debug"]

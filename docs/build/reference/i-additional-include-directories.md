@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /I (Additional include directories)"
 title: "/I (Additional include directories)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.AdditionalIncludeDirectories", "VC.Project.VCCLCompilerTool.AdditionalIncludeDirectories", "/I", "VC.Project.VCNMakeTool.IncludeSearchPath"]

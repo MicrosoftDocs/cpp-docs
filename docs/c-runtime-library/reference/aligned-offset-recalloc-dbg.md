@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _aligned_offset_recalloc_dbg"
 title: "_aligned_offset_recalloc_dbg"
 ms.date: "11/04/2016"
 api_name: ["_aligned_offset_recalloc_dbg"]

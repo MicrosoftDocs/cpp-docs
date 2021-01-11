@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _execvpe, _wexecvpe"
 title: "_execvpe, _wexecvpe"
 ms.date: "4/2/2020"
 api_name: ["_execvpe", "_wexecvpe", "_o__execvpe", "_o__wexecvpe"]

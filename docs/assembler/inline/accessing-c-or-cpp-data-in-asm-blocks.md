@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accessing C or C++ Data in __asm Blocks"
 title: "Accessing C or C++ Data in __asm Blocks"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["data members [C++], in __asm blocks", "data access [C++], in __asm blocks", "__asm keyword [C++], data members", "structure types in __asm blocks"]

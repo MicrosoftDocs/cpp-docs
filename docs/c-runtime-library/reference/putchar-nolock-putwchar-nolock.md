@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _putchar_nolock, _putwchar_nolock"
 title: "_putchar_nolock, _putwchar_nolock"
 ms.date: "11/04/2016"
 api_name: ["_putchar_nolock", "_putwchar_nolock"]

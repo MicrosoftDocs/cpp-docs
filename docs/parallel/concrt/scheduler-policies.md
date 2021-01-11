@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Scheduler Policies"
 title: "Scheduler Policies"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["scheduler policies"]

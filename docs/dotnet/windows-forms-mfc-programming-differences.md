@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Forms/MFC Programming Differences"
 title: "Windows Forms-MFC Programming Differences"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC [C++], Windows Forms support", "Windows Forms [C++], compared to MFC"]

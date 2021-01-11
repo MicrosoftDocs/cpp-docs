@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCOutlookBar Class"
 title: "CMFCOutlookBar Class"
 ms.date: "06/25/2018"
 f1_keywords: ["CMFCOutlookBar", "AFXOUTLOOKBAR/CMFCOutlookBar", "AFXOUTLOOKBAR/CMFCOutlookBar::AllowDestroyEmptyTabbedPane", "AFXOUTLOOKBAR/CMFCOutlookBar::CanAcceptPane", "AFXOUTLOOKBAR/CMFCOutlookBar::CanSetCaptionTextToTabName", "AFXOUTLOOKBAR/CMFCOutlookBar::Create", "AFXOUTLOOKBAR/CMFCOutlookBar::CreateCustomPage", "AFXOUTLOOKBAR/CMFCOutlookBar::DoesAllowDynInsertBefore", "AFXOUTLOOKBAR/CMFCOutlookBar::FloatTab", "AFXOUTLOOKBAR/CMFCOutlookBar::GetButtonsFont", "AFXOUTLOOKBAR/CMFCOutlookBar::GetTabArea", "AFXOUTLOOKBAR/CMFCOutlookBar::IsMode2003", "AFXOUTLOOKBAR/CMFCOutlookBar::OnAfterAnimation", "AFXOUTLOOKBAR/CMFCOutlookBar::OnBeforeAnimation", "AFXOUTLOOKBAR/CMFCOutlookBar::OnScroll", "AFXOUTLOOKBAR/CMFCOutlookBar::RemoveCustomPage", "AFXOUTLOOKBAR/CMFCOutlookBar::SetButtonsFont", "AFXOUTLOOKBAR/CMFCOutlookBar::SetMode2003"]

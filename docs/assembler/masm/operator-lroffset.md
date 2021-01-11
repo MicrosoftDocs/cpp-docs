@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator LROFFSET"
 title: "operator LROFFSET"
 ms.date: "12/17/2019"
 f1_keywords: ["LROFFSET", "operator LROFFSET"]

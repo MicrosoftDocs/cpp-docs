@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MASM Macro Directives in Inline Assembly"
 title: "MASM Macro Directives in Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["directives, macros", "inline assembly, macro directives", "macros, directives", "MASM (Microsoft Macro Assembler), inline assembly macro directives"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonComboBox Class"
 title: "CMFCRibbonComboBox Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::CMFCRibbonComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::AddItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::DeleteItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::EnableDropDownListResize", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::FindItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetCount", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetCurSel", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetDropDownHeight", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetIntermediateSize", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetItemData", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::HasEditBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::IsResizeDropDownList", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::OnSelectItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::RemoveAllItems", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::SelectItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::SetDropDownHeight"]

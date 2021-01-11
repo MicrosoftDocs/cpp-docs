@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Aggregation"
 title: "Aggregation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["aggregation [C++]", "aggregate objects [C++]"]

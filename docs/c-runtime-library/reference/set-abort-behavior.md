@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _set_abort_behavior"
 title: "_set_abort_behavior"
 ms.date: "4/2/2020"
 api_name: ["_set_abort_behavior", "_o__set_abort_behavior"]

@@ -138,6 +138,8 @@
         href: ../c-language/name-spaces.md
   - name: Declarations and types
     items: 
+      - name: Alignment (C11)
+        href: ../c-language/alignment-c.md
       - name: Declarations and types
         href: ../c-language/declarations-and-types.md
       - name: Overview of declarations
@@ -270,6 +272,8 @@
                 href: ../c-language/string-literals-in-primary-expressions.md
               - name: Expressions in parentheses
                 href: ../c-language/expressions-in-parentheses.md
+              - name: Generic selection (C11)
+                href: ../c-language/generic_selection.md
           - name: L-value and r-value expressions
             href: ../c-language/l-value-and-r-value-expressions.md
           - name: C constant expressions

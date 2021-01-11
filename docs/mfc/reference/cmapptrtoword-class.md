@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMapPtrToWord Class"
 title: "CMapPtrToWord Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMapPtrToWord", "AFXCOLL/CMapPtrToWord", "AFXCOLL/CMapPtrToWord::CMapPtrToWord", "AFXCOLL/CMapPtrToWord::GetCount", "AFXCOLL/CMapPtrToWord::GetHashTableSize", "AFXCOLL/CMapPtrToWord::GetNextAssoc", "AFXCOLL/CMapPtrToWord::GetSize", "AFXCOLL/CMapPtrToWord::GetStartPosition", "AFXCOLL/CMapPtrToWord::HashKey", "AFXCOLL/CMapPtrToWord::InitHashTable", "AFXCOLL/CMapPtrToWord::IsEmpty", "AFXCOLL/CMapPtrToWord::Lookup", "AFXCOLL/CMapPtrToWord::LookupKey", "AFXCOLL/CMapPtrToWord::RemoveAll", "AFXCOLL/CMapPtrToWord::RemoveKey", "AFXCOLL/CMapPtrToWord::SetAt"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CHtmlEditCtrl Class"
 title: "CHtmlEditCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHtmlEditCtrl", "AFXHTML/CHtmlEditCtrl", "AFXHTML/CHtmlEditCtrl::CHtmlEditCtrl", "AFXHTML/CHtmlEditCtrl::Create", "AFXHTML/CHtmlEditCtrl::GetDHtmlDocument", "AFXHTML/CHtmlEditCtrl::GetStartDocument"]

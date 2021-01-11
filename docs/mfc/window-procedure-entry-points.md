@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Window Procedure Entry Points"
 title: "Window Procedure Entry Points"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["state management, window procedures", "MFC, managing state data", "window procedure entry points", "entry points, window procedures"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CUserException Class"
 title: "CUserException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CUserException"]

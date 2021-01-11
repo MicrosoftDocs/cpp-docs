@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_move_constructible class"
 title: "is_move_constructible class"
 ms.date: "10/24/2019"
 f1_keywords: ["type_traits/std::is_move_constructible"]

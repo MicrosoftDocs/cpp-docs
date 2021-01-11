@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .EXIT (32-bit MASM)"
 title: ".EXIT"
 ms.date: "11/05/2019"
 f1_keywords: [".EXIT"]

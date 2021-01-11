@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;remarks&gt;"
 title: "&lt;remarks> (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["remarks", "<remarks>"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internationalization Strategies"
 title: "Internationalization Strategies"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["globalization [C++], character sets", "language-portable code [C++]", "MBCS [C++], internationalization strategies", "Windows API [C++], international programming strategies", "Win32 [C++], international programming strategies", "Unicode [C++], globalizing applications", "character sets [C++], international programming strategies", "localization [C++], character sets"]

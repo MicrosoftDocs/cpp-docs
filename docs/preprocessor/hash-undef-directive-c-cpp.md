@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: #undef directive (C/C++)"
 title: "#undef directive (C/C++)"
 ms.date: "08/29/2019"
 f1_keywords: ["#undef"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ARM Exception Handling"
 title: "ARM Exception Handling"
 ms.date: "07/11/2018"
 ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
@@ -9,13 +10,13 @@ Windows on ARM uses the same structured exception handling mechanism for asynchr
 
 ## ARM Exception Handling
 
-Windows on ARM uses *unwind codes* to control stack unwinding during [structured exception handling](/windows/win32/debug/structured-exception-handling) (SEH). Unwind codes are a sequence of bytes stored in the .xdata section of the executable image. They describe the operation of function prologue and epilogue code in an abstract way, so that the effects of a function's prologue can be undone in preparation for unwinding to the caller's stack frame.
+Windows on ARM uses *unwind codes* to control stack unwinding during [structured exception handling](/windows/win32/debug/structured-exception-handling) (SEH). Unwind codes are a sequence of bytes stored in the `.xdata` section of the executable image. They describe the operation of function prologue and epilogue code in an abstract way, so that the effects of a function's prologue can be undone in preparation for unwinding to the caller's stack frame.
 
 The ARM EABI (embedded application binary interface) specifies an exception unwinding model that uses unwind codes, but it's not sufficient for SEH unwinding in Windows, which must handle asynchronous cases where the processor is in the middle of the prologue or epilogue of a function. Windows also separates unwinding control into function-level unwinding and language-specific scope unwinding, which is unified in the ARM EABI. For these reasons, Windows on ARM specifies more details for the unwinding data and procedure.
 
 ### Assumptions
 
-Executable images for Windows on ARM use the Portable Executable (PE) format. For more information, see [Microsoft PE and COFF Specification](https://go.microsoft.com/fwlink/p/?linkid=84140). Exception handling information is stored in the .pdata and .xdata sections of the image.
+Executable images for Windows on ARM use the Portable Executable (PE) format. For more information, see [PE Format](/windows/win32/debug/pe-format). Exception handling information is stored in the `.pdata` and `.xdata` sections of the image.
 
 The exception handling mechanism makes certain assumptions about code that follows the ABI for Windows on ARM:
 
@@ -45,133 +46,133 @@ The exception handling mechanism makes certain assumptions about code that follo
 
   - Parse one of a few well-defined frame types.
 
-### .pdata Records
+### `.pdata` Records
 
-The .pdata records in a PE-format image are an ordered array of fixed-length items that describe every stack-manipulating function. Leaf functions, which are functions that do not call other functions, don't require .pdata records when they don't manipulate the stack. (That is, they don't require any local storage and don't have to save or restore non-volatile registers.). Records for these functions can be omitted from the .pdata section to save space. An unwind operation from one of these functions can just copy the return address from the Link Register (LR) to the program counter (PC) to move up to the caller.
+The `.pdata` records in a PE-format image are an ordered array of fixed-length items that describe every stack-manipulating function. Leaf functions, which are functions that do not call other functions, don't require `.pdata` records when they don't manipulate the stack. (That is, they don't require any local storage and don't have to save or restore non-volatile registers.). Records for these functions can be omitted from the `.pdata` section to save space. An unwind operation from one of these functions can just copy the return address from the Link Register (LR) to the program counter (PC) to move up to the caller.
 
-Every .pdata record for ARM is 8 bytes long. The general format of a record places the relative virtual address (RVA) of the function start in the first 32-bit word, followed by a second word that contains either a pointer to a variable-length .xdata block, or a packed word that describes a canonical function unwinding sequence, as shown in this table:
+Every `.pdata` record for ARM is 8 bytes long. The general format of a record places the relative virtual address (RVA) of the function start in the first 32-bit word, followed by a second word that contains either a pointer to a variable-length `.xdata` block, or a packed word that describes a canonical function unwinding sequence, as shown in this table:
 
 |Word Offset|Bits|Purpose|
 |-----------------|----------|-------------|
-|0|0-31|*Function Start RVA* is the 32-bit RVA of the start of the function. If the function contains thumb code, the low bit of this address must be set.|
-|1|0-1|*Flag* is a 2-bit field that indicates how to interpret the remaining 30 bits of the second .pdata word. If *Flag* is 0, then the remaining bits form an *Exception Information RVA* (with the low two bits implicitly 0). If *Flag* is non-zero, then the remaining bits form a *Packed Unwind Data* structure.|
-|1|2-31|*Exception Information RVA* or *Packed Unwind Data*.<br /><br /> *Exception Information RVA* is the address of the variable-length exception information structure, stored in the .xdata section. This data must be 4-byte aligned.<br /><br /> *Packed Unwind Data* is a compressed description of the operations required to unwind from a function, assuming a canonical form. In this case, no .xdata record is required.|
+|0|0-31|*`Function Start RVA`* is the 32-bit RVA of the start of the function. If the function contains thumb code, the low bit of this address must be set.|
+|1|0-1|*`Flag`* is a 2-bit field that indicates how to interpret the remaining 30 bits of the second `.pdata` word. If *`Flag`* is 0, then the remaining bits form an *Exception Information RVA* (with the low two bits implicitly 0). If *`Flag`* is non-zero, then the remaining bits form a *Packed Unwind Data* structure.|
+|1|2-31|*Exception Information RVA* or *Packed Unwind Data*.<br /><br /> *Exception Information RVA* is the address of the variable-length exception information structure, stored in the `.xdata` section. This data must be 4-byte aligned.<br /><br /> *Packed Unwind Data* is a compressed description of the operations required to unwind from a function, assuming a canonical form. In this case, no `.xdata` record is required.|
 
 ### Packed Unwind Data
 
-For functions whose prologues and epilogues follow the canonical form described below, packed unwind data can be used. This eliminates the need for an .xdata record and significantly reduces the space required to provide unwind data. The canonical prologues and epilogues are designed to meet the common requirements of a simple function that does not require an exception handler, and performs its setup and teardown operations in a standard order.
+For functions whose prologues and epilogues follow the canonical form described below, packed unwind data can be used. This eliminates the need for an `.xdata` record and significantly reduces the space required to provide unwind data. The canonical prologues and epilogues are designed to meet the common requirements of a simple function that does not require an exception handler, and performs its setup and teardown operations in a standard order.
 
-This table shows the format of a .pdata record that has packed unwind data:
+This table shows the format of a `.pdata` record that has packed unwind data:
 
 |Word Offset|Bits|Purpose|
 |-----------------|----------|-------------|
-|0|0-31|*Function Start RVA* is the 32-bit RVA of the start of the function. If the function contains thumb code, the low bit of this address must be set.|
-|1|0-1|*Flag* is a 2-bit field that has these meanings:<br /><br />- 00 = packed unwind data not used; remaining bits point to .xdata record.<br />- 01 = packed unwind data.<br />- 10 = packed unwind data where the function is assumed to have no prologue. This is useful for describing function fragments that are discontiguous with the start of the function.<br />- 11 = reserved.|
-|1|2-12|*Function Length* is an 11-bit field that provides the length of the entire function in bytes divided by 2. If the function is larger than 4K bytes, a full .xdata record must be used instead.|
-|1|13-14|*Ret* is a 2-bit field that indicates how the function returns:<br /><br />- 00 = return via pop {pc} (the *L* flag bit must be set to 1 in this case).<br />- 01 = return by using a 16-bit branch.<br />- 10 = return by using a 32-bit branch.<br />- 11 = no epilogue at all. This is useful for describing a discontiguous function fragment that may only contain a prologue, but whose epilogue is elsewhere.|
-|1|15|*H* is a 1-bit flag that indicates whether the function "homes" the integer parameter registers (r0-r3) by pushing them at the start of the function, and deallocates the 16 bytes of stack before returning. (0 = does not home registers, 1 = homes registers.)|
-|1|16-18|*Reg* is a 3-bit field that indicates the index of the last saved non-volatile register. If the *R* bit is 0, then only integer registers are being saved, and are assumed to be in the range of r4-rN, where N is equal to 4 + *Reg*. If the *R* bit is 1, then only floating-point registers are being saved, and are assumed to be in the range of d8-dN, where N is equal to 8 + *Reg*. The special combination of *R* = 1 and *Reg* = 7 indicates that no registers are saved.|
-|1|19|*R* is a 1-bit flag that indicates whether the saved non-volatile registers are integer registers (0) or floating-point registers (1). If *R* is set to 1 and the *Reg* field is set to 7, no non-volatile registers were pushed.|
-|1|20|*L* is a 1-bit flag that indicates whether the function saves/restores LR, along with other registers indicated by the *Reg* field. (0 = does not save/restore, 1 = does save/restore.)|
-|1|21|*C* is a 1-bit flag that indicates whether the function includes extra instructions to set up a frame chain for fast stack walking (1) or not (0). If this bit is set, r11 is implicitly added to the list of integer non-volatile registers saved. (See restrictions below if the *C* flag is used.)|
-|1|22-31|*Stack Adjust* is a 10-bit field that indicates the number of bytes of stack that are allocated for this function, divided by 4. However, only values between 0x000-0x3F3 can be directly encoded. Functions that allocate more than 4044 bytes of stack must use a full .xdata record. If the *Stack Adjust* field is 0x3F4 or larger, then the low 4 bits have special meaning:<br /><br />- Bits 0-1 indicate the number of words of stack adjustment (1-4) minus 1.<br />- Bit 2 is set to 1 if the prologue combined this adjustment into its push operation.<br />- Bit 3 is set to 1 if the epilogue combined this adjustment into its pop operation.|
+|0|0-31|*`Function Start RVA`* is the 32-bit RVA of the start of the function. If the function contains thumb code, the low bit of this address must be set.|
+|1|0-1|*`Flag`* is a 2-bit field that has these meanings:<br /><br />- 00 = packed unwind data not used; remaining bits point to `.xdata` record.<br />- 01 = packed unwind data.<br />- 10 = packed unwind data where the function is assumed to have no prologue. This is useful for describing function fragments that are discontiguous with the start of the function.<br />- 11 = reserved.|
+|1|2-12|*`Function Length`* is an 11-bit field that provides the length of the entire function in bytes divided by 2. If the function is larger than 4K bytes, a full `.xdata` record must be used instead.|
+|1|13-14|*`Ret`* is a 2-bit field that indicates how the function returns:<br /><br />- 00 = return via pop {pc} (the *`L`* flag bit must be set to 1 in this case).<br />- 01 = return by using a 16-bit branch.<br />- 10 = return by using a 32-bit branch.<br />- 11 = no epilogue at all. This is useful for describing a discontiguous function fragment that may only contain a prologue, but whose epilogue is elsewhere.|
+|1|15|*`H`* is a 1-bit flag that indicates whether the function "homes" the integer parameter registers (r0-r3) by pushing them at the start of the function, and deallocates the 16 bytes of stack before returning. (0 = does not home registers, 1 = homes registers.)|
+|1|16-18|*`Reg`* is a 3-bit field that indicates the index of the last saved non-volatile register. If the *`R`* bit is 0, then only integer registers are being saved, and are assumed to be in the range of r4-rN, where N is equal to 4 + *`Reg`*. If the *`R`* bit is 1, then only floating-point registers are being saved, and are assumed to be in the range of d8-dN, where N is equal to 8 + *`Reg`*. The special combination of *`R`* = 1 and *`Reg`* = 7 indicates that no registers are saved.|
+|1|19|*`R`* is a 1-bit flag that indicates whether the saved non-volatile registers are integer registers (0) or floating-point registers (1). If *`R`* is set to 1 and the *`Reg`* field is set to 7, no non-volatile registers were pushed.|
+|1|20|*`L`* is a 1-bit flag that indicates whether the function saves/restores LR, along with other registers indicated by the *`Reg`* field. (0 = does not save/restore, 1 = does save/restore.)|
+|1|21|*`C`* is a 1-bit flag that indicates whether the function includes extra instructions to set up a frame chain for fast stack walking (1) or not (0). If this bit is set, r11 is implicitly added to the list of integer non-volatile registers saved. (See restrictions below if the *`C`* flag is used.)|
+|1|22-31|*`Stack Adjust`* is a 10-bit field that indicates the number of bytes of stack that are allocated for this function, divided by 4. However, only values between 0x000-0x3F3 can be directly encoded. Functions that allocate more than 4044 bytes of stack must use a full `.xdata` record. If the *`Stack Adjust`* field is 0x3F4 or larger, then the low 4 bits have special meaning:<br /><br />- Bits 0-1 indicate the number of words of stack adjustment (1-4) minus 1.<br />- Bit 2 is set to 1 if the prologue combined this adjustment into its push operation.<br />- Bit 3 is set to 1 if the epilogue combined this adjustment into its pop operation.|
 
 Due to possible redundancies in the encodings above, these restrictions apply:
 
-- If the *C* flag is set to 1:
+- If the *`C`* flag is set to 1:
 
-  - The *L* flag must also be set to 1, because frame chaining required both r11 and LR.
+  - The *`L`* flag must also be set to 1, because frame chaining required both r11 and LR.
 
-  - r11 must not be included in the set of registers described by *Reg*. That is, if r4-r11 are pushed, *Reg* should only describe r4-r10, because the *C* flag implies r11.
+  - r11 must not be included in the set of registers described by *`Reg`*. That is, if r4-r11 are pushed, *`Reg`* should only describe r4-r10, because the *`C`* flag implies r11.
 
-- If the *Ret* field is set to 0, the *L* flag must be set to 1.
+- If the *`Ret`* field is set to 0, the *`L`* flag must be set to 1.
 
 Violating these restrictions causes an unsupported sequence.
 
-For purposes of the discussion below, two pseudo-flags are derived from *Stack Adjust*:
+For purposes of the discussion below, two pseudo-flags are derived from *`Stack Adjust`*:
 
-- *PF* or "prologue folding" indicates that *Stack Adjust* is 0x3F4 or larger and bit 2 is set.
+- *`PF`* or "prologue folding" indicates that *`Stack Adjust`* is 0x3F4 or larger and bit 2 is set.
 
-- *EF* or "epilogue folding" indicates that *Stack Adjust* is 0x3F4 or larger and bit 3 is set.
+- *`EF`* or "epilogue folding" indicates that *`Stack Adjust`* is 0x3F4 or larger and bit 3 is set.
 
 Prologues for canonical functions may have up to 5 instructions (notice that 3a and 3b are mutually exclusive):
 
 |Instruction|Opcode is assumed present if:|Size|Opcode|Unwind Codes|
 |-----------------|-----------------------------------|----------|------------|------------------|
-|1|*H*==1|16|`push {r0-r3}`|04|
-|2|*C*==1 or *L*==1 or *R*==0 or PF==1|16/32|`push {registers}`|80-BF/D0-DF/EC-ED|
-|3a|*C*==1 and (*L*==0 and *R*==1 and PF==0)|16|`mov r11,sp`|C0-CF/FB|
-|3b|*C*==1 and (*L*==1 or *R*==0 or PF==1)|32|`add r11,sp,#xx`|FC|
-|4|*R*==1 and *Reg* != 7|32|`vpush {d8-dE}`|E0-E7|
-|5|*Stack Adjust* != 0 and PF==0|16/32|`sub sp,sp,#xx`|00-7F/E8-EB|
+|1|*`H`*==1|16|`push {r0-r3}`|04|
+|2|*`C`*==1 or *`L`*==1 or *`R`*==0 or *`PF`*==1|16/32|`push {registers}`|80-BF/D0-DF/EC-ED|
+|3a|*`C`*==1 and (*`L`*==0 and *`R`*==1 and *`PF`*==0)|16|`mov r11,sp`|C0-CF/FB|
+|3b|*`C`*==1 and (*`L`*==1 or *`R`*==0 or *`PF`*==1)|32|`add r11,sp,#xx`|FC|
+|4|*`R`*==1 and *`Reg`* != 7|32|`vpush {d8-dE}`|E0-E7|
+|5|*`Stack Adjust`* != 0 and *`PF`*==0|16/32|`sub sp,sp,#xx`|00-7F/E8-EB|
 
-Instruction 1 is always present if the *H* bit is set to 1.
+Instruction 1 is always present if the *`H`* bit is set to 1.
 
-To set up the frame chaining, either instruction 3a or 3b is present if the *C* bit is set. It is a 16-bit `mov` if no registers other than r11 and LR are pushed; otherwise, it is a 32-bit `add`.
+To set up the frame chaining, either instruction 3a or 3b is present if the *`C`* bit is set. It is a 16-bit `mov` if no registers other than r11 and LR are pushed; otherwise, it is a 32-bit `add`.
 
 If a non-folded adjustment is specified, instruction 5 is the explicit stack adjustment.
 
-Instructions 2 and 4 are set based on whether a push is required. This table summarizes which registers are saved based on the *C*, *L*, *R*, and *PF* fields. In all cases, *N* is equal to *Reg* + 4, *E* is equal to *Reg* + 8, and *S* is equal to (~*Stack Adjust*) & 3.
+Instructions 2 and 4 are set based on whether a push is required. This table summarizes which registers are saved based on the *`C`*, *`L`*, *`R`*, and *`PF`* fields. In all cases, *`N`* is equal to *`Reg`* + 4, *`E`* is equal to *`Reg`* + 8, and *`S`* is equal to (~*`Stack Adjust`*) & 3.
 
 |C|L|R|PF|Integer Registers Pushed|VFP Registers pushed|
 |-------|-------|-------|--------|------------------------------|--------------------------|
-|0|0|0|0|r4-r*N*|none|
-|0|0|0|1|r*S*-r*N*|none|
-|0|0|1|0|none|d8-d*E*|
-|0|0|1|1|r*S*-r3|d8-d*E*|
-|0|1|0|0|r4-r*N*, LR|none|
-|0|1|0|1|r*S*-r*N*, LR|none|
-|0|1|1|0|LR|d8-d*E*|
-|0|1|1|1|r*S*-r3, LR|d8-d*E*|
-|1|0|0|0|r4-r*N*, r11|none|
-|1|0|0|1|r*S*-r*N*, r11|none|
-|1|0|1|0|r11|d8-d*E*|
-|1|0|1|1|r*S*-r3, r11|d8-d*E*|
-|1|1|0|0|r4-r*N*, r11, LR|none|
-|1|1|0|1|r*S*-r*N*, r11, LR|none|
-|1|1|1|0|r11, LR|d8-d*E*|
-|1|1|1|1|r*S*-r3, r11, LR|d8-d*E*|
+|0|0|0|0|r4 - r*`N`*|none|
+|0|0|0|1|r*`S`* - r*`N`*|none|
+|0|0|1|0|none|d8 - d*`E`*|
+|0|0|1|1|r*`S`* - r3|d8 - d*`E`*|
+|0|1|0|0|r4 - r*`N`*, LR|none|
+|0|1|0|1|r*`S`* - r*`N`*, LR|none|
+|0|1|1|0|LR|d8 - d*`E`*|
+|0|1|1|1|r*`S`* - r3, LR|d8 - d*`E`*|
+|1|0|0|0|r4 - r*`N`*, r11|none|
+|1|0|0|1|r*`S`* - r*`N`*, r11|none|
+|1|0|1|0|r11|d8 - d*`E`*|
+|1|0|1|1|r*`S`* - r3, r11|d8 - d*`E`*|
+|1|1|0|0|r4 - r*`N`*, r11, LR|none|
+|1|1|0|1|r*`S`* - r*`N`*, r11, LR|none|
+|1|1|1|0|r11, LR|d8 - d*`E`*|
+|1|1|1|1|r*`S`* - r3, r11, LR|d8 - d*`E`*|
 
 The epilogues for canonical functions follow a similar form, but in reverse and with some additional options. The epilogue may be up to 5 instructions long, and its form is strictly dictated by the form of the prologue.
 
 |Instruction|Opcode is assumed present if:|Size|Opcode|
 |-----------------|-----------------------------------|----------|------------|
-|6|*Stack Adjust*!=0 and *EF*==0|16/32|`add   sp,sp,#xx`|
-|7|*R*==1 and *Reg*!=7|32|`vpop  {d8-dE}`|
-|8|*C*==1 or (*L*==1 and *H*==0) or *R*==0 or *EF*==1|16/32|`pop   {registers}`|
-|9a|*H*==1 and *L*==0|16|`add   sp,sp,#0x10`|
-|9b|*H*==1 and *L*==1|32|`ldr   pc,[sp],#0x14`|
-|10a|*Ret*==1|16|`bx    reg`|
-|10b|*Ret*==2|32|`b     address`|
+|6|*`Stack Adjust`*!=0 and *`EF`*==0|16/32|`add   sp,sp,#xx`|
+|7|*`R`*==1 and *`Reg`*!=7|32|`vpop  {d8-dE}`|
+|8|*`C`*==1 or (*`L`*==1 and *`H`*==0) or *`R`*==0 or *`EF`*==1|16/32|`pop   {registers}`|
+|9a|*`H`*==1 and *`L`*==0|16|`add   sp,sp,#0x10`|
+|9b|*`H`*==1 and *`L`*==1|32|`ldr   pc,[sp],#0x14`|
+|10a|*`Ret`*==1|16|`bx    reg`|
+|10b|*`Ret`*==2|32|`b     address`|
 
-Instruction 6 is the explicit stack adjustment if a non-folded adjustment is specified. Because *PF* is independent of *EF*, it is possible to have instruction 5 present without instruction 6, or vice-versa.
+Instruction 6 is the explicit stack adjustment if a non-folded adjustment is specified. Because *`PF`* is independent of *`EF`*, it is possible to have instruction 5 present without instruction 6, or vice-versa.
 
-Instructions 7 and 8 use the same logic as the prologue to determine which registers are restored from the stack, but with these two changes: first, *EF* is used in place of *PF*; second, if *Ret* = 0, then LR is replaced with PC in the register list and the epilogue ends immediately.
+Instructions 7 and 8 use the same logic as the prologue to determine which registers are restored from the stack, but with these two changes: first, *`EF`* is used in place of *`PF`*; second, if *`Ret`* = 0, then LR is replaced with PC in the register list and the epilogue ends immediately.
 
-If *H* is set, then either instruction 9a or 9b is present. Instruction 9a is used when *L* is 0, to indicate that the LR is not on the stack. In this case, the stack is manually adjusted and *Ret* must be 1 or 2 to specify an explicit return. Instruction 9b is used when *L* is 1, to indicate an early end to the epilogue, and to return and adjust the stack at the same time.
+If *`H`* is set, then either instruction 9a or 9b is present. Instruction 9a is used when *`L`* is 0, to indicate that the LR is not on the stack. In this case, the stack is manually adjusted and *`Ret`* must be 1 or 2 to specify an explicit return. Instruction 9b is used when *`L`* is 1, to indicate an early end to the epilogue, and to return and adjust the stack at the same time.
 
-If the epilogue has not already ended, then either instruction 10a or 10b is present, to indicate a 16-bit or 32-bit branch, based on the value of *Ret*.
+If the epilogue has not already ended, then either instruction 10a or 10b is present, to indicate a 16-bit or 32-bit branch, based on the value of *`Ret`*.
 
-### .xdata Records
+### `.xdata` Records
 
-When the packed unwind format is insufficient to describe the unwinding of a function, a variable-length .xdata record must be created. The address of this record is stored in the second word of the .pdata record. The format of the .xdata is a packed variable-length set of words that has four sections:
+When the packed unwind format is insufficient to describe the unwinding of a function, a variable-length `.xdata` record must be created. The address of this record is stored in the second word of the `.pdata` record. The format of the `.xdata` is a packed variable-length set of words that has four sections:
 
-1. A 1 or 2-word header that describes the overall size of the .xdata structure and provides key function data. The second word is only present if the *Epilogue Count* and *Code Words* fields are both set to 0. The fields are broken out in this table:
+1. A 1 or 2-word header that describes the overall size of the `.xdata` structure and provides key function data. The second word is only present if the *Epilogue Count* and *Code Words* fields are both set to 0. The fields are broken out in this table:
 
    |Word|Bits|Purpose|
    |----------|----------|-------------|
-   |0|0-17|*Function Length* is an 18-bit field that indicates the total length of the function in bytes, divided by 2. If a function is larger than 512 KB, then multiple .pdata and .xdata records must be used to describe the function. For details, see the Large Functions section in this document.|
-   |0|18-19|*Vers* is a 2-bit field that describes the version of the remaining xdata. Only version 0 is currently defined; values of 1-3 are reserved.|
+   |0|0-17|*`Function Length`* is an 18-bit field that indicates the total length of the function in bytes, divided by 2. If a function is larger than 512 KB, then multiple `.pdata` and `.xdata` records must be used to describe the function. For details, see the Large Functions section in this document.|
+   |0|18-19|*Vers* is a 2-bit field that describes the version of the remaining`.xdata`. Only version 0 is currently defined; values of 1-3 are reserved.|
    |0|20|*X* is a 1-bit field that indicates the presence (1) or absence (0) of exception data.|
-   |0|21|*E* is a 1-bit field that indicates that information that describes a single epilogue is packed into the header (1) rather than requiring additional scope words later (0).|
+   |0|21|*`E`* is a 1-bit field that indicates that information that describes a single epilogue is packed into the header (1) rather than requiring additional scope words later (0).|
    |0|22|*F* is a 1-bit field that indicates that this record describes a function fragment (1) or a full function (0). A fragment implies that there is no prologue and that all prologue processing should be ignored.|
-   |0|23-27|*Epilogue Count* is a 5-bit field that has two meanings, depending on the state of the *E* bit:<br /><br /> -   If *E* is 0, this field is a count of the total number of exception scopes described in section 3. If more than 31 scopes exist in the function, then this field and the *Code Words* field must both be set to 0 to indicate that an extension word is required.<br />-   If *E* is 1, this field specifies the index of the first unwind code that describes the only epilogue.|
+   |0|23-27|*Epilogue Count* is a 5-bit field that has two meanings, depending on the state of the *`E`* bit:<br /><br /> -   If *`E`* is 0, this field is a count of the total number of exception scopes described in section 3. If more than 31 scopes exist in the function, then this field and the *Code Words* field must both be set to 0 to indicate that an extension word is required.<br />-   If *`E`* is 1, this field specifies the index of the first unwind code that describes the only epilogue.|
    |0|28-31|*Code Words* is a 4-bit field that specifies the number of 32-bit words required to contain all of the unwind codes in section 4. If more than 15 words are required for more than 63 unwind code bytes, this field and the *Epilogue Count* field must both be set to 0 to indicate that an extension word is required.|
    |1|0-15|*Extended Epilogue Count* is a 16-bit field that provides more space for encoding an unusually large number of epilogues. The extension word that contains this field is only present if the *Epilogue Count* and *Code Words* fields in the first header word are both set to 0.|
    |1|16-23|*Extended Code Words* is an 8-bit field that provides more space for encoding an unusually large number of unwind code words. The extension word that contains this field is only present if the *Epilogue Count* and *Code Words* fields in the first header word are both set to 0.|
    |1|24-31|Reserved|
 
-1. After the exception data (if the *E* bit in the header was set to 0) is a list of information about epilogue scopes, which are packed one to a word and stored in order of increasing starting offset. Each scope contains these fields:
+1. After the exception data (if the *`E`* bit in the header was set to 0) is a list of information about epilogue scopes, which are packed one to a word and stored in order of increasing starting offset. Each scope contains these fields:
 
    |Bits|Purpose|
    |----------|-------------|
@@ -184,30 +185,30 @@ When the packed unwind format is insufficient to describe the unwinding of a fun
 
 1. If the *X* field in the header is 1, the unwind code bytes are followed by the exception handler information. This consists of one *Exception Handler RVA* that contains the address of the exception handler, followed immediately by the (variable-length) amount of data required by the exception handler.
 
-The .xdata record is designed so that it is possible to fetch the first 8 bytes and compute the full size of the record, not including the length of the variable-sized exception data that follows. This code snippet computes the record size:
+The `.xdata` record is designed so that it is possible to fetch the first 8 bytes and compute the full size of the record, not including the length of the variable-sized exception data that follows. This code snippet computes the record size:
 
 ```cpp
-ULONG ComputeXdataSize(PULONG *Xdata)
+ULONG Comput`.xdata`Size(PULONG `.xdata`)
 {
     ULONG EpilogueScopes;
     ULONG Size;
     ULONG UnwindWords;
 
-    if ((Xdata[0] >> 23) != 0) {
+    if (`.xdata`[0] >> 23) != 0) {
         Size = 4;
-        EpilogueScopes = (Xdata[0] >> 23) & 0x1f;
-        UnwindWords = (Xdata[0] >> 28) & 0x0f;
+        EpilogueScopes = `.xdata`[0] >> 23) & 0x1f;
+        UnwindWords = `.xdata`[0] >> 28) & 0x0f;
     } else {
         Size = 8;
-        EpilogueScopes = Xdata[1] & 0xffff;
-        UnwindWords = (Xdata[1] >> 16) & 0xff;
+        EpilogueScopes =`.xdata`[1] & 0xffff;
+        UnwindWords = `.xdata`[1] >> 16) & 0xff;
     }
 
-    if (!(Xdata[0] & (1 << 21))) {
+    if (!`.xdata`[0] & (1 << 21))) {
         Size += 4 * EpilogueScopes;
     }
     Size += 4 * UnwindWords;
-    if (Xdata[0] & (1 << 20)) {
+    if `.xdata`[0] & (1 << 20)) {
         Size += 4;
     }
     return Size;
@@ -308,7 +309,7 @@ The unwind codes for the prologue must always be the first in the array. They ar
 
 ### Function Fragments
 
-For code optimization, it may be useful to split a function into discontiguous parts. When this is done, each function fragment requires its own separate .pdata—and possibly .xdata—record.
+For code optimization, it may be useful to split a function into discontiguous parts. When this is done, each function fragment requires its own separate `.pdata`—and possibly `.xdata`—record.
 
 Assuming that the function prologue is at the beginning of the function and can't be split, there are four function fragment cases:
 
@@ -320,21 +321,21 @@ Assuming that the function prologue is at the beginning of the function and can'
 
 - Epilogues only; prologue and possibly additional epilogues in other fragments.
 
-In the first case, only the prologue must be described. This can be done in compact .pdata form by describing the prologue normally and specifying a *Ret* value of 3 to indicate no epilogue. In the full .xdata form, this can be done by providing the prologue unwind codes at index 0 as usual, and specifying an epilogue count of 0.
+In the first case, only the prologue must be described. This can be done in compact `.pdata` form by describing the prologue normally and specifying a *`Ret`* value of 3 to indicate no epilogue. In the full `.xdata` form, this can be done by providing the prologue unwind codes at index 0 as usual, and specifying an epilogue count of 0.
 
-The second case is just like a normal function. If there's only one epilogue in the fragment, and it is at the end of the fragment, then a compact .pdata record can be used. Otherwise, a full .xdata record must be used. Keep in mind that the offsets specified for the epilogue start are relative to the start of the fragment, not the original start of the function.
+The second case is just like a normal function. If there's only one epilogue in the fragment, and it is at the end of the fragment, then a compact `.pdata` record can be used. Otherwise, a full `.xdata` record must be used. Keep in mind that the offsets specified for the epilogue start are relative to the start of the fragment, not the original start of the function.
 
 The third and fourth cases are variants of the first and second cases, respectively, except they don't contain a prologue. In these situations, it is assumed that there is code before the start of the epilogue and it is considered part of the body of the function, which would normally be unwound by undoing the effects of the prologue. These cases must therefore be encoded with a pseudo-prologue, which describes how to unwind from within the body, but which is treated as 0-length when determining whether to perform a partial unwind at the start of the fragment. Alternatively, this pseudo-prologue may be described by using the same unwind codes as the epilogue because they presumably perform equivalent operations.
 
-In the third and fourth cases, the presence of a pseudo-prologue is specified either by setting the *Flag* field of the compact .pdata record to 2, or by setting the *F* flag in the .xdata header to 1. In either case, the check for a partial prologue unwind is ignored, and all non-epilogue unwinds are considered to be full.
+In the third and fourth cases, the presence of a pseudo-prologue is specified either by setting the *`Flag`* field of the compact `.pdata` record to 2, or by setting the *F* flag in the `.xdata` header to 1. In either case, the check for a partial prologue unwind is ignored, and all non-epilogue unwinds are considered to be full.
 
 #### Large Functions
 
-Fragments can be used to describe functions larger than the 512 KB limit imposed by the bit fields in the .xdata header. To describe a very large function, just break it into fragments smaller than 512 KB. Each fragment should be adjusted so that it does not split an epilogue into multiple pieces.
+Fragments can be used to describe functions larger than the 512 KB limit imposed by the bit fields in the `.xdata` header. To describe a very large function, just break it into fragments smaller than 512 KB. Each fragment should be adjusted so that it does not split an epilogue into multiple pieces.
 
 Only the first fragment of the function contains a prologue; all other fragments are marked as having no prologue. Depending on the number of epilogues, each fragment may contain zero or more epilogues. Keep in mind that each epilogue scope in a fragment specifies its starting offset relative to the start of the fragment, not the start of the function.
 
-If a fragment has no prologue and no epilogue, it still requires its own .pdata—and possibly .xdata—record to describe how to unwind from within the body of the function.
+If a fragment has no prologue and no epilogue, it still requires its own `.pdata`—and possibly `.xdata`—record to describe how to unwind from within the body of the function.
 
 #### Shrink-wrapping
 
@@ -356,15 +357,15 @@ ShrinkWrappedFunction
 
 Shrink-wrapped functions are typically expected to pre-allocate the space for the extra register saves in the regular prologue, and then perform the register saves by using `str` or `stm` instead of `push`. This keeps all stack-pointer manipulation in the function's original prologue.
 
-The example shrink-wrapped function must be broken into three regions, which are marked as A, B, and C in the comments. The first A region covers the start of the function through the end of the additional non-volatile saves. A .pdata or .xdata record must be constructed to describe this fragment as having a prologue and no epilogues.
+The example shrink-wrapped function must be broken into three regions, which are marked as A, B, and C in the comments. The first A region covers the start of the function through the end of the additional non-volatile saves. A `.pdata` or `.xdata` record must be constructed to describe this fragment as having a prologue and no epilogues.
 
-The middle B region gets its own .pdata or .xdata record that describes a fragment that has no prologue and no epilogue. However, the unwind codes for this region must still be present because it's considered a function body. The codes must describe a composite prologue that represents both the original registers saved in the region-A prologue and the additional registers saved before entering region B, as if they were produced by one sequence of operations.
+The middle B region gets its own `.pdata` or `.xdata` record that describes a fragment that has no prologue and no epilogue. However, the unwind codes for this region must still be present because it's considered a function body. The codes must describe a composite prologue that represents both the original registers saved in the region-A prologue and the additional registers saved before entering region B, as if they were produced by one sequence of operations.
 
 The register saves for region B can't be considered as an "inner prologue" because the composite prologue described for region B must describe both the region-A prologue and the additional registers saved. If fragment B were described as having a prologue, the unwind codes would also imply the size of that prologue, and there is no way to describe the composite prologue in a way that maps one-to-one with the opcodes that only save the additional registers.
 
 The additional register saves must be considered part of region A, because until they are complete, the composite prologue does not accurately describe the state of the stack.
 
-The last C region gets its own .pdata or .xdata record, describing a fragment that has no prologue but does have an epilogue.
+The last C region gets its own `.pdata` or `.xdata` record, describing a fragment that has no prologue but does have an epilogue.
 
 An alternative approach can also work if the stack manipulation done before entering region B can be reduced to one instruction:
 
@@ -384,21 +385,21 @@ The key here is that on each instruction boundary, the stack is fully consistent
 
 ### Encoding Optimizations
 
-Due to the richness of the unwind codes and the ability to leverage compact and expanded forms of data, there are many opportunities to optimize the encoding to further reduce space. With aggressive use of these techniques, the net overhead of describing functions and fragments by using unwind codes can be quite minimal.
+Because of the richness of the unwind codes, and the ability to leverage compact and expanded forms of data, there are many opportunities to optimize the encoding to further reduce space. With aggressive use of these techniques, the net overhead of describing functions and fragments by using unwind codes can be minimized.
 
 The most important optimization is to be careful not to confuse prologue/epilogue boundaries for unwinding purposes with logical prologue/epilogue boundaries from a compiler perspective. The unwinding boundaries can be shrunk and made tighter to improve efficiency. For example, a prologue may contain code after the stack setup to perform additional verification checks. But once all the stack manipulation is complete, there is no need to encode further operations, and anything beyond that can be removed from the unwinding prologue.
 
-This same rule applies to the function length. If there is data—for example, a literal pool—that follows an epilogue in a function, it should not be included as part of the function length. By shrinking the function to just the code that is part of the function, the chances are much greater that the epilogue will be at the very end and a compact. pdata record can be used.
+This same rule applies to the function length. If there's data—for example, a literal pool—that follows an epilogue in a function, it shouldn't be included as part of the function length. By shrinking the function to just the code that's part of the function, the chances are much greater that the epilogue will be at the very end and a compact `.pdata` record can be used.
 
-In a prologue, once the stack pointer is saved to another register, there is typically no need to record any further opcodes. To unwind the function, the first thing that's done is to recover SP from the saved register, and so further operations do not have any impact on the unwind.
+In a prologue, once the stack pointer is saved to another register, there's typically no need to record any further opcodes. To unwind the function, the first thing that's done is to recover SP from the saved register, and so further operations don't have any impact on the unwind.
 
-Single-instruction epilogues do not have to be encoded at all, either as scopes or as unwind codes. If an unwind takes place before that instruction is executed, then it can be assumed to be from within the body of the function, and just executing the prologue unwind codes is sufficient. If the unwind takes place after the single instruction is executed, then by definition it takes place in another region.
+Single-instruction epilogues don't have to be encoded at all, either as scopes or as unwind codes. If an unwind takes place before that instruction is executed, then it can be assumed to be from within the body of the function; just executing the prologue unwind codes is sufficient. If the unwind takes place after the single instruction is executed, then by definition it takes place in another region.
 
-Multi-instruction epilogues do not have to encode the first instruction of the epilogue, for the same reason as the previous point: if the unwind takes place before that instruction executes, a full prologue unwind is sufficient. If the unwind takes place after that instruction, then only the subsequent operations have to be considered.
+Multi-instruction epilogues don't have to encode the first instruction of the epilogue, for the same reason as the previous point: if the unwind takes place before that instruction executes, a full prologue unwind is sufficient. If the unwind takes place after that instruction, then only the subsequent operations have to be considered.
 
-Unwind code re-use should be aggressive. The index specified by each epilogue scope points to an arbitrary starting point in the array of unwind codes. It does not have to point to the start of a previous sequence; it can point in the middle. The best approach here is to generate the desired code sequence and then scan for an exact byte match in the already-encoded pool of sequences and use any perfect match as a starting point for re-use.
+Unwind code reuse should be aggressive. The index specified by each epilogue scope points to an arbitrary starting point in the array of unwind codes. It does not have to point to the start of a previous sequence; it can point in the middle. The best approach here is to generate the desired code sequence and then scan for an exact byte match in the already-encoded pool of sequences. Use any perfect match as a starting point for reuse.
 
-If, after single-instruction epilogues are ignored, there are no remaining epilogues, consider using a compact .pdata form; it becomes much more likely in the absence of an epilogue.
+After single-instruction epilogues are ignored, if there are no remaining epilogues, consider using a compact `.pdata` form; it becomes much more likely in the absence of an epilogue.
 
 ## Examples
 
@@ -418,25 +419,25 @@ Epilogue:
 
 - Word 0
 
-  - *Function Start RVA* = 0x000535F8 (= 0x004535F8-0x00400000)
+  - *`Function Start RVA`* = 0x000535F8 (= 0x004535F8-0x00400000)
 
 - Word 1
 
-  - *Flag* = 1, indicating canonical prologue and epilogue formats
+  - *`Flag`* = 1, indicating canonical prologue and epilogue formats
 
-  - *Function Length* = 0x31 (= 0x62/2)
+  - *`Function Length`* = 0x31 (= 0x62/2)
 
-  - *Ret* = 1, indicating a 16-bit branch return
+  - *`Ret`* = 1, indicating a 16-bit branch return
 
-  - *H* = 0, indicating the parameters were not homed
+  - *`H`* = 0, indicating the parameters weren't homed
 
-  - *R*=0 and *Reg* = 1, indicating push/pop of r4-r5
+  - *`R`*=0 and *`Reg`* = 1, indicating push/pop of r4-r5
 
-  - *L* = 0, indicating no LR save/restore
+  - *`L`* = 0, indicating no LR save/restore
 
-  - *C* = 0, indicating no frame chaining
+  - *`C`* = 0, indicating no frame chaining
 
-  - *Stack Adjust* = 0, indicating no stack adjustment
+  - *`Stack Adjust`* = 0, indicating no stack adjustment
 
 ### Example 2: Nested Function with Local Allocation
 
@@ -453,25 +454,25 @@ Epilogue:
 
 - Word 0
 
-  - *Function Start RVA* = 0x000533AC (= 0x004533AC -0x00400000)
+  - *`Function Start RVA`* = 0x000533AC (= 0x004533AC -0x00400000)
 
 - Word 1
 
-  - *Flag* = 1, indicating canonical prologue and epilogue formats
+  - *`Flag`* = 1, indicating canonical prologue and epilogue formats
 
-  - *Function Length* = 0x35 (= 0x6A/2)
+  - *`Function Length`* = 0x35 (= 0x6A/2)
 
-  - *Ret* = 0, indicating a pop {pc} return
+  - *`Ret`* = 0, indicating a pop {pc} return
 
-  - *H* = 0, indicating the parameters were not homed
+  - *`H`* = 0, indicating the parameters weren't homed
 
-  - *R*=0 and *Reg* = 3, indicating push/pop of r4-r7
+  - *`R`*=0 and *`Reg`* = 3, indicating push/pop of r4-r7
 
-  - *L* = 1, indicating LR was saved/restored
+  - *`L`* = 1, indicating LR was saved/restored
 
-  - *C* = 0, indicating no frame chaining
+  - *`C`* = 0, indicating no frame chaining
 
-  - *Stack Adjust* = 3 (= 0x0C/4)
+  - *`Stack Adjust`* = 3 (= 0x0C/4)
 
 ### Example 3: Nested Variadic Function
 
@@ -488,25 +489,25 @@ Epilogue:
 
 - Word 0
 
-  - *Function Start RVA* = 0x00053988 (= 0x00453988-0x00400000)
+  - *`Function Start RVA`* = 0x00053988 (= 0x00453988-0x00400000)
 
 - Word 1
 
-  - *Flag* = 1, indicating canonical prologue and epilogue formats
+  - *`Flag`* = 1, indicating canonical prologue and epilogue formats
 
-  - *Function Length* = 0x2A (= 0x54/2)
+  - *`Function Length`* = 0x2A (= 0x54/2)
 
-  - *Ret* = 0, indicating a pop {pc}-style return (in this case an ldr pc,[sp],#0x14 return)
+  - *`Ret`* = 0, indicating a pop {pc}-style return (in this case an `ldr pc,[sp],#0x14` return)
 
-  - *H* = 1, indicating the parameters were homed
+  - *`H`* = 1, indicating the parameters were homed
 
-  - *R*=0 and *Reg* = 2, indicating push/pop of r4-r6
+  - *`R`*=0 and *`Reg`* = 2, indicating push/pop of r4-r6
 
-  - *L* = 1, indicating LR was saved/restored
+  - *`L`* = 1, indicating LR was saved/restored
 
-  - *C* = 0, indicating no frame chaining
+  - *`C`* = 0, indicating no frame chaining
 
-  - *Stack Adjust* = 0, indicating no stack adjustment
+  - *`Stack Adjust`* = 0, indicating no stack adjustment
 
 ### Example 4: Function with Multiple Epilogues
 
@@ -534,25 +535,25 @@ Epilogues:
 
 - Word 0
 
-  - *Function Start RVA* = 0x000592F4 (= 0x004592F4-0x00400000)
+  - *`Function Start RVA`* = 0x000592F4 (= 0x004592F4-0x00400000)
 
 - Word 1
 
-  - *Flag* = 0, indicating .xdata record present (required due to multiple epilogues)
+  - *`Flag`* = 0, indicating `.xdata` record present (required for multiple epilogues)
 
-  - *.xdata address* - 0x00400000
+  - *`.xdata` address* - 0x00400000
 
-.xdata (variable, 6 words):
+`.xdata` (variable, 6 words):
 
 - Word 0
 
-  - *Function Length* = 0x0001A3 (= 0x000346/2)
+  - *`Function Length`* = 0x0001A3 (= 0x000346/2)
 
-  - *Vers* = 0, indicating the first version of xdata
+  - *Vers* = 0, indicating the first version of`.xdata`
 
   - *X* = 0, indicating no exception data
 
-  - *E* = 0, indicating a list of epilogue scopes
+  - *`E`* = 0, indicating a list of epilogue scopes
 
   - *F* = 0, indicating a full function description, including prologue
 
@@ -594,25 +595,25 @@ Epilogue:
 
 - Word 0
 
-  - *Function Start RVA* = 0x00085A20 (= 0x00485A20-0x00400000)
+  - *`Function Start RVA`* = 0x00085A20 (= 0x00485A20-0x00400000)
 
 - Word 1
 
-  - *Flag* = 0, indicating .xdata record present (needed due to multiple epilogues)
+  - *`Flag`* = 0, indicating `.xdata` record present (needed for multiple epilogues)
 
-  - *.xdata address* - 0x00400000
+  - *`.xdata` address* - 0x00400000
 
-.xdata (variable, 3 words):
+`.xdata` (variable, 3 words):
 
 - Word 0
 
-  - *Function Length* = 0x0001A3 (= 0x000346/2)
+  - *`Function Length`* = 0x0001A3 (= 0x000346/2)
 
-  - *Vers* = 0, indicating the first version of xdata
+  - *Vers* = 0, indicating the first version of`.xdata`
 
   - *X* = 0, indicating no exception data
 
-  - *E* = 0, indicating a list of epilogue scopes
+  - *`E`* = 0, indicating a list of epilogue scopes
 
   - *F* = 0, indicating a full function description, including prologue
 
@@ -652,25 +653,25 @@ Epilogue:
 
 - Word 0
 
-  - *Function Start RVA* = 0x00088C24 (= 0x00488C24-0x00400000)
+  - *`Function Start RVA`* = 0x00088C24 (= 0x00488C24-0x00400000)
 
 - Word 1
 
-  - *Flag* = 0, indicating .xdata record present (needed due to multiple epilogues)
+  - *`Flag`* = 0, indicating `.xdata` record present (needed for multiple epilogues)
 
-  - *.xdata address* - 0x00400000
+  - *`.xdata` address* - 0x00400000
 
-.xdata (variable, 5 words):
+`.xdata` (variable, 5 words):
 
 - Word 0
 
-  - *Function Length* =0x000027 (= 0x00004E/2)
+  - *`Function Length`* =0x000027 (= 0x00004E/2)
 
-  - *Vers* = 0, indicating the first version of xdata
+  - *Vers* = 0, indicating the first version of`.xdata`
 
   - *X* = 1, indicating exception data present
 
-  - *E* = 1, indicating a single epilogue
+  - *`E`* = 1, indicating a single epilogue
 
   - *F* = 0, indicating a full function description, including prologue
 
@@ -711,25 +712,25 @@ Function:
 
 - Word 0
 
-  - *Function Start RVA* = 0x00088C72 (= 0x00488C72-0x00400000)
+  - *`Function Start RVA`* = 0x00088C72 (= 0x00488C72-0x00400000)
 
 - Word 1
 
-  - *Flag* = 1, indicating canonical prologue and epilogue formats
+  - *`Flag`* = 1, indicating canonical prologue and epilogue formats
 
-  - *Function Length* = 0x0B (= 0x16/2)
+  - *`Function Length`* = 0x0B (= 0x16/2)
 
-  - *Ret* = 0, indicating a pop {pc} return
+  - *`Ret`* = 0, indicating a pop {pc} return
 
-  - *H* = 0, indicating the parameters were not homed
+  - *`H`* = 0, indicating the parameters weren't homed
 
-  - *R*=0 and *Reg* = 7, indicating no registers were saved/restored
+  - *`R`*=0 and *`Reg`* = 7, indicating no registers were saved/restored
 
-  - *L* = 1, indicating LR was saved/restored
+  - *`L`* = 1, indicating LR was saved/restored
 
-  - *C* = 0, indicating no frame chaining
+  - *`C`* = 0, indicating no frame chaining
 
-  - *Stack Adjust* = 1, indicating a 1 × 4 byte stack adjustment
+  - *`Stack Adjust`* = 1, indicating a 1 × 4 byte stack adjustment
 
 ## See also
 

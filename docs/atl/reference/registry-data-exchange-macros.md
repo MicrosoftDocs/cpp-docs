@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Registry Data Exchange Macros"
 title: "Registry Data Exchange Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlplus/ATL::BEGIN_RDX_MAP", "atlplus/ATL::END_RDX_MAP", "atlplus/ATL::RDX_BINARY", "atlplus/ATL::RDX_CSTRING_TEXT", "atlplus/ATL::RDX_DWORD", "atlplus/ATL::RDX_TEXT"]

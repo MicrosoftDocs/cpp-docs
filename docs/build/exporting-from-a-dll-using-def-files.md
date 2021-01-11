@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exporting from a DLL Using DEF Files"
 title: "Exporting from a DLL Using DEF Files"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["def files [C++], exporting from DLLs", ".def files [C++], exporting from DLLs", "exporting DLLs [C++], DEF files"]

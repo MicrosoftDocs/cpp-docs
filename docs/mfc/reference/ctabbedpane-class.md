@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTabbedPane Class"
 title: "CTabbedPane Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTabbedPane", "AFXTABBEDPANE/CTabbedPane", "AFXTABBEDPANE/CTabbedPane::DetachPane", "AFXTABBEDPANE/CTabbedPane::EnableTabAutoColor", "AFXTABBEDPANE/CTabbedPane::FloatTab", "AFXTABBEDPANE/CTabbedPane::GetTabArea", "AFXTABBEDPANE/CTabbedPane::GetTabWnd", "AFXTABBEDPANE/CTabbedPane::HasAutoHideMode", "AFXTABBEDPANE/CTabbedPane::IsTabLocationBottom", "AFXTABBEDPANE/CTabbedPane::ResetTabs", "AFXTABBEDPANE/CTabbedPane::SetTabAutoColors", "AFXTABBEDPANE/CTabbedPane::m_bTabsAlwaysTop", "AFXTABBEDPANE/CTabbedPane::m_pTabWndRTC"]

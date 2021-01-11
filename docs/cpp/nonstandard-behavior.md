@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Nonstandard Behavior"
 title: "Nonstandard Behavior"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["compatibility and compliance, nonstandard behavior", "Microsoft-specific, compiler behavior", "nonstandard behavior, compliance and compatibility"]

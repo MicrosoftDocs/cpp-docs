@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: algorithm (STL/CLR)"
 title: "algorithm (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

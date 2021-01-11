@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /GF (Eliminate Duplicate Strings)"
 title: "/GF (Eliminate Duplicate Strings)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.StringPooling", "VC.Project.VCCLWCECompilerTool.StringPooling", "/gf"]

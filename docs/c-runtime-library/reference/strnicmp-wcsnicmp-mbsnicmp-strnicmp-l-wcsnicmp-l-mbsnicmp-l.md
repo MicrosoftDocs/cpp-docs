@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l"
 title: "_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l"
 ms.date: "4/2/2020"
 api_name: ["_wcsnicmp", "_strnicmp_l", "_wcsnicmp_l", "_strnicmp", "_mbsnicmp", "_mbsnicmp_l", "_o__mbsnicmp", "_o__mbsnicmp_l", "_o__strnicmp", "_o__strnicmp_l", "_o__wcsnicmp", "_o__wcsnicmp_l"]

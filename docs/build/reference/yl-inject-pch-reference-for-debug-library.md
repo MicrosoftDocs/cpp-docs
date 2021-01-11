@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Yl (Inject PCH Reference for Debug Library)"
 title: "/Yl (Inject PCH Reference for Debug Library)"
 ms.date: "01/29/2018"
 f1_keywords: ["/yl"]

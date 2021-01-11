@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cvt/wstring&gt;"
 title: "&lt;cvt-wstring&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["stdext.cvt.<cvt/wstring>", "<cvt/wstring>", "stdext::cvt::<cvt/wstring>"]

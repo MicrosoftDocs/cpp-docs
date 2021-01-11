@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Last Character in a String"
 title: "Last Character in a String"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["last character in string", "MBCS [C++], last character in string"]

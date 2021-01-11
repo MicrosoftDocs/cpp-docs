@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Executing a Program in Preprocessing"
 title: "Executing a Program in Preprocessing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["program execution [C++]"]

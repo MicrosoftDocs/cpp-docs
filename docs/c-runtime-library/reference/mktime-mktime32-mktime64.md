@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: mktime, _mktime32, _mktime64"
 title: "mktime, _mktime32, _mktime64"
 ms.date: "4/2/2020"
 api_name: ["_mktime32", "mktime", "_mktime64", "_o__mktime32", "_o__mktime64"]

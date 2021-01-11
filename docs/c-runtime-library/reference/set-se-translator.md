@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _set_se_translator"
 title: "_set_se_translator"
 ms.date: "02/21/2018"
 api_name: ["_set_se_translator"]

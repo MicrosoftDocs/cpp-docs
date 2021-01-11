@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Active Document Containment"
 title: "Active Document Containment"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["active documents [MFC], containers", "containers [MFC], active document", "MFC, COM support", "active document containers [MFC], about active document containers", "MFC COM, active document containment"]

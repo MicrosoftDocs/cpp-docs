@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Demotion of Integers"
 title: "Demotion of Integers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["demoting integers"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Explicit Type Conversion Operator: ()"
 title: "Explicit Type Conversion Operator: ()"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["explicit data type conversion operator", "conversions [C++], explicit", "operators [C++], explicit type conversion", "data type conversion [C++], explicit", "type conversion [C++], explicit conversions"]

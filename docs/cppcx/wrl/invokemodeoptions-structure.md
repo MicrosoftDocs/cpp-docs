@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: InvokeModeOptions Structure"
 title: "InvokeModeOptions Structure"
 ms.date: "03/22/2018"
 ms.topic: "reference"

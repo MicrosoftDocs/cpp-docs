@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HTML Basics"
 title: "HTML Basics"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HTML [MFC], about HTML"]

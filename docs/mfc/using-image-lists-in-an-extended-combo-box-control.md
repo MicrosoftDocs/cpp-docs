@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Image Lists in an Extended Combo Box Control"
 title: "Using Image Lists in an Extended Combo Box Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["image lists [MFC], combo boxes", "extended combo boxes [MFC], images", "images [MFC], combo box items"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exporting from a DLL"
 title: "Exporting from a DLL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exporting DLLs [C++], about exporting from DLLs", "exporting functions [C++], DLLs (exporting from)", "exporting DLLs [C++]", "DLLs [C++], exporting from", "DLL exports [C++]", "functions [C++], exporting", "exports table [C++]"]

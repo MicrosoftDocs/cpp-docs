@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Idle Loop Processing"
 title: "Idle Loop Processing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, background processing", "PeekMessage method [MFC], elsewhere than message loop", "PeekMessage method [MFC]", "MFC, messages", "messages [MFC], loops", "OnIdle method [MFC]", "processing [MFC], background", "idle loop processing [MFC]", "idle processing [MFC]", "threading [MFC], alternatives to multithreading", "processing, during idle loop", "processing [MFC]", "background processing [MFC]"]

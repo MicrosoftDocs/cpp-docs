@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Predefined Symbol IDs"
 title: "Predefined Symbol IDs"
 ms.date: "02/14/2019"
 helpviewer_keywords: ["symbols [C++], predefined IDs", "predefined symbol IDs"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a C++ Project from Existing Code"
 title: "How to: Create a C++ Project from Existing Code"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["C++, creating projects from existing code", "Create New Project From Existing Code Files Wizard, project settings"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Double Thunking (C++)"
 title: "Double Thunking (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["double thunks", "interop [C++], double thunking", "mixed assemblies [C++], double thunking", "/clr compiler option [C++], double thunking", "interoperability [C++], double thunking"]

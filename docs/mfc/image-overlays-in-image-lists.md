@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Image Overlays in Image Lists"
 title: "Image Overlays in Image Lists"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["overlays [MFC]", "image lists [MFC], image overlays in", "CImageList class [MFC], image overlays in"]

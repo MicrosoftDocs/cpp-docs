@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _interlockedbittestandreset intrinsic functions"
 title: "_interlockedbittestandreset intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_interlockedbittestandreset_rel", "_interlockedbittestandreset64", "_interlockedbittestandreset64_acq", "_interlockedbittestandreset64_nf", "_interlockedbittestandreset64_rel", "_interlockedbittestandreset64_HLERelease", "_interlockedbittestandreset_HLERelease", "_interlockedbittestandreset_HLEAcquire", "_interlockedbittestandreset_acq", "_interlockedbittestandreset_cpp", "_interlockedbittestandreset_nf", "_interlockedbittestandreset64_cpp", "_interlockedbittestandreset64_HLEAcquire", "_interlockedbittestandreset"]

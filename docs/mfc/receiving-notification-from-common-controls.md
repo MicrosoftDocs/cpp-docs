@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Receiving Notification from Common Controls"
 title: "Receiving Notification from Common Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OnNotify method [MFC]", "common controls [MFC], notifications", "ON_NOTIFY macro [MFC]", "controls [MFC], notifications", "receiving notifications from common controls", "notifications [MFC], common controls", "Windows common controls [MFC], notifications", "WM_NOTIFY message"]

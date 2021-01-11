@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DHTML Editing Command Maps"
 title: "DHTML Editing Command Maps"
 ms.date: "11/04/2016"
 ms.assetid: c1b49876-039e-4a26-bb24-ea98ccf254a1

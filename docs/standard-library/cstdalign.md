@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cstdalign&gt;"
 title: "&lt;cstdalign&gt;"
 ms.date: "07/11/2019"
 f1_keywords: ["<cstdalign>", "cstdalign", "__alignas_is_defined", "__alignof_is_defined"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Win32 Internet Classes"
 title: "Win32 Internet Classes"
 ms.date: "09/12/2018"
 f1_keywords: ["vc.classes.win32"]

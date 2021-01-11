@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: goto and Labeled Statements (C)"
 title: "goto and Labeled Statements (C)"
 ms.date: "11/04/2016"
 f1_keywords: ["goto"]

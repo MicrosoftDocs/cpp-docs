@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Write a parallel_for_each Loop"
 title: "How to: Write a parallel_for_each Loop"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["writing a parallel_for_each loop [Concurrency Runtime]", "parallel_for_each function, example"]

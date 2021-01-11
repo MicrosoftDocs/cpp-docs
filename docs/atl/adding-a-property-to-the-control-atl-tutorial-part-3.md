@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding a Property to the Control (ATL Tutorial, Part 3)"
 title: "Adding a Property to the Control (ATL Tutorial, Part 3)"
 ms.custom: "get-started-article"
 ms.date: "09/26/2018"

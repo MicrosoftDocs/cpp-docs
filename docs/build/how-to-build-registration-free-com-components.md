@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Build Registration-Free COM Components"
 title: "How to: Build Registration-Free COM Components"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["COM components, registration-free"]

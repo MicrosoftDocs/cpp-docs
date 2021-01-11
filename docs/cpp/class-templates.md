@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Class Templates"
 title: "Class Templates"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["classes [C++], operating on type", "class templates", "templates, class templates"]

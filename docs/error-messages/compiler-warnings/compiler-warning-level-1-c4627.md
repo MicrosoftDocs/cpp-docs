@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4627"
 title: "Compiler Warning (level 1) C4627"
 ms.date: "09/09/2018"
 f1_keywords: ["C4627"]

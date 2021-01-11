@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3187"
 title: "Compiler Error C3187"
 ms.date: "11/04/2016"
 f1_keywords: ["C3187"]

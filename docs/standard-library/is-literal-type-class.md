@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_literal_type Class"
 title: "is_literal_type Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_literal_type"]

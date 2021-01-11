@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .CONTINUE (32-bit MASM)"
 title: ".CONTINUE"
 ms.date: "11/05/2019"
 f1_keywords: [".CONTINUE"]

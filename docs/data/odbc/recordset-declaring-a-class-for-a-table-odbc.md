@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Declaring a Class for a Table (ODBC)"
 title: "Recordset: Declaring a Class for a Table (ODBC)"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["ODBC recordsets, declaring class for tables", "recordsets, declaring classes for tables"]

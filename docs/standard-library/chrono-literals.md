@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: chrono literals"
 title: "chrono literals"
 ms.date: "11/04/2016"
 ms.assetid: 1a9e23b1-256f-4570-8226-5fa7364fb032

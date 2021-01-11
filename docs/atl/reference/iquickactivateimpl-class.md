@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IQuickActivateImpl Class"
 title: "IQuickActivateImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IQuickActivateImpl", "ATLCTL/ATL::IQuickActivateImpl", "ATLCTL/ATL::IQuickActivateImpl::GetContentExtent", "ATLCTL/ATL::IQuickActivateImpl::QuickActivate", "ATLCTL/ATL::IQuickActivateImpl::SetContentExtent"]

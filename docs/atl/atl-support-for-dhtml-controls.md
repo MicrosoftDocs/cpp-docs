@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Support for DHTML Controls"
 title: "ATL Support for DHTML Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HTML controls, ATL support", "DHTML controls, ATL support", "DHTML controls"]

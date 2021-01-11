@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::String Class"
 title: "Platform::String Class"
 ms.date: "10/16/2019"
 ms.topic: "reference"

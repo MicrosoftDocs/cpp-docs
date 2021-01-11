@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CKeyFrame Class"
 title: "CKeyFrame Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CKeyFrame", "AFXANIMATIONCONTROLLER/CKeyFrame", "AFXANIMATIONCONTROLLER/CKeyFrame::CKeyFrame", "AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboard", "AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboardAfterTransition", "AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboardAtOffset", "AFXANIMATIONCONTROLLER/CKeyFrame::GetExistingKeyframe", "AFXANIMATIONCONTROLLER/CKeyFrame::GetOffset", "AFXANIMATIONCONTROLLER/CKeyFrame::GetTransition", "AFXANIMATIONCONTROLLER/CKeyFrame::m_offset", "AFXANIMATIONCONTROLLER/CKeyFrame::m_pExistingKeyFrame", "AFXANIMATIONCONTROLLER/CKeyFrame::m_pTransition"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fisher_f_distribution Class"
 title: "fisher_f_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::fisher_f_distribution", "random/std::fisher_f_distribution::reset", "random/std::fisher_f_distribution::m", "random/std::fisher_f_distribution::n", "random/std::fisher_f_distribution::param", "random/std::fisher_f_distribution::min", "random/std::fisher_f_distribution::max", "random/std::fisher_f_distribution::operator()", "random/std::fisher_f_distribution::param_type", "random/std::fisher_f_distribution::param_type::m", "random/std::fisher_f_distribution::param_type::n", "random/std::fisher_f_distribution::param_type::operator==", "random/std::fisher_f_distribution::param_type::operator!="]

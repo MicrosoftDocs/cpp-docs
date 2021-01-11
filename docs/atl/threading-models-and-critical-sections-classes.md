@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Threading Models and Critical Sections Classes"
 title: "Threading Models and Critical Sections Classes (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, critical sections", "ATL, multithreading", "threading [ATL], models", "critical sections"]

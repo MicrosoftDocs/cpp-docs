@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cstring&gt;"
 title: "&lt;cstring&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<cstring>"]

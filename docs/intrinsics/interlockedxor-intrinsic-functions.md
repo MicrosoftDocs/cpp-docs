@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _InterlockedXor intrinsic functions"
 title: "_InterlockedXor intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedXor_nf", "_InterlockedXor_np", "_InterlockedXor64_HLERelease", "_InterlockedXor8_acq", "_InterlockedXor64_acq", "_InterlockedXor64_rel", "_InterlockedXor64_nf", "_InterlockedXor_acq", "_InterlockedXor16", "_InterlockedXor64_np", "_InterlockedXor64", "_InterlockedXor_HLEAcquire", "_InterlockedXor_HLERelease", "_InterlockedXor_cpp", "_InterlockedXor16_rel", "_InterlockedXor8_rel", "_InterlockedXor8", "_InterlockedXor64_HLEAcquire", "_InterlockedXor16_nf", "_InterlockedXor16_acq", "_InterlockedXor16_np", "_InterlockedXor8_fn", "_InterlockedXor8_np", "_InterlockedXor64_cpp", "_InterlockedXor_rel", "_InterlockedXor"]

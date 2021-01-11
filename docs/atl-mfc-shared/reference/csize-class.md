@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSize Class"
 title: "CSize Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CSize", "ATLTYPES/ATL::CSize", "ATLTYPES/ATL::CSize::CSize"]

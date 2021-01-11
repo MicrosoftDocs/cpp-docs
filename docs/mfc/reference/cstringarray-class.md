@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CStringArray Class"
 title: "CStringArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStringArray", "AFXCOLL/CStringArray", "AFXCOLL/CStringArray::CStringArray", "AFXCOLL/CStringArray::Add", "AFXCOLL/CStringArray::Append", "AFXCOLL/CStringArray::Copy", "AFXCOLL/CStringArray::ElementAt", "AFXCOLL/CStringArray::FreeExtra", "AFXCOLL/CStringArray::GetAt", "AFXCOLL/CStringArray::GetCount", "AFXCOLL/CStringArray::GetData", "AFXCOLL/CStringArray::GetSize", "AFXCOLL/CStringArray::GetUpperBound", "AFXCOLL/CStringArray::InsertAt", "AFXCOLL/CStringArray::IsEmpty", "AFXCOLL/CStringArray::RemoveAll", "AFXCOLL/CStringArray::RemoveAt", "AFXCOLL/CStringArray::SetAt", "AFXCOLL/CStringArray::SetAtGrow", "AFXCOLL/CStringArray::SetSize"]

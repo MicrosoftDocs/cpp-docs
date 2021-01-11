@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CReversalTransition Class"
 title: "CReversalTransition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CReversalTransition", "AFXANIMATIONCONTROLLER/CReversalTransition", "AFXANIMATIONCONTROLLER/CReversalTransition::CReversalTransition", "AFXANIMATIONCONTROLLER/CReversalTransition::Create", "AFXANIMATIONCONTROLLER/CReversalTransition::m_duration"]

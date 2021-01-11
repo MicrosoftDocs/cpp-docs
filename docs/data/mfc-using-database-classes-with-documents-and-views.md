@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC: Using Database Classes with Documents and Views"
 title: "MFC: Using Database Classes with Documents and Views"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["documents [C++], database applications", "recordsets [C++], documents and views", "CRecordView class, using in database forms", "views [C++], database applications", "forms [C++], database applications", "record views [C++], form-based applications", "document/view architecture [C++], in databases", "database applications [C++], forms", "database classes [C++], MFC", "ODBC recordsets [C++], documents and views", "ODBC [C++], forms"]

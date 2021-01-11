@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2512"
 title: "Compiler Error C2512"
 ms.date: "02/09/2018"
 f1_keywords: ["C2512"]

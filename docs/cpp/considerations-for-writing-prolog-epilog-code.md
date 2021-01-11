@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Considerations for Writing Prolog/Epilog Code"
 title: "Considerations for Writing Prolog-Epilog Code"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["stack frame layout", "prolog code", "epilog code", "__LOCAL_SIZE constant", "stack, stack frame layout"]

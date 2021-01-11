@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Profile-Guided Optimization errors and warnings (PGxxxx)"
 title: "Profile-Guided Optimization errors and warnings"
 ms.date: "04/17/2019"
 f1_keywords: ["PG0001", "PG0002", "PG0003", "PG0061", "PG0062", "PG0063", "PG0065", "PG0066", "PG0067", "PG0068", "PG0069", "PG0070", "PG0071", "PG0081", "PG0087", "PG0090", "PG0091", "PG0092", "PG0094", "PG0096", "PG0168", "PG0169", "PG0181", "PG0188", "PG1000", "PG1001", "PG1032", "PG1033", "PG1035", "PG1036", "PG1038", "PG1051", "PG1052", "PG1053", "PG1056", "PG1058", "PG1060", "PG1061", "PG1065", "PG1066", "PG1067"]

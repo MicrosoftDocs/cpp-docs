@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAutoRevertImpersonation Class"
 title: "CAutoRevertImpersonation Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation::CAutoRevertImpersonation", "ATLSECURITY/ATL::CAutoRevertImpersonation::Attach", "ATLSECURITY/ATL::CAutoRevertImpersonation::Detach", "ATLSECURITY/ATL::CAutoRevertImpersonation::GetAccessToken"]

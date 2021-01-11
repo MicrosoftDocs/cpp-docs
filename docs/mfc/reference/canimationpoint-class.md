@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAnimationPoint Class"
 title: "CAnimationPoint Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationPoint", "AFXANIMATIONCONTROLLER/CAnimationPoint", "AFXANIMATIONCONTROLLER/CAnimationPoint::CAnimationPoint", "AFXANIMATIONCONTROLLER/CAnimationPoint::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetX", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetY", "AFXANIMATIONCONTROLLER/CAnimationPoint::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationPoint::m_xValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::m_yValue"]

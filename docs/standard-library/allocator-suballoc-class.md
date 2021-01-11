@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: allocator_suballoc Class"
 title: "allocator_suballoc Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::allocators::allocator_suballoc", "allocators/stdext::allocator_suballoc"]

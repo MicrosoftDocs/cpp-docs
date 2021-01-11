@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reference Counting"
 title: "Reference Counting (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["AddRef method [C++], reference counting", "reference counting", "AddRef method [C++]", "reference counts", "references, counting"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: static_partitioner Class"
 title: "static_partitioner Class"
 ms.date: "11/04/2016"
 f1_keywords: ["static_partitioner", "PPL/concurrency::static_partitioner", "PPL/concurrency::static_partitioner::static_partitioner"]

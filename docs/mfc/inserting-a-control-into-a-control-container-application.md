@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActiveX Control Containers: Inserting a Control into a Control Container Application"
 title: "ActiveX Control Containers: Inserting a Control into a Control Container Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ActiveX control containers [MFC], inserting controls", "ActiveX controls [MFC], adding to projects"]

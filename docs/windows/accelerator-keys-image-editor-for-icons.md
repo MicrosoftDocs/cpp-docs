@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accelerator Keys (C++ Image Editor for Icons)"
 title: "Accelerator Keys (C++ Image Editor for Icons)"
 ms.date: "02/15/2019"
 helpviewer_keywords: ["accelerator keys", "Image editor [C++], accelerator keys"]

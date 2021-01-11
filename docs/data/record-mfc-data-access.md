@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Record (MFC Data Access)"
 title: "Record (MFC Data Access)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["databases [C++], records", "records [C++]", "records [C++], database"]

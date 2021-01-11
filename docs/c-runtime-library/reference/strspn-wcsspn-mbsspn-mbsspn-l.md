@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strspn, wcsspn, _mbsspn, _mbsspn_l"
 title: "strspn, wcsspn, _mbsspn, _mbsspn_l"
 ms.date: "4/2/2020"
 api_name: ["_mbsspn_l", "wcsspn", "strspn", "_mbsspn", "_o__mbsspn", "_o__mbsspn_l"]

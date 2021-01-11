@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2316"
 title: "Compiler Error C2316"
 ms.date: "07/08/2019"
 f1_keywords: ["C2316"]

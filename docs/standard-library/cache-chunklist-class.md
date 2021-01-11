@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cache_chunklist Class"
 title: "cache_chunklist Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::cache_chunklist", "allocators/stdext::cache_chunklist::allocate", "allocators/stdext::cache_chunklist::deallocate"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: sequenced_policy Class"
 title: "sequenced_policy Class"
 ms.date: "04/18/2019"
 f1_keywords: ["execution/std::execution::sequenced_policy"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Storage and Alignment of Structures"
 title: "Storage and Alignment of Structures"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["alignment of structures", "structure storage", "storing structures", "packing structures"]

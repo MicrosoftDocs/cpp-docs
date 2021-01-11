@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Win32ThreadTraits Class"
 title: "Win32ThreadTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["Win32ThreadTraits", "ATLBASE/ATL::Win32ThreadTraits", "ATLBASE/ATL::Win32ThreadTraits::CreateThread"]

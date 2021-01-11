@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Stream States"
 title: "Stream States"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["streams, states"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Use Database Forms (Record Views) with ODBC"
 title: "Use Database Forms (Record Views) with ODBC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC, record views", "record views, ODBC"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Example: Displaying a Dialog Box via a Menu Command"
 title: "Example: Displaying a Dialog Box via a Menu Command"
 ms.date: "09/07/2019"
 helpviewer_keywords: ["MFC dialog boxes [MFC], examples", "MFC dialog boxes [MFC], displaying", "modeless dialog boxes [MFC], displaying", "dialog boxes [MFC], MFC", "modal dialog boxes [MFC], displaying", "examples [MFC], dialog boxes", "menu items [MFC], examples"]

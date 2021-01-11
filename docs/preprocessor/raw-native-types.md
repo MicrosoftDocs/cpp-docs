@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: raw_native_types import attribute"
 title: "raw_native_types import attribute"
 ms.date: "08/29/2019"
 f1_keywords: ["raw_native_types"]

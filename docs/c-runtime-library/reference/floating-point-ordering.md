@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered"
 title: "isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered"
 ms.date: "01/31/2019"
 f1_keywords: ["isgreater", "math/isgreater", "isgreaterequal", "math/isgreaterequal", "isless", "math/isless", "islessequal", "math/islessequal", "islessgreater", "math/islessgreater", "isunordered", "math/isunordered"]

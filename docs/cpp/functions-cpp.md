@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Functions (C++)"
 title: "Functions (C++)"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["defaults, arguments", "function definitions", "function definitions, about function definitions", "default arguments", "declarators, functions"]

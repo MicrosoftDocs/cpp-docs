@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Calling Example: Function Prototype and Call"
 title: "Calling Example: Function Prototype and Call"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["calling conventions, examples [C++]", "examples [C++], calling conventions"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions: Catching and Deleting Exceptions"
 title: "Exceptions: Catching and Deleting Exceptions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exceptions [MFC], deleting", "AND_CATCH macro [MFC]", "try-catch exception handling [MFC], catching and deleting exceptions", "exception handling [MFC], catching and deleting exceptions", "catch blocks [MFC], catching and deleting exceptions", "execution [MFC], returns from within catch block"]

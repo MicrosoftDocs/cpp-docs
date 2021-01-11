@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating the Provider"
 title: "Creating the Provider"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB providers, creating"]

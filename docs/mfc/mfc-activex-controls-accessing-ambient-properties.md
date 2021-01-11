@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Accessing Ambient Properties"
 title: "MFC ActiveX Controls: Accessing Ambient Properties"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], accessing ambient properties", "properties [MFC], accessing ambient"]

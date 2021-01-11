@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add a method"
 title: "Add a method"
 ms.date: "11/09/2018"
 f1_keywords: ["vc.codewiz.method.overview", "vc.codewiz.method.idlattrib"]

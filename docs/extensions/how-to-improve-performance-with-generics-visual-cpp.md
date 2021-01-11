@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Improve Performance with Generics (C++/CLI)"
 title: "How to: Improve Performance with Generics (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

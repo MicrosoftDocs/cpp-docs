@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDocItem Class"
 title: "CDocItem Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDocItem", "AFXOLE/CDocItem", "AFXOLE/CDocItem::GetDocument", "AFXOLE/CDocItem::IsBlank"]

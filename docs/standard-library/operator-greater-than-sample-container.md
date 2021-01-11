@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator&gt; (&lt;sample container&gt;)"
 title: "operator&gt; (&lt;sample container&gt;)"
 ms.date: "11/04/2016"
 f1_keywords: ["std::operator>", "operator>", "std::>", ">"]

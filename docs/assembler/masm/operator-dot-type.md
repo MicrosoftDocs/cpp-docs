@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator .TYPE"
 title: "operator .TYPE"
 ms.date: "12/17/2019"
 f1_keywords: [".TYPE", "operator .TYPE"]

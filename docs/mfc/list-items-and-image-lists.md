@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: List Items and Image Lists"
 title: "List Items and Image Lists"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CImageList class [MFC], and list items", "image lists [MFC], list items", "CListCtrl class [MFC], image lists", "list items [MFC], image lists"]

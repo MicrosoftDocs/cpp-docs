@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l"
 title: "_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l"
 ms.date: "4/2/2020"
 api_name: ["_strlwr_l", "_strlwr", "_wcslwr_l", "_mbslwr_l", "_wcslwr", "_mbslwr", "_o__mbslwr", "_o__mbslwr_l", "_o__strlwr", "_o__strlwr_l", "_o__wcslwr", "_o__wcslwr_l"]

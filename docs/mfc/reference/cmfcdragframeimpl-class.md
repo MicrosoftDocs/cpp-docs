@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCDragFrameImpl Class"
 title: "CMFCDragFrameImpl Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CMFCDragFrameImpl"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Commands and Tables"
 title: "Commands and Tables"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["OLE DB consumer templates, table support", "CCommand class, OLE DB consumer templates", "commands [C++], OLE DB Consumer Templates", "CTable class", "CAccessorRowset class, command and table classes", "rowsets, accessing", "tables [C++], OLE DB Consumer Templates", "OLE DB consumer templates, command support"]

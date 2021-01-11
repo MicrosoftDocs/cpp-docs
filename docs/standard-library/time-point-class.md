@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: time_point Class"
 title: "time_point Class"
 ms.date: "03/27/2019"
 f1_keywords: ["chrono/std::chrono::time_point", "chrono/std::chrono::time_point::time_point", "chrono/std::chrono::time_point::max", "chrono/std::chrono::time_point::min", "chrono/std::chrono::time_point::time_since_epoch"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: less Struct"
 title: "less Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::less"]

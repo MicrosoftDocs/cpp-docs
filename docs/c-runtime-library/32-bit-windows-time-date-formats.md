@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 32-Bit Windows Time/Date Formats"
 title: "32-Bit Windows Time-Date Formats"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.time"]

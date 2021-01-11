@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Conditional-Expression Operator"
 title: "Conditional-Expression Operator"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["conditional operators", "operators [C++], conditional", "expressions [C++], conditional"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: static Storage-Class Specifier"
 title: "static Storage-Class Specifier"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["static variables, specifier", "storage classes, static", "static storage class specifiers"]

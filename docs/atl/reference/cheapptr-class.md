@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CHeapPtr Class"
 title: "CHeapPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHeapPtr", "ATLCORE/ATL::CHeapPtr", "ATLCORE/ATL::CHeapPtr::CHeapPtr", "ATLCORE/ATL::CHeapPtr::Allocate", "ATLCORE/ATL::CHeapPtr::Reallocate"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Additive Operators"
 title: "C Additive Operators"
 ms.date: "10/18/2018"
 helpviewer_keywords: ["usual arithmetic conversions", "operators [C], addition", "+ operator, additive operators", "additive operators", "arithmetic operators [C++], additive operators"]

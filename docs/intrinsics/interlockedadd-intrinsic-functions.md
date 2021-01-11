@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _InterlockedAdd intrinsic functions"
 title: "_InterlockedAdd intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedAdd64_acq_cpp", "_InterlockedAdd64_acq", "_InterlockedAdd_acq", "_InterlockedAdd_nf", "_InterlockedAdd64_rel", "_InterlockedAdd64", "_InterlockedAdd_cpp", "_InterlockedAdd_rel_cpp", "_InterlockedAdd_rel", "_InterlockedAdd64_rel_cpp", "_InterlockedAdd64_cpp", "_InterlockedAdd_acq_cpp", "_InterlockedAdd64_nf", "_InterlockedAdd"]

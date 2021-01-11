@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /JMC (Just My Code debugging)"
 title: "/JMC (Just My Code debugging)"
 ms.date: "08/20/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.SupportJustMyCode"]

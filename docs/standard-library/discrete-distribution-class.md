@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: discrete_distribution Class"
 title: "discrete_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::discrete_distribution", "random/std::discrete_distribution::reset", "random/std::discrete_distribution::probabilities", "random/std::discrete_distribution::param", "random/std::discrete_distribution::min", "random/std::discrete_distribution::max", "random/std::discrete_distribution::operator()", "random/std::discrete_distribution::param_type", "random/std::discrete_distribution::param_type::probabilities", "random/std::discrete_distribution::param_type::operator==", "random/std::discrete_distribution::param_type::operator!="]

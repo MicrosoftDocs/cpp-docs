@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Preprocessor"
 title: "Preprocessor"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["preprocessor"]

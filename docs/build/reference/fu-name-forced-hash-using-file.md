@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /FU (Name Forced #using File)"
 title: "/FU (Name Forced #using File)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.ForcedUsingFiles", "/FU", "VC.Project.VCNMakeTool.ForcedUsingAssemblies"]

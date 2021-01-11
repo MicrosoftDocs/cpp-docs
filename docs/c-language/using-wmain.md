@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using wmain"
 title: "Using wmain"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["wmain function"]

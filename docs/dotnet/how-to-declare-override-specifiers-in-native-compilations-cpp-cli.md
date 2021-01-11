@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Declare Override Specifiers in Native Compilations (C++/CLI)"
 title: "How to: Declare Override Specifiers (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["override specifiers in native compilation, overriding"]

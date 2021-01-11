@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _com_error::WCode"
 title: "_com_error::WCode"
 ms.date: "11/04/2016"
 f1_keywords: ["_com_error::WCode"]

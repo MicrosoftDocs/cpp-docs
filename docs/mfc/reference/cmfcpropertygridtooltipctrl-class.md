@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCPropertyGridToolTipCtrl Class"
 title: "CMFCPropertyGridToolTipCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCPropertyGridToolTipCtrl", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Create", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Deactivate", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::GetLastRect", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Hide", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::SetTextMargin", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Track"]

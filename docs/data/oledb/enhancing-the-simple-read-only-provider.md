@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Enhancing the Simple Read-Only Provider"
 title: "Enhancing the Simple Read-Only Provider"
 ms.date: "10/26/2018"
 helpviewer_keywords: ["read-only poviders [C++]", "IRowsetLocate class", "IRowsetLocate class, adding to OLE DB template providers", "simple read-only poviders [C++]"]

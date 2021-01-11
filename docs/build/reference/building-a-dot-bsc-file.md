@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building a .Bsc File"
 title: "Building a .Bsc File"
 ms.date: "11/04/2016"
 helpviewer_keywords: [".bsc files, building", "bsc files, building"]

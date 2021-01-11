@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Dynamic Accessors"
 title: "Using Dynamic Accessors"
 ms.date: "10/18/2018"
 helpviewer_keywords: ["accessors [C++], dynamic", "dynamic accessors"]

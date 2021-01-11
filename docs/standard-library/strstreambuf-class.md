@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strstreambuf Class"
 title: "strstreambuf Class"
 ms.date: "11/04/2016"
 f1_keywords: ["strstream/std::strstreambuf::freeze", "strstream/std::strstreambuf::overflow", "strstream/std::strstreambuf::pbackfail", "strstream/std::strstreambuf::pcount", "strstream/std::strstreambuf::seekoff", "strstream/std::strstreambuf::seekpos", "strstream/std::strstreambuf::str", "strstream/std::strstreambuf::underflow"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exporting and Importing Using AFX_EXT_CLASS"
 title: "Exporting and Importing Using AFX_EXT_CLASS"
 ms.date: "11/04/2016"
 f1_keywords: ["afx_ext_class"]

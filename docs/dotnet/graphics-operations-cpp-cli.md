@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Graphics Operations (C++/CLI)"
 title: "Graphics Operations (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["GDI+ [C++]", ".NET Framework [C++], graphics", "images [C++], .NET Framework and", "GDI+ [C++], about graphics operations", "graphics [C++], .NET Framework and", "GDI+ [C++], displaying images", "graphics [C++], displaying images", "GDI+, drawing shapes", "drawing, shapes", "shapes", "shapes, drawing", "GDI+ [C++], rotating images", "graphics [C++], rotating images", "GDI+ [C++], converting image file formats", "graphics [C++], converting image file formats"]

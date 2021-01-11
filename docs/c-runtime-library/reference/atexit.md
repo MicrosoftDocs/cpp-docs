@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: atexit"
 title: "atexit"
 ms.date: "11/04/2016"
 api_name: ["atexit"]

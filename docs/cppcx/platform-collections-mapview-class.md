@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections::MapView Class"
 title: "Platform::Collections::MapView Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"

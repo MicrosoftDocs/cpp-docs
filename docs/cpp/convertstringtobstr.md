@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ConvertStringToBSTR"
 title: "ConvertStringToBSTR"
 ms.date: "11/04/2016"
 f1_keywords: ["ConvertStringToBSTR"]

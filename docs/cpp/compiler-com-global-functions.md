@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler COM Global Functions"
 title: "Compiler COM Global Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["cl.exe compiler, COM support", "COM, compiler support"]

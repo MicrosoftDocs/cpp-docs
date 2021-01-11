@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _set_error_mode"
 title: "_set_error_mode"
 ms.date: "11/04/2016"
 api_name: ["_set_error_mode"]

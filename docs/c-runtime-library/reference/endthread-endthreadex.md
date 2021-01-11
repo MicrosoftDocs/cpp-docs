@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _endthread, _endthreadex"
 title: "_endthread, _endthreadex"
 ms.date: "4/2/2020"
 api_name: ["_endthread", "_endthreadex", "_o__endthread", "_o__endthreadex"]

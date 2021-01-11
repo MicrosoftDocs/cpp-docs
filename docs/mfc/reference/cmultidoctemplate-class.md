@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMultiDocTemplate Class"
 title: "CMultiDocTemplate Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMultiDocTemplate", "AFXWIN/CMultiDocTemplate", "AFXWIN/CMultiDocTemplate::CMultiDocTemplate"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: priority_queue Class"
 title: "priority_queue Class"
 ms.date: "11/04/2016"
 f1_keywords: ["queue/std::priority_queue::container_type", "queue/std::priority_queue::size_type", "queue/std::priority_queue::value_type", "queue/std::priority_queue::empty", "queue/std::priority_queue::pop", "queue/std::priority_queue::push", "queue/std::priority_queue::size", "queue/std::priority_queue::top"]

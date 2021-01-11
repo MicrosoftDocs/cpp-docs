@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Document/View Architecture"
 title: "Document-View Architecture"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["CView class [MFC], view architecture", "CDocument class [MFC]", "MFC, views", "views [MFC], MFC document/view model", "document objects [MFC]", "document objects [MFC], MFC document/view model", "MFC, documents", "documents [MFC], MFC document/view model", "document objects [MFC], document/view architecture"]

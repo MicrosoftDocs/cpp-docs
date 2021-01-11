@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: length_error Class"
 title: "length_error Class"
 ms.date: "11/04/2016"
 f1_keywords: ["stdexcept/std::length_error"]

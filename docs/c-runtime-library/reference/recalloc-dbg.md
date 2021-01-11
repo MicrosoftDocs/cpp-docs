@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _recalloc_dbg"
 title: "_recalloc_dbg"
 ms.date: "11/04/2016"
 api_name: ["_recalloc_dbg"]

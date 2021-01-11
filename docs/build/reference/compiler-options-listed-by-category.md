@@ -202,7 +202,7 @@ Experimental options may only be supported by certain versions of the compiler. 
 | Option | Purpose |
 |--|--|
 | [`/experimental:module`](experimental-module.md) | Enables experimental module support. |
-| [`/experimental:preprocessor`](experimental-preprocessor.md) | Enables experimental conforming preprocessor support. |
+| [`/experimental:preprocessor`](experimental-preprocessor.md) | Deprecated. Enables experimental conforming preprocessor support. Use [`/Zc:preprocessor`](zc-preprocessor.md) |
 
 ## Deprecated and removed compiler options
 

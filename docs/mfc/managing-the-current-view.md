@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Managing the Current View"
 title: "Managing the Current View"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["views [MFC], and OnActivateView method [MFC]", "views [MFC], deactivating", "views [MFC], activating", "frame windows [MFC], current view", "OnActivateView method [MFC]", "views [MFC], current", "deactivating views [MFC]", "current view in frame window [MFC]"]

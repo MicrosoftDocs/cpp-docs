@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Processor manufacturer programming manuals"
 title: "Processor manufacturer programming manuals"
 ms.date: "05/28/2020"
 ms.assetid: 61844163-de2f-419a-808e-04de39dfdddf

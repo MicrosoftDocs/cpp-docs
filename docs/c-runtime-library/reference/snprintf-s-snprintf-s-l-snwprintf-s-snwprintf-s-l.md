@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l"
 title: "_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l"
 ms.date: "11/04/2016"
 api_name: ["_snprintf_s", "_snprintf_s_l", "_snwprintf_s", "_snwprintf_s_l"]

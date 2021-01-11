@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: execvpe"
 title: "execvpe"
 ms.date: "12/16/2019"
 api_name: ["execvpe"]

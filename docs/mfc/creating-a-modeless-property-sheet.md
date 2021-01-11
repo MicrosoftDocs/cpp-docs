@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a Modeless Property Sheet"
 title: "Creating a Modeless Property Sheet"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["modeless property sheets", "property sheets, modeless", "Create method [MFC], property sheets"]

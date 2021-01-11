@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `auto` Storage-Class Specifier"
 title: "auto Storage-Class Specifier"
 ms.date: "11/04/2016"
 ms.assetid: 8e73f57e-aa92-4e41-91ea-5c8ad2a2b332

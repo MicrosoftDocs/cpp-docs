@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Automation Clients: Using Type Libraries"
 title: "Automation Clients: Using Type Libraries"
 ms.date: "11/04/2016"
 f1_keywords: ["MkTypLib"]

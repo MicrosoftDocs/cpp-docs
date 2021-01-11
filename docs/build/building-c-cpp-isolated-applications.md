@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building C/C++ Isolated Applications"
 title: "Building C/C++ Isolated Applications"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["isolated applications [C++]"]

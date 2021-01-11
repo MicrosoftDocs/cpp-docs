@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use the Message-Map Cross-Reference"
 title: "How to: Use the Message-Map Cross-Reference"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["windows [MFC], message maps"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFtpConnection Class"
 title: "CFtpConnection Class"
 ms.date: "08/29/2019"
 f1_keywords: ["CFtpConnection", "AFXINET/CFtpConnection", "AFXINET/CFtpConnection::CFtpConnection", "AFXINET/CFtpConnection::Command", "AFXINET/CFtpConnection::CreateDirectory", "AFXINET/CFtpConnection::GetCurrentDirectory", "AFXINET/CFtpConnection::GetCurrentDirectoryAsURL", "AFXINET/CFtpConnection::GetFile", "AFXINET/CFtpConnection::OpenFile", "AFXINET/CFtpConnection::PutFile", "AFXINET/CFtpConnection::Remove", "AFXINET/CFtpConnection::RemoveDirectory", "AFXINET/CFtpConnection::Rename", "AFXINET/CFtpConnection::SetCurrentDirectory"]

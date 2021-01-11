@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Spin Button Member Functions"
 title: "Spin Button Member Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["spin button control, methods", "CSpinButtonCtrl class [MFC], methods"]

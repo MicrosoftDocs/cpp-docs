@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: uninitialized_object Class"
 title: "uninitialized_object Class"
 ms.date: "03/27/2019"
 f1_keywords: ["uninitialized_object", "AMPRT/uninitialized_object", "AMPRT/Concurrency::uninitialized_object"]

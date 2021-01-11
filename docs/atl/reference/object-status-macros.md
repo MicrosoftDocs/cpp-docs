@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object Status Macros"
 title: "Object Status Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcom/ATL::DECLARE_OLEMISC_STATUS"]

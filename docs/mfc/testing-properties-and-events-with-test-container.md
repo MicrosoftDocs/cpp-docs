@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Testing Properties and Events with Test Container"
 title: "Testing Properties and Events with Test Container"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["testing, test containers", "tstcon32.exe", "debugging ActiveX controls", "test container", "ActiveX Control Test Container", "ActiveX controls [MFC], testing", "properties [MFC], testing"]

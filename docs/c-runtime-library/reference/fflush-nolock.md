@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fflush_nolock"
 title: "_fflush_nolock"
 ms.date: "4/2/2020"
 api_name: ["_fflush_nolock", "_o__fflush_nolock"]

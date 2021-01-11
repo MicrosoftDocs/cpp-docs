@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Build Isolated Applications to Consume COM Components"
 title: "How to: Build Isolated Applications to Consume COM Components"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["isolated applications [C++]"]

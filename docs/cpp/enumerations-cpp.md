@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Enumerations (C++)"
 title: "Enumerations (C++)"
 ms.date: "06/01/2018"
 f1_keywords: ["enum_cpp"]

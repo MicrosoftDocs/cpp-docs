@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: User-Defined Conversions (C++/CLI)"
 title: "User-Defined Conversions (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["user-defined conversions [C++]"]

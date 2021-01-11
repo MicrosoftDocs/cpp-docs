@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: implements_category"
 title: "implements_category (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.implements_category"]

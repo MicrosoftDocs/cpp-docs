@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: vtordisp pragma"
 title: "vtordisp pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.vtordisp", "vtordisp_CPP"]

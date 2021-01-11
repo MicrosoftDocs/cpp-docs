@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: concurrency Namespace"
 title: "concurrency Namespace"
 ms.date: "11/04/2016"
 f1_keywords: ["concurrent_priority_queue/concurrency", "agents/concurrency", "concurrent_vector/concurrency", "concrt/concurrency", "internal_split_ordered_list/concurrency", "concurrent_queue/concurrency", "pplcancellation_token/concurrency", "pplinterface/concurrency", "ppltasks/concurrency", "ppl/concurrency", "concurrent_unordered_map/concurrency", "concrtrm/concurrency", "concurrent_unordered_set/concurrency", "pplconcrt/concurrency", "internal_concurrent_hash/concurrency"]

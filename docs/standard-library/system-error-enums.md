@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;system_error&gt; enums"
 title: "&lt;system_error&gt; enums"
 ms.date: "11/04/2016"
 f1_keywords: ["system_error/std::errc", "system_error/std::io_errc"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: switch_is"
 title: "switch_is (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.switch_is"]

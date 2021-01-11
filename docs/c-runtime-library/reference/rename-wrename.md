@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: rename, _wrename"
 title: "rename, _wrename"
 ms.date: "4/2/2020"
 api_name: ["rename", "_wrename", "_o__wrename", "_o_rename"]

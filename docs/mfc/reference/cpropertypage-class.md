@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPropertyPage Class"
 title: "CPropertyPage Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPropertyPage", "AFXDLGS/CPropertyPage", "AFXDLGS/CPropertyPage::CPropertyPage", "AFXDLGS/CPropertyPage::CancelToClose", "AFXDLGS/CPropertyPage::Construct", "AFXDLGS/CPropertyPage::GetPSP", "AFXDLGS/CPropertyPage::OnApply", "AFXDLGS/CPropertyPage::OnCancel", "AFXDLGS/CPropertyPage::OnKillActive", "AFXDLGS/CPropertyPage::OnOK", "AFXDLGS/CPropertyPage::OnQueryCancel", "AFXDLGS/CPropertyPage::OnReset", "AFXDLGS/CPropertyPage::OnSetActive", "AFXDLGS/CPropertyPage::OnWizardBack", "AFXDLGS/CPropertyPage::OnWizardFinish", "AFXDLGS/CPropertyPage::OnWizardNext", "AFXDLGS/CPropertyPage::QuerySiblings", "AFXDLGS/CPropertyPage::SetModified", "AFXDLGS/CPropertyPage::m_psp"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Support for Using wmain"
 title: "Support for Using wmain"
 ms.date: "11/04/2016"
 f1_keywords: ["wWinMain"]

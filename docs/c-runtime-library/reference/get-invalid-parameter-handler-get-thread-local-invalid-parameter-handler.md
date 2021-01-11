@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler"
 title: "_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler"
 ms.date: "4/2/2020"
 api_name: ["_get_invalid_parameter_handler", "_get_thread_local_invalid_parameter_handler", "_o__get_invalid_parameter_handler", "_o__get_thread_local_invalid_parameter_handler"]

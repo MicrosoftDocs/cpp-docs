@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Declaring Message Handler Functions"
 title: "Declaring Message Handler Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["declaring functions, message handler functions [MFC]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Pointer Subtraction"
 title: "Pointer Subtraction"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["pointer subtraction"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Containers: Advanced Features"
 title: "Containers: Advanced Features"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["links [MFC], to embedded OLE objects", "containers [MFC], links to embedded OLE objects", "containers [MFC], advanced features", "container/server applications [MFC]", "embedded objects [MFC]", "OLE controls [MFC], containers", "OLE containers [MFC], advanced features", "server/container applications [MFC]", "containers [MFC], container applications"]

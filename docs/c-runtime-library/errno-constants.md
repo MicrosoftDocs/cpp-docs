@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: errno Constants"
 title: "errno Constants"
 ms.date: "09/17/2018"
 f1_keywords: ["ENOEXEC", "ENOMEM", "E2BIG", "STRUNCATE", "ENOENT", "EMFILE", "EBADF", "EDEADLOCK", "EXDEV", "EILSEQ", "EINVAL", "EDOM", "EACCES", "ERANGE", "ENOSPC", "EAGAIN", "EEXIST", "ECHILD"]

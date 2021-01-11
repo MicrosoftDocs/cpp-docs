@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Specify an out parameter"
 title: "How to: Specify an out parameter"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

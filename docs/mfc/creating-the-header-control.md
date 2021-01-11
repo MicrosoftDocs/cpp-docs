@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating the Header Control"
 title: "Creating the Header Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CHeaderCtrl class [MFC], creating", "header controls [MFC], creating"]

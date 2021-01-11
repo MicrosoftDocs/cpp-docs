@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Specifying Compiler Optimization for an ATL Project"
 title: "Specifying Compiler Optimization for an ATL Project"
 ms.date: "08/19/2019"
 f1_keywords: ["vc.appwiz.ATL.optimization", "vc.appwiz.ATL.vtable"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: extent Class (C++ AMP)"
 title: "extent Class (C++ AMP)"
 ms.date: "03/27/2019"
 f1_keywords: ["extent", "AMP/extent", "AMP/Concurrency::extent::extent", "AMP/Concurrency::extent::contains", "AMP/Concurrency::extent::size", "AMP/Concurrency::extent::tile", "AMP/Concurrency::extent::rank Constant"]

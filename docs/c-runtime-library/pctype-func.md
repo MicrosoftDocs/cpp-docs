@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __pctype_func"
 title: "__pctype_func"
 ms.date: "4/2/2020"
 api_name: ["__pctype_func", "_o___pctype_func"]

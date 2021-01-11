@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expressions in Makefile Preprocessing"
 title: "Expressions in Makefile Preprocessing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["preprocessing makefiles", "expressions [C++], makefile preprocessing", "makefiles, preprocessing"]

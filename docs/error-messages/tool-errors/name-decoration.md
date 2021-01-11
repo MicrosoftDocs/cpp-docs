@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Name Decoration"
 title: "Name Decoration"
 ms.date: "04/22/2019"
 helpviewer_keywords: ["name decoration [C++]", "names [C++], decorated", "decorated names, calling conventions"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: allocator_base Class"
 title: "allocator_base Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::allocator_base", "allocators/stdext::allocators::allocator_base", "allocators/stdext::allocator_base::const_pointer", "allocators/stdext::allocator_base::const_reference", "allocators/stdext::allocator_base::difference_type", "allocators/stdext::allocator_base::pointer", "allocators/stdext::allocator_base::reference", "allocators/stdext::allocator_base::size_type", "allocators/stdext::allocator_base::value_type", "allocators/stdext::allocator_base::_Charalloc", "allocators/stdext::allocator_base::_Chardealloc", "allocators/stdext::allocator_base::address", "allocators/stdext::allocator_base::allocate", "allocators/stdext::allocator_base::construct", "allocators/stdext::allocator_base::deallocate", "allocators/stdext::allocator_base::destroy", "allocators/stdext::allocator_base::max_size"]

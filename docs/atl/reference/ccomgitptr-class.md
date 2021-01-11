@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComGITPtr Class"
 title: "CComGITPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComGITPtr", "ATLBASE/ATL::CComGITPtr", "ATLBASE/ATL::CComGITPtr::CComGITPtr", "ATLBASE/ATL::CComGITPtr::Attach", "ATLBASE/ATL::CComGITPtr::CopyTo", "ATLBASE/ATL::CComGITPtr::Detach", "ATLBASE/ATL::CComGITPtr::GetCookie", "ATLBASE/ATL::CComGITPtr::Revoke", "ATLBASE/ATL::CComGITPtr::m_dwCookie"]

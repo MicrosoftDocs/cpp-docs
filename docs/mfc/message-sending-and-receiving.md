@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Sending and Receiving"
 title: "Message Sending and Receiving"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows messages [MFC], handling in MFC", "control-notification messages [MFC]", "messages [MFC], receiving", "messages [MFC], MFC", "MFC, messages", "messages [MFC], sending"]

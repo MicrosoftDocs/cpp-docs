@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resources property page"
 title: "Resources"
 ms.date: "08/28/2019"
 ms.topic: "article"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cast Operator: ()"
 title: "Cast Operator: ()"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["cast operators [C++]", "() cast operator"]

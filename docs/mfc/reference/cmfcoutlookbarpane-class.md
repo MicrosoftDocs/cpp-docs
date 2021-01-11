@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCOutlookBarPane Class"
 title: "CMFCOutlookBarPane Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCOutlookBarPane", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::AddButton", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::CanBeAttached", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::ClearAll", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::Create", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::EnablePageScrollMode", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::GetRegularColor", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::IsBackgroundTexture", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::IsDrawShadedHighlight", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::RemoveButton", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetBackColor", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetBackImage", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetDefaultState", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetExtraSpace", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetTextColor", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::SetTransparentColor", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::EnableContextMenuItems", "AFXOUTLOOKBARPANE/CMFCOutlookBarPane::RemoveAllButtons"]

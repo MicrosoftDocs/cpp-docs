@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _acmdln, _tcmdln, _wcmdln"
 title: "_acmdln, _tcmdln, _wcmdln"
 ms.date: "11/04/2016"
 api_name: ["_wcmdln", "_acmdln"]

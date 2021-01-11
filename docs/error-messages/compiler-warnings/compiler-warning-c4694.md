@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning C4694"
 title: "Compiler Warning C4694"
 ms.date: "10/25/2017"
 f1_keywords: ["C4694"]

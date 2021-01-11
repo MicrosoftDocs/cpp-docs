@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zg (Generate Function Prototypes)"
 title: "/Zg (Generate Function Prototypes)"
 ms.date: "11/04/2016"
 f1_keywords: ["/zg"]

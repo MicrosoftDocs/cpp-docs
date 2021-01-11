@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: hash_set (STL/CLR)"
 title: "hash_set (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

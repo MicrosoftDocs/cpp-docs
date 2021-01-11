@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __incgsbyte, __incgsword, __incgsdword, __incgsqword"
 title: "__incgsbyte, __incgsword, __incgsdword, __incgsqword"
 ms.date: "09/02/2019"
 f1_keywords: ["__incgsdword", "__incgsqword_cpp", "__incgsword_cpp", "__incgsword", "__incgsbyte", "__incgsbyte_cpp", "__incgsqword", "__incgsdword_cpp"]

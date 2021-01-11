@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _query_new_handler"
 title: "_query_new_handler"
 ms.date: "11/04/2016"
 api_name: ["_query_new_handler"]

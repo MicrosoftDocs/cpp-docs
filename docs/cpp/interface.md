@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __interface"
 title: "__interface"
 ms.date: "05/07/2019"
 f1_keywords: ["__interface_cpp"]

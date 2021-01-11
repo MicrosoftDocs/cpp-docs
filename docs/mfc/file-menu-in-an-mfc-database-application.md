@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File Menu in an MFC Database Application"
 title: "File Menu in an MFC Database Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["File menu", "database applications [MFC], File menu commands"]

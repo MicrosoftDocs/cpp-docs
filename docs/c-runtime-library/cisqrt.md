@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CIsqrt"
 title: "_CIsqrt"
 ms.date: "4/2/2020"
 api_name: ["_CIsqrt", "_o__CIsqrt"]

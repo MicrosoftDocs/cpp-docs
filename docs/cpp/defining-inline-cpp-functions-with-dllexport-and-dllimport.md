@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Defining Inline C++ Functions with dllexport and dllimport"
 title: "Defining Inline C++ Functions with dllexport and dllimport"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["inline functions [C++], defining", "functions [C++], defining inline", "dllimport attribute [C++], inline functions", "dllexport attribute [C++], inline functions"]

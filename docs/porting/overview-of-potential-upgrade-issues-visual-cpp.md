@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overview of potential upgrade issues (Visual C++)"
 title: "Overview of potential upgrade issues (Visual C++)"
 ms.date: "05/03/2019"
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43

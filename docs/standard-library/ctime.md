@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;ctime&gt;"
 title: "&lt;ctime&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<ctime>", "std::<ctime>"]

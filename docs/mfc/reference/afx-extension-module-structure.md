@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AFX_EXTENSION_MODULE Structure"
 title: "AFX_EXTENSION_MODULE Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["AFX_EXTENSION_MODULE"]

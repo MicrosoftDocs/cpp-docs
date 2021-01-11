@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Symbols reference"
 title: "Symbols reference"
 ms.date: 07/15/2020
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), symbols reference"]

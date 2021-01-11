@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using an Animation Control"
 title: "Using an Animation Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["controls [MFC], animation", "CAnimateCtrl class [MFC], animation controls", "animation controls [MFC]"]

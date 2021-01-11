@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /APPCONTAINER (Microsoft Store App)"
 title: "/APPCONTAINER (UWP/Microsoft Store App)"
 ms.date: "11/04/2016"
 ms.assetid: 9a432db5-7640-460b-ab18-6f61fa7daf6f

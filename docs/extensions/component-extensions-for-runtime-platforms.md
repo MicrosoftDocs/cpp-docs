@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Component Extensions for .NET and UWP"
 title: "Component Extensions for .NET and UWP"
 ms.date: "10/12/2018"
 ms.topic: "overview"

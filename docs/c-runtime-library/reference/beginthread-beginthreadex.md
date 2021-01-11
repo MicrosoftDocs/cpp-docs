@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _beginthread, _beginthreadex"
 title: "_beginthread, _beginthreadex"
 ms.date: "4/2/2020"
 api_name: ["_beginthread", "_beginthreadex", "_o__beginthread", "_o__beginthreadex"]

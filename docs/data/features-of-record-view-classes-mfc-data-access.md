@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Features of Record View Classes  (MFC Data Access)"
 title: "Features of Record View Classes  (MFC Data Access)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["record views, classes", "record view classes"]

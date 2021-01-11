@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Contained Windows"
 title: "Using Contained Windows"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, windows", "windows [C++], ATL", "contained windows in ATL"]

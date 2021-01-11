@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Templates, Attributes, and Other Implementations"
 title: "OLE DB Templates, Attributes, and Other Implementations"
 ms.date: "10/22/2018"
 helpviewer_keywords: ["OLE DB, implementations", "OLE DB templates, about OLE DB templates", "OLE DB templates"]

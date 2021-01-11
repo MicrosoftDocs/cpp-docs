@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ___lc_locale_name_func"
 title: "___lc_locale_name_func"
 ms.date: "4/2/2020"
 api_name: ["___lc_locale_name_func", "_o____lc_locale_name_func"]

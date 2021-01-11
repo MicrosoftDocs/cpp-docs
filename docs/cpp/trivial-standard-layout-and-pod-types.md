@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Trivial, standard-layout, POD, and literal types"
 title: "Trivial, standard-layout, POD, and literal types"
 ms.date: "04/05/2018"
 ms.assetid: 2b23a7be-9bad-49fc-8298-31a9a7c556b0

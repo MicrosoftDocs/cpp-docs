@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Runtime Error R6027"
 title: "C Runtime Error R6027"
 ms.date: "11/04/2016"
 f1_keywords: ["R6027"]

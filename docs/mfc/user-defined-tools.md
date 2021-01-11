@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: User-defined Tools"
 title: "User-defined Tools"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["user-defined tools (MFC Extensions)"]

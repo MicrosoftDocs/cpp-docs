@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Context Class"
 title: "Context Class"
 ms.date: "11/04/2016"
 f1_keywords: ["Context", "CONCRT/concurrency::Context", "CONCRT/concurrency::Context::Block", "CONCRT/concurrency::Context::CurrentContext", "CONCRT/concurrency::Context::GetId", "CONCRT/concurrency::Context::GetScheduleGroupId", "CONCRT/concurrency::Context::GetVirtualProcessorId", "CONCRT/concurrency::Context::Id", "CONCRT/concurrency::Context::IsCurrentTaskCollectionCanceling", "CONCRT/concurrency::Context::IsSynchronouslyBlocked", "CONCRT/concurrency::Context::Oversubscribe", "CONCRT/concurrency::Context::ScheduleGroupId", "CONCRT/concurrency::Context::Unblock", "CONCRT/concurrency::Context::VirtualProcessorId", "CONCRT/concurrency::Context::Yield"]

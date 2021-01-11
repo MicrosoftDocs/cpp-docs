@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l"
 title: "_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l"
 ms.date: "4/2/2020"
 api_name: ["_mbctolower_l", "_mbctoupper_l", "_mbctoupper", "_mbctolower", "_o__mbctolower", "_o__mbctolower_l", "_o__mbctoupper", "_o__mbctoupper_l"]

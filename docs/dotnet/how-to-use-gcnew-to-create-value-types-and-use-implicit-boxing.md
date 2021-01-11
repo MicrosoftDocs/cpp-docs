@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use gcnew to Create Value Types and Use Implicit Boxing"
 title: "How to: Use gcnew to Create Value Types and Use Implicit Boxing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["gcnew keyword [C++], creating value types", "boxing, implicit", "value types, creating"]

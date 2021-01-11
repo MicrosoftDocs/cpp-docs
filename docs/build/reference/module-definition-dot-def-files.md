@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Module-Definition (.Def) Files"
 title: "Module-Definition (.Def) Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["def files", "module definition files", ".def files"]

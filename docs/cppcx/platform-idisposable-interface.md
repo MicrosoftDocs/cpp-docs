@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::IDisposable Interface"
 title: "Platform::IDisposable Interface"
 ms.date: "02/03/2017"
 ms.topic: "reference"

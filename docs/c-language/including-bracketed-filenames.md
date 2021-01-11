@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Including Bracketed Filenames"
 title: "Including Bracketed Filenames"
 ms.date: "11/04/2016"
 ms.assetid: 6a4e5411-c35e-48b8-90ef-b37ac324ed94

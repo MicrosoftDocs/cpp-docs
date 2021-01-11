@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: new Operator (C++)"
 title: "new Operator (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["new keyword [C++]"]

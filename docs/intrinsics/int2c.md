@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __int2c"
 title: "__int2c"
 ms.date: "09/02/2019"
 f1_keywords: ["__int2c", "__int2c_cpp"]

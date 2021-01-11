@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CLongBinary Class"
 title: "CLongBinary Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CLongBinary", "AFXDB_/CLongBinary", "AFXDB_/CLongBinary::CLongBinary", "AFXDB_/CLongBinary::m_dwDataLength", "AFXDB_/CLongBinary::m_hData"]

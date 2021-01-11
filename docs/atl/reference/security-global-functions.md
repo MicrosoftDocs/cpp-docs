@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Security Global Functions"
 title: "Security Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlsecurity/ATL::AtlGetDacl", "atlsecurity/ATL::AtlSetDacl", "atlsecurity/ATL::AtlGetGroupSid", "atlsecurity/ATL::AtlSetGroupSid", "atlsecurity/ATL::AtlGetOwnerSid", "atlsecurity/ATL::AtlSetOwnerSid", "atlsecurity/ATL::AtlGetSacl", "atlsecurity/ATL::AtlSetSacl", "atlsecurity/ATL::AtlGetSecurityDescriptor"]

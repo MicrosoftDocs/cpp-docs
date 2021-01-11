@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function-Call Conversions"
 title: "Function-Call Conversions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function calls, converting", "function calls, argument type conversions", "functions [C], argument conversions"]

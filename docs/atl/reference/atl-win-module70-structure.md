@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ATL_WIN_MODULE70 Structure"
 title: "_ATL_WIN_MODULE70 Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["_ATL_WIN_MODULE70", "ATL::_ATL_WIN_MODULE70", "ATL._ATL_WIN_MODULE70"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: integral_constant Class, bool_constant Class"
 title: "integral_constant Class, bool_constant Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::integral_constant", "XTR1COMMON/std::integral_constant", "type_traits/std::bool_constant", "XTR1COMMON/std::bool_constant"]

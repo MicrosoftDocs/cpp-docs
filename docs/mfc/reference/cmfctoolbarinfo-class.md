@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCToolBarInfo Class"
 title: "CMFCToolBarInfo Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCToolBarInfo", "AFXTOOLBAR/CMFCToolBarInfo", "AFXTOOLBAR/CMFCToolBarInfo::m_uiColdResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiDisabledResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiHotResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeColdResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeDisabledResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeHotResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuDisabledResID", "AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuResID"]

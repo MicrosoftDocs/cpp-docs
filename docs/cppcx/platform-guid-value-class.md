@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Guid value class"
 title: "Platform::Guid value class"
 ms.date: "01/15/2019"
 ms.topic: "reference"

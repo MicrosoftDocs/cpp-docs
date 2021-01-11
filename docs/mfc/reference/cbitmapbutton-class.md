@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CBitmapButton Class"
 title: "CBitmapButton Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CBitmapButton", "AFXEXT/CBitmapButton", "AFXEXT/CBitmapButton::CBitmapButton", "AFXEXT/CBitmapButton::AutoLoad", "AFXEXT/CBitmapButton::LoadBitmaps", "AFXEXT/CBitmapButton::SizeToContent"]

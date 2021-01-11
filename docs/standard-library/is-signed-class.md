@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_signed Class"
 title: "is_signed Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_signed"]

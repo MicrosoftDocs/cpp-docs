@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;iomanip&gt;"
 title: "&lt;iomanip&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["iomanip/std::<iomanip>", "<iomanip>"]

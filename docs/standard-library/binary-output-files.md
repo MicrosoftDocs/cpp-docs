@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binary Output Files"
 title: "Binary Output Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["I/O [C++], binary output files", "files [C++], binary output files", "binary data, binary output files"]

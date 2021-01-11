@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linux Project Property Page Reference"
 title: "Linux C++ Project Property Pages in Visual Studio"
 ms.date: "07/20/2018"
 ms.assetid: 33d8c1f4-13f1-4f61-b407-30715b28142f

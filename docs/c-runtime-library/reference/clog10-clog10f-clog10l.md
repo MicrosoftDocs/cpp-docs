@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: clog10, clog10f, clog10l"
 title: "clog10, clog10f, clog10l"
 ms.date: "11/04/2016"
 api_name: ["clog10", "clog10f", "clog10l"]

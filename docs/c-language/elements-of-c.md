@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Elements of C"
 title: "Elements of C"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["lexical conventions", "conventions, lexical"]

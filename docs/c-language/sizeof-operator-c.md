@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: sizeof Operator (C)"
 title: "sizeof Operator (C)"
 ms.date: "11/04/2016"
 f1_keywords: ["sizeof"]

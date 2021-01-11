@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CString Exception Cleanup"
 title: "CString Exception Cleanup"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CString objects, exceptions", "exception handling, cleanup code"]

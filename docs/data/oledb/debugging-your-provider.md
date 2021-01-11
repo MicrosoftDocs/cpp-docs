@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debugging Your Provider"
 title: "Debugging Your Provider"
 ms.date: "10/29/2018"
 helpviewer_keywords: ["debugging [C++], providers", "OLE DB providers, debugging", "Visual C++ debugger, debugging providers", "Visual C++ debugger"]

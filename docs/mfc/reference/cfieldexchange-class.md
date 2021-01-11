@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFieldExchange Class"
 title: "CFieldExchange Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CFieldExchange", "AFXDB/CFieldExchange", "AFXDB/CFieldExchange::IsFieldType", "AFXDB/CFieldExchange::SetFieldType"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inline Functions"
 title: "Inline Functions"
 ms.date: "10/16/2017"
 helpviewer_keywords: ["fast code", "inline functions, __inline keyword", "functions [C++], inline functions"]

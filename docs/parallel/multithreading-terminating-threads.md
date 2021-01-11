@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multithreading: Terminating Threads in MFC"
 title: "Multithreading: Terminating Threads in MFC"
 ms.date: "08/27/2018"
 helpviewer_keywords: ["premature thread termination", "starting threads", "threading [MFC], terminating threads", "multithreading [C++], terminating threads", "threading [C++], stopping threads", "terminating threads", "stopping threads", "AfxEndThread method"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCmdUI Class"
 title: "CCmdUI Class"
 ms.date: "09/06/2019"
 f1_keywords: ["CCmdUI", "AFXWIN/CCmdUI", "AFXWIN/CCmdUI::ContinueRouting", "AFXWIN/CCmdUI::Enable", "AFXWIN/CCmdUI::SetCheck", "AFXWIN/CCmdUI::SetRadio", "AFXWIN/CCmdUI::SetText", "AFXWIN/CCmdUI::m_nID", "AFXWIN/CCmdUI::m_nIndex", "AFXWIN/CCmdUI::m_pMenu", "AFXWIN/CCmdUI::m_pOther", "AFXWIN/CCmdUI::m_pSubMenu"]

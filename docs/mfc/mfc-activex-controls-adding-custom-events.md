@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Adding Custom Events"
 title: "MFC ActiveX Controls: Adding Custom Events"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], events [MFC]", "EVENT_CUSTOM prefix [MFC]", "custom events [MFC], adding to ActiveX controls", "EVENT_CUSTOM macro [MFC]", "InCircle method [MFC]", "ClickIn event", "FireClickIn event", "COleControl class [MFC], custom events [MFC]", "Click event, custom events [MFC]", "events [MFC], ActiveX controls", "custom events [MFC]", "FireEvent method, adding custom events"]

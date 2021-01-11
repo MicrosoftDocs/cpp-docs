@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)"
 title: "Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)"
 ms.date: "08/13/2018"
 f1_keywords: ["<<", ">>"]

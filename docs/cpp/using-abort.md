@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using abort"
 title: "Using abort"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["abort function"]

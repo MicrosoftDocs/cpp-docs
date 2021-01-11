@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: combinable Class"
 title: "combinable Class"
 ms.date: "11/04/2016"
 f1_keywords: ["combinable", "PPL/concurrency::combinable", "PPL/concurrency::combinable::combinable", "PPL/concurrency::combinable::clear", "PPL/concurrency::combinable::combine", "PPL/concurrency::combinable::combine_each", "PPL/concurrency::combinable::local"]

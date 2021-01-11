@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Box Controls (C++)"
 title: "Dialog Box Controls (C++)| Microsoft Docs"
 ms.date: "02/15/2019"
 f1_keywords: ["Custom Control"]

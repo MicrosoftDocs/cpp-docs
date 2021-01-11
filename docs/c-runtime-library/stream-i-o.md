@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Stream I/O"
 title: "Stream I/O"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["I/O routines, stream I/O", "I/O [CRT], stream", "stream I/O"]

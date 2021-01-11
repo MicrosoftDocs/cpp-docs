@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bad_function_call Class"
 title: "bad_function_call Class"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::bad_function_call"]

@@ -23,7 +23,7 @@ These are the **`/Zc`** compiler options:
 |--|--|
 | [`/Zc:alignedNew`](zc-alignednew.md) | Enable C++17 over-aligned dynamic allocation (on by default in C++17). |
 | [`/Zc:auto`](zc-auto-deduce-variable-type.md) | Enforce the new Standard C++ meaning for **`auto`** (on by default). |
-| [`/Zc__cplusplus`](zc-cplusplus.md) | Enable the `__cplusplus` macro to report the supported standard (off by default). |
+| [`/Zc:__cplusplus`](zc-cplusplus.md) | Enable the `__cplusplus` macro to report the supported standard (off by default). |
 | [`/Zc:externConstexpr`](zc-externconstexpr.md) | Enable external linkage for **`constexpr`** variables (off by default). |
 | [`/Zc:forScope`](zc-forscope-force-conformance-in-for-loop-scope.md) | Enforce Standard C++ **`for`** scoping rules (on by default). |
 | [`/Zc:hiddenFriend`](zc-hiddenfriend.md) | Enforce Standard C++ hidden friend rules (implied by /permissive-) |

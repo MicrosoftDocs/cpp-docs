@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ Core Guidelines checker reference"
 title: C++ Core Guidelines checker reference
 ms.date: 03/22/2018
 ms.topic: reference

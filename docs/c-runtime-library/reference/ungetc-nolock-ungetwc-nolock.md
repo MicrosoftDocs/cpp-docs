@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ungetc_nolock, _ungetwc_nolock"
 title: "_ungetc_nolock, _ungetwc_nolock"
 ms.date: "4/2/2020"
 api_name: ["_ungetwc_nolock", "_ungetc_nolock", "_o__ungetc_nolock", "_o__ungetwc_nolock"]

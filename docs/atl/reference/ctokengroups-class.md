@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTokenGroups Class"
 title: "CTokenGroups Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTokenGroups", "ATLSECURITY/ATL::CTokenGroups", "ATLSECURITY/ATL::CTokenGroups::CTokenGroups", "ATLSECURITY/ATL::CTokenGroups::Add", "ATLSECURITY/ATL::CTokenGroups::Delete", "ATLSECURITY/ATL::CTokenGroups::DeleteAll", "ATLSECURITY/ATL::CTokenGroups::GetCount", "ATLSECURITY/ATL::CTokenGroups::GetLength", "ATLSECURITY/ATL::CTokenGroups::GetPTOKEN_GROUPS", "ATLSECURITY/ATL::CTokenGroups::GetSidsAndAttributes", "ATLSECURITY/ATL::CTokenGroups::LookupSid"]

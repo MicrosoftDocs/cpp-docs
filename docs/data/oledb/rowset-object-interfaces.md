@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Rowset Object Interfaces"
 title: "Rowset Object Interfaces"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["interfaces, OLE DB", "OLE DB, interfaces", "rowset objects [OLE DB]", "OLE DB provider templates, object interfaces", "interfaces, list of"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Set LIB.EXE Options in the Visual Studio Development Environment"
 title: "How to: Set LIB.EXE Options in the Visual Studio Development Environment"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["lib.exe options, setting in the Visual Studio Development Environment"]

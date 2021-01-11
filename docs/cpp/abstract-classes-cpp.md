@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Abstract Classes (C++)"
 title: "Abstract Classes (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["classes [C++], abstract", "base classes [C++], abstract classes [C++]", "abstract classes [C++]", "derived classes [C++], abstract classes [C++]"]

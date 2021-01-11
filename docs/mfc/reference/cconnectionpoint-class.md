@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CConnectionPoint Class"
 title: "CConnectionPoint Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CConnectionPoint", "AFXDISP/CConnectionPoint", "AFXDISP/CConnectionPoint::CConnectionPoint", "AFXDISP/CConnectionPoint::GetConnections", "AFXDISP/CConnectionPoint::GetContainer", "AFXDISP/CConnectionPoint::GetIID", "AFXDISP/CConnectionPoint::GetMaxConnections", "AFXDISP/CConnectionPoint::GetNextConnection", "AFXDISP/CConnectionPoint::GetStartPosition", "AFXDISP/CConnectionPoint::OnAdvise", "AFXDISP/CConnectionPoint::QuerySinkInterface"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l"
 title: "_mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l"
 ms.date: "4/2/2020"
 api_name: ["_mbctohira", "_mbctohira_l", "_mbctokata", "_mbctokata_l", "_o__mbctohira", "_o__mbctohira_l", "_o__mbctokata", "_o__mbctokata_l"]

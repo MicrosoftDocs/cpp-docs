@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .STACK (32-bit MASM)"
 title: ".STACK"
 ms.date: "11/05/2019"
 f1_keywords: [".STACK"]

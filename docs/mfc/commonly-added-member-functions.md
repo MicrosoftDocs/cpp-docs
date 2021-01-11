@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Commonly Added Member Functions"
 title: "Commonly Added Member Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CDialog class [MFC], members", "MFC dialog boxes [MFC], control-notification messages", "dialog classes [MFC], commonly added member functions"]

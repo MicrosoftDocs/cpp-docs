@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Receiving Notifications"
 title: "Receiving Notifications"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["notifications [C++], OLE DB consumers", "receiving notifications in OLE DB", "events [C++], notifications in OLE DB", "notifications [C++], events", "OLE DB consumers, notifications", "rowsets, event notifications", "OLE DB providers, notifications"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with Import Libraries and Export Files"
 title: "Working with Import Libraries and Export Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["LIB [C++], /DEF option", "import libraries", "LIB [C++], import libraries and export files", "export files", "import libraries, creating"]

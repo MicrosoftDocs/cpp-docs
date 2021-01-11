@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CJumpList Class"
 title: "CJumpList Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CJumpList", "AFXADV/CJumpList", "AFXADV/CJumpList::CJumpList", "AFXADV/CJumpList::AbortList", "AFXADV/CJumpList::AddDestination", "AFXADV/CJumpList::AddKnownCategory", "AFXADV/CJumpList::AddTask", "AFXADV/CJumpList::AddTasks", "AFXADV/CJumpList::AddTaskSeparator", "AFXADV/CJumpList::ClearAll", "AFXADV/CJumpList::ClearAllDestinations", "AFXADV/CJumpList::CommitList", "AFXADV/CJumpList::GetDestinationList", "AFXADV/CJumpList::GetMaxSlots", "AFXADV/CJumpList::GetRemovedItems", "AFXADV/CJumpList::InitializeList", "AFXADV/CJumpList::SetAppID"]

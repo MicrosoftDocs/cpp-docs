@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCDropDownFrame Class"
 title: "CMFCDropDownFrame Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCDropDownFrame", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::Create", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentMenuBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentPopupMenu", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::RecalcLayout", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::SetAutoDestroy"]

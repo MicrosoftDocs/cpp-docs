@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Performing a Join (ODBC)"
 title: "Recordset: Performing a Join (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["joins [C++], in recordsets", "data binding [C++], recordset columns", "recordsets [C++], binding data", "data binding [C++], columns in recordsets", "filters [C++], join conditions for recordsets", "ODBC recordsets [C++], joins", "recordsets [C++], joining tables"]

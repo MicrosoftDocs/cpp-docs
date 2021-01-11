@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Template Instantiation"
 title: "Function Template Instantiation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["templates, instantiation", "function templates, instantiation", "instantiation, function templates"]
