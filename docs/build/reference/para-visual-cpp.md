@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;para&gt;"
 title: "&lt;para>"
 ms.date: "11/04/2016"
-f1_keywords: ["<para>", "para"]
+f1_keywords: ["<para>"]
 helpviewer_keywords: ["<para> C++ XML tag", "para C++ XML tag"]
 ms.assetid: 35f2a1b3-bc14-4f13-bcb0-c39ccbf74d59
 ---
