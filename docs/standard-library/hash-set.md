@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;hash_set&gt;"
 title: "&lt;hash_set&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["<hash_set>", "std::<hash_set>"]
+f1_keywords: ["<hash_set>"]
 helpviewer_keywords: ["hash_set header"]
 ms.assetid: 6b556967-c808-4869-9b4d-f9e030864435
 ---

@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;iomanip&gt;"
 title: "&lt;iomanip&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["iomanip/std::<iomanip>", "<iomanip>"]
+f1_keywords: ["<iomanip>"]
 helpviewer_keywords: ["iomanip header"]
 ms.assetid: 3681c346-4763-4037-bba4-cf0dc3447974
 ---

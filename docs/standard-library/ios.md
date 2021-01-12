@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;ios&gt;"
 title: "&lt;ios&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["<ios>", "ios/std::<ios>"]
+f1_keywords: ["<ios>"]
 helpviewer_keywords: ["ios header"]
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
 ---
