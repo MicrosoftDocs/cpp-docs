@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;limits&gt;"
 title: "&lt;limits&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["limits/std::<limits>", "<limits>"]
+f1_keywords: ["<limits>"]
 helpviewer_keywords: ["limits header"]
 ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
 ---

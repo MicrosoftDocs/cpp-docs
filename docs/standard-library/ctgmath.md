@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;ctgmath&gt;"
 title: "&lt;ctgmath&gt;"
 ms.date: "07/11/2019"
-f1_keywords: ["<ctgmath>", "ctgmath"]
+f1_keywords: ["<ctgmath>"]
 helpviewer_keywords: ["ctgmath header"]
 ms.assetid: ff521893-f445-4dc8-a2f6-699185bb7024
 ---

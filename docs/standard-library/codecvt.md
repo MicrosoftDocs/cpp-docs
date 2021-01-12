@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;codecvt&gt;"
 title: "&lt;codecvt&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["codecvt", "<codecvt>"]
+f1_keywords: ["<codecvt>"]
 helpviewer_keywords: ["codecvt header"]
 ms.assetid: d44ee229-00d5-4761-9b48-0c702122789d
 ---
