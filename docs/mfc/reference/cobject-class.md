@@ -50,9 +50,9 @@ It serves as the root not only for library classes such as `CFile` and `CObList`
 - Object diagnostic output
 - Compatibility with collection classes
 
-Note that `CObject` does not support multiple inheritance. Your derived classes can have only one `CObject` base class, and that `CObject` must be leftmost in the hierarchy. It is permissible, however, to have structures and non- `CObject`-derived classes in right-hand multiple-inheritance branches.
+`CObject` doesn't support multiple inheritance. Your derived classes can have only one `CObject` base class, and that `CObject` must be leftmost in the hierarchy. It's permissible, however, to have structures and non- `CObject`-derived classes in right-hand multiple-inheritance branches.
 
-You will realize major benefits from `CObject` derivation if you use some of the optional macros in your class implementation and declarations.
+You'll realize major benefits from `CObject` derivation if you use some of the optional macros in your class implementation and declarations.
 
 The first-level macros, [`DECLARE_DYNAMIC`](run-time-object-model-services.md#declare_dynamic) and [`IMPLEMENT_DYNAMIC`](run-time-object-model-services.md#implement_dynamic), permit run-time access to the class name and its position in the hierarchy. This, in turn, allows meaningful diagnostic dumping.
 
@@ -78,13 +78,13 @@ virtual void AssertValid() const;
 
 ### Remarks
 
-`AssertValid` performs a validity check on this object by checking its internal state. In the Debug version of the library, `AssertValid` may assert and thus terminate the program with a message that lists the line number and filename where the assertion failed.
+`AssertValid` performs a validity check on this object by checking its internal state. In the Debug version of the library, `AssertValid` may assert and then terminate the program with a message that lists the line number and filename where the assertion failed.
 
 When you write your own class, you should override the `AssertValid` function to provide diagnostic services for yourself and other users of your class. The overridden `AssertValid` usually calls the `AssertValid` function of its base class before checking data members unique to the derived class.
 
-Because `AssertValid` is a **`const`** function, you are not permitted to change the object state during the test. Your own derived class `AssertValid` functions should not throw exceptions but rather should assert whether they detect invalid object data.
+Because `AssertValid` is a **`const`** function, you aren't permitted to change the object state during the test. Your own derived class `AssertValid` functions shouldn't throw exceptions but rather should assert whether they detect invalid object data.
 
-The definition of "validity" depends on the object's class. As a rule, the function should perform a "shallow check." That is, if an object contains pointers to other objects, it should check to see whether the pointers are not null, but it should not perform validity testing on the objects referred to by the pointers.
+The definition of "validity" depends on the object's class. As a rule, the function should do a "shallow check." That is, if an object contains pointers to other objects, it should check to see whether the pointers aren't `NULL`, but it shouldn't do validity testing on the objects referred to by the pointers.
 
 ### Example
 
@@ -112,9 +112,9 @@ A reference to another `CObject`
 
 The default version is automatically called by the constructor of your derived class.
 
-If your class is serializable (it incorporates the `IMPLEMENT_SERIAL` macro), then you must have a default constructor (a constructor with no arguments) in your class declaration. If you do not need a default constructor, declare a private or protected "empty" constructor. For more information, see [Using `CObject`](../../mfc/using-cobject.md).
+If your class is serializable (it incorporates the `IMPLEMENT_SERIAL` macro), then you must have a default constructor (a constructor with no arguments) in your class declaration. If you don't need a default constructor, declare a private or protected "empty" constructor. For more information, see [Using `CObject`](../../mfc/using-cobject.md).
 
-The standard C++ default class copy constructor does a member-by-member copy. The presence of the private `CObject` copy constructor guarantees a compiler error message if the copy constructor of your class is needed but not available. You must therefore provide a copy constructor if your class requires this capability.
+The standard C++ default class copy constructor does a member-by-member copy. The presence of the private `CObject` copy constructor guarantees a compiler error message if the copy constructor of your class is needed but not available. Provide a copy constructor if your class requires this capability.
 
 ### Example
 
@@ -140,15 +140,15 @@ The diagnostic dump context for dumping, usually `afxDump`.
 When you write your own class, you should override the `Dump` function to provide diagnostic services for yourself and other users of your class. The overridden `Dump` usually calls the `Dump` function of its base class before printing data members unique to the derived class. `CObject::Dump` prints the class name if your class uses the `IMPLEMENT_DYNAMIC` or `IMPLEMENT_SERIAL` macro.
 
 > [!NOTE]
-> Your `Dump` function should not print a newline character at the end of its output.
+> Your `Dump` function shouldn't print a newline character at the end of its output.
 
 `Dump` calls make sense only in the Debug version of the Microsoft Foundation Class Library. You should bracket calls, function declarations, and function implementations with `#ifdef _DEBUG`, `#endif` statements for conditional compilation.
 
-Since `Dump` is a **`const`** function, you are not permitted to change the object state during the dump.
+Since `Dump` is a **`const`** function, you aren't permitted to change the object state during the dump.
 
 The [`CDumpContext` insertion (<<) operator](../../mfc/reference/cdumpcontext-class.md#operator_lt_lt) calls `Dump` when a `CObject` pointer is inserted.
 
-`Dump` permits only "acyclic" dumping of objects. You can dump a list of objects, for example, but if one of the objects is the list itself, you will eventually overflow the stack.
+`Dump` permits only "acyclic" dumping of objects. You can dump a list of objects, for example, but if one of the objects is the list itself, you'll eventually overflow the stack.
 
 ### Example
 
@@ -170,11 +170,11 @@ A pointer to the [`CRuntimeClass`](../../mfc/reference/cruntimeclass-structure.m
 
 ### Remarks
 
-There is one `CRuntimeClass` structure for each `CObject`-derived class. The structure members are as follows:
+There's one `CRuntimeClass` structure for each `CObject`-derived class. The structure members are as follows:
 
 - **`LPCSTR m_lpszClassName`** A null-terminated string containing the ASCII class name.
-- **`int m_nObjectSize`** The size of the object, in bytes. If the object has data members that point to allocated memory, the size of that memory is not included.
-- **`UINT m_wSchema`** The schema number ( - 1 for nonserializable classes). See the [`IMPLEMENT_SERIAL`](run-time-object-model-services.md#implement_serial) macro for a description of schema number.
+- **`int m_nObjectSize`** The size of the object, in bytes. If the object has data members that point to allocated memory, the size of that memory isn't included.
+- **`UINT m_wSchema`** The schema number ( -1 for nonserializable classes). See the [`IMPLEMENT_SERIAL`](run-time-object-model-services.md#implement_serial) macro for a description of schema number.
 
 - **`CObject* (PASCAL* m_pfnCreateObject)()`** A function pointer to the default constructor that creates an object of your class (valid only if the class supports dynamic creation; otherwise, returns **`NULL`**).
 
@@ -182,7 +182,7 @@ There is one `CRuntimeClass` structure for each `CObject`-derived class. The str
 
 - **`CRuntimeClass* m_pBaseClass`** If your application is statically linked to MFC, a pointer to the `CRuntimeClass` structure of the base class.
 
-This function requires use of the [`IMPLEMENT_DYNAMIC`](run-time-object-model-services.md#implement_dynamic), [`IMPLEMENT_DYNCREATE`](run-time-object-model-services.md#implement_dyncreate), or [`IMPLEMENT_SERIAL`](run-time-object-model-services.md#implement_serial) macro in the class implementation. You will get incorrect results otherwise.
+This function requires use of the [`IMPLEMENT_DYNAMIC`](run-time-object-model-services.md#implement_dynamic), [`IMPLEMENT_DYNCREATE`](run-time-object-model-services.md#implement_dyncreate), or [`IMPLEMENT_SERIAL`](run-time-object-model-services.md#implement_serial) macro in the class implementation. You'll get incorrect results otherwise.
 
 ### Example
 
@@ -209,9 +209,9 @@ Nonzero if the object corresponds to the class; otherwise 0.
 
 ### Remarks
 
-This function tests *`pClass`* to see if (1) it is an object of the specified class or (2) it is an object of a class derived from the specified class. This function works only for classes declared with the [`DECLARE_DYNAMIC`](run-time-object-model-services.md#declare_dynamic), [`DECLARE_DYNCREATE`](run-time-object-model-services.md#declare_dyncreate), or [`DECLARE_SERIAL`](run-time-object-model-services.md#declare_serial) macro.
+This function tests *`pClass`* to see if (1) it's an object of the specified class or (2) it's an object of a class derived from the specified class. This function works only for classes declared with the [`DECLARE_DYNAMIC`](run-time-object-model-services.md#declare_dynamic), [`DECLARE_DYNCREATE`](run-time-object-model-services.md#declare_dyncreate), or [`DECLARE_SERIAL`](run-time-object-model-services.md#declare_serial) macro.
 
-Do not use this function extensively because it defeats the C++ polymorphism feature. Use virtual functions instead.
+Don't use this function extensively because it defeats the C++ polymorphism feature. Use virtual functions instead.
 
 ### Example
 
@@ -236,7 +236,7 @@ Nonzero if this object can be serialized; otherwise 0.
 For a class to be serializable, its declaration must contain the [`DECLARE_SERIAL`](run-time-object-model-services.md#declare_serial) macro, and the implementation must contain the [`IMPLEMENT_SERIAL`](run-time-object-model-services.md#implement_serial) macro.
 
 > [!NOTE]
-> Do not override this function.
+> Don't override this function.
 
 ### Example
 
@@ -269,9 +269,9 @@ If you use the code line
 
 [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/cobject-class_7.cpp)]
 
-before any of your implementations in a .CPP file, then the third version of **`delete`** will be used, storing the filename and line number in the allocated block for later reporting. You do not have to worry about supplying the extra parameters; a macro takes care of that for you.
+before any of your implementations in a .CPP file, then the third version of **`delete`** will be used, storing the filename and line number in the allocated block for later reporting. You don't have to worry about supplying the extra parameters; a macro takes care of that for you.
 
-Even if you do not use DEBUG_NEW in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.
+Even if you don't use `DEBUG_NEW` in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.
 
 If you override operators **`new`** and **`delete`**, you forfeit this diagnostic capability.
 
@@ -283,7 +283,7 @@ See [`CObList::CObList`](../../mfc/reference/coblist-class.md#coblist) for a lis
 
 ## <a name="operator_new"></a> CObject::operator new
 
-For the Release version of the library, operator **`new`** performs an optimal memory allocation in a manner similar to `malloc`.
+For the Release version of the library, operator **`new`** does an optimal memory allocation in a manner similar to `malloc`.
 
 ```cpp
 void* PASCAL operator new(size_t nSize);
@@ -303,12 +303,12 @@ If you use the code line
 
 [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/cobject-class_7.cpp)]
 
-before any of your implementations in a .CPP file, then the second version of **`new`** will be used, storing the filename and line number in the allocated block for later reporting. You do not have to worry about supplying the extra parameters; a macro takes care of that for you.
+before any of your implementations in a .CPP file, then the second version of **`new`** will be used, storing the filename and line number in the allocated block for later reporting. You don't have to worry about supplying the extra parameters; a macro takes care of that for you.
 
-Even if you do not use DEBUG_NEW in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.
+Even if you don't use `DEBUG_NEW` in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.
 
 > [!NOTE]
-> If you override this operator, you must also override **`delete`**. Do not use the standard library `_new_handler` function.
+> If you override this operator, you must also override **`delete`**. Don't use the standard library `_new_handler` function.
 
 ### Example
 
@@ -331,7 +331,7 @@ A `CArchive` object to serialize to or from.
 
 ### Remarks
 
-You must override `Serialize` for each class that you intend to serialize. The overridden `Serialize` must first call the `Serialize` function of its base class.
+Override `Serialize` for each class that you intend to serialize. The overridden `Serialize` must first call the `Serialize` function of its base class.
 
 You must also use the [`DECLARE_SERIAL`](run-time-object-model-services.md#declare_serial) macro in your class declaration, and you must use the [`IMPLEMENT_SERIAL`](run-time-object-model-services.md#implement_serial) macro in the implementation.
 

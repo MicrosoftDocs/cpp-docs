@@ -6,9 +6,9 @@ helpviewer_keywords: ["language strings"]
 ---
 # Language Strings
 
-The [`setlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md) and [`_create_locale`](../c-runtime-library/reference/create-locale-wcreate-locale.md) functions can use the Windows NLS API supported languages on operating systems that do not use the Unicode code page. For a list of supported languages by operating system version, see [Appendix A: Product Behavior](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c) in \[MS-LCID]: Windows Language Code Identifier (LCID) Reference. The language string can be any of the values in the **Language** and **Language tag** columns of the list of supported languages. For an example of code that enumerates available locale names and related values, see [NLS: Name-based APIs Sample](/windows/win32/intl/nls--name-based-apis-sample).
+The [`setlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md) and [`_create_locale`](../c-runtime-library/reference/create-locale-wcreate-locale.md) functions can use the Windows NLS API supported languages on operating systems that don't use the Unicode code page. For a list of supported languages by operating system version, see [Appendix A: Product Behavior](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c) in \[MS-LCID]: Windows Language Code Identifier (LCID) Reference. The language string can be any of the values in the **Language** and **Language tag** columns of the list of supported languages. For example code that enumerates available locale names and related values, see [NLS: Name-based APIs Sample](/windows/win32/intl/nls--name-based-apis-sample).
 
-## Additional supported language strings
+## Supported language strings
 
 The Microsoft C run-time library implementation also supports these language strings:
 
@@ -82,7 +82,7 @@ The Microsoft C run-time library implementation also supports these language str
 
 ## See also
 
-[Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
-[Country/Region Strings](../c-runtime-library/country-region-strings.md)<br/>
-[`setlocale`, `_wsetlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)\
+[Country/Region Strings](../c-runtime-library/country-region-strings.md)\
+[`setlocale`, `_wsetlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md)\
 [`_create_locale`, `_wcreate_locale`](../c-runtime-library/reference/create-locale-wcreate-locale.md)
