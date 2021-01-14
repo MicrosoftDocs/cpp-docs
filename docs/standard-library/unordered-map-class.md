@@ -181,7 +181,6 @@ If the argument key value is not found, then the function throws an object of cl
 #include <iostream>
 
 typedef std::unordered_map<char, int> Mymap;
-typedef std::unordered_map<char, int> Mymap;
 int main()
 {
     Mymap c1;
