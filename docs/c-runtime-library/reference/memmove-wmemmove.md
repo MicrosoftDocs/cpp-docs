@@ -10,9 +10,9 @@ f1_keywords: ["memmove", "wmemmove"]
 helpviewer_keywords: ["wmemmove function", "memmove function"]
 ms.assetid: 3a906114-9cf3-40d7-bd99-ee452004f218
 ---
-# memmove, wmemmove
+# `memmove`, `wmemmove`
 
-Moves one buffer to another. More secure versions of these functions are available; see [memmove_s, wmemmove_s](memmove-s-wmemmove-s.md).
+Moves one buffer to another. More secure versions of these functions are available; see [`memmove_s`, `wmemmove_s`](memmove-s-wmemmove-s.md).
 
 ## Syntax
 
@@ -31,14 +31,14 @@ wchar_t *wmemmove(
 
 ### Parameters
 
-*dest*<br/>
+*dest*\
 Destination object.
 
-*src*<br/>
+*src*\
 Source object.
 
-*count*<br/>
-Number of bytes (**memmove**) or characters (**wmemmove**) to copy.
+*count*\
+Number of bytes (**`memmove`**) or characters (**`wmemmove`**) to copy.
 
 ## Return Value
 
@@ -46,11 +46,11 @@ The value of *dest*.
 
 ## Remarks
 
-Copies *count* bytes (**memmove**) or characters (**wmemmove**) from *src* to *dest*. If some regions of the source area and the destination overlap, both functions ensure that the original source bytes in the overlapping region are copied before being overwritten.
+Copies *count* bytes (**`memmove`**) or characters (**`wmemmove`**) from *src* to *dest*. If some regions of the source area and the destination overlap, both functions ensure that the original source bytes in the overlapping region are copied before being overwritten.
 
 **Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-The **memmove** and **wmemmove** functions will only be deprecated if the constant **_CRT_SECURE_DEPRECATE_MEMORY** is defined prior to the inclusion statement in order for the functions to be deprecated, such as in the example below:
+The **`memmove`** and **`wmemmove`** functions will only be deprecated if the constant **`_CRT_SECURE_DEPRECATE_MEMORY`** is defined prior to the inclusion statement in order for the functions to be deprecated, such as in the example below:
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
@@ -68,8 +68,8 @@ or
 
 |Routine|Required header|
 |-------------|---------------------|
-|**memmove**|\<string.h>|
-|**wmemmove**|\<wchar.h>|
+|**`memmove`**|\<string.h>|
+|**`wmemmove`**|\<wchar.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -111,8 +111,8 @@ New string: aaaabb
 
 ## See also
 
-[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)<br/>
-[_memccpy](memccpy.md)<br/>
-[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
-[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
-[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
+[Buffer Manipulation](../../c-runtime-library/buffer-manipulation.md)\
+[`_memccpy`](memccpy.md)\
+[`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)\
+[`strcpy`, `wcscpy`, `_mbscpy`](strcpy-wcscpy-mbscpy.md)\
+[`strncpy`, `_strncpy_l`, `wcsncpy`, `_wcsncpy_l`, `_mbsncpy`, `_mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)\
