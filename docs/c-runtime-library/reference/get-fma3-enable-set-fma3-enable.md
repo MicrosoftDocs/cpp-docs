@@ -1,9 +1,9 @@
 ---
 description: "Learn more about: _get_FMA3_enable, _set_FMA3_enable"
 title: "_get_FMA3_enable, _set_FMA3_enable"
-ms.date: "04/05/2018"
+ms.date: "1/14/2021"
 api_name: ["_get_FMA3_enable", "_set_FMA3_enable"]
-api_location: ["msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll"]
+api_location: ["msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_get_FMA3_enable", "_set_FMA3_enable", "math/_get_FMA3_enable", "math/_set_FMA3_enable"]
