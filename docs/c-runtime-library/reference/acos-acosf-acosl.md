@@ -1,16 +1,15 @@
 ---
-title: "acos, acosf, acosl"
+title: "`acos`, `acosf`, `acosl`"
 description: "API reference for `acos`, `acosf`, and `acosl`; which calculate the arccosine of a floating-point value."
-ms.date: "08/31/2020"
-api_name: ["acosf", "acos", "acosl", "_o_acos"]
+ms.date: "1/15/2021"
+api_name: ["acosf", "acos", "acosl", "_o_acos", "_o_acosf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["acos", "acosl", "acosf", "math/acosf", "math/acosl"]
 helpviewer_keywords: ["acos function", "acosl function", "acosf function", "trigonometric functions", "arccosine function"]
-ms.assetid: 00b89c48-8faf-4824-aa95-fa4349a4975d
 ---
-# acos, acosf, acosl
+# `acos`, `acosf`, `acosl`
 
 Calculates the arccosine.
 
@@ -28,26 +27,26 @@ long double acos( long double x );   // C++ only
 
 ### Parameters
 
-*x*\
+*`x`*\
 Value between -1 and 1, for which to calculate the arccosine (the inverse cosine).
 
 ## Return Value
 
-The **acos** function returns the arccosine of *x* in the range 0 to π radians.
+The **`acos`** function returns the arccosine of *x* in the range 0 to π radians.
 
-By default, if *x* is less than -1 or greater than 1, **acos** returns an indefinite.
+By default, if *`x`* is less than -1 or greater than 1, **`acos`** returns an indefinite.
 
-|Input|SEH Exception|Matherr Exception|
+|Input|`SEH` Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|
-|± ∞|INVALID|_DOMAIN|
-|± QNAN,IND|none|_DOMAIN|
-|&#124;x&#124;>1|INVALID|_DOMAIN|
+|`± ∞`|`INVALID`|`_DOMAIN`|
+|`± QNAN, IND`|none|`_DOMAIN`|
+|&#124;`x`&#124;>1|`INVALID`|`_DOMAIN`|
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **acos** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **acos** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **`acos`** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`acos`** always takes and returns a **`double`**.
 
-If you use the \<tgmath.h> `acos()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
+If you use the `<tgmath.h>` `acos()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -55,8 +54,8 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
-|**acos**, **acosf**, **acosl**|\<math.h>|\<errno.h>|
-|**acos()** macro | \<tgmath.h> ||
+|**`acos`**, **`acosf`**, **`acosl`**|`<math.h>`|`<errno.h>`|
+|**`acos()`** macro | `<tgmath.h>` ||
 
 ## Example
 
@@ -110,10 +109,10 @@ Arccosine of 0.000000 = 1.570796
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[_matherr](matherr.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[tan, tanf, tanl](tan-tanf-tanl.md)
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[`asin`, `asinf`, `asinl`](asin-asinf-asinl.md)\
+[`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)\
+[`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\
+[`_matherr`](matherr.md)\
+[`sin`, `sinf`, `sinl`](sin-sinf-sinl.md)\
+[`tan`, `tanf`, `tanl`](tan-tanf-tanl.md)
