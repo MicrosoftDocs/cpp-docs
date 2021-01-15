@@ -29,19 +29,19 @@ Variable in which environment is stored.
 
 ## Return Value
 
-Returns 0 after saving the stack environment. If **`setjmp`** returns as a result of a `longjmp` call, it returns the *value* argument of `longjmp`, or if the *value* argument of `longjmp` is 0, **`setjmp`** returns 1. There's no error return.
+Returns 0 after saving the stack environment. If **`setjmp`** returns because of a `longjmp` call, it returns the *value* argument of `longjmp`, or if the *value* argument of `longjmp` is 0, **`setjmp`** returns 1. There's no error return.
 
 ## Remarks
 
-The **`setjmp`** function saves a stack environment, which you can subsequently restore, using `longjmp`. When used together, **`setjmp`** and `longjmp` provide a way to execute a non-local **`goto`**. They are typically used to pass execution control to error-handling or recovery code in a previously called routine without using the normal calling or return conventions.
+The **`setjmp`** function saves a stack environment, which you can subsequently restore, using `longjmp`. When used together, **`setjmp`** and `longjmp` provide a way to execute a non-local **`goto`**. They're typically used to pass execution control to error-handling or recovery code in a previously called routine without using the normal calling or return conventions.
 
-A call to **`setjmp`** saves the current stack environment in *env*. A subsequent call to `longjmp` restores the saved environment and returns control to the point just after the corresponding **`setjmp`** call. All variables (except register variables) accessible to the routine receiving control contain the values they had when `longjmp` was called.
+A call to **`setjmp`** saves the current stack environment in *`env`*. A subsequent call to `longjmp` restores the saved environment and returns control to the point just after the corresponding **`setjmp`** call. All variables (except register variables) accessible to the routine receiving control contain the values they had when `longjmp` was called.
 
-It is not possible to use **`setjmp`** to jump from native to managed code.
+It isn't possible to use **`setjmp`** to jump from native to managed code.
 
 **Microsoft Specific**
 
-In Microsoft C++ code on Windows, **`longjmp`** uses the same stack-unwinding semantics as exception-handling code. It is safe to use in the same places that C++ exceptions can be raised. However, this usage is not portable, and comes with some important caveats. For details, see [`longjmp`](longjmp.md).
+In Microsoft C++ code on Windows, **`longjmp`** uses the same stack-unwinding semantics as exception-handling code. It is safe to use in the same places that C++ exceptions can be raised. However, this usage isn't portable, and comes with some important caveats. For details, see [`longjmp`](longjmp.md).
 
 **END Microsoft Specific**
 
@@ -57,7 +57,7 @@ For more information, see [Using `setjmp` and `longjmp`](../../cpp/using-setjmp-
 |-------------|---------------------|
 |**`setjmp`**|\<setjmp.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

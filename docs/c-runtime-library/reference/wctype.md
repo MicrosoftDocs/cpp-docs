@@ -28,7 +28,7 @@ Property string.
 
 ## Return Value
 
-If the **`LC_CTYPE`** category of the current locale does not define a classification rule whose name matches the property string *`property`*, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [`towctrans`](towctrans.md).
+If the **`LC_CTYPE`** category of the current locale doesn't define a classification rule whose name matches the property string *`property`*, the function returns zero. Otherwise, it returns a nonzero value suitable for use as the second argument to a subsequent call to [`towctrans`](towctrans.md).
 
 ## Remarks
 
