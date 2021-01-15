@@ -1,9 +1,9 @@
 ---
 description: "Learn more about: _setjmp3"
 title: "_setjmp3"
-ms.date: "11/04/2016"
+ms.date: "1/14/2021"
 api_name: ["_setjmp3"]
-api_location: ["msvcrt.dll", "msvcr90.dll", "msvcr110.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcr120.dll"]
+api_location: ["msvcrt.dll", "msvcr90.dll", "msvcr110.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr100.dll", "msvcr120.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["setjmp3", "_setjmp3"]
