@@ -54,7 +54,7 @@ The function determines a classification rule for wide-character codes. The foll
 |-------------|---------------------|
 |`wctype`|`<wctype.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 
