@@ -1,5 +1,5 @@
 ---
-title: "acos, acosf, acosl"
+title: "`acos`, `acosf`, `acosl`"
 description: "API reference for `acos`, `acosf`, and `acosl`; which calculate the arccosine of a floating-point value."
 ms.date: "1/15/2021"
 api_name: ["acosf", "acos", "acosl", "_o_acos", "_o_acosf"]
@@ -34,17 +34,17 @@ Value between -1 and 1, for which to calculate the arccosine (the inverse cosine
 
 The **`acos`** function returns the arccosine of *x* in the range 0 to π radians.
 
-By default, if *x* is less than -1 or greater than 1, **`acos`** returns an indefinite.
+By default, if *`x`* is less than -1 or greater than 1, **`acos`** returns an indefinite.
 
-|Input|SEH Exception|Matherr Exception|
+|Input|`SEH` Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|
-|± ∞|INVALID|_DOMAIN|
-|± QNAN,IND|none|_DOMAIN|
-|&#124;x&#124;>1|INVALID|_DOMAIN|
+|`± ∞`|`INVALID`|`_DOMAIN`|
+|`± QNAN, IND`|none|`_DOMAIN`|
+|&#124;`x`&#124;>1|`INVALID`|`_DOMAIN`|
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **`acos`** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **acos** always takes and returns a **`double`**.
+Because C++ allows overloading, you can call overloads of **`acos`** that take and return **`float`** and **`long double`** types. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`acos`** always takes and returns a **`double`**.
 
 If you use the `<tgmath.h>` `acos()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 

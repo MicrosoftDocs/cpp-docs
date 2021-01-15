@@ -1,6 +1,6 @@
 ---
-title: "cosh, coshf, coshl"
-description: "API reference for cosh, coshf, and coshl; which calculate the hyperbolic cosine of a floating-point value."
+title: "`cosh`, `coshf`, `coshl`"
+description: "API reference for `cosh`, `coshf`, and `coshl`; which calculate the hyperbolic cosine of a floating-point value."
 ms.date: "1/15/2021"
 api_name: ["cosh", "coshf", "coshl", "_o_cosh", "_o_coshf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
@@ -36,7 +36,7 @@ The hyperbolic cosine of *`x`*.
 
 By default, if the result is too large in a **`cosh`**, **`coshf`**, or **`coshl`** call, the function returns **`HUGE_VAL`** and sets **`errno`** to **`ERANGE`**.
 
-|Input|SEH Exception|Matherr Exception|
+|Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|
 |± **`QNAN`**, **`IND`**|none|**`_DOMAIN`**|
 |*`x`* ≥ 7.104760e+002|**`INEXACT`**+**`OVERFLOW`**|**`OVERFLOW`**|

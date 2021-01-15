@@ -1,5 +1,5 @@
 ---
-title: "sinh, sinhf, sinhl"
+title: "`sinh`, `sinhf`, `sinhl`"
 description: "API reference for calculating the hyperbolic sine of a floating-point value."
 ms.date: "1/15/2021"
 api_name: ["sinh", "sinhl", "sinhf", "sinhl", "_o_sinh", "_o_sinhf"]
@@ -34,7 +34,7 @@ Angle in radians.
 
 The **`sinh`** functions return the hyperbolic sine of *`x`*. By default, if the result is too large, **`sinh`** sets **`errno`** to **`ERANGE`** and returns ±**`HUGE_VAL`**.
 
-|Input|SEH Exception|Matherr Exception|
+|Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|
 |± `QNAN`,`IND`|None|`_DOMAIN`|
 |&#124;x&#124; ≥ 7.104760e+002|`OVERFLOW+INEXACT`|`OVERFLOW`|
@@ -56,7 +56,7 @@ By default, this function's global state is scoped to the application. To change
 |**`sinh`**, **`sinhf`**, **`sinhl`**|`<math.h>`|`<cmath>` or `<math.h>`|
 |**`sinh()`** macro | `<tgmath.h>` ||
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
