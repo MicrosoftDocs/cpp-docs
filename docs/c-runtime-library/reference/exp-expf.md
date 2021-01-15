@@ -45,7 +45,7 @@ The **`exp`** functions return the exponential value of the floating-point param
 
 |Input|SEH Exception|`Matherr` Exception|
 |-----------|-------------------|-----------------------|
-|± Quiet `NaN`, indeterminate|None|`_DOMAIN`|
+|± Quiet NaN, indeterminate|None|`_DOMAIN`|
 |± Infinity|`INVALID`|`_DOMAIN`|
 |x ≥ 7.097827e+002|`INEXACT+OVERFLOW`|`OVERFLOW`|
 |X ≤ -7.083964e+002|`INEXACT+UNDERFLOW`|`UNDERFLOW`|

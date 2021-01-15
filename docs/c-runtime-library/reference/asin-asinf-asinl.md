@@ -68,5 +68,5 @@ For more information, see [`acos`, `acosf`, `acosl`](acos-acosf-acosl.md).
 [`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)\
 [`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\
 [`_matherr`](matherr.md)\
-[`sin`, `sinf`, si`nl](sin-sinf-sinl.md)\
+[`sin`, `sinf`, `sinl`](sin-sinf-sinl.md)\
 [`tan`, `tanf`, `tanl`](tan-tanf-tanl.md)

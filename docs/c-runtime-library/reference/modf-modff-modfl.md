@@ -84,4 +84,4 @@ For -14.876543, the fraction is -0.876543 and the integer is -14
 
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
 [`frexp`](frexp.md)\
-[`ldexp`](ldexp.md)\
+[`ldexp`](ldexp.md)

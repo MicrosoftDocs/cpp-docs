@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: memset, wmemset"
+description: "Learn more about: `memset`, `wmemset`"
 title: "memset, wmemset"
 ms.date: "1/15/2021"
 api_name: ["wmemset", "memset", "_o_memset"]
@@ -127,4 +127,4 @@ After:  **** is a test of the wmemset function
 [`memchr`, `wmemchr`](memchr-wmemchr.md)\
 [`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)\
 [`memcpy`, wmemcpy](memcpy-wmemcpy.md)\
-[`_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l`](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)\
+[`_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l`](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)

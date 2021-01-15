@@ -1,6 +1,6 @@
 ---
-title: "tan, tanf, tanl"
-description: "API reference for tan, tanf, and tanl; which calculate the tangent of a floating-point value."
+title: "`tan`, `tanf`, `tanl`"
+description: "API reference for `tan`, `tanf`, and `tanl`; which calculate the tangent of a floating-point value."
 ms.date: "1/15/2021"
 api_name: ["tan", "tanf", "tanl", "_o_tan", "_o_tanf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
