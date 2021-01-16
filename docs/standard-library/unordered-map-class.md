@@ -226,7 +226,7 @@ The first two member functions return a forward iterator that points at the firs
 #include <unordered_map>
 #include <iostream>
 
-#typedef std::unordered_map<char, int> Mymap;
+typedef std::unordered_map<char, int> Mymap;
 int main()
 {
     Mymap c1;
