@@ -1,6 +1,6 @@
 ---
-title: "`tan`, `tanf`, `tanl`"
-description: "API reference for `tan`, `tanf`, and `tanl`; which calculate the tangent of a floating-point value."
+title: "tan, tanf, tanl"
+description: "API reference for tan, tanf, and tanl; which calculate the tangent of a floating-point value."
 ms.date: "1/15/2021"
 api_name: ["tan", "tanf", "tanl", "_o_tan", "_o_tanf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
@@ -37,7 +37,7 @@ Angle in radians.
 
 The **`tan`** functions return the tangent of *`x`*. If *`x`* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
 
-|Input|SEH Exception|**`Matherr`** Exception|
+|Input|SEH exception|**`Matherr`** exception|
 |-----------|-------------------|-------------------------|
 |`± QNAN`,`IND`|none|`_DOMAIN`|
 |`± INF`|**INVALID**|`_DOMAIN`|

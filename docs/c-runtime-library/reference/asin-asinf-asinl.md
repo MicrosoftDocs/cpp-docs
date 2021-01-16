@@ -36,7 +36,7 @@ The **`asin`** function returns the arcsine (the inverse sine function) of *`x`*
 
 By default, if *`x`* is less than -1 or greater than 1, **`asin`** returns an indefinite.
 
-|Input|SEH Exception|Matherr Exception|
+|Input|SEH exception|Matherr exception|
 |-----------|-------------------|-----------------------|
 |± ∞|**`INVALID`**|**`_DOMAIN`**|
 |± **`QNAN`**, **`IND`**|none|**`_DOMAIN`**|

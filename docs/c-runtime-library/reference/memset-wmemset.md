@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: `memset`, `wmemset`"
 title: "memset, wmemset"
+description: "Learn more about: memset, wmemset"
 ms.date: "1/15/2021"
 api_name: ["wmemset", "memset", "_o_memset"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
