@@ -1,6 +1,6 @@
 ---
-title: "`acos`, `acosf`, `acosl`"
-description: "API reference for `acos`, `acosf`, and `acosl`; which calculate the arccosine of a floating-point value."
+title: "acos, acosf, acosl"
+description: "API reference for acos, acosf, and acosl; which calculate the arccosine of a floating-point value."
 ms.date: "1/15/2021"
 api_name: ["acosf", "acos", "acosl", "_o_acos", "_o_acosf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
@@ -36,7 +36,7 @@ The **`acos`** function returns the arccosine of *x* in the range 0 to π radian
 
 By default, if *`x`* is less than -1 or greater than 1, **`acos`** returns an indefinite.
 
-|Input|`SEH` Exception|`Matherr` Exception|
+|Input|`SEH` exception|`Matherr` exception|
 |-----------|-------------------|-----------------------|
 |`± ∞`|`INVALID`|`_DOMAIN`|
 |`± QNAN, IND`|none|`_DOMAIN`|

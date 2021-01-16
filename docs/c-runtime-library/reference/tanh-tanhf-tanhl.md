@@ -36,7 +36,7 @@ Angle in radians.
 
 The **`tanh`** functions return the hyperbolic tangent of *`x`*. There's no error return.
 
-|Input|SEH Exception|**`Matherr`** Exception|
+|Input|SEH exception|**`Matherr`** exception|
 |-----------|-------------------|-------------------------|
 |± `QNAN`,`IND`|none|`_DOMAIN`|
 

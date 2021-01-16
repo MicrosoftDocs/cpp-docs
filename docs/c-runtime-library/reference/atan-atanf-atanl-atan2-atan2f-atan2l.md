@@ -44,7 +44,7 @@ Any numbers.
 
 **`atan2`** uses the signs of both parameters to determine the quadrant of the return value.
 
-|Input|SEH Exception|Matherr Exception|
+|Input|SEH exception|Matherr exception|
 |-----------|-------------------|-----------------------|
 |± **`QNAN`**, **`IND`**|none|**`_DOMAIN`**|
 
