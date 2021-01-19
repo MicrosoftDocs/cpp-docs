@@ -1,9 +1,9 @@
 ---
 description: "Learn more about: __CxxFrameHandler"
 title: "__CxxFrameHandler"
-ms.date: "11/04/2016"
+ms.date: "1/14/2021"
 api_name: ["__CxxFrameHandler"]
-api_location: ["msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr120.dll"]
+api_location: ["msvcr110.dll", "msvcrt.dll", "msvcr80.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll", "msvcr120.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["__CxxFrameHandler"]

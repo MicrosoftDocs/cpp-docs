@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;functional&gt;"
 title: "&lt;functional&gt;"
 ms.date: "02/21/2019"
-f1_keywords: ["<functional>", "functional/std::<functional>", "std::<functional>"]
+f1_keywords: ["<functional>"]
 helpviewer_keywords: ["functors", "functional header"]
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
 ---

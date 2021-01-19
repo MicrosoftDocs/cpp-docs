@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;cstdalign&gt;"
 title: "&lt;cstdalign&gt;"
 ms.date: "07/11/2019"
-f1_keywords: ["<cstdalign>", "cstdalign", "__alignas_is_defined", "__alignof_is_defined"]
+f1_keywords: ["<cstdalign>", "__alignas_is_defined", "__alignof_is_defined"]
 helpviewer_keywords: ["cstdalign header", "__alignas_is_defined", "__alignof_is_defined"]
 ms.assetid: 9d570924-d299-4225-9a58-8c4c820f5903
 ---

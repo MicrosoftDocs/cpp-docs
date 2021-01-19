@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;ostream&gt;"
 title: "&lt;ostream&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["<ostream>", "ostream/std::<ostream>", "std::<ostream>"]
+f1_keywords: ["<ostream>"]
 helpviewer_keywords: ["ostream header"]
 ms.assetid: 90c3b6fb-57cd-4ae7-99b8-8512f24a67d2
 ---

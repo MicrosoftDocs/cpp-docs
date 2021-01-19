@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;complex&gt;"
 title: "&lt;complex&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["<complex>", "std::<complex>"]
+f1_keywords: ["<complex>"]
 helpviewer_keywords: ["complex header"]
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
 ---
