@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;locale&gt;"
 title: "&lt;locale&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["<locale>", "locale/std::<locale>", "std::<locale>"]
+f1_keywords: ["<locale>"]
 helpviewer_keywords: ["locale header"]
 ms.assetid: ca56f9d2-7128-44da-8df1-f4c78c17fbf2
 ---

@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;string&gt;"
 title: "&lt;string&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["string/std::<string>", "<string>"]
+f1_keywords: ["<string>"]
 helpviewer_keywords: ["string header"]
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
 ---

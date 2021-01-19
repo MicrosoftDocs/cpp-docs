@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;hash_map&gt;"
 title: "&lt;hash_map&gt;"
 ms.date: "01/18/2018"
-f1_keywords: ["<hash_map>", "std::<hash_map>"]
+f1_keywords: ["<hash_map>"]
 helpviewer_keywords: ["hash_map header"]
 ---
 # &lt;hash_map&gt;

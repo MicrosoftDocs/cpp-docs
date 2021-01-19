@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;istream&gt;"
 title: "&lt;istream&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["istream/std::<istream>", "<istream>", "std::<istream>"]
+f1_keywords: ["<istream>"]
 helpviewer_keywords: ["istream header"]
 ms.assetid: efcf24e4-05d1-4719-ab0b-9e7ebe845d89
 ---

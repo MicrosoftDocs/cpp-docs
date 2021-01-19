@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;iterator&gt;"
 title: "&lt;iterator&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["<iterator>", "iterator/std::<iterator>"]
+f1_keywords: ["<iterator>"]
 helpviewer_keywords: ["iterator header"]
 ms.assetid: c61a3962-f3ed-411a-b5a3-e8b3c2b500bd
 ---

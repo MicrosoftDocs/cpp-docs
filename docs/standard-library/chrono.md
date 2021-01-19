@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;chrono&gt;"
 title: "&lt;chrono&gt;"
 ms.date: "05/07/2019"
-f1_keywords: ["chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "<chrono>", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
+f1_keywords: ["<chrono>", "chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
 ---
 # &lt;chrono&gt;
