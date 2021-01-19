@@ -1,9 +1,9 @@
 ---
 description: "Learn more about: ___lc_locale_name_func"
 title: "___lc_locale_name_func"
-ms.date: "4/2/2020"
+ms.date: "1/14/2021"
 api_name: ["___lc_locale_name_func", "_o____lc_locale_name_func"]
-api_location: ["msvcrt.dll", "msvcr110.dll", "msvcr100.dll", "msvcr90.dll", "msvcr120.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "api-ms-win-crt-private-l1-1-0.dll"]
+api_location: ["msvcrt.dll", "msvcr110.dll", "msvcr100.dll", "msvcr90.dll", "msvcr120.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "api-ms-win-crt-private-l1-1-0.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["___lc_locale_name_func"]
