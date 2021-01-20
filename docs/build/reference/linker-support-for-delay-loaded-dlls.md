@@ -1,47 +1,46 @@
 ---
-description: "Learn more about: Linker Support for Delay-Loaded DLLs"
-title: "Linker Support for Delay-Loaded DLLs"
-ms.date: "11/04/2016"
+description: "Learn more about: Linker support for delay-loaded DLLs"
+title: "Linker support for delay-loaded DLLs"
+ms.date: "01/19/2021"
 helpviewer_keywords: ["delayed loading of DLLs, linker support"]
-ms.assetid: b2d7e449-2809-42b1-9c90-2c0ca5e31a14
 ---
-# Linker Support for Delay-Loaded DLLs
+# Linker support for delay-loaded DLLs
 
-The MSVC linker now supports the delayed loading of DLLs. This relieves you of the need to use the Windows SDK functions **LoadLibrary** and **GetProcAddress** to implement DLL delayed loading.
+The MSVC linker supports the delayed loading of DLLs. This feature relieves you of the need to use the Windows SDK functions `LoadLibrary` and `GetProcAddress` to implement DLL delayed loading.
 
-Before Visual C++ 6.0, the only way to load a DLL at run time was by using **LoadLibrary** and **GetProcAddress**; the operating system would load the DLL when the executable or DLL using it was loaded.
+Without delayed load, the only way to load a DLL at run time is by using `LoadLibrary` and `GetProcAddress`; the operating system loads the DLL when the executable or DLL using it gets loaded.
 
-Beginning with Visual C++ 6.0, when implicitly linking with a DLL, the linker provides options to delay load the DLL until the program calls a function in that DLL.
+With delayed load, when you implicitly link a DLL, the linker provides options to delay the DLL load until the program calls a function in that DLL.
 
-An application can delay load a DLL using the [/DELAYLOAD (Delay Load Import)](delayload-delay-load-import.md) linker option with a helper function (default implementation provided by Visual C++). The helper function will load the DLL at run time by calling **LoadLibrary** and **GetProcAddress** for you.
+An application can delay load a DLL using the [`/DELAYLOAD` (Delay Load Import)](delayload-delay-load-import.md) linker option with a helper function. (A default helper function implementation is provided by Microsoft.) The helper function loads the DLL on demand at runtime by calling `LoadLibrary` and `GetProcAddress` for you.
 
-You should consider delay loading a DLL if:
+Consider delay loading a DLL if:
 
-- Your program may not call a function in the DLL.
+- Your program might not call a function in the DLL.
 
-- A function in the DLL may not get called until late in your program's execution.
+- A function in the DLL might not get called until late in your program's execution.
 
-The delayed loading of a DLL can be specified during the build of either a .EXE or .DLL project. A .DLL project that delays the loading of one or more DLLs should not itself call a delay-loaded entry point in Dllmain.
+The delayed loading of a DLL can be specified during the build of either an EXE or DLL project. A DLL project that delays the loading of one or more DLLs itself shouldn't call a delay-loaded entry point in `DllMain`.
 
-The following topics describe delay loading DLLs:
+The following articles describe delay loading DLLs:
 
-- [Specifying DLLs to Delay Load](specifying-dlls-to-delay-load.md)
+- [Specify DLLs to delay load](specifying-dlls-to-delay-load.md)
 
-- [Explicitly Unloading a Delay-Loaded DLL](explicitly-unloading-a-delay-loaded-dll.md)
+- [Explicitly unload a delay-loaded DLL](explicitly-unloading-a-delay-loaded-dll.md)
 
-- [Loading All Imports for a Delay-Loaded DLL](loading-all-imports-for-a-delay-loaded-dll.md)
+- [Load all imports for a delay-loaded DLL](loading-all-imports-for-a-delay-loaded-dll.md)
 
-- [Binding Imports](binding-imports.md)
+- [Bind delay-loaded imports](binding-imports.md)
 
-- [Error Handling and Notification](error-handling-and-notification.md)
+- [Error handling and notification](error-handling-and-notification.md)
 
-- [Dumping Delay-Loaded Imports](dumping-delay-loaded-imports.md)
+- [Dump delay-loaded imports](dumping-delay-loaded-imports.md)
 
-- [Constraints of Delay Loading DLLs](constraints-of-delay-loading-dlls.md)
+- [Constraints of delay loading DLLs](constraints-of-delay-loading-dlls.md)
 
-- [Understanding the Helper Function](understanding-the-helper-function.md)
+- [Understand the helper function](understanding-the-helper-function.md)
 
-- [Developing Your Own Helper Function](developing-your-own-helper-function.md)
+- [Develop your own helper function](developing-your-own-helper-function.md)
 
 ## See also
 

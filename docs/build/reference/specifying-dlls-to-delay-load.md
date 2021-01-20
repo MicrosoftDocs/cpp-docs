@@ -1,17 +1,16 @@
 ---
-description: "Learn more about: Specifying DLLs to Delay Load"
-title: "Specifying DLLs to Delay Load"
-ms.date: "11/04/2016"
+description: "Learn more about specifying DLLs to delay load"
+title: "Specify DLLs to delay load"
+ms.date: "01/19/2021"
 helpviewer_keywords: ["DELAYLOAD linker option", "delayed loading of DLLs", "delayed loading of DLLs, specifying", "/DELAYLOAD linker option"]
-ms.assetid: 94cbecfe-7a42-40d1-a618-9f2786bac0d8
 ---
-# Specifying DLLs to Delay Load
+# Specify DLLs to delay load
 
-You can specify which DLLs to delay load with the [/delayload](delayload-delay-load-import.md):`dllname` linker option. If you do not plan to use your own version of a helper function, you must also link your program with delayimp.lib (for desktop applications) or dloadhelper.lib (for store apps).
+You can specify which DLLs to delay load by using the [`/delayload:dllname`](delayload-delay-load-import.md) linker option. If you don't plan to use your own version of a helper function, you must also link your program with *`delayimp.lib`* (for desktop applications) or *`dloadhelper.lib`* (for UWP apps).
 
-The following is a simple example of delay loading a DLL:
+Here's a simple example of delay loading a DLL:
 
-```
+```cpp
 // cl t.cpp user32.lib delayimp.lib  /link /DELAYLOAD:user32.dll
 #include <windows.h>
 // uncomment these lines to remove .libs from command line
@@ -24,8 +23,8 @@ int main() {
 }
 ```
 
-Build the DEBUG version of the project. Step through the code using the debugger and you will notice that user32.dll is loaded only when you make the call to `MessageBox`.
+Build the DEBUG version of the project. Step through the code using the debugger and you'll notice that *`user32.dll`* is loaded only when you make the call to `MessageBox`.
 
 ## See also
 
-[Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)
+[Linker support for delay-loaded DLLs](linker-support-for-delay-loaded-dlls.md)
