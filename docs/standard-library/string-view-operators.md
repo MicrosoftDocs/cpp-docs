@@ -1,24 +1,24 @@
 ---
 title: "&lt;string_view&gt; operators"
 description: "API reference for the `string_view` operators, which are used to compare two `string_view` objects, or a `string_view` and some other string object" 
-ms.date: "9/4/2020"
-f1_keywords: ["xstring/basic_string_view::operator!=", "xstring/basic_string_view::operator&gt;", "xstring/basic_string_view::operator&gt;=", "xstring/basic_string_view::operator&lt;", "xstring/basic_string_view::operator&lt;&lt;", "xstring/basic_string_view::operator&lt;=", "xstring/basic_string_view::operator+", "xstring/basic_string_view::operator=="]
+ms.date: "01/15/2021"
+f1_keywords: ["xstring/basic_string_view::operator!=", "xstring/basic_string_view::operator&gt;", "xstring/basic_string_view::operator&gt;=", "xstring/basic_string_view::operator&lt;", "xstring/basic_string_view::operator&lt;&lt;", "xstring/basic_string_view::operator&lt;=", "xstring/basic_string_view::operator+", "xstring/basic_string_view::operator==", 'xstring/std::literals::string_view_literals::operator "sv', 'std::literals::string_view_literals::operator sv', 'std::literals::string_view_literals', 'string_view_literals']
 helpviewer_keywords: ["std::basic_string_view::operator!=", "std::basic_string_view::operator&gt;", "std::basic_string_view::operator&gt;=", "std::basic_string_view::operator&lt;", "std::basic_string_view::operator&lt;&lt;", "std::basic_string_view::operator&lt;=, std::basic_string_view::operator=="]
 ---
-# &lt;string_view&gt; operators
+# `<string_view>` operators
 
-Use these operators to compare two string_view objects, or a string_view and some other string object (for example [std::string](basic-string-class.md), or **char\***) for which an implicit conversion is provided.
+Use these operators to compare two `string_view` objects, or a `string_view` and some other string object (for example [`std::string`](basic-string-class.md), or `char*`) for which an implicit conversion is provided.
 
-[operator!=](#op_neq)\
-[operator&gt;](#op_gt)\
-[operator&gt;=](#op_gt_eq)\
-[operator&lt;](#op_lt)\
-[operator&lt;&lt;](#op_lt_lt)\
-[operator&lt;=](#op_lt_eq)\
-[operator==](#op_eq_eq)\
-[operator""sv](#op_sv)
+[`operator!=`](#op_neq)\
+[`operator>`](#op_gt)\
+[`operator>=`](#op_gt_eq)\
+[`operator<`](#op_lt)\
+[`operator<<`](#op_lt_lt)\
+[`operator<=`](#op_lt_eq)\
+[`operator==`](#op_eq_eq)\
+[`operator""sv`](#op_sv)
 
-## <a name="op_neq"></a> operator!=
+## <a name="op_neq"></a> `operator!=`
 
 Tests if the object on the left side of the operator is not equal to the object on the right side.
 
@@ -49,15 +49,15 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Return Value
 
-**`true`** if the object on the left side of the operator is not lexicographically equal to the object on the right side; otherwise **`false`**.
+**`true`** if the object on the left side of the operator isn't lexicographically equal to the object on the right side; otherwise **`false`**.
 
 ### Remarks
 
-An implicit conversion must exist from *convertible_string_type* to the string_view on the other side.
+An implicit conversion must exist from *convertible_string_type* to the `string_view` on the other side.
 
-The comparison is based on a pairwise lexicographical comparison of the character sequences. If they have the same number of elements and the elements are all equal, the two objects are equal. Otherwise, they are unequal.
+The comparison is based on a pairwise lexicographical comparison of the character sequences. If they have the same number of elements and the elements are all equal, the two objects are equal. Otherwise, they're unequal.
 
-## <a name="op_eq_eq"></a> operator==
+## <a name="op_eq_eq"></a> `operator==`
 
 Tests if the object on the left side of the operator is equal to the object on the right side.
 
@@ -92,13 +92,13 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Remarks
 
-An implicit conversion must exist from *convertible_string_type* to the string_view on the other side.
+An implicit conversion must exist from *convertible_string_type* to the `string_view` on the other side.
 
 The comparison is based on a pairwise lexicographical comparison of the character sequences. If they have the same number of elements and the elements are all equal, the two objects are equal.
 
-## <a name="op_lt"></a> operator&lt;
+## <a name="op_lt"></a> `operator<`
 
-Tests if the object on the left side of the operator is less than the object on the right sidestring_view
+Tests if the object on the left side of the operator is less than the object on the right side.
 
 ```cpp
 template <class CharType, class Traits>
@@ -157,7 +157,7 @@ int main()
 }
 ```
 
-## <a name="op_lt_eq"></a> operator&lt;=
+## <a name="op_lt_eq"></a> `operator<=`
 
 Tests if the object on the left side of the operator is less than or equal to the object on the right side.
 
@@ -192,11 +192,11 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Remarks
 
-See [operator&lt;](#op_lt).
+See [`operator<`](#op_lt).
 
-## <a name="op_lt_lt"></a> operator&lt;&lt;
+## <a name="op_lt_lt"></a> `operator<<`
 
-Writes a string_view into an output stream.
+Writes a `string_view` into an output stream.
 
 ```cpp
 template <class CharType, class Traits>
@@ -206,10 +206,10 @@ inline basic_ostream<CharType, Traits>& operator<<(
 
 ### Parameters
 
-*Ostr*\
+*`Ostr`*\
 an output stream being written to.
 
-*Str*\
+*`Str`*\
 The string_view to be entered into an output stream.
 
 ### Return Value
@@ -218,9 +218,9 @@ an output stream being written to.
 
 ### Remarks
 
-Use this operator to insert the contents of a string_view into an output stream, for example using [std::cout](iostream.md#cout).
+Use this operator to insert the contents of a `string_view` into an output stream, for example using [`std::cout`](iostream.md#cout).
 
-## <a name="op_gt"></a> operator&gt;
+## <a name="op_gt"></a> `operator>`
 
 Tests if the object on the left side of the operator is greater than the object on the right side.
 
@@ -251,13 +251,13 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Return Value
 
-**`true`** if the object on the left side of the operator is lexicographically greater than the string_view object on the right side; otherwise **`false`**.
+**`true`** if the object on the left side of the operator is lexicographically greater than the `string_view` object on the right side; otherwise **`false`**.
 
 ### Remarks
 
-See [operator&lt;](#op_lt).
+See [`operator<`](#op_lt).
 
-## <a name="op_gt_eq"></a> operator&gt;=
+## <a name="op_gt_eq"></a> `operator>=`
 
 Tests if the object on the left side of the operator is greater than or equal to the object on the right side.
 
@@ -280,10 +280,10 @@ bool operator>=(
 
 ### Parameters
 
-*left*\
+*`left`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
-*right*\
+*`right`*\
 Any convertible string type or an object of type `basic_string_view` to be compared.
 
 ### Return Value
@@ -292,11 +292,11 @@ Any convertible string type or an object of type `basic_string_view` to be compa
 
 ### Remarks
 
-See [operator&lt;](#op_lt).
+See [`operator<`](#op_lt).
 
-## <a name="op_sv"></a> operator"" sv (string_view literal)
+## <a name="op_sv"></a> `operator"" sv` (`string_view` literal)
 
-Constructs a string_view from a string literal. Requires namespace `std::literals::string_view_literals`.
+Constructs a `string_view` from a string literal. Requires namespace `std::literals::string_view_literals`.
 
 ### Example
 
@@ -313,8 +313,8 @@ using namespace literals::string_view_literals;
 
 ## Requirements
 
-[/std:c++17](../build/reference/std-specify-language-standard-version.md)
+[`/std:c++17`](../build/reference/std-specify-language-standard-version.md)
 
 ## See also
 
-[\<string_view>](../standard-library/string-view.md)
+[`<string_view>`](../standard-library/string-view.md)
