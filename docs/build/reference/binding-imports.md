@@ -1,16 +1,15 @@
 ---
-description: "Learn more about: Binding Imports"
-title: "Binding Imports"
-ms.date: "11/04/2016"
+description: "Learn more about binding delay-loaded imports"
+title: "Bind delay-loaded imports"
+ms.date: "01/19/2021"
 helpviewer_keywords: ["/DELAY:NOBIND linker option", "DELAY:NOBIND linker option"]
-ms.assetid: bb766038-deb1-41b1-bcbc-29a30e8c1e2a
 ---
-# Binding Imports
+# Bind delay-loaded imports
 
-The default linker behavior is to create a bindable import address table for the delay-loaded DLL. If the DLL is bound, the helper function will attempt to use the bound information instead of calling **GetProcAddress** on each of the referenced imports. If either the timestamp or the preferred address do not match those of the loaded DLL, the helper function will assume the bound import address table is out of date and will proceed as if it does not exist.
+The default linker behavior is to create a bindable import address table (IAT) for the delay-loaded DLL. If the DLL is bound, the helper function attempts to use the bound information instead of calling `GetProcAddress` on each of the referenced imports. If either the timestamp or the preferred address doesn't match the one in the loaded DLL, the helper function assumes the bound import address table is out of date. It proceeds as if the IAT doesn't exist.
 
-If you never intend to bind the DLL's delay-loaded imports, specifying [/delay](delay-delay-load-import-settings.md):nobind on the linker's command line will prevent the bound import address table from being generated and consuming space in the image file.
+If you never intend to bind the delay-loaded imports of a DLL, specify [`/delay:nobind`](delay-delay-load-import-settings.md) on the linker command line. The linker won't generate the bound import address table, which saves space in the image file.
 
 ## See also
 
-[Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)
+[Linker support for delay-loaded DLLs](linker-support-for-delay-loaded-dlls.md)

@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: Unloading a Delay-Loaded DLL"
-title: "Unloading a Delay-Loaded DLL"
-ms.date: "11/04/2016"
+description: "Learn more about unloading a delay-loaded DLL"
+title: "Unload a delay-loaded DLL"
+ms.date: "01/19/2021"
 helpviewer_keywords: ["__FUnloadDelayLoadedDLL2", "delayed loading of DLLs, unloading"]
-ms.assetid: 6463bc71-020e-4aff-a4ca-90360411c54e
 ---
-# Unloading a Delay-Loaded DLL
+# Unload a delay-loaded DLL
 
-The default-supplied delay-load helper checks to see if the delay-load descriptors have a pointer and a copy of the original import address table (IAT) in the pUnloadIAT field. If so, it will save a pointer in a list to the import delay descriptor. This enables the helper function to find the DLL by name to support unloading that DLL explicitly.
+The default delay-load helper checks to see if the delay-load descriptors have a pointer and a copy of the original import address table (IAT) in the `pUnloadIAT` field. If so, the helper saves a pointer in a list to the import delay descriptor. This entry lets the helper function find the DLL by name, to support unloading that DLL explicitly.
 
 Here are the associated structures and functions for explicitly unloading a delay-loaded DLL:
 
@@ -36,14 +35,14 @@ ExternC
 PUnloadInfo __puiHead;
 ```
 
-The UnloadInfo structure is implemented using a C++ class that uses **LocalAlloc** and **LocalFree** implementations as its operator **`new`** and operator **`delete`** respectively. These options are kept in a standard linked list using __puiHead as the head of the list.
+The `UnloadInfo` structure is implemented using a C++ class that uses `LocalAlloc` and `LocalFree` implementations as its `operator new` and `operator delete`, respectively. These options are kept in a standard linked list that uses `__puiHead` as the head of the list.
 
-Calling __FUnloadDelayLoadedDLL will attempt to find the name you provide in the list of loaded DLLs (an exact match is required). If found, the copy of the IAT in pUnloadIAT is copied over the top of the running IAT to restore the thunk pointers, the library is freed with **FreeLibrary**, the matching **UnloadInfo** record is unlinked from the list and deleted, and TRUE is returned.
+When you call `__FUnloadDelayLoadedDLL`, it attempts to find the name you provide in the list of loaded DLLs. (An exact match is required.) If found, the copy of the IAT in `pUnloadIAT` is copied over the top of the running IAT to restore the thunk pointers. Then, the library is freed by using `FreeLibrary`, the matching `UnloadInfo` record is unlinked from the list and deleted, and `TRUE` is returned.
 
-The argument to the function __FUnloadDelayLoadedDLL2 is case sensitive. For example, you would specify:
+The argument to the function `__FUnloadDelayLoadedDLL2` is case-sensitive. For example, you would specify:
 
 ```cpp
-__FUnloadDelayLoadedDLL2("user32.DLL");
+__FUnloadDelayLoadedDLL2("user32.dll");
 ```
 
 and not:
@@ -54,4 +53,4 @@ __FUnloadDelayLoadedDLL2("User32.DLL");.
 
 ## See also
 
-[Understanding the Helper Function](understanding-the-helper-function.md)
+[Understanding the helper function](understanding-the-helper-function.md)

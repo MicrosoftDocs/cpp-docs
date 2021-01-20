@@ -1,38 +1,37 @@
 ---
-description: "Learn more about: Calling Conventions, Parameters, and Return Type"
-title: "Calling Conventions, Parameters, and Return Type"
-ms.date: "02/13/2019"
+description: "Learn more about: Delay load calling conventions, parameters, and return type"
+title: "Calling conventions, parameters, and return type"
+ms.date: "01/19/2021"
 helpviewer_keywords: ["calling conventions, helper functions", "helper functions, calling conventions", "helper functions, return types"]
-ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
 ---
-# Calling Conventions, Parameters, and Return Type
+# Delay load helper calling conventions, parameters, and return type
 
-The helper routine's prototype is:
+The prototype for the delay load helper routine is:
 
-```
+```C
 FARPROC WINAPI __delayLoadHelper2(
     PCImgDelayDescr pidd,
     FARPROC * ppfnIATEntry
 );
 ```
 
-### Parameters
+## Parameters
 
-*pidd*<br/>
-A **`const`** pointer to a `ImgDelayDescr` that contains the offsets of various import-related data, a timestamp for binding information, and a set of attributes that provide further information about the descriptor content. Currently there's only one attribute, `dlattrRva`, which indicates that the addresses in the descriptor are relative virtual addresses. For more information, see the declarations in *delayimp.h*.
+*`pidd`*<br/>
+A **`const`** pointer to a `ImgDelayDescr` that contains the offsets of various import-related data, a timestamp for binding information, and a set of attributes that provide further information about the descriptor content. Currently there's only one attribute, `dlattrRva`, which indicates that the addresses in the descriptor are relative virtual addresses. For more information, see the declarations in *`delayimp.h`*.
 
-For the definition of the `PCImgDelayDescr` structure, see [Structure and Constant Definitions](structure-and-constant-definitions.md).
+For the definition of the `PCImgDelayDescr` structure, see [Structure and constant definitions](structure-and-constant-definitions.md).
 
-*ppfnIATEntry*<br/>
-A pointer to the slot in the delay load import address table (IAT) that's updated with the address of the imported function. The helper routine needs to store the same value that it returns into this location.
+*`ppfnIATEntry`*<br/>
+A pointer to a slot in the delay load import address table (IAT). It's the slot that's updated with the address of the imported function. The helper routine needs to store the same value that it returns into this location.
 
-## Expected Return Values
+## Expected return values
 
 If the function is successful, it returns the address of the imported function.
 
-If the function fails, it raises an exception and returns 0. Three types of exceptions can be raised:
+If the function fails, it raises a structured exception and returns 0. Three types of exceptions can be raised:
 
-- Invalid parameter, which happens if the attributes in `pidd` aren't specified correctly.
+- Invalid parameter, which happens if the attributes in *`pidd`* aren't specified correctly.
 
 - `LoadLibrary` failed on the specified DLL.
 
@@ -42,13 +41,13 @@ It's your responsibility to handle these exceptions.
 
 ## Remarks
 
-The calling convention for the helper function is **`__stdcall`**. The type of the return value isn't relevant, so FARPROC is used. This function has C linkage.
+The calling convention for the helper function is **`__stdcall`**. The type of the return value isn't relevant, so `FARPROC` is used. This function has C linkage, which means it needs to be wrapped by `extern "C"` when declared in C++ code. The `ExternC` macro takes care of this wrapper for you.
 
-The return value of the delay load helper needs to be stored in the passed-in function pointer location, unless you want your helper routine to be used as a notification hook. In that case, your code is responsible for finding the appropriate function pointer to return. The thunk code the linker generates then takes that return value as the real target of the import and jumps directly to it.
+Store the return value of the helper function in the passed-in function pointer location, unless you want to use your helper routine as a notification hook. In that case, your code is responsible for finding the appropriate function pointer to return. The thunk code the linker generates then takes that return value as the real target of the import and jumps directly to it.
 
 ## Sample
 
-The following code shows how to implement a simple hook function.
+The following code shows how to implement a basic hook function.
 
 ```C
 FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
@@ -122,11 +121,13 @@ FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
 }
 
 /*
-and then at global scope somewhere
-const PfnDliHook __pfnDliNotifyHook2 = delayHook;
+and then at global scope somewhere:
+
+ExternC const PfnDliHook __pfnDliNotifyHook2 = delayHook;
+ExternC const PfnDliHook __pfnDliFailureHook2 = delayHook;
 */
 ```
 
 ## See also
 
-[Understanding the Helper Function](understanding-the-helper-function.md)
+[Understanding the helper function](understanding-the-helper-function.md)
