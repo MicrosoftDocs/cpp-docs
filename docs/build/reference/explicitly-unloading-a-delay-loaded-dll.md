@@ -1,19 +1,18 @@
 ---
-description: "Learn more about: Explicitly Unloading a Delay-Loaded DLL"
-title: "Explicitly Unloading a Delay-Loaded DLL"
-ms.date: "11/04/2016"
+description: "Learn more about: Explicitly unloading a delay-loaded DLL"
+title: "Explicitly unload a delay-loaded DLL"
+ms.date: "01/19/2021"
 helpviewer_keywords: ["/DELAY:UNLOAD linker option", "DELAY:UNLOAD linker option", "__FUnloadDelayLoadedDLL2", "delayed loading of DLLs, unloading"]
-ms.assetid: 1c4c5172-fd06-45d3-9e4f-f12343176b3c
 ---
-# Explicitly Unloading a Delay-Loaded DLL
+# Explicitly unload a delay-loaded DLL
 
-The [/delay](delay-delay-load-import-settings.md):unload linker option allows you to unload a DLL that was delay loaded. By default, when your code unloads the DLL (using /delay:unload and **__FUnloadDelayLoadedDLL2**), the delay-loaded imports remain in the import address table (IAT). However, if you use /delay:unload on the linker command line, the helper function will support the explicit unloading of the DLL, resetting the IAT to its original form; the now-invalid pointers will be overwritten. The IAT is a field in the [ImgDelayDescr](calling-conventions-parameters-and-return-type.md) that contains the address of a copy of the original IAT (if it exists).
+The [`/delay:unload`](delay-delay-load-import-settings.md) linker option allows your code to explicitly unload a DLL that was delay loaded. By default, when your code unloads the DLL, the delay-loaded imports remain in the import address table (IAT). However, if you use **`/delay:unload`** on the linker command line, the helper function supports the explicit unloading of the DLL by a `__FUnloadDelayLoadedDLL2` call, and resets the IAT to its original form. The now-invalid pointers get overwritten. The IAT is a field in the [`ImgDelayDescr`](calling-conventions-parameters-and-return-type.md) structure that contains the address of a copy of the original IAT, if one exists.
 
 ## Example
 
 ### Code
 
-```
+```C
 // link with /link /DELAYLOAD:MyDLL.dll /DELAY:UNLOAD
 #include <windows.h>
 #include <delayimp.h>
@@ -42,12 +41,12 @@ int main()
 
 Important notes on unloading a delay-loaded DLL:
 
-- You can find the implementation of the **__FUnloadDelayLoadedDLL2** function in the file \VC7\INCLUDE\DELAYHLP.CPP.
+- You can find the implementation of the `__FUnloadDelayLoadedDLL2` function in the file *`delayhlp.cpp`*, in the VC *`include`* directory.
 
-- The name parameter of the **__FUnloadDelayLoadedDLL2** function must exactly match (including case) what the import library contains (that string is also in the import table in the image). You can view the contents of the import library with [DUMPBIN /DEPENDENTS](dependents.md). If a case-insensitive string match is desired, you can update **__FUnloadDelayLoadedDLL2** to use one of the CRT string functions or a Windows API call.
+- The *`name`* parameter of the `__FUnloadDelayLoadedDLL2` function must exactly match (including case) what the import library contains. (That string is also in the import table in the image.) You can view the contents of the import library by using [`DUMPBIN /DEPENDENTS`](dependents.md). If you prefer a case-insensitive string match, you can update `__FUnloadDelayLoadedDLL2` to use one of the case-insensitive CRT string functions, or a Windows API call.
 
-See [Unloading a Delay-Loaded DLL](unloading-a-delay-loaded-dll.md) for more information.
+For more information, see [Unload a delay-loaded DLL](unloading-a-delay-loaded-dll.md).
 
 ## See also
 
-[Linker Support for Delay-Loaded DLLs](linker-support-for-delay-loaded-dlls.md)
+[Linker support for delay-loaded DLLs](linker-support-for-delay-loaded-dlls.md)
