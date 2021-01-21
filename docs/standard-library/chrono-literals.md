@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: chrono literals"
+description: "Learn more about: `chrono` literals"
 title: "chrono literals"
-ms.date: "11/04/2016"
-ms.assetid: 1a9e23b1-256f-4570-8226-5fa7364fb032
+f1_keywords: ["chrono/std::literals::chrono_literals", "std::literals::chrono_literals", "chrono_literals"]
+ms.date: "01/15/2021"
 ---
-# chrono literals
+# `chrono` literals
 
-(C++14) The \<chrono> header defines 12 [user-defined literals](../cpp/user-defined-literals-cpp.md) to facilitate using literals that represent hours, minutes, seconds, milliseconds, microseconds, and nanoseconds. Each user-defined literal has an integral and a floating-point overload. The literals are defined in the literals::chrono_literals inline namespace which is brought into scope automatically when std::chrono is in scope.
+(C++14) The `<chrono>` header defines 12 [user-defined literals](../cpp/user-defined-literals-cpp.md) that represent hours, minutes, seconds, milliseconds, microseconds, and nanoseconds. Each user-defined literal has an integral and a floating-point overload. The literals are defined in the `literals::chrono_literals` inline namespace, which is brought into scope automatically when `std::chrono` is in scope.
 
 ## Syntax
 
@@ -53,13 +53,13 @@ inline namespace literals {
 } // inline namespace literals
 ```
 
-## Return Value
+## Return value
 
-The literals that take a **`long long`** argument return a value or the corresponding type. The literals that take a floating point argument return a [duration](../standard-library/duration-class.md).
+The literals that take a **`long long`** argument return a value or the corresponding type. The literals that take a floating point argument return a [`duration`](../standard-library/duration-class.md).
 
 ## Example
 
-The following examples sow how to use the chrono literals.
+The following examples show how to use the `chrono` literals.
 
 ```cpp
 constexpr auto day = 24h;

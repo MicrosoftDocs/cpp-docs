@@ -1,19 +1,18 @@
 ---
-description: "Learn more about: Calculating Necessary Values"
-title: "Calculating Necessary Values"
-ms.date: "11/04/2016"
+description: "Learn more about: Calculating necessary values for delay loading"
+title: "Calculate necessary values for delay loading"
+ms.date: "01/19/2021"
 helpviewer_keywords: ["helper functions, calculating necessary values"]
-ms.assetid: 4f037d0f-881a-4a48-a9d2-9f8872dfccb7
 ---
-# Calculating Necessary Values
+# Calculate necessary values for delay loading
 
-Two critical pieces of information need to be calculated by the delay helper routine. To that end, there are two inline functions in delayhlp.cpp for calculating this information.
+The delay load helper routine needs to calculate two critical pieces of information. To help, there are two inline functions in *`delayhlp.cpp`* to calculate this information.
 
-- The first calculates the index of the current import into the three different tables (import address table (IAT), bound import address table (BIAT), and unbound import address table (UIAT)).
+- The first, `IndexFromPImgThunkData`, calculates the index of the current import into the three different tables (import address table (IAT), bound import address table (BIAT), and unbound import address table (UIAT)).
 
-- The second counts the number of imports in a valid IAT.
+- The second, `CountOfImports`, counts the number of imports in a valid IAT.
 
-```cpp
+```C
 // utility function for calculating the index of the current import
 // for all the tables (INT, BIAT, UIAT, and IAT).
 __inline unsigned
@@ -37,4 +36,4 @@ CountOfImports(PCImgThunkData pitdBase) {
 
 ## See also
 
-[Understanding the Helper Function](understanding-the-helper-function.md)
+[Understanding the helper function](understanding-the-helper-function.md)

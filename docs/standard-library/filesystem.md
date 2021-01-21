@@ -1,14 +1,13 @@
 ---
 title: "&lt;filesystem&gt;"
 description: "Describes the classes, functions, and types in the filesystem header of the Standard C++ library."
-ms.date: "01/22/2020"
-f1_keywords: ["<filesystem>"]
-ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
+ms.date: "01/15/2021"
+f1_keywords: ["<filesystem>", "filesystem/std::filesystem", "std::filesystem", "std::experimental::filesystem"]
 no-loc: [filesystem, experimental, char, wchar_t, char16_t, char32_t]
 ---
-# &lt;filesystem&gt;
+# `filesystem`
 
-Include the header &lt;filesystem> for access to classes and functions that manipulate and retrieve information about paths, files, and directories.
+Include the header `<filesystem>` for access to classes and functions that manipulate and retrieve information about paths, files, and directories.
 
 ## Syntax
 
@@ -86,18 +85,18 @@ For more information and code examples, see [File system navigation (C++)](../st
 
 |Name|Description|
 |-|-|
-|[directory_entry class](../standard-library/directory-entry-class.md)|Describes an object that is returned by a `directory_iterator` or a `recursive_directory_iterator` and contains a `path`.|
-|[directory_iterator class](../standard-library/directory-iterator-class.md)|Describes an input iterator that sequences through the file names in a file-system directory.|
-|[filesystem_error class](../standard-library/filesystem-error-class.md)|A base class for exceptions that are thrown to report a low-level system overflow.|
-|[path class](../standard-library/path-class.md)|Defines a class that stores an object of template type `String` that is suitable for use as a file name.|
-|[recursive_directory_iterator class](../standard-library/recursive-directory-iterator-class.md)|Describes an input iterator that sequences through the file names in a file-system directory. The iterator can also descend into subdirectories.|
-|[file_status class](../standard-library/file-status-class.md)|Wraps a `file_type`.|
+|[`directory_entry` class](../standard-library/directory-entry-class.md)|Describes an object that is returned by a `directory_iterator` or a `recursive_directory_iterator` and contains a `path`.|
+|[`directory_iterator` class](../standard-library/directory-iterator-class.md)|Describes an input iterator that sequences through the file names in a file-system directory.|
+|[`filesystem_error` class](../standard-library/filesystem-error-class.md)|A base class for exceptions that are thrown to report a low-level system overflow.|
+|[`path` class](../standard-library/path-class.md)|Defines a class that stores an object of template type `String` that is suitable for use as a file name.|
+|[`recursive_directory_iterator` class](../standard-library/recursive-directory-iterator-class.md)|Describes an input iterator that sequences through the file names in a file-system directory. The iterator can also descend into subdirectories.|
+|[`file_status` class](../standard-library/file-status-class.md)|Wraps a `file_type`.|
 
 ### Structs
 
 |Name|Description|
 |-|-|
-|[space_info structure](../standard-library/space-info-structure.md)|Holds information about a volume.|
+|[`space_info` structure](../standard-library/space-info-structure.md)|Holds information about a volume.|
 
 ## Functions
 
@@ -111,11 +110,11 @@ For more information and code examples, see [File system navigation (C++)](../st
 
 |Name|Description|
 |-|-|
-|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|An enumeration that is used with [copy_file](../standard-library/filesystem-functions.md#copy_file) and determines behavior if a destination file already exists.|
-|[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|An enumeration that specifies options for directory iterators.|
-|[file_type](../standard-library/filesystem-enumerations.md#file_type)|An enumeration for file types.|
-|[perm_options](../standard-library/filesystem-enumerations.md#perm_options)| Enumerates options for the `permissions` function. |
-|[perms](../standard-library/filesystem-enumerations.md#perms)|A bitmask type used to convey permissions and options to permissions|
+|[`copy_options`](../standard-library/filesystem-enumerations.md#copy_options)|An enumeration that is used with [copy_file](../standard-library/filesystem-functions.md#copy_file) and determines behavior if a destination file already exists.|
+|[`directory_options`](../standard-library/filesystem-enumerations.md#directory_options)|An enumeration that specifies options for directory iterators.|
+|[`file_type`](../standard-library/filesystem-enumerations.md#file_type)|An enumeration for file types.|
+|[`perm_options`](../standard-library/filesystem-enumerations.md#perm_options)| Enumerates options for the `permissions` function. |
+|[`perms`](../standard-library/filesystem-enumerations.md#perms)|A bitmask type used to convey permissions and options to permissions|
 
 ## See also
 
