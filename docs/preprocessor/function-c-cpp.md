@@ -1,24 +1,24 @@
 ---
-description: "Learn more about: function pragma"
+description: "Learn more about the function pragma directive in Microsoft C/C++"
 title: "function pragma"
-ms.date: "08/29/2019"
+ms.date: 01/22/2021
 f1_keywords: ["function_CPP", "vc-pragma.function"]
-helpviewer_keywords: ["function pragma", "pragmas, function"]
-ms.assetid: cbd1bd60-fabf-4b5a-9c3d-2d9f4b871365
+helpviewer_keywords: ["function pragma", "pragma, function"]
+no-loc: ["pragma"]
 ---
-# function pragma
+# `function` pragma
 
 Tells the compiler to generate calls to functions specified in the pragma's argument list, instead of inlining them.
 
 ## Syntax
 
-> **#pragma function(** *function1* [ **,** *function2* ... ] **)**
+> **`#pragma function(`** *function1* [ **`,`** *function2* ... ] **`)`**
 
 ## Remarks
 
-Intrinsic functions are normally generated as inline code, not as function calls. If you use the [intrinsic pragma](intrinsic.md) or the [/Oi](../build/reference/oi-generate-intrinsic-functions.md) compiler option to tell the compiler to generate intrinsic functions, you can use the **function** pragma to explicitly force a function call. Once a **function** pragma is seen, it takes effect at the first function definition that contains a specified intrinsic function. The effect continues to the end of the source file, or to the appearance of an `intrinsic` pragma specifying the same intrinsic function. You can only use the **function** pragma outside of a function, at the global level.
+Intrinsic functions are normally generated as inline code, not as function calls. If you use the [`intrinsic` pragma](intrinsic.md) or the [`/Oi`](../build/reference/oi-generate-intrinsic-functions.md) compiler option to tell the compiler to generate intrinsic functions, you can use the **`function`** pragma to explicitly force a function call. Once a **`function`** pragma is seen, it takes effect at the first function definition that contains a specified intrinsic function. The effect continues to the end of the source file, or to the appearance of an `intrinsic` pragma specifying the same intrinsic function. You can only use the **`function`** pragma outside of a function, at the global level.
 
-For lists of the functions that have intrinsic forms, see [intrinsic pragma](intrinsic.md).
+For lists of the functions that have intrinsic forms, see [`intrinsic` pragma](intrinsic.md).
 
 ## Example
 
@@ -74,4 +74,4 @@ str is '!!!!!!!!!!!!!!!'
 
 ## See also
 
-[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)
