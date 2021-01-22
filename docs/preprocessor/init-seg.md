@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: init_seg pragma"
+description: "Learn more about the init_seg pragma directive in Microsoft C/C++"
 title: "init_seg pragma"
-ms.date: "08/29/2019"
+ms.date: 01/22/2021
 f1_keywords: ["vc-pragma.init_seg", "init_seg_CPP"]
-helpviewer_keywords: ["pragmas, init_seg", "init_seg pragma", "data segment initializing [C++]"]
-ms.assetid: 40a5898a-5c85-4aa9-8d73-3d967eb13610
+helpviewer_keywords: ["pragma, init_seg", "init_seg pragma", "data segment initializing [C++]"]
+no-loc: ["pragma"]
 ---
-# init_seg pragma
+# `init_seg` pragma
 
 **C++ Specific**
 
@@ -14,23 +14,23 @@ Specifies a keyword or code section that affects the order in which startup code
 
 ## Syntax
 
-> **#pragma init_seg(** { **compiler** | **lib** | **user** | "*section-name*" [ **,** *func-name* ] } **)**
+> **`#pragma init_seg(`** { **`compiler`** | **`lib`** | **`user`** | "*section-name*" [ **`,`** *func-name* ] } **`)`**
 
 ## Remarks
 
 The terms *segment* and *section* have the same meaning in this article.
 
-Because code is sometimes required to initialize global static objects, you must specify when to construct the objects. In particular, it's important to use the **init_seg** pragma in dynamic-link libraries (DLLs), or in libraries that require initialization.
+Because code is sometimes required to initialize global static objects, you must specify when to construct the objects. In particular, it's important to use the **`init_seg`** pragma in dynamic-link libraries (DLLs), or in libraries that require initialization.
 
-The options to the **init_seg** pragma are:
+The options to the **`init_seg`** pragma are:
 
-**compiler**\
+**`compiler`**\
 Reserved for Microsoft C run-time library initialization. Objects in this group are constructed first.
 
-**lib**\
-Available for third-party class-library vendors' initializations. Objects in this group are constructed after the ones marked as **compiler**, but before any others.
+**`lib`**\
+Available for third-party class-library vendors' initializations. Objects in this group are constructed after the ones marked as **`compiler`**, but before any others.
 
-**user**\
+**`user`**\
 Available to any user. Objects in this group are constructed last.
 
 *section-name*\
@@ -38,10 +38,10 @@ Allows explicit specification of the initialization section. Objects in a user-s
 
 The *section-name* you give will contain pointers to helper functions that will construct the global objects declared after the pragma in that module.
 
-For a list of names you shouldn't use when creating a section, see [/SECTION](../build/reference/section-specify-section-attributes.md).
+For a list of names you shouldn't use when creating a section, see [`/SECTION`](../build/reference/section-specify-section-attributes.md).
 
 *func-name*\
-Specifies a function to be called in place of `atexit` when the program exits. This helper function also calls [atexit](../c-runtime-library/reference/atexit.md) with a pointer to the destructor for the global object. If you specify a function identifier in the pragma of the form,
+Specifies a function to be called in place of `atexit` when the program exits. This helper function also calls [`atexit`](../c-runtime-library/reference/atexit.md) with a pointer to the destructor for the global object. If you specify a function identifier in the pragma of the form,
 
 ```cpp
 int __cdecl myexit (void (__cdecl *pf)(void))
@@ -53,13 +53,13 @@ If you need to defer initialization (for example, in a DLL) you may choose to sp
 
 There are no quotes around the identifier for the `atexit` replacement.
 
-Your objects will still be placed in the sections defined by the other `XXX_seg` pragmas.
+Your objects will still be placed in the sections defined by the other `XXX_seg` pragma directives.
 
 The objects that are declared in the module aren't automatically initialized by the C run-time. Your code has to do the initialization.
 
 By default, `init_seg` sections are read only. If the section name is `.CRT`, the compiler silently changes the attribute to read only, even if it's marked as read, write.
 
-You can't specify **init_seg** more than once in a translation unit.
+You can't specify **`init_seg`** more than once in a translation unit.
 
 Even if your object doesn't have a user-defined constructor, one explicitly defined in code, the compiler may generate one for you. For example, it may create one to bind v-table pointers. When needed, your code calls the compiler-generated constructor.
 
@@ -146,4 +146,4 @@ A()
 
 ## See also
 
-[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)

@@ -6,32 +6,34 @@ f1_keywords: ["VC.Project.VCCLWCECompilerTool.AdditionalIncludeDirectories", "VC
 helpviewer_keywords: ["/I compiler option [C++]", "Additional Include Directories compiler option", "I compiler option [C++]", "-I compiler option [C++]", "set include directories", "include directories, compiler option [C++]"]
 ms.assetid: 3e9add2a-5ed8-4d15-ad79-5b411e313a49
 ---
-# /I (Additional include directories)
+# `/I` (Additional include directories)
 
 Adds a directory to the list of directories searched for include files.
 
 ## Syntax
 
-> **/I**[ ]*directory*
+> **`/I`** *directory*
 
 ### Arguments
 
-*directory*<br/>
-The directory to be added to the list of directories searched for include files.
+*directory*\
+The directory to add to the list of directories searched for include files. The space between `/I` and *directory* is optional. Directories that include spaces must be enclosed in double quotes. A directory may be an absolute path or a relative path.
 
 ## Remarks
 
 To add more than one directory, use this option more than once. Directories are searched only until the specified include file is found.
 
-You can use this option with the ([/X (Ignore Standard Include Paths)](x-ignore-standard-include-paths.md)) option.
+You can use this option on the same command line as the ([`/X` (Ignore standard include paths)](x-ignore-standard-include-paths.md)) option.
+
+A [`#include` directive](../../preprocessor/hash-include-directive-c-cpp.md) can be specified in double-quote (or local-first) form, for example, `#include "local.h"`. Or, it can be specified in angle-bracket (or include-path-first) form, for example, `#include <iostream>`.
 
 The compiler searches directories in the following order:
 
-1. If specified using a [#include directive](../../preprocessor/hash-include-directive-c-cpp.md) in double-quote form, it first searches local directories. The search begins in the same directory as the file that contains the **#include** statement. If this fails to find the file, it searches in the directories of the currently opened include files, in the reverse order in which they were opened. The search begins in the directory of the parent include file and continues upward through the directories of any grandparent include files.
+1. If the **`#include`** directive is specified using double-quote form, it first searches local directories. The search begins in the same directory as the file that contains the **`#include`** directive. If it fails to find the file, it searches next in the directories of the currently opened include files, in the reverse order in which they were opened. The search begins in the directory of the parent include file and continues upward through the directories of any grandparent include files.
 
-1. If specified using a **#include** directive in angle bracket form, or if the local directory search has failed, it searches directories specified by using the **/I** option, in the order that CL encounters them on the command line.
+1. If the **`#include`** directive is specified in angle-bracket form, or if the local directory search has failed, it searches directories specified by using the **`/I`** option, in the order they're specified on the command line.
 
-1. Directories specified in the **INCLUDE** environment variable.
+1. Directories specified in the **`INCLUDE`** environment variable.
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -39,7 +41,7 @@ The compiler searches directories in the following order:
 
 1. Select the **Configuration Properties** > **C/C++** > **General** property page.
 
-1. Modify the **Additional Include Directories** property.
+1. Modify the **Additional Include Directories** property. You can specify more than one directory at a time in this property. Directories must be separated by a semicolon (**`;`**).
 
 ### To set this compiler option programmatically
 
@@ -47,10 +49,10 @@ The compiler searches directories in the following order:
 
 ## Example
 
-The following command looks for the include files requested by MAIN.c in the following order: First, if specified by using double-quotes, local files are searched. Next, search continues in the \INCLUDE directory, then in the \MY\INCLUDE directory, and finally in the directories assigned to the INCLUDE environment variable.
+The following command looks for the include files requested by *`main.c`* in the following order: First, if specified by using double-quotes, local files are searched. Next, search continues in the *`\include`* directory, then in the *`\my\include`* directory, and finally in the directories assigned to the **`INCLUDE`** environment variable, in left to right order.
 
-```
-CL /I \INCLUDE /I\MY\INCLUDE MAIN.C
+```cmd
+CL /I \include /I\my\include main.c
 ```
 
 ## See also
