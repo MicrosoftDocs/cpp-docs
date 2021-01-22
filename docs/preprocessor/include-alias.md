@@ -79,7 +79,7 @@ The filename reported in error messages, or as the value of the predefined `__FI
 #include "VERYLONGFILENAME.H"
 ```
 
-An error in *VERYLONGFILENAME.H* produces the following error message:
+An error in *`VERYLONGFILENAME.H`* produces the following error message:
 
 ```Output
 myfile.h(15) : error C2059 : syntax error
@@ -93,7 +93,7 @@ Also note that transitivity isn't supported. Given the following directives,
 #include "one.h"
 ```
 
-the compiler searches for the file *two.h* rather than *three.h*.
+the compiler searches for the file *`two.h`* rather than *`three.h`*.
 
 ## See also
 

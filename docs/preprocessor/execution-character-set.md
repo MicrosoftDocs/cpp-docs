@@ -8,7 +8,7 @@ no-loc: ["pragma"]
 ---
 # `execution_character_set` pragma
 
-Specifies the execution character set used for string and character literals. This directive is not needed for literals marked with the `u8` prefix.
+Specifies the execution character set used for string and character literals. This directive isn't needed for literals marked with the `u8` prefix.
 
 ## Syntax
 
@@ -25,9 +25,9 @@ This compiler directive is obsolete starting in Visual Studio 2015 Update 2. We 
 
 The `#pragma execution_character_set("utf-8")` directive tells the compiler to encode narrow character and narrow string literals in your source code as UTF-8 in the executable. This output encoding is independent of the source file encoding used.
 
-By default, the compiler encodes narrow characters and narrow strings by using the current code page as the execution character set. This means that Unicode or DBCS characters in a literal that are outside the range of the current code page are converted to the default replacement character in the output. Unicode and DBCS characters are truncated to their low-order byte. This is almost certainly not what you intend. You can specify UTF-8 encoding for literals in the source file by using a `u8` prefix. The compiler passes these UTF-8 encoded strings to the output unchanged. Narrow character literals prefixed by using u8 must fit in one byte, or they are truncated on output.
+By default, the compiler encodes narrow characters and narrow strings by using the current code page as the execution character set. It means that Unicode or DBCS characters outside the range of the current code page get converted to the default replacement character in the output. Unicode and DBCS characters are truncated to their low-order byte, which is almost never what you intend. You can specify UTF-8 encoding for literals in the source file by using a `u8` prefix. The compiler passes these UTF-8 encoded strings to the output unchanged. Narrow character literals prefixed by using u8 must fit in a byte, or they're truncated on output.
 
-By default, Visual Studio uses the current code page as the source character set used to interpret your source code for output. When a file is read in, Visual Studio interprets it according to the current code page unless the file code page was set, or unless a byte-order mark (BOM) or UTF-16 characters are detected at the beginning of the file. Because UTF-8 can't be set as the current code page, when the automatic detection encounters source files encoded as UTF-8 without a BOM, Visual Studio assumes that they are encoded by using the current code page. Characters in the source file that are outside the range of the specified or automatically detected code page can cause compiler warnings and errors.
+By default, Visual Studio uses the current code page as the source character set used to interpret your source code for output. When a file is read in, Visual Studio interprets it according to the current code page unless the file code page was set, or unless a byte-order mark (BOM) or UTF-16 characters are detected at the beginning of the file. You can't set UTF-8 as the current code page in some versions of Windows. When the automatic detection finds source files encoded as UTF-8 without a BOM in those versions, Visual Studio assumes they're encoded by using the current code page. Characters in the source file that are outside the range of the specified or automatically detected code page can cause compiler warnings and errors.
 
 ## See also
 
