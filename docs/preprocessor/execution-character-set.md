@@ -1,18 +1,18 @@
 ---
-description: "Learn more about: execution_character_set pragma"
+description: "Learn more about the execution_character_set pragma directive in Microsoft C/C++"
 title: "execution_character_set pragma"
-ms.date: "08/29/2019"
+ms.date: 01/22/2021
 f1_keywords: ["execution_character_set", "vc-pragma.execution_character_set"]
-helpviewer_keywords: ["pragma execution_character_set"]
-ms.assetid: 32248cbc-7c92-4dca-8442-230c052b53ad
+helpviewer_keywords: ["pragma, execution_character_set", "execution_character_set pragma"]
+no-loc: ["pragma"]
 ---
-# execution_character_set pragma
+# `execution_character_set` pragma
 
 Specifies the execution character set used for string and character literals. This directive is not needed for literals marked with the `u8` prefix.
 
 ## Syntax
 
-> **#pragma execution_character_set(** "*target*" **)**
+> **`#pragma execution_character_set(`** "*target*" **`)`**
 
 ### Parameters
 
@@ -21,7 +21,7 @@ Specifies the target execution character set. Currently the only target executio
 
 ## Remarks
 
-This compiler directive is obsolete starting in Visual Studio 2015 Update 2. We recommend that you use the `/execution-charset:utf-8` or `/utf-8` compiler options together with using the `u8` prefix on narrow character and string literals that contain extended characters. For more information about the `u8` prefix, see [String and Character Literals](../cpp/string-and-character-literals-cpp.md). For more information about the compiler options, see [/execution-charset (Set Execution Character Set)](../build/reference/execution-charset-set-execution-character-set.md) and [/utf-8 (Set Source and Executable character sets to UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md).
+This compiler directive is obsolete starting in Visual Studio 2015 Update 2. We recommend that you use the **`/execution-charset:utf-8`** or **`/utf-8`** compiler options together with using the `u8` prefix on narrow character and string literals that contain extended characters. For more information about the `u8` prefix, see [String and character literals](../cpp/string-and-character-literals-cpp.md). For more information about the compiler options, see [`/execution-charset` (Set execution character set)](../build/reference/execution-charset-set-execution-character-set.md) and [`/utf-8` (Set source and executable character sets to UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md).
 
 The `#pragma execution_character_set("utf-8")` directive tells the compiler to encode narrow character and narrow string literals in your source code as UTF-8 in the executable. This output encoding is independent of the source file encoding used.
 
@@ -31,6 +31,6 @@ By default, Visual Studio uses the current code page as the source character set
 
 ## See also
 
-[Pragma Directives and the \_\_Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
-[/execution-charset (Set Execution Character Set)](../build/reference/execution-charset-set-execution-character-set.md)\
-[/utf-8 (Set Source and Executable character sets to UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)
+[Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)\
+[`/execution-charset` (Set execution character set)](../build/reference/execution-charset-set-execution-character-set.md)\
+[`/utf-8` (Set source and executable character sets to UTF-8)](../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)
