@@ -1,10 +1,10 @@
 ---
 title: "intrinsic pragma"
 description: "The MSVC intrinsic pragma is used to specify the supported intrinsic functions to use as intrinsics."
-ms.date: 07/08/2020
+ms.date: 01/22/2021
 f1_keywords: ["intrinsic_CPP", "vc-pragma.intrinsic"]
-helpviewer_keywords: ["intrinsic pragma", "pragmas, intrinsic"]
-ms.assetid: 25c86ac7-ef40-47b7-a2c0-fada9c5dc3c5
+helpviewer_keywords: ["intrinsic pragma", "pragma, intrinsic"]
+no-loc: ["pragma"]
 ---
 # `intrinsic` pragma
 
@@ -12,7 +12,7 @@ Specifies that calls to functions specified in the pragma's argument list are in
 
 ## Syntax
 
-> **`#pragma intrinsic(`** *`function1`* [**`,`** _`function2`_ ... ] **`)`**
+> **`#pragma intrinsic(`** *function_1* [**`,`** *function_2* ... ] **`)`**
 
 ## Remarks
 
@@ -127,5 +127,5 @@ See [`#pragma function`](../preprocessor/function-c-cpp.md) for information and 
 
 ## See also
 
-[Pragma directives and the `__pragma` keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
+[Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)\
 [Compiler intrinsics](../intrinsics/compiler-intrinsics.md)

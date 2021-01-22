@@ -1,18 +1,18 @@
 ---
-description: "Learn more about: omp pragma"
+description: "Learn more about the omp pragma directive in Microsoft C/C++"
 title: "omp pragma"
-ms.date: "08/29/2019"
+ms.date: 01/22/2021
 f1_keywords: ["vc-pragma.omp", "omp_CPP"]
-helpviewer_keywords: ["pragmas, omp", "omp pragma"]
-ms.assetid: 652414c5-78ed-4b7f-8283-1a9fe4c5e78d
+helpviewer_keywords: ["pragma, omp", "omp pragma"]
+no-loc: ["pragma"]
 ---
-# omp pragma
+# `omp` pragma
 
 Takes one or more OpenMP directives, along with any optional directive clauses.
 
 ## Syntax
 
-> **#pragma omp** *directive*
+> **`#pragma omp`** *directive*
 
 ## Remarks
 
@@ -20,4 +20,4 @@ For more information, see [OpenMP directives](../parallel/openmp/reference/openm
 
 ## See also
 
-[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)

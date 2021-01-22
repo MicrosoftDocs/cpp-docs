@@ -1,30 +1,30 @@
 ---
-description: "Learn more about: fp_contract pragma"
+description: "Learn more about the fp_contract pragma directive in Microsoft C/C++"
 title: "fp_contract pragma"
-ms.date: "08/29/2019"
+ms.date: 01/22/2021
 f1_keywords: ["vc-pragma.fp_contract", "fp_contract_CPP"]
-helpviewer_keywords: ["pragmas, fp_contract", "fp_contract pragma"]
-ms.assetid: 15b97338-6680-4287-ba2a-2dccc5b2ccf5
+helpviewer_keywords: ["pragma, fp_contract", "fp_contract pragma"]
+no-loc: ["pragma"]
 ---
-# fp_contract pragma
+# `fp_contract` pragma
 
 Determines whether floating-point contraction takes place. A floating-point contraction is an instruction such as FMA (Fused-Multiply-Add) that combines two separate floating point operations into a single instruction. Use of these instructions can affect floating-point precision, because instead of rounding after each operation, the processor may round only once after both operations.
 
 ## Syntax
 
-> **#pragma fp_contract (** { **on** | **off** } **)**
+> **`#pragma fp_contract (`** { **`on`** | **`off`** } **`)`**
 
 ## Remarks
 
-By default, **fp_contract** is **on**. This tells the compiler to use floating-point contraction instructions where possible. Set **fp_contract** to **off** to preserve individual floating-point instructions.
+By default, **`fp_contract`** is **`on`**. This tells the compiler to use floating-point contraction instructions where possible. Set **`fp_contract`** to **`off`** to preserve individual floating-point instructions.
 
-For more information on floating-point behavior, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md).
+For more information on floating-point behavior, see [`/fp` (Specify floating-point behavior)](../build/reference/fp-specify-floating-point-behavior.md).
 
-Other floating-point pragmas include:
+Other floating-point pragma directives include:
 
-- [fenv_access](../preprocessor/fenv-access.md)
+- [`fenv_access`](../preprocessor/fenv-access.md)
 
-- [float_control](../preprocessor/float-control.md)
+- [`float_control`](../preprocessor/float-control.md)
 
 ## Example
 
@@ -68,4 +68,4 @@ out = 4.587525000000000e+03
 
 ## See also
 
-[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)

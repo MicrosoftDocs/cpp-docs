@@ -1,12 +1,12 @@
 ---
-description: "Learn more about: pack pragma"
+description: "Learn more about the pack pragma directive in Microsoft C/C++"
 title: "pack pragma"
-ms.date: 07/22/2020
+ms.date: 01/22/2021
 f1_keywords: ["pack_CPP", "vc-pragma.pack"]
-helpviewer_keywords: ["pragmas, pack", "pack pragma"]
-ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
+helpviewer_keywords: ["pragma, pack", "pack pragma"]
+no-loc: ["pragma"]
 ---
-# pack pragma
+# `pack` pragma
 
 Specifies the packing alignment for structure, union, and class members.
 
@@ -113,4 +113,4 @@ The following sample shows how to use the *push*, *pop*, and *show* syntax.
 
 ## See also
 
-[Pragma directives and the `__pragma` keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)
