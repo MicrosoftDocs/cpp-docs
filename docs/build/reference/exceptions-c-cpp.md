@@ -1,22 +1,21 @@
 ---
-description: "Learn more about: Exceptions (C/C++)"
-title: "DLL loading exception codes (C/C++)"
-ms.date: "11/19/2019"
+description: "Learn more about: Delay load exceptions (C/C++)"
+title: "DLL delay load exception codes"
+ms.date: "01/19/2021"
 f1_keywords: ["ERROR_MOD_NOT_FOUND", "vcppException", "ERROR_SEVERITY_ERROR"]
 helpviewer_keywords: ["vcppException", "C++ exception handling, delayed loading of DLLs", "delayed loading of DLLs, exceptions", "ERROR_SEVERITY_ERROR exception", "ERROR_MOD_NOT_FOUND exception"]
-ms.assetid: c03be05d-1c39-4f35-84cf-00c9af3bae9a
 ---
-# Exceptions (C/C++)
+# DLL delay load exception codes
 
-Two exception codes can be raised when failures are encountered:
+Two structured exception codes can be raised when failures occur:
 
-- For a **LoadLibrary** failure
+- For a `LoadLibrary` failure
 
-- For a **GetProcAddress** failure
+- For a `GetProcAddress` failure
 
-Here is the exception information:
+Here's the exception information macro:
 
-```
+```C
 //
 // Exception information
 //
@@ -24,12 +23,12 @@ Here is the exception information:
 #define VcppException(sev,err)  ((sev) | (FACILITY_VISUALCPP<<16) | err)
 ```
 
-The exception codes thrown are the standard VcppException(ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) and VcppException(ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND) values. The exception passes a pointer to a **DelayLoadInfo** structure in the LPDWORD value that can be retrieved by **GetExceptionInformation** in the [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) structure, ExceptionInformation[0] field.
+The exception codes thrown are the standard `VcppException(ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND)` and `VcppException(ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND)` values. The exception passes a pointer to a `DelayLoadInfo` structure in the `LPDWORD` value that can be retrieved by `GetExceptionInformation` in the [`EXCEPTION_RECORD`](/windows/win32/api/winnt/ns-winnt-exception_record) structure, in the `ExceptionInformation[0]` field.
 
-Additionally, if the incorrect bits are set in the grAttrs field, the exception ERROR_INVALID_PARAMETER is thrown. This exception is, for all intents and purposes, fatal.
+Additionally, if the incorrect bits are set in the `grAttrs` field, the exception `ERROR_INVALID_PARAMETER` is thrown. This exception is, for all intents and purposes, fatal.
 
-See [Structure and Constant Definitions](structure-and-constant-definitions.md) for more information.
+For more information, see [Structure and constant definitions](structure-and-constant-definitions.md).
 
 ## See also
 
-[Error Handling and Notification](error-handling-and-notification.md)
+[Error handling and notification](error-handling-and-notification.md)
