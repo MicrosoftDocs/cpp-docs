@@ -12,12 +12,12 @@ Adds a directory to the list of directories searched for include files.
 
 ## Syntax
 
-> **`/I`**[ ]*directory*
+> **`/I`** *directory*
 
 ### Arguments
 
-*directory*<br/>
-The directory to add to the list of directories searched for include files.
+*directory*\
+The directory to add to the list of directories searched for include files. The space between `/I` and *directory* is optional. Directories that include spaces must be enclosed in double quotes. A directory may be an absolute path or a relative path.
 
 ## Remarks
 
@@ -29,9 +29,9 @@ A [`#include` directive](../../preprocessor/hash-include-directive-c-cpp.md) can
 
 The compiler searches directories in the following order:
 
-1. If the **`#include`** directive is specified using double-quote form, it first searches local directories. The search begins in the same directory as the file that contains the **`#include`** directive. If this fails to find the file, it searches in the directories of the currently opened include files, in the reverse order in which they were opened. The search begins in the directory of the parent include file and continues upward through the directories of any grandparent include files.
+1. If the **`#include`** directive is specified using double-quote form, it first searches local directories. The search begins in the same directory as the file that contains the **`#include`** directive. If it fails to find the file, it searches next in the directories of the currently opened include files, in the reverse order in which they were opened. The search begins in the directory of the parent include file and continues upward through the directories of any grandparent include files.
 
-1. If specified using a **`#include`** directive in angle bracket form, or if the local directory search has failed, it searches directories specified by using the **`/I`** option, in the order that CL encounters them on the command line.
+1. If the **`#include`** directive is specified in angle-bracket form, or if the local directory search has failed, it searches directories specified by using the **`/I`** option, in the order they're specified on the command line.
 
 1. Directories specified in the **`INCLUDE`** environment variable.
 
