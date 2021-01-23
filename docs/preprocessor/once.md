@@ -1,9 +1,10 @@
 ---
 description: "Learn more about: once pragma"
 title: "once pragma"
-ms.date: "01/19/2021"
+ms.date: 01/22/2021
 f1_keywords: ["vc-pragma.once", "once_CPP"]
-helpviewer_keywords: ["once pragma", "pragmas, once"]
+helpviewer_keywords: ["once pragma", "pragma, once"]
+no-loc: ["pragma"]
 ---
 # `once` pragma
 
@@ -45,4 +46,4 @@ Be careful not to use `#pragma once` or the include guard idiom in header files 
 
 ## See also
 
-[`pragma` directives and the `__pragma` keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)

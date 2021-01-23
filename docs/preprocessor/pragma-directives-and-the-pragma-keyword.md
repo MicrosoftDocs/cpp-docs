@@ -4,10 +4,11 @@ description: "Describes the pragma directives available in Microsoft Visual C an
 ms.date: "01/19/2021"
 f1_keywords: ["#pragma", "_Pragma", "__pragma"]
 helpviewer_keywords: ["#pragma directives, C/C++", "__pragma keyword", "_Pragma keyword", "pragma directives, C/C++", "pragmas, C/C++", "preprocessor", "pragmas", "preprocessor, pragmas", "pragma directives (#pragma)"]
+no-loc: ["pragma"]
 ---
 # Pragma directives and the `__pragma` and `_Pragma` keywords
 
-Pragma directives specify machine- or operating system-specific compiler features. The **`__pragma`** keyword, which is specific to the Microsoft compiler, enables you to code pragma directives within macro definitions.
+Pragma directives specify machine-specific or operating system-specific compiler features. The **`__pragma`** keyword, which is specific to the Microsoft compiler, enables you to code pragma directives within macro definitions. The standard **`_Pragma`** preprocessor operator was introduced in C99 and adopted by C++11.
 
 ## Syntax
 
@@ -19,7 +20,7 @@ Pragma directives specify machine- or operating system-specific compiler feature
 
 Each implementation of C and C++ supports some features unique to its host machine or operating system. Some programs, for example, must exercise precise control over the location of data in memory, or control the way certain functions receive parameters. The **`#pragma`** directives offer a way for each compiler to offer machine- and operating system-specific features, while maintaining overall compatibility with the C and C++ languages.
 
-Pragmas are machine- or operating system-specific by definition, and are typically different for every compiler. Pragmas can be used in conditional directives, to provide new preprocessor functionality, or to provide implementation-defined information to the compiler.
+Pragma directives are machine-specific or operating system-specific by definition, and are typically different for every compiler. A pragma can be used in a conditional directive, to provide new preprocessor functionality. Or, use one to provide implementation-defined information to the compiler.
 
 The *token-string* is a series of characters representing a specific compiler instruction and arguments, if any. The number sign (**`#`**) must be the first non-white-space character on the line that contains the pragma. White-space characters can separate the number sign and the word "pragma". Following **`#pragma`**, write any text that the translator can parse as preprocessing tokens. The argument to **`#pragma`** is subject to macro expansion.
 
@@ -27,7 +28,7 @@ The *string-literal* is the input to `_Pragma`. Outer quotes and leading/trailin
 
 The compiler issues a warning when it finds a pragma that it doesn't recognize, and continues compilation.
 
-The Microsoft C and C++ compilers recognize the following pragmas:
+The Microsoft C and C++ compilers recognize the following pragma directives:
 
 :::row:::
    :::column span="":::
@@ -45,6 +46,7 @@ The Microsoft C and C++ compilers recognize the following pragmas:
    :::column-end:::
    :::column span="":::
       [`detect_mismatch`](../preprocessor/detect-mismatch.md)\
+      [`endregion`](../preprocessor/region-endregion.md)\
       [`fenv_access`](../preprocessor/fenv-access.md)\
       [`float_control`](../preprocessor/float-control.md)\
       [`fp_contract`](../preprocessor/fp-contract.md)\
@@ -70,7 +72,7 @@ The Microsoft C and C++ compilers recognize the following pragmas:
    :::column span="":::
       [`pop_macro`](../preprocessor/pop-macro.md)\
       [`push_macro`](../preprocessor/push-macro.md)\
-      [`region`, endregion](../preprocessor/region-endregion.md)\
+      [`region`](../preprocessor/region-endregion.md)\
       [`runtime_checks`](../preprocessor/runtime-checks.md)\
       [`section`](../preprocessor/section.md)\
       [`setlocale`](../preprocessor/setlocale.md)\
@@ -83,9 +85,9 @@ The Microsoft C and C++ compilers recognize the following pragmas:
 
 <sup>1</sup> Supported only by the C++ compiler.
 
-## Pragmas and compiler options
+## Pragma directives and compiler options
 
-Some pragmas provide the same functionality as compiler options. When a pragma is encountered in source code, it overrides the behavior specified by the compiler option. For example, if you specified [`/Zp8`](../build/reference/zp-struct-member-alignment.md), you can override this compiler setting for specific sections of the code with [`pack`](../preprocessor/pack.md):
+Some pragma directives provide the same functionality as compiler options. When a pragma is reached in source code, it overrides the behavior specified by the compiler option. For example, if you specified [`/Zp8`](../build/reference/zp-struct-member-alignment.md), you can override this compiler setting for specific sections of the code with [`pack`](../preprocessor/pack.md):
 
 ```cmd
 cl /Zp8 some_file.cpp
@@ -128,7 +130,7 @@ return _hr; \
 
 `_Pragma` is similar to the Microsoft-specific [`__pragma`](#the-__pragma-keyword) keyword, except it's part of the standard. It was introduced for C in C99. For C++, it was introduced in C++11.
 
- It allows you to put pragmas into a macro definition. It has one leading underscore `_` instead of two leading underscores `__` that the Microsoft-specific keyword has, and the first letter is capitalized.
+ It allows you to put pragma directives into a macro definition. It has one leading underscore `_` instead of two leading underscores `__` that the Microsoft-specific keyword has, and the first letter is capitalized.
 
 The string literal should be what you would otherwise put following a *`#pragma`* statement. For example:
 
@@ -141,7 +143,7 @@ Quotation marks and back-slashes should be escaped, as shown above. A pragma str
 
 The following code example demonstrates how the **`_Pragma`** keyword could be used in an assert-like macro when you don't want to get a warning when the condition expression happens to be constant. 
 
-The macro definition uses the do/while(0) idiom for multi-statement macros so that it can be used as though it were one statement. See [C multi-line macro](https://stackoverflow.com/questions/1067226/c-multi-line-macro-do-while0-vs-scope-block) on Stack Overflow for more info. The _Pragma statement only applies to the line of code that follows it.
+The macro definition uses the `do`-`while(0)` idiom for multi-statement macros so that it can be used as though it were one statement. See [C multi-line macro](https://stackoverflow.com/questions/1067226/c-multi-line-macro-do-while0-vs-scope-block) on Stack Overflow for more info. The **`_Pragma`** statement only applies to the line of code that follows it.
 
 ```C
 // Compile with /W4
@@ -169,5 +171,5 @@ int main()
 ## See also
 
 [C/C++ preprocessor reference](../preprocessor/c-cpp-preprocessor-reference.md)\
-[C pragmas](../c-language/c-pragmas.md)\
+[C pragma directives](../c-language/c-pragmas.md)\
 [Keywords](../cpp/keywords-cpp.md)
