@@ -761,6 +761,8 @@
                       href: ../build/reference/zc-externconstexpr.md
                     - name: "/Zc:forScope (Force conformance in for loop scope)"
                       href: ../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md
+                    - name: "/Zc:hiddenFriend (Enforce Standard C++ hidden friend rules)"
+                      href: ../build/reference/zc-hiddenfriend.md
                     - name: "/Zc:implicitNoexcept (Implicit exception specifiers)"
                       href: ../build/reference/zc-implicitnoexcept-implicit-exception-specifiers.md
                     - name: "/Zc:inline (Remove unreferenced COMDAT)"
