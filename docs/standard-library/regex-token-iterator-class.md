@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: regex_token_iterator Class"
 title: "regex_token_iterator Class"
 ms.date: "09/10/2018"
 f1_keywords: ["regex/std::regex_token_iterator", "regex/std::regex_token_iterator::regex_type", "regex/std::regex_token_iterator::value_type", "regex/std::regex_token_iterator::iterator_category", "regex/std::regex_token_iterator::difference_type", "regex/std::regex_token_iterator::pointer", "regex/std::regex_token_iterator::reference", "regex/std::regex_token_iterator::operator==", "regex/std::regex_token_iterator::operator!=", "regex/std::regex_token_iterator::operator*", "regex/std::regex_token_iterator::operator->", "regex/std::regex_token_iterator::operator++"]

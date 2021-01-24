@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Best Practices in the Parallel Patterns Library"
 title: "Best Practices in the Parallel Patterns Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Parallel Patterns Library, practices to avoid", "practices to avoid, Parallel Patterns Library", "best practices, Parallel Patterns Library", "Parallel Patterns Library, best practices"]

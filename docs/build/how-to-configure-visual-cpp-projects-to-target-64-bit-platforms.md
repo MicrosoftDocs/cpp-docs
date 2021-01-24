@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Configure Visual Studio C++ projects to Target 64-Bit, x64 Platforms"
 title: "How to: Configure Visual Studio C++ projects to Target 64-Bit, x64 Platforms"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["platforms [C++], 64-bit", "64-bit programming [C++], configuring projects", "project configurations [C++]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;type_traits&gt;"
 title: "&lt;type_traits&gt;"
 ms.date: "02/21/2019"
 f1_keywords: ["<type_traits>"]

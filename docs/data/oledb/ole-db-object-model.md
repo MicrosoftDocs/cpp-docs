@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Object Model"
 title: "OLE DB Object Model"
 ms.date: "10/22/2018"
 helpviewer_keywords: ["rowsets, OLE DB object model", "OLE DB, object model"]

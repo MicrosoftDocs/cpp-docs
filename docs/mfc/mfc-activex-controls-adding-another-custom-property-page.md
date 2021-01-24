@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Adding Another Custom Property Page"
 title: "MFC ActiveX Controls: Adding Another Custom Property Page"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["property pages [MFC], MFC ActiveX controls", "custom property pages [MFC]", "ActiveX controls [MFC], property pages", "MFC ActiveX controls [MFC], property pages"]

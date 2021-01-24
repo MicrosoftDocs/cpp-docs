@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::WriteOnlyArray Class"
 title: "Platform::WriteOnlyArray Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"

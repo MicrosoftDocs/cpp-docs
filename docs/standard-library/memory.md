@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;memory&gt;"
 title: "&lt;memory&gt;"
 ms.date: "08/04/2019"
 f1_keywords: ["memory/std::<memory>", "<memory>", "std::<memory>"]

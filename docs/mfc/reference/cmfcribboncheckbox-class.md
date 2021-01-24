@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonCheckBox Class"
 title: "CMFCRibbonCheckBox Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonCheckBox", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::CMFCRibbonCheckBox", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetCompactSize", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetIntermediateSize", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::GetRegularSize", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::IsDrawTooltipImage", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDraw", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawMenuImage", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawOnList", "AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::SetACCData"]

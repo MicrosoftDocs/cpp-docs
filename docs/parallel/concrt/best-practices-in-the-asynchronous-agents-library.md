@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Best Practices in the Asynchronous Agents Library"
 title: "Best Practices in the Asynchronous Agents Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["best practices, Asynchronous Agents Library", "Asynchronous Agents Library, best practices", "Asynchronous Agents Library, practices to avoid", "practices to avoid, Asynchronous Agents Library"]

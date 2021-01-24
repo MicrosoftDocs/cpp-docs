@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Collection Classes"
 title: "ATL collection class overview"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["DestructElements function", "collection classes, choosing", "ConstructElements function", "SerializeElements function", "traits classes", "collection classes, about collection classes", "CTraits classes", "collection classes"]

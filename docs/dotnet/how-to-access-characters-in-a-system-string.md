@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Access Characters in a System::String"
 title: "How to: Access Characters in a System::String"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

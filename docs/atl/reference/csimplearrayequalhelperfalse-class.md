@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSimpleArrayEqualHelperFalse Class"
 title: "CSimpleArrayEqualHelperFalse Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSimpleArrayEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleArrayEqualHelperFalse", "ATLSIMPCOLL/ATL::CSimpleArrayEqualHelperFalse::IsEqual"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bidirectional_iterator_tag Struct"
 title: "bidirectional_iterator_tag Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["xutility/std::bidirectional_iterator_tag"]

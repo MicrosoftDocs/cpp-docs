@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: #import attributes (C++)"
 title: "#import attributes (C++)"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["#import directive, attributes"]

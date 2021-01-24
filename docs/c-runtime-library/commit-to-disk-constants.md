@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Commit-To-Disk Constants"
 title: "Commit-To-Disk Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.constants"]

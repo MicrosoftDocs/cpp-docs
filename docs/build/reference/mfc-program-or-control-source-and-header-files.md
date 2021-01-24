@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Program or Control Source and Header Files"
 title: "MFC Program or Control Source and Header Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["file types [C++], MFC source and header"]

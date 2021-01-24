@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IEEE Floating-Point Representation"
 title: "IEEE Floating-Point Representation"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["float keyword", "real*8 value", "floating-point numbers, IEEE representation", "double data type, floating-point representation", "IEEE floating point representation", "real*10 value", "long double", "real*4 value"]

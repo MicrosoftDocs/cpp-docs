@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;deque&gt; functions"
 title: "&lt;deque&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["deque/std::swap"]

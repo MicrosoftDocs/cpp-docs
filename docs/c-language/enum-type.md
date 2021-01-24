@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: enum Type"
 title: "enum Type"
 ms.date: "11/04/2016"
 ms.assetid: 899410b4-0db2-4eab-b94e-236b9774de31

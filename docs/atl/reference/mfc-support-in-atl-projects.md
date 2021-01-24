@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Support in ATL Projects"
 title: "MFC Support in ATL Projects"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.atl.addmfc"]

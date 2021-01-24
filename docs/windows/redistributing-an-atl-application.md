@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Redistributing an ATL application"
 title: "Redistributing an ATL application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, redistributing", "redistributing ATL", "redistributing OLE DB templates", "OLE DB templates, redistributing"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions: Database Exceptions"
 title: "Exceptions: Database Exceptions"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["DAO [MFC], exceptions", "exceptions [MFC], database", "exception handling [MFC], databases", "ODBC exceptions [MFC]", "ODBC [MFC], exceptions", "database exceptions [MFC]", "databases [MFC], exception handling", "error codes [MFC], database exception handling"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: tmpfile"
 title: "tmpfile"
 ms.date: "11/04/2016"
 api_name: ["tmpfile"]

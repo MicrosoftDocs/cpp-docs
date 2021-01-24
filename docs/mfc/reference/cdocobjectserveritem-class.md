@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDocObjectServerItem Class"
 title: "CDocObjectServerItem Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CDocObjectServerItem", "AFXDOCOB/CDocObjectServerItem", "AFXDOCOB/CDocObjectServerItem::CDocObjectServerItem", "AFXDOCOB/CDocObjectServerItem::GetDocument", "AFXDOCOB/CDocObjectServerItem::OnDoVerb", "AFXDOCOB/CDocObjectServerItem::OnHide", "AFXDOCOB/CDocObjectServerItem::OnShow"]

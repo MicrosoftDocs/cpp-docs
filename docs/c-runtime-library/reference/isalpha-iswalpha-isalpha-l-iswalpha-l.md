@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isalpha, iswalpha, _isalpha_l, _iswalpha_l"
 title: "isalpha, iswalpha, _isalpha_l, _iswalpha_l"
 ms.date: "4/2/2020"
 api_name: ["iswalpha", "_iswalpha_l", "isalpha", "_isalpha_l", "_o_isalpha", "_o_iswalpha"]

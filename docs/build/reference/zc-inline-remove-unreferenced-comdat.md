@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zc:inline (Remove unreferenced COMDAT)"
 title: "/Zc:inline (Remove unreferenced COMDAT)"
 ms.date: "09/05/2019"
 f1_keywords: ["/Zc:inline", "VC.Project.VCCLCompilerTool.RemoveUnreferencedCodeData"]

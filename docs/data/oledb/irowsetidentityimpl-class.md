@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IRowsetIdentityImpl Class"
 title: "IRowsetIdentityImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::IRowsetIdentityImpl", "ATL.IRowsetIdentityImpl", "IRowsetIdentityImpl", "IRowsetIdentityImpl.IsSameRow", "ATL.IRowsetIdentityImpl.IsSameRow", "IRowsetIdentityImpl::IsSameRow", "ATL::IRowsetIdentityImpl::IsSameRow"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: time_base Class"
 title: "time_base Class"
 ms.date: "11/04/2016"
 f1_keywords: ["locale/std::time_base"]

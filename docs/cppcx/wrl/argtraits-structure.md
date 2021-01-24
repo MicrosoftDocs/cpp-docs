@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ArgTraits Structure"
 title: "ArgTraits Structure"
 ms.date: "10/03/2018"
 ms.topic: "reference"

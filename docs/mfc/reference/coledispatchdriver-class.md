@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleDispatchDriver Class"
 title: "COleDispatchDriver Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDispatchDriver", "AFXDISP/COleDispatchDriver", "AFXDISP/COleDispatchDriver::COleDispatchDriver", "AFXDISP/COleDispatchDriver::AttachDispatch", "AFXDISP/COleDispatchDriver::CreateDispatch", "AFXDISP/COleDispatchDriver::DetachDispatch", "AFXDISP/COleDispatchDriver::GetProperty", "AFXDISP/COleDispatchDriver::InvokeHelper", "AFXDISP/COleDispatchDriver::ReleaseDispatch", "AFXDISP/COleDispatchDriver::SetProperty", "AFXDISP/COleDispatchDriver::m_bAutoRelease", "AFXDISP/COleDispatchDriver::m_lpDispatch"]

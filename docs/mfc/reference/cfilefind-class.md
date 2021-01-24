@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFileFind Class"
 title: "CFileFind Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CFileFind", "AFX/CFileFind", "AFX/CFileFind::CFileFind", "AFX/CFileFind::Close", "AFX/CFileFind::FindFile", "AFX/CFileFind::FindNextFile", "AFX/CFileFind::GetCreationTime", "AFX/CFileFind::GetFileName", "AFX/CFileFind::GetFilePath", "AFX/CFileFind::GetFileTitle", "AFX/CFileFind::GetFileURL", "AFX/CFileFind::GetLastAccessTime", "AFX/CFileFind::GetLastWriteTime", "AFX/CFileFind::GetLength", "AFX/CFileFind::GetRoot", "AFX/CFileFind::IsArchived", "AFX/CFileFind::IsCompressed", "AFX/CFileFind::IsDirectory", "AFX/CFileFind::IsDots", "AFX/CFileFind::IsHidden", "AFX/CFileFind::IsNormal", "AFX/CFileFind::IsReadOnly", "AFX/CFileFind::IsSystem", "AFX/CFileFind::IsTemporary", "AFX/CFileFind::MatchesMask", "AFX/CFileFind::CloseContext", "AFX/CFileFind::m_pTM"]

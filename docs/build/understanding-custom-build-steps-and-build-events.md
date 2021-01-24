@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Understanding Custom Build Steps and Build Events"
 title: "Understanding Custom Build Steps and Build Events"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["builds [C++], events", "custom build steps [C++], customizing builds", "events [C++], build", "custom build steps [C++]", "build steps [C++]", "build events [C++], order of events and build steps", "build steps [C++], build events", "builds [C++], custom build steps"]

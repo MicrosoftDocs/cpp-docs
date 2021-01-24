@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /INCREMENTAL (Link Incrementally)"
 title: "/INCREMENTAL (Link Incrementally)"
 ms.date: "11/04/2016"
 f1_keywords: ["/incremental", "VC.Project.VCLinkerTool.LinkIncremental"]

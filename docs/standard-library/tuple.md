@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;tuple&gt;"
 title: "&lt;tuple&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<tuple>"]

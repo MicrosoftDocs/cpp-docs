@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Processing Notification Messages in List Controls"
 title: "Processing Notification Messages in List Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["processing notifications [MFC]", "CListCtrl class [MFC], processing notifications"]

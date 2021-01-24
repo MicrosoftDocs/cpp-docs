@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Ready-to-Use List Classes"
 title: "Ready-to-Use List Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.list"]

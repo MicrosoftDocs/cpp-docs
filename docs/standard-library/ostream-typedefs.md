@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;ostream&gt; typedefs"
 title: "&lt;ostream&gt; typedefs"
 ms.date: "11/04/2016"
 f1_keywords: ["iosfwd/std::ostream", "iosfwd/std::wostream"]

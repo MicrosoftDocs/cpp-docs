@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Provider Support for Bookmarks"
 title: "Provider Support for Bookmarks"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["IRowsetLocate class, provider support for bookmarks", "OLE DB provider templates, bookmarks", "bookmarks, OLE DB", "IRowsetLocate class", "OLE DB providers, bookmark support"]

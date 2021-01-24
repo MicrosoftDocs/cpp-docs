@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CNonStatelessWorker Class"
 title: "CNonStatelessWorker Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CNonStatelessWorker", "ATLUTIL/ATL::CNonStatelessWorker", "ATLUTIL/ATL::CNonStatelessWorker::RequestType", "ATLUTIL/ATL::CNonStatelessWorker::Execute", "ATLUTIL/ATL::CNonStatelessWorker::Initialize", "ATLUTIL/ATL::CNonStatelessWorker::Terminate"]

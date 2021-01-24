@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls"
 title: "MFC ActiveX Controls"
 ms.date: "11/19/2018"
 f1_keywords: ["MFC ActiveX Controls (MFC)"]

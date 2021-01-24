@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Support for Activation Contexts in the MFC Module State"
 title: "Support for Activation Contexts in the MFC Module State"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["activation contexts [MFC]", "activation contexts [MFC], MFC support"]

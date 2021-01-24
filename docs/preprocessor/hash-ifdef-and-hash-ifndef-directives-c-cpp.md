@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: #ifdef and #ifndef directives (C/C++)"
 title: "#ifdef and #ifndef directives (C/C++)"
 ms.date: "08/29/2019"
 f1_keywords: ["#ifndef", "#ifdef"]

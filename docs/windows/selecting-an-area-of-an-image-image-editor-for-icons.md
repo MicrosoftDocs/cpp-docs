@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Edit an Image"
 title: "How to: Edit an Image"
 ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.image.editing"]

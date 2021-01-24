@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating Stack and Queue Collections"
 title: "Creating Stack and Queue Collections"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC collection classes [MFC], stack collections", "collections, stack", "stack", "collection classes [MFC], creating", "queue collections", "MFC collection classes [MFC], queue collections", "stack collections", "collections, queue"]

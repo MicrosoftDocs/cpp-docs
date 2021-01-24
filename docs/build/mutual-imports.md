@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Mutual Imports"
 title: "Mutual Imports"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["mutual DLL imports [C++]", "AFX_DATA", "importing DLLs [C++], mutual imports", "mutually importing executable files [C++]", "AFX_EXT_CLASS macro", "circular imports", "_AFXEXT preprocessor symbol", "DLLs [C++], importing", "executable files [C++], importing", "extension DLLs [C++], mutual imports", "exporting DLLs [C++], mutual imports"]

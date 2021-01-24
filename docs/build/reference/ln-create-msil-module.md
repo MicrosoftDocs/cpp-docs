@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /LN (Create MSIL Module)"
 title: "/LN (Create MSIL Module)"
 ms.date: "11/04/2016"
 f1_keywords: ["/LN"]

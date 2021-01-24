@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Runtime Unsupported CRT Functions"
 title: "Windows Runtime Unsupported CRT Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["unsupported CRT functions, Windows Runtime", "Windows Runtime, unsupported CRT functions"]

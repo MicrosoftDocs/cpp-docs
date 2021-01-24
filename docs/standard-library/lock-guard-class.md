@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: lock_guard Class"
 title: "lock_guard Class"
 ms.date: "11/04/2016"
 f1_keywords: ["mutex/std::lock_guard", "mutex/std::lock_guard::lock_guard"]

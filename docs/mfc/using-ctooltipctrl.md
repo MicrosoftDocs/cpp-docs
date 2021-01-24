@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CToolTipCtrl"
 title: "Using CToolTipCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CToolTipCtrl class [MFC], creating tool tips", "CToolTipCtrl class"]

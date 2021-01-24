@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Managing MDI Child Windows"
 title: "Managing MDI Child Windows"
 ms.date: "11/19/2018"
 f1_keywords: ["MDICLIENT"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How MFC Makes It Easier to Create Internet Client Applications"
 title: "How MFC Makes It Easier to Create Internet Client Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Internet client applications [MFC], MFC", "Internet applications [MFC], MFC", "MFC, Internet applications"]

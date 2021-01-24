@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Declarations and definitions (C++)"
 title: "Declarations and definitions (C++)"
 ms.date: "12/12/2019"
 ms.assetid: 678f1424-e12f-45e0-a957-8169e5fef6cb

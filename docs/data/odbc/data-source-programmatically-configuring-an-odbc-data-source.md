@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Source: Programmatically Configuring an ODBC Data Source"
 title: "Data Source: Programmatically Configuring an ODBC Data Source"
 ms.date: "11/04/2016"
 f1_keywords: ["SQLConfigDataSource"]

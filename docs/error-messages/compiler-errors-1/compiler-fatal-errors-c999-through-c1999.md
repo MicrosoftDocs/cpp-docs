@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler fatal errors C999 through C1999"
 title: "Compiler fatal errors C999 through C1999"
 ms.date: "04/21/2019"
 f1_keywords: ["C1034", "C1036", "C1041", "C1048", "C1063", "C1069", "C1101", "C1102", "C1105", "C1110", "C1111", "C1112", "C1114", "C1193", "C1195", "C1300", "C1301", "C1302", "C1306",  "C1384", "C1451", "C1505", "C1901"]

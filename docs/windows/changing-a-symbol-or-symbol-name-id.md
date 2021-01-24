@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Manage Symbols"
 title: "How to: Manage Symbols"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.symbol.changing", "vc.editors.symbol.restrictions.name", "vc.editors.symbol.changing.value", "vc.editors.symbol.restrictions.value", "vc.editors.symbol.changing.header", "vc.editors.symbol.changing.unassigned", "vc.editors.symbol.shared.calculated"]

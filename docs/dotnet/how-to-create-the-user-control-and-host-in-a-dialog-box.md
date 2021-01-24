@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create the User Control and Host in a Dialog Box"
 title: "How to: Create the User Control and Host in a Dialog Box"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

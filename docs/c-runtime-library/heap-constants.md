@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Heap Constants"
 title: "Heap Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["_HEAPBADPTR", "_HEAPEMPTY", "_HEAPBADBEGIN", "_HEAPOK", "_HEAPBADNODE", "_HEAPEND"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l"
 title: "_ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l"
 ms.date: "4/2/2020"
 api_name: ["_ismbclegal_l", "_ismbclegal", "_ismbcsymbol", "_ismbcsymbol_l", "_o__ismbclegal", "_o__ismbclegal_l", "_o__ismbcsymbol", "_o__ismbcsymbol_l"]

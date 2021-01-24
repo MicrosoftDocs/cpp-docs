@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Load a Ribbon Resource from an MFC Application"
 title: "How to: Load a Ribbon Resource from an MFC Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ribbon resource [MFC], loading"]

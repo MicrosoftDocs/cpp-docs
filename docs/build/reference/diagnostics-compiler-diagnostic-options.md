@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /diagnostics (Compiler diagnostic options)"
 title: "/diagnostics (Compiler diagnostic options)"
 ms.date: "11/11/2016"
 f1_keywords: ["/diagnostics", "VC.Project.VCCLCompilerTool.DiagnosticsFormat"]

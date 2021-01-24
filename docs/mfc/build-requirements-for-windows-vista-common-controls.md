@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Build Requirements for Windows Common Controls"
 title: "Build Requirements for Windows Common Controls"
 ms.date: "08/19/2019"
 helpviewer_keywords: ["Common Controls (MFC), build requirements", "Common Controls (MFC)"]

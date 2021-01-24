@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;chrono&gt; functions"
 title: "&lt;chrono&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast"]

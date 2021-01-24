@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sharing Constants"
 title: "Sharing Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["_SH_DENYNO", "_SH_DENYRD", "_SH_DENYRW", "_SH_DENYWR", "_SH_COMPAT"]

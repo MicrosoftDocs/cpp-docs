@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: nonbrowsable"
 title: "nonbrowsable (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.nonbrowsable"]

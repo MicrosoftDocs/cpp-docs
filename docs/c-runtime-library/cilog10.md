@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CIlog10"
 title: "_CIlog10"
 ms.date: "4/2/2020"
 api_name: ["_CIlog10", "_o__CIlog10"]

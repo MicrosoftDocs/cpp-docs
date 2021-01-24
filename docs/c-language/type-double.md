@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type double"
 title: "Type double"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["mantissas, floating-point variables", "type double", "portability [C++], type double", "double data type"]

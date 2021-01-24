@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding a Property Page (ATL Tutorial, Part 6)"
 title: "Adding a Property Page (ATL Tutorial, Part 6)"
 ms.custom: "get-started-article"
 ms.date: "09/27/2018"

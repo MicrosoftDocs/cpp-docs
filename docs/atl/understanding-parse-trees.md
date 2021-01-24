@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Understanding Parse Trees"
 title: "ATL Registrar and Parse Trees"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["parse trees"]

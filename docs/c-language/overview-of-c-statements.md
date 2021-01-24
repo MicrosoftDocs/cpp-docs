@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overview of C Statements"
 title: "Overview of C Statements"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["semicolon, in C statements", "statements, C", "semicolon", "statements, about statements", "Visual C, statements"]

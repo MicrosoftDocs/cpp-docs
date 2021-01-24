@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTreeCtrl Class"
 title: "CTreeCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTreeCtrl", "AFXCMN/CTreeCtrl", "AFXCMN/CTreeCtrl::CTreeCtrl", "AFXCMN/CTreeCtrl::Create", "AFXCMN/CTreeCtrl::CreateDragImage", "AFXCMN/CTreeCtrl::CreateEx", "AFXCMN/CTreeCtrl::DeleteAllItems", "AFXCMN/CTreeCtrl::DeleteItem", "AFXCMN/CTreeCtrl::EditLabel", "AFXCMN/CTreeCtrl::EndEditLabelNow", "AFXCMN/CTreeCtrl::EnsureVisible", "AFXCMN/CTreeCtrl::Expand", "AFXCMN/CTreeCtrl::GetBkColor", "AFXCMN/CTreeCtrl::GetCheck", "AFXCMN/CTreeCtrl::GetChildItem", "AFXCMN/CTreeCtrl::GetCount", "AFXCMN/CTreeCtrl::GetDropHilightItem", "AFXCMN/CTreeCtrl::GetEditControl", "AFXCMN/CTreeCtrl::GetExtendedStyle", "AFXCMN/CTreeCtrl::GetFirstVisibleItem", "AFXCMN/CTreeCtrl::GetImageList", "AFXCMN/CTreeCtrl::GetIndent", "AFXCMN/CTreeCtrl::GetInsertMarkColor", "AFXCMN/CTreeCtrl::GetItem", "AFXCMN/CTreeCtrl::GetItemData", "AFXCMN/CTreeCtrl::GetItemExpandedImageIndex", "AFXCMN/CTreeCtrl::GetItemHeight", "AFXCMN/CTreeCtrl::GetItemImage", "AFXCMN/CTreeCtrl::GetItemPartRect", "AFXCMN/CTreeCtrl::GetItemRect", "AFXCMN/CTreeCtrl::GetItemState", "AFXCMN/CTreeCtrl::GetItemStateEx", "AFXCMN/CTreeCtrl::GetItemText", "AFXCMN/CTreeCtrl::GetLastVisibleItem", "AFXCMN/CTreeCtrl::GetLineColor", "AFXCMN/CTreeCtrl::GetNextItem", "AFXCMN/CTreeCtrl::GetNextSiblingItem", "AFXCMN/CTreeCtrl::GetNextVisibleItem", "AFXCMN/CTreeCtrl::GetParentItem", "AFXCMN/CTreeCtrl::GetPrevSiblingItem", "AFXCMN/CTreeCtrl::GetPrevVisibleItem", "AFXCMN/CTreeCtrl::GetRootItem", "AFXCMN/CTreeCtrl::GetScrollTime", "AFXCMN/CTreeCtrl::GetSelectedCount", "AFXCMN/CTreeCtrl::GetSelectedItem", "AFXCMN/CTreeCtrl::GetTextColor", "AFXCMN/CTreeCtrl::GetToolTips", "AFXCMN/CTreeCtrl::GetVisibleCount", "AFXCMN/CTreeCtrl::HitTest", "AFXCMN/CTreeCtrl::InsertItem", "AFXCMN/CTreeCtrl::ItemHasChildren", "AFXCMN/CTreeCtrl::MapAccIdToItem", "AFXCMN/CTreeCtrl::MapItemToAccID", "AFXCMN/CTreeCtrl::Select", "AFXCMN/CTreeCtrl::SelectDropTarget", "AFXCMN/CTreeCtrl::SelectItem", "AFXCMN/CTreeCtrl::SelectSetFirstVisible", "AFXCMN/CTreeCtrl::SetAutoscrollInfo", "AFXCMN/CTreeCtrl::SetBkColor", "AFXCMN/CTreeCtrl::SetCheck", "AFXCMN/CTreeCtrl::SetExtendedStyle", "AFXCMN/CTreeCtrl::SetImageList", "AFXCMN/CTreeCtrl::SetIndent", "AFXCMN/CTreeCtrl::SetInsertMark", "AFXCMN/CTreeCtrl::SetInsertMarkColor", "AFXCMN/CTreeCtrl::SetItem", "AFXCMN/CTreeCtrl::SetItemData", "AFXCMN/CTreeCtrl::SetItemExpandedImageIndex", "AFXCMN/CTreeCtrl::SetItemHeight", "AFXCMN/CTreeCtrl::SetItemImage", "AFXCMN/CTreeCtrl::SetItemState", "AFXCMN/CTreeCtrl::SetItemStateEx", "AFXCMN/CTreeCtrl::SetItemText", "AFXCMN/CTreeCtrl::SetLineColor", "AFXCMN/CTreeCtrl::SetScrollTime", "AFXCMN/CTreeCtrl::SetTextColor", "AFXCMN/CTreeCtrl::SetToolTips", "AFXCMN/CTreeCtrl::ShowInfoTip", "AFXCMN/CTreeCtrl::SortChildren", "AFXCMN/CTreeCtrl::SortChildrenCB"]
@@ -1338,7 +1339,7 @@ The handle to a tree-view item ( `HTREEITEM`) that corresponds to the *uAccId* p
 
 ### Remarks
 
-Accessibility aids are applications that help people with disabilities use computers. An accessibility identifier is used by the `IAccessible` interface to uniquely specify an element in a window. For more information about accessibility identifiers, search for the "About Active Accessibility Support" topic at [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
+Accessibility aids are applications that help people with disabilities use computers. An accessibility identifier is used by the `IAccessible` interface to uniquely specify an element in a window. For more information about the `IAccessible` APIs, see [Microsoft Active Accessibility](/windows/win32/winauto/microsoft-active-accessibility).
 
 This method sends the [TVM_MAPACCIDTOHTREEITEM](/windows/win32/Controls/tvm-mapaccidtohtreeitem) message, which is described in the Windows SDK.
 
@@ -1373,7 +1374,7 @@ The accessibility identifier that corresponds to the *hItem* parameter.
 
 ### Remarks
 
-Accessibility aids are applications that help people with disabilities use computers. An accessibility identifier is used by the `IAccessible` interface to uniquely specify an element in a window. For more information about accessibility identifiers, search for the "About Active Accessibility Support" topic at [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
+Accessibility aids are applications that help people with disabilities use computers. An accessibility identifier is used by the `IAccessible` interface to uniquely specify an element in a window. For more information about the `IAccessible` APIs, see [Microsoft Active Accessibility](/windows/win32/winauto/microsoft-active-accessibility).
 
 This method sends the [TVM_MAPHTREEITEMTOACCID](/windows/win32/Controls/tvm-maphtreeitemtoaccid) message, which is described in the Windows SDK.
 
@@ -2116,7 +2117,7 @@ void ShowInfoTip(HTREEITEM hItem);
 
 ### Remarks
 
-For more information about the difference between tooltips and infotips, search for the "Tooltips and Infotips" topic at [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=56322).
+For more information about the difference between tooltips and infotips, see [Tooltips and Infotips](/windows/win32/uxguide/ctrl-tooltips-and-infotips).
 
 This method sends the [TVM_SHOWINFOTIP](/windows/win32/Controls/tvm-showinfotip) message, which is described in the Windows SDK.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Obtain a Pointer to Byte Array"
 title: "How to: Obtain a Pointer to Byte Array"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

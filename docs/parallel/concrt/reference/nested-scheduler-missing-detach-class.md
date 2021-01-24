@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: nested_scheduler_missing_detach Class"
 title: "nested_scheduler_missing_detach Class"
 ms.date: "11/04/2016"
 f1_keywords: ["nested_scheduler_missing_detach", "CONCRT/concurrency::nested_scheduler_missing_detach", "CONCRT/concurrency::nested_scheduler_missing_detach::nested_scheduler_missing_detach"]

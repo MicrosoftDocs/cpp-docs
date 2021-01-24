@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __max"
 title: "__max"
 ms.date: "04/05/2018"
 api_name: ["__max"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: network_link_registry Class"
 title: "network_link_registry Class"
 ms.date: "11/04/2016"
 f1_keywords: ["network_link_registry", "AGENTS/concurrency::network_link_registry", "AGENTS/concurrency::network_link_registry::add", "AGENTS/concurrency::network_link_registry::begin", "AGENTS/concurrency::network_link_registry::contains", "AGENTS/concurrency::network_link_registry::count", "AGENTS/concurrency::network_link_registry::remove"]

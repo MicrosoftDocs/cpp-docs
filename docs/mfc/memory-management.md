@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Memory Management"
 title: "Memory Management"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory [MFC]", "MFC, memory management", "memory allocation [MFC]", "memory [MFC], managing", "memory allocation [MFC], MFC"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Declaring a Variable Based on Your New Control Class"
 title: "Declaring a Variable Based on Your New Control Class"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.classes.control.variable"]

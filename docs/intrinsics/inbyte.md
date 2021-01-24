@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __inbyte"
 title: "__inbyte"
 ms.date: "09/02/2019"
 f1_keywords: ["__inbyte", "__inbyte_cpp"]

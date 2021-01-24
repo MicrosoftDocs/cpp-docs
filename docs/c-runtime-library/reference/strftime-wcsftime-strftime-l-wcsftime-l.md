@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strftime, wcsftime, _strftime_l, _wcsftime_l"
 title: "strftime, wcsftime, _strftime_l, _wcsftime_l"
 ms.date: "4/2/2020"
 api_name: ["strftime", "_wcsftime_l", "_strftime_l", "wcsftime", "_o__strftime_l", "_o__wcsftime_l", "_o_strftime", "_o_wcsftime"]

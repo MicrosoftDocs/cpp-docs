@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Registering OLE Controls"
 title: "Registering OLE Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["registering OLE controls", "OLE controls [MFC], registering"]

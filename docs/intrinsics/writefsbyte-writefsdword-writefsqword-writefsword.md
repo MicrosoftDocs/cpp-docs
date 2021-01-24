@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __writefsbyte, __writefsdword, __writefsqword, __writefsword"
 title: "__writefsbyte, __writefsdword, __writefsqword, __writefsword"
 ms.date: "09/02/2019"
 f1_keywords: ["__writefsword", "__writefsbyte", "__writefsqword", "__writefsdword"]

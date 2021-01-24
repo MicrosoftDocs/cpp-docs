@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDefaultCompareTraits Class"
 title: "CDefaultCompareTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDefaultCompareTraits", "ATLCOLL/ATL::CDefaultCompareTraits", "ATLCOLL/ATL::CDefaultCompareTraits::CompareElements", "ATLCOLL/ATL::CDefaultCompareTraits::CompareElementsOrdered"]

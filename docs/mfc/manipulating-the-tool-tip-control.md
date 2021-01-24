@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Manipulating the Tool Tip Control"
 title: "Manipulating the Tool Tip Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CToolTipCtrl class [MFC], manipulating tool tip attributes", "tool tips [MFC], attributes"]

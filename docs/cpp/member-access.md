@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Member Access"
 title: "Member Access"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["member-selection operators [C++]", "pointers, smart", "member access, overloaded operators", "operator overloading [C++], member access operators", "smart pointers, definition", "smart pointers"]

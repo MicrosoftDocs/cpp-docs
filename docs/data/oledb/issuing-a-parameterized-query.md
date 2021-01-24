@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Issuing a Parameterized Query"
 title: "Issuing a Parameterized Query"
 ms.date: "10/19/2018"
 helpviewer_keywords: ["parameter queries, running using CCommand class"]

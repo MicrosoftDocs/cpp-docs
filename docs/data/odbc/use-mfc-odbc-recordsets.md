@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Use MFC ODBC Recordsets"
 title: "Use MFC ODBC Recordsets"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["recordsets, MFC ODBC", "ODBC recordsets"]

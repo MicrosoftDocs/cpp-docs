@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: atol, _atol_l, _wtol, _wtol_l"
 title: "atol, _atol_l, _wtol, _wtol_l"
 ms.date: "4/2/2020"
 api_name: ["atol", "_wtol_l", "_wtol", "_atol_l", "_o__atol_l", "_o__wtol", "_o__wtol_l", "_o_atol"]

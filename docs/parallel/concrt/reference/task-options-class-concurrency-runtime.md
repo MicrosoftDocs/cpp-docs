@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: task_options Class (Concurrency Runtime)"
 title: "task_options Class (Concurrency Runtime)"
 ms.date: "11/04/2016"
 f1_keywords: ["ppltasks/concurrency::task_options"]

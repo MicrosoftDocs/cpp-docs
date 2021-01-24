@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN065: Dual-Interface Support for OLE Automation Servers"
 title: "TN065: Dual-Interface Support for OLE Automation Servers"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.ole"]

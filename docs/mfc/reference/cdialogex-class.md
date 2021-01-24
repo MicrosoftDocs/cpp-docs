@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDialogEx Class"
 title: "CDialogEx Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDialogEx", "AFXDIALOGEX/CDialogEx", "AFXDIALOGEX/CDialogEx::CDialogEx", "AFXDIALOGEX/CDialogEx::SetBackgroundColor", "AFXDIALOGEX/CDialogEx::SetBackgroundImage"]

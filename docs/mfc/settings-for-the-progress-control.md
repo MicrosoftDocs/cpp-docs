@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Settings for the Progress Control"
 title: "Settings for the Progress Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CProgressCtrl class [MFC], settings", "progress controls [MFC], settings"]

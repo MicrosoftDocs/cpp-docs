@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internet URL Parsing Globals and Helpers"
 title: "Internet URL Parsing Globals and Helpers"
 ms.date: "04/03/2017"
 helpviewer_keywords: ["parsing, URLs", "URLs, parsing"]

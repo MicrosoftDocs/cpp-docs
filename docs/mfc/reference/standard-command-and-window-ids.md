@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Standard Command and Window IDs"
 title: "Standard Command and Window IDs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["standard command and Window IDs"]

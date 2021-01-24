@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL: SQL and C++ Data Types (ODBC)"
 title: "SQL: SQL and C++ Data Types (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data types [C++], SQL vs. C++", "SQL data types [C++]", "SQL [C++], vs. C++ data types"]

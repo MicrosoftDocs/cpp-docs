@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _scalb, _scalbf"
 title: "_scalb, _scalbf"
 ms.date: "4/2/2020"
 api_name: ["_scalb", "_scalbf", "_o__scalb"]

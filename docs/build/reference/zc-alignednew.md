@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zc:alignedNew (C++17 over-aligned allocation)"
 title: "/Zc:alignedNew (C++17 over-aligned allocation)"
 ms.date: "05/18/2019"
 f1_keywords: ["/Zc:alignedNew"]

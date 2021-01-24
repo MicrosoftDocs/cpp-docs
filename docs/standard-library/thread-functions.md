@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;thread&gt; functions"
 title: "&lt;thread&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["thread/std::get_id", "thread/std::sleep_for", "thread/std::sleep_until", "thread/std::swap", "thread/std::yield"]

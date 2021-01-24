@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Document-Template Classes"
 title: "Document-Template Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["document templates [MFC], classes"]

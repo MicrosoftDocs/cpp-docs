@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DispatchState Structure"
 title: "DispatchState Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["DispatchState", "CONCRTRM/concurrency::DispatchState", "CONCRTRM/concurrency::DispatchState::DispatchState::DispatchState", "CONCRTRM/concurrency::DispatchState::DispatchState::m_dispatchStateSize", "CONCRTRM/concurrency::DispatchState::DispatchState::m_fIsPreviousContextAsynchronouslyBlocked", "CONCRTRM/concurrency::DispatchState::DispatchState::m_reserved"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exporting C Functions for Use in C or C++ Language Executables"
 title: "Exporting C Functions for Use in C or C++ Language Executables"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["functions [C], exporting", "functions [C], C or C++ executables and", "__cplusplus macro", "exporting DLLs [C++], C functions in C++ executables", "exporting functions [C++], C functions in C++ executables"]

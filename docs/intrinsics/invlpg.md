@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __invlpg"
 title: "__invlpg"
 ms.date: "09/02/2019"
 f1_keywords: ["__invlpg", "__invlpg_cpp"]

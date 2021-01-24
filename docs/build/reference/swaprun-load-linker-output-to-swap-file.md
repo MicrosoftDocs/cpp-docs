@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /SWAPRUN (Load Linker Output to Swap File)"
 title: "/SWAPRUN (Load Linker Output to Swap File)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.SwapRunFromNet", "/swaprun", "VC.Project.VCLinkerTool.SwapRunFromCD"]

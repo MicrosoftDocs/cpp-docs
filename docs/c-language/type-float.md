@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type float"
 title: "Type float"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["type float", "exponent length", "float keyword [C]", "mantissas, length", "floating-point numbers, float type", "ranges, floating-point types", "floating-point numbers, variables", "lengths, mantissa", "double data type, type float", "IEEE floating-point representation", "lengths, exponent"]

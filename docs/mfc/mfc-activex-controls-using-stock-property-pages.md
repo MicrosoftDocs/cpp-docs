@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Using Stock Property Pages"
 title: "MFC ActiveX Controls: Using Stock Property Pages"
 ms.date: "09/12/2018"
 f1_keywords: ["CLSID_CPicturePropPage", "CLSID_CColorPropPage", "CLSID_CFontPropPage"]

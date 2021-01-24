@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: qsort_s"
 title: "qsort_s"
 ms.date: "4/2/2020"
 api_name: ["qsort_s", "_o_qsort_s"]

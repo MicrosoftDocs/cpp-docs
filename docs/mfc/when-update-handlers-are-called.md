@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: When Update Handlers Are Called"
 title: "When Update Handlers Are Called"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["updating user interface objects [MFC]", "command routing [MFC], update commands", "toolbar buttons [MFC], enabling", "disabling toolbar buttons", "menus [MFC], initializing", "update handlers [MFC]", "disabling menu items", "toolbars [MFC], updating", "menus [MFC], updating as context changes", "toolbar controls [MFC], updated during OnIdle method [MFC]", "menu items, enabling", "command routing [MFC], update handlers", "update handlers, calling"]

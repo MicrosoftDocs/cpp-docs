@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPropertySheet Class"
 title: "CPropertySheet Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPropertySheet", "AFXDLGS/CPropertySheet", "AFXDLGS/CPropertySheet::CPropertySheet", "AFXDLGS/CPropertySheet::AddPage", "AFXDLGS/CPropertySheet::Construct", "AFXDLGS/CPropertySheet::Create", "AFXDLGS/CPropertySheet::DoModal", "AFXDLGS/CPropertySheet::EnableStackedTabs", "AFXDLGS/CPropertySheet::EndDialog", "AFXDLGS/CPropertySheet::GetActiveIndex", "AFXDLGS/CPropertySheet::GetActivePage", "AFXDLGS/CPropertySheet::GetPage", "AFXDLGS/CPropertySheet::GetPageCount", "AFXDLGS/CPropertySheet::GetPageIndex", "AFXDLGS/CPropertySheet::GetTabControl", "AFXDLGS/CPropertySheet::MapDialogRect", "AFXDLGS/CPropertySheet::OnInitDialog", "AFXDLGS/CPropertySheet::PressButton", "AFXDLGS/CPropertySheet::RemovePage", "AFXDLGS/CPropertySheet::SetActivePage", "AFXDLGS/CPropertySheet::SetFinishText", "AFXDLGS/CPropertySheet::SetTitle", "AFXDLGS/CPropertySheet::SetWizardButtons", "AFXDLGS/CPropertySheet::SetWizardMode", "AFXDLGS/CPropertySheet::m_psh"]

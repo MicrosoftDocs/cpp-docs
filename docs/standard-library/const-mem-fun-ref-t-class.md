@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: const_mem_fun_ref_t Class"
 title: "const_mem_fun_ref_t Class"
 ms.date: "02/21/2019"
 f1_keywords: ["functional/std::const_mem_fun_ref_t"]

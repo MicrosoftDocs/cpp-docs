@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency namespace enums (AMP)"
 title: "Concurrency namespace enums (AMP)"
 ms.date: "11/04/2016"
 f1_keywords: ["amp/Concurrency::access_type", "amp/Concurrency::queuing_mode"]

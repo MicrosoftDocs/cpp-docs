@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Pragmas"
 title: "Pragmas"
 ms.date: "11/11/2019"
 helpviewer_keywords: ["pragmas, about pragmas"]

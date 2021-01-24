@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _set_com_error_handler"
 title: "_set_com_error_handler"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_set_com_error_handler function"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCustomInterpolator Class"
 title: "CCustomInterpolator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCustomInterpolator", "AFXANIMATIONCONTROLLER/CCustomInterpolator", "AFXANIMATIONCONTROLLER/CCustomInterpolator::CCustomInterpolator", "AFXANIMATIONCONTROLLER/CCustomInterpolator::GetDependencies", "AFXANIMATIONCONTROLLER/CCustomInterpolator::GetDuration", "AFXANIMATIONCONTROLLER/CCustomInterpolator::GetFinalValue", "AFXANIMATIONCONTROLLER/CCustomInterpolator::Init", "AFXANIMATIONCONTROLLER/CCustomInterpolator::InterpolateValue", "AFXANIMATIONCONTROLLER/CCustomInterpolator::InterpolateVelocity", "AFXANIMATIONCONTROLLER/CCustomInterpolator::SetDuration", "AFXANIMATIONCONTROLLER/CCustomInterpolator::SetInitialValueAndVelocity", "AFXANIMATIONCONTROLLER/CCustomInterpolator::m_currentValue", "AFXANIMATIONCONTROLLER/CCustomInterpolator::m_currentVelocity", "AFXANIMATIONCONTROLLER/CCustomInterpolator::m_duration", "AFXANIMATIONCONTROLLER/CCustomInterpolator::m_finalValue", "AFXANIMATIONCONTROLLER/CCustomInterpolator::m_initialValue", "AFXANIMATIONCONTROLLER/CCustomInterpolator::m_initialVelocity"]

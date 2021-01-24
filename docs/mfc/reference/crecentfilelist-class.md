@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRecentFileList Class"
 title: "CRecentFileList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRecentFileList", "AFXADV/CRecentFileList", "AFXADV/CRecentFileList::CRecentFileList", "AFXADV/CRecentFileList::Add", "AFXADV/CRecentFileList::GetDisplayName", "AFXADV/CRecentFileList::GetSize", "AFXADV/CRecentFileList::ReadList", "AFXADV/CRecentFileList::Remove", "AFXADV/CRecentFileList::UpdateMenu", "AFXADV/CRecentFileList::WriteList"]

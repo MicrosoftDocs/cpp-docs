@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IConnectionPointImpl Class"
 title: "IConnectionPointImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IConnectionPointImpl", "ATLCOM/ATL::IConnectionPointImpl", "ATLCOM/ATL::IConnectionPointImpl::Advise", "ATLCOM/ATL::IConnectionPointImpl::EnumConnections", "ATLCOM/ATL::IConnectionPointImpl::GetConnectionInterface", "ATLCOM/ATL::IConnectionPointImpl::GetConnectionPointContainer", "ATLCOM/ATL::IConnectionPointImpl::Unadvise", "ATLCOM/ATL::IConnectionPointImpl::m_vec"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FOPEN_MAX, _SYS_OPEN"
 title: "FOPEN_MAX, _SYS_OPEN"
 ms.date: "11/04/2016"
 f1_keywords: ["_SYS_OPEN", "FOPEN_MAX"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: getc, getwc"
 title: "getc, getwc"
 ms.date: "4/2/2020"
 api_name: ["getwc", "getc", "_o_getc", "_o_getwc"]

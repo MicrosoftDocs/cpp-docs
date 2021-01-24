@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: istream_iterator Class"
 title: "istream_iterator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["iterator/std::istream_iterator", "iterator/std::istream_iterator::char_type", "iterator/std::istream_iterator::istream_type", "iterator/std::istream_iterator::traits_type"]

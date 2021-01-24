@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Slider Notification Messages"
 title: "Slider Notification Messages"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CSliderCtrl class [MFC], notifications", "slider controls [MFC], notification messages", "messages, notification", "notifications [MFC], CSliderCtrl"]

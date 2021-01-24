@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Desktop Wizard"
 title: "Windows Desktop Wizard"
 ms.date: "03/29/2019"
 f1_keywords: ["vc.appwiz.win32.overview", "vc.appwiz.win32.appset"]

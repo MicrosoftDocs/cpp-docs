@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: embedded_idl import attribute"
 title: "embedded_idl import attribute"
 ms.date: "08/29/2019"
 f1_keywords: ["embedded_idl"]

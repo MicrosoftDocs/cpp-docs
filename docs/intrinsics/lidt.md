@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __lidt"
 title: "__lidt"
 ms.date: "09/02/2019"
 f1_keywords: ["__lidt", "__lidt_cpp"]

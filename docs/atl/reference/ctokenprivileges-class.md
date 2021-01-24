@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTokenPrivileges Class"
 title: "CTokenPrivileges Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTokenPrivileges", "ATLSECURITY/ATL::CTokenPrivileges", "ATLSECURITY/ATL::CTokenPrivileges::CTokenPrivileges", "ATLSECURITY/ATL::CTokenPrivileges::Add", "ATLSECURITY/ATL::CTokenPrivileges::Delete", "ATLSECURITY/ATL::CTokenPrivileges::DeleteAll", "ATLSECURITY/ATL::CTokenPrivileges::GetCount", "ATLSECURITY/ATL::CTokenPrivileges::GetDisplayNames", "ATLSECURITY/ATL::CTokenPrivileges::GetLength", "ATLSECURITY/ATL::CTokenPrivileges::GetLuidsAndAttributes", "ATLSECURITY/ATL::CTokenPrivileges::GetNamesAndAttributes", "ATLSECURITY/ATL::CTokenPrivileges::GetPTOKEN_PRIVILEGES", "ATLSECURITY/ATL::CTokenPrivileges::LookupPrivilege"]

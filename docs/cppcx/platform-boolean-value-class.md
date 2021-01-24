@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Boolean value class"
 title: "Platform::Boolean value class"
 ms.date: "12/30/2016"
 ms.topic: "reference"

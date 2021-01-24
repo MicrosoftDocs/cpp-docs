@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Destroying the Dialog Box"
 title: "Destroying the Dialog Box"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dialog boxes [MFC], deleting", "destruction, dialog box", "dialog boxes [MFC], destroying", "dialog boxes [MFC], removing", "modeless dialog boxes [MFC], destroying", "MFC dialog boxes [MFC], destroying", "modal dialog boxes [MFC], destroying"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: RemoveIUnknown Class"
 title: "RemoveIUnknown Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"

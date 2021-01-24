@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Metadata::DefaultMemberAttribute Attribute"
 title: "Platform::Metadata::DefaultMemberAttribute Attribute"
 ms.date: "12/30/2016"
 ms.topic: "reference"

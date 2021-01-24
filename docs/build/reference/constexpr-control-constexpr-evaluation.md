@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /constexpr (Control constexpr evaluation)"
 title: "/constexpr (Control constexpr evaluation)"
 ms.date: "08/15/2017"
 f1_keywords: ["/constexpr", "-constexpr"]

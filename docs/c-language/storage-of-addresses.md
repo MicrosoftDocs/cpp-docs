@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Storage of Addresses"
 title: "Storage of Addresses"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["storage [C++], addresses", "addresses [C++], storage of"]

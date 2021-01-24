@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Customize the Quick Access Toolbar"
 title: "How to: Customize the Quick Access Toolbar"
 ms.date: "09/07/2019"
 helpviewer_keywords: ["quick access toolbar [MFC], customization"]

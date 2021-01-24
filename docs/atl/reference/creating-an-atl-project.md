@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating an ATL Project"
 title: "Creating an ATL Project"
 ms.date: "05/06/2019"
 f1_keywords: ["vc.appwiz.ATL.project"]

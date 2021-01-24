@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::end"
 title: "Container Class::end"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["end method"]

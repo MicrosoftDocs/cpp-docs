@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CompareStringOrdinal Method"
 title: "CompareStringOrdinal Method"
 ms.date: "11/04/2016"
 ms.topic: "reference"

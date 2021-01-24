@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN022: Standard Commands Implementation"
 title: "TN022: Standard Commands Implementation"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.commands"]

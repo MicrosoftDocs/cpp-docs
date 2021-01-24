@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Installing and Getting Started with ODBC"
 title: "Installing and Getting Started with ODBC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["installing ODBC", "ODBC, installing"]

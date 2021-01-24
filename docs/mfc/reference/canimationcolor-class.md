@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAnimationColor Class"
 title: "CAnimationColor Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor::CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationColor::GetB", "AFXANIMATIONCONTROLLER/CAnimationColor::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationColor::GetG", "AFXANIMATIONCONTROLLER/CAnimationColor::GetR", "AFXANIMATIONCONTROLLER/CAnimationColor::GetValue", "AFXANIMATIONCONTROLLER/CAnimationColor::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationColor::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationColor::m_bValue", "AFXANIMATIONCONTROLLER/CAnimationColor::m_gValue", "AFXANIMATIONCONTROLLER/CAnimationColor::m_rValue"]

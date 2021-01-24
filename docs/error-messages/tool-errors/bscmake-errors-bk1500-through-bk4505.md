@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BSCMAKE errors and warnings (BKxxxx)"
 title: "BSCMAKE errors and warnings"
 ms.date: "04/16/2019"
 ms.assetid: 3767baa6-e639-472e-99fd-7543fd945cd3

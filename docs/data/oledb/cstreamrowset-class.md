@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CStreamRowset Class"
 title: "CStreamRowset Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::CStreamRowset<TAccessor>", "ATL::CStreamRowset", "CStreamRowset", "ATL.CStreamRowset<TAccessor>", "ATL.CStreamRowset", "CStreamRowset::CStreamRowset", "CStreamRowset.CStreamRowset", "ATL.CStreamRowset.CStreamRowset", "ATL::CStreamRowset::CStreamRowset", "CStreamRowset<TAccessor>::CStreamRowset", "ATL::CStreamRowset<TAccessor>::CStreamRowset", "CStreamRowset<TAccessor>.Close", "ATL.CStreamRowset<TAccessor>.Close", "CStreamRowset::Close", "CStreamRowset<TAccessor>::Close", "ATL::CStreamRowset::Close", "ATL.CStreamRowset.Close", "ATL::CStreamRowset<TAccessor>::Close", "CStreamRowset.Close"]

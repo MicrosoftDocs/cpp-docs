@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL/MFC Concepts"
 title: "ATL-MFC Concepts"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC", "ATL"]

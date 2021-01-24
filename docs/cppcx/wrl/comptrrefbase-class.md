@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ComPtrRefBase Class"
 title: "ComPtrRefBase Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"

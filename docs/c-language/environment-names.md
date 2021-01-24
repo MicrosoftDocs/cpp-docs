@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Environment Names"
 title: "Environment Names"
 ms.date: "11/04/2016"
 ms.assetid: 9af409a5-e724-465a-9a21-88d3586c2e92

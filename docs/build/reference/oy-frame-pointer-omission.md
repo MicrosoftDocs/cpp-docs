@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Oy (Frame-Pointer Omission)"
 title: "/Oy (Frame-Pointer Omission)"
 ms.date: "11/19/2018"
 f1_keywords: ["VC.Project.VCCLCompilerTool.OmitFramePointers", "/oy"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __readfsbyte, __readfsdword, __readfsqword, __readfsword"
 title: "__readfsbyte, __readfsdword, __readfsqword, __readfsword"
 ms.date: "09/02/2019"
 f1_keywords: ["__readfsword", "__readfsdword", "__readfsbyte", "__readfsqword"]

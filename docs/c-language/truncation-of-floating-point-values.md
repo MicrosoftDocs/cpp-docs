@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Truncation of Floating-Point Values"
 title: "Truncation of Floating-Point Values"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["floating-point numbers, truncation"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Program Structure"
 title: "Program Structure"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["program structure [C++], C", "programs [C++], structure", "C, program structure"]

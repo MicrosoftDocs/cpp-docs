@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Adding Animation to an MFC Project"
 title: "Walkthrough: Adding Animation to an MFC Project"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["animation [MFC]", "MFC, animation"]

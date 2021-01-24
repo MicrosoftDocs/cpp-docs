@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Function Definitions"
 title: "C Function Definitions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function declarators", "function definitions", "declaring functions, about function declarations", "declaring functions, declarators", "functions [C], parameters", "declarators, functions", "function parameters, function definitions", "function body", "declaring functions, variables"]

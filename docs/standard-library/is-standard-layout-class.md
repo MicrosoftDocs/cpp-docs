@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_standard_layout Class"
 title: "is_standard_layout Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_standard_layout"]

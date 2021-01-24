@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: back_inserter Function"
 title: "back_inserter Function"
 ms.date: "12/30/2016"
 f1_keywords: ["collection/Windows::Foundation::Collections::back_inserter"]

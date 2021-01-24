@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Edit Control Handlers"
 title: "Edit Control Handlers"
 ms.date: "11/04/2016"
 f1_keywords: ["ON_EN_ERRSPACE", "ON_EN_UPDATE", "ON_EN_VSCROLL", "ON_EN_HSCROLL", "ON_EN_KILLFOCUS", "ON_EN_MAXTEXT", "ON_EN_SETFOCUS", "ON_EN_CHANGE"]

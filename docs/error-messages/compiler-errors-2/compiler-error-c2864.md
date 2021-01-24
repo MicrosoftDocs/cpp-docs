@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2864"
 title: "Compiler Error C2864"
 ms.date: 10/04/2019
 f1_keywords: ["C2864"]

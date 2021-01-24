@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Steps in a Typical Internet Client Application"
 title: "Steps in a Typical Internet Client Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Internet client applications [MFC], general table", "WinInet classes [MFC], programming", "Internet applications [MFC], client applications"]

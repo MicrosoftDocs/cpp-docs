@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ASSUME"
 title: "ASSUME"
 ms.date: "11/05/2019"
 f1_keywords: ["ASSUME"]

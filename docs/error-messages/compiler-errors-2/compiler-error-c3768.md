@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3768"
 title: "Compiler Error C3768"
 ms.date: "11/04/2016"
 f1_keywords: ["C3768"]

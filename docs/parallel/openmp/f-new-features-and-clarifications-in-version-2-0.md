@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: F. New features and clarifications in version 2.0"
 title: "F. New features and clarifications in version 2.0"
 ms.date: "01/22/2019"
 ms.assetid: 0d4beb66-f2d5-468c-8cd3-4b00dcbab061

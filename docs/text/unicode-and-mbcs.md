@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unicode and MBCS"
 title: "Unicode and MBCS"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MBCS [C++], Unicode", "MFC [C++], character sets", "character sets [C++], multibyte", "run-time libraries [C++], language portability", "character sets [C++], Unicode", "Unicode [C++], MFC and C run-time functions", "multibyte characters [C++]", "runtime [C++], language portability"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __set_app_type"
 title: "__set_app_type"
 ms.date: "11/04/2016"
 api_name: ["__set_app_type", "_set_app_type"]

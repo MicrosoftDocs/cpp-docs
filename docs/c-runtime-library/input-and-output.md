@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Input and Output"
 title: "Input and Output"
 ms.date: "11/04/2016"
 f1_keywords: ["c.io"]

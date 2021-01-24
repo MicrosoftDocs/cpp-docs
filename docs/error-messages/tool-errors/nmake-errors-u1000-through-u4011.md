@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NMAKE errors and warnings (Uxxxx)"
 title: "NMAKE errors and warnings"
 ms.date: "04/16/2019"
 f1_keywords: ["nmake"]

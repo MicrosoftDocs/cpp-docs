@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Managing a Library"
 title: "Managing a Library"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLibrarianTool.OVERWRITEAllDefaultLibraries", "VC.Project.VCLibrarianTool.AdditionalDependencies", "VC.Project.VCLibrarianTool.RemoveObjects", "VC.Project.VCLibrarianTool.LibraryPaths", "VC.Project.VCLibrarianTool.OutputFile", "VC.Project.VCLibrarianTool.OVERWRITEDefaultLibraryNames", "VC.Project.VCLibrarianTool.AdditionalLibraryDirectories", "VC.Project.VCLibrarianTool.ListContentsFile", "VC.Project.VCLibrarianTool.ListContents", "VC.Project.VCLibrarianTool.SubSystemVersion", "VC.Project.VCLibrarianTool.OVERWRITEDefaultLibraryName", "VC.Project.VCLibrarianTool.SubSystem"]

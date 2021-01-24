@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Filename Search Functions"
 title: "Filename Search Functions"
 ms.date: "11/04/2016"
 api_location: ["msvcr100.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr80.dll", "msvcr110.dll", "msvcr110_clr0400.dll"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: integer_sequence Class"
 title: "integer_sequence Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::index_sequence", "type_traits/std::make_index_sequence", "type_traits/std::integer_sequence", "type_traits/std::make_integer_sequence", "type_traits/std::index_sequence_for"]

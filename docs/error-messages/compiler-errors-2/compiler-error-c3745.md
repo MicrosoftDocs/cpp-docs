@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3745"
 title: "Compiler Error C3745"
 ms.date: "11/04/2016"
 f1_keywords: ["C3745"]

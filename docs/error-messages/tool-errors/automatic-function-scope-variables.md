@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Automatic (function scope) variables"
 title: "Automatic (function scope) variables"
 ms.date: "04/22/2019"
 helpviewer_keywords: ["automatic variables", "variables, automatic", "functions [C++], scope", "scope, declared within functions"]

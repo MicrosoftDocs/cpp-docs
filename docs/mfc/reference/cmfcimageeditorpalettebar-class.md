@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCImageEditorPaletteBar Class"
 title: "CMFCImageEditorPaletteBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCImageEditorPaletteBar", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::GetRowHeight", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable"]

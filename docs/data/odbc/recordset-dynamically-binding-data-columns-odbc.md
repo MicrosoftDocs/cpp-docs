@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Dynamically Binding Data Columns (ODBC)"
 title: "Recordset: Dynamically Binding Data Columns (ODBC)"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["ODBC recordsets [C++], binding columns dynamically", "data binding [C++], recordset columns", "recordsets [C++], binding data", "data binding [C++], columns in recordsets", "columns [C++], binding to recordsets"]

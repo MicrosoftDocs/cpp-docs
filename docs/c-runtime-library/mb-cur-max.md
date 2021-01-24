@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MB_CUR_MAX"
 title: "MB_CUR_MAX"
 ms.date: "10/18/2017"
 f1_keywords: ["MB_CUR_MAX"]

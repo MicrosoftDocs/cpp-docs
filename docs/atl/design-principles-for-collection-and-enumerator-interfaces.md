@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Design Principles for Collection and Enumerator Interfaces"
 title: "Designing Collection and Enumerator Interfaces (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["enumerator interfaces", "collection interfaces"]

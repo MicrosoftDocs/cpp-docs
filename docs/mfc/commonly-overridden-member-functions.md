@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Commonly Overridden Member Functions"
 title: "Commonly Overridden Member Functions"
 ms.date: "09/06/2019"
 helpviewer_keywords: ["CDialog class [MFC], members", "OnInitDialog function", "dialog classes [MFC], commonly overridden member functions", "OnCancel function", "overriding, dialog class members", "OnOK function", "MFC dialog boxes [MFC], overriding member functions"]

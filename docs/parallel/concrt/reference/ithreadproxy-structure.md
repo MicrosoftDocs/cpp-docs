@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IThreadProxy Structure"
 title: "IThreadProxy Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["IThreadProxy", "CONCRTRM/concurrency::IThreadProxy", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::GetId", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::SwitchOut", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::SwitchTo", "CONCRTRM/concurrency::IThreadProxy::IThreadProxy::YieldToSystem"]

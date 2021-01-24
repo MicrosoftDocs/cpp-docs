@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;numeric&gt;"
 title: "&lt;numeric&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<numeric>"]

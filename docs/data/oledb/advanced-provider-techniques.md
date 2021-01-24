@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Advanced Provider Techniques"
 title: "Advanced Provider Techniques"
 ms.date: "10/29/2018"
 helpviewer_keywords: ["OLE DB providers, using"]

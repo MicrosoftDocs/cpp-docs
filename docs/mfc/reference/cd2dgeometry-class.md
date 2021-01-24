@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DGeometry Class"
 title: "CD2DGeometry Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DGeometry", "AFXRENDERTARGET/CD2DGeometry", "AFXRENDERTARGET/CD2DGeometry::CD2DGeometry", "AFXRENDERTARGET/CD2DGeometry::Attach", "AFXRENDERTARGET/CD2DGeometry::CombineWithGeometry", "AFXRENDERTARGET/CD2DGeometry::CompareWithGeometry", "AFXRENDERTARGET/CD2DGeometry::ComputeArea", "AFXRENDERTARGET/CD2DGeometry::ComputeLength", "AFXRENDERTARGET/CD2DGeometry::ComputePointAtLength", "AFXRENDERTARGET/CD2DGeometry::Destroy", "AFXRENDERTARGET/CD2DGeometry::Detach", "AFXRENDERTARGET/CD2DGeometry::FillContainsPoint", "AFXRENDERTARGET/CD2DGeometry::Get", "AFXRENDERTARGET/CD2DGeometry::GetBounds", "AFXRENDERTARGET/CD2DGeometry::GetWidenedBounds", "AFXRENDERTARGET/CD2DGeometry::IsValid", "AFXRENDERTARGET/CD2DGeometry::Outline", "AFXRENDERTARGET/CD2DGeometry::Simplify", "AFXRENDERTARGET/CD2DGeometry::StrokeContainsPoint", "AFXRENDERTARGET/CD2DGeometry::Tessellate", "AFXRENDERTARGET/CD2DGeometry::Widen", "AFXRENDERTARGET/CD2DGeometry::m_pGeometry"]

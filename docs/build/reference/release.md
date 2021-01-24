@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /RELEASE"
 title: "/RELEASE"
 ms.date: "11/04/2016"
 f1_keywords: ["/release_editbin"]

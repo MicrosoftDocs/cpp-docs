@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Domain Errors"
 title: "Domain Errors"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["domain errors"]

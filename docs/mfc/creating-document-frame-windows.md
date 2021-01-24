@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating Document Frame Windows"
 title: "Creating Document Frame Windows"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["frame windows [MFC], creating", "document templates [MFC], and document frame windows", "windows [MFC], creating", "runtime, class information", "run-time class [MFC], and document frame window creation", "document frame windows [MFC], creating", "MFC, frame windows"]

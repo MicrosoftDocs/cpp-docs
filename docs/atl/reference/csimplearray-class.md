@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSimpleArray Class"
 title: "CSimpleArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray::CSimpleArray", "ATLSIMPCOLL/ATL::CSimpleArray::Add", "ATLSIMPCOLL/ATL::CSimpleArray::Find", "ATLSIMPCOLL/ATL::CSimpleArray::GetData", "ATLSIMPCOLL/ATL::CSimpleArray::GetSize", "ATLSIMPCOLL/ATL::CSimpleArray::Remove", "ATLSIMPCOLL/ATL::CSimpleArray::RemoveAll", "ATLSIMPCOLL/ATL::CSimpleArray::RemoveAt", "ATLSIMPCOLL/ATL::CSimpleArray::SetAtIndex"]

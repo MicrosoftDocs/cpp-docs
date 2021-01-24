@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Relational and Equality Operators"
 title: "C Relational and Equality Operators"
 ms.date: "10/18/2018"
 helpviewer_keywords: ["relational operators, syntax", "equality operator", "operators [C], equality", "equality operator, syntax", "operators [C], relational"]

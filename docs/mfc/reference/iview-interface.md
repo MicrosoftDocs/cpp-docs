@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IView Interface"
 title: "IView Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IView", "AFXWINFORMS/IView", "AFXWINFORMS/IView::OnActivateView", "AFXWINFORMS/IView::OnInitialUpdate", "AFXWINFORMS/IView::OnUpdate"]

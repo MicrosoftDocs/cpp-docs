@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Memory Management: Resizable Memory Blocks"
 title: "Memory Management: Resizable Memory Blocks"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory blocks [MFC], resizable", "memory [MFC], corruption", "memory allocation [MFC], memory block size", "memory blocks [MFC], allocating", "blocks [MFC], memory allocation", "resizable memory blocks [MFC]"]

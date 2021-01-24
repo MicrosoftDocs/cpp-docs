@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Do DDX/DDV Data Binding with Windows Forms"
 title: "How to: Do DDX-DDV Data Binding with Windows Forms"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

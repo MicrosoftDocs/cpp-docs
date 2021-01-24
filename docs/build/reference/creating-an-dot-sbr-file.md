@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating an .Sbr File"
 title: "Creating an .Sbr File"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["SBR files", "BSCMAKE, input files", ".sbr files", "source browser files", "local symbols in browse information", "symbols"]

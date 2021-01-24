@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Call (C++)"
 title: "Function Call (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function calls, C++ functions", "functions [C++], calling", "operator overloading [C++], function calls", "function overloading [C++], function-call operator", "function calls, operator", "operators [C++], overloading", "operator overloading [C++], examples", "function call operator ()"]

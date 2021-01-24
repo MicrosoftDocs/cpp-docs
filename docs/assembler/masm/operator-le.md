@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator LE"
 title: "operator LE"
 ms.date: "12/17/2019"
 f1_keywords: ["LE", "operator LE"]

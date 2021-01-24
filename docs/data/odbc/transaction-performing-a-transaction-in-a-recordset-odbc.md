@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transaction: Performing a Transaction in a Recordset (ODBC)"
 title: "Transaction: Performing a Transaction in a Recordset (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["transactions, updating recordsets"]

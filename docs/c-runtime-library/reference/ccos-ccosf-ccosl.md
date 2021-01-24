@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ccos, ccosf, ccosl"
 title: "ccos, ccosf, ccosl"
 ms.date: "11/04/2016"
 api_name: ["ccos", "ccosf", "ccosl"]

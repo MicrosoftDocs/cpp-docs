@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComClassFactory Class"
 title: "CComClassFactory Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComClassFactory", "ATLCOM/ATL::CComClassFactory", "ATLCOM/ATL::CComClassFactory::CreateInstance", "ATLCOM/ATL::CComClassFactory::LockServer"]

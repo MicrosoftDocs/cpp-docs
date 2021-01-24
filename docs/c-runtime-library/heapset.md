@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _heapset"
 title: "_heapset"
 ms.date: "11/04/2016"
 api_name: ["_heapset"]

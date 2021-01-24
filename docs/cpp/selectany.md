@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `selectany`"
 title: "selectany"
 ms.date: "11/04/2016"
 f1_keywords: ["selectany_cpp"]

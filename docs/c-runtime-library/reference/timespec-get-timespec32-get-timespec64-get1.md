@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: timespec_get, _timespec32_get, _timespec64_get"
 title: "timespec_get, _timespec32_get, _timespec64_get1"
 ms.date: "4/2/2020"
 api_name: ["timespec_get", "_timespec32_get", "_timespec64_get", "_o__timespec32_get", "_o__timespec64_get"]

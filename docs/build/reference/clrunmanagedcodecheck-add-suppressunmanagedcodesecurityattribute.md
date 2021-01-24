@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /CLRUNMANAGEDCODECHECK (Remove SuppressUnmanagedCodeSecurityAttribute)"
 title: "/CLRUNMANAGEDCODECHECK (Remove SuppressUnmanagedCodeSecurityAttribute)"
 ms.date: "05/16/2019"
 ms.topic: "reference"

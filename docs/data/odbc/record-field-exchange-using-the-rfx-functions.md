@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Record Field Exchange: Using the RFX Functions"
 title: "Record Field Exchange: Using the RFX Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC [C++], data types", "data types [C++], ODBC record field exchange", "RFX (ODBC) [C++], function syntax and parameters", "DoFieldExchange method, and RFX functions", "ODBC [C++], RFX", "RFX (ODBC) [C++], data types", "function calls, RFX functions"]

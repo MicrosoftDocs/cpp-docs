@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN038: MFC/OLE IUnknown Implementation"
 title: "TN038: MFC-OLE IUnknown Implementation"
 ms.date: "06/28/2018"
 helpviewer_keywords: ["aggregation macros [MFC]", "COM interfaces, base interface", "IUnknown interface", "END_INTERFACE_MAP macro [MFC]", "TN038", "BEGIN_INTERFACE_PART macro [MFC]", "DECLARE_INTERFACE_MAP macro [MFC]", "BEGIN_INTERFACE_MAP macro [MFC]", "OLE [MFC], implementing IUnknown interface", "METHOD_PROLOGUE macro [MFC]", "STDMETHOD macro [MFC]", "END_INTERFACE_PART macro [MFC]", "INTERFACE_PART macro"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CInternetException Class"
 title: "CInternetException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInternetException", "AFXINET/CInternetException", "AFXINET/CInternetException::CInternetException", "AFXINET/CInternetException::m_dwContext", "AFXINET/CInternetException::m_dwError"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a Forms-Based MFC Application"
 title: "Creating a Forms-Based MFC Application"
 ms.date: "09/09/2019"
 f1_keywords: ["vc.appwiz.mfcforms.project"]

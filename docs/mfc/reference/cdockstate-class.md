@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDockState Class"
 title: "CDockState Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDockState", "AFXADV/CDockState", "AFXADV/CDockState::Clear", "AFXADV/CDockState::GetVersion", "AFXADV/CDockState::LoadState", "AFXADV/CDockState::SaveState", "AFXADV/CDockState::m_arrBarInfo"]

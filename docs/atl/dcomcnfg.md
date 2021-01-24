@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DCOMCNFG"
 title: "DCOMCNFG"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DCOMCNFG utility", "DCOM, configuring in ATL"]

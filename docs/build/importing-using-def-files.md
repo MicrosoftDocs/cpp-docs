@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Importing Using DEF Files"
 title: "Importing Using DEF Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["importing DLLs [C++], DEF files", "def files [C++], importing with", ".def files [C++], importing with", "dllimport attribute [C++], DEF files", "DLLs [C++], DEF files"]

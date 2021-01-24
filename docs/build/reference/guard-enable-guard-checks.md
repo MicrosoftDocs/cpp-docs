@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /GUARD (Enable Guard Checks)"
 title: "/GUARD (Enable Guard Checks)"
 ms.date: "11/04/2016"
 ms.assetid: 72758e23-70ac-4616-94d7-d767477406d1

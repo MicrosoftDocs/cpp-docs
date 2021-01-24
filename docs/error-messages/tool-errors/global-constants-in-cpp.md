@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Global Constants in C++"
 title: "Global Constants in C++"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["global constants", "constants, global"]

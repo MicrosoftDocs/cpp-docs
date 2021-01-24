@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Graphics (C++ AMP)"
 title: "Graphics (C++ AMP)"
 ms.date: "11/04/2016"
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f

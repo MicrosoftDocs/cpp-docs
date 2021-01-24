@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: x64 software conventions"
 title: "x64 software conventions"
 ms.date: "12/17/2018" 
 helpviewer_keywords: ["x64 coding conventions", "Visual C++, x64 calling conventions"]

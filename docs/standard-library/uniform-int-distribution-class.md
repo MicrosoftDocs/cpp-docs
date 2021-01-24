@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: uniform_int_distribution Class"
 title: "uniform_int_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::uniform_int_distribution", "random/std::uniform_int_distribution::reset", "random/std::uniform_int_distribution::a", "random/std::uniform_int_distribution::b", "random/std::uniform_int_distribution::param", "random/std::uniform_int_distribution::min", "random/std::uniform_int_distribution::max", "random/std::uniform_int_distribution::operator()", "random/std::uniform_int_distribution::param_type", "random/std::uniform_int_distribution::param_type::a", "random/std::uniform_int_distribution::param_type::b", "random/std::uniform_int_distribution::param_type::operator==", "random/std::uniform_int_distribution::param_type::operator!="]

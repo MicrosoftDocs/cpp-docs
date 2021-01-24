@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Class Library Overview"
 title: "Class Library Overview"
 ms.date: "09/17/2019"
 f1_keywords: ["vc.classes.mfc"]

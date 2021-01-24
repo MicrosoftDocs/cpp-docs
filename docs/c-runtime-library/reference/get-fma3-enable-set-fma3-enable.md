@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_FMA3_enable, _set_FMA3_enable"
 title: "_get_FMA3_enable, _set_FMA3_enable"
 ms.date: "04/05/2018"
 api_name: ["_get_FMA3_enable", "_set_FMA3_enable"]

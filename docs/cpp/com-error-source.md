@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _com_error::Source"
 title: "_com_error::Source"
 ms.date: "11/04/2016"
 f1_keywords: ["_com_error::Source"]

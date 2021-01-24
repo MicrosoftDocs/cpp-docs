@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application Control"
 title: "Application Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application control [MFC]"]

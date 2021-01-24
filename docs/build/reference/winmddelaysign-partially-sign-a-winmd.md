@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /WINMDDELAYSIGN (Partially Sign a winmd)"
 title: "/WINMDDELAYSIGN (Partially Sign a winmd)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.WINMDDelaySign"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: initonly (C++/CLI)"
 title: "initonly (C++/CLI)"
 ms.date: "11/04/2016"
 f1_keywords: ["initonly_cpp", "initonly"]

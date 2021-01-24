@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: conditional Class"
 title: "conditional Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::conditional"]

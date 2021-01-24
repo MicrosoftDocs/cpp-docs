@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dot Directives"
 title: "Dot Directives"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, dot directives", "dot directives in NMAKE"]

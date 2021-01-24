@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC: Using Database Classes Without Documents and Views"
 title: "MFC: Using Database Classes Without Documents and Views"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC applications [C++], without views", "documents [C++], applications without", "ODBC applications [C++]", "document/view architecture [C++], in databases", "files [C++], MFC", "database classes [C++], MFC", "CRecordView class, using in database applications", "database applications [C++], without views", "database applications [C++], application wizard options", "application wizards [C++], creating database applications", "ODBC [C++], file support in database applications", "ODBC applications [C++], without documents", "database applications [C++], without documents", "user interface [C++], drawing information"]

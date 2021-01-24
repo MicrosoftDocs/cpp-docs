@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding Columns to the Control (Report View)"
 title: "Adding Columns to the Control (Report View)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CListCtrl class [MFC], adding columns", "report view in CListCtrl class [MFC]", "views [MFC], report", "columns [MFC], adding to CListCtrl", "CListCtrl class [MFC], report view"]

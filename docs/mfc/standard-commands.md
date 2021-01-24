@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Standard Commands"
 title: "Standard Commands"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["File menu", "identifiers [MFC], command IDs", "command IDs, standard commands", "OLE commands", "commands [MFC], standard", "standard command IDs", "Window menu commands", "standard commands", "View menu commands", "Edit menu standard commands", "Help [MFC], menus", "programmer-defined IDs [MFC]"]

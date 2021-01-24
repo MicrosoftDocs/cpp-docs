@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: abort Function (C)"
 title: "abort Function (C)"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["abort function"]

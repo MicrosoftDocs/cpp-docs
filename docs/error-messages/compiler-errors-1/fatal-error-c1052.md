@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fatal Error C1052"
 title: "Fatal Error C1052"
 ms.date: "05/08/2017"
 f1_keywords: ["C1052"]

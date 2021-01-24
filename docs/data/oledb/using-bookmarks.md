@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Bookmarks"
 title: "Using Bookmarks"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["rowsets, bookmarks", "OLE DB provider templates, bookmarks", "bookmarks, OLE DB", "OLE DB providers, bookmark support"]

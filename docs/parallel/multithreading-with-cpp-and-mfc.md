@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multithreading with C++ and MFC"
 title: "Multithreading with C++ and MFC"
 ms.date: "08/27/2018"
 helpviewer_keywords: ["MFC [C++], multithreading", "threading [C++], MFC", "worker threads [C++]", "synchronization classes [C++]", "synchronization [C++], multithreading", "threading [MFC], about threading", "CWinThread class, purpose of", "multithreading [C++], MFC", "threading [MFC]", "user interface threads [C++]"]

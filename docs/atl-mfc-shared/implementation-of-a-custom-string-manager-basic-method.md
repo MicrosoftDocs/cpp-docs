@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Implementation of a Custom String Manager (Basic Method)"
 title: "Implementation of a Custom String Manager (Basic Method)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["IAtlStringMgr class, using"]

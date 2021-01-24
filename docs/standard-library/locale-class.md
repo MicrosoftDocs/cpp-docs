@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: locale Class"
 title: "locale Class"
 ms.date: "07/20/2020"
 f1_keywords: ["xlocale/std::locale", "xlocale/std::locale::category", "xlocale/std::locale::combine", "xlocale/std::locale::name", "xlocale/std::locale::classic", "xlocale/std::locale::global", "xlocale/std::locale::operator( )", "xlocale/std::locale::facet", "xlocale/std::locale::id"]

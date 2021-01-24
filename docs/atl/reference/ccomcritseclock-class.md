@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComCritSecLock Class"
 title: "CComCritSecLock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComCritSecLock", "ATLBASE/ATL::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::Lock", "ATLBASE/ATL::CComCritSecLock::Unlock"]

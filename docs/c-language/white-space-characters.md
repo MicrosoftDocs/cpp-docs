@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: White-Space Characters"
 title: "White-Space Characters"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["white space, characters", "characters, white space"]

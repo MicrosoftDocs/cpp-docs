@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Simple Variable Declarations"
 title: "Simple Variable Declarations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["untyped variables", "declaring variables, simple"]

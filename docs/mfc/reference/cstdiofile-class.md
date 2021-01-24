@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CStdioFile Class"
 title: "CStdioFile Class"
 ms.date: "08/29/2019"
 f1_keywords: ["CStdioFile", "AFX/CStdioFile", "AFX/CStdioFile::CStdioFile", "AFX/CStdioFile::Open", "AFX/CStdioFile::ReadString", "AFX/CStdioFile::Seek", "AFX/CStdioFile::WriteString", "AFX/CStdioFile::m_pStream"]

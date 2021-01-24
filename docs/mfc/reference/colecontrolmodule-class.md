@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleControlModule Class"
 title: "COleControlModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["OleControlModule"]

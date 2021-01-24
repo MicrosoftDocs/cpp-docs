@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _getdcwd, _wgetdcwd"
 title: "_getdcwd, _wgetdcwd"
 ms.date: "4/2/2020"
 api_name: ["_getdcwd", "_wgetdcwd", "_o__getdcwd", "_o__wgetdcwd"]

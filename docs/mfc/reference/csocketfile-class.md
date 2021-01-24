@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSocketFile Class"
 title: "CSocketFile Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSocketFile", "AFXSOCK/CSocketFile", "AFXSOCK/CSocketFile::CSocketFile"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: default_searcher Class"
 title: "default_searcher class"
 ms.date: "08/03/2019"
 f1_keywords: ["functional/std::default_searcher"]

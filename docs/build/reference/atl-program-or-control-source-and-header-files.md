@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Program or Control Source and Header Files"
 title: "ATL Program or Control Source and Header Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["file types [C++], ATL source and headers"]

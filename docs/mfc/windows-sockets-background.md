@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets: Background"
 title: "Windows Sockets: Background"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["record-oriented data [MFC]", "e-mail [MFC]", "Internet Protocol Suite", "mail [MFC]", "communications [MFC], domain", "Windows Sockets [MFC], stream sockets", "mail [MFC], programming for", "sockets [MFC], stream sockets", "datagram sockets [MFC]", "SOCKET handle", "data types [MFC], socket", "e-mail [MFC], programming for", "X Window servers", "sequenced data flow", "stream sockets [MFC]"]

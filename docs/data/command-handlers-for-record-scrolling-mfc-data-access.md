@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Command Handlers for Record Scrolling  (MFC Data Access)"
 title: "Command Handlers for Record Scrolling  (MFC Data Access)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["record views [C++], scrolling", "record scrolling [C++]", "scrolling records"]

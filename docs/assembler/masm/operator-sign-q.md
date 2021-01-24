@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator SIGN?"
 title: "operator SIGN?"
 ms.date: "12/17/2019"
 f1_keywords: ["SIGN?", "operator SIGN?"]

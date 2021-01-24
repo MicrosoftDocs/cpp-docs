@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency Namespace (C++ AMP)"
 title: "Concurrency Namespace (C++ AMP)"
 ms.date: "11/04/2016"
 f1_keywords: ["AMP/Concurrency"]

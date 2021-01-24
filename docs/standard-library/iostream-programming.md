@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: iostream Programming"
 title: "iostream Programming"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["text output [C++]", "text [C++], formatting", "console [C++], writing to", "console [C++], reading from", "console applications [C++]", "reading data [C++], iostream programming", "output [C++]", "console [C++], text", "data [C++], reading", "I/O [C++], iostream programming", "iostream library", "printing [C++], printing to console", "programming [C++], iostream programming", "text input [C++]"]

@@ -1,7 +1,7 @@
 ---
 title: Using the C++ Core Guidelines checkers
 description: "How to set up and use the Microsoft C++ Code Analysis rules for C++ Core Guidelines."
-ms.date: 07/27/2020
+ms.date: 12/16/2020
 ms.topic: "conceptual"
 dev_langs:
  - CPP
@@ -297,13 +297,13 @@ Code Analysis requires a few environment variables and compiler command-line opt
   - `set esp.annotationbuildlevel=ignore` This disables the logic that processes SAL annotations. Annotations don't affect code analysis in the C++ Core Guidelines Checker, yet their processing takes time (sometimes a long time). This setting is optional, but highly recommended.
   - `set caexcludepath=%include%` We highly recommend that you disable warnings that fire on standard headers. You can add more paths here, for example the path to the common headers in your project.
 
-- **Command line options**
+- **Command-line options**
   - **`/analyze`**  Enables code analysis (consider also using **`/analyze:only`** and **`/analyze:quiet`**).
   - **`/analyze:plugin EspXEngine.dll`** This option loads the Code Analysis Extensions engine into the PREfast. This engine, in turn, loads the C++ Core Guidelines Checker.
 
 ## Use the Guideline Support Library
 
-The Guideline Support Library (GSL) is designed to help you follow the Core Guidelines. The GSL includes definitions that let you replace error-prone constructs with safer alternatives. For example, you can replace a `T*, length` pair of parameters with the `span<T>` type. The GSL is available at [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). The library is open-source, so you can view the sources, make comments, or contribute. The project can be found at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+The Guideline Support Library (GSL) is designed to help you follow the Core Guidelines. The GSL includes definitions that let you replace error-prone constructs with safer alternatives. For example, you can replace a `T*, length` pair of parameters with the `span<T>` type. The GSL project is available on GitHub at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL). The library is open-source, so you can view the sources, make comments, or contribute. You can also use the [vcpkg](../build/vcpkg.md) package manager to download and install the library locally.
 
 ::: moniker range="msvc-140"
 

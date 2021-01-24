@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Allocating GDI Resources"
 title: "Allocating GDI Resources"
 ms.date: "06/03/2019"
 helpviewer_keywords: ["resources [MFC], printing", "GDI objects [MFC], allocating during printing", "printing [MFC], allocating GDI resources"]

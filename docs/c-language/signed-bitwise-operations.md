@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Signed Bitwise Operations"
 title: "Signed Bitwise Operations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["bitwise operations", "signed bitwise operations"]

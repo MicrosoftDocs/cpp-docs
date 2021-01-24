@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections::Vector Class"
 title: "Platform::Collections::Vector Class"
 ms.date: "12/04/2019"
 ms.topic: "reference"

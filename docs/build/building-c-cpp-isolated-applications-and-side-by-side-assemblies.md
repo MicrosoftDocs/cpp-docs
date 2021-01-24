@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building C/C++ Isolated Applications and Side-by-side Assemblies"
 title: "Building C/C++ Isolated Applications and Side-by-side Assemblies"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["isolated applications [C++]", "WinSxS [C++]", "native assembly cache [C++]", "builds [C++], isolated applications", "side-by-side applications [C++]", "builds [C++], side-by-side assemblies"]

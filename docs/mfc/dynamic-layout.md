@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dynamic Layout"
 title: "Dynamic Layout"
 ms.date: "09/09/2019"
 ms.assetid: 8598cfb2-c8d4-4f5a-bf2b-59dc4653e042

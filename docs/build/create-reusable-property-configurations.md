@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Share or reuse Visual Studio project settings"
 title: "Share or reuse Visual Studio project settings - C++"
 ms.date: "07/17/2019"
 helpviewer_keywords: ["project properties [C++], reusable"]

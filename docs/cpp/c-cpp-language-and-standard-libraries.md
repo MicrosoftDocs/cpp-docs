@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C/C++ language and standard libraries reference"
 title: "C/C++ language and standard libraries reference"
 ms.date: "08/13/2019"
 ms.assetid: c26a6682-961a-43ef-ad33-2adc612f69ac

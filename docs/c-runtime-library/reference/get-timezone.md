@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_timezone"
 title: "_get_timezone"
 ms.date: "4/2/2020"
 api_name: ["_get_timezone", "_o__get_timezone"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: B. Stubs for run-time library functions"
 title: "B. Stubs for run-time library functions"
 ms.date: "01/22/2019"
 ms.assetid: fdfdabe0-f678-4551-80d5-827b62354427

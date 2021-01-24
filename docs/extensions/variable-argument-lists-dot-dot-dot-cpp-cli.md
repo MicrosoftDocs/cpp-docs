@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Variable Argument Lists (...) (C++/CLI)"
 title: "Variable Argument Lists (...) (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

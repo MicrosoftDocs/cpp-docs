@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ALLOWBIND"
 title: "/ALLOWBIND"
 ms.date: "11/04/2016"
 f1_keywords: ["/allowbind_bind"]

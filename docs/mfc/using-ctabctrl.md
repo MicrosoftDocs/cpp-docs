@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CTabCtrl"
 title: "Using CTabCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CTabCtrl class [MFC], using", "tab controls [MFC], using"]

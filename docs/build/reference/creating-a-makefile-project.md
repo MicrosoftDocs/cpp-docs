@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Create a C++ makefile project"
 title: "Create a C++ makefile project in Visual Studio"
 ms.date: "08/05/2019"
 f1_keywords: ["vc.appwiz.makefile.project"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Delegates (C++/CX)"
 title: "Delegates (C++/CX)"
 ms.date: "01/22/2017"
 ms.assetid: 3175bf1c-86d8-4eda-8d8f-c5b6753d8e38

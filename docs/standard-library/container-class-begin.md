@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::begin"
 title: "Container Class::begin"
 ms.date: "05/07/2019"
 helpviewer_keywords: ["begin method"]

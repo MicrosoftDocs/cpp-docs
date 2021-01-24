@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: va_arg, va_copy, va_end, va_start"
 title: "va_arg, va_copy, va_end, va_start"
 ms.date: "11/04/2016"
 api_name: ["va_arg", "va_end", "va_copy", "va_start"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Prefix Increment and Decrement Operators: ++ and --"
 title: "Prefix Increment and Decrement Operators: ++ and --"
 ms.date: "11/04/2016"
 f1_keywords: ["--", "++"]

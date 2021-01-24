@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Filename Macros"
 title: "Filename Macros"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["macros, NMAKE", "filename macros in NMAKE", "NMAKE program, filename macros"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Expose an STL/CLR Container from an Assembly"
 title: "How to: Expose an STL/CLR Container from an Assembly"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["STL/CLR Containers [STL/CLR]", "STL/CLR, cross-assembly issues"]

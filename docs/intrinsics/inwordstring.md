@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __inwordstring"
 title: "__inwordstring"
 ms.date: "09/02/2019"
 f1_keywords: ["__inwordstring", "__inwordstring_cpp"]

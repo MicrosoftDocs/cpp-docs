@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;utility&gt; operators"
 title: "&lt;utility&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["utility/std::operator!=", "utility/std::operator&gt;", "utility/std::operator&gt;=", "utility/std::operator&lt;", "utility/std::operator&lt;=", "utility/std::operator=="]

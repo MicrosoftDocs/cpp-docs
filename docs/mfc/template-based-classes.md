@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Template-Based Classes"
 title: "Template-Based Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["type-safe collections", "CTypedPtrList class [MFC], template-based classes", "arrays [MFC], classes", "arrays [MFC], pointers", "typed pointers, collections of", "arrays [MFC], template-based", "CArray class [MFC], template-based classes", "simple template-based collections", "simple array collection classes [MFC]", "typed pointers", "collections, typed-pointer", "CList class [MFC], template-based classes", "collection classes [MFC], template-based", "CTypedPtrMap class [MFC], template-based classes", "pointers, collections of typed", "CTypedPtrArray class [MFC], template-based classes", "MFC collection classes [MFC], template-based", "template-based collection classes [MFC]", "simple list collection classes [MFC]"]

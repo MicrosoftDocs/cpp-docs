@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Collections and Enumerators"
 title: "ATL Collections and Enumerators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["enumerator interfaces", "collections, ATL classes", "enumerators, ATL classes", "collection interfaces"]

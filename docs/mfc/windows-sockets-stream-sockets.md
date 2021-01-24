@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets: Stream Sockets"
 title: "Windows Sockets: Stream Sockets"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows Sockets [MFC], stream sockets", "sockets [MFC], stream sockets", "stream sockets [MFC]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fixing Release Build Problems"
 title: "Fixing Release Build Problems"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["release builds, troubleshooting", "debug builds, memory overwrites", "memory, overwrites", "troubleshooting Visual C++, release builds", "troubleshooting release builds"]

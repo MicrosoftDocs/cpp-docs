@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IObjectSafetyImpl Class"
 title: "IObjectSafetyImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IObjectSafetyImpl", "ATLCTL/ATL::IObjectSafetyImpl", "ATLCTL/ATL::IObjectSafetyImpl::GetInterfaceSafetyOptions", "ATLCTL/ATL::IObjectSafetyImpl::SetInterfaceSafetyOptions", "ATLCTL/ATL::IObjectSafetyImpl::m_dwCurrentSafety"]

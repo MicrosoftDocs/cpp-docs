@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;thread&gt; operators"
 title: "&lt;thread&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["thread/std::operator!=", "thread/std::operator&gt;", "thread/std::operator&gt;=", "thread/std::operator&lt;", "thread/std::operator&lt;&lt;", "thread/std::operator&lt;=", "thread/std::operator=="]

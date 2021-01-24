@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN055: Migrating MFC ODBC Database Class Applications to MFC DAO Classes"
 title: "TN055: Migrating MFC ODBC Database Class Applications to MFC DAO Classes"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["DAO [MFC], migration", "TN055", "migration [MFC], ODBC database applications", "ODBC classes [MFC], DAO classes", "migrating ODBC database applications [MFC]", "porting database applications to DAO", "ODBC [MFC], DAO", "porting ODBC database applications to DAO", "migrating database applications [MFC]"]

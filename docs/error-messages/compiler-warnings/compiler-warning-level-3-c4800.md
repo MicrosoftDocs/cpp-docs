@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4800"
 title: "Compiler Warning (level 4) C4800"
 ms.date: "03/14/2019"
 f1_keywords: ["C4800"]

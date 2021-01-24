@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cinttypes&gt;"
 title: "&lt;cinttypes&gt;"
 ms.date: "11/04/2016"
 ms.assetid: 18eb738c-aa74-4ed3-9cdd-049ef4c64b80

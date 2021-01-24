@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: unique_lock Class"
 title: "unique_lock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["mutex/std::unique_lock"]

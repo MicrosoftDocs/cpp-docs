@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Context-Sensitive Keywords  (C++/CLI and C++/CX)"
 title: "Context-Sensitive Keywords  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

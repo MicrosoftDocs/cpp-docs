@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating an ATL DHTML Control"
 title: "Creating an ATL DHTML Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HTML controls, creating", "DHTML controls", "DHTML controls, creating"]

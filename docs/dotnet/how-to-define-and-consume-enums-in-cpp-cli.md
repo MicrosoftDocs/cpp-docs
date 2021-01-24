@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Define and consume enums in C++/CLI"
 title: "How to: Define and consume enums in C++/CLI"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["enum class, specifying underlying types"]

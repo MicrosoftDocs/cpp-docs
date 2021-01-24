@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;tuple&gt; functions"
 title: "&lt;tuple&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["tuple/std::get", "tuple/std::make_tuple", "tuple/std::tie"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Precedence and order of evaluation"
 title: "Precedence and order of evaluation"
 ms.date: "07/11/2019"
 helpviewer_keywords: ["associativity of operators [C++]", "precedence [C++], operators", "data binding [C++], operator precedence", "operators [C++], precedence"]

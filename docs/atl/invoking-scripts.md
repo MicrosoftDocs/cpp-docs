@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Invoking Scripts"
 title: "Invoking Scripts (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["StringRegister method", "scripts, invoking registry in ATL"]

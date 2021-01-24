@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C2700 Through C2799"
 title: "Compiler errors C2700 Through C2799"
 ms.date: "04/21/2019"
 f1_keywords: ["C2716", "C2717", "C2727", "C2729", "C2737", "C2740", "C2741", "C2742", "C2744", "C2746", "C2747", "C2759", "C2763", "C2769", "C2772", "C2789", "C2796", "C2799"]

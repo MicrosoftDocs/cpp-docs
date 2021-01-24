@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: enable_if Class"
 title: "enable_if Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::enable_if"]

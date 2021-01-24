@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /INTEGRITYCHECK (Require Signature Check)"
 title: "/INTEGRITYCHECK (Require Signature Check)"
 ms.date: "11/04/2016"
 ms.assetid: 9e738825-2c98-40cd-8ad2-5d0d9c14893e

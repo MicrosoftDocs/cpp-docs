@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Using join to Prevent Deadlock"
 title: "Walkthrough: Using join to Prevent Deadlock"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["preventing deadlock with joins [Concurrency Runtime]", "deadlock, preventing [Concurrency Runtime]", "non-greedy joins, example", "join class, example"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Registry Scripting Examples"
 title: "Registry Scripting Examples"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["scripting, examples", "registrar scripts [ATL]", "scripts, Registrar scripts", "registry, Registrar"]

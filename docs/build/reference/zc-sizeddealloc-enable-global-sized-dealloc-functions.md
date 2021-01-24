@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zc:sizedDealloc (Enable Global Sized Deallocation Functions)"
 title: "/Zc:sizedDealloc (Enable Global Sized Deallocation Functions)"
 ms.date: "03/06/2018"
 f1_keywords: ["sizedDealloc", "/Zc:sizedDealloc"]

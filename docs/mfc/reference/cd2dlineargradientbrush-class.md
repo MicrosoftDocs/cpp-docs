@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DLinearGradientBrush Class"
 title: "CD2DLinearGradientBrush Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CD2DLinearGradientBrush", "AFXRENDERTARGET/CD2DLinearGradientBrush", "AFXRENDERTARGET/CD2DLinearGradientBrush::CD2DLinearGradientBrush", "AFXRENDERTARGET/CD2DLinearGradientBrush::Attach", "AFXRENDERTARGET/CD2DLinearGradientBrush::Create", "AFXRENDERTARGET/CD2DLinearGradientBrush::Destroy", "AFXRENDERTARGET/CD2DLinearGradientBrush::Detach", "AFXRENDERTARGET/CD2DLinearGradientBrush::Get", "AFXRENDERTARGET/CD2DLinearGradientBrush::GetEndPoint", "AFXRENDERTARGET/CD2DLinearGradientBrush::GetStartPoint", "AFXRENDERTARGET/CD2DLinearGradientBrush::SetEndPoint", "AFXRENDERTARGET/CD2DLinearGradientBrush::SetStartPoint", "AFXRENDERTARGET/CD2DLinearGradientBrush::m_LinearGradientBrushProperties", "AFXRENDERTARGET/CD2DLinearGradientBrush::m_pLinearGradientBrush"]

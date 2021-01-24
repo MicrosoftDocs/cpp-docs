@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCSpinButtonCtrl Class"
 title: "CMFCSpinButtonCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCSpinButtonCtrl", "AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl", "AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl::OnDraw"]

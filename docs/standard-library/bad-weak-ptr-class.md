@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bad_weak_ptr Class"
 title: "bad_weak_ptr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::bad_weak_ptr"]

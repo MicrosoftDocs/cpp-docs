@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ALLOWBIND (Prevent DLL Binding)"
 title: "/ALLOWBIND (Prevent DLL Binding)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.PreventDLLBinding", "/allowbind"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: basic_istream Class"
 title: "basic_istream Class"
 ms.date: "11/04/2016"
 f1_keywords: ["istream/std::basic_istream", "istream/std::basic_istream::gcount", "istream/std::basic_istream::get", "istream/std::basic_istream::getline", "istream/std::basic_istream::", "istream/std::basic_istream::peek", "istream/std::basic_istream::putback", "istream/std::basic_istream::read", "istream/std::basic_istream::readsome", "istream/std::basic_istream::seekg", "istream/std::basic_istream::sentry", "istream/std::basic_istream::swap", "istream/std::basic_istream::sync", "istream/std::basic_istream::tellg", "istream/std::basic_istream::unget"]

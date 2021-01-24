@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Printing in Rich Edit Controls"
 title: "Printing in Rich Edit Controls"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["printing [MFC], CRichEditCtrl", "rich edit controls [MFC], printing", "CRichEditCtrl class [MFC], printing"]

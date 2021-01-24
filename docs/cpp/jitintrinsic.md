@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: jitintrinsic"
 title: "jitintrinsic"
 ms.date: "11/04/2016"
 f1_keywords: ["jitintrinsic", "jitintrinsic_cpp"]

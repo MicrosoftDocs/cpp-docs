@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /nologo (Suppress Startup Banner) (C/C++)"
 title: "/nologo (Suppress Startup Banner) (C/C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.SuppressStartupBanner", "VC.Project.VCCLCompilerTool.SuppressStartupBanner"]

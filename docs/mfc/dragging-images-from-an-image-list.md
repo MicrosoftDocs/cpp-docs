@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dragging Images from an Image List"
 title: "Dragging Images from an Image List"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CImageList class [MFC], dragging images from", "dragging images from image lists [MFC]", "image lists [MFC], dragging images from", "images [MFC], dragging from image lists"]

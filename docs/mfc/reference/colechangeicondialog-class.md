@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleChangeIconDialog Class"
 title: "COleChangeIconDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleChangeIconDialog", "AFXODLGS/COleChangeIconDialog", "AFXODLGS/COleChangeIconDialog::COleChangeIconDialog", "AFXODLGS/COleChangeIconDialog::DoChangeIcon", "AFXODLGS/COleChangeIconDialog::DoModal", "AFXODLGS/COleChangeIconDialog::GetIconicMetafile", "AFXODLGS/COleChangeIconDialog::m_ci"]

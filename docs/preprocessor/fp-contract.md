@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fp_contract pragma"
 title: "fp_contract pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.fp_contract", "fp_contract_CPP"]

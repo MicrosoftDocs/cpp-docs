@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _putc_nolock, _putwc_nolock"
 title: "_putc_nolock, _putwc_nolock"
 ms.date: "4/2/2020"
 api_name: ["_putc_nolock", "_putwc_nolock", "_o__putc_nolock", "_o__putwc_nolock"]

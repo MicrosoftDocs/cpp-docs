@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCheckListBox Class"
 title: "CCheckListBox Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCheckListBox", "AFXWIN/CCheckListBox", "AFXWIN/CCheckListBox::CCheckListBox", "AFXWIN/CCheckListBox::Create", "AFXWIN/CCheckListBox::DrawItem", "AFXWIN/CCheckListBox::Enable", "AFXWIN/CCheckListBox::GetCheck", "AFXWIN/CCheckListBox::GetCheckStyle", "AFXWIN/CCheckListBox::IsEnabled", "AFXWIN/CCheckListBox::MeasureItem", "AFXWIN/CCheckListBox::OnGetCheckPosition", "AFXWIN/CCheckListBox::SetCheck", "AFXWIN/CCheckListBox::SetCheckStyle"]

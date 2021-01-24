@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Warning LNK4002"
 title: "Linker Tools Warning LNK4002"
 ms.date: "11/04/2016"
 f1_keywords: ["LNK4002"]

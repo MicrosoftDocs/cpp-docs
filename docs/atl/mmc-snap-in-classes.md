@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MMC Snap-In Classes"
 title: "MMC Snap-In Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

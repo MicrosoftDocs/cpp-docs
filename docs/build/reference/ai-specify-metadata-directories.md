@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /AI (Specify Metadata Directories)"
 title: "/AI (Specify Metadata Directories)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.AdditionalUsingDirectories", "VC.Project.VCNMakeTool.AssemblySearchPath", "/AI", "VC.Project.VCCLWCECompilerTool.AdditionalUsingDirectories"]

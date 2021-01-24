@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Buffer manipulation"
 title: "Buffer manipulation"
 ms.date: "04/04/2018"
 helpviewer_keywords: ["buffers, manipulation routines", "buffers"]

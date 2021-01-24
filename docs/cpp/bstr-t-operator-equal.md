@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _bstr_t::operator ="
 title: "_bstr_t::operator ="
 ms.date: "11/04/2016"
 f1_keywords: ["_bstr_t::operator="]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Rules for Module-Definition Statements"
 title: "Rules for Module-Definition Statements"
 ms.date: "11/04/2016"
 f1_keywords: [".def"]

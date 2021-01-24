@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions: Changes to Exception Macros in Version 3.0"
 title: "Exceptions: Changes to Exception Macros in Version 3.0"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["C++ exception handling [MFC], upgrade considerations", "CATCH macro [MFC]", "exceptions [MFC], what's changed", "THROW_LAST macro [MFC]"]

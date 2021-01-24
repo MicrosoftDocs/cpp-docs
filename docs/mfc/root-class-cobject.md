@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Root Class: CObject"
 title: "Root Class: CObject"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["base classes [MFC], MFC objects", "classes [MFC], MFC base class [MFC]", "root class [MFC]", "MFC, base class"]

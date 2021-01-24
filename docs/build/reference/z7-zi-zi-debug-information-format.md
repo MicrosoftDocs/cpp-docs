@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Z7, /Zi, /ZI (Debug Information Format)"
 title: "/Z7, /Zi, /ZI (Debug Information Format)"
 ms.date: "07/06/2020"
 f1_keywords: ["VC.Project.VCCLCompilerTool.DebugInformationFormat", "/ZI", "/Zi", "/Z7", "VC.Project.VCCLWCECompilerTool.DebugInformationFormat"]

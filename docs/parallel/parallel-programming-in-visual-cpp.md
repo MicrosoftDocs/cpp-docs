@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parallel Programming in Visual C++"
 title: "Parallel Programming in Visual C++"
 ms.date: "11/04/2016"
 ms.assetid: f5c28ab6-a1d9-492f-b207-05e8aee73e96

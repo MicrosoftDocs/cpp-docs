@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPrivateObjectSecurityDesc Class"
 title: "CPrivateObjectSecurityDesc Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::ConvertToAutoInherit", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Create", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Get", "ATLSECURITY/ATL::CPrivateObjectSecurityDesc::Set"]

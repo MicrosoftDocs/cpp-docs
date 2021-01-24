@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAutoHideDockSite Class"
 title: "CAutoHideDockSite Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAutoHideDockSite", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::CanAcceptPane", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::DockPane", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::GetAlignRect", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::RepositionPanes", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::SetOffsetLeft", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::SetOffsetRight", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::UnSetAutoHideMode", "AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::m_nExtraSpace"]

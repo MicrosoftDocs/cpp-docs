@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Toolbar Implementation"
 title: "MFC Toolbar Implementation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["toolbars [MFC], creating", "buttons [MFC], MFC toolbars", "toolbars [MFC], docking", "CToolBar class [MFC], creating toolbars", "MFC toolbars", "floating toolbars [MFC]", "toolbars [MFC], floating", "docking toolbars [MFC]", "bitmaps [MFC], toolbar", "toolbar controls [MFC]", "CToolBarCtrl class [MFC], implementing toolbars", "tool tips [MFC], enabling", "toolbars [MFC]", "toolbars [MFC], implementing MFC toolbars"]

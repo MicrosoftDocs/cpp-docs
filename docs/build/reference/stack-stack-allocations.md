@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /STACK (Stack Allocations)"
 title: "/STACK (Stack Allocations)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.StackReserveSize", "VC.Project.VCLinkerTool.StackCommitSize", "/stack"]

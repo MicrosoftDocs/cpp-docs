@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64"
 title: "_findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64"
 ms.date: "4/2/2020"
 api_name: ["_findfirst", "_wfindfirst", "_findfirst32", "_wfindfirst32", "_findfirst32i64", "_wfindfirst32i64", "_findfirst64", "_wfindfirst64", "_findfirst64i32", "_wfindfirst64i32", "_findfirsti64", "_wfindfirsti64", "_o__findfirst32", "_o__findfirst32i64", "_o__findfirst64", "_o__findfirst64i32", "_o__wfindfirst32", "_o__wfindfirst32i64", "_o__wfindfirst64", "_o__wfindfirst64i32"]

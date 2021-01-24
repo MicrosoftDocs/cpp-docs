@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Locale Categories"
 title: "Locale Categories"
 ms.date: "11/04/2016"
 f1_keywords: ["LC_MAX", "LC_MIN", "LC_MONETARY", "LC_TIME", "LC_NUMERIC", "LC_COLLATE", "LC_CTYPE", "LC_ALL"]

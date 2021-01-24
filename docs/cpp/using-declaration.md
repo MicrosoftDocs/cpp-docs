@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: using declaration"
 title: "using declaration"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["using declaration", "declarations [C++], using-declaration", "namespaces [C++], unqualified names in", "using keyword [C++]"]

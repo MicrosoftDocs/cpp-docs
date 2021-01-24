@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building on the Framework"
 title: "Building on the Framework"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application-specific classes [MFC]", "application framework [MFC], building applications", "applications [MFC]", "MFC, application development"]

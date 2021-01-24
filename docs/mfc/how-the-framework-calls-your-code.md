@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How the Framework Calls Your Code"
 title: "How the Framework Calls Your Code"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["control flow [MFC], MFC framework and your code", "events [MFC], command routing in MFC", "command routing [MFC], framework", "command handling [MFC], calling handlers and code in MFC", "events [MFC], event-driven programming", "MFC, calling code from", "MFC, calling code", "application-specific events [MFC]", "command routing [MFC], MFC"]

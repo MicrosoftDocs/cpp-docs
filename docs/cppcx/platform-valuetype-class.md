@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::ValueType Class"
 title: "Platform::ValueType Class"
 ms.date: "02/03/2017"
 ms.topic: "reference"

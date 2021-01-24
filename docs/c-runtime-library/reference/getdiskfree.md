@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _getdiskfree"
 title: "_getdiskfree"
 ms.date: "4/2/2020"
 api_name: ["_getdiskfree", "_o__getdiskfree"]

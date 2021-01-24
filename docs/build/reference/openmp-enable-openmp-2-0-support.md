@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /openmp (Enable OpenMP Support)"
 title: "/openmp (Enable OpenMP Support)"
 ms.date: "04/15/2019"
 f1_keywords: ["/openmp", "VC.Project.VCCLCompilerTool.OpenMP"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: tasks.vs.json schema reference (C++)"
 title: "tasks.vs.json schema reference (C++)"
 ms.date: "08/20/2019"
 helpviewer_keywords: ["tasks.vs.json file [C++]"]

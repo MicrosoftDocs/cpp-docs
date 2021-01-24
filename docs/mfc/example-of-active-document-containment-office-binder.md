@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Example of Active Document Containment: Office Binder"
 title: "Example of Active Document Containment: Office Binder"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["active documents [MFC], containers", "examples [MFC], active document containment", "containers [MFC], active document", "active document containers [MFC], examples", "Office Binder [MFC]", "MFC COM, active document containment"]

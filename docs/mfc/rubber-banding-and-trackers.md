@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Rubber-Banding and Trackers"
 title: "Rubber-Banding and Trackers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["trackers [MFC]", "CRectTracker class [MFC], implementing trackers", "OLE objects [MFC], selecting", "rubber banding [MFC]", "WM_LBUTTONDOWN [MFC]"]

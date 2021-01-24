@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Increment and Decrement Operator Overloading (C++)"
 title: "Increment and Decrement Operator Overloading (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["increment operators [C++]", "increment operators [C++], types of", "decrement operators [C++]", "decrement operators [C++], types of"]

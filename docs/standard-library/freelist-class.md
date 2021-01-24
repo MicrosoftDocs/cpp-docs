@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: freelist Class"
 title: "freelist Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::freelist", "allocators/stdext::freelist::pop", "allocators/stdext::freelist::push"]

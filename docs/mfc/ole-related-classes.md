@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE-Related Classes"
 title: "OLE-Related Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ActiveX classes [MFC]", "OLE classes [MFC]", "OLE [MFC], classes"]

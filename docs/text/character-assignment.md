@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Character Assignment"
 title: "Character Assignment"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["characters [C++], assignments", "MBCS [C++], character assignments"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: alloc_text pragma"
 title: "alloc_text pragma"
 ms.date: "08/29/2019"
 f1_keywords: ["vc-pragma.alloc_text", "alloc_text_CPP"]

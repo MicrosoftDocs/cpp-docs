@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency namespace constants (AMP)"
 title: "Concurrency namespace constants (AMP)"
 ms.date: "11/04/2016"
 f1_keywords: ["amp/Concurrency::HLSL_MAX_NUM_BUFFERS", "amp/Concurrency::MODULENAME_MAX_LENGTH"]

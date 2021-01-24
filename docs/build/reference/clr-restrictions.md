@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /clr Restrictions"
 title: "/clr Restrictions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["/clr compiler option [C++], restrictions"]

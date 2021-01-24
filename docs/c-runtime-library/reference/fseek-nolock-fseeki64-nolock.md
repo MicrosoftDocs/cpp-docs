@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _fseek_nolock, _fseeki64_nolock"
 title: "_fseek_nolock, _fseeki64_nolock"
 ms.date: "4/2/2020"
 api_name: ["_fseek_nolock", "_fseeki64_nolock", "_o__fseek_nolock", "_o__fseeki64_nolock"]

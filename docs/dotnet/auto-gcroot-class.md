@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: auto_gcroot Class"
 title: "auto_gcroot Class"
 ms.date: "01/16/2019"
 ms.topic: "reference"

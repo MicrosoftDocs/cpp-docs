@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /MANIFESTUAC (Embeds UAC information in manifest)"
 title: "/MANIFESTUAC (Embeds UAC information in manifest)"
 ms.date: "06/12/2020"
 f1_keywords: ["VC.Project.VCLinkerTool.UACUIAccess", "VC.Project.VCLinkerTool.UACExecutionLevel", "VC.Project.VCLinkerTool.EnableUAC"]

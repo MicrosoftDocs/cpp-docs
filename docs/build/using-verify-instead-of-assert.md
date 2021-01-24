@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using VERIFY Instead of ASSERT"
 title: "Using VERIFY Instead of ASSERT"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["ASSERT statements", "debugging [MFC], ASSERT statements", "VERIFY macro", "assertions, troubleshooting ASSERT statements", "debugging assertions", "assertions, debugging"]

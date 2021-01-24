@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Setting a Hot Key"
 title: "Setting a Hot Key"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["keyboard shortcuts [MFC], hot keys", "access keys [MFC], hot keys", "CHotKeyCtrl class [MFC], setting hot key"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Missing Function Body or Variable"
 title: "Missing Function Body or Variable"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function body", "variables, missing"]

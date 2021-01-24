@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add a class"
 title: "Add a class"
 ms.date: "05/14/2019"
 f1_keywords: ["vc.addclass"]

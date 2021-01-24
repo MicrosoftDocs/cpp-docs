@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator&lt; Operator (Microsoft::WRL)"
 title: "operator&lt; Operator (Microsoft::WRL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /GA (Optimize for Windows Application)"
 title: "/GA (Optimize for Windows Application)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.OptimizeForWindowsApplication", "/ga"]

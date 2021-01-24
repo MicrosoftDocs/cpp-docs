@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CInterfaceArray Class"
 title: "CInterfaceArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CInterfaceArray", "ATLCOLL/ATL::CInterfaceArray", "ATLCOLL/ATL::CInterfaceArray::CInterfaceArray"]

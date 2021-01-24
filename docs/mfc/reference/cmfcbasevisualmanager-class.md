@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCBaseVisualManager Class"
 title: "CMFCBaseVisualManager Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCBaseVisualManager", "AFXVISUALMANAGER/CMFCBaseVisualManager", "AFXVISUALMANAGER/CMFCBaseVisualManager::CMFCBaseVisualManager", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawCheckBox", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawComboBorder", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawComboDropButton", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawPushButton", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawRadioButton", "AFXVISUALMANAGER/CMFCBaseVisualManager::DrawStatusBarProgress", "AFXVISUALMANAGER/CMFCBaseVisualManager::FillReBarPane", "AFXVISUALMANAGER/CMFCBaseVisualManager::GetStandardWindowsTheme", "AFXVISUALMANAGER/CMFCBaseVisualManager::CleanUpThemes", "AFXVISUALMANAGER/CMFCBaseVisualManager::UpdateSystemColors"]

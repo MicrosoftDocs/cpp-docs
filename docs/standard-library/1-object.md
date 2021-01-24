@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _1 Object"
 title: "_1 Object"
 ms.date: "11/04/2016"
 f1_keywords: ["_1", "std::_1", "functional/std::_1"]

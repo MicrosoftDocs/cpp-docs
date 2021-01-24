@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l"
 title: "_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l"
 ms.date: "4/2/2020"
 api_name: ["_strupr_s", "_strupr_s_l", "_mbsupr_s", "_wcsupr_s_l", "_mbsupr_s_l", "_wcsupr_s", "_o__mbsupr_s", "_o__mbsupr_s_l", "_o__strupr_s", "_o__strupr_s_l", "_o__wcsupr_s", "_o__wcsupr_s_l"]

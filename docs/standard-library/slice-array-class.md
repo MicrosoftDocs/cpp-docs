@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: slice_array Class"
 title: "slice_array Class"
 ms.date: "11/04/2016"
 f1_keywords: ["valarray/std::slice_array"]

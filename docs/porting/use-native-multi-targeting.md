@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Use native multi-targeting in Visual Studio to build old projects"
 title: "Use native multi-targeting in Visual Studio to build old projects"
 ms.date: "10/25/2019"
 helpviewer_keywords: ["C++ native multi-targeting", "upgrading Visual C++ applications, retargeting"]

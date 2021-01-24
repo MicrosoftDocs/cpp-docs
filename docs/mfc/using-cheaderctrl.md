@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CHeaderCtrl"
 title: "Using CHeaderCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["header controls [MFC], using", "CHeaderCtrl class [MFC]"]

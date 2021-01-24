@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_purecall_handler, _set_purecall_handler"
 title: "_get_purecall_handler, _set_purecall_handler"
 ms.date: "11/04/2016"
 api_name: ["_set_purecall_handler", "_set_purecall_handler_m", "_get_purecall_handler"]

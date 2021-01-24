@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /FC (Full Path of Source Code File in Diagnostics)"
 title: "/FC (Full Path of Source Code File in Diagnostics)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.UseFullPaths", "/FC"]

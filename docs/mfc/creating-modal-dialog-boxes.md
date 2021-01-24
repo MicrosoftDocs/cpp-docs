@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating Modal Dialog Boxes"
 title: "Creating Modal Dialog Boxes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["modal dialog boxes [MFC], creating", "MFC dialog boxes [MFC], creating", "MFC dialog boxes [MFC], modal"]

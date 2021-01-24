@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Sorting Records (ODBC)"
 title: "Recordset: Sorting Records (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sorting data, recordset data", "ODBC recordsets, sorting", "recordsets, sorting"]

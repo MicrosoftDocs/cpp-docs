@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator&gt;="
 title: "operator&gt;="
 ms.date: "11/04/2016"
 f1_keywords: ["operator>=", "std::>=", "std.operator>=", ">=", "std.>=", "std::operator>="]

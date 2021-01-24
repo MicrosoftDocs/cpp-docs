@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: longjmp"
 title: "longjmp"
 ms.date: "08/14/2018"
 api_name: ["longjmp"]

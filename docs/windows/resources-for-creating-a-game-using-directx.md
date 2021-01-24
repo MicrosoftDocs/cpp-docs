@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resources for Creating a C++ Game Using DirectX"
 title: "Resources for Creating a C++ Game Using DirectX"
 ms.date: "06/08/2018"
 helpviewer_keywords: ["games [C++]", "Windows applications [C++], games", "DirectX [C++]"]

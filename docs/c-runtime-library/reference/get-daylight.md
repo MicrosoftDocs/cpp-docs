@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _get_daylight"
 title: "_get_daylight"
 ms.date: "4/2/2020"
 api_name: ["__daylight", "_get_daylight", "_o___daylight", "_o__get_daylight"]

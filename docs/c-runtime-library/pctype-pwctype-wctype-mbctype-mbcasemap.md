@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _pctype, _pwctype, _wctype, _mbctype, _mbcasemap"
 title: "_pctype, _pwctype, _wctype, _mbctype, _mbcasemap"
 ms.date: "11/04/2016"
 api_name: ["_pctype", "_pwctype", "_wctype", "_mbctype", "_mbcasemap"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cwctype&gt;"
 title: "&lt;cwctype&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<cwctype>"]

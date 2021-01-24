@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTabView Class"
 title: "CTabView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTabView", "AFXTABVIEW/CTabView", "AFXTABVIEW/CTabView::AddView", "AFXTABVIEW/CTabView::FindTab", "AFXTABVIEW/CTabView::GetActiveView", "AFXTABVIEW/CTabView::GetTabControl", "AFXTABVIEW/CTabView::RemoveView", "AFXTABVIEW/CTabView::SetActiveView", "AFXTABVIEW/CTabView::IsScrollBar", "AFXTABVIEW/CTabView::OnActivateView"]

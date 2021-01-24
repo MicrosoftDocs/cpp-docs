@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: setbuf"
 title: "setbuf"
 ms.date: "4/2/2020"
 api_name: ["setbuf", "_o_setbuf"]

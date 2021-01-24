@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COM+ 1.0, ATL COM+ 1.0 Component Wizard"
 title: "COM+ 1.0, ATL COM+ 1.0 Component Wizard"
 ms.date: "05/09/2019"
 f1_keywords: ["vc.codewiz.class.atl.mts.options"]

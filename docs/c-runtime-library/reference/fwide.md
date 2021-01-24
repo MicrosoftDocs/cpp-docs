@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fwide"
 title: "fwide"
 ms.date: "11/04/2016"
 api_name: ["fwide"]

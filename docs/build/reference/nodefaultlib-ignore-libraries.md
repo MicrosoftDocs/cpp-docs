@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /NODEFAULTLIB (Ignore Libraries)"
 title: "/NODEFAULTLIB (Ignore Libraries)"
 ms.date: "03/26/2019"
 f1_keywords: ["VC.Project.VCLinkerTool.OVERWRITEAllDefaultLibraries", "VC.Project.VCLinkerTool.OVERWRITEDefaultLibraryNames", "/nodefaultlib"]

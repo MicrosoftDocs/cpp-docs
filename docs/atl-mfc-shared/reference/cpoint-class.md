@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPoint Class"
 title: "CPoint Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPoint", "ATLTYPES/ATL::CPoint", "ATLTYPES/ATL::CPoint::CPoint", "ATLTYPES/ATL::CPoint::Offset"]

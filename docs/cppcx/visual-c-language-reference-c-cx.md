@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++/CX Language Reference"
 title: "C++/CX Language Reference"
 ms.date: "09/15/2017"
 ms.assetid: 3f6abf92-4e5e-4ed8-8e11-f9252380d30a

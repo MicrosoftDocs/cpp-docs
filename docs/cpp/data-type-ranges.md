@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Type Ranges"
 title: "Data Type Ranges"
 ms.date: "05/28/2020"
 helpviewer_keywords: ["float keyword [C++]", "char keyword [C++]", "unsigned long", "__wchar_t keyword [C++]", "unsigned short int [C++]", "enum keyword [C++]", "unsigned char keyword [C++]", "integer data type [C++], data type ranges", "int data type", "data types [C++], ranges", "unsigned int [C++]", "short data type", "short int data", "signed types [C++], data type ranges", "long long keyword [C++]", "long double keyword [C++]", "double data type [C++], data type ranges", "signed short int [C++]", "unsigned short", "sized integer types", "signed int [C++]", "signed long int [C++]", "signed char keyword [C++]", "wchar_t keyword [C++]", "long keyword [C++]", "ranges [C++]", "unsigned types [C++], data type ranges", "floating-point numbers [C++]", "data type ranges", "ranges [C++], data types", "long int keyword [C++]", "unsigned long int [C++]"]

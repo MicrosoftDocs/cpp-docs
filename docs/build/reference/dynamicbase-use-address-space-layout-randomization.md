@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DYNAMICBASE (Use address space layout randomization)"
 title: "/DYNAMICBASE (Use address space layout randomization)"
 ms.date: "06/12/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.RandomizedBaseAddress"]

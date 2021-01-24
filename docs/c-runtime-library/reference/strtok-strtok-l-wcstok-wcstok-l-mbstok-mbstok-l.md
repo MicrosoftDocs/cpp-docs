@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l"
 title: "strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l"
 ms.date: "6/24/2020"
 api_name: ["_mbstok_l", "_mbstok", "wcstok", "_mbstok", "strtok", "_wcstok_l", "_o__mbstok", "_o__mbstok_l", "_o_strtok", "_o_wcstok"]

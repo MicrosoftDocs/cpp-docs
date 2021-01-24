@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: treat_as_floating_point Structure"
 title: "treat_as_floating_point Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["chrono/std::chrono::treat_as_floating_point"]

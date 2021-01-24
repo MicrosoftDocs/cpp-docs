@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Gs (Control Stack Checking Calls)"
 title: "/Gs (Control Stack Checking Calls)"
 ms.date: "10/25/2018"
 f1_keywords: ["/GS"]

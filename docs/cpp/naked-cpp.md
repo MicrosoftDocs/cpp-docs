@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: naked (C++)"
 title: "naked (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["naked_cpp"]

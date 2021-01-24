@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type-Cast Conversions"
 title: "Type-Cast Conversions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data type conversion [C++], type-cast conversions", "conversions [C++], type-cast", "type casts", "explicit type conversions", "type casts [C++], about type-cast conversion", "type-cast conversions [C++]"]

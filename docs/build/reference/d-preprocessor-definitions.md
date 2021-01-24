@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /D (Preprocessor Definitions)"
 title: "/D (Preprocessor Definitions)"
 ms.date: "09/18/2019"
 f1_keywords: ["VC.Project.VCNMakeTool.PreprocessorDefinitions", "VC.Project.VCCLCompilerTool.PreprocessorDefinitions", "/d"]

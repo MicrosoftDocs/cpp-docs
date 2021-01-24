@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: concurrent_unordered_set Class"
 title: "concurrent_unordered_set Class"
 ms.date: "11/04/2016"
 f1_keywords: ["concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::hash_function", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::insert", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::key_eq", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::swap", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::unsafe_erase"]

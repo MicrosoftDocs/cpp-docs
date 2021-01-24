@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Token-pasting operator (##)"
 title: "Token-pasting operator (##)"
 ms.date: "08/29/2019"
 f1_keywords: ["##"]

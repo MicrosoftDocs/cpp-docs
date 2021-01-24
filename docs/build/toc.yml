@@ -68,7 +68,18 @@
     - name: CMake predefined configuration schema reference
       href: ../build/cmake-predefined-configuration-reference.md
 - name: "vcpkg: A package manager for C++"
-  href: ../build/vcpkg.md
+  expanded: false
+  items: 
+    - name: "vcpkg: A package manager for C++"
+      href: ../build/vcpkg.md
+    - name: "Install vcpkg"
+      href: ../build/install-vcpkg.md
+    - name: "Integrate vcpkg"
+      href: ../build/integrate-vcpkg.md
+    - name: "Manage libraries with vcpkg"
+      href: ../build/manage-libraries-with-vcpkg.md
+    - name: "vcpkg command-line reference"
+      href: ../build/vcpkg-command-line-reference.md
 - name: "C++ Build Insights"
   href: ../build-insights/get-started-with-cpp-build-insights.md
 - name: Precompiled header files
@@ -500,7 +511,7 @@
                   href: ../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md
                 - name: /errorReport (Report internal compiler errors)
                   href: ../build/reference/errorreport-report-internal-compiler-errors.md
-                - name: /execution/charset (Set execution character set)
+                - name: /execution-charset (Set execution character set)
                   href: ../build/reference/execution-charset-set-execution-character-set.md
                 - name: /experimental:module
                   href: ../build/reference/experimental-module.md

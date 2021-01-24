@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dynamically Binding Columns in Your Provider"
 title: "Dynamically Binding Columns in Your Provider"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["columns [C++], dynamic column binding", "dynamic column binding", "providers [C++], dynamic column binding"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Auto-Parallelization and Auto-Vectorization"
 title: "Auto-Parallelization and Auto-Vectorization"
 ms.date: "11/04/2016"
 ms.assetid: ec71583a-287b-4599-8767-1d255e080fe3

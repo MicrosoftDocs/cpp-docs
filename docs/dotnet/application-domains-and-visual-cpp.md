@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application domains and Visual C++"
 title: "Application Domains and Visual C++"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["interop [C++], application domains", "application domains [C++], C++", "/clr compiler option [C++], application domains", "interoperability [C++], application domains", "mixed assemblies [C++], application domains"]

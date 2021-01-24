@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Objects and Data Sources: Creation and Destruction"
 title: "Data Objects and Data Sources: Creation and Destruction"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["destroying data objects [MFC]", "object creation [MFC], data source objects", "data sources [MFC], and data objects", "data source objects [MFC], creating", "destruction [MFC], data sources", "data source objects [MFC], destroying", "data objects [MFC], creating", "data objects [MFC], destroying", "data sources [MFC], role", "data sources [MFC], destroying", "destruction [MFC], data objects", "data sources [MFC], creating"]

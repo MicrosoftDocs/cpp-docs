@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSnapInPropertyPageImpl Class"
 title: "CSnapInPropertyPageImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSnapInPropertyPageImpl", "ATLSNAP/ATL::CSnapInPropertyPageImpl", "ATLSNAP/ATL::CSnapInPropertyPageImpl::CSnapInPropertyPageImpl", "ATLSNAP/ATL::CSnapInPropertyPageImpl::CancelToClose", "ATLSNAP/ATL::CSnapInPropertyPageImpl::Create", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnApply", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnHelp", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnKillActive", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnQueryCancel", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnReset", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnSetActive", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnWizardBack", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnWizardFinish", "ATLSNAP/ATL::CSnapInPropertyPageImpl::OnWizardNext", "ATLSNAP/ATL::CSnapInPropertyPageImpl::QuerySiblings", "ATLSNAP/ATL::CSnapInPropertyPageImpl::SetModified", "ATLSNAP/ATL::CSnapInPropertyPageImpl::m_psp"]

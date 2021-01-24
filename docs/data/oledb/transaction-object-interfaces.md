@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Transaction Object Interfaces"
 title: "Transaction Object Interfaces"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["interfaces, OLE DB", "transaction object interfaces", "OLE DB, interfaces", "OLE DB providers, transaction support", "OLE DB provider templates, object interfaces", "interfaces, list of"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: boyer_moore_searcher class"
 title: "boyer_moore_searcher class"
 ms.date: "08/03/2019"
 f1_keywords: ["functional/std::boyer_moore_searcher"]

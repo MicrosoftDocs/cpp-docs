@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type Checking (CRT)"
 title: "Type Checking (CRT)"
 ms.date: "11/04/2016"
 f1_keywords: ["c.types"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Allocating and Releasing Memory for a BSTR"
 title: "Allocating and Releasing Memory for a BSTR"
 ms.date: "11/04/2016"
 f1_keywords: ["bstr"]

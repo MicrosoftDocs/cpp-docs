@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::erase"
 title: "Container Class::erase"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["erase method"]

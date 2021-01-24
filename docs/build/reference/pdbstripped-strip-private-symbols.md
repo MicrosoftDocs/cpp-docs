@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /PDBSTRIPPED (Strip Private Symbols)"
 title: "/PDBSTRIPPED (Strip Private Symbols)"
 ms.date: "11/04/2016"
 f1_keywords: ["/pdbstripped", "VC.Project.VCLinkerTool.StripPrivateSymbols"]

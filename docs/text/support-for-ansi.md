@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Support for ANSI"
 title: "Support for ANSI"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["character sets [C++], ANSI", "ANSI [MFC]", "MFC [C++], ANSI support"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Exception Handling to Break from a Parallel Loop"
 title: "How to: Use Exception Handling to Break from a Parallel Loop"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["search algorithm, writing [Concurrency Runtime]", "writing a search algorithm [Concurrency Runtime]"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Additional MSVC Build Tools"
 title: "Additional MSVC Build Tools"
 ms.date: "08/28/2019"
 f1_keywords: ["c.build"]

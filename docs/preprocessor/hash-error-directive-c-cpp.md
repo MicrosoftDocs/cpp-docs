@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: #error directive (C/C++)"
 title: "#error directive (C/C++)"
 ms.date: "08/29/2019"
 f1_keywords: ["#error"]

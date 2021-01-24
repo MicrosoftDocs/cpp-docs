@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;unordered_set&gt; functions"
 title: "&lt;unordered_set&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["unordered_set/std::swap (set)", "unordered_set/std::swap (unordered_multiset)"]

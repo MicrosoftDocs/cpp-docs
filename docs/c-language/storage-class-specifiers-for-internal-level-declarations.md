@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Storage-Class Specifiers for Internal-Level Declarations"
 title: "Storage-Class Specifiers for Internal-Level Declarations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["storage class specifiers, internal", "internal linkage, storage-class specifiers"]

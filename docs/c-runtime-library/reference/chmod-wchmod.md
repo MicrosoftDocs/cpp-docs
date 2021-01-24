@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _chmod, _wchmod"
 title: "_chmod, _wchmod"
 ms.date: "4/2/2020"
 api_name: ["_chmod", "_wchmod", "_o__chmod", "_o__wchmod"]

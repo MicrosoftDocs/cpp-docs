@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bad_optional_access Class"
 title: "bad_optional_access Class"
 ms.date: "08/06/2019"
 f1_keywords: ["optional/std::bad_optional_access"]

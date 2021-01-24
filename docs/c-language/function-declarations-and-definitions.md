@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Declarations and Definitions"
 title: "Function Declarations and Definitions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["local declarations", "function definitions, function declarations", "declaring functions, function definitions", "internal declarations", "external declarations", "function prototypes, basics", "external linkage, function declarations", "declaring functions"]

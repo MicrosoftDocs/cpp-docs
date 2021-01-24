@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Define Control Access and Values (C++)"
 title: "How to: Define Control Access and Values (C++)"
 ms.date: "02/15/2019"
 helpviewer_keywords: ["access keys [C++], adding", "keyboard shortcuts [C++], controls", "dialog box controls [C++], mnemonics", "access keys [C++], checking", "mnemonics [C++], checking for duplicate", "mnemonics", "mnemonics [C++], dialog box controls", "keyboard shortcuts [C++], uniqueness checking", "Check Mnemonics command", "controls [C++], access keys", "access keys [C++]", "combo boxes [C++], Data property", "controls [C++], testing values in combo boxes", "combo boxes [C++], adding values", "combo boxes [C++], previewing values", "Data property", "combo boxes [C++], testing values"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cacosh, cacoshf, cacoshl"
 title: "cacosh, cacoshf, cacoshl"
 ms.date: "11/04/2016"
 api_name: ["cacosh", "cacoshf", "cacoshl"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overview of ARM64 ABI conventions"
 title: "Overview of ARM64 ABI conventions"
 ms.date: "03/27/2019"
 ---
@@ -197,7 +198,13 @@ Integral values are returned in x0.
 
 Floating-point values are returned in s0, d0, or v0, as appropriate.
 
-HFA and HVA values are returned in s0-s3, d0-d3, or v0-v3, as appropriate.
+A type is considered to be an HFA or HVA if all of the following hold:
+
+- It's non-empty,
+- It doesn't have any non-trivial default or copy constructors, destructors, or assignment operators,
+- All of its members have the same HFA or HVA type, or are float, double, or neon types that match the other members' HFA or HVA types.
+
+HFA and HVA values with four or fewer elements are returned in s0-s3, d0-d3, or v0-v3, as appropriate.
 
 Types returned by value are handled differently depending on whether they have certain properties, and whether the function is a non-static member function. Types which have all of these properties,
 

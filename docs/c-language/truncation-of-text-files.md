@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Truncation of Text Files"
 title: "Truncation of Text Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["text files", "text files, truncation"]

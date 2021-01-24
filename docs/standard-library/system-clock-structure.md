@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: system_clock Structure"
 title: "system_clock Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["chrono/std::chrono::system_clock", "chrono/std::chrono::system_clock::from_time_t", "chrono/std::chrono::system_clock::now", "chrono/std::chrono::system_clock::to_time_t", "chrono/std::chrono::system_clock::is_monotonic Constant", "chrono/std::chrono::system_clock::is_steady Constant"]

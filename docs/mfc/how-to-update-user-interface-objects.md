@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Update User-Interface Objects"
 title: "How to: Update User-Interface Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["menus [MFC], updating as context changes", "user interface objects [MFC], updating", "user interface objects [MFC]", "update handlers [MFC]", "enabling UI elements [MFC]", "disabling menus [MFC]", "updating user-interface objects [MFC]", "disabling UI elements [MFC]", "commands [MFC], updating UI", "enabling menus [MFC]"]

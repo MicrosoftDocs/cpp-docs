@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Special CWinApp Services"
 title: "Special CWinApp Services"
 ms.date: "11/04/2016"
 f1_keywords: ["LoadStdProfileSettings", "EnableShellOpen"]

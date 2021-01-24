@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _cprintf, _cprintf_l, _cwprintf, _cwprintf_l"
 title: "_cprintf, _cprintf_l, _cwprintf, _cwprintf_l"
 ms.date: "11/04/2016"
 api_name: ["_cwprintf_l", "_cprintf_l", "_cwprintf", "_cprintf"]

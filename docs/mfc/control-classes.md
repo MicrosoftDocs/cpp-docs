@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Control Classes"
 title: "Control Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.control"]

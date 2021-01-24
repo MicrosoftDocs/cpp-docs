@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Understanding Manifest Generation for C/C++ Programs"
 title: "Understanding Manifest Generation for C/C++ Programs"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["manifests [C++]"]

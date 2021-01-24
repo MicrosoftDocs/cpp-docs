@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interfaces (C++/CX)"
 title: "Interfaces (C++/CX)"
 ms.date: "01/22/2017"
 ms.assetid: 11034314-d54a-426d-923b-5ab7a6b9f8ce

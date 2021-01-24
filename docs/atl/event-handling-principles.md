@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Event Handling Principles"
 title: "Event Handling Principles (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event handling, implementing", "event handling, advising event sources", "interfaces, event and event sink", "dual interfaces, event interfaces", "event handling, dual event interfaces"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SafeInt Functions"
 title: "SafeInt Functions"
 ms.date: "06/23/2020"
 ms.topic: "reference"

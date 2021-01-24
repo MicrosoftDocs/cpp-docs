@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _access, _waccess"
 title: "_access, _waccess"
 ms.date: "4/2/2020"
 api_name: ["_access", "_waccess", "_o__access", "_o__waccess"]

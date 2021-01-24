@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Technical Notes by Category"
 title: "Technical Notes by Category"
 ms.date: "11/04/2016"
 ms.assetid: b9f1c953-233d-4d64-9e8e-ca69b79460b8

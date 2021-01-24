@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Expression Evaluator Error CXX0048"
 title: "Expression Evaluator Error CXX0048"
 ms.date: "11/04/2016"
 f1_keywords: ["CXX0048"]

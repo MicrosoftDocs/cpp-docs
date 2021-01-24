@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /INTEGRITYCHECK"
 title: "/INTEGRITYCHECK"
 ms.date: "12/28/2017"
 f1_keywords: ["/INTEGRITYCHECK"]

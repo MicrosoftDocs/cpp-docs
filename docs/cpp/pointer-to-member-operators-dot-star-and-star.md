@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Pointer-to-Member Operators: .* and -&gt;*"
 title: "Pointer-to-Member Operators: .* and -&gt;*"
 ms.date: "11/04/2016"
 f1_keywords: [".*", "->*"]

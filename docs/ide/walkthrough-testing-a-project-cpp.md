@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Testing a Project (C++)"
 title: "Walkthrough: Testing a Project (C++)"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["project testing [C++]", "testing projects", "projects [C++], testing"]

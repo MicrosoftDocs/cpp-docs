@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sample Container Typedefs"
 title: "Sample Container Typedefs"
 ms.date: "11/04/2016"
 ms.assetid: 9fc02c4c-d835-4266-a391-f12b40ba43fa

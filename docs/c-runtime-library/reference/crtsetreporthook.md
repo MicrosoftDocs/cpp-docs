@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _CrtSetReportHook"
 title: "_CrtSetReportHook"
 ms.date: "11/04/2016"
 api_name: ["_CrtSetReportHook"]

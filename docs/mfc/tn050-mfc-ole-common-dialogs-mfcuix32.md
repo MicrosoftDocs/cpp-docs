@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN050: MFC/OLE Common Dialogs (MFCUIx32)"
 title: "TN050: MFC-OLE Common Dialogs (MFCUIx32)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFCUIx32", "TN050"]

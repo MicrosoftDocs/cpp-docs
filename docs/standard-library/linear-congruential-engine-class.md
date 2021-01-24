@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: linear_congruential_engine Class"
 title: "linear_congruential_engine Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::linear_congruential_engine"]

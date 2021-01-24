@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CD2DTextFormat Class"
 title: "CD2DTextFormat Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CD2DTextFormat", "AFXRENDERTARGET/CD2DTextFormat", "AFXRENDERTARGET/CD2DTextFormat::CD2DTextFormat", "AFXRENDERTARGET/CD2DTextFormat::Create", "AFXRENDERTARGET/CD2DTextFormat::Destroy", "AFXRENDERTARGET/CD2DTextFormat::Get", "AFXRENDERTARGET/CD2DTextFormat::GetFontFamilyName", "AFXRENDERTARGET/CD2DTextFormat::GetLocaleName", "AFXRENDERTARGET/CD2DTextFormat::IsValid", "AFXRENDERTARGET/CD2DTextFormat::ReCreate", "AFXRENDERTARGET/CD2DTextFormat::m_pTextFormat"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DerefHelper Structure"
 title: "DerefHelper Structure"
 ms.date: "10/03/2018"
 ms.topic: "reference"

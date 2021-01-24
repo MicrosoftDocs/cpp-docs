@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Qimprecise_fwaits (Remove fwaits Inside Try Blocks)"
 title: "/Qimprecise_fwaits (Remove fwaits Inside Try Blocks)"
 ms.date: "11/04/2016"
 f1_keywords: ["/Qimprecise_fwaits"]

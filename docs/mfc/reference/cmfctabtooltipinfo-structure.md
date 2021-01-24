@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCTabToolTipInfo Structure"
 title: "CMFCTabToolTipInfo Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCTabToolTipInfo"]

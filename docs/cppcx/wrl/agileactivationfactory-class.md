@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AgileActivationFactory Class"
 title: "AgileActivationFactory Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"

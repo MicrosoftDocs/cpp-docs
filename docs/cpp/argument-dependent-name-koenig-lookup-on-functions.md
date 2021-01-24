@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Argument-Dependent Name (Koenig) Lookup on Functions"
 title: "Argument-Dependent Name (Koenig) Lookup on Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Koenig lookup", "argument-dependent lookup [C++]"]

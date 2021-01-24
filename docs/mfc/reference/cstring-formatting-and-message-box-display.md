@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CString Formatting and Message-Box Display"
 title: "CString Formatting and Message-Box Display"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CString objects [MFC], formatting and message boxes"]

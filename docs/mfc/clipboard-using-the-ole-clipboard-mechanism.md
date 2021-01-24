@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Clipboard: Using the OLE Clipboard Mechanism"
 title: "Clipboard: Using the OLE Clipboard Mechanism"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["applications [OLE], Clipboard", "OLE Clipboard", "Clipboard [MFC], OLE formats", "OLE Clipboard, formats", "formats [MFC], Clipboard for OLE"]

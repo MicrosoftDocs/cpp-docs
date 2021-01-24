@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Constants in Primary Expressions"
 title: "Constants in Primary Expressions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["constants, primary expressions"]

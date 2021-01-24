@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /H (Restrict Length of External Names)"
 title: "/H (Restrict Length of External Names)"
 ms.date: "09/05/2018"
 f1_keywords: ["/h"]

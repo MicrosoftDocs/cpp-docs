@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Avoiding Exceptions on CLR Shutdown When Consuming COM Objects Built with /clr"
 title: "Avoiding Exceptions thrown by COM Objects Built with -clr"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["interop [C++], CLR shutdown exceptions", "/clr compiler option [C++], CLR shutdown exceptions", "mixed assemblies [C++], CLR shutdown exceptions", "/clr compiler option [C++], COM objects", "interoperability [C++], CLR shutdown exceptions", "CLR shutdown exceptions [C++]"]

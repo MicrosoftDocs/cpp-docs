@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRichEditCntrItem Class"
 title: "CRichEditCntrItem Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRichEditCntrItem", "AFXRICH/CRichEditCntrItem", "AFXRICH/CRichEditCntrItem::CRichEditCntrItem", "AFXRICH/CRichEditCntrItem::SyncToRichEditObject"]

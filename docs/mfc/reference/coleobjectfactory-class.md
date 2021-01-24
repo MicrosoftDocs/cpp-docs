@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleObjectFactory Class"
 title: "COleObjectFactory Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleObjectFactory", "AFXDISP/COleObjectFactory", "AFXDISP/COleObjectFactory::COleObjectFactory", "AFXDISP/COleObjectFactory::GetClassID", "AFXDISP/COleObjectFactory::IsLicenseValid", "AFXDISP/COleObjectFactory::IsRegistered", "AFXDISP/COleObjectFactory::Register", "AFXDISP/COleObjectFactory::RegisterAll", "AFXDISP/COleObjectFactory::Revoke", "AFXDISP/COleObjectFactory::RevokeAll", "AFXDISP/COleObjectFactory::UnregisterAll", "AFXDISP/COleObjectFactory::UpdateRegistry", "AFXDISP/COleObjectFactory::UpdateRegistryAll", "AFXDISP/COleObjectFactory::GetLicenseKey", "AFXDISP/COleObjectFactory::OnCreateObject", "AFXDISP/COleObjectFactory::VerifyLicenseKey", "AFXDISP/COleObjectFactory::VerifyUserLicense"]

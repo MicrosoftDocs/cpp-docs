@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthroughs (MFC)"
 title: "Walkthroughs (MFC)"
 ms.date: "09/20/2018"
 helpviewer_keywords: ["MFC Feature Pack, walkthroughs"]

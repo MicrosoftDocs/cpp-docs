@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Handlers"
 title: "Message Handlers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message handlers [MFC]", "command handling [MFC], message handlers", "handlers [MFC]", "message handling [MFC], message handler functions", "handlers [MFC], command", "handlers [MFC], message"]

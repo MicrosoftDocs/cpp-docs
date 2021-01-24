@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _putenv_s, _wputenv_s"
 title: "_putenv_s, _wputenv_s"
 ms.date: "4/2/2020"
 api_name: ["_wputenv_s", "_putenv_s", "_o__putenv_s", "_o__wputenv_s"]

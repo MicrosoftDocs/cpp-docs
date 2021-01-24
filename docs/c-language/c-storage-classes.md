@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Storage Classes"
 title: "C Storage Classes"
 ms.date: "08/31/2018"
 helpviewer_keywords: ["static variables, lifetime", "storage classes", "lifetime, variables", "specifiers, storage class", "storage class specifiers, C storage classes", "storage duration"]

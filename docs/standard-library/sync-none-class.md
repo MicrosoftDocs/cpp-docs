@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: sync_none Class"
 title: "sync_none Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::sync_none", "allocators/stdext::sync_none::allocate", "allocators/stdext::sync_none::deallocate", "allocators/stdext::sync_none::equals"]

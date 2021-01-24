@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;queue&gt; operators"
 title: "&lt;queue&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["queue/std::operator!=", "queue/std::operator&gt;", "queue/std::operator&gt;=", "queue/std::operator&lt;", "queue/std::operator&lt;=", "queue/std::operator=="]

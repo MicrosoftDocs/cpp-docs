@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Use ODBC to Work with Other Users"
 title: "Use ODBC to Work with Other Users"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC, working with other users"]

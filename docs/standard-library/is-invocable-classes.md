@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_invocable, is_invocable_r, is_nothrow_invocable, is_nothrow_invocable_r classes"
 title: "is_invocable, is_invocable_r, is_nothrow_invocable, is_nothrow_invocable_r classes"
 ms.date: "02/21/2019"
 f1_keywords: ["type_traits/std::is_invocable", "type_traits/std::is_invocable_r", "type_traits/std::is_nothrow_invocable", "type_traits/std::is_nothrow_invocable_r"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Constants"
 title: "C Constants"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["constants, C", "constants"]

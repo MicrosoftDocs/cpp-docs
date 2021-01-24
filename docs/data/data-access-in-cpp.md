@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Access in Visual C++"
 title: "Data Access in Visual C++"
 ms.date: "03/28/2017"
 helpviewer_keywords: ["Visual C++, data access applications", "databases [C++]", "OLE DB [C++], data access technologies", "data [C++], data access technologies", "data access [C++], class libraries for databases"]

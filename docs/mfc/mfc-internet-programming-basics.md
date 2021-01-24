@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Internet Programming Basics"
 title: "MFC Internet Programming Basics"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["ISAPI extensions, programming with ISAPI", "Internet applications [MFC]", "ISAPI", "ActiveX controls [MFC], Internet", "programming [MFC], Internet", "Web applications [MFC], MFC classes", "ISAPI filters [MFC], programming with ISAPI", "Internet applications [MFC], ActiveX controls", "Internet applications [MFC], writing", "Internet applications [MFC], Active technology", "Active technology [MFC]", "Internet content [MFC]", "WinInet classes [MFC]"]
@@ -53,7 +54,7 @@ MFC provides classes that support Internet programming. You can use [COleControl
 
 For more information about Microsoft Internet technology, see [Networking and Internet](/windows/win32/networking).
 
-The [World Wide Web Consortium (W3C)](https://go.microsoft.com/fwlink/p/?linkid=37125) publishes specifications for HTML, HTTP, CGI, and other World Wide Web technologies.
+The [World Wide Web Consortium (W3C)](https://www.w3.org/) publishes specifications for HTML, HTTP, CGI, and other World Wide Web technologies.
 
 ## <a name="_core_more_internet_help"></a> More internet help
 

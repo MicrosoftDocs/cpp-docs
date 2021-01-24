@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Arguments to main"
 title: "Arguments to main"
 ms.date: "11/04/2016"
 ms.assetid: 39824fef-05ad-461d-ae82-49447dda8060

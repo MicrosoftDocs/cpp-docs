@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CEditView Class"
 title: "CEditView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CEditView", "AFXEXT/CEditView", "AFXEXT/CEditView::CEditView", "AFXEXT/CEditView::FindText", "AFXEXT/CEditView::GetBufferLength", "AFXEXT/CEditView::GetEditCtrl", "AFXEXT/CEditView::GetPrinterFont", "AFXEXT/CEditView::GetSelectedText", "AFXEXT/CEditView::LockBuffer", "AFXEXT/CEditView::PrintInsideRect", "AFXEXT/CEditView::SerializeRaw", "AFXEXT/CEditView::SetPrinterFont", "AFXEXT/CEditView::SetTabStops", "AFXEXT/CEditView::UnlockBuffer", "AFXEXT/CEditView::OnFindNext", "AFXEXT/CEditView::OnReplaceAll", "AFXEXT/CEditView::OnReplaceSel", "AFXEXT/CEditView::OnTextNotFound", "AFXEXT/CEditView::dwStyleDefault"]

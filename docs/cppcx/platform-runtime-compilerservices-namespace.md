@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Runtime::CompilerServices Namespace"
 title: "Platform::Runtime::CompilerServices Namespace"
 ms.date: "12/30/2016"
 ms.topic: "reference"

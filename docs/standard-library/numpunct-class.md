@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: numpunct Class"
 title: "numpunct Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocnum/std::numpunct", "xlocnum/std::numpunct::char_type", "xlocnum/std::numpunct::string_type", "xlocnum/std::numpunct::decimal_point", "xlocnum/std::numpunct::do_decimal_point", "xlocnum/std::numpunct::do_falsename", "xlocnum/std::numpunct::do_grouping", "xlocnum/std::numpunct::do_thousands_sep", "xlocnum/std::numpunct::do_truename", "xlocnum/std::numpunct::falsename", "xlocnum/std::numpunct::grouping", "xlocnum/std::numpunct::thousands_sep", "xlocnum/std::numpunct::truename"]

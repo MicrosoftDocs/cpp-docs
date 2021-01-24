@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Visual C++ Add New Item Templates"
 title: "Using Visual C++ Add New Item Templates"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["Add New Item", "Add New Item templates", "Add New Item command", "templates, Add New Item"]

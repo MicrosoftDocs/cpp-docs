@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Type Mappings"
 title: "Data Type Mappings"
 ms.date: "11/04/2016"
 f1_keywords: ["_TXCHAR", "_TUCHAR", "_TINT", "_TSCHAR", "_TCHAR", "TCHAR::H", "TCHAR", "_T", "_TEXT"]

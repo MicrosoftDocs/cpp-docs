@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: `/Yu` (Use precompiled header file)"
 title: "/Yu (Use precompiled header file)"
 ms.date: 07/31/2020
 f1_keywords: ["/Yu"]

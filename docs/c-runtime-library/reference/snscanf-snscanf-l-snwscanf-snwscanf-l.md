@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _snscanf, _snscanf_l, _snwscanf, _snwscanf_l"
 title: "_snscanf, _snscanf_l, _snwscanf, _snwscanf_l"
 ms.date: "11/04/2016"
 api_name: ["_snwscanf", "_snscanf_l", "_snscanf", "_snwscanf_l"]

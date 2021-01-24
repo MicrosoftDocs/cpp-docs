@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAtlDebugInterfacesModule Class"
 title: "CAtlDebugInterfacesModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlDebugInterfacesModule", "atlbase/ATL::CAtlDebugInterfacesModule"]

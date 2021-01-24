@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DAO Classes"
 title: "DAO Classes"
 ms.date: "09/17/2019"
 helpviewer_keywords: ["database classes [MFC], DAO", "DAO [MFC], classes"]

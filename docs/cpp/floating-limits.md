@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Floating Limits"
 title: "Floating Limits"
 ms.date: "08/03/2018"
 helpviewer_keywords: ["ranges, floating-point constants", "floating-point constants, limits", "float.h header file", "limits, floating-point constants", "floating-point numbers [C++]", "floating limits"]
