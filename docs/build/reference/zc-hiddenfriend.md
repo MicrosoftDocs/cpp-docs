@@ -1,7 +1,7 @@
 ---
 title: "/Zc:hiddenFriend (Enforce Standard C++ hidden friend rules)"
 description: "Learn about the Microsoft C++ /Zc:hiddenFriend compiler option for conforming or relaxed hidden friend compatibility."
-ms.date: 11/11/2020
+ms.date: 01/23/2021
 f1_keywords: ["/Zc:hiddenFriend"]
 helpviewer_keywords: ["/Zc:hiddenFriend", "Zc:hiddenFriend", "-Zc:hiddenFriend"]
 ---
@@ -35,5 +35,5 @@ For examples of compiler behavior when you specify **`/Zc:hiddenFriend`**, see [
 
 ## See also
 
-[**`/Zc`** (Conformance)](zc-conformance.md)\
+[`/Zc` (Conformance)](zc-conformance.md)\
 [`/permissive-`](permissive-standards-conformance.md)
