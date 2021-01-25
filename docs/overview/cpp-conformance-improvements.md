@@ -1475,7 +1475,7 @@ The most common values for *option* are:
 | Option | Description |
 |--|--|
 | **`/Zc:twoPhase-`** | Two Phase name lookup is required for C++20 Modules and implied by **`permissive-`**. |
-| **`/Zc:hiddenFriend-`** | Enables standard hidden friend name lookup rules. Required for C++20 Modules and implied by **`permissive-`**. |
+| **`/Zc:hiddenFriend-`** | Standard hidden friend name lookup rules are required for C++20 Modules and implied by **`permissive-`**. |
 | **`/Zc:preprocessor-`** | The conforming preprocessor is required for C++20 header unit usage and creation only. Named Modules don't require this option. |
 
 The [`/experimental:module`](../build/reference/experimental-module.md) option is still required to use the *`std.*`* Modules that ship with Visual Studio, because they're not standardized yet.
