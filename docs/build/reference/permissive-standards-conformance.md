@@ -129,6 +129,8 @@ void g() {
 }
 ```
 
+You can enable the hidden friend name lookup rules independently of **`/permissive`** by using [`/Zc:hiddenFriend`](./zc-hiddenfriend.md). If you want legacy behavior for hidden friend name lookup, but otherwise want **`/permissive-`** behavior, use the **`/Zc:hiddenFriend-`** option.
+
 #### Use scoped enums in array bounds
 
 ```cpp
