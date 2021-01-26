@@ -1,0 +1,18 @@
+{
+  "$schema": "https://whatsnewapi.azurewebsites.net/schema",
+  "docSetProductName": "C++, C, and Assembler",
+  "rootDirectory": "docs/",
+  "docLinkSettings": {
+    "linkFormat": "relative",
+    "relativeLinkPrefix": "/cpp/"
+  },
+  "inclusionCriteria": {
+    "additionalMicrosoftOrgs": [
+      "Open Publishing"
+    ],
+    "minAdditionsToFile": 10,
+    "omitPullRequestTitles": true
+  },
+  "areas": [{"names": ["cpp"], "heading": "C++"},
+            {"names": ["c-runtime-library"], "heading": "C runtime library"}]
+}
