@@ -7,12 +7,39 @@
     "relativeLinkPrefix": "/cpp/"
   },
   "inclusionCriteria": {
-    "additionalMicrosoftOrgs": [
-      "Open Publishing"
-    ],
     "minAdditionsToFile": 10,
     "omitPullRequestTitles": true
   },
-  "areas": [{"names": ["cpp"], "heading": "C++"},
-            {"names": ["c-runtime-library"], "heading": "C runtime library"}]
+  "areas": [
+                {"names": ["assembler"], "heading": "Assembler"},
+                {"names": ["atl"], "heading": "Active Template Library (ATL)"},
+                {"names": ["atl-mfc-shared"], "heading": "Active Template Library (ATL) and Microsoft Foundation Classes (MFC)"},
+                {"names": ["build"], "heading": "Projects and build systems"},
+                {"names": ["build-insights"], "heading": "Build insights"},
+                {"names": ["c-language"], "heading": "C language"},
+                {"names": ["cloud"], "heading": "Cloud programming with C++"},
+                {"names": ["code-quality"], "heading": "Code quality"},
+                {"names": ["cpp"], "heading": "C++"},
+                {"names": ["cppcx"], "heading": "C++ /CX"},
+                {"names": ["cross-platform"], "heading": "Cross platform development"},
+                {"names": ["c-runtime-library"], "heading": "C runtime library"},
+                {"names": ["data"], "heading": "Data access in Visual C++"},
+                {"names": ["dotnet"], "heading":"STL/CLR library reference"},
+                {"names": ["error-messages"], "heading":"C/C++ Compiler and build tools errors and warnings"},
+                {"names": ["extensions"], "heading":"Component Extensions for .NET and UWP"},
+                {"names": ["get-started"], "heading":"Visual Studio C++ Tutorials"},
+                {"names": ["ide"], "heading":"Read and write C++ code in Visual Studio"},
+                {"names": ["intrinsics"], "heading":"Compiler intrinsics"},
+                {"names": ["linux"], "heading":"Linux with Visual Studio C++"},
+                {"names": ["mfc"], "heading":"Microsoft Foundation Classes (MFC)"},
+                {"names": ["overview"], "heading":"Overview"},
+                {"names": ["parallel"], "heading":"Parallel programming in MSVC"},
+                {"names": ["porting"], "heading":"Microsoft C++ Porting and Upgrade Guide"},
+                {"names": ["preprocessor"], "heading":"C/C++ preprocessor reference"},
+                {"names": ["safeint"], "heading":"Security best practices for C++"},
+                {"names": ["security"], "heading":"Security best practices for C++"},
+                {"names": ["standard-library"], "heading":"Microsoft C++ Standard Library reference"},
+                {"names": ["text"], "heading":"Text and strings in MSVC"},
+                {"names": ["windows"], "heading":"Overview of Windows Programming in C++"}               
+              ]
 }
