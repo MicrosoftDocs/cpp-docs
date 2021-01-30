@@ -29,6 +29,36 @@ class CTabCtrl : public CWnd
 |---------|---------|
 |[`CTabCtrl::AdjustRect`](#adjustrect) | Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area. |
 |[`CTabCtrl::Create`](#create) | Creates a tab control and attaches it to an instance of a `TabCtrl` object  |
+|[`CTabCtrl::CreateEx`](#createex) | Creates a tab control with the specified Windows extended styles and attaches it to an instance of a `CTabCtrl` object.|
+|[`CTabCtrl::DeleteAllItems`](#deleteallitems) | Removes all items from a tab control.|
+|[`CTabCtrl::DeleteItem`](#deleteitem) | Removes an item from a tab control.|
+|[`CTabCtrl::DeselectAll`](#deselectall) | Resets items in a tab control, clearing any that were pressed.|
+|[`CTabCtrl::DrawItem`](#drawitem) | Draws a specified item of a tab control.|
+|[`CTabCtrl::GetCurFocus`](#getcurfocus) | Retrieves the tab with the current focus of a tab control.|
+|[`CTabCtrl::GetCurSel`](#getcursel) | Determines the currently selected tab in a tab control.|
+|[`CTabCtrl::GetExtendedStyle`](#getextendedstyle) | Retrieves the extended styles that are currently in use for the tab control.|
+|[`CTabCtrl::GetImageList`](#getimagelist) | Retrieves the image list associated with a tab control.|
+|[`CTabCtrl::GetItem`](#getitem) | Retrieves information about a tab in a tab control.|
+|[`CTabCtrl::GetItemCount`](#getitemcount) | Retrieves the number of tabs in the tab control.|
+|[`CTabCtrl::GetItemRect`](#getitemrect) | Retrieves the bounding rectangle for a tab in a tab control.|
+|[`CTabCtrl::GetItemState`](#getitemstate) | Retrieves the state of the indicated tab control item.|
+|[`CTabCtrl::GetRowCount`](#getrowcount) | Retrieves the current number of rows of tabs in a tab control.|
+|[`CTabCtrl::GetToolTips`](#gettooltips) | Retrieves the handle of the tool tip control associated with a tab control.|
+|[`CTabCtrl::HighlightItem`](#highlightitem) | Sets the highlight state of a tab item.|
+|[`CTabCtrl::HitTest`](#hittest) | Determines which tab, if any, is at a specified screen position.|
+|[`CTabCtrl::InsertItem`](#insertitem) | Inserts a new tab in a tab control.|
+|[`CTabCtrl::RemoveImage`](#removeimage) | Removes an image from a tab control's image list.|
+|[`CTabCtrl::SetCurFocus`](#setcurfocus) | Sets the focus to a specified tab in a tab control.|
+|[`CTabCtrl::SetCurSel`](#setcursel) | Selects a tab in a tab control.|
+|[`CTabCtrl::SetExtendedStyle`](#setextendedstyle) | Sets the extended styles for a tab control.|
+|[`CTabCtrl::SetImageList`](#setimagelist) | Assigns an image list to a tab control.|
+|[`CTabCtrl::SetItem`](#setitem) | Sets some or all of a tab's attributes.|
+|[`CTabCtrl::SetItemExtra`](#setitemextra) | Sets the number of bytes per tab reserved for application-defined data in a tab control.|
+|[`CTabCtrl::SetItemSize`](#setitemsize) | Sets the width and height of an item.|
+|[`CTabCtrl::SetItemState`](#setitemstate) | Sets the state of the indicated tab control item.|
+|[`CTabCtrl::SetMinTabWidth`](#setmintabwidth) | Sets the minimum width of items in a tab control.|
+|[`CTabCtrl::SetPadding`](#setpadding) | Sets the amount of space (padding) around each tab`s icon and label in a tab control.|
+|[`CTabCtrl::SetToolTips`](#settooltips) | Assigns a tool tip control to a tab control.|
 
 ## Remarks
 
@@ -50,7 +80,7 @@ For more information about `CTabCtrl`, see [Controls](../../mfc/controls-mfc.md)
 
 **Header:** `afxcmn.h`
 
-## <a name="adjustrect"></a>` CTabCtrl::AdjustRect`
+## <a name="adjustrect"></a>`CTabCtrl::AdjustRect`
 
 Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area.
 
@@ -106,11 +136,11 @@ You construct a `CTabCtrl` object in two steps. First, call the constructor, and
 
 In addition to tab control styles, you can apply the following window styles to a tab control:
 
-- `WS_CHILD` Creates a child window that represents the tab control. Cannot be used with the WS_POPUP style.
-- `WS_VISIBLE` Creates a tab control that is initially visible.
-- `WS_DISABLED` Creates a window that is initially disabled.
-- `WS_GROUP` Specifies the first control of a group of controls in which the user can move from one control to the next with the arrow keys. All controls defined with the `WS_GROUP` style after the first control belong to the same group. The next control with the `WS_GROUP` style ends the style group and starts the next group (that is, one group ends where the next begins).
-- `WS_TABSTOP` Specifies one of any number of controls through which the user can move by using the TAB key. The TAB key moves the user to the next control specified by the `WS_TABSTOP` style.
+- `WS_CHILD`: Creates a child window that represents the tab control. Cannot be used with the WS_POPUP style.
+- `WS_VISIBLE`: Creates a tab control that is initially visible.
+- `WS_DISABLED`: Creates a window that is initially disabled.
+- `WS_GROUP`: Specifies the first control of a group of controls in which the user can move from one control to the next with the arrow keys. All controls defined with the `WS_GROUP`: style after the first control belong to the same group. The next control with the `WS_GROUP`: style ends the style group and starts the next group (that is, one group ends where the next begins).
+- `WS_TABSTOP`: Specifies one of any number of controls through which the user can move by using the TAB key. The TAB key moves the user to the next control specified by the `WS_TABSTOP`: style.
 
 To create a tab control with extended window styles, call [`CTabCtrl::CreateEx`](#createex) instead of `Create`.
 
@@ -156,7 +186,7 @@ Nonzero if successful otherwise 0.
 
 Use `CreateEx` instead of [`Create`](#create) to apply extended Windows styles, specified by the Windows extended style preface **WS_EX_**.
 
-`CreateEx` creates the control with the extended Windows styles specified by *`dwExStyle`*. Set extended styles specific to a control using [SetExtendedStyle](#setextendedstyle). For example, use `CreateEx` to set such styles as WS_EX_CONTEXTHELP, but use `SetExtendedStyle` to set such styles as TCS_EX_FLATSEPARATORS. For more information, see the styles described in [Tab Control Extended Styles](/windows/win32/Controls/tab-control-extended-styles) in the Windows SDK.
+`CreateEx` creates the control with the extended Windows styles specified by *`dwExStyle`*. Set extended styles specific to a control using [`SetExtendedStyle`](#setextendedstyle). For example, use `CreateEx` to set such styles as WS_EX_CONTEXTHELP, but use `SetExtendedStyle` to set such styles as TCS_EX_FLATSEPARATORS. For more information, see the styles described in [Tab Control Extended Styles](/windows/win32/Controls/tab-control-extended-styles) in the Windows SDK.
 
 ## <a name="ctabctrl"></a> `CTabCtrl::CTabCtrl`
 
