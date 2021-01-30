@@ -23,7 +23,9 @@ class CTabCtrl : public CWnd
 |----------|-----------------|
 |[`CTabCtrl::CTabCtrl`](#ctabctrl) | Constructs a `CTabCtrl` object.|
 
+
 ### Public methods
+
 
 |Name  |Description  |
 |---------|---------|
