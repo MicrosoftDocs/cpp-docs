@@ -29,37 +29,37 @@ class CTabCtrl : public CWnd
 |Name  |Description  |
 |---------|---------|
 |[`CTabCtrl::AdjustRect`](#adjustrect) | Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area. |
-|[CTabCtrl::Create](#create) | Creates a tab control and attaches it to an instance of a TabCtrl object  |
-|[CTabCtrl::CreateEx](#createex) | Creates a tab control with the specified Windows extended styles and attaches it to an instance of a CTabCtrl object.|
-|[CTabCtrl::DeleteAllItems](#deleteallitems) | Removes all items from a tab control.|
-|[CTabCtrl::DeleteItem](#deleteitem) | Removes an item from a tab control.|
-|[CTabCtrl::DeselectAll](#deselectall) | Resets items in a tab control, clearing any that were pressed.|
-|[CTabCtrl::DrawItem](#drawitem) | Draws a specified item of a tab control.|
-|[CTabCtrl::GetCurFocus](#getcurfocus) | Retrieves the tab with the current focus of a tab control.|
-|[CTabCtrl::GetCurSel](#getcursel) | Determines the currently selected tab in a tab control.|
-|[CTabCtrl::GetExtendedStyle](#getextendedstyle) | Retrieves the extended styles that are currently in use for the tab control.|
-|[CTabCtrl::GetImageList](#getimagelist) | Retrieves the image list associated with a tab control.|
-|[CTabCtrl::GetItem](#getitem) | Retrieves information about a tab in a tab control.|
-|[CTabCtrl::GetItemCount](#getitemcount) | Retrieves the number of tabs in the tab control.|
-|[CTabCtrl::GetItemRect](#getitemrect) | Retrieves the bounding rectangle for a tab in a tab control.|
-|[CTabCtrl::GetItemState](#getitemstate) | Retrieves the state of the indicated tab control item.|
-|[CTabCtrl::GetRowCount](#getrowcount) | Retrieves the current number of rows of tabs in a tab control.|
-|[CTabCtrl::GetToolTips](#gettooltips) | Retrieves the handle of the tool tip control associated with a tab control.|
-|[CTabCtrl::HighlightItem](#highlightitem) | Sets the highlight state of a tab item.|
-|[CTabCtrl::HitTest](#hittest) | Determines which tab, if any, is at a specified screen position.|
-|[CTabCtrl::InsertItem](#insertitem) | Inserts a new tab in a tab control.|
-|[CTabCtrl::RemoveImage](#removeimage) | Removes an image from a tab control's image list.|
-|[CTabCtrl::SetCurFocus](#setcurfocus) | Sets the focus to a specified tab in a tab control.|
-|[CTabCtrl::SetCurSel](#setcursel) | Selects a tab in a tab control.|
-|[CTabCtrl::SetExtendedStyle](#setextendedstyle) | Sets the extended styles for a tab control.|
-|[CTabCtrl::SetImageList](#setimagelist) | Assigns an image list to a tab control.|
-|[CTabCtrl::SetItem](#setitem) | Sets some or all of a tab's attributes.|
-|[CTabCtrl::SetItemExtra](#setitemextra) | Sets the number of bytes per tab reserved for application-defined data in a tab control.|
-|[CTabCtrl::SetItemSize](#setitemsize) | Sets the width and height of an item.|
-|[CTabCtrl::SetItemState](#setitemstate) | Sets the state of the indicated tab control item.|
-|[CTabCtrl::SetMinTabWidth](#setmintabwidth) | Sets the minimum width of items in a tab control.|
-|[CTabCtrl::SetPadding](#setpadding) | Sets the amount of space (padding) around each tabs icon and label in a tab control.|
-|[CTabCtrl::SetToolTips](#settooltips) | Assigns a tool tip control to a tab control.|
+|[`CTabCtrl::Create`](#create) | Creates a tab control and attaches it to an instance of a `TabCtrl` object  |
+|[`CTabCtrl::CreateEx`](#createex) | Creates a tab control with the specified Windows extended styles and attaches it to an instance of a CTabCtrl object.|
+|[`CTabCtrl::DeleteAllItems`](#deleteallitems) | Removes all items from a tab control.|
+|[`CTabCtrl::DeleteItem`](#deleteitem) | Removes an item from a tab control.|
+|[`CTabCtrl::DeselectAll`](#deselectall) | Resets items in a tab control, clearing any that were pressed.|
+|[`CTabCtrl::DrawItem`](#drawitem) | Draws a specified item of a tab control.|
+|[`CTabCtrl::GetCurFocus`](#getcurfocus) | Retrieves the tab with the current focus of a tab control.|
+|[`CTabCtrl::GetCurSel`](#getcursel) | Determines the currently selected tab in a tab control.|
+|[`CTabCtrl::GetExtendedStyle`](#getextendedstyle) | Retrieves the extended styles that are currently in use for the tab control.|
+|[`CTabCtrl::GetImageList`](#getimagelist) | Retrieves the image list associated with a tab control.|
+|[`CTabCtrl::GetItem`](#getitem) | Retrieves information about a tab in a tab control.|
+|[`CTabCtrl::GetItemCount`](#getitemcount) | Retrieves the number of tabs in the tab control.|
+|[`CTabCtrl::GetItemRect`](#getitemrect) | Retrieves the bounding rectangle for a tab in a tab control.|
+|[`CTabCtrl::GetItemState`](#getitemstate) | Retrieves the state of the indicated tab control item.|
+|[`CTabCtrl::GetRowCount`](#getrowcount) | Retrieves the current number of rows of tabs in a tab control.|
+|[`CTabCtrl::GetToolTips`](#gettooltips) | Retrieves the handle of the tool tip control associated with a tab control.|
+|[`CTabCtrl::HighlightItem`](#highlightitem) | Sets the highlight state of a tab item.|
+|[`CTabCtrl::HitTest`](#hittest) | Determines which tab, if any, is at a specified screen position.|
+|[`CTabCtrl::InsertItem`](#insertitem) | Inserts a new tab in a tab control.|
+|[`CTabCtrl::RemoveImage`](#removeimage) | Removes an image from a tab control's image list.|
+|[`CTabCtrl::SetCurFocus`](#setcurfocus) | Sets the focus to a specified tab in a tab control.|
+|[`CTabCtrl::SetCurSel`](#setcursel) | Selects a tab in a tab control.|
+|[`CTabCtrl::SetExtendedStyle`](#setextendedstyle) | Sets the extended styles for a tab control.|
+|[`CTabCtrl::SetImageList`](#setimagelist) | Assigns an image list to a tab control.|
+|[`CTabCtrl::SetItem`](#setitem) | Sets some or all of a tab's attributes.|
+|[`CTabCtrl::SetItemExtra`](#setitemextra) | Sets the number of bytes per tab reserved for application-defined data in a tab control.|
+|[`CTabCtrl::SetItemSize`](#setitemsize) | Sets the width and height of an item.|
+|[`CTabCtrl::SetItemState`](#setitemstate) | Sets the state of the indicated tab control item.|
+|[`CTabCtrl::SetMinTabWidth`](#setmintabwidth) | Sets the minimum width of items in a tab control.|
+|[`CTabCtrl::SetPadding`](#setpadding) | Sets the amount of space (padding) around each tabs icon and label in a tab control.|
+|[`CTabCtrl::SetToolTips`](#settooltips) | Assigns a tool tip control to a tab control.|
 
 ## Remarks
 
