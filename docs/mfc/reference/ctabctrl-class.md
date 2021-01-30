@@ -28,7 +28,7 @@ class CTabCtrl : public CWnd
 
 |Name  |Description  |
 |---------|---------|
-|[CTabCtrl::AdjustRect](#adjustrect) | Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area. |
+|[`CTabCtrl::AdjustRect`](#adjustrect) | Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area. |
 |[CTabCtrl::Create](#create) | Creates a tab control and attaches it to an instance of a TabCtrl object  |
 |[CTabCtrl::CreateEx](#createex) | Creates a tab control with the specified Windows extended styles and attaches it to an instance of a CTabCtrl object.|
 |[CTabCtrl::DeleteAllItems](#deleteallitems) | Removes all items from a tab control.|
