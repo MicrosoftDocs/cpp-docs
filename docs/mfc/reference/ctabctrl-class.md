@@ -129,7 +129,7 @@ Specifies the tab control's ID.
 
 ### Return Value
 
-TRUE if initialization of the object was successful; otherwise `FALSE`.
+`TRUE` if initialization of the object was successful; otherwise `FALSE`.
 
 ### Remarks
 
