@@ -27,7 +27,7 @@ class CTabCtrl : public CWnd
 
 |Name  |Description |
 |---------|---------|
-|[`CTabCtrl::AdjustRect`](#adjustrect) | Calculates a tab control`s display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area.|
+|[`CTabCtrl::AdjustRect`](#adjustrect) | Calculates a tab control's display area given a window rectangle, or calculates the window rectangle that would correspond to a given display area.|
 |[`CTabCtrl::Create`](#create) | Creates a tab control and attaches it to an instance of a `CTabCtrl` object.|
 |[`CTabCtrl::CreateEx`](#createex) | Creates a tab control with the specified Windows extended styles and attaches it to an instance of a `CTabCtrl` object.|
 |[`CTabCtrl::DeleteAllItems`](#deleteallitems) | Removes all items from a tab control.|
@@ -47,12 +47,12 @@ class CTabCtrl : public CWnd
 |[`CTabCtrl::HighlightItem`](#highlightitem) | Sets the highlight state of a tab item.|
 |[`CTabCtrl::HitTest`](#hittest) | Determines which tab, if any, is at a specified screen position.|
 |[`CTabCtrl::InsertItem`](#insertitem) | Inserts a new tab in a tab control.|
-|[`CTabCtrl::RemoveImage`](#removeimage) | Removes an image from a tab control`s image list.|
+|[`CTabCtrl::RemoveImage`](#removeimage) | Removes an image from a tab control's image list.|
 |[`CTabCtrl::SetCurFocus`](#setcurfocus) | Sets the focus to a specified tab in a tab control.|
 |[`CTabCtrl::SetCurSel`](#setcursel) | Selects a tab in a tab control.|
 |[`CTabCtrl::SetExtendedStyle`](#setextendedstyle) | Sets the extended styles for a tab control.|
 |[`CTabCtrl::SetImageList`](#setimagelist) | Assigns an image list to a tab control.|
-|[`CTabCtrl::SetItem`](#setitem) | Sets some or all of a tab`s attributes.|
+|[`CTabCtrl::SetItem`](#setitem) | Sets some or all of a tab's attributes.|
 |[`CTabCtrl::SetItemExtra`](#setitemextra) | Sets the number of bytes per tab reserved for application-defined data in a tab control.|
 |[`CTabCtrl::SetItemSize`](#setitemsize) | Sets the width and height of an item.|
 |[`CTabCtrl::SetItemState`](#setitemstate) | Sets the state of the indicated tab control item.|
