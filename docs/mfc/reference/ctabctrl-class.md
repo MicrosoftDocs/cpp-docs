@@ -66,7 +66,7 @@ A "tab control" is analogous to the dividers in a notebook or the labels in a fi
 
 This control (and therefore the `CTabCtrl` class) is available only to programs running under Windows 95/98 and Windows NT version 3.51 and later.
 
-For more information on using `CTabCtrl`, see [Controls](../../mfc/controls-mfc.md) and [Using CTabCtrl](../../mfc/using-ctabctrl.md).
+For more information about `CTabCtrl`, see [Controls](../../mfc/controls-mfc.md) and [Using `CTabCtrl`](../../mfc/using-ctabctrl.md).
 
 ## Inheritance Hierarchy
 
@@ -91,7 +91,7 @@ void AdjustRect(BOOL bLarger,   LPRECT lpRect);
 ### Parameters
 
 *`bLarger`*\
-Indicates which operation to perform. If this parameter is TRUE, *`lpRect`* specifies a display rectangle and receives the corresponding window rectangle. If this parameter is FALSE, *`lpRect`* specifies a window rectangle and receives the corresponding display rectangle.
+Indicates which operation to do. If this parameter is `TRUE`, *`lpRect`* specifies a display rectangle and receives the corresponding window rectangle. If this parameter is `FALSE`, *`lpRect`* specifies a window rectangle and receives the corresponding display rectangle.
 
 *`lpRect`*\
 Pointer to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure that specifies the given rectangle and receives the calculated rectangle.
@@ -128,7 +128,7 @@ Specifies the tab control's ID.
 
 ### Return Value
 
-TRUE if initialization of the object was successful; otherwise FALSE.
+TRUE if initialization of the object was successful; otherwise `FALSE`.
 
 ### Remarks
 
@@ -137,13 +137,9 @@ You construct a `CTabCtrl` object in two steps. First, call the constructor, and
 In addition to tab control styles, you can apply the following window styles to a tab control:
 
 - `WS_CHILD` Creates a child window that represents the tab control. Cannot be used with the WS_POPUP style.
-
 - `WS_VISIBLE` Creates a tab control that is initially visible.
-
 - `WS_DISABLED` Creates a window that is initially disabled.
-
 - `WS_GROUP` Specifies the first control of a group of controls in which the user can move from one control to the next with the arrow keys. All controls defined with the `WS_GROUP` style after the first control belong to the same group. The next control with the `WS_GROUP` style ends the style group and starts the next group (that is, one group ends where the next begins).
-
 - `WS_TABSTOP` Specifies one of any number of controls through which the user can move by using the TAB key. The TAB key moves the user to the next control specified by the `WS_TABSTOP` style.
 
 To create a tab control with extended window styles, call [`CTabCtrl::CreateEx`](#createex) instead of `Create`.
@@ -244,7 +240,7 @@ void DeselectAll(BOOL fExcludeFocus);
 ### Parameters
 
 *`fExcludeFocus`*\
-Flag that specifies the scope of the item deselection. If this parameter is set to FALSE, all tab buttons will be reset. If it is set to TRUE, then all tab items except for the one currently selected will be reset.
+Flag that specifies the scope of the item deselection. If this parameter is set to `FALSE`, all tab buttons will be reset. If it's set to `TRUE`, then all tab items except for the one currently selected will be reset.
 
 ### Remarks
 
@@ -265,7 +261,7 @@ A pointer to a [`DRAWITEMSTRUCT`](/windows/win32/api/winuser/ns-winuser-drawitem
 
 ### Remarks
 
-The `itemAction` member of the `DRAWITEMSTRUCT` structure defines the drawing action that is to be performed.
+The `itemAction` member of the `DRAWITEMSTRUCT` structure defines the drawing action to do.
 
 By default, this member function does nothing. Override this member function to implement drawing for an owner-draw `CTabCtrl` object.
 
@@ -341,7 +337,7 @@ Pointer to a [`TCITEM`](/windows/win32/api/commctrl/ns-commctrl-tcitemw) structu
 
 ### Return Value
 
-Returns TRUE if successful; FALSE otherwise.
+Returns `TRUE` if successful; `FALSE` otherwise.
 
 ### Remarks
 
@@ -352,13 +348,9 @@ When the message is sent, the `mask` member specifies which attributes to return
    Value specifying which `TCITEM` structure members to retrieve or set. This member can be zero or a combination of the following values:
 
   - `TCIF_TEXT`: The `pszText` member is valid.
-
   - `TCIF_IMAGE`: The `iImage` member is valid.
-
   - `TCIF_PARAM`: The `lParam` member is valid.
-
   - `TCIF_RTLREADING`: The text of `pszText` is displayed using right-to-left reading order on Hebrew or Arabic systems.
-
   - `TCIF_STATE`: The `dwState` member is valid.
 
 - `pszText`
@@ -374,7 +366,7 @@ Index into the tab control's image list, or -1 if there is no image for the tab.
 
 - `lParam`
 
-   Application-defined data associated with the tab. If there are more than four bytes of application-defined data per tab, an application must define a structure and use it instead of the `TCITEM` structure. The first member of the application-defined structure must be a [TCITEMHEADER](/windows/win32/api/commctrl/ns-commctrl-tcitemheaderw)structure. The `TCITEMHEADER` structure is identical to the `TCITEM` structure, but without the `lParam` member. The difference between the size of your structure and the size of the `TCITEMHEADER` structure should equal the number of extra bytes per tab.
+   Application-defined data associated with the tab. If there are more than 4 bytes of application-defined data per tab, an application must define a structure and use it instead of the `TCITEM` structure. The first member of the application-defined structure must be a [TCITEMHEADER](/windows/win32/api/commctrl/ns-commctrl-tcitemheaderw)structure. The `TCITEMHEADER` structure is identical to the `TCITEM` structure, but without the `lParam` member. The difference between the size of your structure and the size of the `TCITEMHEADER` structure should equal the number of extra bytes per tab.
 
 ### Example
 
@@ -577,13 +569,9 @@ The zero-based index of an image to insert from an image list.
 Specifies which `TCITEM` structure attributes to set. Can be zero or a combination of the following values:
 
 - `TCIF_TEXT`: The `pszText` member is valid.
-
 - `TCIF_IMAGE`: The `iImage` member is valid.
-
 - `TCIF_PARAM`: The *`lParam`* member is valid.
-
 - `TCIF_RTLREADING`: The text of `pszText` is displayed using right-to-left reading order on Hebrew or Arabic systems.
-
 - `TCIF_STATE`: The *`dwState`* member is valid.
 
 *`lParam`*\
