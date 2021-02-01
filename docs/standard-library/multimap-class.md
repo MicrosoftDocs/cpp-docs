@@ -8,7 +8,7 @@ ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
 ---
 # multimap Class
 
-The C++ Standard Library multimap class is used for the storage and retrieval of data from a collection in which the each element is a pair that has both a data value and a sort key. The value of the key doesn't need to be unique and is used to order the data automatically. The value of an element in a multimap, but not its associated key value, may be changed directly. Instead, key values associated with old elements must be deleted and new key values associated with new elements inserted.
+The C++ Standard Library multimap class is used for the storage and retrieval of data from a collection in which each element is a pair that has both a data value and a sort key. The value of the key doesn't need to be unique and is used to order the data automatically. The value of an element in a multimap, but not its associated key value, may be changed directly. Instead, key values associated with old elements must be deleted and new key values associated with new elements inserted.
 
 ## Syntax
 
