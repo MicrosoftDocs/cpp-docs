@@ -284,7 +284,7 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &nbsp;&nbsp;[`P1007R3 assume_aligned()`](https://wg21.link/P1007R3) | No |
 | &nbsp;&nbsp;[`P1020R1 Smart Pointer Creation With Default Initialization`](https://wg21.link/P1020R1) | No |
 | &nbsp;&nbsp;[`P1208R6 <source_location>`](https://wg21.link/P1208R6) | No |
-| &nbsp;&nbsp;[`P1285R0 Improving Completeness Requirements For Type Traits`](https://wg21.link/P1285R0) | No |
+| &nbsp;&nbsp;[`P1285R0 Improving Completeness Requirements For Type Traits`](https://wg21.link/P1285R0) | N/A |
 | &nbsp;&nbsp;[`P1502R1 Standard Library Header Units`](https://wg21.link/P1502R1) | No |
 | &nbsp;&nbsp;[`P1614R2 Adding Spaceship <=> To The Library`](https://wg21.link/P1614R2) | Partial in VS 2019 16.7 <sup>[20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1771R1 Library support for [[nodiscard]] for constructors`](https://wg21.link/P1771R1) | No |
