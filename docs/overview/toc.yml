@@ -10,7 +10,7 @@
     - name: What's new in Microsoft C++ docs 
       href: ../overview/whats-new-cpp-docs.md
     - name: History of what's new in Microsoft C++ docs
-      href: ../overview/whats-new-cpp-history.md
+      href: ../overview/whats-new-cpp-docs-history.md
     - name: C++ conformance improvements in Visual Studio
       href: ../overview/cpp-conformance-improvements.md
     - name: Microsoft C++ language conformance

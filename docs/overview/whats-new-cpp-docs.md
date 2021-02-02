@@ -13,7 +13,7 @@ description: "What's new in the C++, C, and Assembler docs for January 1, 2021 -
 ms.date: 02/01/2021
 ---
 
-# C++, C, and Assembler docs: What's new for January 1, 2021 - January 31, 2021
+## C++, C, and Assembler docs: What's new for January 1, 2021 - January 31, 2021
 
 Welcome to what's new in the C++, C, and Assembler docs from January 1, 2021 through January 31, 2021. This article lists some of the major changes to docs during this period.
 
