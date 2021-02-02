@@ -7,12 +7,6 @@ ms.date: "02/02/2021"
 
 Welcome to what's new in the Microsoft C++ docs for January 2021. This article lists some of the major changes to docs during this period. For information about what was new in previous months, see [Microsoft C++ docs: History of what's new](whats-new-cpp-docs-history.md).
 
----
-title: "C++, C, and Assembler docs: What's new for January 1, 2021 - January 31, 2021"
-description: "What's new in the C++, C, and Assembler docs for January 1, 2021 - January 31, 2021."
-ms.date: 02/01/2021
----
-
 ## C++, C, and Assembler docs: What's new for January 1, 2021 - January 31, 2021
 
 Welcome to what's new in the C++, C, and Assembler docs from January 1, 2021 through January 31, 2021. This article lists some of the major changes to docs during this period.
@@ -29,71 +23,12 @@ Welcome to what's new in the C++, C, and Assembler docs from January 1, 2021 thr
 ### Updated articles
 
 - [Country/Region Strings](../c-runtime-library/country-region-strings.md) - add code fence to prevent over localization
-- [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](../c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) - typo
-- [`acos`, `acosf`, `acosl`](../c-runtime-library/reference/acos-acosf-acosl.md) - add ofuncs
-- [`asin`, `asinf`, `asinl`](../c-runtime-library/reference/asin-asinf-asinl.md) - add ofuncs
-- [`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md) - add ofuncs
-- [`cosh`, `coshf`, `coshl`](../c-runtime-library/reference/cosh-coshf-coshl.md) - add ofuncs
-- [`exp`, `expf`, `expl`](../c-runtime-library/reference/exp-expf.md) - add ofuncs
-- [`fabs`, `fabsf`, `fabsl`](../c-runtime-library/reference/fabs-fabsf-fabsl.md) - add ofuncs
-- [`fmod`, `fmodf`, `fmodl`](../c-runtime-library/reference/fmod-fmodf.md) - add ofuncs
-- [`_fpclass`, `_fpclassf`](../c-runtime-library/reference/fpclass-fpclassf.md) - add ofuncs
-- [`logb`, `logbf`, `logbl`, `_logb`, `_logbf`](../c-runtime-library/reference/logb-logbf-logbl-logb-logbf.md) - add ofuncs
-- [`memset`, `wmemset`](../c-runtime-library/reference/memset-wmemset.md) - add ofuncs
-- [`modf`, `modff`, `modfl`](../c-runtime-library/reference/modf-modff-modfl.md) - add ofuncs
-- [`nextafter`, `nextafterf`, `nextafterl`, `_nextafter`, `_nextafterf`, `nexttoward`, `nexttowardf`, `nexttowardl`](../c-runtime-library/reference/nextafter-functions.md) - add ofuncs
-- [`_scalb`, `_scalbf`](../c-runtime-library/reference/scalb.md) - add ofuncs
-- [`sinh`, `sinhf`, `sinhl`](../c-runtime-library/reference/sinh-sinhf-sinhl.md) - add ofuncs
-- [`tan`, `tanf`, `tanl`](../c-runtime-library/reference/tan-tanf-tanl.md) - add ofuncs
-- [`tanh`, `tanhf`, `tanhl`](../c-runtime-library/reference/tanh-tanhf-tanhl.md) - add ofuncs
-- [`_get_unexpected`](../c-runtime-library/reference/get-unexpected.md) - update API locations for APISCAN
-- [`memcpy`, `wmemcpy`](../c-runtime-library/reference/memcpy-wmemcpy.md) - update API locations for APISCAN
-- [`memmove`, `wmemmove`](../c-runtime-library/reference/memmove-wmemmove.md) - update API locations for APISCAN
-- [`_resetstkoflw`](../c-runtime-library/reference/resetstkoflw.md) - update API locations for APISCAN
-- [`_set_se_translator`](../c-runtime-library/reference/set-se-translator.md) - update API locations for APISCAN
-- [`set_unexpected` (CRT)](../c-runtime-library/reference/set-unexpected-crt.md) - update API locations for APISCAN
-- [`setjmp`](../c-runtime-library/reference/setjmp.md) - update API locations for APISCAN
-- [`wctype`](../c-runtime-library/reference/wctype.md) - update API locations for APISCAN
 - [Language Strings](../c-runtime-library/language-strings.md) - localization fixes - mark code so that machine translation doesn't change it
 
 ## C/C++ preprocessor reference
 
 ### Updated articles
 
-- [`alloc_text` pragma](../preprocessor/alloc-text.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`bss_seg` pragma](../preprocessor/bss-seg.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`check_stack` pragma](../preprocessor/check-stack.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`code_seg` pragma](../preprocessor/code-seg.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`comment` pragma](../preprocessor/comment-c-cpp.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`component` pragma](../preprocessor/component.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`conform` pragma](../preprocessor/conform.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`const_seg` pragma](../preprocessor/const-seg.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`data_seg` pragma](../preprocessor/data-seg.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`execution_character_set` pragma](../preprocessor/execution-character-set.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`fenv_access` pragma](../preprocessor/fenv-access.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`float_control` pragma](../preprocessor/float-control.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`fp_contract` pragma](../preprocessor/fp-contract.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [Preprocessor grammar summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`hdrstop` pragma](../preprocessor/hdrstop.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`include_alias` pragma](../preprocessor/include-alias.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`init_seg` pragma](../preprocessor/init-seg.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`inline_depth` pragma](../preprocessor/inline-depth.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`inline_recursion` pragma](../preprocessor/inline-recursion.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`loop` pragma](../preprocessor/loop.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`make_public` pragma](../preprocessor/make-public.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`managed` and `unmanaged` pragma](../preprocessor/managed-unmanaged.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`message` pragma](../preprocessor/message.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`optimize` pragma](../preprocessor/optimize.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`pointers_to_members` pragma](../preprocessor/pointers-to-members.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [Pragma directives and the `__pragma` and `_Pragma` keywords](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
-  - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-  - Translation issue reported in cpp-docs.pl-pl 13
-- [`region` and `endregion` pragma](../preprocessor/region-endregion.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`runtime_checks` pragma](../preprocessor/runtime-checks.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`section` pragma](../preprocessor/section.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`strict_gs_check` pragma](../preprocessor/strict-gs-check.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`vtordisp` pragma](../preprocessor/vtordisp.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
-- [`warning` pragma](../preprocessor/warning.md) - Restyle C++ pragma docs for localizability, fix cpp-docs..de-de issue 60
 - [`#include` directive (C/C++)](../preprocessor/hash-include-directive-c-cpp.md) - Docs/corob/cpp docs 2701
 
 ## Linux with Microsoft C++ in Visual Studio
@@ -135,16 +70,6 @@ Welcome to what's new in the C++, C, and Assembler docs from January 1, 2021 thr
 - [ARM Exception Handling](../build/arm-exception-handling.md) - Remove or replace broken fwlinks
 - [launch.vs.json schema reference (C++)](../build/launch-vs-schema-reference-cpp.md) - outline
 - [`/Zc` (Conformance)](../build/reference/zc-conformance.md) - Add /Zc:hiddenFriend docs
-
-## Microsoft C++ Standard Template Library (STL) reference
-
-### Updated articles
-
-- [`basic_string` Class](../standard-library/basic-string-class.md) - Add F1 for namespaces in std library
-- [`<complex>`](../standard-library/complex.md) - Add F1 for namespaces in std library
-- [`<execution>`](../standard-library/execution.md) - Add F1 for namespaces in std library
-- [`filesystem`](../standard-library/filesystem.md) - Add F1 for namespaces in std library
-- [`<string_view>` operators](../standard-library/string-view-operators.md) - Add F1 for namespaces in std library
 
 ## Community contributors
 
