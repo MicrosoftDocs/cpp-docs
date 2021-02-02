@@ -148,13 +148,9 @@ Welcome to what's new in the C++, C, and Assembler docs from January 1, 2021 thr
 
 ## Community contributors
 
-The following people contributed to the C++, C, and Assembler docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
+The following people contributed to the C++, C, and Assembler docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [contributor guide](https://docs.microsoft.com/contribute/).
 
-- [openpublishbuild](https://github.com/openpublishbuild) - Open Publishing Build Robots (7)
-- [opbld17](https://github.com/opbld17) (6)
-- [opbld16](https://github.com/opbld16) (5)
 - [EvilC0der](https://github.com/EvilC0der) - EvilC0der (2)
-- [opbld15](https://github.com/opbld15) (2)
 - [dimhotepus](https://github.com/dimhotepus) - Dmitry Tsarevich (1)
 - [fsb4000](https://github.com/fsb4000) - Igor Zhukov (1)
 - [isnullxbh](https://github.com/isnullxbh) - Oleg Vorobiov (1)
