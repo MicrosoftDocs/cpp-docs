@@ -1086,46 +1086,10 @@
           items: 
             - name: Linker support for delay-loaded DLLs
               href: ../build/reference/linker-support-for-delay-loaded-dlls.md
-            - name: Specify DLLs to delay load
-              href: ../build/reference/specifying-dlls-to-delay-load.md
-            - name: Explicitly unload a delay-loaded DLL
-              href: ../build/reference/explicitly-unloading-a-delay-loaded-dll.md
-            - name: Bind delay loaded imports
-              href: ../build/reference/binding-imports.md
-            - name: Load all imports for a delay-loaded DLL
-              href: ../build/reference/loading-all-imports-for-a-delay-loaded-dll.md
             - name: Error handling and notification
-              expanded: false
-              items: 
-                - name: Error handling and notification
-                  href: ../build/reference/error-handling-and-notification.md
-                - name: Notification hooks
-                  href: ../build/reference/notification-hooks.md
-                - name: Failure hooks
-                  href: ../build/reference/failure-hooks.md
-                - name: DLL load exception codes (C/C++)
-                  href: ../build/reference/exceptions-c-cpp.md
-            - name: Dump delay-loaded imports
-              href: ../build/reference/dumping-delay-loaded-imports.md
-            - name: Constraints of delay loading DLLs
-              href: ../build/reference/constraints-of-delay-loading-dlls.md
+              href: ../build/reference/error-handling-and-notification.md
             - name: Understand the delay load helper function
-              expanded: false
-              items: 
-                - name: Understand the helper function
-                  href: ../build/reference/understanding-the-helper-function.md
-                - name: Changes in the DLL delayed loading helper function since Visual C++ 6.0
-                  href: ../build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md
-                - name: Calling conventions, parameters, and return type
-                  href: ../build/reference/calling-conventions-parameters-and-return-type.md
-                - name: Structure and constant definitions
-                  href: ../build/reference/structure-and-constant-definitions.md
-                - name: Calculate necessary values
-                  href: ../build/reference/calculating-necessary-values.md
-                - name: Unload a delay-loaded DLL
-                  href: ../build/reference/unloading-a-delay-loaded-dll.md
-            - name: Develop your own helper function
-              href: ../build/reference/developing-your-own-helper-function.md
+              href: ../build/reference/understanding-the-helper-function.md
     - name: Additional MSVC build tools
       expanded: false
       items: 
