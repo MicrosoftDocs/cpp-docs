@@ -866,6 +866,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/cpp/bstr-t-member-functions.md",
+      "redirect_url": "/cpp/cpp/bstr-t-class",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/bstr-t-operators.md",
+      "redirect_url": "/cpp/cpp/bstr-t-class",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/cpp/character-sets2.md",
       "redirect_url": "/cpp/cpp/character-sets",
       "redirect_document_id": false
