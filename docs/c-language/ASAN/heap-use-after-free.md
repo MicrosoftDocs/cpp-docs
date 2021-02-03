@@ -1,0 +1,59 @@
+# Heap use after free
+
+We show three examples where storage in the heap can be allocated via malloc, realloc (C) and new (C++) along with a mistaken use of volatile.
+
+## Example malloc
+
+```cpp
+#include <stdlib.h>
+int main() {
+  char *x = (char*)malloc(10 * sizeof(char));
+  free(x);
+  return x[5];   // Boom!
+}
+```
+
+## Resulting error
+
+## Example - operator new
+```cpp
+#include <windows.h>
+
+int main() {
+  char *buffer = new char[42];
+  delete [] buffer;
+  buffer[0] = 42;  // Boom!
+  return 0;
+}
+
+```
+
+## Resulting error
+
+
+## Example - realloc
+
+```cpp
+#include <malloc.h>
+
+int main() {
+  char *buffer = (char*)realloc(0, 42);
+  free(buffer);
+  buffer[0] = 42;  // Boom!
+  return 0;
+}
+```
+
+## Example - volatile
+```cpp
+#include <stdlib.h>
+int main() {
+  volatile char *x = (char*)malloc(sizeof(char));
+  free((void*)x);
+      //...
+
+  *x = 42;        // Boom!
+}
+```
+
+## Resulting
