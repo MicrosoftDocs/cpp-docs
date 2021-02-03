@@ -11,8 +11,6 @@ MFC provides the template class [CWinFormsDialog](../mfc/reference/cwinformsdial
 
 The process that `CWinFormsDialog` uses to host the user control is the similar to that described in [Hosting a Windows Form User Control in an MFC Dialog Box](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md). However, `CWinFormsDialog` manages the initialization and hosting of the user control so that it does not have to be programmed manually.
 
-For a sample application that shows Windows Forms used with MFC, see [MFC and Windows Forms Integration](https://download.cnet.com/MFC-and-WinForms-Integration/3000-2383_4-75453644.html).
-
 ### To create the MFC host application
 
 1. Create an MFC Application project.

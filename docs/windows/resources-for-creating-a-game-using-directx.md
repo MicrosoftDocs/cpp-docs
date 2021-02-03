@@ -15,7 +15,7 @@ Visual C++ is included in all editions of Visual Studio, but it's not installed 
 
 For Windows 8.1 and later, the DirectX SDK is included in the Windows SDK. You don't have to download anything extra. For more information, see [Where is the DirectX SDK?](/windows/win32/directx-sdk--august-2009-).
 
-To create DirectX apps for Windows 7, Windows Vista, or Windows XP, you can download the stand-alone [DirectX SDK](https://download.cnet.com/DirectX-Software-Development-Kit-June-2010/3000-2069_4-75453831.html).
+To create DirectX apps for Windows 7, Windows Vista, or Windows XP, you can download the stand-alone [DirectX SDK](https://web.archive.org/web/20161026183606/https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=6812) (Archive link).
 
 [DirectX Graphics and Gaming](/windows/win32/directx) has information and samples to help you get started with DirectX programming.
 
