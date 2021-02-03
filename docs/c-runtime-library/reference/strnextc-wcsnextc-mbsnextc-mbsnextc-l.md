@@ -23,7 +23,7 @@ Finds the next character in a string.
 unsigned int _strnextc(
    const char *str
 );
-unsigned int _wscnextc(
+unsigned int _wcsnextc(
    const wchar_t *str
 );
 unsigned int _mbsnextc(

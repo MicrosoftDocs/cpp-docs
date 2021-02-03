@@ -1,12 +1,11 @@
 ---
 description: "Learn more about: _bstr_t::Assign"
 title: "_bstr_t::Assign"
-ms.date: "11/04/2016"
+ms.date: 02/02/2021
 f1_keywords: ["_bstr_t::Assign"]
 helpviewer_keywords: ["Assign method [C++]"]
-ms.assetid: 2e209bbe-77ca-4598-86d5-6c2ea213f43c
 ---
-# _bstr_t::Assign
+# _`bstr_t::Assign`
 
 **Microsoft Specific**
 
@@ -20,14 +19,14 @@ void Assign(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*s*<br/>
+*`s`*\
 A `BSTR` to be copied into the `BSTR` wrapped by a `_bstr_t`.
 
 ## Remarks
 
-**Assign** does a binary copy, which means the entire length of the `BSTR` is copied, regardless of content.
+**`Assign`** does a binary copy of the entire length of the `BSTR`, whatever the content.
 
 ## Example
 
@@ -106,4 +105,4 @@ bstrWrapper2 = some text
 
 ## See also
 
-[_bstr_t Class](../cpp/bstr-t-class.md)
+[`_bstr_t` class](../cpp/bstr-t-class.md)
