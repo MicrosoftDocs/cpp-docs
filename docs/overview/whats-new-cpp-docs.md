@@ -187,7 +187,7 @@ This article lists some of the major changes to docs for Visual Studio 16.8.
 
 ## Community contributors
 
-The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See [Microsoft Docs contributor guide overview](https://docs.microsoft.com/en-us/contribute/) if you'd like to learn how to contribute.
+The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See [Microsoft Docs contributor guide overview](https://docs.microsoft.com/contribute/) if you'd like to learn how to contribute.
 
 - [yecril71pl](https://github.com/yecril71pl) - Christopher Yeleighton (4)
 - [definedrisk](https://github.com/definedrisk) - Ben (3)
