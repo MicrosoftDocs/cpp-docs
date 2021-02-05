@@ -5,7 +5,7 @@ ms.date: "02/05/2021"
 ---
 # Microsoft C++ docs: What's new for Visual Studio 16.8
 
-This article lists some of the major changes to docs for the current release.
+This article lists some of the major changes to docs for Visual Studio 16.8.
 
 ## C language
 
@@ -135,9 +135,7 @@ This article lists some of the major changes to docs for the current release.
 ### Updated articles
 
 - [`__restrict`](../cpp/extension-restrict.md)
-- [Address-of Operator: &amp;](../cpp/address-of-operator-amp.md) - Fixed issues identified in PR 3173
-- [if-else statement (C++)](../cpp/if-else-statement-cpp.md) - Fixed issues identified in PR 3173
-- [Primary Expressions](../cpp/primary-expressions.md) - Fixed issues identified in PR 3173
+- [if-else statement (C++)](../cpp/if-else-statement-cpp.md) - Added description for `if/else` grammar
 - [`union`](../cpp/unions.md) - Fixed code snippet
 
 ## Microsoft C++ in Visual Studio projects and build systems
@@ -156,7 +154,6 @@ This article lists some of the major changes to docs for the current release.
 - [`/permissive-` (Standards conformance)](../build/reference/permissive-standards-conformance.md) - Updated to 16.8 release notes
 - [`/clr` (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) - Added description for `/clr`
 - [pgosweep](../build/pgosweep.md) - Added more pgosweep options
-- [`/sdl` (Enable Additional Security Checks)](../build/reference/sdl-enable-additional-security-checks.md) - Fixed issues identified in PR 3173
 - [Importing data using `__declspec(dllimport)`](../build/importing-data-using-declspec-dllimport.md) - Updated example
 ## Microsoft C++ porting and upgrade guide
 
@@ -190,7 +187,7 @@ This article lists some of the major changes to docs for the current release.
 
 ## Community contributors
 
-The following people contributed to the C++, C, and Assembler docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](..\index.yml).
+The following people contributed to the C++, C, and Assembler docs during this period. Thank you! See [Microsoft Docs contributor guide overview](https://docs.microsoft.com/en-us/contribute/) if you'd like to learn how to contribute.
 
 - [yecril71pl](https://github.com/yecril71pl) - Christopher Yeleighton (4)
 - [definedrisk](https://github.com/definedrisk) - Ben (3)
