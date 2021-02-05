@@ -5,13 +5,13 @@ ms.date: "02/05/2021"
 ---
 # Microsoft C++ docs: What's new for Visual Studio 16.8
 
-Welcome to what's new in the Microsoft C++ docs for Visual Studio version 16.8. This article lists some of the major changes to docs for this release. For information about what was new in previous releases, see [Microsoft C++ docs: History of what's new](whats-new-cpp-docs-history.md).
+This article lists some of the major changes to docs for the current release.
 
 ## Active Template Library (ATL), Microsoft Foundation Classes (MFC)
 
 ### Updated articles
 
-- [Documents, views, and the framework](../mfc/documents-views-and-the-framework.md) - various github issue fixes
+- [Documents, views, and the framework](../mfc/documents-views-and-the-framework.md) - github issue fixes
 - [CObArray Class](../mfc/reference/cobarray-class.md) - github issue 2148
 
 ## C language
@@ -43,22 +43,14 @@ Welcome to what's new in the Microsoft C++ docs for Visual Studio version 16.8. 
 
 ### Updated articles
 
-- [`_configthreadlocale`](../c-runtime-library/reference/configthreadlocale.md) - fix github 2492
-- [Format specification syntax: printf and wprintf functions](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) - Twhitney GitHub
-- [`gmtime`, `_gmtime32`, `_gmtime64`](../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) - Twhitney GitHub
 - [qsort](../c-runtime-library/reference/qsort.md) - add note about stability
-- [_cwait](../c-runtime-library/reference/cwait.md) - fix github issue 2367
-- [C runtime Library Reference](../c-runtime-library/c-run-time-library-reference.md)
-  - add family function overview and cleanup
-  - changing default from conceptual to reference, and marking those topi…
-- [Function family overview](../c-runtime-library/function-family-overviews.md) - add family function overview and cleanup
-- [round, roundf, roundl](../c-runtime-library/reference/round-roundf-roundl.md) - various github issue fixes
-- [strerror_s, _strerror_s, _wcserror_s, __wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md) - various github issue fixes
-- [Compatibility](../c-runtime-library/compatibility.md) - Twhitney c99 conformance
-- [realloc](../c-runtime-library/reference/realloc.md) - Twhitney c99 conformance
-- [CRT Library Features](../c-runtime-library/crt-library-features.md) - Updated use of _DLL and UWP porting for 2411
+- [_cwait](../c-runtime-library/reference/cwait.md) - fix code example
+- [Function family overview](../c-runtime-library/function-family-overviews.md) - add operator `new` and `delete`
+- [round, roundf, roundl](../c-runtime-library/reference/round-roundf-roundl.md) - clarify rounding code example
+- [Compatibility](../c-runtime-library/compatibility.md) - Add C99 conformance notes
+- [realloc](../c-runtime-library/reference/realloc.md) - Add C99 conformance notes
+- [CRT Library Features](../c-runtime-library/crt-library-features.md) - Add C99 conformance notes
 - [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) - Clarify assert behavior
-- [strtod, _strtod_l, wcstod, _wcstod_l](../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md) - github issue 2148
 - [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md) - Clarify return values of vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l
 - [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) - Add C Runtime UTF-8 support documentation
 
@@ -79,17 +71,16 @@ Welcome to what's new in the Microsoft C++ docs for Visual Studio version 16.8. 
 
 ### New articles
 
-- [C33001](../code-quality/c33001.md) - VC Code Analysis - adding help docs for new rules added in 16.8
-- [C33004](../code-quality/c33004.md) - VC Code Analysis - adding help docs for new rules added in 16.8
-- [C33005](../code-quality/c33005.md) - VC Code Analysis - adding help docs for new rules added in 16.8
-- [C33010](../code-quality/c33010.md) - VC Code Analysis - adding help docs for new rules added in 16.8
-- [C33011](../code-quality/c33011.md) - VC Code Analysis - adding help docs for new rules added in 16.8
-- [C33020](../code-quality/c33020.md) - VC Code Analysis - adding help docs for new rules added in 16.8
-- [C33022](../code-quality/c33022.md) - VC Code Analysis - adding help docs for new rules added in 16.8
+- [C33001](../code-quality/c33001.md) - VC Code Analysis - add for new rules added in 16.8
+- [C33004](../code-quality/c33004.md) - VC Code Analysis - add for new rules added in 16.8
+- [C33005](../code-quality/c33005.md) - VC Code Analysis - add for new rules added in 16.8
+- [C33010](../code-quality/c33010.md) - VC Code Analysis - add for new rules added in 16.8
+- [C33011](../code-quality/c33011.md) - VC Code Analysis - add for new rules added in 16.8
+- [C33020](../code-quality/c33020.md) - VC Code Analysis - add for new rules added in 16.8
+- [C33022](../code-quality/c33022.md) - VC Code Analysis - add for new rules added in 16.8
 
 ### Updated articles
 
-- [C26400 NO_RAW_POINTER_ASSIGNMENT](../code-quality/c26400.md) - Address cpp-docs 2550 fix example
 - [C6262](../code-quality/c6262.md) - Address cpp-docs.zh-tw issue 20
 - [C26497 USE_CONSTEXPR_FOR_FUNCTION](../code-quality/c26497.md) - Add example to C26497
 - [C26496 USE_CONST_FOR_VARIABLE](../code-quality/c26496.md) - Add example to C26496
@@ -128,10 +119,10 @@ Welcome to what's new in the Microsoft C++ docs for Visual Studio version 16.8. 
 
 ### Updated articles
 
-- [Create a Linux MSBuild C++ project in Visual Studio](../linux/create-a-new-linux-project.md) - first draft
-- [ConnectionManager reference](../linux/connectionmanager-reference.md) - Erika Sweet changes
-- [Configure a Linux CMake project in Visual Studio](../linux/cmake-linux-configure.md)  - various github issue fixes
-- [Deploy, run, and debug your Linux MSBuild project](../linux/deploy-run-and-debug-your-linux-project.md) - JTW
+- [Create a Linux MSBuild C++ project in Visual Studio](../linux/create-a-new-linux-project.md) - Update instructions to create a Linux project
+- [ConnectionManager reference](../linux/connectionmanager-reference.md) - Add commands for modify, clean
+- [Configure a Linux CMake project in Visual Studio](../linux/cmake-linux-configure.md)  - Update to reflect latest UI
+- [Deploy, run, and debug your Linux MSBuild project](../linux/deploy-run-and-debug-your-linux-project.md) - Add `GDB Path`
 
 ## Microsoft C/C++ compiler and tools errors and warnings
 
@@ -141,13 +132,11 @@ Welcome to what's new in the Microsoft C++ docs for Visual Studio version 16.8. 
 
 ### Updated articles
 
-- [Compiler Warning (level 3) C4018](../error-messages/compiler-warnings/compiler-warning-level-3-c4018.md) - cpp-docs 2444: Add warning C4388, update 16.7 warnings
-- [Compiler Warning (level 4) C4389](../error-messages/compiler-warnings/compiler-warning-level-4-c4389.md) - cpp-docs 2444: Add warning C4388, update 16.7 warnings
-- [Compiler Warnings by compiler version](../error-messages/compiler-warnings/compiler-warnings-by-compiler-version.md) - cpp-docs 2444: Add warning C4388, update 16.7 warnings
-- [Compiler warnings C4800 through C5999](../error-messages/compiler-warnings/compiler-warnings-c4800-through-c4999.md) - cpp-docs 2444: Add warning C4388, update 16.7 warnings
-- [Compiler Error C3381](../error-messages/compiler-errors-2/compiler-error-c3381.md) - Address cpp-docs 2493
-- [Compiler Error C2703](../error-messages/compiler-errors-2/compiler-error-c2703.md) - Fix __leave, __try keywords
-- [Compiler Warning (level 4) C4571](../error-messages/compiler-warnings/compiler-warning-level-4-c4571.md) - Fix __leave, __try keywords
+- [Compiler Warning (level 3) C4018](../error-messages/compiler-warnings/compiler-warning-level-3-c4018.md) - Update 16.7 warnings
+- [Compiler Warning (level 4) C4389](../error-messages/compiler-warnings/compiler-warning-level-4-c4389.md) - Update 16.7 warnings
+- [Compiler Warnings by compiler version](../error-messages/compiler-warnings/compiler-warnings-by-compiler-version.md) - Update 16.7 warnings
+- [Compiler warnings C4800 through C5999](../error-messages/compiler-warnings/compiler-warnings-c4800-through-c4999.md) - Update 16.7 warnings
+- [Compiler Error C3381](../error-messages/compiler-errors-2/compiler-error-c3381.md) - Address cpp-docs 2493; update remarks and example
 
 ## Microsoft C/C++ compiler intrinsics and assembly language
 
