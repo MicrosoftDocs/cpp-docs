@@ -1,13 +1,14 @@
 # Address Sanitizer - user interface
 
-We describe a new compiler flag that results in automatically exposing [errors](#errors) in your code. 
+We describe a new compiler flag -fsanitize=address which may result in exposing hidden [errors](#errors) in your code.
 
-Using this flag will reduce your time spent on:
+Using this flag can reduce your time spent on:
 
 - basic correctness
 - cross platform portability
 - security
 - stress testing
+- integrating new source code
 
 With just a **simple recompile**, you can expose many difficult to find, errors with **no false positives**. This class of errors is not found with [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) or [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). Building with -fsanitize=address and using your existing test assets is a highly recommended, step in properly testing your software.
 
