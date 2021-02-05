@@ -19,6 +19,31 @@ int main(int argc, char **argv) {
 
 ## Resulting error
 
+## Example - improper down cast
+```cpp
+class Parent {
+ public:
+  int field;
+};
+
+class Child : public Parent {
+ public:
+  int extra_field;
+};
+
+int main(void) {
+  Parent *p = new Parent;
+  Child *c = (Child*)p;  // Intentional error here!
+  c->extra_field = 42;
+
+  return 0;
+}
+```
+
+## Resulting error
+
+
+
 
 ## Example - strncpy overflow
 

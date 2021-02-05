@@ -18,6 +18,7 @@ int main(int argc, char **argv) {
 
 ## Resulting error
 
+![example1](\SRC_CODE\stack-buffer-overflow\example1.PNG)
 
 ## Example - Stack buffer math
 
@@ -43,3 +44,31 @@ int main(int argc, char **argv) {
 ```
 
 ## Resulting error
+![example2](\SRC_CODE\stack-buffer-overflow\example2.PNG)
+
+## Example - improper down cast on stack
+
+```cpp
+class Parent {
+ public:
+  int field;
+};
+
+class Child : public Parent {
+ public:
+  int extra_field;
+};
+
+int main(void) {
+
+  Parent *p = new Parent;
+  Child *c = (Child*)p;  // Boom!
+  c->extra_field = 42;
+
+  return 0;
+}
+```
+
+## Resulting error
+
+![example3](\SRC_CODE\stack-buffer-overflow\example3.PNG)

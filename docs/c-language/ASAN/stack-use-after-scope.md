@@ -19,6 +19,8 @@ int main() {
 ```
 ## Resulting error
 
+![example1-screenshot](SRC_CODE\stack-use-after-scope\example1.png) 
+
 ## Example 2 - lambda capture
 ```cpp
 #include <functional>
@@ -35,6 +37,8 @@ int main() {
 }
 ```
 ## Resutling Error
+
+![example1-screenshot](SRC_CODE\stack-use-after-scope\example2.png) 
 
 ## Example 3 - destructor
 
@@ -54,7 +58,7 @@ void uas_in_destructor() {
 
               // The destructor for "s" called here
 
-    std:cout <<  "The lifetime of v ends before the destructor of local s is called by compiler";
+    std::cout <<  "The lifetime of v ends before the destructor of local s is called by compiler";
 }
 
 void main() {
@@ -94,3 +98,5 @@ void main() {
 }
 ```
 ## Resulting error
+
+![example1-screenshot](SRC_CODE\stack-use-after-scope\example2.png) 

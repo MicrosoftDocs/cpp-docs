@@ -62,6 +62,7 @@ int main(int argc, char **argv) {
 
 
 ## Example - all global scopes in C++
+
 ```cpp
 // Run 4 different ways with the choice of one of these flags:
 //
@@ -85,17 +86,17 @@ int C::array[10];
 int main(int argc, char **argv) {
   int one = argc - 1;
   switch (argv[1][0]) {
-  case 'g': return global[one * 11];     //Boom!
-  case 'c': return C::array[one * 11];   //Boom!
+  case 'g': return global[one * 11];     //Boom! simple global
+  case 'c': return C::array[one * 11];   //Boom! class static
   case 'f':
     static int array[10];
     memset(array, 0, 10);
-    return array[one * 11];              //Boom!
+    return array[one * 11];              //Boom! function static
   case 'l':
     // literal global ptr created by compiler
 
     const char *str = "0123456789";
-    return str[one * 11];                //Boom!
+    return str[one * 11];                //Boom! .rdata string literal allocated by compiler
   }
   return 0;
 }
