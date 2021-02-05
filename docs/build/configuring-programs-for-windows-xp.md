@@ -78,4 +78,4 @@ Because of differences in platform and library support, the development experien
 
 - **Building HLSL**
 
-   The Windows XP toolset doesn't compile HLSL source code files by default. To compile HLSL files, download and install the June 2010 DirectX SDK, and then set the project's VC directories to include it. For more information, see the "DirectX SDK Does Not Register Include/Library Paths with Visual Studio 2010" section of the [June 2010 DirectX SDK download page](https://download.cnet.com/DirectX-Software-Development-Kit-June-2010/3000-2069_4-75453831.html).
+   The Windows XP toolset doesn't compile HLSL source code files by default. To compile HLSL files, download and install the June 2010 DirectX SDK, and then set the project's VC directories to include it. For more information, see the "DirectX SDK Does Not Register Include/Library Paths with Visual Studio 2010" section of the [June 2010 DirectX SDK download page](https://web.archive.org/web/20161026183606/https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=6812) (Archived link).

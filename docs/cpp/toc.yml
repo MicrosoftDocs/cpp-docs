@@ -755,40 +755,32 @@
               items: 
                 - name: _bstr_t class
                   href: ../cpp/bstr-t-class.md
-                - name: _bstr_t member functions
-                  items: 
-                    - name: _bstr_t member functions
-                      href: ../cpp/bstr-t-member-functions.md
-                    - name: "_bstr_t::Assign"
-                      href: ../cpp/bstr-t-assign.md
-                    - name: "_bstr_t::Attach"
-                      href: ../cpp/bstr-t-attach.md
-                    - name: "_bstr_t::_bstr_t"
-                      href: ../cpp/bstr-t-bstr-t.md
-                    - name: "_bstr_t::copy"
-                      href: ../cpp/bstr-t-copy.md
-                    - name: "_bstr_t::Detach"
-                      href: ../cpp/bstr-t-detach.md
-                    - name: "_bstr_t::GetAddress"
-                      href: ../cpp/bstr-t-getaddress.md
-                    - name: "_bstr_t::GetBSTR"
-                      href: ../cpp/bstr-t-getbstr.md
-                    - name: "_bstr_t::length"
-                      href: ../cpp/bstr-t-length.md
-                - name: _bstr_t operators
-                  items: 
-                    - name: _bstr_t operators
-                      href: ../cpp/bstr-t-operators.md
-                    - name: "_bstr_t::operator ="
-                      href: ../cpp/bstr-t-operator-equal.md
-                    - name: "_bstr_t::operator +=, +"
-                      href: ../cpp/bstr-t-operator-add-equal-plus.md
-                    - name: "_bstr_t::operator !"
-                      href: ../cpp/bstr-t-operator-logical-not.md
-                    - name: _bstr_t relational operators
-                      href: ../cpp/bstr-t-relational-operators.md
-                    - name: "_bstr_t::wchar_t*, _bstr_t::char*"
-                      href: ../cpp/bstr-t-wchar-t-star-bstr-t-char-star.md
+                - name: "_bstr_t::_bstr_t"
+                  href: ../cpp/bstr-t-bstr-t.md
+                - name: "_bstr_t::Assign"
+                  href: ../cpp/bstr-t-assign.md
+                - name: "_bstr_t::Attach"
+                  href: ../cpp/bstr-t-attach.md
+                - name: "_bstr_t::copy"
+                  href: ../cpp/bstr-t-copy.md
+                - name: "_bstr_t::Detach"
+                  href: ../cpp/bstr-t-detach.md
+                - name: "_bstr_t::GetAddress"
+                  href: ../cpp/bstr-t-getaddress.md
+                - name: "_bstr_t::GetBSTR"
+                  href: ../cpp/bstr-t-getbstr.md
+                - name: "_bstr_t::length"
+                  href: ../cpp/bstr-t-length.md
+                - name: "_bstr_t::operator ="
+                  href: ../cpp/bstr-t-operator-equal.md
+                - name: "_bstr_t::operator +=, +"
+                  href: ../cpp/bstr-t-operator-add-equal-plus.md
+                - name: "_bstr_t::operator !"
+                  href: ../cpp/bstr-t-operator-logical-not.md
+                - name: _bstr_t relational operators
+                  href: ../cpp/bstr-t-relational-operators.md
+                - name: "_bstr_t::wchar_t*, _bstr_t::char*"
+                  href: ../cpp/bstr-t-wchar-t-star-bstr-t-char-star.md
             - name: _com_error class
               items: 
                 - name: _com_error class

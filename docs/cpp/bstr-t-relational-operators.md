@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: _bstr_t Relational Operators"
-title: "_bstr_t Relational Operators"
-ms.date: "05/07/2019"
-f1_keywords: ["_bstr_t::operator>", "_bstr_t::operator==", "_bstr_t::operator>=", "_bstr_t::operator!=", "_bstr_t::operator<", "_bstr_t::operator<=", "_bstr_t::operator!"]
-helpviewer_keywords: ["_bstr_t [C++]"]
-ms.assetid: e153da72-37c3-4d8a-b8eb-730d65da64dd
+description: "Learn more about: _bstr_t relational operators"
+title: "_bstr_t relational operators"
+ms.date: 02/02/2021
+f1_keywords: ["_bstr_t::operator>", "_bstr_t::operator==", "_bstr_t::operator>=", "_bstr_t::operator!=", "_bstr_t::operator<", "_bstr_t::operator<="]
+helpviewer_keywords: ["_bstr_t relational operators[C++]"]
 ---
-# _bstr_t Relational Operators
+# `_bstr_t` relational operators
 
 **Microsoft Specific**
 
@@ -14,8 +13,7 @@ Compares two `_bstr_t` objects.
 
 ## Syntax
 
-```
-bool operator!( ) const throw( );
+```cpp
 bool operator==(const _bstr_t& str) const throw( );
 bool operator!=(const _bstr_t& str) const throw( );
 bool operator<(const _bstr_t& str) const throw( );
@@ -32,4 +30,4 @@ These operators compare two `_bstr_t` objects lexicographically. The operators r
 
 ## See also
 
-[_bstr_t Class](../cpp/bstr-t-class.md)
+[`_bstr_t` class](../cpp/bstr-t-class.md)

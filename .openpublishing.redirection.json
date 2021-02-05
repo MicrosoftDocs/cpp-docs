@@ -461,6 +461,81 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/build/reference/specifying-dlls-to-delay-load.md",
+      "redirect_url": "/cpp/build/reference/linker-support-for-delay-loaded-dlls#specify-dlls-to-delay-load",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/explicitly-unloading-a-delay-loaded-dll.md",
+      "redirect_url": "/cpp/build/reference/linker-support-for-delay-loaded-dlls#explicitly-unload-a-delay-loaded-dll",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/binding-imports.md",
+      "redirect_url": "/cpp/build/reference/linker-support-for-delay-loaded-dlls#binding-imports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/loading-all-imports-for-a-delay-loaded-dll.md",
+      "redirect_url": "/cpp/build/reference/linker-support-for-delay-loaded-dlls#load-all-imports-for-a-delay-loaded-dll",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/dumping-delay-loaded-imports.md",
+      "redirect_url": "/cpp/build/reference/linker-support-for-delay-loaded-dlls#dump-delay-loaded-imports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/constraints-of-delay-loading-dlls.md",
+      "redirect_url": "/cpp/build/reference/linker-support-for-delay-loaded-dlls#constraints-on-delay-load-dlls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/notification-hooks.md",
+      "redirect_url": "/cpp/build/reference/error-handling-and-notification#notification-hooks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/failure-hooks.md",
+      "redirect_url": "/cpp/build/reference/error-handling-and-notification#failure-hooks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/exceptions-c-cpp.md",
+      "redirect_url": "/cpp/build/reference/error-handling-and-notification#delay-load-exception-codes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md",
+      "redirect_url": "/cpp/build/reference/understanding-the-helper-function",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/calling-conventions-parameters-and-return-type.md",
+      "redirect_url": "/cpp/build/reference/understanding-the-helper-function#calling-conventions-parameters-and-return-type",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/structure-and-constant-definitions.md",
+      "redirect_url": "/cpp/build/reference/understanding-the-helper-function#structure-and-constant-definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/calculating-necessary-values.md",
+      "redirect_url": "/cpp/build/reference/understanding-the-helper-function#calculate-necessary-values",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/unloading-a-delay-loaded-dll.md",
+      "redirect_url": "/cpp/build/reference/understanding-the-helper-function#unload-a-delay-loaded-dll",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/developing-your-own-helper-function.md",
+      "redirect_url": "/cpp/build/reference/understanding-the-helper-function#develop-your-own-helper-function",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build/macro-substitution.md",
       "redirect_url": "/cpp/build/reference/macro-substitution",
       "redirect_document_id": false
@@ -788,6 +863,16 @@
     {
       "source_path": "docs/cpp/attributes2.md",
       "redirect_url": "/cpp/cpp/attributes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/bstr-t-member-functions.md",
+      "redirect_url": "/cpp/cpp/bstr-t-class",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/bstr-t-operators.md",
+      "redirect_url": "/cpp/cpp/bstr-t-class",
       "redirect_document_id": false
     },
     {
