@@ -1,4 +1,4 @@
-# Address Sanitizer - user interface
+# Address Sanitizer
 
 We describe a new compiler flag -fsanitize=address which may result in exposing hidden [errors](#errors) in your code.
 
