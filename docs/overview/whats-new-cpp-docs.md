@@ -49,7 +49,7 @@ This article lists some of the major changes to docs for the current release.
 
 ### Updated articles
 
-- [Predefined macros](../preprocessor/predefined-macros.md) - Update to 16.8 release notes, C11/C17 /std support and SDK install docs
+- [Predefined macros](../preprocessor/predefined-macros.md) - Update to 16.8 release notes, C11/C17 `/std` support and SDK install docs
 - [MSVC new preprocessor overview](../preprocessor/preprocessor-experimental-overview.md) - Update preprocessor content
 
 ## Code quality
@@ -139,7 +139,7 @@ This article lists some of the major changes to docs for the current release.
 - [Address-of Operator: &amp;](../cpp/address-of-operator-amp.md) - Fix issues identified in PR 3173
 - [if-else statement (C++)](../cpp/if-else-statement-cpp.md) - Fix issues identified in PR 3173
 - [Primary Expressions](../cpp/primary-expressions.md) - Fix issues identified in PR 3173
-- [`union`](../cpp/unions.md) - Fix for cpp-docs issue 2390 stray char in sample
+- [`union`](../cpp/unions.md) - Fixed code snippet
 
 ## Microsoft C++ in Visual Studio projects and build systems
 
@@ -151,7 +151,7 @@ This article lists some of the major changes to docs for the current release.
 - [`/module:reference` (Use named module IFC)](../build/reference/module-reference.md)
 - [`/translateInclude` (Translate include directives into import directives)](../build/reference/translateinclude.md)
 - [`/Zc:preprocessor` (Enable preprocessor conformance mode)](../build/reference/zc-preprocessor.md)
-- 
+
 ### Updated articles
 
 - [`/permissive-` (Standards conformance)](../build/reference/permissive-standards-conformance.md) - Update to 16.8 release notes
@@ -180,15 +180,15 @@ This article lists some of the major changes to docs for the current release.
 - [`basic_string` Class](../standard-library/basic-string-class.md) - added `startswith()`, `endswith()`
 - [`ios_base Class`](../standard-library/ios-base-class.md)
 - [`map` class](../standard-library/map-class.md)
-- [`multimap` Class](../standard-library/multimap-class.md) - add contains()
-- [`multiset` Class](../standard-library/multiset-class.md)  - add contains()
-- [`set` Class](../standard-library/set-class.md) - add contains()
-- [`unordered_map` Class](../standard-library/unordered-map-class.md)  - add contains()
-- [`unordered_multimap` Class](../standard-library/unordered-multimap-class.md)  - add contains()
-- [`unordered_multiset` Class](../standard-library/unordered-multiset-class.md)  - add contains()
-- [`unordered_set` Class](../standard-library/unordered-set-class.md)  - add contains()
+- [`multimap` Class](../standard-library/multimap-class.md) - add `contains()`
+- [`multiset` Class](../standard-library/multiset-class.md)  - add `contains()`
+- [`set` Class](../standard-library/set-class.md) - add `contains()`
+- [`unordered_map` Class](../standard-library/unordered-map-class.md)  - add `contains()`
+- [`unordered_multimap` Class](../standard-library/unordered-multimap-class.md)  - add `contains()`
+- [`unordered_multiset` Class](../standard-library/unordered-multiset-class.md)  - add `contains()`
+- [`unordered_set` Class](../standard-library/unordered-set-class.md)  - add `contains()`
 - [`basic_string_view` Class](../standard-library/basic-string-view-class.md) - added `startswith()`, `endswith()`
-- [`<bit>` functions](../standard-library/bit-functions.md) - update nodiscard syntax
+- [`<bit>` functions](../standard-library/bit-functions.md) - update `nodiscard` syntax
 
 ## Community contributors
 
