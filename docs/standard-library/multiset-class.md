@@ -63,54 +63,54 @@ In C++14, you can enable heterogeneous lookup by specifying the `std::less<>` or
 
 ### Typedefs
 
-|Type name|Description|
-|-|-|
-|[`allocator_type`](#allocator_type)|A typedef for the `allocator` class for the `multiset` object.|
-|[`const_iterator`](#const_iterator)|A typedef for a bidirectional iterator that can read a **`const`** element in the `multiset`.|
-|[`const_pointer`](#const_pointer)|A typedef for a pointer to a **`const`** element in a `multiset`.|
-|[`const_reference`](#const_reference)|A typedef for a reference to a **`const`** element stored in a `multiset` for reading and doing **`const`** operations.|
-|[`const_reverse_iterator`](#const_reverse_iterator)|A typedef for a bidirectional iterator that can read any **`const`** element in the `multiset`.|
-|[`difference_type`](#difference_type)|A signed integer typedef for the number of elements of a `multiset` in a range between elements pointed to by iterators.|
-|[`iterator`](#iterator)|A typedef for a bidirectional iterator that can read or modify any element in a `multiset`.|
-|[`key_compare`](#key_compare)|A typedef for a function object that can compare two keys to determine the relative order of two elements in the `multiset`.|
-|[`key_type`](#key_type)|A typedef for a function object that can compare two sort keys to determine the relative order of two elements in the `multiset`.|
-|[`pointer`](#pointer)|A typedef for a pointer to an element in a `multiset`.|
-|[`reference`](#reference)|A typedef for a reference to an element stored in a `multiset`.|
-|[`reverse_iterator`](#reverse_iterator)|A typedef for a bidirectional iterator that can read or modify an element in a reversed `multiset`.|
-|[`size_type`](#size_type)|An unsigned integer type that can represent the number of elements in a `multiset`.|
-|[`value_compare`](#value_compare)|The typedef for a function object that can compare two elements as sort keys to determine their relative order in the `multiset`.|
-|[`value_type`](#value_type)|A typedef that describes an object stored as an element as a `multiset` in its capacity as a value.|
+| Type name | Description |
+|--|--|
+| [`allocator_type`](#allocator_type) | A typedef for the `allocator` class for the `multiset` object. |
+| [`const_iterator`](#const_iterator) | A typedef for a bidirectional iterator that can read a **`const`** element in the `multiset`. |
+| [`const_pointer`](#const_pointer) | A typedef for a pointer to a **`const`** element in a `multiset`. |
+| [`const_reference`](#const_reference) | A typedef for a reference to a **`const`** element stored in a `multiset` for reading and doing **`const`** operations. |
+| [`const_reverse_iterator`](#const_reverse_iterator) | A typedef for a bidirectional iterator that can read any **`const`** element in the `multiset`. |
+| [`difference_type`](#difference_type) | A signed integer typedef for the number of elements of a `multiset` in a range between elements pointed to by iterators. |
+| [`iterator`](#iterator) | A typedef for a bidirectional iterator that can read or modify any element in a `multiset`. |
+| [`key_compare`](#key_compare) | A typedef for a function object that can compare two keys to determine the relative order of two elements in the `multiset`. |
+| [`key_type`](#key_type) | A typedef for a function object that can compare two sort keys to determine the relative order of two elements in the `multiset`. |
+| [`pointer`](#pointer) | A typedef for a pointer to an element in a `multiset`. |
+| [`reference`](#reference) | A typedef for a reference to an element stored in a `multiset`. |
+| [`reverse_iterator`](#reverse_iterator) | A typedef for a bidirectional iterator that can read or modify an element in a reversed `multiset`. |
+| [`size_type`](#size_type) | An unsigned integer type that can represent the number of elements in a `multiset`. |
+| [`value_compare`](#value_compare) | The typedef for a function object that can compare two elements as sort keys to determine their relative order in the `multiset`. |
+| [`value_type`](#value_type) | A typedef that describes an object stored as an element as a `multiset` in its capacity as a value. |
 
 ### Member functions
 
-|Member function|Description|
-|-|-|
-|[`begin`](#begin)|Returns an iterator that points to the first element in the `multiset`.|
-|[`cbegin`](#cbegin)|Returns a const iterator that addresses the first element in the `multiset`.|
-|[`cend`](#cend)|Returns a const iterator that addresses the location succeeding the last element in a `multiset`.|
-|[`clear`](#clear)|Erases all the elements of a `multiset`.|
-|[`contains`](#contains)<sup>C++20</sup>|Check if there's an element with the specified key in the `multiset`.|
-|[`count`](#count)|Returns the number of elements in a `multiset` whose key matches the key specified as a parameter.|
-|[`crbegin`](#crbegin)|Returns a const iterator addressing the first element in a reversed `multiset`.|
-|[`crend`](#crend)|Returns a const iterator that addresses the location succeeding the last element in a reversed `multiset`.|
-|[`emplace`](#emplace)|Inserts an element constructed in place into a `multiset`.|
-|[`emplace_hint`](#emplace_hint)|Inserts an element constructed in place into a `multiset`, with a placement hint.|
-|[`empty`](#empty)|Tests if a `multiset` is empty.|
-|[`end`](#end)|Returns an iterator that points to the location after the last element in a `multiset`.|
-|[`equal_range`](#equal_range)|Returns a pair of iterators. The first iterator in the pair points to the first element in a `multiset` with a key that is greater than a specified key. The second iterator in the pair points to first element in the `multiset` with a key that is equal to or greater than the key.|
-|[`erase`](#erase)|Removes an element or a range of elements in a `multiset` from specified positions or removes elements that match a specified key.|
-|[`find`](#find)|Returns an iterator that points to the first location of an element in a `multiset` that has a key equal to a specified key.|
-|[`get_allocator`](#get_allocator)|Returns a copy of the `allocator` object that is used to construct the `multiset`.|
-|[`insert`](#insert)|Inserts an element or a range of elements into a `multiset`.|
-|[`key_comp`](#key_comp)|Provides a function object that can compare two sort keys to determine the relative order of two elements in the `multiset`.|
-|[`lower_bound`](#lower_bound)|Returns an iterator to the first element in a `multiset` with a key that is equal to or greater than a specified key.|
-|[`max_size`](#max_size)|Returns the maximum length of the `multiset`.|
-|[`rbegin`](#rbegin)|Returns an iterator that points to the first element in a reversed `multiset`.|
-|[`rend`](#rend)|Returns an iterator that points to the location succeeding the last element in a reversed `multiset`.|
-|[`size`](#size)|Returns the number of elements in a `multiset`.|
-|[`swap`](#swap)|Exchanges the elements of two `multiset`s.|
-|[`upper_bound`](#upper_bound)|Returns an iterator to the first element in a `multiset` with a key that is greater than a specified key.|
-|[`value_comp`](#value_comp)|Retrieves a copy of the comparison object that is used to order element values in a `multiset`.|
+| Member function | Description |
+|--|--|
+| [`begin`](#begin) | Returns an iterator that points to the first element in the `multiset`. |
+| [`cbegin`](#cbegin) | Returns a const iterator that addresses the first element in the `multiset`. |
+| [`cend`](#cend) | Returns a const iterator that addresses the location succeeding the last element in a `multiset`. |
+| [`clear`](#clear) | Erases all the elements of a `multiset`. |
+| [`contains`](#contains)<sup>C++20</sup> | Check if there's an element with the specified key in the `multiset`. |
+| [`count`](#count) | Returns the number of elements in a `multiset` whose key matches the key specified as a parameter. |
+| [`crbegin`](#crbegin) | Returns a const iterator addressing the first element in a reversed `multiset`. |
+| [`crend`](#crend) | Returns a const iterator that addresses the location succeeding the last element in a reversed `multiset`. |
+| [`emplace`](#emplace) | Inserts an element constructed in place into a `multiset`. |
+| [`emplace_hint`](#emplace_hint) | Inserts an element constructed in place into a `multiset`, with a placement hint. |
+| [`empty`](#empty) | Tests if a `multiset` is empty. |
+| [`end`](#end) | Returns an iterator that points to the location after the last element in a `multiset`. |
+| [`equal_range`](#equal_range) | Returns a pair of iterators. The first iterator in the pair points to the first element in a `multiset` with a key that is greater than a specified key. The second iterator in the pair points to first element in the `multiset` with a key that is equal to or greater than the key. |
+| [`erase`](#erase) | Removes an element or a range of elements in a `multiset` from specified positions or removes elements that match a specified key. |
+| [`find`](#find) | Returns an iterator that points to the first location of an element in a `multiset` that has a key equal to a specified key. |
+| [`get_allocator`](#get_allocator) | Returns a copy of the `allocator` object that is used to construct the `multiset`. |
+| [`insert`](#insert) | Inserts an element or a range of elements into a `multiset`. |
+| [`key_comp`](#key_comp) | Provides a function object that can compare two sort keys to determine the relative order of two elements in the `multiset`. |
+| [`lower_bound`](#lower_bound) | Returns an iterator to the first element in a `multiset` with a key that is equal to or greater than a specified key. |
+| [`max_size`](#max_size) | Returns the maximum length of the `multiset`. |
+| [`rbegin`](#rbegin) | Returns an iterator that points to the first element in a reversed `multiset`. |
+| [`rend`](#rend) | Returns an iterator that points to the location succeeding the last element in a reversed `multiset`. |
+| [`size`](#size) | Returns the number of elements in a `multiset`. |
+| [`swap`](#swap) | Exchanges the elements of two `multiset`s. |
+| [`upper_bound`](#upper_bound) | Returns an iterator to the first element in a `multiset` with a key that is greater than a specified key. |
+| [`value_comp`](#value_comp) | Retrieves a copy of the comparison object that is used to order element values in a `multiset`. |
 
 ### Operators
 

@@ -1,6 +1,6 @@
 ---
 title: "What's new for the C++ docs"
-description: "The new docs and doc updates for the Microsoft C/C++ compiler, ATL/MFC, C runtime, and standard template library docs."
+description: "The new docs and doc updates for the Microsoft C/C++ compiler, ATL/MFC, C runtime, and standard library docs."
 ms.date: "02/05/2021"
 ---
 # Microsoft C++ docs: What's new for Visual Studio 16.8
@@ -161,7 +161,7 @@ This article lists some of the major changes to docs for Visual Studio 16.8.
 
 - [How to: Use existing C++ code in a Universal Windows Platform app](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md) - Reworked for clarity and updated examples
 
-## Microsoft C++ Standard Template Library (STL) reference
+## Microsoft C++ Standard Library (STL) reference
 
 ### New articles
 
