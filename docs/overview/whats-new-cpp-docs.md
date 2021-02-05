@@ -23,10 +23,8 @@ This article lists some of the major changes to docs for the current release.
 - [C Lexical grammar](../c-language/lexical-grammar.md) - Lexical grammar update for C17
 - [Summary of Declarations](../c-language/summary-of-declarations.md) - Lexical grammar update for C17
 - [Summary of Expressions](../c-language/summary-of-expressions.md) - Lexical grammar update for C17
-- [C enumeration declarations](../c-language/c-enumeration-declarations.md) - Fix issues identified in PR 3173
+- [C enumeration declarations](../c-language/c-enumeration-declarations.md) - Fixed lexical grammar
 - [Summary of C statements](../c-language/summary-of-statements.md) - Update for `__leave`, `__try` keywords
-- [try-except statement (C)](../c-language/try-except-statement-c.md) - Update for `__leave`, `__try` keywords
-- [try-finally statement (C)](../c-language/try-finally-statement-c.md) - Update for `__leave`, `__try` keywords
 
 ## C runtime library
 
