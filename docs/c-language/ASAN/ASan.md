@@ -1,14 +1,19 @@
 # Address Sanitizer - user interface
 
-We describe a new compiler based technology that automatically finds errors in your code.
+We describe a new compiler flag that results in automatically exposing [errors](#errors) in your code. 
 
-With just a **simple recompile**, you can expose many difficult to find, errors in your C++ or C source code. There are no false positives. This class of errors is not found with [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) or [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). Building with -fsanitize=address and using your existing test assets is a highly recommended, additional step in **properly testing your software**.
+Using this flag will reduce your time spent on:
 
-## Introduction - Developer Message
+- basic correctness
+- cross platform portability
+- security
+- stress testing
 
- The Address Sanitizer is a compiler based technology [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). This compiler and runtime technology has become the "defacto" industry standard for finding memory safety issues. We now offer this technology as a fully supported feature in Visual Studio. This has shipped to accommodate our customers with a simple re-compile strategy. Testing the binaries you have produced, using this simple re-compile, can dramatically increase correctness, portability and security. If your existing code compiles with our current Windows compiler, then it will compile with the extra flag -fsanitize=address under any level of optimization and all other compatible flags (e.g., /RTC is not compatible, yet).
+With just a **simple recompile**, you can expose many difficult to find, errors with **no false positives**. This class of errors is not found with [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) or [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). Building with -fsanitize=address and using your existing test assets is a highly recommended, step in properly testing your software.
 
-This technology produces zero false positives.
+## Developer Message
+
+ The Address Sanitizer is a compiler based technology [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). This compiler and runtime technology has become the "defacto" industry standard for finding memory safety issues. We now offer this technology as a fully supported feature in Visual Studio. If your existing code compiles with our current Windows compiler, then it will compile with the extra flag -fsanitize=address under any level of optimization and all other compatible flags (e.g., /RTC is not compatible, yet).
 
 Microsoft recommends using the Address Sanitizer in these **three standard workflows**:
 
@@ -37,57 +42,28 @@ Extensive documentation already exists for these language and platform dependent
 - [Apple](https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early)
 - [GCC](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
 
-
 This article will cover all the information needed to enable your implementation for any of the three workflows listed above. The information will be specific to the Microsoft Windows 10 platform and supplement what's already been produced at Google, Apple and GCC web sites. We start with a simple command line use of the compiler and linker.
 
-> [!NOTE] Current support is limited to x86 and AMD64 on Windows10. There's also no support for -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined. **Customer feedback** would help prioritize shipping these additional sanitizers.
+> [!NOTE] Current support is limited to x86 and AMD64 on Windows10. **Customer feedback** would help us prioritize shipping these sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
 
 ## Command line
 
-Adding the flag -fsanitize=address to your command line (with /Zi to emit debug info.) is all you need to compile,link and run instrumented code in a .EXE.
+Adding the flag -fsanitize=address to your command line (with /Zi to emit debug info.) is all you need to compile,link and run instrumented code in an .EXE or DLL.
 
             C:\> cl -fsanitize=address /Zi file.cpp file2.cpp my3dparty.lib /Fe My.exe
 
-The flag -fsanitize=address is compatible with all existing C or C++ optimization flags (e.g., /Od, /O1, /O2, /O2 /GL and PGO)
-
-**-fsanitize=address**
-
-Enable the injection of instrumentation code that inter-ops with the Asan runtime binaries that are automatically linked to the binary you are producing. This is a fast memory safety detector that just requires a recompile. Loads, stores, scopes, alloca, and CRT functions are hooked to detect hidden bugs like out-of-bounds, use-after-free, use-after-scope etc.. See [Error reporting](#error-reporting) for a complete list of errors currently detected at runtime.
-
-Unlike Clang/LLVM this option enables -fsanitize-address-use-after-scope by default and it can not be turned off at the command line or through the [Runtimes](#runtimes) ASAN_OPTIONS environment variable. The functionality for use-after-return requires code generation under an additional flag and environment variable.
-
-By default (legacy reasons) the CL driver infers the linker flag [/MT](https://docs.microsoft.com/en-us/cpp/build/reference/md-mt-ld-use-run-time-library?view=msvc-160) and that will link **static versions** of both the Asan and CRT libraries. If you want to link to the **dynamic version** of the CRT then use the following:
-
-        cl -fsanitize=address /Zi /MD file.cpp file2.cpp my3dparty.lib /De My.exe
-
-See the [Linker](#linker) section for details on more complex build scenarios. 
-See the [Runtime](#runtime) section for an inventory of the Asan runtime libraries and functionlities.
-
-**-fsanitize-address-use-after-return**
-
-An extra flag to create a dual stack frame in the heap.  The dual stack frame in the heap will linger after the return from the function that created it. If an address of a local, allocated to a slot in the frame in the heap, then the code generation can later determine a stack-use-after-return error.
-
-         cl -fsanitize=address -fsanitize-address-use-after-return /Zi file.cpp file2.cpp my3dparty.lib /De My.exe
-
-This is an experimental, additional flag to chang code generation. This code is **much slower** than just using -fsanize=address. Stack frames are allocated in the heap and linger after function return. The runtime will garbage collect these after a certain time. By transferring the address of locals to the heap, we can detect stack-use-after-return.
-
-## Visual Studio
-
-### Project System
-
-These are the settings required to use F5 builds and the IDE for the developer inner loop.  
+The flag -fsanitize=address is compatible with all existing C or C++ optimization flags (e.g., /Od, /O1, /O2, /O2 /GL and PGO). 
 
 ## Errors ##
 
-There are many types of error
+There are three ways your code can report many types of [errors at runtime](#Error-types):
 
-There are three ways your code can produce error reports:
+- [Command line](#Comand-line)
+- [IDE](#IDE)
+- [Snapshot files](#Snapshot-file)
 
-- Command line
-- IDE
-- Snapshot files
 
-The following C++ source code is **safe by coincidence**. It will **not** fail at runtime. The Windows 10, 16.9 version of the C runtime, will pad the 13 bytes requested, facilitating stack alignment for subsequent stack allocations. The specific _alloca based result below, can be different on Android, Linux or MacOS.
+The following C++ source code is **safe by coincidence**. It will **not** fail at runtime. The Windows 10, 16.9 version of the C runtime, will pad the 13 bytes requested to facilitate alignment for subsequent calls to alloca. The following example could have different results on Android, Linux or MacOS.
 
 Example: memory safety error:
 
@@ -112,14 +88,14 @@ Example: memory safety error:
             cc[3] = 3;  //Boom! Only caught with -fsanitize=address
 ```
 
-Padding and alignment is platform dependent. It's a function of the CRT used on the Windows operating system and whether the target is x86, or amd64. Padding and alignment will also be different on Linux and Mac OS.
+Padding and alignment is platform dependent. It's a function of the CRT used on the Windows operating system and whether the target is x86, or amd64. Padding and alignment will also be different on Linux and macOS.
 
 ## Error Reporting
 
 Executables produced with -fsanitize=address can produce three (3) different types of error reports:
 
 - Command line
-- IDE
+- IDE display
 - Snapshot file
 
 For all the different types of errors, jump to the [catalogue](#Error-types) of error types below.
@@ -144,7 +120,7 @@ From top to bottom
 
 By simply recompiling with -fsanitze=address and invoking Visual Studio from the command line, the IDE will automatically map a pop up to the line and column where the error was caught.
 
-                devenv /debugexe MyApp.exe arg1 arg2 ... argn
+            devenv /debugexe MyApp.exe arg1 arg2 ... argn
 
 Consider the following error found in spec2k6\povray where the program allocates 24-bytes but only frees 8-bytes. The details for where the allocation and free took place are in the **output pane** of the Visual Studio screen shot
 
@@ -178,15 +154,45 @@ Here's a summary of the runtime errors that are captured when you run your binar
 - [use-after-poison](.\use-after-poison.md)
 - [alloc-dealloc-mismatch](.\alloc-dealloc-mismatch.md)
 
+## Visual Studio
+
+### Project System
+
+These are the settings required to use F5 builds and the IDE for the developer inner loop.  
+
 ## Compiler tool set
 
-This section describes the actions and binaries supporting a simple recompile with -fsanitize=address. 
+This section describes the actions and binaries supporting a simple recompile with -fsanitize=address.
+ 
 This covers:
 - cl.exe   - the driver as seen with cl -Bv
 - c2.dll   - the optimizing code generator
 - link.exe - the linker
 
 ### Compiler
+
+
+**-fsanitize=address**
+
+Enable the injection of instrumentation code that inter-ops with the Asan runtime binaries that are automatically linked to the binary you are producing. This is a fast memory safety detector that just requires a recompile. Loads, stores, scopes, alloca, and CRT functions are hooked to detect hidden bugs like out-of-bounds, use-after-free, use-after-scope etc.. See [Error reporting](#error-reporting) for a complete list of errors currently detected at runtime.
+
+Unlike Clang/LLVM this option enables -fsanitize-address-use-after-scope by default and it can not be turned off at the command line or through the [Runtimes](#runtimes) ASAN_OPTIONS environment variable. The functionality for use-after-return requires code generation under an additional flag and environment variable.
+
+By default (legacy reasons) the CL driver infers the linker flag [/MT](https://docs.microsoft.com/en-us/cpp/build/reference/md-mt-ld-use-run-time-library?view=msvc-160) and that will link **static versions** of both the Asan and CRT libraries. If you want to link to the **dynamic version** of the CRT then use the following:
+
+        cl -fsanitize=address /Zi /MD file.cpp file2.cpp my3dparty.lib /De My.exe
+
+See the [Linker](#linker) section for details on more complex build scenarios. 
+See the [Runtime](#runtime) section for an inventory of the Asan runtime libraries and functionlities.
+
+**-fsanitize-address-use-after-return**
+
+An extra flag to create a dual stack frame in the heap.  The dual stack frame in the heap will linger after the return from the function that created it. If an address of a local, allocated to a slot in the frame in the heap, then the code generation can later determine a stack-use-after-return error.
+
+         cl -fsanitize=address -fsanitize-address-use-after-return /Zi file.cpp file2.cpp my3dparty.lib /De My.exe
+
+This is an experimental, additional flag to change code generation. This code is **much slower** than just using -fsanize=address. Stack frames are allocated in the heap and linger after function return. The runtime will garbage collect these after a certain time. By transferring the address of locals to frames that persist in the heap, we can then detect use of any locals after the function returns.
+
 
 What does the [compiler](.\asan-compiler.md) emit overview and drill down
 
