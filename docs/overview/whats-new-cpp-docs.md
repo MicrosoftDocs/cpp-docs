@@ -34,16 +34,16 @@ This article lists some of the major changes to docs for the current release.
 
 ### Updated articles
 
-- [qsort](../c-runtime-library/reference/qsort.md) - Added note about stability
-- [_cwait](../c-runtime-library/reference/cwait.md) - Fixed code example
+- [`qsort`](../c-runtime-library/reference/qsort.md) - Added note about stability
+- [`_cwait`](../c-runtime-library/reference/cwait.md) - Fixed code example
 - [Function family overview](../c-runtime-library/function-family-overviews.md) - Added operator `new` and `delete`
-- [round, roundf, roundl](../c-runtime-library/reference/round-roundf-roundl.md) - Clarified rounding code example
+- [`round, roundf, roundl`](../c-runtime-library/reference/round-roundf-roundl.md) - Clarified rounding code example
 - [Compatibility](../c-runtime-library/compatibility.md) - Added C99 conformance notes
-- [realloc](../c-runtime-library/reference/realloc.md) - Added C99 conformance notes
+- [`realloc`](../c-runtime-library/reference/realloc.md) - Added C99 conformance notes
 - [CRT Library Features](../c-runtime-library/crt-library-features.md) - Added C99 conformance notes
-- [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) - Clarified assert behavior
-- [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md) - Clarified return values
-- [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) - Added C Runtime UTF-8 support info
+- [`assert Macro, _assert, _wassert`](../c-runtime-library/reference/assert-macro-assert-wassert.md) - Clarified assert behavior
+- [`vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l`](../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md) - Clarified return values
+- [`setlocale, _wsetlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md) - Added C Runtime UTF-8 support info
 
 ## C/C++ preprocessor reference
 
@@ -66,36 +66,35 @@ This article lists some of the major changes to docs for the current release.
 
 ### Updated articles
 
-- [C6262](../code-quality/c6262.md) - Address cpp-docs.zh-tw issue 20
-- [C26497 USE_CONSTEXPR_FOR_FUNCTION](../code-quality/c26497.md) - Add example to C26497
-- [C26496 USE_CONST_FOR_VARIABLE](../code-quality/c26496.md) - Add example to C26496
-- [C26495 MEMBER_UNINIT](../code-quality/c26495.md) - Update examples and links in C26495
-- [C26483 STATIC_INDEX_OUT_OF_RANGE](../code-quality/c26483.md) - Add example to C26483
-- [C26462 USE_CONST_POINTER_FOR_VARIABLE](../code-quality/c26462.md) - Add description and example to C26462
-- [C26461 USE_CONST_POINTER_ARGUMENTS:](../code-quality/c26461.md) - Add description and example to C26461
-- [C26460 USE_CONST_REFERENCE_ARGUMENTS](../code-quality/c26460.md) - Add description and example to C26460
-- [C26440 DECLARE_NOEXCEPT](../code-quality/c26440.md) - Add example and link to Core Guidelines for C26440
-- [C26439 SPECIAL_NOEXCEPT](../code-quality/c26439.md) - Add example and link to Core Guidelines for C26439
-- [C26436 NEED_VIRTUAL_DTOR](../code-quality/c26436.md) - Add example and Core Guidelines link to C26436
-- [C26408 NO_MALLOC_FREE](../code-quality/c26408.md) - Add example and Core Guidelines link to C26408
-- [C26401 DONT_DELETE_NON_OWNER](../code-quality/c26401.md) - Add example and Core Guidelines link to C26401
-- [C26494 VAR_USE_BEFORE_INIT](../code-quality/c26494.md) - Add example to C26494
-- [C26493 NO_CSTYLE_CAST](../code-quality/c26493.md) - Add example to C26493
-- [C26492 NO_CONST_CAST](../code-quality/c26492.md) - Add example to C26492
-- [C26490 NO_REINTERPRET_CAST](../code-quality/c26490.md) - Add example to C26490
-- [C26482 NO_DYNAMIC_ARRAY_INDEXING](../code-quality/c26482.md) - Add example to C26482
-- [C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR](../code-quality/c26471.md) - Add Example to C26471
-- [C26466 NO_STATIC_DOWNCAST_POLYMORPHIC](../code-quality/c26466.md) - Add Example to C26466
-- [C26465 NO_CONST_CAST_UNNECESSARY](../code-quality/c26465.md) - Add example to C26465
-- [C26447 DONT_THROW_IN_NOEXCEPT](../code-quality/c26447.md) - Adding example to C26447
-- [C26446 USE_GSL_AT](../code-quality/c26446.md) - Add an example for C26446
-- [C26434 DONT_HIDE_METHODS](../code-quality/c26434.md) - Add example for C26434
-- [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](../code-quality/c26432.md) - Add example for C26432
-- [C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](../code-quality/c26402.md) - Add example for C26402
-- [C26409 NO_NEW_DELETE](../code-quality/c26409.md) - Add example for C26409
-- [C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL](../code-quality/c26498.md) - C26498 - Description & Examples
-- [C26474 NO_IMPLICIT_CAST](../code-quality/c26474.md) - Update C26474 to clarify base/derived use cases.
-
+- [`C6262`](../code-quality/c6262.md) - Address cpp-docs.zh-tw issue 20
+- [`C26497 USE_CONSTEXPR_FOR_FUNCTION`](../code-quality/c26497.md) - Add example to C26497
+- [`C26496 USE_CONST_FOR_VARIABLE`](../code-quality/c26496.md) - Add example to C26496
+- [`C26495 MEMBER_UNINIT`](../code-quality/c26495.md) - Update examples and links in C26495
+- [`C26483 STATIC_INDEX_OUT_OF_RANGE`](../code-quality/c26483.md) - Add example to C26483
+- [`C26462 USE_CONST_POINTER_FOR_VARIABLE`](../code-quality/c26462.md) - Add description and example to C26462
+- [`C26461 USE_CONST_POINTER_ARGUMENTS:`](../code-quality/c26461.md) - Add description and example to C26461
+- [`C26460 USE_CONST_REFERENCE_ARGUMENTS`](../code-quality/c26460.md) - Add description and example to C26460
+- [`C26440 DECLARE_NOEXCEPT`](../code-quality/c26440.md) - Add example and link to Core Guidelines for C26440
+- [`C26439 SPECIAL_NOEXCEPT`](../code-quality/c26439.md) - Add example and link to Core Guidelines for C26439
+- [`C26436 NEED_VIRTUAL_DTOR`](../code-quality/c26436.md) - Add example and Core Guidelines link to C26436
+- [`C26408 NO_MALLOC_FREE`](../code-quality/c26408.md) - Add example and Core Guidelines link to C26408
+- [`C26401 DONT_DELETE_NON_OWNER`](../code-quality/c26401.md) - Add example and Core Guidelines link to C26401
+- [`C26494 VAR_USE_BEFORE_INIT`](../code-quality/c26494.md) - Add example to C26494
+- [`C26493 NO_CSTYLE_CAST`](../code-quality/c26493.md) - Add example to C26493
+- [`C26492 NO_CONST_CAST`](../code-quality/c26492.md) - Add example to C26492
+- [`C26490 NO_REINTERPRET_CAST`](../code-quality/c26490.md) - Add example to C26490
+- [`C26482 NO_DYNAMIC_ARRAY_INDEXING`](../code-quality/c26482.md) - Add example to C26482
+- [`C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR`](../code-quality/c26471.md) - Add Example to C26471
+- [`C26466 NO_STATIC_DOWNCAST_POLYMORPHIC`](../code-quality/c26466.md) - Add Example to C26466
+- [`C26465 NO_CONST_CAST_UNNECESSARY`](../code-quality/c26465.md) - Add example to C26465
+- [`C26447 DONT_THROW_IN_NOEXCEPT`](../code-quality/c26447.md) - Adding example to C26447
+- [`C26446 USE_GSL_AT`](../code-quality/c26446.md) - Add an example for C26446
+- [`C26434 DONT_HIDE_METHODS`](../code-quality/c26434.md) - Add example for C26434
+- [`C26432 DEFINE_OR_DELETE_SPECIAL_OPS`](../code-quality/c26432.md) - Add example for C26432
+- [`C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT`](../code-quality/c26402.md) - Add example for C26402
+- [`C26409 NO_NEW_DELETE`](../code-quality/c26409.md) - Add example for C26409
+- [`C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL`](../code-quality/c26498.md) - C26498 - Description & Examples
+- [`C26474 NO_IMPLICIT_CAST`](../code-quality/c26474.md) - Update C26474 to clarify base/derived cases
 ## Linux with Microsoft C++ in Visual Studio
 
 ### New articles
@@ -155,11 +154,11 @@ This article lists some of the major changes to docs for the current release.
 - 
 ### Updated articles
 
-- [/permissive- (Standards conformance)](../build/reference/permissive-standards-conformance.md) - Update to 16.8 release notes
+- [`/permissive-` (Standards conformance)](../build/reference/permissive-standards-conformance.md) - Update to 16.8 release notes
 - [`/clr` (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) - add description for `/clr`
 - [pgosweep](../build/pgosweep.md) - Add more pgosweep options
 - [C/C++ projects and build systems in Visual Studio](../build/projects-and-build-systems-cpp.md)
-- [/sdl (Enable Additional Security Checks)](../build/reference/sdl-enable-additional-security-checks.md) - Fix issues identified in PR 3173
+- [`/sdl` (Enable Additional Security Checks)](../build/reference/sdl-enable-additional-security-checks.md) - Fix issues identified in PR 3173
 - [Importing data using `__declspec(dllimport)`](../build/importing-data-using-declspec-dllimport.md) - Updated example
 ## Microsoft C++ porting and upgrade guide
 
@@ -171,25 +170,25 @@ This article lists some of the major changes to docs for the current release.
 
 ### New articles
 
-- [<bit>](../standard-library/bit.md)
-- [<bit> functions](../standard-library/bit-functions.md)
-- [endian enum](../standard-library/bit-enum.md)
+- [`<bit>`](../standard-library/bit.md)
+- [`<bit>` functions](../standard-library/bit-functions.md)
+- [`endian` enum](../standard-library/bit-enum.md)
 
 ### Updated articles
 
 - [`<ios>` typedefs](../standard-library/ios-typedefs.md) - update example per GitHub #2514
 - [`basic_string` Class](../standard-library/basic-string-class.md) - added `startswith()`, `endswith()`
-- [ios_base Class](../standard-library/ios-base-class.md)
-- [map Class](../standard-library/map-class.md)
-- [multimap Class](../standard-library/multimap-class.md) - add contains()
-- [multiset Class](../standard-library/multiset-class.md)  - add contains()
-- [set Class](../standard-library/set-class.md) - add contains()
-- [unordered_map Class](../standard-library/unordered-map-class.md)  - add contains()
-- [unordered_multimap Class](../standard-library/unordered-multimap-class.md)  - add contains()
-- [unordered_multiset Class](../standard-library/unordered-multiset-class.md)  - add contains()
-- [unordered_set Class](../standard-library/unordered-set-class.md)  - add contains()
-- [basic_string_view Class](../standard-library/basic-string-view-class.md) - added `startswith()`, `endswith()`
-- [<bit> functions](../standard-library/bit-functions.md) - update nodiscard syntax
+- [`ios_base Class`](../standard-library/ios-base-class.md)
+- [`map` class](../standard-library/map-class.md)
+- [`multimap` Class](../standard-library/multimap-class.md) - add contains()
+- [`multiset` Class](../standard-library/multiset-class.md)  - add contains()
+- [`set` Class](../standard-library/set-class.md) - add contains()
+- [`unordered_map` Class](../standard-library/unordered-map-class.md)  - add contains()
+- [`unordered_multimap` Class](../standard-library/unordered-multimap-class.md)  - add contains()
+- [`unordered_multiset` Class](../standard-library/unordered-multiset-class.md)  - add contains()
+- [`unordered_set` Class](../standard-library/unordered-set-class.md)  - add contains()
+- [`basic_string_view` Class](../standard-library/basic-string-view-class.md) - added `startswith()`, `endswith()`
+- [`<bit>` functions](../standard-library/bit-functions.md) - update nodiscard syntax
 
 ## Community contributors
 
