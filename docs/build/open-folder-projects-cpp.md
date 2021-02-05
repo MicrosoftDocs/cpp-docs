@@ -78,7 +78,8 @@ If you add the MinGW-W64 configuration, the JSON looks this this:
 
 ```json
 {
-  {
+  "configurations": [
+    {
       "inheritEnvironments": [
         "mingw_64"
       ],
@@ -100,6 +101,7 @@ If you add the MinGW-W64 configuration, the JSON looks this this:
         }
       ]
     }
+  ]
 }
 ```
 
