@@ -7,13 +7,6 @@ ms.date: "02/05/2021"
 
 This article lists some of the major changes to docs for the current release.
 
-## Active Template Library (ATL), Microsoft Foundation Classes (MFC)
-
-### Updated articles
-
-- [Documents, views, and the framework](../mfc/documents-views-and-the-framework.md) - github issue fixes
-- [CObArray Class](../mfc/reference/cobarray-class.md) - github issue 2148
-
 ## C language
 
 ### New articles
@@ -27,13 +20,13 @@ This article lists some of the major changes to docs for the current release.
 - [Type Qualifiers](../c-language/type-qualifiers.md) - added `restrict`
 - [C Assignment Operators](../c-language/c-assignment-operators.md) - Lexical grammar update for C17
 - [C Keywords](../c-language/c-keywords.md) - Lexical grammar update for C17
-- [C lexical grammar](../c-language/lexical-grammar.md) - Lexical grammar update for C17
-- [Summary of Declarations](../c-language/summary-of-declarations.md) - Lexical Grammar update for C17
-- [Summary of Expressions](../c-language/summary-of-expressions.md) - Lexical Grammar update for C17
+- [C Lexical grammar](../c-language/lexical-grammar.md) - Lexical grammar update for C17
+- [Summary of Declarations](../c-language/summary-of-declarations.md) - Lexical grammar update for C17
+- [Summary of Expressions](../c-language/summary-of-expressions.md) - Lexical grammar update for C17
 - [C enumeration declarations](../c-language/c-enumeration-declarations.md) - Fix issues identified in PR 3173
-- [Summary of C statements](../c-language/summary-of-statements.md) - Fixes for __leave, __try keywords
-- [try-except statement (C)](../c-language/try-except-statement-c.md) - Fixes for __leave, __try keywords
-- [try-finally statement (C)](../c-language/try-finally-statement-c.md) - Fixes for __leave, __try keywords
+- [Summary of C statements](../c-language/summary-of-statements.md) - Update for `__leave`, `__try` keywords
+- [try-except statement (C)](../c-language/try-except-statement-c.md) - Update for `__leave`, `__try` keywords
+- [try-finally statement (C)](../c-language/try-finally-statement-c.md) - Update for `__leave`, `__try` keywords
 
 ## C runtime library
 
@@ -43,16 +36,16 @@ This article lists some of the major changes to docs for the current release.
 
 ### Updated articles
 
-- [qsort](../c-runtime-library/reference/qsort.md) - add note about stability
-- [_cwait](../c-runtime-library/reference/cwait.md) - fix code example
-- [Function family overview](../c-runtime-library/function-family-overviews.md) - add operator `new` and `delete`
-- [round, roundf, roundl](../c-runtime-library/reference/round-roundf-roundl.md) - clarify rounding code example
-- [Compatibility](../c-runtime-library/compatibility.md) - Add C99 conformance notes
-- [realloc](../c-runtime-library/reference/realloc.md) - Add C99 conformance notes
-- [CRT Library Features](../c-runtime-library/crt-library-features.md) - Add C99 conformance notes
-- [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) - Clarify assert behavior
-- [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md) - Clarify return values of vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l
-- [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) - Add C Runtime UTF-8 support documentation
+- [qsort](../c-runtime-library/reference/qsort.md) - Added note about stability
+- [_cwait](../c-runtime-library/reference/cwait.md) - Fixed code example
+- [Function family overview](../c-runtime-library/function-family-overviews.md) - Added operator `new` and `delete`
+- [round, roundf, roundl](../c-runtime-library/reference/round-roundf-roundl.md) - Clarified rounding code example
+- [Compatibility](../c-runtime-library/compatibility.md) - Added C99 conformance notes
+- [realloc](../c-runtime-library/reference/realloc.md) - Added C99 conformance notes
+- [CRT Library Features](../c-runtime-library/crt-library-features.md) - Added C99 conformance notes
+- [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) - Clarified assert behavior
+- [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md) - Clarified return values
+- [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) - Added C Runtime UTF-8 support info
 
 ## C/C++ preprocessor reference
 
@@ -61,23 +54,17 @@ This article lists some of the major changes to docs for the current release.
 - [Predefined macros](../preprocessor/predefined-macros.md) - Update to 16.8 release notes, C11/C17 /std support and SDK install docs
 - [MSVC new preprocessor overview](../preprocessor/preprocessor-experimental-overview.md) - Update preprocessor content
 
-## C++ /CX
-
-### Updated articles
-
-- [Partial classes (C++/CX)](../cppcx/partial-classes-c-cx.md) - Updated use of _DLL and UWP porting for 2411
-
 ## Code quality
 
 ### New articles
 
-- [C33001](../code-quality/c33001.md) - VC Code Analysis - add for new rules added in 16.8
-- [C33004](../code-quality/c33004.md) - VC Code Analysis - add for new rules added in 16.8
-- [C33005](../code-quality/c33005.md) - VC Code Analysis - add for new rules added in 16.8
-- [C33010](../code-quality/c33010.md) - VC Code Analysis - add for new rules added in 16.8
-- [C33011](../code-quality/c33011.md) - VC Code Analysis - add for new rules added in 16.8
-- [C33020](../code-quality/c33020.md) - VC Code Analysis - add for new rules added in 16.8
-- [C33022](../code-quality/c33022.md) - VC Code Analysis - add for new rules added in 16.8
+- [C33001](../code-quality/c33001.md) - VC Code Analysis - add for new rules in 16.8
+- [C33004](../code-quality/c33004.md) - VC Code Analysis - add for new rules in 16.8
+- [C33005](../code-quality/c33005.md) - VC Code Analysis - add for new rules in 16.8
+- [C33010](../code-quality/c33010.md) - VC Code Analysis - add for new rules in 16.8
+- [C33011](../code-quality/c33011.md) - VC Code Analysis - add for new rules in 16.8
+- [C33020](../code-quality/c33020.md) - VC Code Analysis - add for new rules in 16.8
+- [C33022](../code-quality/c33022.md) - VC Code Analysis - add for new rules in 16.8
 
 ### Updated articles
 
@@ -121,7 +108,7 @@ This article lists some of the major changes to docs for the current release.
 
 - [Create a Linux MSBuild C++ project in Visual Studio](../linux/create-a-new-linux-project.md) - Update instructions to create a Linux project
 - [ConnectionManager reference](../linux/connectionmanager-reference.md) - Add commands for modify, clean
-- [Configure a Linux CMake project in Visual Studio](../linux/cmake-linux-configure.md)  - Update to reflect latest UI
+- [Configure a Linux CMake project in Visual Studio](../linux/cmake-linux-configure.md) - Update to reflect latest UI
 - [Deploy, run, and debug your Linux MSBuild project](../linux/deploy-run-and-debug-your-linux-project.md) - Add `GDB Path`
 
 ## Microsoft C/C++ compiler and tools errors and warnings
@@ -155,11 +142,6 @@ This article lists some of the major changes to docs for the current release.
 - [Address-of Operator: &amp;](../cpp/address-of-operator-amp.md) - Fix issues identified in PR 3173
 - [if-else statement (C++)](../cpp/if-else-statement-cpp.md) - Fix issues identified in PR 3173
 - [Primary Expressions](../cpp/primary-expressions.md) - Fix issues identified in PR 3173
-- [Partial classes (C++/CX)](../cppcx/partial-classes-c-cx.md) - Updated use of _DLL and UWP porting for 2411
-- [Modern C++ best practices for exceptions and error handling](../cpp/errors-and-exception-handling-modern-cpp.md) - Fix __leave, __try keywords
-- [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md) - Fix __leave, __try keywords
-- [`try-except` statement](../cpp/try-except-statement.md) - Fix __leave, __try keywords
-- [`try-finally` statement](../cpp/try-finally-statement.md) - Fix __leave, __try keywords
 - [`union`](../cpp/unions.md) - Fix for cpp-docs issue 2390 stray char in sample
 
 ## Microsoft C++ in Visual Studio projects and build systems
@@ -176,26 +158,16 @@ This article lists some of the major changes to docs for the current release.
 ### Updated articles
 
 - [/permissive- (Standards conformance)](../build/reference/permissive-standards-conformance.md) - Update to 16.8 release notes
-- [`/clr` (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) - Address cpp-docs issue 2554, add /clr IDE desc
-- [pgosweep](../build/pgosweep.md) - Add additional pgosweep options
+- [`/clr` (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) - add description for `/clr`
+- [pgosweep](../build/pgosweep.md) - Add more pgosweep options
 - [C/C++ projects and build systems in Visual Studio](../build/projects-and-build-systems-cpp.md)
 - [/sdl (Enable Additional Security Checks)](../build/reference/sdl-enable-additional-security-checks.md) - Fix issues identified in PR 3173
-- [`.vcxproj` and `.props` file structure](../build/reference/vcxproj-file-structure.md) - Add vcxproj wildcards article
-- [Importing data using `__declspec(dllimport)`](../build/importing-data-using-declspec-dllimport.md) - Updated use of _DLL and UWP porting
-- [C/C++ Property Pages](../build/reference/c-cpp-prop-page.md) - Updated use of _DLL and UWP porting 
-- [`/EH` (Exception handling model)](../build/reference/eh-exception-handling-model.md) - Fix __leave, __try keywords
-
-## Microsoft C++ in Visual Studio tutorials
-
-### Updated articles
-
-- [Create a console calculator in C++](../get-started/tutorial-console-cpp.md) - fixed bad and duplicate alt-text.
-
+- [Importing data using `__declspec(dllimport)`](../build/importing-data-using-declspec-dllimport.md) - Updated example
 ## Microsoft C++ porting and upgrade guide
 
 ### Updated articles
 
-- [How to: Use existing C++ code in a Universal Windows Platform app](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md) - Updated use of _DLL and UWP porting
+- [How to: Use existing C++ code in a Universal Windows Platform app](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md) - Reworked for clarity and updated examples
 
 ## Microsoft C++ Standard Template Library (STL) reference
 
@@ -207,9 +179,8 @@ This article lists some of the major changes to docs for the current release.
 
 ### Updated articles
 
-- [`codecvt` Class](../standard-library/codecvt-class.md) - code escape, add note for github #9
-- [`<ios>` typedefs](../standard-library/ios-typedefs.md) - address github #2514
-- [`basic_string` Class](../standard-library/basic-string-class.md)
+- [`<ios>` typedefs](../standard-library/ios-typedefs.md) - update example per GitHub #2514
+- [`basic_string` Class](../standard-library/basic-string-class.md) - added `startswith()`, `endswith()`
 - [ios_base Class](../standard-library/ios-base-class.md)
 - [map Class](../standard-library/map-class.md)
 - [multimap Class](../standard-library/multimap-class.md) - add contains()
@@ -219,12 +190,12 @@ This article lists some of the major changes to docs for the current release.
 - [unordered_multimap Class](../standard-library/unordered-multimap-class.md)  - add contains()
 - [unordered_multiset Class](../standard-library/unordered-multiset-class.md)  - add contains()
 - [unordered_set Class](../standard-library/unordered-set-class.md)  - add contains()
-- [basic_string_view Class](../standard-library/basic-string-view-class.md) - add startswith(), endswith()
+- [basic_string_view Class](../standard-library/basic-string-view-class.md) - added `startswith()`, `endswith()`
 - [<bit> functions](../standard-library/bit-functions.md) - update nodiscard syntax
 
 ## Community contributors
 
-The following people contributed to the C++, C, and Assembler docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
+The following people contributed to the C++, C, and Assembler docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](..\index.yml).
 
 - [yecril71pl](https://github.com/yecril71pl) - Christopher Yeleighton (4)
 - [definedrisk](https://github.com/definedrisk) - Ben (3)
