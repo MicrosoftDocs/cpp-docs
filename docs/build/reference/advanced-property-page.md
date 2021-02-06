@@ -1,8 +1,8 @@
 ---
 description: "Learn more about: Advanced Property Page"
 title: "Advanced Property Page (Project)"
-ms.date: 08/10/2020
-f1_keywords: ["VC.Project.VCConfiguration.VCToolsVersion"]
+ms.date: 02/05/2021
+f1_keywords: ["VC.Project.VCConfiguration.VCToolsVersion","VC.Project.VCConfiguration.LLVMToolsVersion"]
 ms.description: "Use the Advanced property page in Visual Studio 2019 to set various properties for C++ projects."
 ---
 # Advanced Property Page
@@ -82,6 +82,10 @@ The Advanced property page is available in Visual Studio 2019 and later.
 - **MSVC Toolset Version**
 
    Specifies the full version of the MSVC toolset that's used to build the project. You may have various update and preview versions of a toolset installed. You can specify which one to use here.
+
+- **LLVM Toolset Version**
+
+   Specifies the full version of the LLVM toolset that's used to build the project. This property is available when **LLVM (clang-cl)** is selected as the platform toolset, starting in Visual Studio 2019 version 16.9. For more information, see [Set a custom LLVM toolset version](..\clang-support-msbuild.md#custom_llvm_toolset).
 
 ## C++/CLI Properties
 
