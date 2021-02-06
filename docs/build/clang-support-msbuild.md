@@ -68,7 +68,7 @@ You can combine this property with a custom LLVM toolset version. For more infor
 
 Starting in Visual Studio 2019 version 16.9, you can set a custom toolset version for LLVM. To set this property in a project in Visual Studio:
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](./working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **General** property page.
 
