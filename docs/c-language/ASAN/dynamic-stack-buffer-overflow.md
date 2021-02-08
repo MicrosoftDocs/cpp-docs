@@ -2,15 +2,15 @@
 
 ## example - alloca overflow (right)
 ```cpp
-#include "defines.h"
-#include <assert.h>
+
+#include <malloc.h>
 
 __declspec(noinline)
 
 void foo(int index, int len) {
 
     volatile char *str = (volatile char *)_alloca(len);
-    assert(!(reinterpret_cast<long>(str) & 31L));
+    
     str[index] = '1'; // Boom !
 }
 
@@ -23,19 +23,20 @@ int main(int argc, char **argv) {
 
 ## Resulting error
 
+![example1](.\SRC_CODE\dynamic-stack-buffer-overflow\example1.PNG)
 
 ## example - alloca overflow (left)
 
 ```cpp
-#include "defines.h"
-#include <assert.h>
+
+
+#include <malloc.h>
 
 __declspec(noinline)
 
 void foo(int index, int len) {
     volatile char *str = (volatile char *)_alloca(len);
 
-    assert(!(reinterpret_cast<long>(str) & 31L));
     str[index] = '1';  // Boom!
 }
 
@@ -46,6 +47,7 @@ int main(int argc, char **argv) {
 ```
 ## Resulting error
 
+![example2](.\SRC_CODE\dynamic-stack-buffer-overflow\example2.PNG)
 
 ## Example - several calls to alloca
 
@@ -54,6 +56,9 @@ Here's the complete example from the introduction section on the Address Sanitiz
 ```cpp
 #include <stdio.h>
 #include <stdlib.h>
+
+#include <malloc.h>
+
 
 #define SIZE 7
 extern void nothing();
@@ -126,3 +131,5 @@ __try{
 }
 ```
 ## Resulting error
+
+![example3](.\SRC_CODE\dynamic-stack-buffer-overflow\example3.PNG)

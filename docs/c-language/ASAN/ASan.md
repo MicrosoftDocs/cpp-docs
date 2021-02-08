@@ -4,13 +4,13 @@ We describe a new compiler flag -fsanitize=address which may result in exposing 
 
 Using this flag can reduce your time spent on:
 
-- basic correctness
-- cross platform portability
-- security
-- stress testing
-- integrating new source code
+- Basic correctness
+- Cross platform portability
+- Security
+- Stress testing
+- Integrating new source code
 
-With just a **simple recompile**, you can expose many difficult to find, errors with **no false positives**. This class of errors is not found with [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) or [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). Building with -fsanitize=address and using your existing test assets is a highly recommended, step in properly testing your software.
+Building with -fsanitize=address and using your existing test assets is a highly recommended, step in properly testing your software. With just a [simple recompile](#Command-line), you can expose many difficult to find, errors with **no false positives**. This class of errors is not found with [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) or [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). 
 
 ## Developer Message
 
@@ -47,13 +47,13 @@ This article will cover all the information needed to enable your implementation
 
 > [!NOTE] Current support is limited to x86 and AMD64 on Windows10. **Customer feedback** would help us prioritize shipping these sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
 
-## Command line
+## Simple command line interface
 
-Adding the flag -fsanitize=address to your command line (with /Zi to emit debug info.) is all you need to compile,link and run instrumented code in an .EXE or DLL.
+Adding the flag -fsanitize=address to your command line (with /Zi to emit debug info.) is all you need to compile,link and run instrumented code in an .EXE or DLL.The flag -fsanitize=address is compatible with all existing C or C++ optimization flags (e.g., /Od, /O1, /O2, /O2 /GL and PGO).
 
-            C:\> cl -fsanitize=address /Zi file.cpp file2.cpp my3dparty.lib /Fe My.exe
+                     C:\> cl -fsanitize=address /Zi file.cpp file2.cpp my3dparty.lib /Fe My.exe
 
-The flag -fsanitize=address is compatible with all existing C or C++ optimization flags (e.g., /Od, /O1, /O2, /O2 /GL and PGO). 
+ 
 
 ## Errors ##
 
@@ -63,10 +63,11 @@ There are three ways your code can report many types of [errors at runtime](#Err
 - [IDE](#IDE)
 - [Snapshot files](#Snapshot-file)
 
+The following C++ source code is **safe by coincidence**. It will **not** fail at runtime. The Windows 10, 16.9 version of the C runtime, will pad the 13 bytes requested to facilitate alignment for subsequent calls to alloca. 
 
-The following C++ source code is **safe by coincidence**. It will **not** fail at runtime. The Windows 10, 16.9 version of the C runtime, will pad the 13 bytes requested to facilitate alignment for subsequent calls to alloca. The following example could have different results on Android, Linux or MacOS.
+Padding and alignment is platform dependent. It's a function of the CRT used on a particular operating system and whether the target is 32-bits, or 64-bits. The following example could have different results on Android, Linux or MacOS. 
 
-Example: memory safety error:
+Example:
 
 ```cpp
     int x = 13;
@@ -89,18 +90,6 @@ Example: memory safety error:
             cc[3] = 3;  //Boom! Only caught with -fsanitize=address
 ```
 
-Padding and alignment is platform dependent. It's a function of the CRT used on the Windows operating system and whether the target is x86, or amd64. Padding and alignment will also be different on Linux and macOS.
-
-## Error Reporting
-
-Executables produced with -fsanitize=address can produce three (3) different types of error reports:
-
-- Command line
-- IDE display
-- Snapshot file
-
-For all the different types of errors, jump to the [catalogue](#Error-types) of error types below.
-
 ### Command line - error reporting ###
 
 If you run from the command line then your binary will emit formatted text reports to the screen. Consider the over layed, red boxes which high light four (4) key pieces of information from the error in the _alloca example.
@@ -109,25 +98,25 @@ If you run from the command line then your binary will emit formatted text repor
 
 From top to bottom
 
-1.) A store of 4 bytes (32-bits) went beyond the stack allocation the program explicitly requested.
+1.) A write of 4 bytes (32-bits) went beyond the stack allocation the program explicitly requested.
 
-2.) The store was produced from line 47 in the function "main"
+2.) That store was produced from line 47 in the function "main"
 
-3.) The type of error was a dynamic stack buffer overflow. There was a stack overflow for the space dynamically allocated.
+3.) The type of error was a dynamic stack buffer overflow for the 13 bytes explicitly requested.
 
-4.) The [**shadow bytes**](.\asan-shadowbytes.md) that correspond to the address used in the overflowing store indicate 13 bytes were allocated for the alloca.
+4.) The [**shadow bytes**](.\asan-shadowbytes.md) that correspond to the address used in the overflowing store indicate 13 bytes (8 +5) were allocated for the alloca.
 
 ### IDE - Error reporting
 
-By simply recompiling with -fsanitze=address and invoking Visual Studio from the command line, the IDE will automatically map a pop up to the line and column where the error was caught.
+By simply recompiling with -fsanitze=address and invoking Visual Studio from the command line, the IDE will automatically map a pop up to the line and column that casued the error.
 
             devenv /debugexe MyApp.exe arg1 arg2 ... argn
 
-Consider the following error found in spec2k6\povray where the program allocates 24-bytes but only frees 8-bytes. The details for where the allocation and free took place are in the **output pane** of the Visual Studio screen shot
+Consider the following error found in spec2k6\povray where the program allocates 24-bytes but only frees 8-bytes. The details for where the allocation and free took place are in the **output pane** of the Visual Studio screen shot.
 
 ![IDE: povray](media\povray.png)
 
-### Snapshot files - Error reporting
+### Snapshot files - For Cloud workflows or offline processing 
 
 There's a powerful feature for workflows that need to retain detailed error information for processing errors off-line. If you **simply** set an environment variable, then your .EXE or .DLL will create a [snapshot file](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/proc_snap/export-a-process-snapshot-to-a-file)  rather than print any error.  The snapshot file can be read into the Visual Studio IDE and the error will be displayed against the exact source line number.
 
@@ -135,7 +124,7 @@ This section provides details
 
 ## Error types
 
-Here's a summary of the runtime errors that are captured when you run your binaries that have been compiled and linked with -fsanitize=address. Each link provides source code and the resulting errors for that specific class of error.  There may be several examples for each of the following categories:
+The following list of runtime errors can be exposed when you run your binaries compiled -fsanitize=address. A drill down of each class of error, provides source code and Visual Stud screen shots.  There may be several examples for each of the following:
 
 - [stack-use-after-scope](.\stack-use-after-scope.md)
 - [stack-buffer-overflow](.\stack-buffer-overflow.md)
@@ -156,6 +145,7 @@ Here's a summary of the runtime errors that are captured when you run your binar
 - [alloc-dealloc-mismatch](.\alloc-dealloc-mismatch.md)
 
 ## Visual Studio
+
 
 ### Project System
 

@@ -1,5 +1,5 @@
 
-# Stack  Use after return
+# Stack- Use After Return
 
 This functionality requires code generation that is activated under an additional flag `-fsanitize-address-use-after-return `. A complete command line example would be:
 
@@ -11,18 +11,18 @@ A the [CLANG/LLVM summary](https://github.com/google/sanitizers/wiki/AddressSani
 
 ## Example - Simple 'C'
 ```cpp
-char *x;
-
-void foo() {
-  char stack_buffer[42];
-  x = &stack_buffer[13];
-}
-
-int main() {
-  foo();
-  *x = 42;  // Boom!
-  return 0;
-}
+    char *x;
+    
+    void foo() {
+        char stack_buffer[42];
+        x = &stack_buffer[13];
+    }
+    
+    int main() {
+        foo();
+        *x = 42;  // Boom!
+        return 0;
+    }
 ```
 
 ## Resulting error `c:> example1.exe`
@@ -70,6 +70,8 @@ int main() {
         return 0;
     }
 ```
-## Resulting error `c:>example2.exe 1`
+## Resulting error 
+
+Running this example as `c:>example2.exe 1`
 
 ![example2](.\SRC_CODE\stack-use-after-return\example2.PNG)

@@ -1,12 +1,12 @@
 # Heap buffer overflow
 
 
-## Example - heap buffer overflow
+## Example - classic heap buffer overflow
 
 ```cpp
-
 #include <stdlib.h>
 #include <string.h>
+
 int main(int argc, char **argv) {
     char *x = (char*)malloc(10 * sizeof(char));
     memset(x, 0, 10);
@@ -18,6 +18,8 @@ int main(int argc, char **argv) {
 ```
 
 ## Resulting error
+
+![example1](.\SRC_CODE\heap-buffer-overflow\example1.PNG)
 
 ## Example - improper down cast
 ```cpp
@@ -33,7 +35,7 @@ class Child : public Parent {
 
 int main(void) {
   Parent *p = new Parent;
-  Child *c = (Child*)p;  // Intentional error here!
+  Child *c = (Child*)p;  // Boom! 
   c->extra_field = 42;
 
   return 0;
@@ -42,11 +44,10 @@ int main(void) {
 
 ## Resulting error
 
+![example2](.\SRC_CODE\heap-buffer-overflow\example2.PNG)
 
-
-
-## Example - strncpy overflow
-
+## Example - strncpy into heap
+!
 ```cpp
 #include <string.h>
 #include <stdlib.h>
@@ -64,4 +65,6 @@ int main(int argc, char **argv) {
 ```
 
 ## Resulting error
+
+![example3](.\SRC_CODE\heap-buffer-overflow\example3.PNG)
 

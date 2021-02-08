@@ -6,14 +6,20 @@ We show three examples where storage in the heap can be allocated via malloc, re
 
 ```cpp
 #include <stdlib.h>
+
 int main() {
   char *x = (char*)malloc(10 * sizeof(char));
   free(x);
+
+  // ...
+
   return x[5];   // Boom!
 }
 ```
 
 ## Resulting error
+
+![example1](.\SRC_CODE\heap-use-after-free\example1.PNG)
 
 ## Example - operator new
 ```cpp
@@ -22,6 +28,9 @@ int main() {
 int main() {
   char *buffer = new char[42];
   delete [] buffer;
+
+  // ...
+
   buffer[0] = 42;  // Boom!
   return 0;
 }
@@ -30,9 +39,7 @@ int main() {
 
 ## Resulting error
 
-## Example - improper down cast
-
-
+![example2](.\SRC_CODE\heap-use-after-free\example2.PNG)
 
 
 ## Example - realloc
@@ -43,21 +50,34 @@ int main() {
 int main() {
   char *buffer = (char*)realloc(0, 42);
   free(buffer);
+
+  // ...
+
   buffer[0] = 42;  // Boom!
   return 0;
 }
 ```
 
+## Resulting error
+
+![example3](.\SRC_CODE\heap-use-after-free\example3.PNG)
+
 ## Example - volatile
 ```cpp
 #include <stdlib.h>
+
 int main() {
+
   volatile char *x = (char*)malloc(sizeof(char));
   free((void*)x);
+
       //...
 
   *x = 42;        // Boom!
 }
 ```
 
-## Resulting
+## Resulting error
+
+
+![example4](.\SRC_CODE\heap-use-after-free\example4.PNG)

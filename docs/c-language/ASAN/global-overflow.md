@@ -1,6 +1,6 @@
 # GLOBALS
 
-Global variables means anything allocated in the .data or .bss section. These are simply globals or file statics that are allocated in memory before main() starts. Note that global variables in 'C' are treated much differently than 'C++'. This is due to the exciting rules for linking.  
+Global variables covers any variable allocated in the .data or .bss section. These are simply globals or file statics that are allocated in memory before main() starts. Note that global variables in 'C' are treated much differently than 'C++'. This is due to the exciting rules for linking.  
 
 In 'C' a global variable can be declared in numerous source files and even have different types at each definition site.  This means the linker has to allocate the global and it just choses the largest space of all the different declarations.
 
@@ -17,27 +17,31 @@ In C++ a global is allocated by the compiler (possibly being initialized at runt
 //
 // ASAN reports a buffer overflow in main.c @line #2 in all cases.
   
-file: a.c 
+// file: a.c 
 int x;
 
-file: b.c  
+// file: b.c  
 char* x; > b.c
 
-file: c.c
+// file: c.c
 float* x[3];
 
-main.c
+// main.c
 
-double x[5]; 
+double x[5];
+ 
 int main() { 
     int rc = (int) x[5];  // Boom!
     return rc; 
 }
-
 ```
 
 ## Resulting error
 
+`devenv /debugexe example2.exe`
+
+
+![example1](.\SRC_CODE\global-overflow\example1.PNG)
 
 ## Example - simple function level static
 
@@ -59,6 +63,10 @@ int main(int argc, char **argv) {
 ```
 
 ## Resulting error
+
+`devenv /debugexe example2.exe`
+
+![example2](.\SRC_CODE\global-overflow\example2.PNG)
 
 
 ## Example - all global scopes in C++
@@ -85,7 +93,7 @@ int C::array[10];
 
 int main(int argc, char **argv) {
   int one = argc - 1;
-  switch (argv[1][0]) {
+  switch (argv[1][1]) {
   case 'g': return global[one * 11];     //Boom! simple global
   case 'c': return C::array[one * 11];   //Boom! class static
   case 'f':
@@ -104,4 +112,8 @@ int main(int argc, char **argv) {
 
 ## Resulting errors
 
+`devenv /debugexe example3.exe -l`
+
+
+![example3](.\SRC_CODE\global-overflow\example3.PNG)
 
