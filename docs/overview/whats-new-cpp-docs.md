@@ -107,7 +107,7 @@ This article lists some of the major changes to docs for Visual Studio 16.8.
 - [Configure a Linux CMake project in Visual Studio](../linux/cmake-linux-configure.md) - Updated to reflect latest UI
 - [Deploy, run, and debug your Linux MSBuild project](../linux/deploy-run-and-debug-your-linux-project.md) - Added `GDB Path`
 
-## Microsoft C/C++ compiler and tools errors and warnings
+## C/C++ compiler and tools errors and warnings
 
 ### New articles
 
@@ -121,7 +121,7 @@ This article lists some of the major changes to docs for Visual Studio 16.8.
 - [Compiler warnings C4800 through C5999](../error-messages/compiler-warnings/compiler-warnings-c4800-through-c4999.md) - Updated 16.7 warnings
 - [Compiler Error C3381](../error-messages/compiler-errors-2/compiler-error-c3381.md) - Address cpp-docs 2493; update remarks and example
 
-## Microsoft C/C++ compiler intrinsics and assembly language
+## C/C++ compiler intrinsics and assembly language
 
 ### Updated articles
 
@@ -130,7 +130,7 @@ This article lists some of the major changes to docs for Visual Studio 16.8.
 - [C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md) - Updated DevCom and Microsoft Docs Q&A links
 - [Microsoft C++ language conformance table](../overview/visual-cpp-language-conformance.md) - Updated C++20 library conformance table, update language feature table for 16.7
 
-## Microsoft C++ in Visual Studio
+## C++ in Visual Studio
 
 ### Updated articles
 
@@ -138,7 +138,7 @@ This article lists some of the major changes to docs for Visual Studio 16.8.
 - [if-else statement (C++)](../cpp/if-else-statement-cpp.md) - Added description for `if/else` grammar
 - [`union`](../cpp/unions.md) - Fixed code snippet
 
-## Microsoft C++ in Visual Studio projects and build systems
+## C++ in Visual Studio projects and build systems
 
 ### New articles
 
@@ -155,13 +155,14 @@ This article lists some of the major changes to docs for Visual Studio 16.8.
 - [`/clr` (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) - Added description for `/clr`
 - [pgosweep](../build/pgosweep.md) - Added more pgosweep options
 - [Importing data using `__declspec(dllimport)`](../build/importing-data-using-declspec-dllimport.md) - Updated example
-## Microsoft C++ porting and upgrade guide
+
+## C++ porting and upgrade guide
 
 ### Updated articles
 
 - [How to: Use existing C++ code in a Universal Windows Platform app](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md) - Reworked for clarity and updated examples
 
-## Microsoft C++ Standard Library (STL) reference
+## C++ Standard Library (STL) reference
 
 ### New articles
 
