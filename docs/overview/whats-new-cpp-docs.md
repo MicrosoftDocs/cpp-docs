@@ -1,11 +1,11 @@
 ---
 title: "What's new for the C++ docs"
 description: "The new docs and doc updates for the Microsoft C/C++ compiler, ATL/MFC, C runtime, and standard library docs."
-ms.date: "02/05/2021"
+ms.date: "02/08/2021"
 ---
 # Microsoft C++ docs: What's new for Visual Studio 16.8
 
-This article lists some of the major changes to docs for Visual Studio 16.8.
+This article lists some of the major changes to docs for Visual Studio 16.8. For information about what's new in Visual Studio, see [What's new for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md).
 
 ## C language
 
@@ -138,7 +138,7 @@ This article lists some of the major changes to docs for Visual Studio 16.8.
 - [if-else statement (C++)](../cpp/if-else-statement-cpp.md) - Added description for `if/else` grammar
 - [`union`](../cpp/unions.md) - Fixed code snippet
 
-## C++ in Visual Studio projects and build systems
+## C/C++ projects and build systems
 
 ### New articles
 
