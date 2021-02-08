@@ -101,6 +101,8 @@ You can also combine this property with a custom LLVM location. For example, you
 </Project>
 ```
 
+When you add a *Directory.build.props* file, the settings appear as the default in the project Property Pages dialog. However, changes to these properties in Visual Studio override the settings in the *Directory.build.props* file.
+
 ## Set additional properties, edit, build, and debug
 
 After you have set up a Clang configuration, right-click again on the project node and choose **Reload project**. You can now build and debug the project using the Clang tools. Visual Studio detects that you're using the Clang compiler and provides IntelliSense, highlighting, navigation, and other editing features. Errors and warnings are displayed in the **Output Window**. The project property pages for a Clang configuration are similar to the ones for MSVC. However, some compiler-dependent features such as Edit and Continue aren't available for Clang configurations. You can set a Clang compiler or linker option that isn't available in the property pages. Add it manually in the property pages under **Configuration Properties** > **C/C++ (or Linker)** > **Command Line** > **Additional Options**.
