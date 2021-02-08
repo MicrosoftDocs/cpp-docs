@@ -53,7 +53,6 @@ Adding the flag -fsanitize=address to your command line (with /Zi to emit debug 
 
                      C:\> cl -fsanitize=address /Zi file.cpp file2.cpp my3dparty.lib /Fe My.exe
 
- 
 
 ## Errors ##
 
@@ -124,7 +123,7 @@ This section provides details
 
 ## Error types
 
-The following list of runtime errors can be exposed when you run your binaries compiled -fsanitize=address. A drill down of each class of error, provides source code and Visual Stud screen shots.  There may be several examples for each of the following:
+The following list of runtime errors can be exposed when you run your binaries compiled -fsanitize=address. A drill down of each class of error, provides source code and Visual Stud screen shots.  There are over 30 examples, with screen shots, within the following:
 
 - [stack-use-after-scope](.\stack-use-after-scope.md)
 - [stack-buffer-overflow](.\stack-buffer-overflow.md)
