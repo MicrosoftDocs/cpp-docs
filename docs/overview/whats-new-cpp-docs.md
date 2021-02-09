@@ -5,7 +5,11 @@ ms.date: "02/08/2021"
 ---
 # Microsoft C++ docs: What's new for Visual Studio 16.8
 
-This article lists some of the major changes to docs for Visual Studio 16.8. For information about what's new in Visual Studio, see [What's new for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md).
+This article lists some of the major changes to docs for Visual Studio 16.8. 
+
+For information about what's new in Visual Studio, see [What's new for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md).
+
+For the latest C++ conformance status, see [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md)
 
 ## C language
 
