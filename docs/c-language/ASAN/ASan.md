@@ -2,13 +2,13 @@
 title: "Address Sanitizer"
 description: "Technical descrption of the AddressSanitizer feature for Microsoft Visual C++."
 ms.date: 01/05/2021
-f1_keywords: ["ASan","sanitizers","AddressSanitizer","memory safety","heap buffer overflow", "stack buffer overflow", "double free", "use after free", "type mismatch"]
+f1_keywords: ["ASan","sanitizers","commandAddressSanitizer","memory safety","heap buffer overflow", "stack buffer overflow", "double free", "use after free", "type mismatch"]
 helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Clang runtime","runtime"]
 ---
 
 # Address Sanitizer
 
-We describe a new compiler flag -fsanitize=address which may result in exposing hidden [errors](#errors) in your code.
+We describe a new compiler flag -fsanitize=address which may result in exposing hidden [errors](#errors) in your code, not exposed by your current testing.
 
 Using this flag can reduce your time spent on:
 
@@ -18,11 +18,11 @@ Using this flag can reduce your time spent on:
 - Stress testing
 - Integrating new source code
 
-Building with -fsanitize=address and using your existing test assets is a highly recommended, step in properly testing your software. With just a [simple recompile](#Command-line), you can expose many difficult to find, errors with **no false positives**. This class of errors is not found with [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) or [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). 
+Building with `-fsanitize=address` and using your existing test assets, is a highly recommended step in properly testing your software. With just a [simple recompile](#Simple-command-line-interface), you can expose many difficult to find, errors with **no false positives**. This class of errors is not found with [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) or [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). 
 
 ## Developer Message
 
- The Address Sanitizer is a compiler based technology [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). This [compiler](#Compiler) and [runtime](#Address-Sanitizer-Runtimes) technology has become the "defacto" industry standard for finding memory safety issues. We now offer this technology as a fully supported feature in Visual Studio for the Windows platform. If your existing code compiles with our current Windows compiler, then it will compile with the extra flag -fsanitize=address under any level of optimization and all other compatible flags (e.g., /RTC is not compatible, yet).
+ The Address Sanitizer is a compiler based technology targeting a runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). This [compiler](#Compiler) and [runtime](#Address-Sanitizer-Runtimes) technology has become the "defacto" industry standard for finding memory safety issues. We now offer this technology as a fully supported feature in Visual Studio for the Windows platform. If your existing code compiles with our current Windows compiler, then it will compile with the extra flag -fsanitize=address under any level of optimization and all other compatible flags (e.g., /RTC is not compatible, yet).
 
 Microsoft recommends using the Address Sanitizer in these **three standard workflows**:
 
@@ -59,7 +59,18 @@ This article will cover all the information needed to enable your implementation
 
 Adding the flag -fsanitize=address to your command line (with /Zi to emit debug info.) is all you need to compile,link and run instrumented code in an .EXE or DLL.The flag -fsanitize=address is compatible with all existing C or C++ optimization flags (e.g., /Od, /O1, /O2, /O2 /GL and PGO).
 
-                     C:\> cl -fsanitize=address /Zi file.cpp file2.cpp my3dparty.lib /Fe My.exe
+                     C:\> cl -fsanitize=address /Zi main.cpp file2.cpp 3dparty.lib
+
+In this example the compiler will automatically link main.exe with the static versions of the AddressSanitizer runtime binaries and the static CRT. Throwing /MD will cause the dynamic versions of the libraries to be used instead. 
+
+For more partitioned build systems, the following command lines show examples of the required compile and link lines to produce an "instrumeneted" main.exe:
+
+                     C:\> cl -c -fsanitize=address -O2 -Zi    main.cpp file2.cpp file3.cpp
+                     C:\> link -debug -incremental:no    main.obj file2.obj file3.obj
+
+The compiler requires opting into -Zi for debug information and the linker requires -debug to emit the debug information. The one caveat is that -debug defaults to incremental linking which is not compatible. So the Address Sanitizer requires `link -debug -incremental:no` and it will warn appropriately.
+
+See the section on **building** for more details.
 
 ## Errors ##
 
@@ -159,79 +170,10 @@ The following list of runtime errors can be exposed when you run your binaries c
 - [use-after-poison](.\use-after-poison.md)
 - [alloc-dealloc-mismatch](.\alloc-dealloc-mismatch.md)
 
+## See also
 
-## Address Sanitizer Runtimes
+   [Building for the Address Sanitizer with MSVC](.\Asan-building.md)
 
-This implementation of AddressSanitizer makes use of the Clang ASan runtime libraries. The runtime library version packaged with Visual Studio may contain features that are not yet available in the version packaged with Clang.
+   [Address Sanitizer runtime](.\Address-sanitizer-runtimes.md)
 
-An overview of the features in this ported version of the Address Sanitizer runtime  runtime is available here: [AddressSanitizer runtime overview](address-sanitizer-runtime.md)
-
-### Static (x86,AMD64)
-
-These would appear on the raw link lines 
-
-### Dynamic (x86,AMD64)
-
-These would appear on the raw link lines
-
-### Runtime Flags
-
-Pick only the set we currently support
-https://github.com/google/sanitizers/wiki/AddressSanitizerFlags#run-time-flags 
-
-## Compiler 
-
-This section describes the actions and binaries supporting a simple recompile with -fsanitize=address.
- 
-This covers:
-- cl.exe   - the driver as seen with cl -Bv
-- c1xx.exe - the C++ front end
-- c2.dll   - the optimizing code generator
-- link.exe - the linker
-
-### Compiler flags
-
-**-fsanitize=address**
-
-Enable the injection of instrumentation code that inter-ops with the Asan runtime binaries that are automatically linked to the binary you are producing. This is a fast memory safety detector that just requires a recompile. Loads, stores, scopes, alloca, and CRT functions are hooked to detect hidden bugs like out-of-bounds, use-after-free, use-after-scope etc.. See [Error reporting](#error-reporting) for a complete list of errors currently detected at runtime.
-
-Unlike Clang/LLVM this option enables -fsanitize-address-use-after-scope by default and it can not be turned off at the command line or through the [Runtimes](#Address-sanitizer-runtimes) `ASAN_OPTIONS` environment variable. The functionality for use-after-return requires code generation under an additional flag and environment variable.
-
-By default (legacy reasons) the CL driver infers the linker flag [/MT](https://docs.microsoft.com/en-us/cpp/build/reference/md-mt-ld-use-run-time-library?view=msvc-160) and that will link **static versions** of both the Asan and CRT libraries. If you want to link to the **dynamic version** of the CRT then use the following:
-
-        cl -fsanitize=address /Zi /MD file.cpp file2.cpp my3dparty.lib /De My.exe
-
-See the [Linker](#linker) section for details on more complex build scenarios. 
-See the [Runtime](#Address-Sanitizer-Runtimes) section for an inventory of the Asan runtime libraries and functionlities.
-
-**-fsanitize-address-use-after-return**
-
-An extra flag to create a dual stack frame in the heap.  The dual stack frame in the heap will linger after the return from the function that created it. If an address of a local, allocated to a slot in the frame in the heap, then the code generation can later determine a stack-use-after-return error.
-
-         cl -fsanitize=address -fsanitize-address-use-after-return /Zi file.cpp file2.cpp my3dparty.lib /De My.exe
-
-This is an experimental, additional flag to change code generation. This code is **much slower** than just using -fsanize=address. Stack frames are allocated in the heap and linger after function return. The runtime will garbage collect these after a certain time. By transferring the address of locals to frames that persist in the heap, we can then detect use of any locals after the function returns.
-
-What does the [compiler](.\asan-compiler.md) emit overview and drill down
-
-### Linker
-
-What does the [linker](.\asan-linker.md) emit and an overview and a drill down
-
-[Notes on linker](https://microsoft.sharepoint.com/teams/DD_VC/_layouts/OneNote.aspx?id=%2Fteams%2FDD_VC%2FShared%20Documents%2FVisual%20C%2B%2B%20Team&wd=target%28BE%20Team%2FSecurity%2FCompiler%20Security%20V-Team.one%7CC2A34F56-6B09-4AB1-869B-DFD77BFD7399%2FNotes%20about%20vcasan%20and%20%5C%2Finferasanlibs%7C6D1BD27A-F55A-44BC-BF7C-AF6404C4C5C1%2F%29)
-
-## Visual Studio
-
-### Project System
-
-### CMake
-
-### MSBuild
-
-## Fuzzing
-
-### Azure
-
-### Local Machine
-
-
+   [Fuzzing - NOT YET AGGREED TO]( )
