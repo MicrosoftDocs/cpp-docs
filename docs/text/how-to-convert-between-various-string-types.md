@@ -2,25 +2,25 @@
 description: "Learn more about: How to: Convert Between Various String Types"
 title: "How to: Convert Between Various String Types"
 ms.custom: "get-started-article"
-ms.date: "11/04/2016"
+ms.date: "02/08/2021"
 helpviewer_keywords: ["converting string types", "string conversion [C++]", "strings [C++], converting"]
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
 ---
-# How to: Convert Between Various String Types
+# How to: Convert between various string types
 
-This topic demonstrates how to convert various Visual C++ string types into other strings. The strings types that are covered include `char *`, `wchar_t*`, [_bstr_t](../cpp/bstr-t-class.md), [CComBSTR](../atl/reference/ccombstr-class.md), [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), and <xref:System.String?displayProperty=fullName>. In all cases, a copy of the string is made when converted to the new type. Any changes made to the new string will not affect the original string, and vice versa.
+This topic shows how to convert various Visual C++ string types into other strings. The strings types that are covered include `char *`, `wchar_t*`, [`_bstr_t`](../cpp/bstr-t-class.md), [`CComBSTR`](../atl/reference/ccombstr-class.md), [`CString`](../atl-mfc-shared/using-cstring.md), [`basic_string`](../standard-library/basic-string-class.md), and <xref:System.String?displayProperty=fullName>. In all cases, a copy of the string is made when converted to the new type. Any changes made to the new string will not affect the original string, and vice versa.
 
 ## Example: Convert from char *
 
 ### Description
 
-This example demonstrates how to convert from a `char *` to the other string types listed above. A `char *` string (also known as a C style string) uses a null character to indicate the end of the string. C style strings usually require one byte per character, but can also use two bytes. In the examples below, `char *` strings are sometimes referred to as multibyte character strings because of the string data that results from converting from Unicode strings. Single byte and multibyte character (`MBCS`) functions can operate on `char *` strings.
+This example demonstrates how to convert from a `char *` to the string types listed above. A `char *` string (also known as a C-style string) uses a null character to indicate the end of the string. C-style strings usually require one byte per character, but can also use two bytes. In the examples below, `char *` strings are sometimes referred to as multibyte character strings because of the string data that results from converting from Unicode strings. Single byte and multibyte character (`MBCS`) functions can operate on `char *` strings.
 
 ### Code
 
 ```cpp
 // convert_from_char.cpp
-// compile with: /clr /link comsuppw.lib
+// compile with: /clr /Zc:twoPhase- /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -35,7 +35,7 @@ using namespace System;
 
 int main()
 {
-    // Create and display a C style string, and then use it
+    // Create and display a C-style string, and then use it
     // to create different kinds of strings.
     char *orig = "Hello, World!";
     cout << orig << " (char *)" << endl;
@@ -58,14 +58,14 @@ int main()
     // Display the result and indicate the type of string that it is.
     wcout << wcstring << _T(" (wchar_t *)") << endl;
 
-    // Convert the C style string to a _bstr_t string.
+    // Convert the C-style string to a _bstr_t string.
     _bstr_t bstrt(orig);
     // Append the type of string to the new string
     // and then display the result.
     bstrt += " (_bstr_t)";
     cout << bstrt << endl;
 
-    // Convert the C style string to a CComBSTR string.
+    // Convert the C-style string to a CComBSTR string.
     CComBSTR ccombstr(orig);
     if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
     {
@@ -73,24 +73,24 @@ int main()
         cout << printstr << endl;
     }
 
-    // Convert the C style string to a CStringA and display it.
+    // Convert the C-style string to a CStringA and display it.
     CStringA cstringa(orig);
     cstringa += " (CStringA)";
     cout << cstringa << endl;
 
-    // Convert the C style string to a CStringW and display it.
+    // Convert the C-style string to a CStringW and display it.
     CStringW cstring(orig);
     cstring += " (CStringW)";
     // To display a CStringW correctly, use wcout and cast cstring
     // to (LPCTSTR).
     wcout << (LPCTSTR)cstring << endl;
 
-    // Convert the C style string to a basic_string and display it.
+    // Convert the C-style string to a basic_string and display it.
     string basicstring(orig);
     basicstring += " (basic_string)";
     cout << basicstring << endl;
 
-    // Convert the C style string to a System::String and display it.
+    // Convert the C-style string to a System::String and display it.
     String ^systemstring = gcnew String(orig);
     systemstring += " (System::String)";
     Console::WriteLine("{0}", systemstring);
@@ -109,17 +109,17 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Example: Convert from wchar_t *
+## Example: Convert from `wchar_t *`
 
 ### Description
 
-This example demonstrates how to convert from a `wchar_t *` to the other string types listed above. Several string types, including `wchar_t *`, implement wide character formats. To convert a string between a multibyte and a wide character format, you can use a single function call like `mbstowcs_s` or a constructor invocation for a class like `CStringA`.
+This example demonstrates how to convert from a `wchar_t *` to other string types. Several string types, including `wchar_t *`, implement wide character formats. To convert a string between a multibyte and a wide character format, you can use a single function call like `mbstowcs_s` or a constructor invocation for a class like `CStringA`.
 
 ### Code
 
 ```cpp
 // convert_from_wchar_t.cpp
-// compile with: /clr /link comsuppw.lib
+// compile with: /clr /Zc:twoPhase- /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -141,7 +141,7 @@ int main()
 
     // Convert the wchar_t string to a char* string. Record
     // the length of the original string and add 1 to it to
-    // account for the terminating null character.
+    // account for the terminating NULL character.
     size_t origsize = wcslen(orig) + 1;
     size_t convertedChars = 0;
 
@@ -231,17 +231,17 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Example: Convert from _bstr_t
+## Example: Convert from `_bstr_t`
 
 ### Description
 
-This example demonstrates how to convert from a `_bstr_t` to the other string types listed above. The `_bstr_t` object is a way to encapsulate wide character `BSTR` strings. A BSTR string has a length value and does not use a null character to terminate the string, but the string type you convert to may require a terminating null.
+This example demonstrates how to convert from a `_bstr_t` to other string types. The `_bstr_t` object encapsulates wide character `BSTR` strings. A `BSTR` string has a length value and does not use a null character to terminate the string, but the string type you convert to may require a terminating `NULL`.
 
 ### Code
 
 ```cpp
 // convert_from_bstr_t.cpp
-// compile with: /clr /link comsuppw.lib
+// compile with: /clr /Zc:twoPhase- /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -261,9 +261,9 @@ int main()
     _bstr_t orig("Hello, World!");
     wcout << orig << " (_bstr_t)" << endl;
 
-    // Convert the wide character _bstr_t string to a C style
+    // Convert the wide character _bstr_t string to a C-style
     // string. To be safe, allocate two bytes for each character
-    // in the char* string, including the terminating null.
+    // in the char* string, including the terminating NULL.
     const size_t newsize = (orig.length()+1)*2;
     char *nstring = new char[newsize];
 
@@ -329,17 +329,17 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Example: Convert from CComBSTR
+## Example: Convert from `CComBSTR`
 
 ### Description
 
-This example demonstrates how to convert from a `CComBSTR` to the other string types listed above. Like _bstr_t, a `CComBSTR` object is a way to encapsulate wide character BSTR strings. A BSTR string has a length value and does not use a null character to terminate the string, but the string type you convert to may require a terminating null.
+This example demonstrates how to convert from a `CComBSTR` to other string types. Like `_bstr_t`, a `CComBSTR` object encapsulates wide character `BSTR` strings. A `BSTR` string has a length value and does not use a null character to terminate the string, but the string type you convert to may require a terminating `NULL`.
 
 ### Code
 
 ```cpp
 // convert_from_ccombstr.cpp
-// compile with: /clr /link comsuppw.lib
+// compile with: /clr /Zc:twoPhase- /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -366,7 +366,7 @@ int main()
     // Convert a wide character CComBSTR string to a
     // regular multibyte char* string. Allocate enough space
     // in the new string for the largest possible result,
-    // including space for a terminating null.
+    // including space for a terminating NULL.
     const size_t newsize = (orig.Length()+1)*2;
     char *nstring = new char[newsize];
 
@@ -437,19 +437,19 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Example: Convert from CString
+## Example: Convert from `CString`
 
 ### Description
 
-This example demonstrates how to convert from a `CString` to the other string types listed above. `CString` is based on the TCHAR data type, which in turn depends on whether the symbol `_UNICODE` is defined. If `_UNICODE` is not defined, `TCHAR` is defined to be char and `CString` contains a multibyte character string; if `_UNICODE` is defined, `TCHAR` is defined to be **`wchar_t`** and `CString` contains a wide character string.
+This example demonstrates how to convert from a `CString` to other string types. `CString` is based on the TCHAR data type, which in turn depends on whether the symbol `_UNICODE` is defined. If `_UNICODE` is not defined, `TCHAR` is defined to be `char` and `CString` contains a multibyte character string; if `_UNICODE` is defined, `TCHAR` is defined to be **`wchar_t`** and `CString` contains a wide character string.
 
-`CStringA` is the multibyte string always version of `CString`, `CStringW` is the wide character string only version. Neither `CStringA` nor `CStringW` use `_UNICODE` to determine how they should compile. `CStringA` and `CStringW` are used in this example to clarify minor differences in buffer size allocation and output handling.
+`CStringA` contains the `char` type and supports single-byte or multibyte strings. `CStringW` is the wide character version. Neither `CStringA` nor `CStringW` use `_UNICODE` to determine how they should compile. `CStringA` and `CStringW` are used in this example to clarify minor differences in buffer size allocation and output handling.
 
 ### Code
 
 ```cpp
 // convert_from_cstring.cpp
-// compile with: /clr /link comsuppw.lib
+// compile with: /clr /Zc:twoPhase- /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -579,17 +579,17 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Example: Convert from basic_string
+## Example: Convert from `basic_string`
 
 ### Description
 
-This example demonstrates how to convert from a `basic_string` to the other string types listed above.
+This example demonstrates how to convert from a `basic_string` to other string types.
 
 ### Code
 
 ```cpp
 // convert_from_basic_string.cpp
-// compile with: /clr /link comsuppw.lib
+// compile with: /clr /Zc:twoPhase- /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -610,7 +610,7 @@ int main()
 
     // Convert a wide character basic_string string to a multibyte char*
     // string. To be safe, we allocate two bytes for each character
-    // in the original string, including the terminating null.
+    // in the original string, including the terminating NULL.
     const size_t newsize = (strlen(orig.c_str()) + 1)*2;
     char *nstring = new char[newsize];
     strcpy_s(nstring, newsize, orig.c_str());
@@ -673,17 +673,17 @@ Hello, World! (CStringW)
 Hello, World! (System::String)
 ```
 
-## Example: Convert from System::String
+## Example: Convert from `System::String`
 
 ### Description
 
-This example demonstrates how to convert from a wide character (Unicode) [System::String](/dotnet/api/system.string) to the other string types listed above.
+This example demonstrates how to convert from a wide character (Unicode) [System::String](/dotnet/api/system.string) to other string types.
 
 ### Code
 
 ```cpp
 // convert_from_system_string.cpp
-// compile with: /clr /link comsuppw.lib
+// compile with: /clr /Zc:twoPhase- /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -713,7 +713,7 @@ int main()
     // Make a copy of the System::String as a multibyte
     // char* string. Allocate two bytes in the multibyte
     // output string for every wide character in the input
-    // string, including space for a terminating null.
+    // string, including space for a terminating NULL.
     size_t origsize = wcslen(wch) + 1;
     const size_t newsize = origsize*2;
     size_t convertedChars = 0;
@@ -780,14 +780,14 @@ Hello, World! (basic_string)
 
 ## See also
 
-[ATL and MFC String Conversion Macros](../atl/reference/string-conversion-macros.md)<br/>
-[CString Operations Relating to C-Style Strings](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
-[How to: Convert Standard String to System::String](../dotnet/how-to-convert-standard-string-to-system-string.md)<br/>
-[How to: Convert System::String to Standard String](../dotnet/how-to-convert-system-string-to-standard-string.md)<br/>
-[How to: Convert System::String to wchar_t* or char\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)<br/>
-[Programming with CComBSTR](../atl/programming-with-ccombstr-atl.md)<br/>
-[mbstowcs_s, _mbstowcs_s_l](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)<br/>
-[wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)<br/>
-[strcpy_s, wcscpy_s, _mbscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)<br/>
-[strcat_s, wcscat_s, _mbscat_s](../c-runtime-library/reference/strcat-s-wcscat-s-mbscat-s.md)<br/>
-[pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md)
+[ATL and MFC String Conversion Macros](../atl/reference/string-conversion-macros.md)\
+[CString Operations Relating to C-Style Strings](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)\
+[How to: Convert Standard String to `System::String`](../dotnet/how-to-convert-standard-string-to-system-string.md)\
+[How to: Convert `System::String` to Standard String](../dotnet/how-to-convert-system-string-to-standard-string.md)\
+[How to: Convert `System::String` to `wchar_t*` or `char*`](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)\
+[Programming with `CComBSTR`](../atl/programming-with-ccombstr-atl.md)\
+[`mbstowcs_s, _mbstowcs_s_l`](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)\
+[`wcstombs_s, _wcstombs_s_l`](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)\
+[`strcpy_s, wcscpy_s, _mbscpy_s`](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)\
+[`strcat_s, wcscat_s, _mbscat_s`](../c-runtime-library/reference/strcat-s-wcscat-s-mbscat-s.md)\
+[`pin_ptr` (C++/CLI)](../extensions/pin-ptr-cpp-cli.md)
