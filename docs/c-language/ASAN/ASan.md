@@ -1,6 +1,6 @@
 ---
 title: "Address Sanitizer"
-description: "Technical descrption of the AddressSanitizer feature for Microsoft Visual C++."
+description: "Technical description of the Address Sanitizer feature for Microsoft Visual C++."
 ms.date: 01/05/2021
 f1_keywords: ["ASan","sanitizers","commandAddressSanitizer","memory safety","heap buffer overflow", "stack buffer overflow", "double free", "use after free", "type mismatch"]
 helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Clang runtime","runtime"]
@@ -18,7 +18,7 @@ Using this flag can reduce your time spent on:
 - Stress testing
 - Integrating new source code
 
-Building with `-fsanitize=address` and using your existing test assets, is a highly recommended step in properly testing your software. With just a [simple recompile](#Simple-command-line-interface), you can expose many difficult to find, errors with **no false positives**. This class of errors is not found with [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) or [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). 
+Building with `-fsanitize=address` and using your existing test assets, is a highly recommended step in properly testing your software. With just a [simple recompile](#Simple-command-line-interface), you can expose difficult to find, errors with **no false positives**. This class of errors is not found with [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) or [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). 
 
 ## Developer Message
 
@@ -35,14 +35,14 @@ Microsoft recommends using the Address Sanitizer in these **three standard workf
     - CMake
     - MSBuild
 
-- **Fuzzing** - build with the supported libFuzzer
+- **Fuzzing** - build with the [libFuzzer](https://llvm.org/docs/LibFuzzer.html) wrapper
     - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
     - Local Machine
 
 You can customize address sanitizer functionality in the binaries compiled for all these workflows, as covered in this section
 
 - **Customizable** - Coverage
-    - Enhance Coverage - Hooking your allocators
+    - Enhance Coverage - [Hooking your allocators](Address-sanitizer-runtimes.md)
     - Remove Coverage  - ASan at function of variable granularity
 
 Extensive documentation already exists for these language and platform dependent implementations of the Address Sanitizer technology.
@@ -51,26 +51,32 @@ Extensive documentation already exists for these language and platform dependent
 - [Apple](https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early)
 - [GCC](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
 
-This article will cover all the information needed to enable your implementation for any of the three workflows listed above. The information will be specific to the Microsoft Windows 10 platform and supplement what's already been produced at Google, Apple and GCC web sites. We start with a simple command line use of the compiler and linker.
+This article will cover all the information needed to enable your builds for any of the three workflows listed above. The information will be specific to the Microsoft Windows 10 platform and supplement what's already been produced at Google, Apple and GCC web sites. We start with a simple command line use of the compiler and linker.
 
 > [!NOTE] Current support is limited to x86 and AMD64 on Windows10. **Customer feedback** would help us prioritize shipping these sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
 
 ## Simple command line interface
 
-Adding the flag -fsanitize=address to your command line (with /Zi to emit debug info.) is all you need to compile,link and run instrumented code in an .EXE or DLL.The flag -fsanitize=address is compatible with all existing C or C++ optimization flags (e.g., /Od, /O1, /O2, /O2 /GL and PGO).
+Adding the flag -fsanitize=address to your command line (with /Zi to emit debug info.) is all you need to compile and automatically link all required libraries. This can be used to create an .EXE or DLL. The compiler flag `-fsanitize=address` is compatible with all existing C++ or C optimization levels (e.g., /Od, /O1, /O2, /O2 /GL and PGO).
+
+**Creating a main.exe in one step.**
 
                      C:\> cl -fsanitize=address /Zi main.cpp file2.cpp 3dparty.lib
 
-In this example the compiler will automatically link main.exe with the static versions of the AddressSanitizer runtime binaries and the static CRT. Throwing /MD will cause the dynamic versions of the libraries to be used instead. 
+The compiler will default to automatically linking main.exe with the static versions of the Address Sanitizer runtime binaries and the static [CRT](https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features?view=msvc-160). Throwing [/MD](https://docs.microsoft.com/en-us/cpp/build/reference/md-mt-ld-use-run-time-library?view=msvc-160) flag will change the default link behavior and cause the dynamic versions of the libraries to be used instead. 
 
-For more partitioned build systems, the following command lines show examples of the required compile and link lines to produce an "instrumeneted" main.exe:
+For more partitioned build systems, the following command lines show examples of the required compile and link lines to produce an "instrumented" main.exe.
+
+**Creating a main.exe with an explicit link line.**
+
 
                      C:\> cl -c -fsanitize=address -O2 -Zi    main.cpp file2.cpp file3.cpp
+
                      C:\> link -debug -incremental:no    main.obj file2.obj file3.obj
 
-The compiler requires opting into -Zi for debug information and the linker requires -debug to emit the debug information. The one caveat is that -debug defaults to incremental linking which is not compatible. So the Address Sanitizer requires `link -debug -incremental:no` and it will warn appropriately.
+The compiler requires opting into -Zi for debug information and the linker requires -debug to emit that debug information. One caveat is that `-debug` defaults to producing code for future incremental linking for rapid iterative development. which is not compatible with the stack walker used by the Address Sanitizer runtime. The Address Sanitizer requires `link -debug -incremental:no` and it will warn appropriately.
 
-See the section on **building** for more details.
+See the section on [building to target the Address Sanitizer runtime.](.\ASan-building.md)
 
 ## Errors ##
 
@@ -137,16 +143,22 @@ Consider the following error found in our cached version of spec2k6\povray where
 
 ### Snapshot files
 
-There's a powerful feature for workflows that need to retain detailed error information for processing errors off-line. If you **simply** set an environment variable, then your .EXE or .DLL will create a snap shot file. This is just a [dump file](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/proc_snap/export-a-process-snapshot-to-a-file) with meta-data for reporting an ASan error. The snapshot file can be displayed offline, in the Visual Studio IDE and the error will be displayed against the exact source line number.
+There's a powerful feature for workflows that need to retain detailed error information for processing errors off-line. If you **simply** set an environment variable, then your .EXE or .DLL will create a snap shot file. 
+
+`set ASAN_SAVE_DUMPS="MyFileName.dmpx"`
+
+Upon error, your application will produce MyFileName.dmpx which is a [dump file](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/proc_snap/export-a-process-snapshot-to-a-file) with extra meta-data for formatting an Address Santiizer error. This snapshot file can be displayed later (possibly on another machine), in a newer version of the Visual Studio IDE. The IDE will use the new meta-data to display the exact error on the exact source line number where it occurred.
+
+Note that this will require [symbols](https://docs.microsoft.com/en-us/windows/win32/dxtecharts/debugging-with-symbols) for the source you compiled with the error.
 
 ### VCASan library
 
 The flag -fsanitize=address automatically links a new static library to your .EXE or .DLL. This static library will automatically produce:
 
- - In memory meta-data for directly interfacing with the IDE while debugging.
- - Snap shot file with meta-data that can be displayed in Visual Studio off line
+ - In memory meta-data for directly interfacing with the VS IDE, [while debugging](Error-types).
+ - A [snap shot file](#Snapshot-files) with the same IDE meta-data.
 
-Consider these features in the section for [vcasan.lib](.\address-sanitizer-vcasan.md) 
+Consider these library features in the section for [vcasan.lib](.\address-sanitizer-vcasan.md) 
 
 ## Error types
 
