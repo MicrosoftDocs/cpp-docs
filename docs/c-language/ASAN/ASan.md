@@ -156,9 +156,9 @@ Note that this will require [symbols](https://docs.microsoft.com/en-us/windows/w
 The flag -fsanitize=address automatically links a new static library to your .EXE or .DLL. This static library will automatically produce:
 
  - In memory meta-data for directly interfacing with the VS IDE, [while debugging](Error-types).
- - A [snap shot file](#Snapshot-files) with the same IDE meta-data.
+ - An optional [snap shot file](#Snapshot-files) with the same IDE meta-data.
 
-Consider these library features in the section for [vcasan.lib](.\address-sanitizer-vcasan.md) 
+These library features are detailed further in the section for [vcasan.lib](.\address-sanitizer-vcasan.md) 
 
 ## Error types
 
