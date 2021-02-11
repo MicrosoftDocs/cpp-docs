@@ -1,23 +1,23 @@
-#include <iostream>
+#include <stdio.h>
 
-struct S {
-    void Init(const int* v) { p = v; }
-    ~S() { std::cout << *p; }    // Boom!
-    const int* p;
+struct IntHolder {
+  explicit IntHolder(int *val = 0) : val_(val) { }
+  ~IntHolder() {
+    printf("Value: %d\n", *val_);  // Bom!
+  }
+  void set(int *val) { val_ = val; }
+  int *get() { return val_; }
+
+  int *val_;
 };
 
-void uas_in_destructor() {
-    S s;
-    int v = 5;
-    s.Init(&v);
-
-              // The destructor for "s" called here
-
-    std::cout <<  "The lifetime of v ends before the destructor of local s is called by compiler";
-    return;
+int main(int argc, char *argv[]) {
+  // It is incorrect to use "x" inside the IntHolder destructor, because the lifetime of "x"
+  // ends earlier. Per C++ standard, local lLifetimes end in reverse order of declaration.
+  IntHolder holder;
+  int x = argc;
+  holder.set(&x);
+  return 0;
 }
 
-int main() {
-    uas_in_destructor();
-    return 0;
-}
+
