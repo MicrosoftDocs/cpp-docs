@@ -8,4 +8,4 @@ assignees: ''
 ---
 
 ISO paper for this feature: [PaperID](https://wg21.link/P0586R2)
-Furst implemented in: VS YYYY major.minor
+First implemented in: VS YYYY major.minor
