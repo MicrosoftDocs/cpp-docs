@@ -33,7 +33,6 @@ This is an additional, experimental flag to change code generation. This code is
 
             set ASAN_OPTIONS=detect_stack_use_after_return=1
 
-
 Stack frames are allocated in the heap and linger after function return. The runtime will garbage collect these frame objects after a certain time interval. By transferring the address of locals to frames that persist in the heap, we can then detect use of any locals after the function returns.
 
 See the [algorithm for stack use after return](https://github.com/google/sanitizers/wiki/AddressSanitizerUseAfterReturn) as documented by Goolge.
@@ -44,6 +43,14 @@ What does the [linker](.\asan-linker.md) emit and an overview and a drill down
 
 [Notes on linker](https://microsoft.sharepoint.com/teams/DD_VC/_layouts/OneNote.aspx?id=%2Fteams%2FDD_VC%2FShared%20Documents%2FVisual%20C%2B%2B%20Team&wd=target%28BE%20Team%2FSecurity%2FCompiler%20Security%20V-Team.one%7CC2A34F56-6B09-4AB1-869B-DFD77BFD7399%2FNotes%20about%20vcasan%20and%20%5C%2Finferasanlibs%7C6D1BD27A-F55A-44BC-BF7C-AF6404C4C5C1%2F%29)
 
+## Customizing functionality 
+
+You can customize address sanitizer functionality compiled into the binaries used for any workflow. The major changes are:
+
+- Enhancing Coverage - [Hooking your allocators](Address-sanitizer-runtimes.md)
+- Removing Coverage  - ASan at function of variable granularity
+
+There are smaller tweaks that can be made by setting the environment variable `ASAN_OPTIONS`
 
 ## Address Sanitizer Runtimes
 

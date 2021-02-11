@@ -8,7 +8,7 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Cl
 
 # Address Sanitizer
 
-We describe a new compiler flag -fsanitize=address which may result in exposing hidden [errors](#errors) in your code, not exposed by your current testing.
+We describe a new compiler flag `-fsanitize=address` which may result in exposing hidden [errors](#errors) in your code, not exposed by current testing.
 
 Using this flag can reduce your time spent on:
 
@@ -18,7 +18,8 @@ Using this flag can reduce your time spent on:
 - Stress testing
 - Integrating new source code
 
-Building with `-fsanitize=address` and using your existing test assets, is a highly recommended step in properly testing your software. With just a [simple recompile](#Simple-command-line-interface), you can expose difficult to find, errors with **no false positives**. This class of errors is not found with [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) or [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). 
+Building with `-fsanitize=address` and using your existing test assets, is a highly recommended step in properly testing your software. With just a [simple recompile](#Simple-command-line-interface), you can expose difficult to find, errors with **no false positives**. This class of errors is not found with [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) or [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160).
+
 
 ## Developer Message
 
@@ -39,21 +40,22 @@ Microsoft recommends using the Address Sanitizer in these **three standard workf
     - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
     - Local Machine
 
-You can customize address sanitizer functionality in the binaries compiled for all these workflows, as covered in this section
 
-- **Customizable** - Coverage
-    - Enhance Coverage - [Hooking your allocators](Address-sanitizer-runtimes.md)
-    - Remove Coverage  - ASan at function of variable granularity
 
+This MSDN article will cover all the information needed to enable your builds for any of the three workflows listed above. The information will be specific to the Microsoft Windows 10 platform and supplement what's already been produced at Google, Apple and GCC web sites. We start with a simple command line use of the compiler and linker.
+
+
+> [!NOTE] Current support is limited to x86 and AMD64 on Windows10. **Customer feedback** would help us prioritize shipping these sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
+
+## Industry documentation
 Extensive documentation already exists for these language and platform dependent implementations of the Address Sanitizer technology.
 
-- [Google](https://clang.llvm.org/docs/AddressSanitizer.html)
+- [Google](https://github.com/google/sanitizers/wiki/AddressSanitizer)
 - [Apple](https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early)
 - [GCC](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
 
-This article will cover all the information needed to enable your builds for any of the three workflows listed above. The information will be specific to the Microsoft Windows 10 platform and supplement what's already been produced at Google, Apple and GCC web sites. We start with a simple command line use of the compiler and linker.
+This seminal paper on the [Address Sanitizer](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) describes the implementation.
 
-> [!NOTE] Current support is limited to x86 and AMD64 on Windows10. **Customer feedback** would help us prioritize shipping these sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
 
 ## Simple command line interface
 
@@ -76,7 +78,7 @@ For more partitioned build systems, the following command lines show examples of
 
 The compiler requires opting into -Zi for debug information and the linker requires -debug to emit that debug information. One caveat is that `-debug` defaults to producing code for future incremental linking for rapid iterative development. which is not compatible with the stack walker used by the Address Sanitizer runtime. The Address Sanitizer requires `link -debug -incremental:no` and it will warn appropriately.
 
-See the section on [building to target the Address Sanitizer runtime.](.\ASan-building.md)
+See the section on [building to target the Address Sanitizer runtime.](.\ASan-building.md) for more detail.
 
 ## Errors ##
 
@@ -88,9 +90,9 @@ There are three ways your code can generate error reports:
 
 These types of reports can be generated for many types of [errors found at runtime](#Error-types). 
 
-### Example
+### Example 
 
-The following source code is **safe by coincidence**. It will **not** fail at runtime. The Windows 10, 16.9 version of the C runtime, will pad the 13 bytes requested to facilitate alignment for subsequent calls to alloca. 
+The following source code is **safe by coincidence**. It will **not** fail at runtime. The Windows 10, 16.9 version of the C runtime, will pad the 13 bytes requested, in order to facilitate alignment for subsequent calls to alloca. 
 
 ```cpp
     int x = 13;
@@ -131,6 +133,8 @@ From top to bottom
 
 4.) The [**shadow bytes**](.\asan-shadowbytes.md) that correspond to the address used in the overflowing store, indicate 13 bytes (8 + 5) were explicitly allocated for the alloca.
 
+**Note:**  The call stack is converted to function names through the [LLVM symbolizer](https://llvm.org/docs/CommandGuide/llvm-symbolizer.html). The Address Sanitizer creates the resto of the report based on its context, the shadow bytes, and meta-data the compiler produces.
+
 ### IDE 
 
 By simply recompiling with -fsanitze=address and invoking Visual Studio from the command line, the IDE will automatically map a pop up to the line and column causing the error.
@@ -138,6 +142,7 @@ By simply recompiling with -fsanitze=address and invoking Visual Studio from the
             devenv /debugexe MyApp.exe arg1 arg2 ... argn
 
 Consider the following error found in our cached version of spec2k6\povray where the program allocates 24-bytes but only frees 8-bytes. The details for where the allocation and free took place are in the **output pane** of the Visual Studio screen shot.
+
 
 ![IDE: povray](media\povray.png)
 
@@ -147,9 +152,9 @@ There's a powerful feature for workflows that need to retain detailed error info
 
 `set ASAN_SAVE_DUMPS="MyFileName.dmpx"`
 
-Upon error, your application will produce MyFileName.dmpx which is a [dump file](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/proc_snap/export-a-process-snapshot-to-a-file) with extra meta-data for formatting an Address Santiizer error. This snapshot file can be displayed later (possibly on another machine), in a newer version of the Visual Studio IDE. The IDE will use the new meta-data to display the exact error on the exact source line number where it occurred.
+Upon error, your application will produce MyFileName.dmpx which is a [dump file](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/proc_snap/export-a-process-snapshot-to-a-file) containing extra meta-data. This meta-data is used to formatting an Address Santiizer error in the IDE on top you your source code. This snapshot file can be displayed later (possibly on another machine), in a newer version of the Visual Studio IDE. The IDE will use the meta-data to display the exact error on the exact source line as it would be seen in a live debug session.
 
-Note that this will require [symbols](https://docs.microsoft.com/en-us/windows/win32/dxtecharts/debugging-with-symbols) for the source you compiled with the error.
+**Note** that this will require [symbols](https://docs.microsoft.com/en-us/windows/win32/dxtecharts/debugging-with-symbols) from a PDB. This PDB must be produced from the version of the source you compiled to produce the executable that contained the Address Sanitizer error. That insures the position of the error, and the call stack will be correct. 
 
 ### VCASan library
 
@@ -182,10 +187,18 @@ The following list of runtime errors can be exposed when you run your binaries c
 - [use-after-poison](.\use-after-poison.md)
 - [alloc-dealloc-mismatch](.\alloc-dealloc-mismatch.md)
 
+## Differences with CLANG and GCC
+
+We differ in two functional areas:
+
+ - **stack-use-after-scope** - this is on by default and can't be turned off.
+ - **stack-use-after-return** - this is not available by just setting ASAN_OPTIONS
+ 
+These decisions were made to reduce the test matrix used to ship this first version.
+
 ## See also
 
    [Building for the Address Sanitizer with MSVC](.\Asan-building.md)
 
-   [Address Sanitizer runtime](.\Address-sanitizer-runtimes.md)
+   [Address Sanitizer runtime](.\Address-sanitizer-runtime.md)
 
-   [Fuzzing - NOT YET AGGREED TO]( )

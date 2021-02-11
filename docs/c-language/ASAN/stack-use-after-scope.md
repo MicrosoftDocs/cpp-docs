@@ -38,34 +38,43 @@ int main() {
 ```
 ## Resutling Error
 
-![example1-screenshot](SRC_CODE\stack-use-after-scope\example2.png) 
+![example2-screenshot](SRC_CODE\stack-use-after-scope\example2.png) 
 
-## Example 3 - destructor
+## Example 3 - destructor ordering relative to locals
 
 ```cpp
-#include <iostream>
 
-struct S {
-    void Init(const int* v) { p = v; }
-    ~S() { std::cout << *p; }    // Boom!
-    const int* p;
+// cl /O1 -fsanitize=address. This will not fire with /Od
+
+#include <stdio.h>
+
+struct IntHolder {
+  explicit IntHolder(int *val = 0) : val_(val) { }
+  ~IntHolder() {
+    printf("Value: %d\n", *val_);  // Bom!
+  }
+  void set(int *val) { val_ = val; }
+  int *get() { return val_; }
+
+  int *val_;
 };
 
-void uas_in_destructor() {
-    S s;
-    int v = 5;
-    s.Init(&v);
+int main(int argc, char *argv[]) {
+  // It is incorrect to use "x" inside the IntHolder destructor, because the lifetime of "x"
+  // ends earlier. Per C++ standard, local lLifetimes end in reverse order of declaration.
 
-              // The destructor for "s" called here
+  IntHolder holder;
+  int x = argc;
+  holder.set(&x);
 
-    std::cout <<  "The lifetime of v ends before the destructor of local s is called by compiler";
-}
+       // .. dtor for holder is inserted by compiler generated code and x is out of scope
 
-void main() {
-    uas_in_destructor();
+  return 0;
 }
 ```
 ## Resulting error
+
+![example3-screenshot](SRC_CODE\stack-use-after-scope\example3.png) 
 
 ## Example 4 - temporaries
 ```cpp
@@ -99,4 +108,4 @@ void main() {
 ```
 ## Resulting error
 
-![example1-screenshot](SRC_CODE\stack-use-after-scope\example2.png) 
+![example4-screenshot](SRC_CODE\stack-use-after-scope\example4.png) 
