@@ -1,5 +1,5 @@
 ---
-name: 'New C++ STL library doc topic '
+name: 'New C++ STL library documentation topic '
 about: Create a C++ doc tracking work item
 title: ''
 labels: STL doc work
@@ -7,5 +7,5 @@ assignees: ''
 
 ---
 
-ISO paper for this feature: [PaperID](https://wg21.link/P0586R2)
+ISO paper for this feature: [PaperID]()
 First implemented in: VS YYYY major.minor
