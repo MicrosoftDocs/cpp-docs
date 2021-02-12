@@ -8,9 +8,11 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Cl
 
 # Address Sanitizer
 
-## Intro
+C & C++ are some of the most widely used programming languages in the world. While C & C++ are powerful languages, they can suffer from different types of bugs which affect program correctness and program security. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE support Address Sanitizer technology to help light up hard-to-find bugs that can be otherwise difficult to find.
 
-We describe a new compiler flag `-fsanitize=address` which may result in exposing hidden [errors](#errors) in your code, not exposed by current testing.
+After choosing the (!asan installer option!), simply select the Address Sanitizer dropdown in your project properties, or set the `-fsanitize=address` compiler switch on the command line, or use Visual Studio cmake integration, recompile, and then run your program as normal to light up [bugs](#errors) right in the debugger.
+	
+For CI/CD systems use the ASAN_SAVE_DUMPS environment variable to store ASAN crash dumps for post-mortem debugging.
 
 Using this flag can reduce your time spent on:
 
@@ -20,19 +22,19 @@ Using this flag can reduce your time spent on:
 - Stress testing
 - Integrating new source code
 
-Building with `-fsanitize=address` and using your existing test assets, is a highly recommended step in properly testing your software. With just a [simple recompile](#Simple-command-line-interface), you can expose difficult to find, errors with **no false positives**. This class of errors is not found with [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) or [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160).
+The Address Sanitizer is a compiler and runtime runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Starting with Visual Studio 2019 16.9 this technology is offered in the Visual C++ compiler toolchain. Many projects can enable Address Sanitizer with a project setting, or a single additional compiler switch. There are known limitations in certain (!!! link !!!) compilation modes (incremental linking, or the [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) switch, for example), but otherwise all configurations of x86 and x64 are supported.
 
+`-fsanitize=address` is a powerful alternative to [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160), and in addition to [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160) provides compile-time and run-time bug-finding technologies which leverage your existing build systems and existing test assets.
 
-## Developer Message
+## Using the Address Sanitizer 
 
- The Address Sanitizer is a compiler based technology targeting a runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). This [compiler](#Compiler) and [runtime](#address-sanitizer-runtimes) technology has become the "defacto" industry standard for finding memory safety issues. We now offer this technology as a fully supported feature in Visual Studio for the Windows platform. If your existing code compiles with our current Windows compiler, then it will compile with the extra flag -fsanitize=address under any level of optimization and all other compatible flags (e.g., /RTC is not compatible, yet).
+!!! We need a picture of the installer option here and mention it's required first !!!
 
 Microsoft recommends using the Address Sanitizer in these **three standard workflows**:
 
 - **Developer inner loop**
     - Visual Studio - Command line
-    - Visual Studio - Project system with integrated IDE error reporting support.
-
+    - Visual Studio - Project system with integrated IDE error reporting support
     
 - **CI/CD** - continuous integration / continuous development
     - CMake
@@ -42,34 +44,108 @@ Microsoft recommends using the Address Sanitizer in these **three standard workf
     - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
     - Local Machine
 
-This MSDN article will cover all the information needed to enable your builds for any of the three workflows listed above. The information will be specific to the Microsoft Windows 10 platform and supplement existing documentation from [Google, Apple and GCC](#Google,-Apple-and-GCC-documentation). We start with a simple command line use of the compiler and linker.
+This article will cover all the information needed to enable your builds for any of the three workflows listed above. The information will be specific to the Microsoft Windows 10 platform and supplement existing documentation from [Google, Apple and GCC](#Google,-Apple-and-GCC-documentation).
 
 > [!NOTE] Current support is limited to x86 and AMD64 on Windows 10. **Customer feedback** would help us prioritize shipping these sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
 
+## Using the Address Sanitizer from a Developer Command Prompt
 
-## Simple command line interface
+Compile with `-fsanitize=address` to enable Address Sanitizer. The compiler flag `-fsanitize=address` is compatible with all existing C++ or C optimization levels (e.g., /Od, /O1, /O2, /O2 /GL and PGO), works with static and dynamic CRTs (e.g. /MD, /MDd, /MT, /MTd) and can be used to create a .EXE or .DLL. Debug information is required for the Address Sanitizer runtime to print correct call stacks on errors; In this example we pass `-Zi`.
 
-Adding the flag -fsanitize=address to your command line (with /Zi to emit debug info.) is all you need to compile and automatically link all required libraries. This can be used to create an .EXE or DLL. The compiler flag `-fsanitize=address` is compatible with all existing C++ or C optimization levels (e.g., /Od, /O1, /O2, /O2 /GL and PGO).
+The Address Sanitizer libraries (.lib files) will be linked in for you. For more detail, and for guidelines on partitioned build systems, see [building to target the Address Sanitizer runtime.](.\ASan-building.md).
 
-**Creating a main.exe in one step.**
+```cpp
+    #include <iostream>
+    int x[100];
+    int main() {
+        std::cout << "Hello!" << std::endl;
+        x[100] = 5; // Boom!
+        return 0;
+    }
 
-                     C:\> cl -fsanitize=address /Zi main.cpp file2.cpp 3dparty.lib
+```
 
-The compiler will default to automatically linking main.exe with the static versions of the Address Sanitizer runtime binaries and the static [CRT](https://docs.microsoft.com/en-us/cpp/c-runtime-library/crt-library-features?view=msvc-160). Throwing [/MD](https://docs.microsoft.com/en-us/cpp/build/reference/md-mt-ld-use-run-time-library?view=msvc-160) flag will change the default link behavior and cause the dynamic versions of the libraries to be used instead. 
+                     C:\> cl main.cpp -fsanitize=address /Zi
 
-For more partitioned build systems, the following command lines show examples of the required compile and link lines to produce an "instrumented" main.exe.
+!!! Show media/something here !!! with the red boxes. And describe the red boxes, and the note about the symbolizer.
 
-**Creating a main.exe with an explicit link line.**
+## Using the Address Sanitizer from Visual Studio
 
-                     C:\> cl -c -fsanitize=address -O2 -Zi    main.cpp file2.cpp file3.cpp
+!!! todo, make a different example with a different error, animated gif of IDE, and list of instructions !!!
 
-                     C:\> link -debug -incremental:no    main.obj file2.obj file3.obj
+## Using the Address Sanitizer from Visual Studio: CMake
 
-The compiler requires opting into -Zi for debug information and the linker requires -debug to emit that debug information. One caveat is that `-debug` defaults to producing code for future incremental linking for rapid iterative development. which is not compatible with the stack walker used by the Address Sanitizer runtime. The Address Sanitizer requires `link -debug -incremental:no` and it will warn appropriately.
+!!! todo, make a different example with a different error, animated gif of CMake, and list of instructions !!!
 
-See the section on [building to target the Address Sanitizer runtime.](.\ASan-building.md) for more detail.
+## Offline Address Sanitizer crash dumps
 
-## Errors ##
+Address Sanitizer exceptions are triggered one of the many [errors](#errors) are detected at runtime. When run from the command line the Address Sanitizer runtime produces text output with error information. When run from the Visual Studio IDE the debugger displays the error information.
+
+To produce a dump file of the error which can be debugged offline, set an environment variable which is consumed by the Address Sanitizer runtime. 
+
+`set ASAN_SAVE_DUMPS="MyFileName.dmpx"`
+
+Upon error, your application will produce MyFileName.dmpx which is a [dump file](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/proc_snap/export-a-process-snapshot-to-a-file) that can be opened and debugged using Visual Studio.
+
+**Note** that like all other dump files, [debugging symbols](https://docs.microsoft.com/en-us/windows/win32/dxtecharts/debugging-with-symbols) must be available and must match the version of the source compiled.
+
+
+## Error types
+
+The following list of runtime errors can be exposed when you run your binaries compiled Address Sanitizer:
+
+- [stack-use-after-scope](.\examples-stack-use-after-scope.md)
+- [stack-buffer-overflow](.\examples-stack-buffer-overflow.md)
+- [stack-buffer-underflow](.\examples-stack-buffer-underflow.md)
+- [stack-use-after-return](.\examples-stack-use-after-return.md)
+- [heap-buffer-overflow](.\examples-heap-buffer-overflow.md)
+- [heap-use-after-free](.\examples-heap-use-after-free.md)
+- [double-free](.\examples-double-free.md)
+- [dynamic-stack-buffer-overflow](.\examples-dynamic-stack-buffer-overflow.md)
+- [global-overflow](.\examples-global-overflow.md)
+- [calloc-overflow](.\examples-calloc-overflow.md)
+- [new-delete-type-mismatch](.\examples-new-delete-type-mismatch.md)
+- [memcpy-param-overlap](.\examples-memcpy-param-overlap.md)
+- [strcat-param-overlap](.\examples-strcat-param-overlap.md)
+- [allocation-size-too-big](.\examples-allocation-size-too-big.md)
+- [invalid-aligned-alloc-alignment](.\examples-invalid-aligned-alloc-alignment.md)
+- [use-after-poison](.\examples-use-after-poison.md)
+- [alloc-dealloc-mismatch](.\examples-alloc-dealloc-mismatch.md)
+
+## Differences with Clang
+
+We differ in two functional areas:
+
+- **stack-use-after-scope** - this is on by default and can't be turned off.
+- **stack-use-after-return** - this is not available by just setting ASAN_OPTIONS
+
+See [Building for the Address Sanitizer with MSVC](.\asan-building.md).These decisions were made to reduce the test matrix used to ship this first version.
+
+## Exiting industry documentation
+
+Extensive documentation already exists for these language and platform dependent implementations of the Address Sanitizer technology.
+
+- [Google](https://github.com/google/sanitizers/wiki/AddressSanitizer)
+- [Apple](https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early)
+- [GCC](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
+
+This seminal paper on the [Address Sanitizer](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) describes the implementation.
+
+!!! is this where we should mention that we don't implement the entire complete feature set? !!!
+
+## See also
+
+- [Building for the Address Sanitizer with MSVC](.\asan-building.md)
+
+- [Address Sanitizer runtime](.\address-sanitizer-runtime.md)
+
+These structure all further details into the tools and the run times they target.
+
+----
+
+## STUFF TO KEEP -- remove later!!!!!
+
+## Viewing Address Saniziter Errors ##
 
 There are three ways your code can generate error reports:
 
@@ -81,6 +157,7 @@ These types of reports can be generated for many types of [errors found at runti
 
 ### Example 
 
+!!! Jim, I think we need a simpler example here. !!!
 The following source code is **safe by coincidence**. It will **not** fail at runtime. The Windows 10, 16.9 version of the C runtime, will pad the 13 bytes requested, in order to facilitate alignment for subsequent calls to alloca. 
 
 ```cpp
@@ -134,15 +211,6 @@ Consider the following error found in our cached version of spec2k6\povray where
 
 ![IDE: povray](media\povray.png)
 
-### Snapshot files
-
-There's a powerful feature for workflows that need to retain detailed error information for processing errors off-line. If you **simply** set an environment variable, then your .EXE or .DLL will create a snap shot file. 
-
-`set ASAN_SAVE_DUMPS="MyFileName.dmpx"`
-
-Upon error, your application will produce MyFileName.dmpx which is a [dump file](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/proc_snap/export-a-process-snapshot-to-a-file) containing extra meta-data. This meta-data is used to formatting an Address Santiizer error in the IDE on top you your source code. This snapshot file can be displayed later (possibly on another machine), in a newer version of the Visual Studio IDE. The IDE will use the meta-data to display the exact error on the exact source line as it would be seen in a live debug session.
-
-**Note** that this will require [symbols](https://docs.microsoft.com/en-us/windows/win32/dxtecharts/debugging-with-symbols) from a PDB. This PDB must be produced from the version of the source you compiled to produce the executable that contained the Address Sanitizer error. That insures the position of the error, and the call stack will be correct.
 
 ### VCASan library
 
@@ -152,53 +220,3 @@ The flag -fsanitize=address automatically links a new static library to your .EX
 - An optional [snap shot file](#Snapshot-files) with the same IDE meta-data.
 
 These library features are detailed further in the section for [vcasan.lib](.\address-sanitizer-vcasan.md) 
-
-## Error types
-
-The following list of runtime errors can be exposed when you run your binaries compiled -fsanitize=address. A drill down of each class of error, provides source code and Visual Stud screen shots.  There are over 30 examples, with screen shots, within the following:
-
-- [stack-use-after-scope](.\examples-stack-use-after-scope.md)
-- [stack-buffer-overflow](.\examples-stack-buffer-overflow.md)
-- [stack-buffer-underflow](.\examples-stack-buffer-underflow.md)
-- [stack-use-after-return](.\examples-stack-use-after-return.md)
-- [heap-buffer-overflow](.\examples-heap-buffer-overflow.md)
-- [heap-use-after-free](.\examples-heap-use-after-free.md)
-- [double-free](.\examples-double-free.md)
-- [dynamic-stack-buffer-overflow](.\examples-dynamic-stack-buffer-overflow.md)
-- [global-overflow](.\examples-global-overflow.md)
-- [calloc-overflow](.\examples-calloc-overflow.md)
-- [new-delete-type-mismatch](.\examples-new-delete-type-mismatch.md)
-- [memcpy-param-overlap](.\examples-memcpy-param-overlap.md)
-- [strcat-param-overlap](.\examples-strcat-param-overlap.md)
-- [allocation-size-too-big](.\examples-allocation-size-too-big.md)
-- [invalid-aligned-alloc-alignment](.\examples-invalid-aligned-alloc-alignment.md)
-- [use-after-poison](.\examples-use-after-poison.md)
-- [alloc-dealloc-mismatch](.\examples-alloc-dealloc-mismatch.md)
-
-## Differences with Clang
-
-We differ in two functional areas:
-
-- **stack-use-after-scope** - this is on by default and can't be turned off.
-- **stack-use-after-return** - this is not available by just setting ASAN_OPTIONS
-
-See [Building for the Address Sanitizer with MSVC](.\asan-building.md).These decisions were made to reduce the test matrix used to ship this first version.
-
-## Exiting industry documentation
-
-Extensive documentation already exists for these language and platform dependent implementations of the Address Sanitizer technology.
-
-- [Google](https://github.com/google/sanitizers/wiki/AddressSanitizer)
-- [Apple](https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early)
-- [GCC](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
-
-This seminal paper on the [Address Sanitizer](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) describes the implementation.
-
-## See also
-
-- [Building for the Address Sanitizer with MSVC](.\asan-building.md)
-
-- [Address Sanitizer runtime](.\address-sanitizer-runtime.md)
-
-These structure all  further details into the tools and the run times they target.
-
