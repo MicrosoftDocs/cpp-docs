@@ -44,7 +44,8 @@ Microsoft recommends using the Address Sanitizer in these **three standard workf
 
 This MSDN article will cover all the information needed to enable your builds for any of the three workflows listed above. The information will be specific to the Microsoft Windows 10 platform and supplement existing documentation from [Google, Apple and GCC](#Google,-Apple-and-GCC-documentation). We start with a simple command line use of the compiler and linker.
 
-> [!NOTE] Current support is limited to x86 and AMD64 on Windows10. **Customer feedback** would help us prioritize shipping these sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
+> [!NOTE] Current support is limited to x86 and AMD64 on Windows 10. **Customer feedback** would help us prioritize shipping these sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
+
 
 ## Simple command line interface
 
@@ -121,7 +122,7 @@ From top to bottom
 
 4.) The [**shadow bytes**](.\asan-shadowbytes.md) that correspond to the address used in the overflowing store, indicate 13 bytes (8 + 5) were explicitly allocated for the alloca.
 
-**Note:**  The call stack is converted to function names through the [LLVM symbolizer](https://llvm.org/docs/CommandGuide/llvm-symbolizer.html). The Address Sanitizer creates the resto of the report based on its context, the shadow bytes, and meta-data the compiler produces.
+**Note:**  The call stack is converted to function names through the [LLVM symbolizer](https://llvm.org/docs/CommandGuide/llvm-symbolizer.html). The Address Sanitizer creates the rest of of the report based on its context, the shadow bytes, and meta-data the compiler produces.
 
 ### IDE
 

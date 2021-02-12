@@ -52,19 +52,31 @@ You can customize address sanitizer functionality compiled into the binaries use
 
 There are smaller tweaks that can be made by setting the environment variable `ASAN_OPTIONS`
 
-## Address Sanitizer Runtimes
+## Address Sanitizer Binaries
 
-This implementation of AddressSanitizer makes use of the Clang ASan runtime libraries. The runtime library version packaged with Visual Studio may contain features that are not yet available in the version packaged with Clang.
+
+This implementation of AddressSanitizer makes use of the Clang ASan runtime libraries. The runtime library version packaged with Visual Studio may contain features that are not yet available in the version packaged with Clang on Windows10.
 
 An overview of the features in this ported version of the Address Sanitizer runtime  runtime is available here: [AddressSanitizer runtime overview](address-sanitizer-runtime.md)
 
-### Static (x86,AMD64)
 
-These would appear on the raw link lines 
+### Linking – With static CRT 
 
-### Dynamic (x86,AMD64)
+Link the EXE with  
 
-These would appear on the raw link lines
+- set _LINK_= /debug -incremental:no /wholearchive:%MyVS%\lib\{arch}\clang_rt.asan-{arch}.lib 
+/wholearchive:%MyVS%\lib\{arch}\clang_rt.asan_cxx-{arch}.lib 
+
+Link the DLL with 
+
+- set _LINK_= /debug -incremental:no /wholearchive:%MyVS%\lib\{arch}\clang_rt.asan_dll_thunk-{arch}.lib
+
+### Linking – With dynamic CRT 
+
+Link both the EXE and DLL with: 
+
+- set _LINK_= /debug -incremental:no /wholearchive:%MyVS%\lib\{arch}\clang_rt.asan_dynamic-{arch}.lib      /wholearchive:%MyVS%\lib\{arch}\clang_rt.asan_dynamic_runtime_thunk-{arch}.lib 
+
 
 ## Visual Studio
 
