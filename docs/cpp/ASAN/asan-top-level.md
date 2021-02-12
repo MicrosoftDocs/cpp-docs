@@ -1,7 +1,7 @@
 ---
 title: "Address Sanitizer"
-description: "Technical description of the Address Sanitizer feature for Microsoft Visual C++."
-ms.date: 01/05/2021
+description: "Top level description of the Address Sanitizer feature for Microsoft Visual C++."
+ms.date: 02/05/2021
 f1_keywords: ["ASan","sanitizers","commandAddressSanitizer","memory safety","heap buffer overflow", "stack buffer overflow", "double free", "use after free", "type mismatch"]
 helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Clang runtime","runtime"]
 ---
@@ -23,7 +23,7 @@ Building with `-fsanitize=address` and using your existing test assets, is a hig
 
 ## Developer Message
 
- The Address Sanitizer is a compiler based technology targeting a runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). This [compiler](#Compiler) and [runtime](#Address-Sanitizer-Runtimes) technology has become the "defacto" industry standard for finding memory safety issues. We now offer this technology as a fully supported feature in Visual Studio for the Windows platform. If your existing code compiles with our current Windows compiler, then it will compile with the extra flag -fsanitize=address under any level of optimization and all other compatible flags (e.g., /RTC is not compatible, yet).
+ The Address Sanitizer is a compiler based technology targeting a runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). This [compiler](#Compiler) and [runtime](#address-sanitizer-runtimes) technology has become the "defacto" industry standard for finding memory safety issues. We now offer this technology as a fully supported feature in Visual Studio for the Windows platform. If your existing code compiles with our current Windows compiler, then it will compile with the extra flag -fsanitize=address under any level of optimization and all other compatible flags (e.g., /RTC is not compatible, yet).
 
 Microsoft recommends using the Address Sanitizer in these **three standard workflows**:
 
@@ -57,7 +57,6 @@ The compiler will default to automatically linking main.exe with the static vers
 For more partitioned build systems, the following command lines show examples of the required compile and link lines to produce an "instrumented" main.exe.
 
 **Creating a main.exe with an explicit link line.**
-
 
                      C:\> cl -c -fsanitize=address -O2 -Zi    main.cpp file2.cpp file3.cpp
 
@@ -122,13 +121,13 @@ From top to bottom
 
 **Note:**  The call stack is converted to function names through the [LLVM symbolizer](https://llvm.org/docs/CommandGuide/llvm-symbolizer.html). The Address Sanitizer creates the resto of the report based on its context, the shadow bytes, and meta-data the compiler produces.
 
-### IDE 
+### IDE
 
 By simply recompiling with -fsanitze=address and invoking Visual Studio from the command line, the IDE will automatically map a pop up to the line and column causing the error.
 
-            devenv /debugexe MyApp.exe arg1 arg2 ... argn
+                                     devenv /debugexe MyApp.exe arg1 arg2 ... argn
 
-Consider the following error found in our cached version of spec2k6\povray where the program allocates 24-bytes but only frees 8-bytes. The details for where the allocation and free took place are in the **output pane** of the Visual Studio screen shot.
+Consider the following error found in our cached version of spec2k6\povray where the program allocates 24-bytes but only frees 8-bytes. The details for where the allocation and free took place are in the **output pane** of the Visual Studio screen shot immediately below:
 
 ![IDE: povray](media\povray.png)
 
@@ -146,7 +145,7 @@ Upon error, your application will produce MyFileName.dmpx which is a [dump file]
 
 The flag -fsanitize=address automatically links a new static library to your .EXE or .DLL. This static library will automatically produce:
 
-- In memory meta-data for directly interfacing with the VS IDE, [while debugging](Error-types).
+- In memory meta-data for directly interfacing with the VS IDE, [while debugging](#Error-types).
 - An optional [snap shot file](#Snapshot-files) with the same IDE meta-data.
 
 These library features are detailed further in the section for [vcasan.lib](.\address-sanitizer-vcasan.md) 
@@ -173,16 +172,16 @@ The following list of runtime errors can be exposed when you run your binaries c
 - [use-after-poison](.\examples-use-after-poison.md)
 - [alloc-dealloc-mismatch](.\examples-alloc-dealloc-mismatch.md)
 
-## Differences with CLANG and GCC
+## Differences with Clang
 
 We differ in two functional areas:
 
 - **stack-use-after-scope** - this is on by default and can't be turned off.
 - **stack-use-after-return** - this is not available by just setting ASAN_OPTIONS
 
-These decisions were made to reduce the test matrix used to ship this first version.
+See [Building for the Address Sanitizer with MSVC](.\asan-building.md).These decisions were made to reduce the test matrix used to ship this first version.
 
-## Google, Apple and GCC documentation
+## Exiting industry documentation
 
 Extensive documentation already exists for these language and platform dependent implementations of the Address Sanitizer technology.
 
@@ -194,9 +193,9 @@ This seminal paper on the [Address Sanitizer](https://www.usenix.org/system/file
 
 ## See also
 
-- [Building for the Address Sanitizer with MSVC](.\Asan-building.md)
+- [Building for the Address Sanitizer with MSVC](.\asan-building.md)
 
-- [Address Sanitizer runtime](.\Address-sanitizer-runtime.md)
+- [Address Sanitizer runtime](.\address-sanitizer-runtime.md)
 
 These structure all  further details into the tools and the run times they target.
 
