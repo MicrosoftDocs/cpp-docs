@@ -8,9 +8,9 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Cl
 
 # Address Sanitizer
 
-C & C++ are some of the most widely used programming languages in the world. While C & C++ are powerful languages, they can suffer from different types of bugs which affect program correctness and program security. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE support Address Sanitizer technology to help light up hard-to-find bugs that can be otherwise difficult to find.
+C & C++ are powerful languages, but they can suffer from different types of bugs which affect program correctness and program security. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE support Address Sanitizer technology to help light up hard-to-find bugs.
 
-After choosing the (!asan installer option!), simply select the Address Sanitizer dropdown in your project properties, or set the `-fsanitize=address` compiler switch on the command line, or use Visual Studio cmake integration, recompile, and then run your program as normal to light up [bugs](#errors) right in the debugger.
+After choosing the (!!!asan installer option!!!), simply select the Address Sanitizer dropdown in your project properties, or set the `-fsanitize=address` compiler switch on the command line, or use Visual Studio cmake integration, recompile, and then run your program as normal to light up [bugs](#errors) right in the debugger.
 	
 For CI/CD systems use the ASAN_SAVE_DUMPS environment variable to store ASAN crash dumps for post-mortem debugging.
 
