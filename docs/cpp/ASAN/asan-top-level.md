@@ -194,7 +194,7 @@ Extensive documentation already exists for these language and platform dependent
 
 This seminal paper on the [Address Sanitizer](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) describes the implementation.
 
-## See also
+## Building and Runtimes
 
 - [Building for the Address Sanitizer with MSVC](.\asan-building.md)
 
