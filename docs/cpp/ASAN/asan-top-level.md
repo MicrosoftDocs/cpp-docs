@@ -218,5 +218,3 @@ The flag -fsanitize=address automatically links a new static library to your .EX
 
 - In memory meta-data for directly interfacing with the VS IDE, [while debugging](#Error-types).
 - An optional [snap shot file](#Snapshot-files) with the same IDE meta-data.
-
-These library features are detailed further in the section for [vcasan.lib](.\address-sanitizer-vcasan.md) 
