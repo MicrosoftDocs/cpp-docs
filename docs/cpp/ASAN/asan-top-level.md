@@ -8,6 +8,8 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Cl
 
 # Address Sanitizer
 
+## Intro
+
 We describe a new compiler flag `-fsanitize=address` which may result in exposing hidden [errors](#errors) in your code, not exposed by current testing.
 
 Using this flag can reduce your time spent on:
