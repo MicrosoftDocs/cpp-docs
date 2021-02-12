@@ -40,22 +40,9 @@ Microsoft recommends using the Address Sanitizer in these **three standard workf
     - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
     - Local Machine
 
-
-
-This MSDN article will cover all the information needed to enable your builds for any of the three workflows listed above. The information will be specific to the Microsoft Windows 10 platform and supplement what's already been produced at Google, Apple and GCC web sites. We start with a simple command line use of the compiler and linker.
-
+This MSDN article will cover all the information needed to enable your builds for any of the three workflows listed above. The information will be specific to the Microsoft Windows 10 platform and supplement existing documentation from [Google, Apple and GCC](#Google,-Apple-and-GCC-documentation). We start with a simple command line use of the compiler and linker.
 
 > [!NOTE] Current support is limited to x86 and AMD64 on Windows10. **Customer feedback** would help us prioritize shipping these sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
-
-## Industry documentation
-Extensive documentation already exists for these language and platform dependent implementations of the Address Sanitizer technology.
-
-- [Google](https://github.com/google/sanitizers/wiki/AddressSanitizer)
-- [Apple](https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early)
-- [GCC](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
-
-This seminal paper on the [Address Sanitizer](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) describes the implementation.
-
 
 ## Simple command line interface
 
@@ -143,7 +130,6 @@ By simply recompiling with -fsanitze=address and invoking Visual Studio from the
 
 Consider the following error found in our cached version of spec2k6\povray where the program allocates 24-bytes but only frees 8-bytes. The details for where the allocation and free took place are in the **output pane** of the Visual Studio screen shot.
 
-
 ![IDE: povray](media\povray.png)
 
 ### Snapshot files
@@ -154,14 +140,14 @@ There's a powerful feature for workflows that need to retain detailed error info
 
 Upon error, your application will produce MyFileName.dmpx which is a [dump file](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/proc_snap/export-a-process-snapshot-to-a-file) containing extra meta-data. This meta-data is used to formatting an Address Santiizer error in the IDE on top you your source code. This snapshot file can be displayed later (possibly on another machine), in a newer version of the Visual Studio IDE. The IDE will use the meta-data to display the exact error on the exact source line as it would be seen in a live debug session.
 
-**Note** that this will require [symbols](https://docs.microsoft.com/en-us/windows/win32/dxtecharts/debugging-with-symbols) from a PDB. This PDB must be produced from the version of the source you compiled to produce the executable that contained the Address Sanitizer error. That insures the position of the error, and the call stack will be correct. 
+**Note** that this will require [symbols](https://docs.microsoft.com/en-us/windows/win32/dxtecharts/debugging-with-symbols) from a PDB. This PDB must be produced from the version of the source you compiled to produce the executable that contained the Address Sanitizer error. That insures the position of the error, and the call stack will be correct.
 
 ### VCASan library
 
 The flag -fsanitize=address automatically links a new static library to your .EXE or .DLL. This static library will automatically produce:
 
- - In memory meta-data for directly interfacing with the VS IDE, [while debugging](Error-types).
- - An optional [snap shot file](#Snapshot-files) with the same IDE meta-data.
+- In memory meta-data for directly interfacing with the VS IDE, [while debugging](Error-types).
+- An optional [snap shot file](#Snapshot-files) with the same IDE meta-data.
 
 These library features are detailed further in the section for [vcasan.lib](.\address-sanitizer-vcasan.md) 
 
@@ -169,36 +155,48 @@ These library features are detailed further in the section for [vcasan.lib](.\ad
 
 The following list of runtime errors can be exposed when you run your binaries compiled -fsanitize=address. A drill down of each class of error, provides source code and Visual Stud screen shots.  There are over 30 examples, with screen shots, within the following:
 
-- [stack-use-after-scope](.\stack-use-after-scope.md)
-- [stack-buffer-overflow](.\stack-buffer-overflow.md)
-- [stack-buffer-underflow](.\stack-buffer-underflow.md)
-- [stack-use-after-return](.\stack-use-after-return.md)
-- [heap-buffer-overflow](.\heap-buffer-overflow.md) 
-- [heap-use-after-free](.\heap-use-after-free.md)
-- [double-free](.\double-free.md) 
-- [dynamic-stack-buffer-overflow](.\dynamic-stack-buffer-overflow.md)
-- [global-overflow](.\global-overflow.md)
-- [calloc-overflow](.\calloc-overflow.md)
-- [new-delete-type-mismatch](.\new-delete-type-mismatch.md)
-- [memcpy-param-overlap](.\memcpy-param-overlap.md)
-- [strcat-param-overlap](.\strcat-param-overlap.md)
-- [allocation-size-too-big](.\allocation-size-too-big.md)
-- [invalid-aligned-alloc-alignment](.\invalid-aligned-alloc-alignment.md)
-- [use-after-poison](.\use-after-poison.md)
-- [alloc-dealloc-mismatch](.\alloc-dealloc-mismatch.md)
+- [stack-use-after-scope](.\examples-stack-use-after-scope.md)
+- [stack-buffer-overflow](.\examples-stack-buffer-overflow.md)
+- [stack-buffer-underflow](.\examples-stack-buffer-underflow.md)
+- [stack-use-after-return](.\examples-stack-use-after-return.md)
+- [heap-buffer-overflow](.\examples-heap-buffer-overflow.md)
+- [heap-use-after-free](.\examples-heap-use-after-free.md)
+- [double-free](.\examples-double-free.md)
+- [dynamic-stack-buffer-overflow](.\examples-dynamic-stack-buffer-overflow.md)
+- [global-overflow](.\examples-global-overflow.md)
+- [calloc-overflow](.\examples-calloc-overflow.md)
+- [new-delete-type-mismatch](.\examples-new-delete-type-mismatch.md)
+- [memcpy-param-overlap](.\examples-memcpy-param-overlap.md)
+- [strcat-param-overlap](.\examples-strcat-param-overlap.md)
+- [allocation-size-too-big](.\examples-allocation-size-too-big.md)
+- [invalid-aligned-alloc-alignment](.\examples-invalid-aligned-alloc-alignment.md)
+- [use-after-poison](.\examples-use-after-poison.md)
+- [alloc-dealloc-mismatch](.\examples-alloc-dealloc-mismatch.md)
 
 ## Differences with CLANG and GCC
 
 We differ in two functional areas:
 
- - **stack-use-after-scope** - this is on by default and can't be turned off.
- - **stack-use-after-return** - this is not available by just setting ASAN_OPTIONS
- 
+- **stack-use-after-scope** - this is on by default and can't be turned off.
+- **stack-use-after-return** - this is not available by just setting ASAN_OPTIONS
+
 These decisions were made to reduce the test matrix used to ship this first version.
+
+## Google, Apple and GCC documentation
+
+Extensive documentation already exists for these language and platform dependent implementations of the Address Sanitizer technology.
+
+- [Google](https://github.com/google/sanitizers/wiki/AddressSanitizer)
+- [Apple](https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early)
+- [GCC](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
+
+This seminal paper on the [Address Sanitizer](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) describes the implementation.
 
 ## See also
 
-   [Building for the Address Sanitizer with MSVC](.\Asan-building.md)
+- [Building for the Address Sanitizer with MSVC](.\Asan-building.md)
 
-   [Address Sanitizer runtime](.\Address-sanitizer-runtime.md)
+- [Address Sanitizer runtime](.\Address-sanitizer-runtime.md)
+
+These structure all  further details into the tools and the run times they target.
 
