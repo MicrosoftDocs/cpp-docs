@@ -8,7 +8,7 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Cl
 
 # Address Sanitizer
 
-C & C++ are powerful languages, but they can suffer from different types of bugs which affect program correctness and program security. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE support Address Sanitizer technology to help light up hard-to-find bugs.
+The C & C++ languages are powerful, but they can suffer from different types of bugs which affect program correctness and program security. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE support Address Sanitizer technology to help light up [hard-to-find bugs].
 
 After choosing the (!!!asan installer option!!!), simply select the Address Sanitizer dropdown in your project properties, or set the `-fsanitize=address` compiler switch on the command line, or use Visual Studio cmake integration, recompile, and then run your program as normal to light up [bugs](#errors) right in the debugger.
 	
@@ -54,20 +54,49 @@ Compile with `-fsanitize=address` to enable Address Sanitizer. The compiler flag
 
 The Address Sanitizer libraries (.lib files) will be linked in for you. For more detail, and for guidelines on partitioned build systems, see [building to target the Address Sanitizer runtime.](.\ASan-building.md).
 
+### Example - basic global buffer overflow:
+
 ```cpp
-    #include <iostream>
+    // main.cpp
+    #include <stdio.h>
+
     int x[100];
+
     int main() {
-        std::cout << "Hello!" << std::endl;
+        printf("Hello! \n");
         x[100] = 5; // Boom!
         return 0;
     }
-
 ```
 
-                     C:\> cl main.cpp -fsanitize=address /Zi
+Using a Developer Command Prompt for VS 2019, compile main.cpp as `-fsanitize=address -Zi`
 
-!!! Show media/something here !!! with the red boxes. And describe the red boxes, and the note about the symbolizer.
+![basic-global-overflow](src_code\asan-top-level\command-basic-global-overflow.png)
+
+Running **main.exe** at the command line, will result in the formatted error report seen below.
+
+Consider the over layed, red boxes which high light seven (7) key pieces of information:
+
+![basic-global-overflow](src_code\asan-top-level\basic-global-overflow.png)
+
+
+From top to bottom
+
+1.) This is a global-buffer-overflow
+
+2.) A write of 4 bytes (32-bits) was outside any user variable.
+
+3.) The store took place in function `main()` defined in file `basic-global-overflow.cpp` line 7
+
+4.) The users global variable defined in `basic-global-overflow.cpp` at line 3 column 8
+
+5.) This variable x is of size 400 bytes
+
+6.) The exact [shadow byte](.\asan-shadowbytes.md) describing the address targeted by the store was `0xf9`
+
+7.) The shadow byte legend says `0xf9` is an area of padding to the right of `int x[100]`
+
+**Note:**  The function names in the call stack are produced through the [LLVM symbolizer](https://llvm.org/docs/CommandGuide/llvm-symbolizer.html) which is invoked by the runtime upon error.
 
 ## Using the Address Sanitizer from Visual Studio
 
