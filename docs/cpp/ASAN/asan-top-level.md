@@ -10,7 +10,7 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Cl
 
 ## Overview
 
-The C & C++ languages are powerful, but can suffer from a class of bugs which affect both **program correctness** and **program security**. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE, support the Address Sanitizer technology which will light up [hard-to-find bugs](#error-types) with zero false positives.
+The C & C++ languages are powerful, but can suffer from a class of bugs which affect **program correctness** and **program security**. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE, support the Address Sanitizer technology which will light up [hard-to-find bugs](#error-types) with **zero false positives**.
 
 Using this flag can reduce your time spent on:
 
@@ -20,7 +20,7 @@ Using this flag can reduce your time spent on:
 - Stress testing
 - Integrating new code
 
-The Address Sanitizer is a compiler and runtime runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Many projects can enable the Address Sanitizer with a project setting, or a single additional compiler switch: `-fanitize=address`. The new flag is compatible with all levels of optimization. There are conflicts in three compilation modes: [edit-and-continue](), [incremental linking](), and [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) switches), otherwise all configurations of x86 and x64 are supported.
+The Address Sanitizer is a compiler and runtime runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Many projects can enable the Address Sanitizer with a project setting, or a single additional compiler switch: `-fanitize=address`. The new flag is compatible with all levels of optimization. There are conflicts in three compilation modes: [edit-and-continue](), [incremental linking](), and [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160). Apart from those three modes, all other configurations are supported when targeting x86 and x64.
 
 Compiling with `-fsanitize=address` is a powerful alternative to both [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160), and [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). It provides run-time bug-finding technologies which leverage your existing build systems and existing test assets.
 
@@ -147,11 +147,11 @@ Click the Edit JSON link in the UI.
 This will switch the view to raw .json.
 Add the following property: “addressSanitizerEnabled”: true
 
-Here is an image of CMakeSettings.json **after** the change:
+The following image is of CMakeSettings.json **after** the change:
 
 ![cmake-jason](.\media\asan-cmake-jason.PNG)
 
-Save this Jason file with `ctrl-s` and then `hit F5` to recompile and run under the debugger. 
+Save this JSON file with `ctrl-s` then `hit F5`to recompile and run under the debugger. 
 
 The following screen shot captures the error from the CMake build.
 
