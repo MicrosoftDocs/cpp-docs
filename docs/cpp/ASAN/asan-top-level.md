@@ -10,7 +10,7 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Cl
 
 ## Overview
 
-The C & C++ languages are powerful, but they can suffer from different types of bugs which affect program correctness and program security. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE support Address Sanitizer technology to help light up [hard-to-find bugs](#error-types) with zero false positives.
+The C & C++ languages are powerful, but can suffer from different types of bugs which affect program correctness and program security. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE support Address Sanitizer technology to help light up [hard-to-find bugs](#error-types) with zero false positives.
 
 Using this flag can reduce your time spent on:
 
@@ -35,7 +35,13 @@ These test systems can store the dump files, with **precisely diagnosed bugs**, 
 
 Simply  [**install the Address Sanitizer functionality**]().
 
-After installing and building your executables with the `-fsanitize=address`compiler switch on the command line, Vusual Studio project system or cmake integration, you simply run your program normally. THis will light up [many types of bugs](#errors) in the debugger IDE, on the command line or be stored in a new type of dump file.
+After installing you can build your executables with the `-fsanitize=address`compiler switch using any of the following:
+
+   - a command line
+   - Visual Studio project system 
+   - Visual Studio Cmake make integration
+
+ You simply run your program normally. This will light up [many types of bugs](#errors) in the debugger IDE, on the command line or these can be stored in a new type of dump file for precise off-line processing.
 
 ### Using the Address Sanitizer 
 
@@ -122,7 +128,7 @@ You can turn on the Address Sanitizer for an MSBuild project by right-clicking o
 - turn OFF [runtime checks]( )
 - turn OFF [incremental linking]( )
 
-To run under the debugger **hit F5**. The following screen will :
+To run under the debugger **hit F5**. The following screen will result:
 
 ![global-overflow-IDE](.\MEDIA\asan-F5-global-buffer-overflow.PNG)
 
@@ -194,7 +200,7 @@ We differ in two functional areas:
 
 See [Building for the Address Sanitizer with MSVC](.\asan-building.md).These decisions were made to reduce the test matrix used to ship this first version.
 
-## Exiting industry documentation
+## Existing industry documentation
 
 Extensive documentation already exists for these language and platform dependent implementations of the Address Sanitizer technology.
 
