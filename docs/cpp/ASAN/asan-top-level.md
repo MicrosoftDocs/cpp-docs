@@ -10,7 +10,7 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Cl
 
 # Overview
 
-The C & C++ languages are powerful, but they can suffer from different types of bugs which affect program correctness and program security. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE support Address Sanitizer technology to help light up [hard-to-find bugs](#error-types).
+The C & C++ languages are powerful, but they can suffer from different types of bugs which affect program correctness and program security. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE support Address Sanitizer technology to help light up [hard-to-find bugs](#error-types) with zero false positives.
 
 Using this flag can reduce your time spent on:
 
@@ -20,16 +20,18 @@ Using this flag can reduce your time spent on:
 - Stress testing
 - Integrating new source code
 
-The Address Sanitizer is a compiler and runtime runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Starting with Visual Studio 2019 16.9 this technology is offered in the Visual C++ compiler toolchain. Many projects can enable Address Sanitizer with a project setting, or a single additional compiler switch. There are known limitations in certain (!!! link !!!) compilation modes (incremental linking, or the [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) switch, for example), but otherwise all configurations of x86 and x64 are supported.
+The Address Sanitizer is a compiler and runtime runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Starting with Visual Studio 2019 16.9 this technology is offered in the Visual C++ compiler tool chain. Many projects can enable Address Sanitizer with a project setting, or a single additional compiler switch. The new flag is compatible with all levels of optimization. There are conflicts in three compilation modes: [edit-and-continue](), [incremental linking](), and [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) switches), otherwise all configurations of x86 and x64 are supported.
 
-`-fsanitize=address` is a powerful alternative to [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160), and in addition to [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160), it provides run-time bug-finding technologies which leverage your existing build systems and existing test assets.
+Compiling with `-fsanitize=address` is a powerful alternative to both [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160), and [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). It provides run-time bug-finding technologies which leverage your existing build systems and existing test assets.
 
 For CI/CD systems and Cloud based work flows, use the ASAN_SAVE_DUMPS environment variable to store crash dumps for post-mortem debugging specific to the Address Sanitizer.
 
-By setting a new environment variable **`set ASAN_SAVE_DUMPS=”MyFileName.dmpx”`** your program will create a new type of dump file that will contain extra meta-data. These dump files can be an enabler for work flows requiring:
+By setting a new environment variable via **`set ASAN_SAVE_DUMPS=”MyFileName.dmpx”`** your program will create a new type of dump file that will contain extra meta-data. These dump files can be displayed with Visual Studio using the new debugger IDE. These dump files can be an enabler for work flows requiring:
 
 - On-premises testing
 - Cloud based workflows for testing
+
+These systems can store these dump files off line, with **precisely diagnosed bugs** which can be viewed against your source code, in the IDE.
 
 ## Installing the Address Sanitizer
 
@@ -46,6 +48,7 @@ Microsoft recommends using the Address Sanitizer in these **three standard workf
     - Visual Studio - [Command line](#Using-the-Address-Sanitizer-from-a-Developer-Command-Prompt)
     - Visual Studio - [Project system](#Using-the-Address-Sanitizer-from-Visual-Studio)
     - Visual Studio - [CMake]([CMake](#Using-the-Address-Sanitizer-from-Visual-Studio:-CMake))
+
     
 - **CI/CD** - continuous integration / continuous development
     - Error reporting - [New Address Sanitizer dump files]()
@@ -54,7 +57,7 @@ Microsoft recommends using the Address Sanitizer in these **three standard workf
     - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
     - Local Machine
 
-This article will cover the information needed to enable the three workflows listed above. The information will be specific to the **platform dependent** Windows 10 implementation and supplement existing documentation from [Google, Apple and GCC](#Google,-Apple-and-GCC-documentation).
+This article will cover the information needed to enable the three workflows listed above. The information will be specific to the **platform dependent** Windows 10 implementation of the Address Sanitizer and supplement existing documentation from [Google, Apple and GCC](#Google,-Apple-and-GCC-documentation).
 
 > [!NOTE] Current support is limited to x86 and AMD64 on Windows 10. **Customer feedback** would help us prioritize shipping these sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
 
