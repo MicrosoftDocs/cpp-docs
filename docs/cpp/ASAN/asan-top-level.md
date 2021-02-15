@@ -79,20 +79,19 @@ Consider the over layed, red boxes which high light seven (7) key pieces of info
 
 ![basic-global-overflow](src_code\asan-top-level\basic-global-overflow.png)
 
-
-From top to bottom
+**From top to bottom**
 
 1.) This is a global-buffer-overflow
 
-2.) A write of 4 bytes (32-bits) was outside any user variable.
+2.) A write of 4 bytes (32-bits) was outside any user defined variable.
 
-3.) The store took place in function `main()` defined in file `basic-global-overflow.cpp` line 7
+3.) The store took place in function `main()` defined in file `basic-global-overflow.cpp` on line 7.
 
-4.) The users global variable defined in `basic-global-overflow.cpp` at line 3 column 8
+4.) The variable, named `"x"`, defined in basic-global-overflow.cpp on line 3 starting at column 8
 
-5.) This variable x is of size 400 bytes
+5.) This global variable `"x"` is of size 400 bytes
 
-6.) The exact [shadow byte](.\asan-shadowbytes.md) describing the address targeted by the store was `0xf9`
+6.) The exact [shadow byte](.\asan-shadowbytes.md) describing the address targeted by the store had a value of `0xf9`
 
 7.) The shadow byte legend says `0xf9` is an area of padding to the right of `int x[100]`
 
@@ -100,11 +99,40 @@ From top to bottom
 
 ## Using the Address Sanitizer from Visual Studio
 
-!!! todo, make a different example with a different error, animated gif of IDE, and list of instructions !!!
+We've integrated the Address Sanitizer with the [Visual Studio IDE](https://docs.microsoft.com/en-us/visualstudio/get-started/visual-studio-ide?view=vs-2019). We simply augment the MSDN section on creating a C++ console application seen in the [quick start guide](https://docs.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-160&viewFallbackFrom=vs-2019).
+
+You can turn on the Address Sanitizer for an MSBuild project by right-clicking on the project in Solution Explorer, choosing Properties, navigating under C/C++ > General, and changing the Enable Address Sanitizer
+
+![asan-project-system](.\MEDIA\asan-project-system.PNG)
+
+**To build** from the IDE, we ask you to knowingly opt out of [these incompatible flags](.\asan-incompatible-flags.md):
+
+-  turn OFF [edit and continue](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue?view=vs-2019)
+- turn OFF [runtime checks]( )
+- turn OFF [incremental linking]( )
+
+To run under the debugger **hit F5**. The following screen will :
+
+![global-overflow-IDE](.\MEDIA\asan-F5-global-buffer-overflow.PNG)
 
 ## Using the Address Sanitizer from Visual Studio: CMake
 
-!!! todo, make a different example with a different error, animated gif of CMake, and list of instructions !!!
+To enable ASan for [a CMake project created to target Windows](https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-160), do the following:
+
+Open the Configurations dropdown at the top of the IDE and click on Manage Configurations. 
+
+![configurations](.\media\asan-cmake-configuration.PNG)
+
+This will open the CMake Project Settings UI, which is saved in a CMakeSettings.json file.
+
+Click the Edit JSON link in the UI. 
+
+This will switch the view to raw .json.
+Add the following property: “addressSanitizerEnabled”: true
+
+Here is an image of CMakeSettings.json **after** the change:
+
+![cmake-jason](.\media\asan-cmake-jason.PNG)
 
 ## Offline Address Sanitizer crash dumps
 
@@ -117,7 +145,6 @@ To produce a dump file of the error which can be debugged offline, set an enviro
 Upon error, your application will produce MyFileName.dmpx which is a [dump file](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/proc_snap/export-a-process-snapshot-to-a-file) that can be opened and debugged using Visual Studio.
 
 **Note** that like all other dump files, [debugging symbols](https://docs.microsoft.com/en-us/windows/win32/dxtecharts/debugging-with-symbols) must be available and must match the version of the source compiled.
-
 
 ## Error types
 

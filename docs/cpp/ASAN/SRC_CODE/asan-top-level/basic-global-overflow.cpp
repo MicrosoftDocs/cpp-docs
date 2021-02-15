@@ -1,5 +1,4 @@
-//    #include <iostream>
-      #include <stdio.h>
+    #include <stdio.h>
 
     int x[100];
 
@@ -8,4 +7,5 @@
         x[100] = 5; // Boom!
         return 0;
     }
+
 
