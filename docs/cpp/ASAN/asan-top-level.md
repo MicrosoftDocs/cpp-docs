@@ -24,7 +24,7 @@ The Address Sanitizer is a compiler and runtime runtime [introduced by Google](h
 
 Compiling with `-fsanitize=address` is a powerful alternative to both [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160), and [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). It provides run-time bug-finding technologies which leverage your existing build systems and existing test assets.
 
-We also link a new library to your executable. By setting a new environment variable via **`set ASAN_SAVE_DUMPS=”MyFileName.dmpx”`** your program will create a new type of crash dump file that will contain extra meta-data for post-mortem debugging. These dump files can be displayed off-line, with Visual Studio's new debugger IDE. These dump files are an enabler for:
+We also link a new library to your executable. By setting the environment variable via **`set ASAN_SAVE_DUMPS=”MyFileName.dmpx”`** your program can automatically create a new type of crash dump file that will contain extra meta-data for post-mortem debugging. These dump files can be displayed off-line, with Visual Studio's new debugger IDE. These dump files are an enabler for:
 
 - On-premise single machine or distributed testing
 - Cloud based workflows for testing
@@ -190,14 +190,14 @@ The following list of runtime errors can be exposed when you run your binaries c
 
 ## Differences with Clang 12.0
 
-We differ in two functional areas:
+Visual C++ currently differs in two functional areas:
 
 - **stack-use-after-scope** - this is on by default and can't be turned off.
 - **stack-use-after-return** - this is not available by just setting ASAN_OPTIONS
 
-These decisions were made to reduce the test matrix used to ship this first version.
+These decisions were made to reduce the test matrix required to ship this first version.
 
-We did NOT ship features that could lead to false positives in this first release. That discipline enforced an effective testing integrity necessary when considering inter-op with years of exiting code. The following functionalities will be shipped later:
+We did NOT ship features that could lead to false positives in this first release. That discipline enforced an effective testing integrity necessary when considering inter-op with decades of exiting code. The following functionalities will be shipped later:
 
  - [Initialization Order Fiasco](https://github.com/google/sanitizers/wiki/AddressSanitizerInitializationOrderFiasco)
  - [Intra Object Overflow](https://github.com/google/sanitizers/wiki/AddressSanitizerIntraObjectOverflow)
