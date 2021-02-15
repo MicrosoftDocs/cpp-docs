@@ -8,7 +8,7 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Cl
 
 # Address Sanitizer
 
-# Overview
+## Overview
 
 The C & C++ languages are powerful, but they can suffer from different types of bugs which affect program correctness and program security. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE support Address Sanitizer technology to help light up [hard-to-find bugs](#error-types) with zero false positives.
 
@@ -24,22 +24,20 @@ The Address Sanitizer is a compiler and runtime runtime [introduced by Google](h
 
 Compiling with `-fsanitize=address` is a powerful alternative to both [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160), and [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). It provides run-time bug-finding technologies which leverage your existing build systems and existing test assets.
 
-For CI/CD systems and Cloud based work flows, use the ASAN_SAVE_DUMPS environment variable to store crash dumps for post-mortem debugging specific to the Address Sanitizer.
-
-By setting a new environment variable via **`set ASAN_SAVE_DUMPS=”MyFileName.dmpx”`** your program will create a new type of dump file that will contain extra meta-data. These dump files can be displayed with Visual Studio using the new debugger IDE. These dump files can be an enabler for work flows requiring:
+By setting a new environment variable via **`set ASAN_SAVE_DUMPS=”MyFileName.dmpx”`** your program will create a new type of crash dump file that will contain extra meta-data for post-mortem debugging. These dump files can be displayed off-line, with Visual Studio's new debugger IDE. These dump files can be an enabler for work flows requiring:
 
 - On-premises testing
 - Cloud based workflows for testing
 
-These systems can store these dump files off line, with **precisely diagnosed bugs** which can be viewed against your source code, in the IDE.
+These test systems can store the dump files, with **precisely diagnosed bugs**, for later viewing super imposed on your source code in the IDE.
 
-## Installing the Address Sanitizer
+### Installing the Address Sanitizer
 
 Simply  [**install the Address Sanitizer functionality**]().
 
 After installing and building your executables with the `-fsanitize=address`compiler switch on the command line, Vusual Studio project system or cmake integration, you simply run your program normally. THis will light up [many types of bugs](#errors) in the debugger IDE, on the command line or be stored in a new type of dump file.
 
-## Using the Address Sanitizer 
+### Using the Address Sanitizer 
 
 Microsoft recommends using the Address Sanitizer in these **three standard workflows**:
 
