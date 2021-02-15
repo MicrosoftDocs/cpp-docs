@@ -10,7 +10,7 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Cl
 
 ## Overview
 
-The C & C++ languages are powerful, but can suffer from different types of bugs which affect program correctness and program security. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE support Address Sanitizer technology to help light up [hard-to-find bugs](#error-types) with zero false positives.
+The C & C++ languages are powerful, but can suffer from a class of bugs which affect both **program correctness** and **program security**. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE, support the Address Sanitizer technology which will light up [hard-to-find bugs](#error-types) with zero false positives.
 
 Using this flag can reduce your time spent on:
 
@@ -18,13 +18,13 @@ Using this flag can reduce your time spent on:
 - Cross platform portability
 - Security
 - Stress testing
-- Integrating new source code
+- Integrating new code
 
-The Address Sanitizer is a compiler and runtime runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Starting with Visual Studio 2019 16.9 this technology is offered in the Visual C++ compiler tool chain and Visual Studio IDE. Many projects can enable the Address Sanitizer with a project setting, or a single additional compiler switch. The new flag is compatible with all levels of optimization. There are conflicts in three compilation modes: [edit-and-continue](), [incremental linking](), and [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) switches), otherwise all configurations of x86 and x64 are supported.
+The Address Sanitizer is a compiler and runtime runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Many projects can enable the Address Sanitizer with a project setting, or a single additional compiler switch: `-fanitize=address`. The new flag is compatible with all levels of optimization. There are conflicts in three compilation modes: [edit-and-continue](), [incremental linking](), and [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) switches), otherwise all configurations of x86 and x64 are supported.
 
 Compiling with `-fsanitize=address` is a powerful alternative to both [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160), and [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). It provides run-time bug-finding technologies which leverage your existing build systems and existing test assets.
 
-By setting a new environment variable via **`set ASAN_SAVE_DUMPS=”MyFileName.dmpx”`** your program will create a new type of crash dump file that will contain extra meta-data for post-mortem debugging. These dump files can be displayed off-line, with Visual Studio's new debugger IDE. These dump files can be an enabler for work flows requiring:
+We've also extended the basic Windows executable file. By setting a new environment variable via **`set ASAN_SAVE_DUMPS=”MyFileName.dmpx”`** your program will create a new type of crash dump file that will contain extra meta-data for post-mortem debugging. These dump files can be displayed off-line, with Visual Studio's new debugger IDE. These dump files can be an enabler for work flows requiring:
 
 - On-premises testing
 - Cloud based workflows for testing
@@ -41,7 +41,7 @@ After installing you can build your executables with the `-fsanitize=address`com
    - Visual Studio project system 
    - Visual Studio Cmake make integration
 
- You simply run your program normally. This will light up [many types of bugs](#errors) in the debugger IDE, on the command line or these can be stored in a new type of dump file for precise off-line processing.
+ You simply run your program normally. This will light up [many types of precisely diagnosed bugs](#errors). These [errors can be reported three (3) ways](#TBD): in the debugger IDE, on the command line or stored in a new type of dump file for precise off-line processing.
 
 ### Using the Address Sanitizer 
 
@@ -118,7 +118,7 @@ Consider the over layed, red boxes which high light seven (7) key pieces of info
 
 We've integrated the Address Sanitizer with the [Visual Studio IDE](https://docs.microsoft.com/en-us/visualstudio/get-started/visual-studio-ide?view=vs-2019). We simply augment the MSDN section on creating a C++ console application seen in the [quick start guide](https://docs.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-160&viewFallbackFrom=vs-2019).
 
-You can turn on the Address Sanitizer for an MSBuild project by right-clicking on the project in Solution Explorer, choosing Properties, navigating under C/C++ > General, and changing the Enable Address Sanitizer
+You can turn on the Address Sanitizer for an MSBuild project by right-clicking on the project in Solution Explorer, choosing Properties, navigating under C/C++ > General, and changing the **Enable Address Sanitizer**
 
 ![asan-project-system](.\MEDIA\asan-project-system.PNG)
 
@@ -128,7 +128,7 @@ You can turn on the Address Sanitizer for an MSBuild project by right-clicking o
 - turn OFF [runtime checks]( )
 - turn OFF [incremental linking]( )
 
-To run under the debugger **hit F5**. The following screen will result:
+To build and run under the debugger, **hit F5**. The following VS window will result:
 
 ![global-overflow-IDE](.\MEDIA\asan-F5-global-buffer-overflow.PNG)
 
@@ -151,7 +151,7 @@ Here is an image of CMakeSettings.json **after** the change:
 
 ![cmake-jason](.\media\asan-cmake-jason.PNG)
 
-Save the jason file with `ctrl-s` and then `hit F5` to recompile and run. 
+Save this Jason file with `ctrl-s` and then `hit F5` to recompile and run under the debugger. 
 
 The following screen shot captures the error from the CMake build.
 
