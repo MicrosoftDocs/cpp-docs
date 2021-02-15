@@ -141,12 +141,11 @@ Open the Configurations dropdown at the top of the IDE and click on Manage Confi
 
 This will open the CMake Project Settings UI, which is saved in a CMakeSettings.json file.
 
-Click the Edit JSON link in the UI. 
+Click the **Edit JSON** link in the UI. This will switch the view to raw .json.
 
-This will switch the view to raw .json.
-Add the following property: “addressSanitizerEnabled”: true
+Add the following property: **“addressSanitizerEnabled”: true**
 
-The following image is of CMakeSettings.json **after** the change:
+The following image is of CMakeSettings.json after that change:
 
 ![cmake-jason](.\media\asan-cmake-jason.PNG)
 
