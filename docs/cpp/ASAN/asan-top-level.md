@@ -8,11 +8,9 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Cl
 
 # Address Sanitizer
 
-The C & C++ languages are powerful, but they can suffer from different types of bugs which affect program correctness and program security. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE support Address Sanitizer technology to help light up [hard-to-find bugs].
+# Overview
 
-After choosing the (!!!asan installer option!!!), simply select the Address Sanitizer dropdown in your project properties, or set the `-fsanitize=address` compiler switch on the command line, or use Visual Studio cmake integration, recompile, and then run your program as normal to light up [bugs](#errors) right in the debugger.
-	
-For CI/CD systems use the ASAN_SAVE_DUMPS environment variable to store ASAN crash dumps for post-mortem debugging.
+The C & C++ languages are powerful, but they can suffer from different types of bugs which affect program correctness and program security. Starting with Visual Studio 2019 16.9, the Microsoft Visual C++ compiler and IDE support Address Sanitizer technology to help light up [hard-to-find bugs](#error-types).
 
 Using this flag can reduce your time spent on:
 
@@ -24,33 +22,45 @@ Using this flag can reduce your time spent on:
 
 The Address Sanitizer is a compiler and runtime runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Starting with Visual Studio 2019 16.9 this technology is offered in the Visual C++ compiler toolchain. Many projects can enable Address Sanitizer with a project setting, or a single additional compiler switch. There are known limitations in certain (!!! link !!!) compilation modes (incremental linking, or the [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160) switch, for example), but otherwise all configurations of x86 and x64 are supported.
 
-`-fsanitize=address` is a powerful alternative to [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160), and in addition to [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160) provides compile-time and run-time bug-finding technologies which leverage your existing build systems and existing test assets.
+`-fsanitize=address` is a powerful alternative to [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160), and in addition to [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160), it provides run-time bug-finding technologies which leverage your existing build systems and existing test assets.
+
+For CI/CD systems and Cloud based work flows, use the ASAN_SAVE_DUMPS environment variable to store crash dumps for post-mortem debugging specific to the Address Sanitizer.
+
+By setting a new environment variable **`set ASAN_SAVE_DUMPS=”MyFileName.dmpx”`** your program will create a new type of dump file that will contain extra meta-data. These dump files can be an enabler for work flows requiring:
+
+- On-premises testing
+- Cloud based workflows for testing
+
+## Installing the Address Sanitizer
+
+Simply  [**install the Address Sanitizer functionality**]().
+
+After installing and building your executables with the `-fsanitize=address`compiler switch on the command line, Vusual Studio project system or cmake integration, you simply run your program normally. THis will light up [many types of bugs](#errors) in the debugger IDE, on the command line or be stored in a new type of dump file.
 
 ## Using the Address Sanitizer 
-
-!!! We need a picture of the installer option here and mention it's required first !!!
 
 Microsoft recommends using the Address Sanitizer in these **three standard workflows**:
 
 - **Developer inner loop**
-    - Visual Studio - Command line
-    - Visual Studio - Project system with integrated IDE error reporting support
+    - Visual Studio - debugger IDE
+    - Visual Studio - [Command line](#Using-the-Address-Sanitizer-from-a-Developer-Command-Prompt)
+    - Visual Studio - [Project system](#Using-the-Address-Sanitizer-from-Visual-Studio)
+    - Visual Studio - [CMake]([CMake](#Using-the-Address-Sanitizer-from-Visual-Studio:-CMake))
     
 - **CI/CD** - continuous integration / continuous development
-    - CMake
-    - MSBuild
+    - Error reporting - [New Address Sanitizer dump files]()
 
-- **Fuzzing** - build with the [libFuzzer](https://llvm.org/docs/LibFuzzer.html) wrapper
+- **Fuzzing** - building with the [libFuzzer](https://llvm.org/docs/LibFuzzer.html) wrapper
     - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
     - Local Machine
 
-This article will cover all the information needed to enable your builds for any of the three workflows listed above. The information will be specific to the Microsoft Windows 10 platform and supplement existing documentation from [Google, Apple and GCC](#Google,-Apple-and-GCC-documentation).
+This article will cover the information needed to enable the three workflows listed above. The information will be specific to the **platform dependent** Windows 10 implementation and supplement existing documentation from [Google, Apple and GCC](#Google,-Apple-and-GCC-documentation).
 
 > [!NOTE] Current support is limited to x86 and AMD64 on Windows 10. **Customer feedback** would help us prioritize shipping these sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
 
 ## Using the Address Sanitizer from a Developer Command Prompt
 
-Compile with `-fsanitize=address` to enable Address Sanitizer. The compiler flag `-fsanitize=address` is compatible with all existing C++ or C optimization levels (e.g., /Od, /O1, /O2, /O2 /GL and PGO), works with static and dynamic CRTs (e.g. /MD, /MDd, /MT, /MTd) and can be used to create a .EXE or .DLL. Debug information is required for the Address Sanitizer runtime to print correct call stacks on errors; In this example we pass `-Zi`.
+Compile with `-fsanitize=address` to enable Address Sanitizer. The compiler flag `-fsanitize=address` is compatible with all existing C++ or C optimization levels (e.g., /Od, /O1, /O2, /O2 /GL and PGO), works with static and dynamic CRTs (e.g. /MD, /MDd, /MT, /MTd) and can be used to create a .EXE or .DLL. Debug information is required for the Address Sanitizer runtime to print correct call stacks on errors; In this example we pass `-/Zi`.
 
 The Address Sanitizer libraries (.lib files) will be linked in for you. For more detail, and for guidelines on partitioned build systems, see [building to target the Address Sanitizer runtime.](.\ASan-building.md).
 
@@ -133,6 +143,12 @@ Add the following property: “addressSanitizerEnabled”: true
 Here is an image of CMakeSettings.json **after** the change:
 
 ![cmake-jason](.\media\asan-cmake-jason.PNG)
+
+Save the jason file with `ctrl-s` and then `hit F5` to recompile and run. 
+
+The following screen shot captures the error from the CMake build.
+
+![cmake-F5-runt](.\MEDIA\asan-cmake-F5-error.PNG) 
 
 ## Offline Address Sanitizer crash dumps
 
