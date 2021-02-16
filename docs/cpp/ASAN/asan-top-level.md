@@ -20,7 +20,7 @@ Using this flag can reduce your time spent on:
 - Stress testing
 - Integrating new code
 
-The Address Sanitizer is a compiler and runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Compiling with `cl -fsanitize=addres` is a powerful alternative to both [/RTC](..\..\build\reference\rtc-run-time-error-checks.md), and [/analyze](../..\code-quality/code-analysis-for-c-cpp-overview.md). It provides run-time bug-finding technologies which leverage your existing build systems and existing test assets.
+The Address Sanitizer is a compiler and runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Compiling with `cl -fsanitize=addres` is a powerful alternative to both [/RTC](..\..\build\reference\rtc-run-time-error-checks.md), and [/analyze](../..\code-quality/code-analysis-for-c-cpp-overview.md). It provides run-time bug-finding technologies which directly leverage your existing build systems and existing test assets.
 
  Projects can enable the Address Sanitizer with a project setting, or a single additional compiler switch: **-fanitize=address**. The new flag is compatible with all levels of optimization but it is not compatible with three compilation modes: [edit-and-continue](), [incremental linking](..\..\build\reference\incremental-link-incrementally.md), and [/RTC](..\..\build\reference\rtc-run-time-error-checks.md). Apart from those three modes, all other configurations are supported when targeting x86 and x64.
 
