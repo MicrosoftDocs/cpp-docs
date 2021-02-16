@@ -20,26 +20,26 @@ Using this flag can reduce your time spent on:
 - Stress testing
 - Integrating new code
 
-The Address Sanitizer is a compiler and runtime runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Many projects can enable the Address Sanitizer with a project setting, or a single additional compiler switch: `-fanitize=address`. The new flag is compatible with all levels of optimization. There are conflicts in three compilation modes: [edit-and-continue](), [incremental linking](), and [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160). Apart from those three modes, all other configurations are supported when targeting x86 and x64.
+The Address Sanitizer is a compiler and runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Compiling with `cl -fsanitize=addres` is a powerful alternative to both [/RTC](..\..\build\reference\rtc-run-time-error-checks.md), and [/analyze](../..\code-quality/code-analysis-for-c-cpp-overview.md). It provides run-time bug-finding technologies which leverage your existing build systems and existing test assets.
 
-Compiling with `-fsanitize=address` is a powerful alternative to both [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160), and [/analyze](https://docs.microsoft.com/en-us/cpp/code-quality/code-analysis-for-c-cpp-overview?view=msvc-160). It provides run-time bug-finding technologies which leverage your existing build systems and existing test assets.
+ Projects can enable the Address Sanitizer with a project setting, or a single additional compiler switch: **-fanitize=address**. The new flag is compatible with all levels of optimization but it is not compatible with three compilation modes: [edit-and-continue](), [incremental linking](..\..\build\reference\incremental-link-incrementally.md), and [/RTC](..\..\build\reference\rtc-run-time-error-checks.md). Apart from those three modes, all other configurations are supported when targeting x86 and x64.
 
-We also link a new library to your executable. By setting the environment variable via **`set ASAN_SAVE_DUMPS=”MyFileName.dmpx”`** your program can automatically create a new type of crash dump file that will contain extra meta-data for post-mortem debugging. These dump files can be displayed off-line, with Visual Studio's new debugger IDE. These dump files are an enabler for:
+The Address Sanitizer is integrated with the Visual Studio the project system, CMake system and the IDE. 
+
+Using the flag -fsanitize=address, the driver (cl.exe) will link a new library with your executable. This library enables integration with the IDE and it can optionally create a new crash dump file. Setting an environment variable via `set ASAN_SAVE_DUMPS=”MyFileName.dmpx”`your program can automatically create a new type of crash dump file that will contain extra meta-data for efficient, post-mortem debugging of **precisely diagnosed bugs**. These files facilitate using the Address Sanitizer in:
 
 - On-premise single machine or distributed testing
 - Cloud based workflows for testing
-
-These test systems can store the dump files, with **precisely diagnosed bugs**, for later viewing super imposed on your source code in the IDE.
 
 ### Installing the Address Sanitizer
 
 Simply  [**install the Address Sanitizer functionality**]().
 
-After installing you can build your executables with the `-fsanitize=address`compiler switch using any of the following:
+After installing, you can build your executables with the `-fsanitize=address`compiler switch using any of the following:
 
    - Command line
    - Visual Studio project system 
-   - Visual Studio Cmake make integration
+   - Visual Studio CMake integration
 
  You simply run your program normally. This will light up [many types of precisely diagnosed bugs](#errors). These [errors can be reported three (3) ways](#TBD): in the debugger IDE, on the command line or stored in a new type of dump file for precise off-line processing.
 
@@ -68,9 +68,10 @@ This article will cover the information needed to enable the three workflows lis
 
 Compile with `-fsanitize=address` to enable Address Sanitizer. The compiler flag `-fsanitize=address` is compatible with all existing C++ or C optimization levels (e.g., /Od, /O1, /O2, /O2 /GL and PGO), works with static and dynamic CRTs (e.g. /MD, /MDd, /MT, /MTd) and can be used to create an .EXE or .DLL. Debug information is required for optimal formatting of call stacks. In this example we explicitly pass `-/Zi`.
 
-The Address Sanitizer libraries (.lib files) will be linked for you. For more detail, and for guidelines on partitioned build systems, see [building to target the Address Sanitizer runtime.](.\ASan-building.md).
+The Address Sanitizer libraries (.lib files) will be linked for you. For more detail, and for guidelines on partitioned build systems, see [building to target the Address Sanitizer runtime.](.\asan-building.md).
 
 ### Example - basic global buffer overflow:
+
 
 ```cpp
     // main.cpp
@@ -85,11 +86,11 @@ The Address Sanitizer libraries (.lib files) will be linked for you. For more de
     }
 ```
 
-Using a Developer Command Prompt for VS 2019, compile main.cpp as `-fsanitize=address -Zi`
+Using a Developer Command Prompt for VS 2019, compile main.cpp using `-fsanitize=address -Zi`
 
 ![basic-global-overflow](src_code\asan-top-level\command-basic-global-overflow.png)
 
-Running **main.exe** at the command line, will result in the formatted error report seen below.
+Running the resulting **main.exe** at the command line, will result in the formatted error report seen below.
 
 Consider the over layed, red boxes which high light seven (7) key pieces of information:
 
