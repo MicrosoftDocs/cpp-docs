@@ -54,11 +54,8 @@ This helps when designing class hierarchies whose base class(es) include pure vi
 class base {
 public:
     base() {}
-    virtual ~base()=0;
+    virtual ~base() = default;
 };
-
-// Provide a definition for destructor.
-base::~base() {}
 
 class derived:public base {
 public:
