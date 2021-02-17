@@ -38,7 +38,7 @@ int main() {
 ```
 ## Resutling Error
 
-![example2-screenshot](SRC_CODE/stack-use-after-scope/example2.PNG) 
+![example2-screenshot](SRC_CODE/stack-use-after-scope/Example2.PNG) 
 
 ## Example 3 - destructor ordering relative to locals
 
