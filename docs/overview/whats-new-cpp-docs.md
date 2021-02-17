@@ -1,7 +1,7 @@
 ---
 title: "What's new for the C++ docs"
 description: "The new docs and doc updates for the Microsoft C/C++ compiler, ATL/MFC, C runtime, and standard library docs."
-ms.date: "02/08/2021"
+ms.date: "02/17/2021"
 ---
 # Microsoft C++ docs: What's new for Visual Studio 16.8
 
@@ -177,7 +177,7 @@ For the latest C++ conformance status, see [C++ conformance improvements in Visu
 ### Updated articles
 
 - [`<ios>` typedefs](../standard-library/ios-typedefs.md) - Updated example per GitHub #2514
-- [`basic_string` Class](../standard-library/basic-string-class.md) - Added `startswith()`, `endswith()`
+- [`basic_string` Class](../standard-library/basic-string-class.md) - Added `_starts_with()`, `ends_with()`
 - [`ios_base Class`](../standard-library/ios-base-class.md)
 - [`map` class](../standard-library/map-class.md)
 - [`multimap` Class](../standard-library/multimap-class.md) - Added `contains()`
@@ -187,7 +187,7 @@ For the latest C++ conformance status, see [C++ conformance improvements in Visu
 - [`unordered_multimap` Class](../standard-library/unordered-multimap-class.md)  - Added `contains()`
 - [`unordered_multiset` Class](../standard-library/unordered-multiset-class.md)  - Added `contains()`
 - [`unordered_set` Class](../standard-library/unordered-set-class.md)  - Added `contains()`
-- [`basic_string_view` Class](../standard-library/basic-string-view-class.md) - added `startswith()`, `endswith()`
+- [`basic_string_view` Class](../standard-library/basic-string-view-class.md) - added `starts_with()`, `ends_with()`
 - [`<bit>` functions](../standard-library/bit-functions.md) - Updated `nodiscard` syntax
 
 ## Community contributors
