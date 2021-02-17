@@ -1,7 +1,7 @@
 
 # Double free
 
-In 'C' you can call free() erroneously and in 'C++' you can similarly call delete more than once.In the last example we also show and example at the Windows specific, HeapCreate(), level of abstraction.
+In 'C' you can call free() erroneously and in 'C++' you can similarly call delete more than once. In the last example we also show and example at the Windows specific, HeapCreate(), level of abstraction.
 
 ## Example C++ - double operator delete
 
@@ -18,7 +18,7 @@ int main() {
 ```
 ## Resulting error
 
-![example1](.\SRC_CODE\double-free\example1.PNG)
+![example1](SRC_CODE/double-free/example1.PNG)
 
 ## Example 'C' - double fre()
 ```cpp
@@ -42,7 +42,7 @@ int main(int argc, char **argv) {
 ## Resulting error
 
 
-![example2](.\SRC_CODE\double-free\example2.PNG)
+![example2](SRC_CODE/double-free/example2.PNG)
 
 
 ## Example - Windows HeapCreate() double free
@@ -64,6 +64,6 @@ int main() {
 
 ## Resutling error
 
-![example3](.\SRC_CODE\double-free\example3.PNG)
+![example3](SRC_CODE/double-free/example3.PNG)
 
 

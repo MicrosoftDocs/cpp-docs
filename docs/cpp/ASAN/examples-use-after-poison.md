@@ -23,4 +23,4 @@ int main(int argc, char **argv) {
 
 ## Resulting error
 
-![example1](.\SRC_CODE\use-after-poison\example1.PNG)
+![example1](SRC_CODE/use-after-poison/example1.PNG)

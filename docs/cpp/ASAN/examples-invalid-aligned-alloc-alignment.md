@@ -1,6 +1,6 @@
 # Invalid aligned_malloc()
 
-The `_aligned_malloc()` function requires a power of 2 for expressing the alignment. We simulate the "external" calculation of some alignment factor using an un-optimized global variable.
+The [_aligned_malloc()](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/aligned-malloc?view=msvc-160) function requires a power of 2 for expressing the alignment. We simulate the "external" calculation of some alignment factor using an un-optimized global variable.
 
 ## Example
 ```cpp
@@ -20,4 +20,4 @@ int main(){
 
 ## Resulting error
 
-![example1](.\SRC_CODE\invalid-aligned-alloc-alignment\example1.PNG)
+![example1](SRC_CODE/invalid-aligned-alloc-alignment/example1.PNG)

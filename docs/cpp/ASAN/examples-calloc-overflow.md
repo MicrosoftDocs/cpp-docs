@@ -1,6 +1,6 @@
 # calloc - overflow
 
-The CRT function `calloc()` will allocate an array in memory with elements initialized to 0. The arguments can be calculated externally to create an impossible internal error that will lead to a NULL pointer.
+The CRT function [calloc](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/calloc?view=msvc-160) will allocate an array in memory with elements initialized to 0. The arguments can be calculated externally to create an impossible internal error that will lead to a NULL pointer.
 
 ## Example
 
@@ -23,5 +23,5 @@ int main() {
 
 ## Resulting error
 
-![example1](.\SRC_CODE\calloc-overflow\example1.PNG)
+![example1](SRC_CODE/calloc-overflow/example1.PNG)
 

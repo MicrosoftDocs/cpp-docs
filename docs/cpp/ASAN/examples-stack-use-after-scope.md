@@ -1,7 +1,7 @@
 # Stack use after scope
 
 The use of a stack address outside the lexical scope of a variable's lifetime, can happen many ways in C or C++.  We provide several examples for this category of error caught with a simple recompile. All simple examples are compiled using:
->  **`cl -fsanitize=address /Zi /EHsc uas_example.c`**
+>  `cl -fsanitize=address /Zi /EHsc uas_example.c`
 
 ## Example 1 - simple nested local
 
@@ -19,7 +19,7 @@ int main() {
 ```
 ## Resulting error
 
-![example1-screenshot](SRC_CODE\stack-use-after-scope\example1.png) 
+![example1-screenshot](SRC_CODE/stack-use-after-scope/example1.PNG) 
 
 ## Example 2 - lambda capture
 ```cpp
@@ -38,7 +38,7 @@ int main() {
 ```
 ## Resutling Error
 
-![example2-screenshot](SRC_CODE\stack-use-after-scope\example2.png) 
+![example2-screenshot](SRC_CODE/stack-use-after-scope/Example2.PNG) 
 
 ## Example 3 - destructor ordering relative to locals
 
@@ -74,7 +74,7 @@ int main(int argc, char *argv[]) {
 ```
 ## Resulting error
 
-![example3-screenshot](SRC_CODE\stack-use-after-scope\example3.png) 
+![example3-screenshot](SRC_CODE/stack-use-after-scope/example3.PNG) 
 
 ## Example 4 - temporaries
 ```cpp
@@ -108,4 +108,4 @@ void main() {
 ```
 ## Resulting error
 
-![example4-screenshot](SRC_CODE\stack-use-after-scope\example4.png) 
+![example4-screenshot](SRC_CODE/stack-use-after-scope/example4.PNG) 

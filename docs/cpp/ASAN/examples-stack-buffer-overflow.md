@@ -1,7 +1,7 @@
 # Stack buffer overflow
 
-The stack buffer overflow happen many ways in C or C++.  We provide several examples for this category of error caught with a simple recompile. All simple examples are compiled using:
->  **`cl -fsanitize=address /Zi  uas_example.c`**
+The stack buffer overflow happen many ways in C or C++. We provide several examples for this category of error caught with a simple recompile. All simple examples are compiled using:
+>  `cl -fsanitize=address /Zi  uas_example.c`
 
 ## Example - stack buffer overflow
 
@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
 
 ## Resulting error
 
-![example1](\SRC_CODE\stack-buffer-overflow\example1.PNG)
+![example1](SRC_CODE/stack-buffer-overflow/Example1.PNG)
 
 ## Example - Stack buffer math
 
@@ -44,7 +44,7 @@ int main(int argc, char **argv) {
 ```
 
 ## Resulting error
-![example2](\SRC_CODE\stack-buffer-overflow\example2.PNG)
+![example2](SRC_CODE/stack-buffer-overflow/Example2.PNG)
 
 ## Example - improper down cast on stack
 
@@ -71,4 +71,4 @@ int main(void) {
 
 ## Resulting error
 
-![example3](\SRC_CODE\stack-buffer-overflow\example3.PNG)
+![example3](SRC_CODE/stack-buffer-overflow/example3.PNG)

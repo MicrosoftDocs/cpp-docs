@@ -3,9 +3,9 @@
 
 This functionality requires code generation that is activated under an additional flag `-fsanitize-address-use-after-return `. A complete command line example would be:
 
-             `cl -fsanitize=address -fsanitize-address-use-after-return /Zi file.cpp my3dparty.lib -Fe My.exe`. 
+> cl -fsanitize=address -fsanitize-address-use-after-return /Zi file.cpp my3dparty.lib -Fe My.exe. 
 
-Once the binary is created the functionality in the binary is activated with an environment variable `ASAN_OPTIONS=detect_stack_use_after_return=1 `.  This environment variable is there to allow for debugging and making quick progress in "getting through an existing source base"
+Once the binary is created the functionality in the binary is activated with an environment variable `ASAN_OPTIONS=detect_stack_use_after_return=1`.  This environment variable is there to allow for debugging and making quick progress in "getting through an existing source base"
 
 A the [CLANG/LLVM summary](https://github.com/google/sanitizers/wiki/AddressSanitizerUseAfterReturn) of the algorithm supporting use after return, as well as the larger performance costs.
 
@@ -27,7 +27,7 @@ A the [CLANG/LLVM summary](https://github.com/google/sanitizers/wiki/AddressSani
 
 ## Resulting error `c:> example1.exe`
 
-![example1](.\SRC_CODE\stack-use-after-return\example1.PNG)
+![example1](SRC_CODE/stack-use-after-return/example1.PNG)
 
 ## Example - C++ and templates
 
@@ -74,4 +74,4 @@ A the [CLANG/LLVM summary](https://github.com/google/sanitizers/wiki/AddressSani
 
 Running this example as `c:>example2.exe 1`
 
-![example2](.\SRC_CODE\stack-use-after-return\example2.PNG)
+![example2](SRC_CODE/stack-use-after-return/example2.PNG)

@@ -1,6 +1,6 @@
 # Alloc dealloc mismatch
 
-This is not on by default for Windows. So you will have to `set ASAN_OPTIONS=alloc_dealloc_mismatch=1`. This flag will report errors on malloc/delete, new/free, new/delete[] etc. 
+This is not on by default for Windows. So you will have to `set ASAN_OPTIONS=alloc_dealloc_mismatch=1` prior to running the program. This flag will report errors on malloc/delete, new/free, new/delete[] etc. 
 
 
 ## Example
@@ -33,5 +33,5 @@ int main(int argc,char *argv[] ) {
 
 The following output resulted from the command line: `devenv /debugexe example1.exe 2`
 
-![example1](.\SRC_CODE\alloc-dealloc-mismatch\example1.PNG)
+![example1](SRC_CODE/alloc-dealloc-mismatch/example1.PNG)
 
