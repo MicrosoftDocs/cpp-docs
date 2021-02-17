@@ -22,18 +22,19 @@ Using this flag can reduce your time spent on:
 
 The Address Sanitizer is a compiler and runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Compiling with `cl -fsanitize=addres` is a powerful alternative to both [/RTC](..\..\build\reference\rtc-run-time-error-checks.md), and [/analyze](../..\code-quality/code-analysis-for-c-cpp-overview.md). It provides run-time bug-finding technologies which directly leverage your existing build systems and existing test assets.
 
- Projects can enable the Address Sanitizer with a project setting, or a single additional compiler switch: **-fanitize=address**. The new flag is compatible with all levels of optimization but it is not compatible with three compilation modes: [edit-and-continue](), [incremental linking](..\..\build\reference\incremental-link-incrementally.md), and [/RTC](..\..\build\reference\rtc-run-time-error-checks.md). Apart from those three modes, all other configurations are supported when targeting x86 and x64.
+ Projects can enable the Address Sanitizer with a project setting, or a single additional compiler switch: **-fanitize=address**. The new flag is compatible with all levels of optimization but it is not compatible with three compilation modes: [edit-and-continue](https://docs.microsoft.com/en-us/visualstudio/debugger/edit-and-continue-visual-cpp?view=vs-2019), [incremental linking](..\..\build\reference\incremental-link-incrementally.md), and [/RTC](..\..\build\reference\rtc-run-time-error-checks.md). Apart from those three modes, all other configurations are supported when targeting x86 and x64.
 
-The Address Sanitizer is integrated with the Visual Studio the project system, CMake system and the IDE. 
+The Address Sanitizer is integrated with the Visual Studio the project system, CMake system, and the IDE.
 
-Using the flag -fsanitize=address, the driver (cl.exe) will link a new library with your executable. This library enables integration with the IDE and it can optionally create a new crash dump file. Setting an environment variable via `set ASAN_SAVE_DUMPS=”MyFileName.dmpx”`your program can automatically create a new type of crash dump file that will contain extra meta-data for efficient, post-mortem debugging of **precisely diagnosed bugs**. These files facilitate using the Address Sanitizer in:
+Using the flag -fsanitize=address, the driver (cl.exe) will link a new library with your executable. This library enables integration with the IDE and it can optionally create a new crash dump file. Setting an environment variable via `set ASAN_SAVE_DUMPS=”MyFileName.dmp”`, your program can automatically create a new type of crash dump file that will contain extra meta-data for efficient, [post-mortem debugging](#.\asan-offline-address-sanitizer-crash-dumps.md) of **precisely diagnosed bugs**. These files facilitate extended use of the Address Sanitizer for local machine testing as well as:
 
-- On-premise single machine or distributed testing
+- On-premise distributed testing and
 - Cloud based workflows for testing
+
 
 ### Installing the Address Sanitizer
 
-Simply  [**install the Address Sanitizer functionality**]().
+Simply  [**install the Address Sanitizer functionality**](.\asan-installing.md).
 
 After installing, you can build your executables with the `-fsanitize=address`compiler switch using any of the following:
 
@@ -62,7 +63,7 @@ Microsoft recommends using the Address Sanitizer in these **three standard workf
 
 This article will cover the information needed to enable the three workflows listed above. The information will be specific to the **platform dependent** Windows 10 implementation of the Address Sanitizer and supplement existing documentation from [Google, Apple and GCC](#Google,-Apple-and-GCC-documentation).
 
-> [!NOTE] Current support is limited to x86 and AMD64 on Windows 10. **Customer feedback** would help us prioritize shipping these sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
+> [!NOTE] Current support is limited to x86 and AMD64 on Windows 10. Please click [**Customer Feedback**](https://aka.ms/feedback/suggest?space=62) and tell us what you would like to see in future releases. Your feedback would help us prioritize shipping these sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
 
 ## Using the Address Sanitizer from a Developer Command Prompt
 
@@ -204,7 +205,8 @@ We did NOT ship features that could lead to false positives in this first releas
  - [Container Overflow](https://github.com/google/sanitizers/wiki/AddressSanitizerContainerOverflow)
  - [Pointer Subtraction/Comparison](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
 
-See [Building for the Address Sanitizer with MSVC](.\asan-building.md) for further details.
+Please provide  [provide feedback](https://aka.ms/feedback/suggest?space=62).<sup>16.9</sup> about features you would like to see in future releases.
+
 
 ## Existing industry documentation
 
