@@ -12,7 +12,7 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Cl
 
 The C & C++ languages are powerful, but can suffer from a class of bugs which affect **program correctness** and **program security**. Starting with Visual Studio 2019 16.9 the Microsoft Visual C++ compiler and IDE support the Address Sanitizer technology which will light up [hard-to-find bugs](#error-types) with **zero false positives**.
 
-Use this flag to reduce your time spent on:
+Use this feature to reduce your time spent on:
 
 - Basic correctness
 - Cross platform portability
@@ -22,7 +22,7 @@ Use this flag to reduce your time spent on:
 
 The Address Sanitizer is a compiler and runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Compiling with `-fsanitize=address` is a powerful alternative to both [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160), and [/analyze](https://docs.microsoft.com/en-us/cpp/build/reference/analyze-code-analysis?view=msvc-160). It provides run-time bug-finding technologies which directly leverage your existing build systems and existing test assets.
 
- Projects can enable the Address Sanitizer with a project setting, or a single additional compiler switch: **-fanitize=address**. The new flag is compatible with all levels of optimization and configurations of x86 and x64, with several incompatibilities: [edit-and-continue](https://docs.microsoft.com/en-us/visualstudio/debugger/edit-and-continue-visual-cpp?view=vs-2019), [incremental linking](https://docs.microsoft.com/en-us/cpp/build/reference/incremental-link-incrementally?view=msvc-160), and [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160).
+ Projects can enable the Address Sanitizer with a project setting, or a single additional compiler switch: `-fsanitize=address`. The new flag is compatible with all levels of optimization and configurations of x86 and x64, with several incompatibilities: [edit-and-continue](https://docs.microsoft.com/en-us/visualstudio/debugger/edit-and-continue-visual-cpp?view=vs-2019), [incremental linking](https://docs.microsoft.com/en-us/cpp/build/reference/incremental-link-incrementally?view=msvc-160), and [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160).
 
 The Address Sanitizer is integrated with the Visual Studio the project system, CMake system and the IDE. 
 
