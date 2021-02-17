@@ -4,7 +4,8 @@ about: Create a C++ 2020 doc tracking work item
 title: ''
 labels: STL doc work, C++20
 assignees: ''
-
+milestone: backlog
+project: C++20
 ---
 
 ISO paper for this feature: [PaperID]()
