@@ -13,7 +13,7 @@ int main() {
 ```
 ## Resulting error
 
-![example1](\SRC_CODE\stack-buffer-underflow\example2.PNG)
+![example1](SRC_CODE/stack-buffer-underflow/example2.PNG)
 
 ## Example - stack underflow on thread
 
@@ -39,4 +39,4 @@ int main() {
 
 ## Resulting error
 
-![example2](\SRC_CODE\stack-buffer-underflow\example2.PNG)
+![example2](SRC_CODE/stack-buffer-underflow/example2.PNG)

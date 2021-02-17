@@ -1,6 +1,5 @@
 # Strcat - parameter overlap
 
-
 ## Example
 
 ```cpp
@@ -27,4 +26,4 @@ int main(int argc, char **argv) {
 ## Resulting error
 
 
-![example1](.\SRC_CODE\strcat-param-overlap\example1.PNG)
+![example1](SRC_CODE/strcat-param-overlap/example1.PNG)

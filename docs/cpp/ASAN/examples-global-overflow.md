@@ -6,7 +6,6 @@ In 'C' a global variable can be declared in numerous source files and even have 
 
 In C++ a global is allocated by the compiler (possibly being initialized at runtime). There can only be one definition throughout the program, so it's size is known at compile time.
 
-
 ## Example - globals in 'C' with multiple type definitions
 ```cpp
 // Here are 3 'C' files that are compiled in 3 different permutations:
@@ -40,8 +39,7 @@ int main() {
 
 `devenv /debugexe example2.exe`
 
-
-![example1](.\SRC_CODE\global-overflow\example1.PNG)
+![example1](SRC_CODE/global-overflow/example1.PNG)
 
 ## Example - simple function level static
 
@@ -66,7 +64,7 @@ int main(int argc, char **argv) {
 
 `devenv /debugexe example2.exe`
 
-![example2](.\SRC_CODE\global-overflow\example2.PNG)
+![example2](SRC_CODE/global-overflow/example2.PNG)
 
 
 ## Example - all global scopes in C++
@@ -115,5 +113,5 @@ int main(int argc, char **argv) {
 `devenv /debugexe example3.exe -l`
 
 
-![example3](.\SRC_CODE\global-overflow\example3.PNG)
+![example3](SRC_CODE/global-overflow/example3.PNG)
 

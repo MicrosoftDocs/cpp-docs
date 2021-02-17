@@ -1,6 +1,6 @@
 # Memcpy - parameter overlap
 
-The CRT function `memcpy()` doesn't support overlapping memory. This allows for optimizations that won't work if the buffers do overlap. There's not much to really look into, however, because C provides an alternative that does support overlapping memory: `memmove()`. 
+The CRT function [memcpy](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memcpy-wmemcpy?view=msvc-160) doesn't support overlapping memory. This allows for optimizations that won't work if the buffers do overlap. There's not much to really look into, however, because C provides an alternative that does support overlapping memory: [memmove](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memmove-wmemmove?view=msvc-160). 
 
 A common error is to treat `memmove()` as being semantically equivalent to `memcpy()`.
 
@@ -24,5 +24,5 @@ int main(int argc, char **argv) {
 
 ## Resulting error
 
-![example1](.\SRC_CODE\memcpy-param-overlap\example1.PNG)
+![example1](SRC_CODE/memcpy-param-overlap/example1.PNG)
 

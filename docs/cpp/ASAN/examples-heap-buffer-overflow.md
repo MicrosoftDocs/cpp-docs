@@ -1,6 +1,5 @@
 # Heap buffer overflow
 
-
 ## Example - classic heap buffer overflow
 
 ```cpp
@@ -19,7 +18,7 @@ int main(int argc, char **argv) {
 
 ## Resulting error
 
-![example1](.\SRC_CODE\heap-buffer-overflow\example1.PNG)
+![example1](SRC_CODE/heap-buffer-overflow/example1.PNG)
 
 ## Example - improper down cast
 ```cpp
@@ -44,7 +43,7 @@ int main(void) {
 
 ## Resulting error
 
-![example2](.\SRC_CODE\heap-buffer-overflow\example2.PNG)
+![example2](SRC_CODE/heap-buffer-overflow/example2.PNG)
 
 ## Example - strncpy into heap
 !
@@ -66,5 +65,5 @@ int main(int argc, char **argv) {
 
 ## Resulting error
 
-![example3](.\SRC_CODE\heap-buffer-overflow\example3.PNG)
+![example3](SRC_CODE/heap-buffer-overflow/example3.PNG)
 

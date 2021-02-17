@@ -19,7 +19,7 @@ int main() {
 
 ## Resulting error
 
-![example1](.\SRC_CODE\heap-use-after-free\example1.PNG)
+![example1](SRC_CODE/heap-use-after-free/example1.PNG)
 
 ## Example - operator new
 ```cpp
@@ -39,7 +39,7 @@ int main() {
 
 ## Resulting error
 
-![example2](.\SRC_CODE\heap-use-after-free\example2.PNG)
+![example2](SRC_CODE/heap-use-after-free/example2.PNG)
 
 
 ## Example - realloc
@@ -60,7 +60,7 @@ int main() {
 
 ## Resulting error
 
-![example3](.\SRC_CODE\heap-use-after-free\example3.PNG)
+![example3](SRC_CODE/heap-use-after-free/example3.PNG)
 
 ## Example - volatile
 ```cpp
@@ -79,5 +79,4 @@ int main() {
 
 ## Resulting error
 
-
-![example4](.\SRC_CODE\heap-use-after-free\example4.PNG)
+![example4](SRC_CODE/heap-use-after-free/example4.PNG)

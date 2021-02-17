@@ -2,7 +2,6 @@
 
 In the following C++ example only ~Base, not ~Derived is called. This is because Base's dtor is not virtual. When we `delete b`, the destructor is hard wired by default, to delete an empty base class (or 1-byte on Windows). This is an error common to C++ inheritance.
 
-
 ## Example - virtual destructor
 
 ```cpp
@@ -41,4 +40,4 @@ struct Base {
 
 ## Resulting error
 
-![example1](.\SRC_CODE\new-delete-type-mismatch\example1.PNG)
+![example1](SRC_CODE/new-delete-type-mismatch/example1.PNG)

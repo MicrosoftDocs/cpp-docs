@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
 
 ## Resulting error
 
-![example1](.\SRC_CODE\dynamic-stack-buffer-overflow\example1.PNG)
+![example1](SRC_CODE/dynamic-stack-buffer-overflow/example1.PNG)
 
 ## example - alloca overflow (left)
 
@@ -47,7 +47,7 @@ int main(int argc, char **argv) {
 ```
 ## Resulting error
 
-![example2](.\SRC_CODE\dynamic-stack-buffer-overflow\example2.PNG)
+![example2](SRC_CODE/dynamic-stack-buffer-overflow/example2.PNG)
 
 ## Example - several calls to alloca
 
@@ -132,4 +132,4 @@ __try{
 ```
 ## Resulting error
 
-![example3](.\SRC_CODE\dynamic-stack-buffer-overflow\example3.PNG)
+![example3](SRC_CODE/dynamic-stack-buffer-overflow/example3.PNG)

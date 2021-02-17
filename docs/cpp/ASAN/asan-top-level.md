@@ -111,7 +111,7 @@ Address Sanitizer is integrated with the Visual Studio IDE. You can turn on the 
 
 ![asan-project-system](MEDIA/asan-project-system.PNG)
 
-**To build** from the IDE, we ask you to knowingly opt out of [these incompatible flags](.asan-incompatible-flags.md):
+**To build** from the IDE, we ask you to knowingly opt out of [these incompatible flags](./asan-incompatible-flags.md):
 
 -  turn OFF [edit and continue](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue?view=vs-2019)
 - turn OFF [runtime checks]( )
