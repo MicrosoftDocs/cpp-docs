@@ -48,5 +48,8 @@ int main() {
 
 The Address Sanitizer runtime does not release memory back to the OS during execution. From the OS point of view it may look like memory is being leaked, but this is an intentional design decision to not allocate all the required memory up front. 
 
+## clang_rt.asan*.dll files
+
+The clang_rt.asan*.dll runtime files are dropped next to the compilers in `%VSINSTALLDIR%\VC\Tools\MSVC\<version>\bin\<host-arch>\<target-arch>\`. These locations are on the path in debugging sessions, as well as from Visual Studio Developer Command Prompts. The files are _not_ dropped in `C:\Windows\System32` or `C:\Windows\SysWOW64`.
 
 > [!NOTE] Please [send us feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and Please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
