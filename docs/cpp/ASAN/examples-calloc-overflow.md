@@ -1,6 +1,14 @@
-# calloc - overflow
+---
+title: "Calloc() overflow."
+description: "Source examples and live debug screen shots for calloc() overflow errors."
+ms.date: 02/05/2021
+f1_keywords: ["ASan","Address Sanitizer","memory safety","calloc() overflow", "ASan examples"]
+help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","calloc() overflow"]
+---
 
-The CRT function [calloc](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/calloc?view=msvc-160) will allocate an array in memory with elements initialized to 0. The arguments can be calculated externally to create an impossible internal error that will lead to a NULL pointer.
+# Calloc - overflow
+
+The CRT function [calloc](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/calloc?view=msvc-160) will create an array in memory with elements initialized to 0. The arguments can create an internal error that will lead to a NULL pointer as the return value.
 
 ## Example
 
@@ -24,4 +32,3 @@ int main() {
 ## Resulting error
 
 ![example1](SRC_CODE/calloc-overflow/example1.PNG)
-

@@ -1,3 +1,11 @@
+---
+title: "Heap use after free."
+description: "Source examples and live debug screen shots for heap use after free errors."
+ms.date: 02/05/2021
+f1_keywords: ["ASan","Address Sanitizer","memory safety","heap-use-after-free", "ASan examples"]
+help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","heap-use-after-free"]
+---
+
 # Heap use after free
 
 We show three examples where storage in the heap can be allocated via malloc, realloc (C) and new (C++) along with a mistaken use of volatile.
@@ -22,6 +30,7 @@ int main() {
 ![example1](SRC_CODE/heap-use-after-free/example1.PNG)
 
 ## Example - operator new
+
 ```cpp
 #include <windows.h>
 
@@ -37,10 +46,9 @@ int main() {
 
 ```
 
-## Resulting error
+## Resulting error - operator new
 
 ![example2](SRC_CODE/heap-use-after-free/example2.PNG)
-
 
 ## Example - realloc
 
@@ -58,11 +66,12 @@ int main() {
 }
 ```
 
-## Resulting error
+## Resulting error - realloc
 
 ![example3](SRC_CODE/heap-use-after-free/example3.PNG)
 
 ## Example - volatile
+
 ```cpp
 #include <stdlib.h>
 
@@ -77,6 +86,6 @@ int main() {
 }
 ```
 
-## Resulting error
+## Resulting error - volatile
 
 ![example4](SRC_CODE/heap-use-after-free/example4.PNG)

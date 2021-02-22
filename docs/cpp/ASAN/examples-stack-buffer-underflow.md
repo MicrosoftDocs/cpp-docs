@@ -1,6 +1,15 @@
+---
+title: "Stack buffer underflow."
+description: "Source examples and live debug screen shots for Stack buffer underflow errors."
+ms.date: 02/05/2021
+f1_keywords: ["ASan","Address Sanitizer","memory safety","Stack buffer underflow", "ASan examples"]
+help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Stack buffer underflow"]
+---
+
 # Stack buffer underflow
 
 ## Example - local array underflow
+
 ```cpp
 #include <stdio.h>
 
@@ -11,6 +20,7 @@ int main() {
 }
 
 ```
+
 ## Resulting error
 
 ![example1](SRC_CODE/stack-buffer-underflow/example2.PNG)
@@ -18,6 +28,7 @@ int main() {
 ## Example - stack underflow on thread
 
 ```cpp
+
 #include <windows.h>
 
 DWORD WINAPI thread_proc(void *) {
@@ -37,6 +48,6 @@ int main() {
 
 ```
 
-## Resulting error
+## Resulting error  - stack underflow on thread
 
 ![example2](SRC_CODE/stack-buffer-underflow/example2.PNG)

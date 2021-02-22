@@ -1,3 +1,11 @@
+---
+title: "Heap buffer overflow."
+description: "Source examples and live debug screen shots for heap variable overflow errors."
+ms.date: 02/05/2021
+f1_keywords: ["ASan","Address Sanitizer","memory safety","heap-buffer-overflow", "ASan examples"]
+help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","heap-buffer-overflow"]
+---
+
 # Heap buffer overflow
 
 ## Example - classic heap buffer overflow
@@ -21,6 +29,7 @@ int main(int argc, char **argv) {
 ![example1](SRC_CODE/heap-buffer-overflow/example1.PNG)
 
 ## Example - improper down cast
+
 ```cpp
 class Parent {
  public:
@@ -41,12 +50,12 @@ int main(void) {
 }
 ```
 
-## Resulting error
+## Resulting error - improper down cast
 
 ![example2](SRC_CODE/heap-buffer-overflow/example2.PNG)
 
 ## Example - strncpy into heap
-!
+
 ```cpp
 #include <string.h>
 #include <stdlib.h>
@@ -63,7 +72,6 @@ int main(int argc, char **argv) {
 }
 ```
 
-## Resulting error
+## Resulting error - strncpy into heap
 
 ![example3](SRC_CODE/heap-buffer-overflow/example3.PNG)
-

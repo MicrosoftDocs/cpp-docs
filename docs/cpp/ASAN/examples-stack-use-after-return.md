@@ -1,15 +1,23 @@
+---
+title: "Stack Use After Return."
+description: "Source examples and live debug screen shots for Stack Use After Return errors."
+ms.date: 02/05/2021
+f1_keywords: ["ASan","Address Sanitizer","memory safety","Stack Use After Return", "ASan examples"]
+help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Stack Use After Return"]
+---
 
-# Stack- Use After Return
+# Stack Use After Return
 
-This functionality requires code generation that is activated under an additional flag `-fsanitize-address-use-after-return `. A complete command line example would be:
+This functionality requires code generation that is activated under an extra compiler flag `-fsanitize-address-use-after-return`. A complete command-line example would be:
 
-> cl -fsanitize=address -fsanitize-address-use-after-return /Zi file.cpp my3dparty.lib -Fe My.exe. 
+> cl -fsanitize=address -fsanitize-address-use-after-return /Zi file.cpp my3dparty.lib -Fe My.exe.
 
-Once the binary is created the functionality in the binary is activated with an environment variable `ASAN_OPTIONS=detect_stack_use_after_return=1`.  This environment variable is there to allow for debugging and making quick progress in "getting through an existing source base"
+When the binary is created, the functionality in the binary is activated with an environment variable `ASAN_OPTIONS=detect_stack_use_after_return=1`.  This environment variable is there to allow for debugging and making quick progress in "getting through an existing source base"
 
-A the [CLANG/LLVM summary](https://github.com/google/sanitizers/wiki/AddressSanitizerUseAfterReturn) of the algorithm supporting use after return, as well as the larger performance costs.
+Consider the [Clang summary](https://github.com/google/sanitizers/wiki/AddressSanitizerUseAfterReturn) of the algorithm supporting use after return, and the larger performance costs.
 
 ## Example - Simple 'C'
+
 ```cpp
     char *x;
     
@@ -69,8 +77,10 @@ A the [CLANG/LLVM summary](https://github.com/google/sanitizers/wiki/AddressSani
         }
         return 0;
     }
+
 ```
-## Resulting error 
+
+## Resulting error
 
 Running this example as `c:>example2.exe 1`
 

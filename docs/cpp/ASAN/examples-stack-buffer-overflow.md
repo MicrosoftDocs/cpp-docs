@@ -1,7 +1,15 @@
+---
+title: "Stack buffer overflow."
+description: "Source examples and live debug screen shots for Stack buffer overflow errors."
+ms.date: 02/05/2021
+f1_keywords: ["ASan","Address Sanitizer","memory safety","Stack buffer overflow", "ASan examples"]
+help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Stack buffer overflow"]
+---
+
 # Stack buffer overflow
 
 The stack buffer overflow happen many ways in C or C++. We provide several examples for this category of error caught with a simple recompile. All simple examples are compiled using:
->  `cl -fsanitize=address /Zi  uas_example.c`
+>`cl -fsanitize=address /Zi  uas_example.c`
 
 ## Example - stack buffer overflow
 
@@ -43,7 +51,8 @@ int main(int argc, char **argv) {
 }
 ```
 
-## Resulting error
+## Resulting error - Stack buffer math
+
 ![example2](SRC_CODE/stack-buffer-overflow/Example2.PNG)
 
 ## Example - improper down cast on stack
@@ -69,6 +78,6 @@ int main(void) {
 }
 ```
 
-## Resulting error
+## Resulting error - improper down cast on stack
 
 ![example3](SRC_CODE/stack-buffer-overflow/example3.PNG)

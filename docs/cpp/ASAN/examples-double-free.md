@@ -1,7 +1,14 @@
+---
+title: "Double free error."
+description: "Source examples and live debug screen shots for double free errors."
+ms.date: 02/05/2021
+f1_keywords: ["ASan","Address Sanitizer","memory safety","double free", "ASan examples"]
+help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","double free"]
+---
 
 # Double free
 
-In 'C' you can call free() erroneously and in 'C++' you can similarly call delete more than once. In the last example we also show and example at the Windows specific, HeapCreate(), level of abstraction.
+In 'C', you can call free() erroneously. In 'C++', you can call delete more than once. In the following examples, we show errors with delete, free and HeapCreate().
 
 ## Example C++ - double operator delete
 
@@ -16,11 +23,13 @@ int main() {
   return 0;
 }
 ```
-## Resulting error
+
+## Resulting error - double operator delete
 
 ![example1](SRC_CODE/double-free/example1.PNG)
 
 ## Example 'C' - double fre()
+
 ```cpp
 #include <stdlib.h>
 #include <string.h>
@@ -39,13 +48,12 @@ int main(int argc, char **argv) {
 }
 ```
 
-## Resulting error
-
+## Resulting error - double free()
 
 ![example2](SRC_CODE/double-free/example2.PNG)
 
-
 ## Example - Windows HeapCreate() double free
+
 ```cpp
 #include <Windows.h>
 #include <stdio.h>
@@ -62,8 +70,6 @@ int main() {
 }
 ```
 
-## Resutling error
+## Resulting error - Windows HeapCreate() double free
 
 ![example3](SRC_CODE/double-free/example3.PNG)
-
-

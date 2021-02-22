@@ -1,12 +1,21 @@
-# GLOBALS
+---
+title: "Global buffer overflow."
+description: "Source examples and live debug screen shots for global variable overflow errors."
+ms.date: 02/05/2021
+f1_keywords: ["ASan","Address Sanitizer","memory safety","global-buffer-overflow", "ASan examples"]
+help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","global-buffer-overflow"]
+---
 
-Global variables covers any variable allocated in the .data or .bss section. These are simply globals or file statics that are allocated in memory before main() starts. Note that global variables in 'C' are treated much differently than 'C++'. This is due to the exciting rules for linking.  
+# Global buffer overflow
 
-In 'C' a global variable can be declared in numerous source files and even have different types at each definition site.  This means the linker has to allocate the global and it just choses the largest space of all the different declarations.
+The compiler generates meta-data and shadow bytes for any variable in the `.data` or `.bss` sections. These variables have language scope globals or file statics that are allocated in memory before main() starts. Global variables in 'C' are treated much differently than 'C++'. This difference is because of the complex rules for linking.  
 
-In C++ a global is allocated by the compiler (possibly being initialized at runtime). There can only be one definition throughout the program, so it's size is known at compile time.
+In 'C', a global variable can be declared in several source files and each definition can have different types.  The compiler can't see all the possible definitions. The linker will see all the different definitions. The linker defaults to selecting the largest size of all the different declarations.
+
+In C++, a global is allocated by the compiler. There can only be one definition so the size of each definition is known at compile time.
 
 ## Example - globals in 'C' with multiple type definitions
+
 ```cpp
 // Here are 3 'C' files that are compiled in 3 different permutations:
 // 
@@ -14,7 +23,7 @@ In C++ a global is allocated by the compiler (possibly being initialized at runt
 //    > cl b.c a.c c.c main.c ..
 //    > cl b.c b.c a.c main.c ..
 //
-// ASAN reports a buffer overflow in main.c @line #2 in all cases.
+// Address Sanitizer reports a buffer overflow in main.c @line #2 in all cases.
   
 // file: a.c 
 int x;
@@ -37,8 +46,6 @@ int main() {
 
 ## Resulting error
 
-`devenv /debugexe example2.exe`
-
 ![example1](SRC_CODE/global-overflow/example1.PNG)
 
 ## Example - simple function level static
@@ -60,12 +67,11 @@ int main(int argc, char **argv) {
 }
 ```
 
-## Resulting error
+## Resulting error - simple function level static
 
 `devenv /debugexe example2.exe`
 
 ![example2](SRC_CODE/global-overflow/example2.PNG)
-
 
 ## Example - all global scopes in C++
 
@@ -108,10 +114,8 @@ int main(int argc, char **argv) {
 }
 ```
 
-## Resulting errors
+## Resulting error - all global scopes in C++
 
 `devenv /debugexe example3.exe -l`
 
-
-![example3](SRC_CODE/global-overflow/example3.PNG)
-
+![example3]

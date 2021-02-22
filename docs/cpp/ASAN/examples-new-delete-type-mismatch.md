@@ -1,6 +1,14 @@
+---
+title: "New delete type mismatch."
+description: "Source examples and live debug screen shots for new delete type mismatch errors."
+ms.date: 02/05/2021
+f1_keywords: ["ASan","Address Sanitizer","memory safety","New delete type mismatch", "ASan examples"]
+help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","New delete type mismatch"]
+---
+
 # New delete type mismatch
 
-In the following C++ example only ~Base, not ~Derived is called. This is because Base's dtor is not virtual. When we `delete b`, the destructor is hard wired by default, to delete an empty base class (or 1-byte on Windows). This is an error common to C++ inheritance.
+In the following example, only ~Base, and not ~Derived is called. The compiler generates a call to ~Base() because Base's `destructor()`isn't virtual. When we `delete b`, the object's destructor is bound to the default definition. The code will delete an empty base class (or 1 byte on Windows). Missing the **virtual** keyword for the destructor declaration, is a common C++ error when using inheritance.
 
 ## Example - virtual destructor
 
@@ -29,9 +37,11 @@ int main() {
     return 0;
 }
 ```
+
 Polymorphic base classes should declare **virtual destructors**. If a class has any virtual functions, it should have a virtual destructor
 
 Fix this example by adding:
+
 ```cpp
 struct Base {
   virtual ~Base() = default;

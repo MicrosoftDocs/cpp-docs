@@ -1,7 +1,15 @@
+---
+title: "Stack Use After Scope."
+description: "Source examples and live debug screen shots for Stack Use After Scope errors."
+ms.date: 02/05/2021
+f1_keywords: ["ASan","Address Sanitizer","memory safety","Stack Use After Scope", "ASan examples"]
+help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Stack Use After Scope"]
+---
+
 # Stack use after scope
 
 The use of a stack address outside the lexical scope of a variable's lifetime, can happen many ways in C or C++.  We provide several examples for this category of error caught with a simple recompile. All simple examples are compiled using:
->  `cl -fsanitize=address /Zi /EHsc uas_example.c`
+> `cl -fsanitize=address /Zi /EHsc uas_example.c`
 
 ## Example 1 - simple nested local
 
@@ -16,13 +24,17 @@ int main() {
     }
     return *gp;  // Boom!
 }
+
 ```
+
 ## Resulting error
 
-![example1-screenshot](SRC_CODE/stack-use-after-scope/example1.PNG) 
+![example1-screenshot](SRC_CODE/stack-use-after-scope/example1.PNG)
 
 ## Example 2 - lambda capture
+
 ```cpp
+
 #include <functional>
 
 int main() {
@@ -35,12 +47,14 @@ int main() {
   }
   return f();  // Boom!
 }
+
 ```
-## Resutling Error
 
-![example2-screenshot](SRC_CODE/stack-use-after-scope/Example2.PNG) 
+## Resulting Error
 
-## Example 3 - destructor ordering relative to locals
+![example2-screenshot](SRC_CODE/stack-use-after-scope/Example2.PNG)
+
+## Example 3 - destructor ordering with locals
 
 ```cpp
 
@@ -71,12 +85,15 @@ int main(int argc, char *argv[]) {
 
   return 0;
 }
-```
-## Resulting error
 
-![example3-screenshot](SRC_CODE/stack-use-after-scope/example3.PNG) 
+```
+
+## Resulting error - destructor ordering relative to locals
+
+![example3-screenshot](SRC_CODE/stack-use-after-scope/example3.PNG)
 
 ## Example 4 - temporaries
+
 ```cpp
 #include <iostream>
 
@@ -105,7 +122,9 @@ void main() {
     explicit_temp();
     temp_from_conversion(); 
 }
-```
-## Resulting error
 
-![example4-screenshot](SRC_CODE/stack-use-after-scope/example4.PNG) 
+```
+
+## Resulting error - temporaries
+
+![example4-screenshot](SRC_CODE/stack-use-after-scope/example4.PNG)

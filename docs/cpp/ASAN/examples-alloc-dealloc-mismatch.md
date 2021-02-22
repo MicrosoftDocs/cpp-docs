@@ -1,9 +1,17 @@
+---
+title: "Alloc dealloc mismatch"
+description: "Source examples and live debug screenshots for alloc-dealloc-mismatch errors."
+ms.date: 02/05/2021
+f1_keywords: ["ASan","Address Sanitizer","memory safety","alloc dealloc mismatch", "ASan examples"]
+help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","alloc-dealloc-mismatch"]
+---
+
 # Alloc dealloc mismatch
 
-This is not on by default for Windows. So you will have to `set ASAN_OPTIONS=alloc_dealloc_mismatch=1` prior to running the program. This flag will report errors on malloc/delete, new/free, new/delete[] etc. 
-
+This functionality isn't on by default for Windows. To enable, `set ASAN_OPTIONS=alloc_dealloc_mismatch=1` before running the program. This runtime flag, will report errors on malloc/delete, new/free, and new/delete[].
 
 ## Example
+
 ```cpp
 #include <stdio.h>
 #include <stdlib.h>
@@ -34,4 +42,3 @@ int main(int argc,char *argv[] ) {
 The following output resulted from the command line: `devenv /debugexe example1.exe 2`
 
 ![example1](SRC_CODE/alloc-dealloc-mismatch/example1.PNG)
-

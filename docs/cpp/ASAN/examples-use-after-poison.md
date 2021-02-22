@@ -1,6 +1,14 @@
+---
+title: "Use after poison."
+description: "Source examples and live debug screen shots for use after poison errors."
+ms.date: 02/05/2021
+f1_keywords: ["ASan","Address Sanitizer","memory safety","Use after poison", "ASan examples"]
+help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Use after poison"]
+---
+
 # Use after poison
 
-A developer can manually poison memory and produce the following error. You might want to compile without -fsanitize=address and manually link the runtime libraries to facilitate a custom debugging process.
+A developer can manually poison memory to customize debugging.
 
 ## Example
 
