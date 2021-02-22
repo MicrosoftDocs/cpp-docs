@@ -37,7 +37,7 @@ On x86:
             char shadow_byte_value = *((Your_Address >> 3) + 0x30000000)
 ```
 
-On amd64:
+On x64:
 
 ```cpp
             char shadow_byte_value = *((Your_Address >> 3) + _asan_runtime_assigned_offset)

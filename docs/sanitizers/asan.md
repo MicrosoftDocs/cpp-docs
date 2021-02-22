@@ -33,17 +33,25 @@ Microsoft's Address Sanitizer technology enables integration with the Visual Stu
 
 ### Installing the Address Sanitizer
 
-The Address Sanitizer is installed by default with the Visual C++.
+**The Address Sanitizer is installed by default with the Visual C++**. However, if you are upgrading from an older version of Visual Studio 2019 you will need to enable ASan support in the Installer after the upgrade:
 
-After installing Visual C++, you can start build your executables with the `-fsanitize=address` compiler switch using any of the following development methods:
+![asan-project-system](MEDIA/asan-installer.PNG)
+
+You can click **Modify** on your existing Visual Studio installation from the Visual Studio Installer to get to the screen above.
+
+Note: if you run Visual Studio on the new update but have not installed ASan, you will get the following error when you run your code:
+
+`LNK 1356 – cannot find library 'clang_rt.asan_dynamic-i386.lib'`
+
+### Using the Address Sanitizer
+
+Start building your executables with the `-fsanitize=address` compiler switch using any of the following development methods:
 
 - Command line
 - Visual Studio project system
 - Visual Studio CMake integration
 
  Recompile, then run your program normally. This code generation will light up [many types of precisely diagnosed bugs](#errors). These errors can be reported in three ways: in the debugger IDE, on the command line or stored in a [new type of dump file](#Address-Sanitizer-crash-dumps) for precise off-line processing.
-
-### Using the Address Sanitizer
 
 Microsoft recommends using the Address Sanitizer in these **three standard workflows**:
 
@@ -62,7 +70,7 @@ Microsoft recommends using the Address Sanitizer in these **three standard workf
 
 This article will cover the information needed to enable the three workflows listed above. The information will be specific to the **platform-dependent** Windows 10 implementation of the Address Sanitizer. This documentation is meant to supplement the excellent documentation from [Google, Apple, and GCC](#Google,-Apple-and-GCC-documentation) already published.
 
-> [!NOTE] Current support is limited to x86 and AMD64 on Windows 10. Please [send us feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases. Your feedback would help us prioritize other sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
+> [!NOTE] Current support is limited to x86 and x64 on Windows 10. Please [send us feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases. Your feedback would help us prioritize other sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
 
 ## Using the Address Sanitizer from a Developer Command Prompt
 
