@@ -19,8 +19,8 @@ Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm
 ## Example - globals in 'C' with multiple type definitions
 
 ```cpp
-// Address Sanitizer reports a buffer overflow in main.c @line #2 in all cases, regardless of the
-// order in which the a.obj, b.obj, and c.obj are linked.
+// Address Sanitizer reports a buffer overflow at the first line in function main() in all cases, 
+// REGARDLESS of the order in which the object files: a.obj, b.obj, and c.obj are linked.
   
 // file: a.c 
 int x;
@@ -31,8 +31,7 @@ char* x;
 // file: c.c
 float* x[3];
 
-// example1-main.c
-
+// file: example1-main.c
 double x[5];
  
 int main() { 
@@ -129,4 +128,4 @@ From a **Developer Command Prompt**:
 
 ## Resulting error - all global scopes in C++
 
-![example3]
+![example3](SRC_CODE/global-overflow/example3.PNG)
