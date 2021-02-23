@@ -8,7 +8,7 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","Address-Sanitizer"
 
 # Visual Studio Address Sanitizer extended functionality library (VCASan)
 
-The "*VCAsan*.lib" libraries implement extended debugger IDE features in Visual Studio. These new features allow the IDE to light up Address Sanitizer errors in live debug sessions, or off-line by saving a crash dump file with new meta-data. In either case, the IDE has new functionality to super-impose. The library is linked any time AddressSanitizer is enabled with the Visual C++ compiler.
+The **VCAsan\*.lib** libraries implement extended debugger IDE features in Visual Studio. These features allow the IDE to light up Address Sanitizer errors in live debug sessions, or offline by saving a crash dump file with metadata. The library is linked any time AddressSanitizer is enabled with the Visual C++ compiler.
 
 ## VCAsan library inventory
 
