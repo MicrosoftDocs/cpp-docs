@@ -80,6 +80,9 @@ For more information, see the [Differences with Clang 12.0] section(./asan-top-l
 > [!NOTE]
 > The option `windows_hook_legacy_allocators` is NOT currently available in the public llvm-project runtime as of this date. The option may eventually be contributed back to the public project; however, this is dependent on code review and community acceptance.
 
+> [!NOTE]
+> The option `windows_hook_rtl_allocators`, previously an opt-in feature while Address Sanitizer was experimental, is now enabled by default.
+
 ## Address Sanitizer list of intercepted functions (Windows)
 
 The Address Sanitizer runtime hot-patches many functions to enable memory safety checks at runtime. The following set of functions is a non-exhaustive list of the functions that the Address Sanitizer runtime monitors.
