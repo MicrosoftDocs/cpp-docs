@@ -8,7 +8,7 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Cl
 
 # AddressSanitizer Runtime
 
-The Address Sanitizer functionality requires the installation of interceptors for common memory functions, for both allocators and memory manipulation functions. There are various runtime libraries for targeting different executable types and CRT libraries. Normally the compiler will link the appropriate link-libraries so long as the /fsanitize=address flag is passed at compile time. This default functionality can be over ridden with the /nodefaultlib flag at link time. See the section on [linking](./asan-building.md#Linker) for further detail.
+The Address Sanitizer runtime library installs replacement functions; interceptors, for common memory allocation and memory manipulation functions. There are a number of different runtime libraries that facilitate this for the various types of executables the compiler may generate. The compiler and linker will link the appropriate runtime libraries so long as the /fsanitize=address flag is passed at compile time. This default functionality can be overrided with the flag `/nodefaultlib` at link time. See the section on [linking](./asan-building.md#Linker) for further detail.
 
 Below is an inventory of runtime libraries for linking to the Address Sanatizer runtime, where `arch` is either `i386` or `x86_64`.
 
@@ -24,28 +24,28 @@ Below is an inventory of runtime libraries for linking to the Address Sanatizer 
 | MT       | DLL        | YES    | `clang_rt.asan_dbg_dll_thunk-{arch}`                                               |
 | MD       | EITHER     | YES    | `clang_rt.asan_dbg_dynamic-{arch}, clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}` |
 
- When compiling with `cl -fsanitize=address`, the compiler generates code to write [shadow-bytes](./asan-shadowbytes.md). The flag also generates code that uses these shadow bytes when calling the runtime to check memory references. These memory can be on the stack, in the heap, or in global memory. The compiler also produces metadata describing stack and global variables. This metadata enables the runtime to generate precise error diagnostics. These diagnostics are reported function names, lines, and columns in your source code. The Address Sanitizer runtime libraries install function-interceptors during program initialization. These interceptors generate necessary metadata and insert checks in common string and memory allocation functions. Combined, this compiler and runtime inter-op, generates precisely diagnosed Address Sanitizer reports when many types of [memory safety bugs](./asan-top-level.md#Error-types) are encountered at runtime.
+When compiling with `cl -fsanitize=address`, the compiler generates instructions to manage and check the [shadow-bytes](./asan-shadowbytes.md). Your program will use this instrumentation to check memory accesses on the stack, in the heap, or in the global scope. The compiler also produces metadata describing stack and global variables. This metadata enables the runtime to generate precise error diagnostics: function names, lines, and columns in your source code. Combined, the compiler checks and runtime libraries can precisely diagnose many types of [memory safety bugs](./asan-top-level.md#Error-types) if they are encountered at run-time.
 
 ## Function interception
 
 Interception is achieved through **many hot-patching techniques**, [these techniques are best documented within the source code itself.](https://github.com/llvm/llvm-project/blob/1a2eaebc09c6a200f93b8beb37130c8b8aab3934/compiler-rt/lib/interception/interception_win.cpp#L11)
 
-The runtime libraries intercept many common memory management and manipulation functions. [A complete list of intercepted functions is available below.](#AddressSanitizer-list-of-intercepted-functions-(Windows)) The allocation interceptors manage metadata and shadow bytes related to each allocation call. Every time a CRT functions like malloc() or delete() are called, the interceptors set specific values in the Address Sanitizer shadow-memory to indicate whether those heap locations are currently accessible and what are the bounds of these allocations. These shadow bytes allow the compiler's generated checks using the associated [shadow-bytes](./asan-shadowbytes.md) to determine whether a load or store is valid.
+The runtime libraries intercept many common memory management and memory manipulation functions. [A complete list of intercepted functions is available below.](#AddressSanitizer-list-of-intercepted-functions-(Windows)) The allocation interceptors manage metadata and shadow bytes related to each allocation call. Every time a CRT function like malloc() or delete() are called, the interceptors set specific values in the Address Sanitizer shadow-memory region to indicate whether those heap locations are currently accessible and what are the bounds of the allocation are. These shadow bytes allow the compiler-generated checks of the [shadow-bytes](./asan-shadowbytes.md) to determine whether a load or store is valid.
 
 ## Custom allocators and the Address Sanitizer runtime
 
-The Address Sanitizer runtime provides interceptors for common allocator interfaces, malloc/free, new/delete, HeapAlloc/HeapFree (via RtlAllocateHeap/RtlFreeHeap). Many programs make use of custom allocators for one reason or another. An example would be any program using dlmalloc or a solution using the std::allocator interface and VirtualAlloc(). The compilers Address Sanitizer instrumentation doesn't automatically affect custom allocators. It's the user's responsibility to use the [provided manual poisoning interface](#Manual-Address-Sanitizer-poisoning-interface). This API enables these allocators to function properly with the existing Address Sanitizer runtime and [shadow byte](./asan-shadowbytes.md) conventions.
+The Address Sanitizer runtime provides interceptors for common allocator interfaces, malloc/free, new/delete, HeapAlloc/HeapFree (via RtlAllocateHeap/RtlFreeHeap). Many programs make use of custom allocators for one reason or another, an example would be any program using dlmalloc or a solution using the std::allocator interface and VirtualAlloc(). The compiler is not able to automatically add shadow-memory management calls to a custom allocator. It's the user's responsibility to use the [provided manual poisoning interface](#Manual-Address-Sanitizer-poisoning-interface). This API enables these allocators to function properly with the existing Address Sanitizer runtime and [shadow byte](./asan-shadowbytes.md) conventions.
 
 ## Manual Address Sanitizer poisoning interface
 
-The interface for enlightening is simple but it imposes alignment restrictions on the user. The interface function prototypes are as follows:
+The interface for enlightening is simple but it imposes alignment restrictions on the user. Users may import these prototypes by importing [`sanitizer/asan_interface.h`](https://github.com/llvm/llvm-project/blob/main/compiler-rt/include/sanitizer/asan_interface.h) The interface function prototypes are as follows:
 
 ```cpp
 void __asan_poison_memory_region(void const volatile *addr, size_t size);
 void __asan_unpoison_memory_region(void const volatile *addr, size_t size);
 ```
 
-These functions aren't needed when your code is NOT compiled with `cl -fsanitize=address`. For convenience the Address Sanitizer interface header file provides wrapper macros that check whether the Address Sanitizer functionality is enabled during compilation. This allows your source code to omit the poisoning function calls. These macros should be preferred over calling the above functions directly:
+For convenience the [Address Sanitizer interface header file](https://github.com/llvm/llvm-project/blob/main/compiler-rt/include/sanitizer/asan_interface.h) provides wrapper macros that check whether the Address Sanitizer functionality is enabled during compilation. This allows your source code to omit the poisoning function calls when they are not needed. These macros should be preferred over calling the above functions directly:
 
 ```cpp
 #define ASAN_POISON_MEMORY_REGION(addr, size)
@@ -54,7 +54,7 @@ These functions aren't needed when your code is NOT compiled with `cl -fsanitize
 
 ## Alignment requirements for Address Sanitizer poisoning
 
-Any manual poisoning of shadow bytes must consider alignment requirements. The user must add padding such that the padding ends on a byte boundary in the shadow memory. Each bit in the Address Sanitizer's shadow memory, encodes the state of 1 byte in the application's memory. This encoding means **the total size of each allocation, including any padding, must align to an 8-byte boundary.** If the alignment requirement is not satisfied, it can lead to incorrect bug reporting. The incorrect reporting could materialize as the omission of proper errors or reporting false errors.
+Any manual poisoning of shadow bytes must consider this alignment requirement: The user must add padding such that the padding ends on a byte boundary in the shadow memory. Each bit in the Address Sanitizer's shadow memory, encodes the state of 1 byte in the application's memory. This encoding means **the total size of each allocation, including any padding, must align to an 8-byte boundary.** If the alignment requirement is not satisfied, it can lead to incorrect bug reporting. The incorrect reporting could materialize as missing reports (false negative) or reports on non-errors (false-positive).
 
 [See the provided example programs for an illustration of the requirement and potential issues.](https://github.com/mcgov/asan_alignment_example) One is a small program to show what can go wrong with manual shadow memory poisoning. The second is an example implementation of manual poising using the `std::allocator` interface.
 
