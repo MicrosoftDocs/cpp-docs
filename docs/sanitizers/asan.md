@@ -74,7 +74,7 @@ This article will cover the information needed to enable the three workflows lis
 
 ## Using the Address Sanitizer from a Developer Command Prompt
 
-Compile with `-fsanitize=address` to enable Address Sanitizer. The compiler flag `-fsanitize=address` is compatible with all existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, `/O2 /GL` and `PGO`). The flag works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). The flag works with creating an EXE or a DLL. Debug information is required for optimal formatting of call stacks. In this example, we explicitly pass `/Zi`.
+Compile with `-fsanitize=address` to enable Address Sanitizer. The compiler flag `-fsanitize=address` is compatible with all existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, `/O2 /GL` and `PGO`). The flag works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). The flag works with creating an EXE or a DLL. Debug information is required for optimal formatting of call stacks. In this example, `/Zi` is explicitly passed.
 
 The Address Sanitizer libraries (.lib files) will be linked for you. For more detail, and for guidelines on partitioned build systems, see [building to target the Address Sanitizer runtime](./asan-building.md).
 
@@ -119,11 +119,11 @@ Address Sanitizer is integrated with the Visual Studio IDE. You can turn on the 
 
 ![asan-project-system](MEDIA/asan-project-system.PNG)
 
-**To build** from the IDE, we ask you to **knowingly opt out of [these incompatible flags](./asan-known-issues.md#Incompatible-switches-and-functionality)** (in case you are adding to an existing MyApp.projx). For an existing project that is compiled with /Od, this could mean turning off the following:
+To build from the IDE, opt out of [these incompatible flags](./asan-known-issues.md#Incompatible-switches-and-functionality). For an existing project that is compiled in Debug mode, this could mean the following:
 
-- turn OFF [edit and continue](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue?view=vs-2019)
-- turn OFF [runtime checks](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160)
-- turn OFF [incremental linking](https://docs.microsoft.com/en-us/cpp/build/reference/incremental-link-incrementally?view=msvc-160)
+- Turn off [edit and continue](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue?view=vs-2019)
+- Turn off [runtime checks](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160)
+- Turn off [incremental linking](https://docs.microsoft.com/en-us/cpp/build/reference/incremental-link-incrementally?view=msvc-160)
 
 To build and run the debugger, **hit F5**. The following VS window will result:
 
@@ -202,7 +202,7 @@ Visual C++ currently differs in two functional areas:
 
 These decisions were made to reduce the test matrix required to ship this first version.
 
-We did NOT ship features that could lead to false positives in Visual Studio 2019 16.9. That discipline enforced an effective testing integrity necessary when considering interop with decades of exiting code. The following functionalities may be considered to implementation later:
+Features that could lead to false positives in Visual Studio 2019 16.9 were not shipped. That discipline enforced an effective testing integrity necessary when considering interop with decades of exiting code. The following functionalities may be considered to implementation later:
 
 - [Initialization Order Fiasco](https://github.com/google/sanitizers/wiki/AddressSanitizerInitializationOrderFiasco)
 - [Intra Object Overflow](https://github.com/google/sanitizers/wiki/AddressSanitizerIntraObjectOverflow)
