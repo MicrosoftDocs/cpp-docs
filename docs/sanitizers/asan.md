@@ -78,7 +78,7 @@ Compile with `-fsanitize=address` to enable Address Sanitizer. The compiler flag
 
 The Address Sanitizer libraries (.lib files) will be linked for you. For more detail, and for guidelines on partitioned build systems, see [building to target the Address Sanitizer runtime](./asan-building.md).
 
-### Example - basic global buffer overflow:
+### Example - basic global buffer overflow
 
 ```cpp
     // basic-global-overflow.cpp
@@ -101,7 +101,7 @@ Consider the overlaid, red boxes that high light seven key pieces of information
 
 ![basic-global-overflow](SRC_CODE/asan-top-level/basic-global-overflow.PNG)
 
-**From top to bottom**
+### Red highlights - from top to bottom
 
 1. The memory safety bug is a global-buffer-overflow.
 2. There were **4 bytes** (32 bits) **stored** outside any user-defined variable.
@@ -119,7 +119,7 @@ Address Sanitizer is integrated with the Visual Studio IDE. You can turn on the 
 
 ![asan-project-system](MEDIA/asan-project-system.PNG)
 
-**To build** from the IDE, we ask you to **knowingly opt out of [these incompatible flags](./asan-incompatible-flags.md)** (in case you are adding to an existing MyApp.projx). For an existing project that is compile /Od this could meant turning off the following:
+**To build** from the IDE, we ask you to **knowingly opt out of [these incompatible flags](./asan-known-issues.md#Incompatible-switches-and-functionality)** (in case you are adding to an existing MyApp.projx). For an existing project that is compiled with /Od, this could mean turning off the following:
 
 - turn OFF [edit and continue](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue?view=vs-2019)
 - turn OFF [runtime checks](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160)

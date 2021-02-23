@@ -18,9 +18,13 @@ The following switches and functionality are not currently compatible with `-fsa
 - [Incremental Linking](https://docs.microsoft.com/en-us/cpp/build/reference/incremental-link-incrementally?view=msvc-160) is not currently supported, and should be disabled.
 - [Edit-and-Continue](https://docs.microsoft.com/en-us/visualstudio/debugger/edit-and-continue-visual-cpp?view=vs-2019) is not currently supported, and should be disabled.
 - [Coroutines](https://devblogs.microsoft.com/cppblog/category/coroutine/) are not compatible with Address Sanitizer, and resumable functions are exempt from instrumentation.
+- [Open MP](https://docs.microsoft.com/en-us/cpp/build/reference/openmp-enable-openmp-2-0-support?view=msvc-160)is not currently supported, and should be disabled.
+- [Managed C++](https://docs.microsoft.com/en-us/cpp/build/reference/clr-common-language-runtime-compilation?view=msvc-160) is not currently supported, and should be disabled. 
+- [C++ AMP](https://docs.microsoft.com/en-us/cpp/parallel/amp/cpp-amp-overview?view=msvc-160) is not currently supported, and should be disabled.
 - [Special Case List](https://clang.llvm.org/docs/SanitizerSpecialCaseList.html) files are not supported.
 
 ## STL enlightenment
+
 The MSVC standard library (STL) is not currently enlightened to understand the Address Sanitizer, so ASan exceptions raised in STL code, while identifying true bugs, are not as precise as they could be.
 
 The following example demonstrates this. Compile with `cl -fsanitize=address /Zi`
