@@ -62,7 +62,7 @@ Microsoft recommends using the Address Sanitizer in these **three standard workf
   - Visual Studio - [CMake]([CMake](#Using-the-Address-Sanitizer-from-Visual-Studio:-CMake))
 
 - **CI/CD** - continuous integration / continuous development
-  - Error reporting - [New Address Sanitizer dump files](Address Sanitizer crash dumps)
+  - Error reporting - [New Address Sanitizer dump files](#Address-Sanitizer-crash-dumps)
 
 - **Fuzzing** - building with the [libFuzzer](https://llvm.org/docs/LibFuzzer.html) wrapper
   - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
@@ -70,13 +70,13 @@ Microsoft recommends using the Address Sanitizer in these **three standard workf
 
 This article will cover the information needed to enable the three workflows listed above. The information will be specific to the **platform-dependent** Windows 10 implementation of the Address Sanitizer. This documentation is meant to supplement the excellent documentation from [Google, Apple, and GCC](#Google,-Apple-and-GCC-documentation) already published.
 
-> [!NOTE] Current support is limited to x86 and x64 on Windows 10. Please [send us feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases. Your feedback would help us prioritize other sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=hwaddress or -fsanitize=undefined.
+> [!NOTE] Current support is limited to x86 and x64 on Windows 10. Please [send us feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases. Your feedback would help us prioritize other sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=undefined, or -fsanitize=hwaddress.
 
 ## Using the Address Sanitizer from a Developer Command Prompt
 
-Compile with `-fsanitize=address` to enable Address Sanitizer. The compiler flag `-fsanitize=address` is compatible with all existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, `/O2 /GL` and `PGO`). The flag works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). The flag works with creating an EXE or a DLL. Debug information is required for optimal formatting of call stacks. In this example, `/Zi` is explicitly passed.
+Compile with `-fsanitize=address` to enable compiling for the Address Sanitizer runtime. The compiler flag `-fsanitize=address` is compatible with all existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, `/O2 /GL` and `PGO`). The flag works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). The flag works with creating an EXE or a DLL. Debug information is required for optimal formatting of call stacks. In the example below, `cl -fsanitize=address-/Zi` is passed on the command line.
 
-The Address Sanitizer libraries (.lib files) will be linked for you. For more detail, and for guidelines on partitioned build systems, see [building to target the Address Sanitizer runtime](./asan-building.md).
+The Address Sanitizer libraries (.lib files) will automatically be linked for you. For more detail, and for guidelines on partitioned build systems, see [building to target the Address Sanitizer runtime](./asan-building.md).
 
 ### Example - basic global buffer overflow
 
@@ -97,7 +97,7 @@ Using a Developer Command Prompt for VS 2019, compile main.cpp using `-fsanitize
 
 Running the resulting **main.exe** at the command line, will result in the formatted error report seen below.
 
-Consider the overlaid, red boxes that high light seven key pieces of information:
+Consider the overlaid, red boxes that highlight seven key pieces of information:
 
 ![basic-global-overflow](SRC_CODE/asan-top-level/basic-global-overflow.PNG)
 
@@ -119,7 +119,7 @@ Address Sanitizer is integrated with the Visual Studio IDE. You can turn on the 
 
 ![asan-project-system](MEDIA/asan-project-system.PNG)
 
-To build from the IDE, opt out of [these incompatible flags](./asan-known-issues.md#Incompatible-switches-and-functionality). For an existing project that is compiled in Debug mode, this could mean the following:
+To build from the IDE, opt out of [these incompatible flags](./asan-known-issues.md#Incompatible-switches-and-functionality). For an existing project that is compiled /Od (or Debug Mode), this could mean the following:
 
 - Turn off [edit and continue](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue?view=vs-2019)
 - Turn off [runtime checks](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160)
@@ -155,9 +155,9 @@ The following screenshot captures the error from the CMake build.
 
 ## Address Sanitizer crash dumps
 
-We introduced new functionality for Address Sanitizer for cloud and distributed workflows. This functionality allows you to view the Address Sanitizer error in the IDE. The error will be overlaid on top of your source, just as you would experience in a live debug session.
+We introduced new functionality for the Address Sanitizer to be used in cloud and distributed workflows. This functionality allows off-line viewing of an Address Sanitizer error in the IDE. The error will be overlaid on top of your source, just as you would experience in a live debug session.
 
-The difference can lead to efficiencies analyzing a bug. You don't need to rerun, or find remote data or look for a machine that went off-line.
+These new dump files can lead to efficiencies when analyzing a bug. You don't need to rerun, or find remote data or look for a machine that went off-line.
 
 To produce a new type of dump file that can be viewed in Visual Studio on another machine at a later date:
 
@@ -167,11 +167,11 @@ set ASAN_SAVE_DUMPS=MyFileName.dmp
 
 Starting with Visual Studio 16.9 you can display **a precisely diagnosed error**, stored in MyFileName.dmp, on top of your source code.
 
-[This new crash dump functionality](./asan-offline-address-sanitizer-crash-dumps.md) is an enabler for cloud-based workflows and distributed testing.
+[This new crash dump functionality](./asan-offline-address-sanitizer-crash-dumps.md) is an enabler for cloud-based workflows, or distributed testing. It can also be used for filing a very accurate bug, in any scenario.
 
 ## Error types
 
-The following list of runtime errors can be exposed when you run your binaries compiled the Address Sanitizer(-fsanitize=address):
+The following list of runtime errors can be exposed when you run your binaries compiled with the Address Sanitizer(-fsanitize=address):
 
 - [stack-use-after-scope](./examples-stack-use-after-scope.md)
 - [stack-buffer-overflow](./examples-stack-buffer-overflow.md)
@@ -202,7 +202,7 @@ Visual C++ currently differs in two functional areas:
 
 These decisions were made to reduce the test matrix required to ship this first version.
 
-Features that could lead to false positives in Visual Studio 2019 16.9 were not shipped. That discipline enforced an effective testing integrity necessary when considering interop with decades of exiting code. The following functionalities may be considered to implementation later:
+Features that could lead to false positives in Visual Studio 2019 16.9 were not shipped. That discipline enforced an effective testing integrity necessary when considering interop with decades of exiting code. The following functionalities may be considered in later releases:
 
 - [Initialization Order Fiasco](https://github.com/google/sanitizers/wiki/AddressSanitizerInitializationOrderFiasco)
 - [Intra Object Overflow](https://github.com/google/sanitizers/wiki/AddressSanitizerIntraObjectOverflow)
