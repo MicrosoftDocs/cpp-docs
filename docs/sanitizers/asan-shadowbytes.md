@@ -1,12 +1,12 @@
 ---
-title: "Shadow Bytes."
-description: "Top-level description of shadow bytes written and read by compiler's generate code and AddressSanitizer runtime."
+title: "Address Sanitizer Shadow Bytes"
+description: "Technical description of shadow bytes written and read by compiler's generate code and AddressSanitizer runtime."
 ms.date: 02/05/2021
 f1_keywords: ["Shadow Bytes","Address Sanitizer", "ASan Code Gen", "ASan compiler", "ASan Runtime"]
 help viewer_keywords: ["Shadow Bytes","Address Sanitizer", "ASan Code Gen", "ASan compiler", "ASan Runtime"]
 ---
 
-# Shadow bytes
+# Address Sanitizer Shadow Bytes
 
 We briefly summarize the concept of shadow bytes and how they can be used by the runtime implementation of `-fsanitize=address`. For further details, we refer you to the [seminal paper](
 https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf).

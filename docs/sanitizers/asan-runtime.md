@@ -1,12 +1,12 @@
 ---
-title: "AddressSanitizer Runtime"
+title: "Address Sanitizer Runtime"
 description: "Technical description of the AddressSanitizer runtime for Microsoft Visual C++."
 ms.date: 01/05/2021
 f1_keywords: ["ASan","sanitizers","AddressSanitizer", "Address Sanitizer Runtime"]
 helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt.asan","Clang runtime","ASan runtime"]
 ---
 
-# AddressSanitizer Runtime
+# Address Sanitizer Runtime
 
 The Address Sanitizer runtime library installs replacement functions; interceptors, for common memory allocation and memory manipulation functions. There are a number of different runtime libraries that facilitate this for the various types of executables the compiler may generate. The compiler and linker will link the appropriate runtime libraries so long as the /fsanitize=address flag is passed at compile time. This default functionality can be overrided with the flag `/nodefaultlib` at link time. See the section on [linking](./asan-building.md#Linker) for further detail.
 

@@ -1,12 +1,12 @@
 ---
-title: "AddressSanitizer Known Issues"
+title: "Address Sanitizer Known Issues"
 description: "Technical description of the AddressSanitizer for Microsoft Visual C++ known issues."
 ms.date: 01/05/2021
 f1_keywords: ["ASan","sanitizers","AddressSanitizer"]
 helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer"]
 ---
 
-# AddressSanitizer Known Issues
+# Address Sanitizer Known Issues
 
 > [!NOTE] Please [send us feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and Please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
 
