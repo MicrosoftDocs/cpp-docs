@@ -8,7 +8,7 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Use after poi
 
 # Use after poison
 
-A developer can manually poison memory to customize debugging.
+A developer can manually poison memory to customize debugging. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example
 
@@ -27,6 +27,12 @@ int main(int argc, char **argv) {
   delete [] x;
   return res;
 }
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /Zi
+ devenv /debugexe example1.exe
 ```
 
 ## Resulting error

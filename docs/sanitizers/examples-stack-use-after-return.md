@@ -8,80 +8,90 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Stack Use Aft
 
 # Stack Use After Return
 
-This functionality requires code generation that is activated under an extra compiler flag `-fsanitize-address-use-after-return`. A complete command-line example would be:
-
-> cl -fsanitize=address -fsanitize-address-use-after-return /Zi file.cpp my3dparty.lib -Fe My.exe.
-
-When the binary is created, the functionality in the binary is activated with an environment variable `ASAN_OPTIONS=detect_stack_use_after_return=1`.  This environment variable is there to allow for debugging and making quick progress in "getting through an existing source base"
+This functionality requires code generation that is activated under an extra compiler flag `/fsanitize-address-use-after-return`, and by setting the environment variable `ASAN_OPTIONS=detect_stack_use_after_return=1`.
 
 Consider the [Clang summary](https://github.com/google/sanitizers/wiki/AddressSanitizerUseAfterReturn) of the algorithm supporting use after return, and the larger performance costs.
+
+Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example - Simple 'C'
 
 ```cpp
-    char *x;
-    
-    void foo() {
-        char stack_buffer[42];
-        x = &stack_buffer[13];
-    }
-    
-    int main() {
-        foo();
-        *x = 42;  // Boom!
-        return 0;
-    }
+char *x;
+
+void foo() {
+    char stack_buffer[42];
+    x = &stack_buffer[13];
+}
+
+int main() {
+    foo();
+    *x = 42;  // Boom!
+    return 0;
+}
 ```
 
-## Resulting error `c:> example1.exe`
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /fsanitize-address-use-after-return /Zi
+ set ASAN_OPTIONS=detect_stack_use_after_return=1
+ devenv /debugexe example1.exe
+```
+
+## Resulting error - Simple 'C'
 
 ![example1](SRC_CODE/stack-use-after-return/example1.PNG)
 
 ## Example - C++ and templates
 
 ```cpp
-    #include <stdlib.h>
+#include <stdlib.h>
 
-    enum ReadOrWrite { Read = 0, Write = 1 };
+enum ReadOrWrite { Read = 0, Write = 1 };
 
-    struct S32 {
-      char x[32];
-    };
-    
-    template<class T>
-    T *LeakStack() {
-      T t[100];
-      static volatile T *x;
-      x = &t[0];
-      return (T*)x;
+struct S32 {
+  char x[32];
+};
+
+template<class T>
+T *LeakStack() {
+  T t[100];
+  static volatile T *x;
+  x = &t[0];
+  return (T*)x;
+}
+
+template<class T>
+void StackUseAfterReturn(int Idx, ReadOrWrite w) {
+  static T sink;
+  T *t = LeakStack<T>();
+  if (w)
+    t[100 + Idx] = T();
+  else
+    sink = t[100 + Idx]; // Boom!
+}
+
+int main (int argc, char* argv[]) {
+
+    if (argc != 2) return 1;
+    int kind = atoi(argv[1]);
+
+    switch(kind) {
+        case 1: StackUseAfterReturn<char>(0, Read); break;
+        case 2: StackUseAfterReturn<S32>(0, Write); break;
     }
-    
-    template<class T>
-    void StackUseAfterReturn(int Idx, ReadOrWrite w) {
-      static T sink;
-      T *t = LeakStack<T>();
-      if (w)
-        t[100 + Idx] = T();
-      else
-        sink = t[100 + Idx]; // Boom!
-    }
-    
-    int main (int argc, char* argv[]) {
-    
-        if (argc != 2) return 1;
-        int kind = atoi(argv[1]);
-    
-        switch(kind) {
-            case 1: StackUseAfterReturn<char>(0, Read); break;
-            case 2: StackUseAfterReturn<S32>(0, Write); break;
-        }
-        return 0;
-    }
+    return 0;
+}
 
 ```
 
-## Resulting error
+From a **Developer Command Prompt**:
+```
+ cl example2.cpp /fsanitize=address /fsanitize-address-use-after-return /Zi
+ set ASAN_OPTIONS=detect_stack_use_after_return=1
+ devenv /debugexe example2.exe 1
+```
 
-Running this example as `c:>example2.exe 1`
+## Resulting error - C++ and templates
 
 ![example2](SRC_CODE/stack-use-after-return/example2.PNG)

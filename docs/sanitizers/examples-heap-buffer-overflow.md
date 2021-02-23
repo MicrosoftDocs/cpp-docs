@@ -8,6 +8,8 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","heap-buffer-o
 
 # Heap buffer overflow
 
+Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+
 ## Example - classic heap buffer overflow
 
 ```cpp
@@ -22,6 +24,12 @@ int main(int argc, char **argv) {
     free(x);
     return res;
 }
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /Zi
+ devenv /debugexe example1.exe
 ```
 
 ## Resulting error
@@ -50,6 +58,12 @@ int main(void) {
 }
 ```
 
+From a **Developer Command Prompt**:
+```
+ cl example2.cpp /fsanitize=address /Zi
+ devenv /debugexe example2.exe
+```
+
 ## Resulting error - improper down cast
 
 ![example2](SRC_CODE/heap-buffer-overflow/example2.PNG)
@@ -70,6 +84,12 @@ int main(int argc, char **argv) {
 
     return short_buffer[8];
 }
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example3.cpp /fsanitize=address /Zi
+ devenv /debugexe example3.exe
 ```
 
 ## Resulting error - strncpy into heap

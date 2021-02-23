@@ -8,6 +8,8 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Strcat() para
 
 # Strcat - parameter overlap
 
+Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+
 ## Example
 
 ```cpp
@@ -29,6 +31,12 @@ int main(int argc, char **argv) {
   return 0;
 }
 
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /Zi
+ devenv /debugexe example1.exe
 ```
 
 ## Resulting error

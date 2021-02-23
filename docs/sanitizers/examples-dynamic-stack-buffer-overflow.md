@@ -8,6 +8,8 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","dynamic stack
 
 # Alloca - dynamic-stack-overflow
 
+Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+
 ## example - alloca overflow (right)
 
 ```cpp
@@ -30,6 +32,12 @@ int main(int argc, char **argv) {
 }
 ```
 
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /Zi
+ devenv /debugexe example1.exe
+```
+
 ## Resulting error
 
 ![example1](SRC_CODE/dynamic-stack-buffer-overflow/example1.PNG)
@@ -37,8 +45,6 @@ int main(int argc, char **argv) {
 ## example - alloca overflow (left)
 
 ```cpp
-
-
 #include <malloc.h>
 
 __declspec(noinline)
@@ -55,13 +61,17 @@ int main(int argc, char **argv) {
 }
 ```
 
+From a **Developer Command Prompt**:
+```
+ cl example2.cpp /fsanitize=address /Zi
+ devenv /debugexe example2.exe
+```
+
 ## Resulting error - alloca overflow (left)
 
 ![example2](SRC_CODE/dynamic-stack-buffer-overflow/example2.PNG)
 
 ## Example - several calls to alloca
-
-Here's the complete example from the introduction section on the Address Sanitizer
 
 ```cpp
 #include <stdio.h>
@@ -140,6 +150,12 @@ __try{
   }
 }
 
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example3.cpp /fsanitize=address /Zi
+ devenv /debugexe example3.exe
 ```
 
 ## Resulting error - several calls to alloca

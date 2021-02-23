@@ -10,6 +10,8 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","New delete ty
 
 In the following example, only ~Base, and not ~Derived is called. The compiler generates a call to ~Base() because Base's `destructor()`isn't virtual. When we `delete b`, the object's destructor is bound to the default definition. The code will delete an empty base class (or 1 byte on Windows). Missing the **virtual** keyword for the destructor declaration, is a common C++ error when using inheritance.
 
+Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+
 ## Example - virtual destructor
 
 ```cpp
@@ -46,6 +48,12 @@ Fix this example by adding:
 struct Base {
   virtual ~Base() = default;
 }
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /Zi
+ devenv /debugexe example1.exe
 ```
 
 ## Resulting error

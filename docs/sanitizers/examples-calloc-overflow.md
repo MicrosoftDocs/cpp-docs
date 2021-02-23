@@ -8,7 +8,7 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","calloc() over
 
 # Calloc - overflow
 
-The CRT function [calloc](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/calloc?view=msvc-160) will create an array in memory with elements initialized to 0. The arguments can create an internal error that will lead to a NULL pointer as the return value.
+The CRT function [calloc](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/calloc?view=msvc-160) will create an array in memory with elements initialized to 0. The arguments can create an internal error that will lead to a NULL pointer as the return value. Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example
 
@@ -27,6 +27,12 @@ int main() {
 
   return 0;
 }
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /Zi
+ devenv /debugexe example1.exe
 ```
 
 ## Resulting error

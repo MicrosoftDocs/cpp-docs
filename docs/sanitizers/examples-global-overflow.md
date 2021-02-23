@@ -8,33 +8,30 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","global-buffer
 
 # Global buffer overflow
 
-The compiler generates meta-data and shadow bytes for any variable in the `.data` or `.bss` sections. These variables have language scope globals or file statics that are allocated in memory before main() starts. Global variables in 'C' are treated much differently than 'C++'. This difference is because of the complex rules for linking.  
+The compiler generates metadata for any variable in the `.data` or `.bss` sections. These variables have language scope globals or file statics that are allocated in memory before main() starts. Global variables in `C` are treated much differently than `C++`. This difference is because of the complex rules for linking.  
 
-In 'C', a global variable can be declared in several source files and each definition can have different types.  The compiler can't see all the possible definitions. The linker will see all the different definitions. The linker defaults to selecting the largest size of all the different declarations.
+In `C`, a global variable can be declared in several source files and each definition can have different types. The compiler can't see all the possible definitions. The linker will see all the different definitions. The linker defaults to selecting the largest size of all the different declarations.
 
-In C++, a global is allocated by the compiler. There can only be one definition so the size of each definition is known at compile time.
+In `C++`, a global is allocated by the compiler. There can only be one definition so the size of each definition is known at compile time.
+
+Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example - globals in 'C' with multiple type definitions
 
 ```cpp
-// Here are 3 'C' files that are compiled in 3 different permutations:
-// 
-//    > cl a.c b.c c.c main.c ..
-//    > cl b.c a.c c.c main.c ..
-//    > cl b.c b.c a.c main.c ..
-//
-// Address Sanitizer reports a buffer overflow in main.c @line #2 in all cases.
+// Address Sanitizer reports a buffer overflow in main.c @line #2 in all cases, regardless of the
+// order in which the a.obj, b.obj, and c.obj are linked.
   
 // file: a.c 
 int x;
 
 // file: b.c  
-char* x; > b.c
+char* x;
 
 // file: c.c
 float* x[3];
 
-// main.c
+// example1-main.c
 
 double x[5];
  
@@ -42,6 +39,12 @@ int main() {
     int rc = (int) x[5];  // Boom!
     return rc; 
 }
+```
+
+From a **Developer Command Prompt**:
+```
+ cl a.c b.c c.c example1-main.c /fsanitize=address /Zi
+ devenv /debugexe example1-main.exe
 ```
 
 ## Resulting error
@@ -67,9 +70,13 @@ int main(int argc, char **argv) {
 }
 ```
 
-## Resulting error - simple function level static
+From a **Developer Command Prompt**:
+```
+ cl example2.cpp /fsanitize=address /Zi
+ devenv /debugexe example2.exe
+```
 
-`devenv /debugexe example2.exe`
+## Resulting error - simple function level static
 
 ![example2](SRC_CODE/global-overflow/example2.PNG)
 
@@ -114,8 +121,12 @@ int main(int argc, char **argv) {
 }
 ```
 
-## Resulting error - all global scopes in C++
+From a **Developer Command Prompt**:
+```
+ cl example3.cpp /fsanitize=address /Zi
+ devenv /debugexe example3.exe -l
+```
 
-`devenv /debugexe example3.exe -l`
+## Resulting error - all global scopes in C++
 
 ![example3]

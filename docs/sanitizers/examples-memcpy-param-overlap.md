@@ -8,9 +8,11 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Memcpy() para
 
 # Memcpy() parameter overlap
 
-The CRT function [memcpy](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memcpy-wmemcpy?view=msvc-160) **doesn't** support overlapping memory. The CRT provides an alternative to memcpy() that does support overlapping memory: [memmove](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memmove-wmemmove?view=msvc-160).
+The CRT function [memcpy](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memcpy-wmemcpy?view=msvc-160) **does not** support overlapping memory. The CRT provides an alternative to memcpy() that does support overlapping memory: [memmove](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memmove-wmemmove?view=msvc-160).
 
 A common error is to treat `memmove()` as being semantically equivalent to `memcpy()`.
+
+Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example
 
@@ -28,6 +30,12 @@ int main(int argc, char **argv) {
     bad_function();
     return 0;
 }
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /Zi
+ devenv /debugexe example1.exe
 ```
 
 ## Resulting error

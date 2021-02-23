@@ -8,8 +8,7 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Stack buffer 
 
 # Stack buffer overflow
 
-The stack buffer overflow happen many ways in C or C++. We provide several examples for this category of error caught with a simple recompile. All simple examples are compiled using:
->`cl -fsanitize=address /Zi  uas_example.c`
+The stack buffer overflow happen many ways in C or C++. We provide several examples for this category of error caught with a simple recompile. Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example - stack buffer overflow
 
@@ -22,6 +21,12 @@ int main(int argc, char **argv) {
 
     return res;
 }
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /Zi
+ devenv /debugexe example1.exe
 ```
 
 ## Resulting error
@@ -51,6 +56,12 @@ int main(int argc, char **argv) {
 }
 ```
 
+From a **Developer Command Prompt**:
+```
+ cl example2.cpp /fsanitize=address /Zi
+ devenv /debugexe example2.exe 9
+```
+
 ## Resulting error - Stack buffer math
 
 ![example2](SRC_CODE/stack-buffer-overflow/Example2.PNG)
@@ -76,6 +87,12 @@ int main(void) {
 
   return 0;
 }
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example3.cpp /fsanitize=address /Zi
+ devenv /debugexe example3.exe
 ```
 
 ## Resulting error - improper down cast on stack

@@ -8,7 +8,7 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","double free"]
 
 # Double free
 
-In 'C', you can call free() erroneously. In 'C++', you can call delete more than once. In the following examples, we show errors with delete, free and HeapCreate().
+In `C`, you can call `free()` erroneously. In `C++`, you can call delete more than once. In the following examples, we show errors with `delete`, `free()` and `HeapCreate()`. Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example C++ - double operator delete
 
@@ -22,6 +22,12 @@ int main() {
   delete [] x;
   return 0;
 }
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /Zi
+ devenv /debugexe example1.exe
 ```
 
 ## Resulting error - double operator delete
@@ -48,6 +54,12 @@ int main(int argc, char **argv) {
 }
 ```
 
+From a **Developer Command Prompt**:
+```
+ cl example2.cpp /fsanitize=address /Zi
+ devenv /debugexe example2.exe
+```
+
 ## Resulting error - double free()
 
 ![example2](SRC_CODE/double-free/example2.PNG)
@@ -68,6 +80,12 @@ int main() {
     printf("failure\n");
     return 1;
 }
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example3.cpp /fsanitize=address /Zi
+ devenv /debugexe example3.exe
 ```
 
 ## Resulting error - Windows HeapCreate() double free

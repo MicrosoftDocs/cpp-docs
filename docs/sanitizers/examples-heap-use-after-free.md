@@ -8,7 +8,7 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","heap-use-afte
 
 # Heap use after free
 
-We show three examples where storage in the heap can be allocated via malloc, realloc (C) and new (C++) along with a mistaken use of volatile.
+We show three examples where storage in the heap can be allocated via malloc, realloc (C) and new (C++) along with a mistaken use of volatile. Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example malloc
 
@@ -23,6 +23,12 @@ int main() {
 
   return x[5];   // Boom!
 }
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /Zi
+ devenv /debugexe example1.exe
 ```
 
 ## Resulting error
@@ -46,6 +52,11 @@ int main() {
 
 ```
 
+From a **Developer Command Prompt**:
+```
+ cl example2.cpp /fsanitize=address /Zi
+ devenv /debugexe example2.exe
+```
 ## Resulting error - operator new
 
 ![example2](SRC_CODE/heap-use-after-free/example2.PNG)
@@ -66,6 +77,12 @@ int main() {
 }
 ```
 
+From a **Developer Command Prompt**:
+```
+ cl example3.cpp /fsanitize=address /Zi
+ devenv /debugexe example3.exe
+```
+
 ## Resulting error - realloc
 
 ![example3](SRC_CODE/heap-use-after-free/example3.PNG)
@@ -84,6 +101,12 @@ int main() {
 
   *x = 42;        // Boom!
 }
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example4.cpp /fsanitize=address /Zi
+ devenv /debugexe example4.exe
 ```
 
 ## Resulting error - volatile

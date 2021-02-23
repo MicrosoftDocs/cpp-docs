@@ -8,6 +8,8 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Stack buffer 
 
 # Stack buffer underflow
 
+Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+
 ## Example - local array underflow
 
 ```cpp
@@ -21,9 +23,15 @@ int main() {
 
 ```
 
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /Zi
+ devenv /debugexe example1.exe
+```
+
 ## Resulting error
 
-![example1](SRC_CODE/stack-buffer-underflow/example2.PNG)
+![example1](SRC_CODE/stack-buffer-underflow/example1.PNG)
 
 ## Example - stack underflow on thread
 
@@ -46,6 +54,12 @@ int main() {
   WaitForSingleObject(thr, INFINITE);
 }
 
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example2.cpp /fsanitize=address /Zi
+ devenv /debugexe example2.exe
 ```
 
 ## Resulting error  - stack underflow on thread

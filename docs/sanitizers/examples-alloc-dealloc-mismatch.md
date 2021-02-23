@@ -8,7 +8,7 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","alloc-dealloc
 
 # Alloc dealloc mismatch
 
-This functionality isn't on by default for Windows. To enable, `set ASAN_OPTIONS=alloc_dealloc_mismatch=1` before running the program. This runtime flag, will report errors on malloc/delete, new/free, and new/delete[].
+This functionality is off by default for Windows. To enable, `set ASAN_OPTIONS=alloc_dealloc_mismatch=1` before running the program. This runtime flag will report errors on malloc/delete, new/free, and new/delete[]. Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example
 
@@ -37,8 +37,13 @@ int main(int argc,char *argv[] ) {
 }
 ```
 
-## Resulting error
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /Zi
+ set ASAN_OPTIONS=alloc_dealloc_mismatch=1
+ devenv /debugexe example1.exe 2
+```
 
-The following output resulted from the command line: `devenv /debugexe example1.exe 2`
+## Resulting error
 
 ![example1](SRC_CODE/alloc-dealloc-mismatch/example1.PNG)

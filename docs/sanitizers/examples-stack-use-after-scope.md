@@ -8,8 +8,9 @@ help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Stack Use Aft
 
 # Stack use after scope
 
-The use of a stack address outside the lexical scope of a variable's lifetime, can happen many ways in C or C++.  We provide several examples for this category of error caught with a simple recompile. All simple examples are compiled using:
-> `cl -fsanitize=address /Zi /EHsc uas_example.c`
+The use of a stack address outside the lexical scope of a variable's lifetime can happen many ways in C or C++.
+
+Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example 1 - simple nested local
 
@@ -27,14 +28,19 @@ int main() {
 
 ```
 
-## Resulting error
+From a **Developer Command Prompt**:
+```
+ cl example1.cpp /fsanitize=address /Zi
+ devenv /debugexe example1.exe
+```
+
+## Resulting error - simple nested local
 
 ![example1-screenshot](SRC_CODE/stack-use-after-scope/example1.PNG)
 
 ## Example 2 - lambda capture
 
 ```cpp
-
 #include <functional>
 
 int main() {
@@ -47,17 +53,21 @@ int main() {
   }
   return f();  // Boom!
 }
-
 ```
 
-## Resulting Error
+From a **Developer Command Prompt**:
+```
+ cl example2.cpp /fsanitize=address /Zi
+ devenv /debugexe example2.exe
+```
+
+## Resulting Error - lambda capture
 
 ![example2-screenshot](SRC_CODE/stack-use-after-scope/Example2.PNG)
 
 ## Example 3 - destructor ordering with locals
 
 ```cpp
-
 // cl /O1 -fsanitize=address. This will not fire with /Od
 
 #include <stdio.h>
@@ -86,6 +96,12 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example3.cpp /fsanitize=address /Zi /O1
+ devenv /debugexe example3.exe
 ```
 
 ## Resulting error - destructor ordering relative to locals
@@ -123,6 +139,12 @@ void main() {
     temp_from_conversion(); 
 }
 
+```
+
+From a **Developer Command Prompt**:
+```
+ cl example4.cpp /EHsc /fsanitize=address /Zi
+ devenv /debugexe example4.exe
 ```
 
 ## Resulting error - temporaries
