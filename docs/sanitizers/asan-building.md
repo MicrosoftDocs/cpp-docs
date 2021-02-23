@@ -74,7 +74,7 @@ See[the examples](asan-top-level.md#Error-types) for sample usage.
 
 The MSVC compiler (unlike Clang), will not default to generating code to allocating frames in the heap to catch use-after-return errors. To catch these errors with Address Sanitizer, you must:
 
-1. Compile with `-fsanitize-address-use-aftet-return`
+1. Compile with `-fsanitize-address-use-after-return`
 2. Before executing your program, set `set ASAN_OPTIONS=detect_stack_use_after_return=1`
 
 The `-fsanitize-address-use-after-return` flag will cause the compiler to generate code to use a dual stack frame in the heap when locals are considered "address taken". This code is **much slower** than just using `-fsanitize=address` alone.

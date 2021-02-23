@@ -162,7 +162,7 @@ The difference can lead to efficiencies analyzing a bug. You don't need to rerun
 To produce a new type of dump file that can be viewed in Visual Studio on another machine at a later date:
 
 ```makefile
-                                 set ASAN_SAVE_DUMPS=MyFileName.dmp
+set ASAN_SAVE_DUMPS=MyFileName.dmp
 ```
 
 Starting with Visual Studio 16.9 you can display **a precisely diagnosed error**, stored in MyFileName.dmp, on top of your source code.
@@ -202,7 +202,7 @@ Visual C++ currently differs in two functional areas:
 
 These decisions were made to reduce the test matrix required to ship this first version.
 
-We did NOT ship features that could lead to false positives in this first release. That discipline enforced an effective testing integrity necessary when considering inter-op with decades of exiting code. The following functionalities will be shipped later:
+We did NOT ship features that could lead to false positives in Visual Studio 2019 16.9. That discipline enforced an effective testing integrity necessary when considering interop with decades of exiting code. The following functionalities may be considered to implementation later:
 
 - [Initialization Order Fiasco](https://github.com/google/sanitizers/wiki/AddressSanitizerInitializationOrderFiasco)
 - [Intra Object Overflow](https://github.com/google/sanitizers/wiki/AddressSanitizerIntraObjectOverflow)
