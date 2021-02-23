@@ -32,6 +32,11 @@ Interception is achieved through **many hot-patching techniques**, [these techni
 
 The runtime libraries intercept many common memory management and memory manipulation functions. [A complete list of intercepted functions is available below.](#AddressSanitizer-list-of-intercepted-functions-(Windows)) The allocation interceptors manage metadata and shadow bytes related to each allocation call. Every time a CRT function like malloc() or delete() are called, the interceptors set specific values in the Address Sanitizer shadow-memory region to indicate whether those heap locations are currently accessible and what are the bounds of the allocation are. These shadow bytes allow the compiler-generated checks of the [shadow-bytes](./asan-shadowbytes.md) to determine whether a load or store is valid.
 
+Interception is not guaranteed to succeed; if a function prologue is too short for a jmp to be written interception can fail. If this occurs the program will throw a debugbreak() and halt. Attaching a debugger will make the cause of the interception issue more clear. If you encounter this problem please file a feedback report with the [Visual Studio developer community](https://developercommunity.visualstudio.com/). 
+
+> [!NOTE]
+> Users can optionally attempt to continue past a failed interception by setting the environment variable `ASAN_WIN_CONTINUE_ON_INTERCEPTION_FAILURE` to any value. Continuing past an interception failure can result in missed bug reports for that function.
+
 ## Custom allocators and the Address Sanitizer runtime
 
 The Address Sanitizer runtime provides interceptors for common allocator interfaces, malloc/free, new/delete, HeapAlloc/HeapFree (via RtlAllocateHeap/RtlFreeHeap). Many programs make use of custom allocators for one reason or another, an example would be any program using dlmalloc or a solution using the std::allocator interface and VirtualAlloc(). The compiler is not able to automatically add shadow-memory management calls to a custom allocator. It's the user's responsibility to use the [provided manual poisoning interface](#Manual-Address-Sanitizer-poisoning-interface). This API enables these allocators to function properly with the existing Address Sanitizer runtime and [shadow byte](./asan-shadowbytes.md) conventions.
