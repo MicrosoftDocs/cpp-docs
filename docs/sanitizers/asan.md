@@ -81,14 +81,14 @@ The Address Sanitizer libraries (.lib files) will be linked for you. For more de
 ### Example - basic global buffer overflow
 
 ```cpp
-    // basic-global-overflow.cpp
-    #include <stdio.h>
-    int x[100];
-    int main() {
-        printf("Hello!\n");
-        x[100] = 5; // Boom!
-        return 0;
-    }
+// basic-global-overflow.cpp
+#include <stdio.h>
+int x[100];
+int main() {
+    printf("Hello!\n");
+    x[100] = 5; // Boom!
+    return 0;
+}
 ```
 
 Using a Developer Command Prompt for VS 2019, compile main.cpp using `-fsanitize=address -Zi`
