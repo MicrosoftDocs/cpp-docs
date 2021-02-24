@@ -70,7 +70,7 @@ Microsoft recommends using the Address Sanitizer in these **three standard workf
 
 This article will cover the information needed to enable the three workflows listed above. The information will be specific to the **platform-dependent** Windows 10 implementation of the Address Sanitizer. This documentation is meant to supplement the excellent documentation from [Google, Apple, and GCC](#Google,-Apple-and-GCC-documentation) already published.
 
-> [!NOTE] Current support is limited to x86 and x64 on Windows 10. Please [send us feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases. Your feedback would help us prioritize other sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=undefined, or -fsanitize=hwaddress.
+> [!NOTE] Current support is limited to x86 and x64 on Windows 10. Please [send us feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases. Your feedback would help us prioritize other sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=undefined, or -fsanitize=hwaddress. And please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
 
 ## Using the Address Sanitizer from a Developer Command Prompt
 
@@ -232,3 +232,5 @@ This seminal paper on the [Address Sanitizer](https://www.usenix.org/system/file
 - [Address Sanitizer Shadow Bytes](./asan-shadowbytes.md)
 - [Address Sanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
 - [Address Sanitizer Debugger Integration](./asan-debugger-integration.md)
+
+> [!NOTE] Send us [feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.

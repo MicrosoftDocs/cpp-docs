@@ -8,7 +8,7 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer"]
 
 # Address Sanitizer Known Issues
 
-> [!NOTE] Please [send us feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and Please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
+> [!NOTE] Send us [feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
 
 ## Incompatible switches and functionality
 
@@ -67,3 +67,5 @@ The clang_rt.asan*.dll runtime files are dropped next to the compilers in `%VSIN
 - [Address Sanitizer Shadow Bytes](./asan-shadowbytes.md)
 - [Address Sanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
 - [Address Sanitizer Debugger Integration](./asan-debugger-integration.md)
+
+> [!NOTE] Send us [feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.

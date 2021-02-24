@@ -15,9 +15,7 @@ This section describes the language specification, compiler flags, and linker fl
 - [Linker](#Linker)
 - [Visual Studio integration](#Visual-Studio-integration)
 
-For more information on the Address Sanitizer runtime, intercepted functions, and how to hook custom allocators, see the [runtime reference](./asan-runtime.md)
-
-!!! link to Jim's upcoming cloud doc next for specifics on snapshot files.
+For more information on the Address Sanitizer runtime, intercepted functions, and how to hook custom allocators, see the [runtime reference](./asan-runtime.md). For more information on saving crash dumps from Address Sanitizer failures, see the [crash dump reference](./asan-offline-crash-dumps.md).
 
 ## Language specification
 
@@ -143,3 +141,5 @@ The `-fsanitize=address` compiler switch produces a binary that will expose memo
 - [Address Sanitizer Shadow Bytes](./asan-shadowbytes.md)
 - [Address Sanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
 - [Address Sanitizer Debugger Integration](./asan-debugger-integration.md)
+
+> [!NOTE] Send us [feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
