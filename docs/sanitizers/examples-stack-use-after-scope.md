@@ -15,7 +15,10 @@ Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm
 ## Example 1 - simple nested local
 
 ```cpp
+// Example 1
+
 int *gp;
+
 bool b = true;
 
 int main() {
@@ -25,7 +28,6 @@ int main() {
     }
     return *gp;  // Boom!
 }
-
 ```
 
 From a **Developer Command Prompt**:
@@ -68,8 +70,6 @@ From a **Developer Command Prompt**:
 ## Example 3 - destructor ordering with locals
 
 ```cpp
-// cl /O1 -fsanitize=address. This will not fire with /Od
-
 #include <stdio.h>
 
 struct IntHolder {
@@ -86,13 +86,9 @@ struct IntHolder {
 int main(int argc, char *argv[]) {
   // It is incorrect to use "x" inside the IntHolder destructor, because the lifetime of "x"
   // ends earlier. Per C++ standard, local lLifetimes end in reverse order of declaration.
-
   IntHolder holder;
   int x = argc;
   holder.set(&x);
-
-       // .. dtor for holder is inserted by compiler generated code and x is out of scope
-
   return 0;
 }
 

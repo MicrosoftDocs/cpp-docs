@@ -32,6 +32,7 @@ char* x;
 float* x[3];
 
 // file: example1-main.c
+
 double x[5];
  
 int main() { 
@@ -54,7 +55,9 @@ From a **Developer Command Prompt**:
 
 ```cpp
 #include <string.h>
-int main(int argc, char **argv) {
+
+int 
+main(int argc, char **argv) {
 
     static char XXX[10];
     static char YYY[10];
@@ -67,6 +70,7 @@ int main(int argc, char **argv) {
     res += XXX[argc] + ZZZ[argc];
     return res;
 }
+
 ```
 
 From a **Developer Command Prompt**:
@@ -102,7 +106,9 @@ int global[10];
 int C::array[10];
 
 int main(int argc, char **argv) {
+
   int one = argc - 1;
+
   switch (argv[1][1]) {
   case 'g': return global[one * 11];     //Boom! simple global
   case 'c': return C::array[one * 11];   //Boom! class static
@@ -118,6 +124,7 @@ int main(int argc, char **argv) {
   }
   return 0;
 }
+
 ```
 
 From a **Developer Command Prompt**:

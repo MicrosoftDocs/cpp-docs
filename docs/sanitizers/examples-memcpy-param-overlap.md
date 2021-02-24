@@ -17,7 +17,7 @@ Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/
 ## Example
 
 ```cpp
-#include "defines.h"
+
 #include <string.h>
 
 __declspec(noinline) void bad_function() {
@@ -30,6 +30,7 @@ int main(int argc, char **argv) {
     bad_function();
     return 0;
 }
+
 ```
 
 From a **Developer Command Prompt**:

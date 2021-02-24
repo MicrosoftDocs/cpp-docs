@@ -13,7 +13,9 @@ In `C`, you can call `free()` erroneously. In `C++`, you can call delete more th
 ## Example C++ - double operator delete
 
 ```cpp
+
 int main() {
+
   int *x = new int[42];
   delete [] x;
 
@@ -22,6 +24,7 @@ int main() {
   delete [] x;
   return 0;
 }
+
 ```
 
 From a **Developer Command Prompt**:
@@ -37,6 +40,7 @@ From a **Developer Command Prompt**:
 ## Example 'C' - double fre()
 
 ```cpp
+
 #include <stdlib.h>
 #include <string.h>
 
@@ -52,6 +56,8 @@ int main(int argc, char **argv) {
   free(x + argc - 1);  // Boom!
   return res;
 }
+
+
 ```
 
 From a **Developer Command Prompt**:

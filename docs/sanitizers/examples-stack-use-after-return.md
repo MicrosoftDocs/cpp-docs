@@ -19,18 +19,22 @@ Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm
 ## Example - Simple 'C'
 
 ```cpp
+
 char *x;
 
 void foo() {
-    char stack_buffer[42];
-    x = &stack_buffer[13];
+  char stack_buffer[42];
+  x = &stack_buffer[13];
 }
 
 int main() {
-    foo();
-    *x = 42;  // Boom!
-    return 0;
+
+  foo();
+  *x = 42; // Boom!
+
+  return 0;
 }
+
 ```
 
 From a **Developer Command Prompt**:
@@ -70,7 +74,7 @@ void StackUseAfterReturn(int Idx, ReadOrWrite w) {
   if (w)
     t[100 + Idx] = T();
   else
-    sink = t[100 + Idx]; // Boom!
+    sink = t[100 + Idx];
 }
 
 int main (int argc, char* argv[]) {
@@ -84,7 +88,6 @@ int main (int argc, char* argv[]) {
     }
     return 0;
 }
-
 ```
 
 From a **Developer Command Prompt**:

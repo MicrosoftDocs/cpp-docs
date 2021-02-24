@@ -16,10 +16,14 @@ Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm
 #include <stdio.h>
 
 int main() {
+
   int subscript = -1;
   char buffer[42];
   buffer[subscript] = 42; // Boom!
+   
+  return 0;
 }
+
 
 ```
 
@@ -43,6 +47,7 @@ DWORD WINAPI thread_proc(void *) {
   int subscript = -1;
   volatile char stack_buffer[42];
   stack_buffer[subscript] = 42;
+
   return 0;
 }
 
@@ -52,6 +57,8 @@ int main() {
   if (thr == 0) return 0;
 
   WaitForSingleObject(thr, INFINITE);
+
+  return 0;
 }
 
 ```

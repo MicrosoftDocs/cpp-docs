@@ -49,7 +49,6 @@ int main() {
   buffer[0] = 42;  // Boom!
   return 0;
 }
-
 ```
 
 From a **Developer Command Prompt**:

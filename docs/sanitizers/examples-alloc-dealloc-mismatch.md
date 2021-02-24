@@ -14,6 +14,7 @@ This functionality is off by default for Windows. To enable, `set ASAN_OPTIONS=a
 
 ```cpp
 #include <stdio.h>
+
 #include <stdlib.h>
 
 int main(int argc,char *argv[] ) {
@@ -23,7 +24,7 @@ int main(int argc,char *argv[] ) {
   switch (atoi(argv[1])) {
 
   case 1: 
-    delete [] (new int[10]);  
+    delete [] (new int[10]);
     break;
   case 2: 
     delete (new int[10]);      // Boom!
@@ -35,6 +36,7 @@ int main(int argc,char *argv[] ) {
 
   return 0;
 }
+
 ```
 
 From a **Developer Command Prompt**:

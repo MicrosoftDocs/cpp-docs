@@ -69,6 +69,8 @@ From a **Developer Command Prompt**:
 ## Example - improper down cast on stack
 
 ```cpp
+
+
 class Parent {
  public:
   int field;
@@ -81,12 +83,13 @@ class Child : public Parent {
 
 int main(void) {
 
-  Parent *p = new Parent;
-  Child *c = (Child*)p;  // Boom!
+  Parent p;
+  Child *c = (Child*)&p;  // Boom !
   c->extra_field = 42;
 
   return 0;
 }
+
 ```
 
 From a **Developer Command Prompt**:

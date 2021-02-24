@@ -17,6 +17,7 @@ Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm
 #include <string.h>
 
 int main(int argc, char **argv) {
+
     char *x = (char*)malloc(10 * sizeof(char));
     memset(x, 0, 10);
     int res = x[argc * 10];  // Boom!
@@ -24,6 +25,7 @@ int main(int argc, char **argv) {
     free(x);
     return res;
 }
+
 ```
 
 From a **Developer Command Prompt**:
@@ -51,11 +53,12 @@ class Child : public Parent {
 
 int main(void) {
   Parent *p = new Parent;
-  Child *c = (Child*)p;  // Boom! 
+  Child *c = (Child*)p;  // Intentional error here!
   c->extra_field = 42;
 
   return 0;
 }
+
 ```
 
 From a **Developer Command Prompt**:
@@ -84,6 +87,7 @@ int main(int argc, char **argv) {
 
     return short_buffer[8];
 }
+
 ```
 
 From a **Developer Command Prompt**:
