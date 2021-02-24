@@ -165,7 +165,7 @@ Valid characters for the *`mode`* string used in **`fopen_s`** and [`_fdopen`](f
 |**`ccs=UTF-8`**|**`_O_UTF8`**|
 |**`ccs=UTF-16LE`**|**`_O_UTF16`**|
 
-If you are using **`rb`** mode, memory mapped Win32 files might also be an option if you don't need to port your code, you expect to read much of the file, or you don't care about network performance.
+If you're using **`rb`** mode, memory mapped Win32 files might also be an option if you don't need to port your code, you expect to read much of the file, or you don't care about network performance.
 
 ## Requirements
 
@@ -174,13 +174,13 @@ If you are using **`rb`** mode, memory mapped Win32 files might also be an optio
 |**`fopen_s`**|`<stdio.h>`|
 |**`_wfopen_s`**|`<stdio.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-The **`c`**, **`n`**, and **`t`** *`mode`* options are Microsoft extensions for **`fopen_s`** and [`_fdopen`](fdopen-wfdopen.md) and shouldn't be used where ANSI portability is desired.
+The **`c`**, **`n`**, and **`t`** *`mode`* options are Microsoft extensions for **`fopen_s`** and [`_fdopen`](fdopen-wfdopen.md) and shouldn't be used where you want ANSI portability.
 
 ## Example
 
