@@ -2,8 +2,8 @@
 title: "Double free error."
 description: "Source examples and live debug screen shots for double free errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","Address Sanitizer","memory safety","double free", "ASan examples"]
-help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","double free"]
+f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","double free", "ASan examples"]
+help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","double free"]
 ---
 
 # Double free

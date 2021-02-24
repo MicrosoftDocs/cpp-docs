@@ -2,8 +2,8 @@
 title: "Stack Use After Return."
 description: "Source examples and live debug screen shots for Stack Use After Return errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","Address Sanitizer","memory safety","Stack Use After Return", "ASan examples"]
-help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Stack Use After Return"]
+f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","Stack Use After Return", "ASan examples"]
+help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","Stack Use After Return"]
 ---
 
 # Stack Use After Return

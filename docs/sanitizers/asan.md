@@ -1,16 +1,16 @@
 ---
-title: "Address Sanitizer"
-description: "Top-level description of the Address Sanitizer feature for Microsoft Visual C++."
+title: "AddressSanitizer"
+description: "Top-level description of the AddressSanitizer feature for Microsoft Visual C++."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","sanitizers","Address Sanitizer","memory safety","heap buffer overflow", "stack buffer overflow", "double free", "use after free", "type mismatch"]
-help viewer_keywords: ["ASan","Address Sanitizer","compiling for Address Sanitizer","clang_rt","Clang runtime","ASan runtime", "VS integration"]
+f1_keywords: ["ASan","sanitizers","AddressSanitizer","Address Sanitizer","memory safety","heap buffer overflow", "stack buffer overflow", "double free", "use after free", "type mismatch"]
+help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","compiling for AddressSanitizer","clang_rt","Clang runtime","ASan runtime", "VS integration"]
 ---
 
-# Address Sanitizer
+# AddressSanitizer
 
 ## Overview
 
-The C & C++ languages are powerful, but can suffer from a class of bugs that affect **program correctness** and **program security**. Starting with Visual Studio 2019 16.9 the Microsoft Visual C++ compiler and IDE supports the Address Sanitizer. This compiler and runtime technology will light up [hard-to-find bugs](#error-types) with **zero false positives**.
+The C & C++ languages are powerful, but can suffer from a class of bugs that affect **program correctness** and **program security**. Starting with Visual Studio 2019 16.9 the Microsoft Visual C++ compiler and IDE supports the AddressSanitizer. This compiler and runtime technology will light up [hard-to-find bugs](#error-types) with **zero false positives**.
 
 Use this feature to reduce your time spent on:
 
@@ -20,20 +20,20 @@ Use this feature to reduce your time spent on:
 - Stress testing
 - Integrating new code
 
-The Address Sanitizer is a compiler and runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Compiling with `-fsanitize=address` is a powerful alternative to both [/RTC](../../build/reference/rtc-run-time-error-checks.md), and [/analyze](https://docs.microsoft.com/en-us/cpp/build/reference/analyze-code-analysis?view=msvc-160). It provides run-time bug-finding technologies which directly use your existing build systems and existing test assets.
+The AddressSanitizer is a compiler and runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). Compiling with `-fsanitize=address` is a powerful alternative to both [/RTC](../../build/reference/rtc-run-time-error-checks.md), and [/analyze](https://docs.microsoft.com/en-us/cpp/build/reference/analyze-code-analysis?view=msvc-160). It provides run-time bug-finding technologies which directly use your existing build systems and existing test assets.
 
- Projects can enable the Address Sanitizer with a project setting, or one extra compiler switch: `-fsanitize=address`. The new flag is compatible with all levels of optimization and configurations of x86 and x64, with several incompatibilities: [edit-and-continue](/visualstudio/debugger/edit-and-continue-visual-cpp), [incremental linking](../../build/reference/incremental-link-incrementally.md), and [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160).
+ Projects can enable the AddressSanitizer with a project setting, or one extra compiler switch: `-fsanitize=address`. The new flag is compatible with all levels of optimization and configurations of x86 and x64, with several incompatibilities: [edit-and-continue](/visualstudio/debugger/edit-and-continue-visual-cpp), [incremental linking](../../build/reference/incremental-link-incrementally.md), and [/RTC](https://docs.microsoft.com/en-us/cpp/build/reference/rtc-run-time-error-checks?view=msvc-160).
 
-The Address Sanitizer is integrated with the Visual Studio the project system, CMake system, and the IDE.
+The AddressSanitizer is integrated with the Visual Studio the project system, CMake system, and the IDE.
 
-Microsoft's Address Sanitizer technology enables integration with the Visual Studio IDE. The functionality can optionally create a crash dump file when the sanitizer finds a bug at runtime. Set the `ASAN_SAVE_DUMPS=MyFileName.dmp` environment variable prior to running your program, and a crash dump file will be created with extra meta-data for efficient, [post-mortem debugging](#.\asan-offline-address-sanitizer-crash-dumps.md) debugging of **precisely diagnosed bugs**. These dump files facilitate extended use of the Address Sanitizer for local machine testing and:
+Microsoft's AddressSanitizer technology enables integration with the Visual Studio IDE. The functionality can optionally create a crash dump file when the sanitizer finds a bug at runtime. Set the `ASAN_SAVE_DUMPS=MyFileName.dmp` environment variable prior to running your program, and a crash dump file will be created with extra meta-data for efficient, [post-mortem debugging](#.\asan-offline-address-sanitizer-crash-dumps.md) debugging of **precisely diagnosed bugs**. These dump files facilitate extended use of the AddressSanitizer for local machine testing and:
 
 - On-premise distributed testing, and
 - Cloud-based workflows for testing
 
-### Installing the Address Sanitizer
+### Installing the AddressSanitizer
 
-**The Address Sanitizer is installed by default with the Visual C++**. However, if you are upgrading from an older version of Visual Studio 2019 you will need to enable ASan support in the Installer after the upgrade:
+**The AddressSanitizer is installed by default with the Visual C++**. However, if you are upgrading from an older version of Visual Studio 2019 you will need to enable ASan support in the Installer after the upgrade:
 
 ![asan-project-system](MEDIA/asan-installer.PNG)
 
@@ -43,7 +43,7 @@ Note: if you run Visual Studio on the new update but have not installed ASan, yo
 
 `LNK 1356 – cannot find library 'clang_rt.asan_dynamic-i386.lib'`
 
-### Using the Address Sanitizer
+### Using the AddressSanitizer
 
 Start building your executables with the `-fsanitize=address` compiler switch using any of the following development methods:
 
@@ -53,7 +53,7 @@ Start building your executables with the `-fsanitize=address` compiler switch us
 
  Recompile, then run your program normally. This code generation will light up [many types of precisely diagnosed bugs](#errors). These errors can be reported in three ways: in the debugger IDE, on the command line or stored in a [new type of dump file](#Address-Sanitizer-crash-dumps) for precise off-line processing.
 
-Microsoft recommends using the Address Sanitizer in these **three standard workflows**:
+Microsoft recommends using the AddressSanitizer in these **three standard workflows**:
 
 - **Developer inner loop**
   - Visual Studio - debugger IDE
@@ -62,21 +62,21 @@ Microsoft recommends using the Address Sanitizer in these **three standard workf
   - Visual Studio - [CMake]([CMake](#Using-the-Address-Sanitizer-from-Visual-Studio:-CMake))
 
 - **CI/CD** - continuous integration / continuous development
-  - Error reporting - [New Address Sanitizer dump files](#Address-Sanitizer-crash-dumps)
+  - Error reporting - [New AddressSanitizer dump files](#Address-Sanitizer-crash-dumps)
 
 - **Fuzzing** - building with the [libFuzzer](https://llvm.org/docs/LibFuzzer.html) wrapper
   - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
   - Local Machine
 
-This article will cover the information needed to enable the three workflows listed above. The information will be specific to the **platform-dependent** Windows 10 implementation of the Address Sanitizer. This documentation is meant to supplement the excellent documentation from [Google, Apple, and GCC](#Google,-Apple-and-GCC-documentation) already published.
+This article will cover the information needed to enable the three workflows listed above. The information will be specific to the **platform-dependent** Windows 10 implementation of the AddressSanitizer. This documentation is meant to supplement the excellent documentation from [Google, Apple, and GCC](#Google,-Apple-and-GCC-documentation) already published.
 
 > [!NOTE] Current support is limited to x86 and x64 on Windows 10. Please [send us feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases. Your feedback would help us prioritize other sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=undefined, or -fsanitize=hwaddress. And please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
 
-## Using the Address Sanitizer from a Developer Command Prompt
+## Using the AddressSanitizer from a Developer Command Prompt
 
-Compile with `-fsanitize=address` to enable compiling for the Address Sanitizer runtime. The compiler flag `-fsanitize=address` is compatible with all existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, `/O2 /GL` and `PGO`). The flag works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). The flag works with creating an EXE or a DLL. Debug information is required for optimal formatting of call stacks. In the example below, `cl -fsanitize=address-/Zi` is passed on the command line.
+Compile with `-fsanitize=address` to enable compiling for the AddressSanitizer runtime. The compiler flag `-fsanitize=address` is compatible with all existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, `/O2 /GL` and `PGO`). The flag works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). The flag works with creating an EXE or a DLL. Debug information is required for optimal formatting of call stacks. In the example below, `cl -fsanitize=address-/Zi` is passed on the command line.
 
-The Address Sanitizer libraries (.lib files) will automatically be linked for you. For more detail, and for guidelines on partitioned build systems, see [building to target the Address Sanitizer runtime](./asan-building.md).
+The AddressSanitizer libraries (.lib files) will automatically be linked for you. For more detail, and for guidelines on partitioned build systems, see [building to target the AddressSanitizer runtime](./asan-building.md).
 
 ### Example - basic global buffer overflow
 
@@ -113,9 +113,9 @@ Consider the overlaid, red boxes that highlight seven key pieces of information:
 
 **Note:**  The function names in the call stack are produced through the [LLVM symbolizer](https://llvm.org/docs/CommandGuide/llvm-symbolizer.html) that is invoked by the runtime upon error.
 
-## Using the Address Sanitizer from Visual Studio
+## Using the AddressSanitizer from Visual Studio
 
-Address Sanitizer is integrated with the Visual Studio IDE. You can turn on the Address Sanitizer for an MSBuild project by right-clicking on the project in Solution Explorer, choosing Properties, navigating under C/C++ > General, and changing the **Enable Address Sanitizer**
+AddressSanitizer is integrated with the Visual Studio IDE. You can turn on the AddressSanitizer for an MSBuild project by right-clicking on the project in Solution Explorer, choosing Properties, navigating under C/C++ > General, and changing the **Enable AddressSanitizer**
 
 ![asan-project-system](MEDIA/asan-project-system.PNG)
 
@@ -129,9 +129,9 @@ To build and run the debugger, **hit F5**. The following VS window will result:
 
 ![global-overflow-IDE](MEDIA/asan-F5-global-buffer-overflow.PNG)
 
-## Using the Address Sanitizer from Visual Studio: CMake
+## Using the AddressSanitizer from Visual Studio: CMake
 
-To enable the Address Sanitizer for [a CMake project created to target Windows](https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-160), take the following steps:
+To enable the AddressSanitizer for [a CMake project created to target Windows](https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-160), take the following steps:
 
 Open the Configurations dropdown at the top of the IDE and click on Manage Configurations.
 
@@ -153,9 +153,9 @@ The following screenshot captures the error from the CMake build.
 
 ![cmake-F5-runt](MEDIA/asan-cmake-F5-error.PNG)
 
-## Address Sanitizer crash dumps
+## AddressSanitizer crash dumps
 
-We introduced new functionality for the Address Sanitizer to be used in cloud and distributed workflows. This functionality allows off-line viewing of an Address Sanitizer error in the IDE. The error will be overlaid on top of your source, just as you would experience in a live debug session.
+We introduced new functionality for the AddressSanitizer to be used in cloud and distributed workflows. This functionality allows off-line viewing of an AddressSanitizer error in the IDE. The error will be overlaid on top of your source, just as you would experience in a live debug session.
 
 These new dump files can lead to efficiencies when analyzing a bug. You don't need to rerun, or find remote data or look for a machine that went off-line.
 
@@ -171,7 +171,7 @@ Starting with Visual Studio 16.9 you can display **a precisely diagnosed error**
 
 ## Error types
 
-The following list of runtime errors can be exposed when you run your binaries compiled with the Address Sanitizer(-fsanitize=address):
+The following list of runtime errors can be exposed when you run your binaries compiled with the AddressSanitizer(-fsanitize=address):
 
 - [stack-use-after-scope](./examples-stack-use-after-scope.md)
 - [stack-buffer-overflow](./examples-stack-buffer-overflow.md)
@@ -209,28 +209,28 @@ Features that could lead to false positives in Visual Studio 2019 16.9 were not 
 - [Container Overflow](https://github.com/google/sanitizers/wiki/AddressSanitizerContainerOverflow)
 - [Pointer Subtraction/Comparison](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
 
-For more information, see [Building for the Address Sanitizer with MSVC](./asan-building.md) for further details.
+For more information, see [Building for the AddressSanitizer with MSVC](./asan-building.md) for further details.
 
 [Provide feedback](https://aka.ms/feedback/suggest?space=62) about features you would like to see in future releases.
 
 ## Existing industry documentation
 
-Extensive documentation already exists for these language and platform-dependent implementations of the Address Sanitizer technology.
+Extensive documentation already exists for these language and platform-dependent implementations of the AddressSanitizer technology.
 
 - [Google](https://github.com/google/sanitizers/wiki/AddressSanitizer)
 - [Apple](https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early)
 - [GCC](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
 
-This seminal paper on the [Address Sanitizer](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) describes the implementation.
+This seminal paper on the [AddressSanitizer](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) describes the implementation.
 
 ## See also
 
-- [Address Sanitizer Overview](./asan.md)
-- [Address Sanitizer Known Issues](./asan-known-issues.md)
-- [Address Sanitizer Build and Language Reference](./asan-building.md)
-- [Address Sanitizer Runtime Reference](./asan-runtime.md)
-- [Address Sanitizer Shadow Bytes](./asan-shadowbytes.md)
-- [Address Sanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
-- [Address Sanitizer Debugger Integration](./asan-debugger-integration.md)
+- [AddressSanitizer Overview](./asan.md)
+- [AddressSanitizer Known Issues](./asan-known-issues.md)
+- [AddressSanitizer Build and Language Reference](./asan-building.md)
+- [AddressSanitizer Runtime Reference](./asan-runtime.md)
+- [AddressSanitizer Shadow Bytes](./asan-shadowbytes.md)
+- [AddressSanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
+- [AddressSanitizer Debugger Integration](./asan-debugger-integration.md)
 
 > [!NOTE] Send us [feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.

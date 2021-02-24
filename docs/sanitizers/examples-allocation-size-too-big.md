@@ -2,8 +2,8 @@
 title: "Allocation-size-too-big error."
 description: "Source examples and live debug screenshots for allocation-size-too-big errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","Address Sanitizer","memory safety","allocation too big", "ASan examples"]
-help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","allocation too big"]
+f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","allocation too big", "ASan examples"]
+help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","allocation too big"]
 ---
 
 # Allocation-size-too-big error

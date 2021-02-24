@@ -2,8 +2,8 @@
 title: "Calloc() overflow."
 description: "Source examples and live debug screen shots for calloc() overflow errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","Address Sanitizer","memory safety","calloc() overflow", "ASan examples"]
-help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","calloc() overflow"]
+f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","calloc() overflow", "ASan examples"]
+help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","calloc() overflow"]
 ---
 
 # Calloc - overflow

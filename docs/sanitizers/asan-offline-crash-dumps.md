@@ -1,18 +1,18 @@
 ---
-title: "Address Sanitizer - Cloud or distributed testing"
-description: "Address Sanitizer feature extended for Visual Studio and Azure"
+title: "AddressSanitizer - Cloud or distributed testing"
+description: "AddressSanitizer feature extended for Visual Studio and Azure"
 ms.date: 02/05/2021
-f1_keywords: ["ASan","sanitizers","commandAddressSanitizer","memory safety","heap buffer overflow", "stack buffer overflow", "double free", "use after free", "type mismatch"]
-help viewer_keywords: ["ASan","sanitizers","AddressSanitizer","clang_rt","Clang runtime","runtime"]
+f1_keywords: ["ASan","sanitizers","AddressSanitizer","Address Sanitizer","memory safety","heap buffer overflow", "stack buffer overflow", "double free", "use after free", "type mismatch"]
+help viewer_keywords: ["ASan","sanitizers","AddressSanitizer","Address Sanitizer","clang_rt","Clang runtime","runtime"]
 ---
 
-# Address Sanitizer - Cloud or distributed testing
+# AddressSanitizer - Cloud or distributed testing
 
-When an Address Sanitizer error is found a crash dump can be created to store all the Address Saniziter-specific context. That crash dump can then be sent to another PC for debugging. This can be a critical time saver when running Address Saniziter in the cloud or in distributed testing: create the dump on failure on that infrastructure and debug it on your developer PC.
+When an AddressSanitizer error is found a crash dump can be created to store all the Address Saniziter-specific context. That crash dump can then be sent to another PC for debugging. This can be a critical time saver when running Address Saniziter in the cloud or in distributed testing: create the dump on failure on that infrastructure and debug it on your developer PC.
 
-The Visual Studio debugger provides precisely diagnosed Address Sanitizer errors, and **you can view these bugs without having to rerun testing, copy huge datasets, discover lost data, or find test machines that went offline: just load up the crash dump.**
+The Visual Studio debugger provides precisely diagnosed AddressSanitizer errors, and **you can view these bugs without having to rerun testing, copy huge datasets, discover lost data, or find test machines that went offline: just load up the crash dump.**
 
-Crash dumps are created upon Address Sanitizer failures by setting the following environment variable:
+Crash dumps are created upon AddressSanitizer failures by setting the following environment variable:
 
 `set ASAN_SAVE_DUMPS=MyFileName.dmp`
 
@@ -30,7 +30,7 @@ For implementation details and fine grained control, see the [debugger integrati
 
 Consider three machines: A, B, and C. Build are done on machine B, tests are run on machine C and then you analyze failures on machine A. The errors are reported against source line and column numbers in your source code. The call stack is displayed with a set of symbols in the PDB file produced from that [exact version of source code](#Source-and-symbols).
 
-The following steps are for local or distributed scenarios that lead to creating a .dmp file and viewing that [Address Sanitizer dump file](#View-AddressSanitizer-.dmp-files), off-line.
+The following steps are for local or distributed scenarios that lead to creating a .dmp file and viewing that [AddressSanitizer dump file](#View-AddressSanitizer-.dmp-files), off-line.
 
 ### Steps - locally produced .dmp
 
@@ -48,7 +48,7 @@ The following steps are for local or distributed scenarios that lead to creating
 
 Note: The VS2019 machine must have access to GitHub or the internal "\\\Machine\share" where your source "was indexed to".
 
-## View Address Sanitizer .dmp files
+## View AddressSanitizer .dmp files
 
 Ensure the debugger IDE will be able to get to your .PDB and source.
 
@@ -64,7 +64,7 @@ Set the symbol paths, and choose **Debug with Native Only**.
 
 ![open snapshot](./MEDIA/asan-DMP-file-open.PNG)
 
-The following screenshot shows the final loaded dump file, with sources and Address Sanitizer metadata loaded.
+The following screenshot shows the final loaded dump file, with sources and AddressSanitizer metadata loaded.
 
 ![symbolized snapshot](./MEDIA/asan-view-crash-meta-data.PNG)
 
@@ -78,7 +78,7 @@ To use source server, the application must have been "source indexed": **using p
 
 - See [the steps indexing sources and publishing symbols](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=azure-devops)
 
-- See [how to specify symbols and source code for the debugger IDE will to open  your crash dump from the Address Sanitizer](https://docs.microsoft.com/en-us/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger?view=vs-2019)
+- See [how to specify symbols and source code for the debugger IDE will to open  your crash dump from the AddressSanitizer](https://docs.microsoft.com/en-us/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger?view=vs-2019)
 
 For external documentation, see:
 
@@ -90,12 +90,12 @@ For external documentation, see:
 
 ## See also
 
-- [Address Sanitizer Overview](./asan.md)
-- [Address Sanitizer Known Issues](./asan-known-issues.md)
-- [Address Sanitizer Build and Language Reference](./asan-building.md)
-- [Address Sanitizer Runtime Reference](./asan-runtime.md)
-- [Address Sanitizer Shadow Bytes](./asan-shadowbytes.md)
-- [Address Sanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
-- [Address Sanitizer Debugger Integration](./asan-debugger-integration.md)
+- [AddressSanitizer Overview](./asan.md)
+- [AddressSanitizer Known Issues](./asan-known-issues.md)
+- [AddressSanitizer Build and Language Reference](./asan-building.md)
+- [AddressSanitizer Runtime Reference](./asan-runtime.md)
+- [AddressSanitizer Shadow Bytes](./asan-shadowbytes.md)
+- [AddressSanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
+- [AddressSanitizer Debugger Integration](./asan-debugger-integration.md)
 
 > [!NOTE] Send us [feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.

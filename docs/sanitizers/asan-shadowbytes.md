@@ -1,12 +1,12 @@
 ---
-title: "Address Sanitizer Shadow Bytes"
+title: "AddressSanitizer Shadow Bytes"
 description: "Technical description of shadow bytes written and read by compiler's generate code and AddressSanitizer runtime."
 ms.date: 02/05/2021
-f1_keywords: ["Shadow Bytes","Address Sanitizer", "ASan Code Gen", "ASan compiler", "ASan Runtime"]
-help viewer_keywords: ["Shadow Bytes","Address Sanitizer", "ASan Code Gen", "ASan compiler", "ASan Runtime"]
+f1_keywords: ["Shadow Bytes","AddressSanitizer","Address Sanitizer", "ASan Code Gen", "ASan compiler", "ASan Runtime"]
+help viewer_keywords: ["Shadow Bytes","AddressSanitizer","Address Sanitizer", "ASan Code Gen", "ASan compiler", "ASan Runtime"]
 ---
 
-# Address Sanitizer Shadow Bytes
+# AddressSanitizer Shadow Bytes
 
 We briefly summarize the concept of shadow bytes and how they can be used by the runtime implementation of `-fsanitize=address`. For further details, we refer you to the [seminal paper](
 https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf).
@@ -70,20 +70,20 @@ In addition to these explicitly generated checks, the runtime will check shadow 
 
 ## Setting shadow bytes
 
-Both the code the compiler generates and the Address Sanitizer runtime can write shadow bytes. For example, the compiler can set shadow bytes to allow fixed sized access to stack locals defined in an inner scope.  The runtime can surround global variables in the data section with shadow bytes.
+Both the code the compiler generates and the AddressSanitizer runtime can write shadow bytes. For example, the compiler can set shadow bytes to allow fixed sized access to stack locals defined in an inner scope.  The runtime can surround global variables in the data section with shadow bytes.
 
 ## See Also
 
-The Address Sanitizer [algorithm](https://github.com/google/sanitizers/wiki/AddressSanitizerAlgorithm) for further details.
+The AddressSanitizer [algorithm](https://github.com/google/sanitizers/wiki/AddressSanitizerAlgorithm) for further details.
 
 ## See also
 
-- [Address Sanitizer Overview](./asan.md)
-- [Address Sanitizer Known Issues](./asan-known-issues.md)
-- [Address Sanitizer Build and Language Reference](./asan-building.md)
-- [Address Sanitizer Runtime Reference](./asan-runtime.md)
-- [Address Sanitizer Shadow Bytes](./asan-shadowbytes.md)
-- [Address Sanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
-- [Address Sanitizer Debugger Integration](./asan-debugger-integration.md)
+- [AddressSanitizer Overview](./asan.md)
+- [AddressSanitizer Known Issues](./asan-known-issues.md)
+- [AddressSanitizer Build and Language Reference](./asan-building.md)
+- [AddressSanitizer Runtime Reference](./asan-runtime.md)
+- [AddressSanitizer Shadow Bytes](./asan-shadowbytes.md)
+- [AddressSanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
+- [AddressSanitizer Debugger Integration](./asan-debugger-integration.md)
 
 > [!NOTE] Send us [feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.

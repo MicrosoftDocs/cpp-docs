@@ -1,27 +1,27 @@
 ---
-title: "Address Sanitizer Language, Build, and Debugging Reference"
-description: "Technical description of building for the Address Sanitizer"
+title: "AddressSanitizer Language, Build, and Debugging Reference"
+description: "Technical description of building for the AddressSanitizer"
 ms.date: 02/15/2021
-f1_keywords: ["ASan","sanitizers","AddressSanitizer", "-fsanitize=address", "compile", "link", "Asan-integration"]
-helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","Address-Sanitizer", "compile", VS-integrations"]
+f1_keywords: ["ASan","sanitizers","AddressSanitizer","Address Sanitizer", "-fsanitize=address", "compile", "link", "Asan-integration"]
+helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","Address Sanitizer","Address-Sanitizer", "compile", VS-integrations"]
 ---
 
-# Address Sanitizer Language, Build, and Debugging Reference
+# AddressSanitizer Language, Build, and Debugging Reference
 
-This section describes the language specification, compiler flags, and linker flags. It also describes the options controlling Visual Studio debugger integration specific to the Address Sanitizer.
+This section describes the language specification, compiler flags, and linker flags. It also describes the options controlling Visual Studio debugger integration specific to the AddressSanitizer.
 
 - [Language specification](#Language-specification)
 - [Compiler](#Compiler)
 - [Linker](#Linker)
 - [Visual Studio integration](#Visual-Studio-integration)
 
-For more information on the Address Sanitizer runtime, intercepted functions, and how to hook custom allocators, see the [runtime reference](./asan-runtime.md). For more information on saving crash dumps from Address Sanitizer failures, see the [crash dump reference](./asan-offline-crash-dumps.md).
+For more information on the AddressSanitizer runtime, intercepted functions, and how to hook custom allocators, see the [runtime reference](./asan-runtime.md). For more information on saving crash dumps from AddressSanitizer failures, see the [crash dump reference](./asan-offline-crash-dumps.md).
 
 ## Language specification
 
 ### `__SANITIZE_ADDRESS__`
 
-Useful for advanced users when conditionalizing source code for the presence of the Address Sanitizer runtime, the `__SANITIZE_ADDRESS__` macro is defined to `1` when `-fsanitize=address` is set.
+Useful for advanced users when conditionalizing source code for the presence of the AddressSanitizer runtime, the `__SANITIZE_ADDRESS__` macro is defined to `1` when `-fsanitize=address` is set.
 
 ```cpp
 #include <cstdio>
@@ -70,7 +70,7 @@ See[the examples](asan-top-level.md#Error-types) for sample usage.
 
 ### `-fsanitize-address-use-after-return` (experimental)
 
-The MSVC compiler (unlike Clang), will not default to generating code to allocating frames in the heap to catch use-after-return errors. To catch these errors with Address Sanitizer, you must:
+The MSVC compiler (unlike Clang), will not default to generating code to allocating frames in the heap to catch use-after-return errors. To catch these errors with AddressSanitizer, you must:
 
 1. Compile with `-fsanitize-address-use-after-return`
 2. Before executing your program, set `set ASAN_OPTIONS=detect_stack_use_after_return=1`
@@ -91,7 +91,7 @@ See the [algorithm for stack use after return](https://github.com/google/sanitiz
 
 The `-fsanitize=address` switch links in libraries that begin with `clang_rt.asan*` into your final executable. The libraries chosen and automatically linked in are as follows.
 
-| CRT Flag | DLL or EXE | DEBUG? | Address Sanitizer Runtime Libraries                                                             |
+| CRT Flag | DLL or EXE | DEBUG? | AddressSanitizer Runtime Libraries                                                             |
 |----------|------------|--------|------------------------------------------------------------------------------------|
 | MT       | EXE        | NO     | `clang_rt.asan-{arch}, clang_rt.asan_cxx-{arch}`                                   |
 | MT       | DLL        | NO     | `clang_rt.asan_dll_thunk-{arch}`                                                   |
@@ -106,7 +106,7 @@ The linker switch `-INFERASANLIBS:NO` will prevent the linker from choosing the 
 
 ### `-fno-sanitize-address-vcasan-lib`
 
-The `-fsanitize=address` switch links in extra capabilities to yield an improved Visual Studio debugging experience when an Address Sanitizer exception is thrown. These libraries are called **VCAsan**. These libraries enable Visual Studio to display Address Sanitizer errors on your source code. These libraries also enable the executable to generate crash dumps when an Address Sanitizer error report is created.
+The `-fsanitize=address` switch links in extra capabilities to yield an improved Visual Studio debugging experience when an AddressSanitizer exception is thrown. These libraries are called **VCAsan**. These libraries enable Visual Studio to display AddressSanitizer errors on your source code. These libraries also enable the executable to generate crash dumps when an AddressSanitizer error report is created.
 
 The library chosen depends on the compilation flags, and is automatically linked in as follows.
 
@@ -134,12 +134,12 @@ The `-fsanitize=address` compiler switch produces a binary that will expose memo
 
 ## See also
 
-- [Address Sanitizer Overview](./asan.md)
-- [Address Sanitizer Known Issues](./asan-known-issues.md)
-- [Address Sanitizer Build and Language Reference](./asan-building.md)
-- [Address Sanitizer Runtime Reference](./asan-runtime.md)
-- [Address Sanitizer Shadow Bytes](./asan-shadowbytes.md)
-- [Address Sanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
-- [Address Sanitizer Debugger Integration](./asan-debugger-integration.md)
+- [AddressSanitizer Overview](./asan.md)
+- [AddressSanitizer Known Issues](./asan-known-issues.md)
+- [AddressSanitizer Build and Language Reference](./asan-building.md)
+- [AddressSanitizer Runtime Reference](./asan-runtime.md)
+- [AddressSanitizer Shadow Bytes](./asan-shadowbytes.md)
+- [AddressSanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
+- [AddressSanitizer Debugger Integration](./asan-debugger-integration.md)
 
 > [!NOTE] Send us [feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.

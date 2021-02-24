@@ -2,8 +2,8 @@
 title: "Global buffer overflow."
 description: "Source examples and live debug screen shots for global variable overflow errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","Address Sanitizer","memory safety","global-buffer-overflow", "ASan examples"]
-help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","global-buffer-overflow"]
+f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","global-buffer-overflow", "ASan examples"]
+help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","global-buffer-overflow"]
 ---
 
 # Global buffer overflow
@@ -19,7 +19,7 @@ Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm
 ## Example - globals in 'C' with multiple type definitions
 
 ```cpp
-// Address Sanitizer reports a buffer overflow at the first line in function main() in all cases, 
+// AddressSanitizer reports a buffer overflow at the first line in function main() in all cases, 
 // REGARDLESS of the order in which the object files: a.obj, b.obj, and c.obj are linked.
   
 // file: a.c 

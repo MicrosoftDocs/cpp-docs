@@ -2,8 +2,8 @@
 title: "Alloca() - dynamic stack overflow."
 description: "Source examples and live debug screen shots for alloca() errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","Address Sanitizer","memory safety","dynamic-stack-overflow", "ASan examples"]
-help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","dynamic stack overflow", "alloca()"]
+f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","dynamic-stack-overflow", "ASan examples"]
+help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","dynamic stack overflow", "alloca()"]
 ---
 
 # Alloca - dynamic-stack-overflow

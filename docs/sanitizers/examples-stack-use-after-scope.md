@@ -2,8 +2,8 @@
 title: "Stack Use After Scope."
 description: "Source examples and live debug screen shots for Stack Use After Scope errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","Address Sanitizer","memory safety","Stack Use After Scope", "ASan examples"]
-help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Stack Use After Scope"]
+f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","Stack Use After Scope", "ASan examples"]
+help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","Stack Use After Scope"]
 ---
 
 # Stack use after scope

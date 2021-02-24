@@ -2,8 +2,8 @@
 title: "Memcpy() parameter overlap."
 description: "Source examples and live debug screen shots for Memcpy() parameter overlap errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","Address Sanitizer","memory safety","Memcpy() parameter overlap", "ASan examples"]
-help viewer_keywords: ["ASan","Address Sanitizer","ASan examples","Memcpy() parameter overlap"]
+f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","Memcpy() parameter overlap", "ASan examples"]
+help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","Memcpy() parameter overlap"]
 ---
 
 # Memcpy() parameter overlap
