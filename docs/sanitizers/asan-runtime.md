@@ -8,7 +8,7 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","Address Sanitizer"
 
 # AddressSanitizer Runtime
 
-The AddressSanitizer runtime library installs replacement functions; interceptors, for common memory allocation and memory manipulation functions. There are a number of different runtime libraries that facilitate this for the various types of executables the compiler may generate. The compiler and linker will link the appropriate runtime libraries so long as the /fsanitize=address flag is passed at compile time. This default functionality can be overrided with the flag `/nodefaultlib` at link time. See the section on [linking](./asan-building.md#Linker) for further detail.
+The AddressSanitizer runtime library intercepts common memory allocation functions and operations to enable inspection of memory accesses. There are a number of different runtime libraries that facilitate this for the various types of executables the compiler may generate. The compiler and linker will link the appropriate runtime libraries so long as the /fsanitize=address flag is passed at compile time. This default functionality can be overrided with the flag `/nodefaultlib` at link time. See the section on [linking](./asan-building.md#Linker) for further detail.
 
 Below is an inventory of runtime libraries for linking to the Address Sanatizer runtime, where `arch` is either `i386` or `x86_64`.
 
@@ -28,7 +28,7 @@ When compiling with `cl -fsanitize=address`, the compiler generates instructions
 
 ## Function interception
 
-Interception is achieved through **many hot-patching techniques**, [these techniques are best documented within the source code itself.](https://github.com/llvm/llvm-project/blob/1a2eaebc09c6a200f93b8beb37130c8b8aab3934/compiler-rt/lib/interception/interception_win.cpp#L11)
+Interception is achieved through many hot-patching techniques, [these techniques are best documented within the source code itself.](https://github.com/llvm/llvm-project/blob/1a2eaebc09c6a200f93b8beb37130c8b8aab3934/compiler-rt/lib/interception/interception_win.cpp#L11)
 
 The runtime libraries intercept many common memory management and memory manipulation functions. [A complete list of intercepted functions is available below.](#AddressSanitizer-list-of-intercepted-functions-(Windows)) The allocation interceptors manage metadata and shadow bytes related to each allocation call. Every time a CRT function like malloc() or delete() are called, the interceptors set specific values in the AddressSanitizer shadow-memory region to indicate whether those heap locations are currently accessible and what are the bounds of the allocation are. These shadow bytes allow the compiler-generated checks of the [shadow-bytes](./asan-shadowbytes.md) to determine whether a load or store is valid.
 
