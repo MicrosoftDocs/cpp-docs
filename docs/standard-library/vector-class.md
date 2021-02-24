@@ -49,7 +49,7 @@ The [`vector<bool>` reference class](../standard-library/vector-bool-class.md#re
 |`[allocator_type]`(#allocator_type)|A type that represents the `allocator` class for the vector object.|
 |[`const_iterator`](#const_iterator)|A type that provides a random-access iterator that can read a **`const`** element in a vector.|
 |[`const_pointer`](#const_pointer)|A type that provides a pointer to a **`const`** element in a vector.|
-|[`const_reference`](#const_reference)|A type that provides a reference to a **`const`** element stored in a vector. It's used for reading and performing **`const`** operations.|
+|[`const_reference`](#const_reference)|A type that provides a reference to a **`const`** element stored in a vector. It's used for reading and doing **`const`** operations.|
 |[`const_reverse_iterator`](#const_reverse_iterator)|A type that provides a random-access iterator that can read any **`const`** element in the vector.|
 |[`difference_type`](#difference_type)|A type that provides the difference between the addresses of two elements in a vector.|
 |[`iterator`](#iterator)|A type that provides a random-access iterator that can read or modify any element in a vector.|
@@ -81,7 +81,7 @@ The [`vector<bool>` reference class](../standard-library/vector-bool-class.md#re
 |[`erase`](#erase)|Removes an element or a range of elements in a vector from specified positions.|
 |[`front`](#front)|Returns a reference to the first element in a vector.|
 |[`get_allocator`](#get_allocator)|Returns an object to the `allocator` class used by a vector.|
-|[`insert`](#insert)|Inserts an element or a number of elements into the vector at a specified position.|
+|[`insert`](#insert)|Inserts an element or many elements into the vector at a specified position.|
 |[`max_size`](#max_size)|Returns the maximum length of the vector.|
 |[`pop_back`](#pop_back)|Deletes the element at the end of the vector.|
 |[`push_back`](#push_back)|Add an element to the end of the vector.|
@@ -414,7 +414,7 @@ A **`const`** random-access iterator that points at the first element of the ran
 
 With the return value of `cbegin`, the elements in the range can't be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -440,7 +440,7 @@ A `const` past-the-end iterator for the vector. It points to the element followi
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used with the [`auto`](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -520,7 +520,7 @@ An [iterator](#iterator) is more commonly used to access a vector element.
 
 ## <a name="const_reference"></a> `const_reference`
 
-A type that provides a reference to a **`const`** element stored in a vector. It's used for reading and performing **`const`** operations.
+A type that provides a reference to a **`const`** element stored in a vector. It's used for reading and doing **`const`** operations.
 
 ```cpp
 typedef typename Allocator::const_reference const_reference;
@@ -1130,7 +1130,7 @@ int main( )
 
 ## <a name="insert"></a> `insert`
 
-Inserts an element, a number of elements, or a range of elements into the vector at a specified position.
+Inserts an element, or many elements, or a range of elements into the vector at a specified position.
 
 ```cpp
 iterator insert(
