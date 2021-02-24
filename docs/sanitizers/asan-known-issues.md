@@ -48,6 +48,10 @@ int main() {
 }
 ```
 
+## Windows versions
+
+ As there are deep tie-ins with specific Windows versions, our support is focused on Windows 10. MSVC AddressSanitizer was tested this on 10.0.14393 (RS1), and 10.0.21323 (pre-release insider build). Please [report a bugb](https://aka.ms/feedback/report?space=62) if you run into issues.
+
 ## Memory usage
 
 The Address Sanitizer runtime does not release memory back to the OS during execution. From the OS point of view it may look like memory is being leaked, but this is an intentional design decision to not allocate all the required memory up front. 
