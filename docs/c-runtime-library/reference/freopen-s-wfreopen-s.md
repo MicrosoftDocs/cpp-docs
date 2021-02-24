@@ -80,13 +80,13 @@ By default, this function's global state is scoped to the application. To change
 | **`"w+"`** | Opens an empty file for both reading and writing. If the file exists, its contents are destroyed. |
 | **`"a+"`** | Opens for reading and appending. The appending operation includes the removal of the EOF marker before new data is written to the file. The EOF marker isn't restored after writing is completed. Creates the file if it doesn't exist. |
 
-Use the **`"w"`** and **`"w+"`** types with care, as they can destroy existing files.
+Use the **`"w"`** and **`"w+"`** types with care, as they can destroy existing files. Starting in C11, you can append **`"x"`** to **`"w"`** or **`"w+"`** to cause the function to fail if the file exists, instead of overwriting it.
 
-When a file is opened with the **`"a"`** or **`"a+"`** access type, all write operations take place at the end of the file. Although the file pointer can be repositioned using [`fseek`](fseek-fseeki64.md) or [rewind](rewind.md), the file pointer is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten.
+When a file is opened with the **`"a"`** or **`"a+"`** access type, all write operations take place at the end of the file. Although the file pointer can be repositioned using [`fseek`](fseek-fseeki64.md) or [`rewind`](rewind.md), the file pointer is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten.
 
 The **`"a"`** mode doesn't remove the EOF marker before appending to the file. After appending has occurred, the MS-DOS TYPE command only shows data up to the original EOF marker and not any data appended to the file. The **`"a+"`** mode does remove the EOF marker before appending to the file. After appending, the MS-DOS TYPE command shows all data in the file. The **`"a+"`** mode is required for appending to a stream file that is terminated with the CTRL+Z EOF marker.
 
-When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening [`fsetpos`](fsetpos.md), [`fseek`](fseek-fseeki64.md), or [rewind](rewind.md) operation. The current position can be specified for the [`fsetpos`](fsetpos.md) or [`fseek`](fseek-fseeki64.md) operation, if you want. In addition to the above values, one of the following characters may be included in the *` mode`* string to specify the translation mode for new lines.
+When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both reading and writing are allowed (the file is said to be open for "update"). However, when you switch between reading and writing, there must be an intervening [`fsetpos`](fsetpos.md), [`fseek`](fseek-fseeki64.md), or [`rewind`](rewind.md) operation. The current position can be specified for the [`fsetpos`](fsetpos.md) or [`fseek`](fseek-fseeki64.md) operation, if you want. In addition to the above values, one of the following characters may be included in the *` mode`* string to specify the translation mode for new lines.
 
 |*` mode`* modifier|Translation mode|
 |-|-|

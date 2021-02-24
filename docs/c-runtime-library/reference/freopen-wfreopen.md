@@ -70,7 +70,7 @@ By default, this function's global state is scoped to the application. To change
 | **`"w+"`** | Opens an empty file for both reading and writing. If the file exists, its contents are destroyed. |
 | **`"a+"`** | Opens for reading and appending. The appending operation includes the removal of the EOF marker before new data is written to the file. The EOF marker isn't restored after writing is completed. Creates the file if it doesn't exist. |
 
-Use the **`"w"`** and **`"w+"`** types with care, as they can destroy existing files.
+Use the **`"w"`** and **`"w+"`** types with care, as they can destroy existing files. Starting in C11, you can append **`"x"`** to **`"w"`** or **`"w+"`** to cause the function fail if the file exists, instead of overwriting it.
 
 When a file is opened with the **`"a"`** or **`"a+"`** access type, all write operations take place at the end of the file. Although the file pointer can be repositioned using [`fseek`](fseek-fseeki64.md) or [`rewind`](rewind.md), the file pointer is always moved back to the end of the file before any write operation is carried out. Thus, existing data cannot be overwritten.
 
@@ -85,7 +85,7 @@ When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both re
 
 In text (translated) mode, carriage return-line feed (CR-LF) combinations are translated into single line feed (LF) characters on input; LF characters are translated to CR-LF combinations on output. Also, CTRL+Z is interpreted as an end-of-file character on input. In files opened for reading or for writing and reading with **`"a+"`**, the run-time library checks for a CTRL+Z at the end of the file and removes it, if possible. This is done because using [`fseek`](fseek-fseeki64.md) and [ftell](ftell-ftelli64.md) to move within a file may cause [`fseek`](fseek-fseeki64.md) to behave improperly near the end of the file. Don't use the **`t`** option if you want ANSI portability because it is a Microsoft extension.
 
-If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [_fmode](../../c-runtime-library/fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
+If **`t`** or **`b`** isn't given in *`mode`*, the default translation mode is defined by the global variable [`_fmode`](../../c-runtime-library/fmode.md). If **`t`** or **`b`** is prefixed to the argument, the function fails and returns **`NULL`**.
 
 For a discussion of text and binary modes, see [Text and Binary Mode File I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
