@@ -140,5 +140,5 @@ This will go to the file 'freopen.out'
 [`_fdopen, _wfdopen`](fdopen-wfdopen.md)\
 [`_fileno`](fileno.md)\
 [`fopen, _wfopen`](fopen-wfopen.md)\
-[_`open, _wopen`](open-wopen.md)\
+[`_open, _wopen`](open-wopen.md)\
 [`_setmode`](setmode.md)\
