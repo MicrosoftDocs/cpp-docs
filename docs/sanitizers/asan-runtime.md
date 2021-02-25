@@ -28,18 +28,18 @@ When compiling with `cl -fsanitize=address`, the compiler generates instructions
 
 ## Function interception
 
-Interception is achieved through many hot-patching techniques, [these techniques are best documented within the source code itself.](https://github.com/llvm/llvm-project/blob/1a2eaebc09c6a200f93b8beb37130c8b8aab3934/compiler-rt/lib/interception/interception_win.cpp#L11)
+Interception is achieved through many hot-patching techniques. These techniques are [best documented within the source code itself](https://github.com/llvm/llvm-project/blob/1a2eaebc09c6a200f93b8beb37130c8b8aab3934/compiler-rt/lib/interception/interception_win.cpp#L11).
 
-The runtime libraries intercept many common memory management and memory manipulation functions. [A complete list of intercepted functions is available below.](#AddressSanitizer-list-of-intercepted-functions-(Windows)) The allocation interceptors manage metadata and shadow bytes related to each allocation call. Every time a CRT function like malloc() or delete() are called, the interceptors set specific values in the AddressSanitizer shadow-memory region to indicate whether those heap locations are currently accessible and what are the bounds of the allocation are. These shadow bytes allow the compiler-generated checks of the [shadow-bytes](./asan-shadowbytes.md) to determine whether a load or store is valid.
+The runtime libraries intercept many common memory management and memory manipulation functions. [A complete list of intercepted functions is available below.](#AddressSanitizer-list-of-intercepted-functions-Windows) The allocation interceptors manage metadata and shadow bytes related to each allocation call. Every time a CRT function like malloc() or delete() are called, the interceptors set specific values in the AddressSanitizer shadow-memory region to indicate whether those heap locations are currently accessible and what are the bounds of the allocation are. These shadow bytes allow the compiler-generated checks of the [shadow-bytes](./asan-shadowbytes.md) to determine whether a load or store is valid.
 
-Interception is not guaranteed to succeed; if a function prologue is too short for a jmp to be written interception can fail. If this occurs the program will throw a debugbreak() and halt. Attaching a debugger will make the cause of the interception issue more clear. If you encounter this problem please file a feedback report with the [Visual Studio developer community](https://developercommunity.visualstudio.com/). 
+Interception is not guaranteed to succeed; if a function prologue is too short for a jmp to be written interception can fail. If this occurs the program will throw a debugbreak() and halt. Attaching a debugger will make the cause of the interception issue more clear. If you encounter this problem please [report a bug](https://aka.ms/feedback/report?space=62). 
 
 > [!NOTE]
 > Users can optionally attempt to continue past a failed interception by setting the environment variable `ASAN_WIN_CONTINUE_ON_INTERCEPTION_FAILURE` to any value. Continuing past an interception failure can result in missed bug reports for that function.
 
 ## Custom allocators and the AddressSanitizer runtime
 
-The AddressSanitizer runtime provides interceptors for common allocator interfaces, malloc/free, new/delete, HeapAlloc/HeapFree (via RtlAllocateHeap/RtlFreeHeap). Many programs make use of custom allocators for one reason or another, an example would be any program using dlmalloc or a solution using the std::allocator interface and VirtualAlloc(). The compiler is not able to automatically add shadow-memory management calls to a custom allocator. It's the user's responsibility to use the [provided manual poisoning interface](#Manual-Address-Sanitizer-poisoning-interface). This API enables these allocators to function properly with the existing AddressSanitizer runtime and [shadow byte](./asan-shadowbytes.md) conventions.
+The AddressSanitizer runtime provides interceptors for common allocator interfaces, malloc/free, new/delete, HeapAlloc/HeapFree (via RtlAllocateHeap/RtlFreeHeap). Many programs make use of custom allocators for one reason or another, an example would be any program using dlmalloc or a solution using the std::allocator interface and VirtualAlloc(). The compiler is not able to automatically add shadow-memory management calls to a custom allocator. It's the user's responsibility to use the [provided manual poisoning interface](#Manual-AddressSanitizer-poisoning-interface). This API enables these allocators to function properly with the existing AddressSanitizer runtime and [shadow byte](./asan-shadowbytes.md) conventions.
 
 ## Manual AddressSanitizer poisoning interface
 
@@ -65,7 +65,7 @@ Any manual poisoning of shadow bytes must consider this alignment requirement: T
 
 ## Run-time Flags
 
-Microsoft Visual C++ uses a runtime based on the [Clang AddressSanitizer runtime from the llvm-project repository.](https://github.com/llvm/llvm-project) Because of this, most runtime flags are shared between the two versions. [A complete list of the public Clang runtime flags is available here.](https://github.com/google/sanitizers/wiki/SanitizerCommonFlags) There are some differences detailed here, if you discover options that don't function as expected file a feedback ticket in the [Visual Studio developer community.](https://developercommunity.visualstudio.com)
+Microsoft Visual C++ uses a runtime based on the [Clang AddressSanitizer runtime from the llvm-project repository.](https://github.com/llvm/llvm-project) Because of this, most runtime flags are shared between the two versions. [A complete list of the public Clang runtime flags is available here.](https://github.com/google/sanitizers/wiki/SanitizerCommonFlags) There are some differences detailed here, if you discover options that don't function as expected please [report a bug](https://aka.ms/feedback/report?space=62).
 
 ### Unsupported AddressSanitizer Options
 
@@ -80,7 +80,7 @@ For more information, see the [Differences with Clang 12.0] section(./asan-top-l
 ### Microsoft Visual C++ specific AddressSanitizer runtime flags:
 
 - `windows_hook_legacy_allocators`
-  - Boolean, set to `true` to enable interception of [GlobalAlloc](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-globalalloc) and [LocalAlloc](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-localalloc) allocators.
+  - Boolean, set to `true` to enable interception of [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) and [LocalAlloc](/windows/win32/api/winbase/nf-winbase-localalloc) allocators.
 
 > [!NOTE]
 > The option `windows_hook_legacy_allocators` is NOT currently available in the public llvm-project runtime as of this date. The option may eventually be contributed back to the public project; however, this is dependent on code review and community acceptance.
@@ -94,7 +94,7 @@ The AddressSanitizer runtime hot-patches many functions to enable memory safety 
 
 ### Default interceptors
 
-- [__C_specific_handler (x64 only)](https://docs.microsoft.com/en-us/windows/win32/devnotes/--c-specific-handler2)
+- [__C_specific_handler (x64 only)](/windows/win32/devnotes/--c-specific-handler2)
 - [_aligned_free](../c-runtime-library/reference/aligned-free.md)
 - [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md)
 - [_aligned_msize](../c-runtime-library/reference/aligned-msize.md)
@@ -126,7 +126,7 @@ The AddressSanitizer runtime hot-patches many functions to enable memory safety 
 - [atoi](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)
 - [atol](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)
 - [calloc](../c-runtime-library/reference/calloc.md)
-- [CreateThread](https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread)
+- [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread)
 - [free](../c-runtime-library/reference/free.md)
 - [frexp](../c-runtime-library/reference/frexp.md)
 - [longjmp](../c-runtime-library/reference/longjmp.md)
@@ -136,16 +136,16 @@ The AddressSanitizer runtime hot-patches many functions to enable memory safety 
 - [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md)
 - [memmove](../c-runtime-library/reference/memmove-wmemmove.md)
 - [memset](../c-runtime-library/reference/memset-wmemset.md)
-- [RaiseException](https://docs.microsoft.com/en-us/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception)
+- [RaiseException](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception)
 - [realloc](../c-runtime-library/reference/realloc.md)
-- [RtlAllocateHeap](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlallocateheap)
-- [RtlCreateHeap](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlcreateheap)
-- [RtlDestroyHeap](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlcreateheap)
-- [RtlFreeHeap](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlfreeheap)
-- [RtlRaiseException](https://docs.microsoft.com/en-us/windows/win32/api/rtlsupportapi/nf-rtlsupportapi-rtlraiseexception)
+- [RtlAllocateHeap](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlallocateheap)
+- [RtlCreateHeap](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlcreateheap)
+- [RtlDestroyHeap](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlcreateheap)
+- [RtlFreeHeap](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlfreeheap)
+- [RtlRaiseException](/windows/win32/api/rtlsupportapi/nf-rtlsupportapi-rtlraiseexception)
 - RtlReAllocateHeap (undocumented)
 - RtlSizeHeap (undocumented)
-- [SetUnhandledExceptionFilter](https://docs.microsoft.com/en-us/windows/win32/api/errhandlingapi/nf-errhandlingapi-setunhandledexceptionfilter)
+- [SetUnhandledExceptionFilter](/windows/win32/api/errhandlingapi/nf-errhandlingapi-setunhandledexceptionfilter)
 - [strcat](../c-runtime-library/reference/strcat-wcscat-mbscat.md)
 - [strchr](../c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l.md)
 - [strcmp](../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)
@@ -170,20 +170,20 @@ The AddressSanitizer runtime hot-patches many functions to enable memory safety 
 The following interceptors are only installed when an AddressSanitizer runtime option is enabled, set `windows_hook_legacy_allocators` to `true` to enable legacy allocator interception.
 `set ASAN_OPTIONS=windows_hook_legacy_allocators=true`
 
-- [GlobalAlloc](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-globalalloc)
-- [GlobalFree](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-GlobalFree)
-- [GlobalHandle](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-GlobalHandle)
-- [GlobalLock](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-GlobalLock)
-- [GlobalReAlloc](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-GlobalReAlloc)
-- [GlobalSize](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-GlobalSize)
-- [GlobalUnlock](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-GlobalUnlock)
-- [LocalAlloc](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-LocalAlloc)
-- [LocalFree](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-LocalFree)
-- [LocalHandle](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-LocalHandle)
-- [LocalLock](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-LocalLock)
-- [LocalReAlloc](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-LocalReAlloc)
-- [LocalSize](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-LocalSize)
-- [LocalUnlock](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-LocalUnlock)
+- [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc)
+- [GlobalFree](/windows/win32/api/winbase/nf-winbase-GlobalFree)
+- [GlobalHandle](/windows/win32/api/winbase/nf-winbase-GlobalHandle)
+- [GlobalLock](/windows/win32/api/winbase/nf-winbase-GlobalLock)
+- [GlobalReAlloc](/windows/win32/api/winbase/nf-winbase-GlobalReAlloc)
+- [GlobalSize](/windows/win32/api/winbase/nf-winbase-GlobalSize)
+- [GlobalUnlock](/windows/win32/api/winbase/nf-winbase-GlobalUnlock)
+- [LocalAlloc](/windows/win32/api/winbase/nf-winbase-LocalAlloc)
+- [LocalFree](/windows/win32/api/winbase/nf-winbase-LocalFree)
+- [LocalHandle](/windows/win32/api/winbase/nf-winbase-LocalHandle)
+- [LocalLock](/windows/win32/api/winbase/nf-winbase-LocalLock)
+- [LocalReAlloc](/windows/win32/api/winbase/nf-winbase-LocalReAlloc)
+- [LocalSize](/windows/win32/api/winbase/nf-winbase-LocalSize)
+- [LocalUnlock](/windows/win32/api/winbase/nf-winbase-LocalUnlock)
 
 ## See also
 
