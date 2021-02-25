@@ -24,7 +24,7 @@ Below is an inventory of runtime libraries for linking to the Address Sanatizer 
 | MT       | DLL        | YES    | `clang_rt.asan_dbg_dll_thunk-{arch}`                                               |
 | MD       | EITHER     | YES    | `clang_rt.asan_dbg_dynamic-{arch}, clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}` |
 
-When compiling with `cl -fsanitize=address`, the compiler generates instructions to manage and check the [shadow-bytes](./asan-shadowbytes.md). Your program will use this instrumentation to check memory accesses on the stack, in the heap, or in the global scope. The compiler also produces metadata describing stack and global variables. This metadata enables the runtime to generate precise error diagnostics: function names, lines, and columns in your source code. Combined, the compiler checks and runtime libraries can precisely diagnose many types of [memory safety bugs](./asan-top-level.md#Error-types) if they are encountered at run-time.
+When compiling with `cl -fsanitize=address`, the compiler generates instructions to manage and check the [shadow-bytes](./asan-shadowbytes.md). Your program will use this instrumentation to check memory accesses on the stack, in the heap, or in the global scope. The compiler also produces metadata describing stack and global variables. This metadata enables the runtime to generate precise error diagnostics: function names, lines, and columns in your source code. Combined, the compiler checks and runtime libraries can precisely diagnose many types of [memory safety bugs](./asan.md#error-types) if they are encountered at run-time.
 
 ## Function interception
 
