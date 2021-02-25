@@ -67,7 +67,7 @@ Microsoft recommends using the AddressSanitizer in these **three standard workfl
   - [Azure OneFuzz](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)
   - Local Machine
 
-This article will cover the information needed to enable the three workflows listed above. The information will be specific to the **platform-dependent** Windows 10 implementation of the AddressSanitizer. This documentation is meant to supplement the excellent documentation from [Google, Apple, and GCC](#Google,-Apple-and-GCC-documentation) already published.
+This article will cover the information needed to enable the three workflows listed above. The information will be specific to the **platform-dependent** Windows 10 implementation of the AddressSanitizer. This documentation is meant to supplement the excellent documentation from [Google, Apple, and GCC](#Existing-industry-documentation) already published.
 
 > [!NOTE] Current support is limited to x86 and x64 on Windows 10. Please [send us feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases. Your feedback would help us prioritize other sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=undefined, or -fsanitize=hwaddress. And please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
 
