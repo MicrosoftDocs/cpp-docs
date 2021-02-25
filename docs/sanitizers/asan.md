@@ -69,7 +69,7 @@ Microsoft recommends using the AddressSanitizer in these **three standard workfl
 
 This article will cover the information needed to enable the three workflows listed above. The information will be specific to the **platform-dependent** Windows 10 implementation of the AddressSanitizer. This documentation is meant to supplement the excellent documentation from [Google, Apple, and GCC](#Existing-industry-documentation) already published.
 
-> [!NOTE] Current support is limited to x86 and x64 on Windows 10. Please [send us feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases. Your feedback would help us prioritize other sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=undefined, or -fsanitize=hwaddress. And please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
+> [!NOTE] Current support is limited to x86 and x64 on Windows 10. Please [send us feedback](https://aka.ms/vsfeedback/browsecpp) on what you would like to see in future releases. Your feedback would help us prioritize other sanitizers in the future: -fsanitize=thread, -fsanitize=leak, -fsanitize=memory, -fsanitize=undefined, or -fsanitize=hwaddress. And please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
 
 ## Using the AddressSanitizer from a Developer Command Prompt
 
@@ -210,7 +210,7 @@ Features that could lead to false positives in Visual Studio 2019 16.9 were not 
 
 For more information, see [Building for the AddressSanitizer with MSVC](./asan-building.md) for further details.
 
-[Provide feedback](https://aka.ms/feedback/suggest?space=62) about features you would like to see in future releases.
+[Provide feedback](https://aka.ms/vsfeedback/browsecpp) about features you would like to see in future releases.
 
 ## Existing industry documentation
 
@@ -232,4 +232,4 @@ This seminal paper on the [AddressSanitizer](https://www.usenix.org/system/files
 - [AddressSanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
 - [AddressSanitizer Debugger Integration](./asan-debugger-integration.md)
 
-> [!NOTE] Send us [feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
+> [!NOTE] Send us [feedback](https://aka.ms/vsfeedback/browsecpp) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.

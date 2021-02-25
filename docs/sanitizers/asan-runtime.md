@@ -195,4 +195,4 @@ The following interceptors are only installed when an AddressSanitizer runtime o
 - [AddressSanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
 - [AddressSanitizer Debugger Integration](./asan-debugger-integration.md)
 
-> [!NOTE] Send us [feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
+> [!NOTE] Send us [feedback](https://aka.ms/vsfeedback/browsecpp) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.

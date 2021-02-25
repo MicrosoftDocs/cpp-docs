@@ -8,7 +8,7 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","Address Sanitizer"
 
 # AddressSanitizer Known Issues
 
-> [!NOTE] Send us [feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
+> [!NOTE] Send us [feedback](https://aka.ms/vsfeedback/browsecpp) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
 
 ## Incompatible switches and functionality
 
@@ -60,8 +60,6 @@ The AddressSanitizer runtime does not release memory back to the OS during execu
 
 The clang_rt.asan*.dll runtime files are dropped next to the compilers in `%VSINSTALLDIR%\VC\Tools\MSVC\<version>\bin\<host-arch>\<target-arch>\`. These locations are on the path in debugging sessions, as well as from Visual Studio Developer Command Prompts. The files are _not_ dropped in `C:\Windows\System32` or `C:\Windows\SysWOW64`.
 
-> [!NOTE] Please [send us feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and Please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
-
 ## See also
 
 - [AddressSanitizer Overview](./asan.md)
@@ -72,4 +70,4 @@ The clang_rt.asan*.dll runtime files are dropped next to the compilers in `%VSIN
 - [AddressSanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
 - [AddressSanitizer Debugger Integration](./asan-debugger-integration.md)
 
-> [!NOTE] Send us [feedback](https://aka.ms/feedback/suggest?space=62) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
+> [!NOTE] Send us [feedback](https://aka.ms/vsfeedback/browsecpp) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
