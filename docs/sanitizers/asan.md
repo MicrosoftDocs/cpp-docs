@@ -58,7 +58,7 @@ Microsoft recommends using the AddressSanitizer in these **three standard workfl
 - **Developer inner loop**
   - Visual Studio - [Command line](#Using-the-AddressSanitizer-from-a-Developer-Command-Prompt)
   - Visual Studio - [Project system](#Using-the-AddressSanitizer-from-Visual-Studio)
-  - Visual Studio - [CMake](#Using-the-AddressSanitizer-from-Visual-Studio:-CMake)
+  - Visual Studio - [CMake](#Using-the-AddressSanitizer-from-Visual-Studio-CMake)
 
 - **CI/CD** - continuous integration / continuous development
   - Error reporting - [New AddressSanitizer dump files](#AddressSanitizer-crash-dumps)
