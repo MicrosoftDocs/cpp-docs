@@ -12,22 +12,22 @@ helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","Address Sanitizer"
 
 ## Incompatible switches and functionality
 
-The following switches and functionality are not currently compatible with `-fsanitize=address` and should be disabled or avoided.
+The following switches and functionality are not compatible with `-fsanitize=address` and should be disabled or avoided.
 
-- The [/RTC](../build/reference/rtc-run-time-error-checks?view=msvc-160) family of switches are incompatible with AddressSanitizer and should be disabled.
-- [Incremental Linking](../build/reference/incremental-link-incrementally?view=msvc-160) is not currently supported, and should be disabled.
-- [Edit-and-Continue](/visualstudio/debugger/edit-and-continue-visual-cpp?view=vs-2019) is not currently supported, and should be disabled.
+- The [/RTC](../build/reference/rtc-run-time-error-checks?view=msvc-160) switches are incompatible with AddressSanitizer and should be disabled.
+- [Incremental Linking](../build/reference/incremental-link-incrementally?view=msvc-160) is not supported, and should be disabled.
+- [Edit-and-Continue](/visualstudio/debugger/edit-and-continue-visual-cpp?view=vs-2019) is not supported, and should be disabled.
 - [Coroutines](https://devblogs.microsoft.com/cppblog/category/coroutine/) are not compatible with AddressSanitizer, and resumable functions are exempt from instrumentation.
-- [Open MP](../build/reference/openmp-enable-openmp-2-0-support?view=msvc-160)is not currently supported, and should be disabled.
-- [Managed C++](../build/reference/clr-common-language-runtime-compilation?view=msvc-160) is not currently supported, and should be disabled. 
-- [C++ AMP](../parallel/amp/cpp-amp-overview?view=msvc-160) is not currently supported, and should be disabled.
+- [Open MP](../build/reference/openmp-enable-openmp-2-0-support?view=msvc-160)is not supported, and should be disabled.
+- [Managed C++](../build/reference/clr-common-language-runtime-compilation?view=msvc-160) is not supported, and should be disabled. 
+- [C++ AMP](../parallel/amp/cpp-amp-overview?view=msvc-160) is not supported, and should be disabled.
 - [Special Case List](https://clang.llvm.org/docs/SanitizerSpecialCaseList.html) files are not supported.
 
 ## STL enlightenment
 
-The MSVC standard library (STL) is not currently enlightened to understand the AddressSanitizer. ASan exceptions raised in STL code, while identifying true bugs, are not as precise as they could be.
+The MSVC standard library (STL) is not enlightened to understand the AddressSanitizer. ASan exceptions raised in STL code, while identifying true bugs, are not as precise as they could be.
 
-The following example demonstrates this. Compile with `cl -fsanitize=address /Zi`
+The following example demonstrates the lack of precision. Compile with `cl -fsanitize=address /Zi`
 
 ```cpp
 #include <vector>
@@ -50,15 +50,15 @@ int main() {
 
 ## Windows versions
 
-As there are deep tie-ins with specific Windows versions, support is focused on Windows 10. MSVC AddressSanitizer was tested this on 10.0.14393 (RS1), and 10.0.21323 (pre-release insider build). Please [report a bug](https://aka.ms/feedback/report?space=62) if you run into issues.
+As there are deep tie-ins with specific Windows versions, support is focused on Windows 10. MSVC AddressSanitizer was tested on 10.0.14393 (RS1), and 10.0.21323 (pre-release insider build). Please [report a bug](https://aka.ms/feedback/report?space=62) if you run into issues.
 
 ## Memory usage
 
-The AddressSanitizer runtime does not release memory back to the OS during execution. From the OS point of view it may look like memory is being leaked, but this is an intentional design decision to not allocate all the required memory up front. 
+The AddressSanitizer runtime does not release memory back to the OS during execution. From the OS point of view it may look like memory is being leaked. However, this is an intentional design decision to not allocate all the required memory up front. 
 
 ## clang_rt.asan*.dll files
 
-The clang_rt.asan*.dll runtime files are dropped next to the compilers in `%VSINSTALLDIR%\VC\Tools\MSVC\<version>\bin\<host-arch>\<target-arch>\`. These locations are on the path in debugging sessions, as well as from Visual Studio Developer Command Prompts. The files are _not_ dropped in `C:\Windows\System32` or `C:\Windows\SysWOW64`.
+The clang_rt.asan*.dll runtime files are dropped next to the compilers in `%VSINSTALLDIR%\VC\Tools\MSVC\<version>\bin\<host-arch>\<target-arch>\`. These locations are on the path in debugging sessions, and from Visual Studio Developer Command Prompts. The files are _not_ dropped in `C:\Windows\System32` or `C:\Windows\SysWOW64`.
 
 ## See also
 
