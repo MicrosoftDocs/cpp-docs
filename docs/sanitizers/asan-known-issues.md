@@ -50,7 +50,7 @@ int main() {
 
 ## Windows versions
 
- As there are deep tie-ins with specific Windows versions, our support is focused on Windows 10. MSVC AddressSanitizer was tested this on 10.0.14393 (RS1), and 10.0.21323 (pre-release insider build). Please [report a bugb](https://aka.ms/feedback/report?space=62) if you run into issues.
+ As there are deep tie-ins with specific Windows versions, our support is focused on Windows 10. MSVC AddressSanitizer was tested this on 10.0.14393 (RS1), and 10.0.21323 (pre-release insider build). Please [report a bug](https://aka.ms/feedback/report?space=62) if you run into issues.
 
 ## Memory usage
 
