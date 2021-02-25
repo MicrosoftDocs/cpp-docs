@@ -19,9 +19,9 @@ Crash dumps are created upon AddressSanitizer failures by setting the following 
 > [!NOTE]
 > File name must have a suffix ".dmp" for Visual Studio naming conventions.
 
-This [dump file](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/proc_snap/export-a-process-snapshot-to-a-file) can be displayed by using Visual Studio at a later date on another machine.
+This [dump file](/previous-versions/windows/desktop/proc_snap/export-a-process-snapshot-to-a-file) can be displayed by using Visual Studio at a later date on another machine.
 
-In order to display the error's information, within the context of the original source code, Visual Studio requires [debugging symbols](https://docs.microsoft.com/en-us/windows/win32/dxtecharts/debugging-with-symbols) and [indexing source code](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/source-indexing). For the best debugging experience the .exe, .pdb and source code used to produce those binaries must match. 
+In order to display the error's information, within the context of the original source code, Visual Studio requires [debugging symbols](/windows/win32/dxtecharts/debugging-with-symbols) and [indexing source code](/windows-hardware/drivers/debugger/source-indexing). For the best debugging experience the .exe, .pdb and source code used to produce those binaries must match. 
 
 See the [source and symbols](#Source-and-symbols) section below.
 For implementation details and fine grained control, see the [debugger integration](asan-debugger-integration.md).
@@ -30,23 +30,23 @@ For implementation details and fine grained control, see the [debugger integrati
 
 Consider three machines: A, B, and C. Build are done on machine B, tests are run on machine C and then you analyze failures on machine A. The errors are reported against source line and column numbers in your source code. The call stack is displayed with a set of symbols in the PDB file produced from that [exact version of source code](#Source-and-symbols).
 
-The following steps are for local or distributed scenarios that lead to creating a .dmp file and viewing that [AddressSanitizer dump file](#View-AddressSanitizer-.dmp-files), off-line.
+The following steps are for local or distributed scenarios that lead to creating a .dmp file and viewing that AddressSanitizer dump file offline.
 
-### Steps - locally produced .dmp
+### Produce a .dmp locally
 
 - Build
 - Test the (.exe, .pdb)
 - Copy .dmp file to the build directory
 - Open a .dmp file with the paired .pdb, in the same directory
 
-### Steps - distributed system producing a .dmp
+### Product a .dmp on a distributed system
 
-- Build and [post process the PDB](#Source-and-symbols) for [source indexing data blocks](https://docs.microsoft.com/en-us/windows/win32/debug/source-server-and-source-indexing)
+- Build and [post process the PDB](#Source-and-symbols) for [source indexing data blocks](/windows/win32/debug/source-server-and-source-indexing)
 - Copy the atomic pair of (.exe, .pdb) to the test machine and run tests
 - Write the atomic pairs of (.pdb, .dmp) to the bug-reporting database
 - Visual Studio opens a .dmp file with the paired .pdb, in the same directory
 
-Note: The VS2019 machine must have access to GitHub or the internal "\\\Machine\share" where your source "was indexed to".
+Note: The VS2019 machine must have access to GitHub or the internal `\\Machine\share` where your source was indexed to.
 
 ## View AddressSanitizer .dmp files
 
@@ -70,22 +70,20 @@ The following screenshot shows the final loaded dump file, with sources and Addr
 
 ## Source and symbols
 
-[Source server](https://docs.microsoft.com/en-us/windows/win32/debug/source-server-and-source-indexing) (see Data Block section) enables a client to retrieve the **exact version** of the source files that were used to build an application. Because the source code for an executable or DLL can change between versions and over a course of years, it is important to look at the source code as it existed when the version of the code was built.
+[Source server](/windows/win32/debug/source-server-and-source-indexing) (see Data Block section) enables a client to retrieve the **exact version** of the source files that were used to build an application. Because the source code for an executable or DLL can change between versions and over a course of years, it is important to look at the source code as it existed when the version of the code was built.
 
 While debugging an .EXE with the PDB, the debugger can use the embedded source server data block. It retrieves the appropriate files from source control that map to the fully qualified names that are automatically put in the PDB when compiling with /Zi.
 
-To use source server, the application must have been "source indexed": **using pdbstr.exe to write a srcsrv data block into your PDB**. See the Data Block section in [source server documentation](https://docs.microsoft.com/en-us/windows/win32/debug/source-server-and-source-indexing).
+To use source server, the application must have been "source indexed": **using pdbstr.exe to write a srcsrv data block into your PDB**. See the Data Block section in [source server documentation](/windows/win32/debug/source-server-and-source-indexing).
 
-- See [the steps indexing sources and publishing symbols](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=azure-devops)
+- See [the steps indexing sources and publishing symbols](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=azure-devops)
 
-- See [how to specify symbols and source code for the debugger IDE will to open  your crash dump from the AddressSanitizer](https://docs.microsoft.com/en-us/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger?view=vs-2019)
+- See [how to specify symbols and source code for the debugger IDE will to open  your crash dump from the AddressSanitizer](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger?view=vs-2019)
 
 For external documentation, see:
 
 - [Source indexing with Git](https://gist.github.com/baldurk/c6feb31b0305125c6d1a)
-
 - [A guide to easier debugging](https://www.codeproject.com/articles/115125/source-indexing-and-symbol-servers-a-guide-to-easi)
-
 - [Source Indexing is Underused Awesomeness](https://randomascii.wordpress.com/2011/11/11/source-indexing-is-underused-awesomeness/)
 
 ## See also
