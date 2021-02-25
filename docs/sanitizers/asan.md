@@ -118,11 +118,11 @@ AddressSanitizer is integrated with the Visual Studio IDE. You can turn on the A
 
 ![asan-project-system](MEDIA/asan-project-system.PNG)
 
-To build from the IDE, opt out of [these incompatible flags](./asan-known-issues.md). For an existing project that is compiled /Od (or Debug Mode), this could mean the following:
+To build from the IDE, opt out of [these incompatible flags](./asan-known-issues.md#Incompatible-switches-and-functionality). For an existing project that is compiled /Od (or Debug Mode), this could mean the following:
 
-- Turn off [edit and continue](/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue?view=vs-2019)
-- Turn off [runtime checks](../build/reference/rtc-run-time-error-checks?view=msvc-160)
-- Turn off [incremental linking](../build/reference/incremental-link-incrementally?view=msvc-160)
+- Turn off [edit and continue](/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue)
+- Turn off [runtime checks](../build/reference/rtc-run-time-error-checks.md)
+- Turn off [incremental linking](../build/reference/incremental-link-incrementally.md)
 
 To build and run the debugger, **hit F5**. The following VS window will result:
 
@@ -130,7 +130,7 @@ To build and run the debugger, **hit F5**. The following VS window will result:
 
 ## Using the AddressSanitizer from Visual Studio: CMake
 
-To enable the AddressSanitizer for [a CMake project created to target Windows](../build/cmake-projects-in-visual-studio?view=msvc-160), take the following steps:
+To enable the AddressSanitizer for [a CMake project created to target Windows](../build/cmake-projects-in-visual-studio.md), take the following steps:
 
 Open the Configurations dropdown at the top of the IDE and click on Manage Configurations.
 
