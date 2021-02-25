@@ -146,11 +146,11 @@ The following image is of CMakeSettings.json after that change:
 
 ![cmake-jason](MEDIA/asan-cmake-jason.PNG)
 
-Save this JSON file with `ctrl-s` then `hit F5`to recompile and run under the debugger.
+Save this JSON file with `ctrl-s` then `hit F5` to recompile and run under the debugger.
 
 The following screenshot captures the error from the CMake build.
 
-![cmake-F5-runt](MEDIA/asan-cmake-F5-error.PNG)
+![cmake-F5-runt](MEDIA/asan-cmake-f5-error.PNG)
 
 ## AddressSanitizer crash dumps
 
