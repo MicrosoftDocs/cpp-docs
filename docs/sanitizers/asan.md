@@ -51,15 +51,14 @@ Start building your executables with the `-fsanitize=address` compiler switch us
 - Visual Studio project system
 - Visual Studio CMake integration
 
- Recompile, then run your program normally. This code generation will light up [many types of precisely diagnosed bugs](#errors). These errors can be reported in three ways: in the debugger IDE, on the command line or stored in a [new type of dump file](#AddressSanitizer-crash-dumps) for precise off-line processing.
+ Recompile, then run your program normally. This code generation will light up [many types of precisely diagnosed bugs](#error-types). These errors can be reported in three ways: in the debugger IDE, on the command line or stored in a [new type of dump file](#AddressSanitizer-crash-dumps) for precise off-line processing.
 
 Microsoft recommends using the AddressSanitizer in these **three standard workflows**:
 
 - **Developer inner loop**
-  - Visual Studio - debugger IDE
   - Visual Studio - [Command line](#Using-the-AddressSanitizer-from-a-Developer-Command-Prompt)
   - Visual Studio - [Project system](#Using-the-AddressSanitizer-from-Visual-Studio)
-  - Visual Studio - [CMake]([CMake](#Using-the-AddressSanitizer-from-Visual-Studio:-CMake))
+  - Visual Studio - [CMake](#Using-the-AddressSanitizer-from-Visual-Studio:-CMake)
 
 - **CI/CD** - continuous integration / continuous development
   - Error reporting - [New AddressSanitizer dump files](#AddressSanitizer-crash-dumps)
