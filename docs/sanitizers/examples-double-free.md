@@ -8,7 +8,7 @@ help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examp
 
 # Double free
 
-In `C`, you can call `free()` erroneously. In `C++`, you can call delete more than once. In the following examples, we show errors with `delete`, `free()` and `HeapCreate()`. Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+In `C`, you can call `free()` erroneously. In `C++`, you can call `delete` more than once. In the following examples, we show errors with `delete`, `free()` and `HeapCreate()`. Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example C++ - double operator delete
 
@@ -56,7 +56,6 @@ int main(int argc, char **argv) {
   free(x + argc - 1);  // Boom!
   return res;
 }
-
 
 ```
 

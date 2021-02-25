@@ -8,13 +8,11 @@ help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examp
 
 # Global buffer overflow
 
-The compiler generates metadata for any variable in the `.data` or `.bss` sections. These variables have language scope globals or file statics that are allocated in memory before main() starts. Global variables in `C` are treated much differently than `C++`. This difference is because of the complex rules for linking.  
+The compiler generates metadata for any variable in the `.data` or `.bss` sections. These variables have language scope of global or file static. They are allocated in memory before main() starts. Global variables in `C` are treated much differently than `C++`. This difference is because of the complex rules for linking.  
 
 In `C`, a global variable can be declared in several source files and each definition can have different types. The compiler can't see all the possible definitions. The linker will see all the different definitions. The linker defaults to selecting the largest size of all the different declarations.
 
 In `C++`, a global is allocated by the compiler. There can only be one definition so the size of each definition is known at compile time.
-
-Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example - globals in 'C' with multiple type definitions
 
@@ -53,6 +51,8 @@ From a **Developer Command Prompt**:
 
 ## Example - simple function level static
 
+Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+
 ```cpp
 #include <string.h>
 
@@ -84,6 +84,8 @@ From a **Developer Command Prompt**:
 ![example2](SRC_CODE/global-overflow/example2.PNG)
 
 ## Example - all global scopes in C++
+
+Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ```cpp
 // Run 4 different ways with the choice of one of these flags:
