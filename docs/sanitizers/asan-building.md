@@ -62,11 +62,11 @@ void test3() {
 
 ### `-fsanitize=address`
 
-Enable compiler instrumentation of memory references to catch memory safety errors at runtime. Loads, stores, scopes, alloca, and CRT functions are hooked to detect hidden bugs like out-of-bounds, use-after-free, use-after-scope etc. See [Error types](asan-top-level.md#Error-types) for a complete list of errors currently detected at runtime.
+Enable compiler instrumentation of memory references to catch memory safety errors at runtime. Loads, stores, scopes, alloca, and CRT functions are hooked to detect hidden bugs like out-of-bounds, use-after-free, use-after-scope etc. See [Error types](./asan.md#error-types) for a list of errors detected at runtime.
 
 `-fsanitize=address` is compatible with all existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, `/O2 /GL`, and `PGO`).The code produced with this flag, works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). This compiler flag can be used to create an .EXE or .DLL targeting x86 or x64. Debug information is required for optimal formatting of call stacks.
 
-See[the examples](asan-top-level.md#Error-types) for sample usage.
+See [the examples](asan.md#error-types) for sample usage.
 
 ### `-fsanitize-address-use-after-return` (experimental)
 
