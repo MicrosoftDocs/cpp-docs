@@ -38,7 +38,7 @@ int main() {
 
 ### `__declspec(no_sanitize_address)`
 
-`__declspec(no_sanitize_address)` can be used to selectively disable the sanitizer on functions, local variables, or global variables. This `__declspec` disabled _compiler_ behavior, not _runtime_ behavior.
+`__declspec(no_sanitize_address)` can be used to selectively disable the sanitizer on functions, local variables, or global variables. This `__declspec` disables _compiler_ behavior, not _runtime_ behavior.
 
 ```cpp
 __declspec(no_sanitize_address)

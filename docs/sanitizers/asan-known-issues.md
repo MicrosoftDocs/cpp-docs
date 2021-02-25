@@ -25,7 +25,7 @@ The following switches and functionality are not currently compatible with `-fsa
 
 ## STL enlightenment
 
-The MSVC standard library (STL) is not currently enlightened to understand the AddressSanitizer, so ASan exceptions raised in STL code, while identifying true bugs, are not as precise as they could be.
+The MSVC standard library (STL) is not currently enlightened to understand the AddressSanitizer. ASan exceptions raised in STL code, while identifying true bugs, are not as precise as they could be.
 
 The following example demonstrates this. Compile with `cl -fsanitize=address /Zi`
 
@@ -50,7 +50,7 @@ int main() {
 
 ## Windows versions
 
- As there are deep tie-ins with specific Windows versions, our support is focused on Windows 10. MSVC AddressSanitizer was tested this on 10.0.14393 (RS1), and 10.0.21323 (pre-release insider build). Please [report a bug](https://aka.ms/feedback/report?space=62) if you run into issues.
+As there are deep tie-ins with specific Windows versions, support is focused on Windows 10. MSVC AddressSanitizer was tested this on 10.0.14393 (RS1), and 10.0.21323 (pre-release insider build). Please [report a bug](https://aka.ms/feedback/report?space=62) if you run into issues.
 
 ## Memory usage
 

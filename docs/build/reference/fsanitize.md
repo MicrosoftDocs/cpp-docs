@@ -12,22 +12,28 @@ Use the **/fsanitize** compiler options to enable sanitizers. As of Visual Studi
 
 ## Syntax
 
-> **/fsanitize=address**<em>
+> **/fsanitize=address**\
+> **/fsanitize-address-use-after-return**\
+> **/fno-sanitize-address-vcasan-lib**\
+> **/INFERASANLIBS[:no]**
 
 ## Remarks
 
-!!! THIS ISN'T DONE YET.
-The **/constexpr** compiler options control compile-time evaluation of **`constexpr`** expressions. Evaluation steps, recursion levels, and backtrace depth are controlled to prevent the compiler from spending too much time on **`constexpr`** evaluation. For more information on the **`constexpr`** language element, see [constexpr (C++)](../../cpp/constexpr-cpp.md).
+The **/fsanitize=address** compiler option enables [AddressSanitizer](../../sanitizers/asan.md), a powerful compiler and runtime technology to light up [hard-to-find bugs](../../sanitizers/asan.md#error-types). 
 
-The **/constexpr** options are available beginning in Visual Studio 2015.
+The **/fsanitize-address-use-after-return** and **/fno-sanitize-address-vcasan-lib** compiler options, and the **/INFERASANLIBS[:no]** linker option offers support for advanced users. See [AddressSanitizer Build and Language Reference](../../sanitizers/asan-building.md) for more details.
 
-### To set this compiler option in the Visual Studio development environment
+The options are available beginning in Visual Studio 2019 16.9.
+
+### To set the **/fsanitize=address** compiler option in the Visual Studio development environment
 
 1. Open your project's **Property Pages** dialog box.
 
-2. Under **Configuration Properties**, expand the **C/C++** folder and choose the **Command Line** property page.
+2. Under **Configuration Properties**, expand the **C/C++** folder, expand the **General** folder, and in the **Enable Address Sanitizer** box choose **Yes (/fsanitize=address)**.
 
-3. Enter any **/constexpr** compiler options in the **Additional Options** box. Choose **OK** or **Apply** to save your changes.
+3. Choose **OK** or **Apply** to save your changes.
+
+The advanced compiler and linker options are set additional **Additional Options** boxes under the respective dropdowns.
 
 ### To set this compiler option programmatically
 
@@ -36,4 +42,7 @@ The **/constexpr** options are available beginning in Visual Studio 2015.
 ## See also
 
 [MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)
+[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
+[AddressSanitizer Overview](../../sanitizers/asan.md)<br/>
+[AddressSanitizer Known Issues](../../sanitizers/asan-known-issues.md)<br/>
+[AddressSanitizer Build and Language Reference](../../sanitizers/asan-building.md)
