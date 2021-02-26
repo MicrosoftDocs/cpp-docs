@@ -1,23 +1,23 @@
 ---
-title: "Memcpy() parameter overlap."
-description: "Source examples and live debug screen shots for Memcpy() parameter overlap errors."
+title: "memcpy parameter overlap."
+description: "Source examples and live debug screenshots for memcpy parameter overlap errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","Memcpy() parameter overlap", "ASan examples"]
-help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","Memcpy() parameter overlap"]
+f1_keywords: ["memcpy-parameter-overlap"]
+helpviewer_keywords: ["memcpy parameter overlap"]
 ---
 
-# Memcpy() parameter overlap
+# `memcpy` parameter overlap
 
-The CRT function [memcpy](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memcpy-wmemcpy?view=msvc-160) **does not** support overlapping memory. The CRT provides an alternative to memcpy() that does support overlapping memory: [memmove](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/memmove-wmemmove?view=msvc-160).
+The CRT function [`memcpy`](../c-runtime-library/reference/memcpy-wmemcpy.md) **doesn't support** overlapping memory. The CRT provides an alternative to `memcpy` that does support overlapping memory: [`memmove`](../c-runtime-library/reference/memmove-wmemmove.md).
 
-A common error is to treat `memmove()` as being semantically equivalent to `memcpy()`.
+A common error is to treat `memmove` as being semantically equivalent to `memcpy`.
 
-Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example
 
 ```cpp
-
+// example1.cpp
 #include <string.h>
 
 __declspec(noinline) void bad_function() {
@@ -30,13 +30,13 @@ int main(int argc, char **argv) {
     bad_function();
     return 0;
 }
-
 ```
 
-From a **Developer Command Prompt**:
-```
- cl example1.cpp /fsanitize=address /Zi
- devenv /debugexe example1.exe
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl example1.cpp /fsanitize=address /Zi
+devenv /debugexe example1.exe
 ```
 
 ## Resulting error

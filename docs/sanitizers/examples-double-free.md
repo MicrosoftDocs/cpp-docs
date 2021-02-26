@@ -1,36 +1,36 @@
 ---
-title: "Double free error."
-description: "Source examples and live debug screen shots for double free errors."
+title: "Double free error"
+description: "Source examples and live debug screenshots for double free errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","double free", "ASan examples"]
-help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","double free"]
+f1_keywords: ["double-free"]
+helpviewer_keywords: ["double free"]
 ---
 
-# Double free
+# Double free error
 
-In `C`, you can call `free()` erroneously. In `C++`, you can call `delete` more than once. In the following examples, we show errors with `delete`, `free()` and `HeapCreate()`. Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+In `C`, you can call `free` erroneously. In `C++`, you can call `delete` more than once. In these examples, we show errors with `delete`, `free`, and `HeapCreate`. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example C++ - double operator delete
 
 ```cpp
-
+// example1.cpp
 int main() {
 
-  int *x = new int[42];
-  delete [] x;
+    int *x = new int[42];
+    delete [] x;
 
-  // ... some complex body of code
+    // ... some complex body of code
 
-  delete [] x;
-  return 0;
+    delete [] x;
+    return 0;
 }
-
 ```
 
-From a **Developer Command Prompt**:
-```
- cl example1.cpp /fsanitize=address /Zi
- devenv /debugexe example1.exe
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl example1.cpp /fsanitize=address /Zi
+devenv /debugexe example1.exe
 ```
 
 ## Resulting error - double operator delete
@@ -40,29 +40,29 @@ From a **Developer Command Prompt**:
 ## Example 'C' - double fre()
 
 ```cpp
-
+// example2.cpp
 #include <stdlib.h>
 #include <string.h>
 
-int main(int argc, char **argv) {
+int main(int argc, char** argv) {
 
-  char *x = (char*)malloc(10 * sizeof(char));
-  memset(x, 0, 10);
-  int res = x[argc];
-  free(x);
+    char* x = (char*)malloc(10 * sizeof(char));
+    memset(x, 0, 10);
+    int res = x[argc];
+    free(x);
 
-  // ... some complex body of code
+    // ... some complex body of code
 
-  free(x + argc - 1);  // Boom!
-  return res;
+    free(x + argc - 1);  // Boom!
+    return res;
 }
-
 ```
 
-From a **Developer Command Prompt**:
-```
- cl example2.cpp /fsanitize=address /Zi
- devenv /debugexe example2.exe
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl example2.cpp /fsanitize=address /Zi
+devenv /debugexe example2.exe
 ```
 
 ## Resulting error - double free()
@@ -72,9 +72,9 @@ From a **Developer Command Prompt**:
 ## Example - Windows HeapCreate() double free
 
 ```cpp
+// example3.cpp
 #include <Windows.h>
 #include <stdio.h>
-
 
 int main() {
     void* newHeap = HeapCreate(0, 0, 0);
@@ -87,10 +87,11 @@ int main() {
 }
 ```
 
-From a **Developer Command Prompt**:
-```
- cl example3.cpp /fsanitize=address /Zi
- devenv /debugexe example3.exe
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl example3.cpp /fsanitize=address /Zi
+devenv /debugexe example3.exe
 ```
 
 ## Resulting error - Windows HeapCreate() double free

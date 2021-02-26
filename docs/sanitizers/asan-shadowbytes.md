@@ -1,15 +1,14 @@
 ---
 title: "AddressSanitizer Shadow Bytes"
-description: "Technical description of shadow bytes written and read by compiler's generate code and AddressSanitizer runtime."
+description: "Technical description of shadow bytes written and read by the compiler-generated code and AddressSanitizer runtime."
 ms.date: 02/05/2021
-f1_keywords: ["Shadow Bytes","AddressSanitizer","Address Sanitizer", "ASan Code Gen", "ASan compiler", "ASan Runtime"]
-help viewer_keywords: ["Shadow Bytes","AddressSanitizer","Address Sanitizer", "ASan Code Gen", "ASan compiler", "ASan Runtime"]
+helpviewer_keywords: ["Shadow bytes", "AddressSanitizer shadow bytes","Address Sanitizer shadow bytes", "ASan shadow bytes"]
 ---
 
 # AddressSanitizer Shadow Bytes
 
-We briefly summarize the concept of shadow bytes and how they can be used by the runtime implementation of `-fsanitize=address`. For further details, we refer you to the [seminal paper](
-https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) and the AddressSanitizer [algorithm](https://github.com/google/sanitizers/wiki/AddressSanitizerAlgorithm).
+We briefly summarize the concept of shadow bytes and how they can be used by the runtime implementation of [`/fsanitize=address`](../build/reference/fsanitize.md). For further details, we refer you to the [seminal paper](
+https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) and the [AddressSanitizer algorithm](https://github.com/google/sanitizers/wiki/AddressSanitizerAlgorithm).
 
 ## Core concept
 
@@ -29,7 +28,7 @@ Consider this shadow byte legend where all negative numbers are defined:
 
 ## Mapping - describing your address space
 
-Every 8 bytes in the application's virtual address space that is "0-mod-8" aligned, can be mapped to the shadow byte that describes that slot in the virtual address space.  This mapping can be accomplished with a **simple shift and add**.
+Every 8 bytes in the application's virtual address space that's "0-mod-8" aligned can be mapped to the shadow byte that describes that slot in the virtual address space.  This mapping can be accomplished with a **simple shift and add**.
 
 On x86:
 
@@ -45,7 +44,7 @@ char shadow_byte_value = *((Your_Address >> 3) + _asan_runtime_assigned_offset)
 
 ## Code generation - tests
 
-If you consider that specific shadow bytes will have been written, either by the compiler-generated code, static data, or the runtime.  Then the following pseudo code shows how it would be simple to generate a check that would precede any load or store.
+Consider how specific shadow bytes might get written, either by the compiler-generated code, static data, or the runtime. This pseudo-code shows how it's possible to generate a check that precedes any load or store:
 
 ```cpp
 ShadowAddr = (Addr >> 3) + Offset;
@@ -54,7 +53,7 @@ if (*ShadowAddr != 0) {
 }
 ```
 
-When instrumenting a memory reference that is less than 8 bytes wide, the instrumentation is slightly more complex. If the shadow value is positive (meaning only the first k bytes in the 8 byte word can be accessed) we need to compare the 3 last bits of the address with k.
+When instrumenting a memory reference that's less than 8 bytes wide, the instrumentation is slightly more complex. If the shadow value is positive (meaning only the first k bytes in the 8-byte word can be accessed), we need to compare the last 3 bits of the address with k.
 
 ```cpp
 ShadowAddr = (Addr >> 3) + Offset;
@@ -64,13 +63,13 @@ if (k != 0 && ((Addr & 7) + AccessSize > k)) {
 }
 ```
 
-The runtime and the compiler-generated code, will write shadow bytes. Writing shadow-bytes will allow or revoke access when scopes end or storage is freed. The checks above, are reading shadow bytes that describe 8-byte "slots" in your application's address space, **at a certain time in the programs execution**.
+The runtime and the compiler-generated code both write shadow bytes. These shadow bytes either allow or revoke access when scopes end or storage is freed. The checks above read shadow bytes that describe 8-byte "slots" in your application's address space, at a certain time in the program's execution. Besides these explicitly generated checks, the runtime also checks shadow bytes after it intercepts (or "hooks") many functions in the CRT.
 
-In addition to these explicitly generated checks, the runtime will check shadow bytes after it "intercepts or hooks" many functions in the CRT.  See [the list of intercepted functions](./asan-runtime.md#default-interceptors)
+For more information, see the list of [intercepted functions](./asan-runtime.md#default-interceptors).
 
 ## Setting shadow bytes
 
-Both the code the compiler generates and the AddressSanitizer runtime can write shadow bytes. For example, the compiler can set shadow bytes to allow fixed sized access to stack locals defined in an inner scope.  The runtime can surround global variables in the data section with shadow bytes.
+Both the code the compiler generates and the AddressSanitizer runtime can write shadow bytes. For example, the compiler can set shadow bytes to allow fixed sized access to stack locals defined in an inner scope. The runtime can surround global variables in the data section with shadow bytes.
 
 ## See also
 
@@ -81,5 +80,3 @@ Both the code the compiler generates and the AddressSanitizer runtime can write 
 - [AddressSanitizer Shadow Bytes](./asan-shadowbytes.md)
 - [AddressSanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
 - [AddressSanitizer Debugger Integration](./asan-debugger-integration.md)
-
-> [!NOTE] Send us [feedback](https://aka.ms/vsfeedback/browsecpp) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.

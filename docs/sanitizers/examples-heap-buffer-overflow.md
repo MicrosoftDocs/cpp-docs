@@ -1,18 +1,19 @@
 ---
 title: "Heap buffer overflow."
-description: "Source examples and live debug screen shots for heap variable overflow errors."
+description: "Source examples and live debug screenshots for heap variable overflow errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","heap-buffer-overflow", "ASan examples"]
-help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","heap-buffer-overflow"]
+f1_keywords: ["heap-buffer-overflow"]
+helpviewer_keywords: ["heap-buffer-overflow"]
 ---
 
 # Heap buffer overflow
 
-Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+This example demonstrates the error that results when a memory access occurs outside the bounds of a heap-allocated object. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example - classic heap buffer overflow
 
 ```cpp
+// example1.cpp
 #include <stdlib.h>
 #include <string.h>
 
@@ -25,13 +26,13 @@ int main(int argc, char **argv) {
     free(x);
     return res;
 }
-
 ```
 
-From a **Developer Command Prompt**:
-```
- cl example1.cpp /fsanitize=address /Zi
- devenv /debugexe example1.exe
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl example1.cpp /fsanitize=address /Zi
+devenv /debugexe example1.exe
 ```
 
 ## Resulting error
@@ -41,30 +42,32 @@ From a **Developer Command Prompt**:
 ## Example - improper down cast
 
 ```cpp
+// example2.cpp
+
 class Parent {
- public:
-  int field;
+public:
+    int field;
 };
 
 class Child : public Parent {
- public:
-  int extra_field;
+public:
+    int extra_field;
 };
 
 int main(void) {
-  Parent *p = new Parent;
-  Child *c = (Child*)p;  // Intentional error here!
-  c->extra_field = 42;
+    Parent *p = new Parent;
+    Child *c = (Child*)p;  // Intentional error here!
+    c->extra_field = 42;
 
-  return 0;
+    return 0;
 }
-
 ```
 
-From a **Developer Command Prompt**:
-```
- cl example2.cpp /fsanitize=address /Zi
- devenv /debugexe example2.exe
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl example2.cpp /fsanitize=address /Zi
+devenv /debugexe example2.exe
 ```
 
 ## Resulting error - improper down cast
@@ -74,6 +77,7 @@ From a **Developer Command Prompt**:
 ## Example - strncpy into heap
 
 ```cpp
+// example3.cpp
 #include <string.h>
 #include <stdlib.h>
 
@@ -87,13 +91,13 @@ int main(int argc, char **argv) {
 
     return short_buffer[8];
 }
-
 ```
 
-From a **Developer Command Prompt**:
-```
- cl example3.cpp /fsanitize=address /Zi
- devenv /debugexe example3.exe
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl example3.cpp /fsanitize=address /Zi
+devenv /debugexe example3.exe
 ```
 
 ## Resulting error - strncpy into heap

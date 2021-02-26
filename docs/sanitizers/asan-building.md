@@ -1,14 +1,13 @@
 ---
-title: "AddressSanitizer Language, Build, and Debugging Reference"
+title: "AddressSanitizer language, build, and debugging reference"
 description: "Technical description of building for the AddressSanitizer"
 ms.date: 02/15/2021
-f1_keywords: ["ASan","sanitizers","AddressSanitizer","Address Sanitizer", "-fsanitize=address", "compile", "link", "Asan-integration"]
-helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","Address Sanitizer","Address-Sanitizer", "compile", VS-integrations"]
+f1_keywords: ["__SANITIZE_ADDRESS__", "ASAN_VCASAN_DEBUGGING"]
+helpviewer_keywords: ["ASan reference", "AddressSanitizer reference", "Address Sanitizer reference"]
 ---
+# AddressSanitizer language, build, and debugging reference
 
-# AddressSanitizer Language, Build, and Debugging Reference
-
-This section describes the language specification, compiler flags, and linker flags. It also describes the options controlling Visual Studio debugger integration specific to the AddressSanitizer.
+The sections in this article describe the AddressSanitizer language specification, compiler options, and linker options. They also describe the options that control Visual Studio debugger integration specific to the AddressSanitizer.
 
 - [Language specification](#Language-specification)
 - [Compiler](#Compiler)
@@ -21,16 +20,16 @@ For more information on the AddressSanitizer runtime, intercepted functions, and
 
 ### `__SANITIZE_ADDRESS__`
 
-Useful for advanced users when conditionalizing source code for the presence of the AddressSanitizer runtime, the `__SANITIZE_ADDRESS__` macro is defined to `1` when `-fsanitize=address` is set.
+The `__SANITIZE_ADDRESS__` preprocessor macro is defined as `1` when [`/fsanitize=address`](../build/reference/fsanitize.md) is set. This macro is useful for advanced users to conditionally specify source code for the presence of the AddressSanitizer runtime.
 
 ```cpp
 #include <cstdio>
 
 int main() {
     #ifdef __SANITIZE_ADDRESS__
-        printf("Address santizier enabled");
+        printf("Address sanitizer enabled");
     #else
-        printf("Address santizier not enabled");
+        printf("Address sanitizer not enabled");
     #endif
     return 1;
 }
@@ -38,7 +37,7 @@ int main() {
 
 ### `__declspec(no_sanitize_address)`
 
-`__declspec(no_sanitize_address)` can be used to selectively disable the sanitizer on functions, local variables, or global variables. This `__declspec` disables _compiler_ behavior, not _runtime_ behavior.
+The [`__declspec(no_sanitize_address)`](../cpp/no_sanitize_address.md) specifier can be used to selectively disable the sanitizer on functions, local variables, or global variables. This `__declspec` disables _compiler_ behavior, not _runtime_ behavior.
 
 ```cpp
 __declspec(no_sanitize_address)
@@ -60,28 +59,28 @@ void test3() {
 
 ## Compiler
 
-### `-fsanitize=address`
+### `/fsanitize=address`
 
-Enable compiler instrumentation of memory references to catch memory safety errors at runtime. Loads, stores, scopes, alloca, and CRT functions are hooked to detect hidden bugs like out-of-bounds, use-after-free, use-after-scope etc. See [Error types](./asan.md#error-types) for a list of errors detected at runtime.
+The [`/fsanitize=address`](../build/reference/fsanitize.md) compiler option instruments memory references in your code to catch memory safety errors at runtime. The instrumentation hooks loads, stores, scopes, alloca, and CRT functions. It can detect hidden bugs such as out-of-bounds, use-after-free, use-after-scope, and so on. For a list of errors detected at runtime, see [Error types](./asan.md#error-types).
 
-`-fsanitize=address` is compatible with all existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, `/O2 /GL`, and `PGO`).The code produced with this flag, works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). This compiler flag can be used to create an .EXE or .DLL targeting x86 or x64. Debug information is required for optimal formatting of call stacks.
+**`/fsanitize=address`** is compatible with all existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, `/O2 /GL`, and `PGO`). The code produced with this option works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). This compiler option can be used to create an .EXE or .DLL targeting x86 or x64. Debug information is required for optimal formatting of call stacks.
 
 See [the examples](asan.md#error-types) for sample usage.
 
-### `-fsanitize-address-use-after-return` (experimental)
+### `/fsanitize-address-use-after-return` (experimental)
 
-The MSVC compiler (unlike Clang), will not default to generating code to allocating frames in the heap to catch use-after-return errors. To catch these errors with AddressSanitizer, you must:
+By default, the MSVC compiler (unlike Clang) doesn't generate code to allocate frames in the heap to catch use-after-return errors. To catch these errors using AddressSanitizer, you must:
 
-1. Compile with `-fsanitize-address-use-after-return`
-2. Before executing your program, set `set ASAN_OPTIONS=detect_stack_use_after_return=1`
+1. Compile using the [`/fsanitize-address-use-after-return`](../build/reference/fsanitize.md) option.
+2. Before executing your program, run `set ASAN_OPTIONS=detect_stack_use_after_return=1` to set the runtime check option.
 
-The `-fsanitize-address-use-after-return` flag will cause the compiler to generate code to use a dual stack frame in the heap when locals are considered "address taken". This code is **much slower** than just using `-fsanitize=address` alone.
+The **`/fsanitize-address-use-after-return`** option causes the compiler to generate code to use a dual stack frame in the heap when locals are considered "address taken". This code is **much slower** than just using **`/fsanitize=address`** alone.
 
 See the [Stack Use After Return example](examples-stack-use-after-return.md) for sample usage.
 
-The dual stack frame in the heap will linger after the return from the function that created it. Consider an example where the address of a local, allocated to a slot in the heap is used after the return. The shadow bytes associated with the fake heap frame will contain the value 0xf9. That 0xF9 means a stack-use-after-return error when the runtime reports the error.
+The dual stack frame in the heap remains after the return from the function that created it. Consider an example where the address of a local, allocated to a slot in the heap, is used after the return. The shadow bytes associated with the fake heap frame contain the value 0xf9. That 0xF9 means a stack-use-after-return error when the runtime reports the error.
 
-Stack frames are allocated in the heap and linger after function return. The runtime uses garbage collection to asynchronously free these fake call-frame objects, after a certain time interval. By transferring the address of locals to frames that persists in the heap, the system can detect the use of any locals, after the defining function returns.
+Stack frames are allocated in the heap and remain after functions return. The runtime uses garbage collection to asynchronously free these fake call-frame objects, after a certain time interval. By transferring addresses of locals to persistent frames in the heap, the system can detect when any locals get used after the defining function returns.
 
 See the [algorithm for stack use after return](https://github.com/google/sanitizers/wiki/AddressSanitizerUseAfterReturn) as documented by Google.
 
@@ -89,9 +88,9 @@ See the [algorithm for stack use after return](https://github.com/google/sanitiz
 
 ### `-INFERASANLIBS[:no]`
 
-The `-fsanitize=address` switch links in libraries that begin with `clang_rt.asan*` into your final executable. The libraries chosen and automatically linked in are as follows.
+The **`/fsanitize=address`** option links in libraries that begin with `clang_rt.asan*` into your final executable. The libraries chosen and automatically linked in are as follows.
 
-| CRT Flag | DLL or EXE | DEBUG? | AddressSanitizer Runtime Libraries                                                             |
+| CRT option | DLL or EXE | DEBUG? | AddressSanitizer runtime libraries                                               |
 |----------|------------|--------|------------------------------------------------------------------------------------|
 | MT       | EXE        | NO     | `clang_rt.asan-{arch}, clang_rt.asan_cxx-{arch}`                                   |
 | MT       | DLL        | NO     | `clang_rt.asan_dll_thunk-{arch}`                                                   |
@@ -100,37 +99,37 @@ The `-fsanitize=address` switch links in libraries that begin with `clang_rt.asa
 | MT       | DLL        | YES    | `clang_rt.asan_dbg_dll_thunk-{arch}`                                               |
 | MD       | EITHER     | YES    | `clang_rt.asan_dbg_dynamic-{arch}, clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}` |
 
-The linker switch `-INFERASANLIBS:NO` will prevent the linker from choosing the right `clang_rt.asan*` lib file. You will be required to add the lib path in your build scripts should you choose to use this switch.
+The linker option `/INFERASANLIBS:NO` prevents the linker from linking the `clang_rt.asan*` library file from the default location. Add the library path in your build scripts if you use this option.
 
 ## Visual Studio integration
 
-### `-fno-sanitize-address-vcasan-lib`
+### `/fno-sanitize-address-vcasan-lib`
 
-The `-fsanitize=address` switch links in extra capabilities to yield an improved Visual Studio debugging experience when an AddressSanitizer exception is thrown. These libraries are called **VCAsan**. These libraries enable Visual Studio to display AddressSanitizer errors on your source code. These libraries also enable the executable to generate crash dumps when an AddressSanitizer error report is created.
+The **`/fsanitize=address`** option links in extra capabilities to yield an improved Visual Studio debugging experience when an AddressSanitizer exception is thrown. These libraries are called **VCAsan**. These libraries enable Visual Studio to display AddressSanitizer errors on your source code. These libraries also enable the executable to generate crash dumps when an AddressSanitizer error report is created.
 
-The library chosen depends on the compilation flags, and is automatically linked in as follows.
+The library chosen depends on the compilation options, and is automatically linked in as follows.
 
-| Runtime Flag | VCAsan Version |
+| Runtime option | VCAsan Version |
 |--------------|----------------|
-| `/MT`        | libvcasan.lib  |
-| `/MD`        | vcasan.lib     |
-| `/MTd`       | libvcasand.lib |
-| `/MDd`       | vcasand.lib    |
+| **`/MT`**        | *`libvcasan.lib`*  |
+| **`/MD`**        | *`vcasan.lib`*     |
+| **`/MTd`**       | *`libvcasand.lib`* |
+| **`/MDd`**       | *`vcasand.lib`*    |
 
-However, if you compile with "Omit Default Library Name" (Zl), you'll need to manually specify the lib. If you don't, you'll get a link failure, one of:
+However, if you compile using **`/Zl`** (Omit default library name), you'll need to manually specify the library. If you don't, you'll get a link failure; one of:
 
-```
+```Output
 error LNK2001: unresolved external symbol __you_must_link_with_VCAsan_lib
 error LNK2001: unresolved external symbol ___you_must_link_with_VCAsan_lib
 ```
 
-The improved debugging can be disabled at compile time using the `-fno-sanitize-address-vcasan-lib` flag.
+The improved debugging can be disabled at compile time using the **`/fno-sanitize-address-vcasan-lib`** option.
 
 ### `ASAN_VCASAN_DEBUGGING`
 
-The `-fsanitize=address` compiler switch produces a binary that will expose memory safety bugs at a runtime. When the binary is started from the command line, and the runtime reports an error, it prints the error details. It then and exits the process. The `ASAN_VCASAN_DEBUGGING` environment variable can be set to trigger the Visual Studio IDE to be launched immediately when the runtime starts to report an error. This compiler flag enables viewing the error, super imposed over your source code, at the precise line and column where the error was caused.
+The **`/fsanitize=address`** compiler option produces a binary that exposes memory safety bugs at runtime. When the binary is started from the command line, and the runtime reports an error, it prints the error details. It then and exits the process. The `ASAN_VCASAN_DEBUGGING` environment variable can be set to launch the Visual Studio IDE immediately when the runtime reports an error. This compiler option lets you view the error, superimposed over your source code, at the precise line and column that caused the error.
 
-`set ASAN_VCASAN_DEBUGGING=1` prior to running your binary to achieve this behavior. You can also disable the enhanced debugging experience by setting `set ASAN_VISAS_DEBUGGING=0`
+To enable this behavior, run the command `set ASAN_VCASAN_DEBUGGING=1` before you run your application. You can disable the enhanced debugging experience by running `set ASAN_VISAS_DEBUGGING=0`.
 
 ## See also
 
@@ -141,5 +140,3 @@ The `-fsanitize=address` compiler switch produces a binary that will expose memo
 - [AddressSanitizer Shadow Bytes](./asan-shadowbytes.md)
 - [AddressSanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
 - [AddressSanitizer Debugger Integration](./asan-debugger-integration.md)
-
-> [!NOTE] Send us [feedback](https://aka.ms/vsfeedback/browsecpp) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.

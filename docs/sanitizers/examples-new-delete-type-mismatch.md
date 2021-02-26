@@ -1,20 +1,19 @@
 ---
 title: "New delete type mismatch."
-description: "Source examples and live debug screen shots for new delete type mismatch errors."
+description: "Source examples and live debug screenshots for new delete type mismatch errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","New delete type mismatch", "ASan examples"]
-help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","New delete type mismatch"]
+f1_keywords: ["new-delete-type-mismatch"]
+helpviewer_keywords: ["new delete type mismatch"]
 ---
 
 # New delete type mismatch
 
-In the following example, only ~Base, and not ~Derived is called. The compiler generates a call to ~Base() because Base's `destructor()`isn't virtual. When we `delete b`, the object's destructor is bound to the default definition. The code will delete an empty base class (or 1 byte on Windows). Missing the **virtual** keyword for the destructor declaration, is a common C++ error when using inheritance.
-
-Sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+In this example, only `~Base`, and not `~Derived`, is called. The compiler generates a call to `~Base()` because the `Base` destructor isn't **`virtual`**. When we call `delete b`, the object's destructor is bound to the default definition. The code deletes an empty base class (or 1 byte on Windows). Missing the **`virtual`** keyword for the destructor declaration is a common C++ error when using inheritance. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example - virtual destructor
 
 ```cpp
+// example1.cpp
 #include <memory>
 #include <vector>
 
@@ -40,9 +39,9 @@ int main() {
 }
 ```
 
-Polymorphic base classes should declare **virtual destructors**. If a class has any virtual functions, it should have a virtual destructor
+Polymorphic base classes should declare **`virtual`** destructors. If a class has any virtual functions, it should have a virtual destructor.
 
-Fix this example by adding:
+To fix the example, add:
 
 ```cpp
 struct Base {
@@ -50,10 +49,11 @@ struct Base {
 }
 ```
 
-From a **Developer Command Prompt**:
-```
- cl example1.cpp /fsanitize=address /Zi
- devenv /debugexe example1.exe
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl example1.cpp /fsanitize=address /Zi
+devenv /debugexe example1.exe
 ```
 
 ## Resulting error

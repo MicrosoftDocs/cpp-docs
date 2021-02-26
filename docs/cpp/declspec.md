@@ -13,38 +13,38 @@ The extended attribute syntax for specifying storage-class information uses the 
 
 ## Grammar
 
-*`decl-specifier`*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`__declspec (`**  *`extended-decl-modifier-seq`*  **`)`**
+*`decl-specifier`*:\
+&emsp;**`__declspec (`**  *`extended-decl-modifier-seq`*  **`)`**
 
-*`extended-decl-modifier-seq`*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`extended-decl-modifier`*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*`extended-decl-modifier`* *`extended-decl-modifier-seq`*
+*`extended-decl-modifier-seq`*:\
+&emsp;*`extended-decl-modifier`*<sub>opt</sub>\
+&emsp;*`extended-decl-modifier`* *`extended-decl-modifier-seq`*
 
-*`extended-decl-modifier`*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`align(`** *number* **`)`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`allocate("`** *segname* **`")`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`allocator`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`appdomain`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`code_seg("`** *segname* **`")`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`deprecated`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`dllimport`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`dllexport`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`jitintrinsic`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`naked`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`noalias`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`noinline`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`noreturn`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`nothrow`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`novtable`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`no_sanitize_address`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`process`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`property(`** { **`get=`**_get-func-name_ &#124; **`,put=`**_put-func-name_ } **`)`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`restrict`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`safebuffers`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`selectany`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`spectre(nomitigation)`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`thread`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`uuid("`** *ComObjectGUID* **`")`**
+*`extended-decl-modifier`*:\
+&emsp;**`align(`** *number* **`)`**\
+&emsp;**`allocate("`** *segname* **`")`**\
+&emsp;**`allocator`**\
+&emsp;**`appdomain`**\
+&emsp;**`code_seg("`** *segname* **`")`**\
+&emsp;**`deprecated`**\
+&emsp;**`dllimport`**\
+&emsp;**`dllexport`**\
+&emsp;**`jitintrinsic`**\
+&emsp;**`naked`**\
+&emsp;**`noalias`**\
+&emsp;**`noinline`**\
+&emsp;**`noreturn`**\
+&emsp;**`nothrow`**\
+&emsp;**`novtable`**\
+&emsp;**`no_sanitize_address`**\
+&emsp;**`process`**\
+&emsp;**`property(`** { **`get=`**_get-func-name_ &#124; **`,put=`**_put-func-name_ } **`)`**\
+&emsp;**`restrict`**\
+&emsp;**`safebuffers`**\
+&emsp;**`selectany`**\
+&emsp;**`spectre(nomitigation)`**\
+&emsp;**`thread`**\
+&emsp;**`uuid("`** *ComObjectGUID* **`")`**
 
 White space separates the declaration modifier sequence. Examples appear in later sections.
 
@@ -93,5 +93,5 @@ __declspec( thread ) int tls_i = 1;
 
 ## See also
 
-[Keywords](../cpp/keywords-cpp.md)<br/>
+[Keywords](../cpp/keywords-cpp.md)\
 [C Extended Storage-Class Attributes](../c-language/c-extended-storage-class-attributes.md)

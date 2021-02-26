@@ -2,40 +2,41 @@
 title: "Visual Studio AddressSanitizer extended functionality library (VCASan)"
 description: "Technical description of vcasan.lib."
 ms.date: 02/15/2021
-f1_keywords: ["ASan","sanitizers","AddressSanitizer","Address Sanitizer", "Address-Sanitizer", "vcasan", "Asan-integration"]
-helpviewer_keywords: ["ASan","sanitizers","AddressSanitizer","Address Sanitizer","Address-Sanitizer","vcasan.lib","vcasan","vcasand.lib","libvcasan.lib","libvcasand.lib"]
+f1_keywords: ["vcasan"]
+helpviewer_keywords: ["vcasan.lib", "vcasan", "vcasand.lib", "libvcasan.lib", "libvcasand.lib"]
 ---
 
-# Visual Studio AddressSanitizer extended functionality library (VCASan)
+# Visual Studio AddressSanitizer extended functionality library (VCAsan)
 
-The **VCAsan\*.lib** libraries implement extended debugger IDE features in Visual Studio. These features allow the IDE to light up AddressSanitizer errors in live debug sessions, or offline by saving a crash dump file with metadata. The library is linked any time AddressSanitizer is enabled with the Visual C++ compiler.
+The *`VCAsan*.lib`* libraries implement extended debugger IDE features in Visual Studio. These features allow the IDE to show AddressSanitizer errors in live debug sessions, or offline by saving a crash dump file with metadata. The library is linked any time AddressSanitizer is enabled by the MSVC compiler.
 
 ## VCAsan library inventory
 
-| Runtime Flag  | VCAsan link library  |
+| Runtime option | VCAsan link library  |
 |---------------|----------------------|
-| /MT           | libvcasan.lib        |
-| /MD           | vcasan.lib           |
-| /MTd          | libvcasand.lib       |
-| /MDd          | vcasand.lib          |
+| **`/MT`**           | *`libvcasan.lib`*        |
+| **`/MD`**           | *`vcasan.lib`*           |
+| **`/MTd`**          | *`libvcasand.lib`*       |
+| **`/MDd`**          | *`vcasand.lib`*          |
 
 ## VCAsan library features
 
 ### Rich AddressSanitizer error report window in Visual Studio IDE
 
-The VCAsan library will register a callback within the Address runtime with the [ASan interface function `__asan_set_error_report_callback`.](https://github.com/llvm/llvm-project/blob/1ba5ea67a30170053964a28f2f47aea4bb7f5ff1/compiler-rt/include/sanitizer/asan_interface.h#L256) If an AddressSanitizer report is generated, this callback is used to throw an exception that will be caught by Visual Studio. The data in the exception is used to generate the Visual Studio message that is displayed to the user within the IDE.
+The VCAsan library registers a callback within the Address runtime by using the ASan interface function [`__asan_set_error_report_callback`](https://github.com/llvm/llvm-project/blob/1ba5ea67a30170053964a28f2f47aea4bb7f5ff1/compiler-rt/include/sanitizer/asan_interface.h#L256). If an AddressSanitizer report is generated, this callback gets used to throw an exception that's caught by Visual Studio. Visual Studio uses the exception data to generate the message that's displayed to the user in the IDE.
+
 > [!NOTE]
-> The VCASan library registers a callback function in the AddressSanitizer runtime. If your code calls this registration function a second time, it will overwrite the VCAsan library callback registration. This would result in the loss of all Visual Studio IDE integration. You would revert back to the default IDE user experience. It's also possible for a user's call to register their callback, to be lost. If you encounter either problem, please file a [bug](https://aka.ms/feedback/report?space=62).
+> The VCAsan library registers a callback function in the AddressSanitizer runtime. If your code calls this registration function a second time, it overwrites the VCAsan library callback registration. This results in the loss of all Visual Studio IDE integration. You'll revert back to the default IDE user experience. It's also possible for a user's call to register their callback to be lost. If you encounter either problem, file a [bug](https://aka.ms/feedback/report?space=62).
 
 ### Save AddressSanitizer errors in a new type of crash dump file
 
-When the VCasan library is linked, it is possible for the user to generate a crash dump when the AddressSanitizer runtime produces a (specifically diagnosed) error. To enable this feature, the user must set an environment variable as follows:
+When you link the VCAsan library to your executable, a user can generate a crash dump. The AddressSanitizer runtime can produce a dump file when a diagnosed error occurs. To enable this feature, the user must set an environment variable by using a command such as this one:
 
 `set ASAN_SAVE_DUMPS=MyFileName.dmp`
 
-Note: It must use a .dmp suffix for Visual Studio IDE conventions.
+The file must have a .dmp suffix to follow the Visual Studio IDE conventions.
 
-This will save a crash dump file with new meta-data associated with an error caught by the AddressSanitizer runtime. The meta-data that is saved in the dump file is parsed by the new Visual Studio debugger IDE. You can set `ASAN_SAVE_DUMPS` on a per-test basis and store these binary artifacts and then view these in the IDE with proper source indexing.
+Here's what happens when a dump file is specified for `ASAN_SAVE_DUMPS`: If an error gets caught by the AddressSanitizer runtime, it saves a crash dump file that has the metadata associated with the error. The new Visual Studio debugger IDE can parse the metadata that's saved in the dump file. You can set `ASAN_SAVE_DUMPS` on a per-test basis, store these binary artifacts, and then view them in the IDE with proper source indexing.
 
 ## See also
 
@@ -46,5 +47,3 @@ This will save a crash dump file with new meta-data associated with an error cau
 - [AddressSanitizer Shadow Bytes](./asan-shadowbytes.md)
 - [AddressSanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
 - [AddressSanitizer Debugger Integration](./asan-debugger-integration.md)
-
-> [!NOTE] Send us [feedback](https://aka.ms/vsfeedback/browsecpp) on what you would like to see in future releases, and please [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.

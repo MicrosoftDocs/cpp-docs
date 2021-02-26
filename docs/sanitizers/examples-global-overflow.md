@@ -1,24 +1,27 @@
 ---
 title: "Global buffer overflow."
-description: "Source examples and live debug screen shots for global variable overflow errors."
+description: "Source examples and live debug screenshots for global variable overflow errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","global-buffer-overflow", "ASan examples"]
-help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","global-buffer-overflow"]
+f1_keywords: ["global-buffer-overflow"]
+helpviewer_keywords: ["global-buffer-overflow"]
 ---
 
 # Global buffer overflow
 
-The compiler generates metadata for any variable in the `.data` or `.bss` sections. These variables have language scope of global or file static. They are allocated in memory before main() starts. Global variables in `C` are treated much differently than `C++`. This difference is because of the complex rules for linking.  
+The compiler generates metadata for any variable in the `.data` or `.bss` sections. These variables have language scope of global or file static. They're allocated in memory before main() starts. Global variables in `C` are treated much differently than `C++`. This difference is because of the complex rules for linking.  
 
-In `C`, a global variable can be declared in several source files and each definition can have different types. The compiler can't see all the possible definitions. The linker will see all the different definitions. The linker defaults to selecting the largest size of all the different declarations.
+In `C`, a global variable can be declared in several source files, and each definition can have different types. The compiler can't see all the possible definitions. However, the linker does see all the different definitions. The linker defaults to selecting the largest sized variable out of all the different declarations.
 
 In `C++`, a global is allocated by the compiler. There can only be one definition so the size of each definition is known at compile time.
+
+Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example - globals in 'C' with multiple type definitions
 
 ```cpp
-// AddressSanitizer reports a buffer overflow at the first line in function main() in all cases, 
-// REGARDLESS of the order in which the object files: a.obj, b.obj, and c.obj are linked.
+// AddressSanitizer reports a buffer overflow at the first line
+// in function main() in all cases, REGARDLESS of the order in 
+// which the object files: a.obj, b.obj, and c.obj are linked.
   
 // file: a.c 
 int x;
@@ -39,10 +42,11 @@ int main() {
 }
 ```
 
-From a **Developer Command Prompt**:
-```
- cl a.c b.c c.c example1-main.c /fsanitize=address /Zi
- devenv /debugexe example1-main.exe
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl a.c b.c c.c example1-main.c /fsanitize=address /Zi
+devenv /debugexe example1-main.exe
 ```
 
 ## Resulting error
@@ -51,9 +55,8 @@ From a **Developer Command Prompt**:
 
 ## Example - simple function level static
 
-Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
-
 ```cpp
+// example2.cpp
 #include <string.h>
 
 int 
@@ -70,13 +73,13 @@ main(int argc, char **argv) {
     res += XXX[argc] + ZZZ[argc];
     return res;
 }
-
 ```
 
-From a **Developer Command Prompt**:
-```
- cl example2.cpp /fsanitize=address /Zi
- devenv /debugexe example2.exe
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl example2.cpp /fsanitize=address /Zi
+devenv /debugexe example2.exe
 ```
 
 ## Resulting error - simple function level static
@@ -85,10 +88,9 @@ From a **Developer Command Prompt**:
 
 ## Example - all global scopes in C++
 
-Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
-
 ```cpp
-// Run 4 different ways with the choice of one of these flags:
+// example3.cpp
+// Run 4 different ways with the choice of one of these options:
 //
 // -g : Global
 // -c : File static
@@ -98,7 +100,7 @@ Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-
 #include <string.h>
 
 struct C {
-  static int array[10];
+    static int array[10];
 };
 
 // normal global
@@ -109,30 +111,29 @@ int C::array[10];
 
 int main(int argc, char **argv) {
 
-  int one = argc - 1;
+    int one = argc - 1;
 
-  switch (argv[1][1]) {
-  case 'g': return global[one * 11];     //Boom! simple global
-  case 'c': return C::array[one * 11];   //Boom! class static
-  case 'f':
-    static int array[10];
-    memset(array, 0, 10);
-    return array[one * 11];              //Boom! function static
-  case 'l':
-    // literal global ptr created by compiler
-
-    const char *str = "0123456789";
-    return str[one * 11];                //Boom! .rdata string literal allocated by compiler
-  }
-  return 0;
+    switch (argv[1][1]) {
+    case 'g': return global[one * 11];     //Boom! simple global
+    case 'c': return C::array[one * 11];   //Boom! class static
+    case 'f':
+        static int array[10];
+        memset(array, 0, 10);
+        return array[one * 11];            //Boom! function static
+    case 'l':
+        // literal global ptr created by compiler
+        const char *str = "0123456789";
+        return str[one * 11];              //Boom! .rdata string literal allocated by compiler
+    }
+    return 0;
 }
-
 ```
 
-From a **Developer Command Prompt**:
-```
- cl example3.cpp /fsanitize=address /Zi
- devenv /debugexe example3.exe -l
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl example3.cpp /fsanitize=address /Zi
+devenv /debugexe example3.exe -l
 ```
 
 ## Resulting error - all global scopes in C++

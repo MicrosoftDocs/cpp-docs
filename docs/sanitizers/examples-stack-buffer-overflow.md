@@ -1,19 +1,21 @@
 ---
 title: "Stack buffer overflow."
-description: "Source examples and live debug screen shots for Stack buffer overflow errors."
+description: "Source examples and live debug screenshots for Stack buffer overflow errors."
 ms.date: 02/05/2021
-f1_keywords: ["ASan","AddressSanitizer","Address Sanitizer","memory safety","Stack buffer overflow", "ASan examples"]
-help viewer_keywords: ["ASan","AddressSanitizer","Address Sanitizer","ASan examples","Stack buffer overflow"]
+f1_keywords: ["stack-buffer-overflow"]
+helpviewer_keywords: ["Stack buffer overflow"]
 ---
 
 # Stack buffer overflow
 
-The stack buffer overflow happen many ways in C or C++. We provide several examples for this category of error caught with a simple recompile. Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+A stack buffer overflow can happen many ways in C or C++. We provide several examples for this category of error caught by a simple recompile. Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example - stack buffer overflow
 
 ```cpp
+// example1.cpp
 #include <string.h>
+
 int main(int argc, char **argv) {
     char x[10];
     memset(x, 0, 10);
@@ -23,10 +25,11 @@ int main(int argc, char **argv) {
 }
 ```
 
-From a **Developer Command Prompt**:
-```
- cl example1.cpp /fsanitize=address /Zi
- devenv /debugexe example1.exe
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl example1.cpp /fsanitize=address /Zi
+devenv /debugexe example1.exe
 ```
 
 ## Resulting error
@@ -36,6 +39,7 @@ From a **Developer Command Prompt**:
 ## Example - Stack buffer math
 
 ```cpp
+// example2.cpp
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -56,10 +60,11 @@ int main(int argc, char **argv) {
 }
 ```
 
-From a **Developer Command Prompt**:
-```
- cl example2.cpp /fsanitize=address /Zi
- devenv /debugexe example2.exe 9
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl example2.cpp /fsanitize=address /Zi
+devenv /debugexe example2.exe 9
 ```
 
 ## Resulting error - Stack buffer math
@@ -69,33 +74,33 @@ From a **Developer Command Prompt**:
 ## Example - improper down cast on stack
 
 ```cpp
-
+// example3.cpp
 
 class Parent {
- public:
-  int field;
+public:
+    int field;
 };
 
 class Child : public Parent {
- public:
-  int extra_field;
+public:
+    int extra_field;
 };
 
 int main(void) {
 
-  Parent p;
-  Child *c = (Child*)&p;  // Boom !
-  c->extra_field = 42;
+    Parent p;
+    Child *c = (Child*)&p;  // Boom !
+    c->extra_field = 42;
 
-  return 0;
+    return 0;
 }
-
 ```
 
-From a **Developer Command Prompt**:
-```
- cl example3.cpp /fsanitize=address /Zi
- devenv /debugexe example3.exe
+To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+
+```cmd
+cl example3.cpp /fsanitize=address /Zi
+devenv /debugexe example3.exe
 ```
 
 ## Resulting error - improper down cast on stack
