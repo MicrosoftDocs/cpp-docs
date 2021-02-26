@@ -143,19 +143,19 @@ Unlike production quality code, this sample calls the secure string functions wi
 
 int main(void)
 {
-    char string[80];
+    char stringBuffer[80];
 
-    strcpy_s(string, _countof(string), "Hello world from ");
-    strcat_s(string, _countof(string), "strcpy_s ");
-    strcat_s(string, _countof(string), "and ");
-    strcat_s(string, _countof(string), "strcat_s!");
+    strcpy_s(stringBuffer, _countof(stringBuffer), "Hello world from ");
+    strcat_s(stringBuffer, _countof(stringBuffer), "strcpy_s ");
+    strcat_s(stringBuffer, _countof(stringBuffer), "and ");
+    strcat_s(stringBuffer, _countof(stringBuffer), "strcat_s!");
 
-    printf("String = %s\n", string);
+    printf("stringBuffer = %s\n", stringBuffer);
 }
 ```
 
 ```Output
-String = Hello world from strcpy_s and strcat_s!
+stringBuffer = Hello world from strcpy_s and strcat_s!
 ```
 
 When building C++ code, the template versions may be easier to use.
@@ -173,20 +173,20 @@ When building C++ code, the template versions may be easier to use.
 
 int main(void)
 {
-    wchar_t string[80];
+    wchar_t stringBuffer[80];
     // using template versions of wcscpy_s and wcscat_s:
-    wcscpy_s(string, L"Hello world from ");
-    wcscat_s(string, L"wcscpy_s ");
-    wcscat_s(string, L"and ");
+    wcscpy_s(stringBuffer, L"Hello world from ");
+    wcscat_s(stringBuffer, L"wcscpy_s ");
+    wcscat_s(stringBuffer, L"and ");
     // of course we can supply the size explicitly if we want to:
-    wcscat_s(string, _countof(string), L"wcscat_s!");
+    wcscat_s(stringBuffer, _countof(stringBuffer), L"wcscat_s!");
 
-    std::wcout << L"String = " << string << std::endl;
+    std::wcout << L"stringBuffer = " << stringBuffer << std::endl;
 }
 ```
 
 ```Output
-String = Hello world from wcscpy_s and wcscat_s!
+stringBuffer = Hello world from wcscpy_s and wcscat_s!
 ```
 
 ## See also
