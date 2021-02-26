@@ -37,6 +37,6 @@ cl example1.cpp /fsanitize=address /Zi
 devenv /debugexe example1.exe
 ```
 
-## Resulting error
+### Resulting error
 
-![example1](SRC_CODE/use-after-poison/example1.PNG)
+![Screenshot of debugger displaying error in example1](media/use-after-poison-example1.png)

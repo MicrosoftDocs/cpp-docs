@@ -40,9 +40,9 @@ cl example1.cpp /fsanitize=address /Zi
 devenv /debugexe example1.exe
 ```
 
-## Resulting error
+### Resulting error
 
-![example1](SRC_CODE/dynamic-stack-buffer-overflow/example1.PNG)
+![Screenshot of debugger displaying error in example1](media/dynamic-stack-buffer-overflow-example1.png)
 
 ## Example - `alloca` overflow (left)
 
@@ -71,9 +71,9 @@ cl example2.cpp /fsanitize=address /Zi
 devenv /debugexe example2.exe
 ```
 
-## Resulting error - `alloca` overflow (left)
+### Resulting error - `alloca` overflow (left)
 
-![example2](SRC_CODE/dynamic-stack-buffer-overflow/example2.PNG)
+![Screenshot of debugger displaying error in example2](media/dynamic-stack-buffer-overflow-example2.png)
 
 ## Example - several calls to `alloca`
 
@@ -160,6 +160,6 @@ cl example3.cpp /fsanitize=address /Zi
 devenv /debugexe example3.exe
 ```
 
-## Resulting error - several calls to alloca
+### Resulting error - several calls to alloca
 
-![example3](SRC_CODE/dynamic-stack-buffer-overflow/example3.PNG)
+![Screenshot of debugger displaying error in example3](media/dynamic-stack-buffer-overflow-example3.png)

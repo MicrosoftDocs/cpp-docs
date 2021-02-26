@@ -33,9 +33,9 @@ cl example1.cpp /fsanitize=address /Zi
 devenv /debugexe example1.exe
 ```
 
-## Resulting error
+### Resulting error
 
-![example1](SRC_CODE/heap-use-after-free/example1.PNG)
+![Screenshot of debugger displaying error in example1](media/heap-use-after-free-example1.png)
 
 ## Example - `operator new`
 
@@ -61,9 +61,9 @@ cl example2.cpp /fsanitize=address /Zi
 devenv /debugexe example2.exe
 ```
 
-## Resulting error - operator new
+### Resulting error - operator new
 
-![example2](SRC_CODE/heap-use-after-free/example2.PNG)
+![Screenshot of debugger displaying error in example2](media/heap-use-after-free-example2.png)
 
 ## Example - `realloc`
 
@@ -90,9 +90,9 @@ cl example3.cpp /fsanitize=address /Zi
 devenv /debugexe example3.exe
 ```
 
-## Resulting error - realloc
+### Resulting error - realloc
 
-![example3](SRC_CODE/heap-use-after-free/example3.PNG)
+![Screenshot of debugger displaying error in example3](media/heap-use-after-free-example3.png)
 
 ## Example - volatile
 
@@ -118,6 +118,6 @@ cl example4.cpp /fsanitize=address /Zi
 devenv /debugexe example4.exe
 ```
 
-## Resulting error - volatile
+### Resulting error - volatile
 
-![example4](SRC_CODE/heap-use-after-free/example4.PNG)
+![Screenshot of debugger displaying error in example4](media/heap-use-after-free-example4.png)

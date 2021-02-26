@@ -33,9 +33,9 @@ cl example1.cpp /fsanitize=address /Zi
 devenv /debugexe example1.exe
 ```
 
-## Resulting error - double operator delete
+### Resulting error - double operator delete
 
-![example1](SRC_CODE/double-free/example1.PNG)
+![Screenshot of debugger displaying error in example1](media/double-free-example1.png)
 
 ## Example 'C' - double fre()
 
@@ -65,9 +65,9 @@ cl example2.cpp /fsanitize=address /Zi
 devenv /debugexe example2.exe
 ```
 
-## Resulting error - double free()
+### Resulting error - double free()
 
-![example2](SRC_CODE/double-free/example2.PNG)
+![Screenshot of debugger displaying error in example2](media/double-free-example2.png)
 
 ## Example - Windows HeapCreate() double free
 
@@ -94,6 +94,6 @@ cl example3.cpp /fsanitize=address /Zi
 devenv /debugexe example3.exe
 ```
 
-## Resulting error - Windows HeapCreate() double free
+### Resulting error - Windows HeapCreate() double free
 
-![example3](SRC_CODE/double-free/example3.PNG)
+![Screenshot of debugger displaying error in example3](media/double-free-example3.png)

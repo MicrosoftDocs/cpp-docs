@@ -36,9 +36,9 @@ cl example1.cpp /fsanitize=address /Zi
 devenv /debugexe example1.exe
 ```
 
-## Resulting error - simple nested local
+### Resulting error - simple nested local
 
-![example1-screenshot](SRC_CODE/stack-use-after-scope/example1.PNG)
+![Screenshot of debugger displaying error in example1](media/stack-use-after-scope-example1.png)
 
 ## Example 2 - lambda capture
 
@@ -65,9 +65,9 @@ cl example2.cpp /fsanitize=address /Zi
 devenv /debugexe example2.exe
 ```
 
-## Resulting Error - lambda capture
+### Resulting error - lambda capture
 
-![example2-screenshot](SRC_CODE/stack-use-after-scope/Example2.PNG)
+![Screenshot of debugger displaying error in example2](media/stack-use-after-scope-example2.png)
 
 ## Example 3 - destructor ordering with locals
 
@@ -104,9 +104,9 @@ cl example3.cpp /fsanitize=address /Zi /O1
 devenv /debugexe example3.exe
 ```
 
-## Resulting error - destructor ordering
+### Resulting error - destructor ordering
 
-![example3-screenshot](SRC_CODE/stack-use-after-scope/example3.PNG)
+![Screenshot of debugger displaying error in example3](media/stack-use-after-scope-example3.png)
 
 ## Example 4 - temporaries
 
@@ -148,6 +148,6 @@ cl example4.cpp /EHsc /fsanitize=address /Zi
 devenv /debugexe example4.exe
 ```
 
-## Resulting error - temporaries
+### Resulting error - temporaries
 
-![example4-screenshot](SRC_CODE/stack-use-after-scope/example4.PNG)
+![Screenshot of debugger displaying error in example4](media/stack-use-after-scope-example4.png)

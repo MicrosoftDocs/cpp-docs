@@ -49,9 +49,9 @@ cl a.c b.c c.c example1-main.c /fsanitize=address /Zi
 devenv /debugexe example1-main.exe
 ```
 
-## Resulting error
+### Resulting error
 
-![example1](SRC_CODE/global-overflow/example1.PNG)
+![Screenshot of debugger displaying error in example1](media/global-overflow-example1.png)
 
 ## Example - simple function level static
 
@@ -82,9 +82,9 @@ cl example2.cpp /fsanitize=address /Zi
 devenv /debugexe example2.exe
 ```
 
-## Resulting error - simple function level static
+### Resulting error - simple function level static
 
-![example2](SRC_CODE/global-overflow/example2.PNG)
+![Screenshot of debugger displaying error in example2](media/global-overflow-example2.png)
 
 ## Example - all global scopes in C++
 
@@ -136,6 +136,6 @@ cl example3.cpp /fsanitize=address /Zi
 devenv /debugexe example3.exe -l
 ```
 
-## Resulting error - all global scopes in C++
+### Resulting error - all global scopes in C++
 
-![example3](SRC_CODE/global-overflow/example3.PNG)
+![Screenshot of debugger displaying error in example3](media/global-overflow-example3.png)

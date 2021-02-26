@@ -35,9 +35,9 @@ cl example1.cpp /fsanitize=address /Zi
 devenv /debugexe example1.exe
 ```
 
-## Resulting error
+### Resulting error
 
-![example1](SRC_CODE/heap-buffer-overflow/example1.PNG)
+![Screenshot of debugger displaying error in example1](media/heap-buffer-overflow-example1.png)
 
 ## Example - improper down cast
 
@@ -70,9 +70,9 @@ cl example2.cpp /fsanitize=address /Zi
 devenv /debugexe example2.exe
 ```
 
-## Resulting error - improper down cast
+### Resulting error - improper down cast
 
-![example2](SRC_CODE/heap-buffer-overflow/example2.PNG)
+![Screenshot of debugger displaying error in example2](media/heap-buffer-overflow-example2.png)
 
 ## Example - strncpy into heap
 
@@ -100,6 +100,6 @@ cl example3.cpp /fsanitize=address /Zi
 devenv /debugexe example3.exe
 ```
 
-## Resulting error - strncpy into heap
+### Resulting error - strncpy into heap
 
-![example3](SRC_CODE/heap-buffer-overflow/example3.PNG)
+![Screenshot of debugger displaying error in example3](media/heap-buffer-overflow-example3.png)

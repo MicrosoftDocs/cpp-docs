@@ -45,9 +45,9 @@ set ASAN_OPTIONS=detect_stack_use_after_return=1
 devenv /debugexe example1.exe
 ```
 
-## Resulting error - Simple 'C'
+### Resulting error - Simple 'C'
 
-![example1](SRC_CODE/stack-use-after-return/example1.PNG)
+![Screenshot of debugger displaying error in example1](media/stack-use-after-return-example1.png)
 
 ## Example - C++ and templates
 
@@ -100,6 +100,6 @@ set ASAN_OPTIONS=detect_stack_use_after_return=1
 devenv /debugexe example2.exe 1
 ```
 
-## Resulting error - C++ and templates
+### Resulting error - C++ and templates
 
-![example2](SRC_CODE/stack-use-after-return/example2.PNG)
+![Screenshot of debugger displaying error in example2](media/stack-use-after-return-example2.png)

@@ -33,9 +33,9 @@ cl example1.cpp /fsanitize=address /Zi
 devenv /debugexe example1.exe
 ```
 
-## Resulting error
+### Resulting error
 
-![example1](SRC_CODE/stack-buffer-underflow/example1.PNG)
+![Screenshot of debugger displaying error in example1](media/stack-buffer-underflow-example1.png)
 
 ## Example - stack underflow on thread
 
@@ -69,6 +69,6 @@ cl example2.cpp /fsanitize=address /Zi
 devenv /debugexe example2.exe
 ```
 
-## Resulting error  - stack underflow on thread
+### Resulting error  - stack underflow on thread
 
-![example2](SRC_CODE/stack-buffer-underflow/example2.PNG)
+![Screenshot of debugger displaying error in example2](media/stack-buffer-underflow-example2.png)

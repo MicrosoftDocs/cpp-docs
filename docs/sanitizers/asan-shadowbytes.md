@@ -24,7 +24,7 @@ One shadow byte describes how many bytes are currently accessible as follows:
 
 Consider this shadow byte legend where all negative numbers are defined:
 
-![shadow-legend](./MEDIA/ASan-ShadowByte-Legend.PNG)
+![Screenshot of the AddressSanitizer shadow-byte legend](./media/asan-shadow-byte-legend.png)
 
 ## Mapping - describing your address space
 

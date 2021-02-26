@@ -32,9 +32,9 @@ cl example1.cpp /fsanitize=address /Zi
 devenv /debugexe example1.exe
 ```
 
-## Resulting error
+### Resulting error
 
-![example1](SRC_CODE/stack-buffer-overflow/Example1.PNG)
+![Screenshot of debugger displaying error in example1](media/stack-buffer-overflow-Example1.png)
 
 ## Example - Stack buffer math
 
@@ -67,9 +67,9 @@ cl example2.cpp /fsanitize=address /Zi
 devenv /debugexe example2.exe 9
 ```
 
-## Resulting error - Stack buffer math
+### Resulting error - Stack buffer math
 
-![example2](SRC_CODE/stack-buffer-overflow/Example2.PNG)
+![Screenshot of debugger displaying error in example2](media/stack-buffer-overflow-Example2.png)
 
 ## Example - improper down cast on stack
 
@@ -103,6 +103,6 @@ cl example3.cpp /fsanitize=address /Zi
 devenv /debugexe example3.exe
 ```
 
-## Resulting error - improper down cast on stack
+### Resulting error - improper down cast on stack
 
-![example3](SRC_CODE/stack-buffer-overflow/example3.PNG)
+![Screenshot of debugger displaying error in example3](media/stack-buffer-overflow-example3.png)

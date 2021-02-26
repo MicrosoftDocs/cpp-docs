@@ -46,6 +46,6 @@ set ASAN_OPTIONS=alloc_dealloc_mismatch=1
 devenv /debugexe example1.exe 2
 ```
 
-## Resulting error
+### Resulting error
 
-![example1](SRC_CODE/alloc-dealloc-mismatch/example1.PNG)
+![Screenshot of debugger displaying error in example1](media/alloc-dealloc-mismatch-example1.png)

@@ -52,17 +52,17 @@ The following steps are for local or distributed scenarios that lead to creation
 
 1. Open Visual Studio and select **Continue without code**. Then select **File** > **Open** > **File** to open the File Open dialog. Make sure the file name suffix is **.dmp**.
 
-   ![asan-open-crash-dump](./MEDIA/asan-open-crash-dump.PNG)
+   ![Screenshot of the File Open File menu in Visual Studio](./media/asan-open-crash-dump-file.png)
 
    The screen shown here needs one more step to enable the IDE access to symbols and source.
 
 1. Set the symbol paths, and then choose **Debug with Native Only**.
 
-   ![open snapshot](./MEDIA/asan-DMP-file-open.PNG)
+   ![Screenshot of the Minidump Summary display in Visual Studio](./media/asan-dump-file-open.png)
 
 This screenshot shows the final loaded dump file, with sources and AddressSanitizer metadata loaded.
 
-![symbolized snapshot](./MEDIA/asan-view-crash-meta-data.PNG)
+![Screenshot of the debugger showing source files and AddressSanitizer metadata](./media/asan-view-crash-metadata.png)
 
 ## Source and symbols
 

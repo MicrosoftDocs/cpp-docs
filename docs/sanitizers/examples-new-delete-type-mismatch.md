@@ -56,6 +56,6 @@ cl example1.cpp /fsanitize=address /Zi
 devenv /debugexe example1.exe
 ```
 
-## Resulting error
+### Resulting error
 
-![example1](SRC_CODE/new-delete-type-mismatch/example1.PNG)
+![Screenshot of debugger displaying error in example1](media/new-delete-type-mismatch-example1.png)
