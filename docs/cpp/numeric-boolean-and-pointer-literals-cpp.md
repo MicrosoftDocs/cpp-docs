@@ -7,9 +7,9 @@ ms.assetid: 17c09fc3-3ad7-47e2-8b48-ba8ae994edc8
 ---
 # Numeric, boolean, and pointer literals
 
-A literal is a program element that directly represents a value. This article covers literals of type integer, floating-point, boolean, and pointer. For information about string and character literals, see [String and Character Literals  (C++)](../cpp/string-and-character-literals-cpp.md). You can also define your own literals based on any of these categories. For more information, see [User-defined literals (C++)](../cpp/user-defined-literals-cpp.md)
+A literal is a program element that directly represents a value. This article covers literals of type integer, floating-point, boolean, and pointer. For information about string and character literals, see [String and Character Literals  (C++)](../cpp/string-and-character-literals-cpp.md). You can also define your own literals based on any of these categories. For more information, see [User-defined literals (C++)](../cpp/user-defined-literals-cpp.md).
 
-. You can use literals in many contexts, but most commonly to initialize named variables and to pass arguments to functions:
+You can use literals in many contexts, but most commonly to initialize named variables and to pass arguments to functions:
 
 ```cpp
 const int answer = 42;      // integer literal
