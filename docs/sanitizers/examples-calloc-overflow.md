@@ -1,12 +1,11 @@
 ---
-title: "calloc overflow."
+title: "calloc-overflow error"
 description: "Source examples and live debug screenshots for calloc() overflow errors."
 ms.date: 02/05/2021
 f1_keywords: ["calloc-overflow"]
 helpviewer_keywords: ["calloc overflow"]
 ---
-
-# `calloc` - overflow
+# Example: `calloc-overflow` error
 
 The CRT function [`calloc`](../c-runtime-library/reference/calloc.md) creates an array in memory with elements initialized to 0. The arguments can create an internal error that leads to a NULL pointer as the return value. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
@@ -14,6 +13,7 @@ The CRT function [`calloc`](../c-runtime-library/reference/calloc.md) creates an
 
 ```cpp
 // example1.cpp
+// calloc-overflow error
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -22,15 +22,15 @@ int element_size = 1000;
 
 int main() {
 
-  void *p = calloc(number, element_size);      // Boom!
+    void *p = calloc(number, element_size);      // Boom!
 
-  printf("calloc returned: %zu\n", (size_t)p);
+    printf("calloc returned: %zu\n", (size_t)p);
 
-  return 0;
+    return 0;
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example1.cpp /fsanitize=address /Zi
@@ -40,3 +40,14 @@ devenv /debugexe example1.exe
 ### Resulting error
 
 ![Screenshot of debugger displaying error in example1](media/calloc-overflow-example1.png)
+
+## See also
+
+[AddressSanitizer overview](./asan.md)\
+[AddressSanitizer known issues](./asan-known-issues.md)\
+[AddressSanitizer build and language reference](./asan-building.md)\
+[AddressSanitizer runtime reference](./asan-runtime.md)\
+[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
+[AddressSanitizer error examples](./asan-examples.md)

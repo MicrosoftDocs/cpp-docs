@@ -337,6 +337,8 @@
   href: ../build/configuring-programs-for-windows-xp.md
 - name: Code analysis for C/C++
   href: ../code-quality/
+- name: "Code sanitizers for C/C++"
+  href: ../sanitizers/
 - name: Compiler and build tools reference
   expanded: false
   items: 
@@ -558,6 +560,8 @@
                   href: ../build/reference/fp-specify-floating-point-behavior.md
                 - name: /FS (Force synchronous PDB writes)
                   href: ../build/reference/fs-force-synchronous-pdb-writes.md
+                - name: /fsanitize (Enable sanitizers)
+                  href: ../build/reference/fsanitize.md
                 - name: /GA (Optimize for Windows application)
                   href: ../build/reference/ga-optimize-for-windows-application.md
                 - name: /Gd, /Gr, /Gv, /Gz (Calling convention)
@@ -935,6 +939,8 @@
               href: ../build/reference/ignore-ignore-specific-warnings.md
             - name: /IGNOREIDL (Don't process attributes into MIDL)
               href: ../build/reference/ignoreidl-don-t-process-attributes-into-midl.md
+            - name: /INFERASANLIBS (Use inferred sanitizer libs)
+              href: ../build/reference/inferasanlibs.md
             - name: /IMPLIB (Name import library)
               href: ../build/reference/implib-name-import-library.md
             - name: /INCLUDE (Force symbol references)

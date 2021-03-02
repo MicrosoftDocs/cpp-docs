@@ -7,8 +7,7 @@ helpviewer_keywords: ["Shadow bytes", "AddressSanitizer shadow bytes","Address S
 
 # AddressSanitizer Shadow Bytes
 
-We briefly summarize the concept of shadow bytes and how they can be used by the runtime implementation of [`/fsanitize=address`](../build/reference/fsanitize.md). For further details, we refer you to the [seminal paper](
-https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) and the [AddressSanitizer algorithm](https://github.com/google/sanitizers/wiki/AddressSanitizerAlgorithm).
+We briefly summarize the concept of shadow bytes and how they can be used by the runtime implementation of [`/fsanitize=address`](../build/reference/fsanitize.md). For further details, we refer you to the [seminal paper](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) and the [AddressSanitizer algorithm](https://github.com/google/sanitizers/wiki/AddressSanitizerAlgorithm).
 
 ## Core concept
 
@@ -73,10 +72,10 @@ Both the code the compiler generates and the AddressSanitizer runtime can write 
 
 ## See also
 
-- [AddressSanitizer Overview](./asan.md)
-- [AddressSanitizer Known Issues](./asan-known-issues.md)
-- [AddressSanitizer Build and Language Reference](./asan-building.md)
-- [AddressSanitizer Runtime Reference](./asan-runtime.md)
-- [AddressSanitizer Shadow Bytes](./asan-shadowbytes.md)
-- [AddressSanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
-- [AddressSanitizer Debugger Integration](./asan-debugger-integration.md)
+[AddressSanitizer overview](./asan.md)\
+[AddressSanitizer known issues](./asan-known-issues.md)\
+[AddressSanitizer build and language reference](./asan-building.md)\
+[AddressSanitizer runtime reference](./asan-runtime.md)\
+[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
+[AddressSanitizer error examples](./asan-examples.md)

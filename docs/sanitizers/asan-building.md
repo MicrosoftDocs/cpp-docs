@@ -116,11 +116,13 @@ The library chosen depends on the compilation options, and is automatically link
 | **`/MTd`**       | *`libvcasand.lib`* |
 | **`/MDd`**       | *`vcasand.lib`*    |
 
-However, if you compile using **`/Zl`** (Omit default library name), you'll need to manually specify the library. If you don't, you'll get a link failure; one of:
+However, if you compile using **`/Zl`** (Omit default library name), you'll need to manually specify the library. If you don't, you'll get a link failure; here are some typical examples:
 
 ```Output
 error LNK2001: unresolved external symbol __you_must_link_with_VCAsan_lib
 error LNK2001: unresolved external symbol ___you_must_link_with_VCAsan_lib
+error LNK2019: unresolved external symbol __asan_report_load4 referenced in function main
+error LNK2019: unresolved external symbol __asan_report_load8 referenced in function main
 ```
 
 The improved debugging can be disabled at compile time using the **`/fno-sanitize-address-vcasan-lib`** option.
@@ -129,14 +131,14 @@ The improved debugging can be disabled at compile time using the **`/fno-sanitiz
 
 The **`/fsanitize=address`** compiler option produces a binary that exposes memory safety bugs at runtime. When the binary is started from the command line, and the runtime reports an error, it prints the error details. It then and exits the process. The `ASAN_VCASAN_DEBUGGING` environment variable can be set to launch the Visual Studio IDE immediately when the runtime reports an error. This compiler option lets you view the error, superimposed over your source code, at the precise line and column that caused the error.
 
-To enable this behavior, run the command `set ASAN_VCASAN_DEBUGGING=1` before you run your application. You can disable the enhanced debugging experience by running `set ASAN_VISAS_DEBUGGING=0`.
+To enable this behavior, run the command `set ASAN_VCASAN_DEBUGGING=1` before you run your application. You can disable the enhanced debugging experience by running `set ASAN_VCASAN_DEBUGGING=0`.
 
 ## See also
 
-- [AddressSanitizer Overview](./asan.md)
-- [AddressSanitizer Known Issues](./asan-known-issues.md)
-- [AddressSanitizer Build and Language Reference](./asan-building.md)
-- [AddressSanitizer Runtime Reference](./asan-runtime.md)
-- [AddressSanitizer Shadow Bytes](./asan-shadowbytes.md)
-- [AddressSanitizer Cloud or Distributed Testing](./asan-offline-crash-dumps.md)
-- [AddressSanitizer Debugger Integration](./asan-debugger-integration.md)
+[AddressSanitizer overview](./asan.md)\
+[AddressSanitizer known issues](./asan-known-issues.md)\
+[AddressSanitizer runtime reference](./asan-runtime.md)\
+[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
+[AddressSanitizer error examples](./asan-examples.md)

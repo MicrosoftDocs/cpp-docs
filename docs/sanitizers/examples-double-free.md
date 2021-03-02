@@ -1,19 +1,20 @@
 ---
-title: "Double free error"
+title: "double-free error"
 description: "Source examples and live debug screenshots for double free errors."
 ms.date: 02/05/2021
 f1_keywords: ["double-free"]
 helpviewer_keywords: ["double free"]
 ---
 
-# Double free error
+# Example: `double-free` error
 
-In `C`, you can call `free` erroneously. In `C++`, you can call `delete` more than once. In these examples, we show errors with `delete`, `free`, and `HeapCreate`. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+In C, you can call `free` erroneously. In C++, you can call `delete` more than once. In these examples, we show errors with `delete`, `free`, and `HeapCreate`. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
-## Example C++ - double operator delete
+## Example C++ - double `operator delete`
 
 ```cpp
 // example1.cpp
+// double-free error
 int main() {
 
     int *x = new int[42];
@@ -26,21 +27,22 @@ int main() {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example1.cpp /fsanitize=address /Zi
 devenv /debugexe example1.exe
 ```
 
-### Resulting error - double operator delete
+### Resulting error - double `operator delete`
 
 ![Screenshot of debugger displaying error in example1](media/double-free-example1.png)
 
-## Example 'C' - double fre()
+## Example 'C' - double `free`
 
 ```cpp
 // example2.cpp
+// double-free error
 #include <stdlib.h>
 #include <string.h>
 
@@ -58,21 +60,22 @@ int main(int argc, char** argv) {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example2.cpp /fsanitize=address /Zi
 devenv /debugexe example2.exe
 ```
 
-### Resulting error - double free()
+### Resulting error - double `free`
 
 ![Screenshot of debugger displaying error in example2](media/double-free-example2.png)
 
-## Example - Windows HeapCreate() double free
+## Example - Windows `HeapCreate` double `HeapFree`
 
 ```cpp
 // example3.cpp
+// double-free error
 #include <Windows.h>
 #include <stdio.h>
 
@@ -87,13 +90,24 @@ int main() {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example3.cpp /fsanitize=address /Zi
 devenv /debugexe example3.exe
 ```
 
-### Resulting error - Windows HeapCreate() double free
+### Resulting error - Windows `HeapCreate` double `HeapFree`
 
 ![Screenshot of debugger displaying error in example3](media/double-free-example3.png)
+
+## See also
+
+[AddressSanitizer overview](./asan.md)\
+[AddressSanitizer known issues](./asan-known-issues.md)\
+[AddressSanitizer build and language reference](./asan-building.md)\
+[AddressSanitizer runtime reference](./asan-runtime.md)\
+[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
+[AddressSanitizer error examples](./asan-examples.md)

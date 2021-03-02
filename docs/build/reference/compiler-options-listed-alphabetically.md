@@ -49,6 +49,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Fp`](fp-name-dot-pch-file.md) | Specifies a precompiled header file name. |
 | [`/FR`](fr-fr-create-dot-sbr-file.md)<br /><br /> [`/Fr`](fr-fr-create-dot-sbr-file.md) | Generates browser files. **`/Fr`** is deprecated. |
 | [`/FS`](fs-force-synchronous-pdb-writes.md) | Forces serialization of all writes to the program database (PDB) file through MSPDBSRV.EXE. |
+| [`/fsanitize`](fsanitize.md.md) | Enables compilation of sanitizer instrumentation such as AddressSanitizer. |
 | [`/FU`](fu-name-forced-hash-using-file.md) | Forces the use of a file name as if it had been passed to the [`#using`](../../preprocessor/hash-using-directive-cpp.md) directive. |
 | [`/Fx`](fx-merge-injected-code.md) | Merges injected code with source file. |
 | [`/GA`](ga-optimize-for-windows-application.md) | Optimizes code for Windows application. |

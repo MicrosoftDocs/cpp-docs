@@ -1,12 +1,12 @@
 ---
-title: "Heap use after free."
+title: "heap-use-after-free error"
 description: "Source examples and live debug screenshots for heap use after free errors."
 ms.date: 02/05/2021
 f1_keywords: ["heap-use-after-free"]
 helpviewer_keywords: ["heap-use-after-free"]
 ---
 
-# Heap use after free
+# Example: `heap-use-after-free` error
 
 We show three examples where storage in the heap can be allocated via `malloc`, `realloc` (C), and `new` (C++), along with a mistaken use of `volatile`. Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
@@ -14,6 +14,7 @@ We show three examples where storage in the heap can be allocated via `malloc`, 
 
 ```cpp
 // example1.cpp
+// heap-use-after-free error
 #include <stdlib.h>
 
 int main() {
@@ -26,7 +27,7 @@ int main() {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example1.cpp /fsanitize=address /Zi
@@ -41,6 +42,7 @@ devenv /debugexe example1.exe
 
 ```cpp
 // example2.cpp
+// heap-use-after-free error
 #include <windows.h>
 
 int main() {
@@ -54,7 +56,7 @@ int main() {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example2.cpp /fsanitize=address /Zi
@@ -69,7 +71,7 @@ devenv /debugexe example2.exe
 
 ```cpp
 // example3.cpp
-
+// heap-use-after-free error
 #include <malloc.h>
 
 int main() {
@@ -83,7 +85,7 @@ int main() {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example3.cpp /fsanitize=address /Zi
@@ -98,6 +100,7 @@ devenv /debugexe example3.exe
 
 ```cpp
 // example4.cpp
+// heap-use-after-free error
 #include <stdlib.h>
 
 int main() {
@@ -111,7 +114,7 @@ int main() {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example4.cpp /fsanitize=address /Zi
@@ -121,3 +124,14 @@ devenv /debugexe example4.exe
 ### Resulting error - volatile
 
 ![Screenshot of debugger displaying error in example4](media/heap-use-after-free-example4.png)
+
+## See also
+
+[AddressSanitizer overview](./asan.md)\
+[AddressSanitizer known issues](./asan-known-issues.md)\
+[AddressSanitizer build and language reference](./asan-building.md)\
+[AddressSanitizer runtime reference](./asan-runtime.md)\
+[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
+[AddressSanitizer error examples](./asan-examples.md)

@@ -1,12 +1,12 @@
 ---
-title: "Stack Use After Scope."
+title: "stack-use-after-scope error"
 description: "Source examples and live debug screenshots for Stack Use After Scope errors."
 ms.date: 02/05/2021
 f1_keywords: ["stack-use-after-scope"]
 helpviewer_keywords: ["Stack Use After Scope"]
 ---
 
-# Stack use after scope
+# Example: `stack-use-after-scope` error
 
 The use of a stack address outside the lexical scope of a variable's lifetime can happen many ways in C or C++.
 
@@ -16,6 +16,7 @@ Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm
 
 ```cpp
 // example1.cpp
+// stack-use-after-scope error
 int *gp;
 
 bool b = true;
@@ -29,7 +30,7 @@ int main() {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example1.cpp /fsanitize=address /Zi
@@ -44,6 +45,7 @@ devenv /debugexe example1.exe
 
 ```cpp
 // example2.cpp
+// stack-use-after-scope error
 #include <functional>
 
 int main() {
@@ -58,7 +60,7 @@ int main() {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example2.cpp /fsanitize=address /Zi
@@ -73,6 +75,7 @@ devenv /debugexe example2.exe
 
 ```cpp
 // example3.cpp
+// stack-use-after-scope error
 #include <stdio.h>
 
 struct IntHolder {
@@ -97,7 +100,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example3.cpp /fsanitize=address /Zi /O1
@@ -112,6 +115,7 @@ devenv /debugexe example3.exe
 
 ```cpp
 // example4.cpp
+// stack-use-after-scope error
 #include <iostream>
 
 struct A {
@@ -141,7 +145,7 @@ void main() {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example4.cpp /EHsc /fsanitize=address /Zi
@@ -151,3 +155,14 @@ devenv /debugexe example4.exe
 ### Resulting error - temporaries
 
 ![Screenshot of debugger displaying error in example4](media/stack-use-after-scope-example4.png)
+
+## See also
+
+[AddressSanitizer overview](./asan.md)\
+[AddressSanitizer known issues](./asan-known-issues.md)\
+[AddressSanitizer build and language reference](./asan-building.md)\
+[AddressSanitizer runtime reference](./asan-runtime.md)\
+[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
+[AddressSanitizer error examples](./asan-examples.md)

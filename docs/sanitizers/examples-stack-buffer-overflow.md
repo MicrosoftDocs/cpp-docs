@@ -1,19 +1,20 @@
 ---
-title: "Stack buffer overflow."
+title: "stack-buffer-overflow error"
 description: "Source examples and live debug screenshots for Stack buffer overflow errors."
 ms.date: 02/05/2021
 f1_keywords: ["stack-buffer-overflow"]
 helpviewer_keywords: ["Stack buffer overflow"]
 ---
 
-# Stack buffer overflow
+# Example: `stack-buffer-overflow` error
 
-A stack buffer overflow can happen many ways in C or C++. We provide several examples for this category of error caught by a simple recompile. Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+A stack buffer overflow can happen many ways in C or C++. We provide several examples for this category of error that you can catch by a simple recompile. Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example - stack buffer overflow
 
 ```cpp
 // example1.cpp
+// stack-buffer-overflow error
 #include <string.h>
 
 int main(int argc, char **argv) {
@@ -25,7 +26,7 @@ int main(int argc, char **argv) {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example1.cpp /fsanitize=address /Zi
@@ -40,6 +41,7 @@ devenv /debugexe example1.exe
 
 ```cpp
 // example2.cpp
+// stack-buffer-overflow error
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -60,7 +62,7 @@ int main(int argc, char **argv) {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example2.cpp /fsanitize=address /Zi
@@ -75,7 +77,7 @@ devenv /debugexe example2.exe 9
 
 ```cpp
 // example3.cpp
-
+// stack-buffer-overflow error
 class Parent {
 public:
     int field;
@@ -96,7 +98,7 @@ int main(void) {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example3.cpp /fsanitize=address /Zi
@@ -106,3 +108,14 @@ devenv /debugexe example3.exe
 ### Resulting error - improper down cast on stack
 
 ![Screenshot of debugger displaying error in example3](media/stack-buffer-overflow-example3.png)
+
+## See also
+
+[AddressSanitizer overview](./asan.md)\
+[AddressSanitizer known issues](./asan-known-issues.md)\
+[AddressSanitizer build and language reference](./asan-building.md)\
+[AddressSanitizer runtime reference](./asan-runtime.md)\
+[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
+[AddressSanitizer error examples](./asan-examples.md)

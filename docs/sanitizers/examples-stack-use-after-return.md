@@ -1,12 +1,12 @@
 ---
-title: "Stack use after return"
+title: "stack-use-after-return error"
 description: "Source examples and live debug screenshots for Stack Use After Return errors."
 ms.date: 02/05/2021
 f1_keywords: ["stack-use-after-return"]
 helpviewer_keywords: ["Stack Use After Return"]
 ---
 
-# Stack use after return
+# Example: `stack-use-after-return` error
 
 This functionality requires code generation that's activated by an extra compiler option, [`/fsanitize-address-use-after-return`](../build/reference/fsanitize.md), and by setting the environment variable `ASAN_OPTIONS=detect_stack_use_after_return=1`.
 
@@ -21,6 +21,7 @@ Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm
 
 ```cpp
 // example1.cpp
+// stack-use-after-return error
 char* x;
 
 void foo() {
@@ -37,7 +38,7 @@ int main() {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example1.cpp /fsanitize=address /fsanitize-address-use-after-return /Zi
@@ -53,6 +54,7 @@ devenv /debugexe example1.exe
 
 ```cpp
 // example2.cpp
+// stack-use-after-return error
 #include <stdlib.h>
 
 enum ReadOrWrite { Read = 0, Write = 1 };
@@ -92,7 +94,7 @@ int main(int argc, char* argv[]) {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example2.cpp /fsanitize=address /fsanitize-address-use-after-return /Zi
@@ -103,3 +105,14 @@ devenv /debugexe example2.exe 1
 ### Resulting error - C++ and templates
 
 ![Screenshot of debugger displaying error in example2](media/stack-use-after-return-example2.png)
+
+## See also
+
+[AddressSanitizer overview](./asan.md)\
+[AddressSanitizer known issues](./asan-known-issues.md)\
+[AddressSanitizer build and language reference](./asan-building.md)\
+[AddressSanitizer runtime reference](./asan-runtime.md)\
+[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
+[AddressSanitizer error examples](./asan-examples.md)

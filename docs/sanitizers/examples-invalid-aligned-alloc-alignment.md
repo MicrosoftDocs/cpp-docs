@@ -1,12 +1,12 @@
 ---
-title: "Invalid _aligned_malloc"
+title: "invalid-aligned-alloc-alignment error"
 description: "Source examples and live debug screenshots for invalid _aligned_malloc errors."
 ms.date: 02/05/2021
 f1_keywords: ["invalid-aligned-malloc"]
 helpviewer_keywords: ["invalid-aligned-malloc"]
 ---
 
-# Invalid `_aligned_malloc`
+# Example: `invalid-aligned-alloc-alignment` error
 
 The [`_aligned_malloc`](../c-runtime-library/reference/aligned-malloc.md) function requires a power of 2 for expressing the alignment. We simulate the "external" calculation of some alignment factor using an unoptimized global variable. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
@@ -14,6 +14,7 @@ The [`_aligned_malloc`](../c-runtime-library/reference/aligned-malloc.md) functi
 
 ```cpp
 // example1.cpp
+// invalid-aligned-alloc-alignment error
 #include <Windows.h>
 
 int ExternalAlign = 5;
@@ -27,7 +28,7 @@ int main(){
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example1.cpp /fsanitize=address /Zi
@@ -37,3 +38,14 @@ devenv /debugexe example1.exe
 ### Resulting error
 
 ![Screenshot of debugger displaying error in example1](media/invalid-aligned-alloc-alignment-example1.png)
+
+## See also
+
+[AddressSanitizer overview](./asan.md)\
+[AddressSanitizer known issues](./asan-known-issues.md)\
+[AddressSanitizer build and language reference](./asan-building.md)\
+[AddressSanitizer runtime reference](./asan-runtime.md)\
+[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
+[AddressSanitizer error examples](./asan-examples.md)

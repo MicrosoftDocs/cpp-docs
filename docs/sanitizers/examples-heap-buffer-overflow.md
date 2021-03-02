@@ -1,12 +1,11 @@
 ---
-title: "Heap buffer overflow."
+title: "heap-buffer-overflow error"
 description: "Source examples and live debug screenshots for heap variable overflow errors."
 ms.date: 02/05/2021
 f1_keywords: ["heap-buffer-overflow"]
 helpviewer_keywords: ["heap-buffer-overflow"]
 ---
-
-# Heap buffer overflow
+# Example: `heap-buffer-overflow` error
 
 This example demonstrates the error that results when a memory access occurs outside the bounds of a heap-allocated object. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
@@ -14,6 +13,7 @@ This example demonstrates the error that results when a memory access occurs out
 
 ```cpp
 // example1.cpp
+// heap-buffer-overflow error
 #include <stdlib.h>
 #include <string.h>
 
@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example1.cpp /fsanitize=address /Zi
@@ -43,7 +43,7 @@ devenv /debugexe example1.exe
 
 ```cpp
 // example2.cpp
-
+// heap-buffer-overflow error
 class Parent {
 public:
     int field;
@@ -63,7 +63,7 @@ int main(void) {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example2.cpp /fsanitize=address /Zi
@@ -78,6 +78,7 @@ devenv /debugexe example2.exe
 
 ```cpp
 // example3.cpp
+// heap-buffer-overflow error
 #include <string.h>
 #include <stdlib.h>
 
@@ -93,7 +94,7 @@ int main(int argc, char **argv) {
 }
 ```
 
-To build and test this example, run these commands in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
+To build and test this example, run these commands in a Visual Studio 2019 version 16.9 or later [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts):
 
 ```cmd
 cl example3.cpp /fsanitize=address /Zi
@@ -103,3 +104,14 @@ devenv /debugexe example3.exe
 ### Resulting error - strncpy into heap
 
 ![Screenshot of debugger displaying error in example3](media/heap-buffer-overflow-example3.png)
+
+## See also
+
+[AddressSanitizer overview](./asan.md)\
+[AddressSanitizer known issues](./asan-known-issues.md)\
+[AddressSanitizer build and language reference](./asan-building.md)\
+[AddressSanitizer runtime reference](./asan-runtime.md)\
+[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](./asan-debugger-integration.md)\
+[AddressSanitizer error examples](./asan-examples.md)
