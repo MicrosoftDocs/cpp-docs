@@ -25,6 +25,8 @@ The Microsoft C++ Standard Library currently requires at least Clang 8.0.0. The 
 
 ![Screenshot of the Visual Studio installer with the Individual components tab selected and the C plus plus Clang components visible.](media/clang-install-vs2019.png)
 
+> Later versions of Visual Studio provide newer versions of the clang toolset. For example, VS 2019 (16.9) includes clang v11.
+
 ## Configure a Windows project to use Clang tools
 
 To configure a Visual Studio project to use Clang, right-click on the project node in **Solution Explorer** and choose **Properties**. Typically, you should first choose **All configurations** at the top of the dialog. Then, under **General** > **Platform Toolset**, choose **LLVM (clang-cl)** and then **OK**.
