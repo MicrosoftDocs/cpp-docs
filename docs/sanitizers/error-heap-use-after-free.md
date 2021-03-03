@@ -37,7 +37,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying heap-use-after-free error in example 1.](media/heap-use-after-free-example-1.png)
+:::image type="content" source="media/heap-use-after-free-example-1.png" alt-text="Screenshot of debugger displaying heap-use-after-free error in example 1.":::
 
 ## Example - `operator new`
 
@@ -66,7 +66,7 @@ devenv /debugexe example2.exe
 
 ### Resulting error - operator new
 
-![Screenshot of debugger displaying heap-use-after-free error in example 2.](media/heap-use-after-free-example-2.png)
+:::image type="content" source="media/heap-use-after-free-example-2.png" alt-text="Screenshot of debugger displaying heap-use-after-free error in example 2.":::
 
 ## Example - `realloc`
 
@@ -95,7 +95,7 @@ devenv /debugexe example3.exe
 
 ### Resulting error - realloc
 
-![Screenshot of debugger displaying heap-use-after-free error in example 3.](media/heap-use-after-free-example-3.png)
+:::image type="content" source="media/heap-use-after-free-example-3.png" alt-text="Screenshot of debugger displaying heap-use-after-free error in example 3.":::
 
 ## Example - volatile
 
@@ -124,7 +124,7 @@ devenv /debugexe example4.exe
 
 ### Resulting error - volatile
 
-![Screenshot of debugger displaying error in example 4.](media/heap-use-after-free-example-4.png)
+:::image type="content" source="media/heap-use-after-free-example-4.png" alt-text="Screenshot of debugger displaying error in example 4.":::
 
 ## See also
 

@@ -46,7 +46,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying allocation-size-too-big error in example 1.](media/allocation-size-too-big-example-1.png)
+:::image type="content" source="media/allocation-size-too-big-example-1.png" alt-text="Screenshot of debugger displaying allocation-size-too-big error in example 1.":::
 
 ## See also
 

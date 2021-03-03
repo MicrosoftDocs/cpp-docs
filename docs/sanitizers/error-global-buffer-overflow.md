@@ -59,7 +59,7 @@ devenv /debugexe example1-main.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying global-buffer-overflow error in example 1.](media/global-overflow-example-1.png)
+:::image type="content" source="media/global-overflow-example-1.png" alt-text="Screenshot of debugger displaying global-buffer-overflow error in example 1.":::
 
 ## Example - simple function level static
 
@@ -93,7 +93,7 @@ devenv /debugexe example2.exe
 
 ### Resulting error - simple function level static
 
-![Screenshot of debugger displaying global-buffer-overflow error in example 2.](media/global-overflow-example-2.png)
+:::image type="content" source="media/global-overflow-example-2.png" alt-text="Screenshot of debugger displaying global-buffer-overflow error in example 2.":::
 
 ## Example - all global scopes in C++
 
@@ -149,7 +149,7 @@ devenv /debugexe example3.exe -l
 
 ### Resulting error - all global scopes in C++
 
-![Screenshot of debugger displaying global-buffer-overflow error in example 3.](media/global-overflow-example-3.png)
+:::image type="content" source="media/global-overflow-example-3.png" alt-text="Screenshot of debugger displaying global-buffer-overflow error in example 3.":::
 
 ## See also
 

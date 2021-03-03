@@ -36,7 +36,7 @@ Microsoft's AddressSanitizer technology enables integration with the Visual Stud
 
 The AddressSanitizer is installed by default with C++ workloads in the Visual Studio Installer. However, if you're upgrading from an older version of Visual Studio 2019, you'll need to use the Installer to enable ASan support after the upgrade:
 
-![Visual Studio Installer screenshot highlighting the C++ AddressSanitizer component](media/asan-installer-option.png)
+:::image type="content" source="media/asan-installer-option.png" alt-text="Visual Studio Installer screenshot highlighting the C++ AddressSanitizer component":::
 
 You can choose **Modify** on your existing Visual Studio installation from the Visual Studio Installer to get to the screen above.
 
@@ -95,13 +95,13 @@ int main() {
 
 Using a developer command prompt for Visual Studio 2019, compile *`main.cpp`* using `/fsanitize=address /Zi`
 
-![Screenshot of a command prompt showing the command to compile with AddressSanitizer options](media/asan-command-basic-global-overflow.png)
+:::image type="content" source="media/asan-command-basic-global-overflow.png" alt-text="Screenshot of a command prompt showing the command to compile with AddressSanitizer options.":::
 
 When you run the resulting *`main.exe`* at the command line, it creates the formatted error report seen below.
 
 Consider the overlaid, red boxes that highlight seven key pieces of information:
 
-![Screenshot of the debugger showing a basic global overflow error](media/asan-basic-global-overflow.png)
+:::image type="content" source="media/asan-basic-global-overflow.png" alt-text="Screenshot of the debugger showing a basic global overflow error.":::
 
 ### Red highlights, from top to bottom
 
@@ -120,7 +120,7 @@ Consider the overlaid, red boxes that highlight seven key pieces of information:
 
 AddressSanitizer is integrated with the Visual Studio IDE. To turn on the AddressSanitizer for an MSBuild project, right-click on the project in Solution Explorer and choose Properties. In the Property Pages dialog, select **Configuration Properties** > **C/C++** > **General**, then modify the **Enable AddressSanitizer** property. Choose **OK** to save your changes.
 
-![Screenshot of the Property Pages dialog showing the Enable AddressSanitizer property](media/asan-project-system-dialog.png)
+:::image type="content" source="media/asan-project-system-dialog.png" alt-text="Screenshot of the Property Pages dialog showing the Enable AddressSanitizer property.":::
 
 To build from the IDE, opt out of [these incompatible options](./asan-known-issues.md#incompatible-options). For an existing project compiled by using **`/Od`** (or Debug mode), you may need to turn off these options:
 
@@ -130,7 +130,7 @@ To build from the IDE, opt out of [these incompatible options](./asan-known-issu
 
 To build and run the debugger, enter **F5**. You'll see this window in Visual Studio:
 
-![Screenshot of the debugger showing a global buffer overflow error](media/asan-global-buffer-overflow-F5.png)
+:::image type="content" source="media/asan-global-buffer-overflow-F5.png" alt-text="Screenshot of the debugger showing a global buffer overflow error.":::
 
 ## <a name="ide-cmake"></a> Using the AddressSanitizer from Visual Studio: CMake
 
@@ -138,7 +138,7 @@ To enable the AddressSanitizer for [a CMake project created to target Windows](.
 
 1. Open the **Configurations** dropdown in the toolbar at the top of the IDE and select **Manage Configurations**.
 
-   ![Screenshot of the CMake configuration dropdown](media/asan-cmake-configuration-dropdown.png)
+   :::image type="content" source="media/asan-cmake-configuration-dropdown.png" alt-text="Screenshot of the CMake configuration dropdown.":::
 
    That selection opens the CMake Project Settings UI, which is saved in a CMakeSettings.json file.
 
@@ -148,13 +148,13 @@ To enable the AddressSanitizer for [a CMake project created to target Windows](.
 
    This image is of CMakeSettings.json after that change:
 
-   ![Screenshot of the text editor view of CMakeSettings.json](media/asan-cmake-json.png)
+   :::image type="content" source="media/asan-cmake-json.png" alt-text="Screenshot of the text editor view of CMakeSettings.json.":::
 
 1. Enter **Ctrl+S** to save this JSON file, then enter **F5** to recompile and run under the debugger.
 
 This screenshot captures the error from the CMake build.
 
-![Screenshot of the CMake build error message](media/asan-cmake-error-f5.png)
+:::image type="content" source="media/asan-cmake-error-f5.png" alt-text="Screenshot of the CMake build error message.":::
 
 ## <a name="crash-dumps"></a> AddressSanitizer crash dumps
 
@@ -164,11 +164,11 @@ These new dump files can lead to efficiencies when analyzing a bug. You don't ne
 
 To produce a new type of dump file that can be viewed in Visual Studio on another machine at a later date:
 
-```makefile
+```cmd
 set ASAN_SAVE_DUMPS=MyFileName.dmp
 ```
 
-Starting with Visual Studio 16.9 you can display **a precisely diagnosed error**, stored in MyFileName.dmp, on top of your source code.
+Starting with Visual Studio 16.9 you can display **a precisely diagnosed error**, stored in your *`*.dmp`* file, on top of your source code.
 
 [This new crash dump functionality](./asan-offline-crash-dumps.md) enables cloud-based workflows, or distributed testing. It can also be used to file a detailed, actionable bug in any scenario.
 

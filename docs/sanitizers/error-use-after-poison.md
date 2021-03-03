@@ -41,7 +41,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying use-after-poison error in example 1.](media/use-after-poison-example-1.png)
+:::image type="content" source="media/use-after-poison-example-1.png" alt-text="Screenshot of debugger displaying use-after-poison error in example 1.":::
 
 ## See also
 

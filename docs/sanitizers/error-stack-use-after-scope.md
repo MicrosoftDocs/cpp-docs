@@ -40,7 +40,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error - simple nested local
 
-![Screenshot of debugger displaying stack-use-after-scope error in example 1.](media/stack-use-after-scope-example-1.png)
+:::image type="content" source="media/stack-use-after-scope-example-1.png" alt-text="Screenshot of debugger displaying stack-use-after-scope error in example 1.":::
 
 ## Example 2 - lambda capture
 
@@ -70,7 +70,7 @@ devenv /debugexe example2.exe
 
 ### Resulting error - lambda capture
 
-![Screenshot of debugger displaying stack-use-after-scope error in example 2.](media/stack-use-after-scope-example-2.png)
+:::image type="content" source="media/stack-use-after-scope-example-2.png" alt-text="Screenshot of debugger displaying stack-use-after-scope error in example 2.":::
 
 ## Example 3 - destructor ordering with locals
 
@@ -110,7 +110,7 @@ devenv /debugexe example3.exe
 
 ### Resulting error - destructor ordering
 
-![Screenshot of debugger displaying stack-use-after-scope error in example 3.](media/stack-use-after-scope-example-3.png)
+:::image type="content" source="media/stack-use-after-scope-example-3.png" alt-text="Screenshot of debugger displaying stack-use-after-scope error in example 3.":::
 
 ## Example 4 - temporaries
 
@@ -155,7 +155,7 @@ devenv /debugexe example4.exe
 
 ### Resulting error - temporaries
 
-![Screenshot of debugger displaying stack-use-after-scope error in example 4.](media/stack-use-after-scope-example-4.png)
+:::image type="content" source="media/stack-use-after-scope-example-4.png" alt-text="Screenshot of debugger displaying stack-use-after-scope error in example 4.":::
 
 ## See also
 

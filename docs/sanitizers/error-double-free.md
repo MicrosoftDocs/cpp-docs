@@ -38,7 +38,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error - double `operator delete`
 
-![Screenshot of debugger displaying double-free error in example 1.](media/double-free-example-1.png)
+:::image type="content" source="media/double-free-example-1.png" alt-text="Screenshot of debugger displaying double-free error in example 1.":::
 
 ## Example 'C' - double `free`
 
@@ -71,7 +71,7 @@ devenv /debugexe example2.exe
 
 ### Resulting error - double `free`
 
-![Screenshot of debugger displaying double-free error in example 2.](media/double-free-example-2.png)
+:::image type="content" source="media/double-free-example-2.png" alt-text="Screenshot of debugger displaying double-free error in example 2.":::
 
 ## Example - Windows `HeapCreate` double `HeapFree`
 
@@ -101,7 +101,7 @@ devenv /debugexe example3.exe
 
 ### Resulting error - Windows `HeapCreate` double `HeapFree`
 
-![Screenshot of debugger displaying double-free error in example 3.](media/double-free-example-3.png)
+:::image type="content" source="media/double-free-example-3.png" alt-text="Screenshot of debugger displaying double-free error in example 3.":::
 
 ## See also
 

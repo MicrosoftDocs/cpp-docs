@@ -38,7 +38,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying invalid-allocation-alignment error in example 1.](media/invalid-allocation-alignment-example-1.png)
+:::image type="content" source="media/invalid-allocation-alignment-example-1.png" alt-text="Screenshot of debugger displaying invalid-allocation-alignment error in example 1.":::
 
 ## See also
 

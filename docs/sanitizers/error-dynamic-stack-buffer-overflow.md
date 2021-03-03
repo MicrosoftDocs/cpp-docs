@@ -44,7 +44,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying dynamic-stack-buffer-overflow error in example 1.](media/dynamic-stack-buffer-overflow-example-1.png)
+:::image type="content" source="media/dynamic-stack-buffer-overflow-example-1.png" alt-text="Screenshot of debugger displaying dynamic-stack-buffer-overflow error in example 1.":::
 
 ## Example - `alloca` overflow (left)
 
@@ -76,7 +76,7 @@ devenv /debugexe example2.exe
 
 ### Resulting error - `alloca` overflow (left)
 
-![Screenshot of debugger displaying dynamic-stack-buffer-overflow error in example 2.](media/dynamic-stack-buffer-overflow-example-2.png)
+:::image type="content" source="media/dynamic-stack-buffer-overflow-example-2.png" alt-text="Screenshot of debugger displaying dynamic-stack-buffer-overflow error in example 2.":::
 
 ## Example - several calls to `alloca`
 
@@ -166,7 +166,7 @@ devenv /debugexe example3.exe
 
 ### Resulting error - several calls to alloca
 
-![Screenshot of debugger displaying dynamic-stack-buffer-overflow error in example 3.](media/dynamic-stack-buffer-overflow-example-3.png)
+:::image type="content" source="media/dynamic-stack-buffer-overflow-example-3.png" alt-text="Screenshot of debugger displaying dynamic-stack-buffer-overflow error in example 3.":::
 
 ## See also
 

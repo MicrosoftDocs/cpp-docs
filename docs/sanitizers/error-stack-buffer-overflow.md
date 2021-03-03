@@ -36,7 +36,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying stack-buffer-overflow error in example 1.](media/stack-buffer-overflow-example-1.png)
+:::image type="content" source="media/stack-buffer-overflow-example-1.png" alt-text="Screenshot of debugger displaying stack-buffer-overflow error in example 1.":::
 
 ## Example - Stack buffer math
 
@@ -72,7 +72,7 @@ devenv /debugexe example2.exe 9
 
 ### Resulting error - Stack buffer math
 
-![Screenshot of debugger displaying stack-buffer-overflow error in example 2.](media/stack-buffer-overflow-example-2.png)
+:::image type="content" source="media/stack-buffer-overflow-example-2.png" alt-text="Screenshot of debugger displaying stack-buffer-overflow error in example 2.":::
 
 ## Example - improper down cast on stack
 
@@ -108,7 +108,7 @@ devenv /debugexe example3.exe
 
 ### Resulting error - improper down cast on stack
 
-![Screenshot of debugger displaying stack-buffer-overflow error in example 3.](media/stack-buffer-overflow-example-3.png)
+:::image type="content" source="media/stack-buffer-overflow-example-3.png" alt-text="Screenshot of debugger displaying stack-buffer-overflow error in example 3.":::
 
 ## See also
 

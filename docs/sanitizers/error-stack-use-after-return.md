@@ -49,7 +49,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error - Simple C
 
-![Screenshot of debugger displaying stack-use-after-return error in example 1.](media/stack-use-after-return-example-1.png)
+:::image type="content" source="media/stack-use-after-return-example-1.png" alt-text="Screenshot of debugger displaying stack-use-after-return error in example 1.":::
 
 ## Example - C++ and templates
 
@@ -105,7 +105,7 @@ devenv /debugexe example2.exe 1
 
 ### Resulting error - C++ and templates
 
-![Screenshot of debugger displaying stack-use-after-return error in example 2.](media/stack-use-after-return-example-2.png)
+:::image type="content" source="media/stack-use-after-return-example-2.png" alt-text="Screenshot of debugger displaying stack-use-after-return error in example 2.":::
 
 ## See also
 

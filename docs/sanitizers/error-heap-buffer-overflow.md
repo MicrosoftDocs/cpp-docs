@@ -39,7 +39,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying heap-buffer-overflow error in example 1.](media/heap-buffer-overflow-example-1.png)
+:::image type="content" source="media/heap-buffer-overflow-example-1.png" alt-text="Screenshot of debugger displaying heap-buffer-overflow error in example 1.":::
 
 ## Example - improper down cast
 
@@ -74,7 +74,7 @@ devenv /debugexe example2.exe
 
 ### Resulting error - improper down cast
 
-![Screenshot of debugger displaying heap-buffer-overflow error in example 2.](media/heap-buffer-overflow-example-2.png)
+:::image type="content" source="media/heap-buffer-overflow-example-2.png" alt-text="Screenshot of debugger displaying heap-buffer-overflow error in example 2.":::
 
 ## Example - strncpy into heap
 
@@ -105,7 +105,7 @@ devenv /debugexe example3.exe
 
 ### Resulting error - strncpy into heap
 
-![Screenshot of debugger displaying heap-buffer-overflow error in example 3.](media/heap-buffer-overflow-example-3.png)
+:::image type="content" source="media/heap-buffer-overflow-example-3.png" alt-text="Screenshot of debugger displaying heap-buffer-overflow error in example 3.":::
 
 ## See also
 

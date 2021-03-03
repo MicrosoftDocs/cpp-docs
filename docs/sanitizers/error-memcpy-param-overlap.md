@@ -43,7 +43,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying memcpy-param-overlap error in example 1.](media/memcpy-param-overlap-example-1.png)
+:::image type="content" source="media/memcpy-param-overlap-example-1.png" alt-text="Screenshot of debugger displaying memcpy-param-overlap error in example 1.":::
 
 ## See also
 

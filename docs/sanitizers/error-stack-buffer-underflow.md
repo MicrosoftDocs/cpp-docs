@@ -37,7 +37,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying stack-buffer-underflow error in example 1.](media/stack-buffer-underflow-example-1.png)
+:::image type="content" source="media/stack-buffer-underflow-example-1.png" alt-text="Screenshot of debugger displaying stack-buffer-underflow error in example 1.":::
 
 ## Example - stack underflow on thread
 
@@ -74,7 +74,7 @@ devenv /debugexe example2.exe
 
 ### Resulting error  - stack underflow on thread
 
-![Screenshot of debugger displaying stack-buffer-underflow error in example 2.](media/stack-buffer-underflow-example-2.png)
+:::image type="content" source="media/stack-buffer-underflow-example-2.png" alt-text="Screenshot of debugger displaying stack-buffer-underflow error in example 2.":::
 
 ## See also
 

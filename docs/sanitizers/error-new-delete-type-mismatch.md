@@ -60,7 +60,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying new-delete-type-mismatch error in example 1.](media/new-delete-type-mismatch-example-1.png)
+:::image type="content" source="media/new-delete-type-mismatch-example-1.png" alt-text="Screenshot of debugger displaying new-delete-type-mismatch error in example 1.":::
 
 ## See also
 

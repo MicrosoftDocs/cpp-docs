@@ -41,7 +41,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying calloc-overflow error in example 1.](media/calloc-overflow-example-1.png)
+:::image type="content" source="media/calloc-overflow-example-1.png" alt-text="Screenshot of debugger displaying calloc-overflow error in example 1.":::
 
 ## See also
 
