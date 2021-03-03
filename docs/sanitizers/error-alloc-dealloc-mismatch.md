@@ -1,12 +1,13 @@
 ---
-title: "alloc-dealloc-mismatch error"
+title: "Error: alloc-dealloc-mismatch"
 description: "Source examples and live debug screenshots for alloc-dealloc-mismatch errors."
-ms.date: 02/05/2021
+ms.date: 03/02/2021
 f1_keywords: ["alloc-dealloc-mismatch"]
-helpviewer_keywords: ["alloc-dealloc-mismatch"]
+helpviewer_keywords: ["alloc-dealloc-mismatch error", "AddressSanitizer error alloc-dealloc-mismatch"]
 ---
+# Error: `alloc-dealloc-mismatch`
 
-# Example: `alloc-dealloc-mismatch` error
+> Address Sanitizer Error: Mismatch between allocation and deallocation APIs
 
 The `alloc`/`dealloc` mismatch functionality in AddressSanitizer is off by default for Windows. To enable it, run `set ASAN_OPTIONS=alloc_dealloc_mismatch=1` before running the program. This environment variable is checked at runtime to report errors on `malloc`/`delete`, `new`/`free`, and `new`/`delete[]`. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
@@ -60,4 +61,4 @@ devenv /debugexe example1.exe 2
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

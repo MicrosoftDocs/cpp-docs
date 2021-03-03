@@ -1,11 +1,13 @@
 ---
-title: "calloc-overflow error"
-description: "Source examples and live debug screenshots for calloc() overflow errors."
-ms.date: 02/05/2021
+title: "Error: calloc-overflow"
+description: "Source examples and live debug screenshots for calloc overflow errors."
+ms.date: 03/02/2021
 f1_keywords: ["calloc-overflow"]
-helpviewer_keywords: ["calloc overflow"]
+helpviewer_keywords: ["calloc-overflow error", "AddressSanitizer error calloc-overflow"]
 ---
-# Example: `calloc-overflow` error
+# Error: `calloc-overflow`
+
+> Address Sanitizer Error: calloc-overflow
 
 The CRT function [`calloc`](../c-runtime-library/reference/calloc.md) creates an array in memory with elements initialized to 0. The arguments can create an internal error that leads to a NULL pointer as the return value. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
@@ -50,4 +52,4 @@ devenv /debugexe example1.exe
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

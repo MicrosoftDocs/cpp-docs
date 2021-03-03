@@ -1,12 +1,13 @@
 ---
-title: "use-after-poison error"
+title: "Error: use-after-poison"
 description: "Source examples and live debug screenshots for use after poison errors."
-ms.date: 02/05/2021
+ms.date: 03/02/2021
 f1_keywords: ["use-after-poison"]
-helpviewer_keywords: ["Use after poison"]
+helpviewer_keywords: ["use-after-poison error", "AddressSanitizer error use-after-poison"]
 ---
+# Error: `use-after-poison`
 
-# Example: `use-after-poison` error
+> Address Sanitizer Error: Use of poisoned memory
 
 A developer can manually poison memory to customize debugging. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
@@ -51,4 +52,4 @@ devenv /debugexe example1.exe
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

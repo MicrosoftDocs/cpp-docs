@@ -1,11 +1,13 @@
 ---
-title: "heap-buffer-overflow error"
+title: "Error: heap-buffer-overflow"
 description: "Source examples and live debug screenshots for heap variable overflow errors."
-ms.date: 02/05/2021
+ms.date: 03/02/2021
 f1_keywords: ["heap-buffer-overflow"]
-helpviewer_keywords: ["heap-buffer-overflow"]
+helpviewer_keywords: ["heap-buffer-overflow error", "AddressSanitizer error heap-buffer-overflow"]
 ---
-# Example: `heap-buffer-overflow` error
+# Error: `heap-buffer-overflow`
+
+> Address Sanitizer Error: Heap buffer overflow
 
 This example demonstrates the error that results when a memory access occurs outside the bounds of a heap-allocated object. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
@@ -114,4 +116,4 @@ devenv /debugexe example3.exe
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

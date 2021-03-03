@@ -29,7 +29,7 @@ landingContent:
           - text: AddressSanitizer cloud or distributed testing
             url: ./asan-offline-crash-dumps.md
           - text: AddressSanitizer error examples
-            url: ./asan-examples.md
+            url: ./asan-error-examples.md
 
   # Card (optional)
   - title: Instrument your builds

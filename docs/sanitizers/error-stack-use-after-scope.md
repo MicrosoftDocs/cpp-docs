@@ -1,12 +1,13 @@
 ---
-title: "stack-use-after-scope error"
-description: "Source examples and live debug screenshots for Stack Use After Scope errors."
+title: "Error: stack-use-after-scope"
+description: "Source examples and live debug screenshots for stack use after scope errors."
 ms.date: 02/05/2021
 f1_keywords: ["stack-use-after-scope"]
-helpviewer_keywords: ["Stack Use After Scope"]
+helpviewer_keywords: ["stack-use-after-scope error", "AddressSanitizer error stack-use-after-scope"]
 ---
+# Error: `stack-use-after-scope`
 
-# Example: `stack-use-after-scope` error
+> Address Sanitizer Error: Use of out-of-scope stack memory
 
 The use of a stack address outside the lexical scope of a variable's lifetime can happen many ways in C or C++.
 
@@ -165,4 +166,4 @@ devenv /debugexe example4.exe
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

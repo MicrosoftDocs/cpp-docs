@@ -86,4 +86,4 @@ For external documentation, see:
 [AddressSanitizer runtime reference](./asan-runtime.md)\
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

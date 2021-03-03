@@ -1,12 +1,13 @@
 ---
-title: "stack-buffer-overflow error"
+title: "Error: stack-buffer-overflow"
 description: "Source examples and live debug screenshots for Stack buffer overflow errors."
-ms.date: 02/05/2021
+ms.date: 03/02/2021
 f1_keywords: ["stack-buffer-overflow"]
-helpviewer_keywords: ["Stack buffer overflow"]
+helpviewer_keywords: ["stack-buffer-overflow error", "AddressSanitizer error stack-buffer-overflow"]
 ---
+# Error: `stack-buffer-overflow`
 
-# Example: `stack-buffer-overflow` error
+> Address Sanitizer Error: Stack buffer overflow
 
 A stack buffer overflow can happen many ways in C or C++. We provide several examples for this category of error that you can catch by a simple recompile. Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
@@ -118,4 +119,4 @@ devenv /debugexe example3.exe
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

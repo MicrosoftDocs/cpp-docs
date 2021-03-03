@@ -76,7 +76,7 @@ By default, the MSVC compiler (unlike Clang) doesn't generate code to allocate f
 
 The **`/fsanitize-address-use-after-return`** option causes the compiler to generate code to use a dual stack frame in the heap when locals are considered "address taken". This code is **much slower** than just using **`/fsanitize=address`** alone.
 
-See the [Stack Use After Return example](examples-stack-use-after-return.md) for sample usage.
+See the [`stack-use-after-return` error](error-stack-use-after-return.md) for sample usage.
 
 The dual stack frame in the heap remains after the return from the function that created it. Consider an example where the address of a local, allocated to a slot in the heap, is used after the return. The shadow bytes associated with the fake heap frame contain the value 0xf9. That 0xF9 means a stack-use-after-return error when the runtime reports the error.
 
@@ -141,4 +141,4 @@ To enable this behavior, run the command `set ASAN_VCASAN_DEBUGGING=1` before yo
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

@@ -1,12 +1,13 @@
 ---
-title: "stack-use-after-return error"
+title: "Error: stack-use-after-return"
 description: "Source examples and live debug screenshots for Stack Use After Return errors."
-ms.date: 02/05/2021
+ms.date: 03/02/2021
 f1_keywords: ["stack-use-after-return"]
-helpviewer_keywords: ["Stack Use After Return"]
+helpviewer_keywords: ["stack-use-after-return error", "AddressSanitizer error stack-use-after-return"]
 ---
+# Error: `stack-use-after-return`
 
-# Example: `stack-use-after-return` error
+> Address Sanitizer Error: Use of stack memory after return
 
 This functionality requires code generation that's activated by an extra compiler option, [`/fsanitize-address-use-after-return`](../build/reference/fsanitize.md), and by setting the environment variable `ASAN_OPTIONS=detect_stack_use_after_return=1`.
 
@@ -115,4 +116,4 @@ devenv /debugexe example2.exe 1
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

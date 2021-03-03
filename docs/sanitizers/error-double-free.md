@@ -1,12 +1,14 @@
 ---
-title: "double-free error"
+title: "Error: double-free"
 description: "Source examples and live debug screenshots for double free errors."
-ms.date: 02/05/2021
+ms.date: 03/02/2021
 f1_keywords: ["double-free"]
-helpviewer_keywords: ["double free"]
+helpviewer_keywords: ["double-free error", "AddressSanitizer error double-free"]
 ---
 
-# Example: `double-free` error
+# Error: `double-free`
+
+> Address Sanitizer Error: Deallocation of freed memory
 
 In C, you can call `free` erroneously. In C++, you can call `delete` more than once. In these examples, we show errors with `delete`, `free`, and `HeapCreate`. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
@@ -110,4 +112,4 @@ devenv /debugexe example3.exe
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

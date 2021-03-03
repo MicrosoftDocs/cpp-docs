@@ -1,16 +1,17 @@
 ---
-title: "global-overflow error"
+title: "Error: global-buffer-overflow"
 description: "Source examples and live debug screenshots for global variable overflow errors."
-ms.date: 02/05/2021
+ms.date: 03/02/2021
 f1_keywords: ["global-buffer-overflow"]
-helpviewer_keywords: ["global-buffer-overflow"]
+helpviewer_keywords: ["global-buffer-overflow error", "AddressSanitizer error global-buffer-overflow"]
 ---
+# Error: `global-buffer-overflow`
 
-# Example: `global-overflow` error
+> Address Sanitizer Error: Global buffer overflow
 
-The compiler generates metadata for any variable in the `.data` or `.bss` sections. These variables have language scope of global or file static. They're allocated in memory before main() starts. Global variables in C are treated much differently than in C++. This difference is because of the complex rules for linking.  
+The compiler generates metadata for any variable in the `.data` or `.bss` sections. These variables have language scope of global or file static. They're allocated in memory before `main()` starts. Global variables in C are treated much differently than in C++. This difference is because of the complex rules for C++ linking.  
 
-In C, a global variable can be declared in several source files, and each definition can have different types. The compiler can't see all the possible definitions. However, the linker does see all the different definitions. The linker defaults to selecting the largest sized variable out of all the different declarations.
+In C, a global variable can be declared in several source files, and each definition can have different types. The compiler can't see all the possible definitions at once. However, the linker does see all the different definitions. For C, the linker defaults to selecting the largest-sized variable out of all the different declarations.
 
 In C++, a global is allocated by the compiler. There can only be one definition, so the size of each definition is known at compile time.
 
@@ -159,4 +160,4 @@ devenv /debugexe example3.exe -l
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

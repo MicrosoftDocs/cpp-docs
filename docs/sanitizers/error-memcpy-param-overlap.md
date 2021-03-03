@@ -1,12 +1,13 @@
 ---
-title: "memcpy-param-overlap error"
+title: "Error: memcpy-param-overlap"
 description: "Source examples and live debug screenshots for memcpy parameter overlap errors."
-ms.date: 02/05/2021
-f1_keywords: ["memcpy-parameter-overlap"]
-helpviewer_keywords: ["memcpy parameter overlap"]
+ms.date: 03/02/2021
+f1_keywords: ["memcpy-param-overlap"]
+helpviewer_keywords: ["memcpy-param-overlap error", "AddressSanitizer error memcpy-param-overlap"]
 ---
+# Error: `memcpy-param-overlap`
 
-# Example: `memcpy-param-overlap` error
+> Address Sanitizer Error: memcpy-param-overlap
 
 The CRT function [`memcpy`](../c-runtime-library/reference/memcpy-wmemcpy.md) **doesn't support** overlapping memory. The CRT provides an alternative to `memcpy` that does support overlapping memory: [`memmove`](../c-runtime-library/reference/memmove-wmemmove.md).
 
@@ -53,4 +54,4 @@ devenv /debugexe example1.exe
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

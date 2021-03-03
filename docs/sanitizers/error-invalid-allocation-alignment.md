@@ -1,12 +1,13 @@
 ---
-title: "invalid-aligned-alloc-alignment error"
+title: "Error: invalid-allocation-alignment"
 description: "Source examples and live debug screenshots for invalid _aligned_malloc errors."
-ms.date: 02/05/2021
-f1_keywords: ["invalid-aligned-malloc"]
-helpviewer_keywords: ["invalid-aligned-malloc"]
+ms.date: 03/02/2021
+f1_keywords: ["invalid-allocation-alignment"]
+helpviewer_keywords: ["invalid-allocation-alignment error", "AddressSanitizer error invalid-allocation-alignment"]
 ---
+# Error: `invalid-allocation-alignment`
 
-# Example: `invalid-aligned-alloc-alignment` error
+> Address Sanitizer Error: invalid-allocation-alignment
 
 The [`_aligned_malloc`](../c-runtime-library/reference/aligned-malloc.md) function requires a power of 2 for expressing the alignment. We simulate the "external" calculation of some alignment factor using an unoptimized global variable. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
@@ -14,7 +15,7 @@ The [`_aligned_malloc`](../c-runtime-library/reference/aligned-malloc.md) functi
 
 ```cpp
 // example1.cpp
-// invalid-aligned-alloc-alignment error
+// invalid-allocation-alignment error
 #include <Windows.h>
 
 int ExternalAlign = 5;
@@ -37,7 +38,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying error in example1](media/invalid-aligned-alloc-alignment-example1.png)
+![Screenshot of debugger displaying error in example1](media/invalid-allocation-alignment-example1.png)
 
 ## See also
 
@@ -48,4 +49,4 @@ devenv /debugexe example1.exe
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

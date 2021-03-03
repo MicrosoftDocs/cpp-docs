@@ -1,0 +1,59 @@
+---
+title: "AddressSanitizer error reference"
+description: "Top-level description of the AddressSanitizer errors and examples in Microsoft C/C++."
+ms.date: 03/01/2021
+helpviewer_keywords: ["ASan error examples", "AddressSanitizer error examples", "Address Sanitizer error examples", "Error examples for AddressSanitizer"]
+---
+# AddressSanitizer error examples
+
+In this section, we list a set of the errors supported by AddressSanitizer in Microsoft C/C++ (MSVC). In each article, we've ported some examples that help you learn to use the AddressSanitizer features supported by MSVC in your code. These examples are based on sources in the [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+
+## Build the error examples
+
+Each error example provides source code and compilation instructions for a command-line build. To build each example, open a developer command prompt. Create a folder for your example project, then make it the current directory. Then copy the example code into a source file with the appropriate name, such as *`example1.cpp`*. Follow the build instructions to generate and run the instrumented code in the debugger.
+
+## Errors with examples
+
+- [Error: `alloc-dealloc-mismatch`](./error-alloc-dealloc-mismatch.md)
+
+- [Error: `allocation-size-too-big`](./error-allocation-size-too-big.md)
+
+- [Error: `calloc-overflow`](./error-calloc-overflow.md)
+
+- [Error: `double-free`](./error-double-free.md)
+
+- [Error: `dynamic-stack-buffer-overflow`](./error-dynamic-stack-buffer-overflow.md)
+
+- [Error: `global-overflow`](./error-global-buffer-overflow.md)
+
+- [Error: `heap-buffer-overflow`](./error-heap-buffer-overflow.md)
+
+- [Error: `heap-use-after-free`](./error-heap-use-after-free.md)
+
+- [Error: `invalid-allocation-alignment`](./error-invalid-allocation-alignment.md)
+
+- [Error: `memcpy-param-overlap`](./error-memcpy-param-overlap.md)
+
+- [Error: `new-delete-type-mismatch`](./error-new-delete-type-mismatch.md)
+
+- [Error: `stack-buffer-overflow`](./error-stack-buffer-overflow.md)
+
+- [Error: `stack-buffer-underflow`](./error-stack-buffer-underflow.md)
+
+- [Error: `stack-use-after-return`](./error-stack-use-after-return.md)
+
+- [Error: `stack-use-after-scope`](./error-stack-use-after-scope.md)
+
+- [Error: `strncat-param-overlap`](./error-strncat-param-overlap.md)
+
+- [Error: `use-after-poison`](./error-use-after-poison.md)
+
+## See also
+
+[AddressSanitizer overview](./asan.md)\
+[AddressSanitizer known issues](./asan-known-issues.md)\
+[AddressSanitizer build and language reference](./asan-building.md)\
+[AddressSanitizer runtime reference](./asan-runtime.md)\
+[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
+[AddressSanitizer debugger integration](./asan-debugger-integration.md)

@@ -1,12 +1,13 @@
 ---
-title: "heap-use-after-free error"
+title: "Error: heap-use-after-free"
 description: "Source examples and live debug screenshots for heap use after free errors."
-ms.date: 02/05/2021
+ms.date: 03/02/2021
 f1_keywords: ["heap-use-after-free"]
-helpviewer_keywords: ["heap-use-after-free"]
+helpviewer_keywords: ["heap-use-after-free error", "AddressSanitizer error heap-use-after-free"]
 ---
+# Error: `heap-use-after-free`
 
-# Example: `heap-use-after-free` error
+> Address Sanitizer Error: Use of deallocated memory
 
 We show three examples where storage in the heap can be allocated via `malloc`, `realloc` (C), and `new` (C++), along with a mistaken use of `volatile`. Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
@@ -134,4 +135,4 @@ devenv /debugexe example4.exe
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)

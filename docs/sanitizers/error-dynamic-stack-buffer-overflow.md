@@ -1,12 +1,13 @@
 ---
-title: "dynamic-stack-buffer-overflow error"
+title: "Error: dynamic-stack-buffer-overflow"
 description: "Source examples and live debug screenshots for alloca errors."
-ms.date: 02/05/2021
-f1_keywords: ["dynamic-stack-overflow"]
-helpviewer_keywords: ["dynamic stack overflow"]
+ms.date: 03/02/2021
+f1_keywords: ["dynamic-stack-buffer-overflow"]
+helpviewer_keywords: ["dynamic-stack-buffer-overflow error", "AddressSanitizer error dynamic-stack-buffer-overflow"]
 ---
+# Error: `dynamic-stack-buffer-overflow`
 
-# Example: `dynamic-stack-buffer-overflow` error
+> Address Sanitizer Error: dynamic-stack-buffer-overflow
 
 This example shows the error that results from a buffer access outside the bounds of a stack-allocated object. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
@@ -176,4 +177,4 @@ devenv /debugexe example3.exe
 [AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
-[AddressSanitizer error examples](./asan-examples.md)
+[AddressSanitizer error examples](./asan-error-examples.md)
