@@ -60,7 +60,7 @@ The [`/fsanitize=address`](../build/reference/fsanitize.md) compiler option inst
 
 **`/fsanitize=address`** is compatible with all existing C++ or C optimization levels (for example, **`/Od`**, **`/O1`**, **`/O2`**, **`/O2 /GL`**, and profile guided optimization). The code produced with this option works with static and dynamic CRTs (for example, **`/MD`**, **`/MDd`**, **`/MT`**, and **`/MTd`**). This compiler option can be used to create an .EXE or .DLL targeting x86 or x64. Debug information is required for optimal formatting of call stacks.
 
-See [the examples](asan.md#error-types) for sample usage.
+See [the examples in the error reference](asan-error-examples.md) for sample usage.
 
 ### `/fsanitize-address-use-after-return` compiler option (experimental)
 
@@ -79,18 +79,18 @@ Stack frames are allocated in the heap and remain after functions return. The ru
 
 ### `/INFERASANLIBS[:NO]` linker option
 
-The **`/fsanitize=address`** compiler option marks objects to specify the AddressSanitizer library to link into your executable. The libraries have names that begin with `clang_rt.asan*`. The [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) linker option (on by default) links these libraries from their default locations automatically. Here are the libraries chosen and automatically linked in:
+The **`/fsanitize=address`** compiler option marks objects to specify the AddressSanitizer library to link into your executable. The libraries have names that begin with *`clang_rt.asan*`*. The [`/INFERASANLIBS`](../build/reference/inferasanlibs.md) linker option (on by default) links these libraries from their default locations automatically. Here are the libraries chosen and automatically linked in:
 
-| CRT option | DLL or EXE | DEBUG? | AddressSanitizer runtime libraries                                               |
-|----------|------------|--------|------------------------------------------------------------------------------------|
-| MT       | EXE        | NO     | `clang_rt.asan-{arch}, clang_rt.asan_cxx-{arch}`                                   |
-| MT       | DLL        | NO     | `clang_rt.asan_dll_thunk-{arch}`                                                   |
-| MD       | EITHER     | NO     | `clang_rt.asan_dynamic-{arch}, clang_rt.asan_dynamic_runtime_thunk-{arch}`         |
-| MT       | EXE        | YES    | `clang_rt.asan_dbg-{arch}, clang_rt.asan_dbg_cxx-{arch}`                           |
-| MT       | DLL        | YES    | `clang_rt.asan_dbg_dll_thunk-{arch}`                                               |
-| MD       | EITHER     | YES    | `clang_rt.asan_dbg_dynamic-{arch}, clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}` |
+| CRT option | DLL or EXE | DEBUG? | AddressSanitizer runtime libraries |
+|--|--|--|--|
+| MT | EXE | NO | *`clang_rt.asan-{arch}`*, *`clang_rt.asan_cxx-{arch}`* |
+| MT | DLL | NO | *`clang_rt.asan_dll_thunk-{arch}`* |
+| MD | EITHER | NO | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* |
+| MT | EXE | YES | *`clang_rt.asan_dbg-{arch}`*, *`clang_rt.asan_dbg_cxx-{arch}`* |
+| MT | DLL | YES | *`clang_rt.asan_dbg_dll_thunk-{arch}`* |
+| MD | EITHER | YES | *`clang_rt.asan_dbg_dynamic-{arch}`*, *`clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}`* |
 
-The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) prevents the linker from linking a `clang_rt.asan*` library file from the default location. Add the library path in your build scripts if you use this option. Otherwise, the linker reports an unresolved external symbol error.
+The linker option [`/INFERASANLIBS:NO`](../build/reference/inferasanlibs.md) prevents the linker from linking a *`clang_rt.asan*`* library file from the default location. Add the library path in your build scripts if you use this option. Otherwise, the linker reports an unresolved external symbol error.
 
 ## Visual Studio integration
 

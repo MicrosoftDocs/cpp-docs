@@ -13,7 +13,7 @@ Use the **`/fsanitize`** compiler options to enable sanitizers. As of Visual Stu
 
 > **`/fsanitize=address`**\
 > **`/fsanitize-address-use-after-return`**\
-> **`/fno-sanitize-address-vcasan-lib`**\
+> **`/fno-sanitize-address-vcasan-lib`**
 
 ## Remarks
 

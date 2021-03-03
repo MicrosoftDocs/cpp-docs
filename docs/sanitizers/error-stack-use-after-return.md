@@ -18,7 +18,7 @@ Consider the [Clang summary](https://github.com/google/sanitizers/wiki/AddressSa
 
 Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
-## Example - Simple 'C'
+## Example - Simple C
 
 ```cpp
 // example1.cpp
@@ -47,7 +47,7 @@ set ASAN_OPTIONS=detect_stack_use_after_return=1
 devenv /debugexe example1.exe
 ```
 
-### Resulting error - Simple 'C'
+### Resulting error - Simple C
 
 ![Screenshot of debugger displaying error in example1](media/stack-use-after-return-example1.png)
 

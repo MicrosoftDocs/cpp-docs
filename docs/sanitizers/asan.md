@@ -78,7 +78,7 @@ This article covers the information you require to enable the three workflows li
 
 Use the **`/fsanitize=address`** compiler option in a [developer command prompt](../build/building-on-the-command-line.md#developer_command_prompt_shortcuts) to enable compiling for the AddressSanitizer runtime. The **`/fsanitize=address`** option is compatible with all existing C++ or C optimization levels (for example, `/Od`, `/O1`, `/O2`, `/O2 /GL`, and `PGO`). The option works with static and dynamic CRTs (for example, `/MD`, `/MDd`, `/MT`, and `/MTd`). It works whether you create an EXE or a DLL. Debug information is required for optimal formatting of call stacks. In the example below, `cl /fsanitize=address /Zi` is passed on the command line.
 
-The AddressSanitizer libraries (.lib files) get linked for you automatically. For more information, and for guidelines on partitioned build systems, see [building to target the AddressSanitizer runtime](./asan-building.md).
+The AddressSanitizer libraries (.lib files) get linked for you automatically. For more information, see [AddressSanitizer language, build, and debugging reference](asan-building.md).
 
 ### Example - basic global buffer overflow
 

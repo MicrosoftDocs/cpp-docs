@@ -7,29 +7,29 @@ helpviewer_keywords: ["AddressSanitizer runtime", "Address Sanitizer runtime", "
 
 # AddressSanitizer runtime
 
-The AddressSanitizer runtime library intercepts common memory allocation functions and operations to enable inspection of memory accesses. There are several different runtime libraries that support the various types of executables the compiler may generate. The compiler and linker automatically link the appropriate runtime libraries, as long as you pass the [`/fsanitize=address`](../build/reference/fsanitize.md) option at compile time. You can override the default behavior by using the `/nodefaultlib` option at link time. For more information, see the section on [linking](./asan-building.md#linker) in the [AddressSanitizer language, build, and debugging reference](./asan-building.md).
+The AddressSanitizer runtime library intercepts common memory allocation functions and operations to enable inspection of memory accesses. There are several different runtime libraries that support the various types of executables the compiler may generate. The compiler and linker automatically link the appropriate runtime libraries, as long as you pass the [`/fsanitize=address`](../build/reference/fsanitize.md) option at compile time. You can override the default behavior by using the **`/NODEFAULTLIB`** option at link time. For more information, see the section on [linking](./asan-building.md#linker) in the [AddressSanitizer language, build, and debugging reference](./asan-building.md).
 
-Below is an inventory of runtime libraries for linking to the AddressSanitizer runtime, where `arch` is either `i386` or `x86_64`.
+Below is an inventory of runtime libraries for linking to the AddressSanitizer runtime, where *`{arch}`* is either *`i386`* or *`x86_64`*.
 
 > [!NOTE]
 > These libraries keep the Clang conventions for architecture names. The MSVC conventions are normally x86 and x64 rather than i386 and x86_64. They refer to the same architectures.
 
-| CRT option | DLL or EXE | DEBUG? | AddressSanitizer runtime binaries libraries                                       |
-|----------|------------|--------|------------------------------------------------------------------------------------|
-| MT       | EXE        | NO     | `clang_rt.asan-{arch}, clang_rt.asan_cxx-{arch}`                                   |
-| MT       | DLL        | NO     | `clang_rt.asan_dll_thunk-{arch}`                                                   |
-| MD       | EITHER     | NO     | `clang_rt.asan_dynamic-{arch}, clang_rt.asan_dynamic_runtime_thunk-{arch}`         |
-| MT       | EXE        | YES    | `clang_rt.asan_dbg-{arch}, clang_rt.asan_dbg_cxx-{arch}`                           |
-| MT       | DLL        | YES    | `clang_rt.asan_dbg_dll_thunk-{arch}`                                               |
-| MD       | EITHER     | YES    | `clang_rt.asan_dbg_dynamic-{arch}, clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}` |
+| CRT option | DLL or EXE | DEBUG? | AddressSanitizer runtime binaries libraries |
+|--|--|--|--|
+| MT | EXE | NO | *`clang_rt.asan-{arch}`*, *`clang_rt.asan_cxx-{arch}`* |
+| MT | DLL | NO | *`clang_rt.asan_dll_thunk-{arch}`* |
+| MD | EITHER | NO | *`clang_rt.asan_dynamic-{arch}`*, *`clang_rt.asan_dynamic_runtime_thunk-{arch}`* |
+| MT | EXE | YES | *`clang_rt.asan_dbg-{arch}`*, *`clang_rt.asan_dbg_cxx-{arch}`* |
+| MT | DLL | YES | *`clang_rt.asan_dbg_dll_thunk-{arch}`* |
+| MD | EITHER | YES | *`clang_rt.asan_dbg_dynamic-{arch}`*, *`clang_rt.asan_dbg_dynamic_runtime_thunk-{arch}`* |
 
-When compiling with `cl /fsanitize=address`, the compiler generates instructions to manage and check the [shadow-bytes](./asan-shadowbytes.md). Your program uses this instrumentation to check memory accesses on the stack, in the heap, or in the global scope. The compiler also produces metadata describing stack and global variables. This metadata enables the runtime to generate precise error diagnostics: function names, lines, and columns in your source code. Combined, the compiler checks and runtime libraries can precisely diagnose many types of [memory safety bugs](./asan.md#error-types) if they're encountered at run-time.
+When compiling with `cl /fsanitize=address`, the compiler generates instructions to manage and check the [shadow bytes](./asan-shadowbytes.md). Your program uses this instrumentation to check memory accesses on the stack, in the heap, or in the global scope. The compiler also produces metadata describing stack and global variables. This metadata enables the runtime to generate precise error diagnostics: function names, lines, and columns in your source code. Combined, the compiler checks and runtime libraries can precisely diagnose many types of [memory safety bugs](./asan-error-examples.md) if they're encountered at run-time.
 
 ## Function interception
 
 The AddressSanitizer achieves function interception through many hot-patching techniques. These techniques are [best documented within the source code itself](https://github.com/llvm/llvm-project/blob/1a2eaebc09c6a200f93b8beb37130c8b8aab3934/compiler-rt/lib/interception/interception_win.cpp#L11).
 
-The runtime libraries intercept many common memory management and memory manipulation functions. For a list, see [A complete list of intercepted functions is available below.](#intercepted_functions) The allocation interceptors manage metadata and shadow bytes related to each allocation call. Every time a CRT function such as `malloc` or `delete` is called, the interceptors set specific values in the AddressSanitizer shadow-memory region to indicate whether those heap locations are currently accessible and what the bounds of the allocation are. These shadow bytes allow the compiler-generated checks of the [shadow bytes](./asan-shadowbytes.md) to determine whether a load or store is valid.
+The runtime libraries intercept many common memory management and memory manipulation functions. For a list, see [AddressSanitizer list of intercepted functions](#intercepted_functions). The allocation interceptors manage metadata and shadow bytes related to each allocation call. Every time a CRT function such as `malloc` or `delete` is called, the interceptors set specific values in the AddressSanitizer shadow-memory region to indicate whether those heap locations are currently accessible and what the bounds of the allocation are. These shadow bytes allow the compiler-generated checks of the [shadow bytes](./asan-shadowbytes.md) to determine whether a load or store is valid.
 
 Interception isn't guaranteed to succeed. If a function prologue is too short for a `jmp` to be written, interception can fail. If an interception failure occurs, the program throws a `debugbreak` and halts. If you attach a debugger, it makes the cause of the interception issue clear. If you have this problem, [report a bug](https://aka.ms/feedback/report?space=62).
 
@@ -40,7 +40,7 @@ Interception isn't guaranteed to succeed. If a function prologue is too short fo
 
 The AddressSanitizer runtime provides interceptors for common allocator interfaces, `malloc`/`free`, `new`/`delete`, `HeapAlloc`/`HeapFree` (via `RtlAllocateHeap`/`RtlFreeHeap`). Many programs make use of custom allocators for one reason or another, an example would be any program using `dlmalloc` or a solution using the `std::allocator` interface and `VirtualAlloc()`. The compiler is unable to automatically add shadow-memory management calls to a custom allocator. It's the user's responsibility to use the [provided manual poisoning interface](#poisoning). This API enables these allocators to function properly with the existing AddressSanitizer runtime and [shadow byte](./asan-shadowbytes.md) conventions.
 
-## <a name="poisoning"> Manual AddressSanitizer poisoning interface
+## <a name="poisoning"></a> Manual AddressSanitizer poisoning interface
 
 The interface for enlightening is simple, but it imposes alignment restrictions on the user. Users may import these prototypes by importing [`sanitizer/asan_interface.h`](https://github.com/llvm/llvm-project/blob/main/compiler-rt/include/sanitizer/asan_interface.h). Here are the interface function prototypes:
 
@@ -101,19 +101,19 @@ The AddressSanitizer runtime hot-patches many functions to enable memory safety 
 - [`_calloc_crt`](../c-runtime-library/reference/calloc.md)
 - [`_calloc_dbg` (debug runtime only)](../c-runtime-library/reference/calloc-dbg.md)
 - [`_except_handler3` (x86 only)](../c-runtime-library/except-handler3.md)
-- `_except_handler4` (x86 only)(undocumented)
+- [`_except_handler4` (x86 only)](../c-runtime-library/internal-crt-globals-and-functions.md) (undocumented)
 - [`_expand`](../c-runtime-library/reference/expand.md)
 - `_expand_base` (undocumented)
 - [`_expand_dbg` (debug runtime only)](../c-runtime-library/reference/expand-dbg.md)
-- `_free_base` (undocumented)
+- [`_free_base`](../c-runtime-library/internal-crt-globals-and-functions.md) (undocumented)
 - [`_free_dbg` (debug runtime only)](../c-runtime-library/reference/free-dbg.md)
-- `_malloc_base` (undocumented)
+- [`_malloc_base`](../c-runtime-library/internal-crt-globals-and-functions.md) (undocumented)
 - `_malloc_crt` (undocumented)
 - [`_malloc_dbg` (debug runtime only)](../c-runtime-library/reference/malloc-dbg.md)
 - [`_msize`](../c-runtime-library/reference/msize.md)
 - `_msize_base` (undocumented)
 - [`_msize_dbg` (debug runtime only)](../c-runtime-library/reference/msize-dbg.md)
-- `_realloc_base` (undocumented)
+- [`_realloc_base`](../c-runtime-library/internal-crt-globals-and-functions.md) (undocumented)
 - `_realloc_crt` (undocumented)
 - [`_realloc_dbg` (debug runtime only)](../c-runtime-library/reference/realloc-dbg.md)
 - [`_recalloc`](../c-runtime-library/reference/recalloc.md)
