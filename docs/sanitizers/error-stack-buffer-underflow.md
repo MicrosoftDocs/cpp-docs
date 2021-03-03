@@ -37,7 +37,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying error in example1](media/stack-buffer-underflow-example1.png)
+![Screenshot of debugger displaying stack-buffer-underflow error in example 1.](media/stack-buffer-underflow-example-1.png)
 
 ## Example - stack underflow on thread
 
@@ -74,7 +74,7 @@ devenv /debugexe example2.exe
 
 ### Resulting error  - stack underflow on thread
 
-![Screenshot of debugger displaying error in example2](media/stack-buffer-underflow-example2.png)
+![Screenshot of debugger displaying stack-buffer-underflow error in example 2.](media/stack-buffer-underflow-example-2.png)
 
 ## See also
 
@@ -82,7 +82,7 @@ devenv /debugexe example2.exe
 [AddressSanitizer known issues](./asan-known-issues.md)\
 [AddressSanitizer build and language reference](./asan-building.md)\
 [AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
 [AddressSanitizer error examples](./asan-error-examples.md)

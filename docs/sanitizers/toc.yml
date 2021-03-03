@@ -12,13 +12,13 @@
     - name: "Debugger integration"
       href: ../sanitizers/asan-debugger-integration.md
     - name: "Shadow bytes"
-      href: ../sanitizers/asan-shadowbytes.md
+      href: ../sanitizers/asan-shadow-bytes.md
     - name: "Cloud or distributed testing"
       href: ../sanitizers/asan-offline-crash-dumps.md
-    - name: "AddressSanitizer error reference"
+    - name: "AddressSanitizer error examples"
       expanded: true
       items:
-        - name: "AddressSanitizer error reference"
+        - name: "AddressSanitizer error examples"
           href: ../sanitizers/asan-error-examples.md
         - name: "alloc-dealloc-mismatch error"
           href: ../sanitizers/error-alloc-dealloc-mismatch.md

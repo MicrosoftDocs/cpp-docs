@@ -40,7 +40,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error - simple nested local
 
-![Screenshot of debugger displaying error in example1](media/stack-use-after-scope-example1.png)
+![Screenshot of debugger displaying stack-use-after-scope error in example 1.](media/stack-use-after-scope-example-1.png)
 
 ## Example 2 - lambda capture
 
@@ -70,7 +70,7 @@ devenv /debugexe example2.exe
 
 ### Resulting error - lambda capture
 
-![Screenshot of debugger displaying error in example2](media/stack-use-after-scope-example2.png)
+![Screenshot of debugger displaying stack-use-after-scope error in example 2.](media/stack-use-after-scope-example-2.png)
 
 ## Example 3 - destructor ordering with locals
 
@@ -110,7 +110,7 @@ devenv /debugexe example3.exe
 
 ### Resulting error - destructor ordering
 
-![Screenshot of debugger displaying error in example3](media/stack-use-after-scope-example3.png)
+![Screenshot of debugger displaying stack-use-after-scope error in example 3.](media/stack-use-after-scope-example-3.png)
 
 ## Example 4 - temporaries
 
@@ -155,7 +155,7 @@ devenv /debugexe example4.exe
 
 ### Resulting error - temporaries
 
-![Screenshot of debugger displaying error in example4](media/stack-use-after-scope-example4.png)
+![Screenshot of debugger displaying stack-use-after-scope error in example 4.](media/stack-use-after-scope-example-4.png)
 
 ## See also
 
@@ -163,7 +163,7 @@ devenv /debugexe example4.exe
 [AddressSanitizer known issues](./asan-known-issues.md)\
 [AddressSanitizer build and language reference](./asan-building.md)\
 [AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
 [AddressSanitizer error examples](./asan-error-examples.md)

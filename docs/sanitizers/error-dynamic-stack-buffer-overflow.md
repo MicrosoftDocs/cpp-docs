@@ -44,7 +44,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying error in example1](media/dynamic-stack-buffer-overflow-example1.png)
+![Screenshot of debugger displaying dynamic-stack-buffer-overflow error in example 1.](media/dynamic-stack-buffer-overflow-example-1.png)
 
 ## Example - `alloca` overflow (left)
 
@@ -76,7 +76,7 @@ devenv /debugexe example2.exe
 
 ### Resulting error - `alloca` overflow (left)
 
-![Screenshot of debugger displaying error in example2](media/dynamic-stack-buffer-overflow-example2.png)
+![Screenshot of debugger displaying dynamic-stack-buffer-overflow error in example 2.](media/dynamic-stack-buffer-overflow-example-2.png)
 
 ## Example - several calls to `alloca`
 
@@ -166,7 +166,7 @@ devenv /debugexe example3.exe
 
 ### Resulting error - several calls to alloca
 
-![Screenshot of debugger displaying error in example3](media/dynamic-stack-buffer-overflow-example3.png)
+![Screenshot of debugger displaying dynamic-stack-buffer-overflow error in example 3.](media/dynamic-stack-buffer-overflow-example-3.png)
 
 ## See also
 
@@ -174,7 +174,7 @@ devenv /debugexe example3.exe
 [AddressSanitizer known issues](./asan-known-issues.md)\
 [AddressSanitizer build and language reference](./asan-building.md)\
 [AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
 [AddressSanitizer error examples](./asan-error-examples.md)

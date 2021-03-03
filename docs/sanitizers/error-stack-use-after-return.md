@@ -49,7 +49,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error - Simple C
 
-![Screenshot of debugger displaying error in example1](media/stack-use-after-return-example1.png)
+![Screenshot of debugger displaying stack-use-after-return error in example 1.](media/stack-use-after-return-example-1.png)
 
 ## Example - C++ and templates
 
@@ -105,7 +105,7 @@ devenv /debugexe example2.exe 1
 
 ### Resulting error - C++ and templates
 
-![Screenshot of debugger displaying error in example2](media/stack-use-after-return-example2.png)
+![Screenshot of debugger displaying stack-use-after-return error in example 2.](media/stack-use-after-return-example-2.png)
 
 ## See also
 
@@ -113,7 +113,7 @@ devenv /debugexe example2.exe 1
 [AddressSanitizer known issues](./asan-known-issues.md)\
 [AddressSanitizer build and language reference](./asan-building.md)\
 [AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
 [AddressSanitizer error examples](./asan-error-examples.md)

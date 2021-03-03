@@ -38,7 +38,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error - double `operator delete`
 
-![Screenshot of debugger displaying error in example1](media/double-free-example1.png)
+![Screenshot of debugger displaying double-free error in example 1.](media/double-free-example-1.png)
 
 ## Example 'C' - double `free`
 
@@ -71,7 +71,7 @@ devenv /debugexe example2.exe
 
 ### Resulting error - double `free`
 
-![Screenshot of debugger displaying error in example2](media/double-free-example2.png)
+![Screenshot of debugger displaying double-free error in example 2.](media/double-free-example-2.png)
 
 ## Example - Windows `HeapCreate` double `HeapFree`
 
@@ -101,7 +101,7 @@ devenv /debugexe example3.exe
 
 ### Resulting error - Windows `HeapCreate` double `HeapFree`
 
-![Screenshot of debugger displaying error in example3](media/double-free-example3.png)
+![Screenshot of debugger displaying double-free error in example 3.](media/double-free-example-3.png)
 
 ## See also
 
@@ -109,7 +109,7 @@ devenv /debugexe example3.exe
 [AddressSanitizer known issues](./asan-known-issues.md)\
 [AddressSanitizer build and language reference](./asan-building.md)\
 [AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
 [AddressSanitizer error examples](./asan-error-examples.md)

@@ -50,7 +50,7 @@ devenv /debugexe example1.exe 2
 
 ### Resulting error
 
-![Screenshot of debugger displaying error in example1](media/alloc-dealloc-mismatch-example1.png)
+![Screenshot of debugger displaying alloc-dealloc-mismatch error in example 1.](media/alloc-dealloc-mismatch-example-1.png)
 
 ## See also
 
@@ -58,7 +58,7 @@ devenv /debugexe example1.exe 2
 [AddressSanitizer known issues](./asan-known-issues.md)\
 [AddressSanitizer build and language reference](./asan-building.md)\
 [AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
 [AddressSanitizer error examples](./asan-error-examples.md)

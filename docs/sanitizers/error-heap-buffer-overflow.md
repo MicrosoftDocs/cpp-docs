@@ -39,7 +39,7 @@ devenv /debugexe example1.exe
 
 ### Resulting error
 
-![Screenshot of debugger displaying error in example1](media/heap-buffer-overflow-example1.png)
+![Screenshot of debugger displaying heap-buffer-overflow error in example 1.](media/heap-buffer-overflow-example-1.png)
 
 ## Example - improper down cast
 
@@ -74,7 +74,7 @@ devenv /debugexe example2.exe
 
 ### Resulting error - improper down cast
 
-![Screenshot of debugger displaying error in example2](media/heap-buffer-overflow-example2.png)
+![Screenshot of debugger displaying heap-buffer-overflow error in example 2.](media/heap-buffer-overflow-example-2.png)
 
 ## Example - strncpy into heap
 
@@ -105,7 +105,7 @@ devenv /debugexe example3.exe
 
 ### Resulting error - strncpy into heap
 
-![Screenshot of debugger displaying error in example3](media/heap-buffer-overflow-example3.png)
+![Screenshot of debugger displaying heap-buffer-overflow error in example 3.](media/heap-buffer-overflow-example-3.png)
 
 ## See also
 
@@ -113,7 +113,7 @@ devenv /debugexe example3.exe
 [AddressSanitizer known issues](./asan-known-issues.md)\
 [AddressSanitizer build and language reference](./asan-building.md)\
 [AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
 [AddressSanitizer error examples](./asan-error-examples.md)

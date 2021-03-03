@@ -56,11 +56,11 @@ void test3() {
 
 ### `/fsanitize=address` compiler option
 
-The [`/fsanitize=address`](../build/reference/fsanitize.md) compiler option instruments memory references in your code to catch memory safety errors at runtime. The instrumentation hooks loads, stores, scopes, alloca, and CRT functions. It can detect hidden bugs such as out-of-bounds, use-after-free, use-after-scope, and so on. For a list of errors detected at runtime, see [Error types](./asan.md#error-types).
+The [`/fsanitize=address`](../build/reference/fsanitize.md) compiler option instruments memory references in your code to catch memory safety errors at runtime. The instrumentation hooks loads, stores, scopes, alloca, and CRT functions. It can detect hidden bugs such as out-of-bounds, use-after-free, use-after-scope, and so on. For a non-exhaustive list of errors detected at runtime, see [AddressSanitizer error examples](./asan-error-examples.md).
 
 **`/fsanitize=address`** is compatible with all existing C++ or C optimization levels (for example, **`/Od`**, **`/O1`**, **`/O2`**, **`/O2 /GL`**, and profile guided optimization). The code produced with this option works with static and dynamic CRTs (for example, **`/MD`**, **`/MDd`**, **`/MT`**, and **`/MTd`**). This compiler option can be used to create an .EXE or .DLL targeting x86 or x64. Debug information is required for optimal formatting of call stacks.
 
-See [the examples in the error reference](asan-error-examples.md) for sample usage.
+For examples of code that demonstrates several kinds of error detection, see [AddressSanitizer error examples](asan-error-examples.md).
 
 ### `/fsanitize-address-use-after-return` compiler option (experimental)
 
@@ -127,7 +127,7 @@ To enable this behavior, run the command `set ASAN_VCASAN_DEBUGGING=1` before yo
 [AddressSanitizer overview](./asan.md)\
 [AddressSanitizer known issues](./asan-known-issues.md)\
 [AddressSanitizer runtime reference](./asan-runtime.md)\
-[AddressSanitizer shadow bytes](./asan-shadowbytes.md)\
+[AddressSanitizer shadow bytes](./asan-shadow-bytes.md)\
 [AddressSanitizer cloud or distributed testing](./asan-offline-crash-dumps.md)\
 [AddressSanitizer debugger integration](./asan-debugger-integration.md)\
 [AddressSanitizer error examples](./asan-error-examples.md)
