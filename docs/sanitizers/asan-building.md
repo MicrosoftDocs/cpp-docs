@@ -75,7 +75,7 @@ The dual stack frame in the heap remains after the return from the function that
 
 Stack frames are allocated in the heap and remain after functions return. The runtime uses garbage collection to asynchronously free these fake call-frame objects, after a certain time interval. Addresses of locals get transferred to persistent frames in the heap. It's how the system can detect when any locals get used after the defining function returns. For more information, see the [algorithm for stack use after return](https://github.com/google/sanitizers/wiki/AddressSanitizerUseAfterReturn) as documented by Google.
 
-## Linker
+## <a name="linker"></a> Linker
 
 ### `/INFERASANLIBS[:NO]` linker option
 

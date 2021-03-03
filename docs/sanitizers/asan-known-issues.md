@@ -7,9 +7,10 @@ helpviewer_keywords: ["AddressSanitizer known issues"]
 
 # AddressSanitizer known issues
 
-> [!NOTE] Send us [feedback](https://aka.ms/vsfeedback/browsecpp) on what you'd like to see in future releases, and [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
+> [!NOTE]
+> Send us [feedback](https://aka.ms/vsfeedback/browsecpp) on what you'd like to see in future releases, and [report bugs](https://aka.ms/feedback/report?space=62) if you run into issues.
 
-## Incompatible options and functionality
+## <a name="incompatible-options"></a> Incompatible options and functionality
 
 These options and functionality are incompatible with [`/fsanitize=address`](../build/reference/fsanitize.md) and should be disabled or avoided.
 

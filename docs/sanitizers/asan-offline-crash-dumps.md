@@ -21,11 +21,11 @@ This [dump file](/previous-versions/windows/desktop/proc_snap/export-a-process-s
 
 Visual Studio can display the error information in the context of the original source code. To do so, Visual Studio requires [debugging symbols](/windows/win32/dxtecharts/debugging-with-symbols) and [indexed source code](/windows-hardware/drivers/debugger/source-indexing). For the best debugging experience, the EXE, PDB, and source code used to produce those binaries must match.
 
-For more information about storing sources and symbols, see the [source and symbols](#Source-and-symbols) section. For information about implementation details and fine grained control, see [debugger integration](asan-debugger-integration.md).
+For more information about storing sources and symbols, see the [source and symbols](#source) section. For information about implementation details and fine grained control, see [debugger integration](asan-debugger-integration.md).
 
 ## Example - build, test, and analyze
 
-Consider three machines: A, B, and C. Builds are done on machine B, tests are run on machine C, and you analyze failures on machine A. The errors are reported against source line and column numbers in your source code. You can see the call stack together with a set of symbols in the PDB file produced using that [exact version of the source code](#Source-and-symbols).
+Consider three machines: A, B, and C. Builds are done on machine B, tests are run on machine C, and you analyze failures on machine A. The errors are reported against source line and column numbers in your source code. You can see the call stack together with a set of symbols in the PDB file produced using that [exact version of the source code](#source).
 
 The following steps are for local or distributed scenarios that lead to creation of a .dmp file, and for viewing that AddressSanitizer dump file offline.
 
@@ -36,9 +36,9 @@ The following steps are for local or distributed scenarios that lead to creation
 - Copy a generated .dmp file to the build directory
 - Open the .dmp file with the paired .pdb, in the same directory
 
-### Product a .dmp on a distributed system
+### Produce a .dmp on a distributed system
 
-- Build and [post-process the PDB](#Source-and-symbols) for [source indexing data blocks](/windows/win32/debug/source-server-and-source-indexing)
+- Build and [post-process the PDB](#source) for [source indexing data blocks](/windows/win32/debug/source-server-and-source-indexing)
 - Copy the atomic pair of (.exe, .pdb) to the test machine and run tests
 - Write the atomic pairs of (.pdb, .dmp) to the bug-reporting database
 - Visual Studio opens a .dmp file with the paired .pdb, in the same directory
@@ -64,13 +64,13 @@ This screenshot shows the final loaded dump file, with sources and AddressSaniti
 
 ![Screenshot of the debugger showing source files and AddressSanitizer metadata](./media/asan-view-crash-metadata.png)
 
-## Source and symbols
+## <a name="source"></a> Source and symbols
 
 Source server lets a client retrieve the **exact version** of the source files used to build an application. The source code for an executable or DLL can change over time, and between versions. You can use it to look at the same source code that built a particular version of the application.
 
 While debugging an EXE with its PDB file, the debugger can use the embedded source server data block to retrieve the appropriate files from source control. It loads the files that map to the fully qualified names put in the PDB automatically by the **`/Zi`** compiler option.
 
-To use source server, the application must be "source indexed" by using pdbstr.exe to write a `srcsrv` data block into your PDB file. For more information, see the Data Block section of [Source server and source indexing](/windows/win32/debug/source-server-and-source-indexing). You'll find [the steps to index sources and publish symbols](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=azure-devops) and [how to specify symbols and source code for the debugger](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger?view=vs-2019) useful, too.
+To use source server, the application must be "source indexed" by using *`pdbstr.exe`* to write a `srcsrv` data block into your PDB file. For more information, see the Data Block section of [Source server and source indexing](/windows/win32/debug/source-server-and-source-indexing). You'll find [the steps to index sources and publish symbols](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) and [how to specify symbols and source code for the debugger](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger) useful, too.
 
 For external documentation, see:
 

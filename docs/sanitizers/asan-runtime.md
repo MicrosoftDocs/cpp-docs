@@ -7,7 +7,7 @@ helpviewer_keywords: ["AddressSanitizer runtime", "Address Sanitizer runtime", "
 
 # AddressSanitizer runtime
 
-The AddressSanitizer runtime library intercepts common memory allocation functions and operations to enable inspection of memory accesses. There are several different runtime libraries that support the various types of executables the compiler may generate. The compiler and linker automatically link the appropriate runtime libraries, as long as you pass the [`/fsanitize=address`](../build/reference/fsanitize.md) option at compile time. You can override the default behavior by using the `/nodefaultlib` option at link time. See the section on [linking](./asan-building.md#Linker) for further detail.
+The AddressSanitizer runtime library intercepts common memory allocation functions and operations to enable inspection of memory accesses. There are several different runtime libraries that support the various types of executables the compiler may generate. The compiler and linker automatically link the appropriate runtime libraries, as long as you pass the [`/fsanitize=address`](../build/reference/fsanitize.md) option at compile time. You can override the default behavior by using the `/nodefaultlib` option at link time. For more information, see the section on [linking](./asan-building.md#linker) in the [AddressSanitizer language, build, and debugging reference](./asan-building.md).
 
 Below is an inventory of runtime libraries for linking to the AddressSanitizer runtime, where `arch` is either `i386` or `x86_64`.
 
@@ -29,7 +29,7 @@ When compiling with `cl /fsanitize=address`, the compiler generates instructions
 
 The AddressSanitizer achieves function interception through many hot-patching techniques. These techniques are [best documented within the source code itself](https://github.com/llvm/llvm-project/blob/1a2eaebc09c6a200f93b8beb37130c8b8aab3934/compiler-rt/lib/interception/interception_win.cpp#L11).
 
-The runtime libraries intercept many common memory management and memory manipulation functions. [A complete list of intercepted functions is available below.](#AddressSanitizer-list-of-intercepted-functions-Windows) The allocation interceptors manage metadata and shadow bytes related to each allocation call. Every time a CRT function such as `malloc` or `delete` is called, the interceptors set specific values in the AddressSanitizer shadow-memory region to indicate whether those heap locations are currently accessible and what the bounds of the allocation are. These shadow bytes allow the compiler-generated checks of the [shadow-bytes](./asan-shadowbytes.md) to determine whether a load or store is valid.
+The runtime libraries intercept many common memory management and memory manipulation functions. For a list, see [A complete list of intercepted functions is available below.](#intercepted_functions) The allocation interceptors manage metadata and shadow bytes related to each allocation call. Every time a CRT function such as `malloc` or `delete` is called, the interceptors set specific values in the AddressSanitizer shadow-memory region to indicate whether those heap locations are currently accessible and what the bounds of the allocation are. These shadow bytes allow the compiler-generated checks of the [shadow bytes](./asan-shadowbytes.md) to determine whether a load or store is valid.
 
 Interception isn't guaranteed to succeed. If a function prologue is too short for a `jmp` to be written, interception can fail. If an interception failure occurs, the program throws a `debugbreak` and halts. If you attach a debugger, it makes the cause of the interception issue clear. If you have this problem, [report a bug](https://aka.ms/feedback/report?space=62).
 
@@ -38,9 +38,9 @@ Interception isn't guaranteed to succeed. If a function prologue is too short fo
 
 ## Custom allocators and the AddressSanitizer runtime
 
-The AddressSanitizer runtime provides interceptors for common allocator interfaces, `malloc`/`free`, `new`/`delete`, `HeapAlloc`/`HeapFree` (via `RtlAllocateHeap`/`RtlFreeHeap`). Many programs make use of custom allocators for one reason or another, an example would be any program using `dlmalloc` or a solution using the `std::allocator` interface and `VirtualAlloc()`. The compiler is unable to automatically add shadow-memory management calls to a custom allocator. It's the user's responsibility to use the [provided manual poisoning interface](#Manual-AddressSanitizer-poisoning-interface). This API enables these allocators to function properly with the existing AddressSanitizer runtime and [shadow byte](./asan-shadowbytes.md) conventions.
+The AddressSanitizer runtime provides interceptors for common allocator interfaces, `malloc`/`free`, `new`/`delete`, `HeapAlloc`/`HeapFree` (via `RtlAllocateHeap`/`RtlFreeHeap`). Many programs make use of custom allocators for one reason or another, an example would be any program using `dlmalloc` or a solution using the `std::allocator` interface and `VirtualAlloc()`. The compiler is unable to automatically add shadow-memory management calls to a custom allocator. It's the user's responsibility to use the [provided manual poisoning interface](#poisoning). This API enables these allocators to function properly with the existing AddressSanitizer runtime and [shadow byte](./asan-shadowbytes.md) conventions.
 
-## Manual AddressSanitizer poisoning interface
+## <a name="poisoning"> Manual AddressSanitizer poisoning interface
 
 The interface for enlightening is simple, but it imposes alignment restrictions on the user. Users may import these prototypes by importing [`sanitizer/asan_interface.h`](https://github.com/llvm/llvm-project/blob/main/compiler-rt/include/sanitizer/asan_interface.h). Here are the interface function prototypes:
 
@@ -74,7 +74,7 @@ Microsoft C/C++ (MSVC) uses a runtime based on the [Clang AddressSanitizer runti
 > [!NOTE]
 > The AddressSanitizer runtime option `halt_on_error` doesn't function the way you might expect. In both the Clang and the MSVC runtime libraries, many error types are considered **non-continuable**, including most memory corruption errors.
 
-For more information, see the [Differences with Clang 12.0](./asan-top-level.md#Differences-with-Clang-12.0) section.
+For more information, see the [Differences with Clang 12.0](./asan.md#differences) section.
 
 ### MSVC-specific AddressSanitizer runtime options
 
@@ -86,7 +86,7 @@ For more information, see the [Differences with Clang 12.0](./asan-top-level.md#
 >
 > The option `windows_hook_rtl_allocators`, previously an opt-in feature while AddressSanitizer was experimental, is now enabled by default.
 
-## AddressSanitizer list of intercepted functions (Windows)
+## <a name="intercepted_functions"></a> AddressSanitizer list of intercepted functions (Windows)
 
 The AddressSanitizer runtime hot-patches many functions to enable memory safety checks at runtime. Here's a non-exhaustive list of the functions that the AddressSanitizer runtime monitors.
 
@@ -161,7 +161,7 @@ The AddressSanitizer runtime hot-patches many functions to enable memory safety 
 - [`strtok`](../c-runtime-library/reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md)
 - [`strtol`](../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)
 - [`wcslen`](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)
-- [`wcsnlen`](../c-runtime-library/reference/strnlen-strnlen.md)
+- [`wcsnlen`](../c-runtime-library/reference/strnlen-strnlen-s.md)
 
 ### Optional interceptors
 
