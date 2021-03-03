@@ -28,8 +28,6 @@ landingContent:
             url: ./asan-shadowbytes.md
           - text: AddressSanitizer cloud or distributed testing
             url: ./asan-offline-crash-dumps.md
-          - text: AddressSanitizer error examples
-            url: ./asan-error-examples.md
 
   # Card (optional)
   - title: Instrument your builds
@@ -40,6 +38,8 @@ landingContent:
             url: ./asan-building.md
           - text: AddressSanitizer runtime reference
             url: ./asan-runtime.md
+          - text: AddressSanitizer error examples
+            url: ./asan-error-examples.md
           - text: AddressSanitizer known issues
             url: ./asan-known-issues.md
 
