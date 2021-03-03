@@ -26,7 +26,7 @@ In this tutorial, you'll learn how to:
 
 To set up Visual Studio for cross-platform C++ development, install the build tools for the target architecture. For this tutorial, install the ARM64 build tools by doing the following:
 
-1. Run the Visual Studio Installer. If you haven't installed Visual Studio yet, see [Install Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio#:~:text=Install%20Visual%20Studio%201%20Make%20sure%20your%20computer,...%204%20Choose%20workloads.%20...%20More%20items...%20)
+1. Run the Visual Studio Installer. If you haven't installed Visual Studio yet, see [Install Visual Studio](/visualstudio/install/install-visual-studio)
 1. On the Visual Studio Installer home screen, choose **Modify**.
 1. From the choices at the top, choose **Individual components**.
 1. Scroll down to the **Compilers, build tools, and runtimes** section.
@@ -37,8 +37,8 @@ To set up Visual Studio for cross-platform C++ development, install the build to
 
 ### On the remote machine
 
-1. Install the remote tools on the remote machine. For this tutorial, install the ARM64 tools by following the instructions in [Download and Install the remote tools](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-cpp?%23download-and-install-the-remote-tools#download-and-install-the-remote-tools).
-1. Start and configure the remote debugger on the remote machine. For this tutorial, do so by following the directions in [set up the remote debugger](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-cpp?%23download-and-install-the-remote-tools#BKMK_setup) on the remote  Windows machine.
+1. Install the remote tools on the remote machine. For this tutorial, install the ARM64 tools by following the instructions in [Download and Install the remote tools](/visualstudio/debugger/remote-debugging-cpp#download-and-install-the-remote-tools).
+1. Start and configure the remote debugger on the remote machine. For this tutorial, do so by following the directions in [set up the remote debugger](/visualstudio/debugger/remote-debugging-cpp#BKMK_setup) on the remote  Windows machine.
 
 ## Create a CMake project
 
