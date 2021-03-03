@@ -17,9 +17,9 @@ For information about reason codes, refer to the next part of this article.
 | Informational message | Description |
 |--|--|
 | 5001 | Loop vectorized. |
-| 5002 | Loop not vectorized due to reason '*description*'. |
+| 5002 | Loop not vectorized because of reason '*description*'. |
 | 5011 | Loop parallelized. |
-| 5012 | Loop not parallelized due to reason '*description*'. |
+| 5012 | Loop not parallelized because of reason '*description*'. |
 | 5021 | Unable to associate loop with pragma. |
 
 The following sections list possible reason codes for the parallelizer and vectorizer.
@@ -30,11 +30,12 @@ The 5*xx* reason codes apply to both the parallelizer and the vectorizer.
 
 | Reason code | Explanation |
 |--|--|
-| 500 | A generic message that covers several cases—for example, the loop includes multiple exits, or the loop header doesn't end by incrementing the induction variable. |
+| 500 | A generic message that covers several cases: For example, the loop includes multiple exits, or the loop header doesn't end by incrementing the induction variable. |
 | 501 | Induction variable isn't local; or upper bound isn't loop-invariant. |
 | 502 | Induction variable is stepped in some manner other than a simple +1. |
 | 503 | Loop includes exception-handling or switch statements. |
 | 504 | Loop body may throw an exception that requires destruction of a C++ object. |
+| 505 | Outer loop has a pre-incremented induction variable. Exiting analysis. |
 
 ```cpp
 void code_500(int *A)
@@ -72,7 +73,7 @@ void code_501_example1(int *A)
 {
     // Code 501 is emitted if the compiler cannot discern the
     // induction variable of this loop. In this case, when it checks
-    // the upperbound of 'i', the compiler cannot prove that the
+    // the upper bound of 'i', the compiler cannot prove that the
     // function call "bound()" returns the same value each time.
     // Also, the compiler cannot prove that the call to "bound()"
     // does not modify the values of array A.
@@ -83,7 +84,7 @@ void code_501_example1(int *A)
     }
 
     // To resolve code 501, ensure that the induction variable is
-    // a local variable, and ensure that the upperbound is a
+    // a local variable, and ensure that the upper bound is a
     // provably loop invariant value.
 
     for (int i=0, imax = bound(); i<imax; ++i)
@@ -105,7 +106,7 @@ void code_501_example2(int *A)
     }
 
     // To resolve code 501, ensure that the induction variable is
-    // a local variable, and ensure that the upperbound is a
+    // a local variable, and ensure that the upper bound is a
     // provably loop invariant value.
 
     for (int i=0; i<1000; ++i)
@@ -173,7 +174,8 @@ public:
     ~C504();
 };
 
-void code_504(int *A) {
+void code_504(int *A)
+{
     // Code 504 is emitted if a C++ object was created and
     // that object requires EH unwind tracking information under
     // /EHs or /EHsc.
@@ -184,6 +186,23 @@ void code_504(int *A) {
         A[i] = code_504_helper();
     }
 
+}
+
+void code_505(int *A)
+{
+    // Code 505 is emitted on outer loops with pre-incremented
+    // induction variables. The vectorizer/parallelizer analysis
+    // package doesn't support these loops, and they are
+    // intentionally not converted to post-increment loops to
+    // prevent a performance degradation.
+
+    // To parallelize an outer loop that causes code 505, change
+    // it to a post-incremented loop.
+
+    for (int i=100; i--; )
+        for (int j=0; j<100; j++) { // this loop is still vectorized
+            A[j] = A[j] + 1;
+        }                    
 }
 ```
 
@@ -201,7 +220,7 @@ The 10*xx* reason codes apply to the parallelizer.
 | 1005 | The `no_parallel` pragma was specified. |
 | 1006 | This function contains OpenMP. Resolve it by removing any OpenMP in this function. |
 | 1007 | The loop induction variable or the loop bounds aren't signed 32-bit numbers (`int` or `long`). Resolve it by changing the type of the induction variable. |
-| 1008 | The compiler detected that this loop doesn't perform enough work to justify auto-parallelization. |
+| 1008 | The compiler detected that this loop doesn't do enough work to justify auto-parallelization. |
 | 1009 | The compiler detected an attempt to parallelize a "`do`-`while`" loop. The auto-parallelizer only targets "`for`" loops. |
 | 1010 | The compiler detected that the loop is using "not-equals" (`!=`) for its condition. |
 
@@ -403,7 +422,7 @@ The 11*xx* reason codes apply to the vectorizer.
 | Reason code | Explanation |
 |--|--|
 | 1100 | Loop contains control flow—for example, "`if`" or "`?:`". |
-| 1101 | Loop contains datatype conversion—perhaps implicit—that can't be vectorized. |
+| 1101 | Loop contains a (possibly implicit) datatype conversion that can't be vectorized. |
 | 1102 | Loop contains non-arithmetic or other non-vectorizable operations. |
 | 1103 | Loop body includes shift operations whose size might vary within the loop. |
 | 1104 | Loop body includes scalar variables. |
@@ -423,7 +442,7 @@ void code_1100(int *A, int x)
 
     for (int i=0; i<1000; ++i)
     {
-        // straightline code is more amenable to vectorization
+        // straight line code is more amenable to vectorization
         if (x)
         {
             A[i] = A[i] + 1;
@@ -550,7 +569,7 @@ The 12*xx* reason codes apply to the vectorizer.
 
 | Reason code | Explanation |
 |--|--|
-| 1200 | Loop contains loop-carried data dependencies that prevent vectorization. Different iterations of the loop interfere with each other such that vectorizing the loop would produce wrong answers, and the auto-vectorizer can't prove to itself that there are no such data dependences. |
+| 1200 | Loop contains loop-carried data dependencies that prevent vectorization. Different iterations of the loop interfere with each other such that vectorizing the loop would produce wrong answers, and the auto-vectorizer can't prove to itself that there aren't such data dependencies. |
 | 1201 | Array base changes during the loop. |
 | 1202 | Field in a struct isn't 32 or 64 bits wide. |
 | 1203 | Loop body includes non-contiguous accesses into an array. |
@@ -642,7 +661,7 @@ The 13*xx* reason codes apply to the vectorizer.
 
 | Reason code | Explanation |
 |--|--|
-| 1300 | Loop body contains no—or very little—computation. |
+| 1300 | Loop body contains little or no computation. |
 | 1301 | Loop stride isn't +1. |
 | 1302 | Loop is a "`do`-`while`". |
 | 1303 | Too few loop iterations for vectorization to provide value. |
@@ -692,7 +711,7 @@ int code_1303(int *A, int *B)
     // make vectorization profitable.
 
     // If the loop computation fits perfectly in
-    // vector registers - for example, the upperbound is 4, or 8 in
+    // vector registers - for example, the upper bound is 4, or 8 in
     // this case - then the loop _may_ be vectorized.
 
     // This loop is not vectorized because there are 5 iterations
