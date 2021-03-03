@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer known issues"
 description: "Technical description of the AddressSanitizer for Microsoft C/C++ known issues."
-ms.date: 01/05/2021
+ms.date: 03/02/2021
 helpviewer_keywords: ["AddressSanitizer known issues"]
 ---
 
@@ -24,7 +24,7 @@ These options and functionality are incompatible with [`/fsanitize=address`](../
 
 ## Standard library support
 
-The MSVC standard library (STL) isn't enlightened to understand the AddressSanitizer. AddressSanitizer exceptions raised in STL code, while identifying true bugs, aren't as precise as they could be.
+The MSVC standard library (STL) isn't enlightened to understand the AddressSanitizer. AddressSanitizer exceptions raised in STL code do identify true bugs. However, they aren't as precise as they could be.
 
 This example demonstrates the lack of precision:
 
@@ -39,7 +39,7 @@ int main() {
 
     // Currently, MSVC ASan does NOT raise an exception here.
     // While this is an out-of-bounds write to 'v', MSVC ASan
-    // ensures the write is within the heap allocation size (20)
+    // ensures the write is within the heap allocation size (20).
     v[10] = 1;
 
     // MSVC ASan DOES raise an exception here, as this write
@@ -56,9 +56,9 @@ As there are dependencies with specific Windows versions, support is focused on 
 
 The AddressSanitizer runtime doesn't release memory back to the OS during execution. From the OS's point of view, it may look like there's a memory leak. This design decision is intentional, so as not to allocate all the required memory up front.
 
-## `clang_rt.asan*.dll` files
+## AddressSanitizer runtime DLL locations
 
-The *`clang_rt.asan*.dll`* runtime files are installed next to the compilers in *`%VSINSTALLDIR%\VC\Tools\MSVC\<version>\bin\<host-arch>\<target-arch>\`*. These locations are on the path in debugging sessions, and in Visual Studio Developer Command Prompts. The files are never placed in *`C:\Windows\System32`* or *`C:\Windows\SysWOW64`*.
+The *`clang_rt.asan*.dll`* runtime files are installed next to the compilers in *`%VSINSTALLDIR%\VC\Tools\MSVC\<version>\bin\<host-arch>\<target-arch>\`*. These locations are on the path in debugging sessions, and in Visual Studio developer command prompts. These files are never placed in *`C:\Windows\System32`* or *`C:\Windows\SysWOW64`*.
 
 ## See also
 

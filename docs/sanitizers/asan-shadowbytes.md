@@ -1,17 +1,17 @@
 ---
-title: "AddressSanitizer Shadow Bytes"
+title: "AddressSanitizer shadow bytes"
 description: "Technical description of shadow bytes written and read by the compiler-generated code and AddressSanitizer runtime."
-ms.date: 02/05/2021
+ms.date: 03/02/2021
 helpviewer_keywords: ["Shadow bytes", "AddressSanitizer shadow bytes","Address Sanitizer shadow bytes", "ASan shadow bytes"]
 ---
 
-# AddressSanitizer Shadow Bytes
+# AddressSanitizer shadow bytes
 
 We briefly summarize the concept of shadow bytes and how they can be used by the runtime implementation of [`/fsanitize=address`](../build/reference/fsanitize.md). For further details, we refer you to the [seminal paper](https://www.usenix.org/system/files/conference/atc12/atc12-final39.pdf) and the [AddressSanitizer algorithm](https://github.com/google/sanitizers/wiki/AddressSanitizerAlgorithm).
 
 ## Core concept
 
-Every **8 bytes** in your application's virtual address space can be described with **one shadow byte**.
+Every **8 bytes** in your application's virtual address space can be described using **one shadow byte**.
 
 One shadow byte describes how many bytes are currently accessible as follows:
 

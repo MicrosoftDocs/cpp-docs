@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio AddressSanitizer extended functionality library (VCASan)"
 description: "Technical description of vcasan.lib."
-ms.date: 02/15/2021
+ms.date: 03/02/2021
 f1_keywords: ["vcasan"]
 helpviewer_keywords: ["vcasan.lib", "vcasan", "vcasand.lib", "libvcasan.lib", "libvcasand.lib"]
 ---
@@ -23,20 +23,20 @@ The *`VCAsan*.lib`* libraries implement extended debugger IDE features in Visual
 
 ### Rich AddressSanitizer error report window in Visual Studio IDE
 
-The VCAsan library registers a callback within the Address runtime by using the ASan interface function [`__asan_set_error_report_callback`](https://github.com/llvm/llvm-project/blob/1ba5ea67a30170053964a28f2f47aea4bb7f5ff1/compiler-rt/include/sanitizer/asan_interface.h#L256). If an AddressSanitizer report is generated, this callback gets used to throw an exception that's caught by Visual Studio. Visual Studio uses the exception data to generate the message that's displayed to the user in the IDE.
+The VCAsan library registers a callback within the AddressSanitizer runtime by using the interface function [`__asan_set_error_report_callback`](https://github.com/llvm/llvm-project/blob/1ba5ea67a30170053964a28f2f47aea4bb7f5ff1/compiler-rt/include/sanitizer/asan_interface.h#L256). If an AddressSanitizer report is generated, this callback gets used to throw an exception that's caught by Visual Studio. Visual Studio uses the exception data to generate the message that's displayed to the user in the IDE.
 
 > [!NOTE]
-> The VCAsan library registers a callback function in the AddressSanitizer runtime. If your code calls this registration function a second time, it overwrites the VCAsan library callback registration. This results in the loss of all Visual Studio IDE integration. You'll revert back to the default IDE user experience. It's also possible for a user's call to register their callback to be lost. If you encounter either problem, file a [bug](https://aka.ms/feedback/report?space=62).
+> The VCAsan library registers a callback function in the AddressSanitizer runtime. If your code calls this registration function a second time, it overwrites the VCAsan library callback registration. This results in the loss of all Visual Studio IDE integration. You'll revert back to the default IDE user experience. It's also possible for a user's call that registers their callback to be lost. If you encounter either problem, file a [bug](https://aka.ms/feedback/report?space=62).
 
 ### Save AddressSanitizer errors in a new type of crash dump file
 
-When you link the VCAsan library to your executable, a user can generate a crash dump. The AddressSanitizer runtime can produce a dump file when a diagnosed error occurs. To enable this feature, the user must set an environment variable by using a command such as this one:
+When you link the VCAsan library to your executable, users can enable it to generate a crash dump at runtime. Then the AddressSanitizer runtime produces a dump file when a diagnosed error occurs. To enable this feature, the user sets the `ASAN_SAVE_DUMPS` environment variable by using a command such as this one:
 
 `set ASAN_SAVE_DUMPS=MyFileName.dmp`
 
 The file must have a .dmp suffix to follow the Visual Studio IDE conventions.
 
-Here's what happens when a dump file is specified for `ASAN_SAVE_DUMPS`: If an error gets caught by the AddressSanitizer runtime, it saves a crash dump file that has the metadata associated with the error. The new Visual Studio debugger IDE can parse the metadata that's saved in the dump file. You can set `ASAN_SAVE_DUMPS` on a per-test basis, store these binary artifacts, and then view them in the IDE with proper source indexing.
+Here's what happens when a dump file is specified for `ASAN_SAVE_DUMPS`: If an error gets caught by the AddressSanitizer runtime, it saves a crash dump file that has the metadata associated with the error. The debugger in Visual Studio version 16.9 and later can parse the metadata that's saved in the dump file. You can set `ASAN_SAVE_DUMPS` on a per-test basis, store these binary artifacts, and then view them in the IDE with proper source indexing.
 
 ## See also
 

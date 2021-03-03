@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer runtime"
 description: "Technical description of the AddressSanitizer runtime for Microsoft C/C++."
-ms.date: 01/05/2021
+ms.date: 03/02/2021
 helpviewer_keywords: ["AddressSanitizer runtime", "Address Sanitizer runtime", "clang_rt.asan", "Clang runtime", "ASan runtime"]
 ---
 
@@ -64,7 +64,7 @@ For an illustration of the alignment requirement and potential issues, see the p
 
 ## Run-time options
 
-Microsoft C/C++ (MSVC) uses a runtime based on the [Clang AddressSanitizer runtime from the llvm-project repository.](https://github.com/llvm/llvm-project) Because of this, most runtime options are shared between the two versions. [A complete list of the public Clang runtime options is available here.](https://github.com/google/sanitizers/wiki/SanitizerCommonFlags) We document some differences in the sections that follow. If you discover options that don't function as expected, [report a bug](https://aka.ms/feedback/report?space=62).
+Microsoft C/C++ (MSVC) uses a runtime based on the [Clang AddressSanitizer runtime from the llvm-project repository](https://github.com/llvm/llvm-project). Because of this, most runtime options are shared between the two versions. [A complete list of the public Clang runtime options is available here](https://github.com/google/sanitizers/wiki/SanitizerCommonFlags). We document some differences in the sections that follow. If you discover options that don't function as expected, [report a bug](https://aka.ms/feedback/report?space=62).
 
 ### Unsupported AddressSanitizer options
 
@@ -79,7 +79,7 @@ For more information, see the [Differences with Clang 12.0](./asan-top-level.md#
 ### MSVC-specific AddressSanitizer runtime options
 
 - `windows_hook_legacy_allocators`
-  - Boolean, set to `true` to enable interception of [`GlobalAlloc`](/windows/win32/api/winbase/nf-winbase-globalalloc) and [`LocalAlloc`](/windows/win32/api/winbase/nf-winbase-localalloc) allocators.
+  Boolean, set to `true` to enable interception of [`GlobalAlloc`](/windows/win32/api/winbase/nf-winbase-globalalloc) and [`LocalAlloc`](/windows/win32/api/winbase/nf-winbase-localalloc) allocators.
 
 > [!NOTE]
 > The option `windows_hook_legacy_allocators` wasn't available in the public llvm-project runtime when this article was written. The option may eventually be contributed back to the public project; however, it's dependent on code review and community acceptance.

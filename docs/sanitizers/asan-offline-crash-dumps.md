@@ -1,14 +1,14 @@
 ---
-title: "AddressSanitizer - Cloud or distributed testing"
+title: "AddressSanitizer cloud or distributed testing"
 description: "AddressSanitizer feature extended for Visual Studio and Azure"
-ms.date: 02/05/2021
+ms.date: 03/02/2021
 helpviewer_keywords: ["AddressSanitizer cloud or distributed testing"]
 ---
-# AddressSanitizer - Cloud or distributed testing
+# AddressSanitizer cloud or distributed testing
 
-When an AddressSanitizer error is found, a crash dump can be created to store all the AddressSanitizer-specific context. That crash dump can then be sent to another PC for debugging. It can be a critical time saver when running AddressSanitizer in the cloud or in distributed testing. You can create the dump on failure on that infrastructure and debug it on your developer PC.
+You don't have to debug AddressSanitizer errors when and where they occur. Configure the runtime to create a crash dump that stores all the AddressSanitizer-specific context when an error happens. Then send that crash dump to another PC for debugging. Offline debugging can be a critical timesaver when running AddressSanitizer in the cloud or in distributed testing. You can create the dump on test or production infrastructure where the failure occurs, and debug it later on your developer PC.
 
-The Visual Studio debugger provides precisely diagnosed AddressSanitizer errors. You can view these bugs without having to rerun testing, copy huge datasets, discover lost data, or find test machines that went offline. You only need to load the crash dump.
+The Visual Studio debugger provides precisely diagnosed AddressSanitizer errors. You can view these bugs without having to rerun tests, copy huge datasets, discover lost data, or find test machines that went offline. You only need to load the crash dump.
 
 Crash dumps are created upon AddressSanitizer failures by setting the following environment variable:
 
@@ -66,7 +66,7 @@ This screenshot shows the final loaded dump file, with sources and AddressSaniti
 
 ## Source and symbols
 
-Source server lets a client retrieve the **exact version** of the source files used to build an application. The source code for an executable or DLL can change over time, and between versions. It's important to look at the source code as it existed when a particular version of the code was built.
+Source server lets a client retrieve the **exact version** of the source files used to build an application. The source code for an executable or DLL can change over time, and between versions. You can use it to look at the same source code that built a particular version of the application.
 
 While debugging an EXE with its PDB file, the debugger can use the embedded source server data block to retrieve the appropriate files from source control. It loads the files that map to the fully qualified names put in the PDB automatically by the **`/Zi`** compiler option.
 

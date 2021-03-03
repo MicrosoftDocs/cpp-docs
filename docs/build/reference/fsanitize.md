@@ -2,8 +2,8 @@
 description: "Learn more about the /fsanitize (enable sanitizers) compiler option"
 title: "/fsanitize (Enable sanitizers)"
 ms.date: 02/24/2021
-f1_keywords: ["/fsanitize", "-fsanitize", "/fsanitize-address-use-after-return", "-fsanitize-address-use-after-return", "/fno-sanitize-address-vcasan-lib", "-fno-sanitize-address-vcasan-lib"]
-helpviewer_keywords: ["/fsanitize [C++]", "-fsanitize=address [C++]", "address sanitizer [C++]", "/fsanitize-address-use-after-return", "/fno-sanitize-address-vcasan-lib"]
+f1_keywords: ["/fsanitize", "-fsanitize", "/fsanitize=address", "/fsanitize-address-use-after-return", "-fsanitize-address-use-after-return", "/fno-sanitize-address-vcasan-lib", "-fno-sanitize-address-vcasan-lib"]
+helpviewer_keywords: ["/fsanitize [C++]", "-fsanitize=address [C++]", "address sanitizer compiler option [C++]", "/fsanitize-address-use-after-return", "/fno-sanitize-address-vcasan-lib"]
 ---
 # `/fsanitize` (Enable sanitizers)
 
@@ -19,7 +19,7 @@ Use the **`/fsanitize`** compiler options to enable sanitizers. As of Visual Stu
 
 The **`/fsanitize=address`** compiler option enables [AddressSanitizer](../../sanitizers/asan.md), a powerful compiler and runtime technology to light up [hard-to-find bugs](../../sanitizers/asan.md#error-types).
 
-The **`/fsanitize-address-use-after-return`** and **`/fno-sanitize-address-vcasan-lib`** compiler options, and the [`/INFERASANLIBS` (Use inferred sanitizer libs)](./inferasanlibs.md) and **`/INFERASANLIBS:NO`** linker options offer support for advanced users. See [AddressSanitizer build and language reference](../../sanitizers/asan-building.md) for more details.
+The **`/fsanitize-address-use-after-return`** and **`/fno-sanitize-address-vcasan-lib`** compiler options, and the [`/INFERASANLIBS` (Use inferred sanitizer libs)](./inferasanlibs.md) and **`/INFERASANLIBS:NO`** linker options offer support for advanced users. For more information, see [AddressSanitizer build and language reference](../../sanitizers/asan-building.md).
 
 The **`/fsanitize`** options are available beginning in Visual Studio 2019 version 16.9.
 

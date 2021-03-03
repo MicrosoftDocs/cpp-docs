@@ -7,7 +7,7 @@ helpviewer_keywords: ["/INFERASANLIBS [C++]", "address sanitizer [C++] linker op
 ---
 # `/INFERASANLIBS` (Use inferred sanitizer libs)
 
-Use the **`/INFERASANLIBS`** linker option to enable or disable linking to the default sanitizer libraries. As of Visual Studio 2019 16.9, the only supported sanitizer is [AddressSanitizer](../../sanitizers/asan.md).
+Use the **`/INFERASANLIBS`** linker option to enable or disable linking to the default AddressSanitizer libraries. As of Visual Studio 2019 16.9, the only supported sanitizer is [AddressSanitizer](../../sanitizers/asan.md).
 
 ## Syntax
 
@@ -15,9 +15,9 @@ Use the **`/INFERASANLIBS`** linker option to enable or disable linking to the d
 
 ## Remarks
 
-The **`/INFERASANLIBS`** linker option enables the default [AddressSanitizer](../../sanitizers/asan.md) libraries. AddressSanitizer is a powerful compiler and runtime technology to light up [hard-to-find bugs](../../sanitizers/asan.md#error-types).
+The **`/INFERASANLIBS`** linker option enables the default [AddressSanitizer](../../sanitizers/asan.md) libraries. This option is enabled by default.
 
-The **`/INFERASANLIBS`** and **`/INFERASANLIBS:NO`** linker options offer support for advanced users. See [AddressSanitizer build and language reference](../../sanitizers/asan-building.md) for more details.
+The **`/INFERASANLIBS`** and **`/INFERASANLIBS:NO`** linker options offer support for advanced users. For more information, see [AddressSanitizer build and language reference](../../sanitizers/asan-building.md).
 
 The **`/INFERASANLIBS`** option is available beginning in Visual Studio 2019 version 16.9.
 
@@ -27,7 +27,7 @@ The **`/INFERASANLIBS`** option is available beginning in Visual Studio 2019 ver
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
-1. Modify the **Additional Options** property. To enable default libraries, enter **/INFERASANLIBS** in the edit box. To disable default libraries, enter **/INFERASANLIBS:no** instead.
+1. Modify the **Additional Options** property. To enable default libraries, enter **/INFERASANLIBS** in the edit box. To disable default libraries, enter **/INFERASANLIBS:NO** instead.
 
 1. Choose **OK** or **Apply** to save your changes.
 
