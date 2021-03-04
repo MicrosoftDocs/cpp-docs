@@ -106,7 +106,7 @@ int main()
    // strlen gives the length of single-byte character string
    printf("Length of '%s' : %d\n", str1, strlen(str1) );
 
-   // wstrlen gives the length of a wide character string
+   // wcslen gives the length of a wide character string
    wprintf(L"Length of '%s' : %d\n", wstr1, wcslen(wstr1) );
 
    // A multibyte string: [A] [B] [C] [katakana A] [D] [\0]

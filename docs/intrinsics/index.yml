@@ -55,7 +55,7 @@ landingContent:
             url: ../assembler/inline/using-assembly-language-in-asm-blocks.md
           - text: Use C or C++ in __asm blocks
             url: ../assembler/inline/using-c-or-cpp-in-asm-blocks.md
-          - text: Use and presere registers
+          - text: Use and preserve registers
             url: ../assembler/inline/using-and-preserving-registers-in-inline-assembly.md
           - text: Call C++ functions in inline assembly
             url: ../assembler/inline/calling-cpp-functions-in-inline-assembly.md
