@@ -701,6 +701,8 @@
               href: ../cpp/noinline.md
             - name: noreturn
               href: ../cpp/noreturn.md
+            - name: no_sanitize_address
+              href: ../cpp/no-sanitize-address.md
             - name: nothrow
               href: ../cpp/nothrow-cpp.md
             - name: novtable

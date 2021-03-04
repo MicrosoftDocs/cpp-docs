@@ -32,7 +32,7 @@ int main() {
 
 ### `__declspec(no_sanitize_address)`
 
-The [`__declspec(no_sanitize_address)`](../cpp/no_sanitize_address.md) specifier can be used to selectively disable the sanitizer on functions, local variables, or global variables. This `__declspec` affects _compiler_ behavior, not _runtime_ behavior.
+The [`__declspec(no_sanitize_address)`](../cpp/no-sanitize-address.md) specifier can be used to selectively disable the sanitizer on functions, local variables, or global variables. This `__declspec` affects _compiler_ behavior, not _runtime_ behavior.
 
 ```cpp
 __declspec(no_sanitize_address)
