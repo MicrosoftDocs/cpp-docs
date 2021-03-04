@@ -1,14 +1,13 @@
 ---
 title: "fopen_s, _wfopen_s"
 description: "Describes the API for `fopen_s` and `_wfopen_s`"
-ms.date: "11/20/2020"
+ms.date: "2/24/2021"
 api_name: ["_wfopen_s", "fopen_s", "_o__wfopen_s", "_o_fopen_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fopen_s", "_tfopen_s", "_wfopen_s"]
 helpviewer_keywords: ["_wfopen_s function", "opening files, for file I/O", "_tfopen_s function", "tfopen_s function", "wfopen_s function", "fopen_s function", "Unicode [C++], creating files", "Unicode [C++], writing files", "files [C++], opening", "Unicode [C++], files"]
-ms.assetid: c534857e-39ee-4a3f-bd26-dfe551ac96c3
 ---
 # `fopen_s`, `_wfopen_s`
 
@@ -116,6 +115,8 @@ The **`"a"`** mode doesn't remove the EOF marker before appending to the file. A
 
 When the **`"r+"`**, **`"w+"`**, or **`"a+"`** access type is specified, both reading and writing are allowed. (The file is said to be open for "update".) However, when you switch from reading to writing, the input operation must come across an EOF marker. If there's no EOF marker, you must use an intervening call to a file-positioning function. The file-positioning functions are **`fsetpos`**, [`fseek`](fseek-fseeki64.md), and [`rewind`](rewind.md). When you switch from writing to reading, you must use an intervening call to either **`fflush`** or to a file-positioning function.
 
+Starting in C11, you can append **`"x"`** to **`"w"`** or **`"w+"`** to cause the function fail if the file exists, instead of overwriting it.
+
 In addition to the values above, the following characters can be included in *`mode`* to specify the translation mode for newline characters:
 
 |*`mode`* modifier|Translation mode|
@@ -140,7 +141,7 @@ For more information about using text and binary modes in Unicode and multibyte 
 | **`R`** | Specifies that caching is optimized for, but not restricted to, random access from disk. |
 | **`t`** | Specifies a file as temporary. If possible, it isn't flushed to disk. |
 | **`D`** | Specifies a file as temporary. It's deleted when the last file pointer is closed. |
-| **`ccs=**`_encoding_ | Specifies the encoded character set to use (one of **`UTF-8`**, **`UTF-16LE`**, or **`UNICODE`**) for this file. Leave unspecified if you want ANSI encoding. |
+| **`ccs=`**_encoding_ | Specifies the encoded character set to use (one of **`UTF-8`**, **`UTF-16LE`**, or **`UNICODE`**) for this file. Leave unspecified if you want ANSI encoding. |
 
 Valid characters for the *`mode`* string used in **`fopen_s`** and [`_fdopen`](fdopen-wfdopen.md) correspond to *`oflag`* arguments used in [`_open`](open-wopen.md) and [`_sopen`](sopen-wsopen.md), as follows.
 
@@ -164,7 +165,7 @@ Valid characters for the *`mode`* string used in **`fopen_s`** and [`_fdopen`](f
 |**`ccs=UTF-8`**|**`_O_UTF8`**|
 |**`ccs=UTF-16LE`**|**`_O_UTF16`**|
 
-If you are using **`rb`** mode, memory mapped Win32 files might also be an option if you don't need to port your code, you expect to read much of the file, or you don't care about network performance.
+If you're using **`rb`** mode, memory mapped Win32 files might also be an option if you don't need to port your code, you expect to read much of the file, or you don't care about network performance.
 
 ## Requirements
 
@@ -173,13 +174,13 @@ If you are using **`rb`** mode, memory mapped Win32 files might also be an optio
 |**`fopen_s`**|`<stdio.h>`|
 |**`_wfopen_s`**|`<stdio.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Libraries
 
 All versions of the [C run-time libraries](../../c-runtime-library/crt-library-features.md).
 
-The **`c`**, **`n`**, and **`t`** *`mode`* options are Microsoft extensions for **`fopen_s`** and [`_fdopen`](fdopen-wfdopen.md) and shouldn't be used where ANSI portability is desired.
+The **`c`**, **`n`**, and **`t`** *`mode`* options are Microsoft extensions for **`fopen_s`** and [`_fdopen`](fdopen-wfdopen.md) and shouldn't be used where you want ANSI portability.
 
 ## Example
 
