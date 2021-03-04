@@ -81,7 +81,6 @@ The following table shows the precedence and associativity of C++ operators (fro
 | [Logical OR](../cpp/logical-or-operator-pipe-pipe.md) | [`||`](../cpp/logical-or-operator-pipe-pipe.md) | **`or`** |
 | **Group 15 precedence, right to left associativity** |
 | [Conditional](../cpp/conditional-operator-q.md) | [`? :`](../cpp/conditional-operator-q.md) |
-| **Group 16 precedence, right to left associativity** |
 | [Assignment](../cpp/assignment-operators.md) | [`=`](../cpp/assignment-operators.md) |
 | [Multiplication assignment](../cpp/assignment-operators.md) | [`*=`](../cpp/assignment-operators.md) |
 | [Division assignment](../cpp/assignment-operators.md) | [`/=`](../cpp/assignment-operators.md) |
@@ -93,9 +92,8 @@ The following table shows the precedence and associativity of C++ operators (fro
 | [Bitwise AND assignment](../cpp/assignment-operators.md) | [`&=`](../cpp/assignment-operators.md) | **`and_eq`** |
 | [Bitwise inclusive OR assignment](../cpp/assignment-operators.md) | [`|=`](../cpp/assignment-operators.md) | **`or_eq`** |
 | [Bitwise exclusive OR assignment](../cpp/assignment-operators.md) | [`^=`](../cpp/assignment-operators.md) | **`xor_eq`** |
-| **Group 17 precedence, right to left associativity** |
 | [throw expression](../cpp/try-throw-and-catch-statements-cpp.md) | [`throw`](../cpp/try-throw-and-catch-statements-cpp.md) |
-| **Group 18 precedence, left to right associativity** |
+| **Group 16 precedence, left to right associativity** |
 | [Comma](../cpp/comma-operator.md) | [,](../cpp/comma-operator.md) |
 
 ## See also
