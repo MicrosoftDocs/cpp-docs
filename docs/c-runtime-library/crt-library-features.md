@@ -5,15 +5,15 @@ ms.date: "3/5/2021"
 ms.topic: "reference"
 helpviewer_keywords: ["MSVCR71.dll", "libraries [C++], multithreaded", "library files, run-time", "LIBCMT.lib", "LIBCP.lib", "LIBCPMT.lib", "run-time libraries, C", "CRT, release versions", "MSVCP71.dll", "LIBC.lib", "libraries [C++]", "libraries [C++], run-time", "linking [C++], libraries"]
 ---
-# C Runtime (CRT) and C++ Standard Library .lib files
+# C Runtime (CRT) and C++ Standard Library `.lib` files
 
-This topic lists the Microsoft C runtime library .lib files that you can link against when you develop your application, and their associated compiler options and preprocessor directives.
+This topic lists the Microsoft C runtime library `.lib` files that you can link against when you develop your application, and their associated compiler options and preprocessor directives.
 
-See [Redistributing Visual C++ files](../windows/redistributing-visual-cpp-files.md) if you are looking for information about deploying the C runtime files necessary to support your application.
+See [Redistributing Visual C++ files](../windows/redistributing-visual-cpp-files.md) if you're looking for information about deploying the C runtime files necessary to support your application.
 
-See [C runtime library reference](../c-runtime-library/c-run-time-library-reference.md) if you are looking for API reference for the C runtime library.
+See [C runtime library reference](../c-runtime-library/c-run-time-library-reference.md) if you're looking for API reference for the C runtime library.
 
-## C runtime .lib files
+## C runtime `.lib` files
 
 The C runtime Library (CRT) is the part of the C++ Standard Library that incorporates the ISO C99 standard library. The Visual C++ libraries that implement the CRT support native code development, and both mixed native and managed code. All versions of the CRT support multi-threaded development. Most of the libraries support both static linking, to link the library directly into your code, or dynamic linking to let your code use common DLL files.
 
@@ -28,7 +28,7 @@ The following table lists the libraries that implement the UCRT.
 | *`ucrt.lib`* | *`ucrtbase.dll`* | DLL import library for the UCRT. | **`/MD`** | `_MT`, `_DLL` |
 | *`ucrtd.lib`* | *`ucrtbased.dll`* | DLL import library for the Debug version of the UCRT. Not redistributable. | **`/MDd`** | `_DEBUG`, `_MT`, `_DLL` |
 
-The vcruntime library contains Visual C++ CRT implementation-specific code, such as exception handling and debugging support, runtime checks and type information, implementation details and certain extended library functions. The vcruntime library version needs to match the version of the compiler you are using.
+The vcruntime library contains Visual C++ CRT implementation-specific code, such as exception handling and debugging support, runtime checks and type information, implementation details and certain extended library functions. The vcruntime library version needs to match the version of the compiler you're using.
 
 This table lists the libraries that implement the vcruntime library.
 
@@ -41,9 +41,9 @@ This table lists the libraries that implement the vcruntime library.
 
 > [!NOTE]
 > When the UCRT was refactored, the Concurrency Runtime functions were moved into
-*`concrt140.dll`*, which was added to the C++ redistributable package. This DLL is required for C++ parallel containers and algorithms such as `concurrency::parallel_for`. In addition, the C++ Standard Library requires this DLL on Windows XP to support synchronization primitives, because Windows XP does not have condition variables.
+*`concrt140.dll`*, which was added to the C++ redistributable package. This DLL is required for C++ parallel containers and algorithms such as `concurrency::parallel_for`. In addition, the C++ Standard Library requires this DLL on Windows XP to support synchronization primitives, because Windows XP doesn't have condition variables.
 
-The code that initializes the CRT is in one of several libraries, based on whether the CRT library is statically or dynamically linked, or native, managed, or mixed code. This code handles CRT startup, internal per-thread data initialization, and termination. It is specific to the version of the compiler used. This library is always statically linked, even when using a dynamically linked UCRT.
+The code that initializes the CRT is in one of several libraries, based on whether the CRT library is statically or dynamically linked, or native, managed, or mixed code. This code handles CRT startup, internal per-thread data initialization, and termination. It's specific to the version of the compiler used. This library is always statically linked, even when using a dynamically linked UCRT.
 
 This table lists the libraries that implement CRT initialization and termination.
 
@@ -60,19 +60,19 @@ This table lists the libraries that implement CRT initialization and termination
 
 If you link your program from the command line without a compiler option that specifies a C runtime library, the linker will use the statically linked CRT libraries: *`libcmt.lib`*, *`libvcruntime.lib`*, and *`libucrt.lib`*.
 
-Using the statically linked CRT implies that any state information saved by the C runtime library will be local to that instance of the CRT. For example, if you use [`strtok`](../c-runtime-library/reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md) when using a statically linked CRT, the position of the `strtok` parser is unrelated to the `strtok` state used in code in the same process (but in a different DLL or EXE) that is linked to another instance of the static CRT. In contrast, the dynamically linked CRT shares state for all code within a process that is dynamically linked to the CRT. This concern does not apply if you use the new more secure versions of these functions; for example, `strtok_s` does not have this problem.
+Using the statically linked CRT implies that any state information saved by the C runtime library will be local to that instance of the CRT. For example, if you use [`strtok`](../c-runtime-library/reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md) when using a statically linked CRT, the position of the `strtok` parser is unrelated to the `strtok` state used in code in the same process (but in a different DLL or EXE) that is linked to another instance of the static CRT. In contrast, the dynamically linked CRT shares state for all code within a process that is dynamically linked to the CRT. This concern doesn't apply if you use the new more secure versions of these functions; for example, `strtok_s` doesn't have this problem.
 
 Because a DLL built by linking to a static CRT has its own CRT state, it isn't recommended to link statically to the CRT in a DLL unless the consequences of this are specifically desired and understood. For example, if you call [`_set_se_translator`](../c-runtime-library/reference/set-se-translator.md) in an executable that loads the DLL linked to its own static CRT, any hardware exceptions generated by the code in the DLL will not be caught by the translator, but hardware exceptions generated by code in the main executable will be caught.
 
-If you are using the **`/clr`** compiler switch, your code will be linked with a static library, msvcmrt.lib. The static library provides a proxy between your managed code and the native CRT. You cannot use the statically linked CRT ( **`/MT`** or **`/MTd`** options) with **`/clr`**. Use the dynamically-linked libraries (**`/MD`** or **`/MDd`**) instead. The pure managed CRT libraries are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+If you're using the **`/clr`** compiler switch, your code will be linked with a static library, msvcmrt.lib. The static library provides a proxy between your managed code and the native CRT. You cannot use the statically linked CRT ( **`/MT`** or **`/MTd`** options) with **`/clr`**. Use the dynamically-linked libraries (**`/MD`** or **`/MDd`**) instead. The pure managed CRT libraries are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
 
 For more information on using the CRT with **`/clr`**, see [Mixed (Native and Managed) Assemblies](../dotnet/mixed-native-and-managed-assemblies.md).
 
 To build a debug version of your application, the [`_DEBUG`](../c-runtime-library/debug.md) flag must be defined and the application must be linked with a debug version of one of these libraries. For more information about using the debug versions of the library files, see [CRT Debugging Techniques](/visualstudio/debugger/crt-debugging-techniques).
 
-This version of the CRT isn't fully conformant with the C99 standard. In versions before Visual Studio 2019 version 16.8, the \<tgmath.h> header isn't supported. In all versions, the `CX_LIMITED_RANGE` and `FP_CONTRACT` pragma macros are not supported. Certain elements such as the meaning of parameter specifiers in standard IO functions use legacy interpretations by default. You can use **`/Zc`** compiler conformance options and specify linker options to control some aspects of library conformance.
+This version of the CRT isn't fully conformant with the C99 standard. In versions before Visual Studio 2019 version 16.8, the \<tgmath.h> header isn't supported. In all versions, the `CX_LIMITED_RANGE` and `FP_CONTRACT` pragma macros aren't supported. Certain elements such as the meaning of parameter specifiers in standard IO functions use legacy interpretations by default. You can use **`/Zc`** compiler conformance options and specify linker options to control some aspects of library conformance.
 
-## C++ Standard Library .lib files
+## C++ Standard Library `.lib` files
 
 | C++ Standard Library | Characteristics | Option | Preprocessor directives |
 |--|--|--|--|
@@ -87,11 +87,11 @@ When you build a release version of your project, one of the basic C runtime lib
 #include <ios>
 ```
 
-For binary compatibility, more than one DLL file may be specified by a single import library. Version updates may introduce *dot libraries*, separate DLLs that introduce new library functionality. For example, Visual Studio 2017 version 15.6 introduced *`msvcp140_1.dll`* to support additional standard library functionality without breaking the ABI supported by *`msvcp140.dll`*. The *`msvcprt.lib`* import library included in the toolset for Visual Studio 2017 version 15.6 supports both DLLs, and the vcredist for this version installs both DLLs. Once shipped, a dot library has a fixed ABI, and will never have a dependency on a later dot library.
+For binary compatibility, more than one DLL file may be specified by a single import library. Version updates may introduce *dot libraries*, separate DLLs that introduce new library functionality. For example, Visual Studio 2017 version 15.6 introduced *`msvcp140_1.dll`* to support additional standard library functionality without breaking the Application Binary Interface (ABI) supported by *`msvcp140.dll`*. The *`msvcprt.lib`* import library included in the toolset for Visual Studio 2017 version 15.6 supports both DLLs, and the vcredist for this version installs both DLLs. Once shipped, a dot library has a fixed ABI, and will never have a dependency on a later dot library.
 
 ## What problems exist if an application uses more than one CRT version?
 
-Every executable image (EXE or DLL) can have its own statically linked CRT, or can dynamically link to a CRT. The version of the CRT statically included in or dynamically loaded by a particular image depends on the version of the tools and libraries it was built with. A single process may load multiple EXE and DLL images, each with its own CRT. Each of those CRTs may use a different allocator, may have different internal structure layouts, and may use different storage arrangements. This means that allocated memory, CRT resources, or classes passed across a DLL boundary can cause problems in memory management, internal static usage, or layout interpretation. For example, if a class is allocated in one DLL but passed to and deleted by another, which CRT deallocator is used? The errors caused can range from the subtle to the immediately fatal, and therefore direct transfer of such resources is strongly discouraged.
+Every executable image (EXE or DLL) can have its own statically linked CRT, or can dynamically link to a CRT. The version of the CRT statically included in or dynamically loaded by a particular image depends on the version of the tools and libraries it was built with. A single process may load multiple EXE and DLL images, each with its own CRT. Each of those CRTs may use a different allocator, may have different internal structure layouts, and may use different storage arrangements. This means allocated memory, CRT resources, or classes passed across a DLL boundary can cause problems in memory management, internal static usage, or layout interpretation. For example, if a class is allocated in one DLL but passed to and deleted by another, which CRT deallocator is used? The errors caused can range from the subtle to the immediately fatal, and therefore direct transfer of such resources is strongly discouraged.
 
 You can avoid many of these issues by using Application Binary Interface (ABI) technologies instead, as they are designed to be stable and versionable. Design your DLL export interfaces to pass information by value, or to work on memory that is passed in by the caller rather than allocated locally and returned to the caller. Use marshaling techniques to copy structured data between executable images. Encapsulate resources locally and only allow manipulation through handles or functions you expose to clients.
 
