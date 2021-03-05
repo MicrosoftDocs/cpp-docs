@@ -9,7 +9,7 @@ helpviewer_keywords: ["stack-buffer-underflow error", "AddressSanitizer error st
 
 > Address Sanitizer Error: Stack buffer underflow
 
-Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+These error messages indicate a memory access to somewhere before the beginning of a stack variable.
 
 ## Example - local array underflow
 

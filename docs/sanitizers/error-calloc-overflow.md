@@ -9,7 +9,7 @@ helpviewer_keywords: ["calloc-overflow error", "AddressSanitizer error calloc-ov
 
 > Address Sanitizer Error: calloc-overflow
 
-The CRT function [`calloc`](../c-runtime-library/reference/calloc.md) creates an array in memory with elements initialized to 0. The arguments can create an internal error that leads to a NULL pointer as the return value. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+The CRT function [`calloc`](../c-runtime-library/reference/calloc.md) creates an array in memory with elements initialized to 0. The arguments can create an internal error that leads to a NULL pointer as the return value.
 
 ## Example
 

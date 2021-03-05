@@ -9,7 +9,7 @@ helpviewer_keywords: ["dynamic-stack-buffer-overflow error", "AddressSanitizer e
 
 > Address Sanitizer Error: dynamic-stack-buffer-overflow
 
-This example shows the error that results from a buffer access outside the bounds of a stack-allocated object. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+This example shows the error that results from a buffer access outside the bounds of a stack-allocated object.
 
 ## Example - `alloca` overflow (right)
 

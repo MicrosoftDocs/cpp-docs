@@ -9,7 +9,7 @@ helpviewer_keywords: ["heap-use-after-free error", "AddressSanitizer error heap-
 
 > Address Sanitizer Error: Use of deallocated memory
 
-We show three examples where storage in the heap can be allocated via `malloc`, `realloc` (C), and `new` (C++), along with a mistaken use of `volatile`. Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+We show three examples where storage in the heap can be allocated via `malloc`, `realloc` (C), and `new` (C++), along with a mistaken use of `volatile`.
 
 ## Example - `malloc`
 

@@ -9,7 +9,7 @@ helpviewer_keywords: ["use-after-poison error", "AddressSanitizer error use-afte
 
 > Address Sanitizer Error: Use of poisoned memory
 
-A developer can manually poison memory to customize debugging. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+A developer can manually poison memory to customize debugging.
 
 ## Example
 

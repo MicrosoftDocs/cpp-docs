@@ -9,7 +9,7 @@ helpviewer_keywords: ["heap-buffer-overflow error", "AddressSanitizer error heap
 
 > Address Sanitizer Error: Heap buffer overflow
 
-This example demonstrates the error that results when a memory access occurs outside the bounds of a heap-allocated object. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+This example demonstrates the error that results when a memory access occurs outside the bounds of a heap-allocated object.
 
 ## Example - classic heap buffer overflow
 

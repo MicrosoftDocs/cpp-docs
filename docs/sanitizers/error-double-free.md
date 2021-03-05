@@ -10,7 +10,7 @@ helpviewer_keywords: ["double-free error", "AddressSanitizer error double-free"]
 
 > Address Sanitizer Error: Deallocation of freed memory
 
-In C, you can call `free` erroneously. In C++, you can call `delete` more than once. In these examples, we show errors with `delete`, `free`, and `HeapCreate`. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+In C, you can call `free` erroneously. In C++, you can call `delete` more than once. In these examples, we show errors with `delete`, `free`, and `HeapCreate`.
 
 ## Example C++ - double `operator delete`
 

@@ -1,7 +1,7 @@
 ---
 title: "AddressSanitizer"
 description: "Top-level description of the AddressSanitizer feature for Microsoft C/C++."
-ms.date: 02/05/2021
+ms.date: 03/05/2021
 f1_keywords: ["AddressSanitizer"]
 helpviewer_keywords: ["ASan", "AddressSanitizer", "Address Sanitizer", "compiling for AddressSanitizer"]
 ---
@@ -10,9 +10,21 @@ helpviewer_keywords: ["ASan", "AddressSanitizer", "Address Sanitizer", "compilin
 
 ## Overview
 
-The C & C++ languages are powerful, but can suffer from a class of bugs that affect **program correctness** and **program security**. Starting in Visual Studio 2019 version 16.9, the Microsoft C/C++ compiler (MSVC) and IDE supports the AddressSanitizer. This compiler and runtime technology exposes many [hard-to-find bugs](./asan-error-examples.md) with **zero false positives**.
+The C & C++ languages are powerful, but can suffer from a class of bugs that affect program correctness and program security. Starting in Visual Studio 2019 version 16.9, the Microsoft C/C++ compiler (MSVC) and IDE supports the *AddressSanitizer*. AddressSanitizer (ASan) is a compiler and runtime technology that exposes many hard-to-find bugs with **zero** false positives:
 
-Use this feature to reduce your time spent on:
+- [Alloc/dealloc mismatches](error-alloc-dealloc-mismatch.md) and [`new`/`delete` type mismatches](error-new-delete-type-mismatch.md)
+- [Allocations too large for the heap](error-allocation-size-too-big.md)
+- [`calloc` overflow](error-calloc-overflow.md) and [`alloca` overflow](error-dynamic-stack-buffer-overflow.md)
+- [Double free](error-double-free.md) and [use after free](error-heap-use-after-free.md)
+- [Global variable overflow](error-global-buffer-overflow.md)
+- [Heap buffer overflow](error-heap-buffer-overflow.md)
+- [Invalid alignment of aligned values](error-invalid-allocation-alignment.md)
+- [`memcpy`](error-memcpy-param-overlap.md) and [`strncat` parameter overlap](error-strncat-param-overlap.md)
+- [Stack buffer overflow](error-stack-buffer-overflow.md) and [underflow](error-stack-buffer-underflow.md)
+- [Stack use after `return`](error-stack-use-after-return.md) and [use after scope](error-stack-use-after-scope.md)
+- [Memory use after it's poisoned](error-use-after-poison.md)
+
+Use AddressSanitizer to reduce your time spent on:
 
 - Basic correctness
 - Cross platform portability
@@ -20,21 +32,19 @@ Use this feature to reduce your time spent on:
 - Stress testing
 - Integrating new code
 
-The AddressSanitizer is a compiler and runtime [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany). The [`/fsanitize=address`](../build/reference/fsanitize.md) compiler option is a powerful alternative to both [`/RTC`](../build/reference/rtc-run-time-error-checks.md) and [`/analyze`](../build/reference/analyze-code-analysis.md). It provides run-time bug-finding technologies that use your existing build systems and existing test assets directly.
+AddressSanitizer, originally [introduced by Google](https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany), is a powerful alternative to both [`/RTC` (Runtime error checks)](../build/reference/rtc-run-time-error-checks.md) and [`/analyze` (Static analysis)](../build/reference/analyze-code-analysis.md). It provides run-time bug-finding technologies that use your existing build systems and existing test assets directly.
 
-Projects can enable the AddressSanitizer by setting a project property, or by using one extra compiler option: **`/fsanitize=address`**. The new option is compatible with all levels of optimization and configurations of x86 and x64, but it's incompatible with [edit-and-continue](/visualstudio/debugger/edit-and-continue-visual-cpp), [incremental linking](../build/reference/incremental-link-incrementally.md), and [`/RTC`](../build/reference/rtc-run-time-error-checks.md).
+AddressSanitizer is integrated with the Visual Studio project system, the CMake build system, and the IDE. Projects can enable AddressSanitizer by setting a project property, or by using one extra compiler option: **`/fsanitize=address`**. The new option is compatible with all levels of optimization and configurations of x86 and x64. However, it's incompatible with [edit-and-continue](/visualstudio/debugger/edit-and-continue-visual-cpp), [incremental linking](../build/reference/incremental-link-incrementally.md), and [`/RTC`](../build/reference/rtc-run-time-error-checks.md).
 
-The AddressSanitizer is integrated with the Visual Studio project system, the CMake build system, and the IDE.
-
-Microsoft's AddressSanitizer technology enables integration with the Visual Studio IDE. The functionality can optionally create a crash dump file when the sanitizer finds a bug at runtime. If you set the `ASAN_SAVE_DUMPS=MyFileName.dmp` environment variable before you run your program, a crash dump file gets created with extra metadata for efficient [post-mortem debugging](#crash-dumps) of **precisely diagnosed bugs**. These dump files make extended use of the AddressSanitizer easier for:
+Starting in Visual Studio 2019 version 16.9, Microsoft's AddressSanitizer technology enables integration with the Visual Studio IDE. The functionality can optionally create a crash dump file when the sanitizer finds a bug at runtime. If you set the `ASAN_SAVE_DUMPS=MyFileName.dmp` environment variable before you run your program, a crash dump file gets created with extra metadata for efficient [post-mortem debugging](#crash-dumps) of precisely diagnosed bugs. These dump files make extended use of the AddressSanitizer easier for:
 
 - Local machine testing,
 - On-premise distributed testing, and
 - Cloud-based workflows for testing.
 
-### Installing the AddressSanitizer
+### Install the AddressSanitizer
 
-The AddressSanitizer is installed by default with C++ workloads in the Visual Studio Installer. However, if you're upgrading from an older version of Visual Studio 2019, you'll need to use the Installer to enable ASan support after the upgrade:
+The AddressSanitizer IDE integration and libraries get installed by default with C++ workloads in the Visual Studio Installer. However, if you're upgrading from an older version of Visual Studio 2019, use the Installer to enable ASan support after the upgrade:
 
 :::image type="content" source="media/asan-installer-option.png" alt-text="Visual Studio Installer screenshot highlighting the C++ AddressSanitizer component":::
 
@@ -45,17 +55,17 @@ You can choose **Modify** on your existing Visual Studio installation from the V
 >
 > LNK1356: cannot find library 'clang_rt.asan_dynamic-i386.lib'
 
-### <a name="using-asan"></a> Using the AddressSanitizer
+### <a name="using-asan"></a> Use the AddressSanitizer
 
 Start building your executables with the **`/fsanitize=address`** compiler option using any of these common development methods:
 
-- Command line
+- Command line builds
 - Visual Studio project system
 - Visual Studio CMake integration
 
- Recompile, then run your program normally. This code generation exposes [many types of precisely diagnosed bugs](./asan-error-examples.md). These errors get reported in three ways: in the debugger IDE, on the command line, or stored in a [new type of dump file](#crash-dumps) for precise off-line processing.
+ Recompile, then run your program normally. This code generation exposes [many types of precisely diagnosed bugs](#error-types). These errors get reported in three ways: in the debugger IDE, on the command line, or stored in a [new type of dump file](#crash-dumps) for precise off-line processing.
 
-Microsoft recommends using the AddressSanitizer in these **three standard workflows**:
+Microsoft recommends using the AddressSanitizer in these three standard workflows:
 
 - **Developer inner loop**
   - Visual Studio - [Command line](#command-prompt)
@@ -118,11 +128,11 @@ Consider the overlaid, red boxes that highlight seven key pieces of information:
 
 ## <a name="ide-msbuild"></a> Use the AddressSanitizer in Visual Studio
 
-AddressSanitizer is integrated with the Visual Studio IDE. To turn on the AddressSanitizer for an MSBuild project, right-click on the project in Solution Explorer and choose Properties. In the Property Pages dialog, select **Configuration Properties** > **C/C++** > **General**, then modify the **Enable AddressSanitizer** property. Choose **OK** to save your changes.
+AddressSanitizer is integrated with the Visual Studio IDE. To turn on the AddressSanitizer for an MSBuild project, right-click on the project in Solution Explorer and choose **Properties**. In the **Property Pages** dialog, select **Configuration Properties** > **C/C++** > **General**, then modify the **Enable AddressSanitizer** property. Choose **OK** to save your changes.
 
 :::image type="content" source="media/asan-project-system-dialog.png" alt-text="Screenshot of the Property Pages dialog showing the Enable AddressSanitizer property.":::
 
-To build from the IDE, opt out of [these incompatible options](./asan-known-issues.md#incompatible-options). For an existing project compiled by using **`/Od`** (or Debug mode), you may need to turn off these options:
+To build from the IDE, opt out of any [incompatible options](./asan-known-issues.md#incompatible-options). For an existing project compiled by using **`/Od`** (or Debug mode), you may need to turn off these options:
 
 - Turn off [edit and continue](/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue)
 - Turn off [`/RTC1` (runtime checks)](../build/reference/rtc-run-time-error-checks.md)
@@ -140,9 +150,9 @@ To enable the AddressSanitizer for [a CMake project created to target Windows](.
 
    :::image type="content" source="media/asan-cmake-configuration-dropdown.png" alt-text="Screenshot of the CMake configuration dropdown.":::
 
-   That selection opens the CMake Project Settings UI, which is saved in a CMakeSettings.json file.
+   That selection opens the CMake Project Settings editor, which is saved in a CMakeSettings.json file.
 
-1. Choose the **Edit JSON** link in the UI. This selection switches the view to raw JSON.
+1. Choose the **Edit JSON** link in the editor. This selection switches the view to raw JSON.
 
 1. Add the property: **“addressSanitizerEnabled”: true**
 
@@ -172,9 +182,29 @@ Starting with Visual Studio 16.9 you can display **a precisely diagnosed error**
 
 [This new crash dump functionality](./asan-offline-crash-dumps.md) enables cloud-based workflows, or distributed testing. It can also be used to file a detailed, actionable bug in any scenario.
 
-## <a name="error-types"></a> Error types
+## <a name="error-types"></a> Example errors
 
-The MSVC AddressSanitizer implementation can detect many kinds of memory misuse errors. For a non-exhaustive list of errors and links to demonstration examples, see [AddressSanitizer error examples](./asan-error-examples.md).
+AddressSanitizer can detect several kinds of memory misuse errors. Here are many of the runtime errors reported when you run your binaries compiled by using the AddressSanitizer (**`/fsanitize=address`**) compiler option:
+
+- [`alloc-dealloc-mismatch`](error-alloc-dealloc-mismatch.md)
+- [`allocation-size-too-big`](error-allocation-size-too-big.md)
+- [`calloc-overflow`](error-calloc-overflow.md)
+- [`double-free`](error-double-free.md)
+- [`dynamic-stack-buffer-overflow`](error-dynamic-stack-buffer-overflow.md)
+- [`global-buffer-overflow`](error-global-buffer-overflow.md)
+- [`heap-buffer-overflow`](error-heap-buffer-overflow.md)
+- [`heap-use-after-free`](error-heap-use-after-free.md)
+- [`invalid-allocation-alignment`](error-invalid-allocation-alignment.md)
+- [`memcpy-param-overlap`](error-memcpy-param-overlap.md)
+- [`new-delete-type-mismatch`](error-new-delete-type-mismatch.md)
+- [`stack-buffer-overflow`](error-stack-buffer-overflow.md)
+- [`stack-buffer-underflow`](error-stack-buffer-underflow.md)
+- [`stack-use-after-return`](error-stack-use-after-return.md)
+- [`stack-use-after-scope`](error-stack-use-after-scope.md)
+- [`strncat-param-overlap`](error-strncat-param-overlap.md)
+- [`use-after-poison`](error-use-after-poison.md)
+
+For more information about the examples, see [AddressSanitizer error examples](./asan-error-examples.md).
 
 ## <a name="differences"></a> Differences with Clang 12.0
 

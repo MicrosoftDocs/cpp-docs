@@ -11,11 +11,9 @@ helpviewer_keywords: ["global-buffer-overflow error", "AddressSanitizer error gl
 
 The compiler generates metadata for any variable in the `.data` or `.bss` sections. These variables have language scope of global or file static. They're allocated in memory before `main()` starts. Global variables in C are treated much differently than in C++. This difference is because of the complex rules for C++ linking.  
 
-In C, a global variable can be declared in several source files, and each definition can have different types. The compiler can't see all the possible definitions at once. However, the linker does see all the different definitions. For C, the linker defaults to selecting the largest-sized variable out of all the different declarations.
+In C, a global variable can be declared in several source files, and each definition can have different types. The compiler can't see all the possible definitions at once, but the linker can. For C, the linker defaults to selecting the largest-sized variable out of all the different declarations.
 
 In C++, a global is allocated by the compiler. There can only be one definition, so the size of each definition is known at compile time.
-
-Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
 
 ## Example - globals in 'C' with multiple type definitions
 

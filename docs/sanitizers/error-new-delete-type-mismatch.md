@@ -9,7 +9,7 @@ helpviewer_keywords: ["new-delete-type-mismatch error", "AddressSanitizer error 
 
 > Address Sanitizer Error: Deallocation size different from allocation size
 
-In this example, only `~Base`, and not `~Derived`, is called. The compiler generates a call to `~Base()` because the `Base` destructor isn't **`virtual`**. When we call `delete b`, the object's destructor is bound to the default definition. The code deletes an empty base class (or 1 byte on Windows). A missing **`virtual`** keyword on the destructor declaration is a common C++ error when using inheritance. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+In this example, only `~Base`, and not `~Derived`, is called. The compiler generates a call to `~Base()` because the `Base` destructor isn't **`virtual`**. When we call `delete b`, the object's destructor is bound to the default definition. The code deletes an empty base class (or 1 byte on Windows). A missing **`virtual`** keyword on the destructor declaration is a common C++ error when using inheritance.
 
 ## Example - virtual destructor
 

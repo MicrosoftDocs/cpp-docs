@@ -9,9 +9,13 @@ helpviewer_keywords: ["strncat-param-overlap error", "AddressSanitizer error str
 
 > Address Sanitizer Error: strncat-param-overlap
 
-This example shows how AddressSanitizer can catch errors caused by overlapped parameters to CRT functions. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+Code that moves memory in overlapping buffer can cause hard-to-diagnose errors.
 
 ## Example
+
+This example shows how AddressSanitizer can catch errors caused by overlapped parameters to CRT functions.
+
+(Based on [llvm-project/compiler-rt/test/asan/TestCases/strncat-overlap.cpp](https://github.com/llvm/llvm-project/blob/62ec4ac90738a5f2d209ed28c822223e58aaaeb7/compiler-rt/test/asan/TestCases/strncat-overlap.cpp).)
 
 ```cpp
 // example1.cpp
@@ -19,16 +23,12 @@ This example shows how AddressSanitizer can catch errors caused by overlapped pa
 #include <string.h>
 
 void bad_function() {
-
     char buffer[] = "hello\0XXX";
-
     strncat(buffer, buffer + 1, 3); // BOOM
-
     return;
 }
 
 int main(int argc, char **argv) {
-
     bad_function();
     return 0;
 }

@@ -9,7 +9,7 @@ helpviewer_keywords: ["alloc-dealloc-mismatch error", "AddressSanitizer error al
 
 > Address Sanitizer Error: Mismatch between allocation and deallocation APIs
 
-The `alloc`/`dealloc` mismatch functionality in AddressSanitizer is off by default for Windows. To enable it, run `set ASAN_OPTIONS=alloc_dealloc_mismatch=1` before running the program. This environment variable is checked at runtime to report errors on `malloc`/`delete`, `new`/`free`, and `new`/`delete[]`. Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
+The `alloc`/`dealloc` mismatch functionality in AddressSanitizer is off by default for Windows. To enable it, run `set ASAN_OPTIONS=alloc_dealloc_mismatch=1` before running the program. This environment variable is checked at runtime to report errors on `malloc`/`delete`, `new`/`free`, and `new`/`delete[]`.
 
 ## Example
 

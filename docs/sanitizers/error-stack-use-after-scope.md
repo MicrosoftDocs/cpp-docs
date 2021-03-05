@@ -11,8 +11,6 @@ helpviewer_keywords: ["stack-use-after-scope error", "AddressSanitizer error sta
 
 The use of a stack address outside the lexical scope of a variable's lifetime can happen many ways in C or C++.
 
-Examples sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
-
 ## Example 1 - simple nested local
 
 ```cpp

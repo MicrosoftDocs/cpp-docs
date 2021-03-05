@@ -13,8 +13,6 @@ The CRT function [`memcpy`](../c-runtime-library/reference/memcpy-wmemcpy.md) **
 
 A common error is to treat `memmove` as being semantically equivalent to `memcpy`.
 
-Example sourced from [LLVM compiler-rt test suite](https://github.com/llvm/llvm-project/tree/main/compiler-rt/test/asan/TestCases).
-
 ## Example
 
 ```cpp
