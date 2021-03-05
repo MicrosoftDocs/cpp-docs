@@ -1,0 +1,52 @@
+### YamlMime:Landing
+title: C/C++ Sanitizers | Instrument code for runtime bug detection # < 60 chars
+summary: Use C and C++ sanitizers for defect reporting, analysis, and prevention. # < 160 chars
+
+metadata:
+  title: C/C++ Sanitizers # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to use sanitizers for defect reporting, analysis, and prevention.
+  ms.topic: landing-page
+  author: corob-msft
+  ms.author: corob
+  ms.date: 02/26/2021
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Find bugs using code sanitizers
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Learn about AddressSanitizer
+            url: asan.md
+      - linkListType: tutorial
+        links:
+          - text: AddressSanitizer shadow bytes
+            url: ./asan-shadow-bytes.md
+          - text: AddressSanitizer cloud or distributed testing
+            url: ./asan-offline-crash-dumps.md
+
+  # Card (optional)
+  - title: Instrument your builds
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: AddressSanitizer build and language reference
+            url: ./asan-building.md
+          - text: AddressSanitizer runtime reference
+            url: ./asan-runtime.md
+          - text: AddressSanitizer error examples
+            url: ./asan-error-examples.md
+          - text: AddressSanitizer known issues
+            url: ./asan-known-issues.md
+
+  # Card
+  - title: Debug your results
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: AddressSanitizer debugger integration
+            url: ./asan-debugger-integration.md

@@ -72,6 +72,7 @@ You can use the [comment](../../preprocessor/comment-c-cpp.md) pragma to specify
 |[/IMPLIB](implib-name-import-library.md)|Overrides the default import library name.|
 |[/INCLUDE](include-force-symbol-references.md)|Forces symbol references.|
 |[/INCREMENTAL](incremental-link-incrementally.md)|Controls incremental linking.|
+|[/INFERASANLIBS](inferasanlibs.md)|Uses inferred sanitizer libraries.|
 |[/INTEGRITYCHECK](integritycheck-require-signature-check.md)|Specifies that the module requires a signature check at load time.|
 |[/KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-assembly.md)|Specifies a key container to sign an assembly.|
 |[/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)|Specifies a key or key pair to sign an assembly.|
