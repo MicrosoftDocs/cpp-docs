@@ -453,7 +453,7 @@ virtual void OnDrawOnList(
 [in] Pointer to a device context for the `CMFCRibbonEdit` control.
 
 *strText*<br/>
-[in] The display text ["cmfcribbonedit class"](../../mfc/reference/cmfcribbonedit-class.md).
+[in] The display text.
 
 *nTextOffset*<br/>
 [in] Distance, in pixels, from the left side of the list box to the display text.
