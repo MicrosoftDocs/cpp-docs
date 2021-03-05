@@ -10,7 +10,7 @@ The Microsoft C++ (MSVC) compiler toolsets in Visual Studio 2013 and earlier don
 
 We've changed this behavior in Visual Studio 2015, 2017, and 2019. The runtime libraries and apps compiled by any of these versions of the compiler are binary-compatible. It's reflected in the C++ toolset major number, which starts with 14 for all three versions. (The toolset version is v140 for Visual Studio 2015, v141 for 2017, and v142 for 2019). Say you have third-party libraries built by Visual Studio 2015. You can still use them in an application built by Visual Studio 2017 or 2019. There's no need to recompile with a matching toolset. The latest version of the Microsoft Visual C++ Redistributable package (the Redistributable) works for all of them.
 
-## Restrictions on binary compatibility
+## <a name="restrictions"></a> Restrictions on binary compatibility
 
 There are three important restrictions on binary compatibility between the the v140, v141, and v142 toolsets and minor numbered version updates:
 
