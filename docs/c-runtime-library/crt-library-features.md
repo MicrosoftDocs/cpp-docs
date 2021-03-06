@@ -1,11 +1,11 @@
 ---
-title: "C Runtime (CRT) and C++ Standard Library .lib files"
+title: "C runtime (CRT) and C++ Standard Library .lib files"
 description: "List of Microsoft C runtime and C++ Standard Library .lib files that you can link against and their associated compiler options and preprocessor directives."
 ms.date: "3/5/2021"
 ms.topic: "reference"
 helpviewer_keywords: ["MSVCR71.dll", "libraries [C++], multithreaded", "library files, run-time", "LIBCMT.lib", "LIBCP.lib", "LIBCPMT.lib", "run-time libraries, C", "CRT, release versions", "MSVCP71.dll", "LIBC.lib", "libraries [C++]", "libraries [C++], run-time", "linking [C++], libraries"]
 ---
-# C Runtime (CRT) and C++ Standard Library `.lib` files
+# C runtime (CRT) and C++ Standard Library `.lib` files
 
 This topic lists the Microsoft C runtime library `.lib` files that you can link against when you develop your application, and their associated compiler options and preprocessor directives.
 
