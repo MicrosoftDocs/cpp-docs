@@ -26,13 +26,13 @@ int _CrtMemDifference(
 
 ### Parameters
 
-*stateDiff*<br/>
+*stateDiff*\
 Pointer to a **_CrtMemState** structure that is used to store the differences between the two memory states (returned).
 
-*oldState*<br/>
+*oldState*\
 Pointer to an earlier memory state (**_CrtMemState** structure).
 
-*newState*<br/>
+*newState*\
 Pointer to a later memory state (**_CrtMemState** structure).
 
 ## Return Value
@@ -59,9 +59,9 @@ For more information about heap state functions and the **_CrtMemState** structu
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-**Libraries:** Debug versions of [CRT runtime libraries](../../c-runtime-library/crt-library-features.md) only.
+**Libraries:** Debug versions of the [C runtime libraries](../../c-runtime-library/crt-library-features.md) only.
 
 ## See also
 
-[Debug Routines](../../c-runtime-library/debug-routines.md)<br/>
-[_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)<br/>
+[Debug Routines](../../c-runtime-library/debug-routines.md)\
+[_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)\

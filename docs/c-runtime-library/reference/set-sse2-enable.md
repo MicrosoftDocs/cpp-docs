@@ -91,4 +91,4 @@ SSE2 enabled.
 
 ## See also
 
-[C runtime (CRT) and C++ Standard Library (STL) `.lib` files]\(../../c-runtime-library/crt-library-features.md)<br/>
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../../c-runtime-library/crt-library-features.md)

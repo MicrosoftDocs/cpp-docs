@@ -61,7 +61,7 @@ For more compatibility information, see [Compatibility](../c-runtime-library/com
 
 ## Libraries
 
-All versions of the [C runtime library](../c-runtime-library/crt-library-features.md).
+All versions of the [C run-time libraries](../c-runtime-library/crt-library-features.md).
 
 ## See also
 

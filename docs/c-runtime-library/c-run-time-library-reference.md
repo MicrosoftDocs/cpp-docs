@@ -37,7 +37,7 @@ Provides links to the C runtime library functions, organized by function family.
 [Language and country/region strings](locale-names-languages-and-country-region-strings.md)\
 Describes how to use the `setlocale` function to set the language and Country/Region strings.
 
-[C runtime (CRT) and C++ Standard Library (STL) `.lib` files]\(crt-library-features.md)\
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](crt-library-features.md)\
 List of `.lib` files that make up the C runtime libraries and their associated compiler options and preprocessor directives.
 
 ## Related Sections

@@ -84,7 +84,7 @@ By default, this function's global state is scoped to the application. To change
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-**Libraries:** All versions of the [C runtime (CRT) and C++ Standard Library (STL) `.lib` files]\(../../c-runtime-library/crt-library-features.md).
+**Libraries:** All versions of the [C runtime libraries](../../c-runtime-library/crt-library-features.md).
 
 ## Example
 
