@@ -21,4 +21,4 @@ The run-time library header files provide function declarations in the ANSI/ISO 
 
 ## See also
 
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files]\(../c-runtime-library/crt-library-features.md)

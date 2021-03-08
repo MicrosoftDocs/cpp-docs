@@ -14,4 +14,4 @@ For more information about using SAL annotations in Visual Studio, see [Using SA
 
 ## See also
 
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files]\(../c-runtime-library/crt-library-features.md)

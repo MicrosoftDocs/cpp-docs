@@ -16,4 +16,4 @@ The C Run-Time library functions, such as the string-manipulation and buffer-man
 
 ## See also
 
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files]\(../c-runtime-library/crt-library-features.md)

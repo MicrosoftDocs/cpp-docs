@@ -83,7 +83,7 @@ In addition, the reporting mode or modes for each report type can be separately 
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-**Libraries:** Debug versions of [CRT Library Features](../../c-runtime-library/crt-library-features.md) only.
+**Libraries:** Debug versions of [CRT runtime libraries](../../c-runtime-library/crt-library-features.md) only.
 
 ## See also
 

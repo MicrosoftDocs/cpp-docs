@@ -93,4 +93,4 @@ More secure versions of run-time library routines are available. For further inf
 
 ## See also
 
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files]\(../c-runtime-library/crt-library-features.md)
