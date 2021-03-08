@@ -401,8 +401,8 @@ You run all the threads in a given tile to the line that contains the cursor by 
 
 ## See also
 
-[C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md)\
-[Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code)\
-[How to: Use the GPU Threads Window](/visualstudio/debugger/how-to-use-the-gpu-threads-window)\
-[How to: Use the Parallel Watch Window](/visualstudio/debugger/how-to-use-the-parallel-watch-window)\
-[Analyzing C++ AMP Code with the Concurrency Visualizer](/archive/blogs/nativeconcurrency/analyzing-c-amp-code-with-the-concurrency-visualizer)
+[C++ AMP overview](../../parallel/amp/cpp-amp-overview.md)\
+[Debugging GPU code](/visualstudio/debugger/debugging-gpu-code)\
+[How to: Use the GPU Threads window](/visualstudio/debugger/how-to-use-the-gpu-threads-window)\
+[How to: Use the Parallel Watch window](/visualstudio/debugger/how-to-use-the-parallel-watch-window)\
+[Analyzing C++ AMP code with the Concurrency Visualizer](/archive/blogs/nativeconcurrency/analyzing-c-amp-code-with-the-concurrency-visualizer)
