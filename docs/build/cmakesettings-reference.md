@@ -25,8 +25,8 @@ The `configurations` array contains all the configurations for a CMake project. 
 
 A `configuration` has these properties:
 
-- `addressSanitizerEnabled`: if **`true`** compiles the program with Address Sanitizer (Experimental on Windows). On Linux, compile with -fno-omit-frame-pointer and compiler optimization level -Os or -Oo for best results.
-- `addressSanitizerRuntimeFlags`: runtime flags passed to AddressSanitizer via the ASAN_OPTIONS environment variable. Format: flag1=value:flag2=value2.
+- `addressSanitizerEnabled`: if **`true`** compiles the program with [AddressSanitizer](../sanitizers/asan.md). On Linux, compile with -fno-omit-frame-pointer and compiler optimization level -Os or -Oo for best results.
+- `addressSanitizerRuntimeFlags`: runtime flags passed to [AddressSanitizer](../sanitizers/asan.md) via the ASAN_OPTIONS environment variable. Format: flag1=value:flag2=value2.
 - `buildCommandArgs`: specifies native build switches passed to CMake after --build --. For example, passing -v when using the Ninja generator forces Ninja to output command lines. See [Ninja command line arguments](#ninja) for more information on Ninja commands.
 - `buildRoot`:  specifies the directory in which CMake generates build scripts for the chosen generator.  Maps to **-DCMAKE_BINARY_DIR** switch and specifies where *CMakeCache.txt* will be created. If the folder does not exist, it is created. Supported macros include `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
 - `cacheGenerationCommand`: specifies a command line tool and arguments, for example *gencache.bat debug* to generate the cache. The command is run from the shell in the specified environment for the configuration when the user explicitly requests regeneration, or a CMakeLists.txt or CMakeSettings.json file is modified.

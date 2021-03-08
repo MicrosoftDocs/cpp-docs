@@ -215,13 +215,14 @@ These identifiers are extended attributes for the **`__declspec`** modifier. The
     :::column-end:::
     :::column:::
         [`noreturn`](noreturn.md)\
+        [`no_sanitize_address`](no-sanitize-address.md)\
         [`nothrow`](nothrow-cpp.md)\
         [`novtable`](novtable.md)\
         [`process`](process.md)\
-        [`property`](property-cpp.md)\
-        [`restrict`](restrict.md)
+        [`property`](property-cpp.md)
     :::column-end:::
     :::column:::
+        [`restrict`](restrict.md)\
         [`safebuffers`](safebuffers.md)\
         [`selectany`](selectany.md)\
         [`spectre`](spectre.md)\

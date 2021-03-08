@@ -181,10 +181,12 @@ additionalContent:
               url: /visualstudio/debugger/debugging-native-code
             - text: Analyze your code
               url: code-quality/index.yml
-            - text: Improve app performance
+            - text: Profile app performance
               url: /visualstudio/profiling
             - text: Port and upgrade code
               url: porting/visual-cpp-porting-and-upgrading-guide.md
+            - text: Sanitize code for bugs
+              url: sanitizers/index.yml
         # Card
         - title: Libraries
           links:
