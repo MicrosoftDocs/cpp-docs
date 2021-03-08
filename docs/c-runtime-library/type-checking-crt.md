@@ -24,4 +24,4 @@ The compiler performs the same limited type checking on the wide-character count
 
 ## See also
 
-[C runtime (CRT) and C++ Standard Library (STL) `.lib` files]\(../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)

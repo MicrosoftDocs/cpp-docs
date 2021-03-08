@@ -32,4 +32,4 @@ CLR pure mode versions of these objects are deprecated in Visual Studio 2015 and
 
 ## See also
 
-- [C runtime (CRT) and C++ Standard Library (STL) `.lib` files]\(../c-runtime-library/crt-library-features.md)
+- [C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)

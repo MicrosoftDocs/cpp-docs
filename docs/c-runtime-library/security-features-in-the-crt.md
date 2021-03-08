@@ -64,4 +64,4 @@ Some of the security features include:
 
 [Parameter Validation](../c-runtime-library/parameter-validation.md)<br/>
 [Secure Template Overloads](../c-runtime-library/secure-template-overloads.md)<br/>
-[C runtime (CRT) and C++ Standard Library (STL) `.lib` files]\(../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)

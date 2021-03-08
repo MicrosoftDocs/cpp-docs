@@ -28,4 +28,4 @@ The performance of the multithreaded libraries has been improved and is close to
 
 ## See also
 
-[C runtime (CRT) and C++ Standard Library (STL) `.lib` files]\(../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)

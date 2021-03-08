@@ -83,4 +83,4 @@ strcpy_s(szBuf, "test"); // doesn't compile; change it to
 ## See also
 
 [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md)<br/>
-[C runtime (CRT) and C++ Standard Library (STL) `.lib` files]\(../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)
