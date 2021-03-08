@@ -155,6 +155,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
 | [`/FC`](fc-full-path-of-source-code-file-in-diagnostics.md) | Displays the full path of source code files passed to *cl.exe* in diagnostic text. |
 | [`/FS`](fs-force-synchronous-pdb-writes.md) | Forces writes to the PDB file to be serialized through *MSPDBSRV.EXE*. |
+| [`/fsanitize`](fsanitize.md) | Enables compilation of sanitizer instrumentation such as AddressSanitizer. |
 | [`/H`](h-restrict-length-of-external-names.md) | Deprecated. Restricts the length of external (public) names. |
 | [`/HELP`](help-compiler-command-line-help.md) | Lists the compiler options. |
 | [`/J`](j-default-char-type-is-unsigned.md) | Changes the default **`char`** type. |
