@@ -3,8 +3,6 @@
 - name: CRT library features
   expanded: false
   items: 
-    - name: CRT library features
-      href: ../c-runtime-library/crt-library-features.md
     - name: Compatibility
       expanded: false
       items: 
@@ -66,6 +64,8 @@
       href: ../c-runtime-library/global-state.md
     - name: Type-generic math
       href: ../c-runtime-library/tgmath.md 
+    - name: C runtime (CRT) and C++ Standard Library .lib files
+      href: ../c-runtime-library/crt-library-features.md
 - name: Universal C runtime routines by category
   expanded: false
   items: 
