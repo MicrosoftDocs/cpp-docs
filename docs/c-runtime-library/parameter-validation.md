@@ -25,4 +25,4 @@ For more information on `errno`, see [errno, _doserrno, _sys_errlist, and _sys_n
 ## See also
 
 [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md)\
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)
