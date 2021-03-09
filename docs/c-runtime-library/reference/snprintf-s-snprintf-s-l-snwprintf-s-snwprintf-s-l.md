@@ -1,14 +1,13 @@
 ---
 description: "Learn more about: _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l"
 title: "_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l"
-ms.date: "11/04/2016"
+ms.date: "3/9/2021"
 api_name: ["_snprintf_s", "_snprintf_s_l", "_snwprintf_s", "_snwprintf_s_l"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_snwprintf_s_l", "_sntprintf_s_l", "snprintf_s_l", "_snprintf_s_l", "_sntprintf_s", "_snprintf_s", "snprintf_s", "_snwprintf_s", "snwprintf_s_l", "snwprintf_s", "sntprintf_s", "sntprintf_s_l"]
 helpviewer_keywords: ["_snprintf_s_l function", "_snwprintf_s_l function", "_sntprintf_s_l function", "snwprintf_s_l function", "snprintf_s function", "_snprintf_s function", "snprintf_s_l function", "_sntprintf_s function", "sntprintf_s_l function", "sntprintf_s function", "snwprintf_s function", "_snwprintf_s function", "formatted text [C++]"]
-ms.assetid: 9336ab86-13e5-4a29-a3cd-074adfee6891
 ---
 # _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
 
@@ -101,6 +100,7 @@ If *count* is [_TRUNCATE](../../c-runtime-library/truncate.md), then **_snprintf
 
 > [!IMPORTANT]
 > Ensure that *format* is not a user-defined string.
+> Starting in Windows 10 version 2004 (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with ['legacy_stdio_float_rounding.obj`](../link-options.md).
 
 **_snwprintf_s** is a wide-character version of **_snprintf_s**; the pointer arguments to **_snwprintf_s** are wide-character strings. Detection of encoding errors in **_snwprintf_s** might differ from that in **_snprintf_s**. **_snwprintf_s**, like **swprintf_s**, writes output to a string rather than to a destination of type **FILE**.
 
