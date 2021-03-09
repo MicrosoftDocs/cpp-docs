@@ -90,4 +90,4 @@ So, the CRT library uses both `__xc_a` and `__xc_z` to determine the start and e
 
 ## See also
 
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)
