@@ -35,4 +35,4 @@ Except as noted within the documentation for specific functions, the UCRT is com
 |[UNIX](../c-runtime-library/unix.md)|Provides guidelines for porting programs to UNIX.|
 |[Windows Platforms (CRT)](../c-runtime-library/windows-platforms-crt.md)|Lists the operating systems that are the CRT supports.|
 |[Backward Compatibility](../c-runtime-library/backward-compatibility.md)|Describes how to map old CRT names to the new ones.|
-|[CRT Library Features](../c-runtime-library/crt-library-features.md)|Provides an overview of the CRT library (.lib) files and the associated compiler options.|
+|[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)|Provides an overview of the CRT library (.lib) files and the associated compiler options.|
