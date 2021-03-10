@@ -1,14 +1,13 @@
 ---
 description: "Learn more about: sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l"
 title: "sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l"
-ms.date: "06/23/2020"
+ms.date: "3/9/2021"
 api_name: ["__swprintf_l", "sprintf", "_sprintf_l", "_swprintf_l", "swprintf"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "ntoskrnl.exe"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_stprintf_l", "__swprintf_l", "sprintf_l", "swprintf", "_sprintf_l", "sprintf", "_stprintf", "stprintf_l"]
 helpviewer_keywords: ["_swprintf_l function", "_stprintf function", "__swprintf_l function", "stprintf function", "sprintf function", "_sprintf_l function", "_stprintf_l function", "swprintf function", "strings [C++], writing to", "_CRT_NON_CONFORMING_SWPRINTFS", "swprintf_l function", "stprintf_l function", "sprintf_l function", "formatted text [C++]"]
-ms.assetid: f6efe66f-3563-4c74-9455-5411ed939b81
 ---
 # sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 
@@ -93,6 +92,8 @@ The **sprintf** function formats and stores a series of characters and values in
 
 > [!IMPORTANT]
 > Using **sprintf**, there is no way to limit the number of characters written, which means that code using **sprintf** is susceptible to buffer overruns. Consider using the related function [_snprintf](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md), which specifies a maximum number of characters to write to *buffer*, or use [_scprintf](scprintf-scprintf-l-scwprintf-scwprintf-l.md) to determine how large a buffer is required. Also, ensure that *format* is not a user-defined string.
+>
+> Starting in Windows 10 version 2004 (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with ['legacy_stdio_float_rounding.obj`](../link-options.md).
 
 **swprintf** is a wide-character version of **sprintf**; the pointer arguments to **swprintf** are wide-character strings. Detection of encoding errors in **swprintf** may differ from **sprintf**. **swprintf** and **fwprintf** behave identically except **swprintf** writes output to a string rather than to a destination of type **FILE**, and **swprintf** requires the *count* parameter to specify the maximum number of characters to write. The versions of these functions with the **_l** suffix are identical except they use the locale parameter passed in instead of the current thread locale.
 

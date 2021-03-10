@@ -1,14 +1,13 @@
 ---
 description: "Learn more about: _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l"
 title: "_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l"
-ms.date: "11/04/2016"
+ms.date: "3/9/2021"
 api_name: ["_fwprintf_p", "_fprintf_p_l", "_fwprintf_p_l", "_fprintf_p"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_fprintf_p", "_ftprintf_p", "fwprintf_p", "_fwprintf_p", "fprintf_p", "ftprintf_p"]
 helpviewer_keywords: ["fprintf_p_l function", "fprintf_p function", "_fprintf_p_l function", "_fprintf_p function", "_ftprintf_p_l function", "streams, printing formatted data to", "_fwprintf_p function", "fwprintf_p function", "_ftprintf_p function", "_fwprintf_p_l function", "ftprintf_p function", "printing [C++], formatted data to streams", "ftprintf_p_l function", "fwprintf_p_l function"]
-ms.assetid: 46b082e1-45ba-4383-9ee4-97015aa50bc6
 ---
 # _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
 
@@ -69,6 +68,9 @@ The versions of these functions with the **_l** suffix are identical except that
 
 > [!IMPORTANT]
 > Ensure that *format* is not a user-defined string.
+>
+>
+> Starting in Windows 10 version 2004 (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with ['legacy_stdio_float_rounding.obj`](../link-options.md).
 
 Like the non-secure versions (see [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), these functions validate their parameters and invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md), if either *stream* or *format* is a null pointer or if there are any unknown or badly formed formatting specifiers. If execution is allowed to continue, the functions return -1 and set **errno** to **EINVAL**.
 
