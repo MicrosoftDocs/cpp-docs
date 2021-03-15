@@ -70,7 +70,7 @@ You can get the decorated form of a symbol name after you compile the source fil
 
 #### To use DUMPBIN to view decorated names
 
-1. To see the exported symbols in an .obj or .lib file, enter `dumpbin /symbols` `objfile` at a developer command prompt.
+1. To see the exported symbols in an .obj or .lib file, enter `dumpbin /exports` `objfile` at a developer command prompt.
 
 2. To find the decorated form of a symbol, look for the undecorated name in parentheses. The decorated name is on the same line, after a pipe (&#124;) character and before the undecorated name.
 
