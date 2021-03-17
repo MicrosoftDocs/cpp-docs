@@ -84,6 +84,11 @@
       href: ../build/vcpkg-command-line-reference.md
 - name: "C++ Build Insights"
   href: ../build-insights/get-started-with-cpp-build-insights.md
+-name: Build C++ header units for STL headers and other libraries
+  expanded: false
+  items:
+  name: Header units
+  href: ../build/cpp-header-units.md 
 - name: Precompiled header files
   href: ../build/creating-precompiled-header-files.md
 - name: C++ release builds
