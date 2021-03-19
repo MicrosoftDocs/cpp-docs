@@ -59,6 +59,8 @@ If you use the \<tgmath.h> `pow()` macro, the type of the argument determines wh
 
 The `pow(int, int)` overload is no longer available. If you use this overload, the compiler may emit [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md). To avoid this problem, cast the first parameter to **`double`**, **`float`**, or **`long double`**.
 
+Originally, the `pow(T, int)` overloads would unroll the `pow` call into a sequence of inline multiplication operations. While this was faster, it was also significantly less accurate and was removed in Visual Studio 2015 Update 1.
+
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ## Requirements
