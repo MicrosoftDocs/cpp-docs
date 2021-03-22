@@ -1008,11 +1008,37 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
+- ** Removal of `pow(T, int)` unrolling optimization **
+
+   Previous versions of the C++ standard library defined a `pow(T, int)` function template that would unroll a `pow` function call into a series of multiplication operations. This technique would accrue a large amount of inaccuracy due to the nature of floating point operations, causing end results that could be significantly inaccurate. In Visual Studio 2015 Update 1, this behavior was removed to avoid unintentional loss of accuracy when using the `pow` function. However, this version of `pow` was much faster than the correct calculation. If this change causes a significant performance regression and your project does not require precise floating point results (for example, your project already compiles with /fp:fast), consider replacing calls to `pow` with this workaround function:
+   
+   ```cpp
+   template <class T> 
+   inline T pow_int(T x, int y) throw() {
+       unsigned int n;
+       if (y >= 0) {
+           n = (unsigned int)(y);
+       } else {
+           n = (unsigned int)(-y);
+       }
+       for (T z = T(1); ; x *= x) {
+           if ((n & 1) != 0) {
+               z *= x;
+           }
+           if ((n >>= 1) == 0) {
+               return (y < 0 ? T(1) / z : z);
+           }
+       }
+   }
+   ```
+
+   This implementation is identical to what was included in previous versions of Visual Studio.
+
 ### <a name="VS_Update2"></a> Conformance Improvements in Visual Studio 2015 Update 2
 
 - **Additional warnings and errors might be issued as a result of partial support for expression SFINAE**
 
-   Previous versions of the compiler did not parse certain kinds of expressions inside **`decltype`** specifiers due to lack of  support for expression SFINAE. This old behavior was incorrect and does not conform to the C++ standard. The compiler now parses these expressions and has partial support for expression SFINAE due to  ongoing conformance improvements. As a result, the compiler now issues warnings and errors found in  expressions that previous versions of the compiler did not parse.
+   Previous versions of the compiler did not parse certain kinds of expressions inside **`decltype`** specifiers due to lack of  support for expression SFINAE. This old behavior was incorrect and does not conform to the C++ standard. The compiler now parses these expressions and has partial support for expression SFINAE due to  ongoing conformance improvements. As a result, the compiler now issues warnings and errors found in expressions that previous versions of the compiler did not parse.
 
    When this new behavior parses a **`decltype`** expression that includes a type that has not yet been declared, the compiler issues compiler error C2039 as a result.
 
