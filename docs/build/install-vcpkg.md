@@ -154,5 +154,5 @@ However if you have executed **`vcpkg integrate install`** you should execute **
 [Integrate vcpkg](integrate-vcpkg.md)\
 [Manage libraries with vcpkg](manage-libraries-with-vcpkg.md)\
 [vcpkg command-line reference](vcpkg-command-line-reference.md)\
-[Quick start](https://github.com/microsoft/vcpkg/blob/master/docs/index.md)\
+[Quick start](https://github.com/microsoft/vcpkg/blob/master/docs/README.md)\
 [Frequently asked questions](https://github.com/microsoft/vcpkg/blob/master/docs/about/faq.md)
