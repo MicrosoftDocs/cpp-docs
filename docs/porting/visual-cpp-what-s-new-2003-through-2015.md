@@ -1008,7 +1008,7 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-- ** Removal of `pow(T, int)` unrolling optimization **
+- **Removal of `pow(T, int)` unrolling optimization**
 
    Previous versions of the C++ standard library defined a `pow(T, int)` function template that would unroll a `pow` function call into a series of multiplication operations. This technique would accrue a large amount of inaccuracy due to the nature of floating point operations, causing end results that could be significantly inaccurate. In Visual Studio 2015 Update 1, this behavior was removed to avoid unintentional loss of accuracy when using the `pow` function. However, this version of `pow` was much faster than the correct calculation. If this change causes a significant performance regression and your project does not require precise floating point results (for example, your project already compiles with /fp:fast), consider replacing calls to `pow` with this workaround function:
    
