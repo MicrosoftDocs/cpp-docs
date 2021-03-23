@@ -122,7 +122,7 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-   The current compiler correctly gives an error, because the template parameter type doesn't match the template argument (the parameter is a pointer to a const member, but the function f is non-const):
+   The current compiler correctly gives an error, because the template parameter type does not match the template argument (the parameter is a pointer to a const member, but the function f is non-const):
 
    ```Output
     error C2893: Failed to specialize function template 'void S2::f(void)'note: With the following template arguments:note: 'C=S1'note: 'Function=S1::f'
@@ -581,7 +581,7 @@ Although these differences can affect your source code or other build artifacts,
     void * __cdecl operator new(size_t cb, const std::nothrow_t&)  // removed 'static inline'
    ```
 
-   Additionally, although the compiler doesn't give a specific diagnostic, inline operator new is considered ill-formed.
+   Additionally, although the compiler does not give a specific diagnostic, inline operator new is considered ill-formed.
 
 - **Calling 'operator *type*()' (user-defined conversion) on non-class types**  Previous versions of the compiler allowed 'operator *type*()' to be called on non-class types while silently ignoring it. This old behavior created a risk of silent bad code generation, resulting in unpredictable runtime behavior. The compiler no longer accepts code written in this way and issues compiler error C2228 instead.
 
@@ -1008,11 +1008,37 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
+- ** Removal of `pow(T, int)` unrolling optimization **
+
+   Previous versions of the C++ standard library defined a `pow(T, int)` function template that would unroll a `pow` function call into a series of multiplication operations. This technique would accrue a large amount of inaccuracy due to the nature of floating point operations, causing end results that could be significantly inaccurate. In Visual Studio 2015 Update 1, this behavior was removed to avoid unintentional loss of accuracy when using the `pow` function. However, this version of `pow` was much faster than the correct calculation. If this change causes a significant performance regression and your project does not require precise floating point results (for example, your project already compiles with /fp:fast), consider replacing calls to `pow` with this workaround function:
+   
+   ```cpp
+   template <class T> 
+   inline T pow_int(T x, int y) throw() {
+       unsigned int n;
+       if (y >= 0) {
+           n = (unsigned int)(y);
+       } else {
+           n = (unsigned int)(-y);
+       }
+       for (T z = T(1); ; x *= x) {
+           if ((n & 1) != 0) {
+               z *= x;
+           }
+           if ((n >>= 1) == 0) {
+               return (y < 0 ? T(1) / z : z);
+           }
+       }
+   }
+   ```
+
+   This implementation is identical to what was included in previous versions of Visual Studio.
+
 ### <a name="VS_Update2"></a> Conformance Improvements in Visual Studio 2015 Update 2
 
 - **Additional warnings and errors might be issued as a result of partial support for expression SFINAE**
 
-   Previous versions of the compiler did not parse certain kinds of expressions inside **`decltype`** specifiers due to lack of  support for expression SFINAE. This old behavior was incorrect and does not conform to the C++ standard. The compiler now parses these expressions and has partial support for expression SFINAE due to  ongoing conformance improvements. As a result, the compiler now issues warnings and errors found in  expressions that previous versions of the compiler did not parse.
+   Previous versions of the compiler did not parse certain kinds of expressions inside **`decltype`** specifiers due to lack of  support for expression SFINAE. This old behavior was incorrect and does not conform to the C++ standard. The compiler now parses these expressions and has partial support for expression SFINAE due to  ongoing conformance improvements. As a result, the compiler now issues warnings and errors found in expressions that previous versions of the compiler did not parse.
 
    When this new behavior parses a **`decltype`** expression that includes a type that has not yet been declared, the compiler issues compiler error C2039 as a result.
 
@@ -1185,7 +1211,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - **Forward declaration of enum is not allowed in WinRT code** (affects `/ZW` only)
 
-   Code compiled for the Windows Runtime (WinRT) doesn't allow **`enum`** types to be forward declared, similarly to when managed C++ code is compiled for the .Net Framework using the `/clr` compiler switch. This behavior is ensures that the size of an enumeration is always known and can be correctly projected to the WinRT type system. The compiler rejects code written in this way and  issues compiler error C2599 together with compiler error C3197.
+   Code compiled for the Windows Runtime (WinRT) does not allow **`enum`** types to be forward declared, similarly to when managed C++ code is compiled for the .Net Framework using the `/clr` compiler switch. This behavior is ensures that the size of an enumeration is always known and can be correctly projected to the WinRT type system. The compiler rejects code written in this way and  issues compiler error C2599 together with compiler error C3197.
 
    ```Output
     error C2599: 'CustomEnum': the forward declaration of a WinRT enum is not allowed
