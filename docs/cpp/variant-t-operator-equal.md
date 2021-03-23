@@ -134,9 +134,9 @@ The operator assigns a new value to the `_variant_t` object:
 
 - **operator=(**  `bSrc` **)** Assigns a **`bool`** value to a `_variant_t` object.
 
-- **operator=(**  *pDispSrc*  **)** Assigns a `VT_DISPATCH` object to a `_variant_t` object.
+- **operator=(**  *pDispSrc*  **)** Assigns a `IDISPATCH*` object to a `_variant_t` object.
 
-- **operator=(**  *pIUnknownSrc*  **)** Assigns a `VT_UNKNOWN` object to a `_variant_t` object.
+- **operator=(**  *pIUnknownSrc*  **)** Assigns a `IUNKNOWN*` object to a `_variant_t` object.
 
 - **operator=(**  *decSrc*  **)** Assigns a `DECIMAL` value to a `_variant_t` object.
 
