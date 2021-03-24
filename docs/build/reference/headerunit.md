@@ -58,3 +58,16 @@ cl ... /experimental:module /translateInclude /headerUnit C:\utils\util.h=C:\uti
 [`/module:exportHeader` (Create header units)](module-exportheader.md)\
 [`/module:reference` (Use named module IFC)](module-reference.md)\
 [`/translateInclude` (Translate include directives into import directives)](translateinclude.md)\
+
+----
+
+When a project has the ever the project system scans a file and finds an `import` determines that a header unit should be produced, it first consults this file 
+
+Scan Sources for Module Dependencies = Yes  According to Building header units for STL headers and other libraries doc, scan creates the .json file containing module and header units and their dependencies, which is then built into .ifc files. JTW  That is read by the compiler option /sourceDependencies:directives:”the .json file”  This .json file lists which headers can be built as header units and which can't be.
+/headerUnit specifies which headers to translate to .ifc
+If you plan to build header units for STL headers (or other libraries which support header-units.json, see below), it is also recommended to set
+Translate Includes = Yes. If “Translate Includes to Imports” is enabled, the build will produce header units not only for the specified headers, but also for all headers that are included there and listed in STL library’s header-unit.json  file (in the same directory as the header files). (JTW This is still somewhat mysterious to me)
+
+
+
+If “Translate Includes to Imports” is enabled, the build will produce header units not only for the specified headers, but also for all headers that are included there and listed in STL library’s header-unit.json  file (in the same directory as the header files). This ensures minimal symbols duplication in the header units and best build throughput. 
