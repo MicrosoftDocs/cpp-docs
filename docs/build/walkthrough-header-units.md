@@ -37,23 +37,6 @@ See the following topics to help you with the way you'd like to use header units
 
 ## In this section
 
-[Compile faster with Standard Template Library (STL) header units](walkthrough-import-stl-header-units.md)
-[Build and import header units](walkthrough-build-import-header-units.md)
-[Strategies for reusing header units](header-unit-strategies.md)  maybe this folds into the article above JTW
-[header-unit.json reference](header-unit-json-reference.md)
-
-## See also
-
-[Modules docs]()\
-[Precompiled header docs]()\
-[ISO papers?]()\
-[/translateInclude]()\
-[/headerUnit]()\
-[/headerName]()
-
-
-## ?
-
 Before a header unit can be imported, it must be built. You can either tell the IDE which header units need to be built, or you can have the IDE scan for them. When a header file or module interface file (*.ixx) is built, it is also scanned for dependencies.
 
 ### Automatic

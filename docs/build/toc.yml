@@ -86,7 +86,7 @@
       href: ../build/vcpkg-command-line-reference.md
 - name: "C++ Build Insights"
   href: ../build-insights/get-started-with-cpp-build-insights.md
-- name: Build C++ header units for STL and other headers
+- name: "Build C++ header units for STL and other headers"
   expanded: false
   items:
     - name: Walkthrough: Build and import header units in Visual C++ projects
