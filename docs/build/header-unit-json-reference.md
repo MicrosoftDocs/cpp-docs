@@ -1,61 +1,45 @@
 ---
 description: "Reference for header_units.json format"
 title: "C++ header unit.json reference"
-ms.date: "3/15/2021"
-f1_keywords: ["header unit"]
-helpviewer_keywords: ["header unit"]
+ms.date: "3/21/2021"
+f1_keywords: ["header_units.json"]
+helpviewer_keywords: ["header_units.json", "header unit"]
 ---
 
 # C++ header_units.json reference
 
 ## Format
 
-The format of the header_units.json (as well as file name and location) is up to the compilers and libraries, build system will not “know” about it as it does not know upfront which headers and from which directories will be used. 
-
+The `header-units.json` file lists which header files can be compiled into header units.
  
+Sometimes a header file can't be compiled into a header unit. For example, `<cassert>` shouldn't be compiled as a header unit because it depends on a `#define` to modify its behavior, and using `#define` can't be used to change the behavior of a header unit. In that case, it is either not listed, or commented out.
 
-At minimum (vcpkg feedback was to avoid wildcards), it can be something like this 
+The C++ Standard Template Library (STL) `header-units.json` file is located at the root of the include directory where your STL header files are installed. For example, `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.20.00001\include`
 
- 
+The format of the `header_units.json` file is a version, followed by an array of headers that can be built into header units. For example, 
 
+```json
 { 
-
-    "Version": "1.0", 
-
-    "BuildAsHeaderUnits": [ 
-
-“relative\path\to\header1.h”, 
-
-“relative\path\to\header2.h” 
-
-] 
-
+    "Version": "1.0",
+    "BuildAsHeaderUnits": [
+        "__msvc_system_error_abi.hpp",
+        "algorithm",
+        "any",
+        "array",
+        "atomic",
+        "barrier",
+        "bit",
+        "bitset",
+        // "cassert", // design is permanently incompatible with header units
+        ...
 } 
-
- 
-
-Or, if we allow wildcards: 
-
- 
-
-{ 
-
-    "Version": "1.0", 
-
-    "BuildAsHeaderUnits": [*] <- can contain wildcards 
-
-    "Exclude": [foo.h] <- can contain wildcards 
-
-} 
+```
 
 ## Search rules
 
-Header directory 
-
-If the header directory is not on include path, the directory on the include path which was used to find this header. 
+The build system looks for this file on the include path.
 
 ## See also
 
-[Modules docs]()
-[Precompiled header docs]()
-[ISO papers?]()
+[Walkthrough: Build and import header units in your Visual C++ projects](walkthrough-header-units.md)
+[Build faster using Standard Template Library (STL) header units]() to learn how to import STL libraries for faster compilation throughput.

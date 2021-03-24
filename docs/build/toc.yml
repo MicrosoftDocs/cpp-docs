@@ -48,6 +48,8 @@
       href: ../build/tasks-vs-json-schema-reference-cpp.md
     - name: Launch.vs.json schema reference (C++)
       href: ../build/launch-vs-schema-reference-cpp.md
+    - name: header-unit-json schema reference (C++)
+    - href: ../build/header-unit-json-reference.md
 - name: CMake projects
   expanded: false
   items: 
@@ -84,14 +86,13 @@
       href: ../build/vcpkg-command-line-reference.md
 - name: "C++ Build Insights"
   href: ../build-insights/get-started-with-cpp-build-insights.md
--name: Build C++ header units for STL headers and other libraries
+- name: Build C++ header units for STL and other headers
   expanded: false
   items:
-    - name: Walkthrough: Build and import header units
+    - name: Walkthrough: Build and import header units in Visual C++ projects
       href: ../build/walkthrough-header-units.md
-    - name: Walkthrough: Import STL libraries using header units
+    - name: Walkthrough: Build faster using Standard Template Library (STL) header units
       href: ../build/walkthrough-import-stl-header-units.md
- 
 - name: Precompiled header files
   href: ../build/creating-precompiled-header-files.md
 - name: C++ release builds

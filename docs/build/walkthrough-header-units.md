@@ -1,33 +1,25 @@
 ---
-description: "Learn more about C++ header units by converting a project to use header units instead of header includes"
+description: "Learn more about C++ header units by converting a project to use header units"
 title: "Walkthrough: Build and import header units in Visual C++ projects"
 ms.date: "3/26/2021"
 ms.custom: "conceptual"
-f1_keywords: ["stl header unit", "stl module", "header unit"]
-helpviewer_keywords: ["import"]
+f1_keywords: []
+helpviewer_keywords: ["import", "header unit", "ifc", "stl"]
 ---
-# Walkthrough: Build and import header units in your Visual C++ projects
+
+# Walkthrough: Build faster with header units
+
+This section is about building and importing header units in Microsoft Visual C++ in general.
+
+See [Walkthrough: Import STL libraries using header units]() to learn how to increase build time for projects that use STL libraries by importing them as header units.
 
 ## Prerequisites
 
 Support for header units requires Visual Studio 19.10 Preview 2.
 
----
-
-title: "C++ header units"
-ms.date: "3/11/2021"
-f1_keywords: ["header unit"]
-helpviewer_keywords: ["header unit"]
----
-
-# C++ header units
-
-This section is about C++ building and importing header units. If you want to learn about C++ 20 modules, see []().
-See [Speed up your compilation with Standard Template Library (STL) header units]() to learn how to import STL libraries for faster compilation throughput.
-
 ## What is a header unit
 
-A header unit is an interpretation of a header file as if it was a self-contained translation unit that exports all declarations contained therein. They are used to provide some “module-like” feel to header files even though they lack the level of isolation and one definition rule (ODR) guarantees provided by named modules.  Their essential use is to save on repeated processing of the same content of a header file in order to improve on compilation time.  That requires ability to refer to the saved work, for re-use.  Unfortunately, the semantics provided by a header file is really its content – not the filepath of the header file -- whereas a module is identified uniquely by its name.  This document specifies the MSVC compiler switches recommended for producing the IFC files for header units, and how to consume them. In the process, it addresses a few weaknesses in the current IFC production.  Consequently, the MSVC compiler needs to be modified to comply. 
+A header unit is an interpretation of a header file as if it was a self-contained translation unit that exports all declarations contained therein. They are used to provide some “module-like” feel to header files even though they lack the level of isolation and one definition rule (ODR) guarantees provided by named modules.  Their essential use is to save on repeated processing of the same content of a header file in order to improve on compilation time.  That requires ability to refer to the saved work, for re-use.  Unfortunately, the semantics provided by a header file is really its content – not the filepath of the header file -- whereas a module is identified uniquely by its name.  This document specifies the MSVC compiler switches recommended for producing the IFC files for header units, and how to consume them. In the process, it addresses a few weaknesses in the current IFC production.  Consequently, the MSVC compiler needs to be modified to comply.
 
 ### IFC files
 
@@ -42,8 +34,6 @@ Brought in with /reference M=/path/to/some-file.ifc which establishes a mapping 
 Contrast with Shared PCH usage sample in Visual Studio (see https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio/
 
 See the following topics to help you with the way you'd like to use header units.
-
-
 
 ## In this section
 
@@ -108,25 +98,25 @@ Using ifc search path:
 
 Using ifc search path: 
 
-cl /ifcSearchDir [Dir1] /ifcSearchDir [Dir2] source.cpp 
+`cl /ifcSearchDir [Dir1] /ifcSearchDir [Dir2] source.cpp `
 
-In this case ifcs for header units (as well as named modules) will be found in the ifc search path by the names stored in the ifc. 
+In this case `ifcs` for header units (as well as named modules) will be found in the ifc search path by the names stored in the ifc. 
 
-Using explicit /headerUnit reference 
+Using explicit `/headerUnit` reference 
 
-/headerUnit:angle vector=/path/to/some-file.ifc 
+`/headerUnit:angle vector=/path/to/some-file.ifc` 
 
-The header file will be resolved by searching <vector> on the include path  
+The header file will be resolved by searching `<vector>` on the include path  
 
-/headerUnit:quote my/header.h=/path/to/some-file.ifc 
+`/headerUnit:quote my/header.h=/path/to/some-file.ifc `
 
-The header file will be resolved by searching “my/header.h “ on the include path 
+The header file will be resolved by searching `"my/header.h"` on the include path:
 
-/headerUnit /path/to/header=/path/to/some-file.ifc 
+`/headerUnit /path/to/header=/path/to/some-file.ifc` 
 
 The header file is explicitly specified by the path. 
 
-In this case the resolved header path for import <header> or import “header” will be compared with the resolved header paths specified by /headerUnit* and the matching ifc will be used (without comparing the name stored in the ifc).
+In this case the resolved header path for import `<header>` or `import "header"` will be compared with the resolved header paths specified by `/headerUnit*` and the matching `.ifc` will be used (without comparing the name stored in the `.ifc`).
 
 ## Strategies for sharing C++ header units
 
@@ -143,8 +133,6 @@ You might also want to specify “Public Include Directories” for your public 
 Ensure that projects that share header units are built with compatible compilation options, just as you would with shared pre-compiled headers. The compiler will issue warnings if it detects different compilation options in how the module or header unit was produced and how it is used.
 
 If you reference two or more projects that built two or more modules with the same name or two or more header unit for the same header file,  you can use C/C++ >  Additional Module dependencies & Additional Header Unit Dependencies to resolve those collisions by specifying which module or header unit should be used for this project. Otherwise the one that is chosen is undefined.
-
-
 
 ## 3rd party
 
@@ -169,7 +157,10 @@ In VC projects they will be able to specify headers to translate as Additional H
 
 /translateInclude
 
-
 ## See also
 
-[MSVC Compiler Options](reference/compiler-options.md)
+[Overview of modules in C++](../cpp/modules-cpp.md)
+[`/translateInclude`](./reference/translateinclude.md)
+[`/exportHeader`](./reference/module-exportheader.md)
+[`/headerUnit`](./reference/headerunit.md)
+[Build faster using Standard Template Library (STL) header units]() to learn how to import STL libraries for faster compilation throughput.
