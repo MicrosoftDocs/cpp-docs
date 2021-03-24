@@ -49,7 +49,7 @@
     - name: Launch.vs.json schema reference (C++)
       href: ../build/launch-vs-schema-reference-cpp.md
     - name: header-unit-json schema reference (C++)
-    - href: ../build/header-unit-json-reference.md
+      href: ../build/header-unit-json-reference.md
 - name: CMake projects
   expanded: false
   items: 
