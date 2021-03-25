@@ -57,7 +57,7 @@ Before you can build a C or C++ program on the command line, verify that the too
 
 ### Create a Visual C++ source file and compile it on the command line
 
-1. In the developer command prompt window, enter `md c:\hello` to create a directory, and then enter `cd c:\hello` to change to that directory. This directory is where your source file and the compiled program are created in.
+1. In the developer command prompt window, enter `md c:\hello` to create a directory, and then enter `cd c:\hello` to change to that directory. This directory is where your source file and the compiled program will be created.
 
 1. Enter `notepad hello.cpp` in the command prompt window.
 
@@ -97,7 +97,7 @@ Before you can build a C or C++ program on the command line, verify that the too
 
    ```
 
-   The dates and other details will differ on your computer. If you don't see your source code file, *hello.cpp*, make sure you've changed to the *c:\\hello* directory you created. In Notepad, make sure that you saved your source file in this directory. Also make sure that you saved the source code with a *`.cpp`* file name extension, not a *`.txt`* extension.
+   The dates and other details will differ on your computer. If you don't see your source code file, *hello.cpp*, make sure you've changed to the *c:\\hello* directory you created. In Notepad, make sure that you saved your source file in this directory. Also make sure that you saved the source code with a *`.cpp`* file name extension, not a *`.txt`* extension. You can do this by opening up the Notepad file and clicking **File**, **Save As...**, and changing the **Save as type** option to be *All Files*.
 
 1. At the developer command prompt, enter `cl /EHsc hello.cpp` to compile your program.
 
