@@ -266,7 +266,8 @@ MSVC supports these additional predefined macros.
    | Visual Studio 2019 version 16.5 | 1925 |
    | Visual Studio 2019 version 16.6 | 1926 |
    | Visual Studio 2019 version 16.7 | 1927 |
-   | Visual Studio 2019 version 16.8 | 1928 |
+   | Visual Studio 2019 version 16.8, 16.9 | 1928 |
+   | Visual Studio 2019 version 16.10 preview | 1929 |
 
    To test for compiler releases or updates in a given version of Visual Studio or after, use the `>=` operator. You can use it in a conditional directive to compare `_MSC_VER` against that known version. If you have several mutually exclusive versions to compare, order your comparisons in descending order of version number. For example, this code checks for compilers released in Visual Studio 2017 and later. Next, it checks for compilers released in or after Visual Studio 2015. Then it checks for all compilers released before Visual Studio 2015:
 
@@ -279,6 +280,8 @@ MSVC supports these additional predefined macros.
    // . . .
    #endif
    ```
+
+   To test for compiler versions that share major and minor numbers, use the major, minor, and build numbers in `_MSC_FULL_VER` for comparisons. The compilers in Visual Studio 2019 version 16.9 have an `_MSC_FULL_VER` value of 192829500 or greater.
 
    For more information, see [Visual C++ Compiler Version](https://devblogs.microsoft.com/cppblog/visual-c-compiler-version/) in the Microsoft C++ Team Blog.
 

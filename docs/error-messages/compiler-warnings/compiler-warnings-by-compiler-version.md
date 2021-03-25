@@ -38,12 +38,41 @@ These versions of the compiler introduced new warnings:
 | Visual Studio 2019 version 16.5 | 19.25.28610.0 |
 | Visual Studio 2019 version 16.6 | 19.26.28805.0 |
 | Visual Studio 2019 version 16.7 | 19.27.29112.0 |
+| Visual Studio 2019 version 16.8 | 19.28.29330.0 |
+| Visual Studio 2019 version 16.9 | 19.28.29500.0 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the **`/Wv`** option. The compiler reports all warnings that match versions that begin with the specified number. It suppresses all warnings for versions greater than the specified number. For example, **`/Wv:17`** reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use **`/Wv:19.00.23506`**. Use **`/Wv:19.11`** to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the **`/Wv`** compiler option. The **`/Wv`** option can't suppress warnings that aren't listed, which predate the specified versions of the compiler.
 
 ::: moniker range=">= msvc-160"
+
+## Warnings introduced in Visual Studio 2019 version 16.9 (compiler version 19.28.29700.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.28.29500`**.
+
+| Warning | Message |
+|--|--|
+| C5232 | `in C++20 this comparison calls 'identifier' recursively` |
+
+## Warnings introduced in Visual Studio 2019 version 16.8 (compiler version 19.28.29330.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.27`**.
+
+| Warning | Message |
+|--|--|
+| C5072 | `ASAN enabled without debug information emission. Enable debug info for better ASAN error reporting` |
+| C5211 | `'keyword-1' has been deprecated; prefer using 'keyword-2' instead` |
+| C5222 | `'attribute-name': all unscoped attribute names are reserved for future standardization` |
+| C5223 | `all attribute names in the attribute namespace 'msvc' are reserved for the implementation` |
+| C5224 | `all attribute names in the attribute namespace 'a-namespace' are reserved for future standardization` |
+| C5225 | `'symbol': exported inline function defined in a private module fragment is a non-standard extension` |
+| C5226 | `'symbol': exported template defined in private module fragment has no reachable instantiation` |
+| C5227 | `nonstandard extension, resolved 'symbol' to 'instance' which is not visible with /permissive- on.` |
+| C5228 | `nonstandard extension, 'identifier' resolved to a member of a dependent base. This lookup is not allowed under /permissive-.` |
+| C5229 | `nonstandard extension, the hidden friend function 'function-name' was found by name lookup which isn't allowed under /permissive-.` |
+| C5230 | `nonstandard extension, 'identifier' was resolved to 'symbol' under /permissive. Under /permissive- it would resolve to 'other-symbol'.` |
+| C5231 | `the expression 'co_await promise.final_suspend()' must be non-throwing`)
 
 ## Warnings introduced in Visual Studio 2019 version 16.7 (compiler version 19.27.29112.0)
 
