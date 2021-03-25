@@ -123,7 +123,7 @@ These warnings and all warnings in later versions are suppressed by using the co
 
 | Warning | Message |
 |--|--|
-| C5200 | `feature 'feature-name' requires compiler flag 'option-name'` | // Warning equivalent to C2429 for language features
+| C5200 | `feature 'feature-name' requires compiler flag 'option-name'` |
 | C5201 | `a module declaration can appear only at the start of a translation unit unless a global module fragment is used` |
 | C5202 | `a global module fragment can only contain preprocessor directives` |
 | C5203 | `a parenthesized declarator name after 'explicit' will be considered an explicit-specifier in C++20` |
