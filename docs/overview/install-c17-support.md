@@ -21,7 +21,7 @@ Windows SDK releases correspond with Windows OS releases. Since there hasn't bee
 
 ## Prerequisites
 
-- Visual Studio 2019 version 16.8 Preview 3 or later installed and running on your computer. In the install, include the Desktop development with C++ workload. You can download the latest Preview from the [Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/) page. If Visual Studio isn't installed yet, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md) for installation instructions.
+- Visual Studio 2019 version 16.8 or later installed and running on your computer. In the install, include the Desktop development with C++ workload. You can download the latest Preview from the [Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/) page. If Visual Studio isn't installed yet, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md) for installation instructions.
 
 ## Step 1: Sign in by using an Insider Microsoft Account
 
@@ -75,7 +75,7 @@ You'll also see a new option: **C Language Standard**. Set this property to **IS
 
 The C++ Language Standard is used when the language is C++. It's the default when the file extension is *`.cpp`*. The C Language Standard version is used when the language is C. It's the default when the file extension is *`.c`*. To build using C11 or C17, put your source code in a *`.c`* file, or set the code to compile as C. You can set this property for your project on the **Configuration Properties** > **C/C++** > **Advanced** page. Set the **Compile As** property to **Compile as C code (/TC)**.
 
-Congratulations, you've set up everything you need to build C11 and C17 code in Visual Studio 2019 version 16.8 preview 3!
+Congratulations, you've set up everything you need to build C11 and C17 code in Visual Studio!
 
 ## See also
 
