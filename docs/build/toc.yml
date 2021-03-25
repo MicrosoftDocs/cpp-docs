@@ -91,7 +91,7 @@
   items:
     - name: "Walkthrough: Build and import header units in Visual C++ projects"
       href: ../build/walkthrough-header-units.md
-    - name: "Walkthrough: Build faster using Standard Template Library (STL) header units"
+    - name: "Walkthrough: Import STL libraries as header units"
       href: ../build/walkthrough-import-stl-header-units.md
 - name: Precompiled header files
   href: ../build/creating-precompiled-header-files.md
