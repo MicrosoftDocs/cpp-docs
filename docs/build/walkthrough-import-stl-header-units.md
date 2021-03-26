@@ -15,7 +15,7 @@ Before you can import an STL library this way, it must first be compiled into a 
 
 ## Prerequisites
 
-Support for header units requires Visual Studio 2019 19.10 Preview 2.
+Support for header units requires Visual Studio 2019 16.10.0 Preview 2.
 
 ## Two different approaches
 
@@ -51,7 +51,7 @@ To demonstrate this approach, we'll create a project that imports a couple STL l
 
 ### Create a C++ console app project
 
-This step creates a project that includes two libraries: `<iostream>` and `<vector>`. You'll modify the project settings so that the project is scanned for potential header headers that can be compiled into header units, and the compiler will also treat `#include` as if you had written `import`.
+This step creates a project that includes two libraries: `<iostream>` and `<vector>`. You'll modify the project settings so that the project is scanned for potential header files that can be compiled into header units, and the compiler will also treat `#include` as if you had written `import`.
 1. With Visual Studio, create a new C++ console app project.
 1. Modify the source file as follows:
 ```cpp
@@ -99,7 +99,7 @@ The more flexible and more performant way to consume STL headers is to create a 
 
 This option ensures that header units for a particular header will be built only once. It's similar to using a shared precompiled header file, but is much easier.
 
-In this example, you'll create a project that imports `<iostream>` and `<vector>`. Once built, you'll reference this shared project from another C++ project. Then, in the referencing project, everywhere `import <iostream>` or `import <vector>` is found, it will import the built header unit for that library instead of running the contents of the library header through the preprocessor. In projects that include the same library header in multiple files, this will improve build performance similar to the way PCH files do because the header won't have to be processed repeatedly. Instead, the compiled header unit will be imported.
+In this example, you'll create a project that imports `<iostream>` and `<vector>`. Once built, you'll reference this shared project from another C++ project. Then, in the referencing project, everywhere `import <iostream>;` or `import <vector>;` is found, it will import the built header unit for that library instead of running the contents of the library header through the preprocessor. In projects that include the same library header in multiple files, this will improve build performance similar to the way PCH files do because the header won't have to be processed repeatedly. Instead, the compiled header unit will be imported.
 
 ### Create the shared project
 
