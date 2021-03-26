@@ -8,7 +8,7 @@ helpviewer_keywords: ["import", "header unit", "ifc", "stl"]
 
 # Walkthrough: Build and import header units in Visual C++ projects
 
-This section is about building and importing header units in Microsoft Visual C++. See [Walkthrough: Import STL libraries using header units]() to learn specifically how to import STL libraries as header units.
+This section is about building and importing header units in Microsoft Visual C++. See [Walkthrough: Import STL libraries using header units]() to learn how to import STL libraries, specifically, as header units.
 
 Header units are a simpler alternative to [precompiled header files](creating-precompiled-header-files.md). They are easier to setup and easier to use than a [shared PCH](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio), while providing similar performance benefits. Unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
 
@@ -22,9 +22,9 @@ Before you can import a header unit, it must first be compiled into a header uni
 
 There are several ways to compile a file into a header unit:
 
-1-Automatically scan for header units: This approach is best suited to smaller projects that include many different headers. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1) for a walkthrough of this approach.
+1-Automatically scan for header units: This approach is best suited to smaller projects that include many different headers. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1) for a demonstration of this approach.
 
-2-Build a shared header units project: This approach is best suited for larger projects and when you want more control over the modularization of the imported header units. You create a static library that contains the header units, and then reference it from projects that consume the header units. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2) for a walkthrough of this approach.
+2-Build a shared header units project: This approach is best suited for larger projects and when you want more control over the modularization of the imported header units. You create a static library (or libraries) that contain the header units, and then reference it from projects that need to consume them. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2) for a demonstration of this approach.
 
 3-Change the compilation action for a file. That's the approach demonstrated here. This approach gives you file by file control over which header files are treated as header units. It's a way to quickly and selectively try out header units.
  
@@ -50,7 +50,7 @@ int main()
 
 void PrintPythogoreanTriple(int a, int b)
 {
-    std::cout << "Pythagorean triple a:" << a << " b:" << b << " c: " << a*a + b*b << std::endl;
+    std::cout << "Pythagorean triple a:" << a << " b:" << b << " c:" << a*a + b*b << std::endl;
 }
 ```
 
