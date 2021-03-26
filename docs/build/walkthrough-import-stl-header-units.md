@@ -1,18 +1,17 @@
 ---
 description: "Learn to use header units to import C++ Standard Template Library (STL) libraries."
-title: "Walkthrough: Import Standard Template Library (STL) libraries using header units"
+title: "Walkthrough: Import Standard Template Library (STL) libraries as header units"
 ms.date: "4/13/2021"
 ms.custom: "conceptual"
-f1_keywords: ["stl header unit", "stl module", "header unit"]
 helpviewer_keywords: ["import"]
 ---
 # Walkthrough: Import STL libraries as header units
 
 This walkthrough shows two different ways to import C++ Standard Template Library (STL) libraries as header units in Visual Studio.
 
-Importing an STL library as a header unit is a simpler alternative to using [precompiled header files](creating-precompiled-header-files.md) Header units are easier to setup and easier to use than a shared precompiled header file (PCH), while providing similar performance benefits. Also, unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
+Importing an STL library as a header unit is a simpler alternative to [precompiled header files](creating-precompiled-header-files.md) Header units are easier to setup and easier to use than a shared precompiled header file (PCH), while providing similar performance benefits. Unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
 
-Before you can import an STL library this way, it must first be compiled into a header unit. Header units are a binary representation of a header file, and end with an `.ifc` extension. Header units provide a “module-like” experience for header files even though they lack the level of isolation provided by named modules. For example, macros in a header unit are visible, while those in a module aren't. Another difference is that header units are not affected by macro definitions the way header files are. For example, you can't `#define` a symbol that causes the header unit to conditionally turn on and off functionality the way you can with a header file. Also, unlike `#include` files, header units are not  affected by the order they are imported in.
+Before you can import an STL library this way, it must first be compiled into a header unit. Header units are a binary representation of a header file, and end with an `.ifc` extension. Header units provide a "module-like" experience for header files even though they lack the level of isolation provided by named modules. For example, macros in a header unit are visible, while those in a module aren't. Another difference is that header units are not affected by macro definitions the way header files are. For example, you can't `#define` a symbol that causes the header unit to conditionally turn on and off functionality the way you can with a header file. Also, unlike `#include` files, header units are not  affected by the order they are imported in.
 
 ## Prerequisites
 
@@ -20,11 +19,11 @@ Support for header units requires Visual Studio 19.10 Preview 2.
 
 ## Two different approaches
 
-Before an STL header can be imported, it needs to be compiled into a header unit. There are two main approaches to doing this, which are demonstrated below.
+Before an STL header can be imported, it needs to be compiled into a header unit. There are two main approaches to doing this, demonstrated below.
 
 **Scan for module dependencies**
 
-One approach requires minimal effort on your part and puts the burden on the build system. At a high level, it works by scanning your sources for `#include` statements, and tries to compile those header files and their dependencies into header units. It then imports the header unit instead of running the header file through the preprocessor. You don't even have to change your code from `#include <library>` to `import library;`. This may be a good approach for you if your codebase isn't large, or you just want to try out header units without changing your code.
+One approach, that requires minimal effort on your part, puts the burden on the build system. At a high level, it works by scanning your sources for `#include` statements, and tries to compile those header files and their dependencies into header units. It then imports the header unit instead of running the header file through the preprocessor. You don't even have to change your code from `#include <library>` to `import library;`. This may be a good approach for you if your codebase isn't large, or you just want to try out header units without changing your code.
 
 It may not be the optimal approach for larger projects because it can be time consuming to scan through the files looking for files to build into header units. And it may result in reprocessing the same header files repeatedly, increasing build time. Not all header files can be automatically converted to header units. For example, headers that depend on conditional compilation via `#define` symbols, may not work as header units.
 
@@ -38,9 +37,9 @@ See [Approach 2: Build a shared library](#approach2), in this article, for a wal
 
 ## <a name="approach1"></a>Approach 1: Scan for headers
 
-We'll begin with the easiest way to import STL libraries as header units. As was said earlier, this approach may not be appropriate for larger projects because scanning the sources will take additional build time, especially in large projects.
+We'll begin with the easiest way to import STL libraries as header units. As was said earlier, this approach may not be appropriate for larger projects because scanning the sources takes additional build time, especially in large projects.
 
-This option is convenient for codebases with extensive use of different header units, and where build throughput isn't critical. This option also doesn't guarantee that a header unit for a particular header will be built only once. Although, header units that are built by referenced static libraries projects will be reused.
+This option is convenient for codebases with extensive use of different header units, and where build throughput isn't critical. This option doesn't guarantee that a header unit for a particular header will be built only once. Although, header units built by referenced static libraries projects are reused.
 
 You can import your STL libraries as header units without modifying your code by setting two Visual C++ project options:
 - **Scan Sources for Module Dependencies**
@@ -53,7 +52,7 @@ To demonstrate this approach, we'll create a project that imports a couple STL l
 ### Create a C++ console app project
 
 This step creates a project that includes two libraries: `<iostream>` and `<vector>`. You'll modify the project settings so that the project is scanned for potential header headers that can be compiled into to header units, and the compiler will also treat `#include`as if you had written `import`.
-1. With Visual Studio, create a new C++ console app project. 
+1. With Visual Studio, create a new C++ console app project.
 1. Modify the source file as follows:
 ```cpp
 #include <iostream>
@@ -174,7 +173,7 @@ It's important when you do this with your own projects that you build the shared
 
 Not all STL libraries, or header files for that matter, can be compiled into a header unit and imported. There's an allowlist for the STL headers that the build system consults it to determine which STL libraries can be compiled into header units.
 
-The [header-units.json](header-unit-json-reference.md) file is at the root of the include directory where your STL header files are installed. For example, `C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\VC\Tools\MSVC\14.20.00001\include`. It lists which STL libraries can be compiled into header units. Some can't. For example, `<cassert>` shouldn't be compiled as a header unit because it depends on a `#define` to modify its behavior, and using `#define` can't be used to change the behavior of a header unit.
+The [header-units.json](header-unit-json-reference.md) file is at the root of the include directory where your STL header files are installed. For example, `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.20.00001\include`. It lists which STL libraries can be compiled into header units. Some can't. For example, `<cassert>` shouldn't be compiled as a header unit because it depends on a `#define` to modify its behavior, and using `#define` can't be used to change the behavior of a header unit.
  
 ## See also
 

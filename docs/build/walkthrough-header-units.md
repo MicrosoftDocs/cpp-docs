@@ -3,15 +3,14 @@ description: "Learn more about C++ header units by converting a project to use h
 title: "Walkthrough: Build and import header units in Visual C++ projects"
 ms.date: "4/13/2021"
 ms.custom: "conceptual"
-f1_keywords: []
 helpviewer_keywords: ["import", "header unit", "ifc", "stl"]
 ---
 
 # Walkthrough: Build and import header units in Visual C++ projects
 
-This section is about building and importing header units in Microsoft Visual C++.
+This section is about building and importing header units in Microsoft Visual C++. See [Walkthrough: Import STL libraries using header units]() to learn specifically how to import STL libraries as header units.
 
-See [Walkthrough: Import STL libraries using header units]() to learn specifically how to import STL libraries as header units.
+Header units are a simpler alternative to [precompiled header files](creating-precompiled-header-files.md). They are easier to setup and easier to use than a [shared PCH](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio), while providing similar performance benefits. Unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
 
 ## Prerequisites
 
@@ -19,47 +18,65 @@ Support for header units requires Visual Studio 19.10 Preview 2.
 
 ## What is a header unit
 
-Header units are a binary representation of a header file, and end with an `.ifc` extension. Header units provide a “module-like” experience for header files even though they lack the level of isolation provided by named modules. For example, macros in a header unit are visible, while those in a module aren't. Another difference is that header units are not affected by macro definitions the way header files are. For example, you can't `#define` a symbol that causes the header unit to conditionally turn on and off functionality the way you can with a header file. Also, unlike `#include` files, header units are not  affected by the order they are imported in.
+Before you can import a header unit, it must first be compiled into a header unit. Header units are a binary representation of a header file, and end with an `.ifc` extension. Header units provide a "module-like" experience for header files even though they lack the level of isolation provided by named modules. For example, everything in a header unit (including macro definitions) are visible, while those in a module aren't. Another difference is that header units are not affected by macro definitions the way header files are. For example, you can't `#define` a symbol that causes the header unit to conditionally turn on and off functionality the way you can with a header file. Also, unlike `#include` files, header units are not  affected by the order they are imported in.
 
-Header units are a simpler alternative to using [precompiled header files](creating-precompiled-header-files.md) Header units are easier to setup and easier to use than a [shared PCH](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio), while providing similar performance benefits. Also, unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
+There are several ways to compile a file into a header unit:
 
-<< under construction >>
+1-Automatically scan for header units: This approach is best suited to smaller projects that include many different headers. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1) for a walkthrough of this approach.
 
-## In this section
+2-Build a shared header units project: This approach is best suited for larger projects and when you want more control over the modularization of the imported header units. You create a static library that contains the header units, and then reference it from projects that consume the header units. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2) for a walkthrough of this approach.
 
-Before a header unit can be imported, it must be built. You can either tell the IDE which header units need to be built, or you can have the IDE scan for them. When a header file or module interface file (*.ixx) is built, it is also scanned for dependencies.
+3-Change the compilation action for a file. That's the approach demonstrated here. This approach gives you file by file control over which header files are treated as header units. It's a way to quickly and selectively try out header units.
+ 
+## Convert a simple project to use header units
 
-### Automatic
+In this example you'll compile a header file as a header unit. Begin by creating the following project in Visual Studio:
 
-Perf issues with scanning for them (build throughput, intellisense init) that might not be desirable in large codebases that only make use of a few header units.
+1. Create a new C++ console app project.
+1. Replace the source file contents as follows:
+```cpp
+#include "Pythagorean.h"
 
-set “Scan Sources for Module Dependencies” to “Yes” in C/C++ - General tab
+int main()
+{
+    PrintPythogoreanTriple(2,3);
+    return 0;
+}
+```
+1. Add a header file called `Pythagorean.h`, and modify it as follows:
+```cpp
+#pragma once
+#include <iostream>
 
-### Set properties
+void PrintPythogoreanTriple(int a, int b)
+{
+    std::cout << "Pythagorean triple a:" << a << " b:" << b << " c: " << a*a + b*b << std::endl;
+}
+```
 
-To build as a header unit:
+Change the C++ language standard for the compiler. The latest preview setting is necessary to use header units:
 
-.h files marked c/c++ compile will be compiled as header units
-any file marked 'compile as header unit'
+1. In the left-hand pane of the project property pages, select **C/C++** > **General**
+1. Change the **C++ Language Standard** dropdown to **Preview - Features from the Latest C++ Working Draft**
 
+![Set language standard to preview version](media/set-cpp-language-latest.png)
 
-- right-click on the file in Solution Explorer, select Properties. Change Item Type to be C/C++ Compile (.h files are “C/C++ Include” by default), hit Apply. 
-- If the header file extension is different from “.h”, set “Compile As” to “Compile As Header Unit” in the C/C++ Advanced
+### Set the header file to compile as a header unit
+
+Change a header file to compile as a header unit as follows:
+
+1. In the **Solution Explorer**, right-click the header file (`Pythagorean.h`) and select **Properties**.
+1. Change the **Item Type** to **C/C++ compiler**
+![Changing the item type to c/c++ compiler](media/change-header-item-type.png)
+1. Click **OK**
+
+You can also change the 
+- For header files, set its **Item Type** to **C/C++ compiler**. By default, header files have an **Item Type** of **C/C++ header**
+- If the header file extension is different from ".h", set the project-wide **Compile As** option to **Compile as C++ Header Unit (/exportHeader)**. This will cause #included files to be exported as header units.  
 
 ### Provide a list *.json thing
 
-## Building a header unit project
 
-This section about creating a project that builds your header units
-
-[this from](https://microsoft-my.sharepoint.com/:w:/p/gdr/Ea5Jy1oVuwxJpsiLYuem9FgBYioxSLmGER2QVPp4muq7vQ?e=4%3AW1atMJ&at=9&CID=AAA917D6-FC4D-41F0-9803-4DD2BD0B63CF&wdLOR=c6BFFEDA4-B56F-4FE8-AEFA-2F6A29107415)
-cl /exportHeader /headerName:angle vector=/path/to/source/file 
-
-for requesting the generation of an IFC file for header-name <vector> resolving to /path/to/source/file, and 
-
-cl /exportHeader /headerName:quote my/header.h=/path/to/source/file 
-
-for requesting the generation of an IFC file for header-name “my/header.h” resolving to /path/to/source/file. 
 
 ## Consuming header units
 
@@ -117,18 +134,18 @@ To translate 3rd party library headers, they will need to use /headerUnit:* swit
 
 In VC projects they will be able to specify headers to translate as Additional Header Units Dependencies
 
-## command line switches  (need a better place or maybe no place?)
+## Project settings
 
-/headerUnit - specifies headers to translate
-    can be direct path, "", or <>
-    /headerUnit:bracketed:"vector=c:\vector.ifc"  
-    /headerUnit:quoted:"MyHeader.h=c:\MyHeader.ifc" 
-   /headerUnit:c:\a.h=c:\a.ifc
+project > properties
 
-  /exportHeader
- /moduleOutput:path\filename.ifc
+advanced > msvc toolset version **
+or general > platform toolset
 
-/translateInclude
+c/c++ > general > additional BMI directories (may be moved in newer versions?)
+  also additional header unit dependencies, additional module dependencies
+c/c++ > advanced
+  has compile as
+  has scan all source for module dependencies
 
 ## See also
 
