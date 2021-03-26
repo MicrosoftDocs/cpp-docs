@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l"
 title: "strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l"
-ms.date: "4/2/2020"
+ms.date: "3/25/2021"
 api_name: ["_wcsncat_s_l", "wcsncat_s", "_mbsncat_s_l", "_mbsncat_s", "strncat_s", "_strncat_s_l", "_o__mbsncat_s", "_o__mbsncat_s_l", "_o_strncat_s", "_o_wcsncat_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -145,7 +145,7 @@ strncat_s(dst, _countof(dst), "34567", 3);
 
 means that we are asking **strncat_s** to append three characters to two characters in a buffer five characters long; this would leave no space for the null terminator, hence **strncat_s** zeroes out the string and calls the invalid parameter handler.
 
-If truncation behavior is needed, use **_TRUNCATE** or adjust the *size* parameter accordingly:
+If truncation behavior is needed, use **_TRUNCATE** or adjust the *count* parameter accordingly:
 
 ```C
 strncat_s(dst, _countof(dst), "34567", _TRUNCATE);
