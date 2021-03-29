@@ -31,11 +31,11 @@ Header files for the C++ standard library and extensions, by category.
 | Iterators | [`<iterator>`](iterator.md) |
 | Language support | [`<cfloat>`](cfloat.md), [`<climits>`](climits.md), [`<codecvt>`](codecvt.md)<sup>11 a</sup>, `<compare>`<sup>20</sup>, `<contract>`<sup>20</sup>, `<coroutine>`<sup>20</sup>, [`<csetjmp>`](csetjmp.md), [`<csignal>`](csignal.md), [`<cstdarg>`](cstdarg.md), [`<cstddef>`](cstddef.md), [`<cstdint>`](cstdint.md)<sup>11</sup>, [`<cstdlib>`](cstdlib.md), [`<exception>`](exception.md), [`<initializer_list>`](initializer-list.md)<sup>11</sup>, [`<limits>`](limits.md), [`<new>`](new.md), [`<typeinfo>`](typeinfo.md), `<version>`<sup>20</sup> |
 | Localization | [`<clocale>`](clocale.md), [`<codecvt>`](codecvt.md)<sup>11 a</sup>, [`<cvt/wbuffer>`](cvt-wbuffer.md), [`<cvt/wstring>`](cvt-wstring.md), [`<locale>`](locale.md) |
-| Math and numerics | `<bit>`<sup>20</sup>, [`<cfenv>`](cfenv.md)<sup>11</sup>, [`<cmath>`](cmath.md), [`<complex>`](complex.md), [`<cstdlib>`](cstdlib.md), [`<limits>](limits.md), [`<numeric>`](numeric.md), [`<random>`](random.md)<sup>11</sup>, [`<ratio>`](ratio.md)<sup>11</sup>, [`<valarray>`](valarray.md) |
+| Math and numerics | `<bit>`<sup>20</sup>, [`<cfenv>`](cfenv.md)<sup>11</sup>, [`<cmath>`](cmath.md), [`<complex>`](complex.md), [`<cstdlib>`](cstdlib.md), [`<limits>`](limits.md), [`<numeric>`](numeric.md), [`<random>`](random.md)<sup>11</sup>, [`<ratio>`](ratio.md)<sup>11</sup>, [`<valarray>`](valarray.md) |
 | [Memory management](../cpp/smart-pointers-modern-cpp.md) | [`<allocators>`](allocators-header.md), [`<memory>`](memory.md), `<memory_resource>`<sup>17</sup>, [`<new>`](new.md), [`<scoped_allocator>`](scoped-allocator.md)<sup>11</sup> |
 | Multithreading | [`<atomic>`](atomic.md)<sup>11</sup>, [`<condition_variable>`](condition-variable.md)<sup>11</sup>, [`<future>`](future.md)<sup>11</sup>, [`<mutex>`](mutex.md)<sup>11</sup>, [`<shared_mutex>`](shared-mutex.md)<sup>14</sup>, [`<thread>`](thread.md)<sup>11</sup> |
 | Ranges | `<ranges>`<sup>20</sup> |
-| Regular expressions | [`<regex>](regex.md)<sup>11</sup> |
+| Regular expressions | [`<regex>`](regex.md)<sup>11</sup> |
 | Strings and character data | [`<charconv>`](charconv.md)<sup>17</sup>, [`<cctype>`](cctype.md), [`<cstdlib>`](cstdlib.md), [`<cstring>`](cstring.md), [`<cuchar>`](cuchar.md)<sup>11</sup>, [`<cwchar>`](cwchar.md), [`<cwctype>`](cwctype.md), [`<regex>`](regex.md)<sup>11</sup>, [`<string>`](string.md), [`<string_view>`](string-view.md)<sup>17</sup> |
 | Time | [`<chrono>`](chrono.md)<sup>11</sup>, [`<ctime>`](ctime.md) |
 
