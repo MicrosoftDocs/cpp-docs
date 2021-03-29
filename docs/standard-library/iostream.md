@@ -6,7 +6,7 @@ f1_keywords: ["<iostream>", "iostream/std::cerr", "iostream/std::cin", "iostream
 helpviewer_keywords: ["iostream header"]
 ms.assetid: de5d39e1-7e77-4b55-bcd1-7c77b41515c8
 ---
-# &lt;iostream&gt;
+# `<iostream>`
 
 Declares objects that control reading from and writing to the standard streams. This include is often the only header you need to do input and output from a C++ program.
 
@@ -60,7 +60,7 @@ An [`ostream`](../standard-library/ostream-typedefs.md#ostream) object.
 
 #### Remarks
 
-The object controls unbuffered insertions to the standard error output as a byte stream. Once the object is constructed, the expression `cerr.`[flags](../standard-library/ios-base-class.md#flags) `&` [`unitbuf`](../standard-library/ios-functions.md#unitbuf) is nonzero, and `cerr.tie() == &cout`.
+The object controls unbuffered insertions to the standard error output as a byte stream. Once the object is constructed, the expression `cerr.flags & unitbuf` is nonzero, and `cerr.tie() == &cout`.
 
 #### Example
 
@@ -106,7 +106,7 @@ An [`istream`](../standard-library/istream-typedefs.md#istream) object.
 
 #### Remarks
 
-The object controls extractions from the standard input as a byte stream. Once the object is constructed, the call `cin.`[`tie`](../standard-library/basic-ios-class.md#tie) returns `&`[cout](#cout).
+The object controls extractions from the standard input as a byte stream. Once the object is constructed, the call `cin.tie` returns `&cout`.
 
 #### Example
 
@@ -197,7 +197,7 @@ A [`wostream`](../standard-library/ostream-typedefs.md#wostream) object.
 
 #### Remarks
 
-The object controls unbuffered insertions to the standard error output as a wide stream. Once the object is constructed, the expression `wcerr.`[flags](../standard-library/ios-base-class.md#flags) `&` [`unitbuf`](../standard-library/ios-functions.md#unitbuf) is nonzero.
+The object controls unbuffered insertions to the standard error output as a wide stream. Once the object is constructed, the expression `wcerr.flags & unitbuf` is nonzero.
 
 #### Example
 
@@ -217,7 +217,7 @@ A [`wistream`](../standard-library/istream-typedefs.md#wistream) object.
 
 #### Remarks
 
-The object controls extractions from the standard input as a wide stream. Once the object is constructed, the call `wcin.`[`tie`](../standard-library/basic-ios-class.md#tie) returns `&`[wcout](#wcout).
+The object controls extractions from the standard input as a wide stream. Once the object is constructed, the call `wcin.tie` returns `&wcout`.
 
 #### Example
 
