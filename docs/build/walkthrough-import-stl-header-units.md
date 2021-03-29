@@ -69,7 +69,7 @@ int main()
 
 Use the following steps to set the options that cause the build system to scan for headers to compile into header units, and also the option that causes the compiler to treat `#include` as if you had written `import`:
 
-1. From the main menu, choose **Project** > **Properties**. The project properties window appears.
+1. From the main menu, choose **Project** > **Properties**. The project properties window appears:
 ![Scan module dependencies property setting](media/vs2019-scan-module-dependencies.png)
 1. Ensure that the **Configuration** dropdown is set to **All Configurations**
 1. In the left-hand pane of the project property page, select **C/C++** > **General**
@@ -78,7 +78,7 @@ Use the following steps to set the options that cause the build system to scan f
 
 Change the C++ language standard for the compiler. The latest preview setting is necessary to use header units:
 
-1. In the left-hand pane of the project property pages, select **General**
+1. In the left-hand pane of the project property pages, select **Configuration Properties** > **General**
 1. Change the **C++ Language Standard** dropdown to **Preview - Features from the Latest C++ Working Draft**
 
 ![Set language standard to preview version](media/set-cpp-language-latest.png)
@@ -127,7 +127,7 @@ Next, set project properties to share the header units from this project:
 1. In the left-hand pane of the project property page, select **C/C++** > **General**
 ![Scan module dependencies property setting](media/vs2019-scan-module-dependencies.png)
 1. Set the **Scan Sources for Module Dependencies** dropdown to **Yes**
-1. Set the **Translate Includes to Imports** dropdown to **Yes**. Setting this causes the build to not only produce header units for the headers you specify in your source code, but also for all headers that are included by those headers. And also those listed in the STL `header-units.json` file (see [Advanced](#advanced)), below, for details about this file. This ensures minimal symbols duplication in the header units and the best build throughput.
+1. Set the **Translate Includes to Imports** dropdown to **Yes**. Setting this causes the build to not only produce header units for the headers you specify in your source code, but also for all headers that are included by those headers. And also those listed in the `header-units.json` file.  See [header-units.json](#header-units.json)), below, for details about this file. This ensures minimal symbols duplication in the header units and the best build throughput.
 1. Click **OK** to close the project properties pages and then build the solution: **Build** > **Build Solution** from the main menu, or press `F6`.
 
 ## Consume the STL header unit project
@@ -197,6 +197,8 @@ To access these settings:
 
 > [!NOTE]
 > To use header units built as a part of a **DLL** project, the project property setting **All Modules arePublic** should be set to **Yes**.
+
+### `header-units.json`
 
 Not all STL libraries, or header files for that matter, can be compiled into a header unit and imported. There's an allowlist for the STL headers that the build system consults to determine which STL libraries can be compiled into header units. It is consulted when the build system attempts to create a header unit for an STL header file, and as dependencies are resolved for an STL header file. If the STL header file is not on the list, it is treated as a normal `#include` instead of importing it as a header unit.
 

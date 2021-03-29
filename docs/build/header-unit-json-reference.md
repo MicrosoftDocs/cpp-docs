@@ -12,11 +12,11 @@ helpviewer_keywords: ["header_units.json", "header unit"]
 
 The `header-units.json` file lists which header files can be compiled into header units.
  
-Sometimes a header file can't be compiled into a header unit. For example, `<cassert>` shouldn't be compiled as a header unit because it depends on a `#define` to modify its behavior, and using `#define` can't be used to change the behavior of a header unit. In that case, it is either not listed, or commented out.
+Sometimes a header file can't be compiled into a header unit. For example, `<cassert>` shouldn't be compiled as a header unit because it depends on a `#define` to modify its behavior. Using `#define` can't be used to change the behavior of a header unit. In that case, it's either not listed, or commented out.
 
 The C++ Standard Template Library (STL) `header-units.json` file is located at the root of the include directory where your STL header files are installed. For example, `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.20.00001\include`
 
-The format of the `header_units.json` file is a version, followed by an array of headers that can be built into header units. For example, 
+The format of the `header_units.json` file starts with the schema version, followed by an array of header filenames that can be built into header units. For example:
 
 ```json
 { 

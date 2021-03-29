@@ -1,7 +1,7 @@
 ---
 title: "/headerUnit (Use header unit IFC)"
 description: "Use the /headerUnit compiler option to specify an existing IFC header unit to import in the current compilation."
-ms.date: 09/13/2020
+ms.date: 04/13/2021
 f1_keywords: ["/headerUnit"]
 helpviewer_keywords: ["/headerUnit", "Use header unit IFC"]
 ---
@@ -61,7 +61,7 @@ cl ... /experimental:module /translateInclude /headerUnit C:\utils\util.h=C:\uti
 
 ----
 
-When a project has the ever the project system scans a file and finds an `import` determines that a header unit should be produced, it first consults this file 
+When a project scans a file and finds an `import` determines that a header unit should be produced, it first consults this file 
 
 Scan Sources for Module Dependencies = Yes  According to Building header units for STL headers and other libraries doc, scan creates the .json file containing module and header units and their dependencies, which is then built into .ifc files. JTW  That is read by the compiler option /sourceDependencies:directives:”the .json file”  This .json file lists which headers can be built as header units and which can't be.
 /headerUnit specifies which headers to translate to .ifc
