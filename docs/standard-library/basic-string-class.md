@@ -3916,7 +3916,7 @@ An iterator, const_pointer, or const_iterator addressing the first character to 
 An iterator, const_pointer, or const_iterator addressing the last character to be copied in the parameter string.
 
 *`count`*\
-The number of times *char_value* is copied into the operand string.
+The number of times *`char_value`* is copied into the operand string.
 
 ### Return value
 
