@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l"
 title: "strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l"
-ms.date: "4/2/2020"
+ms.date: "3/25/2021"
 api_name: ["_wcsncat_s_l", "wcsncat_s", "_mbsncat_s_l", "_mbsncat_s", "strncat_s", "_strncat_s_l", "_o__mbsncat_s", "_o__mbsncat_s_l", "_o_strncat_s", "_o_wcsncat_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -133,7 +133,7 @@ Returns 0 if successful, an error code on failure.
 
 These functions try to append the first *D* characters of *strSource* to the end of *strDest*, where *D* is the lesser of *count* and the length of *strSource*. If appending those *D* characters will fit within *strDest* (whose size is given as *numberOfElements*) and still leave room for a null terminator, then those characters are appended, starting at the original terminating null of *strDest*, and a new terminating null is appended; otherwise, *strDest*[0] is set to the null character and the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
-There is an exception to the above paragraph. If *count* is [_TRUNCATE](../../c-runtime-library/truncate.md) then as much of *strSource* as will fit is appended to *strDest* while still leaving room to append a terminating null.
+There is an exception to the above paragraph. If *count* is [_TRUNCATE](../../c-runtime-library/truncate.md), then as much of *strSource* as will fit is appended to *strDest* while still leaving room to append a terminating null.
 
 For example,
 
@@ -143,9 +143,9 @@ strncpy_s(dst, _countof(dst), "12", 2);
 strncat_s(dst, _countof(dst), "34567", 3);
 ```
 
-means that we are asking **strncat_s** to append three characters to two characters in a buffer five characters long; this would leave no space for the null terminator, hence **strncat_s** zeroes out the string and calls the invalid parameter handler.
+means that we're asking **strncat_s** to append three characters to two characters in a buffer five characters long; this would leave no space for the null terminator, hence **strncat_s** zeroes out the string and calls the invalid parameter handler.
 
-If truncation behavior is needed, use **_TRUNCATE** or adjust the *size* parameter accordingly:
+If truncation behavior is needed, use **_TRUNCATE** or adjust the *count* parameter accordingly:
 
 ```C
 strncat_s(dst, _countof(dst), "34567", _TRUNCATE);
@@ -159,11 +159,11 @@ strncat_s(dst, _countof(dst), "34567", _countof(dst)-strlen(dst)-1);
 
 In all cases, the resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.
 
-If *strSource* or *strDest* is **NULL**, or is *numberOfElements* is zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns **EINVAL** without modifying its parameters.
+If *strSource* or *strDest* is **NULL**, or *numberOfElements* is zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md) . If execution is allowed to continue, the function returns **EINVAL** without modifying its parameters.
 
 **wcsncat_s** and **_mbsncat_s** are wide-character and multibyte-character versions of **strncat_s**. The string arguments and return value of **wcsncat_s** are wide-character strings; those of **_mbsncat_s** are multibyte-character strings. These three functions behave identically otherwise.
 
-The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
+The output value is affected by the setting of the **LC_CTYPE** category setting of the locale. For more information, see [setlocale](setlocale-wsetlocale.md). The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 In C++, using these functions is simplified by template overloads; the overloads can infer buffer length automatically (eliminating the need to specify a size argument) and they can automatically replace older, non-secure functions with their newer, secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
@@ -178,7 +178,7 @@ By default, this function's global state is scoped to the application. To change
 |**_tcsncat_s**|**strncat_s**|**_mbsnbcat_s**|**wcsncat_s**|
 |**_tcsncat_s_l**|**_strncat_s_l**|**_mbsnbcat_s_l**|**_wcsncat_s_l**|
 
-**_strncat_s_l** and **_wcsncat_s_l** have no locale dependence; they are only provided for **_tcsncat_s_l**.
+**_strncat_s_l** and **_wcsncat_s_l** have no locale dependence; they're  are only provided for **_tcsncat_s_l**.
 
 ## Requirements
 
@@ -188,7 +188,7 @@ By default, this function's global state is scoped to the application. To change
 |**wcsncat_s**|\<string.h> or \<wchar.h>|
 |**_mbsncat_s**, **_mbsncat_s_l**|\<mbstring.h>|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
