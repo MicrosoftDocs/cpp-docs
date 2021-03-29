@@ -68,7 +68,7 @@ Header files for the C++ standard library and extensions, by category.
 |[Memory Management](../cpp/smart-pointers-modern-cpp.md)|[`<allocators>`](allocators-header.md), [`<memory>`](memory.md), [`<new>`](new.md), [`<scoped_allocator>`](scoped-allocator.md)|
 |Multithreading|[`<atomic>`](atomic.md), [`<condition_variable>`](condition-variable.md), [`<future>`](future.md), [`<mutex>`](mutex.md), [`<shared_mutex>`](shared-mutex.md), [`<thread>`](thread.md)|
 |Other utilities|[`<bitset>`](bitset.md), [`<chrono>`](chrono.md), [`<functional>`](functional.md), [`<initializer_list>`](initializer-list.md), [`<tuple>`](tuple.md), [`<type_traits>`](type-traits.md), [`<typeinfo>`](typeinfo.md), [`<typeindex>`](typeindex.md), [`<utility>`](utility.md)|
-|Strings and character data|[`<regex>`](regex.md), [`<string>`](string.md), [`<string_view>`](string-view.md)
+|Strings and character data|[`<regex>`](regex.md), [`<string>`](string.md), [`<string_view>`](string-view.md)|
 
 ::: moniker-end
 
