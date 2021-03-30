@@ -60,7 +60,7 @@ An [`ostream`](../standard-library/ostream-typedefs.md#ostream) object.
 
 #### Remarks
 
-The object controls unbuffered insertions to the standard error output as a byte stream. Once the object is constructed, the expression `cerr.flags & unitbuf` is nonzero, and `cerr.tie() == &cout`.
+The object controls unbuffered insertions to the standard error output as a byte stream. Once the object is constructed, the expression `cerr.flags & unitbuf` is nonzero, and `cerr.tie() == &cout`. For more details, see [`cerr.flags`](../standard-library/ios-base-class.md#flags) and [`unitbuf`](../standard-library/ios-functions.md#unitbuf).
 
 #### Example
 
@@ -106,7 +106,7 @@ An [`istream`](../standard-library/istream-typedefs.md#istream) object.
 
 #### Remarks
 
-The object controls extractions from the standard input as a byte stream. Once the object is constructed, the call `cin.tie` returns `&cout`.
+The object controls extractions from the standard input as a byte stream. Once the object is constructed, the call [`cin.tie`](../standard-library/basic-ios-class.md#tie) returns [`&cout`](#cout).
 
 #### Example
 
@@ -197,7 +197,7 @@ A [`wostream`](../standard-library/ostream-typedefs.md#wostream) object.
 
 #### Remarks
 
-The object controls unbuffered insertions to the standard error output as a wide stream. Once the object is constructed, the expression `wcerr.flags & unitbuf` is nonzero.
+The object controls unbuffered insertions to the standard error output as a wide stream. Once the object is constructed, the expression `wcerr.flags & unitbuf` is nonzero. For more details, see [`wcerr.flags`](../standard-library/ios-base-class.md#flags) and [`unitbuf`](../standard-library/ios-functions.md#unitbuf).
 
 #### Example
 
@@ -217,7 +217,7 @@ A [`wistream`](../standard-library/istream-typedefs.md#wistream) object.
 
 #### Remarks
 
-The object controls extractions from the standard input as a wide stream. Once the object is constructed, the call `wcin.tie` returns `&wcout`.
+The object controls extractions from the standard input as a wide stream. Once the object is constructed, the call [`wcin.tie`](../standard-library/basic-ios-class.md#tie) returns [`&wcout`](#wcout).
 
 #### Example
 
