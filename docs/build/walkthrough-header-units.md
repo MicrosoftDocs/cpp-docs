@@ -24,7 +24,7 @@ Header units provide a "module-like" experience for header files even though the
 
 Header units are defined by the C++ standard, and can be used cross-platform.
 
-Before you can import a header unit, a header file must be compiled into a header unit. Header units are independent of the machine they're built on. One machine can produce IFCs and another machine consume them. A PCH can't do that because the persisted data structures are largely tied to the memory layout of the machine where they're compiled.
+Before you can import a header unit, a header file must be compiled into a header unit. Header units are independent of the machine they're built on. One machine could produce IFCs and another machine consume them. A PCH can't do that because the persisted data structures are largely tied to the memory layout of the machine where they're compiled.
 
 Ideally, you should use the same compiler flags to compile a header unit and the program that imports it. Flags, like `/EHsc`, `/MD[d]`, and others, have an impact on the semantics of the program that are captured in a header unit.
 
@@ -32,7 +32,7 @@ Ideally, you should use the same compiler flags to compile a header unit and the
 
 There are several ways to compile a file into a header unit:
 
--Automatically scan for header units: This approach is best suited to smaller projects that include many different header files. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1) for a demonstration of this approach. The reason it is better suited to smaller projects, or for those where build time is not a crucial consideration, is because it takes extra time for the build system to scan all of the files to find what should be built into header units.
+-Automatically scan for header units: This approach is best suited to smaller projects that include many different header files. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1) for a demonstration of this approach. The reason it's better suited to smaller projects, or for those where build time isn't a crucial consideration, is because it takes extra time for the build system to scan all of the files to find what should be built into header units.
 
 -Build a shared header units project: This approach is best suited for larger projects, and for when you want more control over the organization of the imported header units. You create a static library (or libraries) that contain the header units that you want, and then reference it from the projects that then import the header units they need. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2) for a demonstration of this approach.
 
@@ -86,7 +86,7 @@ For source files (or header files that don't have a `.h` or `.hpp` extension):
 
 ### Change your code to import a header unit
 
-In the source file for the example project, the file that contains `main()`, change `#include "Pythagorean.h"` to `import "Pythagorean.h";` (don't forget the trailing semicolon that is required for `import` statements). When you are compiling a header unit from a system header, use angle brackets (`#include <file>;`). If it's a project header, use `import "file";`
+In the source file for the example project, the file that contains `main()`, change `#include "Pythagorean.h"` to `import "Pythagorean.h";` (don't forget the trailing semicolon that is required for `import` statements). When you're compiling a header unit from a system header, use angle brackets (`#include <file>;`). If it's a project header, use `import "file";`
 
 Build the solution (**Build** > **Build Solution** from the main menu, or press `F6`) and run it to see that it produces the expected output: `Pythagorean triple a:2 b:3 c:13`
 

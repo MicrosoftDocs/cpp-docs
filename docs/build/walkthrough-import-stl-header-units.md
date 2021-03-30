@@ -13,7 +13,7 @@ The [first way](#approach1) has the build system automatically scan for, and bui
 
 The [second way](#approach2) demonstrates how to build a static library containing header units for the STL headers you want to use, and then reference that project to import the header units.
 
-Importing a STL header as a header unit is a simpler alternative to [precompiled header files](creating-precompiled-header-files.md). Header units are easier to setup and easier to use than a shared precompiled header file (PCH), while providing similar performance benefits. Unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
+Importing a STL header as a header unit is a simpler alternative to [precompiled header files](creating-precompiled-header-files.md). Header units are easier to set up and easier to use than a shared precompiled header file (PCH), while providing similar performance benefits. Unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
 
 Before you can import an STL header, it must be compiled into a header unit. Header units are a binary representation of a header file, and end with an `.ifc` extension. Header units provide a "module-like" experience for header files even though they lack the level of isolation provided by named modules. For example, macros in a header unit are visible, while those in a module aren't. Another difference is that header units are not affected by macro definitions the way header files are. For example, you can't `#define` a symbol that causes the header unit to conditionally compile the way you can with a header file.
 
@@ -35,15 +35,15 @@ See [Approach 1: Scan for headers](#approach1), in this article, for a walkthrou
 
 **Create a shared library**
 
-The recommended approach, particularly for larger projects, or in cases where you want to share a common set of header units across multiple projects, is to create a shared library containing header units you want to use. This library is then shared with projects that import those header units. It's like using [shared precompiled headers](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio/), but significantly easier.
+The recommended approach, particularly for larger projects, or in cases where you want to share a common set of header units across multiple projects, is to create a shared library containing header units you want to use. This library is then shared with projects that import those header units. It's like using [shared precompiled headers](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio/), but easier.
 
 See [Approach 2: Build a shared library](#approach2), in this article, for a walkthrough of this approach.
 
 ## <a name="approach1"></a>Approach 1: Scan for headers
 
-We'll begin with the easiest way to import STL libraries as header units. This approach may not be appropriate for larger projects because scanning the sources takes additional build time.
+We'll begin with the easiest way to import STL libraries as header units. This approach may not be appropriate for larger projects because scanning the sources takes more build time.
 
-This option is convenient for codebases that use a lot of different headers, and where build throughput isn't critical. This option doesn't guarantee that a header unit for a particular header will be built only once. Header units built by referenced static libraries projects are reused.
+This option is convenient for codebases that use many different headers, and where build throughput isn't critical. This option doesn't guarantee a header unit for a particular header will be built only once. Header units built by referenced static libraries projects are reused.
 
 You can import your STL libraries as header units without modifying your code by setting two Visual C++ project options:
 - **Scan Sources for Module Dependencies**
@@ -101,7 +101,7 @@ You can fine-tune this balance by not scanning for module dependencies, and inst
 
 ## <a name="approach2"></a>Approach 2: Build a shared library
 
-The more flexible and more build performant way to consume STL headers is to create a library, or libararies, that build common header units from the STL headers you want to use. Then reference that library, or libraries, from the projects that need those STL headers. Adding a reference establishes a mapping between the `import` statement for the header unit, and its `.ifc` file.
+The more flexible and more build performant way to consume STL headers is to create a library, or libraries, that build common header units from the STL headers you want to use. Then reference that library, or libraries, from the projects that need those STL headers. Adding a reference establishes a mapping between the `import` statement for the header unit, and its `.ifc` file.
 
 This option ensures that header units for a particular header will be built only once. It's similar to using a shared precompiled header file, but is much easier.
 
@@ -134,7 +134,7 @@ Set project properties to share the header units from this project:
 1. In the left-hand pane of the project property page, select **C/C++** > **General**
 ![Scan module dependencies property setting](media/vs2019-scan-module-dependencies.png)
 1. Set the **Scan Sources for Module Dependencies** dropdown to **Yes**
-1. Set the **Translate Includes to Imports** dropdown to **Yes**. This setting causes the build to not only produce header units for the headers you specify in your source code, but also for all headers that are included by those headers and those listed in the `header-units.json` file.  See [header-units.json](#header-unitsjson), below, for more details about this file. This setting ensures minimal symbols duplication in the header units and the best build throughput.
+1. Set the **Translate Includes to Imports** dropdown to **Yes**. This setting causes the build to not only produce header units for the headers you specify in your source code, but also for all headers that are included by those headers and those listed in the `header-units.json` file.  For more details about this file, see [header-units.json](#header-unitsjson), below. This setting ensures minimal symbols duplication in the header units and the best build throughput.
 1. Click **OK** to close the project properties pages and then build the solution: **Build** > **Build Solution** from the main menu, or press `F6`.
 
 ## Reference the STL header unit project
@@ -193,7 +193,7 @@ The following settings control the visibility of header units to the build syste
 
 ### Duplicate symbols
 
-If you reference two or more projects that built two or more header units with the same name, or that built two or more header unit for the same header file, you'll get duplicate symbols. You can use  the project properties **C/C++** >  **Additional Header Unit Dependencies** to resolve collisions by specifying which header unit should be used. Otherwise, you won't be able to predict which one gets picked.
+If you reference two or more projects that built two or more header units with the same name, or that built two or more header units for the same header file, you'll get duplicate symbols. You can use  the project properties **C/C++** >  **Additional Header Unit Dependencies** to resolve collisions by specifying which header unit should be used. Otherwise, you can't predict which one gets picked.
 
 To access these settings:
 1. Select the project in the **Solution Explorer**, then right-click the project and select **Properties**.
@@ -202,14 +202,14 @@ To access these settings:
 ![Additional Header Unit Dependencies setting in the project properties dialog](media/additional-header-unit-dependencies-setting.png)
 
 > [!IMPORTANT]
-> Ensure that projects that share header units are built with compatible compilation options. The compiler will issue warnings if it detects different compilation options used for how the header unit was produced versus how it is used.
+> Ensure that projects that share header units are built with compatible compilation options. The compiler will issue warnings if it detects different compilation options used for how the header unit was produced versus how it's used.
 
 > [!NOTE]
 > To use header units built as a part of a **DLL** project, the project property setting **All Modules arePublic** should be set to **Yes**.
 
 ### `header-units.json`
 
-Not all STL libraries, or header files for that matter, can be compiled into a header unit and imported. There's an allowlist for the STL headers that the build system consults when `/TranslateInclude ` is specified to determine which STL headers can be compiled into header units. It is consulted when the build system attempts to create a header unit for an STL header file, and when dependencies are resolved for an STL header file. If the STL header file is not on the list, it is treated as a normal `#include` instead of importing it as a header unit.
+Not all STL libraries, or header files for that matter, can be compiled into a header unit and imported. There's an allowlist for the STL headers that the build system consults when `/TranslateInclude ` is specified to determine which STL headers can be compiled into header units. It's consulted when the build system attempts to create a header unit for an STL header file, and when dependencies are resolved for an STL header file. If the STL header file isn't on the list, it's treated as a normal `#include` instead of importing it as a header unit.
 
 The [header-units.json](header-unit-json-reference.md) file is at the root of the include directory where your STL header files are installed. For example, `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.20.00001\include`. It lists which STL libraries can be compiled into header units. Some can't. For example, `<cassert>` shouldn't be compiled as a header unit because it depends on a `#define` to modify its behavior, and using `#define` can't be used to change the behavior of a header unit.
 
