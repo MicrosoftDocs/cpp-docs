@@ -1,7 +1,7 @@
 ---
 title: "/sourceDependencies (Report source-level dependencies)"
 description: "Reference guide to the /sourceDependencies compiler option in Microsoft C++."
-ms.date: 07/29/2020
+ms.date: 04/13/2020
 f1_keywords: ["/sourceDependencies"]
 helpviewer_keywords: ["/sourceDependencies compiler option", "/sourceDependencies"]
 ---
@@ -18,12 +18,14 @@ The JSON file contains a list of the source dependencies, which include:
 ## Syntax
 
 > **`/sourceDependencies`** *filename*\
-> **`/sourceDependencies`** *directory*
+> **`/sourceDependencies`** *directory*\
+> **`/sourceDependencies:directives`** *filename*\
 
 ## Arguments
 
 *filename*\
-The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.
+The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.\
+In the `/sourceDependencies:directives` case, this refers to a JSON file that lists which header files can be compiled into a header unit. See [C++ header_units.json reference](..\header-unit-json-reference.md) for an example.  
 
 *directory*\
 If the argument is a directory, the compiler generates source dependency files in the specified directory. The output file name is based on the full name of the input file, with an appended *`.json`* extension. For example, if the file provided to the compiler is *`main.cpp`*, the generated output filename is *`main.cpp.json`*.
@@ -37,6 +39,7 @@ When you specify the **`/MP`** compiler option, we recommend you use **`/sourceD
 When a non-fatal compiler error occurs, the dependency information still gets written to the output file.
 
 All file paths appear as absolute paths in the output.
+
 
 ### Examples
 

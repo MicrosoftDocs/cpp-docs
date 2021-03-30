@@ -18,7 +18,7 @@ Support for header units requires at least Visual Studio 2019 16.10.0 Preview 2.
 
 ## What is a header unit
 
-Before you can import a header unit, it must first be compiled. Header units are a binary representation of a header file, and end with an `.ifc` extension.
+Before you can import a header unit, it must first be compiled. Header units are a binary representation of a header file, and end with an `.ifc` extension. This is also the format used to store named modules.
 
 An important feature of header units is that they're defined by the C++ standard, and can be used cross-platform.
 
@@ -77,11 +77,11 @@ To enable header units, set the project C++ language standard to use the latest 
 To compile a file as a header unit, open the file's properties by selecting it in the **Solution Explorer**. Right-click the file, and select **Properties**. Then do one of the following depending on the file type:
 
 For header files:
-- Set its **Item Type** property to **C/C++ compiler**. By default, header files have an **Item Type** of **C/C++ header**. Setting this property also sets **C/C++** > **Advanced** > **Compile As** to **Compile as C++ Header Unit (/exportHeader)** for you.
+- Set the **Item Type** property to **C/C++ compiler**. By default, header files have an **Item Type** of **C/C++ header**. Setting this property also sets **C/C++** > **Advanced** > **Compile As** to **Compile as C++ Header Unit (/exportHeader)** for you.
 ![Changing the item type to c/c++ compiler](media/change-item-type.png)
 
-For source files:
-- Set its **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**.
+For source files (or header files that don't have a `.h` or `.hpp` extension):
+- Set the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**.
 ![Changing Compile As to Compile as C++ Header Unit ](media/change-compile-as.png)
 
 ### Change your code to import a header unit
@@ -96,7 +96,7 @@ If you only want to convert a few header files to header units, this is a good a
 
 ## See also
 
-[Walkthrough: Import STL libraries as header units] \(walkthrough-import-stl-header-units.md#approach1) 
+[Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1)\
 [Overview of modules in C++](../cpp/modules-cpp.md) \
 [`/translateInclude`](./reference/translateinclude.md) \
 [`/exportHeader`](./reference/module-exportheader.md) \

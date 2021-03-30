@@ -95,7 +95,7 @@ You can fine-tune this balance by not scanning for module dependencies, and inst
 
 ## <a name="approach2"></a>Approach 2: Build a shared library
 
-The more flexible and more performant way to consume STL headers is to create a project, or projects, that build common header units from the STL headers you want to use. Then reference that project, or projects, from the projects that need those STL headers.
+The more flexible and more performant way to consume STL headers is to create a library, or libararies, that build common header units from the STL headers you want to use. Then reference that library, or libraries, from the projects that need those STL headers. Adding a reference establishes a mapping between the `import` statement for the header unit, and and its `.ifc` file. 
 
 This option ensures that header units for a particular header will be built only once. It's similar to using a shared precompiled header file, but is much easier.
 
@@ -130,7 +130,7 @@ Next, set project properties to share the header units from this project:
 1. Set the **Translate Includes to Imports** dropdown to **Yes**. Setting this causes the build to not only produce header units for the headers you specify in your source code, but also for all headers that are included by those headers. And also those listed in the `header-units.json` file.  See [header-units.json](#header-units.json)), below, for details about this file. This ensures minimal symbols duplication in the header units and the best build throughput.
 1. Click **OK** to close the project properties pages and then build the solution: **Build** > **Build Solution** from the main menu, or press `F6`.
 
-## Consume the STL header unit project
+## Reference the STL header unit project
 
 Next, create a project that will use the built `<vector>` and `<iostream>` STL header units:
 
@@ -179,12 +179,12 @@ Header units built as part of a static library project are automatically availab
 The following settings control the visibility of header units to the build system:
 
 - **Public Include Directories** - specify project directories for header units that should be automatically added to the include path in referencing projects.
-- **Public C++ Module directories** - specify project directories containing header units that should be available to referencing projects.
-- **All Modules are Public** - a fast way to make all header units in the project automatically available to referencing projects.
+- **Public C++ Module directories** - specify which project directories contain header units that should be available to referencing projects. This is a way of making some header units public, by putting those that should be public in their own directory. If you set this, you may also want to specify **Public Include Directories** so your public headers are automatically added to the include path in referencing projects.
+- **All Modules are Public** - To use header units built as a part of a DLL project, the symbols have to be exported from the DLL. To do so, set this property to **Yes**.
 
-### Handle duplicate symbols
+### Duplicate symbols
 
-If you reference two or more projects that built two or more header units with the same name, or that built two or more header unit for the same header file, you'll get duplicate symbols. You can use C/C++ >  Additional Module dependencies & Additional Header Unit Dependencies to resolve those collisions by specifying which module or header unit should be used for this project. Otherwise the one that is chosen is undefined.
+If you reference two or more projects that built two or more header units with the same name, or that built two or more header unit for the same header file, you'll get duplicate symbols. You can use  the project properties **C/C++** >  **Additional Module dependencies** & **Additional Header Unit Dependencies** to resolve those collisions by specifying which module or header unit should be used. Otherwise, you won't be able to predict which one gets used.
 
 To access these settings:
 1. Select the project in the **Solution Explorer**, then right-click the project and select **Properties**.
