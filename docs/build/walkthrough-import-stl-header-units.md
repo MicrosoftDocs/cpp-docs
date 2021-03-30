@@ -127,7 +127,7 @@ Next, set project properties to share the header units from this project:
 1. In the left-hand pane of the project property page, select **C/C++** > **General**
 ![Scan module dependencies property setting](media/vs2019-scan-module-dependencies.png)
 1. Set the **Scan Sources for Module Dependencies** dropdown to **Yes**
-1. Set the **Translate Includes to Imports** dropdown to **Yes**. Setting this causes the build to not only produce header units for the headers you specify in your source code, but also for all headers that are included by those headers. And also those listed in the `header-units.json` file.  See [header-units.json](#header-units.json)), below, for details about this file. This ensures minimal symbols duplication in the header units and the best build throughput.
+1. Set the **Translate Includes to Imports** dropdown to **Yes**. Setting this causes the build to not only produce header units for the headers you specify in your source code, but also for all headers that are included by those headers. And also those listed in the `header-units.json` file.  See [header-units.json](#header-unitsjson), below, for details about this file. This ensures minimal symbols duplication in the header units and the best build throughput.
 1. Click **OK** to close the project properties pages and then build the solution: **Build** > **Build Solution** from the main menu, or press `F6`.
 
 ## Reference the STL header unit project
