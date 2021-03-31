@@ -32,7 +32,7 @@ You can extend the target platform further by creating a custom platform toolset
 1. In Visual Studio, in **Solution Explorer**, select your project. On the menu bar, open the **Project** menu and choose **Unload project**. This command unloads the project (.vcxproj) file for your project.
 
    > [!NOTE]
-   >  A C++ project cannot be loaded while the project file is being modified in Visual Studio. However, you can use another editor such as Notepad to modify the project file while the project is loaded in Visual Studio. Visual Studio will detect that the project file has changed and prompt you to reload the project.
+   >  A C++ project can't be loaded while you edit the project file in Visual Studio. However, you can use another editor such as Notepad to modify the project file while the project is loaded in Visual Studio. Visual Studio will detect that the project file has changed and prompt you to reload the project.
 
 1. On the menu bar, select **File**, **Open**, **File**. In the **Open File** dialog box, navigate to your project folder, and then open the project (.vcxproj) file.
 
@@ -57,6 +57,10 @@ You can extend the target platform further by creating a custom platform toolset
 1. In the properties page, select **Platform Toolset** and then select the toolset you want from the drop-down list. For example, if you've installed the Visual Studio 2010 toolset, select **Visual Studio 2010 (v100)** to use it for your project.
 
 1. Choose the **OK** button to save your changes.
+
+## Next Steps
+
+[Walkthrough: Working with Projects and Solutions (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md)
 
 ## See also
 
