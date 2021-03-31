@@ -63,7 +63,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|Required header|
 |--------------|---------------------|
 |**floor**, **floorf**, **floorl**|\<math.h>|
-|**floor** macro | \<tgmath.h> ||
+|**floor** macro | \<tgmath.h> |
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
