@@ -76,7 +76,7 @@ By default, this function's global state is scoped to the application. To change
 |Routine|Required header|
 |-------------|---------------------|
 |**lround**, **lroundf**, **lroundl**, **llround**, **llroundf**, **llroundl**|\<math.h>|
-|**lround** macro | \<tgmath.h> ||
+|**lround** macro | \<tgmath.h> |
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
