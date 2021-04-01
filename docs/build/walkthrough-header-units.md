@@ -22,9 +22,9 @@ Header units are a binary representation of a header file, and end with an *`.if
 
 One important difference between a header unit and a header file is that header units are not affected by macro definitions the way header files are. For example, you can't `#define` a symbol that causes the header unit to behave differently when you import it the way you can with a header file. Everything visible from a header file is also visible from a header unit.
 
-Before you can import a header unit, a header file must be compiled into a header unit. An advantage of header units (*`.ifc`* files) over a PCH is that it can be used in distributed builds. For example, as long as you are using the same compiler to compile the *`.ifc`*  and the program that imports it, and are targeting the same platform and architecture, a header unit produced on one machine can be used on another.
+Before you can import a header unit, a header file must be compiled into a header unit. An advantage of header units (*`.ifc`* files) over a PCH is that it can be used in distributed builds. For example, as long as you're using the same compiler to compile the *`.ifc`*  and the program that imports it, and are targeting the same platform and architecture, a header unit produced on one machine can be used on another.
 
-Another advantage of header units over a PCH is that there is more flexibility when it comes to the compiler flags used to compile the header unit and the program that imports it. With a PCH, more compiler flags must be the same. But with header units, the primary flags that should be the same include:
+Another advantage of header units over a PCH is that there's more flexibility when it comes to the compiler flags used to compile the header unit and the program that imports it. With a PCH, more compiler flags must be the same. But with header units, the primary flags that should be the same include:
     - Exception handling switches such as `/EHsc`
     - `/MD[d]` or `MT[d]`
     - `/D` You can define additional macros when building the program that imports the header unit, but those used to build the header unit should also be present and defined the same way when building the program that imports the header unit.

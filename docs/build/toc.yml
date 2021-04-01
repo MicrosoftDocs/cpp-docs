@@ -636,9 +636,9 @@
                 - name: /MD, /MT, /LD (Use Run-time library)
                   href: ../build/reference/md-mt-ld-use-run-time-library.md
                 - name: /exportHeader (Create header units)
-                  href: ../build/reference/exportheader.md
+                  href: ../build/reference/module-exportheader.md
                 - name: /reference (Use named module IFC)
-                  href: ../build/reference/reference.md
+                  href: ../build/reference/module-reference.md
                 - name: /MP (Build with multiple processes)
                   href: ../build/reference/mp-build-with-multiple-processes.md
                 - name: /nologo (Suppress startup banner) (C/C++)

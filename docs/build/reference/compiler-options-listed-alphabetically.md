@@ -117,7 +117,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Qspectre-load`](qspectre-load.md) | Specifies compiler generation of serializing instructions to mitigate Spectre security vulnerabilities based on load instructions. |
 | [`/Qspectre-load-cf`](qspectre-load-cf.md) | Specifies compiler generation of serializing instructions to mitigate Spectre security vulnerabilities based on control flow instructions that load memory. |
 | [`/Qvec-report` (Auto-vectorizer reporting level)](qvec-report-auto-vectorizer-reporting-level.md) | Enables reporting levels for automatic vectorization. |
-| [`/reference`](module-reference.md.md) | Use named module IFC. |
+| [`/reference`](module-reference.md) | Use named module IFC. |
 | [`/RTC`](rtc-run-time-error-checks.md) | Enables run-time error checking. |
 | [`/sdl`](sdl-enable-additional-security-checks.md) | Enables additional security features and warnings. |
 | [`/showIncludes`](showincludes-list-include-files.md) | Displays a list of include files during compilation. |
