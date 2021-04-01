@@ -105,8 +105,8 @@ This article contains a categorical list of compiler options. For an alphabetica
 
 ## Header units
 
-| [`/exportHeader`](module-exportheader.md) Create the header units (*`.ifc`*) files specified by the input arguments.|
-| [`/headerUnit`](headerunit.md) | Tells the compiler where to find the header unit file (`.ifc`) for the specified header. |
+| [`/exportHeader`](module-exportheader.md) | Create the header units (*`.ifc`*) files specified by the input arguments. |
+| [`/headerUnit`](headerunit.md) | Indicate where to find the header unit file (`.ifc`) for the specified header. |
 | [`/headerName`](headername.md) | Build a header unit from the specified header. |
 | [`/reference`](module-reference.md) | Use named module IFC. |
 | [`/sourceDependencies:directives`](sourcedependencies.md) | Read a list of headers that can be converted to header units. |
