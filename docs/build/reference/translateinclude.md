@@ -29,7 +29,7 @@ The compiler replaces this directive with:
 import <vector>;
 ```
 
-In MSVC, available header units are made available by the **`/headerUnit`** option which maps a header file to its importable header unit. For more information, see [`/headerUnit` (Use header unit IFC)](headerunit.md).
+In MSVC, available header units are made available by the **`/headerUnit`** option, which maps a header file to its importable header unit. For more information, see [`/headerUnit` (Use header unit IFC)](headerunit.md).
 
 ### Examples
 

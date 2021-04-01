@@ -27,13 +27,13 @@ The name of a file that contains compiled header unit information. To import mor
 
 The **`/headerUnit`** compiler option requires the [/std:c++latest](std-specify-language-standard-version.md) option. The **`/headerUnit`** compiler option is available starting in Visual Studio 2019 version 16.10 preview 2.
 
-When the compiler encounters `import "file";` or `import <file>`, this compiler switch helps the compiler find the compiled header unit (*`.ifc`*) for the specified header file. The path to this file can be expressed in three ways:
+When the compiler comes across `import "file";` or `import <file>`, this compiler switch helps the compiler find the compiled header unit (*`.ifc`*) for the specified header file. The path to this file can be expressed in three ways:
 
 **`/headerUnit`** looks up the compiled header unit in the current directory, or at the location specified in *`ifc-filename`*.
 
-**`/headerUnit:quote`** looks up the the compiled header unit file using the same rules as `#include "file"`.
+**`/headerUnit:quote`** looks up the compiled header unit file using the same rules as `#include "file"`.
 
-**`/headerUnit:angle`** looks up the the compiled header unit file using the same rules as `#include <file>`.
+**`/headerUnit:angle`** looks up the compiled header unit file using the same rules as `#include <file>`.
 
 The compiler can't map a single *`header-name`* to multiple IFC files. While mapping multiple *`header-name`* arguments to a single IFC is possible, we don't recommend it. The contents of the IFC get imported as if it was only the header specified by *`header-name`*.
 

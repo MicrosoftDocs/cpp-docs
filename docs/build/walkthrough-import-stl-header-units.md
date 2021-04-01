@@ -25,7 +25,7 @@ Support for header units requires at least Visual Studio 2019 16.10.0 Preview 2.
 
 ## Two different approaches
 
-Before an STL header can be imported, it must be compiled into a header unit. There are two main approaches to doing this, demonstrated below.
+Before an STL header can be imported, it must be compiled into a header unit. There are two main approaches, demonstrated below.
 
 **Scan for module dependencies**
 
@@ -81,7 +81,7 @@ Follow these steps to set the options that cause the build system to scan for he
 ![Scan module dependencies property setting](media/vs2019-scan-module-dependencies.png)
 1. Ensure that the **Configuration** dropdown is set to **All Configurations**
 1. In the left-hand pane of the project property page, select **C/C++** > **General**
-1. Set **Scan Sources for Module Dependencies** to **Yes**  Because we are setting the project property, all sources in this project will be scanned. This could be set at the file level, but here we scan the entire project.
+1. Set **Scan Sources for Module Dependencies** to **Yes**  Because we're setting the project property, all sources in this project will be scanned. This could be set at the file level, but here we scan the entire project.
 1. Set **Translate Includes to Imports** to **Yes**
 
 Change the C++ language standard for the compiler. The latest preview setting is necessary to use header units:
@@ -136,7 +136,7 @@ Set project properties to share the header units from this project:
 1. In the left-hand pane of the project property page, select **C/C++** > **General**
 ![Scan module dependencies property setting](media/vs2019-scan-module-dependencies.png)
 1. Set the **Scan Sources for Module Dependencies** dropdown to **Yes**
-1. Set the **Translate Includes to Imports** dropdown to **Yes**. This setting causes the build to not only produce header units for the headers you specify in your source code, but also for all headers that are included by those headers and those listed in the `header-units.json` file.  For more details about this file, see [header-units.json](#header-unitsjson), below. This setting ensures minimal symbols duplication in the header units and the best build throughput.
+1. Set the **Translate Includes to Imports** dropdown to **Yes**. This setting causes the build to not only produce header units for the headers you specify in your source code, but also for all headers that are included by those headers and those listed in the `header-units.json` file.  For more information about this file, see [header-units.json](#header-unitsjson), below. This setting ensures minimal symbols duplication in the header units and the best build throughput.
 1. Click **OK** to close the project properties pages and then build the solution: **Build** > **Build Solution** from the main menu, or press `F6`.
 
 ## Reference the STL header unit project
