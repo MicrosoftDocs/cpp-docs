@@ -87,7 +87,7 @@ For source files (or header files that don't have a `.h` or `.hpp` extension):
 
 ### Change your code to import a header unit
 
-In the source file for the example project, the file that contains `main()`, change `#include "Pythagorean.h"` to `import "Pythagorean.h";` (don't forget the trailing semicolon that is required for `import` statements). When you're compiling a header unit from a system header, use angle brackets (`#include <file>;`). If it's a project header, use `import "file";`
+In the source file for the example project, the file that contains `main()`, change `#include "Pythagorean.h"` to `import "Pythagorean.h";` (don't forget the trailing semicolon that is required for `import` statements). When you're compiling a header unit from a system header, use angle brackets (`#import <file>;`). If it's a project header, use `import "file";`
 
 Build the solution (**Build** > **Build Solution** from the main menu, or press `F6`) and run it to see that it produces the expected output: `Pythagorean triple a:2 b:3 c:13`
 

@@ -9,7 +9,7 @@ helpviewer_keywords: ["/sourceDependencies compiler option", "/sourceDependencie
 
 This command-line option comes in two forms:
 
-- `/sourceDependencies:directives` is used in conjunction with `/translateIncludes` to specify a JSON file that contains an allow list of header files that can be allowed to be compiled into header units.
+- `/sourceDependencies:directives` is used in conjunction with `/translateInclude` to specify a JSON file that contains an allow list of header files that can be allowed to be compiled into header units.
 
 The `/sourceDependencies` form generate a JSON file that details the source-level dependencies consumed during compilation. The JSON file contains a list of the source dependencies, which include:
 
@@ -27,7 +27,7 @@ The `/sourceDependencies` form generate a JSON file that details the source-leve
 
 *filename*\
 The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.\
-In the `/sourceDependencies:directives` case, *filename* refers to a JSON file that lists which header files can be compiled into a header unit. See [C++ header_units.json reference](..\header-unit-json-reference.md) for an example.  
+In the `/sourceDependencies:directives` case, *filename* refers to a JSON file that lists which header files can be compiled into a header unit. See [C++ header-units.json reference](..\header-unit-json-reference.md) for an example.  
 
 *directory*\
 If the argument is a directory, the compiler generates source dependency files in the specified directory. The output file name is based on the full name of the input file, with an appended *`.json`* extension. For example, if the file provided to the compiler is *`main.cpp`*, the generated output filename is *`main.cpp.json`*.

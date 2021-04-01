@@ -83,5 +83,5 @@ cl /std:c++latest /IC:\ /exportHeader C:\util\util.h C:\app\app.h /FoC:\obj
 ## See also
 
 [`/headerUnit` (Use header unit IFC)](headerunit.md)\
-[`/module:reference` (Use named module IFC)](module-reference.md)\
+[`/reference` (Use named module IFC)](module-reference.md)\
 [`/translateInclude` (Translate include directives into import directives)](translateinclude.md)

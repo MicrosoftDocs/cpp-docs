@@ -68,6 +68,6 @@ cl ... /std:c++latest /translateInclude /headerUnit C:\utils\util.h=C:\util.h.if
 ## See also
 
 [`/exportHeader` (Create header units)](module-exportheader.md)\
-[`/headerName` (Create a header unit from the specified header)](headerunit.md)\
+[`/headerName` (Create a header unit from the specified header)](headername.md)\
 [`/reference` (Use named module IFC)](module-reference.md)\
 [`/translateInclude` (Translate include directives into import directives)](translateinclude.md)

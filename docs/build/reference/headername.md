@@ -1,5 +1,5 @@
 ---
-title: "/headerName (Use header unit IFC)"
+title: "/headerName (Build a header unit from the specified header)"
 description: "Use the /headerName compiler option to establish a mapping between a header file and the header unit to build."
 ms.date: 04/13/2021
 f1_keywords: ["/headerName"]
