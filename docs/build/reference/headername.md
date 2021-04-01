@@ -1,0 +1,57 @@
+---
+title: "/headerName (Use header unit IFC)"
+description: "Use the /headerName compiler option to establish a mapping between a header file and the header unit to build."
+ms.date: 04/13/2021
+f1_keywords: ["/headerName"]
+helpviewer_keywords: ["/headerName", "Use header unit IFC"]
+---
+# `/headerName` (Build a header unit from the specified header)
+
+Build the specified header file into a header unit (*`.ifc`* file).
+
+## Syntax
+
+> **`/headerName:quote`** *`header-filename`
+> **`/headerName:angle`** *`header-filename`
+
+### Arguments
+
+*`header-filename`*\
+The name of a header file that the compiler should compile into a header unit (an *`.ifc`* file).
+
+## Remarks
+
+The **`/headerName`** compiler option requires the [/std:c++latest](std-specify-language-standard-version.md) option. The **`/headerName`** compiler option is available starting in Visual Studio 2019 version 16.10 preview 2.
+
+**`/headerName:quote`** Lookup *`header-filename`* using the same rules as `#include "header-name"` and build it as a header unit (*`.ifc`* file).
+
+**`/headerName:angle`**  Lookup *`header-filename`* using the same rules as `#include <header-name>` and build it as a header unit (*`.ifc`* file).
+
+### Examples
+
+Given a project that references a header file it defines called `m.h`, the compiler option to compile it into a header unit might look like this:
+
+```CMD
+cl /std:c++latest /exportHeader /headerName:quote m.h /Fom.h.obj
+
+```
+
+### To set this compiler option in the Visual Studio development environment
+
+> [!NOTE]
+> This command line switch is typically set by the build system.
+
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+
+1. Set the **Configuration** drop-down to **All Configurations**.
+
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
+
+1. Modify the **Additional Options** property to add the *`/headerName`* options and arguments. Then, choose **OK** or **Apply** to save your changes.
+
+## See also
+
+[`/exportHeader` (Create header units)](module-exportheader.md)\
+[`/headerUnit` (Create header units)](headerunit.md)\
+[`/reference` (Use named module IFC)](module-reference.md)\
+[`/translateInclude` (Translate include directives into import directives)](translateinclude.md)

@@ -10,7 +10,7 @@ helpviewer_keywords: ["import", "header unit", "ifc", "stl"]
 
 This article is about building and importing header units using Visual Studio 2019. See [Walkthrough: Import STL libraries using header units](walkthrough-import-stl-header-units.md) to learn specifically how to import Standard Template Library headers as header units.
 
-Header units are the recommended alternative to [precompiled header files](creating-precompiled-header-files.md). They're easier to set up and easier to use than a [shared PCH](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio), while providing similar performance benefits. Unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
+Header units are the recommended alternative to [precompiled header files](creating-precompiled-header-files.md) (PCH). They're easier to set up and easier to use than a [shared PCH](https://devblogs.microsoft.com/cppblog/shared-pch-usage-sample-in-visual-studio), while providing similar performance benefits. Unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
 
 ## Prerequisites
 
@@ -18,21 +18,22 @@ Support for header units requires at least Visual Studio 2019 16.10.0 Preview 2.
 
 ## What is a header unit
 
-Header units are a binary representation of a header file, and end with an `.ifc` extension. This is also the format used to store named modules.
+Header units are a binary representation of a header file, and end with an *`.ifc`* extension. This is also the format used to store named modules.
 
-Header units provide a "module-like" experience for header files even though they lack the level of isolation provided by named modules. For example, everything in a header unit (including macro definitions) are visible, while those in a module aren't. Another difference is that header units aren't affected by macro definitions the way header files are. For example, you can't `#define` a symbol that causes the header unit to conditionally turn on and off functionality the way you can with a header file.
+One important difference between a header unit and a header file is that header units are not affected by macro definitions the way header files are. For example, you can't `#define` a symbol that causes the header unit to behave differently when you import it the way you can with a header file. Everything visible from a header file is also visible from a header unit.
 
-Header units are defined by the C++ standard, and can be used cross-platform.
+Before you can import a header unit, a header file must be compiled into a header unit. An advantage of header units (*`.ifc`* files) over a PCH is that it can be used in distributed builds. For example, as long as you are using the same compiler to compile the *`.ifc`*  and the program that imports it, and are targeting the same platform and architecture, a header unit produced on one machine can be used on another.
 
-Before you can import a header unit, a header file must be compiled into a header unit. Header units are independent of the machine they're built on. One machine could produce IFCs and another machine consume them. A PCH can't do that because the persisted data structures are largely tied to the memory layout of the machine where they're compiled.
-
-Ideally, you should use the same compiler flags to compile a header unit and the program that imports it. Flags, like `/EHsc`, `/MD[d]`, and others, have an impact on the semantics of the program that are captured in a header unit.
+Another advantage of header units over a PCH is that there is more flexibility when it comes to the compiler flags used to compile the header unit and the program that imports it. With a PCH, more compiler flags must be the same. But with header units, the primary flags that should be the same include:
+    - Exception handling switches such as `/EHsc`
+    - `/MD[d]` or `MT[d]`
+    - `/D` You can define additional macros when building the program that imports the header unit, but those used to build the header unit should also be present and defined the same way when building the program that imports the header unit.
 
 ## Ways to compile a header unit
 
 There are several ways to compile a file into a header unit:
 
--Automatically scan for header units: This approach is best suited to smaller projects that include many different header files. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1) for a demonstration of this approach. The reason it's better suited to smaller projects, or for those where build time isn't a crucial consideration, is because it takes extra time for the build system to scan all of the files to find what should be built into header units.
+-Automatically scan for header units: This approach is best suited to smaller projects that include many different header files. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1) for a demonstration of this approach. The reason it's better suited to smaller projects, or for those where build time isn't a crucial consideration, is because it takes extra time for the build system to scan all of the files to find what should be built into header units. This scanning can be done at the project level for all source files, or at the individual file level.
 
 -Build a shared header units project: This approach is best suited for larger projects, and for when you want more control over the organization of the imported header units. You create a static library (or libraries) that contain the header units that you want, and then reference it from the projects that then import the header units they need. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2) for a demonstration of this approach.
 

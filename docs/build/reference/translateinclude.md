@@ -1,13 +1,13 @@
 ---
 title: "/translateInclude (Translate include directives into import directives)"
-description: "Use the /translateInclude compiler option to translate #include directives for an importable header-name into an import header-name directive."
-ms.date: 09/13/2020
+description: "Use the /translateInclude compiler option to treat #include directives as import statements when an importable header unit is available."
+ms.date: 4/13/2021
 f1_keywords: ["/translateInclude"]
 helpviewer_keywords: ["/translateInclude", "Translate include directives into import directives"]
 ---
 # `/translateInclude` (Translate include directives into import directives)
 
-Tells the compiler to translate `#include` directives for an importable header-name into an `import header-name;` directive, rather than use textual inclusion.
+Instructs the compiler to treat `#include` as `import` for headers that have been prebuilt into a header unit (`.ifc`) file. 
 
 ## Syntax
 
@@ -15,7 +15,7 @@ Tells the compiler to translate `#include` directives for an importable header-n
 
 ## Remarks
 
-The **`/translateInclude`** compiler option requires you enable experimental modules support by use of the [`/experimental:module`](experimental-module.md) compiler option, along with the [/std:c++latest](std-specify-language-standard-version.md) option. This option is available starting in Visual Studio 2019 version 16.8.
+The **`/translateInclude`** compiler option requires you enable the [/std:c++latest](std-specify-language-standard-version.md) option. `/translateInclude` is available starting in Visual Studio 2019 version 16.10 Preview 2.
 
 The **`/translateInclude`** option effectively makes the following transformation, where the example `<vector>` is an importable header unit:
 
@@ -26,10 +26,10 @@ The **`/translateInclude`** option effectively makes the following transformatio
 The compiler replaces this directive with:
 
 ```cpp
-import <vector> ;
+import <vector>;
 ```
 
-In MSVC an importable header unit is one named by a **`/headerUnit`** reference. For more information, see [`/headerUnit` (Use header unit IFC)](headerunit.md).
+In MSVC, available header units are made available by the **`/headerUnit`** option which maps a header file to its importable header unit. For more information, see [`/headerUnit` (Use header unit IFC)](headerunit.md).
 
 ### Examples
 
@@ -49,10 +49,10 @@ And a source *`.cpp`* file that includes the headers,
 int main() { }
 ```
 
-The **`/translateInclude`** option allows the compiler to import the header units instead of compile the headers again. Here's an example command line that translates the include directives for *`util.h`* and *`app.h`* into imports of the header units instead:
+The **`/translateInclude`** option allows the compiler to import the header units instead of compiling the headers again. Here's an example command line that translates the include directives for *`util.h`* and *`app.h`* into imports of the header units instead:
 
 ```CMD
-cl /IC:\ /experimental:module /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit C:\app\app.h=C:\app.h.ifc
+cl /IC:\ /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit C:\app\app.h=C:\app.h.ifc
 ```
 
 ### To set this compiler option in the Visual Studio development environment
@@ -67,7 +67,6 @@ cl /IC:\ /experimental:module /translateInclude /headerUnit C:\utils\util.h=C:\u
 
 ## See also
 
-[`/experimental:module` (Enable module support)](experimental-module.md)\
 [`/headerUnit` (Use header unit IFC)](headerunit.md).\
-[`/module:exportHeader` (Create header units)](module-exportheader.md)\
-[`/module:reference` (Use named module IFC)](module-reference.md)
+[`/exportHeader` (Create header units)](module-exportheader.md)\
+[`/reference` (Use named module IFC)](module-reference.md)

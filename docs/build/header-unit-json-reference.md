@@ -8,15 +8,11 @@ helpviewer_keywords: ["header_units.json", "header unit"]
 
 # C++ header_units.json reference
 
-The `header-units.json` file lists which header files can be compiled into header units.
+The `header-units.json` file lists which header files in the directory it is located in can be automatically built by the build system as header units, and then be treated as `import` instead of `#include`.
 
-Sometimes a header file can't be compiled into a header unit. For example, `<cassert>` shouldn't be compiled as a header unit because it depends on a `#define` at compile time to determine its behavior. Using `#define` can't be used to change the behavior of a header unit, so `<cassert>` shouldn't be compiled into a header unit because it wouldn't reflect this behavior. 
+Sometimes a header file can't be compiled into a header unit. For example, `<cassert>` shouldn't be compiled as a header unit because it depends on a `#define` at compile time to determine its behavior. Using `#define` can't be used to change the behavior of a header unit, so `<cassert>` shouldn't be compiled into a header unit because it wouldn't provide the expected behavior.
 
-When the project build setting `Translate Includes to Imports (/translateInclude)` is on, the build system looks for `#include` files that can be compiled as header units. There's an allowlist for the Standard Template Library headers that the build system consults when `/TranslateInclude ` is specified to determine which Standard Template Library (STL) headers can be compiled into header units. It's consulted when the build system attempts to create a header unit for an STL header file, and when dependencies are resolved for an STL header file. If the STL header file isn't on the list, it's treated as a normal `#include` instead of importing it as a header unit.
-
-The switch [`/sourceDependencies:directives`](./reference/sourcedependencies.md) specifies the JSON file, which lists which headers can be built as header units and which can't be. For example, you can see the C++ Standard Template Library (STL) `header-units.json` file located at the root of the include directory where your STL header files are installed. For example, `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.20.00001\include`
-
-Set [`/translateInclude`](./reference/translateinclude.md) when you use the `/sourceDependencies:directives` option because the build system will then produce header units not only for the specified headers, but also for all headers that are included by those headers. This ensures minimal symbol duplication in the header units and best build throughput. For information about using this setting in Microsoft Visual Studio, see [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#set-project-properties).
+When the project build setting `Translate Includes to Imports (/translateInclude)` is on, the build system looks for `#include` files that can be compiled as header units. For example, there's an allowlist for the Standard Template Library headers that the build system consults when `/TranslateInclude ` is specified to determine which Standard Template Library (STL) headers can be compiled into header units. It's consulted when the build system attempts to create a header unit for an STL header file, and when dependencies are resolved for an STL header file. If the STL header file isn't on the list, it's treated as a normal `#include` instead of importing it as a header unit.
 
 ## Schema
 

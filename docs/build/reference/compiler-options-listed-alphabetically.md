@@ -34,6 +34,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/execution-charset`](execution-charset-set-execution-character-set.md) | Set the execution character set. |
 | [`/experimental:module`](experimental-module.md) | Enables experimental module support. |
 | [`/experimental:preprocessor`](experimental-preprocessor.md) | Deprecated. Enables experimental conforming preprocessor support. Use [`/Zc:preprocessor`](zc-preprocessor.md) |
+| [`/exportHeader`](module-exportheader.md) Create the header units (*`.ifc`*) files specified by the input arguments. |
 | [`/F`](f-set-stack-size.md) | Sets stack size. |
 | [`/favor`](favor-optimize-for-architecture-specifics.md) | Produces code optimized for a specific x64 architecture. Or, for the specific micro-architectures in both the AMD64 and EM64T architectures. |
 | [`/FA`](fa-fa-listing-file.md) | Creates a listing file. |
@@ -74,6 +75,8 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/GZ`](gz-enable-stack-frame-run-time-error-checking.md) | Deprecated. Same as [`/RTC1`](rtc-run-time-error-checks.md). |
 | [`/Gz`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__stdcall`** calling convention (x86 only). |
 | [`/H`](h-restrict-length-of-external-names.md) | Deprecated. Restricts the length of external (public) names. |
+| [`/headerName`](headername.md) | Build a header unit from the specified header. |
+| [`/headerUnit`](headerunit.md) | Tells the compiler where to find the header unit file (`.ifc`) for the specified header. |
 | [`/HELP`](help-compiler-command-line-help.md) | Lists the compiler options. |
 | [`/homeparams`](homeparams-copy-register-parameters-to-stack.md) | Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile). |
 | [`/hotpatch`](hotpatch-create-hotpatchable-image.md) | Creates a hot-patchable image. |
@@ -114,6 +117,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Qspectre-load`](qspectre-load.md) | Specifies compiler generation of serializing instructions to mitigate Spectre security vulnerabilities based on load instructions. |
 | [`/Qspectre-load-cf`](qspectre-load-cf.md) | Specifies compiler generation of serializing instructions to mitigate Spectre security vulnerabilities based on control flow instructions that load memory. |
 | [`/Qvec-report` (Auto-vectorizer reporting level)](qvec-report-auto-vectorizer-reporting-level.md) | Enables reporting levels for automatic vectorization. |
+| [`/reference`](module-reference.md.md) | Use named module IFC. |
 | [`/RTC`](rtc-run-time-error-checks.md) | Enables run-time error checking. |
 | [`/sdl`](sdl-enable-additional-security-checks.md) | Enables additional security features and warnings. |
 | [`/showIncludes`](showincludes-list-include-files.md) | Displays a list of include files during compilation. |
@@ -124,6 +128,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/TC`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies all source files are C. |
 | [`/Tp`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies a C++ source file. |
 | [`/TP`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies all source files are C++. |
+| [`/translateInclude`](translateinclude.md) | Treat `#include` as `import`. |
 | [`/U`](u-u-undefine-symbols.md) | Removes a predefined macro. |
 | [`/u`](u-u-undefine-symbols.md) | Removes all predefined macros. |
 | [`/utf-8`](utf-8-set-source-and-executable-character-sets-to-utf-8.md) | Set source and execution character sets to UTF-8. |

@@ -15,7 +15,9 @@ The [second way](#approach2) demonstrates how to build a static library containi
 
 Importing a STL header as a header unit is a simpler alternative to [precompiled header files](creating-precompiled-header-files.md). Header units are easier to set up and easier to use than a shared precompiled header file (PCH), while providing similar performance benefits. Unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
 
-Before you can import an STL header, it must be compiled into a header unit. Header units are a binary representation of a header file, and end with an `.ifc` extension. Header units provide a "module-like" experience for header files even though they lack the level of isolation provided by named modules. For example, macros in a header unit are visible, while those in a module aren't. Another difference is that header units are not affected by macro definitions the way header files are. For example, you can't `#define` a symbol that causes the header unit to conditionally compile the way you can with a header file.
+Before you can import an STL header, it must be compiled into a header unit. Header units are a binary representation of a header file, and end with an `.ifc` extension.
+
+One important difference between a header unit and a header file is that header units are not affected by macro definitions the way header files are. For example, you can't `#define` a symbol that causes the header unit to behave differently when you import it the way you can with a header file. Everything visible from a header file is also visible from a header unit.
 
 ## Prerequisites
 
@@ -79,7 +81,7 @@ Follow these steps to set the options that cause the build system to scan for he
 ![Scan module dependencies property setting](media/vs2019-scan-module-dependencies.png)
 1. Ensure that the **Configuration** dropdown is set to **All Configurations**
 1. In the left-hand pane of the project property page, select **C/C++** > **General**
-1. Set **Scan Sources for Module Dependencies** to **Yes**
+1. Set **Scan Sources for Module Dependencies** to **Yes**  Because we are setting the project property, all sources in this project will be scanned. This could be set at the file level, but here we scan the entire project.
 1. Set **Translate Includes to Imports** to **Yes**
 
 Change the C++ language standard for the compiler. The latest preview setting is necessary to use header units:
