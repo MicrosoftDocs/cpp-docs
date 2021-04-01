@@ -23,6 +23,6 @@ Error C1090 is a catch-all for uncommon compiler PDB file errors that aren't rep
 
 - Try building by using the 64-bit hosted toolset.
 
-For more troubleshooting or workaround information, search for this error on [Developer Community](https://aka.ms/vsfeedback/browsecpp) or [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-c++).
+For more troubleshooting or workaround information, search for this error on [Developer Community](https://aka.ms/vsfeedback/browsecpp) or [Stack Overflow](https://stackoverflow.com/search?q=C1090).
 
-You can also report the issue on Developer Community. For more information, see [How to report a problem with the Microsoft C++ toolset](overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
+You can also report the issue on Developer Community. For more information, see [How to report a problem with the Microsoft C++ toolset](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
