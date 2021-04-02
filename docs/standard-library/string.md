@@ -69,7 +69,7 @@ The C++ language and the C++ Standard Library support two types of strings:
 
 |Function|Description|
 |-|-|
-|[`getline` Template](../standard-library/string-functions.md#getline)|Extract `string` from the input stream line by line.|
+|[`getline` Template](../standard-library/string-functions.md#getline)|Extract a `string`, line by line, from the input stream.|
 
 ### Classes
 
