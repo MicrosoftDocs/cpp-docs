@@ -68,7 +68,7 @@ If `align()` is unsuccessful, this parameter isn't modified.
 
 ### Return Value
 
-A null pointer if the requested aligned buffer wouldn't fit into the available space; otherwise, the new value of *`ptr`*.
+A `NULL` pointer if the requested aligned buffer wouldn't fit into the available space; otherwise, the new value of *`ptr`*.
 
 ### Remarks
 
@@ -99,7 +99,7 @@ while (std::align(alignment, sizeof(MyObj), ptr, space)) {
 
 ## <a name="allocate_shared"></a> `allocate_shared`
 
-Creates a [shared_ptr](shared-ptr-class.md) to objects that are allocated and constructed for a given type by using a specified allocator. Returns the `shared_ptr`.
+Creates a [`shared_ptr`](shared-ptr-class.md) to objects that are allocated and constructed for a given type by using a specified allocator. Returns the `shared_ptr`.
 
 ```cpp
 template <class T, class Allocator, class... Args>
@@ -301,7 +301,7 @@ Size of block that starts at *`ptr`* that contains no traceable pointers.
 
 ### Remarks
 
-The function informs any garbage collector that the addresses in the range `[ ptr, ptr + size)` no longer contain traceable pointers. (Any pointers to allocated storage must not be dereferenced unless made reachable.)
+The function informs any garbage collector that the addresses in the range `[ptr, ptr + size)` no longer contain traceable pointers. (Any pointers to allocated storage must not be dereferenced unless made reachable.)
 
 ## <a name="declare_reachable"></a> `declare_reachable`
 
@@ -319,7 +319,7 @@ A pointer to a reachable, allocated, valid storage area.
 
 ### Remarks
 
-If *`ptr`* is not null, the function informs any garbage collector that *ptr* is now reachable, that is, it points to valid allocated storage.
+If *`ptr`* is not null, the function informs any garbage collector that *`ptr`* is now reachable, that is, it points to valid allocated storage.
 
 ## <a name="default_delete"></a> `default_delete`
 

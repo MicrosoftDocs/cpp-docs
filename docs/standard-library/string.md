@@ -57,26 +57,26 @@ The C++ language and the C++ Standard Library support two types of strings:
 |[`swap`](../standard-library/string-functions.md#swap)|Exchanges the arrays of characters of two strings.|
 |[`stod`](../standard-library/string-functions.md#stod)|Converts a character sequence to a **`double`**.|
 |[`stof`](../standard-library/string-functions.md#stof)|Converts a character sequence to a **`float`**.|
-|[`stoi`](../standard-library/string-functions.md#stoi)|Converts a character sequence to an integer.|
+|[`stoi`](../standard-library/string-functions.md#stoi)|Converts a character sequence to an **`int`**.|
 |[`stold`](../standard-library/string-functions.md#stold)|Converts a character sequence to a **`long double`**.|
 |[`stoll`](../standard-library/string-functions.md#stoll)|Converts a character sequence to a **`long long`**.|
 |[`stoul`](../standard-library/string-functions.md#stoul)|Converts a character sequence to an **`unsigned long`**.|
 |[`stoull`](../standard-library/string-functions.md#stoull)|Converts a character sequence to an **`unsigned long long`**.|
 |[`to_string`](../standard-library/string-functions.md#to_string)|Converts a value to a `string`.|
-|[`to_wstring`](../standard-library/string-functions.md#to_wstring)|Converts a value to a wide `string`.|
+|[`to_wstring`](../standard-library/string-functions.md#to_wstring)|Converts a value to a wide string.|
 
 ### Functions
 
 |Function|Description|
 |-|-|
-|[`getline` Template](../standard-library/string-functions.md#getline)|Extract strings from the input stream line by line.|
+|[`getline` Template](../standard-library/string-functions.md#getline)|Extract `string` from the input stream line by line.|
 
 ### Classes
 
 |Class|Description|
 |-|-|
 |[`basic_string` Class](../standard-library/basic-string-class.md)|A class template that describes objects that can store a sequence of arbitrary character-like objects.|
-|[`char_traits` Struct](../standard-library/char-traits-struct.md)|A class template that describes attributes associated with a character of type CharType|
+|[`char_traits` Struct](../standard-library/char-traits-struct.md)|A class template that describes attributes associated with a character of type `CharType`|
 
 ### Specializations
 
