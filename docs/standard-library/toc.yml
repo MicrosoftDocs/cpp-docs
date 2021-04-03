@@ -844,6 +844,15 @@
           href: ../standard-library/uniform-real-distribution-class.md
         - name: weibull_distribution class
           href: ../standard-library/weibull-distribution-class.md
+    - name: <ranges>
+      expanded: false
+      items: 
+        - name: <ranges>
+          href: ../standard-library/ranges.md
+        - name: <ranges> functions
+          href: ../standard-library/ranges-functions.md
+        - name: ranges class
+          href: ../standard-library/ranges-class.md
     - name: <ratio>
       href: ../standard-library/ratio.md
     - name: <regex>
