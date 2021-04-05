@@ -6,24 +6,24 @@ helpviewer_keywords: ["CMake in Visual C++"]
 ---
 # `CMakePresets.json` and `CMakeUserPresets.json` Microsoft vendor maps
 
-CMake supports two files, `CMakePresets.json` and `CMakeUserPresets.json`, that allow users to specify common configure, build, and test options and share them with others. 
+`CMake` supports two files, `CMakePresets.json` and `CMakeUserPresets.json`, that allow users to specify common configure, build, and test options and share them with others. 
 
-`CMakePresets.json` and `CMakeUserPresets.json` can be used to drive CMake in Visual Studio, in Visual Studio Code, in a Continuous Integration (CI) pipeline, and from the command line.
+`CMakePresets.json` and `CMakeUserPresets.json` can be used to drive `CMake` in Visual Studio, in Visual Studio Code, in a Continuous Integration (CI) pipeline, and from the command line.
 
 `CMakePresets.json` is intended to save project-wide builds, and `CMakeUserPresets.json` is intended for developers to save their own local builds. They schema for both files is identical.
 
-`CMakePresets.json` and `CMakeUserPresets.json` are how Microsoft provides a "vendor map" to add VS/VS Code specific options. Here we document the Microsoft vendor maps and macro expansion. To see documentation for the rest of the schema, and about Configure Presets, Build Presets, and Test Presets, see the official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html).
+`CMakePresets.json` and `CMakeUserPresets.json` are how Microsoft provides a "vendor map" to add VS/VS code-specific options. Here we document the Microsoft vendor maps and macro expansion. To see documentation for the rest of the schema, and about Configure Presets, Build Presets, and Test Presets, see the official [`CMake` documentation](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html).
 
 For more information about how to use `CMakePresets.json` in Visual Studio, see [Configure and build with `CMake` presets in Visual Studio](cmake-presets-vs.md)\
-For more information about how to use `CMakePresets.json` in Visual Studio Code, see [Configure and build with CMake Presets in VS Code](https://github.com/microsoft/vscode-cmake-tools/blob/develop/docs/cmake-presets.md)
+For more information about how to use `CMakePresets.json` in Visual Studio Code, see [Configure and build with `CMake` Presets in VS Code](https://github.com/microsoft/vscode-cmake-tools/blob/develop/docs/cmake-presets.md)
 
 ## Visual Studio Settings vendor map
 
-One vendor map with the vendor URI `microsoft.com/VisualStudioSettings/CMake/<version>` is allowed per Configure Preset and contains options specific to CMake integration in Visual Studio and Visual Studio Code. All options in the vendor map apply to Visual Studio. Options that apply to both Visual Studio and Visual Studio Code have been explicitly marked.
+One vendor map with the vendor URI `microsoft.com/VisualStudioSettings/CMake/<version>` is allowed per Configure Preset and contains options specific to `CMake` integration in Visual Studio and Visual Studio Code. All options in the vendor map apply to Visual Studio. Options that apply to both Visual Studio and Visual Studio Code have been explicitly marked.
 
 All settings in the Visual Studio Settings vendor map are optional and inherited from Configure Presets specified by the `inherits` key. Only options that have been modified are written to the file. The Visual Studio Settings vendor map is supported by both `CMakePresets.json` and `CMakeUserPresets.json`.
 
-None of the options in the Visual Studio Settings vendor map impact the construction of the CMake or CTest command line. This ensures that the same `CMakePresets.json` file can be used to drive CMake with Visual Studio, Visual Studio Code, and from the command line. The exceptions to this are the cacheRoot and cmakeGenerateCommand options. These options are specific to the [Open Existing Cache](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/) scenario in Visual Studio and cannot be reproduced from the command line.
+None of the options in the Visual Studio Settings vendor map impact the construction of the `CMake` or `CTest` command line. This ensures that the same `CMakePresets.json` file can be used to drive `CMake` with Visual Studio, Visual Studio Code, and from the command line. The exceptions to this are the `cacheRoot` and `cmakeGenerateCommand` options. These options are specific to the [Open Existing Cache](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/) scenario in Visual Studio and cannot be reproduced from the command line.
 
 | Setting | Description |
 |--|--|
@@ -36,16 +36,16 @@ None of the options in the Visual Studio Settings vendor map impact the construc
 | `codeAnalysisExternalRuleset` | Specifies the ruleset to use when running Microsoft code analysis on external header in Visual Studio. This can be a path to a ruleset file, or the name of a ruleset file installed with Visual Studio. This option supports macro expansion. |
 | `enableClangTidyCodeAnalysis` | A bool that enables clang-tidy code analysis in Visual Studio when building with `clang-cl`. Defaults to `false`. |
 | `clangTidyChecks` | A comma-separated list of warnings passed to clang-tidy when running clang-tidy code analysis in Visual Studio. Wildcards are allowed, and the `–` prefix will remove checks. |
-| `cacheRoot` | Specifies the path to a CMake cache. This directory should contain an existing `CMakeCache.txt` file. This key is only supported by the Open Existing Cache scenario in Visual Studio. This option supports macro expansion. |
-| `cmakeGenerateCommand` | A command-line tool (specified as a command-line program + arguments, for example, “gencache.bat debug”) to generate the CMake cache. This command will run from the shell in the preset’s specified environment when CMake configure is invoked. This key is only supported by the [Open Existing Cache](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/) scenario in Visual Studio. This option supports macro expansion |
+| `cacheRoot` | Specifies the path to a `CMake` cache. This directory should contain an existing `CMakeCache.txt` file. This key is only supported by the Open Existing Cache scenario in Visual Studio. This option supports macro expansion. |
+| `cmakeGenerateCommand` | A command-line tool (specified as a command-line program + arguments, for example, “gencache.bat debug”) to generate the `CMake` cache. This command will run from the shell in the preset’s specified environment when `CMake` configure is invoked. This key is only supported by the [Open Existing Cache](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/) scenario in Visual Studio. This option supports macro expansion |
 
 ## Visual Studio Remote Settings vendor map
 
-One vendor map with the vendor URI` microsoft.com/VisualStudioRemoteSettings/CMake/<version>` is allowed per Configure Preset and contains options specific to remote development in Visual Studio. Remote development means you're invoking CMake on a remote SSH connection or WSL. None of the options in the Visual Studio Remote Settings vendor map apply to Visual Studio Code.
+One vendor map with the vendor URI` microsoft.com/VisualStudioRemoteSettings/CMake/<version>` is allowed per Configure Preset and contains options specific to remote development in Visual Studio. Remote development means you're invoking `CMake` on a remote SSH connection or WSL. None of the options in the Visual Studio Remote Settings vendor map apply to Visual Studio Code.
 
 All settings in the Visual Studio Remote Settings vendor map are optional and inherited from Configure Presets specified by the `inherits` key. Only options that have been modified are written to the file. The Visual Studio Remote Settings vendor map is supported by both `CMakePresets.json` and `CMakeUserPresets.json`.
 
-None of the options in the Visual Studio Settings vendor map impact the construction of the CMake or CTest command line. This ensures that the same `CMakePresets.json` file can be used to drive CMake with Visual Studio, Visual Studio Code, and from the command line.
+None of the options in the Visual Studio Settings vendor map impact the construction of the `CMake` or `CTest` command line. This ensures that the same `CMakePresets.json` file can be used to drive `CMake` with Visual Studio, Visual Studio Code, and from the command line.
 
 Many of the options in the Visual Studio Remote Settings vendor map are ignored when targeting WSL1. This is because the WSL1 toolset executes all commands locally and relies on Windows drives mounted under the /mnt folder to access local source files from WSL1. No source file copy is required. Options that are ignored when targeting WSL1 have been explicitly marked.
 
@@ -67,7 +67,7 @@ Options for a `remotePrebuildEvent` and `remotePostbuildEvent` have been depreca
 
  Encode pre-build, pre-link, and post-build events in your CMakeLists.txt using [add_custom_command](https://cmake.org/cmake/help/latest/command/add_custom_command.html#build-events). This will ensure the same behavior when building with Visual Studio and from the command line.
 
-Alternatively, if you need behavior that is specific to Visual Studio, you can add a custom remote task in` tasks.vs.json`. To get started, right-click on your root `CMakeLists.txt` in the **Solution Explorer** from**Folder View** and select **Configure Tasks**.  You can then [add a new remote task](https://docs.microsoft.com/en-us/cpp/build/tasks-vs-json-schema-reference-cpp#remote-properties) to your `tasks.vs.json` file.
+If you need behavior that is specific to Visual Studio, you can add a custom remote task in` tasks.vs.json`. To get started, right-click on your root `CMakeLists.txt` in the **Solution Explorer** from**Folder View** and select **Configure Tasks**.  You can then [add a new remote task](https://docs.microsoft.com/cpp/build/tasks-vs-json-schema-reference-cpp#remote-properties) to your `tasks.vs.json` file.
 
 The following remote task creates a directory called test on the remote Linux system:
 
@@ -87,9 +87,9 @@ The value of `remoteMachineName` must match the Host Name of a connection in the
 
 ## Microsoft vendor macros
 
-CMakePresets.json and CMakeUserPresets.json allow “vendor maps” for vendors (like Microsoft) to add VS/VS Code specific options. Our vendor maps support all the macros defined by CMake. See [cmake-presets Macro Expansion](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#macro-expansion) for more information. All macros and environment variables are expanded before being passed to cmake.exe.
+CMakePresets.json and CMakeUserPresets.json allow “vendor maps” for vendors (like Microsoft) to add VS/VS code-specific options. Our vendor maps support all the macros defined by `CMake`. See [cmake-presets Macro Expansion](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#macro-expansion) for more information. All macros and environment variables are expanded before being passed to `cmake.exe`.
 
-Visual Studio supports vendor macros with the prefix ms. Microsoft vendor macros can only be used in Microsoft vendor maps. CMake can't use presets that have vendor macros outside of a vendor map.
+Visual Studio supports vendor macros with the prefix ms. Microsoft vendor macros can only be used in Microsoft vendor maps. `CMake` can't use presets that have vendor macros outside of a vendor map.
 
 |Macro  |Description  |
 |---------|---------|
@@ -99,7 +99,7 @@ Visual Studio supports vendor macros with the prefix ms. Microsoft vendor macros
 
 |Macro  |Description  |
 |---------|---------|
-| `$env{<variable-name>}`<br>`$penv{<variable-name>}`| Reference environment variables using this syntax supported by CMake. |
+| `$env{<variable-name>}`<br>`$penv{<variable-name>}`| Reference environment variables using this syntax supported by `CMake`. |
 
 ## Deprecated macros
 
