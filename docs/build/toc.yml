@@ -62,7 +62,7 @@
     - name: Configure a Linux CMake project
       href: ../build/../linux/cmake-linux-project.md
     - name: Configure and build with CMake presets
-      href: ../build/cmake-presets.md
+      href: ../build/cmake-presets-vs.md
     - name: CMakePresets.json reference
       href: ../build/cmake-presets-json-reference.md
     - name: Customize CMake build settings
