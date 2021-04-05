@@ -14,15 +14,16 @@ CMake supports two files, `CMakePresets.json` and `CMakeUserPresets.json`, that 
 
 `CMakePresets.json` and `CMakeUserPresets.json` are how Microsoft provides a "vendor map" to add VS/VS Code specific options. Here we document the Microsoft vendor maps and macro expansion. To see documentation for the rest of the schema, and about Configure Presets, Build Presets, and Test Presets, see the official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html).
 
-For more information on how to use `CMakePresets.json` in Visual Studio and Visual Studio Code, see <JTW`CMakePresets.json` in Visual Studio> and <JTW `CMakePresets.json` in Visual Studio Code>.
+For more information about how to use `CMakePresets.json` in Visual Studio, see [Configure and build with `CMake` presets in Visual Studio](cmake-presets-vs.md)\
+For more information about how to use `CMakePresets.json` in Visual Studio Code, see [Configure and build with CMake Presets in VS Code](https://github.com/microsoft/vscode-cmake-tools/blob/develop/docs/cmake-presets.md)
 
 ## Visual Studio Settings vendor map
 
-One vendor map with the vendor URI` microsoft.com/VisualStudioSettings/CMake/<version>` is allowed per Configure Preset and contains options specific to CMake integration in Visual Studio and Visual Studio Code. All options in the vendor map apply to Visual Studio. Options that apply to both Visual Studio and Visual Studio Code have been explicitly marked.
+One vendor map with the vendor URI `microsoft.com/VisualStudioSettings/CMake/<version>` is allowed per Configure Preset and contains options specific to CMake integration in Visual Studio and Visual Studio Code. All options in the vendor map apply to Visual Studio. Options that apply to both Visual Studio and Visual Studio Code have been explicitly marked.
 
 All settings in the Visual Studio Settings vendor map are optional and inherited from Configure Presets specified by the `inherits` key. Only options that have been modified are written to the file. The Visual Studio Settings vendor map is supported by both `CMakePresets.json` and `CMakeUserPresets.json`.
 
-None of the options in the Visual Studio Settings vendor map impact the construction of the CMake or CTest command line. This ensures that the same `CMakePresets.json` file can be used to drive CMake with Visual Studio, Visual Studio Code, and from the command line. The exceptions to this are the cacheRoot and cmakeGenerateCommand options. These options are specific to the[ Open Existing Cache](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/) scenario in Visual Studio and cannot be reproduced from the command line.
+None of the options in the Visual Studio Settings vendor map impact the construction of the CMake or CTest command line. This ensures that the same `CMakePresets.json` file can be used to drive CMake with Visual Studio, Visual Studio Code, and from the command line. The exceptions to this are the cacheRoot and cmakeGenerateCommand options. These options are specific to the [Open Existing Cache](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/) scenario in Visual Studio and cannot be reproduced from the command line.
 
 | Setting | Description |
 |--|--|

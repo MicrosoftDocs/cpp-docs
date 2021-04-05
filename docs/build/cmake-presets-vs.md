@@ -5,7 +5,7 @@ ms.topic: reference
 ms.date: "04/13/2020"
 ---
 
-# Configure and build with `CMake` presets
+# Configure and build with `CMake` presets in Visual Studio
 
 `CMake` supports two files,  and `CMakeUserPresets.json`, that allow users to specify common configure, build, and test options and share them with others.
 
@@ -118,7 +118,7 @@ In the example above, **192.168.0.5** is a remote Linux system that was added to
 
 The dropdown in the middle indicates the active **Configure Preset**. This is the `configurePreset` that will be used when `CMake` is invoked to generate the project build system. This dropdown lists the union of non-hidden Configure Presets defined in `CMakePresets.json` and `CMakeUserPresets.json`.
 
-Visual Studio will use the value of `hostOS` in the Microsoft Visual Studio Settings vendor map to hide Configure Presets that do not apply to the active Target System. See the <JTW Visual Studio Settings vendor map> for more information.
+Visual Studio will use the value of `hostOS` in the Microsoft Visual Studio Settings vendor map to hide Configure Presets that do not apply to the active Target System. See the entry for `hostOS` in the table under [Visual Studio Settings vendor map](cmake-presets-json-reference.md#visual-studio-settings-vendor-map) for more information.
 
 Select **Manage Configurations…** to open the `CMakePresets.json` file located at the root of the project. `CMakePresets.json` is created if it does not already exist.
 
@@ -267,7 +267,7 @@ You can reference environment variables using the `$env{<variable-name>}` and `$
 
 ## Configure IntelliSense for a cross-compiler
 
-By default, Visual Studio will use the IntelliSense mode that matches your specified toolset and target architecture. If you are cross-compiling, then you may need to manually specify the correct IntelliSense mode with the `intelliSenseMode` option in the Visual Studio Settings vendor map. See <JTW IntelliSense Mode> for more information.
+By default, Visual Studio will use the IntelliSense mode that matches your specified toolset and target architecture. If you are cross-compiling, then you may need to manually specify the correct IntelliSense mode with the `intelliSenseMode` option in the Visual Studio Settings vendor map. See the entry for `intelliSenseMode` in the table under [Visual Studio Settings vendor map](cmake-presets-json-reference.md#visual-studio-settings-vendor-map) for more information.
 
 ## Configure and build on a remote system or the Windows Subsystem for Linux (WSL)
 
@@ -275,7 +275,7 @@ With `CMakePresets.json` support in Visual Studio you can easily configure and b
 
 ## `${sourceDir}` behavior in remote copy scenarios
 
-In local scenarios (including WSL1), `${sourceDir}` evaluates to the path to the project source directory that is open in Visual Studio. In remote copy scenarios, `${sourceDir}` evaluates to the path to the project source directory on the target system and not the project source directory on the local machine. The project source directory on the target system is determined by the value of `sourceDir` in the Visual Studio Remote Settings vendor map (defaults to `$env{HOME}/.vs/$ms{projectDirName}`). See <JTW sourceDir> for more information.
+In local scenarios (including WSL1), `${sourceDir}` evaluates to the path to the project source directory that is open in Visual Studio. In remote copy scenarios, `${sourceDir}` evaluates to the path to the project source directory on the target system and not the project source directory on the local machine. The project source directory on the target system is determined by the value of `sourceDir` in the Visual Studio Remote Settings vendor map (defaults to `$env{HOME}/.vs/$ms{projectDirName}`). See the entry for `sourceDir` in the table under [Visual Studio Settings vendor map](cmake-presets-json-reference.md#visual-studio-settings-vendor-map) for more information.
 
 ## Local folder for remote output
 
