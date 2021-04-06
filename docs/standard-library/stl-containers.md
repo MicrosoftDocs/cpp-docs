@@ -17,25 +17,25 @@ Containers can be divided into three categories: sequence containers, associativ
 
 Sequence containers maintain the ordering of inserted elements that you specify.
 
-A `vector` container behaves like an array, but can automatically grow as required. It is random access and contiguously stored, and length is highly flexible. For these reasons and more, `vector` is the preferred sequence container for most applications. When in doubt as to what kind of sequence container to use, start by using a vector! For more information, see [vector Class](../standard-library/vector-class.md).
+A `vector` container behaves like an array, but can automatically grow as required. It is random access and contiguously stored, and length is highly flexible. For these reasons and more, `vector` is the preferred sequence container for most applications. When in doubt as to what kind of sequence container to use, start by using a vector! For more information, see [`vector` Class](../standard-library/vector-class.md).
 
-An `array` container has some of the strengths of `vector`, but the length isn't as flexible. For more information, see [array Class](../standard-library/array-class-stl.md).
+An `array` container has some of the strengths of `vector`, but the length isn't as flexible. For more information, see [`array` Class](../standard-library/array-class-stl.md).
 
-A `deque` (double-ended queue) container allows for fast insertions and deletions at the beginning and end of the container. It shares the random-access and flexible-length advantages of `vector`, but isn't contiguous. For more information, see [deque Class](../standard-library/deque-class.md).
+A `deque` (double-ended queue) container allows for fast insertions and deletions at the beginning and end of the container. It shares the random-access and flexible-length advantages of `vector`, but isn't contiguous. For more information, see [`deque` Class](../standard-library/deque-class.md).
 
-A `list` container is a doubly linked list that enables bidirectional access, fast insertions, and fast deletions anywhere in the container, but you can't randomly access an element in the container. For more information, see [list Class](../standard-library/list-class.md).
+A `list` container is a doubly linked list that enables bidirectional access, fast insertions, and fast deletions anywhere in the container, but you can't randomly access an element in the container. For more information, see [`list` Class](../standard-library/list-class.md).
 
-A `forward_list` container is a singly linked list—the forward-access version of `list`. For more information, see [forward_list Class](../standard-library/forward-list-class.md).
+A `forward_list` container is a singly linked list—the forward-access version of `list`. For more information, see [`forward_list` Class](../standard-library/forward-list-class.md).
 
 ## Associative Containers
 
 In associative containers, elements are inserted in a pre-defined order—for example, as sorted ascending. Unordered associative containers are also available. The associative containers can be grouped into two subsets: maps and sets.
 
-A `map`, sometimes referred to as a dictionary, consists of a key/value pair. The key is used to order the sequence, and the value is associated with that key. For example, a `map` might contain keys that represent every unique word in a text and corresponding values that represent the number of times that each word appears in the text. The unordered version of `map` is `unordered_map`. For more information, see [map Class](../standard-library/map-class.md) and [unordered_map Class](../standard-library/unordered-map-class.md).
+A `map`, sometimes referred to as a dictionary, consists of a key/value pair. The key is used to order the sequence, and the value is associated with that key. For example, a `map` might contain keys that represent every unique word in a text and corresponding values that represent the number of times that each word appears in the text. The unordered version of `map` is `unordered_map`. For more information, see [`map` Class](../standard-library/map-class.md) and [`unordered_map` Class](../standard-library/unordered-map-class.md).
 
-A `set` is just an ascending container of unique elements—the value is also the key. The unordered version of `set` is `unordered_set`. For more information, see [set Class](../standard-library/set-class.md) and [unordered_set Class](../standard-library/unordered-set-class.md).
+A `set` is just an ascending container of unique elements—the value is also the key. The unordered version of `set` is `unordered_set`. For more information, see [`set` Class](../standard-library/set-class.md) and [`unordered_set` Class](../standard-library/unordered-set-class.md).
 
-Both `map` and `set` only allow one instance of a key or element to be inserted into the container. If multiple instances of elements are required, use `multimap` or `multiset`. The unordered versions are `unordered_multimap` and `unordered_multiset`. For more information, see [multimap Class](../standard-library/multimap-class.md), [unordered_multimap Class](../standard-library/unordered-multimap-class.md), [multiset Class](../standard-library/multiset-class.md), and [unordered_multiset Class](../standard-library/unordered-multiset-class.md).
+Both `map` and `set` only allow one instance of a key or element to be inserted into the container. If multiple instances of elements are required, use `multimap` or `multiset`. The unordered versions are `unordered_multimap` and `unordered_multiset`. For more information, see [`multimap` Class](../standard-library/multimap-class.md), [`unordered_multimap` Class](../standard-library/unordered-multimap-class.md), [`multiset` Class](../standard-library/multiset-class.md), and [`unordered_multiset` Class](../standard-library/unordered-multiset-class.md).
 
 Ordered maps and sets support bi-directional iterators, and their unordered counterparts support forward iterators. For more information, see [Iterators](../standard-library/iterators.md).
 
@@ -128,11 +128,11 @@ The following member functions in map, multimap, set, and multiset have been ove
 
 A container adapter is a variation of a sequence or associative container that restricts the interface for simplicity and clarity. Container adapters don't support iterators.
 
-A `queue` container follows FIFO (first in, first out) semantics. The first element *pushed*—that is, inserted into the queue—is the first to be *popped*—that is, removed from the queue. For more information, see [queue Class](../standard-library/queue-class.md).
+A `queue` container follows FIFO (first in, first out) semantics. The first element *pushed*—that is, inserted into the queue—is the first to be *popped*—that is, removed from the queue. For more information, see [`queue` Class](../standard-library/queue-class.md).
 
-A `priority_queue` container is organized such that the element that has the highest value is always first in the queue. For more information, see [priority_queue Class](../standard-library/priority-queue-class.md).
+A `priority_queue` container is organized such that the element that has the highest value is always first in the queue. For more information, see [`priority_queue` Class](../standard-library/priority-queue-class.md).
 
-A `stack` container follows LIFO (last in, first out) semantics. The last element pushed on the stack is the first element popped. For more information, see [stack Class](../standard-library/stack-class.md).
+A `stack` container follows LIFO (last in, first out) semantics. The last element pushed on the stack is the first element popped. For more information, see [`stack` Class](../standard-library/stack-class.md).
 
 Because container adapters don't support iterators, they can't be used with the C++ Standard Library algorithms. For more information, see [Algorithms](../standard-library/algorithms.md).
 
@@ -155,14 +155,14 @@ The elements of containers are accessed by using iterators. For more information
 
 ## Comparing containers
 
-All containers overload the operator== for comparing two containers of the same type that have the same element type. You can use == to compare a vector\<string> to another vector\<string>, but you can't use it to compare a vector\<string> to a list\<string> or a vector\<string> to a vector\<char*>.  In C++98/03, you can use [std::equal](algorithm-functions.md#equal) or [std::mismatch](algorithm-functions.md#mismatch) to compare dissimilar container types and/or element types. In C++11, you can also use [std::is_permutation](algorithm-functions.md#is_permutation). But in all these cases the functions assume the containers are the same length. If the second range is shorter than the first, then undefined behavior results. If the second range is longer, results can still be incorrect because the comparison never continues past the end of the first range.
+All containers overload the operator== for comparing two containers of the same type that have the same element type. You can use == to compare a vector\<string> to another vector\<string>, but you can't use it to compare a vector\<string> to a list\<string> or a vector\<string> to a vector\<char*>.  In C++98/03, you can use [`std::equal`](algorithm-functions.md#equal) or [`std::mismatch`](algorithm-functions.md#mismatch) to compare dissimilar container types and/or element types. In C++11, you can also use [`std::is_permutation`](algorithm-functions.md#is_permutation). But in all these cases the functions assume the containers are the same length. If the second range is shorter than the first, then undefined behavior results. If the second range is longer, results can still be incorrect because the comparison never continues past the end of the first range.
 
 ### Comparing dissimilar containers (C++14)
 
-In C++14 and later, you can compare dissimilar containers and/or dissimilar elements types by using one of the `std::equal`, `std::mismatch`, or `std::is_permutation` function overloads that take two complete ranges. These overloads enable you to compare containers with different lengths. These overloads are much less susceptible to user error, and are optimized to return false in constant time when containers of dissimilar lengths are compared. Therefore, we recommend you use these overloads unless you have a clear reason not to, or you're using a [std::list](../standard-library/list-class.md) container, which does not benefit from the dual-range optimizations.
+In C++14 and later, you can compare dissimilar containers and/or dissimilar elements types by using one of the `std::equal`, `std::mismatch`, or `std::is_permutation` function overloads that take two complete ranges. These overloads enable you to compare containers with different lengths. These overloads are much less susceptible to user error, and are optimized to return false in constant time when containers of dissimilar lengths are compared. Therefore, we recommend you use these overloads unless you have a clear reason not to, or you're using a [`std::list`](../standard-library/list-class.md) container, which does not benefit from the dual-range optimizations.
 
 ## See also
 
 [Parallel Containers](../parallel/concrt/parallel-containers-and-objects.md)\
-[\<sample container>](../standard-library/sample-container.md)\
+[`<sample container>`](../standard-library/sample-container.md)\
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)
