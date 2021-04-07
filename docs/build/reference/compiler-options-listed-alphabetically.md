@@ -76,7 +76,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/Gz`](gd-gr-gv-gz-calling-convention.md) | Uses the **`__stdcall`** calling convention (x86 only). |
 | [`/H`](h-restrict-length-of-external-names.md) | Deprecated. Restricts the length of external (public) names. |
 | [`/headerName`](headername.md) | Build a header unit from the specified header. |
-| [`/headerUnit`](headerunit.md) | Tells the compiler where to find the header unit file (`.ifc`) for the specified header. |
+| [`/headerUnit`](headerunit.md) | Specify where to find the header unit file (`.ifc`) for the specified header. |
 | [`/HELP`](help-compiler-command-line-help.md) | Lists the compiler options. |
 | [`/homeparams`](homeparams-copy-register-parameters-to-stack.md) | Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile). |
 | [`/hotpatch`](hotpatch-create-hotpatchable-image.md) | Creates a hot-patchable image. |
@@ -123,6 +123,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/showIncludes`](showincludes-list-include-files.md) | Displays a list of include files during compilation. |
 | [`/source-charset`](source-charset-set-source-character-set.md) | Set source character set. |
 | [`/sourceDependencies`](sourcedependencies.md) | List headers, modules, and other source dependencies. |
+| [`/sourceDependencies:directives`](sourcedependencies.md) |List headers, and other source dependencies, and read a list of headers that can be converted to header units. |
 | [`/std`](std-specify-language-standard-version.md) | C++ standard version compatibility selector. |
 | [`/Tc`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies a C source file. |
 | [`/TC`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies all source files are C. |
