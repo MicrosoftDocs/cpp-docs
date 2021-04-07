@@ -3,6 +3,8 @@ description: "Learn more about C++ header units by converting a header file to a
 title: "Walkthrough: Build and import header units in Microsoft Visual C++ projects"
 ms.date: "4/13/2021"
 ms.custom: "conceptual"
+author: "tylermsft"
+ms.author: "twhitney"
 helpviewer_keywords: ["import", "header unit", "ifc", "stl"]
 ---
 

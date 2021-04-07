@@ -2,6 +2,8 @@
 title: "/sourceDependencies (Report source-level dependencies)"
 description: "Reference guide to the /sourceDependencies compiler option in Microsoft C++."
 ms.date: 04/13/2020
+author: "tylermsft"
+ms.author: "twhitney"
 f1_keywords: ["/sourceDependencies"]
 helpviewer_keywords: ["/sourceDependencies compiler option", "/sourceDependencies"]
 ---
@@ -11,7 +13,7 @@ This command-line switch generates a JSON file that details the source-level dep
 
 - Header files (both transitive and directly included headers).
 - The PCH used (if **`/Yu`** is specified).
-- Imported modules and imported header units (both transitive and directly imported modules/header units).
+- Imported modules and imported header units (both transitive and directly imported module/header units).
 
 ## Syntax
 
@@ -21,7 +23,7 @@ This command-line switch generates a JSON file that details the source-level dep
 ## Arguments
 
 *`-`*\
-If the single dash is provided, then the compiler will emit the source dependencies JSON to `stdout` or where the compiler output is redirected to.
+If the single dash is provided, then the compiler will emit the source dependencies JSON to `stdout`, or to where compiler output is redirected to.
 
 *`filename`*\
 The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.\

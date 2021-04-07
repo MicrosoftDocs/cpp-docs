@@ -2,8 +2,12 @@
 description: "Reference for header-units.json file"
 title: "C++ header unit.json reference"
 ms.date: "4/13/2021"
+author: "tylermsft"
+ms.author: "twhitney"
 f1_keywords: ["header-units.json"]
 helpviewer_keywords: ["header-units.json", "header unit"]
+author: "tylermsft"
+ms.author: "twhitney"
 ---
 
 # C++ header-units.json reference
@@ -34,6 +38,7 @@ The schema also supports comments, as shown below:
         "bitset",
         // "cassert", // design is not compatible with header units
         ...
+}
 ```
 
 ## Search rules

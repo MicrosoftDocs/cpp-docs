@@ -2,6 +2,8 @@
 title: "/sourceDependencies:directives (Report source-level dependencies and use an allowlist)"
 description: "Reference guide to the /sourceDependencies:directives compiler option in Microsoft C++."
 ms.date: 04/13/2020
+author: "tylermsft"
+ms.author: "twhitney"
 f1_keywords: ["/sourceDependencies:directives"]
 helpviewer_keywords: ["/sourceDependencies:directives compiler option", "/sourceDependencies:directives"]
 ---
@@ -13,17 +15,17 @@ This command-line option is similar to [`/sourceDependencies`](sourcedependencie
 
 - Unlike `/sourceDependencies`, the compiler doesn't produce compiled output. Instead, the files are scanned for module directives, but no compiled code, modules, or header units are produced.
 - Unlike `/sourceDependencies`, the output JSON file doesn't list imported modules and imported header units (`.ifc` files) because this switch does a scan of the project files, not a compilation, so there are no built modules or header units to import.
-- `/sourceDependencies:directives`is designed to be used before `.ifc` files are built.
+- `/sourceDependencies:directives`is designed to be used before *`.ifc`* files are built.
 
 ## Syntax
 
 > **`/sourceDependencies:directives[-]`** *filename*\
-> **`/sourceDependencies:directives[-]`** *directory*\
+> **`/sourceDependencies:directives[-]`** *directory*
 
 ## Arguments
 
 *`-`*\
-If the single dash is provided, then the compiler will emit the source dependencies JSON to `stdout` or where the compiler output is redirected to.
+If the single dash is provided, then the compiler will emit the source dependencies JSON to `stdout`, or to where compiler output is redirected to.
 
 *`filename`*\
 The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.\

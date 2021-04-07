@@ -4,6 +4,8 @@ description: "Use the /headerUnit compiler option to associate a header file wit
 ms.date: 04/13/2021
 f1_keywords: ["/headerUnit"]
 helpviewer_keywords: ["/headerUnit", "Use header unit IFC"]
+author: "tylermsft"
+ms.author: "twhitney"
 ---
 # `/headerUnit` (Use header unit IFC)
 
@@ -41,7 +43,7 @@ The compiler can't map a single *`header-name`* to multiple IFC files. While map
 
 The compiler implicitly enables the new preprocessor when this switch is used. That is, [`/Zc:preprocessor`](zc-preprocessor.md) is added to the command line by the compiler if any form of `/headerUnit` is specified on the command line. To opt out of the implicit `/Zc:preprocessor`, specify: `/Zc:preprocessor-`
 
-If you disable the new preprocessor but a file you compile imports a header unit, the compiler will report an error.
+If you disable the new preprocessor, but a file you compile imports a header unit, the compiler will report an error.
 
 ### Examples
 

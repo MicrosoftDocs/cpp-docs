@@ -2,6 +2,8 @@
 title: "/exportHeader (Create header units)"
 description: "Use the /exportHeader compiler option to create module header units for the header-name or include files specified."
 ms.date: 04/13/2020
+author: "tylermsft"
+ms.author: "twhitney"
 f1_keywords: ["/exportHeader"]
 helpviewer_keywords: ["/exportHeader", "Create header units"]
 ---
@@ -33,7 +35,7 @@ By default, the compiler doesn't produce an object file when a header unit is co
 
 You may find it helpful to use the complementary option **`/showResolvedHeader`**. The **`/showResolvedHeader`** option prints an absolute path to the file the *`header-name`* argument resolves to.
 
-**`/exportHeader`** can handle multiple inputs at once even under **`/MP`**. We recommended you use **`/ifcOutput  <directory>`** to create a separate *`.ifc`* file for each compilation.
+**`/exportHeader`** can handle multiple inputs at once, even under **`/MP`**. We recommended you use **`/ifcOutput  <directory>`** to create a separate *`.ifc`* file for each compilation.
 
 ### Examples
 
