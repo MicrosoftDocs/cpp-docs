@@ -1,11 +1,11 @@
 ---
-title: "/sourceDependencies:directives (Report source-level dependencies and use an allow-list)"
+title: "/sourceDependencies:directives (Report source-level dependencies and use an allowlist)"
 description: "Reference guide to the /sourceDependencies:directives compiler option in Microsoft C++."
 ms.date: 04/13/2020
 f1_keywords: ["/sourceDependencies:directives"]
 helpviewer_keywords: ["/sourceDependencies:directives compiler option", "/sourceDependencies:directives"]
 ---
-# `/sourceDependencies:directives` (Report source-level dependencies and use an allow-list)
+# `/sourceDependencies:directives` (Report source-level dependencies and use an allowlist)
 
 This command-line switch generates a JSON file that details the source-level dependencies consumed during compilation. It also looks for a `header-units.json` file that specifies which header files can be converted to header units.
 
@@ -23,7 +23,7 @@ This command-line option is similar to [`/sourceDependencies`](sourcedependencie
 ## Arguments
 
 *`-`*\
-If the single dash is provided then the compiler will emit the source dependencies JSON to `stdout` or where the compiler output is redirected to.
+If the single dash is provided, then the compiler will emit the source dependencies JSON to `stdout` or where the compiler output is redirected to.
 
 *`filename`*\
 The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.\
@@ -43,7 +43,7 @@ All file paths appear as absolute paths in the output.
 
 This switch is used in combination with [`/translateInclude`](translateinclude.md).
 
-`header-units.json` is used with the build system's **Scan Sources for Module Dependencies** to determine which header files can be compiled into a header unit. When this switch is specified, header files encountered in the scanned source files, that are also listed in `header-units.json`, are considered eligible to be compiled into header units. Files not in the list are instead treated as a normal `#include`.
+`header-units.json` is used with the build system's **Scan Sources for Module Dependencies** to determine which header files can be compiled into a header unit. When this switch is specified, header files found in the scanned source files, that are also listed in `header-units.json`, are considered eligible to be compiled into header units. Files not in the list are instead treated as a normal `#include`.
 
 The compiler looks for `header-units.json` where the header being loaded is located. For more information about the format of this file, see [C++ header-units.json reference](..\header-unit-json-reference.md)
 

@@ -21,7 +21,7 @@ This command-line switch generates a JSON file that details the source-level dep
 ## Arguments
 
 *`-`*\
-If the single dash is provided then the compiler will emit the source dependencies JSON to `stdout` or where the compiler output is redirected to.
+If the single dash is provided, then the compiler will emit the source dependencies JSON to `stdout` or where the compiler output is redirected to.
 
 *`filename`*\
 The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.\
