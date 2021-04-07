@@ -6,8 +6,6 @@ author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["header-units.json"]
 helpviewer_keywords: ["header-units.json", "header unit"]
-author: "tylermsft"
-ms.author: "twhitney"
 ---
 
 # C++ header-units.json reference

@@ -22,7 +22,7 @@ Support for header units requires at least Visual Studio 2019 16.10.0 Preview 2.
 
 Header units are a binary representation of a header file, and end with an *`.ifc`* extension. This is also the format used to store named modules.
 
-One important difference between a header unit and a header file is that header units are not affected by macro definitions the way header files are. For example, you can't `#define` a symbol that causes the header unit to behave differently when you import it the way you can with a header file. Everything visible from a header file is also visible from a header unit.
+One important difference between a header unit and a header file is that header units aren't affected by macro definitions. For example, you can't `#define` a symbol that causes the header unit to behave differently when you import it the way you can with a header file. Everything visible from a header file is also visible from a header unit.
 
 Before you can import a header unit, a header file must be compiled into a header unit. An advantage of header units (*`.ifc`* files) over a PCH is that it can be used in distributed builds. For example, as long as you're using the same compiler to compile the *`.ifc`*  and the program that imports it, and are targeting the same platform and architecture, a header unit produced on one machine can be used on another.
 
@@ -37,7 +37,7 @@ There are several ways to compile a file into a header unit:
 
 -Automatically scan for header units: This approach is best suited to smaller projects that include many different header files. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1) for a demonstration of this approach. The reason it's better suited to smaller projects, or for those where build time isn't a crucial consideration, is because it takes extra time for the build system to scan all of the files to find what should be built into header units. This scanning can be done at the project level for all source files, or at the individual file level.
 
--Build a shared header units project: This approach is best suited for larger projects, and for when you want more control over the organization of the imported header units. You create a static library (or libraries) that contain the header units that you want, and then reference it from the projects that then import the header units they need. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2) for a demonstration of this approach.
+-Build a shared header units project: This approach is best suited for larger projects, and for when you want more control over the organization of the imported header units. You create a static library (or libraries) that contain the header units that you want. Then reference the library (or libraries) from the projects that then import the header units they need. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2) for a demonstration of this approach.
 
 - Choose individual header units to build by changing the compilation action for a file. This approach is demonstrated here. This approach gives you file by file control over which header files are treated as header units. It's also a good way to quickly and selectively try out header units in your project.
 
