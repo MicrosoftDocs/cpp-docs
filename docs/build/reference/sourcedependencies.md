@@ -7,11 +7,7 @@ helpviewer_keywords: ["/sourceDependencies compiler option", "/sourceDependencie
 ---
 # `/sourceDependencies` (Report source-level dependencies)
 
-This command-line option comes in two forms:
-
-- `/sourceDependencies:directives` is used with `/translateInclude` to specify a JSON file that contains an allowlist of header files that can be compiled into header units.
-
-The `/sourceDependencies` form generates a JSON file that details the source-level dependencies consumed during compilation. The JSON file contains a list of the source dependencies, which include:
+This command-line switch generates a JSON file that details the source-level dependencies consumed during compilation. The JSON file contains a list of the source dependencies, which include:
 
 - Header files (both transitive and directly included headers).
 - The PCH used (if **`/Yu`** is specified).
@@ -19,25 +15,23 @@ The `/sourceDependencies` form generates a JSON file that details the source-lev
 
 ## Syntax
 
-> **`/sourceDependencies`** *filename*\
-> **`/sourceDependencies`** *directory*\
-> **`/sourceDependencies:directives`** *filename*\
+> **`/sourceDependencies[-]`** *filename*\
+> **`/sourceDependencies[-]`** *directory*\
 
 ## Arguments
 
-*filename*\
-The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.\
-In the `/sourceDependencies:directives` case, *filename* refers to a JSON file that lists which header files can be compiled into a header unit. See [C++ header-units.json reference](..\header-unit-json-reference.md) for an example.  
+*`-`*\
+If the single dash is provided then the compiler will emit the source dependencies JSON to `stdout` or where the compiler output is redirected to.
 
-*directory*\
+*`filename`*\
+The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.\
+
+*`directory`*\
 If the argument is a directory, the compiler generates source dependency files in the specified directory. The output file name is based on the full name of the input file, with an appended *`.json`* extension. For example, if the file provided to the compiler is *`main.cpp`*, the generated output filename is *`main.cpp.json`*.
 
 ## Remarks
 
 The **`/sourceDependencies`** compiler option is available starting in Visual Studio 2019 version 16.7. It's not enabled by default.
-The **`/sourceDependencies:directives`** compiler option is available starting in Visual Studio 2019 version 16.10 Preview 2. It's not enabled by default.
-
-The `/sourceDependencies:directives` form refers to a JSON file that is used as allowlist used with the build system's **Scan Sources for Module Dependencies**`to determine which header files can be compiled into a header unit. When this switch is specified, header files encountered in the scanned source files, that are also listed in the specified JSON file, are compiled into header units. Files not in the list aren't compiled to header units and instead are treated as a normal `#include`.
 
 When you specify the **`/MP`** compiler option, we recommend you use **`/sourceDependencies`** with a directory argument. If you provide a single filename argument, two instances of the compiler may attempt to open the output file simultaneously and cause an error. For more information on **`/MP`**, see [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md).
 
@@ -58,22 +52,22 @@ import "other.h";
 int main() { }
 ```
 
-You can use **`/sourceDependencies`** along with the rest of your compiler options:
+You can use **`/sourceDependencies`** with the rest of your compiler options:
 
 > `cl ... /sourceDependencies output.json ... main.cpp`
 
-where `...` represents your other compiler options. This command line produces a JSON file *`output.json`* with content something like:
+where `...` represents your other compiler options. This command line produces a JSON file *`output.json`* with content  like:
 
 ```JSON
 {
-    "Version": "1.0",
+    "Version": "1.1",
     "Data": {
         "Source": "C:\\...\\main.cpp",
         "PCH": "C:\\...\\pch.pch",
         "Includes": [
             "C:\\...\\header.h"
         ],
-        "Modules": [
+        "ImportedModules": [
             "C:\\...\\m.ifc",
             "C:\\...\\other.h.ifc"
         ]

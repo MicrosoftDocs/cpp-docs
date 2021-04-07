@@ -707,6 +707,8 @@
                   href: ../build/reference/source-charset-set-source-character-set.md
                 - name: /sourceDependencies (Report source-level dependencies)
                   href: ../build/reference/sourcedependencies.md
+                - name: /sourceDependencies:directives (use allow-list)
+                  href: ../build/reference/sourcedependencies-directives.md
                 - name: /std (Specify language standard version)
                   href: ../build/reference/std-specify-language-standard-version.md
                 - name: /Tc, /Tp, /TC, /TP (Specify source file type)

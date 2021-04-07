@@ -21,19 +21,33 @@ The name of a header file that the compiler should compile into a header unit (a
 
 ## Remarks
 
-The **`/headerName`** compiler option requires the [/std:c++latest](std-specify-language-standard-version.md) option. The **`/headerName`** compiler option is available starting in Visual Studio 2019 version 16.10 preview 2.
+The **`/headerName`** compiler option is available starting in Visual Studio 2019 version 16.10 preview 2.\
 
-**`/headerName:quote`** Lookup *`header-filename`* using the same rules as `#include "header-name"` and build it as a header unit (*`.ifc`* file).
+The **`/headerName`** compiler option, in all its forms, requires the [/std:c++latest](std-specify-language-standard-version.md) option.\
+If you specify **`/headerName{quote,angle}`**, you must also specify [`/exportHeader`](module-exportheader.md).
 
-**`/headerName:angle`**  Lookup *`header-filename`* using the same rules as `#include <header-name>` and build it as a header unit (*`.ifc`* file).
+**`/headerName:quote`** looks up *`header-filename`* using the same rules as `#include "header-name"` and build it as a header unit (*`.ifc`* file).\
+**`/headerName:angle`** looks up *`header-filename`* using the same rules as `#include <header-name>` and build it as a header unit (*`.ifc`* file).
 
 ### Examples
 
 Given a project that references a header file it defines called `m.h`, the compiler option to compile it into a header unit might look like this:
 
-```CMD
-cl /std:c++latest /exportHeader /headerName:quote m.h /Fom.h.obj
+```Bash
+$ cl /std:c++latest /exportHeader /headerName:quote m.h /Fom.h.obj
+```
 
+The `/headerName:{quote,angle}`switch acts like a flag and does not explicitly need an argument. The following examples are valid:
+
+```Bash
+$ cl /std:c++latest /exportHeader /headerName:angle /MP /Fo.\ vector iostream algorithm
+$ cl /std:c++latest /exportHeader /headerName:quote /MP /Fo.\ my-utilities.h a/b/my-core.h
+```
+
+You can specify multiple `/headerName` switches on the same command line, and every argument after that switch will be processed with the specified *`header-filename`* lookup rules. The following example processes all the headers as the previous two command line examples in the same way. It looks up the headers using the lookup rules applied as if they had been specified as: `#include <vector>`, `#include "my-utilties.h"`, and `#include "a/b/my-core.h"`:
+
+```bash
+$ cl /std:c++latest /exportHeader /headerName:angle /MP /Fo.\ vector iostream algorithm /headerName:quote my-utilities.h a/b/my-core.h
 ```
 
 ### To set this compiler option in the Visual Studio development environment

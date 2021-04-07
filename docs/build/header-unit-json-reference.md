@@ -8,7 +8,7 @@ helpviewer_keywords: ["header-units.json", "header unit"]
 
 # C++ header-units.json reference
 
-The `header-units.json` file lists which header files in the directory it's located in can be automatically built by the build system as header units, and then treated as an `import` instead of an `#include`.
+The `header-units.json` file lists which header files in the directory this file lis located in can be automatically built by the build system into header units, and then treated as an `import` instead of an `#include`.
 
 Sometimes a header file can't be compiled into a header unit. For example, `<cassert>` shouldn't be compiled as a header unit because it depends on a `#define` at compile time to determine its behavior. Using `#define` can't be used to change the behavior of a header unit, so `<cassert>` shouldn't be compiled into a header unit because it wouldn't provide the expected behavior.
 
@@ -35,7 +35,6 @@ For example:
         "bitset",
         // "cassert", // design is not compatible with header units
         ...
-} 
 ```
 
 ## Search rules

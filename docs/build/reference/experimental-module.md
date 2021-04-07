@@ -24,7 +24,7 @@ For more information on modules and how to use and create them, see [Overview of
 Here's an example of the compiler command-line options used to create an export module from source file *ModuleName.ixx*:
 
 ```cmd
-cl /EHsc /MD /experimental:module /module:export /module:name ModuleName /module:wrapper C:\Output\path\ModuleName.h /module:output C:\Output\path\ModuleName.ifc -c ModuleName.ixx
+cl /EHsc /MD /experimental:module /export /module:name ModuleName /module:wrapper C:\Output\path\ModuleName.h /module:output C:\Output\path\ModuleName.ifc -c ModuleName.ixx
 ```
 
 ### To set this compiler option in the Visual Studio development environment
@@ -40,7 +40,7 @@ cl /EHsc /MD /experimental:module /module:export /module:name ModuleName /module
 ## See also
 
 [`/headerUnit` (Use header unit IFC)](headerunit.md)\
-[`/module:exportHeader` (Create header units)](module-exportheader.md)\
-[`/module:reference` (Use named module IFC)](module-reference.md)\
+[`/exportHeader` (Create header units)](module-exportheader.md)\
+[`/reference` (Use named module IFC)](module-reference.md)\
 [`/translateInclude` (Translate include directives into import directives)](translateinclude.md)\
 [/Zc (Conformance)](zc-conformance.md)

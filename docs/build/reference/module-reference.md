@@ -24,7 +24,7 @@ A valid name of an exported primary module interface unit name or full module pa
 
 ## Remarks
 
-The **`/reference`** compiler option requires you enable experimental modules support by use of the [`/experimental:module`](experimental-module.md) compiler option, along with the [/std:c++latest](std-specify-language-standard-version.md) option. This option is available starting in Visual Studio 2019 version 16.10 Preview 2.
+The **`/reference`** compiler option requires you enable the [/std:c++latest](std-specify-language-standard-version.md) option. The **`/reference`** option is available starting in Visual Studio 2019 version 16.10 Preview 2.
 
 If the **`/reference`** argument is a *`filename`* without a *`module-name`*, the file gets opened at runtime to verify the *`filename`* argument names a specific import. It can result in slower runtime performance in scenarios that have many **`/reference`** arguments.
 
@@ -45,7 +45,7 @@ Examples of full module partition names include:
 If a module reference is created using a *`module-name`*, other modules on the command line don't get searched if the compiler encounters an import of that name. For example, given this command line:
 
 ```cmd
-cl ... /std:c++latest /experimental:module /reference m.ifc /reference m=n.ifc
+cl ... /std:c++latest /reference m.ifc /reference m=n.ifc
 ```
 
 In the case above, if the compiler sees `import m;` then *`m.ifc`* doesn't get searched.
@@ -63,13 +63,13 @@ Given three modules as listed in this table:
 The reference options using a *`filename`* argument could look like:
 
 ```cmd
-cl ... /std:c++latest /experimental:module /reference m.ifc /reference m-part.ifc /reference Networking.ifc
+cl ... /std:c++latest /reference m.ifc /reference m-part.ifc /reference Networking.ifc
 ```
 
 The reference options using *`module-name=filename`* could look like:
 
 ```cmd
-cl ... /std:c++latest /experimental:module /reference m=m.ifc /reference M:Part1=m-part.ifc /reference Core.Networking=Networking.ifc
+cl ... /std:c++latest /reference m=m.ifc /reference M:Part1=m-part.ifc /reference Core.Networking=Networking.ifc
 ```
 
 ### To set this compiler option in the Visual Studio development environment
@@ -87,7 +87,7 @@ cl ... /std:c++latest /experimental:module /reference m=m.ifc /reference M:Part1
 
 ## See also
 
-[`/experimental:module` (Enable module support)](experimental-module.md)\
+[`/sourcedependencies:directives` (use header file to header unit allow-list)](sourcedependencies-directives.md)\
 [`/headerUnit` (Use header unit IFC)](headerunit.md)\
-[`/module:exportHeader` (Create header units)](module-exportheader.md)\
+[`/exportHeader` (Create header units)](module-exportheader.md)\
 [`/translateInclude` (Translate include directives into import directives)](translateinclude.md)

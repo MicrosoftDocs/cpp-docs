@@ -11,60 +11,42 @@ Tells the compiler to create the header units specified by the input arguments. 
 
 ## Syntax
 
-> **`/exportHeader`** *`header-name`* \[...]\
-> **`/exportHeader`** *`filename`* \[...]
-> **`/exportHeader /headerName:angle`** *`filename`*
-> **`/exportHeader /headerName:quote`** *`filename`*
+> **`/exportHeader /headerName:angle`** *`header-name`*
+> **`/exportHeader /headerName:quote`** *`header-name`*
 
 
 ### Arguments
 
-*`header-name`*\
-The header file to export. Must take the same form as an argument to an `#include` directive.
-
-*`filename`*\
-The relative or absolute path to the header file to create a header unit from.
+The argument to `/exportHeader` is a `/headerName`command-line option that specifies the name,  *`header-name`*, of the header file to export.  
 
 ## Remarks
 
-The **`/exportHeader`** compiler option requires you enable the [/std:c++latest](std-specify-language-standard-version.md) option. **`/exportHeader`** is available starting in Visual Studio 2019 version 16.10 Preview 2.
+**`/exportHeader`** is available starting in Visual Studio 2019 version 16.10 Preview 2.
+
+The **`/exportHeader`** compiler option requires you enable the [/std:c++latest](std-specify-language-standard-version.md) option. 
 
 One **`/exportHeader`** compiler option can specify as many header-name arguments as your build requires. You don't need to specify them separately.
 
+The compiler implicitly enables the new preprocessor when this switch is used. That is, [`/Zc:preprocessor`](zc-preprocessor.md) is added to the command line by the compiler if any form of `/exportHeader` is used on the command line. To opt out of the implicit `/Zc:preprocessor`, use: `/Zc:preprocessor-`
+
 By default, the compiler doesn't produce an object file when a header unit is compiled. To produce an object file, specify the **`/Fo`** compiler option. For more information, see [`/Fo` (Object File Name)](fo-object-file-name.md).
 
-The compiler resolves a *`header-name`* based on the include directory search order, including any you specify. For more information, see [`/I` (Additional include directories)](i-additional-include-directories.md).
+You may find it helpful to use the complementary option **`/showResolvedHeader`**. The **`/showResolvedHeader`** option prints an absolute path to the file the *`header-name`* argument resolves to.
 
-The argument *`header-name`* must be specified the same way it would appear in source. The argument is sensitive to quoting rules and to `<` and `>` operators on the command line. The properly escaped command to build a header unit such as `<vector>` using the VS2019 command prompt might look like:
+**`/exportHeader`** can handle multiple inputs at once even under **`/MP`**. We recommended you use **`/ifcOutput  <directory>`** to create a separate *`.ifc`* file for each compilation.
+
+### Examples
+
+To build a header unit such as `<vector>` might look like:
 
 ```cmd
-cl ... /std:c++latest /exportHeader "<vector>"
+cl … /std:c++latest /exportHeader /headerName:angle vector
 ```
 
 Building a local project header such as `"utils/util.h"` might look like:
 
 ```cmd
-cl ... /std:c++latest /exportHeader """util/util.h"""
-```
-
-The quoting rules in other command-line processors may differ.
-
-When using the *`header-name`* form of **`/exportHeader`**, you may find it's helpful to use the complementary option **`/module:showResolvedHeader`**. The **`/module:showResolvedHeader`** option prints an absolute path to the file the *`header-name`* argument resolves to.
-
-**`/exportHeader`** can handle multiple inputs at once even under **`/MP`**. We recommended you use **`/module:output <directory>`** to create a separate IFC file for each compilation.
-
-### Examples
-
-Given headers `"C:\util\util.h"` and `"C:\app\app.h"`, you can export them as *`header-name`* arguments by using this command:
-
-```cmd
-cl /std:c++latest /IC:\ /exportHeader """util/util.h""" """app/app.h""" /FoC:\obj
-```
-
-You can export them as *`filename`* arguments by using this command:
-
-```cmd
-cl /std:c++latest /IC:\ /exportHeader C:\util\util.h C:\app\app.h /FoC:\obj
+cl … /std:c++latest /exportHeader /headerName:quote util/util.h
 ```
 
 ### To set this compiler option in the Visual Studio development environment
