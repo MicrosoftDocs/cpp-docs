@@ -8,7 +8,7 @@ helpviewer_keywords: ["header-units.json", "header unit"]
 
 # C++ header-units.json reference
 
-The `header-units.json` file lists which header files in the directory this file lis located in can be automatically built by the build system into header units, and then treated as an `import` instead of an `#include`.
+The `header-units.json` file lists which header files can be automatically built by the build system into header units, and then treated as an `import` instead of an `#include`.
 
 Sometimes a header file can't be compiled into a header unit. For example, `<cassert>` shouldn't be compiled as a header unit because it depends on a `#define` at compile time to determine its behavior. Using `#define` can't be used to change the behavior of a header unit, so `<cassert>` shouldn't be compiled into a header unit because it wouldn't provide the expected behavior.
 
@@ -16,10 +16,9 @@ When the command-line switch [`/translateInclude` (Translate include directives 
 
 ## Schema
 
-The format of the `header-units.json` file starts with the schema version, followed by an array of filenames for headers that can be built into header units. 
+The format of the `header-units.json` file starts with the schema version, followed by an array of filenames for headers that can be built into header units.
 
 The schema also supports comments, as shown below:
-For example:
 
 ```json
 { 
@@ -39,7 +38,7 @@ For example:
 
 ## Search rules
 
-The build system looks for this file in the same directory as the header file. If your library is organized into subdirectories, each subdirectory will need its own `header-units.json` file.
+The build system looks for this file in the same directory as the header file being processed. If your library is organized into subdirectories, each subdirectory will need its own `header-units.json` file.
 
 ## See also
 

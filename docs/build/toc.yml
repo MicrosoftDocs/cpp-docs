@@ -91,7 +91,7 @@
       href: ../build/walkthrough-header-units.md
     - name: "Walkthrough: Import STL libraries as header units"
       href: ../build/walkthrough-import-stl-header-units.md
-    - name: header-unit-json schema reference (C++)
+    - name: header-unit.json schema reference (C++)
       href: ../build/header-unit-json-reference.md
 - name: Precompiled header files
   href: ../build/creating-precompiled-header-files.md
