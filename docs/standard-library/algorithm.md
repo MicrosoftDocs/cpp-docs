@@ -40,7 +40,7 @@ The C++ Standard Library numeric algorithms that are provided for numerical proc
 |Name|Description|
 |-|-|
 |[`adjacent_find`](algorithm-functions.md#adjacent_find)|Searches for two adjacent elements that are either equal or satisfy a specified condition.|
-|[`all_o`f`](algorithm-functions.md#all_of)|Returns **`true`** when a condition is present at each element in the given range.|
+|[`all_of`](algorithm-functions.md#all_of)|Returns **`true`** when a condition is present at each element in the given range.|
 |[`any_of`](algorithm-functions.md#any_of)|Returns **`true`** when a condition is present at least once in the specified range of elements.|
 |[`binary_search`](algorithm-functions.md#binary_search)|Tests whether there is an element in a sorted range that is equal to a specified value or that is equivalent to it in a sense specified by a binary predicate.|
 |[`clamp`](algorithm-functions.md#clamp)||
@@ -120,7 +120,7 @@ The C++ Standard Library numeric algorithms that are provided for numerical proc
 |[`shuffle`](algorithm-functions.md#shuffle)|Shuffles (rearranges) elements for a given range using a random number generator.|
 |[`sort_heap`](algorithm-functions.md#sort_heap)|Converts a heap into a sorted range.|
 |[`stable_partition`](algorithm-functions.md#stable_partition)|Classifies elements in a range into two disjoint sets, with those elements satisfying a unary predicate preceding those that fail to satisfy it, preserving the relative order of equivalent elements.|
-|[`stable_sort](algorithm-functions.md#stable_sort)|Arranges the elements in a specified range into a nondescending order or according to an ordering criterion specified by a binary predicate and preserves the relative ordering of equivalent elements.|
+|[`stable_sort`](algorithm-functions.md#stable_sort)|Arranges the elements in a specified range into a nondescending order or according to an ordering criterion specified by a binary predicate and preserves the relative ordering of equivalent elements.|
 |[`swap`](algorithm-functions.md#swap)|Exchanges the values of the elements between two types of objects, assigning the contents of the first object to the second object and the contents of the second to the first.|
 |[`swap_ranges`](algorithm-functions.md#swap_ranges)|Exchanges the elements of one range with the elements of another, equal sized range.|
 |[`transform`](algorithm-functions.md#transform)|Applies a specified function object to each element in a source range or to a pair of elements from two source ranges and copies the return values of the function object into a destination range.|
