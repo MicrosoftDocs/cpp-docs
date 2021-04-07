@@ -123,7 +123,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/showIncludes`](showincludes-list-include-files.md) | Displays a list of include files during compilation. |
 | [`/source-charset`](source-charset-set-source-character-set.md) | Set source character set. |
 | [`/sourceDependencies`](sourcedependencies.md) | List headers, modules, and other source dependencies. |
-| [`/sourceDependencies:directives`](sourcedependencies.md) |List headers, and other source dependencies, and read a list of headers that can be converted to header units. |
+| [`/sourceDependencies:directives`](sourcedependencies.md) |List headers, and other source dependencies, using a list of headers that can be converted to header units. |
 | [`/std`](std-specify-language-standard-version.md) | C++ standard version compatibility selector. |
 | [`/Tc`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies a C source file. |
 | [`/TC`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies all source files are C. |

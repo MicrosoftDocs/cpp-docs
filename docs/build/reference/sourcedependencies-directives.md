@@ -7,7 +7,7 @@ ms.author: "twhitney"
 f1_keywords: ["/sourceDependencies:directives"]
 helpviewer_keywords: ["/sourceDependencies:directives compiler option", "/sourceDependencies:directives"]
 ---
-# `/sourceDependencies:directives` (Report source-level dependencies and use an allowlist)
+# `/sourceDependencies:directives` (List headers, and other source dependencies, using a list of headers that can be converted to header units.)
 
 This command-line switch generates a JSON file that details the source-level dependencies consumed during compilation. It also looks for a `header-units.json` file that specifies which header files can be converted to header units.
 
