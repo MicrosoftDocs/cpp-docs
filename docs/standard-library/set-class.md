@@ -112,7 +112,7 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 |[`swap`](#swap)|Exchanges the elements of two `set`s.|
 |[`upper_bound`](#upper_bound)|Returns an iterator to the first element in a `set` with a key that is greater than a specified key.|
 |[`value_comp`](#value_comp)|Retrieves a copy of the comparison object used to order element values in a `set`.|
-`
+
 ### Operators
 
 |Name|Description|
