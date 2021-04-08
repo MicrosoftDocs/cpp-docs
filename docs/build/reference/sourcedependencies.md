@@ -49,14 +49,11 @@ All file paths appear as absolute paths in the output.
 Given the following sample code:
 
 ```cpp
-// main.cpp
-MouleE.ixx:
+// ModuleE.ixx:
 export module ModuleE;
 import ModuleC;
 import ModuleD;
 import <iostream>;
-
-int main() { }
 ```
 
 You can use **`/sourceDependencies`** with the rest of your compiler options:
@@ -69,31 +66,31 @@ where `...` represents your other compiler options. This command line produces a
 {
     "Version": "1.1",
     "Data": {
-        "Source": "f:\\test\\modulesample\\myproject\\modulee.ixx",
+        "Source": "F:\\Sample\\myproject\\modulee.ixx",
         "ProvidedModule": "ModuleE",
         "Includes": [],
         "ImportedModules": [
             {
                 "Name": "ModuleC",
-                "BMI": "F:\\test\\ModuleSample\\Outputs\\Intermediate\\MyProject\\x64\\Debug\\ModuleC.ixx.ifc"
+                "BMI": "F:\\Sample\\Outputs\\Intermediate\\MyProject\\x64\\Debug\\ModuleC.ixx.ifc"
             },
             {
                 "Name": "ModuleB",
-                "BMI": "F:\\test\\ModuleSample\\Outputs\\Intermediate\\ModuleB\\x64\\Debug\\ModuleB.ixx.ifc"
+                "BMI": "F:\\Sample\\Outputs\\Intermediate\\ModuleB\\x64\\Debug\\ModuleB.ixx.ifc"
             },
             {
                 "Name": "ModuleD",
-                "BMI": "F:\\test\\ModuleSample\\Outputs\\Intermediate\\MyProject\\x64\\Debug\\ModuleD.cppm.ifc"
+                "BMI": "F:\\Sample\\Outputs\\Intermediate\\MyProject\\x64\\Debug\\ModuleD.cppm.ifc"
             }
         ],
         "ImportedHeaderUnits": [
             {
                 "Header": "f:\\visual studio 16 main\\vc\\tools\\msvc\\14.29.30030\\include\\iostream",
-                "BMI": "F:\\test\\ModuleSample\\Outputs\\Intermediate\\HeaderUnits\\x64\\Debug\\iostream_W4L4JYGFJ3GL8OG9.ifc"
+                "BMI": "F:\\Sample\\Outputs\\Intermediate\\HeaderUnits\\x64\\Debug\\iostream_W4L4JYGFJ3GL8OG9.ifc"
             },
             {
                 "Header": "f:\\visual studio 16 main\\vc\\tools\\msvc\\14.29.30030\\include\\yvals_core.h",
-                "BMI": "F:\\test\\ModuleSample\\Outputs\\Intermediate\\HeaderUnits\\x64\\Debug\\yvals_core.h.ifc"
+                "BMI": "F:\\Sample\\Outputs\\Intermediate\\HeaderUnits\\x64\\Debug\\yvals_core.h.ifc"
             }
         ]
     }
@@ -101,6 +98,8 @@ where `...` represents your other compiler options. This command line produces a
 ```
 
 We've used `...` to abbreviate the reported paths; the report contains the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you may want to check your project's include path settings.
+
+`ProvidedModule` lists exported module or module partition names.
 
 ### To set this compiler option in the Visual Studio development environment
 

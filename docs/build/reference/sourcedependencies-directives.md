@@ -18,7 +18,7 @@ This command-line option is similar to [`/sourceDependencies`](sourcedependencie
 - The compiler doesn't produce compiled output. Instead, the files are scanned for module directives. No compiled code, modules, or header units are produced.
 - The output JSON file doesn't list imported modules and imported header units (*`.ifc`* files) because this switch does a scan of the project files, not a compilation, so there are no built modules or header units to list.
 - Only directly imported modules or header units are listed. It doesn't list the dependencies of the imported modules or header units themselves.
-- Header file dependencies are not listed. That is, `#include <file>` or `#include "file"` dependencies are not listed
+- Header file dependencies are not listed. That is, `#include <file>` or `#include "file"` dependencies are not listed.
 - `/sourceDependencies:directives`is meant to be used before *`.ifc`* files are built.
 
 ## Syntax
