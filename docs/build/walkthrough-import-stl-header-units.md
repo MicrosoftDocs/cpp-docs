@@ -189,18 +189,20 @@ Header units built as part of a static library project are automatically availab
 The following settings control the visibility of header units to the build system:
 
 - **Public Include Directories**: specify project directories for header units that should be automatically added to the include path in referencing projects.
-- **Public C++ Module directories**: specify which project directories contain header units that should be available to referencing projects. This is a way of making some header units public, by putting those that should be public in a directory that will be made visible to other projects. If you set this, you may also want to specify **Public Include Directories** so your public headers are automatically added to the include path in referencing projects.
+- **Public C++ Module directories**: specify which project directories contain header units that should be available to referencing projects. This is a way of making some header units public, by putting those that can be shared in a directory that is visible to other projects. If you set this, you may also want to specify **Public Include Directories** so your public headers are automatically added to the include path in referencing projects.
 - **All Modules are Public** - To use header units built as a part of a DLL project, the symbols have to be exported from the DLL. To do so, set this property to **Yes**.
 
-## Reuse header units between solutions
+## Reuse header units between Visual Studio solutions
 
-If you want to use a header unit built in a different solution, you can specify where the built *`.ifc`* files are so that you can import them.
+If you want to use a header unit built in a different Visual Studio solution, you can specify where the built *`.ifc`* files are so that you can import them.
 
 To access this setting:
 1. Select the project in the **Solution Explorer**, then right-click the project and select **Properties**.
 1. In the left-hand pane of the project properties window, select **C/C++** > **General**.
 1. Add the modules to reference in the **Additional Module Dependencies** dropdown.
 ![Project properties under C/C++, General, which Additional Module Dependencies selected](media/vs2019-additional-module-dependencies.png)
+
+Here's an example of the format to use for **Additional Module Dependencies**: `ModuleName1=Path\To\ModuleName1.ifc; ModuleName2=Path\To\ModuleName2.ifc`
 
 ## Handling multiple copies of a header unit
  
@@ -213,6 +215,8 @@ To access this setting:
 1. In the left-hand pane of the project properties window, select **C/C++** > **General**.
 1. Use **Additional Header Unit Dependencies** to resolve collisions by specifying which module or header unit should be used for this project:
 ![Additional Header Unit Dependencies setting in the project properties dialog](media/additional-header-unit-dependencies-setting.png)
+
+Here's an example of the format to use for **Additional Header Unit Dependencies**: `Path\To\Header1.h= Path\To\HeaderUnit1.ifc;Path\To\Header2.h= Path\To\ HeaderUnit2.ifc`
 
 > [!IMPORTANT]
 > Ensure that projects that share header units are built with compatible compilation options. The compiler will issue warnings if it detects different compilation options used for how the header unit was produced versus how it's used.

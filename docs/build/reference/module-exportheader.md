@@ -15,7 +15,7 @@ Tells the compiler to create the header units specified by the input arguments. 
 
 > **`/exportHeader /headerName:angle`** *`header-name`*
 > **`/exportHeader /headerName:quote`** *`header-name`*
-> **`/exportHeader`** *`header-name-including-path`* Note: this form is deprecated
+> **`/exportHeader`** *`full or relative path to header file`* Note: this form is deprecated
 
 ### Arguments
 
