@@ -50,9 +50,11 @@ Given the following sample code:
 
 ```cpp
 // main.cpp
-#include "header.h"
-import m;
-import "other.h";
+MouleE.ixx:
+export module ModuleE;
+import ModuleC;
+import ModuleD;
+import <iostream>;
 
 int main() { }
 ```
@@ -67,14 +69,32 @@ where `...` represents your other compiler options. This command line produces a
 {
     "Version": "1.1",
     "Data": {
-        "Source": "C:\\...\\main.cpp",
-        "PCH": "C:\\...\\pch.pch",
-        "Includes": [
-            "C:\\...\\header.h"
-        ],
+        "Source": "f:\\test\\modulesample\\myproject\\modulee.ixx",
+        "ProvidedModule": "ModuleE",
+        "Includes": [],
         "ImportedModules": [
-            "C:\\...\\m.ifc",
-            "C:\\...\\other.h.ifc"
+            {
+                "Name": "ModuleC",
+                "BMI": "F:\\test\\ModuleSample\\Outputs\\Intermediate\\MyProject\\x64\\Debug\\ModuleC.ixx.ifc"
+            },
+            {
+                "Name": "ModuleB",
+                "BMI": "F:\\test\\ModuleSample\\Outputs\\Intermediate\\ModuleB\\x64\\Debug\\ModuleB.ixx.ifc"
+            },
+            {
+                "Name": "ModuleD",
+                "BMI": "F:\\test\\ModuleSample\\Outputs\\Intermediate\\MyProject\\x64\\Debug\\ModuleD.cppm.ifc"
+            }
+        ],
+        "ImportedHeaderUnits": [
+            {
+                "Header": "f:\\visual studio 16 main\\vc\\tools\\msvc\\14.29.30030\\include\\iostream",
+                "BMI": "F:\\test\\ModuleSample\\Outputs\\Intermediate\\HeaderUnits\\x64\\Debug\\iostream_W4L4JYGFJ3GL8OG9.ifc"
+            },
+            {
+                "Header": "f:\\visual studio 16 main\\vc\\tools\\msvc\\14.29.30030\\include\\yvals_core.h",
+                "BMI": "F:\\test\\ModuleSample\\Outputs\\Intermediate\\HeaderUnits\\x64\\Debug\\yvals_core.h.ifc"
+            }
         ]
     }
 }

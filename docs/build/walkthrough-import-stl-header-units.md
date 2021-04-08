@@ -107,9 +107,9 @@ The more flexible way to consume STL headers is to create one or more static lib
 
 This option ensures that header units for a particular header will be built only once. It's similar to using a shared precompiled header file, but is much easier.
 
-In this example, you'll create a project that imports `<iostream>` and `<vector>`. Once built, you'll reference this shared project from another C++ project. Then, in the referencing project, everywhere `import <iostream>;` or `import <vector>;` is found, it will import the built header unit for that library instead of running the contents of the library header through the preprocessor. In projects that include the same library header in multiple files, this will improve build performance similarly to how PCH files do because the header won't have to be processed over and over by the files that include it. Instead, the already processed compiled header unit will be imported.
+In this example, you'll create a project that imports `<iostream>` and `<vector>`. Once built, you'll reference this shared header units project from another C++ project. Then, in the referencing project, everywhere `import <iostream>;` or `import <vector>;` is found, it will import the built header unit for that library instead of running the contents of the library header through the preprocessor. In projects that include the same library header in multiple files, this will improve build performance similarly to how PCH files do because the header won't have to be processed over and over by the files that include it. Instead, the already processed compiled header unit will be imported.
 
-### Create the shared project
+### Create the shared header units project
 
 Begin by creating the project for the shared header units as follows:
 
@@ -173,7 +173,7 @@ Then you can build the solution (**Build** > **Build Solution** from the main me
 
 The advantage of this approach is that you can reference the static library project from any project to reuse the header units in it. In this example, that's `<vector>` and `<iostream>`.  
 
-You can make a monolithic library project containing all the commonly used STL headers that you want to import from your various projects. Or, you can produce smaller shared library projects that have different groupings of STL libraries that you want to import as header units. Then reference those shared projects as needed.
+You can make a monolithic library project containing all the commonly used STL headers that you want to import from your various projects. Or, you can produce smaller shared library projects that have different groupings of STL libraries that you want to import as header units. Then reference those shared header units projects as needed.
 
 The result should be increased build throughput because importing a header unit significantly reduces the work the compiler must do.
 
@@ -192,9 +192,11 @@ The following settings control the visibility of header units to the build syste
 - **Public C++ Module directories**: specify which project directories contain header units that should be available to referencing projects. This is a way of making some header units public, by putting those that can be shared in a directory that is visible to other projects. If you set this, you may also want to specify **Public Include Directories** so your public headers are automatically added to the include path in referencing projects.
 - **All Modules are Public** - To use header units built as a part of a DLL project, the symbols have to be exported from the DLL. To do so, set this property to **Yes**.
 
-## Reuse header units between Visual Studio solutions
+## Use a prebuilt module file
 
-If you want to use a header unit built in a different Visual Studio solution, you can specify where the built *`.ifc`* files are so that you can import them.
+Normally, the easiest way to reuse header units between solutions is to include the same shared header units project in each solution.
+
+But if you have a need to use a built header unit that you don't have the project for, you can specify where the built *`.ifc`* file is so that you can import it in your solution.
 
 To access this setting:
 1. Select the project in the **Solution Explorer**, then right-click the project and select **Properties**.

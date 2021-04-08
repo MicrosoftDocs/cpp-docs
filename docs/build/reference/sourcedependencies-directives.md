@@ -9,16 +9,16 @@ helpviewer_keywords: ["/sourceDependencies:directives compiler option", "/source
 ---
 # `/sourceDependencies:directives` (List module and header unit dependencies)
 
-This command-line switch generates a JSON file that lists the module and header-unit dependencies in your project.
+This command-line switch generates a JSON file that lists the module and header-unit dependencies in the source code.
 
-It identifies which modules and header units need to be compiled before the project that uses them is compiled. For instance, it will list `import <library>;` or `import "library"; as a header unit dependency, and `import name;` as a module dependency.
+It identifies which modules and header units need to be compiled before the project that uses them is compiled. For instance, it will list `import <library>;` or `import "library";` as a header unit dependency, and `import name;` as a module dependency.
 
 This command-line option is similar to [`/sourceDependencies`](sourcedependencies.md), but differs in the following ways:
 
 - The compiler doesn't produce compiled output. Instead, the files are scanned for module directives. No compiled code, modules, or header units are produced.
 - The output JSON file doesn't list imported modules and imported header units (*`.ifc`* files) because this switch does a scan of the project files, not a compilation, so there are no built modules or header units to list.
 - Only directly imported modules or header units are listed. It doesn't list the dependencies of the imported modules or header units themselves.
-- Header file dependencies are not listed. That is, `#include <file>` or `#include "file"` dependencies are not listed.
+- Header file dependencies are not listed. That is, `#include <file>` or `#include "file"` dependencies are not listed
 - `/sourceDependencies:directives`is meant to be used before *`.ifc`* files are built.
 
 ## Syntax
@@ -65,9 +65,9 @@ import "t.h";
 int main() {}
 ```
 
-> `cl /std:c++latest /sourceDependencies:directives deps.json main.cpp`
+> `cl /std:c++latest /sourceDependencies:directives output.json main.cpp`
 
-This command line produces a JSON file *`deps.json`* with content like:
+This command line produces a JSON file *`output.json`* with content like:
 
 ```JSON
 {
@@ -81,14 +81,15 @@ This command line produces a JSON file *`deps.json`* with content like:
       ],
       "ImportedHeaderUnits":[
          "C:\\...\\utility",
-         "C:\\a\\b\\t.h",
-         "C:\\...\\vector"
+         "C:\\a\\b\\t.h"
       ]
    }
 }
 ```
 
 We've used `...` to abbreviate the reported paths; the report contains the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you may want to check your project's include path settings.
+
+`ProvidedModule` lists exported module or module partition names.
 
 No *`.ifc`* files are listed in the output because they weren't built. Unlike `/sourceDependencies`, the compiler doesn't produce compiled output when `/sourceDependencies:directives`is specified, so no compiled modules or header units are produced to import.
 
