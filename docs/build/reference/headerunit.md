@@ -35,9 +35,9 @@ When the compiler comes across `import "file";` or `import <file>`, this compile
 
 **`/headerUnit`** looks up the compiled header unit in the current directory, or at the location specified in *`ifc-filename`*.
 
-**`/headerUnit:quote`** looks up the compiled header unit file using the same rules as `#include "file"`. This switch acts like a flag and can take, but doesn't require, an argument.
+**`/headerUnit:quote`** looks up the compiled header unit file using the same rules as `#include "file"`.
 
-**`/headerUnit:angle`** looks up the compiled header unit file using the same rules as `#include <file>`. This switch acts like a flag and can take, but doesn't require, an argument.
+**`/headerUnit:angle`** looks up the compiled header unit file using the same rules as `#include <file>`.
 
 The compiler can't map a single *`header-name`* to multiple IFC files. While mapping multiple *`header-name`* arguments to a single IFC is possible, we don't recommend it. The contents of the IFC get imported as if it was only the header specified by *`header-name`*.
 
