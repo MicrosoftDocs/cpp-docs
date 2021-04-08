@@ -11,8 +11,7 @@ CMake supports two files, `CMakePresets.json` and `CMakeUserPresets.json`, that 
 
 Use `CMakePresets.json` and `CMakeUserPresets.json` to drive CMake in Visual Studio and Visual Studio Code, in a Continuous Integration (CI) pipeline, and from the command line. `CMakePresets.json` is intended to save project-wide builds, and `CMakeUserPresets.json` is intended for developers to save their own local builds.
 
-This article contains information about `CMakePresets.json` integration Visual Studio. https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools
-
+This article contains information about `CMakePresets.json` integration Visual Studio.
 - For more information on the format of `CMakePresets.json`, see the official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#id1). 
 - For more information on the Microsoft vendor maps and macro expansion, see [`CMakePresets.json` and `CMakeUserPresets.json` Microsoft vendor maps](cmake-presets-json-reference.md).
 - For more information on how to use `CMakePresets.json` in Visual Studio Code, see [Configure and build with CMake Presets](https://github.com/microsoft/vscode-cmake-tools/tree/develop/docs/cmake-presets.md).
@@ -27,7 +26,7 @@ CMake version 3.20 or higher is required when invoking CMake with `CMakePresets.
 
 ## Enable `CMakePresets.json` integration in Visual Studio 2019
 
-`CMakePresets.json` integration isn't enabled by default in Visual Studio 2019. You can enable `CMakePresets.json` integration for all CMake projects in **Tools** > **Options** > **CMake** > **General**:
+`CMakePresets.json` integration isn't enabled by default in Visual Studio 2019. You can enable it for all CMake projects in **Tools** > **Options** > **CMake** > **General**:
 
 ![Enable `CMakePresets.json` in CMake options > General](./media/enable-cmakepresets.PNG)
 
@@ -116,7 +115,11 @@ The dropdown on the left indicates the active **Target System**. This is the sys
 
 ![Target system dropdown selection examples for local machine, a SSH connection, and WSL ubuntu and WSL debian](./media/target-system-selections.PNG)
  
-In the example above, **192.168.0.5** is a remote Linux system that was added to the **Connection Manager**. **ubuntu2004** and **debian** are WSL installations. Select **Manage Connections…** to open the **Connection Manager**.
+In the example above:
+- **192.168.0.5** is a remote Linux system that was added to the **Connection Manager**.
+- **ubuntu2004** and **debian** are WSL installations.
+
+Select **Manage Connections…** to open the **Connection Manager**.
 
 ### Select a Configure Preset
 
@@ -138,7 +141,7 @@ Visual Studio automatically tries to configure the project when it detects that 
 
 ### Build
 
-To build the entire project, select **Build** > **Build All** from the main menu. This is the same as running `cmake --build --preset <buildPreset>` from the command line, where `<buildPreset>` is the name of the active `Build Preset`.
+To build the entire project, select **Build** > **Build All** from the main menu. This is the same as running `cmake --build --preset <buildPreset>` from the command line, where `<buildPreset>` is the name of the active Build Preset.
 
 To build a single target, switch to **CMake Targets View** in the **Solution Explorer**. Then right-click any target and select **Build** from the context menu.
 
@@ -162,7 +165,7 @@ Use forward slashes (`/`) for paths in `CMakePresets.json` and `CMakeUserPresets
 
 ### Add new Configure Presets
 
-To add a new Configure Preset to `CMakePresets.json`, from **Solution Explorer** right-click `CMakePresets.json` from **Folder View** and select **Add Configure Preset…** from the context menu. The dialog to select a Configure Preset template opens:
+To add a new Configure Preset to `CMakePresets.json`, from **Solution Explorer** right-click `CMakePresets.json` from **Folder View** and select **Add Configure Preset…** from the context menu. The dialog to select a Configure Preset template appears:
 
 ![Add configure preset to `CMakePresets.json` dialog](./media/add-configure-preset-to-cmakepresets.PNG)
 
@@ -184,6 +187,7 @@ C and C++ compilers can be set with `cacheVariables.CMAKE_C_COMPILER` and `cache
 
 Use the following examples to build with `cl.exe` and `clang-cl.exe` from Visual Studio. The C++ Clang tools for Windows component must be installed to build with `clang-cl`.
 
+**CL**
 ```json
 "cacheVariables": {
   "CMAKE_BUILD_TYPE": "Debug",
@@ -193,6 +197,7 @@ Use the following examples to build with `cl.exe` and `clang-cl.exe` from Visual
 },
 ```
 
+**Clang**
 ```json
 "cacheVariables": {
   "CMAKE_BUILD_TYPE": "Debug",
@@ -215,6 +220,7 @@ See [Run CMake from the command line or a continuous integration (CI) pipeline](
 
 To build on Linux or without the Visual C++ toolset, specify the name of a compiler on your `PATH`, or an environment variable that evaluates to the full path of a compiler. Full paths are discouraged so that the file can remain shareable. A preset that builds with GCC version 8 might look like this:
 
+**GCC**
 ```json
 "cacheVariables": {
   "CMAKE_BUILD_TYPE": "Debug",
