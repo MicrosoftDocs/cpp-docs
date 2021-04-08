@@ -97,6 +97,17 @@ If ssh isn't already set up and running on your Linux system, follow these steps
    ::: moniker-end
 
    ::: moniker range="msvc-160"
+   
+## Host key verification
+
+In Visual Studio version 16.10 or later, you will be asked to verify the host key fingerprint presented by the server when Visual Studio connects to a remote system for the first time. You may be familiar with this if you’ve used the OpenSSH command-line client or PuTTY before. The fingerprint identifies the server and is used to ensure that Visual Studio is connecting to the intended and trusted server. 
+
+You will be asked to accept or deny the host key fingerprint presented by the server the first time a new remote connection is established, or anytime that a cached fingerprint has changed. You can also verify a fingerprint on demand by selecting a connection in the Connection Manager and clicking "Verify." 
+
+If you are upgrading to Visual Studio 16.10 from an older version of Visual Studio, then all existing remote connections will be treated as a new connection. You will be prompted to accept the host key fingerprint before a connection is established and the accepted fingerprint will be cached. 
+
+You can also update remote connections from ConnectionManager.exe using the `update` argument. 
+
 
 ## Supported SSH algorithms
 
