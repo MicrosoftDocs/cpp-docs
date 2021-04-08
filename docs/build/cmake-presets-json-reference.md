@@ -99,11 +99,11 @@ Visual Studio supports vendor macros with the prefix `ms`. Microsoft vendor macr
 
 |Macro  |Description  |
 |---------|---------|
-| `$env{<variable-name>}`<br>`$penv{<variable-name>}`| Reference environment variables using this syntax supported by CMake. |
+| `$env{<variable-name>}`<br>`$penv{<variable-name>}`| Reference environment variables using this syntax supported by CMake. See [cmake-presets Macro Expansion](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#macro-expansion) for more information. |
 
 ## Deprecated macros
 
-A few macros that were supported by CMakeSettings.json have been deprecated with the adoption of `CMakePresets.json`. 
+A few macros that were supported by CMakeSettings.json have been deprecated with the adoption of `CMakePresets.json`.
 
 Use the macros supported by CMake to construct your file paths. This will ensure that the same `CMakePresets.json` file works inside Visual Studio and from the command line.
 

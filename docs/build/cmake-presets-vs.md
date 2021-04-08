@@ -9,7 +9,7 @@ ms.date: "04/13/2020"
 
 CMake supports two files, `CMakePresets.json` and `CMakeUserPresets.json`, that allow users to specify common configure, build, and test options and share them with others.
 
-Use `CMakePresets.json` and `CMakeUserPresets.json` to drive CMake in Visual Studio and Visual Studio Code, in a Continuous Integration (CI) pipeline, and from the command line. `CMakePresets.json` is intended to save project-wide builds, and `CMakeUserPresets.json` is intended for developers to save their own local builds.
+Use `CMakePresets.json` and `CMakeUserPresets.json` to drive CMake in Visual Studio and Visual Studio Code, in a Continuous Integration (CI) pipReline, and from the command line. `CMakePresets.json` is intended to save project-wide builds, and `CMakeUserPresets.json` is intended for developers to save their own local builds.
 
 This article contains information about `CMakePresets.json` integration Visual Studio.
 - For more information on the format of `CMakePresets.json`, see the official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#id1). 
@@ -35,11 +35,9 @@ CMake version 3.20 or higher is required when invoking CMake with `CMakePresets.
 
 If you don't want to enable `CMakePresets.json` integration for all CMake projects, then you can enable `CMakePresets.json` integration for a single CMake project by adding a `CMakePresets.json` file to the root of the open folder. You must close and reopen the folder in Visual Studio to activate the integration.
 
-The following table indicates when `CMakePresets.json` is used instead of `CMakeSettings.json` to drive CMake configuration and build. 
+The following table indicates when `CMakePresets.json` is used instead of `CMakeSettings.json` to drive CMake configuration and build. If no configuration file is present, then default Configure Presets are used.
 
 Key: **Tools** > **Options** enabled means **Use CMakePresets.json to drive CMake configure, build, and test** is selected in **Tools** > **Options** > **CMake** > **General**.
-
-If no configuration file is present, then default Configure Presets are used.
 
 | Configuration files | Tools > Options disabled | Tools > Options enabled |
 |--|--|--|
@@ -155,7 +153,7 @@ There are two menu options supported by `CMakePresets.json` in Visual Studio 201
 - **Test** > **Run CTests** for <project-name> invokes CTest and runs all tests associated with the active Configure Preset and Build Preset, with no additional arguments passed to CTest.
 - **Test** > **Run Test Preset** for <configurePreset> will expand to show all Test Presets associated with the active Configure Preset. Selecting a single Test Preset is the same as running `ctest --preset <testPreset>` from the command line, where `<testPreset>` is the name of the selected Test Preset. This option will be grayed out if no Test Presets are defined for the active Configure Preset.
 
-In Visual Studio 2019 the Test Explorer isn't integrated with `CMakePresets.json`.
+In Visual Studio 2019, the Test Explorer isn't integrated with `CMakePresets.json`.
 
 ## Add new presets
 
@@ -187,7 +185,7 @@ C and C++ compilers can be set with `cacheVariables.CMAKE_C_COMPILER` and `cache
 
 Use the following examples to build with `cl.exe` and `clang-cl.exe` from Visual Studio. The C++ Clang tools for Windows component must be installed to build with `clang-cl`.
 
-**CL**
+**Build with `cl.exe`**
 ```json
 "cacheVariables": {
   "CMAKE_BUILD_TYPE": "Debug",
@@ -197,7 +195,7 @@ Use the following examples to build with `cl.exe` and `clang-cl.exe` from Visual
 },
 ```
 
-**Clang**
+**Build with `clang`**
 ```json
 "cacheVariables": {
   "CMAKE_BUILD_TYPE": "Debug",
@@ -214,7 +212,7 @@ Use the following examples to build with `cl.exe` and `clang-cl.exe` from Visual
 ```
 
 > [!IMPORTANT]
-> In Visual Studio 2019 you must explicitly specify a Clang IntelliSense mode when building with `clang` or `clang-cl`.
+> In Visual Studio 2019, you must explicitly specify a Clang IntelliSense mode when building with `clang` or `clang-cl`.
 
 See [Run CMake from the command line or a continuous integration (CI) pipeline](#run-cmake-from-the-command-line-or-a-continuous-integration-ci-pipeline) to reproduce these builds outside of Visual Studio.
 
@@ -287,7 +285,7 @@ By default, Visual Studio will use the IntelliSense mode that matches your speci
 
 ## Configure and build on a remote system or the Windows Subsystem for Linux (WSL)
 
-With `CMakePresets.json` support in Visual Studio you can easily configure and build your project on Windows, WSL, and remote systems. The steps to [Configure and build](#configure-and-build) your project on Windows, a remote system, or WSL are the same. However, there are a few behaviors that are specific to remote development.
+With `CMakePresets.json` support in Visual Studio, you can easily configure and build your project on Windows, WSL, and remote systems. The steps to [Configure and build](#configure-and-build) your project on Windows, a remote system, or WSL are the same. However, there are a few behaviors that are specific to remote development.
 
 ### `${sourceDir}` behavior in remote copy scenarios
 
@@ -299,7 +297,7 @@ Remote copy scenarios require a local directory to copy some remote files like C
 
 ### Invoke the same Configure Preset on Windows and WSL1
 
-You'll see an error if you try to use the same Configure Preset on Windows and WSL1. Windows and WSL1 both use the Windows file system, so CMake will try to use the same output directory (`binaryDir`) for both the Windows and WSL1 build tree. If you want to use the same Configure Preset with both Windows and the WSL1 toolset, create a second Configure Preset that inherits from the original preset and specifies a new `binaryDir`. In the following example, `windows-preset` can be used on Windows and base-preset can be used on WSL1:
+You'll see an error if you try to use the same Configure Preset on Windows and WSL1. Windows and WSL1 both use the Windows file system, so CMake will try to use the same output directory (`binaryDir`) for both the Windows and WSL1 build tree. If you want to use the same Configure Preset with both Windows and the WSL1 toolset, create a second Configure Preset that inherits from the original preset and specifies a new `binaryDir`. In the following example, `windows-preset` can be used on Windows and `base-preset` can be used on WSL1:
 
 ```json
 {
