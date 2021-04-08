@@ -122,8 +122,8 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/sdl`](sdl-enable-additional-security-checks.md) | Enables additional security features and warnings. |
 | [`/showIncludes`](showincludes-list-include-files.md) | Displays a list of include files during compilation. |
 | [`/source-charset`](source-charset-set-source-character-set.md) | Set source character set. |
-| [`/sourceDependencies`](sourcedependencies.md) | List headers, modules, and other source dependencies. |
-| [`/sourceDependencies:directives`](sourcedependencies.md) |List headers, and other source dependencies, using a list of headers that can be converted to header units. |
+| [`/sourceDependencies`](sourcedependencies.md) | List all source-level dependencies. |
+| [`/sourceDependencies:directives`](sourcedependencies-directives.md) |List module and header unit dependencies. |
 | [`/std`](std-specify-language-standard-version.md) | C++ standard version compatibility selector. |
 | [`/Tc`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies a C source file. |
 | [`/TC`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies all source files are C. |

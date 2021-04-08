@@ -1,19 +1,22 @@
 ---
 title: "/sourceDependencies (Report source-level dependencies)"
-description: "Reference guide to the /sourceDependencies compiler option in Microsoft C++."
+description: "Describes the /sourceDependencies compiler option in Microsoft C++."
 ms.date: 04/13/2020
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/sourceDependencies"]
 helpviewer_keywords: ["/sourceDependencies compiler option", "/sourceDependencies"]
 ---
-# `/sourceDependencies` (Report source-level dependencies)
+# `/sourceDependencies` (List all source-level dependencies)
 
 This command-line switch generates a JSON file that details the source-level dependencies consumed during compilation. The JSON file contains a list of the source dependencies, which include:
 
-- Header files (both transitive and directly included headers).
+- Header files (both directly included and the list of headers included by those headers).
 - The PCH used (if **`/Yu`** is specified).
-- Imported modules and imported header units (both transitive and directly imported module/header units).
+- Names of imported modules
+- File paths and names of imported header units (both directly imported and those imported by those modules and headers units).
+
+This provides information necessary to build modules and header units in the proper dependency order.
 
 ## Syntax
 
@@ -79,20 +82,9 @@ where `...` represents your other compiler options. This command line produces a
 
 We've used `...` to abbreviate the reported paths; the report contains the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you may want to check your project's include path settings.
 
-### To set the /sourceDependencies compiler option in Visual Studio
+### To set this compiler option in the Visual Studio development environment
 
-> [!NOTE]
-> This command line switch is typically set by the build system.
-
-1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
-1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
-
-1. In the **Additional options** box, add *`/sourceDependencies: <filename>`* and then choose **OK** or **Apply** to save your changes.
-
-### To set this compiler option programmatically
-
-- This option doesn't have a programmatic equivalent.
+You normally shouldn't set this yourself in the Visual Studio development environment. It is set by the build system.
 
 ## See also
 

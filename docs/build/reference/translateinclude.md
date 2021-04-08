@@ -2,12 +2,14 @@
 title: "/translateInclude (Translate include directives into import directives)"
 description: "Use the /translateInclude compiler option to treat #include directives as import statements when an importable header unit is available."
 ms.date: 4/13/2021
+author: "tylermsft"
+ms.author: "twhitney"
 f1_keywords: ["/translateInclude"]
 helpviewer_keywords: ["/translateInclude", "Translate include directives into import directives"]
 ---
 # `/translateInclude` (Translate include directives into import directives)
 
-Instructs the compiler to treat `#include` as `import` for headers that have been prebuilt into a header unit (`.ifc`) file. 
+Instructs the compiler to treat `#include` as `import` for headers that have been prebuilt into a header unit (`.ifc`) file.
 
 ## Syntax
 
@@ -49,21 +51,24 @@ And a source *`.cpp`* file that includes the headers,
 int main() { }
 ```
 
-The **`/translateInclude`** option allows the compiler to import the header units instead of compiling the headers again. Here's an example command line that translates the include directives for *`util.h`* and *`app.h`* into imports of the header units instead:
+The **`/translateInclude`** option allows the compiler to treat an `#include` as an `import` for header files that have a corresponding compiled header unit file (*`.ifc`*) and that have been specified on the command line via the `/headerUnit` switch.
+
+If an `#include` is encountered that doesn't have a corresponding header unit specified via the `/headerUnit` switch, it is processed by the preprocessor as a normal `#include` directive.
+
+ Here's an example command line that translates the include directives for *`util.h`* and *`app.h`* into imports of the header units instead:
 
 ```CMD
 cl /IC:\ /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit C:\app\app.h=C:\app.h.ifc
 ```
 
-### To set this compiler option in the Visual Studio development environment
+## To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+To enable `/TranslateInclude`, set the **Translate Includes to Imports** option in project properties:
 
-1. Set the **Configuration** drop-down to **All Configurations**.
+1. In the left-hand pane of the project property pages, select **Configuration Properties** > **C/C++** > **General**
+1. Change the **Translate Includes to Imports** dropdown to **Yes**
+![Project properties dialog set Translate Includes to Imports](../media/vs2019-translate-includes-option.png)
 
-1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
-
-1. Modify the **Additional Options** property to add the *`/translateInclude`* option. Then, choose **OK** or **Apply** to save your changes.
 
 ## See also
 

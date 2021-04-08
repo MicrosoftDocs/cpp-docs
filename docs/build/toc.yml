@@ -91,8 +91,6 @@
       href: ../build/walkthrough-header-units.md
     - name: "Walkthrough: Import STL libraries as header units"
       href: ../build/walkthrough-import-stl-header-units.md
-    - name: header-unit.json schema reference (C++)
-      href: ../build/header-unit-json-reference.md
 - name: Precompiled header files
   href: ../build/creating-precompiled-header-files.md
 - name: C++ release builds
@@ -705,9 +703,9 @@
                   href: ../build/reference/showincludes-list-include-files.md
                 - name: /source-charset (Set source character set)
                   href: ../build/reference/source-charset-set-source-character-set.md
-                - name: /sourceDependencies (List source-level dependencies)
+                - name: /sourceDependencies (List all source-level dependencies)
                   href: ../build/reference/sourcedependencies.md
-                - name: /sourceDependencies:directives (List source-level dependencies-use allowlist)
+                - name: /sourceDependencies:directives (List module and header unit dependencies)
                   href: ../build/reference/sourcedependencies-directives.md
                 - name: /std (Specify language standard version)
                   href: ../build/reference/std-specify-language-standard-version.md

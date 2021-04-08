@@ -57,25 +57,15 @@ Given a project that references two header files and their header units, listed 
 The compiler options to reference the header units for these particular header files might look like this:
 
 ```CMD
-cl ... /std:c++latest /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit:quote app.h=app.h.ifc
+cl ... /std:c++latest /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit:quote app.h=app.h.ifc
 ```
 
 ### To set this compiler option in the Visual Studio development environment
 
-> [!NOTE]
-> This command line switch is typically set by the build system.
-
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
-1. Set the **Configuration** drop-down to **All Configurations**.
-
-1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
-
-1. Modify the **Additional Options** property to add the *`/headerUnit`* options and arguments. Then, choose **OK** or **Apply** to save your changes.
+You normally shouldn't set this in the Visual Studio development environment. It is set by the build system.
 
 ## See also
 
 [`/exportHeader` (Create header units)](module-exportheader.md)\
 [`/headerName` (Create a header unit from the specified header)](headername.md)\
 [`/reference` (Use named module IFC)](module-reference.md)\
-[`/translateInclude` (Translate include directives into import directives)](translateinclude.md)

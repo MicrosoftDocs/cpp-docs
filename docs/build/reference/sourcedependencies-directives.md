@@ -1,5 +1,5 @@
 ---
-title: "/sourceDependencies:directives (Report source-level dependencies and use an allowlist)"
+title: "/sourceDependencies:directives (List module and header unit dependencies)"
 description: "Reference guide to the /sourceDependencies:directives compiler option in Microsoft C++."
 ms.date: 04/13/2020
 author: "tylermsft"
@@ -7,15 +7,19 @@ ms.author: "twhitney"
 f1_keywords: ["/sourceDependencies:directives"]
 helpviewer_keywords: ["/sourceDependencies:directives compiler option", "/sourceDependencies:directives"]
 ---
-# `/sourceDependencies:directives` (List headers, and other source dependencies, using a list of headers that can be converted to header units.)
+# `/sourceDependencies:directives` (List module and header unit dependencies)
 
-This command-line switch generates a JSON file that details the source-level dependencies consumed during compilation. It also looks for a `header-units.json` file that specifies which header files can be converted to header units.
+This command-line switch generates a JSON file that lists the module and header-unit dependencies in your project.
+
+It identifies which modules and header units need to be compiled before the project that uses them is compiled. For instance, it will list `import <library>;` or `import "library"; as a header unit dependency, and `import name;` as a module dependency.
 
 This command-line option is similar to [`/sourceDependencies`](sourcedependencies.md), but differs in the following ways:
 
-- Unlike `/sourceDependencies`, the compiler doesn't produce compiled output. Instead, the files are scanned for module directives, but no compiled code, modules, or header units are produced.
-- Unlike `/sourceDependencies`, the output JSON file doesn't list imported modules and imported header units (`.ifc` files) because this switch does a scan of the project files, not a compilation, so there are no built modules or header units to import.
-- `/sourceDependencies:directives`is designed to be used before *`.ifc`* files are built.
+- The compiler doesn't produce compiled output. Instead, the files are scanned for module directives. No compiled code, modules, or header units are produced.
+- The output JSON file doesn't list imported modules and imported header units (*`.ifc`* files) because this switch does a scan of the project files, not a compilation, so there are no built modules or header units to list.
+- Only directly imported modules or header units are listed. It doesn't list the dependencies of the imported modules or header units themselves.
+- Header file dependencies are not listed. That is, `#include <file>` or `#include "file"` dependencies are not listed.
+- `/sourceDependencies:directives`is meant to be used before *`.ifc`* files are built.
 
 ## Syntax
 
@@ -43,16 +47,6 @@ When a non-fatal compiler error occurs, the dependency information still gets wr
 
 All file paths appear as absolute paths in the output.
 
-This switch is used in combination with [`/translateInclude`](translateinclude.md).
-
-`header-units.json` is used with the build system's **Scan Sources for Module Dependencies** to determine which header files can be compiled into a header unit. When this switch is specified, header files found in the scanned source files, that are also listed in `header-units.json`, are considered eligible to be compiled into header units. Files not in the list are instead treated as a normal `#include`.
-
-The compiler looks for `header-units.json` where the header being loaded is located. For more information about the format of this file, see [C++ header-units.json reference](..\header-unit-json-reference.md)
-
-When a non-fatal compiler error occurs, the dependency information still gets written to the output file.
-
-All file paths appear as absolute paths in the output.
-
 ### Examples
 
 Given the following sample code:
@@ -71,9 +65,7 @@ import "t.h";
 int main() {}
 ```
 
-You can use **`/sourceDependencies`** with the rest of your compiler options:
-
-> `cl /std:c++latest /translateInclude /sourceDependencies:directives deps.json main.cpp`
+> `cl /std:c++latest /sourceDependencies:directives deps.json main.cpp`
 
 This command line produces a JSON file *`deps.json`* with content like:
 
@@ -100,20 +92,9 @@ We've used `...` to abbreviate the reported paths; the report contains the absol
 
 No *`.ifc`* files are listed in the output because they weren't built. Unlike `/sourceDependencies`, the compiler doesn't produce compiled output when `/sourceDependencies:directives`is specified, so no compiled modules or header units are produced to import.
 
-### To set the /sourceDependencies compiler option in Visual Studio
+## To set this compiler option in the Visual Studio development environment
 
-> [!NOTE]
-> This command line switch is typically set by the build system.
-
-1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
-1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
-
-1. In the **Additional options** box, add *`/sourceDependencies:directives <filename>`* and then choose **OK** or **Apply** to save your changes.
-
-### To set this compiler option programmatically
-
-- This option doesn't have a programmatic equivalent.
+You normally shouldn't set this yourself in the Visual Studio development environment. It is set by the build system.
 
 ## See also
 

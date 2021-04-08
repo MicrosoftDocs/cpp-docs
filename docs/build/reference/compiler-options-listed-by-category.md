@@ -111,8 +111,8 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/headerUnit`](headerunit.md) | Specify where to find the header unit file (`.ifc`) for the specified header. |
 | [`/headerName`](headername.md) | Build a header unit from the specified header. |
 | [`/reference`](module-reference.md) | Use named module IFC. |
-| [`/sourceDependencies`](sourcedependencies.md) | List headers, modules, and other source dependencies. |
-| [`/sourceDependencies:directives`](sourcedependencies.md) | List headers, and other source dependencies, using a list of headers that can be converted to header units. |
+| [`/sourceDependencies`](sourcedependencies.md) | List all source-level dependencies. |
+| [`/sourceDependencies:directives`](sourcedependencies-directives.md) | List module and header unit dependencies. |
 | [`/translateInclude`](translateinclude.md) | Treat `#include` as `import`. |
 
 ## Language

@@ -17,12 +17,14 @@ Tells the compiler to use an existing IFC (*`.ifc`*) for the current compilation
 ### Arguments
 
 *`filename`*\
-The name of a file that contains *IFC data*, prebuilt module information. To import more than one module, include a separate **`/reference`** option for each file.
+The name of a file that contains *IFC data*, which is prebuilt module information. To import more than one module, include a separate **`/reference`** option for each file.
 
 *`module-name`*\
 A valid name of an exported primary module interface unit name or full module partition name.
 
 ## Remarks
+
+In most cases you won't need to specify this switch because  the project system discovers module dependencies within a solution automatically.
 
 The **`/reference`** compiler option requires you enable the [/std:c++latest](std-specify-language-standard-version.md) option. The **`/reference`** option is available starting in Visual Studio 2019 version 16.10 Preview 2.
 
@@ -72,22 +74,8 @@ The reference options using *`module-name=filename`* could look like:
 cl ... /std:c++latest /reference m=m.ifc /reference M:Part1=m-part.ifc /reference Core.Networking=Networking.ifc
 ```
 
-### To set this compiler option in the Visual Studio development environment
-
-> [!NOTE]
-> This command line switch is typically set by the build system.
-
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
-1. Set the **Configuration** drop-down to **All Configurations**.
-
-1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
-
-1. Modify the **Additional Options** property to add the *`/reference`* option and its arguments. Then, choose **OK** or **Apply** to save your changes.
-
 ## See also
 
 [`/sourcedependencies:directives` (use header file to header unit allow-list)](sourcedependencies-directives.md)\
 [`/headerUnit` (Use header unit IFC)](headerunit.md)\
 [`/exportHeader` (Create header units)](module-exportheader.md)\
-[`/translateInclude` (Translate include directives into import directives)](translateinclude.md)

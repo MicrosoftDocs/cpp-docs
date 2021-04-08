@@ -20,9 +20,9 @@ Support for header units requires at least Visual Studio 2019 16.10.0 Preview 2.
 
 ## What is a header unit
 
-Header units are a binary representation of a header file, and end with an *`.ifc`* extension. This is also the format used to store named modules.
+Header units are a binary representation of a header file, and end with an *`.ifc`* extension. This is also the format used for named modules.
 
-One important difference between a header unit and a header file is that header units aren't affected by macro definitions. For example, you can't `#define` a symbol that causes the header unit to behave differently when you import it the way you can with a header file. Everything visible from a header file is also visible from a header unit.
+One important difference between a header unit and a header file is that header units aren't affected by macro definitions. You can't `#define` a symbol that causes the header unit to behave differently when you import it the way you can with a header file. Everything visible from a header file is also visible from a header unit.
 
 Before you can import a header unit, a header file must be compiled into a header unit. An advantage of header units (*`.ifc`* files) over a PCH is that it can be used in distributed builds. For example, as long as you're using the same compiler to compile the *`.ifc`*  and the program that imports it, and are targeting the same platform and architecture, a header unit produced on one machine can be used on another.
 
@@ -35,14 +35,12 @@ Another advantage of header units over a PCH is that there's more flexibility wh
 
 There are several ways to compile a file into a header unit:
 
--Automatically scan for header units: This approach is best suited to smaller projects that include many different header files. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1) for a demonstration of this approach. The reason it's better suited to smaller projects, or for those where build time isn't a crucial consideration, is because it takes extra time for the build system to scan all of the files to find what should be built into header units. This scanning can be done at the project level for all source files, or at the individual file level.
+- Automatically scan for header units: This approach is best suited to smaller projects that include many different header files. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1) for a demonstration of this approach. The reason it's better suited to smaller projects is because it can't guarantee optimal build throughput since it has to scan all of the files to find what should be built into header units. This scanning can be done at the project level for all source files, or at the individual file level if you want to manually specify which headers to compile into header units.
 
--Build a shared header units project: This approach is best suited for larger projects, and for when you want more control over the organization of the imported header units. You create a static library (or libraries) that contain the header units that you want. Then reference the library (or libraries) from the projects that then import the header units they need. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2) for a demonstration of this approach.
+- Build a shared header units project: This approach is best suited for larger projects, and for when you want more control over the organization of the imported header units. You create a static library project (or projects) that contain the header units that you want. Then reference the library project (or projects) from the project that then imports the header units it needs. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2) for a demonstration of this approach.
 
 - Choose individual header units to build by changing the compilation action for a file. This approach is demonstrated here. This approach gives you file by file control over which header files are treated as header units. It's also a good way to quickly and selectively try out header units in your project.
 
-To build header units from the headers in your codebase, you can use any of the methods above. To build and use header units for library headers that aren't part of your codebase, use the technique described in [Walkthrough: Import STL libraries using header units](walkthrough-import-stl-header-units.md).
- 
 ## Convert a project to use header units
 
 In this example, you'll compile a header file as a header unit. Begin by creating the following project in Visual Studio:
@@ -69,15 +67,16 @@ void PrintPythogoreanTriple(int a, int b)
 }
 ```
 
-To enable header units, set the project C++ language standard to use the latest features:
+To enable header units, first set the project C++ language standard to use the latest features:
 
+1. Right-click the project in the **Solution Explorer** and select **Properties**. 
 1. In the left-hand pane of the project property pages, select **Configuration Properties** > **General**
 1. Change the **C++ Language Standard** dropdown to **Preview-Features from the Latest C++ Working Draft**
 ![Set language standard to preview version](media/set-cpp-language-latest.png)
 
 ### Compile a header file as a header unit
 
-In the **Solution Explorer**, select the file you want to compile as a header unit. Right-click the file, and select **Properties**. Then do one of the following depending on the file type:
+In the **Solution Explorer**, select the file you want to compile as a header unit. Right-click the file, and select **Properties**. Then do one of the following, depending on the file type:
 
 For header files:
 - Set the **Item Type** property to **C/C++ compiler**. By default, header files have an **Item Type** of **C/C++ header**. Setting this property also sets **C/C++** > **Advanced** > **Compile As** to **Compile as C++ Header Unit (/exportHeader)** for you.
@@ -91,7 +90,7 @@ For source files (or header files that don't have a `.h` or `.hpp` extension):
 
 In the source file for the example project, the file that contains `main()`, change `#include "Pythagorean.h"` to `import "Pythagorean.h";` (don't forget the trailing semicolon that is required for `import` statements). When you're compiling a header unit from a system header, use angle brackets (`#import <file>;`). If it's a project header, use `import "file";`
 
-Build the solution (**Build** > **Build Solution** from the main menu, or press `F6`) and run it to see that it produces the expected output: `Pythagorean triple a:2 b:3 c:13`
+Build the solution (**Build** > **Build Solution** from the main menu) and run it to see that it produces the expected output: `Pythagorean triple a:2 b:3 c:13`
 
 In your own projects, repeat this process to compile the header files you want to import as header units.
 

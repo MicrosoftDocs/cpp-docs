@@ -15,7 +15,7 @@ Tells the compiler to create the header units specified by the input arguments. 
 
 > **`/exportHeader /headerName:angle`** *`header-name`*
 > **`/exportHeader /headerName:quote`** *`header-name`*
-
+> **`/exportHeader`** *`header-name-including-path`* Note: this form is deprecated
 
 ### Arguments
 
@@ -53,16 +53,7 @@ cl … /std:c++latest /exportHeader /headerName:quote util/util.h
 
 ### To set this compiler option in the Visual Studio development environment
 
-> [!NOTE]
-> This command line switch is typically set by the build system.
-
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
-1. Set the **Configuration** drop-down to **All Configurations**.
-
-1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
-
-1. Modify the **Additional Options** property to add the *`/exportHeader`* option and any arguments. Then, choose **OK** or **Apply** to save your changes.
+You normally shouldn't set this in the Visual Studio development environment. It is set by the build system.
 
 ## See also
 
