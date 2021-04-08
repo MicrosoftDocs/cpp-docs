@@ -28,7 +28,7 @@ CMake version 3.20 or higher is required when invoking CMake with `CMakePresets.
 
 `CMakePresets.json` integration isn't enabled by default in Visual Studio 2019. You can enable it for all CMake projects in **Tools** > **Options** > **CMake** > **General**:
 
-![Enable `CMakePresets.json` in CMake options > General](./media/enable-cmakepresets.PNG)
+![Enable `CMakePresets.json` in CMake options > General](./media/enable-cmakepresets.png)
 
 > [!Important]
 > Close and reopen the folder in Visual Studio to activate the integration.
@@ -105,13 +105,13 @@ A `CMakePresets.json` file with the default Configure Presets is automatically c
 
 Visual Studio provides three dropdowns when `CMakePresets.json` integration is enabled:
 
-![Target system dropdown](./media/target-system-dropdown.PNG)
+![Target system dropdown](./media/target-system-dropdown.png)
 
 ### Select a target system
 
 The dropdown on the left indicates the active **Target System**. This is the system on which CMake will be invoked to configure and build the project. This dropdown lists your local machine, all SSH connections in the **Connection Manager** by host name, and all Windows Subsystem for Linux (WSL) installations that Visual Studio can find:
 
-![Target system dropdown selection examples for local machine, a SSH connection, and WSL ubuntu and WSL debian](./media/target-system-selections.PNG)
+![Target system dropdown selection examples for local machine, a SSH connection, and WSL ubuntu and WSL debian](./media/target-system-selections.png)
  
 In the example above:
 - **192.168.0.5** is a remote Linux system that was added to the **Connection Manager**.
@@ -165,7 +165,7 @@ Use forward slashes (`/`) for paths in `CMakePresets.json` and `CMakeUserPresets
 
 To add a new Configure Preset to `CMakePresets.json`, from **Solution Explorer** right-click `CMakePresets.json` from **Folder View** and select **Add Configure Preset…** from the context menu. The dialog to select a Configure Preset template appears:
 
-![Add configure preset to `CMakePresets.json` dialog](./media/add-configure-preset-to-cmakepresets.PNG)
+![Add configure preset to `CMakePresets.json` dialog](./media/add-configure-preset-to-cmakepresets.png)
 
 Choose the **Windows x64 Debug** template to configure on Windows systems. Choose the **Linux Debug** template to configure on WSL and remote Linux systems. See [Edit presets](#edit-presets) for more information on editing `CMakePresets.json`.
 
