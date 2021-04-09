@@ -81,7 +81,7 @@ This step creates a project that includes two libraries: `<iostream>` and `<vect
 Follow these steps to set the options that cause the build system to scan for imported headers to compile into header units:
 
 1. From the main menu, choose **Project** > **Properties**. The project properties window appears:
-![Scan module dependencies property setting](media/vs2019-scan-module-dependencies.png)
+:::image type="content" source="media/vs2019-scan-module-dependencies.png" alt-text="Screenshot showing the scan module dependencies property setting in the project properties window.":::
 1. You may want to set the **Configuration** dropdown to **All Configurations** and **Platform** dropdown to **All Platforms**. This propagates the settings we will change so they apply whether you are building for debug or release, and so on.
 1. In the left-hand pane of the project property page, select **C/C++** > **General**
 1. Set **Scan Sources for Module Dependencies** to **Yes**  Because we're setting the project property, all sources in this project will be scanned. This could be set at the file level, but here we scan the entire project.
@@ -90,7 +90,7 @@ Change the C++ language standard for the compiler. The latest preview setting is
 
 1. In the left-hand pane of the project property pages, select **Configuration Properties** > **General**
 1. Change the **C++ Language Standard** dropdown to **Preview-Features from the Latest C++ Working Draft**
-![Set language standard to preview version](media/set-cpp-language-latest.png)
+:::image type="content" source="media/set-cpp-language-latest.png" alt-text="Screenshot showing where to set the language standard.":::
 1. Click **OK** to close the project properties pages, and then build the solution: **Build** > **Build Solution** from the main menu.
 
 You can run the solution to verify that it produces the expected output: `1`
@@ -126,7 +126,7 @@ Begin by creating the project for the shared header unit as follows:
 Set project properties to share the header units from this project:
 
 1. From the Visual Studio main menu, choose **Project** > **Properties**. The project properties window appears:
-![Settings for Configuration type and C++ language standard](media/set-header-unit-library-settings.png)
+:::image type="content" source="media/set-header-unit-library-settings.png" alt-text="Screenshot showing settings for Configuration type and C++ language standard.":::
 1. You may want to set the **Configuration** dropdown to **All Configurations** and **Platform** dropdown to **All Platforms**. This propagates the settings we will change so they apply whether you are building for debug or retail, and so on.
 1. In the left-hand pane of the project property page, select **General**
 1. Change the **Configuration Type** option to **Static library (.lib)**
@@ -208,8 +208,7 @@ To access this setting:
 1. Select the project in the **Solution Explorer**, then right-click the project and select **Properties**.
 1. In the left-hand pane of the project properties window, select **C/C++** > **General**.
 1. Add the modules to reference in the **Additional Module Dependencies** dropdown.
-![Project properties under C/C++, General, which Additional Module Dependencies selected](media/vs2019-additional-module-dependencies.png)
-
+:::image type="content" source="media/vs2019-additional-module-dependencies.png" alt-text="Screenshot showing project properties under C/C++, General, which Additional Module Dependencies selected.":::
 Here's an example of the format to use for **Additional Module Dependencies**: `ModuleName1=Path\To\ModuleName1.ifc; ModuleName2=Path\To\ModuleName2.ifc`
 
 ## Select among multiple copies of a header unit
