@@ -1,7 +1,7 @@
 ---
 description: "Learn more about C++ header units by converting a header file to a header unit"
 title: "Walkthrough: Build and import header units in Microsoft Visual C++ projects"
-ms.date: "4/13/2021"
+ms.date: "4/12/2021"
 ms.custom: "conceptual"
 author: "tylermsft"
 ms.author: "twhitney"
