@@ -76,6 +76,6 @@ cl ... /std:c++latest /reference m=m.ifc /reference M:Part1=m-part.ifc /referenc
 
 ## See also
 
-[`/sourcedependencies:directives` (use header file to header unit allow-list)](sourcedependencies-directives.md)\
+[`/sourceDependencies:directives` (use header file to header unit allow-list)](sourcedependencies-directives.md)\
 [`/headerUnit` (Use header unit IFC)](headerunit.md)\
 [`/exportHeader` (Create header units)](module-exportheader.md)\
