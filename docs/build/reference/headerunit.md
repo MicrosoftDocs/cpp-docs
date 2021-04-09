@@ -31,7 +31,7 @@ The **`/headerUnit`** compiler option requires the [/std:c++latest](std-specify-
 
 The **`/headerUnit`** compiler option is available starting in Visual Studio 2019 version 16.10 preview 2.
 
-When the compiler comes across `import "file";` or `import <file>`, this compiler switch helps the compiler find the compiled header unit (*`.ifc`*) for the specified header file. The path to this file can be expressed in three ways:
+When the compiler comes across `import "file";` or `import <file>;`, this compiler switch helps the compiler find the compiled header unit (*`.ifc`*) for the specified header file. The path to this file can be expressed in three ways:
 
 **`/headerUnit`** looks up the compiled header unit in the current directory, or at the location specified in *`ifc-filename`*.
 
