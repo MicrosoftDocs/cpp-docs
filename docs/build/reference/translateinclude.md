@@ -63,7 +63,7 @@ cl /IC:\ /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit
 
 ## To set this compiler option in the Visual Studio development environment
 
-To enable `/TranslateInclude`, set the **Translate Includes to Imports** option in project properties:
+To enable `/translateInclude`, set the **Translate Includes to Imports** option in project properties:
 
 1. In the left-hand pane of the project property pages, select **Configuration Properties** > **C/C++** > **General**
 1. Change the **Translate Includes to Imports** dropdown to **Yes**
