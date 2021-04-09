@@ -96,7 +96,7 @@ Build the solution (**Build** > **Build Solution** from the main menu) and run i
 
 In your own projects, repeat this process to compile the header files you want to import as header units.
 
-If you only want to convert a few header files to header units, this is a good approach. But if you have many header files that you want to compile, and the convenience of having the build system automatically handle it outweighs the impact on build performance, you can have the build system scan for, and build, header units for you. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1).
+If you only want to convert a few header files to header units, this is a good approach. But if you have many header files that you want to compile, and the convenience of having the build system automatically handle it outweighs the potential impact on build performance, you can have the build system scan for, and build, header units for you. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1).
 
 ## See also
 
