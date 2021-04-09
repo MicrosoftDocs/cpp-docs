@@ -23,8 +23,9 @@ This command-line option is similar to [`/sourceDependencies`](sourcedependencie
 
 ## Syntax
 
-> **`/sourceDependencies:directives[-]`** *filename*\
-> **`/sourceDependencies:directives[-]`** *directory*
+> **`/sourceDependencies:directives`** -\
+> **`/sourceDependencies:directives`** *filename*\
+> **`/sourceDependencies:directives`** *directory*\
 
 ## Arguments
 

@@ -20,8 +20,9 @@ This provides information necessary to build modules and header units in the pro
 
 ## Syntax
 
-> **`/sourceDependencies[-]`** *filename*\
-> **`/sourceDependencies[-]`** *directory*\
+> **`/sourceDependencies`** -\
+> **`/sourceDependencies`** *filename*\
+> **`/sourceDependencies`** *directory*\
 
 ## Arguments
 

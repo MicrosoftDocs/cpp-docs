@@ -82,7 +82,7 @@ Follow these steps to set the options that cause the build system to scan for im
 
 1. From the main menu, choose **Project** > **Properties**. The project properties window appears:
 ![Scan module dependencies property setting](media/vs2019-scan-module-dependencies.png)
-1. You may want to set the **Configuration** dropdown to **All Configurations** and **Platform** dropdown to **All Platforms**. This propagates the settings we will change so they apply whether you are building for debug or retail, and so on.
+1. You may want to set the **Configuration** dropdown to **All Configurations** and **Platform** dropdown to **All Platforms**. This propagates the settings we will change so they apply whether you are building for debug or release, and so on.
 1. In the left-hand pane of the project property page, select **C/C++** > **General**
 1. Set **Scan Sources for Module Dependencies** to **Yes**  Because we're setting the project property, all sources in this project will be scanned. This could be set at the file level, but here we scan the entire project.
 
