@@ -6,29 +6,6 @@ f1_keywords: ["<ranges>"]
 helpviewer_keywords: ["ranges header"]
 ---
 
-introduction - what is a range
-    motivations/advantages
-    example
-
-It’s been 20 years since the STL was standardized, and all I want to do is pass a vector to sort. Is that too much to ask? Nope. With C++20, you will finally be able to do this: https://ericniebler.com/2018/12/05/standard-ranges/
-
-std::vector< int > v =  // ...
-std::ranges::sort( v ); // Hurray!
-
-Pillars: https://github.com/ericniebler/range-v3
-Views - Views are composable adaptations of ranges where the adaptation happens lazily as the view is iterated. 
-Actions - an action is an eager application of an algorithm to a container that mutates the container in-place and returns it for further processing.
-Algorithms
-
-range adaptors : https://ericniebler.com/2018/12/05/standard-ranges/
-    example
-    Also The true power of ranges lies in the ability to create pipelines that transform ranges on the fly https://ericniebler.com/2018/12/05/standard-ranges/
-    but these may be out of date - verify in product
-view adaptors
-    https://www.fluentcpp.com/2017/01/12/ranges-stl-to-the-next-level/ (good range/view examples, composability)
-    example
-
-Views and actions use the pipe syntax (e.g., rng | adapt1 | adapt2 | ...) so your code is terse and readable from left to right.
 
 Range algorithms available (casey list):
 https://devblogs.microsoft.com/cppblog/initial-support-for-c20-ranges/
@@ -36,8 +13,17 @@ https://devblogs.microsoft.com/cppblog/initial-support-for-c20-ranges/
 
 # `<ranges>`
 
-INTRO:
+## INTRO
 
+introduction - what is a range
+    motivations/advantages
+    example
+
+
+Pillars: https://github.com/ericniebler/range-v3
+Views - Views are composable adaptations of ranges where the adaptation happens lazily as the view is iterated. 
+Actions - an action is an eager application of an algorithm to a container that mutates the container in-place and returns it for further processing.
+Algorithms
 From eric niebler
 Ranges are an extension of the Standard Template Library that makes its iterators and algorithms more powerful by making them composable. Unlike other range-like solutions which seek to do away with iterators, in range-v3 ranges are an abstration layer on top of iterators.
 
@@ -48,6 +34,9 @@ Views and actions use the pipe syntax (e.g., rng | adapt1 | adapt2 | ...) so you
 http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4128.html#design-goals
 Ranges (not Iterables) are copyable and assignable. They don't own the elements like, say, a container 
 
+It’s been 20 years since the STL was standardized, and all I want to do is pass a vector to sort. Is that too much to ask? Nope. With C++20, you will finally be able to do this: https://ericniebler.com/2018/12/05/standard-ranges/
+std::vector< int > v =  // ...
+std::ranges::sort( v ); // Hurray!
 
 > what it is - anything you can iterate through (docs.microsoft.com when talking about range-based for) 
 Essentially, a range is something that can be traversed. More precisely, a range is something that has a begin() and an end() method, that return objects (iterators) that let you iterate over the range (that is, move along the elements of the range, and be dereferenced to access these elements).  - https://www.fluentcpp.com/2017/01/12/ranges-stl-to-the-next-level/
@@ -73,7 +62,10 @@ Such algorithms reuse the STL versions in their implementation, by forwarding th
     std::vector<int> numbers = {1, 2, 3, 4, 5, 6};
     auto results = numbers | std::views::filter([](int n){ return n % 2 == 0; })
                            | std::views::transform([](int n){ return n * 2; });
-> What is a range adaptor:
+
+## range adaptor
+
+What is a range adaptor:
 A range adaptor is an object that can be combined with a range in order to produce a new range. 
     https://www.fluentcpp.com/2017/01/12/ranges-stl-to-the-next-level/
     With the following collection of numbers:
@@ -87,7 +79,20 @@ A range adaptor is an object that can be combined with a range in order to produ
     ranges::accumulate(numbers | view::transform(multiplyBy2), 0);
     returns 1*2 + 2*2 + 3*2 + 4*2 + 5*2 = 30 (similarly to std::accumulate, ranges::accumulate does the sum of the elements of the range it is passed to).
 
+range adaptors : https://ericniebler.com/2018/12/05/standard-ranges/
+    example
+    Also The true power of ranges lies in the ability to create pipelines that transform ranges on the fly https://ericniebler.com/2018/12/05/standard-ranges/
+    but these may be out of date - verify in product
 
+
+
+## Views
+
+Views and actions use the pipe syntax (e.g., rng | adapt1 | adapt2 | ...) so your code is terse and readable from left to right.
+
+view adaptors
+    https://www.fluentcpp.com/2017/01/12/ranges-stl-to-the-next-level/ (good range/view examples, composability)
+    example
 
 List of views: https://www.modernescpp.com/index.php/c-20-the-ranges-library
 
