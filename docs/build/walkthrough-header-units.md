@@ -37,7 +37,7 @@ There are several ways to compile a file into a header unit:
 
 - Automatically scan for header units: This approach is best suited to smaller projects that include many different header files. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1) for a demonstration of this approach. The reason it's better suited to smaller projects is because it can't guarantee optimal build throughput since it has to scan all of the files to find what should be built into header units. This scanning can be done at the project level for all source files, or at the individual file level if you want to manually specify which headers to compile into header units.
 
-- Build a shared header units project: This approach is best suited for larger projects, and for when you want more control over the organization of the imported header units. You create a static library project (or projects) that contain the header units that you want. Then reference the library project (or projects) from the project that then imports the header units it needs. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2) for a demonstration of this approach.
+- Build a shared header unit project: This approach is best suited for larger projects, and for when you want more control over the organization of the imported header units. You create a static library project (or projects) that contain the header units that you want. Then reference the library project (or projects) from the project that then imports the header units it needs. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2) for a demonstration of this approach.
 
 - Choose individual header units to build by changing the compilation action for a file. This approach is demonstrated here. This approach gives you file by file control over which header files are treated as header units. It's also a good way to quickly and selectively try out header units in your project.
 
@@ -47,44 +47,46 @@ In this example, you'll compile a header file as a header unit. Begin by creatin
 
 1. Create a new C++ console app project.
 1. Replace the source file contents as follows:
-```cpp
-#include "Pythagorean.h"
-
-int main()
-{
-    PrintPythogoreanTriple(2,3);
-    return 0;
-}
-```
+    ```cpp
+    #include "Pythagorean.h"
+    
+    int main()
+    {
+        PrintPythogoreanTriple(2,3);
+        return 0;
+    }
+    ```
 1. Add a header file called `Pythagorean.h`, and replace its contents with the following:
-```cpp
-#pragma once
-#include <iostream>
-
-void PrintPythogoreanTriple(int a, int b)
-{
-    std::cout << "Pythagorean triple a:" << a << " b:" << b << " c:" << a*a + b*b << std::endl;
-}
-```
+    ```cpp
+    #pragma once
+    #include <iostream>
+    
+    void PrintPythogoreanTriple(int a, int b)
+    {
+        std::cout << "Pythagorean triple a:" << a << " b:" << b << " c:" << a*a + b*b << std::endl;
+    }
+    ```
 
 To enable header units, first set the project C++ language standard to use the latest features:
 
 1. Right-click the project in the **Solution Explorer** and select **Properties**. 
 1. In the left-hand pane of the project property pages, select **Configuration Properties** > **General**
 1. Change the **C++ Language Standard** dropdown to **Preview-Features from the Latest C++ Working Draft**
-![Set language standard to preview version](media/set-cpp-language-latest.png)
+:::image type="content" source="media/set-cpp-language-latest.png" alt-text="Screenshot showing setting the language standard to preview version.":::
 
 ### Compile a header file as a header unit
 
 In the **Solution Explorer**, select the file you want to compile as a header unit. Right-click the file, and select **Properties**. Then do one of the following, depending on the file type:
 
 For header files:
-- Set the **Item Type** property to **C/C++ compiler**. By default, header files have an **Item Type** of **C/C++ header**. Setting this property also sets **C/C++** > **Advanced** > **Compile As** to **Compile as C++ Header Unit (/exportHeader)** for you.
-![Changing the item type to c/c++ compiler](media/change-item-type.png)
+
+Set the **Item Type** property to **C/C++ compiler**. By default, header files have an **Item Type** of **C/C++ header**. Setting this property also sets **C/C++** > **Advanced** > **Compile As** to **Compile as C++ Header Unit (/exportHeader)** for you.
+:::image type="content" source="media/change-item-type.png" alt-text="Screenshot showing changing the item type to c/c++ compiler.":::
 
 For source files (or header files that don't have a `.h` or `.hpp` extension):
-- Set the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**.
-![Changing Compile As to Compile as C++ Header Unit ](media/change-compile-as.png)
+
+Set the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**.
+:::image type="content" source="media/change-compile-as.png" alt-text="Screenshot showing changing Compile As to Compile as C++ Header Unit.":::
 
 ### Change your code to import a header unit
 

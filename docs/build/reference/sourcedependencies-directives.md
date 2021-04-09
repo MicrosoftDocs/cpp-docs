@@ -94,7 +94,7 @@ We've used `...` to abbreviate the reported paths; the report contains the absol
 
 No *`.ifc`* files are listed in the output because they weren't built. Unlike `/sourceDependencies`, the compiler doesn't produce compiled output when `/sourceDependencies:directives`is specified, so no compiled modules or header units are produced to import.
 
-## To set this compiler option in the Visual Studio development environment
+## To set this compiler option in Visual Studio
 
 You normally shouldn't set this yourself in the Visual Studio development environment. It is set by the build system.
 

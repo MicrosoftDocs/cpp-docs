@@ -61,7 +61,7 @@ If an `#include` is encountered that doesn't have a corresponding header unit sp
 cl /IC:\ /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit C:\app\app.h=C:\app.h.ifc
 ```
 
-## To set this compiler option in the Visual Studio development environment
+## To set this compiler option in Visual Studio
 
 To enable `/translateInclude`, set the **Translate Includes to Imports** option in project properties:
 
