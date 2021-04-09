@@ -9,11 +9,29 @@ helpviewer_keywords: ["ranges header"]
 introduction - what is a range
     motivations/advantages
     example
-range adaptors
+
+It’s been 20 years since the STL was standardized, and all I want to do is pass a vector to sort. Is that too much to ask? Nope. With C++20, you will finally be able to do this: https://ericniebler.com/2018/12/05/standard-ranges/
+
+std::vector< int > v =  // ...
+std::ranges::sort( v ); // Hurray!
+
+Pillars: https://github.com/ericniebler/range-v3
+Views - Views are composable adaptations of ranges where the adaptation happens lazily as the view is iterated. 
+Actions - an action is an eager application of an algorithm to a container that mutates the container in-place and returns it for further processing.
+Algorithms
+
+range adaptors : https://ericniebler.com/2018/12/05/standard-ranges/
     example
+    Also The true power of ranges lies in the ability to create pipelines that transform ranges on the fly https://ericniebler.com/2018/12/05/standard-ranges/
+    but these may be out of date - verify in product
 view adaptors
     https://www.fluentcpp.com/2017/01/12/ranges-stl-to-the-next-level/ (good range/view examples, composability)
     example
+
+Views and actions use the pipe syntax (e.g., rng | adapt1 | adapt2 | ...) so your code is terse and readable from left to right.
+
+Range algorithms available (casey list):
+https://devblogs.microsoft.com/cppblog/initial-support-for-c20-ranges/
 
 
 # `<ranges>`
