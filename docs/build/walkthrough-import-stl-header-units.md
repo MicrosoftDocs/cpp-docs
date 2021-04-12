@@ -165,7 +165,7 @@ Change the **C++ Language Standard** for the compiler. The [`/std:c++latest`](./
 Add a reference from the **Walkthrough** project to the **SharedPrj** project.
 
 1. Under the **Walkthrough** project, click on the **References** node, and select **Add Reference**. Select **SharedPrj** from the list of projects. 
-:::image type="content" source="./media/add-reference-to-walkthrough.png" alt-text="Screenshot showing the add reference dialog. Used to add a reference to the Walkthough project.":::
+:::image type="content" source="./media/add-reference-to-walkthrough.png" alt-text="Screenshot showing the add reference dialog. Used to add a reference to the Walkthrough project.":::
 What this reference accomplishes is that the build system will use the header units built by **SharedPrj** whenever an `import` in the **Walkthrough** project matches one of the built header units in **SharedPrj**
 1. Click **OK** to close the **Add Reference** dialog
 1. Right-click the **Walkthrough** project and select **Set as Startup Project**
