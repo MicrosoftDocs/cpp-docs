@@ -12,9 +12,9 @@ CMake supports two files, `CMakePresets.json` and `CMakeUserPresets.json`, that 
 Use `CMakePresets.json` and `CMakeUserPresets.json` to drive CMake in Visual Studio and Visual Studio Code, in a Continuous Integration (CI) pipReline, and from the command line. `CMakePresets.json` is intended to save project-wide builds, and `CMakeUserPresets.json` is intended for developers to save their own local builds. `CMakePresets.json` is supported in Visual Studio 2019 version 16.10 or later.
 
 This article contains information about `CMakePresets.json` integration Visual Studio.
-- For more information on the format of `CMakePresets.json`, see the official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#id1). 
-- For more information on the Microsoft vendor maps and macro expansion, see [`CMakePresets.json` and `CMakeUserPresets.json` Microsoft vendor maps](cmake-presets-json-reference.md).
-- For more information on how to use `CMakePresets.json` in Visual Studio Code, see [Configure and build with CMake Presets](https://github.com/microsoft/vscode-cmake-tools/tree/develop/docs/cmake-presets.md).
+- For more information about the format of `CMakePresets.json`, see the official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#id1). 
+- For more information about the Microsoft vendor maps and macro expansion, see [`CMakePresets.json` and `CMakeUserPresets.json` Microsoft vendor maps](cmake-presets-json-reference.md).
+- For more information about how to use `CMakePresets.json` in Visual Studio Code, see [Configure and build with CMake Presets](https://github.com/microsoft/vscode-cmake-tools/tree/develop/docs/cmake-presets.md).
 
  `CMakePresets.json` is a recommended alternative to `CMakeSettings.json`. Visual Studio will never read from both `CMakePresets.json` and `CMakeSettings.json` at the same time. See [Enable `CMakePresets.json` in Visual Studio 2019](#enable-cmakepresetsjson-integration-in-visual-studio-2019) to enable or disable `CMakePresets.json` integration in Visual Studio.
 
@@ -54,6 +54,8 @@ By default, Visual Studio automatically invokes configure each time the active T
 
 If no `CMakePresets.json` or `CMakeUserPresets.json` file exists, or if `CMakePresets.json` or `CMakeUserPresets.json` are invalid, then Visual Studio will fall back on the following default Configure Presets:
 
+**Windows example**
+
 ```json
 {
   "name": "windows-default",
@@ -76,6 +78,8 @@ If no `CMakePresets.json` or `CMakeUserPresets.json` file exists, or if `CMakePr
   }
 },
 ```
+
+**Linux example**
 
 ```json
 {
@@ -159,7 +163,7 @@ In Visual Studio 2019, the Test Explorer isn't integrated with `CMakePresets.jso
 
 In Visual Studio 2019, all commands and preset templates modify `CMakePresets.json`. You can add new user-level presets by directly editing `CMakeUserPresets.json`
 
-Use forward slashes (`/`) for paths in `CMakePresets.json` and `CMakeUserPresets.json`.
+Use a forward slash (`/`) for paths in `CMakePresets.json` and `CMakeUserPresets.json`.
 
 ### Add new Configure Presets
 
@@ -167,7 +171,7 @@ To add a new Configure Preset to `CMakePresets.json`, from **Solution Explorer**
 
 ![Add configure preset to `CMakePresets.json` dialog](./media/add-configure-preset-to-cmakepresets.png)
 
-Choose the **Windows x64 Debug** template to configure on Windows systems. Choose the **Linux Debug** template to configure on WSL and remote Linux systems. See [Edit presets](#edit-presets) for more information on editing `CMakePresets.json`.
+Choose the **Windows x64 Debug** template to configure on Windows systems. Choose the **Linux Debug** template to configure on WSL and remote Linux systems. See [Edit presets](#edit-presets) for more information about editing `CMakePresets.json`.
 
 The selected template will be added to `CMakePresets.json` if it exists. Otherwise, the template will be copied into a new `CMakePresets.json`.
 
@@ -228,7 +232,7 @@ To build on Linux or without the Visual C++ toolset, specify the name of a compi
 },
 ```
 
-You can also set compilers with a CMake toolchain file. Toolchain files can be set with `cacheVariables.CMAKE_TOOLCHAIN_FILE`, which is equivalent to passing` -D CMAKE_TOOLCHAIN_FILE=<value>` to CMake from the command line. A CMake toolchain file is most often used for cross-compilation. See [CMake toolchains](https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html) for more information on authoring CMake toolchain files.
+You can also set compilers with a CMake toolchain file. Toolchain files can be set with `cacheVariables.CMAKE_TOOLCHAIN_FILE`, which is equivalent to passing` -D CMAKE_TOOLCHAIN_FILE=<value>` to CMake from the command line. A CMake toolchain file is most often used for cross-compilation. See [CMake toolchains](https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html) for more information about authoring CMake toolchain files.
 
 ### Select your generator
 
@@ -253,7 +257,7 @@ The host architecture (x64 or x86) and toolset can be set with `toolset.value`. 
 
 `architecture.strategy` and `toolset.strategy` tell CMake how to handle the architecture and toolset fields. `set` means CMake will set the respective value, and `external` means CMake won't set the respective value.
 
- `set` should be used with IDE generators like the Visual Studio Generator. `external` should be used with command-line generators like Ninja. This allows vendors like Visual Studio to source the required environment before CMake is invoked. See [Configure Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#configure-preset) for more information on the architecture and toolset fields.
+ `set` should be used with IDE generators like the Visual Studio Generator. `external` should be used with command-line generators like Ninja. This allows vendors like Visual Studio to source the required environment before CMake is invoked. See [Configure Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#configure-preset) for more information about the architecture and toolset fields.
 
 For a full list of IDE generators that support the architecture field, see [CMAKE_GENERATOR_PLATFORM](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_PLATFORM.html). For a full list of IDE generators that support the toolset field, see [CMAKE_GENERATOR_TOOLSET](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_TOOLSET.html).
 
@@ -388,7 +392,7 @@ if(ASAN_ENABLED)
 endif()
 ```
 
-`<additional-options>` are other compilation flags like `"-fno-omit-frame-pointer"`. See [Using AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer#using-addresssanitizer) for more information on `ASan` for Linux, and see [Use the AddressSanitizer from a Developer Command Prompt](https://docs.microsoft.com/cpp/sanitizers/asan#command-prompt) for more information on `ASan` with MSVC.
+`<additional-options>` are other compilation flags like `"-fno-omit-frame-pointer"`. See [Using AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer#using-addresssanitizer) for more information about `ASan` for Linux, and see [Use the AddressSanitizer from a Developer Command Prompt](https://docs.microsoft.com/cpp/sanitizers/asan#command-prompt) for more information about `ASan` with MSVC.
 
 Pass additional runtime flags to AddressSanitizer with the `ASAN_OPTIONS` field in `launch.vs.json`. `ASAN_OPTIONS` defaults to `detect_leaks=0` when no other runtime options are specified because LeakSanitizer isn't supported in Visual Studio.
 

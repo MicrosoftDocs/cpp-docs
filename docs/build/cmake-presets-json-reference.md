@@ -14,7 +14,8 @@ CMake supports two files, `CMakePresets.json` and `CMakeUserPresets.json`, that 
 
 `CMakePresets.json` and `CMakeUserPresets.json` support vendor maps to store vendor-specific information. Microsoft maintains two vendor maps with options specific to Visual Studio and Visual Studio Code. Here we document two Microsoft vendor maps and vendor macros. For documentation about the rest of the schema, including Configure Presets, Build Presets, and Test Presets, see the official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html).
 
-For more information about how to use `CMakePresets.json` in Visual Studio, see [Configure and build with CMake Presets in Visual Studio](cmake-presets-vs.md)\
+For more information about how to use `CMakePresets.json` in Visual Studio, see [Configure and build with CMake Presets in Visual Studio](cmake-presets-vs.md)
+
 For more information about how to use `CMakePresets.json` in Visual Studio Code, see [Configure and build with CMake Presets in VS Code](https://github.com/microsoft/vscode-cmake-tools/blob/develop/docs/cmake-presets.md)
 
 ## Visual Studio Settings vendor map
@@ -41,7 +42,7 @@ None of the options in the Visual Studio Settings vendor map impact the construc
 
 ## Visual Studio Remote Settings vendor map
 
-One vendor map with the vendor URI` microsoft.com/VisualStudioRemoteSettings/CMake/<version>` is allowed per Configure Preset and contains options specific to remote development in Visual Studio. Remote development means you're invoking CMake on a remote SSH connection or WSL. None of the options in the Visual Studio Remote Settings vendor map apply to Visual Studio Code.
+One vendor map with the vendor URI ` microsoft.com/VisualStudioRemoteSettings/CMake/<version>` is allowed per Configure Preset and contains options specific to remote development in Visual Studio. Remote development means you're invoking CMake on a remote SSH connection or WSL. None of the options in the Visual Studio Remote Settings vendor map apply to Visual Studio Code.
 
 All settings in the Visual Studio Remote Settings vendor map are optional and inherited from Configure Presets specified by the `inherits` key. Only options that have been modified are written to the file. The Visual Studio Remote Settings vendor map is supported by both `CMakePresets.json` and `CMakeUserPresets.json`.
 
