@@ -12,11 +12,11 @@ At a high level, a range is something you can iterate over. A range is a rich ab
 
 STL algorithms usually take iterators that point to the portion of the collection they should operate on. Consider how you sort a `vector` today. To call `std::sort()`, you pass two iterators the mark the beginning and end of the `vector`. That provides flexibility, but passing the iterators to the algorithm is extra noise since most of the time you just want to sort the whole thing.
 
-With ranges, you can simply call `std::ranges::sort(myVector);` which is treated as if you had called `std::sort(myVector.begin(), myVector.end());` In range libraries, algorithms take ranges as parameters (although they can also take iterators, if you want). Examples of range algorithms available in `<algorithm>` include `copy`, `copy_n`, `copy_if`, `all_of`, `any_of`, and `none_of`, `find`, `find_if`, and `find_if_not`, `count` and `count_if`, `for_each` and `for_each_n`, `equal` and `mismatch`.
+With ranges, you can simply call `std::ranges::sort(myVector);`, which is treated as if you had called `std::sort(myVector.begin(), myVector.end());` In range libraries, algorithms take ranges as parameters (although they can also take iterators, if you want). Examples of range algorithms available in `<algorithm>` include `copy`, `copy_n`, `copy_if`, `all_of`, `any_of`, and `none_of`, `find`, `find_if`, and `find_if_not`, `count` and `count_if`, `for_each` and `for_each_n`, `equal` and `mismatch`.
 
 Code that is easier to write and more readable is great, but the benefits of ranges go further than that. They also make it easier to filter and transform collections of data in part by allowing you to compose STL algorithms more easily.
 
-Because ranges don't own elements like a container does, they're very lightweight. The time it takes to copy, move, or assign a range is constant no matter how many elements it points to.
+Because ranges don't own elements like a container does, they're lightweight. The time it takes to copy, move, or assign a range is constant no matter how many elements it points to.
 
 ## A ranges example
 
@@ -39,9 +39,9 @@ std::vector<int> input = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 auto output = input | std::views::filter([](const int n) {return n % 3 == 0; }) | std::views::transform([](const int n) {return n * n; });
 ```  
 
-In addition to being easier to read, it avoids the memory allocation required for the `intermediate` vector and its contents, while also allowing you to compose two operations.
+Besides being easier to read, it avoids the memory allocation required for the `intermediate` vector and its contents, while also allowing you to compose two operations.
 
-In the code above, each element that is divisible by three is combined with an operation to to square that element. The '`|`' symbol chains the operations together, and is read left to right.
+In the code above, each element that is divisible by three is combined with an operation to square that element. The '`|`' symbol chains the operations together, and is read left to right.
 
 The result, `output`, is itself a type of range called a view, which is discussed next.
 
@@ -56,7 +56,7 @@ A view is lightweight. Like a range, it doesn't own the elements. The time it ta
 
 Views are composable. In the example above, the view of vector elements that are divisible by three is combined with the view that squares those elements.
 
-The elements of a view are evaluated lazily. That is, the transformations you apply to yield the elements in a view are not evaluated until you ask for an element. For example, if you run the following code in a debugger, and put a breakpoint on the lines `auto divisible_by_three = ...` and `auto square =  ...`, you'll see that you hit the `divisible_by_three` lambda breakpoint as each element in `input` is tested for divisibility by three. The `square` lambda breakpoint will be hit as the elements that are divisible by three are squared.
+The elements of a view are evaluated lazily. That is, the transformations you apply to yield the elements in a view aren't evaluated until you ask for an element. For example, if you run the following code in a debugger, and put a breakpoint on the lines `auto divisible_by_three = ...` and `auto square =  ...`, you'll see that you hit the `divisible_by_three` lambda breakpoint as each element in `input` is tested for divisibility by three. The `square` lambda breakpoint will be hit as the elements that are divisible by three are squared.
 
 ```cpp
 // requires /std:c++latest
@@ -87,7 +87,7 @@ A view adaptor produces a view over a range. The range being viewed remains unch
 
 In the example above, the first view acts like an iterator that only provides the elements of `input` that are divisible by three. The other view acts like an iterator that takes the elements divisible by three, and provides the element's square.
 
-The `<ranges>` library provides many kinds of view adaptors. In addition to the filter and transform views, there are views that take or skip the first N elements of a range, reverse the order of a range, join ranges, skip elements of a range until a condition is met, transform the elements of a range, and more.
+The `<ranges>` library provides many kinds of view adaptors. Besides the filter and transform views, there are views that take or skip the first N elements of a range, reverse the order of a range, join ranges, skip elements of a range until a condition is met, transform the elements of a range, and more.
 
 ## Range adaptors
 
