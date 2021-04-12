@@ -70,16 +70,16 @@ In this example, you'll compile a header file as a header unit. Begin by creatin
     }
     ```
 
-To enable header units, first set the **C++ Language Standard** to [/std:c++latest](./reference/std-specify-language-standard-version.md):
+To enable header units, first set the **C++ Language Standard** to [`/std:c++latest`](./reference/std-specify-language-standard-version.md):
 
 1. From the Visual Studio main menu, choose **Project** > **Properties**.
-1. In the left-hand pane of the project property pages window, select **Configuration Properties** > **General**
-1. Change the **C++ Language Standard** dropdown to **Preview-Features from the Latest C++ Working Draft (/std:c++latest)**
+1. In the left-hand pane of the project property pages window, select **Configuration Properties** > **General**.
+1. Change the **C++ Language Standard** dropdown to **Preview-Features from the Latest C++ Working Draft (/std:c++latest)**.
 :::image type="content" source="media/set-cpp-language-latest.png" alt-text="Screenshot showing setting the language standard to preview version.":::
 
 ### Compile a header file as a header unit
 
-In the **Solution Explorer**, select the file you want to compile as a header unit. Right-click the file, and select **Properties**. Then do one of the following, depending on the file type:
+In the **Solution Explorer**, select the file you want to compile as a header unit. Right-click that file, and select **Properties**. Then do one of the following, depending on the file type:
 
 **For header files**:
 
