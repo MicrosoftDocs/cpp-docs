@@ -86,7 +86,7 @@ Follow these steps to set the options that cause the build system to scan for im
 1. In the left-hand pane of the project property page, select **C/C++** > **General**
 1. Set **Scan Sources for Module Dependencies** to **Yes**. Because we're setting the project property, all sources in this project will be scanned.
 
-Change the C++ language standard for the compiler. The [/std:c++latest](std-specify-language-standard-version.md) switch is required to use header units:
+Change the C++ language standard for the compiler. The [/std:c++latest](./reference/std-specify-language-standard-version.md) switch is required to use header units:
 
 1. In the left-hand pane of the project property pages, select **Configuration Properties** > **General**
 1. Change the **C++ Language Standard** dropdown to **Preview-Features from the Latest C++ Working Draft (/std:c++latest)**
@@ -155,7 +155,7 @@ Next, create a project that will use the built `<vector>` and `<iostream>` share
     }
     ```
 
-Change the **C++ Language Standard** for the compiler. The [/std:c++latest](std-specify-language-standard-version.md) switch is required to use header units:
+Change the **C++ Language Standard** for the compiler. The [/std:c++latest](./reference/std-specify-language-standard-version.md) switch is required to use header units:
 1. In the **Solution Explorer**, select right-click the **Walkthrough** project and select **Properties**. The project properties window appears.
 :::image type="content" source="media/set-cpp-language-latest.png" alt-text="Screenshot showing setting the language standard to preview version":::
 1. In the left-hand pane of the **Walkthrough** project property pages, select **Configuration Properties** > **General**
