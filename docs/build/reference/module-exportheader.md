@@ -19,7 +19,7 @@ Tells the compiler to create the header units specified by the input arguments. 
 
 ### Arguments
 
-The argument to `/exportHeader` is a `/headerName`command-line option that specifies the name,  *`header-name`*, of the header file to export.  
+The argument to `/exportHeader` is a `/headerName` command-line option that specifies the name,  *`header-name`*, of the header file to export.  
 
 ## Remarks
 

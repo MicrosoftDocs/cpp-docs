@@ -86,10 +86,10 @@ Follow these steps to set the options that cause the build system to scan for im
 1. In the left-hand pane of the project property page, select **C/C++** > **General**
 1. Set **Scan Sources for Module Dependencies** to **Yes**. Because we're setting the project property, all sources in this project will be scanned.
 
-Change the C++ language standard for the compiler. The latest preview setting is necessary to use header units:
+Change the C++ language standard for the compiler. The [/std:c++latest](std-specify-language-standard-version.md) switch is required to use header units:
 
 1. In the left-hand pane of the project property pages, select **Configuration Properties** > **General**
-1. Change the **C++ Language Standard** dropdown to **Preview-Features from the Latest C++ Working Draft**
+1. Change the **C++ Language Standard** dropdown to **Preview-Features from the Latest C++ Working Draft (/std:c++latest)**
 :::image type="content" source="media/set-cpp-language-latest.png" alt-text="Screenshot showing where to set the language standard.":::
 1. Click **OK** to close the project properties pages, and then build the solution with **Build** > **Build Solution** from the main menu.
 
@@ -130,7 +130,7 @@ Set project properties to share the header units from this project:
 1. You may want to set the **Configuration** dropdown to **All Configurations** and **Platform** dropdown to **All Platforms**. This propagates the settings you change so that they apply whether you are building for debug or retail, and so on.
 1. In the left-hand pane of the project property page, select **General**
 1. Change the **Configuration Type** option to **Static library (.lib)**
-1. Change **C++ Language Standard** to **Preview-Features from the Latest C++ Working Draft**
+1. Change **C++ Language Standard** to **Preview-Features from the Latest C++ Working Draft (/std:c++latest)**
 1. In the left-hand pane of the project property page, select **C/C++** > **General**
 :::image type="content" source="media/vs2019-scan-module-dependencies.png" alt-text="Screenshot showing the scan module dependencies property setting.":::
 1. Set the **Scan Sources for Module Dependencies** dropdown to **Yes**
@@ -155,11 +155,11 @@ Next, create a project that will use the built `<vector>` and `<iostream>` share
     }
     ```
 
-Change the **C++ Language Standard** for the compiler. The latest preview setting is necessary to use header units:
+Change the **C++ Language Standard** for the compiler. The [/std:c++latest](std-specify-language-standard-version.md) switch is required to use header units:
 1. In the **Solution Explorer**, select right-click the **Walkthrough** project and select **Properties**. The project properties window appears.
 :::image type="content" source="media/set-cpp-language-latest.png" alt-text="Screenshot showing setting the language standard to preview version":::
 1. In the left-hand pane of the **Walkthrough** project property pages, select **Configuration Properties** > **General**
-1. Change **C++ Language Standard** to **Preview-Features from the Latest C++ Working Draft**
+1. Change **C++ Language Standard** to **Preview-Features from the Latest C++ Working Draft (/std:c++latest)**
 1. Click **OK** to close the project properties pages
 
 Add a reference from the **Walkthrough** project to the **SharedPrj** project.

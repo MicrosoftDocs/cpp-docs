@@ -42,7 +42,7 @@ There are several ways to compile a file into a header unit:
 
 - **Build a shared header unit project**: This approach is best suited for larger projects, and for when you want more control over the organization of the imported header units. You create a static library project (or projects) that contain the header units that you want. Then reference the library project (or projects) from the project that then imports the header units it needs. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2) for a demonstration of this approach.
 
-- **Choose individual header units to build** by changing the compilation action for a file. This approach is demonstrated here. This approach gives you file by file control over which header files are treated as header units. It's also a good way to quickly and selectively try out header units in your project.
+- **Choose individual header units to build**: This approach gives you file by file control over which header files are treated as header units. It's also a good way to quickly and selectively try out header units in your project. This approach is demonstrated in this walkthrough.
 
 ## Convert a project to use header units
 
@@ -70,11 +70,11 @@ In this example, you'll compile a header file as a header unit. Begin by creatin
     }
     ```
 
-To enable header units, first set the **C++ Language Standard** to use the latest features:
+To enable header units, first set the **C++ Language Standard** to [/std:c++latest](std-specify-language-standard-version.md):
 
 1. From the Visual Studio main menu, choose **Project** > **Properties**.
 1. In the left-hand pane of the project property pages window, select **Configuration Properties** > **General**
-1. Change the **C++ Language Standard** dropdown to **Preview-Features from the Latest C++ Working Draft**
+1. Change the **C++ Language Standard** dropdown to **Preview-Features from the Latest C++ Working Draft (/std:c++latest)**
 :::image type="content" source="media/set-cpp-language-latest.png" alt-text="Screenshot showing setting the language standard to preview version.":::
 
 ### Compile a header file as a header unit
