@@ -12,11 +12,11 @@ At a high level, a range is something you can iterate over. A range is a rich ab
 
 STL algorithms usually take iterators that point to the collection they operate on. Consider how you sort a `vector` today. To call `std::sort()`, you pass two iterators the mark the beginning and end of the `vector`. That provides flexibility, but passing the iterators to the algorithm is extra noise since most of the time you just want to sort the entire thing.
 
-With ranges, you can call `std::ranges::sort(myVector);` It is treated as if you had called `std::sort(myVector.begin(), myVector.end());` In range libraries, in addition to taking iterators, algorithms take ranges as parameters. Examples of range algorithms available in `<algorithm>` include `copy`, `copy_n`, `copy_if`, `all_of`, `any_of`, and `none_of`, `find`, `find_if`, and `find_if_not`, `count` and `count_if`, `for_each` and `for_each_n`, `equal` and `mismatch`.
+With ranges, you can call `std::ranges::sort(myVector);` It's treated as if you had called `std::sort(myVector.begin(), myVector.end());` In range libraries, in addition to taking iterators, algorithms take ranges as parameters. Examples of range algorithms available in `<algorithm>` include `copy`, `copy_n`, `copy_if`, `all_of`, `any_of`, and `none_of`, `find`, `find_if`, and `find_if_not`, `count` and `count_if`, `for_each` and `for_each_n`, `equal` and `mismatch`.
 
 More readable and easier to write code is great, but the benefits of ranges go further than that. They also make it much easier to filter and transform collections of data by making it easier to compose STL algorithms more easily.
 
-Because ranges don't own elements like a container does, they are very lightweight. The time it takes to copy, move, or assign a range is constant--regardless of how many elements it points to.
+Because ranges don't own elements like a container does, they're very lightweight. The time it takes to copy, move, or assign a range is constant--no matter how many elements it points to.
 
 ## An example
 
@@ -45,13 +45,14 @@ In the code above, each element that is divisible by three is combined with an o
 
 The result, `output`, is itself a type of range called a view, which is discussed next.
 
-> [!NOTE] The ranges examples require the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
+> [!NOTE]
+> The ranges examples require the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
 ## Views
 
 A view is essentially a range that takes another range and transforms how its elements are accessed using an algorithm or operation that you specify. The underlying range is unchanged. In the earlier example, one view took a range and returned a view of only the elements that were divisible by three.
 
-A view is lightweight. Like a range, it doesn't own the elements it provides access to. The time it takes to copy, move, or assign a view is constant, regardless of how many elements it points to.
+A view is lightweight. Like a range, it doesn't own the elements. The time it takes to copy, move, or assign a view is constant, regardless of how many elements it points to.
 
 Views are composable. In the example above, the view of vector elements that are divisible by three is combined with the view that squares those elements.
 
@@ -82,7 +83,7 @@ int main()
 
 ## View adaptors
 
-A view adaptor produces a view over a range. The range being viewed is not changed. A view doesn't own any elements. It allows you to iterate over the underlying range, but using customized behavior that you specify.
+A view adaptor produces a view over a range. The range being viewed isn't changed. A view doesn't own any elements. It allows you to iterate over the underlying range, but using customized behavior that you specify.
 
 In the example above, the first view acts like an iterator that only provides the elements of `input` that are divisible by three. The other view acts like an iterator that takes the elements divisible by three, and provides their square.
 
@@ -110,7 +111,8 @@ What you can do with a range depends on the underlying iterator type of the rang
 
 | Range refinement | Description | Supported containers |
 |--|--|--|
-| `std::ranges::input_range` | Can iterate from beginning to end at least once | `std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset`<br>`basic_istream_view` | 
+| `std::ranges::input_range` | Can iterate from beginning to end at least once | 
+|`std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset`<br>`basic_istream_view` | 
 | `std::ranges::output_range ` | A range whose iterator type satisfies output_iterator | ? |
 | `std::ranges::forward_range` | Can iterate from beginning to end more than once) | `std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset` |
 | `std::ranges::bidirectional_range` | Can iterate forward and backward more than once | `std::list`<br>`std::map`<br>`std::multimap`<br>`std::multiset`<br>`std::set`|
