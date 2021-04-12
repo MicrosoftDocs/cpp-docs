@@ -11,10 +11,10 @@ helpviewer_keywords: ["/sourceDependencies compiler option", "/sourceDependencie
 
 This command-line switch generates a JSON file that details the source-level dependencies consumed during compilation. The JSON file contains a list of the source dependencies, which include:
 
-- Header files (both directly included and the list of headers included by those headers).
+- Header files. Both directly included and the list of headers included by those headers.
 - The PCH used (if **`/Yu`** is specified).
 - Names of imported modules
-- File paths and names of imported header units (both directly imported and those imported by those modules and headers units).
+- File paths and names of imported header units. Both directly imported and those imported by those modules and headers units.
 
 This provides information necessary to build modules and header units in the proper dependency order.
 
@@ -22,7 +22,7 @@ This provides information necessary to build modules and header units in the pro
 
 > **`/sourceDependencies`** -\
 > **`/sourceDependencies`** *filename*\
-> **`/sourceDependencies`** *directory*\
+> **`/sourceDependencies`** *directory*
 
 ## Arguments
 
@@ -30,7 +30,7 @@ This provides information necessary to build modules and header units in the pro
 If the single dash is provided, then the compiler will emit the source dependencies JSON to `stdout`, or to where compiler output is redirected to.
 
 *`filename`*\
-The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.\
+The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.
 
 *`directory`*\
 If the argument is a directory, the compiler generates source dependency files in the specified directory. The output file name is based on the full name of the input file, with an appended *`.json`* extension. For example, if the file provided to the compiler is *`main.cpp`*, the generated output filename is *`main.cpp.json`*.
@@ -98,7 +98,7 @@ where `...` represents your other compiler options. This command line produces a
 }
 ```
 
-We've used `...` to abbreviate the reported paths; the report contains the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you may want to check your project's include path settings.
+We've used `...` to abbreviate the reported paths. The report will contain the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you may want to check your project's include path settings.
 
 `ProvidedModule` lists exported module or module partition names.
 

@@ -1,7 +1,7 @@
 ---
 title: "Compiler options listed alphabetically"
 description: "Reference listing in alphabetical order of the Microsoft C/C++ compiler command-line options."
-ms.date: 07/29/2020
+ms.date: 04/13/2021
 helpviewer_keywords: ["compiler options, C++"]
 ---
 # Compiler options listed alphabetically
@@ -34,7 +34,7 @@ This table contains an alphabetical list of compiler options. For a list of comp
 | [`/execution-charset`](execution-charset-set-execution-character-set.md) | Set the execution character set. |
 | [`/experimental:module`](experimental-module.md) | Enables experimental module support. |
 | [`/experimental:preprocessor`](experimental-preprocessor.md) | Deprecated. Enables experimental conforming preprocessor support. Use [`/Zc:preprocessor`](zc-preprocessor.md) |
-| [`/exportHeader`](module-exportheader.md) Create the header units (*`.ifc`*) files specified by the input arguments. |
+| [`/exportHeader`](module-exportheader.md) | Create the header units (*`.ifc`*) files specified by the input arguments. |
 | [`/F`](f-set-stack-size.md) | Sets stack size. |
 | [`/favor`](favor-optimize-for-architecture-specifics.md) | Produces code optimized for a specific x64 architecture. Or, for the specific micro-architectures in both the AMD64 and EM64T architectures. |
 | [`/FA`](fa-fa-listing-file.md) | Creates a listing file. |

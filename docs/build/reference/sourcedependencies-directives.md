@@ -9,14 +9,14 @@ helpviewer_keywords: ["/sourceDependencies:directives compiler option", "/source
 ---
 # `/sourceDependencies:directives` (List module and header unit dependencies)
 
-This command-line switch generates a JSON file that lists the module and header-unit dependencies in the source code.
+This command-line switch generates a JSON file that lists module and header-unit dependencies.
 
 It identifies which modules and header units need to be compiled before the project that uses them is compiled. For instance, it will list `import <library>;` or `import "library";` as a header unit dependency, and `import name;` as a module dependency.
 
 This command-line option is similar to [`/sourceDependencies`](sourcedependencies.md), but differs in the following ways:
 
 - The compiler doesn't produce compiled output. Instead, the files are scanned for module directives. No compiled code, modules, or header units are produced.
-- The output JSON file doesn't list imported modules and imported header units (*`.ifc`* files) because this switch does a scan of the project files, not a compilation, so there are no built modules or header units to list.
+- The output JSON file doesn't list imported modules and imported header units (*`.ifc`* files) because this switch does a scan of the project files, not a compilation. So there are no built modules or header units to list.
 - Only directly imported modules or header units are listed. It doesn't list the dependencies of the imported modules or header units themselves.
 - Header file dependencies are not listed. That is, `#include <file>` or `#include "file"` dependencies are not listed.
 - `/sourceDependencies:directives`is meant to be used before *`.ifc`* files are built.
@@ -33,7 +33,7 @@ This command-line option is similar to [`/sourceDependencies`](sourcedependencie
 If the single dash is provided, then the compiler will emit the source dependencies JSON to `stdout`, or to where compiler output is redirected to.
 
 *`filename`*\
-The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.\
+The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.
 
 *`directory`*\
 If the argument is a directory, the compiler generates source dependency files in the specified directory. The output file name is based on the full name of the input file, with an appended *`.json`* extension. For example, if the file provided to the compiler is *`main.cpp`*, the generated output filename is *`main.cpp.json`*.
@@ -88,11 +88,11 @@ This command line produces a JSON file *`output.json`* with content like:
 }
 ```
 
-We've used `...` to abbreviate the reported paths; the report contains the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you may want to check your project's include path settings.
+We've used `...` to abbreviate the reported paths. The report will contain the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you may want to check your project's include path settings.
 
 `ProvidedModule` lists exported module or module partition names.
 
-No *`.ifc`* files are listed in the output because they weren't built. Unlike `/sourceDependencies`, the compiler doesn't produce compiled output when `/sourceDependencies:directives`is specified, so no compiled modules or header units are produced to import.
+No *`.ifc`* files are listed in the output because they weren't built. Unlike `/sourceDependencies`, the compiler doesn't produce compiled output when `/sourceDependencies:directives` is specified, so no compiled modules or header units are produced to import.
 
 ## To set this compiler option in Visual Studio
 

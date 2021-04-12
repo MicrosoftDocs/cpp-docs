@@ -62,13 +62,13 @@ Given three modules as listed in this table:
 | *`M:Part1`* | *`m-part1.ifc`* |
 | *`Core.Networking`* | *`Networking.ifc`* |
 
-The reference options using a *`filename`* argument could look like:
+The reference options using a *`filename`* argument would be like this:
 
 ```cmd
 cl ... /std:c++latest /reference m.ifc /reference m-part.ifc /reference Networking.ifc
 ```
 
-The reference options using *`module-name=filename`* could look like:
+The reference options using *`module-name=filename`* would be like this:
 
 ```cmd
 cl ... /std:c++latest /reference m=m.ifc /reference M:Part1=m-part.ifc /reference Core.Networking=Networking.ifc
@@ -78,4 +78,4 @@ cl ... /std:c++latest /reference m=m.ifc /reference M:Part1=m-part.ifc /referenc
 
 [`/sourceDependencies:directives` (List module and header unit dependencies)](sourcedependencies-directives.md)\
 [`/headerUnit` (Use header unit IFC)](headerunit.md)\
-[`/exportHeader` (Create header units)](module-exportheader.md)\
+[`/exportHeader` (Create header units)](module-exportheader.md)

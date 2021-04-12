@@ -107,7 +107,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 
 | Option | Purpose |
 |--|--|
-| [`/exportHeader`](module-exportheader.md) | Create the header units (*`.ifc`*) files specified by the input arguments. |
+| [`/exportHeader`](module-exportheader.md) | Create the header units files (*`.ifc`*) specified by the input arguments. |
 | [`/headerUnit`](headerunit.md) | Specify where to find the header unit file (`.ifc`) for the specified header. |
 | [`/headerName`](headername.md) | Build a header unit from the specified header. |
 | [`/reference`](module-reference.md) | Use named module IFC. |

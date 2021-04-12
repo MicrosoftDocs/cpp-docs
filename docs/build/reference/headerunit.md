@@ -9,7 +9,7 @@ ms.author: "twhitney"
 ---
 # `/headerUnit` (Use header unit IFC)
 
-Tells the compiler where to find the *`.ifc`* file (the binary representation of the header unit) for the specified header. Used to import a header unit.
+Used to import a header unit. Tells the compiler where to find the *`.ifc`* file (the binary representation of the header unit) for the specified header.
 
 ## Syntax
 
@@ -23,7 +23,7 @@ Tells the compiler where to find the *`.ifc`* file (the binary representation of
 During `import header-name;` the compiler resolves `header-name` to a file on disk. Use *`header-filename`* to specify that file. Once matched, the compiler opens the corresponding IFC named by *`ifc-filename`* for import.
 
 *`ifc-filename`*\
-The name of a file that contains compiled header unit information. To import more than one header unit, include a separate **`/headerUnit`** option for each file.
+The name of a file that contains compiled header unit information. To import more than one header unit, add a separate **`/headerUnit`** option for each file.
 
 ## Remarks
 
@@ -39,7 +39,7 @@ When the compiler comes across `import "file";` or `import <file>;`, this compil
 
 **`/headerUnit:angle`** looks up the compiled header unit file using the same rules as `#include <file>`.
 
-The compiler can't map a single *`header-name`* to multiple IFC files. While mapping multiple *`header-name`* arguments to a single IFC is possible, we don't recommend it. The contents of the IFC get imported as if it was only the header specified by *`header-name`*.
+The compiler can't map a single *`header-name`* to multiple *`.ifc`* files. While mapping multiple *`header-name`* arguments to a single *`.ifc`* is possible, we don't recommend it. The contents of the *`.ifc`* get imported as if it was only the header specified by *`header-name`*.
 
 The compiler implicitly enables the new preprocessor when this switch is used. That is, [`/Zc:preprocessor`](zc-preprocessor.md) is added to the command line by the compiler if any form of `/headerUnit` is specified on the command line. To opt out of the implicit `/Zc:preprocessor`, specify: `/Zc:preprocessor-`
 
@@ -54,7 +54,7 @@ Given a project that references two header files and their header units, listed 
 | *`C:\utils\util.h`* | *`C:\util.h.ifc`* |
 | *`C:\app\app.h`* | *`C:\app\app.h.ifc`* |
 
-The compiler options to reference the header units for these particular header files might look like this:
+The compiler options to reference the header units for these particular header files would look similar to this:
 
 ```CMD
 cl ... /std:c++latest /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit:quote app.h=app.h.ifc
@@ -68,4 +68,4 @@ You normally shouldn't set this in the Visual Studio development environment. It
 
 [`/exportHeader` (Create header units)](module-exportheader.md)\
 [`/headerName` (Create a header unit from the specified header)](headername.md)\
-[`/reference` (Use named module IFC)](module-reference.md)\
+[`/reference` (Use named module IFC)](module-reference.md)

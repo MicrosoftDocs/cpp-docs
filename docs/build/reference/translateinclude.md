@@ -9,7 +9,7 @@ helpviewer_keywords: ["/translateInclude", "Translate include directives into im
 ---
 # `/translateInclude` (Translate include directives into import directives)
 
-Instructs the compiler to treat `#include` as `import` for headers that have been prebuilt into a header unit (`.ifc`) file.
+Instructs the compiler to treat `#include` as `import` for those headers that have been prebuilt into a header unit (`.ifc`) file.
 
 ## Syntax
 
@@ -19,7 +19,7 @@ Instructs the compiler to treat `#include` as `import` for headers that have bee
 
 The **`/translateInclude`** compiler option requires you enable the [/std:c++latest](std-specify-language-standard-version.md) option. `/translateInclude` is available starting in Visual Studio 2019 version 16.10 Preview 2.
 
-The **`/translateInclude`** option effectively makes the following transformation, where the example `<vector>` is an importable header unit:
+The **`/translateInclude`** option effectively makes the following transformation, where the example `<vector>` has been prebuilt into an importable header unit:
 
 ```cpp
 #include <vector>
@@ -31,7 +31,7 @@ The compiler replaces this directive with:
 import <vector>;
 ```
 
-In MSVC, available header units are made available by the **`/headerUnit`** option, which maps a header file to its importable header unit. For more information, see [`/headerUnit` (Use header unit IFC)](headerunit.md).
+In MSVC, available header units are made available by the **`/headerUnit`** option, which maps a header file to its corresponding prebuilt importable header unit. For more information, see [`/headerUnit` (Specify where to find the header unit file (`.ifc`) for the specified header)](headerunit.md).
 
 ### Examples
 

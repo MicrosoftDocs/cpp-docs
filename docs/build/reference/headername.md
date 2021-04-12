@@ -13,27 +13,27 @@ Build the specified header file into a header unit (*`.ifc`* file).
 
 ## Syntax
 
-> **`/headerName:quote`** *`header-filename`
-> **`/headerName:angle`** *`header-filename`
+> **`/headerName:quote`** `header-filename`\
+> **`/headerName:angle`** `header-filename`
 
 ### Arguments
 
 *`header-filename`*\
-The name of a header file that the compiler should compile into a header unit (an *`.ifc`* file).
+The name of a header file that the compiler should compile into a header unit (*`.ifc`* file).
 
 ## Remarks
 
-The **`/headerName`** compiler option is available starting in Visual Studio 2019 version 16.10 preview 2.\
+The **`/headerName`** compiler option is available starting in Visual Studio 2019 version 16.10 preview 2.
 
 The **`/headerName`** compiler option, in all its forms, requires the [/std:c++latest](std-specify-language-standard-version.md) option.\
 If you specify **`/headerName:{quote,angle}`**, you must also specify [`/exportHeader`](module-exportheader.md).
 
-**`/headerName:quote`** looks up *`header-filename`* using the same rules as `#include "header-name"` and build it as a header unit (*`.ifc`* file).\
-**`/headerName:angle`** looks up *`header-filename`* using the same rules as `#include <header-name>` and build it as a header unit (*`.ifc`* file).
+**`/headerName:quote`** looks up *`header-filename`* using the same rules as `#include "header-name"` and builds it as a header unit (*`.ifc`* file).\
+**`/headerName:angle`** looks up *`header-filename`* using the same rules as `#include <header-name>` and builds it as a header unit (*`.ifc`* file).
 
 ### Examples
 
-Given a project that references a header file it defines called `m.h`, the compiler option to compile it into a header unit might look like this:
+Given a project that references a header file it defines called `m.h`, the compiler option to compile it into a header unit looks similar to this:
 
 ```Bash
 $ cl /std:c++latest /exportHeader /headerName:quote m.h /Fom.h.obj
@@ -55,7 +55,7 @@ $ cl /std:c++latest /exportHeader /headerName:angle /MP /Fo.\ vector iostream al
 ### To set this compiler option in the Visual Studio development environment
 
 > [!NOTE]
-> This command line switch is typically set by the build system.
+> Users don't typically set this command line switch. It is set by the build system.
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
