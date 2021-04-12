@@ -111,8 +111,8 @@ What you can do with a range depends on the underlying iterator type of the rang
 
 | Range refinement | Description | Supported containers |
 |--|--|--|
-| `std::ranges::input_range` | Can iterate from beginning to end at least once | 
-|`std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset`<br>`basic_istream_view` | 
+| `std::ranges::input_range` | Can iterate from beginning to end at least once |
+| `std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset`<br>`basic_istream_view` |
 | `std::ranges::forward_range` | Can iterate from beginning to end more than once) | `std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset` |
 | `std::ranges::bidirectional_range` | Can iterate forward and backward more than once | `std::list`<br>`std::map`<br>`std::multimap`<br>`std::multiset`<br>`std::set`|
 | `std::ranges::random_access_range` | Can access an arbitrary element (in constant time) using the `[]` operator) | `std::deque` |
