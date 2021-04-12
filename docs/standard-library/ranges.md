@@ -8,11 +8,11 @@ helpviewer_keywords: ["ranges"]
 
 # `<ranges>`
 
-At a high level, a range is something you can iterate over. A range is a rich abstraction over iterators that simplifies and amplifies your ability to use the Standard Template Library (STL).
+At a high level, a range is something you can iterate over. A range abstracts iterators in a way that simplifies and amplifies your ability to use the Standard Template Library (STL).
 
 STL algorithms usually take iterators that point to the portion of the collection they should operate on. Consider how you sort a `vector` today. To call `std::sort()`, you pass two iterators the mark the beginning and end of the `vector`. That provides flexibility, but passing the iterators to the algorithm is extra noise since most of the time you just want to sort the whole thing.
 
-With ranges, you can simply call `std::ranges::sort(myVector);`, which is treated as if you had called `std::sort(myVector.begin(), myVector.end());` In range libraries, algorithms take ranges as parameters (although they can also take iterators, if you want). Examples of range algorithms available in `<algorithm>` include `copy`, `copy_n`, `copy_if`, `all_of`, `any_of`, and `none_of`, `find`, `find_if`, and `find_if_not`, `count` and `count_if`, `for_each` and `for_each_n`, `equal` and `mismatch`.
+With ranges, you can simply call `std::ranges::sort(myVector);` which is treated as if you had called `std::sort(myVector.begin(), myVector.end());` In range libraries, algorithms take ranges as parameters (although they can also take iterators, if you want). Examples of range algorithms available in `<algorithm>` include `copy`, `copy_n`, `copy_if`, `all_of`, `any_of`, and `none_of`, `find`, `find_if`, and `find_if_not`, `count` and `count_if`, `for_each` and `for_each_n`, `equal` and `mismatch`.
 
 Code that is easier to write and more readable is great, but the benefits of ranges go further than that. They also make it easier to filter and transform collections of data in part by allowing you to compose STL algorithms more easily.
 
