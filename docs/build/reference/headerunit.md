@@ -1,31 +1,49 @@
 ---
 title: "/headerUnit (Use header unit IFC)"
-description: "Use the /headerUnit compiler option to specify an existing IFC header unit to import in the current compilation."
-ms.date: 09/13/2020
+description: "Use the /headerUnit compiler option to associate a header file with the header unit to import in its place."
+ms.date: 04/13/2021
 f1_keywords: ["/headerUnit"]
 helpviewer_keywords: ["/headerUnit", "Use header unit IFC"]
+author: "tylermsft"
+ms.author: "twhitney"
 ---
 # `/headerUnit` (Use header unit IFC)
 
-Tells the compiler to translate `#include` directives for an importable header-name into an `import header-name;` directive, rather than use textual inclusion.
+Used to import a header unit. Tells the compiler where to find the *`.ifc`* file (the binary representation of the header unit) for the specified header.
 
 ## Syntax
 
-> **`/headerUnit`** *`header-filename`*=*`ifc-filename`*
+> **`/headerUnit`** *`header-filename`*=*`ifc-filename`*\
+> **`/headerUnit:quote`** \[*`header-filename`*=*`ifc-filename`*\]\
+> **`/headerUnit:angle`** \[*`header-filename`*=*`ifc-filename`*\]
 
 ### Arguments
 
 *`header-filename`*\
-The name of a file that the compiler resolves a `header-name` to. During `import header-name ;` the compiler resolves `header-name` to some file on disk. Use *`header-filename`* to specify that file. Once matched, the compiler opens the corresponding IFC named by *`ifc-filename`* for import.
+During `import header-name;` the compiler resolves `header-name` to a file on disk. Use *`header-filename`* to specify that file. Once matched, the compiler opens the corresponding IFC named by *`ifc-filename`* for import.
 
 *`ifc-filename`*\
-The name of a file that contains *IFC data*, prebuilt module information. To import more than one header unit, include a separate **`/headerUnit`** option for each file.
+The name of a file that contains compiled header unit information. To import more than one header unit, add a separate **`/headerUnit`** option for each file.
 
 ## Remarks
 
-The **`/headerUnit`** compiler option requires you enable experimental modules support by use of the [`/experimental:module`](experimental-module.md) compiler option, along with the [/std:c++latest](std-specify-language-standard-version.md) option. This option is available starting in Visual Studio 2019 version 16.8.
+The **`/headerUnit`** compiler option requires the [/std:c++latest](std-specify-language-standard-version.md) option.
 
-The compiler can't map a single *`header-name`* to multiple IFC files. While mapping multiple *`header-name`* arguments to a single IFC is possible, we don't recommend it. The contents of the IFC get imported as if it was only the header specified by *`header-name`*.
+The **`/headerUnit`** compiler option is available starting in Visual Studio 2019 version 16.10 preview 2.
+
+When the compiler comes across `import "file";` or `import <file>;`, this compiler switch helps the compiler find the compiled header unit (*`.ifc`*) for the specified header file. The path to this file can be expressed in three ways:
+
+**`/headerUnit`** looks up the compiled header unit in the current directory, or at the location specified in *`ifc-filename`*.
+
+**`/headerUnit:quote`** looks up the compiled header unit file using the same rules as `#include "file"`.
+
+**`/headerUnit:angle`** looks up the compiled header unit file using the same rules as `#include <file>`.
+
+The compiler can't map a single *`header-name`* to multiple *`.ifc`* files. While mapping multiple *`header-name`* arguments to a single *`.ifc`* is possible, we don't recommend it. The contents of the *`.ifc`* get imported as if it was only the header specified by *`header-name`*.
+
+The compiler implicitly enables the new preprocessor when this switch is used. That is, [`/Zc:preprocessor`](zc-preprocessor.md) is added to the command line by the compiler if any form of `/headerUnit` is specified on the command line. To opt out of the implicit `/Zc:preprocessor`, specify: `/Zc:preprocessor-`
+
+If you disable the new preprocessor, but a file you compile imports a header unit, the compiler will report an error.
 
 ### Examples
 
@@ -34,27 +52,20 @@ Given a project that references two header files and their header units, listed 
 | Header file | IFC file |
 |--|--|
 | *`C:\utils\util.h`* | *`C:\util.h.ifc`* |
-| *`C:\app\app.h`* | *`C:\app.h.ifc`* |
+| *`C:\app\app.h`* | *`C:\app\app.h.ifc`* |
 
-The compiler options to reference the header units for these particular header files might look like this example:
+The compiler options to reference the header units for these particular header files would look similar to this:
 
 ```CMD
-cl ... /experimental:module /translateInclude /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit C:\app\app.h=C:\app.h.ifc
+cl ... /std:c++latest /headerUnit C:\utils\util.h=C:\util.h.ifc /headerUnit:quote app.h=app.h.ifc
 ```
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
-1. Set the **Configuration** drop-down to **All Configurations**.
-
-1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
-
-1. Modify the **Additional Options** property to add the *`/headerUnit`* options and arguments. Then, choose **OK** or **Apply** to save your changes.
+You normally shouldn't set this in the Visual Studio development environment. It is set by the build system.
 
 ## See also
 
-[`/experimental:module` (Enable module support)](experimental-module.md)\
-[`/module:exportHeader` (Create header units)](module-exportheader.md)\
-[`/module:reference` (Use named module IFC)](module-reference.md)\
-[`/translateInclude` (Translate include directives into import directives)](translateinclude.md)\
+[`/exportHeader` (Create header units)](module-exportheader.md)\
+[`/headerName` (Create a header unit from the specified header)](headername.md)\
+[`/reference` (Use named module IFC)](module-reference.md)

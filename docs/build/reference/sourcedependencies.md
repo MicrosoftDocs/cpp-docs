@@ -1,31 +1,38 @@
 ---
 title: "/sourceDependencies (Report source-level dependencies)"
-description: "Reference guide to the /sourceDependencies compiler option in Microsoft C++."
-ms.date: 07/29/2020
+description: "Describes the /sourceDependencies compiler option in Microsoft C++."
+ms.date: 04/13/2020
+author: "tylermsft"
+ms.author: "twhitney"
 f1_keywords: ["/sourceDependencies"]
 helpviewer_keywords: ["/sourceDependencies compiler option", "/sourceDependencies"]
 ---
-# `/sourceDependencies` (Report source-level dependencies)
+# `/sourceDependencies` (List all source-level dependencies)
 
-Instructs the compiler to generate a JSON file that details the source-level dependencies consumed during compilation.
+This command-line switch generates a JSON file that details the source-level dependencies consumed during compilation. The JSON file contains a list of the source dependencies, which include:
 
-The JSON file contains a list of the source dependencies, which include:
-
-- Header files (both transitive and directly included headers).
+- Header files. Both directly included and the list of headers included by those headers.
 - The PCH used (if **`/Yu`** is specified).
-- Imported modules and imported header units (both transitive and directly imported modules/header units).
+- Names of imported modules
+- File paths and names of imported header units. Both directly imported and those imported by those modules and headers units.
+
+This provides information necessary to build modules and header units in the proper dependency order.
 
 ## Syntax
 
+> **`/sourceDependencies`** -\
 > **`/sourceDependencies`** *filename*\
 > **`/sourceDependencies`** *directory*
 
 ## Arguments
 
-*filename*\
+*`-`*\
+If the single dash is provided, then the compiler will emit the source dependencies JSON to `stdout`, or to where compiler output is redirected to.
+
+*`filename`*\
 The compiler writes the source dependency output to the specified filename, which may include a relative or absolute path.
 
-*directory*\
+*`directory`*\
 If the argument is a directory, the compiler generates source dependency files in the specified directory. The output file name is based on the full name of the input file, with an appended *`.json`* extension. For example, if the file provided to the compiler is *`main.cpp`*, the generated output filename is *`main.cpp.json`*.
 
 ## Remarks
@@ -43,50 +50,61 @@ All file paths appear as absolute paths in the output.
 Given the following sample code:
 
 ```cpp
-// main.cpp
-#include "header.h"
-import m;
-import "other.h";
-
-int main() { }
+// ModuleE.ixx:
+export module ModuleE;
+import ModuleC;
+import ModuleD;
+import <iostream>;
 ```
 
-You can use **`/sourceDependencies`** along with the rest of your compiler options:
+You can use **`/sourceDependencies`** with the rest of your compiler options:
 
 > `cl ... /sourceDependencies output.json ... main.cpp`
 
-where `...` represents your other compiler options. This command line produces a JSON file *`output.json`* with content something like:
+where `...` represents your other compiler options. This command line produces a JSON file *`output.json`* with content  like:
 
 ```JSON
 {
-    "Version": "1.0",
+    "Version": "1.1",
     "Data": {
-        "Source": "C:\\...\\main.cpp",
-        "PCH": "C:\\...\\pch.pch",
-        "Includes": [
-            "C:\\...\\header.h"
+        "Source": "F:\\Sample\\myproject\\modulee.ixx",
+        "ProvidedModule": "ModuleE",
+        "Includes": [],
+        "ImportedModules": [
+            {
+                "Name": "ModuleC",
+                "BMI": "F:\\Sample\\Outputs\\Intermediate\\MyProject\\x64\\Debug\\ModuleC.ixx.ifc"
+            },
+            {
+                "Name": "ModuleB",
+                "BMI": "F:\\Sample\\Outputs\\Intermediate\\ModuleB\\x64\\Debug\\ModuleB.ixx.ifc"
+            },
+            {
+                "Name": "ModuleD",
+                "BMI": "F:\\Sample\\Outputs\\Intermediate\\MyProject\\x64\\Debug\\ModuleD.cppm.ifc"
+            }
         ],
-        "Modules": [
-            "C:\\...\\m.ifc",
-            "C:\\...\\other.h.ifc"
+        "ImportedHeaderUnits": [
+            {
+                "Header": "f:\\visual studio 16 main\\vc\\tools\\msvc\\14.29.30030\\include\\iostream",
+                "BMI": "F:\\Sample\\Outputs\\Intermediate\\HeaderUnits\\x64\\Debug\\iostream_W4L4JYGFJ3GL8OG9.ifc"
+            },
+            {
+                "Header": "f:\\visual studio 16 main\\vc\\tools\\msvc\\14.29.30030\\include\\yvals_core.h",
+                "BMI": "F:\\Sample\\Outputs\\Intermediate\\HeaderUnits\\x64\\Debug\\yvals_core.h.ifc"
+            }
         ]
     }
 }
 ```
 
-We've used `...` to abbreviate the reported paths; the report contains the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you may want to check your project's include path settings.
+We've used `...` to abbreviate the reported paths. The report will contain the absolute paths. The paths reported depend on where the compiler finds the dependencies. If the results are unexpected, you may want to check your project's include path settings.
 
-### To set the /sourceDependencies compiler option in Visual Studio
+`ProvidedModule` lists exported module or module partition names.
 
-1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+### To set this compiler option in the Visual Studio development environment
 
-1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
-
-1. In the **Additional options** box, add *`/sourceDependencies: <filename>`* and then choose **OK** or **Apply** to save your changes.
-
-### To set this compiler option programmatically
-
-- This option doesn't have a programmatic equivalent.
+You normally shouldn't set this yourself in the Visual Studio development environment. It is set by the build system.
 
 ## See also
 
