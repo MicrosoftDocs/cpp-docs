@@ -1,7 +1,7 @@
 ---
 title: "<ranges>"
 description: "Overview of the Standard Template Library (STL) ranges library"
-ms.date: "04/13/2021"
+ms.date: "04/14/2021"
 f1_keywords: ["<ranges>"]
 helpviewer_keywords: ["ranges"]
 ---
@@ -15,8 +15,6 @@ STL algorithms usually take iterators that point to the portion of the collectio
 With ranges, you can simply call `std::ranges::sort(myVector);` which is treated as if you had called `std::sort(myVector.begin(), myVector.end());` In range libraries, algorithms take ranges as parameters (although they can also take iterators, if you want). Examples of range algorithms available in `<algorithm>` include `copy`, `copy_n`, `copy_if`, `all_of`, `any_of`, and `none_of`, `find`, `find_if`, and `find_if_not`, `count` and `count_if`, `for_each` and `for_each_n`, `equal` and `mismatch`.
 
 Code that is easier to write and more readable is great, but the benefits of ranges go further than that. They also make it easier to filter and transform collections of data in part by allowing you to compose STL algorithms more easily.
-
-Because ranges don't own elements like a container does, they're lightweight. The time it takes to copy, move, or assign a range is constant no matter how many elements it points to.
 
 ## A ranges example
 
@@ -50,9 +48,7 @@ The result, `output`, is itself a type of range called a view, which is discusse
 
 ## Views
 
-A view is essentially a range that takes another range and transforms how its elements are accessed. How the elements appear depends on the algorithm or operation that you specify. The underlying range is unchanged. In the earlier example, one view took a range and returned a view of only the elements that were divisible by three.
-
-A view is lightweight. Like a range, it doesn't own the elements. The time it takes to copy, move, or assign a view is constant, no matter the number of elements it points to.
+A view is a range which can be default constructed, moved, and possibly copied, with the added requirement that all view operations (default construction, move construction/assignment, copy construction/assignment (if present), destruction, begin and end) happen in constant time regardless of the number of elements in the view. How the elements appear depends on the algorithm or operation that you specify for the view. The underlying range is unchanged. In the earlier example, one view took a range and returned a view of only the elements that were divisible by three.
 
 Views are composable. In the example above, the view of vector elements that are divisible by three is combined with the view that squares those elements.
 
@@ -85,13 +81,13 @@ int main()
 
 A view adaptor produces a view over a range. The range being viewed remains unchanged. A view doesn't own any elements. It allows you to iterate over the underlying range using customized behavior that you specify.
 
-In the example above, the first view acts like an iterator that only provides the elements of `input` that are divisible by three. The other view acts like an iterator that takes the elements divisible by three, and provides the element's square.
+In the example above, the first view provides the elements of `input` that are divisible by three. The other view takes the elements divisible by three, and provides the element's square.
 
 The `<ranges>` library provides many kinds of view adaptors. Besides the filter and transform views, there are views that take or skip the first N elements of a range, reverse the order of a range, join ranges, skip elements of a range until a condition is met, transform the elements of a range, and more.
 
 ## Range adaptors
 
-A range adaptor produces a new range from an existing range. The new range uses customized behavior specified by the range adaptor to provide the elements. For example, a range adaptor might take a range and produce a new one that presents the elements from the original range in reverse order. Views, discussed earlier, are a common kind of range adaptor.
+A range adaptor produces a new range from an existing range and transforms how its elements are accessed. For example, a range adaptor might take a range and produce a new one that presents the elements from the original range in reverse order. Views, discussed earlier, are a common kind of range adaptor.
 
 Range adaptors produce lazily evaluated ranges. That is, you don't incur the cost of transforming every element in the range--only the ones that you access, and at the time that you access them.
 
@@ -103,13 +99,15 @@ Range adaptors can be chained or composed--which is where the power and flexibil
 
 Range algorithms have been created that take a range argument. For example, `std::ranges::sort(myVector);`
 
-The range algorithms are lazy, meaning that they operate on the range only when an element is accessed. They can work directly on a container, and can be easily chained together.
+The range algorithms are almost identical to the corresponding iterator-pair algorithms in the `std` namespace, except that they have concept-enforced constraints and accept range arguments or more general iterator-sentinel argument pairs. They can work directly on a container, and can be easily chained together.
 
 ## Types of ranges
 
-What you can do with a range depends on the underlying iterator type of the range. There are different kinds of ranges, called refinements. The different kinds of ranges are codified as C++ 20 concepts. This table lists various range concepts, along with the type of container they can be applied to:
+What you can do with a range depends on the underlying iterator type of the range. Range concepts are refinements of the `range` concept. In C++ 20, to say that concept X refines concept Y means that everything that satisfies Y also satisfies X--though not necessarily the other way around. For example, car, bus, and truck all refine vehicle.
 
-| Range refinement | Description | Supported containers |
+The range concepts mirror the hierarchy of iterator categories. This table lists various range concepts, along with the type of container they can be applied to:
+
+| Range concept | Description | Supported containers |
 |--|--|--|
 | `std::ranges::input_range` | Can iterate from beginning to end at least once |
 | `std::forward_list`<br>`std::unordered_map`<br>`std::unordered_multimap`<br>`std::unordered_set`<br>`std::unordered_multiset`<br>`basic_istream_view` |
@@ -117,6 +115,8 @@ What you can do with a range depends on the underlying iterator type of the rang
 | `std::ranges::bidirectional_range` | Can iterate forward and backward more than once | `std::list`<br>`std::map`<br>`std::multimap`<br>`std::multiset`<br>`std::set`|
 | `std::ranges::random_access_range` | Can access an arbitrary element (in constant time) using the `[]` operator) | `std::deque` |
 | `std::ranges::contiguous_range` | The elements are stored in memory consecutively | `std::array`<br>`std::string`<br>`std::vector` |
+
+
 
 ## See also
 
