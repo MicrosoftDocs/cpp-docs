@@ -48,7 +48,9 @@ The result, `output`, is itself a type of range called a view, which is discusse
 
 ## Views
 
-A view is a range which can be default constructed, moved, and possibly copied, with the added requirement that all view operations (default construction, move construction/assignment, copy construction/assignment (if present), destruction, begin and end) happen in constant time regardless of the number of elements in the view. How the elements appear depends on the algorithm or operation that you specify for the view. The underlying range is unchanged. In the earlier example, one view took a range and returned a view of only the elements that were divisible by three.
+A view is a range with the added requirement that all view operations (default construction, move construction/assignment, copy construction/assignment (if present), destruction, begin and end) happen in constant time regardless of the number of elements in the view.
+
+How the elements in the view appear depends on the algorithm or operation that you specify for the view. In the example above, a view takes a range and returns a view of only those elements that are divisible by three. The underlying range is unchanged.
 
 Views are composable. In the example above, the view of vector elements that are divisible by three is combined with the view that squares those elements.
 
