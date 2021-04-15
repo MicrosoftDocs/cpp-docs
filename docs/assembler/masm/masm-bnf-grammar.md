@@ -94,7 +94,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`aExpr`* &vert; *`cExpr`* **`||`** *`aExpr`*
 
 *`character`*\
-&emsp;Any character with ordinal in the range 0–255 except linefeed (10).
+&emsp; Any character with ordinal in the range 0–255 except linefeed (10).
 
 *`charList`*\
 &emsp; *`character`* &vert; *`charList`* *`character`*
@@ -111,7 +111,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`commList`* *`;;`*
 
 *`comment`*\
-&emsp;; *`text`* *`;;`*
+&emsp; **`;`** *`text`* *`;;`*
 
 *`commentDir`*\
 &emsp; **`COMMENT`** *`delimiter`*\
@@ -202,7 +202,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; &vert; *`decNumber`* *`decdigit`*
 
 *`delimiter`*\
-&emsp;Any character except *`whiteSpaceCharacter`*
+&emsp; Any character except *`whiteSpaceCharacter`*
 
 *`digits`*\
 &emsp; *`decdigit`*\
@@ -343,7 +343,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; ⟦ *`expr`* ⟧ *`;;`*
 
 *`exitmDir`*\
-&emsp;: **`EXITM`** &vert; **`EXITM`** *`textItem`*
+&emsp; **`:`** **`EXITM`** &vert; **`EXITM`** *`textItem`*
 
 *`exponent`*\
 &emsp; **`E`** ⟦ *`sign`* ⟧ *`decNumber`*
@@ -447,7 +447,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; **`a`** &vert; **`b`** &vert; **`c`** &vert; **`d`** &vert; **`e`** &vert; **`f`** &vert; **`A`** &vert; **`B`** &vert; **`C`** &vert; **`D`** &vert; **`E`** &vert; **`F`**
 
 *`id`*\
-&emsp;The first character of the identifier can be an upper or lower-case alphabetic character (`[A–Za-z]`) or any of these four characters: `@ _ $ ?` The remaining characters can be any of those same characters or a decimal digit (`[0–9]`). Maximum length is 247 characters.
+&emsp; The first character of the identifier can be an upper or lower-case alphabetic character (`[A–Za-z]`) or any of these four characters: `@ _ $ ?` The remaining characters can be any of those same characters or a decimal digit (`[0–9]`). Maximum length is 247 characters.
 
 *`idList`*\
 &emsp; *`id`* &vert; *`idList`* **`,`** *`id`*
@@ -524,7 +524,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`invokeArg`* &vert; *`invokeList`* **`,`** ⟦ *`;;`* ⟧ *`invokeArg`*
 
 *`keyword`*\
-&emsp;Any reserved word.
+&emsp; Any reserved word.
 
 *`keywordList`*\
 &emsp; *`keyword`* &vert; *`keyword`* *`keywordList`*
@@ -648,7 +648,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; **`TINY`** &vert; **`SMALL`** &vert; **`MEDIUM`** &vert; **`COMPACT`** &vert; **`LARGE`** &vert; **`HUGE`** &vert; **`FLAT`**
 
 *`mnemonic`*\
-&emsp;Instruction name.
+&emsp; Instruction name.
 
 *`modelDir`*\
 &emsp; **`.MODEL`**\
@@ -873,12 +873,11 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; **`PUBLIC`** &vert; **`STACK`** &vert; **`COMMON`** &vert; **`MEMORY`** &vert; **`AT`** *`constExpr`* &vert; **`PRIVATE`**
 
 *`segDir`*\
-&emsp; **`.CODE`**\
-&emsp; ⟦ *`segId`* ⟧\
+&emsp; **`.CODE`** ⟦ *`segId`* ⟧\
 &emsp; &vert; **`.DATA`**\
 &emsp; &vert;  **`.DATA?`**\
 &emsp; &vert; **`.CONST`**\
-&emsp; &vert; **`.FARDATA`**⟦ *`segId`* ⟧\
+&emsp; &vert; **`.FARDATA`** ⟦ *`segId`* ⟧\
 &emsp; &vert;  **`.FARDATA?`** ⟦ *`segId`* ⟧\
 &emsp; &vert; **`.STACK`** ⟦ *`constExpr`* ⟧
 
@@ -1064,7 +1063,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; **`.ENDW`**
 
 *`whiteSpaceCharacter`*\
-&emsp;ASCII 8, 9, 11–13, 26, 32
+&emsp; ASCII 8, 9, 11–13, 26, 32
 
 *`xmmRegister`*\
 &emsp; **`XMM0`** &vert; **`XMM1`** &vert; **`XMM2`** &vert; **`XMM3`** &vert; **`XMM4`** &vert; **`XMM5`** &vert; **`XMM6`** &vert; **`XMM7`** &vert; **`XMM8`** &vert; **`XMM9`** &vert; **`XMM10`** &vert; **`XMM11`** &vert; **`XMM12`** &vert; **`XMM13`** &vert; **`XMM14`** &vert; **`XMM15`**
