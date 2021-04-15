@@ -1,46 +1,42 @@
 ---
-title: "/showIncludes (List Include Files)"
-ms.date: "11/04/2016"
+description: "Learn more about: /showIncludes (List include files)"
+title: "/showIncludes (List include files)"
+ms.date: 04/15/2021
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.ShowIncludes", "VC.Project.VCCLCompilerTool.ShowIncludes", "/showincludes"]
 helpviewer_keywords: ["include files", "/showIncludes compiler option [C++]", "include files, displaying in compilation", "-showIncludes compiler option [C++]", "showIncludes compiler option [C++]"]
-ms.assetid: 0b74b052-f594-45a6-a7c7-09e1a319547d
 ---
-# /showIncludes (List Include Files)
+# `/showIncludes` (List include files)
 
-Causes the compiler to output a list of the include files. Nested include files are also displayed (files that are included from the files that you include).
+Causes the compiler to output a list of the include files. The option also displays nested include files, that is, the files included by the files that you include.
 
 ## Syntax
 
-```
-/showIncludes
-```
+> **`/showIncludes`**
 
 ## Remarks
 
-When an include file is encountered during compilation, a message is output, for example:
+When the compiler comes to an include file during compilation, a message is output, as in this example:
 
-```
+```cmd
 Note: including file: d:\MyDir\include\stdio.h
 ```
 
-Nested include files are indicated by an indentation, one space for each level of nesting, for example:
+Nested include files are indicated by an indentation, one space for each level of nesting, as in this example:
 
-```
+```cmd
 Note: including file: d:\temp\1.h
 Note: including file:  d:\temp\2.h
 ```
 
-In this case, `2.h` was included from within `1.h`, hence the indentation.
+In this case, *`2.h`* was included from within *`1.h`*, causing the indentation.
 
-The **/showIncludes** option emits to `stderr`, not `stdout`.
+The **`/showIncludes`** option emits to `stderr`, not `stdout`.
 
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **Advanced** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Advanced** property page.
 
 1. Modify the **Show Includes** property.
 
@@ -50,5 +46,5 @@ The **/showIncludes** option emits to `stderr`, not `stdout`.
 
 ## See also
 
-[MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)
+[MSVC compiler options](compiler-options.md)\
+[MSVC compiler command-line syntax](compiler-command-line-syntax.md)

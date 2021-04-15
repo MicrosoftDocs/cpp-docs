@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: Declarators and Variable Declarations"
-title: "Declarators and Variable Declarations"
-ms.date: "11/04/2016"
+description: "Learn more about: Declarators and variable declarations"
+title: "Declarators and variable declarations"
+ms.date: 04/14/2021
 helpviewer_keywords: ["declaring variables, declarators", "declarators, definition", "declaring variables, declaration statements"]
-ms.assetid: 5fd67a6a-3a6a-4ec9-b257-3f7390a48d40
 ---
-# Declarators and Variable Declarations
+# Declarators and variable declarations
 
-The rest of this section describes the form and meaning of declarations for variable types summarized in this list. In particular, the remaining sections explain how to declare the following:
+The rest of this section describes the form and meaning of declarations for variable types summarized in this list. In particular, the remaining sections explain how to declare:
 
 |Type of Variable|Description|
 |----------------------|-----------------|
@@ -18,17 +17,17 @@ The rest of this section describes the form and meaning of declarations for vari
 |[Structures](../c-language/structure-declarations.md)|Variables composed of a collection of values that can have different types|
 |[Unions](../c-language/union-declarations.md)|Variables composed of several values of different types that occupy the same storage space|
 
-A declarator is the part of a declaration that specifies the name that is to be introduced into the program. It can include modifiers such as <strong>\*</strong> (pointer-to) and any of the Microsoft calling-convention keywords.
+A *declarator* is the part of a declaration that specifies the name to introduce into the program. It can include modifiers such as **`*`** (pointer-to) and any of the Microsoft calling-convention keywords.
 
 **Microsoft Specific**
 
-In the declarator
+In this declarator,
 
 ```C
 __declspec(thread) char *var;
 ```
 
-**`char`** is the type specifier, `__declspec(thread)` and `*` are the modifiers, and `var` is the identifier's name.
+**`char`** is the type specifier, `__declspec(thread)` and `*` are the modifiers, and `var` is the identifier name.
 
 **END Microsoft Specific**
 
@@ -36,30 +35,30 @@ You use declarators to declare arrays of values, pointers to values, and functio
 
 ## Syntax
 
-*declarator*:<br/>
-&nbsp;&nbsp;*pointer*<sub>opt</sub> *direct-declarator*
+*`declarator`*:<br/>
+&emsp;*`pointer`*<sub>opt</sub> *`direct-declarator`*
 
-*direct-declarator*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*identifier*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**(**  *declarator*  **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator*  **[**  *constant-expression*<sub>opt</sub> **]**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator*  **(**  *parameter-type-list*  **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator*  **(**  *identifier-list*<sub>opt</sub> **)**
+*`direct-declarator`*:<br/>
+&emsp;*`identifier`*<br/>
+&emsp;**`(`**  *`declarator`*  **`)`**<br/>
+&emsp;*`direct-declarator`* **`[`** *`constant-expression`*<sub>opt</sub> **`]`**<br/>
+&emsp;*`direct-declarator`* **`(`** *`parameter-type-list`* **`)`**<br/>
+&emsp;*`direct-declarator`* **`(`** *`identifier-list`*<sub>opt</sub> **`)`**
 
-*pointer*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong> *type-qualifier-list*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong> *type-qualifier-list*<sub>opt</sub> *pointer*
+*`pointer`*:<br/>
+&emsp;**`*`** *`type-qualifier-list`*<sub>opt</sub><br/>
+&emsp;**`*`** *`type-qualifier-list`*<sub>opt</sub> *`pointer`*
 
-*type-qualifier-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*type-qualifier*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*type-qualifier-list type-qualifier*
+*`type-qualifier-list`*:<br/>
+&emsp;*`type-qualifier`*<br/>
+&emsp;*`type-qualifier-list`* *`type-qualifier`*
 
 > [!NOTE]
-> See the syntax for *declaration* in [Overview of Declarations](../c-language/overview-of-declarations.md) or [C Language Syntax Summary](../c-language/c-language-syntax-summary.md) for the syntax that references a *declarator*.
+> See the syntax for *`declaration`* in [Overview of declarations](../c-language/overview-of-declarations.md) or [C language syntax summary](../c-language/c-language-syntax-summary.md) for the syntax that references a *`declarator`*.
 
-When a declarator consists of an unmodified identifier, the item being declared has a base type. If an asterisk (<strong>\*</strong>) appears to the left of an identifier, the type is modified to a pointer type. If the identifier is followed by brackets (**[ ]**), the type is modified to an array type. If the identifier is followed by parentheses, the type is modified to a function type. For more information about interpreting precedence within declarations, see [Interpreting More Complex Declarators](../c-language/interpreting-more-complex-declarators.md).
+When a declarator consists of an unmodified identifier, the item being declared has a base type. If an asterisk (**`*`**) appears to the left of an identifier, the type is modified to a pointer type. If the identifier is followed by brackets (**`[ ]`**), the type is modified to an array type. If parentheses follow the identifier, the type is modified to a function type. For more information about interpreting precedence within declarations, see [Interpreting more complex declarators](../c-language/interpreting-more-complex-declarators.md).
 
-Each declarator declares at least one identifier. A declarator must include a type specifier to be a complete declaration. The type specifier gives the type of the elements of an array type, the type of object addressed by a pointer type, or the return type of a function.
+Each declarator declares at least one identifier. A declarator must include a type specifier to be a complete declaration. The type specifier gives: the type of the elements of an array type, the type of object addressed by a pointer type, or the return type of a function.
 
 [Array](../c-language/array-declarations.md) and [pointer](../c-language/pointer-declarations.md) declarations are discussed in more detail later in this section. The following examples illustrate a few simple forms of declarators:
 
@@ -73,10 +72,10 @@ int *aptr[10] // Declares an array of 10 pointers
 
 **Microsoft Specific**
 
-The Microsoft C compiler does not limit the number of declarators that can modify an arithmetic, structure, or union type. The number is limited only by available memory.
+The Microsoft C compiler doesn't limit the number of declarators that can modify an arithmetic, structure, or union type. The number is limited only by available memory.
 
 **END Microsoft Specific**
 
 ## See also
 
-[Declarations and Types](../c-language/declarations-and-types.md)
+[Declarations and types](../c-language/declarations-and-types.md)
