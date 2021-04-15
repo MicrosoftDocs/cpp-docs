@@ -81,7 +81,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 
 *`blockStatements`*\
 &emsp; *`directiveList`*\
-&emsp; &vert; **`.CONTINUE`** **`.IF`** *`cExpr`* ⟧\
+&emsp; &vert; **`.CONTINUE`** ⟦ **`.IF`** *`cExpr`* ⟧\
 &emsp; &vert; **`.BREAK`** ⟦ **`.IF`** *`cExpr`* ⟧
 
 *`bool`*\
