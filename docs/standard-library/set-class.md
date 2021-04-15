@@ -69,7 +69,7 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 |[`allocator_type`](#allocator_type)|A type that represents the `allocator` class for the set object.|
 |[`const_iterator`](#const_iterator)|A type that provides a bidirectional iterator that can read a **`const`** element in the set.|
 |[`const_pointer`](#const_pointer)|A type that provides a pointer to a **`const`** element in a set.|
-|[const_reference`](#const_reference)|A type that provides a reference to a **`const`** element stored in a set for reading and doing **`const`** operations.|
+|[`const_reference`](#const_reference)|A type that provides a reference to a **`const`** element stored in a set for reading and doing **`const`** operations.|
 |[`const_reverse_iterator`](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any **`const`** element in the set.|
 |[`difference_type`](#difference_type)|A signed integer type that can be used to represent the number of elements of a set in a range between elements pointed to by iterators.|
 |[`iterator`](#iterator)|A type that provides a bidirectional iterator that can read or modify any element in a set.|
@@ -112,7 +112,7 @@ The iterator provided by the set class is a bidirectional iterator, but the clas
 |[`swap`](#swap)|Exchanges the elements of two `set`s.|
 |[`upper_bound`](#upper_bound)|Returns an iterator to the first element in a `set` with a key that is greater than a specified key.|
 |[`value_comp`](#value_comp)|Retrieves a copy of the comparison object used to order element values in a `set`.|
-`
+
 ### Operators
 
 |Name|Description|
