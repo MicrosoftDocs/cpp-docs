@@ -173,7 +173,7 @@ To avoid the error, remove the **`constexpr`** modifier from the function declar
 In Visual Studio 2019, the `basic_string` range constructor no longer suppresses compiler diagnostics with **`static_cast`**. The following code compiles without warnings in Visual Studio 2017, despite the possible loss of data from **`wchar_t`** to **`char`** when initializing `out`:
 
 ```cpp
-std::wstring ws = /* … */;
+std::wstring ws = /* . . . */;
 std::string out(ws.begin(), ws.end()); // VS2019 C4244: 'argument': conversion from 'wchar_t' to 'const _Elem', possible loss of data.
 ```
 
