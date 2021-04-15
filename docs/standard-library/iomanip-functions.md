@@ -408,7 +408,7 @@ The width of the display field.
 
 ### Return Value
 
-The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.width(Wide)`, then returns `str`, see [`width`](../standard-library/ios-base-class.md#width).
+The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.width(Wide)`, then returns `str`. For more information, see [`width`](../standard-library/ios-base-class.md#width).
 
 ### Remarks
 

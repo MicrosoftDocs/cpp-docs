@@ -705,7 +705,7 @@ The shared pointer to swap with.
 
 ### Remarks
 
-The member function leaves the resource originally owned by **`*this`** subsequently owned by *sp*, and the resource originally owned by *`sp`* subsequently owned by **`*this`**. The function does not change the reference counts for the two resources and it does not throw any exceptions.
+The member function leaves the resource originally owned by **`*this`** subsequently owned by *`sp`*, and the resource originally owned by *`sp`* subsequently owned by **`*this`**. The function does not change the reference counts for the two resources and it does not throw any exceptions.
 
 ### Example
 
