@@ -59,13 +59,13 @@ using namespace std;
 unsigned short num = numeric_limits<unsigned short>::max(); // #include <limits>
 short num2 = num;
 cout << "unsigned val = " << num << " signed val = " << num2 << endl;
-// Prints: unsigned val = 65535 signed val = -1
+// Prints: "unsigned val = 65535 signed val = -1"
 
 // Go the other way.
 num2 = -1;
 num = num2;
 cout << "unsigned val = " << num << " signed val = " << num2 << endl;
-// Prints: unsigned val = 65535 signed val = -1
+// Prints: "unsigned val = 65535 signed val = -1"
 ```
 
 Notice that values are reinterpreted in both directions. If your program produces odd results in which the sign of the value seems inverted from what you expect, look for implicit conversions between signed and unsigned integral types. In the following example, the result of the expression ( 0 - 1) is implicitly converted from **`int`** to **`unsigned int`** when it's stored in `num`. This causes the bit pattern to be reinterpreted.
