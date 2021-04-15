@@ -1,7 +1,7 @@
 ---
 title: "float_control pragma"
 description: "Describes the usage and effects of the float_control pragma directive. The float_control directive controls the state of floating-point precise semantics and exception semantics at runtime."
-ms.date: 01/22/2021
+ms.date: 04/15/2021
 f1_keywords: ["vc-pragma.float_control", "float_control_CPP"]
 helpviewer_keywords: ["float_control pragma", "pragma, float_control"]
 no-loc: ["pragma"]
@@ -13,9 +13,9 @@ Specifies floating-point behavior for a function.
 ## Syntax
 
 > **`#pragma float_control`**\
-> **`#pragma float_control( precise,`** { **`on`** | **`off`** } [ **`, push`** ] **`)`**\
-> **`#pragma float_control( except,`** { **`on`** | **`off`** } [ **`, push`** ] **`)`**\
-> **`#pragma float_control(`** { **`push`** | **`pop`** } **`)`**
+> **`#pragma float_control( precise,`** { **`on`** &vert; **`off`** } [ **`, push`** ] **`)`**\
+> **`#pragma float_control( except,`** { **`on`** &vert; **`off`** } [ **`, push`** ] **`)`**\
+> **`#pragma float_control(`** { **`push`** &vert; **`pop`** } **`)`**
 
 ## Options
 
@@ -49,11 +49,11 @@ There are restrictions on the ways you can use the **`float_control`** and **`fe
 
 - You can only use **`float_control`** to set **`except`** to **`on`** if precise semantics are enabled. Precise semantics can be enabled either by the **`float_control`** pragma, or by using the **`/fp:precise`** or **`/fp:strict`** compiler options.
 
-- You can't use **`float_control`** to turn **`precise`** off when exception semantics are enabled, whether by a **`float_control`** pragma or a **`/fp:except`** compiler option.
+- You can't use **`float_control`** to turn off **`precise`** when exception semantics are enabled, whether by a **`float_control`** pragma or a **`/fp:except`** compiler option.
 
 - You can't enable **`fenv_access`** unless precise semantics are enabled, whether by a **`float_control`** pragma or a compiler option.
 
-- You can't use **`float_control`** to turn **`precise`** off when **`fenv_access`** is enabled.
+- You can't use **`float_control`** to turn off **`precise`** when **`fenv_access`** is enabled.
 
 These restrictions mean the order of some floating-point pragma directives is significant. To go from a fast model to a strict model using pragma directives, use the following code:
 
