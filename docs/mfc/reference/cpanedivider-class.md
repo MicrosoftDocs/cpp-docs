@@ -43,7 +43,9 @@ class CPaneDivider : public CBasePane
 |[CPaneDivider::FindTabbedPane](#findtabbedpane)||
 |[CPaneDivider::GetDefaultWidth](#getdefaultwidth)||
 |[CPaneDivider::GetFirstPane](#getfirstpane)||
+|[CPaneDivider::GetPaneDividers](#getpanedividers)|Returns the list of pane dividers that reside in the [CPaneContainer Class](../../mfc/reference/cpanecontainer-class.md). This method should be called only for default pane dividers.|
 |[CPaneDivider::GetPaneDividerStyle](#getpanedividerstyle)||
+|[CPaneDivider::GetPanes](#getpanes)|Returns the list of panes that reside in the [CPaneContainer Class](../../mfc/reference/cpanecontainer-class.md). This method should be called only for default pane dividers.|
 |[CPaneDivider::GetRootContainerRect](#getrootcontainerrect)||
 |[CPaneDivider::GetWidth](#getwidth)||
 |[CPaneDivider::Init](#init)||
@@ -64,15 +66,6 @@ class CPaneDivider : public CBasePane
 |[CPaneDivider::ShowWindow](#showwindow)||
 |[CPaneDivider::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)||
 |[CPaneDivider::StoreRecentTabRelatedInfo](#storerecenttabrelatedinfo)||
-
-### Public Methods
-
-|Name|Description|
-|----------|-----------------|
-|[CPaneDivider::GetPanes](#getpanes)|Returns the list of panes that reside in the [CPaneContainer Class](../../mfc/reference/cpanecontainer-class.md). This method should be called only for default pane dividers.|
-|[CPaneDivider::GetPaneDividers](#getpanedividers)|Returns the list of pane dividers that reside in the [CPaneContainer Class](../../mfc/reference/cpanecontainer-class.md). This method should be called only for default pane dividers.|
-
-### Data Members
 
 |Name|Description|
 |----------|-----------------|
