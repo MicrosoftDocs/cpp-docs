@@ -149,10 +149,10 @@ This will go to the file 'freopen.out'
 ## See also
 
 [`Stream I/O`](../../c-runtime-library/stream-i-o.md)\
-[`freopen, _wfreopen`](freopen-wfreopen.md)\
-[`fclose, _fcloseall`](fclose-fcloseall.md)\
-[`_fdopen, _wfdopen`](fdopen-wfdopen.md)\
+[`freopen`, `_wfreopen`](freopen-wfreopen.md)\
+[`fclose`, `_fcloseall`](fclose-fcloseall.md)\
+[`_fdopen`,` _wfdopen`](fdopen-wfdopen.md)\
 [`_fileno`](fileno.md)\
-[`fopen, _wfope`n](fopen-wfopen.md)\
-[`_open, _wopen`](open-wopen.md)\
+[`fopen`, `_wfopen`](fopen-wfopen.md)\
+[`_open`, `_wopen`](open-wopen.md)\
 [`_setmode`](setmode.md)
