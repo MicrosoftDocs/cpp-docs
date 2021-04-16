@@ -42,13 +42,13 @@ You may find it helpful to use the complementary option **`/showResolvedHeader`*
 To build a header unit such as `<vector>` might look like:
 
 ```cmd
-cl … /std:c++latest /exportHeader /headerName:angle vector
+cl . . . /std:c++latest /exportHeader /headerName:angle vector
 ```
 
 Building a local project header such as `"utils/util.h"` might look like:
 
 ```cmd
-cl … /std:c++latest /exportHeader /headerName:quote util/util.h
+cl . . . /std:c++latest /exportHeader /headerName:quote util/util.h
 ```
 
 ### To set this compiler option in the Visual Studio development environment

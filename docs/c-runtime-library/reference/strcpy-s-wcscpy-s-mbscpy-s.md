@@ -10,7 +10,7 @@ f1_keywords: ["strcpy_s", "_mbscpy_s", "_mbscpy_s_l", "_tcscpy_s", "wcscpy_s"]
 helpviewer_keywords: ["strcpy_s function", "_tcscpy_s function", "_mbscpy_s function", "_mbscpy_s_l function", "copying strings", "strings [C++], copying", "tcscpy_s function", "wcscpy_s function"]
 ms.assetid: 611326f3-7929-4a5d-a465-a4683af3b053
 ---
-# `strcpy_s`, `wcscpy_`s, `_mbscpy_s`, `_mbscpy_s_l`
+# `strcpy_s`, `wcscpy_s`, `_mbscpy_s`, `_mbscpy_s_l`
 
 Copies a string. These versions of [`strcpy`, `wcscpy`, `_mbscpy`](strcpy-wcscpy-mbscpy.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
