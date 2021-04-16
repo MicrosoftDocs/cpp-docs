@@ -1,6 +1,6 @@
 ---
-description: "Learn to use header units to import C++ Standard Template Library (STL) libraries."
-title: "Walkthrough: Import Standard Template Library (STL) libraries as header units"
+description: "Learn to use header units to import C++ Standard Template Library (STL) libraries in Visual Studio."
+title: "Walkthrough: Import STL libraries as header units"
 ms.date: "4/13/2021"
 ms.custom: "conceptual"
 author: "tylermsft"
@@ -9,13 +9,13 @@ helpviewer_keywords: ["import", "header unit", "ifc", "stl"]
 ---
 # Walkthrough: Import STL libraries as header units
 
-This walkthrough shows two different ways to import C++ Standard Template Library (STL) libraries as header units in Visual Studio.
+This walkthrough shows two ways to import C++ Standard Template Library (STL) libraries as header units in Visual Studio.
 
-The [first way](#approach1) has the build system automatically scan for, and build, header units based on what STL headers you import in your project.
+The [first way](#approach1) has the build system automatically scan for and build header units based on the STL headers you import in your project.
 
-The [second way](#approach2) demonstrates how to build a static library project containing header units for the STL headers you want to use, and then reference that project to import the header units.
+The [second way](#approach2) demonstrates how to build a static library project that contains header units for the STL headers you want to use and then reference that project to import the header units.
 
-Importing a STL header as a header unit is a simpler alternative to [precompiled header files](creating-precompiled-header-files.md). Header units are easier to set up and easier to use than a shared precompiled header file (PCH), while providing similar performance benefits. Unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
+Importing an STL header as a header unit is a simpler alternative to [precompiled header files](creating-precompiled-header-files.md). Header units are easier to set up and use than a shared precompiled header file (PCH) but still provide similar performance benefits. Unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
 
 Before you can import an STL header, it must be compiled into a header unit. Header units are a binary representation of a header file, and end with an *`.ifc`* extension.
 
