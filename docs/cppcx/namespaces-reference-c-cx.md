@@ -19,7 +19,7 @@ To simplify the coding of programs that target the Windows Runtime, the C++/CX c
 |-----------|-----------------|
 |[default namespace](../cppcx/default-namespace.md)|Contains descriptions of built-in, fundamental types.|
 |[Platform namespace](../cppcx/platform-namespace-c-cx.md)|Contains descriptions of types that you can use, and also internal types that are used only by the compiler infrastructure.|
-|[Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)|Contains descriptions of enhancements and extensions to the Windows Runtime`Windows::Foundation::Collections` namespace.|
+|[Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)|Contains descriptions of enhancements and extensions to the Windows Runtime `Windows::Foundation::Collections` namespace.|
 
 ## See also
 

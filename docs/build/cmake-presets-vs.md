@@ -123,7 +123,7 @@ In the example above:
 - **192.168.0.5** is a remote Linux system that was added to the **Connection Manager**.
 - **ubuntu2004** and **debian** are WSL installations.
 
-Select **Manage Connections…** to open the **Connection Manager**.
+Select **Manage Connections** to open the **Connection Manager**.
 
 ### Select a Configure Preset
 
@@ -131,7 +131,7 @@ The dropdown in the middle indicates the active **Configure Preset**. It's the `
 
 Visual Studio will use the value of `hostOS` in the Microsoft Visual Studio Settings vendor map to hide Configure Presets that don't apply to the active Target System. For more information, see the entry for `hostOS` in the table under [Visual Studio Settings vendor map](cmake-presets-json-reference.md#visual-studio-settings-vendor-map).
 
-Select **Manage Configurations…** to open the `CMakePresets.json` file located at the root of the project. `CMakePresets.json` is created if it doesn't already exist.
+Select **Manage Configurations** to open the `CMakePresets.json` file located at the root of the project. `CMakePresets.json` is created if it doesn't already exist.
 
 ### Select a Build Preset
 
@@ -169,7 +169,7 @@ Use a forward slash (`/`) for paths in `CMakePresets.json` and `CMakeUserPresets
 
 ### Add new Configure Presets
 
-To add a new Configure Preset to `CMakePresets.json`, from **Solution Explorer** right-click `CMakePresets.json` from **Folder View** and select **Add Configure Preset…** from the context menu. The dialog to select a Configure Preset template appears:
+To add a new Configure Preset to `CMakePresets.json`, from **Solution Explorer** right-click `CMakePresets.json` from **Folder View** and select **Add Configure Preset** from the context menu. The dialog to select a Configure Preset template appears:
 
 ![Add configure preset to `CMakePresets.json` dialog](./media/add-configure-preset-to-cmakepresets.png)
 

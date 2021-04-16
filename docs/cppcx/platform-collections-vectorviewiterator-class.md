@@ -9,7 +9,7 @@ ms.assetid: be3aa1ae-e6ba-4a06-8d6b-86d8128026f7
 ---
 # Platform::Collections::VectorViewIterator Class
 
-Provides a Standard Template Library iterator for objects derived from the Windows Runtime`IVectorView` interface.
+Provides a Standard Template Library iterator for objects derived from the Windows Runtime `IVectorView` interface.
 
 `ViewVectorIterator` is a proxy iterator that stores elements of type `VectorProxy<T>`. However, the proxy object is almost never visible to user code. For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).
 
