@@ -1,20 +1,20 @@
 ---
 title: "Microsoft Macro Assembler BNF Grammar"
 description: "BNF description of MASM for x64."
-ms.date: "12/17/2019"
+ms.date: 04/15/2021
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), BNF reference"]
 ---
 # Microsoft Macro Assembler BNF Grammar
 
 This page contains a BNF description of the MASM grammar. It's provided as a supplement to the reference and isn't guaranteed to be complete. Consult the reference for full information on keywords, parameters, operations, and so on.
 
-To illustrate the use of the BNF, the following diagram shows the definition of the TYPEDEF directive, starting with the nonterminal *`typedefDir`*.
+To illustrate the use of the BNF, the following diagram shows the definition of the **`TYPEDEF`** directive, starting with the nonterminal *`typedefDir`*.
 
 ![A chart showing the hierarchy of terminals and nonterminals that produce a typedefDir.](media/bnf.png)
 
 The entries under each horizontal brace are terminals, such as **`NEAR16`**, **`NEAR32`**, **`FAR16`**, and **`FAR32`**. Or, they're nonterminals such as *`qualifier`*, *`qualifiedType`*, *`distance`*, and *`protoSpec`* that can be further defined. Each italicized nonterminal in the *`typedefDir`* definition is also an entry in the BNF. Three vertical dots indicate a branching definition for a nonterminal that, for the sake of simplicity, this figure doesn't illustrate.
 
-The BNF grammar allows recursive definitions. For example, the grammar uses qualifiedType as a possible definition for qualifiedType, which is also a component of the definition for qualifier. The "&vert;" symbol specifies a choice between alternate expressions, for example *`endOfLine`* &vert; *`comment`*. Double braces specify an optional parameter, for example ⟦ *`macroParmList`* ⟧. The brackets don't actually appear in the source code.
+The BNF grammar allows recursive definitions. For example, the grammar uses *`qualifiedType`* as a possible definition for *`qualifiedType`*, which is also a component of the definition for *`qualifier`*. The "&vert;" symbol specifies a choice between alternate expressions, for example *`endOfLine`* &vert; *`comment`*. Double braces specify an optional parameter, for example ⟦ *`macroParmList`* ⟧. The brackets don't actually appear in the source code.
 
 ## MASM Nonterminals
 
@@ -32,6 +32,9 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 
 *`altId`*\
 &emsp; *`id`*
+
+*`alpha`*\
+&emsp; Any upper or lowercase letter (A-Z) or one of these four characters: `@ _ $ ?`
 
 *`arbitraryText`*\
 &emsp; *`charList`*
@@ -94,7 +97,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`aExpr`* &vert; *`cExpr`* **`||`** *`aExpr`*
 
 *`character`*\
-&emsp;Any character with ordinal in the range 0–255 except linefeed (10).
+&emsp; Any character with ordinal in the range 0–255 except linefeed (10).
 
 *`charList`*\
 &emsp; *`character`* &vert; *`charList`* *`character`*
@@ -111,7 +114,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`commList`* *`;;`*
 
 *`comment`*\
-&emsp;; *`text`* *`;;`*
+&emsp; **`;`** *`text`* *`;;`*
 
 *`commentDir`*\
 &emsp; **`COMMENT`** *`delimiter`*\
@@ -132,7 +135,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 
 *`contextDir`*\
 &emsp; **`PUSHCONTEXT`** *`contextItemList`* *`;;`*\
-&emsp; **`POPCONTEXT`** *`contextItemList`* *`;;`*
+&emsp; &vert; **`POPCONTEXT`** *`contextItemList`* *`;;`*
 
 *`contextItem`*\
 &emsp; **`ASSUMES`** &vert; **`RADIX`** &vert; **`LISTING`** &vert; **`CPU`** &vert; **`ALL`**
@@ -147,18 +150,16 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`controlIf`* &vert; *`controlBlock`*
 
 *`controlElseif`*\
-&emsp; **`.ELSEIF`**
-&emsp; *`cExpr`* *`;;`*\
+&emsp; **`.ELSEIF`** *`cExpr`* *`;;`*\
 &emsp; *`directiveList`* \
 &emsp; ⟦ *`controlElseif`* ⟧
 
 *`controlIf`*\
-&emsp; **`.IF`**
-&emsp; *`cExpr`* *`;;`*\
+&emsp; **`.IF`** *`cExpr`* *`;;`*\
 &emsp; *`directiveList`*\
 &emsp; ⟦ *`controlElseif`* ⟧\
-&emsp; **`.ELSE`** *`;;`*\
-&emsp; ⟦ *`directiveList`*⟧\
+&emsp; ⟦ **`.ELSE`** *`;;`*\
+&emsp; *`directiveList`*⟧\
 &emsp; **`.ENDIF`** *`;;`*
 
 *`coprocessor`*\
@@ -169,7 +170,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 
 *`crefOption`*\
 &emsp; **`.CREF`**\
-&emsp; &vert; **`.XCREF`**  ⟦ *`idList`* ⟧\
+&emsp; &vert; **`.XCREF`** ⟦ *`idList`* ⟧\
 &emsp; &vert; **`.NOCREF`** ⟦ *`idList`* ⟧
 
 *`cxzExpr`*\
@@ -202,7 +203,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; &vert; *`decNumber`* *`decdigit`*
 
 *`delimiter`*\
-&emsp;Any character except *`whiteSpaceCharacter`*
+&emsp; Any character except *`whiteSpaceCharacter`*
 
 *`digits`*\
 &emsp; *`decdigit`*\
@@ -282,8 +283,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; &vert; **`ST`** **`(`** *`expr`* **`)`**
 
 *`echoDir`*\
-&emsp; **`ECHO`**\
-&emsp; *`arbitraryText`* *`;;`*\
+&emsp; **`ECHO`** *`arbitraryText`* *`;;`*\
 &emsp; **`%OUT`** *`arbitraryText`* *`;;`*
 
 *`elseifBlock`*\
@@ -339,11 +339,10 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; &vert; **`.ERR2`** ⟦ *`textItem`* ⟧
 
 *`exitDir`*\
-&emsp; **`.EXIT`**
-&emsp; ⟦ *`expr`* ⟧ *`;;`*
+&emsp; **`.EXIT`** ⟦ *`expr`* ⟧ *`;;`*
 
 *`exitmDir`*\
-&emsp;: **`EXITM`** &vert; **`EXITM`** *`textItem`*
+&emsp; **`:`** **`EXITM`** &vert; **`EXITM`** *`textItem`*
 
 *`exponent`*\
 &emsp; **`E`** ⟦ *`sign`* ⟧ *`decNumber`*
@@ -395,7 +394,8 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 
 *`floatNumber`*\
 &emsp; ⟦ *`sign`* ⟧ *`decNumber`* **`.`** ⟦ *`decNumber`* ⟧ ⟦ *`exponent`* ⟧\
-&emsp; &vert; *`digits`* **`R`** &vert; *`digits`* **`r`**
+&emsp; &vert; *`digits`* **`R`**\
+&emsp; &vert; *`digits`* **`r`**
 
 *`forcDir`*\
 &emsp; **`FORC`** &vert; **`IRPC`**
@@ -435,7 +435,9 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; &vert; *`aliasDir`*
 
 *`gpRegister`*\
-&emsp; **`AX`** &vert; **`EAX`** &vert; **`CX`** &vert; **`ECX`** &vert; **`DX`** &vert; **`EDX`** &vert; **`BX`** &vert; **`EBX`** &vert; **`DI`** &vert; **`EDI`** &vert; **`SI`** &vert; **`ESI`** &vert; **`BP`** &vert; **`EBP`** &vert; **`SP`** &vert; **`ESP`** &vert; **`RSP`** &vert; **`R8W`** &vert; **`R8D`** &vert; **`R9W`** &vert; **`R9D`** &vert; **`R12D`** &vert; **`R13W`** &vert; **`R13D`** &vert; **`R14W`** &vert; **`R14D`**
+&emsp; **`AX`** &vert; **`EAX`** &vert; **`CX`** &vert; **`ECX`** &vert; **`DX`** &vert; **`EDX`** &vert; **`BX`** &vert; **`EBX`**\
+&emsp; &vert; **`DI`** &vert; **`EDI`** &vert; **`SI`** &vert; **`ESI`** &vert; **`BP`** &vert; **`EBP`** &vert; **`SP`** &vert; **`ESP`**\
+&emsp; &vert; **`R8W`** &vert; **`R8D`** &vert; **`R9W`** &vert; **`R9D`** &vert; **`R12D`** &vert; **`R13W`** &vert; **`R13D`** &vert; **`R14W`** &vert; **`R14D`**
 
 *`groupDir`*\
 &emsp; *`groupId`* **`GROUP`** *`segIdList`*
@@ -444,10 +446,14 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`id`*
 
 *`hexdigit`*\
-&emsp; **`a`** &vert; **`b`** &vert; **`c`** &vert; **`d`** &vert; **`e`** &vert; **`f`** &vert; **`A`** &vert; **`B`** &vert; **`C`** &vert; **`D`** &vert; **`E`** &vert; **`F`**
+&emsp; **`a`** &vert; **`b`** &vert; **`c`** &vert; **`d`** &vert; **`e`** &vert; **`f`**\
+&emsp; &vert; **`A`** &vert; **`B`** &vert; **`C`** &vert; **`D`** &vert; **`E`** &vert; **`F`**
 
 *`id`*\
-&emsp;The first character of the identifier can be an upper or lower-case alphabetic character (`[A–Za-z]`) or any of these four characters: `@ _ $ ?` The remaining characters can be any of those same characters or a decimal digit (`[0–9]`). Maximum length is 247 characters.
+&emsp; *`alpha`*\
+&emsp; &vert; *`id`* *`alpha`*\
+&emsp; &vert; *`id`* *`decdigit`*\
+&emsp; Maximum length is 247 characters.
 
 *`idList`*\
 &emsp; *`id`* &vert; *`idList`* **`,`** *`id`*
@@ -515,7 +521,9 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; ⟦ *`instrPrefix`* ⟧ *`asmInstruction`*
 
 *`invokeArg`*\
-&emsp; *`register`* **`::`** *`register`* &vert; *`expr`* &vert; **`ADDR`** *`expr`*
+&emsp; *`register`* **`::`** *`register`*\
+&emsp; &vert; *`expr`*\
+&emsp; &vert; **`ADDR`** *`expr`*
 
 *`invokeDir`*\
 &emsp; **`INVOKE`** *`expr`* ⟦ **`,`** ⟦ *`;;`* ⟧ *`invokeList`* ⟧ *`;;`*
@@ -524,7 +532,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`invokeArg`* &vert; *`invokeList`* **`,`** ⟦ *`;;`* ⟧ *`invokeArg`*
 
 *`keyword`*\
-&emsp;Any reserved word.
+&emsp; Any reserved word.
 
 *`keywordList`*\
 &emsp; *`keyword`* &vert; *`keyword`* *`keywordList`*
@@ -648,11 +656,10 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; **`TINY`** &vert; **`SMALL`** &vert; **`MEDIUM`** &vert; **`COMPACT`** &vert; **`LARGE`** &vert; **`HUGE`** &vert; **`FLAT`**
 
 *`mnemonic`*\
-&emsp;Instruction name.
+&emsp; Instruction name.
 
 *`modelDir`*\
-&emsp; **`.MODEL`**\
-&emsp; *`memOption`* ⟦ **`,`** *`modelOptlist`* ⟧ *`;;`*
+&emsp; **`.MODEL`** *`memOption`* ⟦ **`,`** *`modelOptlist`* ⟧ *`;;`*
 
 *`modelOpt`*\
 &emsp; *`langType`* &vert; *`stackOption`*
@@ -667,8 +674,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; **`*`** &vert; **`/`** &vert; **`MOD`**
 
 *`nameDir`*\
-&emsp; **`NAME`**\
-&emsp; *`id`* *`;;`*
+&emsp; **`NAME`** *`id`* *`;;`*
 
 *`nearfar`*\
 &emsp; **`NEAR`** &vert; **`FAR`**
@@ -682,7 +688,9 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`offsetDirType`* *`;;`*
 
 *`offsetDirType`*\
-&emsp; **`EVEN`** &vert; **`ORG`** *`immExpr`* &vert; **`ALIGN`** ⟦ *`constExpr`* ⟧
+&emsp; **`EVEN`**\
+&emsp; &vert; **`ORG`** *`immExpr`*\
+&emsp; &vert; **`ALIGN`** ⟦ *`constExpr`* ⟧
 
 *`offsetType`*\
 &emsp; **`GROUP`** &vert; **`SEGMENT`** &vert; **`FLAT`**
@@ -694,7 +702,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; **`OPTION`** *`optionList`* *`;;`*
 
 *`optionItem`*\
-&emsp; **`CASEMAP`** : *`mapType`*\
+&emsp; **`CASEMAP`** **`:`** *`mapType`*\
 &emsp; &vert; **`DOTNAME`** &vert; **`NODOTNAME`**\
 &emsp; &vert; **`EMULATOR`** &vert; **`NOEMULATOR`**\
 &emsp; &vert; **`EPILOGUE`** **`:`** *`macroId`*\
@@ -739,7 +747,8 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`constExpr`*
 
 *`parm`*\
-&emsp; *`parmId`* ⟦ **`:`** *`qualifiedType`* ⟧ &vert; *`parmId`* ⟦ *`constExpr`* ⟧ ⟦ **`:`** *`qualifiedType`* ⟧
+&emsp; *`parmId`* ⟦ **`:`** *`qualifiedType`* ⟧\
+&emsp; &vert; *`parmId`* ⟦ *`constExpr`* ⟧ ⟦ **`:`** *`qualifiedType`* ⟧
 
 *`parmId`*\
 &emsp; *`id`*
@@ -757,8 +766,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`expr`* *`binaryOp`* *`expr`* &vert; *`flagName`* &vert; *`expr`*
 
 *`procDir`*\
-&emsp; *`procId`* **`PROC`**\
-&emsp; ⟦ *`pOptions`* ⟧ ⟦ **`<`** *`macroArgList`* **`>`** ⟧\
+&emsp; *`procId`* **`PROC`** ⟦ *`pOptions`* ⟧ ⟦ **`<`** *`macroArgList`* **`>`** ⟧\
 &emsp; ⟦ *`usesRegs`* ⟧ ⟦ *`procParmList`* ⟧
 
 *`processor`*\
@@ -791,7 +799,8 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; &vert; *`protoList`* **`,`** ⟦ *`;;`* ⟧ *`protoArg`*
 
 *`protoSpec`*\
-&emsp; ⟦ *`distance`* ⟧ ⟦ *`langType`* ⟧ ⟦ *`protoArgList`* ⟧ &vert; *`typeId`*
+&emsp; ⟦ *`distance`* ⟧ ⟦ *`langType`* ⟧ ⟦ *`protoArgList`* ⟧\
+&emsp; &vert; *`typeId`*
 
 *`protoTypeDir`*\
 &emsp; *`id`* **`PROTO`** *`protoSpec`*
@@ -809,7 +818,8 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; **`PURGE`** *`macroIdList`*
 
 *`qualifiedType`*\
-&emsp; *`type`* &vert; ⟦ *`distance`* ⟧ **`PTR`** ⟦ *`qualifiedType`* ⟧
+&emsp; *`type`*\
+&emsp; &vert; ⟦ *`distance`* ⟧ **`PTR`** ⟦ *`qualifiedType`* ⟧
 
 *`qualifier`*\
 &emsp; *`qualifiedType`* &vert; **`PROTO`** *`protoSpec`*
@@ -818,16 +828,19 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; **`"`** &vert; **`'`**
 
 *`qwordRegister`*\
-&emsp; **`RAX`** &vert; **`RCX`** &vert; **`RDX`** &vert; **`RBX`** &vert; **`RDI`** &vert; **`RSI`** &vert; **`RBP`** &vert; **`R8`** &vert; **`R9`** &vert; **`R10`** &vert; **`R11`** &vert; **`R12`** &vert; **`R13`** &vert; **`R14`** &vert; **`R15`**
+&emsp; **`RAX`** &vert; **`RCX`** &vert; **`RDX`** &vert; **`RBX`** &vert; **`RSP`** &vert; **`RBP`** &vert; **`RSI`** &vert; **`RDI`**\
+&emsp; &vert; **`R8`** &vert; **`R9`** &vert; **`R10`** &vert; **`R11`** &vert; **`R12`** &vert; **`R13`** &vert; **`R14`** &vert; **`R15`**
 
 *`radixDir`*\
 &emsp; **`.RADIX`** *`constExpr`* *`;;`*
 
 *`radixOverride`*\
-&emsp; **`h`** &vert; **`o`** &vert; **`q`** &vert; **`t`** &vert; **`y`** &vert; **`H`** &vert; **`O`** &vert; **`Q`** &vert; **`T`** &vert; **`Y`**
+&emsp; **`h`** &vert; **`o`** &vert; **`q`** &vert; **`t`** &vert; **`y`**\
+&emsp; &vert; **`H`** &vert; **`O`** &vert; **`Q`** &vert; **`T`** &vert; **`Y`**
 
 *`recordConst`*\
-&emsp; *`recordTag`* **`{`** *`oldRecordFieldList`* **`}`** &vert; *`recordTag`* **`<`** *`oldRecordFieldList`* **`>`**
+&emsp; *`recordTag`* **`{`** *`oldRecordFieldList`* **`}`**\
+&emsp; &vert; *`recordTag`* **`<`** *`oldRecordFieldList`* **`>`**
 
 *`recordDir`*\
 &emsp; *`recordTag`* **`RECORD`** *`bitDefList`* *`;;`*
@@ -847,7 +860,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`id`*
 
 *`register`*\
-&emsp; *`specialRegister`* &vert; *`gpRegister`* &vert; *`byteRegister`* &vert; *`qwordRegister`* &vert;  *`fpuRegister`* &vert; *`SIMDRegister`* &vert; *`segmentRegister`*
+&emsp; *`specialRegister`* &vert; *`gpRegister`* &vert; *`byteRegister`* &vert; *`qwordRegister`* &vert; *`fpuRegister`* &vert; *`SIMDRegister`* &vert; *`segmentRegister`*
 
 *`regList`*\
 &emsp; *`register`* &vert; *`regList`* *`register`*
@@ -864,7 +877,8 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; **`REPEAT`** &vert; **`REPT`**
 
 *`scalarInstList`*\
-&emsp; *`initValue`* &vert; *`scalarInstList`* **`,`** ⟦ *`;;`* ⟧ *`initValue`*
+&emsp; *`initValue`*\
+&emsp; &vert; *`scalarInstList`* **`,`** ⟦ *`;;`* ⟧ *`initValue`*
 
 *`segAlign`*\
 &emsp; **`BYTE`** &vert; **`WORD`** &vert; **`DWORD`** &vert; **`PARA`** &vert; **`PAGE`**
@@ -873,13 +887,12 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; **`PUBLIC`** &vert; **`STACK`** &vert; **`COMMON`** &vert; **`MEMORY`** &vert; **`AT`** *`constExpr`* &vert; **`PRIVATE`**
 
 *`segDir`*\
-&emsp; **`.CODE`**\
-&emsp; ⟦ *`segId`* ⟧\
+&emsp; **`.CODE`** ⟦ *`segId`* ⟧\
 &emsp; &vert; **`.DATA`**\
-&emsp; &vert;  **`.DATA?`**\
+&emsp; &vert; **`.DATA?`**\
 &emsp; &vert; **`.CONST`**\
-&emsp; &vert; **`.FARDATA`**⟦ *`segId`* ⟧\
-&emsp; &vert;  **`.FARDATA?`** ⟦ *`segId`* ⟧\
+&emsp; &vert; **`.FARDATA`** ⟦ *`segId`* ⟧\
+&emsp; &vert; **`.FARDATA?`** ⟦ *`segId`* ⟧\
 &emsp; &vert; **`.STACK`** ⟦ *`constExpr`* ⟧
 
 *`segId`*\
@@ -926,7 +939,8 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 *`simdRegister`*\
 &emsp; **`MM0`** &vert; **`MM1`** &vert; **`MM2`** &vert; **`MM3`** &vert; **`MM4`** &vert; **`MM5`** &vert; **`MM6`** &vert; **`MM7`**\
 &emsp; &vert; *`xmmRegister`*\
-&emsp; &vert; **`YMM0`** &vert; **`YMM1`** &vert; **`YMM2`** &vert; **`YMM3`** &vert; **`YMM4`** &vert; **`YMM5`** &vert; **`YMM6`** &vert; **`YMM7`** &vert; **`YMM8`** &vert; **`YMM9`** &vert; **`YMM10`** &vert; **`YMM11`** &vert; **`YMM12`** &vert; **`YMM13`** &vert; **`YMM14`** &vert; **`YMM15`**
+&emsp; &vert; **`YMM0`** &vert; **`YMM1`** &vert; **`YMM2`** &vert; **`YMM3`** &vert; **`YMM4`** &vert; **`YMM5`** &vert; **`YMM6`** &vert; **`YMM7`**\
+&emsp; &vert; **`YMM8`** &vert; **`YMM9`** &vert; **`YMM10`** &vert; **`YMM11`** &vert; **`YMM12`** &vert; **`YMM13`** &vert; **`YMM14`** &vert; **`YMM15`**
 
 *`simpleExpr`*\
 &emsp; **`(`** *`cExpr`* **`)`** &vert; *`primary`*
@@ -945,7 +959,9 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; &vert; *`endOfLine`*
 
 *`specialRegister`*\
-&emsp; **`CR0`** &vert; **`CR2`** &vert; **`CR3`** &vert; **`DR0`** &vert; **`DR1`** &vert; **`DR2`** &vert; **`DR3`** &vert; **`DR6`** &vert; **`DR7`** &vert; **`TR3`** &vert; **`TR4`** &vert; **`TR5`** &vert; **`TR6`** &vert; **`TR7`**
+&emsp; **`CR0`** &vert; **`CR2`** &vert; **`CR3`**\
+&emsp; &vert; **`DR0`** &vert; **`DR1`** &vert; **`DR2`** &vert; **`DR3`** &vert; **`DR6`** &vert; **`DR7`**\
+&emsp; &vert; **`TR3`** &vert; **`TR4`** &vert; **`TR5`** &vert; **`TR6`** &vert; **`TR7`**
 
 *`stackOption`*\
 &emsp; **`NEARSTACK`** &vert; **`FARSTACK`**
@@ -970,8 +986,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`structTag`* *`structHdr`* ⟦ *`fieldAlign`* ⟧\
 &emsp; ⟦ **`,`** **`NONUNIQUE`** ⟧ *`;;`*\
 &emsp; *`structBody`*\
-&emsp; *`structTag`*\
-&emsp; **`ENDS`** *`;;`*
+&emsp; *`structTag`* **`ENDS`** *`;;`*
 
 *`structHdr`*\
 &emsp; **`STRUC`** &vert; **`STRUCT`** &vert; **`UNION`**
@@ -997,7 +1012,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; *`simpleExpr`* &vert; **`!`** *`simpleExpr`*
 
 *`text`*\
-&emsp; *`textLiteral`* &vert; *`text`* character &vert; **`!`** *`character`* *`text`* &vert; *`character`* &vert; **`!`** *`character`*
+&emsp; *`textLiteral`* &vert; *`text`* *`character`* &vert; **`!`** *`character`* *`text`* &vert; *`character`* &vert; **`!`** *`character`*
 
 *`textDir`*\
 &emsp; *`id`* *`textMacroDir`* *`;;`*
@@ -1042,7 +1057,7 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; &vert; *`typeId`*
 
 *`typedefDir`*\
-&emsp; *`typeId`* **`TYPEDEF`** qualifier
+&emsp; *`typeId`* **`TYPEDEF`** *`qualifier`*
 
 *`typeId`*\
 &emsp; *`id`*
@@ -1058,13 +1073,13 @@ The BNF grammar allows recursive definitions. For example, the grammar uses qual
 &emsp; **`USES`** *`regList`*
 
 *`whileBlock`*\
-&emsp; **`.WHILE`**\
-&emsp; *`cExpr`* *`;;`*\
+&emsp; **`.WHILE`** *`cExpr`* *`;;`*\
 &emsp; *`blockStatements`* *`;;`*\
 &emsp; **`.ENDW`**
 
 *`whiteSpaceCharacter`*\
-&emsp;ASCII 8, 9, 11–13, 26, 32
+&emsp; ASCII 8, 9, 11–13, 26, 32
 
 *`xmmRegister`*\
-&emsp; **`XMM0`** &vert; **`XMM1`** &vert; **`XMM2`** &vert; **`XMM3`** &vert; **`XMM4`** &vert; **`XMM5`** &vert; **`XMM6`** &vert; **`XMM7`** &vert; **`XMM8`** &vert; **`XMM9`** &vert; **`XMM10`** &vert; **`XMM11`** &vert; **`XMM12`** &vert; **`XMM13`** &vert; **`XMM14`** &vert; **`XMM15`**
+&emsp; **`XMM0`** &vert; **`XMM1`** &vert; **`XMM2`** &vert; **`XMM3`** &vert; **`XMM4`** &vert; **`XMM5`** &vert; **`XMM6`** &vert; **`XMM7`**\
+&emsp; &vert; **`XMM8`** &vert; **`XMM9`** &vert; **`XMM10`** &vert; **`XMM11`** &vert; **`XMM12`** &vert; **`XMM13`** &vert; **`XMM14`** &vert; **`XMM15`**
