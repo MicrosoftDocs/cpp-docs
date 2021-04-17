@@ -16,17 +16,17 @@ Header units are the recommended alternative to [precompiled header files](creat
 
 ## Prerequisites
 
-To use header units, you need at least Visual Studio 2019 16.10.0 Preview 2.
+To use header units, you need Visual Studio 2019 16.10.0 Preview 2 or later.
 
 ## What is a header unit?
 
 A header unit is a binary representation of a header file. A header unit ends with an .ifc extension. This format is also used for named modules.
 
-An important difference between a header unit and a header file is that header units aren't affected by macro definitions. You can't `#define` a symbol that causes the header unit to behave differently when you import it, the way that you can with a header file.
+An important difference between a header unit and a header file is that header units aren't affected by macro definitions. You can't `#define` a symbol that causes the header unit to behave differently when you import it. You can do that with a header file.
 
 A similarity is that everything visible from a header file is also visible from a header unit.
 
-Before you can import a header unit, you need to compile a header file into a header unit. An advantage of header units over PCH is that it can be used in distributed builds. For example, as long as you're using the same compiler to compile the .ifc and the program that imports it and are targeting the same platform and architecture, a header unit produced on one machine can be used on another.
+Before you can import a header unit, you need to compile a header file into a header unit. An advantage of header units over PCH is that they can be used in distributed builds. For example, as long as you're using the same compiler to compile the .ifc and the program that imports it and are targeting the same platform and architecture, a header unit produced on one computer can be used on another.
 
 Another advantage of header units over PCH is that there's more flexibility for the compiler flags used to compile the header unit and for the program that imports it. With a PCH, more compiler flags must be the same. But with header units, these primary flags should be the same:
 
