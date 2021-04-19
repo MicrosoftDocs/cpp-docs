@@ -100,6 +100,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 1, Error) C4694](../../error-messages/compiler-warnings/compiler-warning-c4694.md)|'class': a sealed abstract class cannot have a base-class 'base_class'|
 |Compiler warning (level 1) C4695|#pragma execution_character_set: 'character set' is not a supported argument: currently only 'UTF-8' is supported|
 |Compiler warning (level 1) C4696|/ZBvalue1 option out of range; assuming 'value2'|
+| [Compiler warning (level 3) C4698](../../error-messages/compiler-warnings/c4698.md) | '*feature*' is for evaluation purposes only and is subject to change or removal in future updates. |
 |[Compiler warning (level 1 and level 4) C4700](../../error-messages/compiler-warnings/compiler-warning-level-1-and-level-4-c4700.md)|uninitialized local variable 'name' used|
 |[Compiler warning (level 4) C4701](../../error-messages/compiler-warnings/compiler-warning-level-4-c4701.md)|potentially uninitialized local variable 'name' used|
 |[Compiler warning (level 4) C4702](../../error-messages/compiler-warnings/compiler-warning-level-4-c4702.md)|unreachable code|
@@ -157,7 +158,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (Level 1) C4788](../../error-messages/compiler-warnings/compiler-warning-level-1-c4788.md)|'identifier': identifier was truncated to 'number' characters|
 |[Compiler warning (Level 1) C4789](../../error-messages/compiler-warnings/compiler-warning-level-1-c4789.md)|buffer 'identifier' of size N bytes will be overrun; M bytes will be written starting at offset L|
 |Compiler warning (level 2) C4792|function '%s' declared using sysimport and referenced from native code; import library required to link|
-|[Compiler warning (level 1 and 3) C4793](../../error-messages/compiler-warnings/compiler-warning-level-1-and-3-c4793.md)|'function': function compiled as native:\n\t'reason'|
+|[Compiler warning (level 1 and 3) C4793](../../error-messages/compiler-warnings/compiler-warning-level-1-and-3-c4793.md)|'function': function compiled as native: 'reason'|
 |[Compiler warning (level 1) C4794](compiler-warning-level-1-c4794.md)|segment of thread local storage variable '%s' changed from '%s' to '%s'|
 |[Compiler warning (level 1) C4799](../../error-messages/compiler-warnings/compiler-warning-level-1-c4799.md)|function 'function' has no EMMS instruction|
 

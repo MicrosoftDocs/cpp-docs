@@ -1352,10 +1352,9 @@ int main() {
 
 Starting in Visual Studio 2019 version 16.6, the behavior of **`typedef`** declarations has been restricted to conform to [P1766R1](https://wg21.link/P1766R1). With this update, unnamed classes within a **`typedef`** declaration can't have any members other than:
 
-- non-static data members,
-- member classes,
-- member enumerations,
-- and default member initializers.
+- non-static data members with no default member initializers,
+- member classes, or
+- member enumerations.
 
 The same restrictions are applied recursively to each nested class. The restriction is meant to ensure the simplicity of structs that have **`typedef`** names for linkage purposes. They must be simple enough that no linkage calculations are necessary before the compiler gets to the **`typedef`** name for linkage.
 
@@ -1819,7 +1818,7 @@ struct promise_type_legacy {
 
 // /std:c++latest
 struct promise_type {
-    auto initial_susepend() noexcept { return std::suspend_never{}; }
+    auto initial_suspend() noexcept { return std::suspend_never{}; }
     auto final_suspend() noexcept { return std::suspend_always{}; }
     ...
 };
