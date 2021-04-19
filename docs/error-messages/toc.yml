@@ -3104,11 +3104,14 @@
           href: compiler-errors-2/compiler-error-c3920.md
         - name: Compiler error C3923
           href: compiler-errors-2/compiler-error-c3923.md
-    - name: Compiler errors C7000 through C7999
+    - name: Compiler errors C7000 through C7499
       expanded: false
       items: 
         - name: Compiler errors C7000 through C7499
           href: compiler-errors-2/compiler-errors-c7000-through-c7499.md
+    - name: Compiler errors C7500 through C7999
+      expanded: false
+      items: 
         - name: Compiler errors C7500 through C7999
           href: compiler-errors-2/compiler-errors-c7500-through-c7999.md
         - name: Compiler error C7626
