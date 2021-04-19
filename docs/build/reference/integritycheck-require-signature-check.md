@@ -30,6 +30,10 @@ The **/INTEGRITYCHECK** option sets—in the PE header of the DLL file or execut
 
 1. In **Additional Options**, enter `/INTEGRITYCHECK` or `/INTEGRITYCHECK:NO`.
 
+## Signing /INTEGRITYCHECK Files
+
+There is new signing guidance for /INTEGRITYCHECK-linked DLL and executable files. Previously, the signing requirements for these files were to sign with a cross-signed certificate from the [cross-signing program](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing). As a result of the [deprecation of the cross-signing program](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates), /INTEGRITYCHECK files can now be signed through Microsoft's signing program: [Azure Code Sign](https://techcommunity.microsoft.com/t5/video-hub/reduce-developer-friction-with-azure-code-signing/m-p/1698637). 
+
 ## See also
 
 [MSVC linker reference](linking.md)<br/>
