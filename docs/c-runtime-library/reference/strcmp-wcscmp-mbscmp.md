@@ -51,7 +51,7 @@ Locale to use.
 
 The return value for each of these functions indicates the ordinal relation of *`string1`* to *`string2`*.
 
-|Value|Relationship of string1 to string2|
+|Value|Relationship of `string1` to `string2`|
 |-----------|----------------------------------------|
 |< 0|*`string1`* is less than *`string2`*|
 |0|*`string1`* is identical to *`string2`*|
@@ -61,7 +61,7 @@ On a parameter validation error, **`_mbscmp`** and **`_mbscmp_l`** return **`_NL
 
 ## Remarks
 
-The **`strcmp`** function performs an ordinal comparison of *`string1`* and *`string2`* and returns a value that indicates their relationship. **`wcscmp`** and **`_mbscmp`** are, respectively, wide-character and multibyte-character versions of **`strcmp`**. **`_mbscmp`** recognizes multibyte-character sequences according to the current multibyte code page and returns **`_NLSCMPERROR`** on an error. **`_mbscmp_l`** has the same behavior, but uses the locale parameter that's passed in instead of the current locale. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). Also, if *`string1`* or *`string2`* is a null pointer, **`_mbscmp`** invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **`_mbscmp`** and **`_mbscmp_l`** return **`_NLSCMPERROR`** and set **errno** to **EINVAL**. **`strcmp`** and **`wcscmp`** do not validate their parameters. These functions behave identically otherwise.
+The **`strcmp`** function performs an ordinal comparison of *`string1`* and *`string2`* and returns a value that indicates their relationship. **`wcscmp`** and **`_mbscmp`** are, respectively, wide-character and multibyte-character versions of **`strcmp`**. **`_mbscmp`** recognizes multibyte-character sequences according to the current multibyte code page and returns **`_NLSCMPERROR`** on an error. **`_mbscmp_l`** has the same behavior, but uses the locale parameter that's passed in instead of the current locale. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). Also, if *`string1`* or *`string2`* is a null pointer, **`_mbscmp`** invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **`_mbscmp`** and **`_mbscmp_l`** return **`_NLSCMPERROR`** and set **`errno`** to **`EINVAL`**. **`strcmp`** and **`wcscmp`** do not validate their parameters. These functions behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -71,7 +71,7 @@ By default, this function's global state is scoped to the application. To change
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**`_tcscmp`**|**`strcmp`**|**`_mbscmp`**|**`wcscmp`**|
 
-The **`strcmp`** functions differ from the **`strcoll`** functions in that **`strcmp`** comparisons are ordinal, and are not affected by locale. **`strcoll`** compares strings lexicographically by using the **LC_COLLATE** category of the current locale. For more information about the **LC_COLLATE** category, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md).
+The **`strcmp`** functions differ from the **`strcoll`** functions in that **`strcmp`** comparisons are ordinal, and are not affected by locale. **`strcoll`** compares strings lexicographically by using the **`LC_COLLATE`** category of the current locale. For more information about the **`LC_COLLATE`** category, see [`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md).
 
 In the "C" locale, the order of characters in the character set (ASCII character set) is the same as the lexicographic character order. However, in other locales, the order of characters in the character set may differ from the lexicographic order. For example, in certain European locales, the character 'a' (value 0x61) comes before the character 'ä' (value 0xE4) in the character set, but the character 'ä' comes in front of the character 'a' lexicographically.
 
