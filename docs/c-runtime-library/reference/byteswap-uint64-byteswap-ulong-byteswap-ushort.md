@@ -10,7 +10,7 @@ f1_keywords: ["byteswap_ulong", "_byteswap_ulong", "byteswap_uint64", "_byteswap
 helpviewer_keywords: ["_byteswap_uint64 function", "byteswap_uint64 function", "swapping bytes", "byte swapping", "byteswap_ushort function", "_byteswap_ushort function", "bytes, swapping", "byteswap_ulong function", "_byteswap_ulong function"]
 ms.assetid: 83bda211-f02f-4cf0-8a78-d6de1f175970
 ---
-# _byteswap_uint64, _byteswap_ulong, _byteswap_ushort
+# `_byteswap_uint64`, `_byteswap_ulong`, `_byteswap_ushort`
 
 Reverses the order of bytes in an integer.
 
@@ -24,16 +24,16 @@ unsigned __int64 _byteswap_uint64 ( unsigned __int64 val );
 
 ### Parameters
 
-*val*<br/>
+*`val`*<br/>
 The integer to reverse byte order.
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_byteswap_ushort**|\<stdlib.h>|
-|**_byteswap_ulong**|\<stdlib.h>|
-|**_byteswap_uint64**|\<stdlib.h>|
+|**`_byteswap_ushort`**|`<stdlib.h>`|
+|**`_byteswap_ulong`**|`<stdlib.h>`|
+|**`_byteswap_uint64`**|`<stdlib.h>`|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
