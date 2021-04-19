@@ -119,4 +119,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
