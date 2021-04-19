@@ -126,5 +126,5 @@ After:  **** is a test of the wmemset function
 [`_memccpy`](memccpy.md)\
 [`memchr`, `wmemchr`](memchr-wmemchr.md)\
 [`memcmp`, `wmemcmp`](memcmp-wmemcmp.md)\
-[`memcpy`, wmemcpy](memcpy-wmemcpy.md)\
-[`_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l`](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)
+[`memcpy`, `wmemcpy`](memcpy-wmemcpy.md)\
+[`_strnset`, `_strnset_l`, `_wcsnset`, `_wcsnset_l`, `_mbsnset`, `_mbsnset_l`](strnset-strnset-l-wcsnset-wcsnset-l-mbsnset-mbsnset-l.md)
