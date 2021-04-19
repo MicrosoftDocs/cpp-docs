@@ -3743,7 +3743,7 @@
         - name: Compiler warning (level 4) C4463
           href: compiler-warnings/compiler-warning-level-4-c4463.md
         - name: Compiler warning (level 4) C4464
-          href: compiler-warnings/c4464.md
+          href: compiler-warnings/compiler-warning-level-4-c4464.md
         - name: Compiler warning (level 1) C4470
           href: compiler-warnings/compiler-warning-level-1-c4470.md
         - name: Compiler warning (level 4) C4471
