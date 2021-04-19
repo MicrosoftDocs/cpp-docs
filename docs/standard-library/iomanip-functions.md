@@ -6,21 +6,21 @@ f1_keywords: ["iomanip/std::get_money", "iomanip/std::get_time", "iomanip/std::p
 ms.assetid: 3ddde610-70cc-4cfa-8a89-3e83d1d356a8
 helpviewer_keywords: ["std::get_money [C++]", "std::get_time [C++]", "std::put_money [C++]", "std::put_time [C++]", "std::quoted [C++]", "std::resetiosflags [C++]", "std::setbase [C++]", "std::setfill [C++]", "std::setiosflags [C++]", "std::setprecision [C++]", "std::setw [C++]"]
 ---
-# &lt;iomanip&gt; functions
+# `<iomanip>` functions
 
-[get_money](#iomanip_get_money)\
-[get_time](#iomanip_get_time)\
-[put_money](#iomanip_put_money)\
-[put_time](#iomanip_put_time)\
-[quoted](#quoted)\
-[resetiosflags](#resetiosflags)\
-[setbase](#setbase)\
-[setfill](#setfill)\
-[setiosflags](#setiosflags)\
-[setprecision](#setprecision)\
-[setw](#setw)
+[`get_money`](#iomanip_get_money)\
+[`get_time`](#iomanip_get_time)\
+[`put_money`](#iomanip_put_money)\
+[`put_time`](#iomanip_put_time)\
+[`quoted`](#quoted)\
+[`resetiosflags`](#resetiosflags)\
+[`setbase`](#setbase)\
+[`setfill`](#setfill)\
+[`setiosflags`](#setiosflags)\
+[`setprecision`](#setprecision)\
+[`setw`](#setw)
 
-## <a name="iomanip_get_money"></a> get_money
+## <a name="iomanip_get_money"></a> `get_money`
 
 Extracts a monetary value from a stream using the desired format, and returns the value in a parameter.
 
@@ -31,19 +31,19 @@ T7 get_money(Money& amount, bool use_intl);
 
 ### Parameters
 
-*amount*\
+*`amount`*\
 The extracted monetary value.
 
-*use_intl*\
+*`use_intl`*\
 If **`true`**, use international format. The default value is **`false`**.
 
 ### Remarks
 
-The manipulator returns an object that, when extracted from the stream `str`, behaves as a `formatted input function` that calls the member function `get` for the locale facet `money_get` associated with `str`, using *use_intl* to indicate international format. If successful, the call stores in *amount* the extracted monetary value. The manipulator then returns `str`.
+The manipulator returns an object that, when extracted from the stream `str`, behaves as a `formatted input function` that calls the member function `get` for the locale facet `money_get` associated with `str`, using *`use_intl`* to indicate international format. If successful, the call stores in *`amount`* the extracted monetary value. The manipulator then returns `str`.
 
 `Money` must be of type **`long double`** or an instantiation of `basic_string` with the same element and traits parameters as `str`.
 
-## <a name="iomanip_get_time"></a> get_time
+## <a name="iomanip_get_time"></a> `get_time`
 
 Extracts a time value from a stream using a desired format. Returns the value in a parameter as a time structure.
 
@@ -54,17 +54,17 @@ T10 put_time(struct tm *time_ptr, const Elem *time_format);
 
 ### Parameters
 
-*time_ptr*\
+*`time_ptr`*\
 The time in the form of a time structure.
 
-*time_format*\
+*`time_format`*\
 The desired format to use to obtain the time value.
 
 ### Remarks
 
 The manipulator returns an object that, when extracted from the stream `str`, behaves as a `formatted input function` that calls the member function `get` for the locale facet `time_get` associated with `str`, using `tptr` to indicate the time structure and `fmt` to indicate the beginning of a null-terminated format string. If successful, the call stores in the time structure the values associated with any extracted time fields. The manipulator then returns `str`.
 
-## <a name="iomanip_put_money"></a> put_money
+## <a name="iomanip_put_money"></a> `put_money`
 
 Inserts a monetary amount using the desired format into a stream.
 
@@ -75,10 +75,10 @@ T8 put_money(const Money& amount, bool use_intl);
 
 ### Parameters
 
-*amount*\
+*`amount`*\
 The monetary amount to insert into the stream.
 
-*use_intl*\
+*`use_intl`*\
 Set to **`true`** if manipulator should use international format, **`false`** if it should not.
 
 ### Return Value
@@ -91,7 +91,7 @@ The manipulator returns an object that, when inserted into the stream `str`, beh
 
 `Money` must be of type **`long double`** or an instantiation of `basic_string` with the same element and traits parameters as `str`.
 
-## <a name="iomanip_put_time"></a> put_time
+## <a name="iomanip_put_time"></a> `put_time`
 
 Writes a time value from a time structure to a stream by using a specified format.
 
@@ -102,19 +102,19 @@ T10 put_time(struct tm* time_ptr, const Elem* time_format);
 
 ### Parameters
 
-*time_ptr*\
+*`time_ptr`*\
 The time value to write to the stream, provided in a time structure.
 
-*time_format*\
+*`time_format`*\
 The desired format to write the time value.
 
 ### Remarks
 
-The manipulator returns an object that, when inserted into the stream `str`, behaves as a `formatted output function`. The output function calls the member function `put` for the locale facet `time_put` associated with `str`. The output function uses *time_ptr* to indicate the time structure and *time_format* to indicate the beginning of a null-terminated format string. If successful, the call inserts literal text from the format string and converted values from the time structure. The manipulator then returns `str`.
+The manipulator returns an object that, when inserted into the stream `str`, behaves as a `formatted output function`. The output function calls the member function `put` for the locale facet `time_put` associated with `str`. The output function uses *`time_ptr`* to indicate the time structure and *`time_format`* to indicate the beginning of a null-terminated format string. If successful, the call inserts literal text from the format string and converted values from the time structure. The manipulator then returns `str`.
 
-## <a name="quoted"></a> quoted
+## <a name="quoted"></a> `quoted`
 
-**(New in C++14)** An iostream manipulator that enables convenient round-tripping of strings into and out of streams using the >> and << operators.
+**(New in C++14)** An iostream manipulator that enables convenient round-tripping of strings into and out of streams using the `>>` and `<<` operators.
 
 ```cpp
 quoted(std::string str) // or wstring
@@ -125,13 +125,13 @@ quoted(const char* str, char delimiter, char escape) // or wide versions
 
 ### Parameters
 
-*str*\
+*`str`*\
 A std::string, char\*, string literal or raw string literal, or a wide version of any of these (e.g. std::wstring, wchar_t\*).
 
-*delimiter*\
+*`delimiter`*\
 A user-specified character, or wide character, to use as the delimiter for the beginning and end of the string.
 
-*escape*\
+*`escape`*\
 A user-specified character, or wide character, to use as the escape character for escape sequences within the string.
 
 ### Remarks
@@ -279,7 +279,7 @@ Press Enter to exit
 */
 ```
 
-## <a name="resetiosflags"></a> resetiosflags
+## <a name="resetiosflags"></a> `resetiosflags`
 
 Clears the specified flags.
 
@@ -289,18 +289,18 @@ T1 resetiosflags(ios_base::fmtflags mask);
 
 ### Parameters
 
-*mask*\
+*`mask`*\
 The flags to clear.
 
 ### Return Value
 
-The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(ios_base::`[fmtflags](../standard-library/ios-base-class.md#fmtflags)`, mask)`, and then returns `str`.
+The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.setf(ios_base::fmtflags, mask)`, and then returns `str`, see [`setf`](../standard-library/ios-base-class.md#setf) and [`fmtflags`](../standard-library/ios-base-class.md#fmtflags).
 
 ### Example
 
-See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `resetiosflags`.
+See [`setw`](../standard-library/iomanip-functions.md#setw) for an example of using `resetiosflags`.
 
-## <a name="setbase"></a> setbase
+## <a name="setbase"></a> `setbase`
 
 Set base for integers.
 
@@ -310,26 +310,26 @@ T3 setbase(int base);
 
 ### Parameters
 
-*base*\
+*`base`*\
 The number base.
 
 ### Return Value
 
-The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.setf(mask,` [ios_base::basefield](../standard-library/ios-base-class.md#fmtflags)`)`, and then returns `str`. Here, `mask` is determined as follows:
+The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.setf(mask, ios_base::basefield)`, and then returns `str`, see [`ios_base::basefield`](../standard-library/ios-base-class.md#fmtflags). Here, `mask` is determined as follows:
 
-- If *base* is 8, then `mask` is `ios_base::`[oct](../standard-library/ios-functions.md#oct).
+- If *`base`* is 8, then `mask` is [`ios_base::oct`](../standard-library/ios-functions.md#oct).
 
-- If *base* is 10, then mask is `ios_base::`[dec](../standard-library/ios-functions.md#dec).
+- If *`base`* is 10, then mask is [`ios_base::dec`](../standard-library/ios-functions.md#dec).
 
-- If *base* is 16, then `mask` is `ios_base::`[hex](../standard-library/ios-functions.md#hex).
+- If *`base`* is 16, then `mask` is [`ios_base::hex`](../standard-library/ios-functions.md#hex).
 
-- If *base* is any other value, then mask is `ios_base::`[fmtflags](../standard-library/ios-base-class.md#fmtflags)`(0)`.
+- If *`base`* is any other value, then mask is [`ios_base::fmtflags(0)`](../standard-library/ios-base-class.md#fmtflags)`.
 
 ### Example
 
-See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setbase`.
+See [`setw`](../standard-library/iomanip-functions.md#setw) for an example of using `setbase`.
 
-## <a name="setfill"></a> setfill
+## <a name="setfill"></a> `setfill`
 
 Sets the character that will be used to fill spaces in a right-justified display.
 
@@ -340,18 +340,18 @@ T4 setfill(Elem Ch);
 
 ### Parameters
 
-*Ch*\
+*`Ch`*\
 The character that will be used to fill spaces in a right-justified display.
 
 ### Return Value
 
-The template manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.`[fill](../standard-library/basic-ios-class.md#fill)`(Ch)`, and then returns `str`. The type `Elem` must be the same as the element type for the stream `str`.
+The template manipulator returns an object that, when extracted from or inserted into the stream `str`, calls [`str.fill(Ch)`](../standard-library/basic-ios-class.md#fill), and then returns `str`. The type `Elem` must be the same as the element type for the stream `str`.
 
 ### Example
 
-See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setfill`.
+See [`setw`](../standard-library/iomanip-functions.md#setw) for an example of using `setfill`.
 
-## <a name="setiosflags"></a> setiosflags
+## <a name="setiosflags"></a> `setiosflags`
 
 Sets the specified flags.
 
@@ -361,18 +361,18 @@ T2 setiosflags(ios_base::fmtflags mask);
 
 ### Parameters
 
-*mask*\
+*`mask`*\
 The flags to set.
 
 ### Return Value
 
-The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.`[setf](../standard-library/ios-base-class.md#setf)`(mask)`, and then returns `str`.
+The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.setf(mask)`, and then returns `str`, see [`setf`](../standard-library/ios-base-class.md#setf).
 
 ### Example
 
-See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setiosflags`.
+See [`setw`](../standard-library/iomanip-functions.md#setw) for an example of using `setiosflags`.
 
-## <a name="setprecision"></a> setprecision
+## <a name="setprecision"></a> `setprecision`
 
 Sets the precision for floating-point values.
 
@@ -382,18 +382,18 @@ T5 setprecision(streamsize Prec);
 
 ### Parameters
 
-*Prec*\
+*`Prec`*\
 The precision for floating-point values.
 
 ### Return Value
 
-The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.`[precision](../standard-library/ios-base-class.md#precision)`(Prec)`, and then returns `str`.
+The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.precision(Prec)`, and then returns `str`, see [`precision`](../standard-library/ios-base-class.md#precision).
 
 ### Example
 
-See [setw](../standard-library/iomanip-functions.md#setw) for an example of using `setprecision`.
+See [`setw`](../standard-library/iomanip-functions.md#setw) for an example of using `setprecision`.
 
-## <a name="setw"></a> setw
+## <a name="setw"></a> `setw`
 
 Specifies the width of the display field for the next element in the stream.
 
@@ -403,16 +403,16 @@ T6 setw(streamsize Wide);
 
 ### Parameters
 
-*Wide*\
+*`Wide`*\
 The width of the display field.
 
 ### Return Value
 
-The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.`[width](../standard-library/ios-base-class.md#width)`(Wide)`, then returns `str`.
+The manipulator returns an object that, when extracted from or inserted into the stream `str`, calls `str.width(Wide)`, then returns `str`. For more information, see [`width`](../standard-library/ios-base-class.md#width).
 
 ### Remarks
 
-setw sets the width only for the next element in the stream and must be inserted before each element whose width you want to specify.
+`setw` sets the width only for the next element in the stream and must be inserted before each element whose width you want to specify.
 
 ### Example
 
@@ -631,4 +631,4 @@ l5 = 65536
 
 ## See also
 
-[\<iomanip>](../standard-library/iomanip.md)
+[`<iomanip>`](../standard-library/iomanip.md)
