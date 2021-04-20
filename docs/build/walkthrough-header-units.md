@@ -40,7 +40,7 @@ You can define additional macros when you build the program that imports the hea
 
 There are several ways to compile a file into a header unit:
 
-- **Automatically scan for header units**. This approach is best suited to smaller projects that include many different header files. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1) for a demonstration of this approach. This approach is better suited to smaller projects. That's because it can't guarantee optimal build throughput since it scans all the files to find what should be built into header units.
+- **Automatically scan for header units**. This approach is best suited to smaller projects that include many different header files. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1) for a demonstration of this approach. This approach is better suited to smaller projects because it can't guarantee optimal build throughput. That's because it scans all the files to find what should be built into header units.
 
 - **Build a shared header unit project**. This approach is best suited for larger projects and for when you want more control over the organization of the imported header units. You create a static library project (or projects) that contain the header units that you want. Then reference the library project (or projects) from the project that then imports the header units it needs. See [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach2) for a demonstration of this approach.
 
@@ -48,7 +48,7 @@ There are several ways to compile a file into a header unit:
 
 ## Convert a project to use header units
 
-In this example, you'll compile a header file as a header unit. Begin by creating the following project in Visual Studio:
+In this example, you'll compile a header file as a header unit. Start by creating the following project in Visual Studio:
 
 1. Create a new C++ console app project.
 1. Replace the source file content as follows:
@@ -72,9 +72,9 @@ In this example, you'll compile a header file as a header unit. Begin by creatin
     }
     ```
 
-To enable header units, first set the **C++ Language Standard** to [**/std:c++latest**](./reference/std-specify-language-standard-version.md):
+To enable header units, first set the **C++ Language Standard** to [**/std:c++latest**](./reference/std-specify-language-standard-version.md).
 
-1. In the Visual Studio main menu, select **Project** > **Properties**.
+1. On the Visual Studio main menu, select **Project** > **Properties**.
 1. In the left pane of the project property pages window, select **Configuration Properties** > **General**.
 1. In the **C++ Language Standard** list, select **Preview - Features from the Latest C++ Working Draft (/std:c++latest)**:
 :::image type="content" source="media/set-cpp-language-latest.png" alt-text="Screenshot that shows setting the language standard to the preview version.":::
@@ -95,7 +95,7 @@ Set the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)*
 
 ### Change your code to import a header unit
 
-In the source file for the example project, that is, the file that contains `main()`, change `#include "Pythagorean.h"` to `import "Pythagorean.h"`. (Don't forget the trailing semicolon that is required for `import` statements.) When you're compiling a header unit from a system header, use angle brackets (`import <file>;`). If it's a project header, use `import "file";`.
+In the source file for the example project, that is, the file that contains `main()`, change `#include "Pythagorean.h"` to `import "Pythagorean.h"`. (Don't forget the trailing semicolon that's required for `import` statements.) When you're compiling a header unit from a system header, use angle brackets (`import <file>;`). If it's a project header, use `import "file";`.
 
 Build the solution. (**Build** > **Build Solution** on the main menu.) Run it to see that it produces the expected output: `Pythagorean triple a:2 b:3 c:13`
 

@@ -11,13 +11,13 @@ helpviewer_keywords: ["import", "header unit", "ifc", "stl"]
 
 This walkthrough shows two ways to import C++ Standard Template Library (STL) libraries as header units in Visual Studio.
 
-The [first way](#approach1) has the build system automatically scan for and build header units based on the STL headers you import in your project.
+The [first way](#approach1) is to have the build system automatically scan for and build header units based on the STL headers you import in your project.
 
-The [second way](#approach2) demonstrates how to build a static library project that contains header units for the STL headers you want to use and then reference that project to import the header units.
+The [second way](#approach2) is to build a static library project that contains header units for the STL headers you want to use and then reference that project to import the header units.
 
 Importing an STL header as a header unit is a simpler alternative to [precompiled header files](creating-precompiled-header-files.md). Header units are easier to set up and use than a shared precompiled header file (PCH) but still provide similar performance benefits. Unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
 
-Before you can import an STL header, it must be compiled into a header unit. A header unit is a binary representation of a header file. A header unit ends with an `.ifc` extension.
+Before you can import an STL header, it must be compiled into a header unit. A header unit is a binary representation of a header file. A header unit ends with an .ifc extension.
 
 An important difference between a header unit and a header file is that header units aren't affected by macro definitions. You can't `#define` a symbol that causes the header unit to behave differently when you import it. You can do that with a header file.
 
