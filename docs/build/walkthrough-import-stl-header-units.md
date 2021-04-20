@@ -230,7 +230,7 @@ To access this setting:
 > Ensure that projects that share header units are built with compatible compilation options. If you use compilation options when you implement the header unit that are different from the ones you used when you created it, the compiler will issue warnings.
 
 > [!NOTE]
-> To use header units built as a part of a **DLL** project, the project property setting **All Modules arePublic** should be set to **Yes**.
+> To use header units built as a part of a DLL project, set **All Modules are Public**  to **Yes**.
 
 ## See also
 
