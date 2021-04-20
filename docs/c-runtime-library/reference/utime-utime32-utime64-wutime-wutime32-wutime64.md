@@ -72,7 +72,7 @@ The **_utime** function sets the modification time for the file specified by *fi
 
 The **_utimbuf** structure stores file access and modification times used by **_utime** to change file-modification dates. The structure has the following fields, which are both of type **time_t**:
 
-| Field |   |
+| Field | Description |
 |-------|---|
 | **actime** | Time of file access |
 | **modtime** | Time of file modification |

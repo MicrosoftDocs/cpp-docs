@@ -188,29 +188,32 @@ When the packed unwind format is insufficient to describe the unwinding of a fun
 The `.xdata` record is designed so that it is possible to fetch the first 8 bytes and compute the full size of the record, not including the length of the variable-sized exception data that follows. This code snippet computes the record size:
 
 ```cpp
-ULONG Comput`.xdata`Size(PULONG `.xdata`)
+ULONG ComputeXdataSize(PULONG Xdata)
 {
-    ULONG EpilogueScopes;
     ULONG Size;
+    ULONG EpilogueScopes;
     ULONG UnwindWords;
 
-    if (`.xdata`[0] >> 23) != 0) {
+    if ((Xdata[0] >> 23) != 0) {
         Size = 4;
-        EpilogueScopes = `.xdata`[0] >> 23) & 0x1f;
-        UnwindWords = `.xdata`[0] >> 28) & 0x0f;
+        EpilogueScopes = (Xdata[0] >> 23) & 0x1f;
+        UnwindWords = (Xdata[0] >> 28) & 0x0f;
     } else {
         Size = 8;
-        EpilogueScopes =`.xdata`[1] & 0xffff;
-        UnwindWords = `.xdata`[1] >> 16) & 0xff;
+        EpilogueScopes = Xdata[1] & 0xffff;
+        UnwindWords = (Xdata[1] >> 16) & 0xff;
     }
 
-    if (!`.xdata`[0] & (1 << 21))) {
+    if (!(Xdata[0] & (1 << 21))) {
         Size += 4 * EpilogueScopes;
     }
+
     Size += 4 * UnwindWords;
-    if `.xdata`[0] & (1 << 20)) {
-        Size += 4;
+
+    if (Xdata[0] & (1 << 20)) {
+        Size += 4;  // Exception handler RVA
     }
+
     return Size;
 }
 ```

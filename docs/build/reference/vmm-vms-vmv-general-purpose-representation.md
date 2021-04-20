@@ -1,44 +1,59 @@
 ---
 description: "Learn more about: /vmm, /vms, /vmv (General Purpose Representation)"
-title: "/vmm, -vms, -vmv (General Purpose Representation)"
-ms.date: "11/04/2016"
+title: "/vmm, /vms, /vmv (General Purpose Representation)"
+ms.date: 04/12/2021
 f1_keywords: ["/vms", "/vmm", "/vmv"]
 helpviewer_keywords: ["Virtual Inheritance compiler option", "general purpose representation compiler options", "vms compiler option [C++]", "vmm compiler option [C++]", "/vmm compiler option [C++]", "-vmm compiler option [C++]", "-vms compiler option [C++]", "/vms compiler option [C++]", "vmv compiler option [C++]", "/vmv compiler option [C++]", "Single Inheritance compiler option", "-vmv compiler option [C++]"]
-ms.assetid: 0fcd7ae0-3031-4c62-a2a8-e154c8685dae
 ---
-# /vmm, /vms, /vmv (General Purpose Representation)
+# `/vmm`, `/vms`, `/vmv` (General Purpose Representation)
 
-Used when [/vmb, /vmg (Representation Method)](vmb-vmg-representation-method.md) is selected as the [representation method](vmb-vmg-representation-method.md). These options indicate the inheritance model of the not-yet-encountered class definition.
+Used when [`/vmg`](vmb-vmg-representation-method.md) is selected as the [representation method](vmb-vmg-representation-method.md). These options indicate the inheritance model of the not-yet-encountered class definition.
 
 ## Syntax
 
-```
-/vmm
-/vms
-/vmv
-```
+> **`/vmm`**\
+> **`/vms`**\
+> **`/vmv`**
+
+### Options
+
+**`/vmm`**\
+Specifies the most general representation of a pointer to a member of a class as one that uses multiple inheritance.
+
+The corresponding [inheritance keyword](../../cpp/inheritance-keywords.md) and argument to [`#pragma pointers_to_members`](../../preprocessor/pointers-to-members.md) is **`multiple_inheritance`**.
+
+This representation is larger than the one required for single inheritance.
+
+If you use **`/vmm`** and declare a pointer to member of a class that has a virtual inheritance model, the compiler generates an error.
+
+**`/vms`**\
+Specifies the most general representation of a pointer to a member of a class as one that uses either no inheritance or single inheritance.The corresponding [inheritance keyword](../../cpp/inheritance-keywords.md) and argument to [`#pragma pointers_to_members`](../../preprocessor/pointers-to-members.md) is **`single_inheritance`**.
+
+This option generates the smallest possible representation of a pointer to a member of a class.
+
+If you use **`/vms`** and declare a pointer to member of a class that has a multiple or virtual inheritance model, the compiler generates an error.
+
+**`/vmv`**\
+Specifies the most general representation of a pointer to a member of a class as one that uses virtual inheritance. This pointer representation never causes an error and is the default.
+
+The corresponding [inheritance keyword](../../cpp/inheritance-keywords.md) and argument to [`#pragma pointers_to_members`](../../preprocessor/pointers-to-members.md) is **`virtual_inheritance`**.
+
+This option requires a larger pointer and more code to interpret the pointer than the other options.
 
 ## Remarks
 
-The options are described in the following table.
+In Visual Studio 2019 and earlier versions, Microsoft uses different representations (of different sizes) for pointer-to-member types. Pointers to members of classes that have no inheritance or single inheritance have the smallest representation. Pointers to members of classes that have multiple inheritance are larger. Pointers to members of classes that have virtual inheritance are the largest. When no representation model is specified to the compiler, it defaults to using the largest, most general representation.
 
-|Option|Description|
-|------------|-----------------|
-|**/vmm**|Specifies the most general representation of a pointer to a member of a class to be one that uses multiple inheritance.<br /><br /> The corresponding [inheritance keyword](../../cpp/inheritance-keywords.md) and argument to [#pragma pointers_to_members](../../preprocessor/pointers-to-members.md) is **multiple_inheritance**.<br /><br /> This representation is larger than that required for single inheritance.<br /><br /> If the inheritance model of a class definition for which a pointer to a member is declared is virtual, the compiler generates an error.|
-|**/vms**|Specifies the most general representation of a pointer to a member of a class to be one that uses either no inheritance or single inheritance.<br /><br /> The corresponding [inheritance keyword](../../cpp/inheritance-keywords.md) and argument to [#pragma pointers_to_members](../../preprocessor/pointers-to-members.md) is **single_inheritance**.<br /><br /> This is the smallest possible representation of a pointer to a member of a class.<br /><br /> If the inheritance model of a class definition for which a pointer to a member is declared is multiple or virtual, the compiler generates an error.|
-|**/vmv**|Specifies the most general representation of a pointer to a member of a class to be one that uses virtual inheritance. It never causes an error and is the default.<br /><br /> The corresponding [inheritance keyword](../../cpp/inheritance-keywords.md) and argument to [#pragma pointers_to_members](../../preprocessor/pointers-to-members.md) is **virtual_inheritance**.<br /><br /> This option requires a larger pointer and additional code to interpret the pointer than the other options.|
-
-When you specify one of these inheritance-model options, that model is used for all pointers to class members, regardless of their inheritance type or whether the pointer is declared before or after the class. Therefore, if you always use single-inheritance classes, you can reduce code size by compiling with **/vms**; however, if you want to use the most general case (at the expense of the largest data representation), compile with **/vmv**.
+When you specify one of these inheritance-model options, that model gets used for all pointers to class members, no matter their inheritance type or whether you declare the pointer before or after the class. If you always use single-inheritance classes, you can reduce code size by compiling with **`/vms`**. However, if you want to use the most general case (at the expense of the largest data representation), compile with **`/vmv`**.
 
 ### To set this compiler option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. Click the **Command Line** property page.
+1. Enter the compiler option in the **Additional Options** box.
 
-1. Type the compiler option in the **Additional Options** box.
 
 ### To set this compiler option programmatically
 
@@ -46,6 +61,6 @@ When you specify one of these inheritance-model options, that model is used for 
 
 ## See also
 
-[/vmb, /vmg (Representation Method)](vmb-vmg-representation-method.md)<br/>
-[MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)
+[`/vmb`, `/vmg` (Representation method)](vmb-vmg-representation-method.md)<br/>
+[MSVC compiler options](compiler-options.md)<br/>
+[MSVC compiler command-line syntax](compiler-command-line-syntax.md)

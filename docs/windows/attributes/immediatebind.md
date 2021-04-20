@@ -1,11 +1,12 @@
 ---
+description: "Learn more about: immediatebind (C++ COM Attribute)"
 title: "immediatebind (C++ COM Attribute)"
-ms.date: "10/02/2018"
+ms.date: 04/15/2021
 f1_keywords: ["vc-attr.immediatebind"]
 helpviewer_keywords: ["immediatebind attribute"]
 ms.assetid: 186d40e6-9166-4d0c-9853-4e7e4d25226f
 ---
-# immediatebind
+# `immediatebind`
 
 Indicates that the database will be notified immediately of all changes to a property of a data-bound object.
 
@@ -17,11 +18,11 @@ Indicates that the database will be notified immediately of all changes to a pro
 
 ## Remarks
 
-The **immediatebind** C++ attribute has the same functionality as the [immediatebind](/windows/win32/Midl/immediatebind) MIDL attribute.
+The **`immediatebind`** C++ attribute has the same functionality as the [`immediatebind`](/windows/win32/Midl/immediatebind) MIDL attribute.
 
 ## Example
 
-See [bindable](bindable.md) for an example of how to use **immediatebind**.
+See [`bindable`](bindable.md) for an example of how to use **immediatebind**.
 
 ## Requirements
 
@@ -38,6 +39,6 @@ For more information, see [Attribute Contexts](cpp-attributes-com-net.md#context
 
 [IDL Attributes](idl-attributes.md)<br/>
 [Method Attributes](method-attributes.md)<br/>
-[defaultbind](defaultbind.md)<br/>
-[displaybind](displaybind.md)<br/>
-[requestedit](requestedit.md)
+[`defaultbind`](defaultbind.md)<br/>
+[`displaybind`](displaybind.md)<br/>
+[`requestedit`](requestedit.md)

@@ -95,5 +95,5 @@ The remainder of -10.00 / 3.00 is -1.000000
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
 [`ceil, ceilf, ceill`](ceil-ceilf-ceill.md)\
 [`fabs, fabsf, fabsl`](fabs-fabsf-fabsl.md)\
-[f`loor, floorf, floorl`](floor-floorf-floorl.md)\
+[`floor, floorf, floorl`](floor-floorf-floorl.md)\
 [`_CIfmod`](../../c-runtime-library/cifmod.md)

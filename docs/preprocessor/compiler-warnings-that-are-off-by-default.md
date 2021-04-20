@@ -62,7 +62,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |[C4435](../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md) (level 4)|'*class1*' : Object layout under /vd2 will change due to virtual base '*class2*'|
 |[C4437](../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md) (level 4)|dynamic_cast from virtual base '*class1*' to '*class2*' could fail in some contexts|
 |C4444 (level 3)|top level '__unaligned' is not implemented in this context|
-|[C4464](../error-messages/compiler-warnings/c4464.md) (level 4)|relative include path contains '..'|
+|[C4464](../error-messages/compiler-warnings/compiler-warning-level-4-c4464.md) (level 4)|relative include path contains '..'|
 |[C4471](../error-messages/compiler-warnings/compiler-warning-level-4-c4471.md) (level 4)|a forward declaration of an unscoped enumeration must have an underlying type (int assumed) <sup>Perm</sup>|
 |C4472 (level 1)|'*identifier*' is a native enum: add an access specifier (private/public) to declare a managed enum|
 |[C4514](../error-messages/compiler-warnings/compiler-warning-level-4-c4514.md) (level 4)|'*function*': unreferenced inline function has been removed|
@@ -140,16 +140,27 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |C5036 (level 1)|varargs function pointer conversion when compiling with /hybrid:x86arm64 '*type1*' to '*type2*' <sup>15.3</sup>|
 |[C5038](../error-messages/compiler-warnings/c5038.md) (level 4)|data member '*member1*' will be initialized after data member '*member2*' <sup>15.3</sup>|
 |C5039 (level 4)|'*function*': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception. <sup>15.5</sup>|
+| C5041 (level 4) | '*member-name*': out-of-line definition for constexpr static data member is not needed and is deprecated in C++17. <sup>15.2</sup>|
 |C5042 (level 3)|'*function*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier <sup>15.5</sup>|
 |[C5045](../error-messages/compiler-warnings/c5045.md)|Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified <sup>15.7</sup>|
+| C5204 (level 3) | A class with virtual functions has non-virtual trivial destructor. <sup>16.5</sup> |
+| C5214 (level 4) | applying '*keyword*' to an operand with a volatile qualified type is deprecated in C++20 <sup>16.7</sup> |
+| C5215 (level 4) | '*function-parameter*' a function parameter with a volatile qualified type is deprecated in C++20 <sup>16.7</sup> |
+| C5216 (level 4) | '*return-type*' a volatile qualified return type is deprecated in C++20 <sup>16.7</sup> |
+| C5217 (level 4) | a structured binding declaration that includes volatile is deprecated in C++20 <sup>16.7</sup> |
+| C5219 (level 2) | implicit conversion from '*type-1*' to '*type-2*', possible loss of data <sup>16.7</sup> |
+| C5220 (level 4) | '*member*': a non-static data member with a volatile qualified type no longer implies that<br/> compiler generated copy/move constructors and copy/move assignment operators are not trivial <sup>16.7</sup> |
 
 <sup>14.1</sup> This warning is available starting in Visual Studio 2015 Update 1.\
 <sup>14.3</sup> This warning is available starting in Visual Studio 2015 Update 3.\
+<sup>15.2</sup> This warning is available starting in Visual Studio 2017 version 15.2.\
 <sup>15.3</sup> This warning is available starting in Visual Studio 2017 version 15.3.\
 <sup>15.5</sup> This warning is available starting in Visual Studio 2017 version 15.5.\
 <sup>15.7</sup> This warning is available starting in Visual Studio 2017 version 15.7.\
 <sup>15.8</sup> This warning is available starting in Visual Studio 2017 version 15.8.\
 <sup>16.0</sup> This warning is available starting in Visual Studio 2019 RTM.\
+<sup>16.5</sup> This warning is available starting in Visual Studio 2019 version 16.5.\
+<sup>16.7</sup> This warning is available starting in Visual Studio 2019 version 16.7.\
 <sup>Perm</sup> This warning is off unless the [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option is set.
 
 ## Warnings off by default in earlier versions
