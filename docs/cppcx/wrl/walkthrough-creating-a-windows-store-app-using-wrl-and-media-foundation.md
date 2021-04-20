@@ -1,22 +1,22 @@
 ---
+description: "Learn more about: Creating a UWP app using WRL and Media Foundation"
 title: "Walkthrough: Creating a UWP app using WRL and Media Foundation"
-ms.date: "04/23/2019"
+ms.date: 04/15/2021
 ms.topic: "reference"
-ms.assetid: 0336c550-fbeb-4dc4-aa9b-660f9fc45382
 ---
 # Walkthrough: Creating a UWP app using WRL and Media Foundation
 
 > [!NOTE]
 > For new UWP apps and components, we recommend that you use [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), a new standard C++17 language projection for Windows Runtime APIs. C++/WinRT is available in the Windows 10 SDK from version 1803 onward. C++/WinRT is implemented entirely in header files, and is designed to provide you with first-class access to the modern Windows API.
 
-In this tutorial, you will learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform (UWP) app that uses [Microsoft Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk).
+In this tutorial, you'll learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform (UWP) app that uses [Microsoft Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk).
 
-This example creates a custom Media Foundation transform that applies a grayscale effect to images that are captured from a webcam. The app uses C++ to define the custom transform and C# to use the component to transform the captured images.
+This example creates a custom Media Foundation transform. It applies a grayscale effect to images that are captured from a webcam. The app uses C++ to define the custom transform and C# to use the component to transform the captured images.
 
 > [!NOTE]
 > Instead of C#, you can also use JavaScript, Visual Basic, or C++ to consume the custom transform component.
 
-In most cases, you can use C++/CX to create Windows Runtime. However, sometimes you have to use the WRL. For example, when you create a media extension for Microsoft Media Foundation, you must create a component that implements both COM and Windows Runtime interfaces. Because C++/CX can only create Windows Runtime objects, to create a media extension you must use the WRL because it enables the implementation of both COM and Windows Runtime interfaces.
+You can usually use C++/CX to create Windows Runtime components. However, sometimes you have to use the WRL. For example, when you create a media extension for Microsoft Media Foundation, you must create a component that implements both COM and Windows Runtime interfaces. Because C++/CX can only create Windows Runtime objects, to create a media extension you must use the WRL. That's because it enables the implementation of both COM and Windows Runtime interfaces.
 
 > [!NOTE]
 > Although this code example is long, it demonstrates the minimum that's required to create a useful Media Foundation transform. You can use it as a starting point for your own custom transform. This example is adapted from the [Media extensions sample](https://github.com/Microsoft/VCSamples/tree/master/VC2012Samples/Windows%208%20samples/C%2B%2B/Windows%208%20app%20samples), which uses media extensions to apply effects to video, decode video, and create scheme handlers that produce media streams.
@@ -35,15 +35,15 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 - To create a custom Media Foundation component, use a Microsoft Interface Definition Language (MIDL) definition file to define an interface, implement that interface, and then make it activatable from other components.
 
-- The `namespace` and `runtimeclass` attributes, and the `NTDDI_WIN8`[version](/windows/win32/Midl/version) attribute value are important parts of the MIDL definition for a Media Foundation component that uses WRL.
+- The `namespace` and `runtimeclass` attributes, and the `NTDDI_WIN8` [version](/windows/win32/Midl/version) attribute value are important parts of the MIDL definition for a Media Foundation component that uses WRL.
 
-- [Microsoft::WRL::RuntimeClass](runtimeclass-class.md) is the base class for the custom Media Foundation component. The [Microsoft::WRL::RuntimeClassType::WinRtClassicComMix](runtimeclasstype-enumeration.md) enum value, which is provided as a template argument, marks the class for use both as a Windows Runtime class and as a classic COM runtime class.
+- [`Microsoft::WRL::RuntimeClass`](runtimeclass-class.md) is the base class for the custom Media Foundation component. The [`Microsoft::WRL::RuntimeClassType::WinRtClassicComMix]`(runtimeclasstype-enumeration.md) enum value, which is provided as a template argument, marks the class for use both as a Windows Runtime class and as a classic COM runtime class.
 
-- The [InspectableClass](inspectableclass-macro.md) macro implements basic COM functionality such as reference counting and the `QueryInterface` method, and sets the runtime class name and trust level.
+- The [`InspectableClass`](inspectableclass-macro.md) macro implements basic COM functionality such as reference counting and the `QueryInterface` method, and sets the runtime class name and trust level.
 
-- Use the Microsoft::WRL::[Module class](module-class.md) to implement DLL entry-point functions such as [DllGetActivationFactory](/windows/win32/winrt/functions), [DllCanUnloadNow](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow), and [DllGetClassObject](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject).
+- Use the [`Microsoft::WRL::Module`](module-class.md) class to implement DLL entry-point functions such as [`DllGetActivationFactory`](/windows/win32/winrt/functions), [`DllCanUnloadNow`](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow), and [`DllGetClassObject`](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject).
 
-- Link your component DLL to runtimeobject.lib. Also specify [/WINMD](../../cppcx/compiler-and-linker-options-c-cx.md) on the linker line to generate Windows metadata.
+- Link your component DLL to *`runtimeobject.lib`*. Also specify [`/WINMD`](../../cppcx/compiler-and-linker-options-c-cx.md) on the linker line to generate Windows metadata.
 
 - Use project references to make WRL components accessible to UWP apps.
 
@@ -53,29 +53,29 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 1. Add a **DLL (Universal Windows)** project to the solution. Name the project, for example, *GrayscaleTransform*.
 
-1. Add a **Midl File (.idl)** file to the project. Name the file, for example, *GrayscaleTransform.idl*.
+1. Add a **MIDL File (.idl)** file to the project. Name the file, for example, *`GrayscaleTransform.idl`*.
 
 1. Add this code to GrayscaleTransform.idl:
 
    [!code-cpp[wrl-media-capture#1](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_1.idl)]
 
-1. Use the following code to replace the contents of `pch.h`:
+1. Use the following code to replace the contents of *`pch.h`*:
 
    [!code-cpp[wrl-media-capture#2](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_2.h)]
 
-1. Add a new header file to the project, name it `BufferLock.h`, and then replace the contents with this code:
+1. Add a new header file to the project, name it *`BufferLock.h`*, and then replace the contents with this code:
 
    [!code-cpp[wrl-media-capture#3](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_3.h)]
 
-1. `GrayscaleTransform.h` isn't used in this example. You can remove it from the project if you want to.
+1. *`GrayscaleTransform.h`* isn't used in this example. You can remove it from the project if you want to.
 
-1. Use the following code to replace the contents of `GrayscaleTransform.cpp`:
+1. Use the following code to replace the contents of *`GrayscaleTransform.cpp`*:
 
    [!code-cpp[wrl-media-capture#4](../codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_4.cpp)]
 
-1. Add a new module-definition file to the project, name it `GrayscaleTransform.def`, and then add this code:
+1. Add a new module-definition file to the project, name it *`GrayscaleTransform.def`*, and then add this code:
 
-   ```
+   ```idl
    EXPORTS
        DllCanUnloadNow                     PRIVATE
        DllGetActivationFactory             PRIVATE
@@ -98,11 +98,11 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 1. Add a new **C# Blank App (Universal Windows)** project to the `MediaCapture` solution. Name the project, for example, *MediaCapture*.
 
-1. In the **MediaCapture** project, add a reference to the `GrayscaleTransform` project. To learn how, see [How to: Add or Remove References By Using the Reference Manager](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager).
+1. In the **MediaCapture** project, add a reference to the `GrayscaleTransform` project. To learn how, see [How to: Add or remove references by using the reference manager](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager).
 
-1. In `Package.appxmanifest`, on the **Capabilities** tab, select **Microphone** and **Webcam**. Both capabilities are required to capture photos from the webcam.
+1. In *`Package.appxmanifest`*, on the **Capabilities** tab, select **Microphone** and **Webcam**. Both capabilities are required to capture photos from the webcam.
 
-1. In `MainPage.xaml`, add this code to the root [Grid](/uwp/api/windows.ui.xaml.controls.grid) element:
+1. In *`MainPage.xaml`*, add this code to the root [`Grid`](/uwp/api/windows.ui.xaml.controls.grid) element:
 
    [!code-xml[wrl-media-capture#7](../codesnippet/Xaml/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_7.xaml)]
 
@@ -112,13 +112,13 @@ In most cases, you can use C++/CX to create Windows Runtime. However, sometimes 
 
 The following illustration shows the `MediaCapture app`.
 
-![MediaCapture app capturing a photo](../media/wrl_media_capture.png "WRL_Media_Capture")
+![Screenshot of the MediaCapture app capturing a photo.](../media/wrl_media_capture.png "WRL_Media_Capture")
 
 ## Next Steps
 
-The example shows how to capture photos from the default webcam one at a time. The [Media extensions sample](https://github.com/Microsoft/VCSamples/tree/master/VC2012Samples/Windows%208%20samples/C%2B%2B/Windows%208%20app%20samples) does more. It demonstrates how to enumerate webcam devices and work with local scheme handlers, and demonstrates additional media effects that work on both individual photos and streams of video.
+The example shows how to capture photos from the default webcam one at a time. The [Media extensions sample](https://github.com/Microsoft/VCSamples/tree/master/VC2012Samples/Windows%208%20samples/C%2B%2B/Windows%208%20app%20samples) does more. It demonstrates how to enumerate webcam devices and work with local scheme handlers. The sample also demonstrates other media effects that work on both individual photos and streams of video.
 
 ## See also
 
-[Windows Runtime C++ Template Library (WRL)](windows-runtime-cpp-template-library-wrl.md)<br/>
+[Windows Runtime C++ Template Library (WRL)](windows-runtime-cpp-template-library-wrl.md)\
 [Microsoft Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk)

@@ -1,49 +1,57 @@
 ---
 description: "Learn more about: /GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)"
 title: "/GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)"
-ms.date: "03/14/2018"
+ms.date: 04/14/2021
 f1_keywords: ["GENPROFILE", "FASTGENPROFILE", "/GENPROFILE", "/FASTGENPROFILE"]
 helpviewer_keywords: ["GENPROFILE", "FASTGENPROFILE"]
-ms.assetid: deff5ce7-46f5-448a-b9cd-a7a83a6864c6
 ---
-# /GENPROFILE, /FASTGENPROFILE (Generate Profiling Instrumented Build)
+# `/GENPROFILE`, `/FASTGENPROFILE` (Generate Profiling Instrumented Build)
 
-Specifies generation of a .pgd file by the linker to support profile-guided optimization (PGO). **/GENPROFILE** and **/FASTGENPROFILE** use different default parameters. Use **/GENPROFILE** to favor precision over speed and memory usage during profiling. Use **/FASTGENPROFILE** to favor smaller memory usage and speed over precision.
+Specifies generation of a *`.pgd`* file by the linker to support profile-guided optimization (PGO). **`/GENPROFILE`** and **`/FASTGENPROFILE`** use different default parameters. Use **`/GENPROFILE`** to favor precision over speed and memory usage during profiling. Use **`/FASTGENPROFILE`** to favor smaller memory usage and speed over precision.
 
 ## Syntax
 
-> **/GENPROFILE**\[**:**{\[**COUNTER32**\|**COUNTER64**]\|\[**EXACT**\|**NOEXACT**]\|**MEMMAX=**_#_\|**MEMMIN=**_#_\|\[**PATH**\|**NOPATH**]\|\[**TRACKEH** \|**NOTRACKEH** ]\|**PGD=**_filename_}]\
-> **/FASTGENPROFILE**\[**:**{\[**COUNTER32**\|**COUNTER64**]\|\[**EXACT**\|**NOEXACT**]\|**MEMMAX=**_#_\|**MEMMIN=**_#_\|[**PATH**\|**NOPATH** ]\|\[**TRACKEH** \|**NOTRACKEH** ]\|**PGD=**_filename_}]
+> **`/GENPROFILE`**\[**`:`**_`profile-argument`_\[**`,`**_`profile-argument`_ ...]]\
+> **`/FASTGENPROFILE`**\[**`:`**_`profile-argument`_\[**`,`**_`profile-argument`_ ...]]\
+
+> *`profile-argument`*\
+> &emsp;{ **`COUNTER32`** &vert; **`COUNTER64`** }\
+> &emsp;{ **`EXACT`** &vert; **`NOEXACT`** }\
+> &emsp;**`MEMMAX=`**_value_\
+> &emsp;**`MEMMIN=`**_value_\
+> &emsp;{ **`PATH`** &vert; **`NOPATH`** }\
+> &emsp;{ **`TRACKEH`** &vert; **`NOTRACKEH`** }\
+> &emsp;**`PGD=`**_filename_
 
 ### Arguments
 
-Any of the following arguments may be specified to **/GENPROFILE** or **/FASTGENPROFILE**. Arguments listed here separated by a pipe (**|**) character are mutually exclusive. Use a comma (**,**) character to separate options.
+Any of the *`profile-argument`* arguments may be specified to **`/GENPROFILE`** or **`/FASTGENPROFILE`**. Arguments listed here separated by a pipe character (**`|`**) are mutually exclusive. Use a comma character (**`,`**) to separate arguments. Don't put spaces between arguments, commas, or after the colon (**`:`**).
 
-**COUNTER32** &#124; **COUNTER64**<br/>
-Use **COUNTER32** to specify the use of 32-bit probe counters, and **COUNTER64** to specify  64-bit probe counters. When you specify **/GENPROFILE**, the default is **COUNTER64**. When you specify **/FASTGENPROFILE**, the default is **COUNTER32**.
+**`COUNTER32`** &vert; **`COUNTER64`**\
+Use **`COUNTER32`** to specify the use of 32-bit probe counters, and **`COUNTER64`** to specify  64-bit probe counters. When you specify **`/GENPROFILE`**, the default is **`COUNTER64`**. When you specify **`/FASTGENPROFILE`**, the default is **`COUNTER32`**.
 
-**EXACT** &#124; **NOEXACT**<br/>
-Use **EXACT** to specify thread-safe interlocked increments for probes. **NOEXACT** specifies unprotected increment operations for probes. The default is **NOEXACT**.
+**`EXACT`** &vert; **`NOEXACT`**\
+Use **`EXACT`** to specify thread-safe interlocked increments for probes. **`NOEXACT`** specifies unprotected increment operations for probes. The default is **`NOEXACT`**.
 
-**MEMMAX**=*value*, **MEMMIN**=*value*<br/>
-Use **MEMMAX** and **MEMMIN** to specify the maximum and minimum reservation sizes for training data in memory. The value is the amount of memory to reserve in bytes. By default, these values are determined by an internal heuristic.
+**`MEMMAX`**=*value*, **`MEMMIN`**=*value*\
+Use **`MEMMAX`** and **`MEMMIN`** to specify the maximum and minimum reservation sizes for training data in memory. The value is the amount of memory to reserve in bytes. By default, these values are determined by an internal heuristic.
 
-**PATH**  &#124; **NOPATH** <br/>
-Use **PATH**  to specify a separate set of PGO counters for each unique path to a function. Use **NOPATH**  to specify only one set of counters for each function. When you specify **/GENPROFILE**, the default is **PATH** . When you specify **/FASTGENPROFILE**, the default is **NOPATH** .
+**`PATH`**  &vert; **`NOPATH`**\
+Use **`PATH`**  to specify a separate set of PGO counters for each unique path to a function. Use **`NOPATH`**  to specify only one set of counters for each function. When you specify **`/GENPROFILE`**, the default is **`PATH`** . When you specify **`/FASTGENPROFILE`**, the default is **`NOPATH`** .
 
-**TRACKEH**  &#124; **NOTRACKEH** <br/>
-Specifies whether to use extra counters to keep an accurate count when exceptions are thrown during training. Use **TRACKEH**  to specify extra counters for an exact count. Use **NOTRACKEH**  to specify single counters for code that does not use exception handling or that does not encounter exceptions in your training scenarios.  When you specify **/GENPROFILE**, the default is **TRACKEH** . When you specify **/FASTGENPROFILE**, the default is **NOTRACKEH** .
+**`TRACKEH`**  &vert; **`NOTRACKEH`**\
+Specifies whether to use extra counters to keep an accurate count when exceptions are thrown during training. Use **`TRACKEH`**  to specify extra counters for an exact count. Use **`NOTRACKEH`**  to specify single counters for code that doesn't use exception handling or that doesn't run into exceptions in your training scenarios.  When you specify **`/GENPROFILE`**, the default is **`TRACKEH`** . When you specify **`/FASTGENPROFILE`**, the default is **`NOTRACKEH`** .
 
-**PGD**=*filename*<br/>
-Specifies a base file name for the .pgd file. By default, the linker uses the base executable image file name with a .pgd extension.
+**`PGD`**=*filename*\
+Specifies a base file name for the *`.pgd`* file. By default, the linker uses the base executable image file name with a *`.pgd`* extension.
 
 ## Remarks
 
-The **/GENPROFILE** and **/FASTGENPROFILE** options tell the linker to generate the profiling instrumentation file needed to support application training for profile-guided optimization (PGO). These options are new in Visual Studio 2015. Prefer these options to the deprecated **/LTCG:PGINSTRUMENT**, **/PGD** and **/POGOSAFEMODE** options and the **PogoSafeMode**, **VCPROFILE_ALLOC_SCALE** and **VCPROFILE_PATH** environment variables. The profiling information generated by application training is used as input to perform targeted whole-program optimizations during builds. You can set additional options to control various profiling features for performance during app training and builds. The default options specified by **/GENPROFILE** give most accurate results, especially for large, complex multi-threaded apps. The **/FASTGENPROFILE** option uses different defaults for a lower memory footprint and faster performance during training, at the expense of accuracy.
+The **`/GENPROFILE`** and **`/FASTGENPROFILE`** options tell the linker to generate the profiling instrumentation file needed to support application training for profile-guided optimization (PGO). These options are new in Visual Studio 2015. Prefer these options to the deprecated **`/LTCG:PGINSTRUMENT`**, **`/PGD`**, and **`/POGOSAFEMODE`** options, and to the **`PogoSafeMode`**, **`VCPROFILE_ALLOC_SCALE`**, and **`VCPROFILE_PATH`** environment variables. The profiling information generated by application training is used as input for targeted whole-program optimizations during builds. You can also set other options to control various profiling features for performance during app training and builds. The default options specified by **`/GENPROFILE`** give the most accurate results, especially for large, complex multi-threaded apps. The **`/FASTGENPROFILE`** option uses different defaults for a lower memory footprint and faster performance during training, at the expense of accuracy.
 
-Profiling information is captured when you run the instrumented app after you build by using **/GENPROFILE** of **/FASTGENPROFILE**. This information is captured when you specify the [/USEPROFILE](useprofile.md) linker option to perform the profiling step and then used to guide the optimized build step. For more information on how to train your app and details on the collected data, see [Profile-Guided Optimizations](../profile-guided-optimizations.md).
+Profiling information is captured when you run the instrumented app after you build by using **`/GENPROFILE`** of **`/FASTGENPROFILE`**. This information is captured when you specify the [`/USEPROFILE`](useprofile.md) linker option to do the profiling step and then used to guide the optimized build step. For more information on how to train your app and details on the collected data, see [Profile-guided optimizations](../profile-guided-optimizations.md).
 
-You must also specify **/LTCG** when you specify **/GENPROFILE** or **/FASTGENPROFILE**.
+Always specify **`/LTCG`** when you specify **`/GENPROFILE`** or **`/FASTGENPROFILE`**.
 
 ### To set this linker option in the Visual Studio development environment
 
@@ -51,7 +59,7 @@ You must also specify **/LTCG** when you specify **/GENPROFILE** or **/FASTGENPR
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
-1. Enter the **/GENPROFILE** or **/FASTGENPROFILE** options and arguments into the **Additional Options** box. Choose **OK** to save your changes.
+1. Enter the **`/GENPROFILE`** or **`/FASTGENPROFILE`** options and arguments into the **Additional Options** box. Choose **`OK`** to save your changes.
 
 ### To set this linker option programmatically
 
@@ -59,6 +67,6 @@ You must also specify **/LTCG** when you specify **/GENPROFILE** or **/FASTGENPR
 
 ## See also
 
-[MSVC linker reference](linking.md)<br/>
-[MSVC Linker Options](linker-options.md)<br/>
-[/LTCG (Link-time Code Generation)](ltcg-link-time-code-generation.md)<br/>
+[MSVC linker reference](linking.md)\
+[MSVC linker options](linker-options.md)\
+[`/LTCG` (Link-time code generation)](ltcg-link-time-code-generation.md)

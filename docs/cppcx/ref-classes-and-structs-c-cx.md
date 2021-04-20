@@ -24,7 +24,7 @@ A ref class or ref struct has these essential features:
 
 ## Declaration
 
-The following code fragment declares the `Person` ref class. Notice that the standard C++ `std::map` type is used in the private members, and the Windows Runtime`IMapView` interface is used in the public interface. Also notice that the "^" is appended to declarations of reference types.
+The following code fragment declares the `Person` ref class. Notice that the standard C++ `std::map` type is used in the private members, and the Windows Runtime `IMapView` interface is used in the public interface. Also notice that the "^" is appended to declarations of reference types.
 
 [!code-cpp[cx_classes#03](../cppcx/codesnippet/CPP/classesstructs/class1.h#03)]
 

@@ -43,7 +43,7 @@ Unlike the custom termination function installed by a call to **`set_terminate`*
 
 In a multithreaded environment, unexpected functions are maintained separately for each thread. Each new thread needs to install its own unexpected function. Thus, each thread is in charge of its own unexpected handling.
 
-In the current Microsoft implementation of C++ exception handling, **`unexpected`** calls **`terminate`** by default and is never called by the exception-handling run-time library. There is no particular advantage to calling **`unexpected`** rather than **term`inate**.
+In the current Microsoft implementation of C++ exception handling, **`unexpected`** calls **`terminate`** by default and is never called by the exception-handling run-time library. There is no particular advantage to calling **`unexpected`** rather than **`terminate`**.
 
 There is a single **`set_unexpected`** handler for all dynamically linked DLLs or EXEs; even if you call **`set_unexpected`** your handler may be replaced by another or that you are replacing a handler set by another DLL or EXE.
 

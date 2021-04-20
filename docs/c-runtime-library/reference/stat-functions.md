@@ -125,7 +125,7 @@ By default, this function's global state is scoped to the application. To change
 
 The **_stat** structure, defined in SYS\STAT.H, includes the following fields.
 
-|Field||
+|Field|Description|
 |-|-|
 | **st_gid** | Numeric identifier of group that owns the file (UNIX-specific) This field will always be zero on Windows systems. A redirected file is classified as a Windows file. |
 | **st_atime** | Time of last access of file. Valid on NTFS but not on FAT formatted disk drives. |

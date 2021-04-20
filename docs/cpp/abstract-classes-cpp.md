@@ -8,7 +8,7 @@ helpviewer_keywords: ["classes [C++], abstract", "base classes [C++], abstract c
 
 Abstract classes act as expressions of general concepts from which more specific classes can be derived. You can't create an object of an abstract class type. However, you can use pointers and references to abstract class types.
 
-You create an abstract class by declaring at least one pure virtual member function. That's a virtual function declared by using the pure specifier (`= 0`) syntax. Classes derived from the abstract class must implement the pure virtual function or they, too, are abstract classes.
+You create an abstract class by declaring at least one pure virtual member function. That's a virtual function declared by using the *pure* specifier (`= 0`) syntax. Classes derived from the abstract class must implement the pure virtual function or they, too, are abstract classes.
 
 Consider the example presented in [Virtual functions](../cpp/virtual-functions.md). The intent of class `Account` is to provide general functionality, but objects of type `Account` are too general to be useful. That means `Account` is a good candidate for an abstract class:
 
@@ -57,8 +57,13 @@ class base
 {
 public:
     base() {}
-    virtual ~base() = 0 {}; // pure virtual, and defined!
+    // To define the virtual destructor outside the class:
+    virtual ~base() = 0;
+    // Microsoft-specific extension to define it inline:
+//  virtual ~base() = 0 {};
 };
+
+base::~base() {} // required if not using Microsoft extension
 
 class derived : public base
 {
@@ -73,7 +78,7 @@ int main()
 }
 ```
 
-The example shows the definition of `~base()` inline, but you can also define it outside the class by using `base::~base() {}`.
+The example shows how a Microsoft compiler extension lets you add an inline definition to pure virtual `~base()`. You can also define it outside the class by using `base::~base() {}`.
 
 When the object `aDerived` goes out of scope, the destructor for class `derived` is called. The compiler generates code to implicitly call the destructor for class `base` after the `derived` destructor. The empty implementation for the pure virtual function `~base` ensures that at least some implementation exists for the function. Without it, the linker generates an unresolved external symbol error for the implicit call.
 

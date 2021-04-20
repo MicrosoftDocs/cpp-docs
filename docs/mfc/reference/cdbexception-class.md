@@ -61,7 +61,7 @@ This type includes SQL-prefixed codes defined by ODBC and AFX_SQL-prefixed codes
 
 - AFX_SQL_ERROR_API_CONFORMANCE The driver for a `CDatabase::OpenEx` or `CDatabase::Open` call does not conform to required ODBC API Conformance level 1 ( SQL_OAC_LEVEL1).
 
-- AFX_SQL_ERROR_CONNECT_FAIL Connection to the data source failed. You passed a NULL`CDatabase` pointer to your recordset constructor and the subsequent attempt to create a connection based on `GetDefaultConnect` failed.
+- AFX_SQL_ERROR_CONNECT_FAIL Connection to the data source failed. You passed a NULL `CDatabase` pointer to your recordset constructor and the subsequent attempt to create a connection based on `GetDefaultConnect` failed.
 
 - AFX_SQL_ERROR_DATA_TRUNCATED You requested more data than you have provided storage for. For information on increasing the provided data storage for `CString` or `CByteArray` data types, see the `nMaxLength` argument for [RFX_Text](record-field-exchange-functions.md#rfx_text) and [RFX_Binary](record-field-exchange-functions.md#rfx_binary) under "Macros and Globals."
 
