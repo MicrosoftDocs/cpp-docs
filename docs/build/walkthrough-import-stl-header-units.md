@@ -51,7 +51,7 @@ We'll start with the easiest way to import STL libraries as header units. This a
 
 This option is convenient for codebases that use many different headers and when build throughput isn't critical. This option doesn't guarantee that a header unit for a particular header will be built only once. But header units that are part of referenced static library projects are reused.
 
-You can import your STL libraries as header units without changing your code by enabling the Visual C++ project **Scan Sources for Module Dependencies** option. This setting causes the build system to scan your source code for `import` directives and tries to compile the imported header file into a header unit. There are other ways to indicate that a header file should be treated as a header unit besides scanning your entire project. For more information, see [Walkthrough: Build and import header units in Visual C++ projects](walkthrough-header-units.md).
+You can import your STL libraries as header units without changing your code. To do so, enable the Visual C++ project **Scan Sources for Module Dependencies** option. This setting causes the build system to scan your source code for `import` directives and tries to compile the imported header file into a header unit. There are other ways to indicate that a header file should be treated as a header unit besides scanning your entire project. For more information, see [Walkthrough: Build and import header units in Visual C++ projects](walkthrough-header-units.md).
 
 Not all headers can be converted to a header unit. One issue is header files that rely on `#define` symbols to cause the header file to compile differently. If a header file relies on this mechanism, it won't be converted to a header unit. Instead, it's treated as an ordinary `#include`.
 
@@ -187,7 +187,7 @@ The [`/translateInclude`](./reference/translateinclude.md) compiler switch can m
 
 It's useful because you don't have to modify the `#include` directives in your project to take advantage of importing built header units from the referenced shared header unit project.
 
-For example, if you have `#include <vector>` in your project and you reference a shared header unit project that contains a header unit for `<vector>`, you don't need to manually change `#include <vector>` to `import <vector>;` in your source code. If you specify `/translateInclude` (available in the project properties page under **C/C++** > **General** > **Translate Includes to Imports**) the compiler will automatically treat `#include <vector>` as  `import <vector>;`. This behavior applies to any `#include` statement that refers to a built header unit in a referenced shared header unit project. Other `#include` statements will be treated in the usual way.
+For example, if you have `#include <vector>` in your project and you reference a shared header unit project that contains a header unit for `<vector>`, you don't need to manually change `#include <vector>` to `import <vector>;` in your source code. If you specify `/translateInclude` (available in the project properties page under **C/C++** > **General** > **Translate Includes to Imports**), the compiler will automatically treat `#include <vector>` as `import <vector>;`. This behavior applies to any `#include` statement that refers to a built header unit in a referenced shared header unit project. Other `#include` statements will be treated in the usual way.
 
 ## Reuse header units among projects
 
@@ -199,7 +199,7 @@ Header units built by a static library project are automatically available to al
 These settings control the visibility of header units to the build system:
 
 - **Public Include Directories**. Specifies project directories for header units that should be automatically added to the include path in referencing projects.
-- **Public C++ Module Directories**. Specifies which project directories contain header units that should be available to referencing projects. This setting allows you to make some header units public. It provides a place that's visible to other projects where you can put header units that can be shared. If you use this setting, you might also want to specify **Public Include Directories** so your public headers are automatically added to the include path in referencing projects.
+- **Public C++ Module Directories**. Specifies which project directories contain header units that should be available to referencing projects. This setting allows you to make some header units public. It provides a place that's visible to other projects where you can put header units that can be shared. If you use this setting, you might also want to specify **Public Include Directories**. If you do, your public headers are automatically added to the include path in referencing projects.
 - **All Modules are Public**. To use header units built as a part of a DLL project, the symbols have to be exported from the DLL. To do so, set this property to **Yes**.
 
 ## Use a prebuilt module file
@@ -230,7 +230,7 @@ To access this setting:
 > Ensure that projects that share header units are built with compatible compilation options. If you use compilation options when you implement the header unit that are different from the ones you used when you created it, the compiler will issue warnings.
 
 > [!NOTE]
-> To use header units built as a part of a DLL project, set **All Modules are Public**  to **Yes**.
+> To use header units built as a part of a DLL project, set **All Modules are Public** to **Yes**.
 
 ## See also
 
