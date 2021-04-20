@@ -39,6 +39,9 @@ You can pass optional ASan runtime flags by navigating to **Configuration Proper
 
 ## Enable ASan for Visual Studio CMake projects
 
+> [!NOTE]
+> When building with CMake Presets, ASan must be enabled in your CMakeLists.txt. See [Enable AddressSanitizer for Windows and Linux](../build/cmake-presets-vs.md#enable-addresssanitizer-for-windows-and-linux) for more information.
+
 To enable ASan for CMake, right-click on the CMakeLists.txt file in **Solution Explorer** and choose **CMake Settings for Project**.
 
 Make sure you have a Linux configuration (for example, **Linux-Debug**) selected in the left pane of the dialog:
