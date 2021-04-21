@@ -9,7 +9,7 @@ ms.topic: reference
 
 CMake supports two files, `CMakePresets.json` and `CMakeUserPresets.json`, that allow users to specify common configure, build, and test options and share them with others.
 
-Use `CMakePresets.json` and `CMakeUserPresets.json` to drive CMake in Visual Studio and Visual Studio Code, in a Continuous Integration (CI) pipReline, and from the command line. `CMakePresets.json` is intended to save project-wide builds, and `CMakeUserPresets.json` is intended for developers to save their own local builds. `CMakePresets.json` is supported in Visual Studio 2019 version 16.10 or later.
+Use `CMakePresets.json` and `CMakeUserPresets.json` to drive CMake in Visual Studio and Visual Studio Code, in a Continuous Integration (CI) pipeline, and from the command line. `CMakePresets.json` is intended to save project-wide builds, and `CMakeUserPresets.json` is intended for developers to save their own local builds. `CMakePresets.json` is supported in Visual Studio 2019 version 16.10 or later.
 
 This article contains information about `CMakePresets.json` integration Visual Studio.
 
@@ -29,7 +29,7 @@ CMake version 3.20 or higher is required when invoking CMake with `CMakePresets.
 
 `CMakePresets.json` integration isn't enabled by default in Visual Studio 2019. You can enable it for all CMake projects in **Tools** > **Options** > **CMake** > **General**:
 
-![Enable `CMakePresets.json` in CMake options > General](./media/enable-cmakepresets.png)
+![Screenshot showing the checkbox to enable CMakePresets.json in the CMake General page of the Tools Options dialog.](./media/enable-cmakepresets.png)
 
 > [!Important]
 > Close and reopen the folder in Visual Studio to activate the integration.
@@ -187,7 +187,7 @@ The official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cm
 
 ### Select your compilers
 
-C and C++ compilers can be set by `cacheVariables.CMAKE_C_COMPILER` and `cacheVariables.CMAKE_CXX_COMPILER` in a Configure Preset. It's equivalent to passing `-D CMAKE_C_COMPILER=<value> and -D CMAKE_CXX_COMPILER=<value>` to CMake from the command line. For more information, see [CMAKE_\<LANG>_COMPILER](https://cmake.org/cmake/help/latest/variable/CMAKE_LANG_COMPILER.html#cmake-lang-compiler).
+C and C++ compilers can be set by `cacheVariables.CMAKE_C_COMPILER` and `cacheVariables.CMAKE_CXX_COMPILER` in a Configure Preset. It's equivalent to passing `-D CMAKE_C_COMPILER=<value> and -D CMAKE_CXX_COMPILER=<value>` to CMake from the command line. For more information, see [`CMAKE_<LANG>_COMPILER`](https://cmake.org/cmake/help/latest/variable/CMAKE_LANG_COMPILER.html#cmake-lang-compiler).
 
 Use the following examples to build with `cl.exe` and `clang-cl.exe` from Visual Studio. The C++ Clang tools for Windows component must be installed to build with `clang-cl`.
 
@@ -264,7 +264,7 @@ The host architecture (x64 or x86) and toolset can be set with `toolset.value`. 
 
  `set` should be used with IDE generators like the Visual Studio Generator. `external` should be used with command-line generators like Ninja. These values allow vendors like Visual Studio to source the required environment before CMake is invoked. For more information about the architecture and toolset fields, see [Configure Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#configure-preset).
 
-For a full list of IDE generators that support the architecture field, see [CMAKE_GENERATOR_PLATFORM](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_PLATFORM.html). For a full list of IDE generators that support the toolset field, see [CMAKE_GENERATOR_TOOLSET](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_TOOLSET.html).
+For a full list of IDE generators that support the architecture field, see [`CMAKE_GENERATOR_PLATFORM`](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_PLATFORM.html). For a full list of IDE generators that support the toolset field, see [`CMAKE_GENERATOR_TOOLSET`](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_TOOLSET.html).
 
 Use the examples below to target ARM64 with the Ninja generator, or Win32 (x86) with the Visual Studio 16 2019 generator:
 
@@ -361,7 +361,7 @@ Update your `launch.vs.json` and `task.vs.json` files to reference `CMakePresets
 
 If things aren't working as expected, there are a few troubleshooting steps that you can take.
 
-If either `CMakePrests.json` or `CMakeUserPresets.json` is invalid, then Visual Studio will fall back on its default behavior and show only the default Configure Presets. Visual Studio IntelliSense can help you catch many of these JSON errors, but it won't know if you're referencing a preset with `inherits` or `configurePreset` by the wrong name. To check if your preset files are valid, run `cmake --list-presets` from the command line at the root of your project directory (CMake 3.20 or higher is required). If either file is invalid, then you'll see the following error:
+If either `CMakePresets.json` or `CMakeUserPresets.json` is invalid, then Visual Studio will fall back on its default behavior and show only the default Configure Presets. Visual Studio IntelliSense can help you catch many of these JSON errors, but it won't know if you're referencing a preset with `inherits` or `configurePreset` by the wrong name. To check if your preset files are valid, run `cmake --list-presets` from the command line at the root of your project directory (CMake 3.20 or higher is required). If either file is invalid, then you'll see the following error:
 
 ```DOS
 CMake Error: Could not read presets from
@@ -372,7 +372,7 @@ Other troubleshooting steps include:
 
 - Delete the cache and reconfigure the project (**CMake: Delete Cache** and **Project** > **Configure \<project-name>**)
 - Close and reopen the folder in Visual Studio (**File** > **Close Folder**)
-- Delete the `.vs` folder at the root your project
+- Delete the *`.vs`* folder at the root your project
 
 If you've identified a problem, the best way to report it is by clicking the **Send Feedback** button in the top right-hand corner of Visual Studio.
 
@@ -382,7 +382,7 @@ You can enable logging for remote connections if you're having trouble connectin
 
 ## Enable AddressSanitizer for Windows and Linux
 
-AddressSanitizer (`ASan`) is a runtime memory error detector for C and C++ that is supported in Visual Studio for both Windows and Linux development. AddressSanitizer was enabled with an option (`addressSanitizerEnabled`) in `CMakeSettings.json`. This behavior isn't supported by `CMakePresets.json`.
+AddressSanitizer (ASan) is a runtime memory error detector for C and C++ that's supported in Visual Studio for both Windows and Linux development. AddressSanitizer was enabled with an option (`addressSanitizerEnabled`) in `CMakeSettings.json`. This behavior isn't supported by `CMakePresets.json`.
 
 Instead, enable and disable AddressSanitizer by setting the required compiler and linker flags yourself. Setting them removes Visual Studio-specific behavior and ensures that the same `CMakePresets.json` file can reproduce your build from the command line. The following sample can be added to a `CMakeLists.txt` to enable or disable AddressSanitizer for a target.
 
@@ -399,7 +399,7 @@ if(ASAN_ENABLED)
 endif()
 ```
 
-`<additional-options>` are other compilation flags like `"-fno-omit-frame-pointer"`. For more information about `ASan` for Linux, see [Using AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer#using-addresssanitizer). For more information about using `ASan` with MSVC, see [Use the AddressSanitizer from a Developer Command Prompt](https://docs.microsoft.com/cpp/sanitizers/asan#command-prompt).
+`<additional-options>` are other compilation flags like `"-fno-omit-frame-pointer"`. For more information about AddressSanitizer for Linux, see [Using AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer#using-addresssanitizer). For more information about using AddressSanitizer with MSVC, see [Use the AddressSanitizer from a Developer Command Prompt](https://docs.microsoft.com/cpp/sanitizers/asan#command-prompt).
 
 Pass runtime flags to AddressSanitizer by using the `ASAN_OPTIONS` field in `launch.vs.json`. `ASAN_OPTIONS` defaults to `detect_leaks=0` when no other runtime options are specified because LeakSanitizer isn't supported in Visual Studio.
 
@@ -409,7 +409,7 @@ You can use the same `CMakePresets.json` and `CMakeUserPresets.json` files to in
 
 ### Sourcing the environment when building with command-line generators on Windows
 
-It's up to the user to configure the environment before CMake is invoked when building with a command-line generator. If you're building with Ninja and the Visual C++ toolset on Windows, then set the environment before CMake is called to generate the build system. You can do it by calling `vcvarsall.bat` with the `architecture` argument. `architecture` specifies the host and target architecture to use. For more information, see [vcvarsall syntax](https://docs.microsoft.com/cpp/build/building-on-the-command-line#vcvarsall-syntax). If you build on Linux or on Windows with a Visual Studio Generator, then you don't need to take this step.
+It's up to the user to configure the environment before CMake is invoked when building with a command-line generator. If you're building with Ninja and the Visual C++ toolset on Windows, then set the environment before CMake is called to generate the build system. You can do it by calling `vcvarsall.bat` with the `architecture` argument. `architecture` specifies the host and target architecture to use. For more information, see [`vcvarsall` syntax](https://docs.microsoft.com/cpp/build/building-on-the-command-line#vcvarsall-syntax). If you build on Linux or on Windows with a Visual Studio Generator, then you don't need to take this step.
 
 It's the same step that Visual Studio takes for you when CMake is invoked by the IDE. Visual Studio parses the active Configure Preset for the host and target architecture specified by `toolset` and `architecture` and then sources the specified environment from `vcvarsall.bat`. When you build from the Windows command line with Ninja, you'll need to take this step yourself.
 
@@ -419,7 +419,7 @@ It's the same step that Visual Studio takes for you when CMake is invoked by the
 
 The following commands can be used to configure and build a CMake project that uses Ninja to target arm64 with x64 build tools. CMake version 3.20 or higher is required. Run these commands from the directory where your `CMakePresets.json` is located:
 
-```DOS
+```cmd
 /path/to/vcvarsall.bat x64_arm64 
 cmake --list-presets=all .
 cmake --preset <configurePreset-name>
