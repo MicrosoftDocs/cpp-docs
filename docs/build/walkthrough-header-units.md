@@ -70,7 +70,7 @@ In this example, you'll compile a header file as a header unit. Start by creatin
     }
     ```
 
-To enable header units, first set the **C++ Language Standard** to [**/std:c++latest**](./reference/std-specify-language-standard-version.md).
+To enable header units, first set the **C++ Language Standard** to [`/std:c++latest`](./reference/std-specify-language-standard-version.md).
 
 1. On the Visual Studio main menu, select **Project** > **Properties**.
 1. In the left pane of the project property pages window, select **Configuration Properties** > **General**.
