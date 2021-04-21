@@ -84,7 +84,7 @@ Follow these steps to set the options that cause the build system to scan for im
 1. In the left pane of the project property pages, select **C/C++** > **General**.
 1. Set **Scan Sources for Module Dependencies** to **Yes**. Because we're setting the project property, all sources in this project will be scanned.
 
-Change the C++ language standard for the compiler. The [`/std:c++latest`](./reference/std-specify-language-standard-version.md) switch is required if you're using header units:
+Change the C++ language standard for the compiler. The [`/std:c++latest`](./reference/std-specify-language-standard-version.md) switch is required if you're using header units.
 
 1. In the left pane of the project property pages, select **Configuration Properties** > **General**.
 1. In the **C++ Language Standard** list, select **Preview - Features from the Latest C++ Working Draft (/std:c++latest)**:
@@ -99,7 +99,7 @@ You can fine-tune this balance by not scanning for import dependencies. Instead,
 
 ## <a name="approach2"></a>Approach 2: Build a static library project
 
-The more flexible way to consume STL headers is to create one or more static library projects that build the header units from the STL headers you want to reuse. Then reference the library project or projects from the projects that need those STL headers. Modules and header units built in a static library project are automatically available to referencing projects. The project system automatically adds the appropriate [`/headerUnit](./reference/headerunit.md) switches to the command line so that the header units can be imported by the referencing projects.
+The more flexible way to consume STL headers is to create one or more static library projects that build the header units from the STL headers you want to reuse. Then reference the library project or projects from the projects that need those STL headers. Modules and header units built in a static library project are automatically available to referencing projects. The project system automatically adds the appropriate [/headerUnit](./reference/headerunit.md) switches to the command line so that the referencing projects can import the header units.
 
 This option ensures that header units for a particular header will be built only once. It's similar to using a shared precompiled header file, but it's much easier.
 
@@ -139,7 +139,7 @@ Set project properties to share the header units from this project.
 
 ## Reference the shared header unit project
 
-Next, create a project that will use the built `<vector>` and `<iostream>` shared header project:
+Next, create a project that will use the built `<vector>` and `<iostream>` shared header project.
 
 1. With the current solution still open, on the Visual Studio menu, select **File** > **Add**  > **New Project**.
 1. Add a C++ console app project. For this example, call it **Walkthrough**.
@@ -165,7 +165,7 @@ Change the **C++ Language Standard** for the compiler. To use header units, you 
 
 In the **Walkthrough** project, add a reference to the **SharedPrj** project.
 
-1. In the **Walkthrough** project, select the **References** node, and then select **Add Reference**. Select **SharedPrj** from the list of projects. 
+1. In the **Walkthrough** project, select the **References** node, and then select **Add Reference**. Select **SharedPrj** in the list of projects: 
 :::image type="content" source="./media/add-reference-to-walkthrough.png" alt-text="Screenshot that shows the Add Reference dialog. It's used to add a reference to the Walkthrough project.":::
 Now that you've added this reference, the build system will use the header units built by **SharedPrj** whenever an `import` in the **Walkthrough** project matches one of the built header units in **SharedPrj**.
 1. Select **OK** to close the **Add Reference** dialog.
@@ -200,7 +200,7 @@ These settings control the visibility of header units to the build system:
 
 - **Public Include Directories**. Specifies project directories for header units that should be automatically added to the include path in referencing projects.
 - **Public C++ Module Directories**. Specifies which project directories contain header units that should be available to referencing projects. This setting allows you to make some header units public. It provides a place that's visible to other projects where you can put header units that can be shared. If you use this setting, you might also want to specify **Public Include Directories**. If you do, your public headers are automatically added to the include path in referencing projects.
-- **All Modules are Public**. To use header units built as a part of a DLL project, the symbols have to be exported from the DLL. To do so, set this property to **Yes**.
+- **All Modules are Public**. When you use header units built as a part of a DLL project, the symbols have to be exported from the DLL. To do so, set this property to **Yes**.
 
 ## Use a prebuilt module file
 
@@ -218,7 +218,7 @@ To access this setting:
  
 If you reference two or more projects that built two or more header units with the same name, or that built two or more header units for the same header file, there will be multiple header units to choose from for the same import. You might have different versions of the header unit that were built with different compiler settings, for example, and need to inform the compiler which one to use.
 
-Use  the project properties **C/C++** > **Additional Header Unit Dependencies** to resolve collisions by specifying which header unit should be used. Otherwise, you can't predict which one will be picked.
+Use  the project properties **C/C++** > **Additional Header Unit Dependencies** setting to resolve collisions by specifying which header unit should be used. Otherwise, you can't predict which one will be picked.
 
 To access this setting:
 1. On the main menu, select **Project** > **Properties**. The project properties page opens.
