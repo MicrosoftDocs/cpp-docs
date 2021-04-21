@@ -17,7 +17,7 @@ The [second way](#approach2) is to build a static library project that contains 
 
 Importing an STL header as a header unit is a simpler alternative to [precompiled header files](creating-precompiled-header-files.md). Header units are easier to set up and use than a shared precompiled header file (PCH) but still provide similar performance benefits. Unlike a PCH, when a header unit changes, only it and its dependencies are rebuilt.
 
-Before you can import an STL header, it must be compiled into a header unit. A header unit is a binary representation of a header file. A header unit ends with an .ifc extension.
+Before you can import an STL header, it must be compiled into a header unit. A header unit is a binary representation of a header file. A header unit ends with an *`.ifc`* extension.
 
 An important difference between a header unit and a header file is that header units aren't affected by macro definitions. You can't `#define` a symbol that causes the header unit to behave differently when you import it. You can do that with a header file.
 
@@ -33,7 +33,7 @@ Before you can import an STL header, it must be compiled into a header unit. The
 
 **Scan for module dependencies**
 
-At a high level, when you use this approach, the build system scans your sources for `import "header";` and `import <header>;` statements. It then attempts to compile those header files and their dependencies into header units. Finally, it imports the compiled header unit files (.ifc) instead of running the header file through the preprocessor.
+At a high level, when you use this approach, the build system scans your sources for `import "header";` and `import <header>;` statements. It then attempts to compile those header files and their dependencies into header units. Finally, it imports the compiled header unit files (*`.ifc`*) instead of running the header file through the preprocessor.
 
 This approach might not be the best one for larger projects because it doesn't guarantee optimal build times. That's because the build system needs to scan through the files to find the headers to build into header units. The same header files might be reprocessed repeatedly, which would increase build time. Also, not all header files can be automatically converted to header units. For example, headers that depend on conditional compilation via `#define` symbols might not work as header units. If a header file can't be compiled into a header unit, it's treated as a normal `#include` file.
 
@@ -206,7 +206,7 @@ These settings control the visibility of header units to the build system:
 
 Typically, the easiest way to reuse header units among solutions is to reference the same shared header unit project from each solution.
 
-But if you need to use a built header unit that you don't have the project for, you can specify where the built .ifc file is so you can import it in your solution.
+But if you need to use a built header unit that you don't have the project for, you can specify where the built *`.ifc`* file is so you can import it in your solution.
 
 To access this setting:
 1. On the main menu, select **Project** > **Properties**. The project properties page opens.

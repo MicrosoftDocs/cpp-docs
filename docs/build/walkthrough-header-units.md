@@ -26,15 +26,13 @@ An important difference between a header unit and a header file is that header u
 
 A similarity is that everything visible from a header file is also visible from a header unit.
 
-Before you can import a header unit, you need to compile a header file into a header unit. An advantage of header units over PCH is that they can be used in distributed builds. For example, as long as you're using the same compiler to compile the .ifc and the program that imports it and are targeting the same platform and architecture, a header unit produced on one computer can be used on another.
+Before you can import a header unit, you need to compile a header file into a header unit. An advantage of header units over PCH is that they can be used in distributed builds. For example, as long as you're using the same compiler to compile the *`.ifc`* and the program that imports it and are targeting the same platform and architecture, a header unit produced on one computer can be used on another.
 
-Another advantage of header units over PCH is that there's more flexibility for the compiler flags used to compile the header unit and for the program that imports it. With a PCH, more compiler flags must be the same. But with header units, these primary flags should be the same:
+Another advantage of header units over PCH is that there's more flexibility for the compiler flags used to compile the header unit and for the program that imports it. With a PCH, more compiler flags must be the same. But with header units, these flags should be the same:
 
-- Exception handling switches like `/EHsc`
-- `/MD[d]` or `MT[d]`
-- `/D` 
-
-You can define additional macros when you build the program that imports the header unit. But the ones used to build the header unit should also be present and defined the same way when you build the program that imports the header unit.
+- Exception handling switches like `/EHsc`.
+- `/MD[d]` or `MT[d]`.
+- `/D`. You can define additional macros when you build the program that imports the header unit. But the ones used to build the header unit should also be present and defined the same way when you build the program that imports the header unit.
 
 ## Ways to compile a header unit
 
@@ -88,14 +86,14 @@ In **Solution Explorer**, select the file you want to compile as a header unit. 
 Set the **Item Type** property to **C/C++ compiler**. By default, header files have an **Item Type** of **C/C++ header**. Setting this property also sets **C/C++** > **Advanced** > **Compile As** to **Compile as C++ Header Unit (/exportHeader)**.
 :::image type="content" source="media/change-item-type.png" alt-text="Screenshot that shows changing the item type to C/C++ compiler.":::
 
-**For source files** (or header files that don't have an .h or .hpp extension):
+**For source files** (or header files that don't have an *`.h`* or *`.hpp`* extension):
 
 Set the **Compile As** property to **Compile as C++ Header Unit (/exportHeader)**.
 :::image type="content" source="media/change-compile-as.png" alt-text="Screenshot that shows changing Compile As to Compile as C++ Header Unit.":::
 
 ### Change your code to import a header unit
 
-In the source file for the example project, that is, the file that contains `main()`, change `#include "Pythagorean.h"` to `import "Pythagorean.h"`. (Don't forget the trailing semicolon that's required for `import` statements.) When you're compiling a header unit from a system header, use angle brackets (`import <file>;`). If it's a project header, use `import "file";`.
+In the source file for the example project, that is, the file that contains `main()`, change `#include "Pythagorean.h"` to `import "Pythagorean.h";`. (Don't forget the trailing semicolon that's required for `import` statements.) When you're compiling a header unit from a system header, use angle brackets (`import <file>;`). If it's a project header, use `import "file";`.
 
 Build the solution. (**Build** > **Build Solution** on the main menu.) Run it to see that it produces the expected output: `Pythagorean triple a:2 b:3 c:13`
 
