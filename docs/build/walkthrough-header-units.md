@@ -20,7 +20,7 @@ To use header units, you need Visual Studio 2019 16.10.0 Preview 2 or later.
 
 ## What is a header unit?
 
-A header unit is a binary representation of a header file. A header unit ends with an .ifc extension. This format is also used for named modules.
+A header unit is a binary representation of a header file. A header unit ends with an *`.ifc`* extension. This format is also used for named modules.
 
 An important difference between a header unit and a header file is that header units aren't affected by macro definitions. You can't `#define` a symbol that causes the header unit to behave differently when you import it. You can do that with a header file.
 
