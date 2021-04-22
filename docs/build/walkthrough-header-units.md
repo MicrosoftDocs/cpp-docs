@@ -55,19 +55,22 @@ In this example, you'll compile a header file as a header unit. Start by creatin
     
     int main()
     {
-        PrintPythogoreanTriple(2,3);
+        PrintPythagoreanTriple(2,3);
         return 0;
     }
     ```
 1. Add a header file called `Pythagorean.h`, and replace its content with this code:
     ```cpp
-    #pragma once
+    #ifndef PYTHAGOREAN
+    #define PYTHAGOREAN
+
     #include <iostream>
     
-    void PrintPythogoreanTriple(int a, int b)
+    void PrintPythagoreanTriple(int a, int b)
     {
         std::cout << "Pythagorean triple a:" << a << " b:" << b << " c:" << a*a + b*b << std::endl;
     }
+    #endif
     ```
 
 To enable header units, first set the **C++ Language Standard** to [`/std:c++latest`](./reference/std-specify-language-standard-version.md).
