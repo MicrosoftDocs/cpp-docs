@@ -1785,7 +1785,7 @@ int main()
 
 In [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode, the compiler now requires the **`template`** keyword to precede a template-name when it comes after a dependent nested-name-specifier.
 
-The following code in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode now raises C7510:
+The following code in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode now raises [C7510](../error-messages/compiler-errors-2/compiler-error-c7510.md):
 
 ```cpp
 template<typename T> struct Base
