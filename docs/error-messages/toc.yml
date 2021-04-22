@@ -3114,6 +3114,8 @@
       items: 
         - name: Compiler errors C7500 through C7999
           href: compiler-errors-2/compiler-errors-c7500-through-c7999.md
+        - name: Compiler error C7510
+          href: compiler-errors-2/compiler-error-c7510.md
         - name: Compiler error C7626
           href: compiler-warnings/c5208.md
 - name: Compiler warnings C4000 Through C5999

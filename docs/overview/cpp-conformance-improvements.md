@@ -274,16 +274,21 @@ void example()
 
 ### Function template bodies containing `if constexpr` statements
 
-Template function bodies containing **`if constexpr`** statements have some [`/permissive-`](../build/reference/permissive-standards-conformance.md) parsing-related checks enabled. For example, in Visual Studio 2017 the following code produces C7510 only if the **`/permissive-`** option isn't set. In Visual Studio 2019 the same code raises errors even when the **`/permissive-`** option is set:
+In Visual Studio 2019 under **`/std:c++latest`**, template function bodies that have **`if constexpr`** statements have extra parsing-related checks enabled. For example, in Visual Studio 2017 the following code produces [C7510](../error-messages/compiler-errors-2/compiler-error-c7510.md) only if the **`/permissive-`** option is set. In Visual Studio 2019 the same code raises errors even when the **`/permissive`** option is set:
 
 ```cpp
-template <typename T>
+// C7510.cpp
+// compile using: cl /EHsc /W4 /permissive /std:c++latest C7510.cpp
+#include <iostream>
 
+template <typename T>
 int f()
 {
     T::Type a; // error C7510: 'Type': use of dependent type name must be prefixed with 'typename'
+    // To fix the error, add the 'typename' keyword. Use this declaration instead:
+    // typename T::Type a;
 
-    if constexpr (T::val)
+    if constexpr (a.val)
     {
         return 1;
     }
@@ -301,7 +306,7 @@ struct X
 
 int main()
 {
-    return f<X>();
+    std::cout << f<X>() << "\n";
 }
 ```
 
