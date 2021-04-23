@@ -68,7 +68,7 @@ Options for a `remotePrebuildEvent` and `remotePostbuildEvent` have been depreca
 
  Encode pre-build, pre-link, and post-build events in your CMakeLists.txt using [add_custom_command](https://cmake.org/cmake/help/latest/command/add_custom_command.html#build-events). This will ensure the same behavior when building with Visual Studio and from the command line.
 
-If you need behavior that is specific to Visual Studio, you can add a custom remote task in` tasks.vs.json`. To get started, right-click on your root `CMakeLists.txt` in the **Solution Explorer** from **Folder View** and select **Configure Tasks**.  You can then [add a new remote task](https://docs.microsoft.com/cpp/build/tasks-vs-json-schema-reference-cpp#remote-properties) to your `tasks.vs.json` file.
+If you need behavior that is specific to Visual Studio, you can add a custom remote task in` tasks.vs.json`. To get started, right-click on your root `CMakeLists.txt` in the **Solution Explorer** from **Folder View** and select **Configure Tasks**.  You can then [add a new remote task](/cpp/build/tasks-vs-json-schema-reference-cpp#remote-properties) to your `tasks.vs.json` file.
 
 The following remote task creates a directory called test on the remote Linux system:
 
