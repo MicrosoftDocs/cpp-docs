@@ -47,7 +47,7 @@ With **`/FC`**, the compiler output looks similar to this diagnostic text:
 
 The **`/FC`** option is implied by **`/ZI`**. For more information about **`/ZI`**, see [`/Z7, /Zi, /ZI` (Debug information format)](z7-zi-zi-debug-information-format.md).
 
-In Visual Studio 2017 and earlier versions, **`/FC`** outputs full paths in lower case. Starting in Visual Studio 2019, **`/FC`** preserves the casing of full paths in the file system.
+In Visual Studio 2017 and earlier versions, **`/FC`** outputs full paths in lower case. Starting in Visual Studio 2019, **`/FC`** uses the same casing as the file system for full paths.
 
 ### To set this compiler option in the Visual Studio development environment
 
