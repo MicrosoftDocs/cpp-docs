@@ -41,7 +41,7 @@ Currently, the **`/openmp:llvm`** option only works on the x64 architecture. The
 
 Applications compiled by using both **`/openmp`** and **`/clr`** can only be run in a single application domain process. Multiple application domains aren't supported. That is, when the module constructor (`.cctor`) is run, it detects if the process is compiled using **`/openmp`**, and if the app is loaded into a non-default runtime. For more information, see [`appdomain`](../../cpp/appdomain.md), [`/clr` (Common Language Runtime Compilation)](clr-common-language-runtime-compilation.md), and [Initialization of Mixed Assemblies](../../dotnet/initialization-of-mixed-assemblies.md).
 
-If you attempt to load an app compiled using both **`/openmp`** and **`/clr*`* into a non-default application domain, a <xref:System.TypeInitializationException> exception is thrown outside the debugger, and a `OpenMPWithMultipleAppdomainsException` exception is thrown in the debugger.
+If you attempt to load an app compiled using both **`/openmp`** and **`/clr*`** into a non-default application domain, a <xref:System.TypeInitializationException> exception is thrown outside the debugger, and a `OpenMPWithMultipleAppdomainsException` exception is thrown in the debugger.
 
 These exceptions can also be raised in the following situations:
 
