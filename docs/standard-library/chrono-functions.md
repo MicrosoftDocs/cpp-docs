@@ -34,13 +34,13 @@ The source `duration` object to cast to the target `duration` type.
 
 ### Return value
 
-An object of type `ToDuration` that represents the `duration` *`d`*. It's truncated if required to fit into the target type. The result of casting a floating-point `duration` to an integral `duration` is undefined if the source contains a *`NaN`*, an infinity, or is too large for representation in the target `duration`.
+An object of type `ToDuration` that represents the `duration` *`d`*. It's truncated if necessary to fit into the target type. The result of casting a floating-point `duration` to an integral `duration` is undefined if the source contains a *`NaN`*, an infinity, or is too large for representation in the target `duration`.
 
 ### Remarks
 
 You don't need to use `duration_cast` to convert between `duration` types when the source period is exactly divisible by the target period, such as when you convert minutes to seconds. Also, you don't need it to convert between floating-point `duration` types. You can do both conversions by using ordinary casts or the  [`duration`](../standard-library/duration-class.md) constructors.
 
-`duration_cast` doesn't participate in overload resolution unless `ToDuration` is an instance of [`duration`](../standard-library/duration-class.md). It does all conversions by using **`static_cast`** instead of implicit conversions. Multiplications and divisions are avoided if it's known at compile time that the common ratio of the target and source periods has a numerator or denominator of 1. Computations are done in the widest type available, then converted as if by **`static_cast`** to the result type when finished.
+`duration_cast` doesn't participate in overload resolution unless `ToDuration` is an instance of [`duration`](../standard-library/duration-class.md). It does all conversions by using **`static_cast`** instead of implicit conversions. Multiplications and divisions are avoided if possible. For example, when the compiler knows that the common ratio of the target and source periods has a numerator or denominator of 1. Computations are done in the widest type available, then converted as if by **`static_cast`** to the result type when finished.
 
 ## <a name="std-chrono-floor-duration"></a> `floor(duration)`
 
@@ -168,7 +168,7 @@ The common clock type of the result and the source parameter *`tp`*.
 The `duration` type of *`tp`*.
 
 *`tp`*\
-The `time_point` object to cast to the desired `ToDuration` type.
+The `time_point` object to cast to one that has the `ToDuration` type.
 
 ### Return value
 
@@ -202,7 +202,7 @@ The common clock type of the result and the source parameter *`tp`*.
 The `duration` type of *`tp`*.
 
 *`tp`*\
-The `time_point` object to cast to the desired `ToDuration` type.
+The source `time_point` object.
 
 ### Return value
 
@@ -236,7 +236,7 @@ The common clock type of the result and the source parameter *`tp`*.
 The `duration` type of *`tp`*.
 
 *`tp`*\
-The `time_point` object to cast to the desired `ToDuration` type.
+The source `time_point` object.
 
 ### Return value
 
@@ -268,7 +268,7 @@ The common clock type of the result and the source parameter *`tp`*.
 The `duration` type of *`tp`*.
 
 *`tp`*\
-The `time_point` object to cast to the desired `ToDuration` type.
+The source `time_point` object.
 
 ### Return value
 
@@ -355,7 +355,7 @@ The source `hours` representation is PM (if **`true`**) or AM (if **`false`**).
 
 ### Return value
 
-If `is_pm` is **`false`**, returns the 24-hour equivalent of *`h`* in the range `[0h, 11h]`, assuming *`h`* represents an AM hour. Otherwise, returns the 24-hour equivalent of *`h`* in the range `[12h, 23h]`, assuming *`h`* represents a PM hour. The return value is unspecified if *`h`* isn't in the range `[1h, 12h]`.
+If `is_pm` is **`false`**, `make24` returns the 24-hour equivalent of *`h`* in the range `[0h, 11h]`, assuming *`h`* represents an AM hour. Otherwise, it returns the 24-hour equivalent of *`h`* in the range `[12h, 23h]`, assuming *`h`* represents a PM hour. The return value is unspecified if *`h`* isn't in the range `[1h, 12h]`.
 
 ## <a name="std-chrono-get-leap-second-info"></a> `get_leap_second_info`
 
