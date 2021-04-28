@@ -39,10 +39,27 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 ### Functions
 
-|Name|Description|
-|-|-|
-|[`duration_cast`](../standard-library/chrono-functions.md#duration_cast)|Casts a `duration` object to a specified type.|
-|[`time_point_cast`](../standard-library/chrono-functions.md#time_point_cast)|Casts a `time_point` object to a specified type.|
+| Name | Description |
+|--|--|
+| [`duration_cast`](./chrono-functions.md#std-chrono-duration-cast) | Casts a `duration` object to a specified type. |
+| [`floor(duration)`](./chrono-functions.md#std-chrono-floor-duration) | Returns the `floor` of a `duration` object as a specified type. |
+| [`ceil(duration)`](./chrono-functions.md#std-chrono-ceil-duration) | Returns the `ceil` of a `duration` object as a specified type. |
+| [`round(duration)`](./chrono-functions.md#std-chrono-round-duration) | Returns a `duration` object rounded as a specified type. |
+| [`time_point_cast`](./chrono-functions.md#std-chrono-time-point-cast) | Casts a `time_point` object to a specified type. |
+| [`floor(time_point)`](./chrono-functions.md#std-chrono-floor-time-point) | Returns the `floor` of a `time_point` object as a specified type. |
+| [`ceil(time_point)`](./chrono-functions.md#std-chrono-ceil-time-point) | Returns the `ceil` of a `time_point` object as a specified type. |
+| [`round(time_point)`](./chrono-functions.md#std-chrono-round-time-point) | Returns a `time_point` object rounded as a specified type. |
+| [`is_am`](./chrono-functions.md#std-chrono-is-am) | Whether an `hours` object is AM. |
+| [`is_pm`](./chrono-functions.md#std-chrono-is-pm) | Whether an `hours` object is PM. |
+| [`make12`](./chrono-functions.md#std-chrono-make12) | Returns an `hours` in 12-hour form. |
+| [`make24`](./chrono-functions.md#std-chrono-make24) | Returns an `hours` in 24-hour form. |
+| [`get_leap_second_info`](./chrono-functions.md#std-chrono-get-leap-second-info) | Gets a `leap_second_info`. |
+| [`get_tzdb`](./chrono-functions.md#std-chrono-get-tzdb) | Gets the first time zone database entry. |
+| [`get_tzdb_list`](./chrono-functions.md#std-chrono-get-tzdb-list) | Gets the list of time zone database entries. |
+| [`locate_zone`](./chrono-functions.md#std-chrono-locate-zone) | Gets a specified time zone. |
+| [`current_zone`](./chrono-functions.md#std-chrono-current-zone) | Gets the current time zone. |
+| [`reload_tzdb`](./chrono-functions.md#std-chrono-reload-tzdb) | Gets an updated time zone database entry. |
+| [`remote_version`](./chrono-functions.md#std-chrono-remote-version) | Checks for an updated time zone database entry. |
 
 ### Operators
 
