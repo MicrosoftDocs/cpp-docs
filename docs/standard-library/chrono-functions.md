@@ -2,8 +2,8 @@
 description: "Learn more about: &lt;chrono&gt; functions"
 title: "&lt;chrono&gt; functions"
 ms.date: 04/27/2021
-f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast", "chrono/std::chrono::duration_cast", "chrono/std::chrono::time_point_cast", "chrono/std::chrono::floor", "chrono/std::chrono::ceil", "chrono/std::chrono::round", "chrono/std::chrono::is_am", "chrono/std::chrono::is_pm", "chrono/std::chrono::make12", "chrono/std::chrono::make24", "chrono/std::chrono::get_leap_second_info", "chrono/std::chrono::get_tzdb", "chrono/std::chrono::get_tzdb_list", "chrono/std::chrono::locate_zone", "chrono/std::chrono::current_zone", "chrono/std::chrono::reload_tzdb", "chrono/std::chrono::remote_version"]
-helpviewer_keywords: ["std::duration_cast function", "std::time_point_cast function", "std::chrono::duration_cast function", "std::chrono::time_point_cast function", "std::chrono::floor function", "std::chrono::ceil function", "std::chrono::round function", "std::chrono::is_am function", "std::chrono::is_pm function", "std::chrono::make12 function", "std::chrono::make24 function", "std::chrono::get_leap_second_info function", "std::chrono::get_tzdb function", "std::chrono::get_tzdb_list function", "std::chrono::locate_zone function", "std::chrono::current_zone function", "std::chrono::reload_tzdb function", "std::chrono::remote_version function"]
+f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast", "chrono/std::from_stream", "chrono/std::chrono::duration_cast", "chrono/std::chrono::time_point_cast", "chrono/std::chrono::from_stream", "chrono/std::chrono::floor", "chrono/std::chrono::ceil", "chrono/std::chrono::round", "chrono/std::chrono::is_am", "chrono/std::chrono::is_pm", "chrono/std::chrono::make12", "chrono/std::chrono::make24", "chrono/std::chrono::get_leap_second_info", "chrono/std::chrono::get_tzdb", "chrono/std::chrono::get_tzdb_list", "chrono/std::chrono::locate_zone", "chrono/std::chrono::current_zone", "chrono/std::chrono::reload_tzdb", "chrono/std::chrono::remote_version"]
+helpviewer_keywords: ["std::duration_cast function", "std::time_point_cast function", "std::chrono::duration_cast function", "std::chrono::time_point_cast function", "std::chrono::from_stream function", "std::chrono::floor function", "std::chrono::ceil function", "std::chrono::round function", "std::chrono::is_am function", "std::chrono::is_pm function", "std::chrono::make12 function", "std::chrono::make24 function", "std::chrono::get_leap_second_info function", "std::chrono::get_tzdb function", "std::chrono::get_tzdb_list function", "std::chrono::locate_zone function", "std::chrono::current_zone function", "std::chrono::reload_tzdb function", "std::chrono::remote_version function"]
 ---
 # `<chrono>` functions
 
@@ -144,6 +144,297 @@ Returns the nearest `duration` representable in `ToDuration` to the parameter *`
 ### Remarks
 
 `round` doesn't participate in overload resolution unless the `ToDuration` type is an instance of a [`duration`](../standard-library/duration-class.md), and `ToDuration` has an integral representation.
+
+## <a name="std-chrono-from-stream"></a> `from_stream`
+
+Casts a [time_point](../standard-library/time-point-class.md) object to a specified type.
+Parse the input stream into one of the `std::chrono` time or interval types such as `day`, `month`, or `year` using the specified format.
+
+```cpp
+template<class charT class traits, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    day& d, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+
+template<class charT, class traits, class Rep, class Period, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    duration<Rep, Period>& dur, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+
+template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    file_time<Duration>& ft, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+
+template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    gps_time<Duration>& gt, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+
+template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    local_time<Duration>& lt, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+
+template<class charT, class traits, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    month& m, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+
+template<class charT, class traits, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    month_day& md, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+
+template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    utc_time<Duration>& ut, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+
+template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    system_time<Duration>& st, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+
+template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    tai_time<Duration>& tt, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+
+template<class charT, class traits, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    weekday& wd, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+
+template<class charT, class traits, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    year& y, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+
+template<class charT, class traits, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    year_month& ym, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+
+template<class charT, class traits, class Alloc = allocator<charT>>
+basic_istream<charT, traits>&
+from_stream(
+    basic_istream<charT, traits>& is, const charT* fmt,
+    year_month_day& ymd, basic_string<charT, traits, Alloc>* abbrev = nullptr,
+    minutes* offset = nullptr);
+```
+
+### Parameters
+
+*`charType`*\
+The data type of a single character to be read from the stream and stored in the string. The C++ Standard Library provides specializations of this class template, with the type definitions [`string`](../standard-library/string-typedefs.md#string) for elements of type `char`, [`wstring`](../standard-library/string-typedefs.md#wstring), for `wchar_t`, [`u16string`](../standard-library/string-typedefs.md#u16string) for `char16_t`, and [`u32string`](../standard-library/string-typedefs.md#u32string) for `char32_t`.
+
+*`traits`*\
+Describes `CharT` attributes for the `basic_string` and `basic_istream` specialization.
+
+*`Rep`*\
+The internal representation type of a `duration` type.
+
+*`Period`*\
+A [`std::ratio`](./ratio.md) type representing the ratio of one second to the source `Rep` type (that is, seconds per `Rep`).
+
+*`Duration`*\
+The `duration` type used for time specialization.
+
+*`Alloc`*\
+The type that represents the allocator object that handles the string's allocation and deallocation of memory.
+
+*`d`*\
+The `day` parsed from the stream.
+
+*`dur`*\
+The `duration` parsed from the stream.
+
+*`fmt`*\
+The format string used to match the input. See [Parse format strings](#parse-format-strings) for the list of parse formatting options.
+
+*`ft`*\
+The `file_time` parsed from the stream.
+
+*`gt`*\
+The `gps_time` parsed from the stream.
+
+*`is`*\
+The input stream to parse.
+
+*`lt`*\
+The `local_time` parsed from the stream.
+
+*`m`*\
+The `month` parsed from the stream.
+
+*`md`*\
+The `month_day` parsed from the stream.
+
+*`st`*\
+The `system_time` parsed from the stream.
+
+*`tt`*\
+The `tai_time` parsed from the stream.
+
+*`ut`*\
+The `utc_time` parsed from the stream.
+
+*`wd`*\
+The `weekday` parsed from the stream.
+
+*`y`*\
+The `year` parsed from the stream.
+
+*`ym`*\
+The `year_month` parsed from the stream.
+
+*`ymd`*\
+The `year_month_day` parsed from the stream.
+
+### Return value
+
+The input stream, *`is`*
+
+### Example: `from_stream`
+
+```cpp
+#include <chrono>
+#include <iostream>
+int Main()
+{
+    std::istringstream str{ "22" };
+    std::basic_istream<char> stream{ str.rdbuf() };
+    std::chrono::day d;
+    std::chrono::from_stream(stream, "%d", d);
+    std::cout << d << "\n";
+    return 0;
+}
+```
+
+```output
+22
+```
+
+## <a name="parse-format-strings"></a> Parse format strings
+
+The format may be one of the following:
+
+### Date
+
+| Specifier | Description |
+|--|--|
+| `%D` | Equivalent to `%m/%d/%y` |
+| `%F`<br>`%`*N*`d`  | Equivalent to `%Y-%m-%d`. If modified with a width `N`, the width is applied to only `%Y`. |
+| `%x`, `%Ex` | The locale’s date representation.<br>`%Ex` produces the locale’s alternate date representation. |
+
+### Day
+
+| Specifier | Description |
+|--|--|
+| `%d`<br>`%0d`<br>`%`*N*`d`<br>`%e`<br>`%0e`<br>`%`*N*`e` | The day of the month as a decimal number.<br> `%`*N*`d` specifies the maximum number of characters to read, for example `%1d`. If `N` is not specified, the default is 2.<br> Leading zeroes are permitted but not required. <br>`%Od` (letter `O`, not zero) interprets the locale’s alternative representation of the day of the month.<br>`%e` is equivalent to `%d` and can be modified like `%d` |
+
+### Day of the week
+
+| Specifier | Description |
+|--|--|
+| `%a`<br>`%A` | The locale’s full or abbreviated case-insensitive weekday name.<br>`%A` is equivalent to `%a` |
+| `%u`<br>`%`*`N`*`u` | The ISO weekday as a decimal number (1-7), where Monday is 1. `%`*`N`*`u` specifies the maximum number of characters to read, for example `%2u`. If `N` is not specified, the default is 1. Leading zeros are permitted but not required. |
+| `%w`<br>`%`*`N`*`w`<br>`%0w` | The weekday as a decimal number (0-6), where Sunday is 0.<br>`%`*`N`*`w` specifies the maximum number of characters to read, for example `%2w`. If `N` is not specified, the default is 1. Leading zeroes are permitted but not required.<br>`%Ow` (letter `O`, not zero) interprets the locale’s alternative representation. |
+
+### Week/day of the year
+
+| Specifier | Description |
+|--|--|
+| `%j` |  If the type being formatted is a specialization of duration, the decimal number of days without padding. Otherwise, the day of the year as a decimal number. Jan 1 is 001. If the result is less than three digits, it is left-padded with 0 (zero) to three digits. |
+| `%U`<br>`%0U` | The week number of the year as a decimal number. The first Sunday of the year is the first day of week 01. Days of the same year prior to that are in week 00. If the result is a single digit, it is prefixed with 0 (zero).<br>`%OU` (letter `O`, not zero) produces the locale’s alternative representation. |
+| `%W`<br>`%OW` |The week number of the year as a decimal number. The first Monday of the year is the first day of week 01. Days of the same year prior to that are in week 00.<br>If the result is a single digit, it is prefixed with 0 (zero).<br>``%OW` (letter `O`, not zero) produces the locale’s alternative representation. |
+
+### Time of day
+
+| Specifier | Description |
+|--|--|
+| `%H`<br>`%`*N*`H`<br>`%OH` | The hour (24-hour clock) as a decimal number. If the result is a single digit, it is prefixed with a 0 (zero).<br>`%`*N*`H` specifies the maximum number of characters to read, for example, `%1H`.  If `N` is not specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%OH` (letter `O`, not zero) produces the locale’s alternative representation. |
+| `%I`<br>`%`*N*`I`<br>`%OI` | The hour (12-hour clock) as a decimal number. If the result is a single digit, it is prefixed with 0 (zero).<br>`%`*N*`I` specifies the maximum number of characters to read, for example, `%1I`.  If `N` is not specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%OI` (letter `O`, not zero) produces the locale’s alternative representation. |
+| `%M`<br>`%`*N*`M`<br>`%OM` | The minutes as a decimal number. If the result is a single digit, it is prefixed with 0 (zero).<br>`%`*N*`M` specifies the maximum number of characters to read, for example `%3M`. If `N` is not specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%OM` (letter `O`, not zero) produces the locale’s alternative representation.|
+|`%S`<br>`%`*N*`S`<br>`%OS` | Seconds as a decimal number. If the number of seconds is less than 10, the result is prefixed with 0 (zero). If the precision of the input cannot be exactly represented with seconds, then the format is a decimal floating-point number with a fixed format and a precision matching that of the precision of the input (or to a microseconds precision if the conversion to floating-point decimal seconds cannot be made within 18 fractional digits). The character for the decimal point is localized according to the locale.<br>`%`*N*`S` specifies the maximum number of characters to read, for example `%3S`. If `N` is not specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%OS` (letter `O`, not zero) produces the locale’s alternative representation. |
+| `%p` | The locale’s equivalent of the AM/PM designations associated with a 12-hour clock. |
+| `%r` | The locale’s 12-hour clock time. |
+| `%R` | Equivalent to `%H:%M`. |
+| `%T`| Equivalent to `"%H:%M:%S"`. |
+| `%X`, `%EX` | The locale’s date representation.<br>`%Ex` produces the locale’s alternate date representation. |
+
+### Month
+
+| Specifier | Description |
+|--|--|
+|`%b`, `%B`, `%h`| The locale’s abbreviated month name. If the value does not contain a valid month, a `format_error` exception is thrown.<br>`%h` is equivalent to `%b`. |
+| `%m`, `%`*n*`m`, `%Om` | The month as a decimal number. Jan is 1.<br>`%`*N*`m` specifies the maximum number of characters to read, for example, `%3m`. If `N` is not specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%Om` (letter `O`, not zero) interprets the locale’s alternative representation.|
+
+### Year
+
+| Specifier | Description |
+|--|--|
+|`%C`, `%`*N*`C`, `%EC`| The century as a decimal number.<br>`%`*N*`C` specifies the maximum number of characters to read, for example, `%1N`. If `N` is not specified, the default is 2. Leading zeroes are permitted but not required.<br>`%EC` interprets the locale’s alternative representation of the century. |
+|%y, `%`*N*`y`, `%Ey`, `%Oy` | The last two decimal digits of the year. If the century is not otherwise specified (for example with `%C`), values in the range [69, 99] are presumed to refer to the years 1969 to 1999, and values in the range [00, 68] are presumed to refer to the years 2000 to 2068.<br>Leading zeroes are permitted but not required.<br>`%Ey` and `%Oy` (letter `O`, not zero) interpret the locale’s alternative representation.|
+| %Y, `%EY` | The year as a decimal number. If the result is less than four digits it is left-padded with 0 (zero) to four digits.<br>`%EY` produces the locale’s alternative full year representation. |
+
+### ISO 8601 week-based year
+
+In ISO 8601, weeks begin with Monday. The first week of the year must include January 4 and include the first Thursday of the year.
+
+| Specifier | Replacement                               |
+|:---------:|:------------------------------------------|
+| `%g`| The last two decimal digits of the ISO week-based year. If the result is a single digit, is prefixed by 0 (zero). |
+| `%G`| The ISO week-based year as a decimal number. If the result is less than four digits, it is left-padded with 0 (zero) to four digits. |
+| `%V`<br>`%OV`| The ISO week-based week number as a decimal number. If the result is a single digit, it is prefixed with 0 (zero).<br>`%OV` (letter `O`, not zero) produces the locale’s alternative representation |
+
+### General
+
+| Specifier | Replacement |
+|:-:|:-|
+| `%%` | Matches the % character |
+| `%c`<br>%Ec% | The locale’s date and time representation.<br>`%Ec` interprets the locale’s alternate date and time representation. |
+| `%n` | Matches a new-line character |
+| `%t` | Matches zero or one whitespace characters |
+| `%z`<br>`%Ez%`<br>`%Oz` | The offset from UTC in the format `[+|-]hh[mm]`. For example, `-0430` refers to 4 hours 30 minutes behind UTC, and `04` refers to 4 hours ahead of UTC.<br>`%Ez` and `%Oz` (letter `O`, not zero) parse a `:` between the hours and minutes and render leading zeroes on the hour field optional: `[+|-]h[h][:mm]`. For example, `-04:30` refers to 4 hours 30 minutes behind UTC, and 4 refers to 4 hours ahead of UTC. |
+| `%Z` | The time zone abbreviation or name. A single word is parsed. This word can only contain characters from the basic source character set that are alphanumeric, or one of `_`, `/`, `-’`, or `+`.
+
+*`d`*\
+If the parse is successful, contains the parsed day when the function returns.
+If the parse fails, `is.setstate(std::ios_base::failbit)` is called and `d` isn't modified.
+
+*`abbrev`*\
+If *`abbrev`* isn't `nullptr`, and the format specifier `%Z` is specified, and the parse is successful, then *`abbrev`* contains the parsed value.
+
+*`offset`*\
+If *`offset`* isn't `nullptr`, and the format specifier `%z` or modified variant such as `%Ez` or `%0z` is specified, and the parse is successful, then *`offset`* points to the parsed value.
 
 ## <a name="std-chrono-time-point-cast"></a> `time_point_cast`
 
@@ -434,7 +725,7 @@ The name of the time zone to return.
 
 ### Return value
 
-Returns a pointer to a `time_zone` as if by a call to `get_tzdb().locate_zone(tz_name)`. It throws a `runtime_error` exception if it can't find the specified time zone, or if it's the first reference to the time zone database and the time zone database can't be initialized.
+Returns a pointer to a [`time_zone`](./time-zone-class.md) as if by a call to `get_tzdb().locate_zone(tz_name)`. It throws a `runtime_error` exception if it can't find the specified time zone, or if it's the first reference to the time zone database and the time zone database can't be initialized.
 
 ### Remarks
 
@@ -452,7 +743,7 @@ const time_zone* current_zone();  // Since C++20
 
 ### Return value
 
-Returns a pointer to a `time_zone` as if by a call to `get_tzdb().current_zone()`. It throws a `runtime_error` exception if it's the first reference to the time zone database and the time zone database can't be initialized.
+Returns a pointer to a [`time_zone`](./time-zone-class.md) as if by a call to `get_tzdb().current_zone()`. It throws a `runtime_error` exception if it's the first reference to the time zone database and the time zone database can't be initialized.
 
 <!-- // 27.11.2.4, remote time zone database support -->
 
@@ -496,4 +787,5 @@ Returns a `string` that contains the latest remote database version.
 [`chrono` literals](./chrono-literals.md)\
 [`chrono` operators](./chrono-operators.md)\
 [`duration` class](./duration-class.md)\
-[`time_point` class](./time-point-class.md)
+[`time_point` class](./time-point-class.md)\
+[`time_zone` class](./time-zone-class.md)

@@ -160,6 +160,8 @@
           href: ../standard-library/system-clock-structure.md
         - name: time_point class
           href: ../standard-library/time-point-class.md
+        - name: time_zone class
+          href: ../standard-library/time-zone-class.md
         - name: treat_as_floating_point struct
           href: ../standard-library/treat-as-floating-point-structure.md
     - name: <cinttypes>
