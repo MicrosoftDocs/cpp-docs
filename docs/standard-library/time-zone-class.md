@@ -7,9 +7,9 @@ helpviewer_keywords: ["std::chrono [C++], time_zone class", "std::chrono::time_z
 ---
 # `time_zone` class
 
-A `time_zone` represents all time zone transitions for a specific geographic area. The library creates `time_zone` objects as part of its time zone database initialization. It provides **`const`** access to the created objects. You can't construct or copy a `time_zone` object, and use of the default move constructor or default move assignment operator results in undefined behavior.
+A `time_zone` represents all the time zone transitions for a specific geographic area. The library creates `time_zone` objects as part of its time zone database initialization. It provides **`const`** access to the created objects. You can't construct or copy a `time_zone` object, and use of the default move constructor or default move assignment operator results in undefined behavior.
 
-Microsoft C++ supports the `time_zone` class starting in Visual Studio 2019 version 16.10.
+Microsoft C++ supports the `time_zone` class starting in Visual Studio 2019 version 16.10. The `time_zone` class is a C++20 feature. The [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option is required.
 
 ## Syntax
 
@@ -94,7 +94,7 @@ In the `get_info` function template that takes a `local_time` time point *`lt`*,
 
 ### Remarks
 
-Microsoft C++ supports `time_zone::get_info` starting in Visual Studio 2019 version 16.10.
+Microsoft C++ supports `time_zone::get_info` starting in Visual Studio 2019 version 16.10. The function is a C++20 feature that requires the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
 ## <a name="std-chrono-time-zone-name"></a> `name`
 
@@ -136,7 +136,7 @@ The `sys_time` time point used to get a `sys_info` result.
 
 ### Remarks
 
-Microsoft C++ supports `time_zone::to_local` starting in Visual Studio 2019 version 16.10.
+Microsoft C++ supports `time_zone::to_local` starting in Visual Studio 2019 version 16.10. The function is a C++20 feature that requires the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
 ## <a name="std-chrono-time-zone-to-sys"></a> `to_sys`
 
@@ -167,13 +167,13 @@ A value of `choose::earliest` or `choose::latest`. It's used to resolve otherwis
 
 `to_sys` returns a `sys_time` that's at least as fine as `seconds`. It's finer if the argument *`lt`* has finer precision. The returned `sys_time` is the UTC equivalent of *`lt`* according to the rules of this time_zone.
 
-The one-parameter overload throws an `ambiguous_local_time` exception if the conversion from *`lt`* to a `sys_time` is ambiguous, and a `nonexistent_local_time` exception if the local time point represents a non-existent local time point. Ambiguity can happen when a daylight saving time to standard time transition leads to two instances of a local time point in one day. A non-existent local time point represents a time point in the transition from standard time to daylight saving time.
+The one-parameter overload throws an `ambiguous_local_time` exception if the conversion from *`lt`* to a `sys_time` is ambiguous, and a `nonexistent_local_time` exception if the local time point represents a non-existent local time point. Ambiguity can happen during a daylight saving time to standard time transition. Two instances of the same local time point may occur in one day. A non-existent local time point represents a time point in the transition from standard time to daylight saving time.
 
 The two-parameter overload doesn't throw an exception in these cases. If the conversion from  *`lt`* to a `sys_time` is ambiguous, `to_sys` returns the earlier `sys_time` if *`z`* is `choose::earliest`, and returns the later `sys_time` if *`z`* is `choose::latest`. If the *`lt`* represents a non-existent time between two UTC time points, then the two UTC time points are the same, so `to_sys` returns that UTC time point.
 
 ### Remarks
 
-Microsoft C++ supports `time_zone::to_sys` starting in Visual Studio 2019 version 16.10.
+Microsoft C++ supports `time_zone::to_sys` starting in Visual Studio 2019 version 16.10. The function is a C++20 feature that requires the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
 ## See also
 

@@ -1,9 +1,8 @@
 ---
 description: "Learn more about: &lt;chrono&gt;"
 title: "&lt;chrono&gt;"
-ms.date: "05/07/2019"
+ms.date: 04/29/2021
 f1_keywords: ["<chrono>", "chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
-ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
 ---
 # `<chrono>`
 
@@ -21,21 +20,22 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 ### Classes
 
-|Name|Description|
-|-|-|
-|[`duration` Class](../standard-library/duration-class.md)|Describes a type that holds a time interval.|
-|[`time_point` Class](../standard-library/time-point-class.md)|Describes a type that represents a point in time.|
+| Name | Description |
+|--|--|
+| [`duration` class](../standard-library/duration-class.md) | Describes a type that holds a time interval. |
+| [`time_point` class](../standard-library/time-point-class.md) | Describes a type that represents a point in time. |
+| [`time_zone` class](../standard-library/time-point-class.md) | Represents all time zone transitions for a specific geographic area.  |
 
 ### Structs
 
-|Name|Description|
-|-|-|
-|[`common_type` Structure](../standard-library/common-type-structure.md)|Describes specializations of class template [`common_type`](../standard-library/common-type-class.md) for instantiations of `duration` and `time_point`.|
-|[`duration_values` Structure](../standard-library/duration-values-structure.md)|Provides specific values for the `duration` template parameter `Rep`.|
-|[`high_resolution_clock` struct](../standard-library/high-resolution-clock-struct.md)||
-|[`steady_clock` struct](../standard-library/steady-clock-struct.md)|Represents a `steady` clock.|
-|[`system_clock` Structure](../standard-library/system-clock-structure.md)|Represents a *`clock type`* that is based on the real-time clock of the system.|
-|[`treat_as_floating_point` Structure](../standard-library/treat-as-floating-point-structure.md)|Specifies whether a type can be treated as a floating-point type.|
+| Name | Description |
+|--|--|
+| [`common_type` struct](../standard-library/common-type-structure.md) | Describes specializations of class template [`common_type`](../standard-library/common-type-class.md) for instantiations of `duration` and `time_point`. |
+| [`duration_values` struct](../standard-library/duration-values-structure.md) | Provides specific values for the `duration` template parameter `Rep`. |
+| [`high_resolution_clock` struct](../standard-library/high-resolution-clock-struct.md) |  |
+| [`steady_clock` struct](../standard-library/steady-clock-struct.md) | Represents a `steady` clock. |
+| [`system_clock` struct](../standard-library/system-clock-structure.md) | Represents a *`clock type`* that is based on the real-time clock of the system. |
+| [`treat_as_floating_point` struct](../standard-library/treat-as-floating-point-structure.md) | Specifies whether a type can be treated as a floating-point type. |
 
 ### Functions
 

@@ -154,6 +154,10 @@
           href: ../standard-library/duration-class.md
         - name: duration_values struct
           href: ../standard-library/duration-values-structure.md
+        - name: leap_second class
+          href: ../standard-library/leap-second-class.md
+        - name: leap_second_info struct
+          href: ../standard-library/leap-second-info-struct.md
         - name: steady_clock struct
           href: ../standard-library/steady-clock-struct.md
         - name: system_clock struct

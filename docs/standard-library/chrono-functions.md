@@ -151,6 +151,7 @@ Casts a [time_point](../standard-library/time-point-class.md) object to a specif
 Parse the input stream into one of the `std::chrono` time or interval types such as `day`, `month`, or `year` using the specified format.
 
 ```cpp
+// 1) day
 template<class charT class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -158,6 +159,7 @@ from_stream(
     day& d, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
+// 2) duration
 template<class charT, class traits, class Rep, class Period, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -344,7 +346,7 @@ int Main()
 
 ## <a name="parse-format-strings"></a> Parse format strings
 
-The format may be one of the following:
+The format may be one of these strings:
 
 ### Date
 
@@ -358,32 +360,32 @@ The format may be one of the following:
 
 | Specifier | Description |
 |--|--|
-| `%d`<br>`%0d`<br>`%`*N*`d`<br>`%e`<br>`%0e`<br>`%`*N*`e` | The day of the month as a decimal number.<br> `%`*N*`d` specifies the maximum number of characters to read, for example `%1d`. If `N` is not specified, the default is 2.<br> Leading zeroes are permitted but not required. <br>`%Od` (letter `O`, not zero) interprets the locale’s alternative representation of the day of the month.<br>`%e` is equivalent to `%d` and can be modified like `%d` |
+| `%d`<br>`%0d`<br>`%`*N*`d`<br>`%e`<br>`%0e`<br>`%`*N*`e` | The day of the month as a decimal number.<br> `%`*N*`d` specifies the maximum number of characters to read, for example `%1d`. If `N` isn't specified, the default is 2.<br> Leading zeroes are permitted but not required. <br>`%Od` (letter `O`, not zero) interprets the locale’s alternative representation of the day of the month.<br>`%e` is equivalent to `%d` and can be modified like `%d` |
 
 ### Day of the week
 
 | Specifier | Description |
 |--|--|
 | `%a`<br>`%A` | The locale’s full or abbreviated case-insensitive weekday name.<br>`%A` is equivalent to `%a` |
-| `%u`<br>`%`*`N`*`u` | The ISO weekday as a decimal number (1-7), where Monday is 1. `%`*`N`*`u` specifies the maximum number of characters to read, for example `%2u`. If `N` is not specified, the default is 1. Leading zeros are permitted but not required. |
-| `%w`<br>`%`*`N`*`w`<br>`%0w` | The weekday as a decimal number (0-6), where Sunday is 0.<br>`%`*`N`*`w` specifies the maximum number of characters to read, for example `%2w`. If `N` is not specified, the default is 1. Leading zeroes are permitted but not required.<br>`%Ow` (letter `O`, not zero) interprets the locale’s alternative representation. |
+| `%u`<br>`%`*`N`*`u` | The ISO weekday as a decimal number (1-7), where Monday is 1. `%`*`N`*`u` specifies the maximum number of characters to read, for example `%2u`. If `N` isn't specified, the default is 1. Leading zeros are permitted but not required. |
+| `%w`<br>`%`*`N`*`w`<br>`%0w` | The weekday as a decimal number (0-6), where Sunday is 0.<br>`%`*`N`*`w` specifies the maximum number of characters to read, for example `%2w`. If `N` isn't specified, the default is 1. Leading zeroes are permitted but not required.<br>`%Ow` (letter `O`, not zero) interprets the locale’s alternative representation. |
 
 ### Week/day of the year
 
 | Specifier | Description |
 |--|--|
-| `%j` |  If the type being formatted is a specialization of duration, the decimal number of days without padding. Otherwise, the day of the year as a decimal number. Jan 1 is 001. If the result is less than three digits, it is left-padded with 0 (zero) to three digits. |
-| `%U`<br>`%0U` | The week number of the year as a decimal number. The first Sunday of the year is the first day of week 01. Days of the same year prior to that are in week 00. If the result is a single digit, it is prefixed with 0 (zero).<br>`%OU` (letter `O`, not zero) produces the locale’s alternative representation. |
-| `%W`<br>`%OW` |The week number of the year as a decimal number. The first Monday of the year is the first day of week 01. Days of the same year prior to that are in week 00.<br>If the result is a single digit, it is prefixed with 0 (zero).<br>``%OW` (letter `O`, not zero) produces the locale’s alternative representation. |
+| `%j` |  If the type being formatted is a specialization of duration, the decimal number of days without padding. Otherwise, the day of the year as a decimal number. `Jan 1` is `001`. If the result is fewer than three digits, it's left-padded with `0` (zero) to three digits. |
+| `%U`<br>`%0U` | The week number of the year as a decimal number. The first Sunday of the year is the first day of week `01`. Days of the same year before that week are in week `00`. If the result is a single digit, it's prefixed with `0` (zero).<br>`%OU` (letter `O`, not zero) produces the locale’s alternative representation. |
+| `%W`<br>`%OW` |The week number of the year as a decimal number. The first Monday of the year is the first day of week `01`. Days of the same year before that week are in week `00`.<br>If the result is a single digit, it's prefixed with `0` (zero).<br>``%OW` (letter `O`, not zero) produces the locale’s alternative representation. |
 
 ### Time of day
 
 | Specifier | Description |
 |--|--|
-| `%H`<br>`%`*N*`H`<br>`%OH` | The hour (24-hour clock) as a decimal number. If the result is a single digit, it is prefixed with a 0 (zero).<br>`%`*N*`H` specifies the maximum number of characters to read, for example, `%1H`.  If `N` is not specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%OH` (letter `O`, not zero) produces the locale’s alternative representation. |
-| `%I`<br>`%`*N*`I`<br>`%OI` | The hour (12-hour clock) as a decimal number. If the result is a single digit, it is prefixed with 0 (zero).<br>`%`*N*`I` specifies the maximum number of characters to read, for example, `%1I`.  If `N` is not specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%OI` (letter `O`, not zero) produces the locale’s alternative representation. |
-| `%M`<br>`%`*N*`M`<br>`%OM` | The minutes as a decimal number. If the result is a single digit, it is prefixed with 0 (zero).<br>`%`*N*`M` specifies the maximum number of characters to read, for example `%3M`. If `N` is not specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%OM` (letter `O`, not zero) produces the locale’s alternative representation.|
-|`%S`<br>`%`*N*`S`<br>`%OS` | Seconds as a decimal number. If the number of seconds is less than 10, the result is prefixed with 0 (zero). If the precision of the input cannot be exactly represented with seconds, then the format is a decimal floating-point number with a fixed format and a precision matching that of the precision of the input (or to a microseconds precision if the conversion to floating-point decimal seconds cannot be made within 18 fractional digits). The character for the decimal point is localized according to the locale.<br>`%`*N*`S` specifies the maximum number of characters to read, for example `%3S`. If `N` is not specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%OS` (letter `O`, not zero) produces the locale’s alternative representation. |
+| `%H`<br>`%`*N*`H`<br>`%OH` | The hour (24-hour clock) as a decimal number. If the result is a single digit, it's prefixed with a `0` (zero).<br>`%`*N*`H` specifies the maximum number of characters to read, for example, `%1H`.  If `N` isn't specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%OH` (letter `O`, not zero) produces the locale’s alternative representation. |
+| `%I`<br>`%`*N*`I`<br>`%OI` | The hour (12-hour clock) as a decimal number. If the result is a single digit, it's prefixed with `0` (zero).<br>`%`*N*`I` specifies the maximum number of characters to read, for example, `%1I`.  If `N` isn't specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%OI` (letter `O`, not zero) produces the locale’s alternative representation. |
+| `%M`<br>`%`*N*`M`<br>`%OM` | The minutes as a decimal number. If the result is a single digit, it's prefixed with `0` (zero).<br>`%`*N*`M` specifies the maximum number of characters to read, for example `%3M`. If `N` isn't specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%OM` (letter `O`, not zero) produces the locale’s alternative representation.|
+|`%S`<br>`%`*N*`S`<br>`%OS` | Seconds as a decimal number. If the number of seconds is less than 10, the result is prefixed with `0` (zero). If the precision of the input can't be exactly represented with seconds, then the format is a decimal floating-point number with a fixed format. It has a microseconds precision if the function can't convert the floating-point decimal seconds within 18 fractional digits. Otherwise, its precision matches the precision of the input. The character for the decimal point is localized according to the locale.<br>`%`*N*`S` specifies the maximum number of characters to read, for example `%3S`. If `N` isn't specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%OS` (letter `O`, not zero) produces the locale’s alternative representation. |
 | `%p` | The locale’s equivalent of the AM/PM designations associated with a 12-hour clock. |
 | `%r` | The locale’s 12-hour clock time. |
 | `%R` | Equivalent to `%H:%M`. |
@@ -394,16 +396,16 @@ The format may be one of the following:
 
 | Specifier | Description |
 |--|--|
-|`%b`, `%B`, `%h`| The locale’s abbreviated month name. If the value does not contain a valid month, a `format_error` exception is thrown.<br>`%h` is equivalent to `%b`. |
-| `%m`, `%`*n*`m`, `%Om` | The month as a decimal number. Jan is 1.<br>`%`*N*`m` specifies the maximum number of characters to read, for example, `%3m`. If `N` is not specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%Om` (letter `O`, not zero) interprets the locale’s alternative representation.|
+|`%b`, `%B`, `%h`| The locale’s abbreviated month name. If the value doesn't contain a valid month, a `format_error` exception is thrown.<br>`%h` is equivalent to `%b`. |
+| `%m`, `%`*n*`m`, `%Om` | The month as a decimal number. Jan is 1.<br>`%`*N*`m` specifies the maximum number of characters to read, for example, `%3m`. If `N` isn't specified, the default is 2.<br>Leading zeroes are permitted but not required.<br>`%Om` (letter `O`, not zero) interprets the locale’s alternative representation.|
 
 ### Year
 
 | Specifier | Description |
 |--|--|
-|`%C`, `%`*N*`C`, `%EC`| The century as a decimal number.<br>`%`*N*`C` specifies the maximum number of characters to read, for example, `%1N`. If `N` is not specified, the default is 2. Leading zeroes are permitted but not required.<br>`%EC` interprets the locale’s alternative representation of the century. |
-|%y, `%`*N*`y`, `%Ey`, `%Oy` | The last two decimal digits of the year. If the century is not otherwise specified (for example with `%C`), values in the range [69, 99] are presumed to refer to the years 1969 to 1999, and values in the range [00, 68] are presumed to refer to the years 2000 to 2068.<br>Leading zeroes are permitted but not required.<br>`%Ey` and `%Oy` (letter `O`, not zero) interpret the locale’s alternative representation.|
-| %Y, `%EY` | The year as a decimal number. If the result is less than four digits it is left-padded with 0 (zero) to four digits.<br>`%EY` produces the locale’s alternative full year representation. |
+|`%C`, `%`*N*`C`, `%EC`| The century as a decimal number.<br>`%`*N*`C` specifies the maximum number of characters to read, for example, `%1N`. If `N` isn't specified, the default is 2. Leading zeroes are permitted but not required.<br>`%EC` interprets the locale’s alternative representation of the century. |
+|`%y`, `%`*N*`y`, `%Ey`, `%Oy` | The last two decimal digits of the year. If the century isn't otherwise specified (for example, by using `%C`), values in the range `[69, 99]` are presumed to refer to the years 1969 to 1999, and values in the range `[00, 68]` are presumed to refer to the years 2000 to 2068.<br>Leading zeroes are permitted but not required.<br>`%Ey` and `%Oy` (letter `O`, not zero) interpret the locale’s alternative representation.|
+| `%Y`, `%EY` | The year as a decimal number. If the result is fewer than four digits, it's left-padded with `0` (zero) to four digits.<br>`%EY` produces the locale’s alternative full year representation. |
 
 ### ISO 8601 week-based year
 
@@ -411,9 +413,9 @@ In ISO 8601, weeks begin with Monday. The first week of the year must include Ja
 
 | Specifier | Replacement                               |
 |:---------:|:------------------------------------------|
-| `%g`| The last two decimal digits of the ISO week-based year. If the result is a single digit, is prefixed by 0 (zero). |
-| `%G`| The ISO week-based year as a decimal number. If the result is less than four digits, it is left-padded with 0 (zero) to four digits. |
-| `%V`<br>`%OV`| The ISO week-based week number as a decimal number. If the result is a single digit, it is prefixed with 0 (zero).<br>`%OV` (letter `O`, not zero) produces the locale’s alternative representation |
+| `%g`| The last two decimal digits of the ISO week-based year. If the result is a single digit, is prefixed by `0` (zero). |
+| `%G`| The ISO week-based year as a decimal number. If the result is fewer than four digits, it's left-padded with `0` (zero) to four digits. |
+| `%V`<br>`%OV`| The ISO week-based week number as a decimal number. If the result is a single digit, it's prefixed with `0` (zero).<br>`%OV` (letter `O`, not zero) produces the locale’s alternative representation |
 
 ### General
 
@@ -422,9 +424,9 @@ In ISO 8601, weeks begin with Monday. The first week of the year must include Ja
 | `%%` | Matches the % character |
 | `%c`<br>%Ec% | The locale’s date and time representation.<br>`%Ec` interprets the locale’s alternate date and time representation. |
 | `%n` | Matches a new-line character |
-| `%t` | Matches zero or one whitespace characters |
+| `%t` | Matches zero or one whitespace character |
 | `%z`<br>`%Ez%`<br>`%Oz` | The offset from UTC in the format `[+|-]hh[mm]`. For example, `-0430` refers to 4 hours 30 minutes behind UTC, and `04` refers to 4 hours ahead of UTC.<br>`%Ez` and `%Oz` (letter `O`, not zero) parse a `:` between the hours and minutes and render leading zeroes on the hour field optional: `[+|-]h[h][:mm]`. For example, `-04:30` refers to 4 hours 30 minutes behind UTC, and 4 refers to 4 hours ahead of UTC. |
-| `%Z` | The time zone abbreviation or name. A single word is parsed. This word can only contain characters from the basic source character set that are alphanumeric, or one of `_`, `/`, `-’`, or `+`.
+| `%Z` | The time zone abbreviation or name. A single word is parsed. This word can only contain alphanumeric characters from the basic source character set, or one of `_`, `/`, `-’`, or `+`.
 
 *`d`*\
 If the parse is successful, contains the parsed day when the function returns.
@@ -651,7 +653,8 @@ If `is_pm` is **`false`**, `make24` returns the 24-hour equivalent of *`h`* in t
 
 ## <a name="std-chrono-get-leap-second-info"></a> `get_leap_second_info`
 
-Returns a `leap_second_info` for the specified time.
+Returns a [`leap_second_info`](./leap-second-info-struct.md)\
+ for the specified time.
 
 ### Syntax
 
