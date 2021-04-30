@@ -167,6 +167,7 @@ from_stream(
     duration<Rep, Period>& dur, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
+// 3) file_time
 template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -174,6 +175,7 @@ from_stream(
     file_time<Duration>& ft, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
+// 4) gps_time
 template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -181,6 +183,7 @@ from_stream(
     gps_time<Duration>& gt, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
+// 5) local_time
 template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -188,6 +191,7 @@ from_stream(
     local_time<Duration>& lt, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
+// 6) month
 template<class charT, class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -195,6 +199,7 @@ from_stream(
     month& m, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
+// 7) month_day
 template<class charT, class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -202,6 +207,7 @@ from_stream(
     month_day& md, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
+// 8) utc_time
 template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -209,6 +215,7 @@ from_stream(
     utc_time<Duration>& ut, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
+// 9) system_time
 template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -216,6 +223,7 @@ from_stream(
     system_time<Duration>& st, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
+// 10) tai_time
 template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -223,6 +231,7 @@ from_stream(
     tai_time<Duration>& tt, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
+// 11) weekday
 template<class charT, class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -230,6 +239,7 @@ from_stream(
     weekday& wd, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
+// 12) year
 template<class charT, class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -237,6 +247,7 @@ from_stream(
     year& y, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
+// 12) year_month
 template<class charT, class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -244,6 +255,7 @@ from_stream(
     year_month& ym, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
+// 13) year_month_day
 template<class charT, class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
