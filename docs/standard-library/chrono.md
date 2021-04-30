@@ -23,6 +23,7 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 | Name | Description |
 |--|--|
 | [`duration` class](../standard-library/duration-class.md) | Describes a type that holds a time interval. |
+| [`leap_second` class](../standard-library/leap-second-class.md) | Represents a date and a value for an inserted leap second. |
 | [`time_point` class](../standard-library/time-point-class.md) | Describes a type that represents a point in time. |
 | [`time_zone` class](../standard-library/time-point-class.md) | Represents all time zone transitions for a specific geographic area.  |
 
@@ -33,6 +34,7 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 | [`common_type` struct](../standard-library/common-type-structure.md) | Describes specializations of class template [`common_type`](../standard-library/common-type-class.md) for instantiations of `duration` and `time_point`. |
 | [`duration_values` struct](../standard-library/duration-values-structure.md) | Provides specific values for the `duration` template parameter `Rep`. |
 | [`high_resolution_clock` struct](../standard-library/high-resolution-clock-struct.md) |  |
+| [`leap_second_info` struct](../standard-library/leap-second-info-struct.md) | The data returned by `get_leap_second_info`. |
 | [`steady_clock` struct](../standard-library/steady-clock-struct.md) | Represents a `steady` clock. |
 | [`system_clock` struct](../standard-library/system-clock-structure.md) | Represents a *`clock type`* that is based on the real-time clock of the system. |
 | [`treat_as_floating_point` struct](../standard-library/treat-as-floating-point-structure.md) | Specifies whether a type can be treated as a floating-point type. |
