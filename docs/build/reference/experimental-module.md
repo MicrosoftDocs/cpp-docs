@@ -5,7 +5,7 @@ ms.date: "04/13/2021"
 f1_keywords: ["module", "/experimental:module"]
 helpviewer_keywords: ["module", "/experimental:module", "Enable module support"]
 ---
-# /experimental:module (Enable module support)
+# `/experimental:module` (Enable module support)
 
 Enables experimental compiler support for Standard Template Library named modules.
 
