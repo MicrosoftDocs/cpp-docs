@@ -178,7 +178,7 @@
           href: weekday-class.md
         - name: weekday_last class
           href: weekdaylast-class.md
-        - name: weekday_lindexed
+        - name: weekday_indexed
           href: weekdayindexed-class.md
         - name: year class
           href: year-class.md
