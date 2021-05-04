@@ -2,7 +2,7 @@
 description: "Learn more about: weekday_indexed Class"
 title: "weekday_indexed class"
 ms.date: "04/30/2021"
-f1_keywords: ["chrono/std::chrono::weekday_indexed", "chrono/std::chrono::weekday_indexed::ok", "std::chrono::weekday_indexed::weekday"]
+f1_keywords: ["chrono/std::chrono::weekday_indexed", "chrono/std::chrono::weekday_indexed::ok", "std::chrono::weekday_indexed::weekday", "std::chrono::weekday_indexed::ok"]
 helpviewer_keywords: ["std::chrono [C++], weekday_indexed"]
 ---
 # `weekday_indexed` class  
