@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Compiler warnings C4600 Through C4799"
 title: "Compiler warnings C4600 Through C4799"
-ms.date: "04/21/2019"
+ms.date: 05/03/2021
 f1_keywords: ["C4609", "C4658", "C4671", "C4676", "C4689", "C4695", "C4696", "C4719", "C4720", "C4721", "C4728", "C4732", "C4751", "C4752", "C4755", "C4757", "C4767", "C4770"]
 helpviewer_keywords: ["C4609", "C4658", "C4671", "C4676", "C4689", "C4695", "C4696", "C4719", "C4720", "C4721", "C4728", "C4732", "C4751", "C4752", "C4755", "C4757", "C4767", "C4770"]
 ms.assetid: 22bd4392-f3be-445c-9f23-6126aebac901
@@ -100,6 +100,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (level 1, Error) C4694](../../error-messages/compiler-warnings/compiler-warning-c4694.md)|'class': a sealed abstract class cannot have a base-class 'base_class'|
 |Compiler warning (level 1) C4695|#pragma execution_character_set: 'character set' is not a supported argument: currently only 'UTF-8' is supported|
 |Compiler warning (level 1) C4696|/ZBvalue1 option out of range; assuming 'value2'|
+| [Compiler warning (level 3) C4698](../../error-messages/compiler-warnings/c4698.md) | '*feature*' is for evaluation purposes only and is subject to change or removal in future updates. |
 |[Compiler warning (level 1 and level 4) C4700](../../error-messages/compiler-warnings/compiler-warning-level-1-and-level-4-c4700.md)|uninitialized local variable 'name' used|
 |[Compiler warning (level 4) C4701](../../error-messages/compiler-warnings/compiler-warning-level-4-c4701.md)|potentially uninitialized local variable 'name' used|
 |[Compiler warning (level 4) C4702](../../error-messages/compiler-warnings/compiler-warning-level-4-c4702.md)|unreachable code|
@@ -145,7 +146,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 4) C4757|subscript is a large unsigned value, did you intend a negative constant?|
 |[Compiler warning (level 4) C4764](compiler-warning-level-4-c4764.md)|Can not align catch objects to greater than 16 bytes|
 |Compiler warning (level 4) C4767|section name '%s' is longer than 8 characters and will be truncated by the linker|
-|Compiler warning (level 3) C4768|__declspec attributes before linkage specification are ignored|
+|[Compiler warning (level 3) C4768](c4768.md)|__declspec attributes before linkage specification are ignored|
 |Compiler warning C4770|partially validated enum '*name*' used as index|
 |Compiler warning C4771|Bounds must be created using a simple pointer; MPX intrinsic function ignored|
 |[Compiler warning (level 1, Error) C4772](../../error-messages/compiler-warnings/compiler-warning-level-1-c4772.md)|#import referenced a type from a missing type library; 'missing_type' used as a placeholder|
@@ -157,7 +158,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler warning (Level 1) C4788](../../error-messages/compiler-warnings/compiler-warning-level-1-c4788.md)|'identifier': identifier was truncated to 'number' characters|
 |[Compiler warning (Level 1) C4789](../../error-messages/compiler-warnings/compiler-warning-level-1-c4789.md)|buffer 'identifier' of size N bytes will be overrun; M bytes will be written starting at offset L|
 |Compiler warning (level 2) C4792|function '%s' declared using sysimport and referenced from native code; import library required to link|
-|[Compiler warning (level 1 and 3) C4793](../../error-messages/compiler-warnings/compiler-warning-level-1-and-3-c4793.md)|'function': function compiled as native:\n\t'reason'|
+|[Compiler warning (level 1 and 3) C4793](../../error-messages/compiler-warnings/compiler-warning-level-1-and-3-c4793.md)|'function': function compiled as native: 'reason'|
 |[Compiler warning (level 1) C4794](compiler-warning-level-1-c4794.md)|segment of thread local storage variable '%s' changed from '%s' to '%s'|
 |[Compiler warning (level 1) C4799](../../error-messages/compiler-warnings/compiler-warning-level-1-c4799.md)|function 'function' has no EMMS instruction|
 

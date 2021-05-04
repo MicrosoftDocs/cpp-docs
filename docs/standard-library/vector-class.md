@@ -32,7 +32,7 @@ Vector reallocation occurs when a member function must increase the sequence con
 
 The [`vector<bool>` class](../standard-library/vector-bool-class.md) is a full specialization of the class template vector for elements of type **`bool`**. It has an allocator for the underlying type used by the specialization.
 
-The [`vector<bool>` reference class](../standard-library/vector-bool-class.md#reference_class) is a nested class whose objects can provide references to elements (single bits) within a vector\<bool> object.
+The [`vector<bool>` reference class](../standard-library/vector-bool-class.md#reference_class) is a nested class whose objects can provide references to elements (single bits) within a `vector<bool>` object.
 
 ## Members
 

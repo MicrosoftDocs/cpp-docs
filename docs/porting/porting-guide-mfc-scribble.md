@@ -31,7 +31,7 @@ When you open an old project file in Visual Studio, Visual Studio offers to conv
 An error occurred notifying us that the Itanium target is not available and won't be converted.
 
 ```Output
-Platform 'Itanium' is missing from this project. All the configurations and their file configuration settings specific to this platform will be ignored. If you want this platform converted, please make sure you have the corresponding platform installed under '%vctargetpath%\platforms\Itanium'.Continue to convert this project without this platform?
+Platform 'Itanium' is missing from this project. All the configurations and their file configuration settings specific to this platform will be ignored. If you want this platform converted, please make sure you have the corresponding platform installed under '%vctargetpath%\platforms\Itanium'. Continue to convert this project without this platform?
 ```
 
 At the time the previous Scribble project was created, Itanium was an important target platform. The Windows platform no longer supports Itanium, so we chose to continue without supporting the Itanium platform.

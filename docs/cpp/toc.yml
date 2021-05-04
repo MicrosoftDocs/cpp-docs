@@ -73,7 +73,7 @@
           href: ../cpp/false-cpp.md
         - name: true
           href: ../cpp/true-cpp.md
-        - name: char, wchar_t, char16_t, char32_t
+        - name: char, wchar_t, char8_t, char16_t, char32_t
           href: ../cpp/char-wchar-t-char16-t-char32-t.md
         - name: __int8, __int16, __int32, __int64
           href: ../cpp/int8-int16-int32-int64.md

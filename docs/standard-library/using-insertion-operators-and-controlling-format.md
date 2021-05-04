@@ -7,7 +7,7 @@ ms.assetid: cdefe986-6548-4cd1-8a67-b431d7d36a1c
 ---
 # Using Insertion Operators and Controlling Format
 
-This topic shows how to control format and how to create insertion operators for your own classes. The insertion (**<<**) operator, which is preprogrammed for all standard C++ data types, sends bytes to an output stream object. Insertion operators work with predefined "manipulators," which are elements that change the default format of integer arguments.
+This topic shows how to control format and how to create insertion operators for your own classes. The insertion (**`<<`**) operator, which is preprogrammed for all standard C++ data types, sends bytes to an output stream object. Insertion operators work with predefined "manipulators," which are elements that change the default format of integer arguments.
 
 You can control the format with the following options:
 
@@ -88,7 +88,7 @@ int main( )
 }
 ```
 
-The `width` member function is declared in \<iostream>. If you use `setw` or any other manipulator with arguments, you must include \<iomanip>. In the output, strings are printed in a field of width 6 and integers in a field of width 10:
+The `width` member function is declared in `<iostream>`. If you use `setw` or any other manipulator with arguments, you must include `<iomanip>`. In the output, strings are printed in a field of width 6 and integers in a field of width 10:
 
 ```Output
    Zoot      1.23
@@ -120,11 +120,11 @@ Al         653.7
 Stan     4358.24
 ```
 
-The left-align flag is set by using the [setiosflags](../standard-library/iomanip-functions.md#setiosflags) manipulator with the `left` enumerator. This enumerator is defined in the [ios](../standard-library/basic-ios-class.md) class, so its reference must include the **ios::** prefix. The [resetiosflags](../standard-library/iomanip-functions.md#resetiosflags) manipulator turns off the left-align flag. Unlike `width` and `setw`, the effect of `setiosflags` and `resetiosflags` is permanent.
+The left-align flag is set by using the [`setiosflags`](../standard-library/iomanip-functions.md#setiosflags) manipulator with the `left` enumerator. This enumerator is defined in the [`ios`](../standard-library/basic-ios-class.md) class, so its reference must include the **`ios::`** prefix. The [`resetiosflags`](../standard-library/iomanip-functions.md#resetiosflags) manipulator turns off the left-align flag. Unlike `width` and `setw`, the effect of `setiosflags` and `resetiosflags` is permanent.
 
 ## <a name="vclrfprecisionanchor5"></a> Precision
 
-The default value for floating-point precision is six. For example, the number 3466.9768 prints as 3466.98. To change the way this value prints, use the [setprecision](../standard-library/iomanip-functions.md#setprecision) manipulator. The manipulator has two flags: [fixed](../standard-library/ios-functions.md#fixed) and [scientific](../standard-library/ios-functions.md#scientific). If [fixed](../standard-library/ios-functions.md#fixed) is set, the number prints as 3466.976800. If `scientific` is set, it prints as 3.4669773+003.
+The default value for floating-point precision is six. For example, the number 3466.9768 prints as 3466.98. To change the way this value prints, use the [`setprecision`](../standard-library/iomanip-functions.md#setprecision) manipulator. The manipulator has two flags: [`fixed`](../standard-library/ios-functions.md#fixed) and [`scientific`](../standard-library/ios-functions.md#scientific). If [`fixed`](../standard-library/ios-functions.md#fixed) is set, the number prints as 3466.976800. If `scientific` is set, it prints as 3.4669773+003.
 
 To display the floating-point numbers shown in [Alignment](#vclrfalignmentanchor4) with one significant digit, replace the **`for`** loop as follows:
 
@@ -177,11 +177,11 @@ Again, the program prints one digit after the decimal point. If either `ios::fix
 
 ## <a name="vclrfradixanchor6"></a> Radix
 
-The `dec`, `oct`, and `hex` manipulators set the default radix for input and output. For example, if you insert the `hex` manipulator into the output stream, the object correctly translates the internal data representation of integers into a hexadecimal output format. The numbers are displayed with digits a through f in lower case if the [uppercase](../standard-library/ios-functions.md#uppercase) flag is clear (the default); otherwise, they are displayed in upper case. The default radix is `dec` (decimal).
+The `dec`, `oct`, and `hex` manipulators set the default radix for input and output. For example, if you insert the `hex` manipulator into the output stream, the object correctly translates the internal data representation of integers into a hexadecimal output format. The numbers are displayed with digits a through f in lower case if the [`uppercase`](../standard-library/ios-functions.md#uppercase) flag is clear (the default); otherwise, they are displayed in upper case. The default radix is `dec` (decimal).
 
 ## Quoted strings (C++14)
 
-When you insert a string into a stream, you can easily retrieve the same string back by calling the stringstream::str() member function. However, if you want to use the extraction operator to insert the stream into a new string at a later point, you may get an unexpected result because the >> operator by default will stop when it encounters the first whitespace character.
+When you insert a string into a stream, you can easily retrieve the same string back by calling the `stringstream::str()` member function. However, if you want to use the extraction operator to insert the stream into a new string at a later point, you may get an unexpected result because the `>>` operator by default will stop when it encounters the first whitespace character.
 
 ```cpp
 std::stringstream ss;
@@ -195,13 +195,13 @@ std::cout << inserted;     //  This is a sentence.
 std::cout << extracted;    //  This
 ```
 
-This behavior can be overcome manually, but to make string round-tripping more convenient, C++14 adds the `std::quoted` stream manipulator in \<iomanip>. Upon insertion, `quoted()` surrounds the string with a delimiter (double quote ' " ' by default) and upon extraction manipulates the stream to extract all characters until the final delimiter is encountered. Any embedded quotes are escaped with an escape character ('\\\\' by default).
+This behavior can be overcome manually, but to make string round-tripping more convenient, C++14 adds the `std::quoted` stream manipulator in `<iomanip>`. Upon insertion, `quoted()` surrounds the string with a delimiter (double quote ' " ' by default) and upon extraction manipulates the stream to extract all characters until the final delimiter is encountered. Any embedded quotes are escaped with an escape character ('\\\\' by default).
 
-The delimiters are present only in the stream object; they are not present in the extracted string but they are present in the string returned by [basic_stringstream::str](../standard-library/basic-stringstream-class.md#str).
+The delimiters are present only in the stream object; they are not present in the extracted string but they are present in the string returned by [`basic_stringstream::str`](../standard-library/basic-stringstream-class.md#str).
 
-The whitespace behavior of the insertion and extraction operations is independent of how a string is represented in code, so the quoted operator is useful regardless of whether the input string is a raw string literal or a regular string. The input string, whatever its format, can have embedded quotes, line breaks, tabs, and so on and all these will be preserved by the quoted() manipulator.
+The whitespace behavior of the insertion and extraction operations is independent of how a string is represented in code, so the quoted operator is useful regardless of whether the input string is a raw string literal or a regular string. The input string, whatever its format, can have embedded quotes, line breaks, tabs, and so on and all these will be preserved by the `quoted()` manipulator.
 
-For more information and full code examples, see [quoted](../standard-library/iomanip-functions.md#quoted).
+For more information and full code examples, see [`quoted`](../standard-library/iomanip-functions.md#quoted).
 
 ## See also
 

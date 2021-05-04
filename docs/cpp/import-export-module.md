@@ -105,7 +105,7 @@ In Microsoft C++, the tokens **import** and **module** are always identifiers an
 ### Example
 
 ```cpp
-#define foo(…) __VA_ARGS__
+#define foo(...) __VA_ARGS__
 foo(
 import // Always an identifier, never a keyword
 )
