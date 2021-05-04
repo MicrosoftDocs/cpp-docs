@@ -104,7 +104,6 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |[C4746](../error-messages/compiler-warnings/compiler-warning-c4746.md)|volatile access of '*expression*' is subject to /volatile:\<iso&#124;ms> setting; consider using __iso_volatile_load/store intrinsic functions|
 |C4749 (level 4)|conditionally supported: offsetof applied to non-standard-layout type '*type*'|
 |C4767 (level 4)|section name '*symbol*' is longer than 8 characters and will be truncated by the linker|
-|C4768 (level 3)|__declspec attributes before linkage specification are ignored|
 |C4774 (level 4)|'*string*' : format string expected in argument *number* is not a string literal|
 |C4777 (level 4)|'*function*' : format string '*string*' requires an argument of type '*type1*', but variadic argument *number* has type '*type2*'|
 |C4786 (level 3)|'*symbol*' : object name was truncated to '*number*' characters in the debug information|
@@ -165,20 +164,26 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 
 ## Warnings off by default in earlier versions
 
+This warning was off by default in Visual Studio 2015 version 15.3, and enabled in Visual Studio 2015 version 15.5:
+
+| Warning | Message |
+|--|--|
+| [C4768](../error-messages/compiler-warnings/c4768.md) | `__declspec` attributes before linkage specification are ignored |
+
 These warnings were off by default in versions of the compiler before Visual Studio 2015:
 
-|Warning|Message|
-|-|-|
-|[C4302](../error-messages/compiler-warnings/compiler-warning-level-2-c4302.md) (level 2)|'*conversion*': truncation from '*type1*' to '*type2*'|
-|[C4311](../error-messages/compiler-warnings/compiler-warning-level-1-c4311.md) (level 1)|'*variable*' : pointer truncation from '*type*' to '*type*'|
-|[C4312](../error-messages/compiler-warnings/compiler-warning-level-1-c4312.md) (level 1)|'*operation*' : conversion from '*type1*' to '*type2*' of greater size|
-|[C4319](../error-messages/compiler-warnings/compiler-warning-level-1-c4319.md) (level 1)|'*operator*': zero extending '*type1*' to '*type2*' of greater size|
+| Warning | Message |
+|--|--|
+| [C4302](../error-messages/compiler-warnings/compiler-warning-level-2-c4302.md) (level 2) | '*conversion*': truncation from '*type1*' to '*type2*' |
+| [C4311](../error-messages/compiler-warnings/compiler-warning-level-1-c4311.md) (level 1) | '*variable*' : pointer truncation from '*type*' to '*type*' |
+| [C4312](../error-messages/compiler-warnings/compiler-warning-level-1-c4312.md) (level 1) | '*operation*' : conversion from '*type1*' to '*type2*' of greater size |
+| [C4319](../error-messages/compiler-warnings/compiler-warning-level-1-c4319.md) (level 1) | '*operator*': zero extending '*type1*' to '*type2*' of greater size |
 
 This warning was off by default in versions of the compiler before Visual Studio 2012:
 
-|Warning|Message|
-|-|-|
-|[C4431](../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md) (level 4)|missing type specifier - int assumed. Note: C no longer supports default-int|
+| Warning | Message |
+|--|--|
+| [C4431](../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md) (level 4) | missing type specifier - int assumed. Note: C no longer supports default-int |
 
 ## See also
 
