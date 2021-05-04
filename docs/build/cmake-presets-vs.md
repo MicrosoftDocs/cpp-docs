@@ -145,7 +145,7 @@ If there are no Build Presets associated with the active Configure Preset, Visua
 
 Visual Studio automatically tries to configure the project when it detects that the CMake cache is out of date. To manually invoke the configuration, select **Project** > **Configure \<project-name>** from the main menu. It's the same as running `cmake --preset <configurePreset>` from the command line, where `<configurePreset>` is the name of the active Configure Preset. 
 
-To disable automatic cache generation, see [Automatic configuration and cache notifications](#automatic-configuration-and-cache-notifications).
+To disable automatic cache generation, see [Automatic configuration and cache notifications](#modify-automatic-configuration-and-cache-notifications).
 
 ### Build
 
