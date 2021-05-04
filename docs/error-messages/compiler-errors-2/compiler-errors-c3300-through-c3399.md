@@ -63,7 +63,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C3344|you cannot define an explicit specialization nor a partial specialization of '*symbol*'|
 |[Compiler error C3345](compiler-error-c3345.md)|'*name*': invalid identifier for module name|
 |Compiler error C3346|exported declaration at non-namespace scope|
-|[Compiler error C3347](compiler-error-c3347.md)|'*argument*': required argument is not specified in attribute *asttribute*|
+|[Compiler error C3347](compiler-error-c3347.md)|'*argument*': required argument is not specified in attribute *attribute-name*|
 |Compiler error C3348|exported templates are not part of the current C++ standards|
 |Compiler error C3349|'*class*::*member*': multicast attribute has already been implemented by provider *provider*|
 |[Compiler error C3350](compiler-error-c3350.md)|' *function*': a delegate constructor expects *number* argument(s)|
@@ -120,4 +120,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

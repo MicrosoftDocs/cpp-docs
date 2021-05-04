@@ -1,1070 +1,1085 @@
 ---
 title: "Microsoft Macro Assembler BNF Grammar"
 description: "BNF description of MASM for x64."
-ms.date: "12/17/2019"
+ms.date: 04/15/2021
 helpviewer_keywords: ["MASM (Microsoft Macro Assembler), BNF reference"]
 ---
 # Microsoft Macro Assembler BNF Grammar
 
 This page contains a BNF description of the MASM grammar. It's provided as a supplement to the reference and isn't guaranteed to be complete. Consult the reference for full information on keywords, parameters, operations, and so on.
 
-To illustrate the use of the BNF, the following diagram shows the definition of the TYPEDEF directive, starting with the nonterminal *`typedefDir`*.
+To illustrate the use of the BNF, the following diagram shows the definition of the **`TYPEDEF`** directive, starting with the nonterminal *`typedefDir`*.
 
-![MASM BNF Example](media/bnf.png)
+![A chart showing the hierarchy of terminals and nonterminals that produce a typedefDir.](media/bnf.png)
 
 The entries under each horizontal brace are terminals, such as **`NEAR16`**, **`NEAR32`**, **`FAR16`**, and **`FAR32`**. Or, they're nonterminals such as *`qualifier`*, *`qualifiedType`*, *`distance`*, and *`protoSpec`* that can be further defined. Each italicized nonterminal in the *`typedefDir`* definition is also an entry in the BNF. Three vertical dots indicate a branching definition for a nonterminal that, for the sake of simplicity, this figure doesn't illustrate.
 
-The BNF grammar allows recursive definitions. For example, the grammar uses qualifiedType as a possible definition for qualifiedType, which is also a component of the definition for qualifier. The "|" symbol specifies a choice between alternate expressions, for example *`endOfLine`* | *`comment`*. Double braces specify an optional parameter, for example ⟦ *`macroParmList`* ⟧. The brackets don't actually appear in the source code.
+The BNF grammar allows recursive definitions. For example, the grammar uses *`qualifiedType`* as a possible definition for *`qualifiedType`*, which is also a component of the definition for *`qualifier`*. The "&vert;" symbol specifies a choice between alternate expressions, for example *`endOfLine`* &vert; *`comment`*. Double braces specify an optional parameter, for example ⟦ *`macroParmList`* ⟧. The brackets don't actually appear in the source code.
 
 ## MASM Nonterminals
 
 *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`endOfLine`* | *`comment`*
+&emsp; *`endOfLine`* &vert; *`comment`*
 
 *`=Dir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* = *`immExpr`* *`;;`*
+&emsp; *`id`* = *`immExpr`* *`;;`*
 
 *`addOp`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`+`** | **`-`**
+&emsp; **`+`** &vert; **`-`**
 
 *`aExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`term`* | *`aExpr`* **`&&`** *`term`*
+&emsp; *`term`* &vert; *`aExpr`* **`&&`** *`term`*
 
 *`altId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
+
+*`alpha`*\
+&emsp; Any upper or lowercase letter (A-Z) or one of these four characters: `@ _ $ ?`
 
 *`arbitraryText`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`charList`*
+&emsp; *`charList`*
 
 *`asmInstruction`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`mnemonic`* ⟦ *`exprList`* ⟧
+&emsp; *`mnemonic`* ⟦ *`exprList`* ⟧
 
 *`assumeDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ASSUME`** *`assumeList`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ASSUME NOTHING`** *`;;`*
+&emsp; **`ASSUME`** *`assumeList`* *`;;`*\
+&emsp; &vert; **`ASSUME NOTHING`** *`;;`*
 
 *`assumeList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`assumeRegister`* | *`assumeList`* **`,`** *`assumeRegister`*\
+&emsp; *`assumeRegister`* &vert; *`assumeList`* **`,`** *`assumeRegister`*
 
 *`assumeReg`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`register`* **`:`** *`assumeVal`*
+&emsp; *`register`* **`:`** *`assumeVal`*
 
 *`assumeRegister`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`assumeSegReg`* | *`assumeReg`*
+&emsp; *`assumeSegReg`* &vert; *`assumeReg`*
 
 *`assumeSegReg`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`segmentRegister`* **`:`** *`assumeSegVal`*
+&emsp; *`segmentRegister`* **`:`** *`assumeSegVal`*
 
 *`assumeSegVal`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`frameExpr`* | **`NOTHING`** | **`ERROR`**
+&emsp; *`frameExpr`* &vert; **`NOTHING`** &vert; **`ERROR`**
 
 *`assumeVal`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`qualifiedType`* | **`NOTHING`** | **`ERROR`**
+&emsp; *`qualifiedType`* &vert; **`NOTHING`** &vert; **`ERROR`**
 
 *`bcdConst`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`sign`* ⟧ *`decNumber`*
+&emsp; ⟦ *`sign`* ⟧ *`decNumber`*
 
 *`binaryOp`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`==`** | **`!=`** | **`>=`** | **`<=`** | **`>`** | **`<`** | **`&`**
+&emsp; **`==`** &vert; **`!=`** &vert; **`>=`** &vert; **`<=`** &vert; **`>`** &vert; **`<`** &vert; **`&`**
 
 *`bitDef`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`bitFieldId`* **`:`** *`bitFieldSize`* ⟦ **`=`** *`constExpr`* ⟧
+&emsp; *`bitFieldId`* **`:`** *`bitFieldSize`* ⟦ **`=`** *`constExpr`* ⟧
 
 *`bitDefList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`bitDef`* | *`bitDefList`* **`,`** ⟦ *`;;`* ⟧ *`bitDef`*
+&emsp; *`bitDef`* &vert; *`bitDefList`* **`,`** ⟦ *`;;`* ⟧ *`bitDef`*
 
 *`bitFieldId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
 
 *`bitFieldSize`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`constExpr`*
+&emsp; *`constExpr`*
 
 *`blockStatements`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.CONTINUE`** **`.IF`** *`cExpr`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.BREAK`** ⟦ **`.IF`** *`cExpr`* ⟧
+&emsp; *`directiveList`*\
+&emsp; &vert; **`.CONTINUE`** ⟦ **`.IF`** *`cExpr`* ⟧\
+&emsp; &vert; **`.BREAK`** ⟦ **`.IF`** *`cExpr`* ⟧
 
 *`bool`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`TRUE`** | **`FALSE`**
+&emsp; **`TRUE`** &vert; **`FALSE`**
 
 *`byteRegister`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`AL`** | **`AH`** | **`CL`** | **`CH`** | **`DL`** | **`DH`** | **`BL`** | **`BH`** | **`R8B`** | **`R9B`** | **`R10B`** | **`R11B`** | **`R12B`** | **`R13B`** | **`R14B`** | **`R15B`**
+&emsp; **`AL`** &vert; **`AH`** &vert; **`CL`** &vert; **`CH`** &vert; **`DL`** &vert; **`DH`** &vert; **`BL`** &vert; **`BH`** &vert; **`R8B`** &vert; **`R9B`** &vert; **`R10B`** &vert; **`R11B`** &vert; **`R12B`** &vert; **`R13B`** &vert; **`R14B`** &vert; **`R15B`**
 
 *`cExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`aExpr`* | *`cExpr`* **`||`** *`aExpr`*
+&emsp; *`aExpr`* &vert; *`cExpr`* **`||`** *`aExpr`*
 
 *`character`*\
-&nbsp;&nbsp;&nbsp;&nbsp;Any character with ordinal in the range 0–255 except linefeed (10).
+&emsp; Any character with ordinal in the range 0–255 except linefeed (10).
 
 *`charList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`character`* | *`charList`* *`character`*
+&emsp; *`character`* &vert; *`charList`* *`character`*
 
 *`className`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`string`*
+&emsp; *`string`*
 
 *`commDecl`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`nearfar`* ⟧ ⟦ *`langType`* ⟧ *`id`* **`:`** *`commType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`:`** *`constExpr`* ⟧
+&emsp; ⟦ *`nearfar`* ⟧ ⟦ *`langType`* ⟧ *`id`* **`:`** *`commType`*\
+&emsp; ⟦ **`:`** *`constExpr`* ⟧
 
 *`commDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`COMM`**\
-&nbsp;&nbsp;&nbsp;&nbsp;*`commList`* *`;;`*
+&emsp; **`COMM`**\
+&emsp; *`commList`* *`;;`*
 
 *`comment`*\
-&nbsp;&nbsp;&nbsp;&nbsp;; *`text`* *`;;`*
+&emsp; **`;`** *`text`* *`;;`*
 
 *`commentDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`COMMENT`** *`delimiter`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`text`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`text`* *`delimiter`* *`text`* *`;;`*
+&emsp; **`COMMENT`** *`delimiter`*\
+&emsp; *`text`*\
+&emsp; *`text`* *`delimiter`* *`text`* *`;;`*
 
 *`commList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`commDecl`* | *`commList`* **`,`** *`commDecl`*
+&emsp; *`commDecl`* &vert; *`commList`* **`,`** *`commDecl`*
 
 *`commType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`type`* | *`constExpr`*
+&emsp; *`type`* &vert; *`constExpr`*
 
 *`constant`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`digits`* ⟦ *`radixOverride`* ⟧
+&emsp; *`digits`* ⟦ *`radixOverride`* ⟧
 
 *`constExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`expr`*
+&emsp; *`expr`*
 
 *`contextDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`PUSHCONTEXT`** *`contextItemList`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`POPCONTEXT`** *`contextItemList`* *`;;`*
+&emsp; **`PUSHCONTEXT`** *`contextItemList`* *`;;`*\
+&emsp; &vert; **`POPCONTEXT`** *`contextItemList`* *`;;`*
 
 *`contextItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ASSUMES`** | **`RADIX`** | **`LISTING`** | **`CPU`** | **`ALL`**
+&emsp; **`ASSUMES`** &vert; **`RADIX`** &vert; **`LISTING`** &vert; **`CPU`** &vert; **`ALL`**
 
 *`contextItemList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`contextItem`* | *`contextItemList`* **`,`** *`contextItem`*
+&emsp; *`contextItem`* &vert; *`contextItemList`* **`,`** *`contextItem`*
 
 *`controlBlock`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`whileBlock`* | *`repeatBlock`*
+&emsp; *`whileBlock`* &vert; *`repeatBlock`*
 
 *`controlDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`controlIf`* | *`controlBlock`*
+&emsp; *`controlIf`* &vert; *`controlBlock`*
 
 *`controlElseif`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.ELSEIF`**
-&nbsp;&nbsp;&nbsp;&nbsp;*`cExpr`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`* \
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`controlElseif`* ⟧
+&emsp; **`.ELSEIF`** *`cExpr`* *`;;`*\
+&emsp; *`directiveList`* \
+&emsp; ⟦ *`controlElseif`* ⟧
 
 *`controlIf`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.IF`**
-&nbsp;&nbsp;&nbsp;&nbsp;*`cExpr`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`controlElseif`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`.ELSE`** *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;[*`directiveList`*⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.ENDIF`** *`;;`*
+&emsp; **`.IF`** *`cExpr`* *`;;`*\
+&emsp; *`directiveList`*\
+&emsp; ⟦ *`controlElseif`* ⟧\
+&emsp; ⟦ **`.ELSE`** *`;;`*\
+&emsp; *`directiveList`*⟧\
+&emsp; **`.ENDIF`** *`;;`*
 
 *`coprocessor`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.8087`** | **`.287`** | **`.387`** | **`.NO87`**
+&emsp; **`.8087`** &vert; **`.287`** &vert; **`.387`** &vert; **`.NO87`**
 
 *`crefDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`crefOption`* *`;;`*
+&emsp; *`crefOption`* *`;;`*
 
 *`crefOption`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.CREF`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.XCREF`**  ⟦ *`idList`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.NOCREF`** ⟦ *`idList`* ⟧
+&emsp; **`.CREF`**\
+&emsp; &vert; **`.XCREF`** ⟦ *`idList`* ⟧\
+&emsp; &vert; **`.NOCREF`** ⟦ *`idList`* ⟧
 
 *`cxzExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`expr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`!`** *`expr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`expr`* **`==`** *`expr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`expr`* **`!=`** *`expr`*
+&emsp; *`expr`*\
+&emsp; &vert; **`!`** *`expr`*\
+&emsp; &vert; *`expr`* **`==`** *`expr`*\
+&emsp; &vert; *`expr`* **`!=`** *`expr`*
 
 *`dataDecl`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`DB`** | **`DW`** | **`DD`** | **`DF`** | **`DQ`** | **`DT`** | *`dataType`* | *`typeId`*
+&emsp; **`DB`** &vert; **`DW`** &vert; **`DD`** &vert; **`DF`** &vert; **`DQ`** &vert; **`DT`** &vert; *`dataType`* &vert; *`typeId`*
 
 *`dataDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`id`* ⟧ *`dataItem`* *`;;`*
+&emsp; ⟦ *`id`* ⟧ *`dataItem`* *`;;`*
 
 *`dataItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`dataDecl`* *`scalarInstList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`structTag`* *`structInstList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`typeId`* *`structInstList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`unionTag`* *`structInstList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`recordTag`* *`recordInstList`*
+&emsp; *`dataDecl`* *`scalarInstList`*\
+&emsp; &vert; *`structTag`* *`structInstList`*\
+&emsp; &vert; *`typeId`* *`structInstList`*\
+&emsp; &vert; *`unionTag`* *`structInstList`*\
+&emsp; &vert; *`recordTag`* *`recordInstList`*
 
 *`dataType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`BYTE`** | **`SBYTE`** | **`WORD`** | **`SWORD`** | **`DWORD`** | **`SDWORD`** | **`FWORD`** | **`QWORD`** | **`SQWORD`** | **`TBYTE`** | **`OWORD`** | **`REAL4`** | **`REAL8`** | **`REAL10`** | **`MMWORD`** | **`XMMWORD`** | **`YMMWORD`**
+&emsp; **`BYTE`** &vert; **`SBYTE`** &vert; **`WORD`** &vert; **`SWORD`** &vert; **`DWORD`** &vert; **`SDWORD`** &vert; **`FWORD`** &vert; **`QWORD`** &vert; **`SQWORD`** &vert; **`TBYTE`** &vert; **`OWORD`** &vert; **`REAL4`** &vert; **`REAL8`** &vert; **`REAL10`** &vert; **`MMWORD`** &vert; **`XMMWORD`** &vert; **`YMMWORD`**
 
 *`decdigit`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`0`** | **`1`** | **`2`** | **`3`** | **`4`** | **`5`** | **`6`** | **`7`** | **`8`** | **`9`**
+&emsp; **`0`** &vert; **`1`** &vert; **`2`** &vert; **`3`** &vert; **`4`** &vert; **`5`** &vert; **`6`** &vert; **`7`** &vert; **`8`** &vert; **`9`**
 
 *`decNumber`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`decdigit`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`decNumber`* *`decdigit`*
+&emsp; *`decdigit`*\
+&emsp; &vert; *`decNumber`* *`decdigit`*
 
 *`delimiter`*\
-&nbsp;&nbsp;&nbsp;&nbsp;Any character except *`whiteSpaceCharacter`*
+&emsp; Any character except *`whiteSpaceCharacter`*
 
 *`digits`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`decdigit`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`digits`* *`decdigit`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`digits`* *`hexdigit`*
+&emsp; *`decdigit`*\
+&emsp; &vert; *`digits`* *`decdigit`*\
+&emsp; &vert; *`digits`* *`hexdigit`*
 
 *`directive`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`generalDir`* | *`segmentDef`*
+&emsp; *`generalDir`* &vert; *`segmentDef`*
 
 *`directiveList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`directive`* | *`directiveList`* *`directive`*
+&emsp; *`directive`* &vert; *`directiveList`* *`directive`*
 
 *`distance`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`nearfar`* | **`NEAR16`** | **`NEAR32`** | **`FAR16`** | **`FAR32`**
+&emsp; *`nearfar`* &vert; **`NEAR16`** &vert; **`NEAR32`** &vert; **`FAR16`** &vert; **`FAR32`**
 
 *`e01`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`e01`* *`orOp`* *`e02`* | *`e02`*
+&emsp; *`e01`* *`orOp`* *`e02`* &vert; *`e02`*
 
 *`e02`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`e02`* **`AND`** *`e03`* | *`e03`*
+&emsp; *`e02`* **`AND`** *`e03`* &vert; *`e03`*
 
 *`e03`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`NOT`** *`e04`* | *`e04`*
+&emsp; **`NOT`** *`e04`* &vert; *`e04`*
 
 *`e04`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`e04`* *`relOp`* *`e05`* | *`e05`*
+&emsp; *`e04`* *`relOp`* *`e05`* &vert; *`e05`*
 
 *`e05`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`e05`* *`addOp`* *`e06`* | *`e06`*
+&emsp; *`e05`* *`addOp`* *`e06`* &vert; *`e06`*
 
 *`e06`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`e06`* *`mulOp`* *`e07`* | *`e06`* *`shiftOp`* *`e07`* | *`e07`*
+&emsp; *`e06`* *`mulOp`* *`e07`* &vert; *`e06`* *`shiftOp`* *`e07`* &vert; *`e07`*
 
 *`e07`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`e07`* *`addOp`* *`e08`* | *`e08`*
+&emsp; *`e07`* *`addOp`* *`e08`* &vert; *`e08`*
 
 *`e08`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`HIGH`** *`e09`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`LOW`** *`e09`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`HIGHWORD`** *`e09`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`LOWWORD`** *`e09`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`e09`*
+&emsp; **`HIGH`** *`e09`*\
+&emsp; &vert; **`LOW`** *`e09`*\
+&emsp; &vert; **`HIGHWORD`** *`e09`*\
+&emsp; &vert; **`LOWWORD`** *`e09`*\
+&emsp; &vert; *`e09`*
 
 *`e09`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`OFFSET`** *`e10`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`SEG`** *`e10`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`LROFFSET`** *`e10`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`TYPE`** *`e10`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`THIS`** *`e10`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`e09`* **`PTR`** *`e10`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`e09`* **`:`** *`e10`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`e10`*
+&emsp; **`OFFSET`** *`e10`*\
+&emsp; &vert; **`SEG`** *`e10`*\
+&emsp; &vert; **`LROFFSET`** *`e10`*\
+&emsp; &vert; **`TYPE`** *`e10`*\
+&emsp; &vert; **`THIS`** *`e10`*\
+&emsp; &vert; *`e09`* **`PTR`** *`e10`*\
+&emsp; &vert; *`e09`* **`:`** *`e10`*\
+&emsp; &vert; *`e10`*
 
 *`e10`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`e10`* **`.`** *`e11`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`e10`* ⟦ *`expr`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`e11`*
+&emsp; *`e10`* **`.`** *`e11`*\
+&emsp; &vert; *`e10`* ⟦ *`expr`* ⟧\
+&emsp; &vert; *`e11`*
 
 *`e11`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`(`** *`expr`* **`)`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| ⟦ *`expr`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`WIDTH`** *`id`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`MASK`** *`id`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`SIZE`** *`sizeArg`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`SIZEOF`** *`sizeArg`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`LENGTH`** *`id`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`LENGTHOF`** *`id`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`recordConst`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`string`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`constant`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`type`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`id`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`$`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`segmentRegister`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`register`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ST`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ST`** **`(`** *`expr`* **`)`**
+&emsp; **`(`** *`expr`* **`)`**\
+&emsp; &vert; ⟦ *`expr`* ⟧\
+&emsp; &vert; **`WIDTH`** *`id`*\
+&emsp; &vert; **`MASK`** *`id`*\
+&emsp; &vert; **`SIZE`** *`sizeArg`*\
+&emsp; &vert; **`SIZEOF`** *`sizeArg`*\
+&emsp; &vert; **`LENGTH`** *`id`*\
+&emsp; &vert; **`LENGTHOF`** *`id`*\
+&emsp; &vert; *`recordConst`*\
+&emsp; &vert; *`string`*\
+&emsp; &vert; *`constant`*\
+&emsp; &vert; *`type`*\
+&emsp; &vert; *`id`*\
+&emsp; &vert; **`$`**\
+&emsp; &vert; *`segmentRegister`*\
+&emsp; &vert; *`register`*\
+&emsp; &vert; **`ST`**\
+&emsp; &vert; **`ST`** **`(`** *`expr`* **`)`**
 
 *`echoDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ECHO`**\
-&nbsp;&nbsp;&nbsp;&nbsp;*`arbitraryText`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`%OUT`** *`arbitraryText`* *`;;`*
+&emsp; **`ECHO`** *`arbitraryText`* *`;;`*\
+&emsp; **`%OUT`** *`arbitraryText`* *`;;`*
 
 *`elseifBlock`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`elseifStatement`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`elseifBlock`* ⟧
+&emsp; *`elseifStatement`* *`;;`*\
+&emsp; *`directiveList`*\
+&emsp; ⟦ *`elseifBlock`* ⟧
 
 *`elseifStatement`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ELSEIF`** *`constExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFE`** *`constExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFB`** *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFNB`** *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFDEF`** *`id`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFNDEF`** *`id`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFDIF`** *`textItem`* **`,`** *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFDIFI`** *`textItem`* **`,`** *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFIDN`** *`textItem`* **`,`** *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIFIDNI`** *`textItem`* **`,`** *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIF1`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`ELSEIF2`**
+&emsp; **`ELSEIF`** *`constExpr`*\
+&emsp; &vert; **`ELSEIFE`** *`constExpr`*\
+&emsp; &vert; **`ELSEIFB`** *`textItem`*\
+&emsp; &vert; **`ELSEIFNB`** *`textItem`*\
+&emsp; &vert; **`ELSEIFDEF`** *`id`*\
+&emsp; &vert; **`ELSEIFNDEF`** *`id`*\
+&emsp; &vert; **`ELSEIFDIF`** *`textItem`* **`,`** *`textItem`*\
+&emsp; &vert; **`ELSEIFDIFI`** *`textItem`* **`,`** *`textItem`*\
+&emsp; &vert; **`ELSEIFIDN`** *`textItem`* **`,`** *`textItem`*\
+&emsp; &vert; **`ELSEIFIDNI`** *`textItem`* **`,`** *`textItem`*\
+&emsp; &vert; **`ELSEIF1`**\
+&emsp; &vert; **`ELSEIF2`**
 
 *`endDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`END`** ⟦ *`immExpr`* ⟧ *`;;`*
+&emsp; **`END`** ⟦ *`immExpr`* ⟧ *`;;`*
 
 *`endpDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`procId`* **`ENDP`** *`;;`*
+&emsp; *`procId`* **`ENDP`** *`;;`*
 
 *`endsDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* **`ENDS`** *`;;`*
+&emsp; *`id`* **`ENDS`** *`;;`*
 
 *`equDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`textMacroId`* **`EQU`** *`equType`* *`;;`*
+&emsp; *`textMacroId`* **`EQU`** *`equType`* *`;;`*
 
 *`equType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`immExpr`* | *`textLiteral`*
+&emsp; *`immExpr`* &vert; *`textLiteral`*
 
 *`errorDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`errorOpt`* *`;;`*
+&emsp; *`errorOpt`* *`;;`*
 
 *`errorOpt`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.ERR`** ⟦ *`textItem`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRE`** *`constExpr`* ⟦ *`optText`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRNZ`** *`constExpr`* ⟦ *`optText`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRB`** *`textItem`* ⟦ *`optText`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRNB`** *`textItem`* ⟦ *`optText`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRDEF`** *`id`* ⟦ *`optText`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRNDEF`** *`id`* ⟦ *`optText`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRDIF`** *`textItem`* **`,`** *`textItem`* ⟦ *`optText`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRDIFI`** *`textItem`* **`,`** *`textItem`* ⟦ *`optText`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRIDN`** *`textItem`* **`,`** *`textItem`* ⟦ *`optText`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERRIDNI`** *`textItem`* **`,`** *`textItem`* ⟦ *`optText`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERR1`** ⟦ *`textItem`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.ERR2`** ⟦ *`textItem`* ⟧
+&emsp; **`.ERR`** ⟦ *`textItem`* ⟧\
+&emsp; &vert; **`.ERRE`** *`constExpr`* ⟦ *`optText`* ⟧\
+&emsp; &vert; **`.ERRNZ`** *`constExpr`* ⟦ *`optText`* ⟧\
+&emsp; &vert; **`.ERRB`** *`textItem`* ⟦ *`optText`* ⟧\
+&emsp; &vert; **`.ERRNB`** *`textItem`* ⟦ *`optText`* ⟧\
+&emsp; &vert; **`.ERRDEF`** *`id`* ⟦ *`optText`* ⟧\
+&emsp; &vert; **`.ERRNDEF`** *`id`* ⟦ *`optText`* ⟧\
+&emsp; &vert; **`.ERRDIF`** *`textItem`* **`,`** *`textItem`* ⟦ *`optText`* ⟧\
+&emsp; &vert; **`.ERRDIFI`** *`textItem`* **`,`** *`textItem`* ⟦ *`optText`* ⟧\
+&emsp; &vert; **`.ERRIDN`** *`textItem`* **`,`** *`textItem`* ⟦ *`optText`* ⟧\
+&emsp; &vert; **`.ERRIDNI`** *`textItem`* **`,`** *`textItem`* ⟦ *`optText`* ⟧\
+&emsp; &vert; **`.ERR1`** ⟦ *`textItem`* ⟧\
+&emsp; &vert; **`.ERR2`** ⟦ *`textItem`* ⟧
 
 *`exitDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.EXIT`**
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`expr`* ⟧ *`;;`*
+&emsp; **`.EXIT`** ⟦ *`expr`* ⟧ *`;;`*
 
 *`exitmDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;: **`EXITM`** | **`EXITM`** *`textItem`*
+&emsp; **`:`** **`EXITM`** &vert; **`EXITM`** *`textItem`*
 
 *`exponent`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`E`** ⟦ *`sign`* ⟧ *`decNumber`*
+&emsp; **`E`** ⟦ *`sign`* ⟧ *`decNumber`*
 
 *`expr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`SHORT`** *`e05`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.TYPE`** *`e01`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`OPATTR`** *`e01`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`e01`*
+&emsp; **`SHORT`** *`e05`*\
+&emsp; &vert; **`.TYPE`** *`e01`*\
+&emsp; &vert; **`OPATTR`** *`e01`*\
+&emsp; &vert; *`e01`*
 
 *`exprList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`expr`* | *`exprList`* **`,`** *`expr`*
+&emsp; *`expr`* &vert; *`exprList`* **`,`** *`expr`*
 
 *`externDef`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`langType`* ⟧ *`id`* ⟦ **`(`** *`altId`* **`)`** ⟧ **`:`** *`externType`*
+&emsp; ⟦ *`langType`* ⟧ *`id`* ⟦ **`(`** *`altId`* **`)`** ⟧ **`:`** *`externType`*
 
 *`externDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`externKey`* *`externList`* *`;;`*
+&emsp; *`externKey`* *`externList`* *`;;`*
 
 *`externKey`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`EXTRN`** | **`EXTERN`** | **`EXTERNDEF`**
+&emsp; **`EXTRN`** &vert; **`EXTERN`** &vert; **`EXTERNDEF`**
 
 *`externList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`externDef`* | *`externList`* **`,`** ⟦ *`;;`* ⟧ *`externDef`*
+&emsp; *`externDef`* &vert; *`externList`* **`,`** ⟦ *`;;`* ⟧ *`externDef`*
 
 *`externType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ABS`** | *`qualifiedType`*
+&emsp; **`ABS`** &vert; *`qualifiedType`*
 
 *`fieldAlign`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`constExpr`*
+&emsp; *`constExpr`*
 
 *`fieldInit`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`initValue`* ⟧ | *`structInstance`*
+&emsp; ⟦ *`initValue`* ⟧ &vert; *`structInstance`*
 
 *`fieldInitList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`fieldInit`* | *`fieldInitList`* **`,`** ⟦ *`;;`* ⟧ *`fieldInit`*
+&emsp; *`fieldInit`* &vert; *`fieldInitList`* **`,`** ⟦ *`;;`* ⟧ *`fieldInit`*
 
 *`fileChar`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`delimiter`*
+&emsp; *`delimiter`*
 
 *`fileCharList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`fileChar`* | *`fileCharList`* *`fileChar`*
+&emsp; *`fileChar`* &vert; *`fileCharList`* *`fileChar`*
 
 *`fileSpec`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`fileCharList`* | *`textLiteral`*
+&emsp; *`fileCharList`* &vert; *`textLiteral`*
 
 *`flagName`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ZERO?`** | **`CARRY?`** | **`OVERFLOW?`** | **`SIGN?`** | **`PARITY?`**
+&emsp; **`ZERO?`** &vert; **`CARRY?`** &vert; **`OVERFLOW?`** &vert; **`SIGN?`** &vert; **`PARITY?`**
 
 *`floatNumber`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`sign`* ⟧ *`decNumber`* **`.`** ⟦ *`decNumber`* ⟧ ⟦ *`exponent`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`digits`* **`R`** | *`digits`* **`r`**
+&emsp; ⟦ *`sign`* ⟧ *`decNumber`* **`.`** ⟦ *`decNumber`* ⟧ ⟦ *`exponent`* ⟧\
+&emsp; &vert; *`digits`* **`R`**\
+&emsp; &vert; *`digits`* **`r`**
 
 *`forcDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`FORC`** | **`IRPC`**
+&emsp; **`FORC`** &vert; **`IRPC`**
 
 *`forDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`FOR`** | **`IRP`**
+&emsp; **`FOR`** &vert; **`IRP`**
 
 *`forParm`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* ⟦ **`:`** *`forParmType`* ⟧
+&emsp; *`id`* ⟦ **`:`** *`forParmType`* ⟧
 
 *`forParmType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`REQ`** | **`=`** *`textLiteral`*
+&emsp; **`REQ`** &vert; **`=`** *`textLiteral`*
 
 *`fpuRegister`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ST`** *`expr`*
+&emsp; **`ST`** *`expr`*
 
 *`frameExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`SEG`** *`id`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`DGROUP`** **`:`** *`id`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`segmentRegister`* **`:`** *`id`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`id`*
+&emsp; **`SEG`** *`id`*\
+&emsp; &vert; **`DGROUP`** **`:`** *`id`*\
+&emsp; &vert; *`segmentRegister`* **`:`** *`id`*\
+&emsp; &vert; *`id`*
 
 *`generalDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`modelDir`* | *`segOrderDir`* | *`nameDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`includeLibDir`* | *`commentDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`groupDir`* | *`assumeDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`structDir`* | *`recordDir`* | *`typedefDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`externDir`* | *`publicDir`* | *`commDir`* | *`protoTypeDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`equDir`* | *`=Dir`* | *`textDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`contextDir`* | *`optionDir`* | *`processorDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`radixDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`titleDir`* | *`pageDir`* | *`listDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`crefDir`* | *`echoDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`ifDir`* | *`errorDir`* | *`includeDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`macroDir`* | *`macroCall`* | *`macroRepeat`* | *`purgeDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`macroWhile`* | *`macroFor`* | *`macroForc`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`aliasDir`*
+&emsp; *`modelDir`* &vert; *`segOrderDir`* &vert; *`nameDir`*\
+&emsp; &vert; *`includeLibDir`* &vert; *`commentDir`*\
+&emsp; &vert; *`groupDir`* &vert; *`assumeDir`*\
+&emsp; &vert; *`structDir`* &vert; *`recordDir`* &vert; *`typedefDir`*\
+&emsp; &vert; *`externDir`* &vert; *`publicDir`* &vert; *`commDir`* &vert; *`protoTypeDir`*\
+&emsp; &vert; *`equDir`* &vert; *`=Dir`* &vert; *`textDir`*\
+&emsp; &vert; *`contextDir`* &vert; *`optionDir`* &vert; *`processorDir`*\
+&emsp; &vert; *`radixDir`*\
+&emsp; &vert; *`titleDir`* &vert; *`pageDir`* &vert; *`listDir`*\
+&emsp; &vert; *`crefDir`* &vert; *`echoDir`*\
+&emsp; &vert; *`ifDir`* &vert; *`errorDir`* &vert; *`includeDir`*\
+&emsp; &vert; *`macroDir`* &vert; *`macroCall`* &vert; *`macroRepeat`* &vert; *`purgeDir`*\
+&emsp; &vert; *`macroWhile`* &vert; *`macroFor`* &vert; *`macroForc`*\
+&emsp; &vert; *`aliasDir`*
 
 *`gpRegister`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`AX`** | **`EAX`** | **`CX`** | **`ECX`** | **`DX`** | **`EDX`** | **`BX`** | **`EBX`** | **`DI`** | **`EDI`** | **`SI`** | **`ESI`** | **`BP`** | **`EBP`** | **`SP`** | **`ESP`** | **`RSP`** | **`R8W`** | **`R8D`** | **`R9W`** | **`R9D`** | **`R12D`** | **`R13W`** | **`R13D`** | **`R14W`** | **`R14D`**
+&emsp; **`AX`** &vert; **`EAX`** &vert; **`CX`** &vert; **`ECX`** &vert; **`DX`** &vert; **`EDX`** &vert; **`BX`** &vert; **`EBX`**\
+&emsp; &vert; **`DI`** &vert; **`EDI`** &vert; **`SI`** &vert; **`ESI`** &vert; **`BP`** &vert; **`EBP`** &vert; **`SP`** &vert; **`ESP`**\
+&emsp; &vert; **`R8W`** &vert; **`R8D`** &vert; **`R9W`** &vert; **`R9D`** &vert; **`R12D`** &vert; **`R13W`** &vert; **`R13D`** &vert; **`R14W`** &vert; **`R14D`**
 
 *`groupDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`groupId`* **`GROUP`** *`segIdList`*
+&emsp; *`groupId`* **`GROUP`** *`segIdList`*
 
 *`groupId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
 
 *`hexdigit`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`a`** | **`b`** | **`c`** | **`d`** | **`e`** | **`f`** | **`A`** | **`B`** | **`C`** | **`D`** | **`E`** | **`F`**
+&emsp; **`a`** &vert; **`b`** &vert; **`c`** &vert; **`d`** &vert; **`e`** &vert; **`f`**\
+&emsp; &vert; **`A`** &vert; **`B`** &vert; **`C`** &vert; **`D`** &vert; **`E`** &vert; **`F`**
 
 *`id`*\
-&nbsp;&nbsp;&nbsp;&nbsp;The first character of the identifier can be an upper or lower-case alphabetic character (`[A–Za-z]`) or any of these four characters: `@ _ $ ?` The remaining characters can be any of those same characters or a decimal digit (`[0–9]`). Maximum length is 247 characters.
+&emsp; *`alpha`*\
+&emsp; &vert; *`id`* *`alpha`*\
+&emsp; &vert; *`id`* *`decdigit`*\
+&emsp; Maximum length is 247 characters.
 
 *`idList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* | *`idList`* **`,`** *`id`*
+&emsp; *`id`* &vert; *`idList`* **`,`** *`id`*
 
 *`ifDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`ifStatement`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`elseifBlock`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`ELSE`** *`;;`* \
-&nbsp;&nbsp;&nbsp;&nbsp;*`directiveList`* ⟧ *`;;`*
+&emsp; *`ifStatement`* *`;;`*\
+&emsp; *`directiveList`*\
+&emsp; ⟦ *`elseifBlock`* ⟧\
+&emsp; ⟦ **`ELSE`** *`;;`* \
+&emsp; *`directiveList`* ⟧ *`;;`*
 
 *`ifStatement`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`IF`** *`constExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`IFE`** *`constExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`IFB`** *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`IFNB`** *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`IFDEF`** *`id`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`IFNDEF`** *`id`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`IFDIF`** *`textItem`* **`,`** *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`IFDIFI`** *`textItem`* **`,`** *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`IFIDN`** *`textItem`* **`,`** *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`IFIDNI`** *`textItem`* **`,`** *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`IF1`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`IF2`**
+&emsp; **`IF`** *`constExpr`*\
+&emsp; &vert; **`IFE`** *`constExpr`*\
+&emsp; &vert; **`IFB`** *`textItem`*\
+&emsp; &vert; **`IFNB`** *`textItem`*\
+&emsp; &vert; **`IFDEF`** *`id`*\
+&emsp; &vert; **`IFNDEF`** *`id`*\
+&emsp; &vert; **`IFDIF`** *`textItem`* **`,`** *`textItem`*\
+&emsp; &vert; **`IFDIFI`** *`textItem`* **`,`** *`textItem`*\
+&emsp; &vert; **`IFIDN`** *`textItem`* **`,`** *`textItem`*\
+&emsp; &vert; **`IFIDNI`** *`textItem`* **`,`** *`textItem`*\
+&emsp; &vert; **`IF1`**\
+&emsp; &vert; **`IF2`**
 
 *`immExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`expr`*
+&emsp; *`expr`*
 
 *`includeDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`INCLUDE`** *`fileSpec`* *`;;`*
+&emsp; **`INCLUDE`** *`fileSpec`* *`;;`*
 
 *`includeLibDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`INCLUDELIB`** *`fileSpec`* *`;;`*
+&emsp; **`INCLUDELIB`** *`fileSpec`* *`;;`*
 
 *`initValue`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`immExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`string`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`?`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`constExpr`* **`DUP`** ( *`scalarInstList`* )\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`floatNumber`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`bcdConst`*
+&emsp; *`immExpr`*\
+&emsp; &vert; *`string`*\
+&emsp; &vert; **`?`**\
+&emsp; &vert; *`constExpr`* **`DUP`** ( *`scalarInstList`* )\
+&emsp; &vert; *`floatNumber`*\
+&emsp; &vert; *`bcdConst`*
 
 *`inSegDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`labelDef`* ⟧ *`inSegmentDir`*
+&emsp; ⟦ *`labelDef`* ⟧ *`inSegmentDir`*
 
 *`inSegDirList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`inSegDir`* | *`inSegDirList`* *`inSegDir`*
+&emsp; *`inSegDir`* &vert; *`inSegDirList`* *`inSegDir`*
 
 *`inSegmentDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`instruction`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`dataDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`controlDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`startupDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`exitDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`offsetDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`labelDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`procDir`* ⟦ *`localDirList`* ⟧ ⟦ *`inSegDirList`* ⟧ *`endpDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`invokeDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`generalDir`*
+&emsp; *`instruction`*\
+&emsp; &vert; *`dataDir`*\
+&emsp; &vert; *`controlDir`*\
+&emsp; &vert; *`startupDir`*\
+&emsp; &vert; *`exitDir`*\
+&emsp; &vert; *`offsetDir`*\
+&emsp; &vert; *`labelDir`*\
+&emsp; &vert; *`procDir`* ⟦ *`localDirList`* ⟧ ⟦ *`inSegDirList`* ⟧ *`endpDir`*\
+&emsp; &vert; *`invokeDir`*\
+&emsp; &vert; *`generalDir`*
 
 *`instrPrefix`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`REP`** | **`REPE`** | **`REPZ`** | **`REPNE`** | **`REPNZ`** | **`LOCK`**
+&emsp; **`REP`** &vert; **`REPE`** &vert; **`REPZ`** &vert; **`REPNE`** &vert; **`REPNZ`** &vert; **`LOCK`**
 
 *`instruction`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`instrPrefix`* ⟧ *`asmInstruction`*
+&emsp; ⟦ *`instrPrefix`* ⟧ *`asmInstruction`*
 
 *`invokeArg`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`register`* **`::`** *`register`* | *`expr`* | **`ADDR`** *`expr`*
+&emsp; *`register`* **`::`** *`register`*\
+&emsp; &vert; *`expr`*\
+&emsp; &vert; **`ADDR`** *`expr`*
 
 *`invokeDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`INVOKE`** *`expr`* ⟦ **`,`** ⟦ *`;;`* ⟧ *`invokeList`* ⟧ *`;;`*
+&emsp; **`INVOKE`** *`expr`* ⟦ **`,`** ⟦ *`;;`* ⟧ *`invokeList`* ⟧ *`;;`*
 
 *`invokeList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`invokeArg`* | *`invokeList`* **`,`** ⟦ *`;;`* ⟧ *`invokeArg`*
+&emsp; *`invokeArg`* &vert; *`invokeList`* **`,`** ⟦ *`;;`* ⟧ *`invokeArg`*
 
 *`keyword`*\
-&nbsp;&nbsp;&nbsp;&nbsp;Any reserved word.
+&emsp; Any reserved word.
 
 *`keywordList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`keyword`* | *`keyword`* *`keywordList`*
+&emsp; *`keyword`* &vert; *`keyword`* *`keywordList`*
 
 *`labelDef`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* **`:`** | *`id`* **`::`** | **`@@:`**
+&emsp; *`id`* **`:`** &vert; *`id`* **`::`** &vert; **`@@:`**
 
 *`labelDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* **`LABEL`** *`qualifiedType`* *`;;`*
+&emsp; *`id`* **`LABEL`** *`qualifiedType`* *`;;`*
 
 *`langType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`C`** | **`PASCAL`** | **`FORTRAN`** | **`BASIC`** | **`SYSCALL`** | **`STDCALL`**
+&emsp; **`C`** &vert; **`PASCAL`** &vert; **`FORTRAN`** &vert; **`BASIC`** &vert; **`SYSCALL`** &vert; **`STDCALL`**
 
 *`listDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`listOption`* *`;;`*
+&emsp; *`listOption`* *`;;`*
 
 *`listOption`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.LIST`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.NOLIST`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.XLIST`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.LISTALL`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.LISTIF`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.LFCOND`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.NOLISTIF`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.SFCOND`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.TFCOND`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.LISTMACROALL`** | **`.LALL`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.NOLISTMACRO`** | **`.SALL`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.LISTMACRO`** | **`.XALL`**
+&emsp; **`.LIST`**\
+&emsp; &vert; **`.NOLIST`**\
+&emsp; &vert; **`.XLIST`**\
+&emsp; &vert; **`.LISTALL`**\
+&emsp; &vert; **`.LISTIF`**\
+&emsp; &vert; **`.LFCOND`**\
+&emsp; &vert; **`.NOLISTIF`**\
+&emsp; &vert; **`.SFCOND`**\
+&emsp; &vert; **`.TFCOND`**\
+&emsp; &vert; **`.LISTMACROALL`** &vert; **`.LALL`**\
+&emsp; &vert; **`.NOLISTMACRO`** &vert; **`.SALL`**\
+&emsp; &vert; **`.LISTMACRO`** &vert; **`.XALL`**
 
 *`localDef`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`LOCAL`** *`idList`* *`;;`*
+&emsp; **`LOCAL`** *`idList`* *`;;`*
 
 *`localDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`LOCAL`** *`parmList`* *`;;`*
+&emsp; **`LOCAL`** *`parmList`* *`;;`*
 
 *`localDirList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`localDir`* | *`localDirList`* *`localDir`*
+&emsp; *`localDir`* &vert; *`localDirList`* *`localDir`*
 
 *`localList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`localDef`* | *`localList`* *`localDef`*
+&emsp; *`localDef`* &vert; *`localList`* *`localDef`*
 
 *`macroArg`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`%`** *`constExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`%`** *`textMacroId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`%`** *`macroFuncId`* **`(`** *`macroArgList`* **`)`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`string`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`arbitraryText`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`<`** *`arbitraryText`* **`>`**
+&emsp; **`%`** *`constExpr`*\
+&emsp; &vert; **`%`** *`textMacroId`*\
+&emsp; &vert; **`%`** *`macroFuncId`* **`(`** *`macroArgList`* **`)`**\
+&emsp; &vert; *`string`*\
+&emsp; &vert; *`arbitraryText`*\
+&emsp; &vert; **`<`** *`arbitraryText`* **`>`**
 
 *`macroArgList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`macroArg`* | *`macroArgList`* **`,`** *`macroArg`*
+&emsp; *`macroArg`* &vert; *`macroArgList`* **`,`** *`macroArg`*
 
 *`macroBody`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`localList`* ⟧ *`macroStmtList`*
+&emsp; ⟦ *`localList`* ⟧ *`macroStmtList`*
 
 *`macroCall`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* *`macroArgList`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`id`* ( *`macroArgList`* )
+&emsp; *`id`* *`macroArgList`* *`;;`*\
+&emsp; &vert; *`id`* ( *`macroArgList`* )
 
 *`macroDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* **`MACRO`** ⟦ *`macroParmList`* ⟧ *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`macroBody`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ENDM`** *`;;`*
+&emsp; *`id`* **`MACRO`** ⟦ *`macroParmList`* ⟧ *`;;`*\
+&emsp; *`macroBody`*\
+&emsp; **`ENDM`** *`;;`*
 
 *`macroFor`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`forDir`* *`forParm`* **`,`** **`<`** *`macroArgList`* **`>`** *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`macroBody`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ENDM`** *`;;`*
+&emsp; *`forDir`* *`forParm`* **`,`** **`<`** *`macroArgList`* **`>`** *`;;`*\
+&emsp; *`macroBody`*\
+&emsp; **`ENDM`** *`;;`*
 
 *`macroForc`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`forcDir`* *`id`* **`,`** *`textLiteral`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`macroBody`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ENDM`** *`;;`*
+&emsp; *`forcDir`* *`id`* **`,`** *`textLiteral`* *`;;`*\
+&emsp; *`macroBody`*\
+&emsp; **`ENDM`** *`;;`*
 
 *`macroFuncId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
 
 *`macroId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`macroProcId`* | *`macroFuncId`*
+&emsp; *`macroProcId`* &vert; *`macroFuncId`*
 
 *`macroIdList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`macroId`* | *`macroIdList`* **`,`** *`macroId`*
+&emsp; *`macroId`* &vert; *`macroIdList`* **`,`** *`macroId`*
 
 *`macroLabel`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
 
 *`macroParm`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* ⟦ **`:`** *`parmType`* ⟧
+&emsp; *`id`* ⟦ **`:`** *`parmType`* ⟧
 
 *`macroParmList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`macroParm`* | *`macroParmList`* **`,`** ⟦ *`;;`* ⟧ *`macroParm`*
+&emsp; *`macroParm`* &vert; *`macroParmList`* **`,`** ⟦ *`;;`* ⟧ *`macroParm`*
 
 *`macroProcId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
 
 *`macroRepeat`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`repeatDir`* *`constExpr`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`macroBody`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ENDM`** *`;;`*
+&emsp; *`repeatDir`* *`constExpr`* *`;;`*\
+&emsp; *`macroBody`*\
+&emsp; **`ENDM`** *`;;`*
 
 *`macroStmt`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`directive`* \
-&nbsp;&nbsp;&nbsp;&nbsp;| *`exitmDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`:`** *`macroLabel`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`GOTO`** *`macroLabel`*
+&emsp; *`directive`* \
+&emsp; &vert; *`exitmDir`*\
+&emsp; &vert; **`:`** *`macroLabel`*\
+&emsp; &vert; **`GOTO`** *`macroLabel`*
 
 *`macroStmtList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`macroStmt`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`macroStmtList`* *`macroStmt`* *`;;`*\
+&emsp; *`macroStmt`* *`;;`*\
+&emsp; &vert; *`macroStmtList`* *`macroStmt`* *`;;`*
 
 *`macroWhile`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`WHILE`** *`constExpr`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`macroBody`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ENDM`** *`;;`*
+&emsp; **`WHILE`** *`constExpr`* *`;;`*\
+&emsp; *`macroBody`*\
+&emsp; **`ENDM`** *`;;`*
 
 *`mapType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ALL`** | **`NONE`** | **`NOTPUBLIC`**
+&emsp; **`ALL`** &vert; **`NONE`** &vert; **`NOTPUBLIC`**
 
 *`memOption`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`TINY`** | **`SMALL`** | **`MEDIUM`** | **`COMPACT`** | **`LARGE`** | **`HUGE`** | **`FLAT`**
+&emsp; **`TINY`** &vert; **`SMALL`** &vert; **`MEDIUM`** &vert; **`COMPACT`** &vert; **`LARGE`** &vert; **`HUGE`** &vert; **`FLAT`**
 
 *`mnemonic`*\
-&nbsp;&nbsp;&nbsp;&nbsp;Instruction name.
+&emsp; Instruction name.
 
 *`modelDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.MODEL`**\
-&nbsp;&nbsp;&nbsp;&nbsp;*`memOption`* ⟦ **`,`** *`modelOptlist`* ⟧ *`;;`*
+&emsp; **`.MODEL`** *`memOption`* ⟦ **`,`** *`modelOptlist`* ⟧ *`;;`*
 
 *`modelOpt`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`langType`* | *`stackOption`*
+&emsp; *`langType`* &vert; *`stackOption`*
 
 *`modelOptlist`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`modelOpt`* | *`modelOptlist`* **`,`** *`modelOpt`*
+&emsp; *`modelOpt`* &vert; *`modelOptlist`* **`,`** *`modelOpt`*
 
 *`module`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`directiveList`* ⟧ *`endDir`*
+&emsp; ⟦ *`directiveList`* ⟧ *`endDir`*
 
 *`mulOp`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`*`** | **`/`** | **`MOD`**
+&emsp; **`*`** &vert; **`/`** &vert; **`MOD`**
 
 *`nameDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`NAME`**\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* *`;;`*
+&emsp; **`NAME`** *`id`* *`;;`*
 
 *`nearfar`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`NEAR`** | **`FAR`**
+&emsp; **`NEAR`** &vert; **`FAR`**
 
 *`nestedStruct`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`structHdr`* ⟦ *`id`* ⟧ *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`structBody`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ENDS`** *`;;`*
+&emsp; *`structHdr`* ⟦ *`id`* ⟧ *`;;`*\
+&emsp; *`structBody`*\
+&emsp; **`ENDS`** *`;;`*
 
 *`offsetDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`offsetDirType`* *`;;`*
+&emsp; *`offsetDirType`* *`;;`*
 
 *`offsetDirType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`EVEN`** | **`ORG`** *`immExpr`* | **`ALIGN`** ⟦ *`constExpr`* ⟧
+&emsp; **`EVEN`**\
+&emsp; &vert; **`ORG`** *`immExpr`*\
+&emsp; &vert; **`ALIGN`** ⟦ *`constExpr`* ⟧
 
 *`offsetType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`GROUP`** | **`SEGMENT`** | **`FLAT`**
+&emsp; **`GROUP`** &vert; **`SEGMENT`** &vert; **`FLAT`**
 
 *`oldRecordFieldList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`constExpr`* ⟧ | *`oldRecordFieldList`* **`,`** ⟦ *`constExpr`* ⟧
+&emsp; ⟦ *`constExpr`* ⟧ &vert; *`oldRecordFieldList`* **`,`** ⟦ *`constExpr`* ⟧
 
 *`optionDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`OPTION`** *`optionList`* *`;;`*
+&emsp; **`OPTION`** *`optionList`* *`;;`*
 
 *`optionItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`CASEMAP`** : *`mapType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`DOTNAME`** | **`NODOTNAME`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`EMULATOR`** | **`NOEMULATOR`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`EPILOGUE`** **`:`** *`macroId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`EXPR16`** | **`EXPR32`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`LANGUAGE`** **`:`** *`langType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`LJMP`** | **`NOLJMP`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`M510`** | **`NOM510`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`NOKEYWORD`** **`:`** **`<`** *`keywordList`* **`>`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`NOSIGNEXTEND`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`OFFSET`** **`:`** *`offsetType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`OLDMACROS`** | **`NOOLDMACROS`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`OLDSTRUCTS`** | **`NOOLDSTRUCTS`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`PROC`** **`:`** *`oVisibility`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`PROLOGUE`** : *`macroId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`READONLY`** | **`NOREADONLY`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`SCOPED`** | **`NOSCOPED`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`SEGMENT`** **`:`** *`segSize`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`SETIF2`** **`:`** *`bool`*
+&emsp; **`CASEMAP`** **`:`** *`mapType`*\
+&emsp; &vert; **`DOTNAME`** &vert; **`NODOTNAME`**\
+&emsp; &vert; **`EMULATOR`** &vert; **`NOEMULATOR`**\
+&emsp; &vert; **`EPILOGUE`** **`:`** *`macroId`*\
+&emsp; &vert; **`EXPR16`** &vert; **`EXPR32`**\
+&emsp; &vert; **`LANGUAGE`** **`:`** *`langType`*\
+&emsp; &vert; **`LJMP`** &vert; **`NOLJMP`**\
+&emsp; &vert; **`M510`** &vert; **`NOM510`**\
+&emsp; &vert; **`NOKEYWORD`** **`:`** **`<`** *`keywordList`* **`>`**\
+&emsp; &vert; **`NOSIGNEXTEND`**\
+&emsp; &vert; **`OFFSET`** **`:`** *`offsetType`*\
+&emsp; &vert; **`OLDMACROS`** &vert; **`NOOLDMACROS`**\
+&emsp; &vert; **`OLDSTRUCTS`** &vert; **`NOOLDSTRUCTS`**\
+&emsp; &vert; **`PROC`** **`:`** *`oVisibility`*\
+&emsp; &vert; **`PROLOGUE`** : *`macroId`*\
+&emsp; &vert; **`READONLY`** &vert; **`NOREADONLY`**\
+&emsp; &vert; **`SCOPED`** &vert; **`NOSCOPED`**\
+&emsp; &vert; **`SEGMENT`** **`:`** *`segSize`*\
+&emsp; &vert; **`SETIF2`** **`:`** *`bool`*
 
 *`optionList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`optionItem`* | *`optionList`* **`,`** ⟦ *`;;`* ⟧ *`optionItem`*
+&emsp; *`optionItem`* &vert; *`optionList`* **`,`** ⟦ *`;;`* ⟧ *`optionItem`*
 
 *`optText`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`,`** *`textItem`*
+&emsp; **`,`** *`textItem`*
 
 *`orOp`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`OR`** | **`XOR`**
+&emsp; **`OR`** &vert; **`XOR`**
 
 *`oVisibility`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`PUBLIC`** | **`PRIVATE`** | **`EXPORT`**
+&emsp; **`PUBLIC`** &vert; **`PRIVATE`** &vert; **`EXPORT`**
 
 *`pageDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`PAGE`** ⟦ *`pageExpr`* ⟧ *`;;`*
+&emsp; **`PAGE`** ⟦ *`pageExpr`* ⟧ *`;;`*
 
 *`pageExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`+`** | ⟦ *`pageLength`* ⟧ ⟦ **`,`** *`pageWidth`* ⟧
+&emsp; **`+`** &vert; ⟦ *`pageLength`* ⟧ ⟦ **`,`** *`pageWidth`* ⟧
 
 *`pageLength`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`constExpr`*
+&emsp; *`constExpr`*
 
 *`pageWidth`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`constExpr`*
+&emsp; *`constExpr`*
 
 *`parm`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`parmId`* ⟦ **`:`** *`qualifiedType`* ⟧ | *`parmId`* ⟦ *`constExpr`* ⟧ ⟦ **`:`** *`qualifiedType`* ⟧
+&emsp; *`parmId`* ⟦ **`:`** *`qualifiedType`* ⟧\
+&emsp; &vert; *`parmId`* ⟦ *`constExpr`* ⟧ ⟦ **`:`** *`qualifiedType`* ⟧
 
 *`parmId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
 
 *`parmList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`parm`* | *`parmList`* **`,`** ⟦ *`;;`* ⟧ *`parm`*
+&emsp; *`parm`* &vert; *`parmList`* **`,`** ⟦ *`;;`* ⟧ *`parm`*
 
 *`parmType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`REQ`** | **`=`** *`textLiteral`* | **`VARARG`**
+&emsp; **`REQ`** &vert; **`=`** *`textLiteral`* &vert; **`VARARG`**
 
 *`pOptions`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`distance`* ⟧ ⟦ *`langType`* ⟧ ⟦ *`oVisibility`* ⟧
+&emsp; ⟦ *`distance`* ⟧ ⟦ *`langType`* ⟧ ⟦ *`oVisibility`* ⟧
 
 *`primary`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`expr`* *`binaryOp`* *`expr`* | *`flagName`* | *`expr`*
+&emsp; *`expr`* *`binaryOp`* *`expr`* &vert; *`flagName`* &vert; *`expr`*
 
 *`procDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`procId`* **`PROC`**\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`pOptions`* ⟧ ⟦ **`<`** *`macroArgList`* **`>`** ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`usesRegs`* ⟧ ⟦ *`procParmList`* ⟧
+&emsp; *`procId`* **`PROC`** ⟦ *`pOptions`* ⟧ ⟦ **`<`** *`macroArgList`* **`>`** ⟧\
+&emsp; ⟦ *`usesRegs`* ⟧ ⟦ *`procParmList`* ⟧
 
 *`processor`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.386`** | **`.386p`** | **`.486`** | **`.486P`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.586`** | **`.586P`** | **`.686`** | **`.686P`** | **`.387`**
+&emsp; &vert; **`.386`** &vert; **`.386p`** &vert; **`.486`** &vert; **`.486P`**\
+&emsp; &vert; **`.586`** &vert; **`.586P`** &vert; **`.686`** &vert; **`.686P`** &vert; **`.387`**
 
 *`processorDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`processor`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`coprocessor`* *`;;`*
+&emsp; *`processor`* *`;;`*\
+&emsp; &vert; *`coprocessor`* *`;;`*
 
 *`procId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
 
 *`procItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`instrPrefix`* | *`dataDir`* | *`labelDir`* | *`offsetDir`* | *`generalDir`*
+&emsp; *`instrPrefix`* &vert; *`dataDir`* &vert; *`labelDir`* &vert; *`offsetDir`* &vert; *`generalDir`*
 
 *`procParmList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`,`** ⟦ *`;;`* ⟧ *`parmList`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`,`** ⟦ *`;;`* ⟧ *`parmId`* **`:VARARG`** ⟧
+&emsp; ⟦ **`,`** ⟦ *`;;`* ⟧ *`parmList`* ⟧\
+&emsp; ⟦ **`,`** ⟦ *`;;`* ⟧ *`parmId`* **`:VARARG`** ⟧
 
 *`protoArg`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`id`* ⟧ **`:`** *`qualifiedType`*
+&emsp; ⟦ *`id`* ⟧ **`:`** *`qualifiedType`*
 
 *`protoArgList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`,`** ⟦ *`;;`* ⟧ *`protoList`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`,`** ⟦ *`;;`* ⟧ ⟦ *`id`* ⟧ **`:VARARG`** ⟧
+&emsp; ⟦ **`,`** ⟦ *`;;`* ⟧ *`protoList`* ⟧\
+&emsp; ⟦ **`,`** ⟦ *`;;`* ⟧ ⟦ *`id`* ⟧ **`:VARARG`** ⟧
 
 *`protoList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`protoArg`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`protoList`* **`,`** ⟦ *`;;`* ⟧ *`protoArg`*
+&emsp; *`protoArg`*\
+&emsp; &vert; *`protoList`* **`,`** ⟦ *`;;`* ⟧ *`protoArg`*
 
 *`protoSpec`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`distance`* ⟧ ⟦ *`langType`* ⟧ ⟦ *`protoArgList`* ⟧ | *`typeId`*
+&emsp; ⟦ *`distance`* ⟧ ⟦ *`langType`* ⟧ ⟦ *`protoArgList`* ⟧\
+&emsp; &vert; *`typeId`*
 
 *`protoTypeDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* **`PROTO`** *`protoSpec`*
+&emsp; *`id`* **`PROTO`** *`protoSpec`*
 
 *`pubDef`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`langType`* ⟧ *`id`*
+&emsp; ⟦ *`langType`* ⟧ *`id`*
 
 *`publicDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`PUBLIC`** *`pubList`* *`;;`*
+&emsp; **`PUBLIC`** *`pubList`* *`;;`*
 
 *`pubList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`pubDef`* | *`pubList`* **`,`** ⟦ *`;;`* ⟧ *`pubDef`*
+&emsp; *`pubDef`* &vert; *`pubList`* **`,`** ⟦ *`;;`* ⟧ *`pubDef`*
 
 *`purgeDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`PURGE`** *`macroIdList`*
+&emsp; **`PURGE`** *`macroIdList`*
 
 *`qualifiedType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`type`* | ⟦ *`distance`* ⟧ **`PTR`** ⟦ *`qualifiedType`* ⟧
+&emsp; *`type`*\
+&emsp; &vert; ⟦ *`distance`* ⟧ **`PTR`** ⟦ *`qualifiedType`* ⟧
 
 *`qualifier`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`qualifiedType`* | **`PROTO`** *`protoSpec`*
+&emsp; *`qualifiedType`* &vert; **`PROTO`** *`protoSpec`*
 
 *`quote`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`"`** | **`'`**
+&emsp; **`"`** &vert; **`'`**
 
 *`qwordRegister`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`RAX`** | **`RCX`** | **`RDX`** | **`RBX`** | **`RDI`** | **`RSI`** | **`RBP`** | **`R8`** | **`R9`** | **`R10`** | **`R11`** | **`R12`** | **`R13`** | **`R14`** | **`R15`**
+&emsp; **`RAX`** &vert; **`RCX`** &vert; **`RDX`** &vert; **`RBX`** &vert; **`RSP`** &vert; **`RBP`** &vert; **`RSI`** &vert; **`RDI`**\
+&emsp; &vert; **`R8`** &vert; **`R9`** &vert; **`R10`** &vert; **`R11`** &vert; **`R12`** &vert; **`R13`** &vert; **`R14`** &vert; **`R15`**
 
 *`radixDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.RADIX`** *`constExpr`* *`;;`*
+&emsp; **`.RADIX`** *`constExpr`* *`;;`*
 
 *`radixOverride`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`h`** | **`o`** | **`q`** | **`t`** | **`y`** | **`H`** | **`O`** | **`Q`** | **`T`** | **`Y`**
+&emsp; **`h`** &vert; **`o`** &vert; **`q`** &vert; **`t`** &vert; **`y`**\
+&emsp; &vert; **`H`** &vert; **`O`** &vert; **`Q`** &vert; **`T`** &vert; **`Y`**
 
 *`recordConst`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`recordTag`* **`{`** *`oldRecordFieldList`* **`}`** | *`recordTag`* **`<`** *`oldRecordFieldList`* **`>`**
+&emsp; *`recordTag`* **`{`** *`oldRecordFieldList`* **`}`**\
+&emsp; &vert; *`recordTag`* **`<`** *`oldRecordFieldList`* **`>`**
 
 *`recordDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`recordTag`* **`RECORD`** *`bitDefList`* *`;;`*
+&emsp; *`recordTag`* **`RECORD`** *`bitDefList`* *`;;`*
 
 *`recordFieldList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`constExpr`* ⟧ | *`recordFieldList`* **`,`** ⟦ *`;;`* ⟧ ⟦ *`constExpr`* ⟧
+&emsp; ⟦ *`constExpr`* ⟧ &vert; *`recordFieldList`* **`,`** ⟦ *`;;`* ⟧ ⟦ *`constExpr`* ⟧
 
 *`recordInstance`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`{`** ⟦ *`;;`* ⟧ *`recordFieldList`* ⟦ *`;;`* ⟧ **`}`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`<`** *`oldRecordFieldList`* **`>`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`constExpr`* **`DUP`** **`(`** *`recordInstance`* **`)`**
+&emsp; **`{`** ⟦ *`;;`* ⟧ *`recordFieldList`* ⟦ *`;;`* ⟧ **`}`**\
+&emsp; &vert; **`<`** *`oldRecordFieldList`* **`>`**\
+&emsp; &vert; *`constExpr`* **`DUP`** **`(`** *`recordInstance`* **`)`**
 
 *`recordInstList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`recordInstance`* | *`recordInstList`* **`,`** ⟦ *`;;`* ⟧ *`recordInstance`*
+&emsp; *`recordInstance`* &vert; *`recordInstList`* **`,`** ⟦ *`;;`* ⟧ *`recordInstance`*
 
 *`recordTag`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
 
 *`register`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`specialRegister`* | *`gpRegister`* | *`byteRegister`* | *`qwordRegister`* |  *`fpuRegister`* | *`SIMDRegister`* | *`segmentRegister`*
+&emsp; *`specialRegister`* &vert; *`gpRegister`* &vert; *`byteRegister`* &vert; *`qwordRegister`* &vert; *`fpuRegister`* &vert; *`SIMDRegister`* &vert; *`segmentRegister`*
 
 *`regList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`register`* | *`regList`* *`register`*
+&emsp; *`register`* &vert; *`regList`* *`register`*
 
 *`relOp`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`EQ`** | **`NE`** | **`LT`** | **`LE`** | **`GT`** | **`GE`**
+&emsp; **`EQ`** &vert; **`NE`** &vert; **`LT`** &vert; **`LE`** &vert; **`GT`** &vert; **`GE`**
 
 *`repeatBlock`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.REPEAT`** *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`blockStatements`* *`;;`*
+&emsp; **`.REPEAT`** *`;;`*\
+&emsp; *`blockStatements`* *`;;`*
 *`untilDir`* *`;;`*
 
 *`repeatDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`REPEAT`** | **`REPT`**
+&emsp; **`REPEAT`** &vert; **`REPT`**
 
 *`scalarInstList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`initValue`* | *`scalarInstList`* **`,`** ⟦ *`;;`* ⟧ *`initValue`*
+&emsp; *`initValue`*\
+&emsp; &vert; *`scalarInstList`* **`,`** ⟦ *`;;`* ⟧ *`initValue`*
 
 *`segAlign`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`BYTE`** | **`WORD`** | **`DWORD`** | **`PARA`** | **`PAGE`**
+&emsp; **`BYTE`** &vert; **`WORD`** &vert; **`DWORD`** &vert; **`PARA`** &vert; **`PAGE`**
 
 *`segAttrib`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`PUBLIC`** | **`STACK`** | **`COMMON`** | **`MEMORY`** | **`AT`** *`constExpr`* | **`PRIVATE`**
+&emsp; **`PUBLIC`** &vert; **`STACK`** &vert; **`COMMON`** &vert; **`MEMORY`** &vert; **`AT`** *`constExpr`* &vert; **`PRIVATE`**
 
 *`segDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.CODE`**\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ *`segId`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.DATA`**\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **`.DATA?`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.CONST`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.FARDATA`**⟦ *`segId`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;|  **`.FARDATA?`** ⟦ *`segId`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`.STACK`** ⟦ *`constExpr`* ⟧
+&emsp; **`.CODE`** ⟦ *`segId`* ⟧\
+&emsp; &vert; **`.DATA`**\
+&emsp; &vert; **`.DATA?`**\
+&emsp; &vert; **`.CONST`**\
+&emsp; &vert; **`.FARDATA`** ⟦ *`segId`* ⟧\
+&emsp; &vert; **`.FARDATA?`** ⟦ *`segId`* ⟧\
+&emsp; &vert; **`.STACK`** ⟦ *`constExpr`* ⟧
 
 *`segId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
 
 *`segIdList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`segId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`segIdList`* **`,`** *`segId`*
+&emsp; *`segId`*\
+&emsp; &vert; *`segIdList`* **`,`** *`segId`*
 
 *`segmentDef`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`segmentDir`* ⟦ *`inSegDirList`* ⟧ *`endsDir`* | *`simpleSegDir`* ⟦ *`inSegDirList`* ⟧ ⟦ *`endsDir`* ⟧
+&emsp; *`segmentDir`* ⟦ *`inSegDirList`* ⟧ *`endsDir`* &vert; *`simpleSegDir`* ⟦ *`inSegDirList`* ⟧ ⟦ *`endsDir`* ⟧
 
 *`segmentDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`segId`* **`SEGMENT`** ⟦ *`segOptionList`* ⟧ *`;;`*
+&emsp; *`segId`* **`SEGMENT`** ⟦ *`segOptionList`* ⟧ *`;;`*
 
 *`segmentRegister`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`CS`** | **`DS`** | **`ES`** | **`FS`** | **`GS`** | **`SS`**
+&emsp; **`CS`** &vert; **`DS`** &vert; **`ES`** &vert; **`FS`** &vert; **`GS`** &vert; **`SS`**
 
 *`segOption`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`segAlign`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`segRO`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`segAttrib`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`segSize`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`className`*
+&emsp; *`segAlign`*\
+&emsp; &vert; *`segRO`*\
+&emsp; &vert; *`segAttrib`*\
+&emsp; &vert; *`segSize`*\
+&emsp; &vert; *`className`*
 
 *`segOptionList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`segOption`* | *`segOptionList`* *`segOption`*
+&emsp; *`segOption`* &vert; *`segOptionList`* *`segOption`*
 
 *`segOrderDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.ALPHA`** | **`.SEQ`** | **`.DOSSEG`** | **`DOSSEG`**
+&emsp; **`.ALPHA`** &vert; **`.SEQ`** &vert; **`.DOSSEG`** &vert; **`DOSSEG`**
 
 *`segRO`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`READONLY`**
+&emsp; **`READONLY`**
 
 *`segSize`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`USE16`** | **`USE32`** | **`FLAT`**
+&emsp; **`USE16`** &vert; **`USE32`** &vert; **`FLAT`**
 
 *`shiftOp`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`SHR`** | **`SHL`**
+&emsp; **`SHR`** &vert; **`SHL`**
 
 *`sign`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`+`** | **`-`**
+&emsp; **`+`** &vert; **`-`**
 
 *`simdRegister`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`MM0`** | **`MM1`** | **`MM2`** | **`MM3`** | **`MM4`** | **`MM5`** | **`MM6`** | **`MM7`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`xmmRegister`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`YMM0`** | **`YMM1`** | **`YMM2`** | **`YMM3`** | **`YMM4`** | **`YMM5`** | **`YMM6`** | **`YMM7`** | **`YMM8`** | **`YMM9`** | **`YMM10`** | **`YMM11`** | **`YMM12`** | **`YMM13`** | **`YMM14`** | **`YMM15`**
+&emsp; **`MM0`** &vert; **`MM1`** &vert; **`MM2`** &vert; **`MM3`** &vert; **`MM4`** &vert; **`MM5`** &vert; **`MM6`** &vert; **`MM7`**\
+&emsp; &vert; *`xmmRegister`*\
+&emsp; &vert; **`YMM0`** &vert; **`YMM1`** &vert; **`YMM2`** &vert; **`YMM3`** &vert; **`YMM4`** &vert; **`YMM5`** &vert; **`YMM6`** &vert; **`YMM7`**\
+&emsp; &vert; **`YMM8`** &vert; **`YMM9`** &vert; **`YMM10`** &vert; **`YMM11`** &vert; **`YMM12`** &vert; **`YMM13`** &vert; **`YMM14`** &vert; **`YMM15`**
 
 *`simpleExpr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`(`** *`cExpr`* **`)`** | *`primary`*
+&emsp; **`(`** *`cExpr`* **`)`** &vert; *`primary`*
 
 *`simpleSegDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`segDir`* *`;;`*
+&emsp; *`segDir`* *`;;`*
 
 *`sizeArg`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* | *`type`* | *`e10`*
+&emsp; *`id`* &vert; *`type`* &vert; *`e10`*
 
 *`specialChars`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`:`** | **`.`** | **`[`** | **`]`** | **`(`** | **`)`** | **`<`** | **`>`** | **`{`** | **`}`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`+`** | **`-`** | **`/`** | **`*`** | **`&`** | **`%`** | **`!`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`'`** | **`\`** | **`=`** | **`;`** | **`,`** | **`"`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`whiteSpaceCharacter`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`endOfLine`*
+&emsp; **`:`** &vert; **`.`** &vert; **`[`** &vert; **`]`** &vert; **`(`** &vert; **`)`** &vert; **`<`** &vert; **`>`** &vert; **`{`** &vert; **`}`**\
+&emsp; &vert; **`+`** &vert; **`-`** &vert; **`/`** &vert; **`*`** &vert; **`&`** &vert; **`%`** &vert; **`!`**\
+&emsp; &vert; **`'`** &vert; **`\`** &vert; **`=`** &vert; **`;`** &vert; **`,`** &vert; **`"`**\
+&emsp; &vert; *`whiteSpaceCharacter`*\
+&emsp; &vert; *`endOfLine`*
 
 *`specialRegister`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`CR0`** | **`CR2`** | **`CR3`** | **`DR0`** | **`DR1`** | **`DR2`** | **`DR3`** | **`DR6`** | **`DR7`** | **`TR3`** | **`TR4`** | **`TR5`** | **`TR6`** | **`TR7`**
+&emsp; **`CR0`** &vert; **`CR2`** &vert; **`CR3`**\
+&emsp; &vert; **`DR0`** &vert; **`DR1`** &vert; **`DR2`** &vert; **`DR3`** &vert; **`DR6`** &vert; **`DR7`**\
+&emsp; &vert; **`TR3`** &vert; **`TR4`** &vert; **`TR5`** &vert; **`TR6`** &vert; **`TR7`**
 
 *`stackOption`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`NEARSTACK`** | **`FARSTACK`**
+&emsp; **`NEARSTACK`** &vert; **`FARSTACK`**
 
 *`startupDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.STARTUP`** *`;;`*
+&emsp; **`.STARTUP`** *`;;`*
 
 *`stext`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`stringChar`* | *`stext`* *`stringChar`*
+&emsp; *`stringChar`* &vert; *`stext`* *`stringChar`*
 
 *`string`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`quote`* ⟦ *`stext`* ⟧ *`quote`*
+&emsp; *`quote`* ⟦ *`stext`* ⟧ *`quote`*
 
 *`stringChar`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`quote`* *`quote`* | Any character except quote.
+&emsp; *`quote`* *`quote`* &vert; Any character except quote.
 
 *`structBody`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`structItem`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`structBody`* *`structItem`* *`;;`*
+&emsp; *`structItem`* *`;;`*\
+&emsp; &vert; *`structBody`* *`structItem`* *`;;`*
 
 *`structDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`structTag`* *`structHdr`* ⟦ *`fieldAlign`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;⟦ **`,`** **`NONUNIQUE`** ⟧ *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`structBody`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`structTag`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`ENDS`** *`;;`*
+&emsp; *`structTag`* *`structHdr`* ⟦ *`fieldAlign`* ⟧\
+&emsp; ⟦ **`,`** **`NONUNIQUE`** ⟧ *`;;`*\
+&emsp; *`structBody`*\
+&emsp; *`structTag`* **`ENDS`** *`;;`*
 
 *`structHdr`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`STRUC`** | **`STRUCT`** | **`UNION`**
+&emsp; **`STRUC`** &vert; **`STRUCT`** &vert; **`UNION`**
 
 *`structInstance`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`<`** ⟦ *`fieldInitList`* ⟧ **`>`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`{`** ⟦ *`;;`* ⟧ ⟦ *`fieldInitList`* ⟧ ⟦ *`;;`* ⟧ **`}`**\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`constExpr`* **`DUP`** ( *`structInstList`* )
+&emsp; **`<`** ⟦ *`fieldInitList`* ⟧ **`>`**\
+&emsp; &vert; **`{`** ⟦ *`;;`* ⟧ ⟦ *`fieldInitList`* ⟧ ⟦ *`;;`* ⟧ **`}`**\
+&emsp; &vert; *`constExpr`* **`DUP`** ( *`structInstList`* )
 
 *`structInstList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`structInstance`* | *`structInstList`* **`,`** ⟦ *`;;`* ⟧ *`structInstance`*
+&emsp; *`structInstance`* &vert; *`structInstList`* **`,`** ⟦ *`;;`* ⟧ *`structInstance`*
 
 *`structItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`dataDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`generalDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`offsetDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`nestedStruct`*
+&emsp; *`dataDir`*\
+&emsp; &vert; *`generalDir`*\
+&emsp; &vert; *`offsetDir`*\
+&emsp; &vert; *`nestedStruct`*
 
 *`structTag`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
 
 *`term`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`simpleExpr`* | **`!`** *`simpleExpr`*
+&emsp; *`simpleExpr`* &vert; **`!`** *`simpleExpr`*
 
 *`text`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`textLiteral`* | *`text`* character | **`!`** *`character`* *`text`* | *`character`* | **`!`** *`character`*
+&emsp; *`textLiteral`* &vert; *`text`* *`character`* &vert; **`!`** *`character`* *`text`* &vert; *`character`* &vert; **`!`** *`character`*
 
 *`textDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`* *`textMacroDir`* *`;;`*
+&emsp; *`id`* *`textMacroDir`* *`;;`*
 
 *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`textLiteral`* | *`textMacroId`* | **`%`** *`constExpr`*
+&emsp; *`textLiteral`* &vert; *`textMacroId`* &vert; **`%`** *`constExpr`*
 
 *`textLen`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`constExpr`*
+&emsp; *`constExpr`*
 
 *`textList`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`textItem`* | *`textList`* **`,`** ⟦ *`;;`* ⟧ *`textItem`*
+&emsp; *`textItem`* &vert; *`textList`* **`,`** ⟦ *`;;`* ⟧ *`textItem`*
 
 *`textLiteral`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`<`** *`text`* **`>`** **`;;`**
+&emsp; **`<`** *`text`* **`>`** **`;;`**
 
 *`textMacroDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`CATSTR`** ⟦ *`textList`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`TEXTEQU`** ⟦ *`textList`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`SIZESTR`** *`textItem`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`SUBSTR`** *`textItem`* **`,`** *`textStart`* ⟦ **`,`** *`textLen`* ⟧\
-&nbsp;&nbsp;&nbsp;&nbsp;| **`INSTR`** ⟦ *`textStart`* **`,`** ⟧ *`textItem`* **`,`** *`textItem`*
+&emsp; **`CATSTR`** ⟦ *`textList`* ⟧\
+&emsp; &vert; **`TEXTEQU`** ⟦ *`textList`* ⟧\
+&emsp; &vert; **`SIZESTR`** *`textItem`*\
+&emsp; &vert; **`SUBSTR`** *`textItem`* **`,`** *`textStart`* ⟦ **`,`** *`textLen`* ⟧\
+&emsp; &vert; **`INSTR`** ⟦ *`textStart`* **`,`** ⟧ *`textItem`* **`,`** *`textItem`*
 
 *`textMacroId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
 
 *`textStart`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`constExpr`*
+&emsp; *`constExpr`*
 
 *`titleDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`titleType`* *`arbitraryText`* *`;;`*
+&emsp; *`titleType`* *`arbitraryText`* *`;;`*
 
 *`titleType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`TITLE`** | **`SUBTITLE`** | **`SUBTTL`**
+&emsp; **`TITLE`** &vert; **`SUBTITLE`** &vert; **`SUBTTL`**
 
 *`type`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`structTag`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`unionTag`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`recordTag`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`distance`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`dataType`*\
-&nbsp;&nbsp;&nbsp;&nbsp;| *`typeId`*
+&emsp; *`structTag`*\
+&emsp; &vert; *`unionTag`*\
+&emsp; &vert; *`recordTag`*\
+&emsp; &vert; *`distance`*\
+&emsp; &vert; *`dataType`*\
+&emsp; &vert; *`typeId`*
 
 *`typedefDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`typeId`* **`TYPEDEF`** qualifier
+&emsp; *`typeId`* **`TYPEDEF`** *`qualifier`*
 
 *`typeId`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
 
 *`unionTag`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`id`*
+&emsp; *`id`*
 
 *`untilDir`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.UNTIL`** *`cExpr`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.UNTILCXZ`** ⟦ *`cxzExpr`* ⟧ *`;;`*
+&emsp; **`.UNTIL`** *`cExpr`* *`;;`*\
+&emsp; **`.UNTILCXZ`** ⟦ *`cxzExpr`* ⟧ *`;;`*
 
 *`usesRegs`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`USES`** *`regList`*
+&emsp; **`USES`** *`regList`*
 
 *`whileBlock`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.WHILE`**\
-&nbsp;&nbsp;&nbsp;&nbsp;*`cExpr`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`blockStatements`* *`;;`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`.ENDW`**
+&emsp; **`.WHILE`** *`cExpr`* *`;;`*\
+&emsp; *`blockStatements`* *`;;`*\
+&emsp; **`.ENDW`**
 
 *`whiteSpaceCharacter`*\
-&nbsp;&nbsp;&nbsp;&nbsp;ASCII 8, 9, 11–13, 26, 32
+&emsp; ASCII 8, 9, 11–13, 26, 32
 
 *`xmmRegister`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`XMM0`** | **`XMM1`** | **`XMM2`** | **`XMM3`** | **`XMM4`** | **`XMM5`** | **`XMM6`** | **`XMM7`** | **`XMM8`** | **`XMM9`** | **`XMM10`** | **`XMM11`** | **`XMM12`** | **`XMM13`** | **`XMM14`** | **`XMM15`**
+&emsp; **`XMM0`** &vert; **`XMM1`** &vert; **`XMM2`** &vert; **`XMM3`** &vert; **`XMM4`** &vert; **`XMM5`** &vert; **`XMM6`** &vert; **`XMM7`**\
+&emsp; &vert; **`XMM8`** &vert; **`XMM9`** &vert; **`XMM10`** &vert; **`XMM11`** &vert; **`XMM12`** &vert; **`XMM13`** &vert; **`XMM14`** &vert; **`XMM15`**

@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2017"
 description: "Microsoft C/C++ in Visual Studio 2017 is progressing toward full conformance with the C++20 language standard."
-ms.date: 03/10/2021
+ms.date: 04/18/2021
 ms.technology: "cpp-language"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2017
@@ -90,7 +90,7 @@ void f() {
 }
 ```
 
-This example is similar to the previous one but raises a different error. It succeeds in Visual Studio 2015 and fails in Visual Studio 2017 with C2668.
+This example is similar to the previous one but raises a different error. It succeeds in Visual Studio 2015 and fails in Visual Studio 2017 with [C2668](../error-messages/compiler-errors-2/compiler-error-c2668.md).
 
 ```cpp
 struct A {
@@ -112,7 +112,7 @@ int main()
 
 ### Deprecated typedefs
 
-Visual Studio 2017 now issues the correct warning for deprecated typedefs declared in a class or struct. The following example compiles without warnings in Visual Studio 2015. It produces C4996 in Visual Studio 2017.
+Visual Studio 2017 now issues the correct warning for deprecated typedefs declared in a class or struct. The following example compiles without warnings in Visual Studio 2015. It produces [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) in Visual Studio 2017.
 
 ```cpp
 struct A
@@ -129,7 +129,7 @@ int main()
 
 ### `constexpr`
 
-Visual Studio 2017 correctly raises an error when the left-hand operand of a conditionally evaluating operation isn't valid in a `constexpr` context. The following code compiles in Visual Studio 2015, but not in Visual Studio 2017, where it raises C3615:
+Visual Studio 2017 correctly raises an error when the left-hand operand of a conditionally evaluating operation isn't valid in a `constexpr` context. The following code compiles in Visual Studio 2015, but not in Visual Studio 2017, where it raises [C3615](../error-messages/compiler-errors-2/compiler-error-c3615.md):
 
 ```cpp
 template<int N>
@@ -217,7 +217,7 @@ To correct the error, declare `operator int()` as **`const`**.
 
 ### Access checking on qualified names in templates
 
-Previous versions of the compiler didn't check access to qualified names in some template contexts. This issue can interfere with expected SFINAE behavior, where the substitution is expected to fail because of the inaccessibility of a name. It could have potentially caused a crash or unexpected behavior at runtime, because the compiler incorrectly called the wrong overload of the operator. In Visual Studio 2017, a compiler error is raised. The specific error might vary, but a typical error is C2672, "no matching overloaded function found." The following code compiles in Visual Studio 2015 but raises an error in Visual Studio 2017:
+Previous versions of the compiler didn't check access to qualified names in some template contexts. This issue can interfere with expected SFINAE behavior, where the substitution is expected to fail because of the inaccessibility of a name. It could have potentially caused a crash or unexpected behavior at runtime, because the compiler incorrectly called the wrong overload of the operator. In Visual Studio 2017, a compiler error is raised. The specific error might vary, but a typical error is [C2672](../error-messages/compiler-errors-2/compiler-error-c2672.md), "no matching overloaded function found." The following code compiles in Visual Studio 2015 but raises an error in Visual Studio 2017:
 
 ```cpp
 #include <type_traits>
@@ -279,7 +279,7 @@ static_assert(test2, "PASS2");
 
 ### Classes declared in anonymous namespaces
 
-According to the C++ standard, a class declared inside an anonymous namespace has internal linkage, and that means it can't be exported. In Visual Studio 2015 and earlier, this rule wasn't enforced. In Visual Studio 2017, the rule is partially enforced. In Visual Studio 2017 the following example raises error C2201:
+According to the C++ standard, a class declared inside an anonymous namespace has internal linkage, and that means it can't be exported. In Visual Studio 2015 and earlier, this rule wasn't enforced. In Visual Studio 2017, the rule is partially enforced. In Visual Studio 2017 the following example raises error [C2201](../error-messages/compiler-errors-1/compiler-error-c2201.md):
 
 ```cpp
 struct __declspec(dllexport) S1 { virtual void f() {} };
@@ -399,7 +399,7 @@ The **`register`** keyword, previously deprecated (and ignored by the compiler),
 
 ### Calls to deleted member templates
 
-In previous versions of Visual Studio, the compiler in some cases would fail to emit an error for ill-formed calls to a deleted member template. These calls would potentially cause crashes at runtime. The following code now produces C2280:
+In previous versions of Visual Studio, the compiler in some cases would fail to emit an error for ill-formed calls to a deleted member template. These calls would potentially cause crashes at runtime. The following code now produces [C2280](../error-messages/compiler-errors-1/compiler-error-c2280.md):
 
 ```cpp
 template<typename T>
@@ -418,7 +418,7 @@ To fix the error, declare `i` as **`int`**.
 
 ### Pre-condition checks for type traits
 
-Visual Studio 2017 version 15.3 improves pre-condition checks for type-traits to more strictly follow the standard. One such check is for assignable. The following code produces C2139 in Visual Studio 2017 version 15.3:
+Visual Studio 2017 version 15.3 improves pre-condition checks for type-traits to more strictly follow the standard. One such check is for assignable. The following code produces [C2139](../error-messages/compiler-errors-1/compiler-error-c2139.md) in Visual Studio 2017 version 15.3:
 
 ```cpp
 struct S;
@@ -432,7 +432,7 @@ static_assert(__is_convertible_to(E, E), "fail"); // C2139 in 15.3
 
 Calling from managed functions to native functions requires marshaling. The CLR does the marshaling, but it doesn't understand C++ semantics. If you pass a native object by value, CLR either calls the object's copy-constructor or uses `BitBlt`, which may cause undefined behavior at runtime.
 
-Now the compiler emits a warning if it finds this error at compile time: a native object with deleted copy ctor gets passed between a native and managed boundary by value. For those cases in which the compiler doesn't know at compile time, it injects a runtime check so that the program calls `std::terminate` immediately when an ill-formed marshaling occurs. In Visual Studio 2017 version 15.3, the following code produces warning C4606:
+Now the compiler emits a warning if it finds this error at compile time: a native object with deleted copy ctor gets passed between a native and managed boundary by value. For those cases in which the compiler doesn't know at compile time, it injects a runtime check so that the program calls `std::terminate` immediately when an ill-formed marshaling occurs. In Visual Studio 2017 version 15.3, the following code produces warning [C4606](../error-messages/compiler-warnings/compiler-warning-level-1-c4606.md):
 
 ```cpp
 class A
@@ -472,7 +472,7 @@ To fix the error, remove the `#pragma managed` directive to mark the caller as n
 
 ### Experimental API warning for WinRT
 
-WinRT APIs that are released for experimentation and feedback are decorated with `Windows.Foundation.Metadata.ExperimentalAttribute`. In Visual Studio 2017 version 15.3, the compiler produces warning C4698 for this attribute. A few APIs in previous versions of the Windows SDK have already been decorated with the attribute, and calls to these APIs now trigger this compiler warning. Newer Windows SDKs have the attribute removed from all shipped types. If you're using an older SDK, you'll need to suppress these warnings for all calls to shipped types.
+WinRT APIs that are released for experimentation and feedback are decorated with `Windows.Foundation.Metadata.ExperimentalAttribute`. In Visual Studio 2017 version 15.3, the compiler produces warning [C4698](../error-messages/compiler-warnings/c4698.md) for this attribute. A few APIs in previous versions of the Windows SDK have already been decorated with the attribute, and calls to these APIs now trigger this compiler warning. Newer Windows SDKs have the attribute removed from all shipped types. If you're using an older SDK, you'll need to suppress these warnings for all calls to shipped types.
 
 The following code produces warning C4698:
 
@@ -495,7 +495,7 @@ Windows::Storage::IApplicationDataStatics2::GetForUserAsync();
 
 ### Out-of-line definition of a template member function
 
-Visual Studio 2017 version 15.3 produces an error for an out-of-line definition of a template member function that wasn't declared in the class. The following code now produces error C2039:
+Visual Studio 2017 version 15.3 produces an error for an out-of-line definition of a template member function that wasn't declared in the class. The following code now produces error [C2039](../error-messages/compiler-errors-1/compiler-error-c2039.md):
 
 ```cpp
 struct S {};
@@ -517,11 +517,11 @@ void S::f(T t) {}
 
 ### Attempting to take the address of `this` pointer
 
-In C++, **`this`** is a prvalue of type pointer to X. You can't take the address of **`this`** or bind it to an lvalue reference. In previous versions of Visual Studio, the compiler would allow you to circumvent this restriction by use of a cast. In Visual Studio 2017 version 15.3, the compiler produces error C2664.
+In C++, **`this`** is a prvalue of type pointer to X. You can't take the address of **`this`** or bind it to an lvalue reference. In previous versions of Visual Studio, the compiler would allow you to circumvent this restriction by use of a cast. In Visual Studio 2017 version 15.3, the compiler produces error [C2664](../error-messages/compiler-errors-2/compiler-error-c2664.md).
 
 ### Conversion to an inaccessible base class
 
-Visual Studio 2017 version 15.3 produces an error when you attempt to convert a type to a base class that is inaccessible. The following code is ill-formed and can potentially cause a crash at runtime. The compiler now produces C2243 when it sees code like this:
+Visual Studio 2017 version 15.3 produces an error when you attempt to convert a type to a base class that is inaccessible. The following code is ill-formed and can potentially cause a crash at runtime. The compiler now produces [C2243](../error-messages/compiler-errors-1/compiler-error-c2243.md) when it sees code like this:
 
 ```cpp
 #include <memory>
@@ -539,7 +539,7 @@ void f()
 
 Default arguments aren't allowed on out-of-line definitions of member functions in template classes. The compiler will issue a warning under **`/permissive`**, and a hard error under [`/permissive-`](../build/reference/permissive-standards-conformance.md).
 
-In previous versions of Visual Studio, the following ill-formed code could potentially cause a runtime crash. Visual Studio 2017 version 15.3 produces warning C5034:
+In previous versions of Visual Studio, the following ill-formed code could potentially cause a runtime crash. Visual Studio 2017 version 15.3 produces warning [C5037](../error-messages/compiler-warnings/c5037.md):
 
 ```cpp
 template <typename T>
@@ -548,7 +548,7 @@ struct A {
 };
 
 template <typename T>
-T A<T>::f(T t, bool b = false) // C5034: 'A<T>::f': an out-of-line definition of a member of a class template cannot have default arguments
+T A<T>::f(T t, bool b = false) // C5037: 'A<T>::f': an out-of-line definition of a member of a class template cannot have default arguments
 {
     // ...
 }
@@ -558,14 +558,14 @@ To fix the error, remove the `= false` default argument.
 
 ### Use of `offsetof` with compound member designator
 
-In Visual Studio 2017 version 15.3, using `offsetof(T, m)` where *m* is a "compound member designator" results in a warning when you compile with the **`/Wall`** option. The following code is ill-formed and could potentially cause a crash at runtime. Visual Studio 2017 version 15.3 produces warning C4841:
+In Visual Studio 2017 version 15.3, using `offsetof(T, m)` where *m* is a "compound member designator" results in a warning when you compile with the **`/Wall`** option. The following code is ill-formed and could potentially cause a crash at runtime. Visual Studio 2017 version 15.3 produces warning [C4841](../error-messages/compiler-warnings/c4841.md):
 
 ```cpp
 struct A {
    int arr[10];
 };
 
-// warning C4841: non-standard extension used: compound member designator in offsetof
+// warning C4841: non-standard extension used: compound member designator used in offsetof
 constexpr auto off = offsetof(A, arr[2]);
 ```
 
@@ -580,7 +580,7 @@ constexpr auto off = offsetof(A, arr[2]);
 
 ### Using `offsetof` with static data member or member function
 
-In Visual Studio 2017 version 15.3, using `offsetof(T, m)` where *m* refers to a static data member or a member function results in an error. The following code produces error C4597:
+In Visual Studio 2017 version 15.3, using `offsetof(T, m)` where *m* refers to a static data member or a member function results in an error. The following code produces error [C4597](../error-messages/compiler-warnings/c4597.md):
 
 ```cpp
 #include <cstddef>
@@ -598,7 +598,7 @@ This code is ill-formed and could potentially cause a crash at runtime. To fix t
 
 ### <a name="declspec"></a> New warning on `__declspec` attributes
 
-In Visual Studio 2017 version 15.3, the compiler no longer ignores attributes if `__declspec(...)` is applied before `extern "C"` linkage specification. Previously, the compiler would ignore the attribute, which could have runtime implications. When the **`/Wall`** and **`/WX`** options are set, the following code produces warning C4768:
+In Visual Studio 2017 version 15.3, the compiler no longer ignores attributes if `__declspec(...)` is applied before `extern "C"` linkage specification. Previously, the compiler would ignore the attribute, which could have runtime implications. When the **`/Wall`** and **`/WX`** options are set, the following code produces warning [C4768](../error-messages/compiler-warnings/c4768.md):
 
 ```cpp
 __declspec(noinline) extern "C" HRESULT __stdcall // C4768: __declspec attributes before linkage specification are ignored
@@ -610,11 +610,11 @@ To fix the warning, put `extern "C"` first:
 extern "C" __declspec(noinline) HRESULT __stdcall
 ```
 
-This warning is off by default in 15.3, but on by default in 15.5, and only impacts code compiled with  **`/Wall`** **`/WX`**.
+This warning is off by default in Visual Studio 2017 version 15.3, and only impacts code compiled with  **`/Wall`** **`/WX`**. Starting in Visual Studio 2017 version 15.5, it's enabled by default as a level 3 warning.
 
 ### `decltype` and calls to deleted destructors
 
-In previous versions of Visual Studio, the compiler didn't detect when a call to a deleted destructor occurred in the context of the expression associated with **`decltype`**. In Visual Studio 2017 version 15.3, the following code produces error C2280:
+In previous versions of Visual Studio, the compiler didn't detect when a call to a deleted destructor occurred in the context of the expression associated with **`decltype`**. In Visual Studio 2017 version 15.3, the following code produces error [C2280](../error-messages/compiler-errors-1/compiler-error-c2280.md):
 
 ```cpp
 template<typename T>
@@ -637,7 +637,7 @@ void h()
 
 ### Uninitialized const variables
 
-Visual Studio 2017 RTW release had a regression: the C++ compiler wouldn't issue a diagnostic for an uninitialized **`const`** variable. This regression has been fixed in Visual Studio 2017 version 15.3. The following code now produces warning C4132:
+Visual Studio 2017 RTW release had a regression: the C++ compiler wouldn't issue a diagnostic for an uninitialized **`const`** variable. This regression has been fixed in Visual Studio 2017 version 15.3. The following code now produces warning [C4132](../error-messages/compiler-warnings/compiler-warning-level-4-c4132.md):
 
 ```cpp
 const int Value; // C4132: 'Value': const object should be initialized
@@ -647,7 +647,7 @@ To fix the error, assign a value to `Value`.
 
 ### Empty declarations
 
-Visual Studio 2017 version 15.3 now warns on empty declarations for all types, not just built-in types. The following code now produces a level 2 C4091 warning for all four declarations:
+Visual Studio 2017 version 15.3 now warns on empty declarations for all types, not just built-in types. The following code now produces a level 2 [C4091](../error-messages/compiler-warnings/compiler-warning-level-1-c4091.md) warning for all four declarations:
 
 ```cpp
 struct A {};
@@ -712,7 +712,7 @@ This call implies a destructor call.
 
 ### C2668: Ambiguous overload resolution
 
-Previous versions of the compiler sometimes failed to detect ambiguity when it found multiple candidates via both using declarations and argument-dependent lookup. This failure can lead to the wrong overload being chosen, and to unexpected runtime behavior. In the following example, Visual Studio 2017 version 15.3 correctly raises C2668:
+Previous versions of the compiler sometimes failed to detect ambiguity when it found multiple candidates via both using declarations and argument-dependent lookup. This failure can lead to the wrong overload being chosen, and to unexpected runtime behavior. In the following example, Visual Studio 2017 version 15.3 correctly raises [C2668](../error-messages/compiler-errors-2/compiler-error-c2668.md):
 
 ```cpp
 namespace N {
@@ -740,7 +740,7 @@ To fix the code, remove the using `N::f` statement if you intended to call `::f(
 
 ### C2660: local function declarations and argument-dependent lookup
 
-Local function declarations hide the function declaration in the enclosing scope and disable argument-dependent lookup. Previous versions of the compiler always did argument-dependent lookup in this case. It could potentially lead to unexpected runtime behavior, if the compiler chose the wrong overload. Typically, the error is because of an incorrect signature of the local function declaration. In the following example, Visual Studio 2017 version 15.3 correctly raises C2660:
+Local function declarations hide the function declaration in the enclosing scope and disable argument-dependent lookup. Previous versions of the compiler always did argument-dependent lookup in this case. It could potentially lead to unexpected runtime behavior, if the compiler chose the wrong overload. Typically, the error is because of an incorrect signature of the local function declaration. In the following example, Visual Studio 2017 version 15.3 correctly raises [C2660](../error-messages/compiler-errors-2/compiler-error-c2660.md):
 
 ```cpp
 struct S {};
@@ -759,7 +759,7 @@ To fix the problem, either change the `f(S)` signature or remove it.
 
 ### C5038: order of initialization in initializer lists
 
-Class members get initialized in the order they're declared, not the order they appear in initializer lists. Previous versions of the compiler didn't warn when the order of the initializer list differed from the order of declaration. This issue could lead to undefined runtime behavior if one member's initialization depended on another member in the list already being initialized. In the following example, Visual Studio 2017 version 15.3 (with **`/Wall`**) raises warning C5038:
+Class members get initialized in the order they're declared, not the order they appear in initializer lists. Previous versions of the compiler didn't warn when the order of the initializer list differed from the order of declaration. This issue could lead to undefined runtime behavior if one member's initialization depended on another member in the list already being initialized. In the following example, Visual Studio 2017 version 15.3 (with **`/Wall`**) raises warning [C5038](../error-messages/compiler-warnings/c5038.md):
 
 ```cpp
 struct A
@@ -898,7 +898,7 @@ int main()
 
 ### Exception handlers
 
-Handlers of reference to array or function type are never a match for any exception object. The compiler now correctly honors this rule and raises a level 4 warning. It also no longer matches a handler of `char*` or `wchar_t*` to a string literal when **`/Zc:strictStrings`** is used.
+Handlers of reference to array or function type are never a match for any exception object. The compiler now correctly honors this rule and raises a level 4 warning, [C4843](../error-messages/compiler-warnings/c4843.md). It also no longer matches a handler of `char*` or `wchar_t*` to a string literal when **`/Zc:strictStrings`** is used.
 
 ```cpp
 int main()
@@ -1005,7 +1005,7 @@ static_assert(std::is_same<MyIter::pointer, int*>::value, "BOOM");
 
 ### Unreferenced local variables
 
-In Visual Studio 15.5, warning C4189 is emitted in more cases, as shown in the following code:
+In Visual Studio 15.5, warning [C4189](../error-messages/compiler-warnings/compiler-warning-level-4-c4189.md) is emitted in more cases, as shown in the following code:
 
 ```cpp
 void f() {
@@ -1050,7 +1050,7 @@ When the code doesn't need to be backwards compatible, avoid the warning by remo
 
 ### `__declspec` attributes with `extern "C"` linkage
 
-In earlier versions of Visual Studio, the compiler ignored `__declspec(...)` attributes when `__declspec(...)` was applied before the `extern "C"` linkage specification. This behavior caused code to be generated that user didn't intend, with possible runtime implications. The warning was added in Visual Studio version 15.3, but was off by default. In Visual Studio 2017 version 15.5, the warning is enabled by default.
+In earlier versions of Visual Studio, the compiler ignored `__declspec(...)` attributes when `__declspec(...)` was applied before the `extern "C"` linkage specification. This behavior caused code to be generated that user didn't intend, with possible runtime implications. The [C4768](../error-messages/compiler-warnings/c4768.md) warning was added in Visual Studio version 15.3, but was off by default. In Visual Studio 2017 version 15.5, the warning is enabled by default.
 
 ```cpp
 __declspec(noinline) extern "C" HRESULT __stdcall // C4768
@@ -1532,7 +1532,7 @@ struct D : B<T*> {
 
 ### C++17: `[[nodiscard]]` attribute - warning level increase
 
-In Visual Studio 2017 version 15.7 in **`/std:c++17`** mode, the warning level of C4834 is increased from W3 to W1. You can disable the warning with a cast to **`void`**, or by passing **`/wd:4834`** to the compiler
+In Visual Studio 2017 version 15.7 in **`/std:c++17`** mode, the warning level of [C4834](../error-messages/compiler-warnings/c4834.md) is increased from W3 to W1. You can disable the warning with a cast to **`void`**, or by passing **`/wd:4834`** to the compiler.
 
 ```cpp
 [[nodiscard]] int f() { return 0; }
@@ -1785,7 +1785,7 @@ int main()
 
 In [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode, the compiler now requires the **`template`** keyword to precede a template-name when it comes after a dependent nested-name-specifier.
 
-The following code in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode now raises C7510:
+The following code in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode now raises [C7510](../error-messages/compiler-errors-2/compiler-error-c7510.md):
 
 ```cpp
 template<typename T> struct Base
@@ -1870,7 +1870,7 @@ int main()
 
 An identifier used in a member alias template definition must be declared before use.
 
-In previous versions of the compiler, the following code was allowed. In Visual Studio 2017 version 15.9, in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode, the compiler raises C3861:
+In previous versions of the compiler, the following code was allowed. In Visual Studio 2017 version 15.9, in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode, the compiler raises [C3861](../error-messages/compiler-errors-2/compiler-error-c3861.md):
 
 ```cpp
 template <typename... Ts>
@@ -1893,7 +1893,7 @@ To fix the error, declare `from_template` before `from_template_t`.
 
 ### Modules changes
 
-In Visual Studio 2017, version 15.9, the compiler raises C5050 whenever the command-line options for modules aren't consistent between the module creation and module consumption sides. In the following example, there are two issues:
+In Visual Studio 2017, version 15.9, the compiler raises [C5050](../error-messages/compiler-warnings/c5050.md) whenever the command-line options for modules aren't consistent between the module creation and module consumption sides. In the following example, there are two issues:
 
 - On the consumption side (main.cpp), the option **`/EHsc`** isn't specified.
 
@@ -1912,7 +1912,7 @@ importing module 'm': mismatched C++ versions.
 Current "201402" module version "201703"`.
 ```
 
-The compiler also raises C7536 whenever the *`.ifc`* file has been tampered with. The header of the module interface contains an SHA2 hash of the contents below it. On import, the *`.ifc`* file is hashed, then checked against the hash provided in the header. If these don't match, error C7536 is raised:
+The compiler also raises [C7536](../error-messages/compiler-errors-2/compiler-error-c7536.md) whenever the *`.ifc`* file has been tampered with. The header of the module interface contains an SHA2 hash of the contents below it. On import, the *`.ifc`* file is hashed, then checked against the hash provided in the header. If these don't match, error C7536 is raised:
 
 ```Output
 error C7536: ifc failed integrity checks.
@@ -1964,7 +1964,7 @@ int main()
 }
 ```
 
-The previous example raises C2668:
+The previous example raises [C2668](../error-messages/compiler-errors-2/compiler-error-c2668.md):
 
 ```Output
 partial_alias.cpp(32): error C2668: 'f': ambiguous call to overloaded function
@@ -2047,7 +2047,7 @@ constexpr void S<int>::f()
 }
 ```
 
-In Visual Studio 2017 version 15.9, the code raises this error:
+In Visual Studio 2017 version 15.9, the code raises error [C3615](../error-messages/compiler-errors-2/compiler-error-c3615.md):
 
 ```Output
 error C3615: constexpr function 'S<int>::f' cannot result in a constant expression.

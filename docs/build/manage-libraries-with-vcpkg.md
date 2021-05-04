@@ -319,6 +319,6 @@ Type **`vcpkg remove`** to remove an installed library. If any other libraries d
 [Install vcpkg](install-vcpkg.md)\
 [Integrate vcpkg](integrate-vcpkg.md)\
 [vcpkg command-line reference](vcpkg-command-line-reference.md)\
-[Quick start](https://github.com/microsoft/vcpkg/blob/master/docs/index.md)\
+[Quick start](https://github.com/microsoft/vcpkg/blob/master/docs/README.md)\
 [Frequently asked questions](https://github.com/microsoft/vcpkg/blob/master/docs/about/faq.md)\
 [Installing and Using Packages Example: SQLite](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md)
