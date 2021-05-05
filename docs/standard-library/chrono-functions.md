@@ -341,17 +341,13 @@ The input stream, *`is`*
 #include <chrono>
 #include <iostream>
 
-using namespace std;
-using namespace std::chrono;
-
-int Main()
+int main()
 {
     std::istringstream str{ "22" };
-	std::basic_istream<char> stream{ str.rdbuf() };
-	std::chrono::day d;
-	std::chrono::from_stream(stream, "%d", d);
-	std::cout << d << "\n";
-
+    std::basic_istream<char> stream{ str.rdbuf() };
+    std::chrono::day d;
+    std::chrono::from_stream(stream, "%d", d);
+    std::cout << d << "\n";
     return 0;
 }
 ```
@@ -398,8 +394,8 @@ The format may be one of these strings:
 | Specifier | Description |
 |--|--|
 | `%j` |  If the type being formatted is a specialization of duration, the decimal number of days without padding. Otherwise, the day of the year as a decimal number. `Jan 1` is `001`. If the result is fewer than three digits, it's left-padded with `0` (zero) to three digits. |
-| `%U`<br>`%0U` | The week number of the year as a decimal number. The first Sunday of the year is the first day of week `01`. Days of the same year before that week are in week `00`. If the result is a single digit, it's prefixed with `0` (zero).<br>`%OU` (letter `O`, not zero) produces the locale’s alternative representation. |
-| `%W`<br>`%OW` |The week number of the year as a decimal number. The first Monday of the year is the first day of week `01`. Days of the same year before that week are in week `00`.<br>If the result is a single digit, it's prefixed with `0` (zero).<br>``%OW` (letter `O`, not zero) produces the locale’s alternative representation. |
+| `%U`<br>`%0U` | The week number of the year as a decimal number. The first Sunday of the year is the first day of week `01`. Days of the same year before that week are in week `00`. If the result is a single digit, it's prefixed with `0` (zero).<br>`%OU` (letter `O`, not zero) produces the locale's alternative representation. |
+| `%W`<br>`%OW` |The week number of the year as a decimal number. The first Monday of the year is the first day of week `01`. Days of the same year before that week are in week `00`.<br>If the result is a single digit, it's prefixed with `0` (zero).<br>`%OW` (letter `O`, not zero) produces the locale's alternative representation. |
 
 ### Time of day
 
@@ -461,7 +457,7 @@ If *`abbrev`* isn't `nullptr`, and the format specifier `%Z` is specified, and t
 *`offset`*\
 If *`offset`* isn't `nullptr`, and the format specifier `%z` or modified variant such as `%Ez` or `%0z` is specified, and the parse is successful, then *`offset`* points to the parsed value.
 
-### Which flags can be use which types
+### Flags by type
 
 | Class | Specifier/Flag |
 |--|--|
