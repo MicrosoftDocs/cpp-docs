@@ -432,7 +432,7 @@ virtual BOOL OnDrop(
 
 ### Parameters
 
-`pDataObject*
+*pDataObject*\
 Points to the [COleDataObject](../../mfc/reference/coledataobject-class.md) that is dropped into the drop target.
 
 *dropEffect*<br/>
