@@ -1,9 +1,8 @@
 ---
 description: "Learn more about: &lt;chrono&gt;"
 title: "&lt;chrono&gt;"
-ms.date: "05/07/2019"
+ms.date: 04/29/2021
 f1_keywords: ["<chrono>", "chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
-ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
 ---
 # `<chrono>`
 

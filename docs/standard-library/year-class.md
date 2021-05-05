@@ -2,7 +2,7 @@
 description: "Learn more about: year Class"
 title: "year class"
 ms.date: "04/27/2021"
-f1_keywords: ["chrono/std::chrono::year", "chrono/std::chrono::year::January", "chrono/std::chrono::year::February", "chrono/std::chrono::year::March","chrono/std::chrono::year::April","chrono/std::chrono::year::May","chrono/std::chrono::year::June","chrono/std::chrono::year::July","chrono/std::chrono::year::August","chrono/std::chrono::year::September","chrono/std::chrono::year::October","chrono/std::chrono::year::November","chrono/std::chrono::year::December","chrono/std::chrono::year::operator++", "chrono/std::chrono::year::operator--", "chrono/std::chrono::year::operator unsigned"]
+f1_keywords: ["chrono/std::chrono::year", "chrono/std::chrono::year::January", "chrono/std::chrono::year::February", "chrono/std::chrono::year::March","chrono/std::chrono::year::April","chrono/std::chrono::year::May","chrono/std::chrono::year::June","chrono/std::chrono::year::July","chrono/std::chrono::year::August","chrono/std::chrono::year::September","chrono/std::chrono::year::October","chrono/std::chrono::year::November","chrono/std::chrono::year::December","chrono/std::chrono::year::operator++", "chrono/std::chrono::year::operator--", "chrono/std::chrono::year::operator unsigned", "chrono/std::chrono::year::is_leap", "chrono/std::chrono::year::max", "chrono/std::chrono::min", "chrono/std::chrono::year::ok"]
 helpviewer_keywords: ["std::chrono [C++], year"]
 ---
 # `year` class  
