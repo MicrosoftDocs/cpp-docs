@@ -1,11 +1,11 @@
 ---
-title: Configure and build with CMake presets
-description: "Reference for using CMake presets to configure and build CMake projects."
+title: Configure and build with CMake Presets
+description: "Reference for using CMake Presets to configure and build CMake projects."
 ms.date: 04/15/2021
 ms.topic: reference
 ---
 
-# Configure and build with CMake presets in Visual Studio
+# Configure and build with CMake Presets in Visual Studio
 
 CMake supports two files that allow users to specify common configure, build, and test options and share them with others: `CMakePresets.json` and `CMakeUserPresets.json`. Use these files to drive CMake in Visual Studio and Visual Studio Code, in a continuous integration (CI) pipeline, and from the command line. 
 
@@ -15,7 +15,7 @@ This article contains information about `CMakePresets.json` integration with Vis
 
 - For more information about the format of `CMakePresets.json`, see the official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#id1).
 - For more information about the Microsoft vendor maps and macro expansion, see [`CMakePresets.json` and `CMakeUserPresets.json` Microsoft vendor maps](cmake-presets-json-reference.md).
-- For more information about how to use `CMakePresets.json` in Visual Studio Code, see [Configure and build with CMake presets](https://github.com/microsoft/vscode-cmake-tools/tree/develop/docs/cmake-presets.md).
+- For more information about how to use `CMakePresets.json` in Visual Studio Code, see [Configure and build with CMake Presets](https://github.com/microsoft/vscode-cmake-tools/tree/develop/docs/cmake-presets.md).
 
 We recommend `CMakePresets.json` as an alternative to `CMakeSettings.json`. Visual Studio will never read from both `CMakePresets.json` and `CMakeSettings.json` at the same time. To enable or disable `CMakePresets.json` integration in Visual Studio, see [Enable `CMakePresets.json` in Visual Studio 2019](#enable-cmakepresetsjson-integration-in-visual-studio-2019).
 
