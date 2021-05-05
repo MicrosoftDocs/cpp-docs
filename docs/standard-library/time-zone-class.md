@@ -146,6 +146,7 @@ The function template `to_sys` has two overloads that convert a `local_time` to 
 template<class Duration>
 sys_time<common_type_t<Duration, seconds>>
 to_sys(const local_time<Duration>& lt) const;  // Since C++20
+
 template<class Duration>
 sys_time<common_type_t<Duration, seconds>>
 to_sys(const local_time<Duration>& lt, choose z) const;  // Since C++20

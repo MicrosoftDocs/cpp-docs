@@ -2,7 +2,7 @@
 description: "Learn more about: month Class"
 title: "month class"
 ms.date: "04/26/2021"
-f1_keywords: ["chrono/std::chrono::month", "chrono/std::chrono::month::January", "chrono/std::chrono::month::February", "chrono/std::chrono::month::March","chrono/std::chrono::month::April","chrono/std::chrono::month::May","chrono/std::chrono::month::June","chrono/std::chrono::month::July","chrono/std::chrono::month::August","chrono/std::chrono::month::September","chrono/std::chrono::month::October","chrono/std::chrono::month::November","chrono/std::chrono::month::December","chrono/std::chrono::month::operator++", "chrono/std::chrono::month::operator--", "chrono/std::chrono::month::operator unsigned"]
+f1_keywords: ["chrono/std::chrono::month", "chrono/std::chrono::month::January", "chrono/std::chrono::month::February", "chrono/std::chrono::month::March","chrono/std::chrono::month::April","chrono/std::chrono::month::May","chrono/std::chrono::month::June","chrono/std::chrono::month::July","chrono/std::chrono::month::August","chrono/std::chrono::month::September","chrono/std::chrono::month::October","chrono/std::chrono::month::November","chrono/std::chrono::month::December","chrono/std::chrono::month::operator++", "chrono/std::chrono::month::operator--", "chrono/std::chrono::month::operator unsigned", "chrono/std::chrono::month::ok"]
 helpviewer_keywords: ["std::chrono [C++], month"]
 ---
 # `month` class  
