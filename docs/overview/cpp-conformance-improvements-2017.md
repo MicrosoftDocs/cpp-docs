@@ -1909,7 +1909,7 @@ The compiler raises C5050 for both of these cases:
 ```Output
 warning C5050: Possible incompatible environment while
 importing module 'm': mismatched C++ versions.
-Current "201402" module version "201703"`.
+Current "201402" module version "201703".
 ```
 
 The compiler also raises [C7536](../error-messages/compiler-errors-2/compiler-error-c7536.md) whenever the *`.ifc`* file has been tampered with. The header of the module interface contains an SHA2 hash of the contents below it. On import, the *`.ifc`* file is hashed, then checked against the hash provided in the header. If these don't match, error C7536 is raised:

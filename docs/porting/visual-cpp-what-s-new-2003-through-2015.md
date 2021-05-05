@@ -1043,7 +1043,7 @@ Although these differences can affect your source code or other build artifacts,
    When this new behavior parses a **`decltype`** expression that includes a type that has not yet been declared, the compiler issues compiler error C2039 as a result.
 
    ```Output
-    error C2039: 'type': is not a member of '`global namespace''
+    error C2039: 'type': is not a member of 'global namespace'
    ```
 
    Example 1:  use of an undeclared type (before)
@@ -2005,7 +2005,7 @@ __sptr, __uptr
 
 The compiler has breaking changes in this release.
 
-- `64-bit native and cross-compilers.
+- 64-bit native and cross-compilers.
 - `/analyze` (Enterprise Code Analysis) compiler option has been added.
 - `/bigobj` compiler option has been added.
 - `/clr:pure`, `/clr:safe`, and `/clr:oldSyntax` have been added. (Later deprecated in Visual Studio 2015 and removed in Visual Studio 2017.)
