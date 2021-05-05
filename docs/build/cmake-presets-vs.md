@@ -14,18 +14,18 @@ CMake supports two files that allow users to specify common configure, build, an
 This article contains information about `CMakePresets.json` integration with Visual Studio. Here are helpful links:
 
 - For more information about the format of `CMakePresets.json`, see the official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#id1).
-- For more information about the Microsoft vendor maps and macro expansion, see [CMakePresets.json and CMakeUserPresets.json Microsoft vendor maps](cmake-presets-json-reference.md).
+- For more information about the Microsoft vendor maps and macro expansion, see [`CMakePresets.json` and `CMakeUserPresets.json` Microsoft vendor maps](cmake-presets-json-reference.md).
 - For more information about how to use `CMakePresets.json` in Visual Studio Code, see [Configure and build with CMake presets](https://github.com/microsoft/vscode-cmake-tools/tree/develop/docs/cmake-presets.md).
 
-We recommend `CMakePresets.json` as an alternative to `CMakeSettings.json`. Visual Studio will never read from both `CMakePresets.json` and `CMakeSettings.json` at the same time. To enable or disable `CMakePresets.json` integration in Visual Studio, see [Enable CMakePresets.json in Visual Studio 2019](#enable-cmakepresetsjson-integration-in-visual-studio-2019).
+We recommend `CMakePresets.json` as an alternative to `CMakeSettings.json`. Visual Studio will never read from both `CMakePresets.json` and `CMakeSettings.json` at the same time. To enable or disable `CMakePresets.json` integration in Visual Studio, see [Enable `CMakePresets.json` in Visual Studio 2019](#enable-cmakepresetsjson-integration-in-visual-studio-2019).
 
-## Supported CMake and CMakePresets.json versions
+## Supported CMake and `CMakePresets.json` versions
 
-Visual Studio supports version 2 or later for the `CMakePresets.json` and `CMakeUserPresets.json` files. You can update your file version by incrementing the version field in the root object. For an example and more information, see [CMakePresets.json format](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#format).
+Visual Studio supports version 2 or later for the `CMakePresets.json` and `CMakeUserPresets.json` files. You can update your file version by incrementing the version field in the root object. For an example and more information, see [`CMakePresets.json` format](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#format).
 
 CMake version 3.20 or later is required when you're invoking CMake with `CMakePresets.json` (version 2 or later) from the command line. However, Visual Studio reads and evaluates `CMakePresets.json` and `CMakeUserPresets.json` itself and doesn't invoke CMake directly with the `--preset` option. So, CMake version 3.20 or later isn't strictly required when you're building with `CMakePresets.json` inside Visual Studio. We recommend using CMake version 3.14 or later.
 
-## Enable CMakePresets.json integration in Visual Studio 2019
+## Enable `CMakePresets.json` integration in Visual Studio 2019
 
 `CMakePresets.json` integration isn't enabled by default in Visual Studio 2019. You can enable it for all CMake projects in **Tools** > **Options** > **CMake** > **General**:
 
@@ -175,7 +175,7 @@ Use a forward slash (`/`) for paths in `CMakePresets.json` and `CMakeUserPresets
 
 To add a new Configure Preset to `CMakePresets.json`, from **Solution Explorer**, right-click `CMakePresets.json` from **Folder View** and select **Add Configure Preset** from the shortcut menu. The dialog to select a Configure Preset template appears:
 
-![Screenshot of the dialog for adding a Configure Preset to the J S O N file](./media/add-configure-preset-to-cmakepresets.png)
+![Screenshot of the dialog for adding a Configure Preset to the J S O N file.](./media/add-configure-preset-to-cmakepresets.png)
 
 Select the **Windows x64 Debug** template to configure on Windows systems. Select the **Linux Debug** template to configure on WSL and remote Linux systems. For more information about editing `CMakePresets.json`, see [Edit presets](#edit-presets).
 
@@ -183,7 +183,7 @@ The selected template is added to `CMakePresets.json` if it exists. Otherwise, t
 
 ### Add new Build Presets and Test Presets
 
-Visual Studio 2019 doesn't offer templates for new Build Presets and Test Presets. You can add Build Presets and Test Presets by directly editing `CMakePresets.json`. For more information, see the [list of Build Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#build-preset), the [list of Test Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#test-preset), or [an example CMakePresets.json file](#example-cmakepresetsjson-file).
+Visual Studio 2019 doesn't offer templates for new Build Presets and Test Presets. You can add Build Presets and Test Presets by directly editing `CMakePresets.json`. For more information, see the [list of Build Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#build-preset), the [list of Test Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#test-preset), or [an example `CMakePresets.json` file](#example-cmakepresetsjson-file).
 
 ## Edit presets
 
@@ -191,7 +191,7 @@ The official [CMake documentation](https://cmake.org/cmake/help/latest/manual/cm
 
 ### Select your compilers
 
-You can set C and C++ compilers by using `cacheVariables.CMAKE_C_COMPILER` and `cacheVariables.CMAKE_CXX_COMPILER` in a Configure Preset. It's equivalent to passing `-D CMAKE_C_COMPILER=<value>` and `-D CMAKE_CXX_COMPILER=<value>` to CMake from the command line. For more information, see [CMAKE_<LANG>_COMPILER](https://cmake.org/cmake/help/latest/variable/CMAKE_LANG_COMPILER.html#cmake-lang-compiler).
+You can set C and C++ compilers by using `cacheVariables.CMAKE_C_COMPILER` and `cacheVariables.CMAKE_CXX_COMPILER` in a Configure Preset. It's equivalent to passing `-D CMAKE_C_COMPILER=<value>` and `-D CMAKE_CXX_COMPILER=<value>` to CMake from the command line. For more information, see [`CMAKE_<LANG>_COMPILER`](https://cmake.org/cmake/help/latest/variable/CMAKE_LANG_COMPILER.html#cmake-lang-compiler).
 
 Use the following examples to build with `cl.exe` and `clang-cl.exe` from Visual Studio. The C++ Clang tools for Windows components must be installed for you to build with `clang-cl`.
 
@@ -249,7 +249,7 @@ Set `architecture.strategy` and `toolset.strategy` to `set` when you're building
 
 ### Select your configuration type
 
-You can set the configuration type (`Debug` or `Release`) for single configuration generators by using `cacheVariables.CMAKE_BUILD_TYPE`. It's equivalent to passing `-D CMAKE_BUILD_TYPE=<value>` to CMake from the command line. For more information, see [CMAKE_BUILD_TYPE](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html).
+You can set the configuration type (`Debug` or `Release`) for single configuration generators by using `cacheVariables.CMAKE_BUILD_TYPE`. It's equivalent to passing `-D CMAKE_BUILD_TYPE=<value>` to CMake from the command line. For more information, see [`CMAKE_BUILD_TYPE`](https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html).
 
 ### Select your target and host architecture when building with the Visual C++ toolset
 
@@ -264,7 +264,7 @@ The `architecture.strategy` and `toolset.strategy` values tell CMake how to hand
 
 You should use `set` with IDE generators like the Visual Studio generator. You should use `external` with command-line generators like Ninja. These values allow vendors like Visual Studio to source the required environment before CMake is invoked. For more information about the architecture and toolset fields, see the [list of Configure Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#configure-preset).
 
-For a full list of IDE generators that support the architecture field, see [CMAKE_GENERATOR_PLATFORM](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_PLATFORM.html). For a full list of IDE generators that support the toolset field, see [CMAKE_GENERATOR_TOOLSET](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_TOOLSET.html).
+For a full list of IDE generators that support the architecture field, see [`CMAKE_GENERATOR_PLATFORM`](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_PLATFORM.html). For a full list of IDE generators that support the toolset field, see [`CMAKE_GENERATOR_TOOLSET`](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_TOOLSET.html).
 
 Use the following examples to target ARM64 with the Ninja generator, or to target Win32 (x86) with the Visual Studio 16 2019 generator:
 
@@ -300,7 +300,7 @@ By default, Visual Studio uses the IntelliSense mode that matches your specified
 
 With `CMakePresets.json` support in Visual Studio, you can easily configure and build your project on Windows, WSL, and remote systems. The steps to [configure and build](#configure-and-build) your project on Windows, a remote system, or WSL are the same. However, a few behaviors are specific to remote development.
 
-### ${sourceDir} behavior in remote copy scenarios
+### `${sourceDir}` behavior in remote copy scenarios
 
 In local scenarios (including WSL1), `${sourceDir}` evaluates to the path to the project source directory that's open in Visual Studio. In remote copy scenarios, `${sourceDir}` evaluates to the path to the project source directory on the Target System and not the project source directory on the local machine. 
 
@@ -353,7 +353,7 @@ Instead, set the path to `vcpkg.cmake` by using the `VCPKG_ROOT` environment var
 
 If you're already using a CMake toolchain file and want to enable vcpkg integration, see [Using multiple toolchain files](https://github.com/microsoft/vcpkg/blob/master/docs/users/integration.md#using-multiple-toolchain-files). Follow those instructions to use an external toolchain file with a project by using vcpkg.
 
-## Substitute variables in launch.vs.json and tasks.vs.json
+## Substitute variables in `launch.vs.json` and `tasks.vs.json`
 
 `CMakePresets.json` supports variable substitution in `launch.vs.json` and `tasks.vs.json`. Here are some considerations:
 
@@ -421,7 +421,7 @@ You can use the same `CMakePresets.json` and `CMakeUserPresets.json` files to in
 
 ### Sourcing the environment when building with command-line generators on Windows
 
-It's up to the user to configure the environment before CMake is invoked in building with a command-line generator. If you're building with Ninja and the Visual C++ toolset on Windows, set the environment before CMake is called to generate the build system. You can do it by calling `vcvarsall.bat` with the `architecture` argument. The `architecture` argument specifies the host and target architecture to use. For more information, see [vcvarsall syntax](/cpp/build/building-on-the-command-line#vcvarsall-syntax). If you build on Linux or on Windows with a Visual Studio generator, you don't need to take this step.
+It's up to the user to configure the environment before CMake is invoked in building with a command-line generator. If you're building with Ninja and the Visual C++ toolset on Windows, set the environment before CMake is called to generate the build system. You can do it by calling `vcvarsall.bat` with the `architecture` argument. The `architecture` argument specifies the host and target architecture to use. For more information, see [`vcvarsall` syntax](/cpp/build/building-on-the-command-line#vcvarsall-syntax). If you build on Linux or on Windows with a Visual Studio generator, you don't need to take this step.
 
 It's the same step that Visual Studio takes for you when the IDE invokes CMake. Visual Studio parses the active Configure Preset for the host and target architecture specified by `toolset` and `architecture`. Visual Studio then sources the specified environment from `vcvarsall.bat`. When you build from the Windows command line with Ninja, you'll need to take this step yourself.
 
@@ -438,7 +438,7 @@ cmake --preset <configurePreset-name>
 cmake --build --preset <buildPreset-name> 
 ```
 
-## Example CMakePresets.json file
+## Example `CMakePresets.json` file
 
 The `CMakePresets.json` file in [box2d-lite](https://github.com/esweet431/box2d-lite/blob/main/CMakePresets.json) contains examples of Configure Presets, Build Presets, and Test Presets.
 
