@@ -60,7 +60,7 @@ Argument list to be passed to a new thread, or **`NULL`**.
 Pointer to a [`SECURITY_ATTRIBUTES`](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) structure that determines whether the returned handle can be inherited by child processes. If *`Security`* is **`NULL`**, the handle cannot be inherited. Must be **`NULL`** for Windows 95 applications.
 
 *`initflag`*<br/>
-Flags that control the initial state of a new thread. Set *`initflag`* to 0 to run immediately, or to **`CREATE_SUSPENDED`** to create the thread in a suspended state; use [`ResumeThread`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread) to execute the thread. Set *`initflag`* to **`STACK_SIZE_PARAM_IS_A_RESERVATION`** flag to use *`stack_size`* as the initial reserve size of the stack in bytes; if this flag is not specified, *stack_size* specifies the commit size.
+Flags that control the initial state of a new thread. Set *`initflag`* to 0 to run immediately, or to **`CREATE_SUSPENDED`** to create the thread in a suspended state; use [`ResumeThread`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread) to execute the thread. Set *`initflag`* to **`STACK_SIZE_PARAM_IS_A_RESERVATION`** flag to use *`stack_size`* as the initial reserve size of the stack in bytes; if this flag is not specified, *`stack_size`* specifies the commit size.
 
 *`thrdaddr`*<br/>
 Points to a 32-bit variable that receives the thread identifier. If it's **`NULL`**, it's not used.
@@ -100,7 +100,7 @@ You can call [`_endthread`](endthread-endthreadex.md) or **`_endthreadex`** expl
 > [!NOTE]
 > For an executable file linked with Libcmt.lib, do not call the Win32 **`ExitThread`** API so that you don't prevent the run-time system from reclaiming allocated resources. **`_endthread`** and **`_endthreadex`** reclaim allocated thread resources and then call **`ExitThread`**.
 
-The operating system handles the allocation of the stack when either **`_beginthread`** or **`_beginthreadex`** is called; you don't have to pass the address of the thread stack to either of these functions. In addition, the *stack_size* argument can be 0, in which case the operating system uses the same value as the stack that's specified for the main thread.
+The operating system handles the allocation of the stack when either **`_beginthread`** or **`_beginthreadex`** is called; you don't have to pass the address of the thread stack to either of these functions. In addition, the *`stack_size`* argument can be 0, in which case the operating system uses the same value as the stack that's specified for the main thread.
 
 *`arglist`* is a parameter to be passed to the newly created thread. Typically, it is the address of a data item, such as a character string. *`arglist`* can be **`NULL`** if it is not needed, but **`_beginthread`** and **`_beginthreadex`** must be given some value to pass to the new thread. All threads are terminated if any thread calls [`abort`](abort.md), **`exit`**, **`_exit`**, or **`ExitProcess`**.
 

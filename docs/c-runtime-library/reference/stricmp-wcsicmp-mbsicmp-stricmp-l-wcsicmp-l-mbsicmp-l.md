@@ -71,7 +71,7 @@ On an error, **`_mbsicmp`** returns **`_NLSCMPERROR`**, which is defined in `<st
 
 ## Remarks
 
-The **`_stricmp`** function ordinally compares *`string1`* and *`string2`* after converting each character to lowercase, and returns a value indicating their relationship. **`_stricmp`** differs from **`_stricoll`** in that the **`_stricmp`** comparison is only affected by **`LC_CTYPE`**, which determines which characters are upper and lowercase. The **`_stricoll`** function compares strings according to both the **`LC_CTYPE`** and **`LC_COLLATE`** categories of the locale, which includes both the case and the collation order. For more information about the **`LC_COLLATE`** category, see [`setlocale`](setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the **_l** suffix use the current locale for locale-dependent behavior. The versions with the suffix are identical except that they use the locale passed in instead. If the locale has not been set, the C locale is used. For more information, see [Locale](../../c-runtime-library/locale.md).
+The **`_stricmp`** function ordinally compares *`string1`* and *`string2`* after converting each character to lowercase, and returns a value indicating their relationship. **`_stricmp`** differs from **`_stricoll`** in that the **`_stricmp`** comparison is only affected by **`LC_CTYPE`**, which determines which characters are upper and lowercase. The **`_stricoll`** function compares strings according to both the **`LC_CTYPE`** and **`LC_COLLATE`** categories of the locale, which includes both the case and the collation order. For more information about the **`LC_COLLATE`** category, see [`setlocale`](setlocale-wsetlocale.md) and [Locale Categories](../../c-runtime-library/locale-categories.md). The versions of these functions without the **`_l`** suffix use the current locale for locale-dependent behavior. The versions with the suffix are identical except that they use the locale passed in instead. If the locale has not been set, the C locale is used. For more information, see [Locale](../../c-runtime-library/locale.md).
 
 > [!NOTE]
 > **`_stricmp`** is equivalent to **`_strcmpi`**. They can be used interchangeably but **`_stricmp`** is the preferred standard.
@@ -80,9 +80,9 @@ The **`_strcmpi`** function is equivalent to **`_stricmp`** and is provided for 
 
 Because **`_stricmp`** does lowercase comparisons, it may result in unexpected behavior.
 
-To illustrate when case conversion by **`_stricmp`** affects the outcome of a comparison, assume that you have the two strings JOHNSTON and JOHN_HENRY. The string JOHN_HENRY will be considered less than JOHNSTON because the "_" has a lower ASCII value than a lowercase S. In fact, any character that has an ASCII value between 91 and 96 will be considered less than any letter.
+To illustrate when case conversion by **`_stricmp`** affects the outcome of a comparison, assume that you have the two strings `JOHNSTON` and `JOHN_HENRY`. The string `JOHN_HENRY` will be considered less than `JOHNSTON` because the "_" has a lower ASCII value than a lowercase S. In fact, any character that has an ASCII value between 91 and 96 will be considered less than any letter.
 
-If the [`strcmp`](strcmp-wcscmp-mbscmp.md) function is used instead of **`_stricmp`**, JOHN_HENRY will be greater than JOHNSTON.
+If the [`strcmp`](strcmp-wcscmp-mbscmp.md) function is used instead of **`_stricmp`**, `JOHN_HENRY` will be greater than `JOHNSTON`.
 
 **`_wcsicmp`** and **`_mbsicmp`** are wide-character and multibyte-character versions of **`_stricmp`**. The arguments and return value of **`_wcsicmp`** are wide-character strings; those of **`_mbsicmp`** are multibyte-character strings. **`_mbsicmp`** recognizes multibyte-character sequences according to the current multibyte code page and returns **`_NLSCMPERROR`** on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). These three functions behave identically otherwise.
 
