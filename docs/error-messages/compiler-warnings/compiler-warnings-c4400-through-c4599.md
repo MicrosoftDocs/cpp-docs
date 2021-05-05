@@ -2,8 +2,8 @@
 description: "Learn more about: Compiler warnings C4400 Through C4599"
 title: "Compiler warnings C4400 Through C4599"
 ms.date: "04/21/2019"
-f1_keywords: ["C4413", "C4415", "C4416", "C4417", "C4418", "C4419", "C4421", "C4423", "C4424", "C4425", "C4426", "C4427", "C4438", "C4442", "C4443", "C4444", "C4446", "C4447", "C4448", "C4449", "C4450", "C4452", "C4453", "C4454", "C4455", "C4472", "C4474", "C4475", "C4476", "C4478", "C4480", "C4482", "C4483", "C4491", "C4492", "C4493", "C4494", "C4495", "C4496", "C4497", "C4498", "C4499", "C4509", "C4519", "C4531", "C4542", "C4562", "C4568", "C4569", "C4573", "C4574", "C4575", "C4582", "C4583", "C4585", "C4586", "C4587", "C4588", "C4591", "C4592", "C4593", "C4594", "C4595"]
-helpviewer_keywords: ["C4413", "C4415", "C4416", "C4417", "C4418", "C4419", "C4421", "C4423", "C4424", "C4425", "C4426", "C4427", "C4438", "C4442", "C4443", "C4444", "C4446", "C4447", "C4448", "C4449", "C4450", "C4451", "C4452", "C4453", "C4454", "C4455", "C4456", "C4457", "C4459", "C4472", "C4474", "C4475", "C4476", "C4478", "C4480", "C4482", "C4483", "C4491", "C4492", "C4493", "C4494", "C4495", "C4496", "C4497", "C4498", "C4499", "C4509", "C4519", "C4531", "C4542", "C4562", "C4568", "C4569", "C4573", "C4574", "C4575", "C4582", "C4583", "C4585", "C4586", "C4587", "C4588", "C4591", "C4592", "C4593", "C4594", "C4595"]
+f1_keywords: ["C4413", "C4415", "C4416", "C4417", "C4418", "C4419", "C4421", "C4423", "C4424", "C4425", "C4426", "C4427", "C4438", "C4442", "C4443", "C4444", "C4446", "C4447", "C4448", "C4449", "C4450", "C4452", "C4453", "C4454", "C4455", "C4472", "C4474", "C4475", "C4476", "C4478", "C4480", "C4482", "C4483", "C4491", "C4492", "C4493", "C4494", "C4495", "C4496", "C4497", "C4498", "C4499", "C4509", "C4519", "C4531", "C4542", "C4562", "C4568", "C4569", "C4573", "C4574", "C4575", "C4582", "C4583", "C4585", "C4586", "C4587", "C4588", "C4591", "C4592", "C4593", "C4594", "C4595", "C4598", "C4599"]
+helpviewer_keywords: ["C4413", "C4415", "C4416", "C4417", "C4418", "C4419", "C4421", "C4423", "C4424", "C4425", "C4426", "C4427", "C4438", "C4442", "C4443", "C4444", "C4446", "C4447", "C4448", "C4449", "C4450", "C4451", "C4452", "C4453", "C4454", "C4455", "C4456", "C4457", "C4459", "C4472", "C4474", "C4475", "C4476", "C4478", "C4480", "C4482", "C4483", "C4491", "C4492", "C4493", "C4494", "C4495", "C4496", "C4497", "C4498", "C4499", "C4509", "C4519", "C4531", "C4542", "C4562", "C4568", "C4569", "C4573", "C4574", "C4575", "C4582", "C4583", "C4585", "C4586", "C4587", "C4588", "C4591", "C4592", "C4593", "C4594", "C4595", "C4598", "C4599"]
 ms.assetid: b07850a5-ae89-48ea-bf9a-f0e30939f9b9
 ---
 # Compiler warnings C4400 Through C4599
@@ -187,7 +187,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 3) C4594|'*type*': destructor will not be implicitly called if an exception is thrown|
 |Compiler warning (level 1) C4595|'*type*': behavior change: destructor will no longer be implicitly called if an exception is thrown|
 |[Compiler warning (level 4) C4596](../../error-messages/compiler-warnings/c4596.md)|'*identifier*': illegal qualified name in member declaration|
-|Compiler warning (error) C4597|undefined behavior: offsetof applied to a member of a virtual base|
+|[Compiler warning (error) C4597](c4597.md)|undefined behavior: offsetof applied to a member of a virtual base|
 |Compiler warning (level 1 and level 3) C4598|'#include "*header*"': header number *number* in the precompiled header does not match current compilation at that position|
 |Compiler warning (level 3) C4599|'*flag* *path*': command line argument number *number* does not match precompiled header|
 

@@ -150,14 +150,20 @@
           href: ../standard-library/chrono-literals.md
         - name: common_type struct
           href: ../standard-library/common-type-structure.md
+        - name: day class
+          href: day-class.md
         - name: duration class
           href: ../standard-library/duration-class.md
         - name: duration_values struct
           href: ../standard-library/duration-values-structure.md
+        - name: hh_mm_ss class
+          href: ../standard-library/hhmmss-class.md
         - name: leap_second class
           href: ../standard-library/leap-second-class.md
         - name: leap_second_info struct
           href: ../standard-library/leap-second-info-struct.md
+        - name: month class
+          href: ../standard-library/month-class.md
         - name: steady_clock struct
           href: ../standard-library/steady-clock-struct.md
         - name: system_clock struct
@@ -168,6 +174,15 @@
           href: ../standard-library/time-zone-class.md
         - name: treat_as_floating_point struct
           href: ../standard-library/treat-as-floating-point-structure.md
+        - name: weekday class
+          href: weekday-class.md
+        - name: weekday_last class
+          href: weekdaylast-class.md
+        - name: weekday_indexed
+          href: weekdayindexed-class.md
+        - name: year class
+          href: year-class.md
+
     - name: <cinttypes>
       href: ../standard-library/cinttypes.md
     - name: <ciso646>

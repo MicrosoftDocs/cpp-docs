@@ -42,7 +42,7 @@ The following code fragment demonstrates accessibility. In the first partial cla
 
 A partial definition of a class such as `MyClass` is only a declaration of MyClass. That is, it only introduces the name `MyClass`. `MyClass` can't be used in a way that requires a class definition, for example, knowing the size of `MyClass` or using a base or member of `MyClass`. `MyClass` is considered to be defined only when the compiler encounters a non-partial definition of `MyClass`.
 
-The following example demonstrates the declaration behavior of a partial class. After declaration #1, `MyClass` can be used as if it were written as the forward declaration, `ref class MyClass;`. Declaration #2 is equivalent to declaration #1.Declaration #3 is valid because it's a forward declaration to a class. But declaration #4 is invalid because
+The following example demonstrates the declaration behavior of a partial class. After declaration #1, `MyClass` can be used as if it were written as the forward declaration, `ref class MyClass;`. Declaration #2 is equivalent to declaration #1. Declaration #3 is valid because it's a forward declaration to a class. But declaration #4 is invalid because
 
 `MyClass` is not fully defined.
 

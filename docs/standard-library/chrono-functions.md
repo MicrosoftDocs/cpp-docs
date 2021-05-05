@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: &lt;chrono&gt; functions"
 title: "&lt;chrono&gt; functions"
-ms.date: 04/27/2021
+ms.date: 04/30/2021
 f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast", "chrono/std::from_stream", "chrono/std::chrono::duration_cast", "chrono/std::chrono::time_point_cast", "chrono/std::chrono::from_stream", "chrono/std::chrono::floor", "chrono/std::chrono::ceil", "chrono/std::chrono::round", "chrono/std::chrono::is_am", "chrono/std::chrono::is_pm", "chrono/std::chrono::make12", "chrono/std::chrono::make24", "chrono/std::chrono::get_leap_second_info", "chrono/std::chrono::get_tzdb", "chrono/std::chrono::get_tzdb_list", "chrono/std::chrono::locate_zone", "chrono/std::chrono::current_zone", "chrono/std::chrono::reload_tzdb", "chrono/std::chrono::remote_version"]
 helpviewer_keywords: ["std::duration_cast function", "std::time_point_cast function", "std::chrono::duration_cast function", "std::chrono::time_point_cast function", "std::chrono::from_stream function", "std::chrono::floor function", "std::chrono::ceil function", "std::chrono::round function", "std::chrono::is_am function", "std::chrono::is_pm function", "std::chrono::make12 function", "std::chrono::make24 function", "std::chrono::get_leap_second_info function", "std::chrono::get_tzdb function", "std::chrono::get_tzdb_list function", "std::chrono::locate_zone function", "std::chrono::current_zone function", "std::chrono::reload_tzdb function", "std::chrono::remote_version function"]
 ---
@@ -147,11 +147,10 @@ Returns the nearest `duration` representable in `ToDuration` to the parameter *`
 
 ## <a name="std-chrono-from-stream"></a> `from_stream`
 
-Casts a [time_point](../standard-library/time-point-class.md) object to a specified type.
-Parse the input stream into one of the `std::chrono` time or interval types such as `day`, `month`, or `year` using the specified format.
+Parse the input stream into one of the `std::chrono` time or interval types such as `day`, `month`, `weekday`, `year`, and so on, using the specified format.
 
 ```cpp
-// 1) day
+// 1) day C++20
 template<class charT class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -167,7 +166,7 @@ from_stream(
     duration<Rep, Period>& dur, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
-// 3) file_time
+// 3) file_time Since C++ 20
 template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -175,7 +174,7 @@ from_stream(
     file_time<Duration>& ft, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
-// 4) gps_time
+// 4) gps_time Since C++ 20
 template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -183,7 +182,7 @@ from_stream(
     gps_time<Duration>& gt, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
-// 5) local_time
+// 5) local_time Since C++ 20
 template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -191,7 +190,7 @@ from_stream(
     local_time<Duration>& lt, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
-// 6) month
+// 6) month C++20
 template<class charT, class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -199,7 +198,7 @@ from_stream(
     month& m, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
-// 7) month_day
+// 7) month_day C++20
 template<class charT, class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -207,7 +206,7 @@ from_stream(
     month_day& md, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
-// 8) utc_time
+// 8) utc_time  Since C++ 20
 template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -215,7 +214,7 @@ from_stream(
     utc_time<Duration>& ut, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
-// 9) system_time
+// 9) system_time Since C++ 20
 template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -223,7 +222,7 @@ from_stream(
     system_time<Duration>& st, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
-// 10) tai_time
+// 10) tai_time Since C++ 20
 template<class charT, class traits, class Duration, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -231,7 +230,7 @@ from_stream(
     tai_time<Duration>& tt, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
-// 11) weekday
+// 11) weekday C++20
 template<class charT, class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -239,7 +238,7 @@ from_stream(
     weekday& wd, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
-// 12) year
+// 12) year C++20
 template<class charT, class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -247,7 +246,7 @@ from_stream(
     year& y, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
-// 12) year_month
+// 12) year_month C++20
 template<class charT, class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -255,7 +254,7 @@ from_stream(
     year_month& ym, basic_string<charT, traits, Alloc>* abbrev = nullptr,
     minutes* offset = nullptr);
 
-// 13) year_month_day
+// 13) year_month_day C++20
 template<class charT, class traits, class Alloc = allocator<charT>>
 basic_istream<charT, traits>&
 from_stream(
@@ -341,7 +340,8 @@ The input stream, *`is`*
 ```cpp
 #include <chrono>
 #include <iostream>
-int Main()
+
+int main()
 {
     std::istringstream str{ "22" };
     std::basic_istream<char> stream{ str.rdbuf() };
@@ -355,6 +355,13 @@ int Main()
 ```output
 22
 ```
+
+### Remarks
+
+12) If the parse fails to decode a valid year, `is.setstate(ios_base::failbit)`
+is called and `y` isn't modified. If `%Z` is used and successfully parsed, that value will be assigned to
+`*abbrev` if `abbrev` is non-null. If `%z` (or a modified variant) is used and successfully parsed, that value
+will be assigned to `*offset` if `offset` is non-null.
 
 ## <a name="parse-format-strings"></a> Parse format strings
 
@@ -387,8 +394,8 @@ The format may be one of these strings:
 | Specifier | Description |
 |--|--|
 | `%j` |  If the type being formatted is a specialization of duration, the decimal number of days without padding. Otherwise, the day of the year as a decimal number. `Jan 1` is `001`. If the result is fewer than three digits, it's left-padded with `0` (zero) to three digits. |
-| `%U`<br>`%0U` | The week number of the year as a decimal number. The first Sunday of the year is the first day of week `01`. Days of the same year before that week are in week `00`. If the result is a single digit, it's prefixed with `0` (zero).<br>`%OU` (letter `O`, not zero) produces the locale’s alternative representation. |
-| `%W`<br>`%OW` |The week number of the year as a decimal number. The first Monday of the year is the first day of week `01`. Days of the same year before that week are in week `00`.<br>If the result is a single digit, it's prefixed with `0` (zero).<br>``%OW` (letter `O`, not zero) produces the locale’s alternative representation. |
+| `%U`<br>`%0U` | The week number of the year as a decimal number. The first Sunday of the year is the first day of week `01`. Days of the same year before that week are in week `00`. If the result is a single digit, it's prefixed with `0` (zero).<br>`%OU` (letter `O`, not zero) produces the locale's alternative representation. |
+| `%W`<br>`%OW` |The week number of the year as a decimal number. The first Monday of the year is the first day of week `01`. Days of the same year before that week are in week `00`.<br>If the result is a single digit, it's prefixed with `0` (zero).<br>`%OW` (letter `O`, not zero) produces the locale's alternative representation. |
 
 ### Time of day
 
@@ -449,6 +456,38 @@ If *`abbrev`* isn't `nullptr`, and the format specifier `%Z` is specified, and t
 
 *`offset`*\
 If *`offset`* isn't `nullptr`, and the format specifier `%z` or modified variant such as `%Ez` or `%0z` is specified, and the parse is successful, then *`offset`* points to the parsed value.
+
+### Flags by type
+
+| Class | Specifier/Flag |
+|--|--|
+| [`day`](day-class.md) | d, e, |
+| [`month`](month-class.md) | b, h, B, m |
+| [`year`](year-class.md) | Y, y, C |
+| [`weekday`](weekday-class.md) | a, A, u, w |
+| [`weekday_indexed`](weekdayindexed-class.md) | a, A, u, w |
+| [`weekday_last`]() | a, A, u, w |
+| `month_day` | B, d, j, e, b, h, m |
+| `month_day_last` | B, d, j, e, b, h, m |
+| `month_weekday` | b, B, h, m, a, A, u, w |
+| `month_weekday_last` | b, B, h, m, a, A, u, w |
+| `year_month` | Y, y, B, g, G, h, C, b, m |
+| `year_month_day` | D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w |
+| `year_month_day_last` | D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w |
+| `year_month_weekday` | D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w |
+| `year_month_weekday_last` | D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w |
+| [`hh_mm_ss`](hhmmss-class.md) | H, I, M, S, r, R, T, p |
+| [`duration`](duration-class.md) | j, H, I, M, S, r, R, T, p, [q, Q  only for format, not parse] |
+| `sys_time` | Z, z, c, x, X, D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w, H, I, M, S, r, R, T, p |
+| `utc_time` | Z, z, c, x, X, D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w, H, I, M, S, r, R, T, p |
+| `tai` | ¬_time	Z, z, c, x, X, D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w, H, I, M, S, r, R, T, p |
+| `gps_time` | Z, z, c, x, X, D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w, H, I, M, S, r, R, T, p |
+| `file_time` | Z, z, c, x, X, D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w, H, I, M, S, r, R, T, p |
+| `local_time` | c, x, X, D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w, H, I, M, S, r, R, T, p |
+| `local_time_format_t` | z, Z, c, x, X, D, F, Y, C, y, b, B, h, m, d, e, a, A, u, w, H, I, M, S, r, R, T, p, g, G, U, V, W |
+| `sys_info` | z, Z |
+| `local_info` | z, Z |
+| `zoned_time` | z, Z, c, x, X, D, F, Y, C, y, b, B, h, m, d, e, a, A, u, w, H, I, M, S, r, R, T, p, g, G, U, V, W |
 
 ## <a name="std-chrono-time-point-cast"></a> `time_point_cast`
 

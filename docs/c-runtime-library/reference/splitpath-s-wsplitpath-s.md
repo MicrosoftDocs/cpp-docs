@@ -81,7 +81,7 @@ Base filename (without extension). You can pass **NULL** for this parameter if y
 The size of the *fname* buffer in single-byte or wide characters. If *fname* is **NULL**, this value must be 0.
 
 *ext*<br/>
-Filename extension, including leading period (**.**).You can pass **NULL** for this parameter if you do not need the filename extension.
+Filename extension, including leading period (**.**). You can pass **NULL** for this parameter if you do not need the filename extension.
 
 *extNumberOfElements*<br/>
 The size of *ext* buffer in single-byte or wide characters. If *ext* is **NULL**, this value must be 0.

@@ -24,7 +24,6 @@ namespace std::chrono {
         constexpr seconds value() const noexcept;
     };
 }
-
 ```
 
 ## Members
