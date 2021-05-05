@@ -49,7 +49,7 @@ In the table, "**Tools** > **Options** enabled" means **Use CMakePresets.json to
 
 ## Modify automatic configuration and cache notifications
 
-By default, Visual Studio automatically invokes configuration each time the active Target System or Configure Preset changes. You can modify this behavior by selecting **Never run configure step automatically** in **Tools** > **Options** > **CMake** > **General**. You can also disable all CMake cache notifications (gold bars) by clearing **Show CMake cache notifications**.
+By default, Visual Studio automatically invokes `configure` each time the active Target System or Configure Preset changes. You can modify this behavior by selecting **Never run configure step automatically** in **Tools** > **Options** > **CMake** > **General**. You can also disable all CMake cache notifications (gold bars) by clearing **Show CMake cache notifications**.
 
 ## Default Configure Presets
 
@@ -330,7 +330,7 @@ If you want to use the same Configure Preset with both Windows and the WSL1 tool
 ```
 
 > [!NOTE]
-> In Visual Studio 2019, only the WSL1 toolset is supported. You'll see this behavior any time you invoke configuration on both Windows and WSL.
+> In Visual Studio 2019, only the WSL1 toolset is supported. You'll see this behavior any time you invoke `configure` on both Windows and WSL.
 
 ## Enable vcpkg integration
 
