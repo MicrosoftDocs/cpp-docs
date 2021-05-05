@@ -9,7 +9,7 @@ ms.topic: reference
 
 CMake supports two files that allow users to specify common configure, build, and test options and share them with others: `CMakePresets.json` and `CMakeUserPresets.json`. Use these files to drive CMake in Visual Studio and Visual Studio Code, in a continuous integration (CI) pipeline, and from the command line. 
 
-`CMakePresets.json` is for saving project-wide builds and is supported in Visual Studio 2019 version 16.10 or later. `CMakeUserPresets.json` is for developers to save their own local builds.
+`CMakePresets.json` is for saving project-wide builds. `CMakeUserPresets.json` is for developers to save their own local builds. Both files are supported in Visual Studio 2019 version 16.10 or later.
 
 This article contains information about `CMakePresets.json` integration with Visual Studio. Here are helpful links:
 
