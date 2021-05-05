@@ -307,7 +307,7 @@ An equivalence class in a bracket expression adds all the characters and *collat
 
 ### File Format Escape
 
-A file format escape consists of the usual C language character escape sequences, "\\\\", "\a", "\b", "\f", "\n", "\r", "\t", "\v".These have the usual meanings, that is, backslash, alert, backspace, form feed, newline, carriage return, horizontal tab, and vertical tab, respectively. In `ECMAScript`, "\a" and "\b" are not allowed. ("\\\\" is allowed, but it is an identity escape, not a file format escape).
+A file format escape consists of the usual C language character escape sequences, "\\\\", "\a", "\b", "\f", "\n", "\r", "\t", "\v". These have the usual meanings, that is, backslash, alert, backspace, form feed, newline, carriage return, horizontal tab, and vertical tab, respectively. In `ECMAScript`, "\a" and "\b" are not allowed. ("\\\\" is allowed, but it is an identity escape, not a file format escape).
 
 ### Hexadecimal Escape Sequence
 
