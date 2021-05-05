@@ -243,9 +243,9 @@ You can also set compilers with a CMake toolchain file. Toolchain files can be s
 
 ### Select your generator
 
-The Windows and Linux Configure Preset templates both specify Ninja as the default generator. Other common generators are the [Visual Studio generators](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html?highlight=visual%20studio%20generators#visual-studio-generators) on Windows and Unix Makefiles on Linux and macOS. You can specify a new generator with the `generator` option in a Configure Preset. It's equivalent to passing `-G` to CMake from the command line.
+The Windows and Linux Configure Preset templates both specify Ninja as the default generator. Other common generators are the [Visual Studio Generators](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html?highlight=visual%20studio%20generators#visual-studio-generators) on Windows and Unix Makefiles on Linux and macOS. You can specify a new generator with the `generator` option in a Configure Preset. It's equivalent to passing `-G` to CMake from the command line.
 
-Set `architecture.strategy` and `toolset.strategy` to `set` when you're building with a Visual Studio generator. For more information, see [CMake generators](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html#:~:text=A%20CMake%20Generator%20is%20responsible%20for%20writing%20the,what%20native%20build%20system%20is%20to%20be%20used).
+Set `architecture.strategy` and `toolset.strategy` to `set` when you're building with a Visual Studio Generator. For more information, see [CMake generators](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html#:~:text=A%20CMake%20Generator%20is%20responsible%20for%20writing%20the,what%20native%20build%20system%20is%20to%20be%20used).
 
 ### Select your configuration type
 
@@ -256,13 +256,13 @@ You can set the configuration type (`Debug` or `Release`) for single configurati
 You can set the target architecture (x64, Win32, ARM64, or ARM) by using `architecture.value`. It's equivalent to passing `-A` to CMake from the command line. For more information, see [Platform Selection](https://cmake.org/cmake/help/latest/generator/Visual%20Studio%2016%202019.html#platform-selection).
 
 > [!NOTE]
-> Currently, Visual Studio generators expect the Win32 syntax and command-line generators (like Ninja) expect the x86 syntax when you're building for x86.
+> Currently, Visual Studio Generators expect the Win32 syntax and command-line generators (like Ninja) expect the x86 syntax when you're building for x86.
 
 You can set the host architecture (x64 or x86) and toolset by using `toolset.value`. It's equivalent to passing `-T` to CMake from the command line. For more information, see [Toolset Selection](https://cmake.org/cmake/help/latest/generator/Visual%20Studio%2016%202019.html#toolset-selection).
 
 The `architecture.strategy` and `toolset.strategy` values tell CMake how to handle the architecture and toolset fields. `set` means CMake will set the respective value, and `external` means CMake won't set the respective value.
 
-You should use `set` with IDE generators like the Visual Studio generator. You should use `external` with command-line generators like Ninja. These values allow vendors like Visual Studio to source the required environment before CMake is invoked. For more information about the architecture and toolset fields, see the [list of Configure Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#configure-preset).
+You should use `set` with IDE generators like the Visual Studio Generator. You should use `external` with command-line generators like Ninja. These values allow vendors like Visual Studio to source the required environment before CMake is invoked. For more information about the architecture and toolset fields, see the [list of Configure Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#configure-preset).
 
 For a full list of IDE generators that support the architecture field, see [`CMAKE_GENERATOR_PLATFORM`](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_PLATFORM.html). For a full list of IDE generators that support the toolset field, see [`CMAKE_GENERATOR_TOOLSET`](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_TOOLSET.html).
 
@@ -421,7 +421,7 @@ You can use the same `CMakePresets.json` and `CMakeUserPresets.json` files to in
 
 ### Sourcing the environment when building with command-line generators on Windows
 
-It's up to the user to configure the environment before CMake is invoked in building with a command-line generator. If you're building with Ninja and the Visual C++ toolset on Windows, set the environment before CMake is called to generate the build system. You can do it by calling `vcvarsall.bat` with the `architecture` argument. The `architecture` argument specifies the host and target architecture to use. For more information, see [`vcvarsall` syntax](/cpp/build/building-on-the-command-line#vcvarsall-syntax). If you build on Linux or on Windows with a Visual Studio generator, you don't need to take this step.
+It's up to the user to configure the environment before CMake is invoked in building with a command-line generator. If you're building with Ninja and the Visual C++ toolset on Windows, set the environment before CMake is called to generate the build system. You can do it by calling `vcvarsall.bat` with the `architecture` argument. The `architecture` argument specifies the host and target architecture to use. For more information, see [`vcvarsall` syntax](/cpp/build/building-on-the-command-line#vcvarsall-syntax). If you build on Linux or on Windows with a Visual Studio Generator, you don't need to take this step.
 
 It's the same step that Visual Studio takes for you when the IDE invokes CMake. Visual Studio parses the active Configure Preset for the host and target architecture specified by `toolset` and `architecture`. Visual Studio then sources the specified environment from `vcvarsall.bat`. When you build from the Windows command line with Ninja, you'll need to take this step yourself.
 
