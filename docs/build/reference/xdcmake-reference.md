@@ -14,9 +14,9 @@ xdcmake.exe is a program that compiles .xdc files into an .xml file. An .xdc fil
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Open the **Configuration Properties** folder.
+1. Select the **Configuration Properties** > **XML Document Comments** property page.
 
-1. Click the **XML Document Comments** property page.
+1. Enter options in the property page.
 
 > [!NOTE]
 > xdcmake.exe options at the command line differ from the options when xdcmake.exe is used in the development environment (property pages). For information on using xdcmake.exe in the development environment, see [XML Document Generator Tool Property Pages](xml-document-generator-tool-property-pages.md).
@@ -28,17 +28,17 @@ xdcmake `input_filename options`
 ## Parameters
 
 *input_filename*<br/>
-The file name of the .xdc files used as input to xdcmake.exe. Specify one or more .xdc files or use *.xdc to use all .xdc files in the current directory.
+The file name of the *`.xdc`* files used as input to xdcmake.exe. Specify one or more *`.xdc`* files or use *.xdc to use all *`.xdc`* files in the current directory.
 
 *options*<br/>
 Zero or more of the following:
 
 |Option|Description|
 |------------|-----------------|
-|/?, /help|Display help for xdcmake.exe.|
-|/assembly:*filename*|Lets you specify the value of the \<assembly> tag in the .xml file.  By default, the value of the \<assembly> tag is the same as the filename of the .xml file.|
+|`/?`, `/help`|Display help for xdcmake.exe.|
+|`/assembly:filename`|Lets you specify the value of the \<assembly> tag in the .xml file.  By default, the value of the \<assembly> tag is the same as the filename of the .xml file.|
 |/nologo|Suppress copyright message.|
-|/out:*filename*|Lets you specify the name of the .xml file.  By default, the name of the .xml file is the filename of the first .xdc file processed by xdcmake.exe.|
+|`/out:filename`|Lets you specify the name of the .xml file.  By default, the name of the .xml file is the filename of the first .xdc file processed by xdcmake.exe.|
 
 ## Remarks
 

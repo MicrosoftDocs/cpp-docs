@@ -37,9 +37,9 @@ The **/constexpr** options are available beginning in Visual Studio 2015.
 
 1. Open your project's **Property Pages** dialog box.
 
-2. Under **Configuration Properties**, expand the **C/C++** folder and choose the **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-3. Enter any **/constexpr** compiler options in the **Additional Options** box. Choose **OK** or **Apply** to save your changes.
+1. Enter any **/constexpr** compiler options in the **Additional Options** box. Choose **OK** or **Apply** to save your changes.
 
 ### To set this compiler option programmatically
 
