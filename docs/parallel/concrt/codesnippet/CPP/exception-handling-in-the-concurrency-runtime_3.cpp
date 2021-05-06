@@ -43,7 +43,7 @@ int wmain()
 
     }).then([](task<int> previousTask)
     {
-        // This continuation is run because it is value-based.
+        // This continuation is run because it is task-based.
         try
         {
             // The call to task::get rethrows the exception.

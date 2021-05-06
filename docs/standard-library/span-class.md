@@ -45,7 +45,7 @@ class span;
 | [reverse_iterator](#reverse_iterator) | The type of a reverse iterator for a span. |
 | [size_type](#size_type) | The type for the result of the unsigned distance between two elements in the span. |
 | [value_type](#value_type) | The type of an element, without **`const`** or **`volatile`** qualifications. |
-| **Constructors** | **Description** |
+| **Constructor** | **Description** |
 |[span](#span)| Construct a `span`.|
 | **Iterator support** | **Description** |
 |[begin](#begin) | Get an iterator pointing to the first element in the span.|
@@ -77,7 +77,7 @@ Unlike `array` or `vector`, a span doesn't "own" the elements inside it. A span 
 
 ## Requirements
 
-**Header:** \<span>
+**Header:** \<span> (since C++ 20)
 
 **Namespace:** std
 
@@ -883,29 +883,29 @@ span(const span<T, OtherExtent>& other) noexcept
 ### Parameters
 
 *arr*\
-Construct a span from an array.
+Construct a `span` from an array.
 
 *count*\
-Number of elements that will be in the span.
+Number of elements that will be in the `span`.
 
 *first*\
-Iterator to the first element in the span.
+Iterator to the first element in the `span`.
 
 *last*\
-Iterator to just past the last element in the span.
+Iterator to just past the last element in the `span`.
 
 *N*\
-The number of elements that will be in the span.
+The number of elements that will be in the `span`.
 
 *other*\
-Make a copy of this span.
+Make a copy of this `span`.
 
 *r*\
-Construct a span from this range.
+Construct a `span` from the range `R`.
 
 ### Remarks
 
-A span doesn't free storage for items in the span because it doesn't own the storage of the objects within it.
+A `span` doesn't free storage for items in the `span` because it doesn't own the storage of the objects within it.
 
 |Constructor  | Description  |
 |---------|---------|

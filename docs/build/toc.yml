@@ -61,6 +61,10 @@
       href: ../build/clang-support-cmake.md
     - name: Configure a Linux CMake project
       href: ../build/../linux/cmake-linux-project.md
+    - name: Configure and build with CMake Presets
+      href: ../build/cmake-presets-vs.md
+    - name: CMakePresets.json reference
+      href: ../build/cmake-presets-json-reference.md
     - name: Customize CMake build settings
       href: ../build/customize-cmake-settings.md
     - name: Configure CMake debugging sessions
@@ -84,6 +88,13 @@
       href: ../build/vcpkg-command-line-reference.md
 - name: "C++ Build Insights"
   href: ../build-insights/get-started-with-cpp-build-insights.md
+- name: "Build and import header units"
+  expanded: false
+  items:
+    - name: "Walkthrough: Build and import header units in Visual C++ projects"
+      href: ../build/walkthrough-header-units.md
+    - name: "Walkthrough: Import STL libraries as header units"
+      href: ../build/walkthrough-import-stl-header-units.md
 - name: Precompiled header files
   href: ../build/creating-precompiled-header-files.md
 - name: C++ release builds
@@ -602,6 +613,8 @@
                   href: ../build/reference/gz-enable-stack-frame-run-time-error-checking.md
                 - name: /H (Restrict length of external names)
                   href: ../build/reference/h-restrict-length-of-external-names.md
+                - name: /headerName (Build a header unit from the specified header)
+                  href: ../build/reference/headername.md
                 - name: /headerUnit (Use header unit IFC)
                   href: ../build/reference/headerunit.md
                 - name: /HELP (Compiler command-line help)
@@ -624,9 +637,9 @@
                   href: ../build/reference/ln-create-msil-module.md
                 - name: /MD, /MT, /LD (Use Run-time library)
                   href: ../build/reference/md-mt-ld-use-run-time-library.md
-                - name: /module:exportHeader (Create header units)
+                - name: /exportHeader (Create header units)
                   href: ../build/reference/module-exportheader.md
-                - name: /module:reference (Use named module IFC)
+                - name: /reference (Use named module IFC)
                   href: ../build/reference/module-reference.md
                 - name: /MP (Build with multiple processes)
                   href: ../build/reference/mp-build-with-multiple-processes.md
@@ -694,8 +707,10 @@
                   href: ../build/reference/showincludes-list-include-files.md
                 - name: /source-charset (Set source character set)
                   href: ../build/reference/source-charset-set-source-character-set.md
-                - name: /sourceDependencies (Report source-level dependencies)
+                - name: /sourceDependencies (List all source-level dependencies)
                   href: ../build/reference/sourcedependencies.md
+                - name: /sourceDependencies:directives (List module and header unit dependencies)
+                  href: ../build/reference/sourcedependencies-directives.md
                 - name: /std (Specify language standard version)
                   href: ../build/reference/std-specify-language-standard-version.md
                 - name: /Tc, /Tp, /TC, /TP (Specify source file type)

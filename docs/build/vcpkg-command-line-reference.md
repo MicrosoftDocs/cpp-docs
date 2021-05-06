@@ -45,5 +45,5 @@ A quick reference to the commands available in vcpkg.
 [Install vcpkg](install-vcpkg.md)\
 [Integrate vcpkg](integrate-vcpkg.md)\
 [Manage libraries with vcpkg](manage-libraries-with-vcpkg.md)\
-[Quick start](https://github.com/microsoft/vcpkg/blob/master/docs/index.md)\
+[Quick start](https://github.com/microsoft/vcpkg/blob/master/docs/README.md)\
 [Frequently asked questions](https://github.com/microsoft/vcpkg/blob/master/docs/about/faq.md)

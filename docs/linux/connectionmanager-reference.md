@@ -61,6 +61,10 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 - **`version`**
 
   Displays version information.
+  
+- **`update`** \[*default* \| *all* \| *connection_id* \| *user\@host* \[**`--port`** *port*]] \[**`--previous`**] [**`--fingerprint`**]
+
+  Added in Visual Studio 16.10. Updates the host key fingerprint of the specified connection(s). 
 
 ### Options
 
@@ -95,6 +99,14 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 - **`-i`**
 
   Same as **`--privatekey`**.
+  
+- **`--previous`**
+
+  Indicates that the connection(s) will be read from the previous version of connection manager, updated, and written to the new version. 
+  
+- **`--fingerprint`**
+
+  The host key fingerprint presented by the server. Use this option with **`list`** to view a connection's fingerprint.
 
 ## Examples
 

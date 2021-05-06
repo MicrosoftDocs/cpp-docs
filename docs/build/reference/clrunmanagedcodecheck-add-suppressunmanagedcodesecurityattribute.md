@@ -33,11 +33,7 @@ See [Secure Coding Guidelines for Unmanaged Code](/dotnet/framework/security/sec
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Expand the **Configuration Properties** node.
-
-1. Expand the **Linker** node.
-
-1. Select the **Advanced** property page.
+1. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
 
 1. Modify the **CLR Unmanaged Code Check** property.
 

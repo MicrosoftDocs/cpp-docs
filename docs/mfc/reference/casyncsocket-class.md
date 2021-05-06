@@ -423,7 +423,7 @@ A bitmask which specifies a combination of network events in which the applicati
 - FD_CLOSE Want to receive notification of socket closure.
 
 *lpszSockAddress*<br/>
-A pointer to a string containing the network address of the connected socket, a dotted number such as "128.56.22.8".Passing the NULL string for this parameter indicates the `CAsyncSocket` instance should listen for client activity on all network interfaces.
+A pointer to a string containing the network address of the connected socket, a dotted number such as "128.56.22.8". Passing the NULL string for this parameter indicates the `CAsyncSocket` instance should listen for client activity on all network interfaces.
 
 ### Return Value
 

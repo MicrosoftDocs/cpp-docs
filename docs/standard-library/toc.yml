@@ -150,18 +150,39 @@
           href: ../standard-library/chrono-literals.md
         - name: common_type struct
           href: ../standard-library/common-type-structure.md
+        - name: day class
+          href: day-class.md
         - name: duration class
           href: ../standard-library/duration-class.md
         - name: duration_values struct
           href: ../standard-library/duration-values-structure.md
+        - name: hh_mm_ss class
+          href: ../standard-library/hhmmss-class.md
+        - name: leap_second class
+          href: ../standard-library/leap-second-class.md
+        - name: leap_second_info struct
+          href: ../standard-library/leap-second-info-struct.md
+        - name: month class
+          href: ../standard-library/month-class.md
         - name: steady_clock struct
           href: ../standard-library/steady-clock-struct.md
         - name: system_clock struct
           href: ../standard-library/system-clock-structure.md
         - name: time_point class
           href: ../standard-library/time-point-class.md
+        - name: time_zone class
+          href: ../standard-library/time-zone-class.md
         - name: treat_as_floating_point struct
           href: ../standard-library/treat-as-floating-point-structure.md
+        - name: weekday class
+          href: weekday-class.md
+        - name: weekday_last class
+          href: weekdaylast-class.md
+        - name: weekday_indexed
+          href: weekdayindexed-class.md
+        - name: year class
+          href: year-class.md
+
     - name: <cinttypes>
       href: ../standard-library/cinttypes.md
     - name: <ciso646>
@@ -844,6 +865,11 @@
           href: ../standard-library/uniform-real-distribution-class.md
         - name: weibull_distribution class
           href: ../standard-library/weibull-distribution-class.md
+    - name: <ranges>
+      expanded: false
+      items: 
+        - name: <ranges>
+          href: ../standard-library/ranges.md
     - name: <ratio>
       href: ../standard-library/ratio.md
     - name: <regex>

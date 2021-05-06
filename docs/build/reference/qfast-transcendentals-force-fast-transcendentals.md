@@ -26,9 +26,7 @@ This option is incompatible with **/fp:strict**. See [/fp (Specify Floating-Poin
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Type the compiler option in the **Additional Options** box.
 

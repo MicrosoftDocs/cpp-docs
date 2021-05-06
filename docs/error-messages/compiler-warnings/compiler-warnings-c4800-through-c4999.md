@@ -1,9 +1,9 @@
 ---
 title: "Compiler warnings C4800 Through C5999"
 description: "Table of Microsoft C/C++ compiler warnings C4800 through C5999."
-ms.date: 10/18/2020
-f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5050", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207"]
-helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4841", "C4842", "C4843", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5037", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5050", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221"]
+ms.date: 04/18/2021
+f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221"]
+helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221"]
 ---
 # Compiler warnings C4800 through C5999
 
@@ -37,14 +37,15 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 2) C4826 | Conversion from '*type1*' to '*type2*' is sign-extended. This may cause unexpected runtime behavior. |
 | Compiler warning (level 3) C4827 | A public '`ToString`' method with 0 parameters should be marked as `virtual` and `override` |
 | [Compiler warning (level 1) C4829](compiler-warning-level-1-c4829.md) | Possibly incorrect parameters to function `main`. Consider '`int main(Platform::Array<Platform::String^>^ argv)`' |
+| [Compiler warning (level 1) C4834](c4834.md) | discarding return value of function with 'nodiscard' attribute |
 | [Compiler warning (level 1) C4835](compiler-warning-level-1-c4835.md) | '*variable*': the initializer for exported data will not be run until managed code is first executed in the host assembly |
 | Compiler warning (level 4) C4837 | trigraph detected: '`??`*character*' replaced by '*character*' |
 | [Compiler warning (level 1) C4838](compiler-warning-level-1-c4838.md) | conversion from '*type_1*' to '*type_2*' requires a narrowing conversion |
 | [Compiler warning (level 3) C4839](compiler-warning-level-3-c4839.md) | non-standard use of class '*type*' as an argument to a variadic function |
 | [Compiler warning (level 4) C4840](compiler-warning-level-4-c4840.md) | non-portable use of class '*type*' as an argument to a variadic function |
-| Compiler warning (level 4) C4841 | non-standard extension used: compound member designator used in `offsetof` |
+| [Compiler warning (level 4) C4841](c4841.md) | non-standard extension used: compound member designator used in `offsetof` |
 | Compiler warning (level 4) C4842 | the result of '`offsetof`' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases |
-| Compiler warning C4843 | '*type1*': An exception handler of reference to array or function type is unreachable, use '*type2*' instead |
+| [Compiler warning (level 4) C4843](c4843.md) | '*type1*': An exception handler of reference to array or function type is unreachable, use '*type2*' instead |
 | Compiler warning C4844 | '`export module` *`module_name`*`;`' is now the preferred syntax for declaring a module interface |
 | Compiler warning (level 4) C4845 | '`__declspec(no_init_all)`' is ignored if '`/d1initall[0|1|2|3]`' was not specified on the command line |
 | Compiler warning (level 4) C4846 | '*value*' is not a valid argument for '`/d1initall`': command-line flag ignored |
@@ -144,7 +145,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning C5034 | use of intrinsic '*intrinsic*' causes function *function-name* to be compiled as guest code |
 | Compiler warning C5035 | use of feature '*feature*' causes function *function-name* to be compiled as guest code |
 | Compiler warning (level 1) C5036 | varargs function pointer conversion when compiling with `/hybrid:x86arm64` '*type1*' to '*type2*' |
-| Compiler warning (error) C5037 | '*member-function*': an out-of-line definition of a member of a class template cannot have default arguments |
+| [Compiler warning (error) C5037](c5037.md) | '*member-function*': an out-of-line definition of a member of a class template cannot have default arguments |
 | [Compiler warning (level 4) C5038](c5038.md) | data member '*member1*' will be initialized after data member '*member2*' |
 | Compiler warning (level 4) C5039 | '*function*': pointer or reference to potentially throwing function passed to `extern C` function under `-EHc`. Undefined behavior may occur if this function throws an exception. |
 | Compiler warning (level 3) C5040 | dynamic exception specifications are valid only in C++14 and earlier; treating as noexcept(false) |
@@ -157,7 +158,7 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 1) C5047 | use of nonstandard `__if_exists` with modules is not supported |
 | Compiler warning (level 1) C5048 | Use of macro '*macroname*' may result in non-deterministic output |
 | Compiler warning (level 1) C5049 | '*string*': Embedding a full path may result in machine-dependent output |
-| Compiler warning (level 1) C5050 | Possible incompatible environment while importing module '*module_name*': *issue* |
+| [Compiler warning (level 1) C5050](c5050.md) | Possible incompatible environment while importing module '*module_name*': *issue* |
 | Compiler warning C5051 | attribute 'attribute-name' requires at least 'standard-level'; ignored |
 | Compiler warning C5052 | Keyword 'keyword-name' was introduced in C++\<version> and requires use of the 'option-name' command-line option |
 | Compiler warning C5053 | support for '`explicit(<expr>)`' in C++17 and earlier is a vendor extension |
@@ -201,7 +202,6 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning C5219 | implicit conversion from '*type-1*' to '*type-2*', possible loss of data |
 | Compiler warning C5220 | '*name*': a non-static data member with a volatile qualified type no longer implies that compiler generated copy/move constructors and copy/move assignment operators are not trivial |
 | Compiler warning C5221 | `xfg::rename` is deprecated. |
-
 
 ## See also
 

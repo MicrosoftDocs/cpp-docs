@@ -34,7 +34,7 @@ Here the compiler (cl.exe) automatically invokes the C++ preprocessor and the li
 
 ## Build systems and projects
 
-Most real-world programs use some kind of *build system* to manage complexities of compiling multiple source files for multiple configurations (debug vs. release), multiple platforms (x86, x64, ARM, and so on), custom build steps, and even multiple executables that must be compiled in a certain order. You make settings in a build configuration file(s), and the build system accepts that file as input before it invoke the compiler. The set of source code files and build configuration files needed to build an executable file is called a *project*.
+Most real-world programs use some kind of *build system* to manage complexities of compiling multiple source files for multiple configurations (debug vs. release), multiple platforms (x86, x64, ARM, and so on), custom build steps, and even multiple executables that must be compiled in a certain order. You make settings in a build configuration file(s), and the build system accepts that file as input before it invokes the compiler. The set of source code files and build configuration files needed to build an executable file is called a *project*.
 
 The following list shows various options for Visual Studio Projects - C++:
 

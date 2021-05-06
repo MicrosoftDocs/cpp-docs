@@ -21,9 +21,7 @@ Use the value that is specified in `filename` to override the default .winmd fil
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **Linker** folder.
-
-1. Select the **Windows Metadata** property page.
+1. Select the **Configuration Properties** > **Linker** > **Windows Metadata** property page.
 
 1. In the **Windows Metadata File** box, enter the file location.
 

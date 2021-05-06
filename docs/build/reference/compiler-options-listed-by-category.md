@@ -103,6 +103,18 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/u`](u-u-undefine-symbols.md) | Removes all predefined macros. |
 | [`/X`](x-ignore-standard-include-paths.md) | Ignores the standard include directory. |
 
+## Header units
+
+| Option | Purpose |
+|--|--|
+| [`/exportHeader`](module-exportheader.md) | Create the header units files (*`.ifc`*) specified by the input arguments. |
+| [`/headerUnit`](headerunit.md) | Specify where to find the header unit file (`.ifc`) for the specified header. |
+| [`/headerName`](headername.md) | Build a header unit from the specified header. |
+| [`/reference`](module-reference.md) | Use named module IFC. |
+| [`/sourceDependencies`](sourcedependencies.md) | List all source-level dependencies. |
+| [`/sourceDependencies:directives`](sourcedependencies-directives.md) | List module and header unit dependencies. |
+| [`/translateInclude`](translateinclude.md) | Treat `#include` as `import`. |
+
 ## Language
 
 | Option | Purpose |
@@ -165,7 +177,6 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/nologo`](nologo-suppress-startup-banner-c-cpp.md) | Suppresses display of sign-on banner. |
 | [`/sdl`](sdl-enable-additional-security-checks.md) | Enables additional security features and warnings. |
 | [`/showIncludes`](showincludes-list-include-files.md) | Displays a list of all include files during compilation. |
-| [`/sourceDependencies`](sourcedependencies.md) | List headers, modules, and other source dependencies. |
 | [`/Tc`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies a C source file. |
 | [`/TC`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies all source files are C. |
 | [`/Tp`](tc-tp-tc-tp-specify-source-file-type.md) | Specifies a C++ source file. |

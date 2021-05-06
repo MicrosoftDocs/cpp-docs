@@ -31,9 +31,9 @@ Use [DUMPBIN](dumpbin-reference.md) to see information about sections in your ou
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **Command Line** property page in the **Linker** folder.
+1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
-1. Type the option name **/FILEALIGN:** and the size in the **Additional Options** box.
+1. Enter the option name **/FILEALIGN:** and the size in the **Additional Options** box.
 
 ### To set this linker option programmatically
 
