@@ -17,7 +17,7 @@ There are two ways to debug your provider:
 
 1. Open the provider project.
 
-1. On the **Projects** menu, select **Properties**.
+1. On the menu bar, select **Projects** > **Properties**.
 
 1. In the **Property Pages** dialog box, select the **Configuration Properties** > **Debugging** property page.
 
