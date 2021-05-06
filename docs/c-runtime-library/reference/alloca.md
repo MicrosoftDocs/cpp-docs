@@ -48,7 +48,7 @@ There are restrictions to explicitly calling **`_alloca`** in an exception handl
 However, **`_alloca`** can be called directly from within an EH routine or from an application-supplied callback that gets invoked by one of the EH scenarios previously listed.
 
 > [!IMPORTANT]
-> In Windows XP, if **`_alloca`** is called inside a try/catch block, you must call [_resetstkoflw](resetstkoflw.md) in the catch block.
+> In Windows XP, if **`_alloca`** is called inside a try/catch block, you must call [`_resetstkoflw`](resetstkoflw.md) in the catch block.
 
 In addition to the above restrictions, when using the[`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md) option, **`_alloca`** cannot be used in **`__except`** blocks. For more information, see [`/clr` Restrictions](../../build/reference/clr-restrictions.md).
 
