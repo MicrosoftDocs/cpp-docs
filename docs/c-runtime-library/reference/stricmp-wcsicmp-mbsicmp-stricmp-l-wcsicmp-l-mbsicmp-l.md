@@ -82,13 +82,13 @@ Because **`_stricmp`** does lowercase comparisons, it may result in unexpected b
 
 To illustrate when case conversion by **`_stricmp`** affects the outcome of a comparison, assume that you have the two strings JOHNSTON and JOHN_HENRY. The string JOHN_HENRY will be considered less than JOHNSTON because the "_" has a lower ASCII value than a lowercase S. In fact, any character that has an ASCII value between 91 and 96 will be considered less than any letter.
 
-If the [`strcmp`](strcmp-wcscmp-mbscmp.md) function is used instead of **`_stricmp`**, JOHN_HENRY will be greater than JOHNSTON.
+If the [`strcmp`](strcmp-wcscmp-mbscmp.md) function is used instead of **`_stricmp`**, `JOHN_HENRY` will be greater than `JOHNSTON`.
 
 **`_wcsicmp`** and **`_mbsicmp`** are wide-character and multibyte-character versions of **`_stricmp`**. The arguments and return value of **`_wcsicmp`** are wide-character strings; those of **`_mbsicmp`** are multibyte-character strings. **`_mbsicmp`** recognizes multibyte-character sequences according to the current multibyte code page and returns **`_NLSCMPERROR`** on an error. For more information, see [Code Pages](../../c-runtime-library/code-pages.md). These three functions behave identically otherwise.
 
 **`_wcsicmp`** and **`wcscmp`** behave identically except that **`wcscmp`** does not convert its arguments to lowercase before comparing them. **`_mbsicmp`** and **`_mbscmp`** behave identically except that **`_mbscmp`** does not convert its arguments to lowercase before comparing them.
 
-You will need to call [`setlocale`](setlocale-wsetlocale.md) for **`_wcsicmp`** to work with Latin 1 characters. The C locale is in effect by default, so, for example, ä will not compare equal to Ä. Call **`setlocale`** with any locale other than the C locale before the call to **`_wcsicmp`**. The following sample demonstrates how **`_wcsicmp`** is sensitive to the locale:
+You will need to call [`setlocale`](setlocale-wsetlocale.md) for **`_wcsicmp`** to work with Latin 1 characters. The C locale is in effect by default, so, for example, `ä` will not compare equal to `Ä`. Call **`setlocale`** with any locale other than the C locale before the call to **`_wcsicmp`**. The following sample demonstrates how **`_wcsicmp`** is sensitive to the locale:
 
 ```C
 // crt_stricmp_locale.c

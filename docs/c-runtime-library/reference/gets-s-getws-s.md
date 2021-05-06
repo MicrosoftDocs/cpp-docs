@@ -49,7 +49,7 @@ Returns *`buffer`* if successful. A **`NULL`** pointer indicates an error or end
 
 ## Remarks
 
-The **`gets_s`** function reads a line from the standard input stream **`stdin`** and stores it in *`buffer`*. The line consists of all characters up to and including the first newline character ('\n'). **`gets_s`** then replaces the newline character with a null character ('\0') before returning the line. In contrast, the **`fgets_s`** function retains the newline character.
+The **`gets_s`** function reads a line from the standard input stream **`stdin`** and stores it in *`buffer`*. The line consists of all characters up to and including the first newline character ('`\n`'). **`gets_s`** then replaces the newline character with a null character ('`\0`') before returning the line. In contrast, the **`fgets_s`** function retains the newline character.
 
 If the first character read is the end-of-file character, a null character is stored at the beginning of *`buffer`* and **`NULL`** is returned.
 
