@@ -99,7 +99,7 @@ Even if you use **/GS**, always try to write secure code that has no buffer over
 
 ### To set this compiler option in Visual Studio
 
-1. In **Solution Explorer**, right-click the project and then choose **Properties** to open the **Property Pages** dialog. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
