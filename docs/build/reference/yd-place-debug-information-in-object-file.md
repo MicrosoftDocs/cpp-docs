@@ -40,7 +40,7 @@ For more information on precompiled headers, see:
 
 1. Click the **Command Line** property page.
 
-1. Type the compiler option in the **Additional Options** box.
+1. Enter the compiler option in the **Additional Options** box.
 
 ### To set this compiler option programmatically
 
