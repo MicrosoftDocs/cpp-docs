@@ -28,9 +28,7 @@ Another way to set the size of the stack is with the [STACKSIZE](stacksize.md) s
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **Linker** folder.
-
-1. Select the **System** property page.
+1. Select the **Configuration Properties** > **Linker** > **System** property page.
 
 1. Modify one of the following properties:
 

@@ -26,11 +26,7 @@ The /APPCONTAINER option was introduced in Windows 8.
 
 1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Expand the **Configuration Properties** node.
-
-1. Expand the **Linker** node.
-
-1. Select the **Command Line** property page.
+1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
 1. In **Additional Options**, enter `/APPCONTAINER` or `/APPCONTAINER:NO`.
 

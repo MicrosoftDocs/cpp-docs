@@ -32,7 +32,7 @@ If you specify the [/c (Compile Without Linking)](c-compile-without-linking.md) 
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Open the **Configuration Properties** > **Linker** > **General** property page.
+1. Select the **Configuration Properties** > **Linker** > **General** property page.
 
 1. Modify the **Output File** property. Choose **OK** to save your changes.
 

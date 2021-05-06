@@ -29,11 +29,11 @@ ANSI C and C++ do not require a specific implementation of the **`char`** type. 
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. In **Solution Explorer**, open the shortcut menu for the project and then choose **Properties**.
+1. In **Solution Explorer**, open the shortcut menu for the project and then choose **Properties** to open the project **Property Pages** dialog box.
 
-1. In the project **Property Pages** dialog box, in the left pane under **Configuration Properties**, expand **C/C++** and then select **Command Line**.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. In the **Additional Options** pane, specify the **/J** compiler option.
+1. In **Additional Options**, enter the **/J** compiler option.
 
 ### To set this compiler option programmatically
 

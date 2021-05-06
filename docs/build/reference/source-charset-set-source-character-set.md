@@ -36,9 +36,9 @@ If you want to set both the source character set and the execution character set
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Expand the **Configuration Properties**, **C/C++**, **Command Line** folder.
+1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
 1. In **Additional Options**, add the **/source-charset** option, and specify your preferred encoding.
 

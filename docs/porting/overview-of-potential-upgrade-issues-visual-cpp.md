@@ -120,7 +120,7 @@ If the error is C2371, and a `stdint` type is involved, it probably means that t
 
 You can press **F12** (**Go to Definition**) to see where the type in question is defined.
 
-The [/showIncludes](../build/reference/showincludes-list-include-files.md) compiler option can be useful here. In the **Property Pages** dialog box for your project, open the **C/C++** > **Advanced** page and set **Show Includes** to **Yes**. Then rebuild your project and see the list of `#include`s in the output window. Each header is indented under the header that includes it.
+The [/showIncludes](../build/reference/showincludes-list-include-files.md) compiler option can be useful here. In the **Property Pages** dialog box for your project, select the **Configuration Properties** > **C/C++** > **Advanced** page and set **Show Includes** to **Yes**. Then rebuild your project and see the list of `#include` files in the output window. Each header is indented under the header that includes it.
 
 ## Errors involving CRT functions
 

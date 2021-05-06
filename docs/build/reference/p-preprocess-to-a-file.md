@@ -28,9 +28,7 @@ The **/P** option suppresses compilation. It does not produce an .obj file, even
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **Preprocessor** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Preprocessor** property page.
 
 1. Modify the **Generate Preprocessed File** property.
 
