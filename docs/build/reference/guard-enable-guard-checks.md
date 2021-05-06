@@ -26,7 +26,7 @@ The /GUARD:CF option must be specified to both the compiler and linker to create
 
 1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Expand **Configuration Properties**, **Linker**, **Command Line**.
+1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
 1. In **Additional Options**, enter `/GUARD:CF`.
 

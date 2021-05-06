@@ -38,9 +38,7 @@ Other linker options that affect assembly generation are:
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **Linker** folder.
-
-1. Click the **Advanced** property page.
+1. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
 
 1. Modify the **Turn Off Assembly Generation** property.
 

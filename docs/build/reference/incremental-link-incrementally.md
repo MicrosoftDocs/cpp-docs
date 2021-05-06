@@ -61,9 +61,7 @@ Additionally, LINK performs a full link if any of the following situations occur
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **Linker** folder.
-
-1. Select the **General** property page.
+1. Select the **Configuration Properties** > **Linker** > **General** property page.
 
 1. Modify the **Enable Incremental Linking** property.
 

@@ -94,7 +94,7 @@ The compiler doesn't support any optional features of ISO C11. Several of these 
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select **Configuration Properties**, **C/C++**, **Language**.
+1. Select the **Configuration Properties** > **C/C++** > **Language** property page.
 
 1. In **C++ Language Standard** (or for C, **C Language Standard**), choose the language standard to support from the dropdown control, then choose **OK** or **Apply** to save your changes.
 

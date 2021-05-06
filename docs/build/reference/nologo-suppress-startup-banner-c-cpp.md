@@ -22,9 +22,7 @@ Suppresses the display of the copyright banner when the compiler starts up and d
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **General** property page.
+1. Select the **Configuration Properties** > **C/C++** > **General** property page.
 
 1. Modify the **Suppress Startup Banner** property.
 

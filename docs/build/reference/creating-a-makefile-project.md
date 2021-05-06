@@ -71,9 +71,9 @@ IntelliSense fails in makefile projects when certain project settings or compile
 
 1. Open the **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Expand the **Configuration Properties** node.
+1. Select the **Configuration Properties** > **NMake** property page.
 
-1. Select the **NMake** property page, and then modify properties under **IntelliSense** as appropriate.
+1. Modify properties under **IntelliSense** as appropriate:
 
    - Set the **Preprocessor Definitions** property to define any preprocessor symbols in your makefile project. See [/D (Preprocessor Definitions)](d-preprocessor-definitions.md), for more information.
 
@@ -89,7 +89,7 @@ IntelliSense fails in makefile projects when certain project settings or compile
 
    - Set the **Additional Options** property to specify additional compiler switches to be used by IntelliSense when parsing C++ files.
 
-1. Click **OK** to close the property pages.
+1. Choose **OK** to close the property pages.
 
 1. Use the **Save All** command to save the modified project settings.
 
