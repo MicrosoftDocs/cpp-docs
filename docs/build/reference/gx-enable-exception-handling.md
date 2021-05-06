@@ -28,7 +28,7 @@ By default, **/EHsc**, the equivalent of **/GX**, is in effect when you compile 
 
 1. In the navigation pane, choose **Configuration Properties**, **C/C++**, **Command Line**.
 
-1. Type the compiler option in the **Additional Options** box.
+1. Enter the compiler option in the **Additional Options** box.
 
 ### To set this compiler option programmatically
 
