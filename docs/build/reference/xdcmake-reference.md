@@ -28,17 +28,17 @@ xdcmake `input_filename options`
 ## Parameters
 
 *input_filename*<br/>
-The file name of the .xdc files used as input to xdcmake.exe. Specify one or more .xdc files or use *.xdc to use all .xdc files in the current directory.
+The file name of the *`.xdc`* files used as input to xdcmake.exe. Specify one or more *`.xdc`* files or use *.xdc to use all *`.xdc`* files in the current directory.
 
 *options*<br/>
 Zero or more of the following:
 
 |Option|Description|
 |------------|-----------------|
-|/?, /help|Display help for xdcmake.exe.|
-|/assembly:*filename*|Lets you specify the value of the \<assembly> tag in the .xml file.  By default, the value of the \<assembly> tag is the same as the filename of the .xml file.|
+|`/?`, `/help`|Display help for xdcmake.exe.|
+|`/assembly:filename`|Lets you specify the value of the \<assembly> tag in the .xml file.  By default, the value of the \<assembly> tag is the same as the filename of the .xml file.|
 |/nologo|Suppress copyright message.|
-|/out:*filename*|Lets you specify the name of the .xml file.  By default, the name of the .xml file is the filename of the first .xdc file processed by xdcmake.exe.|
+|`/out:filename`|Lets you specify the name of the .xml file.  By default, the name of the .xml file is the filename of the first .xdc file processed by xdcmake.exe.|
 
 ## Remarks
 
