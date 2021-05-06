@@ -41,7 +41,7 @@ When building a virtual device driver, *filename* allows the user to specify a f
 
 1. Click the **Command Line** property page.
 
-1. Type the option into the **Additional Options** box.
+1. Enter the option into the **Additional Options** box.
 
 ### To set this linker option programmatically
 
