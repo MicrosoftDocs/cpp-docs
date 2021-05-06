@@ -18,7 +18,7 @@ ms.assetid: 47089258-d5a5-4cd8-b193-223894dea0cf
 
 The **`errno`** values are constants assigned to [`errno`](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) in the event of various error conditions.
 
-ERRNO.H contains the definitions of the **`errno`** values. However, not all the definitions given in ERRNO.H are used in 32-bit Windows operating systems. Some of the values in ERRNO.H are present to maintain compatibility with the UNIX family of operating systems.
+`ERRNO.H` contains the definitions of the **`errno`** values. However, not all the definitions given in `ERRNO.H` are used in 32-bit Windows operating systems. Some of the values in `ERRNO.H` are present to maintain compatibility with the UNIX family of operating systems.
 
 The **`errno`** values in a 32-bit Windows operating system are a subset of the values for **`errno`** in XENIX systems. Thus, the **`errno`** value is not necessarily the same as the actual error code returned by a system call from the Windows operating systems. To access the actual operating system error code, use the [`_doserrno`](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) variable, which contains this value.
 
@@ -34,7 +34,7 @@ The following **`errno`** values are supported:
 |**`EDEADLOCK`**|Resource deadlock would occur. The argument to a math function is not in the domain of the function.|
 |**`EDOM`**|Math argument.|
 |**`EEXIST`**|Files exist. An attempt has been made to create a file that already exists. For example, the **`_O_CREAT`** and **`_O_EXCL`** flags are specified in an **`_open`** call, but the named file already exists.|
-|**`EILSEQ`**|Illegal sequence of bytes (for example, in an MBCS string).|
+|**`EILSEQ`**|Illegal sequence of bytes (for example, in an `MBCS` string).|
 |**`EINVAL`**|Invalid argument. An invalid value was given for one of the arguments to a function. For example, the value given for the origin when positioning a file pointer (by means of a call to **`fseek`**) is before the beginning of the file.|
 |**`EMFILE`**|Too many open files. No more file descriptors are available, so no more files can be opened.|
 |**`ENOENT`**|No such file or directory. The specified file or directory does not exist or cannot be found. This message can occur whenever a specified file does not exist or a component of a path does not specify an existing directory.|
