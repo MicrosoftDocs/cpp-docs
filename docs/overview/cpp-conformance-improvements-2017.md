@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements in Visual Studio 2017"
 description: "Microsoft C/C++ in Visual Studio 2017 is progressing toward full conformance with the C++20 language standard."
-ms.date: 03/10/2021
+ms.date: 04/18/2021
 ms.technology: "cpp-language"
 ---
 # C++ Conformance improvements, behavior changes, and bug fixes in Visual Studio 2017
@@ -472,7 +472,7 @@ To fix the error, remove the `#pragma managed` directive to mark the caller as n
 
 ### Experimental API warning for WinRT
 
-WinRT APIs that are released for experimentation and feedback are decorated with `Windows.Foundation.Metadata.ExperimentalAttribute`. In Visual Studio 2017 version 15.3, the compiler produces warning C4698 for this attribute. A few APIs in previous versions of the Windows SDK have already been decorated with the attribute, and calls to these APIs now trigger this compiler warning. Newer Windows SDKs have the attribute removed from all shipped types. If you're using an older SDK, you'll need to suppress these warnings for all calls to shipped types.
+WinRT APIs that are released for experimentation and feedback are decorated with `Windows.Foundation.Metadata.ExperimentalAttribute`. In Visual Studio 2017 version 15.3, the compiler produces warning | [C4698](../error-messages/compiler-warnings/c4698.md) for this attribute. A few APIs in previous versions of the Windows SDK have already been decorated with the attribute, and calls to these APIs now trigger this compiler warning. Newer Windows SDKs have the attribute removed from all shipped types. If you're using an older SDK, you'll need to suppress these warnings for all calls to shipped types.
 
 The following code produces warning C4698:
 
@@ -539,7 +539,7 @@ void f()
 
 Default arguments aren't allowed on out-of-line definitions of member functions in template classes. The compiler will issue a warning under **`/permissive`**, and a hard error under [`/permissive-`](../build/reference/permissive-standards-conformance.md).
 
-In previous versions of Visual Studio, the following ill-formed code could potentially cause a runtime crash. Visual Studio 2017 version 15.3 produces warning C5034:
+In previous versions of Visual Studio, the following ill-formed code could potentially cause a runtime crash. Visual Studio 2017 version 15.3 produces warning [C5037](../error-messages/compiler-warnings/c5037.md):
 
 ```cpp
 template <typename T>
@@ -548,7 +548,7 @@ struct A {
 };
 
 template <typename T>
-T A<T>::f(T t, bool b = false) // C5034: 'A<T>::f': an out-of-line definition of a member of a class template cannot have default arguments
+T A<T>::f(T t, bool b = false) // C5037: 'A<T>::f': an out-of-line definition of a member of a class template cannot have default arguments
 {
     // ...
 }
@@ -1532,7 +1532,7 @@ struct D : B<T*> {
 
 ### C++17: `[[nodiscard]]` attribute - warning level increase
 
-In Visual Studio 2017 version 15.7 in **`/std:c++17`** mode, the warning level of C4834 is increased from W3 to W1. You can disable the warning with a cast to **`void`**, or by passing **`/wd:4834`** to the compiler
+In Visual Studio 2017 version 15.7 in **`/std:c++17`** mode, the warning level of [C4834](../error-messages/compiler-warnings/c4834.md) is increased from W3 to W1. You can disable the warning with a cast to **`void`**, or by passing **`/wd:4834`** to the compiler.
 
 ```cpp
 [[nodiscard]] int f() { return 0; }

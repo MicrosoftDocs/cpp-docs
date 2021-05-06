@@ -5,15 +5,15 @@ ms.date: "05/07/2019"
 f1_keywords: ["<chrono>", "chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
 ---
-# &lt;chrono&gt;
+# `<chrono>`
 
-Include the standard header \<chrono> to define classes and functions that represent and manipulate time durations and time instants.
+Include the standard header `<chrono>` to define classes and functions that represent and manipulate time durations and time instants.
 
-Beginning in Visual Studio 2015, the implementation of `steady_clock` has changed to meet the C++ Standard requirements for steadiness and monotonicity. `steady_clock` is now based on QueryPerformanceCounter() and `high_resolution_clock` is now a typedef for `steady_clock`. As a result, in the Microsoft C++ compiler `steady_clock::time_point` is now a typedef for `chrono::time_point<steady_clock>`; however, this rule isn't necessarily the case for other implementations.
+Beginning in Visual Studio 2015, the implementation of `steady_clock` has changed to meet the C++ Standard requirements for steadiness and monotonicity. `steady_clock` is now based on `QueryPerformanceCounter()` and `high_resolution_clock` is now a typedef for `steady_clock`. As a result, in the Microsoft C++ compiler `steady_clock::time_point` is now a `typedef` for `chrono::time_point<steady_clock>`; however, this rule isn't necessarily the case for other implementations.
 
 ## Requirements
 
-**Header:** \<chrono>
+**Header:** `<chrono>`
 
 **Namespace:** std
 
@@ -23,46 +23,46 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 |Name|Description|
 |-|-|
-|[duration Class](../standard-library/duration-class.md)|Describes a type that holds a time interval.|
-|[time_point Class](../standard-library/time-point-class.md)|Describes a type that represents a point in time.|
+|[`duration` Class](../standard-library/duration-class.md)|Describes a type that holds a time interval.|
+|[`time_point` Class](../standard-library/time-point-class.md)|Describes a type that represents a point in time.|
 
 ### Structs
 
 |Name|Description|
 |-|-|
-|[common_type Structure](../standard-library/common-type-structure.md)|Describes specializations of class template [common_type](../standard-library/common-type-class.md) for instantiations of `duration` and `time_point`.|
-|[duration_values Structure](../standard-library/duration-values-structure.md)|Provides specific values for the `duration` template parameter `Rep`.|
-|[high_resolution_clock struct](../standard-library/high-resolution-clock-struct.md)||
-|[steady_clock struct](../standard-library/steady-clock-struct.md)|Represents a `steady` clock.|
-|[system_clock Structure](../standard-library/system-clock-structure.md)|Represents a *clock type* that is based on the real-time clock of the system.|
-|[treat_as_floating_point Structure](../standard-library/treat-as-floating-point-structure.md)|Specifies whether a type can be treated as a floating-point type.|
+|[`common_type` Structure](../standard-library/common-type-structure.md)|Describes specializations of class template [`common_type`](../standard-library/common-type-class.md) for instantiations of `duration` and `time_point`.|
+|[`duration_values` Structure](../standard-library/duration-values-structure.md)|Provides specific values for the `duration` template parameter `Rep`.|
+|[`high_resolution_clock` struct](../standard-library/high-resolution-clock-struct.md)||
+|[`steady_clock` struct](../standard-library/steady-clock-struct.md)|Represents a `steady` clock.|
+|[`system_clock` Structure](../standard-library/system-clock-structure.md)|Represents a *`clock type`* that is based on the real-time clock of the system.|
+|[`treat_as_floating_point` Structure](../standard-library/treat-as-floating-point-structure.md)|Specifies whether a type can be treated as a floating-point type.|
 
 ### Functions
 
 |Name|Description|
 |-|-|
-|[duration_cast](../standard-library/chrono-functions.md#duration_cast)|Casts a `duration` object to a specified type.|
-|[time_point_cast](../standard-library/chrono-functions.md#time_point_cast)|Casts a `time_point` object to a specified type.|
+|[`duration_cast`](../standard-library/chrono-functions.md#duration_cast)|Casts a `duration` object to a specified type.|
+|[`time_point_cast`](../standard-library/chrono-functions.md#time_point_cast)|Casts a `time_point` object to a specified type.|
 
 ### Operators
 
 |Name|Description|
 |-|-|
-|[operator-](../standard-library/chrono-operators.md#operator-)|Operator for subtraction or negation of `duration` and `time_point` objects.|
-|[operator!=](../standard-library/chrono-operators.md#op_neq)|Inequality operator that is used with `duration` or `time_point` objects.|
-|[operator modulo](../standard-library/chrono-operators.md#op_modulo)|Operator for modulo operations on `duration` objects.|
-|[operator*](../standard-library/chrono-operators.md#op_star)|Multiplication operator for `duration` objects.|
-|[operator/](../standard-library/chrono-operators.md#op_div)|Division operator for `duration` objects.|
-|[operator+](../standard-library/chrono-operators.md#op_add)|Adds `duration` and `time_point` objects.|
-|[operator&lt;](../standard-library/chrono-operators.md#op_lt)|Determines whether one `duration` or `time_point` object is less than another `duration` or `time_point` object.|
-|[operator&lt;=](../standard-library/chrono-operators.md#op_lt_eq)|Determines whether one `duration` or `time_point` object is less than or equal to another `duration` or `time_point` object.|
+|[`operator-`](../standard-library/chrono-operators.md#operator-)|Operator for subtraction or negation of `duration` and `time_point` objects.|
+|[`operator!=`](../standard-library/chrono-operators.md#op_neq)|Inequality operator that is used with `duration` or `time_point` objects.|
+|[`operator modulo`](../standard-library/chrono-operators.md#op_modulo)|Operator for modulo operations on `duration` objects.|
+|[`operator*`](../standard-library/chrono-operators.md#op_star)|Multiplication operator for `duration` objects.|
+|[`operator/`](../standard-library/chrono-operators.md#op_div)|Division operator for `duration` objects.|
+|[`operator+`](../standard-library/chrono-operators.md#op_add)|Adds `duration` and `time_point` objects.|
+|[`operator<`](../standard-library/chrono-operators.md#op_lt)|Determines whether one `duration` or `time_point` object is less than another `duration` or `time_point` object.|
+|[`operator<=`](../standard-library/chrono-operators.md#op_lt_eq)|Determines whether one `duration` or `time_point` object is less than or equal to another `duration` or `time_point` object.|
 |[operator==](../standard-library/chrono-operators.md#op_eq_eq)|Determines whether two `duration` objects represent time intervals that have the same length, or whether two `time_point` objects represent the same point in time.|
-|[operator&gt;](../standard-library/chrono-operators.md#op_gt)|Determines whether one `duration` or `time_point` object is greater than another `duration` or `time_point` object.|
-|[operator&gt;=](../standard-library/chrono-operators.md#op_gt_eq)|Determines whether one `duration` or `time_point` object is greater than or equal to another `duration` or `time_point` object.|
+|[`operator>`](../standard-library/chrono-operators.md#op_gt)|Determines whether one `duration` or `time_point` object is greater than another `duration` or `time_point` object.|
+|[`operator>=`](../standard-library/chrono-operators.md#op_gt_eq)|Determines whether one `duration` or `time_point` object is greater than or equal to another `duration` or `time_point` object.|
 
 ### Typedefs (Predefined Duration Types)
 
-For more information about ratio types that are used in the following typedefs, see [\<ratio>](../standard-library/ratio.md).
+For more information about ratio types that are used in the following typedefs, see [`<ratio>`](../standard-library/ratio.md).
 
 |Name|Description|
 |-|-|
@@ -75,7 +75,7 @@ For more information about ratio types that are used in the following typedefs, 
 
 ### Literals
 
-**(C++11)** The \<chrono> header defines the following [user-defined literals](../cpp/user-defined-literals-cpp.md) that you can use for greater convenience, type-safety, and maintainability of your code. These literals are defined in the `literals::chrono_literals` inline namespace and are in scope when std::chrono is in scope.
+**(C++11)** The `<chrono>` header defines the following [user-defined literals](../cpp/user-defined-literals-cpp.md) that you can use for greater convenience, type-safety, and maintainability of your code. These literals are defined in the `literals::chrono_literals` inline namespace and are in scope when `std::chrono` is in scope.
 
 |Declaration|Description|
 |-|-|

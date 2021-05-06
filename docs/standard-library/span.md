@@ -1,12 +1,12 @@
 ---
-title: "&lt;span&gt;"
+title: "<span>"
 description: "API reference for the Standard Template Library (STL) span namespace, which provides a lightweight view over a contiguous sequence of objects."
 ms.date: "05/28/2020"
 f1_keywords: ["<span>"]
 helpviewer_keywords: ["span header"]
 ---
 
-# &lt;span&gt;
+# `<span>`
 
 A `span` is a view over a contiguous sequence of objects. It provides fast and bounds-safe access. Unlike `vector` or `array`, it doesn't "own" the elements it provides access to.
 

@@ -6,18 +6,18 @@ f1_keywords: ["<random>"]
 helpviewer_keywords: ["random header"]
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
 ---
-# &lt;random&gt;
+# `<random>`
 
 Defines facilities for random number generation, allowing creation of uniformly distributed random numbers.
 
 ## Requirements
 
-**Header**: \<random>
+**Header**: `<random>`
 
 **Namespace:** std
 
 > [!NOTE]
-> The \<random> library uses the `#include <initializer_list>' statement.
+> The `<random>` library uses the `#include <initializer_list>' statement.
 
 ## Summary
 
@@ -35,9 +35,9 @@ These links jump to the major sections of this article:
 
 ### Quick Tips
 
-Here are some tips to keep in mind when using \<random>:
+Here are some tips to keep in mind when using `<random>`:
 
-- For most purposes, URNGs produce raw bits that must be shaped by distributions. (A notable exception to this is [std::shuffle()](../standard-library/algorithm-functions.md#shuffle) because it uses a URNG directly.)
+- For most purposes, URNGs produce raw bits that must be shaped by distributions. (A notable exception to this is [`std::shuffle()`](../standard-library/algorithm-functions.md#shuffle) because it uses a URNG directly.)
 
 - A single instantiation of a URNG or distribution cannot safely be called concurrently because running a URNG or distribution is a modifying operation. For more information, see [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md).
 
@@ -45,7 +45,7 @@ Here are some tips to keep in mind when using \<random>:
 
 - The most useful pairing for most applications is the `mt19937` engine with `uniform_int_distribution`, as shown in the [code example](#code) later in this article.
 
-There are many options to choose from in the \<random> header, and any of them is preferable to the outdated C Runtime function `rand()`. For information about what's wrong with `rand()` and how \<random> addresses these shortcomings, see [this video](https://go.microsoft.com/fwlink/p/?linkid=397615).
+There are many options to choose from in the `<random>` header, and any of them is preferable to the outdated C Runtime function `rand()`. For information about what's wrong with `rand()` and how `<random>` addresses these shortcomings, see [this video](https://go.microsoft.com/fwlink/p/?linkid=397615).
 
 ## <a name="code"></a> Examples
 
@@ -214,11 +214,11 @@ URNGs are often described in terms of these properties:
 
 3. **Quality**: How close to true random numbers the generated sequence is. This is often called "*randomness*".
 
-The following sections list the uniform random number generators (URNGs) provided in the \<random> header.
+The following sections list the uniform random number generators (URNGs) provided in the `<random>` header.
 
 #### <a name="rd"></a> Non-Deterministic Generator
 
-[random_device Class](../standard-library/random-device-class.md)\
+[`random_device` Class](../standard-library/random-device-class.md)\
 Generates a non-deterministic, cryptographically secure random sequence by using an external device. Usually used to seed an engine. Low performance, very high quality. For more information, see [Remarks](#comments).
 
 #### <a name="typedefs"></a> Engine Typedefs with Predefined Parameters
@@ -303,9 +303,9 @@ Engine templates are used as standalone URNGs or as base engines passed to [engi
 
 |Name|Description|
 |-|-|
-|[linear_congruential_engine Class](../standard-library/linear-congruential-engine-class.md)|Generates a random sequence by using the linear congruential algorithm. Most simplistic and lowest quality.|
-|[mersenne_twister_engine Class](../standard-library/mersenne-twister-engine-class.md)|Generates a random sequence by using the Mersenne twister algorithm. Most complex, and is highest quality except for the random_device class. Very fast performance.|
-|[subtract_with_carry_engine Class](../standard-library/subtract-with-carry-engine-class.md)|Generates a random sequence by using the subtract-with-carry algorithm. An improvement on `linear_congruential_engine`, but much lower quality and performance than `mersenne_twister_engine`.|
+|[`linear_congruential_engine` Class](../standard-library/linear-congruential-engine-class.md)|Generates a random sequence by using the linear congruential algorithm. Most simplistic and lowest quality.|
+|[`mersenne_twister_engine` Class](../standard-library/mersenne-twister-engine-class.md)|Generates a random sequence by using the Mersenne twister algorithm. Most complex, and is highest quality except for the random_device class. Very fast performance.|
+|[`subtract_with_carry_engine` Class](../standard-library/subtract-with-carry-engine-class.md)|Generates a random sequence by using the subtract-with-carry algorithm. An improvement on `linear_congruential_engine`, but much lower quality and performance than `mersenne_twister_engine`.|
 
 #### <a name="engadapt"></a> Engine Adaptor Templates
 
@@ -313,23 +313,23 @@ Engine adaptors are templates that adapt other (base) engines. Usually these are
 
 |Name|Description|
 |-|-|
-|[discard_block_engine Class](../standard-library/discard-block-engine-class.md)|Generates a random sequence by discarding values returned by its base engine.|
-|[independent_bits_engine Class](../standard-library/independent-bits-engine-class.md)|Generates a random sequence with a specified number of bits by repacking bits from the values returned by its base engine.|
-|[shuffle_order_engine Class](../standard-library/shuffle-order-engine-class.md)|Generates a random sequence by reordering the values returned from its base engine.|
+|[`discard_block_engine` Class](../standard-library/discard-block-engine-class.md)|Generates a random sequence by discarding values returned by its base engine.|
+|[`independent_bits_engine` Class](../standard-library/independent-bits-engine-class.md)|Generates a random sequence with a specified number of bits by repacking bits from the values returned by its base engine.|
+|[`shuffle_order_engine` Class](../standard-library/shuffle-order-engine-class.md)|Generates a random sequence by reordering the values returned from its base engine.|
 
 [[Engine Templates](#eng)]
 
 ### <a name="distributions"></a> Random Number Distributions
 
-The following sections list the distributions provided in the \<random> header. Distributions are a post-processing mechanism, usually using URNG output as input and distributing the output by a defined statistical probability density function. For more information, see the [Engines and Distributions](#engdist) section.
+The following sections list the distributions provided in the `<random>` header. Distributions are a post-processing mechanism, usually using URNG output as input and distributing the output by a defined statistical probability density function. For more information, see the [Engines and Distributions](#engdist) section.
 
 #### Uniform Distributions
 
 |Name|Description|
 |-|-|
-|[uniform_int_distribution Class](../standard-library/uniform-int-distribution-class.md)|Produces a uniform integer value distribution across a range in the closed interval \[a, b] (inclusive-inclusive).|
-|[uniform_real_distribution Class](../standard-library/uniform-real-distribution-class.md)|Produces a uniform real (floating-point) value distribution across a range in the half-open interval [a, b) (inclusive-exclusive).|
-|[generate_canonical](../standard-library/random-functions.md#generate_canonical)|Produces an even distribution of real (floating point) values of a given precision across [0, 1) (inclusive-exclusive).|
+|[`uniform_int_distribution` Class](../standard-library/uniform-int-distribution-class.md)|Produces a uniform integer value distribution across a range in the closed interval \[a, b] (inclusive-inclusive).|
+|[`uniform_real_distribution` Class](../standard-library/uniform-real-distribution-class.md)|Produces a uniform real (floating-point) value distribution across a range in the half-open interval [a, b) (inclusive-exclusive).|
+|[`generate_canonical`](../standard-library/random-functions.md#generate_canonical)|Produces an even distribution of real (floating point) values of a given precision across [0, 1) (inclusive-exclusive).|
 
 [[Random Number Distributions](#distributions)]
 
@@ -337,10 +337,10 @@ The following sections list the distributions provided in the \<random> header. 
 
 |Name|Description|
 |-|-|
-|[bernoulli_distribution Class](../standard-library/bernoulli-distribution-class.md)|Produces a Bernoulli distribution of **`bool`** values.|
-|[binomial_distribution Class](../standard-library/binomial-distribution-class.md)|Produces a binomial distribution of integer values.|
-|[geometric_distribution Class](../standard-library/geometric-distribution-class.md)|Produces a geometric distribution of integer values.|
-|[negative_binomial_distribution Class](../standard-library/negative-binomial-distribution-class.md)|Produces a negative binomial distribution of integer values.|
+|[`bernoulli_distribution` Class](../standard-library/bernoulli-distribution-class.md)|Produces a Bernoulli distribution of **`bool`** values.|
+|[`binomial_distribution` Class](../standard-library/binomial-distribution-class.md)|Produces a binomial distribution of integer values.|
+|[`geometric_distribution` Class](../standard-library/geometric-distribution-class.md)|Produces a geometric distribution of integer values.|
+|[`negative_binomial_distribution` Class](../standard-library/negative-binomial-distribution-class.md)|Produces a negative binomial distribution of integer values.|
 
 [[Random Number Distributions](#distributions)]
 
@@ -348,12 +348,12 @@ The following sections list the distributions provided in the \<random> header. 
 
 |Name|Description|
 |-|-|
-|[cauchy_distribution Class](../standard-library/cauchy-distribution-class.md)|Produces a Cauchy distribution of real (floating point) values.|
-|[chi_squared_distribution Class](../standard-library/chi-squared-distribution-class.md)|Produces a chi-squared distribution of real (floating point) values.|
-|[fisher_f_distribution Class](../standard-library/fisher-f-distribution-class.md)|Produces an F-distribution (also known as Snedecor's F distribution or the Fisher-Snedecor distribution) of real (floating point) values.|
-|[lognormal_distribution Class](../standard-library/lognormal-distribution-class.md)|Produces a log-normal distribution of real (floating point) values.|
-|[normal_distribution Class](../standard-library/normal-distribution-class.md)|Produces a normal (Gaussian) distribution of real (floating point) values.|
-|[student_t_distribution Class](../standard-library/student-t-distribution-class.md)|Produces a Student's *t*-distribution of real (floating point) values.|
+|[`cauchy_distribution` Class](../standard-library/cauchy-distribution-class.md)|Produces a Cauchy distribution of real (floating point) values.|
+|[`chi_squared_distribution` Class](../standard-library/chi-squared-distribution-class.md)|Produces a chi-squared distribution of real (floating point) values.|
+|[`fisher_f_distribution` Class](../standard-library/fisher-f-distribution-class.md)|Produces an F-distribution (also known as Snedecor's F distribution or the Fisher-Snedecor distribution) of real (floating point) values.|
+|[`lognormal_distribution` Class](../standard-library/lognormal-distribution-class.md)|Produces a log-normal distribution of real (floating point) values.|
+|[`normal_distribution` Class](../standard-library/normal-distribution-class.md)|Produces a normal (Gaussian) distribution of real (floating point) values.|
+|[`student_t_distribution` Class](../standard-library/student-t-distribution-class.md)|Produces a Student's *t*-distribution of real (floating point) values.|
 
 [[Random Number Distributions](#distributions)]
 
@@ -361,11 +361,11 @@ The following sections list the distributions provided in the \<random> header. 
 
 |Name|Description|
 |-|-|
-|[exponential_distribution Class](../standard-library/exponential-distribution-class.md)|Produces an exponential distribution of real (floating point) values.|
-|[extreme_value_distribution Class](../standard-library/extreme-value-distribution-class.md)|Produces an extreme value distribution of real (floating point) values.|
-|[gamma_distribution Class](../standard-library/gamma-distribution-class.md)|Produces a gamma distribution of real (floating point) values.|
-|[poisson_distribution Class](../standard-library/poisson-distribution-class.md)|Produces a Poisson distribution of integer values.|
-|[weibull_distribution Class](../standard-library/weibull-distribution-class.md)|Produces a Weibull distribution of real (floating point) values.|
+|[`exponential_distribution` Class](../standard-library/exponential-distribution-class.md)|Produces an exponential distribution of real (floating point) values.|
+|[`extreme_value_distribution` Class](../standard-library/extreme-value-distribution-class.md)|Produces an extreme value distribution of real (floating point) values.|
+|[`gamma_distribution` Class](../standard-library/gamma-distribution-class.md)|Produces a gamma distribution of real (floating point) values.|
+|[`poisson_distribution` Class](../standard-library/poisson-distribution-class.md)|Produces a Poisson distribution of integer values.|
+|[`weibull_distribution` Class](../standard-library/weibull-distribution-class.md)|Produces a Weibull distribution of real (floating point) values.|
 
 [[Random Number Distributions](#distributions)]
 
@@ -373,23 +373,23 @@ The following sections list the distributions provided in the \<random> header. 
 
 |Name|Description|
 |-|-|
-|[discrete_distribution Class](../standard-library/discrete-distribution-class.md)|Produces a discrete integer distribution.|
-|[piecewise_constant_distribution Class](../standard-library/piecewise-constant-distribution-class.md)|Produces a piecewise constant distribution of real (floating point) values.|
-|[piecewise_linear_distribution Class](../standard-library/piecewise-linear-distribution-class.md)|Produces a piecewise linear distribution of real (floating point) values.|
+|[`discrete_distribution` Class](../standard-library/discrete-distribution-class.md)|Produces a discrete integer distribution.|
+|[`piecewise_constant_distribution` Class](../standard-library/piecewise-constant-distribution-class.md)|Produces a piecewise constant distribution of real (floating point) values.|
+|[`piecewise_linear_distribution` Class](../standard-library/piecewise-linear-distribution-class.md)|Produces a piecewise linear distribution of real (floating point) values.|
 
 [[Random Number Distributions](#distributions)]
 
 ### Utility Functions
 
-This section lists the general utility functions provided in the \<random> header.
+This section lists the general utility functions provided in the `<random>` header.
 
 |Name|Description|
 |-|-|
-|[seed_seq Class](../standard-library/seed-seq-class.md)|Generates a non-biased scrambled seed sequence. Used to avoid replication of random variate streams. Useful when many URNGs are instantiated from engines.|
+|[`seed_seq` Class](../standard-library/seed-seq-class.md)|Generates a non-biased scrambled seed sequence. Used to avoid replication of random variate streams. Useful when many URNGs are instantiated from engines.|
 
 ### Operators
 
-This section lists the operators provided in the \<random> header.
+This section lists the operators provided in the `<random>` header.
 
 |Name|Description|
 |-|-|
@@ -400,7 +400,7 @@ This section lists the operators provided in the \<random> header.
 
 ## <a name="engdist"></a> Engines and Distributions
 
-Refer to the following sections for information about each of these class template categories defined in \<random>. Both of these class template categories take a type as an argument and use shared template parameter names to describe the properties of the type that are permitted as an actual argument type, as follows:
+Refer to the following sections for information about each of these class template categories defined in `<random>`. Both of these class template categories take a type as an argument and use shared template parameter names to describe the properties of the type that are permitted as an actual argument type, as follows:
 
 - `IntType` indicates a **`short`**, **`int`**, **`long`**, **`long long`**, **`unsigned short`**, **`unsigned int`**, **`unsigned long`**, or **`unsigned long long`**.
 
@@ -426,7 +426,7 @@ Every engine and engine adaptor has the following members:
 
 - `void seed(result_type s)` seeds the generator with seed value `s`. For engines, the signature is `void seed(result_type s = default_seed)` for default parameter support (engine adaptors define a separate `void seed()`, see next subsection).
 
-- `template <class Seq> void seed(Seq& q)` seeds the generator by using a [seed_seq](../standard-library/seed-seq-class.md)`Seq`.
+- `template <class Seq> void seed(Seq& q)` seeds the generator by using a [`seed_seq`](../standard-library/seed-seq-class.md)`Seq`.
 
 - An explicit constructor with argument `result_type x` that creates a generator seeded as if by calling `seed(x)`.
 
