@@ -30,7 +30,7 @@ Specify /FIXED:NO to generate a relocation section in the program.
 
 1. Select the **Command Line** property page.
 
-1. Type the option name and setting in the **Additional Options** box.
+1. Enter the option name and setting in the **Additional Options** box.
 
 ### To set this linker option programmatically
 

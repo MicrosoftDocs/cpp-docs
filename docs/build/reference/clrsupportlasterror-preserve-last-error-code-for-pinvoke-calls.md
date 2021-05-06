@@ -35,7 +35,7 @@ You can minimize the performance impact by linking with **/CLRSUPPORTLASTERROR:S
 
 1. Click the **Command Line** property page.
 
-1. Type the option into the **Additional Options** box.
+1. Enter the option into the **Additional Options** box.
 
 ### To set this linker option programmatically
 
