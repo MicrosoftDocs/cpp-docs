@@ -25,7 +25,7 @@ The process that `CWinFormsDialog` uses to host the user control is the similar 
 
    In **Solution Explorer**, right-click the **MFC03** project node, and choose **Properties**. The **Property Pages** dialog box appears.
 
-   In the **Property Pages** dialog box, in the **Configuration Properties** tree control, select **General**, then in the **Project Defaults** section, set **Common Language Runtime support** to **Common Language Runtime Support (/clr)**. Click **OK**.
+   In the **Property Pages** dialog box, select **Configuration Properties** > **General**. In the **Project Defaults** section, set **Common Language Runtime support** to **Common Language Runtime Support (/clr)**. Choose **OK**.
 
 1. Add a reference to the .NET control.
 
