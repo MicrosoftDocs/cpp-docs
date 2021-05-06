@@ -53,7 +53,7 @@ class CComBSTR
 |Name|Description|
 |----------|-----------------|
 |[CComBSTR::operator BSTR](#operator_bstr)|Casts a `CComBSTR` object to a BSTR.|
-|[CComBSTR::operator !](#operator_not)|Returns TRUE or FALSE, depending on whether `m_str`is NULL.|
+|[CComBSTR::operator !](#operator_not)|Returns TRUE or FALSE, depending on whether `m_str` is NULL.|
 |[CComBSTR::operator !=](#operator_neq)|Compares a `CComBSTR` with a string.|
 |[CComBSTR::operator &](#operator_amp)|Returns the address of `m_str`.|
 |[CComBSTR::operator +=](#operator_add_eq)|Appends a `CComBSTR` to the object.|
