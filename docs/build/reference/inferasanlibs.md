@@ -23,7 +23,7 @@ The **`/INFERASANLIBS`** option is available beginning in Visual Studio 2019 ver
 
 ### To set the **`/INFERASANLIBS`** linker option in the Visual Studio development environment
 
-1. Open your project's **Property Pages** dialog box.
+1. Open your project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
