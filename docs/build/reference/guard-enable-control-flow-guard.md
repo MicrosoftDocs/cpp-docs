@@ -35,7 +35,7 @@ Code compiled by using **/guard:cf** can be linked to libraries and object files
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select **Configuration Properties**, **C/C++**, **Code Generation**.
+1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
 1. Select the **Control Flow Guard** property.
 

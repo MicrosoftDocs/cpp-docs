@@ -15,8 +15,10 @@ For the Linux version of this page, see [VC++ Directories (Linux C++)](../../lin
 To access the **VC++ Directories** property page:
 
 1. If the **Solution Explorer** window is not visible, then on the main menu choose **View** > **Solution Explorer**.
-1. Right-click on a project node (not the top-level solution) and choose **Properties**.
-1. In the left pane of the **Property Pages** dialog box, select **Configuration Properties** > **VC++ Directories**.
+
+1. Right-click on a project node (not the top-level solution) and choose **Properties** to open the **Property Pages** dialog box.
+
+1. Select the **Configuration Properties** > **VC++ Directories** property page.
 
 VC++ Directories properties apply to a project, not the top-level solution node. If you do not see **VC++ Directories** under **Configuration Properties**, select a C++ project node in the **Solution Explorer** window:
 

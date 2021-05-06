@@ -39,50 +39,7 @@ Each `errno` value is associated with an error message in `_sys_errlist` that ca
 
 Library math routines set `errno` by calling [_matherr](../c-runtime-library/reference/matherr.md). To handle math errors differently, write your own routine according to the `_matherr` reference description and name it `_matherr`.
 
-All `errno` values in the following table are predefined constants in \<errno.h>, and are UNIX-compatible. Only `ERANGE`, `EILSEQ`, and `EDOM` are specified in the ISO C99 standard.
-
-|Constant|System error message|Value|
-|--------------|--------------------------|-----------|
-|`EPERM`|Operation not permitted|1|
-|`ENOENT`|No such file or directory|2|
-|`ESRCH`|No such process|3|
-|`EINTR`|Interrupted function|4|
-|`EIO`|I/O error|5|
-|`ENXIO`|No such device or address|6|
-|`E2BIG`|Argument list too long|7|
-|`ENOEXEC`|Exec format error|8|
-|`EBADF`|Bad file number|9|
-|`ECHILD`|No spawned processes|10|
-|`EAGAIN`|No more processes or not enough memory or maximum nesting level reached|11|
-|`ENOMEM`|Not enough memory|12|
-|`EACCES`|Permission denied|13|
-|`EFAULT`|Bad address|14|
-|`EBUSY`|Device or resource busy|16|
-|`EEXIST`|File exists|17|
-|`EXDEV`|Cross-device link|18|
-|`ENODEV`|No such device|19|
-|`ENOTDIR`|Not a directory|20|
-|`EISDIR`|Is a directory|21|
-|`EINVAL`|Invalid argument|22|
-|`ENFILE`|Too many files open in system|23|
-|`EMFILE`|Too many open files|24|
-|`ENOTTY`|Inappropriate I/O control operation|25|
-|`EFBIG`|File too large|27|
-|`ENOSPC`|No space left on device|28|
-|`ESPIPE`|Invalid seek|29|
-|`EROFS`|Read-only file system|30|
-|`EMLINK`|Too many links|31|
-|`EPIPE`|Broken pipe|32|
-|`EDOM`|Math argument|33|
-|`ERANGE`|Result too large|34|
-|`EDEADLK`|Resource deadlock would occur|36|
-|`EDEADLOCK`|Same as EDEADLK for compatibility with older Microsoft C versions|36|
-|`ENAMETOOLONG`|Filename too long|38|
-|`ENOLCK`|No locks available|39|
-|`ENOSYS`|Function not supported|40|
-|`ENOTEMPTY`|Directory not empty|41|
-|`EILSEQ`|Illegal byte sequence|42|
-|`STRUNCATE`|String was truncated|80|
+All `errno` values are predefined constants in \<errno.h>, and are UNIX-compatible. Only `ERANGE`, `EILSEQ`, and `EDOM` are specified in the ISO C99 standard. For a complete list, see [errno Constants](../c-runtime-library/errno-constants.md).
 
 ## Requirements
 

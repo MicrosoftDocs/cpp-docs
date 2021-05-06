@@ -3114,6 +3114,10 @@
       items: 
         - name: Compiler errors C7500 through C7999
           href: compiler-errors-2/compiler-errors-c7500-through-c7999.md
+        - name: Compiler error C7510
+          href: compiler-errors-2/compiler-error-c7510.md
+        - name: Compiler error C7536
+          href: compiler-errors-2/compiler-error-c7536.md
         - name: Compiler error C7626
           href: compiler-warnings/c5208.md
 - name: Compiler warnings C4000 Through C5999
@@ -3882,6 +3886,8 @@
           href: compiler-warnings/compiler-warning-level-1-c4584.md
         - name: Compiler warning (level 4) C4596
           href: compiler-warnings/c4596.md
+        - name: Compiler warning (level 4) C4597
+          href: compiler-warnings/c4597.md
     - name: Compiler warnings C4600 Through C4799
       expanded: false
       items: 
@@ -4099,6 +4105,8 @@
           href: compiler-warnings/compiler-warning-level-2-c4756.md
         - name: Compiler warning (level 4) C4764
           href: compiler-warnings/compiler-warning-level-4-c4764.md
+        - name: Compiler warning (level 4) C4768
+          href: compiler-warnings/c4768.md
         - name: Compiler warning (level 1) C4772
           href: compiler-warnings/compiler-warning-level-1-c4772.md
         - name: Compiler warning (Level 1) C4788
@@ -4164,6 +4172,10 @@
           href: compiler-warnings/compiler-warning-level-3-c4839.md
         - name: Compiler warning (level 4) C4840
           href: compiler-warnings/compiler-warning-level-4-c4840.md
+        - name: Compiler warning (level 4) C4841
+          href: compiler-warnings/c4841.md
+        - name: Compiler warning (level 4) C4843
+          href: compiler-warnings/c4843.md
         - name: Compiler warning (level 4) C4866
           href: compiler-warnings/c4866.md
         - name: Compiler warning C4867
@@ -4276,6 +4288,8 @@
           href: compiler-warnings/c5045.md
         - name: Compiler warning (level 2) C5046
           href: compiler-warnings/c5046.md
+        - name: Compiler warning C5050
+          href: compiler-warnings/c5050.md
         - name: Compiler warning (level 1) C5105
           href: compiler-warnings/c5105.md
         - name: Compiler warning (level 1) C5208
