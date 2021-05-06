@@ -49,9 +49,7 @@ The `__AVX__` preprocessor symbol is defined when the **/arch:AVX**, **/arch:AVX
 
 1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **Configuration Properties**, **C/C++** folder.
-
-1. Select the **Code Generation** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
 1. In the **Enable Enhanced Instruction Set** drop-down box, choose **Advanced Vector Extensions (/arch:AVX)**, **Advanced Vector Extensions 2 (/arch:AVX2)** or **Advanced Vector Extensions 512 (/arch:AVX512)**.
 

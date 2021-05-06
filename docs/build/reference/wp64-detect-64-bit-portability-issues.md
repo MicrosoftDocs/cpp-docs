@@ -37,9 +37,7 @@ If you regularly compile your application by using a compiler that builds 64-bit
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Modify the **Additional Options** box to include **/Wp64**.
 

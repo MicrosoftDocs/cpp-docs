@@ -101,9 +101,7 @@ Even if you use **/GS**, always try to write secure code that has no buffer over
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. In the **Property Pages** dialog box, click the **C/C++** folder.
-
-1. Click the **Code Generation** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
 1. Modify the **Buffer Security Check** property.
 

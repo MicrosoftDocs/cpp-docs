@@ -22,11 +22,7 @@ ms.assetid: befa5ab2-a9cf-4c9b-969a-e7b4a930f08d
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Expand the **Configuration Properties** node.
-
-1. Expand the **Linker** node.
-
-1. Select the **Manifest File** property page.
+1. Select the **Configuration Properties** > **Linker** > **Manifest File** property page.
 
 1. Modify the **Manifest File** property.
 

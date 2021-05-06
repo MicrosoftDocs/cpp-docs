@@ -30,9 +30,7 @@ Global symbols in a map file usually have one or more leading underscores. It's 
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Enter the compiler option in the **Additional Options** box.
 
