@@ -29,7 +29,7 @@ For information about how to enable output messages for the auto-parallelizer, s
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. In the **Additional Options** box, enter `/Qpar`.
+1. In the **Additional Options** box, enter *`/Qpar`*.
 
 ### To set the /Qpar compiler option programmatically
 

@@ -30,7 +30,7 @@ For information about reason codes and messages, see [Vectorizer and Parallelize
 
 1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
-1. In the **Additional Options** box, enter `/Qvec-report:1` or `/Qvec-report:2`.
+1. In the **Additional Options** box, enter *`/Qvec-report:1`* or *`/Qvec-report:2`*.
 
 ### To set the /Qvec-report compiler option programmatically
 
