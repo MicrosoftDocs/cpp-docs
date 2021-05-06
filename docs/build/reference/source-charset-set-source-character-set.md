@@ -32,7 +32,7 @@ By default, Visual Studio detects a byte-order mark to determine if the source f
 
 The source character set you supply must map the 7-bit ASCII characters to the same code points in your character set, or many compilation errors are likely to follow. Your source character set must also be mappable to the extended Unicode character set encodable by UTF-8. Characters that are not encodable in UTF-8 are represented by an implementation-specific substitute. The Microsoft compiler uses a question mark for these characters.
 
-If you want to set both the source character set and the execution character set to UTF-8, you can use the **/utf-8** compiler option as a shortcut. It is equivalent to specifying **/source-charset:utf-8 /execution-charset:utf-8** on the command line. Any of these options also enables the **/validate-charset** option by default.
+If you want to set both the source character set and the execution character set to UTF-8, you can use the **/utf-8** compiler option as a shortcut. It is equivalent to specifying **`/source-charset:utf-8 /execution-charset:utf-8`** on the command line. Any of these options also enables the **/validate-charset** option by default.
 
 ### To set this compiler option in the Visual Studio development environment
 
