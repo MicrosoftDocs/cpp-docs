@@ -84,7 +84,7 @@ The following table summarizes the modes for various *`ccs`* flags that are give
 
 |ccs flag|No BOM (or new file)|BOM: UTF-8|BOM: UTF-16|
 |----------------|----------------------------|-----------------|------------------|
-|**`UNICODE`**|**`UTF-16LE`**|**`UTF-8`**|**`UTF-16LE`**|
+|**`UNICODE`**|**`UTF-8`**|**`UTF-8`**|**`UTF-16LE`**|
 |**`UTF-8`**|**`UTF-8`**|**`UTF-8`**|**`UTF-16LE`**|
 |**`UTF-16LE`**|**`UTF-16LE`**|**`UTF-8`**|**`UTF-16LE`**|
 
