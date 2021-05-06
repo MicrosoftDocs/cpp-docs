@@ -27,7 +27,7 @@ LINK ignores /NATVIS when a PDB file is not created by using a [/DEBUG](debug-ge
 
 1. Select the **Command Line** property page in the **Linker** folder.
 
-1. Add the /NATVIS option to the **Additional Options** text box.
+1. Add the *`/NATVIS`* option to the **Additional Options** text box.
 
 ### To set this linker option programmatically
 

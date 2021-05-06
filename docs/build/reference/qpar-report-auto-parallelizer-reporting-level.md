@@ -30,7 +30,7 @@ Messages are reported to stdout. If no informational messages are reported, then
 
 1. In the **Property Pages** dialog box, under **C/C++**, select **Command Line**.
 
-1. In the **Additional Options** box, enter `/Qpar-report:1` or `/Qpar-report:2`.
+1. In the **Additional Options** box, enter *`/Qpar-report:1`* or *`/Qpar-report:2`*.
 
 ### To set the /Qpar-report compiler option programmatically
 

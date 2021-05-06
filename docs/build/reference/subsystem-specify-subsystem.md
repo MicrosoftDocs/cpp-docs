@@ -11,7 +11,7 @@ ms.assetid: d7b133cf-cf22-4da8-ab46-6552702c0b9b
 ```
 /SUBSYSTEM:{BOOT_APPLICATION|CONSOLE|EFI_APPLICATION|
             EFI_BOOT_SERVICE_DRIVER|EFI_ROM|EFI_RUNTIME_DRIVER|NATIVE|
-            POSIX|WINDOWS)
+            POSIX|WINDOWS}
             [,major[.minor]]
 ```
 
@@ -67,7 +67,7 @@ The optional minimum and default *major* and *minor* version numbers for the sub
 
 1. Select the **System** property page.
 
-1. Modify the `SubSystem` property.
+1. Modify the **SubSystem** property.
 
 ### To set this linker option programmatically
 
