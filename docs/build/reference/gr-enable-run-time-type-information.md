@@ -28,9 +28,7 @@ For more information about run-time type checking, see [Run-Time Type Informatio
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **Language** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Language** property page.
 
 1. Modify the **Enable Run-Time Type Info** property.
 

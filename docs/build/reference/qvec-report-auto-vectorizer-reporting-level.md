@@ -26,11 +26,11 @@ For information about reason codes and messages, see [Vectorizer and Parallelize
 
 ### To set the /Qvec-report compiler option in Visual Studio
 
-1. In **Solution Explorer**, open the shortcut menu for the project and then choose **Properties**.
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. In the **Property Pages** dialog box, under **C/C++**, select **Command Line**.
+1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
-1. In the **Additional Options** box, enter `/Qvec-report:1` or `/Qvec-report:2`.
+1. In the **Additional Options** box, enter *`/Qvec-report:1`* or *`/Qvec-report:2`*.
 
 ### To set the /Qvec-report compiler option programmatically
 

@@ -26,9 +26,7 @@ The [/MP](mp-build-with-multiple-processes.md) option enables **/FS** by default
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **C/C++** folder.
-
-1. Select the **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Modify the **Additional Options** property to include `/FS` and then choose **OK**.
 
