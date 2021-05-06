@@ -71,7 +71,7 @@ IntelliSense fails in makefile projects when certain project settings or compile
 
 1. Open the **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Expand the **Configuration Properties** > **NMake** property page.
+1. Select the **Configuration Properties** > **NMake** property page.
 
 1. Modify properties under **IntelliSense** as appropriate:
 
