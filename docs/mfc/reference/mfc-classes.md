@@ -5,12 +5,12 @@ ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, classes", "classes [MFC], MFC"]
 ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
 ---
-# MFC` Classes
+# MFC Classes
 
-The classes in the following list are included in the Microsoft Foundation` Class (MFC) Library.
+The classes in the following list are included in the Microsoft Foundation Class (MFC) Library.
 
 > [!TIP]
-> For information about [`CStringT`](../../atl-mfc-shared/reference/cstringt-class.md) and other classes that are common to both MFC and ATL programming, see [`Classes Shared by MFC and ATL](../../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md).
+> For information about [`CStringT`](../../atl-mfc-shared/reference/cstringt-class.md) and other classes that are common to both MFC and ATL programming, see [Classes Shared by MFC and ATL](../../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md).
 
 > [!IMPORTANT]
 > The MFC classes and their members cannot be used in applications that execute in the Windows Runtime.
@@ -123,7 +123,7 @@ Provides the functionality of a Windows checklist box.
 Handles the calling of the Windows functions [`GetDC`](/windows/win32/api/winuser/nf-winuser-getdc) at construction time and [`ReleaseDC`](/windows/win32/api/winuser/nf-winuser-releasedc) at destruction time.
 
 [`CCmdTarget` Class](../../mfc/reference/ccmdtarget-class.md)<br/>
-Base class for the Microsoft Foundation` Class Library message-map architecture.
+Base class for the Microsoft Foundation Class Library message-map architecture.
 
 [`CCmdUI` Class](../../mfc/reference/ccmdui-class.md)<br/>
 Used only within an `ON_UPDATE_COMMAND_UI` handler in a `CCmdTarget`-derived class.
@@ -363,13 +363,13 @@ A type of view class that provides the functionality of a Windows edit control a
 Represents an "event", which is a synchronization object that enables one thread to notify another that an event has occurred.
 
 [`CException` Class](../../mfc/reference/cexception-class.md)<br/>
-The base class for all exceptions in the Microsoft Foundation` Class Library.
+The base class for all exceptions in the Microsoft Foundation Class Library.
 
 [`CFieldExchange` Class](../../mfc/reference/cfieldexchange-class.md)<br/>
 Supports the record field exchange (RFX) and bulk record field exchange (Bulk RFX) routines used by the database classes.
 
 [`CFile` Class](../../mfc/reference/cfile-class.md)<br/>
-The base class for Microsoft Foundation` Class file classes.
+The base class for Microsoft Foundation Class file classes.
 
 [`CFileDialog` Class](../../mfc/reference/cfiledialog-class.md)<br/>
 Encapsulates the common file dialog box for Windows.
@@ -879,7 +879,7 @@ Represents an exception that is the result of a request for an unsupported featu
 Supports arrays of `CObject` pointers.
 
 [`CObject` Class](../../mfc/reference/cobject-class.md)<br/>
-The principal base class for the Microsoft Foundation` Class Library.
+The principal base class for the Microsoft Foundation Class Library.
 
 [`CObList` Class](../../mfc/reference/coblist-class.md)<br/>
 Supports ordered lists of non-unique `CObject` pointers accessible sequentially or by pointer value.
@@ -891,10 +891,10 @@ Manages various custom control sites; implemented by `COleControlContainer` and 
 Used for the OLE Server Not Responding or Server Busy dialog boxes.
 
 [`COleChangeIconDialog` Class](../../mfc/reference/colechangeicondialog-class.md)<br/>
-Used for the OLE` Change Icon dialog box.
+Used for the OLE Change Icon dialog box.
 
 [`COleChangeSourceDialog` Class](../../mfc/reference/colechangesourcedialog-class.md)<br/>
-Used for the OLE` Change Source dialog box.
+Used for the OLE Change Source dialog box.
 
 [`COleClientItem` Class](../../mfc/reference/coleclientitem-class.md)<br/>
 Defines the container interface to OLE items.
@@ -921,10 +921,10 @@ For more information, see the [`OLEUICONVERT`](/windows/win32/api/oledlg/ns-oled
 Encapsulates the `CURRENCY` data type of OLE automation.
 
 [`COleDataObject` Class](../../mfc/reference/coledataobject-class.md)<br/>
-Used in data transfers for retrieving data in various formats from the` Clipboard, through drag and drop, or from an embedded OLE item.
+Used in data transfers for retrieving data in various formats from the Clipboard, through drag and drop, or from an embedded OLE item.
 
 [`COleDataSource` Class](../../mfc/reference/coledatasource-class.md)<br/>
-Acts as a cache into which an application places the data that it will offer during data transfer operations, such as` Clipboard or drag-and-drop operations.
+Acts as a cache into which an application places the data that it will offer during data transfer operations, such as Clipboard or drag-and-drop operations.
 
 [`COleDBRecordView` Class](../../mfc/reference/coledbrecordview-class.md)<br/>
 A view that displays database records in controls.
@@ -1023,7 +1023,7 @@ Encapsulates a Windows color palette.
 Enhancement of the [`CControlBar` Class](../../mfc/reference/ccontrolbar-class.md). If you are upgrading an existing MFC project, you need to replace all occurrences of `CControlBar` with `CPane`.
 
 [`CPaneContainer` Class](../../mfc/reference/cpanecontainer-class.md)<br/>
-Basic component of the docking model implemented by MFC. An object of this class stores pointers to two docking panes or to two instances of `CPaneContainer.` It also stores a pointer to the divider that separates the panes (or the containers). By nesting containers inside containers, the framework can build a binary tree that represents complex docking layouts. The root of the binary tree is stored in a [`CPaneContainerManager` Class](../../mfc/reference/cpanecontainermanager-class.md) object.
+Basic component of the docking model implemented by MFC. An object of this class stores pointers to two docking panes or to two instances of `CPaneContainer`. It also stores a pointer to the divider that separates the panes (or the containers). By nesting containers inside containers, the framework can build a binary tree that represents complex docking layouts. The root of the binary tree is stored in a [`CPaneContainerManager` Class](../../mfc/reference/cpanecontainermanager-class.md) object.
 
 [`CPaneContainerManager` Class](../../mfc/reference/cpanecontainermanager-class.md)<br/>
 Manages the storage and display of the current docking layout.
@@ -1191,13 +1191,13 @@ Represents a customized splitter window.
 Provides the functionality of a Windows static control.
 
 [`CStatusBar` Class](../../mfc/reference/cstatusbar-class.md)<br/>
-A control bar with a row of text output panes, or "indicators."
+A control bar with a row of text output panes, or "indicators".
 
 [`CStatusBarCtrl` Class](../../mfc/reference/cstatusbarctrl-class.md)<br/>
 Provides the functionality of the Windows common status bar control.
 
 [`CStdioFile` Class](../../mfc/reference/cstdiofile-class.md)<br/>
-Represents a` C run-time stream file as opened by the run-time function [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md).
+Represents a C run-time stream file as opened by the run-time function [`fopen`, `_wfopen`](../../c-runtime-library/reference/fopen-wfopen.md).
 
 [`CStringArray` Class](../../mfc/reference/cstringarray-class.md)<br/>
 Supports arrays of `CString` objects.
@@ -1227,7 +1227,7 @@ Control bars that have a row of bitmapped buttons and optional separators.
 Provides the functionality of the Windows toolbar common control.
 
 [`CToolTipCtrl` Class](../../mfc/reference/ctooltipctrl-class.md)<br/>
-Encapsulates the functionality of a "tool tip control," a small pop-up window that displays a single line of text describing the purpose of a tool in an application.
+Encapsulates the functionality of a "tool tip control", a small pop-up window that displays a single line of text describing the purpose of a tool in an application.
 
 [`CTooltipManager` Class](../../mfc/reference/ctooltipmanager-class.md)<br/>
 Maintains runtime information about tooltips. The `CTooltipManager` class is instantiated one time per application.
@@ -1290,7 +1290,7 @@ Provides generic functionality for hosting of a Windows Forms control as an MFC 
 Represents a thread of execution within an application.
 
 [`CWnd` Class](../../mfc/reference/cwnd-class.md)<br/>
-Provides the base functionality of all window classes in the Microsoft Foundation` Class Library.
+Provides the base functionality of all window classes in the Microsoft Foundation Class Library.
 
 [`CWordArray` Class](../../mfc/reference/cwordarray-class.md)<br/>
 Supports arrays of 16-bit words.
