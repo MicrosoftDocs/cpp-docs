@@ -35,7 +35,7 @@ The **_umask** function sets the file-permission mask of the current process to 
 
 The integer expression *pmode* contains one or both of the following manifest constants, defined in SYS\STAT.H:
 
-|*pmode*| |
+|*pmode*|Description|
 |-|-|
 | **_S_IWRITE** | Writing permitted. |
 | **_S_IREAD** | Reading permitted. |

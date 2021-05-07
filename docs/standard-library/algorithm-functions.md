@@ -8,7 +8,7 @@ helpviewer_keywords: ["std::adjacent_find [C++]", "std::all_of [C++]", "std::any
 ---
 # &lt;algorithm&gt; functions
 
-## <a name="adjacent_find"></a> adjacent_find
+## <a name="adjacent_find"></a> `adjacent_find`
 
 Searches for two adjacent elements that are either equal or satisfy a specified condition.
 
@@ -40,16 +40,16 @@ ForwardIterator adjacent_find(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator addressing the position of the first element in the range to be searched.
 
-*last*\
+*`last`*\
 A forward iterator addressing the position one past the final element in the range to be searched.
 
-*pred*\
+*`pred`*\
 The binary predicate giving the condition to be satisfied by the values of the adjacent elements in the range being searched.
 
 ### Return value
@@ -126,7 +126,7 @@ There are two adjacent elements where the second is twice the first.
 They have values of 10 & 20.
 ```
 
-## <a name="all_of"></a> all_of
+## <a name="all_of"></a> `all_of`
 
 Returns **`true`** when a condition is present at each element in the given range.
 
@@ -147,16 +147,16 @@ bool all_of(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator that indicates where to start to check for a condition. The iterator marks where a range of elements starts.
 
-*last*\
+*`last`*\
 An input iterator that indicates the end of the range of elements to check for a condition.
 
-*pred*\
+*`pred`*\
 A condition to test for. This is a user-defined predicate function object that defines the condition to be satisfied by an element being checked. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
@@ -202,7 +202,7 @@ li = ( 50 40 10 20 20 )
 All the elements are even numbers.
 ```
 
-## <a name="any_of"></a> any_of
+## <a name="any_of"></a> `any_of`
 
 Returns **`true`** when a condition is present at least once in the specified range of elements.
 
@@ -223,16 +223,16 @@ bool any_of(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator that indicates where to start checking a range of elements for a condition.
 
-*last*\
+*`last`*\
 An input iterator that indicates the end of the range of elements to check for a condition.
 
-*pred*\
+*`pred`*\
 A condition to test for. This is provided by a user-defined predicate function object. The predicate defines the condition to be satisfied by the element being tested. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
@@ -279,7 +279,7 @@ li = ( 51 41 11 21 20 )
 There's an even element in li.
 ```
 
-## <a name="binary_search"></a> binary_search
+## <a name="binary_search"></a> `binary_search`
 
 Tests whether there is an element in a sorted range that is equal to a specified value or that is equivalent to it in a sense specified by a binary predicate.
 
@@ -300,16 +300,16 @@ bool binary_search(
 
 ### Parameters
 
-*first*\
+*`first`*\
 A forward iterator addressing the position of the first element in the range to be searched.
 
-*last*\
+*`last`*\
 A forward iterator addressing the position one past the final element in the range to be searched.
 
-*value*\
+*`value`*\
 The value required to be matched by the value of the element or that must satisfy the condition with the element value specified by the binary predicate.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -418,7 +418,7 @@ Ordered using mod_lesser, vector v1 = ( 0 -1 1 -2 2 3 4 )
 There is an element with a value equivalent to -3 under mod_lesser.
 ```
 
-## <a name="clamp"></a> clamp
+## <a name="clamp"></a> `clamp`
 
 Compares a value to an upper and lower bound, and returns a reference to the value if it is between the bounds, or a reference to the upper or lower bound if the value is above or below them, respectively.
 
@@ -439,27 +439,27 @@ constexpr const Type& clamp(
 
 ### Parameters
 
-*value*\
-The value to compare to *upper* and *lower*.
+*`value`*\
+The value to compare to *`upper`* and *`lower`*.
 
-*lower*\
-The lower bound of values to clamp *value* to.
+*`lower`*\
+The lower bound of values to clamp *`value`* to.
 
-*upper*\
-The upper bound of values to clamp *value* to.
+*`upper`*\
+The upper bound of values to clamp *`value`* to.
 
-*pred*\
-A predicate used to compare *value* to *lower* or *upper*. A comparison predicate takes two arguments and returns **`true`** if the first is in some sense less than the second, and otherwise, **`false`**.
+*`pred`*\
+A predicate used to compare *`value`* to *`lower`* or *`upper`*. A comparison predicate takes two arguments and returns **`true`** if the first is in some sense less than the second, and otherwise, **`false`**.
 
 ### Return value
 
-Returns a reference to *lower* if `value < lower`, or a reference to *upper* if `upper < value`. Otherwise, it returns a reference to *value*.
+Returns a reference to *`lower`* if `value < lower`, or a reference to *`upper`* if `upper < value`. Otherwise, it returns a reference to *`value`*.
 
 ### Remarks
 
-The behavior is undefined if *upper* is less than *lower*.
+The behavior is undefined if *`upper`* is less than *`lower`*.
 
-## <a name="copy"></a> copy
+## <a name="copy"></a> `copy`
 
 Assigns the values of elements from a source range to a destination range, iterating through the source sequence of elements and assigning them new positions in a forward direction.
 
@@ -480,27 +480,27 @@ ForwardIterator2 copy(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator addressing the position of the first element in the source range.
 
-*last*\
+*`last`*\
 An input iterator addressing the position that is one past the final element in the source range.
 
-*destBeg*\
+*`destBeg`*\
 An output iterator addressing the position of the first element in the destination range.
 
 ### Return value
 
-An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `result` + (*last* - *first*).
+An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses `result` + (*`last`* - *`first`*).
 
 ### Remarks
 
 The source range must be valid and there must be sufficient space at the destination to hold all the elements being copied.
 
-Because the algorithm copies the source elements in order beginning with the first element, the destination range can overlap with the source range provided the *last* position of the source range is not contained in the destination range. `copy` can be used to shift elements to the left but not the right, unless there is no overlap between the source and destination ranges. To shift to the right any number of positions, use the [copy_backward](algorithm-functions.md#copy_backward) algorithm.
+Because the algorithm copies the source elements in order beginning with the first element, the destination range can overlap with the source range provided the *last* position of the source range is not contained in the destination range. `copy` can be used to shift elements to the left but not the right, unless there is no overlap between the source and destination ranges. To shift to the right any number of positions, use the [`copy_backward`](algorithm-functions.md#copy_backward) algorithm.
 
 The `copy` algorithm only modifies values pointed to by the iterators, assigning new values to elements in the destination range. It cannot be used to create new elements and cannot insert elements into an empty container directly.
 
@@ -562,7 +562,7 @@ v2 with v1 insert = ( 0 3 6 9 0 10 20 21 24 27 30 )
 v2 with shifted insert = ( 0 3 0 10 20 10 20 21 24 27 30 )
 ```
 
-## <a name="copy_backward"></a> copy_backward
+## <a name="copy_backward"></a> `copy_backward`
 
 Assigns the values of elements from a source range to a destination range, iterating through the source sequence of elements and assigning them new positions in a backward direction.
 
@@ -576,18 +576,18 @@ BidirectionalIterator2 copy_backward(
 
 ### Parameters
 
-*first*\
+*`first`*\
 A bidirectional iterator addressing the position of the first element in the source range.
 
-*last*\
+*`last`*\
 A bidirectional iterator addressing the position that is one past the final element in the source range.
 
-*destEnd*\
+*`destEnd`*\
 A bidirectional iterator addressing the position of one past the final element in the destination range.
 
 ### Return value
 
-An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses *destEnd* - (*last* - *first*).
+An output iterator addressing the position that is one past the final element in the destination range, that is, the iterator addresses *`destEnd`* - (*`last`* - *`first`*).
 
 ### Remarks
 
@@ -595,9 +595,9 @@ The source range must be valid and there must be sufficient space at the destina
 
 The `copy_backward` algorithm imposes more stringent requirements than that the `copy` algorithm. Both its input and output iterators must be bidirectional.
 
-The `copy_backward` and [move_backward](algorithm-functions.md#move_backward) algorithms are the only C++ Standard Library algorithms designating the output range with an iterator pointing to the end of the destination range.
+The `copy_backward` and [`move_backward`](algorithm-functions.md#move_backward) algorithms are the only C++ Standard Library algorithms designating the output range with an iterator pointing to the end of the destination range.
 
-Because the algorithm copies the source elements in order beginning with the last element, the destination range can overlap with the source range provided the *first* position of the source range is not contained in the destination range. `copy_backward` can be used to shift elements to the right but not the left, unless there is no overlap between the source and destination ranges. To shift to the left any number of positions, use the [copy](algorithm-functions.md#copy) algorithm.
+Because the algorithm copies the source elements in order beginning with the last element, the destination range can overlap with the source range provided the *first* position of the source range is not contained in the destination range. `copy_backward` can be used to shift elements to the right but not the left, unless there is no overlap between the source and destination ranges. To shift to the left any number of positions, use the [`copy`](algorithm-functions.md#copy) algorithm.
 
 The `copy_backward` algorithm only modifies values pointed to by the iterators, assigning new values to elements in the destination range. It cannot be used to create new elements and cannot insert elements into an empty container directly.
 
@@ -659,7 +659,7 @@ v2 with v1 insert = ( 0 3 6 9 0 10 20 21 24 27 30 )
 v2 with shifted insert = ( 0 3 6 9 0 10 0 10 20 27 30 )
 ```
 
-## <a name="copy_if"></a> copy_if
+## <a name="copy_if"></a> `copy_if`
 
 In a range of elements, copies the elements that are **`true`** for the specified condition.
 
@@ -682,24 +682,24 @@ ForwardIterator2 copy_if(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator that indicates the start of a range to check for the condition.
 
-*last*\
+*`last`*\
 An input iterator that indicates the end of the range.
 
-*dest*\
+*`dest`*\
 The output iterator that indicates the destination for the copied elements.
 
-*pred*\
+*`pred`*\
 The condition against which every element in the range is tested. This condition is provided by a user-defined predicate function object. A unary predicate takes one argument and returns **`true`** or **`false`**.
 
 ### Return value
 
-An output iterator that equals *dest* incremented once for each element that fulfills the condition. In other words, the return value minus *dest* equals the number of copied elements.
+An output iterator that equals *`dest`* incremented once for each element that fulfills the condition. In other words, the return value minus *`dest`* equals the number of copied elements.
 
 ### Remarks
 
@@ -707,7 +707,7 @@ The template function evaluates
 
 `if (pred(*first + N)) * dest++ = *(first + N))`
 
-once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. If *dest* and *first* designate regions of storage, *dest* must not be in the range `[ first, last )`.
+once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. If *`dest`* and *`first`* designate regions of storage, *`dest`* must not be in the range `[ first, last )`.
 
 ### Example
 
@@ -764,7 +764,7 @@ Even numbers are le = ( 46 88 72 60 40 84 )
 Odd numbers are lo = ( 59 79 71 5 )
 ```
 
-## <a name="copy_n"></a> copy_n
+## <a name="copy_n"></a> `copy_n`
 
 Copies a specified number of elements.
 
@@ -785,25 +785,25 @@ ForwardIterator2 copy_n(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator that indicates where to copy elements from.
 
-*count*\
+*`count`*\
 A signed or unsigned integer type specifying the number of elements to copy.
 
-*dest*\
+*`dest`*\
 An output iterator that indicates where to copy elements to.
 
 ### Return value
 
-Returns an output iterator where elements have been copied to. It is the same as the returned value of the *dest* parameter.
+Returns an output iterator where elements have been copied to. It is the same as the returned value of the *`dest`* parameter.
 
 ### Remarks
 
-The template function evaluates `*(dest + N) = *(first + N))` once for each `N` in the range `[0, count)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest + N`. If *dest* and *first* designate regions of storage, *dest* must not be in the range `[first, last)`.
+The template function evaluates `*(dest + N) = *(first + N))` once for each `N` in the range `[0, count)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest + N`. If *`dest`* and *`first`* designate regions of storage, *`dest`* must not be in the range `[first, last)`.
 
 ### Example
 
@@ -834,7 +834,7 @@ int main()
 dandelion + badger = danger
 ```
 
-## <a name="count"></a> count
+## <a name="count"></a> `count`
 
 Returns the number of elements in a range whose values match a specified value.
 
@@ -856,27 +856,27 @@ count(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator addressing the position of the first element in the range to be traversed.
 
-*last*\
+*`last`*\
 An input iterator addressing the position one past the final element in the range to be traversed.
 
-*value*\
+*`value`*\
 The value of the elements to be counted.
 
 ### Return value
 
-The difference type of the `InputIterator` that counts the number of elements in the range [*first*, *last*) that have value *value*.
+The difference type of the `InputIterator` that counts the number of elements in the range [*`first`*, *`last`*) that have value *`value`*.
 
 ### Remarks
 
 The `operator==` used to determine the match between an element and the specified value must impose an equivalence relation between its operands.
 
-This algorithm is generalized to count elements that satisfy any predicate with the template function [count_if](algorithm-functions.md#count_if).
+This algorithm is generalized to count elements that satisfy any predicate with the template function [`count_if`](algorithm-functions.md#count_if).
 
 ### Example
 
@@ -915,7 +915,7 @@ v1 = ( 10 20 10 40 10 )
 The number of 10s in v2 is: 3.
 ```
 
-## <a name="count_if"></a> count_if
+## <a name="count_if"></a> `count_if`
 
 Returns the number of elements in a range whose values satisfy a specified condition.
 
@@ -937,16 +937,16 @@ count_if(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator addressing the position of the first element in the range to be searched.
 
-*last*\
+*`last`*\
 An input iterator addressing the position one past the final element in the range to be searched.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the condition to be satisfied if an element is to be counted. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
@@ -955,7 +955,7 @@ The number of elements that satisfy the condition specified by the predicate.
 
 ### Remarks
 
-This template function is a generalization of the algorithm [count](algorithm-functions.md#count), replacing the predicate "equals a specific value" with any predicate.
+This template function is a generalization of the algorithm [`count`](algorithm-functions.md#count), replacing the predicate "equals a specific value" with any predicate.
 
 ### Example
 
@@ -1000,7 +1000,7 @@ v1 = ( 10 20 10 40 10 )
 The number of elements in v1 greater than 10 is: 2.
 ```
 
-## <a name="equal"></a> equal
+## <a name="equal"></a> `equal`
 
 Compares two ranges element by element for equality or equivalence in a sense specified by a binary predicate.
 
@@ -1072,22 +1072,22 @@ bool equal(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 An input iterator addressing the position of the first element in the first range to be tested.
 
-*last1*\
+*`last1`*\
 An input iterator addressing the position one past the last element in the first range to be tested.
 
-*first2*\
+*`first2`*\
 An input iterator addressing the position of the first element in the second range to be tested.
 
-*last2*\
+*`last2`*\
 An input iterator addressing the position of one past the last element in the second range to be tested.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -1135,7 +1135,7 @@ int main()
 }
 ```
 
-## <a name="equal_range"></a> equal_range
+## <a name="equal_range"></a> `equal_range`
 
 Given an ordered range, finds the subrange in which all elements are equivalent to a given value.
 
@@ -1156,33 +1156,33 @@ pair<ForwardIterator, ForwardIterator> equal_range(
 
 ### Parameters
 
-*first*\
+*`first`*\
 A forward iterator addressing the position of the first element in the range to be searched.
 
-*last*\
+*`last`*\
 A forward iterator addressing the position one past the final element in the range to be searched.
 
-*value*\
+*`value`*\
 The value being searched for in the ordered range.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the sense in which one element is less than another. A comparison predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
 
-A pair of forward iterators that specify a subrange, contained within the range searched, in which all of the elements are equivalent to *value* in the sense defined by the binary predicate used (either *pred* or the default, less-than).
+A pair of forward iterators that specify a subrange, contained within the range searched, in which all of the elements are equivalent to *`value`* in the sense defined by the binary predicate used (either *`pred`* or the default, less-than).
 
-If no elements in the range are equivalent to *value*, the forward iterators in the returned pair are equal and specify the point where *value* could be inserted without disturbing the order of the range.
+If no elements in the range are equivalent to *`value`*, the forward iterators in the returned pair are equal and specify the point where *`value`* could be inserted without disturbing the order of the range.
 
 ### Remarks
 
-The first iterator of the pair returned by the algorithm is [lower_bound](algorithm-functions.md#lower_bound), and the second iterator is [upper_bound](algorithm-functions.md#upper_bound).
+The first iterator of the pair returned by the algorithm is [`lower_bound`](algorithm-functions.md#lower_bound), and the second iterator is [`upper_bound`](algorithm-functions.md#upper_bound).
 
 The range must be sorted according to the predicate provided to `equal_range`. For example, if you are going to use the greater-than predicate, the range must be sorted in descending order.
 
 Elements in the possibly empty subrange defined by the pair of iterators returned by `equal_range` will be equivalent to *value* in the sense defined by the predicate used.
 
-The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to (*last* - *first*).
+The complexity of the algorithm is logarithmic for random-access iterators and linear otherwise, with the number of steps proportional to (*`last`* - *`first`*).
 
 ### Example
 
@@ -1301,7 +1301,7 @@ int main()
 }
 ```
 
-## <a name="fill"></a> fill
+## <a name="fill"></a> `fill`
 
 Assigns the same new value to every element in a specified range.
 
@@ -1322,17 +1322,17 @@ void fill(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator addressing the position of the first element in the range to be traversed.
 
-*last*\
+*`last`*\
 A forward iterator addressing the position one past the final element in the range to be traversed.
 
-*value*\
-The value to be assigned to elements in the range [*first*, *last*).
+*`value`*\
+The value to be assigned to elements in the range [*`first`*, *`last`*).
 
 ### Remarks
 
@@ -1379,7 +1379,7 @@ Vector v1 = ( 0 5 10 15 20 25 30 35 40 45 )
 Modified v1 = ( 0 5 10 15 20 2 2 2 2 2 )
 ```
 
-## <a name="fill_n"></a> fill_n
+## <a name="fill_n"></a> `fill_n`
 
 Assigns a new value to a specified number of elements in a range beginning with a particular element.
 
@@ -1400,21 +1400,21 @@ ForwardIterator fill_n(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
-An output iterator addressing the position of the first element in the range to be assigned the value *value*.
+*`first`*\
+An output iterator addressing the position of the first element in the range to be assigned the value *`value`*.
 
-*count*\
+*`count`*\
 A signed or unsigned integer type specifying the number of elements to be assigned the value.
 
-*value*\
-The value to be assigned to elements in the range [*first*, *first + count*).
+*`value`*\
+The value to be assigned to elements in the range [*`first`*, *`first + count`*).
 
 ### Return value
 
-An iterator to the element that follows the last element filled if *count* > zero, otherwise the first element.
+An iterator to the element that follows the last element filled if *`count`* > zero, otherwise the first element.
 
 ### Remarks
 
@@ -1468,7 +1468,7 @@ int main()
 }
 ```
 
-## <a name="find"></a> find
+## <a name="find"></a> `find`
 
 Locates the position of the first occurrence of an element in a range that has a specified value.
 
@@ -1489,29 +1489,29 @@ ForwardIterator find(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator addressing the position of the first element in the range to be searched for the specified value.
 
-*last*\
+*`last`*\
 An input iterator addressing the position one past the final element in the range to be searched for the specified value.
 
-*value*\
+*`value`*\
 The value to be searched for.
 
 ### Return value
 
-An input iterator addressing the first occurrence of the specified value in the range being searched. If no element is found with an equivalent value, returns *last*.
+An input iterator addressing the first occurrence of the specified value in the range being searched. If no element is found with an equivalent value, returns *`last`*.
 
 ### Remarks
 
 The `operator==` used to determine the match between an element and the specified value must impose an equivalence relation between its operands.
 
-For a code example using `find()`, see [find_if](algorithm-functions.md#find_if).
+For a code example using `find()`, see [`find_if`](algorithm-functions.md#find_if).
 
-## <a name="find_end"></a> find_end
+## <a name="find_end"></a> `find_end`
 
 Looks in a range for the last subsequence that is identical to a specified sequence or that is equivalent in a sense specified by a binary predicate.
 
@@ -1554,19 +1554,19 @@ find_end(
 
 ### Parameters
 
-*first1*\
+*`first1`*\
 A forward iterator addressing the position of the first element in the range to be searched.
 
-*last1*\
+*`last1`*\
 A forward iterator addressing the position one past the last element in the range to be searched.
 
-*first2*\
+*`first2`*\
 A forward iterator addressing the position of the first element in the range to search for.
 
-*last2*\
+*`last2`*\
 A forward iterator addressing the position one past the last element in the range to search for.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -1675,7 +1675,7 @@ There is a sequence of elements in v1 that are equivalent to those
 in v2 under the binary predicate twice and that begins at position 8.
 ```
 
-## <a name="find_first_of"></a> find_first_of
+## <a name="find_first_of"></a> `find_first_of`
 
 Searches for the first occurrence of any of several values within a target range or for the first occurrence of any of several elements that are equivalent in a sense specified by a binary predicate to a specified set of the elements.
 
@@ -1718,19 +1718,19 @@ find_first_of(
 
 ### Parameters
 
-*first1*\
+*`first1`*\
 A forward iterator addressing the position of the first element in the range to be searched.
 
-*last1*\
+*`last1`*\
 A forward iterator addressing the position one past the final element in the range to be searched.
 
-*first2*\
+*`first2`*\
 A forward iterator addressing the position of the first element in the range to be matched.
 
-*last2*\
+*`last2`*\
 A forward iterator addressing the position one past the final element in the range to be matched.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -1842,7 +1842,7 @@ to those in v2 under the binary predicate twice
 and the first one begins at position 2.
 ```
 
-## <a name="find_if"></a> find_if
+## <a name="find_if"></a> `find_if`
 
 Locates the position of the first occurrence of an element in a range that satisfies a specified condition.
 
@@ -1862,22 +1862,22 @@ ForwardIterator find_if(
 
 ### Parameters
 
-*first*\
+*`first`*\
 An input iterator addressing the position of the first element in the range to be searched.
 
-*last*\
+*`last`*\
 An input iterator addressing the position one past the final element in the range to be searched.
 
-*pred*\
-User-defined predicate function object or [lambda expression](../cpp/lambda-expressions-in-cpp.md) that defines the condition to be satisfied by the element being searched for. A unary predicate takes a single argument and returns **`true`** if satisfied, or **`false`** if not satisfied. The signature of *pred* must effectively be `bool pred(const T& arg);`, where `T` is a type to which `InputIterator` can be implicitly converted when dereferenced. The **`const`** keyword is shown only to illustrate that the function object or lambda should not modify the argument.
+*`pred`*\
+User-defined predicate function object or [lambda expression](../cpp/lambda-expressions-in-cpp.md) that defines the condition to be satisfied by the element being searched for. A unary predicate takes a single argument and returns **`true`** if satisfied, or **`false`** if not satisfied. The signature of *`pred`* must effectively be `bool pred(const T& arg);`, where `T` is a type to which `InputIterator` can be implicitly converted when dereferenced. The **`const`** keyword is shown only to illustrate that the function object or lambda should not modify the argument.
 
 ### Return value
 
-An input iterator that refers to the first element in the range that satisfies the condition specified by the predicate (the predicate results in **`true`**). If no element is found to satisfy the predicate, returns *last*.
+An input iterator that refers to the first element in the range that satisfies the condition specified by the predicate (the predicate results in **`true`**). If no element is found to satisfy the predicate, returns *`last`*.
 
 ### Remarks
 
-This template function is a generalization of the algorithm [find](algorithm-functions.md#find), replacing the predicate "equals a specific value" with any predicate. For the logical opposite (find the first element that does not satisfy the predicate), see [find_if_not](algorithm-functions.md#find_if_not).
+This template function is a generalization of the algorithm [`find`](algorithm-functions.md#find), replacing the predicate "equals a specific value" with any predicate. For the logical opposite (find the first element that does not satisfy the predicate), see [`find_if_not`](algorithm-functions.md#find_if_not).
 
 ### Example
 
@@ -1964,7 +1964,7 @@ int main()
 }
 ```
 
-## <a name="find_if_not"></a> find_if_not
+## <a name="find_if_not"></a> `find_if_not`
 
 Returns the first element in the indicated range that does not satisfy a condition.
 
@@ -1984,26 +1984,26 @@ ForwardIterator find_if_not(
 
 ### Parameters
 
-*first*\
+*`first`*\
 An input iterator addressing the position of the first element in the range to be searched.
 
-*last*\
+*`last`*\
 An input iterator addressing the position one past the final element in the range to be searched.
 
-*pred*\
-User-defined predicate function object or [lambda expression](../cpp/lambda-expressions-in-cpp.md) that defines the condition to be not satisfied by the element being searched for. A unary predicate takes a single argument and returns **`true`** if satisfied, or **`false`** if not satisfied. The signature of *pred* must effectively be `bool pred(const T& arg);`, where `T` is a type to which `InputIterator` can be implicitly converted when dereferenced. The **`const`** keyword is shown only to illustrate that the function object or lambda should not modify the argument.
+*`pred`*\
+User-defined predicate function object or [lambda expression](../cpp/lambda-expressions-in-cpp.md) that defines the condition to be not satisfied by the element being searched for. A unary predicate takes a single argument and returns **`true`** if satisfied, or **`false`** if not satisfied. The signature of *`pred`* must effectively be `bool pred(const T& arg);`, where `T` is a type to which `InputIterator` can be implicitly converted when dereferenced. The **`const`** keyword is shown only to illustrate that the function object or lambda should not modify the argument.
 
 ### Return value
 
-An input iterator that refers to the first element in the range that does not satisfy the condition specified by the predicate (the predicate results in **`false`**). If all elements satisfy the predicate (the predicate results in **`true`** for every element), returns *last*.
+An input iterator that refers to the first element in the range that does not satisfy the condition specified by the predicate (the predicate results in **`false`**). If all elements satisfy the predicate (the predicate results in **`true`** for every element), returns *`last`*.
 
 ### Remarks
 
-This template function is a generalization of the algorithm [find](algorithm-functions.md#find), replacing the predicate "equals a specific value" with any predicate. For the logical opposite (find the first element that does satisfy the predicate), see [find_if](algorithm-functions.md#find_if).
+This template function is a generalization of the algorithm [`find`](algorithm-functions.md#find), replacing the predicate "equals a specific value" with any predicate. For the logical opposite (find the first element that does satisfy the predicate), see [`find_if`](algorithm-functions.md#find_if).
 
-For a code example readily adaptable to `find_if_not()`, see [find_if](algorithm-functions.md#find_if).
+For a code example readily adaptable to `find_if_not()`, see [`find_if`](algorithm-functions.md#find_if).
 
-## <a name="for_each"></a> for_each
+## <a name="for_each"></a> `for_each`
 
 Applies a specified function object to each element in a forward order within a range and returns the function object.
 
@@ -2024,13 +2024,13 @@ void for_each(
 
 ### Parameters
 
-*first*\
+*`first`*\
 An input iterator addressing the position of the first element in the range to be operated on.
 
-*last*\
+*`last`*\
 An input iterator addressing the position one past the final element in the range operated on.
 
-*func*\
+*`func`*\
 User-defined function object that is applied to each element in the range.
 
 ### Return value
@@ -2043,7 +2043,7 @@ The algorithm `for_each` is very flexible, allowing the modification of each ele
 
 The range referenced must be valid; all pointers must be dereferenceable and, within the sequence, the last position must be reachable from the first by incrementation.
 
-The complexity is linear with at most (*last* - *first*) comparisons.
+The complexity is linear with at most (*`last`* - *`first`*) comparisons.
 
 ### Example
 
@@ -2158,7 +2158,7 @@ The average of the elements of v1 is:
 Average ( v1mod2 ) = 10.
 ```
 
-## <a name="for_each_n"></a> for_each_n
+## <a name="for_each_n"></a> `for_each_n`
 
 ```cpp
 template<class InputIterator, class Size, class Function>
@@ -2175,7 +2175,7 @@ ForwardIterator for_each_n(
     Function f);
 ```
 
-## <a name="generate"></a> generate
+## <a name="generate"></a> `generate`
 
 Assigns the values generated by a function object to each element in a range.
 
@@ -2195,13 +2195,13 @@ void generate(
 
 ### Parameters
 
-*first*\
+*`first`*\
 A forward iterator addressing the position of the first element in the range to which values are to be assigned.
 
-*last*\
+*`last`*\
 A forward iterator addressing the position one past the final element in the range to which values are to be assigned.
 
-*gen*\
+*`gen`*\
 A function object that is called with no arguments that is used to generate the values to be assigned to each of the elements in the range.
 
 ### Remarks
@@ -2255,7 +2255,7 @@ Vector v1 is ( 41 18467 6334 26500 19169 ).
 Deque deq1 is ( 15724 11478 29358 26962 24464 ).
 ```
 
-## <a name="generate_n"></a> generate_n
+## <a name="generate_n"></a> `generate_n`
 
 Assigns the values generated by a function object to a specified number of elements in a range and returns to the position one past the last assigned value.
 
@@ -2276,16 +2276,16 @@ ForwardIterator generate_n(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An output iterator addressing the position of first element in the range to which values are to be assigned.
 
-*count*\
+*`count`*\
 A signed or unsigned integer type specifying the number of elements to be assigned a value by the generator function.
 
-*gen*\
+*`gen`*\
 A function object that is called with no arguments that is used to generate the values to be assigned to each of the elements in the range.
 
 ### Remarks
@@ -2341,7 +2341,7 @@ int main()
 }
 ```
 
-## <a name="includes"></a> includes
+## <a name="includes"></a> `includes`
 
 Tests whether one sorted range contains all the elements contained in a second sorted range, where the ordering or equivalence criterion between elements may be specified by a binary predicate.
 
@@ -2381,22 +2381,22 @@ bool includes(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 An input iterator addressing the position of the first element in the first of two sorted source ranges to be tested for whether all the elements of the second are contained in the first.
 
-*last1*\
+*`last1`*\
 An input iterator addressing the position one past the last element in the first of two sorted source ranges to be tested for whether all the elements of the second are contained in the first.
 
-*first2*\
+*`first2`*\
 An input iterator addressing the position of the first element in second of two consecutive sorted source ranges to be tested for whether all the elements of the second are contained in the first.
 
-*last2*\
+*`last2`*\
 An input iterator addressing the position one past the last element in second of two consecutive sorted source ranges to be tested for whether all the elements of the second are contained in the first.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines sense in which one element is less than another. A comparison predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -2566,7 +2566,7 @@ At least one of the elements in vector v2b is not contained in vector v2a.
 At least one of the elements in vector v3b is not contained under mod_lesser in vector v3a.
 ```
 
-## <a name="inplace_merge"></a> inplace_merge
+## <a name="inplace_merge"></a> `inplace_merge`
 
 Combines the elements from two consecutive sorted ranges into a single sorted range, where the ordering criterion may be specified by a binary predicate.
 
@@ -2602,19 +2602,19 @@ void inplace_merge(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A bidirectional iterator addressing the position of the first element in the first of two consecutive sorted ranges to be combined and sorted into a single range.
 
-*middle*\
+*`middle`*\
 A bidirectional iterator addressing the position of the first element in the second of two consecutive sorted ranges to be combined and sorted into a single range.
 
-*last*\
+*`last`*\
 A bidirectional iterator addressing the position one past the last element in the second of two consecutive sorted ranges to be combined and sorted into a single range.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **`true`** when the first element is less than the second element and **`false`** otherwise.
 
 ### Remarks
@@ -2623,7 +2623,7 @@ The sorted consecutive ranges referenced must be valid; all pointers must be der
 
 The sorted consecutive ranges must each be arranged as a precondition to the application of the `inplace_merge` algorithm in accordance with the same ordering as is to be used by the algorithm to sort the combined ranges. The operation is stable as the relative order of elements within each range is preserved. When there are equivalent elements in both source ranges, the element is the first range precedes the element from the second in the combined range.
 
-The complexity depends on the available memory as the algorithm allocates memory to a temporary buffer. If sufficient memory is available, the best case is linear with `(last - first) - 1` comparisons; if no auxiliary memory is available, the worst case is `N log(N)`, where *N* = *last* - *first*.
+The complexity depends on the available memory as the algorithm allocates memory to a temporary buffer. If sufficient memory is available, the best case is linear with `(last - first) - 1` comparisons; if no auxiliary memory is available, the worst case is `N log(N)`, where *`N`* = *`last`* - *`first`*.
 
 ### Example
 
@@ -2768,16 +2768,16 @@ bool is_heap(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A random access iterator that indicates the start of a range to check for a heap.
 
-*last*\
+*`last`*\
 A random access iterator that indicates the end of a range.
 
-*pred*\
+*`pred`*\
 A condition to test to order elements. A comparison predicate takes two arguments and returns **`true`** or **`false`**.
 
 ### Return value
@@ -2786,7 +2786,7 @@ Returns **`true`** if the elements in the specified range form a heap, **`false`
 
 ### Remarks
 
-The first template function returns [is_heap_until](algorithm-functions.md#is_heap_until)`(first , last) == last`.
+The first template function returns [`is_heap_until`](algorithm-functions.md#is_heap_until)`(first , last) == last`.
 
 The second template function returns
 
@@ -2794,7 +2794,7 @@ The second template function returns
 
 ## <a name="is_heap_until"></a> is_heap_until
 
-Returns an iterator positioned at the first element in the range [ `first`, `last`) that does not satisfy the heap ordering condition, or *end* if the range forms a heap.
+Returns an iterator positioned at the first element in the range [ `first`, `last`) that does not satisfy the heap ordering condition, or *`end`* if the range forms a heap.
 
 ```cpp
 template<class RandomAccessIterator>
@@ -2824,27 +2824,27 @@ RandomAccessIterator is_heap_until(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A random access iterator that specifies the first element of a range to check for a heap.
 
-*last*\
+*`last`*\
 A random access iterator that specifies the end of the range to check for a heap.
 
-*pred*\
-A binary predicate that specifies the strict weak ordering condition that defines a heap. The default predicate is `std::less<>` when *pred* isn't specified.
+*`pred`*\
+A binary predicate that specifies the strict weak ordering condition that defines a heap. The default predicate is `std::less<>` when *`pred`* isn't specified.
 
 ### Return value
 
-Returns *last* if the specified range forms a heap or contains one or fewer elements. Otherwise, returns an iterator for the first element found that does not satisfy the heap condition.
+Returns *`last`* if the specified range forms a heap or contains one or fewer elements. Otherwise, returns an iterator for the first element found that does not satisfy the heap condition.
 
 ### Remarks
 
-The first template function returns the last iterator `next` in `[first, last)` where `[first, next)` is a heap ordered by the function object `std::less<>`. If the distance `last - first` is less than 2, the function returns *last*.
+The first template function returns the last iterator `next` in `[first, last)` where `[first, next)` is a heap ordered by the function object `std::less<>`. If the distance `last - first` is less than 2, the function returns *`last`*.
 
-The second template function behaves the same as the first, except that it uses the predicate *pred* instead of `std::less<>` as the heap ordering condition.
+The second template function behaves the same as the first, except that it uses the predicate *`pred`* instead of `std::less<>` as the heap ordering condition.
 
 ## <a name="is_partitioned"></a> is_partitioned
 
@@ -2867,16 +2867,16 @@ bool is_partitioned(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator that indicates where a range starts to check for a condition.
 
-*last*\
+*`last`*\
 An input iterator that indicates the end of a range.
 
-*pred*\
+*`pred`*\
 The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
@@ -2887,7 +2887,7 @@ Returns **`true`** when all of the elements in the given range that test **`true
 
 The template function returns **`true`** only if all elements in `[first, last)` are partitioned by *pred*; that is, all elements `X` in `[first, last)` for which `pred (X)` is true occur before all elements `Y` for which `pred (Y)` is **`false`**.
 
-## <a name="is_permutation"></a> is_permutation
+## <a name="is_permutation"></a> `is_permutation`
 
 Returns true if both ranges contain the same elements, whether or not the elements are in the same order. Use the dual-range overloads in C++14 code because the overloads that only take a single iterator for the second range will not detect differences if the second range is longer than the first range, and will result in undefined behavior if the second range is shorter than the first range.
 
@@ -2924,19 +2924,19 @@ bool is_permutation(
 
 ### Parameters
 
-*first1*\
+*`first1`*\
 A forward iterator that refers to the first element of the range.
 
-*last1*\
+*`last1`*\
 A forward iterator that refers one past the last element of the range.
 
-*first2*\
+*`first2`*\
 A forward iterator that refers to the first element of a second range, used for comparison.
 
-*last2*\
+*`last2`*\
 A forward iterator that refers to one past the last element of a second range, used for comparison.
 
-*pred*\
+*`pred`*\
 A predicate that tests for equivalence and returns a **`bool`**.
 
 ### Return value
@@ -2947,7 +2947,7 @@ A predicate that tests for equivalence and returns a **`bool`**.
 
 `is_permutation` has quadratic complexity in the worst case.
 
-The first template function assumes that there are as many elements in the range beginning at *first2* as there are in the range designated by `[first1, last1)`. If there are more elements in the second range, they are ignored; if there are less, undefined behavior will occur. The third template function (C++14 and later) does not make this assumption. Both return **`true`** only if, for each element X in the range designated by `[first1, last1)` there are as many elements Y in the same range for which X == Y as there are in the range beginning at *first2* or `[first2, last2)`. Here, `operator==` must perform a pairwise comparison between its operands.
+The first template function assumes that there are as many elements in the range beginning at *first2* as there are in the range designated by `[first1, last1)`. If there are more elements in the second range, they are ignored; if there are less, undefined behavior will occur. The third template function (C++14 and later) does not make this assumption. Both return **`true`** only if, for each element X in the range designated by `[first1, last1)` there are as many elements Y in the same range for which X == Y as there are in the range beginning at *`first2`* or `[first2, last2)`. Here, `operator==` must perform a pairwise comparison between its operands.
 
 The second and fourth template functions behave the same, except that they replace `operator==(X, Y)` with `Pred(X, Y)`. To behave correctly, the predicate must be symmetric, reflexive and transitive.
 
@@ -3007,7 +3007,7 @@ int main()
 }
 ```
 
-## <a name="is_sorted"></a> is_sorted
+## <a name="is_sorted"></a> `is_sorted`
 
 Returns **`true`** if the elements in the specified range are in sorted order.
 
@@ -3039,25 +3039,25 @@ bool is_sorted(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator that indicates where the range to check begins.
 
-*last*\
+*`last`*\
 A forward iterator that indicates the end of a range.
 
-*pred*\
+*`pred`*\
 The condition to test to determine an order between two elements. A comparison predicate takes two arguments and returns **`true`** or **`false`**. This performs the same task as `operator<`.
 
 ### Remarks
 
-The first template function returns [is_sorted_until](#is_sorted_until)`( first, last ) == last`. The `operator<` function performs the order comparison.
+The first template function returns [`is_sorted_until`](#is_sorted_until)`( first, last ) == last`. The `operator<` function performs the order comparison.
 
-The second template function returns `is_sorted_until( first, last , pred ) == last`. The *pred* predicate function performs the order comparison.
+The second template function returns `is_sorted_until( first, last , pred ) == last`. The *`pred`* predicate function performs the order comparison.
 
-## <a name="is_sorted_until"></a> is_sorted_until
+## <a name="is_sorted_until"></a> `is_sorted_until`
 
 Returns a `ForwardIterator` that is set to the last element that is in sorted order from a specified range.
 
@@ -3091,29 +3091,29 @@ ForwardIterator is_sorted_until(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator that indicates where the range to check starts.
 
-*last*\
+*`last`*\
 A forward iterator that indicates the end of a range.
 
-*pred*\
+*`pred`*\
 The condition to test to determine an order between two elements. A comparison predicate takes two arguments and returns **`true`** or **`false`**.
 
 ### Return value
 
-Returns a `ForwardIterator` set to the last element in sorted order. The sorted sequence starts from *first*.
+Returns a `ForwardIterator` set to the last element in sorted order. The sorted sequence starts from *`first`*.
 
 ### Remarks
 
-The first template function returns the last iterator `next` in `[first, last]` so that `[first, next)` is a sorted sequence ordered by `operator<`. If `distance()` is less than 2, the function returns *last*.
+The first template function returns the last iterator `next` in `[first, last]` so that `[first, next)` is a sorted sequence ordered by `operator<`. If `distance()` is less than 2, the function returns *`last`*.
 
 The second template function behaves the same, except that it replaces `operator<(X, Y)` with `pred(X, Y)`.
 
-## <a name="iter_swap"></a> iter_swap
+## <a name="iter_swap"></a> `iter_swap`
 
 Exchanges two values referred to by a pair of specified iterators.
 
@@ -3124,10 +3124,10 @@ void iter_swap( ForwardIterator1 left, ForwardIterator2 right );
 
 ### Parameters
 
-*left*\
+*`left`*\
 One of the forward iterators whose value is to be exchanged.
 
-*right*\
+*`right`*\
 The second of the forward iterators whose value is to be exchanged.
 
 ### Remarks
@@ -3269,7 +3269,7 @@ vector v1 is: v1 = ( 4 1 2 3 ).
 & deque deq2 is: deq2 = ( 0 5 ).
 ```
 
-## <a name="lexicographical_compare"></a> lexicographical_compare
+## <a name="lexicographical_compare"></a> `lexicographical_compare`
 
 Compares element by element between two sequences to determine which is lesser of the two.
 
@@ -3309,22 +3309,22 @@ bool lexicographical_compare(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 An input iterator addressing the position of the first element in the first range to be compared.
 
-*last1*\
+*`last1`*\
 An input iterator addressing the position one past the final element in the first range to be compared.
 
-*first2*\
+*`first2`*\
 An input iterator addressing the position of the first element in the second range to be compared.
 
-*last2*\
+*`last2`*\
 An input iterator addressing the position one past the final element in the second range to be compared.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines sense in which one element is less than another. A comparison predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -3436,7 +3436,7 @@ Vector v1 is lexicographically_less than L1.
 Vector v1 is not lexicographically_less than v2 under twice.
 ```
 
-## <a name="lower_bound"></a> lower_bound
+## <a name="lower_bound"></a> `lower_bound`
 
 Finds the position of the first element in an ordered range that has a value greater than or equivalent to a specified value, where the ordering criterion may be specified by a binary predicate.
 
@@ -3457,16 +3457,16 @@ ForwardIterator lower_bound(
 
 ### Parameters
 
-*first*\
+*`first`*\
 A forward iterator addressing the position of the first element in the range to be searched.
 
-*last*\
+*`last`*\
 A forward iterator addressing the position one past the final element in the range to be searched.
 
-*value*\
+*`value`*\
 The value whose first position or possible first position is being searched for in the ordered range.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -3575,7 +3575,7 @@ int main()
 }
 ```
 
-## <a name="make_heap"></a> make_heap
+## <a name="make_heap"></a> `make_heap`
 
 Converts elements from a specified range into a heap in which the first element is the largest and for which a sorting criterion may be specified with a binary predicate.
 
@@ -3594,13 +3594,13 @@ void make_heap(
 
 ### Parameters
 
-*first*\
+*`first`*\
 A random-access iterator addressing the position of the first element in the range to be converted into a heap.
 
-*last*\
+*`last`*\
 A random-access iterator addressing the position one past the final element in the range to be converted into a heap.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
@@ -3657,7 +3657,7 @@ int main() {
 }
 ```
 
-## <a name="max"></a> max
+## <a name="max"></a> `max`
 
 Compares two objects and returns the larger of the two, where the ordering criterion may be specified by a binary predicate.
 
@@ -3682,25 +3682,25 @@ constexpr Type& max(
 
 ### Parameters
 
-*left*\
+*`left`*\
 The first of the two objects being compared.
 
-*right*\
+*`right`*\
 The second of the two objects being compared.
 
-*pred*\
+*`pred`*\
 A binary predicate used to compare the two objects.
 
-*inlist*\
+*`inlist`*\
 The initializer list that contains the objects to be compared.
 
 ### Return value
 
-The greater of the two objects, unless neither is greater; in that case, it returns the first of the two objects. In the case of an initializer_list, it returns the greatest of the objects in the list.
+The greater of the two objects, unless neither is greater; in that case, it returns the first of the two objects. In the case of an `initializer_list`, it returns the greatest of the objects in the list.
 
 ### Remarks
 
-The `max` algorithm is unusual in having objects passed as parameters. Most C++ Standard Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that operates on a range of elements, use [max_element](algorithm-functions.md#max_element) instead. Visual Studio 2017 enables **`constexpr`** on the overloads that take an initializer_list.
+The `max` algorithm is unusual in having objects passed as parameters. Most C++ Standard Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that operates on a range of elements, use [`max_element`](algorithm-functions.md#max_element) instead. Visual Studio 2017 enables **`constexpr`** on the overloads that take an `initializer_list`.
 
 ### Example
 
@@ -3870,7 +3870,7 @@ Vector v4 = max (v1,v2) is ( 0 1 2 ).
 Vector v5 = max (v1,v3) is ( 0 2 4 ).
 ```
 
-## <a name="max_element"></a> max_element
+## <a name="max_element"></a> `max_element`
 
 Finds the first occurrence of largest element in a specified range where the ordering criterion may be specified by a binary predicate.
 
@@ -3902,16 +3902,16 @@ ForwardIterator max_element(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator addressing the position of the first element in the range to be searched for the largest element.
 
-*last*\
+*`last`*\
 A forward iterator addressing the position one past the final element in the range to be searched for the largest element.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **`true`** when the first element is less than the second element and **`false`** otherwise.
 
 ### Return value
@@ -4024,7 +4024,7 @@ int main()
 }
 ```
 
-## <a name="merge"></a> merge
+## <a name="merge"></a> `merge`
 
 Combines all of the elements from two sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.
 
@@ -4068,25 +4068,25 @@ ForwardIterator merge(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 An input iterator addressing the position of the first element in the first of two sorted source ranges to be combined and sorted into a single range.
 
-*last1*\
+*`last1`*\
 An input iterator addressing the position one past the last element in the first of two sorted source ranges to be combined and sorted into a single range.
 
-*first2*\
+*`first2`*\
 An input iterator addressing the position of the first element in second of two consecutive sorted source ranges to be combined and sorted into a single range.
 
-*last2*\
+*`last2`*\
 An input iterator addressing the position one past the last element in second of two consecutive sorted source ranges to be combined and sorted into a single range.
 
-*result*\
+*`result`*\
 An output iterator addressing the position of the first element in the destination range where the two source ranges are to be combined into a single sorted range.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **`true`** when the first element is less than the second element, and **`false`** otherwise.
 
 ### Return value
@@ -4107,7 +4107,7 @@ The value types of the input iterators need be less-than comparable to be ordere
 
 The complexity of the algorithm is linear with at most `(last1 - first1) - (last2 - first2) - 1` comparisons.
 
-The [list class](list-class.md) provides a member function "merge" to merge the elements of two lists.
+The [`list` class](list-class.md) provides a member function `merge` to merge the elements of two lists.
 
 ### Example
 
@@ -4219,7 +4219,7 @@ int main() {
 }
 ```
 
-## <a name="min"></a> min
+## <a name="min"></a> `min`
 
 Compares two objects and returns the lesser of the two, where the ordering criterion may be specified by a binary predicate.
 
@@ -4247,16 +4247,16 @@ constexpr Type min(
 
 ### Parameters
 
-*left*\
+*`left`*\
 The first of the two objects being compared.
 
-*right*\
+*`right`*\
 The second of the two objects being compared.
 
-*pred*\
+*`pred`*\
 A binary predicate used to compare the two objects.
 
-*inlist*\
+*`inlist`*\
 The `initializer_list` that contains the members to be compared.
 
 ### Return value
@@ -4265,7 +4265,7 @@ The lesser of the two objects, unless neither is lesser; in that case, it return
 
 ### Remarks
 
-The `min` algorithm is unusual in having objects passed as parameters. Most C++ Standard Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that uses a range of elements, use [min_element](algorithm-functions.md#min_element). [constexpr](../cpp/constexpr-cpp.md) was enabled on the `initializer_list` overloads in Visual Studio 2017.
+The `min` algorithm is unusual in having objects passed as parameters. Most C++ Standard Library algorithms operate on a range of elements whose position is specified by iterators passed as parameters. If you need a function that uses a range of elements, use [`min_element`](algorithm-functions.md#min_element). [`constexpr`](../cpp/constexpr-cpp.md) was enabled on the `initializer_list` overloads in Visual Studio 2017.
 
 ### Example
 
@@ -4434,7 +4434,7 @@ Vector v4 = min ( v1,v2 ) is ( 0 1 2 ).
 Vector v5 = min ( v1,v3 ) is ( 0 1 2 ).
 ```
 
-## <a name="min_element"></a> min_element
+## <a name="min_element"></a> `min_element`
 
 Finds the first occurrence of smallest element in a specified range where the ordering criterion may be specified by a binary predicate.
 
@@ -4466,16 +4466,16 @@ ForwardIterator min_element(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator addressing the position of the first element in the range to be searched for the smallest element.
 
-*last*\
+*`last`*\
 A forward iterator addressing the position one past the final element in the range to be searched for the smallest element.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **`true`** when the first element is less than the second element, and **`false`** otherwise.
 
 ### Return value
@@ -4598,7 +4598,7 @@ The smallest element in v1 under the mod_lesser
 binary predicate is: 0
 ```
 
-## <a name="minmax_element"></a> minmax_element
+## <a name="minmax_element"></a> `minmax_element`
 
 Performs the work performed by `min_element` and `max_element` in one call.
 
@@ -4630,16 +4630,16 @@ pair<ForwardIterator, ForwardIterator> minmax_element(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator that indicates the beginning of a range.
 
-*last*\
+*`last`*\
 A forward iterator that indicates the end of a range.
 
-*pred*\
+*`pred`*\
 A user-defined predicate function object that defines the sense in which one element is less than another. The comparison predicate takes two arguments and should return **`true`** when the first is less than the second, and **`false`** otherwise.
 
 ### Return value
@@ -4658,7 +4658,7 @@ The second template function behaves the same, except that it replaces `operator
 
 If the sequence is non-empty, the function performs at most `3 * (last - first - 1) / 2` comparisons.
 
-## <a name="minmax"></a> minmax
+## <a name="minmax"></a> `minmax`
 
 Compares two input parameters and returns them as a pair, in order of lesser to greater.
 
@@ -4686,29 +4686,29 @@ constexpr pair<Type&, Type&> minmax(
 
 ### Parameters
 
-*left*\
+*`left`*\
 The first of the two objects being compared.
 
-*right*\
+*`right`*\
 The second of the two objects being compared.
 
-*pred*\
+*`pred`*\
 A binary predicate used to compare the two objects.
 
-*inlist*\
+*`inlist`*\
 The `initializer_list` that contains the members to be compared.
 
 ### Remarks
 
-The first template function returns `pair<const Type&, const Type&>( right, left )` if *right* is less than *left*. Otherwise, it returns `pair<const Type&, const Type&>( left, right )`.
+The first template function returns `pair<const Type&, const Type&>( right, left )` if *`right`* is less than *`left`*. Otherwise, it returns `pair<const Type&, const Type&>( left, right )`.
 
-The second member function returns a pair where the first element is the lesser and the second is the greater when compared by the predicate *pred*.
+The second member function returns a pair where the first element is the lesser and the second is the greater when compared by the predicate *`pred`*.
 
-The remaining template functions behave the same, except that they replace the *left* and *right* parameters with *inlist*.
+The remaining template functions behave the same, except that they replace the *`left`* and *`right`* parameters with *`inlist`*.
 
 The function performs exactly one comparison.
 
-## <a name="mismatch"></a> mismatch
+## <a name="mismatch"></a> `mismatch`
 
 Compares two ranges element by element and locates the first position where a difference occurs.
 
@@ -4786,22 +4786,22 @@ mismatch(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 An input iterator addressing the position of the first element in the first range to be tested.
 
-*last1*\
+*`last1`*\
 An input iterator addressing the position one past the last element in the first range to be tested.
 
-*first2*\
+*`first2`*\
 An input iterator addressing the position of the first element in the second range to be tested.
 
-*last2*\
+*`last2`*\
 An input iterator addressing the position of one past the last element in the second range to be tested.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that compares the current elements in each range and determines whether they are equivalent. It returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -4913,7 +4913,7 @@ C++14: vec_1 and list_1 are a mismatch: false
 Press a key
 ```
 
-## <a name="alg_move"></a> &lt;alg&gt; move
+## <a name="alg_move"></a> `<alg> move`
 
 Move elements associated with a specified range.
 
@@ -4934,23 +4934,23 @@ ForwardIterator2 move(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator that indicates where to start the range of elements to move.
 
-*last*\
+*`last`*\
 An input iterator that indicates the end of a range of elements to move.
 
-*dest*\
+*`dest`*\
 The output iterator that is to contain the moved elements.
 
 ### Remarks
 
-The template function evaluates `*(dest + N) = move(*(first + N))` once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest + N`. If `dest` and *first* designate regions of storage, *dest* must not be in the range `[first, last)`.
+The template function evaluates `*(dest + N) = move(*(first + N))` once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. It then returns `dest + N`. If `dest` and *`first`* designate regions of storage, *`dest`* must not be in the range `[first, last)`.
 
-## <a name="move_backward"></a> move_backward
+## <a name="move_backward"></a> `move_backward`
 
 Moves the elements of one iterator to another. The move starts with the last element in a specified range, and ends with the first element in that range.
 
@@ -4964,22 +4964,22 @@ BidirectionalIterator2 move_backward(
 
 ### Parameters
 
-*first*\
+*`first`*\
 An iterator that indicates the start of a range to move elements from.
 
-*last*\
+*`last`*\
 An iterator that indicates the end of a range to move elements from. This element is not moved.
 
-*destEnd*\
+*`destEnd`*\
 A bidirectional iterator addressing the position of one past the final element in the destination range.
 
 ### Remarks
 
-The template function evaluates `*(destEnd - N - 1) = move(*(last - N - 1))` once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. It then returns `destEnd - (last - first)`. If *destEnd* and *first* designate regions of storage, *destEnd* must not be in the range `[first, last)`.
+The template function evaluates `*(destEnd - N - 1) = move(*(last - N - 1))` once for each `N` in the range `[0, last - first)`, for strictly increasing values of `N` starting with the lowest value. It then returns `destEnd - (last - first)`. If *`destEnd`* and *`first`* designate regions of storage, *`destEnd`* must not be in the range `[first, last)`.
 
 `move` and `move_backward` are functionally equivalent to using `copy` and `copy_backward` with a move iterator.
 
-## <a name="next_permutation"></a> next_permutation
+## <a name="next_permutation"></a> `next_permutation`
 
 Reorders the elements in a range so that the original ordering is replaced by the lexicographically next greater permutation if it exists, where the sense of next may be specified with a binary predicate.
 
@@ -4998,13 +4998,13 @@ bool next_permutation(
 
 ### Parameters
 
-*first*\
+*`first`*\
 A bidirectional iterator pointing to the position of the first element in the range to be permuted.
 
-*last*\
+*`last`*\
 A bidirectional iterator pointing to the position one past the final element in the range to be permuted.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -5158,7 +5158,7 @@ After another next_permutation of vector v1,
 v1 =   ( -3 -2 -1 1 0 2 3 ).
 ```
 
-## <a name="nth_element"></a> nth_element
+## <a name="nth_element"></a> `nth_element`
 
 Partitions a range of elements, correctly locating the *n*th element of the sequence in the range so that all the elements in front of it are less than or equal to it and all the elements that follow it in the sequence are greater than or equal to it.
 
@@ -5194,19 +5194,19 @@ void nth_element(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A random-access iterator addressing the position of the first element in the range to be partitioned.
 
-*nth*\
+*`nth`*\
 A random-access iterator addressing the position of element to be correctly ordered on the boundary of the partition.
 
-*last*\
+*`last`*\
 A random-access iterator addressing the position one past the final element in the range to be partitioned.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A comparison predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
@@ -5217,7 +5217,7 @@ The `nth_element` algorithm does not guarantee that elements in the sub-ranges e
 
 Elements are equivalent, but not necessarily equal, if neither is less than the other.
 
-The average of a sort complexity is linear with respect to *last - first*.
+The average of a sort complexity is linear with respect to *`last - first`*.
 
 ### Example
 
@@ -5285,7 +5285,7 @@ int main() {
 }
 ```
 
-## <a name="none_of"></a> none_of
+## <a name="none_of"></a> `none_of`
 
 Returns **`true`** when a condition is never present among elements in the given range.
 
@@ -5306,16 +5306,16 @@ bool none_of(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator that indicates where to start to check a range of elements for a condition.
 
-*last*\
+*`last`*\
 An input iterator that indicates the end of a range of elements.
 
-*pred*\
+*`pred`*\
 The condition to test for. This is provided by a user-defined predicate function object that defines the condition. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
@@ -5326,7 +5326,7 @@ Returns **`true`** if the condition is not detected at least once in the indicat
 
 The template function returns **`true`** only if, for some `N` in the range `[0, last - first)`, the predicate `pred(*(first + N))` is always **`false`**.
 
-## <a name="partial_sort"></a> partial_sort
+## <a name="partial_sort"></a> `partial_sort`
 
 Arranges a specified number of the smaller elements in a range into a nondescending order or according to an ordering criterion specified by a binary predicate.
 
@@ -5362,19 +5362,19 @@ void partial_sort(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A random-access iterator addressing the position of the first element in the range to be sorted.
 
-*sortEnd*\
+*`sortEnd`*\
 A random-access iterator addressing the position one past the final element in the subrange to be sorted.
 
-*last*\
+*`last`*\
 A random-access iterator addressing the position one past the final element in the range to be partially sorted.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
@@ -5457,7 +5457,7 @@ Partially resorted (UDgreater) vector:
 v1 = ( 11 10 9 8 7 6 5 4 0 1 2 3 )
 ```
 
-## <a name="partial_sort_copy"></a> partial_sort_copy
+## <a name="partial_sort_copy"></a> `partial_sort_copy`
 
 Copies elements from a source range into a destination range where the source elements are ordered by either less than or another specified binary predicate.
 
@@ -5497,22 +5497,22 @@ RandomAccessIterator partial_sort_copy(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 An input iterator addressing the position of the first element in the source range.
 
-*last1*\
+*`last1`*\
 An input iterator addressing the position one past the final element in the source range.
 
-*first2*\
+*`first2`*\
 A random-access iterator addressing the position of the first element in the sorted destination range.
 
-*last2*\
+*`last2`*\
 A random-access iterator addressing the position one past the final element in the sorted destination range.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -5601,7 +5601,7 @@ int main() {
 }
 ```
 
-## <a name="partition"></a> partition
+## <a name="partition"></a> `partition`
 
 Classifies elements in a range into two disjoint sets, with those elements satisfying a unary predicate preceding those that fail to satisfy it.
 
@@ -5622,16 +5622,16 @@ ForwardIterator partition(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A bidirectional iterator addressing the position of the first element in the range to be partitioned.
 
-*last*\
+*`last`*\
 A bidirectional iterator addressing the position one past the final element in the range to be partitioned.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the condition to be satisfied if an element is to be classified. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
@@ -5642,9 +5642,9 @@ A bidirectional iterator addressing the position of the first element in the ran
 
 The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.
 
-Elements *a* and *b* are equivalent, but not necessarily equal, if both `pred( a, b )` is false and `pred( b, a )` is false, where *pred* is the parameter-specified predicate. The `partition` algorithm is not stable and does not guarantee that the relative ordering of equivalent elements will be preserved. The algorithm `stable_partition` does preserve this original ordering.
+Elements *`a`* and *`b`* are equivalent, but not necessarily equal, if both `pred( a, b )` is false and `pred( b, a )` is false, where *`pred`* is the parameter-specified predicate. The `partition` algorithm is not stable and does not guarantee that the relative ordering of equivalent elements will be preserved. The algorithm `stable_partition` does preserve this original ordering.
 
-The complexity is linear: there are `(last - first)` applications of *pred* and at most `(last - first)/2` swaps.
+The complexity is linear: there are `(last - first)` applications of *`pred`* and at most `(last - first)/2` swaps.
 
 ### Example
 
@@ -5687,7 +5687,7 @@ int main()
 }
 ```
 
-## <a name="partition_copy"></a> partition_copy
+## <a name="partition_copy"></a> `partition_copy`
 
 Copies elements for which a condition is **`true`** to one destination, and for which the condition is **`false`** to another. The elements must come from a specified range.
 
@@ -5712,29 +5712,29 @@ pair<ForwardIterator1, ForwardIterator2> partition_copy(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator that indicates the beginning of a range to check for a condition.
 
-*last*\
+*`last`*\
 An input iterator that indicates the end of a range.
 
-*dest1*\
+*`dest1`*\
 An output iterator used to copy elements that return true for a condition tested by using *pred*.
 
-*dest2*\
+*`dest2`*\
 An output iterator used to copy elements that return false for a condition tested by using *pred*.
 
-*pred*\
+*`pred`*\
 The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be tested. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Remarks
 
 The template function copies each element `X` in `[first,last)` to `*dest1++` if `pred(X)` is true, or to `*dest2++` if not. It returns `pair<OutputIterator1, OutputIterator2>(dest1, dest2)`.
 
-## <a name="partition_point"></a> partition_point
+## <a name="partition_point"></a> `partition_point`
 
 Returns the first element in the given range that does not satisfy the condition. The elements are sorted so that those that satisfy the condition come before those that do not.
 
@@ -5748,13 +5748,13 @@ ForwardIterator partition_point(
 
 ### Parameters
 
-*first*\
+*`first`*\
 A `ForwardIterator` that indicates the start of a range to check for a condition.
 
-*last*\
+*`last`*\
 A `ForwardIterator` that indicates the end of a range.
 
-*pred*\
+*`pred`*\
 The condition to test for. This is provided by a user-defined predicate function object that defines the condition to be satisfied by the element being searched for. A unary predicate takes a single argument and returns **`true`** or **`false`**.
 
 ### Return value
@@ -5763,9 +5763,9 @@ Returns a `ForwardIterator` that refers to the first element that does not fulfi
 
 ### Remarks
 
-The template function finds the first iterator `it` in `[first, last)` for which `pred(*it)` is **`false`**. The sequence must be ordered by *pred*.
+The template function finds the first iterator `it` in `[first, last)` for which `pred(*it)` is **`false`**. The sequence must be ordered by *`pred`*.
 
-## <a name="pop_heap"></a> pop_heap
+## <a name="pop_heap"></a> `pop_heap`
 
 Removes the largest element from the front of a heap to the next-to-last position in the range and then forms a new heap from the remaining elements.
 
@@ -5784,13 +5784,13 @@ void pop_heap(
 
 ### Parameters
 
-*first*\
+*`first`*\
 A random-access iterator addressing the position of the first element in the heap.
 
-*last*\
+*`last`*\
 A random-access iterator addressing the position one past the final element in the heap.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
@@ -5874,7 +5874,7 @@ int main()
 }
 ```
 
-## <a name="prev_permutation"></a> prev_permutation
+## <a name="prev_permutation"></a> `prev_permutation`
 
 Reorders the elements in a range so that the original ordering is replaced by the lexicographically previous greater permutation if it exists, where the sense of previous may be specified with a binary predicate.
 
@@ -5893,13 +5893,13 @@ bool prev_permutation(
 
 ### Parameters
 
-*first*\
+*`first`*\
 A bidirectional iterator pointing to the position of the first element in the range to be permuted.
 
-*last*\
+*`last`*\
 A bidirectional iterator pointing to the position one past the final element in the range to be permuted.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -6049,7 +6049,7 @@ After another prev_permutation of vector v1,
 v1 =   ( -3 -2 0 2 -1 1 3 ).
 ```
 
-## <a name="push_heap"></a> push_heap
+## <a name="push_heap"></a> `push_heap`
 
 Adds an element that is at the end of a range to an existing heap consisting of the prior elements in the range.
 
@@ -6068,13 +6068,13 @@ void push_heap(
 
 ### Parameters
 
-*first*\
+*`first`*\
 A random-access iterator addressing the position of the first element in the heap.
 
-*last*\
+*`last`*\
 A random-access iterator addressing the position one past the final element in the range to be converted into a heap.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines sense in which one element is less than another. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
@@ -6162,11 +6162,11 @@ int main() {
 }
 ```
 
-## <a name="random_shuffle"></a> random_shuffle
+## <a name="random_shuffle"></a> `random_shuffle`
 
-The std::random_shuffle() function is deprecated, replaced by [std::shuffle](algorithm-functions.md#shuffle). For a code example and more information, see [\<random>](random.md) and the Stack Overflow post [Why are std::random_shuffle methods being deprecated in C++14?](https://go.microsoft.com/fwlink/p/?linkid=397954).
+The `std::random_shuffle()` function is deprecated, replaced by [`std::shuffle`](algorithm-functions.md#shuffle). For a code example and more information, see [`<random>`](random.md) and the Stack Overflow post [Why are `std::random_shuffle` methods being deprecated in C++14?](https://go.microsoft.com/fwlink/p/?linkid=397954).
 
-## <a name="remove"></a> remove
+## <a name="remove"></a> `remove`
 
 Eliminates a specified value from a given range without disturbing the order of the remaining elements and returning the end of a new range free of the specified value.
 
@@ -6187,16 +6187,16 @@ ForwardIterator remove(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator addressing the position of the first element in the range from which elements are being removed.
 
-*last*\
+*`last`*\
 A forward iterator addressing the position one past the final element in the range from which elements are being removed.
 
-*value*\
+*`value`*\
 The value that is to be removed from the range.
 
 ### Return value
@@ -6213,7 +6213,7 @@ The `operator==` used to determine the equality between elements must impose an 
 
 The complexity is linear; there are (`last` - `first`) comparisons for equality.
 
-The [list class](list-class.md) has a more efficient member function version of `remove`, which also relinks pointers.
+The [`list` class](list-class.md) has a more efficient member function version of `remove`, which also relinks pointers.
 
 ### Example
 
@@ -6262,7 +6262,7 @@ int main()
 }
 ```
 
-## <a name="remove_copy"></a> remove_copy
+## <a name="remove_copy"></a> `remove_copy`
 
 Copies elements from a source range to a destination range, except that elements of a specified value are not copied, without disturbing the order of the remaining elements and returning the end of a new destination range.
 
@@ -6285,19 +6285,19 @@ ForwardIterator2 remove_copy(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator addressing the position of the first element in the range from which elements are being removed.
 
-*last*\
+*`last`*\
 An input iterator addressing the position one past the final element in the range from which elements are being removed.
 
-*result*\
+*`result`*\
 An output iterator addressing the position of the first element in the destination range to which elements are being removed.
 
-*value*\
+*`value`*\
 The value that is to be removed from the range.
 
 ### Return value
@@ -6360,7 +6360,7 @@ int main()
 }
 ```
 
-## <a name="remove_copy_if"></a> remove_copy_if
+## <a name="remove_copy_if"></a> `remove_copy_if`
 
 Copies elements from a source range to a destination range, except for elements that satisfy a predicate. Elements are  copied without disturbing the order of the remaining elements. Returns the end of a new destination range.
 
@@ -6383,19 +6383,19 @@ ForwardIterator2 remove_copy_if(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator addressing the position of the first element in the range from which elements are being removed.
 
-*last*\
+*`last`*\
 An input iterator addressing the position one past the final element in the range from which elements are being removed.
 
-*result*\
+*`result`*\
 An output iterator addressing the position of the first element in the destination range to which elements are being removed.
 
-*pred*\
+*`pred`*\
 The unary predicate that must be satisfied is the value of an element is to be replaced.
 
 ### Return value
@@ -6467,7 +6467,7 @@ int main()
 }
 ```
 
-## <a name="remove_if"></a> remove_if
+## <a name="remove_if"></a> `remove_if`
 
 Eliminates elements that satisfy a predicate from a given range without disturbing the order of the remaining elements and returning the end of a new range free of the specified value.
 
@@ -6488,16 +6488,16 @@ ForwardIterator remove_if(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator pointing to the position of the first element in the range from which elements are being removed.
 
-*last*\
+*`last`*\
 A forward iterator pointing to the position one past the final element in the range from which elements are being removed.
 
-*pred*\
+*`pred`*\
 The unary predicate that must be satisfied is the value of an element is to be replaced.
 
 ### Return value
@@ -6568,7 +6568,7 @@ int main()
 }
 ```
 
-## <a name="replace"></a> replace
+## <a name="replace"></a> `replace`
 
 Examines each element in a range and replaces it if it matches a specified value.
 
@@ -6591,19 +6591,19 @@ void replace(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator pointing to the position of the first element in the range from which elements are being replaced.
 
-*last*\
+*`last`*\
 A forward iterator pointing to the position one past the final element in the range from which elements are being replaced.
 
-*oldVal*\
+*`oldVal`*\
 The old value of the elements being replaced.
 
-*newVal*\
+*`newVal`*\
 The new value being assigned to the elements with the old value.
 
 ### Remarks
@@ -6655,7 +6655,7 @@ int main()
 }
 ```
 
-## <a name="replace_copy"></a> replace_copy
+## <a name="replace_copy"></a> `replace_copy`
 
 Examines each element in a source range and replaces it if it matches a specified value while copying the result into a new destination range.
 
@@ -6680,22 +6680,22 @@ ForwardIterator2 replace_copy(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator pointing to the position of the first element in the range from which elements are being replaced.
 
-*last*\
+*`last`*\
 An input iterator pointing to the position one past the final element in the range from which elements are being replaced.
 
-*result*\
+*`result`*\
 An output iterator pointing to the first element in the destination range to where the altered sequence of elements is being copied.
 
-*oldVal*\
+*`oldVal`*\
 The old value of the elements being replaced.
 
-*newVal*\
+*`newVal`*\
 The new value being assigned to the elements with the old value.
 
 ### Return value
@@ -6770,7 +6770,7 @@ int main()
 }
 ```
 
-## <a name="replace_copy_if"></a> replace_copy_if
+## <a name="replace_copy_if"></a> `replace_copy_if`
 
 Examines each element in a source range and replaces it if it satisfies a specified predicate while copying the result into a new destination range.
 
@@ -6795,22 +6795,22 @@ ForwardIterator2 replace_copy_if(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 An input iterator pointing to the position of the first element in the range from which elements are being replaced.
 
-*last*\
+*`last`*\
 An input iterator pointing to the position one past the final element in the range from which elements are being replaced.
 
-*result*\
+*`result`*\
 An output iterator pointing to the position of the first element in the destination range to which elements are being copied.
 
-*pred*\
+*`pred`*\
 The unary predicate that must be satisfied is the value of an element is to be replaced.
 
-*value*\
+*`value`*\
 The new value being assigned to the elements whose old value satisfies the predicate.
 
 ### Return value
@@ -6893,7 +6893,7 @@ int main()
 }
 ```
 
-## <a name="replace_if"></a> replace_if
+## <a name="replace_if"></a> `replace_if`
 
 Examines each element in a range and replaces it if it satisfies a specified predicate.
 
@@ -6916,19 +6916,19 @@ void replace_if(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator pointing to the position of the first element in the range from which elements are being replaced.
 
-*last*\
+*`last`*\
 An iterator pointing to the position one past the final element in the range from which elements are being replaced.
 
-*pred*\
+*`pred`*\
 The unary predicate that must be satisfied is the value of an element is to be replaced.
 
-*value*\
+*`value`*\
 The new value being assigned to the elements whose old value satisfies the predicate.
 
 ### Remarks
@@ -6989,7 +6989,7 @@ int main()
 }
 ```
 
-## <a name="reverse"></a> reverse
+## <a name="reverse"></a> `reverse`
 
 Reverses the order of the elements within a range.
 
@@ -7008,13 +7008,13 @@ void reverse(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A bidirectional iterator pointing to the position of the first element in the range within which the elements are being permuted.
 
-*last*\
+*`last`*\
 A bidirectional iterator pointing to the position one past the final element in the range within which the elements are being permuted.
 
 ### Remarks
@@ -7064,7 +7064,7 @@ The modified vector v1 with values reversed is:
 ( 9 8 7 6 5 4 3 2 1 0 ).
 ```
 
-## <a name="reverse_copy"></a> reverse_copy
+## <a name="reverse_copy"></a> `reverse_copy`
 
 Reverses the order of the elements within a source range while copying them into a destination range
 
@@ -7085,16 +7085,16 @@ ForwardIterator reverse_copy(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A bidirectional iterator pointing to the position of the first element in the source range within which the elements are being permuted.
 
-*last*\
+*`last`*\
 A bidirectional iterator pointing to the position one past the final element in the source range within which the elements are being permuted.
 
-*result*\
+*`result`*\
 An output iterator pointing to the position of the first element in the destination range to which elements are being copied.
 
 ### Return value
@@ -7146,7 +7146,7 @@ int main()
 }
 ```
 
-## <a name="rotate"></a> rotate
+## <a name="rotate"></a> `rotate`
 
 Exchanges the elements in two adjacent ranges.
 
@@ -7167,16 +7167,16 @@ ForwardIterator rotate(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator addressing the position of the first element in the range to be rotated.
 
-*middle*\
+*`middle`*\
 A forward iterator defining the boundary within the range that addresses the position of the first element in the second part of the range whose elements are to be exchanged with those in the first part of the range.
 
-*last*\
+*`last`*\
 A forward iterator addressing the position one past the final element in the range to be rotated.
 
 ### Remarks
@@ -7260,7 +7260,7 @@ After the rotation of a single deque element to the back,
 d1 is   ( 0 1 2 3 4 5 ).
 ```
 
-## <a name="rotate_copy"></a> rotate_copy
+## <a name="rotate_copy"></a> `rotate_copy`
 
 Exchanges the elements in two adjacent ranges within a source range and copies the result to a destination range.
 
@@ -7283,19 +7283,19 @@ ForwardIterator2 rotate_copy(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator addressing the position of the first element in the range to be rotated.
 
-*middle*\
+*`middle`*\
 A forward iterator defining the boundary within the range that addresses the position of the first element in the second part of the range whose elements are to be exchanged with those in the first part of the range.
 
-*last*\
+*`last`*\
 A forward iterator addressing the position one past the final element in the range to be rotated.
 
-*result*\
+*`result`*\
 An output iterator addressing the position of the first element in the destination range.
 
 ### Return value
@@ -7368,7 +7368,7 @@ int main()
 }
 ```
 
-## <a name="sample"></a> sample
+## <a name="sample"></a> `sample`
 
 ```cpp
 template<class PopulationIterator, class SampleIterator, class Distance, class UniformRandomBitGenerator>
@@ -7380,7 +7380,7 @@ SampleIterator sample(
     UniformRandomBitGenerator&& g);
 ```
 
-## <a name="search"></a> search
+## <a name="search"></a> `search`
 
 Searches for the first occurrence of a sequence within a target range whose elements are equal to those in a given sequence of elements or whose elements are equivalent in a sense specified by a binary predicate to the elements in the given sequence.
 
@@ -7426,26 +7426,26 @@ ForwardIterator search(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 A forward iterator addressing the position of the first element in the range to be searched.
 
-*last1*\
+*`last1`*\
 A forward iterator addressing the position one past the final element in the range to be searched.
 
-*first2*\
+*`first2`*\
 A forward iterator addressing the position of the first element in the range to be matched.
 
-*last2*\
+*`last2`*\
 A forward iterator addressing the position one past the final element in the range to be matched.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
-*searcher*\
-The searcher that encapsulates the pattern to look for and the search algorithm to use. For more information on searchers, see [default_searcher class](default-searcher-class.md), [boyer_moore_horspool_searcher class](boyer-moore-horspool-searcher-class.md), and [boyer_moore_searcher class](boyer-moore-searcher-class.md).
+*`searcher`*\
+The searcher that encapsulates the pattern to look for and the search algorithm to use. For more information on searchers, see [`default_searcher` class](default-searcher-class.md), [`boyer_moore_horspool_searcher` class](boyer-moore-horspool-searcher-class.md), and [`boyer_moore_searcher` class](boyer-moore-searcher-class.md).
 
 ### Return value
 
@@ -7558,7 +7558,7 @@ to those in v2 under the binary predicate twice
 and the first one begins at position 2.
 ```
 
-## <a name="search_n"></a> search_n
+## <a name="search_n"></a> `search_n`
 
 Searches for the first subsequence in a range that of a specified number of elements having a particular value or a relation to that value as specified by a binary predicate.
 
@@ -7598,22 +7598,22 @@ ForwardIterator search_n(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 A forward iterator addressing the position of the first element in the range to be searched.
 
-*last1*\
+*`last1`*\
 A forward iterator addressing the position one past the final element in the range to be searched.
 
-*count*\
+*`count`*\
 The size of the subsequence being searched for.
 
-*value*\
+*`value`*\
 The value of the elements in the sequence being searched for.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -7711,7 +7711,7 @@ There is a match of a sequence ( 5 5 5 ) under the equivalence
 predicate one_half in v1 and the first one begins at position 15.
 ```
 
-## <a name="set_difference"></a> set_difference
+## <a name="set_difference"></a> `set_difference`
 
 Unites all of the elements that belong to one sorted source range, but not to a second sorted source range, into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.
 
@@ -7755,25 +7755,25 @@ ForwardIterator set_difference(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 An input iterator addressing the position of the first element in the first of two sorted source ranges to be united and sorted into a single range representing the difference of the two source ranges.
 
-*last1*\
+*`last1`*\
 An input iterator addressing the position one past the last element in the first of two sorted source ranges to be united and sorted into a single range representing the difference of the two source ranges.
 
-*first2*\
+*`first2`*\
 An input iterator addressing the position of the first element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the difference of the two source ranges.
 
-*last2*\
+*`last2`*\
 An input iterator addressing the position one past the last element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the difference of the two source ranges.
 
-*result*\
+*`result`*\
 An output iterator addressing the position of the first element in the destination range where the two source ranges are to be united into a single sorted range representing the difference of the two source ranges.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the sense in which one element is less than another. The binary predicate takes two arguments and should return **`true`** when the first element is less than the second element and **`false`** otherwise.
 
 ### Return value
@@ -7913,7 +7913,7 @@ int main()
 }
 ```
 
-## <a name="set_intersection"></a> set_intersection
+## <a name="set_intersection"></a> `set_intersection`
 
 Unites all of the elements that belong to both sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.
 
@@ -7957,25 +7957,25 @@ ForwardIterator set_intersection(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 An input iterator addressing the position of the first element in the first of two sorted source ranges to be united and sorted into a single range representing the intersection of the two source ranges.
 
-*last1*\
+*`last1`*\
 An input iterator addressing the position one past the last element in the first of two sorted source ranges to be united and sorted into a single range representing the intersection of the two source ranges.
 
-*first2*\
+*`first2`*\
 An input iterator addressing the position of the first element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the intersection of the two source ranges.
 
-*last2*\
+*`last2`*\
 An input iterator addressing the position one past the last element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the intersection of the two source ranges.
 
-*result*\
+*`result`*\
 An output iterator addressing the position of the first element in the destination range where the two source ranges are to be united into a single sorted range representing the intersection of the two source ranges.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the sense in which one element is less than another. The binary predicate takes two arguments and should return **`true`** when the first element is less than the second element and **`false`** otherwise.
 
 ### Return value
@@ -8111,7 +8111,7 @@ int main()
 }
 ```
 
-## <a name="set_symmetric_difference"></a> set_symmetric_difference
+## <a name="set_symmetric_difference"></a> `set_symmetric_difference`
 
 Unites all of the elements that belong to one, but not both, of the sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.
 
@@ -8155,25 +8155,25 @@ ForwardIterator set_symmetric_difference(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 An input iterator addressing the position of the first element in the first of two sorted source ranges to be united and sorted into a single range representing the symmetric difference of the two source ranges.
 
-*last1*\
+*`last1`*\
 An input iterator addressing the position one past the last element in the first of two sorted source ranges to be united and sorted into a single range representing the symmetric difference of the two source ranges.
 
-*first2*\
+*`first2`*\
 An input iterator addressing the position of the first element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the symmetric difference of the two source ranges.
 
-*last2*\
+*`last2`*\
 An input iterator addressing the position one past the last element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the symmetric difference of the two source ranges.
 
-*result*\
+*`result`*\
 An output iterator addressing the position of the first element in the destination range where the two source ranges are to be united into a single sorted range representing the symmetric difference of the two source ranges.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the sense in which one element is less than another. The binary predicate takes two arguments and should return **`true`** when the first element is less than the second element and **`false`** otherwise.
 
 ### Return value
@@ -8313,7 +8313,7 @@ int main()
 }
 ```
 
-## <a name="set_union"></a> set_union
+## <a name="set_union"></a> `set_union`
 
 Unites all of the elements that belong to at least one of two sorted source ranges into a single, sorted destination range, where the ordering criterion may be specified by a binary predicate.
 
@@ -8357,25 +8357,25 @@ ForwardIterator set_union(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 An input iterator addressing the position of the first element in the first of two sorted source ranges to be united and sorted into a single range representing the union of the two source ranges.
 
-*last1*\
+*`last1`*\
 An input iterator addressing the position one past the last element in the first of two sorted source ranges to be united and sorted into a single range representing the union of the two source ranges.
 
-*first2*\
+*`first2`*\
 An input iterator addressing the position of the first element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the union of the two source ranges.
 
-*last2*\
+*`last2`*\
 An input iterator addressing the position one past the last element in second of two consecutive sorted source ranges to be united and sorted into a single range representing the union of the two source ranges.
 
-*result*\
+*`result`*\
 An output iterator addressing the position of the first element in the destination range where the two source ranges are to be united into a single sorted range representing the union of the two source ranges.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the sense in which one element is less than another. The binary predicate takes two arguments and should return **`true`** when the first element is less than the second element and **`false`** otherwise.
 
 ### Return value
@@ -8515,7 +8515,7 @@ int main()
 }
 ```
 
-## <a name="shuffle"></a> shuffle
+## <a name="shuffle"></a> `shuffle`
 
 Shuffles (rearranges) elements for a given range by using a random number generator.
 
@@ -8529,20 +8529,20 @@ void shuffle(
 
 ### Parameters
 
-*first*\
+*`first`*\
 An iterator to the first element in the range to be shuffled, inclusive. Must meet the requirements of `RandomAccessIterator` and `ValueSwappable`.
 
-*last*\
+*`last`*\
 An iterator to the last element in the range to be shuffled, exclusive. Must meet the requirements of `RandomAccessIterator` and `ValueSwappable`.
 
-*gen*\
+*`gen`*\
 The random number generator that the `shuffle()` function will use for the operation. Must meet the requirements of a `UniformRandomNumberGenerator`.
 
 ### Remarks
 
-For more information, and a code sample that uses `shuffle()`, see [\<random>](random.md).
+For more information, and a code sample that uses `shuffle()`, see [`<random>`](random.md).
 
-## <a name="sort"></a> sort
+## <a name="sort"></a> `sort`
 
 Arranges the elements in a specified range into a nondescending order or according to an ordering criterion specified by a binary predicate.
 
@@ -8574,16 +8574,16 @@ void sort(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A random-access iterator addressing the position of the first element in the range to be sorted.
 
-*last*\
+*`last`*\
 A random-access iterator addressing the position one past the final element in the range to be sorted.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. This binary predicate takes two arguments and returns **`true`** if the two arguments are in order and **`false`** otherwise. This comparator function must impose a strict weak ordering on pairs of elements from the sequence. For more information, see [Algorithms](algorithms.md).
 
 ### Remarks
@@ -8662,7 +8662,7 @@ Resorted (greater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )
 Resorted (UDgreater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )
 ```
 
-## <a name="sort_heap"></a> sort_heap
+## <a name="sort_heap"></a> `sort_heap`
 
 Converts a heap into a sorted range.
 
@@ -8681,13 +8681,13 @@ void sort_heap(
 
 ### Parameters
 
-*first*\
+*`first`*\
 A random-access iterator addressing the position of the first element in the target heap.
 
-*last*\
+*`last`*\
 A random-access iterator addressing the position one past the final element in the target heap.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the sense in which one element is less than another. A comparison predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
@@ -8702,7 +8702,7 @@ After the application if this algorithm, the range it was applied to is no longe
 
 This is not a stable sort because the relative order of equivalent elements is not necessarily preserved.
 
-Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [priority_queue Class](priority-queue-class.md).
+Heaps are an ideal way to implement priority queues and they are used in the implementation of the C++ Standard Library container adaptor [`priority_queue` Class](priority-queue-class.md).
 
 The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.
 
@@ -8762,7 +8762,7 @@ int main()
 }
 ```
 
-## <a name="stable_partition"></a> stable_partition
+## <a name="stable_partition"></a> `stable_partition`
 
 Classifies elements in a range into two disjoint sets, with those elements satisfying a unary predicate preceding those that fail to satisfy it, preserving the relative order of equivalent elements.
 
@@ -8783,16 +8783,16 @@ BidirectionalIterator stable_partition(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A bidirectional iterator addressing the position of the first element in the range to be partitioned.
 
-*last*\
+*`last`*\
 A bidirectional iterator addressing the position one past the final element in the range to be partitioned.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the condition to be satisfied if an element is to be classified. A unary predicate takes a single argument and returns **`true`** if satisfied, or **`false`** if not satisfied.
 
 ### Return value
@@ -8803,7 +8803,7 @@ A bidirectional iterator addressing the position of the first element in the ran
 
 The range referenced must be valid; all pointers must be dereferenceable and within the sequence the last position is reachable from the first by incrementation.
 
-Elements *a* and *b* are equivalent, but not necessarily equal, if both `pred( a, b )` is false and `pred( b, a )` is false, where *pred* is the parameter-specified predicate. The `stable_partition` algorithm is stable and guarantees that the relative ordering of equivalent elements will be preserved. The algorithm `partition` does not necessarily preserve this original ordering.
+Elements *a* and *b* are equivalent, but not necessarily equal, if both `pred( a, b )` is false and `pred( b, a )` is false, where *`pred`* is the parameter-specified predicate. The `stable_partition` algorithm is stable and guarantees that the relative ordering of equivalent elements will be preserved. The algorithm `partition` does not necessarily preserve this original ordering.
 
 ### Example
 
@@ -8852,7 +8852,7 @@ int main()
 }
 ```
 
-## <a name="stable_sort"></a> stable_sort
+## <a name="stable_sort"></a> `stable_sort`
 
 Arranges the elements in a specified range into a nondescending order or according to an ordering criterion specified by a binary predicate and preserves the relative ordering of equivalent elements.
 
@@ -8884,16 +8884,16 @@ void stable_sort(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A bidirectional iterator addressing the position of the first element in the range to be sorted.
 
-*last*\
+*`last`*\
 A bidirectional iterator addressing the position one past the final element in the range to be sorted.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Remarks
@@ -8971,7 +8971,7 @@ Resorted (greater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 Resorted (UDgreater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 ```
 
-## <a name="swap"></a> swap
+## <a name="swap"></a> `swap`
 
 The first override exchanges the values of two objects. The second override exchanges the values between two arrays of objects.
 
@@ -8988,10 +8988,10 @@ void swap(
 
 ### Parameters
 
-*left*\
+*`left`*\
 For the first override, the first object to have its contents exchanged. For the second override, the first array of objects to have its contents exchanged.
 
-*right*\
+*`right`*\
 For the first override, the second object to have its contents exchanged. For the second override, the second array of objects to have its contents exchanged.
 
 ### Remarks
@@ -9054,7 +9054,7 @@ Vector v1 is ( 5 5 5 5 5 ).
 Vector v2 is ( 0 1 2 3 4 5 6 7 8 9 10 ).
 ```
 
-## <a name="swap_ranges"></a> swap_ranges
+## <a name="swap_ranges"></a> `swap_ranges`
 
 Exchanges the elements of one range with the elements of another, equal sized range.
 
@@ -9075,16 +9075,16 @@ ForwardIterator2 swap_ranges(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 A forward iterator pointing to the first position of the first range whose elements are to be exchanged.
 
-*last1*\
+*`last1`*\
 A forward iterator pointing to one past the final position of the first range whose elements are to be exchanged.
 
-*first2*\
+*`first2`*\
 A forward iterator pointing to the first position of the second range whose elements are to be exchanged.
 
 ### Return value
@@ -9158,7 +9158,7 @@ After the swap_range, vector v1 is ( 6 6 6 6 6 6 ).
 After the swap_range deque d1 is   ( 0 1 2 3 4 5 ).
 ```
 
-## <a name="transform"></a> transform
+## <a name="transform"></a> `transform`
 
 Applies a specified function object to each element in a source range or to a pair of elements from two source ranges and copies the return values of the function object into a destination range.
 
@@ -9198,22 +9198,22 @@ ForwardIterator transform(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first1*\
+*`first1`*\
 An input iterator addressing the position of the first element in the first source range to be operated on.
 
-*last1*\
+*`last1`*\
 An input iterator addressing the position one past the final element in the first source range operated on.
 
-*first2*\
+*`first2`*\
 An input iterator addressing the position of the first element in the second source range to be operated on.
 
-*result*\
+*`result`*\
 An output iterator addressing the position of the first element in the destination range.
 
-*func*\
+*`func`*\
 User-defined unary function object used in the first version of the algorithm that is applied to each element in the first source range or A user-defined (UD) binary function object used in the second version of the algorithm that is applied pairwise, in a forward order, to the two source ranges.
 
 ### Return value
@@ -9224,7 +9224,7 @@ An output iterator addressing the position one past the final element in the des
 
 The ranges referenced must be valid; all pointers must be dereferenceable and within each sequence the last position must be reachable from the first by incrementation. The destination range must be large enough to contain the transformed source range.
 
-If *result* is set equal to *first1* in the first version of the algorithm, then the source and destination ranges will be the same and the sequence will be modified in place. But the *result* may not address a position within the range [`first1` + 1, `last1`).
+If *result* is set equal to *`first1`* in the first version of the algorithm, then the source and destination ranges will be the same and the sequence will be modified in place. But the *`result`* may not address a position within the range [`first1` + 1, `last1`).
 
 The complexity is linear with at most (`last1` - `first1`) comparisons.
 
@@ -9314,7 +9314,7 @@ Multiplying elements of the vectors v1mod and v2 pairwise gives:
 v3 = ( 320 180 80 20 0 20 80 ).
 ```
 
-## <a name="unique"></a> unique
+## <a name="unique"></a> `unique`
 
 Removes duplicate elements that are adjacent to each other in a specified range.
 
@@ -9346,16 +9346,16 @@ ForwardIterator unique(
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator addressing the position of the first element in the range to be scanned for duplicate removal.
 
-*last*\
+*`last`*\
 A forward iterator addressing the position one past the final element in the range to be scanned for duplicate removal.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -9463,7 +9463,7 @@ Removing adjacent elements satisfying the binary
   predicate mod_equal from vector v1 gives ( 5 7 ).
 ```
 
-## <a name="unique_copy"></a> unique_copy
+## <a name="unique_copy"></a> `unique_copy`
 
 Copies elements from a source range into a destination range except for the duplicate elements that are adjacent to each other.
 
@@ -9499,19 +9499,19 @@ ForwardIterator2 unique_copy(ExecutionPolicy&& exec,
 
 ### Parameters
 
-*exec*\
+*`exec`*\
 The execution policy to use.
 
-*first*\
+*`first`*\
 A forward iterator addressing the position of the first element in the source range to be copied.
 
-*last*\
+*`last`*\
 A forward iterator addressing the position one past the final element in the source range to be copied.
 
-*result*\
+*`result`*\
 An output iterator addressing the position of the first element in the destination range that is receiving the copy with consecutive duplicates removed.
 
-*pred*\
+*`pred`*\
 User-defined predicate function object that defines the condition to be satisfied if two elements are to be taken as equivalent. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value
@@ -9600,7 +9600,7 @@ int main() {
 }
 ```
 
-## <a name="upper_bound"></a> upper_bound
+## <a name="upper_bound"></a> `upper_bound`
 
 Finds the position of the first element in an ordered range that has a value that is greater than a specified value, where the ordering criterion may be specified by a binary predicate.
 
@@ -9621,16 +9621,16 @@ ForwardIterator upper_bound(
 
 ### Parameters
 
-*first*\
+*`first`*\
 The position of the first element in the range to be searched.
 
-*last*\
+*`last`*\
 The position one past the final element in the range to be searched.
 
-*value*\
+*`value`*\
 The value in the ordered range that needs to be exceeded by the value of the element addressed by the iterator returned.
 
-*pred*\
+*`pred`*\
 User-defined comparison predicate function object that defines the sense in which one element is less than another. A comparison predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied.
 
 ### Return value

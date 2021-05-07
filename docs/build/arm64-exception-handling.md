@@ -237,27 +237,32 @@ This data is broken into four sections:
 The .xdata record is designed so it's possible to fetch the first 8 bytes, and use them to compute the full size of the record, minus the length of the variable-sized exception data that follows. The following code snippet computes the record size:
 
 ```cpp
-ULONG ComputeXdataSize(PULONG *Xdata)
+ULONG ComputeXdataSize(PULONG Xdata)
 {
-    ULONG EpilogScopes;
     ULONG Size;
+    ULONG EpilogScopes;
     ULONG UnwindWords;
 
-    if ((Xdata[0] >> 27) != 0) {
+    if ((Xdata[0] >> 22) != 0) {
         Size = 4;
         EpilogScopes = (Xdata[0] >> 22) & 0x1f;
-        UnwindWords = (Xdata[0] >> 27) & 0x0f;
+        UnwindWords = (Xdata[0] >> 27) & 0x1f;
     } else {
         Size = 8;
         EpilogScopes = Xdata[1] & 0xffff;
         UnwindWords = (Xdata[1] >> 16) & 0xff;
     }
 
-    Size += 4 * EpilogScopes;
-    Size += 4 * UnwindWords;
-    if (Xdata[0] & (1 << 20)) {
-        Size += 4;        // exception handler RVA
+    if (!(Xdata[0] & (1 << 21))) {
+        Size += 4 * EpilogScopes;
     }
+
+    Size += 4 * UnwindWords;
+
+    if (Xdata[0] & (1 << 20)) {
+        Size += 4;  // Exception handler RVA
+    }
+
     return Size;
 }
 ```

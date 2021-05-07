@@ -23,9 +23,13 @@ One or more of the following comma-separated arguments.
 
    With no options, **`/clr`** creates metadata for the component. The metadata can be consumed by other CLR applications, and enables the component to consume types and data in the metadata of other CLR components. For more information, see [Mixed (Native and Managed) Assemblies](../../dotnet/mixed-native-and-managed-assemblies.md).
 
-- **`NetCore`**
+::: moniker range="msvc-160"
 
-   **`/clr:NetCore`** creates metadata and code for the component using the latest cross-platform .NET framework, also known as .NET Core. The metadata can be consumed by other .NET Core applications. And, the option enables the component to consume types and data in the metadata of other .NET Core components.
+- **`netcore`**
+
+   Available starting in Visual Studio 2019 version 16.4, **`/clr:netcore`** creates metadata and code for the component using the latest cross-platform .NET framework, also known as .NET Core. The metadata can be consumed by other .NET Core applications. And, the option enables the component to consume types and data in the metadata of other .NET Core components.
+
+::: moniker-end
 
 - **`nostdlib`**
 

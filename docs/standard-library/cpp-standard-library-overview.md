@@ -7,16 +7,16 @@ ms.assetid: 7acb83a4-da73-4ad3-bc30-a71289db7f60
 ---
 # C++ Standard Library Overview
 
-All C++ library entities are declared or defined in one or more standard headers. This implementation includes two additional headers, \<hash_map> and \<hash_set>, that are not required by the C++ Standard. For a complete list of headers that this implementation supports, see [Header Files Reference](../standard-library/cpp-standard-library-header-files.md).
+All C++ library entities are declared or defined in one or more standard headers. This implementation includes two additional headers, `<hash_map>` and `<hash_set>`, that are not required by the C++ Standard. For a complete list of headers that this implementation supports, see [Header Files Reference](../standard-library/cpp-standard-library-header-files.md).
 
 A freestanding implementation of the C++ library provides only a subset of these headers:
 
-[\<cstdarg>](../standard-library/cstdarg.md)\
-[\<cstddef>](../standard-library/cstddef.md)\
-[\<cstdlib>](../standard-library/cstdlib.md) (declaring at least the functions `abort`, `atexit`, and `exit`)\
-[\<exception>](../standard-library/exception.md)\
-[\<limits>](../standard-library/limits.md)\
-[\<new>](../standard-library/new.md)
+[`<cstdarg>`](../standard-library/cstdarg.md)\
+[`<cstddef>`](../standard-library/cstddef.md)\
+[`<cstdlib>`](../standard-library/cstdlib.md) (declaring at least the functions `abort`, `atexit`, and `exit`)\
+[`<exception>`](../standard-library/exception.md)\
+[`<limits>`](../standard-library/limits.md)\
+[`<new>`](../standard-library/new.md)
 
 The C++ library headers have two broader subdivisions:
 

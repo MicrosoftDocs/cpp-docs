@@ -61,6 +61,12 @@ The AddressSanitizer runtime doesn't release memory back to the OS during execut
 
 The *`clang_rt.asan*.dll`* runtime files are installed next to the compilers in *`%VSINSTALLDIR%\VC\Tools\MSVC\<version>\bin\<host-arch>\<target-arch>\`*. These locations are on the path in debugging sessions, and in Visual Studio developer command prompts. These files are never placed in *`C:\Windows\System32`* or *`C:\Windows\SysWOW64`*.
 
+## Custom property sheet support
+
+The Property Manager window in the Visual Studio IDE allows you to add custom *`.props`* files to your projects. Even though the **Enable Address Sanitizer** property (`<EnableASAN>`) is shown, it's not honored by the build. That's because the custom *`.props`* files get included after *`Microsoft.cpp.props`*, which uses the `<EnableASAN>` value to set other properties.
+
+As a workaround, you can create a *`Directory.Build.props`* file in the root of your project to define the `<EnableASAN>` property. For more information, see [Customize C++ builds](/visualstudio/msbuild/customize-your-build#customize-c-builds).
+
 ## See also
 
 [AddressSanitizer overview](./asan.md)\
