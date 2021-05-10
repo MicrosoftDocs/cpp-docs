@@ -303,7 +303,7 @@ Code Analysis requires a few environment variables and compiler command-line opt
 
 ## Use the Guideline Support Library
 
-The Guideline Support Library (GSL) is designed to help you follow the Core Guidelines. The GSL includes definitions that let you replace error-prone constructs with safer alternatives. For example, you can replace a `T*, length` pair of parameters with the `span<T>` type. The GSL project is available on GitHub at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL). The library is open-source, so you can view the sources, make comments, or contribute. You can also use the [vcpkg](../build/vcpkg.md) package manager to download and install the library locally.
+The Guideline Support Library (GSL) is designed to help you follow the Core Guidelines. The GSL includes definitions that let you replace error-prone constructs with safer alternatives. For example, you can replace a `T*, length` pair of parameters with the `span<T>` type. The GSL project is available on GitHub at [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL). The library is open-source, so you can view the sources, make comments, or contribute. You can also use the [vcpkg](https://vcpkg.io/) package manager to download and install the library locally.
 
 ::: moniker range="msvc-140"
 

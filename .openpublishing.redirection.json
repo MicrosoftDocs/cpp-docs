@@ -62,8 +62,8 @@
     },
     {
       "source_path": "docs/vcpkg.md",
-      "redirect_url": "/cpp/build/vcpkg",
-      "redirect_document_id": true
+      "redirect_url": "https://vcpkg.io/",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/windows/universal-windows-apps-cpp.md",
@@ -723,6 +723,31 @@
     {
       "source_path": "docs/build/using-an-nmake-macro.md",
       "redirect_url": "/cpp/build/reference/using-an-nmake-macro",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/vcpkg.md",
+      "redirect_url": "https://vcpkg.io/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/install-vcpkg.md",
+      "redirect_url": "https://vcpkg.io/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/integrate-vcpkg.md",
+      "redirect_url": "https://vcpkg.io/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/manage-libraries-with-vcpkg.md",
+      "redirect_url": "https://vcpkg.io/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/vcpkg-command-line-reference.md",
+      "redirect_url": "https://vcpkg.io/",
       "redirect_document_id": false
     },
     {
