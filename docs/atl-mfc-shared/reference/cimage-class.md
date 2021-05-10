@@ -103,7 +103,7 @@ To determine if an attached bitmap is a DIB section, call [`IsDibSection`](#isdi
 > [!NOTE]
 > Using global `CImage` objects in a DLL is not recommended. If you need to use a global `CImage` object in a DLL, call [`CImage::ReleaseGDIPlus`](#releasegdiplus) to explicitly release resources used by GDI+.
 
-`CImage` cannot be selected into a new [`CDC`](../../mfc/reference/cdc-class.md). `CImage` creates its own HDC for the image. Because an HBITMAP can only be selected into one HDC at a time, the HBITMAP associated with the `CImage` cannot be selected into another HDC. If you need a CDC, retrieve the HDC from the `CImage` and give it to [`CDC::FromHandle`](../../mfc/reference/cdc-class.md#fromhandle).
+`CImage` cannot be selected into a new [`CDC`](../../mfc/reference/cdc-class.md). `CImage` creates its own `HDC` for the image. Because an `HBITMAP` can only be selected into one `HDC` at a time, the `HBITMAP` associated with the `CImage` cannot be selected into another `HDC`. If you need a `CDC`, retrieve the `HDC` from the `CImage` and give it to [`CDC::FromHandle`](../../mfc/reference/cdc-class.md#fromhandle).
 
 ## Examples
 
@@ -116,7 +116,7 @@ pDC->Rectangle(0, 40, 100, 50);
 m_myImage.ReleaseDC();
 ```
 
-When you use `CImage` in an MFC project, note which member functions in your project expect a pointer to a [`CBitmap`](../../mfc/reference/cbitmap-class.md) object. If you want to use `CImage` with such a function, like [`CMenu::AppendMenu`](../../mfc/reference/cmenu-class.md#appendmenu), use [`CBitmap::FromHandle`](../../mfc/reference/cbitmap-class.md#fromhandle), pass it your `CImage` HBITMAP, and use the returned `CBitmap*`.
+When you use `CImage` in an MFC project, note which member functions in your project expect a pointer to a [`CBitmap`](../../mfc/reference/cbitmap-class.md) object. If you want to use `CImage` with such a function, like [`CMenu::AppendMenu`](../../mfc/reference/cmenu-class.md#appendmenu), use [`CBitmap::FromHandle`](../../mfc/reference/cbitmap-class.md#fromhandle), pass it your `CImage` `HBITMAP`, and use the returned `CBitmap*`.
 
 ```cpp
 void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
@@ -131,7 +131,7 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 }
 ```
 
-Through `CImage`, you have access to the actual bits of a DIB section. You can use a `CImage` object anywhere you previously used a Win32 HBITMAP or DIB section.
+Through `CImage`, you have access to the actual bits of a DIB section. You can use a `CImage` object anywhere you previously used a Win32 `HBITMAP` or DIB section.
 
 You can use `CImage` from either MFC or ATL.
 
@@ -299,7 +299,7 @@ BOOL BitBlt(
 ### Parameters
 
 *`hDestDC`*<br/>
-The destination HDC.
+The destination `HDC`.
 
 *`xDest`*<br/>
 The logical x-coordinate of the upper left corner of the destination rectangle.

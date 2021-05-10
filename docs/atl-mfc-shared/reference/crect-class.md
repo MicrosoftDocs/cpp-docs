@@ -733,7 +733,7 @@ Contains a [`SIZE`](/windows/win32/api/windef/ns-windef-size) structure or [`CSi
 
 ### Remarks
 
-Moves `CRect`*x* units along the x-axis and *y* units along the y-axis. The *`x`* and *`y`* parameters are signed values, so `CRect` can be moved left or right and up or down.
+Moves `CRect`*`x`* units along the x-axis and *`y`* units along the y-axis. The *`x`* and *`y`* parameters are signed values, so `CRect` can be moved left or right and up or down.
 
 ### Example
 
@@ -773,7 +773,7 @@ See the example for [`CRect::operator LPCRECT`](#operator_lpcrect).
 
 ## <a name="operator_eq"></a> `CRect::operator =`
 
-Assigns *srcRect* to `CRect`.
+Assigns *`srcRect`* to `CRect`.
 
 ```cpp
 void operator=(const RECT& srcRect) throw();
@@ -1106,7 +1106,7 @@ Contains a [`RECT`](/windows/win32/api/windef/ns-windef-rect) or `CRect`.
 
 ### Return Value
 
-A `CRect` that is the intersection of `CRect` and *rect2*.
+A `CRect` that is the intersection of `CRect` and *`rect2`*.
 
 ### Remarks
 
