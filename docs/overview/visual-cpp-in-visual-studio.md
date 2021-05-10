@@ -181,7 +181,7 @@ Programming for the common language runtime (CLR).
 
 ## Third-party open source C++ libraries
 
-The cross-platform **vcpkg** command-line tool greatly simplifies the discovery and installation of over 900 C++ open source libraries. See [vcpkg: C++ Package Manager for Windows](../build/vcpkg.md).
+The cross-platform **vcpkg** command-line tool greatly simplifies the discovery and installation of over 900 C++ open source libraries. For more information, see [vcpkg](https://vcpkg.io/).
 
 ## Feedback and community
 

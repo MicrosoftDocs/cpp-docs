@@ -5,7 +5,7 @@ ms.date: "11/18/2018"
 ---
 # Libraries
 
-Visual Studio includes the following libraries when you install one or more of the C++ workloads. For information about installing 3rd-party libraries, see [vcpkg: A C++ package manager for Windows, Linux and MacOS](../build/vcpkg.md).
+Visual Studio includes the following libraries when you install one or more of the C++ workloads. For information about installing 3rd-party libraries, see [vcpkg](https://vcpkg.io/).
 
 ## Standard Libraries
 

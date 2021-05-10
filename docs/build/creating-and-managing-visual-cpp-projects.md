@@ -41,7 +41,7 @@ Add source code files, icons, or any other items to your project by right-clicki
 
 ## Add third party libraries
 
-To add third-party libraries, use the [vcpkg](vcpkg.md) package manager. Run the Visual Studio integration step to set up the paths to that library when you reference it from any Visual Studio project.
+To add third-party libraries, use the [vcpkg](https://vcpkg.io/) package manager. Run the Visual Studio integration step to set up the paths to that library when you reference it from any Visual Studio project.
 
 ## Set compiler options and other build properties
 

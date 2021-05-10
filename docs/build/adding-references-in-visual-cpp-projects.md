@@ -12,7 +12,7 @@ C++ projects often need to call functions or access data in a binary file such a
 
 ## Consuming libraries downloaded via vcpkg
 
-To consume a library that you have downloaded by using the **vcpkg** package manager, you can ignore the instructions below. See [vcpkg: A C++ package manager for Windows, Linux, and macOS](vcpkg.md) for more information.
+To consume a library that you have downloaded by using the **vcpkg** package manager, you can ignore the instructions below. See [vcpkg.io](https://vcpkg.io/) for more information.
 
 ## Consuming static libraries
 

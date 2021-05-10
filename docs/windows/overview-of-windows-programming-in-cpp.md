@@ -68,7 +68,7 @@ A Windows *service* is a program that can run in the background with little or n
 
 Visual Studio includes the C Runtime Library (CRT), the C++ Standard Library, and other Microsoft-specific libraries. Most of the include folders that contain header files for these libraries are located in the Visual Studio installation directory under the \VC\ folder. The Windows and CRT header files are found in the Windows SDK installation folder.
 
-The [Vcpkg package manager](../build/vcpkg.md) lets you conveniently install hundreds of third-party open-source libraries for Windows.
+The vcpkg package manager lets you conveniently install hundreds of third-party open-source libraries for Windows. For more information, see [vcpkg](https://vcpkg.io/).
 
 The Microsoft libraries include:
 
