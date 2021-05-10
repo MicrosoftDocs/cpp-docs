@@ -63,7 +63,7 @@
     {
       "source_path": "docs/vcpkg.md",
       "redirect_url": "https://vcpkg.io/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/windows/universal-windows-apps-cpp.md",
