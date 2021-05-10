@@ -58,7 +58,7 @@ For more information about Git integration with repos in Azure, see [Share your 
 
 ## Obtain libraries
 
-Use the [vcpkg](../build/vcpkg.md) package manager to obtain and install third-party libraries. Over 900 open-source libraries are currently available in the catalog.
+Use the [vcpkg](https://vcpkg.io/) package manager to obtain and install third-party libraries. Over 900 open-source libraries are currently available in the catalog.
 
 ## Create user interfaces with designers
 

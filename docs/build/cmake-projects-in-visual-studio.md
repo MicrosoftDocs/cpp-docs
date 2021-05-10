@@ -97,7 +97,7 @@ When you build for Windows using the MSVC compiler, CMake projects have support 
 
 ## Vcpkg integration
 
-If you have installed [vcpkg](vcpkg.md), CMake projects opened in Visual Studio automatically integrate the vcpkg toolchain file. That means no additional configuration is required to use vcpkg with your CMake projects. This support works for both local vcpkg installations and vcpkg installations on remote systems that you're targeting. This behavior is disabled automatically when you specify any other toolchain in your CMake Settings configuration.
+If you have installed [vcpkg](https://vcpkg.io/), CMake projects opened in Visual Studio automatically integrate the vcpkg toolchain file. That means no additional configuration is required to use vcpkg with your CMake projects. This support works for both local vcpkg installations and vcpkg installations on remote systems that you're targeting. This behavior is disabled automatically when you specify any other toolchain in your CMake Settings configuration.
 
 ## Customize configuration feedback
 
