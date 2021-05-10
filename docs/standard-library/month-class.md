@@ -261,7 +261,7 @@ Output:
 
 ### Month constants
 
-(C++20) The <chrono> header defines the following constants that you can use with `month` for greater convenience, type-safety, and maintainability of your code. These constants are in scope when std::chrono is in scope.
+(C++20) The \<chrono> header defines the following constants that you can use with `month` for greater convenience, type-safety, and maintainability of your code. These constants are in scope when std::chrono is in scope.
 
 ```cpp
 // Calendrical constants
