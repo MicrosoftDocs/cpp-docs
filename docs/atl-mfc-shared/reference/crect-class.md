@@ -62,8 +62,8 @@ class CRect : public tagRECT
 |[`CRect::operator !=`](#operator_neq)|Determines whether `CRect` is not equal to a rectangle.|
 |[`CRect::operator &`](#operator_amp)|Creates the intersection of `CRect` and a rectangle and returns the resulting `CRect`.|
 |[`CRect::operator &=`](#operator_amp_eq)|Sets `CRect` equal to the intersection of `CRect` and a rectangle.|
-|[`CRect::operator |`](#operator_or)|Creates the union of `CRect` and a rectangle and returns the resulting `CRect`.|
-|[`CRect::operator |='](#operator_or_eq)|Sets `CRect` equal to the union of `CRect` and a rectangle.|
+|[``CRect::operator |`](#operator_or)|Creates the union of `CRect` and a rectangle and returns the resulting `CRect`.|
+|[`CRect::operator |=`](#operator_or_eq)|Sets `CRect` equal to the union of `CRect` and a rectangle.|
 |[`CRect::operator +`](#operator_add)|Adds the given offsets to `CRect` or inflates `CRect` and returns the resulting `CRect`.|
 |[`CRect::operator +=`](#operator_add_eq)|Adds the specified offsets to `CRect` or inflates `CRect`.|
 |[`CRect::operator =`](#operator_eq)|Copies the dimensions of a rectangle to `CRect`.|
