@@ -68,7 +68,7 @@ To fix a path issue for command-line builds, verify the LIB environment variable
 
 You might need to supply a library directory that overrides a standard library directory. On the command line, use the [/LIBPATH](../../build/reference/libpath-additional-libpath.md) option. In the IDE, use the **Additional Library Directories** property in the **Configuration Properties > Linker > General** property page for your project.
 
-Make sure you install every version of the library you need for the configurations you build. Consider using the [vcpkg](../../build/vcpkg.md) package management utility to automate the installation and setup for many common libraries. When you can, it's best to build your own copies of third-party libraries. Then you're sure to have all the libraries' local dependencies, built for the same configurations as your project.
+Make sure you install every version of the library you need for the configurations you build. Consider using the [vcpkg](https://vcpkg.io/) package management utility to automate the installation and setup for many common libraries. When you can, it's best to build your own copies of third-party libraries. Then you're sure to have all the libraries' local dependencies, built for the same configurations as your project.
 
 ## Can't open a file built by your project
 
