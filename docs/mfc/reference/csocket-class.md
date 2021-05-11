@@ -142,7 +142,7 @@ A particular port to be used with the socket, or 0 if you want MFC to select a p
 `SOCK_STREAM` or `SOCK_DGRAM`.
 
 *`lpszSocketAddress`*<br/>
-A pointer to a string containing the network address of the connected socket, a dotted number such as "128.56.22.8". Passing the `NULL` string for this parameter indicates the `CSocket` instance should listen for client activity on all network interfaces.
+A pointer to a string containing the network address of the connected socket, a dotted number such as "128.56.22.8". Passing the NULL string for this parameter indicates the `CSocket` instance should listen for client activity on all network interfaces.
 
 ### Return Value
 

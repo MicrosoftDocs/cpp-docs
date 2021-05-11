@@ -304,7 +304,7 @@ Nonzero if the property sheet is created successfully; otherwise 0.
 
 The call to `Create` can be inside the constructor, or you can call it after the constructor is invoked.
 
-The default style, expressed by passing -1 as *`dwStyle`*, is actually `WS_SYSMENU`&#124;`WS_POPUP`&#124;`WS_CAPTION`&#124;`DS_MODALFRAME`&#124;`DS_CONTEXTHELP`&#124;`WS_VISIBLE`. The default extended window style, expressed by passing 0 as *`dwExStyle`*, is actually `WS_EX_DLGMODALFRAME`.
+The default style, expressed by passing -1 as *`dwStyle`*, is actually `WS_SYSMENU|WS_POPUP|WS_CAPTION|DS_MODALFRAME|DS_CONTEXTHELP|WS_VISIBLE`. The default extended window style, expressed by passing 0 as *`dwExStyle`*, is actually `WS_EX_DLGMODALFRAME`.
 
 The `Create` member function returns immediately after creating the property sheet. To destroy the property sheet, call [`CWnd::DestroyWindow`](../../mfc/reference/cwnd-class.md#destroywindow).
 
