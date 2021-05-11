@@ -52,7 +52,7 @@ Compiler option: `/ZW`
 ### Syntax
 
 ```
-type::typeid
+System::Type^ type = T::typeid;
 ```
 
 ### Parameters
