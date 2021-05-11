@@ -496,7 +496,7 @@ UINT EnableMenuItem(
 Specifies the menu item to be enabled, as determined by *`nEnable`*. This parameter can specify pop-up menu items as well as standard menu items.
 
 *`nEnable`*<br/>
-Specifies the action to take. It can be a combination of `MF_DISABLED`, `MF_ENABLED`, or `MF_GRAYED`, with `MF_BYCOMMAND` or `MF_BYPOSITION`. These values can be combined by using the bitwise `OR` operator. These values have the following meanings:
+Specifies the action to take. It can be a combination of `MF_DISABLED`, `MF_ENABLED`, or `MF_GRAYED`, with `MF_BYCOMMAND` or `MF_BYPOSITION`. These values can be combined by using the C++ bitwise OR operator (`|`). These values have the following meanings:
 
 - `MF_BYCOMMAND` Specifies that the parameter gives the command ID of the existing menu item. This is the default.
 
@@ -718,7 +718,7 @@ Specifies the nature of *`nID`*. It can be one of the following values:
 
 ### Return Value
 
-The value 0xFFFFFFFF if the specified item does not exist. If *`nId`* identifies a pop-up menu, the high-order byte contains the number of items in the pop-up menu and the low-order byte contains the menu flags associated with the pop-up menu. Otherwise the return value is a mask (Boolean OR) of the values from the following list (this mask describes the status of the menu item that *`nId`* identifies):
+The value `0xFFFFFFFF` if the specified item does not exist. If *`nId`* identifies a pop-up menu, the high-order byte contains the number of items in the pop-up menu and the low-order byte contains the menu flags associated with the pop-up menu. Otherwise the return value is a mask (Boolean OR) of the values from the following list (this mask describes the status of the menu item that *`nId`* identifies):
 
 - `MF_CHECKED` Acts as a toggle with `MF_UNCHECKED` to place the default check mark next to the item. When the application supplies check-mark bitmaps (see the `SetMenuItemBitmaps` member function), the "check mark on" bitmap is displayed.
 

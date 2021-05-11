@@ -963,13 +963,13 @@ Pointer to the buffer to receive the text in the current selection.
 
 Depends on the form:
 
-- **GetSelText(** `lpBuf` **)** The number of characters copied into *`lpBuf`*, not including the null termination.
+- **`GetSelText(lpBuf)`** The number of characters copied into *`lpBuf`*, not including the null termination.
 
-- **GetSelText( )** The string containing the current selection.
+- **`GetSelText( )`** The string containing the current selection.
 
 ### Remarks
 
-If you use the first form, **GetSelText(** `lpBuf` **)**, you must ensure that the buffer is large enough for the text it will receive. Call [`GetSel`](#getsel) to determine the number of characters in the current selection.
+If you use the first form, **`GetSelText(lpBuf)`**, you must ensure that the buffer is large enough for the text it will receive. Call [`GetSel`](#getsel) to determine the number of characters in the current selection.
 
 For more information, see [`EM_GETSELTEXT`](/windows/win32/Controls/em-getseltext) in the Windows SDK.
 

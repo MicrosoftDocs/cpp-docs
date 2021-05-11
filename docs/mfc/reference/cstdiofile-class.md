@@ -192,12 +192,12 @@ A pointer to the buffer containing the text data. `NULL` if end-of-file was reac
 
 ### Remarks
 
-Reading is stopped by the first newline character. If, in that case, fewer than *`nMax`*-1 characters have been read, a newline character is stored in the buffer. A null character ('\0') is appended in either case.
+Reading is stopped by the first newline character. If, in that case, fewer than *`nMax`*-1 characters have been read, a newline character is stored in the buffer. A null character (`\0`) is appended in either case.
 
 [`CFile::Read`](../../mfc/reference/cfile-class.md#read) is also available for text-mode input, but it does not terminate on a carriage return-line feed pair.
 
 > [!NOTE]
-> The `CString` version of this function removes the `'\n'` if present; the `LPTSTR` version does not.
+> The `CString` version of this function removes the `\n` if present; the `LPTSTR` version does not.
 
 ### Example
 
