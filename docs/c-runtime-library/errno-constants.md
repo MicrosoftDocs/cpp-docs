@@ -17,7 +17,7 @@ helpviewer_keywords: ["E2BIG constant", "EACCES constant", "EAGAIN constant", "E
 
 The **`errno`** constants are values assigned to [`errno`](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) in the event of various error conditions.
 
-ERRNO.H contains the definitions of the **`errno`** values. However, not all the definitions given in ERRNO.H are used in 32-bit Windows operating systems. Some of the values in ERRNO.H are present to maintain compatibility with the UNIX family of operating systems. The **`errno`** values in a 32-bit Windows operating system are a subset of the values for **`errno`** in UNIX systems.
+`ERRNO.H` contains the definitions of the **`errno`** values. However, not all the definitions given in `ERRNO.H` are used in 32-bit Windows operating systems. Some of the values in `ERRNO.H` are present to maintain compatibility with the UNIX family of operating systems. The **`errno`** values in a 32-bit Windows operating system are a subset of the values for **`errno`** in UNIX systems.
 
 The **`errno`** value isn't necessarily the same as the actual error code returned by a system call from the Windows operating system. To access the actual operating system error code, use the [`_doserrno`](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) variable, which contains this value.
 
