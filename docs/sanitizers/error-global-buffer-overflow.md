@@ -17,22 +17,22 @@ In C++, a global is allocated by the compiler. There can only be one definition,
 
 ## Example - globals in 'C' with multiple type definitions
 
-```cpp
+```c
 // file: a.c
 int x;
 ```
 
-```cpp
+```c
 // file: b.c
 char* x;
 ```
 
-```cpp
+```c
 // file: c.c
 float* x[3];
 ```
 
-```cpp
+```c
 // file: example1-main.c
 // global-buffer-overflow error
 
