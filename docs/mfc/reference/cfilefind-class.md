@@ -747,7 +747,7 @@ virtual BOOL MatchesMask(DWORD dwMask) const;
 ### Parameters
 
 *`dwMask`*<br/>
-Specifies one or more file attributes, identified in the [`WIN32_FIND_DATA`](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure, for the found file. To search for multiple attributes, use the bitwise `OR` (`|`) operator. Any combination of the following attributes is acceptable:
+Specifies one or more file attributes, identified in the [`WIN32_FIND_DATA`](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) structure, for the found file. To search for multiple attributes, use the bitwise OR (`|`) operator. Any combination of the following attributes is acceptable:
 
 - `FILE_ATTRIBUTE_ARCHIVE`   The file is an archive file. Applications use this attribute to mark files for backup or removal.
 

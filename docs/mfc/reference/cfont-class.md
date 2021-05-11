@@ -142,7 +142,7 @@ Specifies the desired clipping precision. The clipping precision defines how to 
 
 To use an embedded read-only font, an application must specify `CLIP_ENCAPSULATE`.
 
-To achieve consistent rotation of device, TrueType, and vector fonts, an application can use the `OR` operator to combine the `CLIP_LH_ANGLES` value with any of the other *`nClipPrecision`* values. If the `CLIP_LH_ANGLES` bit is set, the rotation for all fonts depends on whether the orientation of the coordinate system is left-handed or right-handed. (For more information about the orientation of coordinate systems, see the description of the *`nOrientation`* parameter.) If `CLIP_LH_ANGLES` is not set, device fonts always rotate counterclockwise, but the rotation of other fonts is dependent on the orientation of the coordinate system.
+To achieve consistent rotation of device, TrueType, and vector fonts, an application can use the bitwise OR operator (`|`) to combine the `CLIP_LH_ANGLES` value with any of the other *`nClipPrecision`* values. If the `CLIP_LH_ANGLES` bit is set, the rotation for all fonts depends on whether the orientation of the coordinate system is left-handed or right-handed. (For more information about the orientation of coordinate systems, see the description of the *`nOrientation`* parameter.) If `CLIP_LH_ANGLES` is not set, device fonts always rotate counterclockwise, but the rotation of other fonts is dependent on the orientation of the coordinate system.
 
 *`nQuality`*<br/>
 Specifies the font's output quality, which defines how carefully the GDI must attempt to match the logical-font attributes to those of an actual physical font. See the `lfQuality` member in the `LOGFONT` structure in the Windows SDK for a list of values.

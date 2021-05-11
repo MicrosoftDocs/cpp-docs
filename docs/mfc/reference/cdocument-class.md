@@ -313,7 +313,7 @@ A string that is the path to the desired file. The path may be relative or absol
 A pointer to an existing file-exception object that indicates the completion status of the operation.
 
 *`nOpenFlags`*<br/>
-Sharing and access mode. Specifies the action to take when opening the file. You can combine options listed in the CFile constructor [`CFile::CFile`](../../mfc/reference/cfile-class.md#cfile) by using the bitwise `OR` (`|`) operator. One access permission and one share option are required; the `modeCreate` and `modeNoInherit` modes are optional.
+Sharing and access mode. Specifies the action to take when opening the file. You can combine options listed in the CFile constructor [`CFile::CFile`](../../mfc/reference/cfile-class.md#cfile) by using the bitwise OR (`|`) operator. One access permission and one share option are required; the `modeCreate` and `modeNoInherit` modes are optional.
 
 ### Return Value
 
