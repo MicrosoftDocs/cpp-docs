@@ -87,8 +87,8 @@ Zero if successful; an error code on failure.
 |*`strDestination`*|*`numberOfElements`*|*`strSource`*|Return value|Contents of *`strDestination`*|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
 |**`NULL`** or unterminated|any|any|**`EINVAL`**|not modified|
-|any|any|**`NULL`**|**`EINVAL`**|*strDestination*[0] set to 0|
-|any|0, or too small|any|**`ERANGE`**|*strDestination*[0] set to 0|
+|any|any|**`NULL`**|**`EINVAL`**|*`strDestination[0]`* set to 0|
+|any|0, or too small|any|**`ERANGE`**|*`strDestination[0]`* set to 0|
 
 ## Remarks
 
