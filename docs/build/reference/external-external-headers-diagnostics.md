@@ -119,7 +119,7 @@ cl /EHsc /experimental:external /I include_dir /external:anglebrackets /external
 
 The C4245 warning appears again in the output, even though the template code is inside an external header.
 
-### Suppressing and enforcing warnings
+### Enable, disable, or suppress warnings
 
 All the existing mechanisms to enable, disable, and suppress warnings still work in external headers. When a warning appears because you use the **`/external:templates-`** option, you can still suppress the warning at the point of instantiation. For example, to explicitly suppress the warning in the sample that reappears because of **`/external:templates-`**, use a `warning` pragma directive:
 
