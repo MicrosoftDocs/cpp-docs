@@ -1,11 +1,11 @@
 ---
-title: "/external (External headers)"
-description: "The Microsoft C++ compiler /external options syntax and usage."
-ms.date: 05/12/2021
+title: "/external (External headers diagnostics)"
+description: "The Microsoft C++ compiler /external headers diagnostic options syntax and usage."
+ms.date: 05/14/2021
 f1_keywords: ["/external", "/external:anglebrackets", "/external:env:", "/external:I", "/external:W0", "/external:W1", "/external:W2", "/external:W3", "/external:W4", "/external:templates-", "/experimental:external"]
 helpviewer_keywords: ["/external compiler option [C++]", "-external compiler option [C++]", "external compiler option [C++]"]
 ---
-# `/external` (External headers)
+# `/external` (External headers diagnostics)
 
 The **`/external`** compiler options let you specify compiler diagnostic behavior for certain header files. "External" headers are the natural complement of "Just my code": Header files such as system files or third-party library files that you can't or don't intend to change. Since you aren't going to change these files, you may decide it isn't useful to see diagnostic messages from the compiler about them. The `/external` compiler options give you control over these warnings.
 
@@ -111,7 +111,7 @@ This command line suppresses the warning inside *`header_file.h`* while preservi
 
 ### Warnings across the internal and external boundary
 
-Setting a low warning level for external headers can hide some actionable warnings. In particular, it can turn off warnings emitted on template instantiations in user code. These warnings might indicate a problem in your code that only happens in instantiations for particular types. (For example, if you forgot to apply a type trait removing `const` or `&`). To avoid silencing warnings inside templates defined in external headers, you can use the **`/external:templates-`** option. The compiler considers both the effective warning level in the file that defines the template, and the warning level where template instantiation occurs. Warnings emitted inside an external template appear if the template is instantiated within non-external code. For example, this command line re-enables warnings from template sources in the sample code:
+Setting a low warning level for external headers can hide some actionable warnings. In particular, it can turn off warnings emitted on template instantiations in user code. These warnings might indicate a problem in your code that only happens in instantiations for particular types. (For example, if you forgot to apply a type trait removing `const` or `&`.) To avoid silencing warnings inside templates defined in external headers, you can use the **`/external:templates-`** option. The compiler considers both the effective warning level in the file that defines the template, and the warning level where template instantiation occurs. Warnings emitted inside an external template appear if the template is instantiated within non-external code. For example, this command line re-enables warnings from template sources in the sample code:
 
 ```cmd
 cl /EHsc /experimental:external /I include_dir /external:anglebrackets /external:W0 /external:templates- /W4 program.cpp

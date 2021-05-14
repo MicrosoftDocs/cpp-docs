@@ -165,7 +165,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 | [`/c`](c-compile-without-linking.md) | Compiles without linking. |
 | [`/cgthreads`](cgthreads-code-generation-threads.md) | Specifies number of *cl.exe* threads to use for optimization and code generation. |
 | [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Deprecated. Error reporting is controlled by [Windows Error Reporting (WER)](/windows/win32/wer/windows-error-reporting) settings. |
-| [`/external`](external-external-headers.md) | Allows control of diagnostics in external headers. |
+| [`/external`](external-external-headers-diagnostics.md) | Allows control of diagnostics in external headers. |
 | [`/FC`](fc-full-path-of-source-code-file-in-diagnostics.md) | Displays the full path of source code files passed to *cl.exe* in diagnostic text. |
 | [`/FS`](fs-force-synchronous-pdb-writes.md) | Forces writes to the PDB file to be serialized through *MSPDBSRV.EXE*. |
 | [`/fsanitize`](fsanitize.md) | Enables compilation of sanitizer instrumentation such as AddressSanitizer. |

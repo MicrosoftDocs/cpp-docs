@@ -519,8 +519,8 @@
                   href: ../build/reference/experimental-module.md
                 - name: /experimental:preprocessor
                   href: ../build/reference/experimental-preprocessor.md
-                - name: /external
-                  href: ../build/reference/external-external-headers.md
+                - name: /external (External headers diagnostics)
+                  href: ../build/reference/external-external-headers-diagnostics.md
                 - name: /F (Set stack size)
                   href: ../build/reference/f-set-stack-size.md
                 - name: Output-file (/F) options
