@@ -9,9 +9,9 @@ topic_type: ["apiref"]
 f1_keywords: ["_snprintf", "snprintf_l", "snwprintf_l", "sntprintf", "snprintf", "_sntprintf", "_sntprintf_l", "sntprintf_l", "snwprintf", "_snprintf_l", "_snwprintf", "_snwprintf_l"]
 helpviewer_keywords: ["snwprintf_l function", "sntprintf_l function", "snprintf_l function", "_snwprintf_l function", "_sntprintf_l function", "_snwprintf function", "_snprintf function", "_sntprintf function", "_snprintf_l function", "snwprintf function", "snprintf function", "sntprintf function", "formatted text [C++]"]
 ---
-# snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l
+# `snprintf`, `_snprintf`, `_snprintf_l`, `_snwprintf`, `_snwprintf_l`
 
-Writes formatted data to a string. More secure versions of these functions are available; see [_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l](snprintf-s-snprintf-s-l-snwprintf-s-snwprintf-s-l.md).
+Writes formatted data to a string. More secure versions of these functions are available; see [`_snprintf_s`, `_snprintf_s_l`, `_snwprintf_s`, `_snwprintf_s_l`](snprintf-s-snprintf-s-l-snwprintf-s-snwprintf-s-l.md).
 
 ## Syntax
 
@@ -82,69 +82,69 @@ int _snwprintf_l(
 
 ### Parameters
 
-*buffer*<br/>
+*`buffer`*<br/>
 Storage location for the output.
 
-*count*<br/>
+*`count`*<br/>
 Maximum number of characters to store.
 
-*format*<br/>
+*`format`*<br/>
 Format-control string.
 
-*argument*<br/>
+*`argument`*<br/>
 Optional arguments.
 
-*locale*<br/>
+*`locale`*<br/>
 The locale to use.
 
-For more information, see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+For more information, see [Format Specification Syntax: `printf` and `wprintf` Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## Return Value
 
-Let **len** be the length of the formatted data string, not including the terminating null. Both **len** and **count** are the number of characters  for **snprintf** and **_snprintf**, and the number of wide characters for **_snwprintf**.
+Let **`len`** be the length of the formatted data string, not including the terminating null. Both **`len`** and **`count`** are the number of characters for **`snprintf`** and **`_snprintf`**, and the number of wide characters for **`_snwprintf`**.
 
-For all functions, if **len** < *count*, **len** characters are stored in *buffer*, a null-terminator is appended, and **len** is returned.
+For all functions, if **`len`** < *`count`*, **`len`** characters are stored in *`buffer`*, a null-terminator is appended, and **`len`** is returned.
 
-The **snprintf** function truncates the output when **len** is greater than or equal to *count*, by placing a null-terminator at `buffer[count-1]`. The value returned is **len**, the number of characters that would have been output if *count* was large enough. The **snprintf** function returns a negative value if an encoding error occurs.
+The **`snprintf`** function truncates the output when **`len`** is greater than or equal to *`count`*, by placing a null-terminator at `buffer[count-1]`. The value returned is **`len`**, the number of characters that would have been output if *`count`* was large enough. The **`snprintf`** function returns a negative value if an encoding error occurs.
 
-For all functions other than **snprintf**, if **len** = *count*, **len** characters are stored in *buffer*, no null-terminator is appended, and **len** is returned. If **len** > *count*, *count* characters are stored in *buffer*, no null-terminator is appended, and a negative value is returned.
+For all functions other than **`snprintf`**, if **`len`** = *`count`*, **`len`** characters are stored in *`buffer`*, no null-terminator is appended, and **`len`** is returned. If **`len`** > *`count`*, *`count`* characters are stored in *`buffer`*, no null-terminator is appended, and a negative value is returned.
 
-If *buffer* is a null pointer and *count* is zero, **len** is returned as the count of characters required to format the output, not including the terminating null. To make a successful call with the same *argument* and *locale* parameters, allocate a buffer holding at least **len** + 1 characters.
+If *`buffer`* is a null pointer and *`count`* is zero, **`len`** is returned as the count of characters required to format the output, not including the terminating null. To make a successful call with the same *`argument`* and *`locale`* parameters, allocate a buffer holding at least **`len`** + 1 characters.
 
-If *buffer* is a null pointer and *count* is nonzero, or if *format* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **errno** to **EINVAL**.
+If *`buffer`* is a null pointer and *`count`* is nonzero, or if *`format`* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to **`EINVAL`**.
 
-For information about these and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **snprintf** function and the **_snprintf** family of functions format and store *count* or fewer characters in *buffer*. The **snprintf** function always stores a terminating null character, truncating the output if necessary. The **_snprintf** family of functions only appends a terminating null character if the formatted string length is strictly less than *count* characters. Each *argument* (if any) is converted and is output according to the corresponding format specification in *format*. The format consists of ordinary characters and has the same form and function as the *format* argument for [printf](printf-printf-l-wprintf-wprintf-l.md). If copying occurs between strings that overlap, the behavior is undefined.
+The **`snprintf`** function and the **`_snprintf`** family of functions format and store *`count`* or fewer characters in *`buffer`*. The **`snprintf`** function always stores a terminating null character, truncating the output if necessary. The **`_snprintf`** family of functions only appends a terminating null character if the formatted string length is strictly less than *`count`* characters. Each *`argument`* (if any) is converted and is output according to the corresponding format specification in *`format`*. The format consists of ordinary characters and has the same form and function as the *`format`* argument for [`printf`](printf-printf-l-wprintf-wprintf-l.md). If copying occurs between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
-> Ensure that *format* is not a user-defined string. Because the **_snprintf** functions do not guarantee null termination—in particular, when the return value is *count*—make sure that they are followed by code that adds the null terminator. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
+> Ensure that *`format`* is not a user-defined string. Because the **`_snprintf`** functions do not guarantee null termination—in particular, when the return value is *`count`*—make sure that they are followed by code that adds the null terminator. For more information, see [Avoiding Buffer Overruns](/windows/win32/SecBP/avoiding-buffer-overruns).
 >
 > Starting in Windows 10 version 2004 (build 19041), the `printf` family of functions prints exactly representable floating point numbers according to the IEEE 754 rules for rounding. In previous versions of Windows, exactly representable floating point numbers ending in '5' would always round up. IEEE 754 states that they must round to the closest even digit (also known as "Banker's Rounding"). For example, both `printf("%1.0f", 1.5)` and `printf("%1.0f", 2.5)` should round to 2. Previously, 1.5 would round to 2 and 2.5 would round to 3. This change only affects exactly representable numbers. For example, 2.35 (which, when represented in memory, is closer to 2.35000000000000008) continues to round up to 2.4. Rounding done by these functions now also respects the floating point rounding mode set by [`fesetround`](fegetround-fesetround2.md). Previously, rounding always chose `FE_TONEAREST` behavior. This change only affects programs built using Visual Studio 2019 version 16.2 and later. To use the legacy floating point rounding behavior, link with [`legacy_stdio_float_rounding.obj`](../link-options.md).
 
-Beginning with the UCRT in Visual Studio 2015 and Windows 10, **snprintf** is no longer identical to **_snprintf**. The **snprintf** function behavior is now C99 standard compliant.
+Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`snprintf`** is no longer identical to **`_snprintf`**. The **`snprintf`** function behavior is now C99 standard compliant.
 
-**_snwprintf** is a wide-character version of **_snprintf**; the pointer arguments to **_snwprintf** are wide-character strings. Detection of encoding errors in **_snwprintf** might differ from that in **_snprintf**. **_snwprintf**, just like **swprintf**, writes output to a string instead of a destination of type **FILE**.
+**`_snwprintf`** is a wide-character version of **`_snprintf`**; the pointer arguments to **`_snwprintf`** are wide-character strings. Detection of encoding errors in **`_snwprintf`** might differ from that in **`_snprintf`**. **`_snwprintf`**, just like **`swprintf`**, writes output to a string instead of a destination of type **`FILE`**.
 
-The versions of these functions that have the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions that have the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 In C++, these functions have template overloads that invoke their newer, more secure counterparts. For more information, see [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
 
 ### Generic-Text Routine Mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_sntprintf**|**_snprintf**|**_snprintf**|**_snwprintf**|
-|**_sntprintf_l**|**_snprintf_l**|**_snprintf_l**|**_snwprintf_l**|
+|**`_sntprintf`**|**`_snprintf`**|**`_snprintf`**|**`_snwprintf`**|
+|**`_sntprintf_l`**|**`_snprintf_l`**|**`_snprintf_l`**|**`_snwprintf_l`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**snprintf**, **_snprintf**,  **_snprintf_l**|\<stdio.h>|
-|**_snwprintf**, **_snwprintf_l**|\<stdio.h> or \<wchar.h>|
+|**`snprintf`**, **`_snprintf`**,  **`_snprintf_l`**|`<stdio.h>`|
+|**`_snwprintf`**, **`_snwprintf_l`**|`<stdio.h>` or `<wchar.h>`|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -264,9 +264,9 @@ character count = 69
 ## See also
 
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
-[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
-[vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
+[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
+[`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md)<br/>
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
+[`sscanf`, `_sscanf_l`, `swscanf`, `_swscanf_l`](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
+[`vprintf` Functions](../../c-runtime-library/vprintf-functions.md)<br/>

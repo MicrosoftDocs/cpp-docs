@@ -20,9 +20,9 @@ SDI, MDI, and multiple top-level document applications are all forms based and u
 
 Any dialog-based application, by definition, is forms based. A dialog-based application does not use the document/view architecture, so you must manage the creation and access methods for your own additional forms.
 
-The base class for form-based applications is [CFormView](cformview-class.md). If your application has database support, then you can also select any class that derives from `CFormView`. A form is any window derived from `CFormView` or from any class that inherits from `CFormView`.
+The base class for form-based applications is [`CFormView`](cformview-class.md). If your application has database support, then you can also select any class that derives from `CFormView`. A form is any window derived from `CFormView` or from any class that inherits from `CFormView`.
 
-Even if you use a base class such as [CView](cview-class.md), you can later make your applications forms-based by [adding an MFC class](adding-an-mfc-class.md) derived from `CFormView`.
+Even if you use a base class such as [`CView`](cview-class.md), you can later make your applications forms-based by [adding an MFC class](adding-an-mfc-class.md) derived from `CFormView`.
 
 Once you finish with the wizard, your project opens, and if you selected `CFormView` (or a class that inherits from `CFormView`) as your base class or if you created a dialog-based application, Visual C++ opens the dialog editor. At this point, you are ready to design your first form.
 

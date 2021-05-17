@@ -17,7 +17,7 @@ helpviewer_keywords: ["E2BIG constant", "EACCES constant", "EAGAIN constant", "E
 
 The **`errno`** constants are values assigned to [`errno`](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) in the event of various error conditions.
 
-ERRNO.H contains the definitions of the **`errno`** values. However, not all the definitions given in ERRNO.H are used in 32-bit Windows operating systems. Some of the values in ERRNO.H are present to maintain compatibility with the UNIX family of operating systems. The **`errno`** values in a 32-bit Windows operating system are a subset of the values for **`errno`** in UNIX systems.
+`ERRNO.H` contains the definitions of the **`errno`** values. However, not all the definitions given in `ERRNO.H` are used in 32-bit Windows operating systems. Some of the values in `ERRNO.H` are present to maintain compatibility with the UNIX family of operating systems. The **`errno`** values in a 32-bit Windows operating system are a subset of the values for **`errno`** in UNIX systems.
 
 The **`errno`** value isn't necessarily the same as the actual error code returned by a system call from the Windows operating system. To access the actual operating system error code, use the [`_doserrno`](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) variable, which contains this value.
 
@@ -37,7 +37,7 @@ The following **`errno`** values are supported:
 | `EEXIST` | Files exists. An attempt has been made to create a file that already exists. For example, the `_O_CREAT` and `_O_EXCL` flags are specified in an `_open` call, but the named file already exists. | 17 |
 | `EFAULT` | Bad address. | 14 |
 | `EFBIG` | File too large. | 27 |
-| `EILSEQ` | Illegal sequence of bytes (for example, in an MBCS string). | 42 |
+| `EILSEQ` | Illegal sequence of bytes (for example, in an `MBCS` string). | 42 |
 | `EINTR` | Interrupted function. | 4 |
 | `EINVAL` | Invalid argument. An invalid value was given for one of the arguments to a function. For example, the value given for the origin when positioning a file pointer (by means of a call to `fseek`) is before the beginning of the file. | 22 |
 | `EIO` | I/O error. | 5 |

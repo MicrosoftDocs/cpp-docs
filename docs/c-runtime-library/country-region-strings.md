@@ -44,5 +44,5 @@ The Microsoft C run-time library implementation also supports the following addi
 
 [Locale Names, Languages, and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
 [Language Strings](../c-runtime-library/language-strings.md)<br/>
-[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[_create_locale, _wcreate_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)
+[`setlocale`, `_wsetlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[`_create_locale`, `_wcreate_locale`](../c-runtime-library/reference/create-locale-wcreate-locale.md)
