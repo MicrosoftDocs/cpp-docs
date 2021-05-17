@@ -80,7 +80,7 @@ The **`_strcmpi`** function is equivalent to **`_stricmp`** and is provided for 
 
 Because **`_stricmp`** does lowercase comparisons, it may result in unexpected behavior.
 
-To illustrate when case conversion by **`_stricmp`** affects the outcome of a comparison, assume that you have the two strings `JOHNSTON` and `JOHN_HENRY`. The string `JOHN_HENRY` will be considered less than `JOHNSTON` because the "_" has a lower ASCII value than a lowercase S. In fact, any character that has an ASCII value between 91 and 96 will be considered less than any letter.
+To illustrate when case conversion by **`_stricmp`** affects the outcome of a comparison, assume that you have the two strings `JOHNSTON` and `JOHN_HENRY`. The string `JOHN_HENRY` will be considered less than `JOHNSTON` because the "`_`" has a lower ASCII value than a lowercase S. In fact, any character that has an ASCII value between 91 and 96 will be considered less than any letter.
 
 If the [`strcmp`](strcmp-wcscmp-mbscmp.md) function is used instead of **`_stricmp`**, `JOHN_HENRY` will be greater than `JOHNSTON`.
 
@@ -121,7 +121,7 @@ All of these functions validate their parameters. If either *`string1`* or *`str
 |Routine|Required header|
 |-------------|---------------------|
 |**`_stricmp`**, **`_stricmp_l`**|`<string.h>`|
-|**`_wcsicmp`**, **`_wcsicmp_`l**|`<string.h>` or `<wchar.h>`|
+|**`_wcsicmp`**, **`_wcsicmp_l`**|`<string.h>` or `<wchar.h>`|
 |**`_mbsicmp`**, **`_mbsicmp_l`**|`<mbstring.h>`|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).

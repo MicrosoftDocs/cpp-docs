@@ -9,9 +9,9 @@ topic_type: ["apiref"]
 f1_keywords: ["wprintf_s", "printf_s"]
 helpviewer_keywords: ["wprintf_s function", "tprintf_s function", "_tprintf_s function", "printf_s_l function", "printf_s function", "_printf_s_l function", "printf function, format specification fields", "printf function, using", "_tprintf_s_l function", "wprintf_s_l function", "formatted text [C++]", "tprintf_s_l function", "_wprintf_s_l function"]
 ---
-# printf_s, _printf_s_l, wprintf_s, _wprintf_s_l
+# `printf_s`, `_printf_s_l`, `wprintf_s`, `_wprintf_s_l`
 
-Prints formatted output to the standard output stream. These versions of [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Prints formatted output to the standard output stream. These versions of [`printf`, `_printf_l`, `wprintf`, `_wprintf_l`](printf-printf-l-wprintf-wprintf-l.md) have security enhancements, as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 
@@ -38,13 +38,13 @@ int _wprintf_s_l(
 
 ### Parameters
 
-*format*<br/>
+*`format`*<br/>
 Format control.
 
-*argument*<br/>
+*`argument`*<br/>
 Optional arguments.
 
-*locale*<br/>
+*`locale`*<br/>
 The locale to use.
 
 ## Return Value
@@ -53,26 +53,26 @@ Returns the number of characters printed, or a negative value if an error occurs
 
 ## Remarks
 
-The **printf_s** function formats and prints a series of characters and values to the standard output stream, **stdout**. If arguments follow the *format* string, the *format* string must contain specifications that determine the output format for the arguments.
+The **`printf_s`** function formats and prints a series of characters and values to the standard output stream, **`stdout`**. If arguments follow the *`format`* string, the *`format`* string must contain specifications that determine the output format for the arguments.
 
-The main difference between **printf_s** and **printf** is that **printf_s** checks the format string for valid formatting characters, whereas **printf** only checks if the format string is a null pointer. If either check fails, an invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **errno** to **EINVAL**.
+The main difference between **`printf_s`** and **`printf`** is that **`printf_s`** checks the format string for valid formatting characters, whereas **`printf`** only checks if the format string is a null pointer. If either check fails, an invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns -1 and sets **`errno`** to **`EINVAL`**.
 
-For information on **errno** and error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information on **`errno`** and error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-**printf_s** and **fprintf_s** behave identically except that **printf_s** writes output to **stdout** rather than to a destination of type **FILE**. For more information, see [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
+**`printf_s`** and **`fprintf_s`** behave identically except that **`printf_s`** writes output to **`stdout`** rather than to a destination of type **`FILE`**. For more information, see [`fprintf_s`, `_fprintf_s_l`, `fwprintf_s`, `_fwprintf_s_l`](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
 
-**wprintf_s** is a wide-character version of **printf_s**; *format* is a wide-character string. **wprintf_s** and **printf_s** behave identically if the stream is opened in ANSI mode. **printf_s** doesn't currently support output into a UNICODE stream.
+**`wprintf_s`** is a wide-character version of **`printf_s`**; *`format`* is a wide-character string. **`wprintf_s`** and **`printf_s`** behave identically if the stream is opened in ANSI mode. **`printf_s`** doesn't currently support output into a UNICODE stream.
 
-The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
+The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 ### Generic-Text Routine Mappings
 
-|TCHAR.H routine|_UNICODE & _MBCS not defined|_MBCS defined|_unicode defined|
+|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tprintf_s**|**printf_s**|**printf_s**|**wprintf_s**|
-|**_tprintf_s_l**|**_printf_s_l**|**_printf_s_l**|**_wprintf_s_l**|
+|**`_tprintf_s`**|**`printf_s`**|**`printf_s`**|**`wprintf_s`**|
+|**`_tprintf_s_l`**|**`_printf_s_l`**|**`_printf_s_l`**|**`_wprintf_s_l`**|
 
-The *format* argument consists of ordinary characters, escape sequences, and (if arguments follow *format*) format specifications. The ordinary characters and escape sequences are copied to **stdout** in order of their appearance. For example, the line
+The *`format`* argument consists of ordinary characters, escape sequences, and (if arguments follow *`format`*) format specifications. The ordinary characters and escape sequences are copied to **`stdout`** in order of their appearance. For example, the line
 
 ```C
 printf_s("Line one\n\t\tLine two\n");
@@ -85,7 +85,7 @@ Line one
         Line two
 ```
 
-[Format specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) always begin with a percent sign (**%**) and are read left to right. When **printf_s** encounters the first format specification (if any), it converts the value of the first argument after *format* and outputs it accordingly. The second format specification causes the second argument to be converted and output, and so on. If there are more arguments than there are format specifications, the extra arguments are ignored. The results are undefined if there are not enough arguments for all the format specifications.
+[Format specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) always begin with a percent sign (**`%`**) and are read left to right. When **`printf_s`** encounters the first format specification (if any), it converts the value of the first argument after *`format`* and outputs it accordingly. The second format specification causes the second argument to be converted and output, and so on. If there are more arguments than there are format specifications, the extra arguments are ignored. The results are undefined if there are not enough arguments for all the format specifications.
 
 > [!IMPORTANT]
 > Ensure that *format* is not a user-defined string.
@@ -97,12 +97,12 @@ Line one
 
 |Routine|Required header|
 |-------------|---------------------|
-|**printf_s**, **_printf_s_l**|\<stdio.h>|
-|**wprintf_s**, **_wprintf_s_l**|\<stdio.h> or \<wchar.h>|
+|**`printf_s`**, **`_printf_s_l`**|`<stdio.h>`|
+|**`wprintf_s`**, **`_wprintf_s_l`**|`<stdio.h>` or `<wchar.h>`|
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **stdin**, **stdout**, and **stderr**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+The console is not supported in Universal Windows Platform (UWP) apps. The standard stream handles that are associated with the console, **`stdin`**, **`stdout`**, and **`stderr`**, must be redirected before C run-time functions can use them in UWP apps. For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -186,8 +186,8 @@ Address as:   0012FF78
 [Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
 [Stream I/O](../../c-runtime-library/stream-i-o.md)<br/>
 [Locale](../../c-runtime-library/locale.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
-[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[vprintf Functions](../../c-runtime-library/vprintf-functions.md)<br/>
+[`fopen`, `_wfopen`](fopen-wfopen.md)<br/>
+[`fprintf`, `_fprintf_l`, `fwprintf`, `_fwprintf_l`](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
+[`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
+[`sprintf`, `_sprintf_l`, `swprintf`, `_swprintf_l`, `__swprintf_l`](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[`vprintf` Functions](../../c-runtime-library/vprintf-functions.md)<br/>

@@ -68,7 +68,7 @@ For information about deriving Microsoft Foundation classes and C++ classes in g
 
 **Header:** `afx.h`
 
-## <a name="assertvalid"></a> CObject::AssertValid
+## <a name="assertvalid"></a> `CObject::AssertValid`
 
 Validates this object's integrity.
 
@@ -94,7 +94,7 @@ See [`CObList::CObList`](../../mfc/reference/coblist-class.md#coblist) for a lis
 
 For another example, see [`AfxDoForAllObjects`](diagnostic-services.md#afxdoforallobjects).
 
-## <a name="cobject"></a> CObject::CObject
+## <a name="cobject"></a> `CObject::CObject`
 
 These functions are the standard `CObject` constructors.
 
@@ -105,7 +105,7 @@ CObject(const CObject& objectSrc);
 
 ### Parameters
 
-*objectSrc*\
+*`objectSrc`*\
 A reference to another `CObject`
 
 ### Remarks
@@ -122,7 +122,7 @@ See [`CObList::CObList`](../../mfc/reference/coblist-class.md#coblist) for a lis
 
 [!code-cpp[NVC_MFCCObjectSample#8](../../mfc/codesnippet/cpp/cobject-class_2.cpp)]
 
-## <a name="dump"></a> CObject::Dump
+## <a name="dump"></a> `CObject::Dump`
 
 Dumps the contents of your object to a [`CDumpContext`](../../mfc/reference/cdumpcontext-class.md) object.
 
@@ -132,7 +132,7 @@ virtual void Dump(CDumpContext& dc) const;
 
 ### Parameters
 
-*dc*\
+*`dc`*\
 The diagnostic dump context for dumping, usually `afxDump`.
 
 ### Remarks
@@ -156,7 +156,7 @@ See [`CObList::CObList`](../../mfc/reference/coblist-class.md#coblist) for a lis
 
 [!code-cpp[NVC_MFCCObjectSample#9](../../mfc/codesnippet/cpp/cobject-class_3.cpp)]
 
-## <a name="getruntimeclass"></a> CObject::GetRuntimeClass
+## <a name="getruntimeclass"></a> `CObject::GetRuntimeClass`
 
 Returns the `CRuntimeClass` structure corresponding to this object's class.
 
@@ -190,7 +190,7 @@ See [`CObList::CObList`](../../mfc/reference/coblist-class.md#coblist) for a lis
 
 [!code-cpp[NVC_MFCCObjectSample#10](../../mfc/codesnippet/cpp/cobject-class_4.cpp)]
 
-## <a name="iskindof"></a> CObject::IsKindOf
+## <a name="iskindof"></a> `CObject::IsKindOf`
 
 Tests this object's relationship to a given class.
 
@@ -219,7 +219,7 @@ See [`CObList::CObList`](../../mfc/reference/coblist-class.md#coblist) for a lis
 
 [!code-cpp[NVC_MFCCObjectSample#11](../../mfc/codesnippet/cpp/cobject-class_5.cpp)]
 
-## <a name="isserializable"></a> CObject::IsSerializable
+## <a name="isserializable"></a> `CObject::IsSerializable`
 
 Tests whether this object is eligible for serialization.
 
@@ -244,7 +244,7 @@ See [`CObList::CObList`](../../mfc/reference/coblist-class.md#coblist) for a lis
 
 [!code-cpp[NVC_MFCCObjectSample#12](../../mfc/codesnippet/cpp/cobject-class_6.cpp)]
 
-## <a name="operator_delete"></a> CObject::operator delete
+## <a name="operator_delete"></a> `CObject::operator delete`
 
 For the Release version of the library, operator **`delete`** frees the memory allocated by operator **`new`**.
 
@@ -281,7 +281,7 @@ See [`CObList::CObList`](../../mfc/reference/coblist-class.md#coblist) for a lis
 
 [!code-cpp[NVC_MFCCObjectSample#15](../../mfc/codesnippet/cpp/cobject-class_8.cpp)]
 
-## <a name="operator_new"></a> CObject::operator new
+## <a name="operator_new"></a> `CObject::operator new`
 
 For the Release version of the library, operator **`new`** does an optimal memory allocation in a manner similar to `malloc`.
 
@@ -316,7 +316,7 @@ See [`CObList::CObList`](../../mfc/reference/coblist-class.md#coblist) for a lis
 
 [!code-cpp[NVC_MFCCObjectSample#16](../../mfc/codesnippet/cpp/cobject-class_9.h)]
 
-## <a name="serialize"></a> CObject::Serialize
+## <a name="serialize"></a> `CObject::Serialize`
 
 Reads or writes this object from or to an archive.
 
