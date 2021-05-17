@@ -6,7 +6,7 @@ f1_keywords: ["bstr"]
 helpviewer_keywords: ["BSTRs, memory allocation", "memory deallocation, string memory", "memory [C++], releasing", "memory allocation, BSTRs", "memory deallocation, BSTR memory", "strings [C++], releasing"]
 ms.assetid: 98041e29-3442-4a02-b425-7a4a13e9cc84
 ---
-# Allocating and Releasing Memory for a BSTR
+# Allocating and Releasing Memory for a `BSTR`
 
 When you create `BSTR`s and pass them between COM objects, you must take care in treating the memory they use in order to avoid memory leaks. When a `BSTR` stays within an interface, you must free its memory when you are done with it. However, when a `BSTR` passes out of an interface, the receiving object takes responsibility for its memory management.
 
@@ -31,6 +31,6 @@ In general, the rules for allocating and releasing memory allocated for `BSTR`s 
 ## See also
 
 [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
-[CStringT::AllocSysString](../atl-mfc-shared/reference/cstringt-class.md#allocsysstring)<br/>
-[SysAllocString](/windows/win32/api/oleauto/nf-oleauto-sysallocstring)<br/>
-[SysFreeString](/windows/win32/api/oleauto/nf-oleauto-sysfreestring)
+[`CStringT::AllocSysString`](../atl-mfc-shared/reference/cstringt-class.md#allocsysstring)<br/>
+[`SysAllocString`](/windows/win32/api/oleauto/nf-oleauto-sysallocstring)<br/>
+[`SysFreeString`](/windows/win32/api/oleauto/nf-oleauto-sysfreestring)
