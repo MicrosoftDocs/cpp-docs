@@ -10,7 +10,7 @@ f1_keywords: ["_brealloc", "_nrealloc", "realloc", "_frealloc"]
 helpviewer_keywords: ["_brealloc function", "realloc function", "nrealloc function", "frealloc function", "_nrealloc function", "memory blocks, reallocating", "memory, reallocating", "_frealloc function", "reallocate memory blocks"]
 ms.assetid: 2b2239de-810b-4b11-9438-32ab0a244185
 ---
-# realloc
+# `realloc`
 
 Reallocate memory blocks.
 
@@ -50,9 +50,9 @@ The **`realloc`** function changes the size of an allocated memory block. The *`
 
 The *`size`* argument gives the new size of the block, in bytes. The contents of the block are unchanged up to the shorter of the new and old sizes, although the new block can be in a different location. Because the new block can be in a new memory location, the pointer returned by **`realloc`** is not guaranteed to be the pointer passed through the *`memblock`* argument. **`realloc`** does not zero newly allocated memory in the case of buffer growth.
 
-**`realloc`** sets **`errno`** to **`ENOMEM`** if the memory allocation fails or if the amount of memory requested exceeds **`_HEAP_MAXREQ`**. For information on this and other error codes, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**`realloc`** sets **`errno`** to **`ENOMEM`** if the memory allocation fails or if the amount of memory requested exceeds **`_HEAP_MAXREQ`**. For information on this and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-**`realloc`** calls **`malloc`** in order to use the C++ [_set_new_mode](set-new-mode.md) function to set the new handler mode. The new handler mode indicates whether, on failure, **`malloc`** is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, **`malloc`** does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **`realloc`** fails to allocate memory, **`malloc`** calls the new handler routine in the same way that the **`new`** operator does when it fails for the same reason. To override the default, call
+**`realloc`** calls **`malloc`** in order to use the C++ [`_set_new_mode`](set-new-mode.md) function to set the new handler mode. The new handler mode indicates whether, on failure, **`malloc`** is to call the new handler routine as set by [`_set_new_handler`](set-new-handler.md). By default, **`malloc`** does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **`realloc`** fails to allocate memory, **`malloc`** calls the new handler routine in the same way that the **`new`** operator does when it fails for the same reason. To override the default, call
 
 ```C
 _set_new_mode(1);
@@ -60,9 +60,9 @@ _set_new_mode(1);
 
 early in ones program, or link with NEWMODE.OBJ (see [Link Options](../../c-runtime-library/link-options.md)).
 
-When the application is linked with a debug version of the C run-time libraries, **`realloc`** resolves to [_realloc_dbg](realloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
+When the application is linked with a debug version of the C run-time libraries, **`realloc`** resolves to [`_realloc_dbg`](realloc-dbg.md). For more information about how the heap is managed during the debugging process, see [The CRT Debug Heap](/visualstudio/debugger/crt-debug-heap-details).
 
-**`realloc`** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
+**`realloc`** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables, and that the pointer returned is not aliased. For more information, see [`noalias`](../../cpp/noalias.md) and [`restrict`](../../cpp/restrict.md).
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -70,7 +70,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**`realloc`**|\<stdlib.h> and \<malloc.h>|
+|**`realloc`**|`<stdlib.h>` and `<malloc.h>`|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -124,6 +124,6 @@ Size of block after realloc of 1000 more longs: 8000
 ## See also
 
 [Memory Allocation](../../c-runtime-library/memory-allocation.md)\
-[calloc](calloc.md)\
-[free](free.md)\
-[malloc](malloc.md)
+[`calloc`](calloc.md)\
+[`free`](free.md)\
+[`malloc`](malloc.md)
