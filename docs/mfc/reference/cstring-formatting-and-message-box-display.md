@@ -70,7 +70,7 @@ This function will return `FALSE` if either *`lpszFullString`* is set to `NULL` 
 
 ## <a name="afxformatstring1"></a> `AfxFormatString1`
 
-Substitutes the string pointed to by *`lpsz1`* for any instances of the characters "%1" in the template string resource identified by *`nIDS`*.
+Substitutes the string pointed to by *`lpsz1`* for any instances of the characters `"%1"` in the template string resource identified by *`nIDS`*.
 
 ```cpp
 void  AfxFormatString1(
@@ -88,13 +88,13 @@ A reference to a `CString` object that will contain the resultant string after t
 The resource ID of the template string on which the substitution will be performed.
 
 *`lpsz1`*<br/>
-A string that will replace the format characters "%1" in the template string.
+A string that will replace the format characters `"%1"` in the template string.
 
 ### Remarks
 
-The newly formed string is stored in *`rString`*. For example, if the string in the string table is `File %1 not found`, and *`lpsz1`* is equal to `C:\MYFILE.TXT`, then *`rString`* will contain the string `File C:\MYFILE.TXT not found`. This function is useful for formatting strings sent to message boxes and other windows.
+The newly formed string is stored in *`rString`*. For example, if the string in the string table is `"File %1 not found"`, and *`lpsz1`* is equal to `C:\MYFILE.TXT`, then *`rString`* will contain the string `"File C:\MYFILE.TXT not found"`. This function is useful for formatting strings sent to message boxes and other windows.
 
-If the format characters `%1` appear in the string more than once, multiple substitutions will be made.
+If the format characters `"%1"` appear in the string more than once, multiple substitutions will be made.
 
 ### Example
 
@@ -106,7 +106,7 @@ If the format characters `%1` appear in the string more than once, multiple subs
 
 ## <a name="afxformatstring2"></a> `AfxFormatString2`
 
-Substitutes the string pointed to by *`lpsz1`* for any instances of the characters "%1", and the string pointed to by *`lpsz2`* for any instances of the characters "%2", in the template string resource identified by *`nIDS`*.
+Substitutes the string pointed to by *`lpsz1`* for any instances of the characters `"%1"`, and the string pointed to by *`lpsz2`* for any instances of the characters `"%2"`, in the template string resource identified by *`nIDS`*.
 
 ```cpp
 void AfxFormatString2(
@@ -125,16 +125,16 @@ A reference to the `CString` that will contain the resultant string after the su
 The string table ID of the template string on which the substitution will be performed.
 
 *`lpsz1`*<br/>
-A string that will replace the format characters `%1` in the template string.
+A string that will replace the format characters `"%1"` in the template string.
 
 *`lpsz2`*<br/>
-A string that will replace the format characters `%2` in the template string.
+A string that will replace the format characters `"%2"` in the template string.
 
 ### Remarks
 
-The newly formed string is stored in *`rString`*. For example, if the string in the string table is `File %1 not found in directory %2`, *`lpsz1`* points to `MYFILE.TXT`, and *`lpsz2`* points to `C:\MYDIR`, then *`rString`* will contain the string `File MYFILE.TXT not found in directory C:\MYDIR`.
+The newly formed string is stored in *`rString`*. For example, if the string in the string table is `"File %1 not found in directory %2"`, *`lpsz1`* points to `MYFILE.TXT`, and *`lpsz2`* points to `C:\MYDIR`, then *`rString`* will contain the string `"File MYFILE.TXT not found in directory C:\MYDIR"`.
 
-If the format characters `%1` or `%2` appear in the string more than once, multiple substitutions will be made. They do not have to be in numerical order.
+If the format characters `"%1"` or `"%2"` appear in the string more than once, multiple substitutions will be made. They do not have to be in numerical order.
 
 ### Example
 

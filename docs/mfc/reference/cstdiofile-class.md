@@ -221,11 +221,11 @@ Number of bytes to move the pointer.
 *`nFrom`*<br/>
 Pointer movement mode. Must be one of the following values:
 
-- `CFile::begin`: Move the file pointer *lOff* bytes forward from the beginning of the file.
+- `CFile::begin`: Move the file pointer *`lOff`* bytes forward from the beginning of the file.
 
-- `CFile::current`: Move the file pointer *lOff* bytes from the current position in the file.
+- `CFile::current`: Move the file pointer *`lOff`* bytes from the current position in the file.
 
-- `CFile::end`: Move the file pointer *lOff* bytes from the end of the file. Note that *lOff* must be negative to seek into the existing file; positive values will seek past the end of the file.
+- `CFile::end`: Move the file pointer *`lOff`* bytes from the end of the file. Note that *`lOff`* must be negative to seek into the existing file; positive values will seek past the end of the file.
 
 ### Return Value
 

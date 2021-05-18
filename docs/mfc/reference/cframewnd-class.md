@@ -951,7 +951,7 @@ void SetActiveView(
 Specifies a pointer to a [`CView`](../../mfc/reference/cview-class.md) object, or `NULL` for no active view.
 
 *`bNotify`*<br/>
-Specifies whether the view is to be notified of activation. If TRUE, `OnActivateView` is called for the new view; if `FALSE`, it is not.
+Specifies whether the view is to be notified of activation. If `TRUE`, `OnActivateView` is called for the new view; if `FALSE`, it is not.
 
 ### Remarks
 

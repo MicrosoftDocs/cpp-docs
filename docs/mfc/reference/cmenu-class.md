@@ -237,7 +237,7 @@ Specifies how to check the menu item and how to determine the item's position in
 
 ### Return Value
 
-The previous state of the item: `MF_CHECKED` or `MF_UNCHECKED`, or 0xFFFFFFFF if the menu item did not exist.
+The previous state of the item: `MF_CHECKED` or `MF_UNCHECKED`, or `0xFFFFFFFF` if the menu item did not exist.
 
 ### Remarks
 

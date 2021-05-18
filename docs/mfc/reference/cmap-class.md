@@ -200,7 +200,7 @@ Specifies the returned value of the retrieved element.
 
 This function is most useful for iterating through all the elements in the map. Note that the position sequence is not necessarily the same as the key value sequence.
 
-If the retrieved element is the last in the map, then the new value of *`rNextPosition`* is set to NULL.
+If the retrieved element is the last in the map, then the new value of *`rNextPosition`* is set to `NULL`.
 
 ### Example
 
@@ -244,7 +244,7 @@ The iteration sequence is not predictable; therefore, the "first element in the 
 
 ### Example
 
-See the example for [CMap::SetAt](#setat).
+See the example for [`CMap::SetAt`](#setat).
 
 ## <a name="inithashtable"></a> `CMap::InitHashTable`
 

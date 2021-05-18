@@ -451,7 +451,7 @@ operator HBITMAP() const;
 
 ### Return Value
 
-If successful, a handle to the Windows GDI object represented by the `CBitmap` object; otherwise NULL.
+If successful, a handle to the Windows GDI object represented by the `CBitmap` object; otherwise `NULL`.
 
 ### Remarks
 

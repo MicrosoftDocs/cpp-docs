@@ -565,7 +565,7 @@ In the second version, a pointer to a `CHARFORMAT2` structure, which is a Rich E
 
 ### Return Value
 
-The `dwMask` data member of *cf*. It specified the default character formatting attributes.
+The `dwMask` data member of *`cf`*. It specified the default character formatting attributes.
 
 ### Remarks
 
@@ -881,7 +881,7 @@ The two forms of this function provide alternate ways to get the bounds for the 
 
 The selection includes everything if the beginning (`cpMin` or *`nStartChar`*) is 0 and the end (`cpMax` or *`nEndChar`*) is - 1.
 
-For more information, see [`EM_EXGETSEL`](/windows/win32/Controls/em-exgetsel) message and [CHARRANGE](/windows/win32/api/richedit/ns-richedit-charrange) structure in the Windows SDK.
+For more information, see [`EM_EXGETSEL`](/windows/win32/Controls/em-exgetsel) message and [`CHARRANGE`](/windows/win32/api/richedit/ns-richedit-charrange) structure in the Windows SDK.
 
 ### Example
 

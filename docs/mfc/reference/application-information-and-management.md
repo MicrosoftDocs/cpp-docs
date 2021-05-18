@@ -43,7 +43,7 @@ The Microsoft Foundation Class Library provides the following global functions t
 |[`AfxShellManager`](#afxshellmanager)|Pointer to the global [shell manager](cshellmanager-class.md). |
 |[`AfxSocketInit`](#afxsocketinit)|Called in a `CWinApp::InitInstance` override to initialize Windows Sockets.|
 |[`AfxUserToolsManager`](#afxusertoolsmanager)|Pointer to the global [user tools manager](cusertoolsmanager-class.md).|
-|[`AfxWinInit`](#afxwininit)|Called by the MFC-supplied `WinMain` function, as part of the [CWinApp](../../mfc/reference/cwinapp-class.md) initialization of a GUI-based application, to initialize MFC. Must be called directly for console applications that use MFC.|
+|[`AfxWinInit`](#afxwininit)|Called by the MFC-supplied `WinMain` function, as part of the [`CWinApp`](../../mfc/reference/cwinapp-class.md) initialization of a GUI-based application, to initialize MFC. Must be called directly for console applications that use MFC.|
 
 ## <a name="afxbeginthread"></a> `AfxBeginThread`
 
@@ -778,7 +778,7 @@ CShellManager* afxShellManager;
 
 ### Requirements
 
-**Header:** afxshellmanager.h
+**Header:** `afxshellmanager.h`
 
 ## <a name="afxsocketinit"></a> `AfxSocketInit`
 
