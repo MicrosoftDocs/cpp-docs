@@ -66,7 +66,7 @@ In this example, you'll compile a header file as a header unit. Start by creatin
 
     #include <iostream>
     
-    void PrintPythagoreanTriple(int a, int b)
+    inline void PrintPythagoreanTriple(int a, int b)
     {
         std::cout << "Pythagorean triple a:" << a << " b:" << b << " c:" << a*a + b*b << std::endl;
     }
