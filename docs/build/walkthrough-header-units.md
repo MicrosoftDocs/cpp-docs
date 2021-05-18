@@ -1,7 +1,7 @@
 ---
 description: "Learn more about C++ header units by converting a header file to a header unit by using Visual Studio 2019."
 title: "Walkthrough: Build and import header units in Visual C++ projects"
-ms.date: "4/13/2021"
+ms.date: "5/18/2021"
 ms.custom: "conceptual"
 author: "tylermsft"
 ms.author: "twhitney"
