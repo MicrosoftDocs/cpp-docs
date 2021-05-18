@@ -24,9 +24,7 @@ This option has the same effect as specifying the file with double quotation mar
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **Advanced** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Advanced** property page.
 
 1. Modify the **Forced Include File** property.
 

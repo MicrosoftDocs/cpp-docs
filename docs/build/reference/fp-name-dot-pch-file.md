@@ -24,7 +24,7 @@ If you don't specify an extension as part of the *pathname*, an extension of *pc
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Open the **Configuration Properties** > **C/C++** > **Precompiled Headers** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Precompiled Headers** property page.
 
 1. Modify the **Precompiled Header Output File** property.
 

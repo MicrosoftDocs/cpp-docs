@@ -28,7 +28,7 @@ In debug builds, the stack is always populated with parameters passed in registe
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Open the **Configuration Properties** > **C/C++** > **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Enter the compiler option in the **Additional Options** box.
 

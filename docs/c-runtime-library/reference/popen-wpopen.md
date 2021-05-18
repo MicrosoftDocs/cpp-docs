@@ -11,7 +11,7 @@ helpviewer_keywords: ["tpopen function", "pipes, creating", "_popen function", "
 ms.assetid: eb718ff2-c87d-4bd4-bd2e-ba317c3d6973
 no-loc: [_popen, _wpopen, _tpopen, _doserrno, errno, _sys_errlist, _sys_nerr, EINVAL]
 ---
-# _popen, _wpopen
+# `_popen`, `_wpopen`
 
 Creates a pipe and executes a command.
 
@@ -33,21 +33,21 @@ FILE *_wpopen(
 
 ### Parameters
 
-*command*\
+*`command`*\
 Command to be executed.
 
-*mode*\
+*`mode`*\
 Mode of the returned stream.
 
 ## Return value
 
-Returns a stream associated with one end of the created pipe. The other end of the pipe is associated with the spawned command's standard input or standard output. The functions return **NULL** on an error. If the error is caused by an invalid parameter, **errno** is set to **EINVAL**. See the Remarks section for valid modes.
+Returns a stream associated with one end of the created pipe. The other end of the pipe is associated with the spawned command's standard input or standard output. The functions return **`NULL`** on an error. If the error is caused by an invalid parameter, **`errno`** is set to **`EINVAL`**. See the Remarks section for valid modes.
 
-For information about these and other error codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **_popen** function creates a pipe. It then asynchronously executes a spawned copy of the command processor, and uses *command* as the command line. The character string *mode* specifies the type of access requested, as follows.
+The **`_popen`** function creates a pipe. It then asynchronously executes a spawned copy of the command processor, and uses *`command`* as the command line. The character string *`mode`* specifies the type of access requested, as follows.
 
 |Access mode|Description|
 |-|-|
@@ -57,24 +57,24 @@ The **_popen** function creates a pipe. It then asynchronously executes a spawne
 |**"t"**|Open in text mode.|
 
 > [!NOTE]
-> If used in a Windows program, the **_popen** function returns an invalid file pointer that causes the program to stop responding indefinitely. **_popen** works properly in a console application. To create a Windows application that redirects input and output, see [Creating a Child Process with Redirected Input and Output](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output) in the Windows SDK.
+> If used in a Windows program, the **`_popen`** function returns an invalid file pointer that causes the program to stop responding indefinitely. **`_popen`** works properly in a console application. To create a Windows application that redirects input and output, see [Creating a Child Process with Redirected Input and Output](/windows/win32/ProcThread/creating-a-child-process-with-redirected-input-and-output) in the Windows SDK.
 
-**_wpopen** is a wide-character version of **_popen**; the *path* argument to **_wpopen** is a wide-character string. **_wpopen** and **_popen** behave identically otherwise.
+**`_wpopen`** is a wide-character version of **`_popen`**; the *path* argument to **`_wpopen`** is a wide-character string. **`_wpopen`** and **`_popen`** behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
 ### Generic-Text Routine Mappings
 
-|Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
+|`Tchar.h` routine|`_UNICODE` and `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tpopen**|**_popen**|**_popen**|**_wpopen**|
+|**`_tpopen`**|**`_popen`**|**`_popen`**|**`_wpopen`**|
 
 ## Requirements
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_popen**|\<stdio.h>|
-|**_wpopen**|\<stdio.h> or \<wchar.h>|
+|**`_popen`**|`<stdio.h>`|
+|**`_wpopen`**|`<stdio.h>` or `<wchar.h>`|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -144,5 +144,5 @@ Process returned 0
 ## See also
 
 [Process and environment control](../../c-runtime-library/process-and-environment-control.md)\
-[_pclose](pclose.md)\
-[_pipe](pipe.md)
+[`_pclose`](pclose.md)\
+[`_pipe`](pipe.md)
