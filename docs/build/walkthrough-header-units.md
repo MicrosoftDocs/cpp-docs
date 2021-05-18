@@ -109,5 +109,5 @@ If you want to convert only a few header files to header units, this approach is
 [Walkthrough: Import STL libraries as header units](walkthrough-import-stl-header-units.md#approach1)\
 [Overview of modules in C++](../cpp/modules-cpp.md) \
 [`/translateInclude`](./reference/translateinclude.md) \
-[`/headerName`](./reference/headername.md) \
+[`/exportHeader`](./reference/module-exportheader.md) \
 [`/headerUnit`](./reference/headerunit.md)

@@ -57,6 +57,7 @@ You normally shouldn't set this in the Visual Studio development environment. It
 
 ## See also
 
+[`/headerName (Build a header unit from the specified header)`](./reference/headername.md) \
 [`/headerUnit` (Use header unit IFC)](headerunit.md)\
 [`/reference` (Use named module IFC)](module-reference.md)\
 [`/translateInclude` (Translate include directives into import directives)](translateinclude.md)
