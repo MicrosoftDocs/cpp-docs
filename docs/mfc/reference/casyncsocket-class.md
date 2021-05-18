@@ -1127,7 +1127,7 @@ A buffer for the incoming data.
 The length of *`lpBuf`* in bytes.
 
 *`nFlags`*<br/>
-Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (||):
+Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (`||`):
 
 - `MSG_PEEK` Peek at the incoming data. The data is copied into the buffer but is not removed from the input queue.
 
@@ -1218,7 +1218,7 @@ A pointer to a [`SOCKADDR`](/windows/win32/winsock/sockaddr-2) structure that ho
 A pointer to the length of the source address in *`lpSockAddr`* in bytes.
 
 *`nFlags`*<br/>
-Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (||):
+Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (`||`):
 
 - `MSG_PEEK` Peek at the incoming data. The data is copied into the buffer but is not removed from the input queue.
 
@@ -1262,7 +1262,7 @@ To handle IPv6 addresses, use [`CAsyncSocket::ReceiveFromEx`](#receivefromex).
 
 For sockets of type `SOCK_STREAM`, as much information as is currently available up to the size of the buffer supplied is returned. If the socket has been configured for in-line reception of out-of-band data (socket option `SO_OOBINLINE`) and out-of-band data is unread, only out-of-band data will be returned. The application can use the `IOCtlSIOCATMARK` option or `OnOutOfBandData` to determine whether any more out-of-band data remains to be read. The *`lpSockAddr`* and *`lpSockAddrLen`* parameters are ignored for `SOCK_STREAM` sockets.
 
-For datagram sockets, data is extracted from the first enqueued datagram, up to the size of the buffer supplied. If the datagram is larger than the buffer supplied, the buffer is filled with the first part of the message, the excess data is lost, and `ReceiveFrom` returns a value of SOCKET_ERROR with the error code set to `WSAEMSGSIZE`.
+For datagram sockets, data is extracted from the first enqueued datagram, up to the size of the buffer supplied. If the datagram is larger than the buffer supplied, the buffer is filled with the first part of the message, the excess data is lost, and `ReceiveFrom` returns a value of `SOCKET_ERROR` with the error code set to `WSAEMSGSIZE`.
 
 If *`lpSockAddr`* is nonzero, and the socket is of type `SOCK_DGRAM`, the network address of the socket which sent the data is copied to the corresponding [`SOCKADDR`](/windows/win32/winsock/sockaddr-2) structure. The value pointed to by *`lpSockAddrLen`* is initialized to the size of this structure, and is modified on return to indicate the actual size of the address stored there. If no incoming data is available at the socket, the `ReceiveFrom` call waits for data to arrive unless the socket is nonblocking. In this case, a value of `SOCKET_ERROR` is returned with the error code set to `WSAEWOULDBLOCK`. The `OnReceive` callback can be used to determine when more data arrives.
 
@@ -1296,7 +1296,7 @@ Reference to a `CString` object that receives a dotted number IP address.
 Reference to a `UINT` that stores a port.
 
 *`nFlags`*<br/>
-Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ **`OR`** operator:
+Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (`||`):
 
 - `MSG_PEEK` Peek at the incoming data. The data is copied into the buffer but is not removed from the input queue.
 
@@ -1366,7 +1366,7 @@ A buffer containing the data to be transmitted.
 The length of the data in *`lpBuf`* in bytes.
 
 *`nFlags`*<br/>
-Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (||):
+Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (`||`):
 
 - `MSG_DONTROUTE` Specifies that the data should not be subject to routing. A Windows Sockets supplier can choose to ignore this flag.
 
@@ -1455,7 +1455,7 @@ The port identifying the socket application.
 The network address of the socket to which this object is connected: a machine name such as "ftp.microsoft.com," or a dotted number such as "128.56.22.8".
 
 *`nFlags`*<br/>
-Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (||):
+Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (`||`):
 
 - `MSG_DONTROUTE` Specifies that the data should not be subject to routing. A Windows Sockets supplier can choose to ignore this flag.
 
@@ -1551,7 +1551,7 @@ The port identifying the socket application.
 The network address of the socket to which this object is connected: a machine name such as "ftp.microsoft.com," or a dotted number such as "128.56.22.8".
 
 *`nFlags`*<br/>
-Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (||):
+Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (`||`):
 
 - `MSG_DONTROUTE` Specifies that the data should not be subject to routing. A Windows Sockets supplier can choose to ignore this flag.
 
