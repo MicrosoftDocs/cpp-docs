@@ -92,7 +92,7 @@ A string that will replace the format characters `"%1"` in the template string.
 
 ### Remarks
 
-The newly formed string is stored in *`rString`*. For example, if the string in the string table is `"File %1 not found"`, and *`lpsz1`* is equal to `C:\MYFILE.TXT`, then *`rString`* will contain the string `"File C:\MYFILE.TXT not found"`. This function is useful for formatting strings sent to message boxes and other windows.
+The newly formed string is stored in *`rString`*. For example, if the string in the string table is `"File %1 not found"`, and *`lpsz1`* is equal to `"C:\MYFILE.TXT"`, then *`rString`* will contain the string `"File C:\MYFILE.TXT not found"`. This function is useful for formatting strings sent to message boxes and other windows.
 
 If the format characters `"%1"` appear in the string more than once, multiple substitutions will be made.
 
@@ -132,7 +132,7 @@ A string that will replace the format characters `"%2"` in the template string.
 
 ### Remarks
 
-The newly formed string is stored in *`rString`*. For example, if the string in the string table is `"File %1 not found in directory %2"`, *`lpsz1`* points to `MYFILE.TXT`, and *`lpsz2`* points to `C:\MYDIR`, then *`rString`* will contain the string `"File MYFILE.TXT not found in directory C:\MYDIR"`.
+The newly formed string is stored in *`rString`*. For example, if the string in the string table is `"File %1 not found in directory %2"`, *`lpsz1`* points to `"MYFILE.TXT"`, and *`lpsz2`* points to `"C:\MYDIR"`, then *`rString`* will contain the string `"File MYFILE.TXT not found in directory C:\MYDIR"`.
 
 If the format characters `"%1"` or `"%2"` appear in the string more than once, multiple substitutions will be made. They do not have to be in numerical order.
 
