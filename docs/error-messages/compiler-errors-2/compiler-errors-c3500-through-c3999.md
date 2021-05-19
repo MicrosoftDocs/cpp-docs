@@ -294,7 +294,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C3776|cannot return an expresssion of type void in a coroutine with non-void eventual return type|
 |Compiler error C3777|'*function*': a coroutine cannot take a variable argument list|
 |Compiler error C3778|alloca: cannot be used in a coroutine|
-|Compiler error C3779|'*function*': a function that returns '*type*' cannot be used before it is defined|
+|[Compiler error C3779](https://devblogs.microsoft.com/oldnewthing/20190530-00/?p=102529)|'*function*': a function that returns '*type*' cannot be used before it is defined|
 |Compiler error C3780|'*function*': a conversion function that returns '*type*' cannot be used before it is defined|
 |Compiler error C3781|'*keyword*': cannot be a used in a coroutine of type '*type*'. Either *keyword* or *keyword* must be present in associated promise_type|
 |Compiler error C3782|*type*: a coroutine's promise cannot contain both *keyword* and *keyword*|
