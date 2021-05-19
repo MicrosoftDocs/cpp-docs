@@ -1,7 +1,7 @@
 ---
 title: "/exportHeader (Create header units)"
 description: "Use the /exportHeader compiler option to create module header units for the header-name or include files specified."
-ms.date: 04/13/2020
+ms.date: 05/18/2020
 author: "tylermsft"
 ms.author: "twhitney"
 f1_keywords: ["/exportHeader"]
@@ -13,8 +13,8 @@ Tells the compiler to create the header units specified by the input arguments. 
 
 ## Syntax
 
-> **`/exportHeader /headerName:angle`** *`header-name`*
-> **`/exportHeader /headerName:quote`** *`header-name`*
+> **`/exportHeader /headerName:angle`** *`header-name`*\
+> **`/exportHeader /headerName:quote`** *`header-name`*\
 > **`/exportHeader`** *`full path to header file`*
 
 ### Arguments
@@ -57,6 +57,7 @@ You normally shouldn't set this in the Visual Studio development environment. It
 
 ## See also
 
+[`/headerName (Build a header unit from the specified header)`](headername.md) \
 [`/headerUnit` (Use header unit IFC)](headerunit.md)\
 [`/reference` (Use named module IFC)](module-reference.md)\
 [`/translateInclude` (Translate include directives into import directives)](translateinclude.md)
