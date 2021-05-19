@@ -46,7 +46,7 @@ Sometimes you may require a copy of `CString` data to modify directly. Use the m
 
 You should be able to find a `CString` method to perform any string operation for which you might consider using the standard C run-time library string functions such as `strcmp` (or the Unicode/MBCS-portable `_tcscmp`).
 
-If you must use the C run-time string functions, you can use the techniques described in `_core_using_cstring_as_a_c.2d.style_null.2d.terminated_string`. You can copy the `CString` object to an equivalent C-style string buffer, perform your operations on the buffer, and then assign the resulting C-style string back to a `CString` object.
+If you must use the C run-time string functions, you can use the techniques described in [Using `CString` as a C-style null-terminated string](#_core_using_cstring_as_a_c.2d.style_null.2d.terminated_string). You can copy the `CString` object to an equivalent C-style string buffer, perform your operations on the buffer, and then assign the resulting C-style string back to a `CString` object.
 
 ## <a name="_core_modifying_cstring_contents_directly"></a> Modifying `CString` Contents Directly
 
