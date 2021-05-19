@@ -151,7 +151,7 @@ For additional platform compatibility information, see [Compatibility](../../c-r
 
 ## Example
 
-The following example demonstrates the use of **`strncpy`** and how it can be misused to cause program bugs and security issues. The compiler generates a warning for each call to **`strncpy`** similar to **`crt_strncpy_x86.c`(15) : warning C4996: '`strncpy`': This function or variable may be unsafe. Consider using `strncpy_s` instead. To disable deprecation, use `_CRT_SECURE_NO_WARNINGS`. See online help for details.**
+The following example demonstrates the use of **`strncpy`** and how it can be misused to cause program bugs and security issues. The compiler generates a warning for each call to **`strncpy`** similar to **`crt_strncpy_x86.c(15)` : warning C4996: '`strncpy`': This function or variable may be unsafe. Consider using `strncpy_s` instead. To disable deprecation, use `_CRT_SECURE_NO_WARNINGS`. See online help for details.**
 
 ```C
 // crt_strncpy_x86.c
