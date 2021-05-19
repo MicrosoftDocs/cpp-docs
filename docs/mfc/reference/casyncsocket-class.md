@@ -86,12 +86,12 @@ Class `CAsyncSocket` encapsulates the Windows Socket Functions API, providing an
 
 This class is based on the assumption that you understand network communications. You are responsible for handling blocking, byte-order differences, and conversions between Unicode and multibyte character set (MBCS) strings. If you want a more convenient interface that manages these issues for you, see class [`CSocket`](../../mfc/reference/csocket-class.md).
 
-To use a `CAsyncSocket` object, call its constructor, then call the [Create](#create) function to create the underlying socket handle (type `SOCKET`), except on accepted sockets. For a server socket call the [`Listen`](#listen) member function, and for a client socket call the [`Connect`](#connect) member function. The server socket should call the [`Accept`](#accept) function upon receiving a connection request. Use the remaining `CAsyncSocket` functions to carry out communications between sockets. Upon completion, destroy the `CAsyncSocket` object if it was created on the heap; the destructor automatically calls the [`Close`](#close) function. The `SOCKET` data type is described in the article [Windows Sockets: Background](../../mfc/windows-sockets-background.md).
+To use a `CAsyncSocket` object, call its constructor, then call the [`Create`](#create) function to create the underlying socket handle (type `SOCKET`), except on accepted sockets. For a server socket call the [`Listen`](#listen) member function, and for a client socket call the [`Connect`](#connect) member function. The server socket should call the [`Accept`](#accept) function upon receiving a connection request. Use the remaining `CAsyncSocket` functions to carry out communications between sockets. Upon completion, destroy the `CAsyncSocket` object if it was created on the heap; the destructor automatically calls the [`Close`](#close) function. The `SOCKET` data type is described in the article [Windows Sockets: Background](../../mfc/windows-sockets-background.md).
 
 > [!NOTE]
 > When using MFC sockets in secondary threads in a statically linked MFC application, you must call `AfxSocketInit` in each thread that uses sockets to initialize the socket libraries. By default, `AfxSocketInit` is called only in the primary thread.
 
-For more information, see [Windows Sockets: Using Class CAsyncSocket](../../mfc/windows-sockets-using-class-casyncsocket.md) and related articles., as well as [Windows Sockets 2 API](/windows/win32/WinSock/windows-sockets-start-page-2).
+For more information, see [Windows Sockets: Using Class `CAsyncSocket`](../../mfc/windows-sockets-using-class-casyncsocket.md) and related articles., as well as [Windows Sockets 2 API](/windows/win32/WinSock/windows-sockets-start-page-2).
 
 ## Inheritance Hierarchy
 
@@ -445,7 +445,7 @@ Nonzero if the function is successful; otherwise 0, and a specific error code ca
 
 - `WSAEPROTOTYPE` The specified port is the wrong type for this socket.
 
-- WSAESOCKTNOSUPPORT The specified socket type is not supported in this address family.
+- `WSAESOCKTNOSUPPORT` The specified socket type is not supported in this address family.
 
 ### Remarks
 
@@ -1135,7 +1135,7 @@ Specifies the way in which the call is made. The semantics of this function are 
 
 ### Return Value
 
-If no error occurs, `Receive` returns the number of bytes received. If the connection has been closed, it returns 0. Otherwise, a value of `SOCKET_ERROR` is returned, and a specific error code can be retrieved by calling [GetLastError](#getlasterror). The following errors apply to this member function:
+If no error occurs, `Receive` returns the number of bytes received. If the connection has been closed, it returns 0. Otherwise, a value of `SOCKET_ERROR` is returned, and a specific error code can be retrieved by calling [`GetLastError`](#getlasterror). The following errors apply to this member function:
 
 - `WSANOTINITIALISED` A successful [`AfxSocketInit`](../../mfc/reference/application-information-and-management.md#afxsocketinit) must occur before using this API.
 
@@ -1218,7 +1218,7 @@ A pointer to a [`SOCKADDR`](/windows/win32/winsock/sockaddr-2) structure that ho
 A pointer to the length of the source address in *`lpSockAddr`* in bytes.
 
 *`nFlags`*<br/>
-Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (`||`):
+Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ bitwise **OR** operator (`|`):
 
 - `MSG_PEEK` Peek at the incoming data. The data is copied into the buffer but is not removed from the input queue.
 
@@ -1296,7 +1296,7 @@ Reference to a `CString` object that receives a dotted number IP address.
 Reference to a `UINT` that stores a port.
 
 *`nFlags`*<br/>
-Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (`||`):
+Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ bitwise **OR** operator (`|`):
 
 - `MSG_PEEK` Peek at the incoming data. The data is copied into the buffer but is not removed from the input queue.
 
@@ -1366,7 +1366,7 @@ A buffer containing the data to be transmitted.
 The length of the data in *`lpBuf`* in bytes.
 
 *`nFlags`*<br/>
-Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (`||`):
+Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ bitwise **OR** operator (`|`):
 
 - `MSG_DONTROUTE` Specifies that the data should not be subject to routing. A Windows Sockets supplier can choose to ignore this flag.
 
@@ -1455,7 +1455,7 @@ The port identifying the socket application.
 The network address of the socket to which this object is connected: a machine name such as "ftp.microsoft.com," or a dotted number such as "128.56.22.8".
 
 *`nFlags`*<br/>
-Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (`||`):
+Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ bitwise **OR** operator (`|`):
 
 - `MSG_DONTROUTE` Specifies that the data should not be subject to routing. A Windows Sockets supplier can choose to ignore this flag.
 
@@ -1551,7 +1551,7 @@ The port identifying the socket application.
 The network address of the socket to which this object is connected: a machine name such as "ftp.microsoft.com," or a dotted number such as "128.56.22.8".
 
 *`nFlags`*<br/>
-Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (`||`):
+Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ bitwise **OR** operator (`|`):
 
 - `MSG_DONTROUTE` Specifies that the data should not be subject to routing. A Windows Sockets supplier can choose to ignore this flag.
 
