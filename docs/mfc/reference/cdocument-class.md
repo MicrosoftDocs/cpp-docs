@@ -82,7 +82,7 @@ class CDocument : public CCmdTarget
 |Name|Description|
 |----------|-----------------|
 |[`CDocument::OnFileSendMail`](#onfilesendmail)|Sends a mail message with the document attached.|
-|[`CDocument::OnUpdateFileSendMail](#onupdatefilesendmail)|Enables the Send Mail command if mail support is present.|
+|[`CDocument::OnUpdateFileSendMail`](#onupdatefilesendmail)|Enables the Send Mail command if mail support is present.|
 
 ### Public Data Members
 
