@@ -1,7 +1,7 @@
 ---
 title: "/analyze (Code analysis)"
 description: "The Microsoft C++ compiler /analyze option syntax and usage."
-ms.date: 05/12/2021
+ms.date: 05/21/2021
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnablePREfast", "/analyze", "VC.Project.VCCLCompilerTool.PREfastAdditionalOptions", "VC.Project.VCCLCompilerTool.PREfastAdditionalPlugins"]
 helpviewer_keywords: ["/analyze compiler option [C++]", "-analyze compiler option [C++]", "analyze compiler option [C++]"]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
@@ -53,13 +53,13 @@ Log file content options:
 ::: moniker range="msvc-150"
 
 Ruleset options:
-> **`/analyze:ruleset`** *ruleset_files*
+> **`/analyze:ruleset`** *ruleset_file*
 
 ::: moniker-end
 
 ::: moniker range=">=msvc-160"
 
-Ruleset location options:
+Ruleset options:
 > **`/analyze:projectdirectory`** *`project_directory`*\
 > **`/analyze:rulesetdirectory`** *`ruleset_directories`*\
 > **`/analyze:ruleset`** *`ruleset_files`*
@@ -191,7 +191,7 @@ Adds both suppressed warnings and unsuppressed warnings to the analysis log file
 
 ::: moniker-end
 
-::: moniker range="msvc-150"
+::: moniker range=">=msvc-150"
 
 #### Ruleset options
 
@@ -199,20 +199,25 @@ Adds both suppressed warnings and unsuppressed warnings to the analysis log file
 
 ::: moniker range=">=msvc-160"
 
-#### Ruleset location options
-
 **`/analyze:projectdirectory`** *`project_directory`*\
 Specifies the current project directory. If the ruleset (or an item it includes) is a file name, the compiler first looks for the file under the specified *`project_directory`*. If not found, it next searches the *`ruleset_directories`* specified by **`/analyze:rulesetdirectory`**, if any. If the ruleset (or an item it includes) is a relative path, the compiler first looks for the file under the project directory. If the ruleset isn't found, then it looks in the current working directory. This option is available starting in Visual Studio 2019 version 16.9.
 
 **`/analyze:rulesetdirectory`** *`ruleset_directories`*\
 Specifies a semicolon-separated list of ruleset search paths. If the ruleset (or an item it includes) is a file name, then the compiler first looks for the file under the *`project_directory`* specified by **`/analyze:projectdirectory`**, if any, followed by the specified *`ruleset_directories`*. This option is available starting in Visual Studio 2019 version 16.9.
 
+**`/analyze:ruleset`** *`ruleset_files`*\
+Specifies one or more ruleset files to use for analysis. This option can make analysis more efficient. That's because the analysis engine tries to exclude checkers that have no active rules specified in the ruleset files before running. Otherwise, the engine runs all checkers enabled.
+
+::: moniker-end
+
+::: moniker range="msvc-150"
+
+**`/analyze:ruleset`** *`ruleset_file`*\
+Specifies a ruleset file to use for analysis. This option can make analysis more efficient. That's because the analysis engine tries to exclude checkers that have no active rules specified in the ruleset file before running. Otherwise, the engine runs all checkers enabled.
+
 ::: moniker-end
 
 ::: moniker range=">=msvc-150"
-
-**`/analyze:ruleset`** *`ruleset_files`*\
-Specifies one or more ruleset files to use for analysis. This option can make analysis more efficient. That's because the analysis engine tries to exclude checkers that have no active rules specified in the ruleset files before running. Otherwise, the engine runs all checkers enabled.
 
 The ruleset files that ship with Visual Studio are found in *`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`*.
 
