@@ -1127,7 +1127,7 @@ A buffer for the incoming data.
 The length of *`lpBuf`* in bytes.
 
 *`nFlags`*<br/>
-Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (`||`):
+Specifies the way in which the call is made. The semantics of this function are determined by the socket options and the *`nFlags`* parameter. The latter is constructed by combining any of the following values with the C++ logical **OR** operator (`|`):
 
 - `MSG_PEEK` Peek at the incoming data. The data is copied into the buffer but is not removed from the input queue.
 
