@@ -10,7 +10,7 @@ f1_keywords: ["_setmode"]
 helpviewer_keywords: ["Unicode [C++], console output", "files [C++], modes", "_setmode function", "file translation [C++], setting mode", "files [C++], translation", "setmode function"]
 ms.assetid: 996ff7cb-11d1-43f4-9810-f6097182642a
 ---
-# _setmode
+# `_setmode`
 
 Sets the file translation mode.
 
@@ -25,33 +25,33 @@ int _setmode (
 
 ### Parameters
 
-*fd*<br/>
+*`fd`*<br/>
 File descriptor.
 
-*mode*<br/>
+*`mode`*<br/>
 New translation mode.
 
 ## Return Value
 
 If successful, returns the previous translation mode.
 
-If invalid parameters are passed to this function, the invalid-parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **errno** to either **EBADF**, which indicates an invalid file descriptor, or **EINVAL**, which indicates an invalid *mode* argument.
+If invalid parameters are passed to this function, the invalid-parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns -1 and sets **`errno`** to either **`EBADF`**, which indicates an invalid file descriptor, or **`EINVAL`**, which indicates an invalid *`mode`* argument.
 
-For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+For more information about these and other return codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-The **_setmode** function sets to *mode* the translation mode of the file given by *fd*. Passing **_O_TEXT** as *mode* sets text (that is, translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed character on input. Line feed characters are translated into CR-LF combinations on output. Passing **_O_BINARY** sets binary (untranslated) mode, in which these translations are suppressed.
+The **`_setmode`** function sets to *`mode`* the translation mode of the file given by *`fd`*. Passing **`_O_TEXT`** as *`mode`* sets text (that is, translated) mode. Carriage return-line feed (CR-LF) combinations are translated into a single line feed character on input. Line feed characters are translated into CR-LF combinations on output. Passing **`_O_BINARY`** sets binary (untranslated) mode, in which these translations are suppressed.
 
-You can also pass **_O_U16TEXT**, **_O_U8TEXT**, or **_O_WTEXT** to enable Unicode mode, as demonstrated in the second example later in this document.
+You can also pass **`_O_U16TEXT`**, **`_O_U8TEXT`**, or **`_O_WTEXT`** to enable Unicode mode, as demonstrated in the second example later in this document.
 
 > [!CAUTION]
 > Unicode mode is for wide print functions (for example, `wprintf`) and is not supported for narrow print functions. Use of a narrow print function on a Unicode mode stream triggers an assert.
 
-**_setmode** is typically used to modify the default translation mode of **stdin** and **stdout**, but you can use it on any file. If you apply **_setmode** to the file descriptor for a stream, call **_setmode** before you perform any input or output operations on the stream.
+**`_setmode`** is typically used to modify the default translation mode of **`stdin`** and **`stdout`**, but you can use it on any file. If you apply **`_setmode`** to the file descriptor for a stream, call **`_setmode`** before you perform any input or output operations on the stream.
 
 > [!CAUTION]
-> If you write data to a file stream, explicitly flush the code by using [fflush](fflush.md) before you use **_setmode** to change the mode. If you do not flush the code, you might get unexpected behavior. If you have not written data to the stream, you do not have to flush the code.
+> If you write data to a file stream, explicitly flush the code by using [`fflush`](fflush.md) before you use **`_setmode`** to change the mode. If you do not flush the code, you might get unexpected behavior. If you have not written data to the stream, you do not have to flush the code.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -59,11 +59,11 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|Optional Headers|
 |-------------|---------------------|----------------------|
-|**_setmode**|\<io.h>|\<fcntl.h>|
+|**`_setmode`**|`<io.h>`|`<fcntl.h>`|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
-## Example: Use _setmode to change stdin
+## Example: Use `_setmode` to change stdin
 
 ```C
 // crt_setmode.c
@@ -91,7 +91,7 @@ int main( void )
 'stdin' successfully changed to binary mode
 ```
 
-## Example: Use _setmode to change stdout
+## Example: Use `_setmode` to change stdout
 
 ```C
 // crt_setmodeunicode.c
@@ -114,7 +114,7 @@ int main(void) {
 ## See also
 
 [File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
-[fopen, _wfopen](fopen-wfopen.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_set_fmode](set-fmode.md)<br/>
+[`_creat`, `_wcreat`](creat-wcreat.md)<br/>
+[`fopen`, `_wfopen`](fopen-wfopen.md)<br/>
+[`_open`, `_wopen`](open-wopen.md)<br/>
+[`_set_fmode`](set-fmode.md)<br/>
