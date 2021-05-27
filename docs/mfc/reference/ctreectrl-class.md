@@ -799,7 +799,7 @@ Mask indicating one or more states to be retrieved. For more information on poss
 
 ### Return Value
 
-A `UINT` that holds the C++ logical **OR** operator (`|`) of the values specified by `nStateMask`. For information on possible values, see [`CTreeCtrl::GetItem`](#getitem). To find the value for a specific state, perform a C++ logical **AND** operator (`&`) f the state value and the return value, as shown in the following example.
+A `UINT` that holds the C++ bitwise **OR** operator (`|`) of the values specified by `nStateMask`. For information on possible values, see [`CTreeCtrl::GetItem`](#getitem). To find the value for a specific state, perform a C++ bitwise **AND** operator (`&`) f the state value and the return value, as shown in the following example.
 
 ### Example
 
