@@ -117,7 +117,7 @@ Edit styles apply to [`CEdit` Class](../../mfc/reference/cedit-class.md) objects
 |`ES_READONLY`|Prevents the user from entering or editing text in the edit control.|
 |`ES_RIGHT`|Right-aligns text in a single-line or multiline edit control.|
 |`ES_UPPERCASE`|Converts all characters to uppercase as they are typed into the edit control.|
-|`ES_WANTRETURN`|Specifies that a carriage return be inserted when the user presses the ENTER key while entering text into a multiple-line edit control in a dialog box. Without this style, pressing the ENTER key has the same effect as pressing the dialog boxs default pushbutton. This style has no effect on a single-line edit control.|
+|`ES_WANTRETURN`|Specifies that a carriage return be inserted when the user presses the ENTER key while entering text into a multiple-line edit control in a dialog box. Without this style, pressing the ENTER key has the same effect as pressing the dialog box's default pushbutton. This style has no effect on a single-line edit control.|
 
 ## <a name="frame-window-styles-mfc"></a> Frame-window styles
 
