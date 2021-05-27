@@ -793,7 +793,7 @@ The *`nMaxCount`* parameter should be one larger than the number of characters i
 
 ## <a name="getsafehmenu"></a> `CMenu::GetSafeHmenu`
 
-Returns the `HMENU` wrapped by this `CMenu` object, or a `NULL``CMenu` pointer.
+Returns the `HMENU` wrapped by this `CMenu` object, or a `NULL` `CMenu` pointer.
 
 ```
 HMENU GetSafeHmenu() const;
