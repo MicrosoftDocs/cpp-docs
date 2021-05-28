@@ -58,7 +58,7 @@ The **`_dupenv_s`** function searches the list of environment variables for *`va
 > [!NOTE]
 > It is the calling program's responsibility to free the memory by calling [`free`](free.md).
 
-If the variable is not found, then *`buffer`* is set to **`NULL`**, *numberOfElements* is set to 0, and the return value is 0 because this situation is not considered to be an error condition.
+If the variable is not found, then *`buffer`* is set to **`NULL`**, *`numberOfElements`* is set to 0, and the return value is 0 because this situation is not considered to be an error condition.
 
 If you are not interested in the size of the buffer you can pass **`NULL`** for *`numberOfElements`*.
 
