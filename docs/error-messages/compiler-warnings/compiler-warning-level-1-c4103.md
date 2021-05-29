@@ -20,7 +20,7 @@ The following sample generates C4103:
 // C4103.h
 #pragma pack(push, 4)
 
-// defintions and declarations
+// definitions and declarations
 
 // uncomment the following line to resolve
 // #pragma pack(pop)
