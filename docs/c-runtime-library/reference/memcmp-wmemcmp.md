@@ -44,7 +44,7 @@ Number of characters to compare. (Compares bytes for **`memcmp`**, wide characte
 
 The return value indicates the relationship between the buffers.
 
-|Return value|Relationship of first *`count`* characters of buf1 and buf2|
+|Return value|Relationship of first *`count`* characters of `buf1` and `buf2`|
 |------------------|---------------------------------------------------------------|
 |< 0|*`buffer1`* less than *`buffer2`*|
 |0|*`buffer1`* identical to *`buffer2`*|
