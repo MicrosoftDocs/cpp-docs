@@ -112,7 +112,7 @@ Determines if the string class needs C Run-Time (CRT) Library support and where 
 
 ## Remarks
 
-**`CStringT`** inherits from [CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md). Advanced features, such as character manipulation, ordering, and searching, are implemented by **`CStringT`**.
+**`CStringT`** inherits from [`CSimpleStringT` Class](../../atl-mfc-shared/reference/csimplestringt-class.md). Advanced features, such as character manipulation, ordering, and searching, are implemented by **`CStringT`**.
 
 > [!NOTE]
 > **`CStringT`** objects are capable of throwing exceptions. This occurs when a **`CStringT`** object runs out of memory for any reason.
@@ -159,15 +159,15 @@ The following string types are available in projects where `ATL_CSTRING_NO_CRT` 
 
 - **`CStringT`** objects can grow because of concatenation operations.
 
-- **`CStringT`** objects follow "value semantics." Think of a **`CStringT`** object as an actual string, not as a pointer to a string.
+- **`CStringT`** objects follow "value semantics". Think of a **`CStringT`** object as an actual string, not as a pointer to a string.
 
 - You can freely substitute **`CStringT`** objects for `PCXSTR` function arguments.
 
-- Custom memory management for string buffers. For more information, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
+- Custom memory management for string buffers. For more information, see [Memory Management and `CStringT`](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
 ## CStringT Predefined Types
 
-Because **`CStringT`** uses a template argument to define the character type (either [wchar_t](../../c-runtime-library/standard-types.md) or [char](../../c-runtime-library/standard-types.md)) supported, method parameter types can be complicated at times. To simplify this issue, a set of predefined types is defined and used throughout the **`CStringT`** class. The following table lists the various types:
+Because **`CStringT`** uses a template argument to define the character type (either [`wchar_t`](../../c-runtime-library/standard-types.md) or [`char`](../../c-runtime-library/standard-types.md)) supported, method parameter types can be complicated at times. To simplify this issue, a set of predefined types is defined and used throughout the **`CStringT`** class. The following table lists the various types:
 
 |Name|Description|
 |----------|-----------------|
@@ -183,7 +183,7 @@ Because **`CStringT`** uses a template argument to define the character type (ei
 
 ## Inheritance Hierarchy
 
-[CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md)
+[`CSimpleStringT`](../../atl-mfc-shared/reference/csimplestringt-class.md)
 
 **`CStringT`**
 
@@ -191,8 +191,8 @@ Because **`CStringT`** uses a template argument to define the character type (ei
 
 |Header|Use for|
 |------------|-------------|
-|cstringt.h|MFC-only string objects|
-|atlstr.h|Non-MFC string objects|
+|`cstringt.h`|MFC-only string objects|
+|`atlstr.h`|Non-MFC string objects|
 
 ## <a name="allocsysstring"></a> `CStringT::AllocSysString`
 
@@ -208,11 +208,11 @@ The newly allocated string.
 
 ### Remarks
 
-In MFC programs, a [CMemoryException Class](../../mfc/reference/cmemoryexception-class.md) is thrown if insufficient memory exists. In ATL programs, a [CAtlException](../../atl/reference/catlexception-class.md) is thrown. This function is normally used to return strings for Automation.
+In MFC programs, a [`CMemoryException` Class](../../mfc/reference/cmemoryexception-class.md) is thrown if insufficient memory exists. In ATL programs, a [`CAtlException`](../../atl/reference/catlexception-class.md) is thrown. This function is normally used to return strings for Automation.
 
-Commonly, if this string is passed to a COM function as an `[in]` parameter, then this requires the caller to free the string. This can be done by using [SysFreeString](/windows/win32/api/oleauto/nf-oleauto-sysfreestring), as described in the Windows SDK. For more information, see [Allocating and Releasing Memory for a BSTR](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).
+Commonly, if this string is passed to a COM function as an `[in]` parameter, then this requires the caller to free the string. This can be done by using [`SysFreeString`](/windows/win32/api/oleauto/nf-oleauto-sysfreestring), as described in the Windows SDK. For more information, see [Allocating and Releasing Memory for a `BSTR`](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).
 
-For more information about OLE allocation functions in Windows, see [SysAllocString](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) in the Windows SDK.
+For more information about OLE allocation functions in Windows, see [`SysAllocString`](/windows/win32/api/oleauto/nf-oleauto-sysallocstring) in the Windows SDK.
 
 ### Example
 
@@ -283,7 +283,7 @@ Zero if the strings are identical, < 0 if this **`CStringT`** object is less tha
 
 ### Remarks
 
-The generic-text function `_tcscoll`, which is defined in TCHAR.H, maps to either `strcoll`, `wcscoll`, or `_mbscoll`, depending on the character set that is defined at compile time. Each function does a case-sensitive comparison of the strings according to the code page currently in use. For more information, see [strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l](../../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md).
+The generic-text function `_tcscoll`, which is defined in `TCHAR.H`, maps to either `strcoll`, `wcscoll`, or `_mbscoll`, depending on the character set that is defined at compile time. Each function does a case-sensitive comparison of the strings according to the code page currently in use. For more information, see [`strcoll`, `wcscoll`, `_mbscoll`, `_strcoll_l`, `_wcscoll_l`, _mbscoll_l](../../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md).
 
 ## <a name="collatenocase"></a> `CStringT::CollateNoCase`
 
@@ -304,7 +304,7 @@ Zero if the strings are identical (ignoring case), < 0 if this **`CStringT`** ob
 
 ### Remarks
 
-The generic-text function `_tcscoll`, which is defined in TCHAR.H, maps to either `stricoll`, `wcsicoll`, or `_mbsicoll`, depending on the character set that is defined at compile time. Each function does a case-insensitive comparison of the strings, according to the code page currently in use. For more information, see [strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l](../../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md).
+The generic-text function `_tcscoll`, which is defined in `TCHAR.H`, maps to either `stricoll`, `wcsicoll`, or `_mbsicoll`, depending on the character set that is defined at compile time. Each function does a case-insensitive comparison of the strings, according to the code page currently in use. For more information, see [`strcoll`, `wcscoll`, `_mbscoll`, `_strcoll_l`, `_wcscoll_l`, `_mbscoll_l`](../../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md).
 
 ### Example
 
@@ -329,7 +329,7 @@ Zero if the strings are identical, < 0 if this **`CStringT`** object is less tha
 
 ### Remarks
 
-The generic-text function `_tcscmp`, which is defined in TCHAR.H, maps to either `strcmp`, `wcscmp`, or `_mbscmp`, depending on the character set that is defined at compile time. Each function does a case-sensitive comparison of the strings and isn't affected by locale. For more information, see [strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md).
+The generic-text function `_tcscmp`, which is defined in `TCHAR.H`, maps to either `strcmp`, `wcscmp`, or `_mbscmp`, depending on the character set that is defined at compile time. Each function does a case-sensitive comparison of the strings and isn't affected by locale. For more information, see [`strcmp`, `wcscmp`, `_mbscmp`](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md).
 
 If the string contains embedded nulls, for purposes of comparison the string is considered to be truncated at the first embedded null character.
 
@@ -358,7 +358,7 @@ Zero if the strings are identical (ignoring case), <0 if this **`CStringT`** obj
 
 ### Remarks
 
-The generic-text function `_tcsicmp`, which is defined in TCHAR.H, maps to either `_stricmp`, `_wcsicmp` or `_mbsicmp`, depending on the character set that is defined at compile time. Each function does a case-insensitive comparison of the strings. The comparison depends on the LC_CTYPE aspect of the locale but not LC_COLLATE. For more information, see [_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](../../c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md).
+The generic-text function `_tcsicmp`, which is defined in `TCHAR.H`, maps to either `_stricmp`, `_wcsicmp` or `_mbsicmp`, depending on the character set that is defined at compile time. Each function does a case-insensitive comparison of the strings. The comparison depends on the `LC_CTYPE` aspect of the locale but not `LC_COLLATE`. For more information, see [`_stricmp`, `_wcsicmp`, `_mbsicmp`, `_stricmp_l`, `_wcsicmp_l`, `_mbsicmp_l`](../../c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md).
 
 ### Example
 
@@ -444,10 +444,10 @@ CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :
 ### Parameters
 
 *`pch`*\
-A pointer to an array of characters of length *nLength*, not null-terminated.
+A pointer to an array of characters of length *`nLength`*, not null-terminated.
 
 *`nLength`*\
-A count of the number of characters in *pch*.
+A count of the number of characters in *`pch`*.
 
 *`ch`*\
 A single character.
@@ -495,7 +495,7 @@ Because the constructors copy the input data into new allocated storage, memory 
 > [!NOTE]
 > Define the `_CSTRING_DISABLE_NARROW_WIDE_CONVERSION` macro to turn off implicit string conversion between ANSI and Unicode strings. The macro excludes from compilation constructors that support conversion.
 
-The *`strSrc`* parameter can be either a **`CStringT`** or `CThisSimpleString` object. For **`CStringT`**, use one of its default instantiations (`CString`, `CStringA`, or `CStringW`); for `CThisSimpleString`, use a **`this`** pointer. `CThisSimpleString` declares an instance of the [CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md), which is a smaller string class with less built-in functionality than the **`CStringT`** class.
+The *`strSrc`* parameter can be either a **`CStringT`** or `CThisSimpleString` object. For **`CStringT`**, use one of its default instantiations (`CString`, `CStringA`, or `CStringW`); for `CThisSimpleString`, use a **`this`** pointer. `CThisSimpleString` declares an instance of the [`CSimpleStringT` Class](../../atl-mfc-shared/reference/csimplestringt-class.md), which is a smaller string class with less built-in functionality than the **`CStringT`** class.
 
 The overload operator `CSimpleStringT<>&()` constructs a **`CStringT`** object from a `CSimpleStringT` declaration.
 
@@ -612,7 +612,7 @@ Finds the first occurrence of any of the characters in *`pszCharSet`*.
 
 ## <a name="format"></a> `CStringT::Format`
 
-Writes formatted data to a **`CStringT`** in the same way that [sprintf_s](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md) formats data into a C-style character array.
+Writes formatted data to a **`CStringT`** in the same way that [`sprintf_s`](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md) formats data into a C-style character array.
 
 ```cpp
 void __cdecl Format(UINT nFormatID, [, argument]...);
@@ -638,7 +638,7 @@ The call will fail if the string object itself is offered as a parameter to `For
 
 [!code-cpp[NVC_ATLMFC_Utilities#116](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_11.cpp)]
 
-For more information, see [Format Specification Syntax: printf and wprintf Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+For more information, see [Format Specification Syntax: `printf` and `wprintf` Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ### Example
 
@@ -659,7 +659,7 @@ void __cdecl FormatMessage(PCXSTR pszFormat, [, argument]...);
 The string resource identifier that contains the unformatted message text.
 
 *`pszFormat`*\
-Points to the format-control string. It will be scanned for inserts and formatted accordingly. The format string is similar to run-time function *printf*-style format strings, except it allows for the parameters to be inserted in an arbitrary order.
+Points to the format-control string. It will be scanned for inserts and formatted accordingly. The format string is similar to run-time function *`printf`*-style format strings, except it allows for the parameters to be inserted in an arbitrary order.
 
 *`argument`*\
 Optional arguments.
@@ -671,7 +671,7 @@ The function requires a message definition as input. The message definition is d
 > [!NOTE]
 > `FormatMessage` attempts to allocate system memory for the newly formatted string. If this attempt fails, a memory exception is automatically thrown.
 
-Each insert must have a corresponding parameter following the *`pszFormat`* or *`nFormatID`* parameter. Within the message text, several escape sequences are supported for dynamically formatting the message. For more information, see the Windows [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) function in the Windows SDK.
+Each insert must have a corresponding parameter following the *`pszFormat`* or *`nFormatID`* parameter. Within the message text, several escape sequences are supported for dynamically formatting the message. For more information, see the Windows [`FormatMessage`](/windows/win32/api/winbase/nf-winbase-formatmessage) function in the Windows SDK.
 
 ### Example
 
@@ -698,9 +698,9 @@ Pointer to a list of arguments.
 The function requires a message definition as input, determined by *`pszFormat`*. The function copies the formatted message text and a variable list of arguments to the **`CStringT`** object, processing any embedded insert sequences if requested.
 
 > [!NOTE]
-> `FormatMessageV` calls [CStringT::FormatMessage](#formatmessage), which attempts to allocate system memory for the newly formatted string. If this attempt fails, a memory exception is automatically thrown.
+> `FormatMessageV` calls [`CStringT::FormatMessage`](#formatmessage), which attempts to allocate system memory for the newly formatted string. If this attempt fails, a memory exception is automatically thrown.
 
-For more information, see the Windows [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) function in the Windows SDK.
+For more information, see the Windows [`FormatMessage`](/windows/win32/api/winbase/nf-winbase-formatmessage) function in the Windows SDK.
 
 ## <a name="formatv"></a> `CStringT::FormatV`
 
@@ -779,7 +779,7 @@ The length of the changed string.
 
 ### Remarks
 
-The *`iIndex`* parameter identifies the first character that will be moved to make room for the character or substring. If *nIndex* is zero, the insertion will occur before the entire string. If *nIndex* is higher than the length of the string, the function will concatenate the present string and the new material provided by either *`ch`* or *`psz`*.
+The *`iIndex`* parameter identifies the first character that will be moved to make room for the character or substring. If *`nIndex`* is zero, the insertion will occur before the entire string. If *nIndex* is higher than the length of the string, the function will concatenate the present string and the new material provided by either *`ch`* or *`psz`*.
 
 ### Example
 
@@ -839,7 +839,7 @@ Nonzero if resource load was successful; otherwise 0.
 
 ### Remarks
 
-Loads the string resource (*nID*) from the specified module (*hInstance*) using the specified language (*wLanguage*).
+Loads the string resource (*`nID`*) from the specified module (*`hInstance`*) using the specified language (*`wLanguage`*).
 
 ### Example
 
@@ -940,7 +940,7 @@ This function isn't available if `_UNICODE` is defined.
 
 ### Example
 
-See the example for [CStringT::AnsiToOem](#ansitooem).
+See the example for [`CStringT::AnsiToOem`](#ansitooem).
 
 ## <a name="operator_eq"></a> `CStringT::operator =`
 
@@ -986,7 +986,7 @@ A pointer to the original string being assigned.
 
 The assignment operator accepts another **`CStringT`** object, a character pointer, or a single character. Memory exceptions can occur whenever you use this operator because new storage can be allocated.
 
-For information on `CThisSimpleString`, see the Remarks section of [CStringT::CStringT](#cstringt).
+For information on `CThisSimpleString`, see the Remarks section of [`CStringT::CStringT`](#cstringt).
 
 > [!NOTE]
 > Although it is possible to create **`CStringT`** instances that contain embedded null characters, we recommend against it. Calling methods and operators on **`CStringT`** objects that contain embedded null characters can produce unintended results.
@@ -1083,7 +1083,7 @@ A **`CStringT`** to concatenate to this string.
 
 The operator accepts another **`CStringT`** object, a character pointer, or a single character. Memory exceptions can occur whenever you use this concatenation operator because new storage can be allocated for characters added to this **`CStringT`** object.
 
-For information on `CThisSimpleString`, see the Remarks section of [CStringT::CStringT](#cstringt).
+For information on `CThisSimpleString`, see the Remarks section of [`CStringT::CStringT`](#cstringt).
 
 > [!NOTE]
 > Although it is possible to create **`CStringT`** instances that contain embedded null characters, we recommend against it. Calling methods and operators on **`CStringT`** objects that contain embedded null characters can produce unintended results.
@@ -1447,7 +1447,7 @@ A **`CStringT`** object that contains a copy of the specified range of character
 
 If *`nCount`* exceeds the string length, then the entire string is extracted. `Right` is similar to the Basic `Right` function (except that indexes in Basic are zero-based).
 
-For multibyte character sets (MBCS), *`nCount`* refers to each 8-bit character; that is, a lead and trail byte in one multibyte character are counted as two characters.
+For multibyte character sets (`MBCS`), *`nCount`* refers to each 8-bit character; that is, a lead and trail byte in one multibyte character are counted as two characters.
 
 ### Example
 
@@ -1455,7 +1455,7 @@ For multibyte character sets (MBCS), *`nCount`* refers to each 8-bit character; 
 
 ## <a name="setsysstring"></a> `CStringT::SetSysString`
 
-Reallocates the **`BSTR`** pointed to by *`pbstr`* and copies the contents of the **`CStringT`** object into it, including the NULL character.
+Reallocates the **`BSTR`** pointed to by *`pbstr`* and copies the contents of the **`CStringT`** object into it, including the `NULL` character.
 
 ```cpp
 BSTR SetSysString(BSTR* pbstr) const;
@@ -1552,9 +1552,9 @@ A **`CStringT`** object containing the current token value.
 
 ### Remarks
 
-The `Tokenize` function finds the next token in the target string. The set of characters in *pszTokens* specifies possible delimiters of the token to be found. On each call to `Tokenize` the function starts at *`iStart`*, skips leading delimiters, and returns a **`CStringT`** object containing the current token, which is the string of characters up to the next delimiter character. The value of *`iStart`* is updated to be the position following the ending delimiter character, or -1 if the end of the string was reached. More tokens can be broken out of the rest  of the target string by a series of calls to `Tokenize`, using *`iStart`* to keep track of where in the string the next token is to be read. When there are no more tokens, the function will return an empty string and *`iStart`* will be set to -1.
+The `Tokenize` function finds the next token in the target string. The set of characters in *`pszTokens`* specifies possible delimiters of the token to be found. On each call to `Tokenize` the function starts at *`iStart`*, skips leading delimiters, and returns a **`CStringT`** object containing the current token, which is the string of characters up to the next delimiter character. The value of *`iStart`* is updated to be the position following the ending delimiter character, or -1 if the end of the string was reached. More tokens can be broken out of the rest  of the target string by a series of calls to `Tokenize`, using *`iStart`* to keep track of where in the string the next token is to be read. When there are no more tokens, the function will return an empty string and *`iStart`* will be set to -1.
 
-Unlike the CRT tokenize functions like [`strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l`](../../c-runtime-library/reference/strtok-s-strtok-s-l-wcstok-s-wcstok-s-l-mbstok-s-mbstok-s-l.md), `Tokenize` doesn't modify the target string.
+Unlike the CRT tokenize functions like [`strtok_s`, `_strtok_s_l`, `wcstok_s`, `_wcstok_s_l`, `_mbstok_s`, `_mbstok_s_l`](../../c-runtime-library/reference/strtok-s-strtok-s-l-wcstok-s-wcstok-s-l-mbstok-s-mbstok-s-l.md), `Tokenize` doesn't modify the target string.
 
 ### Example
 
@@ -1693,4 +1693,4 @@ The `CStringT& TrimRight()` version requires no parameters. It trims any trailin
 
 [Hierarchy Chart](../../mfc/hierarchy-chart.md)\
 [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)\
-[CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md)
+[`CSimpleStringT` Class](../../atl-mfc-shared/reference/csimplestringt-class.md)
