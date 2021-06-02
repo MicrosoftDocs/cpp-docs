@@ -17,7 +17,7 @@ Defines the class template valarray and numerous supporting class templates and 
 **Namespace:** std
 
 > [!NOTE]
-> The \<valarray> library uses the `#include <initializer_list>' statement.
+> The \<valarray> library uses the `#include <initializer_list>` statement.
 
 ## Remarks
 

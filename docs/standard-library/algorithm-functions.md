@@ -9445,7 +9445,7 @@ int main()
     v1_NewEnd3 = unique ( v1.begin( ), v1_NewEnd2, greater<int>( ) );
 
     cout << "Removing adjacent elements satisfying the binary\n "
-            << " predicate mod_equal from vector v1 gives ( " ;
+            << " predicate greater<int> from vector v1 gives ( " ;
     for ( v1_Iter3 = v1.begin( ) ; v1_Iter3 != v1_NewEnd3 ; v1_Iter3++ )
         cout << *v1_Iter3 << " ";
     cout << ")." << endl;
@@ -9460,7 +9460,7 @@ Removing adjacent duplicates from vector v1 under the
   binary predicate mod_equal gives
 ( 5 4 7 ).
 Removing adjacent elements satisfying the binary
-  predicate mod_equal from vector v1 gives ( 5 7 ).
+  predicate greater<int> from vector v1 gives ( 5 7 ).
 ```
 
 ## <a name="unique_copy"></a> `unique_copy`

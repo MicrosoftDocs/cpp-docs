@@ -67,7 +67,7 @@ The literals that take a **`long long`** argument return a value or the correspo
 The following examples show how to use the `chrono` literals.
 
 ```cpp
-constexpr auto day = 14d; // If the value > 255`, then the stored value is unspecified. 
+constexpr auto day = 14d; // If the value > 255, then the stored value is unspecified. 
 constexpr auto twoDays = 48h;
 constexpr auto week = 24h* 7;
 constexpr auto my_duration_unit = 108ms;

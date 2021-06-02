@@ -37,7 +37,7 @@ First, let's open the property pages for a project. Right-click on the project n
 
 ![Shows the Visual Studio C++ Project Properties dialog](../media/cpp-property-page-2017.png)
 
-Each node under **Configuration Properties** is called a *rule*. A rule sometimes represents a single tool like the compiler. In general, the term refers to something that has properties, that executes and that may produce some output. Each rule is populated from an XML file in the default rules folder. For example, the C/C++ rule that's shown here is populated by *`cl.xml'*.
+Each node under **Configuration Properties** is called a *rule*. A rule sometimes represents a single tool like the compiler. In general, the term refers to something that has properties, that executes and that may produce some output. Each rule is populated from an XML file in the default rules folder. For example, the C/C++ rule that's shown here is populated by *`cl.xml`*.
 
 Each rule has a set of properties, which are organized into *categories*. Each sub-node under a rule represents a category. For example, the **Optimization** node under **C/C++** contains all the optimization-related properties of the compiler tool. The properties and their values get rendered in a grid format on the right pane.
 
