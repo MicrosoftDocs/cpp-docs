@@ -1566,7 +1566,7 @@ int main()
 This program previously incorrectly compiled and linked, but will now emit error C7631.
 
 ```Output
-error C7631: '`anonymous-namespace'::x': variable with internal linkage declared but not defined
+error C7631: 'anonymous-namespace::x': variable with internal linkage declared but not defined
 ```
 
 Such variables must be defined in the same translation unit they're used in. For example, you can provide an explicit initializer or a separate definition.

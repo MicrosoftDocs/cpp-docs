@@ -2204,7 +2204,7 @@ Although these differences can affect your source code or other build artifacts,
    When this new behavior parses a **`decltype`** expression that includes a type that hasn't been declared yet, the compiler issues compiler error C2039 as a result.
 
     ```Output
-    error C2039: 'type': is not a member of '`global namespace''
+    error C2039: 'type': is not a member of 'global namespace'
     ```
 
    Example 1:  use of an undeclared type (before)

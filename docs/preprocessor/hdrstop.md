@@ -39,7 +39,7 @@ If none of the **`/Yc`** and **`/Yu`** options or the **`hdrstop`** pragma speci
 You can also use preprocessing commands to perform macro replacement as follows:
 
 ```C
-#define INCLUDE_PATH "c:\\progra~`1\\devstsu~1\\vc\\include\\"
+#define INCLUDE_PATH "c:\\progra~1\\devstsu~1\\vc\\include\\"
 #define PCH_FNAME "PROG.PCH"
 .
 .
