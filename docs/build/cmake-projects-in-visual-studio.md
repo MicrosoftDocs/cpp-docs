@@ -65,12 +65,12 @@ You can add an existing CMake cache to an open project. It's done the same way y
 
 ### Advanced CMake cache troubleshooting
 
-As described in our blog post on [multi-root workspaces and file-based API](https://devblogs.microsoft.com/cppblog/visual-studio-code-cmake-tools-extension-multi-root-workspaces-and-file-based-api/), Visual Studio uses CMake's [file-based API](https://cmake.org/cmake/help/latest/manual/cmake-file-api.7.html) for CMake versions >= 3.14 to populate the editor with information specific to your project structure. It may be necessary for your custom or preferred tools to populate a **query.json** file before generating the CMake cache.  In your build output folder (the one containing **CMakeCache.txt**), create a query file named **.cmake/api/v1/query/client-MicrosoftVS/query.json** with the contents:
+As described in our blog post on [multi-root workspaces and file-based API](https://devblogs.microsoft.com/cppblog/visual-studio-code-cmake-tools-extension-multi-root-workspaces-and-file-based-api/), Visual Studio uses CMake's [file-based API](https://cmake.org/cmake/help/latest/manual/cmake-file-api.7.html) for CMake versions >= 3.14 to populate the editor with information specific to your project structure. Before generating the CMake cache it may be necessary for your custom or preferred tools create a query file named **.cmake/api/v1/query/client-MicrosoftVS/query.json** in your build output folder (the one containing **CMakeCache.txt**) with this content:
 ```
 {"requests":[{"kind":"cache","version":2},{"kind":"cmakeFiles","version":1},{"kind":"codemodel","version":2}]}
 ```
 
-When your custom or preferred tools generate your cache, CMake will place files under .cmake/api/v1/response that Visual Studio will use to populate the editor with information specific to your project structure.
+When your custom or preferred tools generate your cache, CMake will place files under **.cmake/api/v1/response** that Visual Studio will use to populate the editor with information specific to your project structure.
 
 ## Building CMake projects
 
