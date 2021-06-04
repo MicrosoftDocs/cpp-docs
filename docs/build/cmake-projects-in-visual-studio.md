@@ -63,6 +63,18 @@ When you open an existing CMake cache file (*CMakeCache.txt*), Visual Studio doe
 
 You can add an existing CMake cache to an open project. It's done the same way you'd add a new configuration. For more information, see our blog post on [opening an existing cache in Visual Studio](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/).
 
+### Advanced CMake cache troubleshooting
+
+Visual Studio uses CMake's [file-based API](https://cmake.org/cmake/help/latest/manual/cmake-file-api.7.html) (in CMake versions 3.14 and later) to populate the editor with information specific to your project structure. For more information, see the C++ team blog post on [multi-root workspaces and file-based API](https://devblogs.microsoft.com/cppblog/visual-studio-code-cmake-tools-extension-multi-root-workspaces-and-file-based-api/).
+
+Before generating the CMake cache, your custom or preferred tools may need to create a query file named **.cmake/api/v1/query/client-MicrosoftVS/query.json** in your build output folder (the folder that contains **CMakeCache.txt**). The query file should contain this content:
+
+```json
+{"requests":[{"kind":"cache","version":2},{"kind":"cmakeFiles","version":1},{"kind":"codemodel","version":2}]}
+```
+
+When your custom or preferred tools generate your cache, CMake places files under **.cmake/api/v1/response** that Visual Studio uses to populate the editor with information specific to your project structure.
+
 ## Building CMake projects
 
 To build a CMake project, you have these choices:
