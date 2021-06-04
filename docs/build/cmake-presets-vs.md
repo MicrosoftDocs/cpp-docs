@@ -173,7 +173,7 @@ Use a forward slash (`/`) for paths in `CMakePresets.json` and `CMakeUserPresets
 
 ### Add new Configure Presets
 
-To add a new Configure Preset to `CMakePresets.json`, from **Solution Explorer**, right-click `CMakePresets.json` from **Folder View** and select **Add Configure Preset** from the shortcut menu. The dialog to select a Configure Preset template appears:
+To add a new Configure Preset to `CMakePresets.json`, from **Solution Explorer**, right-click `CMakePresets.json` from **Folder View** and select **Add Configuration...** from the shortcut menu. The dialog to select a Configure Preset template appears:
 
 ![Screenshot of the dialog for adding a Configure Preset to the J S O N file.](./media/add-configure-preset-to-cmakepresets.png)
 
