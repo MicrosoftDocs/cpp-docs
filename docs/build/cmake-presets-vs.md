@@ -388,7 +388,7 @@ If you've identified a problem, the best way to report it is by selecting the **
 
 ## Enable logging for remote connections
 
-You can enable logging for remote connections if you're having trouble connecting or copying files to a remote system. For more information, see [Logging for remote connections](/cpp/linux/connect-to-your-remote-linux-computer#logging-for-remote-connections).
+You can enable logging for remote connections if you're having trouble connecting or copying files to a remote system. For more information, see [Logging for remote connections](../linux/connect-to-your-remote-linux-computer.md#logging-for-remote-connections).
 
 ## Enable AddressSanitizer for Windows and Linux
 
@@ -411,7 +411,7 @@ if(ASAN_ENABLED)
 endif()
 ```
 
-The `<additional-options>` part lists other compilation flags, like `"-fno-omit-frame-pointer"`. For more information about AddressSanitizer for Linux, see [Using AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer#using-addresssanitizer). For more information about using AddressSanitizer with the Microsoft Visual C++ (MSVC) compiler, see [Use AddressSanitizer from a developer command prompt](/cpp/sanitizers/asan#command-prompt).
+The `<additional-options>` part lists other compilation flags, like `"-fno-omit-frame-pointer"`. For more information about AddressSanitizer for Linux, see [Using AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer#using-addresssanitizer). For more information about using AddressSanitizer with the Microsoft Visual C++ (MSVC) compiler, see [Use AddressSanitizer from a developer command prompt](../sanitizers/asan.md#command-prompt).
 
 Pass runtime flags to AddressSanitizer by using the `ASAN_OPTIONS` field in `launch.vs.json`. `ASAN_OPTIONS` defaults to `detect_leaks=0` when no other runtime options are specified because LeakSanitizer isn't supported in Visual Studio.
 
@@ -421,7 +421,7 @@ You can use the same `CMakePresets.json` and `CMakeUserPresets.json` files to in
 
 ### Sourcing the environment when building with command-line generators on Windows
 
-It's up to the user to configure the environment before CMake is invoked in building with a command-line generator. If you're building with Ninja and the Visual C++ toolset on Windows, set the environment before CMake is called to generate the build system. You can do it by calling `vcvarsall.bat` with the `architecture` argument. The `architecture` argument specifies the host and target architecture to use. For more information, see [`vcvarsall` syntax](/cpp/build/building-on-the-command-line#vcvarsall-syntax). If you build on Linux or on Windows with a Visual Studio Generator, you don't need to take this step.
+It's up to the user to configure the environment before CMake is invoked in building with a command-line generator. If you're building with Ninja and the Visual C++ toolset on Windows, set the environment before CMake is called to generate the build system. You can do it by calling `vcvarsall.bat` with the `architecture` argument. The `architecture` argument specifies the host and target architecture to use. For more information, see [`vcvarsall` syntax](./building-on-the-command-line.md#vcvarsall-syntax). If you build on Linux or on Windows with a Visual Studio Generator, you don't need to take this step.
 
 It's the same step that Visual Studio takes for you when the IDE invokes CMake. Visual Studio parses the active Configure Preset for the host and target architecture specified by `toolset` and `architecture`. Visual Studio then sources the specified environment from `vcvarsall.bat`. When you build from the Windows command line with Ninja, you'll need to take this step yourself.
 
