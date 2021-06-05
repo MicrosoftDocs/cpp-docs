@@ -408,7 +408,7 @@ A group of papers listed together indicates a Standard feature along with one or
 
 | Feature | Supported |
 |--|--|
-| __C99 Standard library features__ | __Supported__ |  |
+| __C99 Standard library features__ | __Supported__ |
 | &emsp;Alternative spellings macros `<iso646.h>` | VS 2015 |
 | &emsp;Wide character support `<wchar.h>` and `<wctype.h>` | VS 2015 |
 | &emsp;Complex support in `<complex.h>` | Partial in VS 2015 <sup>[K](#note_K)</sup> |
