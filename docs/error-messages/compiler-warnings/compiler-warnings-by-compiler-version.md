@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warnings by compiler version"
 description: "Table of Microsoft C/C++ compiler warnings by compiler version."
-ms.date: 10/18/2020
+ms.date: 06/07/2021
 helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting warning options"]
 ---
 # Compiler Warnings by compiler version
@@ -40,12 +40,31 @@ These versions of the compiler introduced new warnings:
 | Visual Studio 2019 version 16.7 | 19.27.29112.0 |
 | Visual Studio 2019 version 16.8 | 19.28.29330.0 |
 | Visual Studio 2019 version 16.9 | 19.28.29500.0 |
+| Visual Studio 2019 version 16.10 | 19.28.30000.0 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the **`/Wv`** option. The compiler reports all warnings that match versions that begin with the specified number. It suppresses all warnings for versions greater than the specified number. For example, **`/Wv:17`** reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use **`/Wv:19.00.23506`**. Use **`/Wv:19.11`** to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the **`/Wv`** compiler option. The **`/Wv`** option can't suppress warnings that aren't listed, which predate the specified versions of the compiler.
 
 ::: moniker range=">= msvc-160"
+
+## Warnings introduced in Visual Studio 2019 version 16.10 (compiler version 19.29.30000.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.29`**.
+
+| Warning | Message |
+|--|--|
+| C5233 | `explicit lambda capture 'identifier' is not used` |
+| C5234 | `file system error: 'filename' is not a valid header-name; ignoring` |
+| C5235 | `JSON parse error: issue; ignoring 'filename'` |
+| C5236 | `JSON ill-formed: issue; ignoring 'filename'` |
+| C5237 | `cannot resolve header unit entry 'string' to a header file in 'filename'; ignoring entry` |
+| C5238 | `file system error: cannot open 'filename' for reading; ignoring` |
+| C5239 | `'Symbol': potentially-throwing function called from a function declared __declspec(nothrow). Undefined behavior may occur if an exception is thrown.` |
+| C5240 | `'attribute-string': attribute is ignored in this syntactic position` |
+| C5241 | `'/exportHeader' usage to lookup header-name is deprecated; prefer '/headerName:arg-1 arg-2=filename'` |
+| C5242 | `syntax error in pragma 'identifier'` |
+| C5243 | `'Type-name': using incomplete class 'symbol' can cause potential one definition rule violation due to ABI limitation` |
 
 ## Warnings introduced in Visual Studio 2019 version 16.9 (compiler version 19.28.29700.0)
 
