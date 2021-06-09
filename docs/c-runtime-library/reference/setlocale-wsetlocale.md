@@ -1,14 +1,13 @@
 ---
 title: "setlocale, _wsetlocale"
 description: "Describes the Microsoft C runtime (CRT) library functions setlocale and _wsetlocale."
-ms.date: "4/2/2020"
+ms.date: "6/8/2021"
 api_name: ["_wsetlocale", "setlocale", "_o__wsetlocale", "_o_setlocale"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wsetlocale", "_tsetlocale", "setlocale"]
 helpviewer_keywords: ["wsetlocale function", "setlocale function", "tsetlocale function", "locales, defining", "_tsetlocale function", "defining locales", "_wsetlocale function"]
-ms.assetid: 3ffb684e-5990-4202-9553-b5339af9520d
 no-loc: [setlocale, _wsetlocale]
 ---
 # `setlocale`, `_wsetlocale`
@@ -171,7 +170,21 @@ The function [`_configthreadlocale`](configthreadlocale.md) is used to control w
 
 ## UTF-8 Support
 
-Starting in Windows 10 build 17134 (April 2018 Update), the Universal C Runtime supports using a UTF-8 code page. This means that `char` strings passed to C runtime functions will expect strings in the UTF-8 encoding. To enable UTF-8 mode, use "`UTF-8`" as the code page when using `setlocale`. For example, `setlocale(LC_ALL, ".utf8")` will use the current default Windows ANSI code page (ACP) for the locale and UTF-8 for the code page.
+Starting in Windows 10 build 17134 (April 2018 Update), the Universal C Runtime supports using a UTF-8 code page. This means that `char` strings passed to C runtime functions will expect strings in the UTF-8 encoding. To enable UTF-8 mode, use `".UTF8"` as the code page when using `setlocale`. For example, `setlocale(LC_ALL, ".UTF8")` will use the current default Windows ANSI code page (ACP) for the locale and UTF-8 for the code page.
+
+The UTF-8 string is:
+- case-insensitive
+- the hypen (-) is optional
+- It must be in the code page part of the locale name, so must have a leading period '.'  For example, `"en_US.UTF8"` or `".utf8"`
+
+The following are examples of ways to specify the UTF-8 string:
+
+`".UTF8"`\
+`".UTF-8"`\
+`".utf8"`\
+`".utf-8"`\
+`"en_us.utf8"`\
+`"ja_JP.Utf-8"`
 
 After calling `setlocale(LC_ALL, ".UTF8")`, you may pass "😊" to `mbtowcs` and it will be properly translated to a `wchar_t` string, whereas previously there was not a locale setting available to do this.
 
