@@ -6,11 +6,11 @@ helpviewer_keywords: ["CAsyncSocket class [MFC], programming model", "Windows So
 ---
 # Windows Sockets: Using Class `CAsyncSocket`
 
-This article explains how to use class [`CAsyncSocket`](../mfc/reference/casyncsocket-class.md). Be aware that this class encapsulates the Windows Sockets API at a very low level. `CAsyncSocket` is for use by programmers who know network communications in detail but want the convenience of callbacks for notification of network events. Based on this assumption, this article provides only basic instruction. You should probably consider using `CAsyncSocket` if you want Windows Sockets' ease of dealing with multiple network protocols in an MFC application but do not want to sacrifice flexibility. You might also feel that you can get better efficiency by programming the communications more directly yourself than you could using the more general alternative model of class `CSocket`.
+This article explains how to use class [`CAsyncSocket`](../mfc/reference/casyncsocket-class.md). This class encapsulates the Windows Sockets API at a very low level. `CAsyncSocket` is for use by programmers who know network communications in detail but want the convenience of callbacks for notification of network events. Based on this assumption, this article provides only basic instruction. You should probably consider using `CAsyncSocket` if you want Windows Sockets' ease of dealing with multiple network protocols in an MFC application but don't want to sacrifice flexibility. You might also feel that you can get better efficiency by programming the communications more directly yourself than you could using the more general alternative model of class `CSocket`.
 
-`CAsyncSocket` is documented in the *MFC Reference*. Visual C++ also supplies the Windows Sockets specification, located in the Windows SDK. The details are left to you. Visual C++ does not supply a sample application for `CAsyncSocket`.
+`CAsyncSocket` is documented in the *MFC Reference*. Visual C++ also supplies the Windows Sockets specification, located in the Windows SDK. The details are left to you. Visual C++ doesn't supply a sample application for `CAsyncSocket`.
 
-If you are not highly knowledgeable about network communications and want a simple solution, use class [`CSocket`](../mfc/reference/csocket-class.md) with a `CArchive` object. See [Windows Sockets: Using Sockets with Archives](../mfc/windows-sockets-using-sockets-with-archives.md) for more information.
+If you aren't highly knowledgeable about network communications and want a simple solution, use class [`CSocket`](../mfc/reference/csocket-class.md) with a `CArchive` object. See [Windows Sockets: Using Sockets with Archives](../mfc/windows-sockets-using-sockets-with-archives.md) for more information.
 
 This article covers:
 
@@ -46,7 +46,7 @@ This article covers:
 
    - A socket "address" such as `"ftp.microsoft.com"` or `"128.56.22.8"`.
 
-      This is your Internet Protocol (IP) address on the network. You will probably always rely on the default value for this parameter.
+      This is your Internet Protocol (IP) address on the network. You'll probably always rely on the default value for this parameter.
 
    The terms "port" and "socket address" are explained in [Windows Sockets: Ports and Socket Addresses](../mfc/windows-sockets-ports-and-socket-addresses.md).
 
@@ -56,10 +56,10 @@ This article covers:
 
    If the socket is a server, set the socket to begin listening (with [`CAsyncSocket::Listen`](../mfc/reference/casyncsocket-class.md#listen)) for connect attempts from a client. Upon receiving a connection request, accept it with [`CAsyncSocket::Accept`](../mfc/reference/casyncsocket-class.md#accept).
 
-   After accepting a connection, you can perform such tasks as validating passwords.
+   After accepting a connection, you can do tasks like validating passwords.
 
     > [!NOTE]
-    >  The `Accept` member function takes a reference to a new, empty `CSocket` object as its parameter. You must construct this object before you call `Accept`. If this socket object goes out of scope, the connection closes. Do not call `Create` for this new socket object. For an example, see the article [Windows Sockets: Sequence of Operations](../mfc/windows-sockets-sequence-of-operations.md).
+    >  The `Accept` member function takes a reference to a new, empty `CSocket` object as its parameter. You must construct this object before you call `Accept`. If this socket object goes out of scope, the connection closes. Don't call `Create` for this new socket object. For an example, see the article [Windows Sockets: Sequence of Operations](../mfc/windows-sockets-sequence-of-operations.md).
 
 1. Carry out communications with other sockets by calling the `CAsyncSocket` object's member functions that encapsulate the Windows Sockets API functions.
 
@@ -67,7 +67,7 @@ This article covers:
 
 1. Destroy the `CAsyncSocket` object.
 
-   If you created the socket object on the stack, its destructor is called when the containing function goes out of scope. If you created the socket object on the heap, using the **`new`** operator, you are responsible for using the **`delete`** operator to destroy the object.
+   If you created the socket object on the stack, its destructor is called when the containing function goes out of scope. If you created the socket object on the heap, using the **`new`** operator, you're responsible for using the **`delete`** operator to destroy the object.
 
    The destructor calls the object's [`Close`](../mfc/reference/casyncsocket-class.md#close) member function before destroying the object.
 
@@ -85,7 +85,7 @@ When you create an object of class [`CAsyncSocket`](../mfc/reference/casyncsocke
 
 For definitions of these terms and additional information, see [Windows Sockets: Blocking](../mfc/windows-sockets-blocking.md), [Windows Sockets: Byte Ordering](../mfc/windows-sockets-byte-ordering.md), [Windows Sockets: Converting Strings](../mfc/windows-sockets-converting-strings.md).
 
-Despite these issues, class `CAsyncSocket` may be the right choice for you if your application requires all the flexibility and control you can get. If not, you should consider using class `CSocket` instead. `CSocket` hides a lot of detail from you: it pumps Windows messages during blocking calls and gives you access to `CArchive`, which manages byte order differences and string conversion for you.
+Despite these issues, class `CAsyncSocket` may be the right choice for you if your application requires all the flexibility and control you can get. If not, consider using class `CSocket` instead. `CSocket` hides many details from you: it pumps Windows messages during blocking calls and gives you access to `CArchive`, which manages byte order differences and string conversion for you.
 
 For more information, see:
 

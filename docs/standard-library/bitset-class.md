@@ -23,7 +23,7 @@ Specifies the number of bits in the `bitset` object with a nonzero integer of  t
 
 ## Remarks
 
-Unlike the similar [`vector<bool>` Class](../standard-library/vector-bool-class.md), the `bitset` class does not have iterators and is not a C++ Standard Library container. It also differs from `vector<bool>` by being of some specific size that is fixed at compile time in accordance with the size specified by the template parameter *`N`* when the **`bitset<N>`** is declared.
+Unlike the similar [`vector<bool>` Class](../standard-library/vector-bool-class.md), the `bitset` class doesn't have iterators and isn't a C++ Standard Library container. It also differs from `vector<bool>` by being of some specific size that is fixed at compile time in accordance with the size specified by the template parameter *`N`* when the **`bitset<N>`** is declared.
 
 A bit is set if its value is 1 and reset if its value is 0. To flip or invert a bit is to change its value from 1 to 0 or from 0 to 1. The *`N`* bits in a `bitset` are indexed by integer values from 0 to *`N`* - 1, where 0 indexes the first bit position and *`N`* - 1 the final bit position.
 
@@ -45,7 +45,7 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 
 |Name|Description|
 |-|-|
-|[`all`](#all)|Tests all of the bits in this `bitset` to determine whether they are all set to **`true`**.|
+|[`all`](#all)|Tests all of the bits in this `bitset` to determine whether they're all set to **`true`**.|
 |[`any`](#any)|The member function tests whether any bit in the sequence is set to 1.|
 |[`count`](#count)|The member function returns the number of bits set in the bit sequence.|
 |[`flip`](#flip)|Inverts the value of all the bits in a `bitset` or inverts a single bit at a specified position.|
@@ -69,15 +69,15 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 |Name|Description|
 |-|-|
 |[`operator!=`](#op_neq)|Tests a target `bitset` for inequality with a specified `bitset`.|
-|[`operator&=`](#op_and_eq)|Performs a bitwise combination of bitsets with the bitwise `AND` operation.|
+|[`operator&=`](#op_and_eq)|Does a bitwise combination of bitsets with the bitwise `AND` operation.|
 |[`operator<<`](#op_lshift)|Shifts the bits in a `bitset` to the left a specified number of positions and returns the result to a new `bitset`.|
 |[`operator<<=`](#op_lshift_eq)|Shifts the bits in a `bitset` to the left a specified number of positions and returns the result to the targeted `bitset`.|
 |[`operator==`](#op_eq_eq)|Tests a target `bitset` for equality with a specified `bitset`.|
 |[`operator>>`](#op_rshift)|Shifts the bits in a `bitset` to the right a specified number of positions and returns the result to a new `bitset`.|
 |[`operator>>=`](#op_rshift_eq)|Shifts the bits in a `bitset` to the right a specified number of positions and returns the result to the targeted `bitset`.|
 |[`operator[]`](#op_at)|Returns a reference to a bit at a specified position in a `bitset` if the `bitset` is modifiable; otherwise, it returns the value of the bit at that position.|
-|[operator^=](#op_xor_eq)|Performs a bitwise combination of bitsets with the bitwise **XOR** (`^`) operation.|
-|[`operator|=`](#op_or_eq)|Performs a bitwise combination of bitsets with the bitwise **OR** (`|`) operation.|
+|[operator^=](#op_xor_eq)|Does a bitwise combination of bitsets with the bitwise **XOR** (`^`) operation.|
+|[`operator|=`](#op_or_eq)|Does a bitwise combination of bitsets with the bitwise **OR** (`|`) operation.|
 |[`operator~`](#op_not)|Inverts all the bits in a target `bitset` and returns the result.|
 
 ### Structures
@@ -88,7 +88,7 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 
 ### <a name="all"></a> `all`
 
-Tests all of the bits in this bitset to determine if they are all set to true.
+Tests all of the bits in this bitset to determine if they're all set to true.
 
 ```cpp
 bool all() const;
@@ -219,7 +219,7 @@ The character that is used to represent a one. The default is '1'.
 
 4) Constructs an object of class `bitset<N>` and initializes bits from the characters provided in a string of zeros and ones. If any characters of the string are other than 0 or 1, the constructor throws an object of class [`invalid argument`](../standard-library/invalid-argument-class.md). If the position specified (*`pos`*) is beyond the length of the string, then the constructor throws an object of class [`out_of_range`](../standard-library/out-of-range-class.md). The constructor sets only those bits at position *j* in the `bitset` for which the character in the string at position `pos + j` is 1. By default, *`pos`* is 0.
 
-5) Similar to 4) but includes an additional parameter, *`count`*, that specifies the number of bits to initialize. It has two optional parameters, *`_Zero`* and *`_One`*, which indicate what character in *`str`* should be interpreted to mean a 0 bit and a 1 bit, respectively.
+5) Similar to 4) but includes an another parameter, *`count`*, that specifies the number of bits to initialize. It has two optional parameters, *`_Zero`* and *`_One`*, which indicate what character in *`str`* should be interpreted to mean a 0 bit and a 1 bit, respectively.
 
 6) Constructs an object of class `bitset<N>`, initializing the N bits to values that correspond to the characters provided in a c-style character string of zeros and ones. You call the constructor without casting the string into a string type, for example: `bitset<5> b5("01011");`
 
@@ -560,7 +560,7 @@ The `bitset` that is to be compared to the target bitset for inequality.
 
 #### Return Value
 
-**`true`** if the `bitset`s are different; **`false`** if they are the same.
+**`true`** if the `bitset`s are different; **`false`** if they're the same.
 
 #### Remarks
 
@@ -609,7 +609,7 @@ Bitset b1 is different from bitset b3.
 
 ### <a name="op_and_eq"></a> `operator&=`
 
-Performs a bitwise combination of bitsets with the bitwise `AND` (`&`) operation.
+Does a bitwise combination of bitsets with the bitwise `AND` (`&`) operation.
 
 ```cpp
 bitset<N>& operator&=(const bitset<N>& right);
@@ -788,7 +788,7 @@ The `bitset` that is to be compared to the target bitset for equality.
 
 #### Return Value
 
-**`true`** if the `bitset`s are the same; **`false`** if they are different.
+**`true`** if the `bitset`s are the same; **`false`** if they're different.
 
 #### Remarks
 
@@ -981,7 +981,7 @@ int main( )
 
 ### <a name="op_xor_eq"></a> `operator^=`
 
-Performs a bitwise combination of bitsets with the bitwise **XOR* (`^`)  operation.
+Does a bitwise combination of bitsets with the bitwise **XOR* (`^`)  operation.
 
 ```cpp
 bitset<N>& operator^=(const bitset<N>& right);
@@ -1354,10 +1354,10 @@ bitset<N>& set(
 #### Parameters
 
 *`pos`*\
-The position of the bit in the `bitset` to be set to assigned a value.
+The position of the bit in the `bitset` to be set the assigned value.
 
 *`val`*\
-The value to be assigned to the bit at the position specified.
+The value to be assigned to the bit at the specified position.
 
 #### Return Value
 
@@ -1526,7 +1526,7 @@ unsigned long long to_ullong() const;
 
 #### Return value
 
-Returns the sum of the bit values that are in the bit sequence as an **`unsigned long long`**. This **`unsigned long long`** value would re-create the same set bits if it is used to initialize a `bitset`.
+Returns the sum of the bit values that are in the bit sequence as an **`unsigned long long`**. This **`unsigned long long`** value would re-create the same set bits if it's used to initialize a `bitset`.
 
 #### Exceptions
 
