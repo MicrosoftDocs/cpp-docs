@@ -28,7 +28,11 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 [C1_DLL](#c1-dll)\
 [FRONT_END_FILE](#front-end-file)\
 [TEMPLATE_INSTANTIATION](#template-instantiation)\
-[SYMBOL_NAME](#symbol-name)
+[SYMBOL_NAME](#symbol-name)\
+[TRANSLATION_UNIT_TYPE](#translation-unit-type)\
+[MODULE](#module)\
+[HEADER_UNIT](#header-unit)\
+[PRECOMPILED_HEADER](#precompiled-header)
 
 ## Compiler back-end events
 
@@ -77,7 +81,7 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 |  | Description | Occurs at the start and stop of the whole program analysis' bottom-up pass. |
 | <a name="c1-dll"></a> C1_DLL | Type | Activity |
 |  | Parents | [FRONT_END_PASS](#front-end-pass) |
-|  | Children | [FRONT_END_FILE](#front-end-file)<br/>[SYMBOL_NAME](#symbol-name)<br/>[TEMPLATE_INSTANTIATION](#template-instantiation) |
+|  | Children | [FRONT_END_FILE](#front-end-file)<br/>[SYMBOL_NAME](#symbol-name)<br/>[TEMPLATE_INSTANTIATION](#template-instantiation)<br/>[TRANSLATION_UNIT_TYPE](#translation-unit-type) |
 |  | Properties | None |
 |  | Capture classes | [Activity](cpp-event-data-types/activity.md)<br/>[C1DLL](cpp-event-data-types/c1-dll.md) |
 |  | Description | Occurs at the start and stop of a *c1.dll* or *c1xx.dll* invocation. These DLLs are the C and C++ front end of the compiler. They're invoked solely by the compiler driver (*cl.exe*). |
@@ -153,6 +157,12 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 |  | Properties | - Name of the function |
 |  | Capture classes | [Activity](cpp-event-data-types/activity.md)<br/>[Function](cpp-event-data-types/function.md) |
 |  | Description | Occurs when starting and ending generating the code for a function. |
+| <a name="header-unit"></a> HEADER_UNIT | Type | Activity |
+|  | Parents | [TRANSLATION_UNIT_TYPE](#translation-unit-type) |
+|  | Children | None |
+|  | Properties | None |
+|  | Capture classes | [SimpleEvent](cpp-event-data-types/simple-event.md)<br/>[TranslationUnitType](cpp-event-data-types/translation-unit-type.md)<br/>[HeaderUnit](cpp-event-data-types/header-unit.md) |
+|  | Description | Occurs at the start of the front-end pass and represents that a header unit translation unit is being processed. |
 | <a name="imp-lib-output"></a> IMP_LIB_OUTPUT | Type | Simple Event |
 |  | Parents | [LINKER](#linker) |
 |  | Children | None |
@@ -177,6 +187,12 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 |  | Properties | None |
 |  | Capture classes | [Activity](cpp-event-data-types/activity.md)<br/>[LTCG](cpp-event-data-types/ltcg.md) |
 |  | Description | Occurs at the start and stop of link-time code generation. |
+| <a name="module"></a> MODULE | Type | Activity |
+|  | Parents | [TRANSLATION_UNIT_TYPE](#translation-unit-type) |
+|  | Children | None |
+|  | Properties | None |
+|  | Capture classes | [SimpleEvent](cpp-event-data-types/simple-event.md)<br/>[TranslationUnitType](cpp-event-data-types/translation-unit-type.md)<br/>[Module](cpp-event-data-types/module.md) |
+|  | Description | Occurs at the start of the front-end pass and represents that a module translation unit is being processed. |
 | <a name="obj-output"></a> OBJ_OUTPUT | Type | Simple Event |
 |  | Parents | [COMPILER](#compiler) |
 |  | Children | None |
@@ -213,6 +229,12 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 |  | Properties | None |
 |  | Capture classes | [Activity](cpp-event-data-types/activity.md)<br/>[Pass2](cpp-event-data-types/pass2.md) |
 |  | Description | Occurs at the start and stop of the linker's pass 2. |
+| <a name="precompiled-header"></a> PRECOMPILED_HEADER | Type | Activity |
+|  | Parents | [TRANSLATION_UNIT_TYPE](#translation-unit-type) |
+|  | Children | None |
+|  | Properties | None |
+|  | Capture classes | [SimpleEvent](cpp-event-data-types/simple-event.md)<br/>[TranslationUnitType](cpp-event-data-types/translation-unit-type.md)<br/>[PrecompiledHeader](cpp-event-data-types/precompiled-header.md) |
+|  | Description | Occurs at the start of the front-end pass and represents that a precompiled header (PCH) translation unit is being processed. |
 | <a name="pre-ltcg-opt-ref"></a> PRE_LTCG_OPT_REF | Type | Activity |
 |  | Parents | [PASS1](#pass1) |
 |  | Children | None |
@@ -243,6 +265,12 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 |  | Properties | None |
 |  | Capture classes | [Activity](cpp-event-data-types/activity.md)<br/>[TopDown](cpp-event-data-types/top-down.md) |
 |  | Description | Occurs at the start and stop of the whole program analysis' top-down pass. |
+| <a name="translation-unit-type"></a> TRANSLATION_UNIT_TYPE | Type | Activity |
+|  | Parents | [C1_DLL](#c1-dll) |
+|  | Children | [MODULE](#module)<br/>[HEADER_UNIT](#header-unit)<br/>[PRECOMPILED_HEADER](#precompiled-header) |
+|  | Properties | - The type of translation unit. |
+|  | Capture classes | [SimpleEvent](cpp-event-data-types/simple-event.md)<br/>[TranslationUnitType](cpp-event-data-types/translation-unit-type.md) |
+|  | Description | Occurs at the start of the front-end pass. The type identifies whether this pass is processing a module, header unit, or precompiled header. |
 | <a name="whole-program-analysis"></a> WHOLE_PROGRAM_ANALYSIS | Type | Activity |
 |  | Parents | [C2_DLL](#c2-dll) |
 |  | Children | [BOTTOM_UP](#bottom-up)<br/>[TOP_DOWN](#top-down) |
