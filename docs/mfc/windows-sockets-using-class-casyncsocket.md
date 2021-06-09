@@ -22,7 +22,7 @@ This article covers:
 
 #### To use `CAsyncSocket`
 
-1. Construct a [`CAsyncSocket`](../mfc/reference/casyncsocket-class.md) object and use the object to create the underlying **SOCKET** handle.
+1. Construct a [`CAsyncSocket`](../mfc/reference/casyncsocket-class.md) object and use the object to create the underlying **`SOCKET`** handle.
 
    Creation of a socket follows the MFC pattern of two-stage construction.
 
@@ -44,7 +44,7 @@ This article covers:
 
    - A socket type: **`SOCK_STREAM`** (the default) or **`SOCK_DGRAM`**.
 
-   - A socket "address," such as `"ftp.microsoft.com"` or `"128.56.22.8"`.
+   - A socket "address" such as `"ftp.microsoft.com"` or `"128.56.22.8"`.
 
       This is your Internet Protocol (IP) address on the network. You will probably always rely on the default value for this parameter.
 
@@ -75,7 +75,7 @@ For an example of this sequence in code (actually for a `CSocket` object), see [
 
 ## <a name="_core_your_responsibilities_with_casyncsocket"></a> Your responsibilities with `CAsyncSocket`
 
-When you create an object of class [`CAsyncSocket`](../mfc/reference/casyncsocket-class.md), the object encapsulates a Windows **SOCKET** handle and supplies operations on that handle. When you use `CAsyncSocket`, you must deal with all the issues you might face if using the API directly. For example:
+When you create an object of class [`CAsyncSocket`](../mfc/reference/casyncsocket-class.md), the object encapsulates a Windows **`SOCKET`** handle and supplies operations on that handle. When you use `CAsyncSocket`, you must deal with all the issues you might face if using the API directly. For example:
 
 - "Blocking" scenarios.
 

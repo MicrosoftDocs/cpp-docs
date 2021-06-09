@@ -69,15 +69,15 @@ A bit is set if its value is 1 and reset if its value is 0. To flip or invert a 
 |Name|Description|
 |-|-|
 |[`operator!=`](#op_neq)|Tests a target `bitset` for inequality with a specified `bitset`.|
-|[`operator&=`](#op_and_eq)|Performs a bitwise combination of bitsets with the logical `AND` operation.|
+|[`operator&=`](#op_and_eq)|Performs a bitwise combination of bitsets with the bitwise `AND` operation.|
 |[`operator<<`](#op_lshift)|Shifts the bits in a `bitset` to the left a specified number of positions and returns the result to a new `bitset`.|
 |[`operator<<=`](#op_lshift_eq)|Shifts the bits in a `bitset` to the left a specified number of positions and returns the result to the targeted `bitset`.|
 |[`operator==`](#op_eq_eq)|Tests a target `bitset` for equality with a specified `bitset`.|
 |[`operator>>`](#op_rshift)|Shifts the bits in a `bitset` to the right a specified number of positions and returns the result to a new `bitset`.|
 |[`operator>>=`](#op_rshift_eq)|Shifts the bits in a `bitset` to the right a specified number of positions and returns the result to the targeted `bitset`.|
 |[`operator[]`](#op_at)|Returns a reference to a bit at a specified position in a `bitset` if the `bitset` is modifiable; otherwise, it returns the value of the bit at that position.|
-|[operator^=](#op_xor_eq)|Performs a bitwise combination of bitsets with the exclusive `OR` operation.|
-|[`operator|=`](#op_or_eq)|Performs a bitwise combination of bitsets with the inclusive `OR` operation.|
+|[operator^=](#op_xor_eq)|Performs a bitwise combination of bitsets with the bitwise **XOR** (`^`) operation.|
+|[`operator|=`](#op_or_eq)|Performs a bitwise combination of bitsets with the bitwise **OR** (`|`) operation.|
 |[`operator~`](#op_not)|Inverts all the bits in a target `bitset` and returns the result.|
 
 ### Structures
@@ -96,7 +96,7 @@ bool all() const;
 
 #### Return Value
 
-Returns true if all bits in this set are true. Returns **`false`** if one or more bits are false.
+Returns `true` if all bits in this set are true. Returns **`false`** if one or more bits are false.
 
 ### <a name="any"></a> `any`
 
@@ -217,7 +217,7 @@ The character that is used to represent a one. The default is '1'.
 
 2-3) Constructs an object of class `bitset<N>` and initializes the bits from the `val` parameter.
 
-4) Constructs an object of class `bitset<N>` and initializes bits from the characters provided in a string of zeros and ones. If any characters of the string are other than 0 or 1, the constructor throws an object of class [invalid argument](../standard-library/invalid-argument-class.md). If the position specified (*`pos`*) is beyond the length of the string, then the constructor throws an object of class [`out_of_range`](../standard-library/out-of-range-class.md). The constructor sets only those bits at position *j* in the `bitset` for which the character in the string at position `pos + j` is 1. By default, *`pos`* is 0.
+4) Constructs an object of class `bitset<N>` and initializes bits from the characters provided in a string of zeros and ones. If any characters of the string are other than 0 or 1, the constructor throws an object of class [`invalid argument`](../standard-library/invalid-argument-class.md). If the position specified (*`pos`*) is beyond the length of the string, then the constructor throws an object of class [`out_of_range`](../standard-library/out-of-range-class.md). The constructor sets only those bits at position *j* in the `bitset` for which the character in the string at position `pos + j` is 1. By default, *`pos`* is 0.
 
 5) Similar to 4) but includes an additional parameter, *`count`*, that specifies the number of bits to initialize. It has two optional parameters, *`_Zero`* and *`_One`*, which indicate what character in *`str`* should be interpreted to mean a 0 bit and a 1 bit, respectively.
 
@@ -564,7 +564,7 @@ The `bitset` that is to be compared to the target bitset for inequality.
 
 #### Remarks
 
-Bitsets must be of the same size to be tested for inequality by the member operator function.
+Bitsets must be the same size.
 
 #### Example
 
@@ -609,7 +609,7 @@ Bitset b1 is different from bitset b3.
 
 ### <a name="op_and_eq"></a> `operator&=`
 
-Performs a bitwise combination of bitsets with the logical `AND` operation.
+Performs a bitwise combination of bitsets with the bitwise `AND` (`&`) operation.
 
 ```cpp
 bitset<N>& operator&=(const bitset<N>& right);
@@ -618,7 +618,7 @@ bitset<N>& operator&=(const bitset<N>& right);
 #### Parameters
 
 *`right`*\
-the `bitset` that is to be combined bitwise with the target bitset.
+The `bitset` that is to be combined bitwise with the target bitset.
 
 #### Return Value
 
@@ -628,7 +628,7 @@ The modified target bitset that results from the bitwise `AND` operation with th
 
 Two bits combined by the `AND` operator return **`true`** if each bit is true; otherwise, their combination returns **`false`**.
 
-The two `bitset`s must be of the same size to be combined bitwise with the `AND` operator by the member operator function.
+The two `bitset`s must be the same size.
 
 #### Example
 
@@ -693,7 +693,7 @@ The modified bitset with the bits shifted to the left the required number of pos
 
 #### Remarks
 
-The member operator function returns **bitset**( **\*this**) **<<= pos,** where [<<=](#op_lshift_eq) shifts the bits in a `bitset` to the left a specified number of positions and returns the result to the targeted `bitset`.
+The member operator function returns **`bitset(*this) <<= pos`** where [`<<=`](#op_lshift_eq) shifts the bits in a `bitset` to the left a specified number of positions and returns the result to the targeted `bitset`.
 
 #### Example
 
@@ -792,7 +792,7 @@ The `bitset` that is to be compared to the target bitset for equality.
 
 #### Remarks
 
-Bitsets must be of the same size to be tested for equality by the member operator function.
+Bitsets must be the same size.
 
 #### Example
 
@@ -839,12 +839,12 @@ Bitset b1 is different from bitset b3.
 Shifts the bits in a `bitset` to the right a specified number of positions and returns the result to a new bitset.
 
 ```cpp
-bitset<N> operator>>(size_t Pos) const;
+bitset<N> operator>>(size_t pos) const;
 ```
 
 #### Parameters
 
-*`Pos`*\
+*`pos`*\
 The number of positions to the right the bits in the `bitset` are to be shifted.
 
 #### Return Value
@@ -892,12 +892,12 @@ the bitset b3 is: ( 01110 ).
 Shifts the bits in a `bitset` to the right a specified number of positions and returns the result to the targeted `bitset`.
 
 ```cpp
-bitset<N>& operator>>=(size_t Pos);
+bitset<N>& operator>>=(size_t pos);
 ```
 
 #### Parameters
 
-*`Pos`*\
+*`pos`*\
 The number of positions to the right the bits in the `bitset` are to be shifted.
 
 #### Return Value
@@ -951,7 +951,7 @@ The position locating the bit within the `bitset`.
 
 #### Remarks
 
-When you define [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debug-level.md) as 1 or 2 in your build, a runtime error will occur in your executable if you attempt to access an element outside the bounds of the `bitset`. For more informations, see [Checked Iterators](../standard-library/checked-iterators.md).
+When you define [\_ITERATOR\_DEBUG\_LEVEL](../standard-library/iterator-debug-level.md) as 1 or 2 in your build, a runtime error will occur in your executable if you attempt to access an element outside the bounds of the `bitset`. For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 
 #### Example
 
@@ -981,7 +981,7 @@ int main( )
 
 ### <a name="op_xor_eq"></a> `operator^=`
 
-Performs a bitwise combination of bitsets with the exclusive **OR* (`^`)  operation.
+Performs a bitwise combination of bitsets with the bitwise **XOR* (`^`)  operation.
 
 ```cpp
 bitset<N>& operator^=(const bitset<N>& right);
@@ -994,13 +994,13 @@ The `bitset` that is to be combined bitwise with the target bitset.
 
 #### Return Value
 
-The modified target bitset that results from the bitwise exclusive **OR** (`^`) operation with the `bitset` specified as a parameter.
+The modified target bitset that results from the bitwise **XOR** (`^`) operation with the `bitset` specified as a parameter.
 
 #### Remarks
 
-Two bits combined by the exclusive **OR** operator (`^`) return **`true`** if at least one, but not both, of the bits is **`true`**; otherwise, their combination returns **`false`**.
+Two bits combined by the bitwise **XOR** operator (`^`) return **`true`** if at least one, but not both, of the bits is **`true`**; otherwise, their combination returns **`false`**.
 
-Bitsets must be of the same size to be combined bitwise with the exclusive `OR` operator by the member operator function.
+Bitsets must be the same size.
 
 #### Example
 
@@ -1030,7 +1030,7 @@ int main( )
    cout << "The parameter bitset b2 remains: ( "<< b2 << " )."
         << endl;
 
-   // The following would cause an error because the bisets
+   // The following would cause an error because the bitsets
    // must be of the same size to be combined
    // b1 |= b3;
 }
@@ -1066,7 +1066,7 @@ The modified target bitset that results from the bitwise `OR` (`|`) operation wi
 
 Two bits combined by the inclusive `OR` operator return **`true`** if at least one of the bits is **`true`**; if both bits are **`false`**, their combination returns **`false`**.
 
-Bitsets must be of the same size to be combined bitwise with the inclusive `OR` operator by the member operator function.
+Bitsets must be the same size.
 
 #### Example
 
@@ -1112,8 +1112,8 @@ the target bitset b1 becomes:   ( 01111 ).
 The parameter bitset b2 remains: ( 01011 ).
 ```
 
-### <a name="op_not"></a> `operator~
-`
+### <a name="op_not"></a> `operator~`
+
 Inverts all the bits in a target bitset and returns the result.
 
 ```cpp
@@ -1179,7 +1179,7 @@ public:
 The value of the object of type **`bool`** to be assigned to a bit in a `bitset`.
 
 *`bitref`*\
-A reference of the form *`x [ i ]`* to the bit at position *`i`* in `bitset` *`x`*.
+A reference of the form *x [ i ]* to the bit at position *i* in `bitset` *x*.
 
 #### Return Value
 
