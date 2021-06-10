@@ -1,9 +1,9 @@
 ---
 title: "Compiler warnings C4800 Through C5999"
 description: "Table of Microsoft C/C++ compiler warnings C4800 through C5999."
-ms.date: 04/18/2021
-f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221"]
-helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221"]
+ms.date: 06/07/2021
+f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5240", "C5241", "C5242", "C5243"]
+helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5240", "C5241", "C5242", "C5243"]
 ---
 # Compiler warnings C4800 through C5999
 
@@ -201,7 +201,18 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning C5218 | destroying delete may not behave as intended when non-conforming switches '`/Zc:sizedDealloc-`' or '`/Zc:alignedNew-`' are used |
 | Compiler warning C5219 | implicit conversion from '*type-1*' to '*type-2*', possible loss of data |
 | Compiler warning C5220 | '*name*': a non-static data member with a volatile qualified type no longer implies that compiler generated copy/move constructors and copy/move assignment operators are not trivial |
-| Compiler warning C5221 | `xfg::rename` is deprecated. |
+| Compiler warning C5221 | xfg::rename is deprecated. |
+| Compiler warning C5233 | explicit lambda capture 'identifier' is not used |
+| Compiler warning C5234 | file system error: 'filename' is not a valid header-name; ignoring |
+| Compiler warning C5235 | JSON parse error: issue; ignoring 'filename' |
+| Compiler warning C5236 | JSON ill-formed: issue; ignoring 'filename' |
+| Compiler warning C5237 | cannot resolve header unit entry 'string' to a header file in 'filename'; ignoring entry |
+| Compiler warning C5238 | file system error: cannot open 'filename' for reading; ignoring |
+| Compiler warning C5239 | 'Symbol': potentially-throwing function called from a function declared __declspec(nothrow). Undefined behavior may occur if an exception is thrown. |
+| Compiler warning C5240 | 'attribute-string': attribute is ignored in this syntactic position |
+| Compiler warning C5241 | '/exportHeader' usage to lookup header-name is deprecated; prefer '/headerName:arg-1 arg-2=filename' |
+| Compiler warning C5242 | syntax error in pragma 'identifier' |
+| Compiler warning C5243 | 'Type-name': using incomplete class 'symbol' can cause potential one definition rule violation due to ABI limitation |
 
 ## See also
 

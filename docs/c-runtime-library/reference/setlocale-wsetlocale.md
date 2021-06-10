@@ -1,14 +1,13 @@
 ---
 title: "setlocale, _wsetlocale"
 description: "Describes the Microsoft C runtime (CRT) library functions setlocale and _wsetlocale."
-ms.date: "4/2/2020"
+ms.date: "6/8/2021"
 api_name: ["_wsetlocale", "setlocale", "_o__wsetlocale", "_o_setlocale"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wsetlocale", "_tsetlocale", "setlocale"]
 helpviewer_keywords: ["wsetlocale function", "setlocale function", "tsetlocale function", "locales, defining", "_tsetlocale function", "defining locales", "_wsetlocale function"]
-ms.assetid: 3ffb684e-5990-4202-9553-b5339af9520d
 no-loc: [setlocale, _wsetlocale]
 ---
 # `setlocale`, `_wsetlocale`
@@ -171,13 +170,27 @@ The function [`_configthreadlocale`](configthreadlocale.md) is used to control w
 
 ## UTF-8 Support
 
-Starting in Windows 10 build 17134 (April 2018 Update), the Universal C Runtime supports using a UTF-8 code page. This means that `char` strings passed to C runtime functions will expect strings in the UTF-8 encoding. To enable UTF-8 mode, use "`UTF-8`" as the code page when using `setlocale`. For example, `setlocale(LC_ALL, ".utf8")` will use the current default Windows ANSI code page (ACP) for the locale and UTF-8 for the code page.
+Starting in Windows 10 build 17134 (April 2018 Update), the Universal C Runtime supports using a UTF-8 code page. This means that `char` strings passed to C runtime functions will expect strings in the UTF-8 encoding. To enable UTF-8 mode, use `".UTF8"` as the code page when using `setlocale`. For example, `setlocale(LC_ALL, ".UTF8")` will use the current default Windows ANSI code page (ACP) for the locale and UTF-8 for the code page.
 
-After calling `setlocale(LC_ALL, ".UTF8")`, you may pass "😊" to `mbtowcs` and it will be properly translated to a `wchar_t` string, whereas previously there was not a locale setting available to do this.
+The string to specify UTF-8 mode is:
+- case-insensitive
+- the hyphen (-) is optional
+- It must be in the code page part of the locale name, so must have a leading period '.'  For example, `"en_US.UTF8"` or `".utf8"`
 
-UTF-8 mode is also enabled for functions that have historically translated `char` strings using the default Windows ANSI code page (ACP). For example, calling [`_mkdir("😊")`](../reference/mkdir-wmkdir.md) while using a UTF-8 code page will correctly produce a directory with that emoji as the folder name, instead of requiring the ACP to be changed to UTF-8 prior to running your program. Likewise, calling [`_getcwd()`](../reference/getcwd-wgetcwd.md) inside of that folder will return a UTF-8 encoded string. For compatibility, the ACP is still used if the C locale code page is not set to UTF-8.
+The following examples show how to specify the UTF-8 string:
 
-The following aspects of the C Runtime that are not able to use UTF-8 because they are set during program startup and must use the default Windows ANSI code page (ACP): [`__argv`](../argc-argv-wargv.md), [`_acmdln`](../acmdln-tcmdln-wcmdln.md), and [`_pgmptr`](../pgmptr-wpgmptr.md).
+`".UTF8"`\
+`".UTF-8"`\
+`".utf8"`\
+`".utf-8"`\
+`"en_us.utf8"`\
+`"ja_JP.Utf-8"`
+
+After calling `setlocale(LC_ALL, ".UTF8")`, you may pass "😊" to `mbtowcs` and it will be properly translated to a `wchar_t` string, whereas previously there wasn't a locale setting available to do this.
+
+UTF-8 mode is also enabled for functions that have historically translated `char` strings using the default Windows ANSI code page (ACP). For example, calling [`_mkdir("😊")`](../reference/mkdir-wmkdir.md) while using a UTF-8 code page will correctly produce a directory with that emoji as the folder name, instead of requiring the ACP to be changed to UTF-8 before running your program. Likewise, calling [`_getcwd()`](../reference/getcwd-wgetcwd.md) in that folder will return a UTF-8 encoded string. For compatibility, the ACP is still used if the C locale code page is not set to UTF-8.
+
+The following aspects of the C Runtime can't use UTF-8 because they are set during program startup and must use the default Windows ANSI code page (ACP): [`__argv`](../argc-argv-wargv.md), [`_acmdln`](../acmdln-tcmdln-wcmdln.md), and [`_pgmptr`](../pgmptr-wpgmptr.md).
 
 Previous to this support, [`mbrtoc16`, `mbrtoc32`](../reference/mbrtoc16-mbrtoc323.md), [`c16rtomb`, and `c32rtomb`](../reference/c16rtomb-c32rtomb1.md) existed to translate between UTF-8 narrow strings, UTF-16 (same encoding as `wchar_t` on Windows platforms) and UTF-32. For compatibility reasons, these APIs still only translate to and from UTF-8 and not the code page set via `setlocale`.
 
@@ -190,7 +203,7 @@ To use this feature on an OS prior to Windows 10, such as Windows 7, you must us
 |`setlocale`|`<locale.h>`|
 |`_wsetlocale`|`<locale.h>` or `<wchar.h>`|
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 

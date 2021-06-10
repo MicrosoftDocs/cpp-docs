@@ -1,7 +1,7 @@
 ---
 title: "/external (External headers diagnostics)"
 description: "The Microsoft C++ compiler /external headers diagnostic options syntax and usage."
-ms.date: 05/14/2021
+ms.date: 06/07/2021
 f1_keywords: ["/external", "/external:anglebrackets", "/external:env:", "/external:I", "/external:W0", "/external:W1", "/external:W2", "/external:W3", "/external:W4", "/external:templates-", "/experimental:external"]
 helpviewer_keywords: ["/external compiler option [C++]", "-external compiler option [C++]", "external compiler option [C++]"]
 ---
@@ -9,7 +9,7 @@ helpviewer_keywords: ["/external compiler option [C++]", "-external compiler opt
 
 The **`/external`** compiler options let you specify compiler diagnostic behavior for certain header files. "External" headers are the natural complement of "Just my code": Header files such as system files or third-party library files that you can't or don't intend to change. Since you aren't going to change these files, you may decide it isn't useful to see diagnostic messages from the compiler about them. The `/external` compiler options give you control over these warnings.
 
-The **`/external`** compiler options are available starting in Visual Studio 2017 version 15.6. The **`/external`** options require you also set the **`/experimental:external`** compiler option.
+The **`/external`** compiler options are available starting in Visual Studio 2017 version 15.6. In versions of Visual Studio before Visual Studio 2019 version 16.10, the **`/external`** options require you also set the **`/experimental:external`** compiler option.
 
 ## Syntax
 
@@ -28,7 +28,7 @@ Specify diagnostics behavior:
 ### Arguments
 
 **`/experimental:external`**\
-Enables the external headers options, starting in Visual Studio 2017 version 15.6.
+Enables the external headers options. This option isn't required in Visual Studio 2019 version 16.10 and later.
 
 **`/external:anglebrackets`**\
 Treats all headers included by `#include <header>`, where the *`header`* file is enclosed in angle brackets (**`< >`**), as external headers.
@@ -101,20 +101,20 @@ include_dir\header_file.h(6): warning C4245: 'initializing': conversion from 'in
 program.cpp(6): note: see reference to class template instantiation 'sample_struct<unsigned int>' being compiled
 ```
 
-To treat the header file as an external file and suppress the warning, you can use this command line instead:
+To treat the header file as an external file and suppress the warning, you can use this command line instead[\*](#note_experimental):
 
 ```cmd
-cl /EHsc /experimental:external /I include_dir /external:anglebrackets /external:W0 /W4 program.cpp
+cl /EHsc /I include_dir /external:anglebrackets /external:W0 /W4 program.cpp
 ```
 
 This command line suppresses the warning inside *`header_file.h`* while preserving warnings inside *`program.cpp`*.
 
 ### Warnings across the internal and external boundary
 
-Setting a low warning level for external headers can hide some actionable warnings. In particular, it can turn off warnings emitted on template instantiations in user code. These warnings might indicate a problem in your code that only happens in instantiations for particular types. (For example, if you forgot to apply a type trait removing `const` or `&`.) To avoid silencing warnings inside templates defined in external headers, you can use the **`/external:templates-`** option. The compiler considers both the effective warning level in the file that defines the template, and the warning level where template instantiation occurs. Warnings emitted inside an external template appear if the template is instantiated within non-external code. For example, this command line re-enables warnings from template sources in the sample code:
+Setting a low warning level for external headers can hide some actionable warnings. In particular, it can turn off warnings emitted on template instantiations in user code. These warnings might indicate a problem in your code that only happens in instantiations for particular types. (For example, if you forgot to apply a type trait removing `const` or `&`.) To avoid silencing warnings inside templates defined in external headers, you can use the **`/external:templates-`** option. The compiler considers both the effective warning level in the file that defines the template, and the warning level where template instantiation occurs. Warnings emitted inside an external template appear if the template is instantiated within non-external code. For example, this command line re-enables warnings from template sources in the sample code[\*](#note_experimental):
 
 ```cmd
-cl /EHsc /experimental:external /I include_dir /external:anglebrackets /external:W0 /external:templates- /W4 program.cpp
+cl /EHsc /I include_dir /external:anglebrackets /external:W0 /external:templates- /W4 program.cpp
 ```
 
 The C4245 warning appears again in the output, even though the template code is inside an external header.
@@ -155,7 +155,7 @@ With this change to the library header, the author of the library ensures that t
 
 ### Limitations
 
-Some warnings emitted by the compiler's back-end code generation aren't affected by the **`/external`** options. These warnings usually start with C47XX, though not all C47XX warnings are back-end warnings.  You can still disable these warnings by using `/wd47XX`. Code analysis warnings are also unaffected, since they don't have warning levels.
+Some warnings emitted by the compiler's back-end code generation aren't affected by the **`/external`** options. These warnings usually start with C47XX, though not all C47XX warnings are back-end warnings.  You can still disable these warnings individually by using `/wd47XX`. Code analysis warnings are also unaffected, since they don't have warning levels.
 
 ### To set this compiler option in the Visual Studio development environment
 
@@ -163,11 +163,13 @@ Some warnings emitted by the compiler's back-end code generation aren't affected
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. Enter the compiler options in the **Additional Options** box.
+1. Enter the compiler options[\*](#note_experimental) in the **Additional Options** box.
 
 ### To set this compiler option programmatically
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+<a name="note_experimental"></a>\* Add the `/experimental:external` option to enable the external headers options in versions of Visual Studio before Visual Studio 2019 version 16.10.
 
 ## See also
 
