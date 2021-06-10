@@ -228,7 +228,7 @@ The following list contains the type traits that are supported by the compiler. 
 
 - `__is_base_of(` `base` `,` `derived` `)`
 
-   Returns **`true`** if the first type is a base class of the second type, of if both types are the same.
+   Returns **`true`** if the first type is a base class of the second type, or if both types are the same.
 
    `__is_base_of` also works on platform types. For example, it will return **`true`** if the first type is an [interface class](interface-class-cpp-component-extensions.md) and the second type implements the interface.
 
