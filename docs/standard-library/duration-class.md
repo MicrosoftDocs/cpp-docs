@@ -65,11 +65,11 @@ The template argument `Rep` describes the type that is used to hold the number o
 
 ## Requirements
 
-**Header:** \<chrono>
+**Header:** `<chrono>`
 
-**Namespace:** std::chrono
+**Namespace:** `std::chrono`
 
-## <a name="count"></a> duration::count
+## <a name="count"></a> `duration::count`
 
 Retrieves the number of clock ticks in the time interval.
 
@@ -81,7 +81,7 @@ constexpr Rep count() const;
 
 The number of clock ticks in the time interval.
 
-## <a name="duration"></a> duration::duration Constructor
+## <a name="duration"></a> `duration::duration` Constructor
 
 Constructs a `duration` object.
 
@@ -97,33 +97,33 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 
 ### Parameters
 
-*Rep2*\
+*`Rep2`*\
 An arithmetic type to represent the number of ticks.
 
-*Period2*\
+*`Period2`*\
 A `std::ratio` template specialization to represent the tick period in units of seconds.
 
-*R*\
+*`R`*\
 The number of ticks of default period.
 
-*Dur*\
-The number of ticks of period specified by *Period2*.
+*`Dur`*\
+The number of ticks of period specified by *`Period2`*.
 
 ### Remarks
 
 The default constructor constructs an object that is uninitialized. Value initialization by using empty braces initializes an object that represents a time interval of zero clock ticks.
 
-The second, one template argument constructor constructs an object that represents a time interval of *R* clock ticks using a default period of `std::ratio<1>`. To avoid round-off of tick counts, it is an error to construct a duration object from a representation type *Rep2* that can be treated as a floating-point type when `duration::rep` cannot be treated as a floating-point type.
+The second, one template argument constructor constructs an object that represents a time interval of *`R`* clock ticks using a default period of `std::ratio<1>`. To avoid round-off of tick counts, it's an error to construct a duration object from a representation type *`Rep2`* that can be treated as a floating-point type when `duration::rep` cannot be treated as a floating-point type.
 
-The third, two template argument constructor constructs an object that represents a time interval whose length is the time interval that is specified by *Dur*. To avoid truncation of tick counts, it is an error to construct a duration object from another duration object whose type is *incommensurable* with the target type.
+The third, two template argument constructor constructs an object that represents a time interval whose length is the time interval that is specified by *`Dur`*. To avoid truncation of tick counts, it's an error to construct a duration object from another duration object whose type is *incommensurable* with the target type.
 
-A duration type `D1` is *incommensurable* with another duration type `D2` if `D2` cannot be treated as a floating-point type and [ratio_divide\<D1::period, D2::period>::type::den](../standard-library/ratio.md) is not 1.
+A duration type `D1` is *incommensurable* with another duration type `D2` if `D2` cannot be treated as a floating-point type and [ratio_divide\<D1::period, D2::period>::type::den](../standard-library/ratio.md) isn't 1.
 
-Unless *Rep2* is implicitly convertible to `rep` and either `treat_as_floating_point<rep>`*holds true* or `treat_as_floating_point<Rep2>`*holds false*, the second constructor does not participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
+Unless *`Rep2`* is implicitly convertible to `rep` and either `treat_as_floating_point<rep>`*holds true* or `treat_as_floating_point<Rep2>`*holds false*, the second constructor doesn't participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
 
-Unless no overflow is induced in the conversion and `treat_as_floating_point<rep>`*holds true*,  or both `ratio_divide<Period2, period>::den` equals 1 and `treat_as_floating_point<Rep2>`*holds false*, the third constructor does not participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
+Unless no overflow is induced in the conversion and `treat_as_floating_point<rep>`*holds true*,  or both `ratio_divide<Period2, period>::den` equals 1 and `treat_as_floating_point<Rep2>`*holds false*, the third constructor doesn't participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
 
-## <a name="max"></a> duration::max
+## <a name="max"></a> `duration::max`
 
 Static method that returns the upper bound for values of template parameter type `Ref`.
 
@@ -135,7 +135,7 @@ static constexpr duration max();
 
 In effect, returns `duration(duration_values<rep>::max())`.
 
-## <a name="min"></a> duration::min
+## <a name="min"></a> `duration::min`
 
 Static method that returns the lower bound for values of template parameter type `Ref`.
 
@@ -147,7 +147,7 @@ static constexpr duration min();
 
 In effect, returns `duration(duration_values<rep>::min())`.
 
-## <a name="operator-"></a> duration::operator-
+## <a name="operator-"></a> `duration::operator-`
 
 Returns a copy of the `duration` object together with a negated tick count.
 
@@ -155,7 +155,7 @@ Returns a copy of the `duration` object together with a negated tick count.
 constexpr duration operator-() const;
 ```
 
-## <a name="operator--"></a> duration::operator--
+## <a name="operator--"></a> `duration::operator--`
 
 Decrements the stored tick count.
 
@@ -171,7 +171,7 @@ The first method returns **`*this`**.
 
 The second method returns a copy of **`*this`** that is made before the decrement.
 
-## <a name="op_eq"></a> duration::operator=
+## <a name="op_eq"></a> `duration::operator=`
 
 Reduces the stored tick count modulo a specified value.
 
@@ -183,14 +183,14 @@ duration& operator%=(const duration& Div);
 
 ### Parameters
 
-*Div*\
-For the first method, *Div* represents a tick count. For the second method, *Div* is a `duration` object that contains a tick count.
+*`Div`*\
+For the first method, *`Div`* represents a tick count. For the second method, *`Div`* is a `duration` object that contains a tick count.
 
 ### Return Value
 
-The `duration` object after the modulo operation is performed.
+The `duration` object after the modulo operation is done.
 
-## <a name="op_star_eq"></a> duration::operator*=
+## <a name="op_star_eq"></a> `duration::operator*=`
 
 Multiplies the stored tick count by a specified value.
 
@@ -200,14 +200,14 @@ duration& operator*=(const rep& Mult);
 
 ### Parameters
 
-*Mult*\
+*`Mult`*\
 A value of the type that is specified by `duration::rep`.
 
 ### Return Value
 
-The `duration` object after the multiplication is performed.
+The `duration` object after the multiplication is done.
 
-## <a name="op_div_eq"></a> duration::operator/=
+## <a name="op_div_eq"></a> `duration::operator/=`
 
 Divides the stored tick count by a specified value.
 
@@ -217,14 +217,14 @@ duration& operator/=(const rep& Div);
 
 ### Parameters
 
-*Div*\
+*`Div`*\
 A value of the type that is specified by `duration::rep`.
 
 ### Return Value
 
-The `duration` object after the division is performed.
+The `duration` object after the division is done.
 
-## <a name="op_add"></a> duration::operator+
+## <a name="op_add"></a> `duration::operator+`
 
 Returns **`*this`**.
 
@@ -232,13 +232,12 @@ Returns **`*this`**.
 constexpr duration operator+() const;
 ```
 
-## <a name="op_add_add"></a> duration::operator++
+## <a name="op_add_add"></a> `duration::operator++`
 
 Increments the stored tick count.
 
 ```cpp
 duration& operator++();
-
 duration operator++(int);
 ```
 
@@ -248,7 +247,7 @@ The first method returns **`*this`**.
 
 The second method returns a copy of **`*this`** that is made before the increment.
 
-## <a name="op_add_eq"></a> duration::operator+=
+## <a name="op_add_eq"></a> `duration::operator+=`
 
 Adds the tick count of a specified `duration` object to the stored tick count.
 
@@ -258,14 +257,14 @@ duration& operator+=(const duration& Dur);
 
 ### Parameters
 
-*Dur*\
+*`Dur`*\
 A `duration` object.
 
 ### Return Value
 
-The `duration` object after the addition is performed.
+The `duration` object after the addition is done.
 
-## <a name="operator-_eq"></a> duration::operator-=
+## <a name="operator-_eq"></a> `duration::operator-=`
 
 Subtracts the tick count of a specified `duration` object from the stored tick count.
 
@@ -275,14 +274,14 @@ duration& operator-=(const duration& Dur);
 
 ### Parameters
 
-*Dur*\
+*`Dur`*\
 A `duration` object.
 
 ### Return Value
 
-The `duration` object after the subtraction is performed.
+The `duration` object after the subtraction is done.
 
-## <a name="zero"></a> duration::zero
+## <a name="zero"></a> `duration::zero`
 
 Returns `duration(duration_values<rep>::zero())`.
 
@@ -290,25 +289,26 @@ Returns `duration(duration_values<rep>::zero())`.
 static constexpr duration zero();
 ```
 
-## <a name="op_mod_eq"></a> duration::operator mod=
+## <a name="op_mod_eq"></a> `duration::operator mod=`
 
 Reduces the stored tick count modulo Div or Div.count().
 
 ```cpp
-duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
+duration& operator%=(const rep& Div);
+duration& operator%=(const duration& Div);
 ```
 
 ### Parameters
 
-*Div*\
+*`Div`*\
 The divisor, which is either a duration object or a value that represents tick counts.
 
 ### Remarks
 
-The first member function reduces the stored tick count modulo Div and returns *this. The second member function reduces the stored tick count modulo Div.count() and returns \*this.
+The first member function reduces the stored tick count modulo Div and returns *this. The second member function reduces the stored tick count modulo Div.count() and returns `*this`.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[\<chrono>](../standard-library/chrono.md)\
-[duration_values Structure](../standard-library/duration-values-structure.md)
+[`<chrono>`](../standard-library/chrono.md)\
+[`duration_values` structure](../standard-library/duration-values-structure.md)\
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

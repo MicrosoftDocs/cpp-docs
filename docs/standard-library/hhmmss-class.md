@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: hh_mm_ss class"
 title: "hh_mm_ss class"
-ms.date: "04/29/2021"
+ms.date: "06/07/2021"
 f1_keywords: ["chrono/std::chrono::hh_mm_ss", "chrono/std::chrono::hh_mm_ss::hh_mm_ss", "chrono/std::chrono::hh_mm_ss::is_negative", "chrono/std::chrono::hh_mm_ss::hours", "chrono/std::chrono::hh_mm_ss::minutes", "chrono/std::chrono::hh_mm_ss::seconds", "chrono/std::chrono::hh_mm_ss::subseconds", "chrono/std::chrono::hh_mm_ss::operator precision", "chrono/std::chrono::hh_mm_ss::to_duration"]
 helpviewer_keywords: ["std::chrono [C++], hh_mm_ss"]
 ---
@@ -19,35 +19,28 @@ template<class Duration> class hh_mm_ss; // C++20
 
 ## Members
 
-### Constructor
-
 |Name|Description|
 |----------|-----------------|
-|[hh_mm_ss](#hh_mm_ss)|Constructs a `hh_mm_ss` object.|
-
-### Functions
-
-|Name|Description|
-|----------|-----------------|
+|[Constructor](#hh_mm_ss)|Construct a `hh_mm_ss`.|
 |[is_negative](#is_negative)| Indicates whether the time duration is negative. |
 |[hours](#hours) | Get the hours value. |
 |[minutes](#minutes) | Get the minutes value. |
 |[seconds](#seconds) | Get the seconds value. |
 |[subseconds](#subseconds) | Get the subseconds value. |
 |[to_duration](#to_duration) | Return a `duration_cast<precision>`. |
+|[`hh_mm_ss::operator precision`](#op_precision)|  Returns the precision of this `hh_mm_ss`. |
 
-### Operators
+## Non-Members
 
 |Name|Description|
 |----------|-----------------|
-|[`hh_mm_ss::operator precision`](#op_precision)|  Returns the precision of this `hh_mm_ss`. |
 |[`hh_mm_ss::operator<<`](chrono-operators.md#op_left_shift) | Output a `hh_mm_ss` to the given stream. |
 
 ## Requirements
 
-**Header:** \<chrono>
+**Header:** `<chrono>`
 
-**Namespace:** std::chrono
+**Namespace:** `std::chrono`
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
@@ -66,7 +59,7 @@ Constructs an `hh_mm_ss` represents the [`Duration`](duration-class.md) *`d`* wi
 
 ### Remarks
 
-If `treat_as_floating_point_v<precision::rep>` is `true`, the precision is initialized with `abs(d) - hours() - minutes() - seconds()`. Otherwise, the precision is initialized with `duration_cast<precision>(abs(d) - hours() - minutes() - seconds())`
+If `treat_as_floating_point_v<precision::rep>` is `true`, the precision is initialized with `abs(d)-hours()-minutes()-seconds()`. Otherwise, the precision is initialized with `duration_cast<precision>(abs(d)-hours()-minutes()-seconds())`
 
 ## <a name="is_negative"></a> `hh_mm_ss::is_negative`
 
@@ -127,7 +120,7 @@ constexpr precision subseconds() const noexcept;
 ### Return value
 
 The `subseconds` value of this `hh_mm_ss`.\
-If `std::chrono::treat_as_floating_point_v<precision::rep>` is `true`, then this is calculated as `abs(d) - hours() - minutes() - seconds()`. Otherwise, it's calculated as `std::chrono::duration_cast<precision>(abs(d) - hours() - minutes() - seconds())`
+If `std::chrono::treat_as_floating_point_v<precision::rep>` is `true`, then this is calculated as `abs(d)-hours()-minutes()-seconds()`. Otherwise, it's calculated as `std::chrono::duration_cast<precision>(abs(d)-hours()-minutes()-seconds())`
 
 ## <a name="op_precision"></a> `hh_mm_ss::operator precision`
 
@@ -147,9 +140,9 @@ constexpr precision to_duration() const noexcept;
 
 ### Return value
 
-If `is_neg` is `true`, returns `-(h + m + s + ss)`. Otherwise, returns `h + m + s + ss`.
+If `is_neg` is `true`, returns `-(h+m+s+ss)`. Otherwise, returns `h+m+s+ss`.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[`<chrono>`](../standard-library/chrono.md)
+[`<chrono>`](../standard-library/chrono.md)\
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

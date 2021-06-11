@@ -1,10 +1,11 @@
 ---
 description: "Learn more about: weekday_last Class"
 title: "weekday_last class"
-ms.date: "04/28/2021"
+ms.date: "06/07/2021"
 f1_keywords: ["chrono/std::chrono::weekday_last", "chrono/std::chrono::weekday_last::ok", "std::chrono::weekday_last::weekday", "chrono/std::chrono::weekday_last::ok", "chrono/std::chrono::weekday_last::weekday"]
 helpviewer_keywords: ["std::chrono [C++], weekday_last"]
 ---
+
 # `weekday_last` class  
 
 Represents the last weekday of a month.
@@ -38,24 +39,23 @@ class weekday_last; // C++20
 
 |Name|Description|
 |----------|-----------------|
-| [`weekday::operator==`](chrono-operators.md#op_eq_eq) | Determine whether two `weekday_last` instances are equal. |
-| [`weekday::operator<<`](chrono-operators.md#op_left_shift) | Output a  `weekday_last` to the specified stream. |
+| [`operator==`](chrono-operators.md#op_eq_eq) | Determine whether two `weekday_last` instances are equal. |
+| [`operator<<`](chrono-operators.md#op_left_shift) | Output a  `weekday_last` to the specified stream. |
 
 ## Requirements
 
-**Header:** \<chrono> Since C++ 20
+**Header:** `<chrono>` Since C++ 20
 
 **Namespace:** `std::chrono`
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
-## <a name="weekday_last"></a> `weekday_last::weekday_last` constructor
+## <a name="weekday_last"></a> Constructor
 
-Constructs a `weekday_last` initialized with a `weekday` value.
+Constructs a `weekday_last` that is initialized with a `weekday` value.
 
 ```cpp
-constexpr explicit weekday_last(const chrono::weekday& wd) noexcept;
-// C++20
+constexpr explicit weekday_last(const chrono::weekday& wd) noexcept; // C++20
 ```
 
 ### Parameters
@@ -67,7 +67,7 @@ The weekday value for the created `weekday_last` class.
 
 It's easier to construct a `weekday_last` using the `weekday` `operator[]`. See the example below.
 
-## <a name="ok"></a> `weekday_last::ok`
+## <a name="ok"></a> `ok`
 
 Check if the value stored in this `weekday_last` is in the valid range.
 
@@ -79,7 +79,7 @@ constexpr bool ok() const noexcept;
 
 `true` if the week weekday value is in the valid range. Otherwise, `false`.
 
-## <a name="weekday"></a> `weekday_last::weekday`
+## <a name="weekday"></a> `weekday`
 
  Get the weekday value.
 
@@ -117,5 +117,7 @@ Monday
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[`<chrono>`](../standard-library/chrono.md)
+[`weekday` class](weekday-class.md)\
+[`weekday_indexed` class](weekdayindexed-class.md)\
+[`<chrono>`](chrono.md)\
+[Header Files Reference](cpp-standard-library-header-files.md)

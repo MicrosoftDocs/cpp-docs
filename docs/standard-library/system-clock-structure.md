@@ -51,9 +51,9 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 ## Requirements
 
-**Header:** \<chrono>
+**Header:** `<chrono>`
 
-**Namespace:** std::chrono
+**Namespace:** `std::chrono`
 
 ## <a name="from_time_t"></a> system_clock::from_time_t
 
@@ -114,7 +114,7 @@ A [time_point](../standard-library/time-point-class.md) object that represents t
 
 ## <a name="to_time_t"></a> system_clock::to_time_t
 
-Static method that returns a [time_t](../c-runtime-library/standard-types.md) that most closely approximates the time that is represented by *Time*.
+Static method that returns a [`time_t`](../c-runtime-library/standard-types.md) that most closely approximates the time that is represented by *Time*.
 
 ```cpp
 static time_t to_time_t(const time_point& Time) noexcept;
@@ -127,6 +127,6 @@ A [time_point](../standard-library/time-point-class.md) object.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[\<chrono>](../standard-library/chrono.md)\
-[steady_clock struct](../standard-library/steady-clock-struct.md)
+[`<chrono>`](../standard-library/chrono.md)\
+[`steady_clock` struct](../standard-library/steady-clock-struct.md)\
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

@@ -146,7 +146,7 @@
           href: ../standard-library/chrono-functions.md
         - name: <chrono> operators
           href: ../standard-library/chrono-operators.md
-        - name: chrono literals
+        - name: <chrono> literals
           href: ../standard-library/chrono-literals.md
         - name: common_type struct
           href: ../standard-library/common-type-structure.md
@@ -164,6 +164,14 @@
           href: ../standard-library/leap-second-info-struct.md
         - name: month class
           href: ../standard-library/month-class.md
+        - name: month_day class
+          href: ../standard-library/month-day-class.md
+        - name: month_day_last class
+          href: ../standard-library/month-day-last-class.md
+        - name: month_weekday class
+          href: ../standard-library/month-weekday-class.md
+        - name: month_weekday_last class
+          href: ../standard-library/month-weekday-last-class.md
         - name: steady_clock struct
           href: ../standard-library/steady-clock-struct.md
         - name: system_clock struct

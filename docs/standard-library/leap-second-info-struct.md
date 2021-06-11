@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: leap_second_info struct"
 title: "leap_second_info struct"
-ms.date: 04/29/2021
+ms.date: 06/07/2021
 f1_keywords: ["chrono/std::chrono::leap_second_info", "chrono/std::chrono::leap_second_info::is_leap_second", "chrono/std::chrono::leap_second_info::elapsed"]
 helpviewer_keywords: ["std::chrono [C++], leap_second_info struct", "std::chrono::leap_second_info::date function", "std::chrono::leap_second_info::value function"]
 ---
@@ -14,20 +14,15 @@ Microsoft C++ supports the `leap_second_info` struct starting in Visual Studio 2
 ## Syntax
 
 ```cpp
-namespace std::chrono {
-    struct leap_second_info {  // Since C++20
-        bool is_leap_second;
-        seconds elapsed;
-    };
-}
+struct leap_second_info; // C++20
 ```
 
 ## Public members
 
 | Name | Description |
 |--|--|
-| `leap_second_info::is_leap_second` | The `is_leap_second` member is **`true`** only if the specified time point is during a positive leap second insertion. |
-| `leap_second_info::elapsed` | The `elapsed` member holds the sum of leap seconds between the epoch date `1970-01-01`and the specified time. If `is_leap_second` is **`true`**, the leap second referred to by the specified time is included in the `elapsed` sum. |
+| `is_leap_second` | The `is_leap_second` member is **`true`** only if the specified time point is during a positive leap second insertion. |
+| `elapsed` | The `elapsed` member holds the sum of leap seconds between the epoch date `1970-01-01`and the specified time. If `is_leap_second` is **`true`**, the leap second referred to by the specified time is included in the `elapsed` sum. |
 
 ## Requirements
 
@@ -39,5 +34,5 @@ namespace std::chrono {
 
 [`<chrono>`](./chrono.md)\
 [`get_leap_second_info`](./chrono-functions.md#std-chrono-get-leap-second-info)\
-[Header files reference](./cpp-standard-library-header-files.md)\
-[`leap_second` class](./leap-second-class.md)
+[`leap_second` class](./leap-second-class.md)\
+[Header files reference](./cpp-standard-library-header-files.md)

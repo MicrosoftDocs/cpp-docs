@@ -22,58 +22,45 @@ See [Weekday constants](#weekday-constants), below, for constants that you can u
 
 ## Members
 
-### Constructors
-
 |Name|Description|
 |----------|-----------------|
-| [weekday](#weekday) | Constructs a `weekday` object with an uninitialized value. |
-| [weekday(unsigned wd)](#weekday) | Constructs a `weekday` object with the specified value. |
-| [weekday(const sys_days& dp)](#weekday) | Constructs a `weekday` object with the specified value. |
-| [const local_days& dp)](#weekday) | Constructs a `weekday` object with the specified value. |
-
-### Functions
-
-|Name|Description|
-|----------|-----------------|
+| [Constructors](#weekday) | Construct a `weekday`. |
 | [`c_encoding`](#c_encoding) | Get the `weekday` value. |
-| [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `weekday` from the given stream using the specified format. |
 | [`iso_encoding`](#iso_encoding) | Get the ISO 8601 `weekday` value. |
 | [`ok`](#ok) | Check if the `weekday` value is valid. |
+| [`operator++`](#op_++) | Increment the `weekday`. |
+| [`operator+=`](#op_+=) | Add the specified number of weekdays to this `weekday`. |
+| [`operator--`](#op_--) | Decrement the `weekday`. |
+| [`operator-=`](#op_-=) | Subtract the specified number of weekdays from this `weekday`. |
+| [`operator[]`](#op_[]) | Create a [weekday_indexed](weekdayindexed-class.md) or [weekday_last](weekdaylast-class.md) from this `weekday`. |
 
-### Operators
+### Non-members
 
 |Name|Description|
 |----------|-----------------|
-| [`weekday::operator+`](chrono-operators.md#op_add) | Add specified number of weekdays to this weekday. |
-| [`weekday::operator++`](#op_++) | Increment the weekday. |
-| [`weekday::operator+=`](#op_+=) | Add the specified number of weekdays to this `weekday`. |
-| [`weekday::operator-`](chrono-operators.md#op_minus) | Subtract the specified number of weekdays from this weekday, or find the difference between two weekdays. |
-| [`weekday::operator--`](#op_--) | Decrement the weekday. |
-| [`weekday::operator-=`](#op_-=) | Subtract the specified number of weekdays from this `weekday`. |
-| [`weekday::operator==`](chrono-operators.md#op_eq_eq) | Determine whether two `weekday`s are equal. |
-| [`weekday::operator<<`](chrono-operators.md#op_left_shift) | Output a  `weekday` to a stream. |
-| [`weekday::operator[]`](#op_[]) | Create a [weekday_indexed](weekdayindexed-class.md) or [weekday_last](weekdaylast-class.md) from this `weekday`. |
+| [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `weekday` from the given stream using the specified format. |
+| [`operator+`](chrono-operators.md#op_add) | Add specified number of weekdays to this `weekday`. |
+| [`operator-`](chrono-operators.md#op_minus) | Subtract the specified number of weekdays from this `weekday`, or find the difference between two `weekday` objects. |
+| [`operator==`](chrono-operators.md#op_eq_eq) | Determine whether two `weekday` objects are equal. |
+| [`operator<<`](chrono-operators.md#op_left_shift) | Output a  `weekday` to a stream. |
 
 ## Requirements
 
-**Header:** \<chrono> Since C++ 20
+**Header:** `<chrono>` Since C++ 20
 
 **Namespace:** `std::chrono`
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
-## <a name="weekday"></a> `weekday::weekday` constructors
+## <a name="weekday"></a> Constructors
 
 Constructs a `weekday`.
 
 ```cpp
-weekday() = default; // C++20
-
-explicit constexpr weekday(unsigned wd) noexcept; // C++20
-
-constexpr weekday(const sys_days& dp) noexcept; // C++20
-
-explicit constexpr weekday(const local_days& dp) noexcept; // C++20
+1) weekday() = default; // C++20
+2) explicit constexpr weekday(unsigned wd) noexcept; // C++20
+3) constexpr weekday(const sys_days& dp) noexcept; // C++20
+4) explicit constexpr weekday(const local_days& dp) noexcept; // C++20
 ```
 
 ### Parameters
@@ -86,14 +73,12 @@ Construct a `weekday` with value *`wd`*.
 
 ### Remarks
 
-|**Constructor**  | **Description**  |
-|---------|---------|
-| `weekday() = default` | The default constructor doesn't initialize the weekday value. |
-| `weekday(unsigned wd) noexcept` | Construct a `weekday` with the specified value.<br>If `wd` is 7, the `weekday` is constructed with a value of 0.<br>Don't initialize with values over 255 or the resulting `weekday` will have an unspecified value.  |
-| `constexpr weekday(const sys_days& dp) noexcept;` | Computes what day of the week corresponds to the `std::chrono::sys_days` value `dp`, and constructs a `weekday` using that day.|
-| `explicit constexpr weekday(const local_days& dp) noexcept;` | Computes what day of the week corresponds to the `std::chrono::local_days` value `dp`, and constructs a `weekday` using that day. It behaves as if you created the `weekday` using `weekday(std::chrono::sys_days(dp.time_since_epoch()))`|
+1\) The default constructor doesn't initialize the weekday value.\
+2\) Construct a `weekday` with the specified value.<br>If `wd` is 7, the `weekday` is constructed with a value of 0.<br>Don't initialize with values over 255 or the resulting `weekday` will have an unspecified value.\
+3\) Computes what day of the week corresponds to the `std::chrono::sys_days` value `dp`, and constructs a `weekday` using that day.\
+4\) Computes the day of the week that corresponds to the `std::chrono::local_days` value `dp`, and constructs a `weekday` using that day. It behaves as if you created the `weekday` using `weekday(std::chrono::sys_days(dp.time_since_epoch()))`.
 
-## <a name="c_encoding"></a> `weekday::c_encoding`
+## <a name="c_encoding"></a> `c_encoding`
 
 ```cpp
 constexpr unsigned c_encoding() const noexcept;
@@ -103,7 +88,7 @@ constexpr unsigned c_encoding() const noexcept;
 
 The weekday value.
 
-## <a name="iso_encoding"></a> `weekday::iso_encoding`
+## <a name="iso_encoding"></a> `iso_encoding`
 
  The weekday value, but with Sunday (0) is interpreted as 7 per ISO 8601.
 
@@ -115,7 +100,7 @@ constexpr unsigned iso_encoding() const noexcept;
 
 The weekday value.
 
-## <a name="ok"></a> `weekday::ok`
+## <a name="ok"></a> `ok`
 
 Check if the value stored in this `weekday` is in the valid range.
 
@@ -127,21 +112,19 @@ constexpr bool is_leap() const noexcept;
 
 `true` if the weekday value in the range [0, 6]. Otherwise, `false`.
 
-## <a name="op_++"></a> `weekday::operator++`
+## <a name="op_++"></a> `operator++`
 
 Add 1 to the weekday value.
 
 ```cpp
-constexpr std::chrono::weekday& operator++() noexcept;
-constexpr std::chrono::weekday operator++(int) noexcept;
+1) constexpr std::chrono::weekday& operator++() noexcept;
+2) constexpr std::chrono::weekday operator++(int) noexcept;
 ```
 
 ### Return value
 
-|Operator| Return value |
-|----------|----------------|
-|`constexpr std::chrono::weekday& operator++() noexcept;`| A reference to `*this` weekday *after* it has been incremented (a postfix increment).|
-|`constexpr std::chrono::weekday operator++(int) noexcept;` | A copy of the `weekday`, *before* it has been incremented (a prefix increment).|
+1\) A reference to `*this` weekday *after* it has been incremented (a postfix increment).\
+2\) A copy of the `weekday`, *before* it has been incremented (a prefix increment).
 
 ### Example: `operator++`
 
@@ -175,21 +158,19 @@ Sat
 
 The incremented value is modulo 7. It will always be in the range [0, 6].
 
-## <a name="op_--"></a> `weekday::operator--`
+## <a name="op_--"></a> `operator--`
 
 Subtract 1 from the `weekday` value.
 
 ```cpp
-constexpr std::chrono::weekday& operator--() noexcept;
-constexpr std::chrono::weekday operator--(int) noexcept;
+1) constexpr std::chrono::weekday& operator--() noexcept;
+2) constexpr std::chrono::weekday operator--(int) noexcept;
 ```
 
 ### Return value
 
-|Operator| Return value |
-|----------|----------------|
-| `constexpr std::chrono::weekday& operator--() noexcept;`| A reference to `*this` `weekday` *after* it has been decremented (a postfix decrement).|
-| `constexpr std::chrono::weekday operator--(int) noexcept;` | A copy of the `weekday` *before* it has been decremented (a prefix decrement).|
+1\) A reference to `*this` `weekday` *after* it has been decremented (a postfix decrement).\
+2\) A copy of the `weekday` *before* it has been decremented (a prefix decrement).
 
 ### Example: `operator--`
 
@@ -224,7 +205,7 @@ Tue
 
 If the decremented result is less than 0, it's set to 6.
 
-## <a name="op_+="></a> `weekday::operator+=`
+## <a name="op_+="></a> `operator+=`
 
 Add days to a `weekday`.
 
@@ -241,7 +222,7 @@ The number of days to add.
 
 The value of `*this + d`. The result will be modulo 7, in the range \[0, 6].
 
-## <a name="op_-="></a> `weekday::operator-=`
+## <a name="op_-="></a> `operator-=`
 
 Subtract days from the `weekday`.
 
@@ -258,7 +239,7 @@ The number of days to subtract.
 
 The value of `*this - d`. The result will be modulo 7, in the range \[0, 6].
 
-## <a name="op_[]"></a> `weekday::operator[]`
+## <a name="op_[]"></a> `operator[]`
 
 Create a [weekday_indexed](weekdayindexed-class.md) or [weekday_last](weekdaylast-class.md) from this `weekday`.
 
@@ -269,10 +250,10 @@ Create a [weekday_indexed](weekdayindexed-class.md) or [weekday_last](weekdaylas
 
 ### Return value
 
-1) `std::chrono::weekday_indexed(*this, index)`
-2) `std::chrono::weekday_last(*this)`
+1\) `std::chrono::weekday_indexed(*this, index)`\
+2\) `std::chrono::weekday_last(*this)`
 
-### Example: `weekday::operator[]`
+### Example: `operator[]`
 
 ```cpp
 #include <iostream>
@@ -303,7 +284,7 @@ Output:
 
 ### Weekday constants
 
-(C++20) The \<chrono> header defines the following constants that you can use with `weekday` for greater convenience, type-safety, and maintainability of your code. These constants are in scope when `std::chrono` is in scope.
+(C++20) The `<chrono>` header defines the following constants that you can use with `weekday` for greater convenience, type-safety, and maintainability of your code. These constants are in scope when `std::chrono` is in scope.
 
 ```cpp
 // Calendrical constants
@@ -318,5 +299,7 @@ inline constexpr std::chrono::weekday Saturday{6};
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[`<chrono>`](../standard-library/chrono.md)
+[`weekday_last` class](weekdaylast-class.md)\
+[`weekday_indexed` class](weekdayindexed-class.md)\
+[`<chrono>`](chrono.md)\
+[Header Files Reference](cpp-standard-library-header-files.md)

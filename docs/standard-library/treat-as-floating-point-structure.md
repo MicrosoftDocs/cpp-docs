@@ -22,11 +22,11 @@ struct treat_as_floating_point : is_floating_point<Rep>;
 
 ## Requirements
 
-**Header:** \<chrono>
+**Header:** `<chrono>`
 
-**Namespace:** std::chrono
+**Namespace:** `std::chrono`
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[\<chrono>](../standard-library/chrono.md)
+[`<chrono>`](../standard-library/chrono.md)\
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
