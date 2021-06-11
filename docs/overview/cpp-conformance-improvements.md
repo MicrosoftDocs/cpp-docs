@@ -2061,7 +2061,7 @@ int func() {
 
 ### `/Zc:twoPhase` and `/Zc:twoPhase-` switch behavior change
 
-Normally, the MSVC compiler switches work on the principle that the last one wins. Unfortunately, it wasn't the case with the **`/Zc:twoPhase`** and **`/Zc:twoPhase-`** switches. These switches were "sticky," so later switches couldn't override them. For example:
+Normally, the MSVC compiler switches work on the principle that the last one seen wins. Unfortunately, it wasn't the case with the **`/Zc:twoPhase`** and **`/Zc:twoPhase-`** switches. These switches were "sticky," so later switches couldn't override them. For example:
 
 `cl /Zc:twoPhase /permissive a.cpp`
 
@@ -2284,7 +2284,7 @@ template<> inline int S<int>::f() { return 2; }
 
 ### Deduced return type name mangling
 
-Starting in Visual Studio 2019 version 16.10, the compiler has made a breaking change to the way it generates mangled names for functions that have deduced return types. For example, consider these functions:
+Starting in Visual Studio 2019 version 16.10, the compiler changed how it generates mangled names for functions that have deduced return types. For example, consider these functions:
 
 ```cpp
 auto f() { return 0; }
@@ -2335,7 +2335,7 @@ int f();
 int main() { f(); }
 ```
 
-In versions before version 16.10, the compiler produced a name for `auto f()` which looked like `int f()`, even though they're semantically distinct functions. That means the example would compile. To fix the issue, don't rely on `auto` in the original definition of `f`. Instead, write it as `int f()`. Because functions that have deduced return types are always compiled, the ABI implications are minimized.
+In versions before version 16.10, the compiler produced a name for `auto f()` that looked like `int f()`, even though they're semantically distinct functions. That means the example would compile. To fix the issue, don't rely on `auto` in the original definition of `f`. Instead, write it as `int f()`. Because functions that have deduced return types are always compiled, the ABI implications are minimized.
 
 ### Warning for ignored `nodiscard` attribute
 
@@ -2359,7 +2359,7 @@ To fix this issue, move the attribute to the correct syntactic position:
 
 ### Warning for `include` directives with system header-names in module purview
 
-Starting in Visual Studio 2019 version 16.10, the compiler warns to prevent a common module interface authoring mistake. If you include a standard library header after an `export module` statement, the compiler emits warning C5246. Here's an example:
+Starting in Visual Studio 2019 version 16.10, the compiler emits a warning to prevent a common module interface authoring mistake. If you include a standard library header after an `export module` statement, the compiler emits warning C5244. Here's an example:
 
 ```cpp
 export module m;
@@ -2414,7 +2414,9 @@ auto f2() // warning C5245: 'f2': unreferenced function with internal linkage ha
 
 ### Warning on brace elision
 
-Starting in Visual Studio 2019 version 16.10, the compiler warns on initialization lists that don't use braces for sub-objects. When it's enabled, the compiler issues [off-by-default](../preprocessor/compiler-warnings-that-are-off-by-default.md) warning C5246 in all **`/std`** modes. Here's an example:
+Starting in Visual Studio 2019 version 16.10, the compiler warns on initialization lists that don't use braces for subobjects. The compiler emits [off-by-default](../preprocessor/compiler-warnings-that-are-off-by-default.md) warning C5246.
+
+Here's an example:
 
 ```cpp
 struct S1 {
@@ -2429,7 +2431,7 @@ struct S2 {
 S2 s2{ 1, 2, 3 }; // warning C5246: 'S2::s1': the initialization of a subobject should be wrapped in braces
 ```
 
-To fix this issue, wrap the initialization of the sub-object in braces:
+To fix this issue, wrap the initialization of the subobject in braces:
 
 ```cpp
 S2 s2{ { 1, 2 }, 3 };

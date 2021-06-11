@@ -151,9 +151,9 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C5217 (level 4) | a structured binding declaration that includes volatile is deprecated in C++20 <sup>16.7</sup> |
 | C5219 (level 2) | implicit conversion from '*type-1*' to '*type-2*', possible loss of data <sup>16.7</sup> |
 | C5220 (level 4) | '*member*': a non-static data member with a volatile qualified type no longer implies that<br/> compiler generated copy/move constructors and copy/move assignment operators are not trivial <sup>16.7</sup> |
-| C5233 (level 4) | explicit lambda capture '%$I' is not used <sup>16.10</sup> |
+| C5233 (level 4) | explicit lambda capture '*identifier*' is not used <sup>16.10</sup> |
 | C5240 (level 4) | '*attribute-name*': attribute is ignored in this syntactic position <sup>16.10</sup> |
-| C5243 (level 1) | '*type-name*': using incomplete class '%2$pS' can cause potential one definition rule violation due to ABI limitation <sup>16.10</sup> |
+| C5243 (level 1) | '*type-name*': using incomplete class '*class-name*' can cause potential one definition rule violation due to ABI limitation <sup>16.10</sup> |
 | C5245 (level 4) | '*function*': unreferenced function with internal linkage has been removed |
 | C5246 (level 1) | '*member*': the initialization of a subobject should be wrapped in braces <sup>16.10</sup> |
 | C5247 (level 1) | Section '*section-name*' is reserved for C++ dynamic initialization.<br/> Manually creating the section will interfere with C++ dynamic initialization and may lead to undefined behavior <sup>16.11</sup> |
@@ -186,8 +186,8 @@ These warnings were off by default in versions of the compiler before Visual Stu
 | Warning | Message |
 |--|--|
 | [C4302](../error-messages/compiler-warnings/compiler-warning-level-2-c4302.md) (level 2) | '*conversion*': truncation from '*type1*' to '*type2*' |
-| [C4311](../error-messages/compiler-warnings/compiler-warning-level-1-c4311.md) (level 1) | '*variable*' : pointer truncation from '*type*' to '*type*' |
-| [C4312](../error-messages/compiler-warnings/compiler-warning-level-1-c4312.md) (level 1) | '*operation*' : conversion from '*type1*' to '*type2*' of greater size |
+| [C4311](../error-messages/compiler-warnings/compiler-warning-level-1-c4311.md) (level 1) | '*variable*': pointer truncation from '*type*' to '*type*' |
+| [C4312](../error-messages/compiler-warnings/compiler-warning-level-1-c4312.md) (level 1) | '*operation*': conversion from '*type1*' to '*type2*' of greater size |
 | [C4319](../error-messages/compiler-warnings/compiler-warning-level-1-c4319.md) (level 1) | '*operator*': zero extending '*type1*' to '*type2*' of greater size |
 
 This warning was off by default in versions of the compiler before Visual Studio 2012:
