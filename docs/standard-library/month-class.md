@@ -12,7 +12,7 @@ Represents a month of a year. For example, July.
 ## Syntax
 
 ```cpp
-class month; // c++ 20
+class month; // C++ 20
 ```
 
 ## Remarks
@@ -22,50 +22,42 @@ See [Month constants](#month-constants), below, for constants that you can use w
 
 ## Members
 
-### Constructors
-
 |Name|Description|
 |----------|-----------------|
-| [month](#month) | Constructs a `month` object with an uninitialized value. |
-| [month(unsigned m)](#month) | Constructs a `month` object with the specified value. |
-
-### Functions
-
-|Name|Description|
-|----------|-----------------|
-| [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a month from the given stream using the specified format. |
+| [Constructors](#month) | Construct a `month`. |
 | [`ok`](#ok) | Verify that the month value is in the valid range [1,31]. |
+| [`operator++`](#op_++) | Increment the `month`. |
+| [`operator+=`](#op_+=) | Add the specified number of months to this `month`. |
+| [`operator--`](#op_--) | Decrement this `month`. |
+| [`operator-=`](#op_-=) | Subtract the specified number of months from this `month`. |
+| [`operator unsigned`](#op_unsigned) | Get the `month` value. |
 
-### Operators
+## Non-members
 
-|Name|Description|
-|----------|-----------------|
-| [`month::operator+`](chrono-operators.md#op_add) | Add specified number of months to this `month`, returning a new `month` instance. |
-| [`month::operator++`](#op_++) | Increment the `month`. |
-| [`month::operator+=`](#op_+=) | Add the specified number of months to this `month`. |
-| [`month::operator-`](chrono-operators.md#op_minus) | Subtract the specified number of months from this month. Returns a new `month` instance. |
-| [`month::operator--`](#op_--) | Decrement this `month`. |
-| [`month::operator-=`](#op_-=) | Subtract the specified number of months from this `month`. |
-| [`month::operator==`](chrono-operators.md#op_eq_eq) | Determine whether two months are equal. |
-| [`month::operator<=>`](chrono-operators.md#op_spaceship) | Compare this month against another month. The >, >=, <=, <, and != operators are synthesized by the compiler. |
-| [`month::operator<<`](chrono-operators.md#op_left_shift) | Output a `month` to the given stream. |
-| [`month::operator unsigned`](#op_unsigned) | Get the `month` value |
+| Name | Description |
+|--|--|
+| [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `month` from the given stream using the specified format. |
+| [`operator+`](chrono-operators.md#op_add) | Add specified number of months to this `month`, returning a new `month` instance. |
+| [`operator-`](chrono-operators.md#op_minus) | Subtract the specified number of months from this month. Returns a new `month` instance. |
+| [`operator==`](chrono-operators.md#op_eq_eq) | Determine whether two months are equal. |
+| [`operator<=>`](chrono-operators.md#op_spaceship) | Compare this month against another month. The `>, >=, <=, <, !=` operators are synthesized by the compiler. |
+| [`operator<<`](chrono-operators.md#op_left_shift) | Output a `month` to the given stream. |
 
 ## Requirements
 
-**Header:** \<chrono> (since C++20)
+**Header:** `<chrono>` (since C++20)
 
 **Namespace:** `std::chrono`
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
-## <a name="month"></a> `month::month` constructor
+## <a name="month"></a> Constructors
 
-Constructs a `month`.
+Construct a `month`.
 
 ```cpp
-month() = default;
-explicit constexpr month(unsigned m) noexcept;
+1) month() = default;
+2) explicit constexpr month(unsigned m) noexcept;
 ```
 
 ### Parameters
@@ -75,12 +67,10 @@ Construct a `month` with value *`m`*.
 
 ### Remarks
 
-|**Constructor**  | **Description**  |
-|---------|---------|
-| `month() = default` | The default constructor doesn't initialize the day value. |
-|  `month(unsigned m) noexcept` | Construct a `month` with the day value initialized to `m` |
+1\) The default constructor doesn't initialize the day value.\
+2\) Construct a `month` with the day value initialized to `m`.
 
-## <a name="ok"></a> `month::ok`
+## <a name="ok"></a> `ok`
 
 Check if the value stored in this `month` is in the valid range.
 
@@ -92,21 +82,19 @@ constexpr bool ok() const noexcept;
 
 `true` if the month value is in the range [1,12]. Otherwise, `false`.
 
-## <a name="op_++"></a> `month::operator++`
+## <a name="op_++"></a> `operator++`
 
 Increment the month value.
 
 ```cpp
-constexpr std::chrono::month& operator++() noexcept;
-constexpr std::chrono::month operator++(int) noexcept;
+1) constexpr month& operator++() noexcept;
+2) constexpr month operator++(int) noexcept;
 ```
 
 ### Return value
 
-|Operator| Return value |
-|----------|----------------|
-|`constexpr std::chrono::month& operator++() noexcept;`| A reference to `*this` month *after* it has been incremented (a postfix increment).|
-|`constexpr std::chrono::month operator++(int) noexcept;` | A copy of the `month`, *before* it has been incremented (a prefix increment).|
+1\) A reference to `*this` month *after* it has been incremented (a postfix increment).\
+2\) A copy of the `month`, *before* it has been incremented (a prefix increment).
 
 ### Example: `operator++`
 
@@ -114,12 +102,11 @@ constexpr std::chrono::month operator++(int) noexcept;
 #include <iostream>
 #include <chrono>
 
-using namespace std;
 using namespace std::chrono;
 
 int main()
 {
-    std::chrono::month m{1};
+    month m{1};
 
     std::cout << m << " " << ++m << "\n"; // constexpr month& operator++() noexcept
     std::cout << m << " " << m++ << "\n"; // constexpr month operator++(int) noexcept
@@ -129,7 +116,6 @@ int main()
 }
 ```
 
-Output:
 ```output
 Jan Feb
 Feb Feb
@@ -140,21 +126,19 @@ Mar
 
 If the result exceeds 12, it's set to 1.
 
-## <a name="op_--"></a> `month::operator--`
+## <a name="op_--"></a> `operator--`
 
 Subtract 1 from the month value.
 
 ```cpp
-constexpr std::chrono::month& operator--() noexcept;
-constexpr std::chrono::month operator--(int) noexcept;
+1) constexpr month& operator--() noexcept;
+2) constexpr month operator--(int) noexcept;
 ```
 
 ### Return value
 
-|Operator| Return value |
-|----------|----------------|
-| `constexpr std::chrono::month& operator--() noexcept;`| A reference to `*this` `month` *after* it has been decremented (a postfix decrement).|
-| `constexpr std::chrono::month operator--(int) noexcept;` | A copy of the `month` *before* it has been decremented (a prefix decrement).|
+1\) A reference to `*this` `month` *after* it has been decremented (a postfix decrement).\
+2\) A copy of the `month` *before* it has been decremented (a prefix decrement).
 
 ### Example: `operator--`
 
@@ -177,8 +161,6 @@ int main()
 }
 ```
 
-Output:
-
 ```output
 May Apr
 Apr Apr
@@ -189,7 +171,7 @@ Mar
 
 If the decremented result is less than 1, it's set to 12.
 
-## <a name="op_+="></a> `month::operator+=`
+## <a name="op_+="></a> `operator+=`
 
 Add months to this `month`.
 
@@ -206,9 +188,9 @@ The number of months to add.
 
 `*this`
 
-## <a name="op_-="></a> `day::operator-=`
+## <a name="op_-="></a> `operator-=`
 
-Subtract months from this `month`.
+Subtract `months` from this `month`.
 
 ```cpp
 constexpr month& operator-=(const months& m) noexcept;
@@ -217,15 +199,15 @@ constexpr month& operator-=(const months& m) noexcept;
 ### Parameters
 
 *`m`*\
-The number of months to subtract.
+The months to subtract.
 
 ### Return value
 
 `*this`.
 
-## <a name="op_unsigned"></a> `month::operator unsigned`
+## <a name="op_unsigned"></a> `operator unsigned`
 
-Get the `month` value.
+Get the unsigned `month` value.
 
 ```cpp
 explicit constexpr operator unsigned() const noexcept;
@@ -233,7 +215,7 @@ explicit constexpr operator unsigned() const noexcept;
 
 ### Return value
 
-The value of the `month`
+The unsigned value of this `month`
 
 ### Example: `operator unsigned()`
 
@@ -241,12 +223,11 @@ The value of the `month`
 #include <iostream>
 #include <chrono>
 
-using namespace std;
 using namespace std::chrono;
 
 int main()
 {
-    std::chrono::month m{July};
+    month m{July};
     unsigned monthValue = static_cast<unsigned>(m);
     std::cout << monthValue << "\n";
 
@@ -254,14 +235,13 @@ int main()
 }
 ```
 
-Output:
 ```Output
 7
 ```
 
 ### Month constants
 
-(C++20) The \<chrono> header defines the following constants that you can use with `month` for greater convenience, type-safety, and maintainability of your code. These constants are in scope when std::chrono is in scope.
+(C++20) The `<chrono>` header defines the following constants that you can use with `month` for greater convenience, type-safety, and maintainability of your code. These constants are in scope when `std::chrono` is in scope.
 
 ```cpp
 // Calendrical constants
@@ -281,5 +261,8 @@ inline constexpr month December{12};
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[`<chrono>`](../standard-library/chrono.md)
+[`<chrono>`](chrono.md)\
+[`month_day` Class](month-day-class.md)\
+[`month_day_last` Class](month-day-last-class.md)\
+[`month_weekday` Class](month-weekday-class.md)\
+[`month_weekday_last` class](month-weekday-last-class.md)

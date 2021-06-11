@@ -44,14 +44,14 @@ friend F;
 
 The first form introduces a new class F if no existing class by that name was found in the innermost namespace. **C++11**: The second form does not introduce a new class; it can be used when the class has already been declared, and it must be used when declaring a template type parameter or a typedef as a friend.
 
-Use `class friend F` when the referenced type has not yet been declared:
+Use `friend class F` when the referenced type has not yet been declared:
 
 ```cpp
 namespace NS
 {
     class M
     {
-        class friend F;  // Introduces F but doesn't define it
+        friend class F;  // Introduces F but doesn't define it
     };
 }
 ```
