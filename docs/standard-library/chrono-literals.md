@@ -1,8 +1,8 @@
 ---
 description: "Learn more about: `chrono` literals"
-title: "chrono literals"
-f1_keywords: ["chrono/std::literals::chrono_literals", "std::literals::chrono_literals", "chrono_literals"]
-ms.date: "4/23/2021"
+title: "<chrono> literals"
+f1_keywords: ["chrono/std::literals::chrono_literals", "std::literals::chrono_literals", "chrono_literals", 'chrono/std::operator"" d', 'chrono/std::operator"" h', 'chrono/std::operator"" min', 'chrono/std::operator"" s', 'chrono/std::operator"" ms', 'chrono/std::operator"" us', 'chrono/std::operator"" ns', 'chrono/std::operator"" y']
+ms.date: "6/3/2021"
 ---
 # `chrono` literals
 
@@ -14,7 +14,7 @@ ms.date: "4/23/2021"
 inline namespace literals {
   inline namespace chrono_literals {
     // return integral days
-    constexpr std::chrono::day operator ""d(unsigned long long d) noexcept;
+    constexpr std::chrono::day operator"" d(unsigned long long d) noexcept;
 
     // return integral hours
     constexpr chrono::hours operator"" h(unsigned long long Val);

@@ -59,7 +59,7 @@ namespace std::chrono {
 
 ## Requirements
 
-**Header:** \<chrono>
+**Header:** `<chrono>`
 
 **Namespace:** `std::chrono`
 
@@ -177,5 +177,5 @@ Microsoft C++ supports `time_zone::to_sys` starting in Visual Studio 2019 versio
 
 ## See also
 
-[Header files reference](./cpp-standard-library-header-files.md)\
-[`<chrono>`](./chrono.md)
+[`<chrono>`](./chrono.md)\
+[Header files reference](./cpp-standard-library-header-files.md)

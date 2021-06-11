@@ -48,4 +48,12 @@ Read these articles from the official C++ team blog for more information on C++ 
 
 [Faster builds with PCH suggestions from C++ Build Insights](https://devblogs.microsoft.com/cppblog/faster-builds-with-pch-suggestions-from-c-build-insights/)
 
+[Profiling template metaprograms with C++ Build Insights](https://devblogs.microsoft.com/cppblog/profiling-template-metaprograms-with-cpp-build-insights/)
+
+[Improving code generation time with C++ Build Insights](https://devblogs.microsoft.com/cppblog/improving-code-generation-time-with-cpp-build-insights/)
+
+[Introducing vcperf /timetrace for C++ build time analysis](https://devblogs.microsoft.com/cppblog/introducing-vcperf-timetrace-for-cpp-build-time-analysis/)
+
+[Faster C++ builds, simplified: a new metric for time](https://devblogs.microsoft.com/cppblog/faster-cpp-builds-simplified-a-new-metric-for-time/)
+
 ::: moniker-end

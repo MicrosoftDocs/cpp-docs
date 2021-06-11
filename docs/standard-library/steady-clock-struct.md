@@ -46,12 +46,12 @@ A clock is *monotonic* if the value that is returned by a first call to `now` is
 
 ## Requirements
 
-**Header:** \<chrono>
+**Header:** `<chrono>`
 
-**Namespace:** std::chrono
+**Namespace:** `std::chrono`
 
 ## See also
 
-- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
-- [\<chrono>](../standard-library/chrono.md)
+- [`<chrono>`](../standard-library/chrono.md)
 - [system_clock Structure](../standard-library/system-clock-structure.md)
+- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

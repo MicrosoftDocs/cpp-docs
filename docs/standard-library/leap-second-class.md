@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: leap_second class"
 title: "leap_second class"
-ms.date: 04/29/2021
+ms.date: 06/7/2021
 f1_keywords: ["chrono/std::chrono::leap_second", "chrono/std::chrono::leap_second::date", "chrono/std::chrono::leap_second::value"]
 helpviewer_keywords: ["std::chrono [C++], leap_second class", "std::chrono::leap_second::date function", "std::chrono::leap_second::value function"]
 ---
@@ -14,32 +14,41 @@ Microsoft C++ supports the `leap_second` class starting in Visual Studio 2019 ve
 ## Syntax
 
 ```cpp
-namespace std::chrono {
-    class leap_second {  // Since C++20
-    public:
-        leap_second(const leap_second&) = default;
-        leap_second& operator=(const leap_second&) = default;
-        // unspecified additional constructors
-        constexpr sys_seconds date() const noexcept;
-        constexpr seconds value() const noexcept;
-    };
-}
+class leap_second  // Since C++20
 ```
 
 ## Members
 
-### Public member functions
-
 | Name | Description |
 |--|--|
-| [`leap_second::date`](#std-chrono-leap-second-date) | Gets the date and time when the leap second was inserted. |
-| [`leap_second::value`](#std-chrono-leap-second-value) | Gets the positive or negative number of leap seconds inserted. |
+| [Constructor](#leap_second) | Construct a `leap_second` |
+| [`date`](#std-chrono-leap-second-date) | Gets the date and time when the leap second was inserted. |
+| [`value`](#std-chrono-leap-second-value) | Gets the positive or negative number of leap seconds inserted. |
 
 ## Requirements
 
 **Header:** `<chrono>`
 
 **Namespace:** `std::chrono`
+
+**Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
+
+## <a name="leap_second"></a> Constructor
+
+Construct a `leap_second`.
+
+```cpp
+leap_second(const leap_second& ls) = default;
+```
+
+### Parameters
+
+*`ls`*\
+The `leap_second` that this object will be a copy of.
+
+### Remarks
+
+You can't construct `leap_second` objects except by copying an existing `leap_second`. `leap_second` instances are provided by the library. You typically don't create them.
 
 ## <a name="std-chrono-leap-second-date"></a> `date`
 
@@ -75,7 +84,7 @@ Microsoft C++ supports `leap_second::value` starting in Visual Studio 2019 versi
 
 ## See also
 
-[`<chrono>`](./chrono.md)
+[`<chrono>`](./chrono.md)\
 [`get_leap_second_info` function](./chrono-functions.md#std-chrono-get-leap-second-info)\
-[Header files reference](./cpp-standard-library-header-files.md)\
-[`leap_second_info` struct](./leap-second-info-struct.md)
+[`leap_second_info` struct](./leap-second-info-struct.md)\
+[Header files reference](./cpp-standard-library-header-files.md)

@@ -28,9 +28,9 @@ struct duration_values;
 
 ## Requirements
 
-**Header:** \<chrono>
+**Header:** `<chrono>`
 
-**Namespace:** std::chrono
+**Namespace:** `std::chrono`
 
 ## <a name="max"></a> duration_values::max
 
@@ -78,5 +78,5 @@ When `Rep` is a user-defined type, the return value must represent the additive 
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[\<chrono>](../standard-library/chrono.md)
+[`<chrono>`](../standard-library/chrono.md)\
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

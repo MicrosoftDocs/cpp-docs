@@ -1,8 +1,8 @@
 ---
 description: "Learn more about: year Class"
 title: "year class"
-ms.date: "04/27/2021"
-f1_keywords: ["chrono/std::chrono::year", "chrono/std::chrono::year::January", "chrono/std::chrono::year::February", "chrono/std::chrono::year::March","chrono/std::chrono::year::April","chrono/std::chrono::year::May","chrono/std::chrono::year::June","chrono/std::chrono::year::July","chrono/std::chrono::year::August","chrono/std::chrono::year::September","chrono/std::chrono::year::October","chrono/std::chrono::year::November","chrono/std::chrono::year::December","chrono/std::chrono::year::operator++", "chrono/std::chrono::year::operator--", "chrono/std::chrono::year::operator unsigned", "chrono/std::chrono::year::is_leap", "chrono/std::chrono::year::max", "chrono/std::chrono::min", "chrono/std::chrono::year::ok"]
+ms.date: "06/07/2021"
+f1_keywords: ["chrono/std::chrono::year", "chrono/std::chrono::year::operator++", "chrono/std::chrono::year::operator--", "chrono/std::chrono::year::operator+=", "chrono/std::chrono::year::operator-=", "chrono/std::chrono::year::operator int", "chrono/std::chrono::year::is_leap", "chrono/std::chrono::year::max", "chrono/std::chrono::min", "chrono/std::chrono::year::ok"]
 helpviewer_keywords: ["std::chrono [C++], year"]
 ---
 # `year` class  
@@ -12,63 +12,57 @@ Represents a year in the [Gregorian calendar](https://en.wikipedia.org/wiki/Prol
 ## Syntax
 
 ```cpp
-class year; // c++20
+class year; // C++20
 ```
 
 ## Remarks
 
- A `year` can hold a value of -32767 to 32767.
+ A `year` can hold a year value between -32767 to 32767.
 
 ## Members
 
-### Constructors
-
-|Name|Description|
-|----------|-----------------|
-| [year](#year) | Constructs a `year` object with an uninitialized value. |
-| [year(unsigned y)](#year) | Constructs a `year` object with the specified value. |
-
-### Functions
-
-|Name|Description|
-|----------|-----------------|
-| [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a year from a stream using the specified format. |
+| Name | Description |
+|--|--|
+| [Constructors](#year) | Construct a `year` |
 | [`is_leap`](#is_leap) | Determine if the year is a leap year. |
 | [`max`](#max) | Returns the largest possible year value. |
 | [`min`](#min) | Returns the smallest possible year value. |
 | [`ok`](#ok) | Verify that the year value is in the valid range [-32767, 32767]. |
+| [`operator+`](#op_unary+) | Unary plus. |
+| [`operator++`](#op_++) | Increment the year. |
+| [`operator+=`](#op_+=) | Add the specified number of years to this `year`. |
+| [`operator-`](#op_unary-) | Unary minus. |
+| [`operator--`](#op_--) | Decrement the year. |
+| [`operator-=`](#op_-=) | Subtract the specified number of years from this `year`. |
+| [`operator int`](#op_int) | Get the `year` value. |
 
-### Operators
+## Non-members
 
-|Name|Description|
-|----------|-----------------|
-| [`year::operator+`](chrono-operators.md#op_unary_plus) | Unary plus. Returns `*this`. |
-| [`year::operator++`](#op_++) | Increment the year. |
-| [`year::operator+=`](#op_+=) | Add the specified number of years to this `year`. |
-| [`year::operator-`](chrono-operators.md#op_unary_negate) | Unary negation. |
-| [`year::operator--`](#op_--) | Decrement the year. |
-| [`year::operator-=`](#op_-=) | Subtract the specified number of years from this `year`. |
-| [`year::operator==`](chrono-operators.md#op_eq_eq) | Determine whether two years are equal. |
-| [`year::operator<=>`](chrono-operators.md#op_spaceship) | Compare this year against another year. The >, >=, <=, <, and != operators are synthesized by the compiler. |
-| [`year::operator<<`](chrono-operators.md#op_left_shift) | Output a `year` to the given stream. |
-| [`year::operator""y`](chrono-literals.md) | Create a `year` literal for a day in the year. |
-| [`year::operator int`](#op_int) | Get the `year` value |
+| Name | Description |
+|--|--|
+| [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `year` from a stream using the specified format |
+| [`operator+`](chrono-operators.md#op_add) | Add years. |
+| [`operator-`](chrono-operators.md#op_minus) | Subtract years. |
+| [`operator==`](chrono-operators.md#op_eq_eq) | Determine whether two years are equal. |
+| [`operator<=>`](chrono-operators.md#op_spaceship) | Compare this `year` against another `year`. The `>, >=, <=, <, !=` operators are synthesized by the compiler. |
+| [`operator<<`](chrono-operators.md#op_left_shift) | Output a `year` to the given stream. |
+| [`operator""y`](chrono-literals.md) | Create a `year` literal. |
 
 ## Requirements
 
-**Header:** \<chrono> (since C++20)
+**Header:** `<chrono>` (since C++20)
 
 **Namespace:** `std::chrono`
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
-## <a name="year"></a> `year::year` constructor
+## <a name="year"></a> Constructors
 
-Constructs a `year`.
+Construct a `year`.
 
 ```cpp
-year() = default;
-explicit constexpr year(unsigned m) noexcept;
+1) year() = default;
+2) explicit constexpr year(unsigned y) noexcept;
 ```
 
 ### Parameters
@@ -78,12 +72,31 @@ Construct a `year` with value *`y`*.
 
 ### Remarks
 
-|**Constructor**  | **Description**  |
-|---------|---------|
-| `year() = default` | The default constructor doesn't initialize the year value. |
-|  `year(unsigned m) noexcept` | Construct a `year` with the specified value  |
+1\) The default constructor doesn't initialize the `year` value.\
+2\) Construct a `year` with the specified value.
 
-## <a name="is_leap"></a> `year::is_leap`
+### Example: Create a `year`
+
+```cpp
+#include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
+
+int main()
+{
+    year y{2021};
+
+    std::cout << y;
+    return 0;
+}
+```
+
+```output
+2021
+```
+
+## <a name="is_leap"></a> `is_leap`
 
 Check if the value stored in this `year` is in the valid range.
 
@@ -94,31 +107,33 @@ constexpr bool is_leap() const noexcept;
 ### Return value
 
 `true` if the year value is a leap year. Otherwise, `false`.
-A leap year is a year divisible by 4 but not 100, or is divisible by 400.
+A leap year is a year divisible by 4 but not 100--or is divisible by 400.
 
-## <a name="max"></a> `year::max`
+## <a name="max"></a> `max`
 
 Returns the largest possible year.
 
 ```cpp
-static constexpr std::chrono::year max() noexcept;
+static constexpr year max() noexcept;
 ```
 
 ### Return value
 
-`std::chrono::year(32767)`
+`year{32767}`
 
-## <a name="min"></a> `year::min`
+## <a name="min"></a> `min`
 
 Returns the smallest possible year.
 
 ```cpp
-static constexpr std::chrono::year min() noexcept;
+static constexpr year min() noexcept;
 ```
 
 ### Return value
 
-## <a name="ok"></a> `year::ok`
+`year{-32767}`
+
+## <a name="ok"></a> `ok`
 
 Check if the value stored in this `year` is in the valid range.
 
@@ -130,21 +145,53 @@ constexpr bool ok() const noexcept;
 
 `true` if the year value is in the range [-32676, 32767]. Otherwise, `false`.
 
-## <a name="op_++"></a> `year::operator++`
+## <a name="op_unary+"></a> `operator+`
 
-Add 1 to the year value.
+Apply unary plus.
 
 ```cpp
-constexpr std::chrono::year& operator++() noexcept;
-constexpr std::chrono::year operator++(int) noexcept;
+constexpr year operator+() const noexcept;
 ```
 
 ### Return value
 
-|Operator| Return value |
-|----------|----------------|
-|`constexpr std::chrono::year& operator++() noexcept;`| A reference to `*this` year *after* it has been incremented (a postfix increment).|
-|`constexpr std::chrono::year operator++(int) noexcept;` | A copy of the `year`, *before* it has been incremented (a prefix increment).|
+Returns `*this`
+
+### Example: unary `operator+`
+
+```cpp
+#include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
+
+int main()
+{
+   year y{-1};
+   std::cout << +y;
+   return 0;
+}
+```
+
+Output:
+
+```output
+-0001
+```
+
+## <a name="op_++"></a> `operator++`
+
+Add 1 to the year value.
+
+```cpp
+1) constexpr year& operator++() noexcept;
+2) constexpr year operator++(int) noexcept;
+```
+
+### Return value
+
+1\) Returns reference to this year *after* it has been incremented (a postfix increment).\
+2\) Returns a copy of the `year`, *before* it has been incremented (a prefix increment).
 
 ### Example: `operator++`
 
@@ -152,12 +199,11 @@ constexpr std::chrono::year operator++(int) noexcept;
 #include <iostream>
 #include <chrono>
 
-using namespace std;
 using namespace std::chrono;
 
 int main()
 {
-    std::chrono::year y{2021};
+    year y{2021};
 
     std::cout << y << " " << ++y << "\n"; // constexpr year& operator++() noexcept
     std::cout << y << " " << y++ << "\n"; // constexpr year operator++(int) noexcept
@@ -166,7 +212,6 @@ int main()
 }
 ```
 
-Output:
 ```output
 2021 2022
 2022 2022
@@ -177,21 +222,54 @@ Output:
 
 If the incremented result exceeds 32767, it overflows to -32768
 
-## <a name="op_--"></a> `year::operator--`
+## <a name="op_unary-"></a> `operator-`
 
-Subtract 1 from the year value.
+Unary minus. Negate the `year`.
 
 ```cpp
-constexpr std::chrono::year& operator--() noexcept;
-constexpr std::chrono::year operator--(int) noexcept;
+constexpr year operator-() const noexcept; // C++ 20
 ```
 
 ### Return value
 
-|Operator| Return value |
-|----------|----------------|
-| `constexpr std::chrono::year& operator--() noexcept;`| A reference to `*this` `year` *after* it has been decremented (a postfix decrement).|
-| `constexpr std::chrono::year operator--(int) noexcept;` | A copy of the `year` *before* it has been decremented (a prefix decrement).|
+Returns a negated copy of the `year`.
+
+### Example: unary `operator-`
+
+```cpp
+#include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
+
+int main()
+{
+   year y{1977};
+   std::cout << -y << '\n';
+
+   return 0;
+}
+```
+
+Output:
+
+```output
+-1977
+```
+
+## <a name="op_--"></a> `operator--`
+
+Subtract 1 from the year value.
+
+```cpp
+1) constexpr year& operator--() noexcept;
+2) constexpr year operator--(int) noexcept;
+```
+
+### Return value
+
+1\) A reference to this `year` *after* it has been decremented (a postfix decrement).\
+2\) A copy of the `year` *before* it has been decremented (a prefix decrement).
 
 ### Example: `operator--`
 
@@ -199,19 +277,19 @@ constexpr std::chrono::year operator--(int) noexcept;
 #include <iostream>
 #include <chrono>
 
+using namespace std::chrono;
+
 int main()
 {
-   std::chrono::year y{2021};
+   year y{2021};
 
-    cout << y << " " << --y << "\n"; // constexpr year& operator++() noexcept
-    cout << y << " " << y-- << "\n"; // constexpr year operator++(int) noexcept
-    cout << y << "\n";
+    std::cout << y << " " << --y << "\n"; // constexpr year& operator++() noexcept
+    std::cout << y << " " << y-- << "\n"; // constexpr year operator++(int) noexcept
+    std::cout << y << "\n";
 
     return 0;
 }
 ```
-
-Output:
 
 ```output
 2021 2020
@@ -223,7 +301,7 @@ Output:
 
 If the decremented result is less than -32768, it's set to 32767.
 
-## <a name="op_+="></a> `year::operator+=`
+## <a name="op_+="></a> `operator+=`
 
 Add days to this `year`.
 
@@ -240,7 +318,7 @@ The number of years to add.
 
 `*this` If the incremented result exceeds 32767, it overflows to -32768.
 
-## <a name="op_-="></a> `year::operator-=`
+## <a name="op_-="></a> `operator-=`
 
 Subtract days from this `year`.
 
@@ -258,7 +336,7 @@ The number of years to subtract.
 `*this`. If the decremented result is less than -32768, it's set to 32767.
 
 
-## <a name="op_int"></a> `year::operator int`
+## <a name="op_int"></a> `operator int`
 
 Get the `year` value.
 
@@ -276,12 +354,11 @@ The value of the `year`
 #include <iostream>
 #include <chrono>
 
-using namespace std;
 using namespace std::chrono;
 
 int main()
 {
-    std::chrono::year y{2020};
+    year y{2020};
     int yearValue = static_cast<int>(y);
     std::cout << yearValue;
 
@@ -289,12 +366,11 @@ int main()
 }
 ```
 
-Output:
 ```Output
 2020
 ```
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[`<chrono>`](../standard-library/chrono.md)
+[`<chrono>`](chrono.md)\
+[Header Files Reference](cpp-standard-library-header-files.md)

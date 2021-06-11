@@ -123,6 +123,8 @@
               href: ../build-insights/reference/sdk/cpp-event-data-types/front-end-pass.md
             - name: "Function"
               href: ../build-insights/reference/sdk/cpp-event-data-types/function.md
+            - name: "HeaderUnit"
+              href: ../build-insights/reference/sdk/cpp-event-data-types/header-unit.md
             - name: "ImpLibOutput"
               href: ../build-insights/reference/sdk/cpp-event-data-types/imp-lib-output.md
             - name: "Invocation"
@@ -139,6 +141,8 @@
               href: ../build-insights/reference/sdk/cpp-event-data-types/linker-pass.md
             - name: "LTCG"
               href: ../build-insights/reference/sdk/cpp-event-data-types/ltcg.md
+            - name: "Module"
+              href: ../build-insights/reference/sdk/cpp-event-data-types/module.md
             - name: "ObjOutput"
               href: ../build-insights/reference/sdk/cpp-event-data-types/obj-output.md
             - name: "OptICF"
@@ -151,6 +155,8 @@
               href: ../build-insights/reference/sdk/cpp-event-data-types/pass1.md
             - name: "Pass2"
               href: ../build-insights/reference/sdk/cpp-event-data-types/pass2.md
+            - name: "PrecompiledHeader"
+              href: ../build-insights/reference/sdk/cpp-event-data-types/precompiled-header.md
             - name: "PreLTCGOptRef"
               href: ../build-insights/reference/sdk/cpp-event-data-types/pre-ltcg-opt-ref.md
             - name: "RawEvent"
@@ -169,6 +175,8 @@
               href: ../build-insights/reference/sdk/cpp-event-data-types/top-down.md
             - name: "TraceInfo"
               href: ../build-insights/reference/sdk/cpp-event-data-types/trace-info.md
+            - name: "TranslationUnitType"
+              href: ../build-insights/reference/sdk/cpp-event-data-types/translation-unit-type.md
             - name: "WholeProgramAnalysis"
               href: ../build-insights/reference/sdk/cpp-event-data-types/whole-program-analysis.md
         - name: "Event data types (C)"
@@ -209,6 +217,10 @@
               href: ../build-insights/reference/sdk/c-event-data-types/trace-info-data-struct.md
             - name: "TRANSLATION_UNIT_PASS_CODE"
               href: ../build-insights/reference/sdk/c-event-data-types/translation-unit-pass-code-enum.md
+            - name: "TRANSLATION_UNIT_TYPE"
+              href: ../build-insights/reference/sdk/c-event-data-types/translation-unit-type.md
+            - name: "TRANSLATION_UNIT_TYPE_DATA"
+              href: ../build-insights/reference/sdk/c-event-data-types/translation-unit-type-data.md
         - name: "Other types"
           items:
             - name: "ANALYSIS_CALLBACKS"
