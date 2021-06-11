@@ -29,7 +29,6 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 [FRONT_END_FILE](#front-end-file)\
 [TEMPLATE_INSTANTIATION](#template-instantiation)\
 [SYMBOL_NAME](#symbol-name)\
-[TRANSLATION_UNIT_TYPE](#translation-unit-type)\
 [MODULE](#module)\
 [HEADER_UNIT](#header-unit)\
 [PRECOMPILED_HEADER](#precompiled-header)
@@ -81,7 +80,7 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 |  | Description | Occurs at the start and stop of the whole program analysis' bottom-up pass. |
 | <a name="c1-dll"></a> C1_DLL | Type | Activity |
 |  | Parents | [FRONT_END_PASS](#front-end-pass) |
-|  | Children | [FRONT_END_FILE](#front-end-file)<br/>[SYMBOL_NAME](#symbol-name)<br/>[TEMPLATE_INSTANTIATION](#template-instantiation)<br/>[TRANSLATION_UNIT_TYPE](#translation-unit-type) |
+|  | Children | [FRONT_END_FILE](#front-end-file)<br/>[SYMBOL_NAME](#symbol-name)<br/>[TEMPLATE_INSTANTIATION](#template-instantiation) |
 |  | Properties | None |
 |  | Capture classes | [Activity](cpp-event-data-types/activity.md)<br/>[C1DLL](cpp-event-data-types/c1-dll.md) |
 |  | Description | Occurs at the start and stop of a *c1.dll* or *c1xx.dll* invocation. These DLLs are the C and C++ front end of the compiler. They're invoked solely by the compiler driver (*cl.exe*). |
@@ -147,7 +146,7 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 |  | Description | Occurs when the compiler front end starts and stops processing a file. This event is recursive. Recursion happens when the front end is parsing included files. |
 | <a name="front-end-pass"></a> FRONT_END_PASS | Type | Activity |
 |  | Parents | [COMPILER](#compiler) |
-|  | Children | [C1_DLL](#c1-dll) |
+|  | Children | [C1_DLL](#c1-dll)<br/>[MODULE](#module)<br/>[HEADER_UNIT](#header-unit)<br/>[PRECOMPILED_HEADER](#precompiled-header) |
 |  | Properties | - Absolute path to input source file<br/>- Absolute path to output object file |
 |  | Capture classes | [Activity](cpp-event-data-types/activity.md)<br/>[CompilerPass](cpp-event-data-types/compiler-pass.md)<br/>[FrontEndPass](cpp-event-data-types/front-end-pass.md) |
 |  | Description | Occurs at the start and stop of the compiler front-end pass. This pass is responsible for parsing C/C++ source code and converting it into intermediate language. |
@@ -158,7 +157,7 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 |  | Capture classes | [Activity](cpp-event-data-types/activity.md)<br/>[Function](cpp-event-data-types/function.md) |
 |  | Description | Occurs when starting and ending generating the code for a function. |
 | <a name="header-unit"></a> HEADER_UNIT | Type | Activity |
-|  | Parents | [TRANSLATION_UNIT_TYPE](#translation-unit-type) |
+|  | Parents | [FRONT_END_PASS](#front-end-pass) |
 |  | Children | None |
 |  | Properties | None |
 |  | Capture classes | [SimpleEvent](cpp-event-data-types/simple-event.md)<br/>[TranslationUnitType](cpp-event-data-types/translation-unit-type.md)<br/>[HeaderUnit](cpp-event-data-types/header-unit.md) |
@@ -188,7 +187,7 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 |  | Capture classes | [Activity](cpp-event-data-types/activity.md)<br/>[LTCG](cpp-event-data-types/ltcg.md) |
 |  | Description | Occurs at the start and stop of link-time code generation. |
 | <a name="module"></a> MODULE | Type | Activity |
-|  | Parents | [TRANSLATION_UNIT_TYPE](#translation-unit-type) |
+|  | Parents | [FRONT_END_PASS](#front-end-pass) |
 |  | Children | None |
 |  | Properties | None |
 |  | Capture classes | [SimpleEvent](cpp-event-data-types/simple-event.md)<br/>[TranslationUnitType](cpp-event-data-types/translation-unit-type.md)<br/>[Module](cpp-event-data-types/module.md) |
@@ -230,7 +229,7 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 |  | Capture classes | [Activity](cpp-event-data-types/activity.md)<br/>[Pass2](cpp-event-data-types/pass2.md) |
 |  | Description | Occurs at the start and stop of the linker's pass 2. |
 | <a name="precompiled-header"></a> PRECOMPILED_HEADER | Type | Activity |
-|  | Parents | [TRANSLATION_UNIT_TYPE](#translation-unit-type) |
+|  | Parents | [FRONT_END_PASS](#front-end-pass) |
 |  | Children | None |
 |  | Properties | None |
 |  | Capture classes | [SimpleEvent](cpp-event-data-types/simple-event.md)<br/>[TranslationUnitType](cpp-event-data-types/translation-unit-type.md)<br/>[PrecompiledHeader](cpp-event-data-types/precompiled-header.md) |
@@ -266,7 +265,7 @@ The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To s
 |  | Capture classes | [Activity](cpp-event-data-types/activity.md)<br/>[TopDown](cpp-event-data-types/top-down.md) |
 |  | Description | Occurs at the start and stop of the whole program analysis' top-down pass. |
 | <a name="translation-unit-type"></a> TRANSLATION_UNIT_TYPE | Type | Activity |
-|  | Parents | [C1_DLL](#c1-dll) |
+|  | Parents | [FRONT_END_PASS](#front-end-pass) |
 |  | Children | [MODULE](#module)<br/>[HEADER_UNIT](#header-unit)<br/>[PRECOMPILED_HEADER](#precompiled-header) |
 |  | Properties | - The type of translation unit. |
 |  | Capture classes | [SimpleEvent](cpp-event-data-types/simple-event.md)<br/>[TranslationUnitType](cpp-event-data-types/translation-unit-type.md) |
