@@ -114,6 +114,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |C4837 (level 4)|trigraph detected: '??*character*' replaced by '*character*'|
 |C4841 (level 4)|non-standard extension used: compound member designator used in offsetof|
 |C4842 (level 4)|the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases|
+| [C4866](../error-messages/compiler-warnings/c4866.md) (level 4) | '*file*(*line-number*)' compiler may not enforce left-to-right evaluation order for call to *operator* |
 |[C4868](../error-messages/compiler-warnings/compiler-warning-c4868.md) (level 4)|'_file_(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list|
 |[C4905](../error-messages/compiler-warnings/compiler-warning-level-1-c4905.md) (level 1)|wide string literal cast to 'LPSTR'|
 |[C4906](../error-messages/compiler-warnings/compiler-warning-level-1-c4906.md) (level 1)|string literal cast to 'LPWSTR'|
@@ -142,6 +143,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C5041 (level 4) | '*member-name*': out-of-line definition for constexpr static data member is not needed and is deprecated in C++17. <sup>15.2</sup>|
 |C5042 (level 3)|'*function*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier <sup>15.5</sup>|
 |[C5045](../error-messages/compiler-warnings/c5045.md)|Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified <sup>15.7</sup>|
+| C5052 (level 3) | Keyword '*keyword-name*' was introduced in C++*version* and requires use of the '*option*' command-line option` <sup>16.1</sup> |
 | C5204 (level 3) | A class with virtual functions has non-virtual trivial destructor. <sup>16.5</sup> |
 | C5214 (level 4) | applying '*keyword*' to an operand with a volatile qualified type is deprecated in C++20 <sup>16.7</sup> |
 | C5215 (level 4) | '*function-parameter*' a function parameter with a volatile qualified type is deprecated in C++20 <sup>16.7</sup> |
@@ -149,6 +151,13 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C5217 (level 4) | a structured binding declaration that includes volatile is deprecated in C++20 <sup>16.7</sup> |
 | C5219 (level 2) | implicit conversion from '*type-1*' to '*type-2*', possible loss of data <sup>16.7</sup> |
 | C5220 (level 4) | '*member*': a non-static data member with a volatile qualified type no longer implies that<br/> compiler generated copy/move constructors and copy/move assignment operators are not trivial <sup>16.7</sup> |
+| C5233 (level 4) | explicit lambda capture '*identifier*' is not used <sup>16.10</sup> |
+| C5240 (level 4) | '*attribute-name*': attribute is ignored in this syntactic position <sup>16.10</sup> |
+| C5243 (level 1) | '*type-name*': using incomplete class '*class-name*' can cause potential one definition rule violation due to ABI limitation <sup>16.10</sup> |
+| C5245 (level 4) | '*function*': unreferenced function with internal linkage has been removed |
+| C5246 (level 1) | '*member*': the initialization of a subobject should be wrapped in braces <sup>16.10</sup> |
+| C5247 (level 1) | Section '*section-name*' is reserved for C++ dynamic initialization.<br/> Manually creating the section will interfere with C++ dynamic initialization and may lead to undefined behavior <sup>16.11</sup> |
+| C5248 (level 1) | Section '*section-name*' is reserved for C++ dynamic initialization.<br/> Variable manually put into the section may be optimized out and its order relative to compiler generated dynamic<br/> initializers is unspecified <sup>16.11</sup> |
 
 <sup>14.1</sup> This warning is available starting in Visual Studio 2015 Update 1.\
 <sup>14.3</sup> This warning is available starting in Visual Studio 2015 Update 3.\
@@ -160,7 +169,9 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 <sup>16.0</sup> This warning is available starting in Visual Studio 2019 RTM.\
 <sup>16.5</sup> This warning is available starting in Visual Studio 2019 version 16.5.\
 <sup>16.7</sup> This warning is available starting in Visual Studio 2019 version 16.7.\
-<sup>Perm</sup> This warning is off unless the [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option is set.
+<sup>16.10</sup> This warning is available starting in Visual Studio 2019 version 16.10.\
+<sup>16.11</sup> This warning is available starting in Visual Studio 2019 version 16.11.\
+<sup>Perm</sup> This warning is off unless the [`/permissive-`](../build/reference/permissive-standards-conformance.md) compiler option is set.
 
 ## Warnings off by default in earlier versions
 
@@ -175,8 +186,8 @@ These warnings were off by default in versions of the compiler before Visual Stu
 | Warning | Message |
 |--|--|
 | [C4302](../error-messages/compiler-warnings/compiler-warning-level-2-c4302.md) (level 2) | '*conversion*': truncation from '*type1*' to '*type2*' |
-| [C4311](../error-messages/compiler-warnings/compiler-warning-level-1-c4311.md) (level 1) | '*variable*' : pointer truncation from '*type*' to '*type*' |
-| [C4312](../error-messages/compiler-warnings/compiler-warning-level-1-c4312.md) (level 1) | '*operation*' : conversion from '*type1*' to '*type2*' of greater size |
+| [C4311](../error-messages/compiler-warnings/compiler-warning-level-1-c4311.md) (level 1) | '*variable*': pointer truncation from '*type*' to '*type*' |
+| [C4312](../error-messages/compiler-warnings/compiler-warning-level-1-c4312.md) (level 1) | '*operation*': conversion from '*type1*' to '*type2*' of greater size |
 | [C4319](../error-messages/compiler-warnings/compiler-warning-level-1-c4319.md) (level 1) | '*operator*': zero extending '*type1*' to '*type2*' of greater size |
 
 This warning was off by default in versions of the compiler before Visual Studio 2012:
@@ -187,4 +198,4 @@ This warning was off by default in versions of the compiler before Visual Studio
 
 ## See also
 
-[warning](../preprocessor/warning.md)
+[`warning` pragma](../preprocessor/warning.md)
