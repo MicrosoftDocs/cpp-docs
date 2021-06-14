@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warnings by compiler version"
 description: "Table of Microsoft C/C++ compiler warnings by compiler version."
-ms.date: 06/07/2021
+ms.date: 06/11/2021
 helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting warning options"]
 ---
 # Compiler Warnings by compiler version
@@ -41,12 +41,22 @@ These versions of the compiler introduced new warnings:
 | Visual Studio 2019 version 16.8 | 19.28.29330.0 |
 | Visual Studio 2019 version 16.9 | 19.28.29500.0 |
 | Visual Studio 2019 version 16.10 | 19.28.30000.0 |
+| Visual Studio 2019 version 16.11 | 19.28.30100.0 |
 
 You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the **`/Wv`** option. The compiler reports all warnings that match versions that begin with the specified number. It suppresses all warnings for versions greater than the specified number. For example, **`/Wv:17`** reports warnings introduced in or before any version of Visual Studio 2012, and suppresses warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use **`/Wv:19.00.23506`**. Use **`/Wv:19.11`** to report the warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppress warnings introduced in Visual Studio 2017 version 15.5 and later.
 
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the **`/Wv`** compiler option. The **`/Wv`** option can't suppress warnings that aren't listed, which predate the specified versions of the compiler.
 
 ::: moniker range=">= msvc-160"
+
+## Warnings introduced in Visual Studio 2019 version 16.11 (compiler version 19.29.30100.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option **`/Wv:19.29.30000`**.
+
+| Warning | Message |
+|--|--|
+| C5247 | `section 'section-name' is reserved for C++ dynamic initialization. Manually creating the section will interfere with C++ dynamic initialization and may lead to undefined behavior` |
+| C5248 | `section 'section-name' is reserved for C++ dynamic initialization. Variables manually put into the section may be optimized out and their order relative to compiler generated dynamic initializers is unspecified` |
 
 ## Warnings introduced in Visual Studio 2019 version 16.10 (compiler version 19.29.30000.0)
 
