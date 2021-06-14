@@ -1,9 +1,9 @@
 ---
 title: "Compiler warnings C4800 Through C5999"
 description: "Table of Microsoft C/C++ compiler warnings C4800 through C5999."
-ms.date: 06/07/2021
-f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5240", "C5241", "C5242", "C5243"]
-helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5240", "C5241", "C5242", "C5243"]
+ms.date: 06/11/2021
+f1_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5240", "C5241", "C5242", "C5243", "C5244", "C5245", "C5246", "C5247", "C5248"]
+helpviewer_keywords: ["C4808", "C4809", "C4825", "C4827", "C4837", "C4842", "C4844", "C4845", "C4846", "C4847", "C4848", "C4854", "C4855", "C4856", "C4857", "C4872", "C4880", "C4881", "C4882", "C4916", "C4921", "C4934", "C4954", "C4955", "C4963", "C4966", "C4970", "C4971", "C4973", "C4974", "C4981", "C4987", "C4988", "C4989", "C4990", "C4991", "C4992", "C4998", "C5022", "C5023", "C5024", "C5025", "C5026", "C5027", "C5028", "C5029", "C5030", "C5031", "C5032", "C5033", "C5034", "C5035", "C5036", "C5039", "C5040", "C5041", "C5042", "C5043", "C5044", "C5047", "C5048", "C5049", "C5051", "C5052", "C5053", "C5054", "C5055", "C5056", "C5057", "C5058", "C5059", "C5060", "C5061", "C5062", "C5063", "C5100", "C5101", "C5102", "C5103", "C5104", "C5106", "C5107", "C5108", "C5200", "C5201", "C5202", "C5203", "C5204", "C5205", "C5206", "C5207", "C5209", "C5210", "C5211", "C5212", "C5213", "C5214", "C5215", "C5216", "C5217", "C5218", "C5219", "C5220", "C5221", "C5222", "C5223", "C5224", "C5225", "C5226", "C5227", "C5228", "C5229", "C5230", "C5231", "C5232", "C5233", "C5234", "C5235", "C5236", "C5237", "C5238", "C5239", "C5240", "C5241", "C5242", "C5243", "C5244", "C5245", "C5246", "C5247", "C5248"]
 ---
 # Compiler warnings C4800 through C5999
 
@@ -153,25 +153,25 @@ The articles in this section of the documentation explain a subset of the warnin
 | Compiler warning (level 3) C5042 | '*declaration*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier |
 | Compiler warning (level 2) C5043 | '*specification*': exception specification does not match previous declaration |
 | Compiler warning (level 4) C5044 | An argument to command-line option *option-name* points to a path '*path-name*' that does not exist |
-| [Compiler warning C5045](c5045.md) | Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified |
+| [Compiler warning (level 4) C5045](c5045.md) | Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified |
 | [Compiler warning (level 2) C5046](c5046.md) | '*function*': Symbol involving type with internal linkage not defined |
 | Compiler warning (level 1) C5047 | use of nonstandard `__if_exists` with modules is not supported |
 | Compiler warning (level 1) C5048 | Use of macro '*macroname*' may result in non-deterministic output |
 | Compiler warning (level 1) C5049 | '*string*': Embedding a full path may result in machine-dependent output |
 | [Compiler warning (level 1) C5050](c5050.md) | Possible incompatible environment while importing module '*module_name*': *issue* |
-| Compiler warning C5051 | attribute 'attribute-name' requires at least 'standard-level'; ignored |
-| Compiler warning C5052 | Keyword 'keyword-name' was introduced in C++\<version> and requires use of the 'option-name' command-line option |
-| Compiler warning C5053 | support for '`explicit(<expr>)`' in C++17 and earlier is a vendor extension |
-| Compiler warning C5054 | operator 'operator-name': deprecated between enumerations of different types |
-| Compiler warning C5055 | operator 'operator-name': deprecated between enumerations and floating-point types |
-| Compiler warning C5056 | operator 'operator-name': deprecated for array types |
-| Compiler warning C5057 | header unit reference to 'name' already exists.  Ignoring header unit 'header-name' |
-| Compiler warning C5058 | file system error: cannot find header file 'file-name' for header unit 'unit-name' |
+| Compiler warning (level 1) C5051 | attribute 'attribute-name' requires at least 'standard-level'; ignored |
+| Compiler warning (level 3) C5052 | Keyword 'keyword-name' was introduced in C++\<version> and requires use of the 'option-name' command-line option |
+| Compiler warning (level 1) C5053 | support for '`explicit(<expr>)`' in C++17 and earlier is a vendor extension |
+| Compiler warning (level 4) C5054 | operator 'operator-name': deprecated between enumerations of different types |
+| Compiler warning (level 1) C5055 | operator 'operator-name': deprecated between enumerations and floating-point types |
+| Compiler warning (level 1) C5056 | operator 'operator-name': deprecated for array types |
+| Compiler warning (level 1) C5057 | header unit reference to 'name' already exists.  Ignoring header unit 'header-name' |
+| Compiler warning (level 1) C5058 | file system error: cannot find header file 'file-name' for header unit 'unit-name' |
 | Compiler warning C5059 | runtime checks and address sanitizer is not currently supported - disabling runtime checks |
-| Compiler warning C5060 | `/Qpar` and address sanitizer not currently supported - disabling auto-parallelization |
-| Compiler warning C5061 | the use of a comma operator as a subscript expression has been deprecated |
-| Compiler warning C5062 | enum direct list initialization between 'type-1' and 'type-2' is no longer supported |
-| Compiler warning C5063 | '`std::is_constant_evaluated`' always evaluates to true in manifestly constant-evaluated expressions |
+| Compiler warning (level 4) C5060 | `/Qpar` and address sanitizer not currently supported - disabling auto-parallelization |
+| Compiler warning (level 4) C5061 | the use of a comma operator as a subscript expression has been deprecated |
+| Compiler warning (level 4) C5062 | enum direct list initialization between 'type-1' and 'type-2' is no longer supported |
+| Compiler warning (level 1) C5063 | '`std::is_constant_evaluated`' always evaluates to true in manifestly constant-evaluated expressions |
 | Compiler warning (level 1) C5100 | `__VA_ARGS__` is reserved for use in variadic macros |
 | Compiler warning (level 1) C5101 | use of preprocessor directive in function-like macro argument list is undefined behavior |
 | Compiler warning (level 1) C5102 | ignoring invalid command-line macro definition '*value*' |
@@ -180,39 +180,55 @@ The articles in this section of the documentation explain a subset of the warnin
 | [Compiler warning (level 1) C5105](c5105.md) | macro expansion producing 'defined' has undefined behavior |
 | Compiler warning (level 1) C5106 | macro redefined with different parameter names |
 | Compiler warning (level 1) C5107 | missing terminating '*char*' character |
-| Compiler warning C5108 | `__VA_OPT__` is reserved for use in variadic macros |
-| Compiler warning C5200 | feature 'feature-name' requires compiler flag 'option-name' |
-| Compiler warning C5201 | a module declaration can appear only at the start of a translation unit unless a global module fragment is used |
-| Compiler warning C5202 | a global module fragment can only contain preprocessor directives |
-| Compiler warning C5203 | a parenthesized declarator name after 'explicit' will be considered an explicit-specifier in C++20 |
-| Compiler warning C5204 | 'type-name': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly |
-| Compiler warning C5205 | delete of an abstract class 'type-name' that has a non-virtual destructor results in undefined behavior |
-| Compiler warning C5206 | deduced return types for coroutines is a non-standard extension |
-| Compiler warning C5207 | the simple requirement asserts the validity of expression '`e->id`'. Did you mean '`{ e } -> id`'? You can suppress the warning using '`{ e->id }`' |
+| Compiler warning (level 1) C5108 | `__VA_OPT__` is reserved for use in variadic macros |
+| Compiler warning (level 1) C5200 | feature 'feature-name' requires compiler flag 'option-name' |
+| Compiler warning (level 1) C5201 | a module declaration can appear only at the start of a translation unit unless a global module fragment is used |
+| Compiler warning (level 1) C5202 | a global module fragment can only contain preprocessor directives |
+| Compiler warning (level 1) C5203 | a parenthesized declarator name after 'explicit' will be considered an explicit-specifier in C++20 |
+| Compiler warning (level 3) C5204 | 'type-name': class has virtual functions, but its trivial destructor is not virtual; instances of objects derived from this class may not be destructed correctly |
+| Compiler warning (level 4) C5205 | delete of an abstract class 'type-name' that has a non-virtual destructor results in undefined behavior |
+| Compiler warning (level 3) C5206 | deduced return types for coroutines is a non-standard extension |
+| Compiler warning (level 1) C5207 | the simple requirement asserts the validity of expression '`e->id`'. Did you mean '`{ e } -> id`'? You can suppress the warning using '`{ e->id }`' |
 | [Compiler warning (level 1) C5208](c5208.md) | unnamed class used in `typedef` name cannot declare members other than non-static data members, member enumerations, or member classes |
-| Compiler warning C5209 | the C++20 syntax for an init-capture has changed to '& ...opt identifier initializer' |
-| Compiler warning C5210 | '*name*' is not a valid header unit reference; ignoring |
-| Compiler warning C5212 | '*name*' is not a valid named reference; treating as reference to file |
-| Compiler warning C5213 | '*name*' named reference is treated as a named partition but the name is not specified; treating as reference to file |
-| Compiler warning C5214 | applying '*modifier*' to an operand with a volatile qualified type is deprecated in C++20 |
-| Compiler warning C5215 | '*name*' a function parameter with a volatile qualified type is deprecated in C++20 |
-| Compiler warning C5216 | '*name*' a volatile qualified return type is deprecated in C++20 |
-| Compiler warning C5217 | a structured binding declaration that includes volatile is deprecated in C++20 |
-| Compiler warning C5218 | destroying delete may not behave as intended when non-conforming switches '`/Zc:sizedDealloc-`' or '`/Zc:alignedNew-`' are used |
-| Compiler warning C5219 | implicit conversion from '*type-1*' to '*type-2*', possible loss of data |
-| Compiler warning C5220 | '*name*': a non-static data member with a volatile qualified type no longer implies that compiler generated copy/move constructors and copy/move assignment operators are not trivial |
-| Compiler warning C5221 | xfg::rename is deprecated. |
-| Compiler warning C5233 | explicit lambda capture 'identifier' is not used |
-| Compiler warning C5234 | file system error: 'filename' is not a valid header-name; ignoring |
-| Compiler warning C5235 | JSON parse error: issue; ignoring 'filename' |
-| Compiler warning C5236 | JSON ill-formed: issue; ignoring 'filename' |
-| Compiler warning C5237 | cannot resolve header unit entry 'string' to a header file in 'filename'; ignoring entry |
-| Compiler warning C5238 | file system error: cannot open 'filename' for reading; ignoring |
-| Compiler warning C5239 | 'Symbol': potentially-throwing function called from a function declared __declspec(nothrow). Undefined behavior may occur if an exception is thrown. |
-| Compiler warning C5240 | 'attribute-string': attribute is ignored in this syntactic position |
-| Compiler warning C5241 | '/exportHeader' usage to lookup header-name is deprecated; prefer '/headerName:arg-1 arg-2=filename' |
-| Compiler warning C5242 | syntax error in pragma 'identifier' |
-| Compiler warning C5243 | 'Type-name': using incomplete class 'symbol' can cause potential one definition rule violation due to ABI limitation |
+| Compiler warning (level 1) C5209 | the C++20 syntax for an init-capture has changed to '& ...opt identifier initializer' |
+| Compiler warning (level 1) C5210 | '*name*' is not a valid header unit reference; ignoring |
+| Compiler warning (level 1) C5212 | '*name*' is not a valid named reference; treating as reference to file |
+| Compiler warning (level 1) C5213 | '*name*' named reference is treated as a named partition but the name is not specified; treating as reference to file |
+| Compiler warning (level 4) C5214 | applying '*modifier*' to an operand with a volatile qualified type is deprecated in C++20 |
+| Compiler warning (level 4) C5215 | '*name*' a function parameter with a volatile qualified type is deprecated in C++20 |
+| Compiler warning (level 4) C5216 | '*name*' a volatile qualified return type is deprecated in C++20 |
+| Compiler warning (level 4) C5217 | a structured binding declaration that includes volatile is deprecated in C++20 |
+| Compiler warning (level 1) C5218 | destroying delete may not behave as intended when non-conforming switches '`/Zc:sizedDealloc-`' or '`/Zc:alignedNew-`' are used |
+| Compiler warning (level 2) C5219 | implicit conversion from '*type-1*' to '*type-2*', possible loss of data |
+| Compiler warning (level 4) C5220 | '*name*': a non-static data member with a volatile qualified type no longer implies that compiler generated copy/move constructors and copy/move assignment operators are not trivial |
+| Compiler warning (level 1) C5221 | xfg::rename is deprecated. |
+| Compiler warning (level 3) C5222 | '*attribute-name*': all unscoped attribute names are reserved for future standardization |
+| Compiler warning (level 3) C5223 | all attribute names in the attribute namespace 'msvc' are reserved for the implementation |
+| Compiler warning (level 3) C5224 | all attribute names in the attribute namespace '*namespace-name*' are reserved for future standardization |
+| Compiler warning (level 1) C5225 | '*symbol*': exported inline function defined in a private module fragment is a non-standard extension |
+| Compiler warning (level 1) C5226 | '*symbol*': exported template defined in private module fragment has no reachable instantiation |
+| Compiler warning (level 4) C5227 | nonstandard extension, resolved '*symbol*' to '*value*' which is not visible with `/permissive-` on. |
+| Compiler warning (level 4) C5228 | nonstandard extension, '*identifier*' resolved to a member of a dependent base. This lookup is not allowed under `/permissive-`. |
+| Compiler warning (level 4) C5229 | nonstandard extension, the hidden friend function '*function-name*' was found by name lookup which isn't allowed under `/permissive-`. |
+| Compiler warning C5230 | nonstandard extension, '*identifier*' was resolved to '*symbol-1*' under `/permissive`. Under `/permissive-` it would resolve to '*symbol-2*'. |
+| Compiler warning (level 3) C5231 | the expression '`co_await promise.final_suspend()`' must be non-throwing |
+| Compiler warning (level 1) C5232 | in C++20 this comparison calls '*name*' recursively |
+| Compiler warning (level 4) C5233 | explicit lambda capture '*identifier*' is not used |
+| Compiler warning (level 1) C5234 | file system error: '*filename*' is not a valid header-name; ignoring |
+| Compiler warning (level 1) C5235 | JSON parse error: *message*; ignoring '*filename*' |
+| Compiler warning (level 1) C5236 | JSON ill-formed: *message*; ignoring '*filename*' |
+| Compiler warning (level 1) C5237 | cannot resolve header unit entry '*name*' to a header file in '*filename*'; ignoring entry |
+| Compiler warning (level 1) C5238 | file system error: cannot open '*filename*' for reading; ignoring |
+| Compiler warning (level 4) C5239 | '*symbol*': potentially-throwing function called from a function declared `__declspec(nothrow)`. Undefined behavior may occur if an exception is thrown. |
+| Compiler warning (level 4) C5240 | '*name*': attribute is ignored in this syntactic position |
+| Compiler warning (level 1) C5241 | '`/exportHeader`' usage to lookup header-name is deprecated; prefer '/headerName:name value=filename' |
+| Compiler warning (level 1) C5242 | syntax error in pragma '*identifier*' |
+| Compiler warning (level 1) C5243 | '*type-name*': using incomplete class 'class-name' can cause potential one definition rule violation due to ABI limitation |
+| Compiler warning (level 1) C5244 | '#include \<*filename*>' in the purview of module '*module-name-1*' appears erroneous.  Consider moving that directive before the module declaration, or replace the textual inclusion with 'import \<*module-name-2*>;'. |
+| Compiler warning (level 4) C5245 | '*function*': unreferenced function with internal linkage has been removed |
+| Compiler warning (level 1) C5246 | '*member*': the initialization of a subobject should be wrapped in braces |
+| Compiler warning (level 1) C5247 | section '*section-name*' is reserved for C++ dynamic initialization. Manually creating the section will interfere with C++ dynamic initialization and may lead to undefined behavior |
+| Compiler warning (level 1) C5248 | section '*section-name*' is reserved for C++ dynamic initialization. Variables manually put into the section may be optimized out and their order relative to compiler generated dynamic initializers is unspecified |
 
 ## See also
 
