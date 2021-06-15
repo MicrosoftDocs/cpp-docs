@@ -1,7 +1,7 @@
 ---
 title: "Create a console calculator in C++"
 description: "Create a Hello World console app and a calculator app in Visual C++"
-ms.custom: "mvc"
+ms.custom: "acquisition, mvc"
 ms.date: 08/19/2019
 ms.topic: "tutorial"
 ms.devlang: "cpp"
