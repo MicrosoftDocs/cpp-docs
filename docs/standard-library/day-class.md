@@ -73,6 +73,7 @@ Construct a `day` with value *`d`*.
 ### Example: Create a `day`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
@@ -120,6 +121,7 @@ Add 1 to the day value.
 ### Example: `operator++`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
@@ -166,6 +168,7 @@ Subtract 1 from the day value.
 ### Example: `operator--`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
@@ -243,6 +246,7 @@ The value of the `day`
 ### Example: `operator unsigned()`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 

@@ -99,6 +99,7 @@ Increment the month value.
 ### Example: `operator++`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
@@ -143,6 +144,7 @@ Subtract 1 from the month value.
 ### Example: `operator--`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
@@ -220,6 +222,7 @@ The unsigned value of this `month`
 ### Example: `operator unsigned()`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 

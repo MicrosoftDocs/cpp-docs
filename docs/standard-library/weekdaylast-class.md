@@ -94,6 +94,7 @@ The weekday value.
 ### Example
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 

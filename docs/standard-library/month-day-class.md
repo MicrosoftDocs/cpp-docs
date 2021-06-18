@@ -67,6 +67,7 @@ Construct a `month_day` with a month value of *`m`*.
 ### Example: Create a `month_day`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
