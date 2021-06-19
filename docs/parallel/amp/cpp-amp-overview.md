@@ -7,6 +7,9 @@ ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
 ---
 # C++ AMP Overview
 
+> [!NOTE]
+> C++ AMP is deprecated, starting with Visual Studio 2022 version 17.0.
+
 C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code by taking advantage of data-parallel hardware such as a graphics processing unit (GPU) on a discrete graphics card. By using C++ AMP, you can code multi-dimensional data algorithms so that execution can be accelerated by using parallelism on heterogeneous hardware. The C++ AMP programming model includes multidimensional arrays, indexing, memory transfer, tiling, and a mathematical function library. You can use C++ AMP language extensions to control how data is moved from the CPU to the GPU and back, so that you can improve performance.
 
 ## System Requirements
