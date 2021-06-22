@@ -1,7 +1,7 @@
 ---
 title: "C++ in Visual Studio"
 description: "Learn how to use the Microsoft C/C++ compiler, code editor, and related tools in Visual Studio to develop programs for Windows, Linux, Android and iOS."
-ms.date: 11/05/2020
+ms.date: 06/22/2021
 ms.technology: "cpp-ide"
 helpviewer_keywords: ["Visual C++, home page"]
 ---
@@ -51,8 +51,8 @@ Find out what was new in C++ for each version of Visual Studio from 2003 through
 [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md)\
 Learn about C++ conformance improvements in Visual Studio.
 
-[Microsoft C++ language conformance table](visual-cpp-language-conformance.md)\
-A list of conformance status by feature in the MSVC C++ compiler.
+[Microsoft C/C++ language conformance](./visual-cpp-language-conformance.md)\
+Find feature-level language conformance status in the MSVC compiler by Visual Studio version.
 
 [Microsoft C/C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md)\
 Learn about the breaking changes in previous versions.
