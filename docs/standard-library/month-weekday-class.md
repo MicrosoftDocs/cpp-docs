@@ -64,6 +64,7 @@ Construct a `month_weekday` with a weekday value of *`wdi`*.
 ### Example: Create a `month_weekday`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 

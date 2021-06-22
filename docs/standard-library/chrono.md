@@ -1,14 +1,14 @@
 ---
 description: "Learn more about: &lt;chrono&gt;"
 title: "&lt;chrono&gt;"
-ms.date: 06/10/2021
+ms.date: 06/16/2021
 f1_keywords: ["<chrono>", "chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
 ---
 # `<chrono>`
 
 Include the standard header `<chrono>` to define classes and functions that represent and manipulate time durations and time instants.
 
-Beginning in Visual Studio 2015, the implementation of `steady_clock` has changed to meet the C++ Standard requirements for steadiness and monotonicity. `steady_clock` is now based on `QueryPerformanceCounter()` and `high_resolution_clock` is now a typedef for `steady_clock`. As a result, in the Microsoft C++ compiler `steady_clock::time_point` is now a `typedef` for `chrono::time_point<steady_clock>`; however, this rule isn't necessarily the case for other implementations.
+Beginning in Visual Studio 2015, the implementation of `steady_clock` has changed to meet the C++ Standard requirements for steadiness and monotonicity. `steady_clock` is now based on `QueryPerformanceCounter()`, and `high_resolution_clock` is now a typedef for `steady_clock`. As a result, in the Microsoft C++ compiler `steady_clock::time_point` is now a `typedef` for `chrono::time_point<steady_clock>`; however, this rule isn't necessarily the case for other implementations.
 
 ## Requirements
 
@@ -22,21 +22,23 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 | Name | Description |
 |--|--|
-| [`day` class](../standard-library/day-class.md) | Describes a type that represents a day of the month. For example, the 25th day of the month. |
-| [`duration` class](../standard-library/duration-class.md) | Describes a type that holds a time interval. |
+| [`day` class](../standard-library/day-class.md) | A day of the month. For example, the 25th day of the month. |
+| [`duration` class](../standard-library/duration-class.md) | A time interval. |
 | [`hh_mm_ss` class](../standard-library/hhmmss-class.md) | Splits a [`duration`](duration-class.md) into hours:minutes:seconds. |
-| [`leap_second` class](../standard-library/leap-second-class.md) | Represents a date and a value for an inserted leap second. |
-| [`month` class](../standard-library/month-class.md) | Describes a type that represents a month of a year. For example, July. |
-| [`month_day` class](../standard-library/month-day-class.md) | Represents a specific day of a specific month. For example, July 30th. |
-| [`month_day_last` class](../standard-library/month-day-last-class.md) | Represents the last day of a month. |
-| [`month_weekday` class](../standard-library/month-day-last-class.md) | Represents the nth weekday of a specific month. |
-| [`month_weekday_last` class](../standard-library/month-weekday-last-class.md) | Represents the nth weekday of a specific month. |
-| [`time_point` class](../standard-library/time-point-class.md) | Describes a type that represents a point in time. |
-| [`time_zone` class](../standard-library/time-point-class.md) | Represents all time zone transitions for a specific geographic area. |
-| [`weekday` class](../standard-library/weekday-class.md) | Represents a day of the week. |
-| [`weekday_last` class](../standard-library/weekdaylast-class.md) | Represents the last weekday of a month. |
-| [`weekday_indexed` class](../standard-library/weekdayindexed-class.md) | Combines a weekday, representing a day of the week with an index that represents the weekday of the month. |
-| [`year` class](../standard-library/year-class.md) | Describes a type that represents a year in the [Gregorian calendar](https://en.wikipedia.org/wiki/Proleptic_Gregorian_calendar).|
+| [`leap_second` class](../standard-library/leap-second-class.md) | A date and a value for an inserted leap second. |
+| [`month` class](../standard-library/month-class.md) | A month of a year. For example, July. |
+| [`month_day` class](../standard-library/month-day-class.md) | A specific day of a specific month. For example, July 30th. |
+| [`month_day_last` class](../standard-library/month-day-last-class.md) | The last day of a month. |
+| [`month_weekday` class](../standard-library/month-day-last-class.md) | The nth weekday of a specific month. |
+| [`month_weekday_last` class](../standard-library/month-weekday-last-class.md) | The nth weekday of a specific month. |
+| [`time_point` class](../standard-library/time-point-class.md) | A point in time. |
+| [`time_zone` class](../standard-library/time-point-class.md) | All time zone transitions for a specific geographic area. |
+| [`weekday` class](../standard-library/weekday-class.md) | A day of the week. |
+| [`weekday_last` class](../standard-library/weekdaylast-class.md) | The last weekday of a month. |
+| [`weekday_indexed` class](../standard-library/weekdayindexed-class.md) | Combines a day of the week with an index that represents the weekday of the month. |
+| [`year` class](../standard-library/year-class.md) | A year in the [Gregorian calendar](https://en.wikipedia.org/wiki/Proleptic_Gregorian_calendar).|
+| [`year_month` class](../standard-library/year-month-class.md) | A year and month. The day isn't specified.|
+| [`year_month_day` class](../standard-library/year-month-day-class.md) | A year, month, and day.|
 
 ### Structs
 
@@ -44,10 +46,10 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 |-|-|
 |[`common_type` struct](../standard-library/common-type-structure.md)|Describes specializations of class template [`common_type`](../standard-library/common-type-class.md) for instantiations of `duration` and `time_point`.|
 |[`duration_values` struct](../standard-library/duration-values-structure.md)|Provides specific values for the `duration` template parameter `Rep`.|
-|[`high_resolution_clock` struct](../standard-library/high-resolution-clock-struct.md)| Represents a clock with a nanosecond tick period. |
+|[`high_resolution_clock` struct](../standard-library/high-resolution-clock-struct.md)| A clock with a nanosecond tick period. |
 |[`leap_second_info` struct](../standard-library/leap-second-info-struct.md) | The data returned by [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info). |
-|[`steady_clock` struct](../standard-library/steady-clock-struct.md)|Represents a `steady` clock.|
-|[`system_clock` struct](../standard-library/system-clock-structure.md)|Represents a *`clock type`* that is based on the real-time clock of the system.|
+|[`steady_clock` struct](../standard-library/steady-clock-struct.md)|A `steady` clock. Preferred for measuring time intervals. |
+|[`system_clock` struct](../standard-library/system-clock-structure.md)|A *`clock type`* that is based on the real-time clock of the system.|
 |[`treat_as_floating_point` struct](../standard-library/treat-as-floating-point-structure.md)|Specifies whether a type can be treated as a floating-point type.|
 
 ### Functions
@@ -104,6 +106,13 @@ For more information about ratio types that are used in the following typedefs, 
 |`typedef duration<long long> seconds;`|Synonym for a `duration` type that has a tick period of 1 second.|
 |`typedef duration<int, ratio<60>> minutes;`|Synonym for a `duration` type that has a tick period of 1 minute.|
 |`typedef duration<int, ratio<3600>> hours;`|Synonym for a `duration` type that has a tick period of 1 hour.|
+
+### Alias declarations
+
+|Name|Description|
+|-|-|
+|`using local_days = local_time<days>;` | A count of days, represented by a [`time_point`](time-point-class.md) that is not associated with any time zone. |
+|`using sys_days = sys_time<days>;` | A count of days, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md), which has a 1/1/1970 epoch. |
 
 ### Literals
 

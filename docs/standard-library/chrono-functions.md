@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: &lt;chrono&gt; functions"
 title: "&lt;chrono&gt; functions"
-ms.date: 6/10/2021
+ms.date: 6/16/2021
 f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast", "chrono/std::from_stream", "chrono/std::chrono::duration_cast", "chrono/std::chrono::time_point_cast", "chrono/std::chrono::from_stream", "chrono/std::chrono::floor", "chrono/std::chrono::ceil", "chrono/std::chrono::round", "chrono/std::chrono::is_am", "chrono/std::chrono::is_pm", "chrono/std::chrono::make12", "chrono/std::chrono::make24", "chrono/std::chrono::get_leap_second_info", "chrono/std::chrono::get_tzdb", "chrono/std::chrono::get_tzdb_list", "chrono/std::chrono::locate_zone", "chrono/std::chrono::current_zone", "chrono/std::chrono::reload_tzdb", "chrono/std::chrono::remote_version"]
 helpviewer_keywords: ["std::duration_cast function", "std::time_point_cast function", "std::chrono::duration_cast function", "std::chrono::time_point_cast function", "std::chrono::from_stream function", "std::chrono::floor function", "std::chrono::ceil function", "std::chrono::round function", "std::chrono::is_am function", "std::chrono::is_pm function", "std::chrono::make12 function", "std::chrono::make24 function", "std::chrono::get_leap_second_info function", "std::chrono::get_tzdb function", "std::chrono::get_tzdb_list function", "std::chrono::locate_zone function", "std::chrono::current_zone function", "std::chrono::reload_tzdb function", "std::chrono::remote_version function"]
 ---
@@ -196,7 +196,7 @@ Returns the largest time point representable using `ToDuration` that's less than
 
 ## <a name="std-chrono-from-stream"></a> `from_stream`
 
-Parse the input stream into one of the `std::chrono` time or interval types such as `day`, `month`, `month_day`, `weekday`, `year`, and so on, using the specified format.
+Parse the input stream into one of the `std::chrono` time or interval types such as `day`, `month`, `month_day`, `weekday`, `year`, `year_month`, `year_month_day`, and so on, using the specified format.
 
 If the parse fails, `is.setstate`(`ios_base::failbit`) is called and the output parameter isn't modified.
 
@@ -397,6 +397,7 @@ The input stream, *`is`*
 ### Example: `from_stream`
 
 ```cpp
+// compile using: /std:c++latest
 #include <chrono>
 #include <iostream>
 

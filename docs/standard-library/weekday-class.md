@@ -110,7 +110,7 @@ constexpr bool is_leap() const noexcept;
 
 ### Return value
 
-`true` if the weekday value in the range [0, 6]. Otherwise, `false`.
+`true` if the weekday value is in the range [0, 6]. Otherwise, `false`.
 
 ## <a name="op_++"></a> `operator++`
 
@@ -129,6 +129,7 @@ Add 1 to the weekday value.
 ### Example: `operator++`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
@@ -175,6 +176,7 @@ Subtract 1 from the `weekday` value.
 ### Example: `operator--`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
@@ -256,6 +258,7 @@ Create a [weekday_indexed](weekdayindexed-class.md) or [weekday_last](weekdaylas
 ### Example: `operator[]`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
