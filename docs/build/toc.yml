@@ -153,8 +153,6 @@
       href: ../build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md
     - name: "Walkthrough: Compiling a C++/CX program on the command line"
       href: ../build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md
-    - name: Set the path and environment variables for command-line builds
-      href: ../build/setting-the-path-and-environment-variables-for-command-line-builds.md
 - name: Use MSBuild from the command line
   expanded: false
   items: 

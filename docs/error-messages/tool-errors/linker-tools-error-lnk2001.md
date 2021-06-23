@@ -42,7 +42,7 @@ This error can occur:
 
 - When a new Windows SDK is installed (perhaps to a different location). The library search order must be updated to point to the new location. Normally, you should put the path to new SDK include and lib directories in front of the default Visual C++ location. Also, a project containing embedded paths may still point to old paths that are valid, but out of date. Update the paths for new functionality added by the new version that's installed to a different location.
 
-- If you build at the command line, and have created your own environment variables. Verify that the paths to tools, libraries, and header files go to a consistent version. For more information, see [Set the path and environment variables for command-line builds](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md)
+- If you build at the command line, and have created your own environment variables. Verify that the paths to tools, libraries, and header files go to a consistent version. For more information, see [Use the MSVC toolset from the command line](../../build/building-on-the-command-line.md).
 
 ## Coding issues
 
