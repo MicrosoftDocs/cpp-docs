@@ -1188,7 +1188,7 @@ void f() {
 
 Previously, thread-local variables in DLLs weren't correctly initialized. Other than on the thread that loaded the DLL, they weren't initialized before first use on threads that existed before the DLL was loaded. This defect has now been corrected. Thread-local variables in such a DLL get initialized immediately before their first use on such threads.
 
-This new behavior of testing for initialization on uses of thread-local variables may be disabled by using the **`/Zc:tlsGuards-`** compiler switch. Or, by adding the `[[msvc:no_tls_guard]]` attribute to particular thread local variables.
+This new behavior of testing for initialization on uses of thread-local variables may be disabled by using the **`/Zc:tlsGuards-`** compiler option. Or, by adding the `[[msvc:no_tls_guard]]` attribute to particular thread local variables.
 
 ### Better diagnosis of call to deleted functions
 
@@ -1319,11 +1319,11 @@ There are many possible fixes:
 
 - In some cases, you can avoid `pow` entirely. For example, `pow(cf, -1)` can be replaced by division.
 
-### Switch-related warnings for C
+### `switch` warnings for C
 
 Starting in Visual Studio 2019 version 16.6, the compiler implements some preexisting C++ warnings for code compiled as C. The following warnings are now enabled at different levels: C4060, C4061, C4062, C4063, C4064, C4065, C4808, and C4809. Warnings C4065 and C4060 are disabled by default in C.
 
-The warnings trigger on missing **`case`** statements, undefined **`enum`**, and bad **`bool`** switches (that is, ones that contain too many cases). For example:
+The warnings trigger on missing **`case`** statements, undefined **`enum`**, and bad **`bool`** switch statements (that is, ones that contain too many cases). For example:
 
 ```c
 #include <stdbool.h>
@@ -1788,7 +1788,7 @@ Given that in many cases using `::f` as the function argument is what the user e
 
 ### Migrating from `/await` to C++20 coroutines
 
-Standard C++20 coroutines are now on by default under **`/std:c++latest`**. They differ from the Coroutines TS and the support under the **`/await`** switch. Migrating from **`/await`** to standard coroutines may require some source changes.
+Standard C++20 coroutines are now on by default under **`/std:c++latest`**. They differ from the Coroutines TS and the support under the **`/await`** option. Migrating from **`/await`** to standard coroutines may require some source changes.
 
 #### Non-standard keywords
 
@@ -1942,7 +1942,7 @@ C++20 Modules support is on by default under **`/std:c++latest`**. For more info
 
 As a prerequisite for Modules support, **`permissive-`** is now enabled when **`/std:c++latest`** is specified. For more information, see [`/permissive-`](../build/reference/permissive-standards-conformance.md).
 
-For code that previously compiled under **`/std:c++latest`** and requires non-conforming compiler behaviors, **`permissive`** may be specified to turn off strict conformance mode in the compiler. The compiler option must appear after **`/std:c++latest`** in the command-line argument list. However, **`permissive`** results in an error if Modules usage is detected:
+For code that previously compiled under **`/std:c++latest`** and requires non-conforming compiler behaviors, **`/permissive`** may be specified to turn off strict conformance mode in the compiler. The compiler option must appear after **`/std:c++latest`** in the command-line argument list. However, **`/permissive`** results in an error if Modules usage is detected:
 
 > error C1214: Modules conflict with non-standard behavior requested via '*option*'
 
@@ -1950,8 +1950,8 @@ The most common values for *option* are:
 
 | Option | Description |
 |--|--|
-| **`/Zc:twoPhase-`** | Two-phase name lookup is required for C++20 Modules and implied by **`permissive-`**. |
-| **`/Zc:hiddenFriend-`** | Standard hidden friend name lookup rules are required for C++20 Modules and implied by **`permissive-`**. |
+| **`/Zc:twoPhase-`** | Two-phase name lookup is required for C++20 Modules and implied by **`/permissive-`**. |
+| **`/Zc:hiddenFriend-`** | Standard hidden friend name lookup rules are required for C++20 Modules and implied by **`/permissive-`**. |
 | **`/Zc:preprocessor-`** | The conforming preprocessor is required for C++20 header unit usage and creation only. Named Modules don't require this option. |
 
 The [`/experimental:module`](../build/reference/experimental-module.md) option is still required to use the *`std.*`* Modules that ship with Visual Studio, because they're not standardized yet.
@@ -2059,15 +2059,15 @@ int func() {
 }
 ```
 
-### `/Zc:twoPhase` and `/Zc:twoPhase-` switch behavior change
+### `/Zc:twoPhase` and `/Zc:twoPhase-` option behavior change
 
-Normally, the MSVC compiler switches work on the principle that the last one seen wins. Unfortunately, it wasn't the case with the **`/Zc:twoPhase`** and **`/Zc:twoPhase-`** switches. These switches were "sticky," so later switches couldn't override them. For example:
+Normally, the MSVC compiler options work on the principle that the last one seen wins. Unfortunately, it wasn't the case with the **`/Zc:twoPhase`** and **`/Zc:twoPhase-`** options. These options were "sticky," so later options couldn't override them. For example:
 
 `cl /Zc:twoPhase /permissive a.cpp`
 
-In this case, the first **`/Zc:twoPhase`** switch enables strict two-phase name lookup. The second switch is meant to disable the strict conformance mode (it's the opposite of **`/permissive-`**), but it didn't disable **`/Zc:twoPhase`**.
+In this case, the first **`/Zc:twoPhase`** option enables strict two-phase name lookup. The second option is meant to disable the strict conformance mode (it's the opposite of **`/permissive-`**), but it didn't disable **`/Zc:twoPhase`**.
 
-Visual Studio 2019 version 16.9 changes this behavior in all **`/std`** compiler modes. **`/Zc:twoPhase`** and **`/Zc:twoPhase-`** are no longer "sticky," and later switches can override them.
+Visual Studio 2019 version 16.9 changes this behavior in all **`/std`** compiler modes. **`/Zc:twoPhase`** and **`/Zc:twoPhase-`** are no longer "sticky," and later options can override them.
 
 ### Explicit noexcept-specifiers on destructor templates
 
@@ -2463,4 +2463,4 @@ struct S {
 
 ## See also
 
-[Microsoft C/C++ language conformance table](visual-cpp-language-conformance.md)
+[Microsoft C/C++ language conformance](visual-cpp-language-conformance.md)

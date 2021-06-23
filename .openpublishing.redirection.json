@@ -666,6 +666,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/build/setting-the-path-and-environment-variables-for-command-line-builds.md",
+      "redirect_url": "/cpp/build/building-on-the-command-line",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build/special-characters-in-a-makefile.md",
       "redirect_url": "/cpp/build/reference/special-characters-in-a-makefile",
       "redirect_document_id": false

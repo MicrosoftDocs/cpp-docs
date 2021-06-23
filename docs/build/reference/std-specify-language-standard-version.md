@@ -1,7 +1,7 @@
 ---
 title: "/std (Specify Language Standard Version)"
 description: "The MSVC compiler option /std specifies the C or C++ language standard supported by the compiler."
-ms.date: "5/21/2021"
+ms.date: 06/14/2021
 f1_keywords: ["/std", "-std", "/std:c++14", "/std:c++17", "/std:c11", "/std:c17", "VC.Project.VCCLCompilerTool.CppLanguageStandard"]
 ---
 # `/std` (Specify Language Standard Version)
@@ -18,7 +18,7 @@ Enable supported C and C++ language features from the specified version of the C
 
 ## Remarks
 
-The **`/std`** option is available in Visual Studio 2017 and later. It's used to control the version-specific ISO C or C++ programming language standard features enabled during compilation of your code. This option allows you to disable support for certain new language and library features: ones that may break your existing code that conforms to a particular version of the language standard.
+The **`/std`** options are available in Visual Studio 2017 and later. They're used to control the version-specific ISO C or C++ programming language standard features enabled during compilation of your code. The options allow you to disable support for certain new language and library features: ones that may break your existing code that conforms to a particular version of the language standard.
 
 ### C++ standards support
 
@@ -28,7 +28,7 @@ The **`/std`** option in effect during a C++ compilation can be detected by use 
 
 Enables C++14 standard-specific features implemented by the MSVC compiler. This option is the default for code compiled as C++. Available starting with Visual Studio 2015 Update 3. Enables C++14 standard-specific features implemented by the MSVC compiler.
 
-This option disables compiler and standard library support for features that are changed or new in more recent versions of the language standard.<br>It doesn't disable some C++17 features already implemented in previous releases of the MSVC compiler. See [Microsoft C++ language conformance table](../../overview/visual-cpp-language-conformance.md) for a list of which C++14 and C++17 features are enabled when you specify **`/std:c++14`**.
+This option disables compiler and standard library support for features that are changed or new in more recent versions of the language standard. It doesn't disable some C++17 features already implemented in previous releases of the MSVC compiler. For more information, see [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md). It indicates which C++14 and C++17 features are enabled when you specify **`/std:c++14`**.
 
 The following features remain enabled when the **`/std:c++14`** option is specified to avoid breaking changes for users who have already taken dependencies on the features available in or before Visual Studio 2015 Update 2:
 
@@ -42,13 +42,13 @@ The following features remain enabled when the **`/std:c++14`** option is specif
 
 Enable C++17 standard-specific features and behavior. Enables the full set of C++17 features implemented by the MSVC compiler. This option disables compiler and standard library support for features that are new or changed after C++17. That includes post-C++17 changes in versions of the Working Draft and defect updates of the C++ Standard. Available starting in Visual Studio version 15.3
 
-Depending on the MSVC compiler version or update level, C++17 features may not be fully implemented or fully conforming when you specify the **`/std:c++17`** options. For an overview of C++ language conformance in Visual C++ by release version, see [Microsoft C++ language conformance table](../../overview/visual-cpp-language-conformance.md).
+Depending on the MSVC compiler version or update level, C++17 features may not be fully implemented or fully conforming when you specify the **`/std:c++17`** options. For an overview of C++ language conformance in Visual C++ by release version, see [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md).
 
 **`/std:c++latest`**
 
 Enable all currently implemented compiler and standard library features proposed for the next draft standard. Available starting with Visual Studio 2015 Update 3
 
-Enables the post-C++17 language and library features currently implemented in the compiler and libraries. These features may include changes from the C++20 Working Draft, defect updates that aren't included in C++17, and experimental proposals for the draft standard.
+Enables the post-C++17 language and library features currently implemented in the compiler and libraries. These features may include changes to the latest Working Draft standard, defect updates, and experimental proposals for the standard.
 
 For a list of supported language and library features, see [What's New for Visual C++](../../overview/what-s-new-for-visual-cpp-in-visual-studio.md).
 
@@ -56,6 +56,7 @@ This option doesn't enable features guarded by the **`/experimental`** switch, b
 
 > [!NOTE]
 > The compiler and library features enabled by **`/std:c++latest`** may appear in a future C++ standard, as well as approved C++20 features. Features that have not been approved are subject to breaking changes or removal without notice and are provided on an as-is basis.
+
 ### C standards support
 
 By default, when code is compiled as C, the MSVC compiler doesn't conform to a particular C standard. It implements ANSI C89 with several Microsoft extensions, some of which are part of ISO C99. Some Microsoft extensions can be disabled by using the [`/Za`](za-ze-disable-language-extensions.md) compiler option, but others remain in effect. It isn't possible to specify strict C89 conformance.
@@ -71,9 +72,9 @@ Enable ISO C17 conformance. Available starting in Visual Studio 2019 version 16.
 Because the new preprocessor is needed to support these standards, the **`/std:c11`** and **`/std:c17`** compiler options set the [`/Zc:preprocessor`](zc-preprocessor.md) option automatically. If you want to use the traditional (legacy) preprocessor for C11 or C17, you must set the **`/Zc:preprocessor-`** compiler option explicitly. Setting the **`/Zc:preprocessor-`** option may lead to unexpected behavior, and isn't recommended.
 
 > [!NOTE]
-> At the time of release, the latest Windows SDK and UCRT libraries do not yet support C11 and C17 code. A pre-release version of the Windows SDK and UCRT is required. For more information and installation instructions, see [Install C11 and C17 support in Visual Studio](../../overview/install-c17-support.md).
+> At the time of release, the Windows SDK and UCRT libraries installed by Visual Studio don't support C11 and C17 code ywt. An updated version of the Windows SDK and UCRT is required. For more information and installation instructions, see [Install C11 and C17 support in Visual Studio](../../overview/install-c17-support.md).
 
-When you specify **`/std:c11`** or **`/std:c17`**, MSVC supports all the required features of C11 and C17. The compiler options enable support for these functionalities:
+When you specify **`/std:c11`** or **`/std:c17`**, MSVC supports all the features of C11 and C17 required by the standard. (Certain optional features aren't supported.) The compiler options enable support for these functionalities:
 
 - [`_Pragma`](../../preprocessor/pragma-directives-and-the-pragma-keyword.md#the-_pragma-preprocessing-operator-c99-c11)
 
@@ -89,9 +90,9 @@ When you specify **`/std:c11`** or **`/std:c17`**, MSVC supports all the require
 
 The IDE uses C settings for IntelliSense and code highlighting when your source files have a *`.c`* file extension, or when you specify the [`/TC`](tc-tp-tc-tp-specify-source-file-type.md) compiler option. Currently, IntelliSense highlighting is only available for keywords, and not the macros introduced by the standard headers.
 
-Since C17 is largely a bug fix release of ISO C11, MSVC support for C11 already includes all the relevant defect reports. At present, there are no differences between the C11 and C17 versions except for the `__STDC_VERSION__` macro. It expands to `201112L` for C11, and `201710L` for C17.
+Since C17 is largely a bug fix release of ISO C11, MSVC support for C11 already includes all the relevant defect reports. There are no differences between the C11 and C17 versions except for the `__STDC_VERSION__` macro. It expands to `201112L` for C11, and `201710L` for C17.
 
-The compiler doesn't support any optional features of ISO C11. Several of these optional features of C11 were required features of C99 that MSVC hasn't implemented for architectural reasons. You can use the feature test macros such as `__STDC_NO_VLA__` to detect compiler support levels for individual features. For more information about C-specific predefined macros, see [Predefined macros](../../preprocessor/predefined-macros.md).
+The compiler doesn't support most optional features of ISO C11. Several of these optional features of C11 were required features of C99 that MSVC hasn't implemented for architectural reasons. You can use the feature test macros such as `__STDC_NO_VLA__` to detect compiler support levels for individual features. For more information about C-specific predefined macros, see [Predefined macros](../../preprocessor/predefined-macros.md).
 
 - There's no conforming multithreading, atomic, or complex number support in the Visual Studio 2019 version 16.8 release.
 
@@ -99,11 +100,13 @@ The compiler doesn't support any optional features of ISO C11. Several of these 
 
 - DR 400 support is currently unimplemented for `realloc`, because this change would break the ABI.
 
-- Variable length array (VLA) support isn't planned. Variable length arrays are often less efficient than comparable fixed sized arrays. They're also inefficient compared to equivalent heap memory allocations, when safely and securely implemented. VLAs provide attack vectors comparable to `gets()`, which is deprecated and planned for removal.
+- Variable length array (VLA) support isn't planned. VLAs provide attack vectors comparable to `gets()`, which is deprecated and planned for removal.
+
+For more information, see the C Standard library features section of [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md).
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
+1. Open the project's **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
 1. Select the **Configuration Properties** > **C/C++** > **Language** property page.
 
@@ -111,5 +114,5 @@ The compiler doesn't support any optional features of ISO C11. Several of these 
 
 ## See also
 
-[MSVC Compiler Options](compiler-options.md)<br/>
-[MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)
+[MSVC compiler options](compiler-options.md)<br/>
+[MSVC compiler command-line syntax](compiler-command-line-syntax.md)
