@@ -15,7 +15,7 @@
       href: ../overview/cpp-conformance-improvements.md
     - name: C++ conformance improvements in Visual Studio 2017
       href: ../overview/cpp-conformance-improvements-2017.md
-    - name: Microsoft C++ language conformance
+    - name: Microsoft C/C++ language conformance
       href: ../overview/visual-cpp-language-conformance.md
     - name: Supported target platforms
       href: ../overview/supported-platforms-visual-cpp.md

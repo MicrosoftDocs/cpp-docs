@@ -1,10 +1,10 @@
 ---
-title: "Microsoft C/C++ language and standard library conformance table"
-description: "Table of Microsoft C++ conformance updates by Visual Studio version."
-ms.date: 06/03/2021
+title: "Microsoft C/C++ language conformance"
+description: "Microsoft C and C++ conformance updates by Visual Studio version."
+ms.date: 06/22/2021
 ms.technology: "cpp-language"
 ---
-# Microsoft C/C++ language and standard library conformance table
+# Microsoft C/C++ language conformance by Visual Studio version
 
 Standards conformance for the Microsoft C/C++ compiler in Visual Studio (MSVC) is a work in progress. Here's a summary of our ISO Standard C and C++ language and library conformance by Visual Studio version. Each C++ compiler and standard library feature name links to the ISO Standard C++ proposal paper that describes the feature, if one is available at publication time. The **Supported** column lists the Visual Studio version in which support for the feature first appeared.
 
@@ -469,11 +469,11 @@ __VS 2019 16.10__ Supported in Visual Studio 2019 version 16.10.
 
 <a name="note_A"></a> __A__ In [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) mode, dynamic exception specifications remain unimplemented, and `throw()` is still treated as a synonym for `__declspec(nothrow)`. In C++17, dynamic exception specifications were mostly removed by P0003R5, leaving one vestige: `throw()` is deprecated and required to behave as a synonym for **`noexcept`**. In [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode, MSVC now conforms to the Standard by giving `throw()` the same behavior as **`noexcept`**, that is, enforcement via termination.
 
-The compiler option [`/Zc:noexceptTypes`](../build/reference/zc-noexcepttypes.md) requests our old behavior of `__declspec(nothrow)`. It's likely that `throw()` will be removed in C++20. To help with migrating code in response to these changes in the Standard and our implementation, new compiler warnings for exception specification issues have been added under [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and [`/permissive-`](../build/reference/permissive-standards-conformance.md).
+The compiler option [`/Zc:noexceptTypes`](../build/reference/zc-noexcepttypes.md) requests our old behavior of `__declspec(nothrow)`. It's likely that `throw()` will be removed in a future version of C++. To help with migrating code in response to these changes in the Standard and our implementation, new compiler warnings for exception specification issues have been added under [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and [`/permissive-`](../build/reference/permissive-standards-conformance.md).
 
 <a name="note_B"></a> __B__ Supported in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode in Visual Studio 2017 version 15.7. For more information, see [Two-phase name lookup support comes to MSVC](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/).
 
-<a name="note_C"></a> __C__ Starting in Visual Studio 2017 version 15.8, the compiler provides support for the C99 preprocessor via the [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md) compiler switch. Starting in Visual Studio 2019 version 16.6, the compiler fully implements the C99 preprocessor via the [`/Zc:preprocessor`](../build/reference/zc-conformance.md) switch. It is on by default when the compiler switch `/std:c11` or `/std:c17` is specified.
+<a name="note_C"></a> __C__ Starting in Visual Studio 2019 version 16.6, the compiler fully implements the C99 preprocessor via the [`/Zc:preprocessor`](../build/reference/zc-conformance.md) option. (Before version 16.6, starting in Visual Studio 2017 version 15.8, the compiler provides support for the C99 preprocessor via the [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md) compiler option.) This option is on by default when the compiler option [`/std:c11`](../build/reference/std-specify-language-standard-version.md) or [`/std:c17`](../build/reference/std-specify-language-standard-version.md) is specified.
 
 <a name="note_D"></a> __D__ Supported under [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) with a suppressible warning, [`C4984`](../error-messages/compiler-warnings/compiler-warning-c4984.md).
 

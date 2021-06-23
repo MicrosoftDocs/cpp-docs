@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Introduction to Microsoft C++ for UNIX Users"
 title: "Introduction to Microsoft C++ for UNIX Users"
-ms.date: "10/23/2019"
+ms.date: 06/22/2021
 helpviewer_keywords: ["UNIX [C++]"]
 ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
 ---
@@ -29,9 +29,9 @@ Starting in Visual Studio 2017, support for CMake projects is added, as well as 
 
 ## Microsoft-specific modifiers
 
-The Microsoft C++ compiler implements several extensions to the standard C++ programming language to support programming for Windows operating systems. These extensions are used to specify storage class attributes, function calling conventions, and based addressing, among other things. For a complete list of all supported C++ extensions, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).
+The Microsoft compiler implements several extensions to the standard C and C++ programming languages to support programming for Windows operating systems. These extensions are used to specify storage class attributes, function calling conventions, and based addressing, among other things. For a complete list of all supported C and C++ extensions, see [Microsoft-specific modifiers](../cpp/microsoft-specific-modifiers.md).
 
-You can disable all Microsoft-specific extensions to C++ by using the `/Za` compiler option. This option is recommended if you want to write code to run on multiple platforms. For more information on the `/Za` compiler option, see [/Za, /Ze (Disable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md). For more information on C++ compiler conformance, see [Microsoft C++ language conformance table](../overview/visual-cpp-language-conformance.md) and [Nonstandard Behavior](../cpp/nonstandard-behavior.md).
+You can disable most Microsoft-specific extensions to C89 by using the **`/Za`** compiler option. This option is only recommended if you want to write code to run on multiple platforms that require conforming C89. For more information on the **`/Za`** compiler option, see [`/Za`, `/Ze` (Disable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md). For more information on C and C++ compiler conformance, see [Microsoft C/C++ language conformance](../overview/visual-cpp-language-conformance.md) and [Nonstandard behavior](../cpp/nonstandard-behavior.md).
 
 ## Precompiled headers
 
