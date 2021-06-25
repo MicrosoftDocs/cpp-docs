@@ -75,19 +75,17 @@ using namespace std::chrono;
 
 int main()
 {
-    month m(7);
-    day d(30);
-    month_day md(m, d);
+    month_day md(30d/July);
+    month_day md2 = July/30; // another way to construct a month_day
 
-    month_day md2 = July/30; // a convenient way to construct a month_day
-
-    std::cout << md << ' ' << md2;
+    std::cout << md << '\n' << md2;
     return 0;
 }
 ```
 
 ```output
-Jul/30 Jul/30
+Jul/30
+Jul/30
 ```
 
 ## <a name="day"></a> `day`

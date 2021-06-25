@@ -39,6 +39,9 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 | [`year` class](../standard-library/year-class.md) | A year in the [Gregorian calendar](https://en.wikipedia.org/wiki/Proleptic_Gregorian_calendar).|
 | [`year_month` class](../standard-library/year-month-class.md) | A year and month. The day isn't specified.|
 | [`year_month_day` class](../standard-library/year-month-day-class.md) | A year, month, and day.|
+| [`year_month_day_last` class](../standard-library/year-month-day-last-class.md) | The last day of a specific month and year. |
+| [`year_month_weekday` class](../standard-library/year-month-weekday-class.md) | A specific year, month, and nth weekday of the month. |
+| [`year_month_weekday_last` class](../standard-library/year-month-weekday-last-class.md) |  A specific year, month, and last weekday of the month. |
 
 ### Structs
 

@@ -63,11 +63,15 @@ using namespace std::chrono;
 
 int main()
 {
-   month_day_last mdl = month_day_last(month(10));
-   
-   // a convenient way to create a month_day_last
-   month_day_last mdl2 {October / last };
+    month_day_last mdl{ October / last };
+    std::cout << mdl;
+
+    return 0;
 }
+```
+
+```output
+Oct/last
 ```
 
 ## <a name="month"></a> `month`

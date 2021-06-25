@@ -78,6 +78,30 @@ Construct a `weekday` with value *`wd`*.
 3\) Computes what day of the week corresponds to the `std::chrono::sys_days` value `dp`, and constructs a `weekday` using that day.\
 4\) Computes the day of the week that corresponds to the `std::chrono::local_days` value `dp`, and constructs a `weekday` using that day. It behaves as if you created the `weekday` using `weekday(std::chrono::sys_days(dp.time_since_epoch()))`.
 
+### Example: Create a `weekday`
+
+```cpp
+// compile using: /std:c++latest
+#include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
+
+int main()
+{
+    weekday wd{ Wednesday };
+    weekday wd2{ 3 };
+    std::cout << wd << '\n' << wd2;
+    
+    return 0;
+}
+```
+
+```output
+Wednesday
+Wednesday
+```
+
 ## <a name="c_encoding"></a> `c_encoding`
 
 ```cpp
@@ -138,17 +162,16 @@ using namespace std::chrono;
 
 int main()
 {
-    std::chrono::weekday y{4};
+    std::chrono::weekday wd{Thursday};
 
-    std::cout << y << " " << ++y << "\n"; // constexpr weekday& operator++() noexcept
-    std::cout << y << " " << y++ << "\n"; // constexpr weekday operator++(int) noexcept
-    std::cout << y << "\n";
+    std::cout << wd << " " << ++wd << "\n"; // constexpr weekday& operator++() noexcept
+    std::cout << wd << " " << wd++ << "\n"; // constexpr weekday operator++(int) noexcept
+    std::cout << wd << "\n";
 
     return 0;
 }
 ```
 
-Output:
 ```output
 Thu Fri
 Fri Fri
@@ -185,7 +208,7 @@ using namespace std::chrono;
 
 int main()
 {
-    weekday y = weekday{4};
+    weekday y = weekday{Thursday};
 
     cout << y << " " << --y << "\n"; // constexpr weekday& operator--() noexcept
     cout << y << " " << y-- << "\n"; // constexpr weekday operator--(int) noexcept
@@ -194,8 +217,6 @@ int main()
     return 0;
 }
 ```
-
-Output:
 
 ```output
 Thu Wed
@@ -267,7 +288,7 @@ using namespace std::chrono;
 
 int main()
 {
-     constexpr auto firstMondayInJanuary =
+    constexpr auto firstMondayInJanuary =
         year_month_day{ Monday[2] / January / 2021y };
 
     std::cout << firstMondayInJanuary << "\n";

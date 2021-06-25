@@ -78,6 +78,7 @@ Construct a `year` with value *`y`*.
 ### Example: Create a `year`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
@@ -160,6 +161,7 @@ Returns `*this`
 ### Example: unary `operator+`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
@@ -196,6 +198,7 @@ Add 1 to the year value.
 ### Example: `operator++`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
@@ -237,6 +240,7 @@ Returns a negated copy of the `year`.
 ### Example: unary `operator-`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
@@ -274,6 +278,7 @@ Subtract 1 from the year value.
 ### Example: `operator--`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
@@ -335,7 +340,6 @@ The number of years to subtract.
 
 `*this`. If the decremented result is less than -32768, it's set to 32767.
 
-
 ## <a name="op_int"></a> `operator int`
 
 Get the `year` value.
@@ -351,7 +355,9 @@ The value of the `year`
 ### Example: `operator int()`
 
 ```cpp
-#include <iostream>
+// compile using: /std:c++latest
+
+ #include <iostream>
 #include <chrono>
 
 using namespace std::chrono;

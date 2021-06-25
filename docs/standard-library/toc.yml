@@ -194,6 +194,12 @@
           href: year-month-class.md
         - name: year_month_day class
           href: year-month-day-class.md
+        - name: year_month_day_last class
+          href: year-month-day-last-class.md
+        - name: year_month_weekday class
+          href: year-month-weekday-class.md
+        - name: year_month_weekday_last class
+          href: year-month-weekday-last-class.md
     - name: <cinttypes>
       href: ../standard-library/cinttypes.md
     - name: <ciso646>

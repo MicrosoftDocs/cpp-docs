@@ -72,14 +72,13 @@ using namespace std::chrono;
 
 int main()
 {
-    constexpr auto wdi = weekday_indexed(Monday, 1);
-    constexpr auto month = July;
-    month_weekday mw(month, wdi);
+    month_weekday mw{ July/Monday[1] };
     std::cout << mw << '\n';
 
-    // A convenient way to create a month_weekday
+    // Another way to create a month_weekday
     month_weekday mw2 = February / Tuesday[3];
     std::cout << mw2;
+
     return 0;
 }
 ```

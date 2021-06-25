@@ -69,7 +69,7 @@ using namespace std::chrono;
 
 int main()
 {
-   constexpr auto wdi = weekday_indexed(Monday, 1);
+   constexpr auto wdi = weekday_indexed{Monday, 1};
 
     std::cout << wdi;
     return 0;
@@ -113,7 +113,7 @@ The weekday value.
 
 int main()
 {
-    constexpr auto wdi = weekday_indexed(Monday, 1);
+    constexpr auto wdi = weekday_indexed{ Monday, 1 };
 	std::cout << wdi << "\n";
 
     return 0;

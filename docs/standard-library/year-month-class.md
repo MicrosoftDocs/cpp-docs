@@ -78,8 +78,7 @@ using namespace std::chrono;
 
 int main()
 {
-    const year theYear{2021};
-    year_month ym{theYear, June};
+    year_month ym{2021y / June};
 
     std::cout << ym;
     return 0;
@@ -141,7 +140,7 @@ Add months or years to this `year_month`.
 The number of months to add.
 
 *`dy`*\
-The numbers of years to add
+The number of years to add.
 
 ### Return value
 
@@ -158,10 +157,9 @@ using namespace std::chrono;
 
 int main()
 {
-    const year theYear{2021};
-    year_month ym{theYear, June};
+    year_month ym{2021y / June};
 
-    std::cout << ym << `\n`;
+    std::cout << ym << '\n';
 
     ym += months{2};
     ym += years{1};
@@ -192,7 +190,7 @@ Subtract months or years from this `year_month`.
 The number of months to subtract.
 
 *`dy`*\
-The numbers of years to subtract
+The number of years to subtract.
 
 ### Return value
 
@@ -209,10 +207,9 @@ using namespace std::chrono;
 
 int main()
 {
-    const year theYear{2021};
-    year_month ym{theYear, June};
+    year_month ym{2021y / June};
 
-    std::cout << ym << `\n`;
+    std::cout << ym << '\n';
 
     ym -= months{2};
     ym -= years{1};

@@ -107,7 +107,7 @@ using namespace std::chrono;
 
 int main()
 {
-    month m{1};
+    month m{January};
 
     std::cout << m << " " << ++m << "\n"; // constexpr month& operator++() noexcept
     std::cout << m << " " << m++ << "\n"; // constexpr month operator++(int) noexcept
@@ -153,7 +153,7 @@ using namespace std::chrono;
 
 int main()
 {
-    std::chrono::month m{5};
+    month m{May};
 
     cout << m << " " << --m << "\n"; // constexpr month& operator++() noexcept
     cout << m << " " << m-- << "\n"; // constexpr month operator++(int) noexcept

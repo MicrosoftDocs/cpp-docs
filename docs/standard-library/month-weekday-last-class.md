@@ -71,7 +71,7 @@ using namespace std::chrono;
 
 int main()
 {
-    constexpr auto mwdl = January/Monday[last]; // wdl is the last Monday of January of an unspecified year
+    constexpr auto mwdl{ January / Monday[last] }; // wdl is the last Monday of January of an unspecified year
     std::cout << mwdl << "\n";
 
     const auto theMonth = August;

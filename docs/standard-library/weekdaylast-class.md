@@ -103,17 +103,15 @@ using namespace std::chrono;
 
 int main()
 {
-    constexpr auto wdl = Monday[last]; // lastWeekday is the last Monday of an unspecified month
+    constexpr auto wdl{ Monday[last] }; // wdl is the last Monday of an unspecified month
 	std::cout << wdl.weekday() << "\n";
 
     return 0;
 }
 ```
 
-Output:
-
 ```output
-Monday
+Mon
 ```
 
 ## See also
