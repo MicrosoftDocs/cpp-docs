@@ -279,7 +279,7 @@ One of the standard HRESULT values.
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample of how to use `AtlAxCreateControlLic`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample of how to use `AtlAxCreateControlLic`.
 
 ## <a name="atlaxcreatecontrollicex"></a> AtlAxCreateControlLicEx
 
@@ -346,7 +346,7 @@ One of the standard HRESULT values.
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample of how to use `AtlAxCreateControlLicEx`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample of how to use `AtlAxCreateControlLicEx`.
 
 ## <a name="atlaxattachcontrol"></a> AtlAxAttachControl
 

@@ -193,7 +193,7 @@
         - name: "MFC extension DLLs: Overview"
           href: ../build/extension-dlls-overview.md
     - name: MFC DLL frequently asked questions
-      href: ../build/dll-frequently-asked-questions.md
+      href: ../build/dll-frequently-asked-questions.yml
     - name: Link an executable to a DLL
       href: ../build/linking-an-executable-to-a-dll.md
     - name: DLLs and MSVC run-time library behavior

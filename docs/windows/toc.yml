@@ -168,7 +168,7 @@
 - name: C++ Attributes for COM and .NET
   href: ../windows/attributes/cpp-attributes-com-net.md
 - name: Attribute programming FAQ
-  href: ../windows/attributes/attribute-programming-faq.md
+  href: ../windows/attributes/attribute-programming-faq.yml
 - name: Attributes by group
   expanded: false
   items: 

@@ -37,7 +37,7 @@ This interface is exposed by ATL's ActiveX control hosting objects. Derived from
 
 If you are linking to ATL90.dll, **AXHost** will load the type information from the type library in the DLL.
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for more details.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for more details.
 
 ## Requirements
 

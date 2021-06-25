@@ -96,7 +96,7 @@ This field lists other attributes that are incompatible with the specified attri
 
 ## In This Section
 
-[Attribute Programming FAQ](attribute-programming-faq.md)<br/>
+[Attribute Programming FAQ](attribute-programming-faq.yml)<br/>
 [Attributes by Group](attributes-by-group.md)<br/>
 [Attributes by Usage](attributes-by-usage.md)<br/>
 [Attributes Alphabetical Reference](attributes-alphabetical-reference.md)
