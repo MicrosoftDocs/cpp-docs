@@ -48,6 +48,7 @@ For the latest C++ conformance status, see [C++ conformance improvements in Visu
 - [`assert Macro, _assert, _wassert`](../c-runtime-library/reference/assert-macro-assert-wassert.md) - Clarified assert behavior
 - [`vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l`](../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md) - Clarified return values
 - [`setlocale, _wsetlocale`](../c-runtime-library/reference/setlocale-wsetlocale.md) - Added C Runtime UTF-8 support info
+- [`C++ AMP Overview`](../parallel/amp/cpp-amp-overview.md) - Added note about C++ AMP deprecation.
 
 ## C/C++ preprocessor reference
 
