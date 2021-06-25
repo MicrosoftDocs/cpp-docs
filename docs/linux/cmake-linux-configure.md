@@ -85,7 +85,7 @@ The default Linux-Debug configuration in Visual Studio 2019 version 16.1, and la
 }
 ```
 
-In Visual Studio 2019 version 16.6 or later, Ninja is the default generator for configurations targeting a remote system or WSL. For more information, see this post on the [C++ Team Blog](https://devblogs.microsoft.com/cppblog/linux-development-with-visual-studio-first-class-support-for-gdbserver-improved-build-times-with-ninja-and-updates-to-the-connection-manager/).
+In Visual Studio 2019 version 16.6 or later, Ninja is the default generator for configurations targeting a remote system or WSL, as opposed to Unix Makefiles. For more information, see this post on the [C++ Team Blog](https://devblogs.microsoft.com/cppblog/linux-development-with-visual-studio-first-class-support-for-gdbserver-improved-build-times-with-ninja-and-updates-to-the-connection-manager/).
 
 ::: moniker-end
 ::: moniker range=">=msvc-150"
