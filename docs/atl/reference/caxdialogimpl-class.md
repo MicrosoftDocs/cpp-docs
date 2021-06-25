@@ -65,7 +65,7 @@ See [Implementing a Dialog Box](../../atl/implementing-a-dialog-box.md) for more
 
 Note that an ActiveX control on a modal dialog box created with `CAxDialogImpl` will not support accelerator keys. To support accelerator keys on a dialog box created with `CAxDialogImpl`, create a modeless dialog box and, using your own message loop, use [CAxDialogImpl::IsDialogMessage](#isdialogmessage) after getting a message from the queue to handle an accelerator key.
 
-For more information on `CAxDialogImpl`, see [ATL Control Containment FAQ](../../atl/atl-control-containment-faq.md).
+For more information on `CAxDialogImpl`, see [ATL Control Containment FAQ](../../atl/atl-control-containment-faq.yml).
 
 ## Inheritance Hierarchy
 

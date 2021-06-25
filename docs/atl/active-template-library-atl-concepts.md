@@ -28,7 +28,7 @@ Describes the implementation and creation of collections and enumerators in ATL.
 [Composite Control Fundamentals](atl-composite-control-fundamentals.md)<br/>
 Provides step-by-step instructions for creating a composite control. A composite control is a type of ActiveX control that can contain other ActiveX controls or Windows controls.
 
-[ATL Control Containment FAQ](atl-control-containment-faq.md)<br/>
+[ATL Control Containment FAQ](atl-control-containment-faq.yml)<br/>
 Covers the fundamental questions related to hosting controls with ATL.
 
 [ATL COM Property Pages](atl-com-property-pages.md)<br/>

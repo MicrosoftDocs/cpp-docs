@@ -98,7 +98,7 @@
         - name: Building and testing the ATL project
           href: building-and-testing-the-atl-project.md
     - name: ATL control containment FAQ
-      href: atl-control-containment-faq.md
+      href: atl-control-containment-faq.yml
     - name: ATL COM property pages
       expanded: false
       items: 
