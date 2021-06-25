@@ -153,7 +153,7 @@ See [CAxWindow2T::CreateControlLic](../../atl/reference/caxwindow2t-class.md#cre
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample that uses `CreateControl`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample that uses `CreateControl`.
 
 ## <a name="createcontrolex"></a> CAxWindow::CreateControlEx
 
@@ -225,7 +225,7 @@ See [CAxWindow2T::CreateControlLicEx](../../atl/reference/caxwindow2t-class.md#c
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample that uses `CreateControlEx`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample that uses `CreateControlEx`.
 
 ## <a name="getwndclassname"></a> CAxWindow::GetWndClassName
 
@@ -354,4 +354,4 @@ The external `IDocHostUIHandlerDispatch` interface is used by controls that quer
 [CWindow Class](../../atl/reference/cwindow-class.md)<br/>
 [Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
-[Control Containment FAQ](../../atl/atl-control-containment-faq.md)
+[Control Containment FAQ](../../atl/atl-control-containment-faq.yml)

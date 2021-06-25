@@ -59,7 +59,7 @@ Describes how to create and use a DLL using Visual Studio.
 [Kinds of DLLs](kinds-of-dlls.md)\
 Provides information about the different kinds of DLLs that can be built.
 
-[DLL frequently asked questions](dll-frequently-asked-questions.md)\
+[DLL frequently asked questions](dll-frequently-asked-questions.yml)\
 Provides answers to frequently asked questions about DLLs.
 
 [Link an executable to a DLL](linking-an-executable-to-a-dll.md)\

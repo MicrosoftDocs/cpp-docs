@@ -29,7 +29,7 @@ interface IAxWinHostWindowLic : IAxWinHostWindow
 
 `IAxWinHostWindowLic` inherits from [IAxWinHostWindow](../../atl/reference/iaxwinhostwindow-interface.md) and adds methods that support the creation of licensed controls.
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample that uses the members of this interface.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample that uses the members of this interface.
 
 ## Requirements
 
@@ -65,7 +65,7 @@ Calling this method is equivalent to calling [IAxWinHostWindowLic::CreateControl
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample that uses `IAxWinHostWindowLic::CreateControlLic`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample that uses `IAxWinHostWindowLic::CreateControlLic`.
 
 ## <a name="createcontrollicex"></a> IAxWinHostWindowLic::CreateControlLicEx
 
@@ -93,4 +93,4 @@ See [IAxWinHostWindow::CreateControlEx](../../atl/reference/iaxwinhostwindow-int
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) for a sample that uses `IAxWinHostWindowLic::CreateControlLicEx`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample that uses `IAxWinHostWindowLic::CreateControlLicEx`.
