@@ -318,8 +318,10 @@ int main()
 
 ## See also
 
-[`year`](year-class.md)\
-[`year_month`](year-month-class.md)
-[`year_month_day`](year-month-day-class.md)
+[`year`](year-class.md)]\
+[`year_month`](year-month-class.md)\
+[`year_month_day`](year-month-day-class.md)\
+[`year_month_weekday`](year-month-weekday-class.md)\
+[`year_month_weekday_last`](year-month-weekday-last-class.md)\
 [`<chrono>`](chrono.md)\
 [Header Files Reference](cpp-standard-library-header-files.md)

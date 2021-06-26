@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: year_month class"
 title: "year_month class"
-ms.date: "06/16/2021"
+ms.date: "06/25/2021"
 f1_keywords: ["chrono/std::chrono::year_month", "chrono/std::chrono::year::operator+=", "chrono/std::chrono::year::operator-=", "chrono/std::chrono::year::ok"]
 helpviewer_keywords: ["std::chrono [C++], year_month"]
 ---
@@ -227,7 +227,10 @@ int main()
 
 ## See also
 
-[`year`](year-class.md)\
+[`year`](year-class.md)]\
 [`year_month_day`](year-month-day-class.md)\
+[`year_month_day_last`](year-month-day-last-class.md)\
+[`year_month_weekday`](year-month-weekday-class.md)\
+[`year_month_weekday_last`](year-month-weekday-last-class.md)\
 [`<chrono>`](chrono.md)\
 [Header Files Reference](cpp-standard-library-header-files.md)

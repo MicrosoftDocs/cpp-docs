@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: month_weekday_last Class"
 title: "month_weekday_last class"
-ms.date: "5/21/2021"
+ms.date: "6/25/2021"
 f1_keywords: ["chrono/std::chrono::month_weekday_last", "chrono/std::chrono::month_weekday_last::ok", "std::chrono::month_weekday_last::month_weekday_last", "chrono/std::chrono::month_weekday_last::ok", "chrono/std::chrono::month_weekday_last::month"]
 helpviewer_keywords: ["std::chrono [C++], month_weekday_last"]
 ---
