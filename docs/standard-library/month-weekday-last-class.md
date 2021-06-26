@@ -63,6 +63,7 @@ The` weekday_last` value for the created `month_weekday_last` class.
 ### Example: Create a `month_weekday_last`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 

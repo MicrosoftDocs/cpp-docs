@@ -213,4 +213,4 @@ Unions are commonly used in C-style programming to conserve memory by enabling m
 [C++ Language Reference](../cpp/cpp-language-reference.md)\
 [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)\
 [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)\
-[Microsoft C++ language conformance table](../overview/visual-cpp-language-conformance.md)
+[Microsoft C/C++ language conformance](../overview/visual-cpp-language-conformance.md)

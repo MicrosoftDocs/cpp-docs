@@ -56,6 +56,7 @@ Construct a `month_day_last` for the month specified by *`m`*.
 ### Example: Create a `month_day_last`
 
 ```cpp
+// compile using: /std:c++latest
 #include <chrono>
 
 using namespace std::chrono;

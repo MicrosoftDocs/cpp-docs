@@ -23,13 +23,19 @@ When you choose one of the C++ workloads in the Visual Studio Installer, it inst
 
 To work correctly, the tools require several specific environment variables to be set. These variables are used to add the tools to the path, and to set include file, library file, and SDK locations. To make it easy to set these environment variables, the installer creates customized *command files*, or batch files, during installation. You can run one of these command files to set a specific host and target build architecture, Windows SDK version, and platform toolset. For convenience, the installer also creates shortcuts in your Start menu. The shortcuts start developer command prompt windows by using these command files for specific combinations of host and target. These shortcuts ensure all the required environment variables are set and ready to use.
 
-The required environment variables are specific to your installation and to the build architecture you choose. They also might be changed by product updates or upgrades. That's why we recommend you use an installed command prompt shortcut or command file, instead of setting the environment variables yourself. For more information, see [Set the path and environment variables for command-line builds](setting-the-path-and-environment-variables-for-command-line-builds.md).
+The required environment variables are specific to your installation and to the build architecture you choose. They also might be changed by product updates or upgrades. That's why we recommend you use an installed command prompt shortcut or command file, instead of setting the environment variables yourself.
 
-The toolsets, command files, and shortcuts installed depend on your computer processor and the options you selected during installation. The x86-hosted tools and cross tools that build x86 and x64 code are always installed. If you have 64-bit Windows, the x64-hosted tools and cross tools that build x86 and x64 code are also installed. If you choose the optional C++ Universal Windows Platform tools, then the x86 and x64 tools that build ARM and ARM64 code also get installed. Other workloads may install additional tools.
+The toolsets, command files, and shortcuts installed depend on your computer processor and the options you selected during installation. The x86-hosted tools and cross tools that build x86 and x64 code are always installed. If you have 64-bit Windows, the x64-hosted tools and cross tools that build x86 and x64 code are also installed. If you choose the optional C++ Universal Windows Platform tools, then the x86 and x64 tools that build ARM and ARM64 code also get installed. Other workloads may install these and other tools.
+
+## <a name="path_and_environment"></a> Path and environment variables for command-line builds
+
+The MSVC command-line tools use the `PATH`, `TMP`, `INCLUDE`, `LIB`, and `LIBPATH` environment variables, and also use other environment variables specific to your installed tools, platforms, and SDKs. Even a simple Visual Studio installation may set twenty or more environment variables. The values of these environment variables are specific to your installation and your choice of build configuration, and can be changed by product updates or upgrades. That's why we strongly recommend that you use a [developer command prompt shortcut](#developer_command_prompt_shortcuts) or one of the [customized command files](#developer_command_file_locations) to set them. We don't recommend you set them in the Windows environment yourself.
+
+To see which environment variables are set by a developer command prompt shortcut, you can use the `SET` command. Open a plain command prompt window and capture the output of the `SET` command for a baseline. Open a developer command prompt window and capture the output of the `SET` command for comparison. A diff tool such as the one built into the Visual Studio IDE can be useful to compare the environment variables and see what's set by the developer command prompt. For information about the specific environment variables used by the compiler and linker, see [CL Environment Variables](reference/cl-environment-variables.md).
 
 ## <a name="developer_command_prompt_shortcuts"></a> Developer command prompt shortcuts
 
-The command prompt shortcuts are installed in a version-specific Visual Studio folder in your Start menu. Here's a list of the base command prompt shortcuts and the build architectures they support:
+The command prompt shortcuts are installed in a version-specific Visual Studio folder in your Windows Start menu. Here's a list of the base command prompt shortcuts and the build architectures they support:
 
 - **Developer Command Prompt** - Sets the environment to use 32-bit, x86-native tools to build 32-bit, x86-native code.
 - **x86 Native Tools Command Prompt** - Sets the environment to use 32-bit, x86-native tools to build 32-bit, x86-native code.
@@ -42,7 +48,7 @@ The command prompt shortcuts are installed in a version-specific Visual Studio f
 The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2019, and you gave it a nickname of *Latest*. The developer command prompt shortcut is named **Developer Command Prompt for VS 2019 (Latest)**, in a folder named **Visual Studio 2019**.
 
 ::: moniker-end
-::: moniker range="= msvc-150"
+::: moniker range="msvc-150"
 
 The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. If you set one, they also depend on the installation **Nickname**. For example, suppose you installed Visual Studio 2017, and you gave it a nickname of *Latest*. The developer command prompt shortcut is named **Developer Command Prompt for VS 2017 (Latest)**, in a folder named **Visual Studio 2017**.
 
@@ -52,6 +58,9 @@ The Start menu folder and shortcut names vary depending on the installed version
 The Start menu folder and shortcut names vary depending on the installed version of Visual Studio. For example, suppose you installed Visual Studio 2015. The developer command prompt shortcut is named **Developer Command Prompt for VS 2015**.
 
 ::: moniker-end
+
+> [!NOTE]
+> Several command-line tools or tool options may require Administrator permission. If you have permission issues when you use them, we recommend that you open the developer command prompt window by using the **Run as Administrator** option. On Windows 10, right-click to open the shortcut menu for the command prompt window, then choose **More**, **Run as administrator**.
 
 ### <a name="developer_command_prompt"></a> To open a developer command prompt window
 
@@ -81,7 +90,7 @@ The command file location depends on the Visual Studio version, and the installa
 
 ::: moniker-end
 
-The primary developer command prompt command file, VsDevCmd.bat, is located in the Common7\\Tools subdirectory. When no parameters are specified, it sets the environment to use the x86-native tools to build 32-bit x86 code.
+The primary developer command prompt command file, *`VsDevCmd.bat`*, is located in the Common7\\Tools subdirectory. When no parameters are specified, it sets the environment to use the x86-native tools to build 32-bit x86 code.
 
 ::: moniker range=">= msvc-150"
 
@@ -94,61 +103,63 @@ More command files are available to set up specific build architectures. The com
 
 ::: moniker-end
 
-These command files set default parameters and call VsDevCmd.bat to set up the specified build architecture environment. A typical installation may include these command files:
+These command files set default parameters and call *`VsDevCmd.bat`* to set up the specified build architecture environment. A typical installation may include these command files:
 
-|Command File|Host and Target architectures|
-|---|---|
-|**vcvars32.bat**| Use the 32-bit x86-native tools to build 32-bit x86 code.|
-|**vcvars64.bat**| Use the 64-bit x64-native tools to build 64-bit x64 code.|
-|**vcvarsx86_amd64.bat**| Use the 32-bit x86-native cross tools to build 64-bit x64 code.|
-|**vcvarsamd64_x86.bat**| Use the 64-bit x64-native cross tools to build 32-bit x86 code.|
-|**vcvarsx86_arm.bat**| Use the 32-bit x86-native cross tools to build ARM code.|
-|**vcvarsamd64_arm.bat**| Use the 64-bit x64-native cross tools to build ARM code.|
-|**vcvarsall.bat**| Use parameters to specify the host and target architectures, Windows SDK, and platform choices. For a list of supported options, call by using a **/help** parameter.|
+| Command File | Host and Target architectures |
+|--|--|
+| *`vcvars32.bat`* | Use the 32-bit x86-native tools to build 32-bit x86 code. |
+| *`vcvars64.bat`* | Use the 64-bit x64-native tools to build 64-bit x64 code. |
+| *`vcvarsx86_amd64.bat`* | Use the 32-bit x86-native cross tools to build 64-bit x64 code. |
+| *`vcvarsamd64_x86.bat`* | Use the 64-bit x64-native cross tools to build 32-bit x86 code. |
+| *`vcvarsx86_arm.bat`* | Use the 32-bit x86-native cross tools to build ARM code. |
+| *`vcvarsamd64_arm.bat`* | Use the 64-bit x64-native cross tools to build ARM code. |
+| *`vcvarsx86_arm64.bat`* | Use the 32-bit x86-native cross tools to build ARM64 code. |
+| *`vcvarsamd64_arm64.bat`* | Use the 64-bit x64-native cross tools to build ARM64 code. |
+| *`vcvarsall.bat`* | Use parameters to specify the host and target architectures, Windows SDK, and platform choices. For a list of supported options, call by using a `/help` parameter. |
 
 > [!CAUTION]
-> The vcvarsall.bat file and other Visual Studio command files can vary from computer to computer. Do not replace a missing or damaged vcvarsall.bat file by using a file from another computer. Rerun the Visual Studio installer to replace the missing file.
+> The *`vcvarsall.bat`* file and other Visual Studio command files can vary from computer to computer. Do not replace a missing or damaged *`vcvarsall.bat`* file by using a file from another computer. Rerun the Visual Studio installer to replace the missing file.
 >
-> The vcvarsall.bat file also varies from version to version. If the current version of Visual Studio is installed on a computer that also has an earlier version of Visual Studio, do not run vcvarsall.bat or another Visual Studio command file from different versions in the same command prompt window.
+> The *`vcvarsall.bat`* file also varies from version to version. If the current version of Visual Studio is installed on a computer that also has an earlier version of Visual Studio, do not run *`vcvarsall.bat`* or another Visual Studio command file from different versions in the same command prompt window.
 
 ## Use the developer tools in an existing command window
 
-The simplest way to specify a particular build architecture in an existing command window is to use the vcvarsall.bat file. Use vcvarsall.bat to set environment variables to configure the command line for native 32-bit or 64-bit compilation. Arguments let you specify cross-compilation to x86, x64, ARM, or ARM64 processors. You can target Microsoft Store, Universal Windows Platform, or Windows Desktop platforms. You can even specify which Windows SDK to use, and select the platform toolset version.
+The simplest way to specify a particular build architecture in an existing command window is to use the *`vcvarsall.bat`* file. Use *`vcvarsall.bat`* to set environment variables to configure the command line for native 32-bit or 64-bit compilation. Arguments let you specify cross-compilation to x86, x64, ARM, or ARM64 processors. You can target Microsoft Store, Universal Windows Platform, or Windows Desktop platforms. You can even specify which Windows SDK to use, and select the platform toolset version.
 
-When used with no arguments, vcvarsall.bat configures the environment variables to use the current x86-native compiler for 32-bit Windows Desktop targets. You can add arguments to configure the environment to use any of the native or cross compiler tools. vcvarsall.bat displays an error message if you specify a configuration that's not installed, or not available on your computer.
+When used with no arguments, *`vcvarsall.bat`* configures the environment variables to use the current x86-native compiler for 32-bit Windows Desktop targets. You can add arguments to configure the environment to use any of the native or cross compiler tools. *`vcvarsall.bat`* displays an error message if you specify a configuration that's not installed, or not available on your computer.
 
-### vcvarsall syntax
+### `vcvarsall` syntax
 
-> **vcvarsall.bat** [*architecture*] [*platform_type*] [*winsdk_version*] [**-vcvars_ver=**_vcversion_]
+> **`vcvarsall.bat`** [*`architecture`*] [*`platform_type`*] [*`winsdk_version`*] [**`-vcvars_ver=`**_`vcversion`_] [*`spectre_mode`*]
 
-*architecture*<br/>
+*`architecture`*<br/>
 This optional argument specifies the host and target architecture to use. If *architecture* isn't specified, the default build environment is used. These arguments are supported:
 
-|*architecture*|Compiler|Host computer architecture|Build output (target) architecture|
-|----------------------------|--------------|----------------------------------|-------------------------------|
-|**x86**|x86 32-bit native|x86, x64|x86|
-|**x86\_amd64** or **x86\_x64**|x64 on x86 cross|x86, x64|x64|
-|**x86_arm**|ARM on x86 cross|x86, x64|ARM|
-|**x86_arm64**|ARM64 on x86 cross|x86, x64|ARM64|
-|**amd64** or **x64**|x64 64-bit native|x64|x64|
-|**amd64\_x86** or **x64\_x86**|x86 on x64 cross|x64|x86|
-|**amd64\_arm** or **x64\_arm**|ARM on x64 cross|x64|ARM|
-|**amd64\_arm64** or **x64\_arm64**|ARM64 on x64 cross|x64|ARM64|
+| *`architecture`* | Compiler | Host computer architecture | Build output (target) architecture |
+|--|--|--|--|
+| `x86` | x86 32-bit native | x86, x64 | x86 |
+| `x86_amd64` or `x86_x64` | x64 on x86 cross | x86, x64 | x64 |
+| `x86_arm` | ARM on x86 cross | x86, x64 | ARM |
+| `x86_arm64` | ARM64 on x86 cross | x86, x64 | ARM64 |
+| `amd64` or `x64` | x64 64-bit native | x64 | x64 |
+| `amd64_x86` or `x64_x86` | x86 on x64 cross | x64 | x86 |
+| `amd64_arm` or `x64_arm` | ARM on x64 cross | x64 | ARM |
+| `amd64_arm64` or `x64_arm64` | ARM64 on x64 cross | x64 | ARM64 |
 
-*platform_type*<br/>
-This optional argument allows you to specify **store** or **uwp** as the platform type. By default, the environment is set to build desktop or console apps.
+*`platform_type`*<br/>
+This optional argument allows you to specify **`store`** or **`uwp`** as the platform type. By default, the environment is set to build desktop or console apps.
 
-*winsdk_version*<br/>
-Optionally specifies the version of the Windows SDK to use. By default, the latest installed Windows SDK is used. To specify the Windows SDK version, you can use a full Windows 10 SDK number such as **10.0.10240.0**, or specify **8.1** to use the Windows 8.1 SDK.
+*`winsdk_version`*<br/>
+Optionally specifies the version of the Windows SDK to use. By default, the latest installed Windows SDK is used. To specify the Windows SDK version, you can use a full Windows 10 SDK number such as **`10.0.10240.0`**, or specify **`8.1`** to use the Windows 8.1 SDK.
 
-*vcversion*<br/>
+*`vcversion`*<br/>
 Optionally specifies the Visual Studio compiler toolset to use. By default, the environment is set to use the current Visual Studio compiler toolset.
 
 ::: moniker range=">= msvc-160"
 
 Use **-vcvars_ver=14.2x.yyyyy** to specify a specific version of the Visual Studio 2019 compiler toolset.
 
-Use **-vcvars_ver=14.16** to specify the latest version of the Visual Studio 2017 compiler toolset.
+Use **-vcvars_ver=14.29** to specify the latest version of the Visual Studio 2019 compiler toolset.
 
 ::: moniker-end
 ::: moniker range="= msvc-150"
@@ -160,6 +171,9 @@ Use **-vcvars_ver=14.1x.yyyyy** to specify a specific version of the Visual Stud
 ::: moniker-end
 
 Use **-vcvars_ver=14.0** to specify the Visual Studio 2015 compiler toolset.
+
+*`spectre_mode`*\
+Leave this parameter out to use libraries without Spectre mitigations. Use the value **`spectre`** to use libraries with Spectre mitigations.
 
 #### <a name="vcvarsall"></a> To set up the build environment in an existing command prompt window
 
@@ -193,21 +207,21 @@ Open the Properties dialog for a developer command prompt shortcut to see the co
 
 ::: moniker-end
 
-The architecture-specific batch files set the *architecture* parameter and call vcvarsall.bat. You can pass the same options to these batch files as you would pass to vcvarsall.bat, or you can just call vcvarsall.bat directly. To specify parameters for your own command shortcut, add them to the end of the command in double-quotes. For example, here's a shortcut to build ARM code for UWP on a 64-bit platform, using the latest Windows SDK. To use an earlier compiler toolset, specify the version number. Use something like this command target in your shortcut:
+The architecture-specific batch files set the *`architecture`* parameter and call *`vcvarsall.bat`*. You can pass the same options to these batch files as you would pass to *`vcvarsall.bat`*, or you can just call *`vcvarsall.bat`* directly. To specify parameters for your own command shortcut, add them to the end of the command in double-quotes. For example, here's a shortcut to build ARM code for UWP on a 64-bit platform, using the latest Windows SDK. To use an earlier compiler toolset, specify the version number. Use something like this command target in your shortcut:
 
 ::: moniker range=">= msvc-160"
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm uwp -vcvars_ver=14.16`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm uwp -vcvars_ver=14.29`
 
 ::: moniker-end
 ::: moniker range="= msvc-150"
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm uwp -vcvars_ver=14.0`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm uwp -vcvars_ver=14.19`
 
 ::: moniker-end
 ::: moniker range="< msvc-150"
 
-`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64 -vcvars_ver=12.0`
+`%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64 -vcvars_ver=14.0`
 
 ::: moniker-end
 
@@ -217,13 +231,13 @@ Adjust the path to reflect your Visual Studio installation directory. The vcvars
 
 To build a C/C++ project at a command prompt, Visual Studio provides these command-line tools:
 
-[CL](reference/compiling-a-c-cpp-program.md)<br/>
+[`CL`](reference/compiling-a-c-cpp-program.md)<br/>
 Use the compiler (cl.exe) to compile and link source code files into apps, libraries, and DLLs.
 
-[Link](reference/linking.md)<br/>
+[`Link`](reference/linking.md)<br/>
 Use the linker (link.exe) to link compiled object files and libraries into apps and DLLs.
 
-[NMAKE](reference/nmake-reference.md)<br/>
+[`NMAKE`](reference/nmake-reference.md)<br/>
 Use NMAKE (nmake.exe) on Windows to build C++ projects based on a traditional makefile.
 
 When you build on the command line, the F1 command isn't available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages. You can also download and use the offline help files. To use the search in docs.microsoft.com, enter your query in the search box at the top of any article.
@@ -232,11 +246,11 @@ When you build on the command line, the F1 command isn't available for instant h
 
 The Visual Studio IDE uses a native project build system based on MSBuild. You can invoke MSBuild directly, or use the native project system without using the IDE:
 
-[MSBuild](msbuild-visual-cpp.md)<br/>
-Use MSBuild (msbuild.exe) and a project file (.vcxproj) to configure a build and invoke the toolset indirectly. It's equivalent to running the **Build** project or **Build Solution** command in the Visual Studio IDE. Running MSBuild from the command line is an advanced scenario and not commonly recommended. Starting in Visual Studio version 16.5, MSBuild doesn't use the command-line environment to control the toolset and libraries used.
+[`MSBuild`](msbuild-visual-cpp.md)<br/>
+Use MSBuild (msbuild.exe) and a project file (.vcxproj) to configure a build and invoke the toolset indirectly. It's equivalent to running the **Build** project or **Build Solution** command in the Visual Studio IDE. Running MSBuild from the command line is an advanced scenario and not commonly recommended. Starting in Visual Studio 2019 version 16.5, MSBuild doesn't use the command-line environment to control the toolset and libraries used.
 
-[DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)<br/>
-Use DEVENV (devenv.exe) combined with a command-line switch such as **/Build** or **/Clean** to execute certain build commands without displaying the Visual Studio IDE. In general, DEVENV is preferred over using MSBuild directly, because you can let Visual Studio handle the complexities of MSBuild. Starting in Visual Studio version 16.5, DEVENV does not use the command-line environment to control the toolset and libraries used.
+[`DEVENV`](/visualstudio/ide/reference/devenv-command-line-switches)<br/>
+Use DEVENV (devenv.exe) combined with a command-line switch such as **`/Build`** or **`/Clean`** to execute certain build commands without displaying the Visual Studio IDE. In general, DEVENV is preferred over using MSBuild directly, because you can let Visual Studio handle the complexities of MSBuild. Starting in Visual Studio 2019 version 16.5, DEVENV doesn't use the command-line environment to control the toolset and libraries used.
 
 ## In this section
 
@@ -253,9 +267,6 @@ Describes how to create and compile a C++/CLI program that uses the .NET Framewo
 
 [Walkthrough: Compiling a C++/CX program on the command line](walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)<br/>
 Describes how to create and compile a C++/CX program that uses the Windows Runtime.
-
-[Set the path and environment variables for command-line builds](setting-the-path-and-environment-variables-for-command-line-builds.md)<br/>
-How to set environment variables to use a 32-bit or 64-bit toolset to target x86, x64, ARM, and ARM64 platforms.
 
 [NMAKE reference](reference/nmake-reference.md)<br/>
 Provides links to articles that describe the Microsoft Program Maintenance Utility (NMAKE.EXE).

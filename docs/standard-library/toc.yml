@@ -190,7 +190,10 @@
           href: weekdayindexed-class.md
         - name: year class
           href: year-class.md
-
+        - name: year_month class
+          href: year-month-class.md
+        - name: year_month_day class
+          href: year-month-day-class.md
     - name: <cinttypes>
       href: ../standard-library/cinttypes.md
     - name: <ciso646>

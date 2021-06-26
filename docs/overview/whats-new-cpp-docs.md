@@ -1,15 +1,15 @@
 ---
 title: "What's new for the C++ docs"
+ms.date: 06/14/2021
 description: "The new docs and doc updates for the Microsoft C/C++ compiler, ATL/MFC, C runtime, and standard library docs."
-ms.date: "02/17/2021"
 ---
 # Microsoft C++ docs: What's new for Visual Studio 16.8
 
-This article lists some of the major changes to docs for Visual Studio 16.8. 
+This article lists some of the major changes to docs for Visual Studio version 16.8.
 
 For information about what's new in Visual Studio, see [What's new for C++ in Visual Studio](what-s-new-for-visual-cpp-in-visual-studio.md).
 
-For the latest C++ conformance status, see [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md)
+For the latest C and C++ conformance status, see [C++ conformance improvements in Visual Studio](cpp-conformance-improvements.md)
 
 ## C language
 
@@ -132,7 +132,7 @@ For the latest C++ conformance status, see [C++ conformance improvements in Visu
 - [C++ conformance improvements in Visual Studio](../overview/cpp-conformance-improvements.md) - Updated to 16.8 release notes
 - [Microsoft C/C++ help and community](../overview/visual-cpp-help-and-community.md) - Updated DevCom and Microsoft Docs Q&A links
 - [C++ in Visual Studio](../overview/visual-cpp-in-visual-studio.md) - Updated DevCom and Microsoft Docs Q&A links
-- [Microsoft C++ language conformance table](../overview/visual-cpp-language-conformance.md) - Updated C++20 library conformance table, update language feature table for 16.7
+- [Microsoft C/C++ language conformance](../overview/visual-cpp-language-conformance.md) - Updated C++20 library conformance table, update language feature table for 16.7
 
 ## C++ in Visual Studio
 

@@ -61,6 +61,7 @@ The weekday of the month that the weekday lands on. It is in the range \[1, 5]. 
 ### Example: Create a `weekday_indexed`
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 
@@ -106,6 +107,7 @@ The weekday value.
 ### Example
 
 ```cpp
+// compile using: /std:c++latest
 #include <iostream>
 #include <chrono>
 

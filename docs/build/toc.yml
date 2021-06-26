@@ -153,8 +153,6 @@
       href: ../build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md
     - name: "Walkthrough: Compiling a C++/CX program on the command line"
       href: ../build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md
-    - name: Set the path and environment variables for command-line builds
-      href: ../build/setting-the-path-and-environment-variables-for-command-line-builds.md
 - name: Use MSBuild from the command line
   expanded: false
   items: 
@@ -195,7 +193,7 @@
         - name: "MFC extension DLLs: Overview"
           href: ../build/extension-dlls-overview.md
     - name: MFC DLL frequently asked questions
-      href: ../build/dll-frequently-asked-questions.md
+      href: ../build/dll-frequently-asked-questions.yml
     - name: Link an executable to a DLL
       href: ../build/linking-an-executable-to-a-dll.md
     - name: DLLs and MSVC run-time library behavior
