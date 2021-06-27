@@ -285,14 +285,15 @@ public:
 };
 
 int main() {
-   Dictionary<char*, char*>* dict = new Dictionary<char*, char*>(10);
+   auto dict = new Dictionary<char*, char*>(10);
    dict->print();
    dict->add("apple", "fruit");
    dict->add("banana", "fruit");
    dict->add("dog", "animal");
    dict->print();
-
-   Dictionary<int, char*>* dict_specialized = new Dictionary<int, char*>(10);
+   delete dict;
+   
+   auto dict_specialized = new Dictionary<int, char*>(10);
    dict_specialized->print();
    dict_specialized->add(100, "apple");
    dict_specialized->add(101, "banana");
@@ -302,6 +303,7 @@ int main() {
    dict_specialized->sort();
    cout << endl << "Sorted list:" << endl;
    dict_specialized->print();
+   delete dict_specialized;
 }
 ```
 
