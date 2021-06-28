@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: month_weekday_last Class"
 title: "month_weekday_last class"
-ms.date: "6/25/2021"
+ms.date: "6/28/2021"
 f1_keywords: ["chrono/std::chrono::month_weekday_last", "chrono/std::chrono::month_weekday_last::ok", "std::chrono::month_weekday_last::month_weekday_last", "chrono/std::chrono::month_weekday_last::ok", "chrono/std::chrono::month_weekday_last::month"]
 helpviewer_keywords: ["std::chrono [C++], month_weekday_last"]
 ---
@@ -59,6 +59,10 @@ The `month` value for the created `month_weekday_last` class.
 
 *`wdl`*\
 The` weekday_last` value for the created `month_weekday_last` class.
+
+## Remarks
+
+For information about C++ 20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `month_weekday_last`
 
@@ -130,4 +134,5 @@ The `weekday_last` value.
 [`month` class](month-class.md)\
 [`month_day` class](month-day-class.md)\
 [`month_day_last` class](month-day-last-class.md)\
-[`month_weekday` class](month-weekday-class.md)
+[`month_weekday` class](month-weekday-class.md)\
+[`operator/`](chrono-operators.md#op_/)

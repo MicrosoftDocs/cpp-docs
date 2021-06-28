@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: year_month_day_last class"
 title: "year_month_day_last class"
-ms.date: "06/25/2021"
+ms.date: "06/28/2021"
 f1_keywords: ["chrono/std::chrono::year_month_day_last", "chrono/std::chrono::year::operator+=", "chrono/std::chrono::year::operator-=", "chrono/std::chrono::year::ok"]
 helpviewer_keywords: ["std::chrono [C++], year_month_day_last"]
 ---
@@ -66,6 +66,10 @@ The month value from the [`month_day_last`](month-day-last-class.md) is stored i
 
 *`y`*\
 The [`year`](year-class.md) value is stored in the constructed `year_month_day_last`.
+
+## Remarks
+
+For information about C++ 20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `year_month_day_last`
 
@@ -318,10 +322,11 @@ int main()
 
 ## See also
 
+[`<chrono>`](chrono.md)\
 [`year`](year-class.md)]\
 [`year_month`](year-month-class.md)\
 [`year_month_day`](year-month-day-class.md)\
 [`year_month_weekday`](year-month-weekday-class.md)\
 [`year_month_weekday_last`](year-month-weekday-last-class.md)\
-[`<chrono>`](chrono.md)\
+[`operator/`](chrono-operators.md#op_/)\
 [Header Files Reference](cpp-standard-library-header-files.md)

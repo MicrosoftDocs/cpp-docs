@@ -158,6 +158,8 @@
           href: ../standard-library/duration-values-structure.md
         - name: hh_mm_ss class
           href: ../standard-library/hhmmss-class.md
+        - name: high_resolution_clock struct 
+          href: high-resolution-clock-struct.md
         - name: leap_second class
           href: ../standard-library/leap-second-class.md
         - name: leap_second_info struct
@@ -165,7 +167,7 @@
         - name: month class
           href: ../standard-library/month-class.md
         - name: month_day class
-          href: ../standard-library/month-day-class.md
+        href: ../standard-library/month-day-class.md
         - name: month_day_last class
           href: ../standard-library/month-day-last-class.md
         - name: month_weekday class
@@ -184,10 +186,10 @@
           href: ../standard-library/treat-as-floating-point-structure.md
         - name: weekday class
           href: weekday-class.md
-        - name: weekday_last class
-          href: weekdaylast-class.md
         - name: weekday_indexed
           href: weekdayindexed-class.md
+        - name: weekday_last class
+          href: weekdaylast-class.md
         - name: year class
           href: year-class.md
         - name: year_month class

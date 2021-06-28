@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: year_month_weekday class"
 title: "year_month_weekday class"
-ms.date: "06/24/2021"
+ms.date: "06/28/2021"
 f1_keywords: ["chrono/std::chrono::year_month_weekday", "chrono/std::chrono::year_month_weekday::weekday", "chrono/std::chrono::year_month_weekday::month", "chrono/std::chrono::year_month_weekday::index", "chrono/std::chrono::year_month_weekday::year", "chrono/std::chrono::year_month_weekday::weekday_indexed", "chrono/std::chrono::year_month_weekday::sys_days", "chrono/std::chrono::year_month_weekday::local_days", "chrono/std::chrono::year_month_weekday::ok", "chrono/std::chrono::year_month_weekday::operator+=", "chrono/std::chrono::year_month_weekday::operator-="]
 helpviewer_keywords: ["std::chrono [C++], year_month_weekday"]
 ---
@@ -94,6 +94,8 @@ The [`year`] value.
 3\) Constructs a `year_month_weekday` that corresponds to the date represented by `sys_days{dp.time_since_epoch()}`.
 
 4\) Constructs a `year_month_weekday` that corresponds to the date represented by *`dp`*.  For any `year_month_weekday` for which `ok()` is `true`, `year_month_weekday{sys_days{ymdl}}` is `true`.
+
+For information about C++ 20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `year_month_weekday`
 
@@ -314,10 +316,11 @@ The [`year`](year-class.md) value.
 
 ## See also
 
+[`<chrono>`](chrono.md)\
 [`year`](year-class.md)\
 [`year_month`](year-month-class.md)\
 [`year_month_day`](year-month-day-class.md)\
 [`year_month_day_last`](year-month-day-last-class.md)\
 [`year_month_weekday_last`](year-month-weekday-last-class.md)\
-[`<chrono>`](chrono.md)\
+[`operator/`](chrono-operators.md#op_/)
 [Header Files Reference](cpp-standard-library-header-files.md)

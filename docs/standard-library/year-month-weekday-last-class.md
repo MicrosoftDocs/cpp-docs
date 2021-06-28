@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: year_month_weekday_last class"
 title: "year_month_weekday_last class"
-ms.date: "06/25/2021"
+ms.date: "06/28/2021"
 f1_keywords: ["chrono/std::chrono::year_month_weekday_last", "chrono/std::chrono::year_month_weekday_last::month", "chrono/std::chrono::year_month_weekday_last::year", "chrono/std::chrono::year_month_weekday_last::weekday_last", "chrono/std::chrono::year_month_weekday_last::sys_days", "chrono/std::chrono::year_month_weekday_last::local_days", "chrono/std::chrono::year_month_weekday_last::ok", "chrono/std::chrono::year_month_weekday_last::operator+=", "chrono/std::chrono::year_month_weekday_last::operator-="]
 helpviewer_keywords: ["std::chrono [C++], year_month_weekday_last"]
 ---
@@ -72,6 +72,10 @@ The [`weekday_last`](weekdaylast-class.md) value.
 
 *`y`*\
 The [`year`](year-class.md) value.
+
+## Remarks
+
+For information about C++ 20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `year_month_weekday_last`
 
@@ -280,10 +284,11 @@ The [`year`](year-class.md) value.
 
 ## See also
 
+[`<chrono>`](chrono.md)\
 [`year`](year-class.md)\
 [`year_month`](year-month-class.md)\
 [`year_month_day`](year-month-day-class.md)\
 [`year_month_day_last`](year-month-day-last-class.md)\
 [`year_month_weekday`](year-month-weekday-class.md)\
-[`<chrono>`](chrono.md)\
+[`operator/`](chrono-operators.md#op_/)\
 [Header Files Reference](cpp-standard-library-header-files.md)
