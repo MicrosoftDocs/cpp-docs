@@ -60,7 +60,7 @@ The `month` value for the created `month_weekday_last` class.
 *`wdl`*\
 The` weekday_last` value for the created `month_weekday_last` class.
 
-## Remarks
+## Remarks: Constructor
 
 For information about C++ 20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
 

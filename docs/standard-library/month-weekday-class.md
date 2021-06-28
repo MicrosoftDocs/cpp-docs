@@ -61,7 +61,7 @@ Construct a `month_weekday` with a month value of *`m`*.
 *`wdi`*\
 Construct a `month_weekday` with a weekday value of *`wdi`*.
 
-## Remarks
+## Remarks: Constructor
 
 For information about C++ 20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
 

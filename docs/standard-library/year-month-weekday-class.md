@@ -87,7 +87,7 @@ The [`weekday`](weekday-class.md) value.
 *`y`*\
 The [`year`] value.
 
-### Remarks
+### Remarks: Constructor
 
 1\) The default constructor doesn't initialize any of the fields.
 
