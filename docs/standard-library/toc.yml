@@ -167,7 +167,7 @@
         - name: month class
           href: ../standard-library/month-class.md
         - name: month_day class
-        href: ../standard-library/month-day-class.md
+          href: ../standard-library/month-day-class.md
         - name: month_day_last class
           href: ../standard-library/month-day-last-class.md
         - name: month_weekday class
