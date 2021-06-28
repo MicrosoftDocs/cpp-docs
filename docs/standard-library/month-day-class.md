@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: month_day Class"
 title: "month_day class"
-ms.date: "6/4/2021"
+ms.date: "6/25/2021"
 f1_keywords: ["chrono/std::chrono::month_day", "chrono/std::chrono::month_day::day", "chrono/std::chrono::month_day::month", "chrono/std::chrono::month_day::ok"]
 helpviewer_keywords: ["std::chrono [C++], month_day"]
 ---
@@ -75,19 +75,17 @@ using namespace std::chrono;
 
 int main()
 {
-    month m(7);
-    day d(30);
-    month_day md(m, d);
+    month_day md(30d/July);
+    month_day md2 = July/30; // another way to construct a month_day
 
-    month_day md2 = July/30; // a convenient way to construct a month_day
-
-    std::cout << md << ' ' << md2;
+    std::cout << md << '\n' << md2;
     return 0;
 }
 ```
 
 ```output
-Jul/30 Jul/30
+Jul/30
+Jul/30
 ```
 
 ## <a name="day"></a> `day`

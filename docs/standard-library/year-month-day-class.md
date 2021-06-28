@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: year_month_day class"
 title: "year_month_day class"
-ms.date: "06/16/2021"
+ms.date: "06/25/2021"
 f1_keywords: ["chrono/std::chrono::year_month_day", "chrono/std::chrono::year::operator+=", "chrono/std::chrono::year::operator-=", "chrono/std::chrono::year::ok"]
 helpviewer_keywords: ["std::chrono [C++], year_month_day"]
 ---
@@ -96,7 +96,7 @@ using namespace std::chrono;
 
 int main()
 {
-    year_month_day ymd{ April/4/1975 };
+    year_month_day ymd{ April / 4 / 1975 };
     std::cout << ymd;
     return 0;
 }
@@ -197,7 +197,7 @@ Add months or years to this `year_month_day`.
 The number of months to add.
 
 *`dy`*\
-The numbers of years to add.
+The number of years to add.
 
 ### Return value
 
@@ -214,23 +214,22 @@ using namespace std::chrono;
 
 int main()
 {
-    const year theYear{2021};
-    year_month_day ym{theYear, June};
+    year_month_day ymd{June / 1d / 2021y};
 
-    std::cout << ym << `\n`;
+    std::cout << ymd << '\n';
 
-    ym += months{2};
-    ym += years{1};
+    ymd += months{2};
+    ymd += years{1};
 
-    std::cout << ym;
+    std::cout << ymd;
     
     return 0;
 }
 ```
 
 ```output
-2021/Jun
-2022/Aug
+2021-06-01
+2022-08-01
 ```
 
 ## <a name="op_-="></a> `operator-=`
@@ -248,7 +247,7 @@ Subtract months or years from this `year_month_day`.
 The number of months to subtract.
 
 *`dy`*\
-The numbers of years to subtract
+The number of years to subtract.
 
 ### Return value
 
@@ -265,28 +264,30 @@ using namespace std::chrono;
 
 int main()
 {
-    const year theYear{2021};
-    year_month_day ym{theYear, June};
+    year_month_day ymd{June / 1d / 2021y};
 
-    std::cout << ym << `\n`;
+    std::cout << ymd << '\n';
 
-    ym -= months{2};
-    ym -= years{1};
+    ymd -= months{2};
+    ymd -= years{1};
 
-    std::cout << ym;
+    std::cout << ymd;
     
     return 0;
 }
 ```
 
 ```output
-2021/Jun
-2020/Apr
+2021-06-01
+2020-04-01
 ```
 
 ## See also
 
-[`year`](year-class.md)\
+[`year`](year-class.md)]\
 [`year_month`](year-month-class.md)\
+[`year_month_day_last`](year-month-day-last-class.md)\
+[`year_month_weekday`](year-month-weekday-class.md)\
+[`year_month_weekday_last`](year-month-weekday-last-class.md)\
 [`<chrono>`](chrono.md)\
 [Header Files Reference](cpp-standard-library-header-files.md)

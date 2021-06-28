@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: weekday_last Class"
 title: "weekday_last class"
-ms.date: "06/07/2021"
+ms.date: "06/25/2021"
 f1_keywords: ["chrono/std::chrono::weekday_last", "chrono/std::chrono::weekday_last::ok", "std::chrono::weekday_last::weekday", "chrono/std::chrono::weekday_last::ok", "chrono/std::chrono::weekday_last::weekday"]
 helpviewer_keywords: ["std::chrono [C++], weekday_last"]
 ---
@@ -103,17 +103,15 @@ using namespace std::chrono;
 
 int main()
 {
-    constexpr auto wdl = Monday[last]; // lastWeekday is the last Monday of an unspecified month
+    constexpr auto wdl{ Monday[last] }; // wdl is the last Monday of an unspecified month
 	std::cout << wdl.weekday() << "\n";
 
     return 0;
 }
 ```
 
-Output:
-
 ```output
-Monday
+Mon
 ```
 
 ## See also

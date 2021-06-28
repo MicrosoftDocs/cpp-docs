@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: month_weekday Class"
 title: "month_weekday class"
-ms.date: "06/4/2021"
+ms.date: "06/25/2021"
 f1_keywords: ["chrono/std::chrono::month_weekday", "chrono/std::chrono::month_weekday::weekday", "chrono/std::chrono::month_weekday::month", "chrono/std::chrono::month_weekday::ok", "chrono/std::chrono::month_weekday::weekday_indexed"]
 helpviewer_keywords: ["std::chrono [C++], month_weekday"]
 ---
@@ -72,14 +72,13 @@ using namespace std::chrono;
 
 int main()
 {
-    constexpr auto wdi = weekday_indexed(Monday, 1);
-    constexpr auto month = July;
-    month_weekday mw(month, wdi);
+    month_weekday mw{ July/Monday[1] };
     std::cout << mw << '\n';
 
-    // A convenient way to create a month_weekday
+    // Another way to create a month_weekday
     month_weekday mw2 = February / Tuesday[3];
     std::cout << mw2;
+
     return 0;
 }
 ```

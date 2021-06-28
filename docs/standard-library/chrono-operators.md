@@ -1,8 +1,8 @@
 ---
 description: "Learn more about: &lt;chrono&gt; operators"
 title: "&lt;chrono&gt; operators"
-ms.date: "6/16/2021"
-f1_keywords: ["chrono/std::operator modulo", "chrono/std::operator+", "chrono/std::operator!=", "chrono/std::operator*", "chrono/std::operator/", "chrono/std::operator-", "chrono/std::operator<", "chrono/std::operator<=", "chrono/std::operator<", "chrono/std::operator==", "chrono/std::operator>>", "chrono/std::operator<=>", "chrono/std::chrono::year::operator==", "chrono/std::chrono::year::operator<==>", "chrono/std::chrono::year::operator+", "chrono/std::chrono::year::operator-", "chrono/std::chrono::year::operator<<", "chrono/std::chrono::year::operatorfrom_stream"]
+ms.date: "6/24/2021"
+f1_keywords: ["chrono/std::operator modulo", "chrono/std::operator+", "chrono/std::chrono::day::operator+", "chrono/std::chrono::duration::operator+", "chrono/std::chrono::month::operator+", "chrono/std::chrono::time_point::operator+", "chrono/std::chrono::weekday::operator+", "chrono/std::chrono::year_month::operator+", "chrono/std::chrono::year::operator+", "chrono/std::chrono::year_month_day::operator+", "chrono/std::chrono::year_month_day_last::operator+", "chrono/std::chrono::year_month_weekday::operator+", "chrono/std::chrono::year_month_weekday_last::operator+", "chrono/std::operator!=", "chrono/std::operator*", "chrono/std::operator/", "chrono/std::operator-", "chrono/std::operator<", "chrono/std::operator<=", "chrono/std::operator<", "chrono/std::operator==", "chrono/std::operator>>", "chrono/std::operator<=>", "chrono/std::chrono::day::operator<=>", "chrono/std::chrono::month::operator<=>", "chrono/std::chrono::year::operator<=>", "chrono/std::chrono::year_month::operator<=>", "chrono/std::chrono::time_point::operator<=>", "chrono/std::chrono::duration::operator<=>", "chrono/std::chrono::month_day_last::operator<=>", "chrono/std::chrono::year_month_day_last::operator<=>", "chrono/std::operator==", "chrono/std::chrono::year::operator<==>", "chrono/std::chrono::day::operator==", "chrono/std::chrono::duration::operator==", "chrono/std::chrono::month::operator==", "chrono/std::chrono::month_day::operator==", "chrono/std::chrono::month_day_last::operator==", "chrono/std::chrono::month_weekday::operator==", "chrono/std::chrono::month_weekday_last::operator==", "chrono/std::chrono::time_point::operator==", "chrono/std::chrono::weekday::operator==", "chrono/std::chrono::year_month::operator==", "chrono/std::chrono::year::operator==", "chrono/std::chrono::year_month_day::operator==", "chrono/std::chrono::year_month_day_last::operator==", "chrono/std::chrono::year_month_weekday_last::operator==", "chrono/std::chrono::year_month_weekday::operator==", "chrono/std::chrono::month_weekday_last::operator==", "chrono/std::chrono::weekday::operator==", "chrono/std::chrono::weekday_last::operator==", "chrono/std::chrono::year_month_weekday_indexed::operator==", "chrono/std::chrono::year_month_weekday_last::operator==", "chrono/std::chrono::year::operator==", "chrono/std::chrono::year_month::operator==",  "chrono/std::chrono::year_month_day::operator==", "chrono/std::chrono::year_month_day_last::operator==", "chrono/std::operator-", "chrono/std::chrono::day::operator-", "chrono/std::chrono::duration::operator-", "chrono/std::chrono::month::operator-", "chrono/std::chrono::time_point::operator-", "chrono/std::chrono::weekday::operator-", "chrono/std::chrono::year_month::operator-", "chrono/std::chrono::year::operator-", "chrono/std::chrono::year_month_day::operator-", "chrono/std::chrono::year_month_day_last::operator-", "chrono/std::chrono::year_month_weekday::operator-", "chrono/std::chrono::year_month_weekday_last::operator-", "chrono/std::chrono::day::operator<<", "chrono/std::chrono::hh_mm_ss::operator<<", "chrono/std::chrono::month_day::operator<<", "chrono/std::chrono::month_day_last::operator<<", "chrono/std::chrono::month_weekday::operator<<", "chrono/std::chrono::month_weekday_last::operator<<", "chrono/std::chrono::weekday::operator<<", "chrono/std::chrono::weekday_indexed::operator<<", "chrono/std::chrono::weekday_last::operator<<", "chrono/std::chrono::year::operator<<", "chrono/std::chrono::year_month_day::operator<<", "chrono/std::chrono::year_month_day_last::operator<<", "chrono/std::chrono::year_month_weekday::operator<<"]
 ---
 # `<chrono>` operators
 
@@ -18,6 +18,9 @@ Addition operator for the following types:
 - [`year`](year-class.md)
 - [`year_month`](year-month-class.md)
 - [`year_month_day`](year-month-day-class.md)
+- [`year_month_day_last`](year-month-day-last-class.md)
+- [`year_month_weekday`](year-month-weekday-class.md)
+- [`year_month_weekday_last`](year-month-weekday-last-class.md)
 
 ```cpp
 1)
@@ -68,6 +71,33 @@ constexpr year_month_day operator+(const year_month_day& ymd, const months& dm) 
 constexpr year_month_day operator+(const months& dm, const year_month_day& ymd) noexcept; // C++ 20
 constexpr year_month_day operator+(const year_month_day& ymd, const years& dy) noexcept; // C++ 20
 constexpr year_month_day operator+(const years& dy, const year_month_day& ymd) noexcept; // C++ 20
+
+10)
+constexpr year_month_day_last operator+(const year_month_day_last& ymdl, const months& dm) noexcept; // C++ 20
+
+11)
+constexpr year_month_day_last operator+(const months& dm, const year_month_day_last& ymdl) noexcept; // C++ 20
+
+12)
+constexpr year_month_day_last operator+(const year_month_day_last& ymdl, const years& dy) noexcept; // C++ 20
+
+13)
+constexpr year_month_weekday operator+(const year_month_weekday& ymwd, const months& dm) noexcept; // C++ 20
+constexpr year_month_weekday operator+(const months& dm, const year_month_weekday& ymwd) noexcept; // C++ 20
+
+14)
+constexpr year_month_weekday operator+(const year_month_weekday& ymwd, const years& dy) noexcept; // C++ 20
+
+15)
+constexpr year_month_weekday operator+(const years& dy, const year_month_weekday& ymwd) noexcept; // C++ 20
+
+16)
+constexpr year_month_weekday_last operator+(const year_month_weekday_last& ymwdl, const months& dm) noexcept; // C++ 20
+constexpr year_month_weekday_last operator+(const months& dm, const year_month_weekday_last& ymwdl) noexcept; // C++ 20
+
+17)
+constexpr year_month_weekday_last operator+(const year_month_weekday_last& ymwdl, const years& dy) noexcept; // C++ 20
+constexpr year_month_weekday_last operator+(const years& dy, const year_month_weekday_last& ymwdl) noexcept; // C++ 20
 ```
 
 ### Return value
@@ -88,6 +118,20 @@ constexpr year_month_day operator+(const years& dy, const year_month_day& ymd) n
 
 9\) Returns the result of adding months or years to a `year_month_day`.  If `ymd.month()` is `February` and `ymd.day()` is not in the range [1d, 28d], `ok()` may return `false` for the result of the addition.
 
+10\) Returns `(ymdl.year() / ymdl.month() + dm) / last`. Note: The `/` used here is not a division operator but the date operator.
+
+11\) Returns `ymdl + dm`.
+
+12\) Returns  `{ymdl.year()+dy, ymdl.month_day_last()}`
+
+13\) Returns `ymwd + dm.count()`.
+
+14-15\) Returns `{ymwd.year()+dy, ymwd.month(), ymwd.weekday_indexed()}`.
+
+16\) Returns `(ymwdl.year() / ymwdl.month() + dm) / ymwdl.weekday_last()`. Note: The `/` used here is not a division operator but the date operator.
+
+17\) Returns Returns: `ymwdl + dy`
+
 ### Example: `operator+`
 
 ```cpp
@@ -99,17 +143,31 @@ using namespace std::chrono;
 
 int main()
 {
+    // day
     day d{1};
-    d = d + days(2);  
-    std::cout << d << '\n';
+    std::cout << d + days(2) << '\n'; // 03
 
+    // month
     month m{11};
-    m = m + months(3); 
-    std::cout << m << '\n';
+    std::cout << m + months(3)<< '\n'; // Feb
 
+    // weekday
     weekday wd = Thursday;
-    wd = wd + days(1);
-    std::cout << wd << '\n';
+    std::cout << wd + days(1) << '\n'; // Fri
+
+    // year_month_day_last
+    year_month_day_last ymdl{June / last / 2021};
+    std::cout << ymdl + years{1} + months{1} << '\n'; // 2022/Jul/last
+
+    // year_month_weekday
+    year_month_weekday ymw{ year(1997) / January / Wednesday[1] };
+    std::cout << ymw + months{1} << '\n'; // 1997/Feb/Wed[1]
+    std::cout << ymw + years{1} << '\n'; // 1998/Jan/Wed[1] 
+
+    // year_month_weekday_last
+    year_month_weekday_last ymwl{ year(1997) / January / Wednesday[last] };
+    std::cout << ymwl + months{ 1 } << '\n'; // 1997/Feb/Wed[last]
+    std::cout << ymwl + years{ 1 } << '\n'; // 1998/Jan/Wed[last] 
 
     return 0;
 }
@@ -121,6 +179,11 @@ Output:
 03
 Feb
 Fri
+2022/Jul/last
+1997/Feb/Wed[1]
+1998/Jan/Wed[1]
+1997/Feb/Wed[last]
+1998/Jan/Wed[last]
 ```
 
 ## <a name="op_unary_plus"></a> Unary `operator+`
@@ -150,6 +213,9 @@ Subtraction operator for the following types:
 - [`year`](year-class.md)
 - [`year_month`](year-month-class.md)
 - [`year_month_day`](year-month-day-class.md)
+- [`year_month_day_last`](year-month-day-last-class.md)
+- [`year_month_weekday`](year-month-weekday-class.md)
+- [`year_month_weekday_last`](year-month-weekday-last-class.md)
 
 ```cpp
 1)
@@ -200,6 +266,24 @@ constexpr year_month operator-(const year_month& ym, const years& dy) noexcept; 
 12)
 constexpr year_month_day operator-(const year_month_day& ymd, const months& dm) noexcept; // C++ 20
 constexpr year_month_day operator-(const year_month_day& ymd, const years& dy) noexcept; // C++ 20
+
+13)
+constexpr year_month_day_last operator-(const year_month_day_last& ymdl, const months& dm) noexcept;  // C++ 20
+
+14)
+constexpr year_month_day_last operator-(const year_month_day_last& ymdl, const years& dy) noexcept;  // C++ 20
+
+15)
+constexpr year_month_weekday operator-(const year_month_weekday& ymwd, const months& dm) noexcept; // C++ 20
+
+16)
+constexpr year_month_weekday operator-(const year_month_weekday& ymwd, const years& dy) noexcept; // C++ 20
+
+17)
+constexpr year_month_weekday_last operator-(const year_month_weekday_last& ymwdl, const months& dm) noexcept; // C++ 20
+
+18)
+constexpr year_month_weekday_last operator-(const year_month_weekday_last& ymwdl, const years& dy) noexcept; // C++ 20
 ```
 
 ### Return value
@@ -212,7 +296,7 @@ constexpr year_month_day operator-(const year_month_day& ymd, const years& dy) n
 
 4\) Returns the result of `d-ds.count()`. If the result is out of the range [0, 255], then the result is unspecified.
 
-5\) If `m.ok() == true` and `ms.ok() == true`, returns the result of subtracting the two month values, or subtracting the number of months. The result will be in the range  [1, 12]. If the result is negative, it wraps around. For example, subtracting one month from January (`month m1{1} - months(1);` results in 12 (December).
+5\) If `m.ok() == true` and `ms.ok() == true`, returns the result of subtracting the two month values, or subtracting the number of months. The result will be in the range  [1, 12]. If the result is negative, it wraps around. For example, subtracting one month from January (`month m1{1} - months{1};` results in 12 (December).
 
 6\) Returns the difference in months between *`Left`* and *`Right`*
 
@@ -228,6 +312,18 @@ constexpr year_month_day operator-(const year_month_day& ymd, const years& dy) n
 
 12\) Returns the result of subtracting a number of months years from a `year_month_day` value.
 
+13\) Returns the result of subtracting the number of months from the `year_month_day_last` value. Essentially: `ymdl-dm`.
+
+14\) Returns the result of subtracting the number of years from the `year_month_day_last` value. Essentially: `ymdl-dy`.
+
+15\) Returns the result of subtracting the number of months from the `year_month_weekday` value. Essentially: `ymwd-dm`.
+
+16\) Returns the result of subtracting the number of years from the `year_month_weekday` value. Essentially: `ymwd-dy`.
+
+17\) Returns the result of subtracting the number of months from the `year_month_weekday_last` value. Essentially: `ymwdl-dm`.
+
+18\) Returns the result of subtracting the number of years from the `year_month_weekday_last` value. Essentially: `ymwdl-dy`.
+
 ### Example: `operator-`
 
 ```cpp
@@ -242,28 +338,42 @@ int main()
     // day
     day d{10};
     d = d - days(5);  
-    std::cout << d << '\n'; // 5
+    std::cout << d << '\n'; // 05
 
-    // months 
+    // month 
     month m{2};
-    m = m - months(1);
-    std::cout << m << '\n'; // 1
-    m = m - months(1);
-    std::cout << m << '\n'; // 12
+    m = m - months{1};
+    std::cout << m << '\n'; // Jan
+    m = m - months{1};
+    std::cout << m << '\n'; // Dec
 
-    // years
+    // year
     auto diff1 = 2021y-2000y;
-    auto diff2 = 2021y-years(1);
-    std::cout << diff1.count() << '\n';
-    std::cout << diff2 << '\n';
+    auto diff2 = 2021y-years{1};
+    std::cout << diff1.count() << '\n'; // 21
+    std::cout << diff2 << '\n'; // 2020
 
     // year_month
     const year theYear{ 2021 };
     year_month ym1{theYear, June};
     year_month ym2 = ym1 - months{2};
-    std::cout << ym2 << '\n';
+    std::cout << ym2 << '\n'; // 2021/Apr
     year_month ym3 = ym1 - years{2};
-    std::cout << ym3;
+    std::cout << ym3 << '\n'; // 2019/Jun
+
+    // year_month_day_last
+    year_month_day_last ymdl = June / last / 2021;
+    std::cout << ymdl + years{1} + months{1} << '\n'; // 2022/Jul/last
+
+    // year_month_weekday
+    year_month_weekday ymw{ year(1997) / January / Wednesday[1] };
+    std::cout << ymw - months{1} << '\n'; // 1996/Dec/Wed[1]
+    std::cout << ymw - years{1} << '\n'; // 1996/Jan/Wed[1] 
+
+    // year_month_weekday_last
+    year_month_weekday_last ymwl{ year(1997) / January / Wednesday[last] };
+    std::cout << ymwl - months{ 1 } << '\n'; // 1996/Dec/Wed[last]
+    std::cout << ymwl - years{ 1 } << '\n'; // 1996/Jan/Wed[last]
     
     return 0;
 }
@@ -277,6 +387,11 @@ Dec
 2020
 2021/Apr
 2019/Jun
+2022/Jul/last
+1996/Dec/Wed[1]
+1996/Jan/Wed[1]
+1996/Dec/Wed[last]
+1996/Jan/Wed[last]
 ```
 
 ## <a name="op_unary_negate"></a> Unary `operator-`
@@ -454,6 +569,8 @@ Determines whether:
 12\) [`year`](year-class.md) represent the same year.\
 13\) [`year_month`](year-month-class.md) represent the same year and month.\
 14\) [`year_month_day`](year-month-day-class.md) represent the same year, month, and day.
+15\) [`year_month_day_last`](year-month-day-last-class.md) represent the same last day of the year and month.
+16\) [`year_month_weekday`](year-month-weekday-class.md) represent the same weekday, year, and month.
 
 ```cpp
 // 1) duration<Rep, Period>
@@ -503,6 +620,12 @@ constexpr bool operator==(const year_month& Left, const year_month& Right) noexc
 
 // 14) year_month_day
 constexpr bool operator==(const year_month_day& Left, const year_month_day& Right) noexcept; // C++ 20
+
+// 15) year_month_day_last
+constexpr bool operator==(const year_month_day_last& Left, const year_month_day_last& Right) noexcept; // C++ 20
+
+// 16) year_month_weekday
+constexpr bool operator==(const year_month_weekday& Left, const year_month_weekday& Right) noexcept; // C++ 20
 ```
 
 ### Parameters
@@ -517,7 +640,7 @@ The right object to compare.
 
 1\) Returns **`true`** if *`Left`* and *`Right`* represent time intervals that have the same length. Otherwise, the function returns **`false`**.\
 2\) Returns **`true`** if *`Left`* and *`Right`* represent the same point in time. Otherwise, returns **`false`**.\
-3-14\) Returns **`true`** if *`Left`* and *`Right`* have the same value. Otherwise, returns **`false`**.
+3-15\) Returns **`true`** if *`Left`* and *`Right`* have the same value. Otherwise, returns **`false`**.
 
 ## <a name="op_gt"></a> `operator>`
 
@@ -577,32 +700,60 @@ Each function returns `!(Left < Right)`.
 
 ## <a name="op_spaceship"></a> `operator<=>`
 
-The spaceship operator, in conjunction with `operator==`, synthesizes operators for `<`, `<=`, `>`, `>=`, and `!=`
+The spaceship operator, in conjunction with `operator==`, synthesizes operators for `<`, `<=`, `>`, `>=`, and `!=` for the following types:
+
+- [`day`](day-class.md)
+- [`duration`](duration-class.md)
+- [`month`](month-class.md)
+- [`month_day`](month-day-class.md)
+- [`month_day_last`](month-day-last-class.md)
+- [`time_point`](time-point-class.md)
+- [`year`](year-class.md)
+- [`year_month`](year-month-class.md)
+- [`year_month_day_last`](year-month-day-last-class.md)
 
 ```cpp
+// 1)
 constexpr bool operator<=>(const day& Left, const day& Right) noexcept; // C++ 20
 constexpr std::strong_ordering operator<=>(const month& Left, const month& Right) noexcept; // C++ 20
 constexpr strong_ordering operator<=>(const month_day& Left, const month_day& Right) noexcept; // C++ 20
-constexpr strong_ordering operator<=>(const month_day_last& Left, const month_day_last& Right) noexcept;
 constexpr std::strong_ordering operator<=>(const year& Left, const year& Right ) noexcept; // C++ 20
 constexpr strong_ordering operator<=>(const year_month& Left, const year_month& Right) noexcept; // C++ 20
 template<class Clock, class Duration1, three_­way_­comparable_­with<Duration1> Duration2>
-       constexpr auto operator<=>(const time_point<Clock, Duration1>& Left, const time_point<Clock, Duration2>& Right); // C++ 20
+    constexpr auto operator<=>(const time_point<Clock, Duration1>& Left, const time_point<Clock, Duration2>& Right); // C++ 20
 template<class Rep1, class Period1, class Rep2, class Period2>
   requires three_­way_­comparable<typename CT::rep>
-  constexpr auto operator<=>(const duration<Rep1, Period1>& Left, const duration<Rep2, Period2>& Right);
+    constexpr auto operator<=>(const duration<Rep1, Period1>& Left, const duration<Rep2, Period2>& Right);
+
+// 2)
+constexpr strong_ordering operator<=>(const month_day_last& Left, const month_day_last& Right) noexcept;
+
+// 3)
+constexpr strong_ordering operator<=>(const year_month_day_last& Left, const year_month_day_last& Right) noexcept;
 ```
 
 ### Parameters
 
 *`Left`, `Right`*\
-The [`day`](day-class.md), [`duration`](duration-class.md), [`month`](month-class.md), [`month_day`](month-day-class.md), [`month_day_last`](month-day-last-class.md), [`time_point`](time-point-class.md), [`year`](year-class.md), [`year_month`](year-month-class.md), [`year_month_day`](year-month-day-class.md) to compare.
+The [`day`](day-class.md), [`duration`](duration-class.md), [`month`](month-class.md), [`month_day`](month-day-class.md), [`month_day_last`](month-day-last-class.md), [`time_point`](time-point-class.md), [`year`](year-class.md), [`year_month`](year-month-class.md), [`year_month_day`](year-month-day-class.md),  [`year_month_day_last`](year-month-day-last-class.md) to compare.
 
 ### Return value
 
+1\)
 `0` if `Left == Right`\
 `< 0` if `Left < Right`\
 `> 0` if `Left > Right`
+
+2\)
+Equivalent to: `Left.month() <=> Right.month()`
+
+3\)
+Equivalent to:
+
+```cpp
+if (auto c = Left.year() <=> Right.year(); c != 0) return c;
+return Left.month_day_last() <=> Right.month_day_last();
+```
 
 ### Example: `operator<=>`
 
@@ -648,19 +799,22 @@ true true false
 
 Output the following types to a stream:
 
-- [day](day-class.md)
-- [hh_mm_ss](hhmmss-class.md)
-- [month](month-class.md)
-- [month_day](month-day-class.md)
-- [month_day_last](month-day-last-class.md)
-- [month_weekday](month-weekday-class.md)
-- [month_weekday_last](month-weekday-last-class.md)
-- [weekday](weekday-class.md)
-- [weekday_indexed](weekdayindexed-class.md)
-- [weekday_last](weekdaylast-class.md)
-- [year](year-class.md)
-- [year_month](year-month-class.md)
-- [year_month_day](year-month-day-class.md)
+- [`day`](day-class.md)
+- [`hh_mm_ss`](hhmmss-class.md)
+- [`month`](month-class.md)
+- [`month_day`](month-day-class.md)
+- [`month_day_last`](month-day-last-class.md)
+- [`month_weekday`](month-weekday-class.md)
+- [`month_weekday_last`](month-weekday-last-class.md)
+- [`weekday`](weekday-class.md)
+- [`weekday_indexed`](weekdayindexed-class.md)
+- [`weekday_last`](weekdaylast-class.md)
+- [`year`](year-class.md)
+- [`year_month`](year-month-class.md)
+- [`year_month_day`](year-month-day-class.md)
+- [`year_month_day_last`](year-month-day-last-class.md)
+- [`year_month_weekday`](year-month-weekday-class.md)
+- [`year_month_weekday_last`](year-month-weekday-last-class.md)
 
 ```cpp
 // 1) day
@@ -718,15 +872,30 @@ template <class CharT, class Traits>
 std::basic_ostream<CharT, Traits>&
 operator<<(basic_ostream<CharT, Traits>& os, const year& y); // C++ 20
 
-//12) year_month
+// 12) year_month
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const year_month& ym);
+operator<<(basic_ostream<CharT, Traits>& os, const year_month& ym); // C++ 20
 
-//13) year_month_day
+// 13) year_month_day
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const year_month_day& ymd);
+operator<<(basic_ostream<CharT, Traits>& os, const year_month_day& ymd); // C++ 20
+
+// 14) year_month_day_last
+template<class CharT, class Traits>
+basic_ostream<CharT, Traits>&
+operator<<(basic_ostream<CharT, Traits>& os, const year_month_day_last& ymdl); // C++ 20
+
+// 15) year_month_weekday
+template<class CharT, class Traits>
+basic_ostream<CharT, Traits>&
+operator<<(basic_ostream<CharT, Traits>& os, const year_month_weekday& ymwd); // C++ 20
+
+// 16) year_month_weekday_last
+template<class CharT, class Traits>
+basic_ostream<CharT, Traits>&
+operator<<(basic_ostream<CharT, Traits>& os, const year_month_weekday_last& ymwdl);
 ```
 
 ### Parameters
@@ -779,6 +948,14 @@ The `year_month` to output.
 *`ymd`*\
 The `year_month_day` to output.
 
+*`ymdl`*\
+The `year_month_day_last` to output.
+
+*`ymwd`*\
+The `year_month_weekday` to output.
+
+*`ymwdl`*\
+The `year_month_weekday_last` to output.
 
 ### Return value
 
@@ -811,6 +988,12 @@ The output stream you passed in, `os`
 12\) The `year_month` is output in the form yyy-mm-dd. If `ym.ok` returns `false`, then `" is not a valid date"` is appended.
 
 13\) The `year_month_day` is output in the form yyyy-mm-dd. If `ymd.ok` returns `false`, then `" is not a valid date"` is appended.
+
+14\) The `year_month_day_last` is output in the form yyyy/month/last. For example, `2020/May/last`.
+
+15\) The `year_month_weekday` is output in the form yyyy/month/weekday[index]. For example, `1996/Jan/Wed[1]`
+
+16\) The `year_month_weekday_last` is output in the form yyyy/month/weekday[last]. For example, `1996/Jan/Wed[last]`
 
 ## <a name="op_modulo"></a> `operator modulo`
 
@@ -921,179 +1104,179 @@ Integers can be used as long as the interpretation isn't ambiguous.
 
 // 1
 constexpr year_month
-operator/(const year& y, const month& m) noexcept;
+operator/(const year& y, const month& m) noexcept; // C++ 20
 
 // 2
 constexpr year_month
-operator/(const year& y, int m) noexcept;
+operator/(const year& y, int m) noexcept; // C++ 20
  
 /////////  returns month_day
 
 // 3
 constexpr month_day
-operator/(const month& m, const day& d) noexcept;
+operator/(const month& m, const day& d) noexcept; // C++ 20
 
 // 4
 constexpr month_day
-operator/(const month& m, int d) noexcept;
+operator/(const month& m, int d) noexcept; // C++ 20
 
 // 5
 constexpr month_day
-operator/(int m, const day& d) noexcept;
+operator/(int m, const day& d) noexcept; // C++ 20
 
 // 6
 constexpr month_day
-operator/(const day& d, const month& m) noexcept;
+operator/(const day& d, const month& m) noexcept; // C++ 20
 
 // 7
 constexpr month_day
-operator/(const day& d, int m) noexcept;
+operator/(const day& d, int m) noexcept; // C++ 20
 
 /////////  returns month_day_last
 
 // 8
 constexpr month_day_last
-operator/(const month& m, last_spec) noexcept;
+operator/(const month& m, last_spec) noexcept; // C++ 20
 
 // 9
 constexpr month_day_last
-operator/(int m, last_spec) noexcept;
+operator/(int m, last_spec) noexcept; // C++ 20
 
 // 10
 constexpr month_day_last
-operator/(last_spec, const month& m) noexcept;
+operator/(last_spec, const month& m) noexcept; // C++ 20
 
 // 11
 constexpr month_day_last
-operator/(last_spec, int m) noexcept;
+operator/(last_spec, int m) noexcept; // C++ 20
 
 /////////  returns month_weekday
 
 // 12
 constexpr month_weekday
-operator/(const month& m, const weekday_indexed& wdi) noexcept;
+operator/(const month& m, const weekday_indexed& wdi) noexcept; // C++ 20
 
 // 13
 constexpr month_weekday
-operator/(int m, const weekday_indexed& wdi) noexcept;
+operator/(int m, const weekday_indexed& wdi) noexcept; // C++ 20
 
 // 14
 constexpr month_weekday
-operator/(const weekday_indexed& wdi, const month& m) noexcept;
+operator/(const weekday_indexed& wdi, const month& m) noexcept; // C++ 20
 
 // 15
 constexpr month_weekday
-operator/(const weekday_indexed& wdi, int m) noexcept;
+operator/(const weekday_indexed& wdi, int m) noexcept; // C++ 20
 
 /////////  returns month_weekday_last
 
 // 16
 constexpr month_weekday_last
-operator/(const month& m, const weekday_last& wdl) noexcept;
+operator/(const month& m, const weekday_last& wdl) noexcept; // C++ 20
 
 // 17
 constexpr month_weekday_last
-operator/(int m, const weekday_last& wdl) noexcept;
+operator/(int m, const weekday_last& wdl) noexcept; // C++ 20
 
 // 18
 constexpr month_weekday_last
-operator/(const weekday_last& wdl, const month& m) noexcept;
+operator/(const weekday_last& wdl, const month& m) noexcept; // C++ 20
 
 // 19
 constexpr month_weekday_last
-operator/(const weekday_last& wdl, int m) noexcept;
+operator/(const weekday_last& wdl, int m) noexcept; // C++ 20
 
 /////////  returns year_month_day
 
 // 20
 constexpr year_month_day
-operator/(const year_month& ym, const day& d) noexcept;
+operator/(const year_month& ym, const day& d) noexcept; // C++ 20
 
 // 21
 constexpr year_month_day
-operator/(const year_month& ym, int d) noexcept;
+operator/(const year_month& ym, int d) noexcept; // C++ 20
 
 // 22
 constexpr year_month_day
-operator/(const year& y, const month_day& md) noexcept;
+operator/(const year& y, const month_day& md) noexcept; // C++ 20
 
 // 23
 constexpr year_month_day
-operator/(int y, const month_day& md) noexcept;
+operator/(int y, const month_day& md) noexcept; // C++ 20
 
 // 24
 constexpr year_month_day
-operator/(const month_day& md, const year& y) noexcept;
+operator/(const month_day& md, const year& y) noexcept; // C++ 20
 
 // 25
 constexpr year_month_day
-operator/(const month_day& md, int y) noexcept;
+operator/(const month_day& md, int y) noexcept; // C++ 20
 
 /////////  returns year_month_day_last
 
 // 26
 constexpr year_month_day_last
-operator/(const year_month& ym, last_spec) noexcept;
+operator/(const year_month& ym, last_spec) noexcept; // C++ 20
 
 // 27
 constexpr year_month_day_last
-operator/(const year& y, const month_day_last& mdl) noexcept;
+operator/(const year& y, const month_day_last& mdl) noexcept; // C++ 20
 
 // 28
 constexpr year_month_day_last
-operator/(int y, const month_day_last& mdl) noexcept;
+operator/(int y, const month_day_last& mdl) noexcept; // C++ 20
 
 // 29
 constexpr year_month_day_last
-operator/(const month_day_last& mdl, const year& y) noexcept;
+operator/(const month_day_last& mdl, const year& y) noexcept; // C++ 20
 
 // 30
 constexpr year_month_day_last
-operator/(const month_day_last& mdl, int y) noexcept;
+operator/(const month_day_last& mdl, int y) noexcept; // C++ 20
 
 /////////  returns year_month_weekday
 
 // 31
 constexpr year_month_weekday
-operator/(const year_month& ym, const weekday_indexed& wdi) noexcept;
+operator/(const year_month& ym, const weekday_indexed& wdi) noexcept; // C++ 20
 
 // 32
 constexpr year_month_weekday
-operator/(const year& y, const month_weekday& mwd) noexcept;
+operator/(const year& y, const month_weekday& mwd) noexcept; // C++ 20
 
 // 33
 constexpr year_month_weekday
-operator/(int y, const month_weekday& mwd) noexcept;
+operator/(int y, const month_weekday& mwd) noexcept; // C++ 20
 
 // 34
 constexpr year_month_weekday
-operator/(const month_weekday& mwd, const year& y) noexcept;
+operator/(const month_weekday& mwd, const year& y) noexcept; // C++ 20
 
 // 35
 constexpr year_month_weekday
-operator/(const month_weekday& mwd, int y) noexcept;
+operator/(const month_weekday& mwd, int y) noexcept; // C++ 20
 
 /////////  returns year_month_weekday_last
 
 // 36
 constexpr year_month_weekday_last
-operator/(const year_month& ym, const weekday_last& wdl) noexcept;
+operator/(const year_month& ym, const weekday_last& wdl) noexcept; // C++ 20
 
 // 37
 constexpr year_month_weekday_last
-operator/(const year& y, const month_weekday_last& mwdl) noexcept;
+operator/(const year& y, const month_weekday_last& mwdl) noexcept; // C++ 20
 
 // 38
 constexpr year_month_weekday_last
-operator/(int y, const month_weekday_last& mwdl) noexcept;
+operator/(int y, const month_weekday_last& mwdl) noexcept; // C++ 20
 
 // 39
 constexpr year_month_weekday_last
-operator/(const month_weekday_last& mwdl, const year& y) noexcept;
+operator/(const month_weekday_last& mwdl, const year& y) noexcept; // C++ 20
 
 // 40
 constexpr year_month_weekday_last
-operator/(const month_weekday_last& mwdl, int y) noexcept;
+operator/(const month_weekday_last& mwdl, int y) noexcept; // C++ 20
 ```
 
 ### Parameters
@@ -1185,14 +1368,43 @@ using namespace std::chrono;
 
 int main()
 {
-    constexpr auto d1 {January/1d/2021y};
-    constexpr auto d2 {2021y/5/7};
-    constexpr auto d3 {January/last};
-    constexpr auto d4 {11/Monday[1]};
-    constexpr auto d5 {January/Monday[last]};
+    month m{ July }; // Jul
+    month_day md{ April / 4 }; // Apr/04
+    month_day md2{ 4d / April }; // Apr/04
+    month_day_last mdl{ January / last }; // Jan/last
+    month_weekday mw{ 11 / Monday[1] }; // Nov/Mon[1]
+    month_weekday_last mwl{ January / Monday[last] }; // Jan/Mon[last]
+    weekday wd{ Monday }; // Monday
+    weekday_indexed wdi{ Monday, 1}; // Monday[1]
+    year_month ym{ 2021y / April }; // 2021/Apr
+    year_month_day ymd{ January / 1d / 2021y }; // 2021-01-01
+    year_month_day ymd2{ 2021y / 5 / 7 }; // 2021-05-07
+    year_month_day_last ymdl{ April / last / 1975 }; // 1975/Apr/last
+    year_month_weekday ymw{ 1997y / January / Wednesday[1] }; // 1997/Jan/Wed[1]
+    year_month_weekday_last ymwl{ 1997y / January / Wednesday[last] }; // 1997/Jan/Wed[last]
+    int yearValue{ 2021 / 4 / 4 }; // 126
 
-    std::cout << d1 << '\n' << d2 << '\n' << d3 << '\n' << d4 << '\n' << d5;
+    std::cout << m << '\n' << md << '\n' << md2 << '\n' << mdl << '\n' << mw
+              << '\n' << mwl << '\n' << wd << '\n' << wdi << '\n'         
+              << ym << '\n' << ymd2 << '\n' << ymdl
+              << '\n' << ymw << '\n' << ymwl << '\n' << yearValue;
 
     return 0;
 }
+
+```output
+Jul
+Apr/04
+Apr/04
+Jan/last
+Nov/Mon[1]
+Jan/Mon[last]
+Mon
+Mon[1]
+2021/Apr
+2021-05-07
+1975/Apr/last
+1997/Jan/Wed[1]
+1997/Jan/Wed[last]
+126
 ```
