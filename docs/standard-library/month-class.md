@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: month Class"
 title: "month class"
-ms.date: "04/26/2021"
+ms.date: "6/25/2021"
 f1_keywords: ["chrono/std::chrono::month", "chrono/std::chrono::month::January", "chrono/std::chrono::month::February", "chrono/std::chrono::month::March","chrono/std::chrono::month::April","chrono/std::chrono::month::May","chrono/std::chrono::month::June","chrono/std::chrono::month::July","chrono/std::chrono::month::August","chrono/std::chrono::month::September","chrono/std::chrono::month::October","chrono/std::chrono::month::November","chrono/std::chrono::month::December","chrono/std::chrono::month::operator++", "chrono/std::chrono::month::operator--", "chrono/std::chrono::month::operator unsigned", "chrono/std::chrono::month::ok"]
 helpviewer_keywords: ["std::chrono [C++], month"]
 ---
@@ -107,7 +107,7 @@ using namespace std::chrono;
 
 int main()
 {
-    month m{1};
+    month m{January};
 
     std::cout << m << " " << ++m << "\n"; // constexpr month& operator++() noexcept
     std::cout << m << " " << m++ << "\n"; // constexpr month operator++(int) noexcept
@@ -153,7 +153,7 @@ using namespace std::chrono;
 
 int main()
 {
-    std::chrono::month m{5};
+    month m{May};
 
     cout << m << " " << --m << "\n"; // constexpr month& operator++() noexcept
     cout << m << " " << m-- << "\n"; // constexpr month operator++(int) noexcept

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: month_day_last Class"
 title: "month_day_last class"
-ms.date: "06/04/2021"
+ms.date: "06/25/2021"
 f1_keywords: ["chrono/std::chrono::month_day_last", "chrono/std::chrono::month_day_last::month", "chrono/std::chrono::month_day_last::ok"]
 helpviewer_keywords: ["std::chrono [C++], month_day_last"]
 ---
@@ -63,11 +63,15 @@ using namespace std::chrono;
 
 int main()
 {
-   month_day_last mdl = month_day_last(month(10));
-   
-   // a convenient way to create a month_day_last
-   month_day_last mdl2 {October / last };
+    month_day_last mdl{ October / last };
+    std::cout << mdl;
+
+    return 0;
 }
+```
+
+```output
+Oct/last
 ```
 
 ## <a name="month"></a> `month`

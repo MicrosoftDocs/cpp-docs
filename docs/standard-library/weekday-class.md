@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: weekday Class"
 title: "weekday class"
-ms.date: "04/28/2021"
+ms.date: "6/25/2021"
 f1_keywords: ["chrono/std::chrono::weekday", "chrono/std::chrono::weekday::January", "chrono/std::chrono::weekday::February", "chrono/std::chrono::weekday::March","chrono/std::chrono::weekday::April","chrono/std::chrono::weekday::May","chrono/std::chrono::weekday::June","chrono/std::chrono::weekday::July","chrono/std::chrono::weekday::August","chrono/std::chrono::weekday::September","chrono/std::chrono::weekday::October","chrono/std::chrono::weekday::November","chrono/std::chrono::weekday::December","chrono/std::chrono::weekday::operator++", "chrono/std::chrono::weekday::operator--", "chrono/std::chrono::weekday::operator unsigned", "chrono/std::chrono::weekday::ok", "chrono/std::chrono::weekday::iso_encoding", "chrono/std::chrono::weekday::c_encoding"]
 helpviewer_keywords: ["std::chrono [C++], weekday"]
 ---
@@ -78,6 +78,30 @@ Construct a `weekday` with value *`wd`*.
 3\) Computes what day of the week corresponds to the `std::chrono::sys_days` value `dp`, and constructs a `weekday` using that day.\
 4\) Computes the day of the week that corresponds to the `std::chrono::local_days` value `dp`, and constructs a `weekday` using that day. It behaves as if you created the `weekday` using `weekday(std::chrono::sys_days(dp.time_since_epoch()))`.
 
+### Example: Create a `weekday`
+
+```cpp
+// compile using: /std:c++latest
+#include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
+
+int main()
+{
+    weekday wd{ Wednesday };
+    weekday wd2{ 3 };
+    std::cout << wd << '\n' << wd2;
+    
+    return 0;
+}
+```
+
+```output
+Wednesday
+Wednesday
+```
+
 ## <a name="c_encoding"></a> `c_encoding`
 
 ```cpp
@@ -138,17 +162,16 @@ using namespace std::chrono;
 
 int main()
 {
-    std::chrono::weekday y{4};
+    std::chrono::weekday wd{Thursday};
 
-    std::cout << y << " " << ++y << "\n"; // constexpr weekday& operator++() noexcept
-    std::cout << y << " " << y++ << "\n"; // constexpr weekday operator++(int) noexcept
-    std::cout << y << "\n";
+    std::cout << wd << " " << ++wd << "\n"; // constexpr weekday& operator++() noexcept
+    std::cout << wd << " " << wd++ << "\n"; // constexpr weekday operator++(int) noexcept
+    std::cout << wd << "\n";
 
     return 0;
 }
 ```
 
-Output:
 ```output
 Thu Fri
 Fri Fri
@@ -185,7 +208,7 @@ using namespace std::chrono;
 
 int main()
 {
-    weekday y = weekday{4};
+    weekday y = weekday{Thursday};
 
     cout << y << " " << --y << "\n"; // constexpr weekday& operator--() noexcept
     cout << y << " " << y-- << "\n"; // constexpr weekday operator--(int) noexcept
@@ -194,8 +217,6 @@ int main()
     return 0;
 }
 ```
-
-Output:
 
 ```output
 Thu Wed
@@ -267,7 +288,7 @@ using namespace std::chrono;
 
 int main()
 {
-     constexpr auto firstMondayInJanuary =
+    constexpr auto firstMondayInJanuary =
         year_month_day{ Monday[2] / January / 2021y };
 
     std::cout << firstMondayInJanuary << "\n";

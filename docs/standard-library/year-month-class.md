@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: year_month class"
 title: "year_month class"
-ms.date: "06/16/2021"
+ms.date: "06/25/2021"
 f1_keywords: ["chrono/std::chrono::year_month", "chrono/std::chrono::year::operator+=", "chrono/std::chrono::year::operator-=", "chrono/std::chrono::year::ok"]
 helpviewer_keywords: ["std::chrono [C++], year_month"]
 ---
@@ -78,8 +78,7 @@ using namespace std::chrono;
 
 int main()
 {
-    const year theYear{2021};
-    year_month ym{theYear, June};
+    year_month ym{2021y / June};
 
     std::cout << ym;
     return 0;
@@ -141,7 +140,7 @@ Add months or years to this `year_month`.
 The number of months to add.
 
 *`dy`*\
-The numbers of years to add
+The number of years to add.
 
 ### Return value
 
@@ -158,10 +157,9 @@ using namespace std::chrono;
 
 int main()
 {
-    const year theYear{2021};
-    year_month ym{theYear, June};
+    year_month ym{2021y / June};
 
-    std::cout << ym << `\n`;
+    std::cout << ym << '\n';
 
     ym += months{2};
     ym += years{1};
@@ -192,7 +190,7 @@ Subtract months or years from this `year_month`.
 The number of months to subtract.
 
 *`dy`*\
-The numbers of years to subtract
+The number of years to subtract.
 
 ### Return value
 
@@ -209,10 +207,9 @@ using namespace std::chrono;
 
 int main()
 {
-    const year theYear{2021};
-    year_month ym{theYear, June};
+    year_month ym{2021y / June};
 
-    std::cout << ym << `\n`;
+    std::cout << ym << '\n';
 
     ym -= months{2};
     ym -= years{1};
@@ -230,7 +227,10 @@ int main()
 
 ## See also
 
-[`year`](year-class.md)\
+[`year`](year-class.md)]\
 [`year_month_day`](year-month-day-class.md)\
+[`year_month_day_last`](year-month-day-last-class.md)\
+[`year_month_weekday`](year-month-weekday-class.md)\
+[`year_month_weekday_last`](year-month-weekday-last-class.md)\
 [`<chrono>`](chrono.md)\
 [Header Files Reference](cpp-standard-library-header-files.md)

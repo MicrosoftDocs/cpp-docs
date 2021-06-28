@@ -24,7 +24,7 @@ Each error example provides source code and compilation instructions for a comma
 
 - [Error: `dynamic-stack-buffer-overflow`](./error-dynamic-stack-buffer-overflow.md)
 
-- [Error: `global-overflow`](./error-global-buffer-overflow.md)
+- [Error: `global-buffer-overflow`](./error-global-buffer-overflow.md)
 
 - [Error: `heap-buffer-overflow`](./error-heap-buffer-overflow.md)
 
