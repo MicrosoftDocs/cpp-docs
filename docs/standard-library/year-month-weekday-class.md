@@ -2,7 +2,7 @@
 description: "Learn more about: year_month_weekday class"
 title: "year_month_weekday class"
 ms.date: "06/28/2021"
-f1_keywords: ["chrono/std::chrono::year_month_weekday", "chrono/std::chrono::year_month_weekday::weekday", "chrono/std::chrono::year_month_weekday::month", "chrono/std::chrono::year_month_weekday::index", "chrono/std::chrono::year_month_weekday::year", "chrono/std::chrono::year_month_weekday::weekday_indexed", "chrono/std::chrono::year_month_weekday::sys_days", "chrono/std::chrono::year_month_weekday::local_days", "chrono/std::chrono::year_month_weekday::ok", "chrono/std::chrono::year_month_weekday::operator+=", "chrono/std::chrono::year_month_weekday::operator-="]
+f1_keywords: ["chrono/std::chrono::year_month_weekday", "chrono/std::chrono::year_month_weekday::weekday", "chrono/std::chrono::year_month_weekday::month", "chrono/std::chrono::year_month_weekday::index", "chrono/std::chrono::year_month_weekday::year", "chrono/std::chrono::year_month_weekday::weekday_indexed", "chrono/std::chrono::year_month_weekday::operatorsys_days", "chrono/std::chrono::year_month_weekday::local_days", "chrono/std::chrono::year_month_weekday::ok", "chrono/std::chrono::year_month_weekday::operator+=", "chrono/std::chrono::year_month_weekday::operator-="]
 helpviewer_keywords: ["std::chrono [C++], year_month_weekday"]
 ---
 

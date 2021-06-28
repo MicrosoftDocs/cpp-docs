@@ -2,7 +2,7 @@
 description: "Learn more about: year_month_day_last class"
 title: "year_month_day_last class"
 ms.date: "06/28/2021"
-f1_keywords: ["chrono/std::chrono::year_month_day_last", "chrono/std::chrono::year::operator+=", "chrono/std::chrono::year::operator-=", "chrono/std::chrono::year::ok"]
+f1_keywords: ["chrono/std::chrono::year_month_day_last", "chrono/std::chrono::year_month_day_last::operator+=", "chrono/std::chrono::year_month_day_last::operator-=", "chrono/std::chrono::year_month_day_last::day", "chrono/std::chrono::year_month_day_last::year", "chrono/std::chrono::year_month_day_last::ok"]
 helpviewer_keywords: ["std::chrono [C++], year_month_day_last"]
 ---
 # `year_month_day_last` class  
