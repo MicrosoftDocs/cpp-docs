@@ -73,8 +73,6 @@ The [`weekday_last`](weekdaylast-class.md) value.
 *`y`*\
 The [`year`](year-class.md) value.
 
-## Remarks: constructor
-
 For information about C++ 20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `year_month_weekday_last`
