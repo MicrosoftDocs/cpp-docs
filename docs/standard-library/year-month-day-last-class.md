@@ -323,7 +323,7 @@ int main()
 ## See also
 
 [`<chrono>`](chrono.md)\
-[`year`](year-class.md)]\
+[`year`](year-class.md)\
 [`year_month`](year-month-class.md)\
 [`year_month_day`](year-month-day-class.md)\
 [`year_month_weekday`](year-month-weekday-class.md)\
