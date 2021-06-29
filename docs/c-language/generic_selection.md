@@ -1,7 +1,7 @@
 ---
 title: "Generic selection (C11)"
 description: "Describes the C11 _Generic keyword used in the Microsoft Visual C compiler"
-ms.date: "6/28/2021"
+ms.date: "6/29/2021"
 helpviewer_keywords: ["_Generic keyword [C]"]
 ---
 
@@ -72,9 +72,9 @@ Type name: double
 
 ## Requirements
 
-[std:c++11](../build/reference/std-specify-language-standard-version.md) or later is required.
+Compile with [`/std:c11`](../build/reference/std-specify-language-standard-version.md).
 
-Windows SDK 10.0.20348.0 (version 2104) or later. You can download the latest SDK from [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk). For more information, and instructions on how to install and use the SDK for C development, see [Install C11 and C17 support in Visual Studio](../overview/install-c17-support.md).
+Windows SDK 10.0.20348.0 (version 2104) or later. See [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) to download the latest SDK. For instructions to install and use the SDK for C11 and C17 development, see [Install C11 and C17 support in Visual Studio](../overview/install-c17-support.md).
 
 ## See also
 

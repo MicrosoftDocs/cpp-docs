@@ -85,9 +85,9 @@ The following table lists the macros that are available in `<tgmath.h>` and what
 
 ## Requirements
 
-[std:c++11](../build/reference/std-specify-language-standard-version.md) or later is required.
+Compile with [`/std:c11`](../build/reference/std-specify-language-standard-version.md).
 
-Windows SDK 10.0.20348.0 (version 2104) or later. You can download the latest SDK from [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/). For more information, and instructions on how to install and use the SDK for C development, see [Install C11 and C17 support in Visual Studio](../overview/install-c17-support.md).
+Windows SDK 10.0.20348.0 (version 2104) or later. See [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) to download the latest SDK. For instructions to install and use the SDK for C11 and C17 development, see [Install C11 and C17 support in Visual Studio](../overview/install-c17-support.md).
 
 ## See also
 
