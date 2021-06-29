@@ -1,7 +1,7 @@
 ---
 title: "Alignment (C11)"
 description: "Describes Microsoft Visual C type alignment"
-ms.date: 06/22/2021
+ms.date: 06/29/2021
 helpviewer_keywords: ["_Alignof keyword [C]", "_Alignas keyword [C]", "memory, alignment"]
 ---
 # Alignment (C11)
@@ -57,7 +57,7 @@ typedef struct
 {
     int value; // aligns on a 4-byte boundary. There will be 28 bytes of padding between value and alignas
     alignas(32) char alignedMemory[32]; // assuming a 32 byte friendly cache alignment
-} cacheFriendly; // this struct will be 32-byte aligned because alignedMemory is 32-byte alligned and is the largest alignment specified in the struct
+} cacheFriendly; // this struct will be 32-byte aligned because alignedMemory is 32-byte aligned and is the largest alignment specified in the struct
 
 int main()
 {
@@ -123,9 +123,9 @@ int main()
 
 ## Requirements
 
-[`/std:c11`](../build/reference/std-specify-language-standard-version.md) or later is required.
+Compile with [`/std:c11`](../build/reference/std-specify-language-standard-version.md).
 
-Requires Windows SDK 10.0.20201.0 or later. Windows SDK 10.0.20348.0 (version 2104) or later is recommended. You can download the latest SDK from the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) page. For more information, and instructions on how to install and use the SDK for C development, see [Install C11 and C17 support in Visual Studio](../overview/install-c17-support.md).
+Windows SDK 10.0.20348.0 (version 2104) or later. See [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) to download the latest SDK. For instructions to install and use the SDK for C11 and C17 development, see [Install C11 and C17 support in Visual Studio](../overview/install-c17-support.md).
 
 ## See also
 

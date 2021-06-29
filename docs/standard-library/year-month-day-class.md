@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: year_month_day class"
 title: "year_month_day class"
-ms.date: "06/25/2021"
+ms.date: "06/28/2021"
 f1_keywords: ["chrono/std::chrono::year_month_day", "chrono/std::chrono::year::operator+=", "chrono/std::chrono::year::operator-=", "chrono/std::chrono::year::ok"]
 helpviewer_keywords: ["std::chrono [C++], year_month_day"]
 ---
@@ -84,6 +84,8 @@ A `year_month_day_last` value.
 3\) Constructs a `year_month_day`with the specified year, month, and day from *`ymdl`*\
 4\) Constructs a `year_month_day`with the same date as *`dp`*.\
 5\) Constructs a `year_month_day`with the same date as *`dp`* but as though constructed by `year_month_day(sys_days(dp.time_since_epoch()))`.
+
+For information about C++ 20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `year_month_day`
 
@@ -284,10 +286,11 @@ int main()
 
 ## See also
 
+[`<chrono>`](chrono.md)\
 [`year`](year-class.md)]\
 [`year_month`](year-month-class.md)\
 [`year_month_day_last`](year-month-day-last-class.md)\
 [`year_month_weekday`](year-month-weekday-class.md)\
 [`year_month_weekday_last`](year-month-weekday-last-class.md)\
-[`<chrono>`](chrono.md)\
+[`operator/`](chrono-operators.md#op_/)\
 [Header Files Reference](cpp-standard-library-header-files.md)

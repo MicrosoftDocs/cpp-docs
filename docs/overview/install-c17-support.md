@@ -1,7 +1,7 @@
 ---
 title: Install C11 and C17 support in Visual Studio
 description: "Install Windows SDK and CRT support for C11 and C17 in Visual Studio"
-ms.date: 06/22/2021
+ms.date: 06/29/2021
 helpviewer_keywords: ["Install Windows SDK support for C"]
 ---
 # Install C11 and C17 support in Visual Studio
@@ -16,7 +16,7 @@ Support for C11 and C17 standards requires Visual Studio 2019 version 16.8 or la
 
 Support for C11 and C17 standards is available starting in Visual Studio 2019 version 16.8. Support requires an updated Universal C Runtime (UCRT) and the latest Windows SDK updates, to work properly with the conforming preprocessor ([`/Zc:preprocessor`](../build/reference/zc-preprocessor.md)).
 
-Windows SDK releases correspond with Windows OS releases. C11 and C17 support requires Windows SDK 10.0.20201.0 or later. Windows SDK 10.0.20348.0 (version 2104) or later is recommended. Normally, the Windows SDK is an installable option in the Individual Components tab in the Visual Studio Installer. That's the recommended way to update the SDK for use with Visual Studio. However, at the time of writing, the latest Windows SDK isn't available in the Visual Studio Installer. You can follow these steps to set up the latest SDK and build C11 or C17 code in Visual Studio or at the command line.
+Windows SDK releases correspond with Windows OS releases. C11 and C17 support requires Windows SDK 10.0.20348.0 (version 2104) or later. Normally, the Windows SDK is an installable option in the Individual Components tab in the Visual Studio Installer. That's the recommended way to update the SDK for use with Visual Studio. However, at the time of writing, the latest Windows SDK isn't available in the Visual Studio Installer. You can follow these steps to set up the latest SDK and build C11 or C17 code in Visual Studio or at the command line.
 
 ## Prerequisites
 
