@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: weekday_last Class"
 title: "weekday_last class"
-ms.date: "06/25/2021"
+ms.date: "06/28/2021"
 f1_keywords: ["chrono/std::chrono::weekday_last", "chrono/std::chrono::weekday_last::ok", "std::chrono::weekday_last::weekday", "chrono/std::chrono::weekday_last::ok", "chrono/std::chrono::weekday_last::weekday"]
 helpviewer_keywords: ["std::chrono [C++], weekday_last"]
 ---
@@ -116,7 +116,7 @@ Mon
 
 ## See also
 
+[`<chrono>`](chrono.md)\
 [`weekday` class](weekday-class.md)\
 [`weekday_indexed` class](weekdayindexed-class.md)\
-[`<chrono>`](chrono.md)\
 [Header Files Reference](cpp-standard-library-header-files.md)

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: month_day Class"
 title: "month_day class"
-ms.date: "6/25/2021"
+ms.date: "6/28/2021"
 f1_keywords: ["chrono/std::chrono::month_day", "chrono/std::chrono::month_day::day", "chrono/std::chrono::month_day::month", "chrono/std::chrono::month_day::ok"]
 helpviewer_keywords: ["std::chrono [C++], month_day"]
 ---
@@ -63,6 +63,8 @@ Construct a `month_day` with a month value of *`m`*.
 
 1\) The default constructor doesn't initialize the month or day values.\
 2\) Construct a `month_day` with the month value initialized to `m` and the day value initialized to `d`.
+
+For information about C++ 20 syntax to specify dates, see [`operator/`](chrono-operators.md#op_/)
 
 ### Example: Create a `month_day`
 
@@ -129,6 +131,8 @@ A `month_day` is valid if the month is valid and the day is less than or equal t
 
 [`<chrono>`](chrono.md)\
 [`month` class](month-class.md)\
+[`month_day` class](month-day-class.md)\
 [`month_day_last` class](month-day-last-class.md)\
 [`month_weekday` class](month-weekday-class.md)\
-[`month_weekday_last` class](month-weekday-last-class.md)
+[`month_weekday_last` class](month-weekday-last-class.md)\
+[`operator/`](chrono-operators.md#op_/)

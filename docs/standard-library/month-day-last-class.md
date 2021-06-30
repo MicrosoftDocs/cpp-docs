@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: month_day_last Class"
 title: "month_day_last class"
-ms.date: "06/25/2021"
+ms.date: "06/28/2021"
 f1_keywords: ["chrono/std::chrono::month_day_last", "chrono/std::chrono::month_day_last::month", "chrono/std::chrono::month_day_last::ok"]
 helpviewer_keywords: ["std::chrono [C++], month_day_last"]
 ---
@@ -53,6 +53,10 @@ constexpr explicit month_day_last(const month& m) noexcept;
 *`m`*\
 Construct a `month_day_last` for the month specified by *`m`*.
 
+## Remarks
+
+For information about C++ 20 syntax used to specify dates, see [`operator/`](chrono-operators.md#op_/)
+
 ### Example: Create a `month_day_last`
 
 ```cpp
@@ -102,6 +106,9 @@ constexpr bool ok() const noexcept;
 
 [`<chrono>`](chrono.md)\
 [`month` class](month-class.md)\
+[`month_day` class](month-day-class.md)\
 [`month_day_last` class](month-day-last-class.md)\
 [`month_weekday` class](month-weekday-class.md)\
-[`month_weekday_last` class](month-weekday-last-class.md)
+[`month_weekday_last` class](month-weekday-last-class.md)\
+[`operator/`](chrono-operators.md#op_/)
+[Header Files Reference](cpp-standard-library-header-files.md)

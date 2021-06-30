@@ -1,8 +1,8 @@
 ---
 title: "Type-generic math"
-description: "Describes macros in <tgmath.h> that make it easier to write C code that calls the right math function, based on argument type." 
+description: "Describes macros in <tgmath.h> that make it easier to write C code that calls the correct math function, based on argument type." 
 ms.topic: "conceptual"
-ms.date: "12/10/2020"
+ms.date: "6/28/2021"
 helpviewer_keywords: ["CRT tgmath.h"]
 ---
 
@@ -85,9 +85,9 @@ The following table lists the macros that are available in `<tgmath.h>` and what
 
 ## Requirements
 
-[std:c++11](../build/reference/std-specify-language-standard-version.md) or later is required.
+Compile with [`/std:c11`](../build/reference/std-specify-language-standard-version.md).
 
-Windows SDK version 10.0.20201.0 or later. This is currently an Insider build which you can download from [Windows Insider Preview Downloads](https://www.microsoft.com/software-download/windowsinsiderpreviewSDK). See [C11 and C17: Getting Started](https://devblogs.microsoft.com/cppblog/c11-and-c17-standard-support-arriving-in-msvc/#c11-and-c17-getting-started) for instructions on installing and using this SDK.
+Windows SDK 10.0.20348.0 (version 2104) or later. See [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) to download the latest SDK. For instructions to install and use the SDK for C11 and C17 development, see [Install C11 and C17 support in Visual Studio](../overview/install-c17-support.md).
 
 ## See also
 

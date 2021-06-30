@@ -1061,7 +1061,7 @@ A `duration` object.
 *`Div`*\
 An integral value.
 
-*`Left`*\
+*`Left`*\w
 The left `duration` object.
 
 *`Right`*\
