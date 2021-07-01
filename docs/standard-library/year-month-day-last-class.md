@@ -2,7 +2,7 @@
 description: "Learn more about: year_month_day_last class"
 title: "year_month_day_last class"
 ms.date: "06/28/2021"
-f1_keywords: ["chrono/std::chrono::year_month_day_last", "chrono/std::chrono::year_month_day_last::operator+=", "chrono/std::chrono::year_month_day_last::operator-=", "chrono/std::chrono::year_month_day_last::day", "chrono/std::chrono::year_month_day_last::year", "chrono/std::chrono::year_month_day_last::ok"]
+f1_keywords: ["chrono/std::chrono::year_month_day_last", "chrono/std::chrono::year_month_day_last::operator+=", "chrono/std::chrono::year_month_day_last::operator-=", "chrono/std::chrono::year_month_day_last::sysdays", "chrono/std::chrono::year_month_day_last::localdays", "chrono/std::chrono::year_month_day_last::day", "chrono/std::chrono::year_month_day_last::year", "chrono/std::chrono::year_month_day_last::ok"]
 helpviewer_keywords: ["std::chrono [C++], year_month_day_last"]
 ---
 # `year_month_day_last` class  
@@ -157,11 +157,15 @@ The [`month`](month-class.md) value.
 
 Gets the `month_day_last` value stored in this `year_month_day_last`.
 
+```cpp
+constexpr month_day_last month_day_last() const noexcept;
+```
+
 ### Return value
 
 The [`month_day_last`](month-day-last-class.md) value stored in this `year_month_day_last`.
 
-## <a name="sys_days"></a> `month_day_last::operator sys_days`
+## <a name="sys_days"></a> `operator sys_days`
 
 Get the month, day, and year in this `year_month_day_last` as a count of days from the epoch for the system clock.
 

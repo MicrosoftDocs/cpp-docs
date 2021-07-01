@@ -120,8 +120,6 @@ int main()
 }
 ```
 
-Output:
-
 ```output
 Mon[1]
 ```
