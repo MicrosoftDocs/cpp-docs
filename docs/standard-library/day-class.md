@@ -139,8 +139,6 @@ int main()
 }
 ```
 
-Output:
-
 ```output
 01 02
 02 02
@@ -182,8 +180,6 @@ int main()
     return 0;
 }
 ```
-
-Output:
 
 ```output
 05 04
@@ -260,7 +256,6 @@ int main()
 }
 ```
 
-Output:
 ```Output
 14
 ```

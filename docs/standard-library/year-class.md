@@ -175,8 +175,6 @@ int main()
 }
 ```
 
-Output:
-
 ```output
 -0001
 ```
@@ -254,8 +252,6 @@ int main()
    return 0;
 }
 ```
-
-Output:
 
 ```output
 -1977

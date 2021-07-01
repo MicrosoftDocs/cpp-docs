@@ -2,9 +2,10 @@
 description: "Learn more about: year_month_day class"
 title: "year_month_day class"
 ms.date: "06/28/2021"
-f1_keywords: ["chrono/std::chrono::year_month_day", "chrono/std::chrono::year::operator+=", "chrono/std::chrono::year::operator-=", "chrono/std::chrono::year::ok"]
+f1_keywords: ["chrono/std::chrono::year_month_day", "chrono/std::chrono::year::operator+=", "chrono/std::chrono::year::operator-=", "chrono/std::chrono::year::sysdays", "chrono/std::chrono::year::localdays", "chrono/std::chrono::year::ok"]
 helpviewer_keywords: ["std::chrono [C++], year_month_day"]
 ---
+
 # `year_month_day` class  
 
 Represents a month, year, and day.
@@ -12,7 +13,7 @@ Represents a month, year, and day.
 ## Syntax
 
 ```cpp
-class year_month_day; // C++20
+class year_month_day; // C++ 20
 ```
 
 ## Members
@@ -42,7 +43,7 @@ class year_month_day; // C++20
 
 ## Requirements
 
-**Header:** `<chrono>` (since C++20)
+**Header:** `<chrono>` (since C++ 20)
 
 **Namespace:** `std::chrono`
 

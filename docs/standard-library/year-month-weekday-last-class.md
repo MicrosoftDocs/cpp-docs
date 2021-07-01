@@ -1,14 +1,14 @@
 ---
 description: "Learn more about: year_month_weekday_last class"
 title: "year_month_weekday_last class"
-ms.date: "06/28/2021"
+ms.date: "06/30/2021"
 f1_keywords: ["chrono/std::chrono::year_month_weekday_last", "chrono/std::chrono::year_month_weekday_last::month", "chrono/std::chrono::year_month_weekday_last::year", "chrono/std::chrono::year_month_weekday_last::weekday_last", "chrono/std::chrono::year_month_weekday_last::sys_days", "chrono/std::chrono::year_month_weekday_last::local_days", "chrono/std::chrono::year_month_weekday_last::ok", "chrono/std::chrono::year_month_weekday_last::operator+=", "chrono/std::chrono::year_month_weekday_last::operator-="]
 helpviewer_keywords: ["std::chrono [C++], year_month_weekday_last"]
 ---
 
 # `year_month_weekday_last` class  
 
- A specific year, month, and last weekday of the month.
+A specific year, month, and last weekday of the month.
 
 ## Syntax
 
@@ -120,7 +120,7 @@ constexpr bool ok() const noexcept;
 ### Return value
 
 `true` if the `year_month_weekday_last` value is valid. Otherwise, `false`.\
-A `year_month_weekday_last` is valid if both the `month` is valid and the `weekday_indexed` value is valid.
+A `year_month_weekday_last` is valid if the `month`, `weekday_indexed`, and `year` are all valid.
 
 ## <a name="op_+="></a> `operator+=`
 
@@ -192,7 +192,7 @@ The number of years to subtract.
 
 `*this` which reflects the result of the subtraction.
 
-### Example: `operator -=`
+### Example: `operator-=`
 
 ```cpp
 // compile using: /std:c++latest
@@ -246,7 +246,7 @@ If `ok() == true`, returns a `sys_days` that represents the last `weekday()` of 
 
 ## <a name="weekday"></a> `weekday`
 
- Get the [`weekday`](weekday-class.md) stored in the [`weekday_indexed`](weekdayindexed-class.md) stored in this `year_month_weekday_last`.
+ Get the [`weekday`](weekday-class.md).
 
 ```cpp
 constexpr weekday weekday() const noexcept;
