@@ -52,21 +52,23 @@ The effect of **`/Qspectre`** on performance appeared to be negligible in severa
 
 ### Required libraries
 
-The **`/Qspectre`** compiler option generates code that implicitly links versions of the runtime libraries built to provide Spectre mitigations. These libraries are optional components that must be installed by using the Visual Studio Installer:
+When you enable the **Configuration Properties** > **C/C++** > **Code Generation** > **Spectre Mitigation** option in the Visual Studio IDE project properties, the following occur:
 
-- MSVC version *version_numbers* Libs for Spectre \[(x86 and x64) | (ARM) | (ARM64)]
-- Visual C++ ATL for \[(x86/x64) | ARM | ARM64] with Spectre Mitigations
-- Visual C++ MFC for \[x86/x64 | ARM | ARM64] with Spectre Mitigations
+1. **`/Qspectre`** is thrown to the compiler, ensuring that code compiled in your project has mitigations.
+2. The linker [`/LIBPATH`](./libpath-additional-libpath.md) options are changed to the Spectre-mitigation enabled libraries. These libraries are optional components that must be installed by using the Visual Studio Installer:
+   - MSVC version *version_numbers* Libs for Spectre \[(x86 and x64) | (ARM) | (ARM64)]
+   - Visual C++ ATL for \[(x86/x64) | ARM | ARM64] with Spectre Mitigations
+   - Visual C++ MFC for \[x86/x64 | ARM | ARM64] with Spectre Mitigations
 
 ::: moniker range=">=msvc-160"
 
-If you build your code by using **`/Qspectre`** and these libraries aren't installed, the build system reports warning [MSB8040](/visualstudio/msbuild/errors/msb8040). If your MFC or ATL code fails to build, and the linker reports an error such as "fatal error LNK1104: cannot open file 'oldnames.lib'", these missing libraries may be the cause.
+If Spectre mitigations are enabled and these libraries aren't installed, the build system reports warning [MSB8040](/visualstudio/msbuild/errors/msb8040). If your MFC or ATL code fails to build, and the linker reports an error such as "fatal error LNK1104: cannot open file 'oldnames.lib'", these missing libraries may be the cause.
 
 ::: moniker-end
 
 ::: moniker range="<=msvc-150"
 
-If you build your code by using **`/Qspectre`** and these libraries aren't installed, the build system reports warning MSB8038: "Spectre mitigation is enabled but Spectre mitigated libraries are not found". If your MFC or ATL code fails to build, and the linker reports an error such as "fatal error LNK1104: cannot open file 'oldnames.lib'", these missing libraries may be the cause.
+If Spectre mitigations are enabled and these libraries aren't installed, the build system reports warning MSB8038: "Spectre mitigation is enabled but Spectre mitigated libraries are not found". If your MFC or ATL code fails to build, and the linker reports an error such as "fatal error LNK1104: cannot open file 'oldnames.lib'", these missing libraries may be the cause.
 
 ::: moniker-end
 
