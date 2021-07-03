@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /Qspectre"
 title: "/Qspectre"
-ms.date: 06/22/2021
+ms.date: 07/02/2021
 f1_keywords: ["VC.Project.VCCLCompilerTool.SpectreMitigation"]
 helpviewer_keywords: ["/Qspectre"]
 ---
@@ -52,21 +52,45 @@ The effect of **`/Qspectre`** on performance appeared to be negligible in severa
 
 ### Required libraries
 
-The **`/Qspectre`** compiler option generates code that implicitly links versions of the runtime libraries built to provide Spectre mitigations. These libraries are optional components that must be installed by using the Visual Studio Installer:
+The **`/Qspectre`** compiler option mitigates issues in your own code. For greater protection, we strongly recommend you also use libraries built to provide Spectre mitigations. Several of the Microsoft runtime libraries are available with Spectre mitigations.
+
+::: moniker range=">=msvc-150"
+
+These libraries are optional components that must be installed by using the Visual Studio Installer:
 
 - MSVC version *version_numbers* Libs for Spectre \[(x86 and x64) | (ARM) | (ARM64)]
 - Visual C++ ATL for \[(x86/x64) | ARM | ARM64] with Spectre Mitigations
 - Visual C++ MFC for \[x86/x64 | ARM | ARM64] with Spectre Mitigations
 
+::: moniker-end
+
 ::: moniker range=">=msvc-160"
 
-If you build your code by using **`/Qspectre`** and these libraries aren't installed, the build system reports warning [MSB8040](/visualstudio/msbuild/errors/msb8040). If your MFC or ATL code fails to build, and the linker reports an error such as "fatal error LNK1104: cannot open file 'oldnames.lib'", these missing libraries may be the cause.
+The default MSBuild-based project system in the Visual Studio IDE lets you specify a [Spectre Mitigation](./c-cpp-prop-page.md#spectre-mitigation) property for your projects. This property sets the **`/Qspectre`** compiler option and changes the library paths to link the Spectre-mitigated runtime libraries. If these libraries aren't installed when you build your code, the build system reports warning [MSB8040](/visualstudio/msbuild/errors/msb8040). If your MFC or ATL code fails to build, and the linker reports an error such as "fatal error LNK1104: cannot open file 'oldnames.lib'", these missing libraries may be the cause.
 
 ::: moniker-end
 
-::: moniker range="<=msvc-150"
+::: moniker range="msvc-150"
 
-If you build your code by using **`/Qspectre`** and these libraries aren't installed, the build system reports warning MSB8038: "Spectre mitigation is enabled but Spectre mitigated libraries are not found". If your MFC or ATL code fails to build, and the linker reports an error such as "fatal error LNK1104: cannot open file 'oldnames.lib'", these missing libraries may be the cause.
+The default MSBuild-based project system in the Visual Studio IDE lets you specify a [Spectre Mitigation](./c-cpp-prop-page.md#spectre-mitigation) property for your projects. This property sets the **`/Qspectre`** compiler option and changes the library paths to link the Spectre-mitigated runtime libraries. If these libraries aren't installed when you build your code, the build system reports warning MSB8038: "Spectre mitigation is enabled but Spectre mitigated libraries are not found". If your MFC or ATL code fails to build, and the linker reports an error such as "fatal error LNK1104: cannot open file 'oldnames.lib'", these missing libraries may be the cause.
+
+::: moniker-end
+
+::: moniker range=">=msvc-150"
+
+There are several ways to specify the Spectre-mitigated libraries to the build command line. You can specify the path to the Spectre-mitigated libraries by using the [`/LIBPATH`](./libpath-additional-libpath.md) linker option to make them the default libraries. You can use the [`/NODEFAULTLIB`](./nodefaultlib-ignore-libraries.md) linker option and explicitly link the Spectre-mitigated libraries. Or, you can set the `LIBPATH` environment variable to include the path to the Spectre-mitigated libraries for your target platform. One way to set this path in the environment is to use a developer command prompt set up by using the `spectre_mode` option. For more information, see [Use the developer tools in an existing command window](../building-on-the-command-line.md#use-the-developer-tools-in-an-existing-command-window).
+
+::: moniker-end
+
+::: moniker range="msvc-140"
+
+Spectre-mitigated runtime libraries for x86, x64 and ARM platforms are available as part of the patch available through [KB 4338871](https://support.microsoft.com/help/4338871). By default, these libraries are installed in the following directories:
+
+- x86: *`C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\spectre`*
+- x64: *`C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\spectre\amd64`*
+- ARM: *`C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\spectre\arm`*
+
+There are several ways to specify the Spectre-mitigated libraries to the build command line. You can specify the path to the Spectre-mitigated libraries by using the [`/LIBPATH`](./libpath-additional-libpath.md) linker option to make them the default libraries. You can use the [`/NODEFAULTLIB`](./nodefaultlib-ignore-libraries.md) linker option and explicitly link the Spectre-mitigated libraries. Or, you can set the `LIBPATH` environment variable to include the path to the Spectre-mitigated libraries for your target architecture. For more information, see [Use the Microsoft C++ toolset from the command line](../building-on-the-command-line.md).
 
 ::: moniker-end
 
@@ -96,7 +120,11 @@ For an overview of Spectre vulnerabilities addressed by the MSVC mitigations, se
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. Enter the *`/Qspectre`* compiler option in the **Additional Options** box. Choose **OK** to apply the change.
+1. Enter the *`/Qspectre`* compiler option in the **Additional Options** box. Choose **Apply** to apply the change.
+
+1. Select the **Configuration Properties** > **Linker** > **General** property page.
+
+1. For each Platform in your project properties, edit the **Additional Library Directories** property. Set the path to the Spectre-mitigated runtime library directory for the target platform, and then choose **Apply** to apply the change. When done, choose **OK**.
 
 ::: moniker-end
 
