@@ -159,7 +159,7 @@ With this change to the library header, the author of the library ensures that t
 
 ### `system_header` pragma
 
-`#pragma system_header` is an intrusive header marker that allows library writers to mark certain headers as external. A header file containing `#pragma system_header` is considered external from the point of the pragma onward, exactly as if it was in a directory that was specified as external on the command line. The compiler emits any diagnostics after the marker at the warning level specified by **`/external:Wn`**.
+`#pragma system_header` is an intrusive header marker that allows library writers to mark certain headers as external. A header file containing `#pragma system_header` is considered external from the point of the pragma onward, exactly as if it was in a directory that was specified as external on the command line. The compiler emits any diagnostics after the marker at the warning level specified by **`/external:Wn`**. For more information, see [`system_header` pragma](../../preprocessor/system-header-pragma.md).
 
 ### Limitations
 

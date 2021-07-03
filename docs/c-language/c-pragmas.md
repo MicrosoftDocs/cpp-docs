@@ -21,10 +21,10 @@ A *pragma* instructs the compiler to perform a particular action at compile time
         [`comment`](../preprocessor/comment-c-cpp.md)\
         [`component`](../preprocessor/component.md)\
         [`const_seg`](../preprocessor/const-seg.md)\
-        [`data_seg`](../preprocessor/data-seg.md)
+        [`data_seg`](../preprocessor/data-seg.md)\
+        [`deprecated`](../preprocessor/deprecated-c-cpp.md)
     :::column-end:::
     :::column:::
-        [`deprecated`](../preprocessor/deprecated-c-cpp.md)\
         [`detect_mismatch`](../preprocessor/detect-mismatch.md)\
         [`fenv_access`](../preprocessor/fenv-access.md)\
         [`float_control`](../preprocessor/float-control.md)\
@@ -32,10 +32,10 @@ A *pragma* instructs the compiler to perform a particular action at compile time
         [`function`](../preprocessor/function-c-cpp.md)\
         [`hdrstop`](../preprocessor/hdrstop.md)\
         [`include_alias`](../preprocessor/include-alias.md)\
-        [`inline_depth`](../preprocessor/inline-depth.md)
+        [`inline_depth`](../preprocessor/inline-depth.md)\
+        [`inline_recursion`](../preprocessor/inline-recursion.md)
     :::column-end:::
     :::column:::
-        [`inline_recursion`](../preprocessor/inline-recursion.md)\
         [`intrinsic`](../preprocessor/intrinsic.md)\
         [`make_public`](../preprocessor/make-public.md)\
         [`managed`](../preprocessor/managed-unmanaged.md)\
@@ -43,16 +43,17 @@ A *pragma* instructs the compiler to perform a particular action at compile time
         [`omp`](../preprocessor/omp.md)\
         [`once`](../preprocessor/once.md)\
         [`optimize`](../preprocessor/optimize.md)\
-        [`pack`](../preprocessor/pack.md)
+        [`pack`](../preprocessor/pack.md)\
+        [`pop_macro`](../preprocessor/pop-macro.md)
     :::column-end:::
     :::column:::
-        [`pop_macro`](../preprocessor/pop-macro.md)\
         [`push_macro`](../preprocessor/push-macro.md)\
         [`region`, `endregion`](../preprocessor/region-endregion.md)\
         [`runtime_checks`](../preprocessor/runtime-checks.md)\
         [`section`](../preprocessor/section.md)\
         [`setlocale`](../preprocessor/setlocale.md)\
         [`strict_gs_check`](../preprocessor/strict-gs-check.md)\
+        [`system_header`](../preprocessor/system-header-pragma.md)\
         [`unmanaged`](../preprocessor/managed-unmanaged.md)\
         [`warning`](../preprocessor/warning.md)
     :::column-end:::
