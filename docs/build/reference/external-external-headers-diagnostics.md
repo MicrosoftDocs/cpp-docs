@@ -1,19 +1,19 @@
 ---
 title: "/external (External headers diagnostics)"
 description: "The Microsoft C++ compiler /external headers diagnostic options syntax and usage."
-ms.date: 06/07/2021
+ms.date: 07/02/2021
 f1_keywords: ["/external", "/external:anglebrackets", "/external:env:", "/external:I", "/external:W0", "/external:W1", "/external:W2", "/external:W3", "/external:W4", "/external:templates-", "/experimental:external"]
 helpviewer_keywords: ["/external compiler option [C++]", "-external compiler option [C++]", "external compiler option [C++]"]
 ---
 # `/external` (External headers diagnostics)
 
-The **`/external`** compiler options let you specify compiler diagnostic behavior for certain header files. "External" headers are the natural complement of "Just my code": Header files such as system files or third-party library files that you can't or don't intend to change. Since you aren't going to change these files, you may decide it isn't useful to see diagnostic messages from the compiler about them. The `/external` compiler options give you control over these warnings.
+The **`/external`** compiler options let you specify compiler diagnostic behavior for certain header files. "External" headers are the natural complement of "Just my code": Header files such as system files or third-party library files that you can't or don't intend to change. Since you aren't going to change these files, you may decide it isn't useful to see diagnostic messages from the compiler about them. The **`/external`** compiler options give you control over these warnings.
 
 The **`/external`** compiler options are available starting in Visual Studio 2017 version 15.6. In versions of Visual Studio before Visual Studio 2019 version 16.10, the **`/external`** options require you also set the **`/experimental:external`** compiler option.
 
 ## Syntax
 
-Use external header options:
+Use external header options (Not required in 16.10 and later):
 > **`/experimental:external`**
 
 Specify external headers:
@@ -22,7 +22,11 @@ Specify external headers:
 > **`/external:I`** *`path`*
 
 Specify diagnostics behavior:
-> **`/external:W`**_`n`_\
+> **`/external:W0`**\
+> **`/external:W1`**\
+> **`/external:W2`**\
+> **`/external:W3`**\
+> **`/external:W4`**\
 > **`/external:templates-`**
 
 ### Arguments
@@ -40,7 +44,9 @@ Defines a root directory that contains external headers. All recursive subdirect
 Specifies the name of an environment variable *`var`* that holds a semicolon-separated list of external header directories. It's useful for build systems that rely on environment variables such as `INCLUDE`, which you use to specify the list of external include files. Or, `CAExcludePath`, for files that shouldn't be analyzed by `/analyze`. For example, you can specify `/external:env:INCLUDE` to make every directory in `INCLUDE` an external header directory at once. It's the same as using **`/external:I`** to specify the individual directories, but much less verbose. There should be no space between *`var`* and **`/external:env:`**.
 
 **`/external:Wn`**\
-This option sets the default warning level to *`n`* (a value from 0 to 4) for external headers. For example, **`/external:W0`** effectively turns off warnings for external headers. The **`/external:Wn`** option has an effect similar to wrapping an included header in a `#pragma warning` directive:
+This option sets the default warning level to *`n`* (a value from 0 to 4) for external headers. For example, **`/external:W0`** effectively turns off warnings for external headers. If this option isn't specified, the compiler issues command line warning D9007 for other **`/external`** options. Those options are ignored, because they would have no effect.
+
+The **`/external:Wn`** option has an effect similar to wrapping an included header in a `#pragma warning` directive:
 
 ```cpp
 #pragma warning (push, 0)
@@ -151,7 +157,9 @@ struct sample_struct
 
 With this change to the library header, the author of the library ensures that the global warning level in this header is 4, no matter what gets specified in **`/external:Wn`**. Now all level 4 and above warnings are reported. The library author can also force certain warnings to be errors, disabled, suppressed, or emitted only once in the header. The **`/external`** options don't override that deliberate choice.
 
-`#pragma system_header` is an intrusive header marker that allows library writers to mark certain headers as external. These headers have the warning level specified by **`/external:Wn`**, if any.
+### `system_header` pragma
+
+`#pragma system_header` is an intrusive header marker that allows library writers to mark certain headers as external. A header file containing `#pragma system_header` is considered external from the point of the pragma onward, exactly as if it was in a directory that was specified as external on the command line. The compiler emits any diagnostics after the marker at the warning level specified by **`/external:Wn`**.
 
 ### Limitations
 
