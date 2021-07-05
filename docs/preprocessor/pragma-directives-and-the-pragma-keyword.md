@@ -67,16 +67,17 @@ The Microsoft C and C++ compilers recognize the following pragma directives:
       [`once`](../preprocessor/once.md)\
       [`optimize`](../preprocessor/optimize.md)\
       [`pack`](../preprocessor/pack.md)\
-      [`pointers_to_members`](../preprocessor/pointers-to-members.md) <sup>1</sup>
+      [`pointers_to_members`](../preprocessor/pointers-to-members.md) <sup>1</sup>\
+      [`pop_macro`](../preprocessor/pop-macro.md)
    :::column-end:::
    :::column span="":::
-      [`pop_macro`](../preprocessor/pop-macro.md)\
       [`push_macro`](../preprocessor/push-macro.md)\
       [`region`](../preprocessor/region-endregion.md)\
       [`runtime_checks`](../preprocessor/runtime-checks.md)\
       [`section`](../preprocessor/section.md)\
       [`setlocale`](../preprocessor/setlocale.md)\
       [`strict_gs_check`](../preprocessor/strict-gs-check.md)\
+      [`system_header`](../preprocessor/system-header-pragma.md)\
       [`unmanaged`](../preprocessor/managed-unmanaged.md)\
       [`vtordisp`](../preprocessor/vtordisp.md) <sup>1</sup>\
       [`warning`](../preprocessor/warning.md)
