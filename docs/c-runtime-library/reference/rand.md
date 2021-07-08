@@ -16,7 +16,7 @@ Generates a pseudorandom number by using a well-known and fully-reproducible alg
 ## Syntax
 
 ```C
-int rand( void );
+int rand(void);
 ```
 
 ## Return Value
@@ -44,73 +44,84 @@ For additional compatibility information, see [Compatibility](../../c-runtime-li
 ```C
 // crt_rand.c
 // This program seeds the random-number generator
-// with the time, then exercises the rand function.
-//
+// with a fixed seed, then exercises the rand function
+// to demonstrate generating random numbers, and
+// random numbers in a specified range.
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
+#include <stdlib.h> // rand(), srand()
+#include <stdio.h> // printf()
 
-void SimpleRandDemo( int n )
+void SimpleRandDemo(int n)
 {
-   // Print n random numbers.
-   int i;
-   for( i = 0; i < n; i++ )
-      printf( "  %6d\n", rand() );
+    // Print n random numbers.
+    for (int i = 0; i < n; i++)
+    {
+        printf("  %6d\n", rand());
+    }
 }
 
-void RangedRandDemo( int range_min, int range_max, int n )
+void RangedRandDemo(int range_min, int range_max, int n)
 {
-   // Generate random numbers in the half-closed interval
-   // [range_min, range_max). In other words,
-   // range_min <= random number < range_max
-   int i;
-   for ( i = 0; i < n; i++ )
-   {
-      int u = (double)rand() / (RAND_MAX + 1) * (range_max - range_min)
-            + range_min;
-      printf( "  %6d\n", u);
-   }
+    // Generate random numbers in the half-closed interval [range_min, range_max)
+    // That is, range_min <= random number < range_max
+
+    for (int i = 0; i < n; i++)
+    {
+        // Note: This method of generating random numbers in a range is not suitable for
+        // applications that require high quality randomn numbers.
+        // rand() has a small output range [0,32767], making it unsuitable for
+        // generating random numbers across a large range. This method also introduces bias.
+        // More suitable random number functions are available in the C++ <random> header.
+        // See https://docs.microsoft.com/cpp/standard-library/random
+        int r = ((double)rand() / RAND_MAX ) * (range_max - range_min) + range_min;
+        printf("  %6d\n", r);
+    }
 }
 
-int main( void )
+int main(void)
 {
-   // Seed the random-number generator with the current time so that
-   // the numbers will be different every time we run.
-   srand( (unsigned)time( NULL ) );
+    // Seed the random-number generator with a fixed seed so that
+    // the numbers will be the same every time we run.
+    srand(1792);
 
-   SimpleRandDemo( 10 );
-   printf("\n");
-   RangedRandDemo( -100, 100, 10 );
+    printf("Simple random number demo ====\n\n");
+    SimpleRandDemo(10);
+    printf("\nRandom number in a range demo ====\n\n");
+    RangedRandDemo(-100, 100, 10);
 }
 ```
 
 ```Output
-22036
-18330
-11651
-27464
-18093
-3284
-11785
-14686
-11447
-11285
+Simple random number demo ====
 
-   74
-   48
-   27
-   65
-   96
-   64
-   -5
-  -42
-  -55
-   66
+    5890
+    1279
+   19497
+    1207
+   11420
+    3377
+   15317
+   29489
+    9716
+   23323
+
+Random number in a range demo ====
+
+     -82
+     -46
+      50
+      77
+     -47
+      32
+      76
+     -13
+     -58
+      90
 ```
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[`srand`](srand.md)<br/>
-[`rand_s`](rand-s.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[`srand`](srand.md)\
+[`rand_s`](rand-s.md)\
+[C++ `<random>` library](https://docs.microsoft.com/cpp/standard-library/random)
