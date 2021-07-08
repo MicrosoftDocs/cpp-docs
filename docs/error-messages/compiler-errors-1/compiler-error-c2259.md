@@ -1,14 +1,14 @@
 ---
 description: "Learn more about: Compiler Error C2259"
 title: "Compiler Error C2259"
-ms.date: "11/04/2016"
+ms.date: 07/08/2021
 f1_keywords: ["C2259"]
 helpviewer_keywords: ["C2259"]
 ms.assetid: e458236f-bdea-4786-9aa6-a98d8bffa5f4
 ---
 # Compiler Error C2259
 
-'class' : cannot instantiate abstract class
+> '*class*' : cannot instantiate abstract class
 
 Code declares an instance of an abstract class or structure.
 
@@ -43,7 +43,7 @@ There are two possible workarounds for the problem:
 
 - Use the scope resolution operator for the interface methods implemented in the derived class to qualify the implemented method name with the name of the interface.
 
-C2259 can also occur as a result of conformance work that was done in Visual Studio 2005, **/Zc:wchar_t** is now on by default. In this situation, C2599 can be resolved either by compiling with **/Zc:wchar_t-**, to get the behavior from previous versions, or preferably, by updating your types so they are compatible. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+C2259 can also occur as a result of conformance work that was done in Visual Studio 2005, **`/Zc:wchar_t`** is now on by default. In this situation, C2599 can be resolved either by compiling with **`/Zc:wchar_t-`**, to get the behavior from previous versions, or preferably, by updating your types so they are compatible. For more information, see [`/Zc:wchar_t` (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
 The following sample generates C2259:
 
@@ -96,9 +96,7 @@ ref class MyDerivedClass: public MyInterface {
 private:
    // Uncomment the following line to resolve.
    // public:
-   void MyMethod(){}
-   // or the following line
-   // void MyInterface::MyMethod() {};
+   virtual void MyMethod(){}
 };
 
 int main() {
