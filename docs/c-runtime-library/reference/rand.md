@@ -62,18 +62,18 @@ void SimpleRandDemo(int n)
 
 void RangedRandDemo(int range_min, int range_max, int n)
 {
-    // Generate random numbers in the half-closed interval [range_min, range_max)
-    // That is, range_min <= random number < range_max
+    // Generate random numbers in the interval [range_min, range_max], inclusive.
 
     for (int i = 0; i < n; i++)
     {
         // Note: This method of generating random numbers in a range is not suitable for
-        // applications that require high quality randomn numbers.
+        // applications that require high quality random numbers.
         // rand() has a small output range [0,32767], making it unsuitable for
-        // generating random numbers across a large range. This method also introduces bias.
-        // More suitable random number functions are available in the C++ <random> header.
+        // generating random numbers across a large range using the method below.
+        // The approach below also may result in a non-uniform distribution.
+        // More robust random number functionality is available in the C++ <random> header.
         // See https://docs.microsoft.com/cpp/standard-library/random
-        int r = ((double)rand() / RAND_MAX ) * (range_max - range_min) + range_min;
+        int r = ((double)rand() / RAND_MAX) * (range_max - range_min) + range_min;
         printf("  %6d\n", r);
     }
 }
@@ -87,9 +87,8 @@ int main(void)
     printf("Simple random number demo ====\n\n");
     SimpleRandDemo(10);
     printf("\nRandom number in a range demo ====\n\n");
-    RangedRandDemo(-100, 100, 10);
-}
-```
+    RangedRandDemo(-100, 100, 100000);
+}```
 
 ```Output
 Simple random number demo ====
