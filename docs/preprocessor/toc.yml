@@ -198,6 +198,8 @@
       href: ../preprocessor/setlocale.md
     - name: strict_gs_check pragma
       href: ../preprocessor/strict-gs-check.md
+    - name: system_header pragma
+      href: ../preprocessor/system-header-pragma.md
     - name: vtordisp pragma
       href: ../preprocessor/vtordisp.md
     - name: warning pragma
