@@ -7,7 +7,7 @@
     "relativeLinkPrefix": "../"
   },
   "inclusionCriteria": {
-    "minAdditionsToFile": 10,
+    "minAdditionsToFile": 3,
     "pullRequestTitlesToIgnore": [
       "^Confirm merge from FromPublicMasterBranch",
       "^Repo sync for protected CLA branch"
