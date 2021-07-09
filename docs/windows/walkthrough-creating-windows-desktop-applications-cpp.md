@@ -121,7 +121,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 1. Just as every C application and C++ application must have a `main` function as its starting point, every Windows desktop application must have a `WinMain` function. `WinMain` has the following syntax.
 
    ```cpp
-   int CALLBACK WinMain(
+   int WINAPI WinMain(
       _In_ HINSTANCE hInstance,
       _In_opt_ HINSTANCE hPrevInstance,
       _In_ LPSTR     lpCmdLine,
@@ -132,7 +132,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    For information about the parameters and return value of this function, see [WinMain entry point](/windows/win32/api/winbase/nf-winbase-winmain).
 
    > [!NOTE]
-   > What are all those extra words, such as `CALLBACK`, or `HINSTANCE`, or `_In_`? The traditional Windows API uses typedefs and preprocessor macros extensively to abstract away some of the details of types and platform-specific code, such as calling conventions, **`__declspec`** declarations, and compiler pragmas. In Visual Studio, you can use the IntelliSense [Quick Info](/visualstudio/ide/using-intellisense#quick-info) feature to see what these typedefs and macros define. Hover your mouse over the word of interest, or select it and press **Ctrl**+**K**, **Ctrl**+**I** for a small pop-up window that contains the definition. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense). Parameters and return types often use *SAL Annotations* to help you catch programming errors. For more information, see [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md).
+   > What are all those extra words, such as `WINAPI`, or `CALLBACK`, or `HINSTANCE`, or `_In_`? The traditional Windows API uses typedefs and preprocessor macros extensively to abstract away some of the details of types and platform-specific code, such as calling conventions, **`__declspec`** declarations, and compiler pragmas. In Visual Studio, you can use the IntelliSense [Quick Info](/visualstudio/ide/using-intellisense#quick-info) feature to see what these typedefs and macros define. Hover your mouse over the word of interest, or select it and press **Ctrl**+**K**, **Ctrl**+**I** for a small pop-up window that contains the definition. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense). Parameters and return types often use *SAL Annotations* to help you catch programming errors. For more information, see [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md).
 
 1. Windows desktop programs require &lt;windows.h>. &lt;tchar.h> defines the `TCHAR` macro, which resolves ultimately to **`wchar_t`** if the UNICODE symbol is defined in your project, otherwise it resolves to **`char`**.  If you always build with UNICODE enabled, you don't need TCHAR and can just use **`wchar_t`** directly.
 
@@ -169,7 +169,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    wcex.cbClsExtra     = 0;
    wcex.cbWndExtra     = 0;
    wcex.hInstance      = hInstance;
-   wcex.hIcon          = LoadIcon(hInstance, IDI_APPLICATION);
+   wcex.hIcon          = LoadIcon(wcex.hInstance, IDI_APPLICATION);
    wcex.hCursor        = LoadCursor(NULL, IDC_ARROW);
    wcex.hbrBackground  = (HBRUSH)(COLOR_WINDOW+1);
    wcex.lpszMenuName   = NULL;
@@ -193,13 +193,14 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    }
    ```
 
-1. Now you can create a window. Use the [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) function.
+1. Now you can create a window. Use the [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) function.
 
    ```cpp
    static TCHAR szWindowClass[] = _T("DesktopApp");
    static TCHAR szTitle[] = _T("Windows Desktop Guided Tour Application");
 
-   // The parameters to CreateWindow explained:
+   // The parameters to CreateWindowEx explained:
+   // WS_EX_OVERLAPPEDWINDOW : An optional extended window style.
    // szWindowClass: the name of the application
    // szTitle: the text that appears in the title bar
    // WS_OVERLAPPEDWINDOW: the type of window to create
@@ -209,7 +210,8 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    // NULL: this application does not have a menu bar
    // hInstance: the first parameter from WinMain
    // NULL: not used in this application
-   HWND hWnd = CreateWindow(
+   HWND hWnd = CreateWindowEx(
+  	WS_EX_OVERLAPPEDWINDOW,
       szWindowClass,
       szTitle,
       WS_OVERLAPPEDWINDOW,
@@ -223,7 +225,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    if (!hWnd)
    {
       MessageBox(NULL,
-         _T("Call to CreateWindow failed!"),
+         _T("Call to CreateWindowEx failed!"),
          _T("Windows Desktop Guided Tour"),
          NULL);
 
@@ -277,7 +279,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
       wcex.cbClsExtra     = 0;
       wcex.cbWndExtra     = 0;
       wcex.hInstance      = hInstance;
-      wcex.hIcon          = LoadIcon(hInstance, IDI_APPLICATION);
+      wcex.hIcon          = LoadIcon(wcex.hInstance, IDI_APPLICATION);
       wcex.hCursor        = LoadCursor(NULL, IDC_ARROW);
       wcex.hbrBackground  = (HBRUSH)(COLOR_WINDOW+1);
       wcex.lpszMenuName   = NULL;
@@ -297,7 +299,8 @@ Next, you'll learn how to create the code for a Windows desktop application in V
       // Store instance handle in our global variable
       hInst = hInstance;
 
-      // The parameters to CreateWindow explained:
+      // The parameters to CreateWindowEx explained:
+      // WS_EX_OVERLAPPEDWINDOW : An optional extended window style.
       // szWindowClass: the name of the application
       // szTitle: the text that appears in the title bar
       // WS_OVERLAPPEDWINDOW: the type of window to create
@@ -307,7 +310,8 @@ Next, you'll learn how to create the code for a Windows desktop application in V
       // NULL: this application dows not have a menu bar
       // hInstance: the first parameter from WinMain
       // NULL: not used in this application
-      HWND hWnd = CreateWindow(
+      HWND hWnd = CreateWindowEx(
+         WS_EX_OVERLAPPEDWINDOW,
          szWindowClass,
          szTitle,
          WS_OVERLAPPEDWINDOW,
@@ -447,7 +451,7 @@ As promised, here's the complete code for the working application.
    // Forward declarations of functions included in this code module:
    LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 
-   int CALLBACK WinMain(
+   int WINAPI WinMain(
       _In_ HINSTANCE hInstance,
       _In_opt_ HINSTANCE hPrevInstance,
       _In_ LPSTR     lpCmdLine,
@@ -462,7 +466,7 @@ As promised, here's the complete code for the working application.
       wcex.cbClsExtra     = 0;
       wcex.cbWndExtra     = 0;
       wcex.hInstance      = hInstance;
-      wcex.hIcon          = LoadIcon(hInstance, IDI_APPLICATION);
+      wcex.hIcon          = LoadIcon(wcex.hInstance, IDI_APPLICATION);
       wcex.hCursor        = LoadCursor(NULL, IDC_ARROW);
       wcex.hbrBackground  = (HBRUSH)(COLOR_WINDOW+1);
       wcex.lpszMenuName   = NULL;
@@ -482,7 +486,8 @@ As promised, here's the complete code for the working application.
       // Store instance handle in our global variable
       hInst = hInstance;
 
-      // The parameters to CreateWindow explained:
+      // The parameters to CreateWindowEx explained:
+      // WS_EX_OVERLAPPEDWINDOW : An optional extended window style.
       // szWindowClass: the name of the application
       // szTitle: the text that appears in the title bar
       // WS_OVERLAPPEDWINDOW: the type of window to create
@@ -492,7 +497,8 @@ As promised, here's the complete code for the working application.
       // NULL: this application does not have a menu bar
       // hInstance: the first parameter from WinMain
       // NULL: not used in this application
-      HWND hWnd = CreateWindow(
+      HWND hWnd = CreateWindowEx(
+         WS_EX_OVERLAPPEDWINDOW,
          szWindowClass,
          szTitle,
          WS_OVERLAPPEDWINDOW,
