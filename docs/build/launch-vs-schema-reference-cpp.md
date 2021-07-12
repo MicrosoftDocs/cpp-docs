@@ -6,7 +6,7 @@ helpviewer_keywords: ["launch.vs.json file [C++]"]
 ---
 # launch.vs.json schema reference (C++)
 
-Starting in Visual Studio 2017, you can open code from nearly any type of directory-based project into Visual Studio without the need for a solution or project file. When there is no project or solution file, you can specify custom build tasks and launch parameters through JSON configuration files. This article describes the `launch.vs.json` file, which specifies debugging parameters.  See [Develop code in Visual Studio without projects or solutions](https://docs.microsoft.com/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions?view=vs-2019) for more information about the "Open Folder" feature.
+Starting in Visual Studio 2017, you can open code from nearly any type of directory-based project into Visual Studio without the need for a solution or project file. When there is no project or solution file, you can specify custom build tasks and launch parameters through JSON configuration files. This article describes the `launch.vs.json` file, which specifies debugging parameters.  See [Develop code in Visual Studio without projects or solutions](https://docs.microsoft.com/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions) for more information about the "Open Folder" feature.
 
 To create the file, right-click on an executable file in **Solution Explorer** and choose **Debug and Launch Settings**. Choose the option that most closely matches your project and then use the following properties to modify the configuration as needed. For more information on debugging CMake projects, see [Configure CMake debugging sessions](./configure-cmake-debugging-sessions.md).
 
@@ -62,7 +62,7 @@ externalConsole|boolean|If true, a console is launched for the debuggee. If **`f
 
 The following macros provide information about the debugging environment. They are useful for customizing the launch of your app for debugging.
 
- |Macro|Description| Example |
+|Macro|Description|Example|
 |-|-|-|
 | `addressSanitizerRuntimeFlags` | Runtime flags used to customize behavior of the address sanitizer. Used to set the environment variable `"ASAN_OPTIONS"`. | `"env": {"ASAN_OPTIONS": "${addressSanitizerRuntimeFlags}:anotherFlag=true"`} |
 | `defaultWorkingDirectory` | Set to the directory part of `"fullTargetPath"`. If the CMake variable `VS_DEBUGGER_WORKING_DIRECTORY` is defined, then `defaultWorkingDirectory` is set to that value, instead. | `"cwd":"${debugInfo.defaultWorkingDirectory}"` |
@@ -73,8 +73,8 @@ The following macros provide information about the debugging environment. They a
 | `remoteWorkspaceRoot` | Linux path to the remote copy of the workspace. | Specify file locations on the remote machine. For example: `"args": ["${debugInfo.remoteWorkspaceRoot}/Data/MyInputFile.dat"]` |
 |`resolvedRemoteMachineName` | The name of the target remote machine. | `"targetMachine"` value in a deployment directive | |
 | `shellexecPath`| The path to the shellexec program that Visual Studio is using to manage the remote machine connection. | See pipeTransport example below |
-| `tty` | The teletype that gdb is to redirect input and output to for the program being debugged. Used as a parameter to gdb (-tty). | See pipeTransport example below. |
-| `windowsSubsystemPath` | The full path to the Windows Subsystem for Linux instance. | See pipeTransport example below. |
+| `tty` | The device that gdb is to redirect input and output to for the program being debugged. Used as a parameter to gdb (-tty). | See pipeTransport example below. |
+| `windowsSubsystemPath` | The full path to the Windows Subsystem for Linux instance. | |
 
 The pipeTransport example below shows how to use some of the `debugInfo` macros defined above:
 
