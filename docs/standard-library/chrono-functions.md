@@ -538,7 +538,7 @@ In ISO 8601, weeks begin with Monday. The first week of the year must include Ja
 | `year_month_weekday_last` | D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w |
 | `zoned_time` | z, Z, c, x, X, D, F, Y, C, y, b, B, h, m, d, e, a, A, u, w, H, I, M, S, r, R, T, p, g, G, U, V, W |
 
-<a name="notice"></a><sup>1</sup>The implementation is currently consistent with [strftime](https://docs.microsoft.com/cpp/c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l) in that although `O` (letter O) and `e` are accepted, they are ignored. That is, `"%Od"` is interpreted as `"%d"`.
+<a name="notice"></a><sup>1</sup>The implementation is currently consistent with [strftime](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) in that although `O` (letter O) and `e` are accepted, they are ignored. That is, `"%Od"` is interpreted as `"%d"`.
 
 ## <a name="std-chrono-get-leap-second-info"></a> `get_leap_second_info`
 
