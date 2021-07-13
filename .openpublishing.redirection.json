@@ -806,6 +806,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/c-language/generic_selection.md",
+      "redirect_url": "/cpp/c-language/generic-selection",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/c-language/operators-c.md",
       "redirect_url": "/cpp/c-language/lexical-grammar",
       "redirect_document_id": false

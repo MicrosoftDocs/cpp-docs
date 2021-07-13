@@ -6,7 +6,7 @@ helpviewer_keywords: ["primary expressions"]
 ---
 # C primary expressions
 
-Primary expressions are the building blocks of more complex expressions. They may be constants, identifiers, a [Generic selection](generic_selection.md), or an expression in parentheses.
+Primary expressions are the building blocks of more complex expressions. They may be constants, identifiers, a [Generic selection](generic-selection.md), or an expression in parentheses.
 
 ## Syntax
 
@@ -23,5 +23,5 @@ Primary expressions are the building blocks of more complex expressions. They ma
 
 ## See also
 
-[Generic selection](generic_selection.md)
+[Generic selection](generic-selection.md)
 [Operands and Expressions](../c-language/operands-and-expressions.md)
