@@ -1,12 +1,14 @@
 ---
 title: "launch.vs.json schema reference (C++)"
 description: "Describes the schema elements for the `launch.vs.json` file"
-ms.date: "12/02/2020"
+ms.date: "7/12/2021"
 helpviewer_keywords: ["launch.vs.json file [C++]"]
 ---
 # launch.vs.json schema reference (C++)
 
-Use the *launch.vs.json* file to configure debugging parameters. To create the file. right-click on an executable file in **Solution Explorer** and choose **Debug and Launch Settings**. Choose the option that most closely matches your project and then use the following properties to modify the configuration as needed. For more information on debugging CMake projects, see [Configure CMake debugging sessions](./configure-cmake-debugging-sessions.md).
+Starting in Visual Studio 2017, you can open code from nearly any type of directory-based project into Visual Studio without the need for a solution or project file. When there's no project or solution file, you can specify custom build tasks and launch parameters through JSON configuration files. This article describes the `launch.vs.json` file, which specifies debugging parameters.  See [Develop code in Visual Studio without projects or solutions](https://docs.microsoft.com/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions) for more information about the "Open Folder" feature.
+
+To create the file, right-click on an executable file in **Solution Explorer** and choose **Debug and Launch Settings**. Choose the option that most closely matches your project and then use the following properties to modify the configuration as needed. For more information on debugging CMake projects, see [Configure CMake debugging sessions](./configure-cmake-debugging-sessions.md).
 
 ## Default properties
 
@@ -55,6 +57,49 @@ Use the *launch.vs.json* file to configure debugging parameters. To create the f
 |`coreDumpPath`|string|Optional full path to a core dump file for the specified program. Defaults to null.|
 externalConsole|boolean|If true, a console is launched for the debuggee. If **`false`**, no console is launched. The default for this setting is **`false`**. This option is ignored in some cases for technical reasons.|
 |`pipeTransport`|string|When present, this tells the debugger to connect to a remote computer using another executable as a pipe that will relay standard input/output between Visual Studio and the MI-enabled debugger (such as gdb). Allowed values: one or more [Pipe Transport Options](#pipe_transport_options).|
+
+## debugInfo macros
+
+The following macros provide information about the debugging environment. They're useful for customizing the launch of your app for debugging.
+
+|Macro |Description |Example |
+|---|---|---|
+| `addressSanitizerRuntimeFlags` | Runtime flags used to customize behavior of the address sanitizer. Used to set the environment variable `"ASAN_OPTIONS"`. | `"env": {"ASAN_OPTIONS": "${addressSanitizerRuntimeFlags}:anotherFlag=true"`} |
+| `defaultWorkingDirectory` | Set to the directory part of `"fullTargetPath"`. If the CMake variable `VS_DEBUGGER_WORKING_DIRECTORY` is defined, then `defaultWorkingDirectory` is set to that value, instead. | `"cwd":"${debugInfo.defaultWorkingDirectory}"` |
+| `fullTargetPath` | The full path to the binary being debugged. | `"program": "${debugInfo.fullTargetPath}"` |
+| `linuxNatvisPath` | The full windows path to the VS linux `.natvis` file. Usually appears as the value `"visualizerFile"`. |
+| `parentProcessId` | The process ID for the current Visual Studio instance. Used as a parameter to shellexec. | See pipeTransport example below. |
+| `remoteMachineId` | A unique, numeric identifier for the connection to the remote machine. Used as a parameter to shellexec. | See pipeTransport example below. |
+| `remoteWorkspaceRoot` | Linux path to the remote copy of the workspace. | Specify file locations on the remote machine. For example: `"args": ["${debugInfo.remoteWorkspaceRoot}/Data/MyInputFile.dat"]` |
+|`resolvedRemoteMachineName` | The name of the target remote machine. | `"targetMachine"` value in a deployment directive | |
+| `shellexecPath`| The path to the shellexec program that Visual Studio is using to manage the remote machine connection. | See pipeTransport example below |
+| `tty` | gdb will redirect input and output to this device for the program being debugged. Used as a parameter to gdb (-tty). | See pipeTransport example below. |
+| `windowsSubsystemPath` | The full path to the Windows Subsystem for Linux instance. | |
+
+The pipeTransport example below shows how to use some of the `debugInfo` macros defined above:
+
+```json
+"pipeTransport": {
+    "pipeProgram": "${debugInfo.shellexecPath}",
+    "pipeArgs": [
+        "/s",
+        "${debugInfo.remoteMachineId}",
+        "/p",
+        "${debugInfo.parentProcessId}",
+        "/c",
+        "${debuggerCommand}",
+        "--tty=${debugInfo.tty}"
+    ],
+    "pipeCmd": [
+        "/s",
+        "${debugInfo.remoteMachineId}",
+        "/p",
+        "${debugInfo.parentProcessId}",
+        "/c",
+        "${debuggerCommand}"
+    ]
+    }
+```
 
 ## <a name="remote_deploy_debug"></a> C++ Windows remote debug and deploy properties
 
