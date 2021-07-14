@@ -1,34 +1,28 @@
 ---
-description: "Learn more about: add_pointer Class"
+description: "Learn more about: is_clock struct"
 title: "add_pointer Class"
-ms.date: "7/1/2021"
-f1_keywords: ["type_traits/std::add_pointer"]
-helpviewer_keywords: ["add_pointer class", "add_pointer"]
+ms.date: "7/12/2021"
+f1_keywords: ["chrono/std::is_clock"]
+helpviewer_keywords: ["std::chrono [C++], is_clock"]
 ---
-# add_pointer Class
 
-Makes a pointer-to-type from a specified type.
+# `is_clock` class
+
+A type trait that determines whether the specified type meets the requirements to be a [Cpp17Clock](http://eel.is/c++draft/time.clock.req).
 
 ## Syntax
 
 ```cpp
-template <class T>
-struct add_pointer;
-
-template <class T>
-using add_pointer_t = typename add_pointer<T>::type;
+template<class T> struct is_clock;
 ```
 
 ### Parameters
 
 *`T`*\
-The type to modify.
+The type to test.
 
 ## Remarks
 
-The member **`typedef`** `type` names the same type as `remove_reference<T>::type*`. The alias `add_pointer_t` is a shortcut to access the member **`typedef`** `type`.
-
-Because it is invalid to make a pointer from a reference, `add_pointer` removes the reference, if any, from the specified type before it makes a pointer-to-type. Consequently, you can use a type with `add_pointer` without being concerned about whether the type is a reference.
 
 ## Example
 
