@@ -56,7 +56,7 @@ If **`volatile`** is used alone, **`int`** is assumed. The **`volatile`** type s
  
 ## `restrict`
 
-The **`restrict`** type qualifier, introduced in C99, can be applied to pointer declarations. It qualifies the pointer, not what it points at.
+The **`restrict`** type qualifier, introduced in C99 and available in [`/std:c11` or `/std:c17`](../build/reference/std-specify-language-standard-version.md) mode, can be applied to pointer declarations. It qualifies the pointer, not what it points at.
 
 **`restrict`** is an optimization hint to the compiler that no other pointer in the current scope refers to the same memory location. That is, only the pointer or a value derived from it (such as pointer + 1) is used to access the object during the lifetime of the pointer. This helps the compiler produce more optimized code. C++ has an equivalent mechanism, [`__restrict`](../cpp/extension-restrict.md)
 

@@ -103,7 +103,7 @@ cl /Zp8 some_file.cpp
 // ...
 ```
 
-## The `__pragma()` keyword
+## <a name="the-pragma-keyword"></a> The `__pragma` keyword
 
 The compiler also supports the Microsoft-specific **`__pragma`** keyword, which has the same functionality as the **`#pragma`** directive. The difference is, the **`__pragma`** keyword is usable inline in a macro definition. The **`#pragma`** directive isn't usable in a macro definition, because the compiler interprets the number sign character ('#') in the directive as the [stringizing operator (#)](../preprocessor/stringizing-operator-hash.md).
 
@@ -127,13 +127,11 @@ END_CATCH_ALL \
 return _hr; \
 ```
 
-## The `_Pragma` preprocessing operator (C99, C++11)
+## <a name="the-pragma-preprocessing-operator"></a> The `_Pragma` preprocessing operator
 
-`_Pragma` is similar to the Microsoft-specific [`__pragma`](#the-__pragma-keyword) keyword, except it's part of the standard. It was introduced for C in C99. For C++, it was introduced in C++11.
+`_Pragma` is similar to the Microsoft-specific [`__pragma`](#the-pragma-keyword) keyword. It was introduced into the C standard in C99, and the C++ standard in C++11. It's available in C only when you specify the [`/std:c11` or `/std:c17`](../build/reference/std-specify-language-standard-version.md) option. For C++, it's available in all **`/std`** modes, including the default.
 
- It allows you to put pragma directives into a macro definition. It has one leading underscore `_` instead of two leading underscores `__` that the Microsoft-specific keyword has, and the first letter is capitalized.
-
-The string literal should be what you would otherwise put following a *`#pragma`* statement. For example:
+Unlike **`__pragma`**, **`_Pragma`** allows you to put pragma directives into a macro definition. The string literal should be what you would otherwise put following a **`#pragma`** statement. For example:
 
 ```c
 #pragma message("the #pragma way")
@@ -142,9 +140,9 @@ _Pragma ("message( \"the _Pragma way\")")
 
 Quotation marks and back-slashes should be escaped, as shown above. A pragma string that isn't recognized is ignored.
 
-The following code example demonstrates how the **`_Pragma`** keyword could be used in an assert-like macro when you don't want to get a warning when the condition expression happens to be constant. 
+The following code example demonstrates how the **`_Pragma`** keyword could be used in an assert-like macro. It creates a pragma directive that suppresses a warning when the condition expression happens to be constant.
 
-The macro definition uses the `do`-`while(0)` idiom for multi-statement macros so that it can be used as though it were one statement. See [C multi-line macro](https://stackoverflow.com/questions/1067226/c-multi-line-macro-do-while0-vs-scope-block) on Stack Overflow for more info. The **`_Pragma`** statement only applies to the line of code that follows it.
+The macro definition uses the `do`-`while(0)` idiom for multi-statement macros so that it can be used as though it were one statement. For more information, see [C multi-line macro](https://stackoverflow.com/questions/1067226/c-multi-line-macro-do-while0-vs-scope-block) on Stack Overflow. The **`_Pragma`** statement only applies to the line of code that follows it.
 
 ```C
 // Compile with /W4

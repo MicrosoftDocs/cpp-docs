@@ -7,24 +7,24 @@ helpviewer_keywords: ["_Generic keyword [C]"]
 
 # Generic selection (C11)
 
-Use the **`_Generic`** keyword to write code that selects an expression at compile time based on the type of the argument. It's similar to overloading in C++ where the type of the argument selects which function to call, except that the type of the argument selects which expression to evaluate.
+Use the **`_Generic`** keyword to write code that selects an expression at compile time based on the type of the argument. It's similar to overloading in C++ where the type of the argument selects which function to call. In this case, the type of the argument selects which expression to evaluate.
 
 For example, the expression `_Generic(42, int: "integer", char: "character", default: "unknown");` evaluates the type of `42` and looks for the matching type, `int`, in the list. It finds it and returns `"integer"`.
 
 ## Syntax
 
 *`generic-selection`*:\
-&nbsp;&nbsp;&nbsp;&nbsp;**`_Generic`** **(** *`assignment-expression`, `assoc-list`* **)**
+&emsp;**`_Generic`** **(** *`assignment-expression`, `assoc-list`* **)**
 
 *`assoc-list`*:\
-&nbsp;&nbsp;&nbsp;&nbsp;*`association`*\
-&nbsp;&nbsp;&nbsp;&nbsp;*`assoc-list`, `association`*
+&emsp;*`association`*\
+&emsp;*`assoc-list`, `association`*
 
 *`association`*:\
-&nbsp;&nbsp;&nbsp;&nbsp;*`type-name`* : *`assignment-expression`*\
-&nbsp;&nbsp;&nbsp;&nbsp;**`default`** : *`assignment-expression`*
+&emsp;*`type-name`* : *`assignment-expression`*\
+&emsp;**`default`** : *`assignment-expression`*
 
-The first *`assignment-expression`* is called the controlling expression. The type of the controlling expression is determined at compile time and matched against the *`assoc-list`* to find which expression to evaluate and return. The controlling expression is not evaluated. For example, `_Generic(intFunc(), int: "integer", default: "error");` doesn't result in a call at runtime to `intFunc()`. 
+The first *`assignment-expression`* is called the controlling expression. The type of the controlling expression is determined at compile time and matched against the *`assoc-list`* to find which expression to evaluate and return. The controlling expression isn't evaluated. For example, `_Generic(intFunc(), int: "integer", default: "error");` doesn't result in a call at runtime to `intFunc`.
 
 When the type of the controlling expression is determined, `const`,  `volatile`, and `restrict` are removed before matching against *`assoc-list`*.
 
@@ -38,7 +38,7 @@ Entries in the `assoc-list` that aren't chosen aren't evaluated.
 
 ## Example
 
-One way to use **`_Generic`** is in a macro. The <tgmath.h> header file uses **_Generic** to call the right math function depending on the type of argument. For example, the macro for `cos()` maps a call with a float to `cosf()`, while mapping a call with a complex double to `ccos()`.
+One way to use **`_Generic`** is in a macro. The \<tgmath.h> header file uses **`_Generic`** to call the right math function depending on the type of argument. For example, the macro for `cos` maps a call with a float to `cosf`, while mapping a call with a complex double to `ccos`.
 
 The following example shows how to write a macro that identifies the type of the argument you pass to it. It produces `"unknown"` if no entry in the *`assoc-list`* matches the controlling expression:
 
@@ -78,5 +78,5 @@ Windows SDK 10.0.20348.0 (version 2104) or later. See [Windows 10 SDK](https://d
 
 ## See also
 
-[`/std` (Specify Language Standard Version)](../build/reference/std-specify-language-standard-version.md)\
+[`/std` (Specify language standard version)](../build/reference/std-specify-language-standard-version.md)\
 [Type-generic math](../c-runtime-library/tgmath.md)
