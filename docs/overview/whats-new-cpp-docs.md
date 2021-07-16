@@ -34,7 +34,7 @@ This article lists major changes to the Microsoft C++ docs through June 2021.
 
 - [`_Static_assert` keyword and `static_assert` macro (C11)](../c-language/static-assert-c.md) - update the SDK to use
 - [Alignment (C11)](../c-language/alignment-c.md) - update the SDK to use
-- [Generic selection (C11)](../c-language/generic_selection.md) - update the SDK to use
+- [Generic selection (C11)](../c-language/generic-selection.md) - update the SDK to use
 
 ## C runtime library
 
@@ -181,7 +181,7 @@ In addition to the changes below, many articles were updated to prevent the mach
 - [/Y (precompiled headers)](../build/reference/y-precompiled-headers.md) - new content for header-units
 - [`/analyze` (Code analysis)](../build/reference/analyze-code-analysis.md) - update with up-to-date options list, add more information, and restructure for better organization of related options
 - [`/await` (Enable coroutine support)](../build/reference/await-enable-coroutine-support.md) - add `/await:strict` for Visual Studio 16.10
-- [`/clr` (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) - include version for support of netcore option
+- [`/clr` (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) - include version for support of `/clr:netcore` option
 - [`/exportHeader` (Create header units)](../build/reference/module-exportheader.md) - add new content related to header-units
 - [`/external` (External headers diagnostics)](../build/reference/external-external-headers-diagnostics.md) - `/external` not experimental in Visual Studio 16.10
 - [`/F` (Set Stack Size)](../build/reference/f-set-stack-size.md) - update for VS 2019
@@ -212,7 +212,7 @@ In addition to the changes below, many articles were updated to prevent the mach
 - [Walkthrough: Compile a C program on the command line](../build/walkthrough-compile-a-c-program-on-the-command-line.md) - Visual Studio 16.10 updates to C17 conformance
 - [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md) - clarified notepad behavior when opening source file 
 
-## C++ Standard Template Library (STL) reference
+## C++ Standard Library (STL) reference
 
 **New articles**
 
@@ -258,7 +258,7 @@ In addition to the changes below, many articles were updated to prevent the mach
 
 **Updated articles**
 
-- [C++ AMP Overview](../parallel/amp/cpp-amp-overview.md) - add note regarding C++ AMP library deprecation
+- [C++ AMP Overview](../parallel/amp/cpp-amp-overview.md) - add note about C++ AMP library deprecation
 - [Walkthrough: Debugging a C++ AMP application](../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md) - fixed code sample
 
 ## Community contributors

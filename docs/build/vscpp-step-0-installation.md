@@ -1,7 +1,7 @@
 ---
 title: Install C and C++ support in Visual Studio
 description: "Learn how to install Visual Studio with support for Microsoft C/C++ and related workloads."
-ms.custom: "mvc"
+ms.custom: "vs-acquisition"
 ms.date: 11/05/2020
 ms.topic: "tutorial"
 ms.devlang: "cpp"
