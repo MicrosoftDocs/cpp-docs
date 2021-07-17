@@ -8,12 +8,20 @@ helpviewer_keywords: ["std::chrono [C++], is_clock"]
 
 # `is_clock` class
 
-A type trait that determines whether the specified type meets the requirements to be a [Cpp17Clock](http://eel.is/c++draft/time.clock.req).
+A type trait that determines whether the specified type meets the requirements to be a clock. At a high level, a clock has a `duration`, `time_point`, `now()` function.
+
+For more details about the requirements to be a Cpp17CLock, see [Cpp17Clock requirements](https://eel.is/c++draft/tab:time.clock). 
 
 ## Syntax
 
 ```cpp
-template<class T> struct is_clock;
+template<class T> struct is_clock; // c++ 20
+```
+
+**Helper variable template**
+
+```cpp
+ template<class T> inline constexpr bool is_clock_v = is_clock<T>::value; // c++ 20
 ```
 
 ### Parameters
@@ -21,40 +29,45 @@ template<class T> struct is_clock;
 *`T`*\
 The type to test.
 
-## Remarks
+## Members
 
+|Name|Description|
+|----------|-----------------|
+| [`value`](#value) | Indicates whether `T` satisfies the requirements to be a clock.  |
+| [`operator ()`](#op_parens) | Returns `value`. |
+| [`operator bool`](#op_bool) | Returns `value` as a bool. |
+
+
+## Remarks
 
 ## Example
 
-The following example demonstrates that `add_pointer` of a type is the same as a pointer to that type.
-
 ```cpp
-#include <type_traits>
 #include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
 
 int main()
 {
-    std::add_pointer_t<int> *p = (int **)0;
+    is_clock<system_clock> ic;
 
-    p = p;  // to quiet "unused" warning
-    std::cout << "add_pointer_t<int> == "
-        << typeid(*p).name() << std::endl;
-
-    return (0);
+    std::cout << std::boolalpha << ic.value << ", " << ic() << ", " << (bool)ic;
+    return 0;
 }
 ```
 
-```Output
-add_pointer_t<int> == int *
+```output
+true, true, true
 ```
 
 ## Requirements
 
-**Header:** \<type_traits>
+**Header:** \<`chrono`>
 
-**Namespace:** std
+**Namespace:** `std`
 
 ## See also
 
-[<type_traits>](type-traits.md)\
-[remove_pointer Class](remove-pointer-class.md)
+[`<chrono>`](chrono.md)\
+[Header Files Reference](cpp-standard-library-header-files.md)

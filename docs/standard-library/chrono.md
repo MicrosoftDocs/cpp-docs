@@ -95,7 +95,7 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 |[`operator>`](chrono-operators.md#op_gt)|Determines whether various <chrono> objects are greater than another.|
 |[`operator>=`](chrono-operators.md#op_gt_eq)|Determines whether various <chrono> objects are greater than or equal to another.|
 
-## Typedefs (Predefined Duration Types)
+## Typedefs (Predefined duration types)
 
 For more information about ratio types that are used in the following typedefs, see [`<ratio>`](ratio.md).
 
@@ -111,9 +111,9 @@ For more information about ratio types that are used in the following typedefs, 
 ## Type traits
 
 |Name|Description|
+|-|-|
 |[is_clock](is_clock-struct.md) | See if a type is a Clock. |
-|[treat_as_floating_point](treat-as-floatingpoint-struct.md) | See if a duration can be converted to another duration that has a different tick period.|
-|[`treat_as_floating_point` struct](treat-as-floating-point-structure.md)|Specifies whether a type can be treated as a floating-point type.|
+|[treat_as_floating_point](treat-as-floatingpoint-struct.md) | See if a `duration` can be converted to another `duration` that has a different tick period.|
 
 ## Alias declarations
 
