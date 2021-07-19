@@ -6,7 +6,7 @@ f1_keywords: ["chrono/std::is_clock"]
 helpviewer_keywords: ["std::chrono [C++], is_clock"]
 ---
 
-# `is_clock` struct
+# `is_clock` structure
 
 A type trait that determines whether the specified type meets the requirements to be a clock.
 
