@@ -185,7 +185,7 @@
         - name: time_zone class
           href: ../standard-library/time-zone-class.md
         - name: treat_as_floating_point struct
-          href: ../standard-library/treat-as-floating-point-struct.md
+          href: ../standard-library/treat-as-floating-point-structure.md
         - name: weekday class
           href: weekday-class.md
         - name: weekday_indexed
