@@ -112,7 +112,7 @@ For more information about ratio types that are used in the following typedefs, 
 
 |Name|Description|
 |-|-|
-|[is_clock](is_clock-struct.md) | See if a type is a Clock. |
+|[is_clock](is-clock-struct.md) | See if a type is a Clock. |
 |[treat_as_floating_point](treat-as-floating-point-struct.md) | See if a `duration` can be converted to another `duration` that has a different tick period.|
 
 ## Alias declarations
