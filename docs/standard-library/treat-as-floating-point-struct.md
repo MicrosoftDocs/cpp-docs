@@ -29,8 +29,7 @@ The type to test.
 
 ## Remarks
 
-The purpose of this trait is to indicate whether a given class behaves like a floating-point type, and thus allows division of one value by another with acceptable loss of precision. If `treat_as_floating_point_v<T>` is false, `T` will be treated as if it behaves as an
-integral type for the purpose of these conversions.
+The purpose of this trait is to indicate whether a given class behaves like a floating-point type, and thus allows division of one value by another with acceptable loss of precision. If `treat_as_floating_point_v<T>` is false, `T` will be treated as if it behaves as an integral type for these conversions.
 
 The [`duration`](duration-class.md) template uses the `treat_as_floating_point trait` to help determine if a `duration` object
 can be converted to another `duration` with a different tick `period`.

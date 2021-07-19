@@ -32,13 +32,13 @@ The type to test.
 |Name|Description|
 |----------|-----------------|
 | [`value`](#value) | Indicates whether `T` satisfies the requirements to be a clock.  |
-| [`operator ()`](#op_parens) | Returns `value`. |
-| [`operator bool`](#op_bool) | Returns `value` as a bool. |
+| [`operator ()`](#op_parens) | Returns [`value`](#value). |
+| [`operator bool`](#op_bool) | Returns [`value`](#value). |
 
 ## Remarks
 
-At a high level, a clock has a `rep`, `period`, `duration`, `time_point`, and a `now()` function.
-For more details about the requirements to be a Cpp17CLock, see [Cpp17Clock requirements](https://eel.is/c++draft/tab:time.clock). 
+A clock has a `rep`, `period`, `duration`, `time_point`, and a `now()` function.
+For more details about the requirements to be a C++17 clock, see [Cpp17Clock requirements](https://eel.is/c++draft/tab:time.clock). 
 
 ## Example
 
