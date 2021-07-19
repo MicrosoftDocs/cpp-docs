@@ -1,16 +1,14 @@
 ---
-description: "Learn more about: is_clock struct"
-title: "add_pointer Class"
-ms.date: "7/12/2021"
+description: "Learn more about is_clock struct"
+title: "is_clock class"
+ms.date: 07/19/2021
 f1_keywords: ["chrono/std::is_clock"]
 helpviewer_keywords: ["std::chrono [C++], is_clock"]
 ---
 
-# `is_clock` class
+# `is_clock` struct
 
-A type trait that determines whether the specified type meets the requirements to be a clock. At a high level, a clock has a `duration`, `time_point`, `now()` function.
-
-For more details about the requirements to be a Cpp17CLock, see [Cpp17Clock requirements](https://eel.is/c++draft/tab:time.clock). 
+A type trait that determines whether the specified type meets the requirements to be a clock.
 
 ## Syntax
 
@@ -37,8 +35,10 @@ The type to test.
 | [`operator ()`](#op_parens) | Returns `value`. |
 | [`operator bool`](#op_bool) | Returns `value` as a bool. |
 
-
 ## Remarks
+
+At a high level, a clock has a `rep`, `period`, `duration`, `time_point`, and a `now()` function.
+For more details about the requirements to be a Cpp17CLock, see [Cpp17Clock requirements](https://eel.is/c++draft/tab:time.clock). 
 
 ## Example
 
@@ -66,6 +66,44 @@ true, true, true
 **Header:** \<`chrono`>
 
 **Namespace:** `std`
+
+**Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
+
+## Value
+
+Get whether the specified type satisfies the requirements to be a clock.
+
+```cpp
+static constexpr T value;
+```
+
+### Return value
+
+`true` if specified type meets the requirements to be a clock. Otherwise, `false`.
+
+## <a name="op_parens"></a> `operator()`
+
+```cpp
+constexpr value_type operator()() const noexcept
+```
+
+Returns `value`, that is, whether the specified type meets the requirements to be a clock.
+
+### Return value
+
+`true` if specified type meets the requirements to be a clock. Otherwise, `false`.
+
+## <a name="op_bool"></a> `operator bool`
+
+```cpp
+constexpr operator value_type() const noexcept
+```
+
+Returns `value`, that is, whether the specified type meets the requirements to be a clock.
+
+### Return value
+
+`true` if specified type meets the requirements to be a clock. Otherwise, `false`.
 
 ## See also
 
