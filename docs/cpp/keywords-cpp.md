@@ -16,7 +16,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
     :::column:::
         [`alignas`](align-cpp.md)\
         [`alignof`](alignof-operator.md)\
-        [`and`](bitwise-and-operator-amp.md) <sup>b</sup>\
+        [`and`](logical-and-operator-amp-amp.md) <sup>b</sup>\
         [`and_eq`](assignment-operators.md) <sup>b</sup>\
         [`asm`](../assembler/inline/asm.md) <sup>a</sup>\
         [`auto`](./auto-cpp.md)\
