@@ -160,6 +160,8 @@
           href: ../standard-library/hhmmss-class.md
         - name: high_resolution_clock struct 
           href: high-resolution-clock-struct.md
+        - name: is_clock struct 
+          href: is-clock-struct.md
         - name: leap_second class
           href: ../standard-library/leap-second-class.md
         - name: leap_second_info struct
