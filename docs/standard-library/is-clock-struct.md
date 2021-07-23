@@ -37,8 +37,11 @@ The type to test.
 
 ## Remarks
 
-A clock has a `rep`, `period`, `duration`, `time_point`, and a `now()` function.
-For more details about the requirements to be a C++17 clock, see [Cpp17Clock requirements](https://eel.is/c++draft/tab:time.clock). 
+A clock has a `rep`, `period`, `duration`, `time_point`, `is_steady`, and a `now()` function.
+
+For more details about the requirements to be a C++17 clock, see [Cpp17Clock requirements](https://eel.is/c++draft/tab:time.clock).
+
+The following code works because `is_clock`, derives from `Cpp17UnaryTypeTrait`, which derives from `integral_constant`. This is where `value_type`, which is a `bool`, and `type`, which is a `std::integral_constant<bool, value>` come from.  
 
 ## Example
 
