@@ -48,10 +48,14 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 |-|-|
 |[`common_type` struct](common-type-structure.md)|Describes specializations of class template [`common_type`](common-type-class.md) for instantiations of `duration` and `time_point`.|
 |[`duration_values` struct](duration-values-structure.md)|Provides specific values for the `duration` template parameter `Rep`.|
-|[`high_resolution_clock` struct](high-resolution-clock-struct.md)| A clock with a nanosecond tick period. |
 |[`leap_second_info` struct](leap-second-info-struct.md) | The data returned by [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info). |
+
+**Clocks**
+
+|[`high_resolution_clock` struct](high-resolution-clock-struct.md)| A clock with a nanosecond tick period. |
 |[`steady_clock` struct](steady-clock-struct.md)|A `steady` clock. Preferred for measuring time intervals. |
 |[`system_clock` struct](system-clock-structure.md)|A *`clock type`* that is based on the real-time clock of the system.|
+|[`utc_clock` struct](utc-clock-struct.md)| Measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds and is the time standard used around the world.|
 
 ## Functions
 

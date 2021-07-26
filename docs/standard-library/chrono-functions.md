@@ -542,8 +542,7 @@ In ISO 8601, weeks begin with Monday. The first week of the year must include Ja
 
 ## <a name="std-chrono-get-leap-second-info"></a> `get_leap_second_info`
 
-Returns a [`leap_second_info`](./leap-second-info-struct.md)\
- for the specified time.
+Returns a [`leap_second_info`](./leap-second-info-struct.md) for the specified time which provides information about whether the supplied time is when a leap second was inserted, and the sum of all the leap seconds between January 1, 1970 and the specified time.
 
 ### Syntax
 
