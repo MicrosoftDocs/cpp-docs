@@ -46,6 +46,8 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 **Clocks**
 
+| Name | Description |
+|--|--|
 |[`tai_clock` class](tai-clock-class.md)| Measures International Atomic Time (TAI) starting from January 1, 1958 at 00:00:00. Doesn't account for leap seconds.|
 |[`utc_clock` class](utc-clock-class.md)| Measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds and is the time standard used around the world.|
 
@@ -59,6 +61,8 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 **Clocks**
 
+| Name | Description |
+|--|--|
 |[`high_resolution_clock` struct](high-resolution-clock-struct.md)| A clock with a nanosecond tick period. |
 |[`steady_clock` struct](steady-clock-struct.md)|A `steady` clock. Preferred for measuring time intervals. |
 |[`system_clock` struct](system-clock-structure.md)|A *`clock type`* that is based on the real-time clock of the system.|

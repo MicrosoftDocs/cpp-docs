@@ -19,7 +19,7 @@ class tai_clock; // C++20
 
 This clock reports International Atomic Time (TAI, from the French *temps atomique international*). International Atomic Time uses a weighted average of many atomic clocks to track time. 
 
-It is different from UTC time because a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds. A discrepancy gradually occurs between the time kept by atomic clocks, and the time kept by tracking the rotation speed of the earth, because the earth's rotation speed is irregular and in general is slowing down over time by about one second every 1.5 years. TAI time doesn't keep track of this discrepancy, and as of this writing, it is now 37 seconds ahead of UTC time because of an addition of 10 seconds at the start of 1972 and the additional leap seconds that have been inserted since 1972.
+It's different from UTC time because a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 second. A discrepancy gradually occurs between the time kept by atomic clocks, and the time kept by tracking the rotation speed of the earth, because the earth's rotation speed is irregular and in general is slowing down over time by about one second every 1.5 years. TAI time doesn't keep track of this discrepancy, and as of this writing, it's now 37 seconds ahead of UTC time because of an addition of 10 seconds at the start of 1972 and the leap seconds that have been inserted since 1972.
 
 An atomic clock is almost too accurate in the sense that a day isn't exactly 24 hours because the earth's rotational speed is irregular. To keep UTC time in sync with the sun and the stars, a leap second is occasionally added, and theoretically could be subtracted if the earth's rotation speed increases.  
 
@@ -45,8 +45,8 @@ An atomic clock is almost too accurate in the sense that a day isn't exactly 24 
 
 |Name|Description|
 |----------|-----------------|
-|`tai_clock::duration`|A synonym for `duration<rep, period>` which is a duration of time specified by user-defined units (such as integer, floating point, and so on) and a fraction the represents the time in seconds between each integral value stored in the duration.|
-|`tai_clock::period`|A synonym for `system_clock::period`, which is a ratio that represents the number of ticks between two integral values in the representation. For example, a period of 1/1 means one second between ticks; 1/2 means 0.5 seconds between ticks, and so on. |
+|`tai_clock::duration`|A synonym for `duration<rep, period>` which is a duration of time specified by user-defined units (such as integer, floating point, and so on) and a fraction that represents the time in seconds between each integral value stored in the duration.|
+|`tai_clock::period`|A synonym for `system_clock::period`, which is a ratio that represents the number of ticks between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 second between ticks, and so on. |
 |`tai_clock::rep`|A synonym for the type used to represent the number of clock ticks in this clock's `tai_clock::duration`. For example, it could be an integer, floating point, user-defined class, and so on. |
 |`tai_clock::time_point`|A synonym for `time_point<clock, duration>`, where `clock` is a synonym for either the clock type itself or another clock type that is based on the same epoch and has the same nested `duration` type.|
 
@@ -54,7 +54,7 @@ An atomic clock is almost too accurate in the sense that a day isn't exactly 24 
 
 |Name|Description|
 |----------|-----------------|
-|[tai_clock::is_steady constant](#is_steady_constant)|Specifies whether the clock type is steady.|
+|[tai_clock::is_steady constant](#is_steady_constant)|Indicates whether the clock type is steady.|
 
 ## Requirements
 
@@ -76,12 +76,12 @@ from_utc(const utc_time<Duration>& t) noexcept;
 
 ### Parameters
 
-*Time*\
+*`t`*\
 The `utc_time` to convert.
 
 ### Return value
 
-A `tai_time` that represents the equivalent `utc_time`, *`t`*. It is calculated by taking the time since the epoch of *`t`* and adding 378691210s. Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
+A `tai_time` that represents the equivalent `utc_time`, *`t`*. It's calculated by taking the time since the epoch of *`t`* and adding `378691210s`. Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
 
 ## <a name="to_utc"></a> to_utc
 
@@ -95,12 +95,12 @@ to_utc(const tai_time<Duration>& t) noexcept;
 
 ### Parameters
 
-*t*\
+*`t`*\
 The `tai_time` to convert.
 
 ### Return Value
 
-A `utc_time` that represents the equivalent `tai_time`, *`t`*. It is calculated as `utc_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 378691210s`.  Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
+A `utc_time` that represents the equivalent `tai_time`, *`t`*. It's calculated as `utc_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 378691210s`.  Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
 
 ## <a name="is_steady_constant"></a> is_steady
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: steady_clock struct"
 title: "steady_clock struct"
-ms.date: "06/14/2021"
+ms.date: 07/27/2021
 f1_keywords: ["chrono/std::chrono::steady_clock"]
 ---
 # steady_clock struct
@@ -28,8 +28,8 @@ The value that is returned by a first call to `now` is always less than or equal
 
 |Name|Description|
 |----------|-----------------|
-|`steady_clock::duration`|A synonym for `nanoseconds`, defined in \<chrono>.|
-|`steady_clock::period`|A synonym for `nano`, defined in \<ratio>.|
+|`steady_clock::duration`|A synonym for `nanoseconds`, defined in \<chrono>. It is the duration specified for this clock that represents the time in seconds (a billionth) between each integral value stored in the duration.|
+|`steady_clock::period`|A synonym for `nano`, defined in \<ratio> .|
 |`steady_clock::rep`|A synonym for **`long long`**, the type that is used to represent the number of clock ticks in the contained instantiation of `duration`.|
 |`steady_clock::time_point`|A synonym for `chrono::time_point<steady_clock>`.|
 

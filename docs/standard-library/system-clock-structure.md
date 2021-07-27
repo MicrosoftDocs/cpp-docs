@@ -6,7 +6,7 @@ f1_keywords: ["chrono/std::chrono::system_clock", "chrono/std::chrono::system_cl
 ---
 # system_clock structure
 
-A clock based on the real-time clock of the system.
+A clock based on the system's real-time clock.
 
 ## Syntax
 
@@ -16,7 +16,9 @@ struct system_clock;
 
 ## Remarks
 
-This clock represents the system-wide wall clock. 
+This clock represents the system-wide wall clock.
+
+The `system_clock` is neither *monotonic* nor *steady*.
 
 A clock is *monotonic* if the value that is returned by a first call to `now()` is always less than or equal to the value that is returned by a subsequent call to `now()`. The `system_clock` is not monotonic because the system time can be adjusted without notice.
 
@@ -28,7 +30,7 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 |Name|Description|
 |----------|-----------------|
-|`system_clock::duration`|A synonym for `duration<rep, period>` which is a duration of time specified by user-defined units (such as integer, floating point, and so on) and a fraction the represents the time in seconds between each integral value stored in the duration.|
+|`system_clock::duration`|A synonym for `duration<rep, period>` which is a duration of time specified by user-defined units (such as integer, floating point, and so on) and a fraction that represents the time in seconds between each integral value stored in the duration.|
 |`system_clock::period`|A synonym for `system_clock::period`, which is a ratio that represents the number of ticks between two integral values in the representation. For example, a period of 1/1 means one second between ticks; 1/2 means 0.5 seconds between ticks, and so on. |
 |`system_clock::rep`|A synonym for the type used to represent the number of clock ticks in this clock's `system_clock::duration`. For example, it could be an integer, floating point, user-defined class, and so on.|
 |`system_clock::time_point`|A synonym for `time_point<Clock, duration>`, where `Clock` is a synonym for either the clock type itself or another clock type that is based on the same epoch and has the same nested `duration` type.|
@@ -45,7 +47,7 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 |Name|Description|
 |----------|-----------------|
-|[system_clock::is_steady](#is_steady_constant)|Specifies whether the clock type is steady. It is `false`|
+|[system_clock::is_steady](#is_steady_constant)|Indicates whether the clock type is steady. It is `false`|
 
 ## Requirements
 
