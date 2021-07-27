@@ -180,14 +180,16 @@
           href: steady-clock-struct.md
         - name: system_clock struct
           href: system-clock-structure.md
+        - name: tai_clock class
+          href: tai-clock-class.md
         - name: time_point class
           href: time-point-class.md
         - name: time_zone class
           href: time-zone-class.md
         - name: treat_as_floating_point struct
           href: treat-as-floating-point-structure.md
-        - name: utc_clock struct
-          href: utc-clock-struct.md
+        - name: utc_clock class
+          href: utc-clock-class.md
         - name: weekday class
           href: weekday-class.md
         - name: weekday_indexed

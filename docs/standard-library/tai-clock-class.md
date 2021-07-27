@@ -1,0 +1,143 @@
+---
+description: "Learn more about: tai_clock class"
+title: "tai_clock class"
+ms.date: 07/26/2021
+f1_keywords: ["chrono/std::chrono::tai_clock", "chrono/std::chrono::tai_clock::from_stream", "chrono/std::chrono::tai_clock::now", "chrono/std::chrono::tai_clock::to_sys", "chrono/std::chrono::tai_clock::from_sys", "chrono/std::chrono::tai_clock::is_steady Constant"]
+---
+
+# tai_clock class
+
+This clock reports international atomic time since 00:00:00 on January 1, 1958. This clock doesn't account for leap seconds.
+
+## Syntax
+
+```cpp
+class tai_clock; // C++20
+```
+
+## Remarks
+
+This clock reports International Atomic Time (TAI, from the French *temps atomique international*). International Atomic Time uses a weighted average of many atomic clocks to track time. 
+
+It is different from UTC time because a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds. A discrepancy gradually occurs between the time kept by atomic clocks, and the time kept by tracking the rotation speed of the earth, because the earth's rotation speed is irregular and in general is slowing down over time by about one second every 1.5 years. TAI time doesn't keep track of this discrepancy, and as of this writing, it is now 37 seconds ahead of UTC time because of an addition of 10 seconds at the start of 1972 and the additional leap seconds that have been inserted since 1972.
+
+An atomic clock is almost too accurate in the sense that a day isn't exactly 24 hours because the earth's rotational speed is irregular. To keep UTC time in sync with the sun and the stars, a leap second is occasionally added, and theoretically could be subtracted if the earth's rotation speed increases.  
+
+`is_clock(tai_clock)` returns **true**.
+
+## Members
+
+|Name|Description|
+|----------|-----------------|
+|[from_utc](#from_utc)| Static. Converts a `utc_time` to a `tai_time`.|
+|[now](#now)| Static. Returns the current International Atomic Time. |
+|[to_utc](#to_utc)| Static. Converts `tai_time` to `utc_time`.|
+
+## Non-members
+
+| Name | Description |
+|--|--|
+| [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `tai_clock` from the given stream using the specified format. |
+| [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info) | Get information about whether the supplied time specifies a time when a leap second was inserted, and the sum of all the leap seconds between January 1, 1970 and the specified duration. |
+| [`operator<<`](chrono-operators.md#op_left_shift) | Output a `tai_clock` to the given stream. |
+
+## Public typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`tai_clock::duration`|A synonym for `duration<rep, period>` which is a duration of time specified by user-defined units (such as integer, floating point, and so on) and a fraction the represents the time in seconds between each integral value stored in the duration.|
+|`tai_clock::period`|A synonym for `system_clock::period`, which is a ratio that represents the number of ticks between two integral values in the representation. For example, a period of 1/1 means one second between ticks; 1/2 means 0.5 seconds between ticks, and so on. |
+|`tai_clock::rep`|A synonym for the type used to represent the number of clock ticks in this clock's `tai_clock::duration`. For example, it could be an integer, floating point, user-defined class, and so on. |
+|`tai_clock::time_point`|A synonym for `time_point<clock, duration>`, where `clock` is a synonym for either the clock type itself or another clock type that is based on the same epoch and has the same nested `duration` type.|
+
+## Public Constants
+
+|Name|Description|
+|----------|-----------------|
+|[tai_clock::is_steady constant](#is_steady_constant)|Specifies whether the clock type is steady.|
+
+## Requirements
+
+**Header:** `<chrono>` (since C++20)
+
+**Namespace:** `std::chrono`
+
+**Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
+
+## <a name="from_utc"></a> from_utc
+
+Static method that converts a `utc_time` to a `tai_time`.
+
+```cpp
+template <class Duration>
+static tai_time<common_type_t<Duration, seconds>>
+from_utc(const utc_time<Duration>& t) noexcept;
+```
+
+### Parameters
+
+*Time*\
+The `utc_time` to convert.
+
+### Return value
+
+A `tai_time` that represents the equivalent `utc_time`, *`t`*. It is calculated by taking the time since the epoch of *`t`* and adding 378691210s. Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
+
+## <a name="to_utc"></a> to_utc
+
+Static method that converts a `tai_time` to a `utc_time`.
+
+```cpp
+template<class Duration>
+static utc_time<common_type_t<Duration, seconds>>
+to_utc(const tai_time<Duration>& t) noexcept;
+```
+
+### Parameters
+
+*t*\
+The `tai_time` to convert.
+
+### Return Value
+
+A `utc_time` that represents the equivalent `tai_time`, *`t`*. It is calculated as `utc_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 378691210s`.  Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
+
+## <a name="is_steady_constant"></a> is_steady
+
+Static value that specifies whether the clock type is *steady*. In this implementation, `is_steady_constant` is always **`false`**.
+
+```cpp
+static const bool is_steady = false;
+```
+
+## <a name="now"></a> now
+
+Static method that returns the current UTC time, accounting for leap seconds.
+
+```cpp
+static time_point now() noexcept;
+```
+
+### Return Value
+
+A [time_point](../standard-library/time-point-class.md) object that represents the current time. The returned time point is effectively `from_sys(system_clock::now())`.
+
+
+## <a name="to_time_t"></a> to_time_t
+
+Static method that returns a [`time_t`](../c-runtime-library/standard-types.md) that most closely approximates the time that is represented by *Time*.
+
+```cpp
+static time_t to_time_t(const time_point& Time) noexcept;
+```
+
+### Parameters
+
+*Time*\
+A [time_point](../standard-library/time-point-class.md) object.
+
+## See also
+
+[`<chrono>`](../standard-library/chrono.md)\
+[`steady_clock` struct](../standard-library/steady-clock-struct.md)\
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

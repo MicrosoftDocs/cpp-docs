@@ -810,6 +810,7 @@ Output the following types to a stream:
 - [`month_day_last`](month-day-last-class.md)
 - [`month_weekday`](month-weekday-class.md)
 - [`month_weekday_last`](month-weekday-last-class.md)
+- [`tai_time`][tai-clock-class.md]
 - [`weekday`](weekday-class.md)
 - [`weekday_indexed`](weekdayindexed-class.md)
 - [`weekday_last`](weekdaylast-class.md)
@@ -900,6 +901,11 @@ operator<<(basic_ostream<CharT, Traits>& os, const year_month_weekday& ymwd); //
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
 operator<<(basic_ostream<CharT, Traits>& os, const year_month_weekday_last& ymwdl);
+
+// 17) tai_time
+template<class CharT, class Traits, class Duration>
+basic_ostream<CharT, Traits>&
+operator<<(basic_ostream<CharT, Traits>& os, const tai_time<Duration>& tt);
 ```
 
 ### Parameters
@@ -933,6 +939,9 @@ The `month_weekday` to output.
 
 *`mwdl`*\
 The `month_weekday_last` to output.
+
+*`tt`*\
+The `tai_time` to output.
 
 *`wd`*\
 The `weekday` to output.
@@ -998,6 +1007,8 @@ The output stream you passed in, `os`
 15\) The `year_month_weekday` is output in the form yyyy/month/weekday[index]. For example, `1996/Jan/Wed[1]`
 
 16\) The `year_month_weekday_last` is output in the form yyyy/month/weekday[last]. For example, `1996/Jan/Wed[last]`
+
+17\) The `tai_time` is output in the form yyyy-mm-dd hh:mm:ss. For example, `2021-07-26 00:00:37`
 
 ## <a name="op_modulo"></a> `operator modulo`
 

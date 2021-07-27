@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: utc_clock class"
 title: "utc_clock class"
-ms.date: 07/19/2021
+ms.date: 07/26/2021
 f1_keywords: ["chrono/std::chrono::utc_clock", "chrono/std::chrono::utc_clock::from_stream", "chrono/std::chrono::utc_clock::now", "chrono/std::chrono::utc_clock::to_sys", "chrono/std::chrono::utc_clock::from_sys", "chrono/std::chrono::utc_clock::is_steady Constant"]
 ---
 
 # utc_clock class
 
-A clock based on Coordinated Universal Time (UTC).
+A clock for Coordinated Universal Time (UTC), may sometimes be popularly referred to as Greenwich Mean Time (GMT) or Zulu time. Local time differs from UTC by the number of hours in your time zone.
 
 ## Syntax
 
@@ -17,7 +17,7 @@ class utc_clock; // C++20
 
 ## Remarks
 
-This clock measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds. It is the time standard used around the world.
+This clock measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds. It is the basis for civil time around the world.
 
 UTC time is based on International Atomic Time (TAI) which uses the output atomic clocks to track time. However, a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds. A discrepancy between time kept by atomic clocks, and time kept by tracking the rotation speed of the earth occurs because the earth's rotation speed is irregular, and in general is slowing down over time by about one second every 1.5 years. A leap second adjustment keeps UTC time within a second of the average length of a day.
 
@@ -25,7 +25,7 @@ An atomic clock is almost too accurate in the sense that a day isn't exactly 24 
 
 At the time of this writing, 27 leap seconds have been added since the practice began in 1972. The International Earth Rotation and Reference Systems Service (IERS) determines when a leap second will be added. This practice is referred to as "leap second insertion". When a leap second is inserted, the time nearing midnight proceeds from 23:59:59 (hours:minutes:seconds) to 23:59:60 (the inserted leap second), and then to 0:0:0 (midnight), thus 'inserting' a second to UTC time. In the past, leap seconds have been added either on June 30 or December 31.
 
-UTC time started out 10 seconds behind TAI (atomic time). Given the insertion of 27 leap seconds, UTC time is currently 37 seconds behind TAI (atomic clock) time.
+UTC time, by definition, started out 10 seconds behind TAI (atomic time). Given the insertion of 27 leap seconds since then, UTC time is currently 37 seconds behind TAI (atomic clock) time.
 
 `is_clock(utc_clock)` returns **true**.
 
@@ -35,7 +35,7 @@ UTC time started out 10 seconds behind TAI (atomic time). Given the insertion of
 |----------|-----------------|
 |[from_sys](#from_sys)| Static. Converts a `sys_time` to a `utc_time`.|
 |[now](#now)| Static. Returns the current time.|
-|[to_sys](#to_sys)| Static. Converts this `utc_time` to a `sys_time`.|
+|[to_sys](#to_sys)| Static. Converts a `utc_time` to a `sys_time`.|
 
 ## Non-members
 

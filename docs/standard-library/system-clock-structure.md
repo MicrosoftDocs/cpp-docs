@@ -1,8 +1,8 @@
 ---
 description: "Learn more about: system_clock Structure"
 title: "system_clock Structure"
-ms.date: 07/20/2021
-f1_keywords: ["chrono/std::chrono::system_clock", "chrono/std::chrono::system_clock::from_time_t", "chrono/std::chrono::system_clock::now", "chrono/std::chrono::system_clock::to_time_t", "chrono/std::chrono::system_clock::is_monotonic Constant", "chrono/std::chrono::system_clock::is_steady Constant"]
+ms.date: 07/26/2021
+f1_keywords: ["chrono/std::chrono::system_clock", "chrono/std::chrono::system_clock::from_time_t", "chrono/std::chrono::system_clock::now", "chrono/std::chrono::system_clock::to_time_t", "chrono/std::chrono::system_clock::is_steady Constant"]
 ---
 # system_clock structure
 
@@ -16,11 +16,11 @@ struct system_clock;
 
 ## Remarks
 
-A *clock type* is used to obtain the current time in Universal Time Coordinated (UTC). The type contains an instantiation of [duration](../standard-library/duration-class.md) and the class template [time_point](../standard-library/time-point-class.md), and defines a static member function `now()` that returns the time.
+This clock represents the system-wide wall clock. 
 
-A clock is *monotonic* if the value that is returned by a first call to `now()` is always less than or equal to the value that is returned by a subsequent call to `now()`.
+A clock is *monotonic* if the value that is returned by a first call to `now()` is always less than or equal to the value that is returned by a subsequent call to `now()`. The `system_clock` is not monotonic because the system time can be adjusted without notice.
 
-A clock is *steady* if it is *monotonic* and if the time between clock ticks is constant.
+A clock is *steady* if it is *monotonic* and if the time between clock ticks is constant. Because the `system_clock` is not monotonic, it isn't steady, though the time between clock ticks is constant.
 
 ## Members
 
@@ -28,9 +28,9 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 |Name|Description|
 |----------|-----------------|
-|`system_clock::duration`|A synonym for `duration<rep, period>`.|
-|`system_clock::period`|A synonym for the type that is used to represent the tick period in the contained instantiation of `duration`.|
-|`system_clock::rep`|A synonym for the type that is used to represent the number of clock ticks in the contained instantiation of `duration`.|
+|`system_clock::duration`|A synonym for `duration<rep, period>` which is a duration of time specified by user-defined units (such as integer, floating point, and so on) and a fraction the represents the time in seconds between each integral value stored in the duration.|
+|`system_clock::period`|A synonym for `system_clock::period`, which is a ratio that represents the number of ticks between two integral values in the representation. For example, a period of 1/1 means one second between ticks; 1/2 means 0.5 seconds between ticks, and so on. |
+|`system_clock::rep`|A synonym for the type used to represent the number of clock ticks in this clock's `system_clock::duration`. For example, it could be an integer, floating point, user-defined class, and so on.|
 |`system_clock::time_point`|A synonym for `time_point<Clock, duration>`, where `Clock` is a synonym for either the clock type itself or another clock type that is based on the same epoch and has the same nested `duration` type.|
 
 ### Public methods
@@ -45,8 +45,7 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 |Name|Description|
 |----------|-----------------|
-|[system_clock::is_monotonic](#is_monotonic_constant)|Specifies whether the clock type is monotonic.|
-|[system_clock::is_steady](#is_steady_constant)|Specifies whether the clock type is steady.|
+|[system_clock::is_steady](#is_steady_constant)|Specifies whether the clock type is steady. It is `false`|
 
 ## Requirements
 
@@ -67,21 +66,6 @@ static time_point from_time_t(time_t Tm) noexcept;
 *Tm*\
 A [time_t](../c-runtime-library/standard-types.md) object.
 
-## <a name="is_monotonic_constant"></a> system_clock::is_monotonic Constant
-
-Static value that specifies whether the clock type is monotonic.
-
-```cpp
-static const bool is_monotonic = false;
-```
-
-### Return Value
-
-In this implementation, `system_clock::is_monotonic` always returns **`false`**.
-
-### Remarks
-
-A clock is *monotonic* if the value that is returned by a first call to `now()` is always less than or equal to the value that is returned by a subsequent call to `now()`.
 
 ## <a name="is_steady_constant"></a>is_steady
 
@@ -97,11 +81,11 @@ In this implementation, `system_clock::is_steady` always returns **`false`**.
 
 ### Remarks
 
-A clock is *steady* if it is [monotonic](#is_monotonic_constant) and if the time between clock ticks is constant.
+A clock is *steady* if it is and if the time between clock ticks is constant. The `system_clock` is not  monotonic because the value that is returned by a first call to `now()` is not always less than or equal to the value that is returned by a subsequent call to `now()` because the system time can be adjusted without notice.
 
 ## <a name="now"></a> now
 
-Static method that returns the current time.
+Static method that returns the system's current wall clock time.
 
 ```cpp
 static time_point now() noexcept;

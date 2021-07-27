@@ -21,7 +21,7 @@ struct leap_second_info; // C++20
 
 | Name | Description |
 |--|--|
-| `is_leap_second` | The `is_leap_second` member is **`true`** only if the specified time point is during a positive leap second insertion. |
+| `is_leap_second` | The `is_leap_second` member is **`true`** only if the specified time point occurs during the insertion of a positive leap second. |
 | `elapsed` | The `elapsed` member holds the sum of all the leap seconds between the epoch date `1970-01-01`and the specified time. If `is_leap_second` is **`true`**, the leap second referred to by the specified time is included in the `elapsed` sum. |
 
 ## Requirements

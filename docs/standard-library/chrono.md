@@ -19,6 +19,8 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 ## Classes
 
+**Calenderical types**
+
 | Name | Description |
 |--|--|
 | [`day` class](day-class.md) | A day of the month. For example, the 25th day of the month. |
@@ -42,6 +44,11 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 | [`year_month_weekday` class](year-month-weekday-class.md) | A specific year, month, and nth weekday of the month. |
 | [`year_month_weekday_last` class](year-month-weekday-last-class.md) |  A specific year, month, and last weekday of the month. |
 
+**Clocks**
+
+|[`tai_clock` class](tai-clock-class.md)| Measures International Atomic Time (TAI) starting from January 1, 1958 at 00:00:00. Doesn't account for leap seconds.|
+|[`utc_clock` class](utc-clock-class.md)| Measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds and is the time standard used around the world.|
+
 ## Structs
 
 |Name|Description|
@@ -55,7 +62,6 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 |[`high_resolution_clock` struct](high-resolution-clock-struct.md)| A clock with a nanosecond tick period. |
 |[`steady_clock` struct](steady-clock-struct.md)|A `steady` clock. Preferred for measuring time intervals. |
 |[`system_clock` struct](system-clock-structure.md)|A *`clock type`* that is based on the real-time clock of the system.|
-|[`utc_clock` struct](utc-clock-struct.md)| Measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds and is the time standard used around the world.|
 
 ## Functions
 
