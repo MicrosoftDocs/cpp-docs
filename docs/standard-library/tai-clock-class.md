@@ -45,7 +45,7 @@ An atomic clock is almost too accurate in the sense that a day isn't exactly 24 
 
 |Name|Description|
 |----------|-----------------|
-|`tai_clock::duration`|A synonym for `duration<rep, period>` which represents a duration of time in user-defined units, and a fraction that represents the time in seconds between each integral value stored in the duration.|
+|`tai_clock::duration`|A synonym for `duration<rep, period>`, which represents a duration of time in user-defined units, and a fraction that represents the time in seconds between each integral value stored in the duration.|
 |`tai_clock::period`|A synonym for `system_clock::period`, which is a fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 seconds between ticks, and so on. |
 |`tai_clock::rep`|A synonym for the type used to represent the integral units in this clock's `tai_clock::duration`. |
 |`tai_clock::time_point`|A synonym for `chrono::time_point<tai_clock>`|

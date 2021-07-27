@@ -19,9 +19,9 @@ class utc_clock; // C++20
 
 This clock measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds. It's the basis for civil time around the world.
 
-UTC time is based on International Atomic Time (TAI) which uses atomic clocks to track time. However, a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 second.
+UTC time is based on International Atomic Time (TAI) which uses atomic clocks to track time. However, a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds.
 
-There is a discrepancy between the time kept by atomic clocks, and the time kept by tracking the rotation of the earth because the earth's rotation speed is irregular, and in general is slowing down over time by about one second every 1.5 years. A leap second adjustment keeps UTC tracking time within a second of the average length of a day.
+There's a discrepancy between the time kept by atomic clocks, and the time kept by tracking the rotation of the earth because the earth's rotation speed is irregular, and in general is slowing down over time by about one second every 1.5 years. A leap second adjustment keeps UTC tracking time within a second of the average length of a day.
 
 An atomic clock is almost too accurate in the sense that a day isn't exactly 24 hours, in part because of changes in the earth's rotational speed. To keep UTC time in sync with the sun and the stars, a leap second is occasionally added, and theoretically could be subtracted if the earth's rotation speed increases (which it has done).  
 
@@ -49,8 +49,8 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). Given t
 
 |Name|Description|
 |----------|-----------------|
-|`utc_clock::duration`|A synonym for `duration<rep, period>` which represents a duration of time in user-defined units, and a fraction that represents the time in seconds between each integral value stored in the duration.|
-|`utc_clock::period`|A synonym for `system_clock::period`, which is a fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 seconds between ticks, and so on. |
+|`utc_clock::duration`|A synonym for `duration<rep, period>`, which represents a duration of time in user-defined units, and a fraction that represents the time in seconds between each integral value stored in the duration.|
+|`utc_clock::period`|A synonym for `system_clock::period`, which is a fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 second between ticks, and so on. |
 |`utc_clock::rep`|A synonym for the type used to represent the integral units in this clock's `utc_clock::duration`.|
 |`utc_clock::time_point`|A synonym for `time_point<clock, duration>`, where `clock` is a synonym for either the clock type itself or another clock type that is based on the same epoch and has the same `duration` type.|
 
@@ -85,7 +85,7 @@ The `sys_time` to convert.
 
 ### Return value
 
-A `utc_time` set to the time that most closely approximates the `sys_time` *`t`*. If a direct mapping doesn't exist, the time_point during a leap second insertion and the last representable value of `sys_time` prior to the insertion of the leap second is returned.
+A `utc_time` set to the time that most closely approximates the `sys_time` *`t`*. If a direct mapping doesn't exist, the time_point during a leap second insertion and the last representable value of `sys_time` before the insertion of the leap second is returned.
 
 ## <a name="to_sys"></a> to_sys
 
