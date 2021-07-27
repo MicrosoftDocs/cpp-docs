@@ -28,9 +28,9 @@ The value that is returned by a first call to `now` is always less than or equal
 
 |Name|Description|
 |----------|-----------------|
-|`steady_clock::duration`|A synonym for `nanoseconds`, defined in \<chrono>. It is the duration specified for this clock that represents the time in seconds (a billionth) between each integral value stored in the duration.|
-|`steady_clock::period`|A synonym for `nano`, defined in \<ratio> .|
-|`steady_clock::rep`|A synonym for **`long long`**, the type that is used to represent the number of clock ticks in the contained instantiation of `duration`.|
+|`steady_clock::duration`|A synonym for `nanoseconds`, defined in \<chrono>. The duration specified for this clock. It represents the time in seconds (a billionth) between each integral value stored in the duration.|
+|`steady_clock::period`|A synonym for `nano`, defined in \<ratio> . It represents the time in seconds between two integral values in the duration.|
+|`steady_clock::rep`|A synonym for **`long long`**, which is the type that is used to represent the number of clock ticks in the `steady_clock::duration`|
 |`steady_clock::time_point`|A synonym for `chrono::time_point<steady_clock>`.|
 
 ## Public functions

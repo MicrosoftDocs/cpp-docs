@@ -49,9 +49,9 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). Given t
 
 |Name|Description|
 |----------|-----------------|
-|`utc_clock::duration`|A synonym for `duration<rep, period>` which is a duration of time specified by user-defined units (such as integer, floating point, and so on) and a fraction that represents the time in seconds between each integral value stored in the duration.|
-|`utc_clock::period`|A synonym for `system_clock::period`, which is a ratio that represents the number of ticks between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 seconds between ticks, and so on. |
-|`utc_clock::rep`|A synonym for the type used to represent the number of clock ticks in this clock's `utc_clock::duration`. It can be an integer, floating point, user-defined class, and so on. |
+|`utc_clock::duration`|A synonym for `duration<rep, period>` which represents a duration of time in user-defined units, and a fraction that represents the time in seconds between each integral value stored in the duration.|
+|`utc_clock::period`|A synonym for `system_clock::period`, which is a fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 seconds between ticks, and so on. |
+|`utc_clock::rep`|A synonym for the type used to represent the integral units in this clock's `utc_clock::duration`.|
 |`utc_clock::time_point`|A synonym for `time_point<clock, duration>`, where `clock` is a synonym for either the clock type itself or another clock type that is based on the same epoch and has the same `duration` type.|
 
 ## Public Constants

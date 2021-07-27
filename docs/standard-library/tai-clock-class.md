@@ -45,12 +45,12 @@ An atomic clock is almost too accurate in the sense that a day isn't exactly 24 
 
 |Name|Description|
 |----------|-----------------|
-|`tai_clock::duration`|A synonym for `duration<rep, period>` which is a duration of time specified by user-defined units (such as integer, floating point, and so on) and a fraction that represents the time in seconds between each integral value stored in the duration.|
-|`tai_clock::period`|A synonym for `system_clock::period`, which is a ratio that represents the number of ticks between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 second between ticks, and so on. |
-|`tai_clock::rep`|A synonym for the type used to represent the number of clock ticks in this clock's `tai_clock::duration`. For example, it could be an integer, floating point, user-defined class, and so on. |
-|`tai_clock::time_point`|A synonym for `time_point<clock, duration>`, where `clock` is a synonym for either the clock type itself or another clock type that is based on the same epoch and has the same nested `duration` type.|
+|`tai_clock::duration`|A synonym for `duration<rep, period>` which represents a duration of time in user-defined units, and a fraction that represents the time in seconds between each integral value stored in the duration.|
+|`tai_clock::period`|A synonym for `system_clock::period`, which is a fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 seconds between ticks, and so on. |
+|`tai_clock::rep`|A synonym for the type used to represent the integral units in this clock's `tai_clock::duration`. |
+|`tai_clock::time_point`|A synonym for `chrono::time_point<tai_clock>`|
 
-## Public Constants
+## Public constants
 
 |Name|Description|
 |----------|-----------------|
@@ -81,7 +81,7 @@ The `utc_time` to convert.
 
 ### Return value
 
-A `tai_time` that represents the equivalent `utc_time`, *`t`*. It's calculated by taking the time since the epoch of *`t`* and adding `378691210s`. Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
+A `tai_time` that represents the equivalent `utc_time` as *`t`*. It's calculated by taking the time since the epoch of the UTC clock and adding `378691210s`. Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
 
 ## <a name="to_utc"></a> to_utc
 
@@ -100,11 +100,11 @@ The `tai_time` to convert.
 
 ### Return Value
 
-A `utc_time` that represents the equivalent `tai_time`, *`t`*. It's calculated as `utc_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 378691210s`.  Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
+A `utc_time` that represents the equivalent `tai_time` as *`t`*. It's calculated as `utc_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 378691210s`.  Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
 
 ## <a name="is_steady_constant"></a> is_steady
 
-Static value that specifies whether the clock type is *steady*. In this implementation, `is_steady_constant` is always **`false`**.
+Static value that specifies whether the clock type is *steady*. In the Microsoft implementation, `is_steady_constant` is **`false`**.
 
 ```cpp
 static const bool is_steady = false;
