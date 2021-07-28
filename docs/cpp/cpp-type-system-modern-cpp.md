@@ -52,7 +52,7 @@ The fundamental types are recognized by the compiler, which has built-in rules t
 
 The following illustration shows the relative sizes of the built-in types in the Microsoft C++ implementation:
 
-![Size in bytes of built&#45;in types](../cpp/media/built-intypesizes.png "Size in bytes of built&#45;in types")
+![Diagram of the relative size in bytes of several built in types.](../cpp/media/built-intypesizes.png "Size in bytes of built&#45;in types")
 
 The following table lists the most frequently used fundamental types, and their sizes in the Microsoft C++ implementation:
 

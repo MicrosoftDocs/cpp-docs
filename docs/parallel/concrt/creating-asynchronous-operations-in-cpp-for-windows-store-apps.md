@@ -117,7 +117,7 @@ The `getPrimesCancellation` and `cancelGetPrimes` methods work together to enabl
 
 The following illustration shows the `Primes` app after each option has been chosen.
 
-![Windows Runtime Primes app](../../parallel/concrt/media/concrt_windows_primes.png "Windows Runtime Primes app")
+![Windows Runtime Primes app.](../../parallel/concrt/media/concrt_windows_primes.png "Windows Runtime Primes app")
 
 For an example that uses `create_async` to create asynchronous tasks that can be consumed by other languages, see [Using C++ in the Bing Maps Trip Optimizer sample](/previous-versions/windows/apps/hh699891(v=vs.140)).
 
@@ -179,7 +179,7 @@ Modify the `MainPage` constructor to create a chain of continuation tasks that d
 
 The following illustration shows the results of the `CommonWords` app.
 
-![Windows Runtime CommonWords app](../../parallel/concrt/media/concrt_windows_common_words.png "Windows Runtime CommonWords app")
+![Windows Runtime CommonWords app.](../../parallel/concrt/media/concrt_windows_common_words.png "Windows Runtime CommonWords app")
 
 In this example, it's possible to support cancellation because the `task` objects that support `create_async` use an implicit cancellation token. Define your work function to take a `cancellation_token` object if your tasks need to respond to cancellation in a cooperative manner. For more info about cancellation in the PPL, see [Cancellation in the PPL](cancellation-in-the-ppl.md)
 

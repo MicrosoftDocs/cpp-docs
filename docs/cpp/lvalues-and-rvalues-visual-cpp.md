@@ -19,7 +19,7 @@ The C++17 standard defines expression value categories as follows:
 
 The following diagram illustrates the relationships between the categories:
 
-![C++ expression value categories](media/value_categories.png "C++ expression value categories")
+![C++ expression value categories.](media/value_categories.png "C++ expression value categories")
 
 An lvalue has an address that your program can access. Examples of lvalue expressions include variable names, including **`const`** variables, array elements, function calls that return an lvalue reference, bit-fields, unions, and class members.
 

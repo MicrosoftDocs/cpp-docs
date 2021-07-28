@@ -47,7 +47,7 @@ These assumptions are made in the exception handling description:
 
 ## ARM64 stack frame layout
 
-![stack frame layout](media/arm64-exception-handling-stack-frame.png "stack frame layout")
+![Diagram that shows the stack frame layout for functions.](media/arm64-exception-handling-stack-frame.png "stack frame layout")
 
 For frame chained functions, the fp and lr pair can be saved at any position in the local variable area, depending on optimization considerations. The goal is to maximize the number of locals that can be reached by a single instruction based on the frame pointer (x29) or stack pointer (sp). However, for `alloca` functions, it must be chained, and x29 must point to the bottom of stack. To allow for better register-pair-addressing-mode coverage, nonvolatile register save areas are positioned at the top of the Local area stack. Here are examples that illustrate several of the most efficient prolog sequences. For the sake of clarity and better cache locality, the order of storing callee-saved registers in all canonical prologs is in "growing up" order. `#framesz` below represents the size of entire stack (excluding alloca area). `#localsz` and `#outsz` denote local area size (including the save area for the \<x29, lr> pair) and outgoing parameter size, respectively.
 
@@ -182,7 +182,7 @@ The .pdata records are an ordered array of fixed-length items that describe ever
 
 Each .pdata record for ARM64 is 8 bytes in length. The general format of each record places the 32-bit RVA of the function start in the first word, followed by a second word that contains either a pointer to a variable-length .xdata block, or a packed word describing a canonical function unwinding sequence.
 
-![.pdata record layout](media/arm64-exception-handling-pdata-record.png ".pdata record layout")
+![.pdata record layout.](media/arm64-exception-handling-pdata-record.png ".pdata record layout")
 
 The fields are as follows:
 
@@ -198,7 +198,7 @@ The fields are as follows:
 
 When the packed unwind format is insufficient to describe the unwinding of a function, a variable-length .xdata record must be created. The address of this record is stored in the second word of the .pdata record. The format of the .xdata is a packed variable-length set of words:
 
-![.xdata record layout](media/arm64-exception-handling-xdata-record.png ".xdata record layout")
+![.xdata record layout.](media/arm64-exception-handling-xdata-record.png ".xdata record layout")
 
 This data is broken into four sections:
 
@@ -330,7 +330,7 @@ For functions whose prologs and epilogs follow the canonical form described belo
 
 The format of a .pdata record with packed unwind data looks like this:
 
-![.pdata record with packed unwind data](media/arm64-exception-handling-packed-unwind-data.png ".pdata record with packed unwind data")
+![.pdata record with packed unwind data.](media/arm64-exception-handling-packed-unwind-data.png ".pdata record with packed unwind data")
 
 The fields are as follows:
 

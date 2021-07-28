@@ -12,7 +12,7 @@ The **Toolbar Editor** enables you to create toolbar resources and convert bitma
 
 The **Toolbar Editor** window shows two views of a button image, the same as the **Image Editor** window. A split bar separates the two panes. To change the relative sizes of the panes, you can drag the split bar from side to side. The active pane displays a selection border and above the two views of the image is the subject toolbar.
 
-![Toolbar Editor](../mfc/media/vctoolbareditor.gif "vcToolbarEditor")<br/>
+![Screenshot of the Toolbar Editor with controls called out.](../mfc/media/vctoolbareditor.gif "vcToolbarEditor")<br/>
 **Toolbar Editor**
 
 The **Toolbar Editor** is similar to the **Image Editor** in functionality. The menu items, graphic tools, and bitmap grid between the two are the same. There's a menu command in the **Image** menu to switch between the **Toolbar Editor** and the **Image Editor**. For more information on using the **Graphics** toolbar, **Colors** palette, or **Image** menu, see [Image Editor](../windows/image-editor-for-icons.md).

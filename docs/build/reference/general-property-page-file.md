@@ -25,7 +25,7 @@ When you right-click on a file node **Solution Explorer**, the **General** prope
 
    The following illustration shows the property page for a *.cpp* file. The default **Item Type** for this kind of file is the **C/C++ Compiler** (*cl.exe*) and the property page exposes various compiler settings that can be applied to this file only.
 
-   ![General property page for a project item](media/file-general-item-type.png "Item type choices")
+   ![Screenshot of the Property Pages dialog showing the General property page for a project item.](media/file-general-item-type.png "Item type choices")
 
     The following table lists the default Item Types:
 
