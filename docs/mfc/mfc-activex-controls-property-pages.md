@@ -20,7 +20,7 @@ ActiveX control property pages are displayed in two ways:
 
 The properties dialog box (illustrated in the following figure) consists of an area for displaying the current property page, tabs for switching between property pages, and a collection of buttons that perform common tasks such as closing the property page dialog, canceling any changes made, or immediately applying any changes to the ActiveX control.
 
-![Properties dialog box for Circ3](../mfc/media/vc373i1.gif "Properties dialog box for Circ3") <br/>
+![Properties dialog box for Circ3.](../mfc/media/vc373i1.gif "Properties dialog box for Circ3") <br/>
 Properties Dialog Box
 
 This article covers topics related to using property pages in an ActiveX control. These include:

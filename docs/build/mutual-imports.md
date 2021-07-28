@@ -25,7 +25,7 @@ The general solution for handling mutual imports is:
 
 The following illustration shows a solution for two mutually importing DLLs, DLL1 and DLL2. Step 1 is to run LIB, with the /DEF option set, on DLL1. Step 1 produces DLL1.lib, an import library, and DLL1.exp. In step 2, the import library is used to build DLL2, which in turn produces an import library for DLL2's symbols. Step 3 builds DLL1, by using DLL1.exp and DLL2.lib as input. Note that an .exp file for DLL2 is not necessary because LIB was not used to build DLL2's import library.
 
-![Using mutual imports to link two DLLs](media/vc37yj1.gif "Using mutual imports to link two DLLs")<br/>
+![Diagram that shows the inputs and outputs when you use mutual imports to link two DLLs.](media/vc37yj1.gif "Using mutual imports to link two DLLs")<br/>
 Linking Two DLLs with Mutual Imports
 
 ## Limitations of _AFXEXT

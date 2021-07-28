@@ -115,7 +115,7 @@ Optional parts of a function declaration are:
 
 The following figure shows the parts of a function definition. The shaded area is the function body.
 
-![Parts of a function definition](../cpp/media/vc38ru1.gif "Parts of a function definition") <br/>
+![Diagram of the parts of a function definition.](../cpp/media/vc38ru1.gif "Parts of a function definition") <br/>
 Parts of a function definition
 
 ## Function definitions

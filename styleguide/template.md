@@ -310,22 +310,22 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 ### Static Image or Animated gif
 
-![this is the alt text](../images/Logo_DotNet.png)
+![this is the alt text.](../images/Logo_DotNet.png)
 
 ### Linked Image
 
-[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net)
+[![alt text for linked image.](../images/Logo_DotNet.png)](https://dot.net)
 
 ## Videos
 
 ### Channel 9
 
-[![Larry Osterman - His one interaction with Bill Gates (over DOS networking stack)](https://sec.ch9.ms/ch9/caf5/f8657a22-5b83-47a3-9748-4c1be9fecaf5/Larry-Osterman-His-one-interaction-with-Bill-Gate_960.jpg)
+[![Larry Osterman - His one interaction with Bill Gates (over DOS networking stack).](https://sec.ch9.ms/ch9/caf5/f8657a22-5b83-47a3-9748-4c1be9fecaf5/Larry-Osterman-His-one-interaction-with-Bill-Gate_960.jpg)
 ](https://channel9.msdn.com/Blogs/TheChannel9Team/Larry-Osterman-His-one-interaction-with-Bill-Gates-over-DOS-networking-stack)
 
 ### YouTube
 
-[![On .NET 2/4/2016 - Scott Hunter](https://img.youtube.com/vi/g2a4W6Q7aRw/0.jpg)
+[![On .NET 2/4/2016 - Scott Hunter.](https://img.youtube.com/vi/g2a4W6Q7aRw/0.jpg)
 ](https://www.youtube.com/watch?v=g2a4W6Q7aRw)
 
 ## docs.microsoft extensions
@@ -357,7 +357,7 @@ It's important to use the following alert styles so they render with the proper 
 > This is IMPORTANT
 
 And they'll render like this:
-![Alert styles](../images/alerts.png)
+![Alert styles.](../images/alerts.png)
 
 ### Buttons
 

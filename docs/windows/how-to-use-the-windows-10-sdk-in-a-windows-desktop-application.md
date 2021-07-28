@@ -25,7 +25,7 @@ To retarget your projects to use the Windows 10 SDK when you upgrade from a proj
 
 1. Open the shortcut menu for the project node, and choose **Retarget projects**. (In earlier versions of Visual Studio, choose **Retarget SDK Version**.) The **Review Solution Actions** dialog appears.
 
-   ![Review Solution Actions](../windows/media/retargetingwindowssdk2.PNG "RetargetingWindowsSDK2")
+   ![Review Solution Actions.](../windows/media/retargetingwindowssdk2.PNG "RetargetingWindowsSDK2")
 
 1. In the **Target Platform Version** dropdown list, choose the version of the Windows 10 SDK you want to target. Generally speaking, we recommend you choose the latest installed version. Choose the **OK** button to apply the change.
 
@@ -37,15 +37,15 @@ To retarget your projects to use the Windows 10 SDK when you upgrade from a proj
 
 1. Open the project properties dialog. In the **Configuration Properties** > **General** section, notice the values of **Windows Target Platform Version**. Changing the value here has the same effect as following this procedure. For more information, see [General Property Page (Project)](../build/reference/general-property-page-project.md).
 
-   ![Target Platform Version](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")
+   ![Target Platform property in the Property Pages dialog.](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")
 
    This action changes the values of project macros that include paths to header files and library files. To see what changed, open the **Visual C++ Directories** section of the **Project Properties** dialog. Select one of the properties, such as **Include Directories**. Then, open the property value's dropdown list, and choose **\<Edit>**. The **Include Directories** dialog appears.
 
-   ![Include Directories dialog box](../windows/media/retargetingwindowssdk4.PNG "RetargetingWindowsSDK4")
+   ![Include Directories dialog box.](../windows/media/retargetingwindowssdk4.PNG "RetargetingWindowsSDK4")
 
    Choose the **Macros >>** button, and scroll down the list of macros to the Windows SDK macros to see all the new values.
 
-   ![Windows SDK Macros](../windows/media/retargetingwindowssdk5.PNG "RetargetingWindowsSDK5")
+   ![List of Windows SDK Macros.](../windows/media/retargetingwindowssdk5.PNG "RetargetingWindowsSDK5")
 
 1. Repeat the retargeting procedure for other solution projects, as needed, and rebuild the solution.
 

@@ -16,11 +16,11 @@ Native CMake support is available in Visual Studio 2017 and later. To see the do
 
 All executable CMake targets are shown in the **Startup Item** dropdown in the toolbar. Select one to start a debugging session and launch the debugger.
 
-![CMake startup item dropdown](media/cmake-startup-item-dropdown.png "CMake startup item dropdown")
+![Screenshot of the CMake startup item dropdown.](media/cmake-startup-item-dropdown.png "CMake startup item dropdown")
 
 You can also start a debug session from Solution Explorer. First, switch to **CMake Targets View** in the **Solution Explorer** window.
 
-![CMake targets view button](media/cmake-targets-view.png  "CMake Targets View menu item")
+![Screenshot of the CMake targets view command.](media/cmake-targets-view.png  "CMake Targets View menu item")
 
 Then, right-click on an executable and select **Debug**. This command automatically starts debugging the selected target based on your active configuration.
 
@@ -30,15 +30,15 @@ You can customize the debugger settings for any executable CMake target in your 
 
 - **Debug Menu:** Select **Debug > Debug and Launch Settings for ${activeDebugTarget}** from the main menu to customize the debug configuration specific to your active debug target. If you don't have a debug target selected, this option is grayed out.
 
-![Debug menu entry point](media/cmake-debug-menu.png "Debug menu entry point")
+![Screenshot of the Debug menu command Debug and launch settings for the project.](media/cmake-debug-menu.png "Debug menu entry point")
 
 - **Targets View:** Navigate to **Targets View** in Solution Explorer. Then, right-click on a debug target and select **Add Debug Configuration** to customize the debug configuration specific to the selected target.
 
-![Targets view entry point](media/cmake-targets-add-debug-configuration.png "Targets view entry point")
+![Screenshot of the Add Debug Configuration command on the shortcut menu for the target.](media/cmake-targets-add-debug-configuration.png "Targets view entry point")
 
 - **Root CMakeLists.txt:** Right-click on a root *CMakeLists.txt* and select **Add Debug Configuration** to open the **Select a Debugger** dialog box. The dialog allows you to add *any* type of debug configuration, but you must manually specify the CMake target to invoke via the `projectTarget` property.
 
-![Select a debugger dialog box](media/cmake-select-a-debugger.png "Select a debugger dialog box")
+![Screenshot of the Select a debugger dialog box.](media/cmake-select-a-debugger.png "Select a debugger dialog box")
 
 You can edit the *launch.vs.json* file to create debug configurations for any number of CMake targets. When you save the file, Visual Studio creates an entry for each new configuration in the **Startup Item** dropdown.
 

@@ -272,7 +272,7 @@ The sequence in which conversions are attempted is as follows:
 
    - Conversion from a pointer to a derived class, to a pointer to a base class produces a better match the closer the base class is to a direct base class. Suppose the class hierarchy is as shown in the following figure.
 
-![Graph of preferred conversions](../cpp/media/vc391t1.gif "Graph of preferred conversions") <br/>
+![Graph of preferred conversions.](../cpp/media/vc391t1.gif "Graph of preferred conversions") <br/>
 Graph showing preferred conversions
 
 Conversion from type `D*` to type `C*` is preferable to conversion from type `D*` to type `B*`. Similarly, conversion from type `D*` to type `B*` is preferable to conversion from type `D*` to type `A*`.
@@ -283,7 +283,7 @@ This same rule applies to pointer-to-member conversions. Conversion from type `T
 
 The preceding rule applies only along a given path of derivation. Consider the graph shown in the following figure.
 
-![Multiple&#45;inheritance that shows preferred conversions](../cpp/media/vc391t2.gif "Multiple&#45;inheritance that shows preferred conversions") <br/>
+![Diagram of multiple inheritance that shows preferred conversions.](../cpp/media/vc391t2.gif "Multiple&#45;inheritance that shows preferred conversions") <br/>
 Multiple-inheritance graph that shows preferred conversions
 
 Conversion from type `C*` to type `B*` is preferable to conversion from type `C*` to type `A*`. The reason is that they are on the same path, and `B*` is closer. However, conversion from type `C*` to type `D*` isn't preferable to conversion to type `A*`; there's no preference because the conversions follow different paths.

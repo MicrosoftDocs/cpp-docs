@@ -40,7 +40,7 @@ For links to more information about DLLs, see [Create C/C++ DLLs in Visual Studi
 
 - A copy of Visual Studio. For information on how to download and install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). When you run the installer, make sure that the **Desktop development with C++** workload is checked. Don't worry if you didn't install this workload when you installed Visual Studio. You can run the installer again and install it now.
 
-   ![Desktop development with C++](media/desktop-development-with-cpp.png "Desktop development with C++")
+   ![Visual Studio Installer, Desktop development with C++ workload.](media/desktop-development-with-cpp.png "Desktop development with C++")
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ In this set of tasks, you create a project for your DLL, add code, and build it.
 
 1. On the menu bar, choose **File** > **New** > **Project** to open the **Create a New Project** dialog box.
 
-   ![Create a new DLL project](media/create-new-dll-project-2019.png "Create the MathLibrary project")
+   ![Screenshot of the Create a new project dialog with the Dynamic Link Library template highlighted.](media/create-new-dll-project-2019.png "Create the MathLibrary project")
 
 1. At the top of the dialog, set  **Language** to **C++**, set **Platform** to **Windows**, and set **Project type** to **Library**.
 
@@ -83,7 +83,7 @@ In this set of tasks, you create a project for your DLL, add code, and build it.
 
 When the solution is created, you can see the generated project and source files in the **Solution Explorer** window in Visual Studio.
 
-![Screenshot of the Visual Studio 2019 Solution Explorer window with the Math Library highlighted.](media/mathlibrary-solution-explorer-162.png "Generated solution in Visual Studio")
+![Screenshot of the Solution Explorer window with the Math Library project highlighted.](media/mathlibrary-solution-explorer-162.png "Generated solution in Visual Studio")
 
 ::: moniker-end
 
@@ -95,13 +95,13 @@ When the solution is created, you can see the generated project and source files
 
 1. In the left pane of the **New Project** dialog box, select **Installed** > **Visual C++** > **Windows Desktop**. In the center pane, select **Dynamic-Link Library (DLL)**. Enter *MathLibrary* in the **Name** box to specify a name for the project. Leave the default **Location** and **Solution name** values. Set **Solution** to **Create new solution**. Check **Create directory for solution** if it's unchecked.
 
-   ![Screenshot of the Visual Studio 2017 New Project dialog box showing Math Library in the Name text box.](media/mathlibrary-new-project-name-159.png "Name the MathLibrary project")
+   ![Screenshot of the New Project dialog box showing Math Library in the Name text box.](media/mathlibrary-new-project-name-159.png "Name the MathLibrary project")
 
 1. Choose the **OK** button to create the project.
 
 When the solution is created, you can see the generated project and source files in the **Solution Explorer** window in Visual Studio.
 
-![Screenshot of the Visual Studio 2017 Solution Explorer window with the Math Library highlighted.](media/mathlibrary-solution-explorer-159.png "Generated solution in Visual Studio")
+![Screenshot of the Solution Explorer window with the Math Library highlighted.](media/mathlibrary-solution-explorer-159.png "Generated solution in Visual Studio")
 
 ::: moniker-end
 
@@ -113,21 +113,21 @@ When the solution is created, you can see the generated project and source files
 
 1. In the left pane of the **New Project** dialog box, expand **Installed** > **Templates**, and select **Visual C++**, and then in the center pane, select **Win32 Console Application**. Enter *MathLibrary* in the **Name** edit box to specify a name for the project. Leave the default **Location** and **Solution name** values. Set **Solution** to **Create new solution**. Check **Create directory for solution** if it's unchecked.
 
-   ![Screenshot of the Visual Studio 2015 New Project dialog box showing Math Library in the Name text box.](media/mathlibrary-project-name.png "Name the MathLibrary project")
+   ![Screenshot of the New Project dialog box showing Math Library in the Name text box.](media/mathlibrary-project-name.png "Name the MathLibrary project")
 
 1. Choose the **OK** button to dismiss the **New Project** dialog and start the **Win32 Application Wizard**.
 
-   ![Win32 Application Wizard Overview](media/mathlibrary-project-wizard-1.png "Win32 Application Wizard Overview")
+   ![Screenshot of the Win32 Application Wizard Overview page.](media/mathlibrary-project-wizard-1.png "Win32 Application Wizard Overview")
 
 1. Choose the **Next** button. On the **Application Settings** page, under **Application type**, select **DLL**.
 
-   ![Create DLL in Win32 Application Wizard](media/mathlibrary-project-wizard-2.png "Create DLL in Win32 Application Wizard")
+   ![Screenshot of the Win32 Application Wizard Application Settings Page.](media/mathlibrary-project-wizard-2.png "Create DLL in Win32 Application Wizard")
 
 1. Choose the **Finish** button to create the project.
 
 When the wizard completes the solution, you can see the generated project and source files in the **Solution Explorer** window in Visual Studio.
 
-![Screenshot of the Visual Studio 2015 Solution Explorer window with the Math Library highlighted.](media/mathlibrary-solution-explorer-153.png "Generated solution in Visual Studio")
+![Screenshot of the Solution Explorer window with the Math Library highlighted.](media/mathlibrary-solution-explorer-153.png "Generated solution in Visual Studio")
 
 ::: moniker-end
 
@@ -139,11 +139,11 @@ Right now, this DLL doesn't do very much. Next, you'll create a header file to d
 
 1. In the **Add New Item** dialog box, in the left pane, select **Visual C++**. In the center pane, select **Header File (.h)**. Specify *MathLibrary.h* as the name for the header file.
 
-   ![Add header in Add New Item dialog](media/mathlibrary-add-new-item-header-file.png "Add header file in Add New Item dialog")
+   ![Screenshot of the Add New Item dialog with the C plus plus Header File template selected, and MathLibrary.h entered in the Name textbox.](media/mathlibrary-add-new-item-header-file.png "Add header file in Add New Item dialog")
 
 1. Choose the **Add** button to generate a blank header file, which is displayed in a new editor window.
 
-   ![Empty MathLibrary.h file in editor](media/edit-empty-mathlibrary-header.png "Empty MathLibrary.h file in editor")
+   ![Screenshot of the empty MathLibrary.h file in the editor.](media/edit-empty-mathlibrary-header.png "Empty MathLibrary.h file in editor")
 
 1. Replace the contents of the header file with this code:
 
@@ -453,7 +453,7 @@ Next, to call the MathLibrary functions in your source code, your project must i
 
 1. In the property pane, select the drop-down control next to the **Additional Include Directories** edit box, and then choose **Edit**.
 
-   ![Edit the Additional Include Directories property](media/mathclient-additional-include-directories-property.png "Edit the Additional Include Directories property")
+   ![Screenshot of the Property Pages dialog showing the Edit command in the Additional Include Directories property drop-down.](media/mathclient-additional-include-directories-property.png "Edit the Additional Include Directories property")
 
 1. Double-click in the top pane of the **Additional Include Directories** dialog box to enable an edit control. Or, choose the folder icon to create a new entry.
 
@@ -469,7 +469,7 @@ Next, to call the MathLibrary functions in your source code, your project must i
 
    When the DLL and client projects are in other folders, adjust the relative path to match. Or, use the ellipsis control to browse for the folder.
 
-   ![Add the header location to the Additional Include Directories property](media/mathclient-additional-include-directories.png "Add the header location to the Additional Include Directories property")
+   ![Screenshot of the Additional Include Directories dialog showing the relative path to the MathLibrary directory.](media/mathclient-additional-include-directories.png "Add the header location to the Additional Include Directories property")
 
 1. After you've entered the path to the header file in the **Additional Include Directories** dialog box, choose the **OK** button. In the **Property Pages** dialog box, choose the **OK** button to save your changes.
 
@@ -509,17 +509,17 @@ To fix this issue, you could copy the library file directly into your client app
 
 1. In the left pane, select **Configuration Properties** > **Linker** > **Input**. In the property pane, select the drop-down control next to the **Additional Dependencies** edit box, and then choose **Edit**.
 
-   ![Edit the Additional Dependencies property](media/mathclient-additional-dependencies-property.png "Edit the Additional Dependencies property")
+   ![Screenshot of the Property Pages dialog showing the Edit command in the Linker > Input > Additional Dependencies property drop-down.](media/mathclient-additional-dependencies-property.png "Edit the Additional Dependencies property")
 
 1. In the **Additional Dependencies** dialog, add *MathLibrary.lib* to the list in the top edit control.
 
-   ![Add the library dependency](media/mathclient-additional-dependencies.png "Add the library dependency")
+   ![Screenshot of the Additional Dependencies dialog showing the MathLibrary.lib file.](media/mathclient-additional-dependencies.png "Add the library dependency")
 
 1. Choose **OK** to go back to the **Property Pages** dialog box.
 
 1. In the left pane, select **Configuration Properties** > **Linker** > **General**. In the property pane, select the drop-down control next to the **Additional Library Directories** edit box, and then choose **Edit**.
 
-   ![Edit the Additional Library Directories property](media/mathclient-additional-library-directories-property.png "Edit the Additional Library Directories property")
+   ![Screenshot of the Property Pages dialog showing the Edit command in the Linker > General > Additional Library Directories property drop-down.](media/mathclient-additional-library-directories-property.png "Edit the Additional Library Directories property")
 
 1. Double-click in the top pane of the **Additional Library Directories** dialog box to enable an edit control. In the edit control, specify the path to the location of the **MathLibrary.lib** file. By default, it's in a folder called *Debug* directly under the DLL solution folder. If you create a release build, the file is placed in a folder called *Release*. You can use the `$(IntDir)` macro so that the linker can find your DLL, no matter which kind of build you create. If you followed the directions to put your client project in a separate solution from the DLL project, the relative path should look like this:
 
@@ -527,13 +527,13 @@ To fix this issue, you could copy the library file directly into your client app
 
    If your DLL and client projects are in other locations, adjust the relative path to match.
 
-   ![Add the library directory](media/mathclient-additional-library-directories.png "Add the library directory")
+   ![Screenshot of the Additional Library Directories dialog.](media/mathclient-additional-library-directories.png "Add the library directory")
 
 1. Once you've entered the path to the library file in the **Additional Library Directories** dialog box, choose the **OK** button to go back to the **Property Pages** dialog box. Choose **OK** to save the property changes.
 
 Your client app can now compile and link successfully, but it still doesn't have everything it needs to run. When the operating system loads your app, it looks for the MathLibrary DLL. If it can't find the DLL in certain system directories, the environment path, or the local app directory, the load fails. Depending on the operating system, you'll see an error message like this:
 
-![MathLibrary DLL not found error](media/mathclient-system-error-mathlibrary-dll-not-found.png "MathLibrary DLL not found error")
+![Screenshot of the error dialog, MathLibrary DLL not found.](media/mathclient-system-error-mathlibrary-dll-not-found.png "MathLibrary DLL not found error")
 
 One way to avoid this issue is to copy the DLL to the directory that contains your client executable as part of the build process. You can add a **Post-Build Event** to your project, to add a command that copies the DLL to your build output directory. The command specified here copies the DLL only if it's missing or has changed. It uses macros to copy to and from the Debug or Release locations, based on your build configuration.
 
@@ -551,7 +551,7 @@ One way to avoid this issue is to copy the DLL to the directory that contains yo
 
    If your DLL and client projects are in other directories, change the relative path to the DLL to match.
 
-   ![Add the post-build command](media/mathclient-post-build-command-line.png "Add the post-build command")
+   ![Screenshot of the Property Pages dialog showing the post build event command line property.](media/mathclient-post-build-command-line.png "Add the post-build command")
 
 1. Choose the **OK** button to save your changes to the project properties.
 
@@ -567,7 +567,7 @@ Now your client app has everything it needs to build and run. Build the applicat
 
 Congratulations, you've created an application that calls functions in your DLL. Now run your application to see what it does. On the menu bar, choose **Debug** > **Start Without Debugging**. Visual Studio opens a command window for the program to run in. The last part of the output should look like:
 
-![Start the client app without debugging](media/mathclient-run-without-debugging.png "Start the client app without debugging")
+![Screenshot of the command window output when you start the client app without debugging.](media/mathclient-run-without-debugging.png "Start the client app without debugging")
 
 Press any key to dismiss the command window.
 

@@ -65,7 +65,7 @@ After the installer is installed, you can use it to customize your installation 
 
 1. Find the workload you want in the **Installing Visual Studio** screen.
 
-   ![Visual Studio 2019: Install a workload](../get-started/media/vs-installer-workloads.png)
+   ![Visual Studio 2019: Install a workload.](../get-started/media/vs-installer-workloads.png)
 
    For core C and C++ support, choose the "Desktop development with C++" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
 
@@ -84,13 +84,13 @@ After the installer is installed, you can use it to customize your installation 
 
 If you don't want to use the Workloads feature to customize your Visual Studio installation, or you want to add more components than a workload installs, you can do so by installing or adding individual components from the **Individual components** tab. Choose what you want, and then follow the prompts.
 
-  ![Visual Studio 2019 - Install individual components](../get-started/media/vs-installer-individual-components.png "Install Visual Studio individual components")
+  ![Screenshot of the Visual Studio Installer, showing the Install individual components tab view.](../get-started/media/vs-installer-individual-components.png "Install Visual Studio individual components")
 
 ### Step 6 - Install language packs (Optional)
 
 By default, the installer program tries to match the language of the operating system when it runs for the first time. To install Visual Studio in a language of your choosing, choose the **Language packs** tab from the Visual Studio Installer, and then follow the prompts.
 
-  ![Visual Studio 2019 - Install language packs](../get-started/media/vs-installer-language-packs.png "Install Visual Studio language packs")
+  ![Screenshot of the Visual Studio Installer, showing the Install language packs tab view.](../get-started/media/vs-installer-language-packs.png "Install Visual Studio language packs")
 
 #### Change the installer language from the command line
 
@@ -100,7 +100,7 @@ Another way that you can change the default language is by running the installer
 
 You can reduce the installation footprint of Visual Studio on your system drive. You can choose to move the download cache, shared components, SDKs, and tools to different drives, and keep Visual Studio on the drive that runs it the fastest.
 
-  ![Visual Studio 2019 - Change installation locations](../get-started/media/vs-installer-installation-locations.png "Change the installation location")
+  ![Screenshot of the Visual Studio Installer, showing the installation locations tab view.](../get-started/media/vs-installer-installation-locations.png "Change the installation location")
 
 > [!IMPORTANT]
 > You can select a different drive only when you first install Visual Studio. If you've already installed it and want to change drives, you must uninstall Visual Studio and then reinstall it.
@@ -144,15 +144,15 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
 1. Find the installer file you downloaded and run it. The downloaded file may be displayed in your browser, or you may find it in your Downloads folder. The installer needs Administrator privileges to run. You may see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you're having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
 
-   ![Download and install the Visual Studio Installer](media/vscpp-concierge-run-installer.gif "Download and install the Visual Studio Installer")
+   ![What you see when you download and install the Visual Studio Installer.](media/vscpp-concierge-run-installer.gif "Download and install the Visual Studio Installer")
 
 1. The installer presents you with a list of workloads, which are groups of related options for specific development areas. Support for C++ is now part of optional workloads that aren't installed by default.
 
-   ![Desktop development with C++ workload](media/desktop-development-with-cpp.png "Desktop development with C++")
+   ![Detail showing the Desktop development with C++ workload.](media/desktop-development-with-cpp.png "Desktop development with C++")
 
    For C and C++, select the **Desktop development with C++** workload and then choose **Install**.
 
-   ![Install the Desktop development with C++ workload](media/vscpp-concierge-choose-workload.gif "Install the Desktop development with C++ workload")
+   ![What you see when you select the Desktop development with C++ workload then choose the Install button.](media/vscpp-concierge-choose-workload.gif "Install the Desktop development with C++ workload")
 
 1. When the installation completes, choose the **Launch** button to start Visual Studio.
 
@@ -160,13 +160,13 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
    It may take Visual Studio several minutes to get ready for use the first time you run it. Here's what it looks like in a quick time-lapse:
 
-   ![Visual Studio 2017 sign in](media/vscpp-quickstart-first-run.gif "Visual Studio 2017 sign in")
+   ![Visual Studio sign in dialog.](media/vscpp-quickstart-first-run.gif "Visual Studio 2017 sign in")
 
    Visual Studio starts much faster when you run it again.
 
 1. When Visual Studio opens, check to see if the flag icon in the title bar is highlighted:
 
-   ![Visual Studio 2017 notification flag](media/vscpp-first-start-page-flag.png "Visual Studio 2017 notification flag")
+   ![Visual Studio notification flag.](media/vscpp-first-start-page-flag.png "Visual Studio 2017 notification flag")
 
    If it's highlighted, select it to open the **Notifications** window. If there are any updates available for Visual Studio, we recommend you install them now. Once the installation is complete, restart Visual Studio.
 

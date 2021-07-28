@@ -23,7 +23,7 @@ The **Menu Editor** enables you:
 
 1. Select the **New Item** box (the rectangle that contains *Type Here*) on the menu bar.
 
-   ![New Item box in the menu editor](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")<br/>
+   ![New Item box in the menu editor.](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")<br/>
    **New Item** box
 
 1. Type a name for your new menu, for example, *File*.
@@ -32,7 +32,7 @@ The **Menu Editor** enables you:
 
    Once you have given your new menu a name on the menu bar, the new-item box shifts to the right (to allow you to add another menu), and another new-item box opens below your first menu so you can add menu commands to it.
 
-   ![Expanded New Item box](../windows/media/vcmenueditornewitemboxexpanded.gif "vcMenuEditorNewItemBoxExpanded")<br/>
+   ![Expanded New Item box.](../windows/media/vcmenueditornewitemboxexpanded.gif "vcMenuEditorNewItemBoxExpanded")<br/>
    **New Item** box with focus shifted after you type menu name
 
    > [!NOTE]
