@@ -110,7 +110,7 @@ If you try to open or modify a `CMakePresets.json` file that doesn't exist, Visu
 
 Visual Studio provides three dropdown lists when `CMakePresets.json` integration is enabled:
 
-![Screenshot that shows the dropdown lists for the Target System](./media/target-system-dropdown.png)
+![Screenshot that shows the dropdown lists for the Target System.](./media/target-system-dropdown.png)
 
 ### Select a Target System
 

@@ -162,7 +162,7 @@ The code base of a software project is usually contained in multiple C or C++ so
 
 The figure uses three diagrammatic devices to show the flow of the build process. Named rectangles represent each file or macro; the three macros represent one or more files. Shaded areas represent each compile or link action. Arrows show which files and macros are combined during the compilation or linking process.
 
-![Structure of a makefile that uses a precompiled header file](media/vc30ow1.gif "Structure of a makefile that uses a precompiled header file") <br/>
+![Diagram showing example inputs and outputs of a makefile that uses a precompiled header file.](media/vc30ow1.gif "Structure of a makefile that uses a precompiled header file") <br/>
 Structure of a Makefile That Uses a Precompiled Header File
 
 Beginning at the top of the diagram, both STABLEHDRS and BOUNDRY are NMAKE macros in which you list files not likely to need recompilation. These files are compiled by the command string

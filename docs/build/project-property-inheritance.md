@@ -75,7 +75,7 @@ A configuration is just an arbitrary group of properties that are given a name. 
 
 To get a better idea of build configurations, open **Property Manager**. You can open it by choosing **View > Property Manager** or **View > Other Windows > Property Manager**, depending on your settings. **Property Manager** has nodes for each configuration and platform pair in the project. Under each of these nodes are nodes for property sheets (*`.props`* files) that set some specific properties for that configuration.
 
-![Property Manager](media/property-manager.png "Property Manager")
+![Screenshot of the Property Manager window.](media/property-manager.png "Property Manager")
 
 For example, you can go to the General pane in the Property Pages. Change the Character Set property to "Not Set" instead of "Use Unicode", and then click **OK**. The Property Manager now shows no **Unicode Support** property sheet. It's removed for the current configuration, but it's still there for other configurations.
 

@@ -25,7 +25,7 @@ You can use Visual Studio with Clang to edit and debug C++ CMake projects that t
 
 For best IDE support in Visual Studio, we recommend using the latest Clang compiler tools for Windows. If you don't already have those, you can install them by opening the Visual Studio Installer and choosing **C++ Clang compiler for Windows** under **Desktop development with C++** optional components. When using a custom Clang installation, check the **C++ Clang-cl for v142 build tools** component.
 
-![Clang component installation](media/clang-install-vs2019.png)
+![Clang component installation.](media/clang-install-vs2019.png)
 
 ## Create a new configuration
 
@@ -35,11 +35,11 @@ To add a new Clang configuration to a CMake project:
 
 1. Under **Configurations**, press the **Add Configuration** button:
 
-   ![Add configuration](media/cmake-add-config-icon.png)
+   ![Add configuration.](media/cmake-add-config-icon.png)
 
 1. Choose the desired Clang configuration (note that separate Clang configurations are provided for Windows and Linux), then press **Select**:
 
-   ![CMake Clang configuration](media/cmake-clang-configuration.png)
+   ![CMake Clang configuration.](media/cmake-clang-configuration.png)
 
 1. To make modifications to this configuration, use the **CMake Settings Editor**. For more information, see [Customize CMake build settings in Visual Studio](customize-cmake-settings.md).
 
@@ -76,6 +76,6 @@ After you have set up a Clang configuration, you can build and debug the project
 
 When debugging, you can use breakpoints, memory and data visualization, and most other debugging features. Some compiler-dependent features such as Edit and Continue are not available for Clang configurations.
 
-![CMake Clang debugging](media/clang-debug-visualize.png)
+![Screenshot of the Visual Studio debugger debugging a CMake Clang project.](media/clang-debug-visualize.png)
 
 ::: moniker-end

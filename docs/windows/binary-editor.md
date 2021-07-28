@@ -17,7 +17,7 @@ The **Binary Editor** allows you to edit any resource at the binary level in eit
 
 - To open the **Binary Editor** on an existing file, go to menu **File** > **Open** > **File**, select the file you want to edit, then select the drop arrow next to the **Open** button, and choose **Open With** > **Binary Editor**.
 
-   ![Binary Editor](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
+   ![Binary Editor.](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
    Binary data for a dialog box displayed in the **Binary Editor**
 
 Only certain ASCII values are represented in the **Binary Editor** (0x20 through 0x7E). Extended characters are displayed as periods in the right panel ASCII value section of the **Binary Editor**. The printable characters are ASCII values 32 through 126.
