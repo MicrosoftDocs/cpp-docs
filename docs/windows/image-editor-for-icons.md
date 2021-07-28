@@ -63,7 +63,7 @@ The **Image Editor** toolbar contains tools for drawing, painting, entering text
 
 All tools available on the **Image Editor** toolbar are also available from the menu **Image** > **Tools**. To use the **Image Editor** toolbar and **Option** selector, select the tool or option that you want.
 
-![Image Editor toolbar](../mfc/media/vcimageeditortoolbar.gif "vcImageEditorToolbar")<br/>
+![Image Editor toolbar.](../mfc/media/vcimageeditortoolbar.gif "vcImageEditorToolbar")<br/>
 **Image Editor** toolbar
 
 > [!TIP]
@@ -80,7 +80,7 @@ Since many of the drawing tools are available from the [keyboard](../windows/acc
 
 With the **Option** selector you can specify the width of a line, brush stroke, and more. The icon on the **Option** selector button changes depending on which tool you've selected.
 
-![Drawing&#45;shape selector on the Image Editor toolbar](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector")<br/>
+![Drawing&#45;shape selector on the Image Editor toolbar.](../mfc/media/vcimageeditortoolbaroptionselector.gif "vcImageEditorToolbarOptionSelector")<br/>
 **Option** selector on the **Image Editor** toolbar
 
 ### Text tool

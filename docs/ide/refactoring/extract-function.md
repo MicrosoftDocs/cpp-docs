@@ -16,7 +16,7 @@ ms.assetid: e31d1249-9705-4511-acbd-9f6fe73bdf2d
 
 1. Highlight the code to be extracted:
 
-   ![Highlighted code](images/extractfunction_highlight.png)
+   ![Screenshot showing highlighted code.](images/extractfunction_highlight.png)
 
 1. Next, do one of the following:
    * **Keyboard**
@@ -25,12 +25,12 @@ ms.assetid: e31d1249-9705-4511-acbd-9f6fe73bdf2d
    * **Mouse**
      * Select **Edit > Refactor > Extract Function (Experimental)**.
      * Right-click the code, select the **Quick Actions and Refactorings** menu and select **Extract Function (Experimental)** from the context menu.
-     * Click the ![Lightbulb](images/bulb.png) icon which appears in the left margin and select **Extract Function (Experimental)** from the context menu.
+     * Click the ![Lightbulb.](images/bulb.png) icon which appears in the left margin and select **Extract Function (Experimental)** from the context menu.
 
 1. In the **Extract Function/Method (Experimental)** window, enter the new function name, select where you want the code to be placed, and click the **OK** button.
 
-   ![Extract function dialog](images/extractfunction_dialog.png)
+   ![Extract function dialog.](images/extractfunction_dialog.png)
 
 1. The new function will be created where you specified, a function prototype in the corresponding header file, and the original code will be changed to call that function.
 
-   ![Extract function result](images/extractfunction_result.png)
+   ![Extract function result.](images/extractfunction_result.png)

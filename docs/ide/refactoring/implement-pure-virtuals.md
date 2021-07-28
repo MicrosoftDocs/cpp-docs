@@ -16,7 +16,7 @@ ms.assetid: ea9b4719-34a3-474a-b4ec-05b1859f80f1
 
 1. Place your text or mouse cursor over the class in which you want to implement the pure virtual functions of the base class.
 
-   ![Highlighted code](images/virtuals_highlight.png)
+   ![Screenshot showing highlighted code.](images/virtuals_highlight.png)
 
 1. Next, do one of the following:
    * **Keyboard**
@@ -26,4 +26,4 @@ ms.assetid: ea9b4719-34a3-474a-b4ec-05b1859f80f1
 
 1. The pure virtual method signatures will be created automatically, ready to be implemented.
 
-   ![Implement Pure Virtuals result](images/virtuals_result.png)
+   ![Implement Pure Virtuals result.](images/virtuals_result.png)

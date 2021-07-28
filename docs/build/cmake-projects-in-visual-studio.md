@@ -38,11 +38,11 @@ When you choose **File > Open > Folder** to open a folder containing a *CMakeLis
 
 You can open folders containing any number of CMake projects. Visual Studio detects and configures all the "root" *CMakeLists.txt* files in your workspace. CMake operations (configure, build, debug), C++ IntelliSense, and browsing are available to all CMake projects in your workspace.
 
-![CMake project with multiple roots](media/cmake-multiple-roots.png)
+![CMake project with multiple roots.](media/cmake-multiple-roots.png)
 
 You can also view your projects organized logically by targets. Choose **Targets view** from the dropdown in the **Solution Explorer** toolbar:
 
-![CMake targets view button](media/cmake-targets-view.png)
+![CMake targets view button.](media/cmake-targets-view.png)
 
 Click the **Show All Files** button at the top of **Solution Explorer** to see all the CMake-generated output in the *out/build/\<config>* folders.
 
@@ -85,11 +85,11 @@ To build a CMake project, you have these choices:
 
 1. From the main menu, select **Build > Build All** (**F7** or **Ctrl+Shift+B**). Make sure that a CMake target is already selected in the **Startup Item** dropdown in the **General** toolbar.
 
-![CMake build menu command](media/cmake-build-menu.png "CMake build command menu")
+![CMake build menu command.](media/cmake-build-menu.png "CMake build command menu")
 
 As you would expect, build results are shown in the **Output Window** and **Error List**.
 
-![CMake build errors](media/cmake-build-errors.png "CMake build errors")
+![CMake build errors.](media/cmake-build-errors.png "CMake build errors")
 
 In a folder with multiple build targets, you can specify which CMake target to build: Choose the **Build** item on the **CMake** menu or the *CMakeLists.txt* context menu to specify the target. If you enter **Ctrl+Shift+B** in a CMake project, it builds the current active document.
 
@@ -97,7 +97,7 @@ In a folder with multiple build targets, you can specify which CMake target to b
 
 To debug a CMake project, choose the preferred configuration and press **F5**, or press the **Run** button in the toolbar. If the **Run** button says "Select Startup Item", select the dropdown arrow. Choose the target that you want to run. (In a CMake project, the "Current document" option is only valid for .cpp files.)
 
-![CMake run button](media/cmake-run-button.png "CMake run button")
+![CMake run button.](media/cmake-run-button.png "CMake run button")
 
 The **Run** or **F5** commands first build the project if changes have been made since the previous build. Changes to *CMakeSettings.json* cause the CMake cache to be regenerated.
 
@@ -115,17 +115,17 @@ If you have installed [vcpkg](https://vcpkg.io/), CMake projects opened in Visua
 
 By default, most configuration messages are suppressed unless there's an error. You can see all messages by enabling this feature in **Tools** > **Options** > **CMake**.
 
-   ![Configuring CMake diagnostic options](media/vs2019-cmake-configure-options.png "CMake diagnostic options")
+   ![Configuring CMake diagnostic options.](media/vs2019-cmake-configure-options.png "CMake diagnostic options")
 
 ## Editing CMakeLists.txt files
 
 To edit a *CMakeLists.txt* file, right-click on the file in **Solution Explorer** and choose **Open**. If you make changes to the file, a yellow status bar appears and informs you that IntelliSense will update. It gives you a chance to cancel the update operation. For information about *CMakeLists.txt*, see the [CMake documentation](https://cmake.org/documentation/).
 
-   ![CMakeLists.txt file editing](media/cmake-cmakelists.png "CMakeLists.txt file editing")
+   ![CMakeLists.txt file editing.](media/cmake-cmakelists.png "CMakeLists.txt file editing")
 
 As soon as you save the file, the configuration step automatically runs again and displays information in the **Output** window. Errors and warnings are shown in the **Error List** or **Output** window. Double-click on an error in the **Error List** to navigate to the offending line in *CMakeLists.txt*.
 
-   ![CMakeLists.txt file errors](media/cmake-cmakelists-error.png "CMakeLists.txt file errors")
+   ![CMakeLists.txt file errors.](media/cmake-cmakelists-error.png "CMakeLists.txt file errors")
 
 ## CMake configure step
 
@@ -183,11 +183,11 @@ When you choose **File > Open > Folder** to open a folder containing a *CMakeLis
 
 You can open folders containing any number of CMake projects. Visual Studio detects and configures all the "root" *CMakeLists.txt* files in your workspace. CMake operations (configure, build, debug), C++ IntelliSense, and browsing are available to all CMake projects in your workspace.
 
-![CMake project with multiple roots](media/cmake-multiple-roots.png)
+![CMake project with multiple roots.](media/cmake-multiple-roots.png)
 
 You can also view your projects organized logically by targets. Choose **Targets view** from the dropdown in the **Solution Explorer** toolbar:
 
-![CMake targets view button](media/cmake-targets-view.png)
+![CMake targets view button.](media/cmake-targets-view.png)
 
 Visual Studio uses a file called *CMakeSettings.json* to store environment variables or command-line options for Cmake.exe. *CMakeSettings.json* also enables you to define and store multiple CMake build configurations. You can conveniently switch between them in the IDE.
 
@@ -208,13 +208,13 @@ Not everything in the cache is imported.  Properties such as the generator and t
 
 1. From the main menu, choose **File > Open > CMake**:
 
-   ![Open CMake](media/cmake-file-open.png "File, Open, CMake")
+   ![Open CMake.](media/cmake-file-open.png "File, Open, CMake")
 
    This command brings up the **Import CMake from Cache** wizard.
 
 2. Navigate to the *CMakeCache.txt* file that you want to import, and then click **OK**. The **Import CMake Project from Cache** wizard appears:
 
-   ![Import a CMake cache](media/cmake-import-wizard.png "Open the CMake import cache wizard")
+   ![Import a CMake cache.](media/cmake-import-wizard.png "Open the CMake import cache wizard")
 
    When the wizard completes, you can see the new *CMakeCache.txt* file in **Solution Explorer** next to the root *CMakeLists.txt* file in your project.
 
@@ -228,13 +228,13 @@ To build a CMake project, you have these choices:
 
 1. From the main menu, select **Build > Build Solution** (**F7** or **Ctrl+Shift+B**). Make sure that a CMake target is already selected in the **Startup Item** dropdown in the **General** toolbar.
 
-![CMake build menu command](media/cmake-build-menu.png "CMake build command menu")
+![CMake build menu command.](media/cmake-build-menu.png "CMake build command menu")
 
 You can customize build configurations, environment variables, command-line arguments, and other settings in the *CMakeSettings.json* file. It lets you make changes without modifying the *CMakeLists.txt* file. For more information, see [Customize CMake settings](customize-cmake-settings.md).
 
 As you would expect, build results are shown in the **Output Window** and **Error List**.
 
-![CMake build errors](media/cmake-build-errors.png "CMake build errors")
+![CMake build errors.](media/cmake-build-errors.png "CMake build errors")
 
 In a folder with multiple build targets, you can specify which CMake target to build: Choose the **Build** item on the **CMake** menu or the *CMakeLists.txt* context menu to specify the target. If you enter **Ctrl+Shift+B** in a CMake project, it builds the current active document.
 
@@ -242,7 +242,7 @@ In a folder with multiple build targets, you can specify which CMake target to b
 
 To debug a CMake project, choose the preferred configuration and press **F5**. Or, press the **Run** button in the toolbar. If the **Run** button says "Select Startup Item", select the dropdown arrow and choose the target that you want to run. (In a CMake project, the "Current document" option is only valid for .cpp files.)
 
-![CMake run button](media/cmake-run-button.png "CMake run button")
+![CMake run button.](media/cmake-run-button.png "CMake run button")
 
 The **Run** or **F5** commands first build the project if changes have been made since the previous build.
 
@@ -252,11 +252,11 @@ You can customize a CMake debugging session by setting properties in the **launc
 
 To edit a *CMakeLists.txt* file, right-click on the file in **Solution Explorer** and choose **Open**. If you make changes to the file, a yellow status bar appears and informs you that IntelliSense will update. It gives you a chance to cancel the update operation. For information about *CMakeLists.txt*, see the [CMake documentation](https://cmake.org/documentation/).
 
-   ![CMakeLists.txt file editing](media/cmake-cmakelists.png "CMakeLists.txt file editing")
+   ![CMakeLists.txt file editing.](media/cmake-cmakelists.png "CMakeLists.txt file editing")
 
 As soon as you save the file, the configuration step automatically runs again and displays information in the **Output** window. Errors and warnings are shown in the **Error List** or **Output** window. Double-click on an error in the **Error List** to navigate to the offending line in *CMakeLists.txt*.
 
-   ![CMakeLists.txt file errors](media/cmake-cmakelists-error.png "CMakeLists.txt file errors")
+   ![CMakeLists.txt file errors.](media/cmake-cmakelists-error.png "CMakeLists.txt file errors")
 
 ## CMake configure step
 
@@ -264,7 +264,7 @@ When significant changes are made to the  *CMakeSettings.json* or to *CMakeLists
 
 Multiple CMake projects may use the same CMake configuration name (for example, x86-Debug). All of them are configured and built (in their own build root folder) when that configuration is selected. You can debug the targets from all of the CMake projects that participate in that CMake configuration.
 
-   ![CMake Build Only menu item](media/cmake-build-only.png "CMake Build Only menu item")
+   ![CMake Build Only menu item.](media/cmake-build-only.png "CMake Build Only menu item")
 
 You can limit builds and debug sessions to a subset of the projects in the workspace. Create a new configuration with a unique name in the  *CMakeSettings.json* file. Then, apply the configuration to those projects only. When that configuration is selected, IntelliSense and the build and debug commands only apply to those specified projects.
 
@@ -286,7 +286,7 @@ Automatic cache generation can be disabled in the **Tools > Options > CMake > Ge
 
 To build a single file in a CMake project, right-click on the file in **Solution Explorer**. Choose **Compile** from the pop-up menu. You can also build the currently open file in the editor by using the main **CMake** menu:
 
-![CMake single file compilation](media/cmake-single-file-compile.png)
+![CMake single file compilation.](media/cmake-single-file-compile.png)
 
 ## Run CMake from the command line
 

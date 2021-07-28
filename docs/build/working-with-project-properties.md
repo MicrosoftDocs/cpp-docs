@@ -13,7 +13,7 @@ In the IDE, all information that is needed to build a project is exposed as *pro
 
 When you create a project, the system assigns values for various properties. The defaults vary somewhat depending on the kind of project and what options you choose in the app wizard. For example, an ATL project has properties related to MIDL files, but these are absent in a basic console application. The default properties are shown in the General pane in the Property Pages:
 
-![Visual C&#43;&#43; Project Defaults](media/visual-c---project-defaults.png "Visual C++ project Defaults")
+![Screenshot of the Property Pages dialog with the Project Defaults properties highlighted.](media/visual-c---project-defaults.png "Visual C++ project Defaults")
 
 ## Applying properties to build configurations and target platforms
 
@@ -21,11 +21,11 @@ Some properties, such as the application name, apply to all build variations, re
 
 The property pages are designed so that you can always see, and if necessary modify, which configuration and platform a property value should apply to. The following illustration shows the property pages with the configuration and platform information in the list boxes at the top. When the **Optimization** property is set here, it will apply only to Debug Win32 builds, which happens to be the active configuration, as shown by the red arrows.
 
-![Visual C&#43;&#43; Property Pages showing active configuration](media/visual-c---property-pages-showing-active-configuration.png "Visual C++ Property Pages showing active configuration")
+![Screenshot of the Property Pages dialog showing property values for the currently active configuration.](media/visual-c---property-pages-showing-active-configuration.png "Visual C++ Property Pages showing active configuration")
 
 The following illustration shows the same project property page, but the configuration has been changed to Release. Note the different value for the Optimization property. Also note that the active configuration is still Debug. You can set properties for any configuration here; it doesn't have to be the active one.
 
-![Visual C&#43;&#43; Property Pages showing release config](media/visual-c---property-pages-showing-release-config.png "Visual C++ Property Pages showing release config")
+![Screenshot of the Property Pages dialog showing property values for the release configuration.](media/visual-c---property-pages-showing-release-config.png "Visual C++ Property Pages showing release config")
 
 ## Target platforms
 
@@ -52,7 +52,7 @@ MSBuild supports the use of compile-time constants called "macros" for certain s
 
 The following illustration shows the property pages for a Visual Studio C++ project. In the left pane, the **VC++ Directories** *rule* is selected, and the right pane lists the properties that are associated with that rule. The `$(...)` values are called *macros*. A *macro* is a compile-time constant that can refer to a value that is defined by Visual Studio or the MSBuild system, or to a user-defined value. By using macros instead of hard-coded values such as directory paths, you can more easily share property settings between machines and between versions of Visual Studio, and you can better ensure that your project settings participate correctly in [property inheritance](project-property-inheritance.md).
 
-![Project property pages](media/project_property_pages_vc.png "Project_Property_Pages_VC")
+![Screenshot of the Property Pages dialog showing the VC project directories.](media/project_property_pages_vc.png "Project_Property_Pages_VC")
 
 You can use the Property Editor to view the values of all available macros.
 
@@ -82,11 +82,11 @@ A user-defined macro is stored in a property sheet. If your project does not alr
 
 You can use the Property Editor to modify certain string properties and select macros as values. To access the Property Editor, select a property on a property page and then choose the down arrow button on the right. If the drop-down list contains **\<Edit>**, then you can choose it to display the Property Editor for that property.
 
-![A property drop-down control is used to access the Property Editor](media/property_editor_dropdown.png "Property Editor dropdown")
+![A property drop-down control is used to access the Property Editor.](media/property_editor_dropdown.png "Property Editor dropdown")
 
 In the Property Editor, you can choose the **Macros** button to view the available macros and their current values. The following illustration shows the Property Editor for the **Additional Include Directories** property after the **Macros** button was chosen. When the **Inherit from parent or project defaults** check box is selected and you add a new value, it is appended to any values that are currently being inherited. If you clear the check box, your new value replaces the inherited values. In most cases, leave the check box selected.
 
-![The Property Editor dialog for the Include Directories property](media/propertyeditorvc.png "PropertyEditorVC")
+![The Property Editor dialog for the Include Directories property.](media/propertyeditorvc.png "PropertyEditorVC")
 
 ## Add an include directory to the set of default directories
 

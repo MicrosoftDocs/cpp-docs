@@ -31,7 +31,7 @@ NOTE: Windows 8 or above is required for installing the Windows Performance Anal
 
 1. When prompted for the features that you want to install, select the **Windows Performance Toolkit**. You may select other features if you wish, but they're not required to install WPA.
 
-   ![The Windows Performance Analyzer installer's feature selection screen](media/wpa-installation.png)
+   ![The Windows Performance Analyzer installer's feature selection screen.](media/wpa-installation.png)
 
 ### <a name="configuration-steps"></a> To configure WPA
 
@@ -75,7 +75,7 @@ To view C++ Build Insights data, first collect it into a trace file by following
 
 Here's what a typical *vcperf.exe* command sequence looks like in a developer command prompt window:
 
-![A simple vcperf.exe usage scenario](media/vcperf-simple-usage.png)
+![Screenshot of a command window showing vcperf.exe commands and results.](media/vcperf-simple-usage.png)
 
 ### Important notes about vcperf.exe
 
@@ -104,7 +104,7 @@ Launch WPA and open the trace you just collected. WPA should recognize it as a C
 
 If you can't see these views, double-check that WPA is configured correctly, as described in [Step 1](#configuration-steps). You can view your build data by dragging the views into the empty Analysis window on the right, as shown here:
 
-![Viewing a C++ Build Insights trace in Windows Performance Analyzer](media/wpa-viewing-trace.gif)
+![View of a C++ Build Insights trace in Windows Performance Analyzer.](media/wpa-viewing-trace.gif)
 
 Other views are available in the Graph Explorer panel. Drag them into the Analysis window when you're interested in the information they contain. A useful one is the CPU (Sampled) view, which shows CPU utilization throughout your build.
 

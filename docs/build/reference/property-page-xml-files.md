@@ -35,7 +35,7 @@ You only need to understand the internal workings of these files and the Visual 
 
 First, let's open the property pages for a project. Right-click on the project node in **Solution Explorer** and choose **Properties**:
 
-![Shows the Visual Studio C++ Project Properties dialog](../media/cpp-property-page-2017.png)
+![Screenshot of the project Property Pages dialog.](../media/cpp-property-page-2017.png)
 
 Each node under **Configuration Properties** is called a *rule*. A rule sometimes represents a single tool like the compiler. In general, the term refers to something that has properties, that executes and that may produce some output. Each rule is populated from an XML file in the default rules folder. For example, the C/C++ rule that's shown here is populated by *`cl.xml`*.
 
