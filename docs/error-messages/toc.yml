@@ -4296,6 +4296,10 @@
           href: compiler-warnings/c5105.md
         - name: Compiler warning (level 1) C5208
           href: compiler-warnings/c5208.md
+        - name: Compiler warning (level 1) C5247
+          href: compiler-warnings/c5247.md
+        - name: Compiler warning (level 1) C5248
+          href: compiler-warnings/c5248.md
 - name: Compiler warnings by compiler version
   href: compiler-warnings/compiler-warnings-by-compiler-version.md
 - name: Compiler warnings that are off by default
