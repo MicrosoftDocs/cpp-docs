@@ -7,6 +7,6 @@
     //Initialize with nullptr. sp7 is empty.
     shared_ptr<Song> sp7(nullptr);
 
-    // Initialize with another shared_ptr. sp1 and sp2
+    // Initialize with another shared_ptr. sp7 and sp2
     // swap pointers as well as ref counts.
-    sp1.swap(sp2);
+    sp7.swap(sp2);
