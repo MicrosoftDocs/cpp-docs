@@ -282,6 +282,8 @@ Use the following examples to target ARM64 with the Ninja generator, or to targe
 },
 ```
 
+Additionally, if you have a situation that warrants have no inherited environment and thus no defined architecture, you can do this by setting architecture.value to "unspecified" and architecture.strategy to "external".
+
 ### Set and reference environment variables
 
 You can set environment variables by using the environment map. Environment variables are inherited through the `inherits` field, but you can override them as you like. 
