@@ -41,7 +41,7 @@ To build the project, Visual Studio copies the source code to your remote Linux 
 
 ## Set up the SSH server on the remote system
 
-If ssh isn't already set up and running on your Linux system, follow these steps to install it. The examples in this article use Ubuntu 18.04 LTS with OpenSSH server version 7.6. However, the instructions should be the same for any distro using a moderately recent version of OpenSSH.
+If `ssh` isn't already set up and running on your Linux system, follow these steps to install it. The examples in this article use Ubuntu 18.04 LTS with OpenSSH server version 7.6. However, the instructions should be the same for any distro using a moderately recent version of OpenSSH.
 
 1. On the Linux system, install and start the OpenSSH server:
 
@@ -72,15 +72,15 @@ If ssh isn't already set up and running on your Linux system, follow these steps
 
 1. Enter the following information:
 
-   | Entry | Description
-   | ----- | ---
-   | **Host Name**           | Name or IP address of your target device
-   | **Port**                | Port that the SSH service is running on, typically 22
-   | **User name**           | User to authenticate as
-   | **Authentication type** | Password and Private Key are both supported
-   | **Password**            | Password for the entered user name
-   | **Private key file**    | Private key file created for ssh connection
-   | **Passphrase**          | Passphrase used with private key selected above
+   | Entry | Description |
+   |--|--|
+   | **Host Name** | Name or IP address of your target device |
+   | **Port** | Port that the SSH service is running on, typically 22 |
+   | **User name** | User to authenticate as |
+   | **Authentication type** | Password and Private Key are both supported |
+   | **Password** | Password for the entered user name |
+   | **Private key file** | Private key file created for ssh connection |
+   | **Passphrase** | Passphrase used with private key selected above |
 
    You can use either a password or a key file and passphrase for authentication. For many development scenarios, password authentication is sufficient, but key files are more secure. If you already have a key pair, it's possible to reuse it. Currently Visual Studio only supports RSA and DSA keys for remote connections.
 
@@ -94,49 +94,48 @@ If ssh isn't already set up and running on your Linux system, follow these steps
 
    If you use key files for authentication, make sure the target machine's SSH server is running and configured properly.
 
-   ::: moniker-end
+::: moniker-end
 
-   ::: moniker range="msvc-160"
-   
+::: moniker range=">=msvc-160"
+
 ## Host key verification
 
-In Visual Studio version 16.10 or later, you will be asked to verify the host key fingerprint presented by the server when Visual Studio connects to a remote system for the first time. You may be familiar with this if you’ve used the OpenSSH command-line client or PuTTY before. The fingerprint identifies the server and is used to ensure that Visual Studio is connecting to the intended and trusted server. 
+In Visual Studio version 16.10 or later, you'll be asked to verify the server's host key fingerprint whenever Visual Studio connects to a remote system for the first time. You may be familiar with this process if you’ve used the OpenSSH command-line client or PuTTY before. The fingerprint identifies the server. Visual Studio uses the fingerprint to ensure it's connecting to the intended and trusted server.
 
-You will be asked to accept or deny the host key fingerprint presented by the server the first time a new remote connection is established, or anytime that a cached fingerprint has changed. You can also verify a fingerprint on demand by selecting a connection in the Connection Manager and clicking "Verify." 
+The first time Visual Studio establishes a new remote connection, you'll be asked to accept or deny the host key fingerprint presented by the server. Or, anytime there are changes to a cached fingerprint. You can also verify a fingerprint on demand: select a connection in the Connection Manager and choose **Verify**.
 
-If you are upgrading to Visual Studio 16.10 from an older version of Visual Studio, then all existing remote connections will be treated as a new connection. You will be prompted to accept the host key fingerprint before a connection is established and the accepted fingerprint will be cached. 
+If you upgrade to Visual Studio 16.10 or later from an older version, it treats any existing remote connections as new connections. You'll be prompted to accept the host key fingerprint first. Then, Visual Studio establishes a connection and caches the accepted fingerprint.
 
-You can also update remote connections from ConnectionManager.exe using the `update` argument. 
-
+You can also update remote connections from `ConnectionManager.exe` using the `update` argument.
 
 ## Supported SSH algorithms
 
-Starting in Visual Studio version 16.9, support for older, insecure SSH algorithms used to encrypt data and exchange keys, has been removed. Only the following algorithms are supported. They are supported for both client-to-server and server-to-client SSH communication:
+Starting in Visual Studio version 16.9, support for older, insecure SSH algorithms used to encrypt data and exchange keys, has been removed. Only the following algorithms are supported. They're supported for both client-to-server and server-to-client SSH communication:
 
-|Algorithm type|Supported algorithms|
-|---|---|
-| Encryption| aes128-cbc</br>aes128-cbc</br>aes192-cbc</br>aes192-ctr</br>aes256-cbc</br>aes256-ctr|
-| HMAC | hmac-sha2-256</br>hmac-sha2-256 |
-| Key exchange| diffie-hellman-group14-sha256</br>diffie-hellman-group16-sha512</br>diffie-hellman-group-exchange-sha256</br>ecdh-sha2-nistp256</br>ecdh-sha2-nistp384</br>ecdh-sha2-nistp521|
-|Host key|ecdsa-sha2-nistp256</br>ecdsa-sha2-nistp384</br>ecdsa-sha2-nistp521</br>ssh-dss</br>ssh-rsa|
+| Algorithm type | Supported algorithms |
+|--|--|
+| Encryption | `aes128-cbc`</br>`aes128-cbc`</br>`aes192-cbc`</br>`aes192-ctr`</br>`aes256-cbc`</br>`aes256-ctr` |
+| HMAC | `hmac-sha2-256`</br>`hmac-sha2-256` |
+| Key exchange | `diffie-hellman-group14-sha256`</br>`diffie-hellman-group16-sha512`</br>`diffie-hellman-group-exchange-sha256`</br>`ecdh-sha2-nistp256`</br>`ecdh-sha2-nistp384`</br>`ecdh-sha2-nistp521` |
+| Host key | `ecdsa-sha2-nistp256`</br>`ecdsa-sha2-nistp384`</br>`ecdsa-sha2-nistp521`</br>`ssh-dss`</br>`ssh-rsa` |
 
 ### Configure the SSH server
 
-First, a little background. You can't select the SSH algorithm to use from Visual Studio. Instead, the algorithm is determined during the initial handshake with the SSH server. Each side (client and server) provides a list of algorithms it supports, and then the first algorithm common to both is selected. As long as there is at least one algorithm in common between Visual Studio and the server for encryption, HMAC, key exchange, and so on, the connection will succeed.
+First, a little background. You can't select the SSH algorithm to use from Visual Studio. Instead, the algorithm is determined during the initial handshake with the SSH server. Each side (client and server) provides a list of algorithms it supports, and then the first algorithm common to both is selected. The connection succeeds as long as there's at least one algorithm in common between Visual Studio and the server for encryption, HMAC, key exchange, and so on.
 
-The Open SSH configuration file (**sshd_config**) doesn't configure which algorithm to use by default. The SSH server should use secure defaults when no algorithms are specified. Those defaults depend on the version and vendor of the SSH server.  If Visual Studio doesn't support those defaults, or the SSH server is configured to use algorithms that Visual Studio doesn't support, you'll likely see an error like: **Could not connect to the remote system. No common client to server HMAC algorithm was found.**
+The Open SSH configuration file (*`sshd_config`*) doesn't configure which algorithm to use by default. The SSH server should use secure defaults when no algorithms are specified. Those defaults depend on the version and vendor of the SSH server.  If Visual Studio doesn't support those defaults, you'll likely see an error like: "Could not connect to the remote system. No common client to server HMAC algorithm was found." The error may also appear if the SSH server is configured to use algorithms that Visual Studio doesn't support.
 
-A default SSH server on most modern Linux distributions should work out-of-the-box with Visual Studio. But if you're running an older SSH server that is configured to use older, insecure algorithms, the following explains how to update to more secure versions.
+The default SSH server on most modern Linux distributions should work with Visual Studio. However, you may be running an older SSH server that's configured to use older, insecure algorithms. The following example explains how to update to more secure versions.
 
 In the following example, the SSH server uses the insecure `hmac-sha1` algorithm, which isn't supported by Visual Studio 16.9. If the SSH server uses OpenSSH, you can edit the `/etc/ssh/sshd_config` file as shown below to enable more secure algorithms. For other SSH servers, refer to the server's documentation for how to configure them.
 
-First, verify that the set of algorithms your server is using  includes algorithms supported by Visual Studio. Run the following  command on the remote machine, and it will list the algorithms supported by the server.
+First, verify that the set of algorithms your server is using  includes algorithms supported by Visual Studio. Run the following command on the remote machine to list the algorithms supported by the server:
 
 ```bash
-$ ssh -Q cipher; ssh -Q mac; ssh -Q kex; ssh -Q key
+ssh -Q cipher; ssh -Q mac; ssh -Q kex; ssh -Q key
 ```
 
-It will produce output like:
+The command produces output like:
 
 ```bash
 3des-cbc
@@ -148,11 +147,11 @@ ecdsa-sha2-nistp521-cert-v01@openssh.com
 sk-ecdsa-sha2-nistp256-cert-v01@openssh.com
 ```
 
-This output will list all the encryption, HMAC, key exchange, and host key algorithms supported by your SSH server. If this list doesn't include algorithms supported by Visual Studio, then you'll need to upgrade your SSH server before proceeding.
+The output lists all the encryption, HMAC, key exchange, and host key algorithms supported by your SSH server. If the list doesn't include algorithms supported by Visual Studio, then you'll need to upgrade your SSH server before proceeding.
 
 You can enable algorithms supported by Visual Studio by editing `/etc/ssh/sshd_config` on the remote machine. The following examples show how to add various types of algorithms to that configuration file.
 
-These examples can be added anywhere in `/etc/ssh/sshd_config`. Ensure that they are on their own lines.
+These examples can be added anywhere in `/etc/ssh/sshd_config`. Ensure that they're on their own lines.
 
 After editing the file, restart the SSH server (`sudo service ssh restart` on Ubuntu) and attempt to connect again from Visual Studio.
 
@@ -188,7 +187,7 @@ For example: `HostKeyAlgorithms ssh-dss,ssh-rsa`
 
 ## Command-line utility for the Connection Manager  
 
-**Visual Studio 2019 version 16.5 or later**: ConnectionManager.exe is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, you can use it to set up Visual Studio for continuous integration. For examples and a complete reference to the ConnectionManager command, see [ConnectionManager reference](connectionmanager-reference.md).  
+**Visual Studio 2019 version 16.5 or later**: `ConnectionManager.exe` is a command-line utility to manage remote development connections outside of Visual Studio. It's useful for tasks such as provisioning a new development machine. Or, you can use it to set up Visual Studio for continuous integration. For examples and a complete reference to the ConnectionManager command, see [ConnectionManager reference](connectionmanager-reference.md).  
 
 ::: moniker-end
 
@@ -196,17 +195,17 @@ For example: `HostKeyAlgorithms ssh-dss,ssh-rsa`
 
 ## TCP Port Forwarding
 
-Visual Studio's Linux support has a dependency on TCP port forwarding. **Rsync** and **gdbserver** are affected if TCP port forwarding is disabled on your remote system. If you're impacted by this dependency, you can upvote this [suggestion ticket](https://developercommunity2.visualstudio.com/t/shDonshshtsh-shrelysh-s/840265?space=62) on Developer Community.
-
-rsync is used by both MSBuild-based Linux projects and CMake projects to [copy headers from your remote system to Windows for use by IntelliSense](configure-a-linux-project.md#remote_intellisense). When you can't enable TCP port forwarding, disable the automatic download of remote headers. To disable it, use **Tools > Options > Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. If the remote system doesn't have TCP port forwarding enabled, you'll see this error when the download of remote headers for IntelliSense begins:
+The `rsync` command is used by both MSBuild-based Linux projects and CMake projects to [copy headers from your remote system to Windows for use by IntelliSense](configure-a-linux-project.md#remote_intellisense). When you can't enable TCP port forwarding, disable the automatic download of remote headers. To disable it, use **Tools > Options > Cross Platform > Connection Manager > Remote Headers IntelliSense Manager**. If the remote system doesn't have TCP port forwarding enabled, you'll see this error when the download of remote headers for IntelliSense begins:
 
 ![Screenshot showing a Headers Error.](media/port-forwarding-headers-error.png)
 
-rsync is also used by Visual Studio's CMake support to copy source files to the remote system. If you can't enable TCP port forwarding, you can use sftp as your remote copy sources method. sftp is often slower than rsync, but doesn't have a dependency on TCP port forwarding. You can manage your remote copy sources method with the **remoteCopySourcesMethod** property in the [CMake Settings Editor](../build/cmakesettings-reference.md#additional-settings-for-cmake-linux-projects). If TCP port forwarding is disabled on your remote system, you'll see an error in the CMake output window the first time it invokes rsync.
+`rsync` is also used by Visual Studio's CMake support to copy source files to the remote system. If you can't enable TCP port forwarding, you can use `sftp` as your remote copy sources method. `sftp` is often slower than `rsync`, but doesn't have a dependency on TCP port forwarding. You can manage your remote copy sources method with the `remoteCopySourcesMethod` property in the [CMake Settings Editor](../build/cmakesettings-reference.md#settings-for-cmake-linux). If TCP port forwarding is disabled on your remote system, you'll see an error in the CMake output window the first time it invokes `rsync`.
 
 ![Screenshot showing an Rsync Error.](media/port-forwarding-copy-error.png)
 
-gdbserver can be used for debugging on embedded devices. If you can't enable TCP port forwarding, then you must use gdb for all remote debugging scenarios. gdb is used by default when debugging projects on a remote system.
+`gdbserver` can be used for debugging on embedded devices. If you can't enable TCP port forwarding, then you must use `gdb` for all remote debugging scenarios. `gdb` is used by default when debugging projects on a remote system.
+
+Visual Studio's Linux support has a dependency on TCP port forwarding. Both `rsync` and `gdbserver` are affected if TCP port forwarding is disabled on your remote system. If this dependency impacts you, vote for this [suggestion ticket](https://developercommunity2.visualstudio.com/t/shDonshshtsh-shrelysh-s/840265?space=62) on Developer Community.
 
 ## Connect to WSL
 
@@ -214,7 +213,7 @@ gdbserver can be used for debugging on embedded devices. If you can't enable TCP
 
 ::: moniker range="msvc-150"
 
-In Visual Studio 2017, you use the same steps to connect to WSL as you use for a remote Linux machine. Use **localhost** for the **Host Name**.
+In Visual Studio 2017, you use the same steps to connect to WSL as you use for a remote Linux machine. Use `localhost` for the **Host Name**.
 
 ::: moniker-end
 
@@ -222,7 +221,7 @@ In Visual Studio 2017, you use the same steps to connect to WSL as you use for a
 
 Visual Studio 2019 version 16.1 added native support for using C++ with the [Windows Subsystem for Linux (WSL)](/windows/wsl/about). That means you can build and debug on your local WSL installation directly. You no longer need to add a remote connection or configure SSH. You can find details on [how to install WSL](/windows/wsl/install-win10) here.
 
-To configure your WSL installation to work with Visual Studio, you need the following tools installed: gcc or clang, gdb, make, ninja-build (only required for CMake projects using Visual Studio 2019 version 16.6 or later), rsync, and zip. You can install them on distros that use apt by using this command, which also installs the g++ compiler:
+To configure your WSL installation to work with Visual Studio, you need the following tools installed: `gcc` or `clang`, `gdb`, `make`, `ninja-build` (only required for CMake projects using Visual Studio 2019 version 16.6 or later), `rsync`, and `zip`. You can install them on distros that use `apt` by using this command, which also installs the g++ compiler:
 
 ```bash
 sudo apt install g++ gdb make ninja-build rsync zip
