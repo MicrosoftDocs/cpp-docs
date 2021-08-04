@@ -156,8 +156,8 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C5243 (level 1) | '*type-name*': using incomplete class '*class-name*' can cause potential one definition rule violation due to ABI limitation <sup>16.10</sup> |
 | C5245 (level 4) | '*function*': unreferenced function with internal linkage has been removed |
 | C5246 (level 1) | '*member*': the initialization of a subobject should be wrapped in braces <sup>16.10</sup> |
-| C5247 (level 1) | Section '*section-name*' is reserved for C++ dynamic initialization.<br/> Manually creating the section will interfere with C++ dynamic initialization and may lead to undefined behavior <sup>16.11</sup> |
-| C5248 (level 1) | Section '*section-name*' is reserved for C++ dynamic initialization.<br/> Variable manually put into the section may be optimized out and its order relative to compiler generated dynamic<br/> initializers is unspecified <sup>16.11</sup> |
+| [C5247 (level 1)](../error-messages/compiler-warnings/c5247.md) | Section '*section-name*' is reserved for C++ dynamic initialization. Manually creating the section will interfere with C++ dynamic initialization and may lead to undefined behavior <sup>16.11</sup> |
+| [C5248 (level 1)](../error-messages/compiler-warnings/c5248.md) | Section '*section-name*' is reserved for C++ dynamic initialization. Variable manually put into the section may be optimized out and its order relative to compiler generated dynamic initializers is unspecified <sup>16.11</sup> |
 
 <sup>14.1</sup> This warning is available starting in Visual Studio 2015 Update 1.\
 <sup>14.3</sup> This warning is available starting in Visual Studio 2015 Update 3.\
