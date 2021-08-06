@@ -739,13 +739,11 @@ This method sends the `TVM_GETITEMPARTRECT` message, which is described in the W
 
 ### Example
 
-The following code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
+The first code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
-### Example
-
-The following code example uses an accessibility identifier and the [`CTreeCtrl::MapAccIdToItem`](#mapaccidtoitem) method to retrieve a handle to the root tree-view item. Then the example uses the handle and the [`CTreeCtrl::GetItemPartRect`](#getitempartrect) method to draw a 3D rectangle around that item. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states. We used the [`CTreeCtrl::MapItemToAccID`](#mapitemtoaccid) method to associate the root tree-view item with an accessibility identifier.
+The next code example uses an accessibility identifier and the [`CTreeCtrl::MapAccIdToItem`](#mapaccidtoitem) method to retrieve a handle to the root tree-view item. Then the example uses the handle and the [`CTreeCtrl::GetItemPartRect`](#getitempartrect) method to draw a 3D rectangle around that item. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states. We used the [`CTreeCtrl::MapItemToAccID`](#mapitemtoaccid) method to associate the root tree-view item with an accessibility identifier.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#5](../../mfc/reference/codesnippet/cpp/ctreectrl-class_18.cpp)]
 
@@ -865,13 +863,11 @@ This method sends the [`TVM_GETNEXTITEM`](/windows/win32/Controls/tvm-getnextite
 
 ### Example
 
-The following code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. One or more of these variables are used in the next example.
+The first code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. One or more of these variables are used in the next example.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
-### Example
-
-The following code example retrieves a handle to the last unexpanded tree-view node item, and then draws a 3D rectangle around that item. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states.
+The next code example retrieves a handle to the last unexpanded tree-view node item, and then draws a 3D rectangle around that item. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#6](../../mfc/reference/codesnippet/cpp/ctreectrl-class_21.cpp)]
 
@@ -1345,13 +1341,11 @@ This method sends the [`TVM_MAPACCIDTOHTREEITEM`](/windows/win32/Controls/tvm-ma
 
 ### Example
 
-The following code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
+The first code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
-### Example
-
-The following code example uses an accessibility identifier and the [`CTreeCtrl::MapAccIdToItem`](#mapaccidtoitem) method to retrieve a handle to the root tree-view item. The example uses the handle and the [`CTreeCtrl::GetItemPartRect`](#getitempartrect) method to draw a 3D rectangle around that item. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states. We used the [`CTreeCtrl::MapItemToAccID`](#mapitemtoaccid) method to associate the root tree-view item with an accessibility identifier.
+The next code example uses an accessibility identifier and the [`CTreeCtrl::MapAccIdToItem`](#mapaccidtoitem) method to retrieve a handle to the root tree-view item. The example uses the handle and the [`CTreeCtrl::GetItemPartRect`](#getitempartrect) method to draw a 3D rectangle around that item. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states. We used the [`CTreeCtrl::MapItemToAccID`](#mapitemtoaccid) method to associate the root tree-view item with an accessibility identifier.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#5](../../mfc/reference/codesnippet/cpp/ctreectrl-class_18.cpp)]
 
@@ -1380,13 +1374,11 @@ This method sends the [`TVM_MAPHTREEITEMTOACCID`](/windows/win32/Controls/tvm-ma
 
 ### Example
 
-The following code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
+The first code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
-### Example
-
-The following code example obtains an identification number for a tree-view control item. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states. This code example obtains a unique identification number for the root country/region node.
+The next code example obtains an identification number for a tree-view control item. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states. This code example obtains a unique identification number for the root country/region node.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#2](../../mfc/reference/codesnippet/cpp/ctreectrl-class_31.cpp)]
 
@@ -1527,13 +1519,11 @@ This method sends the [`TVM_SETAUTOSCROLLINFO`](/windows/win32/Controls/tvm-seta
 
 ### Example
 
-The following code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
+The first code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
-### Example
-
-The following code example sets the autoscroll behavior of the current tree-view control. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states. We intentionally made the tree-view control narrow so that it must automatically scroll to display the tree item that has the focus. The code example sets the tree-view control to automatically scroll 30 pixels per second every 5 seconds until the tree item is in view.
+The next code example sets the autoscroll behavior of the current tree-view control. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states. We intentionally made the tree-view control narrow so that it must automatically scroll to display the tree item that has the focus. The code example sets the tree-view control to automatically scroll 30 pixels per second every 5 seconds until the tree item is in view.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#4](../../mfc/reference/codesnippet/cpp/ctreectrl-class_33.cpp)]
 
@@ -1588,8 +1578,6 @@ When the tree control item is checked (*`fCheck`* set to `TRUE`), the item appea
 
 [!code-cpp[NVC_MFC_CTreeCtrl#29](../../mfc/reference/codesnippet/cpp/ctreectrl-class_34.cpp)]
 
-### Example
-
 To use checkboxes, set `TVS_CHECKBOXES` before populating the tree control.
 
 [!code-cpp[NVC_MFC_CTreeCtrl#30](../../mfc/reference/codesnippet/cpp/ctreectrl-class_35.cpp)]
@@ -1624,13 +1612,11 @@ This method sends the [`TVM_SETEXTENDEDSTYLE`](/windows/win32/Controls/tvm-setex
 
 ### Example
 
-The following code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
+The first code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
-### Example
-
-The following code example adds the `TVS_EX_AUTOHSCROLL` extended style to the current tree-view control. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states. We intentionally made the tree-view control narrow so that it must automatically scroll to display the tree item that has the focus.
+The next code example adds the `TVS_EX_AUTOHSCROLL` extended style to the current tree-view control. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states. We intentionally made the tree-view control narrow so that it must automatically scroll to display the tree item that has the focus.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#3](../../mfc/reference/codesnippet/cpp/ctreectrl-class_36.cpp)]
 
@@ -1843,13 +1829,11 @@ This method sends the [`TVM_SETITEM`](/windows/win32/Controls/tvm-setitem) messa
 
 ### Example
 
-The following code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
+The first code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
-### Example
-
-The following code example is a trivial test to determine whether the [`CTreeCtrl::GetItemExpandedImageIndex`](#getitemexpandedimageindex) method returns the value set by the [`CTreeCtrl::SetItemExpandedImageIndex`](#setitemexpandedimageindex) method. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states.
+The next code example is a trivial test to determine whether the [`CTreeCtrl::GetItemExpandedImageIndex`](#getitemexpandedimageindex) method returns the value set by the [`CTreeCtrl::SetItemExpandedImageIndex`](#setitemexpandedimageindex) method. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#8](../../mfc/reference/codesnippet/cpp/ctreectrl-class_40.cpp)]
 
@@ -1974,13 +1958,11 @@ This method sends the [`TVM_SETITEM`](/windows/win32/Controls/tvm-setitem) messa
 
 ### Example
 
-The following code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
+The first code example defines a variable, `m_treeCtrl`, that is used to access the current tree-view control. The code example also defines an unsigned integer and several `HTREEITEM` variables. These variables are used in the next example.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/ctreectrl-class_17.h)]
 
-### Example
-
-The following code example sets a tree-view item to disabled state. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states. This code example sets the Pennsylvania node to disabled state.
+The next code example sets a tree-view item to disabled state. In an earlier section of the code example, which is not shown, we created a tree-view that consists of a root country/region node for the United States, subnodes for the states of Pennsylvania and Washington, and tree items for cities in those states. This code example sets the Pennsylvania node to disabled state.
 
 [!code-cpp[NVC_MFC_CTreeCtrl_s1#7](../../mfc/reference/codesnippet/cpp/ctreectrl-class_41.cpp)]
 

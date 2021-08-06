@@ -119,13 +119,11 @@ The second form of the `Create` method is deprecated. Use the first form that sp
 
 ### Example
 
-The following code example defines two variables, named `m_Link1` and `m_Link2`, that are used to access two link controls.
+The first code example defines two variables, named `m_Link1` and `m_Link2`, that are used to access two link controls.
 
 [!code-cpp[NVC_MFC_CLinkCtrl_s1#2](../../mfc/reference/codesnippet/cpp/clinkctrl-class_1.h)]
 
-### Example
-
-The following code example creates one link control based on the location of another link control. The resource loader creates the first link control when your application starts. When your application enters the OnInitDialog method, you create the second link control relative to the position of the first link control. Then you resize the second link control to fit the text that it displays.
+The next code example creates one link control based on the location of another link control. The resource loader creates the first link control when your application starts. When your application enters the OnInitDialog method, you create the second link control relative to the position of the first link control. Then you resize the second link control to fit the text that it displays.
 
 [!code-cpp[NVC_MFC_CLinkCtrl_s1#1](../../mfc/reference/codesnippet/cpp/clinkctrl-class_2.cpp)]
 

@@ -57,9 +57,7 @@ public class MainClass {
 */
 ```
 
-### Example
-
-This Visual C++ program consumes the indexer.
+This C++/CLI program consumes the indexer.
 
 ```cpp
 // consume_cs_indexers_2.cpp
@@ -74,6 +72,8 @@ int main() {
       Console::WriteLine("Element #{0} = {1}", i, ic->default[i]);
 }
 ```
+
+The example produces this output:
 
 ```Output
 Element #0 = 21

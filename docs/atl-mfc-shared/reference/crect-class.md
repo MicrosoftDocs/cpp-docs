@@ -396,7 +396,7 @@ BOOL EqualRect(LPCRECT lpRect) const throw();
 ### Parameters
 
 *`lpRect`*<br/>
-Points to a [`RECT](/windows/win32/api/windef/ns-windef-rect) structure or `CRect` object that contains the upper-left and lower-right corner coordinates of a rectangle.
+Points to a [`RECT`](/windows/win32/api/windef/ns-windef-rect) structure or `CRect` object that contains the upper-left and lower-right corner coordinates of a rectangle.
 
 ### Return Value
 

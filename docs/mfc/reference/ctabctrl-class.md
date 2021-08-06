@@ -23,7 +23,6 @@ class CTabCtrl : public CWnd
 |----------|-----------------|
 |[`CTabCtrl::CTabCtrl`](#ctabctrl) | Constructs a `CTabCtrl` object.|
 
-
 ### Public methods
 
 |Name  |Description  |
@@ -667,7 +666,7 @@ A DWORD value that indicates which styles in *`dwNewStyle`* are to be affected. 
 
 A DWORD value that contains the previous [tab control extended styles](/windows/win32/Controls/tab-control-extended-styles), as described in the Windows SDK.
 
-### Return Value
+### Remarks
 
 This member function implements the behavior of the Win32 message [`TCM_SETEXTENDEDSTYLE`](/windows/win32/Controls/tcm-setextendedstyle), as described in the Windows SDK.
 
@@ -798,7 +797,7 @@ Minimum width to be set for a tab control item. If this parameter is set to -1, 
 
 The previous minimum tab width.
 
-### Return Value
+### Remarks
 
 This member function implements the behavior of the Win32 message [`TCM_SETMINTABWIDTH`](/windows/win32/Controls/tcm-setmintabwidth), as described in the Windows SDK.
 
@@ -840,5 +839,5 @@ You can get the tool tip control associated with a tab control by making a call 
 
 [`CWnd` Class](../../mfc/reference/cwnd-class.md)\
 [`CHeaderCtrl` Class](../../mfc/reference/cheaderctrl-class.md)\
-[`CListCtrl` Class](../../mfc/reference/clistctrl-class.md)
-[Hierarchy Chart](../../mfc/hierarchy-chart.md)\
+[`CListCtrl` Class](../../mfc/reference/clistctrl-class.md)\
+[Hierarchy Chart](../../mfc/hierarchy-chart.md)

@@ -275,7 +275,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>` cend`
+## <a name="cend"></a> `cend`
 
 Returns a **`const`** iterator that addresses the location just beyond the last element in a range.
 

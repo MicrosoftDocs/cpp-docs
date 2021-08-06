@@ -93,7 +93,7 @@ There are several ways to interact with and debug your Linux project.
 - Specific debugger options can be passed to GDB using the **Additional Debugger Commands** entry.  For example, you might want to ignore SIGILL (illegal instruction) signals.  You could use the **handle** command to achieve this by adding the following to the **Additional Debugger Commands** entry as shown above:
 
    `handle SIGILL nostop noprint`
-   
+
 - You can specify the path to the GDB used by Visual Studio using the **GDB Path** item in the project's **Debugging** property page. This property is available in Visual Studio 2019 version 16.9 and later.
 
 ## Debug with Attach to Process

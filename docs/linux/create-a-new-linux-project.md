@@ -34,10 +34,6 @@ To create a new Linux project in Visual Studio 2017, follow these steps:
    | **Empty Project (Linux)** | Project targeted for any Linux computer, with no sample code |
    | **Makefile Project (Linux)** | Project targeted for any Linux computer, built using a standard Makefile build system |
 
-## Next steps
-
-[Configure a MSBuild Linux project](configure-a-linux-project.md)
-
 ::: moniker-end
 
 ::: moniker range="msvc-160"
@@ -66,8 +62,8 @@ To create a new Linux project in Visual Studio 2019, follow these steps:
    | **Makefile Project** | Project targeted for any Linux computer, built using a standard Makefile build system |
    | **CMake Project** | Project targeted for any Linux computer, built using the CMake build system |
 
+::: moniker-end
+
 ## Next steps
 
 [Configure a Linux MSBuild project](configure-a-linux-project.md)
-
-::: moniker-end

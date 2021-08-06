@@ -50,6 +50,7 @@ In this example, you'll compile a header file as a header unit. Start by creatin
 
 1. Create a new C++ console app project.
 1. Replace the source file content as follows:
+
     ```cpp
     #include "Pythagorean.h"
     
@@ -59,7 +60,9 @@ In this example, you'll compile a header file as a header unit. Start by creatin
         return 0;
     }
     ```
+
 1. Add a header file called `Pythagorean.h`, and replace its content with this code:
+
     ```cpp
     #ifndef PYTHAGOREAN
     #define PYTHAGOREAN

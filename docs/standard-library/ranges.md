@@ -117,8 +117,6 @@ The range concepts mirror the hierarchy of iterator categories. This table lists
 | `std::ranges::random_access_range` | Can access an arbitrary element (in constant time) using the `[]` operator) | `std::deque` |
 | `std::ranges::contiguous_range` | The elements are stored in memory consecutively | `std::array`<br>`std::string`<br>`std::vector` |
 
-
-
 ## See also
 
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

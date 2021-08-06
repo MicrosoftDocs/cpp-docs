@@ -43,7 +43,7 @@ Pointer to **`FILE`** structure.
 
 Each of these functions returns a pointer to the newly opened file. If an error occurs, the original file is closed and the function returns a **`NULL`** pointer value. If *`path`*, *`mode`*, or *`stream`* is a null pointer, or if *filename* is an empty string, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return **`NULL`**.
 
-For more information on these, and other, error codes, see [`_doserrno, errno, _sys_errlist, and _sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). 
+For more information on these, and other, error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
@@ -55,9 +55,9 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-Text Routine Mappings
 
-|`TCHAR.H `routine|_`UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tfreopen`**|**`freopen`**|**`freopen`**|**`_wfreopen`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|--|--|--|--|
+| **`_tfreopen`** | **`freopen`** | **`freopen`** | **`_wfreopen`** |
 
 **`freopen`** is typically used to redirect the pre-opened files **`stdin`**, **`stdout`**, and **`stderr`** to files specified by the user. The new file associated with *`stream`* is opened with *`mode`*, which is a character string specifying the type of access requested for the file, as follows:
 
