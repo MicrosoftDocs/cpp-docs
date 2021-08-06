@@ -69,7 +69,6 @@ To enable `/translateInclude`, set the **Translate Includes to Imports** option 
 1. Change the **Translate Includes to Imports** dropdown to **Yes**
 ![Screenshot of the Property Pages dialog with the Translate Includes to Imports property highlighted.](../media/vs2019-translate-includes-option.png)
 
-
 ## See also
 
 [`/headerUnit` (Use header unit IFC)](headerunit.md).\
