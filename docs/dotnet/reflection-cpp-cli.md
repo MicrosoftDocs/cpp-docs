@@ -222,7 +222,7 @@ Compatible classes are then instantiated with the <xref:System.Activator.CreateI
 
 Note that the <xref:System.Reflection.Assembly.Load%2A> method does not accept assembly names that include the file extension. The main function in the application trims any provided extensions, so the following code example works in either case.
 
-### Example
+### Example app
 
 The following code defines the application that accepts plug-ins. An assembly name must be provided as the first argument. This assembly should contain at least one public <xref:System.Windows.Forms.Form> derived type.
 
@@ -268,7 +268,7 @@ int main() {
 }
 ```
 
-### Example
+### Example plug-ins
 
 The following code defines three classes derived from <xref:System.Windows.Forms.Form>. When the name of the resulting assembly name is passed to the executable in the previous listing, each of these three classes will be discovered and instantiated, despite the fact that they were all unknown to the hosting application at compile time.
 
