@@ -27,9 +27,7 @@ Although several `CComBSTR` methods will automatically convert an ANSI string ar
 
 [!code-cpp[NVC_ATL_Utilities#114](../atl/codesnippet/cpp/programming-with-ccombstr-atl_1.cpp)]
 
-If you are using a string literal to modify a `CComBSTR` object, use wide character strings. This will reduce unnecessary conversions.
-
-### Example
+If you're using a string literal to modify a `CComBSTR` object, use wide character strings to reduce unnecessary conversions.
 
 [!code-cpp[NVC_ATL_Utilities#115](../atl/codesnippet/cpp/programming-with-ccombstr-atl_2.cpp)]
 

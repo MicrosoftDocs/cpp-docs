@@ -77,7 +77,6 @@ Save the *`CMakeSettings.json`* file. In the configuration dropdown, select **ar
 
 ![Ensure that arm64-debug is selected in the Visual Studio configurations drop-down.](media/vs2019-cmake-manage-configurations-arm.png)
 
-
 ## Add a debug configuration file
 
 Next, add configuration information that tells Visual Studio where to find your remote machine, along with other configuration details.

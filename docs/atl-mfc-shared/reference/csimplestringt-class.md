@@ -337,8 +337,6 @@ _tprintf_s(_T("Alloc length is %d, String length is %d\n"),
    str.GetAllocLength(), str.GetLength());
 ```
 
-### Remarks
-
 The output from this example is as follows:
 
 ```Output
