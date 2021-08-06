@@ -146,17 +146,19 @@ The currently active MDI child frame window can determine the caption of the par
 
 The framework calls this member function in response to a user command to create a child window, and the framework uses the *pContext* parameter to properly connect the child window to the application. When you call `Create`, *pContext* can be NULL.
 
-### Example
+### Example 1
 
-Example 1:
+This example menu command handler invokes `Create` to create an MDI child window:
 
 [!code-cpp[NVC_MFCWindowing#7](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_1.cpp)]
 
-### Example
+### Example 2
 
-Example 2:
+The example code calls the `Create` method of `CHelloWnd`, a class derived from `CMDIChildWnd`:
 
 [!code-cpp[NVC_MFCWindowing#8](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_2.cpp)]
+
+This example shows the `Create` implementation of the `CHelloWnd` class:
 
 [!code-cpp[NVC_MFCWindowing#9](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_3.cpp)]
 
