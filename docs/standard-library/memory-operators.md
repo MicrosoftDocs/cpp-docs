@@ -54,6 +54,8 @@ The second and third template operators return `!(left == right)`.
 
 ### Example
 
+The first code example shows the results of comparing allocator objects.
+
 ```cpp
 // memory_op_me.cpp
 // compile with: /EHsc
@@ -81,7 +83,7 @@ int main( )
 The allocator objects Alloc & v1Alloc are equal.
 ```
 
-### Example
+The next code example compares shared pointers to allocated objects:
 
 ```cpp
 // std__memory__operator_ne.cpp
@@ -155,6 +157,8 @@ The second and third template operators return `left.get() ==  right.get()`.
 
 ### Example
 
+The first code example shows the results of comparing allocator objects constructed in different ways.
+
 ```cpp
 // memory_op_eq.cpp
 // compile with: /EHsc
@@ -193,7 +197,7 @@ The allocator objects cv1Alloc & v1Alloc are equal.
 The allocator objects cAlloc & Alloc are equal.
 ```
 
-### Example
+The next code example compares shared pointers to allocated objects:
 
 ```cpp
 // std__memory__operator_eq.cpp
