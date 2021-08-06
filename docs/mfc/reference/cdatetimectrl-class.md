@@ -89,13 +89,11 @@ This method sends the [DTM_CLOSEMONTHCAL](/windows/win32/Controls/dtm-closemonth
 
 ### Example
 
-The following code example defines the variable, *m_dateTimeCtrl*, that is used to programmatically access the date and time picker control. This variable is used in the next example.
+The first code example defines the variable, `m_dateTimeCtrl`, that is used to programmatically access the date and time picker control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
-### Example
-
-The following code example closes the drop-down calendar for the current date and time picker control.
+The next code example closes the drop-down calendar for the current date and time picker control.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#5](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_2.cpp)]
 
@@ -166,13 +164,11 @@ This method sends the [DTM_GETDATETIMEPICKERINFO](/windows/win32/Controls/dtm-ge
 
 ### Example
 
-The following code example defines the variable, *m_dateTimeCtrl*, that is used to programmatically access the date and time picker control. This variable is used in the next example.
+The first code example defines the variable, `m_dateTimeCtrl`, that is used to programmatically access the date and time picker control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
-### Example
-
-The following code example indicates whether it successfully retrieves information about the current date and time picker control.
+The next code example indicates whether it successfully retrieves information about the current date and time picker control.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#4](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_4.cpp)]
 
@@ -350,13 +346,11 @@ This method sends the [DTM_GETIDEALSIZE](/windows/win32/Controls/dtm-getidealsiz
 
 ### Example
 
-The following code example defines the variable, *m_dateTimeCtrl*, that is used to programmatically access the date and time picker control. This variable is used in the next example.
+The first code example defines the variable, `m_dateTimeCtrl`, that is used to programmatically access the date and time picker control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
-### Example
-
-The following code example retrieves the ideal size to display the date and time picker control.
+The next code example retrieves the ideal size to display the date and time picker control.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_9.cpp)]
 
@@ -479,13 +473,11 @@ This method sends the [DTM_SETMCSTYLE](/windows/win32/Controls/dtm-setmcstyle) m
 
 ### Example
 
-The following code example defines the variable, *m_dateTimeCtrl*, that is used to programmatically access the date and time picker control. This variable is used in the next example.
+The first code example defines the variable, `m_dateTimeCtrl`, that is used to programmatically access the date and time picker control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
-### Example
-
-The following code example sets the date and time picker control to display week numbers, abbreviated names of days of the week, and no today indicator.
+The next code example sets the date and time picker control to display week numbers, abbreviated names of days of the week, and no today indicator.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_12.cpp)]
 
