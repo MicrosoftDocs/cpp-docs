@@ -199,11 +199,15 @@ The `rsync` command is used by both MSBuild-based Linux projects and CMake proje
 
 ![Screenshot showing a Headers Error.](media/port-forwarding-headers-error.png)
 
+
+
 `rsync` is also used by Visual Studio's CMake support to copy source files to the remote system. If you can't enable TCP port forwarding, you can use `sftp` as your remote copy sources method. `sftp` is often slower than `rsync`, but doesn't have a dependency on TCP port forwarding. You can manage your remote copy sources method with the `remoteCopySourcesMethod` property in the [CMake Settings Editor](../build/cmakesettings-reference.md#settings-for-cmake-linux). If TCP port forwarding is disabled on your remote system, you'll see an error in the CMake output window the first time it invokes `rsync`.
 
 ![Screenshot showing an Rsync Error.](media/port-forwarding-copy-error.png)
 
+
 `gdbserver` can be used for debugging on embedded devices. If you can't enable TCP port forwarding, then you must use `gdb` for all remote debugging scenarios. `gdb` is used by default when debugging projects on a remote system.
+
 
 Visual Studio's Linux support has a dependency on TCP port forwarding. Both `rsync` and `gdbserver` are affected if TCP port forwarding is disabled on your remote system. If this dependency impacts you, vote for this [suggestion ticket](https://developercommunity2.visualstudio.com/t/shDonshshtsh-shrelysh-s/840265?space=62) on Developer Community.
 
