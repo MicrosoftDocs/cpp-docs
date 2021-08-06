@@ -1327,13 +1327,11 @@ This function sends the [EM_SHOWBALLOONTIP](/windows/win32/Controls/em-showballo
 
 ### Example
 
-The following code example defines a variable, `m_cedit`, that is used to access the current edit control. This variable is used in the next example.
+The first code example defines a variable, `m_cedit`, that is used to access the current edit control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CEdit_s1#1](../../mfc/reference/codesnippet/cpp/cedit-class_25.h)]
 
-### Example
-
-The following code example displays a balloon tip for an edit control. The [CEdit::ShowBalloonTip](#showballoontip) method specifies a title and balloon tip text.
+The next code example displays a balloon tip for an edit control. The [CEdit::ShowBalloonTip](#showballoontip) method specifies a title and balloon tip text.
 
 [!code-cpp[NVC_MFC_CEdit_s1#3](../../mfc/reference/codesnippet/cpp/cedit-class_26.cpp)]
 

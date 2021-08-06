@@ -54,7 +54,6 @@ When you specify one of these inheritance-model options, that model gets used fo
 
 1. Enter the compiler option in the **Additional Options** box.
 
-
 ### To set this compiler option programmatically
 
 - See <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.

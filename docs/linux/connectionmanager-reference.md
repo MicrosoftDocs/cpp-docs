@@ -48,11 +48,11 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
   
 - **`clean`**
 
-  Deletes header cache for connections that no longer exist. 
+  Deletes header cache for connections that no longer exist.
 
 - **`list`** \[**`--properties`**]
 
-  Displays information, IDs, and properties of all stored connections. 
+  Displays information, IDs, and properties of all stored connections.
 
 - **`help`**
 
@@ -64,7 +64,7 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
   
 - **`update`** \[*default* \| *all* \| *connection_id* \| *user\@host* \[**`--port`** *port*]] \[**`--previous`**] [**`--fingerprint`**]
 
-  Added in Visual Studio 16.10. Updates the host key fingerprint of the specified connection(s). 
+  Added in Visual Studio 16.10. Updates the host key fingerprint of the specified connection(s).
 
 ### Options
 
@@ -91,7 +91,7 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
 - **`-n`**, **`--dry-run`**
 
   Does a dry run of the command.
- 
+
 - **`--p`**
 
   Same as **`--password`**.
@@ -102,7 +102,7 @@ The functionality of ConnectionManager.exe is also available in Visual Studio. T
   
 - **`--previous`**
 
-  Indicates that the connection(s) will be read from the previous version of connection manager, updated, and written to the new version. 
+  Indicates that the connection(s) will be read from the previous version of connection manager, updated, and written to the new version.
   
 - **`--fingerprint`**
 

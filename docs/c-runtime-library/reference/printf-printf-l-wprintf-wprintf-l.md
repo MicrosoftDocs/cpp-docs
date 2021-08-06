@@ -61,12 +61,6 @@ The **`printf`** function formats and prints a series of characters and values t
 
 The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
-### Generic-Text Routine Mappings
-
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tprintf`**|**`printf`**|**`printf`**|**`wprintf`**|
-
 The *`format`* argument consists of ordinary characters, escape sequences, and (if arguments follow *`format`*) format specifications. The ordinary characters and escape sequences are copied to **`stdout`** in order of their appearance. For example, the line:
 
 ```C

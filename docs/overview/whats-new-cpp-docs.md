@@ -124,7 +124,7 @@ In addition to the changes below, many articles were updated to prevent the mach
 - [Compiler warnings C4400 Through C4599](../error-messages/compiler-warnings/compiler-warnings-c4400-through-c4599.md) - added some Visual Studio version 2017 diagnostics
 - [Compiler warnings C4800 through C5999](../error-messages/compiler-warnings/compiler-warnings-c4800-through-c4999.md) - update Visual Studio 16.10 conformance improvements and new warnings; add new 16.10 warnings, version info; added some version 2017 diagnostics; add missing errors and warnings: C7000 - C7999, C4834
 - [Vectorizer and parallelizer messages](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md) - add vectorizer failure reason 505; add 1204 reason code
- 
+
 ## C/C++ compiler intrinsics and assembly language
 
 **Updated articles**
@@ -210,7 +210,7 @@ In addition to the changes below, many articles were updated to prevent the mach
 - [Unicode support in the compiler and linker](../build/reference/unicode-support-in-the-compiler-and-linker.md) - add info about how to save using a different encoding
 - [Use the Microsoft C++ toolset from the command line](../build/building-on-the-command-line.md) - updated for VS 2019
 - [Walkthrough: Compile a C program on the command line](../build/walkthrough-compile-a-c-program-on-the-command-line.md) - Visual Studio 16.10 updates to C17 conformance
-- [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md) - clarified notepad behavior when opening source file 
+- [Walkthrough: Compiling a Native C++ Program on the Command Line](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md) - clarified notepad behavior when opening source file
 
 ## C++ Standard Library (STL) reference
 
@@ -237,7 +237,7 @@ In addition to the changes below, many articles were updated to prevent the mach
 
 **Updated articles**
 
-- [C6031](../code-quality/c6031.md) - add note about ignoring a function's return value 
+- [C6031](../code-quality/c6031.md) - add note about ignoring a function's return value
 - [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](../code-quality/c26432.md) - update code examples
 - [C26497 USE_CONSTEXPR_FOR_FUNCTION](../code-quality/c26497.md) - add note about when warning won't be issued
 

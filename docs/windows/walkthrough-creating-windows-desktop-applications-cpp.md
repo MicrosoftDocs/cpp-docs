@@ -211,7 +211,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    // hInstance: the first parameter from WinMain
    // NULL: not used in this application
    HWND hWnd = CreateWindowEx(
-  	WS_EX_OVERLAPPEDWINDOW,
+   WS_EX_OVERLAPPEDWINDOW,
       szWindowClass,
       szTitle,
       WS_OVERLAPPEDWINDOW,
