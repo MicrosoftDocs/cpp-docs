@@ -587,7 +587,7 @@ END_INTERFACE_MAP
 
 The framework takes care of IUnknown because it is always required.
 
-### INTERFACE_AGGREGATE — Macro Description
+### INTERFACE_PART — Macro Description
 
 ```cpp
 INTERFACE_AGGREGATE(theClass, theAggr)
