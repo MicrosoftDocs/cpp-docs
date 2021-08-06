@@ -63,6 +63,7 @@ This step creates a project that includes two libraries: `<iostream>` and `<vect
 
 1. With Visual Studio, create a new C++ console app project.
 1. Modify the source file as follows:
+
     ```cpp
     import <iostream>;
     import <vector>;
@@ -73,7 +74,7 @@ This step creates a project that includes two libraries: `<iostream>` and `<vect
         std::cout << numbers[1];
     }
     ```
-    
+
 ### Set project options and run the project
 
 Follow these steps to set the options that cause the build system to scan for imported headers that can be compiled into header units.
@@ -103,7 +104,7 @@ The more flexible way to consume STL headers is to create one or more static lib
 
 This option ensures that header units for a particular header will be built only once. It's similar to using a shared precompiled header file, but it's much easier.
 
-In this example, you'll create a project that imports `<iostream>` and `<vector>`. After the solution is built, you'll reference this shared header unit project from another C++ project. Everywhere `import <iostream>;` or `import <vector>;` is found in the referencing project, the project will import the built header unit for that library instead of running the contents of the library header through the preprocessor. 
+In this example, you'll create a project that imports `<iostream>` and `<vector>`. After the solution is built, you'll reference this shared header unit project from another C++ project. Everywhere `import <iostream>;` or `import <vector>;` is found in the referencing project, the project will import the built header unit for that library instead of running the contents of the library header through the preprocessor.
 
 In projects that include the same library header in multiple files, this change will improve build performance similarly to how PCH files do. The header won't have to be processed over and over by the files that include it. Instead, the already processed compiled header unit will be imported.
 
@@ -157,6 +158,7 @@ Next, create a project that will use the built `<vector>` and `<iostream>` share
     ```
 
 Change the **C++ Language Standard** for the compiler. To use header units, you need the [`/std:c++latest`](./reference/std-specify-language-standard-version.md) switch.
+
 1. In **Solution Explorer**, right-click the **Walkthrough** project and select **Properties**. The project property pages open:
 :::image type="content" source="media/set-cpp-language-latest.png" alt-text="Screenshot that shows setting the language standard to the preview version.":::
 1. In the left pane of the **Walkthrough** project property pages, select **Configuration Properties** > **General**.
@@ -165,7 +167,7 @@ Change the **C++ Language Standard** for the compiler. To use header units, you 
 
 In the **Walkthrough** project, add a reference to the **SharedPrj** project.
 
-1. In the **Walkthrough** project, select the **References** node, and then select **Add Reference**. Select **SharedPrj** in the list of projects: 
+1. In the **Walkthrough** project, select the **References** node, and then select **Add Reference**. Select **SharedPrj** in the list of projects:
 :::image type="content" source="./media/add-reference-to-walkthrough.png" alt-text="Screenshot that shows the Add Reference dialog. It's used to add a reference to the Walkthrough project.":::
 Now that you've added this reference, the build system will use the header units built by **SharedPrj** whenever an `import` in the **Walkthrough** project matches one of the built header units in **SharedPrj**.
 1. Select **OK** to close the **Add Reference** dialog.
@@ -192,6 +194,7 @@ For example, if you have `#include <vector>` in your project and you reference a
 ## Reuse header units among projects
 
 Header units built by a static library project are automatically available to all directly and indirectly referencing projects. There are project settings that allow you to select which header units should be automatically available to all referencing projects. The settings are in project settings under **VC++ Directories**.
+
 1. In **Solution Explorer**, right-click the project and select **Properties**.
 1. In the left pane of the project properties page, select **VC++ Directories**:
 :::image type="content" source="media/public-include-module-directories-setting.png" alt-text="Screenshot that shows public project content properties, like Public Include Directories and All Header Files are Public.":::
@@ -209,18 +212,20 @@ Typically, the easiest way to reuse header units among solutions is to reference
 But if you need to use a built header unit that you don't have the project for, you can specify where the built *`.ifc`* file is so you can import it in your solution.
 
 To access this setting:
+
 1. On the main menu, select **Project** > **Properties**. The project properties page opens.
 1. In the left pane of the project properties page, select **C/C++** > **General**.
 1. In the **Additional Module Dependencies** list, add the modules to reference. Here's an example of the format to use for **Additional Module Dependencies**: `ModuleName1=Path\To\ModuleName1.ifc; ModuleName2=Path\To\ModuleName2.ifc`
 :::image type="content" source="media/vs2019-additional-module-dependencies.png" alt-text="Screenshot showing project properties under C/C++, General, which Additional Module Dependencies selected.":::
 
 ## Select among multiple copies of a header unit
- 
+
 If you reference two or more projects that built two or more header units with the same name, or that built two or more header units for the same header file, there will be multiple header units to choose from for the same import. You might have different versions of the header unit that were built with different compiler settings, for example, and need to inform the compiler which one to use.
 
 Use  the project properties **C/C++** > **Additional Header Unit Dependencies** setting to resolve collisions by specifying which header unit should be used. Otherwise, you can't predict which one will be picked.
 
 To access this setting:
+
 1. On the main menu, select **Project** > **Properties**. The project properties page opens.
 1. In the left pane of the project properties page, select **C/C++** > **General**.
 1. Use **Additional Header Unit Dependencies** to resolve collisions by specifying which module or header unit should be used for the project. Use this format for **Additional Header Unit Dependencies**: `Path\To\Header1.h= Path\To\HeaderUnit1.ifc;Path\To\Header2.h= Path\To\ HeaderUnit2.ifc`

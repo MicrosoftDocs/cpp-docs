@@ -10,7 +10,7 @@ Wildcard argument expansion is Microsoft-specific.
 
 When you run a C program, you can use either of the two wildcards, the question mark (**`?`**) and the asterisk (**`*`**), to specify filename and path arguments on the command line.
 
-By default, wildcards aren't expanded in command-line arguments. You can replace the normal argument vector `argv` loading routine with a version that does expand wildcards by linking with the *`setargv.obj`* or *`wsetargv.obj`* file. If your program uses a `main` function, link with *`setargv.obj`*. If your program uses a `wmain` function, link with *`wsetargv.obj`*. Both of these have equivalent behavior. 
+By default, wildcards aren't expanded in command-line arguments. You can replace the normal argument vector `argv` loading routine with a version that does expand wildcards by linking with the *`setargv.obj`* or *`wsetargv.obj`* file. If your program uses a `main` function, link with *`setargv.obj`*. If your program uses a `wmain` function, link with *`wsetargv.obj`*. Both of these have equivalent behavior.
 
 To link with *`setargv.obj`* or *`wsetargv.obj`*, use the **`/link`** option. For example:
 
