@@ -426,13 +426,13 @@ void RecalcSize();
 
 This method sends the [PGM_RECALCSIZE](/windows/win32/Controls/pgm-recalcsize) message, which is described in the Windows SDK. Consequently, the pager control sends the [PGN_CALCSIZE](/windows/win32/Controls/pgn-calcsize) notification to obtain the scrollable dimensions of the contained window.
 
-### Example
+### Example 1
 
 The following example uses the [CPagerCtrl::RecalcSize](#recalcsize) method to request the current pager control to recalculate its size.
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#3](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_6.cpp)]
 
-### Example
+### Example 2
 
 The following example uses [message reflection](../../mfc/tn062-message-reflection-for-windows-controls.md) to enable the pager control to recalculate its own size instead of requiring the control's parent dialog to perform the calculation. The example derives the `MyPagerCtrl` class from the [CPagerCtrl class](../../mfc/reference/cpagerctrl-class.md), then uses a message map to associate the [PGN_CALCSIZE](/windows/win32/Controls/pgn-calcsize) notification with the `OnCalcsize` notification handler. In this example, the notification handler sets the width and height of the pager control to fixed values.
 

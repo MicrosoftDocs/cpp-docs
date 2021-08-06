@@ -1121,7 +1121,7 @@ The following table lists the intrinsics available on x86 processors. The Techno
 | [`_mm256_round_ps`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_round_ps) | AVX \[2] | immintrin.h | `__m256 _mm256_round_ps(__m256, int);` |
 | [`_mm256_rsqrt_ps`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_rsqrt_ps) | AVX \[2] | immintrin.h | `__m256 _mm256_rsqrt_ps(__m256);` |
 | [`_mm256_sad_epu8`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_sad_epu8) | AVX2 \[2] | immintrin.h | `__m256i _mm256_sad_epu8(__m256i, __m256i);` |
-| [`_mm256_set_epi16`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_set_epi16) | AVX \[2] | immintrin.h | `(__m256i _mm256_set_epi16(short ` |
+| [`_mm256_set_epi16`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_set_epi16) | AVX \[2] | immintrin.h | `(__m256i _mm256_set_epi16(short, short, short, short, short, short, short, short, short, short, short, short, short, short, short, short);` |
 | [`_mm256_set_epi32`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_set_epi32) | AVX \[2] | immintrin.h | `__m256i _mm256_set_epi32(int, int, int, int, int, int, int, int);` |
 | [`_mm256_set_epi8`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_set_epi8) | AVX \[2] | immintrin.h | `__m256i _mm256_set_epi8(char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char);` |
 | [`_mm256_set_pd`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_set_pd) | AVX \[2] | immintrin.h | `__m256d _mm256_set_pd(double, double, double, double);` |
@@ -1131,9 +1131,9 @@ The following table lists the intrinsics available on x86 processors. The Techno
 | [`_mm256_set1_epi8`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_set1_epi8) | AVX \[2] | immintrin.h | `__m256i _mm256_set1_epi8(char);` |
 | [`_mm256_set1_pd`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_set1_pd) | AVX \[2] | immintrin.h | `__m256d _mm256_set1_pd(double);` |
 | [`_mm256_set1_ps`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_set1_ps) | AVX \[2] | immintrin.h | `__m256 _mm256_set1_ps(float);` |
-| [`_mm256_setr_epi16`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_setr_epi16) | AVX \[2] | immintrin.h | `(__m256i _mm256_setr_epi16(short ` |
+| [`_mm256_setr_epi16`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_setr_epi16) | AVX \[2] | immintrin.h | `(__m256i _mm256_setr_epi16(short, short, short, short, short, short, short, short, short, short, short, short, short, short, short, short);` |
 | [`_mm256_setr_epi32`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_setr_epi32) | AVX \[2] | immintrin.h | `__m256i _mm256_setr_epi32(int, int, int, int, int, int, int, int);` |
-| [`_mm256_setr_epi8`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_setr_epi8) | AVX \[2] | immintrin.h | `(__m256i _mm256_setr_epi8(char ` |
+| [`_mm256_setr_epi8`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_setr_epi8) | AVX \[2] | immintrin.h | `(__m256i _mm256_setr_epi8(char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char, char,);` |
 | [`_mm256_setr_pd`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_setr_pd) | AVX \[2] | immintrin.h | `__m256d _mm256_setr_pd(double, double, double, double);` |
 | [`_mm256_setr_ps`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_setr_ps) | AVX \[2] | immintrin.h | `__m256 _mm256_setr_ps(float, float, float, float, float, float, float, float);` |
 | [`_mm256_setzero_pd`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm256_setzero_pd) | AVX \[2] | immintrin.h | `__m256d _mm256_setzero_pd(void);` |
@@ -1271,10 +1271,10 @@ The following table lists the intrinsics available on x86 processors. The Techno
 | [`__sidt`](sidt.md) |  | intrin.h | `void __sidt(void*);` |
 | `__slwpcb` | LWP \[1] | ammintrin.h | `void *__slwpcb(void);` |
 | `_stac` | SMAP | intrin.h | `void _stac(void);` |
-| [`_storebe_i16`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_storebe_i16&expand=5141) | MOVBE | immintrin.h | `void _storebe_i16(void *, short); \[3] ` |
-| [`_storebe_i32`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_storebe_i32&expand=5142) | MOVBE | immintrin.h | `void _storebe_i32(void *, int); \[3] ` |
-| `_store_be_u16` | MOVBE | immintrin.h | `void _store_be_u16(void *, unsigned short); \[3] ` |
-| `_store_be_u32` | MOVBE | immintrin.h | `void _store_be_u32(void *, unsigned int); \[3] ` |
+| [`_storebe_i16`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_storebe_i16&expand=5141) | MOVBE | immintrin.h | `void _storebe_i16(void *, short);` \[3] |
+| [`_storebe_i32`](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_storebe_i32&expand=5142) | MOVBE | immintrin.h | `void _storebe_i32(void *, int);` \[3] |
+| `_store_be_u16` | MOVBE | immintrin.h | `void _store_be_u16(void *, unsigned short);` \[3] |
+| `_store_be_u32` | MOVBE | immintrin.h | `void _store_be_u32(void *, unsigned int);` \[3] |
 | `_Store_HLERelease` | HLE \[2] | immintrin.h | `void _Store_HLERelease(long volatile *, long);` |
 | `_StorePointer_HLERelease` | HLE \[2] | immintrin.h | `void _StorePointer_HLERelease(void * volatile *, void *);` |
 | [`__stosb`](stosb.md) |  | intrin.h | `void __stosb(unsigned char *, unsigned char, size_t);` |

@@ -489,7 +489,7 @@ Examples:
 
 If there's more than one subsequence that matches at some location in the target sequence, there are two ways to choose the matching pattern.
 
-*First match* chooses the subsequence that was found first when the regular expression is matched. 
+*First match* chooses the subsequence that was found first when the regular expression is matched.
 
 *Longest match* chooses the longest subsequence from the ones that match at that location. If there's more than one subsequence that has the maximal length, longest match chooses the one that was found first.
 

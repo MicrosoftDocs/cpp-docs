@@ -53,7 +53,7 @@ If the specification of an array type includes type qualifiers, the element is q
 If **`volatile`** is used alone, **`int`** is assumed. The **`volatile`** type specifier can be used to provide reliable access to special memory locations. Use **`volatile`** with data objects that may be accessed or altered by signal handlers, by concurrently executing programs, or by special hardware such as memory-mapped I/O control registers. You can declare a variable as **`volatile`** for its lifetime, or you can cast a single reference to be **`volatile`**.
 
 - An item can be both **`const`** and **`volatile`**, in which case the item couldn't be legitimately modified by its own program, but could be modified by some asynchronous process.
- 
+
 ## `restrict`
 
 The **`restrict`** type qualifier, introduced in C99 and available in [`/std:c11` or `/std:c17`](../build/reference/std-specify-language-standard-version.md) mode, can be applied to pointer declarations. It qualifies the pointer, not what it points at.

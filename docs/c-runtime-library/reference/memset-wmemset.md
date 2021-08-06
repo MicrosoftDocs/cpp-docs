@@ -85,14 +85,14 @@ int main( void )
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 Before: This is a test of the memset function
 After:  **** is a test of the memset function
 ```
 
-Here's an example of the use of wmemset:
+Here's an example of the use of `wmemset`:
 
 ```C
 // crt_wmemset.c
@@ -113,7 +113,7 @@ int main( void )
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 Before: This is a test of the wmemset function

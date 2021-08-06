@@ -15,8 +15,6 @@ This article shows how to use lambda expressions in your programs. For an overvi
 
 Because a lambda expression is typed, you can assign it to an **`auto`** variable or to a [`function`](../standard-library/function-class.md) object, as shown here:
 
-### Code
-
 ```cpp
 // declaring_lambda_expressions1.cpp
 // compile with: /EHsc /W4
@@ -40,7 +38,7 @@ int main()
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 5
@@ -56,8 +54,6 @@ Although lambda expressions are most often declared in the body of a function, y
 ### Example 2
 
 The Microsoft C++ compiler binds a lambda expression to its captured variables when the expression is declared instead of when the expression is called. The following example shows a lambda expression that captures the local variable `i` by value and the local variable `j` by reference. Because the lambda expression captures `i` by value, the reassignment of `i` later in the program does not affect the result of the expression. However, because the lambda expression captures `j` by reference, the reassignment of `j` does affect the result of the expression.
-
-### Code
 
 ```cpp
 // declaring_lambda_expressions2.cpp
@@ -85,7 +81,7 @@ int main()
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 47
@@ -101,8 +97,6 @@ You can call a lambda expression immediately, as shown in the next code snippet.
 
 This example declares a lambda expression that returns the sum of two integers and calls the expression immediately with the arguments `5` and `4`:
 
-### Code
-
 ```cpp
 // calling_lambda_expressions1.cpp
 // compile with: /EHsc
@@ -116,7 +110,7 @@ int main()
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 9
@@ -125,8 +119,6 @@ int main()
 ### Example 2
 
 This example passes a lambda expression as an argument to the `find_if` function. The lambda expression returns **`true`** if its parameter is an even number.
-
-### Code
 
 ```cpp
 // calling_lambda_expressions2.cpp
@@ -161,7 +153,7 @@ int main()
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 The first even number in the list is 42.
@@ -178,8 +170,6 @@ For more information about the `find_if` function, see [`find_if`](../standard-l
 ### Example
 
 You can nest a lambda expression inside another one, as shown in this example. The inner lambda expression multiplies its argument by 2 and returns the result. The outer lambda expression calls the inner lambda expression with its argument and adds 3 to the result.
-
-### Code
 
 ```cpp
 // nesting_lambda_expressions.cpp
@@ -199,7 +189,7 @@ int main()
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 13
@@ -216,8 +206,6 @@ In this example, `[](int y) { return y * 2; }` is the nested lambda expression.
 ### Example
 
 Many programming languages support the concept of a *higher-order function.* A higher-order function is a lambda expression that takes another lambda expression as its argument or returns a lambda expression. You can use the [`function`](../standard-library/function-class.md) class to enable a C++ lambda expression to behave like a higher-order function. The following example shows a lambda expression that returns a `function` object and a lambda expression that takes a `function` object as its argument.
-
-### Code
 
 ```cpp
 // higher_order_lambda_expression.cpp
@@ -252,7 +240,7 @@ int main()
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 30
@@ -338,7 +326,7 @@ int main()
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 3
@@ -358,8 +346,6 @@ The `ApplyScale` function uses a lambda expression to print the product of the s
 ### Example
 
 Because lambda expressions are typed, you can use them with C++ templates. The following example shows the `negate_all` and `print_all` functions. The `negate_all` function applies the unary **`operator-`** to each element in the `vector` object. The `print_all` function prints each element in the `vector` object to the console.
-
-### Code
 
 ```cpp
 // template_lambda_expression.cpp
@@ -399,7 +385,7 @@ int main()
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 34
@@ -422,8 +408,6 @@ For more information about C++ templates, see [Templates](../cpp/templates-cpp.m
 ### Example
 
 The body of a lambda expression follows the rules for both structured exception handling (SEH) and C++ exception handling. You can handle a raised exception in the body of a lambda expression or defer exception handling to the enclosing scope. The following example uses the **`for_each`** function and a lambda expression to fill a `vector` object with the values of another one. It uses a **`try`**/**`catch`** block to handle invalid access to the first vector.
-
-### Code
 
 ```cpp
 // eh_lambda_expression.cpp
@@ -461,7 +445,7 @@ int main()
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 Caught 'invalid vector<T> subscript'.
@@ -478,8 +462,6 @@ For more information about exception handling, see [Exception Handling](../cpp/e
 ### Example
 
 The capture clause of a lambda expression cannot contain a variable that has a managed type. However, you can pass an argument that has a managed type to the parameter list of a lambda expression. The following example contains a lambda expression that captures the local unmanaged variable `ch` by value and takes a <xref:System.String?displayProperty=fullName> object as its parameter.
-
-### Code
 
 ```cpp
 // managed_lambda_expression.cpp
@@ -498,7 +480,7 @@ int main()
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 Hello!

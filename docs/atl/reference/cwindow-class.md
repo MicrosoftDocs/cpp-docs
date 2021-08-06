@@ -874,9 +874,7 @@ BOOL GetDlgItemText(
 
 ### Remarks
 
-See [GetDlgItemText](/windows/win32/api/winuser/nf-winuser-getdlgitemtextw) in the Windows SDK.
-
-### Remarks
+For more information, see [`GetDlgItemText`](/windows/win32/api/winuser/nf-winuser-getdlgitemtextw) in the Windows SDK.
 
 The second version of this method allows you to copy the control's text to a BSTR. This version returns TRUE if the text is successfully copied; otherwise, FALSE.
 
@@ -1209,9 +1207,7 @@ LONG_PTR GetWindowLongPtr(int nIndex) const throw();
 
 ### Remarks
 
-See [GetWindowLongPtr](/windows/win32/api/winuser/nf-winuser-getwindowlongptrw) in the Windows SDK.
-
-### Remarks
+For more information, see [`GetWindowLongPtr`](/windows/win32/api/winuser/nf-winuser-getwindowlongptrw) in the Windows SDK.
 
 If you are retrieving a pointer or a handle, this function supersedes the `CWindow::GetWindowLong` method.
 
@@ -1429,9 +1425,7 @@ void InvalidateRgn(HRGN hRgn, BOOL bErase = TRUE) throw();
 
 ### Remarks
 
-See [InvalidateRgn](/windows/win32/api/winuser/nf-winuser-invalidatergn) in the Windows SDK.
-
-### Remarks
+For more information, see [`InvalidateRgn`](/windows/win32/api/winuser/nf-winuser-invalidatergn) in the Windows SDK.
 
 Specifies a **`void`** return type, while the `InvalidateRgn` Win32 function always returns TRUE.
 

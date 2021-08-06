@@ -213,15 +213,15 @@ The character that is used to represent a one. The default is '1'.
 
 #### Remarks
 
-1) Constructs an object of class `bitset<N>` and initializes all N bits to a default value of zero.
+`1)` Constructs an object of class `bitset<N>` and initializes all N bits to a default value of zero.
 
-2-3) Constructs an object of class `bitset<N>` and initializes the bits from the `val` parameter.
+`2-3)` Constructs an object of class `bitset<N>` and initializes the bits from the `val` parameter.
 
-4) Constructs an object of class `bitset<N>` and initializes bits from the characters provided in a string of zeros and ones. If any characters of the string are other than 0 or 1, the constructor throws an object of class [`invalid argument`](../standard-library/invalid-argument-class.md). If the position specified (*`pos`*) is beyond the length of the string, then the constructor throws an object of class [`out_of_range`](../standard-library/out-of-range-class.md). The constructor sets only those bits at position *j* in the `bitset` for which the character in the string at position `pos + j` is 1. By default, *`pos`* is 0.
+`4)` Constructs an object of class `bitset<N>` and initializes bits from the characters provided in a string of zeros and ones. If any characters of the string are other than 0 or 1, the constructor throws an object of class [`invalid argument`](../standard-library/invalid-argument-class.md). If the position specified (*`pos`*) is beyond the length of the string, then the constructor throws an object of class [`out_of_range`](../standard-library/out-of-range-class.md). The constructor sets only those bits at position *j* in the `bitset` for which the character in the string at position `pos + j` is 1. By default, *`pos`* is 0.
 
-5) Similar to 4) but includes an another parameter, *`count`*, that specifies the number of bits to initialize. It has two optional parameters, *`_Zero`* and *`_One`*, which indicate what character in *`str`* should be interpreted to mean a 0 bit and a 1 bit, respectively.
+`5)` Similar to `4)` but includes an another parameter, *`count`*, that specifies the number of bits to initialize. It has two optional parameters, *`_Zero`* and *`_One`*, which indicate what character in *`str`* should be interpreted to mean a 0 bit and a 1 bit, respectively.
 
-6) Constructs an object of class `bitset<N>`, initializing the N bits to values that correspond to the characters provided in a c-style character string of zeros and ones. You call the constructor without casting the string into a string type, for example: `bitset<5> b5("01011");`
+`6)` Constructs an object of class `bitset<N>`, initializing the N bits to values that correspond to the characters provided in a C-style character string of zeros and ones. You call the constructor without casting the string into a string type, for example: `bitset<5> b5("01011");`
 
 #### Example
 

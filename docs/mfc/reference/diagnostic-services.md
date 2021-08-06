@@ -268,7 +268,7 @@ The DEBUG_ONLY macro is equivalent to surrounding *expression* with `#ifdef _DEB
 
 **Header:** afx.h
 
-### <a name="ensure"></a> ENSURE and ENSURE_VALID
+## <a name="ensure"></a> ENSURE and ENSURE_VALID
 
 Use to validate data correctness.
 

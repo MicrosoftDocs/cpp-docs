@@ -777,13 +777,11 @@ This method sends the [RB_SETBANDWIDTH](/windows/win32/Controls/rb-setbandwidth)
 
 ### Example
 
-The following code example defines the variable, `m_rebar`, that is used to access the current rebar control. This variable is used in the next example.
+The first code example defines the variable, `m_rebar`, that is used to access the current rebar control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CReBarCtrl_s1#1](../../mfc/reference/codesnippet/cpp/crebarctrl-class_12.h)]
 
-### Example
-
-The following code example sets each rebar band to be the same width.
+The next code example sets each rebar band to be the same width.
 
 [!code-cpp[NVC_MFC_CReBarCtrl_s1#2](../../mfc/reference/codesnippet/cpp/crebarctrl-class_13.cpp)]
 
