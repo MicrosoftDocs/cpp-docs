@@ -232,7 +232,7 @@ When *`A.DLL`* is built, it's built with **`/DA_IMPL`** and when *`B.DLL`* is bu
 
 This type of layering can't be done when using the built-in `AFX_EXT_CLASS` and `_AFXEXT` preprocessor symbols. The technique described above solves this problem in the same way MFC does. MFC uses this technique when building its OLE, Database, and Network MFC extension DLLs.
 
-### Not Exporting the Entire Class
+### Still Not Exporting the Entire Class
 
 Again, you'll have to take special care when you aren't exporting an entire class. Ensure that the necessary data items created by the MFC macros are exported correctly. You can do it by redefining `AFX_DATA` to your specific class' macro. Redefine it whenever you're not exporting the entire class.
 
