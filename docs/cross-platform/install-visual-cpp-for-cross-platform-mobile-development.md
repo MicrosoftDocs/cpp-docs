@@ -98,7 +98,7 @@ In most cases, Visual Studio can detect the configurations for the third-party s
 
 1. In the **Options** dialog box, select **Cross Platform** > **C++** > **Android**.
 
-   ![Android tool path options](../cross-platform/media/cppmdd-options-android.png "Android tool path options")
+   ![Screenshot of the Android tool path options in the Options dialog.](../cross-platform/media/cppmdd-options-android.png "Android tool path options")
 
 1. To change the path used by a tool, check the checkbox next to the path, and edit the folder path in the textbox. You can also use the browse button (**...**) to open a **Select location** dialog to choose the folder.
 

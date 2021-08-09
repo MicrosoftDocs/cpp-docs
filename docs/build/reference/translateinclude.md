@@ -67,8 +67,7 @@ To enable `/translateInclude`, set the **Translate Includes to Imports** option 
 
 1. In the left-hand pane of the project property pages, select **Configuration Properties** > **C/C++** > **General**
 1. Change the **Translate Includes to Imports** dropdown to **Yes**
-![Project properties dialog set Translate Includes to Imports](../media/vs2019-translate-includes-option.png)
-
+![Screenshot of the Property Pages dialog with the Translate Includes to Imports property highlighted.](../media/vs2019-translate-includes-option.png)
 
 ## See also
 

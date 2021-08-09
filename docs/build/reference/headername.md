@@ -36,20 +36,20 @@ If you specify **`/headerName:{quote,angle}`**, you must also specify [`/exportH
 Given a project that references a header file it defines called `m.h`, the compiler option to compile it into a header unit looks similar to this:
 
 ```Bash
-$ cl /std:c++latest /exportHeader /headerName:quote m.h /Fom.h.obj
+cl /std:c++latest /exportHeader /headerName:quote m.h /Fom.h.obj
 ```
 
 The `/headerName:{quote,angle}`switch acts like a flag and does not explicitly need an argument. The following examples are valid:
 
 ```Bash
-$ cl /std:c++latest /exportHeader /headerName:angle /MP /Fo.\ vector iostream algorithm
-$ cl /std:c++latest /exportHeader /headerName:quote /MP /Fo.\ my-utilities.h a/b/my-core.h
+cl /std:c++latest /exportHeader /headerName:angle /MP /Fo.\ vector iostream algorithm
+cl /std:c++latest /exportHeader /headerName:quote /MP /Fo.\ my-utilities.h a/b/my-core.h
 ```
 
 You can specify multiple `/headerName` switches on the same command line, and every argument after that switch will be processed with the specified *`header-filename`* lookup rules. The following example processes all the headers as the previous two command line examples in the same way. It looks up the headers using the lookup rules applied as if they had been specified as: `#include <vector>`, `#include "my-utilties.h"`, and `#include "a/b/my-core.h"`:
 
 ```bash
-$ cl /std:c++latest /exportHeader /headerName:angle /MP /Fo.\ vector iostream algorithm /headerName:quote my-utilities.h a/b/my-core.h
+cl /std:c++latest /exportHeader /headerName:angle /MP /Fo.\ vector iostream algorithm /headerName:quote my-utilities.h a/b/my-core.h
 ```
 
 ### To set this compiler option in the Visual Studio development environment

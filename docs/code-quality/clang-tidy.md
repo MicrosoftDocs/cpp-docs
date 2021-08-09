@@ -31,7 +31,7 @@ For more information, see [How to: Set Code Analysis Properties for C/C++ Projec
 
 ## CMake
 
-In CMake projects, you can configure Clang-Tidy checks within `CMakeSettings.json`. Once opened, select "Edit JSON" in the top right-hand corner of the CMake Project Settings Editor. The following keys are recognized:
+In CMake projects, you can configure Clang-Tidy checks within *`CMakeSettings.json`*. Once opened, select "Edit JSON" in the top right-hand corner of the CMake Project Settings Editor. The following keys are recognized:
 
 - `enableMicrosoftCodeAnalysis`: Enables Microsoft Code Analysis
 - `enableClangTidyCodeAnalysis`: Enables Clang-Tidy analysis

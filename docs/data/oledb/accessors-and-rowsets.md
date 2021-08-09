@@ -15,7 +15,7 @@ All accessors derive from [CAccessorBase](../../data/oledb/caccessorbase-class.m
 
 The following figure shows the accessor types.
 
-![Accessor types](../../data/oledb/media/vcaccessortypes.gif "Accessor types")<br/>
+![Diagram that shows the relationships between Accessor types.](../../data/oledb/media/vcaccessortypes.gif "Accessor types")<br/>
 Accessor Classes
 
 - [CAccessor](../../data/oledb/caccessor-class.md) Use this accessor when you know the structure of the database source at design time. `CAccessor` statically binds a database record, which contains the buffer, to the data source.
@@ -44,7 +44,7 @@ The OLE DB Templates support three kinds of rowsets (see the preceding figure): 
 
 The following figure shows the rowset types.
 
-![RowsetType graphic](../../data/oledb/media/vcrowsettypes.gif "RowsetType graphic")<br/>
+![Diagram that shows the relationships between Rowset types.](../../data/oledb/media/vcrowsettypes.gif "RowsetType graphic")<br/>
 Rowset Classes
 
 [Schema rowsets](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) don't access data in the data store but instead access information about the data store, called metadata. Schema rowsets are typically used in situations in which the database structure isn't known at compile time and must be obtained at run time.

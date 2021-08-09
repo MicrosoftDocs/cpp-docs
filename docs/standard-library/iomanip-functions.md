@@ -138,7 +138,7 @@ A user-specified character, or wide character, to use as the escape character fo
 
 See [Using Insertion Operators and Controlling Format](../standard-library/using-insertion-operators-and-controlling-format.md).
 
-### Example
+### Examples
 
 This example shows how to use `quoted` with the default delimiter and escape character using narrow strings. Wide strings are equally supported.
 
@@ -195,9 +195,7 @@ Press Enter to exit
 */
 ```
 
-### Example
-
-The following example shows how to provide custom a delimiter and/or escape character:
+The following example shows how to provide a custom delimiter or escape character:
 
 ```cpp
 #include <iostream>

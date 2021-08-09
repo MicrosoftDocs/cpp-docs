@@ -25,7 +25,7 @@ Porting existing code files into a C++ project enables the use of native MSBuild
     | **Add files to the project from these folders** | Check to set the wizard to copy existing code files from their original directories (that are specified in the list box below this control) into the new project.<br/><br/>Check **Add Subfolders** to specify copying code files from all subdirectories into the project. The directories are listed in the **Folder** column.<br/>- Select **Add** to display the **Add files to the project from this folder** dialog box, to specify directories the wizard searches for existing code files.<br/>- Select **Remove** to delete the directory path selected in the list box.<br/><br/>In the **File types to add to the project** box, specify the kinds of files that the wizard adds to the new project based on the given file extensions. File extensions are preceded with the asterisk wildcard character and are delimited in the list of file extensions by a semicolon. |
     | **Show all files in Solution Explorer** | Specifies that all files in the new project to be visible and displayed in the **Solution Explorer** window. This option is enabled by default. |
 
-    ![Project location](media/location.png)
+    ![Create New Project from Existing Code dialog, showing Project location settings.](media/location.png)
 
 1. Specify the project settings to use such as the build environment for the new project and the build settings to match a specific type of new project to generate. Choose **Next** to continue.
 
@@ -34,7 +34,7 @@ Porting existing code files into a C++ project enables the use of native MSBuild
     | **Use Visual Studio** | Specifies to use build tools that are included in Visual Studio for building the new project. This option is selected by default.<br/><br/>Select **Project Type** to specify the type of project the wizard generates. Choose **Windows application project**, **Console application project**, **Dynamically linked library (DLL) project**, or **Static library (LIB) project**.<br/><br/>Check **Add support for ATL** to add ATL support to the new project.<br/><br/>Check **Add support for MFC** to add MFC support to the new project.<br/><br/>Check **Add support for the Common Language Runtime** to add CLR programming support to the project. Choose the **Common Language Runtime Support** for compliance type, such as **Common Language Runtime (old syntax)** for compliance with Managed Extensions for C++ syntax, the CLR programming syntax before Visual Studio 2005. |
     | **Use external build system** | Specifies to use build tools that aren't included in Visual Studio for building the new project. When this option is selected, you can specify build command lines on the **Specify Debug Configuration Settings** and **Specify Release Configuration Settings** pages. |
 
-    ![Project settings](media/settings.png)
+    ![Create New Project from Existing Code dialog, showing Project build settings.](media/settings.png)
 
     > [!NOTE]
     > When the **Use External Build System** option is checked, the IDE doesn't build the project, so the /D, /I, /FI, /AI, or /FU options aren't required for compilation. However, these options must be set correctly in order for IntelliSense to function properly.
@@ -53,7 +53,7 @@ Porting existing code files into a C++ project enables the use of native MSBuild
     | **.NET assembly search path (/AI)** | Specifies the directory paths that the compiler searches to resolve .NET assembly references passed to preprocessor directives in the project, see [/AI (Specify Metadata Directories)](../build/reference/ai-specify-metadata-directories.md). |
     | **Forced using .NET assemblies (/FU)** | Specifies .NET assemblies to process when building the project, see [/FU (Name Forced #using File)](../build/reference/fu-name-forced-hash-using-file.md). |
 
-    ![Project configuration](media/config.png)
+    ![Create New Project from Existing Code dialog, showing Debug and Release configuration settings.](media/config.png)
 
     > [!NOTE]
     > The **Build**, **Rebuild**, **Clean** command line, and **Output (for debugging)** settings are only enabled if the **Use external build system** option is selected on the **Specify Project Settings** page.

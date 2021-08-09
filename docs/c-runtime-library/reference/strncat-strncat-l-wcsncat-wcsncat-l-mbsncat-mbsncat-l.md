@@ -102,10 +102,10 @@ By default, this function's global state is scoped to the application. To change
 
 ### Generic-Text Routine Mappings
 
-|`TCHAR.H `routine|`_UNICODE & _MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tcsncat`**|**`strncat`**|**`_mbsnbcat`**|**`wcsncat`**|
-|**`_tcsncat_l`**|**`_strncat_l`**|**`_mbsnbcat_l`**|**`_wcsncat_l`**|
+| `TCHAR.H` routine | `_UNICODE` and `_MBCS` not defined | `_MBCS` defined | `_UNICODE` defined |
+|--|--|--|--|
+| **`_tcsncat`** | **`strncat`** | **`_mbsnbcat`** | **`wcsncat`** |
+| **`_tcsncat_l`** | **`_strncat_l`** | **`_mbsnbcat_l`** | **`_wcsncat_l`** |
 
 > [!NOTE]
 > **`_strncat_l`** and **`_wcsncat_l`** have no locale dependence and are not meant to be called directly. They are provided for internal use by **`_tcsncat_l`**.

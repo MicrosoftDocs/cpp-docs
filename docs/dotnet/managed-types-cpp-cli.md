@@ -68,8 +68,6 @@ public value struct S {
 };
 ```
 
-### Example
-
 This sample is the client:
 
 ```cpp
@@ -95,7 +93,7 @@ int main() {
 }
 ```
 
-### Output
+The example produces this output:
 
 ```Output
 S.i = 5

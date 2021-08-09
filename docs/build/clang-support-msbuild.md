@@ -111,6 +111,6 @@ After you have set up a Clang configuration, right-click again on the project no
 
 When debugging, you can use breakpoints, memory and data visualization, and most other debugging features.  
 
-![Clang debugging](media/clang-debug-msbuild.png)
+![Screenshot of Visual Studio showing Clang debugging.](media/clang-debug-msbuild.png)
 
 ::: moniker-end

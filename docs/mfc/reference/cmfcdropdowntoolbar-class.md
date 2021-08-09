@@ -40,7 +40,7 @@ A drop-down toolbar cannot be customized or docked, and it does not have a tear-
 
 The following illustration shows a `CMFCDropDownToolBar` object:
 
-![Example of CMFCDropDownToolbar](../../mfc/reference/media/cmfcdropdown.png "Example of CMFCDropDownToolbar")
+![Example of CMFCDropDownToolbar.](../../mfc/reference/media/cmfcdropdown.png "Example of CMFCDropDownToolbar")
 
 You create a `CMFCDropDownToolBar` object the same way you create an ordinary toolbar (see [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)).
 

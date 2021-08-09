@@ -19,7 +19,7 @@ To display **Property Manager**, on the menu bar, choose **View** > **Property M
 
 If you have a common, frequently used set of properties that you want to apply to multiple projects, you can use **Property Manager** to capture them in a reusable *property sheet* file, which by convention has a .props file name extension. You can apply the sheet (or sheets) to new projects so that you don't have to set its properties from scratch.
 
-![Property Manager shortcut menu](media/sharingnew.png "SharingNew")
+![Screenshot of the Property Manager shortcut menu.](media/sharingnew.png "SharingNew")
 
 Under each configuration node, you see nodes for each property sheet that applies to that configuration. The system adds property sheets that set values based on options you choose in the app wizard when you create the project. Right-click any node and choose Properties to see the properties that apply to that node. All the property sheets are imported automatically into the project's "master" property sheet (ms.cpp.props) and are evaluated in the order they appear in Property Manager. You can move them to change the evaluation order. Property sheets that are evaluated later will override the values in previously-evaluated sheets. See [Project property inheritance](project-property-inheritance.md) for more information about the order of evaluation in the .vcxproj file, the .props and .targets files, environment variables and the command line.
 

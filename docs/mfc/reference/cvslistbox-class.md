@@ -52,7 +52,7 @@ The `CVSListBox` class provides a set of edit buttons that enable the user to cr
 
 The following is a picture of the editable list control. The second list entry, which is titled "Item2", is selected for editing.
 
-![CVSListBox control](../../mfc/reference/media/cvslistbox.png "CVSListBox control")
+![CVSListBox control.](../../mfc/reference/media/cvslistbox.png "CVSListBox control")
 
 If you use the resource editor to add an editable list control, notice that the **Toolbox** pane of the editor does not provide a predefined editable list control. Instead, add a static control such as the **Group Box** control. The framework uses the static control as a placeholder to specify the size and position of the editable list control.
 

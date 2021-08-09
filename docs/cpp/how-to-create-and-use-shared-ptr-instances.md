@@ -12,7 +12,7 @@ The `shared_ptr` type is a smart pointer in the C++ standard library that is des
 
 The following illustration shows several `shared_ptr` instances that point to one memory location.
 
-![Shared pointer diagram](media/shared_ptr.png "Shared pointer diagram")
+![Shared pointer diagram.](media/shared_ptr.png "Shared pointer diagram")
 
 ## Example setup
 

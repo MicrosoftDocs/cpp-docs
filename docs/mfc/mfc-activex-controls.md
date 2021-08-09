@@ -23,7 +23,7 @@ You can create windowless ActiveX controls and controls that only create a windo
 
 An ActiveX control is implemented as an in-process server (typically a small object) that can be used in any OLE container. Note that the full functionality of an ActiveX control is available only when used within an OLE container designed to be aware of ActiveX controls. See [Port ActiveX Controls to Other Applications](containers-for-activex-controls.md) for a list of containers that support ActiveX controls. This container type, hereafter called a "control container," can operate an ActiveX control by using the control's properties and methods, and receives notifications from the ActiveX control in the form of events. The following figure demonstrates this interaction.
 
-![Interplay of ActiveX control container and control](../mfc/media/vc37221.gif "Interplay of ActiveX control container and control") <br/>
+![Interplay of ActiveX control container and control.](../mfc/media/vc37221.gif "Interplay of ActiveX control container and control") <br/>
 Interaction Between an ActiveX Control Container and a Windowed ActiveX Control
 
 For some recent information on optimizing your ActiveX controls, see [MFC ActiveX Controls: Optimization](mfc-activex-controls-optimization.md).
@@ -54,7 +54,7 @@ The final element is a dispatch map, which is used to expose a set of functions 
 
 When a control is used within a control container, it uses two mechanisms to communicate: it exposes properties and methods, and it fires events. The following figure demonstrates how these two mechanisms are implemented.
 
-![ActiveX control communicates with its container](../mfc/media/vc37222.gif "ActiveX control communicates with its container") <br/>
+![ActiveX control communicates with its container.](../mfc/media/vc37222.gif "ActiveX control communicates with its container") <br/>
 Communication Between an ActiveX Control Container and an ActiveX Control
 
 The previous figure also illustrates how other OLE interfaces (besides automation and events) are handled by controls.
@@ -69,7 +69,7 @@ When a [windowless control](providing-windowless-activation.md) goes active, it 
 
 When a control with a window becomes active, it is able to interact fully with the control container, the user, and Windows. The figure below demonstrates the paths of communication between the ActiveX control, the control container, and the operating system.
 
-![Msg processing in active windowed ActiveX control](../mfc/media/vc37223.gif "Msg processing in active windowed ActiveX control") <br/>
+![Msg processing in active windowed ActiveX control.](../mfc/media/vc37223.gif "Msg processing in active windowed ActiveX control") <br/>
 Windows Message Processing in a Windowed ActiveX Control (When Active)
 
 ## <a name="_core_serializing_activex_elements"></a> Serialization

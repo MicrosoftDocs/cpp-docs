@@ -20,7 +20,7 @@ The Windows API (also known as the Win32 API, Windows Desktop API, and Windows C
 
 - A copy of Visual Studio. For information on how to download and install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). When you run the installer, make sure that the **Desktop development with C++** workload is checked. Don't worry if you didn't install this workload when you installed Visual Studio. You can run the installer again and install it now.
 
-   ![Desktop development with C++](../build/media/desktop-development-with-cpp.png "Desktop development with C++")
+   ![Detail of the Desktop development with C++ workload in the Visual Studio Installer.](../build/media/desktop-development-with-cpp.png "Desktop development with C++")
 
 - An understanding of the basics of using the Visual Studio IDE. If you've used Windows desktop apps before, you can probably keep up. For an introduction, see [Visual Studio IDE feature tour](/visualstudio/ide/visual-studio-ide).
 
@@ -96,7 +96,7 @@ Your project is now created and your source file is opened in the editor. To con
 
 1. On the **Overview** page of the **Win32 Application Wizard**, choose **Next**.
 
-   ![Create DesktopApp in Win32 Application Wizard Overview](../build/media/desktop-app-win32-wizard-overview-150.png "Create DesktopApp in Win32 Application Wizard Overview")
+   ![Create DesktopApp in Win32 Application Wizard Overview page.](../build/media/desktop-app-win32-wizard-overview-150.png "Create DesktopApp in Win32 Application Wizard Overview")
 
 1. On the **Application Settings** page, under **Application type**, select **Windows application**. Under **Additional options**, uncheck **Precompiled header**, then select **Empty project**. Choose **Finish** to create the project.
 
@@ -211,7 +211,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    // hInstance: the first parameter from WinMain
    // NULL: not used in this application
    HWND hWnd = CreateWindowEx(
-  	WS_EX_OVERLAPPEDWINDOW,
+   WS_EX_OVERLAPPEDWINDOW,
       szWindowClass,
       szTitle,
       WS_OVERLAPPEDWINDOW,
@@ -579,11 +579,11 @@ As promised, here's the complete code for the working application.
 
 1. On the **Build** menu, choose **Build Solution**. The results of the compilation should appear in the **Output** window in Visual Studio.
 
-   ![Build the DesktopApp Project](../build/media/desktop-app-project-build-150.gif "Build the DesktopApp Project")
+   ![Animation showing the steps to build the DesktopApp Project.](../build/media/desktop-app-project-build-150.gif "Build the DesktopApp Project")
 
 1. To run the application, press **F5**. A window that contains the text "Hello, Windows desktop!" should appear in the upper-left corner of the display.
 
-   ![Run the DesktopApp Project](../build/media/desktop-app-project-run-157.PNG "Run the DesktopApp Project")
+   ![Screenshot of the running DesktopApp Project.](../build/media/desktop-app-project-run-157.PNG "Run the DesktopApp Project")
 
 Congratulations! You've completed this walkthrough and built a traditional Windows desktop application.
 

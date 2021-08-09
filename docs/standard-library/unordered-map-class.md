@@ -2025,7 +2025,7 @@ Ty& operator[](Key&& keyval);
 
 ### Parameters
 
-*`Keyval`*\
+*`keyval`*\
 The key value to find or insert.
 
 ### Return Value
@@ -2037,6 +2037,8 @@ A reference to the data value of the inserted element.
 If the argument key value is not found, then it is inserted along with the default value of the data type.
 
 `operator[]` may be used to insert elements into a map *`m`* using *`m[Key] = DataValue;`* where *`DataValue`* is the value of the `mapped_type` of the element with a key value of *`Key`*.
+
+The member function determines the iterator `where` as the return value of `unordered_map::insert(unordered_map::value_type(keyval, Ty())`. For more information, see [`unordered_map::insert`](#insert) and [`unordered_map::value_type`](#value_type). (It inserts an element with the specified key if no such element exists.) It then returns a reference to `(*where).second`.
 
 When using `operator[]` to insert elements, the returned reference does not indicate whether an insertion is changing a pre-existing element or creating a new one. The member functions [`find`](../standard-library/map-class.md#find) and [`insert`](../standard-library/map-class.md#insert) can be used to determine whether an element with a specified key is already present before an insertion.
 
@@ -2094,10 +2096,6 @@ c1['a'] == 1
 c2[move(str)] == 0
 c2["abc"] == 1
 ```
-
-### Remarks
-
-The member function determines the iterator `where` as the return value of `unordered_map::insert(unordered_map::value_type(keyval, Ty())`, see [`unordered_map::insert`](#insert) and [`unordered_map::value_type`](#value_type). (It inserts an element with the specified key if no such element exists.) It then returns a reference to `(*where).second`.
 
 ## <a name="op_eq"></a> `unordered_map::operator=`
 
