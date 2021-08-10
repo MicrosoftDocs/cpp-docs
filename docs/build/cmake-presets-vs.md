@@ -264,7 +264,7 @@ The `architecture.strategy` and `toolset.strategy` values tell CMake how to hand
 
 We recommend you use `set` with IDE generators like the Visual Studio Generator. Use `external` with command-line generators like Ninja. These values allow vendors like Visual Studio to supply the required environment before CMake is invoked. For more information about the architecture and toolset fields, see the [list of Configure Presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html#configure-preset).
 
-If Ninja is the generator and you don't want to source an environment, you can set `architecture.strategy` to `external` and `architecture.value` to `unspecified`. You might find it useful not to source an environment for any one of these reasons:
+If you don't want to source an environment, you can set `architecture.strategy` to `external` and `architecture.value` to `unspecified`. You might find it useful not to source an environment for any one of these reasons:
 
 - You use a toolset other than MSVC.
 - You use a custom toolchain, such as in embedded scenarios.
