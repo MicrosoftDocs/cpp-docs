@@ -4296,6 +4296,8 @@
           href: compiler-warnings/c5105.md
         - name: Compiler warning (level 1) C5208
           href: compiler-warnings/c5208.md
+        - name: Compiler warning (level 1) C5243
+          href: compiler-warnings/c5243.md
         - name: Compiler warning (level 1) C5247
           href: compiler-warnings/c5247.md
         - name: Compiler warning (level 1) C5248
