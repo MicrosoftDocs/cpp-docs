@@ -268,7 +268,7 @@ If Ninja is the generator and you don't want to source an environment, you can s
 
 - you use a toolset other than MSVC,
 - you use a custom toolchain, such as in embedded scenarios,
-- you don't need a specific environment to build.
+- or you don't need a specific environment to build.
 
 For a full list of IDE generators that support the architecture field, see [`CMAKE_GENERATOR_PLATFORM`](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_PLATFORM.html). For a full list of IDE generators that support the toolset field, see [`CMAKE_GENERATOR_TOOLSET`](https://cmake.org/cmake/help/latest/variable/CMAKE_GENERATOR_TOOLSET.html).
 
