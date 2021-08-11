@@ -56,11 +56,15 @@ void test3() {
 
 ### `/fsanitize=address` compiler option
 
-The [`/fsanitize=address`](../build/reference/fsanitize.md) compiler option instruments memory references in your code to catch memory safety errors at runtime. The instrumentation hooks loads, stores, scopes, alloca, and CRT functions. It can detect hidden bugs such as out-of-bounds, use-after-free, use-after-scope, and so on. For a non-exhaustive list of errors detected at runtime, see [AddressSanitizer error examples](./asan-error-examples.md).
+The [**`/fsanitize=address`**](../build/reference/fsanitize.md) compiler option instruments memory references in your code to catch memory safety errors at runtime. The instrumentation hooks loads, stores, scopes, alloca, and CRT functions. It can detect hidden bugs such as out-of-bounds, use-after-free, use-after-scope, and so on. For a non-exhaustive list of errors detected at runtime, see [AddressSanitizer error examples](./asan-error-examples.md).
 
 **`/fsanitize=address`** is compatible with all existing C++ or C optimization levels (for example, **`/Od`**, **`/O1`**, **`/O2`**, **`/O2 /GL`**, and profile guided optimization). The code produced with this option works with static and dynamic CRTs (for example, **`/MD`**, **`/MDd`**, **`/MT`**, and **`/MTd`**). This compiler option can be used to create an .EXE or .DLL targeting x86 or x64. Debug information is required for optimal formatting of call stacks.
 
 For examples of code that demonstrates several kinds of error detection, see [AddressSanitizer error examples](asan-error-examples.md).
+
+### `/fsanitize=fuzzer` compiler option (experimental)
+
+The **`/fsanitize=fuzzer`** compiler option will add LibFuzzer to the default library list, as well as also set the following sanitizer coverage options: [edge instrumentation points (**`/fsanitize-coverage=edge`**)](../build/reference/fsanitize-coverage.md), [inline 8-bit counters (**`/fsanitize-coverage=inline-8bit-counters`**)](../build/reference/fsanitize-coverage.md), and extra instrumentation around [comparisons (**`/fsanitize-coverage=trace-cmp`**)](../build/reference/fsanitize-coverage.md) and [integer divisions (**`/fsanitize-coverage=trace-div`**)](../build/reference/fsanitize-coverage.md).
 
 ### `/fsanitize-address-use-after-return` compiler option (experimental)
 

@@ -22,7 +22,7 @@ The **`/fsanitize=address`** compiler option enables [AddressSanitizer](../../sa
 
 The **`/fsanitize=fuzzer`** compiler option enables LibFuzzer (experimental), a coverage-guided fuzzing library that can be used to find bugs and crashes caused by user-provided input. It is recommended to use **`/fsanitize=address`** alongside LibFuzzer.
 
-Currently, **`/fsanitize=`** does not allow comma-seperated syntax, for example: **`/fsanitize=address,fuzzer`**. These options must be provided individually.
+Currently, **`/fsanitize=`** does not allow comma-separated syntax, for example: **`/fsanitize=address,fuzzer`**. These options must be provided individually.
 
 The **`/fsanitize-address-use-after-return`** and **`/fno-sanitize-address-vcasan-lib`** compiler options, and the [`/INFERASANLIBS` (Use inferred sanitizer libs)](./inferasanlibs.md) and **`/INFERASANLIBS:NO`** linker options offer support for advanced users. For more information, see [AddressSanitizer build and language reference](../../sanitizers/asan-building.md).
 
@@ -35,6 +35,16 @@ The **`/fsanitize`** options are available beginning in Visual Studio 2019 versi
 1. Select the **Configuration Properties** > **C/C++** > **General** property page.
 
 1. Modify the **Enable Address Sanitizer** property. To enable it, choose **Yes (/fsanitize=address)**.
+
+1. Choose **OK** or **Apply** to save your changes.
+
+### To set the **`/fsanitize=fuzzer`** compiler option in the Visual Studio development environment
+
+1. Open your project's **Property Pages** dialog box.
+
+1. Select the **Configuration Properties** > **C/C++** > **General** property page.
+
+1. Modify the **Enable Fuzzer** property. To enable it, choose **Yes (/fsanitize=fuzzer)**.
 
 1. Choose **OK** or **Apply** to save your changes.
 
@@ -57,6 +67,7 @@ The **`/fsanitize`** options are available beginning in Visual Studio 2019 versi
 [MSVC compiler options](compiler-options.md)\
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)\
 [`/INFERASANLIBS` (Use inferred sanitizer libs)](./inferasanlibs.md)\
+[`/fsanitize-coverage` (Configure Sanitizer Coverage) compiler option](fsanitize-coverage.md)\
 [AddressSanitizer overview](../../sanitizers/asan.md)\
 [AddressSanitizer known issues](../../sanitizers/asan-known-issues.md)\
 [AddressSanitizer build and language reference](../../sanitizers/asan-building.md)
