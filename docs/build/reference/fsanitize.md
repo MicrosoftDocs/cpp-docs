@@ -2,22 +2,27 @@
 description: "Learn more about the /fsanitize (enable sanitizers) compiler option"
 title: "/fsanitize (Enable sanitizers)"
 ms.date: 02/24/2021
-f1_keywords: ["/fsanitize", "-fsanitize", "/fsanitize=address", "/fsanitize-address-use-after-return", "-fsanitize-address-use-after-return", "/fno-sanitize-address-vcasan-lib", "-fno-sanitize-address-vcasan-lib"]
+f1_keywords: ["/fsanitize", "-fsanitize", "/fsanitize=address", "/fsanitize=fuzzer", "/fsanitize-address-use-after-return", "-fsanitize-address-use-after-return", "/fno-sanitize-address-vcasan-lib", "-fno-sanitize-address-vcasan-lib"]
 helpviewer_keywords: ["/fsanitize [C++]", "-fsanitize=address [C++]", "address sanitizer compiler option [C++]", "/fsanitize-address-use-after-return", "/fno-sanitize-address-vcasan-lib"]
 ---
 # `/fsanitize` (Enable sanitizers)
 
-Use the **`/fsanitize`** compiler options to enable sanitizers. As of Visual Studio 2019 16.9, the only supported sanitizer is [AddressSanitizer](../../sanitizers/asan.md).
+Use the **`/fsanitize`** compiler options to enable sanitizers. As of Visual Studio 2019 16.9, the only supported sanitizer is [AddressSanitizer](../../sanitizers/asan.md). As of Visual Studio 2022 17.0, LibFuzzer has experimental support.
 
 ## Syntax
 
 > **`/fsanitize=address`**\
+> **`/fsanitize=fuzzer`**\
 > **`/fsanitize-address-use-after-return`**\
 > **`/fno-sanitize-address-vcasan-lib`**
 
 ## Remarks
 
 The **`/fsanitize=address`** compiler option enables [AddressSanitizer](../../sanitizers/asan.md), a powerful compiler and runtime technology to light up [hard-to-find bugs](../../sanitizers/asan.md#error-types).
+
+The **`/fsanitize=fuzzer`** compiler option enables LibFuzzer (experimental), a coverage-guided fuzzing library that can be used to find bugs and crashes caused by user-provided input. It is recommended to use **`/fsanitize=address`** alongside LibFuzzer.
+
+Currently, **`/fsanitize=`** does not allow comma-seperated syntax, for example: **`/fsanitize=address,fuzzer`**. These options must be provided individually.
 
 The **`/fsanitize-address-use-after-return`** and **`/fno-sanitize-address-vcasan-lib`** compiler options, and the [`/INFERASANLIBS` (Use inferred sanitizer libs)](./inferasanlibs.md) and **`/INFERASANLIBS:NO`** linker options offer support for advanced users. For more information, see [AddressSanitizer build and language reference](../../sanitizers/asan-building.md).
 
