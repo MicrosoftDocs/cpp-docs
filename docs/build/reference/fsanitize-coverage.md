@@ -3,7 +3,7 @@ description: "Learn more about the /fsanitize-coverage (Configure Sanitizer Cove
 title: "/fsanitize-coverage (Configure Sanitizer Coverage)"
 ms.date: 08/11/2021
 f1_keywords: ["/fsanitize-coverage", "-fsanitize-coverage", "/fsanitize-coverage=inline-8bit-counters", "/fsanitize-coverage=edge", "/fsanitize-coverage=trace-cmp", "/fsanitize-coverage=trace-div", "/fno-sanitize-coverage=inline-8bit-counters", "/fno-sanitize-coverage=edge", "/fno-sanitize-coverage=trace-cmp", "/fno-sanitize-coverage=trace-div"]
-helpviewer_keywords: ["/fsanitize-coverage [C++]", "sanitizer compiler option [C++]", "/fsanitize-coverage=inline-8bit-counters", "/fsanitize-coverage=edge", "/fsanitize-coverage=trace-cmp", "/fsanitize-coverage=trace-div", "/fno-sanitize-coverage=inline-8bit-counters", "/fno-sanitize-coverage=edge", "/fno-sanitize-coverage=trace-cmp", "/fno-sanitize-coverage=trace-div"tize-address-use-after-return", "/fno-sanitize-address-vcasan-lib"]
+helpviewer_keywords: ["/fsanitize-coverage [C++]", "sanitizer compiler option [C++]", "/fsanitize-coverage=inline-8bit-counters", "/fsanitize-coverage=edge", "/fsanitize-coverage=trace-cmp", "/fsanitize-coverage=trace-div", "/fno-sanitize-coverage=inline-8bit-counters", "/fno-sanitize-coverage=edge", "/fno-sanitize-coverage=trace-cmp", "/fno-sanitize-coverage=trace-div"]
 ---
 # `/fsanitize-coverage` (Configure Sanitizer Coverage)
 

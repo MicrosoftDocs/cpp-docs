@@ -67,6 +67,7 @@ For examples of code that demonstrates several kinds of error detection, see [Ad
 The [**`/fsanitize=fuzzer`**](../build/reference/fsanitize.md) compiler option will add LibFuzzer to the default library list, as well as also set the following sanitizer coverage options: [edge instrumentation points (**`/fsanitize-coverage=edge`**)](../build/reference/fsanitize-coverage.md), [inline 8-bit counters (**`/fsanitize-coverage=inline-8bit-counters`**)](../build/reference/fsanitize-coverage.md), and extra instrumentation around [comparisons (**`/fsanitize-coverage=trace-cmp`**)](../build/reference/fsanitize-coverage.md) and [integer divisions (**`/fsanitize-coverage=trace-div`**)](../build/reference/fsanitize-coverage.md). It is recommended to use **`/fsanitize=address`** alongside **`/fsanitize=fuzzer`**.
 
 Here are the libraries added to the default library list when specifying **`/fsanitize=fuzzer`**:
+
 | Runtime option | LibFuzzer library |
 |--|--|
 | **`/MT`** | *`clang_rt.fuzzer_MT-{arch}`* |
@@ -75,6 +76,7 @@ Here are the libraries added to the default library list when specifying **`/fsa
 | **`/MDd`** | *`clang_rt.fuzzer_MDd-{arch}`* |
 
 There is also a version of the LibFuzzer libraries that omit the **`main`** function, leaving the responsibility to define **`main`** and call **`LLVMFuzzerInitialize`** and **`LLVMFuzzerTestOneInput`** to the user. You will need to use [**`/NODEFAULTLIB`**](../build/reference/nodefaultlib-ignore-libraries.md) to ensure the libraries listed above are not included and link with one of the libraries listed below instead:
+
 | Runtime option | LibFuzzer no_main library |
 |--|--|
 | **`/MT`** | *`clang_rt.fuzzer_no_main_MT-{arch}`* |
