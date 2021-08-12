@@ -318,7 +318,7 @@ MSVC supports these additional predefined macros.
 
 - `_PREFAST_` Defined as 1 when the [`/analyze`](../build/reference/analyze-code-analysis.md) compiler option is set. Otherwise, undefined.
 
-- `__SANITIZE_ADDRESS__` Defined as 1 when the [`/fsanitize=address`](../build/reference/fsanitize.md) compiler option is set. Otherwise, undefined.
+- `__SANITIZE_ADDRESS__` Available beginning with Visual Studio 2019 version 16.9. Defined as 1 when the [`/fsanitize=address`](../build/reference/fsanitize.md) compiler option is set. Otherwise, undefined.
 
 - `__TIMESTAMP__` Defined as a string literal that contains the date and time of the last modification of the current source file, in the abbreviated, constant length form returned by the CRT [`asctime`](../c-runtime-library/reference/asctime-wasctime.md) function, for example, `Fri 19 Aug 13:32:58 2016`. This macro is always defined.
 
