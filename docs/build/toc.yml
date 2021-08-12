@@ -562,6 +562,8 @@
                   href: ../build/reference/fs-force-synchronous-pdb-writes.md
                 - name: /fsanitize (Enable sanitizers)
                   href: ../build/reference/fsanitize.md
+                - name: /fsanitize-coverage (Configure Sanitizer Coverage)
+                  href: ../build/reference/fsanitize-coverage.md
                 - name: /GA (Optimize for Windows application)
                   href: ../build/reference/ga-optimize-for-windows-application.md
                 - name: /Gd, /Gr, /Gv, /Gz (Calling convention)
