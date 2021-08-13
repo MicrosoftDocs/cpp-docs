@@ -63,7 +63,13 @@ When you open an existing CMake cache file (*`CMakeCache.txt`*), Visual Studio d
 
 You can add an existing CMake cache to an open project. It's done the same way you'd add a new configuration. For more information, see our blog post on [opening an existing cache in Visual Studio](https://devblogs.microsoft.com/cppblog/open-existing-cmake-caches-in-visual-studio/).
 
-### Advanced CMake cache troubleshooting
+> [!NOTE]
+> The default existing cache experience relies on `cmake-server`, which was removed from CMake in version 3.20. To continue using existing cache functionality in Visual Studio 2019 version 16.10 and later, take one of these steps:
+> - Manually install CMake version 3.19 or lower. Then, set the `cmakeExecutable` property in your existing cache configuration to use that version of CMake.
+> - In your existing cache configuration, set the `cacheGenerationCommand` property to let Visual Studio request the necessary CMake file-based API files. For more information on that property, see [CMakeSettings.json reference](cmakesettings-reference.md#configurations).
+> - Use a query file to request the CMake file-based API files when generating your cache before it's opened in Visual Studio. For query file instructions, see the next section, [Advanced CMake cache troubleshooting](#advanced).
+
+### <a name="advanced"></a> Advanced CMake cache troubleshooting
 
 Visual Studio uses the CMake [file-based API](https://cmake.org/cmake/help/latest/manual/cmake-file-api.7.html) (in versions 3.14 and later) to populate the editor with information specific to your project structure. For more information, see the C++ team blog post on [multi-root workspaces and file-based API](https://devblogs.microsoft.com/cppblog/visual-studio-code-cmake-tools-extension-multi-root-workspaces-and-file-based-api/).
 
