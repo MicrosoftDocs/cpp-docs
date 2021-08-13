@@ -82,18 +82,18 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 |Name|Description|
 |-|-|
-|[`operator-`](chrono-operators.md#op_minus)|Subtract or negate various <chrono> objects.|
-|[`operator!=`](chrono-operators.md#op_neq)|Inequality operator that is used with various <chrono> objects.|
+|[`operator-`](chrono-operators.md#op_minus)|Subtract or negate various `<chrono>` objects.|
+|[`operator!=`](chrono-operators.md#op_neq)|Inequality operator that is used with various `<chrono>` objects.|
 |[`operator modulo`](chrono-operators.md#op_modulo)|Operator for modulo operations on `duration` objects.|
 |[`operator*`](chrono-operators.md#op_star)|Multiplication operator for `duration` objects.|
 |[`operator/`](chrono-operators.md#op_div)|Division operator for `duration` objects.|
 |[`operator/`](chrono-operators.md#op_/)|Provides syntax to create calendar dates.|
-|[`operator+`](chrono-operators.md#op_add)|Add to various <chrono> objects.|
-|[`operator<`](chrono-operators.md#op_lt)|Determines whether various <chrono> objects are less than another.|
-|[`operator<=`](chrono-operators.md#op_lt_eq)|Determines whether various <chrono> objects are less than or equal to another.|
-|[`operator==`](chrono-operators.md#op_eq_eq)|Determines whether various <chrono> objects are equal to each other.|
-|[`operator>`](chrono-operators.md#op_gt)|Determines whether various <chrono> objects are greater than another.|
-|[`operator>=`](chrono-operators.md#op_gt_eq)|Determines whether various <chrono> objects are greater than or equal to another.|
+|[`operator+`](chrono-operators.md#op_add)|Add to various `<chrono>` objects.|
+|[`operator<`](chrono-operators.md#op_lt)|Determines whether various `<chrono>` objects are less than another.|
+|[`operator<=`](chrono-operators.md#op_lt_eq)|Determines whether various `<chrono>` objects are less than or equal to another.|
+|[`operator==`](chrono-operators.md#op_eq_eq)|Determines whether various `<chrono>` objects are equal to each other.|
+|[`operator>`](chrono-operators.md#op_gt)|Determines whether various `<chrono>` objects are greater than another.|
+|[`operator>=`](chrono-operators.md#op_gt_eq)|Determines whether various `<chrono>` objects are greater than or equal to another.|
 
 ## Typedefs (Predefined duration types)
 
