@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Compiler warnings that are off by default"
 title: "Compiler warnings that are off by default"
-ms.date: "08/29/2019"
+ms.date: 08/09/2021
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 ---
@@ -153,11 +153,13 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 | C5220 (level 4) | '*member*': a non-static data member with a volatile qualified type no longer implies that<br/> compiler generated copy/move constructors and copy/move assignment operators are not trivial <sup>16.7</sup> |
 | C5233 (level 4) | explicit lambda capture '*identifier*' is not used <sup>16.10</sup> |
 | C5240 (level 4) | '*attribute-name*': attribute is ignored in this syntactic position <sup>16.10</sup> |
-| C5243 (level 1) | '*type-name*': using incomplete class '*class-name*' can cause potential one definition rule violation due to ABI limitation <sup>16.10</sup> |
+| [C5243 (level 1)](../error-messages/compiler-warnings/c5247.md) | '*type-name*': using incomplete class '*class-name*' can cause potential one definition rule violation due to ABI limitation <sup>16.10</sup> |
 | C5245 (level 4) | '*function*': unreferenced function with internal linkage has been removed |
 | C5246 (level 1) | '*member*': the initialization of a subobject should be wrapped in braces <sup>16.10</sup> |
 | [C5247 (level 1)](../error-messages/compiler-warnings/c5247.md) | Section '*section-name*' is reserved for C++ dynamic initialization. Manually creating the section will interfere with C++ dynamic initialization and may lead to undefined behavior <sup>16.11</sup> |
 | [C5248 (level 1)](../error-messages/compiler-warnings/c5248.md) | Section '*section-name*' is reserved for C++ dynamic initialization. Variable manually put into the section may be optimized out and its order relative to compiler generated dynamic initializers is unspecified <sup>16.11</sup> |
+| C5249 (level 1) | '*bitfield*' of type '*enumeration_name*' has named enumerators with values that cannot be represented in the given bit field width of '*bitfield_width*'. <sup>17.0</sup> |
+| C5250 (level 3) | '*function_name*': intrinsic function not declared. <sup>17.0</sup> |
 
 <sup>14.1</sup> This warning is available starting in Visual Studio 2015 Update 1.\
 <sup>14.3</sup> This warning is available starting in Visual Studio 2015 Update 3.\
@@ -171,6 +173,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 <sup>16.7</sup> This warning is available starting in Visual Studio 2019 version 16.7.\
 <sup>16.10</sup> This warning is available starting in Visual Studio 2019 version 16.10.\
 <sup>16.11</sup> This warning is available starting in Visual Studio 2019 version 16.11.\
+<sup>17.0</sup> This warning is available starting in Visual Studio 2022 version 17.0.\
 <sup>Perm</sup> This warning is off unless the [`/permissive-`](../build/reference/permissive-standards-conformance.md) compiler option is set.
 
 ## Warnings off by default in earlier versions
