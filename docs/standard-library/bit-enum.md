@@ -36,7 +36,7 @@ All native scalar types are little-endian for the platforms that Microsoft Visua
 
 **Namespace:** std
 
-[/std:c++latest](../build/reference/std-specify-language-standard-version.md) is required.
+[`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later is required.
 
 ## See also
 
