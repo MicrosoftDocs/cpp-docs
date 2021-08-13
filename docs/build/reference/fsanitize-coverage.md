@@ -7,7 +7,9 @@ helpviewer_keywords: ["/fsanitize-coverage [C++]", "sanitizer compiler option [C
 ---
 # `/fsanitize-coverage` (Configure Sanitizer Coverage)
 
-The **`/fsanitize-coverage`** compiler options instruct the compiler to add various instrumentation points where user-defined functions are called. As of Visual Studio 2022 17.0, the follow options have experimental support: **`/fsanitize-coverage=edge`**, **`/fsanitize-coverage=inline-8bit-counters`**, **`/fsanitize-coverage=trace-cmp`**, **`/fsanitize-coverage=trace-div`**. 
+The **`/fsanitize-coverage`** compiler options instruct the compiler to add various instrumentation points where user-defined functions are called. These options are primarily useful for fuzzing scenarios with **`/fsanitize=fuzzer`**. See the OneFuzz [documentation page](https://www.microsoft.com/en-us/research/project/project-onefuzz/) and [GitHub project](https://github.com/microsoft/onefuzz) for more information.
+
+As of Visual Studio 2022 17.0, the follow options have experimental support: **`/fsanitize-coverage=edge`**, **`/fsanitize-coverage=inline-8bit-counters`**, **`/fsanitize-coverage=trace-cmp`**, **`/fsanitize-coverage=trace-div`**. 
 
 ## Syntax
 
@@ -22,7 +24,7 @@ The **`/fsanitize-coverage`** compiler options instruct the compiler to add vari
 
 ## Remarks
 
-The **`/fsanitize-coverage`** compiler options offer code coverage support and various options to modify which compiler-provided instrumentation is generated. Currently, all the options available are also ones that are automatically set when using [**`/fsanitize=fuzzer`**](fsanitize.md), which requires the instrumentation points and callbacks mentioned in these options. You do not need to provide the callbacks mentioned below when using **`/fsanitize=fuzzer`**.
+The **`/fsanitize-coverage`** compiler options offer code coverage support and various options to modify which compiler-provided instrumentation is generated. Currently, all the options available are also ones that are automatically set when using [**`/fsanitize=fuzzer`**](fsanitize.md), which requires the instrumentation points and callbacks mentioned in these options. You do not need to provide the callbacks mentioned below when using **`/fsanitize=fuzzer`**. 
 
 The **`/fsanitize-coverage=edge`** compiler option enables code coverage instrumentation along all non-redundant edges. Use **`/fno-sanitize-coverage=edge`** to disable this option if it has already been provided or implied by another option.
 

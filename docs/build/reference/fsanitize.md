@@ -20,7 +20,7 @@ Use the **`/fsanitize`** compiler options to enable sanitizers. As of Visual Stu
 
 The **`/fsanitize=address`** compiler option enables [AddressSanitizer](../../sanitizers/asan.md), a powerful compiler and runtime technology to light up [hard-to-find bugs](../../sanitizers/asan.md#error-types).
 
-The **`/fsanitize=fuzzer`** compiler option enables LibFuzzer (experimental), a coverage-guided fuzzing library that can be used to find bugs and crashes caused by user-provided input. It is recommended to use **`/fsanitize=address`** alongside LibFuzzer.
+The **`/fsanitize=fuzzer`** compiler option enables LibFuzzer (experimental), a coverage-guided fuzzing library that can be used to find bugs and crashes caused by user-provided input. It is recommended to use **`/fsanitize=address`** alongside LibFuzzer. See the OneFuzz [documentation page](https://www.microsoft.com/en-us/research/project/project-onefuzz/) and [GitHub project](https://github.com/microsoft/onefuzz) for more information.
 
 Currently, **`/fsanitize=`** does not allow comma-separated syntax, for example: **`/fsanitize=address,fuzzer`**. These options must be provided individually.
 
