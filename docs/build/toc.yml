@@ -773,6 +773,9 @@
                       href: ../build/reference/zc-implicitnoexcept-implicit-exception-specifiers.md
                     - name: "/Zc:inline (Remove unreferenced COMDAT)"
                       href: ../build/reference/zc-inline-remove-unreferenced-comdat.md
+                    - name: "/Zc:lambda (Enable updated lambda processor)"
+                      href: ../build/reference/zc-lambda.md
+                    - name: "/Zc:preprocessor (Enable preprocessor conformance mode)"
                     - name: "/Zc:noexceptTypes (C++17 noexcept rules)"
                       href: ../build/reference/zc-noexcepttypes.md
                     - name: "/Zc:preprocessor (Enable preprocessor conformance mode)"

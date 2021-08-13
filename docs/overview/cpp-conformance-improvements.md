@@ -493,9 +493,9 @@ long j = static_cast<long>(i);
 
 ### Syntax checks for generic lambdas
 
-The new lambda processor enables some conformance-mode syntactic checks in generic lambdas, under [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) or under any other language mode with **`/experimental:newLambdaProcessor`**.
+The new lambda processor enables some conformance-mode syntactic checks in generic lambdas, under [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) or under any other language mode with [`/Zc:lambda`](../build/reference/zc-lambda.md) in Visual Studio 2019 version 16.9 or later (previously available as **`/experimental:newLambdaProcessor`** beginning in Visual Studio 2019 version 16.3).
 
-In Visual Studio 2017, this code compiles without warnings, but in Visual Studio 2019 it produces error C2760:
+The legacy lambda processor compiles this example without warnings, but the new lambda processor produces error C2760:
 
 ```cpp
 void f() {
@@ -505,7 +505,7 @@ void f() {
 }
 ```
 
-The following example shows the correct syntax, now enforced by the compiler:
+This example shows the correct syntax, now enforced by the compiler:
 
 ```cpp
 void f() {
