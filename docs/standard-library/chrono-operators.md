@@ -811,7 +811,7 @@ Output the following types to a stream:
 - [`month_weekday`](month-weekday-class.md)
 - [`month_weekday_last`](month-weekday-last-class.md)
 - [`tai_time`](tai-clock-class.md)
-- [`utc_clock`](utc-clock-class.md)
+- [`utc_time`](utc-clock-class.md)
 - [`weekday`](weekday-class.md)
 - [`weekday_indexed`](weekdayindexed-class.md)
 - [`weekday_last`](weekdaylast-class.md)
@@ -901,17 +901,17 @@ operator<<(basic_ostream<CharT, Traits>& os, const year_month_weekday& ymwd); //
 // 16) year_month_weekday_last
 template<class CharT, class Traits>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const year_month_weekday_last& ymwdl);
+operator<<(basic_ostream<CharT, Traits>& os, const year_month_weekday_last& ymwdl); // C++ 20
 
 // 17) tai_time
 template<class CharT, class Traits, class Duration>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const tai_time<Duration>& tt);
+operator<<(basic_ostream<CharT, Traits>& os, const tai_time<Duration>& tt); // C++ 20
 
-// 18) utc_clock
+// 18) utc_time
 template<class CharT, class Traits, class Duration>
 basic_ostream<CharT, traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const utc_time<Duration>& t);
+operator<<(basic_ostream<CharT, Traits>& os, const utc_time<Duration>& t); // C++ 20
 ```
 
 ### Parameters
@@ -947,7 +947,7 @@ The `month_weekday` to output.
 The `month_weekday_last` to output.
 
 *`t`*\
-The `utc_clock` to output.
+The `utc_time` to output.
 
 *`tt`*\
 The `tai_time` to output.
@@ -1019,7 +1019,7 @@ The output stream you passed in, `os`
 
 17\) The `tai_time` is output in the form yyyy-mm-dd hh:mm:ss. For example, `2021-07-26 00:00:37`
 
-18\) The `utc_clock` is output in the form 
+18\) The `utc_time` is output in the form yyyy-mm-dd hh:mm:ss:xxxxxxx (fractions of a second). For example, `2021-08-13 23:23:08.4358666`
 
 ## <a name="op_modulo"></a> `operator modulo`
 

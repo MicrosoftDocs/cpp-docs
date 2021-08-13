@@ -43,6 +43,7 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). Given t
 
 | Name | Description |
 |--|--|
+| [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `utc_time` from the given stream using the specified format. |
 | [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info) | Gets a [leap_second_info](leap-second-info-struct.md) that indicates whether the supplied time specifies a time when a leap second was inserted. It also includes  the sum of all the leap seconds between January 1, 1970 and the specified duration. |
 | [`operator<<`](chrono-operators.md#op_left_shift) | Output a `utc_clock` to the given stream. |
 
