@@ -1,13 +1,13 @@
 ---
 description: "Learn more about: tai_clock class"
 title: "tai_clock class"
-ms.date: 07/26/2021
+ms.date: 08/13/2021
 f1_keywords: ["chrono/std::chrono::tai_clock", "chrono/std::chrono::tai_clock::from_stream", "chrono/std::chrono::tai_clock::now", "chrono/std::chrono::tai_clock::to_sys", "chrono/std::chrono::tai_clock::from_sys", "chrono/std::chrono::tai_clock::is_steady Constant"]
 ---
 
 # tai_clock class
 
-This clock reports international atomic time since 00:00:00 on January 1, 1958. This clock doesn't account for leap seconds.
+This clock reports international atomic time since 00:00:00 on Thursday, January 1, 1958. This clock doesn't account for leap seconds.
 
 ## Syntax
 
@@ -17,11 +17,9 @@ class tai_clock; // C++20
 
 ## Remarks
 
-This clock reports International Atomic Time (TAI, from the French *temps atomique international*). International Atomic Time uses a weighted average of many atomic clocks to track time. 
+This clock reports International Atomic Time (TAI, from the French *temps atomique international*). International Atomic Time uses a weighted average of many atomic clocks to track time.
 
 It's different from UTC time because a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 second. A discrepancy gradually occurs between the time kept by atomic clocks, and the time kept by tracking the rotation speed of the earth, because the earth's rotation speed is irregular and in general is slowing down over time by about one second every 1.5 years. TAI time doesn't keep track of this discrepancy, and as of this writing, it's now 37 seconds ahead of UTC time because of an addition of 10 seconds at the start of 1972 and the leap seconds that have been inserted since 1972.
-
-An atomic clock is almost too accurate in the sense that a day isn't exactly 24 hours because the earth's rotational speed is irregular. To keep UTC time in sync with the sun and the stars, a leap second is occasionally added, and theoretically could be subtracted if the earth's rotation speed increases.  
 
 `is_clock(tai_clock)` returns **true**.
 
@@ -45,8 +43,8 @@ An atomic clock is almost too accurate in the sense that a day isn't exactly 24 
 
 |Name|Description|
 |----------|-----------------|
-|`tai_clock::duration`|A synonym for `duration<rep, period>`, which represents a duration of time in user-defined units, and a fraction that represents the time in seconds between each integral value stored in the duration.|
-|`tai_clock::period`|A synonym for `system_clock::period`, which is a fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 seconds between ticks, and so on. |
+|`tai_clock::duration`|A synonym for `duration<rep, period>`, which is a fraction that represents the time in seconds between each integral value stored in the duration.|
+|`tai_clock::period`| Microsoft's implementation defines this as a synonym for `system_clock::period`, which defines a fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 seconds between ticks, and so on. |
 |`tai_clock::rep`|A synonym for the type used to represent the integral units in this clock's `tai_clock::duration`. |
 |`tai_clock::time_point`|A synonym for `chrono::time_point<tai_clock>`|
 
@@ -100,7 +98,7 @@ The `tai_time` to convert.
 
 ### Return Value
 
-A `utc_time` that represents the equivalent `tai_time` as *`t`*. It's calculated as `utc_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 378691210s`.  Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
+A `utc_time` that represents the equivalent `tai_time` as *`t`*. It's calculated as `utc_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 378691210s`. Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
 
 ## <a name="is_steady_constant"></a> is_steady
 
@@ -121,20 +119,6 @@ static time_point now() noexcept;
 ### Return Value
 
 A [time_point](../standard-library/time-point-class.md) object that represents the current time. The returned time point is effectively `from_sys(system_clock::now())`.
-
-
-## <a name="to_time_t"></a> to_time_t
-
-Static method that returns a [`time_t`](../c-runtime-library/standard-types.md) that most closely approximates the time that is represented by *Time*.
-
-```cpp
-static time_t to_time_t(const time_point& Time) noexcept;
-```
-
-### Parameters
-
-*Time*\
-A [time_point](../standard-library/time-point-class.md) object.
 
 ## See also
 

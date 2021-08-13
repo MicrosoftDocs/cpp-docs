@@ -17,16 +17,17 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 **Namespace:** `std`
 
-## Classes
-
-**Calenderical types**
+## Calendrical types
 
 | Name | Description |
 |--|--|
+|[`common_type` struct](common-type-structure.md)|Describes specializations of class template [`common_type`](common-type-class.md) for instantiations of `duration` and `time_point`.|
 | [`day` class](day-class.md) | A day of the month. For example, the 25th day of the month. |
 | [`duration` class](duration-class.md) | A time interval. |
+|[`duration_values` struct](duration-values-structure.md)|Provides specific values for the `duration` template parameter `Rep`.|
 | [`hh_mm_ss` class](hhmmss-class.md) | Splits a [`duration`](duration-class.md) into hours:minutes:seconds. |
 | [`leap_second` class](leap-second-class.md) | A date and a value for an inserted leap second. |
+|[`leap_second_info` struct](leap-second-info-struct.md) | The data returned by [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info). |
 | [`month` class](month-class.md) | A month of a year. For example, July. |
 | [`month_day` class](month-day-class.md) | A specific day of a specific month. For example, July 30th. |
 | [`month_day_last` class](month-day-last-class.md) | The last day of a month. |
@@ -48,24 +49,11 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 | Name | Description |
 |--|--|
-|[`tai_clock` class](tai-clock-class.md)| Measures International Atomic Time (TAI) starting from January 1, 1958 at 00:00:00. Doesn't account for leap seconds.|
-|[`utc_clock` class](utc-clock-class.md)| Measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds and is the time standard used around the world.|
-
-## Structs
-
-|Name|Description|
-|-|-|
-|[`common_type` struct](common-type-structure.md)|Describes specializations of class template [`common_type`](common-type-class.md) for instantiations of `duration` and `time_point`.|
-|[`duration_values` struct](duration-values-structure.md)|Provides specific values for the `duration` template parameter `Rep`.|
-|[`leap_second_info` struct](leap-second-info-struct.md) | The data returned by [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info). |
-
-**Clocks**
-
-| Name | Description |
-|--|--|
 |[`high_resolution_clock` struct](high-resolution-clock-struct.md)| A clock with a nanosecond tick period. |
 |[`steady_clock` struct](steady-clock-struct.md)|A `steady` clock. Preferred for measuring time intervals. |
 |[`system_clock` struct](system-clock-structure.md)|A *`clock type`* that is based on the real-time clock of the system.|
+|[`tai_clock` class](tai-clock-class.md)| Measures International Atomic Time (TAI) starting from Thursday, January 1, 1958 at 00:00:00. Doesn't account for leap seconds.|
+|[`utc_clock` class](utc-clock-class.md)| Measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds and is the time standard used around the world.|
 
 ## Functions
 

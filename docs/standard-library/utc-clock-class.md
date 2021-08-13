@@ -17,7 +17,7 @@ class utc_clock; // C++20
 
 ## Remarks
 
-This clock measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds. It's the basis for civil time around the world.
+This clock measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds and is the basis for civil time around the world.
 
 UTC time is based on International Atomic Time (TAI) which uses atomic clocks to track time. However, a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds.
 
@@ -25,7 +25,7 @@ There's a discrepancy between the time kept by atomic clocks, and the time kept 
 
 An atomic clock is almost too accurate in the sense that a day isn't exactly 24 hours, in part because of changes in the earth's rotational speed. To keep UTC time in sync with the sun and the stars, a leap second is occasionally added, and theoretically could be subtracted if the earth's rotation speed increases (which it has done).  
 
-At the time of this writing, 27 leap seconds have been added since the practice began in 1972. The International Earth Rotation and Reference Systems Service (IERS) determines when a leap second will be added. Adding a leap second is referred to as "leap second insertion". When a leap second is inserted, the time as it nears midnight proceeds from 23 hours 59 minutes 59 seconds to 23 hours 59 minutes 60 seconds (the inserted leap second), and then to 0 hours 0 minutes 0 seconds (midnight). In the past, leap seconds have been added either on June 30 or December 31.
+At the time of this writing, 27 leap seconds have been added since the practice began in 1972. The International Earth Rotation and Reference Systems Service (IERS) determines when a leap second will be added. Adding a leap second is referred to as a "leap second insertion". When a leap second is inserted, the time as it nears midnight proceeds from 23 hours 59 minutes 59 seconds to 23 hours 59 minutes 60 seconds (the inserted leap second), and then to 0 hours 0 minutes 0 seconds (midnight). In the past, leap seconds have been added either on June 30 or December 31.
 
 UTC time, by definition, starts out 10 seconds behind TAI (atomic time). Given the insertion of 27 leap seconds since then, UTC time is currently 37 seconds behind TAI (atomic clock) time.
 
@@ -43,16 +43,17 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). Given t
 
 | Name | Description |
 |--|--|
-| [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info) | Get information about whether the supplied time specifies a time when a leap second was inserted, and the sum of all the leap seconds between January 1, 1970 and the specified duration. |
+| [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info) | Gets a [leap_second_info](leap-second-info-struct.md) that indicates whether the supplied time specifies a time when a leap second was inserted. It also includes  the sum of all the leap seconds between January 1, 1970 and the specified duration. |
+| [`operator<<`](chrono-operators.md#op_left_shift) | Output a `utc_clock` to the given stream. |
 
 ## Public typedefs
 
 |Name|Description|
 |----------|-----------------|
 |`utc_clock::duration`|A synonym for `duration<rep, period>`, which represents a duration of time in user-defined units, and a fraction that represents the time in seconds between each integral value stored in the duration.|
-|`utc_clock::period`|A synonym for `system_clock::period`, which is a fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 second between ticks, and so on. |
+|`utc_clock::period`|Microsoft's implementation defines this as a synonym for `system_clock::period`, which is a fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 second between ticks, and so on. |
 |`utc_clock::rep`|A synonym for the type used to represent the integral units in this clock's `utc_clock::duration`.|
-|`utc_clock::time_point`|A synonym for `time_point<clock, duration>`, where `clock` is a synonym for either the clock type itself or another clock type that is based on the same epoch and has the same `duration` type.|
+|`utc_clock::time_point`|A synonym for `time_point<utc_clock>`.|
 
 ## Public Constants
 
@@ -104,9 +105,11 @@ The `utc_time` to convert.
 
 ### Return Value
 
+The `sys_time` set to the equivalent point in time as `t`. If a direct mapping doesn't exist, it is the last representable value before the insertion of a leap second in the case that `t` represents a point in time when a leap second was inserted. Adding a leap second is referred to as a "leap second insertion". When a leap second is inserted, the time as it nears midnight proceeds from 23 hours 59 minutes 59 seconds to 23 hours 59 minutes 60 seconds (the inserted leap second), and then to 0 hours 0 minutes 0 seconds (midnight). In the past, leap seconds have been added either on June 30 or December 31.
+
 ## <a name="is_steady_constant"></a> is_steady
 
-Static value that specifies whether the clock type is *steady*. In this implementation, `is_steady_constant` is always **`false`**.
+Static value that specifies whether the clock type is *steady*. In Microsoft's implementation, `is_steady_constant` is always **`false`**.
 
 ```cpp
 static const bool is_steady = false;
@@ -123,20 +126,6 @@ static time_point now() noexcept;
 ### Return Value
 
 A [time_point](../standard-library/time-point-class.md) object that represents the current time. The returned time point is effectively `from_sys(system_clock::now())`.
-
-
-## <a name="to_time_t"></a> to_time_t
-
-Static method that returns a [`time_t`](../c-runtime-library/standard-types.md) that most closely approximates the time that is represented by *Time*.
-
-```cpp
-static time_t to_time_t(const time_point& Time) noexcept;
-```
-
-### Parameters
-
-*Time*\
-A [time_point](../standard-library/time-point-class.md) object.
 
 ## See also
 

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: &lt;chrono&gt; functions"
 title: "&lt;chrono&gt; functions"
-ms.date: 6/16/2021
+ms.date: "08/13/2021"
 f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast", "chrono/std::chrono::duration_cast", "chrono/std::chrono::time_point_cast", "chrono/std::chrono::from_stream", "chrono/std::chrono::floor", "chrono/std::chrono::ceil", "chrono/std::chrono::round", "chrono/std::chrono::is_am", "chrono/std::chrono::is_pm", "chrono/std::chrono::make12", "chrono/std::chrono::make24", "chrono/std::chrono::get_leap_second_info", "chrono/std::chrono::get_tzdb", "chrono/std::chrono::get_tzdb_list", "chrono/std::chrono::locate_zone", "chrono/std::chrono::current_zone", "chrono/std::chrono::reload_tzdb", "chrono/std::chrono::remote_version"]
 helpviewer_keywords: ["std::duration_cast function", "std::time_point_cast function", "std::chrono::duration_cast function", "std::chrono::time_point_cast function", "std::chrono::from_stream function", "std::chrono::floor function", "std::chrono::ceil function", "std::chrono::round function", "std::chrono::is_am function", "std::chrono::is_pm function", "std::chrono::make12 function", "std::chrono::make24 function", "std::chrono::get_leap_second_info function", "std::chrono::get_tzdb function", "std::chrono::get_tzdb_list function", "std::chrono::locate_zone function", "std::chrono::current_zone function", "std::chrono::reload_tzdb function", "std::chrono::remote_version function"]
 ---
@@ -542,7 +542,7 @@ In ISO 8601, weeks begin with Monday. The first week of the year must include Ja
 
 ## <a name="std-chrono-get-leap-second-info"></a> `get_leap_second_info`
 
-Returns a [`leap_second_info`](./leap-second-info-struct.md) for the specified time which provides information about whether the supplied time is when a leap second was inserted, and the sum of all the leap seconds between January 1, 1970 and the specified time.
+Returns a [`leap_second_info`](./leap-second-info-struct.md) for the specified time which provides information about whether the supplied time occurs during a leap second insertion, and the sum of all the leap seconds between January 1, 1970 and the specified time. A leap second insertion occurs when the International Earth Rotation and Reference Systems Service (IERS) declares that a leap second needs to be added (resulting in a 61 second minute) in order to account for the difference between atomic time and time tracked by measuring the rotation of the earth, which is irregular, and is generally very gradually slowing.
 
 ### Syntax
 

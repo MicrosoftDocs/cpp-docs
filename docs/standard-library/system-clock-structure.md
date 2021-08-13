@@ -30,8 +30,8 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 |Name|Description|
 |----------|-----------------|
-|`system_clock::duration`|A synonym for `duration<rep, period>`, which represents a duration of time in user-defined units, and a fraction that represents the time in seconds between each integral value stored in the duration.|
-|`system_clock::period`|A synonym for `system_clock::period`, which is a fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 second between ticks, and so on.|
+|`system_clock::duration`|A synonym for `duration<rep, period>`, which represents a duration of time, and a fraction that represents the time in seconds between each integral value stored in the duration.|
+|`system_clock::period`|A fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 second between ticks, and so on.|
 |`system_clock::rep`|A synonym for the type used to represent the integral units in this clock's `system_clock::duration`.|
 |`system_clock::time_point`|A synonym for `time_point<Clock, duration>`, where `Clock` is a synonym for either the clock type itself or another clock type that is based on the same epoch and has the same nested `duration` type.|
 
@@ -83,7 +83,7 @@ In this implementation, `system_clock::is_steady` always returns **`false`**.
 
 ### Remarks
 
-A clock is *steady* if it is and if the time between clock ticks is constant. The `system_clock` is not  monotonic because the value that is returned by a first call to `now()` is not always less than or equal to the value that is returned by a subsequent call to `now()` because the system time can be adjusted without notice.
+A clock is *steady* if it is monotonic and if the time between clock ticks is constant. The `system_clock` is not  monotonic because the value that is returned by a first call to `now()` is not always less than or equal to the value that is returned by a subsequent call to `now()` because the system time can be adjusted without notice.
 
 ## <a name="now"></a> now
 
