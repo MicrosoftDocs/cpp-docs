@@ -15,7 +15,7 @@ Enables experimental compiler support for Standard Template Library named module
 
 ## Remarks
 
-You can enable experimental modules support by use of the **`/experimental:module`** compiler option along with the [`/std:c++20`](./reference/std-specify-language-standard-version.md) or later option. (In versions before Visual Studio 2019 version 16.11, use **`/std:c++latest`**.) Use **`/experimental:module-`** to disable module support explicitly.
+You can enable experimental modules support by use of the **`/experimental:module`** compiler option along with the [`/std:c++20`](std-specify-language-standard-version.md) or later option. (In versions before Visual Studio 2019 version 16.11, use **`/std:c++latest`**.) Use **`/experimental:module-`** to disable module support explicitly.
 
 This option is available starting in Visual Studio 2015 Update 1. As of Visual Studio 2019 version 16.2, Draft C++20 Standard modules aren't fully implemented in the Microsoft C++ compiler. You can use the modules feature to create single-partition modules and to import the Standard Library modules provided by Microsoft. A module and the code that consumes it must be compiled with the same compiler options.
 
