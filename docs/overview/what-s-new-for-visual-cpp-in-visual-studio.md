@@ -252,7 +252,7 @@ For a summary of new features and bug fixes in Visual Studio version 16.1, see [
   - Increased ability to find function templates via argument-dependent lookup for function call expressions with explicit template arguments ([P0846R0](http://wg21.link/p0846r0)).
   - Designated initialization ([P0329R4](https://wg21.link/p0329r4)), which allows specific members to be selected in aggregate initialization, for example, by using the `Type t { .member = expr }` syntax.
 
-- Lambda support has been overhauled, addressing a large number of long-standing bugs. This change is enabled by default when using **`/std:c++latest`**. In **`/std:c++17`** language mode and under the default (**`/std:c++14`** ) mode, the new parser can be enabled by using **`/experimental:newLambdaProcessor`**, for example, `/std:c++17 /experimental:newLambdaProcessor`.
+- Lambda support has been overhauled, addressing a large number of long-standing bugs. This change is enabled by default when using **`/std:c++20`** or **`/std:c++latest`**. In **`/std:c++17`** language mode and under the default (**`/std:c++14`** ) mode, the new parser can be enabled by using [`/Zc:lambda`](../build/reference/zc-lambda.md) in Visual Studio 2019 version 16.9 or later (previously available as **`/experimental:newLambdaProcessor`** beginning in Visual Studio 2019 version 16.3), for example, `/std:c++17 /Zc:lambda`.
 
 ### C++ standard library improvements
 
