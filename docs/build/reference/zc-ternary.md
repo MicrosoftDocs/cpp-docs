@@ -49,7 +49,7 @@ int main()
 
 To fix this code, make an explicit cast to the preferred common type, or prevent one direction of type conversion. You can keep the compiler from matching a type conversion by making the conversion explicit.
 
-An important exception to this common pattern is when the type of the operands is one of the null-terminated string types, such as `const char*`, `const char16_t*`, and so on. You can also reproduce the effect with array types and the pointer types they decay to. The behavior when the actual second or third operand to `?:` is a string literal of corresponding type depends on the language standard used. C++17 has changed semantics for this case from C++14. As a result, the compiler accepts the code in the following example under the default **`/std:c++14`**, but rejects it when you specify **`/std:c++17`**.
+An important exception to this common pattern is when the type of the operands is one of the null-terminated string types, such as `const char*`, `const char16_t*`, and so on. You can also reproduce the effect with array types and the pointer types they decay to. The behavior when the actual second or third operand to `?:` is a string literal of corresponding type depends on the language standard used. C++17 has changed semantics for this case from C++14. As a result, the compiler accepts the code in the following example under the default **`/std:c++14`**, but rejects it when you specify **`/std:c++17`** or later.
 
 ```cpp
 // zcternary2.cpp

@@ -33,7 +33,7 @@ Applying the postfix increment operator to a pointer to an array of objects of t
 
 The operands to postfix increment and postfix decrement operators must be modifiable (not **`const`**) l-values of arithmetic or pointer type. The type of the result is the same as that of the *postfix-expression*, but it is no longer an l-value.
 
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The operand of a postfix increment  or decrement operator may not be of type **`bool`**.
+**Visual Studio 2017 version 15.3 and later** (available in [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode and later): The operand of a postfix increment  or decrement operator may not be of type **`bool`**.
 
 The following code illustrates the postfix increment operator:
 

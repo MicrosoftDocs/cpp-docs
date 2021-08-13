@@ -30,9 +30,9 @@ Before you can import a header unit, you need to compile a header file into a he
 
 Another advantage of header units over PCH is that there's more flexibility for the compiler flags used to compile the header unit and for the program that imports it. With a PCH, more compiler flags must be the same. But with header units, these flags should be the same:
 
-- Exception handling switches like `/EHsc`.
-- `/MD[d]` or `MT[d]`.
-- `/D`. You can define additional macros when you build the program that imports the header unit. But the ones used to build the header unit should also be present and defined the same way when you build the program that imports the header unit.
+- Exception handling options like **`/EHsc`**.
+- **`/MD[d]`** or **`MT[d]`**.
+- **`/D`**. You can define additional macros when you build the program that imports the header unit. But the ones used to build the header unit should also be present and defined the same way when you build the program that imports the header unit.
 
 ## Ways to compile a header unit
 
@@ -76,12 +76,11 @@ In this example, you'll compile a header file as a header unit. Start by creatin
     #endif
     ```
 
-To enable header units, first set the **C++ Language Standard** to [`/std:c++latest`](./reference/std-specify-language-standard-version.md).
+To enable header units, first set the **C++ Language Standard** to [`/std:c++20`](./reference/std-specify-language-standard-version.md) or later.
 
 1. On the Visual Studio main menu, select **Project** > **Properties**.
 1. In the left pane of the project property pages window, select **Configuration Properties** > **General**.
-1. In the **C++ Language Standard** list, select **Preview - Features from the Latest C++ Working Draft (/std:c++latest)**:
-:::image type="content" source="media/set-cpp-language-latest.png" alt-text="Screenshot that shows setting the language standard to the preview version.":::
+1. In the **C++ Language Standard** list, select **ISO C++20 Standard (/std:c++20)** or later. (In versions before Visual Studio 2019 version 16.11, select **Preview - Features from the Latest C++ Working Draft (/std:c++latest)**.)
 
 ### Compile a header file as a header unit
 

@@ -32,7 +32,7 @@ the message parameter for **`static_assert`** is optional. For more information,
 
 ### C++17: `[[fallthrough]]` attribute
 
-In **`/std:c++17`** mode, the `[[fallthrough]]` attribute can be used in the context of switch statements as a hint to the compiler that the fall-through behavior is intended. This attribute prevents the compiler from issuing warnings in such cases. For more information, see [P0188R0 - Wording for `[[fallthrough]]` attribute](https://wg21.link/p0188r0).
+In **`/std:c++17`** mode and later, the `[[fallthrough]]` attribute can be used in the context of switch statements as a hint to the compiler that the fall-through behavior is intended. This attribute prevents the compiler from issuing warnings in such cases. For more information, see [P0188R0 - Wording for `[[fallthrough]]` attribute](https://wg21.link/p0188r0).
 
 ### Generalized range-based `for` loops
 
@@ -828,9 +828,9 @@ For [P0607R0](https://wg21.link/p0607r0), several common variables declared in t
 
 ### Annex D features deprecated
 
-Annex D of the C++ standard contains all the features that have been deprecated, including `shared_ptr::unique()`, `<codecvt>`, and `namespace std::tr1`. When the **`/std:c++17`** compiler switch is set, almost all the standard library features in Annex D are marked as deprecated. For more information, see [Standard library features in Annex D are marked as deprecated](#annex_d).
+Annex D of the C++ standard contains all the features that have been deprecated, including `shared_ptr::unique()`, `<codecvt>`, and `namespace std::tr1`. When the **`/std:c++17`** or later compiler option is set, almost all the standard library features in Annex D are marked as deprecated. For more information, see [Standard library features in Annex D are marked as deprecated](#annex_d).
 
-The `std::tr2::sys` namespace in `<experimental/filesystem>` now emits a deprecation warning under **`/std:c++14`** by default, and is now removed under **`/std:c++17`** by default.
+The `std::tr2::sys` namespace in `<experimental/filesystem>` now emits a deprecation warning under **`/std:c++14`** by default, and is now removed under **`/std:c++17`** and later by default.
 
 Improved conformance in `<iostream>` by avoiding a non-standard extension (in-class explicit specializations).
 
@@ -961,7 +961,7 @@ int main() {
 
 ### <a name="annex_d"></a> Standard library features in Annex D are marked as deprecated
 
-When the **`/std:c++17`** mode compiler switch is set, almost all standard library features in Annex D are marked as deprecated.
+When the **`/std:c++17`** mode or later compiler switch is set, almost all standard library features in Annex D are marked as deprecated.
 
 In Visual Studio 2017 version 15.5, the following code raises C4996:
 
@@ -1238,7 +1238,7 @@ int main()
 
 With **`noexcept`** in the type system, partial specializations for matching particular "callable" types may not compile, or fail to choose the primary template, because of a missing partial specialization for pointers-to-noexcept-functions.
 
-In such cases, you may need to add more partial specializations to handle the **`noexcept`** function pointers and **`noexcept`** pointers to member functions. These overloads are only legal in **`/std:c++17`** mode. If backwards-compatibility with C++14 must be maintained, and you're writing code that others consume, then you should guard these new overloads inside `#ifdef` directives. If you're working in a self-contained module, then instead of using `#ifdef` guards you can just compile with the **`/Zc:noexceptTypes-`** switch.
+In such cases, you may need to add more partial specializations to handle the **`noexcept`** function pointers and **`noexcept`** pointers to member functions. These overloads are only legal in **`/std:c++17`** mode or later. If backwards-compatibility with C++14 must be maintained, and you're writing code that others consume, then you should guard these new overloads inside `#ifdef` directives. If you're working in a self-contained module, then instead of using `#ifdef` guards you can just compile with the **`/Zc:noexceptTypes-`** switch.
 
 The following code compiles under **`/std:c++14`** but fails under **`/std:c++17`** with error C2027:
 
@@ -1310,7 +1310,7 @@ int main()
 
 ### C++17: Rewording inheriting constructors
 
-[P0136R1](https://wg21.link/p0136r1) specifies that a **`using`** declaration that names a constructor now makes the corresponding base class constructors visible to initializations of the derived class, rather than declaring more derived class constructors. This rewording is a change from C++14. In Visual Studio 2017 version 15.7 and later, in **`/std:c++17`** mode, code that is valid in C++14 and uses inheriting constructors may not be valid, or may have different semantics.
+[P0136R1](https://wg21.link/p0136r1) specifies that a **`using`** declaration that names a constructor now makes the corresponding base class constructors visible to initializations of the derived class, rather than declaring more derived class constructors. This rewording is a change from C++14. In Visual Studio 2017 version 15.7 and later, in **`/std:c++17`** mode and later, code that is valid in C++14 and uses inheriting constructors may not be valid, or may have different semantics.
 
 The following example shows C++14 behavior:
 
@@ -1356,7 +1356,7 @@ For more information, see [Constructors](../cpp/constructors-cpp.md#inheriting_c
 
 [P0017R1](https://wg21.link/p0017r1)
 
-If the constructor of a base class is non-public, but accessible to a derived class, then under **`/std:c++17`** mode in Visual Studio 2017 version 15.7 you can no longer use empty braces to initialize an object of the derived type.
+If the constructor of a base class is non-public, but accessible to a derived class, then under **`/std:c++17`** mode and later in Visual Studio 2017 version 15.7, you can no longer use empty braces to initialize an object of the derived type.
 The following example shows C++14 conforming behavior:
 
 ```cpp
@@ -1718,7 +1718,7 @@ public:
 
 In Visual Studio 2017 version 15.8, the compiler constrains the areas that these **`reinterpret_cast`** operators can appear in the default mode, to help code conform to standard C++ behavior. Under [`/permissive-`](../build/reference/permissive-standards-conformance.md), the constraints are even stricter. Using the result of an `offsetof` in places that require constant expressions may result in code that issues warning C4644 or C2975.
 
-The following code raises C4644 in **`/default`** and **`/std:c++17`** modes, and C2975 in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode:
+The following code raises C4644 in default and **`/std:c++17`** modes, and C2975 in [`/permissive-`](../build/reference/permissive-standards-conformance.md) mode:
 
 ```cpp
 struct Data {

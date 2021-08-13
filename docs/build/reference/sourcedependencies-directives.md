@@ -9,14 +9,14 @@ helpviewer_keywords: ["/sourceDependencies:directives compiler option", "/source
 ---
 # `/sourceDependencies:directives` (List module and header unit dependencies)
 
-This command-line switch generates a JSON file that lists module and header-unit dependencies.
+This command-line option generates a JSON file that lists module and header-unit dependencies.
 
 It identifies which modules and header units need to be compiled before the project that uses them is compiled. For instance, it will list `import <library>;` or `import "library";` as a header unit dependency, and `import name;` as a module dependency.
 
 This command-line option is similar to [`/sourceDependencies`](sourcedependencies.md), but differs in the following ways:
 
 - The compiler doesn't produce compiled output. Instead, the files are scanned for module directives. No compiled code, modules, or header units are produced.
-- The output JSON file doesn't list imported modules and imported header units (*`.ifc`* files) because this switch does a scan of the project files, not a compilation. So there are no built modules or header units to list.
+- The output JSON file doesn't list imported modules and imported header units (*`.ifc`* files) because this option does a scan of the project files, not a compilation. So there are no built modules or header units to list.
 - Only directly imported modules or header units are listed. It doesn't list the dependencies of the imported modules or header units themselves.
 - Header file dependencies are not listed. That is, `#include <file>` or `#include "file"` dependencies are not listed.
 - `/sourceDependencies:directives` is meant to be used before *`.ifc`* files are built.

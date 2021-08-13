@@ -38,7 +38,7 @@ A variable of type **`wchar_t`** is a wide-character or multibyte character type
 
 **Microsoft-specific**: By default, **`wchar_t`** is a native type, but you can use [`/Zc:wchar_t-`](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) to make **`wchar_t`** a typedef for **`unsigned short`**. The **`__wchar_t`** type is a Microsoft-specific synonym for the native **`wchar_t`** type.
 
-The **`char8_t`** type is used for UTF-8 character representation. It has the same representation as **`unsigned char`**, but is treated as a distinct type by the compiler. The **`char8_t`** type is new in C++20. **Microsoft-specific**: use of **`char8_t`**  requires the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
+The **`char8_t`** type is used for UTF-8 character representation. It has the same representation as **`unsigned char`**, but is treated as a distinct type by the compiler. The **`char8_t`** type is new in C++20. **Microsoft-specific**: use of **`char8_t`**  requires the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler option or later (such as **`/std:c++latest`**).
 
 The **`char16_t`** type is used for UTF-16 character representation. It must be large enough to represent any UTF-16 code unit. It's treated as a distinct type by the compiler.
 

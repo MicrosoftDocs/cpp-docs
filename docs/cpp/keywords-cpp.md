@@ -120,7 +120,7 @@ Keywords are predefined reserved identifiers that have special meanings. They ca
 
 <sup>b</sup> The extended operator synonyms are keywords when [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) is specified. They aren't keywords when Microsoft extensions are enabled.
 
-<sup>c</sup> Supported when [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) is specified.
+<sup>c</sup> Supported when [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later (such as **`/std:c++latest`**) is specified.
 
 ## Microsoft-specific C++ keywords
 

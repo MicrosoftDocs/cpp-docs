@@ -335,7 +335,7 @@ Enables OpenMP 2.0 language extensions. Sets [`/openmp`](openmp-enable-openmp-2-
 
 ### C++ Language Standard
 
-Determines the C++ language standard the compiler enables. Use the latest version when possible. Sets [`/std:c++14`, `/std:c++17`, `/std:c++latest`](std-specify-language-standard-version.md).
+Determines the C++ language standard the compiler enables. Use the latest version when possible. Sets [`/std:c++14`](std-specify-language-standard-version.md), [`/std:c++17`](std-specify-language-standard-version.md), [`/std:c++20`](std-specify-language-standard-version.md), or [`/std:c++latest`](std-specify-language-standard-version.md).
 
 #### Choices
 
