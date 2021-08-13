@@ -26,7 +26,7 @@ The **`/fsanitize-coverage`** compiler options offer code coverage support and v
 
 The **`/fsanitize-coverage=edge`** compiler option enables code coverage instrumentation along all non-redundant edges. Use **`/fno-sanitize-coverage=edge`** to disable this option if it has already been provided or implied by another option.
 
-The **`/fsanitize-coverage=inline-8bit-counters`** compiler option instructs the compiler to add an inline counter increment on every edge. This option will also add a call to `extern "C" void __sanitizer_cov_8bit_counters_init(uint8_t *start, uint8_t *stop)` that will need to be implemented. The arguments correspond to the start and end of an array containing all the 8-bit counters created. Use **`/fno-sanitize-coverage=inline-8bit-counters`** to disable this option if it has been already provided or implied by another option.
+The **`/fsanitize-coverage=inline-8bit-counters`** compiler option instructs the compiler to add an inline counter increment on every relevant edge. This option will also add a call to `extern "C" void __sanitizer_cov_8bit_counters_init(uint8_t *start, uint8_t *stop)` that will need to be implemented. The arguments correspond to the start and end of an array containing all the 8-bit counters created. Use **`/fno-sanitize-coverage=inline-8bit-counters`** to disable this option if it has been already provided or implied by another option.
 
 The **`/fsanitize-coverage=trace-cmp`** compiler option instructs the compiler to insert calls to the following functions:
 ```C
