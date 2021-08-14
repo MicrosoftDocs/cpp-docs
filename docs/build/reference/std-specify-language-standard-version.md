@@ -12,7 +12,7 @@ Enable supported C and C++ language features from the specified version of the C
 
 > **`/std:c++14`**\
 > **`/std:c++17`**\
-> **`/std:c++30`**\
+> **`/std:c++20`**\
 > **`/std:c++latest`**\
 > **`/std:c11`**\
 > **`/std:c17`**

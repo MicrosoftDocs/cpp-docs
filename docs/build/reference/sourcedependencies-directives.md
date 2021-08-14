@@ -40,7 +40,7 @@ If the argument is a directory, the compiler generates source dependency files i
 
 ## Remarks
 
-**`/sourceDependencies:directives`** is available starting in Visual Studio 2019 version 16.10 Preview 2. It's not enabled by default.
+**`/sourceDependencies:directives`** is available starting in Visual Studio 2019 version 16.10. It's not enabled by default.
 
 When you specify the **`/MP`** compiler option, we recommend you use **`/sourceDependencies`** with a directory argument. If you provide a single filename argument, two instances of the compiler may attempt to open the output file simultaneously and cause an error. For more information on **`/MP`**, see [`/MP` (Build with multiple processes)](mp-build-with-multiple-processes.md).
 

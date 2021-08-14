@@ -25,7 +25,7 @@ A similarity is that everything visible from a header file is also visible from 
 
 ## Prerequisites
 
-To use header units, you need Visual Studio 2019 16.10.0 Preview 2 or later.
+To use header units, you need Visual Studio 2019 16.10 or later.
 
 ## Two approaches
 

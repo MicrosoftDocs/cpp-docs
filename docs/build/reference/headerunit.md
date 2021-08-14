@@ -29,7 +29,7 @@ The name of a file that contains compiled header unit information. To import mor
 
 The **`/headerUnit`** compiler option requires the [`/std:c++20`](std-specify-language-standard-version.md) or later compiler option (such as **`/std:c++latest`**).
 
-The **`/headerUnit`** compiler option is available starting in Visual Studio 2019 version 16.10 preview 2.
+The **`/headerUnit`** compiler option is available starting in Visual Studio 2019 version 16.10.
 
 When the compiler comes across `import "file";` or `import <file>;`, this compiler option helps the compiler find the compiled header unit (*`.ifc`*) for the specified header file. The path to this file can be expressed in three ways:
 

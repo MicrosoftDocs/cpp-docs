@@ -23,7 +23,7 @@ The argument to `/exportHeader` is a `/headerName` command-line option that spec
 
 ## Remarks
 
-**`/exportHeader`** is available starting in Visual Studio 2019 version 16.10 Preview 2.
+**`/exportHeader`** is available starting in Visual Studio 2019 version 16.10.
 
 The **`/exportHeader`** compiler option requires you enable the [`/std:c++20`](std-specify-language-standard-version.md) or later compiler option (such as **`/std:c++latest`**).
 

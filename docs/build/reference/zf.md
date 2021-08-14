@@ -19,7 +19,7 @@ The **/Zf** option enables compiler support for faster generation of PDB files w
 
 Because the **/Zf** option only applies to PDB generation, it requires the [/Zi](z7-zi-zi-debug-information-format.md) or [/ZI](z7-zi-zi-debug-information-format.md) option.
 
-The **/Zf** option is available beginning in Visual Studio 2017 version 15.1, where it is off by default. Starting in Visual Studio 2017 version 15.7 Preview 3, this option is on by default when the **/Zi** or **/ZI** option is enabled.
+The **/Zf** option is available beginning in Visual Studio 2017 version 15.1, where it is off by default. Starting in Visual Studio 2017 version 15.7, this option is on by default when the **/Zi** or **/ZI** option is enabled.
 
 ### To set this compiler option in the Visual Studio development environment
 

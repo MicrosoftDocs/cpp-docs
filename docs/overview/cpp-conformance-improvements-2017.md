@@ -1468,7 +1468,7 @@ void sample(A<0> *p)
 
 ### C++17: `constexpr` for `char_traits` (partial)
 
-[P0426R1](https://wg21.link/p0426r1) Changes to `std::traits_type` member functions `length`, `compare`, and `find` to make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7 Preview 2, support is nearly complete for ClXX as well.)
+[P0426R1](https://wg21.link/p0426r1) Changes to `std::traits_type` member functions `length`, `compare`, and `find` to make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7, support is nearly complete for ClXX as well.)
 
 ### C++17: Default argument in the primary class template
 
