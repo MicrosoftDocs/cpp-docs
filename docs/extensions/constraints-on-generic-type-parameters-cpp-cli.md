@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Constraints on Generic Type Parameters (C++/CLI)"
 title: "Constraints on Generic Type Parameters (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
@@ -55,7 +56,7 @@ This constraint requires that a type argument used for `T` implements `IComparab
 
 Static methods in the type argument's class cannot be called through the type parameter; they can be called only through the actual named type.
 
-A constraint cannot be a value type, including built-in types such as **int** or **double**. Since value types cannot have derived classes, only one class would ever be able to satisfy the constraint. In that case, the generic can be rewritten with the type parameter replaced by the specific value type.
+A constraint cannot be a value type, including built-in types such as **`int`** or **`double`**. Since value types cannot have derived classes, only one class would ever be able to satisfy the constraint. In that case, the generic can be rewritten with the type parameter replaced by the specific value type.
 
 Constraints are required in some cases since the compiler will not allow the use of methods or other features of an unknown type unless the constraints imply that the unknown type supports the methods or interfaces.
 
@@ -104,7 +105,7 @@ To summarize, use constraints in your code according to the following rules:
     ref class G2{};
     ```
 
-## Example
+## Examples
 
 The following example demonstrates using constraints to call instance methods on type parameters.
 
@@ -165,8 +166,6 @@ int main() {
 "parent" is not a senior
 "grandfather" is a senior
 ```
-
-## Example
 
 When a generic type parameter is used as a constraint, it is called a naked type constraint. Naked type constraints are useful when a member function with its own type parameter needs to constrain that parameter to the type parameter of the containing type.
 

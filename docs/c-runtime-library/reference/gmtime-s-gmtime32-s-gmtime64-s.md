@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: gmtime_s, _gmtime32_s, _gmtime64_s"
 title: "gmtime_s, _gmtime32_s, _gmtime64_s"
 ms.date: "4/2/2020"
 api_name: ["_gmtime32_s", "gmtime_s", "_gmtime64_s", "_o__gmtime32_s", "_o__gmtime64_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_gmtime_s", "gmtime64_s", "gmtime32_s", "_gmtime64_s", "gmtime_s", "_gmtime32_s"]
@@ -59,7 +60,7 @@ The **_gmtime32_s** function breaks down the *sourceTime* value and stores it in
 > [!NOTE]
 > The target environment should try to determine whether daylight savings time is in effect. The C run-time library assumes the United States rules for implementing the calculation of daylight saving time .
 
-Each of the structure fields is of type **int**, as shown in the following table.
+Each of the structure fields is of type **`int`**, as shown in the following table.
 
 |Field|Description|
 |-|-|

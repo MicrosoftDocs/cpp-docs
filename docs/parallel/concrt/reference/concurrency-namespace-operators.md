@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: concurrency namespace Operators"
 title: "concurrency namespace Operators"
 ms.date: "11/04/2016"
 f1_keywords: ["concrt/concurrency::operator!=", "concrt/concurrency:[operator&amp;&amp"]
@@ -6,11 +7,24 @@ ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
 ---
 # concurrency namespace Operators
 
-||||
-|-|-|-|
-|[operator!=](#operator_neq)|[operator&amp;&amp;](#operator_amp_amp)|[operator&gt;](#operator_gt)|
-|[operator&gt;=](#operator_gt_eq)|[operator&lt;](#operator_lt)|[operator&lt;=](#operator_lt_eq)|
-|[operator==](#operator_eq_eq)|[operator&#124;&#124;](#operator_lor)| |
+:::row:::
+   :::column span="":::
+      [`operator||`](#operator_lor)\
+      [`operator&&`](#operator_amp_amp)
+   :::column-end:::
+   :::column span="":::
+      [`operator==`](#operator_eq_eq)\
+      [`operator!=`](#operator_neq)
+   :::column-end:::
+   :::column span="":::
+      [`operator<`](#operator_lt)\
+      [`operator<=`](#operator_lt_eq)
+   :::column-end:::
+   :::column span="":::
+      [`operator>`](#operator_gt)\
+      [`operator>=`](#operator_gt_eq)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="operator_lor"></a> operator&#124;&#124; Operator
 
@@ -50,7 +64,7 @@ The second task to combine into the resulting task.
 
 ### Return Value
 
-A task that completes successfully when either of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>`. If the input tasks are of type `void` the output task will also be a `task<void>`.
+A task that completes successfully when either of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>`. If the input tasks are of type **`void`** the output task will also be a `task<void>`.
 
 ### Remarks
 
@@ -99,7 +113,7 @@ The second task to combine into the resulting task.
 
 ### Return Value
 
-A task that completes successfully when both of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type `void` the output task will also be a `task<void>`.
+A task that completes successfully when both of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type **`void`** the output task will also be a `task<void>`.
 
 ### Remarks
 
@@ -135,7 +149,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-**true** if the concurrent vector on the left side of the operator is equal to the concurrent vector on the right side of the operator; otherwise **false**.
+**`true`** if the concurrent vector on the left side of the operator is equal to the concurrent vector on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -173,7 +187,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-**true** if the concurrent vectors are not equal; **false** if the concurrent vectors are equal.
+**`true`** if the concurrent vectors are not equal; **`false`** if the concurrent vectors are equal.
 
 ### Remarks
 
@@ -211,7 +225,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-**true** if the concurrent vector on the left side of the operator is less than the concurrent vector on the right side of the operator; otherwise **false**.
+**`true`** if the concurrent vector on the left side of the operator is less than the concurrent vector on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -249,7 +263,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-**true** if the concurrent vector on the left side of the operator is less than or equal to the concurrent vector on the right side of the operator; otherwise **false**.
+**`true`** if the concurrent vector on the left side of the operator is less than or equal to the concurrent vector on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -287,7 +301,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-**true** if the concurrent vector on the left side of the operator is greater than the concurrent vector on the right side of the operator; otherwise **false**.
+**`true`** if the concurrent vector on the left side of the operator is greater than the concurrent vector on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -325,7 +339,7 @@ An object of type `concurrent_vector`.
 
 ### Return Value
 
-**true** if the concurrent vector on the left side of the operator is greater than or equal to the concurrent vector on the right side of the operator; otherwise **false**.
+**`true`** if the concurrent vector on the left side of the operator is greater than or equal to the concurrent vector on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 

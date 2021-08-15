@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;unordered_set&gt; operators"
 title: "&lt;unordered_set&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["unordered_set/std::operator!=", "unordered_set/std::operator=="]
@@ -24,7 +25,7 @@ An object of type `unordered_set`.
 
 ### Return Value
 
-**true** if the unordered_sets are not equal; **false** if they are equal.
+**`true`** if the unordered_sets are not equal; **`false`** if they are equal.
 
 ### Remarks
 
@@ -92,7 +93,7 @@ An object of type `unordered_set`.
 
 ### Return Value
 
-**true** if the unordered_sets are equal; **false** if they are not equal.
+**`true`** if the unordered_sets are equal; **`false`** if they are not equal.
 
 ### Remarks
 
@@ -140,7 +141,7 @@ c1 == c3: true
 c2 == c3: false
 ```
 
-## <a name="op_neq_unordered_multiset"></a> operator!=
+## <a name="op_neq_unordered_multiset"></a> operator!= (multiset)
 
 Tests whether the [unordered_multiset](../standard-library/unordered-multiset-class.md) object on the left side of the operator is not equal to the unordered_multiset object on the right side.
 
@@ -158,7 +159,7 @@ An object of type `unordered_multiset`.
 
 ### Return Value
 
-**true** if the unordered_multisets are not equal; **false** if they are equal.
+**`true`** if the unordered_multisets are not equal; **`false`** if they are equal.
 
 ### Remarks
 
@@ -209,7 +210,7 @@ c1 != c3: false
 c2 != c3: true
 ```
 
-## <a name="op_eq_eq_unordered_multiset"></a> operator==
+## <a name="op_eq_eq_unordered_multiset"></a> operator== (multiset)
 
 Tests whether the [unordered_multiset](../standard-library/unordered-multiset-class.md) object on the left side of the operator is equal to the unordered_multiset object on the right side.
 
@@ -227,7 +228,7 @@ An object of type `unordered_multiset`.
 
 ### Return Value
 
-**true** if the unordered_multisets are equal; **false** if they are not equal.
+**`true`** if the unordered_multisets are equal; **`false`** if they are not equal.
 
 ### Remarks
 

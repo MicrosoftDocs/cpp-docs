@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Module::ReleaseNotifier Class"
 title: "Module::ReleaseNotifier Class"
 ms.date: "09/17/2018"
 ms.topic: "reference"
@@ -30,7 +31,7 @@ Name                                                                            
 Name                                                         | Description
 ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------
 [Module::ReleaseNotifier::Invoke](#releasenotifier-invoke)   | When implemented, calls an event handler when the last object in a module is released.
-[Module::ReleaseNotifier::Release](#releasenotifier-release) | Deletes the current `Module::ReleaseNotifier` object if the object was constructed with a parameter of **true**.
+[Module::ReleaseNotifier::Release](#releasenotifier-release) | Deletes the current `Module::ReleaseNotifier` object if the object was constructed with a parameter of **`true`**.
 
 ## Inheritance Hierarchy
 
@@ -60,7 +61,7 @@ virtual void Invoke() = 0;
 
 ## <a name="releasenotifier-release"></a> Module::ReleaseNotifier::Release
 
-Deletes the current `Module::ReleaseNotifier` object if the object was constructed with a parameter of **true**.
+Deletes the current `Module::ReleaseNotifier` object if the object was constructed with a parameter of **`true`**.
 
 ```cpp
 void Release() throw();
@@ -77,4 +78,4 @@ ReleaseNotifier(bool release) throw();
 ### Parameters
 
 *release*<br/>
-`true` to delete this instance when the `Release` method is called; `false` to not delete this instance.
+**`true`** to delete this instance when the `Release` method is called; **`false`** to not delete this instance.

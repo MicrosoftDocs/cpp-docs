@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;complex&gt; operators"
 title: "&lt;complex&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["xcomplex/std::operator!=", "xcomplex/std::operator&gt;&gt;", "xcomplex/std::operator&lt;&lt;", "xcomplex/std::operator*", "xcomplex/std::operator+", "xcomplex/std::operator-", "xcomplex/std::operator/", "xcomplex/std::operator=="]
@@ -38,7 +39,7 @@ A complex number or object of its parameter type to be tested for inequality.
 
 ### Return Value
 
-**true** if the numbers are not equal; **false** if numbers are equal.
+**`true`** if the numbers are not equal; **`false`** if numbers are equal.
 
 ### Remarks
 
@@ -738,7 +739,7 @@ A complex number or object of its parameter type to be tested for inequality.
 
 ### Return Value
 
-**true** if the numbers are equal; **false** if numbers are not equal.
+**`true`** if the numbers are equal; **`false`** if numbers are not equal.
 
 ### Remarks
 

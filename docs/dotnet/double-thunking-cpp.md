@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Double Thunking (C++)"
 title: "Double Thunking (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["double thunks", "interop [C++], double thunking", "mixed assemblies [C++], double thunking", "/clr compiler option [C++], double thunking", "interoperability [C++], double thunking"]
@@ -18,7 +19,7 @@ Similarly, if you export ([dllexport, dllimport](../cpp/dllexport-dllimport.md))
 
 The compiler has been updated to reduce unnecessary double thunking. For example, any function with a managed type in the signature (including return type) will implicitly be marked as `__clrcall`.
 
-## Example
+## Example: Double thunking
 
 ### Description
 
@@ -76,11 +77,11 @@ after calling struct S
 __thiscall T::~T(void)
 ```
 
-## Example
+## Example: Effect of double thunking
 
 ### Description
 
-The previous sample demonstrated the existence of double thunking. This sample shows its effect. The `for` loop calls the virtual function and the program reports execution time. The slowest time is reported when the program is compiled with **/clr**. The fastest times are reported when compiling without **/clr** or if the virtual function is declared with `__clrcall`.
+The previous sample demonstrated the existence of double thunking. This sample shows its effect. The **`for`** loop calls the virtual function and the program reports execution time. The slowest time is reported when the program is compiled with **/clr**. The fastest times are reported when compiling without **/clr** or if the virtual function is declared with `__clrcall`.
 
 ### Code
 

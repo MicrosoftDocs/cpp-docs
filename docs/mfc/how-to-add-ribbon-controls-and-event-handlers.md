@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Add Ribbon Controls and Event Handlers"
 title: "How to: Add Ribbon Controls and Event Handlers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event handlers [MFC], adding", "ribbon controls [MFC], adding"]
@@ -22,7 +23,7 @@ In this topic, you will open the Ribbon Designer, add a button, and then link an
 
 1. Right-click the button, and click **Add Event Handler**.
 
-1. In the **Event Handler Wizard**, confirm the default settings and click **Add and Edit**. For more information, see [Event Handler Wizard](../ide/event-handler-wizard.md).
+1. In the **Event Handler Wizard**, confirm the default settings and click **Add and Edit**. For more information, see [Event Handler Wizard](../ide/adding-an-event-handler-visual-cpp.md#event-handler-wizard).
 
 1. In the code editor, add the following code into the handler function:
 
@@ -33,4 +34,4 @@ In this topic, you will open the Ribbon Designer, add a button, and then link an
 ## See also
 
 [RibbonGadgets Sample: Ribbon Gadgets Application](../overview/visual-cpp-samples.md)<br/>
-[Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
+[Ribbon Designer (MFC)](ribbon-designer-mfc.md)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Customization for MFC"
 title: "Customization for MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["customizations, MFC Extensions"]
@@ -16,21 +17,21 @@ You can save and load the state of your application to the registry. When you en
 
 Additional customization tips can be found in the following topics:
 
-- [CBasePane Class](../mfc/reference/cbasepane-class.md)
+- [CBasePane Class](reference/cbasepane-class.md)
 
-- [CDockablePane Class](../mfc/reference/cdockablepane-class.md)
+- [CDockablePane Class](reference/cdockablepane-class.md)
 
-- [CDockingManager Class](../mfc/reference/cdockingmanager-class.md)
+- [CDockingManager Class](reference/cdockingmanager-class.md)
 
-- [CMFCBaseTabCtrl Class](../mfc/reference/cmfcbasetabctrl-class.md)
+- [CMFCBaseTabCtrl Class](reference/cmfcbasetabctrl-class.md)
 
 ## Additional Customization Tips
 
-[Keyboard and Mouse Customization](../mfc/keyboard-and-mouse-customization.md)
+[Keyboard and Mouse Customization](keyboard-and-mouse-customization.md)
 
-[User-defined Tools](../mfc/user-defined-tools.md)
+[User-defined Tools](user-defined-tools.md)
 
 ## See also
 
-[MFC Desktop Applications](../mfc/mfc-desktop-applications.md)<br/>
-[Security Implications of Customization](../mfc/security-implications-of-customization.md)
+[MFC Desktop Applications](mfc-desktop-applications.md)<br/>
+[Security Implications of Customization](security-implications-of-customization.md)

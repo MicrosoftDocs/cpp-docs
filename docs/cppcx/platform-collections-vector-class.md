@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections::Vector Class"
 title: "Platform::Collections::Vector Class"
 ms.date: "12/04/2019"
 ms.topic: "reference"
@@ -71,10 +72,9 @@ If you attempt to use a **Vector** type in a public return value or parameter, c
 
 ### Events
 
-|||
-|-|-|
-|Name|Description|
-|event [Windows::Foundation::Collection::VectorChangedEventHandler\<T>^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1)|Occurs when the Vector changes.|
+| Name | Description |
+|--|--|
+| event [Windows::Foundation::Collection::VectorChangedEventHandler\<T>^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1) | Occurs when the Vector changes. |
 
 ## Inheritance Hierarchy
 
@@ -127,7 +127,7 @@ An iterator that points to the first element in the Vector.
 
 ### Remarks
 
-A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myVector->First();`. This iterator knows the length of the collection.
+A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **`auto`** type deduction keyword. For example, `auto x = myVector->First();`. This iterator knows the length of the collection.
 
 When you need a pair of iterators to pass to an STL function, use the free functions [Windows::Foundation::Collections::begin](../cppcx/begin-function.md) and [Windows::Foundation::Collections::end](../cppcx/end-function.md)
 
@@ -210,11 +210,11 @@ The item to find.
 *index*<br/>
 The zero-based index of the item if parameter *value* is found; otherwise, 0.
 
-The *index* parameter is 0 if either the item is the first element of the Vector or the item was not found. If the return value is **true**, the item was found and it is the first element; otherwise, the item was not found.
+The *index* parameter is 0 if either the item is the first element of the Vector or the item was not found. If the return value is **`true`**, the item was found and it is the first element; otherwise, the item was not found.
 
 ### Return Value
 
-**true** if the specified item is found; otherwise, **false**.
+**`true`** if the specified item is found; otherwise, **`false`**.
 
 ### Remarks
 

@@ -1,34 +1,34 @@
 ---
 title: "fenv_access pragma"
 description: "Describes the usage and effects of the fenv_access pragma directive. The fenv_access directive controls access to the floating-point environment at runtime."
-ms.date: "11/19/2019"
+ms.date: 01/22/2021
 f1_keywords: ["vc-pragma.fenv_access", "fenv_access_CPP"]
-helpviewer_keywords: ["pragmas, fenv_access", "fenv_access pragma"]
-ms.assetid: 2ccea292-0ae4-42ce-9c67-cc189299857b
+helpviewer_keywords: ["pragma, fenv_access", "fenv_access pragma"]
+no-loc: ["pragma"]
 ---
-# fenv_access pragma
+# `fenv_access` pragma
 
-Disables (**on**) or enables (**off**) optimizations that could change floating-point environment flag tests and mode changes.
+Disables (**`on`**) or enables (**`off`**) optimizations that could change floating-point environment flag tests and mode changes.
 
 ## Syntax
 
-> **#pragma fenv_access (** { **on** | **off** } **)**
+> **`#pragma fenv_access (`** { **`on`** | **`off`** } **`)`**
 
 ## Remarks
 
-By default, **fenv_access** is **off**. The compiler assumes your code doesn't access or manipulate the floating-point environment. If environment access isn't required, the compiler can do more to optimize your floating-point code.
+By default, **`fenv_access`** is **`off`**. The compiler assumes your code doesn't access or manipulate the floating-point environment. If environment access isn't required, the compiler can do more to optimize your floating-point code.
 
-Enable **fenv_access** if your code tests floating-point status flags, exceptions, or sets control mode flags. The compiler disables floating-point optimizations, so your code can access the floating-point environment consistently.
+Enable **`fenv_access`** if your code tests floating-point status flags, exceptions, or sets control mode flags. The compiler disables floating-point optimizations, so your code can access the floating-point environment consistently.
 
-The [/fp:strict] command-line option automatically enables **fenv_access**. For more information on this and other floating-point behavior, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md).
+The [/fp:strict] command-line option automatically enables **`fenv_access`**. For more information on this and other floating-point behavior, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md).
 
-There are restrictions on the ways you can use the **fenv_access** pragma in combination with other floating-point settings:
+There are restrictions on the ways you can use the **`fenv_access`** pragma in combination with other floating-point settings:
 
-- You can't enable **fenv_access** unless precise semantics are enabled. Precise semantics can be enabled either by the [float_control](float-control.md) pragma, or by using the [/fp:precise](../build/reference/fp-specify-floating-point-behavior.md) or [/fp:strict](../build/reference/fp-specify-floating-point-behavior.md) compiler options. The compiler defaults to **/fp:precise** if no other floating-point command-line option is specified.
+- You can't enable **`fenv_access`** unless precise semantics are enabled. Precise semantics can be enabled either by the [`float_control`](float-control.md) pragma, or by using the [`/fp:precise`](../build/reference/fp-specify-floating-point-behavior.md) or [`/fp:strict`](../build/reference/fp-specify-floating-point-behavior.md) compiler options. The compiler defaults to **`/fp:precise`** if no other floating-point command-line option is specified.
 
-- You can't use **float_control** to disable precise semantics when **fenv_access(on)** is set.
+- You can't use **`float_control`** to disable precise semantics when **`fenv_access(on)`** is set.
 
-The kinds of optimizations that are subject to **fenv_access** are:
+The kinds of optimizations that are subject to **`fenv_access`** are:
 
 - Global common subexpression elimination
 
@@ -36,7 +36,7 @@ The kinds of optimizations that are subject to **fenv_access** are:
 
 - Constant folding
 
-Other floating-point pragmas include:
+Other floating-point pragma directives include:
 
 - [float_control](../preprocessor/float-control.md)
 
@@ -44,7 +44,7 @@ Other floating-point pragmas include:
 
 ## Examples
 
-This example sets **fenv_access** to **on** to set the floating-point control register for 24-bit precision:
+This example sets **`fenv_access`** to **`on`** to set the floating-point control register for 24-bit precision:
 
 ```cpp
 // pragma_directive_fenv_access_x86.cpp
@@ -103,4 +103,4 @@ out=1.000000000000000e-02
 
 ## See also
 
-[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)

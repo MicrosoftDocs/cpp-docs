@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: propget"
 title: "propget (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.propget"]
@@ -25,9 +26,7 @@ See the example for [bindable](bindable.md) for a sample use of **propget**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Method|
 |**Repeatable**|No|

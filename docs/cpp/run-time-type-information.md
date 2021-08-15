@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Run-Time Type Information"
 title: "Run-Time Type Information"
 ms.custom: "index-page"
 ms.date: "11/04/2016"
@@ -23,7 +24,7 @@ There are three main C++ language elements to run-time type information:
 
 - The [type_info](../cpp/type-info-class.md) class.
 
-   Used to hold the type information returned by the **typeid** operator.
+   Used to hold the type information returned by the **`typeid`** operator.
 
 ## See also
 

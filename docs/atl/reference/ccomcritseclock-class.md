@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComCritSecLock Class"
 title: "CComCritSecLock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComCritSecLock", "ATLBASE/ATL::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::CComCritSecLock", "ATLBASE/ATL::CComCritSecLock::Lock", "ATLBASE/ATL::CComCritSecLock::Unlock"]
@@ -58,7 +59,7 @@ CComCritSecLock(TLock& cs, bool bInitialLock = true);
 The critical section object.
 
 *bInitialLock*<br/>
-The initial lock state: **true** means locked.
+The initial lock state: **`true`** means locked.
 
 ### Remarks
 

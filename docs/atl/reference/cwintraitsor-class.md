@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWinTraitsOR Class"
 title: "CWinTraitsOR Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWinTraitsOR", "ATLWIN/ATL::CWinTraitsOR", "ATLWIN/ATL::CWinTraitsOR::GetWndExStyle", "ATLWIN/ATL::CWinTraitsOR::GetWndStyle"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCustomWindowsFile"
 title: "CCustomWindowsFile"
 ms.date: "10/22/2018"
 f1_keywords: ["cmyproviderwindowsfile", "ccustomwindowsfile"]

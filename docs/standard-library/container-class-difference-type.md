@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Container Class::difference_type"
 title: "Container Class::difference_type"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["difference_type typedef"]

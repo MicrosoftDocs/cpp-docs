@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;set&gt;"
 title: "&lt;set&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<set>"]
@@ -39,7 +40,7 @@ Defines the container class templates set and multiset and their supporting temp
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[set Class](../standard-library/set-class.md)|Used for the storage and retrieval of data from a collection in which the values of the elements contained are unique and serve as the key values according to which the data is automatically ordered.|
 |[multiset Class](../standard-library/multiset-class.md)|Used for the storage and retrieval of data from a collection in which the values of the elements contained need not be unique and in which they serve as the key values according to which the data is automatically ordered.|

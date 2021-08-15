@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDaoRecordView Class"
 title: "CDaoRecordView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDaoRecordView", "AFXDAO/CDaoRecordView", "AFXDAO/CDaoRecordView::CDaoRecordView", "AFXDAO/CDaoRecordView::IsOnFirstRecord", "AFXDAO/CDaoRecordView::IsOnLastRecord", "AFXDAO/CDaoRecordView::OnGetRecordset", "AFXDAO/CDaoRecordView::OnMove"]
@@ -98,7 +99,7 @@ You can either identify the resource by name (pass a string as the argument to t
 `CDaoRecordView::OnInitialUpdate` calls `CWnd::UpdateData`, which calls `CWnd::DoDataExchange`. This initial call to `DoDataExchange` connects `CDaoRecordView` controls (indirectly) to `CDaoRecordset` field data members created by ClassWizard. These data members cannot be used until after you call the base class `CFormView::OnInitialUpdate` member function.
 
 > [!NOTE]
-> If you use ClassWizard, the wizard defines an **enum** value `CDaoRecordView::IDD` in the class declaration and uses it in the member initialization list for the constructor.
+> If you use ClassWizard, the wizard defines an **`enum`** value `CDaoRecordView::IDD` in the class declaration and uses it in the member initialization list for the constructor.
 
 [!code-cpp[NVC_MFCDatabase#35](../../mfc/codesnippet/cpp/cdaorecordview-class_1.cpp)]
 

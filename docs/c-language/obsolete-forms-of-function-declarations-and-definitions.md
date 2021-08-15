@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Obsolete Forms of Function Declarations and Definitions"
 title: "Obsolete Forms of Function Declarations and Definitions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["old style function declarations"]
@@ -19,7 +20,7 @@ double alt_style( a , real )  /* Obsolete function definition */
 }
 ```
 
-Functions returning an integer or pointer with the same size as an `int` are not required to have a declaration although the declaration is recommended.
+Functions returning an integer or pointer with the same size as an **`int`** are not required to have a declaration although the declaration is recommended.
 
 To comply with the ANSI C standard, old-style function declarations using an ellipsis now generate an error when compiling with the /Za option and a level 4 warning when compiling with /Ze. For example:
 

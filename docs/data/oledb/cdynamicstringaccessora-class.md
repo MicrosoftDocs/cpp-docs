@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDynamicStringAccessorA Class"
 title: "CDynamicStringAccessorA Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDynamicStringAccessorA"]

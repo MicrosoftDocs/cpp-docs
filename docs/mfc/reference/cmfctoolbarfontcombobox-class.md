@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCToolBarFontComboBox Class"
 title: "CMFCToolBarFontComboBox Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCToolBarFontComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::CMFCToolBarFontComboBox", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::GetFontDesc", "AFXTOOLBARFONTCOMBOBOX/CMFCToolBarFontComboBox::SetFont"]

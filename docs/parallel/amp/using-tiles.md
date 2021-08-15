@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Tiles"
 title: "Using Tiles"
 ms.date: "11/19/2018"
 ms.assetid: acb86a86-2b7f-43f1-8fcf-bcc79b21d9a8
@@ -21,7 +22,7 @@ To take advantage of tiling, your algorithm must partition the compute domain in
 
 The following diagram represents an 8x9 matrix of data that is arranged in 2x3 tiles.
 
-![8&#45;by&#45;9 matrix divided into 2&#45;by&#45;3 tiles](../../parallel/amp/media/usingtilesmatrix.png "8&#45;by&#45;9 matrix divided into 2&#45;by&#45;3 tiles")
+![8&#45;by&#45;9 matrix divided into 2&#45;by&#45;3 tiles.](../../parallel/amp/media/usingtilesmatrix.png "8&#45;by&#45;9 matrix divided into 2&#45;by&#45;3 tiles")
 
 The following example displays the global, tile, and local indices of this tiled matrix. An `array_view` object is created by using elements of type `Description`. The `Description` holds the global, tile, and local indices of the element in the matrix. The code in the call to `parallel_for_each` sets the values of the global, tile, and local indices of each element. The output displays the values in the `Description` structures.
 
@@ -159,7 +160,7 @@ The previous example illustrates the tile layout and indices, but is not in itse
 
 5. There is a line of code to copy the values in each tile to the `tile_static` array. For each thread, after the value is copied to the array, execution on the thread stops due to the call to `tile_barrier::wait`.
 
-6. When all of the threads in a tile have reached the barrier, the average can be calculated. Because the code executes for every thread, there is an `if` statement to only calculate the average on one thread. The average is stored in the averages variable. The barrier is essentially the construct that controls calculations by tile, much as you might use a `for` loop.
+6. When all of the threads in a tile have reached the barrier, the average can be calculated. Because the code executes for every thread, there is an `if` statement to only calculate the average on one thread. The average is stored in the averages variable. The barrier is essentially the construct that controls calculations by tile, much as you might use a **`for`** loop.
 
 7. The data in the `averages` variable, because it is an `array` object, must be copied back to the host. This example uses the vector conversion operator.
 

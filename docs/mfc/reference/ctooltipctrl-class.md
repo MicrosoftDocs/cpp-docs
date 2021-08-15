@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CToolTipCtrl Class"
 title: "CToolTipCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CToolTipCtrl", "AFXCMN/CToolTipCtrl", "AFXCMN/CToolTipCtrl::CToolTipCtrl", "AFXCMN/CToolTipCtrl::Activate", "AFXCMN/CToolTipCtrl::AddTool", "AFXCMN/CToolTipCtrl::AdjustRect", "AFXCMN/CToolTipCtrl::Create", "AFXCMN/CToolTipCtrl::CreateEx", "AFXCMN/CToolTipCtrl::DelTool", "AFXCMN/CToolTipCtrl::GetBubbleSize", "AFXCMN/CToolTipCtrl::GetCurrentTool", "AFXCMN/CToolTipCtrl::GetDelayTime", "AFXCMN/CToolTipCtrl::GetMargin", "AFXCMN/CToolTipCtrl::GetMaxTipWidth", "AFXCMN/CToolTipCtrl::GetText", "AFXCMN/CToolTipCtrl::GetTipBkColor", "AFXCMN/CToolTipCtrl::GetTipTextColor", "AFXCMN/CToolTipCtrl::GetTitle", "AFXCMN/CToolTipCtrl::GetToolCount", "AFXCMN/CToolTipCtrl::GetToolInfo", "AFXCMN/CToolTipCtrl::HitTest", "AFXCMN/CToolTipCtrl::Pop", "AFXCMN/CToolTipCtrl::Popup", "AFXCMN/CToolTipCtrl::RelayEvent", "AFXCMN/CToolTipCtrl::SetDelayTime", "AFXCMN/CToolTipCtrl::SetMargin", "AFXCMN/CToolTipCtrl::SetMaxTipWidth", "AFXCMN/CToolTipCtrl::SetTipBkColor", "AFXCMN/CToolTipCtrl::SetTipTextColor", "AFXCMN/CToolTipCtrl::SetTitle", "AFXCMN/CToolTipCtrl::SetToolInfo", "AFXCMN/CToolTipCtrl::SetToolRect", "AFXCMN/CToolTipCtrl::SetWindowTheme", "AFXCMN/CToolTipCtrl::Update", "AFXCMN/CToolTipCtrl::UpdateTipText"]
@@ -323,9 +324,8 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpToolInfo*|[out] Pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) structure that receives information about the current tooltip window.|
+*lpToolInfo*\
+[out] Pointer to a [TOOLINFO](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) structure that receives information about the current tooltip window.
 
 ### Return Value
 
@@ -476,9 +476,8 @@ void GetTitle(PTTGETTITLE pttgt) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pttgt*|[out] Pointer to a [TTGETTITLE](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) structure that contains information about the ToolTip control. When this method returns, the *pszTitle* member of the [TTGETTITLE](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) structure points to the text of the title.|
+*pttgt*\
+[out] Pointer to a [TTGETTITLE](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) structure that contains information about the ToolTip control. When this method returns, the *pszTitle* member of the [TTGETTITLE](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) structure points to the text of the title.
 
 ### Remarks
 

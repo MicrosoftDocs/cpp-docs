@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CParabolicTransitionFromAcceleration Class"
 title: "CParabolicTransitionFromAcceleration Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CParabolicTransitionFromAcceleration", "AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration", "AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::CParabolicTransitionFromAcceleration", "AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::Create", "AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::m_dblAcceleration", "AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CParabolicTransitionFromAcceleration::m_dblFinalVelocity"]

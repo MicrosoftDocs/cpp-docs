@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: entry"
 title: "entry (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.entry"]
@@ -30,9 +31,7 @@ See the example for [idl_module](idl-module.md) for an example use of **entry**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|`idl_module` attribute|
 |**Repeatable**|No|

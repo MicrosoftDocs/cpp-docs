@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Declaring a Variable Based on Your New Control Class"
 title: "Declaring a Variable Based on Your New Control Class"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.classes.control.variable"]
@@ -17,7 +18,7 @@ Once you have created an MFC control class, you can declare a variable based on 
 
 1. While pressing the CTRL key, double-click the control.
 
-   The [Add Member Variable](../../ide/add-member-variable-wizard.md) dialog box appears.
+   The [Add Member Variable](../../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard) dialog box appears.
 
 1. In the **Access** box, select the correct access for your control.
 

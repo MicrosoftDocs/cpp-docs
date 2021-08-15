@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections::VectorView Class"
 title: "Platform::Collections::VectorView Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
@@ -75,7 +76,7 @@ An iterator that specifies the first element in the VectorView.
 
 ### Remarks
 
-A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myVectorView->First();`.
+A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **`auto`** type deduction keyword. For example, `auto x = myVectorView->First();`.
 
 ## <a name="getat"></a> VectorView::GetAt Method
 
@@ -147,11 +148,11 @@ The item to find.
 *index*<br/>
 The zero-based index of the item if parameter `value` is found; otherwise, 0.
 
-The *index* parameter is 0 if either the item is the first element of the `VectorView` or the item was not found. If the return value is **true**, the item was found and it is the first element; otherwise, the item was not found.
+The *index* parameter is 0 if either the item is the first element of the `VectorView` or the item was not found. If the return value is **`true`**, the item was found and it is the first element; otherwise, the item was not found.
 
 ### Return Value
 
-**true** if the specified item is found; otherwise, **false**.
+**`true`** if the specified item is found; otherwise, **`false`**.
 
 ## <a name="size"></a> VectorView::Size Method
 

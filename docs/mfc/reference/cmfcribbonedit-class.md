@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCRibbonEdit Class"
 title: "CMFCRibbonEdit Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCRibbonEdit", "AFXRIBBONEDIT/CMFCRibbonEdit", "AFXRIBBONEDIT/CMFCRibbonEdit::CMFCRibbonEdit", "AFXRIBBONEDIT/CMFCRibbonEdit::CanBeStretched", "AFXRIBBONEDIT/CMFCRibbonEdit::CopyFrom", "AFXRIBBONEDIT/CMFCRibbonEdit::CreateEdit", "AFXRIBBONEDIT/CMFCRibbonEdit::DestroyCtrl", "AFXRIBBONEDIT/CMFCRibbonEdit::DropDownList", "AFXRIBBONEDIT/CMFCRibbonEdit::EnableSpinButtons", "AFXRIBBONEDIT/CMFCRibbonEdit::GetCompactSize", "AFXRIBBONEDIT/CMFCRibbonEdit::GetEditText", "AFXRIBBONEDIT/CMFCRibbonEdit::GetIntermediateSize", "AFXRIBBONEDIT/CMFCRibbonEdit::GetTextAlign", "AFXRIBBONEDIT/CMFCRibbonEdit::GetWidth", "AFXRIBBONEDIT/CMFCRibbonEdit::HasCompactMode", "AFXRIBBONEDIT/CMFCRibbonEdit::HasFocus", "AFXRIBBONEDIT/CMFCRibbonEdit::HasLargeMode", "AFXRIBBONEDIT/CMFCRibbonEdit::HasSpinButtons", "AFXRIBBONEDIT/CMFCRibbonEdit::IsHighlighted", "AFXRIBBONEDIT/CMFCRibbonEdit::OnAfterChangeRect", "AFXRIBBONEDIT/CMFCRibbonEdit::OnDraw", "AFXRIBBONEDIT/CMFCRibbonEdit::OnDrawLabelAndImage", "AFXRIBBONEDIT/CMFCRibbonEdit::OnDrawOnList", "AFXRIBBONEDIT/CMFCRibbonEdit::OnEnable", "AFXRIBBONEDIT/CMFCRibbonEdit::OnHighlight", "AFXRIBBONEDIT/CMFCRibbonEdit::OnKey", "AFXRIBBONEDIT/CMFCRibbonEdit::OnLButtonDown", "AFXRIBBONEDIT/CMFCRibbonEdit::OnLButtonUp", "AFXRIBBONEDIT/CMFCRibbonEdit::OnRTLChanged", "AFXRIBBONEDIT/CMFCRibbonEdit::OnShow", "AFXRIBBONEDIT/CMFCRibbonEdit::Redraw", "AFXRIBBONEDIT/CMFCRibbonEdit::SetACCData", "AFXRIBBONEDIT/CMFCRibbonEdit::SetEditText", "AFXRIBBONEDIT/CMFCRibbonEdit::SetTextAlign", "AFXRIBBONEDIT/CMFCRibbonEdit::SetWidth"]
@@ -452,7 +453,7 @@ virtual void OnDrawOnList(
 [in] Pointer to a device context for the `CMFCRibbonEdit` control.
 
 *strText*<br/>
-[in] The display text [](../../mfc/reference/cmfcribbonedit-class.md "cmfcribbonedit class").
+[in] The display text.
 
 *nTextOffset*<br/>
 [in] Distance, in pixels, from the left side of the list box to the display text.

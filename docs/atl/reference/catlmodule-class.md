@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAtlModule Class"
 title: "CAtlModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlModule", "ATLBASE/ATL::CAtlModule", "ATLBASE/ATL::CAtlModule::CAtlModule", "ATLBASE/ATL::CAtlModule::AddCommonRGSReplacements", "ATLBASE/ATL::CAtlModule::AddTermFunc", "ATLBASE/ATL::CAtlModule::GetGITPtr", "ATLBASE/ATL::CAtlModule::GetLockCount", "ATLBASE/ATL::CAtlModule::Lock", "ATLBASE/ATL::CAtlModule::Term", "ATLBASE/ATL::CAtlModule::Unlock", "ATLBASE/ATL::CAtlModule::UpdateRegistryFromResourceD", "ATLBASE/ATL::CAtlModule::UpdateRegistryFromResourceDHelper", "ATLBASE/ATL::CAtlModule::UpdateRegistryFromResourceS", "ATLBASE/ATL::CAtlModule::m_libid", "ATLBASE/ATL::CAtlModule::m_pGIT"]

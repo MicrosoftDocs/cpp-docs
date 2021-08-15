@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Diagnostic Services"
 title: "Diagnostic Services"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["diagnosi [MFC]s, diagnostic services", "diagnostic macros [MFC], list of general MFC", "services [MFC], diagnostic", "MFC, diagnostic services", "general diagnostic functions and variables [MFC]", "diagnostics [MFC], diagnostic functions and variables", "diagnostics [MFC], list of general MFC", "diagnosis [MFC], diagnostic functions and variables", "diagnosis [MFC], list of general MFC", "general diagnostic macros in MFC", "diagnostic macros [MFC]", "diagnostic services [MFC]", "object diagnostic functions in MFC", "diagnostics [MFC], diagnostic services", "diagnostic functions and variables [MFC]"]
@@ -20,13 +21,13 @@ In the Debug library, all allocated memory blocks are bracketed with a series of
 
 [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/diagnostic-services_1.cpp)]
 
-in your implementation file, all calls to **new** will store the filename and line number where the memory allocation took place. The function [CMemoryState::DumpAllObjectsSince](cmemorystate-structure.md#dumpallobjectssince) will display this extra information, allowing you to identify memory leaks. Refer also to the class [CDumpContext](../../mfc/reference/cdumpcontext-class.md) for additional information on diagnostic output.
+in your implementation file, all calls to **`new`** will store the filename and line number where the memory allocation took place. The function [CMemoryState::DumpAllObjectsSince](cmemorystate-structure.md#dumpallobjectssince) will display this extra information, allowing you to identify memory leaks. Refer also to the class [CDumpContext](../../mfc/reference/cdumpcontext-class.md) for additional information on diagnostic output.
 
 In addition, the C run-time library also supports a set of diagnostic functions you can use to debug your applications. For more information, see [Debug Routines](../../c-runtime-library/debug-routines.md) in the Run-Time Library Reference.
 
 ### MFC General Diagnostic Macros
 
-|||
+|Name|Description|
 |-|-|
 |[ASSERT](#assert)|Prints a message and then aborts the program if the specified expression evaluates to FALSE in the Debug version of the library.|
 |[ASSERT_KINDOF](#assert_kindof)|Tests that an object is an object of the specified class or of a class derived from the specified class.|
@@ -40,7 +41,7 @@ In addition, the C run-time library also supports a set of diagnostic functions 
 
 ### MFC General Diagnostic Variables and Functions
 
-|||
+|Name|Description|
 |-|-|
 |[afxDump](#afxdump)|Global variable that sends [CDumpContext](../../mfc/reference/cdumpcontext-class.md) information to the debugger output window or to the debug terminal.|
 |[afxMemDF](#afxmemdf)|Global variable that controls the behavior of the debugging memory allocator.|
@@ -59,14 +60,14 @@ In addition, the C run-time library also supports a set of diagnostic functions 
 
 ### MFC Object Diagnostic Functions
 
-|||
+|Name|Description|
 |-|-|
 |[AfxDoForAllClasses](#afxdoforallclasses)|Performs a specified function on all `CObject`-derived classes that support run-time type checking.|
-|[AfxDoForAllObjects](#afxdoforallobjects)|Performs a specified function on all `CObject`-derived objects that were allocated with **new**.|
+|[AfxDoForAllObjects](#afxdoforallobjects)|Performs a specified function on all `CObject`-derived objects that were allocated with **`new`**.|
 
 ### MFC Compilation Macros
 
-|||
+|Name|Description|
 |-|-|
 |[_AFX_SECURE_NO_WARNINGS](#afx_secure_no_warnings)|Suppresses compiler warnings for the use of deprecated MFC functions.|
 
@@ -169,7 +170,7 @@ A pointer to a class object.
 
 ### Remarks
 
-The *pobject* parameter should be a pointer to an object and can be **const**. The object pointed to and the class must support `CObject` run-time class information. As an example, to ensure that `pDocument` is a pointer to an object of the `CMyDoc` class, or any of its derivatives, you could code:
+The *pobject* parameter should be a pointer to an object and can be **`const`**. The object pointed to and the class must support `CObject` run-time class information. As an example, to ensure that `pDocument` is a pointer to an object of the `CMyDoc` class, or any of its derivatives, you could code:
 
 [!code-cpp[NVC_MFCDocView#194](../../mfc/codesnippet/cpp/diagnostic-services_3.cpp)]
 
@@ -228,7 +229,7 @@ Assists in finding memory leaks.
 
 ### Remarks
 
-You can use DEBUG_NEW everywhere in your program that you would ordinarily use the **new** operator to allocate heap storage.
+You can use DEBUG_NEW everywhere in your program that you would ordinarily use the **`new`** operator to allocate heap storage.
 
 In debug mode (when the **_DEBUG** symbol is defined), DEBUG_NEW keeps track of the filename and line number for each object that it allocates. Then, when you use the [CMemoryState::DumpAllObjectsSince](cmemorystate-structure.md#dumpallobjectssince) member function, each object allocated with DEBUG_NEW is shown with the filename and line number where it was allocated.
 
@@ -236,7 +237,7 @@ To use DEBUG_NEW, insert the following directive into your source files:
 
 [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/diagnostic-services_1.cpp)]
 
-Once you insert this directive, the preprocessor will insert DEBUG_NEW wherever you use **new**, and MFC does the rest. When you compile a release version of your program, DEBUG_NEW resolves to a simple **new** operation, and the filename and line number information are not generated.
+Once you insert this directive, the preprocessor will insert DEBUG_NEW wherever you use **`new`**, and MFC does the rest. When you compile a release version of your program, DEBUG_NEW resolves to a simple **`new`** operation, and the filename and line number information are not generated.
 
 > [!NOTE]
 > In previous versions of MFC (4.1 and earlier) you needed to put the `#define` statement after all statements that called the IMPLEMENT_DYNCREATE or IMPLEMENT_SERIAL macros. This is no longer necessary.
@@ -267,7 +268,7 @@ The DEBUG_ONLY macro is equivalent to surrounding *expression* with `#ifdef _DEB
 
 **Header:** afx.h
 
-### <a name="ensure"></a> ENSURE and ENSURE_VALID
+## <a name="ensure"></a> ENSURE and ENSURE_VALID
 
 Use to validate data correctness.
 
@@ -501,7 +502,7 @@ Nonzero if no memory errors; otherwise 0.
 
 If the function detects no memory corruption, it prints nothing.
 
-All memory blocks currently allocated on the heap are checked, including those allocated by **new** but not those allocated by direct calls to underlying memory allocators, such as the **malloc** function or the `GlobalAlloc` Windows function. If any block is found to be corrupted, a message is printed to the debugger output.
+All memory blocks currently allocated on the heap are checked, including those allocated by **`new`** but not those allocated by direct calls to underlying memory allocators, such as the **malloc** function or the `GlobalAlloc` Windows function. If any block is found to be corrupted, a message is printed to the debugger output.
 
 If you include the line
 
@@ -687,7 +688,7 @@ For more information on `AfxEnableMemoryTracking`, see [Debugging MFC Applicatio
 
 ## <a name="afxismemoryblock"></a> AfxIsMemoryBlock
 
-Tests a memory address to make sure it represents a currently active memory block that was allocated by the diagnostic version of **new**.
+Tests a memory address to make sure it represents a currently active memory block that was allocated by the diagnostic version of **`new`**.
 
 ```
 BOOL AfxIsMemoryBlock(
@@ -705,7 +706,7 @@ Points to the block of memory to be tested.
 Contains the length of the memory block in bytes.
 
 *plRequestNumber*<br/>
-Points to a **long** integer that will be filled in with the memory block's allocation sequence number, or zero if it does not represent a currently active memory block.
+Points to a **`long`** integer that will be filled in with the memory block's allocation sequence number, or zero if it does not represent a currently active memory block.
 
 ### Return Value
 
@@ -713,7 +714,7 @@ Nonzero if the memory block is currently allocated and the length is correct; ot
 
 ### Remarks
 
-It also checks the specified size against the original allocated size. If the function returns nonzero, the allocation sequence number is returned in *plRequestNumber*. This number represents the order in which the block was allocated relative to all other **new** allocations.
+It also checks the specified size against the original allocated size. If the function returns nonzero, the allocation sequence number is returned in *plRequestNumber*. This number represents the order in which the block was allocated relative to all other **`new`** allocations.
 
 ### Example
 
@@ -753,7 +754,7 @@ In non-debug builds, nonzero if *lp* is not NULL; otherwise 0.
 
 ### Remarks
 
-The address is not restricted to blocks allocated by **new**.
+The address is not restricted to blocks allocated by **`new`**.
 
 ### Example
 
@@ -871,7 +872,7 @@ Serializable `CObject`-derived classes are classes derived using the DECLARE_SER
 
 ## <a name="afxdoforallobjects"></a> AfxDoForAllObjects
 
-Executes the specified iteration function for all objects derived from `CObject` that have been allocated with **new**.
+Executes the specified iteration function for all objects derived from `CObject` that have been allocated with **`new`**.
 
 ```cpp
 void AfxDoForAllObjects(

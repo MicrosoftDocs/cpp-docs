@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accelerator Editor (C++)"
 title: "Accelerator Editor (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.accelerator.F1", "vc.editors.accelerator"]
@@ -14,7 +15,7 @@ Normally, accelerators are used as keyboard shortcuts for program commands that 
 > [!TIP]
 > When using the **Accelerator Editor**, right-click to display a shortcut menu of frequent commands. The commands available depend on what the pointer is pointing to.
 
-You can use [Class View](/visualstudio/ide/viewing-the-structure-of-code) to hook accelerator key commands to code. For a list of pre-defined accelerator keys, see [Accelerator Keys](../windows/predefined-accelerator-keys.md).
+You can use [Class View](/visualstudio/ide/viewing-the-structure-of-code) to hook accelerator key commands to code. For a list of pre-defined accelerator keys, see [Accelerator Keys](predefined-accelerator-keys.md).
 
 > [!NOTE]
 > Windows doesn't allow you to create empty accelerator tables. If you create an accelerator table with no entries, it is deleted automatically when you save the table.
@@ -149,7 +150,7 @@ The procedures below refer to the use of standard property pages, however, both 
 1. Go to the [Properties window](/visualstudio/ide/reference/properties-window) and type in the values you want all of the selected accelerators to share.
 
 > [!NOTE]
-> Each modifier value appears as a Boolean property in the **Properties** window. If you change a [Modifier](../windows/accelerator-modifier-property.md) value in the **Properties** window, the accelerator table treats the new modifier as an addition to any modifiers that were previously there. Because of this, if you set any modifier values, you'll need to set all of them to ensure that every accelerator shares the same **Modifier** settings.
+> Each modifier value appears as a Boolean property in the **Properties** window. If you change a modifier value in the **Properties** window, the accelerator table treats the new modifier as an addition to any modifiers that were previously there. Because of this, if you set any modifier values, you'll need to set all of them to ensure that every accelerator shares the same **Modifier** settings.
 
 ## Requirements
 
@@ -157,5 +158,5 @@ Win32
 
 ## See also
 
-[Resource Editors](../windows/resource-editors.md)<br/>
-[Accelerator Keys](../windows/predefined-accelerator-keys.md)<br/>
+[Resource Editors](resource-editors.md)<br/>
+[Accelerator Keys](predefined-accelerator-keys.md)<br/>

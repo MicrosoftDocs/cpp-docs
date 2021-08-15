@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CEdit Class"
 title: "CEdit Class"
 ms.date: "09/12/2018"
 f1_keywords: ["CEdit", "AFXWIN/CEdit", "AFXWIN/CEdit::CEdit", "AFXWIN/CEdit::CanUndo", "AFXWIN/CEdit::CharFromPos", "AFXWIN/CEdit::Clear", "AFXWIN/CEdit::Copy", "AFXWIN/CEdit::Create", "AFXWIN/CEdit::Cut", "AFXWIN/CEdit::EmptyUndoBuffer", "AFXWIN/CEdit::FmtLines", "AFXWIN/CEdit::GetCueBanner", "AFXWIN/CEdit::GetFirstVisibleLine", "AFXWIN/CEdit::GetHandle", "AFXWIN/CEdit::GetHighlight", "AFXWIN/CEdit::GetLimitText", "AFXWIN/CEdit::GetLine", "AFXWIN/CEdit::GetLineCount", "AFXWIN/CEdit::GetMargins", "AFXWIN/CEdit::GetModify", "AFXWIN/CEdit::GetPasswordChar", "AFXWIN/CEdit::GetRect", "AFXWIN/CEdit::GetSel", "AFXWIN/CEdit::HideBalloonTip", "AFXWIN/CEdit::LimitText", "AFXWIN/CEdit::LineFromChar", "AFXWIN/CEdit::LineIndex", "AFXWIN/CEdit::LineLength", "AFXWIN/CEdit::LineScroll", "AFXWIN/CEdit::Paste", "AFXWIN/CEdit::PosFromChar", "AFXWIN/CEdit::ReplaceSel", "AFXWIN/CEdit::SetCueBanner", "AFXWIN/CEdit::SetHandle", "AFXWIN/CEdit::SetHighlight", "AFXWIN/CEdit::SetLimitText", "AFXWIN/CEdit::SetMargins", "AFXWIN/CEdit::SetModify", "AFXWIN/CEdit::SetPasswordChar", "AFXWIN/CEdit::SetReadOnly", "AFXWIN/CEdit::SetRect", "AFXWIN/CEdit::SetRectNP", "AFXWIN/CEdit::SetSel", "AFXWIN/CEdit::SetTabStops", "AFXWIN/CEdit::ShowBalloonTip", "AFXWIN/CEdit::Undo"]
@@ -115,7 +116,7 @@ If you create a `CEdit` object within a dialog box, the `CEdit` object is automa
 
 If you create a `CEdit` object from a dialog resource using the dialog editor, the `CEdit` object is automatically destroyed when the user closes the dialog box.
 
-If you create a `CEdit` object within a window, you may also need to destroy it. If you create the `CEdit` object on the stack, it is destroyed automatically. If you create the `CEdit` object on the heap by using the **new** function, you must call **delete** on the object to destroy it when the user terminates the Windows edit control. If you allocate any memory in the `CEdit` object, override the `CEdit` destructor to dispose of the allocations.
+If you create a `CEdit` object within a window, you may also need to destroy it. If you create the `CEdit` object on the stack, it is destroyed automatically. If you create the `CEdit` object on the heap by using the **`new`** function, you must call **`delete`** on the object to destroy it when the user terminates the Windows edit control. If you allocate any memory in the `CEdit` object, override the `CEdit` destructor to dispose of the allocations.
 
 To modify certain styles in an edit control (such as ES_READONLY) you must send specific messages to the control instead of using [ModifyStyle](cwnd-class.md#modifystyle). See [Edit Control Styles](/windows/win32/Controls/edit-control-styles) in the Windows SDK.
 
@@ -451,10 +452,11 @@ BOOL GetHighlight(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pichStart*|[out] Zero-based index of the first character in the range of text that is highlighted.|
-|*pichEnd*|[out] Zero-based index of the last character in the range of text that is highlighted.|
+*pichStart*\
+[out] Zero-based index of the first character in the range of text that is highlighted.
+
+*pichEnd*\
+[out] Zero-based index of the last character in the range of text that is highlighted.
 
 ### Return Value
 
@@ -1002,10 +1004,11 @@ void SetHighlight(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*ichStart*|[in] Zero-based index of the first character in the range of text to highlight.|
-|*ichEnd*|[in] Zero-based index of the last character in the range of text to highlight.|
+*ichStart*\
+[in] Zero-based index of the first character in the range of text to highlight.
+
+*ichEnd*\
+[in] Zero-based index of the last character in the range of text to highlight.
 
 ### Remarks
 
@@ -1302,12 +1305,17 @@ BOOL ShowBalloonTip(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pEditBalloonTip*|[in] Pointer to an [EDITBALLOONTIP](/windows/win32/api/commctrl/ns-commctrl-editballoontip) structure that describes the balloon tip.|
-|*lpszTitle*|[in] Pointer to a Unicode string that contains the title of the balloon tip.|
-|*lpszText*|[in] Pointer to a Unicode string that contains the balloon tip text.|
-|*ttiIcon*|[in] An **INT** that specifies the type of icon to associate with the balloon tip. The default value is TTI_NONE. For more information, see the `ttiIcon` member of the [EDITBALLOONTIP](/windows/win32/api/commctrl/ns-commctrl-editballoontip) structure.|
+*pEditBalloonTip*\
+[in] Pointer to an [EDITBALLOONTIP](/windows/win32/api/commctrl/ns-commctrl-editballoontip) structure that describes the balloon tip.
+
+*lpszTitle*\
+[in] Pointer to a Unicode string that contains the title of the balloon tip.
+
+*lpszText*\
+[in] Pointer to a Unicode string that contains the balloon tip text.
+
+*ttiIcon*\
+[in] An **INT** that specifies the type of icon to associate with the balloon tip. The default value is TTI_NONE. For more information, see the `ttiIcon` member of the [EDITBALLOONTIP](/windows/win32/api/commctrl/ns-commctrl-editballoontip) structure.
 
 ### Return Value
 
@@ -1319,13 +1327,11 @@ This function sends the [EM_SHOWBALLOONTIP](/windows/win32/Controls/em-showballo
 
 ### Example
 
-The following code example defines a variable, `m_cedit`, that is used to access the current edit control. This variable is used in the next example.
+The first code example defines a variable, `m_cedit`, that is used to access the current edit control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CEdit_s1#1](../../mfc/reference/codesnippet/cpp/cedit-class_25.h)]
 
-### Example
-
-The following code example displays a balloon tip for an edit control. The [CEdit::ShowBalloonTip](#showballoontip) method specifies a title and balloon tip text.
+The next code example displays a balloon tip for an edit control. The [CEdit::ShowBalloonTip](#showballoontip) method specifies a title and balloon tip text.
 
 [!code-cpp[NVC_MFC_CEdit_s1#3](../../mfc/reference/codesnippet/cpp/cedit-class_26.cpp)]
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAxWindow Class"
 title: "CAxWindow Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAxWindow", "ATLWIN/ATL::CAxWindow", "ATLWIN/ATL::AttachControl", "ATLWIN/ATL::CreateControl", "ATLWIN/ATL::CreateControlEx", "ATLWIN/ATL::GetWndClassName", "ATLWIN/ATL::QueryControl", "ATLWIN/ATL::QueryHost", "ATLWIN/ATL::SetExternalDispatch", "ATLWIN/ATL::SetExternalUIHandler"]
@@ -22,7 +23,7 @@ class CAxWindow : public CWindow
 
 ### Methods
 
-|||
+|Function|Description|
 |-|-|
 |[AttachControl](#attachcontrol)|Attaches an existing ActiveX control to the `CAxWindow` object.|
 |[CAxWindow](#caxwindow)|Constructs a `CAxWindow` object.|
@@ -36,7 +37,7 @@ class CAxWindow : public CWindow
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator =](#operator_eq)|Assigns an HWND to an existing `CAxWindow` object.|
 
@@ -152,7 +153,7 @@ See [CAxWindow2T::CreateControlLic](../../atl/reference/caxwindow2t-class.md#cre
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CreateControl`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample that uses `CreateControl`.
 
 ## <a name="createcontrolex"></a> CAxWindow::CreateControlEx
 
@@ -224,7 +225,7 @@ See [CAxWindow2T::CreateControlLicEx](../../atl/reference/caxwindow2t-class.md#c
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `CreateControlEx`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample that uses `CreateControlEx`.
 
 ## <a name="getwndclassname"></a> CAxWindow::GetWndClassName
 
@@ -353,4 +354,4 @@ The external `IDocHostUIHandlerDispatch` interface is used by controls that quer
 [CWindow Class](../../atl/reference/cwindow-class.md)<br/>
 [Composite Control Fundamentals](../../atl/atl-composite-control-fundamentals.md)<br/>
 [Class Overview](../../atl/atl-class-overview.md)<br/>
-[Control Containment FAQ](../../atl/atl-control-containment-faq.md)
+[Control Containment FAQ](../../atl/atl-control-containment-faq.yml)

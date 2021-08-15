@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: basic_ofstream Class"
 title: "basic_ofstream Class"
 ms.date: "11/04/2016"
 f1_keywords: ["fstream/std::basic_ofstream", "fstream/std::basic_ofstream::close", "fstream/std::basic_ofstream::is_open", "fstream/std::basic_ofstream::open", "fstream/std::basic_ofstream::rdbuf", "fstream/std::basic_ofstream::swap"]
@@ -26,7 +27,7 @@ The traits of the basic element of the file buffer (usually `char_traits`< `Elem
 
 ## Remarks
 
-When the **wchar_t** specialization of `basic_ofstream` writes to the file, if the file is opened in text mode it will write a MBCS sequence. The internal representation will use a buffer of `wchar_t` characters.
+When the **`wchar_t`** specialization of `basic_ofstream` writes to the file, if the file is opened in text mode it will write a MBCS sequence. The internal representation will use a buffer of **`wchar_t`** characters.
 
 The object stores an object of class `basic_filebuf`< `Elem`, `Tr`>.
 
@@ -171,7 +172,7 @@ bool is_open() const;
 
 ### Return Value
 
-**true** if the file is open, **false** otherwise.
+**`true`** if the file is open, **`false`** otherwise.
 
 ### Remarks
 
@@ -257,7 +258,7 @@ An rvalue reference to a `basic_ofstream` object.
 
 ### Return Value
 
-Returns `*this`.
+Returns **`*this`**.
 
 ### Remarks
 

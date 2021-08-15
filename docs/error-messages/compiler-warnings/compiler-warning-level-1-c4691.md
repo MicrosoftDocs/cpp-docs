@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4691"
 title: "Compiler Warning (level 1) C4691"
 ms.date: "11/04/2016"
 f1_keywords: ["C4691"]
@@ -15,7 +16,7 @@ In the case where you are rebuilding *file*, C4691 can be ignored or turned off 
 
 However, unexpected behavior can occur if the compiler uses a definition that is not from the same assembly that is referenced in metadata; CLR types are typed not only by the name of the type, but also by the assembly.  That is, a type Z from assembly z.dll is different from a type Z from assembly y.dll.
 
-## Example
+## Examples
 
 This sample contains the original type definition.
 
@@ -24,8 +25,6 @@ This sample contains the original type definition.
 // compile with: /clr /LD /W1
 public ref class Original_Type {};
 ```
-
-## Example
 
 This sample references C4691_a.dll and declares a field of type Original_Type.
 
@@ -38,8 +37,6 @@ public:
    Original_Type^ ot;
 };
 ```
-
-## Example
 
 The following sample generates C4691.  Notice this sample contains a definition for Original_Type and does not reference C4691a.dll.
 

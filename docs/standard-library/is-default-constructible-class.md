@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_default_constructible Class"
 title: "is_default_constructible Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_default_constructible"]
@@ -23,7 +24,7 @@ The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type *T* is a class type that has a default constructor, otherwise it holds false. This is equivalent to the predicate `is_constructible<T>`. Type *T* must be a complete type, **void**, or an array of unknown bound.
+An instance of the type predicate holds true if the type *T* is a class type that has a default constructor, otherwise it holds false. This is equivalent to the predicate `is_constructible<T>`. Type *T* must be a complete type, **`void`**, or an array of unknown bound.
 
 ## Example
 

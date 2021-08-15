@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSimpleException Class"
 title: "CSimpleException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSimpleException", "AFX/CSimpleException", "AFX/CSimpleException::CSimpleException", "AFX/CSimpleException::GetErrorMessage"]
@@ -33,7 +34,7 @@ class AFX_NOVTABLE CSimpleException : public CException
 
 `CSimpleException` is the base class for resource-critical MFC exceptions and handles the ownership and initialization of an error message. The following classes use `CSimpleException` as their base class:
 
-|||
+|Name|Description|
 |-|-|
 |[CMemoryException Class](../../mfc/reference/cmemoryexception-class.md)|Out-of-memory exception|
 |[CNotSupportedException Class](../../mfc/reference/cnotsupportedexception-class.md)|Requests for an unsupported operation|

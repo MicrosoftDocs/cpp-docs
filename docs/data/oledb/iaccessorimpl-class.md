@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAccessorImpl Class"
 title: "IAccessorImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IAccessorImpl", "ATL.IAccessorImpl.IAccessorImpl", "ATL::IAccessorImpl::IAccessorImpl", "IAccessorImpl::IAccessorImpl", "IAccessorImpl.IAccessorImpl", "ATL::IAccessorImpl::AddRefAccessor", "AddRefAccessor", "IAccessorImpl::AddRefAccessor", "IAccessorImpl.AddRefAccessor", "ATL.IAccessorImpl.AddRefAccessor", "IAccessorImpl::CreateAccessor", "CreateAccessor", "ATL::IAccessorImpl::CreateAccessor", "IAccessorImpl.CreateAccessor", "ATL.IAccessorImpl.CreateAccessor", "IAccessorImpl.GetBindings", "ATL::IAccessorImpl::GetBindings", "IAccessorImpl::GetBindings", "GetBindings", "ATL.IAccessorImpl.GetBindings", "ReleaseAccessor", "IAccessorImpl::ReleaseAccessor", "ATL.IAccessorImpl.ReleaseAccessor", "ATL::IAccessorImpl::ReleaseAccessor", "IAccessorImpl.ReleaseAccessor"]
@@ -37,13 +38,13 @@ Storage unit for column information. The default is [CAtlMap](../../atl/referenc
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[IAccessorImpl](#iaccessorimpl)|The constructor.|
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddRefAccessor](#addrefaccessor)|Adds a reference count to an existing accessor.|
 |[CreateAccessor](#createaccessor)|Creates an accessor from a set of bindings.|

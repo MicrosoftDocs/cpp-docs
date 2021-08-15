@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application Control"
 title: "Application Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application control [MFC]"]
@@ -10,7 +11,7 @@ OLE requires substantial control over applications and their objects. The OLE sy
 
 ### Application Control
 
-|||
+| Name | Description |
 |-|-|
 |[AfxOleCanExitApp](#afxolecanexitapp)|Indicates whether the application can terminate.|
 |[AfxOleGetMessageFilter](#afxolegetmessagefilter)|Retrieves the application's current message filter.|

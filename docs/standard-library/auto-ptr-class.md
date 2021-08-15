@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: auto_ptr Class"
 title: "auto_ptr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::auto_ptr", "memory/std::auto_ptr::element_type", "memory/std::auto_ptr::get", "memory/std::auto_ptr::release", "memory/std::auto_ptr::reset"]
@@ -47,7 +48,7 @@ The pointer specified to replace the stored pointer.
 
 ## Remarks
 
-The class template describes a smart pointer, called an `auto_ptr`, to an allocated object. The pointer must be either null or designate an object allocated by **new**. The `auto_ptr` transfers ownership if its stored value is assigned to another object. (It replaces the stored value after a transfer with a null pointer.) The destructor for `auto_ptr<Type>` deletes the allocated object. The `auto_ptr<Type>` ensures that an allocated object is automatically deleted when control leaves a block, even through a thrown exception. You should not construct two `auto_ptr<Type>` objects that own the same object.
+The class template describes a smart pointer, called an `auto_ptr`, to an allocated object. The pointer must be either null or designate an object allocated by **`new`**. The `auto_ptr` transfers ownership if its stored value is assigned to another object. (It replaces the stored value after a transfer with a null pointer.) The destructor for `auto_ptr<Type>` deletes the allocated object. The `auto_ptr<Type>` ensures that an allocated object is automatically deleted when control leaves a block, even through a thrown exception. You should not construct two `auto_ptr<Type>` objects that own the same object.
 
 You can pass an `auto_ptr<Type>` object by value as an argument to a function call. An `auto_ptr` cannot be an element of any Standard Library container. You cannot reliably manage a sequence of `auto_ptr<Type>` objects with a C++ Standard Library container.
 
@@ -55,19 +56,19 @@ You can pass an `auto_ptr<Type>` object by value as an argument to a function ca
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[auto_ptr](#auto_ptr)|The constructor for objects of type `auto_ptr`.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[element_type](#element_type)|The type is a synonym for the template parameter `Type`.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[get](#get)|The member function returns the stored pointer `myptr`.|
 |[release](#release)|The member replaces the stored pointer `myptr` with a null pointer and returns the previously stored pointer.|
@@ -75,7 +76,7 @@ You can pass an `auto_ptr<Type>` object by value as an argument to a function ca
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator=](#op_eq)|An assignment operator that transfers ownership from one `auto_ptr` object to another.|
 |[operator*](#op_star)|The dereferencing operator for objects of type `auto_ptr`.|

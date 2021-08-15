@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Containers: Compound Files"
 title: "Containers: Compound Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["compound files [MFC]", "compound documents", "containers [MFC], compound files", "OLE documents [MFC], compound files", "performance [MFC], compound files", "files [MFC], compound", "standardized file structure compound files", "documents [MFC], compound", "documents [MFC], OLE", "OLE containers [MFC], compound files", "access modes for files [MFC]"]
@@ -67,7 +68,7 @@ In the *OLE Programmer's Reference*, see [IStream](/windows/win32/api/objidl/nn-
 
 ## See also
 
-[Containers](../mfc/containers.md)<br/>
-[Containers: User-Interface Issues](../mfc/containers-user-interface-issues.md)<br/>
-[COleStreamFile Class](../mfc/reference/colestreamfile-class.md)<br/>
-[COleDocument Class](../mfc/reference/coledocument-class.md)
+[Containers](containers.md)<br/>
+[Containers: User-Interface Issues](containers-user-interface-issues.md)<br/>
+[COleStreamFile Class](reference/colestreamfile-class.md)<br/>
+[COleDocument Class](reference/coledocument-class.md)

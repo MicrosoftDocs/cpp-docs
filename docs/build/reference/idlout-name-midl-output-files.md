@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /IDLOUT (Name MIDL Output Files)"
 title: "/IDLOUT (Name MIDL Output Files)"
 ms.date: "11/04/2016"
 f1_keywords: ["/idlout", "VC.Project.VCLinkerTool.MergedIDLBaseFileName"]
@@ -23,7 +24,7 @@ Specifies the name of the .idl file created by the MIDL compiler. No file extens
 
 The /IDLOUT option specifies the name and extension of the .idl file.
 
-The MIDL compiler is called by the MSVC linker when linking projects that have the [module](../../windows/module-cpp.md) attribute.
+The MIDL compiler is called by the MSVC linker when linking projects that have the [module](../../windows/attributes/module-cpp.md) attribute.
 
 /IDLOUT also specifies the file names of the other output files associated with the MIDL compiler:
 
@@ -43,9 +44,7 @@ If you specify neither /IDLOUT nor /TLBOUT, the linker will create vc70.tlb, vc7
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **Linker** folder.
-
-1. Click the **Embedded IDL** property page.
+1. Select the **Configuration Properties** > **Linker** > **Embedded IDL** property page.
 
 1. Modify the **Merge IDL Base File Name** property.
 
@@ -59,4 +58,4 @@ If you specify neither /IDLOUT nor /TLBOUT, the linker will create vc70.tlb, vc7
 [MSVC Linker Options](linker-options.md)<br/>
 [/IGNOREIDL (Don't Process Attributes into MIDL)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
 [/MIDL (Specify MIDL Command Line Options)](midl-specify-midl-command-line-options.md)<br/>
-[Building an Attributed Program](../../windows/building-an-attributed-program.md)
+[Building an Attributed Program](../../windows/attributes/cpp-attributes-com-net.md)

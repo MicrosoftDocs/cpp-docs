@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /guard (Enable Control Flow Guard)"
 title: "/guard (Enable Control Flow Guard)"
 ms.date: "11/04/2016"
 f1_keywords: ["/guard", "VC.Project.VCCLCompilerTool.ControlFlowGuard"]
@@ -18,7 +19,7 @@ Enable compiler generation of Control Flow Guard security checks.
 
 The **/guard:cf** option causes the compiler to analyze control flow for indirect call targets at compile time, and then to insert code to verify the targets at runtime. By default, **/guard:cf** is off and must be explicitly enabled. To explicitly disable this option, use **/guard:cf-**.
 
-**Visual Studio 2017 and later**: This option adds guards for **switch** statements that generate jump tables.
+**Visual Studio 2017 and later**: This option adds guards for **`switch`** statements that generate jump tables.
 
 When the **/guard:cf** Control Flow Guard (CFG) option is specified, the compiler and linker insert extra runtime security checks to detect attempts to compromise your code. During compiling and linking, all indirect calls in your code are analyzed to find every location that the code can reach when it runs correctly. This information is stored in extra structures in the headers of your binaries. The compiler also injects a check before every indirect call in your code that ensures the target is one of the verified locations. If the check fails at runtime on a CFG-aware operating system, the operating system closes the program.
 
@@ -34,7 +35,7 @@ Code compiled by using **/guard:cf** can be linked to libraries and object files
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select **Configuration Properties**, **C/C++**, **Code Generation**.
+1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
 1. Select the **Control Flow Guard** property.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: RemoveReference Structure"
 title: "RemoveReference Structure"
 ms.date: "10/03/2018"
 ms.topic: "reference"

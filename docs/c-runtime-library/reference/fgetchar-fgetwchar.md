@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _fgetchar, _fgetwchar"
 title: "_fgetchar, _fgetwchar"
 ms.date: "4/2/2020"
 api_name: ["_fgetchar", "_fgetwchar", "_o__fgetchar", "_o__fgetwchar"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["fgetwchar", "_fgettchar", "_fgetchar", "_fgetwchar", "fgettchar"]
@@ -22,7 +23,7 @@ wint_t _fgetwchar( void );
 
 ## Return Value
 
-**\_fgetchar** returns the character read as an **int** or returns `EOF` to indicate an error or end of file. **\_fgetwchar** returns, as a [wint_t](../../c-runtime-library/standard-types.md), the wide character that corresponds to the character read or returns `WEOF` to indicate an error or end of file. For both functions, use **feof** or **ferror** to distinguish between an error and an end-of-file condition.
+**\_fgetchar** returns the character read as an **`int`** or returns `EOF` to indicate an error or end of file. **\_fgetwchar** returns, as a [wint_t](../../c-runtime-library/standard-types.md), the wide character that corresponds to the character read or returns `WEOF` to indicate an error or end of file. For both functions, use **feof** or **ferror** to distinguish between an error and an end-of-file condition.
 
 ## Remarks
 

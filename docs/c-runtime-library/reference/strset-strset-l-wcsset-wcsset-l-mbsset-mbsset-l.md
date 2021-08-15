@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l"
 title: "_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l"
 ms.date: "4/2/2020"
 api_name: ["_wcsset", "_mbsset", "_strset_l", "_strset", "_wcsset_l", "_mbsset_l", "_o__mbsset", "_o__mbsset_l", "_o__wcsset"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbsset", "_strset_l", "_mbsset", "_strset", "mbsset_l", "strset_l", "_wcsset", "_ftcsset", "wcsset_l", "_tcsset_l", "_mbsset_l", "_wcsset_l", "_fstrset", "_tcsset"]
@@ -65,7 +66,7 @@ Returns a pointer to the altered string.
 
 ## Remarks
 
-The **_strset** function sets all characters (except the terminating null character) of *str* to *c*, converted to **char**. **_wcsset** and **_mbsset_l** are wide-character and multibyte-character versions of **_strset**, and the data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
+The **_strset** function sets all characters (except the terminating null character) of *str* to *c*, converted to **`char`**. **_wcsset** and **_mbsset_l** are wide-character and multibyte-character versions of **_strset**, and the data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
 
 **_mbsset** validates its parameters. If *str* is a null pointer, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, **_mbsset** returns **NULL** and sets **errno** to **EINVAL**. **_strset** and **_wcsset** do not validate their parameters.
 

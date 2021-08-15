@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: unary_function Struct"
 title: "unary_function Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::unary"]
@@ -21,7 +22,7 @@ struct unary_function
 
 ## Remarks
 
-The template struct serves as a base for classes that define a member function of the form **result_type**`operator()`( **constargument_type&**) **const**.
+The template struct serves as a base for classes that define a member function of the form `result_type operator()( constargument_type& ) const`.
 
 All such derived unary functions can refer to their sole argument type as **argument_type** and their return type as **result_type**.
 

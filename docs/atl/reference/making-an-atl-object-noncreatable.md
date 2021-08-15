@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Making an ATL Object Noncreatable"
 title: "Making an ATL Object Noncreatable"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.ATL.objects"]
@@ -13,7 +14,7 @@ You can change the attributes of an ATL-based COM object so that a client cannot
 
 1. Remove the [OBJECT_ENTRY_AUTO](object-map-macros.md#object_entry_auto) for the object. If you want the object to be noncreatable but the control to be registered, replace OBJECT_ENTRY_AUTO with [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](object-map-macros.md#object_entry_non_createable_ex_auto).
 
-1. Add the [noncreatable](../../windows/noncreatable.md) attribute to the coclass in the .idl file. For example:
+1. Add the [noncreatable](../../windows/attributes/noncreatable.md) attribute to the coclass in the .idl file. For example:
 
     ```
     [uuid(A1992E3D-3CF0-11D0-826F-00A0C90F2851),

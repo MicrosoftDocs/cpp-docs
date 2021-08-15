@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: General Class Design Philosophy"
 title: "General Class Design Philosophy"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["designing classes [MFC]", "MFC, Windows API", "Visual C, Windows API calls", "classes [MFC], MFC class design", "Windows API [MFC], and MFC"]
@@ -30,10 +31,10 @@ The Microsoft Foundation Class Library is an object-oriented interface to Window
 
 For more on the design of the MFC Library, see:
 
-- [The Application Framework](../mfc/application-framework.md)
+- [The Application Framework](application-framework.md)
 
-- [Relationship to the C-Language API](../mfc/relationship-to-the-c-language-api.md)
+- [Relationship to the C-Language API](relationship-to-the-c-language-api.md)
 
 ## See also
 
-[Class Overview](../mfc/class-library-overview.md)
+[Class Overview](class-library-overview.md)

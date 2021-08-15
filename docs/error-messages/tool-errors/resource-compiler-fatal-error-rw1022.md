@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Compiler Fatal Error RW1022"
 title: "Resource Compiler Fatal Error RW1022"
 ms.date: "11/04/2016"
 f1_keywords: ["RW1022"]

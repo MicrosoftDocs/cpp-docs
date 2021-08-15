@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Objects and Data Sources (OLE)"
 title: "Data Objects and Data Sources (OLE)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data objects [MFC], definition", "data transfer [MFC]", "OLE [MFC], data transfer", "data sources [MFC], definition", "data transfer [MFC], definition", "OLE [MFC], data objects", "OLE [MFC], data sources"]
@@ -14,18 +15,18 @@ When you perform a data transfer, either by using the Clipboard or drag and drop
 
 The following articles explain how to use data objects and data sources in your applications. This information applies to both container and server applications, because both may be called upon to copy and paste data.
 
-- [Data Objects and Data Sources: Creation and Destruction](../mfc/data-objects-and-data-sources-creation-and-destruction.md)
+- [Data Objects and Data Sources: Creation and Destruction](data-objects-and-data-sources-creation-and-destruction.md)
 
-- [Data Objects and Data Sources: Manipulation](../mfc/data-objects-and-data-sources-manipulation.md)
+- [Data Objects and Data Sources: Manipulation](data-objects-and-data-sources-manipulation.md)
 
 ## In This Section
 
-[Drag and Drop](../mfc/drag-and-drop-ole.md)
+[Drag and Drop](drag-and-drop-ole.md)
 
-[Clipboard](../mfc/clipboard.md)
+[Clipboard](clipboard.md)
 
 ## See also
 
-[OLE](../mfc/ole-in-mfc.md)<br/>
-[COleDataObject Class](../mfc/reference/coledataobject-class.md)<br/>
-[COleDataSource Class](../mfc/reference/coledatasource-class.md)
+[OLE](ole-in-mfc.md)<br/>
+[COleDataObject Class](reference/coledataobject-class.md)<br/>
+[COleDataSource Class](reference/coledatasource-class.md)

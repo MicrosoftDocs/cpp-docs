@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: lock Class"
 title: "lock Class"
 ms.date: "01/16/2019"
 ms.topic: "reference"
@@ -38,7 +39,7 @@ Internally, the lock class uses <xref:System.Threading.Monitor> to synchronize a
 |[lock::acquire](#acquire)|Acquires a lock on an object, optionally waiting to acquire the lock forever, for a specified amount of time, or not at all.|
 |[lock::is_locked](#is-locked)|Indicates whether a lock is being held.|
 |[lock::release](#release)|Releases a lock.|
-|[lock::try_acquire](#try-acquire)|Acquires a lock on an object, waiting for a specified amount of time and returning a `bool` to report the success of acquisition instead of throwing an exception.|
+|[lock::try_acquire](#try-acquire)|Acquires a lock on an object, waiting for a specified amount of time and returning a **`bool`** to report the success of acquisition instead of throwing an exception.|
 
 ### Public operators
 
@@ -92,7 +93,7 @@ Throws <xref:System.ApplicationException> if lock acquisition doesn't occur befo
 
 The first three forms of the constructor try to acquire a lock on `_object` within the specified timeout period (or <xref:System.Threading.Timeout.Infinite> if none is specified).
 
-The fourth form of the constructor doesn't acquire a lock on `_object`. `lock_later` is a member of the [lock_when enum](../dotnet/lock-when-enum.md). Use [lock::acquire](../dotnet/lock-acquire.md) or [lock::try_acquire](../dotnet/lock-try-acquire.md) to acquire the lock in this case.
+The fourth form of the constructor doesn't acquire a lock on `_object`. `lock_later` is a member of the [lock_when enum](../dotnet/lock-when-enum.md). Use [lock::acquire](#acquire) or [lock::try_acquire](#try-acquire) to acquire the lock in this case.
 
 The lock will automatically be released when the destructor is called.
 
@@ -198,7 +199,7 @@ Destructs a `lock` object.
 
 ### Remarks
 
-The destructor calls [lock::release](../dotnet/lock-release.md).
+The destructor calls [lock::release](#release).
 
 ### Example
 
@@ -419,7 +420,7 @@ bool is_locked();
 
 ### Return value
 
-`true` if a lock is held, `false` otherwise.
+**`true`** if a lock is held, **`false`** otherwise.
 
 ### Example
 
@@ -522,11 +523,11 @@ operator bool();
 
 ### Return value
 
-`true` if a lock is held, `false` otherwise.
+**`true`** if a lock is held, **`false`** otherwise.
 
 ### Remarks
 
-This operator actually converts to `_detail_class::_safe_bool` which is safer than `bool` because it can't be converted to an integral type.
+This operator actually converts to `_detail_class::_safe_bool` which is safer than **`bool`** because it can't be converted to an integral type.
 
 ### Example
 
@@ -725,7 +726,7 @@ All threads completed.
 
 ## <a name="try-acquire"></a> lock::try_acquire
 
-Acquires a lock on an object, waiting for a specified amount of time and returning a `bool` to report the success of acquisition instead of throwing an exception.
+Acquires a lock on an object, waiting for a specified amount of time and returning a **`bool`** to report the success of acquisition instead of throwing an exception.
 
 ```cpp
 bool try_acquire(
@@ -743,7 +744,7 @@ Timeout value in milliseconds or as a <xref:System.TimeSpan>.
 
 ### Return value
 
-`true` if lock was acquired, `false` otherwise.
+**`true`** if lock was acquired, **`false`** otherwise.
 
 ### Remarks
 
@@ -856,7 +857,7 @@ The object to compare for equality.
 
 ### Return value
 
-Returns `true` if `t` is the same as the lock's object, `false` otherwise.
+Returns **`true`** if `t` is the same as the lock's object, **`false`** otherwise.
 
 ### Example
 
@@ -899,7 +900,7 @@ The object to compare for inequality.
 
 ### Return value
 
-Returns `true` if `t` differs from the lock's object, `false` otherwise.
+Returns **`true`** if `t` differs from the lock's object, **`false`** otherwise.
 
 ### Example
 

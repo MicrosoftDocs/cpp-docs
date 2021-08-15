@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Matrix Multiplication"
 title: "Walkthrough: Matrix Multiplication"
 ms.date: "04/23/2019"
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
@@ -21,7 +22,7 @@ Before you start:
 
 Instructions for creating a new project vary depending on which version of Visual Studio you have installed. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create the project in Visual Studio 2019
 
@@ -31,7 +32,7 @@ Instructions for creating a new project vary depending on which version of Visua
 
 1. From the filtered list of project types, choose **Empty Project** then choose **Next**. In the next page, enter *MatrixMultiply* in the **Name** box to specify a name for the project, and specify the project location if desired.
 
-   ![New console app](../../build/media/mathclient-project-name-2019.png "New console app")
+   ![New console app.](../../build/media/mathclient-project-name-2019.png "New console app")
 
 1. Choose the **Create** button to create the client project.
 
@@ -41,7 +42,7 @@ Instructions for creating a new project vary depending on which version of Visua
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### To create a project in Visual Studio 2017 or 2015
 
@@ -63,13 +64,13 @@ Instructions for creating a new project vary depending on which version of Visua
 
 In this section, consider the multiplication of two matrices, A and B, which are defined as follows:
 
-![3&#45;by&#45;2 matrix A](../../parallel/amp/media/campmatrixanontiled.png "3&#45;by&#45;2 matrix A")
+![3&#45;by&#45;2 matrix A.](../../parallel/amp/media/campmatrixanontiled.png "3&#45;by&#45;2 matrix A")
 
-![2&#45;by&#45;3 matrix B](../../parallel/amp/media/campmatrixbnontiled.png "2&#45;by&#45;3 matrix B")
+![2&#45;by&#45;3 matrix B.](../../parallel/amp/media/campmatrixbnontiled.png "2&#45;by&#45;3 matrix B")
 
 A is a 3-by-2 matrix and B is a 2-by-3 matrix. The product of multiplying A by B is the following 3-by-3 matrix. The product is calculated by multiplying the rows of A by the columns of B element by element.
 
-![3&#45;by&#45;3 product matrix](../../parallel/amp/media/campmatrixproductnontiled.png "3&#45;by&#45;3 product matrix")
+![3&#45;by&#45;3 product matrix.](../../parallel/amp/media/campmatrixproductnontiled.png "3&#45;by&#45;3 product matrix")
 
 ### To multiply without using C++ AMP
 
@@ -146,9 +147,9 @@ A is a 3-by-2 matrix and B is a 2-by-3 matrix. The product of multiplying A by B
    }
    ```
 
-   The AMP code resembles the non-AMP code. The call to `parallel_for_each` starts one thread for each element in `product.extent`, and replaces the `for` loops for row and column. The value of the cell at the row and column is available in `idx`. You can access the elements of an `array_view` object by using either the `[]` operator and an index variable, or the `()` operator and the row and column variables. The example demonstrates both methods. The `array_view::synchronize` method copies the values of the `product` variable back to the `productMatrix` variable.
+   The AMP code resembles the non-AMP code. The call to `parallel_for_each` starts one thread for each element in `product.extent`, and replaces the **`for`** loops for row and column. The value of the cell at the row and column is available in `idx`. You can access the elements of an `array_view` object by using either the `[]` operator and an index variable, or the `()` operator and the row and column variables. The example demonstrates both methods. The `array_view::synchronize` method copies the values of the `product` variable back to the `productMatrix` variable.
 
-1. Add the following `include` and `using` statements at the top of MatrixMultiply.cpp.
+1. Add the following `include` and **`using`** statements at the top of MatrixMultiply.cpp.
 
    ```cpp
    #include <amp.h>
@@ -181,21 +182,21 @@ Tiling is a technique in which you partition data into equal-sized subsets, whic
 
 To take advantage of tiling in matrix multiplication, the algorithm must partition the matrix into tiles and then copy the tile data into `tile_static` variables for faster access. In this example, the matrix is partitioned into submatrices of equal size. The product is found by multiplying the submatrices. The two matrices and their product in this example are:
 
-![4&#45;by&#45;4 matrix A](../../parallel/amp/media/campmatrixatiled.png "4&#45;by&#45;4 matrix A")
+![4&#45;by&#45;4 matrix A.](../../parallel/amp/media/campmatrixatiled.png "4&#45;by&#45;4 matrix A")
 
-![4&#45;by&#45;4 matrix B](../../parallel/amp/media/campmatrixbtiled.png "4&#45;by&#45;4 matrix B")
+![4&#45;by&#45;4 matrix B.](../../parallel/amp/media/campmatrixbtiled.png "4&#45;by&#45;4 matrix B")
 
-![4&#45;by&#45;4 product matrix](../../parallel/amp/media/campmatrixproducttiled.png "4&#45;by&#45;4 product matrix")
+![4&#45;by&#45;4 product matrix.](../../parallel/amp/media/campmatrixproducttiled.png "4&#45;by&#45;4 product matrix")
 
 The matrices are partitioned into four 2x2 matrices, which are defined as follows:
 
-![4&#45;by&#45;4 matrix A partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixapartitioned.png "4&#45;by&#45;4 matrix A partitioned into 2&#45;by&#45;2 sub&#45;matrices")
+![4&#45;by&#45;4 matrix A partitioned into 2&#45;by&#45;2 sub&#45;matrices.](../../parallel/amp/media/campmatrixapartitioned.png "4&#45;by&#45;4 matrix A partitioned into 2&#45;by&#45;2 sub&#45;matrices")
 
-![4&#45;by&#45;4 matrix B partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixbpartitioned.png "4&#45;by&#45;4 matrix B partitioned into 2&#45;by&#45;2 sub&#45;matrices")
+![4&#45;by&#45;4 matrix B partitioned into 2&#45;by&#45;2 sub&#45;matrices.](../../parallel/amp/media/campmatrixbpartitioned.png "4&#45;by&#45;4 matrix B partitioned into 2&#45;by&#45;2 sub&#45;matrices")
 
 The product of A and B can now be written and calculated as follows:
 
-![4&#45;by&#45;4 matrix A B partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixproductpartitioned.png "4&#45;by&#45;4 matrix A B partitioned into 2&#45;by&#45;2 sub&#45;matrices")
+![4&#45;by&#45;4 matrix A B partitioned into 2&#45;by&#45;2 sub&#45;matrices.](../../parallel/amp/media/campmatrixproductpartitioned.png "4&#45;by&#45;4 matrix A B partitioned into 2&#45;by&#45;2 sub&#45;matrices")
 
 Because matrices `a` through `h` are 2x2 matrices, all of the products and sums of them are also 2x2 matrices. It also follows that the product of A and B is a 4x4 matrix, as expected. To quickly check the algorithm, calculate the value of the element in the first row, first column in the product. In the example, that would be the value of the element in the first row and first column of `ae + bg`. You only have to calculate the first column, first row of `ae` and `bg` for each term. That value for `ae` is `(1 * 1) + (2 * 5) = 11`. The value for `bg` is `(3 * 1) + (4 * 5) = 23`. The final value is `11 + 23 = 34`, which is correct.
 

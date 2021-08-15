@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: regex_traits Class"
 title: "regex_traits Class"
 ms.date: "09/10/2018"
 f1_keywords: ["regex/std::regex_traits", "regex/std::regex_traits::char_type", "regex/std::regex_traits::size_type", "regex/std::regex_traits::string_type", "regex/std::regex_traits::locale_type", "regex/std::regex_traits::char_class_type", "regex/std::regex_traits::length", "regex/std::regex_traits::translate", "regex/std::regex_traits::translate_nocase", "regex/std::regex_traits::transform", "regex/std::regex_traits::transform_primary", "regex/std::regex_traits::lookup_classname", "regex/std::regex_traits::lookup_collatename", "regex/std::regex_traits::isctype", "regex/std::regex_traits::value", "regex/std::regex_traits::imbue", "regex/std::regex_traits::getloc"]

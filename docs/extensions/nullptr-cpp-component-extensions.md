@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: nullptr  (C++/CLI and C++/CX)"
 title: "nullptr  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
@@ -7,19 +8,19 @@ ms.assetid: 594cfbf7-06cb-4366-9ede-c0b703e1d095
 ---
 # nullptr  (C++/CLI and C++/CX)
 
-The **nullptr** keyword represents a *null pointer value*. Use a null pointer value to indicate that an object handle, interior pointer, or native pointer type does not point to an object.
+The **`nullptr`** keyword represents a *null pointer value*. Use a null pointer value to indicate that an object handle, interior pointer, or native pointer type does not point to an object.
 
-Use **nullptr** with either managed or native code. The compiler emits appropriate but different instructions for managed and native null pointer values. For information about using the ISO standard C++ version of this keyword, see [nullptr](../cpp/nullptr.md).
+Use **`nullptr`** with either managed or native code. The compiler emits appropriate but different instructions for managed and native null pointer values. For information about using the ISO standard C++ version of this keyword, see [nullptr](../cpp/nullptr.md).
 
-The **__nullptr** keyword is a Microsoft-specific keyword that has the same meaning as **nullptr**, but applies to only native code. If you use **nullptr** with native C/C++ code and then compile with the [/clr](../build/reference/clr-common-language-runtime-compilation.md) compiler option, the compiler cannot determine whether **nullptr** indicates a native or managed null pointer value. To make your intention clear to the compiler, use **nullptr** to specify a managed value or **__nullptr** to specify a native value.
+The **__nullptr** keyword is a Microsoft-specific keyword that has the same meaning as **`nullptr`**, but applies to only native code. If you use **`nullptr`** with native C/C++ code and then compile with the [/clr](../build/reference/clr-common-language-runtime-compilation.md) compiler option, the compiler cannot determine whether **`nullptr`** indicates a native or managed null pointer value. To make your intention clear to the compiler, use **`nullptr`** to specify a managed value or **__nullptr** to specify a native value.
 
-The **nullptr** keyword is equivalent to **Nothing** in Visual Basic and **null** in C#.
+The **`nullptr`** keyword is equivalent to **Nothing** in Visual Basic and **null** in C#.
 
 ## Usage
 
-The **nullptr** keyword can be used anywhere a handle, native pointer, or function argument can be used.
+The **`nullptr`** keyword can be used anywhere a handle, native pointer, or function argument can be used.
 
-The **nullptr** keyword is not a type and is not supported for use with:
+The **`nullptr`** keyword is not a type and is not supported for use with:
 
 - [sizeof](../cpp/sizeof-operator.md)
 
@@ -27,7 +28,7 @@ The **nullptr** keyword is not a type and is not supported for use with:
 
 - `throw nullptr` (although `throw (Object^)nullptr;` will work)
 
-The **nullptr** keyword can be used in the initialization of the following pointer types:
+The **`nullptr`** keyword can be used in the initialization of the following pointer types:
 
 - Native pointer
 
@@ -37,15 +38,15 @@ The **nullptr** keyword can be used in the initialization of the following point
 
 - Managed interior pointer
 
-The **nullptr** keyword can be used to test if a pointer or handle reference is null before the reference is used.
+The **`nullptr`** keyword can be used to test if a pointer or handle reference is null before the reference is used.
 
 Function calls among languages that use null pointer values for error checking should be interpreted correctly.
 
-You cannot initialize a handle to zero; only **nullptr** can be used. Assignment of constant 0 to an object handle produces a boxed `Int32` and a cast to `Object^`.
+You cannot initialize a handle to zero; only **`nullptr`** can be used. Assignment of constant 0 to an object handle produces a boxed `Int32` and a cast to `Object^`.
 
-## Example
+## Example: `nullptr` keyword
 
-The following code example demonstrates that the **nullptr** keyword can be used wherever a handle, native pointer, or function argument can be used. And the example demonstrates that the **nullptr** keyword can be used to check a reference before it is used.
+The following code example demonstrates that the **`nullptr`** keyword can be used wherever a handle, native pointer, or function argument can be used. And the example demonstrates that the **`nullptr`** keyword can be used to check a reference before it is used.
 
 ```cpp
 // mcpp_nullptr.cpp
@@ -72,9 +73,9 @@ int main() {
 }
 ```
 
-## Example
+## Example: Use `nullptr` and zero interchangeably
 
-The following code example shows that **nullptr** and zero can be used interchangeably on native pointers.
+The following code example shows that **`nullptr`** and zero can be used interchangeably on native pointers.
 
 ```cpp
 // mcpp_nullptr_1.cpp
@@ -111,9 +112,9 @@ pMyClass == nullptr
 pMyClass == 0
 ```
 
-## Example
+## Example: Interpret `nullptr` as a handle
 
-The following code example shows that **nullptr** is interpreted as a handle to any type or a native pointer to any type. In case of function overloading with handles to different types, an ambiguity error will be generated. The **nullptr** would have to be explicitly cast to a type.
+The following code example shows that **`nullptr`** is interpreted as a handle to any type or a native pointer to any type. In case of function overloading with handles to different types, an ambiguity error will be generated. The **`nullptr`** would have to be explicitly cast to a type.
 
 ```cpp
 // mcpp_nullptr_2.cpp
@@ -129,9 +130,9 @@ void f_null() {
 }
 ```
 
-## Example
+## Example: Cast `nullptr`
 
-The following code example shows that casting **nullptr** is allowed and returns a pointer or handle to the cast type that contains the **nullptr** value.
+The following code example shows that casting **`nullptr`** is allowed and returns a pointer or handle to the cast type that contains the **`nullptr`** value.
 
 ```cpp
 // mcpp_nullptr_3.cpp
@@ -150,9 +151,9 @@ int main() {
 }
 ```
 
-## Example
+## Example: Pass `nullptr` as a function parameter
 
-The following code example shows that **nullptr** can be used as a function parameter.
+The following code example shows that **`nullptr`** can be used as a function parameter.
 
 ```cpp
 // mcpp_nullptr_4.cpp
@@ -171,9 +172,9 @@ int main() {
 test
 ```
 
-## Example
+## Example: Default initialization
 
-The following code example shows that when handles are declared and not explicitly initialized, they are default initialized to **nullptr**.
+The following code example shows that when handles are declared and not explicitly initialized, they are default initialized to **`nullptr`**.
 
 ```cpp
 // mcpp_nullptr_5.cpp
@@ -198,9 +199,9 @@ int main() {
 NULL
 ```
 
-## Example
+## Example: Assign `nullptr` to a native pointer
 
-The following code example shows that **nullptr** can be assigned to a native pointer when you compile with `/clr`.
+The following code example shows that **`nullptr`** can be assigned to a native pointer when you compile with `/clr`.
 
 ```cpp
 // mcpp_nullptr_6.cpp

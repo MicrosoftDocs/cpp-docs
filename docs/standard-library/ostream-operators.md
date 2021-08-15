@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;ostream&gt; operators"
 title: "&lt;ostream&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["ostream/std::operator&lt;&lt;"]
@@ -6,9 +7,7 @@ ms.assetid: 9282a62e-a3d1-4371-a284-fbc9515bb9a2
 ---
 # &lt;ostream&gt; operators
 
-||
-|-|
-|[operator&lt;&lt;](#op_lt_lt)|
+[operator&lt;&lt;](#op_lt_lt)
 
 ## <a name="op_lt_lt"></a> operator&lt;&lt;
 
@@ -159,7 +158,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     Elem _Ch);
 ```
 
-except that *_Ch* is converted to an object of type `Elem` by calling `_Ostr.put`( `_Ostr.widen`( `_Ch`)).
+except that *_Ch* is converted to an object of type `Elem` by calling `_Ostr.put( _Ostr.widen( _Ch ))`.
 
 The template function
 
@@ -210,7 +209,7 @@ basic_ostream<char, _Tr>& operator<<(
     const signed char *str);
 ```
 
-returns `_Ostr` << (`const char *`) `str`.
+returns `_Ostr << (const char *)str`.
 
 The template function
 
@@ -221,7 +220,7 @@ basic_ostream<char, _Tr>& operator<<(
     signed char _Ch);
 ```
 
-returns `_Ostr` << (`char`) `_Ch`.
+returns `_Ostr << (char)_Ch`.
 
 The template function:
 
@@ -232,7 +231,7 @@ basic_ostream<char, _Tr>& operator<<(
     const unsigned char *str);
 ```
 
-returns `_Ostr` << (`const char *`) `str`.
+returns `_Ostr << (const char *)str`.
 
 The template function:
 
@@ -243,7 +242,7 @@ basic_ostream<char, _Tr>& operator<<(
     unsigned char _Ch);
 ```
 
-returns `_Ostr` << (`char`) `_Ch`.
+returns `_Ostr << (char)_Ch`.
 
 The template function:
 
@@ -254,7 +253,7 @@ basic_ostream<_Elem, _Tr>& operator<<(
     T val);
 ```
 
-returns `_Ostr` `<<` `val` (and converts a [RValue Reference](../cpp/rvalue-reference-declarator-amp-amp.md) to `_Ostr` to an lvalue in the process).
+returns `_Ostr << val` (and converts a [RValue Reference](../cpp/rvalue-reference-declarator-amp-amp.md) to `_Ostr` to an lvalue in the process).
 
 ### Example
 

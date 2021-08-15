@@ -6,12 +6,12 @@ helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "EVENT_DAT
 ---
 # EVENT_DATA structure
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 The `EVENT_DATA` structure describes an event received from an analysis or relogging session. These sessions are started by calling the [Analyze](../functions/analyze.md), [AnalyzeA](../functions/analyze-a.md), [AnalyzeW](../functions/analyze-w.md), [Relog](../functions/relog.md), [RelogA](../functions/relog-a.md), or [RelogW](../functions/relog-w.md) functions.
 
@@ -46,7 +46,7 @@ typedef struct EVENT_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `EventId` | A number that identifies the event. For a list of event identifiers, see [EVENT_ID](event-id-enum.md). |
 | `EventInstanceId` | A number that uniquely identifies the current event inside a trace. This value doesn't change when analyzing or relogging the same trace multiple times. Use this field to identify the same event in multiple analysis or relogging passes over the same trace. |
@@ -69,7 +69,7 @@ typedef struct EVENT_DATA_TAG
 
 Many fields in `EVENT_DATA` contain tick counts. C++ Build Insights uses Window's performance counter as a source of ticks. A tick count must be used with the `TickFrequency` field to convert it into an appropriate time unit such as seconds. See the example below for performing this conversion. `EVENT_DATA` doesn't contain a field for the regular tick count of an activity. To obtain this value, subtract `StartTimestamp` from `StopTimestamp`. `EVENT_DATA` is a structure that's meant to be used by C API users. For C++ API users, classes like [Event](../cpp-event-data-types/event.md) do time conversions automatically.
 
-The value of the `EVENT_DATA` `Data` field depends on the value of its `EventId` field. The value of `Data` is described in the table below. Some entity identifiers may be missing from the table below. In this case, the `Data` field is set to `nullptr` or zero.
+The value of the `EVENT_DATA` `Data` field depends on the value of its `EventId` field. The value of `Data` is described in the table below. Some entity identifiers may be missing from the table below. In this case, the `Data` field is set to **`nullptr`** or zero.
 
 | `EventId` value | Type pointed to by `Data` |
 |--|--|

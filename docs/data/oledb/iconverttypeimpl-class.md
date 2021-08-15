@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IConvertTypeImpl Class"
 title: "IConvertTypeImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL.IConvertTypeImpl<T>", "IConvertTypeImpl", "ATL.IConvertTypeImpl", "ATL::IConvertTypeImpl", "ATL::IConvertTypeImpl<T>", "IConvertTypeImpl.CanConvert", "CanConvert", "IConvertTypeImpl::CanConvert"]
@@ -30,7 +31,7 @@ Your class, derived from `IConvertTypeImpl`.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CanConvert](#canconvert)|Gives information on the availability of type conversions on a command or on a rowset.|
 

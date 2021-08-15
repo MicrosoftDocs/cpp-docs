@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multithreading: Terminating Threads in MFC"
 title: "Multithreading: Terminating Threads in MFC"
 ms.date: "08/27/2018"
 helpviewer_keywords: ["premature thread termination", "starting threads", "threading [MFC], terminating threads", "multithreading [C++], terminating threads", "threading [C++], stopping threads", "terminating threads", "stopping threads", "AfxEndThread method"]
@@ -16,7 +17,7 @@ Two normal situations cause a thread to terminate: the controlling function exit
 
 ## <a name="_core_normal_thread_termination"></a> Normal Thread Termination
 
-For a worker thread, normal thread termination is simple: Exit the controlling function and return a value that signifies the reason for termination. You can use either the [AfxEndThread](../mfc/reference/application-information-and-management.md#afxendthread) function or a **return** statement. Typically, 0 signifies successful completion, but that is up to you.
+For a worker thread, normal thread termination is simple: Exit the controlling function and return a value that signifies the reason for termination. You can use either the [AfxEndThread](../mfc/reference/application-information-and-management.md#afxendthread) function or a **`return`** statement. Typically, 0 signifies successful completion, but that is up to you.
 
 For a user-interface thread, the process is just as simple: from within the user-interface thread, call [PostQuitMessage](/windows/win32/api/winuser/nf-winuser-postquitmessage) in the Windows SDK. The only parameter that `PostQuitMessage` takes is the exit code of the thread. As for worker threads, 0 typically signifies successful completion.
 

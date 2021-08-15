@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;optional&gt;"
 title: "&lt;optional&gt;"
 ms.date: "08/06/2019"
 f1_keywords: ["<optional>"]
@@ -18,7 +19,7 @@ Defines the container class template `optional` and several supporting templates
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator==](../standard-library/optional-operators.md#op_eq_eq)|Tests if an object is equal to another object.|
 |[operator!=](../standard-library/optional-operators.md#op_neq)|Tests if an object is not equal to another object.|
@@ -32,14 +33,14 @@ Defines the container class template `optional` and several supporting templates
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[make_optional](../standard-library/optional-functions.md#make_optional)|Makes an object optional.|
 |[swap](../standard-library/optional-functions.md#swap)|Swaps the contained values of two `optional` objects.|
 
 ### Classes and Structs
 
-|||
+|Name|Description|
 |-|-|
 |hash|Returns a hash of the contained object.|
 |[optional class](../standard-library/optional-class.md)|Describes an object that may or may not hold a value.|
@@ -48,7 +49,7 @@ Defines the container class template `optional` and several supporting templates
 
 ### Objects
 
-|||
+|Name|Description|
 |-|-|
 |[nullopt](../standard-library/optional-functions.md#nullopt)|An instance of `nullopt_t` for comparisons.|
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic Functions (C++/CLI)"
 title: "Generic Functions (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
@@ -46,7 +47,7 @@ return-type identifier<type-parameter identifier(s)>
 (Optional) Additional declarative information. For more information on attributes and attribute classes, see attributes.
 
 *modifiers*<br/>
-(Optional) A modifier for the function, such as static.  **virtual** is not allowed since virtual methods may not be generic.
+(Optional) A modifier for the function, such as static.  **`virtual`** is not allowed since virtual methods may not be generic.
 
 *return-type*<br/>
 The type returned by the method. If the return type is void, no return value is required.

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TerminateMap Function"
 title: "TerminateMap Function"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -28,11 +29,11 @@ A [module](module-class.md).
 The name of a subset of class factories in the module specified by parameter *module*.
 
 *forceTerminate*<br/>
-**true** to terminate the class factories regardless of they are active; **false** to not terminate the class factories if any factory is active.
+**`true`** to terminate the class factories regardless of they are active; **`false`** to not terminate the class factories if any factory is active.
 
 ## Return Value
 
-**true** if all class factories were terminated; otherwise, **false**.
+**`true`** if all class factories were terminated; otherwise, **`false`**.
 
 ## Remarks
 

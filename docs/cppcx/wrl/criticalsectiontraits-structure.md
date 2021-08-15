@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CriticalSectionTraits Structure"
 title: "CriticalSectionTraits Structure"
 ms.date: "09/26/2018"
 ms.topic: "reference"
@@ -22,7 +23,7 @@ struct CriticalSectionTraits;
 
 Name   | Description
 ------ | -----------------------------------------------------------------------------------------------------------------
-`Type` | A `typedef` that defines a pointer to a critical section. `Type` is defined as `typedef CRITICAL_SECTION* Type;`.
+`Type` | A **`typedef`** that defines a pointer to a critical section. `Type` is defined as `typedef CRITICAL_SECTION* Type;`.
 
 ### Public Methods
 

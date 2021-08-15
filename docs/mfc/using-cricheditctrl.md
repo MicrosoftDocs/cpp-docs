@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CRichEditCtrl"
 title: "Using CRichEditCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["rich edit controls [MFC], using", "CRichEditCtrl class [MFC], using"]

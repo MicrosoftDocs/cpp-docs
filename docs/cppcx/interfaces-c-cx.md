@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interfaces (C++/CX)"
 title: "Interfaces (C++/CX)"
 ms.date: "01/22/2017"
 ms.assetid: 11034314-d54a-426d-923b-5ab7a6b9f8ce
@@ -57,19 +58,19 @@ When a ref class implements multiple interfaces, and those interfaces have metho
 
 ## Generic interfaces
 
-In C++/CX, the `generic` keyword is used to represent a Windows Runtime parameterized type. A parameterized type is emitted in metadata and can be consumed by code that's written in any language that supports type parameters. The Windows Runtime defines some generic interfaces—for example, [Windows::Foundation::Collections::IVector\<T>](/uwp/api/windows.foundation.collections.ivector-1)—but it doesn't support the creation of public user-defined generic interfaces in C++/CX. However, you can create private generic interfaces.
+In C++/CX, the **`generic`** keyword is used to represent a Windows Runtime parameterized type. A parameterized type is emitted in metadata and can be consumed by code that's written in any language that supports type parameters. The Windows Runtime defines some generic interfaces—for example, [Windows::Foundation::Collections::IVector\<T>](/uwp/api/windows.foundation.collections.ivector-1)—but it doesn't support the creation of public user-defined generic interfaces in C++/CX. However, you can create private generic interfaces.
 
 Here's how Windows Runtime types can be used to author a generic interface:
 
-- A generic user-defined `interface class` in a component is not allowed to be emitted into its Windows metadata file; therefore, it can't have public accessibility, and client code in other .winmd files can't implement it. It can be implemented by non-public ref classes in the same component. A public ref class can have a generic interface type as a private member.
+- A generic user-defined **`interface class`** in a component is not allowed to be emitted into its Windows metadata file; therefore, it can't have public accessibility, and client code in other .winmd files can't implement it. It can be implemented by non-public ref classes in the same component. A public ref class can have a generic interface type as a private member.
 
-   The following code snippet shows how to declare a generic `interface class` and then implement it in a private ref class and use the ref class as a private member in a public ref class.
+   The following code snippet shows how to declare a generic **`interface class`** and then implement it in a private ref class and use the ref class as a private member in a public ref class.
 
    [!code-cpp[cx_interfaces#07](../cppcx/codesnippet/CPP/interfacestest/class1.h#07)]
 
 - A generic interface must follow the standard interface rules that govern accessibility, members, *requires* relationships, base classes, and so on.
 
-- A generic interface can take one or more generic type parameters that are preceded by `typename` or `class`. Non-type parameters are not supported.
+- A generic interface can take one or more generic type parameters that are preceded by **`typename`** or **`class`**. Non-type parameters are not supported.
 
 - A type parameter can be any Windows Runtime type. That is, the type parameter can be a reference type, a value type, an interface class, a delegate, a fundamental type, or a public enum class.
 

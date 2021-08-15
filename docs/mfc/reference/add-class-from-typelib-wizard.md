@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add Class from Typelib Wizard"
 title: "Add Class from Typelib Wizard"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["COM interfaces, adding classes"]
@@ -6,13 +7,13 @@ ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
 ---
 # Add Class from Typelib Wizard
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 This wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Use this wizard to add an MFC class from an available type library. The wizard creates a class for each interface you add from the selected type library.
 
@@ -28,8 +29,6 @@ Use this wizard to add an MFC class from an available type library. The wizard c
 - **Available type libraries**
 
    Lists the type libraries currently registered in the system. Select a type library from this list to display its interfaces in the **Interfaces** list.
-
-   See "Inside Distributed COM: Type Libraries and Language Integration" in the MSDN library for more information about registering type libraries.
 
 - **Location**
 

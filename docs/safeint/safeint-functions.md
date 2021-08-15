@@ -1,6 +1,7 @@
 ---
+description: "Learn more about: SafeInt Functions"
 title: "SafeInt Functions"
-ms.date: "10/22/2018"
+ms.date: "06/23/2020"
 ms.topic: "reference"
 f1_keywords: ["SafeInt functions", "SafeAdd", "SafeCast", "SafeDivide", "SafeEquals", "SafeGreaterThan", "SafeGreaterThanEquals", "SafeLessThan", "SafeLessThanEquals", "SafeModulus", "SafeMultiply", "SafeNotEquals", "SafeSubtract"]
 helpviewer_keywords: ["functions, SafeInt", "SafeAdd function", "SafeCast function", "SafeDivide function", "SafeEquals function", "SafeGreaterThan function", "SafeGreaterThanEquals function", "SafeLessThan function", "SafeLessThanEquals function", "SafeModulus function", "SafeMultiply function", "SafeNotEquals function", "SafeSubtract function"]
@@ -8,7 +9,7 @@ ms.assetid: fdc208e5-5d8a-41a9-8271-567fd438958d
 ---
 # SafeInt Functions
 
-The SafeInt library provides several functions that you can use without creating an instance of the [SafeInt class](../safeint/safeint-class.md). If you want to protect a single mathematical operation from integer overflow, you can use these functions. If you want to protect multiple mathematical operations, you should create `SafeInt` objects. It is more efficient to create `SafeInt` objects than to use these functions multiple times.
+The SafeInt library provides several functions that you can use without creating an instance of the [SafeInt class](safeint-class.md). If you want to protect a single mathematical operation from integer overflow, you can use these functions. If you want to protect multiple mathematical operations, you should create `SafeInt` objects. It's more efficient to create `SafeInt` objects than to use these functions multiple times.
 
 These functions enable you to compare or perform mathematical operations on two different types of parameters without having to convert them to the same type first.
 
@@ -33,8 +34,8 @@ Function                      | Description
 
 Section                                                  | Description
 -------------------------------------------------------- | ----------------------------------------------------
-[SafeInt](../safeint/safeint-class.md)                   | The `SafeInt` class.
-[SafeIntException](../safeint/safeintexception-class.md) | The exception class specific to the SafeInt library.
+[SafeInt](safeint-class.md)                   | The `SafeInt` class.
+[SafeIntException](safeintexception-class.md) | The exception class specific to the SafeInt library.
 
 ## <a name="safeadd"></a> SafeAdd
 
@@ -62,7 +63,7 @@ inline bool SafeAdd (
 
 ### Return Value
 
-**true** if no error occurs; **false** if an error occurs.
+**`true`** if no error occurs; **`false`** if an error occurs.
 
 ## <a name="safecast"></a> SafeCast
 
@@ -86,7 +87,7 @@ inline bool SafeCast (
 
 ### Return Value
 
-**true** if no error occurs; **false** if an error occurs.
+**`true`** if no error occurs; **`false`** if an error occurs.
 
 ## <a name="safedivide"></a> SafeDivide
 
@@ -104,21 +105,21 @@ inline bool SafeDivide (
 ### Parameters
 
 *t*<br/>
-[in] The divisor. This must be of type T.
+[in] The dividend. This must be of type T.
 
 *u*<br/>
-[in] The dividend. This must be of type U.
+[in] The divisor. This must be of type U.
 
 *result*<br/>
 [out] The parameter where `SafeDivide` stores the result.
 
 ### Return Value
 
-**true** if no error occurs; **false** if an error occurs.
+**`true`** if no error occurs; **`false`** if an error occurs.
 
 ## <a name="safeequals"></a> SafeEquals
 
-Compares two numbers to determine whether they are equal.
+Compares two numbers to determine whether they're equal.
 
 ```cpp
 template<typename T, typename U>
@@ -138,7 +139,7 @@ inline bool SafeEquals (
 
 ### Return Value
 
-**true** if *t* and *u* are equal; otherwise **false**.
+**`true`** if *t* and *u* are equal; otherwise **`false`**.
 
 ### Remarks
 
@@ -166,7 +167,7 @@ inline bool SafeGreaterThan (
 
 ### Return Value
 
-**true** if *t* is greater than *u*; otherwise **false**.
+**`true`** if *t* is greater than *u*; otherwise **`false`**.
 
 ### Remarks
 
@@ -194,7 +195,7 @@ inline bool SafeGreaterThanEquals (
 
 ### Return Value
 
-**true** if *t* is greater than or equal to *u*; otherwise **false**.
+**`true`** if *t* is greater than or equal to *u*; otherwise **`false`**.
 
 ### Remarks
 
@@ -218,11 +219,11 @@ inline bool SafeLessThan (
 [in] The first number. This must be of type `T`.
 
 *u*<br/>
-[in] The second numer. This must be of type `U`.
+[in] The second number. This must be of type `U`.
 
 ### Return Value
 
-**true** if *t* is less than *u*; otherwise **false**.
+**`true`** if *t* is less than *u*; otherwise **`false`**.
 
 ### Remarks
 
@@ -250,7 +251,7 @@ inline bool SafeLessThanEquals (
 
 ### Return Value
 
-**true** if *t* is less than or equal to *u*; otherwise **false**.
+**`true`** if *t* is less than or equal to *u*; otherwise **`false`**.
 
 ### Remarks
 
@@ -282,7 +283,7 @@ inline bool SafeModulus (
 
 ### Return Value
 
-**true** if no error occurs; **false** if an error occurs.
+**`true`** if no error occurs; **`false`** if an error occurs.
 
 ## <a name="safemultiply"></a> SafeMultiply
 
@@ -310,11 +311,11 @@ inline bool SafeMultiply (
 
 ### Return Value
 
-`true` if no error occurs; `false` if an error occurs.
+**`true`** if no error occurs; **`false`** if an error occurs.
 
 ## <a name="safenotequals"></a> SafeNotEquals
 
-Determines if two numbers are not equal.
+Determines if two numbers aren't equal.
 
 ```cpp
 template<typename T, typename U>
@@ -334,7 +335,7 @@ inline bool SafeNotEquals (
 
 ### Return Value
 
-**true** if *t* and *u* are not equal; otherwise **false**.
+**`true`** if *t* and *u* aren't equal; otherwise **`false`**.
 
 ### Remarks
 
@@ -366,4 +367,4 @@ inline bool SafeSubtract (
 
 ### Return Value
 
-**true** if no error occurs; **false** if an error occurs.
+**`true`** if no error occurs; **`false`** if an error occurs.

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Visualization Manager"
 title: "Visualization Manager"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["Visualization Manager"]
@@ -8,19 +9,19 @@ ms.assetid: c9dd1365-27ac-42e5-8caa-1004525b4129
 
 The visual manager is an object that controls the appearance of a whole application. It acts as a single class where you can put all the drawing code for your application. The MFC Library includes several visual managers. You can also create your own visual manager if you want to create a custom view for your application. The following images show the same application when different visual managers are enabled:
 
-![MyApp as rendered by CMFCVisualManagerWindows](../mfc/media/vmwindows.png "MyApp as rendered by CMFCVisualManagerWindows") <br/>
+![MyApp as rendered by CMFCVisualManagerWindows.](../mfc/media/vmwindows.png "MyApp as rendered by CMFCVisualManagerWindows") <br/>
 MyApp that uses the CMFCVisualManagerWindows visual manager
 
-![MyApp as rendered by CMFCVisualManagerVS2005](../mfc/media/vmvs2005.png "MyApp as rendered by CMFCVisualManagerVS2005") <br/>
+![MyApp as rendered by CMFCVisualManagerVS2005.](../mfc/media/vmvs2005.png "MyApp as rendered by CMFCVisualManagerVS2005") <br/>
 MyApp that uses the CMFCVisualManagerVS2005 visual manager
 
-![MyApp as rendered by CMFCVisualManagerOfficeXP](../mfc/media/vmofficexp.png "MyApp as rendered by CMFCVisualManagerOfficeXP") <br/>
+![MyApp as rendered by CMFCVisualManagerOfficeXP.](../mfc/media/vmofficexp.png "MyApp as rendered by CMFCVisualManagerOfficeXP") <br/>
 MyApp that uses the CMFCVisualManagerOfficeXP visual manager
 
-![MyApp as rendered by CMFCVisualManagerOffice2003](../mfc/media/vmoffice2003.png "MyApp as rendered by CMFCVisualManagerOffice2003") <br/>
+![MyApp as rendered by CMFCVisualManagerOffice2003.](../mfc/media/vmoffice2003.png "MyApp as rendered by CMFCVisualManagerOffice2003") <br/>
 MyApp that uses the CMFCVisualManagerOffice2003 visual manager
 
-![MyApp as rendered by CMFCVisualManagerOffice2007](../mfc/media/msoffice2007.png "MyApp as rendered by CMFCVisualManagerOffice2007") <br/>
+![MyApp as rendered by CMFCVisualManagerOffice2007.](../mfc/media/msoffice2007.png "MyApp as rendered by CMFCVisualManagerOffice2007") <br/>
 MyApp that uses the CMFCVisualManagerOffice2007 visual manager
 
 By default, the visual manager maintains the drawing code for several GUI elements. To provide custom UI elements, you need to override the related drawing methods of the visual manager. For the list of these methods, see [CMFCVisualManager Class](../mfc/reference/cmfcvisualmanager-class.md). The methods that you can override to provide a custom appearance are all the methods that start with `OnDraw`.

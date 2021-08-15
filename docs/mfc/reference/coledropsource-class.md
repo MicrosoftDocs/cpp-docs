@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleDropSource Class"
 title: "COleDropSource Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDropSource", "AFXOLE/COleDropSource", "AFXOLE/COleDropSource::COleDropSource", "AFXOLE/COleDropSource::GiveFeedback", "AFXOLE/COleDropSource::OnBeginDrag", "AFXOLE/COleDropSource::QueryContinueDrag"]

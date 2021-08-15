@@ -1,0 +1,135 @@
+- name: Microsoft C/C++ in Visual Studio
+  expanded: false
+  items: 
+    - name: C++ in Visual Studio
+      href: ../overview/visual-cpp-in-visual-studio.md
+    - name: Overview of C++ development in Visual Studio
+      href: ../overview/overview-of-cpp-development.md
+    - name: What's new for C++ in Visual Studio 2019
+      href: ../overview/what-s-new-for-visual-cpp-in-visual-studio.md
+    - name: What's new for C++ in Visual Studio 2017
+      href: ../overview/what-s-new-for-cpp-2017.md
+    - name: What's new for Microsoft C++ docs 
+      href: ../overview/whats-new-cpp-docs.md
+    - name: C++ conformance improvements in Visual Studio 2019
+      href: ../overview/cpp-conformance-improvements.md
+    - name: C++ conformance improvements in Visual Studio 2017
+      href: ../overview/cpp-conformance-improvements-2017.md
+    - name: Microsoft C/C++ language conformance
+      href: ../overview/visual-cpp-language-conformance.md
+    - name: Supported target platforms
+      href: ../overview/supported-platforms-visual-cpp.md
+    - name: C++ Tools and Features in Visual Studio Editions
+      href: ../overview/visual-cpp-tools-and-features-in-visual-studio-editions.md
+    - name: Install C11 and C17 support in Visual Studio
+      href: ../overview/install-c17-support.md
+    - name: Samples
+      href: ../overview/visual-cpp-samples.md
+    - name: Help and community
+      href: ../overview/visual-cpp-help-and-community.md
+    - name: How to report a problem with the Visual C++ toolset
+      href: ../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md
+- name: Visual Studio C++ Tutorials
+  expanded: false
+  items:
+    - name: Install C++ support in Visual Studio
+      href: ../build/vscpp-step-0-installation.md
+    - name: Create and edit a C++ console app project
+      href: ../build/vscpp-step-1-create.md
+    - name: Build and run a C++ console app project
+      href: ../build/vscpp-step-2-build.md
+    - name: Create a console calculator in C++
+      href: ../get-started/tutorial-console-cpp.md
+    - name: Create a UWP app
+      href: /windows/uwp/cpp-and-winrt-apis/get-started
+    - name: Create a Windows Desktop application
+      href: /windows/desktop/learnwin32/learn-to-program-for-windows
+    - name: Create a DirectX game
+      href: /windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game
+- name: Projects and build systems
+  href: ../build/projects-and-build-systems-cpp.md
+- name: Read and write code in Visual Studio
+  href: ../ide/read-and-understand-code-cpp.md
+- name: Windows desktop development
+  href: ../windows/overview-of-windows-programming-in-cpp.md
+- name: UWP development
+  href: ../cppcx/universal-windows-apps-cpp.md
+- name: Game development
+  href: ../overview/game-development-cpp.md
+- name: Linux development
+  href: ../linux/
+- name: Cross-platform mobile development
+  href: ../cross-platform/
+- name: .NET development with C++/CLI
+  href: ../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md
+- name: Cloud and Web programming
+  href: ../cloud/cloud-and-web-programming-in-visual-cpp.md
+- name: Port and upgrade C++ code
+  href: ../porting/visual-cpp-porting-and-upgrading-guide.md
+- name: Security best practices for C++
+  expanded: false
+  items: 
+    - name: Security best practices for C++
+      href: ../security/security-best-practices-for-cpp.md
+    - name: Run as a member of the users group
+      href: ../security/running-as-a-member-of-the-users-group.md
+    - name: How User Account Control (UAC) affects your application
+      href: ../security/how-user-account-control-uac-affects-your-application.md
+    - name: C++ developer guidance for speculative execution side channels
+      href: ../security/developer-guidance-speculative-execution.md
+- name: Reference
+  expanded: false
+  items: 
+    - name: C/C++ language and standard libraries
+      href: ../cpp/c-cpp-language-and-standard-libraries.md
+    - name: Languages reference
+      expanded: false
+      items: 
+        - name: Languages
+          href: ../overview/languages-cpp.md
+        - name: C language reference
+          href: ../c-language/c-language-reference.md
+        - name: C++ language reference
+          href: ../cpp/cpp-language-reference.md
+        - name: C/C++ preprocessor reference
+          href: ../preprocessor/c-cpp-preprocessor-reference.md
+        - name: Compiler intrinsics and assembly language
+          href: ../intrinsics/compiler-intrinsics-and-assembly-language.md
+        - name: Compiler intrinsics
+          href: ../intrinsics/compiler-intrinsics.md
+        - name: ARM Assembler reference
+          href: ../assembler/arm/arm-assembler-reference.md
+        - name: Inline assembly in MSVC
+          href: ../assembler/inline/inline-assembler.md
+        - name: Microsoft Macro Assembler (MASM) reference
+          href: ../assembler/masm/microsoft-macro-assembler-reference.md
+        - name: Component extensions for .NET and UWP
+          href: ../extensions/component-extensions-for-runtime-platforms.md
+        - name: C++ Attributes for COM and .NET
+          href: ../windows/attributes/cpp-attributes-com-net.md
+    - name: Libraries reference
+      expanded: false
+      items: 
+        - name: Libraries
+          href: ../overview/libraries-cpp.md
+        - name: C Run-time library (CRT) reference
+          href: ../c-runtime-library/
+        - name: C++ Standard Library reference
+          href: ../standard-library/
+        - name: SafeInt library
+          expanded: false
+          items: 
+            - name: SafeInt library
+              href: ../safeint/safeint-library.md
+            - name: SafeInt Class
+              href: ../safeint/safeint-class.md
+            - name: SafeInt Functions
+              href: ../safeint/safeint-functions.md
+            - name: SafeIntException Class
+              href: ../safeint/safeintexception-class.md
+        - name: MFC/ATL
+          href: ../mfc/mfc-and-atl.md
+        - name: Parallel libraries
+          href: ../parallel/
+        - name: Data access libraries
+          href: ../data/

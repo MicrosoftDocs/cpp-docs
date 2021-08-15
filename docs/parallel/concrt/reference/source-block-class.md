@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: source_block Class"
 title: "source_block Class"
 ms.date: "11/04/2016"
 f1_keywords: ["source_block", "AGENTS/concurrency::source_block", "AGENTS/concurrency::source_block::source_block", "AGENTS/concurrency::source_block::accept", "AGENTS/concurrency::source_block::acquire_ref", "AGENTS/concurrency::source_block::consume", "AGENTS/concurrency::source_block::link_target", "AGENTS/concurrency::source_block::release", "AGENTS/concurrency::source_block::release_ref", "AGENTS/concurrency::source_block::reserve", "AGENTS/concurrency::source_block::unlink_target", "AGENTS/concurrency::source_block::unlink_targets", "AGENTS/concurrency::source_block::accept_message", "AGENTS/concurrency::source_block::async_send", "AGENTS/concurrency::source_block::consume_message", "AGENTS/concurrency::source_block::enable_batched_processing", "AGENTS/concurrency::source_block::initialize_source", "AGENTS/concurrency::source_block::link_target_notification", "AGENTS/concurrency::source_block::process_input_messages", "AGENTS/concurrency::source_block::propagate_output_messages", "AGENTS/concurrency::source_block::propagate_to_any_targets", "AGENTS/concurrency::source_block::release_message", "AGENTS/concurrency::source_block::remove_targets", "AGENTS/concurrency::source_block::reserve_message", "AGENTS/concurrency::source_block::resume_propagation", "AGENTS/concurrency::source_block::sync_send", "AGENTS/concurrency::source_block::unlink_target_notification", "AGENTS/concurrency::source_block::wait_for_outstanding_async_sends"]
@@ -192,7 +193,7 @@ The method throws an [invalid_argument](../../../standard-library/invalid-argume
 
 The method throws a [bad_target](bad-target-class.md) exception if the parameter `_PTarget` does not represent the target that called `reserve`.
 
-The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned **true**.
+The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned **`true`**.
 
 ## <a name="consume_message"></a> consume_message
 
@@ -382,7 +383,7 @@ A pointer to the target block that is calling the `reserve` method.
 
 ### Return Value
 
-**true** if the message was successfully reserved, **false** otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.
+**`true`** if the message was successfully reserved, **`false`** otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.
 
 ### Remarks
 
@@ -405,11 +406,11 @@ The `runtime_object_identity` of the `message` object being reserved.
 
 ### Return Value
 
-**true** if the message was successfully reserved, **false** otherwise.
+**`true`** if the message was successfully reserved, **`false`** otherwise.
 
 ### Remarks
 
-After `reserve` is called, if it returns **true**, either `consume` or `release` must be called to either take or release ownership of the message.
+After `reserve` is called, if it returns **`true`**, either `consume` or `release` must be called to either take or release ownership of the message.
 
 ## <a name="resume_propagation"></a> resume_propagation
 

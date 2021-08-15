@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mm_stream_ss"
 title: "_mm_stream_ss"
 ms.date: "09/02/2019"
 f1_keywords: ["_mm_stream_ss"]
@@ -26,7 +27,7 @@ void _mm_stream_ss(
 [out] A pointer to the location where the source data is written.
 
 *Source*\
-[in] A 128-bit number that contains the `float` value to be written in its bottom 32 bits.
+[in] A 128-bit number that contains the **`float`** value to be written in its bottom 32 bits.
 
 ## Return value
 

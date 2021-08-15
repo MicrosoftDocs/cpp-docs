@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tree Control Item Position"
 title: "Tree Control Item Position"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CTreeCtrl class [MFC], item position", "item position in tree controls", "tree controls [MFC], item position", "position, CTreeCtrl items"]

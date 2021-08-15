@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3465"
 title: "Compiler Error C3465"
 ms.date: "11/04/2016"
 f1_keywords: ["C3465"]
@@ -13,7 +14,7 @@ Type forwarding will work for a client application until you recompile the clien
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Example
+## Examples
 
 The following sample builds an assembly that contains the new location of a type.
 
@@ -26,8 +27,6 @@ public:
 };
 ```
 
-## Example
-
 The following sample builds an assembly that used to contain the definition of the type, but now contains forwarding syntax for the type.
 
 ```cpp
@@ -36,8 +35,6 @@ The following sample builds an assembly that used to contain the definition of t
 #using "C3465.dll"
 [ assembly:TypeForwardedTo(R::typeid) ];
 ```
-
-## Example
 
 The following sample generates C3465.
 

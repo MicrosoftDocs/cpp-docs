@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Path functions"
 title: "ATL Path functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL, path"]
@@ -11,13 +12,13 @@ ATL provides the ATLPath class for manipulating paths in the form of [CPathT](cp
 
 ## Related Classes
 
-|||
+|Class|Description|
 |-|-|
 |[CPathT Class](cpatht-class.md)|This class represents a path.|
 
 ## Related Typedefs
 
-|||
+|Typedef|Description|
 |-|-|
 |`CPath`|A specialization of [CPathT](cpatht-class.md) using `CString`.|
 |`CPathA`|A specialization of [CPathT](cpatht-class.md) using `CStringA`.|
@@ -25,7 +26,7 @@ ATL provides the ATLPath class for manipulating paths in the form of [CPathT](cp
 
 ## Functions
 
-|||
+|Function|Description|
 |-|-|
 |[ATLPath::AddBackslash](#addbackslash)|This function is an overloaded wrapper for [PathAddBackslash](/windows/win32/api/shlwapi/nf-shlwapi-pathaddbackslashw).|
 |[ATLPath::AddExtension](#addextension)|This function is an overloaded wrapper for [PathAddExtension](/windows/win32/api/shlwapi/nf-shlwapi-pathaddextensionw).|

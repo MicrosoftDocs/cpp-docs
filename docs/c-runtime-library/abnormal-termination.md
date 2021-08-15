@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _abnormal_termination"
 title: "_abnormal_termination"
 ms.date: "11/04/2016"
 api_name: ["_abnormal_termination"]
@@ -11,7 +12,7 @@ ms.assetid: 952970a4-9586-4c3d-807a-db729448c91c
 ---
 # _abnormal_termination
 
-Indicates whether the `__finally` block of a [try-finally statement](../cpp/try-finally-statement.md) is entered while the system is executing an internal list of termination handlers.
+Indicates whether the **`__finally`** block of a [try-finally statement](../cpp/try-finally-statement.md) is entered while the system is executing an internal list of termination handlers.
 
 ## Syntax
 
@@ -22,7 +23,7 @@ int   _abnormal_termination(
 
 ## Return Value
 
-**true** if the system is *unwinding* the stack; otherwise, **false**.
+**`true`** if the system is *unwinding* the stack; otherwise, **`false`**.
 
 ## Remarks
 

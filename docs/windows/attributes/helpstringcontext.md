@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: helpstringcontext"
 title: "helpstringcontext (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.helpstringcontext"]
@@ -42,11 +43,9 @@ __interface IMyI
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **interface**, interface method|
+|**Applies to**|**`class`**, **interface**, interface method|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

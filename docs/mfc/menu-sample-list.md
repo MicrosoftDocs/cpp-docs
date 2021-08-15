@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Menu Sample List"
 title: "Menu Sample List"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sample applications [MFC], menus"]
@@ -18,4 +19,4 @@ See the following sample programs that illustrate creating, editing, and updatin
 
 ## See also
 
-[Menus](../mfc/menus-mfc.md)
+[Menus](menus-mfc.md)

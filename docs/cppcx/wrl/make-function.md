@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Make Function"
 title: "Make Function"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -215,7 +216,7 @@ Argument 9 that is passed to the specified runtime class.
 
 ## Return Value
 
-A `ComPtr<T>` object if successful; otherwise, `nullptr`.
+A `ComPtr<T>` object if successful; otherwise, **`nullptr`**.
 
 ## Remarks
 

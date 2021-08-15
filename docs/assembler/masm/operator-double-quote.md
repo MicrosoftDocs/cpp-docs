@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator &quot; &quot;"
 title: "operator &quot; &quot;"
 ms.date: "12/17/2019"
 f1_keywords: ["&#34; &#34;", "operator &#34; &#34;"]

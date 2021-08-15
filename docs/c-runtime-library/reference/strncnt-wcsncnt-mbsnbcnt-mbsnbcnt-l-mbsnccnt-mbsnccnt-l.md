@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l"
 title: "_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l"
 ms.date: "4/2/2020"
 api_name: ["_mbsnbcnt_l", "_mbsnccnt", "_wcsncnt", "_strncnt", "_mbsnccnt_l", "_mbsnbcnt", "_o__mbsnbcnt", "_o__mbsnbcnt_l", "_o__mbsnccnt", "_o__mbsnccnt_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_mbsnbcnt", "wcsncnt", "_tcsnbcnt", "_mbsnccnt", "_ftcsnbcnt", "mbsnbcnt", "strncnt", "mbsnbcnt_l", "mbsnccnt_l", "mbsnccnt", "_strncnt", "_wcsncnt"]
@@ -60,7 +61,7 @@ Locale to use.
 
 ## Return Value
 
-**_mbsnbcnt** and **_mbsnbcnt_l** return the number of bytes found in the first *count* of multibyte characters of *str*. **_mbsnccnt** and **_mbsnccnt_l** return the number of characters found in the first *count* of bytes of *str*. If a null character is encountered before the examination of *str* has completed, they return the number of bytes or characters found before the null character. If *str* consists of fewer than *count* characters or bytes, they return the number of characters or bytes in the string. If *count* is less than zero, they return 0. In previous versions, these functions had a return value of type **int** rather than **size_t**.
+**_mbsnbcnt** and **_mbsnbcnt_l** return the number of bytes found in the first *count* of multibyte characters of *str*. **_mbsnccnt** and **_mbsnccnt_l** return the number of characters found in the first *count* of bytes of *str*. If a null character is encountered before the examination of *str* has completed, they return the number of bytes or characters found before the null character. If *str* consists of fewer than *count* characters or bytes, they return the number of characters or bytes in the string. If *count* is less than zero, they return 0. In previous versions, these functions had a return value of type **`int`** rather than **size_t**.
 
 **_strncnt** returns the number of characters in the first *count* bytes of the single-byte string *str*. **_wcsncnt** returns the number of characters in the first *count* wide characters of the wide-character string *str*.
 

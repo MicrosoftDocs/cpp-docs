@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: integral_constant Class, bool_constant Class"
 title: "integral_constant Class, bool_constant Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::integral_constant", "XTR1COMMON/std::integral_constant", "type_traits/std::bool_constant", "XTR1COMMON/std::bool_constant"]
@@ -34,7 +35,7 @@ The value of the constant.
 
 The `integral_constant` class template, when specialized with an integral type *T* and a value *v* of that type, represents an object that holds a constant of that integral type with the specified value. The member named `type` is an alias for the generated template specialization type, and the `value` member holds the value *v* used to create the specialization.
 
-The `bool_constant` class template is an explicit partial specialization of `integral_constant` that uses **bool** as the *T* argument.
+The `bool_constant` class template is an explicit partial specialization of `integral_constant` that uses **`bool`** as the *T* argument.
 
 ## Example
 

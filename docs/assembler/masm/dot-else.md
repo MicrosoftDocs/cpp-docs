@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .ELSE (32-bit MASM)"
 title: ".ELSE"
 ms.date: "11/05/2019"
 f1_keywords: [".ELSE"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Boolean value class"
 title: "Platform::Boolean value class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
@@ -8,7 +9,7 @@ ms.assetid: 8518a1db-7139-4187-9c7a-1ae3943373f2
 ---
 # Platform::Boolean value class
 
-Represents a Boolean value. The equivalent of `bool`.
+Represents a Boolean value. The equivalent of **`bool`**.
 
 ## Syntax
 

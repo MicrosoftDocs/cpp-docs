@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Error LNK1318"
 title: "Linker Tools Error LNK1318"
 ms.date: "05/29/2018"
 f1_keywords: ["LNK1318"]
@@ -16,7 +17,7 @@ Because the source of the error is uncommon, there is only generic advice availa
 
 - Perform a clean operation in your build directories, and then do a full build of your solution.
 
-- Reboot your computer, or check for stray or hung mspdbsrv.exe processes and kill them in TaskManager.
+- Reboot your computer, or check for stray or unresponsive mspdbsrv.exe processes and kill them in TaskManager.
 
 - Turn off antivirus checks in your project directories.
 

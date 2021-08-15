@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: error_category Class"
 title: "error_category Class"
 ms.date: "11/04/2016"
 f1_keywords: ["system_error/std::error_category", "system_error/std::error_category::value_type", "system_error/std::error_category::default_error_condition", "system_error/std::error_category::equivalent", "system_error/std::error_category::message", "system_error/std::error_category::name"]
@@ -27,13 +28,13 @@ Two predefined objects implement `error_category`: [generic_category](../standar
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[value_type](#value_type)|A type that represents the stored error code value.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[default_error_condition](#default_error_condition)|Stores the error code value for an error condition object.|
 |[equivalent](#equivalent)|Returns a value that specifies whether error objects are equivalent.|
@@ -44,9 +45,9 @@ Two predefined objects implement `error_category`: [generic_category](../standar
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
-|[operator=](#op_as)||
+|[operator=](#op_as)|Assignment operator.|
 |[operator==](#op_eq_eq)|Tests for equality between `error_category` objects.|
 |[operator!=](#op_neq)|Tests for inequality between `error_category` objects.|
 |[operator<](#op_lt)|Tests if the [error_category](../standard-library/error-category-class.md) object is less than the `error_category` object passed in for comparison.|
@@ -61,7 +62,7 @@ virtual error_condition default_error_condition(int _Errval) const;
 
 ### Parameters
 
-*_Errval*\
+`_Errval`\
 The error code value to store in the [error_condition](../standard-library/error-condition-class.md).
 
 ### Return Value
@@ -95,7 +96,7 @@ The [error_code](../standard-library/error-code-class.md) object to compare.
 
 #### Return Value
 
-**true** if the category and value are equal; otherwise, **false**.
+**`true`** if the category and value are equal; otherwise, **`false`**.
 
 #### Remarks
 
@@ -124,7 +125,7 @@ The error code value to describe.
 
 #### Return Value
 
-Returns a descriptive name of the error code *val* for the category.
+Returns a descriptive name of the error code *val* for the category. If the error code is unrecognized, returns `"unknown error"`.
 
 #### Remarks
 
@@ -161,7 +162,7 @@ The object to be tested for equality.
 
 #### Return Value
 
-**true** if the objects are equal; **false** if the objects are not equal.
+**`true`** if the objects are equal; **`false`** if the objects are not equal.
 
 #### Remarks
 
@@ -182,7 +183,7 @@ The object to be tested for inequality.
 
 #### Return Value
 
-**true** if the `error_category` object is not equal to the `error_category` object passed in *right*; otherwise **false**.
+**`true`** if the `error_category` object is not equal to the `error_category` object passed in *right*; otherwise **`false`**.
 
 #### Remarks
 
@@ -203,7 +204,7 @@ The `error_category` object to be compared.
 
 #### Return Value
 
-**true** if the `error_category` object is less than the `error_category` object passed in for comparison; Otherwise, **false**.
+**`true`** if the `error_category` object is less than the `error_category` object passed in for comparison; Otherwise, **`false`**.
 
 #### Remarks
 
@@ -225,4 +226,4 @@ typedef int value_type;
 
 #### Remarks
 
-This type definition is a synonym for **int**.
+This type definition is a synonym for **`int`**.

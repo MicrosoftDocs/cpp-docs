@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDatabase Class"
 title: "CDatabase Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDatabase", "AFXDB/CDatabase", "AFXDB/CDatabase::CDatabase", "AFXDB/CDatabase::BeginTrans", "AFXDB/CDatabase::BindParameters", "AFXDB/CDatabase::Cancel", "AFXDB/CDatabase::CanTransact", "AFXDB/CDatabase::CanUpdate", "AFXDB/CDatabase::Close", "AFXDB/CDatabase::CommitTrans", "AFXDB/CDatabase::ExecuteSQL", "AFXDB/CDatabase::GetBookmarkPersistence", "AFXDB/CDatabase::GetConnect", "AFXDB/CDatabase::GetCursorCommitBehavior", "AFXDB/CDatabase::GetCursorRollbackBehavior", "AFXDB/CDatabase::GetDatabaseName", "AFXDB/CDatabase::IsOpen", "AFXDB/CDatabase::OnSetOptions", "AFXDB/CDatabase::Open", "AFXDB/CDatabase::OpenEx", "AFXDB/CDatabase::Rollback", "AFXDB/CDatabase::SetLoginTimeout", "AFXDB/CDatabase::SetQueryTimeout", "AFXDB/CDatabase::m_hdbc"]
@@ -301,7 +302,7 @@ const CString GetConnect() const;
 
 ### Return Value
 
-A **const**[CString](../../atl-mfc-shared/reference/cstringt-class.md) containing the connection string if `OpenEx` or `Open` has been called; otherwise, an empty string.
+A **`const`**[CString](../../atl-mfc-shared/reference/cstringt-class.md) containing the connection string if `OpenEx` or `Open` has been called; otherwise, an empty string.
 
 ### Remarks
 
@@ -391,7 +392,7 @@ Contains a public handle to an ODBC data source connection — a "connection han
 
 ### Remarks
 
-Normally, you will have no need to access this member variable directly. Instead, the framework allocates the handle when you call `OpenEx` or `Open`. The framework deallocates the handle when you call the **delete** operator on the `CDatabase` object. Note that the `Close` member function does not deallocate the handle.
+Normally, you will have no need to access this member variable directly. Instead, the framework allocates the handle when you call `OpenEx` or `Open`. The framework deallocates the handle when you call the **`delete`** operator on the `CDatabase` object. Note that the `Close` member function does not deallocate the handle.
 
 Under some circumstances, however, you may need to use the handle directly. For example, if you need to call ODBC API functions directly rather than through class `CDatabase`, you may need a connection handle to pass as a parameter. See the code example below.
 

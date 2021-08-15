@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Command Routing Illustration"
 title: "Command Routing Illustration"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, command routing", "command handling [MFC], routing commands", "command routing [MFC], OnCmdMsg handler"]
@@ -22,4 +23,4 @@ If the document did not have a handler, it would next route the command to its d
 
 ## See also
 
-[How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
+[How the Framework Calls a Handler](how-the-framework-calls-a-handler.md)

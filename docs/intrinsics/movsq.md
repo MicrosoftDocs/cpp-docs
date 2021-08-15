@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __movsq"
 title: "__movsq"
 ms.date: "09/02/2019"
 f1_keywords: ["__movsq"]
@@ -15,8 +16,8 @@ Generates a repeated Move String (`rep movsq`) instruction.
 
 ```C
 void __movsq(
-   unsigned char* Destination,
-   unsigned char* Source,
+   unsigned long long* Destination,
+   unsigned long long const* Source,
    size_t Count
 );
 ```

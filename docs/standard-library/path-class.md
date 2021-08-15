@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: path Class"
 title: "path Class"
 ms.date: "09/27/2018"
 f1_keywords: ["filesystem/std::experimental::filesystem::path"]
@@ -6,7 +7,7 @@ ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
 ---
 # path Class
 
-The **path** class stores an object of type `string_type`, called `myname` here for the purposes of exposition, suitable for use as a pathname. `string_type` is a synonym for `basic_string<value_type>`, where `value_type` is a synonym for **wchar_t** on Windows or **char** on POSIX.
+The **path** class stores an object of type `string_type`, called `myname` here for the purposes of exposition, suitable for use as a pathname. `string_type` is a synonym for `basic_string<value_type>`, where `value_type` is a synonym for **`wchar_t`** on Windows or **`char`** on POSIX.
 
 For more information, and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
 
@@ -44,7 +45,7 @@ class path;
 |[empty](#empty)|Returns `mypath.empty()`.|
 |[end](#end)|Returns an end-of-sequence iterator of type `iterator`.|
 |[extension](#extension)|Returns the suffix of `filename()`.|
-|[filename](#filename)|Returns the root directory component of myname, specifically `empty() path() : *--end()`. The component may be empty.|
+|[filename](#filename)|Returns the root directory component of myname, specifically `empty() ? path() : *--end()`. The component may be empty.|
 |[generic_string](#generic_string)|Returns `this->string<Elem, Traits, Alloc>(al)` with (under Windows) any backslash converted to a forward slash.|
 |[generic_u16string](#generic_u16string)|Returns `u16string()` with (under Windows) any backslash converted to a forward slash.|
 |[generic_u32string](#generic_u32string)|Returns `u32string()` with (under Windows) any backslash converted to a forward slash.|
@@ -78,7 +79,7 @@ class path;
 |[u32string](#u32string)|Converts the sequence stored in `mypath` to UTF-32 and returns it stored in an object of type `u32string`.|
 |[u8string](#u8string)|Converts the sequence stored in `mypath` to UTF-8 and returns it stored in an object of type `u8string`.|
 |[value_type](#value_type)|The type describes the path elements favored by the host operating system.|
-|[wstring](#wstring)|Converts the sequence stored in `mypath` to the encoding favored by the host system for a `wchar_t` sequence and returns it stored in an object of type `wstring`.|
+|[wstring](#wstring)|Converts the sequence stored in `mypath` to the encoding favored by the host system for a **`wchar_t`** sequence and returns it stored in an object of type `wstring`.|
 
 ### Operators
 
@@ -766,7 +767,7 @@ The first (template) member function converts the sequence stored in `mypath` th
 
 1. `u32string()` for `string<char32_t, Traits, Alloc>()`
 
-The second member function converts the sequence stored in `mypath` to the encoding favored by the host system for a **char** sequence and returns it stored in an object of type `string`.
+The second member function converts the sequence stored in `mypath` to the encoding favored by the host system for a **`char`** sequence and returns it stored in an object of type `string`.
 
 ## <a name="string_type"></a> path::string_type
 
@@ -822,7 +823,7 @@ typedef char value_type;
 
 ## <a name="wstring"></a> path::wstring
 
-Converts the sequence stored in `mypath` to the encoding favored by the host system for a **wchar_t** sequence and returns it stored in an object of type `wstring`.
+Converts the sequence stored in `mypath` to the encoding favored by the host system for a **`wchar_t`** sequence and returns it stored in an object of type `wstring`.
 
 ```cpp
 wstring wstring() const;

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;filesystem&gt; functions"
 title: "&lt;filesystem&gt; functions"
 ms.date: "03/27/2019"
 f1_keywords: ["FILESYSTEM/std::experimental::filesystem::absolute", "FILESYSTEM/std::experimental::filesystem::canonical", "FILESYSTEM/std::experimental::filesystem::copy", "FILESYSTEM/std::experimental::filesystem::copy_file", "FILESYSTEM/std::experimental::filesystem::copy_symlink", "FILESYSTEM/std::experimental::filesystem::create_directories", "FILESYSTEM/std::experimental::filesystem::create_directory", "FILESYSTEM/std::experimental::filesystem::create_directory_symlink", "FILESYSTEM/std::experimental::filesystem::create_hard_link", "FILESYSTEM/std::experimental::filesystem::create_symlink", "FILESYSTEM/std::experimental::filesystem::current_path", "FILESYSTEM/std::experimental::filesystem::equivalent", "FILESYSTEM/std::experimental::filesystem::exists", "FILESYSTEM/std::experimental::filesystem::file_size", "FILESYSTEM/std::experimental::filesystem::hard_link_count", "FILESYSTEM/std::experimental::filesystem::hash_value", "FILESYSTEM/std::experimental::filesystem::is_block_file", "FILESYSTEM/std::experimental::filesystem::is_character_file", "FILESYSTEM/std::experimental::filesystem::is_directory", "FILESYSTEM/std::experimental::filesystem::is_empty", "FILESYSTEM/std::experimental::filesystem::is_fifo", "FILESYSTEM/std::experimental::filesystem::is_other", "FILESYSTEM/std::experimental::filesystem::is_regular_file", "FILESYSTEM/std::experimental::filesystem::is_socket", "FILESYSTEM/std::experimental::filesystem::is_symlink", "FILESYSTEM/std::experimental::filesystem::last_write_time", "FILESYSTEM/std::experimental::filesystem::permissions", "FILESYSTEM/std::experimental::filesystem::read_symlink", "FILESYSTEM/std::experimental::filesystem::remove", "FILESYSTEM/std::experimental::filesystem::remove_all", "FILESYSTEM/std::experimental::filesystem::rename", "FILESYSTEM/std::experimental::filesystem::resize_file", "FILESYSTEM/std::experimental::filesystem::space", "FILESYSTEM/std::experimental::filesystem::status", "FILESYSTEM/std::experimental::filesystem::status_known", "FILESYSTEM/std::experimental::filesystem::swap", "FILESYSTEM/std::experimental::filesystem::symlink_status", "FILESYSTEM/std::experimental::filesystem::system_complete", "FILESYSTEM/std::experimental::filesystem::temp_directory_path", "FILESYSTEM/std::experimental::filesystem::u8path"]
@@ -45,7 +46,7 @@ path canonical(const path& pval, const path& base, error_code& ec);
 
 The functions all form an absolute pathname `pabs = absolute(pval, base)` (or `pabs = absolute(pval)` for the overload with no base parameter), then reduce it to a canonical form in the following sequence of steps:
 
-1. Every path component `X` for which `is_symlink(X)` is **true** is replaced by `read_symlink(X)`.
+1. Every path component `X` for which `is_symlink(X)` is **`true`** is replaced by `read_symlink(X)`.
 
 1. Every path component `.` (dot is the current directory established by previous path components) is removed.
 
@@ -131,7 +132,7 @@ If `exists(to) && !(opts & (copy_options::skip_existing | copy_options::overwrit
 
 Otherwise, if `!exists(to) || opts & copy_options::overwrite_existing || opts & copy_options::update_existing&& last_write_time(to) < last_write_time(from) || !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options:update_existing))`, then attempt to copy the contents and attributes of the file *from* to the file *to*. Report as an error if the copy attempt fails.
 
-The functions return **true** if the copy is attempted and succeeds, otherwise **false**.
+The functions return **`true`** if the copy is attempted and succeeds, otherwise **`false`**.
 
 ## <a name="copy_symlink"></a> copy_symlink
 
@@ -149,7 +150,7 @@ bool create_directories(const path& pval);
 bool create_directories(const path& pval, error_code& ec) noexcept;
 ```
 
-For a pathname such as a\/b\/c, the function creates directories a and a\/b as needed so that it can create the directory a\/b\/c as needed. It returns **true** only if it actually creates the directory *pval*.
+For a pathname such as a\/b\/c, the function creates directories a and a\/b as needed so that it can create the directory a\/b\/c as needed. It returns **`true`** only if it actually creates the directory *pval*.
 
 ## <a name="create_directory"></a> create_directory
 
@@ -218,7 +219,7 @@ bool equivalent(const path& left, const path& right);
 bool equivalent(const path& left, const path& right, error_code& ec) noexcept;
 ```
 
-The functions return **true** only if *left* and *right* choose the same filesystem entity.
+The functions return **`true`** only if *left* and *right* choose the same filesystem entity.
 
 ## <a name="exists"></a> exists
 
@@ -400,7 +401,7 @@ bool remove(const path& pval);
 bool remove(const path& pval, error_code& ec) noexcept;
 ```
 
-The functions return **true** only if `exists(symlink_status(pval))` and the file is successfully removed. A symlink is itself removed, not the file it chooses.
+The functions return **`true`** only if `exists(symlink_status(pval))` and the file is successfully removed. A symlink is itself removed, not the file it chooses.
 
 ## <a name="remove_all"></a> remove_all
 
@@ -467,7 +468,7 @@ The function exchanges the contents of *left* and *right*.
 
 ```cpp
 file_status symlink_status(const path& pval);
-file_status symlink_status(const path& pval, erroxr_code& ec) noexcept;
+file_status symlink_status(const path& pval, error_code& ec) noexcept;
 ```
 
 The functions return the pathname symlink status, the file type, and permissions, associated with *pval*. The functions behave the same as `status(pval)` except that a symlink is itself tested, not the file it chooses.

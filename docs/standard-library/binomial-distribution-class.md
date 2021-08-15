@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: binomial_distribution Class"
 title: "binomial_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::binomial_distribution", "random/std::binomial_distribution::reset", "random/std::binomial_distribution::p", "random/std::binomial_distribution::t", "random/std::binomial_distribution::param", "random/std::binomial_distribution::min", "random/std::binomial_distribution::max", "random/std::binomial_distribution::operator()", "random/std::binomial_distribution::param_type", "random/std::binomial_distribution::param_type::p", "random/std::binomial_distribution::param_type::t", "random/std::binomial_distribution::param_type::operator==", "random/std::binomial_distribution::param_type::operator!="]
@@ -44,19 +45,17 @@ public:
 ### Parameters
 
 *IntType*\
-The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
+The integer result type, defaults to **`int`**. For possible types, see [\<random>](../standard-library/random.md).
 
 *URNG*\
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
-The class template describes a distribution that produces values of a user-specified integral type, or type **int** if none is provided, distributed according to the Binomial Distribution discrete probability function. The following table links to articles about individual members.
+The class template describes a distribution that produces values of a user-specified integral type, or type **`int`** if none is provided, distributed according to the Binomial Distribution discrete probability function. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[binomial_distribution](#binomial_distribution)|`binomial_distribution::t`|`binomial_distribution::param`|
-|`binomial_distribution::operator()`|`binomial_distribution::p`|[param_type](#param_type)|
+[binomial_distribution](#binomial_distribution)\
+[param_type](#param_type)
 
 The property members `t()` and `p()` return the currently stored distribution parameter values *t* and *p* respectively.
 

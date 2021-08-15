@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: weibull_distribution Class"
 title: "weibull_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::weibull_distribution", "random/std::weibull_distribution::reset", "random/std::weibull_distribution::a", "random/std::weibull_distribution::b", "random/std::weibull_distribution::param", "random/std::weibull_distribution::min", "random/std::weibull_distribution::max", "random/std::weibull_distribution::operator()", "random/std::weibull_distribution::param_type", "random/std::weibull_distribution::param_type::a", "random/std::weibull_distribution::param_type::b", "random/std::weibull_distribution::param_type::operator==", "random/std::weibull_distribution::param_type::operator!="]
@@ -43,16 +44,14 @@ class weibull_distribution
 ### Parameters
 
 *RealType*\
-The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
+The floating-point result type, defaults to **`double`**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
-The class template describes a distribution that produces values of a user-specified floating point type, or type **double** if none is provided, distributed according to the Weibull Distribution. The following table links to articles about individual members.
+The class template describes a distribution that produces values of a user-specified floating point type, or type **`double`** if none is provided, distributed according to the Weibull Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[weibull_distribution](#weibull_distribution)|`weibull_distribution::a`|`weibull_distribution::param`|
-|`weibull_distribution::operator()`|`weibull_distribution::b`|[param_type](#param_type)|
+[weibull_distribution](#weibull_distribution)\
+[param_type](#param_type)|
 
 The property functions `a()` and `b()` return their respective values for stored distribution parameters *a* and *b*.
 

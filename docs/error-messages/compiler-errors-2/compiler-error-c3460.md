@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3460"
 title: "Compiler Error C3460"
 ms.date: "11/04/2016"
 f1_keywords: ["C3460"]
@@ -11,7 +12,7 @@ ms.assetid: adbf8775-10ca-4654-acdf-58dd765351cd
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Example
+## Examples
 
 The following sample creates a component.
 
@@ -20,8 +21,6 @@ The following sample creates a component.
 // compile with: /LD /clr
 public ref class R {};
 ```
-
-## Example
 
 The following sample generates C3460.
 

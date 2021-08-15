@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Display Command Information in the Status Bar"
 title: "How to: Display Command Information in the Status Bar"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["prompts [MFC]", "displaying command status [MFC]", "status bars [MFC], message area", "status bars [MFC], displaying command information"]
@@ -14,4 +15,4 @@ By default, the Application Wizard adds **AFX_IDS_IDLEMESSAGE**, the ID for a st
 
 ## See also
 
-[Message Handling and Mapping](../mfc/message-handling-and-mapping.md)
+[Message Handling and Mapping](message-handling-and-mapping.md)

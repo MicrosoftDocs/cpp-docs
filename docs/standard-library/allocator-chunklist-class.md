@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: allocator_chunklist Class"
 title: "allocator_chunklist Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::allocator_chunklist", "allocators/stdext::allocators::allocator_chunklist"]
@@ -7,7 +8,7 @@ ms.assetid: ea72ed0a-dfdb-4c8b-8096-e4baf567b80f
 ---
 # allocator_chunklist Class
 
-Describes an object that manages storage allocation and freeing for objects using a cache of type [cache_chunklist](../standard-library/cache-chunklist-class.md).
+Describes an object that manages storage allocation and freeing for objects using a cache of type [cache_chunklist](cache-chunklist-class.md).
 
 ## Syntax
 
@@ -18,13 +19,12 @@ class allocator_chunklist;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Type*|The type of elements allocated by the allocator.|
+*Type*\
+The type of elements allocated by the allocator.
 
 ## Remarks
 
-The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the *name* parameter in the following statement: `ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist);`
+The [ALLOCATOR_DECL](allocators-functions.md#allocator_decl) macro passes this class as the *name* parameter in the following statement: `ALLOCATOR_DECL(CACHE_CHUNKLIST, SYNC_DEFAULT, allocator_chunklist);`
 
 ## Requirements
 
@@ -34,4 +34,4 @@ The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)
+[\<allocators>](allocators-header.md)

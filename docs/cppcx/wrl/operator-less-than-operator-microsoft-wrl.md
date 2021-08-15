@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator&lt; Operator (Microsoft::WRL)"
 title: "operator&lt; Operator (Microsoft::WRL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -28,7 +29,7 @@ The right object.
 
 ## Return Value
 
-**true** if the address of *a* is less than the address of *b*; otherwise, **false**.
+**`true`** if the address of *a* is less than the address of *b*; otherwise, **`false`**.
 
 ## Requirements
 

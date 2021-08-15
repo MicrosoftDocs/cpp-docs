@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating an MFC Application"
 title: "Creating an MFC Application"
 ms.date: "08/28/2019"
 helpviewer_keywords: ["applications [MFC]", "MFC, creating applications", "MFC applications"]
@@ -22,7 +23,7 @@ The MFC Application Wizard generates the appropriate classes and files for any o
 
 The easiest way to create an MFC application is to use the MFC Application Wizard (**MFC App project** in Visual Studio 2019). To create an MFC console application (a command-line program that uses MFC libraries but runs in the console window), use the Windows Desktop Wizard and choose the **Console Application** and **MFC Headers** options.
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 ## To create an MFC forms or dialog-based application
 
@@ -33,7 +34,7 @@ The easiest way to create an MFC application is to use the MFC Application Wizar
 
 For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
 
-![MFC Application Wizard](media/mfc-app-wizard.png)
+![Screenshot of the MFC Application wizard in Visual Studios 2019.](media/mfc-app-wizard.png)
 
 ## To create an MFC console application
 
@@ -44,11 +45,11 @@ An MFC console application is a command-line program that uses MFC libraries but
 1. Modify the project name as needed, then press **Next** to open the **Windows Desktop Wizard**.
 1. Check the **MFC Headers** box and set other values as needed, then press **Finish**.
 
-![MFC Application Wizard](media/windows-desktop-wizard.png)
+![Screenshot of the Windows Desktop wizard in Visual Studios 2019.](media/windows-desktop-wizard.png)
 
 ::: moniker-end
 
-::: moniker range="=vs-2017"
+::: moniker range="=msvc-150"
 
 ## To create an MFC forms or dialog-based application
 
@@ -59,7 +60,7 @@ An MFC console application is a command-line program that uses MFC libraries but
 
 For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
 
-![MFC Application Wizard](media/mfc-app-wizard.png)
+![Screenshot of the MFC Application wizard in Visual Studios 2017.](media/mfc-app-wizard.png)
 
 ## To create an MFC console application
 
@@ -71,11 +72,11 @@ An MFC console application is a command-line program that uses MFC libraries but
 1. Modify the project name as needed, then press **OK** to open the **Windows Desktop Wizard**.
 1. Check the **MFC Headers** box and set other values as needed, then press **Finish**.
 
-![MFC Application Wizard](media/windows-desktop-wizard-2017.png)
+![Screenshot of the Windows Desktop wizard in Visual Studios 2017.](media/windows-desktop-wizard-2017.png)
 
 ::: moniker-end
 
-::: moniker range="=vs-2015"
+::: moniker range="=msvc-140"
 
 ## To create an MFC forms or dialog-based application
 
@@ -86,7 +87,7 @@ An MFC console application is a command-line program that uses MFC libraries but
 
 For more information, see [Creating a Forms-Based MFC Application](creating-a-forms-based-mfc-application.md).
 
-![MFC Application Wizard](media/mfc-app-wizard-2015.png)
+![Screenshot of the MFC Application wizard in Visual Studios 2015.](media/mfc-app-wizard-2015.png)
 
 ## To create an MFC console application
 

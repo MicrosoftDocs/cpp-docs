@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: coclass"
 title: "coclass (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.coclass"]
@@ -119,11 +120,9 @@ public:
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

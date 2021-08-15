@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inheritance  (C++)"
 title: "Inheritance  (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["derived classes [C++]", "derived classes [C++], about derived classes", "classes [C++], derived"]
@@ -24,9 +25,9 @@ class Derived : [virtual] [access-specifier] Base1,
 };
 ```
 
-After the tag (name) for the class, a colon appears followed by a list of base specifications.  The base classes so named must have been declared previously.  The base specifications may contain an access specifier, which is one of the keywords **public**, **protected** or **private**.  These access specifiers appear before the base class name and apply only to that base class.  These specifiers control the derived class's permission to use to members of the base class.  See [Member-Access Control](../cpp/member-access-control-cpp.md) for information on access to base class members.  If the access specifier is omitted, the access to that base is considered **private**.  The base specifications may contain the keyword **virtual** to indicate virtual inheritance.  This keyword may appear before or after the access specifier, if any.  If virtual inheritance is used, the base class is referred to as a virtual base class.
+After the tag (name) for the class, a colon appears followed by a list of base specifications.  The base classes so named must have been declared previously.  The base specifications may contain an access specifier, which is one of the keywords **`public`**, **`protected`** or **`private`**.  These access specifiers appear before the base class name and apply only to that base class.  These specifiers control the derived class's permission to use to members of the base class.  See [Member-Access Control](../cpp/member-access-control-cpp.md) for information on access to base class members.  If the access specifier is omitted, the access to that base is considered **`private`**.  The base specifications may contain the keyword **`virtual`** to indicate virtual inheritance.  This keyword may appear before or after the access specifier, if any.  If virtual inheritance is used, the base class is referred to as a virtual base class.
 
-Multiple base classes can be specified, separated by commas.  If a single base class is specified, the inheritance model is [Single inheritance](../cpp/single-inheritance.md).If more than one base class is specified, the inheritance model is called [Multiple inheritance](../cpp/multiple-base-classes.md).
+Multiple base classes can be specified, separated by commas.  If a single base class is specified, the inheritance model is [Single inheritance](../cpp/single-inheritance.md). If more than one base class is specified, the inheritance model is called [Multiple inheritance](../cpp/multiple-base-classes.md).
 
 The following topics are included:
 

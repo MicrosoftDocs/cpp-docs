@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Working with Projects and Solutions (C++)"
 title: "Walkthrough: Working with Projects and Solutions (C++)"
 ms.date: "05/14/2019"
 helpviewer_keywords: ["solutions [C++]", "projects [C++], about projects", "projects [C++]", "solutions [C++], about solutions"]
@@ -20,7 +21,7 @@ It helps if you understand the fundamentals of the C++ language, and know what a
 
 To create a project, first choose a project-type template. For each project type, Visual Studio sets compiler settings and—depending on the type—generates starter code that you can modify later. The following steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create a project in Visual Studio 2019
 
@@ -40,7 +41,7 @@ To create a project, first choose a project-type template. For each project type
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ### To create a project in Visual Studio 2017
 
@@ -62,7 +63,7 @@ To create a project, first choose a project-type template. For each project type
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ### To create a project in Visual Studio 2015
 
@@ -114,7 +115,7 @@ This part of the walkthrough shows how to add a class to the project. When you a
 
       `Cardgame();`
 
-      Modify the constructor to take one parameter of type `int`, named *players*.
+      Modify the constructor to take one parameter of type **`int`**, named *players*.
 
       <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]-->
       `Cardgame(int players);`

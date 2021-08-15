@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: sub_match Class"
 title: "sub_match Class"
 ms.date: "09/10/2018"
 f1_keywords: ["regex/std::sub_match", "regex/std::sub_match::matched", "regex/std::sub_match::compare", "regex/std::sub_match::length", "regex/std::sub_match::str", "regex/std::sub_match::difference_type", "regex/std::sub_match::iterator", "regex/std::sub_match::value_type"]
@@ -194,7 +195,7 @@ bool matched;
 
 ### Remarks
 
-The member holds **true** only if the capture group associated with `*this` was part of the regular expression match.
+The member holds **`true`** only if the capture group associated with **`*this`** was part of the regular expression match.
 
 ## <a name="op_basic_string_lt_value_type_gt"></a> sub_match::operator basic_string&lt;value_type&gt;
 

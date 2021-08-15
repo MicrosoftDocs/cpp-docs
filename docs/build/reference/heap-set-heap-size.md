@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /HEAP (Set Heap Size)"
 title: "/HEAP (Set Heap Size)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.HeapCommitSize", "VC.Project.VCLinkerTool.HeapReserveSize"]
@@ -27,9 +28,7 @@ This functionality is also available via a module definition file with [HEAPSIZE
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **Linker** folder.
-
-1. Click the **System** property page.
+1. Select the **Configuration Properties** > **Linker** > **System** property page.
 
 1. Modify the **Heap Commit Size** property.
 

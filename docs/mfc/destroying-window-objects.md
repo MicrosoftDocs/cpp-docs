@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Destroying Window Objects"
 title: "Destroying Window Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["frame windows [MFC], destroying", "window objects [MFC], deleting", "window objects [MFC], destroying", "window objects [MFC], removing"]
@@ -10,16 +11,16 @@ Care must be taken with your own child windows to destroy the C++ window object 
 
 ## What do you want to know more about
 
-- [Window destruction sequence](../mfc/window-destruction-sequence.md)
+- [Window destruction sequence](window-destruction-sequence.md)
 
-- [Allocating and deallocating window memory](../mfc/allocating-and-deallocating-window-memory.md)
+- [Allocating and deallocating window memory](allocating-and-deallocating-window-memory.md)
 
-- [Detaching a CWnd from its HWND](../mfc/detaching-a-cwnd-from-its-hwnd.md)
+- [Detaching a CWnd from its HWND](detaching-a-cwnd-from-its-hwnd.md)
 
-- [General Window Creation Sequence](../mfc/general-window-creation-sequence.md)
+- [General Window Creation Sequence](general-window-creation-sequence.md)
 
-- [Destroying frame windows](../mfc/destroying-frame-windows.md)
+- [Destroying frame windows](destroying-frame-windows.md)
 
 ## See also
 
-[Window Objects](../mfc/window-objects.md)
+[Window Objects](window-objects.md)

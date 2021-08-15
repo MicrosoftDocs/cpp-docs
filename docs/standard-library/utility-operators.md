@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;utility&gt; operators"
 title: "&lt;utility&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["utility/std::operator!=", "utility/std::operator&gt;", "utility/std::operator&gt;=", "utility/std::operator&lt;", "utility/std::operator&lt;=", "utility/std::operator=="]
@@ -32,7 +33,7 @@ An object of type `pair`.
 
 ### Return Value
 
-**true** if the pairs are not equal; **false** if the pairs are equal.
+**`true`** if the pairs are not equal; **`false`** if the pairs are equal.
 
 ### Remarks
 
@@ -104,7 +105,7 @@ An object of type `pair`.
 
 ### Return Value
 
-**true** if the pairs are equal; **false** if the `pair`s are not equal.
+**`true`** if the pairs are equal; **`false`** if the `pair`s are not equal.
 
 ### Remarks
 
@@ -167,7 +168,7 @@ An object of type `pair` on the right side of the operator.
 
 ### Return Value
 
-**true** if the `pair` on the left side of the operator is strictly less than the `pair` on the right side of the operator; otherwise **false**.
+**`true`** if the `pair` on the left side of the operator is strictly less than the `pair` on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -244,7 +245,7 @@ An object of type `pair` on the right side of the operator.
 
 ### Return Value
 
-**true** if the `pair` on the left side of the operator is less than or equal to the `pair` on the right side of the operator; otherwise **false**.
+**`true`** if the `pair` on the left side of the operator is less than or equal to the `pair` on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -329,7 +330,7 @@ An object of type `pair` on the right side of the operator.
 
 ### Return Value
 
-**true** if the `pair` on the left side of the operator is strictly greater than the `pair` on the right side of the operator; otherwise **false**.
+**`true`** if the `pair` on the left side of the operator is strictly greater than the `pair` on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -416,7 +417,7 @@ An object of type `pair` on the right side of the operator.
 
 ### Return Value
 
-**true** if the `pair` on the left side of the operator is greater than or equal to the `pair` on the right side of the operator; otherwise **false**.
+**`true`** if the `pair` on the left side of the operator is greater than or equal to the `pair` on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 

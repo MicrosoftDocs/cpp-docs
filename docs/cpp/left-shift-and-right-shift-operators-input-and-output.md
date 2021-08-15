@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)"
 title: "Left Shift and Right Shift Operators (&gt;&gt; and &lt;&lt;)"
 ms.date: "08/13/2018"
 f1_keywords: ["<<", ">>"]
@@ -11,13 +12,13 @@ The bitwise shift operators are the right-shift operator (**&gt;&gt;**), which m
 
 ## Syntax
 
-> *shift-expression* `<<` *additive-expression*
+> *shift-expression* `<<` *additive-expression*\
 > *shift-expression* `>>` *additive-expression*
 
 ## Remarks
 
 > [!IMPORTANT]
-> The following descriptions and examples are valid on Windows for x86 and x64 architectures. The implementation of left-shift and right-shift operators is significantly different on Windows for ARM devices. For more information, see the "Shift Operators" section of the [Hello ARM](https://blogs.msdn.com/b/vcblog/archive/2012/10/25/hello-arm-exploring-undefined-unspecified-and-implementation-defined-behavior-in-c.aspx) blog post.
+> The following descriptions and examples are valid on Windows for x86 and x64 architectures. The implementation of left-shift and right-shift operators is significantly different on Windows for ARM devices. For more information, see the "Shift Operators" section of the [Hello ARM](https://devblogs.microsoft.com/cppblog/hello-arm-exploring-undefined-unspecified-and-implementation-defined-behavior-in-c/) blog post.
 
 ## Left Shifts
 
@@ -161,7 +162,7 @@ int main() {
 
 The expressions on both sides of a shift operator must be integral types. Integral promotions are performed according to the rules described in [Standard Conversions](standard-conversions.md). The type of the result is the same as the type of the promoted *shift-expression*.
 
-In the following example, a variable of type **char** is promoted to an **int**.
+In the following example, a variable of type **`char`** is promoted to an **`int`**.
 
 ```cpp
 #include <iostream>

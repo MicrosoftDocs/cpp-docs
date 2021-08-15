@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: db_command"
 title: "db_command (C++ COM Attribute)"
 ms.date: "07/10/2018"
 f1_keywords: ["vc-attr.db_command"]
@@ -27,11 +28,11 @@ A command string containing the text of an OLE DB command. A simple example is:
 
 The *command* syntax is as follows:
 
-> binding parameter block 1
-> &nbsp;&nbsp;OLE DB command
-> binding parameter block 2
-> &nbsp;&nbsp;continuation of OLE DB command
-> binding parameter block 3
+> binding parameter block 1\
+> &nbsp;&nbsp;OLE DB command\
+> binding parameter block 2\
+> &nbsp;&nbsp;continuation of OLE DB command\
+> binding parameter block 3\
 > ...
 
 A *binding parameter block* is defined as follows:
@@ -115,9 +116,9 @@ You can use **db_command** with either class or function scope; the main differe
 
 When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.
 
-## Example
+## Examples
 
-This sample defines a command that selects the first and last names from a table where the state column matches 'CA'. **db_command** creates and reads a rowset on which you can call wizard-generated functions such as [OpenAll and CloseAll](../../data/oledb/consumer-wizard-generated-methods.md), as well as `CRowset` member functions such as [MoveNext](../../data/oledb/crowset-movenext.md).
+This sample defines a command that selects the first and last names from a table where the state column matches 'CA'. **db_command** creates and reads a rowset on which you can call wizard-generated functions such as [OpenAll and CloseAll](../../data/oledb/consumer-wizard-generated-methods.md), as well as `CRowset` member functions such as [MoveNext](../../data/oledb/crowset-class.md#movenext).
 
 Note that this code requires you to provide your own connection string that connects to the pubs database. For information on how to do this in the development environment, see [How to: Connect to a Database and Browse Existing Objects](/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects) and [Add new connections](/visualstudio/data-tools/add-new-connections).
 
@@ -155,8 +156,6 @@ struct CAuthors {
 };
 ```
 
-## Example
-
 ```cpp
 // db_command.cpp
 // compile with: /c
@@ -184,8 +183,6 @@ int main(int argc, _TCHAR* argv[]) {
    CoUninitialize();
 }
 ```
-
-## Example
 
 This sample uses `db_source` on a data source class `CMySource`, and `db_command` on command classes `CCommand1` and `CCommand2`.
 
@@ -230,11 +227,9 @@ int main() {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**, member, method, local|
+|**Applies to**|**`class`**, **`struct`**, member, method, local|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: unbounded_buffer Class"
 title: "unbounded_buffer Class"
 ms.date: "11/04/2016"
 f1_keywords: ["unbounded_buffer", "AGENTS/concurrency::unbounded_buffer", "AGENTS/concurrency::unbounded_buffer::unbounded_buffer", "AGENTS/concurrency::unbounded_buffer::dequeue", "AGENTS/concurrency::unbounded_buffer::enqueue", "AGENTS/concurrency::unbounded_buffer::accept_message", "AGENTS/concurrency::unbounded_buffer::consume_message", "AGENTS/concurrency::unbounded_buffer::link_target_notification", "AGENTS/concurrency::unbounded_buffer::process_input_messages", "AGENTS/concurrency::unbounded_buffer::propagate_message", "AGENTS/concurrency::unbounded_buffer::propagate_output_messages", "AGENTS/concurrency::unbounded_buffer::release_message", "AGENTS/concurrency::unbounded_buffer::reserve_message", "AGENTS/concurrency::unbounded_buffer::resume_propagation", "AGENTS/concurrency::unbounded_buffer::send_message", "AGENTS/concurrency::unbounded_buffer::supports_anonymous_source"]
@@ -145,7 +146,7 @@ The item to add.
 
 ### Return Value
 
-**true** if the item was accepted, **false** otherwise.
+**`true`** if the item was accepted, **`false`** otherwise.
 
 ## <a name="link_target_notification"></a> link_target_notification
 
@@ -244,11 +245,11 @@ The `runtime_object_identity` of the `message` object being reserved.
 
 ### Return Value
 
-**true** if the message was successfully reserved, **false** otherwise.
+**`true`** if the message was successfully reserved, **`false`** otherwise.
 
 ### Remarks
 
-After `reserve` is called, if it returns **true**, either `consume` or `release` must be called to either take or release ownership of the message.
+After `reserve` is called, if it returns **`true`**, either `consume` or `release` must be called to either take or release ownership of the message.
 
 ## <a name="resume_propagation"></a> resume_propagation
 
@@ -291,7 +292,7 @@ virtual bool supports_anonymous_source();
 
 ### Return Value
 
-**true** because the block does not postpone offered messages.
+**`true`** because the block does not postpone offered messages.
 
 ## <a name="ctor"></a> unbounded_buffer
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2217"
 title: "Compiler Error C2217"
 ms.date: "11/04/2016"
 f1_keywords: ["C2217"]
@@ -15,7 +16,7 @@ The first function attribute requires the second attribute.
 
 1. Interrupt (`__interrupt`) function declared as `near`. Interrupt functions must be `far`.
 
-1. Interrupt function declared with `__stdcall`, or `__fastcall`. Interrupt functions must use C calling conventions.
+1. Interrupt function declared with **`__stdcall`**, or **`__fastcall`**. Interrupt functions must use C calling conventions.
 
 ## Example
 

@@ -18,13 +18,13 @@ Visual Studio helps you upgrade legacy C++ code with compiler options, code anal
 
 - Code that conforms to all versions of the standard but is no longer considered best practice in modern C++.
 
-   To identify code where changes are recommended, run [Code analysis](/cpp/code-quality/code-analysis-for-c-cpp-overview).
+   To identify code where changes are recommended, run [Code analysis](../code-quality/code-analysis-for-c-cpp-overview.md).
 
 ## Open and convert a legacy project
 
 If your legacy project is based on an older version of Visual Studio, you can open it in Visual Studio 2017 or Visual Studio 2019. Visual Studio automatically converts it to the current project schema with support for all the latest compiler and IDE features.
 
-![Upgrade a project](media/upgrade-dialog-v142.png "Upgrade a project")
+![Screenshot of the Upgrade a project dialog.](media/upgrade-dialog-v142.png "Upgrade a project")
 
 For more information, see [Upgrade C++ projects from earlier versions of Visual Studio](upgrading-projects-from-earlier-versions-of-visual-cpp.md).
 
@@ -32,7 +32,7 @@ For more information, see [Upgrade C++ projects from earlier versions of Visual 
 
 Upgrading a code base often involves searching through multiple files. To search for anything in your code base, press **Ctrl+T** to bring up the **Go to All** search box.
 
-![Go to all](media/go-to-all.png "Go to all")
+![Screenshot of the Go to all dialog.](media/go-to-all.png "Go to all")
 
 To narrow the search scope, type one of the 1-letter filters, followed by a space and then the thing you are looking for.
 
@@ -40,13 +40,13 @@ To narrow the search scope, type one of the 1-letter filters, followed by a spac
 
 After you set the desired C++ Language Standard and any other compiler options (**Project** > **Properties** > **General**), press **Ctrl+Shift+B** to compile your project. You can expect to see some errors and warnings in the form of red squiggles in various places in the code. The errors also appear in the **Error List**. For more information about an specific error, click on the error code to go to the help page in the documentation. Error codes that begin with a "C" are compiler errors. Codes that begin with "MSB" are MSBuild errors that indicate a problem with the project configuration.
 
-![Compiler and MSBuild errors in Error List](media/compiler-error-list.png "Compiler and MSBuild errors in Error List")
+![Screenshot showing compiler and MSBuild errors in Error List.](media/compiler-error-list.png "Compiler and MSBuild errors in Error List")
 
 ## Document Health Indicator
 
 The document health indicator at the bottom of the editor shows the number of errors and warnings in the current document, and enables you to navigate directly from one warning/error to the next.
 
-![Document health indicator](media/document-health-indicator.png "Document health indicator")
+![Document health indicator.](media/document-health-indicator.png "Document health indicator")
 
 In many cases, you can find more information about a specific error in the documentation on the Visual Studio change history and conformance improvements.
 
@@ -58,17 +58,17 @@ In many cases, you can find more information about a specific error in the docum
 
 When upgrading, we recommend that you run code analysis on your project so that the code, conforms at a minimum to the Microsoft Native Recommended Rules. These rules are a combination of rules defined by Microsoft and a subset of the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). By conforming to these you will greatly reduce or eliminate common sources of bugs, and at the same time make your code more readable and therefore easier to maintain. Code Analysis using the Microsoft Native Recommended Rules is enabled by default. You can enable additional rules under **Project** > **Properties** > **Code Analysis**. Code that violates one of the rules is flagged as a warning and is underlined with a green squiggle in the code editor. Hover over the squiggle to see a **QuickInfo** tooltip that describes the issue.
 
-![Code analysis tooltip](media/code-analysis-tooltip.png "Code analysis warning")
+![Screenshot of a Code analysis tooltip.](media/code-analysis-tooltip.png "Code analysis warning")
 
 Click on the filter icon in the **Code** column to choose which warnings are displayed.
 
-![Code analysis filters in Error List](media/code-analysis-filter.png "Code analysis filters in Error List")
+![Screenshot of Code analysis filters in Error List.](media/code-analysis-filter.png "Code analysis filters in Error List")
 
 Code analysis errors and warnings also appear in the **Error List** just like compiler errors.
 
-![Code analysis warnings in Error List](media/code-analysis-error-list.png "Code analysis warnings in Error List")
+![Screenshot of Code analysis warnings in Error List.](media/code-analysis-error-list.png "Code analysis warnings in Error List")
 
-You can change which rules are active, and create custom rulesets. For more information about using Code Analysis, see [Code analysis for C/C++ overview](/cpp/code-quality/code-analysis-for-c-cpp-overview).
+You can change which rules are active, and create custom rulesets. For more information about using Code Analysis, see [Code analysis for C/C++ overview](../code-quality/code-analysis-for-c-cpp-overview.md).
 
 ## Use Quick Actions to modernize code
 
@@ -78,33 +78,33 @@ The code editor provides Quick Actions for some common recommendations. When the
 
 The following image shows the use of macro called `AVERAGE`, which has the default semantic colorization. The image also shows the QuickInfo tooltip that is displayed when the mouse cursor hovers over it:
 
-![QuickInfo macro expansion](media/macro-expansion-quick-info.png "QuickInfo tooltip macro expansion")
+![Screenshot of a QuickInfo macro expansion.](media/macro-expansion-quick-info.png "QuickInfo tooltip macro expansion")
 
-Because the use of macros is discouraged in modern C++, Visual Studio makes it easy to convert macros to **constexpr** functions:
+Because the use of macros is discouraged in modern C++, Visual Studio makes it easy to convert macros to **`constexpr`** functions:
 
 1. Right-click on `AVERAGE` and choose **Go to Definition**.
 2. Click on the screwdriver icon and choose **Convert macro to constexpr**
 
-   ![Quick Action macro to constexpr](media/quick-action-macro-to-constexpr.png "Quick Action macro to constexpr")
+   ![Screenshot of a Quick Action macro to constexpr.](media/quick-action-macro-to-constexpr.png "Quick Action macro to constexpr")
 
 The macro is converted as shown below:
 
-![constexpr function](media/constexpr-function.png "constexpr function")
+![Screenshot of a constexpr function.](media/constexpr-function.png "constexpr function")
 
 And the call to `AVERAGE` is now colorized as a function call, and the Quick Info tooltip shows the deduced type of the function:
 
-![constexpr function call](media/constexpr-function-call.png "constexpr function call")
+![Screenshot of a constexpr function call.](media/constexpr-function-call.png "constexpr function call")
 
 ### Initialize variables
 
 Uninitialized variables can hold random values that lead to serious bugs. Code analysis flags these instances, and the editor provides a Quick Action:
 
-![Initialize variable](media/init-variable.png "Initialize variable Quick Action")
+![Screenshot of the pop-up for an uninitialized variable.](media/init-variable.png "Initialize variable Quick Action")
 
 ### Convert to raw string literal
 
 Raw string literals are less error-prone and more convenient to type than strings with embedded escape characters. Right-click on a string and choose **Quick Actions** to convert it to a raw string literal.
 
-![Raw string literal](media/raw-string-literal.png "Raw string literal")
+![Raw string literal.](media/raw-string-literal.png "Raw string literal")
 
 The string is converted to: `R"(C:\Users\bjarnes\demo\output.txt)"`.

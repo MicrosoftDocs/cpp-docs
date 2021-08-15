@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Migrate to /clr"
 title: "How to: Migrate to -clr"
 ms.custom: "get-started-article"
 ms.date: "09/18/2018"
@@ -52,7 +53,7 @@ int* a = malloc(sizeof(int));   // C code
 int* b = (int*)malloc(sizeof(int));   // C++ equivalent
 ```
 
-Function pointers are also strictly type-safe in C++, so the following C code requires modification. In C++ it's best to create a `typedef` that defines the function pointer type, and then use that type to cast function pointers:
+Function pointers are also strictly type-safe in C++, so the following C code requires modification. In C++ it's best to create a **`typedef`** that defines the function pointer type, and then use that type to cast function pointers:
 
 ```
 NewFunc1 = GetProcAddress( hLib, "Func1" );   // C code
@@ -62,7 +63,7 @@ NewFunc2 = (MYPROC)GetProcAddress( hLib, "Func2" );
 
 C++ also requires that functions either be prototyped or fully defined before they can be referenced or invoked.
 
-Identifiers used in C code that happen to be keywords in C++ (such as **virtual**, **new**, **delete**, **bool**, **true**, **false**, etc.) must be renamed. This can generally be done with simple search-and-replace operations.
+Identifiers used in C code that happen to be keywords in C++ (such as **`virtual`**, **`new`**, **`delete`**, **`bool`**, **`true`**, **`false`**, etc.) must be renamed. This can generally be done with simple search-and-replace operations.
 
 ```
 COMObj1->lpVtbl->Method(COMObj, args);  // C code
@@ -116,7 +117,7 @@ Exporting DLL data is error-prone, and not recommended. This is because the data
 
 ### Type Visibility
 
-Native types are private by default. This can result in a native type not being visible outside the DLL. Resolve this error by adding `public` to these types.
+Native types are private by default. This can result in a native type not being visible outside the DLL. Resolve this error by adding **`public`** to these types.
 
 ### Floating Point and Alignment Issues
 

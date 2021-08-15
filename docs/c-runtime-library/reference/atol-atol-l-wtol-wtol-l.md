@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: atol, _atol_l, _wtol, _wtol_l"
 title: "atol, _atol_l, _wtol, _wtol_l"
 ms.date: "4/2/2020"
 api_name: ["atol", "_wtol_l", "_wtol", "_atol_l", "_o__atol_l", "_o__wtol", "_o__wtol_l", "_o_atol"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_atol_l", "_ttol_l", "_tstol_l", "_tstol", "_wtol", "_ttol", "_wtol_l"]
@@ -42,7 +43,7 @@ Locale to use.
 
 ## Return Value
 
-Each function returns the **long** value produced by interpreting the input characters as a number. The return value is 0L for **atol** if the input cannot be converted to a value of that type.
+Each function returns the **`long`** value produced by interpreting the input characters as a number. The return value is 0L for **atol** if the input cannot be converted to a value of that type.
 
 In the case of overflow with large positive integral values, **atol** returns **LONG_MAX**; in the case of overflow with large negative integral values, **LONG_MIN** is returned. In all out-of-range cases, **errno** is set to **ERANGE**. If the parameter passed in is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return 0.
 

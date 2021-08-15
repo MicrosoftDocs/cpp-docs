@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSimpleRow Class"
 title: "CSimpleRow Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSimpleRow", "ATL::CSimpleRow", "ATL.CSimpleRow", "CSimpleRow::AddRefRow", "AddRefRow", "ATL.CSimpleRow.AddRefRow", "ATL::CSimpleRow::AddRefRow", "CSimpleRow.AddRefRow", "CSimpleRow.Compare", "CSimpleRow::Compare", "ATL::CSimpleRow::CSimpleRow", "CSimpleRow.CSimpleRow", "ATL.CSimpleRow.CSimpleRow", "CSimpleRow::CSimpleRow", "ATL::CSimpleRow::ReleaseRow", "CSimpleRow::ReleaseRow", "ReleaseRow", "CSimpleRow.ReleaseRow", "ATL.CSimpleRow.ReleaseRow", "CSimpleRow.m_dwRef", "CSimpleRow::m_dwRef", "CSimpleRow::m_iRowset", "CSimpleRow.m_iRowset"]
@@ -23,7 +24,7 @@ class CSimpleRow
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddRefRow](#addrefrow)|Adds a reference count to an existing row handle.|
 |[Compare](#compare)|Compares two rows to see if they refer to the same row instance.|
@@ -32,14 +33,14 @@ class CSimpleRow
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_dwRef](#dwref)|Reference count to an existing row handle.|
 |[m_iRowset](#irowset)|An index to the rowset representing the cursor.|
 
 ## Remarks
 
-A row handle is logically a unique tag for a result row. `IRowsetImpl` creates a new `CSimpleRow` for every row requested in [IRowsetImpl::GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md). `CSimpleRow` can also be replaced with your own implementation of the row handle, as it is a default template argument to `IRowsetImpl`. The only requirement to replacing this class is to have the replacement class provide a constructor that accepts a single parameter of type **LONG**.
+A row handle is logically a unique tag for a result row. `IRowsetImpl` creates a new `CSimpleRow` for every row requested in [IRowsetImpl::GetNextRows](./irowsetimpl-class.md#getnextrows). `CSimpleRow` can also be replaced with your own implementation of the row handle, as it is a default template argument to `IRowsetImpl`. The only requirement to replacing this class is to have the replacement class provide a constructor that accepts a single parameter of type **LONG**.
 
 ## <a name="addrefrow"></a> CSimpleRow::AddRefRow
 
@@ -87,7 +88,7 @@ CSimpleRow(DBCOUNTITEM iRowsetCur);
 
 ### Remarks
 
-Sets [m_iRowset](../../data/oledb/csimplerow-m-irowset.md) to *iRowsetCur*.
+Sets [m_iRowset](#irowset) to *iRowsetCur*.
 
 ## <a name="releaserow"></a> CSimpleRow::ReleaseRow
 

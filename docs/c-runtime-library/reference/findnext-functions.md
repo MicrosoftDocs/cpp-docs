@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64"
 title: "_findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64"
 ms.date: "4/2/2020"
 api_name: [_findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64, "_o__findnext32", "_o__findnext32i64", "_o__findnext64", "_o__findnext64i32", "_o__wfindnext32", "_o__wfindnext32i64", "_o__wfindnext64", "_o__wfindnext64i32"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["findnext", "_wfindnext32i64", "_tfindnext64i32", "findnext32", "findnext32i64", "wfindnext64i32", "_wfindnext", "tfindnext64", "findnexti64", "_findnexti64", "_tfindnexti64", "_findnext64i32", "tfindnexti64", "tfindnext32", "_wfindnext64i32", "findnext64i32", "_findnext", "_tfindnext32i64", "_wfindnext64", "wfindnext", "wfindnext32", "tfindnext32i64", "_findnext64", "_tfindnext64", "_wfindnext32", "findnext64", "_findnext32i64", "tfindnext", "wfindnexti64", "tfindnext64i32", "_tfindnext32", "wfindnext32i64", "wfindnext64", "_wfindnexti64", "_tfindnext", "_findnext32"]

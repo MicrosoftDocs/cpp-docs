@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _com_ptr_t Class"
 title: "_com_ptr_t Class"
 ms.date: "11/04/2016"
 f1_keywords: ["_com_ptr_t"]
@@ -23,13 +24,13 @@ A set of [function templates](../cpp/relational-function-templates.md), not memb
 
 ### Construction
 
-|||
+| Name | Description |
 |-|-|
 |[_com_ptr_t](../cpp/com-ptr-t-com-ptr-t.md)|Constructs a **_com_ptr_t** object.|
 
 ### Low-Level Operations
 
-|||
+| Name | Description |
 |-|-|
 |[AddRef](../cpp/com-ptr-t-addref.md)|Calls the `AddRef` member function of `IUnknown` on the encapsulated interface pointer.|
 |[Attach](../cpp/com-ptr-t-attach.md)|Encapsulates a raw interface pointer of this smart pointer's type.|
@@ -42,7 +43,7 @@ A set of [function templates](../cpp/relational-function-templates.md), not memb
 
 ### Operators
 
-|||
+| Name | Description |
 |-|-|
 |[operator =](../cpp/com-ptr-t-operator-equal.md)|Assigns a new value to an existing **_com_ptr_t** object.|
 |[operators ==, !=, \<, >, \<=, >=](../cpp/com-ptr-t-relational-operators.md)|Compare the smart pointer object to another smart pointer, raw interface pointer, or NULL.|

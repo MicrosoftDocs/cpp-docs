@@ -1,17 +1,18 @@
 ---
+description: "Learn more about: Build Event Properties (Linux C++)"
 title: "Remote Build Events (Linux C++)"
 ms.date: "06/07/2019"
 ms.assetid: 165d3690-5bd8-4b0b-bc66-8b699d85a61b
 ---
 # Build Event Properties (Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux support is available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## Pre-Build Event
 

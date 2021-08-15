@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;exception&gt;"
 title: "&lt;exception&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<exception>"]
@@ -19,7 +20,7 @@ Defines several types and functions related to the handling of exceptions. Excep
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)|A type that describes a pointer to an exception.|
 |[terminate_handler](../standard-library/exception-typedefs.md#terminate_handler)|A type that describes a pointer to a function suitable for use as a `terminate_handler`.|
@@ -27,7 +28,7 @@ Defines several types and functions related to the handling of exceptions. Excep
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[current_exception](../standard-library/exception-functions.md#current_exception)|Obtains a pointer to the current exception.|
 |[get_terminate](../standard-library/exception-functions.md#get_terminate)|Obtains the current `terminate_handler` function.|
@@ -39,12 +40,12 @@ Defines several types and functions related to the handling of exceptions. Excep
 |[set_unexpected](../standard-library/exception-functions.md#set_unexpected)|Establishes a new `unexpected_handler` to be when an unexpected exception is encountered.|
 |[terminate](../standard-library/exception-functions.md#terminate)|Calls a terminate handler.|
 |[throw_with_nested](../standard-library/exception-functions.md#throw_with_nested)|Throws exception if nested.|
-|[uncaught_exception](../standard-library/exception-functions.md#uncaught_exception)|Returns **true** only if a thrown exception is being currently processed.|
+|[uncaught_exception](../standard-library/exception-functions.md#uncaught_exception)|Returns **`true`** only if a thrown exception is being currently processed.|
 |[unexpected](../standard-library/exception-functions.md#unexpected)|Calls an unexpected handler.|
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[bad_exception Class](../standard-library/bad-exception-class.md)|The class describes an exception that can be thrown from an `unexpected_handler`.|
 |[exception Class](../standard-library/exception-class.md)|The class serves as the base class for all exceptions thrown by certain expressions and by the C++ Standard Library.|

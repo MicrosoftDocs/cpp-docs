@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;thread&gt; functions"
 title: "&lt;thread&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["thread/std::get_id", "thread/std::sleep_for", "thread/std::sleep_until", "thread/std::swap", "thread/std::yield"]
@@ -7,10 +8,11 @@ helpviewer_keywords: ["std::get_id [C++]", "std::sleep_for [C++]", "std::sleep_u
 ---
 # &lt;thread&gt; functions
 
-||||
-|-|-|-|
-|[get_id](#get_id)|[sleep_for](#sleep_for)|[sleep_until](#sleep_until)|
-|[swap](#swap)|[yield](#yield)|
+[get_id](#get_id)\
+[sleep_for](#sleep_for)\
+[sleep_until](#sleep_until)\
+[swap](#swap)\
+[yield](#yield)
 
 ## <a name="get_id"></a> get_id
 
@@ -65,7 +67,7 @@ This function does not throw any exceptions.
 
 ## <a name="swap"></a> swap
 
-Swaps the states of two **thread** objects.
+Swaps the states of two `thread` objects.
 
 ```cpp
 void swap(thread& Left, thread& Right) noexcept;
@@ -74,10 +76,10 @@ void swap(thread& Left, thread& Right) noexcept;
 ### Parameters
 
 *Left*\
-The left **thread** object.
+The left `thread` object.
 
 *Right*\
-The right **thread** object.
+The right `thread` object.
 
 ### Remarks
 

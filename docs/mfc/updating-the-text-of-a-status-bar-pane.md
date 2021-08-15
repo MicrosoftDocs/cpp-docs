@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Updating the Text of a Status-Bar Pane"
 title: "Updating the Text of a Status-Bar Pane"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["updating user interface objects [MFC]", "ON_UPDATE_COMMAND_UI macro [MFC]", "user interface objects [MFC], updating", "text, status bar", "CStatusBar class [MFC], updating", "SetText method [MFC]", "panes, status bar", "status bars [MFC], updating"]

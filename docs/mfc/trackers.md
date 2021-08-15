@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Trackers"
 title: "Trackers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["trackers [MFC]", "OLE applications [MFC], trackers", "applications [OLE], trackers", "tracking OLE items [MFC]", "OLE containers [MFC], trackers", "CDC class [MFC], trackers", "CRectTracker class [MFC], implementing trackers", "OLE server applications [MFC], trackers"]

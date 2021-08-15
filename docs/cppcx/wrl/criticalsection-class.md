@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CriticalSection Class"
 title: "CriticalSection Class"
 ms.date: "09/24/2018"
 ms.topic: "reference"
@@ -98,7 +99,7 @@ bool IsValid() const;
 
 ### Return Value
 
-By default, always returns **true**.
+By default, always returns **`true`**.
 
 ## <a name="lock"></a> CriticalSection::Lock
 

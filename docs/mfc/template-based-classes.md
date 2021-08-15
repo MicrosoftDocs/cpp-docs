@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Template-Based Classes"
 title: "Template-Based Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["type-safe collections", "CTypedPtrList class [MFC], template-based classes", "arrays [MFC], classes", "arrays [MFC], pointers", "typed pointers, collections of", "arrays [MFC], template-based", "CArray class [MFC], template-based classes", "simple template-based collections", "simple array collection classes [MFC]", "typed pointers", "collections, typed-pointer", "CList class [MFC], template-based classes", "collection classes [MFC], template-based", "CTypedPtrMap class [MFC], template-based classes", "pointers, collections of typed", "CTypedPtrArray class [MFC], template-based classes", "MFC collection classes [MFC], template-based", "template-based collection classes [MFC]", "simple list collection classes [MFC]"]
@@ -30,7 +31,7 @@ To use the simple collection templates, you need to know what kind of data you c
 
 The simple array and list classes, [CArray](../mfc/reference/carray-class.md) and [CList](../mfc/reference/clist-class.md), take two parameters: *TYPE* and `ARG_TYPE`. These classes can store any data type, which you specify in the *TYPE* parameter:
 
-- Fundamental C++ data types, such as **int**, **char**, and **float**
+- Fundamental C++ data types, such as **`int`**, **`char`**, and **`float`**
 
 - C++ structures and classes
 
@@ -40,7 +41,7 @@ For convenience and efficiency, you can use the *ARG_TYPE* parameter to specify 
 
 [!code-cpp[NVC_MFCCollections#1](../mfc/codesnippet/cpp/template-based-classes_1.cpp)]
 
-The first example declares an array collection, `myArray`, that contains **int**s. The second example declares a list collection, `myList`, that stores `CPerson` objects. Certain member functions of the collection classes take arguments whose type is specified by the *ARG_TYPE* template parameter. For example, the `Add` member function of class `CArray` takes an *ARG_TYPE* argument:
+The first example declares an array collection, `myArray`, that contains **`int`**s. The second example declares a list collection, `myList`, that stores `CPerson` objects. Certain member functions of the collection classes take arguments whose type is specified by the *ARG_TYPE* template parameter. For example, the `Add` member function of class `CArray` takes an *ARG_TYPE* argument:
 
 [!code-cpp[NVC_MFCCollections#2](../mfc/codesnippet/cpp/template-based-classes_2.cpp)]
 
@@ -50,7 +51,7 @@ The simple map class, [CMap](../mfc/reference/cmap-class.md), takes four paramet
 
 [!code-cpp[NVC_MFCCollections#3](../mfc/codesnippet/cpp/template-based-classes_3.cpp)]
 
-The first example stores `MY_STRUCT` values, accesses them by **int** keys, and returns accessed `MY_STRUCT` items by reference. The second example stores `CPerson` values, accesses them by `CString` keys, and returns references to accessed items. This example might represent a simple address book, in which you look up persons by last name.
+The first example stores `MY_STRUCT` values, accesses them by **`int`** keys, and returns accessed `MY_STRUCT` items by reference. The second example stores `CPerson` values, accesses them by `CString` keys, and returns references to accessed items. This example might represent a simple address book, in which you look up persons by last name.
 
 Because the *KEY* parameter is of type `CString` and the *KEY_TYPE* parameter is of type `LPCSTR`, the keys are stored in the map as items of type `CString` but are referenced in functions such as `SetAt` through pointers of type `LPCSTR`. For example:
 
@@ -83,7 +84,7 @@ The first example is a map based on `CMapPtrToPtr` — it uses `CString` keys ma
 The second example is a map based on `CMapStringToOb` — it uses string keys mapped to stored pointers to `CMyObject` objects. You can use the same type-safe members described in the previous paragraph, or you can call members of class `CMapStringToOb`.
 
 > [!NOTE]
-> If you specify a **class** or **struct** type for the *VALUE* parameter, rather than a pointer or reference to the type, the class or structure must have a copy constructor.
+> If you specify a **`class`** or **`struct`** type for the *VALUE* parameter, rather than a pointer or reference to the type, the class or structure must have a copy constructor.
 
 For more information, see [How to Make a Type-Safe Collection](../mfc/how-to-make-a-type-safe-collection.md).
 

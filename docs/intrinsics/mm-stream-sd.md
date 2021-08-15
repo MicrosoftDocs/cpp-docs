@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mm_stream_sd"
 title: "_mm_stream_sd"
 ms.date: "09/02/2019"
 f1_keywords: ["_mm_stream_sd"]
@@ -26,7 +27,7 @@ void _mm_stream_sd(
 [out] A pointer to the location where the source data will be written.
 
 *Source*\
-[in] A 128-bit value containing the `double` value to be written in its bottom 64 bits.
+[in] A 128-bit value containing the **`double`** value to be written in its bottom 64 bits.
 
 ## Return value
 

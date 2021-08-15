@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Variant Parameter Type Constants"
 title: "Variant Parameter Type Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["VTS_YPOS_HIMETRIC", "VTS_PICTURE", "VTS_FONT", "VTS_XPOS_HIMETRIC", "VTS_XPOS_PIXELS", "VTS_XSIZE_HIMETRIC", "VTS_YPOS_PIXELS", "VTS_TRISTATE", "VTS_HANDLE", "VTS_YSIZE_HIMETRIC", "VTS_COLOR", "VTS_OPTEXCLUSIVE", "VTS_YSIZE_PIXELS", "VTS_XSIZE_PIXELS"]

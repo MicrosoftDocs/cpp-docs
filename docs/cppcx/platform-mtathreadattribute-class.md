@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::MTAThreadAttribute Class"
 title: "Platform::MTAThreadAttribute Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
@@ -71,7 +72,7 @@ The object to compare.
 
 ### Return Value
 
-**true** if the objects are equal; otherwise, **false**.
+**`true`** if the objects are equal; otherwise, **`false`**.
 
 ## <a name="gethashcode"></a> MTAThreadAttribute::GetHashCode
 

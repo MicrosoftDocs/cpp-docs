@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ctype Class"
 title: "ctype Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocale/std::ctype", "xlocale/std::ctype::char_type", "xlocale/std::ctype::do_is", "xlocale/std::ctype::do_narrow", "xlocale/std::ctype::do_scan_is", "xlocale/std::ctype::do_scan_not", "xlocale/std::ctype::do_tolower", "xlocale/std::ctype::do_toupper", "xlocale/std::ctype::do_widen", "xlocale/std::ctype::is", "xlocale/std::ctype::narrow", "xlocale/std::ctype::scan_is", "xlocale/std::ctype::scan_not", "xlocale/std::ctype::tolower", "xlocale/std::ctype::toupper", "xlocale/std::ctype::widen"]
@@ -33,11 +34,11 @@ The C++ Standard Library defines two explicit specializations of this class temp
 
 Other specializations of class template `ctype<CharType>`:
 
-- Convert a value *ch* of type *CharType* to a value of type **char** with the expression `(char)ch`.
+- Convert a value *ch* of type *CharType* to a value of type **`char`** with the expression `(char)ch`.
 
-- Convert a value *byte* of type **char** to a value of type *CharType* with the expression `CharType(byte)`.
+- Convert a value *byte* of type **`char`** to a value of type *CharType* with the expression `CharType(byte)`.
 
-All other operations are performed on **char** values in the same way as for the explicit specialization `ctype<char>`.
+All other operations are performed on **`char`** values in the same way as for the explicit specialization `ctype<char>`.
 
 ### Constructors
 
@@ -56,19 +57,19 @@ All other operations are performed on **char** values in the same way as for the
 |Member function|Description|
 |-|-|
 |[do_is](#do_is)|A virtual function called to test whether a single character has a particular attribute, or classify the attributes of each character in a range and stores them in an array.|
-|[do_narrow](#do_narrow)|A virtual function called to convert a character of type `CharType` used by a locale to the corresponding character of type **char** in the native character set.|
+|[do_narrow](#do_narrow)|A virtual function called to convert a character of type `CharType` used by a locale to the corresponding character of type **`char`** in the native character set.|
 |[do_scan_is](#do_scan_is)|A virtual function called to locate the first character in a range that matches a specified mask.|
 |[do_scan_not](#do_scan_not)|A virtual function called to locate the first character in a range that does not match a specified mask.|
 |[do_tolower](#do_tolower)|A virtual function called to convert a character or a range of characters to their lower case.|
 |[do_toupper](#do_toupper)|A virtual function called to convert a character or a range of characters to upper case.|
-|[do_widen](#do_widen)|A virtual function called to converts a character of type **char** in the native character set to the corresponding character of type `CharType` used by a locale.|
+|[do_widen](#do_widen)|A virtual function called to converts a character of type **`char`** in the native character set to the corresponding character of type `CharType` used by a locale.|
 |[is](#is)|Tests whether a single character has a particular attribute, or classifies the attributes of each character in a range and stores them in an array.|
 |[narrow](#narrow)|Converts a character of type `CharType` used by a locale to the corresponding character of type char in the native character set.|
 |[scan_is](#scan_is)|Locates the first character in a range that matches a specified mask.|
 |[scan_not](#scan_not)|Locates the first character in a range that does not match a specified mask.|
 |[tolower](#tolower)|Converts a character or a range of characters to lower case.|
 |[toupper](#toupper)|Converts a character or a range of characters to upper case.|
-|[widen](#widen)|Converts a character of type **char** in the native character set to the corresponding character of type `CharType` used by a locale.|
+|[widen](#widen)|Converts a character of type **`char`** in the native character set to the corresponding character of type `CharType` used by a locale.|
 
 ## Requirements
 
@@ -153,7 +154,7 @@ A pointer to the beginning of the array where the mask values characterizing the
 
 ### Return Value
 
-The first member function returns a Boolean value that is **true** if the character tested has the attribute described by the mask value; **false** if it fails to have the attribute.
+The first member function returns a Boolean value that is **`true`** if the character tested has the attribute described by the mask value; **`false`** if it fails to have the attribute.
 
 The second member function returns an array containing the mask values characterizing the attributes of each of the characters in the range.
 
@@ -167,7 +168,7 @@ See the example for [is](#is), which calls `do_is`.
 
 ## <a name="do_narrow"></a> ctype::do_narrow
 
-A virtual function called to convert a character of type `CharType` used by a locale to the corresponding character of type **char** in the native character set.
+A virtual function called to convert a character of type `CharType` used by a locale to the corresponding character of type **`char`** in the native character set.
 
 ```cpp
 virtual char do_narrow(
@@ -187,7 +188,7 @@ virtual const CharType* do_narrow(
 The character of type `Chartype` used by the locale to be converted.
 
 *default*\
-The default value to be assigned by the member function to characters of type `CharType` that do not have counterpart characters of type **char**.
+The default value to be assigned by the member function to characters of type `CharType` that do not have counterpart characters of type **`char`**.
 
 *first*\
 A pointer to the first character in the range of characters to be converted.
@@ -196,7 +197,7 @@ A pointer to the first character in the range of characters to be converted.
 A pointer to the character immediately following the last character in the range of characters to be converted.
 
 *dest*\
-A const pointer to the first character of type **char** in the destination range that stores the converted range of characters.
+A const pointer to the first character of type **`char`** in the destination range that stores the converted range of characters.
 
 ### Return Value
 
@@ -352,7 +353,7 @@ See the example for [toupper](#toupper), which calls `do_toupper`.
 
 ## <a name="do_widen"></a> ctype::do_widen
 
-A virtual function called to converts a character of type **char** in the native character set to the corresponding character of type `CharType` used by a locale.
+A virtual function called to converts a character of type **`char`** in the native character set to the corresponding character of type `CharType` used by a locale.
 
 ```cpp
 virtual CharType do_widen(char byte) const;
@@ -366,7 +367,7 @@ virtual const char *do_widen(
 ### Parameters
 
 *byte*\
-The character of type **char** in the native character set to be converted.
+The character of type **`char`** in the native character set to be converted.
 
 *first*\
 A pointer to the first character in the range of characters to be converted.
@@ -379,9 +380,9 @@ A pointer to the first character of type `CharType` in the destination range tha
 
 ### Return Value
 
-The first protected member function returns the character of type `CharType` that corresponds to the parameter character of native type **char**.
+The first protected member function returns the character of type `CharType` that corresponds to the parameter character of native type **`char`**.
 
-The second protected member function returns a pointer to the destination range of characters of type `CharType` used by a locale converted from native characters of type **char**.
+The second protected member function returns a pointer to the destination range of characters of type `CharType` used by a locale converted from native characters of type **`char`**.
 
 ### Remarks
 
@@ -423,7 +424,7 @@ A pointer to the beginning of the array where the mask values characterizing the
 
 ### Return Value
 
-The first member function returns **true** if the character tested has the attribute described by the mask value; **false** if it fails to have the attribute.
+The first member function returns **`true`** if the character tested has the attribute described by the mask value; **`false`** if it fails to have the attribute.
 
 The second member function returns a pointer to the last character in the range whose attributes are to be classified.
 
@@ -472,7 +473,7 @@ int main() {
 
 ## <a name="narrow"></a> ctype::narrow
 
-Converts characters of type `CharType` used by a locale to the corresponding characters of type **char** in the native character set.
+Converts characters of type `CharType` used by a locale to the corresponding characters of type **`char`** in the native character set.
 
 ```cpp
 char narrow(CharType ch, char default = '\0') const;
@@ -490,7 +491,7 @@ const CharType* narrow(
 The character of type `Chartype` used by the locale to be converted.
 
 *default*\
-The default value to be assigned by the member function to characters of type `CharType` that do not have counterpart characters of type **char**.
+The default value to be assigned by the member function to characters of type `CharType` that do not have counterpart characters of type **`char`**.
 
 *first*\
 A pointer to the first character in the range of characters to be converted.
@@ -499,11 +500,11 @@ A pointer to the first character in the range of characters to be converted.
 A pointer to the character immediately following the last character in the range of characters to be converted.
 
 *dest*\
-A const pointer to the first character of type **char** in the destination range that stores the converted range of characters.
+A const pointer to the first character of type **`char`** in the destination range that stores the converted range of characters.
 
 ### Return Value
 
-The first member function returns the native character of type **char** that corresponds to the parameter character of type `CharType default` if not counterpart is defined.
+The first member function returns the native character of type **`char`** that corresponds to the parameter character of type `CharType default` if not counterpart is defined.
 
 The second member function returns a pointer to the destination range of native characters converted from characters of type `CharType`.
 
@@ -762,7 +763,7 @@ The uppercase string is: HELLO, MY NAME IS JOHN
 
 ## <a name="widen"></a> ctype::widen
 
-Converts a character of type **char** in the native character set to the corresponding character of type `CharType` used by a locale.
+Converts a character of type **`char`** in the native character set to the corresponding character of type `CharType` used by a locale.
 
 ```cpp
 CharType widen(char byte) const;
@@ -785,9 +786,9 @@ A pointer to the first character of type `CharType` in the destination range tha
 
 ### Return Value
 
-The first member function returns the character of type `CharType` that corresponds to the parameter character of native type **char**.
+The first member function returns the character of type `CharType` that corresponds to the parameter character of native type **`char`**.
 
-The second member function returns a pointer to the destination range of characters of type `CharType` used by a locale converted from native characters of type **char**.
+The second member function returns a pointer to the destination range of characters of type `CharType` used by a locale converted from native characters of type **`char`**.
 
 ### Remarks
 

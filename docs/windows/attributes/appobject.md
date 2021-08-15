@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: appobject"
 title: "appobject (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.appobject"]
@@ -40,11 +41,9 @@ class A : public ICustom {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|`coclass`|
 |**Invalid attributes**|None|

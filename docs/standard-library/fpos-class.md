@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fpos Class"
 title: "fpos Class"
 ms.date: "03/27/2019"
 f1_keywords: ["iosfwd/std::fpos", "iosfwd/std::fpos::seekpos", "iosfwd/std::fpos::state", "iosfwd/std::fpos::operator streamoff"]
@@ -100,7 +101,7 @@ The file-position indicator against which to compare.
 
 ### Return Value
 
-**true** if the file-position indicators are not equal, otherwise **false**.
+**`true`** if the file-position indicators are not equal, otherwise **`false`**.
 
 ### Remarks
 
@@ -274,7 +275,7 @@ The file-position indicator against which to compare.
 
 ### Return Value
 
-**true** if the file-position indicators are equal; otherwise **false**.
+**`true`** if the file-position indicators are equal; otherwise **`false`**.
 
 ### Remarks
 

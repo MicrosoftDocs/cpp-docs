@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Updating the MFC Scribble Application (Part 1)"
 title: "Walkthrough: Updating the MFC Scribble Application (Part 1)"
 ms.date: "09/09/2019"
 helpviewer_keywords: ["examples [MFC], update existing application", "ribbon UI, porting to", "Office Fluent UI, porting to", "samples [MFC], update existing application", "MFC Feature Pack, update existing application", "walkthroughs [MFC], update existing application"]
@@ -12,7 +13,7 @@ This walkthrough modifies the classic Scribble 1.0 MFC sample that lets you use 
 
 ## Prerequisites
 
-The [Scribble 1.0 MFC sample](https://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe). For help on converting to Visual Studio 2017 or later, see [Porting Guide: MFC Scribble](../porting/porting-guide-mfc-scribble.md).
+The [Scribble 1.0 MFC sample](https://github.com/microsoft/VCSamples/tree/master/VC2010Samples/MFC/general/Scribble). For help on converting to Visual Studio 2017 or later, see [Porting Guide: MFC Scribble](../porting/porting-guide-mfc-scribble.md).
 
 ## <a name="top"></a> Sections
 
@@ -95,7 +96,7 @@ To convert an application that supports a menu to an application that supports a
 
 The next four steps of this walkthrough require bitmap resources. You can get the appropriate bitmaps in various ways:
 
-- Use the [Resource Editors](../windows/resource-editors.md) to invent your own bitmaps. Or use the resource editors to assemble bitmaps from the portable network graphics (.png) images that are included with Visual Studio and can be downloaded from the [Visual Studio image library](https://docs.microsoft.com/visualstudio/designers/the-visual-studio-image-library).
+- Use the [Resource Editors](../windows/resource-editors.md) to invent your own bitmaps. Or use the resource editors to assemble bitmaps from the portable network graphics (.png) images that are included with Visual Studio and can be downloaded from the [Visual Studio image library](/visualstudio/designers/the-visual-studio-image-library).
 
     However, the **Ribbon** user interface requires that certain bitmaps support transparent images. Transparent bitmaps use 32-bit pixels, where 24 bits specify the red, green, and blue components of the color, and 8 bits define an *alpha channel* that specifies the transparency of the color. The current resource editors can view, but not modify bitmaps with 32-bit pixels. Consequently, use an external image editor instead of the resource editors to manipulate transparent bitmaps.
 
@@ -207,7 +208,7 @@ The following steps show how to create an instance of the ribbon bar when your a
     CMFCRibbonBar m_wndRibbonBar;
     ```
 
-2. In the mainfrm.cpp file, add the following code before the final `return` statement at the end of the `CMainFrame::OnCreate` function. It creates an instance of the ribbon bar.
+2. In the mainfrm.cpp file, add the following code before the final **`return`** statement at the end of the `CMainFrame::OnCreate` function. It creates an instance of the ribbon bar.
 
     ```cpp
     // Create the ribbon bar

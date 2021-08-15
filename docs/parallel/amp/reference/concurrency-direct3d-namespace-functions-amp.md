@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency::direct3d namespace functions (AMP)"
 title: "Concurrency::direct3d namespace functions (AMP)"
 ms.date: "08/31/2018"
 f1_keywords: ["amp/Concurrency::direct3d::abs", "amp/Concurrency::direct3d::countbits", "amp/Concurrency::direct3d::create_accelerator_view", "amp/Concurrency::direct3d::d3d_access_lock", "amp/Concurrency::direct3d::d3d_access_unlock", "amp/Concurrency::direct3d::firstbithigh", "amp/Concurrency::direct3d::get_buffer", "amp/Concurrency::direct3d::get_device", "amp/Concurrency::direct3d::imax", "amp/Concurrency::direct3d::is_timeout_disabled", "amp/Concurrency::direct3d::mad", "amp/Concurrency::direct3d::noise", "amp/Concurrency::direct3d::radians", "amp/Concurrency::direct3d::reversebits", "amp/Concurrency::direct3d::saturate", "amp/Concurrency::direct3d::smoothstep", "amp/Concurrency::direct3d::step", "amp/Concurrency::direct3d::umin"]
@@ -6,17 +7,42 @@ ms.assetid: 28943b62-52c9-42dc-baf1-ca7b095c1a19
 ---
 # Concurrency::direct3d namespace functions (AMP)
 
-||||
-|-|-|-|
-|[abs](#abs)|[clamp](#clamp)|[countbits](#countbits)|
-|[create_accelerator_view](#create_accelerator_view)|[d3d_access_lock](#d3d_access_lock)||
-|[d3d_access_try_lock](#d3d_access_try_lock)|[d3d_access_unlock](#d3d_access_unlock)|[firstbithigh](#firstbithigh)|
-|[firstbitlow](#firstbitlow)|[get_buffer](#get_buffer)|[get_device](#get_device)|
-|[imax](#imax)|[imin](#imin)|[is_timeout_disabled](#is_timeout_disabled)|
-|[mad](#mad)|[make_array](#make_array)|[noise](#noise)|
-|[radians](#radians)|[rcp](#rcp)|[reversebits](#reversebits)|
-|[saturate](#saturate)|[sign](#sign)|[smoothstep](#smoothstep)|
-|[step](#step)|[umax](#umax)|[umin](#umin)|
+:::row:::
+   :::column span="":::
+      [abs](#abs)\
+      [clamp](#clamp)\
+      [countbits](#countbits)\
+      [create_accelerator_view](#create_accelerator_view)\
+      [d3d_access_lock](#d3d_access_lock)\
+      [d3d_access_try_lock](#d3d_access_try_lock)\
+      [d3d_access_unlock](#d3d_access_unlock)
+   :::column-end:::
+   :::column span="":::
+      [firstbithigh](#firstbithigh)\
+      [firstbitlow](#firstbitlow)\
+      [get_buffer](#get_buffer)\
+      [get_device](#get_device)\
+      [imax](#imax)\
+      [imin](#imin)\
+      [is_timeout_disabled](#is_timeout_disabled)
+   :::column-end:::
+   :::column span="":::
+      [mad](#mad)\
+      [make_array](#make_array)\
+      [noise](#noise)\
+      [radians](#radians)\
+      [rcp](#rcp)\
+      [reversebits](#reversebits)
+   :::column-end:::
+   :::column span="":::
+      [saturate](#saturate)\
+      [sign](#sign)\
+      [smoothstep](#smoothstep)\
+      [step](#step)\
+      [umax](#umax)\
+      [umin](#umin)
+   :::column-end:::
+:::row-end:::
 
 ## Requirements
 

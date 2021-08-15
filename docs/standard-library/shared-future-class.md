@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: shared_future Class"
 title: "shared_future Class"
 ms.date: "11/04/2016"
 f1_keywords: ["future/std::shared_future", "future/std::shared_future::shared_future", "future/std::shared_future::get", "future/std::shared_future::valid", "future/std::shared_future::wait", "future/std::shared_future::wait_for", "future/std::shared_future::wait_until"]
@@ -72,7 +73,7 @@ Before it retrieves the result, this method blocks the current thread until the 
 
 For the partial specialization `shared_future<Ty&>`, the stored value is effectively a reference to the object that was passed to the *asynchronous provider* as the return value.
 
-Because no stored value exists for the specialization `shared_future<void>`, the method returns **void**.
+Because no stored value exists for the specialization `shared_future<void>`, the method returns **`void`**.
 
 ## <a name="op_eq"></a> shared_future::operator=
 
@@ -132,7 +133,7 @@ bool valid() noexcept;
 
 ### Return Value
 
-**true** if the object has an associated asynchronous state; otherwise, **false**.
+**`true`** if the object has an associated asynchronous state; otherwise, **`false`**.
 
 ## <a name="wait"></a> shared_future::wait
 

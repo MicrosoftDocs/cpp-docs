@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;hash_set&gt; functions"
 title: "&lt;hash_set&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["hash_set/std::swap", "hash_set/std::swap (hash_multiset)"]
@@ -6,9 +7,8 @@ ms.assetid: 557a0162-3728-4537-97dc-f9f6cc7ece94
 ---
 # &lt;hash_set&gt; functions
 
-|||
-|-|-|
-|[swap](#swap)|[swap (hash_multiset)](#swap_hash_multiset)|
+[swap](#swap)\
+[swap (hash_multiset)](#swap_hash_multiset)
 
 ## <a name="swap"></a> swap
 

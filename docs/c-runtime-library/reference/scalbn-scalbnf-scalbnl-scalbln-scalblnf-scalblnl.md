@@ -1,8 +1,9 @@
 ---
 title: "scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl"
-ms.date: "4/2/2020"
+description: "API reference for scalbn, scalbnf, scalbnl, scalbln, scalblnf, and scalblnl; which multiplies a floating-point number by an integral power of `FLT_RADIX`."
+ms.date: "9/1/2020"
 api_name: ["scalblnl", "scalbnl", "scalbnf", "scalblnf", "scalbn", "scalbln", "_o_scalbln", "_o_scalblnf", "_o_scalblnl", "_o_scalbn", "_o_scalbnf", "_o_scalbnl"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["scalblnf", "scalbnl", "scalblnl", "scalbln", "scalbn", "scalbnf"]
@@ -36,18 +37,14 @@ long double scalbnl(
    long double x,
    int exp
 );
+
+#define scalbn(X, INT) // Requires C11 or higher
+
 double scalbln(
    double x,
    long exp
 );
-float scalbln(
-   float x,
-   long exp
-);  // C++ only
-long double scalbln(
-   long double x,
-   long exp
-);  // C++ only
+
 float scalblnf(
    float x,
    long exp
@@ -56,14 +53,25 @@ long double scalblnl(
    long double x,
    long exp
 );
+
+#define scalbln(X, LONG) // Requires C11 or higher
+
+float scalbln(
+   float x,
+   long exp
+);  // C++ only
+long double scalbln(
+   long double x,
+   long exp
+);  // C++ only
 ```
 
 ### Parameters
 
-*x*<br/>
+*x*\
 Floating-point value.
 
-*exp*<br/>
+*exp*\
 Integer exponent.
 
 ## Return Value
@@ -76,7 +84,9 @@ For more information about **errno** and possible error return values, see [errn
 
 **FLT_RADIX** is defined in \<float.h> as the native floating-point radix; on binary systems, it has a value of 2, and **scalbn** is equivalent to [ldexp](ldexp.md).
 
-Because C++ allows overloading, you can call overloads of **scalbn** and **scalbln** that take and return **float** or **long** **double** types. In a C program, **scalbn** always takes a **double** and an **int** and returns a **double**, and **scalbln** always takes a **double** and a **long** and returns a **double**.
+Because C++ allows overloading, you can call overloads of **scalbn** and **scalbln** that take and return **`float`** or **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **scalbn** always takes a **`double`** and an **`int`** and returns a **`double`**, and **scalbln** always takes a **`double`** and a **`long`** and returns a **`double`**.
+
+If you use the \<tgmath.h> `scalbn()` or `scalbln` macros, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -85,6 +95,7 @@ By default, this function's global state is scoped to the application. To change
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
 |**scalbn**, **scalbnf**, **scalbnl**, **scalbln**, **scalblnf**, **scalblnl**|\<math.h>|\<cmath>|
+|**scalbn() or scalbln** macro | \<tgmath.h> ||
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

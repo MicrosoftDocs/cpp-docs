@@ -1,6 +1,8 @@
 ---
 title: "Required and Optional Header Files"
+description: "When to use required versus optional header files from the Microsoft C runtime library."
 ms.date: "11/04/2016"
+ms.topic: "conceptual"
 f1_keywords: ["c.headers"]
 helpviewer_keywords: ["include files, required in run time", "header files, required in run time"]
 ms.assetid: f64d0bf5-e2c3-4b42-97d0-443b3d901d9f
@@ -15,8 +17,8 @@ The description of each run-time routine includes a list of the required and opt
 |Predefined Constant|Many library routines refer to constants that are defined in header files. For instance, the `_open` routine uses constants such as `_O_CREAT`, which is defined in the header file FCNTL.H.|
 |Type definition|Some library routines return a structure or take a structure as an argument. For example, stream input/output routines use a structure of type `FILE`, which is defined in STDIO.H.|
 
-The run-time library header files provide function declarations in the ANSI/ISO C standard recommended style. The compiler performs type checking on any routine reference that occurs after its associated function declaration. Function declarations are especially important for routines that return a value of some type other than `int`, which is the default. Routines that do not specify their appropriate return value in their declaration will be considered by the compiler to return an `int`, which can cause unexpected results. See [Type Checking](../c-runtime-library/type-checking-crt.md) for more information.
+The run-time library header files provide function declarations in the ANSI/ISO C standard recommended style. The compiler performs type checking on any routine reference that occurs after its associated function declaration. Function declarations are especially important for routines that return a value of some type other than **`int`**, which is the default. Routines that do not specify their appropriate return value in their declaration will be considered by the compiler to return an **`int`**, which can cause unexpected results. See [Type Checking](../c-runtime-library/type-checking-crt.md) for more information.
 
 ## See also
 
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)

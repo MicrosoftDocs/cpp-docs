@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package"
 title: "Deploy an App By Using the Redistributable Package (C++)"
 ms.date: "04/23/2019"
 helpviewer_keywords: ["walkthrough, deploying a Visual C++ application by using the redistributable package"]

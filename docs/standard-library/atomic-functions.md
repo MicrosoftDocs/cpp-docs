@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;atomic&gt; functions"
 title: "&lt;atomic&gt; functions"
 ms.date: "07/11/2018"
 f1_keywords: ["atomic/std::atomic_compare_exchange_strong", "atomic/std::atomic_compare_exchange_strong_explicit", "atomic/std::atomic_compare_exchange_weak", "atomic/std::atomic_compare_exchange_weak_explicit", "atomic/std::atomic_exchange", "atomic/std::atomic_exchange_explicit", "atomic/std::atomic_fetch_add", "atomic/std::atomic_fetch_add_explicit", "atomic/std::atomic_fetch_and", "atomic/std::atomic_fetch_and_explicit", "atomic/std::atomic_fetch_or", "atomic/std::atomic_fetch_or_explicit", "atomic/std::atomic_fetch_sub", "atomic/std::atomic_fetch_sub_explicit", "atomic/std::atomic_fetch_xor", "atomic/std::atomic_fetch_xor_explicit", "atomic/std::atomic_flag_clear", "atomic/std::atomic_flag_clear_explicit", "atomic/std::atomic_flag_test_and_set", "atomic/std::atomic_flag_test_and_set_explicit", "atomic/std::atomic_init", "atomic/std::atomic_is_lock_free", "atomic/std::atomic_load", "atomic/std::atomic_load_explicit", "atomic/std::atomic_signal_fence", "atomic/std::atomic_store", "atomic/std::atomic_store_explicit", "atomic/std::atomic_thread_fence", "atomic/std::kill_dependency"]
@@ -7,18 +8,35 @@ helpviewer_keywords: ["std::atomic_compare_exchange_strong [C++]", "std::atomic_
 ---
 # &lt;atomic&gt; functions
 
-||||
-|-|-|-|
-|[atomic_compare_exchange_strong](#atomic_compare_exchange_strong)|[atomic_compare_exchange_strong_explicit](#atomic_compare_exchange_strong_explicit)|[atomic_compare_exchange_weak](#atomic_compare_exchange_weak)|
-|[atomic_compare_exchange_weak_explicit](#atomic_compare_exchange_weak_explicit)|[atomic_exchange](#atomic_exchange)|[atomic_exchange_explicit](#atomic_exchange_explicit)|
-|[atomic_fetch_add](#atomic_fetch_add)|[atomic_fetch_add_explicit](#atomic_fetch_add_explicit)|[atomic_fetch_and](#atomic_fetch_and)|
-|[atomic_fetch_and_explicit](#atomic_fetch_and_explicit)|[atomic_fetch_or](#atomic_fetch_or)|[atomic_fetch_or_explicit](#atomic_fetch_or_explicit)|
-|[atomic_fetch_sub](#atomic_fetch_sub)|[atomic_fetch_sub_explicit](#atomic_fetch_sub_explicit)|[atomic_fetch_xor](#atomic_fetch_xor)|
-|[atomic_fetch_xor_explicit](#atomic_fetch_xor_explicit)|[atomic_flag_clear](#atomic_flag_clear)|[atomic_flag_clear_explicit](#atomic_flag_clear_explicit)|
-|[atomic_flag_test_and_set](#atomic_flag_test_and_set)|[atomic_flag_test_and_set_explicit](#atomic_flag_test_and_set_explicit)|[atomic_init](#atomic_init)|
-|[atomic_is_lock_free](#atomic_is_lock_free)|[atomic_load](#atomic_load)|[atomic_load_explicit](#atomic_load_explicit)|
-|[atomic_signal_fence](#atomic_signal_fence)|[atomic_store](#atomic_store)|[atomic_store_explicit](#atomic_store_explicit)|
-|[atomic_thread_fence](#atomic_thread_fence)|[kill_dependency](#kill_dependency)|
+[atomic_compare_exchange_strong](#atomic_compare_exchange_strong)\
+[atomic_compare_exchange_strong_explicit](#atomic_compare_exchange_strong_explicit)\
+[atomic_compare_exchange_weak](#atomic_compare_exchange_weak)\
+[atomic_compare_exchange_weak_explicit](#atomic_compare_exchange_weak_explicit)\
+[atomic_exchange](#atomic_exchange)\
+[atomic_exchange_explicit](#atomic_exchange_explicit)\
+[atomic_fetch_add](#atomic_fetch_add)\
+[atomic_fetch_add_explicit](#atomic_fetch_add_explicit)\
+[atomic_fetch_and](#atomic_fetch_and)\
+[atomic_fetch_and_explicit](#atomic_fetch_and_explicit)\
+[atomic_fetch_or](#atomic_fetch_or)\
+[atomic_fetch_or_explicit](#atomic_fetch_or_explicit)\
+[atomic_fetch_sub](#atomic_fetch_sub)\
+[atomic_fetch_sub_explicit](#atomic_fetch_sub_explicit)\
+[atomic_fetch_xor](#atomic_fetch_xor)\
+[atomic_fetch_xor_explicit](#atomic_fetch_xor_explicit)\
+[atomic_flag_clear](#atomic_flag_clear)\
+[atomic_flag_clear_explicit](#atomic_flag_clear_explicit)\
+[atomic_flag_test_and_set](#atomic_flag_test_and_set)\
+[atomic_flag_test_and_set_explicit](#atomic_flag_test_and_set_explicit)\
+[atomic_init](#atomic_init)\
+[atomic_is_lock_free](#atomic_is_lock_free)\
+[atomic_load](#atomic_load)\
+[atomic_load_explicit](#atomic_load_explicit)\
+[atomic_signal_fence](#atomic_signal_fence)\
+[atomic_store](#atomic_store)\
+[atomic_store_explicit](#atomic_store_explicit)\
+[atomic_thread_fence](#atomic_thread_fence)\
+[kill_dependency](#kill_dependency)
 
 ## <a name="atomic_compare_exchange_strong"></a> atomic_compare_exchange_strong
 
@@ -51,7 +69,7 @@ A value of type `Ty`.
 
 ### Return Value
 
-**true** if the values are equal, otherwise **false**.
+**`true`** if the values are equal, otherwise **`false`**.
 
 ### Remarks
 
@@ -98,7 +116,7 @@ Second `memory_order` argument. The value of *Order2* cannot be `memory_order_re
 
 ### Return Value
 
-**true** if the values are equal, otherwise **false**.
+**`true`** if the values are equal, otherwise **`false`**.
 
 ### Remarks
 
@@ -135,7 +153,7 @@ A value of type `Ty`.
 
 ### Return Value
 
-**true** if the values are equal, otherwise **false**.
+**`true`** if the values are equal, otherwise **`false`**.
 
 ### Remarks
 
@@ -182,11 +200,11 @@ Second `memory_order` argument. The value of *Order2* cannot be `memory_order_re
 
 ### Return Value
 
-**true** if the values are equal, otherwise **false**.
+**`true`** if the values are equal, otherwise **`false`**.
 
 ### Remarks
 
-Both the strong and weak flavors of an *atomic compare and exchange operation* guarantee that they do not store the new value if the expected and current values are not equal. The strong flavor guarantees that it will store the new value if the expected and current values are equal. The weak flavor may sometimes return **false** and not store the new value even if the current and expected values are equal. In other words, the function will return **false**, but a later examination of the expected value might reveal that it did not change, and therefore should have compared as equal.
+Both the strong and weak flavors of an *atomic compare and exchange operation* guarantee that they do not store the new value if the expected and current values are not equal. The strong flavor guarantees that it will store the new value if the expected and current values are equal. The weak flavor may sometimes return **`false`** and not store the new value even if the current and expected values are equal. In other words, the function will return **`false`**, but a later examination of the expected value might reveal that it did not change, and therefore should have compared as equal.
 
 ## <a name="atomic_exchange"></a> atomic_exchange
 
@@ -625,7 +643,7 @@ The `atomic_fetch_xor_explicit` function performs a `read-modify-write` operatio
 
 ## <a name="atomic_flag_clear"></a> atomic_flag_clear
 
-Sets the **bool** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to **false**, within the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+Sets the **`bool`** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to **`false`**, within the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ```cpp
 inline void atomic_flag_clear(volatile atomic_flag* Flag) noexcept;
@@ -639,7 +657,7 @@ A pointer to an `atomic_flag` object.
 
 ## <a name="atomic_flag_clear_explicit"></a> atomic_flag_clear_explicit
 
-Sets the **bool** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to **false**, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
+Sets the **`bool`** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to **`false`**, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
 
 ```cpp
 inline void atomic_flag_clear_explicit(volatile atomic_flag* Flag, memory_order Order) noexcept;
@@ -656,7 +674,7 @@ A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_flag_test_and_set"></a> atomic_flag_test_and_set
 
-Sets the **bool** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to **true**, within the constraints of the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+Sets the **`bool`** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to **`true`**, within the constraints of the `memory_order_seq_cst`[memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ```cpp
 inline bool atomic_flag_test_and_set(volatile atomic_flag* Flag,) noexcept;
@@ -674,7 +692,7 @@ The initial value of *Flag*.
 
 ## <a name="atomic_flag_test_and_set_explicit"></a> atomic_flag_test_and_set_explicit
 
-Sets the **bool** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to **true**, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
+Sets the **`bool`** flag in an [atomic_flag](../standard-library/atomic-flag-structure.md) object to **`true`**, within the specified [memory_order](../standard-library/atomic-enums.md#memory_order_enum) constraints.
 
 ```cpp
 inline bool atomic_flag_test_and_set_explicit(volatile atomic_flag* Flag, memory_order Order) noexcept;
@@ -734,7 +752,7 @@ A pointer to an `atomic` object that stores a value of type `T`.
 
 ### Return Value
 
-**true** if atomic operations on *Atom* are lock-free; otherwise, **false**.
+**`true`** if atomic operations on *Atom* are lock-free; otherwise, **`false`**.
 
 ### Remarks
 
@@ -804,7 +822,7 @@ A memory ordering constraint that determines fence type.
 
 The *Order* argument determines fence type.
 
-|||
+|Value|Description|
 |-|-|
 |`memory_order_relaxed`|The fence has no effect.|
 |`memory_order_consume`|The fence is an acquire fence.|
@@ -886,7 +904,7 @@ A memory ordering constraint that determines fence type.
 
 The *Order* argument determines fence type.
 
-|||
+|Value|Description|
 |-|-|
 |`memory_order_relaxed`|The fence has no effect.|
 |`memory_order_consume`|The fence is an acquire fence.|

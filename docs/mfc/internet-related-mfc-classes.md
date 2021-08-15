@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internet-Related MFC Classes"
 title: "Internet-Related MFC Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC, Internet classes"]
@@ -16,48 +17,48 @@ For information about Internet-related classes and functions, see:
 
 ## ActiveX control classes
 
-- [COleControl](../mfc/reference/colecontrol-class.md)
+- [COleControl](reference/colecontrol-class.md)
 
 ## Active document classes
 
-- [CDocObjectServer](../mfc/reference/cdocobjectserver-class.md)
+- [CDocObjectServer](reference/cdocobjectserver-class.md)
 
-- [CDocObjectServerItem](../mfc/reference/cdocobjectserveritem-class.md)
+- [CDocObjectServerItem](reference/cdocobjectserveritem-class.md)
 
 ## Asynchronous moniker classes
 
-- [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md)
+- [CAsyncMonikerFile](reference/casyncmonikerfile-class.md)
 
-- [CDataPathProperty](../mfc/reference/cdatapathproperty-class.md)
+- [CDataPathProperty](reference/cdatapathproperty-class.md)
 
 ## WinInet classes
 
-- [CInternetSession](../mfc/reference/cinternetsession-class.md)
+- [CInternetSession](reference/cinternetsession-class.md)
 
-- [CInternetConnection](../mfc/reference/cinternetconnection-class.md)
+- [CInternetConnection](reference/cinternetconnection-class.md)
 
-- [CFtpConnection](../mfc/reference/cftpconnection-class.md)
+- [CFtpConnection](reference/cftpconnection-class.md)
 
-- [CGopherConnection](../mfc/reference/cgopherconnection-class.md)
+- [CGopherConnection](reference/cgopherconnection-class.md)
 
-- [CHttpConnection](../mfc/reference/chttpconnection-class.md)
+- [CHttpConnection](reference/chttpconnection-class.md)
 
-- [CInternetFile](../mfc/reference/cinternetfile-class.md)
+- [CInternetFile](reference/cinternetfile-class.md)
 
-- [CGopherFile](../mfc/reference/cgopherfile-class.md)
+- [CGopherFile](reference/cgopherfile-class.md)
 
-- [CHttpFile](../mfc/reference/chttpfile-class.md)
+- [CHttpFile](reference/chttpfile-class.md)
 
-- [CFileFind](../mfc/reference/cfilefind-class.md)
+- [CFileFind](reference/cfilefind-class.md)
 
-- [CFtpFileFind](../mfc/reference/cftpfilefind-class.md)
+- [CFtpFileFind](reference/cftpfilefind-class.md)
 
-- [CGopherFileFind](../mfc/reference/cgopherfilefind-class.md)
+- [CGopherFileFind](reference/cgopherfilefind-class.md)
 
-- [CGopherLocator](../mfc/reference/cgopherlocator-class.md)
+- [CGopherLocator](reference/cgopherlocator-class.md)
 
-- [CInternetException](../mfc/reference/cinternetexception-class.md)
+- [CInternetException](reference/cinternetexception-class.md)
 
 ## See also
 
-[MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
+[MFC Internet Programming Basics](mfc-internet-programming-basics.md)

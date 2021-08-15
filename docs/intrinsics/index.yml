@@ -1,0 +1,101 @@
+### YamlMime:Landing
+
+title: Compiler intrinsics and assembly language
+summary: Learn how Visual Studio can create low-level, processor-specific code for maximum performance and control.
+
+metadata:
+  title: Compiler intrinsics and assembly language
+  description: Visual Studio includes assemblers and compiler intrinsics for low-level programming tasks.
+  ms.topic: landing-page
+  ms.date: 05/26/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+landingContent:
+
+  # Card
+  - title: Use compiler intrinsics
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Compiler intrinsics overview
+            url: ../intrinsics/compiler-intrinsics.md
+      - linkListType: reference
+        links:
+          - text: ARM intrinsics
+            url: ../intrinsics/arm-intrinsics.md
+          - text: ARM64 intrinsics
+            url: ../intrinsics/arm64-intrinsics.md
+          - text: x86 intrinsics list
+            url: ../intrinsics/x86-intrinsics-list.md
+          - text: x64 (amd64) intrinsics list
+            url: ../intrinsics/x64-amd64-intrinsics-list.md
+          - text: Intrinsics available on all architectures
+            url: ../intrinsics/intrinsics-available-on-all-architectures.md
+          - text: Alphabetical intrinsics list
+            url: ../intrinsics/alphabetical-listing-of-intrinsic-functions.md
+
+  # Card
+  - title: Use inline assembly for x86 in Microsoft C/C++
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Inline assembler overview
+            url: ../assembler/inline/inline-assembler-overview.md
+      - linkListType: concept
+        links:
+          - text: The __asm keyword
+            url: ../assembler/inline/asm.md
+      - linkListType: how-to-guide
+        links:
+          - text: Use assembly language in __asm blocks
+            url: ../assembler/inline/using-assembly-language-in-asm-blocks.md
+          - text: Use C or C++ in __asm blocks
+            url: ../assembler/inline/using-c-or-cpp-in-asm-blocks.md
+          - text: Use and preserve registers
+            url: ../assembler/inline/using-and-preserving-registers-in-inline-assembly.md
+          - text: Call C++ functions in inline assembly
+            url: ../assembler/inline/calling-cpp-functions-in-inline-assembly.md
+          - text: Optimize inline assembly
+            url: ../assembler/inline/optimizing-inline-assembly.md
+
+  # Card
+  - title: Use the ARM and ARM64 assembler
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: ARM and ARM64 assembler reference
+            url: ../assembler/arm/arm-assembler-reference.md
+          - text: ARM and ARM64 assembler command-line reference
+            url: ../assembler/arm/arm-assembler-command-line-reference.md
+          - text: ARM and ARM64 assembler diagnostic messages
+            url: ../assembler/arm/arm-assembler-diagnostic-messages.md
+          - text: ARM and ARM64 assembler directives
+            url: ../assembler/arm/arm-assembler-directives.md
+
+  # Card
+  - title: Use the x86 and x64 assembler
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Microsoft Macro Assembler for x86 and x64 reference
+            url: ../assembler/masm/microsoft-macro-assembler-reference.md
+          - text: MASM for x64 (ml64.exe)
+            url: ../assembler/masm/masm-for-x64-ml64-exe.md
+          - text: ML and ML64 command-line reference
+            url: ../assembler/masm/ml-and-ml64-command-line-reference.md
+          - text: Directives reference
+            url: ../assembler/masm/directives-reference.md
+          - text: Symbols reference
+            url: ../assembler/masm/symbols-reference.md
+          - text: Operators reference
+            url: ../assembler/masm/operators-reference.md
+          - text: MASM BNF grammar
+            url: ../assembler/masm/masm-bnf-grammar.md
+          - text: ML and ML64 error messages
+            url: ../assembler/masm/ml-error-messages.md
+          - text: Processor manufacturer programming manuals
+            url: ../assembler/masm/processor-manufacturer-programming-manuals.md

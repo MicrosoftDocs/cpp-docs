@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Bookmarks"
 title: "Using Bookmarks"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["rowsets, bookmarks", "OLE DB provider templates, bookmarks", "bookmarks, OLE DB", "OLE DB providers, bookmark support"]
@@ -6,7 +7,7 @@ ms.assetid: 7fa1d1a8-5063-4aa9-93ee-815bb9c98fae
 ---
 # Using Bookmarks
 
-Before you open the rowset, you must tell the provider that you want to use bookmarks. To do this, set the `DBPROP_BOOKMARKS` property to **true** in your property set. The provider retrieves bookmarks as column zero, so you must use the special macro BOOKMARK_ENTRY and the `CBookmark` class if you're using a static accessor. `CBookmark` is a template class where the argument is the length in bytes of the bookmark buffer. The length of the buffer required for a bookmark depends on the provider. If you're using the ODBC OLE DB provider, as shown in the following example, the buffer must be 4 bytes.
+Before you open the rowset, you must tell the provider that you want to use bookmarks. To do this, set the `DBPROP_BOOKMARKS` property to **`true`** in your property set. The provider retrieves bookmarks as column zero, so you must use the special macro BOOKMARK_ENTRY and the `CBookmark` class if you're using a static accessor. `CBookmark` is a template class where the argument is the length in bytes of the bookmark buffer. The length of the buffer required for a bookmark depends on the provider. If you're using the ODBC OLE DB provider, as shown in the following example, the buffer must be 4 bytes.
 
 ```cpp
 class CProducts

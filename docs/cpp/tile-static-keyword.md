@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: tile_static Keyword"
 title: "tile_static Keyword"
 ms.date: "11/04/2016"
 f1_keywords: ["tile_static_CPP"]

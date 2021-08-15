@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __movsw"
 title: "__movsw"
 ms.date: "09/02/2019"
 f1_keywords: ["__movsw"]

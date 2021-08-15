@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: switch_is"
 title: "switch_is (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.switch_is"]
@@ -25,11 +26,9 @@ See the [case](case-cpp.md) example for a sample use of **switch_is**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**typedef**|
+|**Applies to**|**`typedef`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

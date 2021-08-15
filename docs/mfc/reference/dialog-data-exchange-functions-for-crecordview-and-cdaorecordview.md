@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Data Exchange Functions for CRecordView and CDaoRecordView"
 title: "Dialog Data Exchange Functions for CRecordView and CDaoRecordView"
 ms.date: "09/17/2019"
 f1_keywords: ["AFXDAO/DDX_FieldCBIndex", "AFXDAO/DDX_FieldCBString", "AFXDAO/DDX_FieldCBStringExact", "AFXDAO/DDX_FieldCheck", "AFXDAO/DDX_FieldLBIndex", "AFXDAO/DDX_FieldLBString", "AFXDAO/DDX_FieldLBStringExact", "AFXDAO/DDX_FieldRadio", "AFXDAO/DDX_FieldScroll", "AFXDAO/DDX_FieldText"]
@@ -14,7 +15,7 @@ This topic lists the DDX_Field functions used to exchange data between a [CRecor
 
 ### DDX_Field Functions
 
-|||
+|Name|Description|
 |-|-|
 |[DDX_FieldCBIndex](#ddx_fieldcbindex)|Transfers integer data between a recordset field data member and the index of the current selection in a combo box in a [CRecordView](../../mfc/reference/crecordview-class.md) or [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md).|
 |[DDX_FieldCBString](#ddx_fieldcbstring)|Transfers `CString` data between a recordset field data member and the edit control of a combo box in a `CRecordView` or `CDaoRecordView`. When moving data from the recordset to the control, this function selects the item in the combo box that begins with the characters in the specified string.|
@@ -25,12 +26,12 @@ This topic lists the DDX_Field functions used to exchange data between a [CRecor
 |[DDX_FieldLBStringExact](#ddx_fieldlbstringexact)|Manages the transfer of `CString` data between a list-box control and the field data members of a recordset. When moving data from the recordset to the control, this function selects the first item that exactly matches the specified string.|
 |[DDX_FieldRadio](#ddx_fieldradio)|Transfers integer data between a recordset field data member and a group of radio buttons in a `CRecordView` or `CDaoRecordView`.|
 |[DDX_FieldScroll](#ddx_fieldscroll)|Sets or gets the scroll position of a scroll bar control in a `CRecordView` or `CDaoRecordView`. Call from your [DoFieldExchange](../../mfc/reference/cdaorecordset-class.md#dofieldexchange) function.|
-|[DDX_FieldSlider](#ddx_fieldslider)|Synchronizes the thumb position of a slider control in a record view and an `int` field data member of a recordset. |
-|[DDX_FieldText](#ddx_fieldtext)|Overloaded versions are available for transferring `int`, **UINT**, **long**, `DWORD`, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float**, **double**, **short**, [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md), and [COleCurrency](../../mfc/reference/colecurrency-class.md) data between a recordset field data member and an edit box in a `CRecordView` or `CDaoRecordView`.|
+|[DDX_FieldSlider](#ddx_fieldslider)|Synchronizes the thumb position of a slider control in a record view and an **`int`** field data member of a recordset. |
+|[DDX_FieldText](#ddx_fieldtext)|Overloaded versions are available for transferring **`int`**, **UINT**, **`long`**, `DWORD`, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **`float`**, **`double`**, **`short`**, [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md), and [COleCurrency](../../mfc/reference/colecurrency-class.md) data between a recordset field data member and an edit box in a `CRecordView` or `CDaoRecordView`.|
 
 ## <a name="ddx_fieldcbindex"></a> DDX_FieldCBIndex
 
-The `DDX_FieldCBIndex` function synchronizes the index of the selected item in the list box control of a combo box control in a record view and an `int` field data member of a recordset associated with the record view.
+The `DDX_FieldCBIndex` function synchronizes the index of the selected item in the list box control of a combo box control in a record view and an **`int`** field data member of a recordset associated with the record view.
 
 ```cpp
 void AFXAPI DDX_FieldCBIndex(
@@ -174,7 +175,7 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
 ## <a name="ddx_fieldcheck"></a> DDX_FieldCheck
 
-The `DDX_FieldCheck` function manages the transfer of **int** data between a check box control in a dialog box, form view, or control view object and an **int** data member of the dialog box, form view, or control view object.
+The `DDX_FieldCheck` function manages the transfer of **`int`** data between a check box control in a dialog box, form view, or control view object and an **`int`** data member of the dialog box, form view, or control view object.
 
 ```cpp
 void AFXAPI DDX_FieldCheck(
@@ -216,7 +217,7 @@ For more information about DDX, see [Dialog Data Exchange and Validation](../../
 
 ## <a name="ddx_fieldlbindex"></a> DDX_FieldLBIndex
 
-The `DDX_FieldLBIndex` function synchronizes the index of the selected item in a list box control in a record view and an **int** field data member of a recordset associated with the record view.
+The `DDX_FieldLBIndex` function synchronizes the index of the selected item in a list box control in a record view and an **`int`** field data member of a recordset associated with the record view.
 
 ```cpp
 void AFXAPI DDX_FieldLBIndex(
@@ -360,7 +361,7 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
 ## <a name="ddx_fieldradio"></a> DDX_FieldRadio
 
-The `DDX_FieldRadio` function associates a zero-based **int** member variable of a record view's recordset with the currently selected radio button in a group of radio buttons in the record view.
+The `DDX_FieldRadio` function associates a zero-based **`int`** member variable of a record view's recordset with the currently selected radio button in a group of radio buttons in the record view.
 
 ```cpp
 void AFXAPI DDX_FieldRadio(
@@ -408,7 +409,7 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
 ## <a name="ddx_fieldscroll"></a> DDX_FieldScroll
 
-The `DDX_FieldScroll` function synchronizes the scroll position of a scroll bar control in a record view and an **int** field data member of a recordset associated with the record view (or with whatever integer variable you choose to map it to).
+The `DDX_FieldScroll` function synchronizes the scroll position of a scroll bar control in a record view and an **`int`** field data member of a recordset associated with the record view (or with whatever integer variable you choose to map it to).
 
 ```cpp
 void AFXAPI DDX_FieldScroll(
@@ -456,7 +457,7 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
 ## <a name="ddx_fieldslider"></a> DDX_FieldSlider
 
-The `DDX_FieldSlider` function synchronizes the thumb position of a slider control in a record view and an **int** field data member of a recordset associated with the record view (or with whatever integer variable you choose to map it to).
+The `DDX_FieldSlider` function synchronizes the thumb position of a slider control in a record view and an **`int`** field data member of a recordset associated with the record view (or with whatever integer variable you choose to map it to).
 
 ### Syntax
 
@@ -508,7 +509,7 @@ See [DDX_FieldText](#ddx_fieldtext) for a general DDX_Field example. Calls to `D
 
 ## <a name="ddx_fieldtext"></a> DDX_FieldText
 
-The `DDX_FieldText` function manages the transfer of **int**, **short**, **long**, DWORD, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float**, **double**, **BOOL**, or **BYTE** data between an edit box control and the field data members of a recordset.
+The `DDX_FieldText` function manages the transfer of **`int`**, **`short`**, **`long`**, DWORD, [CString](../../atl-mfc-shared/reference/cstringt-class.md), **`float`**, **`double`**, **BOOL**, or **BYTE** data between an edit box control and the field data members of a recordset.
 
 ```cpp
 void AFXAPI DDX_FieldText(

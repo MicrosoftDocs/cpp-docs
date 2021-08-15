@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an ATL Message Handler"
 title: "Adding an ATL Message Handler"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["message handlers [C++]", "ATL, windows", "message handling [C++], ATL message handler", "windows [C++], ATL", "ATL, message handlers"]

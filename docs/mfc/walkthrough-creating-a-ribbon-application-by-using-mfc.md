@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Creating a Ribbon Application By Using MFC"
 title: "Walkthrough: Creating a Ribbon Application By Using MFC"
 ms.date: "09/09/2019"
 helpviewer_keywords: ["ribbon application, creating (MFC)", "creating a ribbon application (MFC)"]

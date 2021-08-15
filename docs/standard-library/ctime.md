@@ -1,7 +1,8 @@
 ---
+description: "Learn more about: &lt;ctime&gt;"
 title: "&lt;ctime&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["<ctime>", "std::<ctime>"]
+f1_keywords: ["<ctime>"]
 helpviewer_keywords: ["ctime header"]
 ms.assetid: c1f7d4a4-4bfe-4e35-92cb-f63dbd3c39a8
 ---

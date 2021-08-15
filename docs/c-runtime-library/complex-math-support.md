@@ -1,12 +1,13 @@
 ---
 title: "C complex math support"
+description: "Describes C-language complex math support in the Microsoft C runtime library (CRT)"
 ms.date: "05/14/2019"
 f1_keywords: ["c.complex"]
 helpviewer_keywords: ["complex numbers, math routines", "math routines", "complex numbers"]
 ---
 # C complex math support
 
-The Microsoft C Runtime library (CRT) provides complex math library functions, including all of those required by ISO C99. The compiler does not directly support a **complex** or **_Complex** keyword, therefore the Microsoft implementation uses structure types to represent complex numbers.
+The Microsoft C Runtime library (CRT) provides complex math library functions, including all of those required by ISO C99. The compiler does not directly support a **`complex`** or **`_Complex`** keyword, therefore the Microsoft implementation uses structure types to represent complex numbers.
 
 These functions are implemented to balance performance with correctness. Because producing the correctly rounded result may be prohibitively expensive, these functions are designed to efficiently produce a close approximation to the correctly rounded result. In most cases, the result produced is within +/-1 ulp of the correctly rounded result, though there may be cases where there is greater inaccuracy.
 
@@ -18,15 +19,15 @@ The Microsoft implementation of the complex.h header defines these types as equi
 
 |Standard type|Microsoft type|
 |-|-|
-|**float complex** or **float _Complex**|**_Fcomplex**|
-|**double complex** or **double _Complex**|**_Dcomplex**|
-|**long double complex** or **long double _Complex**|**_Lcomplex**|
+|**`float complex`** or **`float _Complex`**|**_Fcomplex**|
+|**`double complex`** or **`double _Complex`**|**_Dcomplex**|
+|**`long double complex`** or **`long double _Complex`**|**_Lcomplex**|
 
 The math.h header defines a separate type, **struct _complex**, used for the [_cabs](../c-runtime-library/reference/cabs.md) function. The **struct _complex** type is not used by the equivalent complex math functions [cabs, cabsf, cabsl](../c-runtime-library/reference/cabs-cabsf-cabsl.md).
 
 ## Complex constants and macros
 
-**I** is defined as the **float** complex type **_Fcomplex** initialized by `{ 0.0f, 1.0f }`.
+**I** is defined as the complex type **_Fcomplex** initialized by `{ 0.0f, 1.0f }`.
 
 ## Trigonometric functions
 
@@ -89,4 +90,5 @@ Because complex numbers are not a native type in the Microsoft compiler, the sta
 
 ## See also
 
-[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Type-generic math](tgmath.md)\
+[Universal C runtime routines by category](../c-runtime-library/run-time-routines-by-category.md)

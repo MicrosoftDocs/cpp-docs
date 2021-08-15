@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 2) C4412"
 title: "Compiler Warning (level 2) C4412"
 ms.date: "11/04/2016"
 f1_keywords: ["C4412"]
@@ -23,7 +24,7 @@ C4412 is off by default. See [Compiler Warnings That Are Off by Default](../../p
 
 To resolve this warning, remove all functions from the type.
 
-## Example
+## Examples
 
 The following sample generates C4412.
 
@@ -51,8 +52,6 @@ int main() {
 }
 ```
 
-## Example
-
 The following sample is a header file that declares two types. The `Unsafe` type is unsafe because it has a member function.
 
 ```cpp
@@ -71,8 +70,6 @@ struct Safe {
 };
 ```
 
-## Example
-
 This sample exports functions with the types defined in the header file.
 
 ```cpp
@@ -87,8 +84,6 @@ void Unsafe::Test(int * pi) {
 __declspec(dllexport) Unsafe * __cdecl func() { return new Unsafe; }
 __declspec(dllexport) Safe * __cdecl func2() { return new Safe; }
 ```
-
-## Example
 
 The default calling convention in a **/clr:pure** compilation is different from a native compilation.  When C4412.h is included, `Test` defaults to `__clrcall`. If you compile and run this program (do not use **/c**), the program will throw an exception.
 

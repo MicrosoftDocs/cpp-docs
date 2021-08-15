@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCDynamicLayout Class"
 title: "CMFCDynamicLayout Class"
 ms.date: "08/29/2019"
 f1_keywords: ["CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout::AddItem", "AFXLAYOUT/CMFCDynamicLayout::Adjust", "AFXLAYOUT/CMFCDynamicLayout::Create", "AFXLAYOUT/CMFCDynamicLayout::GetHostWnd", "AFXLAYOUT/CMFCDynamicLayout::GetMinSize", "AFXLAYOUT/CMFCDynamicLayout::GetWindowRect", "AFXLAYOUT/CMFCDynamicLayout::HasItem", "AFXLAYOUT/CMFCDynamicLayout::IsEmpty", "AFXLAYOUT/CMFCDynamicLayout::LoadResource", "AFXLAYOUT/CMFCDynamicLayout::SetMinSize"]
@@ -314,7 +315,7 @@ Check if the move data specifies a nonzero horizontal move.
 BOOL IsHorizontal() const
 ```
 
-## Return Value
+### Return Value
 
 TRUE if the `MoveSettings` object specifies a nonzero horizontal move.
 
@@ -326,7 +327,7 @@ Check if the move data specifies no movement.
 BOOL IsNone() const
 ```
 
-## Return Value
+### Return Value
 
 TRUE if the `MoveSettings` object specifies no movement.
 
@@ -338,7 +339,7 @@ Check if the move data specifies a nonzero vertical movement.
 BOOL IsVertical() const
 ```
 
-## Return Value
+### Return Value
 
 TRUE if the `MoveSettings` object specifies a nonzero vertical movement.
 
@@ -453,7 +454,7 @@ Checks if the resize data specifies a nonzero horizontal resizing.
 BOOL IsHorizontal() const
 ```
 
-## Return Value
+### Return Value
 
 TRUE if the `SizeSettings` object specifies a nonzero horizontal resizing.
 
@@ -465,7 +466,7 @@ Checks if the resize data specifies no resizing.
 BOOL IsNone() const
 ```
 
-## Return Value
+### Return Value
 
 TRUE if the `SizeSettings` object specifies no resizing.
 
@@ -477,7 +478,7 @@ Checks if the resize data specifies a nonzero vertical resizing.
 BOOL IsVertical() const
 ```
 
-## Return Value
+### Return Value
 
 TRUE if the `SizeSettings` object specifies a nonzero vertical resizing.
 

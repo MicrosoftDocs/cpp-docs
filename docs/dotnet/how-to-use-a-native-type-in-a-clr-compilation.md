@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use a Native Type in a /clr Compilation"
 title: "How to: Use a Native Type in a -clr Compilation"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
@@ -13,7 +14,7 @@ Each assembly must contain the definition of every native type it will use.
 
 For more information, see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md).
 
-## Example
+## Examples
 
 This sample creates a component that defines and uses a native type.
 
@@ -31,8 +32,6 @@ public ref struct ManagedClass {
    }
 };
 ```
-
-## Example
 
 This sample defines a client that consumes the component. Notice that it is an error to access the native type, unless it is defined in the compiland.
 

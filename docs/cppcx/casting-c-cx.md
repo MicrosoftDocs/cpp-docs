@@ -1,11 +1,12 @@
 ---
+description: "Learn more about: Casting (C++/CX)"
 title: "Casting (C++/CX)"
 ms.date: "06/19/2018"
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455
 ---
 # Casting (C++/CX)
 
-Four different cast operators apply to Windows Runtime types: [static_cast Operator](../cpp/static-cast-operator.md), [dynamic_cast Operator](../cpp/dynamic-cast-operator.md), **safe_cast Operator**, and [reinterpret_cast Operator](../cpp/reinterpret-cast-operator.md). **safe_cast** and **static_cast** throw an exception when the conversion can't be performed; [static_cast Operator](../cpp/static-cast-operator.md) also performs compile-time type checking. **dynamic_cast** returns **nullptr** if it fails to convert the type. Although **reinterpret_cast** returns a non-null value, it might be invalid. For this reason, we recommend that you not use **reinterpret_cast** unless you know that the cast will succeed. In addition, we recommend that you not use C-style casts in your C++/CX code because they are identical to **reinterpret_cast**.
+Four different cast operators apply to Windows Runtime types: [static_cast Operator](../cpp/static-cast-operator.md), [dynamic_cast Operator](../cpp/dynamic-cast-operator.md), **safe_cast Operator**, and [reinterpret_cast Operator](../cpp/reinterpret-cast-operator.md). **safe_cast** and **`static_cast`** throw an exception when the conversion can't be performed; [static_cast Operator](../cpp/static-cast-operator.md) also performs compile-time type checking. **`dynamic_cast`** returns **`nullptr`** if it fails to convert the type. Although **`reinterpret_cast`** returns a non-null value, it might be invalid. For this reason, we recommend that you not use **`reinterpret_cast`** unless you know that the cast will succeed. In addition, we recommend that you not use C-style casts in your C++/CX code because they are identical to **`reinterpret_cast`**.
 
 The compiler and runtime also perform implicit casts—for example, in boxing operations when a value type or built-in type are passed as arguments to a method whose parameter type is `Object^`. In theory, an implicit cast should never cause an exception at run time; if the compiler can't perform an implicit conversion, it raises an error at compile time.
 
@@ -13,11 +14,11 @@ Windows Runtime is an abstraction over COM, which uses HRESULT error codes inste
 
 ## static_cast
 
-A **static_cast** is checked at compile time to determine whether there is an inheritance relationship between the two types. The cast causes a compiler error if the types are not related.
+A **`static_cast`** is checked at compile time to determine whether there is an inheritance relationship between the two types. The cast causes a compiler error if the types are not related.
 
-A **static_cast** on a ref class also causes a run-time check to be performed. A **static_cast** on a ref class can pass compile time verification but still fail at run time; in this case a `Platform::InvalidCastException` is thrown. In general, you don't have to handle these exceptions because almost always they indicate programming errors that you can eliminate during development and testing.
+A **`static_cast`** on a ref class also causes a run-time check to be performed. A **`static_cast`** on a ref class can pass compile time verification but still fail at run time; in this case a `Platform::InvalidCastException` is thrown. In general, you don't have to handle these exceptions because almost always they indicate programming errors that you can eliminate during development and testing.
 
-Use **static_cast** if the code explicitly declares a relationship between the two types, and you therefore are sure that the cast should work.
+Use **`static_cast`** if the code explicitly declares a relationship between the two types, and you therefore are sure that the cast should work.
 
 ```cpp
     interface class A{};
@@ -49,7 +50,7 @@ Use safe_cast if the code does not declare the relationship but you are sure tha
 
 ## dynamic_cast
 
-Use **dynamic_cast** when you cast an object (more specifically, a hat **^**) to a more derived type, you expect either that the target object might sometimes be **nullptr** or that the cast might fail, and you want to handle that condition as a regular code path instead of an exception. For example, in the **Blank App (Universal Windows)** project template, the `OnLaunched` method in app.xamp.cpp uses **dynamic_cast** to test whether the app window has content. It's not an error if it doesn’t have content; it is an expected condition. `Windows::Current::Content` is a `Windows::UI::XAML::UIElement` and the conversion is to a `Windows::UI.XAML::Controls::Frame`, which is a more derived type in the inheritance hierarchy.
+Use **`dynamic_cast`** when you cast an object (more specifically, a hat **^**) to a more derived type, you expect either that the target object might sometimes be **`nullptr`** or that the cast might fail, and you want to handle that condition as a regular code path instead of an exception. For example, in the **Blank App (Universal Windows)** project template, the `OnLaunched` method in app.xamp.cpp uses **`dynamic_cast`** to test whether the app window has content. It's not an error if it doesn’t have content; it is an expected condition. `Windows::Current::Content` is a `Windows::UI::XAML::UIElement` and the conversion is to a `Windows::UI.XAML::Controls::Frame`, which is a more derived type in the inheritance hierarchy.
 
 ```cpp
 void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ args)
@@ -68,15 +69,15 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-Another use of **dynamic_cast** is to probe an `Object^` to determine whether it contains a boxed value type. In this case, you attempt a `dynamic_cast<Platform::Box>` or a `dynamic_cast<Platform::IBox>`.
+Another use of **`dynamic_cast`** is to probe an `Object^` to determine whether it contains a boxed value type. In this case, you attempt a `dynamic_cast<Platform::Box>` or a `dynamic_cast<Platform::IBox>`.
 
 ## dynamic_cast and tracking references (%)
 
-You can also apply a **dynamic_cast** to a tracking reference, but in this case the cast behaves like **safe_cast**. It throws `Platform::InvalidCastException` on failure because a tracking reference cannot have a value of **nullptr**.
+You can also apply a **`dynamic_cast`** to a tracking reference, but in this case the cast behaves like **safe_cast**. It throws `Platform::InvalidCastException` on failure because a tracking reference cannot have a value of **`nullptr`**.
 
 ## reinterpret_cast
 
-We recommend that you not use [reinterpret_cast](../cpp/reinterpret-cast-operator.md) because neither a compile-time check nor a run-time check is performed. In the worst case, a **reinterpret_cast** makes it possible for programming errors to go undetected at development time and cause subtle or catastrophic errors in your program’s behavior. Therefore, we recommend that you use **reinterpret_cast** only in those rare cases when you must cast between unrelated types and you know that the cast will succeed. An example of a rare use is to convert a Windows Runtime type to its underlying ABI type—this means that you are taking control of the reference counting for the object. To do this, we recommend that you use the [ComPtr Class](../cpp/com-ptr-t-class.md) smart pointer. Otherwise, you must specifically call Release on the interface. The following example shows how a ref class can be cast to an `IInspectable*`.
+We recommend that you not use [reinterpret_cast](../cpp/reinterpret-cast-operator.md) because neither a compile-time check nor a run-time check is performed. In the worst case, a **`reinterpret_cast`** makes it possible for programming errors to go undetected at development time and cause subtle or catastrophic errors in your program’s behavior. Therefore, we recommend that you use **`reinterpret_cast`** only in those rare cases when you must cast between unrelated types and you know that the cast will succeed. An example of a rare use is to convert a Windows Runtime type to its underlying ABI type—this means that you are taking control of the reference counting for the object. To do this, we recommend that you use the [ComPtr Class](../cpp/com-ptr-t-class.md) smart pointer. Otherwise, you must specifically call Release on the interface. The following example shows how a ref class can be cast to an `IInspectable*`.
 
 ```cpp
 #include <wrl.h>
@@ -86,7 +87,7 @@ ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(winRtObject);
 // ...
 ```
 
-If you use **reinterpret_cast** to convert from oneWindows Runtime interface to another, you cause the object to be released twice. Therefore, only use this cast when you are converting to a non-C++ component extensions interface.
+If you use **`reinterpret_cast`** to convert from oneWindows Runtime interface to another, you cause the object to be released twice. Therefore, only use this cast when you are converting to a non-C++ component extensions interface.
 
 ## ABI types
 
@@ -100,18 +101,18 @@ If you use **reinterpret_cast** to convert from oneWindows Runtime interface to 
 
 - After you convert to ABI types, you own the lifetime of the type and must follow the COM rules. We recommend that you use `WRL::ComPtr` to simplify lifetime management of ABI pointers.
 
-The following table summarizes the cases in which it is safe to use **reinterpret_cast**. In every case, the cast is safe in both directions.
+The following table summarizes the cases in which it is safe to use **`reinterpret_cast`**. In every case, the cast is safe in both directions.
 
-|||
-|-|-|
-|`HSTRING`|`String^`|
-|`HSTRING*`|`String^*`|
-|`IInspectable*`|`Object^`|
-|`IInspectable**`|`Object^*`|
-|`IInspectable-derived-type*`|`same-interface-from-winmd^`|
-|`IInspectable-derived-type**`|`same-interface-from-winmd^*`|
-|`IDefault-interface-of-RuntimeClass*`|`same-RefClass-from-winmd^`|
-|`IDefault-interface-of-RuntimeClass**`|`same-RefClass-from-winmd^*`|
+| Cast from, cast to | Cast to, cast from |
+|--|--|
+| `HSTRING` | `String^` |
+| `HSTRING*` | `String^*` |
+| `IInspectable*` | `Object^` |
+| `IInspectable**` | `Object^*` |
+| `IInspectable-derived-type*` | `same-interface-from-winmd^` |
+| `IInspectable-derived-type**` | `same-interface-from-winmd^*` |
+| `IDefault-interface-of-RuntimeClass*` | `same-RefClass-from-winmd^` |
+| `IDefault-interface-of-RuntimeClass**` | `same-RefClass-from-winmd^*` |
 
 ## See also
 

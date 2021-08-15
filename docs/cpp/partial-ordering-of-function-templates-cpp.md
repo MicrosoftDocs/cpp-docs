@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Partial Ordering of Function Templates (C++)"
 title: "Partial Ordering of Function Templates (C++)"
 ms.date: "07/30/2019"
 helpviewer_keywords: ["partial ordering of function templates"]

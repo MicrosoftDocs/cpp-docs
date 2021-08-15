@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: defaultcollelem"
 title: "defaultcollelem"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.defaultcollelem"]
@@ -38,9 +39,7 @@ __interface IMyForm
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface method|
 |**Repeatable**|No|

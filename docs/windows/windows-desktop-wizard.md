@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Desktop Wizard"
 title: "Windows Desktop Wizard"
 ms.date: "03/29/2019"
 f1_keywords: ["vc.appwiz.win32.overview", "vc.appwiz.win32.appset"]
@@ -9,7 +10,7 @@ ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
 
 The Windows Desktop Wizard replaces the Win32 Application Wizard in Visual Studio 2017 and later. The wizard allows you to create any of four types of C++ projects (listed in the heading in the table below). In each case, you can specify additional options that are appropriate for the type of project you open.
 
-   ![Windows Desktop Wizard](media/windows-desktop-wizard.png)
+   ![Screenshot of the Windows Desktop Project wizard.](media/windows-desktop-wizard.png)
 
 The following table indicates which options are available for each application type.
 
@@ -68,7 +69,7 @@ Add support for one of the libraries supplied in Visual C++.
 
 ## Remarks
 
-Once you have created a Windows desktop application, you can add generic C++ classes using the [Generic](../ide/generic-cpp-class-wizard.md) Code Wizard. You can add other items, such as HTML files, header files, resources, or text files.
+Once you have created a Windows desktop application, you can add generic C++ classes using the [Generic](../ide/adding-a-generic-cpp-class.md#generic-c-class-wizard) Code Wizard. You can add other items, such as HTML files, header files, resources, or text files.
 
 > [!NOTE]
 > You cannot add ATL classes, and you can add MFC classes only to those Windows desktop application types that support MFC (see the previous table).

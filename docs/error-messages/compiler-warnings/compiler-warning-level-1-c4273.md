@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4273"
 title: "Compiler Warning (level 1) C4273"
 ms.date: "11/04/2016"
 f1_keywords: ["C4273"]
@@ -11,7 +12,7 @@ ms.assetid: cc18611d-9454-40a4-ad73-69823d5888fb
 
 Two definitions in a file differ in their use of [dllimport](../../cpp/dllexport-dllimport.md).
 
-## Example
+## Examples
 
 The following sample generates C4273.
 
@@ -21,8 +22,6 @@ The following sample generates C4273.
 char __declspec(dllimport) c;
 char c;   // C4273, delete this line or the line above to resolve
 ```
-
-## Example
 
 The following sample generates C4273.
 

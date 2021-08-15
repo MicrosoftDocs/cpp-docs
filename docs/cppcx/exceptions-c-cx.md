@@ -1,11 +1,12 @@
 ---
+description: "Learn more about: Exceptions (C++/CX)"
 title: "Exceptions (C++/CX)"
 ms.date: "07/02/2019"
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
 ---
 # Exceptions (C++/CX)
 
-Error handling in C++/CX is based on exceptions. At the most fundamental level, Windows Runtime components report errors as HRESULT values. In C++/CX, these values are converted to strongly typed exceptions that contain an HRESULT value and a string description that you can access programmatically.  Exceptions are implemented as a `ref class` that derives from `Platform::Exception`.  The `Platform` namespace defines distinct exception classes for the most common HRESULT values; all other values are reported through the `Platform::COMException` class. All exception classes have an [Exception::HResult](platform-exception-class.md#hresult) field that you can use to retrieve the original HRESULT. You can also examine call-stack information for user code in the debugger that can help pinpoint the original source of the exception, even if it originated in code that was written in a language other than C++.
+Error handling in C++/CX is based on exceptions. At the most fundamental level, Windows Runtime components report errors as HRESULT values. In C++/CX, these values are converted to strongly typed exceptions that contain an HRESULT value and a string description that you can access programmatically.  Exceptions are implemented as a **`ref class`** that derives from `Platform::Exception`.  The `Platform` namespace defines distinct exception classes for the most common HRESULT values; all other values are reported through the `Platform::COMException` class. All exception classes have an [Exception::HResult](platform-exception-class.md#hresult) field that you can use to retrieve the original HRESULT. You can also examine call-stack information for user code in the debugger that can help pinpoint the original source of the exception, even if it originated in code that was written in a language other than C++.
 
 ## Exceptions
 
@@ -57,7 +58,7 @@ To catch exceptions that are thrown during an asynchronous operation, use the ta
 
 ## UnhandledErrorDetected event
 
-In Windows 8.1 you can subscribe to the [Windows::ApplicationModel::Core::CoreApplication::UnhandledErrorDetected](/uwp/api/windows.applicationmodel.core.icoreapplicationunhandlederror.unhandlederrordetected) static event, which provides access to unhandled errors that are about to bring down the process. Regardless of where the error originated, it reaches this handler as a [Windows::ApplicationModel::Core::UnhandledError](/uwp/api/windows.applicationmodel.core.unhandlederror) object that's passed in with the event args. When you call `Propagate` on the object, it creates and throws a `Platform::*Exception` of the type that corresponds to the error code. In the catch blocks, you can save user state if necessary and then either allow the process to terminate by calling `throw`, or do something to get the program back into a known state. The following example shows the basic pattern:
+In Windows 8.1 you can subscribe to the [Windows::ApplicationModel::Core::CoreApplication::UnhandledErrorDetected](/uwp/api/windows.applicationmodel.core.icoreapplicationunhandlederror.unhandlederrordetected) static event, which provides access to unhandled errors that are about to bring down the process. Regardless of where the error originated, it reaches this handler as a [Windows::ApplicationModel::Core::UnhandledError](/uwp/api/windows.applicationmodel.core.unhandlederror) object that's passed in with the event args. When you call `Propagate` on the object, it creates and throws a `Platform::*Exception` of the type that corresponds to the error code. In the catch blocks, you can save user state if necessary and then either allow the process to terminate by calling **`throw`**, or do something to get the program back into a known state. The following example shows the basic pattern:
 
 In app.xaml.h:
 
@@ -93,7 +94,7 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
 
 ### Remarks
 
-C++/CX does not use the `finally` clause.
+C++/CX does not use the **`finally`** clause.
 
 ## See also
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Sending and Receiving"
 title: "Message Sending and Receiving"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows messages [MFC], handling in MFC", "control-notification messages [MFC]", "messages [MFC], receiving", "messages [MFC], MFC", "MFC, messages", "messages [MFC], sending"]
@@ -14,12 +15,12 @@ The `Run` member function of class `CWinApp` retrieves messages and dispatches t
 
 Now consider the receiving part of the process.
 
-The initial receiver of a message must be a window object. Windows messages are usually handled directly by that window object. Command messages, usually originating in the application's main frame window, get routed to the command-target chain described in [Command Routing](../mfc/command-routing.md).
+The initial receiver of a message must be a window object. Windows messages are usually handled directly by that window object. Command messages, usually originating in the application's main frame window, get routed to the command-target chain described in [Command Routing](command-routing.md).
 
 Each object capable of receiving messages or commands has its own message map that pairs a message or command with the name of its handler.
 
-When a command-target object receives a message or command, it searches its message map for a match. If it finds a handler for the message, it calls the handler. For more information about how message maps are searched, see [How the Framework Searches Message Maps](../mfc/how-the-framework-searches-message-maps.md). Refer again to the figure [Commands in the Framework](../mfc/user-interface-objects-and-command-ids.md).
+When a command-target object receives a message or command, it searches its message map for a match. If it finds a handler for the message, it calls the handler. For more information about how message maps are searched, see [How the Framework Searches Message Maps](how-the-framework-searches-message-maps.md). Refer again to the figure [Commands in the Framework](user-interface-objects-and-command-ids.md).
 
 ## See also
 
-[How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
+[How the Framework Calls a Handler](how-the-framework-calls-a-handler.md)

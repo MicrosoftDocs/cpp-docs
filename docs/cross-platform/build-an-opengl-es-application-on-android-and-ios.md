@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Build an OpenGL ES application on Android and iOS"
 title: "Build an OpenGL ES application on Android and iOS"
 ms.date: "10/09/2019"
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
@@ -19,7 +20,7 @@ To build and test the iOS app, you'll need a Mac computer. Set it up according t
 
 In this tutorial, you first create a new OpenGL ES Application project. and then build and run the default app in an Android emulator. Next you build the app for iOS and run the app on an iOS device.
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 1. In Visual Studio, choose **File** > **New** > **Project**.
 
@@ -27,15 +28,15 @@ In this tutorial, you first create a new OpenGL ES Application project. and then
 
 1. Give the app a name like *MyOpenGLESApp*, and then choose **OK**.
 
-   ![New OpenGLES Application project](../cross-platform/media/cppmdd-opengles-newproj.png "New OpenGLES Application project")
+   ![Screenshot of the New Project dialog where the OpenGLES Application project template is selected, with MyOpenGLESApp in the Name textbox.](../cross-platform/media/cppmdd-opengles-newproj.png "New OpenGLES Application project")
 
    Visual Studio creates the new solution and opens Solution Explorer.
 
-   ![MyOpenGLESApp in Solution Explorer](../cross-platform/media/cppmdd-opengles-solexpl.png "MyOpenGLESApp in Solution Explorer")
+   ![Screenshot of MyOpenGLESApp in Solution Explorer.](../cross-platform/media/cppmdd-opengles-solexpl.png "MyOpenGLESApp in Solution Explorer")
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. In Visual Studio, choose **File** > **New** > **Project**.
 
@@ -45,7 +46,7 @@ In this tutorial, you first create a new OpenGL ES Application project. and then
 
    Visual Studio creates the new solution and opens Solution Explorer.
 
-   ![MyOpenGLESApp in Solution Explorer](../cross-platform/media/cppmdd-opengles-solexpl.png "MyOpenGLESApp in Solution Explorer")
+   ![Screenshot of MyOpenGLESApp in Solution Explorer.](../cross-platform/media/cppmdd-opengles-solexpl.png "MyOpenGLESApp in Solution Explorer")
 
 ::: moniker-end
 
@@ -71,21 +72,21 @@ The solution created by the template sets the Android app as the default project
 
 1. If it isn't already selected, choose **x86** from the **Solution Platforms** drop-down list.
 
-   ![Set the Solution Platform to x86](../cross-platform/media/cppmdd-opengles-solutionplat.png "Set the Solution Platform to x86")
+   ![Screenshot of the Solution Platform dropdown with x86 highlighted.](../cross-platform/media/cppmdd-opengles-solutionplat.png "Set the Solution Platform to x86")
 
    Use x86 to target the emulator. To target a device, choose the solution platform based on the device processor. If the **Solution Platforms** list isn't displayed, choose **Solution Platforms** from the **Add/Remove Buttons** list, and then choose your platform.
 
 1. In **Solution Explorer**, open the shortcut menu for `MyOpenGLESApp.Android.Packaging` project and then choose **Build**.
 
-   ![Build Android Packaging Project](../cross-platform/media/cppmdd-opengles-andbuild.png "Build Android Packaging Project")
+   ![Screenshot of the Solution Explorer window with the shortcut menu for the Android Packaging Project showing the Build command.](../cross-platform/media/cppmdd-opengles-andbuild.png "Build Android Packaging Project")
 
    The Output window displays the output of the build process for the Android shared library and the Android app.
 
-   ![Build Output for Android projects](../cross-platform/media/cppmdd-opengles-andoutput.png "Build Output for Android projects")
+   ![Screenshot of Build Output for Android projects.](../cross-platform/media/cppmdd-opengles-andoutput.png "Build Output for Android projects")
 
 1. Choose one of the emulated Android device profiles as your deployment target.
 
-   ![Choose deployment target](../cross-platform/media/cppmdd-opengles-pickemulator.png "Choose deployment target")
+   ![Choose deployment target.](../cross-platform/media/cppmdd-opengles-pickemulator.png "Choose deployment target")
 
    You may have installed other emulators, or connected an Android device. You can choose them in the deployment target dropdown list. To run the app, the built Solution Platform must match the platform of the target device.
 
@@ -93,7 +94,7 @@ The solution created by the template sets the Android app as the default project
 
    Visual Studio starts the emulator, which takes several seconds to load and deploy your code. Here's how the app appears in the emulator:
 
-   ![App running in Android Emulator](../cross-platform/media/cppmdd-opengles-andemulator.png "App running in Android Emulator")
+   ![Screenshot of the app running in an Android Emulator.](../cross-platform/media/cppmdd-opengles-andemulator.png "App running in Android Emulator")
 
    Once your app has started, you can set breakpoints and use the debugger to step through code, examine locals, and watch values.
 
@@ -123,39 +124,39 @@ To deploy your app to an iOS device, first set up automatic signing in Xcode. Au
 
 1. From the Xcode project's "General" settings, change the value of **Bundle Identifier** to `com.<NameOfVSProject>`, where `<NameOfVSProject>` is the same name as the Visual Studio solution project you created. For example, if you created a project called `MyOpenGLESApp` on Visual Studio, then set **Bundle Identifier** to `com.MyOpenGLESApp`.
 
-   ![Xcode bundle identifier](../cross-platform/media/cppmdd-opengles-iosxcodeid.png "Xcode bundle identifier")
+   ![Screenshot of the Xcode bundle identifier.](../cross-platform/media/cppmdd-opengles-iosxcodeid.png "Xcode bundle identifier")
 
 1. To enable automatic signing, check. Automatically manage signing**.
 
-   ![Xcode automatic signing](../cross-platform/media/cppmdd-opengles-iosxcodesign.png "Xcode automatic signing")
+   ![Screenshot of Xcode automatic signing value.](../cross-platform/media/cppmdd-opengles-iosxcodesign.png "Xcode automatic signing")
 
 1. Select the team name of the Apple ID you added as the development **Team**.
 
-   ![Xcode team](../cross-platform/media/cppmdd-opengles-iosxcodeteam.png "Xcode team")
+   ![Screenshot of the Xcode team value.](../cross-platform/media/cppmdd-opengles-iosxcodeteam.png "Xcode team")
 
 ### To build and run the iOS app on an iOS device
 
 1. Run the remote agent on your Mac, and verify that Visual Studio is paired to the remote agent. To start the remote agent, open a Terminal app window and enter `vcremote`. For more information, see [Configure the remote agent in Visual Studio](../cross-platform/install-and-configure-tools-to-build-using-ios.md#ConfigureVS).
 
-   ![Mac Terminal window running vcremote](../cross-platform/media/cppmdd-common-vcremote.png "Mac Terminal window running vcremote")
+   ![Mac Terminal window running vcremote.](../cross-platform/media/cppmdd-common-vcremote.png "Mac Terminal window running vcremote")
 
 1. Attach an iOS device to your Mac. When you attach your device to a computer for the first time, an alert asks whether you trust the computer to access your device. Enable the device to trust the Mac computer.
 
 1. On Visual Studio, if it isn't already selected, choose the solution platform from the **Solution Platforms** drop-down list based on your device processor. In this example, it's an **ARM64** processor.
 
-   ![Set the Solution Platform to ARM64](../cross-platform/media/cppmdd-opengles-pickplatformarm64.png "Set the Solution Platform to ARM64")
+   ![Screenshot of setting the Solution Platform to ARM64.](../cross-platform/media/cppmdd-opengles-pickplatformarm64.png "Set the Solution Platform to ARM64")
 
 1. In Solution Explorer, open the shortcut menu for the MyOpenGLESApp.iOS.Application project and choose **Unload Project** to unload the project.
 
 1. Again, open the shortcut menu for the unloaded MyOpenGLESApp.iOS.Application project and choose **Edit project.pbxproj** to edit the project file. In the `project.pbxproj` file, look for the `buildSettings` attribute and add `DEVELOPMENT_TEAM` using your Apple Team ID. The screenshot below shows an example value of `123456ABC` for the Apple Team ID. You can find the value of your Apple Team ID from Xcode. Go to **Build Settings** and hover over your development team name to show a tooltip. The tooltip shows your team ID.
 
-   ![Set development team](../cross-platform/media/cppmdd-opengles-iosdevelopmentteam.png "Set development team")
+   ![Screenshot of setting the development team.](../cross-platform/media/cppmdd-opengles-iosdevelopmentteam.png "Set development team")
 
 1. Close the `project.pbxproj` file, then open the shortcut menu for the unloaded MyOpenGLESApp.iOS.Application project and choose **Reload Project** to reload the project.
 
 1. Now build the MyOpenGLESApp.iOS.Application project by opening the shortcut menu for the project and choosing **Build**.
 
-   ![Build iOS Application project](../cross-platform/media/cppmdd-opengles-iosbuild.png "Build iOS Application project")
+   ![Using the shortcut menu to build the iOS Application project.](../cross-platform/media/cppmdd-opengles-iosbuild.png "Build iOS Application project")
 
    The Output window displays the output of the build process. It shows results for the iOS static library and the iOS app. On the Mac, the Terminal window running the remote agent shows the command and file transfer activity.
 
@@ -163,11 +164,11 @@ To deploy your app to an iOS device, first set up automatic signing in Xcode. Au
 
 1. Choose your iOS device on the toolbar to run the app on your device attached to your Mac. If the app doesn't start, verify that the device gives permission for your deployed application to execute on the device. This permission can be set by going to **Settings** > **General** > **Device Management** on the device. Select your Developer App account, trust your account, and verify the app. Try to run the app again from Visual Studio.
 
-   ![iOS app on iOS device](../cross-platform/media/cppmdd-opengles-iosdevice.png "iOS app on iOS device")
+   ![Screenshot of the iOS app on an iOS device.](../cross-platform/media/cppmdd-opengles-iosdevice.png "iOS app on iOS device")
 
    Once your app has started, you can set breakpoints and use the Visual Studio debugger to examine locals, see the call stack, and watch values.
 
-   ![Debugger at breakpoint in iOS app](../cross-platform/media/cppmdd-opengles-iosdebug.png "Debugger at breakpoint in iOS app")
+   ![Screenshot of the Debugger at a breakpoint in the iOS app.](../cross-platform/media/cppmdd-opengles-iosdebug.png "Debugger at breakpoint in iOS app")
 
 1. Press **Shift**+**F5** to stop debugging.
 
@@ -181,6 +182,6 @@ You can modify the shared C++ code to add or change common functionality. Change
 
 To see the IntelliSense for a particular project platform, choose the project in the context switcher dropdown. It's in the Navigation bar at the top of the editor window.
 
-![Project Context Switcher dropdown in Editor](../cross-platform/media/cppmdd-opengles-contextswitcher.png)
+![Screenshot of the Project Context Switcher dropdown in the Editor.](../cross-platform/media/cppmdd-opengles-contextswitcher.png)
 
 IntelliSense issues in code that's used by the current project are marked with a red wavy line. A purple wavy line marks issue in other projects. Visual Studio doesn't support code colorization or IntelliSense for Java or Objective-C files. However, you can still modify the source files and resources. Use them to set your application name, icon, and other implementation details.

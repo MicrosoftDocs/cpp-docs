@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: switch_type"
 title: "switch_type (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.switch_type"]
@@ -51,11 +52,9 @@ See the [case](case-cpp.md) example for a sample use of **switch_type**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**typedef**|
+|**Applies to**|**`typedef`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

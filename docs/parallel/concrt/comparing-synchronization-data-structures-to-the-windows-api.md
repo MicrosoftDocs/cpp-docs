@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comparing Synchronization Data Structures to the Windows API"
 title: "Comparing Synchronization Data Structures to the Windows API"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["synchronization data structures, compared to Windows API", "event class, example"]
@@ -18,13 +19,13 @@ The [concurrency::critical_section](../../parallel/concrt/reference/critical-sec
 
 The [concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) class resembles Windows slim reader/writer (SRW) locks. The following table explains the similarities and differences.
 
-|Feature|`reader_writer_lock`|SRW lock|
-|-------------|--------------------------|--------------|
-|Non-reentrant|Yes|Yes|
-|Can promote a reader to a writer (upgrade support)|No|No|
-|Can demote a writer to a reader (downgrade support)|No|No|
-|Write-preference lock|Yes|No|
-|FIFO access to writers|Yes|No|
+| Feature | `reader_writer_lock` class | SRW lock |
+|--|--|--|
+| Non-reentrant | Yes | Yes |
+| Can promote a reader to a writer (upgrade support) | No | No |
+| Can demote a writer to a reader (downgrade support) | No | No |
+| Write-preference lock | Yes | No |
+| FIFO access to writers | Yes | No |
 
 For more information about SRW locks, see [Slim Reader/Writer (SRW) Locks](/windows/win32/sync/slim-reader-writer--srw--locks) in the Platform SDK.
 

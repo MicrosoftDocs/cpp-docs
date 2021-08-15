@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFrameWndEx Class"
 title: "CFrameWndEx Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CFrameWndEx", "AFXFRAMEWNDEX/CFrameWndEx", "AFXFRAMEWNDEX/CFrameWndEx::ActiveItemRecalcLayout", "AFXFRAMEWNDEX/CFrameWndEx::AddPane", "AFXFRAMEWNDEX/CFrameWndEx::AdjustDockingLayout", "AFXFRAMEWNDEX/CFrameWndEx::DelayUpdateFrameMenu", "AFXFRAMEWNDEX/CFrameWndEx::DockPane", "AFXFRAMEWNDEX/CFrameWndEx::DockPaneLeftOf", "AFXFRAMEWNDEX/CFrameWndEx::EnableAutoHidePanes", "AFXFRAMEWNDEX/CFrameWndEx::EnableDocking", "AFXFRAMEWNDEX/CFrameWndEx::EnableFullScreenMainMenu", "AFXFRAMEWNDEX/CFrameWndEx::EnableFullScreenMode", "AFXFRAMEWNDEX/CFrameWndEx::EnableLoadDockState", "AFXFRAMEWNDEX/CFrameWndEx::EnablePaneMenu", "AFXFRAMEWNDEX/CFrameWndEx::GetActivePopup", "AFXFRAMEWNDEX/CFrameWndEx::GetDefaultResId", "AFXFRAMEWNDEX/CFrameWndEx::GetDockingManager", "AFXFRAMEWNDEX/CFrameWndEx::GetMenuBar", "AFXFRAMEWNDEX/CFrameWndEx::GetPane", "AFXFRAMEWNDEX/CFrameWndEx::GetRibbonBar", "AFXFRAMEWNDEX/CFrameWndEx::GetTearOffBars", "AFXFRAMEWNDEX/CFrameWndEx::GetToolbarButtonToolTipText", "AFXFRAMEWNDEX/CFrameWndEx::InsertPane", "AFXFRAMEWNDEX/CFrameWndEx::IsFullScreen", "AFXFRAMEWNDEX/CFrameWndEx::IsMenuBarAvailable", "AFXFRAMEWNDEX/CFrameWndEx::IsPointNearDockSite", "AFXFRAMEWNDEX/CFrameWndEx::IsPrintPreview", "AFXFRAMEWNDEX/CFrameWndEx::LoadFrame", "AFXFRAMEWNDEX/CFrameWndEx::NegotiateBorderSpace", "AFXFRAMEWNDEX/CFrameWndEx::OnActivate", "AFXFRAMEWNDEX/CFrameWndEx::OnActivateApp", "AFXFRAMEWNDEX/CFrameWndEx::OnChangeVisualManager", "AFXFRAMEWNDEX/CFrameWndEx::OnClose", "AFXFRAMEWNDEX/CFrameWndEx::OnCloseDockingPane", "AFXFRAMEWNDEX/CFrameWndEx::OnCloseMiniFrame", "AFXFRAMEWNDEX/CFrameWndEx::OnClosePopupMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnCmdMsg", "AFXFRAMEWNDEX/CFrameWndEx::OnContextHelp", "AFXFRAMEWNDEX/CFrameWndEx::OnCreate", "AFXFRAMEWNDEX/CFrameWndEx::OnDestroy", "AFXFRAMEWNDEX/CFrameWndEx::OnDrawMenuImage", "AFXFRAMEWNDEX/CFrameWndEx::OnDrawMenuLogo", "AFXFRAMEWNDEX/CFrameWndEx::OnDWMCompositionChanged", "AFXFRAMEWNDEX/CFrameWndEx::OnExitSizeMove", "AFXFRAMEWNDEX/CFrameWndEx::OnGetMinMaxInfo", "AFXFRAMEWNDEX/CFrameWndEx::OnIdleUpdateCmdUI", "AFXFRAMEWNDEX/CFrameWndEx::OnLButtonDown", "AFXFRAMEWNDEX/CFrameWndEx::OnLButtonUp", "AFXFRAMEWNDEX/CFrameWndEx::OnMenuButtonToolHitTest", "AFXFRAMEWNDEX/CFrameWndEx::OnMenuChar", "AFXFRAMEWNDEX/CFrameWndEx::OnMouseMove", "AFXFRAMEWNDEX/CFrameWndEx::OnMoveMiniFrame", "AFXFRAMEWNDEX/CFrameWndEx::OnNcActivate", "AFXFRAMEWNDEX/CFrameWndEx::OnNcCalcSize", "AFXFRAMEWNDEX/CFrameWndEx::OnNcHitTest", "AFXFRAMEWNDEX/CFrameWndEx::OnNcMouseMove", "AFXFRAMEWNDEX/CFrameWndEx::OnNcPaint", "AFXFRAMEWNDEX/CFrameWndEx::OnPaneCheck", "AFXFRAMEWNDEX/CFrameWndEx::OnPostPreviewFrame", "AFXFRAMEWNDEX/CFrameWndEx::OnPowerBroadcast", "AFXFRAMEWNDEX/CFrameWndEx::OnSetMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnSetPreviewMode", "AFXFRAMEWNDEX/CFrameWndEx::OnSetText", "AFXFRAMEWNDEX/CFrameWndEx::OnShowCustomizePane", "AFXFRAMEWNDEX/CFrameWndEx::OnShowPanes", "AFXFRAMEWNDEX/CFrameWndEx::OnShowPopupMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnSize", "AFXFRAMEWNDEX/CFrameWndEx::OnSizing", "AFXFRAMEWNDEX/CFrameWndEx::OnSysColorChange", "AFXFRAMEWNDEX/CFrameWndEx::OnTearOffMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnToolbarContextMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnToolbarCreateNew", "AFXFRAMEWNDEX/CFrameWndEx::OnToolbarDelete", "AFXFRAMEWNDEX/CFrameWndEx::OnUpdateFrameMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnUpdateFrameTitle", "AFXFRAMEWNDEX/CFrameWndEx::OnUpdatePaneMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnWindowPosChanged", "AFXFRAMEWNDEX/CFrameWndEx::PaneFromPoint", "AFXFRAMEWNDEX/CFrameWndEx::PreTranslateMessage", "AFXFRAMEWNDEX/CFrameWndEx::RecalcLayout", "AFXFRAMEWNDEX/CFrameWndEx::RemovePaneFromDockManager", "AFXFRAMEWNDEX/CFrameWndEx::SetDockState", "AFXFRAMEWNDEX/CFrameWndEx::SetPrintPreviewFrame", "AFXFRAMEWNDEX/CFrameWndEx::SetupToolbarMenu", "AFXFRAMEWNDEX/CFrameWndEx::ShowFullScreen", "AFXFRAMEWNDEX/CFrameWndEx::ShowPane", "AFXFRAMEWNDEX/CFrameWndEx::UpdateCaption", "AFXFRAMEWNDEX/CFrameWndEx::WinHelp"]
@@ -604,7 +605,7 @@ TRUE if the point is located in an alignment zone; otherwise, FALSE.
 
 The following table lists the possible values for the *dwBarAlignment* parameter.
 
-|||
+|Value|Description|
 |-|-|
 |CBRS_ALIGN_TOP|Aligned to the top.  |
 |CBRS_ALIGN_RIGHT|Aligned to the right.  |
@@ -718,7 +719,7 @@ afx_msg void OnActivate(
 
 The following table lists the possible values for the *nState* parameter.
 
-|||
+|Value|Description|
 |-|-|
 |WA_ACTIVE|The frame is selected by a method other than a mouse click.  |
 |WA_CLICKACTIVE|The frame is selected by a mouse click.  |
@@ -1137,11 +1138,11 @@ afx_msg LRESULT OnMenuChar(
 
 The high-order word must be one of the following values.
 
-|||
-|-|-|
-`0` | The framework should ignore the keystroke.
-`1`  | The framework should close the menu.
-`2`  | The framework should select one of the items displayed in the menu. The low-order word contains the ID of the command to select.
+| Value | Description |
+|--|--|
+| `0` | The framework should ignore the keystroke. |
+| `1` | The framework should close the menu. |
+| `2` | The framework should select one of the items displayed in the menu. The low-order word contains the ID of the command to select. |
 
 ## <a name="onmousemove"></a> CFrameWndEx::OnMouseMove
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _variant_t::_variant_t"
 title: "_variant_t::_variant_t"
 ms.date: "11/04/2016"
 f1_keywords: ["_variant_t::_variant_t"]
@@ -131,7 +132,7 @@ Pointer to a `VARIANT` object to be copied into the new `_variant_t` object.
 A `_variant_t` object to be copied into the new `_variant_t` object.
 
 *fCopy*<br/>
-If **false**, the supplied `VARIANT` object is attached to the new `_variant_t` object without making a new copy by `VariantCopy`.
+If **`false`**, the supplied `VARIANT` object is attached to the new `_variant_t` object without making a new copy by `VariantCopy`.
 
 *ISrc, sSrc*<br/>
 An integer value to be copied into the new `_variant_t` object.
@@ -152,7 +153,7 @@ A `_bstr_t` object to be copied into the new `_variant_t` object.
 A string to be copied into the new `_variant_t` object.
 
 *bSrc*<br/>
-A **bool** value to be copied into the new `_variant_t` object.
+A **`bool`** value to be copied into the new `_variant_t` object.
 
 *pIUknownSrc*<br/>
 COM interface pointer to a VT_UNKNOWN object to be encapsulated into the new `_variant_t` object.
@@ -167,22 +168,22 @@ A `DECIMAL` value to be copied into the new `_variant_t` object.
 A `BYTE` value to be copied into the new `_variant_t` object.
 
 *cSrc*<br/>
-A **char** value to be copied into the new `_variant_t` object.
+A **`char`** value to be copied into the new `_variant_t` object.
 
 *usSrc*<br/>
-A **unsigned short** value to be copied into the new `_variant_t` object.
+A **`unsigned short`** value to be copied into the new `_variant_t` object.
 
 *ulSrc*<br/>
-A **unsigned long** value to be copied into the new `_variant_t` object.
+A **`unsigned long`** value to be copied into the new `_variant_t` object.
 
 *iSrc*<br/>
-An **int** value to be copied into the new `_variant_t` object.
+An **`int`** value to be copied into the new `_variant_t` object.
 
 *uiSrc*<br/>
-An **unsigned int** value to be copied into the new `_variant_t` object.
+An **`unsigned int`** value to be copied into the new `_variant_t` object.
 
 *i8Src*<br/>
-An **__int64** value to be copied into the new `_variant_t` object.
+An **`__int64`** value to be copied into the new `_variant_t` object.
 
 *ui8Src*<br/>
 An **unsigned __int64** value to be copied into the new `_variant_t` object.
@@ -197,15 +198,15 @@ An **unsigned __int64** value to be copied into the new `_variant_t` object.
 
 - **_variant_t( _variant_t&**  *var_t_Src*  **)** Constructs a `_variant_t` object from another `_variant_t` object. The variant type is retained.
 
-- **_variant_t( VARIANT&**  *varSrc* **, bool**  `fCopy`  **)** Constructs a `_variant_t` object from an existing `VARIANT` object. If *fCopy* is **false**, the **VARIANT** object is attached to the new object without making a copy.
+- **_variant_t( VARIANT&**  *varSrc* **, bool**  `fCopy`  **)** Constructs a `_variant_t` object from an existing `VARIANT` object. If *fCopy* is **`false`**, the **VARIANT** object is attached to the new object without making a copy.
 
-- **_variant_t( short**  *sSrc* **, VARTYPE**  `vtSrc`  **= VT_I2 )** Constructs a `_variant_t` object of type VT_I2 or VT_BOOL from a **short** integer value. Any other `VARTYPE` results in an E_INVALIDARG error.
+- **_variant_t( short**  *sSrc* **, VARTYPE**  `vtSrc`  **= VT_I2 )** Constructs a `_variant_t` object of type VT_I2 or VT_BOOL from a **`short`** integer value. Any other `VARTYPE` results in an E_INVALIDARG error.
 
-- **_variant_t( long**  `lSrc` **, VARTYPE**  `vtSrc`  **= VT_I4 )** Constructs a `_variant_t` object of type VT_I4, VT_BOOL, or VT_ERROR from a **long** integer value. Any other `VARTYPE` results in an E_INVALIDARG error.
+- **_variant_t( long**  `lSrc` **, VARTYPE**  `vtSrc`  **= VT_I4 )** Constructs a `_variant_t` object of type VT_I4, VT_BOOL, or VT_ERROR from a **`long`** integer value. Any other `VARTYPE` results in an E_INVALIDARG error.
 
-- **_variant_t( float**  `fltSrc`  **)** Constructs a `_variant_t` object of type VT_R4 from a **float** numerical value.
+- **_variant_t( float**  `fltSrc`  **)** Constructs a `_variant_t` object of type VT_R4 from a **`float`** numerical value.
 
-- **_variant_t( double**  `dblSrc` **, VARTYPE**  `vtSrc`  **= VT_R8 )** Constructs a `_variant_t` object of type VT_R8 or VT_DATE from a **double** numerical value. Any other `VARTYPE` results in an E_INVALIDARG error.
+- **_variant_t( double**  `dblSrc` **, VARTYPE**  `vtSrc`  **= VT_R8 )** Constructs a `_variant_t` object of type VT_R8 or VT_DATE from a **`double`** numerical value. Any other `VARTYPE` results in an E_INVALIDARG error.
 
 - **_variant_t( CY&**  `cySrc`  **)** Constructs a `_variant_t` object of type VT_CY from a `CY` object.
 
@@ -215,11 +216,11 @@ An **unsigned __int64** value to be copied into the new `_variant_t` object.
 
 - **_variant_t( char**<strong>\*</strong>  `strSrc`  **)** Constructs a `_variant_t` object of type VT_BSTR from a string. A new `BSTR` is allocated.
 
-- **_variant_t( bool**  `bSrc`  **)** Constructs a `_variant_t` object of type VT_BOOL from a **bool** value.
+- **_variant_t( bool**  `bSrc`  **)** Constructs a `_variant_t` object of type VT_BOOL from a **`bool`** value.
 
-- **_variant_t( IUnknown**<strong>\*</strong>  `pIUknownSrc` **, bool**  `fAddRef`  **= true )** Constructs a `_variant_t` object of type VT_UNKNOWN from a COM interface pointer. If `fAddRef` is **true**, then `AddRef` is called on the supplied interface pointer to match the call to `Release` that will occur when the `_variant_t` object is destroyed. It is up to you to call `Release` on the supplied interface pointer. If `fAddRef` is **false**, this constructor takes ownership of the supplied interface pointer; do not call `Release` on the supplied interface pointer.
+- **_variant_t( IUnknown**<strong>\*</strong>  `pIUknownSrc` **, bool**  `fAddRef`  **= true )** Constructs a `_variant_t` object of type VT_UNKNOWN from a COM interface pointer. If `fAddRef` is **`true`**, then `AddRef` is called on the supplied interface pointer to match the call to `Release` that will occur when the `_variant_t` object is destroyed. It is up to you to call `Release` on the supplied interface pointer. If `fAddRef` is **`false`**, this constructor takes ownership of the supplied interface pointer; do not call `Release` on the supplied interface pointer.
 
-- **_variant_t( IDispatch**<strong>\*</strong>  `pDispSrc` **, bool**  `fAddRef`  **= true )** Constructs a `_variant_t` object of type VT_DISPATCH from a COM interface pointer. If `fAddRef` is **true**, then `AddRef` is called on the supplied interface pointer to match the call to `Release` that will occur when the `_variant_t` object is destroyed. It is up to you to call `Release` on the supplied interface pointer. If `fAddRef` is **false**, this constructor takes ownership of the supplied interface pointer; do not call `Release` on the supplied interface pointer.
+- **_variant_t( IDispatch**<strong>\*</strong>  `pDispSrc` **, bool**  `fAddRef`  **= true )** Constructs a `_variant_t` object of type VT_DISPATCH from a COM interface pointer. If `fAddRef` is **`true`**, then `AddRef` is called on the supplied interface pointer to match the call to `Release` that will occur when the `_variant_t` object is destroyed. It is up to you to call `Release` on the supplied interface pointer. If `fAddRef` is **`false`**, this constructor takes ownership of the supplied interface pointer; do not call `Release` on the supplied interface pointer.
 
 - **_variant_t( DECIMAL&**  `decSrc`  **)** Constructs a `_variant_t` object of type VT_DECIMAL from a `DECIMAL` value.
 

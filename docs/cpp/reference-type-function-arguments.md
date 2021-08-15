@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reference-Type Function Arguments"
 title: "Reference-Type Function Arguments"
 ms.date: "08/27/2018"
 helpviewer_keywords: ["arguments [C++], function", "functions [C++], parameters", "function parameters [C++], reference-type", "function arguments [C++], reference-type", "passing parameters [C++], reference-type arguments"]
@@ -58,7 +59,7 @@ int main()
 
 The preceding code shows that members of a structure passed by reference are accessed using the member-selection operator (**.**) instead of the pointer member-selection operator (**->**).
 
-Although arguments passed as reference types observe the syntax of non-pointer types, they retain one important characteristic of pointer types: they are modifiable unless declared as **const**. Because the intent of the preceding code is not to modify the object `date`, a more appropriate function prototype is:
+Although arguments passed as reference types observe the syntax of non-pointer types, they retain one important characteristic of pointer types: they are modifiable unless declared as **`const`**. Because the intent of the preceding code is not to modify the object `date`, a more appropriate function prototype is:
 
 ```cpp
 long DateOfYear( const Date& date );

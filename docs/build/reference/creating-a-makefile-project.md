@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Create a C++ makefile project"
 title: "Create a C++ makefile project in Visual Studio"
 ms.date: "08/05/2019"
 f1_keywords: ["vc.appwiz.makefile.project"]
@@ -26,7 +27,7 @@ By default, the makefile project displays no files in Solution Explorer. The mak
 
 The output file that you specify in the project has no effect on the name that the build script generates; it declares only an intention. Your makefile still controls the build process and specifies the build targets.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create a makefile project in Visual Studio 2019
 
@@ -38,7 +39,7 @@ The output file that you specify in the project has no effect on the name that t
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### To create a makefile project in Visual Studio 2015 or Visual Studio 2017
 
@@ -70,9 +71,9 @@ IntelliSense fails in makefile projects when certain project settings or compile
 
 1. Open the **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Expand the **Configuration Properties** node.
+1. Select the **Configuration Properties** > **NMake** property page.
 
-1. Select the **NMake** property page, and then modify properties under **IntelliSense** as appropriate.
+1. Modify properties under **IntelliSense** as appropriate:
 
    - Set the **Preprocessor Definitions** property to define any preprocessor symbols in your makefile project. See [/D (Preprocessor Definitions)](d-preprocessor-definitions.md), for more information.
 
@@ -88,7 +89,7 @@ IntelliSense fails in makefile projects when certain project settings or compile
 
    - Set the **Additional Options** property to specify additional compiler switches to be used by IntelliSense when parsing C++ files.
 
-1. Click **OK** to close the property pages.
+1. Choose **OK** to close the property pages.
 
 1. Use the **Save All** command to save the modified project settings.
 
@@ -98,6 +99,6 @@ The next time you open your makefile project in the Visual Studio development en
 
 [Using IntelliSense](/visualstudio/ide/using-intellisense)<br>
 [NMAKE Reference](nmake-reference.md)<br>
-[How to: Create a C++ Project from Existing Code](../how-to-create-a-cpp-project-from-existing-code.md)
+[How to: Create a C++ Project from Existing Code](../how-to-create-a-cpp-project-from-existing-code.md)<br>
 [Special Characters in a Makefile](special-characters-in-a-makefile.md)<br/>
 [Contents of a Makefile](contents-of-a-makefile.md)<br/>

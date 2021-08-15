@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ostream_iterator Class"
 title: "ostream_iterator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["iterator/std::ostream_iterator", "iterator/std::ostream_iterator::char_type", "iterator/std::ostream_iterator::ostream_type", "iterator/std::ostream_iterator::traits_type"]
@@ -22,7 +23,7 @@ class ostream_iterator
 The type of object to be inserted into the output stream.
 
 *CharType*\
-The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is **char**.
+The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is **`char`**.
 
 *Traits*\
 The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is `char_traits`\< *CharType>.*
@@ -120,7 +121,7 @@ A reference to the `ostream_iterator`.
 
 ### Remarks
 
-The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression \* *ii* = *t* be valid and says nothing about the **operator** or the `operator=` on their own. The member operator in this implementation returns **\*this**.
+The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression \* *ii* = *t* be valid and says nothing about the **`operator`** or the `operator=` on their own. The member operator in this implementation returns **\*this**.
 
 ### Example
 
@@ -224,7 +225,7 @@ The operator inserts *val* into the output stream associated with the object, fo
 
 ### Remarks
 
-The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression \* `ii` = `t` be valid and says nothing about the operator or the operator= on their own. This member operator returns `*this`.
+The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression \* `ii` = `t` be valid and says nothing about the operator or the operator= on their own. This member operator returns **`*this`**.
 
 ### Example
 

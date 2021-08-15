@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPtrArray Class"
 title: "CPtrArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPtrArray", "AFXCOLL/CPtrArray", "AFXCOLL/CPtrArray::CPtrArray", "AFXCOLL/CPtrArray::Add", "AFXCOLL/CPtrArray::Append", "AFXCOLL/CPtrArray::Copy", "AFXCOLL/CPtrArray::ElementAt", "AFXCOLL/CPtrArray::FreeExtra", "AFXCOLL/CPtrArray::GetAt", "AFXCOLL/CPtrArray::GetCount", "AFXCOLL/CPtrArray::GetData", "AFXCOLL/CPtrArray::GetSize", "AFXCOLL/CPtrArray::GetUpperBound", "AFXCOLL/CPtrArray::InsertAt", "AFXCOLL/CPtrArray::IsEmpty", "AFXCOLL/CPtrArray::RemoveAll", "AFXCOLL/CPtrArray::RemoveAt", "AFXCOLL/CPtrArray::SetAt", "AFXCOLL/CPtrArray::SetAtGrow", "AFXCOLL/CPtrArray::SetSize"]
@@ -17,7 +18,7 @@ class CPtrArray : public CObject
 
 ## Members
 
-The member functions of `CPtrArray` are similar to the member functions of class [CObArray](../../mfc/reference/cobarray-class.md). Because of this similarity, you can use the `CObArray` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a function parameter or return value, substitute a pointer to **void**.
+The member functions of `CPtrArray` are similar to the member functions of class [CObArray](../../mfc/reference/cobarray-class.md). Because of this similarity, you can use the `CObArray` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a function parameter or return value, substitute a pointer to **`void`**.
 
 `CObject* CObArray::GetAt( int <nIndex> ) const;`
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Error LNK1313"
 title: "Linker Tools Error LNK1313"
 ms.date: "11/04/2016"
 f1_keywords: ["LNK1313"]
@@ -15,7 +16,7 @@ The current version of Visual C++ does not support linking native or mixed manag
 
 The **/clr:pure** compiler option is deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
 
-## Example
+## Examples
 
 ```cpp
 // LNK1313.cpp
@@ -24,16 +25,12 @@ The **/clr:pure** compiler option is deprecated in Visual Studio 2015 and unsupp
 int main() {}
 ```
 
-## Example
-
 ```cpp
 // LNK1313_b.cpp
 // compile with: /c /clr
 // an IJW module
 void test(){}
 ```
-
-## Example
 
 The following sample will generate LNK1313.
 

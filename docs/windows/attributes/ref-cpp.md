@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ref (C++)"
 title: "ref  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.ref"]
@@ -37,11 +38,9 @@ __interface IFireTabCtrl
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**typedef**, interface parameter, interface method|
+|**Applies to**|**`typedef`**, interface parameter, interface method|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

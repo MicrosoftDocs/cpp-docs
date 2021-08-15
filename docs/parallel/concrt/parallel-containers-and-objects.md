@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Parallel Containers and Objects"
 title: "Parallel Containers and Objects"
 ms.date: "03/27/2019"
 helpviewer_keywords: ["parallel objects", "parallel containers", "concurrent containers"]
@@ -76,7 +77,7 @@ The `concurrent_vector` class closely resembles the `vector` class. The complexi
 
 - A `concurrent_vector` object does not relocate its elements when you append to it or resize it. This enables existing pointers and iterators to remain valid during concurrent operations.
 
-- The runtime does not define a specialized version of `concurrent_vector` for type `bool`.
+- The runtime does not define a specialized version of `concurrent_vector` for type **`bool`**.
 
 ### <a name="vector-safety"></a> Concurrency-Safe Operations
 
@@ -84,21 +85,50 @@ All methods that append to or increase the size of a `concurrent_vector` object,
 
 The following table shows the common `concurrent_vector` methods and operators that are concurrency-safe.
 
-||||
-|-|-|-|
-|[at](reference/concurrent-vector-class.md#at)|[end](reference/concurrent-vector-class.md#end)|[operator&#91;&#93;](reference/concurrent-vector-class.md#operator_at)|
-|[begin](reference/concurrent-vector-class.md#begin)|[front](reference/concurrent-vector-class.md#front)|[push_back](reference/concurrent-vector-class.md#push_back)|
-|[back](reference/concurrent-vector-class.md#back)|[grow_by](reference/concurrent-vector-class.md#grow_by)|[rbegin](reference/concurrent-vector-class.md#rbegin)|
-|[capacity](reference/concurrent-vector-class.md#capacity)|[grow_to_at_least](reference/concurrent-vector-class.md#grow_to_at_least)|[rend](reference/concurrent-vector-class.md#rend)|
-|[empty](reference/concurrent-vector-class.md#empty)|[max_size](reference/concurrent-vector-class.md#max_size)|[size](reference/concurrent-vector-class.md#size)|
+:::row:::
+   :::column span="":::
+      [`at`](reference/concurrent-vector-class.md#at)\
+      [`back`](reference/concurrent-vector-class.md#back)\
+      [`begin`](reference/concurrent-vector-class.md#begin)\
+      [`capacity`](reference/concurrent-vector-class.md#capacity)
+   :::column-end:::
+   :::column span="":::
+      [`empty`](reference/concurrent-vector-class.md#empty)\
+      [`end`](reference/concurrent-vector-class.md#end)\
+      [`front`](reference/concurrent-vector-class.md#front)\
+      [`grow_by`](reference/concurrent-vector-class.md#grow_by)
+   :::column-end:::
+   :::column span="":::
+      [`grow_to_at_least`](reference/concurrent-vector-class.md#grow_to_at_least)\
+      [`max_size`](reference/concurrent-vector-class.md#max_size)\
+      [`operator[]`](reference/concurrent-vector-class.md#operator_at)\
+      [`push_back`](reference/concurrent-vector-class.md#push_back)
+   :::column-end:::
+   :::column span="":::
+      [`rbegin`](reference/concurrent-vector-class.md#rbegin)\
+      [`rend`](reference/concurrent-vector-class.md#rend)\
+      [`size`](reference/concurrent-vector-class.md#size)
+   :::column-end:::
+:::row-end:::
 
 Operations that the runtime provides for compatibility with the C++ Standard Library, for example, `reserve`, are not concurrency-safe. The following table shows the common methods and operators that are not concurrency-safe.
 
-|||
-|-|-|
-|[assign](reference/concurrent-vector-class.md#assign)|[reserve](reference/concurrent-vector-class.md#reserve)|
-|[clear](reference/concurrent-vector-class.md#clear)|[resize](reference/concurrent-vector-class.md#resize)|
-|[operator=](reference/concurrent-vector-class.md#operator_eq)|[shrink_to_fit](reference/concurrent-vector-class.md#shrink_to_fit)|
+:::row:::
+   :::column span="":::
+      [`assign`](reference/concurrent-vector-class.md#assign)\
+      [`clear`](reference/concurrent-vector-class.md#clear)
+   :::column-end:::
+   :::column span="":::
+      [`operator=`](reference/concurrent-vector-class.md#operator_eq)\
+      [`reserve`](reference/concurrent-vector-class.md#reserve)
+   :::column-end:::
+   :::column span="":::
+      [`resize`](reference/concurrent-vector-class.md#resize)
+   :::column-end:::
+   :::column span="":::
+      [`shrink_to_fit`](reference/concurrent-vector-class.md#shrink_to_fit)
+   :::column-end:::
+:::row-end:::
 
 Operations that modify the value of existing elements are not concurrency-safe. Use a synchronization object such as a [reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) object to synchronize concurrent read and write operations to the same data element. For more information about synchronization objects, see [Synchronization Data Structures](../../parallel/concrt/synchronization-data-structures.md).
 
@@ -116,7 +146,7 @@ The data type of the vector elements, `T`, must meet the following requirements.
 
 - The destructor must not throw.
 
-- If the default or copy constructor throws, the destructor must not be declared by using the `virtual` keyword and it must work correctly with zero-initialized memory.
+- If the default or copy constructor throws, the destructor must not be declared by using the **`virtual`** keyword and it must work correctly with zero-initialized memory.
 
 [[Top](#top)]
 
@@ -144,19 +174,39 @@ All methods that enqueue to or dequeue from a `concurrent_queue` object are conc
 
 The following table shows the common `concurrent_queue` methods and operators that are concurrency-safe.
 
-|||
-|-|-|
-|[empty](reference/concurrent-queue-class.md#empty)|[push](reference/concurrent-queue-class.md#push)|
-|[get_allocator](reference/concurrent-queue-class.md#get_allocator)|[try_pop](reference/concurrent-queue-class.md#try_pop)|
+:::row:::
+   :::column span="":::
+      [`empty`](reference/concurrent-queue-class.md#empty)
+   :::column-end:::
+   :::column span="":::
+      [`get_allocator`](reference/concurrent-queue-class.md#get_allocator)
+   :::column-end:::
+   :::column span="":::
+      [`push`](reference/concurrent-queue-class.md#push)
+   :::column-end:::
+   :::column span="":::
+      [`try_pop`](reference/concurrent-queue-class.md#try_pop)
+   :::column-end:::
+:::row-end:::
 
 Although the `empty` method is concurrency-safe, a concurrent operation may cause the queue to grow or shrink before the `empty` method returns.
 
 The following table shows the common methods and operators that are not concurrency-safe.
 
-|||
-|-|-|
-|[clear](reference/concurrent-queue-class.md#clear)|[unsafe_end](reference/concurrent-queue-class.md#unsafe_end)|
-|[unsafe_begin](reference/concurrent-queue-class.md#unsafe_begin)|[unsafe_size](reference/concurrent-queue-class.md#unsafe_size)|
+:::row:::
+   :::column span="":::
+      [`clear`](reference/concurrent-queue-class.md#clear)
+   :::column-end:::
+   :::column span="":::
+      [`unsafe_begin`](reference/concurrent-queue-class.md#unsafe_begin)
+   :::column-end:::
+   :::column span="":::
+      [`unsafe_end`](reference/concurrent-queue-class.md#unsafe_end)
+   :::column-end:::
+   :::column span="":::
+      [`unsafe_size`](reference/concurrent-queue-class.md#unsafe_size)
+   :::column-end:::
+:::row-end:::
 
 ### <a name="queue-iterators"></a> Iterator Support
 
@@ -170,7 +220,7 @@ A `concurrent_queue` iterator traverses elements in the forward direction only. 
 |`operator*`|Retrieves a reference to the current item.|
 |`operator->`|Retrieves a pointer to the current item.|
 
-[[Top](#top)]
+\[[Top](#top)]
 
 ## <a name="unordered_map"></a> concurrent_unordered_map Class
 
@@ -200,21 +250,52 @@ To help avoid deadlock, no method of `concurrent_unordered_map` holds a lock whe
 
 The `concurrent_unordered_map` class enables concurrency-safe insert and element-access operations. Insert operations do not invalidate existing pointers or iterators. Iterator access and traversal operations are also concurrency-safe. Here, concurrency-safe means pointers or iterators are always valid. It's not a guarantee of element initialization, or of a particular traversal order. The following table shows the commonly used `concurrent_unordered_map` methods and operators that are concurrency-safe.
 
-|||||
-|-|-|-|-|
-|[at](reference/concurrent-unordered-map-class.md#at)|`count`|`find`|[key_eq](reference/concurrent-unordered-map-class.md#key_eq)|
-|`begin`|`empty`|`get_allocator`|`max_size`|
-|`cbegin`|`end`|`hash_function`|[operator&#91;&#93;](reference/concurrent-unordered-map-class.md#operator_at)|
-|`cend`|`equal_range`|[insert](reference/concurrent-unordered-map-class.md#insert)|`size`|
+:::row:::
+   :::column span="":::
+      [`at`](reference/concurrent-unordered-map-class.md#at)\
+      [`begin`](reference/concurrent-unordered-map-class.md#begin)\
+      [`cbegin`](reference/concurrent-unordered-map-class.md#cbegin)\
+      [`cend`](reference/concurrent-unordered-map-class.md#cend)
+   :::column-end:::
+   :::column span="":::
+      [`count`](reference/concurrent-unordered-map-class.md#count)\
+      [`empty`](reference/concurrent-unordered-map-class.md#empty)\
+      [`end`](reference/concurrent-unordered-map-class.md#cend)\
+      [`equal_range`](reference/concurrent-unordered-map-class.md#equal_range)
+   :::column-end:::
+   :::column span="":::
+      [`find`](reference/concurrent-unordered-map-class.md#find)\
+      [`get_allocator`](reference/concurrent-unordered-map-class.md#get_allocator)\
+      [`hash_function`](reference/concurrent-unordered-map-class.md#hash_function)\
+      [`insert`](reference/concurrent-unordered-map-class.md#insert)
+   :::column-end:::
+   :::column span="":::
+      [`key_eq`](reference/concurrent-unordered-map-class.md#key_eq)\
+      [`max_size`](reference/concurrent-unordered-map-class.md#max_size)\
+      [`operator[]`](./reference/concurrent-unordered-map-class.md#operator_at)\
+      [`size`](reference/concurrent-unordered-map-class.md#size)
+   :::column-end:::
+:::row-end:::
 
 Although the `count` method can be called safely from concurrently running threads, different threads can receive different results if a new value is simultaneously inserted into the container.
 
 The following table shows the commonly used methods and operators that are not concurrency-safe.
 
-||||
-|-|-|-|
-|`clear`|`max_load_factor`|`rehash`|
-|`load_factor`|[operator=](reference/concurrent-unordered-map-class.md#operator_eq)
+:::row:::
+   :::column span="":::
+      [`clear`](reference/concurrent-unordered-map-class.md#clear)\
+      [`load_factor`](reference/concurrent-unordered-map-class.md#load_factor)
+   :::column-end:::
+   :::column span="":::
+      [`max_load_factor`](reference/concurrent-unordered-map-class.md#max_load_factor)
+   :::column-end:::
+   :::column span="":::
+      [`operator=`](reference/concurrent-unordered-map-class.md#operator_eq)
+   :::column-end:::
+   :::column span="":::
+      [`rehash`](reference/concurrent-unordered-map-class.md#rehash)
+   :::column-end:::
+:::row-end:::
 
 In addition to these methods, any method that begins with `unsafe_` is also not concurrency-safe.
 

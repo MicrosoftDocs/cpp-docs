@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Runtime Error R6035"
 title: "C Runtime Error R6035"
 ms.date: "11/04/2016"
 f1_keywords: ["R6035"]
@@ -62,4 +63,4 @@ In this case, DllEntryPoint is not protected against buffer overruns (it has no 
 
 ## See also
 
-[Security Features in MSVC](https://blogs.msdn.microsoft.com/vcblog/2017/06/28/security-features-in-microsoft-visual-c/)
+[Security Features in MSVC](https://devblogs.microsoft.com/cppblog/security-features-in-microsoft-visual-c/)

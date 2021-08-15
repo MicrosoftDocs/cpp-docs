@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections::VectorViewIterator Class"
 title: "Platform::Collections::VectorViewIterator Class"
 ms.date: "03/27/2019"
 ms.topic: "reference"
@@ -8,7 +9,7 @@ ms.assetid: be3aa1ae-e6ba-4a06-8d6b-86d8128026f7
 ---
 # Platform::Collections::VectorViewIterator Class
 
-Provides a Standard Template Library iterator for objects derived from the Windows Runtime`IVectorView` interface.
+Provides a Standard Template Library iterator for objects derived from the Windows Runtime `IVectorView` interface.
 
 `ViewVectorIterator` is a proxy iterator that stores elements of type `VectorProxy<T>`. However, the proxy object is almost never visible to user code. For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).
 
@@ -107,7 +108,7 @@ The first syntax decrements and then returns the current VectorViewIterator. The
 
 The first VectorViewIterator syntax pre-decrements the current VectorViewIterator.
 
-The second syntax post-decrements the current VectorViewIterator. The `int` type in the second syntax indicates a post-decrement operation, not an actual integer operand.
+The second syntax post-decrements the current VectorViewIterator. The **`int`** type in the second syntax indicates a post-decrement operation, not an actual integer operand.
 
 ## <a name="operator-dereference"></a> VectorViewIterator::operator\* Operator
 
@@ -140,7 +141,7 @@ Another VectorViewIterator.
 
 ### Return Value
 
-**true** if the current `VectorViewIterator` is equal to *other*; otherwise, **false**.
+**`true`** if the current `VectorViewIterator` is equal to *other*; otherwise, **`false`**.
 
 ## <a name="operator-greater-than"></a> VectorViewIterator::operator&gt; Operator
 
@@ -160,7 +161,7 @@ Another VectorViewIterator.
 
 ### Return Value
 
-**true** if the current VectorViewIterator is greater than *other*; otherwise, **false**.
+**`true`** if the current VectorViewIterator is greater than *other*; otherwise, **`false`**.
 
 ## <a name="operator-greater-than-or-equals"></a> VectorViewIterator::operator&gt;= Operator
 
@@ -180,7 +181,7 @@ Another VectorViewIterator.
 
 ### Return Value
 
-**true** if the current `VectorViewIterator` is greater than or equal to *other*; otherwise, **false**.
+**`true`** if the current `VectorViewIterator` is greater than or equal to *other*; otherwise, **`false`**.
 
 ## <a name="operator-increment"></a> VectorViewIterator::operator++ Operator
 
@@ -202,7 +203,7 @@ The first syntax increments and then returns the current VectorViewIterator. The
 
 The first VectorViewIterator syntax pre-increments the current VectorViewIterator.
 
-The second syntax post-increments the current VectorViewIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.
+The second syntax post-increments the current VectorViewIterator. The **`int`** type in the second syntax indicates a post-increment operation, not an actual integer operand.
 
 ## <a name="operator-inequality"></a> VectorViewIterator::operator!= Operator
 
@@ -221,7 +222,7 @@ Another VectorViewIterator.
 
 ### Return Value
 
-**true** if the current `VectorViewIterator` is not equal to *other*; otherwise, **false**.
+**`true`** if the current `VectorViewIterator` is not equal to *other*; otherwise, **`false`**.
 
 ## <a name="operator-less-than"></a> VectorViewIterator::operator&lt; Operator
 
@@ -240,7 +241,7 @@ Another `VectorIterator`.
 
 ### Return Value
 
-**true** if the current `VectorIterator` is less than *other*; otherwise, **false**.
+**`true`** if the current `VectorIterator` is less than *other*; otherwise, **`false`**.
 
 ## <a name="operator-less-than-or-equals"></a> VectorViewIterator::operator&lt;= Operator
 
@@ -260,7 +261,7 @@ Another `VectorIterator`.
 
 ### Return Value
 
-**true** if the current `VectorIterator` is less than or equal to *other*; otherwise, **false**.
+**`true`** if the current `VectorIterator` is less than or equal to *other*; otherwise, **`false`**.
 
 ## <a name="operator-minus"></a> VectorViewIterator::operator- Operator
 

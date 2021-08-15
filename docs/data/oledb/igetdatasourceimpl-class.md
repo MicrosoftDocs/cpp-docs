@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IGetDataSourceImpl Class"
 title: "IGetDataSourceImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IGetDataSourceImpl", "ATL.IGetDataSourceImpl<T>", "ATL.IGetDataSourceImpl", "ATL::IGetDataSourceImpl", "ATL::IGetDataSourceImpl<T>", "GetDataSource", "IGetDataSourceImpl.GetDataSource", "IGetDataSourceImpl::GetDataSource"]
@@ -29,7 +30,7 @@ Your class, derived from `IGetDataSourceImpl`.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetDataSource](#getdatasource)|Returns an interface pointer on the data source object that created the session.|
 

@@ -58,6 +58,8 @@
       href: tool-errors/command-line-error-d8037.md
     - name: Command-line error D8045
       href: tool-errors/command-line-error-d8045.md
+    - name: Command-line error D8048
+      href: tool-errors/command-line-error-d8048.md
     - name: Command-line warning D9024
       href: tool-errors/command-line-warning-d9024.md
     - name: Command-line warning D9025
@@ -203,6 +205,8 @@
       href: compiler-errors-1/fatal-error-c1088.md
     - name: fatal error C1089
       href: compiler-errors-1/fatal-error-c1089.md
+    - name: fatal error C1090
+      href: compiler-errors-1/fatal-error-c1090.md
     - name: fatal error C1091
       href: compiler-errors-1/fatal-error-c1091.md
     - name: fatal error C1092
@@ -328,7 +332,7 @@
 - name: Compiler errors
   expanded: false
   items: 
-    - name: Compiler errors C2000 - C3999
+    - name: Compiler errors C2000 - C3999, C7000 - C7999
       href: compiler-errors-1/compiler-errors-c2000-c3999.md
     - name: Compiler errors C2000 through C2099
       expanded: false
@@ -2928,6 +2932,8 @@
           href: compiler-errors-2/compiler-error-c3771.md
         - name: Compiler error C3772
           href: compiler-errors-2/compiler-error-c3772.md
+        - name: Compiler error C3779
+          href: compiler-errors-2/compiler-error-c3779.md
         - name: Compiler error C3797
           href: compiler-errors-2/compiler-error-c3797.md
         - name: Compiler error C3798
@@ -3100,6 +3106,22 @@
           href: compiler-errors-2/compiler-error-c3920.md
         - name: Compiler error C3923
           href: compiler-errors-2/compiler-error-c3923.md
+    - name: Compiler errors C7000 through C7499
+      expanded: false
+      items: 
+        - name: Compiler errors C7000 through C7499
+          href: compiler-errors-2/compiler-errors-c7000-through-c7499.md
+    - name: Compiler errors C7500 through C7999
+      expanded: false
+      items: 
+        - name: Compiler errors C7500 through C7999
+          href: compiler-errors-2/compiler-errors-c7500-through-c7999.md
+        - name: Compiler error C7510
+          href: compiler-errors-2/compiler-error-c7510.md
+        - name: Compiler error C7536
+          href: compiler-errors-2/compiler-error-c7536.md
+        - name: Compiler error C7626
+          href: compiler-warnings/c5208.md
 - name: Compiler warnings C4000 Through C5999
   expanded: false
   items: 
@@ -3629,6 +3651,8 @@
           href: compiler-warnings/compiler-warning-level-1-c4383.md
         - name: Compiler warning (level 1) C4384
           href: compiler-warnings/compiler-warning-level-1-c4384.md
+        - name: Compiler warning (level 4) C4388
+          href: compiler-warnings/c4388.md
         - name: Compiler warning (level 4) C4389
           href: compiler-warnings/compiler-warning-level-4-c4389.md
         - name: Compiler warning (level 3) C4390
@@ -3725,7 +3749,7 @@
         - name: Compiler warning (level 4) C4463
           href: compiler-warnings/compiler-warning-level-4-c4463.md
         - name: Compiler warning (level 4) C4464
-          href: compiler-warnings/C4464.md
+          href: compiler-warnings/compiler-warning-level-4-c4464.md
         - name: Compiler warning (level 1) C4470
           href: compiler-warnings/compiler-warning-level-1-c4470.md
         - name: Compiler warning (level 4) C4471
@@ -3864,6 +3888,8 @@
           href: compiler-warnings/compiler-warning-level-1-c4584.md
         - name: Compiler warning (level 4) C4596
           href: compiler-warnings/c4596.md
+        - name: Compiler warning (level 4) C4597
+          href: compiler-warnings/c4597.md
     - name: Compiler warnings C4600 Through C4799
       expanded: false
       items: 
@@ -4011,6 +4037,8 @@
           href: compiler-warnings/compiler-warning-c4693.md
         - name: Compiler warning C4694
           href: compiler-warnings/compiler-warning-c4694.md
+        - name: Compiler warning (level 3) C4698
+          href: compiler-warnings/c4698.md
         - name: Compiler warning (level 1 and level 4) C4700
           href: compiler-warnings/compiler-warning-level-1-and-level-4-c4700.md
         - name: Compiler warning (level 4) C4701
@@ -4079,6 +4107,8 @@
           href: compiler-warnings/compiler-warning-level-2-c4756.md
         - name: Compiler warning (level 4) C4764
           href: compiler-warnings/compiler-warning-level-4-c4764.md
+        - name: Compiler warning (level 4) C4768
+          href: compiler-warnings/c4768.md
         - name: Compiler warning (level 1) C4772
           href: compiler-warnings/compiler-warning-level-1-c4772.md
         - name: Compiler warning (Level 1) C4788
@@ -4134,6 +4164,8 @@
           href: compiler-warnings/compiler-warning-level-3-c4823.md
         - name: Compiler warning (level 1) C4829
           href: compiler-warnings/compiler-warning-level-1-c4829.md
+        - name: Compiler warning (level 1) C4834
+          href: compiler-warnings/c4834.md
         - name: Compiler warning (level 1) C4835
           href: compiler-warnings/compiler-warning-level-1-c4835.md
         - name: Compiler warning (level 1) C4838
@@ -4142,6 +4174,10 @@
           href: compiler-warnings/compiler-warning-level-3-c4839.md
         - name: Compiler warning (level 4) C4840
           href: compiler-warnings/compiler-warning-level-4-c4840.md
+        - name: Compiler warning (level 4) C4841
+          href: compiler-warnings/c4841.md
+        - name: Compiler warning (level 4) C4843
+          href: compiler-warnings/c4843.md
         - name: Compiler warning (level 4) C4866
           href: compiler-warnings/c4866.md
         - name: Compiler warning C4867
@@ -4246,14 +4282,26 @@
           href: compiler-warnings/compiler-warning-level-1-c4997.md
         - name: Compiler warning (level 1) C4999
           href: compiler-warnings/compiler-warning-level-1-c4999.md
+        - name: Compiler warning C5037
+          href: compiler-warnings/c5037.md
         - name: Compiler warning C5038
           href: compiler-warnings/c5038.md
         - name: Compiler warning C5045
           href: compiler-warnings/c5045.md
         - name: Compiler warning (level 2) C5046
           href: compiler-warnings/c5046.md
+        - name: Compiler warning C5050
+          href: compiler-warnings/c5050.md
         - name: Compiler warning (level 1) C5105
           href: compiler-warnings/c5105.md
+        - name: Compiler warning (level 1) C5208
+          href: compiler-warnings/c5208.md
+        - name: Compiler warning (level 1) C5243
+          href: compiler-warnings/c5243.md
+        - name: Compiler warning (level 1) C5247
+          href: compiler-warnings/c5247.md
+        - name: Compiler warning (level 1) C5248
+          href: compiler-warnings/c5248.md
 - name: Compiler warnings by compiler version
   href: compiler-warnings/compiler-warnings-by-compiler-version.md
 - name: Compiler warnings that are off by default

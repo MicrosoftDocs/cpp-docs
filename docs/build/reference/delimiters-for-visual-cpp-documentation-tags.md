@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Delimiters for Visual C++ Documentation Tags"
 title: "Delimiters for Visual C++ Documentation Tags"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["XML documentation, delimiters"]
@@ -10,7 +11,7 @@ The use of documentation tags requires delimiters, which indicate to the compile
 
 You can use the following kinds of delimiters with the XML documentation tags:
 
-| | |
+| Delimiter | Description |
 |-|-|
 | `///` | This is the form that is shown in documentation examples and used by the Visual Studio C++ project templates.  |
 | `/** */`  | These are multiline delimiters.  |

@@ -1,11 +1,11 @@
 ---
+description: "Learn more about: _bstr_t::Attach"
 title: "_bstr_t::Attach"
-ms.date: "11/04/2016"
+ms.date: 02/02/2021
 f1_keywords: ["_bstr_t::Attach"]
 helpviewer_keywords: ["Attach method [C++]"]
-ms.assetid: 8cad867e-40fc-435b-841f-0d412c2f58d3
 ---
-# _bstr_t::Attach
+# `_bstr_t::Attach`
 
 **Microsoft Specific**
 
@@ -19,9 +19,9 @@ void Attach(
 );
 ```
 
-#### Parameters
+### Parameters
 
-*s*<br/>
+*`s`*\
 A `BSTR` to be associated with, or assigned to, the `_bstr_t` variable.
 
 ## Remarks
@@ -30,10 +30,10 @@ If the `_bstr_t` was previously attached to another `BSTR`, the `_bstr_t` will c
 
 ## Example
 
-See [_bstr_t::Assign](../cpp/bstr-t-assign.md) for an example using **Attach**.
+See [`_bstr_t::Assign`](../cpp/bstr-t-assign.md) for an example using **`Attach`**.
 
 **END Microsoft Specific**
 
 ## See also
 
-[_bstr_t Class](../cpp/bstr-t-class.md)
+[`_bstr_t` Class](../cpp/bstr-t-class.md)

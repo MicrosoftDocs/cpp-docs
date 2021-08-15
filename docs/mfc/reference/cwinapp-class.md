@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWinApp Class"
 title: "CWinApp Class"
 ms.date: "07/15/2019"
 f1_keywords: ["CWinApp", "AFXWIN/CWinApp", "AFXWIN/CWinApp::CWinApp", "AFXWIN/CWinApp::AddDocTemplate", "AFXWIN/CWinApp::AddToRecentFileList", "AFXWIN/CWinApp::ApplicationRecoveryCallback", "AFXWIN/CWinApp::CloseAllDocuments", "AFXWIN/CWinApp::CreatePrinterDC", "AFXWIN/CWinApp::DelRegTree", "AFXWIN/CWinApp::DoMessageBox", "AFXWIN/CWinApp::DoWaitCursor", "AFXWIN/CWinApp::EnableD2DSupport", "AFXWIN/CWinApp::EnableHtmlHelp", "AFXWIN/CWinApp::EnableTaskbarInteraction", "AFXWIN/CWinApp::ExitInstance", "AFXWIN/CWinApp::GetApplicationRecoveryParameter", "AFXWIN/CWinApp::GetApplicationRecoveryPingInterval", "AFXWIN/CWinApp::GetApplicationRestartFlags", "AFXWIN/CWinApp::GetAppRegistryKey", "AFXWIN/CWinApp::GetDataRecoveryHandler", "AFXWIN/CWinApp::GetFirstDocTemplatePosition", "AFXWIN/CWinApp::GetHelpMode", "AFXWIN/CWinApp::GetNextDocTemplate", "AFXWIN/CWinApp::GetPrinterDeviceDefaults", "AFXWIN/CWinApp::GetProfileBinary", "AFXWIN/CWinApp::GetProfileInt", "AFXWIN/CWinApp::GetProfileString", "AFXWIN/CWinApp::GetSectionKey", "AFXWIN/CWinApp::HideApplication", "AFXWIN/CWinApp::HtmlHelp", "AFXWIN/CWinApp::InitInstance", "AFXWIN/CWinApp::IsTaskbarInteractionEnabled", "AFXWIN/CWinApp::LoadCursor", "AFXWIN/CWinApp::LoadIcon", "AFXWIN/CWinApp::LoadOEMCursor", "AFXWIN/CWinApp::LoadOEMIcon", "AFXWIN/CWinApp::LoadStandardCursor", "AFXWIN/CWinApp::LoadStandardIcon", "AFXWIN/CWinApp::OnDDECommand", "AFXWIN/CWinApp::OnIdle", "AFXWIN/CWinApp::OpenDocumentFile", "AFXWIN/CWinApp::ParseCommandLine", "AFXWIN/CWinApp::PreTranslateMessage", "AFXWIN/CWinApp::ProcessMessageFilter", "AFXWIN/CWinApp::ProcessShellCommand", "AFXWIN/CWinApp::ProcessWndProcException", "AFXWIN/CWinApp::Register", "AFXWIN/CWinApp::RegisterWithRestartManager", "AFXWIN/CWinApp::ReopenPreviousFilesAtRestart", "AFXWIN/CWinApp::RestartInstance", "AFXWIN/CWinApp::RestoreAutosavedFilesAtRestart", "AFXWIN/CWinApp::Run", "AFXWIN/CWinApp::RunAutomated", "AFXWIN/CWinApp::RunEmbedded", "AFXWIN/CWinApp::SaveAllModified", "AFXWIN/CWinApp::SelectPrinter", "AFXWIN/CWinApp::SetHelpMode", "AFXWIN/CWinApp::SupportsApplicationRecovery", "AFXWIN/CWinApp::SupportsAutosaveAtInterval", "AFXWIN/CWinApp::SupportsAutosaveAtRestart", "AFXWIN/CWinApp::SupportsRestartManager", "AFXWIN/CWinApp::Unregister", "AFXWIN/CWinApp::WinHelp", "AFXWIN/CWinApp::WriteProfileBinary", "AFXWIN/CWinApp::WriteProfileInt", "AFXWIN/CWinApp::WriteProfileString", "AFXWIN/CWinApp::EnableShellOpen", "AFXWIN/CWinApp::LoadStdProfileSettings", "AFXWIN/CWinApp::OnContextHelp", "AFXWIN/CWinApp::OnFileNew", "AFXWIN/CWinApp::OnFileOpen", "AFXWIN/CWinApp::OnFilePrintSetup", "AFXWIN/CWinApp::OnHelp", "AFXWIN/CWinApp::OnHelpFinder", "AFXWIN/CWinApp::OnHelpIndex", "AFXWIN/CWinApp::OnHelpUsing", "AFXWIN/CWinApp::RegisterShellFileTypes", "AFXWIN/CWinApp::SetAppID", "AFXWIN/CWinApp::SetRegistryKey", "AFXWIN/CWinApp::UnregisterShellFileTypes", "AFXWIN/CWinApp::m_bHelpMode", "AFXWIN/CWinApp::m_eHelpType", "AFXWIN/CWinApp::m_hInstance", "AFXWIN/CWinApp::m_lpCmdLine", "AFXWIN/CWinApp::m_nCmdShow", "AFXWIN/CWinApp::m_pActiveWnd", "AFXWIN/CWinApp::m_pszAppID", "AFXWIN/CWinApp::m_pszAppName", "AFXWIN/CWinApp::m_pszExeName", "AFXWIN/CWinApp::m_pszHelpFilePath", "AFXWIN/CWinApp::m_pszProfileName", "AFXWIN/CWinApp::m_pszRegistryKey", "AFXWIN/CWinApp::m_dwRestartManagerSupportFlags", "AFXWIN/CWinApp::m_nAutosaveInterval", "AFXWIN/CWinApp::m_pDataRecoveryHandler"]
@@ -742,7 +743,7 @@ Specifies the default value to return if the framework cannot find the entry.
 
 The integer value of the string that follows the specified entry if the function is successful. The return value is the value of the *nDefault* parameter if the function does not find the entry. The return value is 0 if the value that corresponds to the specified entry is not an integer.
 
-This member function supports hexadecimal notation for the value in the .INI file. When you retrieve a signed integer, you should cast the value into an **int**.
+This member function supports hexadecimal notation for the value in the .INI file. When you retrieve a signed integer, you should cast the value into an **`int`**.
 
 ### Remarks
 
@@ -1109,9 +1110,8 @@ DWORD m_dwRestartManagerSupportFlags;
 
 To enable the restart manager, set `m_dwRestartManagerSupportFlags` to the behavior that you want. The following table shows the flags that are available.
 
-|||
-|-|-|
 |Flag|Description|
+|-|-|
 |AFX_RESTART_MANAGER_SUPPORT_RESTART|The application is registered by using [CWinApp::RegisterWithRestartManager](#registerwithrestartmanager). The restart manager is responsible for restarting the application if it unexpectedly exits.|
 |- AFX_RESTART_MANAGER_SUPPORT_RECOVERY|The application is registered with the restart manager and the restart manager calls the recovery callback function when it restarts the application. The default recovery callback function is [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
 |- AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART|Autosave is enabled and the restart manager autosaves any open documents when the application restarts.|
@@ -1200,7 +1200,7 @@ int m_nCmdShow;
 
 ### Remarks
 
-You should pass `m_nCmdShow` as an argument when you call [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow) for your application's main window. `m_nCmdShow` is a public variable of type **int**.
+You should pass `m_nCmdShow` as an argument when you call [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow) for your application's main window. `m_nCmdShow` is a public variable of type **`int`**.
 
 ### Example
 
@@ -1766,17 +1766,29 @@ virtual HRESULT RegisterWithRestartManager(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*bRegisterRecoveryCallback*|[in] TRUE indicates that this instance of the application uses a recovery callback function; FALSE indicates that it does not. The framework calls the recovery callback function when the application exits unexpectedly. For more information, see [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
-|*strRestartIdentifier*|[in] The unique string that identifies this instance of the restart manager. The restart manager identifier is unique for each instance of an application.|
-|*pwzCommandLineArgs*|[in] A string that contains any extra arguments from the command line.|
-|*dwRestartFlags*|[in] Optional flags for the restart manager. For more information, see the Remarks section.|
-|*pRecoveryCallback*|[in] The recovery callback function. This function must take a LPVOID parameter as input and return a DWORD. The default recovery callback function is `CWinApp::ApplicationRecoveryCallback`.|
-|*lpvParam*|[in] The input parameter for the recovery callback function. For more information, see [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
-|*dwPingInterval*|[in] The length of time that the restart manager waits for the recovery callback function to return. This parameter is in milliseconds.|
-|*dwCallbackFlags*|[in] Flags passed to the recovery callback function. Reserved for future use.|
+*bRegisterRecoveryCallback*\
+[in] TRUE indicates that this instance of the application uses a recovery callback function; FALSE indicates that it does not. The framework calls the recovery callback function when the application exits unexpectedly. For more information, see [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).
+
+*strRestartIdentifier*\
+[in] The unique string that identifies this instance of the restart manager. The restart manager identifier is unique for each instance of an application.
+
+*pwzCommandLineArgs*\
+[in] A string that contains any extra arguments from the command line.
+
+*dwRestartFlags*\
+[in] Optional flags for the restart manager. For more information, see the Remarks section.
+
+*pRecoveryCallback*\
+[in] The recovery callback function. This function must take a LPVOID parameter as input and return a DWORD. The default recovery callback function is `CWinApp::ApplicationRecoveryCallback`.
+
+*lpvParam*\
+[in] The input parameter for the recovery callback function. For more information, see [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).
+
+*dwPingInterval*\
+[in] The length of time that the restart manager waits for the recovery callback function to return. This parameter is in milliseconds.
+
+*dwCallbackFlags*\
+[in] Flags passed to the recovery callback function. Reserved for future use.
 
 ### Return Value
 
@@ -1854,7 +1866,7 @@ virtual int Run();
 
 ### Return Value
 
-An **int** value that is returned by `WinMain`.
+An **`int`** value that is returned by `WinMain`.
 
 ### Remarks
 

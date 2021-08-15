@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IOpenRowsetImpl Class"
 title: "IOpenRowsetImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IOpenRowsetImpl", "IOpenRowsetImpl.CreateRowset", "IOpenRowsetImpl::CreateRowset", "OpenRowset", "IOpenRowsetImpl::OpenRowset", "IOpenRowsetImpl.OpenRowset"]
@@ -29,7 +30,7 @@ Your class, derived from `IOpenRowsetImpl`.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CreateRowset](#createrowset)|Creates a rowset object. Not called directly by user.|
 |[OpenRowset](#openrowset)|Opens and returns a rowset that includes all rows from a single base table or index. (Not in ATLDB.H)|

@@ -14,7 +14,7 @@ The compiler can't generate a default constructor for the specified class, which
 
 There are several situations that prevent the compiler from generating a default constructor, including:
 
-- A **const** data member.
+- A **`const`** data member.
 
 - A data member that's a reference.
 

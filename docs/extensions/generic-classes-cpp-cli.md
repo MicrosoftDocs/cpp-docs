@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic Classes (C++/CLI)"
 title: "Generic Classes (C++/CLI)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -30,7 +31,7 @@ In the above syntax, the following terms are used:
 (Optional) Additional declarative information. For more information on attributes and attribute classes, see Attributes.
 
 *class-key*<br/>
-Either **class** or **typename**
+Either **`class`** or **`typename`**
 
 *type-parameter-identifier(s)*,
 Comma-separated list of identifiers specifying the names of the type parameters.
@@ -44,7 +45,7 @@ A list (not comma-separated) of **where** clauses specifying the constraints for
 *class-or-interface*[`,` *...*]
 
 *accessibility-modifiers*<br/>
-Accessibility modifiers for the generic class. For the Windows Runtime, the only allowed modifier is **private**. For the common language runtime, the allowed modifiers are **private** and **public**.
+Accessibility modifiers for the generic class. For the Windows Runtime, the only allowed modifier is **`private`**. For the common language runtime, the allowed modifiers are **`private`** and **`public`**.
 
 *identifier*<br/>
 The name of the generic class, any valid C++ identifier.
@@ -61,7 +62,7 @@ The body of the class, containing fields, member functions, etc.
 *declarators*<br/>
 Declarations of any variables of this type. For example: `^`*identifier*[`,` ...]
 
-You can declare generic classes such as these (note that the keyword **class** may be used instead of **typename**). In this example, `ItemType`, `KeyType` and `ValueType` are unknown types that are specified at the point where the type. `HashTable<int, int>` is a constructed type of the generic type `HashTable<KeyType, ValueType>`. A number of different constructed types can be constructed from a single generic type. Constructed types constructed from generic classes are treated like any other ref class type.
+You can declare generic classes such as these (note that the keyword **`class`** may be used instead of **`typename`**). In this example, `ItemType`, `KeyType` and `ValueType` are unknown types that are specified at the point where the type. `HashTable<int, int>` is a constructed type of the generic type `HashTable<KeyType, ValueType>`. A number of different constructed types can be constructed from a single generic type. Constructed types constructed from generic classes are treated like any other ref class type.
 
 ```cpp
 // generic_classes_1.cpp
@@ -85,9 +86,9 @@ int main() {
 }
 ```
 
-Both value types (either built-in types such as **int** or **double**, or user-defined value types) and reference types may be used as a generic type argument. The syntax within the generic definition is the same regardless. Syntactically, the unknown type is treated as if it were a reference type. However, the runtime is able to determine that if the type actually used is a value type and substitute the appropriate generated code for direct access to members. Value types used as generic type arguments are not boxed and so do not suffer the performance penalty associated with boxing. The syntax used within the body of the generic should be `T^` and `->` instead of `.`. Any use of [ref new, gcnew](ref-new-gcnew-cpp-component-extensions.md) for the type parameter will be appropriately interpreted by the runtime as the simple creation of a value type if the type argument is a value type.
+Both value types (either built-in types such as **`int`** or **`double`**, or user-defined value types) and reference types may be used as a generic type argument. The syntax within the generic definition is the same regardless. Syntactically, the unknown type is treated as if it were a reference type. However, the runtime is able to determine that if the type actually used is a value type and substitute the appropriate generated code for direct access to members. Value types used as generic type arguments are not boxed and so do not suffer the performance penalty associated with boxing. The syntax used within the body of the generic should be `T^` and `->` instead of `.`. Any use of [ref new, gcnew](ref-new-gcnew-cpp-component-extensions.md) for the type parameter will be appropriately interpreted by the runtime as the simple creation of a value type if the type argument is a value type.
 
-You can also declare a generic class with [Constraints on Generic Type Parameters (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md) on the types that can be used for the type parameter. In the following example any type used for `ItemType` must implement the `IItem` interface. Attempting to use **int**, for example, which does not implement `IItem`, would produce a compile-time error because the type argument does not satisfy the constraint.
+You can also declare a generic class with [Constraints on Generic Type Parameters (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md) on the types that can be used for the type parameter. In the following example any type used for `ItemType` must implement the `IItem` interface. Attempting to use **`int`**, for example, which does not implement `IItem`, would produce a compile-time error because the type argument does not satisfy the constraint.
 
 ```cpp
 // generic_classes_2.cpp
@@ -147,9 +148,9 @@ This section demonstrates the use of instance and static fields in generic class
 
 Instance variables of a generic class can have types and variable initializers that include any type parameters from the enclosing class.
 
-## Example
+## Example: Different generic classes
 
-In the following example, three different instances of the generic class, MyClass\<ItemType>, are created by using the appropriate type arguments (**int**, **double**, and **string**).
+In the following example, three different instances of the generic class, MyClass\<ItemType>, are created by using the appropriate type arguments (**`int`**, **`double`**, and **string**).
 
 ```cpp
 // generics_instance_fields1.cpp
@@ -195,7 +196,7 @@ On the creation of a new generic type, new instances of any static variables are
 
 Static variables can use any type parameters from the enclosing class.
 
-## Example
+## Example: Use static variables
 
 The following example demonstrates using static fields and a static constructor within a generic class.
 
@@ -272,7 +273,7 @@ The signature of a non-generic method can include one or more type parameters of
 
 The body of such methods can also use these type parameters.
 
-## Example
+## Example: Declare non-generic method
 
 The following example declares a non-generic method, `ProtectData`, inside a generic class, `MyClass<ItemType>`. The method uses the class type parameter `ItemType` in its signature in an open constructed type.
 
@@ -333,7 +334,7 @@ Amount: $123.00**
 
 You can declare generic methods in both generic and non-generic classes. For example:
 
-## Example
+## Example: Declare generic and non-generic methods
 
 ```cpp
 // generics_method2.cpp
@@ -359,7 +360,7 @@ The non-generic method is still generic in the sense that it is parameterized by
 
 All types of methods in generic classes can be generic, including static, instance, and virtual methods.
 
-## Example
+## Example: Declare and use generic methods
 
 The following example demonstrates declaring and using generic methods within generic classes:
 
@@ -443,9 +444,9 @@ Since there is no way to refer to the outer type parameter, the compiler will pr
 
 When constructed nested generic types are named, the type parameter for the outer type is not included in the type parameter list for the inner type, even though the inner type is implicitly parameterized by the outer type's type parameter. In the above case, a name of a constructed type would be `Outer<int>::Inner<string>`.
 
-The following example demonstrates building and reading a linked list using nested types in generic classes.
+## Example: Build and read linked list
 
-## Example
+The following example demonstrates building and reading a linked list using nested types in generic classes.
 
 ```cpp
 // generics_linked_list.cpp
@@ -546,7 +547,7 @@ Reading nodes:
 
 - Properties, events, indexers and operators cannot themselves be parameterized.
 
-## Example
+## Example: Declare instance property
 
 This example shows declarations of an instance property within a generic class.
 
@@ -586,7 +587,7 @@ int main() {
 John, 234
 ```
 
-## Example
+## Example: Generic class with event
 
 The next example shows a generic class with an event.
 
@@ -653,9 +654,9 @@ int main() {
 
 The rules for declaring and using generic structs are the same as those for generic classes, except for the differences noted in the Visual C++ language reference.
 
-## Example
+## Example: Declare generic struct
 
-The following example declares a generic struct, `MyGenStruct`, with one field, `myField`, and assigns values of different types (**int**, **double**, `String^`) to this field.
+The following example declares a generic struct, `MyGenStruct`, with one field, `myField`, and assigns values of different types (**`int`**, **`double`**, `String^`) to this field.
 
 ```cpp
 // generics_generic_struct1.cpp

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: threading (C++)"
 title: "threading  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.threading"]
@@ -46,11 +47,9 @@ See the [licensed](licensed.md) example for a sample use of **threading**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|**coclass**|
 |**Invalid attributes**|None|

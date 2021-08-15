@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Indirection and Address-of Operators"
 title: "Indirection and Address-of Operators"
 ms.date: "02/16/2018"
 helpviewer_keywords: ["address-of operator (&)", "* operator", "operators [C++], address-of", "ampersand operator (&)", "* operator, indirection operator", "addresses [C++], indirection", "addresses [C++]", "indirection operator", "& operator, address-of operator", "null pointers [C++]", "* operator, address-of operator", "operators [C++], indirection"]
@@ -40,7 +41,7 @@ This statement uses the address-of operator (**&**) to take the address of the s
 pa = &a[5];
 ```
 
-The indirection operator (__&#42;__) is used in this example to access the `int` value at the address stored in `pa`. The value is assigned to the integer variable `x`:
+The indirection operator (__&#42;__) is used in this example to access the **`int`** value at the address stored in `pa`. The value is assigned to the integer variable `x`:
 
 ```C
 x = *pa;

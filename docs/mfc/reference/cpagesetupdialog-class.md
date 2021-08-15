@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPageSetupDialog Class"
 title: "CPageSetupDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPageSetupDialog", "AFXDLGS/CPageSetupDialog", "AFXDLGS/CPageSetupDialog::CPageSetupDialog", "AFXDLGS/CPageSetupDialog::CreatePrinterDC", "AFXDLGS/CPageSetupDialog::DoModal", "AFXDLGS/CPageSetupDialog::GetDeviceName", "AFXDLGS/CPageSetupDialog::GetDevMode", "AFXDLGS/CPageSetupDialog::GetDriverName", "AFXDLGS/CPageSetupDialog::GetMargins", "AFXDLGS/CPageSetupDialog::GetPaperSize", "AFXDLGS/CPageSetupDialog::GetPortName", "AFXDLGS/CPageSetupDialog::OnDrawPage", "AFXDLGS/CPageSetupDialog::PreDrawPage", "AFXDLGS/CPageSetupDialog::m_psd"]
@@ -319,7 +320,7 @@ Nonzero value if handled; otherwise 0.
 
 This image is then displayed as part of the common OLE Page Setup dialog box. The default implementation draws an image of a page of text.
 
-Override this function to customize the drawing of a specific area of the image, or the entire image. You can do this by using a **switch** statement with **case** statements checking the value of *nMessage*. For example, to customize the rendering of the contents of the page image, you could use the following example code:
+Override this function to customize the drawing of a specific area of the image, or the entire image. You can do this by using a **`switch`** statement with **`case`** statements checking the value of *nMessage*. For example, to customize the rendering of the contents of the page image, you could use the following example code:
 
 [!code-cpp[NVC_MFCDocView#96](../../mfc/codesnippet/cpp/cpagesetupdialog-class_3.cpp)]
 

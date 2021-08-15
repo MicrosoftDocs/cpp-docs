@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strstream Class"
 title: "strstream Class"
 ms.date: "11/04/2016"
 f1_keywords: ["strstream/std::strstream::freeze", "strstream/std::strstream::pcount", "strstream/std::strstream::rdbuf", "strstream/std::strstream::str"]
@@ -54,7 +55,7 @@ void freeze(bool _Freezeit = true);
 ### Parameters
 
 *_Freezeit*\
-A **bool** indicating whether you want the stream to be frozen.
+A **`bool`** indicating whether you want the stream to be frozen.
 
 ### Remarks
 

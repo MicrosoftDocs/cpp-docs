@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Extraction Operators"
 title: "Using Extraction Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["extraction operators [C++]", "&gt;&gt; operator [C++], extraction operators", "operators [C++], extraction"]

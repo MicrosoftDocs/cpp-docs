@@ -6,19 +6,19 @@ helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time a
 ---
 # Reference: Windows Performance Analyzer views
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 The C++ Build Insights tools are available in Visual Studio 2019. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 This article provides details on each of the C++ Build Insights views available in Windows Performance Analyzer (WPA). Use this page to find:
 
 - data column descriptions; and
 - available presets for each view, including their intended use and preferred viewing mode.
 
-If you're new to WPA, we recommend that you first familiarize yourself with the [basics of WPA for C++ Build Insights](/cpp/build-insights/tutorials/wpa-basics).
+If you're new to WPA, we recommend that you first familiarize yourself with the [basics of WPA for C++ Build Insights](../tutorials/wpa-basics.md).
 
 ## Build Explorer
 
@@ -115,14 +115,14 @@ The Functions view is used to identify functions with an excessively long code g
 
 | Preset Name | Preferred View Mode | How to Use |
 |-------------|---------------------|------------|
-| Statistics  | Table               | See which functions had the highest aggregated code generation time by looking at the list in descending order. They may hint where your code overuses the **__forceinline** keyword, or that some functions may be too large. |
+| Statistics  | Table               | See which functions had the highest aggregated code generation time by looking at the list in descending order. They may hint where your code overuses the **`__forceinline`** keyword, or that some functions may be too large. |
 | Timelines   | Graph               | Look at this bar graph to learn the location and duration of functions that take the most time to generate. See if they align with bottlenecks in the Build Explorer view. If they do, take appropriate action to reduce their code generation time and benefit your build times. |
 
 ## See also
 
-[Get started with C++ Build Insights](/cpp/build-insights/get-started-with-cpp-build-insights)\
+[Get started with C++ Build Insights](../get-started-with-cpp-build-insights.md)\
 [Reference: vcperf commands](vcperf-commands.md)\
-[Tutorial: Windows Performance Analyzer basics](/cpp/build-insights/tutorials/wpa-basics)\
+[Tutorial: Windows Performance Analyzer basics](../tutorials/wpa-basics.md)\
 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer)
 
 ::: moniker-end

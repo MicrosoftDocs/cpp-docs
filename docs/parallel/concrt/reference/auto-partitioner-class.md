@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: auto_partitioner Class"
 title: "auto_partitioner Class"
 ms.date: "11/04/2016"
 f1_keywords: ["auto_partitioner", "PPL/concurrency::auto_partitioner", "PPL/concurrency::auto_partitioner::auto_partitioner"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multithreading: Creating MFC User-Interface Threads"
 title: "Multithreading: Creating MFC User-Interface Threads"
 ms.date: "08/27/2018"
 f1_keywords: ["CREATE_SUSPENDED", "SECURITY_ATTRIBUTES"]

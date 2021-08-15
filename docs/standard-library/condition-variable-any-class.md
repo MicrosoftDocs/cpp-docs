@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: condition_variable_any Class"
 title: "condition_variable_any Class"
 ms.date: "11/04/2016"
 f1_keywords: ["condition_variable/std::condition_variable_any", "condition_variable/std::condition_variable_any::condition_variable_any", "condition_variable/std::condition_variable_any::notify_all", "condition_variable/std::condition_variable_any::notify_one", "condition_variable/std::condition_variable_any::wait", "condition_variable/std::condition_variable_any::wait_for", "condition_variable/std::condition_variable_any::wait_until"]
@@ -19,13 +20,13 @@ class condition_variable_any;
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[condition_variable_any](#condition_variable_any)|Constructs a `condition_variable_any` object.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[notify_all](#notify_all)|Unblocks all threads that are waiting for the `condition_variable_any` object.|
 |[notify_one](#notify_one)|Unblocks one of the threads that are waiting for the `condition_variable_any` object.|
@@ -79,7 +80,7 @@ void wait(Lock& Lck, Predicate Pred);
 A `mutex` object of any type.
 
 *Pred*\
-Any expression that returns **true** or **false**.
+Any expression that returns **`true`** or **`false`**.
 
 ### Remarks
 
@@ -113,7 +114,7 @@ A `mutex` object of any type.
 A `chrono::duration` object that specifies the amount of time before the thread wakes up.
 
 *Pred*\
-Any expression that returns **true** or **false**.
+Any expression that returns **`true`** or **`false`**.
 
 ### Return Value
 
@@ -168,13 +169,13 @@ A mutex object.
 A [chrono::time_point](../standard-library/time-point-class.md) object.
 
 *Pred*\
-Any expression that returns **true** or **false**.
+Any expression that returns **`true`** or **`false`**.
 
 ### Return Value
 
 Methods that return a `cv_status` type return `cv_status::timeout` if the wait terminates when *Abs_time* elapses. Otherwise, the methods return `cv_status::no_timeout`.
 
-Methods that return a `bool` return the value of *Pred*.
+Methods that return a **`bool`** return the value of *Pred*.
 
 ### Remarks
 

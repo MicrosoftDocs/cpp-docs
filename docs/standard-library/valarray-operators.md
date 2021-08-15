@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;valarray&gt; operators"
 title: "&lt;valarray&gt; operators"
 ms.date: "03/27/2019"
 f1_keywords: ["valarray/std::operator!=", "valarray/std::operator%", "valarray/std::operator&amp;", "valarray/std::operator&amp;&amp;", "valarray/std::operator&gt;", "valarray/std::operator&gt;&gt;", "valarray/std::operator&gt;=", "valarray/std::operator&lt;", "valarray/std::operator&lt;&lt;", "valarray/std::operator&lt;=", "valarray/std::operator*", "valarray/std::operator+", "valarray/std::operator-", "valarray/std::operator/", "valarray/std::operator==", "valarray/std::operator^", "valarray/std::operator|", "valarray/std::operator||"]
@@ -43,9 +44,9 @@ The second of the two valarrays whose elements are to be tested for inequality.
 
 A valarray of Boolean values, each of which is:
 
-- **true** if the corresponding elements are unequal.
+- **`true`** if the corresponding elements are unequal.
 
-- **false** if the corresponding elements are not unequal.
+- **`false`** if the corresponding elements are not unequal.
 
 ### Remarks
 
@@ -227,7 +228,7 @@ A valarray whose elements are the element-wise combination of the bitwise AND op
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in **char** and **int** data types and variants and not on **float**, **double**, **longdouble**, **void**, **bool** or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **`char`** and **`int`** data types and variants and not on **`float`**, **`double`**, **longdouble**, **`void`**, **`bool`** or other, more complex data types.
 
 The bitwise `AND` has the same truth table as the logical `AND` but applies to the data type on the level of the individual bits. The [operator&&](#op_amp_amp) applies on an element level, counting all nonzero values as true, and the result is a valarray of Boolean values. The bitwise `AND` [operator&](#op_amp), by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.
 
@@ -405,9 +406,9 @@ The second of the two valarrays whose elements are to be compared or a specified
 
 A valarray of Boolean values, each of which is:
 
-- **true** if the *left* element or value is greater than the corresponding *right* element or value.
+- **`true`** if the *left* element or value is greater than the corresponding *right* element or value.
 
-- **false** if the *left* element or value is not greater than the corresponding *right* element or value.
+- **`false`** if the *left* element or value is not greater than the corresponding *right* element or value.
 
 ### Remarks
 
@@ -498,9 +499,9 @@ The second of the two valarrays whose elements are to be compared or a specified
 
 A valarray of Boolean values, each of which is:
 
-- **true** if the *left* element or value is greater than or equal to the corresponding *right* element or value.
+- **`true`** if the *left* element or value is greater than or equal to the corresponding *right* element or value.
 
-- **false** if the *left* element or value is less than the corresponding *right* element or value.
+- **`false`** if the *left* element or value is less than the corresponding *right* element or value.
 
 ### Remarks
 
@@ -680,9 +681,9 @@ The second of the two valarrays whose elements are to be compared or a specified
 
 A valarray of Boolean values, each of which is:
 
-- **true** if the *left* element or value is less than the corresponding *right* element or value.
+- **`true`** if the *left* element or value is less than the corresponding *right* element or value.
 
-- **false** if the *left* element or value is not less than the corresponding *right* element or value.
+- **`false`** if the *left* element or value is not less than the corresponding *right* element or value.
 
 ### Remarks
 
@@ -773,9 +774,9 @@ The second of the two valarrays whose elements are to be compared or a specified
 
 A valarray of Boolean values, each of which is:
 
-- **true** if the *left* element or value is less than or equal to the corresponding *right* element or value.
+- **`true`** if the *left* element or value is less than or equal to the corresponding *right* element or value.
 
-- **false** if the *left* element or value is greater than the corresponding *right* element or value.
+- **`false`** if the *left* element or value is greater than the corresponding *right* element or value.
 
 ### Remarks
 
@@ -1307,9 +1308,9 @@ The second of the two valarrays whose elements are to be tested for equality.
 
 A valarray of Boolean values, each of which is:
 
-- **true** if the corresponding elements are equal.
+- **`true`** if the corresponding elements are equal.
 
-- **false** if the corresponding elements are not equal.
+- **`false`** if the corresponding elements are not equal.
 
 ### Remarks
 
@@ -1402,9 +1403,9 @@ A valarray whose elements are the element-wise combination of the bitwise **XOR*
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in **char** and **int** data types and variants and not on **float**, **double**, **long double**, **void**, **bool** or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **`char`** and **`int`** data types and variants and not on **`float`**, **`double`**, **`long double`**, **`void`**, **`bool`** or other, more complex data types.
 
-The bitwise exclusive `OR` ( **XOR**) has the following semantics: Given bits *b*1 and *b*2, *b*1 **XOR** *b*2 is **true** if exactly one of the bits is true; **false** if both bits are false or if both bits are true.
+The bitwise exclusive `OR` ( **XOR**) has the following semantics: Given bits *b*1 and *b*2, *b*1 **XOR** *b*2 is **`true`** if exactly one of the bits is true; **`false`** if both bits are false or if both bits are true.
 
 ### Example
 
@@ -1497,9 +1498,9 @@ A valarray whose elements are the element-wise combination of the bitwise `OR` o
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in **char** and **int** data types and variants and not on **float**, **double**, **longdouble**, **void**, **bool** or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **`char`** and **`int`** data types and variants and not on **`float`**, **`double`**, **longdouble**, **`void`**, **`bool`** or other, more complex data types.
 
-The bitwise OR has the same truth table as the logical `OR`, but applies to the data type on the level of the individual bits. Given bits *b*1 and *b*2, *b*1 `OR` *b*2 is **true** if at least one of the bits is true or **false** if both bits are false. The logical `OR`[operator&#124;&#124;](../standard-library/valarray-operators.md#op_lor) applies on an element level, counting all nonzero values as **true**, and the result is a valarray of Boolean values. The bitwise OR `operator|`, by contrast, can result in a valarray of values other than 0 or 1, depending on the outcome of the bitwise operation.
+The bitwise OR has the same truth table as the logical `OR`, but applies to the data type on the level of the individual bits. Given bits *b*1 and *b*2, *b*1 `OR` *b*2 is **`true`** if at least one of the bits is true or **`false`** if both bits are false. The logical `OR`[operator&#124;&#124;](../standard-library/valarray-operators.md#op_lor) applies on an element level, counting all nonzero values as **`true`**, and the result is a valarray of Boolean values. The bitwise OR `operator|`, by contrast, can result in a valarray of values other than 0 or 1, depending on the outcome of the bitwise operation.
 
 ### Example
 
@@ -1588,11 +1589,11 @@ The second of the two valarrays whose respective elements are to be combined wit
 
 ### Return Value
 
-A valarray whose elements are of type **bool** and are the element-wise combination of the logical OR operation of *left* and *right*.
+A valarray whose elements are of type **`bool`** and are the element-wise combination of the logical OR operation of *left* and *right*.
 
 ### Remarks
 
-The logical `OR` `operator||` applies on an element level, counting all nonzero values as **true**, and the result is a valarray of Boolean values. The bitwise version of `OR`, [operator&#124;](../standard-library/valarray-operators.md#op_or) by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.
+The logical `OR` `operator||` applies on an element level, counting all nonzero values as **`true`**, and the result is a valarray of Boolean values. The bitwise version of `OR`, [operator&#124;](../standard-library/valarray-operators.md#op_or) by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.
 
 ### Example
 

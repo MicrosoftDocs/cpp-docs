@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections::UnorderedMap Class"
 title: "Platform::Collections::UnorderedMap Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
@@ -72,10 +73,9 @@ For more information, see [Collections](../cppcx/collections-c-cx.md).
 
 ### Events
 
-|||
-|-|-|
-|Name|Description|
-|[Map::MapChanged](#mapchanged) event|Occurs when the Map changes.|
+| Name | Description |
+|--|--|
+| [Map::MapChanged](#mapchanged) event | Occurs when the Map changes. |
 
 ## Inheritance Hierarchy
 
@@ -115,7 +115,7 @@ An iterator that specifies the first element in the map.
 
 ### Remarks
 
-A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myUnorderedMap->First();`.
+A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **`auto`** type deduction keyword. For example, `auto x = myUnorderedMap->First();`.
 
 ## <a name="getview"></a> UnorderedMap::GetView Method
 
@@ -150,7 +150,7 @@ The key used to locate the UnorderedMap element. The type of *key* is typename *
 
 ### Return Value
 
-**true** if the key is found; otherwise, **false**.
+**`true`** if the key is found; otherwise, **`false`**.
 
 ## <a name="insert"></a> UnorderedMap::Insert Method
 
@@ -175,7 +175,7 @@ The value portion of the key-value pair. The type of *value* is typename *V*.
 
 ### Return Value
 
-**true** if the key of an existing element in the current Map matches *key* and the value portion of that element is set to *value*. **false** if no existing element in the current Map matches *key* and the *key* and *value* parameters are made into a key-value pair and then added to the current UnorderedMap.
+**`true`** if the key of an existing element in the current Map matches *key* and the value portion of that element is set to *value*. **`false`** if no existing element in the current Map matches *key* and the *key* and *value* parameters are made into a key-value pair and then added to the current UnorderedMap.
 
 ## <a name="lookup"></a> UnorderedMap::Lookup Method
 

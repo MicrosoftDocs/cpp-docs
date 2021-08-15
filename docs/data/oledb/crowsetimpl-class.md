@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRowsetImpl Class"
 title: "CRowsetImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRowsetImpl", "ATL.CRowsetImpl", "ATL::CRowsetImpl", "CRowsetImpl.NameFromDBID", "CRowsetImpl::NameFromDBID", "CRowsetImpl.SetCommandText", "CRowsetImpl::SetCommandText", "CRowsetImpl.GetColumnInfo", "CRowsetImpl::GetColumnInfo", "CRowsetImpl::GetCommandFromID", "GetCommandFromID", "CRowsetImpl.GetCommandFromID", "CRowsetImpl.ValidateCommandID", "CRowsetImpl::ValidateCommandID", "CRowsetImpl.m_rgRowData", "CRowsetImpl::m_rgRowData", "CRowsetImpl::m_strCommandText", "CRowsetImpl.m_strCommandText", "CRowsetImpl::m_strIndexText", "CRowsetImpl.m_strIndexText"]
@@ -48,22 +49,22 @@ The class that will act as storage for the rowset's data. This parameter default
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[NameFromDBID](#namefromdbid)|Extracts a string from a `DBID` and copies it to the *bstr* passed in.|
-|[SetCommandText](#setcommandtext)|Validates and stores the `DBID`s in the two strings ([m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)).|
+|[SetCommandText](#setcommandtext)|Validates and stores the `DBID`s in the two strings ([m_strCommandText](#strcommandtext) and [m_strIndexText](#strindextext)).|
 
 ### Overridable Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetColumnInfo](#getcolumninfo)|Retrieves column information for a particular client request.|
-|[GetCommandFromID](#getcommandfromid)|Checks to see if either or both parameters contain string values, and if so, copies the string values to the data members [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).|
-|[ValidateCommandID](#validatecommandid)|Checks to see if either or both `DBID`s contain string values, and if so, copies them to its data members [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).|
+|[GetCommandFromID](#getcommandfromid)|Checks to see if either or both parameters contain string values, and if so, copies the string values to the data members [m_strCommandText](#strcommandtext) and [m_strIndexText](#strindextext).|
+|[ValidateCommandID](#validatecommandid)|Checks to see if either or both `DBID`s contain string values, and if so, copies them to its data members [m_strCommandText](#strcommandtext) and [m_strIndexText](#strindextext).|
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_rgRowData](#rgrowdata)|By default, a `CAtlArray` that templatizes on the user record template argument to `CRowsetImpl`. Another array type class can be used by changing the `ArrayType` template argument to `CRowsetImpl`.|
 |[m_strCommandText](#strcommandtext)|Contains the rowset's initial command.|
@@ -79,7 +80,7 @@ If you are creating a `CRowsetImpl`-derived class to implement a command or sess
 
 `HRESULT Execute(LONG* pcRows, DBPARAMS* pParams)`
 
-To implement any of the `CRowsetImpl`-derived `Execute` methods, you must populate your internal data buffers ([m_rgRowData](../../data/oledb/crowsetimpl-m-rgrowdata.md)).
+To implement any of the `CRowsetImpl`-derived `Execute` methods, you must populate your internal data buffers ([m_rgRowData](#rgrowdata)).
 
 ## <a name="namefromdbid"></a> CRowsetImpl::NameFromDBID
 
@@ -102,7 +103,7 @@ HRESULT CRowsetBaseImpl::NameFromDBID(DBID* pDBID,
 [in] A [CComBSTR](../../atl/reference/ccombstr-class.md) reference to place a copy of the `DBID` string.
 
 *bIndex*<br/>
-[in] **true** if an index `DBID`; **false** if a table `DBID`.
+[in] **`true`** if an index `DBID`; **`false`** if a table `DBID`.
 
 ### Return Value
 
@@ -110,11 +111,11 @@ A standard HRESULT. Depending on whether the `DBID` is a table or an index (deno
 
 ### Remarks
 
-This method is called by the `CRowsetImpl` implementations of [ValidateCommandID](../../data/oledb/crowsetimpl-validatecommandid.md) and [GetCommandFromID](../../data/oledb/crowsetimpl-getcommandfromid.md).
+This method is called by the `CRowsetImpl` implementations of [ValidateCommandID](#validatecommandid) and [GetCommandFromID](#getcommandfromid).
 
 ## <a name="setcommandtext"></a> CRowsetImpl::SetCommandText
 
-Validates and stores the `DBID`s in the two strings ([m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)).
+Validates and stores the `DBID`s in the two strings ([m_strCommandText](#strcommandtext) and [m_strIndexText](#strindextext)).
 
 ### Syntax
 
@@ -139,7 +140,7 @@ A standard HRESULT.
 
 The `SetCommentText` method is called by `CreateRowset`, a static templatized method of `IOpenRowsetImpl`.
 
-This method delegates its work by calling [ValidateCommandID](../../data/oledb/crowsetimpl-validatecommandid.md) and [GetCommandFromID](../../data/oledb/crowsetimpl-getcommandfromid.md) through an upcasted pointer.
+This method delegates its work by calling [ValidateCommandID](#validatecommandid) and [GetCommandFromID](#getcommandfromid) through an upcasted pointer.
 
 ## <a name="getcolumninfo"></a> CRowsetImpl::GetColumnInfo
 
@@ -176,7 +177,7 @@ The following example demonstrates `GetColumnInfo` usage. In this example, `CMyR
 
 ## <a name="getcommandfromid"></a> CRowsetImpl::GetCommandFromID
 
-Checks to see if either or both parameters contain string values, and if so, copies the string values to the data members [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).
+Checks to see if either or both parameters contain string values, and if so, copies the string values to the data members [m_strCommandText](#strcommandtext) and [m_strIndexText](#strindextext).
 
 ### Syntax
 
@@ -199,11 +200,11 @@ A standard HRESULT.
 
 ### Remarks
 
-This method is called through a static upcast by `CRowsetImpl` to populate the data members [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md). By default, this method checks to see if either or both parameters contain string values. If they contain string values, this method copies the string values to the data members. By placing a method with this signature in your `CRowsetImpl`-derived class, your method will be called instead of the base implementation.
+This method is called through a static upcast by `CRowsetImpl` to populate the data members [m_strCommandText](#strcommandtext) and [m_strIndexText](#strindextext). By default, this method checks to see if either or both parameters contain string values. If they contain string values, this method copies the string values to the data members. By placing a method with this signature in your `CRowsetImpl`-derived class, your method will be called instead of the base implementation.
 
 ## <a name="validatecommandid"></a> CRowsetImpl::ValidateCommandID
 
-Checks to see if either or both `DBID`s contain string values, and if so, copies them to its data members [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).
+Checks to see if either or both `DBID`s contain string values, and if so, copies them to its data members [m_strCommandText](#strcommandtext) and [m_strIndexText](#strindextext).
 
 ### Syntax
 
@@ -226,7 +227,7 @@ A standard HRESULT.
 
 ### Remarks
 
-This method is called through a static upcast by `CRowsetImpl` to populate its data members [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md). By default, this method checks to see if either or both `DBID`s contain string values, and if so, copies them to its data members. By placing a method with this signature in your `CRowsetImpl`-derived class, your method will be called instead of the base implementation.
+This method is called through a static upcast by `CRowsetImpl` to populate its data members [m_strCommandText](#strcommandtext) and [m_strIndexText](#strindextext). By default, this method checks to see if either or both `DBID`s contain string values, and if so, copies them to its data members. By placing a method with this signature in your `CRowsetImpl`-derived class, your method will be called instead of the base implementation.
 
 ## <a name="rgrowdata"></a> CRowsetImpl::m_rgRowData
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Error LNK2020"
 title: "Linker Tools Error LNK2020"
 ms.date: "11/04/2016"
 f1_keywords: ["LNK2020"]
@@ -17,7 +18,7 @@ To resolve:
 
 - Include the object file or library in which the missing function or data is already defined.
 
-## Example
+## Examples
 
 The following sample generates LNK2020.
 
@@ -35,8 +36,6 @@ ref struct B {
    static int f() { return 0; }
 };
 ```
-
-## Example
 
 LNK2020 will also occur if you create a variable of a managed template type, but do not also instantiate the type.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Dynamically Binding Data Columns (ODBC)"
 title: "Recordset: Dynamically Binding Data Columns (ODBC)"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["ODBC recordsets [C++], binding columns dynamically", "data binding [C++], recordset columns", "recordsets [C++], binding data", "data binding [C++], columns in recordsets", "columns [C++], binding to recordsets"]
@@ -34,7 +35,7 @@ With a small amount of extra code, you can:
 
 Your recordset still contains data members for the columns you knew about at design time. It also contains a small amount of extra code that dynamically determines whether any new columns have been added to your target table and, if so, binds these new columns to dynamically allocated storage (rather than to recordset data members).
 
-This topic does not cover other dynamic binding cases, such as dropped tables or columns. For those cases, you need to use ODBC API calls more directly. For information, see the ODBC SDK *Programmer's Reference* on the MSDN Library CD.
+This topic does not cover other dynamic binding cases, such as dropped tables or columns. For those cases, you need to use ODBC API calls more directly. For information, see the [ODBC Programmer's Reference](/sql/odbc/reference/odbc-programmer-s-reference).
 
 ## <a name="_core_how_to_bind_columns_dynamically"></a> How to Bind Columns Dynamically
 
@@ -70,7 +71,7 @@ Dynamically binding added columns at run time requires the following steps:
 
    One approach is to build one or more dynamic lists, one for the new columns' names, another for their result values, and a third for their data types (if necessary). These lists, particularly the value list, provide the information and the necessary storage for binding. The following figure illustrates building the lists.
 
-   ![Building lists of columns to bind dynamically](../../data/odbc/media/vc37w61.gif "Building lists of columns to bind dynamically")<br/>
+   ![Building lists of columns to bind dynamically.](../../data/odbc/media/vc37w61.gif "Building lists of columns to bind dynamically")<br/>
    Building Lists of Columns to Bind Dynamically
 
 1. Add an RFX function call in your main recordset's `DoFieldExchange` function for each added column. These RFX calls do the work of fetching a record, including the additional columns, and binding the columns to recordset data members or to your dynamically supplied storage for them.
@@ -81,12 +82,12 @@ Dynamically binding added columns at run time requires the following steps:
 
 The four lists you need to work with are shown in the following table.
 
-|||
-|-|-|
-|**Current-Table-Columns**| (List 1 in the illustration) A list of the columns currently in the table on the data source. This list might match the list of columns currently bound in your recordset.|
-|**Bound-Recordset-Columns**| (List 2 in the illustration) A list of the columns bound in your recordset. These columns already have RFX statements in your `DoFieldExchange` function.|
-|**Columns-To-Bind-Dynamically**| (List 3 in the illustration) A list of columns in the table but not in your recordset. These are the columns you want to bind dynamically.|
-|**Dynamic-Column-Values**| (List 4 in the illustration) A list containing storage for the values retrieved from the columns you bind dynamically. Elements of this list correspond to those in Columns-to-Bind-Dynamically, one to one.|
+| List | Description |
+|--|--|
+| **Current-Table-Columns** | (List 1 in the illustration) A list of the columns currently in the table on the data source. This list might match the list of columns currently bound in your recordset. |
+| **Bound-Recordset-Columns** | (List 2 in the illustration) A list of the columns bound in your recordset. These columns already have RFX statements in your `DoFieldExchange` function. |
+| **Columns-To-Bind-Dynamically** | (List 3 in the illustration) A list of columns in the table but not in your recordset. These are the columns you want to bind dynamically. |
+| **Dynamic-Column-Values** | (List 4 in the illustration) A list containing storage for the values retrieved from the columns you bind dynamically. Elements of this list correspond to those in Columns-to-Bind-Dynamically, one to one. |
 
 ### <a name="_core_building_your_lists"></a> Building Your Lists
 

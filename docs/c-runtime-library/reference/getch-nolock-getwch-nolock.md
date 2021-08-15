@@ -1,8 +1,9 @@
 ---
 title: "_getch_nolock, _getwch_nolock"
+description: "API reference for _getch_nolock, and _getwch_nolock; which get a character from the console without echo and without locking the thread."
 ms.date: "4/2/2020"
 api_name: ["_getwch_nolock", "_getch_nolock", "_o__getch_nolock", "_o__getwch_nolock"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-conio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_getch_nolock", "getwch_nolock", "getch_nolock", "_getwch_nolock", "_gettch_nolock", "gettch_nolock"]
@@ -25,7 +26,7 @@ wint_t _getwch_nolock( void );
 
 ## Return Value
 
-Returns the character read. There is no error return.
+Returns the character read. There's no error return.
 
 ## Remarks
 

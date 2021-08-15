@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: synchronize"
 title: "synchronize (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.synchronize"]
@@ -54,9 +55,7 @@ class CMyClass {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Class method, method|
 |**Repeatable**|No|

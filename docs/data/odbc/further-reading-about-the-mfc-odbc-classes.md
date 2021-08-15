@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Further Reading About the MFC ODBC Classes"
 title: "Further Reading About the MFC ODBC Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ODBC classes"]

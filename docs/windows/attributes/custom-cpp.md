@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: custom (C++)"
 title: "custom (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["vc-attr.custom"]
@@ -36,12 +37,10 @@ The **custom** attribute has the same functionality as the [custom](/windows/win
 
 ### Attribute Context
 
-|||
-|-|-|
-|**Applies to**|Non-COM **interface**, **class**, **enum**s, `idl_module` methods, interface members, interface parameters, **typedef**s, **union**s, **struct**s|
-|**Repeatable**|Yes|
-|**Required attributes**|**coclass** (when used on class)|
-|**Invalid attributes**|None|
+- **Applies to**: Non-COM `interface`, `idl_module` methods, interface members, interface parameters, **`typedef`**, **`class`**, **`enum`**, **`union`**, and **`struct`** types.
+- **Repeatable**: Yes.
+- **Required attributes**: **coclass** (when used on class).
+- **Invalid attributes**: None.
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).
 

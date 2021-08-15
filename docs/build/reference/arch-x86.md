@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /arch (x86)"
 title: "/arch (x86)"
 ms.date: "10/01/2019"
 ms.assetid: 9dd5a75d-06e4-4674-aade-33228486078d
@@ -89,9 +90,7 @@ The `_M_IX86_FP`, `__AVX__`, `__AVX2__`, `__AVX512F__`, `__AVX512CD__`, `__AVX51
 
 1. Open the **Property Pages** dialog box for the project. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **Configuration Properties**, **C/C++** folder.
-
-1. Select the **Code Generation** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
 1. Modify the **Enable Enhanced Instruction Set** property.
 

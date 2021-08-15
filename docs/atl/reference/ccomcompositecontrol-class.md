@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComCompositeControl Class"
 title: "CComCompositeControl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComCompositeControl", "ATLCTL/ATL::CComCompositeControl", "ATLCTL/ATL::CComCompositeControl::CComCompositeControl", "ATLCTL/ATL::CComCompositeControl::AdviseSinkMap", "ATLCTL/ATL::CComCompositeControl::CalcExtent", "ATLCTL/ATL::CComCompositeControl::Create", "ATLCTL/ATL::CComCompositeControl::CreateControlWindow", "ATLCTL/ATL::CComCompositeControl::SetBackgroundColorFromAmbient", "ATLCTL/ATL::CComCompositeControl::m_hbrBackground", "ATLCTL/ATL::CComCompositeControl::m_hWndFocus"]
@@ -99,14 +100,14 @@ True if all controls are to be advised; otherwise false.
 
 ### Return Value
 
-|||
-|-|-|
-|S_OK  |All controls in the event sink map were connected or disconnected from their event source successfully.|
-|E_FAIL  |Not all controls in the event sink map could be connected or disconnected from their event source successfully.|
-|E_POINTER  |This error usually indicates a problem with an entry in the control's event sink map or a problem with a template argument used in an `IDispEventImpl` or `IDispEventSimpleImpl` base class.|
-|CONNECT_E_ADVISELIMIT  |The connection point has already reached its limit of connections and cannot accept any more.|
-|CONNECT_E_CANNOTCONNECT  |The sink does not support the interface required by this connection point.|
-|CONNECT_E_NOCONNECTION  |The cookie value does not represent a valid connection. This error usually indicates a problem with an entry in the control's event sink map or a problem with a template argument used in an `IDispEventImpl` or `IDispEventSimpleImpl` base class.|
+| Value | Description |
+|--|--|
+| `S_OK` | All controls in the event sink map were connected or disconnected from their event source successfully. |
+| `E_FAIL` | Not all controls in the event sink map could be connected or disconnected from their event source successfully. |
+| `E_POINTER` | This error usually indicates a problem with an entry in the control's event sink map or a problem with a template argument used in an `IDispEventImpl` or `IDispEventSimpleImpl` base class. |
+| `CONNECT_E_ADVISELIMIT` | The connection point has already reached its limit of connections and cannot accept any more. |
+| `CONNECT_E_CANNOTCONNECT` | The sink does not support the interface required by this connection point. |
+| `CONNECT_E_NOCONNECTION` | The cookie value does not represent a valid connection. This error usually indicates a problem with an entry in the control's event sink map or a problem with a template argument used in an `IDispEventImpl` or `IDispEventSimpleImpl` base class. |
 
 ### Remarks
 

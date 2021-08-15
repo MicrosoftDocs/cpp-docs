@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: join Class"
 title: "join Class"
 ms.date: "11/04/2016"
 f1_keywords: ["join", "AGENTS/concurrency::join", "AGENTS/concurrency::join::join", "AGENTS/concurrency::join::accept_message", "AGENTS/concurrency::join::consume_message", "AGENTS/concurrency::join::link_target_notification", "AGENTS/concurrency::join::propagate_message", "AGENTS/concurrency::join::propagate_to_any_targets", "AGENTS/concurrency::join::release_message", "AGENTS/concurrency::join::reserve_message", "AGENTS/concurrency::join::resume_propagation"]
@@ -233,11 +234,11 @@ The `runtime_object_identity` of the offered `message` object.
 
 ### Return Value
 
-**true** if the message was successfully reserved, **false** otherwise.
+**`true`** if the message was successfully reserved, **`false`** otherwise.
 
 ### Remarks
 
-After `reserve` is called, if it returns **true**, either `consume` or `release` must be called to either take or release ownership of the message.
+After `reserve` is called, if it returns **`true`**, either `consume` or `release` must be called to either take or release ownership of the message.
 
 ## <a name="resume_propagation"></a> resume_propagation
 

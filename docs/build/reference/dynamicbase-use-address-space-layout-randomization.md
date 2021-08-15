@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DYNAMICBASE (Use address space layout randomization)"
 title: "/DYNAMICBASE (Use address space layout randomization)"
 ms.date: "06/12/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.RandomizedBaseAddress"]
@@ -36,4 +37,4 @@ By default, **/DYNAMICBASE** is enabled. To disable this option, use **/DYNAMICB
 - [MSVC linker reference](linking.md)
 - [MSVC Linker Options](linker-options.md)
 - [/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md)
-- [Windows ISV Software Security Defenses](https://msdn.microsoft.com/library/bb430720.aspx)
+- [Windows ISV Software Security Defenses](/previous-versions/bb430720(v=msdn.10))

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NMAKE Warning U4006"
 title: "NMAKE Warning U4006"
 ms.date: "11/04/2016"
 f1_keywords: ["U4006"]

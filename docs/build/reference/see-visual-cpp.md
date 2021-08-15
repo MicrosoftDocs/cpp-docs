@@ -1,7 +1,8 @@
 ---
+description: "Learn more about: &lt;see&gt;"
 title: "&lt;see> (C++ Documentation Comments)"
 ms.date: "11/04/2016"
-f1_keywords: ["<see>", "see"]
+f1_keywords: ["<see>"]
 helpviewer_keywords: ["<see> C++ XML tag", "see C++ XML tag"]
 ms.assetid: 20ef66f4-b278-45cf-8613-63919edf5720
 ---

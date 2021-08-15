@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Message Handling and Command Targets"
 title: "Message Handling and Command Targets"
 ms.date: "11/04/2016"
 f1_keywords: ["IOleCommandTarget"]
@@ -40,4 +41,4 @@ The `QueryStatus` method here tests whether a particular set of commands, the se
 
 ## See also
 
-[Active Document Containers](../mfc/active-document-containers.md)
+[Active Document Containers](active-document-containers.md)

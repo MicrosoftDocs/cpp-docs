@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: size_is"
 title: "size_is (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.size_is"]
@@ -30,11 +31,9 @@ See the example for [first_is](first-is.md) for a sample of how to specify a sec
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|
+|**Applies to**|Field in **`struct`** or **`union`**, interface parameter, interface method|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|`max_is`|

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: call Class"
 title: "call Class"
 ms.date: "11/04/2016"
 f1_keywords: ["call", "AGENTS/concurrency::call", "AGENTS/concurrency::call::call", "AGENTS/concurrency::call::process_input_messages", "AGENTS/concurrency::call::process_message", "AGENTS/concurrency::call::propagate_message", "AGENTS/concurrency::call::send_message", "AGENTS/concurrency::call::supports_anonymous_source"]
@@ -202,7 +203,7 @@ virtual bool supports_anonymous_source();
 
 ### Return Value
 
-**true** because the block does not postpone offered messages.
+**`true`** because the block does not postpone offered messages.
 
 ## See also
 

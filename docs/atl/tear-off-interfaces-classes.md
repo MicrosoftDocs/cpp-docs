@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tear-Off Interfaces Classes"
 title: "Tear-Off Interfaces Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

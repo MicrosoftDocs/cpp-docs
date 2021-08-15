@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCDropDownFrame Class"
 title: "CMFCDropDownFrame Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCDropDownFrame", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::Create", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentMenuBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentPopupMenu", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::RecalcLayout", "AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::SetAutoDestroy"]
@@ -19,17 +20,15 @@ class CMFCDropDownFrame : public CMiniFrameWnd
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCDropDownFrame::CMFCDropDownFrame`|Default constructor.|
 |`CMFCDropDownFrame::~CMFCDropDownFrame`|Destructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCDropDownFrame::Create](#create)|Creates a `CMFCDropDownFrame` object.|
 |`CMFCDropDownFrame::CreateObject`|Used by the framework to create a dynamic instance of this class type.|
 |[CMFCDropDownFrame::GetParentMenuBar](#getparentmenubar)|Retrieves the parent menu bar of the drop-down frame.|
@@ -82,13 +81,17 @@ virtual BOOL Create(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pWndParent*|[in] The parent window of the drop-down frame.|
-|*x*|[in] The horizontal screen coordinate for the location of the down-down frame.|
-|*y*|[in] The vertical screen coordinate for the location of the down-down frame.|
-|*pWndOriginToolbar*|[in] The toolbar that has the drop-down buttons that this method uses to populate the new drop-down frame object.|
+*pWndParent*\
+[in] The parent window of the drop-down frame.
+
+*x*\
+[in] The horizontal screen coordinate for the location of the down-down frame.
+
+*y*\
+[in] The vertical screen coordinate for the location of the down-down frame.
+
+*pWndOriginToolbar*\
+[in] The toolbar that has the drop-down buttons that this method uses to populate the new drop-down frame object.
 
 ### Return Value
 
@@ -142,10 +145,8 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*bNotify*|[in] Unused.|
+*bNotify*\
+[in] Unused.
 
 ### Remarks
 

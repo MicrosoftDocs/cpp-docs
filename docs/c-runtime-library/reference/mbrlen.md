@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: mbrlen"
 title: "mbrlen"
 ms.date: "4/2/2020"
 api_name: ["mbrlen", "_o_mbrlen"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbrlen"]
@@ -38,12 +39,12 @@ Pointer to the current shift state of the initial byte of *str*.
 
 One of the following values:
 
-|||
-|-|-|
-0|The next *count* or fewer bytes complete the multibyte character that represents the wide null character.
-1 to *count*, inclusive|The next *count* or fewer bytes complete a valid multibyte character. The value returned is the number of bytes that complete the multibyte character.
-(size_t)(-2)|The next *count* bytes contribute to an incomplete but potentially valid multibyte character and all *count* bytes have been processed.
-(size_t)(-1)|An encoding error occurred. The next *count* or fewer bytes do not contribute to a complete and valid multibyte character. In this case, **errno** is set to EILSEQ and the conversion state in *mbstate* is unspecified.
+| Value | Description |
+|--|--|
+| 0 | The next *count* or fewer bytes complete the multibyte character that represents the wide null character. |
+| 1 to *count*, inclusive | The next *count* or fewer bytes complete a valid multibyte character. The value returned is the number of bytes that complete the multibyte character. |
+| (size_t)(-2) | The next *count* bytes contribute to an incomplete but potentially valid multibyte character and all *count* bytes have been processed. |
+| (size_t)(-1) | An encoding error occurred. The next *count* or fewer bytes do not contribute to a complete and valid multibyte character. In this case, **errno** is set to EILSEQ and the conversion state in *mbstate* is unspecified. |
 
 ## Remarks
 

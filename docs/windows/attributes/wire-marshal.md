@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: wire_marshal"
 title: "wire_marshal (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.wire_marshal"]
@@ -41,11 +42,9 @@ The following code shows a use of **wire_marshal**:
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**typedef**|
+|**Applies to**|**`typedef`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

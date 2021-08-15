@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Run-Time Error Checking"
 title: "Run-Time Error Checking"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["run-time error checking", "run-time errors, checking"]

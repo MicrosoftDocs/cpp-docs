@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Module::MethodReleaseNotifier Class"
 title: "Module::MethodReleaseNotifier Class"
 ms.date: "09/17/2018"
 ms.topic: "reference"
@@ -93,7 +94,7 @@ An object whose member function is an event handler.
 The member function of parameter *object* that is the event handler.
 
 *release*<br/>
-Specify `true` to enable calling the underlying [Module::ReleaseNotifier::Release()](module-releasenotifier-class.md#releasenotifier-release) method; otherwise, specify `false`.
+Specify **`true`** to enable calling the underlying [Module::ReleaseNotifier::Release()](module-releasenotifier-class.md#releasenotifier-release) method; otherwise, specify **`false`**.
 
 ## <a name="methodreleasenotifier-object"></a> Module::MethodReleaseNotifier::object_
 

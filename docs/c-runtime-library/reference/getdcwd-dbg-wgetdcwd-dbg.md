@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _getdcwd_dbg, _wgetdcwd_dbg"
 title: "_getdcwd_dbg, _wgetdcwd_dbg"
 ms.date: "11/04/2016"
 api_name: ["_getdcwd_dbg", "_wgetdcwd_dbg"]
@@ -43,7 +44,7 @@ Name of the disk drive.
 Storage location for the path.
 
 *maxlen*<br/>
-Maximum length of the path in characters: **char** for **_getdcwd_dbg** and **wchar_t** for **_wgetdcwd_dbg**.
+Maximum length of the path in characters: **`char`** for **_getdcwd_dbg** and **`wchar_t`** for **_wgetdcwd_dbg**.
 
 *blockType*<br/>
 Requested type of the memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.

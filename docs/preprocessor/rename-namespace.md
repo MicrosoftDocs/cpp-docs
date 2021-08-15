@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: rename_namespace import attribute"
 title: "rename_namespace import attribute"
 ms.date: "08/29/2019"
 f1_keywords: ["rename_namespace"]

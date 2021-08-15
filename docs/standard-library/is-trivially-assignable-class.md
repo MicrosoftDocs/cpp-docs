@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_trivially_assignable Class"
 title: "is_trivially_assignable Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_trivially_assignable"]
@@ -26,7 +27,7 @@ The type of the object that provides the value.
 
 ## Remarks
 
-The expression `declval<To>() = declval<From>()` must be well-formed, and must be known to the compiler to require no non-trivial operations. Both `From` and `To` must be complete types, **void**, or arrays of unknown bound.
+The expression `declval<To>() = declval<From>()` must be well-formed, and must be known to the compiler to require no non-trivial operations. Both `From` and `To` must be complete types, **`void`**, or arrays of unknown bound.
 
 ## Requirements
 

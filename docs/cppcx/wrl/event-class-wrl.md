@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Event Class (WRL)"
 title: "Event Class (WRL)"
 ms.date: "09/24/2018"
 ms.topic: "reference"
@@ -58,7 +59,7 @@ WRL_NOTHROW Event(
 ### Parameters
 
 *h*<br/>
-Handle to an event. By default, *h* is initialized to `nullptr`.
+Handle to an event. By default, *h* is initialized to **`nullptr`**.
 
 ## <a name="operator-assign"></a> Event::operator=
 

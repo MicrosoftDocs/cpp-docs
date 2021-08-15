@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _set_new_handler"
 title: "_set_new_handler"
 ms.date: "4/2/2020"
 api_name: ["_set_new_handler", "_o__set_new_handler"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_set_new_handler", "set_new_handler"]
@@ -11,7 +12,7 @@ ms.assetid: 1d1781b6-5cf8-486a-b430-f365e0bb023f
 ---
 # _set_new_handler
 
-Transfers control to your error-handling mechanism if the **new** operator fails to allocate memory.
+Transfers control to your error-handling mechanism if the **`new`** operator fails to allocate memory.
 
 ## Syntax
 
@@ -30,7 +31,7 @@ Returns a pointer to the previous exception handling function registered by **_s
 
 ## Remarks
 
-The C++ **_set_new_handler** function specifies an exception-handling function that gains control if the **new** operator fails to allocate memory. If **new** fails, the run-time system automatically calls the exception-handling function that was passed as an argument to **_set_new_handler**. **_PNH**, defined in New.h, is a pointer to a function that returns type **int** and takes an argument of type **size_t**. Use **size_t** to specify the amount of space to be allocated.
+The C++ **_set_new_handler** function specifies an exception-handling function that gains control if the **`new`** operator fails to allocate memory. If **`new`** fails, the run-time system automatically calls the exception-handling function that was passed as an argument to **_set_new_handler**. **_PNH**, defined in New.h, is a pointer to a function that returns type **`int`** and takes an argument of type **size_t**. Use **size_t** to specify the amount of space to be allocated.
 
 There is no default handler.
 
@@ -67,7 +68,7 @@ You can save the function address that was last passed to the **_set_new_handler
    // . . .
 ```
 
-The C++ [_set_new_mode](set-new-mode.md) function sets the new handler mode for [malloc](malloc.md). The new handler mode indicates whether, on failure, **malloc** is to call the new handler routine as set by **_set_new_handler**. By default, **malloc** does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **malloc** fails to allocate memory, **malloc** calls the new handler routine in the same way that the **new** operator does when it fails for the same reason. To override the default, call:
+The C++ [_set_new_mode](set-new-mode.md) function sets the new handler mode for [malloc](malloc.md). The new handler mode indicates whether, on failure, **malloc** is to call the new handler routine as set by **_set_new_handler**. By default, **malloc** does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **malloc** fails to allocate memory, **malloc** calls the new handler routine in the same way that the **`new`** operator does when it fails for the same reason. To override the default, call:
 
 ```cpp
 _set_new_mode(1);

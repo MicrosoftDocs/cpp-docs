@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDaoQueryDef Class"
 title: "CDaoQueryDef Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDaoQueryDef", "AFXDAO/CDaoQueryDef", "AFXDAO/CDaoQueryDef::CDaoQueryDef", "AFXDAO/CDaoQueryDef::Append", "AFXDAO/CDaoQueryDef::CanUpdate", "AFXDAO/CDaoQueryDef::Close", "AFXDAO/CDaoQueryDef::Create", "AFXDAO/CDaoQueryDef::Execute", "AFXDAO/CDaoQueryDef::GetConnect", "AFXDAO/CDaoQueryDef::GetDateCreated", "AFXDAO/CDaoQueryDef::GetDateLastUpdated", "AFXDAO/CDaoQueryDef::GetFieldCount", "AFXDAO/CDaoQueryDef::GetFieldInfo", "AFXDAO/CDaoQueryDef::GetName", "AFXDAO/CDaoQueryDef::GetODBCTimeout", "AFXDAO/CDaoQueryDef::GetParameterCount", "AFXDAO/CDaoQueryDef::GetParameterInfo", "AFXDAO/CDaoQueryDef::GetParamValue", "AFXDAO/CDaoQueryDef::GetRecordsAffected", "AFXDAO/CDaoQueryDef::GetReturnsRecords", "AFXDAO/CDaoQueryDef::GetSQL", "AFXDAO/CDaoQueryDef::GetType", "AFXDAO/CDaoQueryDef::IsOpen", "AFXDAO/CDaoQueryDef::Open", "AFXDAO/CDaoQueryDef::SetConnect", "AFXDAO/CDaoQueryDef::SetName", "AFXDAO/CDaoQueryDef::SetODBCTimeout", "AFXDAO/CDaoQueryDef::SetParamValue", "AFXDAO/CDaoQueryDef::SetReturnsRecords", "AFXDAO/CDaoQueryDef::SetSQL", "AFXDAO/CDaoQueryDef::m_pDAOQueryDef", "AFXDAO/CDaoQueryDef::m_pDatabase"]
@@ -184,7 +185,7 @@ The object can represent an existing querydef stored in the database's QueryDefs
 
 To set the attributes of the querydef, you can use the [SetName](#setname), [SetSQL](#setsql), [SetConnect](#setconnect), [SetODBCTimeout](#setodbctimeout), and [SetReturnsRecords](#setreturnsrecords) member functions.
 
-When you finish with the querydef object, call its [Close](#close) member function. If you have a pointer to the querydef, use the **delete** operator to destroy the C++ object.
+When you finish with the querydef object, call its [Close](#close) member function. If you have a pointer to the querydef, use the **`delete`** operator to destroy the C++ object.
 
 ## <a name="close"></a> CDaoQueryDef::Close
 

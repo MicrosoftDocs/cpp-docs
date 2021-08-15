@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: default_delete Struct"
 title: "default_delete Struct"
 ms.date: "04/04/2019"
 f1_keywords: ["memory/std::default_delete"]
@@ -25,13 +26,13 @@ template <class T>
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[default_delete](#default_delete)|The constructor for objects of type `default_delete`.|
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator()](#op_paren)|A reference operator to access `default_delete`.|
 

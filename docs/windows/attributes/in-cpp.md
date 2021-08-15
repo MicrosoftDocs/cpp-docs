@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: in (C++)"
 title: "in  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.in"]
@@ -25,9 +26,7 @@ See [bindable](bindable.md) for an example of how to use **in**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface parameter, interface method|
 |**Repeatable**|No|

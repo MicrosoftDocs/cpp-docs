@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Visual C++ What&#39;s New 2003 through 2015"
 title: "Visual C++ What&#39;s New 2003 through 2015"
 ms.date: "07/02/2019"
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
@@ -59,7 +60,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - **mutable keyword.**
 
-   The **mutable** storage class specifier is no longer allowed in places where previously it compiled without error. Now, the compiler gives error C2071 (illegal storage class). According to the standard, the mutable specifier can be applied only to names of class data members, and cannot be applied to names declared const or static, and cannot be applied to reference members.
+   The **`mutable`** storage class specifier is no longer allowed in places where previously it compiled without error. Now, the compiler gives error C2071 (illegal storage class). According to the standard, the mutable specifier can be applied only to names of class data members, and cannot be applied to names declared const or static, and cannot be applied to reference members.
 
    For example, consider the following code:
 
@@ -75,11 +76,11 @@ Although these differences can affect your source code or other build artifacts,
     error C2071: 'S::r': illegal storage class
    ```
 
-   To fix the error, simply remove the redundant **mutable** keyword.
+   To fix the error, simply remove the redundant **`mutable`** keyword.
 
 - **char_16_t and char32_t**
 
-   You can no longer use `char16_t` or `char32_t` as aliases in a typedef, because these types are now treated as built-in. It was common for users and library authors to define `char16_t` and `char32_t` as aliases of `uint16_t` and `uint32_t`, respectively.
+   You can no longer use **`char16_t`** or **`char32_t`** as aliases in a typedef, because these types are now treated as built-in. It was common for users and library authors to define **`char16_t`** and **`char32_t`** as aliases of `uint16_t` and `uint32_t`, respectively.
 
    ```cpp
     #include <cstdint>
@@ -96,7 +97,7 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-   To update your code, remove the **typedef** declarations and rename any other identifiers that collide with these names.
+   To update your code, remove the **`typedef`** declarations and rename any other identifiers that collide with these names.
 
 - **Non-type template parameters**
 
@@ -121,7 +122,7 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-   The current compiler correctly gives an error, because the template parameter type doesn't match the template argument (the parameter is a pointer to a const member, but the function f is non-const):
+   The current compiler correctly gives an error, because the template parameter type does not match the template argument (the parameter is a pointer to a const member, but the function f is non-const):
 
    ```Output
     error C2893: Failed to specialize function template 'void S2::f(void)'note: With the following template arguments:note: 'C=S1'note: 'Function=S1::f'
@@ -129,7 +130,7 @@ Although these differences can affect your source code or other build artifacts,
 
    To address this error in your code, make sure that the type of the template argument you use matches the declared type of the template parameter.
 
-- **__declspec(align)**
+- **`__declspec(align)`**
 
    The compiler no longer accepts `__declspec(align)` on functions. This was always ignored, but now it produces a compiler error.
 
@@ -157,7 +158,7 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-   The problem is that the copy constructor is private, so the object cannot be copied as happens in the normal course of handling an exception. The same applies when the copy constructor is declared **explicit**.
+   The problem is that the copy constructor is private, so the object cannot be copied as happens in the normal course of handling an exception. The same applies when the copy constructor is declared **`explicit`**.
 
    ```cpp
     struct S {
@@ -171,7 +172,7 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-   To update your code, make sure that the copy constructor for your exception object is public and not marked **explicit**.
+   To update your code, make sure that the copy constructor for your exception object is public and not marked **`explicit`**.
 
    Catching an exception by value also requires the exception object to be copyable. The following code compiled in Visual Studio 2013, but does not compile in Visual Studio 2015:
 
@@ -197,7 +198,7 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-   You can fix this issue by changing the parameter type for the **catch** to a reference.
+   You can fix this issue by changing the parameter type for the **`catch`** to a reference.
 
    ```cpp
     catch(D& d)
@@ -247,9 +248,9 @@ Although these differences can affect your source code or other build artifacts,
 
 - **Placement new and delete**
 
-   A change has been made to the **delete** operator in order to bring it into conformance with C++14 standard. Details of the standards change can be found at [C++ Sized Deallocation](https://isocpp.org/files/papers/n3778.html). The changes add a form of the global **delete** operator that takes a size parameter. The breaking change is that if you were previously using an operator **delete** with the same signature (to correspond with a **placement new** operator), you will receive a compiler error (C2956, which occurs at the point where the **placement new** is used, since that's the position in code where the compiler tries to identify an appropriate matching **delete** operator).
+   A change has been made to the **`delete`** operator in order to bring it into conformance with C++14 standard. Details of the standards change can be found at [C++ Sized Deallocation](https://isocpp.org/files/papers/n3778.html). The changes add a form of the global **`delete`** operator that takes a size parameter. The breaking change is that if you were previously using an operator **`delete`** with the same signature (to correspond with a **placement new** operator), you will receive a compiler error (C2956, which occurs at the point where the **placement new** is used, since that's the position in code where the compiler tries to identify an appropriate matching **`delete`** operator).
 
-   The function `void operator delete(void *, size_t)` was a **placement delete** operator corresponding to the **placement new** function `void * operator new(size_t, size_t)` in C++11. With C++14 sized deallocation, this **delete** function is now a *usual deallocation function* (global **delete** operator). The standard requires that if the use of a **placement new** looks up a corresponding **delete** function and finds a usual deallocation function, the program is ill-formed.
+   The function `void operator delete(void *, size_t)` was a **placement delete** operator corresponding to the **placement new** function `void * operator new(size_t, size_t)` in C++11. With C++14 sized deallocation, this **`delete`** function is now a *usual deallocation function* (global **`delete`** operator). The standard requires that if the use of a **placement new** looks up a corresponding **`delete`** function and finds a usual deallocation function, the program is ill-formed.
 
    For example, suppose your code defines both a **placement new** and a **placement delete**:
 
@@ -258,17 +259,17 @@ Although these differences can affect your source code or other build artifacts,
     void operator delete(void*, std::size_t) noexcept;
    ```
 
-   The problem occurs because of the match in function signatures between a **placement delete** operator you've defined, and the new global sized **delete** operator. Consider whether you can use a different type other than `size_t` for any **placement new** and **delete** operators.  Note that the type of the `size_t` **typedef** is compiler-dependent; it is a **typedef** for **unsigned int** in Visual C++. A good solution is to use an enumerated type such as this:
+   The problem occurs because of the match in function signatures between a **placement delete** operator you've defined, and the new global sized **`delete`** operator. Consider whether you can use a different type other than `size_t` for any **placement new** and **`delete`** operators.  Note that the type of the `size_t` **`typedef`** is compiler-dependent; it is a **`typedef`** for **`unsigned int`** in Visual C++. A good solution is to use an enumerated type such as this:
 
    ```cpp
     enum class my_type : size_t {};
    ```
 
-   Then, change your definition of placement **new** and **delete** to use this type as the second argument instead of `size_t`. You'll also need to update the calls to **placement new** to pass the new type (for example, by using `static_cast<my_type>` to convert from the integer value) and update the definition of **new** and **delete** to cast back to the integer type. You don't need to use an **enum** for this; a class type with a `size_t` member would also work.
+   Then, change your definition of placement **`new`** and **`delete`** to use this type as the second argument instead of `size_t`. You'll also need to update the calls to **placement new** to pass the new type (for example, by using `static_cast<my_type>` to convert from the integer value) and update the definition of **`new`** and **`delete`** to cast back to the integer type. You don't need to use an **`enum`** for this; a class type with a `size_t` member would also work.
 
-   An alternative solution is that you might be able to eliminate the **placement new** altogether. If your code uses **placement new** to implement a memory pool where the placement argument is the size of the object being allocated or deleted, then sized deallocation feature might be suitable to replace your own custom memory pool code, and you can get rid of the placement functions and just use your own two-argument **delete** operator instead of the placement functions.
+   An alternative solution is that you might be able to eliminate the **placement new** altogether. If your code uses **placement new** to implement a memory pool where the placement argument is the size of the object being allocated or deleted, then sized deallocation feature might be suitable to replace your own custom memory pool code, and you can get rid of the placement functions and just use your own two-argument **`delete`** operator instead of the placement functions.
 
-   If you don't want to update your code immediately, you can revert to the old behavior by using the compiler option `/Zc:sizedDealloc-`. If you use this option, the two-argument **delete** functions don't exist and won't cause a conflict with your **placement delete** operator.
+   If you don't want to update your code immediately, you can revert to the old behavior by using the compiler option `/Zc:sizedDealloc-`. If you use this option, the two-argument **`delete`** functions don't exist and won't cause a conflict with your **placement delete** operator.
 
 - **Union data members**
 
@@ -562,7 +563,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - **Overloaded operator new and operator delete**
 
-   Previous versions of the compiler allowed non-member **operator new** and non-member **operator delete** to be declared static, and to be declared in namespaces other than the global namespace.  This old behavior created a risk that the program would not call the **new** or **delete** operator implementation that the programmer intended, resulting in silent bad runtime behavior. The compiler no longer accepts code written in this way and issues compiler error C2323 instead.
+   Previous versions of the compiler allowed non-member **operator new** and non-member **operator delete** to be declared static, and to be declared in namespaces other than the global namespace.  This old behavior created a risk that the program would not call the **`new`** or **`delete`** operator implementation that the programmer intended, resulting in silent bad runtime behavior. The compiler no longer accepts code written in this way and issues compiler error C2323 instead.
 
    ```Output
     error C2323: 'operator new': non-member operator new or delete functions may not be declared static or in a namespace other than the global namespace.
@@ -580,7 +581,7 @@ Although these differences can affect your source code or other build artifacts,
     void * __cdecl operator new(size_t cb, const std::nothrow_t&)  // removed 'static inline'
    ```
 
-   Additionally, although the compiler doesn't give a specific diagnostic, inline operator new is considered ill-formed.
+   Additionally, although the compiler does not give a specific diagnostic, inline operator new is considered ill-formed.
 
 - **Calling 'operator *type*()' (user-defined conversion) on non-class types**  Previous versions of the compiler allowed 'operator *type*()' to be called on non-class types while silently ignoring it. This old behavior created a risk of silent bad code generation, resulting in unpredictable runtime behavior. The compiler no longer accepts code written in this way and issues compiler error C2228 instead.
 
@@ -614,7 +615,7 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-- **Redundant typename in elaborated type specifiers**  Previous versions of the compiler allowed **typename** in an elaborated type specifiers; code written in this way is semantically incorrect. The compiler no longer accepts code written in this way and issues compiler error C3406 instead.
+- **Redundant typename in elaborated type specifiers**  Previous versions of the compiler allowed **`typename`** in an elaborated type specifiers; code written in this way is semantically incorrect. The compiler no longer accepts code written in this way and issues compiler error C3406 instead.
 
    ```Output
     error C3406: 'typename' cannot be used in an elaborated type specifier
@@ -720,7 +721,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - **Restoration of switch statement warnings**
 
-   A Previous version of the compiler removed previously-existing warnings related to **switch** statements; these warnings have now been restored. The compiler now issues the restored warnings, and warnings related to specific cases (including the default case) are now issued on the line containing the offending case, rather than on the last line of the switch statement. As a result of now issuing those warnings on different lines than in the past, warnings previously suppressed by using `#pragma warning(disable:####)` may no longer be suppressed as intended. To suppress these warnings as intended, it might be necessary to move the `#pragma warning(disable:####)` directive to a line above the first potentially-offending case. The following are the restored warnings.
+   A Previous version of the compiler removed previously-existing warnings related to **`switch`** statements; these warnings have now been restored. The compiler now issues the restored warnings, and warnings related to specific cases (including the default case) are now issued on the line containing the offending case, rather than on the last line of the switch statement. As a result of now issuing those warnings on different lines than in the past, warnings previously suppressed by using `#pragma warning(disable:####)` may no longer be suppressed as intended. To suppress these warnings as intended, it might be necessary to move the `#pragma warning(disable:####)` directive to a line above the first potentially-offending case. The following are the restored warnings.
 
    ```Output
     warning C4060: switch statement contains no 'case' or 'default' labels
@@ -1007,16 +1008,42 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
+- **Removal of `pow(T, int)` unrolling optimization**
+
+   Previous versions of the C++ standard library defined a `pow(T, int)` function template that would unroll a `pow` function call into a series of multiplication operations. This technique would accrue a large amount of inaccuracy due to the nature of floating point operations, causing end results that could be significantly inaccurate. In Visual Studio 2015 Update 1, this behavior was removed to avoid unintentional loss of accuracy when using the `pow` function. However, this version of `pow` was much faster than the correct calculation. If this change causes a significant performance regression and your project does not require precise floating point results (for example, your project already compiles with /fp:fast), consider replacing calls to `pow` with this workaround function:
+
+   ```cpp
+   template <class T> 
+   inline T pow_int(T x, int y) throw() {
+       unsigned int n;
+       if (y >= 0) {
+           n = (unsigned int)(y);
+       } else {
+           n = (unsigned int)(-y);
+       }
+       for (T z = T(1); ; x *= x) {
+           if ((n & 1) != 0) {
+               z *= x;
+           }
+           if ((n >>= 1) == 0) {
+               return (y < 0 ? T(1) / z : z);
+           }
+       }
+   }
+   ```
+
+   This implementation is identical to what was included in previous versions of Visual Studio.
+
 ### <a name="VS_Update2"></a> Conformance Improvements in Visual Studio 2015 Update 2
 
 - **Additional warnings and errors might be issued as a result of partial support for expression SFINAE**
 
-   Previous versions of the compiler did not parse certain kinds of expressions inside **decltype** specifiers due to lack of  support for expression SFINAE. This old behavior was incorrect and does not conform to the C++ standard. The compiler now parses these expressions and has partial support for expression SFINAE due to  ongoing conformance improvements. As a result, the compiler now issues warnings and errors found in  expressions that previous versions of the compiler did not parse.
+   Previous versions of the compiler did not parse certain kinds of expressions inside **`decltype`** specifiers due to lack of  support for expression SFINAE. This old behavior was incorrect and does not conform to the C++ standard. The compiler now parses these expressions and has partial support for expression SFINAE due to  ongoing conformance improvements. As a result, the compiler now issues warnings and errors found in expressions that previous versions of the compiler did not parse.
 
-   When this new behavior parses a **decltype** expression that includes a type that has not yet been declared, the compiler issues compiler error C2039 as a result.
+   When this new behavior parses a **`decltype`** expression that includes a type that has not yet been declared, the compiler issues compiler error C2039 as a result.
 
    ```Output
-    error C2039: 'type': is not a member of '`global namespace''
+    error C2039: 'type': is not a member of 'global namespace'
    ```
 
    Example 1:  use of an undeclared type (before)
@@ -1047,7 +1074,7 @@ Although these differences can affect your source code or other build artifacts,
     }
    ```
 
-   When this new behavior parses a **decltype** expression that is missing a necessary use of the **typename** keyword to specify that a dependent name is a type, the compiler issues  compiler warning C4346 together with compiler error C2923.
+   When this new behavior parses a **`decltype`** expression that is missing a necessary use of the **`typename`** keyword to specify that a dependent name is a type, the compiler issues  compiler warning C4346 together with compiler error C2923.
 
    ```Output
     warning C4346: 'S2<T>::Type': dependent name is not a type
@@ -1098,7 +1125,7 @@ Although these differences can affect your source code or other build artifacts,
     };
    ```
 
-- `volatile` **member variables prevent implicitly defined constructors and assignment operators** Previous versions of the compiler allowed a class that has **volatile** member variables to have default copy/move constructors and default copy/move assignment operators automatically generated. This old behavior was incorrect and does not conform to the C++ standard. The compiler now considers a class that has volatile member variables to have non-trivial construction and assignment operators which prevents default implementations of these operators from being automatically generated. When such a class is a member of a union (or an anonymous union inside of a class), the copy/move constructors and copy/move assignment operators of the union (or the class containing the unonymous union) will be implicitly defined as deleted. Attempting to construct or copy the union (or class containing the anonymous union) without explicitly defining them is an error and the compiler issues compiler error C2280 as a result.
+- **`volatile`** **member variables prevent implicitly defined constructors and assignment operators** Previous versions of the compiler allowed a class that has **`volatile`** member variables to have default copy/move constructors and default copy/move assignment operators automatically generated. This old behavior was incorrect and does not conform to the C++ standard. The compiler now considers a class that has volatile member variables to have non-trivial construction and assignment operators which prevents default implementations of these operators from being automatically generated. When such a class is a member of a union (or an anonymous union inside of a class), the copy/move constructors and copy/move assignment operators of the union (or the class containing the unonymous union) will be implicitly defined as deleted. Attempting to construct or copy the union (or class containing the anonymous union) without explicitly defining them is an error and the compiler issues compiler error C2280 as a result.
 
    ```Output
     error C2280: 'B::B(const B &)': attempting to reference a deleted function
@@ -1184,7 +1211,7 @@ Although these differences can affect your source code or other build artifacts,
 
 - **Forward declaration of enum is not allowed in WinRT code** (affects `/ZW` only)
 
-   Code compiled for the Windows Runtime (WinRT) doesn't allow **enum** types to be forward declared, similarly to when managed C++ code is compiled for the .Net Framework using the `/clr` compiler switch. This behavior is ensures that the size of an enumeration is always known and can be correctly projected to the WinRT type system. The compiler rejects code written in this way and  issues compiler error C2599 together with compiler error C3197.
+   Code compiled for the Windows Runtime (WinRT) does not allow **`enum`** types to be forward declared, similarly to when managed C++ code is compiled for the .Net Framework using the `/clr` compiler switch. This behavior is ensures that the size of an enumeration is always known and can be correctly projected to the WinRT type system. The compiler rejects code written in this way and  issues compiler error C2599 together with compiler error C3197.
 
    ```Output
     error C2599: 'CustomEnum': the forward declaration of a WinRT enum is not allowed
@@ -1269,7 +1296,7 @@ Although these differences can affect your source code or other build artifacts,
 
 ### <a name="VS_Update3"></a> Conformance Improvements in Visual Studio 2015 Update 3
 
-- **std::is_convertable now detects self-assignment**  (standard library) Previous versions of the `std::is_convertable` type-trait did not correctly detect self-assignment of a class type when its copy constructor is deleted or private. Now, `std::is_convertable<>::value` is correctly set to **false** when applied to a class type with a deleted or private copy constructor.
+- **std::is_convertable now detects self-assignment**  (standard library) Previous versions of the `std::is_convertable` type-trait did not correctly detect self-assignment of a class type when its copy constructor is deleted or private. Now, `std::is_convertable<>::value` is correctly set to **`false`** when applied to a class type with a deleted or private copy constructor.
 
    There is no compiler diagnostic associated with this change.
 
@@ -1293,7 +1320,7 @@ Although these differences can affect your source code or other build artifacts,
     static_assert(std::is_convertible<X1&, X1>::value, "BOOM");static_assert(std::is_convertible<X2&, X2>::value, "BOOM");
    ```
 
-   In previous versions of Visual C++, the static assertions at the bottom of this example pass because `std::is_convertable<>::value` was incorrectly set to **true**. Now, `std::is_convertable<>::value` is correctly set to **false**, causing the static assertions to fail.
+   In previous versions of Visual C++, the static assertions at the bottom of this example pass because `std::is_convertable<>::value` was incorrectly set to **`true`**. Now, `std::is_convertable<>::value` is correctly set to **`false`**, causing the static assertions to fail.
 
 - **Defaulted or deleted trivial copy and move constructors respect access specifiers**
 
@@ -1527,7 +1554,7 @@ MSVC supports these ISO C++11 language features:
 - Compound literals.
 - Designated initializers.
 - Mixing declarations with code.
-- String literal conversion to modifiable values can be disallowed by using the new compiler option `/Zc:strictStrings`. In C++98, conversion from string literals to `char*` (and wide string literals to `wchar_t*`) was deprecated. In C++11, the conversion was removed entirely. Although the compiler could strictly conform to the standard, instead it provides the `/Zc:strictStrings` option so that you can control conversion. By default, the option is off. Note that when you are using this option in debug mode, the STL will not compile.
+- String literal conversion to modifiable values can be disallowed by using the new compiler option `/Zc:strictStrings`. In C++98, conversion from string literals to **`char*`** (and wide string literals to `wchar_t*`) was deprecated. In C++11, the conversion was removed entirely. Although the compiler could strictly conform to the standard, instead it provides the `/Zc:strictStrings` option so that you can control conversion. By default, the option is off. Note that when you are using this option in debug mode, the STL will not compile.
 - rvalue/lvalue Reference Casts. With rvalue references, C++11 can clearly distinguish between lvalues and rvalues. Previously, the compiler did not provide this in specific casting scenarios. A new compiler option, `/Zc:rvalueCast`, has been added to make the compiler conformant with the C++ Language Working Paper(see section 5.4, [expr.cast]/1). The default behavior when this option is not specified is the same as in Visual Studio 2012.
 
 > [!NOTE]
@@ -1576,7 +1603,7 @@ This improved support for ISO C/C++ standards may require changes to existing co
 
 - **Support For Boxed Types In Value structs.**
 
-   You can now define value types by using fields that can be null—for example, `IBox<int>^` as opposed to **int**. This means that the fields can either have a value, or be equal to **nullptr**.
+   You can now define value types by using fields that can be null—for example, `IBox<int>^` as opposed to **`int`**. This means that the fields can either have a value, or be equal to **`nullptr`**.
 
 - **Richer Exception Information.**
 
@@ -1771,20 +1798,20 @@ Code coverage has been updated to dynamically instrument binaries at runtime. Th
 
 ### C++ Compiler and Linker
 
-**auto Keyword.** The **auto** keyword has a new purpose. Use the default meaning of the **auto** keyword to declare a variable whose type is deduced from the initialization expression in the declaration of the variable. The `/Zc:auto` compiler option invokes either the new or the previous meaning of the **auto** keyword.
+**auto Keyword.** The **`auto`** keyword has a new purpose. Use the default meaning of the **`auto`** keyword to declare a variable whose type is deduced from the initialization expression in the declaration of the variable. The `/Zc:auto` compiler option invokes either the new or the previous meaning of the **`auto`** keyword.
 
-**decltype Type Specifier.** The **decltype** type specifier returns the type of a specified expression. Use the **decltype** type specifier in combination with the **auto** keyword to declare a type that is either complex or known only to the compiler. For example, use the combination to declare a template function whose return type depends on the types of its template arguments. Or, declare a template function that calls another function, and then returns the return type of the called function.
+**decltype Type Specifier.** The **`decltype`** type specifier returns the type of a specified expression. Use the **`decltype`** type specifier in combination with the **`auto`** keyword to declare a type that is either complex or known only to the compiler. For example, use the combination to declare a template function whose return type depends on the types of its template arguments. Or, declare a template function that calls another function, and then returns the return type of the called function.
 
-**Lambda Expressions.** Lambda functions have a function body but no name. Lambda functions combine the best characteristics of function pointers and function objects. Use a lambda function by itself, as a template function parameter instead of a function object, or together with the **auto** keyword to declare a variable whose type is a lambda.
+**Lambda Expressions.** Lambda functions have a function body but no name. Lambda functions combine the best characteristics of function pointers and function objects. Use a lambda function by itself, as a template function parameter instead of a function object, or together with the **`auto`** keyword to declare a variable whose type is a lambda.
 
 **Rvalue Reference.** The rvalue reference declarator (&&) declares a reference to an rvalue. An rvalue reference lets you use move semantics and perfect forwarding to write more efficient constructors, functions, and templates.
 
-**static_assert Declaration.** A **static_assert** declaration tests a software assertion at compile time, unlike other assertion mechanisms that test at run time. If the assertion fails, the compilation fails and a specified error message is issued.
+**static_assert Declaration.** A **`static_assert`** declaration tests a software assertion at compile time, unlike other assertion mechanisms that test at run time. If the assertion fails, the compilation fails and a specified error message is issued.
 
-**nullptr and __nullptr Keywords.** MSVC lets you use the **nullptr** keyword with native code or with managed code. The **nullptr** keyword indicates that an object handle, interior pointer, or native pointer type does not point to an object. The compiler interprets **nullptr** to be managed code when you use the `/clr` compiler option, and native code when you do not use the `/clr` option.
-The Microsoft-specific **__nullptr** keyword has the same meaning as **nullptr**, but it applies to native code only. If you compile native C/C++ code by using the `/clr` compiler option, the compiler cannot determine whether the **nullptr** keyword is a native or a managed term. To make your intention clear to the compiler, use the nullptr keyword to specify the managed term, and **__nullptr** to specify the native term.
+**nullptr and __nullptr Keywords.** MSVC lets you use the **`nullptr`** keyword with native code or with managed code. The **`nullptr`** keyword indicates that an object handle, interior pointer, or native pointer type does not point to an object. The compiler interprets **`nullptr`** to be managed code when you use the `/clr` compiler option, and native code when you do not use the `/clr` option.
+The Microsoft-specific **__nullptr** keyword has the same meaning as **`nullptr`**, but it applies to native code only. If you compile native C/C++ code by using the `/clr` compiler option, the compiler cannot determine whether the **`nullptr`** keyword is a native or a managed term. To make your intention clear to the compiler, use the nullptr keyword to specify the managed term, and **__nullptr** to specify the native term.
 
-**/Zc:trigraphs Compiler Option.** By default, support for trigraphs is disabled. Use the `/Zc:trigraphs` compiler option to enable trigraphs support.
+**`/Zc:trigraphs` Compiler Option.** By default, support for trigraphs is disabled. Use the **`/Zc:trigraphs`** compiler option to enable trigraphs support.
 A trigraph consists of two consecutive question marks (??) followed by a unique third character. The compiler replaces a trigraph with the corresponding punctuation character. For example, the compiler replaces the ??= trigraph with the # (number sign) character. Use trigraphs in C source files that use a character set that does not contain certain punctuation characters.
 
 **New Profile-Guided Optimization Option.** PogoSafeMode is a new profile-guided optimization option that lets you specify whether to use safe mode or fast mode when you optimize your application. Safe mode is thread-safe, but it is slower than fast mode. Fast mode is the default behavior.
@@ -1844,7 +1871,7 @@ New macros have been added to ATL to expand the functionality of PROP_ENTRY_TYPE
 
 #### /analyze Warnings
 
-Most `/analyze` (Enterprise Code Analysis) warnings have been removed from the C Run-Time (CRT), MFC, and ATL libraries.
+Most **`/analyze`** (Enterprise Code Analysis) warnings have been removed from the C Run-Time (CRT), MFC, and ATL libraries.
 
 #### Animation and D2D support
 
@@ -1872,7 +1899,7 @@ Because IntelliSense processes only the information that you require at the mome
 
 **MFC Class Wizard.** Visual C++ 2010 brings back the well-regarded MFC Class Wizard tool. The MFC Class Wizard is a convenient way to add classes, messages, and variables to a project without having to manually modify sets of source files.
 
-**ATL Control Wizard.** The ATL Control Wizard no longer automatically populates the `ProgID` field. If an ATL control does not have a `ProgID`, other tools may not work with it. One example of a tool that requires controls to have a `ProgID` is the **Insert Active Control** dialog box. For more information about the dialog box, see **Insert ActiveX Control Dialog Box**.
+**ATL Control Wizard.** The ATL Control Wizard no longer automatically populates the `ProgID` field. If an ATL control does not have a `ProgID`, other tools may not work with it. One example of a tool that requires controls to have a `ProgID` is the **Insert Active Control** dialog box. For more information about the dialog box, see [Insert ActiveX controls](../windows/adding-editing-or-deleting-controls.md#insert-activex-controls).
 
 ### Microsoft Macro Assembler Reference
 
@@ -1928,7 +1955,7 @@ The addition of the YMMWORD data type supports the 256-bit multimedia operands t
 - Intrinsics support newer AMD and Intel processors. Several new intrinsic instructions support the greater functionality in more recent AMD and Intel processors. For more information about the new intrinsics, see **Supplemental Streaming SIMD Extensions 3 Instructions**, **Streaming SIMD Extensions 4 Instructions**, **SSE4A and Advanced Bit Manipulation Intrinsics**, **AES Intrinsics**, **_mm_clmulepi64_si128**, and **__rdtscp**.
 - The `__cpuid` function is updated. The `__cpuid`, `__cpuidex` functions now support several new features from the latest revisions of AMD and Intel processors. The `__cpuidex` intrinsic is new and gathers more information from recent processors.
 - The `/MP` compiler option reduces total build time. The `/MP` option can significantly reduce the total time to compile several source files by creating several processes that compile the files simultaneously. This option is especially useful on computers that support hyperthreading, multiple processors, or multiple cores.
-- The `/Wp64` compiler option and **__w64** keyword are deprecated. The `/Wp64` compiler option and **__w64** keyword, which detect 64-bit portability issues, are deprecated and will be removed in a future version of the compiler. Instead of this compiler option and keyword, use a MSVC that targets a 64-bit platform.
+- The `/Wp64` compiler option and **`__w64`** keyword are deprecated. The `/Wp64` compiler option and **`__w64`** keyword, which detect 64-bit portability issues, are deprecated and will be removed in a future version of the compiler. Instead of this compiler option and keyword, use a MSVC that targets a 64-bit platform.
 - `/Qfast_transcendentals` generates inline code for transcendental functions.
 - `/Qimprecise_fwaits` removes the fwait commands internal to try blocks when you use the `/fp:except` compiler option.
 
@@ -1978,7 +2005,7 @@ __sptr, __uptr
 
 The compiler has breaking changes in this release.
 
-- `64-bit native and cross-compilers.
+- 64-bit native and cross-compilers.
 - `/analyze` (Enterprise Code Analysis) compiler option has been added.
 - `/bigobj` compiler option has been added.
 - `/clr:pure`, `/clr:safe`, and `/clr:oldSyntax` have been added. (Later deprecated in Visual Studio 2015 and removed in Visual Studio 2017.)
@@ -1999,7 +2026,7 @@ The compiler has breaking changes in this release.
 - `/GS` (Buffer Security Check) now provides security protection for vulnerable pointer parameters. `/GS` is now on by default. `/GS` now also works on functions compiled to MSIL with `/clr` (Common Language Runtime Compilation).
 - `/homeparams` (Copy Register Parameters to Stack) compiler option has been added.
 - `/hotpatch` (Create Hotpatchable Image) compiler option has been added.
-- Inline function heuristics have been updated; see **inline**, **__inline**, **__forceinline** and **inline_depth** for more information
+- Inline function heuristics have been updated; see **`inline`**, **`__inline`**, **`__forceinline`** and **inline_depth** for more information
 - Many new intrinsic functions have been added, and many previously undocumented intrinsics are now documented.
 - By default, any call to new that fails will throw an exception.
 - `/ML` and `/MLd` compiler options have been removed. Visual C++ no longer supports single-threaded, statically linked CRT library support.
@@ -2036,17 +2063,17 @@ The compiler has breaking changes in this release.
 - `appdomain__declspec` modifier has been added.
 - `__clrcall` calling convention has been added.
 - deprecated (C++) **declspec** modifier now allows you to specify a string that will be displayed at compile time, when a user tries to access a deprecated class or function.
-- **dynamic_cast** Operator has breaking changes.
+- **`dynamic_cast`** Operator has breaking changes.
 - Native enums now allow you to specify the underlying type.
 - `jitintrinsicdeclspec` modifier has been added.
 - `noaliasdeclspec` modifier has been added.
 - `process__declspec` modifier has been added.
 - **abstract**, **override**, and **sealed** are valid for native compilations.
-- **__restrict** keyword has been added.
+- **`__restrict`** keyword has been added.
 - `restrictdeclspec` modifier has been added.
-- **__thiscall** is now a keyword.
-- **__unaligned** keyword is now documented.
-- **volatile** (C++) has updated behavior with respect to optimizations.
+- **`__thiscall`** is now a keyword.
+- **`__unaligned`** keyword is now documented.
+- **`volatile`** (C++) has updated behavior with respect to optimizations.
 
 ### New Preprocessor Features
 
@@ -2179,7 +2206,7 @@ The compiler has breaking changes in this release.
 - In each function topic, a section on .NET Framework equivalents has been added.
 - Several string functions now have the option of truncating strings rather than failing when output buffers are too small; see **_TRUNCATE**.
 - `_set_se_translator` now requires the use of the `/EHa` compiler option.
-- `fpos_t` is now **__int64** under `/Za` (for C code) and when __STDC__ is set manually (for C++ code). It used to be a **struct**.
+- `fpos_t` is now **`__int64`** under `/Za` (for C code) and when __STDC__ is set manually (for C++ code). It used to be a **`struct`**.
 - _CRT_DISABLE_PERFCRIT_LOCKS can improve the I/O performance of single-threaded programs.
 - POSIX names have been deprecated in favor of ISO C++ conformant names (for example, use `_getch` rather than `getch`).
 - New link options .obj files are available for pure mode
@@ -2198,8 +2225,8 @@ The compiler has breaking changes in this release.
 - `/Gf` is deprecated and will be removed in the next version of Visual C++.
 - `/G7` compiler option is added.
 - The `/GS` compiler option has been enhanced to help protect local variables from direct buffer overruns.
-- The `/noBool` compiler option has been removed. The compiler now allows **bool** to appear only as a keyword (and not an identifier) in a C++ source code file.
-- The **long long** type is now available as a **typedef** of **__int64** Note that there is not yet support for **long long** in the CRT.
+- The `/noBool` compiler option has been removed. The compiler now allows **`bool`** to appear only as a keyword (and not an identifier) in a C++ source code file.
+- The **`long long`** type is now available as a **`typedef`** of **`__int64`** Note that there is not yet support for **`long long`** in the CRT.
 - The `/Zm` compiler option now specifies the precompiled header memory allocation limit.
 - _InterlockedCompareExchange intrinsic now documented.
 - _InterlockedDecrement intrinsic now documented.

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: money_put Class"
 title: "money_put Class"
 ms.date: "11/01/2018"
 f1_keywords: ["xlocmon/std::money_put", "xlocmon/std::money_put::char_type", "xlocmon/std::money_put::iter_type", "xlocmon/std::money_put::string_type", "xlocmon/std::money_put::do_put", "xlocmon/std::money_put::put"]
@@ -94,7 +95,7 @@ virtual iter_type do_put(
 An iterator addressing the first element of the inserted string.
 
 *_Intl*\
-A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
+A Boolean value indicating the type of currency symbol expected in the sequence: **`true`** if international, **`false`** if domestic.
 
 *_Iosbase*\
 A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
@@ -216,7 +217,7 @@ iter_type put(
 An iterator addressing the first element of the inserted string.
 
 *_Intl*\
-A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
+A Boolean value indicating the type of currency symbol expected in the sequence: **`true`** if international, **`false`** if domestic.
 
 *_Iosbase*\
 A format flag which when set indicates that the currency symbol is optional; otherwise, it is required

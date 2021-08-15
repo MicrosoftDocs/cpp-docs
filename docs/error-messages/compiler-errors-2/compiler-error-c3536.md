@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3536"
 title: "Compiler Error C3536"
 ms.date: "11/04/2016"
 f1_keywords: ["C3536"]
@@ -35,4 +36,4 @@ int main()
 
 ## See also
 
-[auto Keyword](../../cpp/auto-keyword.md)
+[auto Keyword](../../cpp/auto-cpp.md)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: std Namespace"
 title: "std Namespace"
 ms.date: "11/04/2016"
 f1_keywords: ["ppltasks/std"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overriding a Dynamic Accessor"
 title: "Overriding a Dynamic Accessor"
 ms.date: "10/19/2018"
 helpviewer_keywords: ["accessors [C++], dynamic", "dynamic accessors", "overriding, dynamic accessors"]
@@ -8,7 +9,7 @@ ms.assetid: cbefd156-6da5-490d-b795-c2d7d874f7ce
 
 When you use a dynamic accessor such as `CDynamicAccessor`, the command `Open` method creates an accessor for you automatically, based on the column information of the opened rowset. You can override the dynamic accessor to control exactly how the columns are bound.
 
-To override the dynamic accessor, pass **false** as the last parameter to the `CCommand::Open` method. This prevents `Open` from creating an accessor automatically. You can then call `GetColumnInfo` and call `AddBindEntry` for each column that you want to bind. The following code shows how to do it:
+To override the dynamic accessor, pass **`false`** as the last parameter to the `CCommand::Open` method. This prevents `Open` from creating an accessor automatically. You can then call `GetColumnInfo` and call `AddBindEntry` for each column that you want to bind. The following code shows how to do it:
 
 ```cpp
 USES_CONVERSION;

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Name Resolution for Locally Declared Names"
 title: "Name Resolution for Locally Declared Names"
 ms.date: "11/04/2016"
 ms.assetid: 743b88f3-de11-48f4-ae83-931449ea3886
@@ -7,7 +8,7 @@ ms.assetid: 743b88f3-de11-48f4-ae83-931449ea3886
 
 The template's name itself can be referred to with or without the template arguments. In the scope of a class template, the name itself refers to the template. In the scope of a template specialization or partial specialization, the name alone refers to the specialization or partial specialization. Other specializations or partial specializations of the template can also be referenced, with the appropriate template arguments.
 
-## Example
+## Example: Specialization versus partial specialization
 
 The following code shows that the class template's name A is interpreted differently in the scope of a specialization or partial specialization.
 
@@ -29,7 +30,7 @@ template<> class A<int> {
 };
 ```
 
-## Example
+## Example: Name conflict between template parameter and object
 
 In the case of a name conflict between a template parameter and another object, the template parameter can or cannot be hidden. The following rules will help determine precedence.
 
@@ -49,7 +50,7 @@ int main() {
 }
 ```
 
-## Example
+## Example: Define member function outside class template
 
 When defining a template's member functions outside the class template, a different template parameter name can be used. If the template member function definition uses a different name for the template parameter than the declaration does, and the name used in the definition conflicts with another member of the declaration, the member in the template declaration takes precedence.
 
@@ -84,7 +85,7 @@ int main() {
 Z::Z()
 ```
 
-## Example
+## Example: Define template or member function outside namespace
 
 When defining a template function or member function outside the namespace in which the template was declared, the template argument takes precedence over the names of other members of the namespace.
 
@@ -118,7 +119,7 @@ int main() {
 C<T>::g
 ```
 
-## Example
+## Example: Base class or member name hides template argument
 
 In definitions that are outside of the template class declaration, if a template class has a base class that does not depend on a template argument and if the base class or one of its members has the same name as a template argument, then the base class or member name hides the template argument.
 

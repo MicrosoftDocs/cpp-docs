@@ -1,5 +1,6 @@
 ---
-title: "ATL Collection Classes"
+description: "Learn more about: ATL Collection Classes"
+title: "ATL collection class overview"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["DestructElements function", "collection classes, choosing", "ConstructElements function", "SerializeElements function", "traits classes", "collection classes, about collection classes", "CTraits classes", "collection classes"]
 ms.assetid: 4d619d46-5b4e-41dd-b9fd-e86b1fbc00b5
@@ -96,7 +97,7 @@ For a list of the CTraits classes, see [Collection Classes](../atl/collection-cl
 
 The following diagram shows the class hierarchy for the CTraits classes.
 
-![Traits hierarchy for collection classes](../atl/media/vctraitscollectionclasseshierarchy.gif "Traits hierarchy for collection classes")
+![Diagram that shows the traits hierarchy for collection classes.](../atl/media/vctraitscollectionclasseshierarchy.gif "Traits hierarchy for collection classes")
 
 ## Collection Classes Samples
 

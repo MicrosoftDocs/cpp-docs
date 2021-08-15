@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2574"
 title: "Compiler Error C2574"
 ms.date: "11/04/2016"
 f1_keywords: ["C2574"]
@@ -9,7 +10,7 @@ ms.assetid: 3e1c5c18-ee8b-4dbb-bfc0-d3b8991af71b
 
 'destructor' : cannot be declared static
 
-Neither destructors nor constructors can be declared `static`.
+Neither destructors nor constructors can be declared **`static`**.
 
 The following sample generates C2574:
 

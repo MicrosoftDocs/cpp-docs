@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CL Invokes the Linker"
 title: "CL Invokes the Linker"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["compiling source code [C++], without linking", "invoking linker from the compiler", "LINK tool [C++], invoking from CL compiler", "cl.exe compiler [C++], compiling without linking", "cl.exe compiler [C++], controlling linker"]

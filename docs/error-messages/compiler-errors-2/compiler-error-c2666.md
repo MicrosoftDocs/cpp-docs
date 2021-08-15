@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2666"
 title: "Compiler Error C2666"
 ms.date: "11/04/2016"
 f1_keywords: ["C2666"]
@@ -10,6 +11,8 @@ ms.assetid: 78364d15-c6eb-439a-9088-e04a0176692b
 'identifier' : number overloads have similar conversions
 
 An overloaded function or operator is ambiguous.   Formal parameter lists may be too similar for the compiler to resolve the ambiguity.  To resolve this error, explicitly cast one or more of the actual parameters.
+
+## Examples
 
 The following sample generates C2666:
 
@@ -36,8 +39,6 @@ This error can also be generated as a result of compiler conformance work that w
 For the binary operators \<, >, \<=, and >=, a passed parameter is now implicitly converted to the type of the operand if the parameter's type defines a user-defined conversion operator to convert to the type of the operand. There is now potential for ambiguity.
 
 For code that is valid in both the Visual Studio .NET 2003 and Visual Studio .NET versions of Visual C++, call the class operator explicitly using function syntax.
-
-## Example
 
 ```cpp
 // C2666b.cpp
@@ -93,8 +94,6 @@ int main()
         printf_s("str1.operator char*() < str2\n");
 }
 ```
-
-## Example
 
 The following sample generates C2666
 

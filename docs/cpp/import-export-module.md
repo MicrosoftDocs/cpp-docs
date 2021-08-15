@@ -7,7 +7,7 @@ description: Use import and export declarations to access and to publish types a
 ---
 # module, import, export
 
-The **module**, **import**, and **export** declarations are available in C++20 and require the [/experimental:module](../build/reference/experimental-module.md) compiler switch along with [/std:c++latest](../build/reference/std-specify-language-standard-version.md). For more information, see [Overview of modules in C++](modules-cpp.md).
+The **module**, **import**, and **`export`** declarations are available in C++20 and require the [/experimental:module](../build/reference/experimental-module.md) compiler switch along with [/std:c++latest](../build/reference/std-specify-language-standard-version.md). For more information, see [Overview of modules in C++](modules-cpp.md).
 
 ## module
 
@@ -25,7 +25,7 @@ Use an **export module** declaration for the module's primary interface file, wh
 export module ModuleA;
 ```
 
-In an interface file, use the **export** modifier on names that are intended to be part of the public interface:
+In an interface file, use the **`export`** modifier on names that are intended to be part of the public interface:
 
 ```cpp
 // ModuleA.ixx
@@ -54,7 +54,7 @@ int main() {
 }
 ```
 
-The **export** keyword may not appear in a module implementation file. When **export** is applied to a namespace name, all names in the namespace are exported.
+The **`export`** keyword may not appear in a module implementation file. When **`export`** is applied to a namespace name, all names in the namespace are exported.
 
 ## import
 
@@ -105,7 +105,7 @@ In Microsoft C++, the tokens **import** and **module** are always identifiers an
 ### Example
 
 ```cpp
-#define foo(…) __VA_ARGS__
+#define foo(...) __VA_ARGS__
 foo(
 import // Always an identifier, never a keyword
 )

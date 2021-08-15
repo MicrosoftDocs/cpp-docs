@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Process and Environment Control"
 title: "Process and Environment Control"
 ms.date: "11/04/2016"
 f1_keywords: ["c.programs"]
@@ -34,7 +35,7 @@ Use the process-control routines to start, stop, and manage processes from withi
 |[_exit](../c-runtime-library/reference/exit-exit-exit.md)|Terminate process immediately without calling **atexit** or **_onexit** or flushing buffers|
 |[getenv, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md), [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)|Get value of environment variable|
 |[_getpid](../c-runtime-library/reference/getpid.md)|Get process ID number|
-|[longjmp](../c-runtime-library/reference/longjmp.md)|Restore saved stack environment; use it to execute a nonlocal **goto**|
+|[longjmp](../c-runtime-library/reference/longjmp.md)|Restore saved stack environment; use it to execute a nonlocal **`goto`**|
 |[_onexit](../c-runtime-library/reference/onexit-onexit-m.md)|Schedule routines for execution at program termination; use for compatibility with Microsoft C/C++ version 7.0 and earlier|
 |[_pclose](../c-runtime-library/reference/pclose.md)|Wait for new command processor and close stream on associated pipe|
 |[perror, _wperror](../c-runtime-library/reference/perror-wperror.md)|Print error message|
@@ -42,7 +43,7 @@ Use the process-control routines to start, stop, and manage processes from withi
 |[_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)|Create pipe and execute command|
 |[_putenv, _wputenv](../c-runtime-library/reference/putenv-wputenv.md), [_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md)|Add or change value of environment variable|
 |[raise](../c-runtime-library/reference/raise.md)|Send signal to calling process|
-|[setjmp](../c-runtime-library/reference/setjmp.md)|Save stack environment; use to execute non local **goto**|
+|[setjmp](../c-runtime-library/reference/setjmp.md)|Save stack environment; use to execute non local **`goto`**|
 |[signal](../c-runtime-library/reference/signal.md)|Handle interrupt signal|
 |[_spawnl, _wspawnl](../c-runtime-library/reference/spawnl-wspawnl.md)|Create and execute new process with specified argument list|
 |[_spawnle, _wspawnle](../c-runtime-library/reference/spawnle-wspawnle.md)|Create and execute new process with specified argument list and environment|

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections::MapView Class"
 title: "Platform::Collections::MapView Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
@@ -80,7 +81,7 @@ An iterator that specifies the first element in the map view.
 
 ### Remarks
 
-A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myMapView->First();`.
+A convenient way to hold the iterator returned by First() is to assign the return value to a variable that is declared with the **`auto`** type deduction keyword. For example, `auto x = myMapView->First();`.
 
 ## <a name="haskey"></a> MapView::HasKey Method
 
@@ -100,7 +101,7 @@ The key used to locate the MapView element. The type of *key* is typename *K*.
 
 ### Return Value
 
-**true** if the key is found; otherwise, **false**.
+**`true`** if the key is found; otherwise, **`false`**.
 
 ## <a name="lookup"></a> MapView::Lookup Method
 
@@ -162,7 +163,7 @@ The input iterator of the first element in a range of elements used to initializ
 The input iterator of the first element after a range of elements used to initialize the current MapView.
 
 *il*<br/>
-A [std::initializer_list<std::pair\<K,V>>](../standard-library/initializer-list-class.md) whose elements will be inserted into the MapView.
+A [std::initializer_list\<std::pair\<K,V>>](../standard-library/initializer-list-class.md) whose elements will be inserted into the MapView.
 
 ## <a name="size"></a> MapView::Size Method
 

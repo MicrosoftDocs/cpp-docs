@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using the Debug Build to Check for Memory Overwrite"
 title: "Using the Debug Build to Check for Memory Overwrite"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["memory, overwrites"]
@@ -14,7 +15,7 @@ afxMemDF |= checkAlwaysMemDF;
 
 The debug memory allocator puts guard bytes around all memory allocations. However, these guard bytes don't do any good unless you check whether they have been changed (which would indicate a memory overwrite). Otherwise, this just provides a buffer that might, in fact, allow you to get away with a memory overwrite.
 
-By turning on the `checkAlwaysMemDF`, you will force MFC to make a call to the `AfxCheckMemory` function every time a call to **new** or **delete** is made. If a memory overwrite was detected, it will generate a TRACE message that looks similar to the following:
+By turning on the `checkAlwaysMemDF`, you will force MFC to make a call to the `AfxCheckMemory` function every time a call to **`new`** or **`delete`** is made. If a memory overwrite was detected, it will generate a TRACE message that looks similar to the following:
 
 ```
 Damage Occurred! Block=0x5533

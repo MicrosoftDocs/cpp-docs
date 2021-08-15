@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFtpConnection Class"
 title: "CFtpConnection Class"
 ms.date: "08/29/2019"
 f1_keywords: ["CFtpConnection", "AFXINET/CFtpConnection", "AFXINET/CFtpConnection::CFtpConnection", "AFXINET/CFtpConnection::Command", "AFXINET/CFtpConnection::CreateDirectory", "AFXINET/CFtpConnection::GetCurrentDirectory", "AFXINET/CFtpConnection::GetCurrentDirectoryAsURL", "AFXINET/CFtpConnection::GetFile", "AFXINET/CFtpConnection::OpenFile", "AFXINET/CFtpConnection::PutFile", "AFXINET/CFtpConnection::Remove", "AFXINET/CFtpConnection::RemoveDirectory", "AFXINET/CFtpConnection::Rename", "AFXINET/CFtpConnection::SetCurrentDirectory"]
@@ -209,10 +210,9 @@ A pointer to a string that will receive the name of the directory.
 *lpdwLen*<br/>
 A pointer to a DWORD that contains the following information:
 
-|||
-|-|-|
-|On entry|The size of the buffer referenced by *pstrDirName*.|
-|On return|The number of characters stored to *pstrDirName*. If the member function fails and ERROR_INSUFFICIENT_BUFFER is returned, then *lpdwLen* contains the number of bytes that the application must allocate in order to receive the string.|
+On entry: The size of the buffer referenced by *pstrDirName*.
+
+On return: The number of characters stored to *pstrDirName*. If the member function fails and ERROR_INSUFFICIENT_BUFFER is returned, then *lpdwLen* contains the number of bytes that the application must allocate in order to receive the string.
 
 ### Return Value
 
@@ -247,10 +247,9 @@ A pointer to a string that will receive the name of the directory.
 *lpdwLen*<br/>
 A pointer to a DWORD that contains the following information:
 
-|||
-|-|-|
-|On entry|The size of the buffer referenced by *pstrDirName*.|
-|On return|The number of characters stored to *pstrDirName*. If the member function fails and ERROR_INSUFFICIENT_BUFFER is returned, then *lpdwLen* contains the number of bytes that the application must allocate in order to receive the string.|
+On entry: The size of the buffer referenced by *pstrDirName*.
+
+On return: The number of characters stored to *pstrDirName*. If the member function fails and ERROR_INSUFFICIENT_BUFFER is returned, then *lpdwLen* contains the number of bytes that the application must allocate in order to receive the string.
 
 ### Return Value
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding a Property to the Control (ATL Tutorial, Part 3)"
 title: "Adding a Property to the Control (ATL Tutorial, Part 3)"
 ms.custom: "get-started-article"
 ms.date: "09/26/2018"
@@ -18,7 +19,7 @@ ms.assetid: f775fe34-103b-4f07-9999-400e987ee030
 
 1. Type `Sides` as the **Property Name**.
 
-1. In the drop-down list of **Property Type**, select `short`.
+1. In the drop-down list of **Property Type**, select **`short`**.
 
 1. Click **OK** to finish adding the property.
 

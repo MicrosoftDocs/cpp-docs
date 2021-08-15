@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: monotonic_buffer_resource Class"
 title: "monotonic_buffer_resource Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory_resource/std::monotonic_buffer_resource"]

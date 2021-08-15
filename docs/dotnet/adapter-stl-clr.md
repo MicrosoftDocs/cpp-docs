@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: adapter (STL/CLR)"
 title: "adapter (STL/CLR)"
 ms.date: "06/15/2018"
 ms.topic: "reference"
@@ -241,19 +242,19 @@ The constructor:
 
 `collection_adapter();`
 
-initializes the stored handle with `nullptr`.
+initializes the stored handle with **`nullptr`**.
 
 The constructor:
 
 `collection_adapter(collection_adapter<Coll>% right);`
 
-initializes the stored handle with `right.`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.
+initializes the stored handle with `right.`[collection_adapter::base (STL/CLR)](#base)`()`.
 
 The constructor:
 
 `collection_adapter(collection_adapter<Coll>^ right);`
 
-initializes the stored handle with `right->`[collection_adapter::base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`.
+initializes the stored handle with `right->`[collection_adapter::base (STL/CLR)](#base)`()`.
 
 The constructor:
 
@@ -567,7 +568,7 @@ Adapter to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns `*this`. You use it to replace the stored BCL handle with a copy of the stored BCL handle in *right*.
+The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the stored BCL handle with a copy of the stored BCL handle in *right*.
 
 ### Example
 
@@ -760,7 +761,7 @@ Container to swap contents with.
 
 ### Remarks
 
-The member function swaps the stored BCL handles between `*this` and *right*.
+The member function swaps the stored BCL handles between **`*this`** and *right*.
 
 ### Example
 
@@ -1001,7 +1002,7 @@ Adapter to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns `*this`. You use it to replace the stored iterator pair with a copy of the stored iterator pair in *right*.
+The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the stored iterator pair with a copy of the stored iterator pair in *right*.
 
 ### Example
 

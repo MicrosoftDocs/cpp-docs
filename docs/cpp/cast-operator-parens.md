@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cast Operator: ()"
 title: "Cast Operator: ()"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["cast operators [C++]", "() cast operator"]
@@ -20,7 +21,7 @@ Any unary expression is considered a cast expression.
 
 The compiler treats *cast-expression* as type *type-name* after a type cast has been made. Casts can be used to convert objects of any scalar type to or from any other scalar type. Explicit type casts are constrained by the same rules that determine the effects of implicit conversions. Additional restraints on casts may result from the actual sizes or representation of specific types.
 
-## Example
+## Examples
 
 ```cpp
 // expre_CastOperator.cpp
@@ -39,8 +40,6 @@ int main()
     cout << "i = " << i << endl;
 }
 ```
-
-## Example
 
 ```cpp
 // expre_CastOperator2.cpp

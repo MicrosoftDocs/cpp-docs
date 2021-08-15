@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l"
 title: "_strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l"
 ms.date: "4/2/2020"
 api_name: ["_strtoui64", "_strtoui64_l", "_wcstoui64", "_wcstoui64_l", "_o__strtoui64", "_o__strtoui64_l", "_o__wcstoui64", "_o__wcstoui64_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wcstoui64_l", "strtoui64_l", "wcstoui64", "_wcstoui64", "_strtoui64_l", "strtoui64", "_strtoui64", "wcstoui64_l"]
@@ -11,7 +12,7 @@ ms.assetid: 7fcb537e-4554-4ceb-a5b6-bc09244e72ef
 ---
 # _strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l
 
-Convert a string to an unsigned **__int64** value.
+Convert a string to an **`unsigned __int64`** value.
 
 ## Syntax
 
@@ -66,7 +67,7 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-The **_strtoui64** function converts *strSource* to an **unsigned** **__int64**. **_wcstoui64** is a wide-character version of **_strtoui64**; its *strSource* argument is a wide-character string. Otherwise these functions behave identically.
+The **_strtoui64** function converts *strSource* to an **`unsigned __int64`**. **_wcstoui64** is a wide-character version of **_strtoui64**; its *strSource* argument is a wide-character string. Otherwise these functions behave identically.
 
 Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*.
 

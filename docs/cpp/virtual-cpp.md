@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: virtual (C++)"
 title: "virtual (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["virtual_cpp", "virtual"]
@@ -7,7 +8,7 @@ ms.assetid: c2eb987d-6cf3-43b6-aa0c-29a6f561b1ae
 ---
 # virtual (C++)
 
-The **virtual** keyword declares a virtual function or a virtual base class.
+The **`virtual`** keyword declares a virtual function or a virtual base class.
 
 ## Syntax
 
@@ -25,7 +26,7 @@ Specifies the return type of the virtual member function.
 Declares a member function.
 
 *access-specifier*<br/>
-Defines the level of access to the base class, **public**, **protected** or **private**. Can appear before or after the **virtual** keyword.
+Defines the level of access to the base class, **`public`**, **`protected`** or **`private`**. Can appear before or after the **`virtual`** keyword.
 
 *base-class-name*<br/>
 Identifies a previously declared class type.

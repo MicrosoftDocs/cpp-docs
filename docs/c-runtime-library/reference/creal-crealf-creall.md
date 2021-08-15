@@ -1,6 +1,7 @@
 ---
 title: "creal, crealf, creall"
-ms.date: "03/30/2018"
+description: "API reference for creal, crealf, creall; which retrieve the real part of a complex number."
+ms.date: "9/2/2020"
 api_name: ["creal", "crealf", "creall"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll"]
 api_type: ["DLLExport"]
@@ -19,9 +20,8 @@ Retrieves the real part of a complex number.
 double creal( _Dcomplex z );
 float crealf( _Fcomplex z );
 long double creall( _Lcomplex z );
-```
+#define creal(X) // Requires C11 or higher
 
-```cpp
 float creal( _Fcomplex z );  // C++ only
 long double creal( _Lcomplex z );  // C++ only
 ```
@@ -37,13 +37,16 @@ The real part of *z*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **creal** that take **_Fcomplex** or **_Lcomplex** values, and return **float** or **long double** values. In a C program, **creal** always takes a **_Dcomplex** value and returns a **double** value.
+Because C++ allows overloading, you can call overloads of **creal** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **creal** always takes a **_Dcomplex** value and returns a **`double`** value.
+
+If you use the \<tgmath.h> `creal()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 ## Requirements
 
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
 |**creal**, **crealf**, **creall**|\<complex.h>|\<ccomplex>|
+|**creal** macro | \<tgmath.h> ||
 
 The **_Fcomplex**, **_Dcomplex**, and **_Lcomplex** types are Microsoft-specific equivalents of the unimplemented native C99 types **float _Complex**, **double _Complex**, and **long double _Complex**, respectively. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

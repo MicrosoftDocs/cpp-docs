@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type Checking (CRT)"
 title: "Type Checking (CRT)"
 ms.date: "11/04/2016"
 f1_keywords: ["c.types"]
@@ -23,4 +24,4 @@ The compiler performs the same limited type checking on the wide-character count
 
 ## See also
 
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)

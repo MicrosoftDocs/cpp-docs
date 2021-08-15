@@ -1,11 +1,11 @@
 ---
+description: "Learn more about: _bstr_t::copy"
 title: "_bstr_t::copy"
-ms.date: "11/04/2016"
+ms.date: 02/02/2021
 f1_keywords: ["_bstr_t::copy"]
 helpviewer_keywords: ["Copy method [C++]", "BSTR object [C++], copy"]
-ms.assetid: 00ba7311-e82e-4a79-8106-5329fa2f869a
 ---
-# _bstr_t::copy
+# `_bstr_t::copy`
 
 **Microsoft Specific**
 
@@ -13,18 +13,18 @@ Constructs a copy of the encapsulated `BSTR`.
 
 ## Syntax
 
-```
+```cpp
 BSTR copy( bool fCopy = true ) const;
 ```
 
-#### Parameters
+### Parameters
 
-*fCopy*<br/>
-If TRUE, **copy** returns a copy of the contained `BSTR`, otherwise **copy** returns the actual BSTR.
+*`fCopy`*\
+If **`true`**, **`copy`** returns a copy of the contained `BSTR`, otherwise **`copy`** returns the actual `BSTR`.
 
 ## Remarks
 
-Returns a newly allocated copy of the encapsulated `BSTR` object.
+Returns a newly allocated copy of the encapsulated `BSTR` object, or the encapsulated object itself, depending on the parameter.
 
 ## Example
 
@@ -38,4 +38,4 @@ STDMETHODIMP CAlertMsg::get_ConnectionStr(BSTR *pVal){ //  m_bsConStr is _bstr_t
 
 ## See also
 
-[_bstr_t Class](../cpp/bstr-t-class.md)
+[`_bstr_t` class](../cpp/bstr-t-class.md)

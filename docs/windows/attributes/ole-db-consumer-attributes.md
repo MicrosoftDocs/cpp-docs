@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Consumer Attributes"
 title: "OLE DB Consumer Attributes (C++ COM)"
 ms.date: "10/02/2018"
 helpviewer_keywords: ["attributes [C++/CLI], database", "attributes [C++/CLI], data access", "databases [C++], attributes", "OLE DB consumers [C++], attributes", "database attributes [C++/CLI]", "attributes [C++/CLI], OLE DB consumer"]

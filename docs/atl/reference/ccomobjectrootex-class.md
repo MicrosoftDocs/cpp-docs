@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComObjectRootEx Class"
 title: "CComObjectRootEx Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComObjectRootEx", "ATLCOM/ATL::CComObjectRootEx", "ATLCOM/ATL::InternalAddRef", "ATLCOM/ATL::InternalRelease", "ATLCOM/ATL::Lock", "ATLCOM/ATL::Unlock", "ATLCOM/ATL::FinalConstruct", "ATLCOM/ATL::FinalRelease", "ATLCOM/ATL::OuterAddRef", "ATLCOM/ATL::OuterQueryInterface", "ATLCOM/ATL::OuterRelease", "ATLCOM/ATL::InternalQueryInterface", "ATLCOM/ATL::ObjectMain", "ATLCOM/ATL::m_dwRef", "ATLCOM/ATL::m_pOuterUnknown"]
@@ -25,7 +26,7 @@ The class whose methods implement the desired threading model. You can explicitl
 
 ### Methods
 
-|||
+|Function|Description|
 |-|-|
 |[CComObjectRootEx](#ccomobjectrootex)|Constructor.|
 |[InternalAddRef](#internaladdref)|Increments the reference count for a nonaggregated object.|
@@ -35,7 +36,7 @@ The class whose methods implement the desired threading model. You can explicitl
 
 ### CComObjectRootBase Methods
 
-|||
+|Function|Description|
 |-|-|
 |[FinalConstruct](#finalconstruct)|Override in your class to perform any initialization required by your object.|
 |[FinalRelease](#finalrelease)|Override in your class to perform any cleanup required by your object.|
@@ -45,14 +46,14 @@ The class whose methods implement the desired threading model. You can explicitl
 
 ### Static Functions
 
-|||
+|Function|Description|
 |-|-|
 |[InternalQueryInterface](#internalqueryinterface)|Delegates to the `IUnknown` of a nonaggregated object.|
 |[ObjectMain](#objectmain)|Called during module initialization and termination for derived classes listed in the object map.|
 
 ### Data Members
 
-|||
+|Data member|Description|
 |-|-|
 |[m_dwRef](#m_dwref)|With `m_pOuterUnknown`, part of a union. Used when the object is not aggregated to hold the reference count of `AddRef` and `Release`.|
 |[m_pOuterUnknown](#m_pouterunknown)|With `m_dwRef`, part of a union. Used when the object is aggregated to hold a pointer to the outer unknown.|

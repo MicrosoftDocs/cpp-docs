@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Document/View Sample List"
 title: "Document-View Sample List"
 ms.date: "11/04/2016"
 ms.assetid: 6f087ce8-2f46-433c-b674-4c110743b289
@@ -31,4 +32,4 @@ See the following sample programs that illustrate using MFC's document/view arch
 
 ## See also
 
-[Document/View Architecture](../mfc/document-view-architecture.md)
+[Document/View Architecture](document-view-architecture.md)

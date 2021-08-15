@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3198"
 title: "Compiler Error C3198"
 ms.date: "11/04/2016"
 f1_keywords: ["C3198"]

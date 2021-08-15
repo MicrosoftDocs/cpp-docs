@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Enable a 64-Bit, x64 hosted MSVC toolset on the command line"
 title: "How to: Enable a 64-Bit MSVC Toolset on the Command Line"
 ms.date: "07/24/2019"
 helpviewer_keywords: ["x64 [C++]", "64-bit compiler [C++], command line usage", "64-bit compiler [C++], toolset enabling at command line", "command line [C++], 64-bit compiler", "Itanium [C++], command-line compiler", "IPF", "Itanium [C++]", "IPF, command-line compiler", "x64 [C++], command-line compiler"]
@@ -12,7 +13,7 @@ Visual Studio includes C++ compilers, linkers, and other tools that you can use 
 
 To access these command prompts on Windows 10, on the **Start** menu, open the folder for your version of Visual Studio, for example **Visual Studio 2019**, and then choose one of the x64 native or cross-tool developer command prompts.
 
-![x64 Native Tools Command Prompt](media/x64-native-tools-command-prompt.png "x64 Native Tools in Start Menu")
+![Windows Start menu showing the x64 Native Tools Command Prompt shortcut.](media/x64-native-tools-command-prompt.png "x64 Native Tools in Start Menu")
 
 To access these command prompts on Windows 8, on the **Start** screen, open **All apps**. Under the heading for the installed version of Visual Studio, open the **Visual Studio** folder (in older versions of Visual Studio, it may be named **Visual Studio Tools**). On earlier versions of Windows, choose **Start**, expand **All Programs**, the folder for your version of **Visual Studio** (and on older versions of Visual Studio, **Visual Studio Tools**). For more information, see [Developer command prompt shortcuts](building-on-the-command-line.md#developer_command_prompt_shortcuts).
 

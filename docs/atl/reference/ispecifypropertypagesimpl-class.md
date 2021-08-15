@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISpecifyPropertyPagesImpl Class"
 title: "ISpecifyPropertyPagesImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ISpecifyPropertyPagesImpl", "ATLCOM/ATL::ISpecifyPropertyPagesImpl", "ATLCOM/ATL::ISpecifyPropertyPagesImpl::GetPages"]

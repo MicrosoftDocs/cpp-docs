@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3719"
 title: "Compiler Error C3719"
 ms.date: "11/04/2016"
 f1_keywords: ["C3719"]
@@ -38,7 +39,7 @@ int main() {
 }
 ```
 
-To fix this error, apply the [object](../../windows/object-cpp.md), [coclass](../../windows/coclass.md), [event_source](../../windows/event-source.md), and [event_receiver](../../windows/event-receiver.md) attributes appropriately to make the classes in which you are using the interface COM classes. For example:
+To fix this error, apply the [object](../../windows/attributes/object-cpp.md), [coclass](../../windows/attributes/coclass.md), [event_source](../../windows/attributes/event-source.md), and [event_receiver](../../windows/attributes/event-receiver.md) attributes appropriately to make the classes in which you are using the interface COM classes. For example:
 
 ```cpp
 // C3719b.cpp

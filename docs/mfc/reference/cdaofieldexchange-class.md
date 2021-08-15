@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDaoFieldExchange Class"
 title: "CDaoFieldExchange Class"
 ms.date: "09/17/2019"
 f1_keywords: ["CDaoFieldExchange", "AFXDAO/CDaoFieldExchange", "AFXDAO/CDaoFieldExchange::IsValidOperation", "AFXDAO/CDaoFieldExchange::SetFieldType", "AFXDAO/CDaoFieldExchange::m_nOperation", "AFXDAO/CDaoFieldExchange::m_prs"]
@@ -45,7 +46,7 @@ Use this class if you are writing data exchange routines for custom data types; 
 > [!NOTE]
 > DAO record field exchange (DFX) is very similar to record field exchange (RFX) in the ODBC-based MFC database classes ( `CDatabase`, `CRecordset`). If you understand RFX, you will find it easy to use DFX.
 
-A `CDaoFieldExchange` object provides the context information needed for DAO record field exchange to take place. `CDaoFieldExchange` objects support a number of operations, including binding parameters and field data members and setting various flags on the fields of the current record. DFX operations are performed on recordset-class data members of types defined by the **enum** **FieldType** in `CDaoFieldExchange`. Possible **FieldType** values are:
+A `CDaoFieldExchange` object provides the context information needed for DAO record field exchange to take place. `CDaoFieldExchange` objects support a number of operations, including binding parameters and field data members and setting various flags on the fields of the current record. DFX operations are performed on recordset-class data members of types defined by the **`enum`** **FieldType** in `CDaoFieldExchange`. Possible **FieldType** values are:
 
 - `CDaoFieldExchange::outputColumn` for field data members.
 

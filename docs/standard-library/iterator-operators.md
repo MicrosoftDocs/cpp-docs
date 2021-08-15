@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;iterator&gt; operators"
 title: "&lt;iterator&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["xutility/std::operator!=", "xutility/std::operator&gt;", "xutility/std::operator&gt;=", "xutility/std::operator&lt;", "xutility/std::operator&lt;=", "xutility/std::operator+", "xutility/std::operator-", "xutility/std::operator=="]
@@ -32,7 +33,7 @@ An object of type `iterator`.
 
 ### Return Value
 
-**true** if the iterator objects are not equal; **false** if the iterator objects are equal.
+**`true`** if the iterator objects are not equal; **`false`** if the iterator objects are equal.
 
 ### Remarks
 
@@ -136,7 +137,7 @@ An object of type iterator.
 
 ### Return Value
 
-**true** if the iterator objects are equal; **false** if the iterator objects are not equal.
+**`true`** if the iterator objects are equal; **`false`** if the iterator objects are not equal.
 
 ### Remarks
 
@@ -225,7 +226,7 @@ An object of type `iterator`.
 
 ### Return Value
 
-**true** if the iterator on the left side of the expression is less than the iterator on the right side of the expression; **false** if it is greater than or equal to the iterator on the right.
+**`true`** if the iterator on the left side of the expression is less than the iterator on the right side of the expression; **`false`** if it is greater than or equal to the iterator on the right.
 
 ### Remarks
 
@@ -316,7 +317,7 @@ An object of type iterator.
 
 ### Return Value
 
-**true** if the iterator on the left side of the expression is less than or equal to the iterator on the right side of the expression; **false** if it is greater than the iterator on the right.
+**`true`** if the iterator on the left side of the expression is less than or equal to the iterator on the right side of the expression; **`false`** if it is greater than the iterator on the right.
 
 ### Remarks
 
@@ -411,7 +412,7 @@ An object of type iterator.
 
 ### Return Value
 
-**true** if the iterator on the left side of the expression is greater than the iterator on the right side of the expression; **false** if it is less than or equal to the iterator on the right.
+**`true`** if the iterator on the left side of the expression is greater than the iterator on the right side of the expression; **`false`** if it is less than or equal to the iterator on the right.
 
 ### Remarks
 
@@ -500,7 +501,7 @@ An object of type iterator.
 
 ### Return Value
 
-**true** if the iterator on the left side of the expression is greater than or equal to the iterator on the right side of the expression; **false** if it is less than the iterator on the right.
+**`true`** if the iterator on the left side of the expression is greater than or equal to the iterator on the right side of the expression; **`false`** if it is less than the iterator on the right.
 
 ### Remarks
 

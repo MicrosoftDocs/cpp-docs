@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Convert Between Various String Types"
 title: "How to: Convert Between Various String Types"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
@@ -9,9 +10,7 @@ ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
 
 This topic demonstrates how to convert various Visual C++ string types into other strings. The strings types that are covered include `char *`, `wchar_t*`, [_bstr_t](../cpp/bstr-t-class.md), [CComBSTR](../atl/reference/ccombstr-class.md), [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), and <xref:System.String?displayProperty=fullName>. In all cases, a copy of the string is made when converted to the new type. Any changes made to the new string will not affect the original string, and vice versa.
 
-## Converting from char \*
-
-## Example
+## Example: Convert from char *
 
 ### Description
 
@@ -110,9 +109,7 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Converting from wchar_t \*
-
-## Example
+## Example: Convert from wchar_t *
 
 ### Description
 
@@ -234,9 +231,7 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Converting from _bstr_t
-
-## Example
+## Example: Convert from _bstr_t
 
 ### Description
 
@@ -334,9 +329,7 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Converting from CComBSTR
-
-## Example
+## Example: Convert from CComBSTR
 
 ### Description
 
@@ -444,13 +437,11 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Converting from CString
-
-## Example
+## Example: Convert from CString
 
 ### Description
 
-This example demonstrates how to convert from a `CString` to the other string types listed above. `CString` is based on the TCHAR data type, which in turn depends on whether the symbol `_UNICODE` is defined. If `_UNICODE` is not defined, `TCHAR` is defined to be char and `CString` contains a multibyte character string; if `_UNICODE` is defined, `TCHAR` is defined to be `wchar_t` and `CString` contains a wide character string.
+This example demonstrates how to convert from a `CString` to the other string types listed above. `CString` is based on the TCHAR data type, which in turn depends on whether the symbol `_UNICODE` is defined. If `_UNICODE` is not defined, `TCHAR` is defined to be char and `CString` contains a multibyte character string; if `_UNICODE` is defined, `TCHAR` is defined to be **`wchar_t`** and `CString` contains a wide character string.
 
 `CStringA` is the multibyte string always version of `CString`, `CStringW` is the wide character string only version. Neither `CStringA` nor `CStringW` use `_UNICODE` to determine how they should compile. `CStringA` and `CStringW` are used in this example to clarify minor differences in buffer size allocation and output handling.
 
@@ -588,9 +579,7 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## Converting from basic_string
-
-## Example
+## Example: Convert from basic_string
 
 ### Description
 
@@ -684,9 +673,7 @@ Hello, World! (CStringW)
 Hello, World! (System::String)
 ```
 
-## Converting from System::String
-
-## Example
+## Example: Convert from System::String
 
 ### Description
 

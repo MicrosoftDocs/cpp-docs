@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3345"
 title: "Compiler Error C3345"
 ms.date: "11/04/2016"
 f1_keywords: ["C3345"]
@@ -48,4 +49,4 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 
 [__iscsym](../../c-runtime-library/reference/iscsym-functions.md)<br/>
 [Character Classification](../../c-runtime-library/character-classification.md)<br/>
-[module](../../windows/module-cpp.md)
+[module](../../windows/attributes/module-cpp.md)

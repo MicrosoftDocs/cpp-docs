@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: utility (STL/CLR)"
 title: "utility (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -40,8 +41,6 @@ Include the STL/CLR header `<cliext/utility>` to define the template class `pair
 |Function|Description|
 |--------------|-----------------|
 |[make_pair (STL/CLR)](#make_pair)|Make a pair from a pair of values.|
-
-## Members
 
 ## <a name="pair"></a> pair (STL/CLR)
 
@@ -179,7 +178,7 @@ Pair to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns `*this`. You use it to replace the stored pair of values with a copy of the stored pair of values in *right*.
+The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the stored pair of values with a copy of the stored pair of values in *right*.
 
 ### Example
 
@@ -242,11 +241,11 @@ The constructor:
 
 `pair(pair<Value1, Value2>% right);`
 
-initializes the stored pair with `right.`[pair::first (STL/CLR)](../dotnet/pair-first-stl-clr.md) and `right.`[pair::second (STL/CLR)](../dotnet/pair-second-stl-clr.md).
+initializes the stored pair with `right.`[pair::first (STL/CLR)](#first) and `right.`[pair::second (STL/CLR)](#second).
 
 `pair(pair<Value1, Value2>^ right);`
 
-initializes the stored pair with `right->`[pair::first (STL/CLR)](../dotnet/pair-first-stl-clr.md) and `right>`[pair::second (STL/CLR)](../dotnet/pair-second-stl-clr.md).
+initializes the stored pair with `right->`[pair::first (STL/CLR)](#first) and `right>`[pair::second (STL/CLR)](#second).
 
 The constructor:
 
@@ -382,7 +381,7 @@ Pair to swap contents with.
 
 ### Remarks
 
-The member function swaps the stored pair of values between `*this` and *right*.
+The member function swaps the stored pair of values between **`*this`** and *right*.
 
 ### Example
 

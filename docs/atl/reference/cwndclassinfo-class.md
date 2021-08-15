@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWndClassInfo Class"
 title: "CWndClassInfo Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWndClassInfo", "ATLWIN/ATL::CWndClassInfo", "ATLWIN/ATL::Register", "ATLWIN/ATL::m_atom", "ATLWIN/ATL::m_bSystemCursor", "ATLWIN/ATL::m_lpszCursorID", "ATLWIN/ATL::m_lpszOrigName", "ATLWIN/ATL::m_szAutoName", "ATLWIN/ATL::m_wc", "ATLWIN/ATL::pWndProc"]
@@ -22,13 +23,13 @@ class CWndClassInfo
 
 ### Public Methods
 
-|||
+|Name|Description|
 |-|-|
 |[Register](#register)|Registers the window class.|
 
 ### Data Members
 
-|||
+|Name|Description|
 |-|-|
 |[m_atom](#m_atom)|Uniquely identifies the registered window class.|
 |[m_bSystemCursor](#m_bsystemcursor)|Specifies whether the cursor resource refers to a system cursor or to a cursor contained in a module resource.|

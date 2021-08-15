@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: numpunct_byname Class"
 title: "numpunct_byname Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocnum/std::numpunct_byname"]

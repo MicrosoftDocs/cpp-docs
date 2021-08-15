@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform, default, and cli Namespaces  (C++/CLI and C++/CX)"
 title: "Platform, default, and cli Namespaces  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
@@ -32,7 +33,7 @@ using namespace cli;
 
 ### Remarks
 
-The C++/CLI supports the **cli** namespace. When compiling with `/clr`, the **using** statement in the Syntax section is implied.
+The C++/CLI supports the **cli** namespace. When compiling with `/clr`, the **`using`** statement in the Syntax section is implied.
 
 The following language features are in the **cli** namespace:
 

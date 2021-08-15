@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cabs, cabsf, cabsl"
 title: "cabs, cabsf, cabsl"
 ms.date: "11/04/2016"
 api_name: ["cabs", "cabsf", "cabsl"]
@@ -44,7 +45,7 @@ The absolute value of *z*.
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **cabs** that take **_Fcomplex** or **_Lcomplex** values, and return **float** or **long** **double** values. In a C program, **cabs** always takes a **_Dcomplex** value and returns a **double** value.
+Because C++ allows overloading, you can call overloads of **cabs** that take **_Fcomplex** or **_Lcomplex** values, and return **`float`** or **`long double`** values. In a C program, **cabs** always takes a **_Dcomplex** value and returns a **`double`** value.
 
 ## Requirements
 

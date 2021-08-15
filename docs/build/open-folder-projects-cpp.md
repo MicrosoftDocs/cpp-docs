@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Open Folder support for C++ build systems in Visual Studio"
 title: "Open Folder support for C++ build systems in Visual Studio"
 ms.date: "12/02/2019"
 helpviewer_keywords: ["Open Folder Projects in Visual Studio"]
@@ -6,13 +7,13 @@ ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 ---
 # Open Folder support for C++ build systems in Visual Studio
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 The Open Folder feature is available in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 In Visual Studio 2017 and later, the "Open Folder" feature enables you to open a folder of source files and immediately start coding with support for IntelliSense, browsing, refactoring, debugging, and so on. As you edit, create, move, or delete files, Visual Studio tracks the changes automatically and continuously updates its IntelliSense index. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. This feature enables you to integrate any third-party build system into Visual Studio. For general information about Open Folder, see [Develop code in Visual Studio without projects or solutions](/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions).
 
@@ -24,7 +25,7 @@ CMake is integrated in the Visual Studio IDE as a component of the C++ desktop w
 
 To use the Visual Studio IDE with a build system or compiler toolset that is not directly supported from the main menu select **File | Open | Folder** or press **Ctrl + Shift + Alt + O**. Navigate to the folder that contains your source code files. To build the project, configure IntelliSense and set debugging parameters, you add three JSON files:
 
-| | |
+| File | Description |
 |-|-|
 |CppProperties.json|Specify custom configuration information for browsing. Create this file, if needed, in your root project folder. (Not used in CMake projects.)|
 |tasks.vs.json|Specify custom build commands. Accessed via the **Solution Explorer** context menu item **Configure Tasks**.|
@@ -34,11 +35,11 @@ To use the Visual Studio IDE with a build system or compiler toolset that is not
 
 For IntelliSense and browsing behavior such as **Go to Definition** to work correctly, Visual Studio needs to know which compiler you are using, where the system headers are, and where any additional include files are located if they are not directly in the folder you have opened (the workspace folder). To specify a configuration, you can choose **Manage Configurations** from the dropdown in the main toolbar:
 
-![Manage configurations dropdown](media/manage-configurations-dropdown.png)
+![Configuration dropdown on the toolbar showing the Manage configurations selection.](media/manage-configurations-dropdown.png)
 
 Visual Studio offers the following default configurations:
 
-![Default configurations](media/default-configurations.png)
+![Add Configuration to CppProperties dialog, showing list of Default configurations: x86-Debug, x86-Release, x64-Debug, x64-Release, and so on.](media/default-configurations.png)
 
 If, for example, you choose **x64-Debug**, Visual Studio creates a file called *CppProperties.json* in your root project folder:
 
@@ -77,7 +78,8 @@ If you add the MinGW-W64 configuration, the JSON looks this this:
 
 ```json
 {
-  {
+  "configurations": [
+    {
       "inheritEnvironments": [
         "mingw_64"
       ],
@@ -99,6 +101,7 @@ If you add the MinGW-W64 configuration, the JSON looks this this:
         }
       ]
     }
+  ]
 }
 ```
 
@@ -108,13 +111,13 @@ The `intelliSenseMode` property is set to a value appropriate for GCC. For more 
 
 When everything is working correctly, you will see IntelliSense from the GCC headers when you hover over a type:
 
-![GCC IntelliSense](media/gcc-intellisense.png)
+![Screenshot of a GCC IntelliSense pop-up showing the header documentation.](media/gcc-intellisense.png)
 
 ## Enable IntelliSense diagnostics
 
-If you are not seeing the IntelliSense that you expect, you can troubleshoot by going to **Tools** > **Options** > **Text Editor** > **C/C++** > **Advanced** and setting **Enable Logging** to **true**. To start with, try setting **Logging Level** to 5, and **Logging Filters** to 8.
+If you are not seeing the IntelliSense that you expect, you can troubleshoot by going to **Tools** > **Options** > **Text Editor** > **C/C++** > **Advanced** and setting **Enable Logging** to **`true`**. To start with, try setting **Logging Level** to 5, and **Logging Filters** to 8.
 
-![Diagnostic logging](media/diagnostic-logging.png)
+![Options dialog, showing the Diagnostic logging settings.](media/diagnostic-logging.png)
 
 Output is piped to the **Output Window** and is visible when you choose **Show Output From: Visual C++ Log*. The output contains, among other things, the list of actual include paths that IntelliSense is trying to use. If the paths do not match the ones in *CppProperties.json*, try closing the folder and deleting the *.vs* subfolder which contains cached browsing data.
 
@@ -122,7 +125,7 @@ Output is piped to the **Output Window** and is visible when you choose **Show O
 
 You can automate build scripts or any other external operations on the files you have in your current workspace by running them as tasks directly in the IDE. You can configure a new task by right-clicking on a file or folder and selecting **Configure Tasks**.
 
-![Open Folder Configure Tasks](media/configure-tasks.png)
+![Solution Explorer shortcut menu showing the Configure Tasks command.](media/configure-tasks.png)
 
 This creates (or opens) the *tasks.vs.json* file in the .vs folder which Visual Studio creates in your root project folder. You can define any arbitrary task in this file and then invoke it from the **Solution Explorer** context menu. To continue the GCC example, the following snippet shows a complete *tasks.vs.json* file with as single task that invokes *g++.exe* to build a project. Assume the project contains a single file called *hello.cpp*.
 
@@ -196,7 +199,7 @@ To customize your program's command line arguments and debugging instructions, r
 
 To start debugging, choose the executable in the debug dropdown, then click the green arrow:
 
-![Launch debugger](media/launch-debugger-gdb.png)
+![Toolbar debug target dropdown, showing the green arrow to start the debugger.](media/launch-debugger-gdb.png)
 
 You should see the **Initializing Debugger** dialog and then an external console window that is running your program.
 

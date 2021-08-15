@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE Background: Linking and Embedding"
 title: "OLE Background: Linking and Embedding"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE embedded items [MFC]", "item types [MFC], defined", "item types [MFC]", "OLE [MFC], linked items", "linked items (OLE) [MFC]", "embedded objects [MFC]", "OLE items [MFC], types"]
@@ -16,7 +17,7 @@ Every OLE item, whether embedded or linked, has a type associated with it based 
 
 ## See also
 
-[OLE Background](../mfc/ole-background.md)<br/>
-[OLE Background: Containers and Servers](../mfc/ole-background-containers-and-servers.md)<br/>
-[Containers: Client Items](../mfc/containers-client-items.md)<br/>
-[Servers: Server Items](../mfc/servers-server-items.md)
+[OLE Background](ole-background.md)<br/>
+[OLE Background: Containers and Servers](ole-background-containers-and-servers.md)<br/>
+[Containers: Client Items](containers-client-items.md)<br/>
+[Servers: Server Items](servers-server-items.md)

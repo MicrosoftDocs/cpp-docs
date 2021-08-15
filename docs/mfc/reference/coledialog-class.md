@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleDialog Class"
 title: "COleDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleDialog", "AFXODLGS/COleDialog", "AFXODLGS/COleDialog::GetLastError"]

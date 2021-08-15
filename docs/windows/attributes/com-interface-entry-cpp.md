@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: com_interface_entry (C++)"
 title: "com_interface_entry  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.com_interface_entry"]
@@ -97,11 +98,9 @@ END_COM_MAP()
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|Yes|
 |**Required attributes**|One or more of the following: `coclass`, `progid`, or `vi_progid`.|
 |**Invalid attributes**|None|

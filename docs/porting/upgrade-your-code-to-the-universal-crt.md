@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Upgrade your code to the Universal CRT"
 title: "Upgrade your code to the Universal CRT"
 ms.date: "03/31/2017"
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce

@@ -1,28 +1,26 @@
 ---
-title: "MSVC experimental preprocessor overview"
+title: "MSVC new preprocessor overview"
 description: "The MSVC preprocessor is being updated for conformance with C/C++ standards."
-ms.date: "02/09/2020"
-helpviewer_keywords: ["preprocessor, experimental"]
+ms.date: 09/10/2020
+helpviewer_keywords: ["preprocessor, experimental", "preprocessor, new"]
 ---
-# MSVC experimental preprocessor overview
+# MSVC new preprocessor overview
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
-Visual Studio 2015 uses the traditional preprocessor, which doesn't conform with Standard C++. An experimental preprocessor is available in Visual Studio 2017 and Visual Studio 2019 by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch. More information about using the new preprocessor in Visual Studio 2017 and Visual Studio 2019 is available. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
+Visual Studio 2015 uses the traditional preprocessor, which doesn't conform with Standard C++ or C99. Starting in Visual Studio 2019 version 16.5, new preprocessor support for the C++20 standard is feature-complete. These changes are available by using the [/Zc:preprocessor](../build/reference/zc-preprocessor.md) compiler switch. An experimental version of the new preprocessor is available starting in Visual Studio 2017 version 15.8 and later by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch. More information about using the new preprocessor in Visual Studio 2017 and Visual Studio 2019 is available. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 We're updating the Microsoft C++ preprocessor to improve standards conformance, fix longstanding bugs, and change some behaviors that are officially undefined. We've also added new diagnostics to warn on errors in macro definitions.
 
-These changes are available by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch in Visual Studio 2017 or Visual Studio 2019. The default preprocessor behavior remains the same as in previous versions.
-
-Starting in Visual Studio 2019 version 16.5, experimental preprocessor support for the C++20 standard is feature-complete.
+Starting in Visual Studio 2019 version 16.5, preprocessor support for the C++20 standard is feature-complete. These changes are available by using the [/Zc:preprocessor](../build/reference/zc-preprocessor.md) compiler switch. An experimental version of the new preprocessor is available in earlier versions starting in Visual Studio 2017 version 15.8. You can enable it by using the [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) compiler switch. The default preprocessor behavior remains the same as in previous versions.
 
 ## New predefined macro
 
-You can detect which preprocessor is in use at compile time. Check the value of the predefined macro [\_MSVC\_TRADITIONAL](predefined-macros.md) to tell if the traditional preprocessor is in use. This macro is set unconditionally by versions of the compiler that support it, independent of which preprocessor is invoked. Its value is 1 for the traditional preprocessor. It's 0 for the conforming preprocessor.
+You can detect which preprocessor is in use at compile time. Check the value of the predefined macro [`_MSVC_TRADITIONAL`](predefined-macros.md) to tell if the traditional preprocessor is in use. This macro is set unconditionally by versions of the compiler that support it, independent of which preprocessor is invoked. Its value is 1 for the traditional preprocessor. It's 0 for the conforming preprocessor.
 
 ```cpp
 #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
@@ -32,9 +30,9 @@ You can detect which preprocessor is in use at compile time. Check the value of 
 #endif
 ```
 
-## Behavior changes in the experimental preprocessor
+## Behavior changes in the new preprocessor
 
-The initial work on the experimental preprocessor has been focused on making all macro expansions conform to the standard. It lets you use the MSVC compiler with libraries that are currently blocked by the traditional behaviors. We tested the updated preprocessor on real world projects. Here are some of the more common breaking changes we found:
+The initial work on the new preprocessor has been focused on making all macro expansions conform to the standard. It lets you use the MSVC compiler with libraries that are currently blocked by the traditional behaviors. We tested the updated preprocessor on real world projects. Here are some of the more common breaking changes we found:
 
 ### Macro comments
 
@@ -122,7 +120,7 @@ ADD_STD(string) s;
 
 ### Comma elision in variadic macros
 
-The traditional MSVC preprocessor always removes commas before empty `__VA_ARGS__` replacements. The experimental preprocessor more closely follows the behavior of other popular cross-platform compilers. For the comma to be removed, the variadic argument must be missing (not just empty) and it must be marked with a `##` operator. Consider the following example:
+The traditional MSVC preprocessor always removes commas before empty `__VA_ARGS__` replacements. The new preprocessor more closely follows the behavior of other popular cross-platform compilers. For the comma to be removed, the variadic argument must be missing (not just empty) and it must be marked with a `##` operator. Consider the following example:
 
 ```cpp
 void func(int, int = 2, int = 3);
@@ -156,11 +154,11 @@ int main()
 }
 ```
 
-In the upcoming C++20 standard, this issue has been addressed by adding `__VA_OPT__`. Experimental preprocessor support for  `__VA_OPT__` is available starting in Visual Studio 2019 version 16.5.
+In the upcoming C++20 standard, this issue has been addressed by adding `__VA_OPT__`. New preprocessor support for  `__VA_OPT__` is available starting in Visual Studio 2019 version 16.5.
 
 ### C++20 variadic macro extension
 
-The experimental preprocessor supports C++20 variadic macro argument elision:
+The new preprocessor supports C++20 variadic macro argument elision:
 
 ```cpp
 #define FUNC(a, ...) __VA_ARGS__ + a
@@ -171,7 +169,7 @@ int main()
   }
 ```
 
-This code isn't conforming before the C++20 standard. In MSVC, the experimental preprocessor extends this C++20 behavior to lower language standard modes (**`/std:c++14`**, **`/std:c++17`**). This extension matches the behavior of other major cross-platform C++ compilers.
+This code isn't conforming before the C++20 standard. In MSVC, the new preprocessor extends this C++20 behavior to lower language standard modes (**`/std:c++14`**, **`/std:c++17`**). This extension matches the behavior of other major cross-platform C++ compilers.
 
 ### Macro arguments are "unpacked"
 
@@ -213,7 +211,9 @@ DO_THING(1, "World");
 // IMPL1 ( "Hello","World");
 ```
 
-Although this example may seem a bit contrived, we've seen it in real world code. To see what's going on, we can break down the expansion starting with `DO_THING`:
+Although this example may seem a bit contrived, we've seen it in real-world code.
+
+To see what's going on, we can break down the expansion starting with `DO_THING`:
 
 1. `DO_THING(1, "World")` expands to `CAT(IMPL, 1) ECHO(("Hello", "World"))`
 1. `CAT(IMPL, 1)` expands to `IMPL ## 1`, which expands to `IMPL1`
@@ -222,7 +222,7 @@ Although this example may seem a bit contrived, we've seen it in real world code
 1. The preprocessor moves on to the following tokens. It finds the function-like macro `ECHO` gets invoked: `ECHO(("Hello", "World"))`, which expands to `("Hello", "World")`
 1. `IMPL1` is never considered again for expansion, so the full result of the expansions is: `IMPL1("Hello", "World");`
 
-To modify the macro to behave the same way under both the experimental preprocessor and the traditional preprocessor, add another layer of indirection:
+To modify the macro to behave the same way under both the new preprocessor and the traditional preprocessor, add another layer of indirection:
 
 ```cpp
 #define CAT(a,b) a##b
@@ -238,9 +238,9 @@ DO_THING_FIXED(1, "World");
 // do_thing_one( "Hello", "World");
 ```
 
-## Incomplete features
+## Incomplete features before 16.5
 
-Starting in Visual Studio 2019 version 16.5, the experimental preprocessor is feature-complete for C++20. In previous versions of Visual Studio, the experimental preprocessor is mostly complete, although some preprocessor directive logic still falls back to the traditional behavior. Here's a partial list of incomplete features in Visual Studio versions before 16.5:
+Starting in Visual Studio 2019 version 16.5, the new preprocessor is feature-complete for C++20. In previous versions of Visual Studio, the new preprocessor is mostly complete, although some preprocessor directive logic still falls back to the traditional behavior. Here's a partial list of incomplete features in Visual Studio versions before 16.5:
 
 - Support for `_Pragma`
 - C++20 features

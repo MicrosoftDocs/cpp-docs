@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _Cbuild, _FCbuild, _LCbuild"
 title: "_Cbuild, _FCbuild, _LCbuild"
 ms.date: "03/30/2018"
 api_name: ["_Cbuild", "_FCbuild", "_LCbuild"]
@@ -42,7 +43,7 @@ The **_Cbuild**, **_FCbuild**, and **_LCbuild** functions simplify creation of c
 |-------------|--------------|------------------|
 |**_Cbuild**, **_FCbuild**, **_LCbuild**|\<complex.h>|\<ccomplex>|
 
-These functions are Microsoft-specific. The types **_Dcomplex**, **_Fcomplex**, and **_Lcomplex** are Microsoft-specific equivalents to the unimplemented C99 native types **double _Complex**, **float _Complex**, and **long double _Complex**, respectively. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+These functions are Microsoft-specific. The types **_Dcomplex**, **_Fcomplex**, and **_Lcomplex** are Microsoft-specific equivalents to the unimplemented C99 native types **`double _Complex`**, **`float _Complex`**, and **`long double _Complex`**, respectively. For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## See also
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: hash_multimap (STL/CLR)"
 title: "hash_multimap (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -121,9 +122,9 @@ The type of the additional component of an element in the controlled sequence.
 
 The object allocates and frees storage for the sequence it controls as individual nodes in a bidirectional linked list. To speed access, the object also maintains a varying-length array of pointers into the list (the hash table), effectively managing the whole list as a sequence of sublists, or buckets. It inserts elements into a bucket that it keeps ordered by altering the links between nodes, never by copying the contents of one node to another. That means you can insert and remove elements freely without disturbing remaining elements.
 
-The object orders each bucket it controls by calling a stored delegate object of type [hash_set::key_compare (STL/CLR)](../dotnet/hash-set-key-compare-stl-clr.md). You can specify the stored delegate object when you construct the hash_set; if you specify no delegate object, the default is the comparison `operator<=(key_type, key_type)`.
+The object orders each bucket it controls by calling a stored delegate object of type [hash_set::key_compare (STL/CLR)](./hash-set-stl-clr.md#key_compare). You can specify the stored delegate object when you construct the hash_set; if you specify no delegate object, the default is the comparison `operator<=(key_type, key_type)`.
 
-You access the stored delegate object by calling the member function [hash_set::key_comp (STL/CLR)](../dotnet/hash-set-key-comp-stl-clr.md)`()`. Such a delegate object must define equivalent ordering between keys of type [hash_set::key_type (STL/CLR)](../dotnet/hash-set-key-type-stl-clr.md). That means, for any two keys `X` and `Y`:
+You access the stored delegate object by calling the member function [hash_set::key_comp (STL/CLR)](./hash-set-stl-clr.md#key_comp)`()`. Such a delegate object must define equivalent ordering between keys of type [hash_set::key_type (STL/CLR)](./hash-set-stl-clr.md#key_type). That means, for any two keys `X` and `Y`:
 
 `key_comp()(X, Y)` returns the same Boolean result on every call.
 
@@ -133,7 +134,7 @@ Any ordering rule that behaves like `operator<=(key_type, key_type)`, `operator>
 
 Note that the container ensures only that elements whose keys have equivalent ordering (and which hash to the same integer value) are adjacent within a bucket. Unlike template class [hash_map (STL/CLR)](../dotnet/hash-map-stl-clr.md), an object of template class `hash_multimap` does not require that keys for all elements are unique. (Two or more keys can have equivalent ordering.)
 
-The object determines which bucket should contain a given ordering key by calling a stored delegate object of type [hash_set::hasher (STL/CLR)](../dotnet/hash-set-hasher-stl-clr.md). You access this stored object by calling the member function [hash_set::hash_delegate (STL/CLR)](../dotnet/hash-set-hash-delegate-stl-clr.md)`()` to obtain an integer value that depends on the key value. You can specify the stored delegate object when you construct the hash_set; if you specify no delegate object, the default is the function `System::Object::hash_value(key_type)`. That means, for any keys `X` and `Y`:
+The object determines which bucket should contain a given ordering key by calling a stored delegate object of type [hash_set::hasher (STL/CLR)](./hash-set-stl-clr.md#hasher). You access this stored object by calling the member function [hash_set::hash_delegate (STL/CLR)](./hash-set-stl-clr.md#hash_delegate)`()` to obtain an integer value that depends on the key value. You can specify the stored delegate object when you construct the hash_set; if you specify no delegate object, the default is the function `System::Object::hash_value(key_type)`. That means, for any keys `X` and `Y`:
 
 `hash_delegate()(X)` returns the same integer result on every call.
 
@@ -141,9 +142,9 @@ If `X` and `Y` have equivalent ordering, then `hash_delegate()(X)` should return
 
 Each element contains a separate key and a mapped value. The sequence is represented in a way that permits lookup, insertion, and removal of an arbitrary element with a number of operations that is independent of the number of elements in the sequence (constant time) -- at least in the best of cases. Moreover, inserting an element invalidates no iterators, and removing an element invalidates only those iterators which point at the removed element.
 
-If hashed values are not uniformly distributed, however, a hash table can degenerate. In the extreme -- for a hash function that always returns the same value -- lookup, insertion, and removal are proportional to the number of elements in the sequence (linear time). The container endeavors to choose a reasonable hash function, mean bucket size, and hash-table size (total number of buckets), but you can override any or all of these choices. See, for example, the functions [hash_set::max_load_factor (STL/CLR)](../dotnet/hash-set-max-load-factor-stl-clr.md) and [hash_set::rehash (STL/CLR)](../dotnet/hash-set-rehash-stl-clr.md).
+If hashed values are not uniformly distributed, however, a hash table can degenerate. In the extreme -- for a hash function that always returns the same value -- lookup, insertion, and removal are proportional to the number of elements in the sequence (linear time). The container endeavors to choose a reasonable hash function, mean bucket size, and hash-table size (total number of buckets), but you can override any or all of these choices. See, for example, the functions [hash_set::max_load_factor (STL/CLR)](./hash-set-stl-clr.md#max_load_factor) and [hash_set::rehash (STL/CLR)](./hash-set-stl-clr.md#rehash).
 
-A hash_multimap supports bidirectional iterators, which means you can step to adjacent elements given an iterator that designates an element in the controlled sequence. A special head node corresponds to the iterator returned by [hash_multimap::end (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`()`. You can decrement this iterator to reach the last element in the controlled sequence, if present. You can increment a hash_multimap iterator to reach the head node, and it will then compare equal to `end()`. But you cannot dereference the iterator returned by `end()`.
+A hash_multimap supports bidirectional iterators, which means you can step to adjacent elements given an iterator that designates an element in the controlled sequence. A special head node corresponds to the iterator returned by [hash_multimap::end (STL/CLR)](#end)`()`. You can decrement this iterator to reach the last element in the controlled sequence, if present. You can increment a hash_multimap iterator to reach the head node, and it will then compare equal to `end()`. But you cannot dereference the iterator returned by `end()`.
 
 Note that you cannot refer to a hash_multimap element directly given its numerical position -- that requires a random-access iterator.
 
@@ -290,7 +291,7 @@ void clear();
 
 ### Remarks
 
-The member function effectively calls [hash_multimap::erase (STL/CLR)](../dotnet/hash-multimap-erase-stl-clr.md)`(` [hash_multimap::begin (STL/CLR)](../dotnet/hash-multimap-begin-stl-clr.md)`(),` [hash_multimap::end (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`())`. You use it to ensure that the controlled sequence is empty.
+The member function effectively calls [hash_multimap::erase (STL/CLR)](#erase)`(` [hash_multimap::begin (STL/CLR)](#begin)`(),` [hash_multimap::end (STL/CLR)](#end)`())`. You use it to ensure that the controlled sequence is empty.
 
 ### Example
 
@@ -585,7 +586,7 @@ bool empty();
 
 ### Remarks
 
-The member function returns true for an empty controlled sequence. It is equivalent to [hash_multimap::size (STL/CLR)](../dotnet/hash-multimap-size-stl-clr.md)`() == 0`. You use it to test whether the hash_multimap is empty.
+The member function returns true for an empty controlled sequence. It is equivalent to [hash_multimap::size (STL/CLR)](#size)`() == 0`. You use it to test whether the hash_multimap is empty.
 
 ### Example
 
@@ -695,7 +696,7 @@ Key value to search for.
 
 ### Remarks
 
-The member function returns a pair of iterators `cliext::pair<iterator, iterator>(` [hash_multimap::lower_bound (STL/CLR)](../dotnet/hash-multimap-lower-bound-stl-clr.md)`(key),` [hash_multimap::upper_bound (STL/CLR)](../dotnet/hash-multimap-upper-bound-stl-clr.md)`(key))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.
+The member function returns a pair of iterators `cliext::pair<iterator, iterator>(` [hash_multimap::lower_bound (STL/CLR)](#lower_bound)`(key),` [hash_multimap::upper_bound (STL/CLR)](#upper_bound)`(key))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.
 
 ### Example
 
@@ -767,7 +768,7 @@ Element to erase.
 
 ### Remarks
 
-The first member function removes the element of the controlled sequence pointed to by *where*, and returns an iterator that designates the first element remaining beyond the element removed, or [hash_multimap::end (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`()` if no such element exists. You use it to remove a single element.
+The first member function removes the element of the controlled sequence pointed to by *where*, and returns an iterator that designates the first element remaining beyond the element removed, or [hash_multimap::end (STL/CLR)](#end)`()` if no such element exists. You use it to remove a single element.
 
 The second member function removes the elements of the controlled sequence in the range [`first`, `last`), and returns an iterator that designates the first element remaining beyond any elements removed, or `end()` if no such element exists.. You use it to remove zero or more contiguous elements.
 
@@ -849,7 +850,7 @@ Key value to search for.
 
 ### Remarks
 
-If at least one element in the controlled sequence has equivalent ordering with *key*, the member function returns an iterator designating one of those elements; otherwise it returns [hash_multimap::end (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`()`. You use it to locate an element currently in the controlled sequence that matches a specified key.
+If at least one element in the controlled sequence has equivalent ordering with *key*, the member function returns an iterator designating one of those elements; otherwise it returns [hash_multimap::end (STL/CLR)](#end)`()`. You use it to locate an element currently in the controlled sequence that matches a specified key.
 
 ### Example
 
@@ -1778,7 +1779,7 @@ float load_factor();
 
 ### Remarks
 
-The member function returns `(float)`[hash_multimap::size (STL/CLR)](../dotnet/hash-multimap-size-stl-clr.md)`() /` [hash_multimap::bucket_count (STL/CLR)](../dotnet/hash-multimap-bucket-count-stl-clr.md)`()`. You use it to determine the average bucket size.
+The member function returns `(float)`[hash_multimap::size (STL/CLR)](#size)`() /` [hash_multimap::bucket_count (STL/CLR)](#bucket_count)`()`. You use it to determine the average bucket size.
 
 ### Example
 
@@ -1857,7 +1858,7 @@ Key value to search for.
 
 ### Remarks
 
-The member function determines the first element `X` in the controlled sequence that hashes to the same bucket as *key* and has equivalent ordering to *key*. If no such element exists, it returns [hash_multimap::end (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`()`; otherwise it returns an iterator that designates `X`. You use it to locate the beginning of a sequence of elements currently in the controlled sequence that match a specified key.
+The member function determines the first element `X` in the controlled sequence that hashes to the same bucket as *key* and has equivalent ordering to *key*. If no such element exists, it returns [hash_multimap::end (STL/CLR)](#end)`()`; otherwise it returns an iterator that designates `X`. You use it to locate the beginning of a sequence of elements currently in the controlled sequence that match a specified key.
 
 ### Example
 
@@ -2092,7 +2093,7 @@ Container to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
+The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
 
 ### Example
 
@@ -2238,7 +2239,7 @@ void rehash();
 
 ### Remarks
 
-The member function rebuilds the hash table, ensuring that [hash_multimap::load_factor (STL/CLR)](../dotnet/hash-multimap-load-factor-stl-clr.md)`() <=` [hash_multimap::max_load_factor (STL/CLR)](../dotnet/hash-multimap-max-load-factor-stl-clr.md). Otherwise, the hash table increases in size only as needed after an insertion. (It never automatically decreases in size.) You use it to adjust the size of the hash table.
+The member function rebuilds the hash table, ensuring that [hash_multimap::load_factor (STL/CLR)](#load_factor)`() <=` [hash_multimap::max_load_factor (STL/CLR)](#max_load_factor). Otherwise, the hash table increases in size only as needed after an insertion. (It never automatically decreases in size.) You use it to adjust the size of the hash table.
 
 ### Example
 
@@ -2407,7 +2408,7 @@ size_type size();
 
 ### Remarks
 
-The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [hash_multimap::empty (STL/CLR)](../dotnet/hash-multimap-empty-stl-clr.md)`()`.
+The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [hash_multimap::empty (STL/CLR)](#empty)`()`.
 
 ### Example
 
@@ -2512,7 +2513,7 @@ Container to swap contents with.
 
 ### Remarks
 
-The member function swaps the controlled sequences between `this` and *right*. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.
+The member function swaps the controlled sequences between **`this`** and *right*. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.
 
 ### Example
 
@@ -2630,7 +2631,7 @@ Key value to search for.
 
 ### Remarks
 
-The member function determines the last element `X` in the controlled sequence that hashes to the same bucket as *key* and has equivalent ordering to *key*. If no such element exists, or if `X` is the last element in the controlled sequence, it returns [hash_multimap::end (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)`()`; otherwise it returns an iterator that designates the first element beyond `X`. You use it to locate the end of a sequence of elements currently in the controlled sequence that match a specified key.
+The member function determines the last element `X` in the controlled sequence that hashes to the same bucket as *key* and has equivalent ordering to *key*. If no such element exists, or if `X` is the last element in the controlled sequence, it returns [hash_multimap::end (STL/CLR)](#end)`()`; otherwise it returns an iterator that designates the first element beyond `X`. You use it to locate the end of a sequence of elements currently in the controlled sequence that match a specified key.
 
 ### Example
 

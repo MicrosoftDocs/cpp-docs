@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C3300 Through C3399"
 title: "Compiler errors C3300 Through C3399"
 ms.date: "04/21/2019"
 f1_keywords: ["C3300", "C3301", "C3302", "C3304", "C3305", "C3306", "C3307", "C3308", "C3310", "C3311", "C3312", "C3313", "C3314", "C3315", "C3316", "C3317", "C3318", "C3319", "C3321", "C3323", "C3324", "C3325", "C3326", "C3327", "C3328", "C3329", "C3330", "C3331", "C3332", "C3335", "C3336", "C3337", "C3338", "C3339", "C3341", "C3343", "C3344", "C3346", "C3348", "C3349", "C3355", "C3357", "C3359", "C3361", "C3362", "C3376", "C3377", "C3378"]
@@ -62,7 +63,7 @@ The articles in this section of the documentation explain a subset of the error 
 |Compiler error C3344|you cannot define an explicit specialization nor a partial specialization of '*symbol*'|
 |[Compiler error C3345](compiler-error-c3345.md)|'*name*': invalid identifier for module name|
 |Compiler error C3346|exported declaration at non-namespace scope|
-|[Compiler error C3347](compiler-error-c3347.md)|'*argument*': required argument is not specified in attribute *asttribute*|
+|[Compiler error C3347](compiler-error-c3347.md)|'*argument*': required argument is not specified in attribute *attribute-name*|
 |Compiler error C3348|exported templates are not part of the current C++ standards|
 |Compiler error C3349|'*class*::*member*': multicast attribute has already been implemented by provider *provider*|
 |[Compiler error C3350](compiler-error-c3350.md)|' *function*': a delegate constructor expects *number* argument(s)|
@@ -119,4 +120,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: strtoul, _strtoul_l, wcstoul, _wcstoul_l"
 title: "strtoul, _strtoul_l, wcstoul, _wcstoul_l"
 ms.date: "4/2/2020"
 api_name: ["_wcstoul_l", "_strtoul_l", "strtoul", "wcstoul", "_o__strtoul_l", "_o__wcstoul_l", "_o_strtoul", "_o_wcstoul"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["strtoul", "_tcstoul", "wcstoul"]
@@ -62,7 +63,7 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-Each of these functions converts the input string *strSource* to an **unsigned** **long**.
+Each of these functions converts the input string *strSource* to an **`unsigned long`**.
 
 **strtoul** stops reading the string *strSource* at the first character it cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*. The **LC_NUMERIC** category setting of the locale determines recognition of the radix character in *strSource*; for more information, see [setlocale](setlocale-wsetlocale.md). **strtoul** and **wcstoul** use the current locale; **_strtoul_l** and **_wcstoul_l** are identical except that they use the locale passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 

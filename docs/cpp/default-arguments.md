@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Default Arguments"
 title: "Default Arguments"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["arguments [C++], function", "function declarators", "functions [C++], default arguments", "declaring functions [C++], declarators", "default arguments", "arguments [C++], default", "defaults [C++], arguments"]
@@ -25,7 +26,7 @@ int print( double dvalue, int prec=2 );  // Print a double with a
 //  given precision.
 ```
 
-The implementation of the `print` function is changed slightly to reflect the fact that only one such function exists for type **double**:
+The implementation of the `print` function is changed slightly to reflect the fact that only one such function exists for type **`double`**:
 
 ```cpp
 // default_arguments.cpp

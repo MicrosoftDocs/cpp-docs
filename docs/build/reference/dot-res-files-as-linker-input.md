@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .Res Files as Linker Input"
 title: ".Res Files as Linker Input"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["RES files as linker input", ".res files as linker input", "linking [C++], resource files", "resource files, linking"]

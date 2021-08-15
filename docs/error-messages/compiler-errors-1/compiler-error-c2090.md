@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2090"
 title: "Compiler Error C2090"
 ms.date: "11/04/2016"
 f1_keywords: ["C2090"]

@@ -1,7 +1,8 @@
 ---
+description: "Learn more about: &lt;summary&gt;"
 title: "&lt;summary> (C++ Documentation Comments)"
 ms.date: "11/04/2016"
-f1_keywords: ["<summary>", "summary"]
+f1_keywords: ["<summary>"]
 helpviewer_keywords: ["<summary> C++ XML tag", "summary C++ XML tag"]
 ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726
 ---

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Macros for OLE DB Provider Templates"
 title: "Macros for OLE DB Provider Templates"
 ms.date: "02/11/2019"
 f1_keywords: ["BEGIN_PROPERTY_SET", "BEGIN_PROPERTY_SET_EX", "BEGIN_PROPSET_MAP", "CHAIN_PROPERTY_SET", "END_PROPERTY_SET", "END_PROPSET_MAP", "PROPERTY_INFO_ENTRY", "PROPERTY_INFO_ENTRY_EX", "PROPERTY_INFO_ENTRY_VALUE", "BEGIN_PROVIDER_COLUMN_MAP", "END_PROVIDER_COLUMN_MAP", "PROVIDER_COLUMN_ENTRY", "PROVIDER_COLUMN_ENTRY_FIXED", "PROVIDER_COLUMN_ENTRY_GN", "PROVIDER_COLUMN_ENTRY_LENGTH", "PROVIDER_COLUMN_ENTRY_STR", "PROVIDER_COLUMN_ENTRY_TYPE_LENGTH", "PROVIDER_COLUMN_ENTRY_WSTR", "BEGIN_SCHEMA_MAP", "END_SCHEMA_MAP", "SCHEMA_ENTRY"]
@@ -11,7 +12,7 @@ The OLE DB Templates Provider macros offer functionality in the following catego
 
 ## Property Set Map Macros
 
-|||
+| Name | Description |
 |-|-|
 |[BEGIN_PROPERTY_SET](#begin_property_set)|Marks the beginning of a property set.|
 |[BEGIN_PROPERTY_SET_EX](#begin_property_set_ex)|Marks the beginning of a property set.|
@@ -25,7 +26,7 @@ The OLE DB Templates Provider macros offer functionality in the following catego
 
 ## Column Map Macros
 
-|||
+| Name | Description |
 |-|-|
 |[BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map)|Marks the beginning of the provider column map entries.|
 |[END_PROVIDER_COLUMN_MAP](#end_provider_column_map)|Marks the end of the provider column map entries.|
@@ -39,7 +40,7 @@ The OLE DB Templates Provider macros offer functionality in the following catego
 
 ## Schema Rowset Macros
 
-|||
+| Name | Description |
 |-|-|
 |[BEGIN_SCHEMA_MAP](#begin_schema_map)|Marks the beginning of a schema map.|
 |[END_SCHEMA_MAP](#end_schema_map)|Marks the end of a schema map.|
@@ -66,7 +67,7 @@ BEGIN_PROPERTY_SET(guid)
 
 #### Example
 
-See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+See [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="begin_property_set_ex"></a> BEGIN_PROPERTY_SET_EX
 
@@ -88,7 +89,7 @@ BEGIN_PROPERTY_SET_EX(guid, flags)
 
 #### Example
 
-See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+See [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="begin_propset_map"></a> BEGIN_PROPSET_MAP
 
@@ -156,7 +157,7 @@ END_PROPERTY_SET(guid)
 
 #### Example
 
-See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+See [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="end_propset_map"></a> END_PROPSET_MAP
 
@@ -170,7 +171,7 @@ END_PROPSET_MAP()
 
 #### Example
 
-See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+See [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="property_info_entry"></a> PROPERTY_INFO_ENTRY
 
@@ -189,11 +190,11 @@ PROPERTY_INFO_ENTRY(dwPropID)
 
 #### Remarks
 
-This macro sets the property value of type `DWORD` to a default value defined in ATLDB.H. To set the property to a value of your choosing, use [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md). To set the `VARTYPE` and [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342(v=vs.85)) for the property at the same time, use [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).
+This macro sets the property value of type `DWORD` to a default value defined in ATLDB.H. To set the property to a value of your choosing, use [PROPERTY_INFO_ENTRY_VALUE](#property_info_entry_value). To set the `VARTYPE` and [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342(v=vs.85)) for the property at the same time, use [PROPERTY_INFO_ENTRY_EX](#property_info_entry_ex).
 
 #### Example
 
-See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+See [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="property_info_entry_ex"></a> PROPERTY_INFO_ENTRY_EX
 
@@ -224,11 +225,11 @@ Either DBPROPOPTIONS_REQUIRED or DBPROPOPTIONS_SETIFCHEAP. Normally, a provider 
 
 #### Remarks
 
-With this macro, you can directly specify the property value of type `DWORD` as well as options and flags. To merely set a property to a default value defined in ATLDB.H, use [PROPERTY_INFO_ENTRY](../../data/oledb/property-info-entry.md). To set a property to a value of your choice, without setting options or flags on it, use [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md).
+With this macro, you can directly specify the property value of type `DWORD` as well as options and flags. To merely set a property to a default value defined in ATLDB.H, use [PROPERTY_INFO_ENTRY](#property_info_entry). To set a property to a value of your choice, without setting options or flags on it, use [PROPERTY_INFO_ENTRY_VALUE](#property_info_entry_value).
 
 #### Example
 
-See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+See [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="property_info_entry_value"></a> PROPERTY_INFO_ENTRY_VALUE
 
@@ -250,11 +251,11 @@ PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)
 
 #### Remarks
 
-With this macro, you can directly specify the property value of type `DWORD`. To set the property to default value defined in ATLDB.H, use [PROPERTY_INFO_ENTRY](../../data/oledb/property-info-entry.md). To set the value, flags, and options for the property, use [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).
+With this macro, you can directly specify the property value of type `DWORD`. To set the property to default value defined in ATLDB.H, use [PROPERTY_INFO_ENTRY](#property_info_entry). To set the value, flags, and options for the property, use [PROPERTY_INFO_ENTRY_EX](#property_info_entry_ex).
 
 #### Example
 
-See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+See [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="begin_provider_column_map"></a> BEGIN_PROVIDER_COLUMN_MAP
 
@@ -289,7 +290,7 @@ END_PROVIDER_COLUMN_MAP()
 
 #### Example
 
-See [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
+See [BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map).
 
 ### <a name="provider_column_entry"></a> PROVIDER_COLUMN_ENTRY
 
@@ -342,7 +343,7 @@ Allows you to specify the column data type.
 
 #### Example
 
-See [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
+See [BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map).
 
 ### <a name="provider_column_entry_gn"></a> PROVIDER_COLUMN_ENTRY_GN
 
@@ -414,7 +415,7 @@ Allows you to specify the column size.
 
 #### Example
 
-See [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
+See [BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map).
 
 ### <a name="provider_column_entry_str"></a> PROVIDER_COLUMN_ENTRY_STR
 
@@ -443,7 +444,7 @@ Use this macro when the column data is assumed to be [DBTYPE_STR](/previous-vers
 
 #### Example
 
-See [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
+See [BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map).
 
 ### <a name="provider_column_entry_type_length"></a> PROVIDER_COLUMN_ENTRY_TYPE_LENGTH
 
@@ -474,7 +475,7 @@ PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name, ordinal, dbtype, size, member)
 
 #### Remarks
 
-Similar to [PROVIDER_COLUMN_ENTRY_LENGTH](../../data/oledb/provider-column-entry-length.md) but also allows you to specify the column's data type as well as size.
+Similar to [PROVIDER_COLUMN_ENTRY_LENGTH](#provider_column_entry_length) but also allows you to specify the column's data type as well as size.
 
 ### <a name="provider_column_entry_wstr"></a> PROVIDER_COLUMN_ENTRY_WSTR
 

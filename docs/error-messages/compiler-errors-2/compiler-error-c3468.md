@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3468"
 title: "Compiler Error C3468"
 ms.date: "11/04/2016"
 f1_keywords: ["C3468"]
@@ -15,7 +16,7 @@ Only types in an assembly can be forwarded.
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Example
+## Examples
 
 The following sample creates a module.
 
@@ -24,8 +25,6 @@ The following sample creates a module.
 // compile with: /LN /clr
 public ref class R {};
 ```
-
-## Example
 
 The following sample generates C3468.
 

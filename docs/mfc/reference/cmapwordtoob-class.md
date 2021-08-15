@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMapWordToOb Class"
 title: "CMapWordToOb Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMapWordToOb", "AFXCOLL/CMapWordToOb", "AFXCOLL/CMapWordToOb::CMapWordToOb", "AFXCOLL/CMapWordToOb::GetCount", "AFXCOLL/CMapWordToOb::GetHashTableSize", "AFXCOLL/CMapWordToOb::GetNextAssoc", "AFXCOLL/CMapWordToOb::GetSize", "AFXCOLL/CMapWordToOb::GetStartPosition", "AFXCOLL/CMapWordToOb::HashKey", "AFXCOLL/CMapWordToOb::InitHashTable", "AFXCOLL/CMapWordToOb::IsEmpty", "AFXCOLL/CMapWordToOb::Lookup", "AFXCOLL/CMapWordToOb::LookupKey", "AFXCOLL/CMapWordToOb::RemoveAll", "AFXCOLL/CMapWordToOb::RemoveKey", "AFXCOLL/CMapWordToOb::SetAt"]
@@ -17,7 +18,7 @@ class CMapWordToOb : public CObject
 
 ## Members
 
-The member functions of `CMapWordToOb` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CString` or a **const** pointer to **char** as a function parameter or return value, substitute WORD.
+The member functions of `CMapWordToOb` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CString` or a **`const`** pointer to **`char`** as a function parameter or return value, substitute WORD.
 
 `BOOL CMapWordToOb::Lookup( WORD <key>, CObject*& <rValue> ) const;`
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: range (C++)"
 title: "range  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.range"]
@@ -45,9 +46,7 @@ __interface ICustom {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface method, interface parameter|
 |**Repeatable**|No|

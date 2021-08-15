@@ -1,7 +1,8 @@
 ---
+description: "Learn more about: &lt;ios&gt;"
 title: "&lt;ios&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["<ios>", "ios/std::<ios>"]
+f1_keywords: ["<ios>"]
 helpviewer_keywords: ["ios header"]
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
 ---
@@ -34,7 +35,7 @@ calls [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**).
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[ios](../standard-library/ios-typedefs.md#ios)|Supports the ios class from the old iostream library.|
 |[streamoff](../standard-library/ios-typedefs.md#streamoff)|Supports internal operations.|
@@ -45,9 +46,9 @@ calls [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**).
 
 ### Manipulators
 
-|||
+|Name|Description|
 |-|-|
-|[boolalpha](../standard-library/ios-functions.md#boolalpha)|Specifies that variables of type [bool](../cpp/bool-cpp.md) appear as **true** or **false** in the stream.|
+|[boolalpha](../standard-library/ios-functions.md#boolalpha)|Specifies that variables of type [bool](../cpp/bool-cpp.md) appear as **`true`** or **`false`** in the stream.|
 |[dec](../standard-library/ios-functions.md#dec)|Specifies that integer variables appear in base 10 notation.|
 |[defaultfloat](../standard-library/ios-functions.md#ios_defaultfloat)|Configures the flags of an `ios_base` object to use a default display format for float values.|
 |[fixed](../standard-library/ios-functions.md#fixed)|Specifies that a floating-point number is displayed in fixed-decimal notation.|
@@ -74,7 +75,7 @@ calls [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**).
 
 ### Error Reporting
 
-|||
+|Name|Description|
 |-|-|
 |[io_errc](../standard-library/ios-functions.md#io_errc)||
 |[is_error_code_enum](../standard-library/ios-functions.md#is_error_code_enum)||
@@ -84,7 +85,7 @@ calls [noskipws](../standard-library/ios-functions.md#noskipws)(**istr**).
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[basic_ios](../standard-library/basic-ios-class.md)|The class template describes the storage and member functions common to both input streams (of class template [basic_istream](../standard-library/basic-istream-class.md)) and output streams (of class template [basic_ostream](../standard-library/basic-ostream-class.md)) that depend on the template parameters.|
 |[fpos](../standard-library/fpos-class.md)|The class template describes an object that can store all the information needed to restore an arbitrary file-position indicator within any stream.|

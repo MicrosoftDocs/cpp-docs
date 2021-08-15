@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DontUseNewUseMake Class"
 title: "DontUseNewUseMake Class"
 ms.date: "09/21/2018"
 ms.topic: "reference"

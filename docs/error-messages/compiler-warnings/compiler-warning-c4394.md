@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning C4394"
 title: "Compiler Warning C4394"
 ms.date: "11/04/2016"
 f1_keywords: ["C4394"]
@@ -9,7 +10,7 @@ ms.assetid: 5de94de0-17e3-4e7c-92f4-5c3c1b825120
 
 'function' : per-appdomain symbol should not be marked with __declspec(dllexport)
 
-A function marked with the [appdomain](../../cpp/appdomain.md)`__declspec` modifier is compiled to MSIL (not to native), and export tables ([export](../../windows/export.md)`__declspec` modifier) are not supported for managed functions.
+A function marked with the [appdomain](../../cpp/appdomain.md) **`__declspec`** modifier is compiled to MSIL (not to native), and export tables ([export](../../windows/attributes/export.md) **`__declspec`** modifier) are not supported for managed functions.
 
 You can declare a managed function to have public accessibility. For more information, see [Type visibility](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) and [Member visibility](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Member_visibility).
 

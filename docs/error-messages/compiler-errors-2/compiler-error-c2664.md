@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2664"
 title: "Compiler Error C2664"
 ms.date: "11/04/2016"
 f1_keywords: ["C2664"]
@@ -9,9 +10,9 @@ ms.assetid: 3595d66e-cf87-4fda-a896-c0cd81f95db4
 
 'function' : cannot convert argument n from 'type1' to 'type2'
 
-This parameter conversion problem might happen if an instance of a class is created and an implicit conversion is attempted on a constructor marked with the `explicit` keyword. For more information about explicit conversions, see [User-Defined Type Conversions](../../cpp/user-defined-type-conversions-cpp.md).
+This parameter conversion problem might happen if an instance of a class is created and an implicit conversion is attempted on a constructor marked with the **`explicit`** keyword. For more information about explicit conversions, see [User-Defined Type Conversions](../../cpp/user-defined-type-conversions-cpp.md).
 
-If a temporary object is passed to a function that takes a reference to an object as a parameter, that reference must be a `const` reference.
+If a temporary object is passed to a function that takes a reference to an object as a parameter, that reference must be a **`const`** reference.
 
 If the function is passed a parameter that is not of the type that the function expects, a temporary object is created by using the appropriate constructor. This temporary object is then passed to the function. In this case, the temporary object is used to initialize the reference. In earlier versions of the language, all references could be initialized by temporary objects.
 
@@ -25,7 +26,7 @@ C2664 can also be generated if a class hides a member in one of its base classes
 
 For more information, see [How to: Convert System::String to wchar_t* or char\*](../../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md).
 
-## Example
+## Examples
 
 The following sample generates C2664 and shows how to fix it.
 
@@ -49,8 +50,6 @@ int main() {
 }
 ```
 
-## Example
-
 This sample also generates C2664 and shows how to fix it.
 
 ```cpp
@@ -67,8 +66,6 @@ int main() {
    func( 1, 1 );   // No conversion from int to A.
 }
 ```
-
-## Example
 
 The next sample demonstrates C2664 by using a string literal to call `Test`, and shows how to fix it. Because the parameter is an `szString` reference, an object must be created by the appropriate constructor. The result is a temporary object that cannot be used to initialize the reference.
 
@@ -109,9 +106,7 @@ int main() {
 }
 ```
 
-## Example
-
-The compiler enforces the C++ standard requirements for applying `const`. This sample generates C2664:
+The compiler enforces the C++ standard requirements for applying **`const`**. This sample generates C2664:
 
 ```cpp
 // C2664d.cpp
@@ -133,8 +128,6 @@ int main()
    return 0;
 }
 ```
-
-## Example
 
 Here's a more complex situation where C2664 is generated, including directions on how to fix it:
 
@@ -179,8 +172,6 @@ int main( ) {
 }
 ```
 
-## Example
-
 An enum variable is not converted to its underlying type such that a function call will be satisfied. For more information, see [enum class](../../extensions/enum-class-cpp-component-extensions.md). The following sample generates C2664 and shows how to fix it.
 
 ```cpp
@@ -200,8 +191,6 @@ int main() {
    Test(Char(aa));   // OK - fix by using a conversion cast
 }
 ```
-
-## Example
 
 A bug in the midl compiler causes a wchar_t type to be emitted as an unsigned short in the type library. To resolve this error, either cast the type in your C++ source code or define the type as a string in the idl file.
 
@@ -224,9 +213,7 @@ library myproj1 {
 }
 ```
 
-C2664 is also raised by using `wchar_t` when porting code from Visual C++ 6.0 to later versions. In Visual C++ 6.0 and earlier, `wchar_t` was a `typedef` for `unsigned short` and was therefore implicitly convertible to that type. After Visual C++ 6.0, `wchar_t` is its own built-in type, as specified in the C++ standard, and is no longer implicitly convertible to `unsigned short`. See [/Zc:wchar_t (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
-
-## Example
+C2664 is also raised by using **`wchar_t`** when porting code from Visual C++ 6.0 to later versions. In Visual C++ 6.0 and earlier, **`wchar_t`** was a **`typedef`** for **`unsigned short`** and was therefore implicitly convertible to that type. After Visual C++ 6.0, **`wchar_t`** is its own built-in type, as specified in the C++ standard, and is no longer implicitly convertible to **`unsigned short`**. See [/Zc:wchar_t (wchar_t Is Native Type)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
 The following sample generates C2664 and shows how to fix it.
 
@@ -247,8 +234,6 @@ int main() {
    ptr->testarr((unsigned short *)mybuff, len);   // OK - Fix by using a cast
 }
 ```
-
-## Example
 
 C2664 is also caused if the compiler cannot deduce template arguments.
 

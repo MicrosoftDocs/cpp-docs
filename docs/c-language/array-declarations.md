@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Array Declarations"
 title: "Array Declarations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["multidimensional arrays", "declaring arrays", "arrays [C++], declaring"]
@@ -29,7 +30,7 @@ An "array declaration" names the array and specifies the type of its elements. I
 
 Because *constant-expression* is optional, the syntax has two forms:
 
-- The first form defines an array variable. The *constant-expression* argument within the brackets specifies the number of elements in the array. The *constant-expression*, if present, must have integral type, and a value larger than zero. Each element has the type given by *type-specifier*, which can be any type except `void`. An array element cannot be a function type.
+- The first form defines an array variable. The *constant-expression* argument within the brackets specifies the number of elements in the array. The *constant-expression*, if present, must have integral type, and a value larger than zero. Each element has the type given by *type-specifier*, which can be any type except **`void`**. An array element cannot be a function type.
 
 - The second form declares a variable that has been defined elsewhere. It omits the *constant-expression* argument in brackets, but not the brackets. You can use this form only if you previously have initialized the array, declared it as a parameter, or declared it as a reference to an array explicitly defined elsewhere in the program.
 
@@ -63,7 +64,7 @@ These examples illustrate array declarations:
 float matrix[10][15];
 ```
 
-The two-dimensional array named `matrix` has 150 elements, each having **float** type.
+The two-dimensional array named `matrix` has 150 elements, each having **`float`** type.
 
 ```C
 struct {
@@ -77,11 +78,11 @@ This is a declaration of an array of structures. This array has 100 elements; ea
 extern char *name[];
 ```
 
-This statement declares the type and name of an array of pointers to `char`. The actual definition of `name` occurs elsewhere.
+This statement declares the type and name of an array of pointers to **`char`**. The actual definition of `name` occurs elsewhere.
 
 **Microsoft Specific**
 
-The type of integer required to hold the maximum size of an array is the size of **size_t**. Defined in the header file STDDEF.H, **size_t** is an `unsigned int` with the range 0x00000000 to 0x7CFFFFFF.
+The type of integer required to hold the maximum size of an array is the size of **size_t**. Defined in the header file STDDEF.H, **size_t** is an **`unsigned int`** with the range 0x00000000 to 0x7CFFFFFF.
 
 **END Microsoft Specific**
 

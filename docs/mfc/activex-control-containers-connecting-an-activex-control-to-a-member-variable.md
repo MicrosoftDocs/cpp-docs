@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActiveX Control Containers: Connecting an ActiveX Control to a Member Variable"
 title: "ActiveX Control Containers: Connecting an ActiveX Control to a Member Variable"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ActiveX control containers [MFC], accessing ActiveX controls", "ActiveX controls [MFC], member variables of project", "connecting ActiveX controls to container member variables", "ActiveX controls [MFC], accessing", "member variables [MFC], ActiveX controls in project", "ActiveX control containers [MFC], ActiveX controls as member variables"]
@@ -29,4 +30,4 @@ The easiest way to access an ActiveX control from within its control container a
 
 ## See also
 
-[ActiveX Control Containers](../mfc/activex-control-containers.md)
+[ActiveX Control Containers](activex-control-containers.md)

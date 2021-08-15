@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Declare Interior Pointers with the const Keyword (C++/CLI)"
 title: "How to: Declare Interior Pointers with the const Keyword (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
@@ -7,7 +8,7 @@ ms.assetid: 64e08b0e-9396-4046-ab51-8f6588f32330
 ---
 # How to: Declare Interior Pointers with the const Keyword (C++/CLI)
 
-The following sample shows how to use **const** in the declaration of an interior pointer.
+The following sample shows how to use **`const`** in the declaration of an interior pointer.
 
 > [!IMPORTANT]
 > This language feature is supported by the `/clr` compiler option, but not by the `/ZW` compiler option.

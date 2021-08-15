@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Install cross-platform mobile development with C++"
 title: "Install cross-platform mobile development with C++"
 ms.date: "10/17/2019"
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
@@ -11,7 +12,7 @@ This article describes how to install the tools and third-party software require
 
 ## Requirements
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 - For installation requirements, see [Visual Studio product family system requirements](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
@@ -19,7 +20,7 @@ This article describes how to install the tools and third-party software require
    > If you are using Windows 7 or Windows Server 2008 R2, you can develop code for Windows Desktop applications, Android Native Activity apps and libraries, and apps and code libraries for iOS, but not Windows Store or UWP apps.
 
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 - For installation requirements, see [Visual Studio product family system requirements](/visualstudio/releases/2019/system-requirements).
 
@@ -46,12 +47,15 @@ The Visual Studio Installer includes a **Mobile development with C++** workload.
 
 - Android Native Development Kit (NDK), Apache Ant, and the C++ Android development tools are required to build C++ code that targets the Android platform.
 
+  > [!NOTE]
+  > Some tools in the Android NDK don't support Unicode characters in file paths and file names. If a project or source file has Unicode characters in its path or file name, the project will fail to build.
+
 - The Google Android Emulator and Intel Hardware Accelerated Execution Manager (HAXM) are optional, but recommended, components. (The Intel HAXM drivers only work on Intel processors, and are incompatible with some VMs, including Hyper-V.) You can develop and debug directly on an Android device, but it's often easier to use an emulator on your desktop for debugging.
 
 - C++ iOS development tools are required to build C++ code that targets the iOS platform.
 
 > [!NOTE]
-> If you're using Visual Studio 2015, see [Install Visual C++ for Cross-Platform Mobile Development (Visual Studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=vs-2015)
+> If you're using Visual Studio 2015, see [Install Visual C++ for Cross-Platform Mobile Development (Visual Studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=msvc-140&preserve-view=true)
 
 ### Install the Mobile development with C++ workload
 
@@ -94,7 +98,7 @@ In most cases, Visual Studio can detect the configurations for the third-party s
 
 1. In the **Options** dialog box, select **Cross Platform** > **C++** > **Android**.
 
-   ![Android tool path options](../cross-platform/media/cppmdd-options-android.png "Android tool path options")
+   ![Screenshot of the Android tool path options in the Options dialog.](../cross-platform/media/cppmdd-options-android.png "Android tool path options")
 
 1. To change the path used by a tool, check the checkbox next to the path, and edit the folder path in the textbox. You can also use the browse button (**...**) to open a **Select location** dialog to choose the folder.
 

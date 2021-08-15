@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Introduction to ATL Window Classes"
 title: "Introduction to ATL Window Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["window classes"]

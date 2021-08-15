@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: restricted"
 title: "restricted (C++ COM Attribute)"
 ms.date: "10/03/2018"
 f1_keywords: ["vc-attr.restricted"]
@@ -55,13 +56,11 @@ class c : public a, public b
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|Interface method, **interface**, **class**, **struct**|
+|**Applies to**|Interface method, **interface**, **`class`**, **`struct`**|
 |**Repeatable**|No|
-|**Required attributes**|**coclass** (when applied to **class** or **struct**)|
+|**Required attributes**|**coclass** (when applied to **`class`** or **`struct`**)|
 |**Invalid attributes**|None|
 
 For more information about the attribute contexts, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).

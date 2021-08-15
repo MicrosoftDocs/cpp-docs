@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: memchr, wmemchr"
 title: "memchr, wmemchr"
-ms.date: "03/31/2019"
+ms.date: "1/14/2021"
 api_name: ["wmemchr", "memchr"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["memchr", "wmemchr"]
@@ -67,7 +68,7 @@ If successful, returns a pointer to the first location of *c* in *buffer*. Other
 
 `memchr` and `wmemchr` look for the first occurrence of *c* in the first *count* characters of *buffer*. It stops when it finds *c* or when it has checked the first *count* characters.
 
-In C, these functions take a **const** pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to **const** returns a pointer to **const**; the version that takes a pointer to non-**const** returns a pointer to non-**const**. The macro \_CRT\_CONST\_CORRECT\_OVERLOADS is defined if both the **const** and non-**const** versions of these functions are available. If you require the non-**const** behavior for both C++ overloads in C++, define the symbol \_CONST\_RETURN.
+In C, these functions take a **`const`** pointer for the first argument. In C++, two overloads are available. The overload taking a pointer to **`const`** returns a pointer to **`const`**; the version that takes a pointer to non-**`const`** returns a pointer to non-**`const`**. The macro \_CRT\_CONST\_CORRECT\_OVERLOADS is defined if both the **`const`** and non-**`const`** versions of these functions are available. If you require the non-**`const`** behavior for both C++ overloads in C++, define the symbol \_CONST\_RETURN.
 
 ## Requirements
 

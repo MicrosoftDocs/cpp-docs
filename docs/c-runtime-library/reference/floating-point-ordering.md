@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered"
 title: "isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered"
 ms.date: "01/31/2019"
 f1_keywords: ["isgreater", "math/isgreater", "isgreaterequal", "math/isgreaterequal", "isless", "math/isless", "islessequal", "math/islessequal", "islessgreater", "math/islessgreater", "isunordered", "math/isunordered"]
@@ -89,11 +90,11 @@ The floating-point values to compare.
 
 In all comparisons, infinities of the same sign compare as equal. Negative infinity is less than any finite value or positive infinity. Positive infinity is greater than any finite value or negative infinity. Zeroes are equal regardless of sign. NaNs are not less than, equal to, or greater than any value, including another NaN.
 
-When neither argument is a NaN, the ordering macros **isgreater**, **isgreaterequal**, **isless**, and **islessequal** return a non-zero value if the specified ordering relation between *x* and *y* holds true. These macros return 0 if either or both arguments are NaNs or if the ordering relationship is false. The function forms behave the same way, but return **true** or **false**.
+When neither argument is a NaN, the ordering macros **isgreater**, **isgreaterequal**, **isless**, and **islessequal** return a non-zero value if the specified ordering relation between *x* and *y* holds true. These macros return 0 if either or both arguments are NaNs or if the ordering relationship is false. The function forms behave the same way, but return **`true`** or **`false`**.
 
-The **islessgreater** macro returns a non-zero value if both *x* and *y* are not NaNs, and *x* is either less than or greater than *y*. It returns 0 if either or both arguments are NaNs, or if the values are equal. The function form behaves the same way, but returns **true** or **false**.
+The **islessgreater** macro returns a non-zero value if both *x* and *y* are not NaNs, and *x* is either less than or greater than *y*. It returns 0 if either or both arguments are NaNs, or if the values are equal. The function form behaves the same way, but returns **`true`** or **`false`**.
 
-The **isunordered** macro returns a non-zero value if either *x*, *y*, or both are NaNs. Otherwise, it returns 0. The function form behaves the same way, but returns **true** or **false**.
+The **isunordered** macro returns a non-zero value if either *x*, *y*, or both are NaNs. Otherwise, it returns 0. The function form behaves the same way, but returns **`true`** or **`false`**.
 
 ## Remarks
 

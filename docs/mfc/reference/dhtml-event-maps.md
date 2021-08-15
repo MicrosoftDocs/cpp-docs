@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DHTML Event Maps"
 title: "DHTML Event Maps"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.macros.shared"]
@@ -13,7 +14,7 @@ The following macros can be used to handle DHTML events.
 
 The following macros can be used to handle DHTML events in [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md)-derived classes.
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_DHTML_EVENT_MAP](#begin_dhtml_event_map)|Marks the start of the DHTML event map.|
 |[BEGIN_DHTML_EVENT_MAP_INLINE](#begin_dhtml_event_map_inline)|Marks the start of the DHTML event map.|
@@ -56,7 +57,7 @@ The following macros can be used to handle DHTML events in [CDHtmlDialog](../../
 
 The following macros can be used to handle DHTML events in [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)-derived classes.
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_DHTML_URL_EVENT_MAP](#begin_dhtml_url_event_map)|Marks the start of the multipage DHTML and URL event map.|
 |[BEGIN_EMBED_DHTML_EVENT_MAP](#begin_embed_dhtml_event_map)|Marks the start of an embedded DHTML event map.|

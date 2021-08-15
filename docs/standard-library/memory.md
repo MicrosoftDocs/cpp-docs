@@ -1,7 +1,8 @@
 ---
+description: "Learn more about: &lt;memory&gt;"
 title: "&lt;memory&gt;"
 ms.date: "08/04/2019"
-f1_keywords: ["memory/std::<memory>", "<memory>", "std::<memory>"]
+f1_keywords: ["<memory>"]
 helpviewer_keywords: ["memory header"]
 ---
 # &lt;memory&gt;
@@ -18,7 +19,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[addressof](../standard-library/memory-functions.md#addressof)|Gets the true address of an object.|
 |[align](../standard-library/memory-functions.md#align)|Returns a pointer to a range of a given size, based on the provided alignment and starting address.|
@@ -67,7 +68,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator!=](../standard-library/memory-operators.md#op_neq)|Tests for inequality between allocator objects of a specified class.|
 |[operator==](../standard-library/memory-operators.md#op_eq_eq)|Tests for equality between allocator objects of a specified class.|
@@ -79,7 +80,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[allocator](../standard-library/allocator-class.md)|The class template describes an object that manages storage allocation and freeing for arrays of objects of type **Type**.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|Describes an object that determines all the information that is needed by an allocator-enabled container.|
@@ -94,7 +95,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 ### Structures
 
-|||
+|Name|Description|
 |-|-|
 |[allocator_arg_t](../standard-library/allocator-class.md#allocator_arg_t)||
 |[default_delete](../standard-library/default-delete-struct.md)||
@@ -104,9 +105,9 @@ Defines a class, an operator, and several templates that help allocate and free 
 
 ### Specializations
 
-|||
+|Name|Description|
 |-|-|
-|[allocator\<void>](../standard-library/allocator-void-class.md)|A specialization of the class template allocator to type **void**, defining only the member types that make sense in this specialized context.|
+|[allocator\<void>](../standard-library/allocator-void-class.md)|A specialization of the class template allocator to type **`void`**, defining only the member types that make sense in this specialized context.|
 
 ## See also
 

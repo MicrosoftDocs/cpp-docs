@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4512"
 title: "Compiler Warning (level 4) C4512"
 ms.date: "11/04/2016"
 f1_keywords: ["C4512"]
@@ -15,13 +16,13 @@ An assignment operator for the base class that is not accessible by the derived 
 
 To avoid this warning, specify a user-defined assignment operator for the class.
 
-The compiler will also generate an assignment operator function for a class that does not define one. This assignment operator is a memberwise copy of the data members of an object. Because `const` data items cannot be modified after initialization, if the class contains a `const` item, the default assignment operator would not work. Another cause of the C4512 warning is a declaration of a nonstatic data member of reference type. If the intent is to create a non-copyable type, you must also prevent the creation of a default copy constructor.
+The compiler will also generate an assignment operator function for a class that does not define one. This assignment operator is a memberwise copy of the data members of an object. Because **`const`** data items cannot be modified after initialization, if the class contains a **`const`** item, the default assignment operator would not work. Another cause of the C4512 warning is a declaration of a nonstatic data member of reference type. If the intent is to create a non-copyable type, you must also prevent the creation of a default copy constructor.
 
 You can resolve the C4512 warning for your code in one of three ways:
 
 - Explicitly define an assignment operator for the class.
 
-- Remove **const** or the reference operator from the data item in the class.
+- Remove **`const`** or the reference operator from the data item in the class.
 
 - Use the #pragma [warning](../../preprocessor/warning.md) statement to suppress the warning.
 

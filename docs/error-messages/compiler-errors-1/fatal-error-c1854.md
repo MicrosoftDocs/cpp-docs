@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fatal Error C1854"
 title: "Fatal Error C1854"
 ms.date: "11/04/2016"
 f1_keywords: ["C1854"]

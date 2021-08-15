@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2131"
 title: "Compiler Error C2131"
 ms.date: "02/28/2019"
 f1_keywords: ["C2131"]
@@ -8,7 +9,7 @@ helpviewer_keywords: ["C2131"]
 
 > expression did not evaluate to a constant
 
-An expression declared as **const** or **constexpr** didn't evaluate to a constant at compile time. The compiler must be able to determine the value of the expression at the point it's used.
+An expression declared as **`const`** or **`constexpr`** didn't evaluate to a constant at compile time. The compiler must be able to determine the value of the expression at the point it's used.
 
 ## Example
 

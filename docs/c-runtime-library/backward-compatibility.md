@@ -1,6 +1,8 @@
 ---
 title: "Backward Compatibility"
+description: "How to use the Microsoft OLDNAMES.LIB library to map function names for backwards compatibility."
 ms.date: "11/04/2016"
+ms.topic: "conceptual"
 helpviewer_keywords: ["CRT, compatibility", "backward compatibility, C run-time libraries", "compatibility, C run-time libraries", "backward compatibility"]
 ms.assetid: cc3175cf-97fd-492f-b329-5791aea63090
 ---

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reserved words"
 title: "Reserved words"
 ms.date: "11/04/2016"
 f1_keywords: ["code", "CONFORMING", "DISCARDABLE", "Description", "base", "APPLOADER", "Data", "DYNAMIC", "DEV386"]
@@ -9,28 +10,75 @@ ms.assetid: 9b9f49e5-0739-45ab-a37e-81e3915ceb25
 
 The following words are reserved by the linker. These names can be used as arguments in [module-definition statements](module-definition-dot-def-files.md) only if the name is enclosed in double quotation marks ("").
 
-||||
-|-|-|-|
-|**APPLOADER**<sup>1</sup>|**INITINSTANCE**<sup>2</sup>|**PRELOAD**|
-|**BASE**|**IOPL**|**PRIVATE**|
-|**CODE**|**LIBRARY**<sup>1</sup>|**PROTMODE**<sup>2</sup>|
-|**CONFORMING**|**LOADONCALL**<sup>1</sup>|**PURE**<sup>1</sup>|
-|**DATA**|**LONGNAMES**<sup>2</sup>|**READONLY**|
-|**DESCRIPTION**|**MOVABLE**<sup>1</sup>|**READWRITE**|
-|**DEV386**|**MOVEABLE**<sup>1</sup>|**REALMODE**<sup>1</sup>|
-|**DISCARDABLE**|**MULTIPLE**|**RESIDENT**|
-|**DYNAMIC**|**NAME**|**RESIDENTNAME**<sup>1</sup>|
-|**EXECUTE-ONLY**|**NEWFILES**<sup>2</sup>|**SECTIONS**|
-|**EXECUTEONLY**|**NODATA**<sup>1</sup>|**SEGMENTS**|
-|**EXECUTEREAD**|**NOIOPL**<sup>1</sup>|**SHARED**|
-|**EXETYPE**|**NONAME**|**SINGLE**|
-|**EXPORTS**|**NONCONFORMING**<sup>1</sup>|**STACKSIZE**|
-|**FIXED**<sup>1</sup>|**NONDISCARDABLE**|**STUB**|
-|**FUNCTIONS**<sup>2</sup>|**NONE**|**VERSION**|
-|**HEAPSIZE**|**NONSHARED**|**WINDOWAPI**|
-|**IMPORTS**|**NOTWINDOWCOMPAT**<sup>1</sup>|**WINDOWCOMPAT**|
-|**IMPURE**<sup>1</sup>|**OBJECTS**|**WINDOWS**|
-|**INCLUDE**<sup>2</sup>|**OLD**<sup>1</sup>||
+:::row:::
+   :::column span="":::
+      **`APPLOADER`**<sup>1</sup>\
+      **`BASE`**\
+      **`CODE`**\
+      **`CONFORMING`**\
+      **`DATA`**\
+      **`DESCRIPTION`**\
+      **`DEV386`**\
+      **`DISCARDABLE`**\
+      **`DYNAMIC`**\
+      **`EXECUTE-ONLY`**\
+      **`EXECUTEONLY`**\
+      **`EXECUTEREAD`**\
+      **`EXETYPE`**\
+      **`EXPORTS`**\
+      **`FIXED`**<sup>1</sup>
+   :::column-end:::
+   :::column span="":::
+      **`FUNCTIONS`**<sup>2</sup>\
+      **`HEAPSIZE`**\
+      **`IMPORTS`**\
+      **`IMPURE`**<sup>1</sup>\
+      **`INCLUDE`**<sup>2</sup>\
+      **`INITINSTANCE`**<sup>2</sup>\
+      **`IOPL`**\
+      **`LIBRARY`**<sup>1</sup>\
+      **`LOADONCALL`**<sup>1</sup>\
+      **`LONGNAMES`**<sup>2</sup>\
+      **`MOVABLE`**<sup>1</sup>\
+      **`MOVEABLE`**<sup>1</sup>\
+      **`MULTIPLE`**\
+      **`NAME`**\
+      **`NEWFILES`**<sup>2</sup>
+   :::column-end:::
+   :::column span="":::
+      **`NODATA`**<sup>1</sup>\
+      **`NOIOPL`**<sup>1</sup>\
+      **`NONAME`**\
+      **`NONCONFORMING`**<sup>1</sup>\
+      **`NONDISCARDABLE`**\
+      **`NONE`**\
+      **`NONSHARED`**\
+      **`NOTWINDOWCOMPAT`**<sup>1</sup>\
+      **`OBJECTS`**\
+      **`OLD`**<sup>1</sup>\
+      **`PRELOAD`**\
+      **`PRIVATE`**\
+      **`PROTMODE`**<sup>2</sup>\
+      **`PURE`**<sup>1</sup>\
+      **`READONLY`**
+   :::column-end:::
+   :::column span="":::
+      **`READWRITE`**\
+      **`REALMODE`**<sup>1</sup>\
+      **`RESIDENT`**\
+      **`RESIDENTNAME`**<sup>1</sup>\
+      **`SECTIONS`**\
+      **`SEGMENTS`**\
+      **`SHARED`**\
+      **`SINGLE`**\
+      **`STACKSIZE`**\
+      **`STUB`**\
+      **`VERSION`**\
+      **`WINDOWAPI`**\
+      **`WINDOWCOMPAT`**\
+      **`WINDOWS`**
+   :::column-end:::
+:::row-end:::
 
 <sup>1</sup> The linker emits a warning ("ignored") when it encounters this term. However, the word is still reserved.
 

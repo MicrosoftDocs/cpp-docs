@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Opening Files"
 title: "Opening Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Open member functions [MFC]", "CFile class [MFC], variable", "opening files, in MFC", "Open calls [MFC]", "Open method, CFile class [MFC]", "examples [MFC], opening files", "opening files, handling exceptions", "exception handling [MFC], when opening files", "files [MFC], opening", "file objects [MFC]", "MFC, file operations", "opening files [MFC]", "exception handling [MFC], opening files"]
@@ -12,9 +13,9 @@ In MFC, the most common way to open a file is a two-stage process.
 
 1. Create the file object without specifying a path or permission flags.
 
-   You usually create a file object by declaring a [CFile](../mfc/reference/cfile-class.md) variable on the stack frame.
+   You usually create a file object by declaring a [CFile](reference/cfile-class.md) variable on the stack frame.
 
-1. Call the [Open](../mfc/reference/cfile-class.md#open) member function for the file object, supplying a path and permission flags.
+1. Call the [Open](reference/cfile-class.md#open) member function for the file object, supplying a path and permission flags.
 
    The return value for `Open` will be nonzero if the file was opened successfully or 0 if the specified file could not be opened. The `Open` member function is prototyped as follows:
 
@@ -31,6 +32,6 @@ The following example shows how to create a new file with read/write permission 
 
 ## See also
 
-[CFile Class](../mfc/reference/cfile-class.md)<br/>
-[CFile::Open](../mfc/reference/cfile-class.md#open)<br/>
-[Files](../mfc/files-in-mfc.md)
+[CFile Class](reference/cfile-class.md)<br/>
+[CFile::Open](reference/cfile-class.md#open)<br/>
+[Files](files-in-mfc.md)

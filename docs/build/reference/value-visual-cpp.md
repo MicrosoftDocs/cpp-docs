@@ -1,7 +1,8 @@
 ---
+description: "Learn more about: &lt;value&gt;"
 title: "&lt;value> (C++ Documentation Comments)"
 ms.date: "11/04/2016"
-f1_keywords: ["value", "<value>"]
+f1_keywords: ["<value>"]
 helpviewer_keywords: ["value C++ XML tag", "<value> C++ XML tag"]
 ms.assetid: 0ba0a0d5-bcd7-4862-a169-83f2721ad80e
 ---

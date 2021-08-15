@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Tc, /Tp, /TC, /TP (Specify Source File Type)"
 title: "/Tc, /Tp, /TC, /TP (Specify Source File Type)"
 ms.date: "01/11/2018"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.CompileAs", "VC.Project.VCCLCompilerTool.CompileAs", "/Tp", "/tc"]
@@ -12,12 +13,12 @@ The **/Tc** option specifies that its filename argument is a C source file, even
 
 ## Syntax
 
-> **/Tc** _filename_
-> **/Tp** _filename_
-> **/TC**
+> **/Tc** _filename_\
+> **/Tp** _filename_\
+> **/TC**\
 > **/TP**
 
-## Arguments
+### Arguments
 
 *filename*<br/>
 A C or C++ source file.

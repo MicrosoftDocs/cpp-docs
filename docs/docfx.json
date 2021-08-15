@@ -57,7 +57,7 @@
       ],
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/cpp-docs",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html"
+      "feedback_product_url": "https://aka.ms/feedback/report?space=62"
     },
     "fileMetadata": {
       "ms.tgt_pltfrm": {
@@ -96,6 +96,7 @@
         "atl-mfc-shared/**.md": "reference",
         "build/reference/**.md": "reference",
         "c-language/**.md": "language-reference",
+        "c-runtime-library/**.md": "reference",
         "c-runtime-library/reference/**.md": "reference",
         "code-quality/**.md": "reference",
         "cpp/**.md": "language-reference",
@@ -111,6 +112,7 @@
         "parallel/openmp/reference/**.md": "reference",
         "preprocessor/**.md": "reference",
         "safeint/**.md": "reference",
+        "sanitizers/**.md": "reference",
         "standard-library/**.md": "reference",
         "windows/attributes/**.md": "reference"
       },
@@ -144,6 +146,7 @@
         "porting/**.md": "cpp-language",
         "preprocessor/**.md": "cpp-language",
         "safeint/**.md": "cpp-standard-libraries",
+        "sanitizers/**.md": "cpp-tools",
         "security/**.md": "cpp-windows",
         "standard-library/**.md": "cpp-standard-libraries",
         "text/**.md": "cpp-windows",
@@ -180,6 +183,7 @@
         "porting/**.md": "corob-msft",
         "preprocessor/**.md": "corob-msft",
         "safeint/**.md": "tylermsft",
+        "sanitizers/**.md": "corob-msft",
         "security/**.md": "corob-msft",
         "standard-library/**.md": "tylermsft",
         "text/**.md": "tylermsft",
@@ -216,6 +220,7 @@
         "porting/**.md": "corob",
         "preprocessor/**.md": "corob",
         "safeint/**.md": "twhitney",
+        "sanitizers/**.md": "corob",
         "security/**.md": "corob",
         "standard-library/**.md": "twhitney",
         "text/**.md": "twhitney",
@@ -227,7 +232,7 @@
     "dest": "vcppdocs",
     "groups": {
       "group-vc2015": {
-        "moniker_range": ">= vs-2015",
+        "moniker_range": ">= msvc-140",
         "dest": "vcppdocs-2015"
       }
     },

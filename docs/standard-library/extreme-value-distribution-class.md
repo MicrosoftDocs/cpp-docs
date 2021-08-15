@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: extreme_value_distribution Class"
 title: "extreme_value_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::extreme_value_distribution", "random/std::extreme_value_distribution::reset", "random/std::extreme_value_distribution::a", "random/std::extreme_value_distribution::b", "random/std::extreme_value_distribution::param", "random/std::extreme_value_distribution::min", "random/std::extreme_value_distribution::max", "random/std::extreme_value_distribution::operator()", "random/std::extreme_value_distribution::param_type", "random/std::extreme_value_distribution::param_type::a", "random/std::extreme_value_distribution::param_type::b", "random/std::extreme_value_distribution::param_type::operator==", "random/std::extreme_value_distribution::param_type::operator!="]
@@ -44,19 +45,17 @@ public:
 ### Parameters
 
 *RealType*\
-The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
+The floating-point result type, defaults to **`double`**. For possible types, see [\<random>](../standard-library/random.md).
 
 *URNG*\
 The random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
-The class template describes a distribution that produces values of a user-specified floating-point type, or type **double** if none is provided, distributed according to the Extreme Value Distribution. The following table links to articles about individual members.
+The class template describes a distribution that produces values of a user-specified floating-point type, or type **`double`** if none is provided, distributed according to the Extreme Value Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[extreme_value_distribution](#extreme_value_distribution)|`extreme_value_distribution::a`|`extreme_value_distribution::param`|
-|`extreme_value_distribution::operator()`|`extreme_value_distribution::b`|[param_type](#param_type)|
+[extreme_value_distribution](#extreme_value_distribution)\
+[param_type](#param_type)
 
 The property functions `a()` and `b()` return their respective values for stored distribution parameters `a` and `b`.
 

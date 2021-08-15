@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3469"
 title: "Compiler Error C3469"
 ms.date: "11/04/2016"
 f1_keywords: ["C3469"]
@@ -13,7 +14,7 @@ You cannot use type forwarding on a generic class.
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Example
+## Examples
 
 The following sample creates a component.
 
@@ -25,8 +26,6 @@ public ref class GR {};
 
 public ref class GR2 {};
 ```
-
-## Example
 
 The following sample generates C3466.
 

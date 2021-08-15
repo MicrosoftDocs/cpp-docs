@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Delegate and interface map macros"
 title: "Delegate and Interface Map Macros (MFC)"
 ms.date: "03/30/2017"
 helpviewer_keywords: ["delegate map macros [MFC]", "event map macros [MFC]", "interface map macros [MFC]"]
@@ -8,7 +9,7 @@ ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
 
 MFC supports these macros for delegate and interface maps:
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_DELEGATE_MAP](#begin_delegate_map)|Begins a delegate map.|
 |[BEGIN_INTERFACE_MAP](#begin_interface_map)|Begins the definition of the interfaced map.|

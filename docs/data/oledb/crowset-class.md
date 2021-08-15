@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRowset Class"
 title: "CRowset Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL.CRowset<TAccessor>", "CRowset", "ATL::CRowset", "ATL::CRowset<TAccessor>", "ATL.CRowset", "CRowset<TAccessor>.AddRefRows", "CRowset.AddRefRows", "ATL.CRowset.AddRefRows", "AddRefRows", "CRowset::AddRefRows", "CRowset<TAccessor>::AddRefRows", "ATL::CRowset::AddRefRows", "ATL.CRowset<TAccessor>.AddRefRows", "ATL::CRowset<TAccessor>::AddRefRows", "CRowset::Close", "ATL.CRowset.Close", "CRowset<TAccessor>::Close", "CRowset<TAccessor>.Close", "ATL.CRowset<TAccessor>.Close", "ATL::CRowset::Close", "ATL::CRowset<TAccessor>::Close", "CRowset.Close", "CRowset<TAccessor>.Compare", "CRowset<TAccessor>::Compare", "ATL.CRowset<TAccessor>.Compare", "ATL::CRowset<TAccessor>::Compare", "CRowset.Compare", "ATL::CRowset::Compare", "ATL.CRowset.Compare", "CRowset::Compare", "CRowset<TAccessor>::CRowset", "CRowset.CRowset", "ATL::CRowset::CRowset", "ATL::CRowset<TAccessor>::CRowset", "ATL.CRowset.CRowset", "CRowset<TAccessor>.CRowset", "CRowset::CRowset", "ATL.CRowset<TAccessor>.CRowset", "ATL::CRowset::Delete", "CRowset.Delete", "CRowset::Delete", "ATL.CRowset.Delete", "ATL::CRowset<TAccessor>::Delete", "CRowset<TAccessor>.Delete", "CRowset<TAccessor>::Delete", "ATL.CRowset<TAccessor>.Delete", "ATL.CRowset.FindNextRow", "CRowset<TAccessor>.FindNextRow", "ATL::CRowset::FindNextRow", "CRowset::FindNextRow", "CRowset<TAccessor>::FindNextRow", "CRowset.FindNextRow", "ATL.CRowset<TAccessor>.FindNextRow", "ATL::CRowset<TAccessor>::FindNextRow", "FindNextRow", "ATL::CRowset::GetApproximatePosition", "ATL::CRowset<TAccessor>::GetApproximatePosition", "CRowset.GetApproximatePosition", "CRowset::GetApproximatePosition", "GetApproximatePosition", "ATL.CRowset.GetApproximatePosition", "CRowset<TAccessor>::GetApproximatePosition", "CRowset<TAccessor>::GetData", "ATL::CRowset<TAccessor>::GetData", "ATL::CRowset::GetData", "ATL.CRowset<TAccessor>.GetData", "CRowset<TAccessor>.GetData", "CRowset::GetData", "CRowset.GetData", "ATL.CRowset.GetData", "CRowset<TAccessor>::GetDataHere", "CRowset<TAccessor>.GetDataHere", "CRowset.GetDataHere", "GetDataHere", "CRowset::GetDataHere", "ATL::CRowset::GetDataHere", "ATL::CRowset<TAccessor>::GetDataHere", "ATL.CRowset<TAccessor>.GetDataHere", "ATL.CRowset.GetDataHere", "ATL.CRowset<TAccessor>.GetOriginalData", "CRowset<TAccessor>::GetOriginalData", "ATL::CRowset<TAccessor>::GetOriginalData", "ATL.CRowset.GetOriginalData", "CRowset::GetOriginalData", "ATL::CRowset::GetOriginalData", "CRowset.GetOriginalData", "CRowset.GetRowStatus", "ATL.CRowset<TAccessor>.GetRowStatus", "ATL::CRowset<TAccessor>::GetRowStatus", "CRowset::GetRowStatus", "ATL::CRowset::GetRowStatus", "CRowset<TAccessor>::GetRowStatus", "ATL.CRowset.GetRowStatus", "CRowset<TAccessor>.GetRowStatus", "ATL.CRowset<TAccessor>.Insert", "CRowset.Insert", "CRowset<TAccessor>.Insert", "CRowset<TAccessor>::Insert", "ATL::CRowset<TAccessor>::Insert", "ATL.CRowset.Insert", "CRowset::Insert", "ATL::CRowset::Insert", "CRowset::IsSameRow", "CRowset.IsSameRow", "ATL::CRowset::IsSameRow", "ATL.CRowset.IsSameRow", "CRowset<TAccessor>::IsSameRow", "ATL.CRowset<TAccessor>.IsSameRow", "CRowset<TAccessor>.IsSameRow", "ATL::CRowset<TAccessor>::IsSameRow", "CRowset<TAccessor>::MoveFirst", "ATL::CRowset::MoveFirst", "CRowset<TAccessor>.MoveFirst", "CRowset::MoveFirst", "CRowset.MoveFirst", "ATL.CRowset.MoveFirst", "ATL.CRowset<TAccessor>.MoveFirst", "ATL::CRowset<TAccessor>::MoveFirst", "ATL::CRowset<TAccessor>::MoveLast", "CRowset<TAccessor>::MoveLast", "ATL.CRowset.MoveLast", "ATL::CRowset::MoveLast", "CRowset<TAccessor>.MoveLast", "CRowset::MoveLast", "ATL.CRowset<TAccessor>.MoveLast", "CRowset.MoveLast", "ATL.CRowset<TAccessor>.MoveNext", "ATL.CRowset.MoveNext", "ATL::CRowset<TAccessor>::MoveNext", "CRowset<TAccessor>.MoveNext", "CRowset.MoveNext", "CRowset<TAccessor>::MoveNext", "CRowset::MoveNext", "ATL::CRowset::MoveNext", "CRowset<TAccessor>.MovePrev", "CRowset.MovePrev", "CRowset::MovePrev", "ATL.CRowset.MovePrev", "ATL::CRowset<TAccessor>::MovePrev", "ATL::CRowset::MovePrev", "ATL.CRowset<TAccessor>.MovePrev", "CRowset<TAccessor>::MovePrev", "ATL::CRowset::MoveToBookmark", "ATL::CRowset<TAccessor>::MoveToBookmark", "ATL.CRowset.MoveToBookmark", "ATL.CRowset<TAccessor>.MoveToBookmark", "CRowset::MoveToBookmark", "CRowset.MoveToBookmark", "CRowset<TAccessor>::MoveToBookmark", "CRowset<TAccessor>::MoveToRatio", "CRowset::MoveToRatio", "CRowset<TAccessor>.MoveToRatio", "ATL.CRowset.MoveToRatio", "ATL::CRowset::MoveToRatio", "CRowset.MoveToRatio", "ATL.CRowset<TAccessor>.MoveToRatio", "ATL::CRowset<TAccessor>::MoveToRatio", "CRowset::ReleaseRows", "ATL::CRowset<TAccessor>::ReleaseRows", "CRowset<TAccessor>.ReleaseRows", "CRowset.ReleaseRows", "ATL.CRowset.ReleaseRows", "ATL.CRowset<TAccessor>.ReleaseRows", "CRowset<TAccessor>::ReleaseRows", "ATL::CRowset::ReleaseRows", "ATL.CRowset<TAccessor>.SetData", "ATL::CRowset::SetData", "CRowset<TAccessor>.SetData", "CRowset::SetData", "ATL.CRowset.SetData", "CRowset.SetData", "CRowset<TAccessor>::SetData", "ATL::CRowset<TAccessor>::SetData", "CRowset.Undo", "ATL::CRowset<TAccessor>::Undo", "CRowset<TAccessor>::Undo", "ATL.CRowset.Undo", "ATL.CRowset<TAccessor>.Undo", "CRowset<TAccessor>.Undo", "ATL::CRowset::Undo", "CRowset::Undo", "Undo", "CRowset.Update", "ATL.CRowset.Update", "ATL.CRowset<TAccessor>.Update", "ATL::CRowset<TAccessor>::Update", "CRowset<TAccessor>::Update", "CRowset::Update", "CRowset<TAccessor>.Update", "ATL::CRowset::Update", "CRowset::UpdateAll", "ATL.CRowset.UpdateAll", "CRowset<TAccessor>.UpdateAll", "ATL.CRowset<TAccessor>.UpdateAll", "UpdateAll", "CRowset.UpdateAl", "ATL::CRowset<TAccessor>::UpdateAll", "CRowset<TAccessor>::UpdateAll", "ATL::CRowset::UpdateAll"]
@@ -29,7 +30,7 @@ An accessor class. The default is `CAccessorBase`.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddRefRows](#addrefrows)|Increments the reference count associated with the current row.|
 |[Close](#close)|Releases rows and the current `IRowset` interface.|
@@ -52,7 +53,7 @@ An accessor class. The default is `CAccessorBase`.
 |[MoveToRatio](#movetoratio)|Fetches rows starting from a fractional position in the rowset.|
 |[ReleaseRows](#releaserows)|Calls [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) to release the current row handle.|
 |[SetData](#setdata)|Sets data values in one or more columns of a row using [IRowsetChange:SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)).|
-|[Undo](#undo)|Undoes any changes made to a row since the last fetch or [Update](../../data/oledb/crowset-update.md).|
+|[Undo](#undo)|Undoes any changes made to a row since the last fetch or [Update](#update).|
 |[Update](#update)|Transmits any pending changes made to the current row since the last fetch or update.|
 |[UpdateAll](#updateall)|Transmits any pending changes made to all rows since the last fetch or update.|
 
@@ -78,7 +79,7 @@ A standard HRESULT.
 
 ### Remarks
 
-This method increments the reference count for the current row handle. Call [ReleaseRows](../../data/oledb/crowset-releaserows.md) to decrement the count. Rows returned by the move methods have a reference count of one.
+This method increments the reference count for the current row handle. Call [ReleaseRows](#releaserows) to decrement the count. Rows returned by the move methods have a reference count of one.
 
 ## <a name="close"></a> CRowset::Close
 
@@ -267,7 +268,7 @@ A standard HRESULT.
 
 ### Remarks
 
-If you specify an accessor that is not an autoaccessor in [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md), use this method to explicitly get the data by passing the accessor number.
+If you specify an accessor that is not an autoaccessor in [BEGIN_ACCESSOR](./macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor), use this method to explicitly get the data by passing the accessor number.
 
 ## <a name="getdatahere"></a> CRowset::GetDataHere
 
@@ -452,7 +453,7 @@ HRESULT MoveNext(LONG lSkip,
 [in] The number of rows to skip before fetching.
 
 *bForward*<br/>
-[in] Pass **true** to move forward to the next record, **false** to move backward.
+[in] Pass **`true`** to move forward to the next record, **`false`** to move backward.
 
 ### Return Value
 
@@ -590,7 +591,7 @@ A standard HRESULT.
 
 ### Remarks
 
-For the `SetData` form that accepts no arguments, all accessors are used for updating. You typically call `SetData` to set data values in columns in a row, then call [Update](../../data/oledb/crowset-update.md) to transmit those changes.
+For the `SetData` form that accepts no arguments, all accessors are used for updating. You typically call `SetData` to set data values in columns in a row, then call [Update](#update) to transmit those changes.
 
 This method requires the optional interface `IRowsetChange`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetChange` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
@@ -598,7 +599,7 @@ The setting operation might fail if one or more columns is not writable. Modify 
 
 ## <a name="undo"></a> CRowset::Undo
 
-Undoes any changes made to a row since the last fetch or [Update](../../data/oledb/crowset-update.md).
+Undoes any changes made to a row since the last fetch or [Update](#update).
 
 ### Syntax
 
@@ -656,7 +657,7 @@ A standard HRESULT.
 
 ### Remarks
 
-Transmits any pending changes made to the current row since that row was last fetched or updated (using `Update` or [UpdateAll](../../data/oledb/crowset-updateall.md)). You typically call [SetData](../../data/oledb/crowset-setdata.md) to set data values in columns in a row, and then call `Update` to transmit those changes.
+Transmits any pending changes made to the current row since that row was last fetched or updated (using `Update` or [UpdateAll](#updateall)). You typically call [SetData](#setdata) to set data values in columns in a row, and then call `Update` to transmit those changes.
 
 This method requires the optional interface `IRowsetUpdate`, which might not be supported on all providers; if this is the case, the method returns E_NOINTERFACE. You must also set `DBPROP_IRowsetUpdate` to VARIANT_TRUE before calling `Open` on the table or command containing the rowset.
 
@@ -685,7 +686,7 @@ HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL,
 
 ### Remarks
 
-Transmits any pending changes made to all rows since those rows were last fetched or updated using [Update](../../data/oledb/crowset-update.md) or `UpdateAll`. `UpdateAll` will update every row that has been modified, regardless of whether you still have the handle for them (see *pphRow*) or not.
+Transmits any pending changes made to all rows since those rows were last fetched or updated using [Update](#update) or `UpdateAll`. `UpdateAll` will update every row that has been modified, regardless of whether you still have the handle for them (see *pphRow*) or not.
 
 For example, if you used `Insert` to insert five rows in a rowset, you could either call `Update` five times or call `UpdateAll` once to update them all.
 

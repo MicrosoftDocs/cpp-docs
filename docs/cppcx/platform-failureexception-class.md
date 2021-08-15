@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::FailureException Class"
 title: "Platform::FailureException Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"

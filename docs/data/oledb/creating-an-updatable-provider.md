@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating an Updatable Provider"
 title: "Creating an Updatable Provider"
 ms.date: "08/16/2018"
 helpviewer_keywords: ["OLE DB providers, updatable", "notifications, support in providers", "OLE DB providers, creating"]

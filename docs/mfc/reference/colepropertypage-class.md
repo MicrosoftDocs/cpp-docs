@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COlePropertyPage Class"
 title: "COlePropertyPage Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COlePropertyPage", "AFXCTL/COlePropertyPage", "AFXCTL/COlePropertyPage::COlePropertyPage", "AFXCTL/COlePropertyPage::GetControlStatus", "AFXCTL/COlePropertyPage::GetObjectArray", "AFXCTL/COlePropertyPage::GetPageSite", "AFXCTL/COlePropertyPage::OVERWRITEApply", "AFXCTL/COlePropertyPage::IsModified", "AFXCTL/COlePropertyPage::OnEditProperty", "AFXCTL/COlePropertyPage::OnHelp", "AFXCTL/COlePropertyPage::OnInitDialog", "AFXCTL/COlePropertyPage::OnObjectsChanged", "AFXCTL/COlePropertyPage::OnSetPageSite", "AFXCTL/COlePropertyPage::SetControlStatus", "AFXCTL/COlePropertyPage::SetDialogResource", "AFXCTL/COlePropertyPage::SetHelpInfo", "AFXCTL/COlePropertyPage::SetModifiedFlag", "AFXCTL/COlePropertyPage::SetPageName"]

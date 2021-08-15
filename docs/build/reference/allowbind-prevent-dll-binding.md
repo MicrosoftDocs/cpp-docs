@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ALLOWBIND (Prevent DLL Binding)"
 title: "/ALLOWBIND (Prevent DLL Binding)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.PreventDLLBinding", "/allowbind"]
@@ -21,7 +22,7 @@ You can edit an existing DLL for /ALLOWBIND functionality with the [/ALLOWBIND](
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Expand **Configuration Properties**, **Linker**, and select **Command Line**.
+1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
 1. Enter `/ALLOWBIND:NO` into **Additional Options**.
 

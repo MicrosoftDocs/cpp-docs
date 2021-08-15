@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CBaseTabbedPane Class"
 title: "CBaseTabbedPane Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CBaseTabbedPane", "AFXBASETABBEDPANE/CBaseTabbedPane", "AFXBASETABBEDPANE/CBaseTabbedPane::AddTab", "AFXBASETABBEDPANE/CBaseTabbedPane::AllowDestroyEmptyTabbedPane", "AFXBASETABBEDPANE/CBaseTabbedPane::ApplyRestoredTabInfo", "AFXBASETABBEDPANE/CBaseTabbedPane::CanFloat", "AFXBASETABBEDPANE/CBaseTabbedPane::CanSetCaptionTextToTabName", "AFXBASETABBEDPANE/CBaseTabbedPane::ConvertToTabbedDocument", "AFXBASETABBEDPANE/CBaseTabbedPane::DetachPane", "AFXBASETABBEDPANE/CBaseTabbedPane::EnableSetCaptionTextToTabName", "AFXBASETABBEDPANE/CBaseTabbedPane::FillDefaultTabsOrderArray", "AFXBASETABBEDPANE/CBaseTabbedPane::FindBarByTabNumber", "AFXBASETABBEDPANE/CBaseTabbedPane::FindPaneByID", "AFXBASETABBEDPANE/CBaseTabbedPane::FloatTab", "AFXBASETABBEDPANE/CBaseTabbedPane::GetDefaultTabsOrder", "AFXBASETABBEDPANE/CBaseTabbedPane::GetFirstVisibleTab", "AFXBASETABBEDPANE/CBaseTabbedPane::GetMinSize", "AFXBASETABBEDPANE/CBaseTabbedPane::GetPaneIcon", "AFXBASETABBEDPANE/CBaseTabbedPane::GetPaneList", "AFXBASETABBEDPANE/CBaseTabbedPane::GetTabArea", "AFXBASETABBEDPANE/CBaseTabbedPane::GetTabsNum", "AFXBASETABBEDPANE/CBaseTabbedPane::GetUnderlyingWindow", "AFXBASETABBEDPANE/CBaseTabbedPane::GetVisibleTabsNum", "AFXBASETABBEDPANE/CBaseTabbedPane::HasAutoHideMode", "AFXBASETABBEDPANE/CBaseTabbedPane::IsHideSingleTab", "AFXBASETABBEDPANE/CBaseTabbedPane::RecalcLayout", "AFXBASETABBEDPANE/CBaseTabbedPane::RemovePane", "AFXBASETABBEDPANE/CBaseTabbedPane::SetAutoDestroy", "AFXBASETABBEDPANE/CBaseTabbedPane::SetAutoHideMode", "AFXBASETABBEDPANE/CBaseTabbedPane::ShowTab"]
@@ -37,7 +38,6 @@ class CBaseTabbedPane : public CDockablePane
 |[CBaseTabbedPane::EnableSetCaptionTextToTabName](#enablesetcaptiontexttotabname)|Enables or disables the ability of the tabbed pane to synchronize caption text with the label text on the active tab.|
 |[CBaseTabbedPane::FillDefaultTabsOrderArray](#filldefaulttabsorderarray)|Restores the internal tab order to a default state.|
 |[CBaseTabbedPane::FindBarByTabNumber](#findbarbytabnumber)|Returns a pane that resides in a tab when the tab is identified by a zero-based tab index.|
-|||
 |[CBaseTabbedPane::FindPaneByID](#findpanebyid)|Returns a pane that is identified by the pane ID.|
 |[CBaseTabbedPane::FloatTab](#floattab)|Floats a pane, but only if the pane currently resides in a detachable tab.|
 |[CBaseTabbedPane::GetDefaultTabsOrder](#getdefaulttabsorder)|Returns the default order of tabs in the pane.|

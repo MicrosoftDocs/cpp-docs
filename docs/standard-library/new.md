@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;new&gt;"
 title: "&lt;new&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<new>"]
@@ -23,13 +24,13 @@ Some of the functions declared in this header are replaceable. The implementatio
 
 ### Objects
 
-|||
+|Name|Description|
 |-|-|
-|[nothrow](../standard-library/new-functions.md#nothrow)|Provides an object to be used as an argument for the **nothrow** versions of **new** and **delete**.|
+|[nothrow](../standard-library/new-functions.md#nothrow)|Provides an object to be used as an argument for the **`nothrow`** versions of **`new`** and **`delete`**.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[new_handler](../standard-library/new-typedefs.md#new_handler)|A type that points to a function suitable for use as a new handler.|
 |[hardware_constructive_interference_size](../standard-library/new-typedefs.md#hardware_destructive_interference_size)||
@@ -37,7 +38,7 @@ Some of the functions declared in this header are replaceable. The implementatio
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[get_new_handler](../standard-library/new-functions.md#get_new_handler)||
 |[launder](../standard-library/new-functions.md#launder)||
@@ -45,7 +46,7 @@ Some of the functions declared in this header are replaceable. The implementatio
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator delete](../standard-library/new-operators.md#op_delete)|The function called by a delete expression to deallocate storage for individual of objects.|
 |[operator delete&#91;&#93;](../standard-library/new-operators.md#op_delete_arr)|The function called by a delete expression to deallocate storage for an array of objects.|
@@ -54,13 +55,13 @@ Some of the functions declared in this header are replaceable. The implementatio
 
 ### Enums
 
-|||
+|Name|Description|
 |-|-|
 |[align_val_t](../standard-library/new-operators.md#op_align_val_t)||
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[bad_alloc Class](../standard-library/bad-alloc-class.md)|The class describes an exception thrown to indicate that an allocation request did not succeed.|
 |[bad_array_new_length Class](../standard-library/bad-array-new-length.md)||

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add an event"
 title: "Add an event"
 ms.date: "11/12/2018"
 f1_keywords: ["vc.codewiz.event.overview"]

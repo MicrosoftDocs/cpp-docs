@@ -3,20 +3,17 @@ title: Using Clang-Tidy in Visual Studio
 description: "How to use Clang-Tidy in Visual Studio for Microsoft C++ code analysis."
 ms.date: 02/19/2020
 ms.topic: "conceptual"
-f1_keywords:
-  - "vs.codeanalysis.clangtidy"
-author: frozenpandaman
-ms.author: efessler
+f1_keywords: ["vs.codeanalysis.clangtidy"]
 ---
 # Using Clang-Tidy in Visual Studio
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Support for Clang-Tidy requires Visual Studio 2019 version 16.4 or later. To see the documentation for this version, set the Visual Studio **Version** selector control for this article to Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 Code Analysis natively supports [Clang-Tidy](https://clang.llvm.org/extra/clang-tidy/) for both MSBuild and CMake projects, whether using Clang or MSVC toolsets. Clang-Tidy checks can run as part of background code analysis. They appear as in-editor warnings (squiggles), and display in the Error List.
 
@@ -34,7 +31,7 @@ For more information, see [How to: Set Code Analysis Properties for C/C++ Projec
 
 ## CMake
 
-In CMake projects, you can configure Clang-Tidy checks within `CMakeSettings.json`. Once opened, click "Edit JSON" in the top right-hand corner of the CMake Project Settings Editor. The following keys are recognized:
+In CMake projects, you can configure Clang-Tidy checks within *`CMakeSettings.json`*. Once opened, select "Edit JSON" in the top right-hand corner of the CMake Project Settings Editor. The following keys are recognized:
 
 - `enableMicrosoftCodeAnalysis`: Enables Microsoft Code Analysis
 - `enableClangTidyCodeAnalysis`: Enables Clang-Tidy analysis
@@ -48,7 +45,7 @@ Clang-Tidy runs result in warnings displayed in the Error List, and as in-editor
 
 ## Clang-Tidy configuration
 
-You can configure the checks that clang-tidy runs inside Visual Studio via the **Clang-Tidy Checks** option. This input is provided to the **--checks** argument of the tool. Any further configuration can be included in custom *`.clang-tidy`* files. For more information, see the [Clang-Tidy documentation on LLVM.org](https://clang.llvm.org/extra/clang-tidy/).
+You can configure the checks that clang-tidy runs inside Visual Studio via the **Clang-Tidy Checks** option. This input is provided to the **`--checks`** argument of the tool. Any further configuration can be included in custom *`.clang-tidy`* files. For more information, see the [Clang-Tidy documentation on LLVM.org](https://clang.llvm.org/extra/clang-tidy/).
 
 ## See also
 

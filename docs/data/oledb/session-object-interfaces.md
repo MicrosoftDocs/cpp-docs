@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Session Object Interfaces"
 title: "Session Object Interfaces"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["session objects [OLE DB]", "session objects [OLE DB], interfaces", "OLE DB provider templates, object interfaces", "interfaces, session object", "interfaces, list of"]
@@ -31,7 +32,7 @@ The following table shows the mandatory and optional interfaces defined by OLE D
 
 The session object creates a rowset object. If the provider supports commands, the session also creates a command object (`CCommand`, implementing the OLE DB `TCommand`). The command object implements the `ICommand` interface and uses the `ICommand::Execute` method to execute commands on the rowset, as shown in the following figure.
 
-![Provider conceptual diagram](../../data/oledb/media/vc4u551.gif "Provider conceptual diagram")
+![Provider conceptual diagram.](../../data/oledb/media/vc4u551.gif "Provider conceptual diagram")
 
 ## See also
 

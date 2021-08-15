@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _ecvt_s"
 title: "_ecvt_s"
 ms.date: "4/2/2020"
 api_name: ["_ecvt_s", "_o__ecvt_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["ecvt_s", "_ecvt_s"]
@@ -11,7 +12,7 @@ ms.assetid: d52fb0a6-cb91-423f-80b3-952a8955d914
 ---
 # _ecvt_s
 
-Converts a **double** number to a string. This is a version of [_ecvt](ecvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Converts a **`double`** number to a string. This is a version of [_ecvt](ecvt.md) with security enhancements as described in [Security Features in the CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## Syntax
 

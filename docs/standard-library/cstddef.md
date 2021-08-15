@@ -1,6 +1,7 @@
 ---
 title: "&lt;cstddef&gt;"
-ms.date: "11/04/2016"
+description: "Describes <stddef.h>, which ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace."
+ms.date: "9/4/2020"
 f1_keywords: ["<cstddef>"]
 helpviewer_keywords: ["cstddef header"]
 ms.assetid: be8d1e39-5974-41ee-b41d-eafa6c82ffce
@@ -10,7 +11,7 @@ ms.assetid: be8d1e39-5974-41ee-b41d-eafa6c82ffce
 Includes the C standard library header \<stddef.h> and adds associated names to the `std` namespace. Including this header ensures that the names declared using external linkage in the C standard library header are declared in the `std` namespace.
 
 > [!NOTE]
-> \<cstddef> includes type **byte** and doesn't include type **wchar_t**.
+> \<cstddef> includes type **byte** and doesn't include type **`wchar_t`**.
 
 ## Syntax
 
@@ -44,7 +45,7 @@ An implementation-defined unsigned integer type that is large enough to contain 
 A POD type whose alignment requirement is at least as great as that of every scalar type, and whose alignment requirement is supported in every context.
 
 *nullptr_t*\
-A synonym for the type of a **nullptr** expression. Although a **nullptr** address can't be taken, the address of another *nullptr_t* object that is an lvalue can be taken.
+A synonym for the type of a **`nullptr`** expression. Although a **`nullptr`** address can't be taken, the address of another *nullptr_t* object that is an lvalue can be taken.
 
 ## byte Class
 

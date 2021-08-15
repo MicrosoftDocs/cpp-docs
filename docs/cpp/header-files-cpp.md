@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Header files (C++)"
 title: "Header files (C++)"
 ms.date: "12/11/2019"
 helpviewer_keywords: ["header files [C++]"]
@@ -12,7 +13,7 @@ int x; // declaration
 x = 42; // use x
 ```
 
-The declaration tells the compiler whether the element is an **int**, a **double**, a **function**, a **class** or some other thing.  Furthermore, each name must be declared (directly or indirectly) in every .cpp file in which it is used. When you compile a program, each .cpp file is compiled independently into a compilation unit. The compiler has no knowledge of what names are declared in other compilation units. That means that if you define a class or function or global variable, you must provide a declaration of that thing in each additional .cpp file that uses it. Each declaration of that thing must be exactly identical in all files. A slight inconsistency will cause errors, or unintended behavior, when the linker attempts to merge all the compilation units into a single program.
+The declaration tells the compiler whether the element is an **`int`**, a **`double`**, a **function**, a **`class`** or some other thing.  Furthermore, each name must be declared (directly or indirectly) in every .cpp file in which it is used. When you compile a program, each .cpp file is compiled independently into a compilation unit. The compiler has no knowledge of what names are declared in other compilation units. That means that if you define a class or function or global variable, you must provide a declaration of that thing in each additional .cpp file that uses it. Each declaration of that thing must be exactly identical in all files. A slight inconsistency will cause errors, or unintended behavior, when the linker attempts to merge all the compilation units into a single program.
 
 To minimize the potential for errors, C++ has adopted the convention of using *header files* to contain declarations. You make the declarations in a header file, then use the #include directive in every .cpp file or other header file that requires that declaration. The #include directive inserts a copy of the header file directly into the .cpp file prior to compilation.
 
@@ -38,7 +39,7 @@ namespace N
 
 Next, create an implementation file (typically with a .cpp or similar extension). We'll call the file my_class.cpp and provide a definition for the member declaration. We add an `#include` directive for "my_class.h" file in order to have the my_class declaration inserted at this point in the .cpp file, and we include `<iostream>` to pull in the declaration for `std::cout`. Note that quotes are used for header files in the same directory as the source file, and angle brackets are used for standard library headers. Also, many standard library headers do not have .h or any other file extension.
 
-In the implementation file, we can optionally use a **using** statement to avoid having to qualify every mention of "my_class" or "cout" with "N::" or "std::".  Don't put **using** statements in your header files!
+In the implementation file, we can optionally use a **`using`** statement to avoid having to qualify every mention of "my_class" or "cout" with "N::" or "std::".  Don't put **`using`** statements in your header files!
 
 ```cpp
 // my_class.cpp
@@ -104,7 +105,7 @@ Because a header file might potentially be included by multiple files, it cannot
 - unnamed namespaces
 - using directives
 
-Use of the **using** directive will not necessarily cause an error, but can potentially cause a problem because it brings the namespace into scope in every .cpp file that directly or indirectly includes that header.
+Use of the **`using`** directive will not necessarily cause an error, but can potentially cause a problem because it brings the namespace into scope in every .cpp file that directly or indirectly includes that header.
 
 ## Sample header file
 

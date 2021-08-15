@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Marshaling"
 title: "Marshaling"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["marshaling, COM interop", "marshaling", "COM interfaces, marshaling"]

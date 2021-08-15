@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _set_printf_count_output"
 title: "_set_printf_count_output"
 ms.date: "11/04/2016"
 api_name: ["_set_printf_count_output"]

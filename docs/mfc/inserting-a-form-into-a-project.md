@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inserting a Form into a Project"
 title: "Inserting a Form into a Project"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["inserting forms [MFC]", "Insert New dialog box [MFC]", "forms, adding to projects"]
@@ -18,7 +19,7 @@ Forms provide a convenient container for controls. You can easily insert an MFC-
 
 1. From the **MFC** folder, click **MFC Class**.
 
-1. Using the MFC Class Wizard, make the new class derive from [CFormView](../mfc/reference/cformview-class.md).
+1. Using the MFC Class Wizard, make the new class derive from [CFormView](reference/cformview-class.md).
 
 Visual C++ adds the form to your application, opening it inside the Dialog editor so that you can begin adding controls and working on its overall design.
 
@@ -32,4 +33,4 @@ You may want to perform the following additional steps (not applicable for dialo
 
 ## See also
 
-[Form Views](../mfc/form-views-mfc.md)
+[Form Views](form-views-mfc.md)

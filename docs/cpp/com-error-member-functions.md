@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _com_error Member Functions"
 title: "_com_error Member Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_com_error class [C++], member functions"]

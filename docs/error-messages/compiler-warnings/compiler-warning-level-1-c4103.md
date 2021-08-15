@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4103"
 title: "Compiler Warning (level 1) C4103"
 ms.date: "11/04/2016"
 f1_keywords: ["C4103"]
@@ -19,7 +20,7 @@ The following sample generates C4103:
 // C4103.h
 #pragma pack(push, 4)
 
-// defintions and declarations
+// definitions and declarations
 
 // uncomment the following line to resolve
 // #pragma pack(pop)

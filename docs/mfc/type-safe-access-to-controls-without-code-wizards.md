@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type-Safe Access to Controls Without Code Wizards"
 title: "Type-Safe Access to Controls Without Code Wizards"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dialog boxes [MFC], accessing controls", "dialog box controls [MFC], accessing"]

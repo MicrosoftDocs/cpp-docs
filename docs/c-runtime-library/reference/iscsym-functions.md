@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l"
 title: "iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l"
 ms.date: "11/04/2016"
 api_name: ["_iswcsym_l", "__iswcsym", "__iscsym", "_iswcsymf_l", "_iscsym_l", "__iswcsymf", "__iscsymf", "_iscsymf_l"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type Library Access"
 title: "Type Library Access"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["type libraries [MFC], accessing"]
@@ -12,7 +13,7 @@ The following macros allow an OLE control to provide access to its own type libr
 
 ### Type Library Access
 
-|||
+|Name|Description|
 |-|-|
 |[DECLARE_OLETYPELIB](#declare_oletypelib)|Declares a `GetTypeLib` member function of an OLE control (must be used in the class declaration).|
 |[IMPLEMENT_OLETYPELIB](#implement_oletypelib)|Implements a `GetTypeLib` member function of an OLE control (must be used in the class implementation).|

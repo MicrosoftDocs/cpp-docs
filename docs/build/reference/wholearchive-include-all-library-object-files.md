@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /WHOLEARCHIVE (Include All Library Object Files)"
 title: "/WHOLEARCHIVE (Include All Library Object Files)"
 ms.date: "02/12/2020"
 ms.assetid: ee92d12f-18af-4602-9683-d6223be62ac9
@@ -29,9 +30,9 @@ The /WHOLEARCHIVE option was introduced in Visual Studio 2015 Update 2.
 
 1. Open the project **Property Pages** dialog box. For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **Command Line** property page under **Configuration Properties**, **Linker**.
+1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
-1. Add the /WHOLEARCHIVE option to the **Additional Options** text box.
+1. Add the *`/WHOLEARCHIVE`* option to the **Additional Options** text box.
 
 ## See also
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: underflow_error Class"
 title: "underflow_error Class"
 ms.date: "11/04/2016"
 f1_keywords: ["stdexcept/std::underflow_error"]
@@ -23,7 +24,7 @@ public:
 
 ## Remarks
 
-The value returned by [what](../standard-library/exception-class.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#data).
+The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](../standard-library/exception-class.md) and [`data`](../standard-library/basic-string-class.md#data).
 
 ## Example
 

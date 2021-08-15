@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleDateTimeSpan Class"
 title: "COleDateTimeSpan Class"
 ms.date: "03/27/2019"
 f1_keywords: ["COleDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan::COleDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan::Format", "ATLCOMTIME/ATL::COleDateTimeSpan::GetDays", "ATLCOMTIME/ATL::COleDateTimeSpan::GetHours", "ATLCOMTIME/ATL::COleDateTimeSpan::GetMinutes", "ATLCOMTIME/ATL::COleDateTimeSpan::GetSeconds", "ATLCOMTIME/ATL::COleDateTimeSpan::GetStatus", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalDays", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalHours", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalMinutes", "ATLCOMTIME/ATL::COleDateTimeSpan::GetTotalSeconds", "ATLCOMTIME/ATL::COleDateTimeSpan::SetDateTimeSpan", "ATLCOMTIME/ATL::COleDateTimeSpan::SetStatus", "ATLCOMTIME/ATL::COleDateTimeSpan::m_span", "ATLCOMTIME/ATL::COleDateTimeSpan::m_status"]
@@ -42,19 +43,19 @@ class COleDateTimeSpan
 
 ### Public Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator +, -](#operator_add_-)|Add, subtract, and change sign for `COleDateTimeSpan` values.|
 |[operator +=, -=](#operator_add_eq_-_eq)|Add and subtract a `COleDateTimeSpan` value from this `COleDateTimeSpan` value.|
 |[operator =](#operator_eq)|Copies a `COleDateTimeSpan` value.|
 |[operator ==, <, <=](#coledatetimespan_relational_operators)|Compare two `COleDateTimeSpan` values.|
-|[operator double](#operator_double)|Converts this `COleDateTimeSpan` value to a **double**.|
+|[operator double](#operator_double)|Converts this `COleDateTimeSpan` value to a **`double`**.|
 
 ### Public Data Members
 
 |Name|Description|
 |----------|-----------------|
-|[COleDateTimeSpan::m_span](#m_span)|Contains the underlying **double** for this `COleDateTimeSpan` object.|
+|[COleDateTimeSpan::m_span](#m_span)|Contains the underlying **`double`** for this `COleDateTimeSpan` object.|
 |[COleDateTimeSpan::m_status](#m_status)|Contains the status of this `COleDateTimeSpan` object.|
 
 ## Remarks
@@ -65,7 +66,7 @@ A `COleDateTimeSpan` keeps time in days.
 
 `COleDateTimeSpan` is used with its companion class [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md). `COleDateTime` encapsulates the `DATE` data type of OLE automation. `COleDateTime` represents absolute time values. All `COleDateTime` calculations involve `COleDateTimeSpan` values. The relation between these classes is analogous to the one between [CTime](../../atl-mfc-shared/reference/ctime-class.md) and [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md).
 
-For more information on the `COleDateTime` and `COleDateTimeSpan` classes, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information on the `COleDateTime` and `COleDateTimeSpan` classes, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ## Requirements
 
@@ -134,7 +135,7 @@ All of these constructors create new `COleDateTimeSpan` objects initialized to t
 
 The status of the new `COleDateTimeSpan` object is set to valid.
 
-For more information about the bounds for `COleDateTimeSpan` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTimeSpan` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ### Example
 
@@ -375,7 +376,7 @@ The status of a `COleDateTimeSpan` object is invalid in the following cases:
 
 For more information about the operations that may set the status to invalid, see [COleDateTimeSpan::operator +, -](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_-) and [COleDateTimeSpan::operator +=, -=](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_eq_-_eq).
 
-For more information about the bounds for `COleDateTimeSpan` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTimeSpan` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ## <a name="gettotaldays"></a> COleDateTimeSpan::GetTotalDays
 
@@ -523,7 +524,7 @@ See the example for [GetTotalDays](#gettotaldays).
 
 ## <a name="m_span"></a> COleDateTimeSpan::m_span
 
-The underlying **double** value for this `COleDateTime` object.
+The underlying **`double`** value for this `COleDateTime` object.
 
 ```
 double m_span;
@@ -534,7 +535,7 @@ double m_span;
 This value expresses the date/time-span in days.
 
 > [!CAUTION]
-> Changing the value in the **double** data member will change the value of this `COleDateTimeSpan` object. It does not change the status of this `COleDateTimeSpan` object.
+> Changing the value in the **`double`** data member will change the value of this `COleDateTimeSpan` object. It does not change the status of this `COleDateTimeSpan` object.
 
 ## <a name="m_status"></a> COleDateTimeSpan::m_status
 
@@ -575,7 +576,7 @@ For more information about the operations that may set the status to invalid, se
 > [!CAUTION]
 > This data member is for advanced programming situations. You should use the inline member functions [GetStatus](#getstatus) and [SetStatus](#setstatus). See `SetStatus` for further cautions regarding explicitly setting this data member.
 
-For more information about the bounds for `COleDateTimeSpan` values, see the article [Date and Time: Automation Support](../../atl-mfc-shared/date-and-time-automation-support.md).
+For more information about the bounds for `COleDateTimeSpan` values, see the article [Date and Time: Automation Support](../date-and-time.md).
 
 ## <a name="operator_eq"></a> COleDateTimeSpan::operator =
 
@@ -636,7 +637,7 @@ For more information on the valid, invalid, and null status values, see the [m_s
 
 ## <a name="operator_double"></a> COleDateTimeSpan::operator double
 
-Converts this `COleDateTimeSpan` value to a **double**.
+Converts this `COleDateTimeSpan` value to a **`double`**.
 
 ```
 operator double() const throw();

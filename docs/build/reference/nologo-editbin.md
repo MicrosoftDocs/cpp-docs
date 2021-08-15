@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /NOLOGO (EDITBIN)"
 title: "/NOLOGO (EDITBIN)"
 ms.date: "11/04/2016"
 f1_keywords: ["/nologo_editbin"]

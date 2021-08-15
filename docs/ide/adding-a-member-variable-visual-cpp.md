@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add a member variable"
 title: "Add a member variable"
 ms.date: "11/09/2018"
 f1_keywords: ["vc.codewiz.classes.member.variable", "vc.codewiz.variable.overview"]
@@ -52,7 +53,7 @@ This wizard adds a member variable declaration to the header file. Depending on 
 
 - **Access**
 
-  Sets the access to the member variable. Access modifiers are keywords that specify the access other classes have to the member variable. For more information about specifying access, see [member-access control](../cpp/member-access-control-cpp.md). The member variable access level is set to `public` by default.
+  Sets the access to the member variable. Access modifiers are keywords that specify the access other classes have to the member variable. For more information about specifying access, see [member-access control](../cpp/member-access-control-cpp.md). The member variable access level is set to **`public`** by default.
 
   - [public](../cpp/public-cpp.md)
   - [protected](../cpp/protected-cpp.md)
@@ -66,13 +67,15 @@ This wizard adds a member variable declaration to the header file. Depending on 
 
     For information about the types, see [fundamental types](../cpp/fundamental-types-cpp.md).
 
-    |||
-    |-|-|
-    |`char`|`short`|
-    |`double`|`unsigned char`|
-    |`float`|`unsigned int`|
-    |`int`|`unsigned long`|
-    |`long`||
+    - **`char`**
+    - **`double`**
+    - **`float`**
+    - **`int`**
+    - **`long`**
+    - **`short`**
+    - **`unsigned char`**
+    - **`unsigned int`**
+    - **`unsigned long`**
 
   - If you're adding a member variable for a dialog box control, this box is filled with the type of object that is returned for a control or value. If you select **Control**, then **Variable type** specifies the base class of the control you select in the **Control ID** box. If the dialog box control can hold a value, and if you select **Value**, then **Variable type** specifies the appropriate type for the value that control can hold. For more information, see [dialog box controls and variable types](#dialog-box-controls-and-variable-types).
 
@@ -109,11 +112,11 @@ This wizard adds a member variable declaration to the header file. Depending on 
 
 - **Min value**
 
-  Available only when the variable type is `BOOL`, `int`, `UINT`, `long`, `DWORD`, `float`, `double`, `BYTE`, `short`, [COLECurrency](../mfc/reference/colecurrency-class.md) or [CTime](../atl-mfc-shared/reference/ctime-class.md). Indicates the lowest value acceptable for a scale or date range.
+  Available only when the variable type is `BOOL`, **`int`**, `UINT`, **`long`**, `DWORD`, **`float`**, **`double`**, `BYTE`, **`short`**, [COLECurrency](../mfc/reference/colecurrency-class.md) or [CTime](../atl-mfc-shared/reference/ctime-class.md). Indicates the lowest value acceptable for a scale or date range.
 
 - **Max value**
 
-  Available only when the variable type is `BOOL`, `int`, `UINT`, `long`, `DWORD`, `float`, `double`, `BYTE`, `short`, `COLECurrency`, or `CTime`. Indicates the highest value acceptable for a scale or date range.
+  Available only when the variable type is `BOOL`, **`int`**, `UINT`, **`long`**, `DWORD`, **`float`**, **`double`**, `BYTE`, **`short`**, `COLECurrency`, or `CTime`. Indicates the highest value acceptable for a scale or date range.
 
 - **.h file**
 
@@ -148,8 +151,8 @@ The following table describes all the dialog box control types that are supporte
 |Progress control|msctls_progress32|[CProgressCtrl](../mfc/reference/cprogressctrl-class.md)|None; control only|N/A|
 |Rich Edit 2 control|RichEdit20A|[CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)|`CString`|Max characters|
 |Rich Edit control|RICHEDIT|`CRichEditCtrl`|`CString`|Max characters|
-|Scroll bar (vertical or horizontal|SCROLLBAR|[CScrollBar](../mfc/reference/cscrollbar-class.md)|`int`|Min value/max value|
-|Slider control|msctls_trackbar32|[CSliderCtrl](../mfc/reference/csliderctrl-class.md)|`int`|Min value/max value|
+|Scroll bar (vertical or horizontal|SCROLLBAR|[CScrollBar](../mfc/reference/cscrollbar-class.md)|**`int`**|Min value/max value|
+|Slider control|msctls_trackbar32|[CSliderCtrl](../mfc/reference/csliderctrl-class.md)|**`int`**|Min value/max value|
 |Spin control|msctls_updown32|[CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)|None; control only|N/A|
 |Tab control|SysTabControl32|[CTabCtrl](../mfc/reference/ctabctrl-class.md)|None; control only|N/A|
 |Tree control|SysTreeView32|[CTreeCtrl](../mfc/reference/ctreectrl-class.md)|None; control only|N/A|

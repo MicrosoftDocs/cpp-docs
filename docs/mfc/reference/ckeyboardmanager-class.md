@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CKeyboardManager Class"
 title: "CKeyboardManager Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager::CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager::CleanUp", "AFXKEYBOARDMANAGER/CKeyboardManager::FindDefaultAccelerator", "AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyHandled", "AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyPrintable", "AFXKEYBOARDMANAGER/CKeyboardManager::IsShowAllAccelerators", "AFXKEYBOARDMANAGER/CKeyboardManager::LoadState", "AFXKEYBOARDMANAGER/CKeyboardManager::ResetAll", "AFXKEYBOARDMANAGER/CKeyboardManager::SaveState", "AFXKEYBOARDMANAGER/CKeyboardManager::ShowAllAccelerators", "AFXKEYBOARDMANAGER/CKeyboardManager::TranslateCharToUpper", "AFXKEYBOARDMANAGER/CKeyboardManager::UpdateAccelTable"]
@@ -19,16 +20,14 @@ class CKeyboardManager : public CObject
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CKeyboardManager::CKeyboardManager](#ckeyboardmanager)|Constructs a `CKeyboardManager` object.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CKeyboardManager::CleanUp](#cleanup)|Clears the shortcut key tables.|
 |[CKeyboardManager::FindDefaultAccelerator](#finddefaultaccelerator)|Retrieves the default shortcut key for the specified command and window.|
 |[CKeyboardManager::IsKeyHandled](#iskeyhandled)|Determines whether a key is handled by the accelerator table.|
@@ -137,13 +136,17 @@ static BOOL __stdcall IsKeyHandled(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*nKey*|[in] The key to check.|
-|*fVirt*|[in] Specifies the behavior of the shortcut key. For a list of possible values, see [ACCEL Structure](/windows/win32/api/winuser/ns-winuser-accel).|
-|*pWndFrame*|[in] A frame window. This method determines whether a shortcut key is handled in this frame.|
-|*bIsDefaultFrame*|[in] A Boolean parameter that indicates whether *pWndFrame* is the default frame window.|
+*nKey*\
+[in] The key to check.
+
+*fVirt*\
+[in] Specifies the behavior of the shortcut key. For a list of possible values, see [ACCEL Structure](/windows/win32/api/winuser/ns-winuser-accel).
+
+*pWndFrame*\
+[in] A frame window. This method determines whether a shortcut key is handled in this frame.
+
+*bIsDefaultFrame*\
+[in] A Boolean parameter that indicates whether *pWndFrame* is the default frame window.
 
 ### Return Value
 
@@ -163,10 +166,8 @@ static BOOL __stdcall IsKeyPrintable(const UINT nChar);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*nChar*|[in] The character that this method checks.|
+*nChar*\
+[in] The character that this method checks.
 
 ### Return Value
 

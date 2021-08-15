@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRecordView Class"
 title: "CRecordView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRecordView", "AFXDB/CRecordView", "AFXDB/CRecordView::CRecordView", "AFXDB/CRecordView::IsOnFirstRecord", "AFXDB/CRecordView::IsOnLastRecord", "AFXDB/CRecordView::OnGetRecordset", "AFXDB/CRecordView::OnMove"]
@@ -102,7 +103,7 @@ You can either identify the resource by name (pass a string as the argument to t
 `CRecordView::OnInitialUpdate` calls `UpdateData`, which calls `DoDataExchange`. This initial call to `DoDataExchange` connects `CRecordView` controls (indirectly) to `CRecordset` field data members created by ClassWizard. These data members cannot be used until after you call the base class `CFormView::OnInitialUpdate` member function.
 
 > [!NOTE]
-> If you use ClassWizard, the wizard defines an **enum** value `CRecordView::IDD`, specifies it in the class declaration, and uses it in the member initialization list for the constructor.
+> If you use ClassWizard, the wizard defines an **`enum`** value `CRecordView::IDD`, specifies it in the class declaration, and uses it in the member initialization list for the constructor.
 
 ### Example
 

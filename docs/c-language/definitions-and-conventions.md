@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Definitions and Conventions"
 title: "Definitions and Conventions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["nonterminals definition"]
@@ -21,7 +22,7 @@ The syntax conventions use different font attributes for different components of
 |Attribute|Description|
 |---------------|-----------------|
 |*nonterminal*|Italic type indicates nonterminals.|
-|**const**|Terminals in bold type are literal reserved words and symbols that must be entered as shown. Characters in this context are always case sensitive.|
+|**`const`**|Terminals in bold type are literal reserved words and symbols that must be entered as shown. Characters in this context are always case sensitive.|
 |<sub>opt</sub>|Nonterminals followed by <sub>opt</sub> are always optional.|
 |default typeface|Characters in the set described or listed in this typeface can be used as terminals in C statements.|
 

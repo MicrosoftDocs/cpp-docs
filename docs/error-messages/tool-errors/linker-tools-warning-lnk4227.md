@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Warning LNK4227"
 title: "Linker Tools Warning LNK4227"
 ms.date: "11/04/2016"
 f1_keywords: ["LNK4227"]
@@ -21,7 +22,7 @@ LNK4227 is also used to report problems that originate with another tool. Search
 
 The metadata problems must be fixed to resolve the warning.
 
-## Example
+## Examples
 
 LNK4227 is generated when a referenced assembly was signed differently than the assembly that references it.
 
@@ -53,8 +54,6 @@ ref class MyClass
 {
 };
 ```
-
-## Example
 
 LNK4227 can also be generated when version numbers in the wrong format are passed to assembly attributes.  The '*' notation is specific to the `AssemblyVersionAttribute`.  To resolve this warning, use only numbers in the version attributes other than `AssemblyVersionAttribute`.
 

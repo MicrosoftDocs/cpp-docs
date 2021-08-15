@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: add_const Class"
 title: "add_const Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::add_const"]
@@ -57,5 +58,5 @@ add_const<int> == int
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)\
-[remove_const Class](../standard-library/remove-const-class.md)
+[<type_traits>](type-traits.md)\
+[remove_const Class](remove-const-class.md)

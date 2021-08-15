@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: insert_iterator Class"
 title: "insert_iterator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["iterator/std::insert_iterator", "iterator/std::insert_iterator::container_type", "iterator/std::insert_iterator::reference"]
@@ -313,7 +314,7 @@ The first member operator evaluates
 
 `++Iter;`
 
-then returns `*this`.
+then returns **`*this`**.
 
 The second member operator evaluates
 
@@ -321,7 +322,7 @@ The second member operator evaluates
 
 `++Iter;`
 
-then returns `*this`.
+then returns **`*this`**.
 
 ### Example
 

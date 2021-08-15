@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _locking Constants"
 title: "_locking Constants"
 ms.date: "11/04/2016"
 f1_keywords: ["_LK_RLCK", "_LK_NBLCK", "_LK_LOCK", "_LK_NBRLCK", "_LK_UNLCK"]
@@ -19,7 +20,7 @@ The *mode* argument in the call to the `_locking` function specifies the locking
 
 The *mode* argument must be one of the following manifest constants.
 
-|||
+|Value|Description|
 |-|-|
 | `_LK_LOCK`  | Locks the specified bytes. If the bytes cannot be locked, the function tries again after 1 second. If, after 10 attempts, the bytes cannot be locked, the function returns an error.  |
 | `_LK_RLCK`  | Same as `_LK_LOCK`.  |

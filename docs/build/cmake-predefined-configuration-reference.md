@@ -1,20 +1,21 @@
 ---
+description: "Learn more about: CMake predefined build configurations"
 title: "CMake predefined configuration reference"
 ms.description: "Visual Studio provides several predefined build configurations for CMake projects on Linux, Windows, ARM, and IoT."
-ms.date: "06/12/2019"
+ms.date: 08/03/2021
 helpviewer_keywords: ["CMake redefined configurations"]
 ---
 # CMake predefined build configurations
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 CMake projects are supported in Visual Studio 2017 and later.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-In a CMake project, build configurations are stored in a CMakeSettings.json file. When you choose **Manage Configurations** from the build configuration dropdown in the main toolbar, a dialog appears that shows the default CMake configurations available in Visual Studio:
+In a CMake project, build configurations are stored in a *`CMakeSettings.json`* file. When you choose **Manage Configurations** from the build configuration dropdown in the main toolbar, a dialog appears that shows the default CMake configurations available in Visual Studio:
 
 - x86 Debug
 - x86 Release
@@ -27,7 +28,7 @@ In a CMake project, build configurations are stored in a CMakeSettings.json file
 - MinGW Debug
 - MinGW Release
 
-When you choose a configuration, it is added to the *CMakeSettings.json* file in the project's root folder. You can then use it to build your project. For information about the configuration properties, see [CMakeSettings reference](cmakesettings-reference.md).
+When you choose a configuration, it's added to the *`CMakeSettings.json`* file in the project's root folder. You can then use it to build your project. For information about the configuration properties, see [CMakeSettings reference](cmakesettings-reference.md).
 
 ## Linux predefined build configurations:
 
@@ -59,7 +60,7 @@ When you choose a configuration, it is added to the *CMakeSettings.json* file in
       "inheritEnvironments": [
         "linux_x64"
       ]
-    }
+}
 
 {
       "name": "Linux-Release",
@@ -88,9 +89,8 @@ When you choose a configuration, it is added to the *CMakeSettings.json* file in
       "inheritEnvironments": [
         "linux_x64"
       ]
-    },
-    ```
-
+},
+```
 
 You can use these optional settings for more control:
 
@@ -347,9 +347,9 @@ These options allow you to run commands on the remote system before and after bu
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-In a CMake project, build configurations are stored in a CMakeSettings.json file. When you choose **Manage Configurations** from the build configuration dropdown in the main toolbar, a dialog appears that shows the default CMake configurations available in Visual Studio:
+In a CMake project, build configurations are stored in a *`CMakeSettings.json`* file. When you choose **Manage Configurations** from the build configuration dropdown in the main toolbar, a dialog appears that shows the default CMake configurations available in Visual Studio:
 
 - x86 Debug
 - x86 Clang Debug
@@ -373,7 +373,7 @@ In a CMake project, build configurations are stored in a CMakeSettings.json file
 - WSL Clang Release
 - Clang
 
-When you choose a configuration, it is added to the CMakeSettings.json file in the project's root folder. You can then use it to build your project.
+When you choose a configuration, it's added to the *`CMakeSettings.json`* file in the project's root folder. You can then use it to build your project.
 
 ```json
 {

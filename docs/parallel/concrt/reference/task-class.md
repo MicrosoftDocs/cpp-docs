@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: task Class (Concurrency Runtime)"
 title: "task Class (Concurrency Runtime)"
 ms.date: "07/30/2019"
 f1_keywords: ["task", "PPLTASKS/concurrency::task", "PPLTASKS/concurrency::task::task", "PPLTASKS/concurrency::task::get", "PPLTASKS/concurrency::task::is_apartment_aware", "PPLTASKS/concurrency::task::is_done", "PPLTASKS/concurrency::task::scheduler", "PPLTASKS/concurrency::task::then", "PPLTASKS/concurrency::task::wait"]
@@ -42,7 +43,7 @@ The type of the result that the task produces.
 
 |Name|Description|
 |----------|-----------------|
-|[get](#get)|Overloaded. Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of `void`.|
+|[get](#get)|Overloaded. Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of **`void`**.|
 |[is_apartment_aware](#is_apartment_aware)|Determines whether the task unwraps a Windows Runtime `IAsyncInfo` interface or is descended from such a task.|
 |[is_done](#is_done)|Determines if the task is completed.|
 |[scheduler](#scheduler)|Returns the scheduler for this task|
@@ -73,7 +74,7 @@ For more information, see [Task Parallelism](../../../parallel/concrt/task-paral
 
 ## <a name="get"></a> get
 
-Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of `void`.
+Returns the result this task produced. If the task is not in a terminal state, a call to `get` will wait for the task to finish. This method does not return a value when called on a task with a `result_type` of **`void`**.
 
 ```cpp
 _ResultType get() const;
@@ -102,7 +103,7 @@ bool is_apartment_aware() const;
 
 ### Return Value
 
-**true** if the task unwraps an `IAsyncInfo` interface or is descended from such a task, **false** otherwise.
+**`true`** if the task unwraps an `IAsyncInfo` interface or is descended from such a task, **`false`** otherwise.
 
 ## <a name="is_done"></a> task::is_done Method (Concurrency Runtime)
 
@@ -137,7 +138,7 @@ The task to compare.
 
 ### Return Value
 
-**true** if the objects refer to different underlying tasks, and **false** otherwise.
+**`true`** if the objects refer to different underlying tasks, and **`false`** otherwise.
 
 ## <a name="operator_eq"></a> operator=
 
@@ -177,7 +178,7 @@ The task to compare.
 
 ### Return Value
 
-**true** if the objects refer to the same underlying task, and **false** otherwise.
+**`true`** if the objects refer to the same underlying task, and **`false`** otherwise.
 
 ## <a name="scheduler"></a> task::scheduler Method (Concurrency Runtime)
 

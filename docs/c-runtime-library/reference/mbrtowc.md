@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: mbrtowc"
 title: "mbrtowc"
 ms.date: "4/2/2020"
 api_name: ["mbrtowc", "_o_mbrtowc"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbrtowc"]
@@ -27,7 +28,7 @@ size_t mbrtowc(
 ### Parameters
 
 *wchar*<br/>
-Address of a wide character to receive the converted wide character string (type **wchar_t**). This value can be a null pointer if no return wide character is required.
+Address of a wide character to receive the converted wide character string (type **`wchar_t`**). This value can be a null pointer if no return wide character is required.
 
 *mbchar*<br/>
 Address of a sequence of bytes (a multibyte character).

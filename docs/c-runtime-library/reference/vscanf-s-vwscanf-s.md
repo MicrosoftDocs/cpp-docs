@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: vscanf_s, vwscanf_s"
 title: "vscanf_s, vwscanf_s"
 ms.date: "11/04/2016"
 api_name: ["vscanf_s", "vwscanf_s"]
@@ -45,12 +46,12 @@ The **vscanf_s** function reads data from the standard input stream **stdin** an
 
 **vwscanf_s** is a wide-character version of **vscanf_s**; the *format* argument to **vwscanf_s** is a wide-character string. **vwscanf_s** and **vscanf_s** behave identically if the stream is opened in ANSI mode. **vscanf_s** doesn't support input from a UNICODE stream.
 
-Unlike **vscanf** and **vwscanf**, **vscanf_s** and **vwscanf_s** require the buffer size to be specified for all input parameters of type **c**, **C**, **s**, **S**, or string control sets that are enclosed in **[]**. The buffer size in characters is passed as an additional parameter immediately following the pointer to the buffer or variable. The buffer size in characters for a **wchar_t** string is not the same as the size in bytes.
+Unlike **vscanf** and **vwscanf**, **vscanf_s** and **vwscanf_s** require the buffer size to be specified for all input parameters of type **c**, **C**, **s**, **S**, or string control sets that are enclosed in **[]**. The buffer size in characters is passed as an additional parameter immediately following the pointer to the buffer or variable. The buffer size in characters for a **`wchar_t`** string is not the same as the size in bytes.
 
 The buffer size includes the terminating null. You can use a width-specification field to ensure that the token that's read in will fit into the buffer. If no width specification field is used, and the token read in is too big to fit in the buffer, nothing is written to that buffer.
 
 > [!NOTE]
-> The *size* parameter is of type **unsigned**, not **size_t**.
+> The *size* parameter is of type **`unsigned`**, not **size_t**.
 
 For more information, see [scanf Width Specification](../../c-runtime-library/scanf-width-specification.md).
 

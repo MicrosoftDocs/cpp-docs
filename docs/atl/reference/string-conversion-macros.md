@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: String Conversion Macros"
 title: "String Conversion Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlconv/ATL::DEVMODEA2W", "atlconv/ATL::TEXTMETRICA2W", "atlconv/ATL::DEVMODEOLE2T", "atlconv/ATL::TEXTMETRICOLE2T", "atlconv/ATL::DEVMODET2OLE", "atlconv/ATL::TEXTMETRICT2OLE", "atlconv/ATL::DEVMODEW2A", "atlconv/ATL::TEXTMETRICW2A"]
@@ -49,7 +50,7 @@ The behavior of the `DEVMODE` and `TEXTMETRIC` string conversion macros depends 
 
 The following table lists the `DEVMODE` and `TEXTMETRIC` string conversion macros.
 
-|||
+|`DEVMODE` macro|`TEXTMETRIC` macro|
 |-|-|
 |DEVMODEA2W|TEXTMETRICA2W|
 |DEVMODEOLE2T|TEXTMETRICOLE2T|

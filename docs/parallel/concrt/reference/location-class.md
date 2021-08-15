@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: location Class"
 title: "location Class"
 ms.date: "11/04/2016"
 f1_keywords: ["location", "CONCRT/concurrency::location", "CONCRT/concurrency::location::location", "CONCRT/concurrency::location::current", "CONCRT/concurrency::location::from_numa_node"]
@@ -135,7 +136,7 @@ Operand `location`.
 
 ### Return Value
 
-**true** if the two locations are different, **false** otherwise.
+**`true`** if the two locations are different, **`false`** otherwise.
 
 ## <a name="operator_eq"></a> operator=
 
@@ -167,7 +168,7 @@ Operand `location`.
 
 ### Return Value
 
-**true** if the two locations are identical, and **false** otherwise.
+**`true`** if the two locations are identical, and **`false`** otherwise.
 
 ## See also
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Building Browse Information Files: Overview"
 title: "Building Browse Information Files: Overview"
 ms.date: "05/06/2019"
 helpviewer_keywords: [".bsc files, about .bsc files", "bsc files, about bsc files", "browse information files (.bsc)", "browse information files (.bsc), creating"]

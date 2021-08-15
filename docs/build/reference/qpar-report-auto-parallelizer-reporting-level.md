@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Qpar-report (Auto-Parallelizer Reporting Level)"
 title: "/Qpar-report (Auto-Parallelizer Reporting Level)"
 ms.date: "11/04/2016"
 ms.assetid: 562673b9-02da-4bf8-bb64-70bc25ef4651
@@ -27,9 +28,9 @@ Messages are reported to stdout. If no informational messages are reported, then
 
 1. In **Solution Explorer**, open the shortcut menu for the project and then choose **Properties**.
 
-1. In the **Property Pages** dialog box, under **C/C++**, select **Command Line**.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. In the **Additional Options** box, enter `/Qpar-report:1` or `/Qpar-report:2`.
+1. In the **Additional Options** box, enter *`/Qpar-report:1`* or *`/Qpar-report:2`*.
 
 ### To set the /Qpar-report compiler option programmatically
 
@@ -40,4 +41,4 @@ Messages are reported to stdout. If no informational messages are reported, then
 [/Q Options (Low-Level Operations)](q-options-low-level-operations.md)<br/>
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
-[Parallel Programming in Native Code](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)
+[Native code vectorization in Visual Studio](/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview)

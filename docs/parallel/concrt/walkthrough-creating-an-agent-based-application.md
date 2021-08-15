@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Creating an Agent-Based Application"
 title: "Walkthrough: Creating an Agent-Based Application"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["asynchronous agents, creating", "agent class, example"]
@@ -34,7 +35,7 @@ This walkthrough demonstrates how to perform the following tasks:
 
 This section shows how to create a C++ console application that references the header files that the program will use. The initial steps vary depending on which version of Visual Studio you are using. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To create a C++ console application in Visual Studio 2019
 
@@ -50,7 +51,7 @@ This section shows how to create a C++ console application that references the h
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### To create a C++ console application in Visual Studio 2017 and earlier
 
@@ -88,13 +89,13 @@ This section shows how to create the `file_reader` class. The runtime schedules 
 
 [!code-cpp[concrt-basic-agent#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_3.h)]
 
-1. Add the following data members to the `private` section of your class.
+1. Add the following data members to the **`private`** section of your class.
 
 [!code-cpp[concrt-basic-agent#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_4.h)]
 
    The `_file_name` member is the file name that the agent reads from. The `_target` member is a [concurrency::ITarget](../../parallel/concrt/reference/itarget-class.md) object that the agent writes the contents of the file to. The `_error` member holds any error that occurs during the life of the agent.
 
-1. Add the following code for the `file_reader` constructors to the `public` section of the `file_reader` class.
+1. Add the following code for the `file_reader` constructors to the **`public`** section of the `file_reader` class.
 
 [!code-cpp[concrt-basic-agent#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_5.h)]
 
@@ -106,7 +107,7 @@ This section shows how to create the `file_reader` class. The runtime schedules 
 
    The `get_error` method retrieves any error that occurs during the life of the agent.
 
-1. Implement the [concurrency::agent::run](reference/agent-class.md#run) method in the `protected` section of your class.
+1. Implement the [concurrency::agent::run](reference/agent-class.md#run) method in the **`protected`** section of your class.
 
 [!code-cpp[concrt-basic-agent#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_7.h)]
 
@@ -130,7 +131,7 @@ This section shows how to use the `file_reader` class to read the contents of a 
 
 [!code-cpp[concrt-basic-agent#8](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_9.cpp)]
 
-1. In BasicAgent.cpp, add the following `using` directives.
+1. In BasicAgent.cpp, add the following **`using`** directives.
 
 [!code-cpp[concrt-basic-agent#9](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_10.cpp)]
 
@@ -186,7 +187,7 @@ Adler-32 sum is fefb0d75
 
 ## Robust Programming
 
-To prevent concurrent access to data members, we recommend that you add methods that perform work to the `protected` or `private` section of your class. Only add methods that send or receive messages to or from the agent to the `public` section of your class.
+To prevent concurrent access to data members, we recommend that you add methods that perform work to the **`protected`** or **`private`** section of your class. Only add methods that send or receive messages to or from the agent to the **`public`** section of your class.
 
 Always call the [concurrency::agent::done](reference/agent-class.md#done) method to move your agent to the completed state. You typically call this method before you return from the `run` method.
 

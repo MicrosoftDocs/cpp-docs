@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Convert an OpenMP Loop that Uses Cancellation to Use the Concurrency Runtime"
 title: "How to: Convert an OpenMP Loop that Uses Cancellation to Use the Concurrency Runtime"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["converting from OpenMP to the Concurrency Runtime, cancellation", "cancellation, converting from OpenMP to the Concurrency Runtime"]
@@ -8,7 +9,7 @@ ms.assetid: 4b0b3c33-bfa9-4e96-ae08-aef245a39cbb
 
 Some parallel loops do not require that all iterations be executed. For example, an algorithm that searches for a value can terminate after the value is found. OpenMP does not provide a mechanism to break out of a parallel loop. However, you can use a Boolean value, or flag, to enable an iteration of the loop to indicate that the solution has been found. The Concurrency Runtime provides functionality that enables one task to cancel other tasks that have not yet started.
 
-This example demonstrates how to convert an OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../../parallel/openmp/reference/for-openmp.md) loop that does not require for all iterations to run to use the Concurrency Runtime cancellation mechanism.
+This example demonstrates how to convert an OpenMP [parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../openmp/reference/openmp-directives.md#for-openmp) loop that does not require for all iterations to run to use the Concurrency Runtime cancellation mechanism.
 
 ## Example
 

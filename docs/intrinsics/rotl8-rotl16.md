@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _rotl8, _rotl16"
 title: "_rotl8, _rotl16"
 ms.date: "09/02/2019"
 f1_keywords: ["_rotl8", "_rotl16"]

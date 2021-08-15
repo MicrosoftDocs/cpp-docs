@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;regex&gt; operators"
 title: "&lt;regex&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["regex/std::operator!=", "regex/std::operator>", "regex/std::operator>=", "regex/std::operator<", "regex/std::operator<=", "regex/std::operator==", "regex/std::operator<<"]
@@ -6,11 +7,13 @@ ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
 ---
 # &lt;regex&gt; operators
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
-|[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|[operator&lt;=](#op_lt_eq)|
-|[operator==](#op_eq_eq)|
+[operator!=](#op_neq)\
+[operator&gt;](#op_gt)\
+[operator&gt;=](#op_gt_eq)\
+[operator&lt;](#op_lt)\
+[operator&lt;&lt;](#op_lt_lt)\
+[operator&lt;=](#op_lt_eq)\
+[operator==](#op_eq_eq)
 
 ## <a name="op_neq"></a> operator!=
 

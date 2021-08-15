@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: basic_istringstream Class"
 title: "basic_istringstream Class"
 ms.date: "11/04/2016"
 f1_keywords: ["sstream/std::basic_istringstream", "sstream/std::basic_istringstream::allocator_type", "sstream/std::basic_istringstream::rdbuf", "sstream/std::basic_istringstream::str", "sstream/std::basic_istringstream::swap"]
@@ -177,9 +178,8 @@ void swap(basic_istringstream& right);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*right*|An `lvalue` reference to a `basic_istringstream` object.|
+*right*\
+An lvalue reference to a `basic_istringstream` object.
 
 ### Remarks
 

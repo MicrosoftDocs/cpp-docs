@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPaneDialog Class"
 title: "CPaneDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPaneDialog", "AFXPANEDIALOG/CPaneDialog", "AFXPANEDIALOG/CPaneDialog::Create", "AFXPANEDIALOG/CPaneDialog::HandleInitDialog", "AFXPANEDIALOG/CPaneDialog::SetOccDialogInfo"]

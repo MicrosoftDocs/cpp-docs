@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: version (C++)"
 title: "version  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.version"]
@@ -30,11 +31,9 @@ See the [bindable](bindable.md) example for a sample use of **version**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|**coclass**|
 |**Invalid attributes**|None|

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: The CCmdUI Class"
 title: "The CCmdUI Class"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["updating user interface objects [MFC]", "user interface objects [MFC], updating", "CCmdUI class [MFC], menu updating", "update handlers [MFC]", "toolbars [MFC], updating"]

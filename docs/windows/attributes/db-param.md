@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: db_param"
 title: "db_param (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.db_param"]
@@ -96,11 +97,9 @@ struct CSalesbyYear {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**, member, method, local|
+|**Applies to**|**`class`**, **`struct`**, member, method, local|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

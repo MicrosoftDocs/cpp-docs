@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;string&gt; operators"
 title: "&lt;string&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["string/std::operator!=", "string/std::operator&gt;", "string/std::operator&gt;&gt;", "string/std::operator&gt;=", "string/std::operator&lt;", "string/std::operator&lt;&lt;", "string/std::operator&lt;=", "string/std::operator+", "string/std::operator=="]
@@ -7,11 +8,15 @@ helpviewer_keywords: ["std::operator!= (string)", "std::operator&gt; (string)", 
 ---
 # &lt;string&gt; operators
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;&gt;](#op_gt_gt)|
-|[operator&gt;=](#op_gt_eq)|[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|
-|[operator&lt;=](#op_lt_eq)|[operator+](#op_add)|[operator==](#op_eq_eq)|
+[operator!=](#op_neq)\
+[operator&gt;](#op_gt)\
+[operator&gt;&gt;](#op_gt_gt)\
+[operator&gt;=](#op_gt_eq)\
+[operator&lt;](#op_lt)\
+[operator&lt;&lt;](#op_lt_lt)\
+[operator&lt;=](#op_lt_eq)\
+[operator+](#op_add)\
+[operator==](#op_eq_eq)
 
 ## <a name="op_add"></a> operator+
 
@@ -178,7 +183,7 @@ A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
-**true** if the string object on the left side of the operator is not lexicographically equal to the string object on the right side; otherwise **false**.
+**`true`** if the string object on the left side of the operator is not lexicographically equal to the string object on the right side; otherwise **`false`**.
 
 ### Remarks
 
@@ -269,7 +274,7 @@ A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
-**true** if the string object on the left side of the operator is lexicographically equal to the string object on the right side; otherwise **false**.
+**`true`** if the string object on the left side of the operator is lexicographically equal to the string object on the right side; otherwise **`false`**.
 
 ### Remarks
 
@@ -360,7 +365,7 @@ A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
-**true** if the string object on the left side of the operator is lexicographically less than the string object on the right side; otherwise **false**.
+**`true`** if the string object on the left side of the operator is lexicographically less than the string object on the right side; otherwise **`false`**.
 
 ### Remarks
 
@@ -456,7 +461,7 @@ A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
-**true** if the string object on the left side of the operator is lexicographically less than or equal to the string object on the right side; otherwise **false**.
+**`true`** if the string object on the left side of the operator is lexicographically less than or equal to the string object on the right side; otherwise **`false`**.
 
 ### Remarks
 
@@ -586,7 +591,7 @@ A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
-**true** if the string object on the left side of the operator is lexicographically greater than the string object on the right side; otherwise **false**.
+**`true`** if the string object on the left side of the operator is lexicographically greater than the string object on the right side; otherwise **`false`**.
 
 ### Remarks
 
@@ -689,7 +694,7 @@ A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
-**true** if the string object on the left side of the operator is lexicographically greater than or equal to the string object on the right side; otherwise **false**.
+**`true`** if the string object on the left side of the operator is lexicographically greater than or equal to the string object on the right side; otherwise **`false`**.
 
 ### Remarks
 
@@ -798,7 +803,7 @@ After the function extracts `_Istr`. [max_size](../standard-library/basic-string
 
 - After the function extracts an element *ch* for which [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype**\< **CharType**> >( `getloc`). **is**( **ctype**\< **CharType**>:: **space**, *ch*) is true, in which case the character is put back.
 
-If the function extracts no elements, it calls [setstate](../standard-library/basic-ios-class.md#setstate)(`ios_base::failbit`). In any case, it calls **istr**. **width**(0) and returns \* **this**.
+If the function extracts no elements, it calls [setstate](../standard-library/basic-ios-class.md#setstate)(`ios_base::failbit`). In any case, it calls **istr**. **width**(0) and returns \* **`this`**.
 
 ### Example
 

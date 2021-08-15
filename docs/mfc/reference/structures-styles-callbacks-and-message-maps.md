@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Structures, Styles, Callbacks, and Message Maps"
 title: "Structures, Styles, Callbacks, and Message Maps"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["callback functions, MFC", "styles, MFC", "message classes [MFC], MFC", "structures, MFC"]

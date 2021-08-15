@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: db_source"
 title: "db_source (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.db_source"]
@@ -60,11 +61,9 @@ class CMyCommand {};
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**, member, method, local|
+|**Applies to**|**`class`**, **`struct`**, member, method, local|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

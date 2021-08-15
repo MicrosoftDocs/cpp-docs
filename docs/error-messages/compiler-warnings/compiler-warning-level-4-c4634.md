@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4634"
 title: "Compiler Warning (level 4) C4634"
 ms.date: "11/04/2016"
 f1_keywords: ["C4634"]
@@ -13,7 +14,7 @@ XML documentation tags can not be applied to all C++ constructs.  For example, y
 
 For more information, see [XML Documentation](../../build/reference/xml-documentation-visual-cpp.md).
 
-## Example
+## Examples
 
 The following sample generates C4634.
 
@@ -25,8 +26,6 @@ namespace hello {
    class MyClass  {};
 };
 ```
-
-## Example
 
 The following sample generates C4634.
 

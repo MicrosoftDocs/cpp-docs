@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDBPropSet Class"
 title: "CDBPropSet Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDBPropSet", "ATL.CDBPropSet", "ATL::CDBPropSet", "CDBPropSet::AddProperty", "CDBPropSet.AddProperty", "AddProperty", "ATL::CDBPropSet::AddProperty", "ATL.CDBPropSet.AddProperty", "CDBPropSet.CDBPropSet", "CDBPropSet::CDBPropSet", "ATL::CDBPropSet::CDBPropSet", "ATL.CDBPropSet.CDBPropSet", "CDBPropSet.operator=", "ATL::CDBPropSet::operator=", "ATL.CDBPropSet.operator=", "CDBPropSet::operator=", "ATL.CDBPropSet.SetGUID", "CDBPropSet.SetGUID", "ATL::CDBPropSet::SetGUID", "CDBPropSet::SetGUID"]
@@ -23,7 +24,7 @@ class CDBPropSet : public tagDBPROPSET
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddProperty](#addproperty)|Adds a property to the property set.|
 |[CDBPropSet](#cdbpropset)|Constructor.|
@@ -31,7 +32,7 @@ class CDBPropSet : public tagDBPROPSET
 
 ### Operators
 
-|||
+| Name | Description |
 |-|-|
 |[operator =](#op_equal)|Assigns the contents of one property set to another.|
 
@@ -88,7 +89,7 @@ bool AddProperty(DWORD dwPropertyID,
 
 ### Return Value
 
-**true** if the property was successfully added. Otherwise, **false**.
+**`true`** if the property was successfully added. Otherwise, **`false`**.
 
 ## <a name="cdbpropset"></a> CDBPropSet::CDBPropSet
 
@@ -129,7 +130,7 @@ void SetGUID(const GUID& guid) throw();
 
 ### Remarks
 
-This field can be set by the [constructor](../../data/oledb/cdbpropset-cdbpropset.md) as well.
+This field can be set by the [constructor](#cdbpropset) as well.
 
 ## <a name="op_equal"></a> CDBPropSet::operator =
 

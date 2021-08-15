@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Box Controls (C++)"
 title: "Dialog Box Controls (C++)| Microsoft Docs"
 ms.date: "02/15/2019"
 f1_keywords: ["Custom Control"]
@@ -36,7 +37,7 @@ The standard controls available in the **Toolbox** with default events are:
 |[Scroll bar control](../mfc/reference/cscrollbar-class.md)|NM_THEMECHANGED|
 
 > [!NOTE]
-> For more information on using the **RichEdit 1.0** control with MFC, see [Using the RichEdit 1.0 Control with MFC](../windows/using-the-richedit-1-0-control-with-mfc.md) and [Rich Edit Control Examples](../mfc/rich-edit-control-examples.md).
+> For more information on using the **RichEdit 1.0** control with MFC, see [Using the RichEdit 1.0 Control with MFC](./adding-editing-or-deleting-controls.md) and [Rich Edit Control Examples](../mfc/rich-edit-control-examples.md).
 
 The [Windows Common Controls](../mfc/controls-mfc.md) available in the **Toolbox** to provide increased functionality are:
 
@@ -89,6 +90,6 @@ Win32
 [Dialog Editor](../windows/dialog-editor.md)
 
 <!--
-[Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
-[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)<br/>
+[Adding Event Handlers for Dialog Box Controls](./adding-editing-or-deleting-controls.md)<br/>
+[Dialog Box Controls and Variable Types](../ide/adding-a-member-variable-visual-cpp.md#dialog-box-controls-and-variable-types)<br/>
 [Controls](../mfc/controls-mfc.md)<br/>-->

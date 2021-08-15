@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CL environment variables"
 title: "CL environment variables"
 ms.date: "06/06/2019"
 helpviewer_keywords: ["INCLUDE environment variable", "cl.exe compiler, environment variables", "LIBPATH environment variable", "environment variables, CL compiler"]
@@ -25,7 +26,7 @@ You can use these environment variables to define the files and options you use 
 
 You can't use the [/D](d-preprocessor-definitions.md) option to define a symbol that uses an equal sign (**=**). Instead, you can use the number sign (**#**) for an equal sign. In this way, you can use the CL or \_CL_ environment variables to define preprocessor constants with explicit values—for example, `/DDEBUG#1` to define `DEBUG=1`.
 
-For related information, see [Set Environment Variables](../setting-the-path-and-environment-variables-for-command-line-builds.md).
+For more information, see [Use the MSVC toolset from the command line](../building-on-the-command-line.md).
 
 ## Examples
 

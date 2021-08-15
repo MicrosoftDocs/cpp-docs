@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __ll_lshift"
 title: "__ll_lshift"
 ms.date: "09/02/2019"
 f1_keywords: ["__ll_lshift_cpp", "__ll_lshift"]
@@ -44,7 +45,7 @@ The mask shifted left by `nBit` bits.
 
 If you compile your program for the 64-bit architecture, and `nBit` is larger than 63, the number of bits to shift is `nBit` modulo 64. If you compile your program for the 32-bit architecture, and `nBit` is larger than 31, the number of bits to shift is `nBit` modulo 32.
 
-The `ll` in the name indicates that it's an operation on `long long` (`__int64`).
+The `ll` in the name indicates that it's an operation on **`long long`** (**`__int64`**).
 
 ## Example
 

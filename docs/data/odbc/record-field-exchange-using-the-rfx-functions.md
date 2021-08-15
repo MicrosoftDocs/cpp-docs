@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Record Field Exchange: Using the RFX Functions"
 title: "Record Field Exchange: Using the RFX Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC [C++], data types", "data types [C++], ODBC record field exchange", "RFX (ODBC) [C++], function syntax and parameters", "DoFieldExchange method, and RFX functions", "ODBC [C++], RFX", "RFX (ODBC) [C++], data types", "function calls, RFX functions"]
@@ -38,10 +39,10 @@ The class library supplies RFX functions for transferring many different data ty
 |`RFX_Bool`|**BOOL**|
 |`RFX_Byte`|**BYTE**|
 |`RFX_Binary`|`CByteArray`|
-|`RFX_Double`|**double**|
-|`RFX_Single`|**float**|
-|`RFX_Int`|**int**|
-|`RFX_Long`|**long**|
+|`RFX_Double`|**`double`**|
+|`RFX_Single`|**`float`**|
+|`RFX_Int`|**`int`**|
+|`RFX_Long`|**`long`**|
 |`RFX_LongBinary`|`CLongBinary`|
 |`RFX_Text`|`CString`|
 |`RFX_Date`|`CTime`|

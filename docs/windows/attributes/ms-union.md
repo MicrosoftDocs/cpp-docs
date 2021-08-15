@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ms_union"
 title: "ms_union (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.ms_union"]
@@ -48,9 +49,7 @@ __interface IFireTabCtrl {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Nonencapsulated unions|
 |**Repeatable**|No|

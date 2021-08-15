@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Assignment conversions"
 title: "Assignment conversions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["conversions, assignment", "assignment conversions"]
@@ -18,7 +19,7 @@ In assignment operations, the type of the value being assigned is converted to t
 
 - [Conversions from other types](../c-language/conversions-from-other-types.md)
 
-Type qualifiers do not affect the allowability of the conversion although a **const** l-value cannot be used on the left side of the assignment.
+Type qualifiers do not affect the allowability of the conversion although a **`const`** l-value cannot be used on the left side of the assignment.
 
 ## See also
 

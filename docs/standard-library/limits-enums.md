@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;limits&gt; enums"
 title: "&lt;limits&gt; enums"
 ms.date: "11/04/2016"
 f1_keywords: ["limits/std::float_denorm_style", "limits/std::float_round_style"]

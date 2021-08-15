@@ -9,7 +9,7 @@ ms.assetid: 76798022-5886-48e7-a7f2-f99352b15cbf
 
 Samples for Visual Studio C++ are available on the web. Microsoft has produced many C++ samples that demonstrate different functionalities across multiple technologies. Here are a few of the places to find additional samples:
 
-- [Microsoft Docs samples - C++](https://docs.microsoft.com/samples/browse/?term=c%2B%2B)
+- [Microsoft Docs samples - C++](/samples/browse/?term=c%2B%2B)
 
 - [Windows samples on GitHub](https://microsoft.github.io/windows/)
 
@@ -19,7 +19,7 @@ Samples for Visual Studio C++ are available on the web. Microsoft has produced m
 
 - [ADO code samples](/office/client-developer/access/desktop-database-reference/ado-code-examples-in-microsoft-visual-c)
 
-- [Windows Hardware development samples](https://docs.microsoft.com/samples/browse/?products=windows-wdk)
+- [Windows Hardware development samples](/samples/browse/?products=windows-wdk)
 
 ## Archived C++ samples on GitHub
 
@@ -240,7 +240,7 @@ Visual Studio included C++ sample code in previous versions. The sample code was
 | [ListHdr](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Demonstrates how to use the common control MFC classes `CListCtrl` and `CHeaderCtrl`. |
 | [MDI](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | MDI application that doesn't use documents and views. |
 | [MDIDocVw](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Updated version of the MDI sample that uses the document/view architecture. |
-| [MMXSwarm](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Demonstrates how to use `CImage`, the `__m64` data type, and device-independent bitmaps (DIBs). |
+| [MMXSwarm](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Demonstrates how to use `CImage`, the **`__m64`** data type, and device-independent bitmaps (DIBs). |
 | [Modeless](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Demonstrates the use of an MFC `CDialog` object as a modeless dialog box. |
 | [Multipad](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Simple text editor that lets the user open and edit multiple text files at one time. |
 | [Npp](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general) | Demonstrates how to implement an interface (SDI) application similar to Notepad. It allows you to edit text messages and send them to other users or other systems through the Windows messaging API, or MAPI. |
@@ -374,7 +374,7 @@ More information is available about the programming models, platforms, languages
 | [Application data sample (Windows 8)](https://github.com/Microsoft/VCSamples/tree/master/VC2012Samples/Windows%208%20samples/C%2B%2B/Windows%208%20app%20samples) | This sample shows you how to store and retrieve data that is specific to each user and Windows Store app using the Windows Runtime application data APIs. Application data includes session state, user preferences, and other settings. |
 | [Custom driver access sample (Windows 8)](https://github.com/Microsoft/VCSamples/tree/master/VC2012Samples/Windows%208%20samples/C%2B%2B/Windows%208%20app%20samples) | This sample shows how to use CreateDeviceAccessInstance and IDeviceIoControl to access a specialized device. |
 | [XAML ListView and GridView essentials sample (Windows 8)](https://github.com/Microsoft/VCSamples/tree/master/VC2012Samples/Windows%208%20samples/C%2B%2B/Windows%208%20app%20samples) | This sample demonstrates how to use the GridView and ListView controls. |
-| [Animation metrics sample (Windows 8)](https://github.com/Microsoft/VCSamples/tree/master/VC2012Samples/Windows%208%20samples/C%2B%2B/Windows%208%20app%20samples) | This sample shows how to use the Animation Metrics APIs in `Windows.UI.Core`.AnimationMetrics to access the raw parameters that define the animations in the Windows Animation Library. |
+| [Animation metrics sample (Windows 8)](https://github.com/Microsoft/VCSamples/tree/master/VC2012Samples/Windows%208%20samples/C%2B%2B/Windows%208%20app%20samples) | This sample shows how to use the Animation Metrics APIs in `Windows.UI.Core.AnimationMetrics` to access the raw parameters that define the animations in the Windows Animation Library. |
 | [Playback Manager msAudioCategory sample (Windows 8)](https://github.com/Microsoft/VCSamples/tree/master/VC2012Samples/Windows%208%20samples/C%2B%2B/Windows%208%20app%20samples) | This sample demonstrates how to select the correct msAudioCategory category for an audio-video (AV) stream to configure it as an audio playback stream. |
 | [XAML DirectX  3D shooting game sample (Windows 8)](https://github.com/Microsoft/VCSamples/tree/master/VC2012Samples/Windows%208%20samples/C%2B%2B/Windows%208%20app%20samples) | This sample demonstrates the implementation of a simple first person 3-D game using DirectX (Direct3D 11.1, Direct2D, XInput, and XAudio2) and XAML in a C++ app. XAML is used for the heads-up display and game state messages. |
 | [XAML scrolling, panning, and zooming sample (Windows 8)](https://github.com/Microsoft/VCSamples/tree/master/VC2012Samples/Windows%208%20samples/C%2B%2B/Windows%208%20app%20samples) | This sample demonstrates how to use the ScrollViewer control to pan and zoom. |

@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _set_new_mode"
 title: "_set_new_mode"
 ms.date: "4/2/2020"
 api_name: ["_set_new_mode", "_o__set_new_mode"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["set_new_mode", "_set_new_mode"]
@@ -30,7 +31,7 @@ Returns the previous handler mode set for **malloc**. A return value of 1 indica
 
 ## Remarks
 
-The C++ **_set_new_mode** function sets the new handler mode for [malloc](malloc.md). The new handler mode indicates whether, on failure, **malloc** is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, **malloc** does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **malloc** fails to allocate memory, **malloc** calls the new handler routine in the same way that the **new** operator does when it fails for the same reason. For more information, see the [new](../../cpp/new-operator-cpp.md) and [delete](../../cpp/delete-operator-cpp.md) operators in the *C++ Language Reference*. To override the default, call:
+The C++ **_set_new_mode** function sets the new handler mode for [malloc](malloc.md). The new handler mode indicates whether, on failure, **malloc** is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, **malloc** does not call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **malloc** fails to allocate memory, **malloc** calls the new handler routine in the same way that the **`new`** operator does when it fails for the same reason. For more information, see the [new](../../cpp/new-operator-cpp.md) and [delete](../../cpp/delete-operator-cpp.md) operators in the *C++ Language Reference*. To override the default, call:
 
 ```cpp
 _set_new_mode(1);

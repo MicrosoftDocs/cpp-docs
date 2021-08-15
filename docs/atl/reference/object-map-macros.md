@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Object Map Macros"
 title: "Object Map Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcom/ATL::DECLARE_OBJECT_DESCRIPTION", "atlcom/ATL::OBJECT_ENTRY_AUTO", "atlcom/ATL::OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO"]
@@ -8,7 +9,7 @@ ms.assetid: 680087f4-9894-41dd-a79c-6f337e1f13c1
 
 These macros define object maps and entries.
 
-|||
+|Name|Description|
 |-|-|
 |[DECLARE_OBJECT_DESCRIPTION](#declare_object_description)|Allows you to specify a class object's text description, which will be entered into the object map.|
 |[OBJECT_ENTRY_AUTO](#object_entry_auto)|Enters an ATL object into the object map, updates the registry, and creates an instance of the object.|

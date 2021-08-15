@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Type Class"
 title: "Platform::Type Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
@@ -20,27 +21,27 @@ public ref class Platform::Type :
 
 ### Remarks
 
-The `Type` class is useful in applications that must direct processing by using an `if` or `switch` statement that branches based on the run-time type of an object. The type code that describes the category of a type is retrieved by using the [Type::GetTypeCode](#gettypecode) member function.
+The `Type` class is useful in applications that must direct processing by using an **`if`** or **`switch`** statement that branches based on the run-time type of an object. The type code that describes the category of a type is retrieved by using the [Type::GetTypeCode](#gettypecode) member function.
 
 ## Public methods
 
-|||
-|-|-|
-|[Type::GetTypeCode Method](#gettypecode)|Returns a [Platform::TypeCode Enumeration](../cppcx/platform-typecode-enumeration.md) value for the object.|
-|[Type::ToString Method](#tostring)|Returns the name of the type as specified in its metadata.|
+| Name | Description |
+|--|--|
+| [Type::GetTypeCode Method](#gettypecode) | Returns a [Platform::TypeCode Enumeration](../cppcx/platform-typecode-enumeration.md) value for the object. |
+| [Type::ToString Method](#tostring) | Returns the name of the type as specified in its metadata. |
 
 ## Public properties
 
-|||
-|-|-|
-|[Type::FullName](#fullname)|Returns a [Platform::String Class](../cppcx/platform-string-class.md)^ that represents the fully qualified name of the type, and uses . (dot) as a separator, not :: (double colon)—for example, `MyNamespace.MyClass`.|
+| Name | Description |
+|--|--|
+| [Type::FullName](#fullname) | Returns a [Platform::String Class](../cppcx/platform-string-class.md)^ that represents the fully qualified name of the type, and uses . (dot) as a separator, not :: (double colon)—for example, `MyNamespace.MyClass`. |
 
 ## Conversion operators
 
-|||
-|-|-|
-|[operator Type^](../cppcx/operator-type-hat.md)|Enables conversion from `Windows::UI::Xaml::Interop::TypeName` to `Platform::Type`.|
-|[operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)|Enables conversion from `Platform::Type` to `Windows::UI::Xaml::Interop::TypeName`.|
+| Name | Description |
+|--|--|
+| [operator Type^](../cppcx/operator-type-hat.md) | Enables conversion from `Windows::UI::Xaml::Interop::TypeName` to `Platform::Type`. |
+| [operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md) | Enables conversion from `Platform::Type` to `Windows::UI::Xaml::Interop::TypeName`. |
 
 ### Requirements
 
@@ -95,7 +96,7 @@ One of the Platform::TypeCode enumerated values.
 
 ### Remarks
 
-The equivalent of the GetTypeCode() member method is the `typeid` property.
+The equivalent of the GetTypeCode() member method is the **`typeid`** property.
 
 ## <a name="tostring"></a> Type::ToString Method
 

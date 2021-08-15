@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Service Map Macros"
 title: "Service Map Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcom/ATL::BEGIN_SERVICE_MAP", "atlcom/ATL::END_SERVICE_MAP", "atlcom/ATL::SERVICE_ENTRY", "atlcom/ATL::SERVICE_ENTRY_CHAIN"]
@@ -8,7 +9,7 @@ ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
 
 These macros define service maps and entries.
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_SERVICE_MAP](#begin_service_map)|Marks the beginning of an ATL service map.|
 |[END_SERVICE_MAP](#end_service_map)|Marks the end of an ATL service map.|

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Nonstandard Behavior"
 title: "Nonstandard Behavior"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["compatibility and compliance, nonstandard behavior", "Microsoft-specific, compiler behavior", "nonstandard behavior, compliance and compatibility"]
@@ -66,7 +67,7 @@ For more information on exception specifications, see [Exception Specifications]
 
 ## char_traits::eof()
 
-The C++ standard states that [char_traits::eof](../standard-library/char-traits-struct.md#eof) must not correspond to a valid `char_type` value. The Microsoft C++ compiler enforces this constraint for type **char**, but not for type **wchar_t**. This does not comply with the requirement in Table 62 in section 12.1.1 of the C++ ISO specification. The example below demonstrates this.
+The C++ standard states that [char_traits::eof](../standard-library/char-traits-struct.md#eof) must not correspond to a valid `char_type` value. The Microsoft C++ compiler enforces this constraint for type **`char`**, but not for type **`wchar_t`**. This does not comply with the requirement in Table 62 in section 12.1.1 of the C++ ISO specification. The example below demonstrates this.
 
 ```cpp
 #include <iostream>

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HANDLENullTraits Structure"
 title: "HANDLENullTraits Structure"
 ms.date: "09/27/2018"
 ms.topic: "reference"
@@ -58,7 +59,7 @@ The handle to close.
 
 ### Return Value
 
-**true** if handle *h* closed successfully; otherwise, **false**.
+**`true`** if handle *h* closed successfully; otherwise, **`false`**.
 
 ## <a name="getinvalidvalue"></a> HANDLENullTraits::GetInvalidValue
 
@@ -70,4 +71,4 @@ inline static Type GetInvalidValue();
 
 ### Return Value
 
-Always returns `nullptr`.
+Always returns **`nullptr`**.

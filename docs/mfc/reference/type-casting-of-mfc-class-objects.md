@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type Casting of MFC Class Objects"
 title: "Type Casting of MFC Class Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["macros [MFC], type casting", "pointers [MFC], type casting", "type casts [MFC]", "casting types [MFC]", "macros [MFC], casting pointers"]
@@ -12,7 +13,7 @@ The following table lists the MFC type casting macros.
 
 ### Macros That Cast Pointers to MFC Class Objects
 
-|||
+|Name|Description|
 |-|-|
 |[DYNAMIC_DOWNCAST](#dynamic_downcast)|Casts a pointer to a pointer to a class object while checking to see if the cast is legal.|
 |[STATIC_DOWNCAST](#static_downcast)|Casts a pointer to an object from one class to a pointer of a related type. In a debug build, causes an ASSERT if the object is not a "kind of" the target type.|

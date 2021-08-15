@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: accelerator Class"
 title: "accelerator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["AMPRT/accelerator", "AMPRT/Concurrency::accelerator::accelerator", "AMPRT/Concurrency::accelerator::create_view", "AMPRT/Concurrency::accelerator::get_all", "AMPRT/Concurrency::accelerator::get_auto_selection_view", "AMPRT/Concurrency::accelerator::get_dedicated_memory", "AMPRT/Concurrency::accelerator::get_default_cpu_access_type", "AMPRT/Concurrency::accelerator::get_default_view", "AMPRT/Concurrency::accelerator::get_description", "AMPRT/Concurrency::accelerator::get_device_path", "AMPRT/Concurrency::accelerator::get_has_display", "AMPRT/Concurrency::accelerator::get_is_debug", "AMPRT/Concurrency::accelerator::get_is_emulated", "AMPRT/Concurrency::accelerator::get_supports_cpu_shared_memory", "AMPRT/Concurrency::accelerator::get_supports_double_precision", "AMPRT/Concurrency::accelerator::get_supports_limited_double_precision", "AMPRT/Concurrency::accelerator::get_version", "AMPRT/Concurrency::accelerator::set_default", "AMPRT/Concurrency::accelerator::set_default_cpu_access_type", "AMPRT/Concurrency::accelerator::cpu_accelerator", "AMPRT/Concurrency::accelerator::dedicated_memory", "AMPRT/Concurrency::accelerator::default_accelerator", "AMPRT/Concurrency::accelerator::default_cpu_access_type", "AMPRT/Concurrency::accelerator::default_view", "AMPRT/Concurrency::accelerator::description", "AMPRT/Concurrency::accelerator::device_path", "AMPRT/Concurrency::accelerator::direct3d_ref", "AMPRT/Concurrency::accelerator::direct3d_warp", "AMPRT/Concurrency::accelerator::has_display", "AMPRT/Concurrency::accelerator::is_debug", "AMPRT/Concurrency::accelerator::is_emulated", "AMPRT/Concurrency::accelerator::supports_cpu_shared_memory", "AMPRT/Concurrency::accelerator::supports_double_precision", "AMPRT/Concurrency::accelerator::supports_limited_double_precision", "AMPRT/Concurrency::accelerator::version"]
@@ -50,9 +51,9 @@ class accelerator;
 
 |Name|Description|
 |----------|-----------------|
-|[operator!=](#operator_neq)|Compares this `accelerator` object with another and returns **false** if they are the same; otherwise, returns **true**.|
+|[operator!=](#operator_neq)|Compares this `accelerator` object with another and returns **`false`** if they are the same; otherwise, returns **`true`**.|
 |[operator=](#operator_eq)|Copies the contents of the specified `accelerator` object to this one.|
-|[operator==](#operator_eq_eq)|Compares this `accelerator` object with another and returns **true** if they are the same; otherwise, returns **false**.|
+|[operator==](#operator_eq_eq)|Compares this `accelerator` object with another and returns **`true`** if they are the same; otherwise, returns **`false`**.|
 
 ### Public Data Members
 
@@ -304,7 +305,7 @@ bool get_has_display() const;
 
 ### Return Value
 
-**true** if the `accelerator` can output to a display; otherwise, **false**.
+**`true`** if the `accelerator` can output to a display; otherwise, **`false`**.
 
 ## <a name="get_is_debug"></a> get_is_debug
 
@@ -316,7 +317,7 @@ bool get_is_debug() const;
 
 ### Return Value
 
-**true** if the `accelerator` has the DEBUG layer enabled for extensive error reporting. Otherwise, **false**.
+**`true`** if the `accelerator` has the DEBUG layer enabled for extensive error reporting. Otherwise, **`false`**.
 
 ## <a name="get_is_emulated"></a> get_is_emulated
 
@@ -328,7 +329,7 @@ bool get_is_emulated() const;
 
 ### Return Value
 
-**true** if the `accelerator` is emulated. Otherwise, **false**.
+**`true`** if the `accelerator` is emulated. Otherwise, **`false`**.
 
 ## <a name="get_supports_cpu_shared_memory"></a> get_supports_cpu_shared_memory
 
@@ -340,11 +341,11 @@ bool get_supports_cpu_shared_memory() const;
 
 ### Return Value
 
-**true** if the accelerator supports CPU shared memory; otherwise, **false**.
+**`true`** if the accelerator supports CPU shared memory; otherwise, **`false`**.
 
 ## <a name="get_supports_double_precision"></a> get_supports_double_precision
 
-Returns a Boolean value that indicates whether the accelerator supports double precision math, including fused multiply add (FMA), division, reciprocal, and casting between **int** and **double**
+Returns a Boolean value that indicates whether the accelerator supports double precision math, including fused multiply add (FMA), division, reciprocal, and casting between **`int`** and **`double`**
 
 ```cpp
 bool get_supports_double_precision() const;
@@ -352,11 +353,11 @@ bool get_supports_double_precision() const;
 
 ### Return Value
 
-**true** if the accelerator supports double precision math; otherwise, **false**.
+**`true`** if the accelerator supports double precision math; otherwise, **`false`**.
 
 ## <a name="get_supports_limited_double_precision"></a> get_supports_limited_double_precision
 
-Returns a Boolean value that indicates whether the accelerator has limited support for double precision math. If the accelerator has only limited support, then fused multiply add (FMA), division, reciprocal, and casting between **int** and **double** are not supported.
+Returns a Boolean value that indicates whether the accelerator has limited support for double precision math. If the accelerator has only limited support, then fused multiply add (FMA), division, reciprocal, and casting between **`int`** and **`double`** are not supported.
 
 ```cpp
 bool get_supports_limited_double_precision() const;
@@ -364,7 +365,7 @@ bool get_supports_limited_double_precision() const;
 
 ### Return Value
 
-**true** if the accelerator has limited support for double precision math; otherwise, **false**.
+**`true`** if the accelerator has limited support for double precision math; otherwise, **`false`**.
 
 ## <a name="get_version"></a> get_version
 
@@ -404,7 +405,7 @@ __declspec(property(get= get_is_emulated)) bool is_emulated;
 
 ## <a name="operator_neq"></a> operator!=
 
-Compares this `accelerator` object with another and returns **false** if they are the same; otherwise, returns **true**.
+Compares this `accelerator` object with another and returns **`false`** if they are the same; otherwise, returns **`true`**.
 
 ```cpp
 bool operator!= (const accelerator& _Other) const;
@@ -417,7 +418,7 @@ The `accelerator` object to compare with this one.
 
 ### Return Value
 
-**false** if the two `accelerator` objects are the same; otherwise, **true**.
+**`false`** if the two `accelerator` objects are the same; otherwise, **`true`**.
 
 ## <a name="operator_eq"></a> operator=
 
@@ -438,7 +439,7 @@ A reference to this `accelerator` object.
 
 ## <a name="operator_eq_eq"></a> operator==
 
-Compares this `accelerator` object with another and returns **true** if they are the same; otherwise, returns **false**.
+Compares this `accelerator` object with another and returns **`true`** if they are the same; otherwise, returns **`false`**.
 
 ```cpp
 bool operator== (const accelerator& _Other) const;
@@ -451,7 +452,7 @@ The `accelerator` object to compare with this one.
 
 ### Return Value
 
-**true** if the other `accelerator` object is same as this `accelerator` object; otherwise, **false**.
+**`true`** if the other `accelerator` object is same as this `accelerator` object; otherwise, **`false`**.
 
 ## <a name="set_default"></a> set_default
 
@@ -468,7 +469,7 @@ The path to the accelerator.
 
 ### Return Value
 
-**true** if the call succeeds at setting the default accelerator. Otherwise, **false**.
+**`true`** if the call succeeds at setting the default accelerator. Otherwise, **`false`**.
 
 ## <a name="set_default_cpu_access_type"></a> set_default_cpu_access_type
 
@@ -505,7 +506,7 @@ __declspec(property(get= get_supports_double_precision)) bool supports_double_pr
 
 ## <a name="supports_limited_double_precision"></a> supports_limited_double_precision
 
-Gets a Boolean value that indicates whether the accelerator has limited support for double precision math. If the accelerator has only limited support, then fused multiply add (FMA), division, reciprocal, and casting between `int` and `double` are not supported.
+Gets a Boolean value that indicates whether the accelerator has limited support for double precision math. If the accelerator has only limited support, then fused multiply add (FMA), division, reciprocal, and casting between **`int`** and **`double`** are not supported.
 
 ```cpp
 __declspec(property(get= get_supports_limited_double_precision)) bool supports_limited_double_precision;

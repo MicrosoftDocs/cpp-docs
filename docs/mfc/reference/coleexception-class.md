@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleException Class"
 title: "COleException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleException", "AFXDISP/COleException", "AFXDISP/COleException::Process", "AFXDISP/COleException::m_sc"]
@@ -87,7 +88,7 @@ An OLE status code.
 ### Remarks
 
 > [!NOTE]
-> This function is **static**.
+> This function is **`static`**.
 
 For more information on SCODE, see [Structure of COM Error Codes](/windows/win32/com/structure-of-com-error-codes) in the Windows SDK.
 

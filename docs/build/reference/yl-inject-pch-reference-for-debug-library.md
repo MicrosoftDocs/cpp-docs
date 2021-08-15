@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Yl (Inject PCH Reference for Debug Library)"
 title: "/Yl (Inject PCH Reference for Debug Library)"
 ms.date: "01/29/2018"
 f1_keywords: ["/yl"]
@@ -11,8 +12,8 @@ The **/Yl** option generates a unique symbol in a precompiled header file, and a
 
 ## Syntax
 
->**/Yl**
->**/Yl**_name_
+>**/Yl**\
+>**/Yl**_name_\
 >**/Yl-**
 
 ### Arguments

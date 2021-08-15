@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: private (C++)"
 title: "private (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["private_cpp"]
@@ -17,9 +18,9 @@ private base-class
 
 ## Remarks
 
-When preceding a list of class members, the **private** keyword specifies that those members are accessible only from member functions and friends of the class. This applies to all members declared up to the next access specifier or the end of the class.
+When preceding a list of class members, the **`private`** keyword specifies that those members are accessible only from member functions and friends of the class. This applies to all members declared up to the next access specifier or the end of the class.
 
-When preceding the name of a base class, the **private** keyword specifies that the public and protected members of the base class are private members of the derived class.
+When preceding the name of a base class, the **`private`** keyword specifies that the public and protected members of the base class are private members of the derived class.
 
 Default access of members in a class is private. Default access of members in a structure or union is public.
 
@@ -29,7 +30,7 @@ For related information, see [friend](../cpp/friend-cpp.md), [public](../cpp/pub
 
 ## /clr Specific
 
-In CLR types, the C++ access specifier keywords (**public**, **private**, and **protected**) can affect the visibility of types and methods with regard to assemblies. For more information, see [Member Access Control](member-access-control-cpp.md).
+In CLR types, the C++ access specifier keywords (**`public`**, **`private`**, and **`protected`**) can affect the visibility of types and methods with regard to assemblies. For more information, see [Member Access Control](member-access-control-cpp.md).
 
 > [!NOTE]
 > Files compiled with [/LN](../build/reference/ln-create-msil-module.md) are not affected by this behavior. In this case, all managed classes (either public or private) will be visible.

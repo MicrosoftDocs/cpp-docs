@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4346"
 title: "Compiler Warning (level 1) C4346"
 ms.date: "11/04/2016"
 f1_keywords: ["C4346"]
@@ -9,7 +10,7 @@ ms.assetid: 68ee562d-cca9-4a2a-9a1b-14ad1a1e7396
 
 'name' : dependent name is not a type
 
-The [typename](../../cpp/typename.md) keyword is required if a dependent name is to be treated as a type. For code that works the same in all versions of Visual C++, add `typename` to the declaration.
+The [typename](../../cpp/typename.md) keyword is required if a dependent name is to be treated as a type. For code that works the same in all versions of Visual C++, add **`typename`** to the declaration.
 
 The following sample generates C4346:
 
@@ -24,7 +25,7 @@ struct C {
 };
 ```
 
-The following samples shows other examples where the **typename** keyword is required:
+The following samples shows other examples where the **`typename`** keyword is required:
 
 ```cpp
 // C4346b.cpp

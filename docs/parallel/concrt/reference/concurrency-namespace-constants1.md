@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: concurrency namespace constants"
 title: "concurrency namespace constants"
 ms.date: "11/04/2016"
 f1_keywords: ["concrt/concurrency::AgentEventGuid", "concrt/concurrency::COOPERATIVE_TIMEOUT_INFINITE", "concrt/concurrency::COOPERATIVE_WAIT_TIMEOUT", "concrt/concurrency::ConcRTEventGuid", "concrt/concurrency::ConcRT_ProviderGuid", "concrt/concurrency::INHERIT_THREAD_PRIORITY", "concrt/concurrency::LockEventGuid", "concrt/concurrency::PPLParallelForEventGuid", "concrt/concurrency::PPLParallelForeachEventGuid", "concrt/concurrency::ResourceManagerEventGuid", "concrt/concurrency::ScheduleGroupEventGuid", "concrt/concurrency::VirtualProcessorEventGuid"]
@@ -6,14 +7,32 @@ ms.assetid: 6f81fc4c-b10c-479e-8717-9c292360d5a0
 ---
 # concurrency namespace constants
 
-||||
-|-|-|-|
-|[AgentEventGuid](#agenteventguid)|[CONCRT_RM_VERSION_1](#concrt_rm_version_1)|[COOPERATIVE_TIMEOUT_INFINITE](#cooperative_timeout_infinite)|
-|[COOPERATIVE_WAIT_TIMEOUT](#cooperative_wait_timeout)|[ChoreEventGuid](#choreeventguid)|[ConcRTEventGuid](#concrteventguid)|
-|[ConcRT_ProviderGuid](#concrt_providerguid)|[ContextEventGuid](#contexteventguid)|[INHERIT_THREAD_PRIORITY](#inherit_thread_priority)|
-|[LockEventGuid](#lockeventguid)|[MaxExecutionResources](#maxexecutionresources)|[PPLParallelForEventGuid](#pplparallelforeventguid)|
-|[PPLParallelForeachEventGuid](#pplparallelforeacheventguid)|[PPLParallelInvokeEventGuid](#pplparallelinvokeeventguid)|[ResourceManagerEventGuid](#resourcemanagereventguid)|
-|[ScheduleGroupEventGuid](#schedulegroupeventguid)|[SchedulerEventGuid](#schedulereventguid)|[VirtualProcessorEventGuid](#virtualprocessoreventguid)|
+:::row:::
+   :::column span="":::
+      [`AgentEventGuid`](#agenteventguid)\
+      [`CONCRT_RM_VERSION_1`](#concrt_rm_version_1)\
+      [`COOPERATIVE_TIMEOUT_INFINITE`](#cooperative_timeout_infinite)\
+      [`COOPERATIVE_WAIT_TIMEOUT`](#cooperative_wait_timeout)\
+      [`ChoreEventGuid`](#choreeventguid)\
+      [`ConcRTEventGuid`](#concrteventguid)
+   :::column-end:::
+   :::column span="":::
+      [`ConcRT_ProviderGuid`](#concrt_providerguid)\
+      [`ContextEventGuid`](#contexteventguid)\
+      [`INHERIT_THREAD_PRIORITY`](#inherit_thread_priority)\
+      [`LockEventGuid`](#lockeventguid)\
+      [`MaxExecutionResources`](#maxexecutionresources)\
+      [`PPLParallelForEventGuid`](#pplparallelforeventguid)
+   :::column-end:::
+   :::column span="":::
+      [`PPLParallelForeachEventGuid`](#pplparallelforeacheventguid)\
+      [`PPLParallelInvokeEventGuid`](#pplparallelinvokeeventguid)\
+      [`ResourceManagerEventGuid`](#resourcemanagereventguid)\
+      [`ScheduleGroupEventGuid`](#schedulegroupeventguid)\
+      [`SchedulerEventGuid`](#schedulereventguid)\
+      [`VirtualProcessorEventGuid`](#virtualprocessoreventguid)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="agenteventguid"></a> AgentEventGuid
 

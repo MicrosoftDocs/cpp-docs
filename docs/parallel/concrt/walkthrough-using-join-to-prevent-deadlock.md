@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Using join to Prevent Deadlock"
 title: "Walkthrough: Using join to Prevent Deadlock"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["preventing deadlock with joins [Concurrency Runtime]", "deadlock, preventing [Concurrency Runtime]", "non-greedy joins, example", "join class, example"]
@@ -38,7 +39,7 @@ This walkthrough contains the following sections:
 
 The dining philosophers problem illustrates how deadlock occurs in an application. In this problem, five philosophers sit at a round table. Every philosopher alternates between thinking and eating. Every philosopher must share a chopstick with the neighbor to the left and another chopstick with the neighbor to the right. The following illustration shows this layout.
 
-![The Dining Philosophers Problem](../../parallel/concrt/media/dining_philosophersproblem.png "The Dining Philosophers Problem")
+![The Dining Philosophers Problem.](../../parallel/concrt/media/dining_philosophersproblem.png "The Dining Philosophers Problem")
 
 To eat, a philosopher must hold two chopsticks. If every philosopher holds just one chopstick and is waiting for another one, then no philosopher can eat and all starve.
 
@@ -48,7 +49,7 @@ To eat, a philosopher must hold two chopsticks. If every philosopher holds just 
 
 The following example shows a naïve implementation of the dining philosophers problem. The `philosopher` class, which derives from [concurrency::agent](../../parallel/concrt/reference/agent-class.md), enables each philosopher to act independently. The example uses a shared array of [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) objects to give each `philosopher` object exclusive access to a pair of chopsticks.
 
-To relate the implementation to the illustration, the `philosopher` class represents one philosopher. An `int` variable represents each chopstick. The `critical_section` objects serve as holders on which the chopsticks rest. The `run` method simulates the life of the philosopher. The `think` method simulates the act of thinking and the `eat` method simulates the act of eating.
+To relate the implementation to the illustration, the `philosopher` class represents one philosopher. An **`int`** variable represents each chopstick. The `critical_section` objects serve as holders on which the chopsticks rest. The `run` method simulates the life of the philosopher. The `think` method simulates the act of thinking and the `eat` method simulates the act of eating.
 
 A `philosopher` object locks both `critical_section` objects to simulate the removal of the chopsticks from the holders before it calls the `eat` method. After the call to `eat`, the `philosopher` object returns the chopsticks to the holders by setting the `critical_section` objects back to the unlocked state.
 

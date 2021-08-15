@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _ismbbblank, _ismbbblank_l"
 title: "_ismbbblank, _ismbbblank_l"
 ms.date: "4/2/2020"
 api_name: ["_ismbbblank_l", "_ismbbblank", "_o__ismbbblank", "_o__ismbbblank_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 ms.assetid: d21b2e41-7206-41f5-85bb-9c9ab4f3e21b

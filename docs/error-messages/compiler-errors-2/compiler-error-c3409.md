@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3409"
 title: "Compiler Error C3409"
 ms.date: "11/06/2018"
 f1_keywords: ["C3409"]
@@ -11,7 +12,7 @@ ms.assetid: e372d9fa-230c-4b28-b6d3-6ad81ccf9dbb
 
 ## Remarks
 
-The square brackets were interpreted by the compiler as an [attribute](../../windows/attributes-alphabetical-reference.md) block, but no attributes were found.
+The square brackets were interpreted by the compiler as an [attribute](../../windows/attributes/attributes-alphabetical-reference.md) block, but no attributes were found.
 
 The compiler may generate this error when you use square brackets as part of the definition of a lambda expression. This error occurs when the compiler cannot determine whether the square brackets are part of the definition of a lambda expression or of an attribute block. For more information about lambda expressions, see [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md).
 
@@ -27,7 +28,7 @@ The compiler may generate this error when you use square brackets as part of the
 
    For more information about lambda expression syntax, see [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md).
 
-## Example
+## Examples
 
 The following example generates C3409.
 
@@ -46,9 +47,7 @@ __interface x {};
 class b : public x {};
 ```
 
-## Example
-
-The following example generates C3409 because a lambda expression uses the `mutable` specification, but does not provide a parameter list. The compiler cannot determine whether the square brackets are part of the definition of a lambda expression or of an attribute block.
+The following example generates C3409 because a lambda expression uses the **`mutable`** specification, but does not provide a parameter list. The compiler cannot determine whether the square brackets are part of the definition of a lambda expression or of an attribute block.
 
 ```cpp
 // C3409b.cpp
@@ -61,6 +60,6 @@ int main()
 
 ## See also
 
-[attribute](../../windows/attributes-alphabetical-reference.md)<br/>
+[attribute](../../windows/attributes/attributes-alphabetical-reference.md)<br/>
 [Lambda Expressions](../../cpp/lambda-expressions-in-cpp.md)<br/>
 [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)

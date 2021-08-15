@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: discrete_distribution Class"
 title: "discrete_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::discrete_distribution", "random/std::discrete_distribution::reset", "random/std::discrete_distribution::probabilities", "random/std::discrete_distribution::param", "random/std::discrete_distribution::min", "random/std::discrete_distribution::max", "random/std::discrete_distribution::operator()", "random/std::discrete_distribution::param_type", "random/std::discrete_distribution::param_type::probabilities", "random/std::discrete_distribution::param_type::operator==", "random/std::discrete_distribution::param_type::operator!="]
@@ -48,7 +49,7 @@ public:
 ### Parameters
 
 *IntType*\
-The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
+The integer result type, defaults to **`int`**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
@@ -56,10 +57,8 @@ This sampling distribution has uniform-width intervals with uniform probability 
 
 The following table links to articles about individual members:
 
-|||
-|-|-|
-|[discrete_distribution](#discrete_distribution)|`discrete_distribution::param`|
-|`discrete_distribution::operator()`|[param_type](#param_type)|
+[discrete_distribution](#discrete_distribution)\
+[param_type](#param_type)
 
 The property function `vector<double> probabilities()` returns the individual probabilities for each integer generated.
 
@@ -194,7 +193,7 @@ The lowest value in the distribution range.
 The highest value in the distribution range.
 
 *weightfunc*\
-The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
+The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **`double`**.
 
 *parm*\
 The `param_type` structure used to construct the distribution.
@@ -262,7 +261,7 @@ The lowest value in the distribution range.
 The highest value in the distribution range.
 
 *weightfunc*\
-The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
+The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **`double`**.
 
 *right*\
 The `param_type` object to compare to this.

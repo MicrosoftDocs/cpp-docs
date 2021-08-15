@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4673"
 title: "Compiler Warning (level 4) C4673"
 ms.date: "11/04/2016"
 f1_keywords: ["C4673"]
@@ -9,7 +10,7 @@ ms.assetid: 95626ec6-f05b-43c7-8b9a-a60a6f98dd30
 
 throwing 'identifier' the following types will not be considered at the catch site
 
-A throw object cannot be handled in the **catch** block. Each type that cannot be handled is listed in the error output immediately following the line containing this warning. Each unhandled type has its own warning. Read the warning for each specific type for more information.
+A throw object cannot be handled in the **`catch`** block. Each type that cannot be handled is listed in the error output immediately following the line containing this warning. Each unhandled type has its own warning. Read the warning for each specific type for more information.
 
 The following sample generates C4673:
 

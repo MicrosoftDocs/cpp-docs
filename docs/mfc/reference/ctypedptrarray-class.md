@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTypedPtrArray Class"
 title: "CTypedPtrArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CTypedPtrArray", "AFXTEMPL/CTypedPtrArray", "AFXTEMPL/CTypedPtrArray::Add", "AFXTEMPL/CTypedPtrArray::Append", "AFXTEMPL/CTypedPtrArray::Copy", "AFXTEMPL/CTypedPtrArray::ElementAt", "AFXTEMPL/CTypedPtrArray::GetAt", "AFXTEMPL/CTypedPtrArray::InsertAt", "AFXTEMPL/CTypedPtrArray::SetAt", "AFXTEMPL/CTypedPtrArray::SetAtGrow"]
@@ -248,7 +249,7 @@ An integer index that is greater than or equal to 0 and less than or equal to th
 
 ### Remarks
 
-The first operator, called for arrays that are not **const**, can be used on either the right (r-value) or the left (l-value) of an assignment statement. The second, invoked for **const** arrays, can be used only on the right.
+The first operator, called for arrays that are not **`const`**, can be used on either the right (r-value) or the left (l-value) of an assignment statement. The second, invoked for **`const`** arrays, can be used only on the right.
 
 The Debug version of the library asserts if the subscript (either on the left or right side of an assignment statement) is out of bounds.
 

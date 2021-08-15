@@ -1,6 +1,7 @@
 ---
+description: "Learn more about: Compiler warnings that are off by default"
 title: "Compiler warnings that are off by default"
-ms.date: "08/29/2019"
+ms.date: 08/09/2021
 helpviewer_keywords: ["warnings, compiler", "cl.exe compiler, setting options"]
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 ---
@@ -32,7 +33,7 @@ You can enable warnings that are normally off by default by using one of the fol
 
 The following warnings are turned off by default in Visual Studio 2015 and later versions:
 
-|||
+|Warning|Message|
 |-|-|
 |[C4061](../error-messages/compiler-warnings/compiler-warning-level-4-c4061.md) (level 4)|enumerator '*identifier*' in a switch of enum '*enumeration*' is not explicitly handled by a case label|
 |[C4062](../error-messages/compiler-warnings/compiler-warning-level-4-c4062.md) (level 4)|enumerator '*identifier*' in a switch of enum '*enumeration*' is not handled|
@@ -61,7 +62,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |[C4435](../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md) (level 4)|'*class1*' : Object layout under /vd2 will change due to virtual base '*class2*'|
 |[C4437](../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md) (level 4)|dynamic_cast from virtual base '*class1*' to '*class2*' could fail in some contexts|
 |C4444 (level 3)|top level '__unaligned' is not implemented in this context|
-|[C4464](../error-messages/compiler-warnings/c4464.md) (level 4)|relative include path contains '..'|
+|[C4464](../error-messages/compiler-warnings/compiler-warning-level-4-c4464.md) (level 4)|relative include path contains '..'|
 |[C4471](../error-messages/compiler-warnings/compiler-warning-level-4-c4471.md) (level 4)|a forward declaration of an unscoped enumeration must have an underlying type (int assumed) <sup>Perm</sup>|
 |C4472 (level 1)|'*identifier*' is a native enum: add an access specifier (private/public) to declare a managed enum|
 |[C4514](../error-messages/compiler-warnings/compiler-warning-level-4-c4514.md) (level 4)|'*function*': unreferenced inline function has been removed|
@@ -103,7 +104,6 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |[C4746](../error-messages/compiler-warnings/compiler-warning-c4746.md)|volatile access of '*expression*' is subject to /volatile:\<iso&#124;ms> setting; consider using __iso_volatile_load/store intrinsic functions|
 |C4749 (level 4)|conditionally supported: offsetof applied to non-standard-layout type '*type*'|
 |C4767 (level 4)|section name '*symbol*' is longer than 8 characters and will be truncated by the linker|
-|C4768 (level 3)|__declspec attributes before linkage specification are ignored|
 |C4774 (level 4)|'*string*' : format string expected in argument *number* is not a string literal|
 |C4777 (level 4)|'*function*' : format string '*string*' requires an argument of type '*type1*', but variadic argument *number* has type '*type2*'|
 |C4786 (level 3)|'*symbol*' : object name was truncated to '*number*' characters in the debug information|
@@ -114,6 +114,7 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |C4837 (level 4)|trigraph detected: '??*character*' replaced by '*character*'|
 |C4841 (level 4)|non-standard extension used: compound member designator used in offsetof|
 |C4842 (level 4)|the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases|
+| [C4866](../error-messages/compiler-warnings/c4866.md) (level 4) | '*file*(*line-number*)' compiler may not enforce left-to-right evaluation order for call to *operator* |
 |[C4868](../error-messages/compiler-warnings/compiler-warning-c4868.md) (level 4)|'_file_(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list|
 |[C4905](../error-messages/compiler-warnings/compiler-warning-level-1-c4905.md) (level 1)|wide string literal cast to 'LPSTR'|
 |[C4906](../error-messages/compiler-warnings/compiler-warning-level-1-c4906.md) (level 1)|string literal cast to 'LPWSTR'|
@@ -139,35 +140,65 @@ The following warnings are turned off by default in Visual Studio 2015 and later
 |C5036 (level 1)|varargs function pointer conversion when compiling with /hybrid:x86arm64 '*type1*' to '*type2*' <sup>15.3</sup>|
 |[C5038](../error-messages/compiler-warnings/c5038.md) (level 4)|data member '*member1*' will be initialized after data member '*member2*' <sup>15.3</sup>|
 |C5039 (level 4)|'*function*': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception. <sup>15.5</sup>|
+| C5041 (level 4) | '*member-name*': out-of-line definition for constexpr static data member is not needed and is deprecated in C++17. <sup>15.2</sup>|
 |C5042 (level 3)|'*function*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier <sup>15.5</sup>|
 |[C5045](../error-messages/compiler-warnings/c5045.md)|Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified <sup>15.7</sup>|
+| C5052 (level 3) | Keyword '*keyword-name*' was introduced in C++*version* and requires use of the '*option*' command-line option` <sup>16.1</sup> |
+| C5204 (level 3) | A class with virtual functions has non-virtual trivial destructor. <sup>16.5</sup> |
+| C5214 (level 4) | applying '*keyword*' to an operand with a volatile qualified type is deprecated in C++20 <sup>16.7</sup> |
+| C5215 (level 4) | '*function-parameter*' a function parameter with a volatile qualified type is deprecated in C++20 <sup>16.7</sup> |
+| C5216 (level 4) | '*return-type*' a volatile qualified return type is deprecated in C++20 <sup>16.7</sup> |
+| C5217 (level 4) | a structured binding declaration that includes volatile is deprecated in C++20 <sup>16.7</sup> |
+| C5219 (level 2) | implicit conversion from '*type-1*' to '*type-2*', possible loss of data <sup>16.7</sup> |
+| C5220 (level 4) | '*member*': a non-static data member with a volatile qualified type no longer implies that<br/> compiler generated copy/move constructors and copy/move assignment operators are not trivial <sup>16.7</sup> |
+| C5233 (level 4) | explicit lambda capture '*identifier*' is not used <sup>16.10</sup> |
+| C5240 (level 4) | '*attribute-name*': attribute is ignored in this syntactic position <sup>16.10</sup> |
+| [C5243 (level 1)](../error-messages/compiler-warnings/c5247.md) | '*type-name*': using incomplete class '*class-name*' can cause potential one definition rule violation due to ABI limitation <sup>16.10</sup> |
+| C5245 (level 4) | '*function*': unreferenced function with internal linkage has been removed |
+| C5246 (level 1) | '*member*': the initialization of a subobject should be wrapped in braces <sup>16.10</sup> |
+| [C5247 (level 1)](../error-messages/compiler-warnings/c5247.md) | Section '*section-name*' is reserved for C++ dynamic initialization. Manually creating the section will interfere with C++ dynamic initialization and may lead to undefined behavior <sup>16.11</sup> |
+| [C5248 (level 1)](../error-messages/compiler-warnings/c5248.md) | Section '*section-name*' is reserved for C++ dynamic initialization. Variable manually put into the section may be optimized out and its order relative to compiler generated dynamic initializers is unspecified <sup>16.11</sup> |
+| C5249 (level 1) | '*bitfield*' of type '*enumeration_name*' has named enumerators with values that cannot be represented in the given bit field width of '*bitfield_width*'. <sup>17.0</sup> |
+| C5250 (level 3) | '*function_name*': intrinsic function not declared. <sup>17.0</sup> |
 
 <sup>14.1</sup> This warning is available starting in Visual Studio 2015 Update 1.\
 <sup>14.3</sup> This warning is available starting in Visual Studio 2015 Update 3.\
+<sup>15.2</sup> This warning is available starting in Visual Studio 2017 version 15.2.\
 <sup>15.3</sup> This warning is available starting in Visual Studio 2017 version 15.3.\
 <sup>15.5</sup> This warning is available starting in Visual Studio 2017 version 15.5.\
 <sup>15.7</sup> This warning is available starting in Visual Studio 2017 version 15.7.\
 <sup>15.8</sup> This warning is available starting in Visual Studio 2017 version 15.8.\
 <sup>16.0</sup> This warning is available starting in Visual Studio 2019 RTM.\
-<sup>Perm</sup> This warning is off unless the [/permissive-](../build/reference/permissive-standards-conformance.md) compiler option is set.
+<sup>16.5</sup> This warning is available starting in Visual Studio 2019 version 16.5.\
+<sup>16.7</sup> This warning is available starting in Visual Studio 2019 version 16.7.\
+<sup>16.10</sup> This warning is available starting in Visual Studio 2019 version 16.10.\
+<sup>16.11</sup> This warning is available starting in Visual Studio 2019 version 16.11.\
+<sup>17.0</sup> This warning is available starting in Visual Studio 2022 version 17.0.\
+<sup>Perm</sup> This warning is off unless the [`/permissive-`](../build/reference/permissive-standards-conformance.md) compiler option is set.
 
 ## Warnings off by default in earlier versions
 
+This warning was off by default in Visual Studio 2015 version 15.3, and enabled in Visual Studio 2015 version 15.5:
+
+| Warning | Message |
+|--|--|
+| [C4768](../error-messages/compiler-warnings/c4768.md) | `__declspec` attributes before linkage specification are ignored |
+
 These warnings were off by default in versions of the compiler before Visual Studio 2015:
 
-|||
-|-|-|
-|[C4302](../error-messages/compiler-warnings/compiler-warning-level-2-c4302.md) (level 2)|'*conversion*': truncation from '*type1*' to '*type2*'|
-|[C4311](../error-messages/compiler-warnings/compiler-warning-level-1-c4311.md) (level 1)|'*variable*' : pointer truncation from '*type*' to '*type*'|
-|[C4312](../error-messages/compiler-warnings/compiler-warning-level-1-c4312.md) (level 1)|'*operation*' : conversion from '*type1*' to '*type2*' of greater size|
-|[C4319](../error-messages/compiler-warnings/compiler-warning-level-1-c4319.md) (level 1)|'*operator*': zero extending '*type1*' to '*type2*' of greater size|
+| Warning | Message |
+|--|--|
+| [C4302](../error-messages/compiler-warnings/compiler-warning-level-2-c4302.md) (level 2) | '*conversion*': truncation from '*type1*' to '*type2*' |
+| [C4311](../error-messages/compiler-warnings/compiler-warning-level-1-c4311.md) (level 1) | '*variable*': pointer truncation from '*type*' to '*type*' |
+| [C4312](../error-messages/compiler-warnings/compiler-warning-level-1-c4312.md) (level 1) | '*operation*': conversion from '*type1*' to '*type2*' of greater size |
+| [C4319](../error-messages/compiler-warnings/compiler-warning-level-1-c4319.md) (level 1) | '*operator*': zero extending '*type1*' to '*type2*' of greater size |
 
 This warning was off by default in versions of the compiler before Visual Studio 2012:
 
-|||
-|-|-|
-|[C4431](../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md) (level 4)|missing type specifier - int assumed. Note: C no longer supports default-int|
+| Warning | Message |
+|--|--|
+| [C4431](../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md) (level 4) | missing type specifier - int assumed. Note: C no longer supports default-int |
 
 ## See also
 
-[warning](../preprocessor/warning.md)
+[`warning` pragma](../preprocessor/warning.md)

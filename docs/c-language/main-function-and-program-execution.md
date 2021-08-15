@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: main Function and Program Execution"
 title: "main Function and Program Execution"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["program startup [C++]", "entry points, program", "main function, program execution", "startup code, main function", "main function", "programs [C++], terminating"]
@@ -16,7 +17,7 @@ main( int argc, char *argv[ ], char *envp[ ] )
 
 ## Remarks
 
-Functions within the source program perform one or more specific tasks. The **main** function can call these functions to perform their respective tasks. When **main** calls another function, it passes execution control to the function, so that execution begins at the first statement in the function. A function returns control to **main** when a `return` statement is executed or when the end of the function is reached.
+Functions within the source program perform one or more specific tasks. The **main** function can call these functions to perform their respective tasks. When **main** calls another function, it passes execution control to the function, so that execution begins at the first statement in the function. A function returns control to **main** when a **`return`** statement is executed or when the end of the function is reached.
 
 You can declare any function, including **main**, to have parameters. The term "parameter" or "formal parameter" refers to the identifier that receives a value passed to a function. See [Parameters](../c-language/parameters.md) for information on passing arguments to parameters. When one function calls another, the called function receives values for its parameters from the calling function. These values are called "arguments." You can declare formal parameters to **main** so that it can receive arguments from the command line using this format:
 

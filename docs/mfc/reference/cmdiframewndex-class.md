@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMDIFrameWndEx Class"
 title: "CMDIFrameWndEx Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMDIFrameWndEx", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::ActiveItemRecalcLayout", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::AddPane", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::AdjustClientArea", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::AdjustDockingLayout", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::AreMDITabs", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::CanCovertControlBarToMDIChild", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::ControlBarToTabbedDocument", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::CreateDocumentWindow", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::CreateNewWindow", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::DockPane", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::DockPaneLeftOf", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::EnableAutoHidePanes", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::EnableDocking", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::EnableFullScreenMainMenu", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::EnableFullScreenMode", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::EnableLoadDockState", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::EnableMDITabbedGroups", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::EnableMDITabs", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::EnableMDITabsLastActiveActivation", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::EnablePaneMenu", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::EnableWindowsDialog", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::GetActivePopup", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::GetPane", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::GetDefaultResId", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::GetMDITabGroups", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::GetMDITabs", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::GetMDITabsContextMenuAllowedItems", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::GetMenuBar", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::GetRibbonBar", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::GetTearOffBars", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::GetToolbarButtonToolTipText", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::InsertPane", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::IsFullScreen", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::IsMDITabbedGroup", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::IsMemberOfMDITabGroup", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::IsMenuBarAvailable", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::IsPointNearDockSite", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::IsPrintPreview", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::LoadFrame", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::LoadMDIState", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::MDITabMoveToNextGroup", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::MDITabNewGroup", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::NegotiateBorderSpace", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnCloseDockingPane", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnCloseMiniFrame", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnClosePopupMenu", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnCmdMsg", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnDrawMenuImage", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnDrawMenuLogo", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnEraseMDIClientBackground", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnMenuButtonToolHitTest", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnMoveMiniFrame", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnSetPreviewMode", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnShowCustomizePane", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnShowMDITabContextMenu", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnShowPanes", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnShowPopupMenu", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnSizeMDIClient", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnTearOffMenu", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::OnUpdateFrameMenu", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::PaneFromPoint", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::RecalcLayout", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::RemovePaneFromDockManager", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::SaveMDIState", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::SetPrintPreviewFrame", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::SetupToolbarMenu", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::ShowFullScreen", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::ShowPane", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::ShowWindowsDialog", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::TabbedDocumentToControlBar", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::UpdateCaption", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::UpdateMDITabbedBarsIcons", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::WinHelp", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::m_bCanCovertControlBarToMDIChild", "AFXMDIFRAMEWNDEX/CMDIFrameWndEx::m_bDisableSetRedraw"]
@@ -767,13 +768,13 @@ DWORD GetMDITabsContextMenuAllowedItems();
 
 A bitwise-OR combination of the following flags:
 
-- BCGP_MDI_CREATE_VERT_GROUP - can create a vertical tab group.
+- AFX_MDI_CREATE_VERT_GROUP - can create a vertical tab group.
 
-- BCGP_MDI_CREATE_HORZ_GROUP - can create a horizontal tab group.
+- AFX_MDI_CREATE_HORZ_GROUP - can create a horizontal tab group.
 
-- BCGP_MDI_CAN_MOVE_PREV - can move a tab to the previous tab group.
+- AFX_MDI_CAN_MOVE_PREV - can move a tab to the previous tab group.
 
-- BCGP_MDI_CAN_MOVE_NEXT - can move a tab to the next tab group.
+- AFX_MDI_CAN_MOVE_NEXT - can move a tab to the next tab group.
 
 ### Remarks
 
@@ -1058,7 +1059,7 @@ To load or save the state of MDI tabs and groups and the list of opened document
 
 - Call [CMDIFrameWndEx::SaveMDIState](#savemdistate) when the main frame is being closed
 
-- Call [CMDIFrameWndEx::LoadMDIState](#loadmdistate) when the main frame is being created. The recommended place for this call is before the main frame is displayed for the first time. Add `CWinAppEx::EnableLoadWindowPlacement` `(FALSE);` before `pMainFrame->LoadFrame (IDR_MAINFRAME);.` Add `CBCGPWorkspace::ReloadWindowPlacement` `(pMainFrame);` after the call to `LoadMDIState` to display the main frame at the position that was stored in the registry.
+- Call [CMDIFrameWndEx::LoadMDIState](#loadmdistate) when the main frame is being created. The recommended place for this call is before the main frame is displayed for the first time. Add `CWinAppEx::EnableLoadWindowPlacement` `(FALSE);` before `pMainFrame->LoadFrame (IDR_MAINFRAME);.` Add `CWinAppEx::ReloadWindowPlacement` `(pMainFrame);` after the call to `LoadMDIState` to display the main frame at the position that was stored in the registry.
 
 - Override `GetDocumentName` in the `CMDIChildWndEx`- derived class if your application displays documents that are not stored as files. The returned string will be saved in the registry as the document identifier. The base implementation of [CMDIChildWndEx::GetDocumentName](../../mfc/reference/cmdichildwndex-class.md#getdocumentname) returns a value obtained from [CDocument::GetPathName](../../mfc/reference/cdocument-class.md#getpathname).
 
@@ -1440,22 +1441,22 @@ virtual BOOL OnShowMDITabContextMenu(
 *dwAllowedItems*<br/>
 [in] A bitwise-OR combination of flags that indicates what actions are allowed for the current tab:
 
-- BCGP_MDI_CREATE_VERT_GROUP - can create a vertical tab group.
+- AFX_MDI_CREATE_VERT_GROUP - can create a vertical tab group.
 
-- BCGP_MDI_CREATE_HORZ_GROUP - can create a horizontal tab group.
+- AFX_MDI_CREATE_HORZ_GROUP - can create a horizontal tab group.
 
-- BCGP_MDI_CAN_MOVE_PREV - can move a tab to the previous tab group.
+- AFX_MDI_CAN_MOVE_PREV - can move a tab to the previous tab group.
 
-- BCGP_MDI_CAN_MOVE_NEXT - can move a tab to the next tab group.
+- AFX_MDI_CAN_MOVE_NEXT - can move a tab to the next tab group.
 
-- BCGP_MDI_CAN_BE_DOCKED - switch a tabbed document to docked state (relevant for tabbed documents only).
+- AFX_MDI_CAN_BE_DOCKED - switch a tabbed document to docked state (relevant for tabbed documents only).
 
 *bTabDrop*<br/>
 [in] TRUE to display the menu as a result of dragging the tab onto another tabbed group. FALSE to display the menu as a shortcut menu on the currently active tab.
 
 ### Return Value
 
-Override this method in a [CBCGPMDIFrameWnd](../../mfc/reference/cmdiframewndex-class.md)-derived class.
+Override this method in a [CMDIFrameWndEx](../../mfc/reference/cmdiframewndex-class.md)-derived class.
 
 ### Remarks
 

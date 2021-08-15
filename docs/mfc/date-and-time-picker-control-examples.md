@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Date and Time Picker Control Examples"
 title: "Date and Time Picker Control Examples"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["DateTimePicker control [MFC]"]
@@ -10,5 +11,5 @@ The [CMNCTRL1](../overview/visual-cpp-samples.md) sample demonstrates the variou
 
 ## See also
 
-[Using CDateTimeCtrl](../mfc/using-cdatetimectrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CDateTimeCtrl](using-cdatetimectrl.md)<br/>
+[Controls](controls-mfc.md)

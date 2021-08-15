@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Database Macros and Globals"
 title: "Database Macros and Globals"
 ms.date: "11/04/2016"
 f1_keywords: ["AFXDB/AFX_ODBC_CALL", "AFXDB/AFX_SQL_ASYNC", "AFXDB/AFX_SQL_SYNC", "AFXDB/AfxGetHENV"]
@@ -13,7 +14,7 @@ Before MFC 4.2, the macros `AFX_SQL_ASYNC` and `AFX_SQL_SYNC` gave asynchronous 
 
 ### Database Macros
 
-|||
+|Name|Description|
 |-|-|
 |[AFX_ODBC_CALL](#afx_odbc_call)|Calls an ODBC API function that returns `SQL_STILL_EXECUTING`. `AFX_ODBC_CALL` will repeatedly call the function until it no longer returns `SQL_STILL_EXECUTING`.|
 |[AFX_SQL_ASYNC](#afx_sql_async)|Calls `AFX_ODBC_CALL`.|
@@ -21,7 +22,7 @@ Before MFC 4.2, the macros `AFX_SQL_ASYNC` and `AFX_SQL_SYNC` gave asynchronous 
 
 ### Database Globals
 
-|||
+|Name|Description|
 |-|-|
 |[AfxDbInitModule](#afxdbinitmodule)|Adds database support for a regular MFC DLL that is dynamically linked to MFC.|
 |[AfxGetHENV](#afxgethenv)|Retrieves a handle to the ODBC environment currently in use by MFC. You can use this handle in direct ODBC calls.|

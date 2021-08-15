@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Pixel/HIMETRIC Conversion Global Functions"
 title: "Pixel-HIMETRIC Conversion Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlwin/ATL::AtlHiMetricToPixel", "atlwin/ATL::AtlPixelToHiMetric"]
@@ -11,7 +12,7 @@ These functions provide support for converting to and from pixel and HIMETRIC un
 > [!IMPORTANT]
 > The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
-|||
+|Name|Description|
 |-|-|
 |[AtlHiMetricToPixel](#atlhimetrictopixel)|Converts HIMETRIC units (each unit is 0.01 millimeter) to pixels.|
 |[AtlPixelToHiMetric](#atlpixeltohimetric)|Converts pixels to HIMETRIC units (each unit is 0.01 millimeter).|

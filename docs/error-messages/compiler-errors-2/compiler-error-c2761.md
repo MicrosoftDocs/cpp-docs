@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2761"
 title: "Compiler Error C2761"
 ms.date: "11/04/2016"
 f1_keywords: ["C2761"]
@@ -11,7 +12,7 @@ ms.assetid: 38c79a05-b56d-485b-820f-95e8c0cb926f
 
 You cannot redeclare a member function. You can define it, but not redeclare it.
 
-## Example
+## Examples
 
 The following sample generates C2761.
 
@@ -25,8 +26,6 @@ class a {
 void a::a;     // C2761
 void a::test;  // C2761
 ```
-
-## Example
 
 Nonstatic members of a class or structure cannot be defined.  The following sample generates C2761.
 

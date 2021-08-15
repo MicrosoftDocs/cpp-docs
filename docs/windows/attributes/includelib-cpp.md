@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: includelib (C++)"
 title: "includelib  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.includelib"]
@@ -37,9 +38,7 @@ The following code is shown in a .cpp file:
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|Yes|

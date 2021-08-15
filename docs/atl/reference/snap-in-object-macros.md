@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Snap-In Object Macros"
 title: "Snap-In Object Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlsnap/ATL::BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP", "atlsnap/ATL::BEGIN_SNAPINTOOLBARID_MAP", "atlsnap/ATL::END_EXTENSION_SNAPIN_NODEINFO_MAP", "atlsnap/ATL::END_SNAPINTOOLBARID_MAP", "atlsnap/ATL::EXTENSION_SNAPIN_DATACLASS", "atlsnap/ATL::EXTENSION_SNAPIN_NODEINFO_ENTRY", "atlsnap/ATL::SNAPINMENUID", "atlsnap/ATL::SNAPINTOOLBARID_ENTRY"]
@@ -8,7 +9,7 @@ ms.assetid: 4e9850c0-e395-4929-86c9-584a81828053
 
 These macros provide support for snap-in extensions.
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](#begin_extension_snapin_nodeinfo_map)|Marks the beginning of the snap-in extension data class map for a Snap-In object.|
 |[BEGIN_SNAPINTOOLBARID_MAP](#begin_snapintoolbarid_map)|Marks the beginning of the toolbar map for a Snap-In object.|

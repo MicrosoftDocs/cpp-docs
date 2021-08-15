@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CResourceException Class"
 title: "CResourceException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CResourceException", "AFXWIN/CResourceException", "AFXWIN/CResourceException::CResourceException"]

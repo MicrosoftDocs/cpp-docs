@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Array Class"
 title: "Platform::Array Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
@@ -35,15 +36,15 @@ See [Platform::WriteOnlyArray Class](../cppcx/platform-writeonlyarray-class.md).
 
 ### Properties
 
-|||
-|-|-|
-|[Array::Value](#value)|Retrieves a handle to the current array.|
+| Name | Description |
+|--|--|
+| [Array::Value](#value) | Retrieves a handle to the current array. |
 
 ### Remarks
 
 The Array class is sealed and cannot be inherited.
 
-The Windows Runtime type system does not support the concept of jagged arrays and therefore you cannot pass an IVector<Platform::Array\<T>> as a return value or method parameter. To pass a jagged array or a sequence of sequences across the ABI, use `IVector<IVector<T>^>`.
+The Windows Runtime type system does not support the concept of jagged arrays and therefore you cannot pass an `IVector<Platform::Array<T>>` as a return value or method parameter. To pass a jagged array or a sequence of sequences across the ABI, use `IVector<IVector<T>^>`.
 
 For more information about when and how to use Platform::Array, see [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
 
@@ -57,7 +58,7 @@ Compiler option: **/ZW**
 
 Initializes a one-dimensional, modifiable array of types specified by the class template parameter, *T*.
 
-## Syntax
+### Syntax
 
 ```cpp
 Array(unsigned int size);
@@ -83,7 +84,7 @@ For more information about how to create instances of Platform::Array, see [Arra
 
 Retrieves a reference to the array element at the specified index location.
 
-## Syntax
+### Syntax
 
 ```cpp
 T& get(unsigned int index)  const;
@@ -102,7 +103,7 @@ The array element specified by the `index` parameter.
 
 Retrieves a handle to the current array.
 
-## Syntax
+### Syntax
 
 ```cpp
 property Array^ Value;

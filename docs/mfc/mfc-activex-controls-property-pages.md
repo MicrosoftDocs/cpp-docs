@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Property Pages"
 title: "MFC ActiveX Controls: Property Pages"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["DDP_ functions [MFC]", "MFC ActiveX controls [MFC], properties", "property pages [MFC], MFC ActiveX controls", "DoDataExchange method [MFC]", "OLEIVERB_PROPERTIES", "CPropertyPageDialog class [MFC]", "MFC ActiveX controls [MFC], property pages"]
@@ -19,7 +20,7 @@ ActiveX control property pages are displayed in two ways:
 
 The properties dialog box (illustrated in the following figure) consists of an area for displaying the current property page, tabs for switching between property pages, and a collection of buttons that perform common tasks such as closing the property page dialog, canceling any changes made, or immediately applying any changes to the ActiveX control.
 
-![Properties dialog box for Circ3](../mfc/media/vc373i1.gif "Properties dialog box for Circ3") <br/>
+![Properties dialog box for Circ3.](../mfc/media/vc373i1.gif "Properties dialog box for Circ3") <br/>
 Properties Dialog Box
 
 This article covers topics related to using property pages in an ActiveX control. These include:
@@ -32,15 +33,15 @@ This article covers topics related to using property pages in an ActiveX control
 
 For more information on using property pages in an ActiveX control, see the following articles:
 
-- [MFC ActiveX Controls: Adding Another Custom Property Page](../mfc/mfc-activex-controls-adding-another-custom-property-page.md)
+- [MFC ActiveX Controls: Adding Another Custom Property Page](mfc-activex-controls-adding-another-custom-property-page.md)
 
-- [MFC ActiveX Controls: Using Stock Property Pages](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+- [MFC ActiveX Controls: Using Stock Property Pages](mfc-activex-controls-using-stock-property-pages.md)
 
-For information on using property sheets in an MFC application other than an ActiveX control, see [Property Sheets](../mfc/property-sheets-mfc.md).
+For information on using property sheets in an MFC application other than an ActiveX control, see [Property Sheets](property-sheets-mfc.md).
 
 ## <a name="_core_implementing_the_default_property_page"></a> Implementing the Default Property Page
 
-If you use the ActiveX Control Wizard to create your control project, the ActiveX Control Wizard provides a default property page class for the control derived from [COlePropertyPage Class](../mfc/reference/colepropertypage-class.md). Initially, this property page is blank, but you can add any dialog box control or set of controls to it. Because the ActiveX Control Wizard creates only one property page class by default, additional property page classes (also derived from `COlePropertyPage`) must be created using Class View. For more information on this procedure, see [MFC ActiveX Controls: Adding Another Custom Property Page](../mfc/mfc-activex-controls-adding-another-custom-property-page.md).
+If you use the ActiveX Control Wizard to create your control project, the ActiveX Control Wizard provides a default property page class for the control derived from [COlePropertyPage Class](reference/colepropertypage-class.md). Initially, this property page is blank, but you can add any dialog box control or set of controls to it. Because the ActiveX Control Wizard creates only one property page class by default, additional property page classes (also derived from `COlePropertyPage`) must be created using Class View. For more information on this procedure, see [MFC ActiveX Controls: Adding Another Custom Property Page](mfc-activex-controls-adding-another-custom-property-page.md).
 
 Implementing a property page (in this case, the default) is a three-step process:
 
@@ -76,17 +77,17 @@ Now that the user interface has been modified, you need to link the edit box wit
 
 ## <a name="_core_customizing_the_dodataexchange_function"></a> Customizing the DoDataExchange Function
 
-Your property page [CWnd::DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) function allows you to link property page values with the actual values of properties in the control. To establish links, you must map the appropriate property page fields to their respective control properties.
+Your property page [CWnd::DoDataExchange](reference/cwnd-class.md#dodataexchange) function allows you to link property page values with the actual values of properties in the control. To establish links, you must map the appropriate property page fields to their respective control properties.
 
 These mappings are implemented using the property page **DDP_** functions. The **DDP_** functions work like the **DDX_** functions used in standard MFC dialogs, with one exception. In addition to the reference to a member variable, **DDP_** functions take the name of the control property. The following is a typical entry in the `DoDataExchange` function for a property page.
 
-[!code-cpp[NVC_MFC_AxUI#31](../mfc/codesnippet/cpp/mfc-activex-controls-property-pages_1.cpp)]
+[!code-cpp[NVC_MFC_AxUI#31](codesnippet/cpp/mfc-activex-controls-property-pages_1.cpp)]
 
 This function associates the property page's *m_caption* member variable with the Caption, using the `DDP_TEXT` function.
 
 After you have the property page control inserted, you need to establish a link between the property page control, IDC_CAPTION, and the actual control property, Caption, using the `DDP_Text` function as described above.
 
-[Property Pages](../mfc/reference/property-pages-mfc.md) are available for other dialog control types, such as check boxes, radio buttons, and list boxes. The table below lists the entire set of property page **DDP_** functions and their purposes:
+[Property Pages](reference/property-pages-mfc.md) are available for other dialog control types, such as check boxes, radio buttons, and list boxes. The table below lists the entire set of property page **DDP_** functions and their purposes:
 
 ### Property Page Functions
 
@@ -104,5 +105,5 @@ After you have the property page control inserted, you need to establish a link 
 
 ## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)<br/>
-[COlePropertyPage Class](../mfc/reference/colepropertypage-class.md)
+[MFC ActiveX Controls](mfc-activex-controls.md)<br/>
+[COlePropertyPage Class](reference/colepropertypage-class.md)

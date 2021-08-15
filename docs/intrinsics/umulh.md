@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __umulh"
 title: "__umulh"
 ms.date: "09/02/2019"
 f1_keywords: ["__umulh"]

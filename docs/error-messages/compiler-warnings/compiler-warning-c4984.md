@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning C4984"
 title: "Compiler Warning C4984"
 ms.date: "08/19/2019"
 f1_keywords: ["C4984"]

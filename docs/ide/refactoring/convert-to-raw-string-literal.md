@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Convert to Raw String Literal"
 title: "Convert to Raw String Literal"
 ms.date: "11/16/2016"
 ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
@@ -15,15 +16,15 @@ ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
 
 1. Place text or mouse cursor over the escaped string to convert.
 
-   ![Highlighted code](images/stringliteral_highlight.png)
+   ![Screenshot showing highlighted code.](images/stringliteral_highlight.png)
 
 1. Next, do one of the following:
    * **Keyboard**
      * Press **Ctrl+.** to trigger the **Quick Actions and Refactorings** menu and select **Convert to Raw String Literal** from the context menu.
    * **Mouse**
      * Right-click the code, select the **Quick Actions and Refactorings** menu and select **Convert to Raw String Literal** from the context menu.
-     * Click the ![Lightbulb](images/bulb.png) icon which appears in the left margin and select **Convert to Raw String Literal** from the context menu.
+     * Click the ![Lightbulb.](images/bulb.png) icon which appears in the left margin and select **Convert to Raw String Literal** from the context menu.
 
 1. The string will be immediately converted into a raw string literal.
 
-   ![Raw String Literal result](images/stringliteral_result.png)
+   ![Raw String Literal result.](images/stringliteral_result.png)

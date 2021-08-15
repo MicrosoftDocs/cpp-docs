@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l"
 title: "_strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l"
 ms.date: "4/2/2020"
 api_name: ["_strtoi64", "_strtoi64_l", "_wcstoi64_l", "_wcstoi64", "_o__strtoi64", "_o__strtoi64_l", "_o__wcstoi64", "_o__wcstoi64_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_strtoi64", "strtoi64", "_stroi64_l", "_wcstoi64_l", "wcstoi64_l", "_wcstoi64", "wcstoi64", "strtoi64_l"]
@@ -11,7 +12,7 @@ ms.assetid: ea2abc50-7bfe-420e-a46b-703c3153593a
 ---
 # _strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l
 
-Convert a string to an **__int64** value.
+Convert a string to an **`__int64`** value.
 
 ## Syntax
 
@@ -66,7 +67,7 @@ See [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errn
 
 ## Remarks
 
-The **_strtoi64** function converts *strSource* to an **__int64**. Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*. **_wcstoi64** is a wide-character version of **_strtoi64**; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
+The **_strtoi64** function converts *strSource* to an **`__int64`**. Both functions stop reading the string *strSource* at the first character they cannot recognize as part of a number. This may be the terminating null character, or it may be the first numeric character greater than or equal to *base*. **_wcstoi64** is a wide-character version of **_strtoi64**; its *strSource* argument is a wide-character string. These functions behave identically otherwise.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

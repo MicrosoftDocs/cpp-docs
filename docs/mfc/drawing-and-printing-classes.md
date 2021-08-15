@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Drawing and Printing Classes"
 title: "Drawing and Printing Classes"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["output [MFC], graphical classes", "drawing [MFC], classes", "printing classes [MFC]", "graphics [MFC], graphical output classes"]
@@ -10,4 +11,4 @@ In Windows, all graphical output is drawn on a virtual drawing area called a dev
 
 ## See also
 
-[Class Overview](../mfc/class-library-overview.md)
+[Class Overview](class-library-overview.md)

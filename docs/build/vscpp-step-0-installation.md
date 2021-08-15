@@ -1,17 +1,17 @@
 ---
-title: Install C++ support in Visual Studio
-description: "Install Visual Studio support for Visual C++"
-ms.custom: "mvc"
-ms.date: "04/02/2019"
+title: Install C and C++ support in Visual Studio
+description: "Learn how to install Visual Studio with support for Microsoft C/C++ and related workloads."
+ms.custom: "vs-acquisition"
+ms.date: 11/05/2020
 ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 ---
-# Install C++ support in Visual Studio
+# Install C and C++ support in Visual Studio
 
-If you haven't downloaded and installed Visual Studio and the Visual C++ tools yet, here's how to get started.
+If you haven't downloaded and installed Visual Studio and the Microsoft C/C++ tools yet, here's how to get started.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## Visual Studio 2019 Installation
 
@@ -40,14 +40,14 @@ For questions about running previous versions of Visual Studio side by side with
 
 ### Step 2 - Download Visual Studio
 
-Next, download the Visual Studio bootstrapper file. To do so, choose the following button, choose the edition of Visual Studio that you want, choose **Save**, and then choose **Open folder**.
+Next, download the Visual Studio bootstrapper file. To do so, choose the following button to go to the Visual Studio download page. Select the edition of Visual Studio that you want and choose the **Free trial** or **Free download** button.
 
  > [!div class="button"]
  > [Download Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
 ### Step 3 - Install the Visual Studio installer
 
-Run the bootstrapper file to install the Visual Studio Installer. This new lightweight installer includes everything you need to both install and customize Visual Studio.
+Run the bootstrapper file you downloaded to install the Visual Studio Installer. This new lightweight installer includes everything you need to both install and customize Visual Studio.
 
 1. From your **Downloads** folder, double-click the bootstrapper that matches or is similar to one of the following files:
 
@@ -55,7 +55,7 @@ Run the bootstrapper file to install the Visual Studio Installer. This new light
    - **vs_professional.exe** for Visual Studio Professional
    - **vs_enterprise.exe** for Visual Studio Enterprise
 
-   If you receive a User Account Control notice, choose **Yes**.
+   If you receive a User Account Control notice, choose **Yes** to allow the bootstrapper to run.
 
 1. We'll ask you to acknowledge the Microsoft [License Terms](https://visualstudio.microsoft.com/license-terms/) and the Microsoft [Privacy Statement](https://privacy.microsoft.com/privacystatement). Choose **Continue**.
 
@@ -65,11 +65,11 @@ After the installer is installed, you can use it to customize your installation 
 
 1. Find the workload you want in the **Installing Visual Studio** screen.
 
-   ![Visual Studio 2019: Install a workload](../get-started/media/vs-installer-workloads.png)
+   ![Visual Studio 2019: Install a workload.](../get-started/media/vs-installer-workloads.png)
 
-   For core C++ support, choose the "Desktop development with C++" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
+   For core C and C++ support, choose the "Desktop development with C++" workload. It comes with the default core editor, which includes basic code editing support for over 20 languages, the ability to open and edit code from any folder without requiring a project, and integrated source code control.
 
-   Additional workloads support other kinds of C++ development. For example, choose the "Universal Windows Platform development" workload to create apps that use the Windows Runtime for the Microsoft Store. Choose "Game development with C++" to create games that use DirectX, Unreal, and Cocos2d. Choose "Linux development with C++" to target Linux platforms, including IoT development.
+   Additional workloads support other kinds of development. For example, choose the "Universal Windows Platform development" workload to create apps that use the Windows Runtime for the Microsoft Store. Choose "Game development with C++" to create games that use DirectX, Unreal, and Cocos2d. Choose "Linux development with C++" to target Linux platforms, including IoT development.
 
    The **Installation details** pane lists the included and optional components installed by each workload. You can select or deselect optional components in this list. For example, to support development by using the Visual Studio 2017 or 2015 compiler toolsets, choose the MSVC v141 or MSVC v140 optional components. You can add support for MFC, the experimental Modules language extension, IncrediBuild, and more.
 
@@ -84,13 +84,13 @@ After the installer is installed, you can use it to customize your installation 
 
 If you don't want to use the Workloads feature to customize your Visual Studio installation, or you want to add more components than a workload installs, you can do so by installing or adding individual components from the **Individual components** tab. Choose what you want, and then follow the prompts.
 
-  ![Visual Studio 2019 - Install individual components](../get-started/media/vs-installer-individual-components.png "Install Visual Studio individual components")
+  ![Screenshot of the Visual Studio Installer, showing the Install individual components tab view.](../get-started/media/vs-installer-individual-components.png "Install Visual Studio individual components")
 
 ### Step 6 - Install language packs (Optional)
 
 By default, the installer program tries to match the language of the operating system when it runs for the first time. To install Visual Studio in a language of your choosing, choose the **Language packs** tab from the Visual Studio Installer, and then follow the prompts.
 
-  ![Visual Studio 2019 - Install language packs](../get-started/media/vs-installer-language-packs.png "Install Visual Studio language packs")
+  ![Screenshot of the Visual Studio Installer, showing the Install language packs tab view.](../get-started/media/vs-installer-language-packs.png "Install Visual Studio language packs")
 
 #### Change the installer language from the command line
 
@@ -100,7 +100,7 @@ Another way that you can change the default language is by running the installer
 
 You can reduce the installation footprint of Visual Studio on your system drive. You can choose to move the download cache, shared components, SDKs, and tools to different drives, and keep Visual Studio on the drive that runs it the fastest.
 
-  ![Visual Studio 2019 - Change installation locations](../get-started/media/vs-installer-installation-locations.png "Change the installation location")
+  ![Screenshot of the Visual Studio Installer, showing the installation locations tab view.](../get-started/media/vs-installer-installation-locations.png "Change the installation location")
 
 > [!IMPORTANT]
 > You can select a different drive only when you first install Visual Studio. If you've already installed it and want to change drives, you must uninstall Visual Studio and then reinstall it.
@@ -119,7 +119,7 @@ You can reduce the installation footprint of Visual Studio on your system drive.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="msvc-150"
 
 ## Visual Studio 2017 Installation
 
@@ -137,25 +137,22 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
 ### Download and install
 
-1. Download the latest Visual Studio 2017 installer for Windows.
-
-   > [!div class="nextstepaction"]
-   > [Install Visual Studio 2017 Community](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+1. To download the latest Visual Studio 2017 installer for Windows, go to the Microsoft Visual Studio [Older downloads](https://www.visualstudio.com/vs/older-downloads/) page. Expand the **2017** section, and choose the **Download** button.
 
    >[!Tip]
-   > The Community edition is for individual developers, classroom learning, academic research, and open source development. For other uses, install [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) or [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+   > The Community edition is for individual developers, classroom learning, academic research, and open source development. For other uses, install Visual Studio 2017 Professional or Visual Studio 2017 Enterprise.
 
-1. Find the installer file you downloaded and run it. It may be displayed in your browser, or you may find it in your Downloads folder. The installer needs Administrator privileges to run. You may see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you're having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
+1. Find the installer file you downloaded and run it. The downloaded file may be displayed in your browser, or you may find it in your Downloads folder. The installer needs Administrator privileges to run. You may see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you're having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
 
-   ![Download and install the Visual Studio Installer](media/vscpp-concierge-run-installer.gif "Download and install the Visual Studio Installer")
+   ![What you see when you download and install the Visual Studio Installer.](media/vscpp-concierge-run-installer.gif "Download and install the Visual Studio Installer")
 
 1. The installer presents you with a list of workloads, which are groups of related options for specific development areas. Support for C++ is now part of optional workloads that aren't installed by default.
 
-   ![Desktop development with C++ workload](media/desktop-development-with-cpp.png "Desktop development with C++")
+   ![Detail showing the Desktop development with C++ workload.](media/desktop-development-with-cpp.png "Desktop development with C++")
 
-   For C++, select the **Desktop development with C++** workload and then choose **Install**.
+   For C and C++, select the **Desktop development with C++** workload and then choose **Install**.
 
-   ![Install the Desktop development with C++ workload](media/vscpp-concierge-choose-workload.gif "Install the Desktop development with C++ workload")
+   ![What you see when you select the Desktop development with C++ workload then choose the Install button.](media/vscpp-concierge-choose-workload.gif "Install the Desktop development with C++ workload")
 
 1. When the installation completes, choose the **Launch** button to start Visual Studio.
 
@@ -163,25 +160,25 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
    It may take Visual Studio several minutes to get ready for use the first time you run it. Here's what it looks like in a quick time-lapse:
 
-   ![Visual Studio 2017 sign in](media/vscpp-quickstart-first-run.gif "Visual Studio 2017 sign in")
+   ![Visual Studio sign in dialog.](media/vscpp-quickstart-first-run.gif "Visual Studio 2017 sign in")
 
    Visual Studio starts much faster when you run it again.
 
 1. When Visual Studio opens, check to see if the flag icon in the title bar is highlighted:
 
-   ![Visual Studio 2017 notification flag](media/vscpp-first-start-page-flag.png "Visual Studio 2017 notification flag")
+   ![Visual Studio notification flag.](media/vscpp-first-start-page-flag.png "Visual Studio 2017 notification flag")
 
    If it's highlighted, select it to open the **Notifications** window. If there are any updates available for Visual Studio, we recommend you install them now. Once the installation is complete, restart Visual Studio.
 
 ::: moniker-end
 
-::: moniker range="<vs-2017"
+::: moniker range="<msvc-150"
 
 ## Visual Studio 2015 Installation
 
-To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component. To add C++ support to an existing Visual Studio 2015 installation, click on the Windows Start button and type **Add Remove Programs**. Open the program from the results list and then find your Visual Studio 2015 installation in the list of installed programs. Double-click it, then choose **Modify** and select the Visual C++ components to install.
+To install Visual Studio 2015, go to the Microsoft Visual Studio [Older downloads](https://www.visualstudio.com/vs/older-downloads/) page. Expand the **2015** section, and choose the **Download** button. Run the downloaded setup program and choose **Custom installation** and then choose the C++ component. To add C and C++ support to an existing Visual Studio 2015 installation, click on the Windows Start button and type **Add Remove Programs**. Open the program from the results list and then find your Visual Studio 2015 installation in the list of installed programs. Double-click it, then choose **Modify** and select the Visual C++ components to install.
 
-In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
+In general, we highly recommend that you use the latest version of Visual Studio even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
 
 ::: moniker-end
 

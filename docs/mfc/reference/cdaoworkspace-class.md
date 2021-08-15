@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDaoWorkspace Class"
 title: "CDaoWorkspace Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDaoWorkspace", "AFXDAO/CDaoWorkspace", "AFXDAO/CDaoWorkspace::CDaoWorkspace", "AFXDAO/CDaoWorkspace::Append", "AFXDAO/CDaoWorkspace::BeginTrans", "AFXDAO/CDaoWorkspace::Close", "AFXDAO/CDaoWorkspace::CommitTrans", "AFXDAO/CDaoWorkspace::CompactDatabase", "AFXDAO/CDaoWorkspace::Create", "AFXDAO/CDaoWorkspace::GetDatabaseCount", "AFXDAO/CDaoWorkspace::GetDatabaseInfo", "AFXDAO/CDaoWorkspace::GetIniPath", "AFXDAO/CDaoWorkspace::GetIsolateODBCTrans", "AFXDAO/CDaoWorkspace::GetLoginTimeout", "AFXDAO/CDaoWorkspace::GetName", "AFXDAO/CDaoWorkspace::GetUserName", "AFXDAO/CDaoWorkspace::GetVersion", "AFXDAO/CDaoWorkspace::GetWorkspaceCount", "AFXDAO/CDaoWorkspace::GetWorkspaceInfo", "AFXDAO/CDaoWorkspace::Idle", "AFXDAO/CDaoWorkspace::IsOpen", "AFXDAO/CDaoWorkspace::Open", "AFXDAO/CDaoWorkspace::RepairDatabase", "AFXDAO/CDaoWorkspace::Rollback", "AFXDAO/CDaoWorkspace::SetDefaultPassword", "AFXDAO/CDaoWorkspace::SetDefaultUser", "AFXDAO/CDaoWorkspace::SetIniPath", "AFXDAO/CDaoWorkspace::SetIsolateODBCTrans", "AFXDAO/CDaoWorkspace::SetLoginTimeout", "AFXDAO/CDaoWorkspace::m_pDAOWorkspace"]
@@ -656,11 +657,25 @@ After constructing a `CDaoWorkspace` object, call this member function to do one
 
 Although many `CDaoWorkspace` member functions can only be called after the workspace has been opened, the following member functions, which operate on the database engine, are available after construction of the C++ object but before a call to `Open`:
 
-||||
-|-|-|-|
-|[Create](#create)|[GetVersion](#getversion)|[SetDefaultUser](#setdefaultuser)|
-|[GetIniPath](#getinipath)|[Idle](#idle)|[SetIniPath](#setinipath)|
-|[GetLoginTimeout](#getlogintimeout)|[SetDefaultPassword](#setdefaultpassword)|[SetLoginTimeout](#setlogintimeout)|
+:::row:::
+   :::column span="":::
+      [Create](#create)\
+      [GetIniPath](#getinipath)\
+      [GetLoginTimeout](#getlogintimeout)
+   :::column-end:::
+   :::column span="":::
+      [GetVersion](#getversion)\
+      [Idle](#idle)
+   :::column-end:::
+   :::column span="":::
+      [SetDefaultPassword](#setdefaultpassword)\
+      [SetDefaultUser](#setdefaultuser)
+   :::column-end:::
+   :::column span="":::
+      [SetIniPath](#setinipath)\
+      [SetLoginTimeout](#setlogintimeout)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="repairdatabase"></a> CDaoWorkspace::RepairDatabase
 

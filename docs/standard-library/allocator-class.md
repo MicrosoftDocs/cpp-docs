@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: allocator Class"
 title: "allocator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::allocator", "memory/std::allocator::const_pointer", "memory/std::allocator::const_reference", "memory/std::allocator::difference_type", "memory/std::allocator::pointer", "memory/std::allocator::reference", "memory/std::allocator::size_type", "memory/std::allocator::value_type", "memory/std::allocator::address", "memory/std::allocator::allocate", "memory/std::allocator::construct", "memory/std::allocator::deallocate", "memory/std::allocator::destroy", "memory/std::allocator::max_size", "memory/std::allocator::rebind"]
@@ -41,19 +42,19 @@ Thus, an allocator defines the following types:
 
 These `Type`s specify the form that pointers and references must take for allocated elements. ( [allocator::pointer](#pointer) is not necessarily the same as `Type*` for all allocator objects, even though it has this obvious definition for class `allocator`.)
 
-**C++11 and later:**  To enable move operations in your allocator, use the minimal allocator interface and implement copy constructor, == and != operators, allocate and deallocate. For more information and an example, see [Allocators](../standard-library/allocators.md)
+**C++11 and later:**  To enable move operations in your allocator, use the minimal allocator interface and implement copy constructor, == and != operators, allocate and deallocate. For more information and an example, see [Allocators](allocators.md)
 
 ## Members
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[allocator](#allocator)|Constructors used to create `allocator` objects.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[const_pointer](#const_pointer)|A type that provides a constant pointer to the type of object managed by the allocator.|
 |[const_reference](#const_reference)|A type that provides a constant reference to type of object managed by the allocator.|
@@ -65,7 +66,7 @@ These `Type`s specify the form that pointers and references must take for alloca
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[address](#address)|Finds the address of an object whose value is specified.|
 |[allocate](#allocate)|Allocates a block of memory large enough to store at least some specified number of elements.|
@@ -77,7 +78,7 @@ These `Type`s specify the form that pointers and references must take for alloca
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator=](#op_eq)|Assigns one `allocator` object to another `allocator` object.|
 
@@ -432,7 +433,7 @@ The value with which the object being constructed is to be initialized.
 
 #### Remarks
 
-The first member function is equivalent to **new** ((`void` \*) `ptr`) **Type** (`val`).
+The first member function is equivalent to `new ((void *) ptr) Type(val)`.
 
 #### Example
 
@@ -522,7 +523,7 @@ A pointer designating the address of the object to be destroyed.
 
 #### Remarks
 
-The member function destroys the object designated by *ptr*, by calling the destructor `ptr->`**Type**::**~Type**.
+The member function destroys the object designated by *ptr*, by calling the destructor `ptr->Type::~Type`.
 
 #### Example
 
@@ -838,7 +839,7 @@ The type of element for which memory is being allocated.
 
 This structure is useful for allocating memory for type that differs from the element type of the container being implemented.
 
-The member class template defines the type other. Its sole purpose is to provide the type name **allocator**\<_ **Other**>, given the type name **allocator**\< **Type**>.
+The member class template defines the type other. Its sole purpose is to provide the type name `allocator<_Other>`, given the type name `allocator<Type>`.
 
 For example, given an allocator object `al` of type `A`, you can allocate an object of type `_Other` with the expression:
 

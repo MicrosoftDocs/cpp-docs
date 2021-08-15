@@ -1,26 +1,26 @@
 ---
 title: "Configure CMake debugging sessions in Visual Studio"
 description: "Describes how to use Visual Studio to configure CMake debugger settings."
-ms.date: "04/02/2020"
+ms.date: 12/16/2020
 helpviewer_keywords: ["CMake debugging"]
 ---
 # Configure CMake debugging sessions
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Native CMake support is available in Visual Studio 2017 and later. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-All executable CMake targets are shown in the **Startup Item** dropdown in the **General** toolbar. Select one to start a debugging session and launch the debugger.
+All executable CMake targets are shown in the **Startup Item** dropdown in the toolbar. Select one to start a debugging session and launch the debugger.
 
-![CMake startup item dropdown](media/cmake-startup-item-dropdown.png "CMake startup item dropdown")
+![Screenshot of the CMake startup item dropdown.](media/cmake-startup-item-dropdown.png "CMake startup item dropdown")
 
 You can also start a debug session from Solution Explorer. First, switch to **CMake Targets View** in the **Solution Explorer** window.
 
-![CMake targets view button](media/cmake-targets-view.png  "CMake Targets View menu item")
+![Screenshot of the CMake targets view command.](media/cmake-targets-view.png  "CMake Targets View menu item")
 
 Then, right-click on an executable and select **Debug**. This command automatically starts debugging the selected target based on your active configuration.
 
@@ -30,15 +30,15 @@ You can customize the debugger settings for any executable CMake target in your 
 
 - **Debug Menu:** Select **Debug > Debug and Launch Settings for ${activeDebugTarget}** from the main menu to customize the debug configuration specific to your active debug target. If you don't have a debug target selected, this option is grayed out.
 
-![Debug menu entry point](media/cmake-debug-menu.png "Debug menu entry point")
+![Screenshot of the Debug menu command Debug and launch settings for the project.](media/cmake-debug-menu.png "Debug menu entry point")
 
 - **Targets View:** Navigate to **Targets View** in Solution Explorer. Then, right-click on a debug target and select **Add Debug Configuration** to customize the debug configuration specific to the selected target.
 
-![Targets view entry point](media/cmake-targets-add-debug-configuration.png "Targets view entry point")
+![Screenshot of the Add Debug Configuration command on the shortcut menu for the target.](media/cmake-targets-add-debug-configuration.png "Targets view entry point")
 
 - **Root CMakeLists.txt:** Right-click on a root *CMakeLists.txt* and select **Add Debug Configuration** to open the **Select a Debugger** dialog box. The dialog allows you to add *any* type of debug configuration, but you must manually specify the CMake target to invoke via the `projectTarget` property.
 
-![Select a debugger dialog box](media/cmake-select-a-debugger.png "Select a debugger dialog box")
+![Screenshot of the Select a debugger dialog box.](media/cmake-select-a-debugger.png "Select a debugger dialog box")
 
 You can edit the *launch.vs.json* file to create debug configurations for any number of CMake targets. When you save the file, Visual Studio creates an entry for each new configuration in the **Startup Item** dropdown.
 
@@ -49,7 +49,6 @@ To reference any key in a *CMakeSettings.json* file, prepend `cmake.` to it in *
 ```json
 {
   "version": "0.2.1",
-  "defaults": {},
   "configurations": [
     {
       "type": "default",
@@ -90,7 +89,7 @@ In Visual Studio 2019 version 16.6, we added a new debug configuration of `type:
 - `name`: A friendly name to identify the configuration in the **Startup Item** dropdown.
 - `project`: Specifies the relative path to the project file. Normally, you don't need to change this path when debugging a CMake project.
 - `projectTarget`: Specifies the CMake target to invoke when building the project. Visual Studio autopopulates this property if you enter *launch.vs.json* from the **Debug Menu** or **Targets View**. This target value must match the name of an existing debug target listed in the **Startup Item** dropdown.
-- `debuggerConfiguration`: Indicates which set of debugging default values to use. In Visual Studio 2019 version 16.6, the only valid option is `gdb`. Earlier versions also support `gdbserver`.
+- `debuggerConfiguration`: Indicates which set of debugging default values to use. In Visual Studio 2019 version 16.6, the only valid option is `gdb`. Visual Studio 2019 version 16.7 or later also supports `gdbserver`.
 - `args`: Command-line arguments passed on startup to the program being debugged.
 - `env`: Additional environment variables passed to the program being debugged. For example, `{"DISPLAY": "0.0"}`.
 - `processID`: Linux process ID to attach to. Only used when attaching to a remote process. For more information, see [Troubleshoot attaching to processes using GDB](https://github.com/Microsoft/MIEngine/wiki/Troubleshoot-attaching-to-processes-using-GDB).
@@ -103,12 +102,25 @@ In Visual Studio 2019 version 16.6, we added a new debug configuration of `type:
 - `gdbpath`: Defaults to `/usr/bin/gdb`. Full Unix path to the `gdb` used to debug. Only required if using a custom version of `gdb`.
 - `preDebugCommand`: A Linux command to run immediately before invoking `gdb`. `gdb` doesn't start until the command completes. You can use the option to run a script before the execution of `gdb`.
 
+#### Additional options allowed with the `gdbserver` configuration (16.7 or later)
+
+- `program`: Defaults to `"${debugInfo.fullTargetPath}"`. The Unix path to the application to debug. Only required if different than the target executable in the build or deploy location.
+
+  > [!TIP]
+  > Deploy is not yet supported for local cross-compilation scenarios. If you are cross-compiling on Windows (for example, using a cross-compiler on Windows to build a Linux ARM executable) then you'll need to manually copy the binary to the location specified by `program` on the remote ARM machine before debugging.
+
+- `remoteMachineName`:  Defaults to `"${debugInfo.remoteMachineName}"`. Name of the remote system that hosts the program to debug. Only required if different than the build system. Must have an existing entry in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md). Press **Ctrl+Space** to view a list of all existing remote connections.
+- `cwd`: Defaults to `"${debugInfo.defaultWorkingDirectory}"`. Full Unix path to the directory on the remote system where `program` is run. The directory must exist.
+- `gdbPath`: Defaults to `${debugInfo.vsInstalledGdb}`. Full Windows path to the `gdb` used to debug. Defaults to the `gdb` installed with the Linux development with C/C++ workload.
+- `gdbserverPath`: Defaults to `usr/bin/gdbserver`. Full Unix path to the `gdbserver` used to debug.
+- `preDebugCommand`: A Linux command to run immediately before starting `gdbserver`. `gdbserver` doesn't start until the command completes.
+
 #### Deployment options
 
 Use the following options to separate your build machine (defined in CMakeSettings.json) from your remote debug machine.
 
 - `remoteMachineName`: Remote debug machine. Only required if different than the build machine. Must have an existing entry in the [Connection Manager](../linux/connect-to-your-remote-linux-computer.md). Press **Ctrl+Space** to view a list of all existing remote connections.
-- `disableDeploy`: Defaults to `false`. Indicates whether build/debug separation is disabled. When `false`, this option allows build and debug to occur on two separate machines.
+- `disableDeploy`: Defaults to **`false`**. Indicates whether build/debug separation is disabled. When **`false`**, this option allows build and debug to occur on two separate machines.
 - `deployDirectory`: Full Unix path to the directory on `remoteMachineName` that the executable gets copied to.
 - `deploy`: An array of advanced deployment settings. You only need to configure these settings when you want more granular control over the deployment process. By default, only the files necessary for the process to debug get deployed to the remote debug machine.
   - `sourceMachine`: The machine from which the file or directory is copied. Press **Ctrl+Space** to view a list of all the remote connections stored in the Connection Manager. When building natively on WSL, this option is ignored.
@@ -195,7 +207,7 @@ The following options can be used when debugging on a remote system or WSL using
 
 - `visualizerFile`: A [.natvis file](/visualstudio/debugger/create-custom-views-of-native-objects) to use when debugging this process. This option is incompatible with `gdb` pretty printing. Also set `showDisplayString` when you set this property.
 
-- `showDisplayString`: A boolean that enables the display string when a `visualizerFile` is specified. Setting this option to `true` can cause slower performance during debugging.
+- `showDisplayString`: A boolean that enables the display string when a `visualizerFile` is specified. Setting this option to **`true`** can cause slower performance during debugging.
 
 - `setupCommands`: One or more `gdb` command(s) to execute, to set up the underlying debugger.
 
@@ -209,7 +221,7 @@ You can configure the `cppdbg` configuration to debug using `gdbserver`. You can
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## See also
 

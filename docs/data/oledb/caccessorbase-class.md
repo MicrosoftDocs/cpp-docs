@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAccessorBase Class"
 title: "CAccessorBase Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAccessorBase", "CAccessorBase.Close", "CAccessorBase::Close", "GetHAccessor", "CAccessorBase::GetHAccessor", "CAccessorBase.GetHAccessor", "CAccessorBase::GetNumAccessors", "GetNumAccessors", "CAccessorBase.GetNumAccessors", "IsAutoAccessor", "CAccessorBase.IsAutoAccessor", "CAccessorBase::IsAutoAccessor", "CAccessorBase::ReleaseAccessors", "CAccessorBase.ReleaseAccessors", "ReleaseAccessors"]
@@ -19,13 +20,13 @@ All accessors in the OLE DB Templates derive from this class. `CAccessorBase` al
 
 ### Methods
 
-|||
-|-|-|
-|[Close](#close)|Closes the accessors.|
-|[GetHAccessor](#geth)|Retrieves the accessor handle.|
-|[GetNumAccessors](#getnum)|Retrieves the number of accessors created by the class.|
-|[IsAutoAccessor](#isauto)|Tests whether the specified accessor is an autoaccessor.|
-|[ReleaseAccessors](#release)|Releases the accessors.|
+| Name | Description |
+|--|--|
+| [Close](#close) | Closes the accessors. |
+| [GetHAccessor](#geth) | Retrieves the accessor handle. |
+| [GetNumAccessors](#getnum) | Retrieves the number of accessors created by the class. |
+| [IsAutoAccessor](#isauto) | Tests whether the specified accessor is an autoaccessor. |
+| [ReleaseAccessors](#release) | Releases the accessors. |
 
 ## Requirements
 
@@ -43,7 +44,7 @@ void Close();
 
 ### Remarks
 
-You must call [ReleaseAccessors](../../data/oledb/caccessorbase-releaseaccessors.md) first.
+You must call [ReleaseAccessors](#release) first.
 
 ## <a name="geth"></a> CAccessorBase::GetHAccessor
 
@@ -95,7 +96,7 @@ bool IsAutoAccessor(ULONG nAccessor) const;
 
 ### Return Value
 
-Returns **true** if the accessor is an autoaccessor. Otherwise, it returns **false**.
+Returns **`true`** if the accessor is an autoaccessor. Otherwise, it returns **`false`**.
 
 ## <a name="release"></a> CAccessorBase::ReleaseAccessors
 
@@ -118,7 +119,7 @@ A standard HRESULT.
 
 ### Remarks
 
-Called from [CAccessorRowset::Close](../../data/oledb/caccessorrowset-close.md).
+Called from [CAccessorRowset::Close](./caccessorrowset-class.md#close).
 
 ## See also
 

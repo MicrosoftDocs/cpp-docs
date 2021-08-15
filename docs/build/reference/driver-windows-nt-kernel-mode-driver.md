@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DRIVER (Windows NT Kernel Mode Driver)"
 title: "/DRIVER (Windows NT Kernel Mode Driver)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.driver", "/driver"]
@@ -37,7 +38,7 @@ If **/DRIVER** is specified:
 
 ### To set this linker option programmatically
 
-- See [VCLinkerTool.driver Property](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.vcprojectengine.vclinkertool.driver?view=visualstudiosdk-2017#Microsoft_VisualStudio_VCProjectEngine_VCLinkerTool_driver).
+- See [VCLinkerTool.driver Property](/dotnet/api/microsoft.visualstudio.vcprojectengine.vclinkertool.driver).
 
 ## See also
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: readonly (C++)"
 title: "readonly  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.readonly"]
@@ -41,9 +42,7 @@ __interface IFireTabCtrl
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface method|
 |**Repeatable**|No|

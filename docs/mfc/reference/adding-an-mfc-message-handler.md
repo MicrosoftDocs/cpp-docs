@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an MFC Message Handler"
 title: "Adding an MFC Message Handler"
 ms.date: "09/06/2019"
 f1_keywords: ["vc.codewiz.adding.mfc.msghandler"]
@@ -7,7 +8,7 @@ ms.assetid: 4251cfce-76ca-443d-bd2f-6303afa6d942
 ---
 # Adding an MFC Message Handler
 
-You can use the [Class Wizard](mfc-class-wizard.md) or the **Properties** window in **CLass View** to add a message handler (a member function that handles Windows messages) to a class and map Windows messages to the message handler. You can also add [an event handler for any dialog box control](../../windows/adding-event-handlers-for-dialog-box-controls.md).
+You can use the [Class Wizard](mfc-class-wizard.md) or the **Properties** window in **CLass View** to add a message handler (a member function that handles Windows messages) to a class and map Windows messages to the message handler. You can also add [an event handler for any dialog box control](../../windows/adding-editing-or-deleting-controls.md).
 
 By using the **Class Wizard** or **Properties** window (in **Class View**) to define message- and event-handling functions, you can automatically update the message-dispatch table (or message map) and your class header file.
 

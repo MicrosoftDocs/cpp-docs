@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2801"
 title: "Compiler Error C2801"
 ms.date: "11/04/2016"
 f1_keywords: ["C2801"]
@@ -23,7 +24,7 @@ Possible C2801 causes:
 
 - Overloaded operator is not a class, structure, or union member.
 
-- Overloaded operator is declared `static`.
+- Overloaded operator is declared **`static`**.
 
 - The following sample generates C2801:
 

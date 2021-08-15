@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies"
 title: "Troubleshooting C/C++ Isolated Applications and Side-by-side Assemblies"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["troubleshooting side-by-side assemblies", "troubleshooting isolated applications", "troubleshooting Visual C++"]

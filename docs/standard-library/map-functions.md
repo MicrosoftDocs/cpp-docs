@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;map&gt; functions"
 title: "&lt;map&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["map/std::swap (map)", "map/std::swap (multimap)"]
@@ -27,7 +28,7 @@ The map whose elements are to be exchanged with those of the map *right*.
 
 ### Remarks
 
-The template function is an algorithm specialized on the container class map to execute the member function `left`.[swap](../standard-library/map-class.md#swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function, **template** \< **class T**> **void swap**( **T&**, **T&**), in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.
+The template function is an algorithm specialized on the container class map to execute the member function `left`.[swap](../standard-library/map-class.md#swap)( `right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function, **`template`** \< **class T**> **void swap**( **T&**, **T&**), in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.
 
 ### Example
 
@@ -54,7 +55,7 @@ The multimap whose elements are to be exchanged with those of the multimap *righ
 
 ### Remarks
 
-The template function is an algorithm specialized on the container class map to execute on the container class multimap to execute the member function `left`.[swap](../standard-library/multimap-class.md#swap) (`right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function, **template** \< **class T**> **void swap**( **T&**, **T&**), in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.
+The template function is an algorithm specialized on the container class map to execute on the container class multimap to execute the member function `left`.[swap](../standard-library/multimap-class.md#swap) (`right`). This is an instance of the partial ordering of function templates by the compiler. When template functions are overloaded in such a way that the match of the template with the function call is not unique, then the compiler will select the most specialized version of the template function. The general version of the template function, **`template`** \< **class T**> **void swap**( **T&**, **T&**), in the algorithm class works by assignment and is a slow operation. The specialized version in each container is much faster as it can work with the internal representation of the container class.
 
 ### Example
 

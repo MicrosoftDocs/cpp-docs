@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;queue&gt; operators"
 title: "&lt;queue&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["queue/std::operator!=", "queue/std::operator&gt;", "queue/std::operator&gt;=", "queue/std::operator&lt;", "queue/std::operator&lt;=", "queue/std::operator=="]
@@ -25,7 +26,7 @@ An object of type `queue`.
 
 ### Return Value
 
-**true** if the queues are not equal; **false** if queues are equal.
+**`true`** if the queues are not equal; **`false`** if queues are equal.
 
 ### Remarks
 
@@ -92,7 +93,7 @@ An object of type `queue`.
 
 ### Return Value
 
-**true** if the queue on the left side of the operator is less than and not equal to the queue on the right side of the operator; otherwise **false**.
+**`true`** if the queue on the left side of the operator is less than and not equal to the queue on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -155,7 +156,7 @@ An object of type `queue`.
 
 ### Return Value
 
-**true** if the queue on the left side of the operator is strictly less than the queue on the right side of the operator; otherwise **false**.
+**`true`** if the queue on the left side of the operator is strictly less than the queue on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -220,7 +221,7 @@ An object of type `queue`.
 
 ### Return Value
 
-**true** if the queues are not equal; **false** if queues are equal.
+**`true`** if the queues are not equal; **`false`** if queues are equal.
 
 ### Remarks
 
@@ -286,7 +287,7 @@ An object of type `queue`.
 
 ### Return Value
 
-**true** if the queue on the left side of the operator is strictly less than the queue on the right side of the operator; otherwise **false**.
+**`true`** if the queue on the left side of the operator is strictly less than the queue on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -352,7 +353,7 @@ An object of type `queue`.
 
 ### Return Value
 
-**true** if the queue on the left side of the operator is strictly less than the queue on the right side of the operator; otherwise **false**.
+**`true`** if the queue on the left side of the operator is strictly less than the queue on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 

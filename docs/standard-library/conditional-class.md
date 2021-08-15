@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: conditional Class"
 title: "conditional Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::conditional"]
@@ -32,7 +33,7 @@ The type result when B is false.
 
 ## Remarks
 
-The template member typedef `conditional<B, T1, T2>::type` evaluates to *T1* when *B* evaluates to **true**, and evaluates to *T2* when *B* evaluates to **false**.
+The template member typedef `conditional<B, T1, T2>::type` evaluates to *T1* when *B* evaluates to **`true`**, and evaluates to *T2* when *B* evaluates to **`false`**.
 
 ## Requirements
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComObject Class"
 title: "CComObject Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComObject", "ATLCOM/ATL::CComObject", "ATLCOM/ATL::CComObject::CComObject", "ATLCOM/ATL::CComObject::AddRef", "ATLCOM/ATL::CComObject::CreateInstance", "ATLCOM/ATL::CComObject::QueryInterface", "ATLCOM/ATL::CComObject::Release"]
@@ -84,7 +85,7 @@ CComObject(void* = NULL);
 
 The destructor decrements it.
 
-If a `CComObject`-derived object is successfully constructed using the **new** operator, the initial reference count is 0. To set the reference count to the proper value (1), make a call to the [AddRef](#addref) function.
+If a `CComObject`-derived object is successfully constructed using the **`new`** operator, the initial reference count is 0. To set the reference count to the proper value (1), make a call to the [AddRef](#addref) function.
 
 ## <a name="dtor"></a> CComObject::~CComObject
 

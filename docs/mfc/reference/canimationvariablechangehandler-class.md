@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAnimationVariableChangeHandler Class"
 title: "CAnimationVariableChangeHandler Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAnimationVariableChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::OnValueChanged", "AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::SetAnimationController"]

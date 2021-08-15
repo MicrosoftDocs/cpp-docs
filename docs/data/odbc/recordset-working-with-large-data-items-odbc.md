@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Working with Large Data Items (ODBC)"
 title: "Recordset: Working with Large Data Items (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["BLOB (binary large object), recordsets", "ODBC recordsets, binary large objects", "recordsets, binary large objects", "binary large objects", "CLongBinary class, using in recordsets"]

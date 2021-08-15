@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Custom Manipulators with Arguments"
 title: "Custom Manipulators with Arguments"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["custom stream manipulators", "streams, custom stream manipulators", "output streams, custom stream manipulators"]
@@ -10,7 +11,7 @@ This section describes how to create output stream manipulators with one or more
 
 ## In This Section
 
-[Output Stream Manipulators with One Argument](../standard-library/output-stream-manipulators-with-one-argument-int-or-long.md) (**int** or **long**)
+[Output Stream Manipulators with One Argument](../standard-library/output-stream-manipulators-with-one-argument-int-or-long.md) (**`int`** or **`long`**)
 
 [Other One-Argument Output Stream Manipulators](../standard-library/other-one-argument-output-stream-manipulators.md)
 

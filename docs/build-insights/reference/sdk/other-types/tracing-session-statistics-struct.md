@@ -1,17 +1,17 @@
 ---
 title: "TRACING_SESSION_STATISTICS structure"
-description: "The C++ Build Insights SDK TRACING_SESSION_OPTIONS structure reference."
+description: "Learn about the C++ Build Insights SDK TRACING_SESSION_STATISTICS structure reference."
 ms.date: "02/12/2020"
 helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "TRACING_SESSION_STATISTICS", "throughput analysis", "build time analysis", "vcperf.exe"]
 ---
 # TRACING_SESSION_STATISTICS structure
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 The `TRACING_SESSION_STATISTICS` structure describes statistics on a trace that was collected. Its fields are set when stopping a tracing session.
 
@@ -30,7 +30,7 @@ typedef struct TRACING_SESSION_STATISTICS_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `MSVCEventsLost` | The number of MSVC events that were dropped. |
 | `MSVCBuffersLost` | The number of MSVC event buffers that were dropped. |

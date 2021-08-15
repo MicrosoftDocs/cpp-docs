@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4295"
 title: "Compiler Warning (level 4) C4295"
 ms.date: "01/09/2018"
 f1_keywords: ["C4295"]
@@ -13,7 +14,7 @@ An array was initialized but the last character in the array is not a null; acce
 
 ## Example
 
-The following sample generates C4295. To fix this issue, you could declare the array size larger, to hold a terminating null from the initializer string, or you could use an array initializer list to make the intent clear that this is an array of `char`, not a null-terminated string.
+The following sample generates C4295. To fix this issue, you could declare the array size larger, to hold a terminating null from the initializer string, or you could use an array initializer list to make the intent clear that this is an array of **`char`**, not a null-terminated string.
 
 ```C
 // C4295.c

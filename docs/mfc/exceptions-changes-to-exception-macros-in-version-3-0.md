@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exceptions: Changes to Exception Macros in Version 3.0"
 title: "Exceptions: Changes to Exception Macros in Version 3.0"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["C++ exception handling [MFC], upgrade considerations", "CATCH macro [MFC]", "exceptions [MFC], what's changed", "THROW_LAST macro [MFC]"]
@@ -22,15 +23,15 @@ In earlier versions of MFC, the **CATCH** macro used MFC run-time type informati
 
 The following example illustrates the consequence of this difference between MFC version 3.0 and earlier versions:
 
-[!code-cpp[NVC_MFCExceptions#1](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_1.cpp)]
+[!code-cpp[NVC_MFCExceptions#1](codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_1.cpp)]
 
-This code behaves differently in version 3.0 because control always passes to the first **catch** block with a matching exception-declaration. The result of the throw expression
+This code behaves differently in version 3.0 because control always passes to the first **`catch`** block with a matching exception-declaration. The result of the throw expression
 
-[!code-cpp[NVC_MFCExceptions#19](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_2.cpp)]
+[!code-cpp[NVC_MFCExceptions#19](codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_2.cpp)]
 
 is thrown as a `CException*`, even though it is constructed as a `CCustomException`. The **CATCH** macro in MFC versions 2.5 and earlier uses `CObject::IsKindOf` to test the type at run time. Because the expression
 
-[!code-cpp[NVC_MFCExceptions#20](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_3.cpp)]
+[!code-cpp[NVC_MFCExceptions#20](codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_3.cpp)]
 
 is true, the first catch block catches the exception. In version 3.0, which uses C++ exceptions to implement many of the exception-handling macros, the second catch block matches the thrown `CException`.
 
@@ -44,12 +45,12 @@ A catch block cannot throw the same exception pointer that it caught.
 
 For example, this code was valid in previous versions, but will have unexpected results with version 3.0:
 
-[!code-cpp[NVC_MFCExceptions#2](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_4.cpp)]
+[!code-cpp[NVC_MFCExceptions#2](codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_4.cpp)]
 
 Using **THROW** in the catch block causes the pointer `e` to be deleted, so that the outer catch site will receive an invalid pointer. Use **THROW_LAST** to re-throw `e`.
 
-For more information, see [Exceptions: Catching and Deleting Exceptions](../mfc/exceptions-catching-and-deleting-exceptions.md).
+For more information, see [Exceptions: Catching and Deleting Exceptions](exceptions-catching-and-deleting-exceptions.md).
 
 ## See also
 
-[Exception Handling](../mfc/exception-handling-in-mfc.md)
+[Exception Handling](exception-handling-in-mfc.md)

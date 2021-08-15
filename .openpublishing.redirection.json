@@ -62,8 +62,8 @@
     },
     {
       "source_path": "docs/vcpkg.md",
-      "redirect_url": "/cpp/build/vcpkg",
-      "redirect_document_id": true
+      "redirect_url": "https://vcpkg.io/",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/windows/universal-windows-apps-cpp.md",
@@ -107,22 +107,22 @@
     },
     {
       "source_path": "docs/assembler/arm/index.md",
-      "redirect_url": "/cpp/assembler/arm/arm-assembler-reference",
+      "redirect_url": "/cpp/intrinsics/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/assembler/index.md",
-      "redirect_url": "/cpp/assembler/masm/microsoft-macro-assembler-reference",
+      "redirect_url": "/cpp/intrinsics/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/assembler/inline/index.md",
-      "redirect_url": "/cpp/assembler/inline/inline-assembler",
+      "redirect_url": "/cpp/intrinsics/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/assembler/masm/index.md",
-      "redirect_url": "/cpp/assembler/masm/microsoft-macro-assembler-reference",
+      "redirect_url": "/cpp/intrinsics/index",
       "redirect_document_id": false
     },
     {
@@ -461,6 +461,81 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/build/reference/specifying-dlls-to-delay-load.md",
+      "redirect_url": "/cpp/build/reference/linker-support-for-delay-loaded-dlls#specify-dlls-to-delay-load",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/explicitly-unloading-a-delay-loaded-dll.md",
+      "redirect_url": "/cpp/build/reference/linker-support-for-delay-loaded-dlls#explicitly-unload-a-delay-loaded-dll",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/binding-imports.md",
+      "redirect_url": "/cpp/build/reference/linker-support-for-delay-loaded-dlls#binding-imports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/loading-all-imports-for-a-delay-loaded-dll.md",
+      "redirect_url": "/cpp/build/reference/linker-support-for-delay-loaded-dlls#load-all-imports-for-a-delay-loaded-dll",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/dumping-delay-loaded-imports.md",
+      "redirect_url": "/cpp/build/reference/linker-support-for-delay-loaded-dlls#dump-delay-loaded-imports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/constraints-of-delay-loading-dlls.md",
+      "redirect_url": "/cpp/build/reference/linker-support-for-delay-loaded-dlls#constraints-on-delay-load-dlls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/notification-hooks.md",
+      "redirect_url": "/cpp/build/reference/error-handling-and-notification#notification-hooks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/failure-hooks.md",
+      "redirect_url": "/cpp/build/reference/error-handling-and-notification#failure-hooks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/exceptions-c-cpp.md",
+      "redirect_url": "/cpp/build/reference/error-handling-and-notification#delay-load-exception-codes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md",
+      "redirect_url": "/cpp/build/reference/understanding-the-helper-function",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/calling-conventions-parameters-and-return-type.md",
+      "redirect_url": "/cpp/build/reference/understanding-the-helper-function#calling-conventions-parameters-and-return-type",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/structure-and-constant-definitions.md",
+      "redirect_url": "/cpp/build/reference/understanding-the-helper-function#structure-and-constant-definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/calculating-necessary-values.md",
+      "redirect_url": "/cpp/build/reference/understanding-the-helper-function#calculate-necessary-values",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/unloading-a-delay-loaded-dll.md",
+      "redirect_url": "/cpp/build/reference/understanding-the-helper-function#unload-a-delay-loaded-dll",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/developing-your-own-helper-function.md",
+      "redirect_url": "/cpp/build/reference/understanding-the-helper-function#develop-your-own-helper-function",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build/macro-substitution.md",
       "redirect_url": "/cpp/build/reference/macro-substitution",
       "redirect_document_id": false
@@ -591,6 +666,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/build/setting-the-path-and-environment-variables-for-command-line-builds.md",
+      "redirect_url": "/cpp/build/building-on-the-command-line",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build/special-characters-in-a-makefile.md",
       "redirect_url": "/cpp/build/reference/special-characters-in-a-makefile",
       "redirect_document_id": false
@@ -651,6 +731,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/build/vcpkg.md",
+      "redirect_url": "https://vcpkg.io/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/install-vcpkg.md",
+      "redirect_url": "https://vcpkg.io/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/integrate-vcpkg.md",
+      "redirect_url": "https://vcpkg.io/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/manage-libraries-with-vcpkg.md",
+      "redirect_url": "https://vcpkg.io/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/vcpkg-command-line-reference.md",
+      "redirect_url": "https://vcpkg.io/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build/where-to-define-macros.md",
       "redirect_url": "/cpp/build/reference/where-to-define-macros",
       "redirect_document_id": false
@@ -701,13 +806,53 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/c-language/index.md",
-      "redirect_url": "/cpp/c-language/c-language-reference",
+      "source_path": "docs/c-language/generic_selection.md",
+      "redirect_url": "/cpp/c-language/generic-selection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-language/operators-c.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-language/punctuators.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-language/summary-of-constants.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-language/summary-of-identifiers.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-language/summary-of-keywords.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-language/summary-of-string-literals.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-language/summary-of-tokens.md",
+      "redirect_url": "/cpp/c-language/lexical-grammar",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/cloud/index.md",
       "redirect_url": "/cpp/cloud/cloud-and-web-programming-in-visual-cpp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/code-quality/cpp-core-guidelines-warnings.md",
+      "redirect_url": "/cpp/code-quality/using-the-cpp-core-guidelines-checkers",
       "redirect_document_id": false
     },
     {
@@ -756,13 +901,18 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/cpp/character-sets2.md",
-      "redirect_url": "/cpp/cpp/character-sets",
+      "source_path": "docs/cpp/bstr-t-member-functions.md",
+      "redirect_url": "/cpp/cpp/bstr-t-class",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/cpp/index.md",
-      "redirect_url": "/cpp/cpp/cpp-language-reference",
+      "source_path": "docs/cpp/bstr-t-operators.md",
+      "redirect_url": "/cpp/cpp/bstr-t-class",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/cpp/character-sets2.md",
+      "redirect_url": "/cpp/cpp/character-sets",
       "redirect_document_id": false
     },
     {
@@ -7501,11 +7651,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/intrinsics/index.md",
-      "redirect_url": "/cpp/intrinsics/compiler-intrinsics",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/mfc/active-documents-on-the-internet.md",
       "redirect_url": "/cpp/mfc/activex-controls",
       "redirect_document_id": false
@@ -8387,12 +8532,12 @@
     },
     {
       "source_path": "docs/windows/editing-properties-for-an-activex-control.md",
-      "redirect_url": "/cpp/windows/viewing-and-adding-activex-controls-to-a-dialog-box",
+      "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/windows/insert-activex-control-dialog-box.md",
-      "redirect_url": "/cpp/windows/viewing-and-adding-activex-controls-to-a-dialog-box",
+      "redirect_url": "/cpp/windows/adding-editing-or-deleting-controls",
       "redirect_document_id": false
     },
     {
@@ -8617,42 +8762,42 @@
     },
     {
       "source_path": "docs/windows/creating-a-new-toolbar-button.md",
-      "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+      "redirect_url": "/cpp/windows/toolbar-editor",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/windows/moving-a-toolbar-button.md",
-      "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+      "redirect_url": "/cpp/windows/toolbar-editor",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/windows/copying-buttons-from-a-toolbar.md",
-      "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+      "redirect_url": "/cpp/windows/toolbar-editor",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/windows/deleting-a-toolbar-button.md",
-      "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+      "redirect_url": "/cpp/windows/toolbar-editor",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/windows/inserting-a-space-between-buttons-on-a-toolbar.md",
-      "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+      "redirect_url": "/cpp/windows/toolbar-editor",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/windows/removing-space-between-buttons-on-a-toolbar.md",
-      "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+      "redirect_url": "/cpp/windows/toolbar-editor",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/windows/changing-the-properties-of-a-toolbar-button.md",
-      "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+      "redirect_url": "/cpp/windows/toolbar-editor",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/windows/toolbar-button-properties.md",
-      "redirect_url": "/cpp/windows/creating-moving-and-editing-toolbar-buttons",
+      "redirect_url": "/cpp/windows/toolbar-editor",
       "redirect_document_id": false
     },
     {
@@ -13428,6 +13573,16 @@
     {
       "source_path": "docs/parallel/openmp/a-31-thread-safe-lock-functions.md",
       "redirect_url": "/cpp/parallel/openmp/a-examples#a31-thread-safe-lock-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-runtime-library/operator-delete-crt.md",
+      "redirect_url": "docs/c-runtime-library/delete-operator-crt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/c-runtime-library/operator-new-crt.md",
+      "redirect_url": "docs/c-runtime-library/new-operator-crt",
       "redirect_document_id": false
     }
   ]

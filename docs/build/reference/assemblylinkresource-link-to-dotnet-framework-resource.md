@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /ASSEMBLYLINKRESOURCE (Link to .NET Framework Resource)"
 title: "/ASSEMBLYLINKRESOURCE (Link to .NET Framework Resource)"
 ms.date: "11/04/2016"
 f1_keywords: ["/ASSEMBLYLINKRESOURCE", "VC.Project.VCLinkerTool.AssemblyLinkResource"]
@@ -48,9 +49,7 @@ Other linker options that affect assembly generation are:
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **Linker** folder.
-
-1. Click the **Command Line** property page.
+1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
 1. Type the option into the **Additional Options** box.
 

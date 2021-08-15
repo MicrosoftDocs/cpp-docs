@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using SAL Annotations to Reduce C/C++ Code Defects"
 title: Using SAL Annotations to Reduce C/C++ Code Defects
 ms.date: 11/04/2016
 ms.topic: "conceptual"
@@ -45,10 +46,6 @@ The articles in this section of the documentation discuss aspects of SAL, provid
 - [Best Practices and Examples](../code-quality/best-practices-and-examples-sal.md)
 
      Provides examples that show how to use SAL annotations. Also explains common pitfalls.
-
-## Related Resources
-
-[Code Analysis Team Blog](https://blogs.msdn.microsoft.com/codeanalysis/)
 
 ## See Also
 

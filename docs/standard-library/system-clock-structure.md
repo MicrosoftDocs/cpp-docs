@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: system_clock Structure"
 title: "system_clock Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["chrono/std::chrono::system_clock", "chrono/std::chrono::system_clock::from_time_t", "chrono/std::chrono::system_clock::now", "chrono/std::chrono::system_clock::to_time_t", "chrono/std::chrono::system_clock::is_monotonic Constant", "chrono/std::chrono::system_clock::is_steady Constant"]
@@ -50,9 +51,9 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 ## Requirements
 
-**Header:** \<chrono>
+**Header:** `<chrono>`
 
-**Namespace:** std::chrono
+**Namespace:** `std::chrono`
 
 ## <a name="from_time_t"></a> system_clock::from_time_t
 
@@ -77,7 +78,7 @@ static const bool is_monotonic = false;
 
 ### Return Value
 
-In this implementation, `system_clock::is_monotonic` always returns **false**.
+In this implementation, `system_clock::is_monotonic` always returns **`false`**.
 
 ### Remarks
 
@@ -93,7 +94,7 @@ static const bool is_steady = false;
 
 ### Return Value
 
-In this implementation, `system_clock::is_steady` always returns **false**.
+In this implementation, `system_clock::is_steady` always returns **`false`**.
 
 ### Remarks
 
@@ -113,7 +114,7 @@ A [time_point](../standard-library/time-point-class.md) object that represents t
 
 ## <a name="to_time_t"></a> system_clock::to_time_t
 
-Static method that returns a [time_t](../c-runtime-library/standard-types.md) that most closely approximates the time that is represented by *Time*.
+Static method that returns a [`time_t`](../c-runtime-library/standard-types.md) that most closely approximates the time that is represented by *Time*.
 
 ```cpp
 static time_t to_time_t(const time_point& Time) noexcept;
@@ -126,6 +127,6 @@ A [time_point](../standard-library/time-point-class.md) object.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[\<chrono>](../standard-library/chrono.md)\
-[steady_clock struct](../standard-library/steady-clock-struct.md)
+[`<chrono>`](../standard-library/chrono.md)\
+[`steady_clock` struct](../standard-library/steady-clock-struct.md)\
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: ___lc_collate_cp_func"
 title: "___lc_collate_cp_func"
-ms.date: "4/2/2020"
+ms.date: "1/14/2021"
 api_name: ["___lc_collate_cp_func", "_o____lc_collate_cp_func"]
-api_location: ["msvcr120.dll", "msvcrt.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr90.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcr120.dll", "msvcrt.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr90.dll", "api-ms-win-crt-private-l1-1-0.dll", "api-ms-win-crt-locale-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["___lc_collate_cp_func"]

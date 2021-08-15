@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MakeAllocator Class"
 title: "MakeAllocator Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"
@@ -34,7 +35,7 @@ class MakeAllocator<T, true>;
 A type name.
 
 *hasWeakReferenceSupport*<br/>
-**true** to allocate memory for an object that supports weak references; **false** to allocate memory for an object that doesn't support weak references.
+**`true`** to allocate memory for an object that supports weak references; **`false`** to allocate memory for an object that doesn't support weak references.
 
 ## Remarks
 
@@ -80,7 +81,7 @@ __forceinline void* Allocate();
 
 ### Return Value
 
-If successful, a pointer to the allocated memory; otherwise, `nullptr`.
+If successful, a pointer to the allocated memory; otherwise, **`nullptr`**.
 
 ### Remarks
 

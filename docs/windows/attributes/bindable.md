@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bindable"
 title: "bindable (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.bindable"]
@@ -52,9 +53,7 @@ __interface IPropDemo : IDispatch {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface method|
 |**Repeatable**|No|

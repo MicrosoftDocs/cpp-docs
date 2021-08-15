@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use a Drawing Tool"
 title: "How to: Use a Drawing Tool"
 ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.image.drawing"]
@@ -7,14 +8,14 @@ ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
 ---
 # How to: Use a Drawing Tool
 
-The **Image Editor** has freehand drawing and erasing tools that all work in the same way. You select the tool and, if necessary, [select foreground and background colors](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) and size and shape options. You then move the pointer to the image and click or drag to draw and erase.
+The **Image Editor** has freehand drawing and erasing tools that all work in the same way. You select the tool and, if necessary, [select foreground and background colors](./image-editor-for-icons.md) and size and shape options. You then move the pointer to the image and click or drag to draw and erase.
 
 ## Drawing Tools
 
 You can select drawing tools from either the **Image Editor** toolbar or the **Image** menu. When you select the **Eraser** tool, **Brush** tool, or **Airbrush** tool, the option selector displays that tool's options.
 
 > [!TIP]
-> Tool tips appear when you hover your cursor over the buttons on the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md). These tips will help you identify the specific buttons mentioned here.
+> Tool tips appear when you hover your cursor over the buttons on the [Image Editor toolbar](./image-editor-for-icons.md). These tips will help you identify the specific buttons mentioned here.
 
 ### To select and use a drawing tool from the Image Editor toolbar
 
@@ -33,9 +34,9 @@ You can select drawing tools from either the **Image Editor** toolbar or the **I
 
 1. If necessary, select colors and a brush:
 
-   - In the [Colors palette](../windows/colors-window-image-editor-for-icons.md), select the left mouse button to select a foreground color or the right mouse button to select a background color.
+   - In the [Colors palette](./image-editor-for-icons.md), select the left mouse button to select a foreground color or the right mouse button to select a background color.
 
-   - In the [Options selector](../windows/toolbar-image-editor-for-icons.md), select a shape representing the brush you want to use.
+   - In the [Options selector](./image-editor-for-icons.md), select a shape representing the brush you want to use.
 
 1. Point to the place on the image where you want to start drawing or painting. The pointer changes shape according to the tool you selected.
 
@@ -55,13 +56,13 @@ Lines are drawn in a width determined by the current brush selection, and framed
 
 ### To draw a line
 
-1. Use the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md) or go to menu **Image**> **Tools** and choose the **Line** tool.
+1. Use the [Image Editor toolbar](./image-editor-for-icons.md) or go to menu **Image**> **Tools** and choose the **Line** tool.
 
 1. If necessary, select colors and a brush:
 
-   - In the [Colors palette](../windows/colors-window-image-editor-for-icons.md), select the left mouse button to select a foreground color or the right mouse button to select a background color.
+   - In the [Colors palette](./image-editor-for-icons.md), select the left mouse button to select a foreground color or the right mouse button to select a background color.
 
-   - In the [Options selector](../windows/toolbar-image-editor-for-icons.md), select a shape representing the brush you want to use.
+   - In the [Options selector](./image-editor-for-icons.md), select a shape representing the brush you want to use.
 
 1. Place the pointer at the line's starting point.
 
@@ -92,7 +93,7 @@ A custom brush is a rectangular portion of an image that you pick up and use lik
    Your selection becomes a custom brush that distributes the colors in the selection across the image. Copies of the selection are left along the dragging path. The more slowly you drag, the more copies are made.
 
    > [!NOTE]
-   > Selecting the **Use a Selection as Brush** without first selecting a portion of the image will use the whole image as a brush. The result of using a custom brush will also depend on whether you've selected an [Opaque or Transparent background](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md).
+   > Selecting the **Use a Selection as Brush** without first selecting a portion of the image will use the whole image as a brush. The result of using a custom brush will also depend on whether you've selected an [Opaque or Transparent background](./image-editor-for-icons.md).
 
 Pixels in a custom brush that match the current background color are normally transparent: they don't paint over the existing image. You can change this behavior so that background-color pixels paint over the existing image.
 

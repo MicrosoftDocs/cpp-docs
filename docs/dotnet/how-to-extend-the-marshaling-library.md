@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Extend the Marshaling Library"
 title: "How to: Extend the Marshaling Library"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
@@ -64,7 +65,7 @@ namespace msclr {
 
 1. Replace the comment about setting `toObject` with code to set `toObject` to your converted object.
 
-1. Replace the comment about cleaning up native resources with code to free any memory allocated by `toPtr`. If `toPtr` allocated memory by using `new`, use `delete` to free the memory.
+1. Replace the comment about cleaning up native resources with code to free any memory allocated by `toPtr`. If `toPtr` allocated memory by using **`new`**, use **`delete`** to free the memory.
 
 ```
 namespace msclr {
@@ -95,7 +96,7 @@ namespace msclr {
 }
 ```
 
-## Example
+## Example: Extend marshaling library
 
 The following example extends the marshaling library with a conversion that does not require a context. In this example, the code converts the employee information from a native data type to a managed data type.
 
@@ -157,7 +158,7 @@ Managed address: 123 Main Street
 Managed zip code: 98111
 ```
 
-## Example
+## Example: Convert employee information
 
 The following example converts the employee information from a managed data type to a native data type. This conversion requires a marshaling context.
 

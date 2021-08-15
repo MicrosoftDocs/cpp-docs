@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: aligned_union Class"
 title: "aligned_union Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::aligned_union"]
@@ -77,5 +78,5 @@ value of u->i is 1065353216
 
 ## See also
 
-[<type_traits>](../standard-library/type-traits.md)\
-[alignment_of Class](../standard-library/alignment-of-class.md)
+[<type_traits>](type-traits.md)\
+[alignment_of Class](alignment-of-class.md)

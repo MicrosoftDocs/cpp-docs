@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;hash_set&gt; operators"
 title: "&lt;hash_set&gt; operators"
 ms.date: "03/27/2019"
 f1_keywords: ["hash_set/std::operator!=", "hash_set/std::operator=="]
@@ -6,10 +7,10 @@ ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
 ---
 # &lt;hash_set&gt; operators
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator!= (hash_multiset)](#op_neq_hash_multiset)|[operator==](#op_eq_eq)|
-|[operator== (hash_multiset)](#op_eq_eq_hash_multiset)|
+[operator!=](#op_neq)\
+[operator!= (hash_multiset)](#op_neq_hash_multiset)\
+[operator==](#op_eq_eq)\
+[operator== (hash_multiset)](#op_eq_eq_hash_multiset)
 
 ## <a name="op_neq"></a> operator!=
 
@@ -32,7 +33,7 @@ An object of type `hash_set`.
 
 ### Return Value
 
-**true** if the hash_sets are not equal; **false** if hash_sets are equal.
+**`true`** if the hash_sets are not equal; **`false`** if hash_sets are equal.
 
 ### Remarks
 
@@ -100,7 +101,7 @@ An object of type `hash_set`.
 
 ### Return Value
 
-**true** if the hash_set on the left side of the operator is equal to the hash_set on the right side of the operator; otherwise **false**.
+**`true`** if the hash_set on the left side of the operator is equal to the hash_set on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -166,7 +167,7 @@ An object of type `hash_multiset`.
 
 ### Return Value
 
-**true** if the hash_multisets are not equal; **false** if hash_multisets are equal.
+**`true`** if the hash_multisets are not equal; **`false`** if hash_multisets are equal.
 
 ### Remarks
 
@@ -232,7 +233,7 @@ An object of type `hash_multiset`.
 
 ### Return Value
 
-**true** if the hash_multiset on the left side of the operator is equal to the hash_multiset on the right side of the operator; otherwise **false**.
+**`true`** if the hash_multiset on the left side of the operator is equal to the hash_multiset on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 

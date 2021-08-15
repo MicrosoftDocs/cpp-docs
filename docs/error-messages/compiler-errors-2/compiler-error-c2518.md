@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2518"
 title: "Compiler Error C2518"
 ms.date: "11/04/2016"
 f1_keywords: ["C2518"]
@@ -9,7 +10,7 @@ ms.assetid: a7895b47-da90-4851-ac97-18e81479595a
 
 keyword 'keyword' illegal in base class list; ignored
 
-The keywords `class` and `struct` should not appear in a base class list.
+The keywords **`class`** and **`struct`** should not appear in a base class list.
 
 The following sample generates C2518:
 

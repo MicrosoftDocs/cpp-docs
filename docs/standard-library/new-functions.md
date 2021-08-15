@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;new&gt; functions"
 title: "&lt;new&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["new/std::get_new_handler", "new/std::nothrow", "new/std::set_new_handler"]
@@ -52,7 +53,7 @@ const int c = std::launder(p)->n; // OK
 
 ## <a name="nothrow"></a> nothrow
 
-Provides an object to be used as an argument for the **nothrow** versions of **new** and **delete**.
+Provides an object to be used as an argument for the **`nothrow`** versions of **`new`** and **`delete`**.
 
 ```cpp
 extern const std::nothrow_t nothrow;

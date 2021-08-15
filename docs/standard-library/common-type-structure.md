@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: common_type Structure"
 title: "common_type Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["chrono/std::common_type"]
@@ -26,11 +27,11 @@ chrono::time_point<Clock, Duration2>>;
 
 ## Requirements
 
-**Header:** \<chrono>
+**Header:** `<chrono>`
 
 **Namespace:** std
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[\<chrono>](../standard-library/chrono.md)
+[`<chrono>`](../standard-library/chrono.md)\
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

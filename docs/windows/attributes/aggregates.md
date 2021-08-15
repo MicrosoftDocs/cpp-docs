@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: aggregates"
 title: "aggregates (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.aggregates"]
@@ -68,11 +69,9 @@ struct CObject : IObject
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|Yes|
 |**Required attributes**|One or more of the following: `coclass`, `progid`, or `vi_progid`.|
 |**Invalid attributes**|None|

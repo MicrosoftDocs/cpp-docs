@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Record Field Exchange: How RFX Works"
 title: "Record Field Exchange: How RFX Works"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["record editing [C++], using RFX", "RFX (ODBC) [C++], updating data in recordsets", "scrolling [C++]", "ODBC [C++], RFX", "data binding [C++], DFX", "scrolling [C++], RFX", "RFX (ODBC) [C++], binding fields and parameters"]
@@ -53,7 +54,7 @@ The following table shows the sequence of RFX operations when you open a records
 |||6. ODBC does the move and fills in the data.|
 ||7. Fix up the data for C++.||
 
-Recordsets use ODBC's prepared execution to allow for fast requerying with the same SQL statement. For more information about prepared execution, see the ODBC SDK *Programmer's Reference* in the MSDN Library.
+Recordsets use ODBC's prepared execution to allow for fast requerying with the same SQL statement. For more information about prepared execution, see the [ODBC Programmer's Reference](/sql/odbc/reference/odbc-programmer-s-reference).
 
 ### <a name="_mfc_rfx.3a_.scrolling"></a> RFX: Scrolling
 

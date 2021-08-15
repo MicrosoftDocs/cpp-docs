@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Connecting Using Tasks and XML HTTP Requests"
 title: "Walkthrough: Connecting Using Tasks and XML HTTP Requests"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["connecting to web services, UWP apps [C++]", "IXMLHTTPRequest2 and tasks, example", "IXHR2 and tasks, example"]
@@ -68,15 +69,15 @@ This section demonstrates how to use the `HttpRequest` class in a UWP app. The a
 
    [!code-cpp[concrt-using-ixhr2#A2](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_5.h)]
 
-1. In MainPage.xaml.h, add these `private` member variables to the `MainPage` class:
+1. In MainPage.xaml.h, add these **`private`** member variables to the `MainPage` class:
 
    [!code-cpp[concrt-using-ixhr2#A3](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_6.h)]
 
-1. In MainPage.xaml.h, declare the `private` method `ProcessHttpRequest`:
+1. In MainPage.xaml.h, declare the **`private`** method `ProcessHttpRequest`:
 
    [!code-cpp[concrt-using-ixhr2#A4](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_7.h)]
 
-1. In MainPage.xaml.cpp, add these `using` statements:
+1. In MainPage.xaml.cpp, add these **`using`** statements:
 
    [!code-cpp[concrt-using-ixhr2#A5](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_8.cpp)]
 
@@ -95,7 +96,7 @@ This section demonstrates how to use the `HttpRequest` class in a UWP app. The a
 
 Here is the running app:
 
-![The running Windows Runtime app](../../parallel/concrt/media/concrt_usingixhr2.png "The running Windows Runtime app")
+![The running Windows Runtime app.](../../parallel/concrt/media/concrt_usingixhr2.png "The running Windows Runtime app")
 
 ## Next Steps
 

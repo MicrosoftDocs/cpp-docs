@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accelerator Keys (C++)"
 title: "Accelerator Keys (C++)"
 ms.date: "02/14/2019"
 helpviewer_keywords: ["accelerator keys", "keyboard shortcuts", "keyboard shortcuts [C++], predefined", "menus [C++], shortcut keys", "keyboard shortcuts [C++], menu association"]
@@ -66,7 +67,7 @@ There are a number of predefined accelerator keys that may be part of a Windows 
 
 ## Accelerator Key Association
 
-Many times, you want a menu item and a keyboard combination to issue the same program command. You do this action by assigning the same resource identifier (ID) to the menu item and to an entry in your application's accelerator table. You then edit the menu item's caption to show the name of the accelerator. For more information on menu items and accelerator keys, see [Menu Commands](../windows/associating-a-menu-command-with-an-accelerator-key.md).
+Many times, you want a menu item and a keyboard combination to issue the same program command. You do this action by assigning the same resource identifier (ID) to the menu item and to an entry in your application's accelerator table. You then edit the menu item's caption to show the name of the accelerator. For more information on menu items and accelerator keys, see [Menu Commands](./menu-command-properties.md).
 
 ## Requirements
 

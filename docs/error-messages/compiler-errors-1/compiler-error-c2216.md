@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2216"
 title: "Compiler Error C2216"
 ms.date: "11/04/2016"
 f1_keywords: ["C2216"]
@@ -11,7 +12,7 @@ ms.assetid: 250f6bdc-a5e1-495f-a1e8-6e8e7021ad9d
 
 Two keywords that are mutually exclusive were used together.
 
-## Example
+## Examples
 
 The following sample generates C2216.
 
@@ -24,8 +25,6 @@ ref struct Y1 {
 };
 ```
 
-## Example
-
 The following sample generates C2216.
 
 ```cpp
@@ -36,8 +35,6 @@ public ref class X {
    typedef property int i2;   // C2216 typedef not allowed on property
 };
 ```
-
-## Example
 
 The following sample generates C2216.
 

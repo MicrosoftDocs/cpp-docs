@@ -1,0 +1,290 @@
+- name: Compiler intrinsics and assembly language
+  href: ../intrinsics/index.yml
+- name: Compiler intrinsics
+  items: 
+    - name: Compiler intrinsics overview
+      href: ../intrinsics/compiler-intrinsics.md
+    - name: ARM intrinsics
+      href: ../intrinsics/arm-intrinsics.md
+    - name: ARM64 intrinsics
+      href: ../intrinsics/arm64-intrinsics.md
+    - name: x86 intrinsics list
+      href: ../intrinsics/x86-intrinsics-list.md
+    - name: x64 (amd64) intrinsics list
+      href: ../intrinsics/x64-amd64-intrinsics-list.md
+    - name: Intrinsics available on all architectures
+      href: ../intrinsics/intrinsics-available-on-all-architectures.md
+    - name: Alphabetical listing of intrinsic functions
+      items: 
+        - name: Alphabetical listing of intrinsic functions
+          href: ../intrinsics/alphabetical-listing-of-intrinsic-functions.md
+        - name: __addfsbyte, __addfsword, __addfsdword
+          href: ../intrinsics/addfsbyte-addfsword-addfsdword.md
+        - name: __addgsbyte, __addgsword, __addgsdword, __addgsqword
+          href: ../intrinsics/addgsbyte-addgsword-addgsdword-addgsqword.md
+        - name: _AddressOfReturnAddress
+          href: ../intrinsics/addressofreturnaddress.md
+        - name: __assume
+          href: ../intrinsics/assume.md
+        - name: _BitScanForward, _BitScanForward64
+          href: ../intrinsics/bitscanforward-bitscanforward64.md
+        - name: _BitScanReverse, _BitScanReverse64
+          href: ../intrinsics/bitscanreverse-bitscanreverse64.md
+        - name: _bittest, _bittest64
+          href: ../intrinsics/bittest-bittest64.md
+        - name: _bittestandcomplement, _bittestandcomplement64
+          href: ../intrinsics/bittestandcomplement-bittestandcomplement64.md
+        - name: _bittestandreset, _bittestandreset64
+          href: ../intrinsics/bittestandreset-bittestandreset64.md
+        - name: _bittestandset, _bittestandset64
+          href: ../intrinsics/bittestandset-bittestandset64.md
+        - name: __cpuid, __cpuidex
+          href: ../intrinsics/cpuid-cpuidex.md
+        - name: __debugbreak
+          href: ../intrinsics/debugbreak.md
+        - name: _disable
+          href: ../intrinsics/disable.md
+        - name: _div128
+          href: ../intrinsics/div128.md
+        - name: _div64
+          href: ../intrinsics/div64.md
+        - name: __emul, __emulu
+          href: ../intrinsics/emul-emulu.md
+        - name: _enable
+          href: ../intrinsics/enable.md
+        - name: __fastfail
+          href: ../intrinsics/fastfail.md
+        - name: __faststorefence
+          href: ../intrinsics/faststorefence.md
+        - name: __getcallerseflags
+          href: ../intrinsics/getcallerseflags.md
+        - name: __halt
+          href: ../intrinsics/halt.md
+        - name: _InterlockedAdd Intrinsic Functions
+          href: ../intrinsics/interlockedadd-intrinsic-functions.md
+        - name: _InterlockedAddLargeStatistic
+          href: ../intrinsics/interlockedaddlargestatistic.md
+        - name: _InterlockedAnd Intrinsic Functions
+          href: ../intrinsics/interlockedand-intrinsic-functions.md
+        - name: _interlockedbittestandreset Intrinsic Functions
+          href: ../intrinsics/interlockedbittestandreset-intrinsic-functions.md
+        - name: _interlockedbittestandset Intrinsic Functions
+          href: ../intrinsics/interlockedbittestandset-intrinsic-functions.md
+        - name: _InterlockedCompareExchange Intrinsic Functions
+          href: ../intrinsics/interlockedcompareexchange-intrinsic-functions.md
+        - name: _InterlockedCompareExchange128
+          href: ../intrinsics/interlockedcompareexchange128.md
+        - name: _InterlockedCompareExchangePointer Intrinsic Functions
+          href: ../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md
+        - name: _InterlockedDecrement Intrinsic Functions
+          href: ../intrinsics/interlockeddecrement-intrinsic-functions.md
+        - name: _InterlockedExchange Intrinsic Functions
+          href: ../intrinsics/interlockedexchange-intrinsic-functions.md
+        - name: _InterlockedExchangeAdd Intrinsic Functions
+          href: ../intrinsics/interlockedexchangeadd-intrinsic-functions.md
+        - name: _InterlockedExchangePointer Intrinsic Functions
+          href: ../intrinsics/interlockedexchangepointer-intrinsic-functions.md
+        - name: _InterlockedIncrement Intrinsic Functions
+          href: ../intrinsics/interlockedincrement-intrinsic-functions.md
+        - name: _InterlockedOr Intrinsic Functions
+          href: ../intrinsics/interlockedor-intrinsic-functions.md
+        - name: _InterlockedXor Intrinsic Functions
+          href: ../intrinsics/interlockedxor-intrinsic-functions.md
+        - name: __inbyte
+          href: ../intrinsics/inbyte.md
+        - name: __inbytestring
+          href: ../intrinsics/inbytestring.md
+        - name: __incfsbyte, __incfsword, __incfsdword
+          href: ../intrinsics/incfsbyte-incfsword-incfsdword.md
+        - name: __incgsbyte, __incgsword, __incgsdword, __incgsqword
+          href: ../intrinsics/incgsbyte-incgsword-incgsdword-incgsqword.md
+        - name: __indword
+          href: ../intrinsics/indword.md
+        - name: __indwordstring
+          href: ../intrinsics/indwordstring.md
+        - name: __int2c
+          href: ../intrinsics/int2c.md
+        - name: __invlpg
+          href: ../intrinsics/invlpg.md
+        - name: __inword
+          href: ../intrinsics/inword.md
+        - name: __inwordstring
+          href: ../intrinsics/inwordstring.md
+        - name: __lidt
+          href: ../intrinsics/lidt.md
+        - name: __ll_lshift
+          href: ../intrinsics/ll-lshift.md
+        - name: __ll_rshift
+          href: ../intrinsics/ll-rshift.md
+        - name: __lzcnt16, __lzcnt, __lzcnt64
+          href: ../intrinsics/lzcnt16-lzcnt-lzcnt64.md
+        - name: _mm_cvtsi64x_ss
+          href: ../intrinsics/mm-cvtsi64x-ss.md
+        - name: _mm_cvtss_si64x
+          href: ../intrinsics/mm-cvtss-si64x.md
+        - name: _mm_cvttss_si64x
+          href: ../intrinsics/mm-cvttss-si64x.md
+        - name: _mm_extract_si64, _mm_extracti_si64
+          href: ../intrinsics/mm-extract-si64-mm-extracti-si64.md
+        - name: _mm_insert_si64, _mm_inserti_si64
+          href: ../intrinsics/mm-insert-si64-mm-inserti-si64.md
+        - name: _mm_stream_sd
+          href: ../intrinsics/mm-stream-sd.md
+        - name: _mm_stream_si64x
+          href: ../intrinsics/mm-stream-si64x.md
+        - name: _mm_stream_ss
+          href: ../intrinsics/mm-stream-ss.md
+        - name: __movsb
+          href: ../intrinsics/movsb.md
+        - name: __movsd
+          href: ../intrinsics/movsd.md
+        - name: __movsq
+          href: ../intrinsics/movsq.md
+        - name: __movsw
+          href: ../intrinsics/movsw.md
+        - name: __mul128
+          href: ../intrinsics/mul128.md
+        - name: __mulh
+          href: ../intrinsics/mulh.md
+        - name: __noop
+          href: ../intrinsics/noop.md
+        - name: __nop
+          href: ../intrinsics/nop.md
+        - name: __outbyte
+          href: ../intrinsics/outbyte.md
+        - name: __outbytestring
+          href: ../intrinsics/outbytestring.md
+        - name: __outdword
+          href: ../intrinsics/outdword.md
+        - name: __outdwordstring
+          href: ../intrinsics/outdwordstring.md
+        - name: __outword
+          href: ../intrinsics/outword.md
+        - name: __outwordstring
+          href: ../intrinsics/outwordstring.md
+        - name: __popcnt16, __popcnt, __popcnt64
+          href: ../intrinsics/popcnt16-popcnt-popcnt64.md
+        - name: __rdtsc
+          href: ../intrinsics/rdtsc.md
+        - name: __rdtscp
+          href: ../intrinsics/rdtscp.md
+        - name: _ReadBarrier
+          href: ../intrinsics/readbarrier.md
+        - name: __readcr0
+          href: ../intrinsics/readcr0.md
+        - name: __readcr2
+          href: ../intrinsics/readcr2.md
+        - name: __readcr3
+          href: ../intrinsics/readcr3.md
+        - name: __readcr4
+          href: ../intrinsics/readcr4.md
+        - name: __readcr8
+          href: ../intrinsics/readcr8.md
+        - name: __readdr
+          href: ../intrinsics/readdr.md
+        - name: __readeflags
+          href: ../intrinsics/readeflags.md
+        - name: __readfsbyte, __readfsdword, __readfsqword, __readfsword
+          href: ../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md
+        - name: __readgsbyte, __readgsdword, __readgsqword, __readgsword
+          href: ../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md
+        - name: __readmsr
+          href: ../intrinsics/readmsr.md
+        - name: __readpmc
+          href: ../intrinsics/readpmc.md
+        - name: _ReadWriteBarrier
+          href: ../intrinsics/readwritebarrier.md
+        - name: _ReturnAddress
+          href: ../intrinsics/returnaddress.md
+        - name: _rotl8, _rotl16
+          href: ../intrinsics/rotl8-rotl16.md
+        - name: _rotr8, _rotr16
+          href: ../intrinsics/rotr8-rotr16.md
+        - name: __segmentlimit
+          href: ../intrinsics/segmentlimit.md
+        - name: __shiftleft128
+          href: ../intrinsics/shiftleft128.md
+        - name: __shiftright128
+          href: ../intrinsics/shiftright128.md
+        - name: __sidt
+          href: ../intrinsics/sidt.md
+        - name: __stosb
+          href: ../intrinsics/stosb.md
+        - name: __stosd
+          href: ../intrinsics/stosd.md
+        - name: __stosq
+          href: ../intrinsics/stosq.md
+        - name: __stosw
+          href: ../intrinsics/stosw.md
+        - name: __svm_clgi
+          href: ../intrinsics/svm-clgi.md
+        - name: __svm_invlpga
+          href: ../intrinsics/svm-invlpga.md
+        - name: __svm_skinit
+          href: ../intrinsics/svm-skinit.md
+        - name: __svm_stgi
+          href: ../intrinsics/svm-stgi.md
+        - name: __svm_vmload
+          href: ../intrinsics/svm-vmload.md
+        - name: __svm_vmrun
+          href: ../intrinsics/svm-vmrun.md
+        - name: __svm_vmsave
+          href: ../intrinsics/svm-vmsave.md
+        - name: __ud2
+          href: ../intrinsics/ud2.md
+        - name: _udiv128
+          href: ../intrinsics/udiv128.md
+        - name: _udiv64
+          href: ../intrinsics/udiv64.md
+        - name: __ull_rshift
+          href: ../intrinsics/ull-rshift.md
+        - name: _umul128
+          href: ../intrinsics/umul128.md
+        - name: __umulh
+          href: ../intrinsics/umulh.md
+        - name: __vmx_off
+          href: ../intrinsics/vmx-off.md
+        - name: __vmx_on
+          href: ../intrinsics/vmx-on.md
+        - name: __vmx_vmclear
+          href: ../intrinsics/vmx-vmclear.md
+        - name: __vmx_vmlaunch
+          href: ../intrinsics/vmx-vmlaunch.md
+        - name: __vmx_vmptrld
+          href: ../intrinsics/vmx-vmptrld.md
+        - name: __vmx_vmptrst
+          href: ../intrinsics/vmx-vmptrst.md
+        - name: __vmx_vmread
+          href: ../intrinsics/vmx-vmread.md
+        - name: __vmx_vmresume
+          href: ../intrinsics/vmx-vmresume.md
+        - name: __vmx_vmwrite
+          href: ../intrinsics/vmx-vmwrite.md
+        - name: __wbinvd
+          href: ../intrinsics/wbinvd.md
+        - name: _WriteBarrier
+          href: ../intrinsics/writebarrier.md
+        - name: __writecr0
+          href: ../intrinsics/writecr0.md
+        - name: __writecr3
+          href: ../intrinsics/writecr3.md
+        - name: __writecr4
+          href: ../intrinsics/writecr4.md
+        - name: __writecr8
+          href: ../intrinsics/writecr8.md
+        - name: __writedr
+          href: ../intrinsics/writedr.md
+        - name: __writeeflags
+          href: ../intrinsics/writeeflags.md
+        - name: __writefsbyte, __writefsdword, __writefsqword, __writefsword
+          href: ../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md
+        - name: __writegsbyte, __writegsdword, __writegsqword, __writegsword
+          href: ../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md
+        - name: __writemsr
+          href: ../intrinsics/writemsr.md
+- name: Microsoft C/C++ x86 inline assembly
+  href: ../assembler/inline/inline-assembler.md
+- name: ARM and ARM64 assembler reference
+  href: ../assembler/arm/arm-assembler-reference.md
+- name: x86 and x64 assembler reference
+  href: ../assembler/masm/microsoft-macro-assembler-reference.md

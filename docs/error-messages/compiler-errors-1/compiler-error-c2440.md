@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2440"
 title: "Compiler Error C2440"
 ms.date: "03/28/2017"
 f1_keywords: ["C2440"]
@@ -11,9 +12,11 @@ ms.assetid: 36e6676c-f04f-4715-8ba1-f096c4bf3b44
 
 The compiler cannot cast from `type1` to `type2`.
 
-## Example
+C2440 can be caused if you attempt to initialize a non-const **`char*`** (or `wchar_t*`) by using a string literal in C++ code, when the compiler conformance option [/Zc:strictStrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) is set. In C, the type of a string literal is array of **`char`**, but in C++, it is array of `const char`.
 
-C2440 can be caused if you attempt to initialize a non-const `char*` (or `wchar_t*`) by using a string literal in C++ code, when the compiler conformance option [/Zc:strictStrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) is set. In C, the type of a string literal is array of `char`, but in C++, it is array of `const char`. This sample generates C2440:
+## Examples
+
+This sample generates C2440:
 
 ```cpp
 // C2440s.cpp
@@ -29,8 +32,6 @@ int main() {
    const char* s2 = "tests"; // OK
 }
 ```
-
-## Example
 
 C2440 can also be caused if you attempt to convert a pointer to member to void*. The next sample generates C2440:
 
@@ -53,8 +54,6 @@ public:
 };
 ```
 
-## Example
-
 C2440 can also be caused if you attempt to cast from a type that is only forward declared but not defined. This sample generates C2440:
 
 ```cpp
@@ -67,8 +66,6 @@ Base * func(Derived * d) {
     return static_cast<Base *>(d); // error C2440: 'static_cast' : cannot convert from 'Derived *' to 'Base *'
 }
 ```
-
-## Example
 
 The C2440 errors on lines 15 and 16 of the next sample are qualified with the `Incompatible calling conventions for UDT return value` message. A *UDT* is a user-defined type, such as a class, struct, or union. These kinds of incompatibility errors are caused when the calling convention of a UDT specified in the return type of a forward declaration conflicts with the actual calling convention of the UDT and when a function pointer is involved.
 
@@ -118,8 +115,6 @@ int main() {
 }
 ```
 
-## Example
-
 C2440 can also occur if you assign zero to an interior pointer:
 
 ```cpp
@@ -133,9 +128,7 @@ int main() {
 }
 ```
 
-## Example
-
-C2440 can also occur for an incorrect use of a user-defined conversion. For example, when a conversion operator has been defined as `explicit`, the compiler can't use it in an implicit conversion. For more information about user-defined conversions, see [User-Defined Conversions (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md)). This sample generates C2440:
+C2440 can also occur for an incorrect use of a user-defined conversion. For example, when a conversion operator has been defined as **`explicit`**, the compiler can't use it in an implicit conversion. For more information about user-defined conversions, see [User-Defined Conversions (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md)). This sample generates C2440:
 
 ```cpp
 // C2440d.cpp
@@ -157,8 +150,6 @@ int main() {
 }
 ```
 
-## Example
-
 C2440 can also occur if you try to create an instance of a Visual C++ array whose type is a <xref:System.Array>.  For more information, see [Arrays](../../extensions/arrays-cpp-component-extensions.md).  The next sample generates C2440:
 
 ```cpp
@@ -172,8 +163,6 @@ int main() {
 }
 ```
 
-## Example
-
 C2440 can also occur because of changes in the attributes feature.  The following sample generates C2440.
 
 ```cpp
@@ -183,8 +172,6 @@ C2440 can also occur because of changes in the attributes feature.  The followin
 // try the following line instead
 // [ module(name="PropDemoLib", version="1.0") ];
 ```
-
-## Example
 
 The Microsoft C++ compiler no longer allows the [const_cast Operator](../../cpp/const-cast-operator.md) to down cast when source code that uses **/clr** programming is compiled.
 
@@ -205,9 +192,7 @@ int main() {
 }
 ```
 
-## Example
-
-C2440 can occur because of conformance changes to the compiler in Visual Studio 2015 Update 3. Previously, the compiler incorrectly treated certain distinct expressions as the same type when identifying a template match for a `static_cast` operation. Now the compiler distinguishes the types correctly, and code that relied on the previous `static_cast` behavior is broken. To fix this issue, change the template argument to match the template parameter type, or use a `reinterpret_cast` or C-style cast.
+C2440 can occur because of conformance changes to the compiler in Visual Studio 2015 Update 3. Previously, the compiler incorrectly treated certain distinct expressions as the same type when identifying a template match for a **`static_cast`** operation. Now the compiler distinguishes the types correctly, and code that relied on the previous **`static_cast`** behavior is broken. To fix this issue, change the template argument to match the template parameter type, or use a **`reinterpret_cast`** or C-style cast.
 
 This sample generates C2440:
 
@@ -231,8 +216,6 @@ int main()
 
 This error can appear in ATL code that uses the SINK_ENTRY_INFO macro defined in <atlcom.h>.
 ```
-
-## Example
 
 ### Copy-list-initialization
 
@@ -270,8 +253,6 @@ int main()
     const A& a2{ 1 };
 }
 ```
-
-## Example
 
 ### cv-qualifiers in class construction
 

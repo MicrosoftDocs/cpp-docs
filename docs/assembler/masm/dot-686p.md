@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .686P (32-bit MASM)"
 title: ".686P"
 ms.date: "11/05/2019"
 f1_keywords: [".686P"]

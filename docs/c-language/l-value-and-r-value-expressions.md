@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: L-Value and R-Value Expressions"
 title: "L-Value and R-Value Expressions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["L-values", "member-selection expressions", "R-value expressions", "subscript expressions"]
@@ -8,7 +9,7 @@ ms.assetid: b790303e-ec6f-4d0d-bc55-df42da267172
 
 Expressions that refer to memory locations are called "l-value" expressions. An l-value represents a storage region's "locator" value, or a "left" value, implying that it can appear on the left of the equal sign (**=**). L-values are often identifiers.
 
-Expressions referring to modifiable locations are called "modifiable l-values." A modifiable l-value cannot have an array type, an incomplete type, or a type with the **const** attribute. For structures and unions to be modifiable l-values, they must not have any members with the **const** attribute. The name of the identifier denotes a storage location, while the value of the variable is the value stored at that location.
+Expressions referring to modifiable locations are called "modifiable l-values." A modifiable l-value cannot have an array type, an incomplete type, or a type with the **`const`** attribute. For structures and unions to be modifiable l-values, they must not have any members with the **`const`** attribute. The name of the identifier denotes a storage location, while the value of the variable is the value stored at that location.
 
 An identifier is a modifiable l-value if it refers to a memory location and if its type is arithmetic, structure, union, or pointer. For example, if `ptr` is a pointer to a storage region, then `*ptr` is a modifiable l-value that designates the storage region to which `ptr` points.
 
@@ -24,7 +25,7 @@ Any of the following C expressions can be l-value expressions:
 
 - An l-value expression in parentheses
 
-- A **const** object (a nonmodifiable l-value)
+- A **`const`** object (a nonmodifiable l-value)
 
 The term "r-value" is sometimes used to describe the value of an expression and to distinguish it from an l-value. All l-values are r-values but not all r-values are l-values.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Simplifying Data Access with Database Attributes"
 title: "Simplifying Data Access with Database Attributes"
 ms.date: "10/19/2018"
 helpviewer_keywords: ["attributes [C++], database", "attributes [C++], data access", "databases [C++], attributes", "data [C++], simplifying access", "data access [C++], database attributes", "database attributes [C++]", "OLE DB consumers [C++], database attributes", "attributes [C++], OLE DB consumer"]
@@ -30,7 +31,7 @@ The attributes inject a user record class declaration for you. The user record c
 
 In both the attributed and the templated code, you must set rowset properties using `CDBPropSet::AddProperty`.
 
-For information about the attributes discussed in this topic, see [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md).
+For information about the attributes discussed in this topic, see [OLE DB Consumer Attributes](../../windows/attributes/ole-db-consumer-attributes.md).
 
 > [!NOTE]
 > The following `include` statements are required to compile the examples below:
@@ -188,4 +189,4 @@ HRESULT hr = Open(m_session, "Authors", pPropSet);
 
 ## See also
 
-[OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)
+[OLE DB Consumer Attributes](../../windows/attributes/ole-db-consumer-attributes.md)

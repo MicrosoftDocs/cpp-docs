@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: vector&lt;bool&gt;::reference::operator bool"
 title: "vector&lt;bool&gt;::reference::operator bool"
 ms.date: "11/04/2016"
 f1_keywords: ["operatorbool", "vector<bool>::reference::operatorbool", "bool", "std::vector<bool>::reference::operatorbool"]
@@ -7,7 +8,7 @@ ms.assetid: b0e57869-18cc-4296-9061-da502f30120d
 ---
 # vector&lt;bool&gt;::reference::operator bool
 
-Provides an implicit conversion from `vector<bool>::reference` to **bool**.
+Provides an implicit conversion from `vector<bool>::reference` to **`bool`**.
 
 ## Syntax
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: numeric_limits Class"
 title: "numeric_limits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["limits/std::numeric_limits", "limits/std::numeric_limits::denorm_min", "limits/std::numeric_limits::digits", "limits/std::numeric_limits::digits10", "limits/std::numeric_limits::epsilon", "limits/std::numeric_limits::has_denorm", "limits/std::numeric_limits::has_denorm_loss", "limits/std::numeric_limits::has_infinity", "limits/std::numeric_limits::has_quiet_NaN", "limits/std::numeric_limits::has_signaling_NaN", "limits/std::numeric_limits::infinity", "limits/std::numeric_limits::is_bounded", "limits/std::numeric_limits::is_exact", "limits/std::numeric_limits::is_iec559", "limits/std::numeric_limits::is_integer", "limits/std::numeric_limits::is_modulo", "limits/std::numeric_limits::is_signed", "limits/std::numeric_limits::is_specialized", "limits/std::numeric_limits::lowest", "limits/std::numeric_limits::max", "limits/std::numeric_limits::max_digits10", "limits/std::numeric_limits::max_exponent", "limits/std::numeric_limits::max_exponent10", "limits/std::numeric_limits::min", "limits/std::numeric_limits::min_exponent", "limits/std::numeric_limits::min_exponent10", "limits/std::numeric_limits::quiet_NaN", "limits/std::numeric_limits::radix", "limits/std::numeric_limits::round_error", "limits/std::numeric_limits::round_style", "limits/std::numeric_limits::signaling_NaN", "limits/std::numeric_limits::tinyness_before", "limits/std::numeric_limits::traps"]
@@ -19,17 +20,17 @@ template <class Type>
 ### Parameters
 
 *Type*\
-The fundamental element data type whose properties are being tested or queried or set. *Type* can also be declared **const**, **volatile**, or **const volatile**.
+The fundamental element data type whose properties are being tested or queried or set. *Type* can also be declared **`const`**, **`volatile`**, or **`const volatile`**.
 
 ## Remarks
 
-The header defines explicit specializations for the types **wchar_t**, **bool**, **char**, **signed char**, **unsigned char**, **short**, **unsigned short**, **int**, **unsigned int**, **long**, **unsigned long**, **float**, **double**, **long double**, **long long**, **unsigned long long**, **char16_t**, and **char32_t**. For these explicit specializations, the member [numeric_limits::is_specialized](#is_specialized) is **true**, and all relevant members have meaningful values. The program can supply additional explicit specializations. Most member functions of the class describe or test possible implementations of **float**.
+The header defines explicit specializations for the types **`wchar_t`**, **`bool`**, **`char`**, **`signed char`**, **`unsigned char`**, **`short`**, **`unsigned short`**, **`int`**, **`unsigned int`**, **`long`**, **`unsigned long`**, **`float`**, **`double`**, **`long double`**, **`long long`**, **`unsigned long long`**, **`char16_t`**, and **`char32_t`**. For these explicit specializations, the member [numeric_limits::is_specialized](#is_specialized) is **`true`**, and all relevant members have meaningful values. The program can supply additional explicit specializations. Most member functions of the class describe or test possible implementations of **`float`**.
 
-For an arbitrary specialization, no members have meaningful values. A member object that does not have a meaningful value stores zero (or **false**) and a member function that does not return a meaningful value returns `Type(0)`.
+For an arbitrary specialization, no members have meaningful values. A member object that does not have a meaningful value stores zero (or **`false`**) and a member function that does not return a meaningful value returns `Type(0)`.
 
 ## Static Functions and Constants
 
-|||
+|Name|Description|
 |-|-|
 |[denorm_min](#denorm_min)|Returns the smallest nonzero denormalized value.|
 |[digits](#digits)|Returns the number of radix digits that the type can represent without loss of precision.|
@@ -78,7 +79,7 @@ The smallest nonzero denormalized value.
 
 #### Remarks
 
-**long double** is the same as **double** for the C++ compiler.
+**`long double`** is the same as **`double`** for the C++ compiler.
 
 The function returns the minimum value for the type, which is the same as [min](#min) if [has_denorm](#has_denorm) is not equal to `denorm_present`.
 
@@ -225,7 +226,7 @@ The difference between 1 and the smallest value greater than 1 that is represent
 
 #### Remarks
 
-The value is FLT_EPSILON for type **float**. `epsilon` for a type is the smallest positive floating-point number *N* such that *N* + `epsilon` + *N* is representable.
+The value is FLT_EPSILON for type **`float`**. `epsilon` for a type is the smallest positive floating-point number *N* such that *N* + `epsilon` + *N* is representable.
 
 #### Example
 
@@ -273,7 +274,7 @@ static constexpr float_denorm_style has_denorm = denorm_absent;
 
 #### Return Value
 
-An enumeration value of type **const**`float_denorm_style`, indicating whether the type allows denormalized values.
+An enumeration value of type `const float_denorm_style`, indicating whether the type allows denormalized values.
 
 #### Remarks
 
@@ -319,7 +320,7 @@ static constexpr bool has_denorm_loss = false;
 
 #### Return Value
 
-**true** if the loss of accuracy is detected as a denormalization loss; **false** if not.
+**`true`** if the loss of accuracy is detected as a denormalization loss; **`false`** if not.
 
 #### Remarks
 
@@ -365,11 +366,11 @@ static constexpr bool has_infinity = false;
 
 #### Return Value
 
-**true** if the type has a representation for positive infinity; **false** if not.
+**`true`** if the type has a representation for positive infinity; **`false`** if not.
 
 #### Remarks
 
-The member returns **true** if [is_iec559](#is_iec559) is **true**.
+The member returns **`true`** if [is_iec559](#is_iec559) is **`true`**.
 
 #### Example
 
@@ -411,11 +412,11 @@ static constexpr bool has_quiet_NaN = false;
 
 #### Return Value
 
-**true** if the **type** has a representation for a quiet NAN; **false** if not.
+**`true`** if the **type** has a representation for a quiet NAN; **`false`** if not.
 
 #### Remarks
 
-A quiet NAN is an encoding for not a number, which does not signal its presence in an expression. The return value is **true** if [is_iec559](#is_iec559) is true.
+A quiet NAN is an encoding for not a number, which does not signal its presence in an expression. The return value is **`true`** if [is_iec559](#is_iec559) is true.
 
 #### Example
 
@@ -457,11 +458,11 @@ static constexpr bool has_signaling_NaN = false;
 
 #### Return Value
 
-**true** if the type has a representation for a signaling NAN; **false** if not.
+**`true`** if the type has a representation for a signaling NAN; **`false`** if not.
 
 #### Remarks
 
-A signaling NAN is an encoding for not a number, which signals its presence in an expression. The return value is **true** if [is_iec559](#is_iec559) is true.
+A signaling NAN is an encoding for not a number, which signals its presence in an expression. The return value is **`true`** if [is_iec559](#is_iec559) is true.
 
 #### Example
 
@@ -507,7 +508,7 @@ The representation of positive infinity for a type, if available.
 
 #### Remarks
 
-The return value is meaningful only if [has_infinity](#has_infinity) is **true**.
+The return value is meaningful only if [has_infinity](#has_infinity) is **`true`**.
 
 #### Example
 
@@ -557,11 +558,11 @@ static constexpr bool is_bounded = false;
 
 #### Return Value
 
-**true** if the type has a bounded set of representable values; **false** if not.
+**`true`** if the type has a bounded set of representable values; **`false`** if not.
 
 #### Remarks
 
-All predefined types have a bounded set of representable values and return **true**.
+All predefined types have a bounded set of representable values and return **`true`**.
 
 #### Example
 
@@ -611,11 +612,11 @@ static constexpr bool is_exact = false;
 
 #### Return Value
 
-**true** if the calculations are free of rounding errors; **false** if not.
+**`true`** if the calculations are free of rounding errors; **`false`** if not.
 
 #### Remarks
 
-All predefined integer types have exact representations for their values and return **false**. A fixed-point or rational representation is also considered exact, but a floating-point representation is not.
+All predefined integer types have exact representations for their values and return **`false`**. A fixed-point or rational representation is also considered exact, but a floating-point representation is not.
 
 #### Example
 
@@ -665,7 +666,7 @@ static constexpr bool is_iec559 = false;
 
 #### Return Value
 
-**true** if the type conforms to the IEC 559 standards; **false** if not.
+**`true`** if the type conforms to the IEC 559 standards; **`false`** if not.
 
 #### Remarks
 
@@ -715,7 +716,7 @@ static constexpr bool is_integer = false;
 
 #### Return Value
 
-**true** if the type has an integer representation; **false** if not.
+**`true`** if the type has an integer representation; **`false`** if not.
 
 #### Remarks
 
@@ -765,7 +766,7 @@ static constexpr bool is_modulo = false;
 
 #### Return Value
 
-**true** if the type has a modulo representation; **false** if not.
+**`true`** if the type has a modulo representation; **`false`** if not.
 
 #### Remarks
 
@@ -815,7 +816,7 @@ static constexpr bool is_signed = false;
 
 #### Return Value
 
-**true** if the type has a signed representation; **false** if not.
+**`true`** if the type has a signed representation; **`false`** if not.
 
 #### Remarks
 
@@ -865,7 +866,7 @@ static constexpr bool is_specialized = false;
 
 #### Return Value
 
-**true** if the type has an explicit specialization defined in the class template; **false** if not.
+**`true`** if the type has an explicit specialization defined in the class template; **`false`** if not.
 
 #### Remarks
 
@@ -923,7 +924,7 @@ Returns the most negative finite value.
 
 #### Remarks
 
-Returns the most negative finite value for the type (which is typically `min()` for integer types and `-max()` for floating-point types). The return value is meaningful if `is_bounded` is **true**.
+Returns the most negative finite value for the type (which is typically `min()` for integer types and `-max()` for floating-point types). The return value is meaningful if `is_bounded` is **`true`**.
 
 ### <a name="max"></a> max
 
@@ -939,7 +940,7 @@ The maximum finite value for a type.
 
 #### Remarks
 
-The maximum finite value is INT_MAX for type **int** and FLT_MAX for type **float**. The return value is meaningful if [is_bounded](#is_bounded) is **true**.
+The maximum finite value is INT_MAX for type **`int`** and FLT_MAX for type **`float`**. The return value is meaningful if [is_bounded](#is_bounded) is **`true`**.
 
 #### Example
 
@@ -997,7 +998,7 @@ The maximum integral radix-based exponent representable by the type.
 
 #### Remarks
 
-The member function return is meaningful only for floating-point types. The `max_exponent` is the value FLT_MAX_EXP for type **float**.
+The member function return is meaningful only for floating-point types. The `max_exponent` is the value FLT_MAX_EXP for type **`float`**.
 
 #### Example
 
@@ -1043,7 +1044,7 @@ The maximum integral base 10 exponent representable by the type.
 
 #### Remarks
 
-The member function return is meaningful only for floating-point types. The `max_exponent` is the value FLT_MAX_10 for type **float**.
+The member function return is meaningful only for floating-point types. The `max_exponent` is the value FLT_MAX_10 for type **`float`**.
 
 #### Example
 
@@ -1089,7 +1090,7 @@ The minimum normalized value for the type.
 
 #### Remarks
 
-The minimum normalized value is INT_MIN for type **int** and FLT_MIN for type **float**. The return value is meaningful if [is_bounded](#is_bounded) is **true** or if [is_signed](#is_signed) is **false**.
+The minimum normalized value is INT_MIN for type **`int`** and FLT_MIN for type **`float`**. The return value is meaningful if [is_bounded](#is_bounded) is **`true`** or if [is_signed](#is_signed) is **`false`**.
 
 #### Example
 
@@ -1139,7 +1140,7 @@ The minimum integral radix-based exponent representable by the type.
 
 #### Remarks
 
-The member function is meaningful only for floating-point types. The `min_exponent` is the value FLT_MIN_EXP for type **float**.
+The member function is meaningful only for floating-point types. The `min_exponent` is the value FLT_MIN_EXP for type **`float`**.
 
 #### Example
 
@@ -1185,7 +1186,7 @@ The minimum integral base 10 exponent representable by the type.
 
 #### Remarks
 
-The member function is meaningful only for floating-point types. The `min_exponent10` is the value FLT_MIN_10_EXP for type **float**.
+The member function is meaningful only for floating-point types. The `min_exponent10` is the value FLT_MIN_10_EXP for type **`float`**.
 
 #### Example
 
@@ -1231,7 +1232,7 @@ The representation of a quiet NAN for the type.
 
 #### Remarks
 
-The return value is meaningful only if [has_quiet_NaN](#has_quiet_nan) is **true**.
+The return value is meaningful only if [has_quiet_NaN](#has_quiet_nan) is **`true`**.
 
 #### Example
 
@@ -1412,7 +1413,7 @@ The representation of a signaling NAN for the type.
 
 #### Remarks
 
-The return value is meaningful only if [has_signaling_NaN](#has_signaling_nan) is **true**.
+The return value is meaningful only if [has_signaling_NaN](#has_signaling_nan) is **`true`**.
 
 #### Example
 
@@ -1448,7 +1449,7 @@ static constexpr bool tinyness_before = false;
 
 #### Return Value
 
-**true** if the type can detect tiny values before rounding; **false** if it cannot.
+**`true`** if the type can detect tiny values before rounding; **`false`** if it cannot.
 
 #### Remarks
 
@@ -1498,7 +1499,7 @@ static constexpr bool traps = false;
 
 #### Return Value
 
-**true** if trapping is implemented for the type; **false** if it is not.
+**`true`** if trapping is implemented for the type; **`false`** if it is not.
 
 #### Example
 

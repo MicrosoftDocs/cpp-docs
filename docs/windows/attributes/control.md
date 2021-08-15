@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: control"
 title: "control (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.control"]
@@ -38,11 +39,9 @@ class CTest : public ICustom {};
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

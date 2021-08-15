@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2561"
 title: "Compiler Error C2561"
 ms.date: "11/04/2016"
 f1_keywords: ["C2561"]
@@ -9,7 +10,7 @@ ms.assetid: 0abe955b-53a6-4a3c-8362-b1a8eb40e8d1
 
 'identifier' : function must return a value
 
-The function was declared as returning a value, but the function definition does not contain a `return` statement.
+The function was declared as returning a value, but the function definition does not contain a **`return`** statement.
 
 This error can be caused by an incorrect function prototype:
 

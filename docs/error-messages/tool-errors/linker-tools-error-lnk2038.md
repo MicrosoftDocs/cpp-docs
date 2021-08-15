@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Error LNK2038"
 title: "Linker Tools Error LNK2038"
 ms.date: "12/15/2017"
 f1_keywords: ["LNK2038"]
@@ -32,9 +33,9 @@ Visual Studio defines the following symbols to prevent the linking of incompatib
 
 Ensure that the values of these symbols are consistent throughout the projects in your Visual Studio solution, and also that they are consistent with code and libraries that your app links to.
 
-## Third-party library issues and Vcpkg
+## Third-party library issues and vcpkg
 
-If you see this error when you are trying to configure a third-party library as part of your build, consider using [Vcpkg](../../vcpkg.md), the Visual C++ Package Manager, to install and build the library. Vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports), and sets all the configuration properties and dependencies required for successful builds as part of your project. For more information, see the related [Visual C++ Blog](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) post.
+If you see this error when you are trying to configure a third-party library as part of your build, consider using [vcpkg](https://vcpkg.io/), a C++ package manager, to install and build the library. vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports), and sets all the configuration properties and dependencies required for successful builds as part of your project.
 
 ## See also
 

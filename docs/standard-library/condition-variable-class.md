@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: condition_variable Class"
 title: "condition_variable Class"
 ms.date: "11/04/2016"
 f1_keywords: ["condition_variable/std::condition", "condition_variable/std::condition_variable::condition_variable", "condition_variable/std::condition_variable::native_handle", "condition_variable/std::condition_variable::notify_all", "condition_variable/std::condition_variable::notify_one", "condition_variable/std::condition_variable::wait", "condition_variable/std::condition_variable::wait_for", "condition_variable/std::condition_variable::wait_until"]
@@ -19,13 +20,13 @@ class condition_variable;
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[condition_variable](#condition_variable)|Constructs a `condition_variable` object.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[native_handle](#native_handle)|Returns the implementation-specific type representing the condition_variable handle.|
 |[notify_all](#notify_all)|Unblocks all threads that are waiting for the `condition_variable` object.|
@@ -91,7 +92,7 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
 A [unique_lock\<mutex>](../standard-library/unique-lock-class.md) object.
 
 *Pred*\
-Any expression that returns **true** or **false**.
+Any expression that returns **`true`** or **`false`**.
 
 ### Remarks
 
@@ -130,7 +131,7 @@ A [unique_lock\<mutex>](../standard-library/unique-lock-class.md) object.
 A `chrono::duration` object that specifies the amount of time before the thread wakes up.
 
 *Pred*\
-Any expression that returns **true** or **false**.
+Any expression that returns **`true`** or **`false`**.
 
 ### Return Value
 
@@ -188,13 +189,13 @@ A [unique_lock\<mutex>](../standard-library/unique-lock-class.md) object.
 A [chrono::time_point](../standard-library/time-point-class.md) object.
 
 *Pred*\
-Any expression that returns **true** or **false**.
+Any expression that returns **`true`** or **`false`**.
 
 ### Return Value
 
 Methods that return a `cv_status` type return `cv_status::timeout` if the wait terminates when *Abs_time* elapses. Otherwise, the methods return `cv_status::no_timeout`.
 
-Methods that return a **bool** return the value of *Pred*.
+Methods that return a **`bool`** return the value of *Pred*.
 
 ### Remarks
 

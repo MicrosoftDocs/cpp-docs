@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File Handling Classes"
 title: "File Handling Classes (ATL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"

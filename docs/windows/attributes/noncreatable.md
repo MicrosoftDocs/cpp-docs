@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: noncreatable"
 title: "noncreatable (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.noncreatable"]
@@ -43,11 +44,9 @@ class CMyClass : public A
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|**coclass**|
 |**Invalid attributes**|None|

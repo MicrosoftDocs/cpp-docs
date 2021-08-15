@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: functional (STL/CLR)"
 title: "functional (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -27,9 +28,9 @@ Include the STL/CLR header `<cliext/functional>` to define the a number of templ
 |Delegate|Description|
 |--------------|-----------------|
 |[binary_delegate (STL/CLR)](#binary_delegate)|Two-argument delegate.|
-|[binary_delegate_noreturn (STL/CLR)](#binary_delegate_noreturn)|Two-argument delegate returning **void**.|
+|[binary_delegate_noreturn (STL/CLR)](#binary_delegate_noreturn)|Two-argument delegate returning **`void`**.|
 |[unary_delegate (STL/CLR)](#unary_delegate)|One-argument delegate.|
-|[unary_delegate_noreturn (STL/CLR)](#unary_delegate_noreturn)|One-argument delegate returning **void**.|
+|[unary_delegate_noreturn (STL/CLR)](#unary_delegate_noreturn)|One-argument delegate returning **`void`**.|
 
 |Class|Description|
 |-----------|-----------------|
@@ -140,7 +141,7 @@ compare(L'b', L'a') = False
 
 ## <a name="binary_delegate_noreturn"></a> binary_delegate_noreturn (STL/CLR)
 
-The genereic class describes a two-argument delegate that returns **void**. You use it specify a delegate in terms of its argument.
+The genereic class describes a two-argument delegate that returns **`void`**. You use it specify a delegate in terms of its argument.
 
 ### Syntax
 
@@ -160,7 +161,7 @@ The type of the second argument.
 
 ### Remarks
 
-The genereic delegate describes a two-argument function that returns **void**.
+The genereic delegate describes a two-argument function that returns **`void`**.
 
 Note that for:
 
@@ -241,7 +242,7 @@ public:
 *Fun*<br/>
 The type of the stored functor.
 
-## Member Functions
+### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
@@ -353,7 +354,7 @@ The first argument to wrap.
 
 ### Remarks
 
-The template function returns [binder1st (STL/CLR)](../dotnet/binder1st-stl-clr.md)`<Fun>(functor, left)`. You use it as a convenient way to wrap a two-argument functor and its first argument in a one-argument functor that calls it with a second argument.
+The template function returns [binder1st (STL/CLR)](#binder1st)`<Fun>(functor, left)`. You use it as a convenient way to wrap a two-argument functor and its first argument in a one-argument functor that calls it with a second argument.
 
 ### Example
 
@@ -434,7 +435,7 @@ The second argument to wrap.
 
 ### Remarks
 
-The template function returns [binder2nd (STL/CLR)](../dotnet/binder2nd-stl-clr.md)`<Fun>(functor, right)`. You use it as a convenient way to wrap a two-argument functor and its second argument in a one-argument functor that calls it with a first argument.
+The template function returns [binder2nd (STL/CLR)](#binder2nd)`<Fun>(functor, right)`. You use it as a convenient way to wrap a two-argument functor and its second argument in a one-argument functor that calls it with a first argument.
 
 ### Example
 
@@ -621,7 +622,7 @@ public:
 *Fun*<br/>
 The type of the stored functor.
 
-## Member Functions
+### Member Functions
 
 |Type Definition|Description|
 |---------------------|-----------------|
@@ -2109,7 +2110,7 @@ The functor to wrap.
 
 ### Remarks
 
-The template function returns [unary_negate (STL/CLR)](../dotnet/unary-negate-stl-clr.md)`<Fun>(functor)`. You use it as a convenient way to wrap a one-argument functor in a functor that delivers its logical NOT.
+The template function returns [unary_negate (STL/CLR)](#unary_negate)`<Fun>(functor)`. You use it as a convenient way to wrap a one-argument functor in a functor that delivers its logical NOT.
 
 ### Example
 
@@ -2181,7 +2182,7 @@ The functor to wrap.
 
 ### Remarks
 
-The template function returns [binary_negate (STL/CLR)](../dotnet/binary-negate-stl-clr.md)`<Fun>(functor)`. You use it as a convenient way to wrap a two-argument functor in a functor that delivers its logical NOT.
+The template function returns [binary_negate (STL/CLR)](#negate)`<Fun>(functor)`. You use it as a convenient way to wrap a two-argument functor in a functor that delivers its logical NOT.
 
 ### Example
 
@@ -2408,7 +2409,7 @@ hash(L'b') = 22
 
 ## <a name="unary_delegate_noreturn"></a> unary_delegate_noreturn (STL/CLR)
 
-The genereic class describes a one-argument delegate that returns **void**. You use it specify a delegate in terms of its argument type.
+The genereic class describes a one-argument delegate that returns **`void`**. You use it specify a delegate in terms of its argument type.
 
 ### Syntax
 
@@ -2424,7 +2425,7 @@ The type of the argument.
 
 ### Remarks
 
-The genereic delegate describes a one-argument function that returns **void**.
+The genereic delegate describes a one-argument function that returns **`void`**.
 
 Note that for:
 

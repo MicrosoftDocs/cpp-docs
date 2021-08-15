@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleControl Class"
 title: "COleControl Class"
 ms.date: "08/27/2018"
 f1_keywords: ["COleControl", "AFXCTL/COleControl", "AFXCTL/COleControl::COleControl", "AFXCTL/COleControl::AmbientAppearance", "AFXCTL/COleControl::AmbientBackColor", "AFXCTL/COleControl::AmbientDisplayName", "AFXCTL/COleControl::AmbientFont", "AFXCTL/COleControl::AmbientForeColor", "AFXCTL/COleControl::AmbientLocaleID", "AFXCTL/COleControl::AmbientScaleUnits", "AFXCTL/COleControl::AmbientShowGrabHandles", "AFXCTL/COleControl::AmbientShowHatching", "AFXCTL/COleControl::AmbientTextAlign", "AFXCTL/COleControl::AmbientUIDead", "AFXCTL/COleControl::AmbientUserMode", "AFXCTL/COleControl::BoundPropertyChanged", "AFXCTL/COleControl::BoundPropertyRequestEdit", "AFXCTL/COleControl::ClientToParent", "AFXCTL/COleControl::ClipCaretRect", "AFXCTL/COleControl::ControlInfoChanged", "AFXCTL/COleControl::DisplayError", "AFXCTL/COleControl::DoClick", "AFXCTL/COleControl::DoPropExchange", "AFXCTL/COleControl::DoSuperclassPaint", "AFXCTL/COleControl::EnableSimpleFrame", "AFXCTL/COleControl::ExchangeExtent", "AFXCTL/COleControl::ExchangeStockProps", "AFXCTL/COleControl::ExchangeVersion", "AFXCTL/COleControl::FireClick", "AFXCTL/COleControl::FireDblClick", "AFXCTL/COleControl::FireError", "AFXCTL/COleControl::FireEvent", "AFXCTL/COleControl::FireKeyDown", "AFXCTL/COleControl::FireKeyPress", "AFXCTL/COleControl::FireKeyUp", "AFXCTL/COleControl::FireMouseDown", "AFXCTL/COleControl::FireMouseMove", "AFXCTL/COleControl::FireMouseUp", "AFXCTL/COleControl::FireReadyStateChange", "AFXCTL/COleControl::GetActivationPolicy", "AFXCTL/COleControl::GetAmbientProperty", "AFXCTL/COleControl::GetAppearance", "AFXCTL/COleControl::GetBackColor", "AFXCTL/COleControl::GetBorderStyle", "AFXCTL/COleControl::GetCapture", "AFXCTL/COleControl::GetClassID", "AFXCTL/COleControl::GetClientOffset", "AFXCTL/COleControl::GetClientRect", "AFXCTL/COleControl::GetClientSite", "AFXCTL/COleControl::GetControlFlags", "AFXCTL/COleControl::GetControlSize", "AFXCTL/COleControl::GetDC", "AFXCTL/COleControl::GetEnabled", "AFXCTL/COleControl::GetExtendedControl", "AFXCTL/COleControl::GetFocus", "AFXCTL/COleControl::GetFont", "AFXCTL/COleControl::GetFontTextMetrics", "AFXCTL/COleControl::GetForeColor", "AFXCTL/COleControl::GetHwnd", "AFXCTL/COleControl::GetMessageString", "AFXCTL/COleControl::GetNotSupported", "AFXCTL/COleControl::GetReadyState", "AFXCTL/COleControl::GetRectInContainer", "AFXCTL/COleControl::GetStockTextMetrics", "AFXCTL/COleControl::GetText", "AFXCTL/COleControl::GetWindowlessDropTarget", "AFXCTL/COleControl::InitializeIIDs", "AFXCTL/COleControl::InternalGetFont", "AFXCTL/COleControl::InternalGetText", "AFXCTL/COleControl::InternalSetReadyState", "AFXCTL/COleControl::InvalidateControl", "AFXCTL/COleControl::InvalidateRgn", "AFXCTL/COleControl::IsConvertingVBX", "AFXCTL/COleControl::IsModified", "AFXCTL/COleControl::IsOptimizedDraw", "AFXCTL/COleControl::IsSubclassedControl", "AFXCTL/COleControl::Load", "AFXCTL/COleControl::LockInPlaceActive", "AFXCTL/COleControl::OnAmbientPropertyChange", "AFXCTL/COleControl::OnAppearanceChanged", "AFXCTL/COleControl::OnBackColorChanged", "AFXCTL/COleControl::OnBorderStyleChanged", "AFXCTL/COleControl::OnClick", "AFXCTL/COleControl::OnClose", "AFXCTL/COleControl::OnDoVerb", "AFXCTL/COleControl::OnDraw", "AFXCTL/COleControl::OnDrawMetafile", "AFXCTL/COleControl::OnEdit", "AFXCTL/COleControl::OnEnabledChanged", "AFXCTL/COleControl::OnEnumVerbs", "AFXCTL/COleControl::OnEventAdvise", "AFXCTL/COleControl::OnFontChanged", "AFXCTL/COleControl::OnForeColorChanged", "AFXCTL/COleControl::OnFreezeEvents", "AFXCTL/COleControl::OnGetColorSet", "AFXCTL/COleControl::OnGetControlInfo", "AFXCTL/COleControl::OnGetDisplayString", "AFXCTL/COleControl::OnGetInPlaceMenu", "AFXCTL/COleControl::OnGetNaturalExtent", "AFXCTL/COleControl::OnGetPredefinedStrings", "AFXCTL/COleControl::OnGetPredefinedValue", "AFXCTL/COleControl::OnGetViewExtent", "AFXCTL/COleControl::OnGetViewRect", "AFXCTL/COleControl::OnGetViewStatus", "AFXCTL/COleControl::OnHideToolBars", "AFXCTL/COleControl::OnInactiveMouseMove", "AFXCTL/COleControl::OnInactiveSetCursor", "AFXCTL/COleControl::OnKeyDownEvent", "AFXCTL/COleControl::OnKeyPressEvent", "AFXCTL/COleControl::OnKeyUpEvent", "AFXCTL/COleControl::OnMapPropertyToPage", "AFXCTL/COleControl::OnMnemonic", "AFXCTL/COleControl::OnProperties", "AFXCTL/COleControl::OnQueryHitPoint", "AFXCTL/COleControl::OnQueryHitRect", "AFXCTL/COleControl::OnRenderData", "AFXCTL/COleControl::OnRenderFileData", "AFXCTL/COleControl::OnRenderGlobalData", "AFXCTL/COleControl::OnResetState", "AFXCTL/COleControl::OnSetClientSite", "AFXCTL/COleControl::OnSetData", "AFXCTL/COleControl::OnSetExtent", "AFXCTL/COleControl::OnSetObjectRects", "AFXCTL/COleControl::OnShowToolBars", "AFXCTL/COleControl::OnTextChanged", "AFXCTL/COleControl::OnWindowlessMessage", "AFXCTL/COleControl::ParentToClient", "AFXCTL/COleControl::PostModalDialog", "AFXCTL/COleControl::PreModalDialog", "AFXCTL/COleControl::RecreateControlWindow", "AFXCTL/COleControl::Refresh", "AFXCTL/COleControl::ReleaseCapture", "AFXCTL/COleControl::ReleaseDC", "AFXCTL/COleControl::ReparentControlWindow", "AFXCTL/COleControl::ResetStockProps", "AFXCTL/COleControl::ResetVersion", "AFXCTL/COleControl::ScrollWindow", "AFXCTL/COleControl::SelectFontObject", "AFXCTL/COleControl::SelectStockFont", "AFXCTL/COleControl::SerializeExtent", "AFXCTL/COleControl::SerializeStockProps", "AFXCTL/COleControl::SerializeVersion", "AFXCTL/COleControl::SetAppearance", "AFXCTL/COleControl::SetBackColor", "AFXCTL/COleControl::SetBorderStyle", "AFXCTL/COleControl::SetCapture", "AFXCTL/COleControl::SetControlSize", "AFXCTL/COleControl::SetEnabled", "AFXCTL/COleControl::SetFocus", "AFXCTL/COleControl::SetFont", "AFXCTL/COleControl::SetForeColor", "AFXCTL/COleControl::SetInitialSize", "AFXCTL/COleControl::SetModifiedFlag", "AFXCTL/COleControl::SetNotPermitted", "AFXCTL/COleControl::SetNotSupported", "AFXCTL/COleControl::SetRectInContainer", "AFXCTL/COleControl::SetText", "AFXCTL/COleControl::ThrowError", "AFXCTL/COleControl::TransformCoords", "AFXCTL/COleControl::TranslateColor", "AFXCTL/COleControl::WillAmbientsBeValidDuringLoad", "AFXCTL/COleControl::WindowProc", "AFXCTL/COleControl::DrawContent", "AFXCTL/COleControl::DrawMetafile", "AFXCTL/COleControl::IsInvokeAllowed", "AFXCTL/COleControl::SetInitialDataFormats"]
@@ -823,7 +824,7 @@ To report an error that occurs during a property get function, property set func
 
 The implementation of an OLE control's Stock Error event uses an SCODE value. If your control uses this event, and is intended to be used in Visual Basic 4.0, you will receive errors because the SCODE value is not supported in Visual Basic.
 
-To fix this, manually change the SCODE parameter in the control's .ODL file to a **long**. In addition, any custom event, method, or property that uses an SCODE parameter also causes the same problem.
+To fix this, manually change the SCODE parameter in the control's .ODL file to a **`long`**. In addition, any custom event, method, or property that uses an SCODE parameter also causes the same problem.
 
 ## <a name="fireevent"></a> COleControl::FireEvent
 
@@ -868,7 +869,7 @@ The *pbParams* argument is a space-separated list of **VTS_**. One or more of th
 |VTS_YSIZE_HIMETRIC|OLE_XSIZE_HIMETRIC|
 
 > [!NOTE]
-> Additional variant constants have been defined for all variant types, with the exception of VTS_FONT and VTS_PICTURE, that provide a pointer to the variant data constant. These constants are named using the **VTS_P**`constantname` convention. For example, VTS_PCOLOR is a pointer to a VTS_COLOR constant.
+> Additional variant constants have been defined for all variant types, with the exception of VTS_FONT and VTS_PICTURE, that provide a pointer to the variant data constant. These constants are named using the VTS_P\<CONSTANT-NAME> convention. For example, VTS_PCOLOR is a pointer to a VTS_COLOR constant.
 
 ## <a name="firekeydown"></a> COleControl::FireKeyDown
 
@@ -1095,7 +1096,7 @@ void FireReadyStateChange();
 
 The ready state can be one of the following values:
 
-|||
+|Name|Description|
 |-|-|
 |READYSTATE_UNINITIALIZED|Default initialization state|
 |READYSTATE_LOADING|Control is currently loading its properties|
@@ -1119,7 +1120,7 @@ virtual DWORD GetActivationPolicy();
 
 A combination of flags from the POINTERINACTIVE enumeration. Possible flags are:
 
-|||
+|Name|Description|
 |-|-|
 |POINTERINACTIVE_ACTIVATEONENTRY|The object should be in-place activated when the mouse enters it during a mouse move operation.|
 |POINTERINACTIVE_DEACTIVATEONLEAVE|The object should be deactivated when the mouse leaves the object during a mouse move operation.|
@@ -1204,7 +1205,7 @@ short GetAppearance ();
 
 ### Return Value
 
-The return value specifies the current appearance setting as a **short** (VT_I2) value, if successful. This value is zero if the control's appearance is flat and 1 if the control's appearance is 3D.
+The return value specifies the current appearance setting as a **`short`** (VT_I2) value, if successful. This value is zero if the control's appearance is flat and 1 if the control's appearance is 3D.
 
 ## <a name="getbackcolor"></a> COleControl::GetBackColor
 
@@ -1240,7 +1241,7 @@ CWnd* GetCapture();
 
 ### Return Value
 
-If the control is activated and windowless, returns **this** if the control currently has the mouse capture (as determined by the control's container), or NULL if it does not have the capture.
+If the control is activated and windowless, returns **`this`** if the control currently has the mouse capture (as determined by the control's container), or NULL if it does not have the capture.
 
 Otherwise, returns the `CWnd` object that has the mouse capture (same as `CWnd::GetCapture`).
 
@@ -1345,7 +1346,7 @@ enum ControlFlags {
 
 By default, `GetControlFlags` returns `fastBeginPaint | clipPaintDC`.
 
-|||
+|Name|Description|
 |-|-|
 |`fastBeginPaint`|If set, uses a begin-paint function tailored for OLE controls instead of the [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint) API (set by default).|
 |`clipPaintDC`|If not set, disables the call to `IntersectClipRect` made by `COleControl` and gains a small speed advantage. If you are using windowless activation, the flag has no effect.|
@@ -1450,7 +1451,7 @@ CWnd* GetFocus();
 
 ### Return Value
 
-If the control is activated and windowless, returns **this** if the control currently has the keyboard focus (as determined by the control's container), or NULL if it does not have the focus.
+If the control is activated and windowless, returns **`this`** if the control currently has the keyboard focus (as determined by the control's container), or NULL if it does not have the focus.
 
 Otherwise, returns the `CWnd` object that has the focus (same as `CWnd::GetFocus`).
 
@@ -1568,7 +1569,7 @@ long GetReadyState();
 
 The readiness state of the control, one of the following values:
 
-|||
+|Name|Description|
 |-|-|
 |READYSTATE_UNINITIALIZED|Default initialization state|
 |READYSTATE_LOADING|Control is currently loading its properties|
@@ -1716,7 +1717,7 @@ void InternalSetReadyState(long lNewReadyState);
 *lNewReadyState*<br/>
 The readiness state to set for the control, one of the following values:
 
-|||
+|Name|Description|
 |-|-|
 |READYSTATE_UNINITIALIZED|Default initialization state|
 |READYSTATE_LOADING|Control is currently loading its properties|
@@ -2497,7 +2498,7 @@ virtual DWORD OnGetViewStatus();
 
 One of the values of the VIEWSTATUS enumeration if successful; otherwise 0. Possible values are any combination of the following:
 
-|||
+|Name|Description|
 |-|-|
 |VIEWSTATUS_OPAQUE|Object is completely opaque. If this bit is not set, the object contains transparent parts. This bit applies only to content-related aspects and not to DVASPECT_ICON or DVASPECT_DOCPRINT.|
 |VIEWSTATUS_SOLIDBKGND|Object has a solid background (consisting in a solid color, not a brush pattern). This bit is meaningful only if VIEWSTATUS_OPAQUE is set and applies only to content-related aspects and not to DVASPECT_ICON or DVASPECT_DOCPRINT.|
@@ -2842,7 +2843,7 @@ virtual BOOL OnRenderData(
 Points to the [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure specifying the format in which information is requested.
 
 *lpStgMedium*<br/>
-Points to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) structure in which the data is to be returned.
+Points to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) structure in which the data is to be returned.
 
 ### Return Value
 
@@ -2965,7 +2966,7 @@ virtual BOOL OnSetData(
 Pointer to a [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) structure specifying the format of the data.
 
 *lpStgMedium*<br/>
-Pointer to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) structure in which the data resides.
+Pointer to a [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) structure in which the data resides.
 
 *bRelease*<br/>
 TRUE if the control should free the storage medium; FALSE if the control should not free the storage medium.
@@ -3471,7 +3472,7 @@ void SetAppearance (short sAppearance);
 ### Parameters
 
 *sAppearance*<br/>
-A **short** (VT_I2) value to be used for the appearance of your control. A value of zero sets the control's appearance to flat and a value of 1 sets the control's appearance to 3D.
+A **`short`** (VT_I2) value to be used for the appearance of your control. A value of zero sets the control's appearance to flat and a value of 1 sets the control's appearance to 3D.
 
 ### Remarks
 

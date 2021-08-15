@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CReBarCtrl Class"
 title: "CReBarCtrl Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CReBarCtrl", "AFXCMN/CReBarCtrl", "AFXCMN/CReBarCtrl::CReBarCtrl", "AFXCMN/CReBarCtrl::BeginDrag", "AFXCMN/CReBarCtrl::Create", "AFXCMN/CReBarCtrl::CreateEx", "AFXCMN/CReBarCtrl::DeleteBand", "AFXCMN/CReBarCtrl::DragMove", "AFXCMN/CReBarCtrl::EndDrag", "AFXCMN/CReBarCtrl::GetBandBorders", "AFXCMN/CReBarCtrl::GetBandCount", "AFXCMN/CReBarCtrl::GetBandInfo", "AFXCMN/CReBarCtrl::GetBandMargins", "AFXCMN/CReBarCtrl::GetBarHeight", "AFXCMN/CReBarCtrl::GetBarInfo", "AFXCMN/CReBarCtrl::GetBkColor", "AFXCMN/CReBarCtrl::GetColorScheme", "AFXCMN/CReBarCtrl::GetDropTarget", "AFXCMN/CReBarCtrl::GetExtendedStyle", "AFXCMN/CReBarCtrl::GetImageList", "AFXCMN/CReBarCtrl::GetPalette", "AFXCMN/CReBarCtrl::GetRect", "AFXCMN/CReBarCtrl::GetRowCount", "AFXCMN/CReBarCtrl::GetRowHeight", "AFXCMN/CReBarCtrl::GetTextColor", "AFXCMN/CReBarCtrl::GetToolTips", "AFXCMN/CReBarCtrl::HitTest", "AFXCMN/CReBarCtrl::IDToIndex", "AFXCMN/CReBarCtrl::InsertBand", "AFXCMN/CReBarCtrl::MaximizeBand", "AFXCMN/CReBarCtrl::MinimizeBand", "AFXCMN/CReBarCtrl::MoveBand", "AFXCMN/CReBarCtrl::PushChevron", "AFXCMN/CReBarCtrl::RestoreBand", "AFXCMN/CReBarCtrl::SetBandInfo", "AFXCMN/CReBarCtrl::SetBandWidth", "AFXCMN/CReBarCtrl::SetBarInfo", "AFXCMN/CReBarCtrl::SetBkColor", "AFXCMN/CReBarCtrl::SetColorScheme", "AFXCMN/CReBarCtrl::SetExtendedStyle", "AFXCMN/CReBarCtrl::SetImageList", "AFXCMN/CReBarCtrl::SetOwner", "AFXCMN/CReBarCtrl::SetPalette", "AFXCMN/CReBarCtrl::SetTextColor", "AFXCMN/CReBarCtrl::SetToolTips", "AFXCMN/CReBarCtrl::SetWindowTheme", "AFXCMN/CReBarCtrl::ShowBand", "AFXCMN/CReBarCtrl::SizeToRect"]
@@ -89,7 +90,7 @@ The following illustration shows a rebar control that has three bands:
 
 - Band 2 contains a combo box and four standard buttons.
 
-   ![Example of a Rebar menu](../../mfc/reference/media/vc4scc1.gif "Example of a Rebar menu")
+   ![Example of a Rebar menu.](../../mfc/reference/media/vc4scc1.gif "Example of a Rebar menu")
 
 ## Rebar control
 
@@ -760,10 +761,11 @@ BOOL SetBandWidth(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*uBand*|[in] Zero-based index of a rebar band.|
-|*cxWidth*|[in] New width of the rebar band, in pixels.|
+*uBand*\
+[in] Zero-based index of a rebar band.
+
+*cxWidth*\
+[in] New width of the rebar band, in pixels.
 
 ### Return Value
 
@@ -775,13 +777,11 @@ This method sends the [RB_SETBANDWIDTH](/windows/win32/Controls/rb-setbandwidth)
 
 ### Example
 
-The following code example defines the variable, `m_rebar`, that is used to access the current rebar control. This variable is used in the next example.
+The first code example defines the variable, `m_rebar`, that is used to access the current rebar control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CReBarCtrl_s1#1](../../mfc/reference/codesnippet/cpp/crebarctrl-class_12.h)]
 
-### Example
-
-The following code example sets each rebar band to be the same width.
+The next code example sets each rebar band to be the same width.
 
 [!code-cpp[NVC_MFC_CReBarCtrl_s1#2](../../mfc/reference/codesnippet/cpp/crebarctrl-class_13.cpp)]
 
@@ -856,10 +856,14 @@ DWORD SetExtendedStyle(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*dwMask*|[in] A bitwise combination (OR) of flags that specify which flags in the *dwStyleEx* parameter apply. Use one or more of the following values:<br /><br /> RBS_EX_SPLITTER: By default, show the splitter on the bottom in horizontal mode, and to the right in vertical mode.<br /><br /> RBS_EX_TRANSPARENT: Forward the [WM_ERASEBKGND](/windows/win32/winmsg/wm-erasebkgnd) message to the parent window.|
-|*dwStyleEx*|[in] A bitwise combination (OR) of flags that specify the styles to apply. To set a style, specify the same flag that is used in the *dwMask* parameter. To reset a style, specify binary zero.|
+*dwMask*\
+[in] A bitwise combination (OR) of flags that specify which flags in the *dwStyleEx* parameter apply. Use one or more of the following values:
+
+- `RBS_EX_SPLITTER`: By default, show the splitter on the bottom in horizontal mode, and to the right in vertical mode.
+- `RBS_EX_TRANSPARENT`: Forward the [WM_ERASEBKGND](/windows/win32/winmsg/wm-erasebkgnd) message to the parent window.
+
+*dwStyleEx*\
+[in] A bitwise combination (OR) of flags that specify the styles to apply. To set a style, specify the same flag that is used in the *dwMask* parameter. To reset a style, specify binary zero.
 
 ### Return Value
 

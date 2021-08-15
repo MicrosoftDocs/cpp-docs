@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAxWinAmbientDispatchEx Interface"
 title: "IAxWinAmbientDispatchEx Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IAxWinAmbientDispatchEx", "ATLIFACE/ATL::IAxWinAmbientDispatchEx", "ATLIFACE/ATL::SetAmbientDispatch"]
@@ -22,7 +23,7 @@ MIDL_INTERFACE("B2D0778B - AC99 - 4c58 - A5C8 - E7724E5316B5") IAxWinAmbientDisp
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[SetAmbientDispatch](#setambientdispatch)|This method is called to supplement the default ambient property interface with a user-defined interface.|
 
@@ -36,7 +37,7 @@ This interface is exposed by ATL's ActiveX control hosting objects. Derived from
 
 If you are linking to ATL90.dll, **AXHost** will load the type information from the type library in the DLL.
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for more details.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for more details.
 
 ## Requirements
 

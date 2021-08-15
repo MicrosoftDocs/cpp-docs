@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3039"
 title: "Compiler Error C3039"
 ms.date: "11/04/2016"
 f1_keywords: ["C3039"]
@@ -9,7 +10,7 @@ ms.assetid: 02776f16-f57a-4ffd-b7f7-9c696b633e08
 
 'var' : index variable in OpenMP 'for' statement cannot be a reduction variable
 
-An index variable is implicitly private, so the variable cannot be used in a [reduction](../../parallel/openmp/reference/reduction.md) clause in the enclosing [parallel](../../parallel/openmp/reference/parallel.md) directive.
+An index variable is implicitly private, so the variable cannot be used in a [reduction](../../parallel/openmp/reference/openmp-clauses.md#reduction) clause in the enclosing [parallel](../../parallel/openmp/reference/openmp-directives.md#parallel) directive.
 
 ## Example
 

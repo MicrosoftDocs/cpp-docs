@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL/MFC Shared Classes"
 title: "ATL-MFC Shared Classes"
 ms.custom: "index-page"
 ms.date: "11/04/2016"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPropExchange Class"
 title: "CPropExchange Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPropExchange", "AFXCTL/CPropExchange", "AFXCTL/CPropExchange::ExchangeBlobProp", "AFXCTL/CPropExchange::ExchangeFontProp", "AFXCTL/CPropExchange::ExchangePersistentProp", "AFXCTL/CPropExchange::ExchangeProp", "AFXCTL/CPropExchange::ExchangeVersion", "AFXCTL/CPropExchange::GetVersion", "AFXCTL/CPropExchange::IsAsynchronous", "AFXCTL/CPropExchange::IsLoading"]
@@ -180,13 +181,13 @@ A symbol specifying the type of the property being exchanged. Possible values ar
 
 |Symbol|Property Type|
 |------------|-------------------|
-|VT_I2|**short**|
-|VT_I4|**long**|
+|VT_I2|**`short`**|
+|VT_I4|**`long`**|
 |VT_BOOL|**BOOL**|
 |VT_BSTR|`CString`|
 |VT_CY|**CY**|
-|VT_R4|**float**|
-|VT_R8|**double**|
+|VT_R4|**`float`**|
+|VT_R8|**`double`**|
 
 *pvProp*<br/>
 A pointer to the property's value.

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2001"
 title: "Compiler Error C2001"
 ms.date: "11/04/2016"
 f1_keywords: ["C2001"]
@@ -17,7 +18,7 @@ A string constant cannot be continued on a second line unless you do the followi
 
 Ending the first line with \n is not sufficient.
 
-## Example
+## Examples
 
 The following sample generates C2001:
 
@@ -34,8 +35,6 @@ int main()
              world");
 }
 ```
-
-## Example
 
 Spaces at the beginning of the next line after a line-continuation character are included in the string constant. None of the examples shown above embed a newline character into the string constant. You can embed a newline character as shown here:
 

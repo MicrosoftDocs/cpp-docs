@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AsyncBase Class"
 title: "AsyncBase Class"
 ms.date: "10/08/2018"
 ms.topic: "reference"
@@ -167,7 +168,7 @@ inline bool ContinueAsyncOperation();
 
 ### Return Value
 
-**true** if the current state of the asynchronous operation is *started*, which means the operation should continue. Otherwise, **false**, which means the operation should halt.
+**`true`** if the current state of the asynchronous operation is *started*, which means the operation should continue. Otherwise, **`false`**, which means the operation should halt.
 
 ## <a name="currentstatus"></a> AsyncBase::CurrentStatus
 
@@ -462,7 +463,7 @@ bool TryTransitionToCompleted(
 
 ### Return Value
 
-**true** if the asynchronous operation has completed; otherwise, **false**.
+**`true`** if the asynchronous operation has completed; otherwise, **`false`**.
 
 ## <a name="trytransitiontoerror"></a> AsyncBase::TryTransitionToError
 
@@ -481,7 +482,7 @@ An error HRESULT.
 
 ### Return Value
 
-**true** if the internal error state was changed; otherwise, **false**.
+**`true`** if the internal error state was changed; otherwise, **`false`**.
 
 ### Remarks
 

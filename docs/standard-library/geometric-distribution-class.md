@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: geometric_distribution Class"
 title: "geometric_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::geometric_distribution", "random/std::geometric_distribution::reset", "random/std::geometric_distribution::p", "random/std::geometric_distribution::param", "random/std::geometric_distribution::min", "random/std::geometric_distribution::max", "random/std::geometric_distribution::operator()", "random/std::geometric_distribution::param_type", "random/std::geometric_distribution::param_type::p", "random/std::geometric_distribution::param_type::operator==", "random/std::geometric_distribution::param_type::operator!="]
@@ -42,7 +43,7 @@ public:
 ### Parameters
 
 *IntType*\
-The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
+The integer result type, defaults to **`int`**. For possible types, see [\<random>](../standard-library/random.md).
 
 *URNG*\
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
@@ -51,10 +52,8 @@ The uniform random number generator engine. For possible types, see [\<random>](
 
 The class template describes a distribution that produces values of a user-specified integral type with a geometric distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[geometric_distribution](#geometric_distribution)|`geometric_distribution::p`|`geometric_distribution::param`|
-|`geometric_distribution::operator()`||[param_type](#param_type)|
+[geometric_distribution](#geometric_distribution)\
+[param_type](#param_type)
 
 The property function `p()` returns the value for stored distribution parameter `p`.
 

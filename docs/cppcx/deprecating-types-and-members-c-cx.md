@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Deprecating types and members (C++/CX)"
 title: "Deprecating types and members (C++/CX)"
 ms.date: "12/30/2016"
 ms.assetid: b20b01c1-a439-4ff0-8cf3-d7280c492813
@@ -33,20 +34,24 @@ public:
 
 The following table lists the constructs to which the Deprecated attribute may be applied:
 
-| |
-|-|
-|XAML control|
-|delegate|
-|event|
-|enum field|
-|enum|
-|struct|
-|method|
-|class|
-|interface|
-|property|
-|struct field|
-|parameterized constructor|
+:::row:::
+   :::column span="":::
+      class\
+      delegate\
+      enum\
+      enum field\
+      event\
+      interface
+   :::column-end:::
+   :::column span="":::
+      method\
+      parameterized constructor\
+      property\
+      struct\
+      struct field\
+      XAML control
+   :::column-end:::
+:::row-end:::
 
 ## See also
 

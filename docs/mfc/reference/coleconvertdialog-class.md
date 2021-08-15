@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleConvertDialog Class"
 title: "COleConvertDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleConvertDialog", "AFXODLGS/COleConvertDialog", "AFXODLGS/COleConvertDialog::COleConvertDialog", "AFXODLGS/COleConvertDialog::DoConvert", "AFXODLGS/COleConvertDialog::DoModal", "AFXODLGS/COleConvertDialog::GetClassID", "AFXODLGS/COleConvertDialog::GetDrawAspect", "AFXODLGS/COleConvertDialog::GetIconicMetafile", "AFXODLGS/COleConvertDialog::GetSelectionType", "AFXODLGS/COleConvertDialog::m_cv"]

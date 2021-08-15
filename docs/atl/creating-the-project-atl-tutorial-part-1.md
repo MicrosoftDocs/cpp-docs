@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating the Project (ATL Tutorial, Part 1)"
 title: "Creating the Project (ATL Tutorial, Part 1)"
 ms.custom: "get-started-article"
 ms.date: "08/19/2019"
@@ -44,7 +45,7 @@ This tutorial walks you step-by-step through a non-attributed ATL project that c
 
 Visual Studio will create the project by generating several files. You can view these files in **Solution Explorer** by expanding the `Polygon` object. The files are listed below.
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 |File|Description|
 |----------|-----------------|
@@ -60,7 +61,7 @@ Visual Studio will create the project by generating several files. You can view 
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 |File|Description|
 |----------|-----------------|

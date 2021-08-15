@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use parallel_invoke to Write a Parallel Sort Routine"
 title: "How to: Use parallel_invoke to Write a Parallel Sort Routine"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["task_handle class, example", "task_group class, example", "make_task function, example", "structured_task_group class, example", "improving parallel performance with task groups [Concurrency Runtime]"]
@@ -39,7 +40,7 @@ This section describes how to use the `parallel_invoke` algorithm to perform the
 
 [!code-cpp[concrt-parallel-bitonic-sort#10](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_2.cpp)]
 
-1. Add a `using` directive for the `concurrency` namespace.
+1. Add a **`using`** directive for the `concurrency` namespace.
 
 [!code-cpp[concrt-parallel-bitonic-sort#11](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_3.cpp)]
 

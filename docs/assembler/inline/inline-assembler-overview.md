@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inline Assembler Overview"
 title: "Inline Assembler Overview"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["inline assembler", "__asm keyword [C++], invoking inline assembler", "invoking inline assembler", "inline assembly, inline assembler"]
@@ -12,9 +13,9 @@ The inline assembler lets you embed assembly-language instructions in your C and
 
 Because the inline assembler doesn't require separate assembly and link steps, it is more convenient than a separate assembler. Inline assembly code can use any C or C++ variable or function name that is in scope, so it is easy to integrate it with your program's C and C++ code. And because the assembly code can be mixed with C and C++ statements, it can do tasks that are cumbersome or impossible in C or C++ alone.
 
-The [__asm](../../assembler/inline/asm.md) keyword invokes the inline assembler and can appear wherever a C or C++ statement is legal. It cannot appear by itself. It must be followed by an assembly instruction, a group of instructions enclosed in braces, or, at the very least, an empty pair of braces. The term "`__asm` block" here refers to any instruction or group of instructions, whether or not in braces.
+The [__asm](../../assembler/inline/asm.md) keyword invokes the inline assembler and can appear wherever a C or C++ statement is legal. It cannot appear by itself. It must be followed by an assembly instruction, a group of instructions enclosed in braces, or, at the very least, an empty pair of braces. The term "**`__asm`** block" here refers to any instruction or group of instructions, whether or not in braces.
 
-The following code is a simple `__asm` block enclosed in braces. (The code is a custom function prolog sequence.)
+The following code is a simple **`__asm`** block enclosed in braces. (The code is a custom function prolog sequence.)
 
 ```cpp
 // asm_overview.cpp
@@ -36,7 +37,7 @@ void __declspec(naked) main()
 }
 ```
 
-Alternatively, you can put `__asm` in front of each assembly instruction:
+Alternatively, you can put **`__asm`** in front of each assembly instruction:
 
 ```cpp
 __asm push ebp
@@ -44,7 +45,7 @@ __asm mov  ebp, esp
 __asm sub  esp, __LOCAL_SIZE
 ```
 
-Since the `__asm` keyword is a statement separator, you can also put assembly instructions on the same line:
+Since the **`__asm`** keyword is a statement separator, you can also put assembly instructions on the same line:
 
 ```cpp
 __asm push ebp   __asm mov  ebp, esp   __asm sub  esp, __LOCAL_SIZE

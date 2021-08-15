@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;filesystem&gt; enumerations"
 title: "&lt;filesystem&gt; enumerations"
 ms.date: "11/04/2016"
 f1_keywords: ["filesystem/std::filesystem::copy_options", "filesystem/std::experimental::filesystem::copy_options", "filesystem/std::filesystem::directory_options", "filesystem/std::experimental::filesystem::directory_options", "filesystem/std::filesystem::file_type", "filesystem/std::experimental::filesystem::file_type", "filesystem/std::filesystem::perms", "filesystem/std::experimental::filesystem::perms"]
@@ -37,7 +38,7 @@ enum class copy_options {
 
 ### Values
 
-|`Name`|Description|
+| Name | Description |
 |------------|-----------------|
 |`none`|Perform the default behavior for the operation.|
 |`skip_existing`|Do not copy if the file already exists, do not report an error.|

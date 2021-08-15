@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2108"
 title: "Compiler Error C2108"
 ms.date: "11/04/2016"
 f1_keywords: ["C2108"]
@@ -13,7 +14,7 @@ The array subscript is a noninteger expression.
 
 ## Example
 
-C2108 can occur if you incorrectly use the `this` pointer of a value type to access the type's default indexer. For more information, see [Semantics of the this pointer](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Semantics_of_the_this_pointer).
+C2108 can occur if you incorrectly use the **`this`** pointer of a value type to access the type's default indexer. For more information, see [Semantics of the this pointer](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Semantics_of_the_this_pointer).
 
 The following sample generates C2108.
 

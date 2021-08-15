@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: friend (C++)"
 title: "friend (C++)"
 ms.date: "07/15/2019"
 f1_keywords: ["friend_cpp"]
@@ -7,7 +8,7 @@ ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
 ---
 # friend (C++)
 
-In some circumstances, it is more convenient to grant member-level access to functions that are not members of a class or to all members in a separate class. Only the class implementer can declare who its friends are. A function or class cannot declare itself as a friend of any class. In a class definition, use the **friend** keyword and the name of a non-member function or other class to grant it access to the private and protected members of your class. In a template definition, a type parameter can be declared as a friend.
+In some circumstances, it is more convenient to grant member-level access to functions that are not members of a class or to all members in a separate class. Only the class implementer can declare who its friends are. A function or class cannot declare itself as a friend of any class. In a class definition, use the **`friend`** keyword and the name of a non-member function or other class to grant it access to the private and protected members of your class. In a template definition, a type parameter can be declared as a friend.
 
 ## Syntax
 
@@ -20,7 +21,7 @@ friend F;
 
 If you declare a friend function that was not previously declared, that function is exported to the enclosing nonclass scope.
 
-Functions declared in a friend declaration are treated as if they had been declared using the **extern** keyword. For more information,  see [extern](extern-cpp.md).
+Functions declared in a friend declaration are treated as if they had been declared using the **`extern`** keyword. For more information,  see [extern](extern-cpp.md).
 
 Although functions with global scope can be declared as friends prior to their prototypes, member functions cannot be declared as friends before the appearance of their complete class declaration. The following code shows why this fails:
 
@@ -32,7 +33,7 @@ class HasFriends
 };
 ```
 
-The preceding example enters the class name `ForwardDeclared` into scope, but the complete declaration — specifically, the portion that declares the function `IsAFriend` — is not known. Therefore, the **friend** declaration in class `HasFriends` generates an error.
+The preceding example enters the class name `ForwardDeclared` into scope, but the complete declaration — specifically, the portion that declares the function `IsAFriend` — is not known. Therefore, the **`friend`** declaration in class `HasFriends` generates an error.
 
 Starting in C++11, there are two forms of friend declarations for a class:
 
@@ -43,14 +44,14 @@ friend F;
 
 The first form introduces a new class F if no existing class by that name was found in the innermost namespace. **C++11**: The second form does not introduce a new class; it can be used when the class has already been declared, and it must be used when declaring a template type parameter or a typedef as a friend.
 
-Use `class friend F` when the referenced type has not yet been declared:
+Use `friend class F` when the referenced type has not yet been declared:
 
 ```cpp
 namespace NS
 {
     class M
     {
-        class friend F;  // Introduces F but doesn't define it
+        friend class F;  // Introduces F but doesn't define it
     };
 }
 ```
@@ -109,9 +110,9 @@ To declare two classes that are friends of one another, the entire second class 
 
 ## friend functions
 
-A **friend** function is a function that is not a member of a class but has access to the class's private and protected members. Friend functions are not considered class members; they are normal external functions that are given special access privileges. Friends are not in the class's scope, and they are not called using the member-selection operators (**.** and -**>**) unless they are members of another class. A **friend** function is declared by the class that is granting access. The **friend** declaration can be placed anywhere in the class declaration. It is not affected by the access control keywords.
+A **`friend`** function is a function that is not a member of a class but has access to the class's private and protected members. Friend functions are not considered class members; they are normal external functions that are given special access privileges. Friends are not in the class's scope, and they are not called using the member-selection operators (**.** and -**>**) unless they are members of another class. A **`friend`** function is declared by the class that is granting access. The **`friend`** declaration can be placed anywhere in the class declaration. It is not affected by the access control keywords.
 
-The following example shows a `Point` class and a friend function, `ChangePrivate`. The **friend** function has access to the private data member of the `Point` object it receives as a parameter.
+The following example shows a `Point` class and a friend function, `ChangePrivate`. The **`friend`** function has access to the private data member of the `Point` object it receives as a parameter.
 
 ```cpp
 // friend_functions.cpp
@@ -175,7 +176,7 @@ int A::Func2( B& b ) { return b._b; }   // C2248
 
 In the preceding example, only the function `A::Func1( B& )` is granted friend access to class `B`. Therefore, access to the private member `_b` is correct in `Func1` of class `A` but not in `Func2`.
 
-A `friend` class is a class all of whose member functions are friend functions of a class, that is, whose member functions have access to the other class's private and protected members. Suppose the `friend` declaration in class `B` had been:
+A **`friend`** class is a class all of whose member functions are friend functions of a class, that is, whose member functions have access to the other class's private and protected members. Suppose the **`friend`** declaration in class `B` had been:
 
 ```cpp
 friend class A;
@@ -220,7 +221,7 @@ Friendship is not inherited, meaning that classes derived from `YourOtherClass` 
 
 The following figure shows four class declarations: `Base`, `Derived`, `aFriend`, and `anotherFriend`. Only class `aFriend` has direct access to the private members of `Base` (and to any members `Base` might have inherited).
 
-![Implications of friend relationship](../cpp/media/vc38v41.gif "Implications of friend relationship") <br/>
+![Diagram showing the derivation implications of a friend relationship.](../cpp/media/vc38v41.gif "Implications of friend relationship") <br/>
 Implications of friend relationship
 
 ## Inline friend definitions

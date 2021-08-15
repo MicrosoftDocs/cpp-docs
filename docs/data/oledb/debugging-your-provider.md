@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debugging Your Provider"
 title: "Debugging Your Provider"
 ms.date: "10/29/2018"
 helpviewer_keywords: ["debugging [C++], providers", "OLE DB providers, debugging", "Visual C++ debugger, debugging providers", "Visual C++ debugger"]
@@ -16,11 +17,11 @@ There are two ways to debug your provider:
 
 1. Open the provider project.
 
-1. On the **Projects** menu, click **Properties**.
+1. On the menu bar, select **Projects** > **Properties**.
 
-1. In the **Property Pages** dialog box, click the **Debugging** tab.
+1. In the **Property Pages** dialog box, select the **Configuration Properties** > **Debugging** property page.
 
-1. Select options as required, click **OK**.
+1. Select options as required, then choose **OK**.
 
 1. Set breakpoints, and then debug as usual.
 

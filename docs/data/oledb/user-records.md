@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: User Records"
 title: "User Records"
 ms.date: "05/09/2019"
 f1_keywords: ["COLUMN_ENTRY_MAP"]
@@ -47,7 +48,7 @@ If you use the **ATL OLE DB Consumer Wizard** to generate a consumer, you have t
 
 For a detailed discussion of the scenarios in which you need to use multiple accessors, see [Using Multiple Accessors on a Rowset](../../data/oledb/using-multiple-accessors-on-a-rowset.md).
 
-The following example shows the user record modified to support multiple accessors on the rowset. Instead of BEGIN_COLUMN_MAP and END_COLUMN_MAP, it uses [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md) and [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) for each accessor. The BEGIN_ACCESSOR macro specifies the accessor number (offset from zero) and whether the accessor is an autoaccessor. Autoaccessors call `GetData` to retrieve data automatically on a call to [MoveNext](../../data/oledb/crowset-movenext.md). Nonautomatic accessors require you to explicitly retrieve the data. Use a nonautomatic accessor if you're binding to a large data field (like a bitmap image) that you might not want to retrieve for every record.
+The following example shows the user record modified to support multiple accessors on the rowset. Instead of BEGIN_COLUMN_MAP and END_COLUMN_MAP, it uses [BEGIN_ACCESSOR_MAP](./macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor_map) and [BEGIN_ACCESSOR](./macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor) for each accessor. The BEGIN_ACCESSOR macro specifies the accessor number (offset from zero) and whether the accessor is an autoaccessor. Autoaccessors call `GetData` to retrieve data automatically on a call to [MoveNext](./crowset-class.md#movenext). Nonautomatic accessors require you to explicitly retrieve the data. Use a nonautomatic accessor if you're binding to a large data field (like a bitmap image) that you might not want to retrieve for every record.
 
 ```cpp
 class CMultiArtists

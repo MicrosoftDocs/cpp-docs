@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ClassFactory Class"
 title: "ClassFactory Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"
@@ -130,7 +131,7 @@ STDMETHOD(
 ### Parameters
 
 *fLock*<br/>
-**true** to increment the number of tracked objects. **false** to decrement the number of tracked objects.
+**`true`** to increment the number of tracked objects. **`false`** to decrement the number of tracked objects.
 
 ### Return Value
 

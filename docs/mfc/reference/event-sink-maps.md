@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Event Sink Maps"
 title: "Event Sink Maps"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event sink maps [MFC]"]
@@ -10,7 +11,7 @@ When an embedded OLE control fires an event, the control's container receives th
 
 ### Event Sink Maps
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_EVENTSINK_MAP](#begin_eventsink_map)|Starts the definition of an event sink map.|
 |[DECLARE_EVENTSINK_MAP](#declare_eventsink_map)|Declares an event sink map.|

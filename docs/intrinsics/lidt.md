@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __lidt"
 title: "__lidt"
 ms.date: "09/02/2019"
 f1_keywords: ["__lidt", "__lidt_cpp"]
@@ -19,9 +20,8 @@ void __lidt(void * Source);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Source*|[in] Pointer to the value to be copied to the IDTR.|
+*Source*\
+[in] Pointer to the value to be copied to the IDTR.
 
 ## Requirements
 

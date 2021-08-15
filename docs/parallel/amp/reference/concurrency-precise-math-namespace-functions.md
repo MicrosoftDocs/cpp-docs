@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency::precise_math namespace functions"
 title: "Concurrency::precise_math namespace functions"
 ms.date: "11/04/2016"
 f1_keywords: ["amp_math/Concurrency::precise_math::acos", "amp_math/Concurrency::precise_math::acosh", "amp_math/Concurrency::precise_math::acoshf", "amp_math/Concurrency::precise_math::asinf", "amp_math/Concurrency::precise_math::asinh", "amp_math/Concurrency::precise_math::atan", "amp_math/Concurrency::precise_math::atan2", "amp_math/Concurrency::precise_math::atanf", "amp_math/Concurrency::precise_math::atanh", "amp_math/Concurrency::precise_math::cbrt", "amp_math/Concurrency::precise_math::cbrtf", "amp_math/Concurrency::precise_math::ceilf", "amp_math/Concurrency::precise_math::copysign", "amp_math/Concurrency::precise_math::cos", "amp_math/Concurrency::precise_math::cosf", "amp_math/Concurrency::precise_math::coshf", "amp_math/Concurrency::precise_math::cospi", "amp_math/Concurrency::precise_math::erf", "amp_math/Concurrency::precise_math::erfc", "amp_math/Concurrency::precise_math::erfcinv", "amp_math/Concurrency::precise_math::erfcinvf", "amp_math/Concurrency::precise_math::erfinv", "amp_math/Concurrency::precise_math::erfinvf", "amp_math/Concurrency::precise_math::exp10", "amp_math/Concurrency::precise_math::exp10f", "amp_math/Concurrency::precise_math::exp2f", "amp_math/Concurrency::precise_math::expf", "amp_math/Concurrency::precise_math::expm1f", "amp_math/Concurrency::precise_math::fabs", "amp_math/Concurrency::precise_math::floor", "amp_math/Concurrency::precise_math::fdim", "amp_math/Concurrency::precise_math::floorf", "amp_math/Concurrency::precise_math::fmaf", "amp_math/Concurrency::precise_math::fmaxf", "amp_math/Concurrency::precise_math::fmin", "amp_math/Concurrency::precise_math::fmod", "amp_math/Concurrency::precise_math::fmodf", "amp_math/Concurrency::precise_math::frexp", "amp_math/Concurrency::precise_math::frexpf", "amp_math/Concurrency::precise_math::hypotf", "amp_math/Concurrency::precise_math::ilogb", "amp_math/Concurrency::precise_math::isfinite", "amp_math/Concurrency::precise_math::isinf", "amp_math/Concurrency::precise_math::isnormal", "amp_math/Concurrency::precise_math::ldexp", "amp_math/Concurrency::precise_math::lgamma", "amp_math/Concurrency::precise_math::lgammaf", "amp_math/Concurrency::precise_math::log10", "amp_math/Concurrency::precise_math::log10f", "amp_math/Concurrency::precise_math::log1pf", "amp_math/Concurrency::precise_math::log2", "amp_math/Concurrency::precise_math::logb", "amp_math/Concurrency::precise_math::logbf", "amp_math/Concurrency::precise_math::modf", "amp_math/Concurrency::precise_math::modff", "amp_math/Concurrency::precise_math::nanf", "amp_math/Concurrency::precise_math::nearbyint", "amp_math/Concurrency::precise_math::nextafter", "amp_math/Concurrency::precise_math::nextafterf", "amp_math/Concurrency::precise_math::phif", "amp_math/Concurrency::precise_math::pow", "amp_math/Concurrency::precise_math::probit", "amp_math/Concurrency::precise_math::probitf", "amp_math/Concurrency::precise_math::rcbrtf", "amp_math/Concurrency::precise_math::remainder", "amp_math/Concurrency::precise_math::remquo", "amp_math/Concurrency::precise_math::remquof", "amp_math/Concurrency::precise_math::roundf", "amp_math/Concurrency::precise_math::rsqrt", "amp_math/Concurrency::precise_math::scalb", "amp_math/Concurrency::precise_math::scalbf", "amp_math/Concurrency::precise_math::scalbnf", "amp_math/Concurrency::precise_math::signbit", "amp_math/Concurrency::precise_math::sin", "amp_math/Concurrency::precise_math::sincos", "amp_math/Concurrency::precise_math::sinf", "amp_math/Concurrency::precise_math::sinh", "amp_math/Concurrency::precise_math::sinpi", "amp_math/Concurrency::precise_math::sinpif", "amp_math/Concurrency::precise_math::sqrtf", "amp_math/Concurrency::precise_math::tan", "amp_math/Concurrency::precise_math::tanh", "amp_math/Concurrency::precise_math::tanhf", "amp_math/Concurrency::precise_math::tanpif", "amp_math/Concurrency::precise_math::tgamma", "amp_math/Concurrency::precise_math::trunc", "amp_math/Concurrency::precise_math::truncf"]
@@ -6,53 +7,147 @@ ms.assetid: fae53ab4-d1c5-45bb-a6a0-a74258e9aea3
 ---
 # Concurrency::precise_math namespace functions
 
-||||
-|-|-|-|
-|[acos](#acos)|[acosf](#acosf)|[acosh](#acosh)|
-|[acoshf](#acoshf)|[asin](#asin)|[asinf](#asinf)|
-|[asinh](#asinh)|[asinhf](#asinhf)|[atan](#atan)|
-|[atan2](#atan2)|[atan2f](#atan2f)|[atanf](#atanf)|
-|[atanh](#atanh)|[atanhf](#atanhf)|[cbrt](#cbrt)|
-|[cbrtf](#cbrtf)|[ceil](#ceil)|[ceilf](#ceilf)|
-|[copysign](#copysign)|[copysignf](#copysignf)|[cos](#cos)|
-|[cosf](#cosf)|[cosh](#cosh)|[coshf](#coshf)|
-|[cospi](#cospi)|[cospif](#cospif)|[erf](#erf)|
-|[erfc](#erfc)|[erfcf](#erfcf)|[erfcinv](#erfcinv)|
-|[erfcinvf](#erfcinvf)|[erff](#erff)|[erfinv](#erfinv)|
-|[erfinvf](#erfinvf)|[exp](#exp)|[exp10](#exp10)|
-|[exp10f](#exp10f)|[exp2](#exp2)|[exp2f](#exp2f)|
-|[expf](#expf)|[expm1](#expm1)|[expm1f](#expm1f)|
-|[fabs](#fabs)|[fabsf](#fabsf)|[floor](#floor)|
-|[fdim](#fdim)|[fdimf](#fdimf)||
-|[floorf](#floorf)|[fma](#fma)|[fmaf](#fmaf)|
-[fmax](#fmax)|[fmaxf](#fmaxf)||
-|[fmin](#fmin)|[fminf](#fminf)|[fmod](#fmod)|
-|[fmodf](#fmodf)|[fpclassify](#fpclassify)|[frexp](#frexp)|
-|[frexpf](#frexpf)|[hypot](#hypot)|[hypotf](#hypotf)|
-|[ilogb](#ilogb)|[ilogbf](#ilogbf)|[isfinite](#isfinite)|
-|[isinf](#isinf)|[isnan](#isnan)|[isnormal](#isnormal)|
-|[ldexp](#ldexp)|[ldexpf](#ldexpf)|[lgamma](#lgamma)|
-|[lgammaf](#lgammaf)|[log](#log)|[log10](#log10)|
-|[log10f](#log10f)|[log1p](#log1p)|[log1pf](#log1pf)|
-|[log2](#log2)|[log2f](#log2f)|[logb](#logb)|
-|[logbf](#logbf)|[logf](#logf)|[modf](#modf)|
-|[modff](#modff)|[nan](#nan)|[nanf](#nanf)|
-|[nearbyint](#nearbyint)|[nearbyintf](#nearbyintf)|[nextafter](#nextafter)|
-|[nextafterf](#nextafterf)|[phi](#phi)|[phif](#phif)|
-|[pow](#pow)|[powf](#powf)|[probit](#probit)|
-|[probitf](#probitf)|[rcbrt](#rcbrt)|[rcbrtf](#rcbrtf)|
-|[remainder](#remainder)|[remainderf](#remainderf)|[remquo](#remquo)|
-|[remquof](#remquof)|[round](#round)|[roundf](#roundf)|
-|[rsqrt](#rsqrt)|[rsqrtf](#rsqrtf)|[scalb](#scalb)|
-|[scalbf](#scalbf)|[scalbn](#scalbn)|[scalbnf](#scalbnf)|
-|[signbit](#signbit)|[signbitf](#signbitf)|[sin](#sin)|
-|[sincos](#sincos)|[sincosf](#sincosf)|[sinf](#sinf)|
-|[sinh](#sinh)|[sinhf](#sinhf)|[sinpi](#sinpi)|
-|[sinpif](#sinpif)|[sqrt](#sqrt)|[sqrtf](#sqrtf)|
-|[tan](#tan)|[tanf](#tanf)|[tanh](#tanh)|
-|[tanhf](#tanhf)|[tanpi](#tanpi)|[tanpif](#tanpif)|
-|[tgamma](#tgamma)|[tgammaf](#tgammaf)|[trunc](#trunc)|
-|[truncf](#truncf)|
+:::row:::
+   :::column span="":::
+      [`acos`](#acos)\
+      [`acosf`](#acosf)\
+      [`acosh`](#acosh)\
+      [`acoshf`](#acoshf)\
+      [`asin`](#asin)\
+      [`asinf`](#asinf)\
+      [`asinh`](#asinh)\
+      [`asinhf`](#asinhf)\
+      [`atan`](#atan)\
+      [`atan2`](#atan2)\
+      [`atan2f`](#atan2f)\
+      [`atanf`](#atanf)\
+      [`atanh`](#atanh)\
+      [`atanhf`](#atanhf)\
+      [`cbrt`](#cbrt)\
+      [`cbrtf`](#cbrtf)\
+      [`ceil`](#ceil)\
+      [`ceilf`](#ceilf)\
+      [`copysign`](#copysign)\
+      [`copysignf`](#copysignf)\
+      [`cos`](#cos)\
+      [`cosf`](#cosf)\
+      [`cosh`](#cosh)\
+      [`coshf`](#coshf)\
+      [`cospi`](#cospi)\
+      [`cospif`](#cospif)\
+      [`erf`](#erf)\
+      [`erfc`](#erfc)\
+      [`erfcf`](#erfcf)\
+      [`erfcinv`](#erfcinv)\
+      [`erfcinvf`](#erfcinvf)\
+      [`erff`](#erff)\
+      [`erfinv`](#erfinv)
+   :::column-end:::
+   :::column span="":::
+      [`erfinvf`](#erfinvf)\
+      [`exp`](#exp)\
+      [`exp10`](#exp10)\
+      [`exp10f`](#exp10f)\
+      [`exp2`](#exp2)\
+      [`exp2f`](#exp2f)\
+      [`expf`](#expf)\
+      [`expm1`](#expm1)\
+      [`expm1f`](#expm1f)\
+      [`fabs`](#fabs)\
+      [`fabsf`](#fabsf)\
+      [`floor`](#floor)\
+      [`fdim`](#fdim)\
+      [`fdimf`](#fdimf)|\
+      [`floorf`](#floorf)\
+      [`fma`](#fma)\
+      [`fmaf`](#fmaf)\
+      [`fmax`](#fmax)\
+      [`fmaxf`](#fmaxf)\
+      [`fmin`](#fmin)\
+      [`fminf`](#fminf)\
+      [`fmod`](#fmod)\
+      [`fmodf`](#fmodf)\
+      [`fpclassify`](#fpclassify)\
+      [`frexp`](#frexp)\
+      [`frexpf`](#frexpf)\
+      [`hypot`](#hypot)\
+      [`hypotf`](#hypotf)\
+      [`ilogb`](#ilogb)\
+      [`ilogbf`](#ilogbf)\
+      [`isfinite`](#isfinite)\
+      [`isinf`](#isinf)\
+      [`isnan`](#isnan)
+   :::column-end:::
+   :::column span="":::
+      [`isnormal`](#isnormal)\
+      [`ldexp`](#ldexp)\
+      [`ldexpf`](#ldexpf)\
+      [`lgamma`](#lgamma)\
+      [`lgammaf`](#lgammaf)\
+      [`log`](#log)\
+      [`log10`](#log10)\
+      [`log10f`](#log10f)\
+      [`log1p`](#log1p)\
+      [`log1pf`](#log1pf)\
+      [`log2`](#log2)\
+      [`log2f`](#log2f)\
+      [`logb`](#logb)\
+      [`logbf`](#logbf)\
+      [`logf`](#logf)\
+      [`modf`](#modf)\
+      [`modff`](#modff)\
+      [`nan`](#nan)\
+      [`nanf`](#nanf)\
+      [`nearbyint`](#nearbyint)\
+      [`nearbyintf`](#nearbyintf)\
+      [`nextafter`](#nextafter)\
+      [`nextafterf`](#nextafterf)\
+      [`phi`](#phi)\
+      [`phif`](#phif)\
+      [`pow`](#pow)\
+      [`powf`](#powf)\
+      [`probit`](#probit)\
+      [`probitf`](#probitf)\
+      [`rcbrt`](#rcbrt)\
+      [`rcbrtf`](#rcbrtf)\
+      [`remainder`](#remainder)\
+      [`remainderf`](#remainderf)
+   :::column-end:::
+   :::column span="":::
+      [`remquo`](#remquo)\
+      [`remquof`](#remquof)\
+      [`round`](#round)\
+      [`roundf`](#roundf)\
+      [`rsqrt`](#rsqrt)\
+      [`rsqrtf`](#rsqrtf)\
+      [`scalb`](#scalb)\
+      [`scalbf`](#scalbf)\
+      [`scalbn`](#scalbn)\
+      [`scalbnf`](#scalbnf)\
+      [`signbit`](#signbit)\
+      [`signbitf`](#signbitf)\
+      [`sin`](#sin)\
+      [`sincos`](#sincos)\
+      [`sincosf`](#sincosf)\
+      [`sinf`](#sinf)\
+      [`sinh`](#sinh)\
+      [`sinhf`](#sinhf)\
+      [`sinpi`](#sinpi)\
+      [`sinpif`](#sinpif)\
+      [`sqrt`](#sqrt)\
+      [`sqrtf`](#sqrtf)\
+      [`tan`](#tan)\
+      [`tanf`](#tanf)\
+      [`tanh`](#tanh)\
+      [`tanhf`](#tanhf)\
+      [`tanpi`](#tanpi)\
+      [`tanpif`](#tanpif)\
+      [`tgamma`](#tgamma)\
+      [`tgammaf`](#tgammaf)\
+      [`trunc`](#trunc)\
+      [`truncf`](#truncf)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="acos"></a> acos
 

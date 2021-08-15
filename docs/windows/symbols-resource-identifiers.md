@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Identifiers (Symbols) (C++)"
 title: "Resource Identifiers (Symbols) (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.symbol.identifiers"]
@@ -15,7 +16,7 @@ IDC_EDITNAME = 5100
 
 Symbol names are most often referred to as identifiers.
 
-Symbols provide a descriptive way of referring to resources and user-interface objects, both in your source code and while you're working with them in the resource editors. You can view and manipulate symbols in one convenient place using the [Resource Symbols dialog box](../windows/viewing-resource-symbols.md).
+Symbols provide a descriptive way of referring to resources and user-interface objects, both in your source code and while you're working with them in the resource editors. You can view and manipulate symbols in one convenient place using the [Resource Symbols dialog box](./creating-new-symbols.md).
 
 As your application grows in size and sophistication, so does its number of resources and symbols. Tracking large numbers of symbols scattered throughout several files can be difficult. The **Resource Symbols** dialog box simplifies symbol management by offering a central tool through which you can:
 

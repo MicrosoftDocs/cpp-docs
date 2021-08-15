@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: deque Class"
 title: "deque Class"
 ms.date: "11/04/2016"
 f1_keywords: ["deque/std::deque", "deque/std::deque::allocator_type", "deque/std::deque::const_iterator", "deque/std::deque::const_pointer", "deque/std::deque::const_reference", "deque/std::deque::const_reverse_iterator", "deque/std::deque::difference_type", "deque/std::deque::iterator", "deque/std::deque::pointer", "deque/std::deque::reference", "deque/std::deque::reverse_iterator", "deque/std::deque::size_type", "deque/std::deque::value_type", "deque/std::deque::assign", "deque/std::deque::at", "deque/std::deque::back", "deque/std::deque::begin", "deque/std::deque::cbegin", "deque/std::deque::cend", "deque/std::deque::clear", "deque/std::deque::crbegin", "deque/std::deque::crend", "deque/std::deque::emplace", "deque/std::deque::emplace_back", "deque/std::deque::emplace_front", "deque/std::deque::empty", "deque/std::deque::end", "deque/std::deque::erase", "deque/std::deque::front", "deque/std::deque::get_allocator", "deque/std::deque::insert", "deque/std::deque::max_size", "deque/std::deque::pop_back", "deque/std::deque::pop_front", "deque/std::deque::push_back", "deque/std::deque::push_front", "deque/std::deque::rbegin", "deque/std::deque::rend", "deque/std::deque::resize", "deque/std::deque::shrink_to_fit", "deque/std::deque::size", "deque/std::deque::swap"]
@@ -46,19 +47,19 @@ Otherwise, inserting or erasing an element invalidates all iterators and referen
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[deque](#deque)|Constructs a `deque`. Several constructors are provided to set up the contents of the new `deque` in different ways: empty; loaded with a specified number of empty elements; contents moved or copied from another `deque`; contents copied or moved by using an iterator; and one element copied into the `deque` `count` times. Some of the constructors enable using a custom `allocator` to create elements.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the `deque` object.|
-|[const_iterator](#const_iterator)|A type that provides a random-access iterator that can access and read elements in the `deque` as `const`|
+|[const_iterator](#const_iterator)|A type that provides a random-access iterator that can access and read elements in the `deque` as **`const`**|
 |[const_pointer](#const_pointer)|A type that provides a pointer to an element in a `deque` as a `const.`|
 |[const_reference](#const_reference)|A type that provides a reference to an element in a `deque` for reading and other operations as a `const.`|
-|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a random-access iterator that can access and read elements in the `deque` as **const**. The deque is viewed in reverse. For more information, see [reverse_iterator Class](../standard-library/reverse-iterator-class.md)|
+|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a random-access iterator that can access and read elements in the `deque` as **`const`**. The deque is viewed in reverse. For more information, see [reverse_iterator Class](../standard-library/reverse-iterator-class.md)|
 |[difference_type](#difference_type)|A type that provides the difference between two random-access iterators that refer to elements in the same `deque`.|
 |[iterator](#iterator)|A type that provides a random-access iterator that can read or modify any element in a `deque`.|
 |[pointer](#pointer)|A type that provides a pointer to an element in a `deque`.|
@@ -69,21 +70,21 @@ Otherwise, inserting or erasing an element invalidates all iterators and referen
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[assign](#assign)|Erases elements from a `deque` and copies a new sequence of elements to the target `deque`.|
 |[at](#at)|Returns a reference to the element at a specified location in the `deque`.|
 |[back](#back)|Returns a reference to the last element of the `deque`.|
 |[begin](#begin)|Returns a random-access  iterator addressing the first element in the `deque`.|
 |[cbegin](#cbegin)|Returns a const iterator to the first element in the `deque`.|
-|[cend](#cend)|Returns a random-access **const** iterator that points just beyond the end of the `deque`.|
+|[cend](#cend)|Returns a random-access **`const`** iterator that points just beyond the end of the `deque`.|
 |[clear](#clear)|Erases all the elements of a `deque`.|
 |[crbegin](#crbegin)|Returns a random-access const iterator to the first element in a `deque` viewed in reverse order.|
 |[crend](#crend)|Returns a random-access const iterator to the first element in a `deque` viewed in reverse order.|
 |[emplace](#emplace)|Inserts an element constructed in place into the `deque` at a specified position.|
 |[emplace_back](#emplace_back)|Adds an element constructed in place to the end of the `deque`.|
 |[emplace_front](#emplace_front)|Adds an element constructed in place to the start of the `deque`.|
-|[empty](#empty)|Returns **true** if the `deque` contains zero elements, and **false** if it contains one or more elements.|
+|[empty](#empty)|Returns **`true`** if the `deque` contains zero elements, and **`false`** if it contains one or more elements.|
 |[end](#end)|Returns a random-access iterator that points just beyond the end of the `deque`.|
 |[erase](#erase)|Removes an element or a range of elements in a `deque` from specified positions.|
 |[front](#front)|Returns a reference to the first element in a `deque`.|
@@ -103,7 +104,7 @@ Otherwise, inserting or erasing an element invalidates all iterators and referen
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator&#91;&#93;](#op_at)|Returns a reference to the `deque` element at a specified position.|
 |[operator=](#op_eq)|Replaces the elements of the `deque` with a copy of another `deque`.|
@@ -235,7 +236,7 @@ The subscript (or position number) of the element to reference in the deque.
 
 If *pos* is greater than the size of the deque, `at` throws an exception.
 
-### Return Value
+### Remarks
 
 If the return value of `at` is assigned to a `const_reference`, the deque object cannot be modified. If the return value of `at` is assigned to a `reference`, the deque object can be modified.
 
@@ -370,7 +371,7 @@ The first element of c1 is now 20
 
 ## <a name="cbegin"></a> cbegin
 
-Returns a **const** iterator that addresses the first element in the range.
+Returns a **`const`** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -378,13 +379,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A **const** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **`const`** random-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range cannot be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -396,7 +397,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a> cend
 
-Returns a **const** iterator that addresses the location just beyond the last element in a range.
+Returns a **`const`** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const;
@@ -410,7 +411,7 @@ A random-access iterator that points just beyond the end of the range.
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -460,7 +461,7 @@ The size of the deque after clearing is 0
 
 ## <a name="const_iterator"></a> const_iterator
 
-A type that provides a random-access iterator that can access and read a **const** element in the deque.
+A type that provides a random-access iterator that can access and read a **`const`** element in the deque.
 
 ```cpp
 typedef implementation-defined const_iterator;
@@ -476,7 +477,7 @@ See the example for [back](#back).
 
 ## <a name="const_pointer"></a> const_pointer
 
-Provides a pointer to a **const** element in a deque.
+Provides a pointer to a **`const`** element in a deque.
 
 ```cpp
 typedef typename Allocator::const_pointer const_pointer;
@@ -488,7 +489,7 @@ A type `const_pointer` cannot be used to modify the value of an element. An [ite
 
 ## <a name="const_reference"></a> const_reference
 
-A type that provides a reference to a **const** element stored in a deque for reading and performing **const** operations.
+A type that provides a reference to a **`const`** element stored in a deque for reading and performing **`const`** operations.
 
 ```cpp
 typedef typename Allocator::const_reference const_reference;
@@ -532,7 +533,7 @@ The second element is 20
 
 ## <a name="const_reverse_iterator"></a> const_reverse_iterator
 
-A type that provides a random-access iterator that can read any **const** element in the deque.
+A type that provides a random-access iterator that can read any **`const`** element in the deque.
 
 ```cpp
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
@@ -1152,7 +1153,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the deque is empty; **false** if the deque is not empty.
+**`true`** if the deque is empty; **`false`** if the deque is not empty.
 
 ### Example
 

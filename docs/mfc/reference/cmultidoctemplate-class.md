@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMultiDocTemplate Class"
 title: "CMultiDocTemplate Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMultiDocTemplate", "AFXWIN/CMultiDocTemplate", "AFXWIN/CMultiDocTemplate::CMultiDocTemplate"]
@@ -16,6 +17,8 @@ class CMultiDocTemplate : public CDocTemplate
 ```
 
 ## Members
+
+The member functions for this class are virtual. See [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) and [CCmdTarget](../../mfc/reference/ccmdtarget-class.md) for documentation.
 
 ### Public Constructors
 
@@ -39,7 +42,7 @@ An MDI application can support more than one type of document, and documents of 
 
 The application uses the document template(s) when the user creates a new document. If the application supports more than one type of document, then the framework gets the names of the supported document types from the document templates and displays them in a list in the File New dialog box. Once the user has selected a document type, the application creates a document class object, a frame window object, and a view object and attaches them to each other.
 
-You do not need to call any member functions of `CMultiDocTemplate` except the constructor. The framework handles `CMultiDocTemplate` objects internally.
+You don't need to call any member functions of `CMultiDocTemplate` except the constructor. The framework handles `CMultiDocTemplate` objects internally.
 
 For more information on `CMultiDocTemplate`, see [Document Templates and the Document/View Creation Process](../../mfc/document-templates-and-the-document-view-creation-process.md).
 
@@ -74,7 +77,7 @@ CMultiDocTemplate(
 *nIDResource*<br/>
 Specifies the ID of the resources used with the document type. This may include menu, icon, accelerator table, and string resources.
 
-The string resource consists of up to seven substrings separated by the '\n' character (the '\n' character is needed as a place holder if a substring is not included; however, trailing '\n' characters are not necessary); these substrings describe the document type. For information on the substrings, see [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). This string resource is found in the application's resource file. For example:
+The string resource consists of up to seven substrings separated by the '\n' character (the '\n' character is needed as a place holder if a substring isn't included; however, trailing '\n' characters aren't necessary); these substrings describe the document type. For information on the substrings, see [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). This string resource is found in the application's resource file. For example:
 
 ```RC
 // MYCALC.RC
@@ -84,7 +87,7 @@ BEGIN
 END
 ```
 
-Note that the string begins with a '\n' character; this is because the first substring is not used for MDI applications and so is not included. You can edit this string using the string editor; the entire string appears as a single entry in the String Editor, not as seven separate entries.
+The string begins with a '\n' character because the first substring isn't used for MDI applications and so isn't included. You can edit this string using the string editor; the entire string appears as a single entry in the String Editor, not as seven separate entries.
 
 For more information about these resource types, see [Resource Editors](../../windows/resource-editors.md).
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HString Class"
 title: "HString Class"
 ms.date: "07/15/2019"
 ms.topic: "reference"
@@ -156,11 +157,11 @@ const wchar_t* GetRawBuffer(unsigned int* length) const;
 ### Parameters
 
 *length*
-Pointer to an **int** variable that receives the length of the data.
+Pointer to an **`int`** variable that receives the length of the data.
 
 ### Return Value
 
-A **const** pointer to the underlying string data.
+A **`const`** pointer to the underlying string data.
 
 ## <a name="hstring"></a> HString::HString
 
@@ -195,7 +196,7 @@ bool IsValid() const throw()
 
 ### Parameters
 
-**true** if the current `HString` object is not empty; otherwise, **false**.
+**`true`** if the current `HString` object is not empty; otherwise, **`false`**.
 
 ## <a name="makereference"></a> HString::MakeReference
 
@@ -280,7 +281,7 @@ The second parameter to compare.*rhs* can be an `HString` or `HStringReference` 
 
 ### Return Value
 
-**true** if the *lhs* and *rhs* parameters are equal; otherwise, **false**.
+**`true`** if the *lhs* and *rhs* parameters are equal; otherwise, **`false`**.
 
 ## <a name="operator-inequality"></a> HString::operator!= Operator
 
@@ -313,7 +314,7 @@ The second parameter to compare.*rhs* can be an `HString` or `HStringReference` 
 
 ### Return Value
 
-**true** if the *lhs* and *rhs* parameters are not equal; otherwise, **false**.
+**`true`** if the *lhs* and *rhs* parameters are not equal; otherwise, **`false`**.
 
 ## <a name="operator-less-than"></a> HString::operator&lt; Operator
 
@@ -335,7 +336,7 @@ The second parameter to compare. *rhs* can be a reference to an `HString`.
 
 ### Return Value
 
-**true** if the *lhs* parameter is less than the *rhs* parameter; otherwise, **false**.
+**`true`** if the *lhs* parameter is less than the *rhs* parameter; otherwise, **`false`**.
 
 ## <a name="release"></a> HString::Release
 

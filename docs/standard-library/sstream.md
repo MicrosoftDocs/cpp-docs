@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;sstream&gt;"
 title: "&lt;sstream&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<sstream>"]
@@ -62,10 +63,11 @@ void swap (
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*left*|Reference to an `sstream` object.|
-|*right*|Reference to an `sstream` object.|
+*left*\
+Reference to an `sstream` object.
+
+*right*\
+Reference to an `sstream` object.
 
 ## Remarks
 
@@ -75,18 +77,18 @@ Objects of type `char *` can use the functionality in [\<strstream>](../standard
 
 |Type name|Description|
 |-|-|
-|[istringstream](../standard-library/sstream-typedefs.md#istringstream)|Creates a type `basic_istringstream` specialized on a **char** template parameter.|
-|[ostringstream](../standard-library/sstream-typedefs.md#ostringstream)|Creates a type `basic_ostringstream` specialized on a **char** template parameter.|
-|[stringbuf](../standard-library/sstream-typedefs.md#stringbuf)|Creates a type `basic_stringbuf` specialized on a **char** template parameter.|
-|[stringstream](../standard-library/sstream-typedefs.md#stringstream)|Creates a type `basic_stringstream` specialized on a **char** template parameter.|
-|[wistringstream](../standard-library/sstream-typedefs.md#wistringstream)|Creates a type `basic_istringstream` specialized on a **wchar_t** template parameter.|
-|[wostringstream](../standard-library/sstream-typedefs.md#wostringstream)|Creates a type `basic_ostringstream` specialized on a **wchar_t** template parameter.|
-|[wstringbuf](../standard-library/sstream-typedefs.md#wstringbuf)|Creates a type `basic_stringbuf` specialized on a **wchar_t** template parameter.|
-|[wstringstream](../standard-library/sstream-typedefs.md#wstringstream)|Creates a type `basic_stringstream` specialized on a **wchar_t** template parameter.|
+|[istringstream](../standard-library/sstream-typedefs.md#istringstream)|Creates a type `basic_istringstream` specialized on a **`char`** template parameter.|
+|[ostringstream](../standard-library/sstream-typedefs.md#ostringstream)|Creates a type `basic_ostringstream` specialized on a **`char`** template parameter.|
+|[stringbuf](../standard-library/sstream-typedefs.md#stringbuf)|Creates a type `basic_stringbuf` specialized on a **`char`** template parameter.|
+|[stringstream](../standard-library/sstream-typedefs.md#stringstream)|Creates a type `basic_stringstream` specialized on a **`char`** template parameter.|
+|[wistringstream](../standard-library/sstream-typedefs.md#wistringstream)|Creates a type `basic_istringstream` specialized on a **`wchar_t`** template parameter.|
+|[wostringstream](../standard-library/sstream-typedefs.md#wostringstream)|Creates a type `basic_ostringstream` specialized on a **`wchar_t`** template parameter.|
+|[wstringbuf](../standard-library/sstream-typedefs.md#wstringbuf)|Creates a type `basic_stringbuf` specialized on a **`wchar_t`** template parameter.|
+|[wstringstream](../standard-library/sstream-typedefs.md#wstringstream)|Creates a type `basic_stringstream` specialized on a **`wchar_t`** template parameter.|
 
 ### Manipulators
 
-|||
+|Name|Description|
 |-|-|
 |[swap](../standard-library/sstream-functions.md#sstream_swap)|Exchanges the values between two `sstream` objects.|
 

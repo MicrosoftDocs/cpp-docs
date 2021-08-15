@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Dynamic Accessors"
 title: "Using Dynamic Accessors"
 ms.date: "10/18/2018"
 helpviewer_keywords: ["accessors [C++], dynamic", "dynamic accessors"]
@@ -12,9 +13,9 @@ The [DynamicConsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008S
 
 ## Using CDynamicAccessor
 
-[CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) allows you to access a data source when you have no knowledge of the database schema (the database's underlying structure). `CDynamicAccessor` methods get column information such as column names, count, and data type. You use this column information to create an accessor dynamically at run time. The column information is stored in a buffer that is created and managed by this class. Get data from the buffer using the [GetValue](../../data/oledb/cdynamicaccessor-getvalue.md) method.
+[CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) allows you to access a data source when you have no knowledge of the database schema (the database's underlying structure). `CDynamicAccessor` methods get column information such as column names, count, and data type. You use this column information to create an accessor dynamically at run time. The column information is stored in a buffer that is created and managed by this class. Get data from the buffer using the [GetValue](./cdynamicaccessor-class.md#getvalue) method.
 
-## Example
+## Example: CDynamic accessors
 
 ```cpp
 // Using_Dynamic_Accessors.cpp
@@ -84,9 +85,9 @@ int main(int argc, char* argv[] )
 
 [CDynamicStringAccessor](../../data/oledb/cdynamicstringaccessor-class.md) works like [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md), except in one important way. While `CDynamicAccessor` requests data in the native format reported by the provider, `CDynamicStringAccessor` requests that the provider fetch all data accessed from the data store as string data. The process is especially useful for simple tasks that don't require calculation of values in the data store, such as displaying or printing the data store's contents.
 
-Use `CDynamicStringAccessor` methods to get column information. You use this column information to create an accessor dynamically at run time. The column information is stored in a buffer created and managed by this class. Get data from the buffer using [CDynamicStringAccessor::GetString](../../data/oledb/cdynamicstringaccessor-getstring.md) or store it to the buffer using [CDynamicStringAccessor::SetString](../../data/oledb/cdynamicstringaccessor-setstring.md).
+Use `CDynamicStringAccessor` methods to get column information. You use this column information to create an accessor dynamically at run time. The column information is stored in a buffer created and managed by this class. Get data from the buffer using [CDynamicStringAccessor::GetString](./cdynamicstringaccessor-class.md#getstring) or store it to the buffer using [CDynamicStringAccessor::SetString](./cdynamicstringaccessor-class.md#setstring).
 
-## Example
+## Example: CDynamicStringAccessor
 
 ```cpp
 // Using_Dynamic_Accessors_b.cpp
@@ -144,7 +145,7 @@ int main(int argc, char* argv[] )
 
 [CDynamicParameterAccessor](../../data/oledb/cdynamicparameteraccessor-class.md) is similar to [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md), except that `CDynamicParameterAccessor` gets parameter information to be set by calling the [ICommandWithParameters](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) interface. The provider must support `ICommandWithParameters` for the consumer to use this class.
 
-The parameter information is stored in a buffer created and managed by this class. Get parameter data from the buffer by using [CDynamicParameterAccessor::GetParam](../../data/oledb/cdynamicparameteraccessor-getparam.md) and [CDynamicParameterAccessor::GetParamType](../../data/oledb/cdynamicparameteraccessor-getparamtype.md).
+The parameter information is stored in a buffer created and managed by this class. Get parameter data from the buffer by using [CDynamicParameterAccessor::GetParam](./cdynamicparameteraccessor-class.md#getparam) and [CDynamicParameterAccessor::GetParamType](./cdynamicparameteraccessor-class.md#getparamtype).
 
 For an example demonstrating how to use this class to execute a SQL Server stored procedure and get the output parameter values, see the [DynamicConsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) sample code in the [Microsoft VCSamples](https://github.com/Microsoft/VCSamples) repository on GitHub.
 

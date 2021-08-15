@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IErrorRecordsImpl Class"
 title: "IErrorRecordsImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::IErrorRecordsImpl", "ATL.IErrorRecordsImpl", "IErrorRecordsImpl", "GetErrorDescriptionString", "IErrorRecordsImpl.GetErrorDescriptionString", "IErrorRecordsImpl::GetErrorDescriptionString", "GetErrorGUID", "IErrorRecordsImpl.GetErrorGUID", "IErrorRecordsImpl::GetErrorGUID", "GetErrorHelpContext", "IErrorRecordsImpl::GetErrorHelpContext", "IErrorRecordsImpl.GetErrorHelpContext", "IErrorRecordsImpl::GetErrorHelpFile", "GetErrorHelpFile", "IErrorRecordsImpl.GetErrorHelpFile", "IErrorRecordsImpl.GetErrorSource", "GetErrorSource", "IErrorRecordsImpl::GetErrorSource", "IErrorRecordsImpl.AddErrorRecord", "AddErrorRecord", "IErrorRecordsImpl::AddErrorRecord", "ATL::IErrorRecordsImpl::GetBasicErrorInfo", "IErrorRecordsImpl::GetBasicErrorInfo", "GetBasicErrorInfo", "ATL.IErrorRecordsImpl.GetBasicErrorInfo", "IErrorRecordsImpl.GetBasicErrorInfo", "ATL::IErrorRecordsImpl::GetCustomErrorObject", "IErrorRecordsImpl::GetCustomErrorObject", "ATL.IErrorRecordsImpl.GetCustomErrorObject", "IErrorRecordsImpl.GetCustomErrorObject", "IErrorRecordsImpl.GetErrorInfo", "IErrorRecordsImpl::GetErrorInfo", "IErrorRecordsImpl::GetErrorParameters", "ATL.IErrorRecordsImpl.GetErrorParameters", "IErrorRecordsImpl.GetErrorParameters", "GetErrorParameters", "ATL::IErrorRecordsImpl::GetErrorParameters", "IErrorRecordsImpl::GetRecordCount", "ATL::IErrorRecordsImpl::GetRecordCount", "IErrorRecordsImpl.GetRecordCount", "ATL.IErrorRecordsImpl.GetRecordCount", "IErrorRecordsImpl::m_rgErrors", "IErrorRecordsImpl.m_rgErrors", "ATL.IErrorRecordsImpl.m_rgErrors", "m_rgErrors", "ATL::IErrorRecordsImpl::m_rgErrors"]
@@ -7,7 +8,7 @@ ms.assetid: dea8e938-c5d8-45ab-86de-eb8fbf534ffb
 ---
 # IErrorRecordsImpl Class
 
-Implements the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) interface, adding records to and retrieving records from a data member ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) of type **CAtlArray<**`RecordClass`**>**.
+Implements the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) interface, adding records to and retrieving records from a data member ([m_rgErrors](#rgerrors)) of type **CAtlArray<**`RecordClass`**>**.
 
 ## Syntax
 
@@ -32,7 +33,7 @@ A class that represents an OLE DB error object.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetErrorDescriptionString](#geterrordescriptionstring)|Gets the error description string from an error record.|
 |[GetErrorGUID](#geterrorguid)|Gets the error GUID from an error record.|
@@ -42,7 +43,7 @@ A class that represents an OLE DB error object.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddErrorRecord](#adderrorrecord)|Adds a record to the OLE DB error object.|
 |[GetBasicErrorInfo](#getbasicerrorinfo)|Returns basic information about the error, such as the return code and provider-specific error number.|
@@ -53,7 +54,7 @@ A class that represents an OLE DB error object.
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_rgErrors](#rgerrors)|An array of error records.|
 

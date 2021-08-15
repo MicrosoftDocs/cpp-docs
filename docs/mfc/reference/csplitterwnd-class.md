@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSplitterWnd Class"
 title: "CSplitterWnd Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSplitterWnd", "AFXEXT/CSplitterWnd", "AFXEXT/CSplitterWnd::CSplitterWnd", "AFXEXT/CSplitterWnd::ActivateNext", "AFXEXT/CSplitterWnd::CanActivateNext", "AFXEXT/CSplitterWnd::Create", "AFXEXT/CSplitterWnd::CreateScrollBarCtrl", "AFXEXT/CSplitterWnd::CreateStatic", "AFXEXT/CSplitterWnd::CreateView", "AFXEXT/CSplitterWnd::DeleteColumn", "AFXEXT/CSplitterWnd::DeleteRow", "AFXEXT/CSplitterWnd::DeleteView", "AFXEXT/CSplitterWnd::DoKeyboardSplit", "AFXEXT/CSplitterWnd::DoScroll", "AFXEXT/CSplitterWnd::DoScrollBy", "AFXEXT/CSplitterWnd::GetActivePane", "AFXEXT/CSplitterWnd::GetColumnCount", "AFXEXT/CSplitterWnd::GetColumnInfo", "AFXEXT/CSplitterWnd::GetPane", "AFXEXT/CSplitterWnd::GetRowCount", "AFXEXT/CSplitterWnd::GetRowInfo", "AFXEXT/CSplitterWnd::GetScrollStyle", "AFXEXT/CSplitterWnd::IdFromRowCol", "AFXEXT/CSplitterWnd::IsChildPane", "AFXEXT/CSplitterWnd::IsTracking", "AFXEXT/CSplitterWnd::RecalcLayout", "AFXEXT/CSplitterWnd::SetActivePane", "AFXEXT/CSplitterWnd::SetColumnInfo", "AFXEXT/CSplitterWnd::SetRowInfo", "AFXEXT/CSplitterWnd::SetScrollStyle", "AFXEXT/CSplitterWnd::SplitColumn", "AFXEXT/CSplitterWnd::SplitRow", "AFXEXT/CSplitterWnd::OnDraw", "AFXEXT/CSplitterWnd::OnDrawSplitter", "AFXEXT/CSplitterWnd::OnInvertTracker"]
@@ -516,10 +517,10 @@ virtual CWnd* GetActivePane(
 ### Parameters
 
 *pRow*<br/>
-A pointer to an **int** to retrieve the row number of the active pane.
+A pointer to an **`int`** to retrieve the row number of the active pane.
 
 *pCol*<br/>
-A pointer to an **int** to retrieve the column number of the active pane.
+A pointer to an **`int`** to retrieve the column number of the active pane.
 
 ### Return Value
 
@@ -558,10 +559,10 @@ void GetColumnInfo(
 Specifies a column.
 
 *cxCur*<br/>
-A reference to an **int** to be set to the current width of the column.
+A reference to an **`int`** to be set to the current width of the column.
 
 *cxMin*<br/>
-A reference to an **int** to be set to the current minimum width of the column.
+A reference to an **`int`** to be set to the current minimum width of the column.
 
 ## <a name="getpane"></a> CSplitterWnd::GetPane
 
@@ -614,10 +615,10 @@ void GetRowInfo(
 Specifies a row.
 
 *cyCur*<br/>
-Reference to **int** to be set to the current height of the row in pixels.
+Reference to **`int`** to be set to the current height of the row in pixels.
 
 *cyMin*<br/>
-Reference to **int** to be set to the current minimum height of the row in pixels.
+Reference to **`int`** to be set to the current minimum height of the row in pixels.
 
 ### Remarks
 
@@ -688,10 +689,10 @@ BOOL IsChildPane(
 A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object to be tested.
 
 *pRow*<br/>
-A pointer to an **int** in which to store row number.
+A pointer to an **`int`** in which to store row number.
 
 *pCol*<br/>
-A pointer to an **int** in which to store a column number.
+A pointer to an **`int`** in which to store a column number.
 
 ### Return Value
 

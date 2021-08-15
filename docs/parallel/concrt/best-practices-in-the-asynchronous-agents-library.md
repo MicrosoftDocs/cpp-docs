@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Best Practices in the Asynchronous Agents Library"
 title: "Best Practices in the Asynchronous Agents Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["best practices, Asynchronous Agents Library", "Asynchronous Agents Library, best practices", "Asynchronous Agents Library, practices to avoid", "practices to avoid, Asynchronous Agents Library"]
@@ -28,7 +29,7 @@ This document contains the following sections:
 
 The Agents Library provides alternatives to shared state by letting you connect isolated components through an asynchronous message-passing mechanism. Asynchronous agents are most effective when they isolate their internal state from other components. By isolating state, multiple components do not typically act on shared data. State isolation can enable your application to scale because it reduces contention on shared memory. State isolation also reduces the chance of deadlock and race conditions because components do not have to synchronize access to shared data.
 
-You typically isolate state in an agent by holding data members in the `private` or `protected` sections of the agent class and by using message buffers to communicate state changes. The following example shows the `basic_agent` class, which derives from [concurrency::agent](../../parallel/concrt/reference/agent-class.md). The `basic_agent` class uses two message buffers to communicate with external components. One message buffer holds incoming messages; the other message buffer holds outgoing messages.
+You typically isolate state in an agent by holding data members in the **`private`** or **`protected`** sections of the agent class and by using message buffers to communicate state changes. The following example shows the `basic_agent` class, which derives from [concurrency::agent](../../parallel/concrt/reference/agent-class.md). The `basic_agent` class uses two message buffers to communicate with external components. One message buffer holds incoming messages; the other message buffer holds outgoing messages.
 
 [!code-cpp[concrt-simple-agent#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-asynchronous-agents-library_1.cpp)]
 

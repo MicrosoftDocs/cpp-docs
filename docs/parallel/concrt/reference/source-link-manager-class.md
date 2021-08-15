@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: source_link_manager Class"
 title: "source_link_manager Class"
 ms.date: "11/04/2016"
 f1_keywords: ["source_link_manager", "AGENTS/concurrency::source_link_manager", "AGENTS/concurrency::source_link_manager::source_link_manager", "AGENTS/concurrency::source_link_manager::add", "AGENTS/concurrency::source_link_manager::begin", "AGENTS/concurrency::source_link_manager::contains", "AGENTS/concurrency::source_link_manager::count", "AGENTS/concurrency::source_link_manager::reference", "AGENTS/concurrency::source_link_manager::register_target_block", "AGENTS/concurrency::source_link_manager::release", "AGENTS/concurrency::source_link_manager::remove", "AGENTS/concurrency::source_link_manager::set_bound"]
@@ -27,8 +28,8 @@ The network link registry.
 
 |Name|Description|
 |----------|-----------------|
-|`const_pointer`|A type that provides a pointer to a `const` element in a `source_link_manager` object.|
-|`const_reference`|A type that provides a reference to a `const` element stored in a `source_link_manager` object for reading and performing const operations.|
+|`const_pointer`|A type that provides a pointer to a **`const`** element in a `source_link_manager` object.|
+|`const_reference`|A type that provides a reference to a **`const`** element stored in a `source_link_manager` object for reading and performing const operations.|
 |`iterator`|A type that provides an iterator that can read or modify any element in the `source_link_manager` object.|
 |`type`|The type of link registry being managed by the `source_link_manager` object.|
 
@@ -111,7 +112,7 @@ A pointer to a block that is to be searched for in the `source_link_manager` obj
 
 ### Return Value
 
-**true** if the specified block was found, **false** otherwise.
+**`true`** if the specified block was found, **`false`** otherwise.
 
 ## <a name="count"></a> count
 
@@ -169,7 +170,7 @@ A pointer to a block to be removed, if found.
 
 ### Return Value
 
-**true** if the link was found and removed, **false** otherwise.
+**`true`** if the link was found and removed, **`false`** otherwise.
 
 ## <a name="set_bound"></a> set_bound
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3028"
 title: "Compiler Error C3028"
 ms.date: "11/04/2016"
 f1_keywords: ["C3028"]
@@ -71,8 +72,7 @@ MyClass::MyClass(int x) {
    // OK
       ;
 
-   #pragma omp parallel reduction(+: x, g_i, MyClass::x_public,
-   MyClass::x_private)
+   #pragma omp parallel reduction(+: x, g_i, MyClass::x_public, MyClass::x_private)
    // OK
       ;
 

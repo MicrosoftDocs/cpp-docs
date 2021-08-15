@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: checked_array_iterator Class"
 title: "checked_array_iterator Class"
 ms.date: "03/27/2019"
 f1_keywords: ["iterator/checked_array_iterator", "iterator/stdext::checked_array_iterator::difference_type", "iterator/stdext::checked_array_iterator::pointer", "iterator/stdext::checked_array_iterator::reference", "iterator/stdext::checked_array_iterator::base"]
@@ -25,7 +26,7 @@ This class is defined in the [stdext](../standard-library/stdext-namespace.md) n
 
 For more information and example code on the checked iterator feature, see [Checked Iterators](../standard-library/checked-iterators.md).
 
-## Example
+## Examples
 
 The following sample shows how to define and use a checked array iterator.
 
@@ -75,8 +76,6 @@ int main() {
 ( 0 1 2 3 4 )
 */
 ```
-
-## Example
 
 To avoid the need for the `checked_array_iterator` class when using C++ Standard Library algorithms, consider using a `vector` instead of a dynamically allocated array. The following example demonstrates how to do this.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3016"
 title: "Compiler Error C3016"
 ms.date: "11/04/2016"
 f1_keywords: ["C3016"]
@@ -9,7 +10,7 @@ ms.assetid: 3423467e-e8bb-4f35-b4db-7925cafa74c1
 
 'var' : index variable in OpenMP 'for' statement must have signed integral type
 
-The index variable in an OpenMP `for` statement must be a signed integral type.
+The index variable in an OpenMP **`for`** statement must be a signed integral type.
 
 The following sample generates C3016:
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _heapadd"
 title: "_heapadd"
 ms.date: "11/04/2016"
 api_name: ["_heapadd"]

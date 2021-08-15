@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: delegate  (C++/CLI and C++/CX)"
 title: "delegate  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
@@ -39,7 +40,7 @@ delegate-type-identifier
 ### Parameters
 
 *access*<br/>
-(optional) The accessibility of the delegate, which can be **public** (the default) or **private**. The function prototype can also be qualified with the **const** or **volatile** keywords.
+(optional) The accessibility of the delegate, which can be **`public`** (the default) or **`private`**. The function prototype can also be qualified with the **`const`** or **`volatile`** keywords.
 
 *return-type*<br/>
 The return type of the function prototype.
@@ -78,7 +79,7 @@ function_declaration
 *function_declaration*<br/>
 The signature of the function that can be bound to the delegate. The return type of a delegate can be any managed type. For interoperability reasons, it is recommended that the return type of a delegate be a CLS type.
 
-To define an unbound delegate, the first parameter in *function_declaration* should be the type of the **this** pointer for the object.
+To define an unbound delegate, the first parameter in *function_declaration* should be the type of the **`this`** pointer for the object.
 
 ### Remarks
 

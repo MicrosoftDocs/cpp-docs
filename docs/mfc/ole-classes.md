@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE Classes"
 title: "OLE Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.ole"]
@@ -21,24 +22,24 @@ The OLE classes work with the other application framework classes to provide eas
 
 The following categories of classes support ActiveX:
 
-- [OLE Container Classes](../mfc/ole-container-classes.md)
+- [OLE Container Classes](ole-container-classes.md)
 
-- [OLE Server Classes](../mfc/ole-server-classes.md)
+- [OLE Server Classes](ole-server-classes.md)
 
-- [OLE Drag-and-Drop and Data Transfer Classes](../mfc/ole-drag-and-drop-and-data-transfer-classes.md)
+- [OLE Drag-and-Drop and Data Transfer Classes](ole-drag-and-drop-and-data-transfer-classes.md)
 
-- [OLE Common Dialog Classes](../mfc/ole-common-dialog-classes.md)
+- [OLE Common Dialog Classes](ole-common-dialog-classes.md)
 
-- [OLE Automation Classes](../mfc/ole-automation-classes.md)
+- [OLE Automation Classes](ole-automation-classes.md)
 
-- [OLE Control Classes](../mfc/ole-control-classes.md)
+- [OLE Control Classes](ole-control-classes.md)
 
-- [Active Document Classes](../mfc/active-document-classes.md)
+- [Active Document Classes](active-document-classes.md)
 
-- [OLE-Related Classes](../mfc/ole-related-classes.md)
+- [OLE-Related Classes](ole-related-classes.md)
 
-To see the inheritance of a class, use the [Class Hierarchy Chart](../mfc/hierarchy-chart.md).
+To see the inheritance of a class, use the [Class Hierarchy Chart](hierarchy-chart.md).
 
 ## See also
 
-[Class Overview](../mfc/class-library-overview.md)
+[Class Overview](class-library-overview.md)

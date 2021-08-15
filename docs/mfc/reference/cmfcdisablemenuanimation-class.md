@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCDisableMenuAnimation Class"
 title: "CMFCDisableMenuAnimation Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCDisableMenuAnimation", "AFXPOPUPMENU/CMFCDisableMenuAnimation", "AFXPOPUPMENU/CMFCDisableMenuAnimation::Restore"]
@@ -19,24 +20,21 @@ class CMFCDisableMenuAnimation
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCDisableMenuAnimation::CMFCDisableMenuAnimation`|Constructs a `CMFCDisableMenuAnimation` object.|
 |`CMFCDisableMenuAnimation::~CMFCDisableMenuAnimation`|Destructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCDisableMenuAnimation::Restore](#restore)|Restores the previous animation that the framework used to display a pop-up menu.|
 
 ### Data Members
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCDisableMenuAnimation::m_animType`|Stores the previous pop-up menu animation type.|
 
 ### Remarks

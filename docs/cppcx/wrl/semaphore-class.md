@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Semaphore Class"
 title: "Semaphore Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Command Routing"
 title: "Command Routing"
 ms.date: "09/06/2019"
 helpviewer_keywords: ["MFC, command routing", "command handling [MFC], routing commands", "handlers [MFC]", "handlers, command [MFC]", "command routing"]
@@ -34,4 +35,4 @@ Where numbered entries in the second column of the preceding table mention other
 
 ## See also
 
-[How the Framework Calls a Handler](../mfc/how-the-framework-calls-a-handler.md)
+[How the Framework Calls a Handler](how-the-framework-calls-a-handler.md)

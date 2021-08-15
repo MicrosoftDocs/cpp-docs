@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: single_link_registry Class"
 title: "single_link_registry Class"
 ms.date: "11/04/2016"
 f1_keywords: ["single_link_registry", "AGENTS/concurrency::single_link_registry", "AGENTS/concurrency::single_link_registry::single_link_registry", "AGENTS/concurrency::single_link_registry::add", "AGENTS/concurrency::single_link_registry::begin", "AGENTS/concurrency::single_link_registry::contains", "AGENTS/concurrency::single_link_registry::count", "AGENTS/concurrency::single_link_registry::remove"]
@@ -100,7 +101,7 @@ A pointer to a block that is to be searched for in the `single_link_registry` ob
 
 ### Return Value
 
-**true** if the link was found, **false** otherwise.
+**`true`** if the link was found, **`false`** otherwise.
 
 ## <a name="count"></a> count
 
@@ -129,7 +130,7 @@ A pointer to a block to be removed, if found.
 
 ### Return Value
 
-**true** if the link was found and removed, **false** otherwise.
+**`true`** if the link was found and removed, **`false`** otherwise.
 
 ## <a name="ctor"></a> single_link_registry
 

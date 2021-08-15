@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Subscripting"
 title: "Subscripting"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["subscript operator [C++], overloaded", "arrays [C++], subscripting", "subscripting [C++]", "operators [C++], overloading", "operator overloading [C++], examples", "subscript operator"]
@@ -10,7 +11,7 @@ The subscript operator (**[ ]**), like the function-call operator, is considered
 
 ## Example
 
-The following example demonstrates how to create a vector of type **int** that implements bounds checking:
+The following example demonstrates how to create a vector of type **`int`** that implements bounds checking:
 
 ```cpp
 // subscripting.cpp

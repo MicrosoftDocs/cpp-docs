@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _com_ptr_t::Release"
 title: "_com_ptr_t::Release"
 ms.date: "11/04/2016"
 f1_keywords: ["_com_ptr_t.Release", "_com_ptr_t::Release"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding ATL Support to Your MFC Project"
 title: "Adding ATL Support to Your MFC Project"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.codewiz.adding.atl.mfc"]
@@ -12,7 +13,7 @@ If you have already created an MFC-based application, then you can add support f
 > [!NOTE]
 > This support applies only to simple COM objects added to an MFC executable or DLL project. You can add other COM objects (including ActiveX controls) to MFC projects, but the objects might not operate as expected.
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. In Solution Explorer, right-click the project node.
 
@@ -22,7 +23,7 @@ If you have already created an MFC-based application, then you can add support f
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### To add ATL support to your MFC project
 

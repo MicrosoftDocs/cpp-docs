@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: discard_block_engine Class"
 title: "discard_block_engine Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::discard_block_engine"]
@@ -29,10 +30,12 @@ The base engine type.
 
 ## Members
 
-||||
-|-|-|-|
-|`discard_block_engine::discard_block_engine`|`discard_block_engine::base`|`discard_block_engine::discard`|
-|`discard_block_engine::operator()`|`discard_block_engine::base_type`|`discard_block_engine::seed`|
+`discard_block_engine::discard_block_engine`\
+`discard_block_engine::base`\
+`discard_block_engine::base_type`\
+`discard_block_engine::discard`\
+`discard_block_engine::operator()`\
+`discard_block_engine::seed`
 
 For more information about engine members, see [\<random>](../standard-library/random.md).
 

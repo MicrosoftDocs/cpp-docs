@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: offsetof Macro"
 title: "offsetof Macro"
 ms.date: "11/04/2016"
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
@@ -35,7 +36,7 @@ Name of the member in the parent data structure for which to determine the offse
 
 ## Remarks
 
-The **offsetof** macro returns the offset in bytes of *memberName* from the beginning of the structure specified by *structName* as a value of type **size_t**. You can specify types with the **struct** keyword.
+The **offsetof** macro returns the offset in bytes of *memberName* from the beginning of the structure specified by *structName* as a value of type **size_t**. You can specify types with the **`struct`** keyword.
 
 > [!NOTE]
 > **offsetof** is not a function and cannot be described using a C prototype.

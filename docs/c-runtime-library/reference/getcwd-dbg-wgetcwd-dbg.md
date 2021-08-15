@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _getcwd_dbg, _wgetcwd_dbg"
 title: "_getcwd_dbg, _wgetcwd_dbg"
 ms.date: "11/04/2016"
 api_name: ["_wgetcwd_dbg", "_getcwd_dbg"]
@@ -38,7 +39,7 @@ wchar_t *_wgetcwd_dbg(
 Storage location for the path.
 
 *maxlen*<br/>
-Maximum length of the path in characters: **char** for **_getcwd_dbg** and **wchar_t** for **_wgetcwd_dbg**.
+Maximum length of the path in characters: **`char`** for **_getcwd_dbg** and **`wchar_t`** for **_wgetcwd_dbg**.
 
 *blockType*<br/>
 Requested type of the memory block: **_CLIENT_BLOCK** or **_NORMAL_BLOCK**.

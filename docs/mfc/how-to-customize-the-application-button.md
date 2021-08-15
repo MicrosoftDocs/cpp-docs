@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Customize the Application Button"
 title: "How to: Customize the Application Button"
 ms.date: "09/07/2019"
 helpviewer_keywords: ["application button [MFC], customizing"]
@@ -8,7 +9,7 @@ ms.assetid: ebb11180-ab20-43df-a234-801feca9eb38
 
 When you click the Application button, a menu of commands is displayed. Typically, the menu contains file-related commands such as **Open**, **Save**, **Print**, and **Exit**.
 
-![MFC Ribbon Application Button](../mfc/media/application_button.png "MFC Ribbon Application Button")
+![MFC Ribbon Application Button.](../mfc/media/application_button.png "MFC Ribbon Application Button")
 
 To customize the Application button, open it in the **Properties** window (in **Resource View**), modify its properties, and then preview the ribbon control.
 
@@ -49,4 +50,4 @@ The Application menu does not appear on the design surface. To view it, you must
 
 ## See also
 
-[Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
+[Ribbon Designer (MFC)](ribbon-designer-mfc.md)

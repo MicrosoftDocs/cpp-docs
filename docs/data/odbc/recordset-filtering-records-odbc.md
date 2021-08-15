@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Filtering Records (ODBC)"
 title: "Recordset: Filtering Records (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data [MFC], filtering", "recordsets [C++], filtering", "filtering recordsets", "ODBC recordsets [C++], filtering records", "filters [C++], recordset object"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;type_traits&gt; functions"
 title: "&lt;type_traits&gt; functions"
 ms.date: "11/04/2016"
 ms.assetid: dce4492f-f3e4-4d5e-bdb4-5875321254ec
@@ -6,13 +7,20 @@ helpviewer_keywords: ["std::is_assignable", "std::is_copy_assignable", "std::is_
 ---
 # &lt;type_traits&gt; functions
 
-||||
-|-|-|-|
-|[is_assignable](#is_assignable)|[is_copy_assignable](#is_copy_assignable)|[is_copy_constructible](#is_copy_constructible)|
-|[is_default_constructible](#is_default_constructible)|[is_move_assignable](#is_move_assignable)|[is_move_constructible](#is_move_constructible)|
-|[is_nothrow_move_assignable](#is_nothrow_move_assignable)|[is_nothrow_swappable](#is_nothrow_swappable)|[is_nothrow_swappable_with](#is_nothrow_swappable_with)|
-|[is_swappable](#is_swappable)|[is_swappable_with](#is_swappable_with)|[is_trivially_copy_assignable](#is_trivially_copy_assignable)|
-|[is_trivially_move_assignable](#is_trivially_move_assignable)|[is_trivially_move_constructible](#is_trivially_move_constructible)|
+[is_assignable](#is_assignable)\
+[is_copy_assignable](#is_copy_assignable)\
+[is_copy_constructible](#is_copy_constructible)\
+[is_default_constructible](#is_default_constructible)\
+[is_move_assignable](#is_move_assignable)\
+[is_move_constructible](#is_move_constructible)\
+[is_nothrow_move_assignable](#is_nothrow_move_assignable)\
+[is_nothrow_swappable](#is_nothrow_swappable)\
+[is_nothrow_swappable_with](#is_nothrow_swappable_with)\
+[is_swappable](#is_swappable)\
+[is_swappable_with](#is_swappable_with)\
+[is_trivially_copy_assignable](#is_trivially_copy_assignable)\
+[is_trivially_move_assignable](#is_trivially_move_assignable)\
+[is_trivially_move_constructible](#is_trivially_move_constructible)
 
 ## <a name="is_assignable"></a> is_assignable
 
@@ -33,7 +41,7 @@ The type of the object that provides the value.
 
 ### Remarks
 
-The unevaluated expression `declval<To>() = declval<From>()` must be well-formed. Both *From* and *To* must be complete types, **void**, or arrays of unknown bound.
+The unevaluated expression `declval<To>() = declval<From>()` must be well-formed. Both *From* and *To* must be complete types, **`void`**, or arrays of unknown bound.
 
 ## <a name="is_copy_assignable"></a> is_copy_assignable
 
@@ -121,7 +129,7 @@ The type to query.
 
 ### Remarks
 
-An instance of the type predicate holds true if the type *T* is a class type that has a default constructor, otherwise it holds false. This is equivalent to the predicate `is_constructible<T>`. Type *T* must be a complete type, **void**, or an array of unknown bound.
+An instance of the type predicate holds true if the type *T* is a class type that has a default constructor, otherwise it holds false. This is equivalent to the predicate `is_constructible<T>`. Type *T* must be a complete type, **`void`**, or an array of unknown bound.
 
 ### Example
 
@@ -195,7 +203,7 @@ A type predicate that evaluates to true if the type *T* can be constructed by us
 
 ## <a name="is_nothrow_move_assignable"></a> is_nothrow_move_assignable
 
-Tests whether type has a **nothrow** move assignment operator.
+Tests whether type has a **`nothrow`** move assignment operator.
 
 ```cpp
 template <class Ty>

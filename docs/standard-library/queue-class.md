@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: queue Class"
 title: "queue Class"
 ms.date: "11/04/2016"
 f1_keywords: ["queue/std::queue::container_type", "queue/std::queue::size_type", "queue/std::queue::value_type", "queue/std::queue::back", "queue/std::queue::empty", "queue/std::queue::front", "queue/std::queue::pop", "queue/std::queue::push", "queue/std::queue::size"]
@@ -44,13 +45,13 @@ There are three types of container adaptors defined by the C++ Standard Library:
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[queue](#queue)|Constructs a `queue` that is empty or that is a copy of a base container object.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[container_type](#container_type)|A type that provides the base container to be adapted by the `queue`.|
 |[size_type](#size_type)|An unsigned integer type that can represent the number of elements in a `queue`.|
@@ -58,7 +59,7 @@ There are three types of container adaptors defined by the C++ Standard Library:
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[back](#back)|Returns a reference to the last and most recently added element at the back of the `queue`.|
 |[empty](#empty)|Tests if the `queue` is empty.|
@@ -141,7 +142,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the queue is empty; **false** if the queue is nonempty.
+**`true`** if the queue is empty; **`false`** if the queue is nonempty.
 
 ### Example
 
@@ -347,7 +348,7 @@ explicit queue(const container_type& right);
 ### Parameters
 
 *right*\
-The **const** container of which the constructed queue is to be a copy.
+The **`const`** container of which the constructed queue is to be a copy.
 
 ### Remarks
 

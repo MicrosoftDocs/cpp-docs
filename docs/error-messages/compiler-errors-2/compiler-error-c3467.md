@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3467"
 title: "Compiler Error C3467"
 ms.date: "11/04/2016"
 f1_keywords: ["C3467"]
@@ -13,7 +14,7 @@ The compiler found more than one forward type declaration for the same type. Onl
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Example
+## Examples
 
 The following sample creates a component.
 
@@ -22,8 +23,6 @@ The following sample creates a component.
 // compile with: /LD /clr
 public ref class R {};
 ```
-
-## Example
 
 The following sample generates C3467.
 

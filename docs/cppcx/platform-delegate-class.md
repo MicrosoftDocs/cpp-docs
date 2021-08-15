@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Delegate Class"
 title: "Platform::Delegate Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use combinable to Improve Performance"
 title: "How to: Use combinable to Improve Performance"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["combinable class, example", "improving parallel performance with combinable [Concurrency Runtime]"]

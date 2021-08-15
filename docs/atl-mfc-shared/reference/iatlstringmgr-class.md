@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAtlStringMgr Class"
 title: "IAtlStringMgr Class"
 ms.date: "10/18/2018"
 f1_keywords: ["IAtlStringMgr", "ATLSIMPSTR/ATL::IAtlStringMgr", "ATLSIMPSTR/ATL::Allocate", "ATLSIMPSTR/ATL::Clone", "ATLSIMPSTR/ATL::Free", "ATLSIMPSTR/ATL::GetNilString", "ATLSIMPSTR/ATL::Reallocate"]
@@ -19,7 +20,7 @@ __interface IAtlStringMgr
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[Allocate](#allocate)|Call this method to allocate a new string data structure.|
 |[Clone](#clone)|Call this method to return a pointer to a new string manager for use with another instance of `CSimpleStringT`.|
@@ -81,7 +82,7 @@ Returns a copy of the `IAtlStringMgr` object.
 
 ### Remarks
 
-Commonly called by the framework when a string manager is needed for a new string. In most cases, the **this** pointer is returned.
+Commonly called by the framework when a string manager is needed for a new string. In most cases, the **`this`** pointer is returned.
 
 However, if the memory manager does not support being used by multiple instances of `CSimpleStringT`, a pointer to a sharable string manager should be returned.
 

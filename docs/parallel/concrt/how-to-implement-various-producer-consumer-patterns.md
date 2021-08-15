@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Implement Various Producer-Consumer Patterns"
 title: "How to: Implement Various Producer-Consumer Patterns"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["producer-consumer patterns, implementing [Concurrency Runtime]", "implementing producer-consumer patterns [Concurrency Runtime]"]
@@ -14,7 +15,7 @@ Both examples in this topic use agents, message blocks, and message-passing func
 
 For more information about asynchronous agents, see [Asynchronous Agents](../../parallel/concrt/asynchronous-agents.md). For more information about message blocks and message-passing functions, see [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md) and [Message Passing Functions](../../parallel/concrt/message-passing-functions.md).
 
-## Example
+## Example: Send series of numbers to consumer agent
 
 In this example, the producer agent sends a series of numbers to the consumer agent. The consumer receives each of these numbers and computes their average. The application writes the average to the console.
 
@@ -28,7 +29,7 @@ This example produces the following output.
 The average is 50.
 ```
 
-## Example
+## Example: Send series of stock quotes to consumer agent
 
 In this example, the producer agent sends a series of stock quotes to the consumer agent. The consumer agent periodically reads the current quote and prints it to the console.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: reference_wrapper Class"
 title: "reference_wrapper Class"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::reference_wrapper", "type_traits/std::reference_wrapper", "xrefwrap/std::reference_wrapper", "type_traits/std::reference_wrapper::get", "type_traits/std::reference_wrapper::operator()", "functional/std::reference_wrapper::result_type", "functional/std::reference_wrapper::type", "functional/std::reference_wrapper::get", "functional/std::reference_wrapper::operator()"]
@@ -39,26 +40,26 @@ The helper functions [std::ref](functional-functions.md#ref) and [std::cref](fun
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[reference_wrapper](#reference_wrapper)|Constructs a `reference_wrapper`.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[result_type](#result_type)|The weak result type of the wrapped reference.|
 |[type](#type)|The type of the wrapped reference.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[get](#get)|Obtains the wrapped reference.|
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator Ty&amp;](#op_ty_amp)|Gets a pointer to the wrapped reference.|
 |[operator()](#op_call)|Calls the wrapped reference.|

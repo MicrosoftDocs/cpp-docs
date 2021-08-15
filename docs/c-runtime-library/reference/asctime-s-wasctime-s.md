@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: asctime_s, _wasctime_s"
 title: "asctime_s, _wasctime_s"
 ms.date: "4/2/2020"
 api_name: ["_wasctime_s", "asctime_s", "_o__wasctime_s", "_o_asctime_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["asctime_s", "_wasctime_s", "_tasctime_s"]
@@ -47,7 +48,7 @@ A pointer to a buffer to store the character string result. This function assume
 The size of the buffer used to store the result.
 
 *tmSource*<br/>
-Time/date structure. This function assumes a pointer to a valid **struct** **tm** object.
+Time/date structure. This function assumes a pointer to a valid **`struct`** **tm** object.
 
 ## Return Value
 
@@ -84,7 +85,7 @@ The **asctime** function converts a time stored as a structure to a character st
 
 The converted character string is also adjusted according to the local time zone settings. See the [time, _time32, _time64](time-time32-time64.md), [_ftime, _ftime32, _ftime64](ftime-ftime32-ftime64.md), and [localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md) functions for information about configuring the local time and the [_tzset](tzset.md) function for information about defining the time zone environment and global variables.
 
-The string result produced by **asctime_s** contains exactly 26 characters and has the form `Wed Jan 02 02:03:55 1980\n\0`. A 24-hour clock is used. All fields have a constant width. The new line character and the null character occupy the last two positions of the string. The value passed in as the second parameter should be at least this big. If it is less, an error code, **EINVAL**, will be returned.
+The string result produced by **asctime_s** contains exactly 26 characters and has the form `Wed Jan  2 02:03:55 1980\n\0`. A 24-hour clock is used. All fields have a constant width. The new line character and the null character occupy the last two positions of the string. The value passed in as the second parameter should be at least this big. If it is less, an error code, **EINVAL**, will be returned.
 
 **_wasctime_s** is a wide-character version of **asctime_s**. **_wasctime_s** and **asctime_s** behave identically otherwise.
 

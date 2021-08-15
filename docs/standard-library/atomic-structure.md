@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: atomic Structure"
 title: "atomic Structure"
 ms.date: "04/20/2018"
 f1_keywords: ["atomic/std::atomic"]
@@ -32,14 +33,14 @@ struct atomic;
 |[atomic::operator&#124;=](#op_or_eq)|Performs a bitwise or on a specified value and the stored value. Used only by integral specializations.|
 |[atomic::operator^=](#op_xor_eq)|Performs a bitwise exclusive or on a specified value and the stored value. Used only by integral specializations.|
 |**Functions**||
-|[compare_exchange_strong](#compare_exchange_strong)|Performs an *atomic_compare_and_exchange* operation on **this** and returns the result.|
-|[compare_exchange_weak](#compare_exchange_weak)|Performs a *weak_atomic_compare_and_exchange* operation on **this** and returns the result.|
+|[compare_exchange_strong](#compare_exchange_strong)|Performs an *atomic_compare_and_exchange* operation on **`this`** and returns the result.|
+|[compare_exchange_weak](#compare_exchange_weak)|Performs a *weak_atomic_compare_and_exchange* operation on **`this`** and returns the result.|
 |[fetch_add](#fetch_add)|Adds a specified value to the stored value.|
 |[fetch_and](#fetch_and)|Performs a bitwise and on a specified value and the stored value.|
 |[fetch_or](#fetch_or)|Performs a bitwise or on a specified value and the stored value.|
 |[fetch_sub](#fetch_sub)|Subtracts a specified value from the stored value.|
 |[fetch_xor](#fetch_xor)|Performs a bitwise exclusive or on a specified value and the stored value.|
-|[is_lock_free](#is_lock_free)|Specifies whether atomic operations on **this** are *lock free*. An atomic type is *lock free* if no atomic operations on that type use locks.|
+|[is_lock_free](#is_lock_free)|Specifies whether atomic operations on **`this`** are *lock free*. An atomic type is *lock free* if no atomic operations on that type use locks.|
 |[load](#load)|Reads and returns the stored value.|
 |[store](#store)|Uses a specified value to replace the stored value.|
 
@@ -47,19 +48,32 @@ struct atomic;
 
 The type *Ty* must be *trivially copyable*. That is, using [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) to copy its bytes must produce a valid *Ty* object that compares equal to the original object. The [compare_exchange_weak](#compare_exchange_weak) and [compare_exchange_strong](#compare_exchange_strong) member functions use [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md) to determine whether two *Ty* values are equal. These functions will not use a *Ty*-defined `operator==`. The member functions of `atomic` use `memcpy` to copy values of type *Ty*.
 
-A partial specialization, **atomic\<Ty \*>**, exists for all pointer types. The specialization enables the addition of an offset to the managed pointer value or the subtraction of an offset from it. The arithmetic operations take an argument of type `ptrdiff_t` and adjust that argument according to the size of *Ty* to be consistent with ordinary address arithmetic.
+A partial specialization, `atomic<Ty*>`, exists for all pointer types. The specialization enables the addition of an offset to the managed pointer value or the subtraction of an offset from it. The arithmetic operations take an argument of type `ptrdiff_t` and adjust that argument according to the size of *Ty* to be consistent with ordinary address arithmetic.
 
-A specialization exists for every integral type except **bool**. Each specialization provides a rich set of methods for atomic arithmetic and logical operations.
+A specialization exists for every integral type except **`bool`**. Each specialization provides a rich set of methods for atomic arithmetic and logical operations.
 
-||||
-|-|-|-|
-|**atomic\<char>**|**atomic\<signed char>**|**atomic\<unsigned char>**|
-|**atomic\<char16_t>**|**atomic\<char32_t>**|**atomic\<wchar_t>**|
-|**atomic\<short>**|**atomic\<unsigned short>**|**atomic\<int>**|
-|**atomic\<unsigned int>**|**atomic\<long>**|**atomic\<unsigned long>**|
-|**atomic\<long long>**|**atomic\<unsigned long long>**|
+:::row:::
+   :::column:::
+      `atomic<char>`\
+      `atomic<signed char>`\
+      `atomic<unsigned char>`\
+      `atomic<char16_t>`\
+      `atomic<char32_t>`\
+      `atomic<wchar_t>`\
+      `atomic<short>`
+   :::column-end:::
+   :::column:::
+      `atomic<unsigned short>`\
+      `atomic<int>`\
+      `atomic<unsigned int>`\
+      `atomic<long>`\
+      `atomic<unsigned long>`\
+      `atomic<long long>`\
+      `atomic<unsigned long long>`
+   :::column-end:::
+:::row-end:::
 
-Integral specializations are derived from corresponding `atomic_integral` types. For example, **atomic\<unsigned int>** is derived from `atomic_uint`.
+Integral specializations are derived from corresponding `atomic_integral` types. For example, `atomic<unsigned int>` is derived from `atomic_uint`.
 
 ## Requirements
 
@@ -333,7 +347,7 @@ Second `memory_order` argument.
 
 ### Return Value
 
-A **bool** that indicates the result of the value comparison.
+A **`bool`** that indicates the result of the value comparison.
 
 ### Remarks
 
@@ -388,7 +402,7 @@ Second `memory_order` argument.
 
 ### Return Value
 
-A **bool** that indicates the result of the value comparison.
+A **`bool`** that indicates the result of the value comparison.
 
 ### Remarks
 
@@ -649,7 +663,7 @@ A `memory_order` constraint.
 
 ### Remarks
 
-This member function atomically stores *Value* in `*this`, within the memory constraints that are specified by *Order*.
+This member function atomically stores *Value* in **`*this`**, within the memory constraints that are specified by *Order*.
 
 ## See also
 

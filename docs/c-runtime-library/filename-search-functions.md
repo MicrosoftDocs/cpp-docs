@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Filename Search Functions"
 title: "Filename Search Functions"
 ms.date: "11/04/2016"
 api_location: ["msvcr100.dll", "msvcr120.dll", "msvcr90.dll", "msvcrt.dll", "msvcr80.dll", "msvcr110.dll", "msvcr110_clr0400.dll"]
@@ -69,7 +70,7 @@ System file. Not ordinarily seen with the **DIR** command, unless the **/A** or 
 
 You can nest the `_find` functions. For example, if a call to `_findfirst` or `_findnext` finds the file that is a subdirectory, a new search can be initiated with another call to `_findfirst` or `_findnext`.
 
-`_wfindfirst` and `_wfindnext` are wide-character versions of `_findfirst` and `_findnext`. The structure argument of the wide-character versions has the `_wfinddata_t` data type, which is defined in IO.h and in Wchar.h. The fields of this data type are the same as those of the `_finddata_t` data type, except that in `_wfinddata_t` the name field is of type `wchar_t` instead of type `char`. Otherwise `_wfindfirst` and `_wfindnext` behave identically to `_findfirst` and `_findnext`.
+`_wfindfirst` and `_wfindnext` are wide-character versions of `_findfirst` and `_findnext`. The structure argument of the wide-character versions has the `_wfinddata_t` data type, which is defined in IO.h and in Wchar.h. The fields of this data type are the same as those of the `_finddata_t` data type, except that in `_wfinddata_t` the name field is of type **`wchar_t`** instead of type **`char`**. Otherwise `_wfindfirst` and `_wfindnext` behave identically to `_findfirst` and `_findnext`.
 
 `_findfirst` and `_findnext` use the 64-bit time type. If you must use the old 32-bit time type, you can define `_USE_32BIT_TIME_T`. The versions of these functions that have the `32` suffix in their names use the 32-bit time type, and those with the `64` suffix use the 64-bit time type.
 
@@ -81,11 +82,11 @@ Functions `_findfirst32i64`, `_findnext32i64`, `_wfindfirst32i64`, and `_wfindne
 |---------------|---------------|--------------------|
 |`_finddata_t`, `_wfinddata_t`|`__time64_t`|`_fsize_t`|
 |`_finddata32_t`, `_wfinddata32_t`|`__time32_t`|`_fsize_t`|
-|`__finddata64_t`, `__wfinddata64_t`|`__time64_t`|`__int64`|
-|`_finddata32i64_t`, `_wfinddata32i64_t`|`__time32_t`|`__int64`|
+|`__finddata64_t`, `__wfinddata64_t`|`__time64_t`|**`__int64`**|
+|`_finddata32i64_t`, `_wfinddata32i64_t`|`__time32_t`|**`__int64`**|
 |`_finddata64i32_t`, `_wfinddata64i32_t`|`__time64_t`|`_fsize_t`|
 
-`_fsize_t` is a `typedef` for `unsigned long` (32 bits).
+`_fsize_t` is a **`typedef`** for **`unsigned long`** (32 bits).
 
 ## Example
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: task_continuation_context Class"
 title: "task_continuation_context Class"
 ms.date: "11/04/2016"
 f1_keywords: ["task_continuation_context", "PPLTASKS/concurrency::task_continuation_context", "PPLTASKS/concurrency::task_continuation_context::get_current_winrt_context", "PPLTASKS/concurrency::task_continuation_context::use_arbitrary", "PPLTASKS/concurrency::task_continuation_context::use_current", "PPLTASKS/concurrency::task_continuation_context::use_default", "PPLTASKS/concurrency::task_continuation_context::use_synchronous_execution"]

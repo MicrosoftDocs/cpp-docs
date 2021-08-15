@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reflection (C++/CLI)"
 title: "Reflection (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["typeid keyword [C++]", "reflection [C++}, about reflection", "metadata, reflection", "GetType method", ".NET Framework [C++], reflection", "data types [C++], reflection", "reflection [C++}", "plug-ins [C++]", "reflection [C++}, plug-ins", "assemblies [C++], enumerating data types in", "public types [C++]", "reflection [C++], external assemblies", "assemblies [C++]", "data types [C++], enumerating", "public members [C++]"]
@@ -221,7 +222,7 @@ Compatible classes are then instantiated with the <xref:System.Activator.CreateI
 
 Note that the <xref:System.Reflection.Assembly.Load%2A> method does not accept assembly names that include the file extension. The main function in the application trims any provided extensions, so the following code example works in either case.
 
-### Example
+### Example app
 
 The following code defines the application that accepts plug-ins. An assembly name must be provided as the first argument. This assembly should contain at least one public <xref:System.Windows.Forms.Form> derived type.
 
@@ -267,7 +268,7 @@ int main() {
 }
 ```
 
-### Example
+### Example plug-ins
 
 The following code defines three classes derived from <xref:System.Windows.Forms.Form>. When the name of the resulting assembly name is passed to the executable in the previous listing, each of these three classes will be discovered and instantiated, despite the fact that they were all unknown to the hosting application at compile time.
 

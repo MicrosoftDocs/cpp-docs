@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Example: Displaying a Dialog Box via a Menu Command"
 title: "Example: Displaying a Dialog Box via a Menu Command"
 ms.date: "09/07/2019"
 helpviewer_keywords: ["MFC dialog boxes [MFC], examples", "MFC dialog boxes [MFC], displaying", "modeless dialog boxes [MFC], displaying", "dialog boxes [MFC], MFC", "modal dialog boxes [MFC], displaying", "examples [MFC], dialog boxes", "menu items [MFC], examples"]
@@ -12,7 +13,7 @@ This topic contains procedures to:
 
 - Display a modeless dialog box through a menu command.
 
-Both sample procedures are for MFC applications and will work in an application you create with the [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md).
+Both sample procedures are for MFC applications and will work in an application you create with the [MFC Application Wizard](reference/mfc-application-wizard.md).
 
 The procedures use the following names and values:
 
@@ -25,7 +26,7 @@ The procedures use the following names and values:
 
 ### To display a modal dialog box
 
-1. Create the menu command; see [Creating Menus or Menu Items](../windows/creating-a-menu.md).
+1. Create the menu command; see [Creating Menus or Menu Items](../windows/menu-editor.md).
 
 1. Create the dialog box; see [Starting the Dialog Editor](../windows/creating-a-new-dialog-box.md).
 
@@ -99,5 +100,5 @@ The procedures use the following names and values:
 
 ## See also
 
-[Dialog Boxes](../mfc/dialog-boxes.md)<br/>
-[Modal and Modeless Dialog Boxes](../mfc/modal-and-modeless-dialog-boxes.md)
+[Dialog Boxes](dialog-boxes.md)<br/>
+[Modal and Modeless Dialog Boxes](modal-and-modeless-dialog-boxes.md)

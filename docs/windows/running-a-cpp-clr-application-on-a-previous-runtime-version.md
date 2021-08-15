@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Running a C++ /clr Application on a Previous Runtime Version"
 title: "Running a C++ -clr Application on a Previous Runtime Version"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["applications [C++], runtime version specified", "versions [C++]", "app.config files, runtime version specified", "compatibility [C++], runtime version specified", "backward compatibility [C++], runtime version specified", "application deployment [C++], runtime version specified", "common language runtime [C++], version specified", "deploying applications [C++], runtime version specified"]

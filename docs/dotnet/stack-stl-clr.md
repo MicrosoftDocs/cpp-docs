@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: stack (STL/CLR)"
 title: "stack (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -300,7 +301,7 @@ bool empty();
 
 ### Remarks
 
-The member function returns true for an empty controlled sequence. It is equivalent to [stack::size (STL/CLR)](../dotnet/stack-size-stl-clr.md)`() == 0`. You use it to test whether the stack is empty.
+The member function returns true for an empty controlled sequence. It is equivalent to [stack::size (STL/CLR)](#size)`() == 0`. You use it to test whether the stack is empty.
 
 ### Example
 
@@ -522,7 +523,7 @@ Container adapter to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
+The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
 
 ### Example
 
@@ -709,7 +710,7 @@ size_type size();
 
 ### Remarks
 
-The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [stack::empty (STL/CLR)](../dotnet/stack-empty-stl-clr.md)`()`.
+The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [stack::empty (STL/CLR)](#empty)`()`.
 
 ### Example
 
@@ -1186,7 +1187,7 @@ Right container to compare.
 
 ### Remarks
 
-The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->`[stack::size (STL/CLR)](../dotnet/stack-size-stl-clr.md)`() <` `right->size()` You use it to test whether *left* is ordered before *right* when the two stacks are compared element by element.
+The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->`[stack::size (STL/CLR)](#size)`() <` `right->size()` You use it to test whether *left* is ordered before *right* when the two stacks are compared element by element.
 
 ### Example
 

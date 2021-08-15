@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: istream_iterator Class"
 title: "istream_iterator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["iterator/std::istream_iterator", "iterator/std::istream_iterator::char_type", "iterator/std::istream_iterator::istream_type", "iterator/std::istream_iterator::traits_type"]
@@ -26,7 +27,7 @@ class istream_iterator
 The type of object to be extracted from the input stream.
 
 *CharType*\
-The type that represents the character type for the `istream_iterator`. This argument is optional and the default value is **char**.
+The type that represents the character type for the `istream_iterator`. This argument is optional and the default value is **`char`**.
 
 *Traits*\
 The type that represents the character type for the `istream_iterator`. This argument is optional and the default value is `char_traits`< `CharType`>.

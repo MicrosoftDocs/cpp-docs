@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: transmit_as"
 title: "transmit_as (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.transmit_as"]
@@ -58,11 +59,9 @@ struct _TREE_NODE_TYPE * right;
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**typedef**|
+|**Applies to**|**`typedef`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

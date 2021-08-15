@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating a Simple Consumer"
 title: "Creating a Simple Consumer"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB consumers, creating"]
@@ -6,13 +7,13 @@ ms.assetid: ae32d657-72ea-4db8-9839-75cb5cff68ae
 ---
 # Creating a Simple Consumer
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually. For more information, see [Creating a Consumer Without Using a Wizard](creating-a-consumer-without-using-a-wizard.md).
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Use the **ATL Project Wizard** and **ATL OLE DB Consumer Wizard** to generate an OLE DB Templates consumer.
 
@@ -75,7 +76,7 @@ Next, use the **ATL OLE DB Consumer Wizard** to add an OLE DB consumer object.
 
 1. The wizard completes the names for `Class` and **.h file** based on the name of the table, view, or stored procedure that you selected. You can edit these names if you want.
 
-1. Clear the **Attributed** check box so that the wizard creates the consumer code using [OLE DB Template classes](../../data/oledb/ole-db-consumer-templates-reference.md) instead of the default [OLE DB consumer attributes](../../windows/ole-db-consumer-attributes.md).
+1. Clear the **Attributed** check box so that the wizard creates the consumer code using [OLE DB Template classes](../../data/oledb/ole-db-consumer-templates-reference.md) instead of the default [OLE DB consumer attributes](../../windows/attributes/ole-db-consumer-attributes.md).
 
 1. Under **Type**, select **Command**.
 

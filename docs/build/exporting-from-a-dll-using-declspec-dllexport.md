@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exporting from a DLL Using __declspec(dllexport)"
 title: "Exporting from a DLL Using __declspec(dllexport)"
 ms.date: "05/06/2019"
 f1_keywords: ["dllexport"]
@@ -7,13 +8,13 @@ ms.assetid: a35e25e8-7263-4a04-bad4-00b284458679
 ---
 # Exporting from a DLL Using __declspec(dllexport)
 
-You can export data, functions, classes, or class member functions from a DLL using the **__declspec(dllexport)** keyword. **__declspec(dllexport)** adds the export directive to the object file so you do not need to use a .def file.
+You can export data, functions, classes, or class member functions from a DLL using the **`__declspec(dllexport)`** keyword. **`__declspec(dllexport)`** adds the export directive to the object file so you do not need to use a .def file.
 
-This convenience is most apparent when trying to export decorated C++ function names. Because there is no standard specification for name decoration, the name of an exported function might change between compiler versions. If you use **__declspec(dllexport)**, recompiling the DLL and dependent .exe files is necessary only to account for any naming convention changes.
+This convenience is most apparent when trying to export decorated C++ function names. Because there is no standard specification for name decoration, the name of an exported function might change between compiler versions. If you use **`__declspec(dllexport)`**, recompiling the DLL and dependent .exe files is necessary only to account for any naming convention changes.
 
-Many export directives, such as ordinals, NONAME, and PRIVATE, can be made only in a .def file, and there is no way to specify these attributes without a .def file. However, using **__declspec(dllexport)** in addition to using a .def file does not cause build errors.
+Many export directives, such as ordinals, NONAME, and PRIVATE, can be made only in a .def file, and there is no way to specify these attributes without a .def file. However, using **`__declspec(dllexport)`** in addition to using a .def file does not cause build errors.
 
-To export functions, the **__declspec(dllexport)** keyword must appear to the left of the calling-convention keyword, if a keyword is specified. For example:
+To export functions, the **`__declspec(dllexport)`** keyword must appear to the left of the calling-convention keyword, if a keyword is specified. For example:
 
 ```
 __declspec(dllexport) void __cdecl Function1(void);
@@ -29,13 +30,13 @@ class __declspec(dllexport) CExampleExport : public CObject
 > [!NOTE]
 > `__declspec(dllexport)` cannot be applied to a function with the `__clrcall` calling convention.
 
-When building your DLL, you typically create a header file that contains the function prototypes and/or classes you are exporting and add **__declspec(dllexport)** to the declarations in the header file. To make your code more readable, define a macro for **__declspec(dllexport)** and use the macro with each symbol you are exporting:
+When building your DLL, you typically create a header file that contains the function prototypes and/or classes you are exporting and add **`__declspec(dllexport)`** to the declarations in the header file. To make your code more readable, define a macro for **`__declspec(dllexport)`** and use the macro with each symbol you are exporting:
 
 ```
 #define DllExport   __declspec( dllexport )
 ```
 
-**__declspec(dllexport)** stores function names in the DLL's export table. If you want to optimize the table's size, see [Exporting Functions from a DLL by Ordinal Rather Than by Name](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
+**`__declspec(dllexport)`** stores function names in the DLL's export table. If you want to optimize the table's size, see [Exporting Functions from a DLL by Ordinal Rather Than by Name](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
 
 ## What do you want to do?
 

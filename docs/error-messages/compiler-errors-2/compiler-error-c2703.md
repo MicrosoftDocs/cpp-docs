@@ -1,15 +1,20 @@
 ---
 title: "Compiler Error C2703"
-ms.date: "11/04/2016"
+description: "Describes Microsoft C/C++ compiler error C2703."
+ms.date: 08/24/2020
 f1_keywords: ["C2703"]
 helpviewer_keywords: ["C2703"]
 ms.assetid: 384295c3-643d-47ae-a9a6-865b3036aa84
 ---
 # Compiler Error C2703
 
-illegal __leave statement
+> illegal `__leave` statement
 
-A `__leave` statement must be inside a `__try` block.
+## Remarks
+
+A **`__leave`** statement must be inside a **`__try`** block.
+
+## Example
 
 The following sample generates C2703:
 
@@ -24,3 +29,9 @@ int main() {
    __finally {}
 }
 ```
+
+## See also
+
+[The `__leave` keyword](../../cpp/try-except-statement.md#__leave)\
+[`try-except` statement](../../cpp/try-except-statement.md)\
+[`try-finally` statement](../../cpp/try-finally-statement.md)

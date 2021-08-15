@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linkage"
 title: "Linkage"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["linkage [C++]", "linkage [C++], identifier names and scope"]
@@ -10,4 +11,4 @@ Identifier names can refer to different identifiers in different scopes. An iden
 
 ## See also
 
-[Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
+[Using extern to Specify Linkage](../cpp/extern-cpp.md)

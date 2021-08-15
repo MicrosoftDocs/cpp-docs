@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CArchiveException Class"
 title: "CArchiveException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CArchiveException", "AFX/CArchiveException", "AFX/CArchiveException::CArchiveException", "AFX/CArchiveException::m_cause", "AFX/CArchiveException::m_strFileName"]
@@ -82,7 +83,7 @@ int m_cause;
 
 ### Remarks
 
-This data member is a public variable of type **int**. Its values are defined by a `CArchiveException` enumerated type. The enumerators and their meanings are as follows:
+This data member is a public variable of type **`int`**. Its values are defined by a `CArchiveException` enumerated type. The enumerators and their meanings are as follows:
 
 - `CArchiveException::none` No error occurred.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: context_unblock_unbalanced Class"
 title: "context_unblock_unbalanced Class"
 ms.date: "11/04/2016"
 f1_keywords: ["context_unblock_unbalanced", "CONCRT/concurrency::context_unblock_unbalanced", "CONCRT/concurrency::context_unblock_unbalanced::context_unblock_unbalanced"]

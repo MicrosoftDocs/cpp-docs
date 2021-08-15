@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: swap Function (auto_gcroot)"
 title: "swap Function (auto_gcroot)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -64,4 +65,4 @@ s1 = 'string two', s2 = 'string one'
 ## See also
 
 [auto_gcroot](../dotnet/auto-gcroot.md)<br/>
-[auto_gcroot::swap](../dotnet/auto-gcroot-swap.md)
+[auto_gcroot::swap](./auto-gcroot-class.md#swap)

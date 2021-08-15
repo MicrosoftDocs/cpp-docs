@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: toascii, __toascii"
 title: "toascii, __toascii"
 ms.date: "11/04/2016"
 api_name: ["__toascii"]

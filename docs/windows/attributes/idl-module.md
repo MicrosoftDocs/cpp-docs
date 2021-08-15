@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: idl_module"
 title: "idl_module (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.idl_module"]
@@ -70,9 +71,7 @@ void FuncName(int i);
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

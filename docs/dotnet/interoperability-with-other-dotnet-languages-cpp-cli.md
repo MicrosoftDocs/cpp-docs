@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Interoperability with Other .NET Languages (C++/CLI)"
 title: "Interoperability with Other .NET Languages (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["C++, indexers", "indexers, consuming C#", "as C# keyword [C++]", "is C# keyword [C++]", "lock statement", "lock C# keyword [C++]"]
@@ -56,9 +57,7 @@ public class MainClass {
 */
 ```
 
-### Example
-
-This Visual C++ program consumes the indexer.
+This C++/CLI program consumes the indexer.
 
 ```cpp
 // consume_cs_indexers_2.cpp
@@ -73,6 +72,8 @@ int main() {
       Console::WriteLine("Element #{0} = {1}", i, ic->default[i]);
 }
 ```
+
+The example produces this output:
 
 ```Output
 Element #0 = 21

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft-specific modifiers"
 title: "Microsoft-specific modifiers"
 ms.date: "08/16/2018"
 ms.assetid: 22c7178c-f854-47fa-9de6-07d23fda58e1
@@ -17,7 +18,7 @@ This section describes Microsoft-specific extensions to C++ in the following are
 
 ## Microsoft-specific keywords
 
-Many of the Microsoft-specific keywords can be used to modify declarators to form derived types. For more information about declarators, see [Declarators](overview-of-declarators.md).
+Many of the Microsoft-specific keywords can be used to modify declarators to form derived types. For more information about declarators, see [Declarators](./declarations-and-definitions-cpp.md).
 
 |Keyword|Meaning|Used to Form Derived Types?|
 |-------------|-------------|---------------------------------|

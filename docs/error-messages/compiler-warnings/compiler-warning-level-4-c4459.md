@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4459"
 title: "Compiler Warning (level 4) C4459"
 ms.date: "11/04/2016"
 f1_keywords: ["C4459"]
@@ -28,7 +29,7 @@ int main() {
 }
 ```
 
-One way to fix this issue is to create a namespace for your globals, but not use a `using` directive to bring that namespace into scope, so all references must use the unambiguous qualified names:
+One way to fix this issue is to create a namespace for your globals, but not use a **`using`** directive to bring that namespace into scope, so all references must use the unambiguous qualified names:
 
 ```cpp
 // C4459_namespace.cpp

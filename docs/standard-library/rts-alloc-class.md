@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: rts_alloc Class"
 title: "rts_alloc Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::rts_alloc", "allocators/stdext::rts_alloc::allocate", "allocators/stdext::rts_alloc::deallocate", "allocators/stdext::rts_alloc::equals"]
@@ -18,9 +19,8 @@ class rts_alloc
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Cache*|The type of cache instances contained in the array. This can be [cache_chunklist Class](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md), or [cache_suballoc](../standard-library/cache-suballoc-class.md).|
+*Cache*\
+The type of cache instances contained in the array. It can be [`cache_chunklist`](../standard-library/cache-chunklist-class.md), [`cache_freelist`](../standard-library/cache-freelist-class.md), or [`cache_suballoc`](../standard-library/cache-suballoc-class.md).
 
 ## Remarks
 
@@ -50,9 +50,8 @@ void *allocate(std::size_t count);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*count*|The number of elements in the array to be allocated.|
+*count*\
+The number of elements in the array to be allocated.
 
 ### Return Value
 
@@ -72,10 +71,11 @@ void deallocate(void* ptr, std::size_t count);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*ptr*|A pointer to the first object to be deallocated from storage.|
-|*count*|The number of objects to be deallocated from storage.|
+*ptr*\
+A pointer to the first object to be deallocated from storage.
+
+*count*\
+The number of objects to be deallocated from storage.
 
 ### Remarks
 
@@ -91,14 +91,15 @@ bool equals(const sync<_Cache>& _Other) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*_Cache*|The cache object associated with the filter.|
-|*_Other*|The cache object to compare for equality.|
+*_Cache*\
+The cache object associated with the filter.
+
+*_Other*\
+The cache object to compare for equality.
 
 ### Remarks
 
-**true** if the result of `caches[0].equals(other.caches[0])`; otherwise, **false**. `caches` represents the array of cache objects.
+**`true`** if the result of `caches[0].equals(other.caches[0])`; otherwise, **`false`**. `caches` represents the array of cache objects.
 
 ## See also
 

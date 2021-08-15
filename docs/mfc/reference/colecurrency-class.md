@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleCurrency Class"
 title: "COleCurrency Class"
 ms.date: "08/29/2019"
 f1_keywords: ["COleCurrency", "AFXDISP/COleCurrency", "AFXDISP/COleCurrency::COleCurrency", "AFXDISP/COleCurrency::Format", "AFXDISP/COleCurrency::GetStatus", "AFXDISP/COleCurrency::ParseCurrency", "AFXDISP/COleCurrency::SetCurrency", "AFXDISP/COleCurrency::SetStatus", "AFXDISP/COleCurrency::m_cur", "AFXDISP/COleCurrency::m_status"]
@@ -105,7 +106,7 @@ All of these constructors create new `COleCurrency` objects initialized to the s
 
 - COleCurrency() Constructs a `COleCurrency` object initialized to 0 (zero).
 
-- COleCurrency(`cySrc`) Constructs a `COleCurrency` object from a [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy~r1) value.
+- COleCurrency(`cySrc`) Constructs a `COleCurrency` object from a [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy-r1) value.
 
 - COleCurrency(`curSrc`) Constructs a `COleCurrency` object from an existing `COleCurrency` object. The new object has the same status as the source object.
 
@@ -113,7 +114,7 @@ All of these constructors create new `COleCurrency` objects initialized to the s
 
 - COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency` object from the specified numerical components. If the absolute value of the fractional part is greater than 10,000, the appropriate adjustment is made to the units. Note that the units and fractional part are specified by signed long values.
 
-For more information, see the [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy~r1) and [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) entries in the Windows SDK.
+For more information, see the [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy-r1) and [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) entries in the Windows SDK.
 
 ### Example
 
@@ -213,14 +214,14 @@ For more information on operations that may set the status to invalid, see the f
 
 ## <a name="m_cur"></a> COleCurrency::m_cur
 
-The underlying [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy~r1) structure for this `COleCurrency` object.
+The underlying [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy-r1) structure for this `COleCurrency` object.
 
 ### Remarks
 
 > [!CAUTION]
 > Changing the value in the `CURRENCY` structure accessed by the pointer returned by this function will change the value of this `COleCurrency` object. It does not change the status of this `COleCurrency` object.
 
-For more information, see the [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy~r1) entry in the Windows SDK.
+For more information, see the [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy-r1) entry in the Windows SDK.
 
 ## <a name="m_status"></a> COleCurrency::m_status
 
@@ -291,7 +292,7 @@ A brief description of each operator follows:
 
 - **operator =(** *varSrc* **)** If the conversion of the `VARIANT` value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a currency ( `VT_CY`) is successful, the converted value is copied into this `COleCurrency` object and its status is set to valid. If the conversion is not successful, the value of the `COleCurrency` object is set to 0 and its status to invalid.
 
-For more information, see the [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy~r1) and [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) entries in the Windows SDK.
+For more information, see the [CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy-r1) and [VARIANT](/windows/win32/api/oaidl/ns-oaidl-variant) entries in the Windows SDK.
 
 ### Example
 

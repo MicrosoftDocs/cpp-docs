@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Basic CString Operations"
 title: "Basic CString Operations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CString objects, basic operations", "string literals, CString operations", "literal strings, CString operations", "CString objects", "string comparison, CString operations", "characters, accessing in CStrings"]
@@ -18,7 +19,7 @@ This topic explains the following basic [CString](../atl-mfc-shared/reference/cs
 
 - [Converting CString objects](#_core_converting_cstring_objects)
 
-`Class CString` is based on class template [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md). `CString` is a **typedef** of `CStringT`. More exactly, `CString` is a **typedef** of an *explicit specialization* of `CStringT`, which is a common way to use a class template to define a class. Similarly defined classes are `CStringA` and `CStringW`.
+`Class CString` is based on class template [CStringT Class](../atl-mfc-shared/reference/cstringt-class.md). `CString` is a **`typedef`** of `CStringT`. More exactly, `CString` is a **`typedef`** of an *explicit specialization* of `CStringT`, which is a common way to use a class template to define a class. Similarly defined classes are `CStringA` and `CStringW`.
 
 `CString`, `CStringA`, and `CStringW` are defined in atlstr.h. `CStringT` is defined in cstringt.h.
 
@@ -53,7 +54,7 @@ To concatenate two `CString` objects, use the concatenation operators (+ or +=),
 
 [!code-cpp[NVC_ATLMFC_Utilities#185](../atl-mfc-shared/codesnippet/cpp/basic-cstring-operations_3.cpp)]
 
-At least one argument to the concatenation operators (+ or +=) must be a `CString` object, but you can use a constant character string (for example, `"big"`) or a **char** (for example, 'x') for the other argument.
+At least one argument to the concatenation operators (+ or +=) must be a `CString` object, but you can use a constant character string (for example, `"big"`) or a **`char`** (for example, 'x') for the other argument.
 
 ## <a name="_core_comparing_cstring_objects"></a> Comparing CString Objects
 
@@ -85,7 +86,7 @@ CString cs("meow");
 wcout << (const wchar_t*) cs << endl;
 ```
 
-Without the cast, `cs` is treated as a `void*` and `wcout` prints the address of the object. This behavior is caused by subtle interactions between template argument deduction and overload resolution which are in themselves correct and conformant with the C++ standard.
+Without the cast, `cs` is treated as a **`void*`** and `wcout` prints the address of the object. This behavior is caused by subtle interactions between template argument deduction and overload resolution which are in themselves correct and conformant with the C++ standard.
 
 ## See also
 

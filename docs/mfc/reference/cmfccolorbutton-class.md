@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCColorButton Class"
 title: "CMFCColorButton Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCColorButton", "AFXCOLORBUTTON/CMFCColorButton", "AFXCOLORBUTTON/CMFCColorButton::CMFCColorButton", "AFXCOLORBUTTON/CMFCColorButton::EnableAutomaticButton", "AFXCOLORBUTTON/CMFCColorButton::EnableOtherButton", "AFXCOLORBUTTON/CMFCColorButton::GetAutomaticColor", "AFXCOLORBUTTON/CMFCColorButton::GetColor", "AFXCOLORBUTTON/CMFCColorButton::SetColor", "AFXCOLORBUTTON/CMFCColorButton::SetColorName", "AFXCOLORBUTTON/CMFCColorButton::SetColumnsNumber", "AFXCOLORBUTTON/CMFCColorButton::SetDocumentColors", "AFXCOLORBUTTON/CMFCColorButton::SetPalette", "AFXCOLORBUTTON/CMFCColorButton::SizeToContent", "AFXCOLORBUTTON/CMFCColorButton::IsDrawXPTheme", "AFXCOLORBUTTON/CMFCColorButton::OnDraw", "AFXCOLORBUTTON/CMFCColorButton::OnDrawBorder", "AFXCOLORBUTTON/CMFCColorButton::OnDrawFocusRect", "AFXCOLORBUTTON/CMFCColorButton::OnShowColorPopup", "AFXCOLORBUTTON/CMFCColorButton::RebuildPalette", "AFXCOLORBUTTON/CMFCColorButton::UpdateColor", "AFXCOLORBUTTON/CMFCColorButton::m_bEnabledInCustomizeMode"]
@@ -295,9 +296,8 @@ void RebuildPalette(CPalette* pPal);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pPal*|[in] A pointer to a logical palette or NULL. If NULL, the default system palette is used.|
+*pPal*\
+[in] A pointer to a logical palette or NULL. If NULL, the default system palette is used.
 
 ## <a name="setcolor"></a> CMFCColorButton::SetColor
 

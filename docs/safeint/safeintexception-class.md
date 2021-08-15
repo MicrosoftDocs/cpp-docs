@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SafeIntException Class"
 title: "SafeIntException Class"
 ms.date: "10/22/2018"
 ms.topic: "reference"
@@ -29,7 +30,7 @@ Name                                                    | Description
 
 ## Remarks
 
-The [SafeInt class](../safeint/safeint-class.md) is the only class that uses the `SafeIntException` class.
+The [SafeInt class](safeint-class.md) is the only class that uses the `SafeIntException` class.
 
 ## Inheritance Hierarchy
 

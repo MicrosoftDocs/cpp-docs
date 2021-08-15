@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: invalid_compute_domain Class"
 title: "invalid_compute_domain Class"
 ms.date: "11/04/2016"
 f1_keywords: ["invalid_compute_domain", "AMPRT/invalid_compute_domain", "AMPRT/Concurrency::invalid_compute_domain::invalid_compute_domain"]
@@ -41,7 +42,7 @@ class invalid_compute_domain : public runtime_exception;
 
 Initializes a new instance of the class.
 
-## Syntax
+### Syntax
 
 ```cpp
 explicit invalid_compute_domain(

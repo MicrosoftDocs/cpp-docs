@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Accelerator Keys (C++ Image Editor for Icons)"
 title: "Accelerator Keys (C++ Image Editor for Icons)"
 ms.date: "02/15/2019"
 helpviewer_keywords: ["accelerator keys", "Image editor [C++], accelerator keys"]
@@ -15,8 +16,8 @@ Below are the accelerator keys for the Image editor commands that are bound to k
 |-------------|----------|-----------------|
 |Image.AirBrushTool|**Ctrl** + **A**|Draws using an airbrush with the selected size and color.|
 |Image.BrushTool|**Ctrl** + **B**|Draws using a brush with the selected shape, size, and color.|
-|Image.CopyAndOutlineSelection|**Ctrl** + **Shift** + **U**|Creates a copy of the current selection and outlines it. If the background color is contained in the current selection, it will be excluded if you have [transparent](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md) selected.|
-|Image.DrawOpaque|**Ctrl** + **J**|Makes the current selection either [opaque or transparent](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md).|
+|Image.CopyAndOutlineSelection|**Ctrl** + **Shift** + **U**|Creates a copy of the current selection and outlines it. If the background color is contained in the current selection, it will be excluded if you have [transparent](./image-editor-for-icons.md) selected.|
+|Image.DrawOpaque|**Ctrl** + **J**|Makes the current selection either [opaque or transparent](./image-editor-for-icons.md).|
 |Image.EllipseTool|**Ctrl** + **P**|Draws an ellipse with the selected line width and color.|
 |Image.EraserTool|**Ctrl** + **Shift** + **I**|Erases a portion of the image (with the current background color).|
 |Image.FilledEllipseTool|**Ctrl** + **Shift** + **Alt** + **P**|Draws a filled ellipse.|
@@ -29,7 +30,7 @@ Below are the accelerator keys for the Image editor commands that are bound to k
 |Image.LineTool|**Ctrl** + **L**|Draws a straight line with the selected shape, size, and color.|
 |Image.MagnificationTool|**Ctrl** + **M**|Activates the **Magnify** tool, which allows you to magnify specific sections of your image.|
 |Image.Magnify|**Ctrl** + **Shift** + **M**|Toggles between the current magnification and 1:1 magnification.|
-|Image.NewImageType|**Insert**|Launches the [New \<Device> Image Type dialog box](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md) with which you can create an image for a different image type.|
+|Image.NewImageType|**Insert**|Launches the [New \<Device> Image Type dialog box](./creating-an-icon-or-other-image-image-editor-for-icons.md) with which you can create an image for a different image type.|
 |Image.NextColor|**Ctrl** + **]**<br /><br /> - or -<br /><br /> **Ctrl** + **Right Arrow**|Changes the drawing foreground color to the next palette color.|
 |Image.NextRightColor|**Ctrl** + **Shift** + **]**<br /><br /> - or -<br /><br /> **Shift** + **Ctrl** + **Right Arrow**|Changes the drawing background color to the next palette color.|
 |Image.OutlinedEllipseTool|**Shift** + **Alt** + **P**|Draws a filled ellipse with an outline.|
@@ -42,11 +43,11 @@ Below are the accelerator keys for the Image editor commands that are bound to k
 |Image.RectangleTool|ATL + R|Draws a rectangle with the selected line width and color.|
 |Image.Rotate90Degrees|**Ctrl** + **Shift** + **H**|Rotates the image or selection 90 degrees.|
 |Image.RoundedRectangleTool|**Alt** + **W**|Draws a round rectangle with the selected line width and color.|
-|Image.ShowGrid|**Ctrl** + **Alt** + **S**|Toggles the pixel grid (selects or clears the **Pixel grid** option in the [Grid Settings dialog box](../windows/grid-settings-dialog-box-image-editor-for-icons.md)).|
-|Image.ShowTileGrid|**Ctrl** + **Shift** + **Alt** + **S**|Toggles the tile grid (selects or clears the **Tile grid** option in the [Grid Settings dialog box](../windows/grid-settings-dialog-box-image-editor-for-icons.md)).|
+|Image.ShowGrid|**Ctrl** + **Alt** + **S**|Toggles the pixel grid (selects or clears the **Pixel grid** option in the [Grid Settings dialog box](./image-editor-for-icons.md)).|
+|Image.ShowTileGrid|**Ctrl** + **Shift** + **Alt** + **S**|Toggles the tile grid (selects or clears the **Tile grid** option in the [Grid Settings dialog box](./image-editor-for-icons.md)).|
 |Image.SmallBrush|**Ctrl** + **.** (period)|Reduces the **Brush** size to one pixel. (See also Image.LargerBrush and Image.SmallerBrush in this table.)|
 |Image.SmallerBrush|**Ctrl** + **-** (minus)|Reduces the brush size by one pixel in each direction. To expand the brush size again, see Image.LargerBrush in this table.|
-|Image.TextTool|**Ctrl** + **T**|Opens the [Text Tool dialog box](../windows/text-tool-dialog-box-image-editor-for-icons.md).|
+|Image.TextTool|**Ctrl** + **T**|Opens the [Text Tool dialog box](./image-editor-for-icons.md).|
 |Image.UseSelectionAsBrush|**Ctrl** + **U**|Draws using the current selection as a brush.|
 |Image.ZoomIn|**Ctrl** + **Shift** + **.** (period)<br /><br /> - or -<br /><br /> **Ctrl** + **Up Arrow**|Increases the magnification for the current view.|
 |Image.ZoomOut|**Ctrl** + **,** (comma)<br /><br /> - or -<br /><br /> **Ctrl** + **Down Arrow**|Reduces the magnification of the current view.|
@@ -57,8 +58,8 @@ None
 
 ## See also
 
-[Image Editor for Icons](../windows/image-editor-for-icons.md)<br/>
-[How to: Create an Icon or Other Image](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
-[How to: Edit an Image](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
-[How to: Use a Drawing Tool](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
-[How to: Work with Color](../windows/working-with-color-image-editor-for-icons.md)<br/>
+[Image Editor for Icons](image-editor-for-icons.md)<br/>
+[How to: Create an Icon or Other Image](creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
+[How to: Edit an Image](selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
+[How to: Use a Drawing Tool](using-a-drawing-tool-image-editor-for-icons.md)<br/>
+[How to: Work with Color](working-with-color-image-editor-for-icons.md)<br/>

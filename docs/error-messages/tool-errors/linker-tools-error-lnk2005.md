@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Error LNK2005"
 title: "Linker Tools Error LNK2005"
 ms.date: "11/04/2016"
 f1_keywords: ["LNK2005"]
@@ -28,13 +29,13 @@ Here are some common causes for this error.
 
    Possible solutions include:
 
-  - Declare the variable `extern` in the header file: `extern int global_int;`, then define it and optionally initialize it in one and only one source file: `int global_int = 17;`. This variable is now a global that you can use in any source file by declaring it `extern`, for example, by including the header file. We recommend this solution for variables that must be global, but good software engineering practice minimizes global variables.
+  - Declare the variable **`extern`** in the header file: `extern int global_int;`, then define it and optionally initialize it in one and only one source file: `int global_int = 17;`. This variable is now a global that you can use in any source file by declaring it **`extern`**, for example, by including the header file. We recommend this solution for variables that must be global, but good software engineering practice minimizes global variables.
 
   - Declare the variable [static](../../cpp/storage-classes-cpp.md#static): `static int static_int = 17;`. This restricts the scope of the definition to the current object file, and allows multiple object files to have their own copy of the variable. We don't recommend you define static variables in header files because of the potential for confusion with global variables. Prefer to move static variable definitions into the source files that use them.
 
   - Declare the variable [selectany](../../cpp/selectany.md): `__declspec(selectany) int global_int = 17;`. This tells the linker to pick one definition for use by all external references and to discard the rest. This solution is sometimes useful when combining import libraries. Otherwise, we do not recommend it as a way to avoid linker errors.
 
-- This error can occur when a header file defines a function that isn't `inline`. If you include this header file in more than one source file, you get multiple definitions of the function in the executable.
+- This error can occur when a header file defines a function that isn't **`inline`**. If you include this header file in more than one source file, you get multiple definitions of the function in the executable.
 
     ```h
     // LNK2005_func.h
@@ -43,7 +44,7 @@ Here are some common causes for this error.
 
    Possible solutions include:
 
-  - Add the `inline` keyword to the function:
+  - Add the **`inline`** keyword to the function:
 
     ```h
     // LNK2005_func_inline.h
@@ -93,7 +94,7 @@ Here are some common causes for this error.
 
 - This error can occur if the symbol is defined differently in two member objects in different libraries, and both member objects are used. One way to fix this issue when the libraries are statically linked is to use the member object from only one library, and include that library first on the linker command line. To use both symbols, you must create a way to distinguish them. For example, if you can build the libraries from source, you can wrap each library in a unique namespace. Alternatively, you can create a new wrapper library that uses unique names to wrap references to one of the original libraries, link the new library to the original library, then link the executable to your new library instead of the original library.
 
-- This error can occur if an `extern const` variable is defined twice, and has a different value in each definition. To fix this issue, define the constant only once, or use namespaces or `enum class` definitions to distinguish the constants.
+- This error can occur if an `extern const` variable is defined twice, and has a different value in each definition. To fix this issue, define the constant only once, or use namespaces or **`enum class`** definitions to distinguish the constants.
 
 - This error can occur if you use uuid.lib in combination with other .lib files that define GUIDs (for example, oledb.lib and adsiid.lib). For example:
 

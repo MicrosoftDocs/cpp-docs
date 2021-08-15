@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: InterfaceTraits Structure"
 title: "InterfaceTraits Structure"
 ms.date: "10/03/2018"
 ms.topic: "reference"
@@ -95,11 +96,11 @@ The name of a pointer to a type.
 The interface ID of `Base`.
 
 *ppv*<br/>
-If this operation is successful, *ppv* points to the interface specified by `Base`. Otherwise, *ppv* is set to `nullptr`.
+If this operation is successful, *ppv* points to the interface specified by `Base`. Otherwise, *ppv* is set to **`nullptr`**.
 
 ### Return Value
 
-**true** if this operation is successful and *ptr* is cast to a pointer to `Base`; otherwise, **false**.
+**`true`** if this operation is successful and *ptr* is cast to a pointer to `Base`; otherwise, **`false`**.
 
 ### Remarks
 

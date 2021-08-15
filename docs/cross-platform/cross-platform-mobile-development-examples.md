@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cross-platform mobile development examples"
 title: "Cross-platform mobile development examples"
 ms.date: "10/17/2019"
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __clrcall"
 title: "__clrcall"
 ms.date: "11/04/2016"
 f1_keywords: ["__clrcall_cpp"]
@@ -23,7 +24,7 @@ You can directly call **__clrcall** functions from existing C++ code that was co
 
 **__clrcall** function pointers are only meant to be used in the application domain in which they were created.  Instead of passing **__clrcall** function pointers across application domains, use <xref:System.CrossAppDomainDelegate>. For more information, see [Application Domains and Visual C++](../dotnet/application-domains-and-visual-cpp.md).
 
-## Example
+## Examples
 
 Note that when a function is declared with **__clrcall**, code will be generated when needed; for example, when function is called.
 
@@ -61,8 +62,6 @@ in Func1
 in Func1
 in Func1
 ```
-
-## Example
 
 The following sample shows that you can define a function pointer, such that, you declare that the function pointer will only be invoked from managed code. This allows the compiler to directly call the managed function and avoid the native entry point (double thunk issue).
 

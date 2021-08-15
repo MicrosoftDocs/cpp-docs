@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Copy Constructors and Copy Assignment Operators (C++)"
 title: "Copy Constructors and Copy Assignment Operators (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["= operator [C++], copying objects", "assignment statements [C++], copying objects", "assignment operators [C++], for copying objects", "objects [C++], copying", "initializing objects, by copying objects", "copying objects", "assigning values to copy objects"]
@@ -34,7 +35,7 @@ b = a;
 
 The preceding code could mean "copy the contents of FILE1.DAT to FILE2.DAT" or it could mean "ignore FILE2.DAT and make `b` a second handle to FILE1.DAT." You must attach appropriate copying semantics to each class, as follows.
 
-- By using the assignment operator **operator=** together with a reference to the class type as the return type and the parameter that is passed by **const** reference—for example `ClassName& operator=(const ClassName& x);`.
+- By using the assignment operator **operator=** together with a reference to the class type as the return type and the parameter that is passed by **`const`** reference—for example `ClassName& operator=(const ClassName& x);`.
 
 - By using the copy constructor.
 
@@ -57,19 +58,19 @@ int main()
 ```
 
 > [!NOTE]
-> Make the type of the copy constructor's argument **const** <em>class-name</em><strong>&</strong> whenever possible. This prevents the copy constructor from accidentally changing the object from which it is copying. It also enables copying from **const** objects.
+> Make the type of the copy constructor's argument **`const`** <em>class-name</em><strong>&</strong> whenever possible. This prevents the copy constructor from accidentally changing the object from which it is copying. It also enables copying from **`const`** objects.
 
 ## Compiler generated copy constructors
 
-Compiler-generated copy constructors, like user-defined copy constructors, have a single argument of type "reference to *class-name*." An exception is when all base classes and member classes have copy constructors declared as taking a single argument of type **const** <em>class-name</em><strong>&</strong>. In such a case, the compiler-generated copy constructor's argument is also **const**.
+Compiler-generated copy constructors, like user-defined copy constructors, have a single argument of type "reference to *class-name*." An exception is when all base classes and member classes have copy constructors declared as taking a single argument of type **`const`** <em>class-name</em><strong>&</strong>. In such a case, the compiler-generated copy constructor's argument is also **`const`**.
 
-When the argument type to the copy constructor is not **const**, initialization by copying a **const** object generates an error. The reverse is not true: If the argument is **const**, you can initialize by copying an object that is not **const**.
+When the argument type to the copy constructor is not **`const`**, initialization by copying a **`const`** object generates an error. The reverse is not true: If the argument is **`const`**, you can initialize by copying an object that is not **`const`**.
 
-Compiler-generated assignment operators follow the same pattern with regard to **const.** They take a single argument of type <em>class-name</em><strong>&</strong> unless the assignment operators in all base and member classes take arguments of type **const** <em>class-name</em><strong>&</strong>. In this case, the class's generated assignment operator takes a **const** argument.
+Compiler-generated assignment operators follow the same pattern with regard to **const.** They take a single argument of type <em>class-name</em><strong>&</strong> unless the assignment operators in all base and member classes take arguments of type **`const`** <em>class-name</em><strong>&</strong>. In this case, the class's generated assignment operator takes a **`const`** argument.
 
 > [!NOTE]
 > When virtual base classes are initialized by copy constructors, compiler-generated or user-defined, they are initialized only once: at the point when they are constructed.
 
-The implications are similar to those of the copy constructor. When the argument type is not **const**, assignment from a **const** object generates an error. The reverse is not true: If a **const** value is assigned to a value that is not **const**, the assignment succeeds.
+The implications are similar to those of the copy constructor. When the argument type is not **`const`**, assignment from a **`const`** object generates an error. The reverse is not true: If a **`const`** value is assigned to a value that is not **`const`**, the assignment succeeds.
 
 For more information about overloaded assignment operators, see [Assignment](../cpp/assignment.md).

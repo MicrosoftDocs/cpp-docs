@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3014"
 title: "Compiler Error C3014"
 ms.date: "11/04/2016"
 f1_keywords: ["C3014"]
@@ -9,7 +10,7 @@ ms.assetid: af1c5b0c-dbf9-4274-b06a-c6c2cdcf2a52
 
 expected a for loop following OpenMP 'directive' directive
 
-It is an error for anything other than a `for` loop to immediately follow a `#pragma omp for` directive.
+It is an error for anything other than a **`for`** loop to immediately follow a `#pragma omp for` directive.
 
 The following sample generates C3014:
 

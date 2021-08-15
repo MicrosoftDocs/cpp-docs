@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: simple_partitioner Class"
 title: "simple_partitioner Class"
 ms.date: "11/04/2016"
 f1_keywords: ["simple_partitioner", "PPL/concurrency::simple_partitioner", "PPL/concurrency::simple_partitioner::simple_partitioner"]

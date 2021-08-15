@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Porting Guide: Spy++"
 title: "Porting Guide: Spy++"
 ms.date: "10/23/2019"
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
@@ -19,7 +20,7 @@ The project file, two old .dsw files from Visual C++ 6.0, converted easily with 
 
 After upgrading the two projects, our solution looked like this:
 
-![The Spy&#43;&#43; Solution](../porting/media/spyxxsolution.PNG "The Spy&#43;&#43; Solution")
+![Screenshot of the Spy&#43;&#43; Solution.](../porting/media/spyxxsolution.PNG "The Spy&#43;&#43; Solution")
 
 We have two projects, one with a large number of C++ files, and another a DLL that's written in C.
 
@@ -83,7 +84,7 @@ With these changes, the SpyHk (DLL) project builds but produces a linker error.
 LINK : warning LNK4216: Exported entry point _DLLEntryPoint@12
 ```
 
-The entry point for a DLL should not be exported. The entry point is only intended to be called by the loader when the DLL is first loaded into memory, so it should not be in the export table, which is for other callers. We just need to make sure it does not have the **__declspec(dllexport)** directive attached to it. In spyxxhk.c, we have to remove it from two places, the declaration and definition of `DLLEntryPoint`. It never made sense to use this directive, but previous versions of the linker and compiler did not flag it as problem. The newer versions of the linker give a warning.
+The entry point for a DLL should not be exported. The entry point is only intended to be called by the loader when the DLL is first loaded into memory, so it should not be in the export table, which is for other callers. We just need to make sure it does not have the **`__declspec(dllexport)`** directive attached to it. In spyxxhk.c, we have to remove it from two places, the declaration and definition of `DLLEntryPoint`. It never made sense to use this directive, but previous versions of the linker and compiler did not flag it as problem. The newer versions of the linker give a warning.
 
 ```cpp
 // deleted __declspec(dllexport)
@@ -124,13 +125,13 @@ These are the updated includes:
 #include <iomanip>
 ```
 
-With this change, we have problems with `ostrstream`, which is no longer used. The appropriate replacement is ostringstream. We try adding a **typedef** for `ostrstream` to avoid modifying the code too much, at least as a start.
+With this change, we have problems with `ostrstream`, which is no longer used. The appropriate replacement is ostringstream. We try adding a **`typedef`** for `ostrstream` to avoid modifying the code too much, at least as a start.
 
 ```cpp
 typedef std::basic_ostringstream<TCHAR> ostrstream;
 ```
 
-Currently the project is built using MBCS (Multi-byte Character Set), so **char** is the appropriate character data type. However, to allow an easier update the code to UTF-16 Unicode, we update this to `TCHAR`, which resolves to **char** or **wchar_t** depending on whether the **Character Set** property in the project settings is set to MBCS or Unicode.
+Currently the project is built using MBCS (Multi-byte Character Set), so **`char`** is the appropriate character data type. However, to allow an easier update the code to UTF-16 Unicode, we update this to `TCHAR`, which resolves to **`char`** or **`wchar_t`** depending on whether the **Character Set** property in the project settings is set to MBCS or Unicode.
 
 A few other pieces of code need to be updated.  We replaced the base class `ios` with `ios_base`, and we replaced ostream is by basic_ostream\<T>. We add two additional typedefs, and this section compiles.
 
@@ -460,11 +461,11 @@ class CTreeListBox : public CListBox
   BOOL m_bStdMouse : 1;
 ```
 
-This code was written before the built-in bool type was supported in Visual C++. In such code, BOOL was a **typedef** for **int**. The type **int** is a **signed** type, and the bit representation of a **signed int** is to use the first bit as a sign bit, so a bitfield of type int could be interpreted as representing 0 or -1, probably not what was intended.
+This code was written before the built-in bool type was supported in Visual C++. In such code, BOOL was a **`typedef`** for **`int`**. The type **`int`** is a **`signed`** type, and the bit representation of a **`signed int`** is to use the first bit as a sign bit, so a bitfield of type int could be interpreted as representing 0 or -1, probably not what was intended.
 
 You wouldn't know by looking at the code why these are bitfields. Was the intent to keep the size of the object small, or is there anywhere where the binary layout of the object is used? We changed these to ordinary BOOL members since we didn't see any reason for the use of a bitfield. Using bitfields to keep an object's size small isn't guaranteed to work. It depends on how the compiler lays out the type.
 
-You might wonder if using the standard type **bool** throughout would be helpful. Many of the old code patterns such as the BOOL type were invented to solve problems that were later solved in standard C++, so changing from BOOL to the **bool** built-in type is just one example of such a change that you consider doing after you get your code initially running in the new version.
+You might wonder if using the standard type **`bool`** throughout would be helpful. Many of the old code patterns such as the BOOL type were invented to solve problems that were later solved in standard C++, so changing from BOOL to the **`bool`** built-in type is just one example of such a change that you consider doing after you get your code initially running in the new version.
 
 Once we've dealt with all the warnings that appear at the default level (level 3) we changed to level 4 to catch a few additional warnings. The first to appear was as follows:
 
@@ -484,7 +485,7 @@ This seems harmless enough, but since we wanted a clean compilation with `/W4` a
 virtual void OnSelectTab(int /*nTab*/) {};
 ```
 
-Other warnings we received were useful for general code cleanup. There are a number of implicit conversions from **int** or **unsigned int** to WORD (which is a typedef for **unsigned short**). These involve a possible loss of data. We added a cast to WORD in these cases.
+Other warnings we received were useful for general code cleanup. There are a number of implicit conversions from **`int`** or **`unsigned int`** to WORD (which is a typedef for **`unsigned short`**). These involve a possible loss of data. We added a cast to WORD in these cases.
 
 Another level 4 warning we got for this code was:
 
@@ -492,7 +493,7 @@ Another level 4 warning we got for this code was:
 warning C4211: nonstandard extension used: redefined extern to static
 ```
 
-The problem occurs when a variable was first declared **extern**, then later declared **static**. The meaning of these two storage class specifiers is mutually exclusive, but this is allowed as a Microsoft extension. If you wanted the code to be portable to other compilers, or you wanted to compile it with `/Za` (ANSI compatibility), you would change the declarations to have matching storage class specifiers.
+The problem occurs when a variable was first declared **`extern`**, then later declared **`static`**. The meaning of these two storage class specifiers is mutually exclusive, but this is allowed as a Microsoft extension. If you wanted the code to be portable to other compilers, or you wanted to compile it with `/Za` (ANSI compatibility), you would change the declarations to have matching storage class specifiers.
 
 ## <a name="porting_to_unicode"></a> Step 11. Porting from MBCS to Unicode
 
@@ -512,11 +513,11 @@ msvcrtd.lib;msvcirtd.lib;kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;Debug\Sp
 
 Now let us actually update the old Multi-byte Character Set (MBCS) code to Unicode. Since this is a Windows application, intimately tied to the Windows desktop platform, we will port it to UTF-16 Unicode that Windows uses. If you are writing cross-platform code or porting a Windows application to another platform, you might want to consider porting to UTF-8, which is widely used on other operating systems.
 
-Porting to UTF-16 Unicode, we must decide whether we still want the option to compile to MBCS or not.  If we want to have the option to support MBCS, we should use the TCHAR macro as the character type, which resolves to either **char** or **wchar_t**, depending on whether \_MBCS or \_UNICODE is defined during compilation. Switching to TCHAR and the TCHAR versions of various APIs instead of **wchar_t** and its associated APIs means that you can get back to an MBCS version of your code simply by defining \_MBCS macro instead of \_UNICODE. In addition to TCHAR, a variety of TCHAR versions of such as widely used typedefs, macros, and functions exists. For example, LPCTSTR instead of LPCSTR, and so on. In the project properties dialog, under **Configuration Properties**, in the **General** section, change the **Character Set** property from **Use MBCS Character Set** to **Use Unicode Character Set**. This setting affects which macro is predefined during compilation. There is both a UNICODE macro and a \_UNICODE macro. The project property affects both consistently. Windows headers use UNICODE where Visual C++ headers such as MFC use \_UNICODE, but when one is defined, the other is always defined.
+Porting to UTF-16 Unicode, we must decide whether we still want the option to compile to MBCS or not.  If we want to have the option to support MBCS, we should use the TCHAR macro as the character type, which resolves to either **`char`** or **`wchar_t`**, depending on whether \_MBCS or \_UNICODE is defined during compilation. Switching to TCHAR and the TCHAR versions of various APIs instead of **`wchar_t`** and its associated APIs means that you can get back to an MBCS version of your code simply by defining \_MBCS macro instead of \_UNICODE. In addition to TCHAR, a variety of TCHAR versions of such as widely used typedefs, macros, and functions exists. For example, LPCTSTR instead of LPCSTR, and so on. In the project properties dialog, under **Configuration Properties**, in the **General** section, change the **Character Set** property from **Use MBCS Character Set** to **Use Unicode Character Set**. This setting affects which macro is predefined during compilation. There is both a UNICODE macro and a \_UNICODE macro. The project property affects both consistently. Windows headers use UNICODE where Visual C++ headers such as MFC use \_UNICODE, but when one is defined, the other is always defined.
 
 A good [guide](/previous-versions/cc194801(v=msdn.10)) to porting from MBCS to UTF-16 Unicode using TCHAR exists. We choose this route. First, we change the **Character Set** property to **Use Unicode Character Set** and rebuild the project.
 
-Some places in the code were already using TCHAR, apparently in anticipation of eventually supporting Unicode. Some were not. We searched for instances of CHAR, which is a **typedef** for **char**, and replaced most of them with TCHAR. Also, we looked for `sizeof(CHAR)`. Whenever we changed from CHAR to TCHAR, we usually had to change to `sizeof(TCHAR)` since this was often used to determine the number of characters in a string. Using the wrong type here does not produce a compiler error, so it's worth paying a bit of attention to this case.
+Some places in the code were already using TCHAR, apparently in anticipation of eventually supporting Unicode. Some were not. We searched for instances of CHAR, which is a **`typedef`** for **`char`**, and replaced most of them with TCHAR. Also, we looked for `sizeof(CHAR)`. Whenever we changed from CHAR to TCHAR, we usually had to change to `sizeof(TCHAR)` since this was often used to determine the number of characters in a string. Using the wrong type here does not produce a compiler error, so it's worth paying a bit of attention to this case.
 
 This type of error is very common just after switching to Unicode.
 
@@ -536,7 +537,7 @@ We put \_T around the string literal to remove the error.
 wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
 ```
 
-The \_T macro has the effect of making a string literal compile as a **char** string or a **wchar_t** string, depending on the setting of MBCS or UNICODE. To replace all strings with \_T in Visual Studio, first open the **Quick Replace** (Keyboard: **Ctrl**+**F**) box or the **Replace In Files** (Keyboard: **Ctrl**+**Shift**+**H**), then choose the **Use Regular Expressions** checkbox. Enter `((\".*?\")|('.+?'))` as the search text and `_T($1)` as the replacement text. If you already have the \_T macro around some strings, this procedure will add it again, and it might also find cases where you don't want \_T, such as when you use `#include`, so it's best to use **Replace Next** rather than **Replace All**.
+The \_T macro has the effect of making a string literal compile as a **`char`** string or a **`wchar_t`** string, depending on the setting of MBCS or UNICODE. To replace all strings with \_T in Visual Studio, first open the **Quick Replace** (Keyboard: **Ctrl**+**F**) box or the **Replace In Files** (Keyboard: **Ctrl**+**Shift**+**H**), then choose the **Use Regular Expressions** checkbox. Enter `((\".*?\")|('.+?'))` as the search text and `_T($1)` as the replacement text. If you already have the \_T macro around some strings, this procedure will add it again, and it might also find cases where you don't want \_T, such as when you use `#include`, so it's best to use **Replace Next** rather than **Replace All**.
 
 This particular function, [wsprintf](/windows/win32/api/winuser/nf-winuser-wsprintfw), is actually defined in the Windows headers, and the documentation for it recommends that it not be used, due to possible buffer overrun. No size is given for the `szTmp` buffer, so there is no way for the function to check that the buffer can hold all the data to be written to it. See the next section about porting to the Secure CRT, in which we fix other similar problems. We ended up replacing it with [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md).
 
@@ -553,14 +554,14 @@ pParentNode->m_szText = new char[strTitle.GetLength() + 1];
 _tcscpy(pParentNode->m_szText, strTitle);
 ```
 
-Even though the `_tcscpy` function was used, which is the TCHAR strcpy function for copying a string, the buffer that was allocated was a **char** buffer. This is easily changed to TCHAR.
+Even though the `_tcscpy` function was used, which is the TCHAR strcpy function for copying a string, the buffer that was allocated was a **`char`** buffer. This is easily changed to TCHAR.
 
 ```cpp
 pParentNode->m_szText = new TCHAR[strTitle.GetLength() + 1];
 _tcscpy(pParentNode->m_szText, strTitle);
 ```
 
-Similarly, we changed LPSTR (Long Pointer to STRing) and LPCSTR (Long Pointer to Constant STRing) to LPTSTR (Long Pointer to TCHAR STRing) and LPCTSTR (Long Pointer to Constant TCHAR STRing) respectively, when warranted by a compiler error. We chose not to make such replacements by using global search and replace, because each situation had to be examined individually. In some cases, the **char** version is wanted, such as when processing certain Windows messages which use Windows structures that have the **A** suffix. In the Windows API, the suffix **A** means ASCII or ANSI (and also applies to MBCS), and the suffix **W** means wide characters, or UTF-16 Unicode. This naming pattern is used in the Windows headers, but we also followed it in the Spy++ code when we had to add a Unicode version of a function that was already defined in only an MBCS version.
+Similarly, we changed LPSTR (Long Pointer to STRing) and LPCSTR (Long Pointer to Constant STRing) to LPTSTR (Long Pointer to TCHAR STRing) and LPCTSTR (Long Pointer to Constant TCHAR STRing) respectively, when warranted by a compiler error. We chose not to make such replacements by using global search and replace, because each situation had to be examined individually. In some cases, the **`char`** version is wanted, such as when processing certain Windows messages which use Windows structures that have the **A** suffix. In the Windows API, the suffix **A** means ASCII or ANSI (and also applies to MBCS), and the suffix **W** means wide characters, or UTF-16 Unicode. This naming pattern is used in the Windows headers, but we also followed it in the Spy++ code when we had to add a Unicode version of a function that was already defined in only an MBCS version.
 
 In some cases we had to replace a type to use a version that resolves correctly (WNDCLASS instead of WNDCLASSA for example).
 

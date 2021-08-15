@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /FR, /Fr (Create .Sbr File)"
 title: "/FR, /Fr (Create .Sbr File)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.BrowseInformation", "VC.Project.VCCLCompilerTool.BrowseInformation", "/fr", "VC.Project.VCCLCompilerTool.BrowseInformationFile", "VC.Project.VCCLWCECompilerTool.BrowseInformationFile"]
@@ -38,7 +39,7 @@ If you do not specify `filename`, the .sbr file gets the same base name as the s
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. In the navigation pane, choose the **C/C++**, **Browse Information** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Browse Information** property page.
 
 1. Modify the **Browse Information File** or **Enable Browse Information** property.
 

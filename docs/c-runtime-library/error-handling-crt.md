@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Error handling (CRT)"
 title: "Error handling (CRT)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["error handling, C routines for", "logic errors", "error handling, library routines", "testing, for program errors"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Oversubscription to Offset Latency"
 title: "How to: Use Oversubscription to Offset Latency"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["oversubscription, using [Concurrency Runtime]", "using oversubscription [Concurrency Runtime]"]
@@ -12,7 +13,7 @@ Oversubscription can improve the overall efficiency of some applications that co
 
 This example uses the [Asynchronous Agents Library](../../parallel/concrt/asynchronous-agents-library.md) to download files from HTTP servers. The `http_reader` class derives from [concurrency::agent](../../parallel/concrt/reference/agent-class.md) and uses message passing to asynchronously read which URL names to download.
 
-The `http_reader` class uses the [concurrency::task_group](reference/task-group-class.md) class to concurrently read each file. Each task calls the [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) method with the `_BeginOversubscription` parameter set to **true** to enable oversubscription in the current context. Each task then uses the Microsoft Foundation Classes (MFC) [CInternetSession](../../mfc/reference/cinternetsession-class.md) and [CHttpFile](../../mfc/reference/chttpfile-class.md) classes to download the file. Finally, each task calls `Context::Oversubscribe` with the `_BeginOversubscription` parameter set to **false** to disable oversubscription.
+The `http_reader` class uses the [concurrency::task_group](reference/task-group-class.md) class to concurrently read each file. Each task calls the [concurrency::Context::Oversubscribe](reference/context-class.md#oversubscribe) method with the `_BeginOversubscription` parameter set to **`true`** to enable oversubscription in the current context. Each task then uses the Microsoft Foundation Classes (MFC) [CInternetSession](../../mfc/reference/cinternetsession-class.md) and [CHttpFile](../../mfc/reference/chttpfile-class.md) classes to download the file. Finally, each task calls `Context::Oversubscribe` with the `_BeginOversubscription` parameter set to **`false`** to disable oversubscription.
 
 When oversubscription is enabled, the runtime creates one additional thread in which to run tasks. Each of these threads can also oversubscribe the current context and thereby create additional threads. The `http_reader` class uses a [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) object to limit the number of threads that the application uses. The agent initializes the buffer with a fixed number of token values. For each download operation, the agent reads a token value from the buffer before the operation starts and then writes that value back to the buffer after the operation finishes. When the buffer is empty, the agent waits for one of the download operations to write a value back to the buffer.
 
@@ -61,7 +62,7 @@ cl.exe /EHsc /MT download-oversubscription.cpp
 
 Always disable oversubscription after you no longer require it. Consider a function that does not handle an exception that is thrown by another function. If you do not disable oversubscription before the function returns, any additional parallel work will also oversubscribe the current context.
 
-You can use the *Resource Acquisition Is Initialization* (RAII) pattern to limit oversubscription to a given scope. Under the RAII pattern, a data structure is allocated on the stack. That data structure initializes or acquires a resource when it is created and destroys or releases that resource when the data structure is destroyed. The RAII pattern guarantees that the destructor is called before the enclosing scope exits. Therefore, the resource is correctly managed when an exception is thrown or when a function contains multiple `return` statements.
+You can use the *Resource Acquisition Is Initialization* (RAII) pattern to limit oversubscription to a given scope. Under the RAII pattern, a data structure is allocated on the stack. That data structure initializes or acquires a resource when it is created and destroys or releases that resource when the data structure is destroyed. The RAII pattern guarantees that the destructor is called before the enclosing scope exits. Therefore, the resource is correctly managed when an exception is thrown or when a function contains multiple **`return`** statements.
 
 The following example defines a structure that is named `scoped_blocking_signal`. The constructor of the `scoped_blocking_signal` structure enables oversubscription and the destructor disables oversubscription.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;optional&gt; operators"
 title: "&lt;optional&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["optional/std::operator!=", "optional/std::operator==", "optional/std::operatoroperator&gt;", "optional/std::operatoroperator&gt=;", "optional/std::operatoroperator&lt;", "optional/std::operatoroperator&lt;="]
@@ -73,7 +74,7 @@ An object of type `optional`, `nullopt_t`, or `T`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is less than but not equal to the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is less than but not equal to the list on the right side of the operator; otherwise **`false`**.
 
 ## <a name="op_lt_eq"></a> operator&lt;=
 
@@ -97,7 +98,7 @@ An object of type `optional`, `nullopt_t`, or `T`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is less than or equal to the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is less than or equal to the list on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -125,7 +126,7 @@ An object of type `optional`, `nullopt_t`, or `T`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is greater than the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is greater than the list on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -153,7 +154,7 @@ An object of type `optional`, `nullopt_t`, or `T`.
 
 ### Return Value
 
-**true** if the `optional` on the left side of the operator is greater than or equal to the `optional` on the right side of the operator; otherwise **false**.
+**`true`** if the `optional` on the left side of the operator is greater than or equal to the `optional` on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 

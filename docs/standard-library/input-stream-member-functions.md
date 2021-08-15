@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Input Stream Member Functions"
 title: "Input Stream Member Functions"
 ms.date: "07/19/2019"
 helpviewer_keywords: ["input stream objects", "input streams, member functions"]
@@ -147,7 +148,7 @@ int main( )
 
 To use `seekg` to implement record-oriented data management systems, multiply the fixed-length record size by the record number to obtain the byte position relative to the end of the file, and then use the `get` object to read the record.
 
-The `tellg` member function returns the current file position for reading. This value is of type `streampos`, a `typedef` defined in \<iostream>. The following example reads a file and displays messages showing the positions of spaces.
+The `tellg` member function returns the current file position for reading. This value is of type `streampos`, a **`typedef`** defined in \<iostream>. The following example reads a file and displays messages showing the positions of spaces.
 
 ```cpp
 #include <fstream>

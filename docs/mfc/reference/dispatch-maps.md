@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dispatch Maps"
 title: "Dispatch Maps"
 ms.date: "06/20/2018"
 helpviewer_keywords: ["dispatch maps [MFC], macros", "dispatch maps [MFC]", "dispatch map macros [MFC]"]
@@ -33,7 +34,7 @@ DECLARE_DISPATCH_MAP()
 Use the DECLARE_DISPATCH_MAP macro at the end of your class declaration. Then, in the .CPP file that defines the member functions for the class, use the BEGIN_DISPATCH_MAP macro. Then include macro entries for each of your class's exposed methods and properties (DISP_FUNCTION, DISP_PROPERTY, and so on). Finally, use the END_DISPATCH_MAP macro.
 
 > [!NOTE]
-> If you declare any members after DECLARE_DISPATCH_MAP, you must specify a new access type ( **public**, **private**, or **protected**) for them.
+> If you declare any members after DECLARE_DISPATCH_MAP, you must specify a new access type ( **`public`**, **`private`**, or **`protected`**) for them.
 
 The Application Wizard and code wizards assist in creating Automation classes and in maintaining dispatch maps. For more information on dispatch maps, see [Automation Servers](../../mfc/automation-servers.md).
 
@@ -121,11 +122,11 @@ The *vtRetVal* argument is of type VARTYPE. The following possible values for th
 
 |Symbol|Return type|
 |------------|-----------------|
-|VT_EMPTY|**void**|
-|VT_I2|**short**|
-|VT_I4|**long**|
-|VT_R4|**float**|
-|VT_R8|**double**|
+|VT_EMPTY|**`void`**|
+|VT_I2|**`short`**|
+|VT_I4|**`long`**|
+|VT_R4|**`float`**|
+|VT_R8|**`double`**|
 |VT_CY|CY|
 |VT_DATE|DATE|
 |VT_BSTR|BSTR|
@@ -145,10 +146,10 @@ The `VTS_` constants and their meanings are as follows:
 
 |Symbol|Parameter type|
 |------------|--------------------|
-|VTS_I2|**short**|
-|VTS_I4|**long**|
-|VTS_R4|**float**|
-|VTS_R8|**double**|
+|VTS_I2|**`short`**|
+|VTS_I4|**`long`**|
+|VTS_R4|**`float`**|
+|VTS_R8|**`double`**|
 |VTS_CY|`const CY` or `CY*`|
 |VTS_DATE|DATE|
 |VTS_BSTR|LPCSTR|
@@ -207,10 +208,10 @@ The *vtPropType* argument is of type **VARTYPE**. Possible values for this argum
 
 |Symbol|Property type|
 |------------|-----------------------|
-|VT_I2|**short**|
-|VT_I4|**long**|
-|VT_R4|**float**|
-|VT_R8|**double**|
+|VT_I2|**`short`**|
+|VT_I4|**`long`**|
+|VT_R4|**`float`**|
+|VT_R8|**`double`**|
 |VT_CY|CY|
 |VT_DATE|DATE|
 |VT_BSTR|`CString`|
@@ -304,10 +305,10 @@ The *vtPropType* argument is of type VARTYPE. Possible values for this argument 
 
 |Symbol|Property type|
 |------------|-----------------------|
-|VT_I2|**short**|
-|VT_I4|**long**|
-|VT_R4|**float**|
-|VT_R8|**double**|
+|VT_I2|**`short`**|
+|VT_I4|**`long`**|
+|VT_R4|**`float`**|
+|VT_R8|**`double`**|
 |VT_CY|CY|
 |VT_DATE|DATE|
 |VT_BSTR|`CString`|

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DYNAMICBASE"
 title: "/DYNAMICBASE"
 ms.date: "06/12/2018"
 f1_keywords: ["/dynamicbase"]
@@ -22,4 +23,4 @@ By default, **/DYNAMICBASE** is enabled. To disable this option, use **/DYNAMICB
 ## See also
 
 - [EDITBIN Options](editbin-options.md)
-- [Windows ISV Software Security Defenses](https://msdn.microsoft.com/library/bb430720.aspx)
+- [Windows ISV Software Security Defenses](/previous-versions/bb430720(v=msdn.10))

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Forms/MFC Programming Differences"
 title: "Windows Forms-MFC Programming Differences"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC [C++], Windows Forms support", "Windows Forms [C++], compared to MFC"]
@@ -13,8 +14,6 @@ Windows Forms is for creating Microsoft Windows applications on the .NET Framewo
 However, if you are accustomed to MFC, you might be used to creating certain types of applications that are not yet explicitly supported in Windows Forms. Windows Forms applications are equivalent to MFC dialog applications. However, they do not provide the infrastructure to directly support other MFC application types like OLE document server/container, ActiveX documents, the Document/View support for single-document interface (SDI), multiple-document interface (MDI), and multiple top-level interface (MTI). You can write your own logic to create these applications.
 
 For more information about Windows Forms applications, see [Introduction to Windows Forms](/dotnet/framework/winforms/windows-forms-overview).
-
-For a sample application that shows Windows Forms used with MFC, see [MFC and Windows Forms Integration](https://www.microsoft.com/download/details.aspx?id=2113).
 
 The following MFC view or document and command routing features have no equivalents in Windows Forms:
 

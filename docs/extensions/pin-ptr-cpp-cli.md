@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: pin_ptr (C++/CLI)"
 title: "pin_ptr (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
@@ -31,7 +32,7 @@ A *pinning pointer* is an interior pointer that prevents the object pointed to f
 ### Parameters
 
 *cv_qualifier*<br/>
-**const** or **volatile** qualifiers. By default, a pinning pointer is **volatile**. It is redundant but not an error to declare a pinning pointer **volatile**.
+**`const`** or **`volatile`** qualifiers. By default, a pinning pointer is **`volatile`**. It is redundant but not an error to declare a pinning pointer **`volatile`**.
 
 *type*<br/>
 The type of *initializer*.

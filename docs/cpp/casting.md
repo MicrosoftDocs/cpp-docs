@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Casting"
 title: "Casting"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["casting [C++]", "coercion [C++]", "virtual functions [C++], in derived classes [C++]", "static cast operator", "dynamic cast operator", "polymorphic classes [C++]", "classes [C++], polymorphism"]
@@ -10,12 +11,12 @@ The C++ language provides that if a class is derived from a base class containin
 
 Since a derived class completely contains the definitions of all the base classes from which it is derived, it is safe to cast a pointer up the class hierarchy to any of these base classes. Given a pointer to a base class, it might be safe to cast the pointer down the hierarchy. It is safe if the object being pointed to is actually of a type derived from the base class. In this case, the actual object is said to be the "complete object." The pointer to the base class is said to point to a "subobject" of the complete object. For example, consider the class hierarchy shown in the following figure.
 
-![Class hierarchy](../cpp/media/vc38zz1.gif "Class hierarchy") <br/>
+![Diagram of a class hierarchy where C derives from B, which derives from A.](../cpp/media/vc38zz1.gif "Class hierarchy") <br/>
 Class hierarchy
 
 An object of type `C` could be visualized as shown in the following figure.
 
-![Class C with sub&#45;objects B and A](../cpp/media/vc38zz2.gif "Class C with sub&#45;objects B and A") <br/>
+![Diagram of Class C with subobjects B and A.](../cpp/media/vc38zz2.gif "Class C with subobjects B and A") <br/>
 Class C with sub-objects B and A
 
 Given an instance of class `C`, there is a `B` subobject and an `A` subobject. The instance of `C`, including the `A` and `B` subobjects, is the "complete object."

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Warning LNK4221"
 title: "Linker Tools Warning LNK4221"
 ms.date: "08/19/2019"
 f1_keywords: ["LNK4221"]
@@ -29,13 +30,13 @@ To compile the files and create two object files, run **cl /c a.cpp b.cpp** at a
 
 No warning is issued in the second scenario because the linker operates in a last-in first-out (LIFO) manner. In the first scenario, b.obj is processed before a.obj, and a.obj has no new symbols to add. By instructing the linker to process a.obj first, you can avoid the warning.
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 A common cause of this error is when two source files specify the option [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md) with the same header file name specified in the **Precompiled Header** field. A common cause of this problem deals with *pch.h* since, by default, *pch.cpp* includes *pch.h* and does not add any new symbols. If another source file includes *pch.h* with **/Yc** and the associated .obj file is processed before pch.obj, the linker will throw LNK4221.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 A common cause of this error is when two source files specify the option [/Yc (Create Precompiled Header File)](../../build/reference/yc-create-precompiled-header-file.md) with the same header file name specified in the **Precompiled Header** field. A common cause of this problem deals with *stdafx.h* since, by default, *stdafx.cpp* includes *stdafx.h* and does not add any new symbols. If another source file includes *stdafx.h* with **/Yc** and the associated .obj file is processed before stdafx.obj, the linker will throw LNK4221.
 

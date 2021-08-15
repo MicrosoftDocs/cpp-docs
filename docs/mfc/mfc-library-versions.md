@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC Library Versions"
 title: "MFC Library Versions"
 ms.date: "05/08/2019"
 helpviewer_keywords: ["class libraries [MFC], building versions", "version information [MFC], MFC library", "MFC class library", "MFC class library, building", "MFC libraries", "MFC, library versions", "libraries [MFC], versions"]
@@ -128,4 +129,4 @@ When you create your DLL project by linking to the MFC static libraries, your DL
 
 ## See also
 
-[General MFC Topics](../mfc/general-mfc-topics.md)
+[General MFC Topics](general-mfc-topics.md)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: defaultvtable"
 title: "defaultvtable (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.defaultvtable"]
@@ -56,11 +57,9 @@ class CMyC3 : public IMyI3 {};
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|**coclass**|
 |**Invalid attributes**|None|

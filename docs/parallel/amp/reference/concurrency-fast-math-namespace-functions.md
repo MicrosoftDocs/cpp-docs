@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency::fast_math namespace functions"
 title: "Concurrency::fast_math namespace functions"
 ms.date: "11/04/2016"
 f1_keywords: ["amp_math/Concurrency::fast_math::acos", "amp_math/Concurrency::fast_math::asin", "amp_math/Concurrency::fast_math::asinf", "amp_math/Concurrency::fast_math::atan2", "amp_math/Concurrency::fast_math::atan2f", "amp_math/Concurrency::fast_math::ceil", "amp_math/Concurrency::fast_math::ceilf", "amp_math/Concurrency::fast_math::cosf", "amp_math/Concurrency::fast_math::cosh", "amp_math/Concurrency::fast_math::exp", "amp_math/Concurrency::fast_math::exp2", "amp_math/Concurrency::fast_math::expf", "amp_math/Concurrency::fast_math::fabs", "amp_math/Concurrency::fast_math::floor", "amp_math/Concurrency::fast_math::floorf", "amp_math/Concurrency::fast_math::fmaxf", "amp_math/Concurrency::fast_math::fmin", "amp_math/Concurrency::fast_math::fmod", "amp_math/Concurrency::fast_math::fmodf", "amp_math/Concurrency::fast_math::frexpf", "amp_math/Concurrency::fast_math::isfinite", "amp_math/Concurrency::fast_math::isnan", "amp_math/Concurrency::fast_math::ldexp", "amp_math/Concurrency::fast_math::log", "amp_math/Concurrency::fast_math::log10", "amp_math/Concurrency::fast_math::log2", "amp_math/Concurrency::fast_math::log2f", "amp_math/Concurrency::fast_math::modf", "amp_math/Concurrency::fast_math::modff", "amp_math/Concurrency::fast_math::powf", "amp_math/Concurrency::fast_math::round", "amp_math/Concurrency::fast_math::rsqrt", "amp_math/Concurrency::fast_math::rsqrtf", "amp_math/Concurrency::fast_math::signbitf", "amp_math/Concurrency::fast_math::sin", "amp_math/Concurrency::fast_math::sincosf", "amp_math/Concurrency::fast_math::sinf", "amp_math/Concurrency::fast_math::sinhf", "amp_math/Concurrency::fast_math::sqrt", "amp_math/Concurrency::fast_math::tan", "amp_math/Concurrency::fast_math::tanf", "amp_math/Concurrency::fast_math::tanhf", "amp_math/Concurrency::fast_math::trunc"]
@@ -6,30 +7,81 @@ ms.assetid: f5763d62-795b-4de6-a7a5-c7115f158708
 ---
 # Concurrency::fast_math namespace functions
 
-||||
-|-|-|-|
-|[acos](#acos)|[acosf](#acosf)|[asin](#asin)|
-|[asinf](#asinf)|[atan](#atan)|[atan2](#atan2)|
-|[atan2f](#atan2f)|[atanf](#atanf)|[ceil](#ceil)|
-|[ceilf](#ceilf)|[cos](#cos)|[cosf](#cosf)|
-|[cosh](#cosh)|[coshf](#coshf)|[exp](#exp)|
-|[exp2](#exp2)|[exp2f](#exp2f)|[expf](#expf)|
-|[fabs](#fabs)|[fabsf](#fabsf)|[floor](#floor)|
-|[floorf](#floorf)|[fmax](#fmax)|[fmaxf](#fmaxf)|
-|[fmin](#fmin)|[fminf](#fminf)|[fmod](#fmod)|
-|[fmodf](#fmodf)|[frexp](#frexp)|[frexpf](#frexpf)|
-|[isfinite](#isfinite)|[isinf](#isinf)|[isnan](#isnan)|
-|[ldexp](#ldexp)|[ldexpf](#ldexpf)|[log](#log)|
-|[log10](#log10)|[log10f](#log10f)|[log2](#log2)|
-|[log2f](#log2f)|[logf](#logf)|[modf](#modf)|
-|[modff](#modff)|[pow](#pow)|[powf](#powf)|
-|[round](#round)|[roundf](#roundf)|[rsqrt](#rsqrt)|
-|[rsqrtf](#rsqrtf)|[signbit](#signbit)|[signbitf](#signbitf)|
-|[sin](#sin)|[sincos](#sincos)|[sincosf](#sincosf)|
-|[sinf](#sinf)|[sinh](#sinh)|[sinhf](#sinhf)|
-|[sqrt](#sqrt)|[sqrtf](#sqrtf)|[tan](#tan)|
-|[tanf](#tanf)|[tanh](#tanh)|[tanhf](#tanhf)|
-|[trunc](#trunc)|[truncf](#truncf)|
+:::row:::
+   :::column span="":::
+      [`acos`](#acos)\
+      [`acosf`](#acosf)\
+      [`asin`](#asin)\
+      [`asinf`](#asinf)\
+      [`atan`](#atan)\
+      [`atan2`](#atan2)\
+      [`atan2f`](#atan2f)\
+      [`atanf`](#atanf)\
+      [`ceil`](#ceil)\
+      [`ceilf`](#ceilf)\
+      [`cos`](#cos)\
+      [`cosf`](#cosf)\
+      [`cosh`](#cosh)\
+      [`coshf`](#coshf)\
+      [`exp`](#exp)\
+      [`exp2`](#exp2)\
+      [`exp2f`](#exp2f)
+   :::column-end:::
+   :::column span="":::
+      [`expf`](#expf)\
+      [`fabs`](#fabs)\
+      [`fabsf`](#fabsf)\
+      [`floor`](#floor)\
+      [`floorf`](#floorf)\
+      [`fmax`](#fmax)\
+      [`fmaxf`](#fmaxf)\
+      [`fmin`](#fmin)\
+      [`fminf`](#fminf)\
+      [`fmod`](#fmod)\
+      [`fmodf`](#fmodf)\
+      [`frexp`](#frexp)\
+      [`frexpf`](#frexpf)\
+      [`isfinite`](#isfinite)\
+      [`isinf`](#isinf)\
+      [`isnan`](#isnan)
+   :::column-end:::
+   :::column span="":::
+      [`ldexp`](#ldexp)\
+      [`ldexpf`](#ldexpf)\
+      [`log`](#log)\
+      [`log10`](#log10)\
+      [`log10f`](#log10f)\
+      [`log2`](#log2)\
+      [`log2f`](#log2f)\
+      [`logf`](#logf)\
+      [`modf`](#modf)\
+      [`modff`](#modff)\
+      [`pow`](#pow)\
+      [`powf`](#powf)\
+      [`round`](#round)\
+      [`roundf`](#roundf)\
+      [`rsqrt`](#rsqrt)\
+      [`rsqrtf`](#rsqrtf)
+   :::column-end:::
+   :::column span="":::
+      [`signbit`](#signbit)\
+      [`signbitf`](#signbitf)\
+      [`sin`](#sin)\
+      [`sincos`](#sincos)\
+      [`sincosf`](#sincosf)\
+      [`sinf`](#sinf)\
+      [`sinh`](#sinh)\
+      [`sinhf`](#sinhf)\
+      [`sqrt`](#sqrt)\
+      [`sqrtf`](#sqrtf)\
+      [`tan`](#tan)\
+      [`tanf`](#tanf)\
+      [`tanh`](#tanh)\
+      [`tanhf`](#tanhf)\
+      [`trunc`](#trunc)\
+      [`truncf`](#truncf)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="acos"></a> acos
 

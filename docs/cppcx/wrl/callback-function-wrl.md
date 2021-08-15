@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Callback Function (WRL)"
 title: "Callback Function (WRL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -17,7 +18,7 @@ template<
    typename TCallback
 >
 ComPtr<TDelegateInterface> Callback(
-   TCallbackcallback
+   TCallback callback
 );
 template<
    typename TDelegateInterface,

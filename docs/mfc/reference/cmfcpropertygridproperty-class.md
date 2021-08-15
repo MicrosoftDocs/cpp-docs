@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCPropertyGridProperty Class"
 title: "CMFCPropertyGridProperty Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCPropertyGridProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::CMFCPropertyGridProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AddOption", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AddSubItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AdjustButtonRect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AdjustInPlaceEditRect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::AllowEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::CreateInPlaceEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::CreateSpinControl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Enable", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::EnableSpinControl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Expand", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::FormatProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetData", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetDescription", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetExpandedSubItems", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetHierarchyLevel", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetNameTooltip", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetOption", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetOptionCount", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetOriginalValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetParent", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetRect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetSubItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetSubItemsCount", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::GetValueTooltip", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::HitTest", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsAllowEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsEnabled", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsExpanded", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsGroup", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsInPlaceEditing", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsModified", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsParentExpanded", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsSelected", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsVisible", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnClickButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnClickName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnClickValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnCloseCombo", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDblClk", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawDescription", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawExpandBox", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDrawValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnEndEdit", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnKillSelection", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnPosSizeChanged", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnRClickName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnRClickValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnSelectCombo", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnSetCursor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnSetSelection", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnUpdateValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::PushChar", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Redraw", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::RemoveAllOptions", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::RemoveSubItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::ResetOriginalValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetData", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetDescription", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetName", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetOriginalValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::SetValue", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Show", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::CreateCombo", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::HasButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::Init", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsSubItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::IsValueChanged", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnCtlColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnDestroyWindow", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::OnKillFocus", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatDouble", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatFloat", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatLong", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatShort"]
@@ -483,9 +484,8 @@ int GetExpandedSubItems(BOOL bIncludeHidden=TRUE) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*bIncludeHidden*|[in] TRUE to include the hidden sub-items in the count; otherwise, FALSE. The default value is TRUE.|
+*bIncludeHidden*\
+[in] TRUE to include the hidden sub-items in the count; otherwise, FALSE. The default value is TRUE.
 
 ### Return Value
 
@@ -978,9 +978,8 @@ virtual void OnClickName(CPoint C);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*C*|[in] A point, in client coordinates.|
+*C*\
+[in] A point, in client coordinates.
 
 ### Remarks
 
@@ -1228,9 +1227,8 @@ virtual BOOL OnKillFocus(CWnd*);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*CWnd*|[in] (Not used.) Pointer to a window.|
+*CWnd*\
+[in] (Not used.) Pointer to a window.
 
 ### Return Value
 
@@ -1278,9 +1276,8 @@ virtual void OnRClickName(CPoint C);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*C*|[in] A point, in client coordinates.|
+*C*\
+[in] A point, in client coordinates.
 
 ### Remarks
 
@@ -1298,10 +1295,11 @@ virtual void OnRClickValue(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*C*|[in] A point, in client coordinates.|
-|*B*|[in] A Boolean.|
+*C*\
+[in] A point, in client coordinates.
+
+*B*\
+[in] A Boolean.
 
 ### Remarks
 

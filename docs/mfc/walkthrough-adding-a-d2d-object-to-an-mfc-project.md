@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Adding a D2D Object to an MFC Project"
 title: "Walkthrough: Adding a D2D Object to an MFC Project"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["MFC, D2D", "D2D [MFC]"]

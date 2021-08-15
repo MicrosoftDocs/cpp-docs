@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Move Constructors and Move Assignment Operators (C++)"
 title: "How to: Define move constructors and move assignment operators (C++)"
 ms.date: "03/05/2018"
 helpviewer_keywords: ["move constructor [C++]"]
@@ -161,13 +162,13 @@ The following procedures describe how to write a move constructor and a move ass
     return *this;
     ```
 
-## Example
+## Example: Complete move constructor and assignment operator
 
 The following example shows the complete move constructor and move assignment operator for the `MemoryBlock` class:
 
 ```cpp
 // Move constructor.
-MemoryBlock(MemoryBlock&& other)
+MemoryBlock(MemoryBlock&& other) noexcept
    : _data(nullptr)
    , _length(0)
 {
@@ -186,7 +187,7 @@ MemoryBlock(MemoryBlock&& other)
 }
 
 // Move assignment operator.
-MemoryBlock& operator=(MemoryBlock&& other)
+MemoryBlock& operator=(MemoryBlock&& other) noexcept
 {
    std::cout << "In operator=(MemoryBlock&&). length = "
              << other._length << "." << std::endl;
@@ -210,7 +211,7 @@ MemoryBlock& operator=(MemoryBlock&& other)
 }
 ```
 
-## Example
+## Example Use move semantics to improve performance
 
 The following example shows how move semantics can improve the performance of your applications. The example adds two elements to a vector object and then inserts a new element between the two existing elements. The `vector` class uses move semantics to perform the insertion operation efficiently by moving the elements of the vector instead of copying them.
 
@@ -241,15 +242,15 @@ In MemoryBlock(size_t). length = 25.
 In MemoryBlock(MemoryBlock&&). length = 25. Moving resource.
 In ~MemoryBlock(). length = 0.
 In MemoryBlock(size_t). length = 75.
+In MemoryBlock(MemoryBlock&&). length = 75. Moving resource.
 In MemoryBlock(MemoryBlock&&). length = 25. Moving resource.
 In ~MemoryBlock(). length = 0.
-In MemoryBlock(MemoryBlock&&). length = 75. Moving resource.
 In ~MemoryBlock(). length = 0.
 In MemoryBlock(size_t). length = 50.
 In MemoryBlock(MemoryBlock&&). length = 50. Moving resource.
-In MemoryBlock(MemoryBlock&&). length = 50. Moving resource.
-In operator=(MemoryBlock&&). length = 75.
-In operator=(MemoryBlock&&). length = 50.
+In MemoryBlock(MemoryBlock&&). length = 25. Moving resource.
+In MemoryBlock(MemoryBlock&&). length = 75. Moving resource.
+In ~MemoryBlock(). length = 0.
 In ~MemoryBlock(). length = 0.
 In ~MemoryBlock(). length = 0.
 In ~MemoryBlock(). length = 25. Deleting resource.
@@ -292,7 +293,7 @@ If you provide both a move constructor and a move assignment operator for your c
 
 ```cpp
 // Move constructor.
-MemoryBlock(MemoryBlock&& other)
+MemoryBlock(MemoryBlock&& other) noexcept
    : _data(nullptr)
    , _length(0)
 {
@@ -300,7 +301,7 @@ MemoryBlock(MemoryBlock&& other)
 }
 ```
 
-The [std::move](../standard-library/utility-functions.md#move) function preserves the rvalue property of the *other* parameter.
+The [std::move](../standard-library/utility-functions.md#move) function converts the lvalue `other` to an rvalue.
 
 ## See also
 

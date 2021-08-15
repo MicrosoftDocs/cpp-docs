@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCRTAllocator Class"
 title: "CCRTAllocator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CCRTAllocator", "ATLCORE/ATL::CCRTAllocator", "ATLCORE/ATL::CCRTAllocator::Allocate", "ATLCORE/ATL::CCRTAllocator::Free", "ATLCORE/ATL::CCRTAllocator::Reallocate"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency namespace functions (AMP)"
 title: "Concurrency namespace functions (AMP)"
 ms.date: "11/04/2016"
 f1_keywords: ["amp/Concurrency::all_memory_fence", "amp/Concurrency::atomic_compare_exchange", "amp/Concurrency::atomic_fetch_dec", "amp/Concurrency::atomic_fetch_max", "amp/Concurrency::atomic_fetch_min", "amp/Concurrency::copy", "amp/Concurrency::direct3d_abort", "amp/Concurrency::direct3d_printf", "amp/Concurrency::global_memory_fence", "amp/Concurrency::tile_static_memory_fence"]
@@ -6,15 +7,37 @@ ms.assetid: 2bef0985-cb90-4ece-90b9-66529aec73c9
 ---
 # Concurrency namespace functions (AMP)
 
-||||
-|-|-|-|
-|[all_memory_fence](#all_memory_fence)|[amp_uninitialize](#amp_uninitialize)|[atomic_compare_exchange](#atomic_compare_exchange)|
-|[atomic_exchange Function (C++ AMP)](#atomic_exchange)|[atomic_fetch_add Function (C++ AMP)](#atomic_fetch_add)|[atomic_fetch_and Function (C++ AMP)](#atomic_fetch_and)|
-|[atomic_fetch_dec](#atomic_fetch_dec)|[atomic_fetch_inc](#atomic_fetch_inc)|[atomic_fetch_max](#atomic_fetch_max)|
-|[atomic_fetch_min](#atomic_fetch_min)|[atomic_fetch_or Function (C++ AMP)](#atomic_fetch_or)|[atomic_fetch_sub Function (C++ AMP)](#atomic_fetch_sub)|
-|[atomic_fetch_xor Function (C++ AMP)](#atomic_fetch_xor)|[copy](#copy)|[copy_async](#copy_async)|
-|[direct3d_abort](#direct3d_abort)|[direct3d_errorf](#direct3d_errorf)|[direct3d_printf](#direct3d_printf)|
-|[global_memory_fence](#global_memory_fence)|[parallel_for_each Function (C++ AMP)](#parallel_for_each)|[tile_static_memory_fence](#tile_static_memory_fence)|
+:::row:::
+   :::column span="":::
+      [`all_memory_fence`](#all_memory_fence)\
+      [`amp_uninitialize`](#amp_uninitialize)\
+      [`atomic_compare_exchange`](#atomic_compare_exchange)\
+      [`atomic_exchange`](#atomic_exchange)\
+      [`atomic_fetch_add`](#atomic_fetch_add)\
+      [`atomic_fetch_and`](#atomic_fetch_and)
+   :::column-end:::
+   :::column span="":::
+      [`atomic_fetch_dec`](#atomic_fetch_dec)\
+      [`atomic_fetch_inc`](#atomic_fetch_inc)\
+      [`atomic_fetch_max`](#atomic_fetch_max)\
+      [`atomic_fetch_min`](#atomic_fetch_min)\
+      [`atomic_fetch_or`](#atomic_fetch_or)
+   :::column-end:::
+   :::column span="":::
+      [`atomic_fetch_sub`](#atomic_fetch_sub)\
+      [`atomic_fetch_xor`](#atomic_fetch_xor)\
+      [`copy`](#copy)\
+      [`copy_async`](#copy_async)\
+      [`direct3d_abort`](#direct3d_abort)
+   :::column-end:::
+   :::column span="":::
+      [`direct3d_errorf`](#direct3d_errorf)\
+      [`direct3d_printf`](#direct3d_printf)\
+      [`global_memory_fence`](#global_memory_fence)\
+      [`parallel_for_each`](#parallel_for_each)\
+      [`tile_static_memory_fence`](#tile_static_memory_fence)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="all_memory_fence"></a> all_memory_fence
 
@@ -68,7 +91,7 @@ The value to be stored to the memory location specified in by `_Dest` if `_Dest`
 
 ### Return Value
 
-**true** if the operation is successful; otherwise, **false**.
+**`true`** if the operation is successful; otherwise, **`false`**.
 
 ## <a name="atomic_exchange"></a> atomic_exchange Function (C++ AMP)
 

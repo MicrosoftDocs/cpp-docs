@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;variant&gt; functions"
 title: "&lt;variant&gt; functions"
 ms.date: "04/04/2019"
 f1_keywords: ["variant/std::get", "variant/std::get_if", "variant/std::holds_alternative", "variant/std::visit"]
@@ -45,7 +46,7 @@ template <class T, class... Types>
 
 ## <a name="holds_alternative"></a> holds_alternative
 
-Return **true** if a variant exists.
+Return **`true`** if a variant exists.
 
 ```cpp
 template <class T, class... Types>

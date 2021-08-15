@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Optimizing your code"
 title: "Optimizing Your Code"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["performance, optimizing code", "optimization", "cl.exe compiler, performance", "optimization, C++ code", "code, optimizing", "performance, compiler"]
@@ -68,7 +69,7 @@ The following topics provide information about how to optimize building, loading
 
 - [Specifying Compiler Optimization for an ATL Project](../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)
 
-- [What optimization techniques should I use to improve the client application's performance when loading?](../build/dll-frequently-asked-questions.md#mfc_optimization)
+- [What optimization techniques should I use to improve the client application's performance when loading?](../build/dll-frequently-asked-questions.yml#what-optimization-techniques-should-i-use-to-improve-the-client-application-s-performance-when-loading-)
 
 ## In this section
 

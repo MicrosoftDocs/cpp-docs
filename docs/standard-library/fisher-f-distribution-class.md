@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fisher_f_distribution Class"
 title: "fisher_f_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::fisher_f_distribution", "random/std::fisher_f_distribution::reset", "random/std::fisher_f_distribution::m", "random/std::fisher_f_distribution::n", "random/std::fisher_f_distribution::param", "random/std::fisher_f_distribution::min", "random/std::fisher_f_distribution::max", "random/std::fisher_f_distribution::operator()", "random/std::fisher_f_distribution::param_type", "random/std::fisher_f_distribution::param_type::m", "random/std::fisher_f_distribution::param_type::n", "random/std::fisher_f_distribution::param_type::operator==", "random/std::fisher_f_distribution::param_type::operator!="]
@@ -42,19 +43,17 @@ public:
 ### Parameters
 
 *RealType*\
-The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
+The floating-point result type, defaults to **`double`**. For possible types, see [\<random>](../standard-library/random.md).
 
 *URNG*\
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
-The class template describes a distribution that produces values of a user-specified floating-point type, or type **double** if none is provided, distributed according to the Fisher's F-Distribution. The following table links to articles about individual members.
+The class template describes a distribution that produces values of a user-specified floating-point type, or type **`double`** if none is provided, distributed according to the Fisher's F-Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[fisher_f_distribution](#fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|
-|`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[param_type](#param_type)|
+[fisher_f_distribution](#fisher_f_distribution)\
+[param_type](#param_type)
 
 The property functions `m()` and `n()` return the values for the stored distribution parameters `m` and `n` respectively.
 

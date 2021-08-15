@@ -1,15 +1,16 @@
 ---
 title: "tan, tanf, tanl"
-ms.date: "4/2/2020"
-api_name: ["tan", "tanf", "tanl", "_o_tan"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+description: "API reference for tan, tanf, and tanl; which calculate the tangent of a floating-point value."
+ms.date: "1/15/2021"
+api_name: ["tan", "tanf", "tanl", "_o_tan", "_o_tanf"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["tan", "tanf", "_tanl", "tanl"]
 helpviewer_keywords: ["tanl function", "_tanl function", "tan function", "calculating tangents", "tangent", "tanf function", "trigonometric functions"]
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
 ---
-# tan, tanf, tanl
+# `tan`, `tanf`, `tanl`
 
 Calculates the tangent.
 
@@ -19,6 +20,7 @@ Calculates the tangent.
 double tan( double x );
 float tanf( float x );
 long double tanl( long double x );
+#define tan(x) // Requires C11 or higher
 ```
 
 ```cpp
@@ -28,21 +30,23 @@ long double tan( long double x );  // C++ only
 
 ### Parameters
 
-*x*<br/>
+*`x`*\
 Angle in radians.
 
 ## Return value
 
-The **tan** functions return the tangent of *x*. If *x* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
+The **`tan`** functions return the tangent of *`x`*. If *`x`* is greater than or equal to 263, or less than or equal to -263, a loss of significance in the result occurs.
 
-|Input|SEH Exception|**Matherr** Exception|
+|Input|SEH exception|**`Matherr`** exception|
 |-----------|-------------------|-------------------------|
-|± QNAN,IND|none|_DOMAIN|
-|± INF|**INVALID**|_DOMAIN|
+|`± QNAN`,`IND`|none|`_DOMAIN`|
+|`± INF`|**INVALID**|`_DOMAIN`|
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **tan** that take and return **float** or **long** **double** values. In a C program, **tan** always takes and returns **double**.
+Because C++ allows overloading, you can call overloads of **`tan`** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the `<tgmath.h>` macro to call this function, **`tan`** always takes and returns **`double`**.
+
+If you use the `<tgmath.h>` `tan()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -50,9 +54,10 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header (C)|Required header (C++)|
 |-------------|---------------------|-|
-|**tan**, **tanf**, **tanl**|\<math.h>|\<cmath> or \<math.h>|
+|**`tan`**, **`tanf`**, **`tanl`**|`<math.h>`|`<cmath>` or `<math.h>`|
+|**`tan()`** macro | `<tgmath.h>` ||
 
-For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
+For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## Example
 
@@ -80,10 +85,10 @@ tan( 0.785398 ) = 1.000000
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[acos, acosf, acosl](acos-acosf-acosl.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[_CItan](../../c-runtime-library/citan.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)\
+[`acos`, `acosf`, `acosl`](acos-acosf-acosl.md)\
+[`asin`, `asinf`, `asinl`](asin-asinf-asinl.md)\
+[`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)\
+[`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\
+[`sin`, `sinf`, `sinl`](sin-sinf-sinl.md)\
+[`_CItan`](../../c-runtime-library/citan.md)

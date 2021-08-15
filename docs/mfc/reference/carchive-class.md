@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CArchive Class"
 title: "CArchive Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CArchive", "AFX/CArchive", "AFX/CArchive::CArchive", "AFX/CArchive::Abort", "AFX/CArchive::Close", "AFX/CArchive::Flush", "AFX/CArchive::GetFile", "AFX/CArchive::GetObjectSchema", "AFX/CArchive::IsBufferEmpty", "AFX/CArchive::IsLoading", "AFX/CArchive::IsStoring", "AFX/CArchive::MapObject", "AFX/CArchive::Read", "AFX/CArchive::ReadClass", "AFX/CArchive::ReadObject", "AFX/CArchive::ReadString", "AFX/CArchive::SerializeClass", "AFX/CArchive::SetLoadParams", "AFX/CArchive::SetObjectSchema", "AFX/CArchive::SetStoreParams", "AFX/CArchive::Write", "AFX/CArchive::WriteClass", "AFX/CArchive::WriteObject", "AFX/CArchive::WriteString", "AFX/CArchive::m_pDocument"]
@@ -102,7 +103,7 @@ The `CArchive` destructor will normally call `Close`, which will flush any data 
 
 When catching these exceptions, it is a good idea to use `Abort`, so that destructing the `CArchive` object doesn't cause further exceptions. When handling exceptions, `CArchive::Abort` will not throw an exception on failures because, unlike [CArchive::Close](#close), `Abort` ignores failures.
 
-If you used **new** to allocate the `CArchive` object on the heap, then you must delete it after closing the file.
+If you used **`new`** to allocate the `CArchive` object on the heap, then you must delete it after closing the file.
 
 ### Example
 
@@ -393,15 +394,13 @@ If you used the IMPLEMENT_SERIAL macro in your class implementation, then the in
 
 The [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) insertion operator (<<) supports diagnostic dumping and storing to an archive.
 
-### Example
+### Examples
 
-This example demonstrates the use of the `CArchive` insertion operator << with the **int** and **long** types.
+This example demonstrates the use of the `CArchive` insertion operator << with the **`int`** and **`long`** types.
 
 [!code-cpp[NVC_MFCSerialization#31](../../mfc/codesnippet/cpp/carchive-class_12.cpp)]
 
-### Example
-
-This example 2 demonstrates the use of the `CArchive` insertion operator << with the `CStringT` type.
+This example demonstrates the use of the `CArchive` insertion operator << with the `CStringT` type.
 
 [!code-cpp[NVC_MFCSerialization#32](../../mfc/codesnippet/cpp/carchive-class_13.cpp)]
 
@@ -473,15 +472,13 @@ If you used the IMPLEMENT_SERIAL macro in your class implementation, then the ex
 
 The [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) extraction operator (>>) supports loading from an archive.
 
-### Example
+### Examples
 
-This example demonstrates the use of the `CArchive` extraction operator >> with the **int** type.
+This example demonstrates the use of the `CArchive` extraction operator `>>` with the **`int`** type.
 
 [!code-cpp[NVC_MFCSerialization#33](../../mfc/codesnippet/cpp/carchive-class_14.cpp)]
 
-### Example
-
-This example demonstrates the use of the `CArchive` insertion and extraction operators <\< and >> with the `CStringT` type.
+This example demonstrates the use of the `CArchive` insertion and extraction operators `<<` and `>>` with the `CStringT` type.
 
 [!code-cpp[NVC_MFCSerialization#34](../../mfc/codesnippet/cpp/carchive-class_15.cpp)]
 

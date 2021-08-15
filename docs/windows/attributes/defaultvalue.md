@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: defaultvalue"
 title: "defaultvalue (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.defaultvalue"]
@@ -48,9 +49,7 @@ __interface IFireTabCtrl : IDispatch {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface parameter|
 |**Repeatable**|No|

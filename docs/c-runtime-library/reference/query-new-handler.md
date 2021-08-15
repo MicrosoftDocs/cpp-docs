@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _query_new_handler"
 title: "_query_new_handler"
 ms.date: "11/04/2016"
 api_name: ["_query_new_handler"]
@@ -27,7 +28,7 @@ Returns the address of the current new handler routine as set by **_set_new_hand
 
 ## Remarks
 
-The C++ **_query_new_handler** function returns the address of the current exception-handling function set by the C++ [_set_new_handler](set-new-handler.md) function. **_set_new_handler** is used to specify an exception-handling function that is to gain control if the **new** operator fails to allocate memory. For more information, see the discussion of the [new and delete operators](../../cpp/new-and-delete-operators.md) in the C++ Language Reference.
+The C++ **_query_new_handler** function returns the address of the current exception-handling function set by the C++ [_set_new_handler](set-new-handler.md) function. **_set_new_handler** is used to specify an exception-handling function that is to gain control if the **`new`** operator fails to allocate memory. For more information, see the discussion of the [new and delete operators](../../cpp/new-and-delete-operators.md) in the C++ Language Reference.
 
 ## Requirements
 

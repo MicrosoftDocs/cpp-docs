@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an MFC Class from a Type Library"
 title: "Adding an MFC Class from a Type Library"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["classes [MFC], adding MFC", "MFC, adding classes from type libraries", "type libraries, adding MFC classes from"]
@@ -11,7 +12,7 @@ Use this wizard to create an MFC class from an interface in an available type li
 > [!NOTE]
 > You do not need to create your MFC project with Automation enabled to add a class from a type library.
 
-A type library contains a binary description of the interfaces exposed by a component, defining the methods along with their parameters and return types. Your type library must be registered for it to appear in the **Available type libraries** list in the Add Class from Typelib Wizard. See "Inside Distributed COM: Type Libraries and Language Integration" in the MSDN library for more information.
+A type library contains a binary description of the interfaces exposed by a component, defining the methods along with their parameters and return types. Your type library must be registered for it to appear in the **Available type libraries** list in the Add Class from Typelib Wizard.
 
 ### To add an MFC class from a type library
 
@@ -19,7 +20,7 @@ A type library contains a binary description of the interfaces exposed by a comp
 
 1. From the shortcut menu, click **Add**, and then click **Add Class**.
 
-1. In the [Add Class](../../ide/add-class-dialog-box.md) dialog box, in the Templates pane, click **MFC Class from Typelib**, and then click **Open** to display the [Add Class from Typelib Wizard](../../mfc/reference/add-class-from-typelib-wizard.md).
+1. In the [Add Class](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) dialog box, in the Templates pane, click **MFC Class from Typelib**, and then click **Open** to display the [Add Class from Typelib Wizard](../../mfc/reference/add-class-from-typelib-wizard.md).
 
 In the wizard, you can add more than one class in a type library. Likewise, you can add classes from more than one type library in a single wizard session.
 

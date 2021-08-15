@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _set_SSE2_enable"
 title: "_set_SSE2_enable"
 ms.date: "04/05/2018"
 api_name: ["_set_SSE2_enable"]
@@ -90,4 +91,4 @@ SSE2 enabled.
 
 ## See also
 
-[CRT Library Features](../../c-runtime-library/crt-library-features.md)<br/>
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../../c-runtime-library/crt-library-features.md)

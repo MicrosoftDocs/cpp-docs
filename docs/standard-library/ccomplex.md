@@ -1,7 +1,8 @@
 ---
+description: "Learn more about: &lt;ccomplex&gt;"
 title: "&lt;ccomplex&gt;"
 ms.date: "07/11/2019"
-f1_keywords: ["<ccomplex>", "ccomplex"]
+f1_keywords: ["<ccomplex>"]
 helpviewer_keywords: ["ccomplex header"]
 ms.assetid: a9fcb5f0-88e3-464b-a5fd-d1afb8cd7e6f
 ---

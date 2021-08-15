@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /clr Restrictions"
 title: "/clr Restrictions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["/clr compiler option [C++], restrictions"]
@@ -48,7 +49,7 @@ Note the following restrictions on the use of **/clr**:
 
 - When using **/Zi** with **/clr**, there are performance implications. For more information, see [/Zi](z7-zi-zi-debug-information-format.md).
 
-- Passing a wide character to a .NET Framework output routine without also specifying [/Zc:wchar_t](zc-wchar-t-wchar-t-is-native-type.md) or without casting the character to `__wchar_t` will cause the output to appear as an `unsigned short int`. For example:
+- Passing a wide character to a .NET Framework output routine without also specifying [/Zc:wchar_t](zc-wchar-t-wchar-t-is-native-type.md) or without casting the character to **`__wchar_t`** will cause the output to appear as an `unsigned short int`. For example:
 
     ```cpp
     Console::WriteLine(L' ')              // Will output 32.

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Module Class"
 title: "Module Class"
 ms.date: "10/18/2018"
 ms.topic: "reference"
@@ -180,7 +181,7 @@ IID of a runtime class.
 The IActivationFactory for the specified runtime class.
 
 *serverName*<br/>
-The name of a subset of class factories in the current module. Specify the server name used in the [ActivatableClassWithFactoryEx](activatableclass-macros.md) macro, or specify `nullptr` to get the default server name.
+The name of a subset of class factories in the current module. Specify the server name used in the [ActivatableClassWithFactoryEx](activatableclass-macros.md) macro, or specify **`nullptr`** to get the default server name.
 
 ### Return Value
 
@@ -211,7 +212,7 @@ Interface ID that you request.
 Pointer to returned object.
 
 *serverName*<br/>
-The server name that is specified in either the `ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx`, or `ActivatableClass` macro; or `nullptr` to get the default server name.
+The server name that is specified in either the `ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx`, or `ActivatableClass` macro; or **`nullptr`** to get the default server name.
 
 ### Return Value
 
@@ -266,7 +267,7 @@ Module();
 
 ### Remarks
 
-This constructor is protected and cannot be called with the `new` keyword. Instead, call either [Module::GetModule](#getmodule) or [Module::Create](#create).
+This constructor is protected and cannot be called with the **`new`** keyword. Instead, call either [Module::GetModule](#getmodule) or [Module::Create](#create).
 
 ## <a name="objectcount"></a> Module::objectCount_
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3911"
 title: "Compiler Error C3911"
 ms.date: "11/04/2016"
 f1_keywords: ["C3911"]

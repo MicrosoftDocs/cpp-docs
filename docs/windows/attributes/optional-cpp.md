@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: optional (C++)"
 title: "optional  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.optional"]
@@ -38,9 +39,7 @@ __interface IFireTabCtrl : IDispatch
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface parameter|
 |**Repeatable**|No|

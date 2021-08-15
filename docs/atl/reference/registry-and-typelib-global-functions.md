@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Registry and TypeLib Global Functions"
 title: "Registry and TypeLib Global Functions"
 ms.date: "03/27/2019"
 f1_keywords: ["atlbase/ATL::AtlGetPerUserRegistration", "afxpriv/ATL::AfxRegCreateKey", "afxpriv/ATL::AfxRegDeleteKey", "atlbase/ATL::AtlRegisterTypeLib", "afxpriv/ATL::AfxRegOpenKey", "afxpriv/ATL::AfxRegOpenKeyEx", "afxdisp/ATL::AfxUnregisterPreviewHandler", "atlbase/ATL::AtlSetPerUserRegistration", "atlbase/ATL::AtlUnRegisterTypeLib", "atlbase/ATL::AtlLoadTypeLib", "atlbase/ATL::AtlUpdateRegistryFromResourceD", "atlbase/ATL::RegistryDataExchange"]
@@ -12,7 +13,7 @@ These functions provide support for loading and registering a type library.
 > [!IMPORTANT]
 > The functions listed in the following tables cannot be used in applications that execute in the Windows Runtime.
 
-|||
+|Name|Description|
 |-|-|
 |[AfxRegCreateKey](#afxregcreatekey)|Creates the specified registry key.|
 |[AfxRegDeleteKey](#afxregdeletekey)|Deletes the specified registry key.|
@@ -28,7 +29,7 @@ These functions provide support for loading and registering a type library.
 
 These functions control which node in the registry the program uses to store information.
 
-|||
+|Name|Description|
 |-|-|
 |[AtlGetPerUserRegistration](#atlgetperuserregistration)|Retrieves whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|
 |[AtlSetPerUserRegistration](#atlsetperuserregistration)|Sets whether the application redirects registry access to the **HKEY_CURRENT_USER** ( **HKCU**) node.|

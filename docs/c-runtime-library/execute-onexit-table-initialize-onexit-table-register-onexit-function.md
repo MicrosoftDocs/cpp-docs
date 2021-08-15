@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _execute_onexit_table, _initialize_onexit_table, _register_onexit_function"
 title: "_execute_onexit_table, _initialize_onexit_table, _register_onexit_function"
 ms.date: "4/2/2020"
 api_name: ["_execute_onexit_table", "_initialize_onexit_table", "_register_onexit_function", "_o__execute_onexit_table", "_o__initialize_onexit_table", "_o__register_onexit_function"]
-api_location: ["api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_execute_onexit_table", "process/_execute_onexit_table", "_initialize_onexit_table", "process/_initialize_onexit_table", "_register_onexit_function", "process/_register_onexit_function"]

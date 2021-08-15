@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __ud2"
 title: "__ud2"
 ms.date: "09/02/2019"
 f1_keywords: ["__ud2"]
@@ -21,7 +22,7 @@ void __ud2();
 
 The processor raises an invalid opcode exception if you execute an undefined instruction.
 
-The `__ud2` function is equivalent to the `UD2` machine instruction, and is available only in kernel mode. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](https://software.intel.com/articles/intel-sdm) site.
+The `__ud2` function is equivalent to the `UD2` machine instruction. For more information, search for the document, "Intel Architecture Software Developer's Manual, Volume 2: Instruction Set Reference," at the [Intel Corporation](https://software.intel.com/articles/intel-sdm) site.
 
 ## Requirements
 

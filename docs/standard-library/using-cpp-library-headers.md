@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using C++ Library Headers"
 title: "Using C++ Library Headers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["headers, naming in C++ include directive", "standard header in C++", "headers", "INCLUDE directive", "headers, C++ Standard Library", "library headers", "C++ Standard Library, headers"]
@@ -20,9 +21,9 @@ Every function in the library is declared in a standard header. Unlike in Standa
 
 All names other than **operator delete** and **operator new** in the C++ library headers are defined in the `std` namespace, or in a namespace nested within the `std` namespace. You refer to the name `cin`, for example, as `std::cin`. Note, however, that macro names are not subject to namespace qualification, so you always write `__STD_COMPLEX` without a namespace qualifier.
 
-In some translation environments, including a C++ library header may hoist external names declared in the `std` namespace into the global namespace as well, with individual **using** declarations for each of the names. Otherwise, the header does *not* introduce any library names into the current namespace.
+In some translation environments, including a C++ library header may hoist external names declared in the `std` namespace into the global namespace as well, with individual **`using`** declarations for each of the names. Otherwise, the header does *not* introduce any library names into the current namespace.
 
-The C++ Standard requires that the C Standard headers declare all external names in namespace `std`, then hoist them into the global namespace with individual **using** declarations for each of the names. But in some translation environments the C Standard headers include no namespace declarations, declaring all names directly in the global namespace. Thus, the most portable way to deal with namespaces is to follow two rules:
+The C++ Standard requires that the C Standard headers declare all external names in namespace `std`, then hoist them into the global namespace with individual **`using`** declarations for each of the names. But in some translation environments the C Standard headers include no namespace declarations, declaring all names directly in the global namespace. Thus, the most portable way to deal with namespaces is to follow two rules:
 
 - To assuredly declare in namespace `std` an external name that is traditionally declared in \<stdlib.h>, for example, include the header \<cstdlib>. Know that the name might also be declared in the global namespace.
 

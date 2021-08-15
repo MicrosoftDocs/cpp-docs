@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: implements_category"
 title: "implements_category (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.implements_category"]
@@ -45,11 +46,9 @@ class CMyClass {};
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|Yes|
 |**Required attributes**|One of the following: `coclass`, `progid`, or `vi_progid`|
 |**Invalid attributes**|None|

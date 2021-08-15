@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Bit Fields"
 title: "C Bit Fields"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["bitfields", "bit fields"]
@@ -14,9 +15,9 @@ In addition to declarators for members of a structure or union, a structure decl
 &nbsp;&nbsp;&nbsp;&nbsp;*declarator*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*type-specifier* *declarator*<sub>opt</sub> **:** *constant-expression*
 
-The *constant-expression* specifies the width of the field in bits. The *type-specifier* for the `declarator` must be `unsigned int`, **signed int**, or `int`, and the *constant-expression* must be a nonnegative integer value. If the value is zero, the declaration has no `declarator`. Arrays of bit fields, pointers to bit fields, and functions returning bit fields are not allowed. The optional `declarator` names the bit field. Bit fields can only be declared as part of a structure. The address-of operator (**&**) cannot be applied to bit-field components.
+The *constant-expression* specifies the width of the field in bits. The *type-specifier* for the `declarator` must be **`unsigned int`**, **`signed int`**, or **`int`**, and the *constant-expression* must be a nonnegative integer value. If the value is zero, the declaration has no `declarator`. Arrays of bit fields, pointers to bit fields, and functions returning bit fields are not allowed. The optional `declarator` names the bit field. Bit fields can only be declared as part of a structure. The address-of operator (**&**) cannot be applied to bit-field components.
 
-Unnamed bit fields cannot be referenced, and their contents at run time are unpredictable. They can be used as "dummy" fields, for alignment purposes. An unnamed bit field whose width is specified as 0 guarantees that storage for the member following it in the *struct-declaration-list* begins on an `int` boundary.
+Unnamed bit fields cannot be referenced, and their contents at run time are unpredictable. They can be used as "dummy" fields, for alignment purposes. An unnamed bit field whose width is specified as 0 guarantees that storage for the member following it in the *struct-declaration-list* begins on an **`int`** boundary.
 
 Bit fields must also be long enough to contain the bit pattern. For example, these two statements are not legal:
 
@@ -43,7 +44,7 @@ Bit fields have the same semantics as the integer type. This means a bit field i
 
 **Microsoft Specific**
 
-Bit fields defined as `int` are treated as signed. A Microsoft extension to the ANSI C standard allows `char` and **long** types (both **signed** and `unsigned`) for bit fields. Unnamed bit fields with base type **long**, **short**, or `char` (**signed** or `unsigned`) force alignment to a boundary appropriate to the base type.
+Bit fields defined as **`int`** are treated as **`signed`**. A Microsoft extension to the ANSI C standard allows **`char`** and **`long`** types (both **`signed`** and **`unsigned`**) for bit fields. Unnamed bit fields with base type **`long`**, **`short`**, or **`char`** (**`signed`** or **`unsigned`**) force alignment to a boundary appropriate to the base type.
 
 Bit fields are allocated within an integer from least-significant to most-significant bit. In the following code
 

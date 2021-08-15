@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: idl_quote"
 title: "idl_quote (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.idl_quote"]
@@ -65,9 +66,7 @@ This code causes `MYFLOT` and `MYDUB` and the *text* entry to be placed in the g
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

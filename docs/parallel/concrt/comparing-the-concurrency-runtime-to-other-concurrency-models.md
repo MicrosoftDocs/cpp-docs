@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Comparing the Concurrency Runtime to Other Concurrency Models"
 title: "Comparing the Concurrency Runtime to Other Concurrency Models"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Concurrency Runtime, compared to other models"]

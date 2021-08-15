@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRectTracker Class"
 title: "CRectTracker Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CRectTracker", "AFXEXT/CRectTracker", "AFXEXT/CRectTracker::CRectTracker", "AFXEXT/CRectTracker::AdjustRect", "AFXEXT/CRectTracker::Draw", "AFXEXT/CRectTracker::DrawTrackerRect", "AFXEXT/CRectTracker::GetHandleMask", "AFXEXT/CRectTracker::GetTrueRect", "AFXEXT/CRectTracker::HitTest", "AFXEXT/CRectTracker::NormalizeHit", "AFXEXT/CRectTracker::OnChangedRect", "AFXEXT/CRectTracker::SetCursor", "AFXEXT/CRectTracker::Track", "AFXEXT/CRectTracker::TrackRubberBand", "AFXEXT/CRectTracker::m_nHandleSize", "AFXEXT/CRectTracker::m_nStyle", "AFXEXT/CRectTracker::m_rect", "AFXEXT/CRectTracker::m_sizeMin"]
@@ -197,7 +198,7 @@ The resize handles appear on the sides and corners of the rectangle and allow th
 
 A rectangle has 8 resize handles numbered 0-7. Each resize handle is represented by a bit in the mask; the value of that bit is 2^ *n*, where *n* is the resize handle number. Bits 0-3 correspond to the corner resize handles, starting at the top left moving clockwise. Bits 4-7 correspond to the side resize handles starting at the top moving clockwise. The following illustration shows a rectangle's resize handles and their corresponding resize handle numbers and values:
 
-![Resize handle numbers](../../mfc/reference/media/vc35dp1.gif "Resize handle numbers")
+![Resize handle numbers.](../../mfc/reference/media/vc35dp1.gif "Resize handle numbers")
 
 The default implementation of `GetHandleMask` returns the mask of the bits so that the resize handles appear. If the single bit is on, the corresponding resize handle will be drawn.
 

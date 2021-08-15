@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add a class"
 title: "Add a class"
 ms.date: "05/14/2019"
 f1_keywords: ["vc.addclass"]
@@ -85,4 +86,4 @@ There are four categories of **Add Class** templates: .NET, ATL, MFC, and Generi
 
 |Template|Wizard|
 |--------------|------------|
-|Generic C++ Class|[Generic C++ class wizard](../ide/generic-cpp-class-wizard.md)|
+|Generic C++ Class|[Generic C++ class wizard](./adding-a-generic-cpp-class.md#generic-c-class-wizard)|

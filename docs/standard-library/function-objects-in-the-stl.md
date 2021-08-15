@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Objects in the C++ Standard Library"
 title: "Function Objects in the C++ Standard Library"
 ms.date: "03/15/2019"
 helpviewer_keywords: ["functors", "C++ Standard Library, functors", "C++ Standard Library, function objects", "function objects"]
@@ -37,7 +38,7 @@ The last line of the `main` function shows how you call the function object. Thi
 
 ## Function Objects and Containers
 
-The C++ Standard Library contains several function objects in the [\<functional>](../standard-library/functional.md) header file. One use of these function objects is as a sorting criterion for containers. For example, the `set` container is declared as follows:
+The C++ Standard Library contains several function objects in the [`<functional>`](../standard-library/functional.md) header file. One use of these function objects is as a sorting criterion for containers. For example, the `set` container is declared as follows:
 
 ```cpp
 template <class Key,
@@ -46,7 +47,7 @@ template <class Key,
 class set
 ```
 
-The second template argument is the function object `less`. This function object returns **true** if the first parameter is less than the second parameter. Since some containers sort their elements, the container needs a way of comparing two elements. The comparison is done by using the function object. You can define your own sorting criteria for containers by creating a function object and specifying it in the template list for the container.
+The second template argument is the function object `less`. This function object returns **`true`** if the first parameter is less than the second parameter. Since some containers sort their elements, the container needs a way of comparing two elements. The comparison is done by using the function object. You can define your own sorting criteria for containers by creating a function object and specifying it in the template list for the container.
 
 ## Function Objects and Algorithms
 
@@ -60,7 +61,7 @@ ForwardIterator remove_if(
     Predicate pred);
 ```
 
-The last argument to `remove_if` is a function object that returns a boolean value (a *predicate*). If the result of the function object is **true**, then the element is removed from the container being accessed by the iterators `first` and `last`. You can use any of the function objects declared in the [\<functional>](../standard-library/functional.md) header for the argument `pred` or you can create your own.
+The last argument to `remove_if` is a function object that returns a boolean value (a *predicate*). If the result of the function object is **`true`**, then the element is removed from the container being accessed by the iterators `first` and `last`. You can use any of the function objects declared in the [`<functional>`](../standard-library/functional.md) header for the argument `pred` or you can create your own.
 
 ## See also
 

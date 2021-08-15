@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: marshal_as"
 title: "marshal_as"
 ms.date: "07/12/2019"
 ms.topic: "reference"

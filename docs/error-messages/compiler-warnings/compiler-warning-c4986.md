@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning C4986"
 title: "Compiler Warning C4986"
 ms.date: "11/04/2016"
 f1_keywords: ["C4986"]
@@ -13,7 +14,7 @@ This warning can be generated when there is an exception specification in one de
 
 By default, C4986 is off. For more information, see [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
-## Example
+## Examples
 
 The following sample generates C4986.
 
@@ -26,8 +27,6 @@ void f1()
     // ...
 }
 ```
-
-## Example
 
 The following sample eliminates this warning.
 

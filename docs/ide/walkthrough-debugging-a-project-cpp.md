@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Debugging a Project (C++)"
 title: "Walkthrough: Debugging a Project (C++)"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["projects [C++], debugging", "project debugging [C++]", "debugging projects"]
@@ -38,7 +39,7 @@ In this walkthrough, you modify the program to fix the problem that you found wh
 
 1. To step through the program, on the menu bar, choose **Debug** > **Step Over**, or choose the **F10** key.
 
-   Notice that after each `Cardgame` constructor executes, the value of `totalParticipants` increases. When the `PlayGames` function returns, as each `Cardgame` instance goes out of scope and is deleted (and the destructor is called), `totalParticipants` decreases. Just before the `return` statement is executed, `totalParticipants` equals 0.
+   Notice that after each `Cardgame` constructor executes, the value of `totalParticipants` increases. When the `PlayGames` function returns, as each `Cardgame` instance goes out of scope and is deleted (and the destructor is called), `totalParticipants` decreases. Just before the **`return`** statement is executed, `totalParticipants` equals 0.
 
 1. Continue stepping through the program until it exits, or let it run by choosing **Debug** > **Run** on the menu bar, or by choosing the **F5** key.
 

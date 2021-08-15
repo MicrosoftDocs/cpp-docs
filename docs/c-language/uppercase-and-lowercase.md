@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Uppercase and Lowercase"
 title: "Uppercase and Lowercase"
 ms.date: "11/04/2016"
 ms.assetid: f33caa65-15ce-4b06-97a6-d19b3ab4d5ad

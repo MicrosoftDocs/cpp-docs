@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _get_purecall_handler, _set_purecall_handler"
 title: "_get_purecall_handler, _set_purecall_handler"
-ms.date: "11/04/2016"
+ms.date: "1/14/2021"
 api_name: ["_set_purecall_handler", "_set_purecall_handler_m", "_get_purecall_handler"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_set_purecall_handler", "_set_purecall_handler_m", "set_purecall_handler_m", "set_purecall_handler", "stdlib/_set_purecall_handler", "stdlib/_get_purecall_handler", "_get_purecall_handler"]
@@ -30,7 +31,7 @@ The function to be called when a pure virtual function is called. A **_purecall_
 
 ## Return Value
 
-The previous **_purecall_handler**. Returns **nullptr** if there was no previous handler.
+The previous **_purecall_handler**. Returns **`nullptr`** if there was no previous handler.
 
 ## Remarks
 
@@ -40,7 +41,7 @@ A call to a pure virtual function is an error because it has no implementation. 
 
 Because there is only one **_purecall_handler** for each process, when you call **_set_purecall_handler** it immediately impacts all threads. The last caller on any thread sets the handler.
 
-To restore the default behavior, call **_set_purecall_handler** by using a **nullptr** argument.
+To restore the default behavior, call **_set_purecall_handler** by using a **`nullptr`** argument.
 
 ## Requirements
 

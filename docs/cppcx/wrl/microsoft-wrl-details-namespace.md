@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Microsoft::WRL::Details Namespace"
 title: "Microsoft::WRL::Details Namespace"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -38,7 +39,7 @@ namespace Microsoft::WRL::Details;
 |[BoolStruct Structure](boolstruct-structure.md)|Defines whether a `ComPtr` is managing the object lifetime of an interface. `BoolStruct` is used internally by the [BoolType()](comptr-class.md#operator-microsoft-wrl-details-booltype) operator.|
 |[CreatorMap Structure](creatormap-structure.md)|Contains information about how to initialize, register, and unregister objects.|
 |[DerefHelper Structure](derefhelper-structure.md)|Represent a dereferenced pointer to the `T*` template parameter.|
-|[EnableIf Structure](enableif-structure.md)|Defines a data member of the type specified by the second template parameter if the first template parameter evaluates to `true`.|
+|[EnableIf Structure](enableif-structure.md)|Defines a data member of the type specified by the second template parameter if the first template parameter evaluates to **`true`**.|
 |[FactoryCache Structure](factorycache-structure.md)|Contains the location of a class factory and a value that identifies a registered Windows Runtime or COM class object.|
 |[ImplementsBase Structure](implementsbase-structure.md)|Used to validate template parameter types in [Implements Structure](implements-structure.md).|
 |[ImplementsHelper Structure](implementshelper-structure.md)|Helps implement the [Implements](implements-structure.md) structure.|

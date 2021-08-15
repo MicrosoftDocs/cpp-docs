@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _lseek, _lseeki64"
 title: "_lseek, _lseeki64"
 ms.date: "4/2/2020"
 api_name: ["_lseeki64", "_lseek", "_o__lseek", "_o__lseeki64"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_lseeki64", "_lseek", "lseeki64"]
@@ -49,7 +50,7 @@ For more information about these and other error codes, see [_doserrno, errno, _
 
 The **_lseek** function moves the file pointer associated with *fd* to a new location that is *offset* bytes from *origin*. The next operation on the file occurs at the new location. The *origin* argument must be one of the following constants, which are defined in Stdio.h.
 
-|*origin* value||
+|*origin* value| Description |
 |-|-|
 | **SEEK_SET** | Beginning of the file. |
 | **SEEK_CUR** | Current position of the file pointer. |

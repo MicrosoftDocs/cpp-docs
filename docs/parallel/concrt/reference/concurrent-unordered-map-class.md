@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: concurrent_unordered_map Class"
 title: "concurrent_unordered_map Class"
 ms.date: "11/04/2016"
 f1_keywords: ["concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::concurrent_unordered_map", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::at", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::hash_function", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::insert", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::key_eq", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::swap", "CONCURRENT_UNORDERED_MAP/concurrency::concurrent_unordered_map::unsafe_erase"]
@@ -281,7 +282,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the concurrent container is empty, **false** otherwise.
+**`true`** if the concurrent container is empty, **`false`** otherwise.
 
 ### Remarks
 

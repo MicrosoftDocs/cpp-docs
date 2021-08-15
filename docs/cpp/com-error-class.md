@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _com_error Class"
 title: "_com_error Class"
 ms.date: "11/04/2016"
 f1_keywords: ["_com_error"]
@@ -13,19 +14,19 @@ A **_com_error** object represents an exception condition detected by the error-
 
 ### Construction
 
-|||
+| Name | Description |
 |-|-|
 |[_com_error](../cpp/com-error-com-error.md)|Constructs a **_com_error** object.|
 
 ### Operators
 
-|||
+| Name | Description |
 |-|-|
 |[operator =](../cpp/com-error-operator-equal.md)|Assigns an existing **_com_error** object to another.|
 
 ### Extractor Functions
 
-|||
+| Name | Description |
 |-|-|
 |[Error](../cpp/com-error-error.md)|Retrieves the HRESULT passed to the constructor.|
 |[ErrorInfo](../cpp/com-error-errorinfo.md)|Retrieves the `IErrorInfo` object passed to the constructor.|
@@ -33,7 +34,7 @@ A **_com_error** object represents an exception condition detected by the error-
 
 ### IErrorInfo Functions
 
-|||
+| Name | Description |
 |-|-|
 |[Description](../cpp/com-error-description.md)|Calls `IErrorInfo::GetDescription` function.|
 |[HelpContext](../cpp/com-error-helpcontext.md)|Calls `IErrorInfo::GetHelpContext` function.|
@@ -43,13 +44,13 @@ A **_com_error** object represents an exception condition detected by the error-
 
 ### Format Message Extractor
 
-|||
+| Name | Description |
 |-|-|
 |[ErrorMessage](../cpp/com-error-errormessage.md)|Retrieves the string message for HRESULT stored in the **_com_error** object.|
 
 ### ExepInfo.wCode to HRESULT Mappers
 
-|||
+| Name | Description |
 |-|-|
 |[HRESULTToWCode](../cpp/com-error-hresulttowcode.md)|Maps 32-bit HRESULT to 16-bit `wCode`.|
 |[WCodeToHRESULT](../cpp/com-error-wcodetohresult.md)|Maps 16-bit `wCode` to 32-bit HRESULT.|

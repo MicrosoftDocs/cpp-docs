@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Calling C Functions in Inline Assembly"
 title: "Calling C Functions in Inline Assembly"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["function calls, C functions", "function calls, in inline assembly", "functions [C], calling in inline assembly", "Visual C, functions", "inline assembly, calling functions", "__asm keyword [C++], calling functions"]
@@ -8,7 +9,7 @@ ms.assetid: f8a8d568-d175-4e23-9b24-36ef60a4cab3
 
 **Microsoft Specific**
 
-An `__asm` block can call C functions, including C library routines. The following example calls the `printf` library routine:
+An **`__asm`** block can call C functions, including C library routines. The following example calls the `printf` library routine:
 
 ```cpp
 // InlineAssembler_Calling_C_Functions_in_Inline_Assembly.cpp

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCPropertyGridCtrl Class"
 title: "CMFCPropertyGridCtrl Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CMFCPropertyGridCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::CMFCPropertyGridCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::accSelect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::AddProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::AlwaysShowUserToolTip", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::CloseColorPopup", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::Create", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::DeleteProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::DrawControlBarColors", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EnableDescriptionArea", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EnableHeaderCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EnsureVisible", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::ExpandAll", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::FindItemByData", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accChildCount", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accFocus", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accHelp", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accHelpTopic", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accKeyboardShortcut", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::get_accSelection", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetBkColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetBoldFont", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetCurSel", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetCustomColors", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetDescriptionHeight", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetDescriptionRows", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetHeaderCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetHeaderHeight", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetLeftColumnWidth", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetListRect", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetPropertyColumnWidth", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetPropertyCount", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetRowHeight", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetScrollBarCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::GetTextColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::HitTest", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::InitHeader", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsAlphabeticMode", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsAlwaysShowUserToolTip", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsDescriptionArea", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsGroupNameFullWidth", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsHeaderCtrl", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsMarkModifiedProperties", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsShowDragContext", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::IsVSDotNetLook", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::MarkModifiedProperties", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::RemoveAll", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::ResetOriginalValues", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetAlphabeticMode", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetBoolLabels", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetCurSel", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetCustomColors", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetDescriptionRows", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetGroupNameFullWidth", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetListDelimiter", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetShowDragContext", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::SetVSDotNetLook", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::UpdateColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::AdjustLayout", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::CompareProps", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EditItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::EndEditItem", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::Init", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnChangeSelection", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnClickButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnDrawBorder", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnDrawDescription", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnDrawList", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnDrawProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnPropertyChanged", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnSelectCombo", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::ValidateItemData"]
@@ -141,7 +142,7 @@ The following table lists four selection property types:
 
 The following illustrations depict a property grid control that displays properties in two ways. The first illustration displays properties hierarchically and the second displays properties alphabetically.
 
-![Property List PropertySheet](../../mfc/reference/media/proplist.png "Property List PropertySheet")
+![Property List PropertySheet.](../../mfc/reference/media/proplist.png "Property List PropertySheet")
 
 ## Example
 
@@ -1101,10 +1102,11 @@ virtual void OnChangeSelection(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pNewSel*|[in] Pointer to the newly selected property.|
-|*pOldSel*|[in] Pointer to the previously selected property.|
+*pNewSel*\
+[in] Pointer to the newly selected property.
+
+*pOldSel*\
+[in] Pointer to the previously selected property.
 
 ### Remarks
 
@@ -1473,9 +1475,8 @@ virtual BOOL ValidateItemData(CMFCPropertyGridProperty* pProp);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pProp*|[in] Pointer to a property. This parameter is not used.|
+*pProp*\
+[in] Pointer to a property. This parameter is not used.
 
 ### Return Value
 

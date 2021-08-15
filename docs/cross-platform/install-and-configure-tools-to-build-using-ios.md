@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Install and configure tools to build using iOS"
 title: "Install and configure tools to build using iOS"
 ms.date: "10/17/2019"
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
@@ -8,7 +9,7 @@ ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
 You can use Visual Studio with the cross-platform **Mobile development with C++** tools to edit, debug, and deploy iOS code to the iOS Simulator or to an iOS device. But, because of licensing restrictions, the code must be built and run remotely on a Mac. To build and run iOS apps using Visual Studio, you need to set up and configure the remote agent, [vcremote](https://www.npmjs.com/package/vcremote), on your Mac. The remote agent handles build requests from Visual Studio and runs the app on an iOS device connected to the Mac, or in the iOS Simulator on the Mac.
 
 > [!NOTE]
-> For information on using cloud-hosted Mac services instead of a Mac, see [Configure Visual Studio to connect to your cloud hosted Mac](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). The instructions are for building using Visual Studio Tools for Apache Cordova. To use the instructions to build using C++, substitute `vcremote` for `remotebuild`.
+> For information on using cloud-hosted Mac services instead of a Mac, see [Configure Visual Studio to connect to your cloud hosted Mac](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017&preserve-view=true#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). The instructions are for building using Visual Studio Tools for Apache Cordova. To use the instructions to build using C++, substitute `vcremote` for `remotebuild`.
 
 Once you have installed the tools to build using iOS, refer to this article for ways to quickly configure and update the remote agent for iOS development in Visual Studio and on your Mac.
 
@@ -91,7 +92,7 @@ The remote agent must be running for Visual Studio to build and run your iOS cod
 
 The first time you start the agent, and every time you create a new client certificate, you are provided with the required information to configure the agent in Visual Studio, including the host name, the port, and the PIN.
 
-![Use vcremote to generate a secure PIN](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "Use vcremote to generate a secure PIN")
+![Use vcremote to generate a secure PIN.](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "Use vcremote to generate a secure PIN")
 
 If you intend to configure the remote agent in Visual Studio using the host name, ping the Mac from Windows using the host name to verify that it is reachable. Otherwise, you may need to use the IP address instead.
 
@@ -142,7 +143,7 @@ To connect to the remote agent from Visual Studio, you must specify the remote c
 
 1. Choose **Pair** to enable the pairing.
 
-   ![Configure vcremote connection for iOS builds](../cross-platform/media/cppmdd-options-ios.png "Configure vcremote connection for iOS builds")
+   ![Configure vcremote connection for iOS builds.](../cross-platform/media/cppmdd-options-ios.png "Configure vcremote connection for iOS builds")
 
    The pairing persists until you change the host name or port. If you change the host name or port in the **Options** dialog box, to undo the change, choose the **Revert** button to revert to the previous pairing.
 

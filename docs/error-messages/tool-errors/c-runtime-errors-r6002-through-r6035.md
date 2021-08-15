@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Runtime errors (Rxxxx)"
 title: "C Runtime errors"
 ms.date: "04/16/2019"
 f1_keywords: ["c.errors", "R6000", "R6003", "R6010", "R6022", "R6023", "R6034"]

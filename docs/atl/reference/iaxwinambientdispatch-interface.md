@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAxWinAmbientDispatch Interface"
 title: "IAxWinAmbientDispatch Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IAxWinAmbientDispatch", "ATLIFACE/ATL::IAxWinAmbientDispatch", "ATLIFACE/ATL::get_AllowContextMenu", "ATLIFACE/ATL::get_AllowShowUI", "ATLIFACE/ATL::get_AllowWindowlessActivation", "ATLIFACE/ATL::get_BackColor", "ATLIFACE/ATL::get_DisplayAsDefault", "ATLIFACE/ATL::get_DocHostDoubleClickFlags", "ATLIFACE/ATL::get_DocHostFlags", "ATLIFACE/ATL::get_Font", "ATLIFACE/ATL::get_ForeColor", "ATLIFACE/ATL::get_LocaleID", "ATLIFACE/ATL::get_MessageReflect", "ATLIFACE/ATL::get_OptionKeyPath", "ATLIFACE/ATL::get_ShowGrabHandles", "ATLIFACE/ATL::get_ShowHatching", "ATLIFACE/ATL::get_UserMode", "ATLIFACE/ATL::put_AllowContextMenu", "ATLIFACE/ATL::put_AllowShowUI", "ATLIFACE/ATL::put_AllowWindowlessActivation", "ATLIFACE/ATL::put_BackColor", "ATLIFACE/ATL::put_DisplayAsDefault", "ATLIFACE/ATL::put_DocHostDoubleClickFlags", "ATLIFACE/ATL::put_DocHostFlags", "ATLIFACE/ATL::put_Font", "ATLIFACE/ATL::put_ForeColor", "ATLIFACE/ATL::put_LocaleID", "ATLIFACE/ATL::put_MessageReflect", "ATLIFACE/ATL::put_OptionKeyPath", "ATLIFACE/ATL::put_UserMode"]
@@ -22,7 +23,7 @@ interface IAxWinAmbientDispatch : IDispatch
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[get_AllowContextMenu](#get_allowcontextmenu)|The `AllowContextMenu` property specifies whether the hosted control is allowed to display its own context menu.|
 |[get_AllowShowUI](#get_allowshowui)|The `AllowShowUI` property specifies whether the hosted control is allowed to display its own user interface.|
@@ -61,7 +62,7 @@ This interface is exposed by ATL's ActiveX control hosting objects. Call the met
 
 If you are linking to ATL90.dll, **AXHost** will load the type information from the typelib in the DLL.
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for more details.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for more details.
 
 ## Requirements
 

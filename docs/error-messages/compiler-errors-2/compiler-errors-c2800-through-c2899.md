@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C2800 Through C2899"
 title: "Compiler errors C2800 Through C2899"
 ms.date: "04/21/2019"
 f1_keywords: ["C2816", "C2820", "C2822", "C2826", "C2832", "C2836", "C2837", "C2840", "C2841", "C2848", "C2851", "C2852", "C2853", "C2866", "C2880", "C2887", "C2889", "C2895", "C2899"]
@@ -119,4 +120,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

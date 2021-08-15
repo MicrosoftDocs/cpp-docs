@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRestrictions Class"
 title: "CRestrictions Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::CRestrictions", "CRestrictions", "ATL.CRestrictions", "CRestrictions.Open", "ATL::CRestrictions::Open", "ATL.CRestrictions.Open", "CRestrictions::Open"]
@@ -36,7 +37,7 @@ A pointer to the GUID for the schema.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Open](#open)|Returns a result set according to the user-supplied restrictions.|
 
@@ -67,7 +68,7 @@ HRESULT Open(const CSession& session,
 [in] Specifies the restrictions on the schema rowset.
 
 *bBind*<br/>
-[in] Specifies whether to bind the column map automatically. The default is **true**, which causes the column map to be bound automatically. Setting *bBind* to **false** prevents the automatic binding of the column map so that you can bind manually. (Manual binding is of particular interest to OLAP users.)
+[in] Specifies whether to bind the column map automatically. The default is **`true`**, which causes the column map to be bound automatically. Setting *bBind* to **`false`** prevents the automatic binding of the column map so that you can bind manually. (Manual binding is of particular interest to OLAP users.)
 
 ### Return Value
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3389"
 title: "Compiler Error C3389"
 ms.date: "11/04/2016"
 f1_keywords: ["C3389"]
@@ -11,9 +12,9 @@ ms.assetid: eaaffe17-23f2-413c-b1ad-f7220cfa1334
 
 ## Remarks
 
-The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
+The **`/clr:pure`** and **`/clr:safe`** compiler options are deprecated in Visual Studio 2015 and unsupported in Visual Studio 2017.
 
-A [__declspec](../../cpp/declspec.md) modifier used implies a per process state.  [/clr:pure](../../build/reference/clr-common-language-runtime-compilation.md) implies a per [appdomain](../../cpp/appdomain.md) state.  So, declaring a variable with the `keyword`**__declspec** modifier and compiling with **/clr:pure** is not allowed.
+A [`__declspec`](../../cpp/declspec.md) modifier used implies a per-process state.  [`/clr:pure`](../../build/reference/clr-common-language-runtime-compilation.md) implies a per-[`appdomain`](../../cpp/appdomain.md) state.  So, declaring a variable with the *keyword* **`__declspec`** modifier and compiling with **`/clr:pure`** isn't allowed.
 
 ## Example
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: defaultbind"
 title: "defaultbind (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.defaultbind"]
@@ -25,9 +26,7 @@ See the example for [bindable](bindable.md) for an example of how to use **defau
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface method|
 |**Repeatable**|No|

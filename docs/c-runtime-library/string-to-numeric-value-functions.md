@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: String to Numeric Value Functions"
 title: "String to Numeric Value Functions"
 ms.date: "11/04/2016"
 api_location: ["msvcr80.dll", "msvcr110.dll", "msvcr120.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr90.dll"]
@@ -29,8 +30,8 @@ Each function in the **strtod** family converts a null-terminated string to a nu
 |`strtod`|Convert string to double-precision floating point value|
 |`strtol`|Convert string to long integer|
 |`strtoul`|Convert string to unsigned long integer|
-|`_strtoi64`|Convert string to 64-bit `__int64` integer|
-|`_strtoui64`|Convert string to unsigned 64-bit `__int64` integer|
+|`_strtoi64`|Convert string to 64-bit **`__int64`** integer|
+|`_strtoui64`|Convert string to unsigned 64-bit **`__int64`** integer|
 
 `wcstod`, `wcstol`, `wcstoul`, and `_wcstoi64` are wide-character versions of `strtod`, `strtol`, `strtoul`, and `_strtoi64`, respectively. The string argument to each of these wide-character functions is a wide-character string; each function behaves identically to its single-byte-character counterpart otherwise.
 

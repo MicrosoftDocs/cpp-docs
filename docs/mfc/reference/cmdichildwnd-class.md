@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMDIChildWnd Class"
 title: "CMDIChildWnd Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMDIChildWnd", "AFXWIN/CMDIChildWnd", "AFXWIN/CMDIChildWnd::CMDIChildWnd", "AFXWIN/CMDIChildWnd::Create", "AFXWIN/CMDIChildWnd::GetMDIFrame", "AFXWIN/CMDIChildWnd::MDIActivate", "AFXWIN/CMDIChildWnd::MDIDestroy", "AFXWIN/CMDIChildWnd::MDIMaximize", "AFXWIN/CMDIChildWnd::MDIRestore", "AFXWIN/CMDIChildWnd::SetHandles"]
@@ -49,7 +50,7 @@ There are three ways to construct an MDI child window:
 
 - Indirectly construct it through a document template.
 
-Before you call `Create` or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **new** operator. Before calling `Create` you can also register a window class with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.
+Before you call `Create` or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **`new`** operator. Before calling `Create` you can also register a window class with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.
 
 Use the `Create` member function to pass the frame's creation parameters as immediate arguments.
 
@@ -65,7 +66,7 @@ The `CMDIChildWnd` class inherits much of its default implementation from `CFram
 
 - The currently active MDI child window menu entirely replaces the MDI frame window's menu, and the caption of the currently active MDI child window is added to the MDI frame window's caption. For further examples of MDI child window functions that are implemented in conjunction with an MDI frame window, see the `CMDIFrameWnd` class description.
 
-Do not use the C++ **delete** operator to destroy a frame window. Use `CWnd::DestroyWindow` instead. The `CFrameWnd` implementation of `PostNcDestroy` will delete the C++ object when the window is destroyed. When the user closes the frame window, the default `OnClose` handler will call `DestroyWindow`.
+Do not use the C++ **`delete`** operator to destroy a frame window. Use `CWnd::DestroyWindow` instead. The `CFrameWnd` implementation of `PostNcDestroy` will delete the C++ object when the window is destroyed. When the user closes the frame window, the default `OnClose` handler will call `DestroyWindow`.
 
 For more information on `CMDIChildWnd`, see [Frame Windows](../../mfc/frame-windows.md).
 
@@ -145,17 +146,19 @@ The currently active MDI child frame window can determine the caption of the par
 
 The framework calls this member function in response to a user command to create a child window, and the framework uses the *pContext* parameter to properly connect the child window to the application. When you call `Create`, *pContext* can be NULL.
 
-### Example
+### Example 1
 
-Example 1:
+This example menu command handler invokes `Create` to create an MDI child window:
 
 [!code-cpp[NVC_MFCWindowing#7](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_1.cpp)]
 
-### Example
+### Example 2
 
-Example 2:
+The example code calls the `Create` method of `CHelloWnd`, a class derived from `CMDIChildWnd`:
 
 [!code-cpp[NVC_MFCWindowing#8](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_2.cpp)]
+
+This example shows the `Create` implementation of the `CHelloWnd` class:
 
 [!code-cpp[NVC_MFCWindowing#9](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_3.cpp)]
 

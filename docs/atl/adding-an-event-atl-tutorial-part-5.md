@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an Event (ATL Tutorial, Part 5)"
 title: "Adding an Event (ATL Tutorial, Part 5)"
 ms.custom: "get-started-article"
 ms.date: "09/27/2018"

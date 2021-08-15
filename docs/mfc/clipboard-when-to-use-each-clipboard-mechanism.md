@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Clipboard: When to Use Each Clipboard Mechanism"
 title: "Clipboard: When to Use Each Clipboard Mechanism"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["applications [OLE], Clipboard", "OLE Clipboard, guidelines", "Clipboard [MFC], mechanisms", "OLE Clipboard, formats", "formats [MFC], Clipboard for OLE", "Clipboard [MFC], formats"]
@@ -16,10 +17,10 @@ Follow these guidelines in using the Clipboard:
 
 ## What do you want to do
 
-- [Use the OLE Clipboard mechanism](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
+- [Use the OLE Clipboard mechanism](clipboard-using-the-ole-clipboard-mechanism.md)
 
-- [Use the Windows Clipboard mechanism](../mfc/clipboard-using-the-windows-clipboard.md)
+- [Use the Windows Clipboard mechanism](clipboard-using-the-windows-clipboard.md)
 
 ## See also
 
-[Clipboard](../mfc/clipboard.md)
+[Clipboard](clipboard.md)

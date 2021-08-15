@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Significant Characters Without External Linkage"
 title: "Significant Characters Without External Linkage"
 ms.date: "11/04/2016"
 ms.assetid: 396cfb36-391a-4aa9-885d-20198d4dc2ec
@@ -11,4 +12,4 @@ Identifiers are significant to 247 characters. The compiler does not restrict th
 
 ## See also
 
-[Using extern to Specify Linkage](../cpp/using-extern-to-specify-linkage.md)
+[Using extern to Specify Linkage](../cpp/extern-cpp.md)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: const_mem_fun_t Class"
 title: "const_mem_fun_t Class"
 ms.date: "02/21/2019"
 f1_keywords: ["functional/std::const_mem_fun_t"]
@@ -34,7 +35,7 @@ An adaptable unary function.
 
 ## Remarks
 
-The class template stores a copy of *Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning (`Pleft`->\* `Pm`)() **const**.
+The class template stores a copy of *Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning (`Pleft`->\* `Pm`)() **`const`**.
 
 ## Example
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDBCreateCommandImpl Class"
 title: "IDBCreateCommandImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::IDBCreateCommandImpl", "IDBCreateCommandImpl", "ATL.IDBCreateCommandImpl", "IDBCreateCommandImpl.CreateCommand", "IDBCreateCommandImpl::CreateCommand"]
@@ -33,7 +34,7 @@ Your command class.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CreateCommand](#createcommand)|Creates a new command.|
 

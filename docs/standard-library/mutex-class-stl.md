@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: mutex Class (C++ Standard Library)"
 title: "mutex Class (C++ Standard Library)| Microsoft Docs"
 ms.date: "11/04/2016"
 f1_keywords: ["mutex/std::mutex", "mutex/std::mutex::mutex", "mutex/std::mutex::lock", "mutex/std::mutex::native_handle", "mutex/std::mutex::try_lock", "mutex/std::mutex::unlock"]
@@ -93,7 +94,7 @@ bool try_lock();
 
 ### Return Value
 
-**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
+**`true`** if the method successfully obtains ownership of the `mutex`; otherwise, **`false`**.
 
 ### Remarks
 

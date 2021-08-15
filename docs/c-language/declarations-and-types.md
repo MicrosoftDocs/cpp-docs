@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Declarations and Types"
 title: "Declarations and Types"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data types [C]", "types [C]", "declarations [C++], C", "declarations [C++], types"]

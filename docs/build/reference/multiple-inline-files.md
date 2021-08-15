@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Multiple Inline Files"
 title: "Multiple Inline Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["inline files, multiple NMAKE", "multiple inline files", "NMAKE program, inline files"]

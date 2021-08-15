@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Help Menu Merging"
 title: "Help Menu Merging"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["menus [MFC], merging", "merging Help menus [MFC]", "Help [MFC], for active document containers"]
@@ -42,4 +43,4 @@ Finally, when it is time to disassemble the menu, the object removes the inserte
 
 ## See also
 
-[Active Document Containers](../mfc/active-document-containers.md)
+[Active Document Containers](active-document-containers.md)

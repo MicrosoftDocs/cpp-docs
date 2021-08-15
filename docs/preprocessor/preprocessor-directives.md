@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Preprocessor directives"
 title: "Preprocessor directives"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["directives, preprocessor", "preprocessor, directives"]
@@ -12,12 +13,30 @@ Preprocessor statements use the same character set as source file statements, wi
 
 The preprocessor recognizes the following directives:
 
-|||||
-|-|-|-|-|
-|[#define](../preprocessor/hash-define-directive-c-cpp.md)|[#error](../preprocessor/hash-error-directive-c-cpp.md)|[#import](../preprocessor/hash-import-directive-cpp.md)|[#undef](../preprocessor/hash-undef-directive-c-cpp.md)|
-|[#elif](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|[#if](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|[#include](../preprocessor/hash-include-directive-c-cpp.md)|[#using](../preprocessor/hash-using-directive-cpp.md)|
-|[#else](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|[#ifdef](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)|[#line](../preprocessor/hash-line-directive-c-cpp.md)|[#endif](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|
-|[#ifndef](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)|[#pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)|||
+:::row:::
+   :::column span="":::
+      [`#define`](../preprocessor/hash-define-directive-c-cpp.md)\
+      [`#elif`](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)\
+      [`#else`](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)\
+      [`#endif`](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)
+   :::column-end:::
+   :::column span="":::
+      [`#error`](../preprocessor/hash-error-directive-c-cpp.md)\
+      [`#if`](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)\
+      [`#ifdef`](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)\
+      [`#ifndef`](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)
+   :::column-end:::
+   :::column span="":::
+      [`#import`](../preprocessor/hash-import-directive-cpp.md)\
+      [`#include`](../preprocessor/hash-include-directive-c-cpp.md)\
+      [`#line`](../preprocessor/hash-line-directive-c-cpp.md)
+   :::column-end:::
+   :::column span="":::
+      [`#pragma`](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
+      [`#undef`](../preprocessor/hash-undef-directive-c-cpp.md)\
+      [`#using`](../preprocessor/hash-using-directive-cpp.md)
+   :::column-end:::
+:::row-end:::
 
 The number sign (`#`) must be the first nonwhite-space character on the line containing the directive. White-space characters can appear between the number sign and the first letter of the directive. Some directives include arguments or values. Any text that follows a directive (except an argument or value that is part of the directive) must be preceded by the single-line comment delimiter (`//`) or enclosed in comment delimiters (`/* */`). Lines containing preprocessor directives can be continued by immediately preceding the end-of-line marker with a backslash (`\`).
 

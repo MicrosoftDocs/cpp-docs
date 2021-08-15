@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: exponential_distribution Class"
 title: "exponential_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::exponential_distribution", "random/std::exponential_distribution::reset", "random/std::exponential_distribution::lambda", "random/std::exponential_distribution::param", "random/std::exponential_distribution::min", "random/std::exponential_distribution::max", "random/std::exponential_distribution::operator()", "random/std::exponential_distribution::param_type", "random/std::exponential_distribution::param_type::lambda", "random/std::exponential_distribution::param_type::operator==", "random/std::exponential_distribution::param_type::operator!="]
@@ -43,19 +44,17 @@ public:
 ### Parameters
 
 *RealType*\
-The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
+The floating-point result type, defaults to **`double`**. For possible types, see [\<random>](../standard-library/random.md).
 
 *URNG*\
 The random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
-The class template describes a distribution that produces values of a user-specified integral type, or type **double** if none is provided, distributed according to the Exponential Distribution. The following table links to articles about individual members.
+The class template describes a distribution that produces values of a user-specified integral type, or type **`double`** if none is provided, distributed according to the Exponential Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[exponential_distribution](#exponential_distribution)|`exponential_distribution::lambda`|`exponential_distribution::param`|
-|`exponential_distribution::operator()`||[param_type](#param_type)|
+[exponential_distribution](#exponential_distribution)\
+[param_type](#param_type)
 
 The property member function `lambda()` returns the value for the stored distribution parameter `lambda`.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Porting Guide: MFC Scribble"
 title: "Porting Guide: MFC Scribble"
 ms.date: "10/23/2019"
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
@@ -25,19 +26,19 @@ Note that you can also run devenv at the command line, using the `/Upgrade` opti
 
 When you open an old project file in Visual Studio, Visual Studio offers to convert the project file to the most recent version, which we accepted. The following dialog box appeared:
 
-![Review Project and Solution Changes](../porting/media/scribbleprojectupgrade.PNG "Review Project and Solution Changes")
+![Review Project and Solution Changes dialog.](../porting/media/scribbleprojectupgrade.PNG "Review Project and Solution Changes")
 
 An error occurred notifying us that the Itanium target is not available and won't be converted.
 
 ```Output
-Platform 'Itanium' is missing from this project. All the configurations and their file configuration settings specific to this platform will be ignored. If you want this platform converted, please make sure you have the corresponding platform installed under '%vctargetpath%\platforms\Itanium'.Continue to convert this project without this platform?
+Platform 'Itanium' is missing from this project. All the configurations and their file configuration settings specific to this platform will be ignored. If you want this platform converted, please make sure you have the corresponding platform installed under '%vctargetpath%\platforms\Itanium'. Continue to convert this project without this platform?
 ```
 
 At the time the previous Scribble project was created, Itanium was an important target platform. The Windows platform no longer supports Itanium, so we chose to continue without supporting the Itanium platform.
 
 Visual Studio then displayed a migration report listing all of the issues with the old project file.
 
-![Upgrade Report](../porting/media/scribblemigrationreport.PNG "Upgrade Report")
+![Screenshot of the Upgrade Report.](../porting/media/scribblemigrationreport.PNG "Upgrade Report")
 
 In this case, the issues were all warnings, and Visual Studio made the appropriate changes in the project file. The big difference as far as the project is concerned is that the build tool changed from vcbuild to msbuild. This change was first introduced in Visual Studio 2010. Other changes include some rearrangement of the sequence of elements in the project file itself. None of the issues required further attention for this simple project.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Directives to the Preprocessor"
 title: "Directives to the Preprocessor"
 ms.date: "11/04/2016"
 ms.assetid: adc6251e-cf6b-4508-bdbb-55f446c838d3

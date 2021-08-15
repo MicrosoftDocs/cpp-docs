@@ -1,14 +1,14 @@
 ---
-title: "&lt;ios&gt; typedefs"
-ms.date: "11/04/2016"
+title: "`<ios>` typedefs"
+description: "Describes the C++ standard template library (STL) `<ios>` typedefs that support the `ios` class from the old `iostream` library."
+ms.date: "11/06/2020"
 f1_keywords: ["iosfwd/std::ios", "iosfwd/std::streamoff", "iosfwd/std::streampos", "iosfwd/std::streamsize", "iosfwd/std::wios", "iosfwd/std::wstreampos"]
-ms.assetid: 0b962632-3439-44de-bf26-20c67a7f0ff3
 ---
-# &lt;ios&gt; typedefs
+# `<ios>` typedefs
 
-## <a name="ios"></a> ios
+## `ios`
 
-Supports the ios class from the old iostream library.
+Supports the `ios` class from the old `iostream` library.
 
 ```cpp
 typedef basic_ios<char, char_traits<char>> ios;
@@ -16,9 +16,9 @@ typedef basic_ios<char, char_traits<char>> ios;
 
 ### Remarks
 
-The type is a synonym for class template [basic_ios](../standard-library/basic-ios-class.md), specialized for elements of type **char** with default character traits.
+The type is a synonym for class template [`basic_ios`](../standard-library/basic-ios-class.md), specialized for elements of type **`char`** with default character traits.
 
-## <a name="streamoff"></a> streamoff
+## `streamoff`
 
 Supports internal operations.
 
@@ -32,9 +32,9 @@ Supports internal operations.
 
 ### Remarks
 
-The type is a signed integer that describes an object that can store a byte offset involved in various stream positioning operations. Its representation has at least 32 value bits. It is not necessarily large enough to represent an arbitrary byte position within a stream. The value `streamoff(-1)` generally indicates an erroneous offset.
+The type is a signed integer. It describes an object that can store a byte offset in stream positioning operations. Its representation has at least 32 value bits. It isn't necessarily large enough to represent an arbitrary byte position within a stream. The value `streamoff(-1)` generally indicates an erroneous offset.
 
-## <a name="streampos"></a> streampos
+## `streampos`
 
 Holds the current position of the buffer pointer or file pointer.
 
@@ -44,7 +44,7 @@ typedef fpos<mbstate_t> streampos;
 
 ### Remarks
 
-The type is a synonym for [fpos](../standard-library/fpos-class.md)< `mbstate_t`>.
+The type is a synonym for [`fpos`](../standard-library/fpos-class.md)< `mbstate_t`>.
 
 ### Example
 
@@ -61,7 +61,7 @@ int main( )
    ofstream x( "iostream.txt" );
    x << "testing";
    streampos y = x.tellp( );
-   cout << y << endl;
+   cout << streamoff( y ) << '\n';
 }
 ```
 
@@ -69,7 +69,7 @@ int main( )
 7
 ```
 
-## <a name="streamsize"></a> streamsize
+## `streamsize`
 
 Denotes the size of the stream.
 
@@ -83,11 +83,11 @@ Denotes the size of the stream.
 
 ### Remarks
 
-The type is a signed integer that describes an object that can store a count of the number of elements involved in various stream operations. Its representation has at least 16 bits. It is not necessarily large enough to represent an arbitrary byte position within a stream.
+The type is a signed integer that describes an object that can store a count of the number of elements involved in various stream operations. Its representation has at least 16 bits. It isn't necessarily large enough to represent an arbitrary byte position within a stream.
 
 ### Example
 
-After compiling and running the following program, look at the file test.txt to see the effect of setting `streamsize`.
+After compiling and running the following program, look at the file `test.txt` to see the effect of setting `streamsize`.
 
 ```cpp
 // ios_streamsize.cpp
@@ -105,9 +105,9 @@ int main( )
 }
 ```
 
-## <a name="wios"></a> wios
+## `wios`
 
-Supports the wios class from the old iostream library.
+Supports the `wios` class from the old `iostream` library.
 
 ```cpp
 typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
@@ -115,9 +115,9 @@ typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
 
 ### Remarks
 
-The type is a synonym for class template [basic_ios](../standard-library/basic-ios-class.md), specialized for elements of type **wchar_t** with default character traits.
+The type is a synonym for class template [`basic_ios`](../standard-library/basic-ios-class.md), specialized for elements of type **`wchar_t`** with default character traits.
 
-## <a name="wstreampos"></a> wstreampos
+## `wstreampos`
 
 Holds the current position of the buffer pointer or file pointer.
 
@@ -127,7 +127,7 @@ typedef fpos<mbstate_t> wstreampos;
 
 ### Remarks
 
-The type is a synonym for [fpos](../standard-library/fpos-class.md)< `mbstate_t`>.
+The type is a synonym for [`fpos`](../standard-library/fpos-class.md)< `mbstate_t`>.
 
 ### Example
 
@@ -143,7 +143,7 @@ int main( )
    wofstream xw( "wiostream.txt" );
    xw << L"testing";
    wstreampos y = xw.tellp( );
-   cout << y << endl;
+   cout << streamoff( y ) << '\n';
 }
 ```
 

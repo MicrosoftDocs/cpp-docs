@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IRowsetInfoImpl Class"
 title: "IRowsetInfoImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL.IRowsetInfoImpl", "IRowsetInfoImpl", "ATL::IRowsetInfoImpl", "ATL.IRowsetInfoImpl.GetProperties", "IRowsetInfoImpl.GetProperties", "ATL::IRowsetInfoImpl::GetProperties", "IRowsetInfoImpl::GetProperties", "ATL::IRowsetInfoImpl::GetReferencedRowset", "GetReferencedRowset", "ATL.IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl::GetReferencedRowset", "IRowsetInfoImpl::GetSpecification", "ATL.IRowsetInfoImpl.GetSpecification", "IRowsetInfoImpl.GetSpecification", "GetSpecification", "ATL::IRowsetInfoImpl::GetSpecification"]
@@ -34,7 +35,7 @@ A user-definable property class that defaults to *T*.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[GetProperties](#getproperties)|Returns the current settings of all properties supported by the rowset.|
 |[GetReferencedRowset](#getreferencedrowset)|Returns an interface pointer to the rowset to which a bookmark applies.|
@@ -42,7 +43,7 @@ A user-definable property class that defaults to *T*.
 
 ## Remarks
 
-A mandatory interface on rowsets. This class implements the rowset properties by using the [property set map](../../data/oledb/begin-propset-map.md) defined in your command class. Although the rowset class appears to be using the command class' property sets, the rowset is supplied with its own copy of the run-time properties, when it is created by a command or session object.
+A mandatory interface on rowsets. This class implements the rowset properties by using the [property set map](./macros-for-ole-db-provider-templates.md#begin_propset_map) defined in your command class. Although the rowset class appears to be using the command class' property sets, the rowset is supplied with its own copy of the run-time properties, when it is created by a command or session object.
 
 ## <a name="getproperties"></a> IRowsetInfoImpl::GetProperties
 

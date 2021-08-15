@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CException Class"
 title: "CException Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CException", "AFX/CException", "AFX/CException::CException", "AFX/CException::Delete", "AFX/CException::ReportError"]
@@ -36,7 +37,7 @@ Because `CException` is an abstract base class you cannot create `CException` ob
 
 The derived classes and their descriptions are listed below:
 
-|||
+|Name|Description|
 |-|-|
 |[CSimpleException](../../mfc/reference/csimpleexception-class.md)|A base class for resource-critical MFC exceptions|
 |[CInvalidArgException](../../mfc/reference/cinvalidargexception-class.md)|Invalid argument exception condition|
@@ -58,7 +59,7 @@ To catch a specific exception, use the appropriate derived class. To catch all t
 
 You can report details about exceptions to the user by calling [GetErrorMessage](cfileexception-class.md#geterrormessage) or [ReportError](#reporterror), two member functions that work with any of `CException`'s derived classes.
 
-If an exception is caught by one of the macros, the `CException` object is deleted automatically; do not delete it yourself. If an exception is caught by using a **catch** keyword, it is not automatically deleted. See the article [Exception Handling (MFC)](../exception-handling-in-mfc.md) for more information about when to delete an exeption object.
+If an exception is caught by one of the macros, the `CException` object is deleted automatically; do not delete it yourself. If an exception is caught by using a **`catch`** keyword, it is not automatically deleted. See the article [Exception Handling (MFC)](../exception-handling-in-mfc.md) for more information about when to delete an exeption object.
 
 ## Inheritance Hierarchy
 
@@ -89,7 +90,7 @@ You would normally never need to call this constructor directly. A function that
 
 ## <a name="delete"></a> CException::Delete
 
-This function checks to see if the `CException` object was created on the heap, and if so, it calls the **delete** operator on the object.
+This function checks to see if the `CException` object was created on the heap, and if so, it calls the **`delete`** operator on the object.
 
 ```cpp
 void Delete();
@@ -97,11 +98,11 @@ void Delete();
 
 ### Remarks
 
-When deleting a `CException` object, use the `Delete` member function to delete the exception. Do not use the **delete** operator directly, because the `CException` object may be a global object or have been created on the stack.
+When deleting a `CException` object, use the `Delete` member function to delete the exception. Do not use the **`delete`** operator directly, because the `CException` object may be a global object or have been created on the stack.
 
 You can specify whether the object should be deleted when the object is constructed. For more information, see [CException::CException](#cexception).
 
-You only need to call `Delete` if you are using the C++ **try**- **catch** mechanism. If you are using the MFC macros **TRY** and **CATCH**, then these macros will automatically call this function.
+You only need to call `Delete` if you are using the C++ **`try`**- **`catch`** mechanism. If you are using the MFC macros **TRY** and **CATCH**, then these macros will automatically call this function.
 
 ### Example
 
@@ -216,5 +217,4 @@ else
 
 [CObject Class](cobject-class.md)<br/>
 [Hierarchy Chart](../hierarchy-chart.md)<br/>
-[Exception Processing](exception-processing.md)<br/>
-[How Do I: Create my Own Custom Exception Classes](https://go.microsoft.com/fwlink/p/?linkid=128045)
+[Exception Processing](exception-processing.md)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Control Settings, MFC ActiveX Control Wizard"
 title: "Control Settings, MFC ActiveX Control Wizard"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.appwiz.mfc.ctl.settings"]
@@ -49,7 +50,7 @@ For more information about how to select options on this page to maximize the ef
    Specifies that the control has the standard Windows **About** dialog box, which displays version number and copyright information.
 
    > [!NOTE]
-   > How the user accesses help for the control depends on how you have implemented the help and whether you have integrated the control help with the container help. For more information about how to integrate help, on the [MSDN Library](https://go.microsoft.com/fwlink/p/?linkid=150542) website, search for "Adding Context-Sensitive Help to an MFC ActiveX Control".
+   > How the user accesses help for the control depends on how you have implemented the help and whether you have integrated the control help with the container help.
 
    When you select this option, it inserts the `AboutBox` control method in the project control class (C*ProjName*Ctrl.cpp) and adds AboutBox to the project dispatch map. By default, this option is selected.
 
@@ -79,7 +80,7 @@ For more information about how to select options on this page to maximize the ef
 
 - **Acts as a simple frame control**
 
-   Specifies that the control is a container for other controls by setting the OLEMISC_SIMPLEFRAME bit for the control. For more information, on the [MSDN Library](https://go.microsoft.com/fwlink/p/?linkid=150542) website, search for "Simple Frame Site Containment".
+   Specifies that the control is a container for other controls by setting the OLEMISC_SIMPLEFRAME bit for the control. For more information, see [Simple Frame Site Containment](/windows/win32/com/simple-frame-site-containment).
 
 - **Loads properties asynchronously**
 

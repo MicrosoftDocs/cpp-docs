@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDaoException Class"
 title: "CDaoException Class"
 ms.date: "09/17/2019"
 f1_keywords: ["CDaoException", "AFXDAO/CDaoException", "AFXDAO/CDaoException::CDaoException", "AFXDAO/CDaoException::GetErrorCount", "AFXDAO/CDaoException::GetErrorInfo", "AFXDAO/CDaoException::m_nAfxDaoError", "AFXDAO/CDaoException::m_pErrorInfo", "AFXDAO/CDaoException::m_scode"]
@@ -91,7 +92,7 @@ However, you might want to explicitly create an exception object if you are maki
 
 1. In the case of an ODBC data source, repeat steps 3 and 4 as needed, for more error objects.
 
-1. If you constructed the exception object on the heap, delete it with the **delete** operator when you finish.
+1. If you constructed the exception object on the heap, delete it with the **`delete`** operator when you finish.
 
 For more information about handling errors in the MFC DAO classes, see the article [Exceptions: Database Exceptions](../../mfc/exceptions-database-exceptions.md).
 

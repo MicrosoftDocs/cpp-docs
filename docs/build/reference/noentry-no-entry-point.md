@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /NOENTRY (No Entry Point)"
 title: "/NOENTRY (No Entry Point)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.ResourceOnlyDLL", "/noentry"]
@@ -21,9 +22,7 @@ Use this option to prevent LINK from linking a reference to `_main` into the DLL
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **Linker** folder.
-
-1. Select the **Advanced** property page.
+1. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
 
 1. Modify the **No Entry Point** property.
 

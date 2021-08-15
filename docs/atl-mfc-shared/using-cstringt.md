@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CStringT"
 title: "Using CStringT"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CStringT class, using"]

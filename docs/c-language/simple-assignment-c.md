@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Simple Assignment (C)"
 title: "Simple Assignment (C)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["type conversion [C++], simple assignment", "data type conversion [C++], simple assignment", "operators [C], simple assignment", "assignment operators [C++], simple", "simple assignment operator", "equal sign"]
@@ -15,7 +16,7 @@ int y;
 x = y;
 ```
 
-In this example, the value of `y` is converted to type **double** and assigned to `x`.
+In this example, the value of `y` is converted to type **`double`** and assigned to `x`.
 
 ## See also
 

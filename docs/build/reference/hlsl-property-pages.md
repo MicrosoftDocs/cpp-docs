@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HLSL Compiler Property Pages"
 title: "HLSL Property Pages"
 ms.date: "07/24/2019"
 ms.assetid: 0c65f5ec-a2a5-4f5b-8d4c-fa57113a5a1d
@@ -26,7 +27,7 @@ f1_keywords:
 ---
 # HLSL Compiler Property Pages
 
-You can use the HLSL compiler (fxc.exe) property pages to configure how individual HLSL shader files are built. You can also specify command-line arguments to the HLSL compiler by using the **Additional Options** property of the **Command Line** property page; this includes arguments that can't be configured by using other properties of the HLSL property pages. For information about the HLSL compiler, see [Effect-Compiler Tool](https://go.microsoft.com/fwlink/p/?LinkID=258285&clcid=0x409)
+You can use the HLSL compiler (fxc.exe) property pages to configure how individual HLSL shader files are built. You can also specify command-line arguments to the HLSL compiler by using the **Additional Options** property of the **Command Line** property page; this includes arguments that can't be configured by using other properties of the HLSL property pages. For information about the HLSL compiler, see [Effect-Compiler Tool](/windows/win32/direct3dtools/fxc)
 
 ## HLSL General Property Page
 
@@ -140,4 +141,4 @@ Specifies file name for assembly code listing file
 
 [C++ project property page reference](property-pages-visual-cpp.md)<br>
 [Command Line Property Pages](command-line-property-pages.md)<br>
-[Compiling Shaders](https://go.microsoft.com/fwlink/p/?LinkID=258284&clcid=0x409)
+[Compiling Shaders](/windows/win32/direct3dhlsl/dx-graphics-hlsl-part1)

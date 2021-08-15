@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: transformer Class"
 title: "transformer Class"
 ms.date: "11/04/2016"
 f1_keywords: ["transformer", "AGENTS/concurrency::transformer", "AGENTS/concurrency::transformer::transformer", "AGENTS/concurrency::transformer::accept_message", "AGENTS/concurrency::transformer::consume_message", "AGENTS/concurrency::transformer::link_target_notification", "AGENTS/concurrency::transformer::propagate_message", "AGENTS/concurrency::transformer::propagate_to_any_targets", "AGENTS/concurrency::transformer::release_message", "AGENTS/concurrency::transformer::reserve_message", "AGENTS/concurrency::transformer::resume_propagation", "AGENTS/concurrency::transformer::send_message", "AGENTS/concurrency::transformer::supports_anonymous_source"]
@@ -175,11 +176,11 @@ The `runtime_object_identity` of the `message` object being reserved.
 
 ### Return Value
 
-**true** if the message was successfully reserved, **false** otherwise.
+**`true`** if the message was successfully reserved, **`false`** otherwise.
 
 ### Remarks
 
-After `reserve` is called, if it returns **true**, either `consume` or `release` must be called to either take or release ownership of the message.
+After `reserve` is called, if it returns **`true`**, either `consume` or `release` must be called to either take or release ownership of the message.
 
 ## <a name="resume_propagation"></a> resume_propagation
 
@@ -221,7 +222,7 @@ virtual bool supports_anonymous_source();
 
 ### Return Value
 
-**true** because the block does not postpone offered messages.
+**`true`** because the block does not postpone offered messages.
 
 ## <a name="ctor"></a> transformer
 

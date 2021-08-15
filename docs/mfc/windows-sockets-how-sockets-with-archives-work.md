@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets: How Sockets with Archives Work"
 title: "Windows Sockets: How Sockets with Archives Work"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["Windows Sockets [MFC], synchronous", "sockets [MFC], synchronous operation", "sockets [MFC], with archives", "synchronous state socket", "Windows Sockets [MFC], with archives", "two-state socket object"]
@@ -18,7 +19,7 @@ The `CSocketFile` object calls member functions of its `CSocket` object to send 
 
 The following figure shows the relationships among these objects on both sides of the communication.
 
-![CArchive, CSocketFile, and CSocket](../mfc/media/vc38ia1.gif "CArchive, CSocketFile, and CSocket") <br/>
+![CArchive, CSocketFile, and CSocket.](../mfc/media/vc38ia1.gif "CArchive, CSocketFile, and CSocket") <br/>
 CArchive, CSocketFile, and CSocket
 
 The purpose of this apparent complexity is to shield you from the necessity of managing the details of the socket yourself. You create the socket, the file, and the archive, and then begin sending or receiving data by inserting it to the archive or extracting it from the archive. [CArchive](../mfc/reference/carchive-class.md), [CSocketFile](../mfc/reference/csocketfile-class.md), and [CSocket](../mfc/reference/csocket-class.md) manage the details behind the scenes.

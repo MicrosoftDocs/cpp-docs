@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: make_unsigned Class"
 title: "make_unsigned Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::make_unsigned"]
@@ -21,9 +22,8 @@ using make_unsigned_t = typename make_unsigned<T>::type;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*T*|The type to modify.|
+*T*\
+The type to modify.
 
 ## Remarks
 

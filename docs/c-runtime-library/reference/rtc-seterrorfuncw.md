@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _RTC_SetErrorFuncW"
 title: "_RTC_SetErrorFuncW"
 ms.date: "11/04/2016"
 api_name: ["_RTC_SetErrorFuncW"]

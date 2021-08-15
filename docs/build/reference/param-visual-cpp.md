@@ -1,7 +1,8 @@
 ---
+description: "Learn more about: &lt;param&gt;"
 title: "&lt;param> (C++ documentation comments)"
 ms.date: "11/04/2016"
-f1_keywords: ["param", "<param>"]
+f1_keywords: ["<param>"]
 helpviewer_keywords: ["param C++ XML tag", "<param> C++ XML tag"]
 ms.assetid: 66c1a1c3-4f98-4bcf-8c7d-9a40308982fb
 ---

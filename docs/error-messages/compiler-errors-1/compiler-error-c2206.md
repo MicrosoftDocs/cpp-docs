@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2206"
 title: "Compiler Error C2206"
 ms.date: "11/04/2016"
 f1_keywords: ["C2206"]
@@ -9,7 +10,7 @@ ms.assetid: d7fba68b-aa28-4885-a9a0-27107358f066
 
 'function' : typedef cannot be used for function definition
 
-A `typedef` is used to define a function type.
+A **`typedef`** is used to define a function type.
 
 The following sample generates C2206:
 

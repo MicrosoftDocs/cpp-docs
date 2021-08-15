@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2084"
 title: "Compiler Error C2084"
 ms.date: "11/04/2016"
 f1_keywords: ["C2084"]
@@ -15,7 +16,7 @@ Before Visual Studio 2002,
 
 - The compiler would accept multiple template specializations that resolved to the same actual type, although the additional definitions would never be available. The compiler now detects these multiple definitions.
 
-- `__int32` and `int` were treated as separate types. The compiler now treats `__int32` as a synonym for `int`. This means that the compiler detects multiple definitions if a function is overloaded on both `__int32` and `int` and gives an error.
+- **`__int32`** and **`int`** were treated as separate types. The compiler now treats **`__int32`** as a synonym for **`int`**. This means that the compiler detects multiple definitions if a function is overloaded on both **`__int32`** and **`int`** and gives an error.
 
 ## Example
 

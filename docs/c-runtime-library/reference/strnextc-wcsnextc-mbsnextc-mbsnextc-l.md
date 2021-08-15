@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l"
 title: "_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l"
 ms.date: "4/2/2020"
 api_name: ["_strnextc", "_mbsnextc_l", "_mbsnextc", "_wcsnextc", "_o__mbsnextc", "_o__mbsnextc_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["strnextc", "tcsnextc", "_mbsnextc_l", "_mbsnextc", "mbsnextc_l", "ftcsnextc", "mbsnextc", "_tcsnextc", "_wcsnextc", "_ftcsnextc", "_strnextc", "wcsnextc"]
@@ -22,7 +23,7 @@ Finds the next character in a string.
 unsigned int _strnextc(
    const char *str
 );
-unsigned int _wscnextc(
+unsigned int _wcsnextc(
    const wchar_t *str
 );
 unsigned int _mbsnextc(

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComUnkArray Class"
 title: "CComUnkArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComUnkArray", "ATLCOM/ATL::CComUnkArray", "ATLCOM/ATL::CComUnkArray::CComUnkArray", "ATLCOM/ATL::CComUnkArray::Add", "ATLCOM/ATL::CComUnkArray::begin", "ATLCOM/ATL::CComUnkArray::end", "ATLCOM/ATL::CComUnkArray::GetCookie", "ATLCOM/ATL::CComUnkArray::GetUnknown", "ATLCOM/ATL::CComUnkArray::Remove"]

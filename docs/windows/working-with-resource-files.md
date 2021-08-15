@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Working with Resource Files"
 title: "Working with Resource Files (C++)"
 ms.date: "02/14/2019"
 helpviewer_keywords: ["resources [C++], about resources", "resources [C++], about resource files", "resource files [C++], about resource files"]
@@ -48,5 +49,5 @@ Provides links to information on using the documentation set, contacting product
 
 ## See also
 
-[Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)<br/>
+[Windows Desktop Applications](./desktop-applications-visual-cpp.md)<br/>
 [Menus and Other Resources](/windows/win32/menurc/resources)

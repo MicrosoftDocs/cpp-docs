@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1 and level 4) C4700"
 title: "Compiler Warning (level 1 and level 4) C4700"
 ms.date: "02/21/2018"
 f1_keywords: ["C4700"]

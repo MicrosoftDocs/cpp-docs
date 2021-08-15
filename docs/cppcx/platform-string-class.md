@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::String Class"
 title: "Platform::String Class"
 ms.date: "10/16/2019"
 ms.topic: "reference"
@@ -150,7 +151,7 @@ If `str1` is `null` and `str2` is not, `str1` is returned. If `str2` is `null` a
 
 ## <a name="data"></a> String::Data Method
 
-Returns a pointer to the beginning of the object's data buffer as a C-style array of `char16` (`wchar_t`) elements.
+Returns a pointer to the beginning of the object's data buffer as a C-style array of `char16` (**`wchar_t`**) elements.
 
 ### Syntax
 
@@ -160,7 +161,7 @@ const char16* Data();
 
 ### Return Value
 
-A pointer to the beginning of a `const char16` array of Unicode characters (`char16` is a typedef for `wchar_t`).
+A pointer to the beginning of a `const char16` array of Unicode characters (`char16` is a typedef for **`wchar_t`**).
 
 ### Remarks
 
@@ -212,7 +213,7 @@ The object to compare.
 
 ### Return Value
 
-**true** if `str` is equal to the current object; otherwise, **false**.
+**`true`** if `str` is equal to the current object; otherwise, **`false`**.
 
 ### Remarks
 
@@ -244,7 +245,7 @@ bool IsEmpty();
 
 ### Return Value
 
-**true** if the current `String` object is **null** or the empty string (L""); otherwise, **false**.
+**`true`** if the current `String` object is **null** or the empty string (L""); otherwise, **`false`**.
 
 ## <a name="isfastpass"></a> String::IsFastPass Method
 
@@ -258,7 +259,7 @@ bool IsFastPass();
 
 ### Return Value
 
-**true** if the current `String` object is fast-past; otherwise, **false**.
+**`true`** if the current `String` object is fast-past; otherwise, **`false`**.
 
 ### Remarks
 
@@ -309,7 +310,7 @@ The second `String` object, whose contents will be appended to `str1`.
 
 ### Return Value
 
-**true** if *str1* is equal to *str2*; otherwise, **false**.
+**`true`** if *str1* is equal to *str2*; otherwise, **`false`**.
 
 ### Remarks
 
@@ -335,7 +336,7 @@ The second `String` object to compare.
 
 ### Return Value
 
-**true** if the contents of `str1` are equal to `str2`; otherwise, **false**.
+**`true`** if the contents of `str1` are equal to `str2`; otherwise, **`false`**.
 
 ### Remarks
 
@@ -361,7 +362,7 @@ The second `String` object.
 
 ### Return Value
 
-**true** if the value of `str1` is greater than the value of `str2`; otherwise, **false**.
+**`true`** if the value of `str1` is greater than the value of `str2`; otherwise, **`false`**.
 
 ### Remarks
 
@@ -387,7 +388,7 @@ The second `String` object.
 
 ### Return Value
 
-**true** if the value of `str1` is greater than or equal to the value of `str2`; otherwise, **false**.
+**`true`** if the value of `str1` is greater than or equal to the value of `str2`; otherwise, **`false`**.
 
 ## <a name="operator-inequality"></a> String::operator!=
 
@@ -409,7 +410,7 @@ The second `String` object to compare.
 
 ### Return Value
 
-**true** if `str1` is not equal to `str2`; otherwise, **false**.
+**`true`** if `str1` is not equal to `str2`; otherwise, **`false`**.
 
 ## <a name="operator-less-than"></a> String::operator&lt;
 
@@ -431,7 +432,7 @@ The second `String` object.
 
 ### Return Value
 
-**true** if the value of *str1* is less than the value of *str2*; otherwise, **false**.
+**`true`** if the value of *str1* is less than the value of *str2*; otherwise, **`false`**.
 
 ## <a name="ctor"></a> String::String Constructor
 

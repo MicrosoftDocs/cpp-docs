@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSingleDocTemplate Class"
 title: "CSingleDocTemplate Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSingleDocTemplate", "AFXWIN/CSingleDocTemplate", "AFXWIN/CSingleDocTemplate::CSingleDocTemplate"]

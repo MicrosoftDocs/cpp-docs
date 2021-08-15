@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create a Dialog Box (C++)"
 title: "How To: Create a Dialog Box (C++)"
 ms.date: "02/15/2019"
 helpviewer_keywords: ["dialog boxes [C++], creating", "Dialog Editor [C++], creating dialog boxes", "modal dialog boxes [C++], logon screens", "logon screens", "Test Dialog command", "testing, dialog boxes", "dialog boxes [C++], testing", "dialog boxes [C++], size", "dialog boxes [C++], positioning"]
@@ -31,7 +32,7 @@ You can also open existing dialog boxes in the Dialog Box editor for editing.
 
 You can create a runtime dialog box that a user can't exit. This kind of dialog box is useful for logons, and for application or document locks.
 
-1. In the **Properties** pane for the dialog box, set the **System Menu** property to **false**.
+1. In the **Properties** pane for the dialog box, set the **System Menu** property to **`false`**.
 
    This setting disables the dialog box system menu and **Close** button.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Connection Point Example"
 title: "ATL Connection Point Example"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["connection points [C++], examples", "examples [ATL]"]

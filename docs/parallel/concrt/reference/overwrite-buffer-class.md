@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: overwrite_buffer Class"
 title: "overwrite_buffer Class"
 ms.date: "11/04/2016"
 f1_keywords: ["overwrite_buffer", "AGENTS/concurrency::overwrite_buffer", "AGENTS/concurrency::overwrite_buffer::overwrite_buffer", "AGENTS/concurrency::overwrite_buffer::has_value", "AGENTS/concurrency::overwrite_buffer::value", "AGENTS/concurrency::overwrite_buffer::accept_message", "AGENTS/concurrency::overwrite_buffer::consume_message", "AGENTS/concurrency::overwrite_buffer::link_target_notification", "AGENTS/concurrency::overwrite_buffer::propagate_message", "AGENTS/concurrency::overwrite_buffer::propagate_to_any_targets", "AGENTS/concurrency::overwrite_buffer::release_message", "AGENTS/concurrency::overwrite_buffer::reserve_message", "AGENTS/concurrency::overwrite_buffer::resume_propagation", "AGENTS/concurrency::overwrite_buffer::send_message", "AGENTS/concurrency::overwrite_buffer::supports_anonymous_source"]
@@ -128,7 +129,7 @@ bool has_value() const;
 
 ### Return Value
 
-**true** if the block has received a value, **false** otherwise.
+**`true`** if the block has received a value, **`false`** otherwise.
 
 ## <a name="link_target_notification"></a> link_target_notification
 
@@ -264,7 +265,7 @@ virtual bool supports_anonymous_source();
 
 ### Return Value
 
-**true** because the block does not postpone offered messages.
+**`true`** because the block does not postpone offered messages.
 
 ## <a name="release_message"></a> release_message
 
@@ -294,11 +295,11 @@ The `runtime_object_identity` of the `message` object being reserved.
 
 ### Return Value
 
-**true** if the message was successfully reserved, **false** otherwise.
+**`true`** if the message was successfully reserved, **`false`** otherwise.
 
 ### Remarks
 
-After `reserve` is called, if it returns **true**, either `consume` or `release` must be called to either take or release ownership of the message.
+After `reserve` is called, if it returns **`true`**, either `consume` or `release` must be called to either take or release ownership of the message.
 
 ## <a name="resume_propagation"></a> resume_propagation
 

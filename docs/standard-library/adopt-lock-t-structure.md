@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: adopt_lock_t Structure"
 title: "adopt_lock_t Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["mutex/std::adopt_lock_t"]
@@ -6,7 +7,7 @@ ms.assetid: 549972fb-e2e9-4415-8657-c159b09aa3f4
 ---
 # adopt_lock_t Structure
 
-Represents a type that is used to define an [adopt_lock](../standard-library/mutex-functions.md#adopt_lock).
+Represents a type that is used to define an [adopt_lock](mutex-functions.md#adopt_lock).
 
 ## Syntax
 
@@ -22,5 +23,5 @@ struct adopt_lock_t;
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)\
-[\<mutex>](../standard-library/mutex.md)
+[Header Files Reference](cpp-standard-library-header-files.md)\
+[\<mutex>](mutex.md)

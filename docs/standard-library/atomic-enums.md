@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;atomic&gt; enums"
 title: "&lt;atomic&gt; enums"
 ms.date: "11/04/2016"
 f1_keywords: ["atomic/std::memory_order"]
@@ -24,7 +25,7 @@ typedef enum memory_order {
 
 ### Enumeration members
 
-|||
+|Name|Description|
 |-|-|
 |`memory_order_relaxed`|No ordering required.|
 |`memory_order_consume`|A load operation acts as a consume operation on the memory location.|

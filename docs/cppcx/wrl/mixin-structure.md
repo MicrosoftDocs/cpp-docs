@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MixIn Structure"
 title: "MixIn Structure"
 ms.date: "10/03/2018"
 ms.topic: "reference"
@@ -30,7 +31,7 @@ A type derived from the [Implements](implements-structure.md) structure.
 A base type.
 
 *hasImplements*<br/>
-**true** if *MixInType* is derived from the current implementation the base type; **false** otherwise.
+**`true`** if *MixInType* is derived from the current implementation the base type; **`false`** otherwise.
 
 ## Remarks
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ImplementsBase Structure"
 title: "ImplementsBase Structure"
 ms.date: "11/04/2016"
 ms.topic: "reference"

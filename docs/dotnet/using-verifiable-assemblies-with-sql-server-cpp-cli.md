@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Verifiable Assemblies with SQL Server (C++/CLI)"
 title: "Using Verifiable Assemblies with SQL Server (C++/CLI)"
 ms.date: "10/17/2018"
 helpviewer_keywords: ["verifiable assemblies [C++], with SQL Server"]

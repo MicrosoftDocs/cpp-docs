@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleBusyDialog Class"
 title: "COleBusyDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleBusyDialog", "AFXODLGS/COleBusyDialog", "AFXODLGS/COleBusyDialog::COleBusyDialog", "AFXODLGS/COleBusyDialog::DoModal", "AFXODLGS/COleBusyDialog::GetSelectionType", "AFXODLGS/COleBusyDialog::m_bz"]

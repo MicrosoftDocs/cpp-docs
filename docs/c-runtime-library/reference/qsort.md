@@ -1,8 +1,9 @@
 ---
 title: "qsort"
-ms.date: "4/2/2020"
+description: "Describes the Microsoft C runtime quick sort API `qsort`"
+ms.date: "10/23/2020"
 api_name: ["qsort", "_o_qsort"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-utility-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["qsort"]
@@ -26,23 +27,23 @@ void qsort(
 
 ### Parameters
 
-*base*<br/>
+*`base`*\
 Start of target array.
 
-*number*<br/>
+*`number`*\
 Array size in elements.
 
-*width*<br/>
+*`width`*\
 Element size in bytes.
 
-*compare*<br/>
+*`compare`*\
 Pointer to a user-supplied routine that compares two array elements and returns a value that specifies their relationship.
 
 ## Remarks
 
-The **qsort** function implements a quick-sort algorithm to sort an array of *number* elements, each of *width* bytes. The argument *base* is a pointer to the base of the array to be sorted. **qsort** overwrites this array by using the sorted elements.
+The **`qsort`** function implements a quick-sort algorithm to sort an array of *`number`* elements, each of *`width`* bytes. The argument *`base`* is a pointer to the base of the array to be sorted. **`qsort`** overwrites this array by using the sorted elements.
 
-**qsort** calls the *compare* routine one or more times during the sort, and passes pointers to two array elements on each call.
+**`qsort`** calls the *`compare`* routine one or more times during the sort, and passes pointers to two array elements on each call. If *`compare`* indicates two elements are the same, their order in the resulting sorted array is unspecified.
 
 ```C
 compare( (void *) & elem1, (void *) & elem2 );
@@ -52,13 +53,13 @@ The routine compares the elements and returns one of the following values.
 
 |Compare function return value|Description|
 |-----------------------------------|-----------------|
-|< 0|**elem1** less than **elem2**|
-|0|**elem1** equivalent to **elem2**|
-|> 0|**elem1** greater than **elem2**|
+|< 0|**`elem1`** less than **`elem2`**|
+|0|**`elem1`** equivalent to **`elem2`**|
+|> 0|**`elem1`** greater than **`elem2`**|
 
 The array is sorted in increasing order, as defined by the comparison function. To sort an array in decreasing order, reverse the sense of "greater than" and "less than" in the comparison function.
 
-This function validates its parameters. If *compare* or *number* is **NULL**, or if *base* is **NULL** and *number* is nonzero, or if *width* is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns and **errno** is set to **EINVAL**.
+This function validates its parameters. If *`compare`* or *`number`* is **`NULL`**, or if *`base`* is **`NULL`** and *`number`* is nonzero, or if *`width`* is less than zero, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function returns and **`errno`** is set to **`EINVAL`**.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -66,7 +67,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**qsort**|\<stdlib.h> and \<search.h>|
+|**`qsort`**|\<stdlib.h> and \<search.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -116,6 +117,6 @@ boy deserves every favor good
 
 ## See also
 
-[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch](bsearch.md)<br/>
-[_lsearch](lsearch.md)<br/>
+[Searching and Sorting](../../c-runtime-library/searching-and-sorting.md)\
+[`bsearch`](bsearch.md)\
+[`_lsearch`](lsearch.md)

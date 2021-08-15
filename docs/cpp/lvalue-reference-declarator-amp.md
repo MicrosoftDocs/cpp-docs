@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Lvalue Reference Declarator: &amp;"
 title: "Lvalue Reference Declarator: &amp;"
 ms.date: "11/04/2016"
 f1_keywords: ["&"]
@@ -21,7 +22,7 @@ You can think of an lvalue reference as another name for an object. An lvalue re
 
 Any object whose address can be converted to a given pointer type can also be converted to the similar reference type. For example, any object whose address can be converted to type `char *` can also be converted to type `char &`.
 
-Do not confuse reference declarations with use of the [address-of operator](../cpp/address-of-operator-amp.md). When the `&`*identifier* is preceded by a type, such as **int** or **char**, *identifier* is declared as a reference to the type. When `&`*identifier* is not preceded by a type, the usage is that of the address-of operator.
+Do not confuse reference declarations with use of the [address-of operator](../cpp/address-of-operator-amp.md). When the `&`*identifier* is preceded by a type, such as **`int`** or **`char`**, *identifier* is declared as a reference to the type. When `&`*identifier* is not preceded by a type, the usage is that of the address-of operator.
 
 ## Example
 

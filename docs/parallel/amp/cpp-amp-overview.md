@@ -1,10 +1,15 @@
 ---
+description: "Learn more about: C++ AMP Overview"
 title: "C++ AMP Overview"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["C++ Accelerated Massive Parallelism, requirements", "C++ Accelerated Massive Parallelism, architecture", "C++ AMP", "C++ Accelerated Massive Parallelism, overview", "C++ Accelerated Massive Parallelism"]
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
 ---
 # C++ AMP Overview
+
+> [!NOTE]
+> C++ AMP headers are deprecated, starting with Visual Studio 2022 version 17.0.
+> Including any AMP headers will generate build errors. Define `_SILENCE_AMP_DEPRECATION_WARNINGS` before including any AMP headers to silence the warnings.
 
 C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code by taking advantage of data-parallel hardware such as a graphics processing unit (GPU) on a discrete graphics card. By using C++ AMP, you can code multi-dimensional data algorithms so that execution can be accelerated by using parallelism on heterogeneous hardware. The C++ AMP programming model includes multidimensional arrays, indexing, memory transfer, tiling, and a mathematical function library. You can use C++ AMP language extensions to control how data is moved from the CPU to the GPU and back, so that you can improve performance.
 
@@ -49,7 +54,7 @@ The important parts of the code are as follows:
 
 - Data: The data consists of three arrays. All have the same rank (one) and length (five).
 
-- Iteration: The first `for` loop provides a mechanism for iterating through the elements in the arrays. The code that you want to execute to compute the sums is contained in the first `for` block.
+- Iteration: The first **`for`** loop provides a mechanism for iterating through the elements in the arrays. The code that you want to execute to compute the sums is contained in the first **`for`** block.
 
 - Index: The `idx` variable accesses the individual elements of the arrays.
 
@@ -227,7 +232,7 @@ The following table summarizes the similarities and differences between the `arr
 
 Shared memory is memory that can be accessed by both the CPU and the accelerator. The use of shared memory eliminates or significantly reduces the overhead of copying data between the CPU and the accelerator. Although the memory is shared, it cannot be accessed concurrently by both the CPU and the accelerator, and doing so causes undefined behavior.
 
-`array` objects can be used to specify fine-grained control over the use of shared memory if the associated accelerator supports it. Whether an accelerator supports shared memory is determined by the accelerator’s [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) property, which returns **true** when shared memory is supported. If shared memory is supported, the default [access_type Enumeration](reference/concurrency-namespace-enums-amp.md#access_type) for memory allocations on the accelerator is determined by the `default_cpu_access_type` property. By default, `array` and `array_view` objects take on the same `access_type` as the primary associated `accelerator`.
+`array` objects can be used to specify fine-grained control over the use of shared memory if the associated accelerator supports it. Whether an accelerator supports shared memory is determined by the accelerator’s [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) property, which returns **`true`** when shared memory is supported. If shared memory is supported, the default [access_type Enumeration](reference/concurrency-namespace-enums-amp.md#access_type) for memory allocations on the accelerator is determined by the `default_cpu_access_type` property. By default, `array` and `array_view` objects take on the same `access_type` as the primary associated `accelerator`.
 
 By setting the [array::cpu_access_type Data Member](reference/array-class.md#cpu_access_type) property of an `array` explicitly, you can exercise fine-grained control over how shared memory is used, so that you can optimize the app for the hardware’s performance characteristics, based on the memory access patterns of its computation kernels. An `array_view` reflects the same `cpu_access_type` as the `array` that it’s associated with; or, if the array_view is constructed without a data source, its `access_type` reflects the environment that first causes it to allocate storage. That is, if it’s first accessed by the host (CPU), then it behaves as if it were created over a CPU data source and shares the `access_type` of the `accelerator_view` associated by capture; however, if it's first accessed by an `accelerator_view`, then it behaves as if it were created over an `array` created on that `accelerator_view` and shares the `array`’s `access_type`.
 
@@ -355,7 +360,7 @@ In typical applications, the elements in a tile are related in some way, and the
 
 The following diagram represents a two-dimensional array of sampling data that is arranged in tiles.
 
-![Index values in a tiled extent](../../parallel/amp/media/camptiledgridexample.png "Index values in a tiled extent")
+![Index values in a tiled extent.](../../parallel/amp/media/camptiledgridexample.png "Index values in a tiled extent")
 
 The following code example uses the sampling data from the previous diagram. The code replaces each value in the tile by the average of the values in the tile.
 
@@ -420,7 +425,7 @@ for (int i = 0; i <4; i++) {
 
 ## Math Libraries
 
-C++ AMP includes two math libraries. The double-precision library in the [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) provides support for double-precision functions. It also provides support for single-precision functions, although double-precision support on the hardware is still required. It complies with the [C99 Specification (ISO/IEC 9899)](https://go.microsoft.com/fwlink/p/?linkid=225887). The accelerator must support full double precision. You can determine whether it does by checking the value of the [accelerator::supports_double_precision Data Member](reference/accelerator-class.md#supports_double_precision). The fast math library,  in the [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), contains another set of math functions. These functions, which support only `float` operands, execute more quickly but aren’t as precise as those in the double-precision math library. The functions are contained in the \<amp_math.h> header file and all are declared with `restrict(amp)`. The functions in the \<cmath> header file are imported into both the `fast_math` and `precise_math` namespaces. The **restrict** keyword is used to distinguish the \<cmath> version and the C++ AMP version. The following code calculates the base-10 logarithm, using the fast method, of each value that is in the compute domain.
+C++ AMP includes two math libraries. The double-precision library in the [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) provides support for double-precision functions. It also provides support for single-precision functions, although double-precision support on the hardware is still required. It complies with the [C99 Specification (ISO/IEC 9899)](https://go.microsoft.com/fwlink/p/?linkid=225887). The accelerator must support full double precision. You can determine whether it does by checking the value of the [accelerator::supports_double_precision Data Member](reference/accelerator-class.md#supports_double_precision). The fast math library,  in the [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), contains another set of math functions. These functions, which support only **`float`** operands, execute more quickly but aren’t as precise as those in the double-precision math library. The functions are contained in the \<amp_math.h> header file and all are declared with `restrict(amp)`. The functions in the \<cmath> header file are imported into both the `fast_math` and `precise_math` namespaces. The **`restrict`** keyword is used to distinguish the \<cmath> version and the C++ AMP version. The following code calculates the base-10 logarithm, using the fast method, of each value that is in the compute domain.
 
 ```cpp
 #include <amp.h>
@@ -454,7 +459,7 @@ C++ AMP includes a graphics library that is designed for accelerated graphics pr
 
 - [writeonly_texture_view Class](../../parallel/amp/reference/writeonly-texture-view-class.md): Provides write-only access to any texture.
 
-- Short Vector Library: Defines a set of short vector types of length 2, 3, and 4 that are based on **int**, `uint`, **float**, **double**, [norm](../../parallel/amp/reference/norm-class.md), or [unorm](../../parallel/amp/reference/unorm-class.md).
+- Short Vector Library: Defines a set of short vector types of length 2, 3, and 4 that are based on **`int`**, `uint`, **`float`**, **`double`**, [norm](../../parallel/amp/reference/norm-class.md), or [unorm](../../parallel/amp/reference/unorm-class.md).
 
 ## Universal Windows Platform (UWP) Apps
 
@@ -462,13 +467,13 @@ Like other C++ libraries, you can use C++ AMP in your UWP apps. These articles d
 
 - [Using C++ AMP in UWP Apps](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)
 
-- [Walkthrough: Creating a basic Windows Runtime component in C++ and calling it from JavaScript](https://go.microsoft.com/fwlink/p/?linkid=249077)
+- [Walkthrough: Creating a basic Windows Runtime component in C++ and calling it from JavaScript](/previous-versions/windows/apps/hh755833(v=vs.140))
 
-- [Bing Maps Trip Optimizer, a Window Store app in JavaScript and C++](https://go.microsoft.com/fwlink/p/?linkid=249078)
+- [Bing Maps Trip Optimizer, a Window Store app in JavaScript and C++](/previous-versions/windows/apps/hh699893(v=vs.140))
 
-- [How to use C++ AMP from C# using the Windows Runtime](https://go.microsoft.com/fwlink/p/?linkid=249080)
+- [How to use C++ AMP from C# using the Windows Runtime](https://devblogs.microsoft.com/pfxteam/how-to-use-c-amp-from-c-using-winrt/)
 
-- [How to use C++ AMP from C#](https://go.microsoft.com/fwlink/p/?linkid=249081)
+- [How to use C++ AMP from C#](https://devblogs.microsoft.com/pfxteam/how-to-use-c-amp-from-c/)
 
 - [Calling Native Functions from Managed Code](../../dotnet/calling-native-functions-from-managed-code.md)
 
@@ -486,7 +491,7 @@ The Concurrency Visualizer includes support for analyzing performance of C++ AMP
 
 - [Channels (Threads View)](/visualstudio/profiling/channels-threads-view)
 
-- [Analyzing C++ AMP Code with the Concurrency Visualizer](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)
+- [Analyzing C++ AMP Code with the Concurrency Visualizer](/archive/blogs/nativeconcurrency/analyzing-c-amp-code-with-the-concurrency-visualizer)
 
 ## Performance Recommendations
 
@@ -497,4 +502,4 @@ Modulus and division of unsigned integers have significantly better performance 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [Lambda Expression Syntax](../../cpp/lambda-expression-syntax.md)<br/>
 [Reference (C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)<br/>
-[Parallel Programming in Native Code Blog](https://go.microsoft.com/fwlink/p/?linkid=238472)
+[Parallel Programming in Native Code Blog](/archive/blogs/nativeconcurrency/)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: pragma"
 title: "pragma (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.pragma"]
@@ -42,9 +43,7 @@ __interface A
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

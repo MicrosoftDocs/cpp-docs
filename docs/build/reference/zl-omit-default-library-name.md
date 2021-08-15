@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Zl (Omit Default Library Name)"
 title: "/Zl (Omit Default Library Name)"
 ms.date: "11/04/2016"
 f1_keywords: ["/zl", "VC.Project.VCCLCompilerTool.OmitDefaultLibName"]
@@ -45,9 +46,7 @@ void Test() {
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **Advanced** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Advanced** property page.
 
 1. Modify the **Omit Default Library Names** property.
 

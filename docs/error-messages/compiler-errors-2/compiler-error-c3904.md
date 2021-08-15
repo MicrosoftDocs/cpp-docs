@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3904"
 title: "Compiler Error C3904"
 ms.date: "11/04/2016"
 f1_keywords: ["C3904"]
@@ -17,7 +18,7 @@ Check the number of parameters in your `get` and `set` methods against property 
 
 For more information, see [property](../../extensions/property-cpp-component-extensions.md).
 
-## Example
+## Examples
 
 The following sample generates C3904.
 
@@ -38,8 +39,6 @@ ref class X {
    };
 };
 ```
-
-## Example
 
 The following sample generates C3904.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: importlib"
 title: "importlib (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.importlib"]
@@ -37,9 +38,7 @@ The following code shows an example of how to use **importlib**:
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

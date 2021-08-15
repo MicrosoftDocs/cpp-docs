@@ -1,5 +1,6 @@
 ---
 title: "x64 exception handling"
+description: "Overview of Microsoft C++ exception handling conventions on x64."
 ms.date: "10/14/2019"
 helpviewer_keywords: ["C++ exception handling, x64", "exception handling, x64"]
 ms.assetid: 41fecd2d-3717-4643-b21c-65dcd2f18c93
@@ -16,7 +17,7 @@ Several data structures are required for exception handling and debugging suppor
 
 Table-based exception handling requires a table entry for all functions that allocate stack space or call another function (for example, nonleaf functions). Function table entries have the format:
 
-|||
+|Size|Value|
 |-|-|
 |ULONG|Function start address|
 |ULONG|Function end address|
@@ -28,7 +29,7 @@ The RUNTIME_FUNCTION structure must be DWORD aligned in memory. All addresses ar
 
 The unwind data info structure is used to record the effects a function has on the stack pointer, and where the nonvolatile registers are saved on the stack:
 
-|||
+|Size|Value|
 |-|-|
 |UBYTE: 3|Version|
 |UBYTE: 5|Flags|
@@ -41,14 +42,14 @@ The unwind data info structure is used to record the effects a function has on t
 
 (1)  Exception Handler
 
-|||
+|Size|Value|
 |-|-|
 |ULONG|Address of exception handler|
 |variable|Language-specific handler data (optional)|
 
 (2)  Chained Unwind Info
 
-|||
+|Size|Value|
 |-|-|
 |ULONG|Function start address|
 |ULONG|Function end address|
@@ -106,7 +107,7 @@ The UNWIND_INFO structure must be DWORD aligned in memory. Here's what each fiel
 
 The unwind code array is used to record the sequence of operations in the prolog that affect the nonvolatile registers and RSP. Each code item has this format:
 
-|||
+|Size|Value|
 |-|-|
 |UBYTE|Offset in prolog|
 |UBYTE: 4|Unwind operation code|
@@ -172,7 +173,7 @@ The unwind operation code is one of these values:
 
   Push a machine frame.  This unwind code is used to record the effect of a hardware interrupt or exception. There are two forms. If the operation info equals 0, one of these frames has been pushed on the stack:
 
-  |||
+  |Location|Value|
   |-|-|
   |RSP+32|SS|
   |RSP+24|Old RSP|
@@ -182,7 +183,7 @@ The unwind operation code is one of these values:
 
   If the operation info equals 1, then one of these frames has been pushed:
 
-  |||
+  |Location|Value|
   |-|-|
   |RSP+40|SS|
   |RSP+32|Old RSP|
@@ -213,7 +214,7 @@ The unwind operation code is one of these values:
 
 The meaning of the operation info bits depends upon the operation code. To encode a general-purpose (integer) register, this mapping is used:
 
-|||
+|Bit|Register|
 |-|-|
 |0|RAX|
 |1|RCX|
@@ -297,7 +298,7 @@ typedef struct _DISPATCHER_CONTEXT {
 } DISPATCHER_CONTEXT, *PDISPATCHER_CONTEXT;
 ```
 
-**ControlPc** is the value of RIP within this function. This value is either an exception address or the address at which control left the establishing function. The RIP is used to determine if control is within some guarded construct inside this function, for example, a `__try` block for `__try`/`__except` or `__try`/`__finally`.
+**ControlPc** is the value of RIP within this function. This value is either an exception address or the address at which control left the establishing function. The RIP is used to determine if control is within some guarded construct inside this function, for example, a **`__try`** block for **`__try`**/**`__except`** or **`__try`**/**`__finally`**.
 
 **ImageBase** is the image base (load address) of the module containing this function, to be added to the 32-bit offsets used in the function entry and unwind info to record relative addresses.
 

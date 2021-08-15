@@ -15,7 +15,7 @@ The Microsoft C++ compiler (MSVC) makes the following intrinsics available on th
 
 The NEON vector instruction set extensions for ARM64 provide Single Instruction Multiple Data (SIMD) capabilities. They resemble the ones in the MMX and SSE vector instruction sets that are common to x86 and x64 architecture processors.
 
-NEON intrinsics are supported, as provided in the header file *arm64_neon.h*. The MSVC support for NEON intrinsics resembles that of the ARM64 compiler, which is documented in the [ARM NEON Intrinsic Reference](https://static.docs.arm.com/ihi0073/c/IHI0073C_arm_neon_intrinsics_ref.pdf) on the ARM Infocenter website.
+NEON intrinsics are supported, as provided in the header file *arm64_neon.h*. The MSVC support for NEON intrinsics resembles that of the ARM64 compiler, which is documented in the [ARM NEON Intrinsic Reference](https://developer.arm.com/architectures/instruction-sets/simd-isas/neon/intrinsics) on the ARM Infocenter website.
 
 ## <a name="A"></a> ARM64-specific intrinsics listing
 
@@ -252,7 +252,7 @@ Interlocked intrinsics are a set of intrinsics that are used to perform atomic r
 
 The following table summarizes the ARM64 support of the non-bittest interlocked intrinsics. Each cell in the table corresponds to a name that is derived by appending the operation name in the left-most cell of the row and the type name in the top-most cell of the column to `_Interlocked`. For example, the cell at the intersection of the `Xor` row and the `8` column corresponds to `_InterlockedXor8` and is fully supported. Most of the supported functions offer these optional suffixes: `_acq`, `_rel`, and `_nf`. The `_acq` suffix indicates an "acquire" semantic and the `_rel` suffix indicates a "release" semantic. The `_nf` or "no fence" suffix is unique to ARM and ARM64 and is discussed in the next section.
 
-||8|16|32|64|128|P|
+|Operation|8|16|32|64|128|P|
 |-|-------|--------|--------|--------|-------|-------|
 |Add|None|None|Full|Full|None|None|
 |And|Full|Full|Full|Full|None|None|

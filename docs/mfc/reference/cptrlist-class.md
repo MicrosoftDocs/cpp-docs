@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPtrList Class"
 title: "CPtrList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPtrList"]
@@ -17,7 +18,7 @@ class CPtrList : public CObject
 
 ## Members
 
-The member functions of `CPtrList` are similar to the member functions of class [CObList](../../mfc/reference/coblist-class.md). Because of this similarity, you can use the `CObList` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a function parameter or return value, substitute a pointer to **void**.
+The member functions of `CPtrList` are similar to the member functions of class [CObList](../../mfc/reference/coblist-class.md). Because of this similarity, you can use the `CObList` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a function parameter or return value, substitute a pointer to **`void`**.
 
 `CObject*& CObList::GetHead() const;`
 

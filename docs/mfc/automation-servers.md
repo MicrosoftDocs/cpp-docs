@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Automation Servers"
 title: "Automation Servers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Automation servers", "COM components, Automation servers", "dispatch maps [MFC], Automation servers", "servers, Automation"]
@@ -6,7 +7,7 @@ ms.assetid: 523fd155-51ce-4f91-b986-b74bdbdd7d92
 ---
 # Automation Servers
 
-Automation makes it possible for your application to manipulate objects implemented in another application, or to expose objects so they can be manipulated. An Automation server is an application that exposes programmable objects (called Automation objects) to other applications (called [Automation clients](../mfc/automation-clients.md)). Automation servers are sometimes called Automation components.
+Automation makes it possible for your application to manipulate objects implemented in another application, or to expose objects so they can be manipulated. An Automation server is an application that exposes programmable objects (called Automation objects) to other applications (called [Automation clients](automation-clients.md)). Automation servers are sometimes called Automation components.
 
 Exposing Automation objects enables clients to automate certain procedures by directly accessing the objects and functionality the server makes available. Exposing objects this way is beneficial when applications provide functionality that is useful for other applications. For example, a word processor might expose its spell-checking functionality so that other programs can use it. Exposure of objects thus enables vendors to improve their applications' functionality by using the ready-made functionality of other applications.
 
@@ -23,7 +24,7 @@ Visual C++ and the MFC framework provide extensive support for Automation server
 
 The framework's principal mechanism for supporting Automation is the dispatch map, a set of macros that expands into the declarations and calls needed to expose methods and properties for OLE. A typical dispatch map looks like this:
 
-[!code-cpp[NVC_MFCAutomation#1](../mfc/codesnippet/cpp/automation-servers_1.cpp)]
+[!code-cpp[NVC_MFCAutomation#1](codesnippet/cpp/automation-servers_1.cpp)]
 
 The [Class Wizard](reference/mfc-class-wizard.md) and Class View assist in maintaining dispatch maps. When you add a new method or property to a class, Visual Studio adds a corresponding `DISP_FUNCTION` or `DISP_PROPERTY` macro with parameters indicating the class name, external and internal names of the method or property, and data types.
 
@@ -35,13 +36,13 @@ The MFC Application Wizard simplifies the steps involved in getting your automat
 
 ### What do you want to do
 
-- [Learn about Automation clients](../mfc/automation-clients.md)
+- [Learn about Automation clients](automation-clients.md)
 
-- [Learn more about class CCmdTarget](../mfc/reference/ccmdtarget-class.md)
+- [Learn more about class CCmdTarget](reference/ccmdtarget-class.md)
 
-- [Learn more about class COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md)
+- [Learn more about class COleDispatchDriver](reference/coledispatchdriver-class.md)
 
 ## See also
 
-[Automation](../mfc/automation.md)<br/>
-[MFC Application Wizard](../mfc/reference/mfc-application-wizard.md)
+[Automation](automation.md)<br/>
+[MFC Application Wizard](reference/mfc-application-wizard.md)

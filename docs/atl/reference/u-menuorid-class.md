@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _U_MENUorID Class"
 title: "_U_MENUorID Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL._U_MENUorID", "ATL::_U_MENUorID", "_U_MENUorID"]

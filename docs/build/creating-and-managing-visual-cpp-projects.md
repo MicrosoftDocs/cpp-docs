@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Visual Studio projects - C++"
 title: "Visual Studio Projects - C++"
 ms.date: "10/25/2019"
 helpviewer_keywords: ["ATL projects, creating", "Visual Studio C++ projects, creating", "projects [C++], creating", "Visual Studio C++ projects", "ATL projects"]
@@ -10,19 +11,19 @@ A *Visual Studio project* is a project based on the MSBuild build system. MSBuil
 
 ## Create a project
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 You can create C++ projects by choosing **File** > **New** > **Project**, then setting the **Language** to C++. In the results list you see a list of project templates which you can filter by setting the **Platform** or **Project Type** and by typing keywords into the search box.
 
-   ![Visual Studio 2019 Project Templates](../build/media/vs2019-choose-console-app.png "Visual Studio 2019 New Project Dialog")
+   ![Screenshot of the Create a new project wizard in Visual Studio.](../build/media/vs2019-choose-console-app.png "Visual Studio 2019 New Project Dialog")
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 You can create C++ projects by choosing **File** > **New** > **Project**, then choosing Visual C++ in the left pane. In the center pane you see a list of project templates:
 
-   ![Project Templates](../overview/media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
+   ![Screenshot of the New Project dialog, showing available project templates.](../overview/media/vs2017-new-project.png "Visual Studio 2017 New Project Dialog")
 
 ::: moniker-end
 
@@ -30,7 +31,7 @@ For more information about all the default project templates that are included i
 
 After you create a project, it appears in the [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio) window:
 
-   ![Solution Explorer](media/mathlibrary-solution-explorer-153.png)
+   ![Screenshot of the Solution Explorer window.](media/mathlibrary-solution-explorer-153.png)
 
 When you create a new project, a solution file (.sln) is also created. You can add additional projects to the solution by right-clicking on it in **Solution Explorer**. The solution file is used to coordinate build dependencies when you have multiple related projects but doesn't do much more than that. All the compiler options are set at the project level.
 
@@ -40,7 +41,7 @@ Add source code files, icons, or any other items to your project by right-clicki
 
 ## Add third party libraries
 
-To add third-party libraries, use the [vcpkg](vcpkg.md) package manager. Run the Visual Studio integration step to set up the paths to that library when you reference it from any Visual Studio project.
+To add third-party libraries, use the [vcpkg](https://vcpkg.io/) package manager. Run the Visual Studio integration step to set up the paths to that library when you reference it from any Visual Studio project.
 
 ## Set compiler options and other build properties
 
@@ -52,7 +53,7 @@ To compile and run the new project, press **F5** or click the *debug dropdown* w
 
 A new project compiles without errors. When adding your own code, you may occasionally introduce an error or trigger a warning. An error prevents the build from completing; a warning does not. All errors and warnings will appear both in the Output Window and in the Error List when you build the project.
 
-   ![Output window and error list](../overview/media/vs2017-output-error-list.png)
+   ![Screenshot of the Output window and Error list.](../overview/media/vs2017-output-error-list.png)
 
 In the Error List, you can press **F1** on a highlighted error to go to its documentation topic.
 

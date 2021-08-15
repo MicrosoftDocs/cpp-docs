@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /NOLOGO (Suppress Startup Banner) (Linker)"
 title: "/NOLOGO (Suppress Startup Banner) (Linker)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.SuppressStartupBanner", "/nologo"]

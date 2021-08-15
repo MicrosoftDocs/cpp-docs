@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /DEFAULTLIB (Specify Default Library)"
 title: "/DEFAULTLIB (Specify Default Library)"
 ms.date: "05/29/2018"
 f1_keywords: ["VC.Project.VCLinkerTool.DefaultLibraries", "/defaultlib"]

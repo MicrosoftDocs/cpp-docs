@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAtlMemMgr Class"
 title: "IAtlMemMgr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IAtlMemMgr", "ATLMEM/ATL::IAtlMemMgr", "ATLMEM/ATL::Allocate", "ATLMEM/ATL::Free", "ATLMEM/ATL::GetSize", "ATLMEM/ATL::Reallocate"]
@@ -19,7 +20,7 @@ __interface __declspec(uuid("654F7EF5-CFDF-4df9-A450-6C6A13C622C0")) IAtlMemMgr
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[Allocate](#allocate)|Call this method to allocate a block of memory.|
 |[Free](#free)|Call this method to free a block of memory.|
@@ -922,7 +923,7 @@ Calling this method is equivalent to calling [IAxWinHostWindowLic::CreateControl
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `IAxWinHostWindowLic::CreateControlLic`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample that uses `IAxWinHostWindowLic::CreateControlLic`.
 
 ## <a name="createcontrollicex"></a> IAxWinHostWindowLic::CreateControlLicEx
 
@@ -950,7 +951,7 @@ See [IAxWinHostWindow::CreateControlEx](#createcontrolex) for a description of t
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample that uses `IAxWinHostWindowLic::CreateControlLicEx`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample that uses `IAxWinHostWindowLic::CreateControlLicEx`.
 
 ## See also
 

@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l"
 title: "_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l"
 ms.date: "4/2/2020"
 api_name: ["_mbcjistojms", "_mbcjmstojis", "_mbcjistojms_l", "_mbcjmstojis_l", "_o__mbcjistojms", "_o__mbcjistojms_l", "_o__mbcjmstojis", "_o__mbcjmstojis_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbcjistojms", "_mbcjistojms", "_mbcjistojms_l", "_mbcjmstojis_l", "_mbcjmstojis", "mbcjmstojis_l", "mbcjistojms_l", "mbcjmstojis"]

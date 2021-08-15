@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Virtual Functions"
 title: "Virtual Functions"
 ms.date: "09/10/2019"
 helpviewer_keywords: ["functions [C++], virtual functions", "derived classes [C++], virtual functions", "virtual functions"]
@@ -131,9 +132,9 @@ Invoked by Derived
 
 Note that regardless of whether the `NameOf` function is invoked through a pointer to `Base` or a pointer to `Derived`, it calls the function for `Derived`. It calls the function for `Derived` because `NameOf` is a virtual function, and both `pBase` and `pDerived` point to an object of type `Derived`.
 
-Because virtual functions are called only for objects of class types, you cannot declare global or static functions as **virtual**.
+Because virtual functions are called only for objects of class types, you cannot declare global or static functions as **`virtual`**.
 
-The **virtual** keyword can be used when declaring overriding functions in a derived class, but it is unnecessary; overrides of virtual functions are always virtual.
+The **`virtual`** keyword can be used when declaring overriding functions in a derived class, but it is unnecessary; overrides of virtual functions are always virtual.
 
 Virtual functions in a base class must be defined unless they are declared using the *pure-specifier*. (For more information about pure virtual functions, see [Abstract Classes](../cpp/abstract-classes-cpp.md).)
 

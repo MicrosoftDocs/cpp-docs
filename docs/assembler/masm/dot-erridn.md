@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &period;ERRIDN, &period;ERRIDNI"
 title: "&period;ERRIDN, &period;ERRIDNI"
 ms.date: "05/23/2019"
 f1_keywords: [".ERRIDN", ".ERRIDNI"]

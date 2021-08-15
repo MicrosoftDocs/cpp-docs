@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Consumer Wizard-Generated Methods"
 title: "Consumer Wizard-Generated Methods"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB consumers, wizard-generated classes and methods"]
@@ -6,13 +7,13 @@ ms.assetid: d80ee51c-8bb3-4dca-8760-5808e0fb47b4
 ---
 # Consumer Wizard-Generated Methods
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The ATL OLE DB Consumer wizard is not available in Visual Studio 2019 and later. You can still add the functionality manually.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 The **ATL OLE DB Consumer Wizard** and the **MFC Application Wizard** generate certain functions of which you should be aware. Some methods are implemented differently in attributed projects, so there are a few caveats; each case is covered below. For information about viewing injected code, see [Debugging Injected Code](/visualstudio/debugger/how-to-debug-injected-code).
 
@@ -36,7 +37,7 @@ HRESULT OpenAll();
 void CloseAll();
 ```
 
-The following example shows how you can call `OpenAll` and `CloseAll` when you execute the same command repeatedly. Compare the code example in [CCommand::Close](../../data/oledb/ccommand-close.md), which shows a variation that calls `Close` and `ReleaseCommand` instead of `CloseAll`.
+The following example shows how you can call `OpenAll` and `CloseAll` when you execute the same command repeatedly. Compare the code example in [CCommand::Close](./ccommand-class.md#close), which shows a variation that calls `Close` and `ReleaseCommand` instead of `CloseAll`.
 
 ```cpp
 int main(int argc, char* argv[])
@@ -148,7 +149,7 @@ void CloseDataSource();
 
 ### Remarks
 
-The wizard defines the methods `OpenDataSource` and `CloseDataSource`; `OpenDataSource` calls [CDataSource::OpenFromInitializationString](../../data/oledb/cdatasource-openfrominitializationstring.md).
+The wizard defines the methods `OpenDataSource` and `CloseDataSource`; `OpenDataSource` calls [CDataSource::OpenFromInitializationString](./cdatasource-class.md#openfrominitializationstring).
 
 ::: moniker-end
 

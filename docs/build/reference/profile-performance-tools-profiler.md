@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /PROFILE (Performance Tools Profiler)"
 title: "/PROFILE (Performance Tools Profiler)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.Profile"]
@@ -29,17 +30,13 @@ Produces an output file that can be used with the Performance Tools profiler.
 
 /PROFILE causes the linker to generate a relocation section in the program image.  A relocation section allows the profiler to transform the program image to get profile data.
 
-**/PROFILE** is only available only in Enterprise (team development) versions.  For more information on PREfast, see [Code Analysis for C/C++ Overview](/cpp/code-quality/code-analysis-for-c-cpp-overview).
+**/PROFILE** is only available only in Enterprise (team development) versions.  For more information on PREfast, see [Code Analysis for C/C++ Overview](../../code-quality/code-analysis-for-c-cpp-overview.md).
 
 ### To set this linker option in the Visual Studio development environment
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Expand the **Configuration Properties** node.
-
-1. Expand the **Linker** node.
-
-1. Select the **Advanced** property page.
+1. Select the **Configuration Properties** > **Linker** > **Advanced** property page.
 
 1. Modify the **Profile** property.
 

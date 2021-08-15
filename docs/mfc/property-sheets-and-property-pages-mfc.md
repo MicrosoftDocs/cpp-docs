@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property Sheets and Property Pages (MFC)"
 title: "Property Sheets and Property Pages (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC dialog boxes [MFC], tabs", "property pages [MFC], property sheets", "CPropertyPage class [MFC], property sheets and pages", "CPropertySheet class [MFC], property sheets and pages", "property sheets, propert pages"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Desktop Applications (Visual C++)"
 title: "Desktop Applications (Visual C++)"
 ms.date: "07/28/2019"
 ms.assetid: a020b534-293c-44e2-aa48-516c43ddeb8f
@@ -32,13 +33,13 @@ Any desktop application in C++ can use C Runtime (CRT) and Standard Library clas
 
 |Title|Description|
 |-----------|-----------------|
-|[Windows Console Applications in C++](console-applications-in-visual-cpp.md)|Contains information about console apps. A Win32 (or Win64) console application has no window of its own and no message loop. It runs in the console window, and input and output are handled through the command line.|
+|[Windows Console Applications in C++](./overview-of-windows-programming-in-cpp.md)|Contains information about console apps. A Win32 (or Win64) console application has no window of its own and no message loop. It runs in the console window, and input and output are handled through the command line.|
 |[Walkthrough: Creating Windows Desktop Applications (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Create a simple Windows desktop application.|
-|[Creating an Empty Windows Desktop Application](creating-an-empty-windows-desktop-application.md)|How to create a Windows desktop project that has no default files.|
-|[Adding Files to an Empty Win32 Applications](adding-files-to-an-empty-win32-applications.md)|How to add files to an empty project.|
+|[Creating an Empty Windows Desktop Application](./overview-of-windows-programming-in-cpp.md)|How to create a Windows desktop project that has no default files.|
+|[Adding Files to an Empty Win32 Applications](./overview-of-windows-programming-in-cpp.md)|How to add files to an empty project.|
 |[Working with Resource Files](working-with-resource-files.md)|How to add images, icons, string tables, and other resources to a desktop application.|
 |[Resources for Creating a Game Using DirectX (C++)](resources-for-creating-a-game-using-directx.md)|Links to content for creating games in C++.|
-|[Walkthrough: Creating and Using a Static Library](walkthrough-creating-and-using-a-static-library-cpp.md)|How to create a .lib binary file.|
+|[Walkthrough: Creating and Using a Static Library](../build/walkthrough-creating-and-using-a-static-library-cpp.md)|How to create a .lib binary file.|
 |[How to: Use the Windows 10 SDK in a Windows Desktop Application](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Contains steps for setting up your project to build using the Windows 10 SDK.|
 
 ## Related Articles
@@ -46,7 +47,7 @@ Any desktop application in C++ can use C Runtime (CRT) and Standard Library clas
 |Title|Description|
 |-----------|-----------------|
 |[Windows Development](/windows/win32/index)|Contains information about the Windows API and COM. (Some Windows APIs and third-party DLLs are implemented as COM objects.)|
-|[Hilo: Developing C++ Applications for Windows 7](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)|Describes how to create a rich-client Windows desktop application that uses Windows Animation and Direct2D to create a carousel-based user interface.  This tutorial has not been updated since Windows 7 but it still provides a thorough introduction to Win32 programming.|
+|[Hilo: Developing C++ Applications for Windows 7](/previous-versions/msdn10/ff708696(v=msdn.10))|Describes how to create a rich-client Windows desktop application that uses Windows Animation and Direct2D to create a carousel-based user interface.  This tutorial has not been updated since Windows 7 but it still provides a thorough introduction to Win32 programming.|
 |[Overview of Windows Programming in C++](overview-of-windows-programming-in-cpp.md)|Describes key features of Windows desktop programming in C++.|
 
 ## See also

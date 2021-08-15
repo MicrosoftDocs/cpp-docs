@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ICommandUI Interface"
 title: "ICommandUI Interface"
 ms.date: "09/07/2019"
 f1_keywords: ["ICommandUI", "AFXWINFORMS/ICommandUI", "AFXWINFORMS/icommandui__Check", "AFXWINFORMS/ICommandUI::ContinueRouting", "AFXWINFORMS/ICommandUI::Enabled", "AFXWINFORMS/ICommandUI::ID", "AFXWINFORMS/ICommandUI::Index", "AFXWINFORMS/ICommandUI::Radio", "AFXWINFORMS/ICommandUI::Text"]
@@ -29,7 +30,7 @@ interface class ICommandUI
 |[ICommandUI::Radio](#radio)|Sets the user interface item for this command to the appropriate check state.|
 |[ICommandUI::Text](#text)|Sets the text of the user interface item for this command.|
 
-## Remarks
+### Remarks
 
 This interface provides methods and properties that manage user interface commands. `ICommandUI` is similar to [CCmdUI Class](../../mfc/reference/ccmdui-class.md), except that `ICommandUI` is used for MFC applications that interoperate with .NET components.
 
@@ -49,7 +50,7 @@ Sets the user interface item for this command to the appropriate check state.
 property UICheckState Check;
 ```
 
-## Remarks
+### Remarks
 
 This property sets the user interface item for this command to the appropriate check state. Set Check to the following values:
 
@@ -65,7 +66,7 @@ Tells the command routing mechanism to continue routing the current message down
 void ContinueRouting();
 ```
 
-## Remarks
+### Remarks
 
 This is an advanced member function that should be used in conjunction with an ON_COMMAND_EX handler that returns FALSE. For more information, see Technical Note TN006: Message Maps.
 
@@ -77,7 +78,7 @@ Enables or disables the user interface item for this command.
 property bool Enabled;
 ```
 
-## Remarks
+### Remarks
 
 This property enables or disables the user interface item for this command. Set Enabled to TRUE to enable the item, FALSE to disable it.
 
@@ -89,7 +90,7 @@ Gets the ID of the user interface object represented by the ICommandUI object.
 property unsigned int ID;
 ```
 
-## Remarks
+### Remarks
 
 This property gets the ID (a handle) of the menu item, toolbar button, or other user interface object represented by the ICommandUI object.
 
@@ -101,7 +102,7 @@ Gets the index of the user interface object represented by the ICommandUI object
 property unsigned int Index;
 ```
 
-## Remarks
+### Remarks
 
 This property gets the index (a handle) of the menu item, toolbar button, or other user interface object represented by the ICommandUI object.
 
@@ -113,7 +114,7 @@ Sets the user interface item for this command to the appropriate check state.
 property bool Radio;
 ```
 
-## Remarks
+### Remarks
 
 This property sets the user interface item for this command to the appropriate check state. Set Radio to TRUE to enable the item; otherwise FALSE.
 
@@ -125,7 +126,7 @@ Sets the text of the user interface item for this command.
 property String^ Text;
 ```
 
-## Remarks
+### Remarks
 
 This property sets the text of the user interface item for this command. Set Text to a text string handle.
 

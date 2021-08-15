@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using IDispEventImpl"
 title: "Using IDispEventImpl (ATL)"
 ms.date: "08/19/2019"
 helpviewer_keywords: ["IDispEventImpl class, using"]

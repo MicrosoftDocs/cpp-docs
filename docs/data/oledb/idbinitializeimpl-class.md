@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDBInitializeImpl Class"
 title: "IDBInitializeImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL.IDBInitializeImpl<T>", "ATL::IDBInitializeImpl<T>", "IDBInitializeImpl", "ATL::IDBInitializeImpl", "ATL.IDBInitializeImpl", "IDBInitializeImpl.IDBInitializeImpl", "IDBInitializeImpl::IDBInitializeImpl", "Initialize", "IDBInitializeImpl::Initialize", "IDBInitializeImpl.Initialize", "IDBInitializeImpl.Uninitialize", "Uninitialize", "IDBInitializeImpl::Uninitialize", "ATL::IDBInitializeImpl::m_dwStatus", "IDBInitializeImpl.m_dwStatus", "ATL.IDBInitializeImpl.m_dwStatus", "IDBInitializeImpl::m_dwStatus", "IDBInitializeImpl<T>::m_dwStatus", "ATL.IDBInitializeImpl<T>.m_dwStatus", "ATL::IDBInitializeImpl<T>::m_dwStatus", "m_dwStatus", "ATL::IDBInitializeImpl<T>::m_pCUtlPropInfo", "m_pCUtlPropInfo", "IDBInitializeImpl::m_pCUtlPropInfo", "ATL.IDBInitializeImpl.m_pCUtlPropInfo", "IDBInitializeImpl<T>::m_pCUtlPropInfo", "IDBInitializeImpl.m_pCUtlPropInfo", "ATL::IDBInitializeImpl::m_pCUtlPropInfo"]
@@ -29,20 +30,20 @@ Your class, derived from `IDBInitializeImpl`.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[IDBInitializeImpl](#idbinitializeimpl)|The constructor.|
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Initialize](#initialize)|Starts the provider.|
 |[Uninitialize](#uninitialize)|Stops the provider.|
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_dwStatus](#dwstatus)|Data source flags.|
 |[m_pCUtlPropInfo](#pcutlpropinfo)|A pointer to implementation of DB Properties information.|
@@ -105,7 +106,7 @@ DWORD m_dwStatus;
 
 ### Remarks
 
-These flags specify or indicate the status of various attributes for the data source object. Contains one or more of the following **enum** values:
+These flags specify or indicate the status of various attributes for the data source object. Contains one or more of the following **`enum`** values:
 
 ```cpp
 enum DATASOURCE_FLAGS {
@@ -115,7 +116,7 @@ enum DATASOURCE_FLAGS {
 };
 ```
 
-|||
+| Value | Description |
 |-|-|
 |`DSF_MASK_INIT`|A mask to enable restoration of the uninitialized state.|
 |`DSF_PERSIST_DIRTY`|Set if data source object requires persistence (that is, if there have been changes).|

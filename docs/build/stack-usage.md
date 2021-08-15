@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: x64 stack usage"
 title: "x64 stack usage"
 ms.date: "12/17/2018" 
 ms.assetid: 383f0072-0438-489f-8829-cca89582408c
@@ -21,7 +22,7 @@ The stack will always be maintained 16-byte aligned, except within the prolog (f
 
 The following is an example of the stack layout where function A calls a non-leaf function B. Function A's prolog has already allocated space for all the register and stack parameters required by B at the bottom of the stack. The call pushes the return address and B's prolog allocates space for its local variables, nonvolatile registers, and the space needed for it to call functions. If B uses `alloca`, the space is allocated between the local variable/nonvolatile register save area and the parameter stack area.
 
-![AMD conversion example](../build/media/vcamd_conv_ex_5.png "AMD conversion example")
+![Diagram of the stack layout for the x64 conversion example.](../build/media/vcamd_conv_ex_5.png "AMD conversion example")
 
 When the function B calls another function, the return address is pushed just below the home address for RCX.
 
@@ -41,7 +42,7 @@ A leaf function is one that does not require a function table entry. It can't ma
 
 ## malloc alignment
 
-[malloc](../c-runtime-library/reference/malloc.md) is guaranteed to return memory that's suitably aligned for storing any object that has a fundamental alignment and that could fit in the amount of memory that's allocated. A *fundamental alignment* is an alignment that's less than or equal to the largest alignment that's supported by the implementation without an alignment specification. (In Visual C++, this is the alignment that's required for a `double`, or 8 bytes. In code that targets 64-bit platforms, it's 16 bytes.) For example, a four-byte allocation would be aligned on a boundary that supports any four-byte or smaller object.
+[malloc](../c-runtime-library/reference/malloc.md) is guaranteed to return memory that's suitably aligned for storing any object that has a fundamental alignment and that could fit in the amount of memory that's allocated. A *fundamental alignment* is an alignment that's less than or equal to the largest alignment that's supported by the implementation without an alignment specification. (In Visual C++, this is the alignment that's required for a **`double`**, or 8 bytes. In code that targets 64-bit platforms, it's 16 bytes.) For example, a four-byte allocation would be aligned on a boundary that supports any four-byte or smaller object.
 
 Visual C++ permits types that have *extended alignment*, which are also known as *over-aligned* types. For example, the SSE types [__m128](../cpp/m128.md) and `__m256`, and types that are declared by using `__declspec(align( n ))` where `n` is greater than 8, have extended alignment. Memory alignment on a boundary that's suitable for an object that requires extended alignment is not guaranteed by `malloc`. To allocate memory for over-aligned types, use [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) and related functions.
 

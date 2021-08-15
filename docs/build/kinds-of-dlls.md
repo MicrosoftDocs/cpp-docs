@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Kinds of DLLs"
 title: "Kinds of DLLs"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["MFC DLLs [C++], types", "DLLs [C++], types", "DLLs [C++], MFC"]

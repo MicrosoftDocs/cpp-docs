@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Collections (C++/CX)"
 title: "Collections (C++/CX)"
 ms.date: "11/19/2018"
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
@@ -9,7 +10,7 @@ In a C++/CX program, you can make free use of Standard Template Library (STL) co
 
 The Windows Runtime defines the interfaces for collections and related types, and C++/CX provides the concrete C++ implementations in the collection.h header file. This illustration shows the relationships between the collection types:
 
-![C&#43;&#43;&#47;CX inheritance tree for collection types](../cppcx/media/cppcxcollectionsinheritancetree.png "C&#43;&#43;&#47;CX inheritance tree for collection types")
+![C&#43;&#43;&#47;CX inheritance tree for collection types.](../cppcx/media/cppcxcollectionsinheritancetree.png "C&#43;&#43;&#47;CX inheritance tree for collection types")
 
 - The [Platform::Collections::Vector class](../cppcx/platform-collections-vector-class.md) resembles the [std::vector class](../standard-library/vector-class.md).
 
@@ -33,7 +34,7 @@ When your class has to pass a sequence container to another Windows Runtime comp
 > [!IMPORTANT]
 > If you are passing a sequence within your own program, then use either `Vector` or `std::vector` because they are more efficient than `IVector`. Use `IVector` only when you pass the container across the ABI.
 >
-> The Windows Runtime type system does not support the concept of jagged arrays and therefore you cannot pass an IVector<Platform::Array\<T>> as a return value or method parameter. To pass a jagged array or a sequence of sequences across the ABI, use `IVector<IVector<T>^>`.
+> The Windows Runtime type system does not support the concept of jagged arrays and therefore you cannot pass an `IVector<Platform::Array<T>>` as a return value or method parameter. To pass a jagged array or a sequence of sequences across the ABI, use `IVector<IVector<T>^>`.
 
 `Vector<T>` provides the methods that are required for adding, removing, and accessing items in the collection, and it is implicitly convertible to `IVector<T>`. You can also use STL algorithms on instances of `Vector<T>`. The following example demonstrates some basic usage. The [begin function](../cppcx/begin-function.md) and [end function](../cppcx/end-function.md) here are from the `Platform::Collections` namespace, not the `std` namespace.
 
@@ -53,13 +54,13 @@ Any element to be stored in a [Platform::Collections::Vector](../cppcx/platform-
 
 [Platform::Collections::VectorIterator](../cppcx/platform-collections-vectoriterator-class.md) and [Platform::Collections::VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) enable the use of `range for` loops and algorithms like [std::sort](../standard-library/algorithm-functions.md#sort) with an [IVector\<T>](/uwp/api/windows.foundation.collections.ivector-1) container. But `IVector` elements cannot be accessed through C++ pointer dereference; they can be accessed only through [GetAt](/uwp/api/windows.foundation.collections.ivector-1.getat) and [SetAt](/uwp/api/windows.foundation.collections.ivector-1.setat) methods. Therefore, these iterators use the proxy classes `Platform::Details::VectorProxy<T>` and `Platform::Details::ArrowProxy<T>` to provide access to the individual elements through __\*__, __->__, and __\[]__ operators, as required by the Standard Library. Strictly speaking, given an `IVector<Person^> vec`, the type of `*begin(vec)` is `VectorProxy<Person^>`. However, the proxy object is almost always transparent to your code. These proxy objects are not documented because they are only for internal use by the iterators, but it is useful to know how the mechanism works.
 
-When you use a `range for` loop over `IVector` containers, use `auto&&` to enable the iterator variable to bind correctly to the `VectorProxy` elements. If you use `auto` or `auto&`, compiler warning C4239 is raised and `VectoryProxy` is mentioned in the warning text.
+When you use a range-based **`for`** loop over `IVector` containers, use `auto&&` to enable the iterator variable to bind correctly to the `VectorProxy` elements. If you use `auto&`, compiler warning [C4239](../error-messages/compiler-warnings/compiler-warning-level-4-c4239.md) is raised and `VectoryProxy` is mentioned in the warning text.
 
 The following illustration shows a `range for` loop over an `IVector<Person^>`. Notice that execution is stopped on the breakpoint on line 64. The **QuickWatch** window shows that the iterator variable `p` is in fact a `VectorProxy<Person^>` that has `m_v` and `m_i` member variables. However, when you call `GetType` on this variable, it returns the identical type to the `Person` instance `p2`. The takeaway is that although `VectorProxy` and `ArrowProxy` might appear in **QuickWatch**, the debugger certain compiler errors, or other places, you typically don't have to explicitly code for them.
 
-![VectorProxy in range&#45;based for loop](../cppcx/media/vectorproxy-1.png "VectorProxy in range&#45;based for loop")
+![Screenshot of debugging VectorProxy in a range based for loop.](../cppcx/media/vectorproxy-1.png "VectorProxy in range&#45;based for loop")
 
-One scenario in which you have to code around the proxy object is when you have to perform a `dynamic_cast` on the elements—for example, when you are looking for XAML objects of a particular type in a `UIElement` element collection. In this case, you must first cast the element to [Platform::Object](../cppcx/platform-object-class.md)^ and then perform the dynamic cast:
+One scenario in which you have to code around the proxy object is when you have to perform a **`dynamic_cast`** on the elements—for example, when you are looking for XAML objects of a particular type in a `UIElement` element collection. In this case, you must first cast the element to [Platform::Object](../cppcx/platform-object-class.md)^ and then perform the dynamic cast:
 
 ```cpp
 void FindButton(UIElementCollection^ col)
@@ -115,7 +116,7 @@ An STL iterator that satisfies the requirements of an STL input iterator.
 An STL iterator that satisfies the requirements of an STL mutable random-access iterator.
 
 [Platform::Collections::VectorViewIterator Class](../cppcx/platform-collections-vectorviewiterator-class.md)<br/>
-An STL iterator that satisfies the requirements of an STL  `const` random-access iterator.
+An STL iterator that satisfies the requirements of an STL  **`const`** random-access iterator.
 
 ### begin() and end() functions
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How WinInet Makes It Easier to Create Internet Client Applications"
 title: "How WinInet Makes It Easier to Create Internet Client Applications"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows Sockets [MFC], vs. WinInet", "WinInet classes [MFC], vs. WinSock", "WinInet classes [MFC], Internet client applications"]
@@ -8,7 +9,7 @@ ms.assetid: dc0f9f47-3184-4e7a-8074-2c63e0359885
 
 The Win32 Internet Extensions, or WinInet, provide access to common Internet protocols, including gopher, FTP, and HTTP. Using WinInet, you can write Internet client applications at a higher level of programming, without having to deal with WinSock, TCP/IP, or the details of specific Internet protocols. WinInet provides a consistent set of functions for all three protocols, with a familiar Win32 API interface. This consistency minimizes code changes you need to make if the underlying protocol changes (for example, from FTP to HTTP).
 
-Visual C++ provides two ways for you to use WinInet. You can call the Win32 Internet functions directly (see the OLE documentation in the Windows SDK for more information) or you can use WinInet through the [MFC WinInet classes](../mfc/mfc-classes-for-creating-internet-client-applications.md).
+Visual C++ provides two ways for you to use WinInet. You can call the Win32 Internet functions directly (see the OLE documentation in the Windows SDK for more information) or you can use WinInet through the [MFC WinInet classes](mfc-classes-for-creating-internet-client-applications.md).
 
 **You can use WinInet to:**
 
@@ -38,5 +39,5 @@ Many operations that can be performed by your computer as a client to other comp
 
 ## See also
 
-[Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[How MFC Makes It Easier to Create Internet Client Applications](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)
+[Win32 Internet Extensions (WinInet)](win32-internet-extensions-wininet.md)<br/>
+[How MFC Makes It Easier to Create Internet Client Applications](how-mfc-makes-it-easier-to-create-internet-client-applications.md)

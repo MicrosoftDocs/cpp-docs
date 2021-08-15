@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Name Decoration"
 title: "Name Decoration"
 ms.date: "04/22/2019"
 helpviewer_keywords: ["name decoration [C++]", "names [C++], decorated", "decorated names, calling conventions"]
@@ -14,10 +15,10 @@ The following table shows the linker name for various calling conventions.
 
 |Calling convention|`extern "C"` or `.c` file|`.cpp`, `.cxx` or `/TP`|
 |------------------------|---------------------------|------------------------|
-|C naming convention (`__cdecl`)|`_test`|`?test@@ZAXXZ`|
-|Fast call naming convention (`__fastcall`)|`@test@0`|`?test@@YIXXZ`|
-|Standard call naming convention (`__stdcall`)|`_test@0`|`?test@@YGXXZ`|
-|Vector call naming convention (`__vectorcall`)|`test@@0`|`?test@@YQXXZ`|
+|C naming convention (**`__cdecl`**)|`_test`|`?test@@ZAXXZ`|
+|Fast call naming convention (**`__fastcall`**)|`@test@0`|`?test@@YIXXZ`|
+|Standard call naming convention (**`__stdcall`**)|`_test@0`|`?test@@YGXXZ`|
+|Vector call naming convention (**`__vectorcall`**)|`test@@0`|`?test@@YQXXZ`|
 
 Use `extern "C"` to call a C function from C++. `extern "C"` forces use of the C naming convention for non-class C++ functions. Be aware of compiler switches **/Tc** or **/Tp**, which tell the compiler to ignore the filename extension and compile the file as C or C++, respectively. These options may cause linker names you don't expect.
 

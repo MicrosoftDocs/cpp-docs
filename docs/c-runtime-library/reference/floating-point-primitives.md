@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: Floating-point primitives"
 title: "Floating-point primitives"
 ms.date: "4/2/2020"
 api_name: ["_dclass", "_ldclass", "_fdclass", "_dsign", "_ldsign", "_fdsign", "_dpcomp", "_ldpcomp", "_fdpcomp", "_dtest", "_ldtest", "_fdtest", "_d_int", "_ld_int", "_fd_int", "_dscale", "_ldscale", "_fdscale", "_dunscale", "_ldunscale", "_fdunscale", "_dexp", "_ldexp", "_fdexp", "_dnorm", "_fdnorm", "_dpoly", "_ldpoly", "_fdpoly", "_dlog", "_ldlog", "_fdlog", "_dsin", "_ldsin", "_fdsin", "_o__d_int", "_o__dclass", "_o__dlog", "_o__dnorm", "_o__dpcomp", "_o__dpoly", "_o__dscale", "_o__dsign", "_o__dsin", "_o__dtest", "_o__dunscale", "_o__fd_int", "_o__fdclass", "_o__fdexp", "_o__fdlog", "_o__fdpcomp", "_o__fdpoly", "_o__fdscale", "_o__fdsign", "_o__fdsin", "_o__ld_int", "_o__ldclass", "_o__ldexp", "_o__ldlog", "_o__ldpcomp", "_o__ldpoly", "_o__ldscale", "_o__ldsign", "_o__ldsin", "_o__ldtest", "_o__ldunscale"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_dclass", "_ldclass", "_fdclass", "_dsign", "_ldsign", "_fdsign", "_dpcomp", "_ldpcomp", "_fdpcomp", "_dtest", "_ldtest", "_fdtest", "_d_int", "_ld_int", "_fd_int", "_dscale", "_ldscale", "_fdscale", "_dunscale", "_ldunscale", "_fdunscale", "_dexp", "_ldexp", "_fdexp", "_dnorm", "_fdnorm", "_dpoly", "_ldpoly", "_fdpoly", "_dlog", "_ldlog", "_fdlog", "_dsin", "_ldsin", "_fdsin"]
@@ -221,11 +222,11 @@ short __cdecl _fdnorm(unsigned short* ps);
 ### Parameters
 
 *ps*<br/>
-Pointer to the bitwise representation of a floating-point value expressed as an array of **unsigned** **short**.
+Pointer to the bitwise representation of a floating-point value expressed as an array of **`unsigned short`**.
 
 ### Remarks
 
-These floating-point primitives normalize the fractional part of an underflowed floating-point value and adjust the *characteristic*, or biased exponent, to match. The value is passed as the bitwise representation of the floating-point type converted to an array of **unsigned** **short** through the `_double_val`, `_ldouble_val`, or `_float_val` type punning union declared in math.h. The return value is the result of **fpclassify** on the input floating-point value if it's a NaN or infinity, and on the output value otherwise.
+These floating-point primitives normalize the fractional part of an underflowed floating-point value and adjust the *characteristic*, or biased exponent, to match. The value is passed as the bitwise representation of the floating-point type converted to an array of **`unsigned short`** through the `_double_val`, `_ldouble_val`, or `_float_val` type punning union declared in math.h. The return value is the result of **fpclassify** on the input floating-point value if it's a NaN or infinity, and on the output value otherwise.
 
 ## _dpoly, _ldpoly, _fdpoly
 

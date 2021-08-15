@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debugging and Error Reporting Macros"
 title: "Debugging and Error Reporting Macros"
 ms.date: "05/06/2019"
 f1_keywords: ["atldef/ATL::_ATL_DEBUG_INTERFACES", "atldef/ATL::_ATL_DEBUG_QI", "atldef/ATL::ATLASSERT", "afx/ATL::ATLENSURE", "atltrace/ATL::ATLTRACENOTIMPL", "atltrace/ATL::ATLTRACE"]
@@ -9,7 +10,7 @@ ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
 
 These macros provide useful debugging and trace facilities.
 
-|||
+|Name|Description|
 |-|-|
 |[_ATL_DEBUG_INTERFACES](#_atl_debug_interfaces)|Writes, to the output window, any interface leaks that are detected when `_Module.Term` is called.|
 |[_ATL_DEBUG_QI](#_atl_debug_qi)|Writes all calls to `QueryInterface` to the output window.|
@@ -35,7 +36,7 @@ The trace output will appear as shown below:
 
 The first part of each trace will always be `ATL: QIThunk`. Next is a value identifying the particular *interface thunk* being used. An interface thunk is an object used to maintain a reference count and provide the tracing capability used here. A new interface thunk is created on every call to `QueryInterface` except for requests for the `IUnknown` interface (in this case, the same thunk is returned every time to comply with COM's identity rules).
 
-Next you'll see `AddRef` or `Release` indicating which method was called. Following that, you'll see a value identifying the object whose interface reference count was changed. The value traced is the **this** pointer of the object.
+Next you'll see `AddRef` or `Release` indicating which method was called. Following that, you'll see a value identifying the object whose interface reference count was changed. The value traced is the **`this`** pointer of the object.
 
 The reference count that is traced is the reference count on that thunk after `AddRef` or `Release` was called. Note that this reference count may not match the reference count for the object. Each thunk maintains its own reference count to help you fully comply with COM's reference-counting rules.
 
@@ -81,7 +82,7 @@ Expression (including pointers) that evaluates to nonzero or 0.
 
 In debug builds, ATLASSERT evaluates *booleanExpression* and generates a debug report when the result is false.
 
-## Requirements
+### Requirements
 
 **Header:** atldef.h
 
@@ -118,7 +119,7 @@ The difference between ATLENSURE and ATLASSERT is that ATLENSURE throws an excep
 
 [!code-cpp[NVC_ATL_Utilities#108](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_1.cpp)]
 
-## Requirements
+### Requirements
 
 **Header:** afx.h
 
@@ -143,7 +144,7 @@ In release builds, simply returns E_NOTIMPL.
 
 [!code-cpp[NVC_ATL_Utilities#127](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_2.cpp)]
 
-## Requirements
+### Requirements
 
 **Header:** atltrace.h
 

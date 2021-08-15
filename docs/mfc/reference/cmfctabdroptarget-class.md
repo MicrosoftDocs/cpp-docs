@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCTabDropTarget Class"
 title: "CMFCTabDropTarget Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCTabDropTarget", "AFXBASETABCTRL/CMFCTabDropTarget", "AFXBASETABCTRL/CMFCTabDropTarget::OnDragEnter", "AFXBASETABCTRL/CMFCTabDropTarget::OnDragLeave", "AFXBASETABCTRL/CMFCTabDropTarget::OnDragOver", "AFXBASETABCTRL/CMFCTabDropTarget::OnDropEx", "AFXBASETABCTRL/CMFCTabDropTarget::Register"]
@@ -19,16 +20,14 @@ class CMFCTabDropTarget : public COleDropTarget
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`CMFCTabDropTarget::CMFCTabDropTarget`|Default constructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCTabDropTarget::OnDragEnter](#ondragenter)|Called by the framework when the user drags an object into a tab window. (Overrides [COleDropTarget::OnDragEnter](../../mfc/reference/coledroptarget-class.md#ondragenter).)|
 |[CMFCTabDropTarget::OnDragLeave](#ondragleave)|Called by the framework when the user drags an object outside of the tab window that has focus. (Overrides [COleDropTarget::OnDragLeave](../../mfc/reference/coledroptarget-class.md#ondragleave).)|
 |[CMFCTabDropTarget::OnDragOver](#ondragover)|Called by the framework when the user drags an object onto the tab window that has focus. (Overrides [COleDropTarget::OnDragOver](../../mfc/reference/coledroptarget-class.md#ondragover).)|
@@ -75,13 +74,17 @@ virtual DROPEFFECT OnDragEnter(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pWnd*|[in] Unused.|
-|*pDataObject*|[in] A pointer to the object that the user drags.|
-|*dwKeyState*|[in] Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.|
-|*point*|[in] The location of the cursor in client coordinates.|
+*pWnd*\
+[in] Unused.
+
+*pDataObject*\
+[in] A pointer to the object that the user drags.
+
+*dwKeyState*\
+[in] Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.
+
+*point*\
+[in] The location of the cursor in client coordinates.
 
 ### Return Value
 
@@ -113,10 +116,8 @@ virtual void OnDragLeave(CWnd* pWnd);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pWnd*|[in] Unused.|
+*pWnd*\
+[in] Unused.
 
 ### Remarks
 
@@ -136,13 +137,17 @@ virtual DROPEFFECT OnDragOver(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pWnd*|[in] Unused.|
-|*pDataObject*|[in] A pointer to the object that the user drags.|
-|*dwKeyState*|[in] Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.|
-|*point*|[in] The location of the mouse pointer in client coordinates.|
+*pWnd*\
+[in] Unused.
+
+*pDataObject*\
+[in] A pointer to the object that the user drags.
+
+*dwKeyState*\
+[in] Contains the state of the modifier keys. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.
+
+*point*\
+[in] The location of the mouse pointer in client coordinates.
 
 ### Return Value
 
@@ -179,14 +184,20 @@ virtual DROPEFFECT OnDropEx(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pWnd*|[in] Unused.|
-|*pDataObject*|[in] A pointer to the object that the user drags.|
-|*dropEffect*|[in] The default drop operation.|
-|*dropList*|[in] Unused.|
-|*point*|[in] The location of the mouse pointer in client coordinates.|
+*pWnd*\
+[in] Unused.
+
+*pDataObject*\
+[in] A pointer to the object that the user drags.
+
+*dropEffect*\
+[in] The default drop operation.
+
+*dropList*\
+[in] Unused.
+
+*point*\
+[in] The location of the mouse pointer in client coordinates.
 
 ### Return Value
 
@@ -218,10 +229,8 @@ BOOL Register(CMFCBaseTabCtrl *pOwner);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pOwner*|[in] The tab control to register as a drop target.|
+*pOwner*\
+[in] The tab control to register as a drop target.
 
 ### Return Value
 

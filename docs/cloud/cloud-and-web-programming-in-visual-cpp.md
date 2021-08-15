@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cloud and Web Programming in Visual C++"
 title: "Cloud and Web Programming in Visual C++"
 ms.date: "05/14/2019"
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
@@ -24,7 +25,7 @@ In C++, you have several options for connecting to the web and the cloud.
 
 - [OneDrive and SharePoint in Microsoft Graph](https://dev.onedrive.com/README.htm)
 
-  The OneDrive API provides a set of HTTP services to connect your application to files and folders in Office 365 and SharePoint Server 2016.
+  The OneDrive API provides a set of HTTP services to connect your application to files and folders in Microsoft 365 and SharePoint Server 2016.
 
 ## Windows and cross-platform networking APIs
 

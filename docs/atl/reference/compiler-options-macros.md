@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Options Macros"
 title: "Compiler Options Macros"
 ms.date: "08/19/2019"
 f1_keywords: ["_ATL_ALL_WARNINGS", "_ATL_APARTMENT_THREADED", "_ATL_CSTRING_EXPLICIT_CONSTRUCTORS ", "_ATL_ENABLE_PTM_WARNING", "_ATL_FREE_THREADED", "_ATL_MULTI_THREADED", "_ATL_NO_AUTOMATIC_NAMESPACE", "_ATL_NO_COM_SUPPORT", "ATL_NO_VTABLE", "ATL_NOINLINE", "_ATL_SINGLE_THREADED"]
@@ -9,7 +10,7 @@ ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
 
 These macros control specific compiler features.
 
-|||
+|Macro|Description|
 |-|-|
 |[_ATL_ALL_WARNINGS](#_atl_all_warnings)|A symbol that enables errors in projects converted from previous versions of ATL.|
 |[_ATL_APARTMENT_THREADED](#_atl_apartment_threaded)|Define if one or more of your objects use apartment threading.|
@@ -163,7 +164,7 @@ ATL_NO_VTABLE
 
 ### Remarks
 
-If the vtable pointer is prevented from being initialized in the class's constructor and destructor, the linker can eliminate the vtable and all of the functions to which it points. Expands to **__declspec(novtable)**.
+If the vtable pointer is prevented from being initialized in the class's constructor and destructor, the linker can eliminate the vtable and all of the functions to which it points. Expands to **`__declspec(novtable)`**.
 
 ### Example
 
@@ -188,7 +189,7 @@ The function that should not be inlined.
 
 ### Remarks
 
-Use this symbol if you want to ensure a function does not get inlined by the compiler, even though it must be declared as inline so that it can be placed in a header file. Expands to **__declspec(noinline)**.
+Use this symbol if you want to ensure a function does not get inlined by the compiler, even though it must be declared as inline so that it can be placed in a header file. Expands to **`__declspec(noinline)`**.
 
 ## <a name="_atl_single_threaded"></a> _ATL_SINGLE_THREADED
 

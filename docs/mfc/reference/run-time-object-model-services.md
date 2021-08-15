@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Run-Time Object Model Services"
 title: "Run-Time Object Model Services"
 ms.date: "03/27/2019"
 helpviewer_keywords: ["run-time object model services macros"]
@@ -20,7 +21,7 @@ For more information on these run-time object services and serialization, see th
 
 ### Run-Time Object Model Services Macros
 
-|||
+|Name|Description|
 |-|-|
 |[DECLARE_DYNAMIC](#declare_dynamic)|Enables access to run-time class information (must be used in the class declaration).|
 |[DECLARE_DYNCREATE](#declare_dyncreate)|Enables dynamic creation and access to run-time class information (must be used in the class declaration).|
@@ -36,7 +37,7 @@ The Microsoft Foundation Class Library provides two macros specific to OLE.
 
 ### Dynamic Creation of OLE Objects
 
-|||
+|Name|Description|
 |-|-|
 |[AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)|Determines whether the Common Controls library implements the specified API.|
 |[AFX_COMCTL32_IF_EXISTS2](#afx_comctl32_if_exists2)|Determines whether the Common Controls library implements the specified API.|
@@ -299,7 +300,7 @@ If you use the DECLARE_DYNCREATE and IMPLEMENT_DYNCREATE macros, you can then us
 
 If DECLARE_DYNCREATE is included in the class declaration, then IMPLEMENT_DYNCREATE must be included in the class implementation.
 
-Note that this macro definition will invoke the default constructor for your class. If a non-trivial constructor is explicitly implemented by the class, it must also explicitly implement the default constructor as well. The default constructor can be added to the class's **private** or **protected** member sections to prevent it from being called from outside the class implementation.
+Note that this macro definition will invoke the default constructor for your class. If a non-trivial constructor is explicitly implemented by the class, it must also explicitly implement the default constructor as well. The default constructor can be added to the class's **`private`** or **`protected`** member sections to prevent it from being called from outside the class implementation.
 
 ### Example
 
@@ -349,7 +350,7 @@ Components of the class's CLSID.
 
 The external name is the identifier exposed to other applications. Client applications use the external name to request an object of this class from an automation server.
 
-The OLE class ID is a unique 128-bit identifier for the object. It consists of one **long**, two **WORD**s, and eight **BYTE**s, as represented by *l*, *w1*, *w2*, and *b1* through *b8* in the syntax description. The Application Wizard and code wizards create unique OLE class IDs for you as required.
+The OLE class ID is a unique 128-bit identifier for the object. It consists of one **`long`**, two **WORD**s, and eight **BYTE**s, as represented by *l*, *w1*, *w2*, and *b1* through *b8* in the syntax description. The Application Wizard and code wizards create unique OLE class IDs for you as required.
 
 ### Requirements
 
@@ -504,7 +505,7 @@ Components of the class's CLSID.
 
 The external name is the identifier exposed to other applications. Client applications use the external name to request an object of this class from an automation server.
 
-The OLE class ID is a unique 128-bit identifier for the object. It consists of one **long**, two **WORD**s, and eight **BYTE**s, as represented by *l*, *w1*, *w2*, and *b1* through *b8* in the syntax description. The Application Wizard and code wizards create unique OLE class IDs for you as required.
+The OLE class ID is a unique 128-bit identifier for the object. It consists of one **`long`**, two **WORD**s, and eight **BYTE**s, as represented by *l*, *w1*, *w2*, and *b1* through *b8* in the syntax description. The Application Wizard and code wizards create unique OLE class IDs for you as required.
 
 ### Requirements
 

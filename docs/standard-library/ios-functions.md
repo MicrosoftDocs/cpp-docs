@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;ios&gt; functions"
 title: "&lt;ios&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["xiosbase/std::defaultfloat", "xiosbase/std::boolalpha", "xiosbase/std::dec", "ios/std::fixed", "ios/std::hex", "ios/std::internal", "ios/std::left", "ios/std::noboolalpha", "ios/std::noshowbase", "ios/std::noshowpoint", "ios/std::noshowpos", "ios/std::noskipws", "ios/std::nounitbuf", "ios/std::nouppercase", "ios/std::oct", "ios/std::right", "ios/std::scientific", "ios/std::showbase", "ios/std::showpoint", "ios/std::showpos", "ios/std::skipws", "ios/std::unitbuf", "ios/std::uppercase"]
@@ -9,7 +10,7 @@ helpviewer_keywords: ["std::defaultfloat [C++]", "std::boolalpha [C++]", "std::d
 
 ## <a name="boolalpha"></a> boolalpha
 
-Specifies that variables of type [bool](../cpp/bool-cpp.md) appear as **true** or **false** in the stream.
+Specifies that variables of type [bool](../cpp/bool-cpp.md) appear as **`true`** or **`false`** in the stream.
 
 ```cpp
 ios_base& boolalpha(ios_base& str);
@@ -26,7 +27,7 @@ A reference to the object from which *str* is derived.
 
 ### Remarks
 
-By default, variables of type **bool** are displayed as 1 or 0.
+By default, variables of type **`bool`** are displayed as 1 or 0.
 
 `boolalpha` effectively calls `str.`[setf](../standard-library/ios-base-class.md#setf)( `ios_base::boolalpha`), and then returns *str*.
 

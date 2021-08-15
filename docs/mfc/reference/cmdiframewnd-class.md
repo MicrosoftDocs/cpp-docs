@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMDIFrameWnd Class"
 title: "CMDIFrameWnd Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMDIFrameWnd", "AFXWIN/CMDIFrameWnd", "AFXWIN/CMDIFrameWnd::CMDIFrameWnd", "AFXWIN/CMDIFrameWnd::CreateClient", "AFXWIN/CMDIFrameWnd::CreateNewChild", "AFXWIN/CMDIFrameWnd::GetWindowMenuPopup", "AFXWIN/CMDIFrameWnd::MDIActivate", "AFXWIN/CMDIFrameWnd::MDICascade", "AFXWIN/CMDIFrameWnd::MDIGetActive", "AFXWIN/CMDIFrameWnd::MDIIconArrange", "AFXWIN/CMDIFrameWnd::MDIMaximize", "AFXWIN/CMDIFrameWnd::MDINext", "AFXWIN/CMDIFrameWnd::MDIPrev", "AFXWIN/CMDIFrameWnd::MDIRestore", "AFXWIN/CMDIFrameWnd::MDISetMenu", "AFXWIN/CMDIFrameWnd::MDITile"]
@@ -47,7 +48,7 @@ To create a useful MDI frame window for your application, derive a class from `C
 
 You can construct an MDI frame window by calling the [Create](../../mfc/reference/cframewnd-class.md#create) or [LoadFrame](../../mfc/reference/cframewnd-class.md#loadframe) member function of `CFrameWnd`.
 
-Before you call `Create` or `LoadFrame`, you must construct the frame window object on the heap using the C++ **new** operator. Before calling `Create` you can also register a window class with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.
+Before you call `Create` or `LoadFrame`, you must construct the frame window object on the heap using the C++ **`new`** operator. Before calling `Create` you can also register a window class with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.
 
 Use the `Create` member function to pass the frame's creation parameters as immediate arguments.
 
@@ -75,7 +76,7 @@ The `CMDIFrameWnd` class inherits much of its default implementation from `CFram
 
 - An MDI frame window also has an implementation of ID_WINDOW_NEW, which creates a new frame and view on the current document. An application can override these default command implementations to customize MDI window handling.
 
-Do not use the C++ **delete** operator to destroy a frame window. Use `CWnd::DestroyWindow` instead. The `CFrameWnd` implementation of `PostNcDestroy` will delete the C++ object when the window is destroyed. When the user closes the frame window, the default `OnClose` handler will call `DestroyWindow`.
+Do not use the C++ **`delete`** operator to destroy a frame window. Use `CWnd::DestroyWindow` instead. The `CFrameWnd` implementation of `PostNcDestroy` will delete the C++ object when the window is destroyed. When the user closes the frame window, the default `OnClose` handler will call `DestroyWindow`.
 
 For more information on `CMDIFrameWnd`, see [Frame Windows](../../mfc/frame-windows.md).
 

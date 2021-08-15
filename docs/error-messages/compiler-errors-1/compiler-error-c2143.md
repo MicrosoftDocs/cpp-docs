@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2143"
 title: "Compiler Error C2143"
 ms.date: "11/04/2016"
 f1_keywords: ["C2143"]
@@ -15,7 +16,7 @@ Check the [C++ Language Reference](../../cpp/cpp-language-reference.md) to deter
 
 C2143 can occur in different situations.
 
-It can occur when an operator that can qualify a name (`::`, `->`, and `.`) must be followed by the keyword `template`, as in this example:
+It can occur when an operator that can qualify a name (`::`, `->`, and `.`) must be followed by the keyword **`template`**, as in this example:
 
 ```cpp
 class MyClass
@@ -27,7 +28,7 @@ class MyClass
 };
 ```
 
-By default, C++ assumes that `Ty::PutFuncType` isn't a template; therefore, the following `<` is interpreted as a less-than sign.  You must tell the compiler explicitly that `PutFuncType` is a template so that it can correctly parse the angle bracket. To correct this error, use the `template` keyword on the dependent type's name, as shown here:
+By default, C++ assumes that `Ty::PutFuncType` isn't a template; therefore, the following `<` is interpreted as a less-than sign.  You must tell the compiler explicitly that `PutFuncType` is a template so that it can correctly parse the angle bracket. To correct this error, use the **`template`** keyword on the dependent type's name, as shown here:
 
 ```cpp
 class MyClass
@@ -39,7 +40,7 @@ class MyClass
 };
 ```
 
-C2143 can occur when **/clr** is used and a `using` directive has a syntax error:
+C2143 can occur when **/clr** is used and a **`using`** directive has a syntax error:
 
 ```cpp
 // C2143a.cpp
@@ -62,7 +63,7 @@ int main() {
 }
 ```
 
-The first non-whitespace character that follows an `if` statement must be a left parenthesis. The compiler cannot translate anything else:
+The first non-whitespace character that follows an **`if`** statement must be a left parenthesis. The compiler cannot translate anything else:
 
 ```cpp
 // C2143c.cpp
@@ -124,7 +125,7 @@ static vector<char> bad;   // C2143
 static std::vector<char> good;   // OK
 ```
 
-Or there is a missing `typename` keyword:
+Or there is a missing **`typename`** keyword:
 
 ```cpp
 // C2143h.cpp

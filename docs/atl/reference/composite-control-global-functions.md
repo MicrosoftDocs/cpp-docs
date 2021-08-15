@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Composite Control Global Functions"
 title: "Composite Control Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlhost/ATL::AtlAxDialogBox", "atlhost/ATL::AtlAxCreateDialog", "atlhost/ATL::AtlAxCreateControl", "atlhost/ATL::AtlAxCreateControlEx", "atlhost/ATL::AtlAxCreateControlLic", "atlhost/ATL::AtlAxCreateControlLicEx", "atlhost/ATL::AtlAxAttachControl", "atlhost/ATL::AtlAxGetHost", "atlhost/ATL::AtlAxGetControl", "atlhost/ATL::AtlSetChildSite", "atlhost/ATL::AtlAxWinInit", "atlhost/ATL::AtlAxWinTerm", "atlhost/ATL::AtlGetObjectSourceInterface"]
@@ -12,7 +13,7 @@ These functions provide support for creating dialog boxes, and for creating, hos
 > [!IMPORTANT]
 > The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
-|||
+|Function|Description|
 |-|-|
 |[AtlAxDialogBox](#atlaxdialogbox)|Creates a modal dialog box from a dialog template provided by the user. The resulting dialog box can contain ActiveX controls.|
 |[AtlAxCreateDialog](#atlaxcreatedialog)|Creates a modeless dialog box from a dialog template provided by the user. The resulting dialog box can contain ActiveX controls.|
@@ -75,7 +76,7 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
-For more information on editing resource scripts, see [How to: Open a Resource Script File in Text Format](../../windows/how-to-open-a-resource-script-file-in-text-format.md). For more information on control resource-definition statements, see [Common Control Parameters](/windows/win32/menurc/common-control-parameters) under Windows SDK: SDK Tools.
+For more information on editing resource scripts, see [How to: Create Resources](../../windows/how-to-create-a-resource-script-file.md). For more information on control resource-definition statements, see [Common Control Parameters](/windows/win32/menurc/common-control-parameters) under Windows SDK: SDK Tools.
 
 For more information on dialog boxes in general, refer to [DialogBox](/windows/win32/api/winuser/nf-winuser-dialogboxw) and [CreateDialogParam](/windows/win32/api/winuser/nf-winuser-createdialogparamw) in the Windows SDK.
 
@@ -278,7 +279,7 @@ One of the standard HRESULT values.
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample of how to use `AtlAxCreateControlLic`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample of how to use `AtlAxCreateControlLic`.
 
 ## <a name="atlaxcreatecontrollicex"></a> AtlAxCreateControlLicEx
 
@@ -345,7 +346,7 @@ One of the standard HRESULT values.
 
 ### Example
 
-See [Hosting ActiveX Controls Using ATL AXHost](../../atl/hosting-activex-controls-using-atl-axhost.md) for a sample of how to use `AtlAxCreateControlLicEx`.
+See [Hosting ActiveX Controls Using ATL AXHost](../../atl/atl-control-containment-faq.yml#hosting-activex-controls-using-atl-axhost) for a sample of how to use `AtlAxCreateControlLicEx`.
 
 ## <a name="atlaxattachcontrol"></a> AtlAxAttachControl
 

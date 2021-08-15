@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (Level 1) C4744"
 title: "Compiler Warning (Level 1) C4744"
 ms.date: "11/04/2016"
 f1_keywords: ["C4744"]
@@ -16,7 +17,7 @@ C4744 is emitted only when files are compiled with /GL.  For more information, s
 > [!NOTE]
 > C4744 usually occurs in C (not C++) files, because in C++ a variable name is decorated with type information.  When the sample (below) is compiles as C++, you’ll get linker error LNK2019.
 
-## Example
+## Examples
 
 This sample contains the first definition.
 
@@ -25,8 +26,6 @@ This sample contains the first definition.
 // compile with: /c /GL
 int global;
 ```
-
-## Example
 
 The following sample generates C4744.
 

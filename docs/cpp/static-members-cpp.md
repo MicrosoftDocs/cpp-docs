@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Static Members (C++)"
 title: "Static Members (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["class members [C++], static", "instance constructors, static members", "class members [C++], shared", "members [C++], static data members", "static members [C++], data members", "static data members [C++]", "data members [C++], static data members", "class instances [C++], shared members", "instance constructors, shared members", "class instances [C++], static members"]
@@ -6,7 +7,7 @@ ms.assetid: 9cc8cf0f-d74c-46f2-8e83-42d4e42c8370
 ---
 # Static Members (C++)
 
-Classes can contain static member data and member functions. When a data member is declared as **static**, only one copy of the data is maintained for all objects of the class.
+Classes can contain static member data and member functions. When a data member is declared as **`static`**, only one copy of the data is maintained for all objects of the class.
 
 Static data members are not part of objects of a given class type. As a result, the declaration of a static data member is not considered a definition. The data member is declared in class scope, but definition is performed at file scope. These static members have external linkage. The following example illustrates this:
 
@@ -59,7 +60,7 @@ In the preceding case, the reference to the object (`Console`) is not evaluated;
 
 Static data members are subject to class-member access rules, so private access to static data members is allowed only for class-member functions and friends. These rules are described in [Member-Access Control](../cpp/member-access-control-cpp.md). The exception is that static data members must be defined in file scope regardless of their access restrictions. If the data member is to be explicitly initialized, an initializer must be provided with the definition.
 
-The type of a static member is not qualified by its class name. Therefore, the type of `BufferedOutput::bytecount` is **long**.
+The type of a static member is not qualified by its class name. Therefore, the type of `BufferedOutput::bytecount` is **`long`**.
 
 ## See also
 

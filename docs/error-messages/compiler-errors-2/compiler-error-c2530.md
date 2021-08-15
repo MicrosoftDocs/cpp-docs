@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2530"
 title: "Compiler Error C2530"
 ms.date: "11/04/2016"
 f1_keywords: ["C2530"]
@@ -11,7 +12,7 @@ ms.assetid: b790a312-48df-4a6a-9e27-be2c5f32f16c
 
 You must initialize a reference when it was declared, unless it is declared already:
 
-- With the keyword [extern](../../cpp/using-extern-to-specify-linkage.md).
+- With the keyword [extern](../../cpp/extern-cpp.md).
 
 - As a member of a class, structure, or union (and it is initialized in the constructor).
 

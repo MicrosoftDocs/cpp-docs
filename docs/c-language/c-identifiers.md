@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Identifiers"
 title: "C Identifiers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["identifiers, C", "naming identifiers", "identifiers", "symbols, C identifiers", "identifiers, case sensitivity", "symbols, case sensitivity"]
@@ -22,7 +23,7 @@ int main()
 
 Once declared, you can use the identifier in later program statements to refer to the associated value.
 
-A special kind of identifier, called a statement label, can be used in `goto` statements. (Declarations are described in [Declarations and Types](../c-language/declarations-and-types.md) Statement labels are described in [The goto and Labeled Statements](../c-language/goto-and-labeled-statements-c.md).)
+A special kind of identifier, called a statement label, can be used in **`goto`** statements. (Declarations are described in [Declarations and Types](../c-language/declarations-and-types.md) Statement labels are described in [The goto and Labeled Statements](../c-language/goto-and-labeled-statements-c.md).)
 
 ## Syntax
 
@@ -38,7 +39,7 @@ A special kind of identifier, called a statement label, can be used in `goto` st
 *digit*: one of<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**
 
-The first character of an identifier name must be a `nondigit` (that is, the first character must be an underscore or an uppercase or lowercase letter). ANSI allows six significant characters in an external identifier's name and 31 for names of internal (within a function) identifiers. External identifiers (ones declared at global scope or declared with storage class `extern`) may be subject to additional naming restrictions because these identifiers have to be processed by other software such as linkers.
+The first character of an identifier name must be a `nondigit` (that is, the first character must be an underscore or an uppercase or lowercase letter). ANSI allows six significant characters in an external identifier's name and 31 for names of internal (within a function) identifiers. External identifiers (ones declared at global scope or declared with storage class **`extern`**) may be subject to additional naming restrictions because these identifiers have to be processed by other software such as linkers.
 
 **Microsoft Specific**
 

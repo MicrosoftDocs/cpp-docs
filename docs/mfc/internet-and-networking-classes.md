@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internet and Networking Classes"
 title: "Internet and Networking Classes"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.net"]
@@ -11,10 +12,10 @@ These classes allow you to exchange information with another computer using a Wi
 
 The following categories of classes support connectivity.
 
-- [Windows Sockets Classes](../mfc/windows-sockets-classes.md)
+- [Windows Sockets Classes](windows-sockets-classes.md)
 
-- [Win32 Internet Classes](../mfc/win32-internet-classes.md)
+- [Win32 Internet Classes](win32-internet-classes.md)
 
 ## See also
 
-[Class Overview](../mfc/class-library-overview.md)
+[Class Overview](class-library-overview.md)

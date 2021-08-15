@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: true (C++)"
 title: "true (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["true_cpp"]
@@ -16,7 +17,7 @@ bool-expression logical-operator true ;
 
 ## Remarks
 
-This keyword is one of the two values for a variable of type [bool](../cpp/bool-cpp.md) or a conditional expression (a conditional expression is now a true boolean expression). If `i` is of type **bool**, then the statement `i = true;` assigns **true** to `i`.
+This keyword is one of the two values for a variable of type [bool](../cpp/bool-cpp.md) or a conditional expression (a conditional expression is now a true boolean expression). If `i` is of type **`bool`**, then the statement `i = true;` assigns **`true`** to `i`.
 
 ## Example
 

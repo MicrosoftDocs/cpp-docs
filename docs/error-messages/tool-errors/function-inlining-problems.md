@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Function Inlining Problems"
 title: "Function Inlining Problems"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["/Ob1 C++ compiler option", "inline functions, problems", "-Ob1 C++ compiler option", "/Ob2 C++ compiler option", "-Ob2 C++ compiler option", "function inlining problems"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Header Control Examples"
 title: "Header Control Examples"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sample applications [MFC], header controls", "controls [MFC], header"]
@@ -10,5 +11,5 @@ For examples of header controls, see the [Header Controls](/windows/win32/Contro
 
 ## See also
 
-[Using CHeaderCtrl](../mfc/using-cheaderctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CHeaderCtrl](using-cheaderctrl.md)<br/>
+[Controls](controls-mfc.md)

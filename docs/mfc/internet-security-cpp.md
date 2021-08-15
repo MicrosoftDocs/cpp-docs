@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internet Security (C++)"
 title: "Internet Security (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["code signing [MFC], Internet security", "sandboxing [MFC]", "digital signatures [MFC], Internet security", "code signing [MFC]", "Web application security [MFC]", "code access security [MFC], Internet security considerations", "security [MFC]", "security [MFC], Internet", "Internet applications [MFC], security", "Web application security [MFC], Internet security approaches"]
@@ -14,5 +15,5 @@ In the first case, you trust that the application will not do any harm and you t
 
 ## See also
 
-[MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)<br/>
-[MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
+[MFC Internet Programming Tasks](mfc-internet-programming-tasks.md)<br/>
+[MFC Internet Programming Basics](mfc-internet-programming-basics.md)

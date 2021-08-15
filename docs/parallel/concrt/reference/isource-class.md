@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ISource Class"
 title: "ISource Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ISource", "AGENTS/concurrency::ISource", "AGENTS/concurrency::ISource::accept", "AGENTS/concurrency::ISource::acquire_ref", "AGENTS/concurrency::ISource::consume", "AGENTS/concurrency::ISource::link_target", "AGENTS/concurrency::ISource::release", "AGENTS/concurrency::ISource::release_ref", "AGENTS/concurrency::ISource::reserve", "AGENTS/concurrency::ISource::unlink_target", "AGENTS/concurrency::ISource::unlink_targets"]
@@ -130,7 +131,7 @@ A pointer to the `message` object that the caller now has ownership of.
 
 ### Remarks
 
-The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned **true**.
+The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned **`true`**.
 
 ## <a name="dtor"></a> ~ISource
 
@@ -208,7 +209,7 @@ A pointer to the target block that is calling the `reserve` method.
 
 ### Return Value
 
-**true** if the message was successfully reserved, **false** otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.
+**`true`** if the message was successfully reserved, **`false`** otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.
 
 ### Remarks
 

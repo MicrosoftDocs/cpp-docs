@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: reader_writer_lock Class"
 title: "reader_writer_lock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["reader_writer_lock", "CONCRT/concurrency::reader_writer_lock", "CONCRT/concurrency::reader_writer_lock::scoped_lock", "CONCRT/concurrency::reader_writer_lock::scoped_lock_read", "CONCRT/concurrency::reader_writer_lock::reader_writer_lock", "CONCRT/concurrency::reader_writer_lock::lock", "CONCRT/concurrency::reader_writer_lock::lock_read", "CONCRT/concurrency::reader_writer_lock::try_lock", "CONCRT/concurrency::reader_writer_lock::try_lock_read", "CONCRT/concurrency::reader_writer_lock::unlock"]
@@ -177,7 +178,7 @@ bool try_lock();
 
 ### Return Value
 
-If the lock was acquired, the value **true**; otherwise, the value **false**.
+If the lock was acquired, the value **`true`**; otherwise, the value **`false`**.
 
 ## <a name="try_lock_read"></a> try_lock_read
 
@@ -189,7 +190,7 @@ bool try_lock_read();
 
 ### Return Value
 
-If the lock was acquired, the value **true**; otherwise, the value **false**.
+If the lock was acquired, the value **`true`**; otherwise, the value **`false`**.
 
 ## <a name="unlock"></a> unlock
 

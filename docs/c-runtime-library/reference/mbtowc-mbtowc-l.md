@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: mbtowc, _mbtowc_l"
 title: "mbtowc, _mbtowc_l"
 ms.date: "4/2/2020"
 api_name: ["mbtowc", "_mbtowc_l", "_o__mbtowc_l", "_o_mbtowc"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbtowc"]
@@ -32,7 +33,7 @@ int _mbtowc_l(
 ### Parameters
 
 *wchar*<br/>
-Address of a wide character (type **wchar_t**).
+Address of a wide character (type **`wchar_t`**).
 
 *mbchar*<br/>
 Address of a sequence of bytes (a multibyte character).

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ODBC Classes and Threads"
 title: "ODBC Classes and Threads"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC classes, and threads", "ODBC, multithreaded applications", "threading [MFC], ODBC support"]

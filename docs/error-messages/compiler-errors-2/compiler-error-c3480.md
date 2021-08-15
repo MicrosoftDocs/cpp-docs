@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3480"
 title: "Compiler Error C3480"
 ms.date: "11/04/2016"
 f1_keywords: ["C3480"]
@@ -15,7 +16,7 @@ The lambda capture variable is not from an enclosing function scope.
 
 - Remove the variable from the capture list of the lambda expression.
 
-## Example
+## Examples
 
 The following example generates C3480 because the variable `global` is not from an enclosing function scope:
 
@@ -28,8 +29,6 @@ int main()
    [&global] { global = 5; }(); // C3480
 }
 ```
-
-## Example
 
 The following example resolves C3480 by removing the variable `global` from the capture list of the lambda expression:
 

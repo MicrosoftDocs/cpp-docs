@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _mbsnbcpy, _mbsnbcpy_l"
 title: "_mbsnbcpy, _mbsnbcpy_l"
 ms.date: "4/2/2020"
 api_name: ["_mbsnbcpy", "_mbsnbcpy_l", "_o__mbsnbcpy", "_o__mbsnbcpy_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbsnbcpy", "_mbsnbcpy", "mbsnbcpy_l", "_mbsnbcpy_l"]

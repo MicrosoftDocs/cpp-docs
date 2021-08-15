@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: lognormal_distribution Class"
 title: "lognormal_distribution Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::lognormal_distribution", "random/std::lognormal_distribution::reset", "random/std::lognormal_distribution::m", "random/std::lognormal_distribution::s", "random/std::lognormal_distribution::param", "random/std::lognormal_distribution::min", "random/std::lognormal_distribution::max", "random/std::lognormal_distribution::operator()", "random/std::lognormal_distribution::param_type", "random/std::lognormal_distribution::param_type::m", "random/std::lognormal_distribution::param_type::s", "random/std::lognormal_distribution::param_type::operator==", "random/std::lognormal_distribution::param_type::operator!="]
@@ -41,16 +42,14 @@ public:
 ### Parameters
 
 *RealType*\
-The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
+The floating-point result type, defaults to **`double`**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
-The class template describes a distribution that produces values of a user-specified integral type, or type **double** if none is provided, distributed according to the Log Normal Distribution. The following table links to articles about individual members.
+The class template describes a distribution that produces values of a user-specified integral type, or type **`double`** if none is provided, distributed according to the Log Normal Distribution. The following table links to articles about individual members.
 
-||||
-|-|-|-|
-|[lognormal_distribution](#lognormal_distribution)|`lognormal_distribution::m`|`lognormal_distribution::param`|
-|`lognormal_distribution::operator()`|`lognormal_distribution::s`|[param_type](#param_type)|
+[lognormal_distribution](#lognormal_distribution)\
+[param_type](#param_type)
 
 The property functions `m()` and `s()` return the values for the stored distribution parameters *m* and *s*, respectively.
 

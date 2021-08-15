@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCColorPopupMenu Class"
 title: "CMFCColorPopupMenu Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCColorPopupMenu", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::CMFCColorPopupMenu", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::CreateTearOffBar", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::GetMenuBar", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::SetPropList"]
@@ -19,17 +20,15 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCColorPopupMenu::CMFCColorPopupMenu](#cmfccolorpopupmenu)|Constructs a `CMFCColorPopupMenu` object.|
 |`CMFCColorPopupMenu::~CMFCColorPopupMenu`|Destructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCColorPopupMenu::CreateTearOffBar](#createtearoffbar)|Creates a dockable tear-off color bar. (Overrides [CMFCPopupMenu::CreateTearOffBar](../../mfc/reference/cmfcpopupmenu-class.md#createtearoffbar).)|
 |[CMFCColorPopupMenu::GetMenuBar](#getmenubar)|Returns the [CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) that is embedded inside the pop-up menu. (Overrides [CMFCPopupMenu::GetMenuBar](../../mfc/reference/cmfcpopupmenu-class.md#getmenubar).)|
 |`CMFCColorPopupMenu::GetThisClass`|Used by the framework to obtain a pointer to the [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) object that is associated with this class type.|
@@ -37,9 +36,8 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 
 ### Data Members
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |`m_bEnabledInCustomizeMode`|A Boolean value that determines whether to show the color bar.|
 |`m_wndColorBar`|The `CMFCColorBar` object that provides color selection.|
 
@@ -180,12 +178,14 @@ virtual CPane* CreateTearOffBar(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pWndMain*|[in] Pointer to the parent window of the tear-off bar.|
-|*uiID*|[in] The command ID of the tear-off bar.|
-|*lpszName*|[in] The window text of the tear-off bar.|
+*pWndMain*\
+[in] Pointer to the parent window of the tear-off bar.
+
+*uiID*\
+[in] The command ID of the tear-off bar.
+
+*lpszName*\
+[in] The window text of the tear-off bar.
 
 ### Return Value
 

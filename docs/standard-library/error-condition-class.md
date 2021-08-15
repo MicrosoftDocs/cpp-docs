@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: error_condition Class"
 title: "error_condition Class"
 ms.date: "11/04/2016"
 f1_keywords: ["system_error/std::error_condition", "system_error/std::error_condition::value_type", "system_error/std::error_condition::assign", "system_error/std::error_condition::category", "system_error/std::error_condition::clear", "system_error/std::error_condition::message", "system_error/std::error_condition::operator bool"]
@@ -23,19 +24,19 @@ An object of type `error_condition` stores an error code value and a pointer to 
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[error_condition](#error_condition)|Constructs an object of type `error_condition`.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[value_type](#value_type)|A type that represents the stored error code value.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[assign](#assign)|Assigns an error code value and category to an error condition.|
 |[category](#category)|Returns the error category.|
@@ -44,7 +45,7 @@ An object of type `error_condition` stores an error code value and a pointer to 
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator==](#op_eq_eq)|Tests for equality between `error_condition` objects.|
 |[operator!=](#op_neq)|Tests for inequality between `error_condition` objects.|
@@ -163,7 +164,7 @@ The ojbect to be tested for equality.
 
 #### Return Value
 
-**true** if the objects are equal; **false** if objects are not equal.
+**`true`** if the objects are equal; **`false`** if objects are not equal.
 
 #### Remarks
 
@@ -184,7 +185,7 @@ The object to be tested for inequality.
 
 #### Return Value
 
-**true** if the `error_condition` object is not equal to the `error_condition` object passed in *right*; otherwise **false**.
+**`true`** if the `error_condition` object is not equal to the `error_condition` object passed in *right*; otherwise **`false`**.
 
 #### Remarks
 
@@ -205,7 +206,7 @@ The `error_condition` object to be compared.
 
 #### Return Value
 
-**true** if the `error_condition` object is less than the `error_condition` object passed in for comparison; Otherwise, **false**.
+**`true`** if the `error_condition` object is less than the `error_condition` object passed in for comparison; Otherwise, **`false`**.
 
 #### Remarks
 
@@ -234,7 +235,7 @@ A reference to the `error_condition` object that is being assigned the new enume
 
 #### Remarks
 
-The member operator stores `(value_type)error` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category). It returns `*this`.
+The member operator stores `(value_type)error` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category). It returns **`*this`**.
 
 ### <a name="op_bool"></a> operator bool
 
@@ -250,7 +251,7 @@ The Boolean value of the `error_condition` object.
 
 #### Remarks
 
-The operator returns a value convertible to **true** only if [value](#value) is not equal to zero. The return type is convertible only to **bool**, not to `void *` or other known scalar types.
+The operator returns a value convertible to **`true`** only if [value](#value) is not equal to zero. The return type is convertible only to **`bool`**, not to `void *` or other known scalar types.
 
 ### <a name="value"></a> value
 
@@ -276,4 +277,4 @@ typedef int value_type;
 
 #### Remarks
 
-The type definition is a synonym for **int**.
+The type definition is a synonym for **`int`**.

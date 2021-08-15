@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Device Context Global Functions"
 title: "Device Context Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlwin/ATL::AtlCreateTargetDC"]
@@ -8,7 +9,7 @@ ms.assetid: 08ec28f6-daff-4882-9544-e8a4639d05c4
 
 This function creates a device context for a given device.
 
-|||
+|Name|Description|
 |-|-|
 |[AtlCreateTargetDC](#atlcreatetargetdc)|Creates a device context.|
 

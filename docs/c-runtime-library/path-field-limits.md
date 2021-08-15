@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Path Field Limits"
 title: "Path Field Limits"
 ms.date: "11/04/2016"
 f1_keywords: ["_MAX_EXT", "_MAX_DIR", "_MAX_PATH", "_MAX_FNAME", "_MAX_DRIVE"]

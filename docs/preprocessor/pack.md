@@ -1,62 +1,63 @@
 ---
+description: "Learn more about the pack pragma directive in Microsoft C/C++"
 title: "pack pragma"
-ms.date: "11/11/2019"
+ms.date: 01/22/2021
 f1_keywords: ["pack_CPP", "vc-pragma.pack"]
-helpviewer_keywords: ["pragmas, pack", "pack pragma"]
-ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
+helpviewer_keywords: ["pragma, pack", "pack pragma"]
+no-loc: ["pragma"]
 ---
-# pack pragma
+# `pack` pragma
 
 Specifies the packing alignment for structure, union, and class members.
 
 ## Syntax
 
-> **#pragma pack( show )**\
-> **#pragma pack( push** [ **,** *identifier* ] [ **,** *n* ] **)**\
-> **#pragma pack( pop** [ **,** { *identifier* | *n* } ] **)**\
-> **#pragma pack(** [ *n* ] **)**
+> **`#pragma pack( show )`**\
+> **`#pragma pack( push`** [ **`,`** *`identifier`* ] [ **`,`** *`n`* ] **`)`**\
+> **`#pragma pack( pop`** [ **`,`** { *`identifier`* | *`n`* } ] **`)`**\
+> **`#pragma pack(`** [ *`n`* ] **`)`**
 
 ### Parameters
 
-**show**\
+**`show`**\
 (Optional) Displays the current byte value for packing alignment. The value is displayed by a warning message.
 
-**push**\
+**`push`**\
 (Optional) Pushes the current packing alignment value on the internal compiler stack, and sets the current packing alignment value to *n*. If *n* isn't specified, the current packing alignment value is pushed.
 
-**pop**\
-(Optional) Removes the record from the top of the internal compiler stack. If *n* isn't specified with **pop**, then the packing value associated with the resulting record on the top of the stack is the new packing alignment value. If *n* is specified, for example, `#pragma pack(pop, 16)`, *n* becomes the new packing alignment value. If you pop using an *identifier*, for example, `#pragma pack(pop, r1)`, then all records on the stack are popped until the record that has *identifier* is found. That record is popped, and the packing value associated with the resulting record on the top of the stack is the new packing alignment value. If you pop using an *identifier* that isn't found in any record on the stack, then the **pop** is ignored.
+**`pop`**\
+(Optional) Removes the record from the top of the internal compiler stack. If *n* isn't specified with **`pop`**, then the packing value associated with the resulting record on the top of the stack is the new packing alignment value. If *n* is specified, for example, `#pragma pack(pop, 16)`, *n* becomes the new packing alignment value. If you pop using an *`identifier`*, for example, `#pragma pack(pop, r1)`, then all records on the stack are popped until the record that has *`identifier`* is found. That record gets popped, and the packing value associated with the record found on the top of the stack becomes the new packing alignment value. If you pop using an *`identifier`* that isn't found in any record on the stack, then the **`pop`** is ignored.
 
 The statement `#pragma pack (pop, r1, 2)` is equivalent to `#pragma pack (pop, r1)` followed by `#pragma pack(2)`.
 
-*identifier*\
-(Optional) When used with **push**, assigns a name to the record on the internal compiler stack. When used with **pop**, pops records off the internal stack until *identifier* is removed. If *identifier* isn't found on the internal stack, nothing is popped.
+*`identifier`*\
+(Optional) When used with **`push`**, assigns a name to the record on the internal compiler stack. When used with **`pop`**, pops records off the internal stack until *`identifier`* is removed. If *`identifier`* isn't found on the internal stack, nothing is popped.
 
-*n*\
-(Optional) Specifies the value, in bytes, to be used for packing. If the compiler option [/Zp](../build/reference/zp-struct-member-alignment.md) isn't set for the module, the default value for *n* is 8. Valid values are 1, 2, 4, 8, and 16. The alignment of a member is on a boundary that's either a multiple of *n*, or a multiple of the size of the member, whichever is smaller.
+*`n`*\
+(Optional) Specifies the value, in bytes, to be used for packing. If the compiler option [`/Zp`](../build/reference/zp-struct-member-alignment.md) isn't set for the module, the default value for *`n`* is 8. Valid values are 1, 2, 4, 8, and 16. The alignment of a member is on a boundary that's either a multiple of *`n`*, or a multiple of the size of the member, whichever is smaller.
 
 ## Remarks
 
-To *pack* a class is to place its members directly after each other in memory. It can mean that some or all members can be aligned on a boundary smaller than the default alignment of the target architecture. **pack** gives control at the data-declaration level. It differs from compiler option [/Zp](../build/reference/zp-struct-member-alignment.md), which only provides module-level control. **pack** takes effect at the first **struct**, **union**, or **class** declaration after the pragma is seen. **pack** has no effect on definitions. Calling **pack** with no arguments sets *n* to the value set in the compiler option `/Zp`. If the compiler option isn't set, the default value is 8.
+To *pack* a class is to place its members directly after each other in memory. It can mean that some or all members can be aligned on a boundary smaller than the default alignment of the target architecture. **`pack`** gives control at the data-declaration level. It differs from compiler option [`/Zp`](../build/reference/zp-struct-member-alignment.md), which only provides module-level control. **pack** takes effect at the first **`struct`**, **`union`**, or **`class`** declaration after the pragma is seen. **`pack`** has no effect on definitions. Calling **`pack`** with no arguments sets *`n`* to the value set in the compiler option **`/Zp`**. If the compiler option isn't set, the default value is 8 for x86, ARM, and ARM64. The default is 16 for x64 native.
 
-If you change the alignment of a structure, it may not use as much space in memory, but you may see a decrease in performance or even get a hardware-generated exception for unaligned access.  You can modify this exception behavior by using [SetErrorMode](/windows/win32/api/errhandlingapi/nf-errhandlingapi-seterrormode).
+If you change the alignment of a structure, it may not use as much space in memory. However, you may see a loss of performance or even get a hardware-generated exception for unaligned access. You can modify this exception behavior by using [`SetErrorMode`](/windows/win32/api/errhandlingapi/nf-errhandlingapi-seterrormode).
 
 For more information about how to modify alignment, see these articles:
 
-- [__alignof](../cpp/alignof-operator.md)
+- [`alignof`](../cpp/alignof-operator.md)
 
-- [align](../cpp/align-cpp.md)
+- [`align`](../cpp/align-cpp.md)
 
-- [__unaligned](../cpp/unaligned.md)
+- [`__unaligned`](../cpp/unaligned.md)
 
 - [Examples of structure alignment](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 specific)
 
    > [!WARNING]
-   > In Visual Studio 2015 and later you can use the standard **alignas** and **alignof** operators, which unlike `__alignof` and `declspec( align )` are portable across compilers. The C++ standard doesn't address packing, so you must still use **pack** (or the corresponding extension on other compilers) to specify alignments smaller than the target architecture's word size.
+   > In Visual Studio 2015 and later you can use the standard **`alignas`** and **`alignof`** operators, which unlike **`__alignof`** and **`__declspec( align )`** are portable across compilers. The C++ standard doesn't address packing, so you must still use **`pack`** (or the corresponding extension on other compilers) to specify alignments smaller than the target architecture's word size.
 
 ## Examples
 
-The following sample shows how to use the **pack** pragma to change the alignment of a structure.
+The following sample shows how to use the **`pack`** pragma to change the alignment of a structure.
 
 ```cpp
 // pragma_directives_pack.cpp
@@ -112,4 +113,4 @@ The following sample shows how to use the *push*, *pop*, and *show* syntax.
 
 ## See also
 
-[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)

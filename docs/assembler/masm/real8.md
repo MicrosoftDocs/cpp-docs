@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: REAL8"
 title: "REAL8"
 ms.date: "12/17/2019"
 f1_keywords: ["REAL8"]

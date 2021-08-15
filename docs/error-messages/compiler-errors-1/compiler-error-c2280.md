@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2280"
 title: "Compiler Error C2280"
 ms.date: "04/25/2017"
 f1_keywords: ["C2280"]
@@ -9,7 +10,7 @@ ms.assetid: e6c5b1fb-2b9b-4554-8ff9-775eeb37161b
 
 '*declaration*': attempting to reference a deleted function
 
-The compiler detected an attempt to reference a `deleted` function. This error can be caused by a call to a member function that has been explicitly marked as `= deleted` in the source code. This error can also be caused by a call to an implicit special member function of a struct or class that is automatically declared and marked as `deleted` by the compiler. For more information about when the compiler automatically generates `default` or `deleted` special member functions, see [Special member functions](../../cpp/special-member-functions.md).
+The compiler detected an attempt to reference a `deleted` function. This error can be caused by a call to a member function that has been explicitly marked as `= deleted` in the source code. This error can also be caused by a call to an implicit special member function of a struct or class that is automatically declared and marked as `deleted` by the compiler. For more information about when the compiler automatically generates **`default`** or `deleted` special member functions, see [Special member functions](../../cpp/special-member-functions.md).
 
 ## Example: Explicitly deleted functions
 
@@ -36,7 +37,7 @@ void f() {
 
 ## Example: Uninitialized data members
 
-An uninitialized reference type data member or `const` data member causes the compiler to implicitly declare a `deleted` default constructor. To fix this issue, initialize the data member when it is declared.
+An uninitialized reference type data member or **`const`** data member causes the compiler to implicitly declare a `deleted` default constructor. To fix this issue, initialize the data member when it is declared.
 
 ```cpp
 // C2280_uninit.cpp
@@ -52,7 +53,7 @@ struct A {
 
 ## Example: Reference and const data members
 
-A `const` or reference type data member causes the compiler to declare a `deleted` copy assignment operator. Once initialized, these members can't be assigned to, so a simple copy or move can't work. To fix this issue, we recommend you change your logic to remove the assignment operations that cause the error.
+A **`const`** or reference type data member causes the compiler to declare a `deleted` copy assignment operator. Once initialized, these members can't be assigned to, so a simple copy or move can't work. To fix this issue, we recommend you change your logic to remove the assignment operations that cause the error.
 
 ```cpp
 // C2280_ref.cpp
@@ -102,7 +103,7 @@ void copy(base *p)
 
 ## Example: Variant and volatile members
 
-Versions of the compiler before Visual Studio 2015 Update 2 were non-conforming and generated default constructors and destructors for anonymous unions. These are now implicitly declared as `deleted`. Those versions also allowed non-conforming implicit definition of `default` copy and move constructors and `default` copy and move assignment operators in classes and structs that have `volatile` member variables. The compiler now considers these to have non-trivial constructors and assignment operators, and doesn't generate `default` implementations. When such a class is a member of a union, or an anonymous union inside of a class, the copy and move constructors and copy and move assignment operators of the union or class are implicitly defined as `deleted`. To fix this issue, you must explicitly declare the required special member functions.
+Versions of the compiler before Visual Studio 2015 Update 2 were non-conforming and generated default constructors and destructors for anonymous unions. These are now implicitly declared as `deleted`. Those versions also allowed non-conforming implicit definition of **`default`** copy and move constructors and **`default`** copy and move assignment operators in classes and structs that have **`volatile`** member variables. The compiler now considers these to have non-trivial constructors and assignment operators, and doesn't generate **`default`** implementations. When such a class is a member of a union, or an anonymous union inside of a class, the copy and move constructors and copy and move assignment operators of the union or class are implicitly defined as `deleted`. To fix this issue, you must explicitly declare the required special member functions.
 
 ```cpp
 // C2280_variant.cpp

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CProgressCtrl Class"
 title: "CProgressCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CProgressCtrl", "AFXCMN/CProgressCtrl", "AFXCMN/CProgressCtrl::CProgressCtrl", "AFXCMN/CProgressCtrl::Create", "AFXCMN/CProgressCtrl::CreateEx", "AFXCMN/CProgressCtrl::GetBarColor", "AFXCMN/CProgressCtrl::GetBkColor", "AFXCMN/CProgressCtrl::GetPos", "AFXCMN/CProgressCtrl::GetRange", "AFXCMN/CProgressCtrl::GetState", "AFXCMN/CProgressCtrl::GetStep", "AFXCMN/CProgressCtrl::OffsetPos", "AFXCMN/CProgressCtrl::SetBarColor", "AFXCMN/CProgressCtrl::SetBkColor", "AFXCMN/CProgressCtrl::SetMarquee", "AFXCMN/CProgressCtrl::SetPos", "AFXCMN/CProgressCtrl::SetRange", "AFXCMN/CProgressCtrl::SetState", "AFXCMN/CProgressCtrl::SetStep", "AFXCMN/CProgressCtrl::StepIt"]
@@ -265,13 +266,11 @@ This method sends the [PBM_GETSTATE](/windows/win32/Controls/pbm-getstate) messa
 
 ### Example
 
-The following code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.
+The first code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]
 
-### Example
-
-The following code example retrieves the state of the current progress bar control.
+The next code example retrieves the state of the current progress bar control.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#5](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_6.cpp)]
 
@@ -295,13 +294,11 @@ This method sends the [PBM_GETSTEP](/windows/win32/Controls/pbm-getstep) message
 
 ### Example
 
-The following code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.
+The first code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]
 
-### Example
-
-The following code example retrieves the step increment of the current progress bar control.
+The next code example retrieves the step increment of the current progress bar control.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_7.cpp)]
 
@@ -336,9 +333,8 @@ COLORREF SetBarColor(COLORREF clrBar);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*clrBar*|[in] A [COLORREF](/windows/win32/gdi/colorref) value that specifies the new color of the progress indicator bar. Specify CLR_DEFAULT to cause the progress bar to use its default color.|
+*clrBar*\
+[in] A [COLORREF](/windows/win32/gdi/colorref) value that specifies the new color of the progress indicator bar. Specify CLR_DEFAULT to cause the progress bar to use its default color.
 
 ### Return Value
 
@@ -352,13 +348,11 @@ This method sends the [PBM_SETBARCOLOR](/windows/win32/Controls/pbm-setbarcolor)
 
 ### Example
 
-The following code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.
+The first code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]
 
-### Example
-
-The following code example changes the color of the progress bar to red, green, blue, or the default.
+The next code example changes the color of the progress bar to red, green, blue, or the default.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_9.cpp)]
 
@@ -395,10 +389,11 @@ BOOL SetMarquee(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*fMarqueeMode*|[in] TRUE to turn marquee mode on, or FALSE to turn marquee mode off.|
-|*nInterval*|[in] Time in milliseconds between updates of the marquee animation.|
+*fMarqueeMode*\
+[in] TRUE to turn marquee mode on, or FALSE to turn marquee mode off.
+
+*nInterval*\
+[in] Time in milliseconds between updates of the marquee animation.
 
 ### Return Value
 
@@ -412,13 +407,11 @@ This method sends the [PBM_SETMARQUEE](/windows/win32/Controls/pbm-setmarquee) m
 
 ### Example
 
-The following code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.
+The first code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]
 
-### Example
-
-The following code example starts and stops the marquee scrolling animation.
+The next code example starts and stops the marquee scrolling animation.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_11.cpp)]
 
@@ -487,9 +480,12 @@ int SetState(int iState);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*iState*|[in] The state to set the progress bar. Use one of the following values:<br /><br /> - PBST_NORMAL - In progress<br />- PBST_ERROR - Error<br />- PBST_PAUSED - Paused|
+*iState*\
+[in] The state to set the progress bar. Use one of the following values:
+
+- `PBST_NORMAL` - In progress
+- `PBST_ERROR` - Error
+- `PBST_PAUSED` - Paused
 
 ### Return Value
 
@@ -501,13 +497,11 @@ This method sends the [PBM_SETSTATE](/windows/win32/Controls/pbm-setstate) messa
 
 ### Example
 
-The following code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.
+The first code example defines the variable, `m_progressCtrl`, that is used to programmatically access the progress bar control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]
 
-### Example
-
-The following code example sets the state of the current progress bar control to Paused or In Progress.
+The next code example sets the state of the current progress bar control to Paused or In Progress.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#4](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_14.cpp)]
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Command Line Property Pages"
 title: "Command Line Property Pages"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.project.AdditionalOptionsPage", "vc.project.CommandLinePage"]

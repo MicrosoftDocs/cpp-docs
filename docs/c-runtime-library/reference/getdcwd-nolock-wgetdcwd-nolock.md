@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _getdcwd_nolock, _wgetdcwd_nolock"
 title: "_getdcwd_nolock, _wgetdcwd_nolock"
 ms.date: "11/04/2016"
 api_name: ["_wgetdcwd_nolock", "_getdcwd_nolock"]
@@ -40,7 +41,7 @@ Disk drive.
 Storage location for the path.
 
 *maxlen*<br/>
-Maximum length of path in characters: **char** for **_getdcwd** and **wchar_t** for **_wgetdcwd**.
+Maximum length of path in characters: **`char`** for **_getdcwd** and **`wchar_t`** for **_wgetdcwd**.
 
 ## Return Value
 

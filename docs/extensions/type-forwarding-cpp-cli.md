@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Type Forwarding (C++/CLI)"
 title: "Type Forwarding (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FILENAME_MAX"
 title: "FILENAME_MAX"
 ms.date: "11/04/2016"
 f1_keywords: ["FILENAME_MAX"]

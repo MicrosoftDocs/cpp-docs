@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ AMP (C++ Accelerated Massive Parallelism)"
 title: "C++ AMP (C++ Accelerated Massive Parallelism)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["C++ AMP (see C++ Accelerated Massive Parallelism)", "C++ Accelerated Massive Parallelism, getting started"]
@@ -29,6 +30,6 @@ C++ AMP (C++ Accelerated Massive Parallelism) accelerates the execution of your 
 
 ## Other Resources
 
-[Parallel Programming in Native Code Blog](https://go.microsoft.com/fwlink/p/?linkid=238472)<br/>
-[C++ AMP sample projects for download](https://go.microsoft.com/fwlink/p/?linkid=248508)<br/>
-[Analyzing C++ AMP Code with the Concurrency Visualizer](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)
+[Parallel Programming in Native Code Blog](/archive/blogs/nativeconcurrency/)<br/>
+[C++ AMP sample projects for download](/archive/blogs/nativeconcurrency/c-amp-sample-projects-for-download)<br/>
+[Analyzing C++ AMP Code with the Concurrency Visualizer](/archive/blogs/nativeconcurrency/analyzing-c-amp-code-with-the-concurrency-visualizer)

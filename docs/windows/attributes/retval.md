@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: retval"
 title: "retval (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.retval"]
@@ -27,9 +28,7 @@ See the example for [bindable](bindable.md) for a sample use of **retval**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface parameter, interface method|
 |**Repeatable**|No|

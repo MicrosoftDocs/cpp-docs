@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C2200 through C2299"
 title: "Compiler errors C2200 through C2299"
 ms.date: "04/21/2019"
 f1_keywords: ["C2202", "C2209", "C2210", "C2211", "C2214", "C2215", "C2221", "C2225", "C2230", "C2235", "C2237", "C2239", "C2240", "C2257", "C2260", "C2263", "C2265", "C2269", "C2278", "C2281", "C2282", "C2288", "C2291", "C2294"]
@@ -119,4 +120,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

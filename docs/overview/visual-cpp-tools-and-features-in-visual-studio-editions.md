@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C++ Tools and Features in Visual Studio Editions"
 title: "C++ Tools and Features in Visual Studio Editions"
 ms.date: "05/21/2019"
 helpviewer_keywords: ["tools and platforms [C++]"]
@@ -6,7 +7,7 @@ ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
 ---
 # C++ Tools and Features in Visual Studio Editions
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 The following C++ features are available in Visual Studio 2019. Unless stated otherwise, all features are available in all editions: Visual Studio Community, Visual Studio Professional, and Visual Studio Enterprise. Some features require specific workloads or optional components, which you can install with the Visual Studio Installer.
 
@@ -302,15 +303,14 @@ Linux:
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 The following tables show Visual C++ features that are available in Visual Studio 2017. An X in a cell indicates that the feature is available; an empty cell indicates that the feature is not available. Notes in parentheses indicate that a feature is available, but restricted.
 
 ## Platforms
 
-||||||
-|-|-|-|-|-|
 |Platform|Visual Studio Express for Windows 10|Visual Studio Express for Windows Desktop|Visual Studio Community/Professional|Visual Studio Enterprise|
+|-|-|-|-|-|
 |Windows Desktop||X|X|X|
 |Universal Windows Platform ((phone, tablet, PC, Xbox, IoT, and HoloLens))|X||X|X|
 |Linux|X|X|
@@ -450,9 +450,8 @@ The following tables show Visual C++ features that are available in Visual Studi
 
 ## Application Lifecycle Management Tools
 
-||||||
-|-|-|-|-|-|
 |Tool|Visual Studio Express for Windows|Visual Studio Express for Windows Desktop|Visual Studio Professional / Community|Visual Studio Enterprise|
+|-|-|-|-|-|
 |Unit Testing (native framework)|X|X|X|X|
 |Unit Testing (managed framework)||X|X|X|
 |Code coverage||||X|

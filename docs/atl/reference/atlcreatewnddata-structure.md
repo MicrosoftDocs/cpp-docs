@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _AtlCreateWndData Structure"
 title: "_AtlCreateWndData Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::_AtlCreateWndData", "ATL._AtlCreateWndData", "_AtlCreateWndData"]
@@ -22,7 +23,7 @@ This structure contains class instance data in windowing code in ATL.
 ## Members
 
 `m_pThis`<br/>
-The **this** pointer used to get access to the class instance in window procedures.
+The **`this`** pointer used to get access to the class instance in window procedures.
 
 `m_dwThreadID`<br/>
 The thread ID of the current class instance.

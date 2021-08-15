@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Storage and Alignment of Structures"
 title: "Storage and Alignment of Structures"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["alignment of structures", "structure storage", "storing structures", "packing structures"]
@@ -26,7 +27,7 @@ where *n* is the packing size expressed with the /Zp[*n*] option and *item* is t
 
 To use the `pack` pragma to specify packing other than the packing specified on the command line for a particular structure, give the `pack` pragma, where the packing size is 1, 2, 4, 8, or 16, before the structure. To reinstate the packing given on the command line, specify the `pack` pragma with no arguments.
 
-Bit fields default to size **long** for the Microsoft C compiler. Structure members are aligned on the size of the type or the /Zp[*n*] size, whichever is smaller. The default size is 4.
+Bit fields default to size **`long`** for the Microsoft C compiler. Structure members are aligned on the size of the type or the /Zp[*n*] size, whichever is smaller. The default size is 4.
 
 **END Microsoft Specific**
 

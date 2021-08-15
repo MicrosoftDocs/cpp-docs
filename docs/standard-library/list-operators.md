@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;list&gt; operators"
 title: "&lt;list&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["list/std::operator!=", "list/std::operator&gt;", "list/std::operator&gt;=", "list/std::operator&lt;", "list/std::operator&lt;=", "list/std::operator=="]
@@ -27,7 +28,7 @@ An object of type `list`.
 
 ### Return Value
 
-**true** if the lists are not equal; **false** if the lists are equal.
+**`true`** if the lists are not equal; **`false`** if the lists are equal.
 
 ### Remarks
 
@@ -78,7 +79,7 @@ An object of type `list`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is less than but not equal to the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is less than but not equal to the list on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -133,7 +134,7 @@ An object of type `list`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is less than or equal to the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is less than or equal to the list on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -188,7 +189,7 @@ An object of type `list`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is equal to the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is equal to the list on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -239,7 +240,7 @@ An object of type `list`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is greater than the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is greater than the list on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -294,7 +295,7 @@ An object of type `list`.
 
 ### Return Value
 
-**true** if the list on the left side of the operator is greater than or equal to the list on the right side of the operator; otherwise **false**.
+**`true`** if the list on the left side of the operator is greater than or equal to the list on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 

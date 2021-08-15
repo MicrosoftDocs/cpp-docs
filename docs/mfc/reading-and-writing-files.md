@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reading and Writing Files"
 title: "Reading and Writing Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CFile class [MFC], objects", "examples [MFC], reading files", "files [MFC], writing to", "examples [MFC], writing to files", "files [MFC], reading", "MFC, file operations", "CFile class [MFC], reading and writing CFile objects", "reading files", "writing to files [MFC]"]
@@ -21,7 +22,7 @@ If you've used the C run-time library file-handling functions, MFC reading and w
 [!code-cpp[NVC_MFCFiles#2](../atl-mfc-shared/reference/codesnippet/cpp/reading-and-writing-files_1.cpp)]
 
 > [!NOTE]
-> You should normally carry out input/output operations within a **try**/**catch** exception handling block. For more information, see [Exception Handling (MFC)](../mfc/exception-handling-in-mfc.md).
+> You should normally carry out input/output operations within a **`try`**/**`catch`** exception handling block. For more information, see [Exception Handling (MFC)](../mfc/exception-handling-in-mfc.md).
 
 ## See also
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Rules and Limitations for dllimport/dllexport"
 title: "Rules and Limitations for dllimport-dllexport"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["dllexport attribute [C++], limitations and rules", "dllimport attribute [C++], limitations and rules", "dllexport attribute [C++]"]
@@ -8,9 +9,9 @@ ms.assetid: 274b735f-ab9c-4b07-8d0e-fdb65d664634
 
 **Microsoft Specific**
 
-- If you declare a function without the **dllimport** or `dllexport` attribute, the function is not considered part of the DLL interface. Therefore, the definition of the function must be present in that module or in another module of the same program. To make the function part of the DLL interface, you must declare the definition of the function in the other module as `dllexport`. Otherwise, a linker error is generated when the client is built.
+- If you declare a function without the **`dllimport`** or `dllexport` attribute, the function is not considered part of the DLL interface. Therefore, the definition of the function must be present in that module or in another module of the same program. To make the function part of the DLL interface, you must declare the definition of the function in the other module as `dllexport`. Otherwise, a linker error is generated when the client is built.
 
-- If a single module in your program contains **dllimport** and `dllexport` declarations for the same function, the `dllexport` attribute takes precedence over the **dllimport** attribute. However, a compiler warning is generated. For example:
+- If a single module in your program contains **`dllimport`** and `dllexport` declarations for the same function, the `dllexport` attribute takes precedence over the **`dllimport`** attribute. However, a compiler warning is generated. For example:
 
     ```
     #define DllImport   __declspec( dllimport )
@@ -22,7 +23,7 @@ ms.assetid: 274b735f-ab9c-4b07-8d0e-fdb65d664634
 
     ```
 
-- You cannot initialize a static data pointer with the address of a data object declared with the **dllimport** attribute. For example, the following code generates errors:
+- You cannot initialize a static data pointer with the address of a data object declared with the **`dllimport`** attribute. For example, the following code generates errors:
 
     ```
     #define DllImport   __declspec( dllimport )
@@ -41,7 +42,7 @@ ms.assetid: 274b735f-ab9c-4b07-8d0e-fdb65d664634
 
     ```
 
-- Initializing a static function pointer with the address of a function declared with **dllimport** sets the pointer to the address of the DLL import thunk (a code stub that transfers control to the function) rather than the address of the function. This assignment does not generate an error message:
+- Initializing a static function pointer with the address of a function declared with **`dllimport`** sets the pointer to the address of the DLL import thunk (a code stub that transfers control to the function) rather than the address of the function. This assignment does not generate an error message:
 
     ```
     #define DllImport   __declspec( dllimport )

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /TLBID (Specify Resource ID for TypeLib)"
 title: "/TLBID (Specify Resource ID for TypeLib)"
 ms.date: "11/04/2016"
 f1_keywords: ["/tlbid", "VC.Project.VCLinkerTool.TypeLibraryResourceID"]
@@ -26,9 +27,7 @@ If this resource ID conflicts with one of your existing resources, you can speci
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **Linker** folder.
-
-1. Click the **Embedded IDL** property page.
+1. Select the **Configuration Properties** > **Linker** > **Embedded IDL** property page.
 
 1. Modify the **TypeLib Resource ID** property.
 

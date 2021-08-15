@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /TSAWARE (Create Terminal Server Aware Application)"
 title: "/TSAWARE (Create Terminal Server Aware Application)"
 ms.date: "11/04/2016"
 f1_keywords: ["/tsaware", "VC.Project.VCLinkerTool.TerminalServerAware"]
@@ -23,7 +24,7 @@ If you use /TSAWARE and your application still uses INI files, the files will be
 
 The /TSAWARE option is enabled by default for Windows and console applications. See [/SUBSYSTEM](subsystem-specify-subsystem.md) and [/VERSION](version-version-information.md) for information.
 
-/TSAWARE is not valid for drivers, VxDs, or DLLs.
+/TSAWARE is not valid for drivers or DLLs.
 
 If an application was linked with /TSAWARE, DUMPBIN [/HEADERS](headers.md) will display information to that effect.
 
@@ -31,9 +32,7 @@ If an application was linked with /TSAWARE, DUMPBIN [/HEADERS](headers.md) will 
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **Linker** folder.
-
-1. Click the **System** property page.
+1. Select the **Configuration Properties** > **Linker** > **System** property page.
 
 1. Modify the **Terminal Server** property.
 
@@ -46,4 +45,4 @@ If an application was linked with /TSAWARE, DUMPBIN [/HEADERS](headers.md) will 
 [MSVC linker reference](linking.md)<br/>
 [MSVC Linker Options](linker-options.md)<br/>
 [Storing User-Specific Information](/windows/win32/TermServ/storing-user-specific-information)<br/>
-[Legacy Applications in a Terminal Services Environment](https://msdn.microsoft.com/library/aa382957.aspx)
+[Legacy Applications in a Terminal Services Environment](/previous-versions/aa382957(v=vs.85))

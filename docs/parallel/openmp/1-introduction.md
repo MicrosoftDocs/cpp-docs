@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: 1. Introduction"
 title: "1. Introduction"
 ms.date: "01/16/2019"
 ms.assetid: c42e72bc-0e31-4b1c-b670-cd82673c0c5a
@@ -49,7 +50,7 @@ The following terms are used in this document:
 
 - private
 
-  A private variable names a block of storage that's unique to the thread making the reference. There are several ways to specify that a variable is private: a definition within a parallel region, a `threadprivate` directive, a `private`, `firstprivate`, `lastprivate`, or `reduction` clause, or use of the variable as a `for`loop control variable in a `for` loop immediately following a `for` or `parallel for` directive.
+  A private variable names a block of storage that's unique to the thread making the reference. There are several ways to specify that a variable is private: a definition within a parallel region, a `threadprivate` directive, a `private`, `firstprivate`, `lastprivate`, or `reduction` clause, or use of the variable as a **`for`** loop control variable in a **`for`** loop immediately following a `for` or `parallel for` directive.
 
 - region
 
@@ -75,7 +76,7 @@ The following terms are used in this document:
 
 - structured block
 
-  A structured block is a statement (single or compound) that has a single entry and a single exit. If there's a jump into or out of a statement, that statement is a structured block. (This rule includes a call to `longjmp`(3C) or the use of `throw`, although a call to `exit` is permitted.) If its execution always begins at the opening `{` and always ends at the closing `}`, a compound statement is a structured block. An expression statement, selection statement, iteration statement, or `try` block is a structured block if the corresponding compound statement obtained by enclosing it in `{` and `}` would be a structured block. A jump statement, labeled statement, or declaration statement isn't a structured block.
+  A structured block is a statement (single or compound) that has a single entry and a single exit. If there's a jump into or out of a statement, that statement is a structured block. (This rule includes a call to `longjmp`(3C) or the use of `throw`, although a call to `exit` is permitted.) If its execution always begins at the opening `{` and always ends at the closing `}`, a compound statement is a structured block. An expression statement, selection statement, iteration statement, or **`try`** block is a structured block if the corresponding compound statement obtained by enclosing it in `{` and `}` would be a structured block. A jump statement, labeled statement, or declaration statement isn't a structured block.
 
 - team
 

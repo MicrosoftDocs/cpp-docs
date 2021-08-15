@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Precedence in Macro Definitions"
 title: "Precedence in Macro Definitions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["NMAKE program, precedence in macro definitions", "macros, precedence"]

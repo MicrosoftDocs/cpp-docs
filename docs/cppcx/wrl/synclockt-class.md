@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SyncLockT Class"
 title: "SyncLockT Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"
@@ -90,7 +91,7 @@ bool IsLocked() const;
 
 ### Return Value
 
-**true** if the `SyncLockT` object is locked; otherwise, **false**.
+**`true`** if the `SyncLockT` object is locked; otherwise, **`false`**.
 
 ### Remarks
 
@@ -134,7 +135,7 @@ A reference to another `SyncLockWithStatusT` object.
 
 Initializes a new instance of the `SyncLockT` class.
 
-The first constructor initializes the current `SyncLockT` object from another `SyncLockT` object specified by parameter *other*, and then invalidates the other `SyncLockT` object. The second constructor is `protected`, and initializes the current `SyncLockT` object to an invalid state.
+The first constructor initializes the current `SyncLockT` object from another `SyncLockT` object specified by parameter *other*, and then invalidates the other `SyncLockT` object. The second constructor is **`protected`**, and initializes the current `SyncLockT` object to an invalid state.
 
 ## <a name="unlock"></a> SyncLockT::Unlock
 

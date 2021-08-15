@@ -3,7 +3,7 @@ title: "calloc"
 description: The C runtime library function calloc allocates zero-initialized memory.
 ms.date: "4/2/2020"
 api_name: ["calloc", "_o_calloc"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-heap-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["calloc"]
@@ -33,7 +33,7 @@ Length in bytes of each element.
 
 ## Return Value
 
-**calloc** returns a pointer to the allocated space. The storage space pointed to by the return value is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than **void**, use a type cast on the return value.
+**calloc** returns a pointer to the allocated space. The storage space pointed to by the return value is guaranteed to be suitably aligned for storage of any type of object. To get a pointer to a type other than **`void`**, use a type cast on the return value.
 
 ## Remarks
 
@@ -43,7 +43,7 @@ The **calloc** function allocates storage space for an array of *number* element
 
 In the Microsoft implementation, if *number* or *size* is zero, **calloc** returns a pointer to an allocated block of non-zero size. An attempt to read or write through the returned pointer leads to undefined behavior.
 
-**calloc** uses the C++ [_set_new_mode](set-new-mode.md) function to set the *new handler mode*. The new handler mode indicates whether, on failure, **calloc** is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, **calloc** doesn't call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **calloc** fails to allocate memory, it calls the new handler routine in the same way that the **new** operator does when it fails for the same reason. To override the default, call
+**calloc** uses the C++ [_set_new_mode](set-new-mode.md) function to set the *new handler mode*. The new handler mode indicates whether, on failure, **calloc** is to call the new handler routine as set by [_set_new_handler](set-new-handler.md). By default, **calloc** doesn't call the new handler routine on failure to allocate memory. You can override this default behavior so that, when **calloc** fails to allocate memory, it calls the new handler routine in the same way that the **`new`** operator does when it fails for the same reason. To override the default, call
 
 ```C
 _set_new_mode(1);

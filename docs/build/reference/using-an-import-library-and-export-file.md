@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using an Import Library and Export File"
 title: "Using an Import Library and Export File"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["circular exports", "import libraries, using", "export files"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CToolBarCtrl Class"
 title: "CToolBarCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CToolBarCtrl", "AFXCMN/CToolBarCtrl", "AFXCMN/CToolBarCtrl::CToolBarCtrl", "AFXCMN/CToolBarCtrl::AddBitmap", "AFXCMN/CToolBarCtrl::AddButtons", "AFXCMN/CToolBarCtrl::AddString", "AFXCMN/CToolBarCtrl::AddStrings", "AFXCMN/CToolBarCtrl::AutoSize", "AFXCMN/CToolBarCtrl::ChangeBitmap", "AFXCMN/CToolBarCtrl::CheckButton", "AFXCMN/CToolBarCtrl::CommandToIndex", "AFXCMN/CToolBarCtrl::Create", "AFXCMN/CToolBarCtrl::CreateEx", "AFXCMN/CToolBarCtrl::Customize", "AFXCMN/CToolBarCtrl::DeleteButton", "AFXCMN/CToolBarCtrl::EnableButton", "AFXCMN/CToolBarCtrl::GetAnchorHighlight", "AFXCMN/CToolBarCtrl::GetBitmap", "AFXCMN/CToolBarCtrl::GetBitmapFlags", "AFXCMN/CToolBarCtrl::GetButton", "AFXCMN/CToolBarCtrl::GetButtonCount", "AFXCMN/CToolBarCtrl::GetButtonInfo", "AFXCMN/CToolBarCtrl::GetButtonSize", "AFXCMN/CToolBarCtrl::GetColorScheme", "AFXCMN/CToolBarCtrl::GetDisabledImageList", "AFXCMN/CToolBarCtrl::GetDropTarget", "AFXCMN/CToolBarCtrl::GetExtendedStyle", "AFXCMN/CToolBarCtrl::GetHotImageList", "AFXCMN/CToolBarCtrl::GetHotItem", "AFXCMN/CToolBarCtrl::GetImageList", "AFXCMN/CToolBarCtrl::GetInsertMark", "AFXCMN/CToolBarCtrl::GetInsertMarkColor", "AFXCMN/CToolBarCtrl::GetItemRect", "AFXCMN/CToolBarCtrl::GetMaxSize", "AFXCMN/CToolBarCtrl::GetMaxTextRows", "AFXCMN/CToolBarCtrl::GetMetrics", "AFXCMN/CToolBarCtrl::GetPadding", "AFXCMN/CToolBarCtrl::GetPressedImageList", "AFXCMN/CToolBarCtrl::GetRect", "AFXCMN/CToolBarCtrl::GetRows", "AFXCMN/CToolBarCtrl::GetState", "AFXCMN/CToolBarCtrl::GetString", "AFXCMN/CToolBarCtrl::GetStyle", "AFXCMN/CToolBarCtrl::GetToolTips", "AFXCMN/CToolBarCtrl::HideButton", "AFXCMN/CToolBarCtrl::HitTest", "AFXCMN/CToolBarCtrl::Indeterminate", "AFXCMN/CToolBarCtrl::InsertButton", "AFXCMN/CToolBarCtrl::InsertMarkHitTest", "AFXCMN/CToolBarCtrl::IsButtonChecked", "AFXCMN/CToolBarCtrl::IsButtonEnabled", "AFXCMN/CToolBarCtrl::IsButtonHidden", "AFXCMN/CToolBarCtrl::IsButtonHighlighted", "AFXCMN/CToolBarCtrl::IsButtonIndeterminate", "AFXCMN/CToolBarCtrl::IsButtonPressed", "AFXCMN/CToolBarCtrl::LoadImages", "AFXCMN/CToolBarCtrl::MapAccelerator", "AFXCMN/CToolBarCtrl::MarkButton", "AFXCMN/CToolBarCtrl::MoveButton", "AFXCMN/CToolBarCtrl::PressButton", "AFXCMN/CToolBarCtrl::ReplaceBitmap", "AFXCMN/CToolBarCtrl::RestoreState", "AFXCMN/CToolBarCtrl::SaveState", "AFXCMN/CToolBarCtrl::SetAnchorHighlight", "AFXCMN/CToolBarCtrl::SetBitmapSize", "AFXCMN/CToolBarCtrl::SetButtonInfo", "AFXCMN/CToolBarCtrl::SetButtonSize", "AFXCMN/CToolBarCtrl::SetButtonStructSize", "AFXCMN/CToolBarCtrl::SetButtonWidth", "AFXCMN/CToolBarCtrl::SetCmdID", "AFXCMN/CToolBarCtrl::SetColorScheme", "AFXCMN/CToolBarCtrl::SetDisabledImageList", "AFXCMN/CToolBarCtrl::SetDrawTextFlags", "AFXCMN/CToolBarCtrl::SetExtendedStyle", "AFXCMN/CToolBarCtrl::SetHotImageList", "AFXCMN/CToolBarCtrl::SetHotItem", "AFXCMN/CToolBarCtrl::SetImageList", "AFXCMN/CToolBarCtrl::SetIndent", "AFXCMN/CToolBarCtrl::SetInsertMark", "AFXCMN/CToolBarCtrl::SetInsertMarkColor", "AFXCMN/CToolBarCtrl::SetMaxTextRows", "AFXCMN/CToolBarCtrl::SetMetrics", "AFXCMN/CToolBarCtrl::SetOwner", "AFXCMN/CToolBarCtrl::SetPadding", "AFXCMN/CToolBarCtrl::SetPressedImageList", "AFXCMN/CToolBarCtrl::SetRows", "AFXCMN/CToolBarCtrl::SetState", "AFXCMN/CToolBarCtrl::SetStyle", "AFXCMN/CToolBarCtrl::SetToolTips", "AFXCMN/CToolBarCtrl::SetWindowTheme"]
@@ -359,10 +360,11 @@ BOOL ChangeBitmap(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*idButton*|[in] Command identifier of the button that is to receive a new bitmap.|
-|*iBitmap*|[in] Zero-based index of an image in the current toolbar control's image list.|
+*idButton*\
+[in] Command identifier of the button that is to receive a new bitmap.
+
+*iBitmap*\
+[in] Zero-based index of an image in the current toolbar control's image list.
 
 ### Return Value
 
@@ -717,9 +719,8 @@ CString GetButtonText(int idButton) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*idButton*|[in] The identifier for the button whose display text is retrieved.|
+*idButton*\
+[in] The identifier for the button whose display text is retrieved.
 
 ### Return Value
 
@@ -739,9 +740,8 @@ BOOL GetColorScheme(COLORSCHEME* lpColorScheme) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpColorScheme*|[out] Pointer to a [COLORSCHEME](/windows/win32/api/commctrl/ns-commctrl-colorscheme) structure that receives the color scheme information. When this method returns, the structure describes the highlight color and shadow color of the toolbar control.|
+*lpColorScheme*\
+[out] Pointer to a [COLORSCHEME](/windows/win32/api/commctrl/ns-commctrl-colorscheme) structure that receives the color scheme information. When this method returns, the structure describes the highlight color and shadow color of the toolbar control.
 
 ### Return Value
 
@@ -973,10 +973,11 @@ BOOL GetPadding(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pnHorzPadding*|[out] An integer that receives the horizontal padding of the toolbar control, in pixels.|
-|*pnVertPadding*|[out] An integer that receives the vertical padding of the toolbar control, in pixels.|
+*pnHorzPadding*\
+[out] An integer that receives the horizontal padding of the toolbar control, in pixels.
+
+*pnVertPadding*\
+[out] An integer that receives the vertical padding of the toolbar control, in pixels.
 
 ### Return Value
 
@@ -1524,9 +1525,8 @@ BOOL ReplaceBitmap(LPTBREPLACEBITMAP pReplaceBitmap);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pReplaceBitmap*|[in] Pointer to a [TBREPLACEBITMAP](/windows/win32/api/commctrl/ns-commctrl-tbreplacebitmap) structure that describes the bitmap to be replaced and the new bitmap.|
+*pReplaceBitmap*\
+[in] Pointer to a [TBREPLACEBITMAP](/windows/win32/api/commctrl/ns-commctrl-tbreplacebitmap) structure that describes the bitmap to be replaced and the new bitmap.
 
 ### Return Value
 
@@ -1772,9 +1772,8 @@ void SetColorScheme(const COLORSCHEME* lpColorScheme);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpColorScheme*|[in] Pointer to a [COLORSCHEME](/windows/win32/api/commctrl/ns-commctrl-colorscheme) structure that describes the highlight color and shadow color of the toolbar control.|
+*lpColorScheme*\
+[in] Pointer to a [COLORSCHEME](/windows/win32/api/commctrl/ns-commctrl-colorscheme) structure that describes the highlight color and shadow color of the toolbar control.
 
 ### Remarks
 
@@ -2041,10 +2040,11 @@ DWORD SetPadding(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*nHorzPadding*|[in] Specifies the horizontal padding of the toolbar control, in pixels.|
-|*nVertPadding*|[in] Specifies the vertical padding of the toolbar control, in pixels.|
+*nHorzPadding*\
+[in] Specifies the horizontal padding of the toolbar control, in pixels.
+
+*nVertPadding*\
+[in] Specifies the vertical padding of the toolbar control, in pixels.
 
 ### Return Value
 
@@ -2072,10 +2072,11 @@ CImagelist* SetPressedImageList(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*iImageID*|[in] The zero-based index of the image list. Set this parameter to zero if you use only one image list.|
-|*pImageList*|[in] Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains the new image list.|
+*iImageID*\
+[in] The zero-based index of the image list. Set this parameter to zero if you use only one image list.
+
+*pImageList*\
+[in] Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) that contains the new image list.
 
 ### Return Value
 

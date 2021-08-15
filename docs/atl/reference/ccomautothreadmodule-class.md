@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComAutoThreadModule Class"
 title: "CComAutoThreadModule Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComAutoThreadModule", "ATLBASE/ATL::CComAutoThreadModule", "ATLBASE/ATL::CreateInstance", "ATLBASE/ATL::GetDefaultThreads", "ATLBASE/ATL::Init", "ATLBASE/ATL::Lock", "ATLBASE/ATL::Unlock", "ATLBASE/ATL::dwThreadID", "ATLBASE/ATL::m_Allocator", "ATLBASE/ATL::m_nThreads", "ATLBASE/ATL::m_pApartments"]
@@ -28,7 +29,7 @@ class CComAutoThreadModule : public CComModule
 
 ### Methods
 
-|||
+|Function|Description|
 |-|-|
 |[CreateInstance](#createinstance)|Selects a thread and then creates an object in the associated apartment.|
 |[GetDefaultThreads](#getdefaultthreads)|(Static) Dynamically calculates the number of threads for the module based on the number of processors.|
@@ -38,9 +39,7 @@ class CComAutoThreadModule : public CComModule
 
 ### Data Members
 
-### Data Members
-
-|||
+|Data member|Description|
 |-|-|
 |[dwThreadID](#dwthreadid)|Contains the identifier of the current thread.|
 |[m_Allocator](#m_allocator)|Manages thread selection.|

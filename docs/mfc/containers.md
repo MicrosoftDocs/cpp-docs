@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Containers"
 title: "Containers"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["containers [MFC]", "OLE containers", "application containers [MFC]", "containers [MFC], OLE container applications", "containers [MFC], container applications"]
@@ -10,19 +11,19 @@ A container application is an application that can incorporate embedded or linke
 
 ## In This Section
 
-[Implement a Container](../mfc/containers-implementing-a-container.md)
+[Implement a Container](containers-implementing-a-container.md)
 
-[Container Client Items](../mfc/containers-client-items.md)
+[Container Client Items](containers-client-items.md)
 
-[Use Compound Files](../mfc/containers-compound-files.md)
+[Use Compound Files](containers-compound-files.md)
 
-[Container User-Interface Issues](../mfc/containers-user-interface-issues.md)
+[Container User-Interface Issues](containers-user-interface-issues.md)
 
-[Advanced Features of Containers](../mfc/containers-advanced-features.md)
+[Advanced Features of Containers](containers-advanced-features.md)
 
 ## See also
 
-[OLE](../mfc/ole-in-mfc.md)<br/>
-[Servers](../mfc/servers.md)<br/>
-[Activation](../mfc/activation-cpp.md)<br/>
-[Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)
+[OLE](ole-in-mfc.md)<br/>
+[Servers](servers.md)<br/>
+[Activation](activation-cpp.md)<br/>
+[Menus and Resources (OLE)](menus-and-resources-ole.md)

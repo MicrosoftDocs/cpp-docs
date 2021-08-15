@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IRowsetIdentityImpl Class"
 title: "IRowsetIdentityImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::IRowsetIdentityImpl", "ATL.IRowsetIdentityImpl", "IRowsetIdentityImpl", "IRowsetIdentityImpl.IsSameRow", "ATL.IRowsetIdentityImpl.IsSameRow", "IRowsetIdentityImpl::IsSameRow", "ATL::IRowsetIdentityImpl::IsSameRow"]
@@ -33,7 +34,7 @@ The storage unit for the `HROW`.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[IsSameRow](#issamerow)|Compares two row handles to see if they refer to the same row.|
 

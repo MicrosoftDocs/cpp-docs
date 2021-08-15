@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Connection Point Global Functions"
 title: "Connection Point Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlAdvise", "atlbase/ATL::AtlUnadvise", "atlbase/ATL::AtlAdviseSinkMap"]
@@ -12,7 +13,7 @@ These functions provide support for connection points and sink maps.
 > [!IMPORTANT]
 > The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
-|||
+|Function|Description|
 |-|-|
 |[AtlAdvise](#atladvise)|Creates a connection between an object's connection point and a client's sink.|
 |[AtlUnadvise](#atlunadvise)|Terminates the connection established through `AtlAdvise`.|

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMapStringToPtr Class"
 title: "CMapStringToPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMapStringToPtr", "AFXCOLL/CMapStringToPtr", "AFXCOLL/CMapStringToPtr::CMapStringToPtr", "AFXCOLL/CMapStringToPtr::GetCount", "AFXCOLL/CMapStringToPtr::GetHashTableSize", "AFXCOLL/CMapStringToPtr::GetNextAssoc", "AFXCOLL/CMapStringToPtr::GetSize", "AFXCOLL/CMapStringToPtr::GetStartPosition", "AFXCOLL/CMapStringToPtr::HashKey", "AFXCOLL/CMapStringToPtr::InitHashTable", "AFXCOLL/CMapStringToPtr::IsEmpty", "AFXCOLL/CMapStringToPtr::Lookup", "AFXCOLL/CMapStringToPtr::LookupKey", "AFXCOLL/CMapStringToPtr::RemoveAll", "AFXCOLL/CMapStringToPtr::RemoveKey", "AFXCOLL/CMapStringToPtr::SetAt"]
@@ -17,7 +18,7 @@ class CMapStringToPtr : public CObject
 
 ## Members
 
-The member functions of `CMapStringToPtr` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a function parameter or return value, substitute a pointer to **void**.
+The member functions of `CMapStringToPtr` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a function parameter or return value, substitute a pointer to **`void`**.
 
 `BOOL CMapStringToPtr::Lookup( LPCTSTR <key>, void*& <rValue> ) const;`
 

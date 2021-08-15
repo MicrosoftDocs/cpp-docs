@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OpenMP Environment Variables"
 title: "OpenMP Environment Variables"
 ms.date: "03/20/2019"
 f1_keywords: ["OpenMP environment variables", "OMP_DYNAMIC", "OMP_NESTED", "OMP_NUM_THREADS", "OMP_SCHEDULE"]
@@ -32,7 +33,7 @@ The `OMP_DYNAMIC` environment variable can be overridden by the [omp_set_dynamic
 
 The default value in the Visual C++ implementation of the OpenMP standard is `OMP_DYNAMIC=FALSE`.
 
-For more information, see [4.3 OMP_DYNAMIC](../../../parallel/openmp/4-3-omp-dynamic.md).
+For more information, see [4.3 OMP_DYNAMIC](../4-environment-variables.md#43-omp_dynamic).
 
 ### Example
 
@@ -62,7 +63,7 @@ The `OMP_NESTED` environment variable can be overridden by the [omp_set_nested](
 
 The default value in the Visual C++ implementation of the OpenMP standard is `OMP_DYNAMIC=FALSE`.
 
-For more information, see [4.4 OMP_NESTED](../../../parallel/openmp/4-4-omp-nested.md).
+For more information, see [4.4 OMP_NESTED](../4-environment-variables.md#44-omp_nested).
 
 ### Example
 
@@ -97,7 +98,7 @@ The `OMP_NUM_THREADS` environment variable can be overridden by the [omp_set_num
 
 The default value of `num` in the Visual C++ implementation of the OpenMP standard is the number of virtual processors, including hyperthreading CPUs.
 
-For more information, see [4.2 OMP_NUM_THREADS](../../../parallel/openmp/4-2-omp-num-threads.md).
+For more information, see [4.2 OMP_NUM_THREADS](../4-environment-variables.md#42-omp_num_threads).
 
 ### Example
 
@@ -133,7 +134,7 @@ The kind of scheduling, either `dynamic`, `guided`, `runtime`, or `static`.
 
 The default value in the Visual C++ implementation of the OpenMP standard is `OMP_SCHEDULE=static,0`.
 
-For more information, see [4.1 OMP_SCHEDULE](../../../parallel/openmp/4-1-omp-schedule.md).
+For more information, see [4.1 OMP_SCHEDULE](../4-environment-variables.md#41-omp_schedule).
 
 ### Example
 

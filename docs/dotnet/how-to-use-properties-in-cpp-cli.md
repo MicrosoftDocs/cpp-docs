@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Properties in C++/CLI"
 title: "How to: Use Properties in C++/CLI"
 ms.date: "07/21/2017"
 helpviewer_keywords: ["simple properties", "properties [C++], simple"]
@@ -80,7 +81,7 @@ An indexed property typically exposes a data structure that's accessed by using 
 
 If you use a default indexed property, you can access the data structure just by referring to the class name, but if you use a user-defined indexed property, you must to specify the property name to access the data structure.
 
-For information about how to consume an indexer that's written in C#, see [How to: Consume a C# Indexer (C++/CLI)](../dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md).
+For information about how to consume an indexer that's written in C#, see [How to: Consume a C# Indexer (C++/CLI)](./interoperability-with-other-dotnet-languages-cpp-cli.md#consume_indexer).
 
 This code sample shows how to use default and user-defined indexed properties:
 
@@ -145,7 +146,7 @@ int main() {
 [ 0 2 4 6 8 ]
 ```
 
-The next sample shows how to call the default indexer by using the `this` pointer.
+The next sample shows how to call the default indexer by using the **`this`** pointer.
 
 ```cpp
 // call_default_indexer_through_this_pointer.cpp
@@ -253,7 +254,7 @@ int main() {
 
 Although the [abstract](../extensions/abstract-cpp-component-extensions.md) and [sealed](../extensions/sealed-cpp-component-extensions.md) keywords are specified as valid in the ECMA C++/CLI specification, for the Microsoft C++ compiler, you cannot specify them on trivial properties, nor on the property declaration of a non-trivial property.
 
-To declare a sealed or abstract property, you must define a non-trivial property and then specify the `abstract` or `sealed` keyword on the get and set accessor functions.
+To declare a sealed or abstract property, you must define a non-trivial property and then specify the **`abstract`** or **`sealed`** keyword on the get and set accessor functions.
 
 ```cpp
 // properties_abstract_sealed.cpp

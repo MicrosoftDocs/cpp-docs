@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Structures, Unions, Enumerations, and Bit Fields"
 title: "Structures, Unions, Enumerations, and Bit Fields"
 ms.date: "11/04/2016"
 ms.assetid: 53f72553-c716-41fb-8384-89dc6712ee2a

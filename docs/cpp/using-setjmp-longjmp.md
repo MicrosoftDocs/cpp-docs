@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using setjmp and longjmp"
 title: "Using setjmp and longjmp"
 ms.date: "08/14/2018"
 f1_keywords: ["longjmp_cpp", "setjmp_cpp"]
@@ -7,10 +8,10 @@ ms.assetid: 96be8816-f6f4-4567-9a9c-0c3c720e37c5
 ---
 # Using setjmp and longjmp
 
-When [setjmp](../c-runtime-library/reference/setjmp.md) and [longjmp](../c-runtime-library/reference/longjmp.md) are used together, they provide a way to execute a non-local **goto**. They are typically used in C code to pass execution control to error-handling or recovery code in a previously called routine without using the standard calling or return conventions.
+When [setjmp](../c-runtime-library/reference/setjmp.md) and [longjmp](../c-runtime-library/reference/longjmp.md) are used together, they provide a way to execute a non-local **`goto`**. They are typically used in C code to pass execution control to error-handling or recovery code in a previously called routine without using the standard calling or return conventions.
 
 > [!CAUTION]
-> Because `setjmp` and `longjmp` don't support correct destruction of stack frame objects portably between C++ compilers, and because they might degrade performance by preventing optimization on local variables, we don't recommend their use in C++ programs. We recommend you use **try** and **catch** constructs instead.
+> Because `setjmp` and `longjmp` don't support correct destruction of stack frame objects portably between C++ compilers, and because they might degrade performance by preventing optimization on local variables, we don't recommend their use in C++ programs. We recommend you use **`try`** and **`catch`** constructs instead.
 
 If you decide to use `setjmp` and `longjmp` in a C++ program, also include \<setjmp.h> or \<setjmpex.h> to assure correct interaction between the functions and Structured Exception Handling (SEH) or C++ exception handling.
 

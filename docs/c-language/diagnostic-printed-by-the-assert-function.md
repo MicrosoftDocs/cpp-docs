@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Diagnostic Printed by the assert Function"
 title: "Diagnostic Printed by the assert Function"
 ms.date: "11/04/2016"
 ms.assetid: 78b64200-520d-40da-9a61-71553f411d4f

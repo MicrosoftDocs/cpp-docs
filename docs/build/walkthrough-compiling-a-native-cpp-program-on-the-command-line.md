@@ -2,7 +2,7 @@
 title: "Walkthrough: Compiling a Native C++ Program on the Command Line"
 description: "Use the Microsoft C++ compiler from a command prompt."
 ms.custom: "conceptual"
-ms.date: "04/02/2020"
+ms.date: 03/25/2021
 helpviewer_keywords: ["native code [C++]", "Visual C++, native code", "compiling programs [C++]", "command-line applications [C++], native"]
 ms.assetid: b200cfd1-0440-498f-90ee-7ecf92492dc0
 ---
@@ -25,7 +25,7 @@ The Build Tools for Visual Studio installs only the command-line compilers, tool
 Before you can build a C or C++ program on the command line, verify that the tools are installed, and you can access them from the command line. Visual C++ has complex requirements for the command-line environment to find the tools, headers, and libraries it uses. **You can't use Visual C++ in a plain command prompt window** without doing some preparation. Fortunately, Visual C++ installs shortcuts for you to launch a developer command prompt that has the environment set up for command line builds. Unfortunately, the names of the developer command prompt shortcuts and where they're located are different in almost every version of Visual C++ and on different versions of Windows. Your first walkthrough task is finding the right one to use.
 
 > [!NOTE]
-> A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. You must set these environment values yourself if you use a regular **Command Prompt** window. For more information, see [Set the Path and Environment Variables for Command-Line Builds](setting-the-path-and-environment-variables-for-command-line-builds.md). We recommend you use a developer command prompt shortcut instead of building your own.
+> A developer command prompt shortcut automatically sets the correct paths for the compiler and tools, and for any required headers and libraries. You must set these environment values yourself if you use a regular **Command Prompt** window. For more information, see [Use the MSVC toolset from the command line](./building-on-the-command-line.md). We recommend you use a developer command prompt shortcut instead of building your own.
 
 ### Open a developer command prompt
 
@@ -57,11 +57,11 @@ Before you can build a C or C++ program on the command line, verify that the too
 
 ### Create a Visual C++ source file and compile it on the command line
 
-1. In the developer command prompt window, enter `md c:\hello` to create a directory, and then enter `cd c:\hello` to change to that directory. This directory is where your source file and the compiled program are created in.
+1. In the developer command prompt window, enter `md c:\hello` to create a directory, and then enter `cd c:\hello` to change to that directory. This directory is where both your source file and the compiled program get created.
 
 1. Enter `notepad hello.cpp` in the command prompt window.
 
-   Choose **Yes** when Notepad prompts you to create a file. This step opens a blank Notepad window, ready for you to enter your code in a file named hello.cpp.
+   Choose **Yes** when Notepad prompts you to create a new file. This step opens a blank Notepad window, ready for you to enter your code in a file named hello.cpp.
 
 1. In Notepad, enter the following lines of code:
 
@@ -97,7 +97,10 @@ Before you can build a C or C++ program on the command line, verify that the too
 
    ```
 
-   The dates and other details will differ on your computer. If you don't see your source code file, *hello.cpp*, make sure you've changed to the *c:\\hello* directory you created. In Notepad, make sure that you saved your source file in this directory. Also make sure that you saved the source code with a *`.cpp`* file name extension, not a *`.txt`* extension.
+   The dates and other details will differ on your computer.
+
+   > [!NOTE]
+   > If you don't see your source code file, *`hello.cpp`*, make sure the current working directory in your command prompt is the *`C:\hello`* directory you created. Also make sure that this is the directory where you saved your source file. And make sure that you saved the source code with a *`.cpp`* file name extension, not a *`.txt`* extension. Your source file gets saved in the current directory as a *`.cpp`* file automatically if you open Notepad at the command prompt by using the **`notepad hello.cpp`** command. Notepad's behavior is different if you open it another way: By default, Notepad appends a *`.txt`* extension to new files when you save them. It also defaults to saving files in your *Documents* directory. To save your file with a *`.cpp`* extension in Notepad, choose **File** > **Save As**. In the **Save As** dialog, navigate to your *`C:\hello`* folder in the directory tree view control. Then use the **Save as type** dropdown control to select **All Files (\*.\*)**. Enter *`hello.cpp`* in the **File name** edit control, and then choose **Save** to save the file.
 
 1. At the developer command prompt, enter `cl /EHsc hello.cpp` to compile your program.
 
@@ -120,7 +123,7 @@ Before you can build a C or C++ program on the command line, verify that the too
    > If you get an error such as "'cl' is not recognized as an internal or external command, operable program or batch file," error C1034, or error LNK1104, your developer command prompt is not set up correctly. For information on how to fix this issue, go back to the **Open a developer command prompt** section.
 
    > [!NOTE]
-   > If you get a different compiler or linker error or warning, review your source code to correct any errors, then save it and run the compiler again. For information about specific errors, use the search box on this MSDN page to look for the error number.
+   > If you get a different compiler or linker error or warning, review your source code to correct any errors, then save it and run the compiler again. For information about specific errors, use the search box to look for the error number.
 
 1. To run the hello.exe program, at the command prompt, enter `hello`.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reference (C++ AMP)"
 title: "Reference (C++ AMP)"
 ms.date: "11/04/2016"
 f1_keywords: ["amp/Concurrency::Reference (C++ AMP)"]

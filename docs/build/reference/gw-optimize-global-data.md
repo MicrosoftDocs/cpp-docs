@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Gw (Optimize Global Data)"
 title: "/Gw (Optimize Global Data)"
 ms.date: "11/04/2016"
 f1_keywords: ["/Gw"]
@@ -29,9 +30,7 @@ For more information, see [Introducing /Gw Compiler Switch](https://devblogs.mic
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Select the **C/C++** folder.
-
-1. Select the **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Modify the **Additional Options** property to include **/Gw** and then choose **OK**.
 

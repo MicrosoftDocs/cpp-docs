@@ -7,7 +7,7 @@ ms.date: "05/24/2019"
 
 In Visual Studio 2019 and Visual Studio Code, you can use **Live Share** to collaborate on C++ projects in real-time. With **Live Share** another person can edit and debug your code without having to install your project or any of its dependencies. You see each other's edits as they occur, and each edit is tagged with the name of the person who made it.
 
-![C&#43;&#43; Live Share Editing](../ide/media/live-share-edit-cpp.png "Live Share Editing in C++")
+![Screenshot of C&#43;&#43; Live Share Editing.](../ide/media/live-share-edit-cpp.png "Live Share Editing in C++")
 
 ## Live Share host and guests
 
@@ -27,17 +27,17 @@ The host and guests can use these IntelliSense features:
 - Reference Highlighting
 - Diagnostics/Errors/Squiggles
 
-![C&#43;&#43; Live Share Debugging](../ide/media/live-share-debug-cpp.png "Live Share Debugging in C++")
+![Screenshot of C&#43;&#43; Live Share Debugging.](../ide/media/live-share-debug-cpp.png "Live Share Debugging in C++")
 
 ## Start and end a Live Share session
 
 To start a Live Share session in Visual Studio, click the Share button in the top right, or go to **File** > **Start Collaboration Session**. This generates a link that you can share with your collaborators.
 
-![C&#43;&#43; Live Share Button](../ide/media/live-share-button-cpp.png "Live Share Button")
+![A small screenshot of the Live Share button.](../ide/media/live-share-button-cpp.png "Live Share Button")
 
 To end a session, select **End Collaboration Session** from the **Sharing** dropdown.
 
-![C&#43;&#43; Live Share Button](../ide/media/live-share-end-session-cpp.png "Live Share Button")
+![Screenshot of the Sharing dropdown list with the End Collaboration Session option highlighted.](../ide/media/live-share-end-session-cpp.png "Live Share Button")
 
 ## For more information
 

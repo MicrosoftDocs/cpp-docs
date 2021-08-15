@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: back_insert_iterator Class"
 title: "back_insert_iterator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["iterator/std::back_insert_iterator", "iterator/std::back_insert_iterator::container_type", "iterator/std::back_insert_iterator::reference"]
@@ -314,11 +315,11 @@ A reference to the last element inserted at the back of the container.
 
 The first member operator evaluates `Container.push_back( val)`,
 
-then returns `*this`. The second member operator evaluates
+then returns **`*this`**. The second member operator evaluates
 
 `container->push_back((typename Container::value_type&&)val)`,
 
-then returns `*this`.
+then returns **`*this`**.
 
 ### Example
 

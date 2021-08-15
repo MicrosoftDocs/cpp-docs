@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;istream&gt; operators"
 title: "&lt;istream&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["istream/std::operator&gt;&gt;"]

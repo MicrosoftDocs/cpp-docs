@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2886"
 title: "Compiler Error C2886"
 ms.date: "11/04/2016"
 f1_keywords: ["C2886"]
@@ -9,7 +10,7 @@ ms.assetid: c01588a1-484c-4dc9-a3f1-f900c6e44543
 
 'class::identifier' : symbol cannot be used in a member using-declaration
 
-A `using` declaration uses a symbol, such as a namespace name. A `using` declaration is for declaring base class members.
+A **`using`** declaration uses a symbol, such as a namespace name. A **`using`** declaration is for declaring base class members.
 
 The following sample generates C2886:
 

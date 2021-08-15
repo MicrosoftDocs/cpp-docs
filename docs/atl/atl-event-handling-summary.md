@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL Event Handling Summary"
 title: "ATL Event Handling Summary"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["event handling, implementing"]

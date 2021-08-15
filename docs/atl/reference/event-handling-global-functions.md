@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Event Handling Global Functions"
 title: "Event Handling Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlWaitWithMessageLoop"]
@@ -12,7 +13,7 @@ This function provides an event handler.
 > [!IMPORTANT]
 > The function listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
-|||
+|Name|Description|
 |-|-|
 |[AtlWaitWithMessageLoop](#atlwaitwithmessageloop)|Waits for an object to be signaled, meanwhile dispatching window messages as needed.|
 

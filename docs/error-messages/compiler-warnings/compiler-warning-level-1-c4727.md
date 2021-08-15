@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4727"
 title: "Compiler Warning (level 1) C4727"
 ms.date: "08/19/2019"
 f1_keywords: ["C4727"]
@@ -18,7 +19,7 @@ To resolve, compile one source file with **/Yc /c** (creates pch), and the other
 
 So, if you did the following and it generates C4727:
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 **cl /clr /GL a.cpp b.cpp c.cpp /Ycstdafx.h**
 
@@ -30,7 +31,7 @@ You would do the following instead:
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 **cl /clr /GL a.cpp b.cpp c.cpp /Ycpch.h**
 

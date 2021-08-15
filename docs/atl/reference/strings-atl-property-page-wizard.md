@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Strings, ATL Property Page Wizard"
 title: "Strings, ATL Property Page Wizard"
 ms.date: "05/09/2019"
 f1_keywords: ["vc.codewiz.class.atl.ppg.strings"]
@@ -7,13 +8,13 @@ ms.assetid: 00547db6-911f-49eb-92e1-2ba67079d4df
 ---
 # Strings, ATL Property Page Wizard
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The ATL Property Page wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Provides the text associated with the property page.
 

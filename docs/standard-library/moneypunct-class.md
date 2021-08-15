@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: moneypunct Class"
 title: "moneypunct Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocmon/std::moneypunct", "xlocmon/std::moneypunct::char_type", "xlocmon/std::moneypunct::string_type", "xlocmon/std::moneypunct::curr_symbol", "xlocmon/std::moneypunct::decimal_point", "xlocmon/std::moneypunct::do_curr_symbol", "xlocmon/std::moneypunct::do_decimal_point", "xlocmon/std::moneypunct::do_frac_digits", "xlocmon/std::moneypunct::do_grouping", "xlocmon/std::moneypunct::do_neg_format", "xlocmon/std::moneypunct::do_negative_sign", "xlocmon/std::moneypunct::do_pos_format", "xlocmon/std::moneypunct::do_positive_sign", "xlocmon/std::moneypunct::do_thousands_sep", "xlocmon/std::moneypunct::frac_digits", "xlocmon/std::moneypunct::grouping", "xlocmon/std::moneypunct::neg_format", "xlocmon/std::moneypunct::negative_sign", "xlocmon/std::moneypunct::pos_format", "xlocmon/std::moneypunct::positive_sign", "xlocmon/std::moneypunct::thousands_sep"]
@@ -253,9 +254,9 @@ The protected virtual member function returns a locale-specific rule for determi
 
 - `value` to match or generate a monetary value.
 
-Components of a monetary output field are generated and components of a monetary input field are matched in the order in which these elements appear in `pattern::field`. Each of the values `sign`, `symbol`, `value`, and either `none` or `space` must appear exactly once. The value `none` must not appear first. The value space **must** not appear first or last. If `Intl` is true, the order is `symbol`, `sign`, `none`, then `value`.
+Components of a monetary output field are generated and components of a monetary input field are matched in the order in which these elements appear in `pattern::field`. Each of the values `sign`, `symbol`, `value`, and either `none` or `space` must appear exactly once. The value `none` must not appear first. The value `space` must not appear first or last. If `Intl` is true, the order is `symbol`, `sign`, `none`, then `value`.
 
-The template version of `moneypunct`\< **CharType**, **Intl**> returns `{`**money_base::symbol**, **money_base::sign**, **money_base::value**, **money_base::none**`}`.
+The template version of `moneypunct< CharType, Intl >` returns `{money_base::symbol, money_base::sign, money_base::value, money_base::none}`.
 
 ### Example
 
@@ -289,7 +290,7 @@ virtual pattern do_pos_format() const;
 
 The protected virtual member function returns a locale-specific rule for determining how to generate a monetary output field for a positive amount. (It also determines how to match the components of a monetary input field.) The encoding is the same as for [do_neg_format](#do_neg_format).
 
-The template version of moneypunct\< **CharType**, **Inputlterator**> returns `{`**money_base::symbol**, **money_base::sign**, **money_base::value**, **money_base::none**`}`.
+The template version of `moneypunct< CharType, Inputlterator >` returns `{ money_base::symbol, money_base::sign, money_base::value, money_base::none }`.
 
 ### Example
 

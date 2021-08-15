@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IWorkerThreadClient Interface"
 title: "IWorkerThreadClient Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IWorkerThreadClient", "ATLUTIL/ATL::IWorkerThreadClient", "ATLUTIL/ATL::CloseHandle", "ATLUTIL/ATL::Execute"]
@@ -22,7 +23,7 @@ __interface IWorkerThreadClient
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[CloseHandle](#closehandle)|Implement this method to close the handle associated with this object.|
 |[Execute](#execute)|Implement this method to execute code when the handle associated with this object becomes signaled.|

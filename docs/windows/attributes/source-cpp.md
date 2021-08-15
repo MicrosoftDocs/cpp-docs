@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: source (C++)"
 title: "source  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.source"]
@@ -62,11 +63,9 @@ class NN : public b
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**, **interface**|
+|**Applies to**|**`class`**, **`struct`**, **interface**|
 |**Repeatable**|No|
 |**Required attributes**|`coclass` (when applied to class or struct)|
 |**Invalid attributes**|None|

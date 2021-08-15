@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2662"
 title: "Compiler Error C2662"
 ms.date: "11/04/2016"
 f1_keywords: ["C2662"]
@@ -9,13 +10,13 @@ ms.assetid: e172c2a4-f29e-4034-8232-e7dc6f83689f
 
 'function' : cannot convert 'this' pointer from 'type1' to 'type2'
 
-The compiler could not convert the `this` pointer from `type1` to `type2`.
+The compiler could not convert the **`this`** pointer from `type1` to `type2`.
 
-This error can be caused by invoking a non-`const` member function on a `const` object.  Possible resolutions:
+This error can be caused by invoking a non-**`const`** member function on a **`const`** object.  Possible resolutions:
 
-- Remove the `const` from the object declaration.
+- Remove the **`const`** from the object declaration.
 
-- Add `const` to the member function.
+- Add **`const`** to the member function.
 
 The following sample generates C2662:
 
@@ -33,7 +34,7 @@ int main() {
 }
 ```
 
-When compiling with **/clr**, you cannot call a function on a `const` or `volatile` qualified managed type. You cannot declare a const member function of a managed class, so you cannot call methods on const managed objects.
+When compiling with **/clr**, you cannot call a function on a **`const`** or **`volatile`** qualified managed type. You cannot declare a const member function of a managed class, so you cannot call methods on const managed objects.
 
 ```cpp
 // C2662_b.cpp

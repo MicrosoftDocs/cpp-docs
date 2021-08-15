@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFieldExchange Class"
 title: "CFieldExchange Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CFieldExchange", "AFXDB/CFieldExchange", "AFXDB/CFieldExchange::IsFieldType", "AFXDB/CFieldExchange::SetFieldType"]
@@ -33,7 +34,7 @@ Use this class if you are writing data exchange routines for custom data types o
 > [!NOTE]
 > If you are working with the Data Access Objects (DAO) classes rather than the Open Database Connectivity (ODBC) classes, use class [CDaoFieldExchange](../../mfc/reference/cdaofieldexchange-class.md) instead. For more information, see the article [Overview:Database Programming](../../data/data-access-programming-mfc-atl.md).
 
-A `CFieldExchange` object provides the context information needed for record field exchange or bulk record field exchange to take place. `CFieldExchange` objects support a number of operations, including binding parameters and field data members and setting various flags on the fields of the current record. RFX and Bulk RFX operations are performed on recordset-class data members of types defined by the **enum** **FieldType** in `CFieldExchange`. Possible **FieldType** values are:
+A `CFieldExchange` object provides the context information needed for record field exchange or bulk record field exchange to take place. `CFieldExchange` objects support a number of operations, including binding parameters and field data members and setting various flags on the fields of the current record. RFX and Bulk RFX operations are performed on recordset-class data members of types defined by the **`enum`** **FieldType** in `CFieldExchange`. Possible **FieldType** values are:
 
 - `CFieldExchange::outputColumn` for field data members.
 

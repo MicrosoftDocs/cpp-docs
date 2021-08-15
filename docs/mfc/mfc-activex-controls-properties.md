@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ActiveX Controls: Properties"
 title: "MFC ActiveX Controls: Properties"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["properties [MFC], ActiveX controls", "MFC ActiveX controls [MFC], properties", "properties [MFC]"]
@@ -10,22 +11,22 @@ An ActiveX control fires events to communicate with its control container. The c
 
 Properties are also called attributes.
 
-For more information on ActiveX control methods, see the article [MFC ActiveX Controls: Methods](../mfc/mfc-activex-controls-methods.md).
+For more information on ActiveX control methods, see the article [MFC ActiveX Controls: Methods](mfc-activex-controls-methods.md).
 
-ActiveX controls can implement both stock and custom methods and properties. Class `COleControl` provides an implementation for stock properties. (For a complete list of stock properties, see the article [MFC ActiveX Controls: Adding Stock Properties](../mfc/mfc-activex-controls-adding-stock-properties.md).) Custom properties, defined by the developer, add specialized capabilities to an ActiveX control. For more information, see [MFC ActiveX Controls: Adding Custom Properties](../mfc/mfc-activex-controls-adding-custom-properties.md).
+ActiveX controls can implement both stock and custom methods and properties. Class `COleControl` provides an implementation for stock properties. (For a complete list of stock properties, see the article [MFC ActiveX Controls: Adding Stock Properties](mfc-activex-controls-adding-stock-properties.md).) Custom properties, defined by the developer, add specialized capabilities to an ActiveX control. For more information, see [MFC ActiveX Controls: Adding Custom Properties](mfc-activex-controls-adding-custom-properties.md).
 
 Both custom and stock properties, like methods, are supported by a mechanism that consists of a dispatch map that handles properties and methods and existing member functions of the `COleControl` class. In addition, these properties can have parameters that the developer uses to pass extra information to the control.
 
 The following articles discuss ActiveX control properties in more detail:
 
-- [MFC ActiveX Controls: Adding Stock Properties](../mfc/mfc-activex-controls-adding-stock-properties.md)
+- [MFC ActiveX Controls: Adding Stock Properties](mfc-activex-controls-adding-stock-properties.md)
 
-- [MFC ActiveX Controls: Adding Custom Properties](../mfc/mfc-activex-controls-adding-custom-properties.md)
+- [MFC ActiveX Controls: Adding Custom Properties](mfc-activex-controls-adding-custom-properties.md)
 
-- [MFC ActiveX Controls: Advanced Property Implementation](../mfc/mfc-activex-controls-advanced-property-implementation.md)
+- [MFC ActiveX Controls: Advanced Property Implementation](mfc-activex-controls-advanced-property-implementation.md)
 
-- [MFC ActiveX Controls: Accessing Ambient Properties](../mfc/mfc-activex-controls-accessing-ambient-properties.md)
+- [MFC ActiveX Controls: Accessing Ambient Properties](mfc-activex-controls-accessing-ambient-properties.md)
 
 ## See also
 
-[MFC ActiveX Controls](../mfc/mfc-activex-controls.md)
+[MFC ActiveX Controls](mfc-activex-controls.md)

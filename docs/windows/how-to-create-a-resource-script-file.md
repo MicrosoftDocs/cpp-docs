@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create Resources (C++)"
 title: "How to: Create Resources (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.resvw.add.MFC", "vs.resourceview.F1", "vc.editors.insertresource", "vc.editors.newcustomresource"]
@@ -79,7 +80,7 @@ The **Resource View** windows includes the **Add Resource** dialog box with the 
 
 | Property | Description |
 |---|---|
-| **Resource Type** | Specify the kind of resource you want to create.<br/><br/>You can expand the cursor and dialog box resource categories to reveal additional resources, which are located in *..\Microsoft Visual Studio \<version\>\VC\VCResourceTemplates\\<LCID\>\mfc.rct*. If you need to add .rct files, either put them here or specify another [include path](../windows/how-to-specify-include-directories-for-resources.md). Resources shown at the top level in the tree control are the default resources provided by Visual Studio. Resources in .rct files appear at the second level under the appropriate category. There's no preset limit to the number of .rct files you can add.<br/><br/> |
+| **Resource Type** | Specify the kind of resource you want to create.<br/><br/>You can expand the cursor and dialog box resource categories to reveal additional resources, which are located in *..\Microsoft Visual Studio \<version\>\VC\VCResourceTemplates\\<LCID\>\mfc.rct*. If you need to add .rct files, either put them here or specify another [include path](./how-to-include-resources-at-compile-time.md). Resources shown at the top level in the tree control are the default resources provided by Visual Studio. Resources in .rct files appear at the second level under the appropriate category. There's no preset limit to the number of .rct files you can add.<br/><br/> |
 | **New** | Create a resource based on the type selected in the **Resource Type** box and open the resource in the appropriate editor.<br/><br/>For example, if you create a dialog resource, it opens the resource in the [Dialog Editor](../windows/dialog-editor.md). |
 | **Import** | Open the **Import** dialog box to navigate to the resource you want to import into your current project.<br/><br/>You can import a bitmap, icon, cursor, HTML, sound (.WAV), or custom resource file. |
 | **Custom** | Open the **New Custom Resource** dialog box to create a custom resource.<br/><br/>Also includes a **Resource Type** property that provides a text box for you to enter the name of the custom resource type. Visual C++ automatically capitalizes the name when you exit. Custom resources are only edited in the [Binary Editor](../windows/binary-editor.md). |
@@ -112,12 +113,12 @@ A resource template is a customized resource that you've saved as an .rct file. 
 After customizing a resource template, save your changes in the template folder or the location specified in the include path, so that the new resource template will appear under its resource type in the **Add Resource** dialog box. You can now use the new resource template as often as needed.
 
 > [!NOTE]
-> The resource editor automatically provides a unique resource ID. You can revise the [resource properties](../windows/changing-the-properties-of-a-resource.md) as needed.
+> The resource editor automatically provides a unique resource ID. You can revise the [resource properties](./resource-editors.md) as needed.
 
 > [!NOTE]
 > Place language-specific template files in subdirectories of the main template directory. For example, English-only template files go in *..\\<resource template directory\>\1033*.
 >
-> Visual Studio searches for new .rct files in *\Program Files\Microsoft Visual Studio \<version\>\VC\VCResourceTemplates*, *\Program Files\Microsoft Visual Studio \<version>\VC\VCResourceTemplates\\<LCID\>* (such as an LCID of 1033 for English), or anywhere on the [include path](../windows/how-to-specify-include-directories-for-resources.md). If you prefer to store your .rct files in another location, you must add the location to the include path.
+> Visual Studio searches for new .rct files in *\Program Files\Microsoft Visual Studio \<version\>\VC\VCResourceTemplates*, *\Program Files\Microsoft Visual Studio \<version>\VC\VCResourceTemplates\\<LCID\>* (such as an LCID of 1033 for English), or anywhere on the [include path](./how-to-include-resources-at-compile-time.md). If you prefer to store your .rct files in another location, you must add the location to the include path.
 
 ### To create and use a resource template
 

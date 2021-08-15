@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fatal Error C1903"
 title: "Fatal Error C1903"
 ms.date: "11/04/2016"
 f1_keywords: ["C1903"]

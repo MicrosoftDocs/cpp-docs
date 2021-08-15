@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: extent Class (C++ AMP)"
 title: "extent Class (C++ AMP)"
 ms.date: "03/27/2019"
 f1_keywords: ["extent", "AMP/extent", "AMP/Concurrency::extent::extent", "AMP/Concurrency::extent::contains", "AMP/Concurrency::extent::size", "AMP/Concurrency::extent::tile", "AMP/Concurrency::extent::rank Constant"]
@@ -71,7 +72,7 @@ The rank of the `extent` object.
 
 ## <a name="contains"></a> contains
 
-Indicates whether the specified [index](index-class.md) value is contained within the `extent' object.
+Indicates whether the specified [index](index-class.md) value is contained within the `extent` object.
 
 ### Syntax
 
@@ -86,11 +87,11 @@ The `index` value to test.
 
 ### Return Value
 
-**true** if the specified *index* value is contained in the `extent` object; otherwise, **false**.
+**`true`** if the specified *index* value is contained in the `extent` object; otherwise, **`false`**.
 
 ## <a name="ctor"></a> extent
 
-Initializes a new instance of the `extent' class.
+Initializes a new instance of the `extent` class.
 
 ### Syntax
 
@@ -131,7 +132,7 @@ If an array is used to construct an `extent` object, the length of the array mus
 
 ## <a name="operator_mod_eq"></a> operator%=
 
-Calculates the modulus (remainder) of each element in the `extent' when that element is divided by a number.
+Calculates the modulus (remainder) of each element in the `extent` when that element is divided by a number.
 
 ### Syntax
 
@@ -150,7 +151,7 @@ The `extent` object.
 
 ## <a name="operator_star_eq"></a> operator*=
 
-Multiplies each element in the `extent' object by the specified number.
+Multiplies each element in the `extent` object by the specified number.
 
 ### Syntax
 
@@ -188,7 +189,7 @@ The new `extent` object.
 
 ## <a name="operator_add_add"></a> operator++
 
-Increments each element of the `extent' object.
+Increments each element of the `extent` object.
 
 ### Syntax
 
@@ -199,11 +200,11 @@ extent<_Rank> operator++(int)restrict(amp,cpu);
 
 ### Return Value
 
-For the prefix operator, the `extent` object (`*this`). For the suffix operator, a new `extent` object.
+For the prefix operator, the `extent` object (**`*this`**). For the suffix operator, a new `extent` object.
 
 ## <a name="operator_add_eq"></a> operator+=
 
-Adds the specified number to each element of the `extent' object.
+Adds the specified number to each element of the `extent` object.
 
 ### Syntax
 
@@ -243,7 +244,7 @@ The new `extent` object.
 
 ## <a name="operator_min_min"></a> operator--
 
-Decrements each element in the `extent' object.
+Decrements each element in the `extent` object.
 
 ### Syntax
 
@@ -254,11 +255,11 @@ extent<_Rank> operator--(int)restrict(amp,cpu);
 
 ### Return Value
 
-For the prefix operator, the `extent` object (`*this`). For the suffix operator, a new `extent` object.
+For the prefix operator, the `extent` object (**`*this`**). For the suffix operator, a new `extent` object.
 
 ## <a name="operator_div_eq"></a> operator/=
 
-Divides each element in the `extent' object by the specified number.
+Divides each element in the `extent` object by the specified number.
 
 ### Syntax
 
@@ -277,7 +278,7 @@ The `extent` object.
 
 ## <a name="operator_min_eq"></a> operator-=
 
-Subtracts the specified number from each element of the `extent' object.
+Subtracts the specified number from each element of the `extent` object.
 
 ### Syntax
 
@@ -298,7 +299,7 @@ The resulting `extent` object.
 
 ## <a name="operator_eq"></a> operator=
 
-Copies the contents of another `extent' object into this one.
+Copies the contents of another `extent` object into this one.
 
 ### Syntax
 
@@ -337,7 +338,7 @@ The element that's at the specified index.
 
 ## <a name="rank_constant"></a> rank
 
-Stores the rank of the `extent' object.
+Stores the rank of the `extent` object.
 
 ### Syntax
 

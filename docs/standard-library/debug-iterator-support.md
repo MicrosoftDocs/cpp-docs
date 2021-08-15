@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debug Iterator Support"
 title: "Debug Iterator Support"
 ms.date: "09/13/2018"
 helpviewer_keywords: ["Safe Libraries", "Safe Libraries, C++ Standard Library", "Safe C++ Standard Library", "C++ Standard Library, debug iterator support", "iterators, debug iterator support", "iterators, incompatible", "incompatible iterators", "debug iterator support"]
@@ -116,7 +117,7 @@ Notice that this example uses the lambda expression `[] (int& elem) { elem *= 2;
 
 ## Iterators going out of scope
 
-Debug iterator checks also cause an iterator variable that's declared in a **for** loop to be out of scope when the **for** loop scope ends.
+Debug iterator checks also cause an iterator variable that's declared in a **`for`** loop to be out of scope when the **`for`** loop scope ends.
 
 ```cpp
 // iterator_debugging_4.cpp

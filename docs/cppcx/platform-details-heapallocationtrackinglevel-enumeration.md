@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Details::HeapAllocationTrackingLevel Enumeration"
 title: "Platform::Details::HeapAllocationTrackingLevel Enumeration"
 ms.date: "12/30/2016"
 ms.topic: "reference"

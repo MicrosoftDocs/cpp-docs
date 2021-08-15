@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Stream States"
 title: "Stream States"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["streams, states"]
@@ -8,7 +9,7 @@ ms.assetid: 5f28c968-f132-403f-968c-8417ff315e52
 
 The valid states, and state transitions, for a stream are shown in the following figure.
 
-![Stream state diagram](../c-runtime-library/media/stream.gif "Stream state diagram")
+![Stream state diagram.](../c-runtime-library/media/stream.gif "Stream state diagram")
 
 Each of the circles denotes a stable state. Each of the lines denotes a transition that can occur as the result of a function call that operates on the stream. Five groups of functions can cause state transitions.
 

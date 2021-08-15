@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Web References Property Page"
 title: "Web References Property Page"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCSDLTool.Output", "VC.Project.VCWebServiceProxyGeneratorTool.SuppressStartupBanner", "VC.Project.VCWebServiceProxyGeneratorTool.Output", "VC.Project.VCWebServiceProxyGeneratorTool.GeneratedProxyLanguage"]

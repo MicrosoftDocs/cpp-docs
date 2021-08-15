@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;iterator&gt; functions"
 title: "&lt;iterator&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["xutility/std::advance", "xutility/std::back_inserter", "xutility/std::begin", "xutility/std::cbegin", "xutility/std::cend", "xutility/std::distance", "xutility/std::end", "xutility/std::front_inserter", "xutility/std::inserter", "xutility/std::make_checked_array_iterator", "xutility/std::make_move_iterator", "xutility/std::make_unchecked_array_iterator", "xutility/std::next", "xutility/std::prev"]
@@ -275,7 +276,7 @@ A constant `cont.begin()`.
 
 This function works with all C++ Standard Library containers and with [initializer_list](../standard-library/initializer-list-class.md).
 
-You can use this member function in place of the `begin()` template function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container or `initializer_list` of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` template function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container or `initializer_list` of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -308,7 +309,7 @@ A constant `cont.end()`.
 
 This function works with all C++ Standard Library containers and with [initializer_list](../standard-library/initializer-list-class.md).
 
-You can use this member function in place of the [end()](../standard-library/iterator-functions.md#end) template function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container or `initializer_list` of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the [end()](../standard-library/iterator-functions.md#end) template function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **`const`**) container or `initializer_list` of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();

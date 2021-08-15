@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Improve Performance with Generics (C++/CLI)"
 title: "How to: Improve Performance with Generics (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
@@ -11,7 +12,7 @@ With generics, you can create reusable code based on a type parameter. The actua
 
 This article will discuss how generics can help increase the performance of an application that uses collections.
 
-## Example
+## Example: Two main drawbacks of .NET Framework collections
 
 The .NET Framework comes with many collection classes in the <xref:System.Collections?displayProperty=fullName> namespace. Most of these collections operate on objects of type <xref:System.Object?displayProperty=fullName>. This allows collections to store any type, since all types in the .NET Framework, even value types, derive from <xref:System.Object?displayProperty=fullName>. However, there are two drawbacks to this approach.
 
@@ -68,7 +69,7 @@ Popped a String: Seven
 Popped an int: 7
 ```
 
-## Example
+## Example: Benefit of using generic collection
 
 The new <xref:System.Collections.Generic?displayProperty=fullName> namespace contains many of the same collections found in the <xref:System.Collections?displayProperty=fullName> namespace, but they have been modified to accept generic type parameters. This eliminates the two drawbacks of non-generic collections: the boxing and unboxing of value types and the inability to specify the types to be stored in the collections. Operations on the two collections are identical; they differ only in how they are instantiated.
 

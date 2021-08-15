@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Multiplicative Operators"
 title: "C Multiplicative Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["arithmetic operators [C++], multiplicative operators", "/ operator", "/ operator, multiplicative operators", "remainder operator (%)", "operators [C], multiplication", "% operator", "slash (/) operator", "multiplication operator [C++], multiplicative operators"]
@@ -52,7 +53,7 @@ This statement uses the multiplication operator:
 y = x * i;
 ```
 
-In this case, `x` is multiplied by `i` to give the value 20.0. The result has **double** type.
+In this case, `x` is multiplied by `i` to give the value 20.0. The result has **`double`** type.
 
 ```
 n = i / j;

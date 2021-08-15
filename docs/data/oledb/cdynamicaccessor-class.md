@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDynamicAccessor Class"
 title: "CDynamicAccessor Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL.CDynamicAccessor", "ATL::CDynamicAccessor", "CDynamicAccessor", "ATL::CDynamicAccessor::AddBindEntry", "CDynamicAccessor.AddBindEntry", "CDynamicAccessor::AddBindEntry", "ATL.CDynamicAccessor.AddBindEntry", "CDynamicAccessor::CDynamicAccessor", "ATL::CDynamicAccessor::CDynamicAccessor", "ATL.CDynamicAccessor.CDynamicAccessor", "CDynamicAccessor.CDynamicAccessor", "ATL::CDynamicAccessor::Close", "ATL.CDynamicAccessor.Close", "CDynamicAccessor.Close", "CDynamicAccessor::Close", "ATL.CDynamicAccessor.GetBlobHandling", "CDynamicAccessor::GetBlobHandling", "ATL::CDynamicAccessor::GetBlobHandling", "GetBlobHandling", "CDynamicAccessor.GetBlobHandling", "ATL::CDynamicAccessor::GetBlobSizeLimit", "CDynamicAccessor.GetBlobSizeLimit", "CDynamicAccessor::GetBlobSizeLimit", "GetBlobSizeLimit", "ATL.CDynamicAccessor.GetBlobSizeLimit", "CDynamicAccessor.GetBookmark", "GetBookmark", "CDynamicAccessor::GetBookmark", "ATL.CDynamicAccessor.GetBookmark", "ATL::CDynamicAccessor::GetBookmark", "ATL.CDynamicAccessor.GetColumnCount", "ATL::CDynamicAccessor::GetColumnCount", "CDynamicAccessor::GetColumnCount", "CDynamicAccessor.GetColumnCount", "GetColumnCount", "CDynamicAccessor.GetColumnFlags", "ATL::CDynamicAccessor::GetColumnFlags", "ATL.CDynamicAccessor.GetColumnFlags", "CDynamicAccessor::GetColumnFlags", "ATL.CDynamicAccessor.GetColumnInfo", "ATL::CDynamicAccessor::GetColumnInfo", "CDynamicAccessor.GetColumnInfo", "CDynamicAccessor::GetColumnInfo", "ATL::CDynamicAccessor::GetColumnName", "GetColumnName", "ATL.CDynamicAccessor.GetColumnName", "CDynamicAccessor::GetColumnName", "CDynamicAccessor.GetColumnName", "ATL.CDynamicAccessor.GetColumnType", "CDynamicAccessor::GetColumnType", "GetColumnType", "CDynamicAccessor.GetColumnType", "ATL::CDynamicAccessor::GetColumnType", "CDynamicAccessor.GetLength", "ATL.CDynamicAccessor.GetLength", "CDynamicAccessor::GetLength", "ATL::CDynamicAccessor::GetLength", "CDynamicAccessor.GetOrdinal", "ATL::CDynamicAccessor::GetOrdinal", "CDynamicAccessor::GetOrdinal", "ATL.CDynamicAccessor.GetOrdinal", "GetOrdinal", "ATL::CDynamicAccessor::GetStatus", "CDynamicAccessor.GetStatus", "ATL.CDynamicAccessor.GetStatus", "CDynamicAccessor::GetStatus", "GetValue", "CDynamicAccessor::GetValue<ctype>", "ATL.CDynamicAccessor.GetValue<ctype>", "CDynamicAccessor.GetValue", "CDynamicAccessor::GetValue", "ATL.CDynamicAccessor.GetValue", "ATL::CDynamicAccessor::GetValue", "ATL::CDynamicAccessor::GetValue<ctype>", "CDynamicAccessor::SetBlobHandling", "CDynamicAccessor.SetBlobHandling", "ATL::CDynamicAccessor::SetBlobHandling", "SetBlobHandling", "ATL.CDynamicAccessor.SetBlobHandling", "CDynamicAccessor::SetBlobSizeLimit", "SetBlobSizeLimit", "CDynamicAccessor.SetBlobSizeLimit", "ATL.CDynamicAccessor.SetBlobSizeLimit", "ATL::CDynamicAccessor::SetBlobSizeLimit", "ATL::CDynamicAccessor::SetLength", "CDynamicAccessor.SetLength", "CDynamicAccessor::SetLength", "ATL.CDynamicAccessor.SetLength", "CDynamicAccessor::SetStatus", "ATL::CDynamicAccessor::SetStatus", "CDynamicAccessor.SetStatus", "ATL.CDynamicAccessor.SetStatus", "ATL.CDynamicAccessor.SetValue", "ATL::CDynamicAccessor::SetValue", "ATL::CDynamicAccessor::SetValue<ctype>", "CDynamicAccessor.SetValue", "ATL.CDynamicAccessor.SetValue<ctype>", "CDynamicAccessor::SetValue", "CDynamicAccessor::SetValue<ctype>"]
@@ -23,7 +24,7 @@ class CDynamicAccessor : public CAccessorBase
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddBindEntry](#addbindentry)|Adds a bind entry to the output columns when overriding the default accessor.|
 |[CDynamicAccessor](#cdynamicaccessor)|Instantiates and initializes the `CDynamicAccessor` object.|
@@ -50,7 +51,7 @@ class CDynamicAccessor : public CAccessorBase
 
 Use `CDynamicAccessor` methods to obtain column information such as column names, column count, data type, and so on. You then use this column information to create an accessor dynamically at run time.
 
-The column information is stored in a buffer that is created and managed by this class. Obtain data from the buffer using [GetValue](../../data/oledb/cdynamicaccessor-getvalue.md).
+The column information is stored in a buffer that is created and managed by this class. Obtain data from the buffer using [GetValue](#getvalue).
 
 For a discussion and examples of using the dynamic accessor classes, see [Using Dynamic Accessors](../../data/oledb/using-dynamic-accessors.md).
 
@@ -91,10 +92,10 @@ CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
 #### Parameters
 
 *eBlobHandling*<br/>
-Specifies how the binary large object (BLOB) data is to be handled. The default value is DBBLOBHANDLING_DEFAULT. See [SetBlobHandling](../../data/oledb/cdynamicaccessor-setblobhandling.md) for a description of the DBBLOBHANDLINGENUM values.
+Specifies how the binary large object (BLOB) data is to be handled. The default value is DBBLOBHANDLING_DEFAULT. See [SetBlobHandling](#setblobhandling) for a description of the DBBLOBHANDLINGENUM values.
 
 *nBlobSize*<br/>
-The maximum BLOB size in bytes; column data over this value is treated as a BLOB. The default value is 8,000. See [SetBlobSizeLimit](../../data/oledb/cdynamicaccessor-setblobsizelimit.md) for details.
+The maximum BLOB size in bytes; column data over this value is treated as a BLOB. The default value is 8,000. See [SetBlobSizeLimit](#setblobsizelimit) for details.
 
 ### Remarks
 
@@ -124,7 +125,7 @@ const DBBLOBHANDLINGENUM GetBlobHandling() const;
 
 ### Remarks
 
-Returns the BLOB handling value *eBlobHandling* as set by [SetBlobHandling](../../data/oledb/cdynamicaccessor-setblobhandling.md).
+Returns the BLOB handling value *eBlobHandling* as set by [SetBlobHandling](#setblobhandling).
 
 ## <a name="getblobsizelimit"></a> CDynamicAccessor::GetBlobSizeLimit
 
@@ -138,7 +139,7 @@ const DBLENGTH GetBlobSizeLimit() const;
 
 ### Remarks
 
-Returns the BLOB handling value *nBlobSize* as set by [SetBlobSizeLimit](../../data/oledb/cdynamicaccessor-setblobsizelimit.md).
+Returns the BLOB handling value *nBlobSize* as set by [SetBlobSizeLimit](#setblobsizelimit).
 
 ## <a name="getbookmark"></a> CDynamicAccessor::GetBookmark
 
@@ -198,7 +199,7 @@ bool GetColumnFlags(DBORDINAL nColumn,
 
 ### Return Value
 
-Returns **true** if the column characteristics are successfully retrieved. Otherwise, it returns **false**.
+Returns **`true`** if the column characteristics are successfully retrieved. Otherwise, it returns **`false`**.
 
 ### Remarks
 
@@ -279,7 +280,7 @@ bool GetColumnType(DBORDINAL nColumn,
 
 ### Return Value
 
-Returns **true** on success or **false** on failure.
+Returns **`true`** on success or **`false`** on failure.
 
 ## <a name="getlength"></a> CDynamicAccessor::GetLength
 
@@ -311,7 +312,7 @@ bool GetLength(const WCHAR* pColumnName,
 
 ### Return Value
 
-Returns **true** if the specified column is found. Otherwise, this function returns **false**.
+Returns **`true`** if the specified column is found. Otherwise, this function returns **`false`**.
 
 ### Remarks
 
@@ -341,7 +342,7 @@ bool GetOrdinal(const WCHAR* pColumnName,
 
 ### Return Value
 
-Returns **true** if a column with the specified name is found. Otherwise, this function returns **false**.
+Returns **`true`** if a column with the specified name is found. Otherwise, this function returns **`false`**.
 
 ## <a name="getstatus"></a> CDynamicAccessor::GetStatus
 
@@ -373,7 +374,7 @@ bool GetStatus(const WCHAR* pColumnName,
 
 ### Return Value
 
-Returns **true** if the specified column is found. Otherwise, this function returns **false**.
+Returns **`true`** if the specified column is found. Otherwise, this function returns **`false`**.
 
 ## <a name="getvalue"></a> CDynamicAccessor::GetValue
 
@@ -414,9 +415,9 @@ bool GetValue(const WCHAR* pColumnName, ctype* pData) const throw();
 
 ### Return Value
 
-If you want to pass string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return `void*`, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.
+If you want to pass string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return **`void*`**, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.
 
-For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **true** on success or **false** on failure.
+For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **`true`** on success or **`false`** on failure.
 
 ### Remarks
 
@@ -502,7 +503,7 @@ bool SetLength(const WCHAR* pColumnName,
 
 ### Return Value
 
-Returns **true** if the specified column length is set successfully. Otherwise, this function returns **false**.
+Returns **`true`** if the specified column length is set successfully. Otherwise, this function returns **`false`**.
 
 ## <a name="setstatus"></a> CDynamicAccessor::SetStatus
 
@@ -534,7 +535,7 @@ bool SetStatus(const WCHAR* pColumnName,
 
 ### Return Value
 
-Returns **true** if the specified column status is set successfully. Otherwise, this function returns **false**.
+Returns **`true`** if the specified column status is set successfully. Otherwise, this function returns **`false`**.
 
 ## <a name="setvalue"></a> CDynamicAccessor::SetValue
 
@@ -575,9 +576,9 @@ bool SetValue(
 
 ### Return Value
 
-If you want to set string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return `void*`, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.
+If you want to set string data, use the nontemplated versions of `GetValue`. The nontemplated versions of this method return **`void*`**, which points to the part of the buffer that contains the specified column data. Returns NULL if the column is not found.
 
-For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **true** on success or **false** on failure.
+For all other data types, it is simpler to use the templated versions of `GetValue`. The templated versions return **`true`** on success or **`false`** on failure.
 
 ## See also
 

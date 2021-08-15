@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: displaybind"
 title: "displaybind (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.displaybind"]
@@ -25,9 +26,7 @@ See the example for [bindable](bindable.md) for an example of how to use **displ
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface method|
 |**Repeatable**|No|

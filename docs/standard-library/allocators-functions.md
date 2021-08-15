@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;allocators&gt; macros"
 title: "&lt;allocators&gt; macros"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/std::ALLOCATOR_DECL", "allocators/std::CACHE_CHUNKLIST", "allocators/std::CACHE_FREELIST", "allocators/std::CACHE_SUBALLOC", "allocators/std::SYNC_DEFAULT"]
@@ -7,10 +8,21 @@ helpviewer_keywords: ["std::ALLOCATOR_DECL [C++]", "std::CACHE_CHUNKLIST [C++]",
 ---
 # &lt;allocators&gt; macros
 
-||||
-|-|-|-|
-|[ALLOCATOR_DECL](#allocator_decl)|[CACHE_CHUNKLIST](#cache_chunklist)|[CACHE_FREELIST](#cache_freelist)|
-|[CACHE_SUBALLOC](#cache_suballoc)|[SYNC_DEFAULT](#sync_default)|
+:::row:::
+   :::column span="":::
+      [`ALLOCATOR_DECL`](#allocator_decl)\
+      [`CACHE_CHUNKLIST`](#cache_chunklist)
+   :::column-end:::
+   :::column span="":::
+      [`CACHE_FREELIST`](#cache_freelist)
+   :::column-end:::
+   :::column span="":::
+      [`CACHE_SUBALLOC`](#cache_suballoc)
+   :::column-end:::
+   :::column span="":::
+      [`SYNC_DEFAULT`](#sync_default)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="allocator_decl"></a> ALLOCATOR_DECL
 
@@ -96,4 +108,4 @@ If a compiler supports compiling both single-threaded and multi-threaded applica
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)
+[\<allocators>](allocators-header.md)

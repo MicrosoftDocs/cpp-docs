@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: asctime, _wasctime"
 title: "asctime, _wasctime"
 ms.date: "4/2/2020"
 api_name: ["_wasctime", "asctime", "_o__wasctime", "_o_asctime"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tasctime", "asctime", "_wasctime"]
@@ -53,7 +54,7 @@ The **asctime** function converts a time stored as a structure to a character st
 
 The converted character string is also adjusted according to the local time zone settings. For information about configuring the local time, see the [time](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md), and [localtime](localtime-localtime32-localtime64.md) functions and the [_tzset](tzset.md) function for information about defining the time zone environment and global variables.
 
-The string result produced by **asctime** contains exactly 26 characters and has the form `Wed Jan 02 02:03:55 1980\n\0`. A 24-hour clock is used. All fields have a constant width. The newline character and the null character occupy the last two positions of the string. **asctime** uses a single, statically allocated buffer to hold the return string. Each call to this function destroys the result of the previous call.
+The string result produced by **asctime** contains exactly 26 characters and has the form `Wed Jan  2 02:03:55 1980\n\0`. A 24-hour clock is used. All fields have a constant width. The newline character and the null character occupy the last two positions of the string. **asctime** uses a single, statically allocated buffer to hold the return string. Each call to this function destroys the result of the previous call.
 
 **_wasctime** is a wide-character version of **asctime**. **_wasctime** and **asctime** behave identically otherwise.
 
@@ -103,7 +104,7 @@ int main( void )
 ```
 
 ```Output
-Current date and time: Sun Feb 03 11:38:58 2002
+Current date and time: Sun Feb  3 11:38:58 2002
 ```
 
 ## See also

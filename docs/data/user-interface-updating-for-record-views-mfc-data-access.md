@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: User-Interface Updating for Record Views  (MFC Data Access)"
 title: "User-Interface Updating for Record Views  (MFC Data Access)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["user interfaces, updating", "menus, updating as context changes", "record views, user interface"]

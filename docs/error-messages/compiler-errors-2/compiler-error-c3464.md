@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3464"
 title: "Compiler Error C3464"
 ms.date: "11/04/2016"
 f1_keywords: ["C3464"]
@@ -13,7 +14,7 @@ Type forwarding does not work on nested types.
 
 For more information, see [Type Forwarding (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## Example
+## Examples
 
 The following sample creates a component.
 
@@ -25,8 +26,6 @@ public:
    ref class N {};
 };
 ```
-
-## Example
 
 The following sample generates C3464.
 

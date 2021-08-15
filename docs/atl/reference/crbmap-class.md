@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRBMap Class"
 title: "CRBMap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRBMap", "ATLCOLL/ATL::CRBMap", "ATLCOLL/ATL::CRBMap::CRBMap", "ATLCOLL/ATL::CRBMap::Lookup", "ATLCOLL/ATL::CRBMap::RemoveKey", "ATLCOLL/ATL::CRBMap::SetAt"]

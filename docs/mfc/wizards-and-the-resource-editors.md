@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Wizards and the Resource Editors"
 title: "Wizards and the Resource Editors"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application wizards [MFC], and MFC", "MFC, resource editors", "resource editors, MFC", "MFC Application Wizard", "editors [MFC], resource", "wizards [MFC]", "wizards [MFC], MFC programming", "MFC, wizards", "Class View tool, managing Windows messages"]

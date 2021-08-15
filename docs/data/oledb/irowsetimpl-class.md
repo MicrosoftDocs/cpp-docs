@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IRowsetImpl Class"
 title: "IRowsetImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IRowsetImpl", "IRowsetImpl::AddRefRows", "IRowsetImpl.AddRefRows", "ATL::IRowsetImpl::AddRefRows", "ATL.IRowsetImpl.AddRefRows", "IRowsetImpl.CreateRow", "ATL.IRowsetImpl.CreateRow", "ATL::IRowsetImpl::CreateRow", "CreateRow", "IRowsetImpl::CreateRow", "ATL.IRowsetImpl.GetData", "ATL::IRowsetImpl::GetData", "IRowsetImpl::GetData", "IRowsetImpl.GetData", "GetDBStatus", "IRowsetImpl.GetDBStatus", "IRowsetImpl::GetDBStatus", "GetNextRows", "ATL.IRowsetImpl.GetNextRows", "ATL::IRowsetImpl::GetNextRows", "IRowsetImpl::GetNextRows", "IRowsetImpl.GetNextRows", "IRowsetImpl.IRowsetImpl", "ATL::IRowsetImpl::IRowsetImpl", "ATL.IRowsetImpl.IRowsetImpl", "IRowsetImpl::IRowsetImpl", "ATL::IRowsetImpl::RefRows", "ATL.IRowsetImpl.RefRows", "IRowsetImpl.RefRows", "RefRows", "IRowsetImpl::RefRows", "ATL.IRowsetImpl.ReleaseRows", "IRowsetImpl::ReleaseRows", "ATL::IRowsetImpl::ReleaseRows", "IRowsetImpl.ReleaseRows", "ATL.IRowsetImpl.RestartPosition", "IRowsetImpl::RestartPosition", "RestartPosition", "ATL::IRowsetImpl::RestartPosition", "IRowsetImpl.RestartPosition", "IRowsetImpl.SetDBStatus", "IRowsetImpl::SetDBStatus", "SetDBStatus", "ATL.IRowsetImpl.m_bCanFetchBack", "ATL::IRowsetImpl::m_bCanFetchBack", "IRowsetImpl.m_bCanFetchBack", "IRowsetImpl::m_bCanFetchBack", "m_bCanFetchBack", "IRowsetImpl::m_bCanScrollBack", "ATL::IRowsetImpl::m_bCanScrollBack", "IRowsetImpl.m_bCanScrollBack", "ATL.IRowsetImpl.m_bCanScrollBack", "m_bCanScrollBack", "ATL.IRowsetImpl.m_bReset", "IRowsetImpl.m_bReset", "m_bReset", "IRowsetImpl::m_bReset", "ATL::IRowsetImpl::m_bReset", "IRowsetImpl::m_iRowset", "IRowsetImpl.m_iRowset", "ATL::IRowsetImpl::m_iRowset", "ATL.IRowsetImpl.m_iRowset", "m_iRowset", "IRowsetImpl::m_rgRowHandles", "IRowsetImpl.m_rgRowHandles", "m_rgRowHandles", "ATL::IRowsetImpl::m_rgRowHandles", "ATL.IRowsetImpl.m_rgRowHandles"]
@@ -44,26 +45,26 @@ Storage unit for all row handles held by the provider.
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[AddRefRows](#addrefrows)|Adds a reference count to an existing row handle.|
-|[CreateRow](#createrow)|Called by [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) to allocate a new `HROW`. Not called directly by user.|
+|[CreateRow](#createrow)|Called by [GetNextRows](#getnextrows) to allocate a new `HROW`. Not called directly by user.|
 |[GetData](#getdata)|Retrieves data from the rowset's copy of the row.|
 |[GetDBStatus](#getdbstatus)|Returns the status for the specified field.|
 |[GetNextRows](#getnextrows)|Fetches rows sequentially, remembering the previous position.|
 |[IRowsetImpl](#irowsetimpl)|The constructor. Not called directly by user.|
-|[RefRows](#refrows)|Called by [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) and [ReleaseRows](../../data/oledb/irowsetimpl-releaserows.md). Not called directly by user.|
+|[RefRows](#refrows)|Called by [AddRefRows](#addrefrows) and [ReleaseRows](#releaserows). Not called directly by user.|
 |[ReleaseRows](#releaserows)|Releases rows.|
 |[RestartPosition](#restartposition)|Repositions the next fetch position to its initial position; that is, its position when the rowset was first created.|
 |[SetDBStatus](#setdbstatus)|Sets the status flags for the specified field.|
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_bCanFetchBack](#bcanfetchback)|Indicates whether a provider supports backward fetching.|
 |[m_bCanScrollBack](#bcanscrollback)|Indicates whether a provider can have its cursor scroll backwards.|
-|[m_bReset](#breset)|Indicates whether a provider has reset its cursor position. This has special meaning when scrolling backwards or fetching backwards in [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md).|
+|[m_bReset](#breset)|Indicates whether a provider has reset its cursor position. This has special meaning when scrolling backwards or fetching backwards in [GetNextRows](#getnextrows).|
 |[m_iRowset](#irowset)|An index to the rowset, representing the cursor.|
 |[m_rgRowHandles](#rgrowhandles)|A list of row handles.|
 
@@ -90,7 +91,7 @@ See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) 
 
 ## <a name="createrow"></a> IRowsetImpl::CreateRow
 
-A helper method called by [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) to allocate a new `HROW`.
+A helper method called by [GetNextRows](#getnextrows) to allocate a new `HROW`.
 
 ### Syntax
 
@@ -113,7 +114,7 @@ An array of `HROW`s returned to the caller with the newly created row handles.
 
 ### Remarks
 
-If the row exists, this method calls [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) and returns. Otherwise, it allocates a new instance of the RowClass template variable and adds it to [m_rgRowHandles](../../data/oledb/irowsetimpl-m-rgrowhandles.md).
+If the row exists, this method calls [AddRefRows](#addrefrows) and returns. Otherwise, it allocates a new instance of the RowClass template variable and adds it to [m_rgRowHandles](#rgrowhandles).
 
 ## <a name="getdata"></a> IRowsetImpl::GetData
 
@@ -198,7 +199,7 @@ You usually do not need to call this method directly.
 
 ## <a name="refrows"></a> IRowsetImpl::RefRows
 
-Called by [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) and [ReleaseRows](../../data/oledb/irowsetimpl-releaserows.md) to either increment or release a reference count to an existing row handle.
+Called by [AddRefRows](#addrefrows) and [ReleaseRows](#releaserows) to either increment or release a reference count to an existing row handle.
 
 ### Syntax
 
@@ -297,7 +298,7 @@ unsigned m_bCanFetchBack:1;
 
 ### Remarks
 
-Linked to the `DBPROP_CANFETCHBACKWARDS` property in the `DBPROPSET_ROWSET` group. The provider must support `DBPROP_CANFETCHBACKWARDS` for `m_bCanFetchBackwards` to be **true**.
+Linked to the `DBPROP_CANFETCHBACKWARDS` property in the `DBPROPSET_ROWSET` group. The provider must support `DBPROP_CANFETCHBACKWARDS` for `m_bCanFetchBackwards` to be **`true`**.
 
 ## <a name="bcanscrollback"></a> IRowsetImpl::m_bCanScrollBack
 
@@ -311,7 +312,7 @@ unsigned  m_bCanScrollBack:1;
 
 ### Remarks
 
-Linked to the `DBPROP_CANSCROLLBACKWARDS` property in the `DBPROPSET_ROWSET` group. The provider must support `DBPROP_CANSCROLLBACKWARDS` for `m_bCanFetchBackwards` to be **true**.
+Linked to the `DBPROP_CANSCROLLBACKWARDS` property in the `DBPROPSET_ROWSET` group. The provider must support `DBPROP_CANSCROLLBACKWARDS` for `m_bCanFetchBackwards` to be **`true`**.
 
 ## <a name="breset"></a> IRowsetImpl::m_bReset
 
@@ -325,7 +326,7 @@ unsigned m_bReset:1;
 
 ### Remarks
 
-If the consumer calls [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) with a negative `lOffset` or *cRows* and `m_bReset` is true, `GetNextRows` moves to the end of the rowset. If `m_bReset` is false, the consumer receives an error code, in conformance with the OLE DB specification. The `m_bReset` flag gets set to **true** when the rowset is first created and when the consumer calls [IRowsetImpl::RestartPosition](../../data/oledb/irowsetimpl-restartposition.md). It gets set to **false** when you call `GetNextRows`.
+If the consumer calls [GetNextRows](#getnextrows) with a negative `lOffset` or *cRows* and `m_bReset` is true, `GetNextRows` moves to the end of the rowset. If `m_bReset` is false, the consumer receives an error code, in conformance with the OLE DB specification. The `m_bReset` flag gets set to **`true`** when the rowset is first created and when the consumer calls [IRowsetImpl::RestartPosition](#restartposition). It gets set to **`false`** when you call `GetNextRows`.
 
 ## <a name="irowset"></a> IRowsetImpl::m_iRowset
 

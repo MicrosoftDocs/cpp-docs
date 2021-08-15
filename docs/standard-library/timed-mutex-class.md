@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: timed_mutex Class"
 title: "timed_mutex Class"
 ms.date: "11/04/2016"
 f1_keywords: ["mutex/std::timed_mutex", "mutex/std::timed_mutex::timed_mutex", "mutex/std::timed_mutex::lock", "mutex/std::timed_mutex::try_lock", "mutex/std::timed_mutex::try_lock_for", "mutex/std::timed_mutex::try_lock_until", "mutex/std::timed_mutex::unlock"]
@@ -82,7 +83,7 @@ bool try_lock();
 
 ### Return Value
 
-**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
+**`true`** if the method successfully obtains ownership of the `mutex`; otherwise, **`false`**.
 
 ### Remarks
 
@@ -104,7 +105,7 @@ A [chrono::duration](../standard-library/duration-class.md) object that specifie
 
 ### Return Value
 
-**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
+**`true`** if the method successfully obtains ownership of the `mutex`; otherwise, **`false`**.
 
 ### Remarks
 
@@ -128,7 +129,7 @@ A point in time that specifies the threshold after which the method no longer at
 
 ### Return Value
 
-**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
+**`true`** if the method successfully obtains ownership of the `mutex`; otherwise, **`false`**.
 
 ### Remarks
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Importing and exporting inline functions"
 title: "Importing and exporting inline functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exporting functions [C++], inline functions", "inline functions [C++], importing", "DLLs [C++], importing", "importing functions [C++]", "DLLs [C++], exporting from", "importing inline functions [C++]", "inline functions [C++], exporting", "functions [C++], importing", "functions [C++], exporting"]

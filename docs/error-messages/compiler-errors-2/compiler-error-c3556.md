@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3556"
 title: "Compiler Error C3556"
 ms.date: "11/04/2016"
 f1_keywords: ["C3556"]
@@ -13,7 +14,7 @@ The compiler cannot deduce the type of the expression that is the argument to th
 
 ## Example
 
-In the following code example, the compiler cannot deduce the type of the `myFunction` argument because `myFunction` is overloaded. To fix this issue, you could use `static_cast` to create an instance of a pointer to the particular overloaded function to specify in the `decltype` expression.
+In the following code example, the compiler cannot deduce the type of the `myFunction` argument because `myFunction` is overloaded. To fix this issue, you could use **`static_cast`** to create an instance of a pointer to the particular overloaded function to specify in the **`decltype`** expression.
 
 ```cpp
 // C3556.cpp

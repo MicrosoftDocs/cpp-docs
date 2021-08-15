@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;future&gt; functions"
 title: "&lt;future&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["future/std::async", "future/std::future_category", "future/std::make_error_code", "future/std::make_error_condition", "future/std::swap"]
@@ -7,10 +8,11 @@ helpviewer_keywords: ["std::async [C++]", "std::future_category [C++]", "std::ma
 ---
 # &lt;future&gt; functions
 
-||||
-|-|-|-|
-|[async](#async)|[future_category](#future_category)|[make_error_code](#make_error_code)|
-|[make_error_condition](#make_error_condition)|[swap](#swap)|
+[async](#async)\
+[future_category](#future_category)\
+[make_error_code](#make_error_code)\
+[make_error_condition](#make_error_condition)\
+[swap](#swap)|
 
 ## <a name="async"></a> async
 
@@ -35,7 +37,7 @@ A [launch](../standard-library/future-enums.md#launch) value.
 
 Definitions of abbreviations:
 
-|||
+|Abbreviation|Description|
 |-|-|
 |*dfn*|The result of calling `decay_copy(forward<Fn>(fn))`.|
 |*dargs*|The results of the calls `decay_copy(forward<ArgsTypes>(args...))`.|

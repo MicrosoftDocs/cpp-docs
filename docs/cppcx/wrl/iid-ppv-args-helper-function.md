@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IID_PPV_ARGS_Helper Function"
 title: "IID_PPV_ARGS_Helper Function"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -32,7 +33,7 @@ A doubly-indirect pointer.
 
 ## Return Value
 
-Argument *pp* cast to a pointer-to-a-pointer to **void**.
+Argument *pp* cast to a pointer-to-a-pointer to **`void`**.
 
 ## Remarks
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Summary of Lifetime and Visibility"
 title: "Summary of Lifetime and Visibility"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["lifetime, and visibility", "visibility, identifiers"]
@@ -12,13 +13,13 @@ The following table is a summary of lifetime and visibility characteristics for 
 
 |Attributes:<br /><br /> Level|Item|Storage-Class<br /><br /> Specifier|Result:<br /><br /> Lifetime|Visibility|
 |---------------------------|----------|----------------------------------|--------------------------|----------------|
-|File scope|Variable definition|**static**|Global|Remainder of source file in which it occurs|
-||Variable declaration|**extern**|Global|Remainder of source file in which it occurs|
-||Function prototype or definition|**static**|Global|Single source file|
-||Function prototype|**extern**|Global|Remainder of source file|
-|Block scope|Variable declaration|**extern**|Global|Block|
-||Variable definition|**static**|Global|Block|
-||Variable definition|**auto** or **register**|Local|Block|
+|File scope|Variable definition|**`static`**|Global|Remainder of source file in which it occurs|
+||Variable declaration|**`extern`**|Global|Remainder of source file in which it occurs|
+||Function prototype or definition|**`static`**|Global|Single source file|
+||Function prototype|**`extern`**|Global|Remainder of source file|
+|Block scope|Variable declaration|**`extern`**|Global|Block|
+||Variable definition|**`static`**|Global|Block|
+||Variable definition|**`auto`** or **`register`**|Local|Block|
 
 ## Example
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cpp_quote"
 title: "cpp_quote (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.cpp_quote"]
@@ -34,9 +35,7 @@ See the example for [dual](dual.md) for an example use how to use **cpp_quote**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

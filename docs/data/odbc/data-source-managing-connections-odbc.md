@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Source: Managing Connections (ODBC)"
 title: "Data Source: Managing Connections (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ODBC data sources [C++], multiuser environments", "generalizing connection strings", "ODBC [C++], disconnecting from data sources", "connection strings [C++], generalizing", "database connections [C++], creating", "GetDefaultConnect method", "connections [C++], data source", "ODBC connections [C++], configuring", "disconnecting from data sources", "databases [C++], connecting to", "ODBC connections [C++], disconnecting", "data sources [C++], connecting to", "ODBC connections [C++], connecting to data source", "ODBC data sources [C++], connections", "database connections [C++], MFC ODBC classes"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _realloc_dbg"
 title: "_realloc_dbg"
 ms.date: "11/04/2016"
 api_name: ["_realloc_dbg"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using the MFC source files"
 title: "Using the MFC source files"
 ms.date: "08/19/2019"
 helpviewer_keywords: ["public members", "source files", "MFC, source files", "MFC source files", "comments, MFC", "private member access", "protected member access", "source files, MFC"]
@@ -10,7 +11,7 @@ The Microsoft Foundation Class (MFC) Library supplies full source code. Header f
 
 This article explains the conventions that MFC uses to comment the various parts of each class, what these comments mean, and what you should expect to find in each section. The Visual Studio wizards use similar conventions for the classes that they create for you, and you'll probably find these conventions useful for your own code.
 
-You might be familiar with the **public**, **protected**, and **private** C++ keywords. In the MFC header files, you'll find each class may have several of each of them. For example, public member variables and functions might be under more than one **public** keyword. It's because MFC separates member variables and functions based on their use, not by the type of access allowed. MFC uses **private** sparingly. Even items considered implementation details are often **protected**, and many times are **public**. Although access to the implementation details is discouraged, MFC leaves the decision to you.
+You might be familiar with the **`public`**, **`protected`**, and **`private`** C++ keywords. In the MFC header files, you'll find each class may have several of each of them. For example, public member variables and functions might be under more than one **`public`** keyword. It's because MFC separates member variables and functions based on their use, not by the type of access allowed. MFC uses **`private`** sparingly. Even items considered implementation details are often **`protected`**, and many times are **`public`**. Although access to the implementation details is discouraged, MFC leaves the decision to you.
 
 In both the MFC source files and the header files that the MFC Application Wizard creates, you'll find comments like these ones within class declarations (usually in this order):
 
@@ -80,7 +81,7 @@ For example, class `CStdioFile` has five constructors, one of which is shown in 
 
 ## // Attributes comment
 
-The `// Attributes` section of an MFC class declaration contains the public attributes (or properties) of the object. Typically the attributes are member variables, or Get/Set functions. The "Get" and "Set" functions may or may not be virtual. The "Get" functions are often **const**, because in most cases they don't have side effects. These members are normally public. Protected and private attributes are typically found in the implementation section.
+The `// Attributes` section of an MFC class declaration contains the public attributes (or properties) of the object. Typically the attributes are member variables, or Get/Set functions. The "Get" and "Set" functions may or may not be virtual. The "Get" functions are often **`const`**, because in most cases they don't have side effects. These members are normally public. Protected and private attributes are typically found in the implementation section.
 
 In the sample listing from class `CStdioFile`, under [An example of the comments](#an-example-of-the-comments), the list includes one member variable, *m_pStream*. Class `CDC` lists nearly 20 members under this comment.
 
@@ -89,7 +90,7 @@ In the sample listing from class `CStdioFile`, under [An example of the comments
 
 ## // Operations comment
 
-The `// Operations` section of an MFC class declaration contains member functions that you can call on the object to make it do things or take actions (perform operations). These functions are typically non-**const** because they usually have side effects. They may be virtual or nonvirtual depending on the needs of the class. Typically, these members are public.
+The `// Operations` section of an MFC class declaration contains member functions that you can call on the object to make it do things or take actions (perform operations). These functions are typically non-**`const`** because they usually have side effects. They may be virtual or nonvirtual depending on the needs of the class. Typically, these members are public.
 
 In the sample listing from class `CStdioFile`, in [An example of the comments](#an-example-of-the-comments), the list includes three member functions under this comment: `WriteString` and two overloads of `ReadString`.
 
@@ -116,7 +117,7 @@ The `// Implementation` section is the most important part of any MFC class decl
 
 This section houses all implementation details. Both member variables and member functions can appear in this section. Everything below this line could change in a future release of MFC. Unless you can't avoid it, you shouldn't rely on details below the `// Implementation` line. In addition, members declared below the implementation line are undocumented, although some implementation is discussed in technical notes. Overrides of virtual functions in the base class reside in this section, regardless of which section the base class function is defined in. When a function overrides the base class implementation, it's considered an implementation detail. Typically, these members are protected, but not always.
 
-In the `CStdioFile` listing under [An example of the comments](#an-example-of-the-comments), members declared below the `// Implementation` comment may be declared as **public**, **protected**, or **private**. Only use these members with caution, because they may change in the future. Declaring a group of members as **public** may be necessary for the class library implementation to work correctly. However, it doesn't mean that you may safely use the members so declared.
+In the `CStdioFile` listing under [An example of the comments](#an-example-of-the-comments), members declared below the `// Implementation` comment may be declared as **`public`**, **`protected`**, or **`private`**. Only use these members with caution, because they may change in the future. Declaring a group of members as **`public`** may be necessary for the class library implementation to work correctly. However, it doesn't mean that you may safely use the members so declared.
 
 > [!NOTE]
 > You may find comments of the remaining types either above or below the `// Implementation` comment. In either case, they describe the kinds of members declared below them. If they occur below the `// Implementation` comment, you should assume that the members may change in future versions of MFC.

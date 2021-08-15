@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: lock_when Enum"
 title: "lock_when Enum"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -20,7 +21,7 @@ enum lock_when {
 
 ## Remarks
 
-When passed to [lock::lock](../dotnet/lock-lock.md), `lock_later` specifies that the lock is not to be taken now.
+When passed to [lock::lock](./lock-class.md#lock), `lock_later` specifies that the lock is not to be taken now.
 
 ## Example
 

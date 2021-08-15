@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAtlArray Class"
 title: "CAtlArray Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAtlArray", "ATLCOLL/ATL::CAtlArray", "ATLCOLL/ATL::Add", "ATLCOLL/ATL::Append", "ATLCOLL/ATL::AssertValid", "ATLCOLL/ATL::Copy", "ATLCOLL/ATL::FreeExtra", "ATLCOLL/ATL::GetAt", "ATLCOLL/ATL::GetCount", "ATLCOLL/ATL::GetData", "ATLCOLL/ATL::InsertArrayAt", "ATLCOLL/ATL::InsertAt", "ATLCOLL/ATL::IsEmpty", "ATLCOLL/ATL::RemoveAll", "ATLCOLL/ATL::RemoveAt", "ATLCOLL/ATL::SetAt", "ATLCOLL/ATL::SetAtGrow", "ATLCOLL/ATL::SetCount", "ATLCOLL/ATL::INARGTYPE", "ATLCOLL/ATL::OUTARGTYPE"]
@@ -28,7 +29,7 @@ The code used to copy or move elements.
 
 ### Methods
 
-|||
+|Function|Description|
 |-|-|
 |[Add](#add)|Call this method to add an element to the array object.|
 |[Append](#append)|Call this method to add the contents of one array to the end of another.|
@@ -51,13 +52,13 @@ The code used to copy or move elements.
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator &#91;&#93;](#operator_at)|Call this operator to return a reference to an element in the array.|
 
 ### Typedefs
 
-|||
+|Typedef|Description|
 |-|-|
 |[INARGTYPE](#inargtype)|The data type to use for adding elements to the array.|
 |[OUTARGTYPE](#outargtype)|The data type to use for retrieving elements from the array.|

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Sequence Points"
 title: "C Sequence Points"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sequence points"]
@@ -22,13 +23,13 @@ Between consecutive "sequence points" an object's value can be modified only onc
 
 - The expression in an expression statement. Expression statements consist of an optional expression followed by a semicolon (**;**). The expression is evaluated for its side effects and there is a sequence point following this evaluation.
 
-- The controlling expression in a selection (**if** or `switch`) statement. The expression is completely evaluated and all side effects complete before the code dependent on the selection is executed.
+- The controlling expression in a selection (**`if`** or **`switch`**) statement. The expression is completely evaluated and all side effects complete before the code dependent on the selection is executed.
 
-- The controlling expression of a `while` or **do** statement. The expression is completely evaluated and all side effects complete before any statements in the next iteration of the `while` or **do** loop are executed.
+- The controlling expression of a **`while`** or **`do`** statement. The expression is completely evaluated and all side effects complete before any statements in the next iteration of the **`while`** or **`do`** loop are executed.
 
-- Each of the three expressions of a **for** statement. The expressions are completely evaluated and all side effects complete before any statements in the next iteration of the **for** loop are executed.
+- Each of the three expressions of a **`for`** statement. The expressions are completely evaluated and all side effects complete before any statements in the next iteration of the **`for`** loop are executed.
 
-- The expression in a `return` statement. The expression is completely evaluated and all side effects complete before control returns to the calling function.
+- The expression in a **`return`** statement. The expression is completely evaluated and all side effects complete before control returns to the calling function.
 
 ## See also
 

@@ -1,11 +1,12 @@
 ---
+description: "Learn more about: shared_ptr class"
 title: "shared_ptr class"
 ms.date: "07/29/2019"
 f1_keywords: ["memory/std::shared_ptr", "memory/std::shared_ptr::element_type", "memory/std::shared_ptr::get", "memory/std::shared_ptr::owner_before", "memory/std::shared_ptr::reset", "memory/std::shared_ptr::swap", "memory/std::shared_ptr::unique", "memory/std::shared_ptr::use_count", "memory/std::shared_ptr::operator boolean-type", "memory/std::shared_ptr::operator*", "memory/std::shared_ptr::operator=", "memory/std::shared_ptr::operator->"]
 helpviewer_keywords: ["std::shared_ptr [C++]", "std::shared_ptr [C++], element_type", "std::shared_ptr [C++], get", "std::shared_ptr [C++], owner_before", "std::shared_ptr [C++], reset", "std::shared_ptr [C++], swap", "std::shared_ptr [C++], unique", "std::shared_ptr [C++], use_count", "std::shared_ptr [C++], element_type", "std::shared_ptr [C++], get", "std::shared_ptr [C++], owner_before", "std::shared_ptr [C++], reset", "std::shared_ptr [C++], swap", "std::shared_ptr [C++], unique", "std::shared_ptr [C++], use_count"]
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
 ---
-# shared_ptr class
+# `shared_ptr` class
 
 Wraps a reference-counted smart pointer around a dynamically allocated object.
 
@@ -48,9 +49,9 @@ A `shared_ptr` object owns a resource:
 
 - if it was constructed from a `shared_ptr` object that owns that resource,
 
-- if it was constructed from a [weak_ptr](weak-ptr-class.md) object that points to that resource, or
+- if it was constructed from a [`weak_ptr`](weak-ptr-class.md) object that points to that resource, or
 
-- if ownership of that resource was assigned to it, either with [shared_ptr::operator=](#op_eq) or by calling the member function [shared_ptr::reset](#reset).
+- if ownership of that resource was assigned to it, either with [`shared_ptr::operator=`](#op_eq) or by calling the member function [`shared_ptr::reset`](#reset).
 
 The `shared_ptr` objects that own a resource share a control block. The control block holds:
 
@@ -94,28 +95,28 @@ Multiple threads can read and write different `shared_ptr` objects at the same t
 
 ## Members
 
-|||
+|Name|Description|
 |-|-|
 | **Constructors** | |
-|[shared_ptr](#shared_ptr)|Constructs a `shared_ptr`.|
-|[~shared_ptr](#dtorshared_ptr)|Destroys a `shared_ptr`.|
+|[`shared_ptr`](#shared_ptr)|Constructs a `shared_ptr`.|
+|[`~shared_ptr`](#dtorshared_ptr)|Destroys a `shared_ptr`.|
 | **Typedefs** | |
-|[element_type](#element_type)|The type of an element.|
-|[weak_type](#weak_type)|The type of a weak pointer to an element.|
+|[`element_type`](#element_type)|The type of an element.|
+|[`weak_type`](#weak_type)|The type of a weak pointer to an element.|
 | **Member functions** | |
-|[get](#get)|Gets address of owned resource.|
-|[owner_before](#owner_before)|Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.|
-|[reset](#reset)|Replace owned resource.|
-|[swap](#swap)|Swaps two `shared_ptr` objects.|
-|[unique](#unique)|Tests if owned resource is unique.|
-|[use_count](#use_count)|Counts numbers of resource owners.|
+|[`get`](#get)|Gets address of owned resource.|
+|[`owner_before`](#owner_before)|Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.|
+|[`reset`](#reset)|Replace owned resource.|
+|[`swap`](#swap)|Swaps two `shared_ptr` objects.|
+|[`unique`](#unique)|Tests if owned resource is unique.|
+|[`use_count`](#use_count)|Counts numbers of resource owners.|
 | **Operators** | |
-|[operator bool](#op_bool)|Tests if an owned resource exists.|
-|[operator*](#op_star)|Gets the designated value.|
-|[operator=](#op_eq)|Replaces the owned resource.|
-|[operator-&gt;](#op_arrow)|Gets a pointer to the designated value.|
+|[`operator bool`](#op_bool)|Tests if an owned resource exists.|
+|[`operator*`](#op_star)|Gets the designated value.|
+|[`operator=`](#op_eq)|Replaces the owned resource.|
+|[`operator->`](#op_arrow)|Gets a pointer to the designated value.|
 
-## <a name="element_type"></a> element_type
+## <a name="element_type"></a> `element_type`
 
 The type of an element.
 
@@ -151,7 +152,7 @@ int main()
 *sp0 == 5
 ```
 
-## <a name="get"></a> get
+## <a name="get"></a> `get`
 
 Gets address of owned resource.
 
@@ -189,7 +190,7 @@ sp0.get() == 0 == true
 *sp1.get() == 5
 ```
 
-## <a name="op_bool"></a> operator bool
+## <a name="op_bool"></a> `operator bool`
 
 Tests if an owned resource exists.
 
@@ -199,7 +200,7 @@ explicit operator bool() const noexcept;
 
 ### Remarks
 
-The operator returns a value of **true** when `get() != nullptr`, otherwise **false**.
+The operator returns a value of **`true`** when `get() != nullptr`, otherwise **`false`**.
 
 ### Example
 
@@ -228,7 +229,7 @@ int main()
 (bool)sp1 == true
 ```
 
-## <a name="op_star"></a> operator*
+## <a name="op_star"></a> `operator*`
 
 Gets the designated value.
 
@@ -262,7 +263,7 @@ int main()
 *sp0 == 5
 ```
 
-## <a name="op_eq"></a> operator=
+## <a name="op_eq"></a> `operator=`
 
 Replaces the owned resource.
 
@@ -286,24 +287,24 @@ shared_ptr& operator=(unique_ptr<Other, Deleter>&& up);
 
 ### Parameters
 
-*sp*\
+*`sp`*\
 The shared pointer to copy or move from.
 
-*ap*\
+*`ap`*\
 The auto pointer to move. The `auto_ptr` overload is deprecated in C++11 and removed in C++17.
 
-*up*\
-The unique pointer to the object to adopt ownership of. *up* owns no object after the call.
+*`up`*\
+The unique pointer to the object to adopt ownership of. *`up`* owns no object after the call.
 
-*Other*\
-The type of the object pointed to by *sp*, *ap*, or *up*.
+*`Other`*\
+The type of the object pointed to by *`sp`*, *`ap`*, or *`up`*.
 
-*Deleter*\
+*`Deleter`*\
 The type of the deleter of the owned object, stored for later deletion of the object.
 
 ### Remarks
 
-The operators all decrement the reference count for the resource currently owned by `*this` and assign ownership of the resource named by the operand sequence to `*this`. If the reference count falls to zero, the resource is released. If an operator fails, it leaves `*this` unchanged.
+The operators all decrement the reference count for the resource currently owned by **`*this`** and assign ownership of the resource named by the operand sequence to **`*this`**. If the reference count falls to zero, the resource is released. If an operator fails, it leaves **`*this`** unchanged.
 
 ### Example
 
@@ -334,7 +335,7 @@ int main()
 *sp0 == 10
 ```
 
-## <a name="op_arrow"></a> operator->
+## <a name="op_arrow"></a> `operator->`
 
 Gets a pointer to the designated value.
 
@@ -371,7 +372,7 @@ sp0->first == 1
 sp0->second == 2
 ```
 
-## <a name="owner_before"></a> owner_before
+## <a name="owner_before"></a> `owner_before`
 
 Returns true if this `shared_ptr` is ordered before (or less than) the provided pointer.
 
@@ -385,14 +386,14 @@ bool owner_before(const weak_ptr<Other>& ptr) const noexcept;
 
 ### Parameters
 
-*ptr*\
+*`ptr`*\
 An lvalue reference to either a `shared_ptr` or a `weak_ptr`.
 
 ### Remarks
 
-The template member function returns true if `*this` is ordered before `ptr`.
+The template member function returns true if **`*this`** is ordered before `ptr`.
 
-## <a name="reset"></a> reset
+## <a name="reset"></a> `reset`
 
 Replace owned resource.
 
@@ -416,27 +417,27 @@ void reset(
 
 ### Parameters
 
-*Other*\
+*`Other`*\
 The type controlled by the argument pointer.
 
-*Deleter*\
+*`Deleter`*\
 The type of the deleter.
 
-*ptr*\
+*`ptr`*\
 The pointer to copy.
 
-*deleter*\
+*`deleter`*\
 The deleter to copy.
 
-*Allocator*\
+*`Allocator`*\
 The type of the allocator.
 
-*alloc*\
+*`alloc`*\
 The allocator to copy.
 
 ### Remarks
 
-The operators all decrement the reference count for the resource currently owned by `*this` and assign ownership of the resource named by the operand sequence to `*this`. If the reference count falls to zero, the resource is released. If an operator fails, it leaves `*this` unchanged.
+The operators all decrement the reference count for the resource currently owned by **`*this`** and assign ownership of the resource named by the operand sequence to **`*this`**. If the reference count falls to zero, the resource is released. If an operator fails, it leaves **`*this`** unchanged.
 
 ### Example
 
@@ -484,7 +485,7 @@ int main()
 *sp == 15
 ```
 
-## <a name="shared_ptr"></a> shared_ptr
+## <a name="shared_ptr"></a> `shared_ptr`
 
 Constructs a `shared_ptr`.
 
@@ -559,36 +560,36 @@ shared_ptr(
 
 ### Parameters
 
-*Other*\
+*`Other`*\
 The type controlled by the argument pointer.
 
-*ptr*\
+*`ptr`*\
 The pointer to copy.
 
-*Deleter*\
+*`Deleter`*\
 The type of the deleter.
 
-*Allocator*\
+*`Allocator`*\
 The type of the allocator.
 
-*deleter*\
+*`deleter`*\
 The deleter.
 
-*alloc*\
+*`alloc`*\
 The allocator.
 
-*sp*\
+*`sp`*\
 The smart pointer to copy.
 
-*wp*\
+*`wp`*\
 The weak pointer.
 
-*ap*\
+*`ap`*\
 The auto pointer to copy.
 
 ### Remarks
 
-The constructors each construct an object that owns the resource named by the operand sequence. The constructor `shared_ptr(const weak_ptr<Other>& wp)` throws an exception object of type [bad_weak_ptr](bad-weak-ptr-class.md) if `wp.expired()`.
+The constructors each construct an object that owns the resource named by the operand sequence. The constructor `shared_ptr(const weak_ptr<Other>& wp)` throws an exception object of type [`bad_weak_ptr`](bad-weak-ptr-class.md) if `wp.expired()`.
 
 ### Example
 
@@ -642,7 +643,7 @@ int main()
 *sp5 == 15
 ```
 
-## <a name="dtorshared_ptr"></a> ~shared_ptr
+## <a name="dtorshared_ptr"></a> `~shared_ptr`
 
 Destroys a `shared_ptr`.
 
@@ -652,7 +653,7 @@ Destroys a `shared_ptr`.
 
 ### Remarks
 
-The destructor decrements the reference count for the resource currently owned by `*this`. If the reference count falls to zero, the resource is released.
+The destructor decrements the reference count for the resource currently owned by **`*this`**. If the reference count falls to zero, the resource is released.
 
 ### Example
 
@@ -689,7 +690,7 @@ use count == 2
 use count == 1
 ```
 
-## <a name="swap"></a> swap
+## <a name="swap"></a> `swap`
 
 Swaps two `shared_ptr` objects.
 
@@ -699,12 +700,12 @@ void swap(shared_ptr& sp) noexcept;
 
 ### Parameters
 
-*sp*\
+*`sp`*\
 The shared pointer to swap with.
 
 ### Remarks
 
-The member function leaves the resource originally owned by `*this` subsequently owned by *sp*, and the resource originally owned by *sp* subsequently owned by `*this`. The function does not change the reference counts for the two resources and it does not throw any exceptions.
+The member function leaves the resource originally owned by **`*this`** subsequently owned by *`sp`*, and the resource originally owned by *`sp`* subsequently owned by **`*this`**. The function does not change the reference counts for the two resources and it does not throw any exceptions.
 
 ### Example
 
@@ -750,7 +751,7 @@ int main()
 *wp1 == 5
 ```
 
-## <a name="unique"></a> unique
+## <a name="unique"></a> `unique`
 
 Tests if owned resource is unique. This function was deprecated in C++17, and removed in C++20.
 
@@ -760,7 +761,7 @@ bool unique() const noexcept;
 
 ### Remarks
 
-The member function returns **true** if no other `shared_ptr` object owns the resource that is owned by `*this`, otherwise **false**.
+The member function returns **`true`** if no other `shared_ptr` object owns the resource that is owned by **`*this`**, otherwise **`false`**.
 
 ### Example
 
@@ -789,7 +790,7 @@ sp1.unique() == true
 sp1.unique() == false
 ```
 
-## <a name="use_count"></a> use_count
+## <a name="use_count"></a> `use_count`
 
 Counts numbers of resource owners.
 
@@ -799,7 +800,7 @@ long use_count() const noexcept;
 
 ### Remarks
 
-The member function returns the number of `shared_ptr` objects that own the resource that is owned by `*this`.
+The member function returns the number of `shared_ptr` objects that own the resource that is owned by **`*this`**.
 
 ### Example
 
@@ -828,7 +829,7 @@ sp1.use_count() == 1
 sp1.use_count() == 2
 ```
 
-## <a name="weak_type"></a> weak_type
+## <a name="weak_type"></a> `weak_type`
 
 The type of a weak pointer to an element.
 
@@ -843,6 +844,6 @@ The `weak_type` definition was added in C++17.
 ## See also
 
 [Header Files Reference](cpp-standard-library-header-files.md)\
-[\<memory>](memory.md)\
-[unique_ptr](unique-ptr-class.md)\
-[weak_ptr class](weak-ptr-class.md)
+[`<memory>`](memory.md)\
+[`unique_ptr`](unique-ptr-class.md)\
+[`weak_ptr` class](weak-ptr-class.md)

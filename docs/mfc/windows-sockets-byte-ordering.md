@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Sockets: Byte Ordering"
 title: "Windows Sockets: Byte Ordering"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["byte order issues in sockets programming", "sockets [MFC], byte order issues", "Windows Sockets [MFC], byte order issues"]
@@ -66,7 +67,7 @@ In MFC terms, this would be expressed as follows:
 
 [!code-cpp[NVC_MFCSimpleSocket#6](../mfc/codesnippet/cpp/windows-sockets-byte-ordering_2.cpp)]
 
-In C++, a **struct** is essentially the same thing as a class. The `Message` structure can have member functions, such as the `Serialize` member function declared above. The `Serialize` member function might look like this:
+In C++, a **`struct`** is essentially the same thing as a class. The `Message` structure can have member functions, such as the `Serialize` member function declared above. The `Serialize` member function might look like this:
 
 [!code-cpp[NVC_MFCSimpleSocket#7](../mfc/codesnippet/cpp/windows-sockets-byte-ordering_3.cpp)]
 

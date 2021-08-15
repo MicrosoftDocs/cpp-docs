@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unicode Programming Summary"
 title: "Unicode Programming Summary"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Unicode [C++], programming with", "Unicode [C++], MFC and C run-time functions"]
@@ -14,7 +15,7 @@ To take advantage of the MFC and C run-time support for Unicode, you need to:
 
 - Specify entry point.
 
-   On the **Advanced** page of the **Linker** folder in the project's [Property Pages](../ide/property-pages-visual-cpp.md) dialog box, set the **Entry Point** symbol to `wWinMainCRTStartup`.
+   On the **Advanced** page of the **Linker** folder in the project's [Property Pages](../build/reference/property-pages-visual-cpp.md) dialog box, set the **Entry Point** symbol to `wWinMainCRTStartup`.
 
 - Use portable run-time functions and types.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Processing Notification Messages in a Rebar Control"
 title: "Processing Notification Messages in a Rebar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["RBN_ notification messages, description of", "CReBarCtrl class [MFC], notification messages sent by", "RBN_ notification messages [MFC]", "notifications [MFC], CReBarCtrl"]
@@ -32,5 +33,5 @@ For more information on these notifications, see [Rebar Control Reference](/wind
 
 ## See also
 
-[Using CReBarCtrl](../mfc/using-crebarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CReBarCtrl](using-crebarctrl.md)<br/>
+[Controls](controls-mfc.md)

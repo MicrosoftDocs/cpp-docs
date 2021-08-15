@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Type Constants"
 title: "Data Type Constants"
 ms.date: "06/25/2018"
 f1_keywords: ["FLT_MIN", "SHRT_MAX", "CHAR_MIN", "MB_LEN_MAX", "DBL_EPSILON", "SHRT_MIN", "_FLT_RADIX", "FLT_DIG", "FLT_MAX_10_EXP", "FLT_MANT_DIG", "DBL_MAX_EXP", "SCHAR_MIN", "SCHAR_MAX", "DBL_MIN", "FLT_MIN_10_EXP", "_DBL_ROUNDS", "USHRT_MAX", "FLT_MAX_EXP", "LONG_MAX", "DBL_MAX", "DBL_DIG", "FLT_MIN_EXP", "INT_MIN", "DBL_MIN_10_EXP", "CHAR_BIT", "INT_MAX", "ULONG_MAX", "DBL_MIN_EXP", "LONG_MIN", "_FLT_ROUNDS", "DBL_MANT_DIG", "_DBL_RADIX", "CHAR_MAX", "FLT_MAX", "DBL_MAX_10_EXP", "UCHAR_MAX", "FLT_EPSILON", "UINT_MAX", "LLONG_MIN", "LLONG_MAX", "ULLONG_MAX", "_I8_MIN", "_I8_MAX", "_UI8_MAX", "_I16_MIN", "_I16_MAX", "_UI16_MAX", "_I32_MIN", "_I32_MAX", "_UI32_MAX", "_I64_MIN", "_I64_MAX", "_UI64_MAX", "_I128_MIN", "_I128_MAX", "_UI128_MAX", "SIZE_MAX", "RSIZE_MAX", "LDBL_DIG", "LDBL_EPSILON", "LDBL_HAS_SUBNORM", "LDBL_MANT_DIG", "LDBL_MAX", "LDBL_MAX_10_EXP", "LDBL_MAX_EXP", "LDBL_MIN", "LDBL_MIN_10_EXP", "LDBL_MIN_EXP", "_LDBL_RADIX", "LDBL_TRUE_MIN", "DECIMAL_DIG"]
@@ -18,29 +19,29 @@ These constants give the ranges for the integral data types. To use these consta
 ```
 
 > [!NOTE]
-> The [/J](../build/reference/j-default-char-type-is-unsigned.md) compiler option changes the default **char** type to **unsigned**.
+> The [`/J`](../build/reference/j-default-char-type-is-unsigned.md) compiler option changes the default **`char`** type from **`signed char`** to **`unsigned char`**.
 
 |Constant|Value|Description|
 |--------------|-----------|-------------|
-|**CHAR_BIT**|8|Number of bits in a **char**|
-|**SCHAR_MIN**|(-128)|Minimum signed **char** value|
-|**SCHAR_MAX**|127|Maximum signed **char** value|
-|**UCHAR_MAX**|255 (0xff)|Maximum **unsigned** **char** value|
-|**CHAR_MIN**|(-128) (0 if **/J** option used)|Minimum **char** value|
-|**CHAR_MAX**|127 (255 if **/J** option used)|Maximum **char** value|
-|**MB_LEN_MAX**|5|Maximum number of bytes in multibyte **char**|
-|**SHRT_MIN**|-32768|Minimum signed **short** value|
-|**SHRT_MAX**|32767|Maximum signed **short** value|
-|**USHRT_MAX**|65535 (0xffff)|Maximum **unsigned** **short** value|
-|**INT_MIN**|(-2147483647 - 1)|Minimum signed **int** value|
-|**INT_MAX**|2147483647|Maximum signed **int** value|
-|**UINT_MAX**|4294967295 (0xffffffff)|Maximum **unsigned** **int** value|
-|**LONG_MIN**|(-2147483647L - 1)|Minimum signed **long** value|
-|**LONG_MAX**|2147483647L|Maximum signed **long** value|
-|**ULONG_MAX**|4294967295UL (0xfffffffful)|Maximum **unsigned** **long** value|
-|**LLONG_MIN**|(-9223372036854775807LL - 1)|Minimum signed **long** **long** or **__int64** value|
-|**LLONG_MAX**|9223372036854775807LL|Maximum signed **long** **long** or **__int64** value|
-|**ULLONG_MAX**|0xffffffffffffffffull|Maximum **unsigned** **long** **long** value|
+|**CHAR_BIT**|8|Number of bits in a **`char`**|
+|**SCHAR_MIN**|(-128)|Minimum **`signed char`** value|
+|**SCHAR_MAX**|127|Maximum **`signed char`** value|
+|**UCHAR_MAX**|255 (0xff)|Maximum **`unsigned char`** value|
+|**CHAR_MIN**|(-128) (0 if **`/J`** option used)|Minimum **`char`** value|
+|**CHAR_MAX**|127 (255 if **`/J`** option used)|Maximum **`char`** value|
+|**MB_LEN_MAX**|5|Maximum number of bytes in multibyte **`char`**|
+|**SHRT_MIN**|-32768|Minimum **`signed short`** value|
+|**SHRT_MAX**|32767|Maximum **`signed short`** value|
+|**USHRT_MAX**|65535 (0xffff)|Maximum **`unsigned short`** value|
+|**INT_MIN**|(-2147483647 - 1)|Minimum **`signed int`** value|
+|**INT_MAX**|2147483647|Maximum **`signed int`** value|
+|**UINT_MAX**|4294967295 (0xffffffff)|Maximum **`unsigned int`** value|
+|**LONG_MIN**|(-2147483647L - 1)|Minimum **`signed long`** value|
+|**LONG_MAX**|2147483647L|Maximum **`signed long`** value|
+|**ULONG_MAX**|4294967295UL (0xfffffffful)|Maximum **`unsigned long`** value|
+|**LLONG_MIN**|(-9223372036854775807LL - 1)|Minimum **`signed long long`** or **`__int64`** value|
+|**LLONG_MAX**|9223372036854775807LL|Maximum **`signed long long`** or **`__int64`** value|
+|**ULLONG_MAX**|0xffffffffffffffffull|Maximum **`unsigned long long`** value|
 |**_I8_MIN**|(-127i8 - 1)|Minimum signed 8-bit value|
 |**_I8_MAX**|127i8|Maximum signed 8-bit value|
 |**_UI8_MAX**|0xffui8|Maximum unsigned 8-bit value|
@@ -61,7 +62,7 @@ These constants give the ranges for the integral data types. To use these consta
 
 ## Floating-point type constants
 
-The following constants give the range and other characteristics of the **long** **double**, **double** and **float** data types. To use these constants, include the float.h header in your source file:
+The following constants give the range and other characteristics of the **`long double`**, **`double`** and **`float`** data types. To use these constants, include the float.h header in your source file:
 
 ```C
 #include <float.h>

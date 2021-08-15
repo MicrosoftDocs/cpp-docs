@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ComPtrRef Class"
 title: "ComPtrRef Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"
@@ -47,7 +48,7 @@ Name                                                                     | Descr
 ------------------------------------------------------------------------ | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 [ComPtrRef::operator InterfaceType**](#operator-interfacetype-star-star) | Deletes the current `ComPtrRef` object and returns a pointer-to-a-pointer to the interface that was represented by the `ComPtrRef` object.
 [ComPtrRef::operator T*](#operator-t-star)                               | Returns the value of the [ptr_](comptrrefbase-class.md#ptr) data member of the current ComPtrRef object.
-[ComPtrRef::operator void**](#operator-void-star-star)                   | Deletes the current `ComPtrRef` object, casts the pointer to the interface that was represented by the `ComPtrRef` object as a pointer-to-pointer-to `void`, and then returns the cast pointer.
+[ComPtrRef::operator void**](#operator-void-star-star)                   | Deletes the current `ComPtrRef` object, casts the pointer to the interface that was represented by the `ComPtrRef` object as a pointer-to-pointer-to **`void`**, and then returns the cast pointer.
 [ComPtrRef::operator*](#operator-star)                                   | Retrieves the pointer to the interface represented by the current `ComPtrRef` object.
 [ComPtrRef::operator==](#operator-equality)                              | Indicates whether two `ComPtrRef` objects are equal.
 [ComPtrRef::operator!=](#operator-inequality)                            | Indicates whether two `ComPtrRef` objects are not equal.
@@ -136,15 +137,15 @@ bool operator==(
 A reference to a `ComPtrRef` object.
 
 *b*<br/>
-A reference to another `ComPtrRef` object, or a pointer to an anonymous type (`void*`).
+A reference to another `ComPtrRef` object, or a pointer to an anonymous type (**`void*`**).
 
 ### Return Value
 
-The first operator yields **true** if object *a* is equal to object *b*; otherwise, **false**.
+The first operator yields **`true`** if object *a* is equal to object *b*; otherwise, **`false`**.
 
-The second and third operators yield **true** if object *a* is equal to **nullptr**; otherwise, **false**.
+The second and third operators yield **`true`** if object *a* is equal to **`nullptr`**; otherwise, **`false`**.
 
-The fourth and fifth operators yield **true** if object *a* is equal to object *b*; otherwise, **false**.
+The fourth and fifth operators yield **`true`** if object *a* is equal to object *b*; otherwise, **`false`**.
 
 ### Remarks
 
@@ -187,21 +188,21 @@ bool operator!=(
 A reference to a `ComPtrRef` object.
 
 *b*<br/>
-A reference to another `ComPtrRef` object, or a pointer to an anonymous object (`void*`).
+A reference to another `ComPtrRef` object, or a pointer to an anonymous object (**`void*`**).
 
 ### Return Value
 
-The first operator yields **true** if object *a* is not equal to object *b*; otherwise, **false**.
+The first operator yields **`true`** if object *a* is not equal to object *b*; otherwise, **`false`**.
 
-The second and third operators yield **true** if object *a* is not equal to **nullptr**; otherwise, **false**.
+The second and third operators yield **`true`** if object *a* is not equal to **`nullptr`**; otherwise, **`false`**.
 
-The fourth and fifth operators yield **true** if object *a* is not equal to object *b*; otherwise, **false**.
+The fourth and fifth operators yield **`true`** if object *a* is not equal to object *b*; otherwise, **`false`**.
 
 ### Remarks
 
 Indicates whether two `ComPtrRef` objects are not equal.
 
-## <a name="operator-interfacetype-star-star"></a> ComPtrRef::operator InterfaceType**
+## <a name="operator-interfacetype-star-star"></a> ComPtrRef::operator InterfaceType\*\*
 
 Supports the WRL infrastructure and is not intended to be used directly from your code.
 
@@ -251,7 +252,7 @@ operator void**() const;
 
 ### Remarks
 
-Deletes the current `ComPtrRef` object, casts the pointer to the interface that was represented by the `ComPtrRef` object as a pointer-to-pointer-to `void`, and then returns the cast pointer.
+Deletes the current `ComPtrRef` object, casts the pointer to the interface that was represented by the `ComPtrRef` object as a pointer-to-pointer-to **`void`**, and then returns the cast pointer.
 
 ## <a name="releaseandgetaddressof"></a> ComPtrRef::ReleaseAndGetAddressOf
 

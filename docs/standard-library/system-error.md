@@ -1,7 +1,8 @@
 ---
+description: "Learn more about: &lt;system_error&gt;"
 title: "&lt;system_error&gt;"
 ms.date: "03/15/2019"
-f1_keywords: ["<system_error>", "system_error"]
+f1_keywords: ["<system_error>"]
 helpviewer_keywords: ["system_error header"]
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
 ---
@@ -19,7 +20,7 @@ Include the header \<system_error> to define the exception class `system_error` 
 
 ### Objects
 
-|||
+|Name|Description|
 |-|-|
 |[generic_category](../standard-library/system-error-functions.md#generic_category)|Represents the category for generic errors.|
 |[is_error_code_enum_v](../standard-library/system-error-functions.md#is_error_code_enum_v)||
@@ -28,14 +29,14 @@ Include the header \<system_error> to define the exception class `system_error` 
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[make_error_code](../standard-library/system-error-functions.md#make_error_code)|Creates an `error_code` object.|
 |[make_error_condition](../standard-library/system-error-functions.md#make_error_condition)|Creates an `error_condition` object.|
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator==](../standard-library/system-error-operators.md#op_eq_eq)|Tests if the object on the left side of the operator is equal to the object on the right side.|
 |[operator!=](../standard-library/system-error-operators.md#op_neq)|Tests if the object on the left side of the operator is not equal to the object on the right side.|
@@ -44,13 +45,13 @@ Include the header \<system_error> to define the exception class `system_error` 
 
 ### Enums
 
-|||
+|Name|Description|
 |-|-|
 |[errc](../standard-library/system-error-enums.md#errc)|Provides symbolic names for all the error-code macros defined by POSIX in `<errno.h>`.|
 
 ### Classes and Structs
 
-|||
+|Name|Description|
 |-|-|
 |[error_category](../standard-library/error-category-class.md)|Represents the abstract, common base for objects that describes a category of error codes.|
 |[error_code](../standard-library/error-code-class.md)|Represents low-level system errors that are implementation-specific.|

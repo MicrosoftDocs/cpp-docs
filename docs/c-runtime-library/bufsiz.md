@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BUFSIZ"
 title: "BUFSIZ"
 ms.date: "11/04/2016"
 f1_keywords: ["BUFSIZ"]

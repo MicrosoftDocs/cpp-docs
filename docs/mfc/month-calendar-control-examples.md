@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Month Calendar Control Examples"
 title: "Month Calendar Control Examples"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["month calendar controls [MFC], examples", "CMonthCalCtrl class [MFC], examples"]
@@ -10,5 +11,5 @@ The [CMNCTRL1](../overview/visual-cpp-samples.md) sample application demonstrate
 
 ## See also
 
-[Using CMonthCalCtrl](../mfc/using-cmonthcalctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CMonthCalCtrl](using-cmonthcalctrl.md)<br/>
+[Controls](controls-mfc.md)

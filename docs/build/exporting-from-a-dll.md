@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exporting from a DLL"
 title: "Exporting from a DLL"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["exporting DLLs [C++], about exporting from DLLs", "exporting functions [C++], DLLs (exporting from)", "exporting DLLs [C++]", "DLLs [C++], exporting from", "DLL exports [C++]", "functions [C++], exporting", "exports table [C++]"]
@@ -12,7 +13,7 @@ You can export functions from a DLL using two methods:
 
 - Create a module definition (.def) file and use the .def file when building the DLL. Use this approach if you want to [export functions from your DLL by ordinal rather than by name](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
 
-- Use the keyword **__declspec(dllexport)** in the function's definition.
+- Use the keyword **`__declspec(dllexport)`** in the function's definition.
 
 When exporting functions with either method, make sure to use the [__stdcall](../cpp/stdcall.md) calling convention.
 

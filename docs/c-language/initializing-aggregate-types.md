@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Initializing Aggregate Types"
 title: "Initializing Aggregate Types"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["aggregate types [C++]", "union keyword [C], declarations", "types [C], initializing", "union keyword [C]", "aggregates [C++], initializing"]
@@ -40,7 +41,7 @@ If you specify the size and give the wrong number of initializers, however, the 
 
 **Microsoft Specific**
 
-The maximum size for an array is defined by **size_t**. Defined in the header file STDDEF.H, **size_t** is an `unsigned int` with the range 0x00000000 to 0x7CFFFFFF.
+The maximum size for an array is defined by **size_t**. Defined in the header file STDDEF.H, **size_t** is an **`unsigned int`** with the range 0x00000000 to 0x7CFFFFFF.
 
 **END Microsoft Specific**
 
@@ -108,7 +109,7 @@ triplet nlist[2][3] =  /* THIS CAUSES AN ERROR */
 
 In this construction, the first left brace on line 1 starts the initialization of `nlist[0]`, which is an array of three structures. The values 1, 2, and 3 are assigned to the three members of the first structure. When the next right brace is encountered (after the value 3), initialization of `nlist[0]` is complete, and the two remaining structures in the three-structure array are automatically initialized to 0. Similarly, `{ 4,5,6 }` initializes the first structure in the second row of `nlist`. The remaining two structures of `nlist[1]` are set to 0. When the compiler encounters the next initializer list ( `{ 7,8,9 }` ), it tries to initialize `nlist[2]`. Since `nlist` has only two rows, this attempt causes an error.
 
-In this next example, the three `int` members of `x` are initialized to 1, 2, and 3, respectively.
+In this next example, the three **`int`** members of `x` are initialized to 1, 2, and 3, respectively.
 
 ```C
 struct list

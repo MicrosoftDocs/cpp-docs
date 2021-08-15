@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCTasksPaneTask Class"
 title: "CMFCTasksPaneTask Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CMFCTasksPaneTask", "AFXTASKSPANE/CMFCTasksPaneTask", "AFXTASKSPANE/CMFCTasksPaneTask::CMFCTasksPaneTask", "AFXTASKSPANE/CMFCTasksPaneTask::SetACCData", "AFXTASKSPANE/CMFCTasksPaneTask::m_bAutoDestroyWindow", "AFXTASKSPANE/CMFCTasksPaneTask::m_bIsBold", "AFXTASKSPANE/CMFCTasksPaneTask::m_dwUserData", "AFXTASKSPANE/CMFCTasksPaneTask::m_hwndTask", "AFXTASKSPANE/CMFCTasksPaneTask::m_nIcon", "AFXTASKSPANE/CMFCTasksPaneTask::m_nWindowHeight", "AFXTASKSPANE/CMFCTasksPaneTask::m_pGroup", "AFXTASKSPANE/CMFCTasksPaneTask::m_rect", "AFXTASKSPANE/CMFCTasksPaneTask::m_strName", "AFXTASKSPANE/CMFCTasksPaneTask::m_uiCommandID"]
@@ -49,7 +50,7 @@ class CMFCTasksPaneTask : public CObject
 
 The following illustration shows a task group that contains three tasks:
 
-![Task group, expanded](../../mfc/reference/media/nexttaskgrpexpand.png "Task group, expanded")
+![Task group, expanded.](../../mfc/reference/media/nexttaskgrpexpand.png "Task group, expanded")
 
 > [!NOTE]
 > If a task does not have a valid command ID, it is treated as a simple label.

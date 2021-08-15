@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: FtmBase Class"
 title: "FtmBase Class"
 ms.date: "10/03/2018"
 ms.topic: "reference"
@@ -81,7 +82,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 ### Remarks
 
-For more information, see the `IGlobalInterfaceTable` topic in the `COM Interfaces` subtopic of the `COM Reference` topic in the MSDN Library.
+For more information, see [`IGlobalInterfaceTable`](/windows/win32/api/objidl/nn-objidl-iglobalinterfacetable).
 
 ## <a name="disconnectobject"></a> FtmBase::DisconnectObject
 

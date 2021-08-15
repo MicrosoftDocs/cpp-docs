@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CObject Class: Frequently Asked Questions"
 title: "CObject Class: Frequently Asked Questions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CObject class [MFC], FAQ"]
@@ -16,4 +17,4 @@ This section covers questions on class `CObject`.
 
 ## See also
 
-[Using CObject](../mfc/using-cobject.md)
+[Using CObject](using-cobject.md)

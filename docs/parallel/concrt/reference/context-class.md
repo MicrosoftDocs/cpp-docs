@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Context Class"
 title: "Context Class"
 ms.date: "11/04/2016"
 f1_keywords: ["Context", "CONCRT/concurrency::Context", "CONCRT/concurrency::Context::Block", "CONCRT/concurrency::Context::CurrentContext", "CONCRT/concurrency::Context::GetId", "CONCRT/concurrency::Context::GetScheduleGroupId", "CONCRT/concurrency::Context::GetVirtualProcessorId", "CONCRT/concurrency::Context::Id", "CONCRT/concurrency::Context::IsCurrentTaskCollectionCanceling", "CONCRT/concurrency::Context::IsSynchronouslyBlocked", "CONCRT/concurrency::Context::Oversubscribe", "CONCRT/concurrency::Context::ScheduleGroupId", "CONCRT/concurrency::Context::Unblock", "CONCRT/concurrency::Context::VirtualProcessorId", "CONCRT/concurrency::Context::Yield"]
@@ -165,7 +166,7 @@ static bool __cdecl IsCurrentTaskCollectionCanceling();
 
 ### Return Value
 
-If a scheduler is attached to the calling context and a task group is executing a task inline on that context, an indication of whether that task group is in the midst of an active cancellation (or will be shortly); otherwise, the value `false`.
+If a scheduler is attached to the calling context and a task group is executing a task inline on that context, an indication of whether that task group is in the midst of an active cancellation (or will be shortly); otherwise, the value **`false`**.
 
 ## <a name="issynchronouslyblocked"></a> IsSynchronouslyBlocked
 
@@ -209,7 +210,7 @@ static void __cdecl Oversubscribe(bool _BeginOversubscription);
 ### Parameters
 
 *_BeginOversubscription*<br/>
-If **true**, an indication that an extra virtual processor should be added for the duration of the oversubscription. If **false**, an indication that the oversubscription should end and the previously added virtual processor should be removed.
+If **`true`**, an indication that an extra virtual processor should be added for the duration of the oversubscription. If **`false`**, an indication that the oversubscription should end and the previously added virtual processor should be removed.
 
 ## <a name="schedulegroupid"></a> ScheduleGroupId
 

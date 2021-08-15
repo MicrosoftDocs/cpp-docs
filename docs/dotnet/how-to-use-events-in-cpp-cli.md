@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Use Events in C++/CLI"
 title: "How to: Use Events in C++/CLI"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["events [C++], accessing in interfaces"]
@@ -469,7 +470,7 @@ In handler H1
 In handler H2 with args 1 and 2.2
 ```
 
-A simple event cannot be specified to override or hide a base class event.  You must define all of the event's accessor functions, and then specify the `new` or `override` keyword on each accessor function.
+A simple event cannot be specified to override or hide a base class event.  You must define all of the event's accessor functions, and then specify the **`new`** or `override` keyword on each accessor function.
 
 ```cpp
 // mcppv2_events5_a.cpp

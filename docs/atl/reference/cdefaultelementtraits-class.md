@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDefaultElementTraits Class"
 title: "CDefaultElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDefaultElementTraits", "atlcoll/ATL::CDefaultElementTraits"]

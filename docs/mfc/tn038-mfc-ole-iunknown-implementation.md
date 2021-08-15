@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN038: MFC/OLE IUnknown Implementation"
 title: "TN038: MFC-OLE IUnknown Implementation"
 ms.date: "06/28/2018"
 helpviewer_keywords: ["aggregation macros [MFC]", "COM interfaces, base interface", "IUnknown interface", "END_INTERFACE_MAP macro [MFC]", "TN038", "BEGIN_INTERFACE_PART macro [MFC]", "DECLARE_INTERFACE_MAP macro [MFC]", "BEGIN_INTERFACE_MAP macro [MFC]", "OLE [MFC], implementing IUnknown interface", "METHOD_PROLOGUE macro [MFC]", "STDMETHOD macro [MFC]", "END_INTERFACE_PART macro [MFC]", "INTERFACE_PART macro"]
@@ -26,7 +27,7 @@ public:
 ```
 
 > [!NOTE]
-> Certain necessary calling convention details, such as `__stdcall` are left out for this illustration.
+> Certain necessary calling convention details, such as **`__stdcall`** are left out for this illustration.
 
 The [AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) and [Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) member functions control memory management of the object. COM uses a reference counting scheme to keep track of objects. An object is never referenced directly as you would in C++. Instead, COM objects are always referenced through a pointer. To release the object when the owner is done using it, the object's [Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) member is called (as opposed to using operator delete, as would be done for a traditional C++ object). The reference counting mechanism allows for multiple references to a single object to be managed. An implementation of [AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) and [Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) maintains a reference count on the object — the object is not deleted until its reference count reaches zero.
 

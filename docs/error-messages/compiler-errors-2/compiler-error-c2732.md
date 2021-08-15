@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2732"
 title: "Compiler Error C2732"
 ms.date: "11/04/2016"
 f1_keywords: ["C2732"]
@@ -13,7 +14,7 @@ The function is already declared with a different linkage specifier.
 
 This error can be caused by include files with different linkage specifiers.
 
-To fix this error, change the `extern` statements so that the linkages agree. In particular, do not wrap `#include` directives in `extern "C"` blocks.
+To fix this error, change the **`extern`** statements so that the linkages agree. In particular, do not wrap `#include` directives in `extern "C"` blocks.
 
 ## Example
 

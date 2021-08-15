@@ -7,13 +7,13 @@ helpviewer_keywords: ["/QIntel-jcc-erratum", "-QIntel-jcc-erratum"]
 ---
 # /QIntel-jcc-erratum
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 The **/QIntel-jcc-erratum** option is available in Visual Studio 2019 version 16.5 and later.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 Specifies that the compiler generates instructions to mitigate the performance impact caused by the Intel Jump Conditional Code (JCC) erratum microcode update in certain Intel processors.
 

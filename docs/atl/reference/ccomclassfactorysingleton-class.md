@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComClassFactorySingleton Class"
 title: "CComClassFactorySingleton Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComClassFactorySingleton", "ATLCOM/ATL::CComClassFactorySingleton", "ATLCOM/ATL::CComClassFactorySingleton::CreateInstance", "ATLCOM/ATL::CComClassFactorySingleton::m_spObj"]

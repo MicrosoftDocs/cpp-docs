@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: length_is"
 title: "length_is (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.length_is"]
@@ -30,11 +31,9 @@ See [first_is](first-is.md) for an example of how to specify a section of an arr
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|
+|**Applies to**|Field in **`struct`** or **`union`**, interface parameter, interface method|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

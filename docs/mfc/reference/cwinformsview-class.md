@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWinFormsView Class"
 title: "CWinFormsView Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CWinFormsView", "AFXWINFORMS/CWinFormsView", "AFXWINFORMS/CWinFormsView::CWinFormsView", "AFXWINFORMS/CWinFormsView::GetControl"]
@@ -31,7 +32,7 @@ class CWinFormsView : public CView;
 
 ### Public Operators
 
-|Name||
+|Name|Description|
 |----------|-|
 |[CWinFormsView::operator Control^](#operator_control)|Casts a type as a pointer to a Windows Forms control.|
 

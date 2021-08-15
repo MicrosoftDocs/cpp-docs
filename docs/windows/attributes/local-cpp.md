@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: local (C++)"
 title: "local  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.local"]
@@ -25,9 +26,7 @@ See [call_as](call-as.md) for an example of how to use **local**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**interface**, interface method|
 |**Repeatable**|No|

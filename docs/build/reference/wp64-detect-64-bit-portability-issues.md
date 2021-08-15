@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Wp64 (Detect 64-Bit Portability Issues)"
 title: "/Wp64 (Detect 64-Bit Portability Issues)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.Detect64BitPortabilityProblems", "VC.Project.VCCLCompilerTool.Detect64BitPortabilityProblems", "/wp64"]
@@ -34,13 +35,9 @@ If you regularly compile your application by using a compiler that builds 64-bit
 
 ### To set this compiler option in the Visual Studio development environment
 
-1. Open the project **Property Pages** dialog box.
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-   For more information, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
-
-1. Click the **C/C++** folder.
-
-1. Click the **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Modify the **Additional Options** box to include **/Wp64**.
 

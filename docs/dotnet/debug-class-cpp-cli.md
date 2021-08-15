@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Debug Class (C++/CLI)"
 title: "Debug Class (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Trace class, Visual C++", ".NET Framework [C++], Debug class", "Debug class"]
@@ -12,7 +13,7 @@ When using <xref:System.Diagnostics.Debug> in a Visual C++ application, the beha
 
 The behavior for <xref:System.Diagnostics.Trace> is identical to the behavior for the Debug class, but is dependent on the symbol TRACE being defined. This means that you must `#ifdef` any Trace-related code to prevent debug behavior in a release build.
 
-## Example
+## Example: Always executes output statements
 
 ### Description
 
@@ -49,7 +50,7 @@ Hello World.
 test
 ```
 
-## Example
+## Example: Use #ifdef and #endif directives
 
 ### Description
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency::graphics Namespace"
 title: "Concurrency::graphics Namespace"
 ms.date: "11/04/2016"
 f1_keywords: ["AMP_GRAPHICS/Concurrency"]
@@ -41,15 +42,15 @@ namespace graphics;
 |----------|-----------------|
 |[texture Class](texture-class.md)|A texture is a data aggregate on an accelerator_view in the extent domain. It is a collection of variables, one for each element in an extent domain. Each variable holds a value corresponding to C++ primitive type (unsigned int, int, float, double), or scalar type norm, or unorm (defined in concurrency::graphics), or eligible short vector types defined in concurrency::graphics.|
 |[writeonly_texture_view Class](writeonly-texture-view-class.md)|A writeonly_texture_view provides writeonly access to a texture.|
-|[double_2 Class](double-2-class.md)|Represents a short vector of 2 `double` values.|
-|[double_3 Class](double-3-class.md)|Represents a short vector of 3 `double` values.|
-|[double_4 Class](double-4-class.md)|Represents a short vector of 4 `double` values.|
-|[float_2 Class](float-2-class.md)|Represents a short vector of 2 `float` values.|
-|[float_3 Class](float-3-class.md)|Represents a short vector of 3 `float` values.|
-|[float_4 Class](float-4-class.md)|Represents a short vector of 4 `float` values.|
-|[int_2 Class](int-2-class.md)|Represents a short vector of 2 `int` values.|
-|[int_3 Class](int-3-class.md)|Represents a short vector of 3 `int` values.|
-|[int_4 Class](int-4-class.md)|Represents a short vector of 4 `int` values.|
+|[double_2 Class](double-2-class.md)|Represents a short vector of 2 **`double`** values.|
+|[double_3 Class](double-3-class.md)|Represents a short vector of 3 **`double`** values.|
+|[double_4 Class](double-4-class.md)|Represents a short vector of 4 **`double`** values.|
+|[float_2 Class](float-2-class.md)|Represents a short vector of 2 **`float`** values.|
+|[float_3 Class](float-3-class.md)|Represents a short vector of 3 **`float`** values.|
+|[float_4 Class](float-4-class.md)|Represents a short vector of 4 **`float`** values.|
+|[int_2 Class](int-2-class.md)|Represents a short vector of 2 **`int`** values.|
+|[int_3 Class](int-3-class.md)|Represents a short vector of 3 **`int`** values.|
+|[int_4 Class](int-4-class.md)|Represents a short vector of 4 **`int`** values.|
 |[norm_2 Class](norm-2-class.md)|Represents a short vector of 2 `norm` values.|
 |[norm_3 Class](norm-3-class.md)|Represents a short vector of 3 `norm` values.|
 |[norm_4 Class](norm-4-class.md)|Represents a short vector of 4 `norm` values.|

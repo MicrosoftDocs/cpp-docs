@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: concurrency namespace functions"
 title: "concurrency namespace functions"
 ms.date: "11/04/2016"
 f1_keywords: ["concrt/concurrency::Alloc", "concrt/concurrency::DisableTracing", "concrt/concurrency::EnableTracing", "concrtrm/concurrency::GetExecutionContextId", "concrtrm/concurrency::GetOSVersion", "concrtrm/concurrency::GetProcessorNodeCount", "concrtrm/concurrency::GetSchedulerId", "agents/concurrency::asend", "ppltasks/concurrency::cancel_current_task", "ppltasks/concurrency::create_async", "ppltasks/concurrency::create_task", "concurrent_vector/concurrency::internal_assign_iterators", "ppl/concurrency::interruption_point", "agents/concurrency::make_choice", "agents/concurrency::make_greedy_join", "ppl/concurrency::make_task", "ppl/concurrency::parallel_buffered_sort", "ppl/concurrency::parallel_for_each", "ppl/concurrency::parallel_invoke", "ppl/concurrency::parallel_reduce", "ppl/concurrency::parallel_sort", "agents/concurrency::receive", "ppl/concurrency::run_with_cancellation_token", "pplconcrt/concurrency::set_ambient_scheduler", "concrt/concurrency::set_task_execution_resources", "ppltasks/concurrency::task_from_exception", "ppltasks/concurrency::task_from_result", "concrt/concurrency::wait", "ppltasks/concurrency::when_all", "ppltasks/concurrency::when_any"]
@@ -6,23 +7,58 @@ ms.assetid: 520a6dff-9324-4df2-990d-302e3050af6a
 ---
 # concurrency namespace functions
 
-||||
-|-|-|-|
-|[Alloc](#alloc)|[CreateResourceManager](#createresourcemanager)|[DisableTracing](#disabletracing)|
-|[EnableTracing](#enabletracing)|[Free](#free)|[GetExecutionContextId](#getexecutioncontextid)|
-|[GetOSVersion](#getosversion)|[GetProcessorCount](#getprocessorcount)|[GetProcessorNodeCount](#getprocessornodecount)|
-|[GetSchedulerId](#getschedulerid)|[Trace_agents_register_name](#trace_agents_register_name)|[asend](#asend)|
-|[cancel_current_task](#cancel_current_task)|[clear](#clear)|[create_async](#create_async)|
-|[create_task](#create_task)|[get_ambient_scheduler](#get_ambient_scheduler)|[internal_assign_iterators](#internal_assign_iterators)|
-|[interruption_point](#interruption_point)|[is_current_task_group_canceling](#is_current_task_group_canceling)|[make_choice](#make_choice)|
-|[make_greedy_join](#make_greedy_join)|[make_join](#make_join)|[make_task](#make_task)|
-|[parallel_buffered_sort](#parallel_buffered_sort)|[parallel_for](#parallel_for)|[parallel_for_each](#parallel_for_each)|
-|[parallel_invoke](#parallel_invoke)|[parallel_radixsort](#parallel_radixsort)|[parallel_reduce](#parallel_reduce)|
-|[parallel_sort](#parallel_sort)|[parallel_transform](#parallel_transform)|[receive](#receive)|
-|[run_with_cancellation_token](#run_with_cancellation_token)|[send](#send)|[set_ambient_scheduler](#set_ambient_scheduler)|
-|[set_task_execution_resources](#set_task_execution_resources)|[swap](#swap)|[task_from_exception](#task_from_exception)|
-|[task_from_result](#task_from_result)|[try_receive](#try_receive)|[wait](#wait)|
-|[when_all](#when_all)|[when_any](#when_any)|
+:::row:::
+   :::column span="":::
+      [`Alloc`](#alloc)\
+      [`asend`](#asend)\
+      [`cancel_current_task`](#cancel_current_task)\
+      [`clear`](#clear)\
+      [`create_async`](#create_async)\
+      [`create_task`](#create_task)\
+      [`CreateResourceManager`](#createresourcemanager)\
+      [`DisableTracing`](#disabletracing)\
+      [`EnableTracing`](#enabletracing)\
+      [`Free`](#free)\
+      [`get_ambient_scheduler`](#get_ambient_scheduler)\
+      [`GetExecutionContextId`](#getexecutioncontextid)\
+      [`GetOSVersion`](#getosversion)\
+      [`GetProcessorCount`](#getprocessorcount)\
+      [`GetProcessorNodeCount`](#getprocessornodecount)
+   :::column-end:::
+   :::column span="":::
+      [`GetSchedulerId`](#getschedulerid)\
+      [`internal_assign_iterators`](#internal_assign_iterators)\
+      [`interruption_point`](#interruption_point)\
+      [`is_current_task_group_canceling`](#is_current_task_group_canceling)\
+      [`make_choice`](#make_choice)\
+      [`make_greedy_join`](#make_greedy_join)\
+      [`make_join`](#make_join)\
+      [`make_task`](#make_task)\
+      [`parallel_buffered_sort`](#parallel_buffered_sort)\
+      [`parallel_for_each`](#parallel_for_each)\
+      [`parallel_for`](#parallel_for)\
+      [`parallel_invoke`](#parallel_invoke)\
+      [`parallel_radixsort`](#parallel_radixsort)\
+      [`parallel_reduce`](#parallel_reduce)\
+      [`parallel_sort`](#parallel_sort)
+   :::column-end:::
+   :::column span="":::
+      [`parallel_transform`](#parallel_transform)\
+      [`receive`](#receive)\
+      [`run_with_cancellation_token`](#run_with_cancellation_token)\
+      [`send`](#send)\
+      [`set_ambient_scheduler`](#set_ambient_scheduler)\
+      [`set_task_execution_resources`](#set_task_execution_resources)\
+      [`swap`](#swap)\
+      [`task_from_exception`](#task_from_exception)\
+      [`task_from_result`](#task_from_result)\
+      [`Trace_agents_register_name`](#trace_agents_register_name)\
+      [`try_receive`](#try_receive)\
+      [`wait`](#wait)\
+      [`when_all`](#when_all)\
+      [`when_any`](#when_any)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="alloc"></a> Alloc
 
@@ -74,7 +110,7 @@ A reference to the data to be sent.
 
 ### Return Value
 
-**true** if the message was accepted before the method returned, **false** otherwise.
+**`true`** if the message was accepted before the method returned, **`false`** otherwise.
 
 ### Remarks
 
@@ -84,7 +120,7 @@ For more information, see [Message Passing Functions](../../../parallel/concrt/m
 
 Cancels the currently executing task. This function can be called from within the body of a task to abort the task's execution and cause it to enter the `canceled` state.
 
-It is not a supported scenario to call this function if you are not within the body of a `task`. Doing so will result in undefined behavior such as a crash or a hang in your application.
+It is not a supported scenario to call this function if you are not within the body of a `task`. Doing so will result in undefined behavior such as a crash or unresponsiveness in your application.
 
 ```cpp
 inline __declspec(noreturn) void __cdecl cancel_current_task();
@@ -163,7 +199,7 @@ Multiple subsequent calls to this method will return the same instance of the Re
 
 ## <a name="create_task"></a> create_task
 
-Creates a PPL [task](task-class.md) object. `create_task` can be used anywhere you would have used a task constructor. It is provided mainly for convenience, because it allows use of the `auto` keyword while creating tasks.
+Creates a PPL [task](task-class.md) object. `create_task` can be used anywhere you would have used a task constructor. It is provided mainly for convenience, because it allows use of the **`auto`** keyword while creating tasks.
 
 ```cpp
 template<typename T>
@@ -372,7 +408,7 @@ You should not catch the internal cancellation exception thrown by the `interrup
 
 ## <a name="is_current_task_group_canceling"></a> is_current_task_group_canceling
 
-Returns an indication of whether the task group which is currently executing inline on the current context is in the midst of an active cancellation (or will be shortly). Note that if there is no task group currently executing inline on the current context, `false` will be returned.
+Returns an indication of whether the task group which is currently executing inline on the current context is in the midst of an active cancellation (or will be shortly). Note that if there is no task group currently executing inline on the current context, **`false`** will be returned.
 
 ```cpp
 bool __cdecl is_current_task_group_canceling();
@@ -380,7 +416,7 @@ bool __cdecl is_current_task_group_canceling();
 
 ### Return Value
 
-**true** if the task group which is currently executing is canceling, **false** otherwise.
+**`true`** if the task group which is currently executing is canceling, **`false`** otherwise.
 
 ### Remarks
 
@@ -643,7 +679,7 @@ A random-access iterator addressing the position one past the final element in t
 An instance of a C++ Standard Library compatible memory allocator.
 
 *_Func*<br/>
-A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.
+A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.
 
 *_Chunk_size*<br/>
 The mimimum size of a chunk that will be split into two for parallel execution.
@@ -731,7 +767,7 @@ The value by which to step when iterating from `first` to `last`. The step must 
 The function to be executed at each iteration. This may be a lambda expression, a function pointer, or any object that supports a version of the function call operator with the signature `void operator()(_Index_type)`.
 
 *_Part*<br/>
-A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.
+A reference to the partitioner object. The argument can be one of **`const`** [auto_partitioner](auto-partitioner-class.md)`&`, **`const`** [static_partitioner](static-partitioner-class.md)`&`, **`const`** [simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.
 
 ### Remarks
 
@@ -775,7 +811,7 @@ An iterator addressing the position one past the final element to be included in
 A user-defined function object that is applied to each element in the range.
 
 *_Part*<br/>
-A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.
+A reference to the partitioner object. The argument can be one of **`const`** [auto_partitioner](auto-partitioner-class.md)`&`, **`const`** [static_partitioner](static-partitioner-class.md)`&`, **`const`** [simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.
 
 ### Remarks
 
@@ -1173,7 +1209,7 @@ A random-access iterator addressing the position of the first element in the ran
 A random-access iterator addressing the position one past the final element in the range to be sorted.
 
 *_Func*<br/>
-A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **true** when satisfied and **false** when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.
+A user-defined predicate function object that defines the comparison criterion to be satisfied by successive elements in the ordering. A binary predicate takes two arguments and returns **`true`** when satisfied and **`false`** when not satisfied. This comparator function must impose a strict weak ordering on pairs of elements from the sequence.
 
 *_Chunk_size*<br/>
 The minimum size of a chunk that will be split into two for parallel execution.
@@ -1289,7 +1325,7 @@ An output iterator addressing the position of the first element in the destinati
 A user-defined unary function object that is applied to each element in the source range.
 
 *_Part*<br/>
-A reference to the partitioner object. The argument can be one of `const`[auto_partitioner](auto-partitioner-class.md)`&`, `const`[static_partitioner](static-partitioner-class.md)`&`, `const`[simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.
+A reference to the partitioner object. The argument can be one of **`const`** [auto_partitioner](auto-partitioner-class.md)`&`, **`const`** [static_partitioner](static-partitioner-class.md)`&`, **`const`** [simple_partitioner](simple-partitioner-class.md)`&` or [affinity_partitioner](affinity-partitioner-class.md)`&` If an [affinity_partitioner](affinity-partitioner-class.md) object is used, the reference must be a non-const l-value reference, so that the algorithm can store state for future loops to re-use.
 
 *first2*<br/>
 An input iterator addressing the position of the first element in the second source range to be operated on.
@@ -1416,7 +1452,7 @@ A reference to the data to be sent.
 
 ### Return Value
 
-**true** if the message was accepted, **false** otherwise.
+**`true`** if the message was accepted, **`false`** otherwise.
 
 ### Remarks
 
@@ -1569,7 +1605,7 @@ The name for the given object.
 
 ## <a name="try_receive"></a> try_receive
 
-A general try-receive implementation, allowing a context to look for data from exactly one source and filter the values that are accepted. If the data is not ready, the method will return **false**.
+A general try-receive implementation, allowing a context to look for data from exactly one source and filter the values that are accepted. If the data is not ready, the method will return **`false`**.
 
 ```cpp
 template <class T>
@@ -1607,7 +1643,7 @@ A filter function which determines whether messages should be accepted.
 
 ### Return Value
 
-A `bool` value indicating whether or not a payload was placed in `_value`.
+A **`bool`** value indicating whether or not a payload was placed in `_value`.
 
 ### Remarks
 
@@ -1660,7 +1696,7 @@ The `task_options` object.
 
 ### Return Value
 
-A task that completes successfully when all of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type `void` the output task will also be a `task<void>`.
+A task that completes successfully when all of the input tasks have completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::vector<T>>`. If the input tasks are of type **`void`** the output task will also be a `task<void>`.
 
 ### Remarks
 
@@ -1713,7 +1749,7 @@ The cancellation token which controls cancellation of the returned task. If you 
 
 ### Return Value
 
-A task that completes successfully when any one of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::pair<T, size_t>>>`, where the first element of the pair is the result of the completing task, and the second element is the index of the task that finished. If the input tasks are of type `void` the output is a `task<size_t>`, where the result is the index of the completing task.
+A task that completes successfully when any one of the input tasks has completed successfully. If the input tasks are of type `T`, the output of this function will be a `task<std::pair<T, size_t>>>`, where the first element of the pair is the result of the completing task, and the second element is the index of the task that finished. If the input tasks are of type **`void`** the output is a `task<size_t>`, where the result is the index of the completing task.
 
 ### Remarks
 

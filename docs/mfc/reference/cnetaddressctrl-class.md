@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CNetAddressCtrl Class"
 title: "CNetAddressCtrl Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CNetAddressCtrl", "AFXCMN/CNetAddressCtrl", "AFXCMN/CNetAddressCtrl::CNetAddressCtrl", "AFXCMN/CNetAddressCtrl::Create", "AFXCMN/CNetAddressCtrl::CreateEx", "AFXCMN/CNetAddressCtrl::DisplayErrorTip", "AFXCMN/CNetAddressCtrl::GetAddress", "AFXCMN/CNetAddressCtrl::GetAllowType", "AFXCMN/CNetAddressCtrl::SetAllowType"]
@@ -44,13 +45,11 @@ The following figure depicts a dialog that contains a network address control. T
 
 ![Dialog with a network address control and infotip.](../../mfc/reference/media/cnetaddctrl.png "Dialog with a network address control and infotip.")
 
-## Example
+## Examples
 
 The following code example is a portion of a dialog that validates a network address. The event handlers for three radio buttons specify that the network address can be one of three address types. The user enters an address in the text box of the network control, then presses a button to validate the address. If the address is valid, a success message is displayed; otherwise, the predefined infotip error message is displayed.
 
 [!code-cpp[NVC_MFC_CNetAddressCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cnetaddressctrl-class_1.cpp)]
-
-## Example
 
 The following code example from the dialog header file defines the [NC_ADDRESS](/windows/win32/api/shellapi/ns-shellapi-nc_address) and [NET_ADDRESS_INFO](/windows/win32/shell/hkey-type) variables that are required by the [CNetAddressCtrl::GetAddress](#getaddress) method.
 
@@ -102,12 +101,17 @@ virtual BOOL Create(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*dwStyle*|[in] A bitwise combination of styles to be applied to the control. For more information, see [Edit Styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|
-|*rect*|[in] A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that contains the position and size of the control.|
-|*pParentWnd*|[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|
-|*nID*|[in] The ID of the control.|
+*dwStyle*\
+[in] A bitwise combination of styles to be applied to the control. For more information, see [Edit Styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles).
+
+*rect*\
+[in] A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that contains the position and size of the control.
+
+*pParentWnd*\
+[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.
+
+*nID*\
+[in] The ID of the control.
 
 ### Return Value
 
@@ -128,13 +132,20 @@ virtual BOOL CreateEx(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*dwExStyle*|[in] A bitwise combination (OR) of extended styles to be applied to the control. For more information, see the *dwExStyle* parameter of the [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) function.|
-|*dwStyle*|[in] A bitwise combination (OR) of styles to be applied to the control. For more information, see [Edit Styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles).|
-|*rect*|[in] A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that contains the position and size of the control.|
-|*pParentWnd*|[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|
-|*nID*|[in] The ID of the control.|
+*dwExStyle*\
+[in] A bitwise combination (OR) of extended styles to be applied to the control. For more information, see the *dwExStyle* parameter of the [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) function.
+
+*dwStyle*\
+[in] A bitwise combination (OR) of styles to be applied to the control. For more information, see [Edit Styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles).
+
+*rect*\
+[in] A reference to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that contains the position and size of the control.
+
+*pParentWnd*\
+[in] A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.
+
+*nID*\
+[in] The ID of the control.
 
 ### Return Value
 
@@ -209,9 +220,8 @@ HRESULT SetAllowType(DWORD dwAddrMask);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*dwAddrMask*|[in] A bitwise combination (OR) of flags that specifies the types of addresses the network address control can support. For more information, see [NET_STRING](/windows/win32/shell/net-string).|
+*dwAddrMask*\
+[in] A bitwise combination (OR) of flags that specifies the types of addresses the network address control can support. For more information, see [NET_STRING](/windows/win32/shell/net-string).
 
 ### Return Value
 

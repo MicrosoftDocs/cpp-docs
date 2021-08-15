@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: task_group Class"
 title: "task_group Class"
 ms.date: "07/20/2018"
 f1_keywords: ["task_group", "PPL/concurrency::task_group", "PPL/concurrency::task_group::task_group"]
@@ -28,7 +29,7 @@ class task_group;
 |Name|Description|
 |----------|-----------------|
 |[cancel](#cancel)|Makes a best effort attempt to cancel the sub-tree of work rooted at this task group. Every task scheduled on the task group will get canceled transitively if possible.|
-|[is_canceling](#is_canceling)|Informs the caller whether or not the task group is currently in the midst of a cancellation. This does not necessarily indicate that the `cancel` method was called on the `task_group` object (although such certainly qualifies this method to return `true`). It may be the case that the `task_group` object is executing inline and a task group further up in the work tree was canceled. In cases such as these where the runtime can determine ahead of time that cancellation will flow through this `task_group` object, `true` will be returned as well.|
+|[is_canceling](#is_canceling)|Informs the caller whether or not the task group is currently in the midst of a cancellation. This does not necessarily indicate that the `cancel` method was called on the `task_group` object (although such certainly qualifies this method to return **`true`**). It may be the case that the `task_group` object is executing inline and a task group further up in the work tree was canceled. In cases such as these where the runtime can determine ahead of time that cancellation will flow through this `task_group` object, **`true`** will be returned as well.|
 |[run](#run)|Overloaded. Schedules a task on the `task_group` object. If a `task_handle` object is passed as a parameter to `run`, the caller is responsible for managing the lifetime of the `task_handle` object. The version of the method that takes a reference to a function object as a parameter involves heap allocation inside the runtime which may be perform less well than using the version that takes a reference to a `task_handle` object. The version which takes the parameter `_Placement` causes the task to be biased towards executing at the location specified by that parameter.|
 |[run_and_wait](#run_and_wait)|Overloaded. Schedules a task to be run inline on the calling context with the assistance of the `task_group` object for full cancellation support. The function then waits until all work on the `task_group` object has either completed or been canceled. If a `task_handle` object is passed as a parameter to `run_and_wait`, the caller is responsible for managing the lifetime of the `task_handle` object.|
 |[wait](#wait)|Waits until all work on the `task_group` object has either completed or been canceled.|
@@ -63,7 +64,7 @@ For more information, see [Cancellation](../cancellation-in-the-ppl.md).
 
 ## <a name="is_canceling"></a> is_canceling
 
-Informs the caller whether or not the task group is currently in the midst of a cancellation. This does not necessarily indicate that the `cancel` method was called on the `task_group` object (although such certainly qualifies this method to return `true`). It may be the case that the `task_group` object is executing inline and a task group further up in the work tree was canceled. In cases such as these where the runtime can determine ahead of time that cancellation will flow through this `task_group` object, `true` will be returned as well.
+Informs the caller whether or not the task group is currently in the midst of a cancellation. This does not necessarily indicate that the `cancel` method was called on the `task_group` object (although such certainly qualifies this method to return **`true`**). It may be the case that the `task_group` object is executing inline and a task group further up in the work tree was canceled. In cases such as these where the runtime can determine ahead of time that cancellation will flow through this `task_group` object, **`true`** will be returned as well.
 
 ```cpp
 bool is_canceling();

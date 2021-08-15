@@ -1,8 +1,9 @@
 ---
 title: "_umask"
+description: "API reference for _umask; which sets the default file-permission mask."
 ms.date: "4/2/2020"
 api_name: ["_umask", "_o__umask"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-filesystem-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_umask"]
@@ -11,7 +12,7 @@ ms.assetid: 5e9a13ba-5321-4536-8721-6afb6f4c8483
 ---
 # _umask
 
-Sets the default file-permission mask. A more secure version of this function is available; see [_umask_s](umask-s.md).
+Sets the default file-permission mask. See [_umask_s](umask-s.md) for a more secure version of this function."
 
 ## Syntax
 
@@ -26,7 +27,7 @@ Default permission setting.
 
 ## Return Value
 
-**_umask** returns the previous value of *pmode*. There is no error return.
+**_umask** returns the previous value of *pmode*. There's no error return.
 
 ## Remarks
 
@@ -34,7 +35,7 @@ The **_umask** function sets the file-permission mask of the current process to 
 
 The integer expression *pmode* contains one or both of the following manifest constants, defined in SYS\STAT.H:
 
-|*pmode*| |
+|*pmode*|Description|
 |-|-|
 | **_S_IWRITE** | Writing permitted. |
 | **_S_IREAD** | Reading permitted. |

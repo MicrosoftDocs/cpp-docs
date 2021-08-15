@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NMAKE Fatal Error U1077"
 title: "NMAKE Fatal Error U1077"
 ms.date: "11/04/2016"
 f1_keywords: ["U1077"]

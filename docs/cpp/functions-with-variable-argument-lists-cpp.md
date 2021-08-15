@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Functions with Variable Argument Lists  (C++)"
 title: "Functions with Variable Argument Lists  (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["arguments [C++], variable number of", "variable argument lists", "declarators, functions", "argument lists [C++], variable number of", "declaring functions [C++], variables", "function calls, variable number of arguments"]
@@ -20,7 +21,7 @@ Microsoft C++ allows the ellipsis to be specified as an argument if the ellipsis
 
 Declaration of a function that takes a variable number of arguments requires at least one placeholder argument, even if it is not used. If this placeholder argument is not supplied, there is no way to access the remaining arguments.
 
-When arguments of type **char** are passed as variable arguments, they are converted to type **int**. Similarly, when arguments of type **float** are passed as variable arguments, they are converted to type **double**. Arguments of other types are subject to the usual integral and floating-point promotions. See [Standard Conversions](standard-conversions.md) for more information.
+When arguments of type **`char`** are passed as variable arguments, they are converted to type **`int`**. Similarly, when arguments of type **`float`** are passed as variable arguments, they are converted to type **`double`**. Arguments of other types are subject to the usual integral and floating-point promotions. See [Standard Conversions](standard-conversions.md) for more information.
 
 Functions that require variable lists are declared by using the ellipsis (...) in the argument list. Use the types and macros that are described in the \<stdarg.h> include file to access arguments that are passed by a variable list. For more information about these macros, see [va_arg, va_copy, va_end, va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). in the documentation for the C Run-Time Library.
 

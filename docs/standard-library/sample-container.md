@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;sample container&gt;"
 title: "&lt;sample container&gt;"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["headers, C++ sample container", "sample container", "container headers"]

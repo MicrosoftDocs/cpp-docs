@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: time_get_byname Class"
 title: "time_get_byname Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xloctime/std::time_get_byname"]
@@ -41,8 +42,6 @@ An initial reference count.
 ## Requirements
 
 Its behavior is determined by the named locale *_Locname*. Each constructor initializes its base object with [time_get](../standard-library/time-get-class.md#time_get)\<CharType, InputIterator>( `_Refs`).
-
-## Requirements
 
 **Header:** \<locale>
 

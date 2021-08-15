@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2036"
 title: "Compiler Error C2036"
 ms.date: "11/04/2016"
 f1_keywords: ["C2036"]
@@ -11,7 +12,7 @@ ms.assetid: 895821a9-65d1-44b5-bde1-dae827f3e486
 
 An operation on `identifier` requires the size of the data object, which cannot be determined.
 
-## Example
+## Examples
 
 The following sample generates C2036.
 
@@ -27,8 +28,6 @@ int main() {
    pB++;   // OK
 }
 ```
-
-## Example
 
 The following sample generates C2036.
 

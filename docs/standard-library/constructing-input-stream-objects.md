@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Constructing Input Stream Objects"
 title: "Constructing Input Stream Objects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["input stream objects"]
@@ -16,7 +17,7 @@ If you use only the `cin` object, you do not need to construct an input stream. 
 
 There are two ways to create an input file stream:
 
-- Use the **void** argument constructor, then call the `open` member function:
+- Use the **`void`** argument constructor, then call the `open` member function:
 
    ```cpp
    ifstream myFile; // On the stack

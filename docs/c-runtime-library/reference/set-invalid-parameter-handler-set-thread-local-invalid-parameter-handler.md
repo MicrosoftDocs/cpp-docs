@@ -1,8 +1,9 @@
 ---
 title: "_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler"
+description: "API reference for _set_invalid_parameter_handler, and _set_thread_local_invalid_parameter_handler; which set a function to be called when the CRT detects an invalid argument."
 ms.date: "4/2/2020"
 api_name: ["_set_invalid_parameter_handler", "_set_thread_local_invalid_parameter_handler", "_o__set_invalid_parameter_handler", "_o__set_thread_local_invalid_parameter_handler"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["set_invalid_parameter_handler", "_set_invalid_parameter_handler", "_set_thread_local_invalid_parameter_handler"]
@@ -37,7 +38,7 @@ A pointer to the invalid parameter handler before the call.
 
 Many C runtime functions check the validity of arguments passed to them. If an invalid argument is passed, the function can set the **errno** error number or return an error code. In such cases, the invalid parameter handler is also called. The C runtime supplies a default global invalid parameter handler that terminates the program and displays a runtime error message. You can use the **_set_invalid_parameter_handler** to set your own function as the global invalid parameter handler. The C runtime also supports a thread-local invalid parameter handler. If a thread-local parameter handler is set in a thread by using **_set_thread_local_invalid_parameter_handler**, the C runtime functions called from the thread use that handler instead of the global handler. Only one function can be specified as the global invalid argument handler at a time. Only one function can be specified as the thread-local invalid argument handler per thread, but different threads can have different thread-local handlers. This allows you to change the handler used in one part of your code without affecting the behavior of other threads.
 
-When the runtime calls the invalid parameter function, it usually means that a nonrecoverable error occurred. The invalid parameter handler function you supply should save any data it can and then abort. It should not return control to the main function unless you are confident that the error is recoverable.
+When the runtime calls the invalid parameter function, it usually means that a nonrecoverable error occurred. The invalid parameter handler function you supply should save any data it can and then abort. It should not return control to the main function unless you're confident that the error is recoverable.
 
 The invalid parameter handler function must have the following prototype:
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SQL: SQL and C++ Data Types (ODBC)"
 title: "SQL: SQL and C++ Data Types (ODBC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["data types [C++], SQL vs. C++", "SQL data types [C++]", "SQL [C++], vs. C++ data types"]
@@ -9,7 +10,7 @@ ms.assetid: 066e0070-d4da-435c-9c4b-f7cab3352c86
 > [!NOTE]
 > This information applies to the MFC ODBC classes. If you are working with the MFC DAO classes, see the topic "Comparison of Microsoft Jet Database Engine SQL and ANSI SQL" in DAO Help.
 
-The following table maps ANSI SQL data types to C++ data types. This augments the C language information given in Appendix D of the *ODBC SDK* *Programmer's Reference* on the MSDN Library CD. The wizards manage most data type mapping for you. If you do not use a wizard, you can use the mapping information to help you write the field exchange code manually.
+The following table maps ANSI SQL data types to C++ data types. This augments the C language information given in Appendix D of the [ODBC Programmer's Reference](/sql/odbc/reference/odbc-programmer-s-reference) documentation. The wizards manage most data type mapping for you. If you do not use a wizard, you can use the mapping information to help you write the field exchange code manually.
 
 ### ANSI SQL Data Types Mapped to C++ Data Types
 
@@ -17,11 +18,11 @@ The following table maps ANSI SQL data types to C++ data types. This augments th
 |------------------------|---------------------|
 |**CHAR**|`CString`|
 |**DECIMAL**|`CString` 1|
-|**SMALLINT**|**int**|
-|**REAL**|**float**|
-|**INTEGER**|**long**|
-|**FLOAT**|**double**|
-|**DOUBLE**|**double**|
+|**SMALLINT**|**`int`**|
+|**REAL**|**`float`**|
+|**INTEGER**|**`long`**|
+|**FLOAT**|**`double`**|
+|**DOUBLE**|**`double`**|
 |**NUMERIC**|`CString` 1|
 |**VARCHAR**|`CString`|
 |**LONGVARCHAR**|`CLongBinary`, `CString` 2|

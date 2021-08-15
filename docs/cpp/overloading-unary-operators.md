@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overloading Unary Operators"
 title: "Overloading Unary Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["unary operators [C++], plus", "increment operators [C++], overloaded", "unary operators [C++], minus", "operators [C++], unary", "redefinable unary operators [C++]", "unary operators [C++]", "pointer dereference operator overloading", "plus operator"]
@@ -32,13 +33,13 @@ Conversion operators are also discussed in a separate topic; see [User-Defined T
 
 The following rules are true of all other unary operators. To declare a unary operator function as a nonstatic member, you must declare it in the form:
 
-> *ret-type* **operator** *op* **()**
+> *ret-type* **`operator`** *op* **()**
 
 where *ret-type* is the return type and *op* is one of the operators listed in the preceding table.
 
 To declare a unary operator function as a global function, you must declare it in the form:
 
-> *ret-type* **operator** *op* **(** *arg* **)**
+> *ret-type* **`operator`** *op* **(** *arg* **)**
 
 where *ret-type* and *op* are as described for member operator functions and the *arg* is an argument of class type on which to operate.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Warning LNK4248"
 title: "Linker Tools Warning LNK4248"
 ms.date: "11/04/2016"
 f1_keywords: ["LNK4248"]
@@ -23,7 +24,7 @@ For more information, see [/clr (Common Language Runtime Compilation)](../../bui
 
 1. Provide the type definition in the MSIL module.
 
-## Example
+## Examples
 
 The following sample generates LNK4248. Define struct A to resolve.
 
@@ -39,8 +40,6 @@ int main() {
 }
 ```
 
-## Example
-
 The following sample has a forward definition of a type.
 
 ```cpp
@@ -55,8 +54,6 @@ int main() {
    return valueA(a);
 }
 ```
-
-## Example
 
 The following sample generates LNK4248.
 

@@ -6,12 +6,12 @@ helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "ANALYSIS_
 ---
 # ANALYSIS_CALLBACKS structure
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 The `ANALYSIS_CALLBACKS` structure is used when initializing an [ANALYSIS_DESCRIPTOR](analysis-descriptor-struct.md) or [RELOG_DESCRIPTOR](relog-descriptor-struct.md) object. It specifies which functions to call during the analysis or relogging of an Event Tracing for Windows (ETW) trace.
 
@@ -33,7 +33,7 @@ typedef struct ANALYSIS_CALLBACKS_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `OnStartActivity` | Called to process an activity start event. |
 | `OnStopActivity` | Called to process an activity stop event. |

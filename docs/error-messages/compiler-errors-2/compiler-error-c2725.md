@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2725"
 title: "Compiler Error C2725"
 ms.date: "11/04/2016"
 f1_keywords: ["C2725"]
@@ -11,7 +12,7 @@ ms.assetid: 13cd5b1b-e906-4cd8-9b2b-510d587c665a
 
 The type of a managed or WinRT exception was not correct.
 
-## Example
+## Examples
 
 The following sample generates C2725 and shows how to fix it.
 
@@ -31,8 +32,6 @@ int main() {
    throw r2;   // OK
 }
 ```
-
-## Example
 
 The following sample generates C2725 and shows how to fix it.
 

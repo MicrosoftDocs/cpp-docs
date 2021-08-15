@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CReBar Class"
 title: "CReBar Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CReBar", "AFXEXT/CReBar", "AFXEXT/CReBar::AddBar", "AFXEXT/CReBar::Create", "AFXEXT/CReBar::GetReBarCtrl"]
@@ -29,7 +30,7 @@ class CReBar : public CControlBar
 
 A rebar object can contain a variety of child windows, usually other controls, including edit boxes, toolbars, and list boxes. A rebar object can display its child windows over a specified bitmap. Your application can automatically resize the rebar, or the user can manually resize the rebar by clicking or dragging its gripper bar.
 
-![Example of RebarMenu](../../mfc/reference/media/vc4sc61.gif "Example of RebarMenu")
+![Example of RebarMenu.](../../mfc/reference/media/vc4sc61.gif "Example of RebarMenu")
 
 ## Rebar Control
 

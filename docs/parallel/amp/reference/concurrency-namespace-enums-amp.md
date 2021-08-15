@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Concurrency namespace enums (AMP)"
 title: "Concurrency namespace enums (AMP)"
 ms.date: "11/04/2016"
 f1_keywords: ["amp/Concurrency::access_type", "amp/Concurrency::queuing_mode"]
@@ -6,9 +7,8 @@ ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
 ---
 # Concurrency namespace enums (AMP)
 
-|||
-|-|-|
-|[access_type Enumeration](#access_type)|[queuing_mode Enumeration](#queuing_mode)|
+[access_type Enumeration](#access_type)\
+[queuing_mode Enumeration](#queuing_mode)
 
 ## <a name="access_type"></a> access_type Enumeration
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2389"
 title: "Compiler Error C2389"
 ms.date: "11/04/2016"
 f1_keywords: ["C2389"]
@@ -9,7 +10,7 @@ ms.assetid: 6122dc81-4ee3-49a5-a67d-d867808c9bac
 
 'operator' : illegal operand 'nullptr'
 
-`nullptr` cannot be an operand.
+**`nullptr`** cannot be an operand.
 
 The following sample generates C2389:
 

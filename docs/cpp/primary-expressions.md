@@ -1,25 +1,25 @@
 ---
-title: "Primary Expressions"
-ms.date: "11/04/2016"
+title: "Primary expressions"
+description: "Primary expressions in the C++ programming language."
+ms.date: 10/02/2020
 helpviewer_keywords: ["primary expressions", "expressions [C++], name", "expressions [C++], literal", "expressions [C++], primary", "expressions [C++], qualified names"]
 ms.assetid: 8ef9a814-6058-4b93-9b6e-e8eb8350b1ca
 ---
 # Primary Expressions
 
-Primary expressions are the building blocks of more complex expressions. They are literals, names, and names qualified by the scope-resolution operator (`::`).  A primary expression may have any of the following forms:
+Primary expressions are the building blocks of more complex expressions. They may be literals, names, and names qualified by the scope-resolution operator (`::`). A primary expression may have any of the following forms:
 
-```
-literal
-this
-name
-::name ( expression )
-```
+*`primary-expression`*\
+&emsp;*`literal`*\
+&emsp;**`this`**\
+&emsp;*`name`*\
+&emsp;**`::`** *`name`* **`(`** *`expression`* **`)`**
 
-A *literal* is a constant primary expression. Its type depends on the form of its specification. See [Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md) for complete information about specifying literals.
+A *`literal`* is a constant primary expression. Its type depends on the form of its specification. For complete information about specifying literals, see [Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md) .
 
-The **this** keyword is a pointer to a class object. It is available within nonstatic member functions and points to the instance of the class for which the function was invoked. The **this** keyword cannot be used outside the body of a class-member function.
+The **`this`** keyword is a pointer to a class object. It's available within nonstatic member functions. It points to the instance of the class for which the function was invoked. The **`this`** keyword can't be used outside the body of a class-member function.
 
-The type of the **this** pointer is `type` **\*const** (where `type` is the class name) within functions not specifically modifying the **this** pointer. The following example shows member function declarations and the types of **this**:
+The type of the **`this`** pointer is `type * const` (where `type` is the class name) within functions that don't specifically modify the **`this`** pointer. The following example shows member function declarations and the types of **`this`**:
 
 ```cpp
 // expre_Primary_Expressions.cpp
@@ -33,11 +33,11 @@ public:
 };
 ```
 
-See [this Pointer](this-pointer.md) for more information about modifying the type of the **this** pointer.
+For more information about modifying the type of the **`this`** pointer, see [`this` pointer](this-pointer.md).
 
-The scope-resolution operator (`::`) followed by a name constitutes a primary expression.  Such names must be names at global scope, not member names.  The type of this expression is determined by the declaration of the name. It is an l-value (that is, it can appear on the left hand side of an assignment operator expression) if the declaring name is an l-value. The scope-resolution operator allows a global name to be referred to, even if that name is hidden in the current scope. See [Scope](../cpp/scope-visual-cpp.md) for an example of how to use the scope-resolution operator.
+The scope-resolution operator (**`::`**) followed by a name is a primary expression.  Such names must be names at global scope, not member names. The type of the expression is determined by the declaration of the name. It's an l-value (that is, it can appear on the left-hand side of an assignment expression) if the declaring name is an l-value. The scope-resolution operator allows a global name to be referred to, even if that name is hidden in the current scope. See [Scope](../cpp/scope-visual-cpp.md) for an example of how to use the scope-resolution operator.
 
-An expression enclosed in parentheses is a primary expression whose type and value are identical to those of the unparenthesized expression. It is an l-value if the unparenthesized expression is an l-value.
+An expression enclosed in parentheses is a primary expression. Its type and value are identical to the type and value of the unparenthesized expression. It's an l-value if the unparenthesized expression is an l-value.
 
 Examples of primary expressions include:
 
@@ -51,10 +51,10 @@ this // in a member function, a pointer to the class instance
 ( i + 1 ) // a parenthesized expression
 ```
 
-The examples below are all considered *names*, and hence primary expressions, in various forms:
+These examples are all considered *names*, and as such, primary expressions, in various forms:
 
 ```cpp
-MyClass // a identifier
+MyClass // an identifier
 MyClass::f // a qualified name
 operator = // an operator function name
 operator char* // a conversion operator function name

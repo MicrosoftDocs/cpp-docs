@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_class Class"
 title: "is_class Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_class"]
@@ -23,7 +24,7 @@ The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type *Ty* is a type defined as a **class** or a **struct**, or a `cv-qualified` form of one of them, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* is a type defined as a **`class`** or a **`struct`**, or a `cv-qualified` form of one of them, otherwise it holds false.
 
 ## Example
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Adding an ATL Control"
 title: "Adding an ATL Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ATL projects, adding controls", "controls [ATL], adding to projects"]
@@ -14,7 +15,7 @@ Use this wizard to add a user interface object to a project that supports interf
 
 1. Click **Add** from the shortcut menu, and then click **Add Class**.
 
-1. In the [Add Class](../../ide/add-class-dialog-box.md) dialog box, in the templates pane, click **ATL Control**, and then click **Add** to display the [ATL Control Wizard](../../atl/reference/atl-control-wizard.md).
+1. In the [Add Class](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) dialog box, in the templates pane, click **ATL Control**, and then click **Add** to display the [ATL Control Wizard](../../atl/reference/atl-control-wizard.md).
 
 Using the **ATL Control Wizard**, you can create one of three types of controls:
 

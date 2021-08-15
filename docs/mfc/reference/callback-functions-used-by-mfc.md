@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Callback Functions Used by MFC"
 title: "Callback Functions Used by MFC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["callback functions [MFC], MFC", "MFC, callback functions", "functions [MFC], callback", "callback functions [MFC]"]
@@ -8,11 +9,9 @@ ms.assetid: b2a6857c-fdd3-45ec-8fd8-2e71fac77582
 
 Three callback functions appear in the Microsoft Foundation Class Library. These callback functions are passed to [CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects), [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring), and [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc). Note that all callback functions must trap MFC exceptions before returning to Windows, since exceptions cannot be thrown across callback boundaries. For more information about exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).
 
-|Name||
-|----------|-----------------|
-|[Callback Function for CDC::EnumObjects](#enum_objects)||
-|[Callback Function for CDC::GrayString](#graystring)||
-|[Callback Function for CDC::SetAbortProc](#setabortproc)||
+[Callback Function for CDC::EnumObjects](#enum_objects)\
+[Callback Function for CDC::GrayString](#graystring)\
+[Callback Function for CDC::SetAbortProc](#setabortproc)
 
 ## Requirements
 
@@ -40,7 +39,7 @@ Points to the application-supplied data passed to the `EnumObjects` function.
 
 ### Return Value
 
-The callback function returns an **int**. The value of this return is user-defined. If the callback function returns 0, `EnumObjects` stops enumeration early.
+The callback function returns an **`int`**. The value of this return is user-defined. If the callback function returns 0, `EnumObjects` stops enumeration early.
 
 ### Remarks
 

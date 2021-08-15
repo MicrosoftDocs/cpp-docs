@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: regex_error Class"
 title: "regex_error Class"
 ms.date: "09/10/2018"
 f1_keywords: ["regex/std::regex_error", "regex/std::regex_error::code"]

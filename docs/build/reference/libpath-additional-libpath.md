@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /LIBPATH (Additional Libpath)"
 title: "/LIBPATH (Additional Libpath)"
 ms.date: "11/04/2016"
 f1_keywords: ["/libpath", "VC.Project.VCLinkerTool.AdditionalLibraryDirectories"]
@@ -24,9 +25,7 @@ Use the /LIBPATH option to override the environment library path. The linker wil
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **Linker** folder.
-
-1. Click the **General** property page.
+1. Select the **Configuration Properties** > **Linker** > **General** property page.
 
 1. Modify the **Additional Library Directories** property.
 

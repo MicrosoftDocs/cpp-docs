@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;iosfwd&gt;"
 title: "&lt;iosfwd&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<iosfwd>"]
@@ -22,7 +23,7 @@ typedef T1 streamoff;
 typedef T2 streamsize;
 typedef fpos streampos;
 
-// wchar_t TYPE DEFINITIONS
+// char TYPE DEFINITIONS
 typedef basic_ios<char, char_traits<char>> ios;
 typedef basic_streambuf<char, char_traits<char>> streambuf;
 typedef basic_istream<char, char_traits<char>> istream;
@@ -51,7 +52,6 @@ typedef basic_filebuf<wchar_t, char_traits<wchar_t>> wfilebuf;
 typedef basic_ifstream<wchar_t, char_traits<wchar_t>> wifstream;
 typedef basic_ofstream<wchar_t, char_traits<wchar_t>> wofstream;
 typedef basic_fstream<wchar_t, char_traits<wchar_t>> wfstream;
-};
 ```
 
 ## Forward declarations and class templates

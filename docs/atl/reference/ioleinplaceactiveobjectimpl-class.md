@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IOleInPlaceActiveObjectImpl Class"
 title: "IOleInPlaceActiveObjectImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IOleInPlaceActiveObjectImpl", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::ContextSensitiveHelp", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::EnableModeless", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::GetWindow", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::OnDocWindowActivate", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::OnFrameWindowActivate", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::ResizeBorder", "ATLCTL/ATL::IOleInPlaceActiveObjectImpl::TranslateAccelerator"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMonthCalCtrl Class"
 title: "CMonthCalCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMonthCalCtrl", "AFXDTCTL/CMonthCalCtrl", "AFXDTCTL/CMonthCalCtrl::CMonthCalCtrl", "AFXDTCTL/CMonthCalCtrl::Create", "AFXDTCTL/CMonthCalCtrl::GetCalendarBorder", "AFXDTCTL/CMonthCalCtrl::GetCalendarCount", "AFXDTCTL/CMonthCalCtrl::GetCalendarGridInfo", "AFXDTCTL/CMonthCalCtrl::GetCalID", "AFXDTCTL/CMonthCalCtrl::GetColor", "AFXDTCTL/CMonthCalCtrl::GetCurrentView", "AFXDTCTL/CMonthCalCtrl::GetCurSel", "AFXDTCTL/CMonthCalCtrl::GetFirstDayOfWeek", "AFXDTCTL/CMonthCalCtrl::GetMaxSelCount", "AFXDTCTL/CMonthCalCtrl::GetMaxTodayWidth", "AFXDTCTL/CMonthCalCtrl::GetMinReqRect", "AFXDTCTL/CMonthCalCtrl::GetMonthDelta", "AFXDTCTL/CMonthCalCtrl::GetMonthRange", "AFXDTCTL/CMonthCalCtrl::GetRange", "AFXDTCTL/CMonthCalCtrl::GetSelRange", "AFXDTCTL/CMonthCalCtrl::GetToday", "AFXDTCTL/CMonthCalCtrl::HitTest", "AFXDTCTL/CMonthCalCtrl::IsCenturyView", "AFXDTCTL/CMonthCalCtrl::IsDecadeView", "AFXDTCTL/CMonthCalCtrl::IsMonthView", "AFXDTCTL/CMonthCalCtrl::IsYearView", "AFXDTCTL/CMonthCalCtrl::SetCalendarBorder", "AFXDTCTL/CMonthCalCtrl::SetCalendarBorderDefault", "AFXDTCTL/CMonthCalCtrl::SetCalID", "AFXDTCTL/CMonthCalCtrl::SetCenturyView", "AFXDTCTL/CMonthCalCtrl::SetColor", "AFXDTCTL/CMonthCalCtrl::SetCurrentView", "AFXDTCTL/CMonthCalCtrl::SetCurSel", "AFXDTCTL/CMonthCalCtrl::SetDayState", "AFXDTCTL/CMonthCalCtrl::SetDecadeView", "AFXDTCTL/CMonthCalCtrl::SetFirstDayOfWeek", "AFXDTCTL/CMonthCalCtrl::SetMaxSelCount", "AFXDTCTL/CMonthCalCtrl::SetMonthDelta", "AFXDTCTL/CMonthCalCtrl::SetMonthView", "AFXDTCTL/CMonthCalCtrl::SetRange", "AFXDTCTL/CMonthCalCtrl::SetSelRange", "AFXDTCTL/CMonthCalCtrl::SetToday", "AFXDTCTL/CMonthCalCtrl::SetYearView", "AFXDTCTL/CMonthCalCtrl::SizeMinReq", "AFXDTCTL/CMonthCalCtrl::SizeRectToMin"]
@@ -210,9 +211,8 @@ BOOL GetCalendarGridInfo(PMCGRIDINFO pmcGridInfo) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pmcGridInfo*|[out] Pointer to a [MCGRIDINFO](/windows/win32/api/commctrl/ns-commctrl-mcgridinfo) structure that receives information about the current month calendar control. The caller is responsible for allocating and initializing this structure.|
+*pmcGridInfo*\
+[out] Pointer to a [MCGRIDINFO](/windows/win32/api/commctrl/ns-commctrl-mcgridinfo) structure that receives information about the current month calendar control. The caller is responsible for allocating and initializing this structure.
 
 ### Return Value
 
@@ -224,13 +224,11 @@ This method sends the [MCM_GETCALENDARGRIDINFO](/windows/win32/Controls/mcm-getc
 
 ### Example
 
-The following code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.
+The first code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_2.h)]
 
-### Example
-
-The following code example uses the `GetCalendarGridInfo` method to retrieve the calendar date that the current month calendar control displays.
+The next code example uses the `GetCalendarGridInfo` method to retrieve the calendar date that the current month calendar control displays.
 
 [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_3.cpp)]
 
@@ -294,13 +292,11 @@ This method sends the [MCM_GETCURRENTVIEW](/windows/win32/Controls/mcm-getcurren
 
 ### Example
 
-The following code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.
+The first code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_2.h)]
 
-### Example
-
-The following code example reports which view the month calendar control currently displays.
+The next code example reports which view the month calendar control currently displays.
 
 [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#7](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_4.cpp)]
 
@@ -404,13 +400,11 @@ The width of the "Today" string, in pixels.
 
 ### Example
 
-The following code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.
+The first code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_2.h)]
 
-### Example
-
-The following code example demonstrates the `GetMaxTodayWidth` method.
+The next code example demonstrates the `GetMaxTodayWidth` method.
 
 [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_5.cpp)]
 
@@ -722,9 +716,8 @@ void SetCalendarBorder(int cxyBorder);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*cxyBorder*|[in] The width of the border, in pixels.|
+*cxyBorder*\
+[in] The width of the border, in pixels.
 
 ### Remarks
 
@@ -734,13 +727,11 @@ This method sends the [MCM_SETCALENDARBORDER](/windows/win32/Controls/mcm-setcal
 
 ### Example
 
-The following code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.
+The first code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_2.h)]
 
-### Example
-
-The following code example sets the border width of the month calendar control to eight pixels. Use the [CMonthCalCtrl::GetCalendarBorder](#getcalendarborder) method to determine whether this method succeeded.
+The next code example sets the border width of the month calendar control to eight pixels. Use the [CMonthCalCtrl::GetCalendarBorder](#getcalendarborder) method to determine whether this method succeeded.
 
 [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#6](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_8.cpp)]
 
@@ -768,9 +759,8 @@ BOOL SetCalID(CALID calid);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*calid*|[in] One of the [calendar identifier](/windows/win32/Intl/calendar-identifiers) constants.|
+*calid*\
+[in] One of the [calendar identifier](/windows/win32/Intl/calendar-identifiers) constants.
 
 ### Return Value
 
@@ -784,13 +774,11 @@ This method sends the [MCM_SETCALID](/windows/win32/Controls/mcm-setcalid) messa
 
 ### Example
 
-The following code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.
+The first code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_2.h)]
 
-### Example
-
-The following code example sets the month calendar control to display the Japanese Emperor Era calendar. The `SetCalID` method succeeds only if that calendar is installed on your computer.
+The next code example sets the month calendar control to display the Japanese Emperor Era calendar. The `SetCalID` method succeeds only if that calendar is installed on your computer.
 
 [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#4](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_9.cpp)]
 
@@ -859,9 +847,13 @@ BOOL SetCurrentView(DWORD dwNewView);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*dwNewView*|[in] One of the following values that specifies a monthly, annual, decade, or century view.<br /><br /> MCMV_MONTH: Monthly view<br /><br /> MCMV_YEAR: Annual view<br /><br /> MCMV_DECADE: Decade view<br /><br /> MCMV_CENTURY: Century view|
+*dwNewView*\
+[in] One of the following values that specifies a monthly, annual, decade, or century view.
+
+- `MCMV_MONTH`: Monthly view
+- `MCMV_YEAR`: Annual view
+- `MCMV_DECADE`: Decade view
+- `MCMV_CENTURY`: Century view
 
 ### Return Value
 
@@ -1041,13 +1033,11 @@ This method uses the [CMonthCalCtrl::SetCurrentView](#setcurrentview) method to 
 
 ### Example
 
-The following code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.
+The first code example defines the variable, `m_monthCalCtrl`, that is used to programmatically access the month calendar control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_2.h)]
 
-### Example
-
-The following code example sets the month calendar control to display the month, year, decade, and century views.
+The next code example sets the month calendar control to display the month, year, decade, and century views.
 
 [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_15.cpp)]
 
@@ -1196,9 +1186,8 @@ LPRECT SizeRectToMin(LPRECT lpRect);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpRect*|[in] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that defines a rectangle that contains the desired number of calendars.|
+*lpRect*\
+[in] Pointer to a [RECT](/windows/win32/api/windef/ns-windef-rect) structure that defines a rectangle that contains the desired number of calendars.
 
 ### Return Value
 

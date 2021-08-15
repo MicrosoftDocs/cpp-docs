@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 2) C4396"
 title: "Compiler Warning (level 2) C4396"
 ms.date: "11/04/2016"
 f1_keywords: ["C4396"]
@@ -13,11 +14,11 @@ A specialization of a function template cannot specify any of the [inline](../..
 
 ### To correct this error
 
-- Remove the `inline`, `__inline`, or `__forceinline` specifier from the friend function declaration.
+- Remove the **`inline`**, **`__inline`**, or **`__forceinline`** specifier from the friend function declaration.
 
 ## Example
 
-The following code example shows an invalid friend function declaration with an `inline` specifier.
+The following code example shows an invalid friend function declaration with an **`inline`** specifier.
 
 ```cpp
 // C4396.cpp

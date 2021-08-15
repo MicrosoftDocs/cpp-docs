@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l"
 title: "_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l"
 ms.date: "4/2/2020"
 api_name: ["_wcsset_s", "_wcsset_s_l", "_strset_s", "_mbsset_s_l", "_strset_s_l", "_mbsset_s", "_o__mbsset_s", "_o__mbsset_s_l", "_o__strset_s", "_o__wcsset_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wcsset_s_l", "strset_s", "_mbsset_s", "mbsset_s", "_strset_s", "_mbsset_s_l", "strset_s_l", "_wcsset_s", "mbsset_s_l", "wcsset_s_l", "wcsset_s", "_strset_s_l", "_tcsset_s_l", "_tcsset_s"]
@@ -76,7 +77,7 @@ These functions validate their arguments. If *str* is a null pointer, or the *nu
 
 ## Remarks
 
-The **_strset_s** function sets all the characters of *str* to *c* (converted to **char**), except the terminating null character. **_wcsset_s** and **_mbsset_s** are wide-character and multibyte-character versions of **_strset_s**. The data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
+The **_strset_s** function sets all the characters of *str* to *c* (converted to **`char`**), except the terminating null character. **_wcsset_s** and **_mbsset_s** are wide-character and multibyte-character versions of **_strset_s**. The data types of the arguments and return values vary accordingly. These functions behave identically otherwise.
 
 The output value is affected by the setting of the **LC_CTYPE** category setting of the locale; see [setlocale](setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead. For more information, see [Locale](../../c-runtime-library/locale.md).
 

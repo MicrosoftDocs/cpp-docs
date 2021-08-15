@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4929"
 title: "Compiler Warning (level 1) C4929"
 ms.date: "11/04/2016"
 f1_keywords: ["C4929"]
@@ -11,7 +12,7 @@ ms.assetid: 95f8ab4f-4468-4caa-acd5-8f4592f03b3c
 
 The embedded_idl attribute of [#import](../../preprocessor/hash-import-directive-cpp.md) could not be applied to the type library because a union is present in the type library. To resolve this warning, don't use embedded_idl.
 
-## Example
+## Examples
 
 The following sample defines a component.
 
@@ -44,8 +45,6 @@ struct C : I {
    HRESULT f(TD_TYPE*) { return 0; }
 };
 ```
-
-## Example
 
 The following sample generates C4929.
 

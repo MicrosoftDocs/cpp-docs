@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Benefits of Character Set Portability"
 title: "Benefits of Character Set Portability"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["character sets [C++], benefits", "portability [C++], character sets"]

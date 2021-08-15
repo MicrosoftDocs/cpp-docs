@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CFile Class"
 title: "CFile Class"
 ms.date: "06/12/2018"
 f1_keywords: ["CFile", "AFX/CFile", "AFX/CFile::CFile", "AFX/CFile::Abort", "AFX/CFile::Close", "AFX/CFile::Duplicate", "AFX/CFile::Flush", "AFX/CFile::GetFileName", "AFX/CFile::GetFilePath", "AFX/CFile::GetFileTitle", "AFX/CFile::GetLength", "AFX/CFile::GetPosition", "AFX/CFile::GetStatus", "AFX/CFile::LockRange", "AFX/CFile::Open", "AFX/CFile::Read", "AFX/CFile::Remove", "AFX/CFile::Rename", "AFX/CFile::Seek", "AFX/CFile::SeekToBegin", "AFX/CFile::SeekToEnd", "AFX/CFile::SetFilePath", "AFX/CFile::SetLength", "AFX/CFile::SetStatus", "AFX/CFile::UnlockRange", "AFX/CFile::Write", "AFX/CFile::hFileNull", "AFX/CFile::m_hFile", "AFX/CFile::m_pTM"]
@@ -106,7 +107,7 @@ If you haven't closed the file before destroying the object, the destructor clos
 
 When handling exceptions, `CFile::Abort` differs from `CFile::Close` in two important ways. First, the `Abort` function won't throw an exception on failures, because failures are ignored by `Abort`. Second, `Abort` won't **ASSERT** if the file hasn't been opened, or was closed previously.
 
-If you used **new** to allocate the `CFile` object on the heap, then you must delete it after closing the file. `Abort` sets `m_hFile` to `CFile::hFileNull`.
+If you used **`new`** to allocate the `CFile` object on the heap, then you must delete it after closing the file. `Abort` sets `m_hFile` to `CFile::hFileNull`.
 
 ### Example
 
@@ -222,7 +223,7 @@ virtual void Close();
 
 If you haven't closed the file before destroying the object, the destructor closes it for you.
 
-If you used **new** to allocate the `CFile` object on the heap, then you must delete it after closing the file. `Close` sets `m_hFile` to `CFile::hFileNull`.
+If you used **`new`** to allocate the `CFile` object on the heap, then you must delete it after closing the file. `Close` sets `m_hFile` to `CFile::hFileNull`.
 
 ### Example
 
@@ -536,12 +537,12 @@ While the `CFile` constructor throws an exception in an error condition, `Open` 
 
 The following table describes the possible results of `Open`.
 
-|`pError`|Error encountered|Return value|CFileException content|
-|--------------|------------------------|------------------|----------------------------|
-|NULL|No|TRUE|n/a|
-|ptr to `CFileException`|No|TRUE|unchanged|
-|NULL|Yes|FALSE|n/a|
-|ptr to `CFileException`|Yes|FALSE|initialized to describe error|
+| `pError` | Error encountered | Return value | CFileException content |
+|--|--|--|--|
+| NULL | No | TRUE | n/a |
+| ptr to `CFileException` | No | TRUE | unchanged |
+| NULL | Yes | FALSE | n/a |
+| ptr to `CFileException` | Yes | FALSE | initialized to describe error |
 
 ### Example
 

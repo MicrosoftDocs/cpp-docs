@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2390"
 title: "Compiler Error C2390"
 ms.date: "11/04/2016"
 f1_keywords: ["C2390"]
@@ -13,7 +14,7 @@ The storage class is not valid for the global-scope identifier. The default stor
 
 Possible resolutions:
 
-- If the identifier is a function, declare it with `extern` storage.
+- If the identifier is a function, declare it with **`extern`** storage.
 
 - If the identifier is a formal parameter or local variable, declare it with auto storage.
 

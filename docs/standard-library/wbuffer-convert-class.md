@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: wbuffer_convert Class"
 title: "wbuffer_convert Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocmon/stdext::cvt::wbuffer_convert"]
@@ -19,11 +20,14 @@ class wbuffer_convert
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Codecvt*|The [locale](../standard-library/locale-class.md) facet that represents the conversion object.|
-|*Elem*|The wide-character element type.|
-|*Traits*|The traits associated with *Elem*.|
+*Codecvt*\
+The [locale](../standard-library/locale-class.md) facet that represents the conversion object.
+
+*Elem*\
+The wide-character element type.
+
+*Traits*\
+The traits associated with *Elem*.
 
 ## Remarks
 

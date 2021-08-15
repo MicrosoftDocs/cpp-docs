@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: system Function"
 title: "system Function"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["system function"]

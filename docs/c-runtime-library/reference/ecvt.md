@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _ecvt"
 title: "_ecvt"
 ms.date: "4/2/2020"
 api_name: ["_ecvt", "_o__ecvt"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_ecvt"]
@@ -11,7 +12,7 @@ ms.assetid: a916eb05-92d1-4b5c-8563-093acdb49dc8
 ---
 # _ecvt
 
-Converts a **double** number to a string. A more secure version of this function is available; see [_ecvt_s](ecvt-s.md).
+Converts a **`double`** number to a string. A more secure version of this function is available; see [_ecvt_s](ecvt-s.md).
 
 ## Syntax
 

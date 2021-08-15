@@ -1,7 +1,8 @@
 ---
+description: "Learn more about: &lt;ostream&gt;"
 title: "&lt;ostream&gt;"
 ms.date: "11/04/2016"
-f1_keywords: ["<ostream>", "ostream/std::<ostream>", "std::<ostream>"]
+f1_keywords: ["<ostream>"]
 helpviewer_keywords: ["ostream header"]
 ms.assetid: 90c3b6fb-57cd-4ae7-99b8-8512f24a67d2
 ---
@@ -19,12 +20,12 @@ Defines the class template [basic_ostream](../standard-library/basic-ostream-cla
 
 |Type name|Description|
 |-|-|
-|[ostream](../standard-library/ostream-typedefs.md#ostream)|Creates a type from `basic_ostream` that is specialized on **char** and `char_traits` specialized on **char**.|
-|[wostream](../standard-library/ostream-typedefs.md#wostream)|Creates a type from `basic_ostream` that is specialized on **wchar_t** and `char_traits` specialized on **wchar_t**.|
+|[ostream](../standard-library/ostream-typedefs.md#ostream)|Creates a type from `basic_ostream` that is specialized on **`char`** and `char_traits` specialized on **`char`**.|
+|[wostream](../standard-library/ostream-typedefs.md#wostream)|Creates a type from `basic_ostream` that is specialized on **`wchar_t`** and `char_traits` specialized on **`wchar_t`**.|
 
 ### Manipulators
 
-|||
+|Name|Description|
 |-|-|
 |[endl](../standard-library/ostream-functions.md#endl)|Terminates a line and flushes the buffer.|
 |[ends](../standard-library/ostream-functions.md#ends)|Terminates a string.|

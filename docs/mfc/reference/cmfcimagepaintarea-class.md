@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCImagePaintArea Class"
 title: "CMFCImagePaintArea Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCImagePaintArea", "AFXIMAGEPAINTAREA/CMFCImagePaintArea", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::CMFCImagePaintArea", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::GetMode", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetBitmap", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetColor", "AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetMode"]
@@ -19,17 +20,15 @@ class CMFCImagePaintArea : public CButton
 
 ### Public Constructors
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCImagePaintArea::CMFCImagePaintArea](#cmfcimagepaintarea)|Constructs a `CMFCImagePaintArea` object.|
 |`CMFCImagePaintArea::~CMFCImagePaintArea`|Destructor.|
 
 ### Public Methods
 
-|||
-|-|-|
 |Name|Description|
+|-|-|
 |[CMFCImagePaintArea::GetMode](#getmode)|Retrieves the current drawing mode.|
 |[CMFCImagePaintArea::SetBitmap](#setbitmap)|Sets the bitmap image for the picture area.|
 |[CMFCImagePaintArea::SetColor](#setcolor)|Sets the current drawing color.|
@@ -73,10 +72,8 @@ CMFCImagePaintArea(CMFCImageEditorDialog* pParentDlg);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pParentDlg*|[in] A pointer to the dialog box that is the parent of the image editor.|
+*pParentDlg*\
+[in] A pointer to the dialog box that is the parent of the image editor.
 
 ## <a name="getmode"></a> CMFCImagePaintArea::GetMode
 
@@ -100,10 +97,8 @@ void SetBitmap(CBitmap* pBitmap);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pBitmap*|[in] The new bitmap image to display.|
+*pBitmap*\
+[in] The new bitmap image to display.
 
 ### Remarks
 
@@ -119,10 +114,8 @@ void SetColor(COLORREF color);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*color*|[in] The new drawing color.|
+*color*\
+[in] The new drawing color.
 
 ### Remarks
 
@@ -140,10 +133,8 @@ void SetMode(IMAGE_EDIT_MODE mode);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*mode*|[in] An [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) value that specifies the current drawing mode.|
+*mode*\
+[in] An [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) value that specifies the current drawing mode.
 
 ## See also
 

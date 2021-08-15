@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Data Member Attributes"
 title: "Data Member Attributes (C++ COM)"
 ms.date: "10/02/2018"
 helpviewer_keywords: ["attributes [C++/CLI], reference topics", "data members [C++], attributes", "data members [C++]"]

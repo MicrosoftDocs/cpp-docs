@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Precompiled Header Files"
 title: "Precompiled Header Files"
 ms.date: "10/24/2019"
 helpviewer_keywords: ["precompiled header files, creating", "PCH files, creating", "cl.exe compiler, precompiling code", ".pch files, creating"]
@@ -81,22 +82,54 @@ Pragmas processed during the creation of a PCH file usually affect the file with
 
 These pragmas affect only the code within the PCH file; they do not affect code that subsequently uses the PCH file:
 
-||||
-|-|-|-|
-|`comment`|`page`|`subtitle`|
-|`linesize`|`pagesize`|`title`|
-|`message`|`skip`||
+:::row:::
+   :::column span="":::
+      `comment`\
+      `linesize`
+   :::column-end:::
+   :::column span="":::
+      `message`\
+      `page`
+   :::column-end:::
+   :::column span="":::
+      `pagesize`\
+      `skip`
+   :::column-end:::
+   :::column span="":::
+      `subtitle`\
+      `title`
+   :::column-end:::
+:::row-end:::
 
 These pragmas are retained as part of a precompiled header, and affect the remainder of a compilation that uses the precompiled header:
 
-||||
-|-|-|-|
-|`alloc_text`|`include_alias`|`pack`|
-|`auto_inline`|`init_seg`|`pointers_to_members`|
-|`check_stack`|`inline_depth`|`setlocale`|
-|`code_seg`|`inline_recursion`|`vtordisp`|
-|`data_seg`|`intrinsic`|`warning`|
-|`function`|`optimize`||
+:::row:::
+   :::column span="":::
+      `alloc_text`\
+      `auto_inline`\
+      `check_stack`\
+      `code_seg`\
+      `data_seg`
+   :::column-end:::
+   :::column span="":::
+      `function`\
+      `include_alias`\
+      `init_seg`\
+      `inline_depth`
+   :::column-end:::
+   :::column span="":::
+      `inline_recursion`\
+      `intrinsic`\
+      `optimize`\
+      `pack`
+   :::column-end:::
+   :::column span="":::
+      `pointers_to_members`\
+      `setlocale`\
+      `vtordisp`\
+      `warning`
+   :::column-end:::
+:::row-end:::
 
 ## Consistency Rules for /Yc and /Yu
 
@@ -129,7 +162,7 @@ The code base of a software project is usually contained in multiple C or C++ so
 
 The figure uses three diagrammatic devices to show the flow of the build process. Named rectangles represent each file or macro; the three macros represent one or more files. Shaded areas represent each compile or link action. Arrows show which files and macros are combined during the compilation or linking process.
 
-![Structure of a makefile that uses a precompiled header file](media/vc30ow1.gif "Structure of a makefile that uses a precompiled header file") <br/>
+![Diagram showing example inputs and outputs of a makefile that uses a precompiled header file.](media/vc30ow1.gif "Structure of a makefile that uses a precompiled header file") <br/>
 Structure of a Makefile That Uses a Precompiled Header File
 
 Beginning at the top of the diagram, both STABLEHDRS and BOUNDRY are NMAKE macros in which you list files not likely to need recompilation. These files are compiled by the command string

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CPrimitiveElementTraits Class"
 title: "CPrimitiveElementTraits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CPrimitiveElementTraits", "ATLCOLL/ATL::CPrimitiveElementTraits", "ATLCOLL/ATL::CPrimitiveElementTraits::INARGTYPE", "ATLCOLL/ATL::CPrimitiveElementTraits::OUTARGTYPE"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cputs"
 title: "cputs"
 ms.date: "12/16/2019"
 api_name: ["cputs"]

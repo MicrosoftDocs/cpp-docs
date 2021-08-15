@@ -1,29 +1,41 @@
 ---
-title: "Scope Resolution Operator: ::"
-ms.date: "11/04/2016"
+title: "Scope resolution operator: `::`"
+description: "Learn how the scope resolution operator `::` works in Standard C++."
+ms.date: 12/06/2020
 f1_keywords: ["::"]
 helpviewer_keywords: ["scope, scope resolution operator", "operators [C++], scope resolution", "scope resolution operator", ":: operator"]
-ms.assetid: fd5de9d3-c716-4e12-bae9-03a16fd79a50
 ---
-# Scope Resolution Operator: ::
+# Scope resolution operator: `::`
 
-The scope resolution operator **::** is used to identify and disambiguate identifiers used in different scopes. For more information about scope, see [Scope](../cpp/scope-visual-cpp.md).
+The scope resolution operator **`::`** is used to identify and disambiguate identifiers used in different scopes. For more information about scope, see [Scope](../cpp/scope-visual-cpp.md).
 
 ## Syntax
 
-```
-:: identifier
-class-name :: identifier
-namespace :: identifier
-enum class :: identifier
-enum struct :: identifier
-```
+> *`qualified-id`*:\
+> &emsp;*`nested-name-specifier`* **`template`**<sub>opt</sub> *`unqualified-id`*
+
+> *`nested-name-specifier`*:\
+> &emsp;**`::`**\
+> &emsp;*`type-name`* **`::`**\
+> &emsp;*`namespace-name`* **`::`**\
+> &emsp;*`decltype-specifier`* **`::`**\
+> &emsp;*`nested-name-specifier`* *`identifier`* **`::`**\
+> &emsp;*`nested-name-specifier`* **`template`**<sub>opt</sub> *`simple-template-id`* **`::`**
+
+> *`unqualified-id`*:\
+> &emsp;*`identifier`*\
+> &emsp;*`operator-function-id`*\
+> &emsp;*`conversion-function-id`*\
+> &emsp;*`literal-operator-id`*\
+> &emsp;**`~`** *`type-name`*\
+> &emsp;**`~`** *`decltype-specifier`*\
+> &emsp;*`template-id`*
 
 ## Remarks
 
 The `identifier` can be a variable, a function, or an enumeration value.
 
-## With Classes and Namespaces
+## Use `::` for classes and namespaces
 
 The following example shows how the scope resolution operator is used with namespaces and classes:
 
@@ -69,7 +81,7 @@ int main() {
 }
 ```
 
-You can use the scope resolution operator to identify a member of a namespace, or to identify a namespace that nominates the member’s namespace in a using-directive. In the example below, you can use `NamespaceC` to qualify `ClassB`, even though `ClassB` was declared in namespace `NamespaceB`, because `NamespaceB` was nominated in `NamespaceC` by a using directive.
+You can use the scope resolution operator to identify a member of a **`namespace`**, or to identify a namespace that nominates the member’s namespace in a **`using`** directive. In the example below, you can use `NamespaceC` to qualify `ClassB`, even though `ClassB` was declared in namespace `NamespaceB`, because `NamespaceB` was nominated in `NamespaceC` by a **`using`** directive.
 
 ```cpp
 namespace NamespaceB {
@@ -80,14 +92,15 @@ namespace NamespaceB {
 }
 
 namespace NamespaceC{
-    using namespace B;
+    using namespace NamespaceB;
 }
-int main() {
-    NamespaceB::ClassB c_b;
-    NamespaceC::ClassB c_c;
 
-    c_b.x = 3;
-    c_c.x = 4;
+int main() {
+    NamespaceB::ClassB b_b;
+    NamespaceC::ClassB c_b;
+
+    b_b.x = 3;
+    c_b.x = 4;
 }
 ```
 
@@ -117,7 +130,7 @@ int main() {
 }
 ```
 
-## With Static Members
+## Use `::` for static members
 
 You must use the scope resolution operator to call static members of classes.
 
@@ -137,9 +150,9 @@ int main() {
 }
 ```
 
-## With Scoped Enumerations
+## Use `::` for scoped enumerations
 
-The scoped resolution operator is also used with the values of a scoped enumeration [Enumeration Declarations](../cpp/enumerations-cpp.md), as in the following example:
+The scoped resolution operator is also used with the values of a scoped enumeration [Enumeration declarations](../cpp/enumerations-cpp.md), as in the following example:
 
 ```cpp
 enum class EnumA{
@@ -155,5 +168,5 @@ int main() {
 
 ## See also
 
-[C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C++ built-in operators, precedence, and associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [Namespaces](../cpp/namespaces-cpp.md)

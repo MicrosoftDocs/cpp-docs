@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDataSource Class"
 title: "CDataSource Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL.CDataSource", "ATL::CDataSource", "CDataSource", "ATL::CDataSource::Close", "ATL.CDataSource.Close", "CDataSource::Close", "CDataSource.Close", "ATL::CDataSource::GetInitializationString", "CDataSource.GetInitializationString", "GetInitializationString", "CDataSource::GetInitializationString", "ATL.CDataSource.GetInitializationString", "CDataSource::GetProperties", "ATL.CDataSource.GetProperties", "CDataSource.GetProperties", "ATL::CDataSource::GetProperties", "ATL::CDataSource::GetProperty", "ATL.CDataSource.GetProperty", "CDataSource.GetProperty", "CDataSource::GetProperty", "ATL::CDataSource::Open", "ATL.CDataSource.Open", "CDataSource::Open", "CDataSource.Open", "CDataSource::OpenFromFileName", "ATL::CDataSource::OpenFromFileName", "OpenFromFileName", "CDataSource.OpenFromFileName", "ATL.CDataSource.OpenFromFileName", "CDataSource.OpenFromInitializationString", "OpenFromInitializationString", "CDataSource::OpenFromInitializationString", "ATL::CDataSource::OpenFromInitializationString", "ATL.CDataSource.OpenFromInitializationString", "CDataSource.OpenWithPromptFileName", "OpenWithPromptFileName", "ATL::CDataSource::OpenWithPromptFileName", "ATL.CDataSource.OpenWithPromptFileName", "CDataSource::OpenWithPromptFileName", "CDataSource::OpenWithServiceComponents", "OpenWithServiceComponents", "CDataSource.OpenWithServiceComponents"]
@@ -23,7 +24,7 @@ class CDataSource
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Close](#close)|Closes the connection.|
 |[GetInitializationString](#getinitializationstring)|Retrieves the initialization string of the data source that is currently open.|
@@ -37,7 +38,7 @@ class CDataSource
 
 ## Remarks
 
-One or more database sessions can be created for a single connection. These sessions are represented by `CSession`. You must call [CDataSource::Open](../../data/oledb/cdatasource-open.md) to open the connection before creating a session with `CSession::Open`.
+One or more database sessions can be created for a single connection. These sessions are represented by `CSession`. You must call [CDataSource::Open](#open) to open the connection before creating a session with `CSession::Open`.
 
 For an example of how to use `CDataSource`, see the [CatDB](../../overview/visual-cpp-samples.md) sample.
 
@@ -68,7 +69,7 @@ HRESULT GetInitializationString(BSTR* pInitializationString,
 [out] A pointer to the initialization string.
 
 *bIncludePassword*<br/>
-[in] **true** if string includes a password; otherwise **false**.
+[in] **`true`** if string includes a password; otherwise **`false`**.
 
 ### Return Value
 
@@ -101,7 +102,7 @@ A standard HRESULT.
 
 ### Remarks
 
-To get a single property, use [GetProperty](../../data/oledb/cdatasource-getproperty.md).
+To get a single property, use [GetProperty](#getproperty).
 
 ## <a name="getproperty"></a> CDataSource::GetProperty
 
@@ -132,7 +133,7 @@ A standard HRESULT.
 
 ### Remarks
 
-To get multiple properties, use [GetProperties](../../data/oledb/cdatasource-getproperties.md).
+To get multiple properties, use [GetProperties](#getproperties).
 
 ## <a name="open"></a> CDataSource::Open
 
@@ -272,9 +273,9 @@ HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString,
 [in] The initialization string.
 
 *fPromptForInfo*<br/>
-[in] If this argument is set to **true**, then `OpenFromInitializationString` will set the DBPROP_INIT_PROMPT property to DBPROMPT_COMPLETEREQUIRED, which specifies that the user be prompted only if more information is needed. This is useful for situations in which the initialization string specifies a database that requires a password, but the string does not contain the password. The user will be prompted for a password (or any other missing information) when trying to connect to the database.
+[in] If this argument is set to **`true`**, then `OpenFromInitializationString` will set the DBPROP_INIT_PROMPT property to DBPROMPT_COMPLETEREQUIRED, which specifies that the user be prompted only if more information is needed. This is useful for situations in which the initialization string specifies a database that requires a password, but the string does not contain the password. The user will be prompted for a password (or any other missing information) when trying to connect to the database.
 
-The default value is **false**, which specifies that the user never be prompted (sets DBPROP_INIT_PROMPT to DBPROMPT_NOPROMPT).
+The default value is **`false`**, which specifies that the user never be prompted (sets DBPROP_INIT_PROMPT to DBPROMPT_NOPROMPT).
 
 ### Return Value
 

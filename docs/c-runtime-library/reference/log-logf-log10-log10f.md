@@ -1,8 +1,9 @@
 ---
 title: "log, logf, logl, log10, log10f, log10l"
-ms.date: "4/2/2020"
-api_name: ["log10f", "logf", "log10", "log", "log10l", "logl", "_o_log", "_o_log10"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+description: "API reference for log, logf, logl, log10, log10f, and log10l; which calculate logarithms."
+ms.date: "9/1/2020"
+api_name: ["log10f", "logf", "log10", "log", "log10l", "logl", "_o_log", "_o_log10", "_o_log10f", "_o_logf"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["logf", "logl", "_log10l", "log", "_logl", "log10f", "log10l", "log10"]
@@ -16,24 +17,24 @@ Calculates logarithms.
 ## Syntax
 
 ```C
-double log( double x );
-float logf( float x );
-long double logl( double x );
-double log10( double x );
-float log10f ( float x );
-long double log10l( double x );
-```
+double log(double x);
+float logf(float x);
+long double logl(double x);
+double log10(double x);
+float log10f (float x);
+long double log10l(double x);
+#define log(X) // Requires C11 or higher
+#define log10(X) // Requires C11 or higher
 
-```cpp
-float log( float x );  // C++ only
-long double log( long double x );  // C++ only
-float log10( float x );  // C++ only
-long double log10( long double x );  // C++ only
+float log(float x);  // C++ only
+long double log(long double x);  // C++ only
+float log10(float x);  // C++ only
+long double log10(long double x);  // C++ only
 ```
 
 ### Parameters
 
-*x*<br/>
+*x*\
 Value whose logarithm is to be found.
 
 ## Return Value
@@ -50,7 +51,9 @@ The **log** functions return the natural logarithm (base *e*) of *x* if successf
 
 ## Remarks
 
-C++ allows overloading, so you can call overloads of **log** and **log10** that take and return **float** or **long double** values. In a C program, **log** and **log10** always take and return a **double**.
+C++ allows overloading, so you can call overloads of **log** and **log10** that take and return **`float`** or **`long double`** values. In a C program, unless you're using the \<tgmath.h> macro to call this function, **log** and **log10** always take and return a **`double`**.
+
+If you use the \<tgmath.h> `log()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -59,6 +62,7 @@ By default, this function's global state is scoped to the application. To change
 |Routine|Required header|
 |-------------|---------------------|
 |**log**, **logf**, **logl**, **log10**, **log10f**, **log10l**|\<math.h>|
+|**log** macro | \<tgmath.h> |
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CCreateContext Structure"
 title: "CCreateContext Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["CCreateContext"]

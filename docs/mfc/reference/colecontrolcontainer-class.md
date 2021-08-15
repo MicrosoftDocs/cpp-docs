@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: COleControlContainer Class"
 title: "COleControlContainer Class"
 ms.date: "11/04/2016"
 f1_keywords: ["COleControlContainer", "AFXOCC/COleControlContainer", "AFXOCC/COleControlContainer::COleControlContainer", "AFXOCC/COleControlContainer::AttachControlSite", "AFXOCC/COleControlContainer::BroadcastAmbientPropertyChange", "AFXOCC/COleControlContainer::CheckDlgButton", "AFXOCC/COleControlContainer::CheckRadioButton", "AFXOCC/COleControlContainer::CreateControl", "AFXOCC/COleControlContainer::CreateOleFont", "AFXOCC/COleControlContainer::FindItem", "AFXOCC/COleControlContainer::FreezeAllEvents", "AFXOCC/COleControlContainer::GetAmbientProp", "AFXOCC/COleControlContainer::GetDlgItem", "AFXOCC/COleControlContainer::GetDlgItemInt", "AFXOCC/COleControlContainer::GetDlgItemText", "AFXOCC/COleControlContainer::HandleSetFocus", "AFXOCC/COleControlContainer::HandleWindowlessMessage", "AFXOCC/COleControlContainer::IsDlgButtonChecked", "AFXOCC/COleControlContainer::OnPaint", "AFXOCC/COleControlContainer::OnUIActivate", "AFXOCC/COleControlContainer::OnUIDeactivate", "AFXOCC/COleControlContainer::ScrollChildren", "AFXOCC/COleControlContainer::SendDlgItemMessage", "AFXOCC/COleControlContainer::SetDlgItemInt", "AFXOCC/COleControlContainer::SetDlgItemText", "AFXOCC/COleControlContainer::m_crBack", "AFXOCC/COleControlContainer::m_crFore", "AFXOCC/COleControlContainer::m_listSitesOrWnds", "AFXOCC/COleControlContainer::m_nWindowlessControls", "AFXOCC/COleControlContainer::m_pOleFont", "AFXOCC/COleControlContainer::m_pSiteCapture", "AFXOCC/COleControlContainer::m_pSiteFocus", "AFXOCC/COleControlContainer::m_pSiteUIActive", "AFXOCC/COleControlContainer::m_pWnd", "AFXOCC/COleControlContainer::m_siteMap"]
@@ -399,7 +400,7 @@ The identifier of the control.
 Pointer to a Boolean variable that receives a function success/failure value (TRUE indicates success, FALSE indicates failure).
 
 *bSigned*<br/>
-Specifies whether the function should examine the text for a minus sign at the beginning and return a signed integer value if it finds one. If the *bSigned* parameter is TRUE, specifying that the value to be retrieved is a signed integer value, cast the return value to an **int** type. To get extended error information, call [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Specifies whether the function should examine the text for a minus sign at the beginning and return a signed integer value if it finds one. If the *bSigned* parameter is TRUE, specifying that the value to be retrieved is a signed integer value, cast the return value to an **`int`** type. To get extended error information, call [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
 ### Return Value
 

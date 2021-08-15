@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDocHostUIHandlerDispatch Interface"
 title: "IDocHostUIHandlerDispatch Interface"
 ms.date: "07/02/2019"
 f1_keywords: ["IDocHostUIHandlerDispatch", "atlbase/ATL::IDocHostUIHandlerDispatch"]
@@ -25,7 +26,7 @@ interface IDocHostUIHandlerDispatch : IDispatch
 > [!NOTE]
 > The links in the following table are to the INet SDK reference topics for the members of the [IDocUIHostHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260\(v=vs.85\)) interface. `IDocHostUIHandlerDispatch` has the same functionality as `IDocUIHostHandler`, with the difference being that `IDocHostUIHandlerDispatch` is a dispinterface whereas `IDocUIHostHandler` is a custom interface.
 
-|||
+|Name|Description|
 |-|-|
 |[EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\))|Called from MSHTML implementation of [IOleInPlaceActiveObject::EnableModeless](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless). Also called when MSHTML displays modal UI.|
 |[FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\))|Called on the host by MSHTML to allow the host to replace MSHTML's data object.|

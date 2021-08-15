@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: STRUCT"
 title: "STRUCT (MASM)"
 ms.date: "12/17/2019"
 f1_keywords: ["struct"]
@@ -11,7 +12,7 @@ Declares a structure type having the specified *field-declarations*. Each field 
 
 ## Syntax
 
-> *name* **STRUCT** ⟦*alignment*⟧ ⟦__,__ **NONUNIQUE**⟧
+> *name* **STRUCT** ⟦*alignment*⟧ ⟦__,__ **NONUNIQUE**⟧\
 > *field-declarations*\
 > *name* **ENDS**
 

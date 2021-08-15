@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reference-Type Function Returns"
 title: "Reference-Type Function Returns"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["function return types [C++], reference type", "data types [C++], function return types", "functions [C++], return types"]
@@ -77,7 +78,7 @@ Note also that in main, ThePoint object remains in scope, and therefore its refe
 
 Declarations of reference types must contain initializers except in the following cases:
 
-- Explicit **extern** declaration
+- Explicit **`extern`** declaration
 
 - Declaration of a class member
 

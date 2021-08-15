@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tracking Reference Operator (C++/CLI and C++/CX)"
 title: "Tracking Reference Operator (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
@@ -22,7 +23,7 @@ A tracking reference has the following characteristics.
 
 - Tracking references are valid for value types and handles (for example `String^`).
 
-- A tracking reference cannot be assigned a null or **nullptr** value. A tracking reference may be reassigned to another valid object as many times as required.
+- A tracking reference cannot be assigned a null or **`nullptr`** value. A tracking reference may be reassigned to another valid object as many times as required.
 
 - A tracking reference cannot be used as a unary take-address operator.
 

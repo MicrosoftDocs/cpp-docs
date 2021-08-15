@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4944"
 title: "Compiler Warning (level 1) C4944"
 ms.date: "11/04/2016"
 f1_keywords: ["C4944"]
@@ -11,7 +12,7 @@ ms.assetid: e2905eb1-2e3b-4fab-a48b-c0cae0fd997f
 
 A symbol was defined in a source code file and then a #using statement referenced an assembly that also defined the symbol. The symbol in the assembly is ignored.
 
-## Example
+## Examples
 
 The following sample creates a component with a type called ClassA.
 
@@ -23,8 +24,6 @@ public class ClassA {
    public int i;
 }
 ```
-
-## Example
 
 The following samples generate C4944.
 

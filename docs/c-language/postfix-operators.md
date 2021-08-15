@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Postfix Operators"
 title: "Postfix Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operators [C], postfix", "postfix operators"]

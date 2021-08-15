@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: tmpnam_s, _wtmpnam_s"
 title: "tmpnam_s, _wtmpnam_s"
 ms.date: "4/2/2020"
 api_name: ["tmpnam_s", "_wtmpnam_s", "_o__wtmpnam_s", "_o_tmpnam_s"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["tmpnam_s", "_wtmpnam_s", "L_tmpnam_s"]
@@ -48,11 +49,10 @@ Both of these functions return 0 if successful or an error number on failure.
 
 ### Error Conditions
 
-|||||
-|-|-|-|-|
-|*str*|*sizeInChars*|**Return Value**|**Contents of**  *str*|
-|**NULL**|any|**EINVAL**|not modified|
-|not **NULL** (points to valid memory)|too short|**ERANGE**|not modified|
+| *str* | *sizeInChars* | **Return Value** | **Contents of** *str* |
+|--|--|--|--|
+| **NULL** | any | **EINVAL** | not modified |
+| not **NULL** (points to valid memory) | too short | **ERANGE** | not modified |
 
 If *str* is **NULL**, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EINVAL**.
 

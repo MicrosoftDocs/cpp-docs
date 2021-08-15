@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Naked Functions"
 title: "Naked Functions"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["naked functions", "functions [C++], naked", "prolog code", "epilog code"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: AFX Messages"
 title: "AFX Messages"
 ms.date: "11/04/2016"
 f1_keywords: ["SB_LINELEFT", "SB_THUMBTRACK", "AFX_TOOLTIP_TYPE_EDIT", "AFX_WM_ON_HSCROLL", "SB_PAGERIGHT", "AFX_WM_RESETPROMPT", "AFX_WM_CHANGE_RIBBON_CATEGORY", "AFX_TOOLTIP_TYPE_MINIFRAME", "AFX_WM_CUSTOMIZETOOLBAR", "AFX_WM_CHANGE_ACTIVE_TAB", "AFX_WM_ACCGETOBJECT", "AFX_WM_TOOLBARMENU", "AFX_TOOLTIP_TYPE_DOCKBAR", "AFX_WM_CUSTOMIZEHELP", "AFX_WM_ON_GET_TAB_TOOLTIP", "AFX_WM_ON_RIBBON_CUSTOMIZE", "AFX_WM_ON_DRAGCOMPLETE", "AFX_WM_RESETTOOLBAR", "AFX_WM_ON_MOVETOTABGROUP", "AFX_WM_CHECKEMPTYMINIFRAME", "AFX_WM_GETDOCUMENTCOLORS", "SB_RIGHT", "AFX_WM_ON_BEFORE_SHOW_RIBBON_ITEM_MENU", "AFX_WM_ACCGETSTATE", "SB_PAGELEFT", "SB_ENDSCROLL", "AFX_WM_ON_CANCELTABMOVE", "AFX_TOOLTIP_TYPE_TAB", "AFX_WM_WINDOW_HELP", "AFX_WM_HIGHLIGHT_RIBBON_LIST_ITEM", "AFX_WM_SHOWREGULARMENU", "AFX_TOOLTIP_TYPE_TOOLBAR", "AFX_WM_CHANGE_CURRENT_FOLDER", "AFX_WM_UPDATETOOLTIPS", "AFX_WM_ON_MOVE_TAB", "AFX_WM_CHANGING_ACTIVE_TAB", "AFX_WM_RESETMENU", "AFX_WM_GETDRAGBOUNDS", "AFX_WM_RESETCONTEXTMENU", "AFX_TOOLTIP_TYPE_BUTTON", "AFX_WM_ON_CLOSEPOPUPWINDOW", "AFX_TOOLTIP_TYPE_TOOLBOX", "AFX_WM_CHANGEVISUALMANAGER", "SB_LINERIGHT", "AFX_WM_ON_RENAME_TAB", "AFX_TOOLTIP_TYPE_DEFAULT", "AFX_WM_ON_TABGROUPMOUSEMOVE", "SB_LEFT", "AFX_WM_DELETETOOLBAR", "AFX_WM_PROPERTY_CHANGED", "AFX_TOOLTIP_TYPE_ALL", "AFX_WM_ACCHITTEST", "AFX_WM_ON_AFTER_SHELL_COMMAND", "AFX_WM_ON_PRESS_CLOSE_BUTTON", "AFX_WM_RESETKEYBOARD", "AFX_WM_ON_MOVETABCOMPLETE", "AFX_WM_CREATETOOLBAR", "SB_THUMBPOSITION", "AFX_WM_POSTSETPREVIEWFRAME"]
@@ -13,9 +14,8 @@ These messages are used in MFC.
 
 The following table lists messages that are used in the MFC library:
 
-||||||
-|-|-|-|-|-|
 |Message|Description|[in] *wParam*|*lParam* (All parameters are [in] unless otherwise stated.)|Return Value|
+|-|-|-|-|-|
 |AFX_WM_ACCGETOBJECT|Not used.|Not used.|Not applicable.|Not applicable.|
 |AFX_WM_ACCGETSTATE|Used for accessibility support. Send this message to `CMFCPopupMenu` or `CMFCRibbonPanelMenu` to retrieve the state of the current element.|Index of element, which could be a menu button or separator.|Not used.|The element state. It is -1 if the index is invalid, 0 if the menu button has no special attributes. Otherwise it is a combination of the following flags:<br /><br /> TBBS_DISABLED — item is disabled<br /><br /> TBBS_CHECKED — item is checked<br /><br /> TBBS_BUTTON — the item is a standard pushbutton<br /><br /> TBBS_PRESSED — button is pressed<br /><br /> TBBS_INDETERMINATE — undefined state<br /><br /> TBBS_SEPARATOR - rather than a menu button, this element forms a separation between other menu items|
 |AFX_WM_CHANGE_ACTIVE_TAB|The framework sends this message to the resizable control bar control. Process this message to receive notifications from `CMFCTabCtrl` objects when a user changes an active tab.|The index of a tab.|Not used.|Nonzero.|
@@ -59,9 +59,8 @@ The following table lists messages that are used in the MFC library:
 
 The following table shows the values for the low word of the *lParam* parameter of the AFX_WM_HSCROLL method:
 
-|||
-|-|-|
 |Value|Meaning|
+|-|-|
 |SB_ENDSCROLL|The user ends the scroll.|
 |SB_LEFT|The user scrolls to the upper-left.|
 |SB_RIGHT|The user scrolls to the lower-right.|
@@ -77,9 +76,8 @@ The following table shows the values for the low word of the *lParam* parameter 
 
 The following table lists the flag values for the *lParam* parameter of the AFX_WM_UPDATETOOLTIPS message:
 
-|||
-|-|-|
 |Flag|Value|
+|-|-|
 |AFX_TOOLTIP_TYPE_DEFAULT|0x0001|
 |AFX_TOOLTIP_TYPE_TOOLBAR|0x0002|
 |AFX_TOOLTIP_TYPE_TAB|0x0004|

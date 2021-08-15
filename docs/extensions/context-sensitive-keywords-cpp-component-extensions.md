@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Context-Sensitive Keywords  (C++/CLI and C++/CX)"
 title: "Context-Sensitive Keywords  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
@@ -64,7 +65,7 @@ Compiler option: `/clr`
 
 ### Examples
 
-The following code example shows that in the appropriate context, the **property** context-sensitive keyword can be used to define a property and a variable.
+The following code example shows that in the appropriate context, the **`property`** context-sensitive keyword can be used to define a property and a variable.
 
 ```cpp
 // context_sensitive_keywords.cpp

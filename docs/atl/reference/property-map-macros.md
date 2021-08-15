@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property Map Macros"
 title: "Property Map Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcom/ATL::BEGIN_PROP_MAP", "atlcom/ATL::PROP_DATA_ENTRY", "atlcom/ATL::PROP_ENTRY_TYPE", "atlcom/ATL::PROP_ENTRY_TYPE_EX", "atlcom/ATL::PROP_PAGE", "atlcom/ATL::END_PROP_MAP"]
@@ -9,7 +10,7 @@ ms.assetid: 128bc742-2b98-4b97-a243-684dbb83db77
 
 These macros define property maps and entries.
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_PROP_MAP](#begin_prop_map)|Marks the beginning of the ATL property map.|
 |[PROP_DATA_ENTRY](#prop_data_entry)|Indicates the extent, or dimensions, of an ActiveX control.|

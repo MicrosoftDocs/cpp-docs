@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /MAPINFO (Include Information in Mapfile)"
 title: "/MAPINFO (Include Information in Mapfile)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCLinkerTool.MapLines", "VC.Project.VCLinkerTool.MapInfoFixups", "VC.Project.VCLinkerTool.MapExports", "/mapinfo"]
@@ -19,9 +20,7 @@ The /MAPINFO option tells the linker to include the specified information in a m
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **Linker** folder.
-
-1. Click the **Debug** property page.
+1. Select the **Configuration Properties** > **Linker** > **Debug** property page.
 
 1. Modify of the **Map Exports** properties:
 

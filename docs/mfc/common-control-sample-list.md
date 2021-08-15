@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Common Control Sample List"
 title: "Common Control Sample List"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sample applications [MFC], common controls"]
@@ -16,4 +17,4 @@ See the following sample programs that illustrate common controls:
 
 ## See also
 
-[Controls](../mfc/controls-mfc.md)
+[Controls](controls-mfc.md)

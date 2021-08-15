@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Load a Ribbon Resource from an MFC Application"
 title: "How to: Load a Ribbon Resource from an MFC Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ribbon resource [MFC], loading"]
@@ -32,4 +33,4 @@ To use the ribbon resource in your application, modify the application to load t
 
 ## See also
 
-[Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)
+[Ribbon Designer (MFC)](ribbon-designer-mfc.md)

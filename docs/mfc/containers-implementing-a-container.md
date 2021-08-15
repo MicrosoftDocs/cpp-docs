@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Containers: Implementing a Container"
 title: "Containers: Implementing a Container"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["applications [OLE], OLE container", "OLE containers [MFC], implementing"]
@@ -12,9 +13,9 @@ This article summarizes the procedure for implementing a container and points yo
 
 1. Initialize the OLE libraries by calling `AfxOleInit` in the `InitInstance` member function.
 
-1. Call `CDocTemplate::SetContainerInfo` in `InitInstance` to assign the menu and accelerator resources used when an embedded item is activated in-place. For more information on this topic, see [Activation](../mfc/activation-cpp.md).
+1. Call `CDocTemplate::SetContainerInfo` in `InitInstance` to assign the menu and accelerator resources used when an embedded item is activated in-place. For more information on this topic, see [Activation](activation-cpp.md).
 
-These features are provided for you automatically when you use the MFC Application Wizard to create a container application. See [Creating an MFC EXE Program](../mfc/reference/mfc-application-wizard.md).
+These features are provided for you automatically when you use the MFC Application Wizard to create a container application. See [Creating an MFC EXE Program](reference/mfc-application-wizard.md).
 
 #### To prepare your view class
 
@@ -32,29 +33,29 @@ Because the implementation of these features varies dramatically from one applic
 
 #### To handle embedded and linked items
 
-1. Derive a class from [COleClientItem](../mfc/reference/coleclientitem-class.md). Objects of this class represent items that have been embedded in or linked to your OLE document.
+1. Derive a class from [COleClientItem](reference/coleclientitem-class.md). Objects of this class represent items that have been embedded in or linked to your OLE document.
 
 1. Override `OnChange`, `OnChangeItemPosition`, and `OnGetItemPosition`. These functions handle sizing, positioning, and modifying embedded and linked items.
 
 The application wizard will derive the class for you, but you will likely need to override `OnChange` and the other functions listed with it in step 2 in the preceding procedure. The skeleton implementations need to be customized for most applications, because these functions are implemented differently from one application to the next. For examples of this, see the MFC samples [DRAWCLI](../overview/visual-cpp-samples.md) and [CONTAINER](../overview/visual-cpp-samples.md).
 
-You must add a number of items to the container application's menu structure to support OLE. For more information on these, see [Menus and Resources: Container Additions](../mfc/menus-and-resources-container-additions.md).
+You must add a number of items to the container application's menu structure to support OLE. For more information on these, see [Menus and Resources: Container Additions](menus-and-resources-container-additions.md).
 
 You may also want to support some of the following features in your container application:
 
 - In-place activation when editing an embedded item.
 
-   For more information, see [Activation](../mfc/activation-cpp.md).
+   For more information, see [Activation](activation-cpp.md).
 
 - Creation of OLE items by dragging and dropping a selection from a server application.
 
-   For more information, see [OLE drag and drop](../mfc/drag-and-drop-ole.md).
+   For more information, see [OLE drag and drop](drag-and-drop-ole.md).
 
 - Links to embedded objects or combination container/server applications.
 
-   For more information, see [Containers: Advanced Features](../mfc/containers-advanced-features.md).
+   For more information, see [Containers: Advanced Features](containers-advanced-features.md).
 
 ## See also
 
-[Containers](../mfc/containers.md)<br/>
-[Containers: Client Items](../mfc/containers-client-items.md)
+[Containers](containers.md)<br/>
+[Containers: Client Items](containers-client-items.md)

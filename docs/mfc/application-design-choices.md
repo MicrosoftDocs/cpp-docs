@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Application Design Choices"
 title: "Application Design Choices"
 ms.date: "09/12/2019"
 helpviewer_keywords: ["design", "application design [MFC], design goals", "application design [MFC], Internet applications", "Internet applications [MFC], designing applications", "Internet [MFC], vs. intranets", "applications [MFC], Internet", "server applications [MFC], vs. client applications on Internet", "client applications [MFC], vs. server applications on Internet"]
@@ -22,7 +23,7 @@ Topics covered in this article include:
 
 - [Client Data Download Services](#_core_client_data_download_services)
 
-If you are ready to start writing your program now, see [Writing MFC Applications](../mfc/writing-mfc-applications.md).
+If you are ready to start writing your program now, see [Writing MFC Applications](writing-mfc-applications.md).
 
 ## <a name="_core_intranet_versus_internet"></a> Intranet Versus Internet
 
@@ -62,19 +63,19 @@ Asynchronous monikers provide features to enable a control to perform well in an
 
 Two sets of APIs that will help transfer data to your client are WinInet and asynchronous monikers. If you have large .gif and .avi files and ActiveX controls on your HTML page, you can increase the responsiveness to the user by downloading asynchronously, either by using asynchronous monikers or using WinInet asynchronously.
 
-A common task on the Internet is transferring data. If you are already using Active technology (for example, if you have an ActiveX control), you can use asynchronous monikers to progressively render data as it downloads. You can use WinInet to transfer data using common Internet protocols like HTTP, FTP, and gopher. Both methods provide protocol independence, and provide an abstract layer to using WinSock and TCP/IP. You can still use [WinSock](../mfc/windows-sockets-in-mfc.md) directly.
+A common task on the Internet is transferring data. If you are already using Active technology (for example, if you have an ActiveX control), you can use asynchronous monikers to progressively render data as it downloads. You can use WinInet to transfer data using common Internet protocols like HTTP, FTP, and gopher. Both methods provide protocol independence, and provide an abstract layer to using WinSock and TCP/IP. You can still use [WinSock](windows-sockets-in-mfc.md) directly.
 
 The following table summarizes several ways of using MFC to transfer data across the Internet.
 
 |Use this protocol|Under these conditions|Using these classes|
 |-----------------------|----------------------------|-------------------------|
-|[Internet Downloading Using Asynchronous Monikers](../mfc/asynchronous-monikers-on-the-internet.md)|For asynchronous transfer using COM, ActiveX controls, and any Internet protocol.|[CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md), [CDataPathProperty](../mfc/reference/cdatapathproperty-class.md)|
-|[WinInet](../mfc/win32-internet-extensions-wininet.md)|For Internet protocols for HTTP, FTP, and gopher. Data can be transferred synchronously or asynchronously and is stored in a system-wide cache.|[CInternetSession](../mfc/reference/cinternetsession-class.md), [CFtpFileFind](../mfc/reference/cftpfilefind-class.md), [CGopherFileFind](../mfc/reference/cgopherfilefind-class.md), and many more.|
-|[WinSock](../mfc/windows-sockets-in-mfc.md)|For maximum efficiency and control. Requires understanding of sockets and TCP/IP protocols.|[CSocket](../mfc/reference/csocket-class.md), [CAsyncSocket](../mfc/reference/casyncsocket-class.md)|
+|[Internet Downloading Using Asynchronous Monikers](asynchronous-monikers-on-the-internet.md)|For asynchronous transfer using COM, ActiveX controls, and any Internet protocol.|[CAsyncMonikerFile](reference/casyncmonikerfile-class.md), [CDataPathProperty](reference/cdatapathproperty-class.md)|
+|[WinInet](win32-internet-extensions-wininet.md)|For Internet protocols for HTTP, FTP, and gopher. Data can be transferred synchronously or asynchronously and is stored in a system-wide cache.|[CInternetSession](reference/cinternetsession-class.md), [CFtpFileFind](reference/cftpfilefind-class.md), [CGopherFileFind](reference/cgopherfilefind-class.md), and many more.|
+|[WinSock](windows-sockets-in-mfc.md)|For maximum efficiency and control. Requires understanding of sockets and TCP/IP protocols.|[CSocket](reference/csocket-class.md), [CAsyncSocket](reference/casyncsocket-class.md)|
 
 ## See also
 
-[MFC Internet Programming Tasks](../mfc/mfc-internet-programming-tasks.md)<br/>
-[MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)<br/>
-[Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[Asynchronous Monikers on the Internet](../mfc/asynchronous-monikers-on-the-internet.md)
+[MFC Internet Programming Tasks](mfc-internet-programming-tasks.md)<br/>
+[MFC Internet Programming Basics](mfc-internet-programming-basics.md)<br/>
+[Win32 Internet Extensions (WinInet)](win32-internet-extensions-wininet.md)<br/>
+[Asynchronous Monikers on the Internet](asynchronous-monikers-on-the-internet.md)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: max_fixed_size Class"
 title: "max_fixed_size Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::max_fixed_size", "allocators/stdext::max_fixed_size::allocated", "allocators/stdext::max_fixed_size::deallocated", "allocators/stdext::max_fixed_size::full", "allocators/stdext::max_fixed_size::released", "allocators/stdext::max_fixed_size::saved"]
@@ -18,9 +19,8 @@ class max_fixed_size
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Max*|The max class that determines the maximum number of elements to store in the `freelist`.|
+*Max*\
+The max class that determines the maximum number of elements to store in the `freelist`.
 
 ### Constructors
 
@@ -54,13 +54,12 @@ void allocated(std::size_t _Nx = 1);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*_Nx*|The increment value.|
+*_Nx*\
+The increment value.
 
 ### Remarks
 
-The member function does nothing. This member function is called after each successful call by `cache_freelist::allocate` to operator **new**. The argument *_Nx* is the number of memory blocks in the chunk allocated by operator **new**.
+The member function does nothing. This member function is called after each successful call by `cache_freelist::allocate` to operator **`new`**. The argument *_Nx* is the number of memory blocks in the chunk allocated by operator **`new`**.
 
 ## <a name="deallocated"></a> max_fixed_size::deallocated
 
@@ -72,13 +71,12 @@ void deallocated(std::size_t _Nx = 1);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*_Nx*|The increment value.|
+*_Nx*\
+The increment value.
 
 ### Remarks
 
-The member function does nothing. This member function is called after each call by `cache_freelist::deallocate` to operator **delete**. The argument *_Nx* is the number of memory blocks in the chunk deallocated by operator **delete**.
+The member function does nothing. This member function is called after each call by `cache_freelist::deallocate` to operator **`delete`**. The argument *_Nx* is the number of memory blocks in the chunk deallocated by operator **`delete`**.
 
 ## <a name="full"></a> max_fixed_size::full
 
@@ -90,11 +88,11 @@ bool full();
 
 ### Return Value
 
-**true** if `Max <= _Nblocks`; otherwise, **false**.
+**`true`** if `Max <= _Nblocks`; otherwise, **`false`**.
 
 ### Remarks
 
-This member function is called by `cache_freelist::deallocate`. If the call returns **true**, `deallocate` puts the memory block on the free list; if it returns false, `deallocate` calls operator **delete** to deallocate the block.
+This member function is called by `cache_freelist::deallocate`. If the call returns **`true`**, `deallocate` puts the memory block on the free list; if it returns false, `deallocate` calls operator **`delete`** to deallocate the block.
 
 ## <a name="max_fixed_size"></a> max_fixed_size::max_fixed_size
 

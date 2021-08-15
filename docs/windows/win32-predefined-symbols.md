@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Win32 Predefined Symbols"
 title: "Win32 Predefined Symbols"
 ms.date: "02/14/2019"
 helpviewer_keywords: ["Win32 [C++], predefined symbols", "symbols [C++], Win32 predefined", "Windows API [C++], predefined symbols"]
@@ -8,7 +9,7 @@ ms.assetid: 45c8e193-ee2a-4024-bfc2-34d1ec9c9239
 
 These symbols are defined in the Win32 header files and they support standard Windows application functions and actions. These symbols are mainly used with common UI elements. When you are working with controls in the resource editors, these symbols will appear in the [Properties window](/visualstudio/ide/reference/properties-window) associated with common controls. For instance, if your toolbar should display the application icon, the icon will be associated with the symbol IDI_SMALL in the **Property** window.
 
-|||
+|Name|Description|
 |-|-|
 |IDABORT|(control) Dialog box, Abort button|
 |IDC_STATIC|(control) Static text in a dialog box|

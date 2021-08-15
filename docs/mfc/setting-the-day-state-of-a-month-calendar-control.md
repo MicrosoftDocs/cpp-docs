@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Setting the Day State of a Month Calendar Control"
 title: "Setting the Day State of a Month Calendar Control"
 ms.date: "11/04/2016"
 f1_keywords: ["MCN_GETDAYSTATE"]

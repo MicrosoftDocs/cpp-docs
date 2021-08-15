@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C2700 Through C2799"
 title: "Compiler errors C2700 Through C2799"
 ms.date: "04/21/2019"
 f1_keywords: ["C2716", "C2717", "C2727", "C2729", "C2737", "C2740", "C2741", "C2742", "C2744", "C2746", "C2747", "C2759", "C2763", "C2769", "C2772", "C2789", "C2796", "C2799"]
@@ -29,7 +30,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2711](compiler-error-c2711.md)|'*function*': this function cannot be compiled as managed, consider using #pragma unmanaged|
 |[Compiler error C2712](compiler-error-c2712.md)|Cannot use __try in functions that require object unwinding|
 |[Compiler error C2713](compiler-error-c2713.md)|Only one form of exception handling permitted per function|
-|[Compiler error C2714](compiler-error-c2714.md)|alignof(void) is not allowed|
+|[Compiler error C2714](compiler-error-c2714.md)| `alignof(void)` is not allowed|
 |[Compiler error C2715](compiler-error-c2715.md)|'*type*': cannot throw or catch this type|
 |Compiler error C2716|Obsolete.|
 |Compiler error C2717|Obsolete.|
@@ -52,7 +53,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler error C2734](compiler-error-c2734.md)|'*identifier*': 'const' object must be initialized if not 'extern'|
 |[Compiler error C2735](compiler-error-c2735.md)|'*keyword*' keyword is not permitted in formal parameter type specifier|
 |[Compiler error C2736](compiler-error-c2736.md)|'*keyword*' keyword is not permitted in cast|
-|Compiler error C2737|'*identifier*': 'constexpr' object must be initialized|
+|Compiler error C2737|'*identifier*': `const`/`constexpr` object must be initialized|
 |[Compiler error C2738](compiler-error-c2738.md)|'operator *type*': is ambiguous or is not a member of '*class*'|
 |[Compiler error C2739](compiler-error-c2739.md)|'*number*': explicit managed/WinRT array dimensions must be between 1 and 32|
 |Compiler error C2740|value of operand '*number*' is out of range '*lower_bound* - *upper_bound*'|
@@ -119,4 +120,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;thread&gt; operators"
 title: "&lt;thread&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["thread/std::operator!=", "thread/std::operator&gt;", "thread/std::operator&gt;=", "thread/std::operator&lt;", "thread/std::operator&lt;&lt;", "thread/std::operator&lt;=", "thread/std::operator=="]
@@ -7,11 +8,13 @@ helpviewer_keywords: ["std::operator!= (thread)", "std::operator&gt; (thread)", 
 ---
 # &lt;thread&gt; operators
 
-||||
-|-|-|-|
-|[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
-|[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|[operator&lt;=](#op_lt_eq)|
-|[operator==](#op_eq_eq)|
+[operator!=](#op_neq)\
+[operator&gt;](#op_gt)\
+[operator&gt;=](#op_gt_eq)\
+[operator&lt;](#op_lt)\
+[operator&lt;&lt;](#op_lt_lt)\
+[operator&lt;=](#op_lt_eq)\
+[operator==](#op_eq_eq)
 
 ## <a name="op_gt_eq"></a> operator&gt;=
 
@@ -111,7 +114,7 @@ The right `thread::id` object.
 
 ### Return Value
 
-**true** if *Left* precedes *Right* in the total ordering; otherwise, **false**.
+**`true`** if *Left* precedes *Right* in the total ordering; otherwise, **`false`**.
 
 ### Remarks
 
@@ -165,7 +168,7 @@ The right `thread::id` object.
 
 ### Return Value
 
-**true** if the two objects represent the same thread of execution or if neither object represents a thread of execution; otherwise, **false**.
+**`true`** if the two objects represent the same thread of execution or if neither object represents a thread of execution; otherwise, **`false`**.
 
 ### Remarks
 

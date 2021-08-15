@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _spawnvp, _wspawnvp"
 title: "_spawnvp, _wspawnvp"
 ms.date: "4/2/2020"
 api_name: ["_wspawnvp", "_spawnvp", "_o__spawnvp", "_o__wspawnvp"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-process-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_wspawnvp", "_spawnvp", "wspawnvp"]
@@ -46,7 +47,7 @@ Array of pointers to arguments. The argument *argv*[0] is usually a pointer to a
 
 The return value from a synchronous **_spawnvp** or **_wspawnvp** (**_P_WAIT** specified for *mode*) is the exit status of the new process. The return value from an asynchronous **_spawnvp** or **_wspawnvp** (**_P_NOWAIT** or **_P_NOWAITO** specified for *mode*) is the process handle. The exit status is 0 if the process terminated normally. You can set the exit status to a nonzero value if the spawned process specifically uses a nonzero argument to call the **exit** routine. If the new process did not explicitly set a positive exit status, a positive exit status indicates an abnormal exit with an abort or an interrupt. A return value of -1 indicates an error (the new process is not started). In this case, **errno** is set to one of the following values:
 
-|||
+| Value | Description |
 |-|-|
 | **E2BIG** | Argument list exceeds 1024 bytes. |
 | **EINVAL** | *mode* argument is invalid. |

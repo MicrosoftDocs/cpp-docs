@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Android debugger properties"
 title: "Android Debugger Properties (C++)"
 ms.date: "10/23/2017"
 ms.assetid: 789f7a1c-38b4-41d0-809b-14f4d96c8116

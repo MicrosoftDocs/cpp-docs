@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Menus and Resources: Container Additions"
 title: "Menus and Resources: Container Additions"
 ms.date: "11/04/2016"
 f1_keywords: ["IDP_OLE_INIT_FAILED", "IDP_FAILED_TO_CREATE", "VK_ESCAPE"]
@@ -34,7 +35,7 @@ You must add the following items to the Edit menu:
 
 In addition to the changes listed in this article, your source file must include AFXOLECL.RC, which is required for the Microsoft Foundation Class Library implementation. Insert New Object is the only required menu addition. Other items can be added, but those listed here are the most common.
 
-You must create a new menu for your container application if you want to support in-place activation of contained items. This menu consists of the same File menu and Window pop-up menus used when files are open, but it has two separators placed between them. These separators are used to indicate where the server (component) item (application) should place its menus when activated in place. For more information on this menu-merging technique, see [Menus and Resources: Menu Merging](../mfc/menus-and-resources-menu-merging.md).
+You must create a new menu for your container application if you want to support in-place activation of contained items. This menu consists of the same File menu and Window pop-up menus used when files are open, but it has two separators placed between them. These separators are used to indicate where the server (component) item (application) should place its menus when activated in place. For more information on this menu-merging technique, see [Menus and Resources: Menu Merging](menus-and-resources-menu-merging.md).
 
 ## <a name="_core_container_application_accelerator_table_additions"></a> Container Application Accelerator Table Additions
 
@@ -67,5 +68,5 @@ Most of the changes to string tables for container applications correspond to th
 
 ## See also
 
-[Menus and Resources (OLE)](../mfc/menus-and-resources-ole.md)<br/>
-[Menus and Resources: Server Additions](../mfc/menus-and-resources-server-additions.md)
+[Menus and Resources (OLE)](menus-and-resources-ole.md)<br/>
+[Menus and Resources: Server Additions](menus-and-resources-server-additions.md)

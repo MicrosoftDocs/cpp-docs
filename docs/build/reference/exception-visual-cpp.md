@@ -1,10 +1,11 @@
 ---
+description: "Learn more about: &lt;exception&gt; tag"
 title: "&lt;exception> (C++ documentation comments)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["<exception> C++ XML tag", "exception C++ XML tag"]
 ms.assetid: 24451e79-9b89-4b77-98fb-702c6516b818
 ---
-# &lt;exception&gt;
+# &lt;exception&gt; tag
 
 The \<exception> tag lets you specify which exceptions can be thrown. This tag is applied to a method definition.
 

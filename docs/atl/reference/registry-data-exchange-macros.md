@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Registry Data Exchange Macros"
 title: "Registry Data Exchange Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlplus/ATL::BEGIN_RDX_MAP", "atlplus/ATL::END_RDX_MAP", "atlplus/ATL::RDX_BINARY", "atlplus/ATL::RDX_CSTRING_TEXT", "atlplus/ATL::RDX_DWORD", "atlplus/ATL::RDX_TEXT"]
@@ -9,7 +10,7 @@ ms.assetid: c1bc5e79-2307-43d2-9d10-3a62ffadf473
 
 These macros perform Registry Data Exchange operations.
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_RDX_MAP](#begin_rdx_map)|Marks the beginning of the Registry Data Exchange map.|
 |[END_RDX_MAP](#end_rdx_map)|Marks the end of the Registry Data Exchange map.|

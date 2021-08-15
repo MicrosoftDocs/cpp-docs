@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DATE Type"
 title: "DATE Type"
 ms.date: "11/04/2016"
 f1_keywords: ["DATE"]
@@ -49,7 +50,7 @@ The following points should be noted when working with these date and time forma
 > [!CAUTION]
 > Note that because 6:00 AM is always represented by a fractional value 0.25 regardless of whether the integer representing the day is positive (after December 30, 1899) or negative (before December 30, 1899), a simple floating point comparison would erroneously sort any DATE representing 6:00 AM on a day earlier than 12/30/1899 as *later* than a DATE representing 7:00 AM on that same day.
 
-More information on issues related to the DATE and `COleDateTime` types can be found under [COleDateTime Class](../atl-mfc-shared/reference/coledatetime-class.md) and [Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md).
+More information on issues related to the DATE and `COleDateTime` types can be found under [COleDateTime Class](../atl-mfc-shared/reference/coledatetime-class.md) and [Date and Time: Automation Support](./date-and-time.md).
 
 ## See also
 

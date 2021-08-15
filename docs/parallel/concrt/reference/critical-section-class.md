@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: critical_section Class"
 title: "critical_section Class"
 ms.date: "11/04/2016"
 f1_keywords: ["critical_section", "CONCRT/concurrency::critical_section", "CONCRT/concurrency::critical_section::critical_section::scoped_lock Class", "CONCRT/concurrency::critical_section::critical_section", "CONCRT/concurrency::critical_section::lock", "CONCRT/concurrency::critical_section::native_handle", "CONCRT/concurrency::critical_section::try_lock", "CONCRT/concurrency::critical_section::try_lock_for", "CONCRT/concurrency::critical_section::unlock"]
@@ -149,7 +150,7 @@ bool try_lock();
 
 ### Return Value
 
-If the lock was acquired, the value **true**; otherwise, the value **false**.
+If the lock was acquired, the value **`true`**; otherwise, the value **`false`**.
 
 ## <a name="try_lock_for"></a> try_lock_for
 
@@ -166,7 +167,7 @@ The number of milliseconds to wait before timing out.
 
 ### Return Value
 
-If the lock was acquired, the value **true**; otherwise, the value **false**.
+If the lock was acquired, the value **`true`**; otherwise, the value **`false`**.
 
 ## <a name="unlock"></a> unlock
 

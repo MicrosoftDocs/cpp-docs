@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;unordered_set&gt;"
 title: "&lt;unordered_set&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<unordered_set>"]
@@ -22,14 +23,14 @@ Defines the container class templates [unordered_multiset](../standard-library/u
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[unordered_multiset Class](../standard-library/unordered-multiset-class.md)|Stores hash table of keys.|
 |[unordered_set Class](../standard-library/unordered-set-class.md)|Stores hash table of keys.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[operator!=](../standard-library/unordered-set-operators.md#op_neq)|Tests if the unordered_multiset object on the left side of the operator is not equal to the unordered_multiset object on the right side.|
 |[operator==](../standard-library/unordered-set-operators.md#op_eq_eq)|Tests if the unordered_multiset object on the left side of the operator is equal to the unordered_multiset object on the right side.|

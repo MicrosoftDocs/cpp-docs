@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Overview of potential upgrade issues (Visual C++)"
 title: "Overview of potential upgrade issues (Visual C++)"
 ms.date: "05/03/2019"
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
@@ -82,7 +83,7 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
 
 ### /Zc:wchar_t (wchar_t Is Native Type)
 
-(In Microsoft Visual C++ 6.0 and earlier, **wchar_t** was not implemented as a built-in type, but was declared in wchar.h as a typedef for unsigned short.) The C++ standard requires that **wchar_t** is a built-in type. Using the typedef version can cause portability problems. If you upgrade from earlier versions of Visual Studio and encounter compiler error C2664 because the code is trying to implicitly convert a **wchar_t** to **unsigned short**, we recommend that you change the code to fix the error, instead of setting `/Zc:wchar_t-`. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+(In Microsoft Visual C++ 6.0 and earlier, **`wchar_t`** was not implemented as a built-in type, but was declared in wchar.h as a typedef for unsigned short.) The C++ standard requires that **`wchar_t`** is a built-in type. Using the typedef version can cause portability problems. If you upgrade from earlier versions of Visual Studio and encounter compiler error C2664 because the code is trying to implicitly convert a **`wchar_t`** to **`unsigned short`**, we recommend that you change the code to fix the error, instead of setting `/Zc:wchar_t-`. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
 ### Upgrading with the linker options /NODEFAULTLIB, /ENTRY, and /NOENTRY
 
@@ -92,9 +93,8 @@ Projects that use this option present a problem when upgrading, because the cont
 
 The following table shows the libraries whose contents changed starting with Visual Studio 2015. To upgrade, you need to add the new library names in the second column to the libraries in the first column. Some of these libraries are import libraries, but that shouldn't matter.
 
-|||
-|-|-|
 |If you were using:|You need to use these libraries:|
+|-|-|
 |libcmt.lib|libcmt.lib, libucrt.lib, libvcruntime.lib|
 |libcmtd.lib|libcmtd.lib, libucrtd.lib, libvcruntimed.lib|
 |msvcrt.lib|msvcrt.lib, ucrt.lib, vcruntime.lib|
@@ -120,7 +120,7 @@ If the error is C2371, and a `stdint` type is involved, it probably means that t
 
 You can press **F12** (**Go to Definition**) to see where the type in question is defined.
 
-The [/showIncludes](../build/reference/showincludes-list-include-files.md) compiler option can be useful here. In the **Property Pages** dialog box for your project, open the **C/C++** > **Advanced** page and set **Show Includes** to **Yes**. Then rebuild your project and see the list of `#include`s in the output window. Each header is indented under the header that includes it.
+The [/showIncludes](../build/reference/showincludes-list-include-files.md) compiler option can be useful here. In the **Property Pages** dialog box for your project, select the **Configuration Properties** > **C/C++** > **Advanced** page and set **Show Includes** to **Yes**. Then rebuild your project and see the list of `#include` files in the output window. Each header is indented under the header that includes it.
 
 ## Errors involving CRT functions
 
@@ -150,7 +150,7 @@ Over the years, secure versions of C runtime functions have been introduced. Alt
 
 Over the years, Windows APIs and data types have been added, and sometimes changed or removed. Also, other SDKs that did not belong to the core operating system have come and gone. Older programs may therefore contain calls to APIs that no longer exist. They may also contain calls to APIs in other Microsoft SDKs that are no longer supported. If you see an error involving a Windows API or an API from an older Microsoft SDK, it's possible that an API has been removed and/or superseded by a newer, more secure function.
 
-For more information about the current API set and the minimum supported operating systems for a specific Windows API, see [Microsoft API and reference catalog](https://msdn.microsoft.com/library) and navigate to the API in question.
+For more information about the current API set and the minimum supported operating systems for a specific Windows API, see [API Index for desktop Windows applications](/windows/win32/apiindex/api-index-portal) and navigate to the API in question.
 
 ### Windows version
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create the User Control and Host MDI View"
 title: "How to: Create the User Control and Host MDI View"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"

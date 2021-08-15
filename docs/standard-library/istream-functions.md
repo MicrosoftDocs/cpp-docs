@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;istream&gt; functions"
 title: "&lt;istream&gt; functions"
 ms.date: "11/04/2016"
 f1_keywords: ["istream/std::swap", "istream/std::ws"]
@@ -6,9 +7,8 @@ ms.assetid: 0301ea0d-4ded-4841-83dd-4253b55b3188
 ---
 # &lt;istream&gt; functions
 
-|||
-|-|-|
-|[swap](#istream_swap)|[ws](#ws)|
+[swap](#istream_swap)\
+[ws](#ws)
 
 ## <a name="istream_swap"></a> swap
 

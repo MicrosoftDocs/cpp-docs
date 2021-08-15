@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Subscript Operator []"
 title: "Subscript Operator []"
 ms.date: "11/04/2016"
 f1_keywords: ["[]"]
@@ -37,7 +38,7 @@ The address yielded by the expression is not *e2* bytes from the address *e1*. R
 double aDbl[2];
 ```
 
-The addresses of `aDb[0]` and `aDb[1]` are 8 bytes apart — the size of an object of type **double**. This scaling according to object type is done automatically by the C++ language and is defined in [Additive Operators](../cpp/additive-operators-plus-and.md) where addition and subtraction of operands of pointer type is discussed.
+The addresses of `aDb[0]` and `aDb[1]` are 8 bytes apart — the size of an object of type **`double`**. This scaling according to object type is done automatically by the C++ language and is defined in [Additive Operators](../cpp/additive-operators-plus-and.md) where addition and subtraction of operands of pointer type is discussed.
 
 A subscript expression can also have multiple subscripts, as follows:
 
@@ -91,7 +92,7 @@ int main() {
 }
 ```
 
-The negative subscript in the last line can produce a run-time error because it points to an address 256 **int** positions lower in memory than the origin of the array. The pointer `midArray` is initialized to the middle of `intArray`; it is therefore possible (but dangerous) to use both positive and negative array indices on it. Array subscript errors do not generate compile-time errors, but they yield unpredictable results.
+The negative subscript in the last line can produce a run-time error because it points to an address 256 **`int`** positions lower in memory than the origin of the array. The pointer `midArray` is initialized to the middle of `intArray`; it is therefore possible (but dangerous) to use both positive and negative array indices on it. Array subscript errors do not generate compile-time errors, but they yield unpredictable results.
 
 The subscript operator is commutative. Therefore, the expressions *array*[*index*] and *index*[*array*] are guaranteed to be equivalent as long as the subscript operator is not overloaded (see [Overloaded Operators](../cpp/operator-overloading.md)). The first form is the most common coding practice, but either works.
 

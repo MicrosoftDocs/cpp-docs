@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /GF (Eliminate Duplicate Strings)"
 title: "/GF (Eliminate Duplicate Strings)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.StringPooling", "VC.Project.VCCLWCECompilerTool.StringPooling", "/gf"]
@@ -40,9 +41,7 @@ char *t = "This is a character buffer";
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **Code Generation** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Code Generation** property page.
 
 1. Modify the **Enable String Pooling** property.
 

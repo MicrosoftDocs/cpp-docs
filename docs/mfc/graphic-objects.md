@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Graphic Objects"
 title: "Graphic Objects"
 ms.date: "11/04/2016"
 f1_keywords: ["HRGN", "HFONT", "HBITMAP"]
@@ -18,12 +19,12 @@ This article explains the use of these graphic-object classes:
 
 |Class|Windows handle type|
 |-----------|-------------------------|
-|[CPen](../mfc/reference/cpen-class.md)|`HPEN`|
-|[CBrush](../mfc/reference/cbrush-class.md)|`HBRUSH`|
-|[CFont](../mfc/reference/cfont-class.md)|**HFONT**|
-|[CBitmap](../mfc/reference/cbitmap-class.md)|`HBITMAP`|
-|[CPalette](../mfc/reference/cpalette-class.md)|`HPALETTE`|
-|[CRgn](../mfc/reference/crgn-class.md)|**HRGN**|
+|[CPen](reference/cpen-class.md)|`HPEN`|
+|[CBrush](reference/cbrush-class.md)|`HBRUSH`|
+|[CFont](reference/cfont-class.md)|**HFONT**|
+|[CBitmap](reference/cbitmap-class.md)|`HBITMAP`|
+|[CPalette](reference/cpalette-class.md)|`HPALETTE`|
+|[CRgn](reference/crgn-class.md)|**HRGN**|
 
 > [!NOTE]
 > The class [CImage](../atl-mfc-shared/reference/cimage-class.md) provides enhanced bitmap support.
@@ -34,13 +35,13 @@ Each graphic-object class in the class library has a cast operator that will cas
 
 The following code casts a `CPen` object to a Windows handle:
 
-[!code-cpp[NVC_MFCDocViewSDI#5](../mfc/codesnippet/cpp/graphic-objects_1.cpp)]
+[!code-cpp[NVC_MFCDocViewSDI#5](codesnippet/cpp/graphic-objects_1.cpp)]
 
 #### To create a graphic object in a device context
 
-1. Define a graphic object on the stack frame. Initialize the object with the type-specific create function, such as `CreatePen`. Alternatively, initialize the object in the constructor. See the discussion of [one-stage and two-stage creation](../mfc/one-stage-and-two-stage-construction-of-objects.md), which provides example code.
+1. Define a graphic object on the stack frame. Initialize the object with the type-specific create function, such as `CreatePen`. Alternatively, initialize the object in the constructor. See the discussion of [one-stage and two-stage creation](one-stage-and-two-stage-construction-of-objects.md), which provides example code.
 
-1. [Select the object into the current device context](../mfc/selecting-a-graphic-object-into-a-device-context.md), saving the old graphic object that was selected before.
+1. [Select the object into the current device context](selecting-a-graphic-object-into-a-device-context.md), saving the old graphic object that was selected before.
 
 1. When done with the current graphic object, select the old graphic object back into the device context to restore its state.
 
@@ -51,14 +52,14 @@ The following code casts a `CPen` object to a Windows handle:
 
 ### What do you want to know more about
 
-- [One-stage and two-stage construction of graphic objects](../mfc/one-stage-and-two-stage-construction-of-objects.md)
+- [One-stage and two-stage construction of graphic objects](one-stage-and-two-stage-construction-of-objects.md)
 
-- [Example of constructing a pen in one and two stages](../mfc/one-stage-and-two-stage-construction-of-objects.md)
+- [Example of constructing a pen in one and two stages](one-stage-and-two-stage-construction-of-objects.md)
 
-- [Selecting a Graphic Object into a Device Context](../mfc/selecting-a-graphic-object-into-a-device-context.md)
+- [Selecting a Graphic Object into a Device Context](selecting-a-graphic-object-into-a-device-context.md)
 
-- [Device contexts](../mfc/device-contexts.md)
+- [Device contexts](device-contexts.md)
 
 ## See also
 
-[Window Objects](../mfc/window-objects.md)
+[Window Objects](window-objects.md)

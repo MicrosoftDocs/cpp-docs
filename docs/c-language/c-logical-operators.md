@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C logical operators"
 title: "C logical operators"
 ms.date: "06/14/2018"
 helpviewer_keywords: ["logical operators, expression sequence points", "logical operators, C", "logical AND operator", "|| operator", "operators [C], logical", "short-circuit evaluation", "&& operator", "logical OR operator"]
@@ -20,7 +21,7 @@ The logical operators perform logical-AND (**&&**) and logical-OR (**||**) opera
 
 ## Remarks
 
-Logical operators do not perform the usual arithmetic conversions. Instead, they evaluate each operand in terms of its equivalence to 0. The result of a logical operation is either 0 or 1. The result's type is **int**.
+Logical operators do not perform the usual arithmetic conversions. Instead, they evaluate each operand in terms of its equivalence to 0. The result of a logical operation is either 0 or 1. The result's type is **`int`**.
 
 The C logical operators are described below:
 

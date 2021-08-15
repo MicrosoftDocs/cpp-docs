@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CStrBufT Class"
 title: "CStrBufT Class"
 ms.date: "10/18/2018"
 f1_keywords: ["CStrBufT", "ATLSIMPSTR/ATL::CStrBufT", "ATLSIMPSTR/ATL::CStrBufT::CStrBufT", "ATLSIMPSTR/ATL::CStrBufT::SetLength", "ATLSIMPSTR/ATL::CStrBufT::AUTO_LENGTH", "ATLSIMPSTR/ATL::CStrBufT::SET_LENGTH"]
@@ -21,9 +22,9 @@ class CStrBufT
 *TCharType*<br/>
 The character type of the `CStrBufT` class. Can be one of the following:
 
-- **char** (for ANSI character strings)
+- **`char`** (for ANSI character strings)
 
-- **wchar_t** (for Unicode character strings)
+- **`wchar_t`** (for Unicode character strings)
 
 - TCHAR (for both ANSI and Unicode character strings)
 
@@ -53,7 +54,7 @@ The character type of the `CStrBufT` class. Can be one of the following:
 
 |Name|Description|
 |----------|-----------------|
-|[CStrBufT::operator PCXSTR](#operator_pcxstr)|Retrieves a **const** pointer to the character buffer of the associated string object.|
+|[CStrBufT::operator PCXSTR](#operator_pcxstr)|Retrieves a **`const`** pointer to the character buffer of the associated string object.|
 |[CStrBufT::operator PXSTR](#operator_pxstr)|Retrieves a pointer to the character buffer of the associated string object.|
 
 ### Public Constants
@@ -97,7 +98,7 @@ explicit CStrBufT(StringType& str) throw(...);
 ### Parameters
 
 *str*<br/>
-The string object associated with the buffer. Typically, the developer will use the predefined typedefs of `CStrBuf` (TCHAR variant), `CStrBufA` (**char** variant) and `CStrBufW` (**wchar_t** variant).
+The string object associated with the buffer. Typically, the developer will use the predefined typedefs of `CStrBuf` (TCHAR variant), `CStrBufA` (**`char`** variant) and `CStrBufW` (**`wchar_t`** variant).
 
 *nMinLength*<br/>
 The minimum length of the character buffer.
@@ -113,7 +114,7 @@ Determines if the string length is automatically determined. Can be one of the f
 
 Creates a string buffer for the associated string object. During construction, [CSimpleStringT::GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) or [CSimpleStringT::GetBufferSetLength](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) is called.
 
-Note that the copy constructor is **private**.
+Note that the copy constructor is **`private`**.
 
 ## <a name="operator_pcxstr"></a> CStrBufT::operator PCXSTR
 

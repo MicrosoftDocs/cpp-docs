@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Deploying Your Program (C++)"
 title: "Walkthrough: Deploying Your Program (C++)"
 ms.date: "05/14/2019"
 helpviewer_keywords: ["deploying applications [C++], walkthroughs", "setup projects [C++]", "program deployments [C++]", "projects [C++], setup", "projects [C++], deploying programs", "application deployment [C++], walkthroughs"]
@@ -24,7 +25,7 @@ The steps in this section vary depending on which version of Visual Studio you h
 
 <!-- markdownlint-disable MD034 -->
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### To install the setup and deployment project template for Visual Studio 2019
 
@@ -56,7 +57,7 @@ The steps in this section vary depending on which version of Visual Studio you h
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### To install the setup and deployment project template for Visual Studio 2017 and earlier
 

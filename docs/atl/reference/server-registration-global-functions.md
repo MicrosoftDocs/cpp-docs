@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Server Registration Global Functions"
 title: "Server Registration Global Functions"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::AtlComModuleRegisterServer", "atlbase/ATL::AtlComModuleUnregisterServer", "atlbase/ATL::AtlComModuleRegisterClassObjects", "atlbase/ATL::AtlComModuleRevokeClassObjects", "atlbase/ATL::AtlComModuleGetClassObject"]
@@ -11,7 +12,7 @@ These functions provide support for registering and unregistering server objects
 > [!IMPORTANT]
 > The functions listed in the following table cannot be used in applications that execute in the Windows Runtime.
 
-|||
+|Name|Description|
 |-|-|
 |[AtlComModuleRegisterServer](#atlcommoduleregisterserver)|This function is called to register every object in the object map.|
 |[AtlComModuleUnregisterServer](#atlcommoduleunregisterserver)|This function is called to unregister every object in the object map.|

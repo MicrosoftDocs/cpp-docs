@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;cuchar&gt; functions"
 title: "&lt;cuchar&gt; functions"
 ms.date: "04/04/2019"
 f1_keywords: ["cuchar/std::c16rtomb", "cuchar/std::c32rtomb", "cuchar/std::mbrtoc16", "cuchar/std::mbrtoc32"]

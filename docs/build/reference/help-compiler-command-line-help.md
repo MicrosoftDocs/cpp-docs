@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /HELP (Compiler Command-Line Help)"
 title: "/HELP (Compiler Command-Line Help)"
 ms.date: "11/04/2016"
 f1_keywords: ["/help"]

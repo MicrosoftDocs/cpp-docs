@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l"
 title: "_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l"
 ms.date: "4/2/2020"
 api_name: ["_strupr_s", "_strupr_s_l", "_mbsupr_s", "_wcsupr_s_l", "_mbsupr_s_l", "_wcsupr_s", "_o__mbsupr_s", "_o__mbsupr_s_l", "_o__strupr_s", "_o__strupr_s_l", "_o__wcsupr_s", "_o__wcsupr_s_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["strupr_s", "mbsupr_s", "wcsupr_s", "_mbsupr_s_l", "mbsupr_s_l", "wcsupr_s_l", "_wcsupr_s", "_tcsupr_s_l", "_mbsupr_s", "_tcsupr_s", "strupr_s_l", "_wcsupr_s_l", "_strupr_s", "_strupr_s_l"]

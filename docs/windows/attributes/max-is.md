@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: max_is"
 title: "max_is (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.max_is"]
@@ -26,11 +27,9 @@ The **max_is** C++ attribute has the same functionality as the [max_is](/windows
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|
+|**Applies to**|Field in **`struct`** or **`union`**, interface parameter, interface method|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|**size_is**|

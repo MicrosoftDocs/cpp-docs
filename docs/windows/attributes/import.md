@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: import"
 title: "import (C++ COM Attribute)"
 ms.date: "10/03/2018"
 f1_keywords: ["vc-attr.import"]
@@ -54,9 +55,7 @@ library MyLib {
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Anywhere|
 |**Repeatable**|No|

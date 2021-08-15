@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: random_access_iterator_tag Struct"
 title: "random_access_iterator_tag Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["xutility/std::random_access_iterator_tag"]

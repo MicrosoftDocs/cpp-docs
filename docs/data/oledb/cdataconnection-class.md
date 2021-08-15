@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDataConnection Class"
 title: "CDataConnection Class"
 ms.date: "03/27/2019"
 f1_keywords: ["ATL::CDataConnection", "ATL.CDataConnection", "CDataConnection", "CDataConnection.CDataConnection", "ATL.CDataConnection.CDataConnection", "CDataConnection::CDataConnection", "ATL::CDataConnection::CDataConnection", "CDataConnection.Copy", "ATL.CDataConnection.Copy", "ATL::CDataConnection::Copy", "CDataConnection::Copy", "CDataConnection.Open", "ATL.CDataConnection.Open", "CDataConnection::Open", "ATL::CDataConnection::Open", "CDataConnection.OpenNewSession", "ATL.CDataConnection.OpenNewSession", "ATL::CDataConnection::OpenNewSession", "OpenNewSession", "CDataConnection::OpenNewSession", "CDataConnection::operatorBOOL", "ATL::CDataConnection::operatorBOOL", "CDataConnection.operatorBOOL", "ATL.CDataConnection.operatorBOOL", "CDataSource&", "CDataConnection.operatorCDataSource&", "operatorCDataSource&", "CDataConnection::operatorCDataSource&", "CDataSource*", "CDataConnection::operatorCDataSource*", "CDataConnection.operatorCDataSource*", "operatorCDataSource*", "CSession&", "CDataConnection::operatorCSession&", "CDataConnection.operatorCSession&", "operatorCSession&", "CDataConnection.operatorCSession*", "CDataConnection::operatorCSession*", "operatorCSession*", "CSession*"]
@@ -23,7 +24,7 @@ class CDataConnection
 
 ### Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CDataConnection](#cdataconnection)|Constructor. Instantiates and initializes a `CDataConnection` object.|
 |[Copy](#copy)|Creates a copy of an existing data connection.|
@@ -32,7 +33,7 @@ class CDataConnection
 
 ### Operators
 
-|||
+| Name | Description |
 |-|-|
 |[operator BOOL](#op_bool)|Determines whether the current session is open or not.|
 |[operator bool](#op_bool_ole)|Determines whether the current session is open or not.|
@@ -45,12 +46,12 @@ class CDataConnection
 
 `CDataConnection` is a useful class for creating clients because it encapsulates necessary objects (data source and session) and some of the work you need to do when connecting to a data source
 
-Without `CDataConnection`, you have to create a `CDataSource` object, call its [OpenFromInitializationString](../../data/oledb/cdatasource-openfrominitializationstring.md) method, then create an instance of a [CSession](../../data/oledb/csession-class.md) object, call its [Open](../../data/oledb/csession-open.md) method, then create a [CCommand](../../data/oledb/ccommand-class.md) object and call its `Open`* methods.
+Without `CDataConnection`, you have to create a `CDataSource` object, call its [OpenFromInitializationString](./cdatasource-class.md#openfrominitializationstring) method, then create an instance of a [CSession](../../data/oledb/csession-class.md) object, call its [Open](./csession-class.md#open) method, then create a [CCommand](../../data/oledb/ccommand-class.md) object and call its `Open`* methods.
 
 With `CDataConnection`, you only need to create a connection object, pass it an initialization string, then use that connection to open commands. If you plan on using your connection to the database repeatedly, it is a good idea to keep the connection open, and `CDataConnection` provides a convenient way to do that.
 
 > [!NOTE]
-> If you are creating a database application that needs to handle multiple sessions, you will need to use [OpenNewSession](../../data/oledb/cdataconnection-opennewsession.md).
+> If you are creating a database application that needs to handle multiple sessions, you will need to use [OpenNewSession](#opennewsession).
 
 ## <a name="cdataconnection"></a> CDataConnection::CDataConnection
 
@@ -157,7 +158,7 @@ operator bool() throw();
 
 ### Remarks
 
-Returns a **bool** (C++ data type) value. **true** means the current session is open; **false** means the current session is closed.
+Returns a **`bool`** (C++ data type) value. **`true`** means the current session is open; **`false`** means the current session is closed.
 
 ## <a name="op_cdata_amp"></a> CDataConnection::operator CDataSource&amp;
 
@@ -195,7 +196,7 @@ operator const CDataSource*() throw();
 
 This operator returns a pointer to the contained `CDataSource` object, allowing you to pass a `CDataConnection` object where a `CDataSource` pointer is expected.
 
-See [operator CDataSource&](../../data/oledb/cdataconnection-operator-cdatasource-amp.md) for a usage example.
+See [operator CDataSource&](#op_cdata_amp) for a usage example.
 
 ## <a name="op_csession_amp"></a> CDataConnection::operator CSession&amp;
 
@@ -235,7 +236,7 @@ This operator returns a pointer to the contained `CSession` object, allowing you
 
 ### Example
 
-See [operator CSession&](../../data/oledb/cdataconnection-operator-csession-amp.md) for a usage example.
+See [operator CSession&](#op_csession_amp) for a usage example.
 
 ## See also
 

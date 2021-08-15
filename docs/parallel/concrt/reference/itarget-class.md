@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ITarget Class"
 title: "ITarget Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ITarget", "AGENTS/concurrency::ITarget", "AGENTS/concurrency::ITarget::propagate", "AGENTS/concurrency::ITarget::send", "AGENTS/concurrency::ITarget::supports_anonymous_source", "AGENTS/concurrency::ITarget::link_source", "AGENTS/concurrency::ITarget::unlink_source", "AGENTS/concurrency::ITarget::unlink_sources"]
@@ -27,7 +28,7 @@ The data type of the payload within the messages accepted by the target block.
 
 |Name|Description|
 |----------|-----------------|
-|`filter_method`|The signature of any method used by the block that returns a `bool` value to determine whether an offered message should be accepted.|
+|`filter_method`|The signature of any method used by the block that returns a **`bool`** value to determine whether an offered message should be accepted.|
 |`type`|A type alias for `T`.|
 
 ### Public Constructors
@@ -42,7 +43,7 @@ The data type of the payload within the messages accepted by the target block.
 |----------|-----------------|
 |[propagate](#propagate)|When overridden in a derived class, asynchronously passes a message from a source block to this target block.|
 |[send](#send)|When overridden in a derived class, synchronously passes a message to the target block.|
-|[supports_anonymous_source](#supports_anonymous_source)|When overridden in a derived class, returns true or false depending on whether the message block accepts messages offered by a source that is not linked to it. If the overridden method returns **true**, the target cannot postpone an offered message, as consumption of a postponed message at a later time requires the source to be identified in its source link registry.|
+|[supports_anonymous_source](#supports_anonymous_source)|When overridden in a derived class, returns true or false depending on whether the message block accepts messages offered by a source that is not linked to it. If the overridden method returns **`true`**, the target cannot postpone an offered message, as consumption of a postponed message at a later time requires the source to be identified in its source link registry.|
 
 ### Protected Methods
 
@@ -149,7 +150,7 @@ When `send` returns, the message has either already been accepted, and transferr
 
 ## <a name="supports_anonymous_source"></a> supports_anonymous_source
 
-When overridden in a derived class, returns true or false depending on whether the message block accepts messages offered by a source that is not linked to it. If the overridden method returns **true**, the target cannot postpone an offered message, as consumption of a postponed message at a later time requires the source to be identified in its sourse link registry.
+When overridden in a derived class, returns true or false depending on whether the message block accepts messages offered by a source that is not linked to it. If the overridden method returns **`true`**, the target cannot postpone an offered message, as consumption of a postponed message at a later time requires the source to be identified in its sourse link registry.
 
 ```cpp
 virtual bool supports_anonymous_source();
@@ -157,7 +158,7 @@ virtual bool supports_anonymous_source();
 
 ### Return Value
 
-**true** if the block can accept message from a source that is not linked to it **false** otherwise.
+**`true`** if the block can accept message from a source that is not linked to it **`false`** otherwise.
 
 ## <a name="unlink_source"></a> unlink_source
 

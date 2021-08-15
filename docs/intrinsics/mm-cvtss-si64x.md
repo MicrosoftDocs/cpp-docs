@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _mm_cvtss_si64x"
 title: "_mm_cvtss_si64x"
 ms.date: "09/02/2019"
 f1_keywords: ["_mm_cvtss_si64x"]
@@ -22,7 +23,7 @@ __int64 _mm_cvtss_si64x(
 ### Parameters
 
 *value*\
-[in] An `__m128` structure containing floating point-values.
+[in] An **`__m128`** structure containing floating point-values.
 
 ## Return value
 
@@ -38,7 +39,7 @@ A 64-bit integer, the result of the conversion of the first floating-point value
 
 ## Remarks
 
-The first element of the structure value is converted to an integer and returned. The rounding control bits in MXCSR are used to determine the rounding behavior. The default rounding mode is round to nearest, rounding to the even number if the decimal part is 0.5. Because the `__m128` structure represents an XMM register, the intrinsic takes a value from the XMM register and writes it to system memory.
+The first element of the structure value is converted to an integer and returned. The rounding control bits in MXCSR are used to determine the rounding behavior. The default rounding mode is round to nearest, rounding to the even number if the decimal part is 0.5. Because the **`__m128`** structure represents an XMM register, the intrinsic takes a value from the XMM register and writes it to system memory.
 
 This routine is only available as an intrinsic.
 

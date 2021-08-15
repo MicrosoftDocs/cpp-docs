@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;future&gt; enums"
 title: "&lt;future&gt; enums"
 ms.date: "11/04/2016"
 f1_keywords: ["future/std::future_errc", "future/std::future_status", "future/std::launch"]
@@ -6,9 +7,9 @@ ms.assetid: 8c675645-db47-4cab-bc0e-7b87f8a302df
 ---
 # &lt;future&gt; enums
 
-||||
-|-|-|-|
-|[future_errc](#future_errc)|[future_status](#future_status)|[launch](#launch)|
+[future_errc](#future_errc)\
+[future_status](#future_status)\
+[launch](#launch)
 
 ## <a name="future_errc"></a> future_errc Enumeration
 

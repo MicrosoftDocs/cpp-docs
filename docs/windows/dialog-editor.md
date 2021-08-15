@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Editor (C++)"
 title: "Dialog Editor (C++)"
 ms.date: "02/15/2019"
 f1_keywords: ["vc.editors.dialog.dialog", "vc.editors.dialog.F1", "vc.editors.dialog"]
@@ -108,4 +109,4 @@ Win32
 [Controls](../mfc/controls-mfc.md)<br/>
 [Control Classes](../mfc/control-classes.md)<br/>
 [Dialog Box Classes](../mfc/dialog-box-classes.md)<br/>
-[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)-->
+[Dialog Box Controls and Variable Types](../ide/adding-a-member-variable-visual-cpp.md#dialog-box-controls-and-variable-types)-->

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: HTML Basics"
 title: "HTML Basics"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["HTML [MFC], about HTML"]
@@ -104,4 +105,4 @@ For a complete description of tags, attributes, and extensions, see the Hypertex
 
 ## See also
 
-[MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)
+[MFC Internet Programming Basics](mfc-internet-programming-basics.md)

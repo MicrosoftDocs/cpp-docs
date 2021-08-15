@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: string (C++)"
 title: "string  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.string"]
@@ -7,7 +8,7 @@ ms.assetid: ddde900a-2e99-4fcd-86e8-57e1bdba7c93
 ---
 # string (C++)
 
-Indicates that the one-dimensional **char**, **wchar_t**, `byte` (or equivalent) array or the pointer to such an array must be treated as a string.
+Indicates that the one-dimensional **`char`**, **`wchar_t`**, `byte` (or equivalent) array or the pointer to such an array must be treated as a string.
 
 ## Syntax
 
@@ -38,9 +39,7 @@ __interface IFireTabCtrl
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Array or pointer to an array, interface parameter, interface method|
 |**Repeatable**|No|

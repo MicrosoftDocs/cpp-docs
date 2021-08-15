@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Agile Class"
 title: "Platform::Agile Class"
 ms.date: "12/30/2016"
 ms.topic: "reference"
@@ -73,7 +74,7 @@ The `Agile<T>` class is a native, standard C++ class and requires `agile.h`. It 
 
 Initializes a new instance of the Agile class.
 
-## Syntax
+### Syntax
 
 ```cpp
 Agile();
@@ -98,7 +99,7 @@ The first version of this constructor is the default constructor. The second ver
 
 Destroys the current instance of the Agile class.
 
-## Syntax
+### Syntax
 
 ```cpp
 ~Agile();
@@ -112,7 +113,7 @@ This destructor also releases the object represented by the current Agile object
 
 Returns a handle to the object that is represented by the current Agile object.
 
-## Syntax
+### Syntax
 
 ```cpp
 T^ Get() const;
@@ -122,13 +123,13 @@ T^ Get() const;
 
 A handle to the object that is represented by the current Agile object.
 
-The type of the return value is actually an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **auto** type deduction keyword. For example, `auto x = myAgileTvariable->Get();`.
+The type of the return value is actually an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **`auto`** type deduction keyword. For example, `auto x = myAgileTvariable->Get();`.
 
 ## <a name="getaddressof"></a> Agile::GetAddressOf Method
 
 Reinitializes the current Agile object, and then returns the address of a handle to an object of type `T`.
 
-## Syntax
+### Syntax
 
 ```cpp
 T^* GetAddressOf() throw();
@@ -151,7 +152,7 @@ This operation releases the current representation of a object of type `T`, if a
 
 Returns the address of a handle to the object represented by the current Agile object.
 
-## Syntax
+### Syntax
 
 ```cpp
 T^* GetAddressOfForInOut()  throw();
@@ -174,7 +175,7 @@ This operation acquires the current threading context and then returns the addre
 
 Discards the current Agile object's underlying object and context.
 
-## Syntax
+### Syntax
 
 ```cpp
 void Release() throw();
@@ -188,7 +189,7 @@ The current Agile object's underlying object and context are discarded, if they 
 
 Retrieves a handle to the object represented by the current Agile object.
 
-## Syntax
+### Syntax
 
 ```cpp
 T^ operator->() const throw();
@@ -198,13 +199,13 @@ T^ operator->() const throw();
 
 A handle to the object represented by the current Agile object.
 
-This operator actually returns an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **auto** type deduction keyword.
+This operator actually returns an undisclosed internal type. A convenient way to hold the return value is to assign it to a variable that is declared with the **`auto`** type deduction keyword.
 
 ## <a name="operator-assign"></a> Agile::operator= Operator
 
 Assigns the specified object to the current Agile object.
 
-## Syntax
+### Syntax
 
 ```cpp
 Agile<T> operator=( T^ object ) throw();

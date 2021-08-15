@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: stack Class"
 title: "stack Class"
 ms.date: "11/04/2016"
 f1_keywords: ["stack/std::stack::container_type", "stack/std::stack::size_type", "stack/std::stack::value_type", "stack/std::stack::empty", "stack/std::stack::pop", "stack/std::stack::push", "stack/std::stack::size", "stack/std::stack::top"]
@@ -42,13 +43,13 @@ The stack objects are equality comparable if and only if the elements of class `
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[stack](#stack)|Constructs a `stack` that is empty or that is a copy of a base container object.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[container_type](#container_type)|A type that provides the base container to be adapted by a `stack`.|
 |[size_type](#size_type)|An unsigned integer type that can represent the number of elements in a `stack`.|
@@ -56,7 +57,7 @@ The stack objects are equality comparable if and only if the elements of class `
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[empty](#empty)|Tests if the `stack` is empty.|
 |[pop](#pop)|Removes the element from the top of the `stack`.|
@@ -92,7 +93,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the stack is empty; **false** if the stack is nonempty.
+**`true`** if the stack is empty; **`false`** if the stack is nonempty.
 
 ### Example
 

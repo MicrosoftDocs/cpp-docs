@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Qpar (Auto-Parallelizer)"
 title: "/Qpar (Auto-Parallelizer)"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration"]
@@ -24,11 +25,11 @@ For information about how to enable output messages for the auto-parallelizer, s
 
 ### To set the /Qpar compiler option in Visual Studio
 
-1. In **Solution Explorer**, open the shortcut menu for the project and then choose **Properties**.
+1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. In the **Property Pages** dialog box, under **C/C++**, select **Command Line**.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. In the **Additional Options** box, enter `/Qpar`.
+1. In the **Additional Options** box, enter *`/Qpar`*.
 
 ### To set the /Qpar compiler option programmatically
 
@@ -41,4 +42,4 @@ For information about how to enable output messages for the auto-parallelizer, s
 [MSVC Compiler Options](compiler-options.md)<br/>
 [MSVC Compiler Command-Line Syntax](compiler-command-line-syntax.md)<br/>
 [#pragma loop()](../../preprocessor/loop.md)<br/>
-[Parallel Programming in Native Code](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)
+[Native code vectorization in Visual Studio](/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview)

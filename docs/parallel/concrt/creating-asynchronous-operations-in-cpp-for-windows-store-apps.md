@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Creating Asynchronous Operations in C++ for UWP Apps"
 title: "Creating Asynchronous Operations in C++ for UWP Apps"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["Windows 8.x apps, creating C++ async operations", "Creating C++ async operations"]
@@ -21,7 +22,7 @@ The use of asynchronous programming is a key component in the Windows Runtime ap
 
 - Use cancellation tokens to enable internal asynchronous operations to cancel.
 
-- The behavior of the `create_async` function depends on the return type of the work function that is passed to it. A work function that returns a task (either `task<T>` or `task<void>`) runs synchronously in the context that called `create_async`. A work function that returns `T` or `void` runs in an arbitrary context.
+- The behavior of the `create_async` function depends on the return type of the work function that is passed to it. A work function that returns a task (either `task<T>` or `task<void>`) runs synchronously in the context that called `create_async`. A work function that returns `T` or **`void`** runs in an arbitrary context.
 
 - You can use the [concurrency::task::then](reference/task-class.md#then) method to create a chain of tasks that run one after another. In a UWP app, the default context for a task's continuations depends on how that task was constructed. If the task was created by passing an asynchronous action to the task constructor, or by passing a lambda expression that returns an asynchronous action, then the default context for all continuations of that task is the current context. If the task is not constructed from an asynchronous action, then an arbitrary context is used by default for the task's continuations. You can override the default context with the [concurrency::task_continuation_context](../../parallel/concrt/reference/task-continuation-context-class.md) class.
 
@@ -55,14 +56,14 @@ Represents an asynchronous operation that returns a result.
 [Windows::Foundation::IAsyncOperationWithProgress\<TResult, TProgress>](/uwp/api/windows.foundation.iasyncoperationwithprogress-2)<br/>
 Represents an asynchronous operation that returns a result and reports progress.
 
-The notion of an *action* means that the asynchronous task doesn't produce a value (think of a function that returns `void`). The notion of an *operation* means that the asynchronous task does produce a value. The notion of *progress* means that the task can report progress messages to the caller. JavaScript, the .NET Framework, and Visual C++ each provides its own way to create instances of these interfaces for use across the ABI boundary. For Visual C++, the PPL provides the [concurrency::create_async](reference/concurrency-namespace-functions.md#create_async) function. This function creates a Windows Runtime asynchronous action or operation that represents the completion of a task. The `create_async` function takes a work function (typically a lambda expression), internally creates a `task` object, and wraps that task in one of the four asynchronous Windows Runtime interfaces.
+The notion of an *action* means that the asynchronous task doesn't produce a value (think of a function that returns **`void`**). The notion of an *operation* means that the asynchronous task does produce a value. The notion of *progress* means that the task can report progress messages to the caller. JavaScript, the .NET Framework, and Visual C++ each provides its own way to create instances of these interfaces for use across the ABI boundary. For Visual C++, the PPL provides the [concurrency::create_async](reference/concurrency-namespace-functions.md#create_async) function. This function creates a Windows Runtime asynchronous action or operation that represents the completion of a task. The `create_async` function takes a work function (typically a lambda expression), internally creates a `task` object, and wraps that task in one of the four asynchronous Windows Runtime interfaces.
 
 > [!NOTE]
 > Use `create_async` only when you have to create functionality that can be accessed from another language or another Windows Runtime component. Use the `task` class directly when you know that the operation is both produced and consumed by C++ code in the same component.
 
 The return type of `create_async` is determined by the type of its arguments. For example, if your work function doesn't return a value and doesn't report progress, `create_async` returns `IAsyncAction`. If your work function doesn't return a value and also reports progress, `create_async` returns `IAsyncActionWithProgress`. To report progress, provide a [concurrency::progress_reporter](../../parallel/concrt/reference/progress-reporter-class.md) object as the parameter to your work function. The ability to report progress enables you to report what amount of work was performed and what amount still remains (for example, as a percentage). It also enables you to report results as they become available.
 
-The `IAsyncAction`, `IAsyncActionWithProgress<TProgress>`, `IAsyncOperation<TResult>`, and `IAsyncActionOperationWithProgress<TProgress, TProgress>` interfaces each provide a `Cancel` method that enables you to cancel the asynchronous operation. The `task` class works with cancellation tokens. When you use a cancellation token to cancel work, the runtime does not start new work that subscribes to that token. Work that is already active can monitor its cancellation token and stop when it can. This mechanism is described in greater detail in the document [Cancellation in the PPL](cancellation-in-the-ppl.md). You can connect task cancellation with the Windows Runtime`Cancel` methods in two ways. First, you can define the work function that you pass to `create_async` to take a [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) object. When the `Cancel` method is called, this cancellation token is canceled and the normal cancellation rules apply to the underlying `task` object that supports the `create_async` call. If you do not provide a `cancellation_token` object, the underlying `task` object defines one implicitly. Define a `cancellation_token` object when you need to cooperatively respond to cancellation in your work function. The section [Example: Controlling Execution in a Windows Runtime App with C++ and XAML](#example-app) shows an example of how to perform cancellation in a Universal Windows Platform (UWP) app with C# and XAML that uses a custom Windows Runtime C++ component.
+The `IAsyncAction`, `IAsyncActionWithProgress<TProgress>`, `IAsyncOperation<TResult>`, and `IAsyncActionOperationWithProgress<TProgress, TProgress>` interfaces each provide a `Cancel` method that enables you to cancel the asynchronous operation. The `task` class works with cancellation tokens. When you use a cancellation token to cancel work, the runtime does not start new work that subscribes to that token. Work that is already active can monitor its cancellation token and stop when it can. This mechanism is described in greater detail in the document [Cancellation in the PPL](cancellation-in-the-ppl.md). You can connect task cancellation with the Windows Runtime `Cancel` methods in two ways. First, you can define the work function that you pass to `create_async` to take a [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) object. When the `Cancel` method is called, this cancellation token is canceled and the normal cancellation rules apply to the underlying `task` object that supports the `create_async` call. If you do not provide a `cancellation_token` object, the underlying `task` object defines one implicitly. Define a `cancellation_token` object when you need to cooperatively respond to cancellation in your work function. The section [Example: Controlling Execution in a Windows Runtime App with C++ and XAML](#example-app) shows an example of how to perform cancellation in a Universal Windows Platform (UWP) app with C# and XAML that uses a custom Windows Runtime C++ component.
 
 > [!WARNING]
 > In a chain of task continuations, always clean up state and then call [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) when the cancellation token is canceled. If you return early instead of calling `cancel_current_task`, the operation transitions to the completed state instead of the canceled state.
@@ -71,8 +72,8 @@ The following table summarizes the combinations that you can use to define async
 
 |To create this Windows Runtime interface|Return this type from `create_async`|Pass these parameter types to your work function to use an implicit cancellation token|Pass these parameter types to your work function to use an explicit cancellation token|
 |----------------------------------------------------------------------------------|------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-|`IAsyncAction`|`void` or `task<void>`|(none)|(`cancellation_token`)|
-|`IAsyncActionWithProgress<TProgress>`|`void` or `task<void>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
+|`IAsyncAction`|**`void`** or `task<void>`|(none)|(`cancellation_token`)|
+|`IAsyncActionWithProgress<TProgress>`|**`void`** or `task<void>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
 |`IAsyncOperation<TResult>`|`T` or `task<T>`|(none)|(`cancellation_token`)|
 |`IAsyncActionOperationWithProgress<TProgress, TProgress>`|`T` or `task<T>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
 
@@ -84,7 +85,7 @@ The following example shows the various ways to create an `IAsyncAction` object 
 
 ## <a name="example-component"></a> Example: Creating a C++ Windows Runtime Component and Consuming it from C\#
 
-Consider an app that uses XAML and C# to define the UI and a C++ Windows Runtime component to perform compute-intensive operations. In this example, the C++ component computes which numbers in a given range are prime. To illustrate the differences among the four Windows Runtime asynchronous task interfaces, start, in Visual Studio, by creating a **Blank Solution** and naming it `Primes`. Then add to the solution a **Windows Runtime Component** project and naming it `PrimesLibrary`. Add the following code to the generated C++ header file (this example renames Class1.h to Primes.h). Each `public` method defines one of the four asynchronous interfaces. The methods that return a value return a [Windows::Foundation::Collections::IVector\<int>](/uwp/api/windows.foundation.collections.ivector-1) object. The methods that report progress produce `double` values that define the percentage of overall work that has completed.
+Consider an app that uses XAML and C# to define the UI and a C++ Windows Runtime component to perform compute-intensive operations. In this example, the C++ component computes which numbers in a given range are prime. To illustrate the differences among the four Windows Runtime asynchronous task interfaces, start, in Visual Studio, by creating a **Blank Solution** and naming it `Primes`. Then add to the solution a **Windows Runtime Component** project and naming it `PrimesLibrary`. Add the following code to the generated C++ header file (this example renames Class1.h to Primes.h). Each **`public`** method defines one of the four asynchronous interfaces. The methods that return a value return a [Windows::Foundation::Collections::IVector\<int>](/uwp/api/windows.foundation.collections.ivector-1) object. The methods that report progress produce **`double`** values that define the percentage of overall work that has completed.
 
 [!code-cpp[concrt-windowsstore-primes#1](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_2.h)]
 
@@ -116,9 +117,9 @@ The `getPrimesCancellation` and `cancelGetPrimes` methods work together to enabl
 
 The following illustration shows the `Primes` app after each option has been chosen.
 
-![Windows Runtime Primes app](../../parallel/concrt/media/concrt_windows_primes.png "Windows Runtime Primes app")
+![Windows Runtime Primes app.](../../parallel/concrt/media/concrt_windows_primes.png "Windows Runtime Primes app")
 
-For examples that use `create_async` to create asynchronous tasks that can be consumed by other languages, see [Using C++ in the Bing Maps Trip Optimizer sample](/previous-versions/windows/apps/hh699891(v=vs.140)) and [Windows 8 Asynchronous Operations in C++ with PPL](https://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).
+For an example that uses `create_async` to create asynchronous tasks that can be consumed by other languages, see [Using C++ in the Bing Maps Trip Optimizer sample](/previous-versions/windows/apps/hh699891(v=vs.140)).
 
 ## <a name="exethread"></a> Controlling the Execution Thread
 
@@ -161,7 +162,7 @@ Add the following method declarations to the `MainPage` class (MainPage.h).
 
 [!code-cpp[concrt-windowsstore-commonwords#3](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_8.h)]
 
-Add the following `using` statements to MainPage.cpp.
+Add the following **`using`** statements to MainPage.cpp.
 
 [!code-cpp[concrt-windowsstore-commonwords#4](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_9.cpp)]
 
@@ -178,7 +179,7 @@ Modify the `MainPage` constructor to create a chain of continuation tasks that d
 
 The following illustration shows the results of the `CommonWords` app.
 
-![Windows Runtime CommonWords app](../../parallel/concrt/media/concrt_windows_common_words.png "Windows Runtime CommonWords app")
+![Windows Runtime CommonWords app.](../../parallel/concrt/media/concrt_windows_common_words.png "Windows Runtime CommonWords app")
 
 In this example, it's possible to support cancellation because the `task` objects that support `create_async` use an implicit cancellation token. Define your work function to take a `cancellation_token` object if your tasks need to respond to cancellation in a cooperative manner. For more info about cancellation in the PPL, see [Cancellation in the PPL](cancellation-in-the-ppl.md)
 

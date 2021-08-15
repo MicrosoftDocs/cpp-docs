@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bad_typeid exception"
 title: "bad_typeid exception"
 ms.date: "10/04/2019"
 f1_keywords: ["bad_typeid", "bad_typeid_cpp"]
@@ -7,7 +8,7 @@ ms.assetid: 5963ed58-4ede-4597-957d-f7bbd06299c2
 ---
 # bad_typeid exception
 
-The **bad_typeid** exception is thrown by the [typeid operator](../cpp/typeid-operator.md) when the operand for **typeid** is a NULL pointer.
+The **bad_typeid** exception is thrown by the [typeid operator](../cpp/typeid-operator.md) when the operand for **`typeid`** is a NULL pointer.
 
 ## Syntax
 
@@ -34,7 +35,7 @@ public:
 };
 ```
 
-The following example shows the **typeid** operator throwing a **bad_typeid** exception.
+The following example shows the **`typeid`** operator throwing a **bad_typeid** exception.
 
 ```cpp
 // expre_bad_typeid.cpp

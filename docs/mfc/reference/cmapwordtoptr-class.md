@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMapWordToPtr Class"
 title: "CMapWordToPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMapWordToPtr", "AFXCOLL/CMapWordToPtr", "AFXCOLL/CMapWordToPtr::CMapWordToPtr", "AFXCOLL/CMapWordToPtr::GetCount", "AFXCOLL/CMapWordToPtr::GetHashTableSize", "AFXCOLL/CMapWordToPtr::GetNextAssoc", "AFXCOLL/CMapWordToPtr::GetSize", "AFXCOLL/CMapWordToPtr::GetStartPosition", "AFXCOLL/CMapWordToPtr::HashKey", "AFXCOLL/CMapWordToPtr::InitHashTable", "AFXCOLL/CMapWordToPtr::IsEmpty", "AFXCOLL/CMapWordToPtr::Lookup", "AFXCOLL/CMapWordToPtr::LookupKey", "AFXCOLL/CMapWordToPtr::RemoveAll", "AFXCOLL/CMapWordToPtr::RemoveKey", "AFXCOLL/CMapWordToPtr::SetAt"]
@@ -17,7 +18,7 @@ class CMapWordToPtr : public CObject
 
 ## Members
 
-The member functions of `CMapWordToPtr` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a function parameter or return value, substitute a pointer to **void**. Wherever you see a `CString` or a **const** pointer to **char** as a function parameter or return value, substitute WORD.
+The member functions of `CMapWordToPtr` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a function parameter or return value, substitute a pointer to **`void`**. Wherever you see a `CString` or a **`const`** pointer to **`char`** as a function parameter or return value, substitute WORD.
 
 `BOOL CMapWordToPtr::Lookup( WORD <key>, void*& <rValue> ) const;`
 

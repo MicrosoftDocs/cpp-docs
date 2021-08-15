@@ -1,14 +1,14 @@
 ---
-title: "literal (C++/CLI and C++/CX)"
-ms.date: "10/12/2018"
+title: "literal (C++/CLI)"
+description: "The literal keyword is a Microsoft C++/CLI context-sensitive keyword for a compile-time constant."
+ms.date: 10/20/2020
 ms.topic: "reference"
 f1_keywords: ["literal", "literal_cpp"]
 helpviewer_keywords: ["literal keyword [C++]"]
-ms.assetid: 6b1a1f36-2e1d-4a23-8eb6-172f4f3c477f
 ---
-# literal (C++/CLI and C++/CX)
+# `literal` (C++/CLI)
 
-A variable (data member) marked as **literal** in a **/clr** compilation is the native equivalent of a **static const** variable.
+A variable (data member) marked as **`literal`** in a **`/clr`** compilation is a compile-time constant. It's the native equivalent of a C# [`const`](/dotnet/csharp/language-reference/keywords/const) variable.
 
 ## All Platforms
 
@@ -22,27 +22,21 @@ A variable (data member) marked as **literal** in a **/clr** compilation is the 
 
 (There are no remarks for this language feature that apply to only the Windows Runtime.)
 
-### Requirements
-
-Compiler option: `/ZW`
-
 ## Common Language Runtime
 
 ## Remarks
 
-A data member marked as **literal** must be initialized when declared and the value must be a constant integral, enum, or string type. Conversion from the type of the initialization expression to the type of the static const data-member must not require a user-defined conversion.
+A data member marked as **`literal`** must be initialized when declared. And, the value must be a constant integral, enum, or string type. Conversion from the type of the initialization expression to the type of the **`literal`** data member can't require a user-defined conversion.
 
-No memory is allocated for the literal field at runtime; the compiler only inserts its value in the metadata for the class.
+No memory is allocated for the **`literal`** field at runtime; the compiler only inserts its value in the metadata for the class. The **`literal`** value is treated as a compile-time constant. The closest equivalent in Standard C++ is **`constexpr`**, but a data member can't be **`constexpr`** in C++/CLI.
 
-A variable marked **static const** will not be available in metadata to other compilers.
+A variable marked as **`literal`** differs from one marked **`static const`**. A **`static const`** data member isn't made available in metadata to other compilers. For more information, see [`static`](../cpp/storage-classes-cpp.md) and [`const`](../cpp/const-cpp.md).
 
-For more information, see [Static](../cpp/storage-classes-cpp.md) and [const](../cpp/const-cpp.md).
+**`literal`** is a context-sensitive keyword. For more information, see [Context-sensitive keywords](context-sensitive-keywords-cpp-component-extensions.md).
 
-**literal** is a context-sensitive keyword. See [Context-Sensitive Keywords](context-sensitive-keywords-cpp-component-extensions.md) for more information.
+## Examples
 
-## Example
-
-This example shows that a **literal** variable implies **static**.
+This example shows that a **`literal`** variable implies **`static`**.
 
 ```cpp
 // mcppv2_literal.cpp
@@ -56,9 +50,7 @@ int main() {
 }
 ```
 
-## Example
-
-The following sample shows the affect of literal in metadata:
+The following sample shows the effect of **`literal`** in metadata:
 
 ```cpp
 // mcppv2_literal2.cpp
@@ -71,17 +63,15 @@ public ref struct A {
 
 Notice the difference in the metadata for `sc` and `lit`: the `modopt` directive is applied to `sc`, meaning it can be ignored by other compilers.
 
-```
-.field public static int32 modopt([mscorlib]System.Runtime.CompilerServices.IsConst) sc = int32(0x0000000A)
-```
-
-```
-.field public static literal int32 lit = int32(0x0000000A)
+```MSIL
+.field public static int32 modopt([mscorlib]System.Runtime.CompilerServices.IsConst) sc = int32(0x00000001)
 ```
 
-## Example
+```MSIL
+.field public static literal int32 lit = int32(0x00000000)
+```
 
-The following sample, authored in C#, references the metadata created in the previous sample and shows the affect of **literal** and **static const** variables:
+The following sample, authored in C#, references the metadata created in the previous sample and shows the effect of **`literal`** and **`static const`** variables:
 
 ```csharp
 // mcppv2_literal3.cs

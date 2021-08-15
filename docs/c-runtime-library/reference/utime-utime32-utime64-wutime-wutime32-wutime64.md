@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _utime, _utime32, _utime64, _wutime, _wutime32, _wutime64"
 title: "_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64"
 ms.date: "4/2/2020"
 api_name: ["_utime64", "_utime", "_wutime", "_wutime64", "_wutime32", "_utime32", "_o__utime32", "_o__utime64", "_o__wutime32", "_o__wutime64"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tutime", "_utime64", "wutime", "utime32", "wutime64", "_utime", "wutime32", "_wutime", "utime", "utime64", "_wutime64", "_utime32", "_tutime64", "_wutime32"]
@@ -71,7 +72,7 @@ The **_utime** function sets the modification time for the file specified by *fi
 
 The **_utimbuf** structure stores file access and modification times used by **_utime** to change file-modification dates. The structure has the following fields, which are both of type **time_t**:
 
-| Field |   |
+| Field | Description |
 |-------|---|
 | **actime** | Time of file access |
 | **modtime** | Time of file modification |

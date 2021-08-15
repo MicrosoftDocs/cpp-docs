@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComCriticalSection Class"
 title: "CComCriticalSection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComCriticalSection", "ATLCORE/ATL::CComCriticalSection", "ATLCORE/ATL::CComCriticalSection::CComCriticalSection", "ATLCORE/ATL::CComCriticalSection::Init", "ATLCORE/ATL::CComCriticalSection::Lock", "ATLCORE/ATL::CComCriticalSection::Term", "ATLCORE/ATL::CComCriticalSection::Unlock", "ATLCORE/ATL::CComCriticalSection::m_sec"]
@@ -42,7 +43,7 @@ class CComCriticalSection
 
 `CComCriticalSection` is similar to class [CComAutoCriticalSection](../../atl/reference/ccomautocriticalsection-class.md), except that you must explicitly initialize and release the critical section.
 
-Typically, you use `CComCriticalSection` through the **typedef** name [CriticalSection](ccommultithreadmodel-class.md#criticalsection). This name references `CComCriticalSection` when [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) is being used.
+Typically, you use `CComCriticalSection` through the **`typedef`** name [CriticalSection](ccommultithreadmodel-class.md#criticalsection). This name references `CComCriticalSection` when [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) is being used.
 
 See [CComCritSecLock Class](../../atl/reference/ccomcritseclock-class.md) for a safer way to use this class than calling `Lock` and `Unlock` directly.
 

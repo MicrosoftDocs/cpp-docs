@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3229"
 title: "Compiler Error C3229"
 ms.date: "11/04/2016"
 f1_keywords: ["C3229"]
@@ -11,7 +12,7 @@ ms.assetid: f2d90923-aa8b-444f-ab10-1f37dbb864e1
 
 You cannot use generic parameters with `*`, `^`, or `&`.
 
-## Example
+## Examples
 
 The following sample generates C3229.
 
@@ -29,8 +30,6 @@ ref class D {
    T u;
 };
 ```
-
-## Example
 
 The following sample generates C3229.
 

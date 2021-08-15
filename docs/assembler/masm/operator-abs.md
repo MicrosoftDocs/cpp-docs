@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator ABS"
 title: "operator ABS"
 ms.date: "12/17/2019"
 f1_keywords: ["operator ABS"]

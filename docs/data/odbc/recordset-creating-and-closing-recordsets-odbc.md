@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recordset: Creating and Closing Recordsets (ODBC)"
 title: "Recordset: Creating and Closing Recordsets (ODBC)"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["ODBC recordsets, creating", "recordsets, creating", "recordsets, opening", "recordsets, closing", "ODBC recordsets, closing", "ODBC recordsets, opening"]
@@ -94,7 +95,7 @@ When you finish with your recordset, you must dispose of it and deallocate its m
 
 1. Destroy the recordset object.
 
-   If you declared it on the stack frame of a function, the object is destroyed automatically when the object goes out of scope. Otherwise, use the **delete** operator.
+   If you declared it on the stack frame of a function, the object is destroyed automatically when the object goes out of scope. Otherwise, use the **`delete`** operator.
 
 `Close` frees the recordset's `HSTMT` handle. It does not destroy the C++ object.
 

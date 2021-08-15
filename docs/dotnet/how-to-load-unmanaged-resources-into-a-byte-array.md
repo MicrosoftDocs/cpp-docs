@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Load Unmanaged Resources into a Byte Array"
 title: "How to: Load Unmanaged Resources into a Byte Array"
 ms.custom: "get-started-article"
 ms.date: "11/04/2016"
@@ -9,7 +10,7 @@ ms.assetid: cdada6cd-6d42-437a-a90f-44a0b18d6a93
 
 This topic discusses several ways to load unmanaged resources into a <xref:System.Byte> array.
 
-## Example
+## Examples
 
 If you know the size of your unmanaged resource, you can preallocate a CLR array and then load the resource into the array using a pointer to the array block of the CLR array.
 
@@ -44,8 +45,6 @@ int main() {
 ```Output
 0123456789
 ```
-
-## Example
 
 This sample shows how to copy data from an unmanaged memory block to a managed array.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exporting from a DLL Using DEF Files"
 title: "Exporting from a DLL Using DEF Files"
 ms.date: "05/06/2019"
 helpviewer_keywords: ["def files [C++], exporting from DLLs", ".def files [C++], exporting from DLLs", "exporting DLLs [C++], DEF files"]
@@ -6,7 +7,7 @@ ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
 ---
 # Exporting from a DLL Using DEF Files
 
-A module-definition or DEF file (*.def) is a text file containing one or more module statements that describe various attributes of a DLL. If you are not using the **__declspec(dllexport)** keyword to export the DLL's functions, the DLL requires a DEF file.
+A module-definition or DEF file (*.def) is a text file containing one or more module statements that describe various attributes of a DLL. If you are not using the **`__declspec(dllexport)`** keyword to export the DLL's functions, the DLL requires a DEF file.
 
 A minimal DEF file must contain the following module-definition statements:
 

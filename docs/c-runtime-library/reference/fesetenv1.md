@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: fesetenv"
 title: "fesetenv"
 ms.date: "04/05/2018"
 api_name: ["fesetenv"]

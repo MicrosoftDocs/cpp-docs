@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using an Existing ADO Recordset"
 title: "Using an Existing ADO Recordset"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["ADO recordsets [C++]", "OLE DB consumer templates, ADO recordsets", "recordsets [C++], using in OLE DB"]

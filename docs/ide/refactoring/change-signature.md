@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Change Signature"
 title: "Change Signature"
 ms.date: "11/16/2016"
 ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
@@ -15,7 +16,7 @@ ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
 
 1. Place the text or mouse cursor inside the name of the method to modify, or one of its usages:
 
-   ![Highlighted code](images/changesignature_highlight.png)
+   ![Screenshot showing highlighted code.](images/changesignature_highlight.png)
 
 1. Next, do one of the following:
    * **Keyboard**
@@ -27,7 +28,7 @@ ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
 
 1. In the **Change Signature** dialog that pops up, you can use the buttons on the right side to change the method signature:
 
-   ![Change Signature dialog](images/changesignature_dialog.png)
+   ![Screenshot showing the Change Signature dialog.](images/changesignature_dialog.png)
 
    | Button | Description
    | ------ | ---
@@ -43,7 +44,7 @@ ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
 
    When adding or modifying a parameter, you will see the **Add Parameter** or **Edit Parameter** window.
 
-   ![Add/Modify parameter](images/changesignature_addmodify.png)
+   ![Screenshot showing the Add Modify parameter.](images/changesignature_addmodify.png)
 
    Here, you can do the following:
 
@@ -59,8 +60,8 @@ ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
 
 1. When you are finished, press the **OK** button to make the changes.  Ensure that the changes you are requesting are being made appropriately.  Use the checkboxes in the top half of the window to enable or disable the renaming of any item.
 
-   ![Change Signature preview](images/changesignature_preview.png)
+   ![Screenshot showing the Change Signature preview.](images/changesignature_preview.png)
 
 1. When everything looks good, click the **Apply** button and the function will be changed in your source code.
 
-   ![Change Signature result](images/changesignature_result.png)
+   ![Screenshot showing the Change Signature result.](images/changesignature_result.png)

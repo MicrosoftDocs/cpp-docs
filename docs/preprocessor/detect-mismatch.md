@@ -1,17 +1,18 @@
 ---
+description: "Learn more about the detect_mismatch pragma directive in Microsoft C/C++"
 title: "detect_mismatch pragma"
-ms.date: "08/29/2019"
+ms.date: 01/22/2021
 f1_keywords: ["vc-pragma.detect_mismatch", "detect_mismatch_CPP"]
-helpviewer_keywords: ["pragmas, detect_mismatch", "detect_mismatch pragma"]
-ms.assetid: ddb13ac9-0e2f-40ce-be69-7e44c04f5a12
+helpviewer_keywords: ["pragma, detect_mismatch", "detect_mismatch pragma"]
+no-loc: ["pragma"]
 ---
-# detect_mismatch pragma
+# `detect_mismatch` pragma
 
 Places a record in an object. The linker checks these records for potential mismatches.
 
 ## Syntax
 
-> **#pragma detect_mismatch(** "*name*" **,** "*value*" **)**
+> **`#pragma detect_mismatch(`** "*name*" **`,`** "*value*" **`)`**
 
 ## Remarks
 
@@ -35,8 +36,8 @@ int main ()
 #pragma detect_mismatch("myLib_version", "1")
 ```
 
-If you compile both of these files by using the command line `cl pragma_directive_detect_mismatch_a.cpp pragma_directive_detect_mismatch_b.cpp`, you will receive the error `LNK2038`.
+If you compile both of these files by using the command line `cl pragma_directive_detect_mismatch_a.cpp pragma_directive_detect_mismatch_b.cpp`, you will receive the error LNK2038.
 
 ## See also
 
-[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)

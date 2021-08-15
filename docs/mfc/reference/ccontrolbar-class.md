@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CControlBar Class"
 title: "CControlBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CControlBar", "AFXEXT/CControlBar", "AFXEXT/CControlBar::CControlBar", "AFXEXT/CControlBar::CalcDynamicLayout", "AFXEXT/CControlBar::CalcFixedLayout", "AFXEXT/CControlBar::CalcInsideRect", "AFXEXT/CControlBar::DoPaint", "AFXEXT/CControlBar::DrawBorders", "AFXEXT/CControlBar::DrawGripper", "AFXEXT/CControlBar::EnableDocking", "AFXEXT/CControlBar::GetBarStyle", "AFXEXT/CControlBar::GetBorders", "AFXEXT/CControlBar::GetCount", "AFXEXT/CControlBar::GetDockingFrame", "AFXEXT/CControlBar::IsFloating", "AFXEXT/CControlBar::OnUpdateCmdUI", "AFXEXT/CControlBar::SetBarStyle", "AFXEXT/CControlBar::SetBorders", "AFXEXT/CControlBar::SetInPlaceOwner", "AFXEXT/CControlBar::m_bAutoDelete", "AFXEXT/CControlBar::m_pInPlaceOwner"]
@@ -366,7 +367,7 @@ BOOL m_bAutoDelete;
 
 A control-bar object is usually embedded in a frame-window object. In this case, *m_bAutoDelete* is 0 because the embedded control-bar object is destroyed when the frame window is destroyed.
 
-Set this variable to a nonzero value if you allocate a `CControlBar` object on the heap and you do not plan to call **delete**.
+Set this variable to a nonzero value if you allocate a `CControlBar` object on the heap and you do not plan to call **`delete`**.
 
 ## <a name="m_pinplaceowner"></a> CControlBar::m_pInPlaceOwner
 

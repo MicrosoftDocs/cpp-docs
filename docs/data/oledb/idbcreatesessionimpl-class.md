@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IDBCreateSessionImpl Class"
 title: "IDBCreateSessionImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IDBCreateSessionImpl", "ATL.IDBCreateSessionImpl", "ATL::IDBCreateSessionImpl", "IDBCreateSessionImpl::CreateSession", "IDBCreateSessionImpl.CreateSession", "CreateSession"]
@@ -33,7 +34,7 @@ The session object.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[CreateSession](#createsession)|Creates a new session from the data source object and returns the requested interface on the newly created session.|
 

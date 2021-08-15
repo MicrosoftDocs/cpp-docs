@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4463"
 title: "Compiler Warning (level 4) C4463"
 ms.date: "11/04/2016"
 f1_keywords: ["C4463"]
@@ -13,9 +14,9 @@ The assigned *value* is outside the range of values that the bit-field can hold.
 
 ## Example
 
-This example generates C4463 because it attempts to assign a value of 3 to a bit-field of type `int` with a size of 2, which has a range from -2 to 1.
+This example generates C4463 because it attempts to assign a value of 3 to a bit-field of type **`int`** with a size of 2, which has a range from -2 to 1.
 
-To fix this issue, you can change the assigned value to something in the allowed range. If the bit-field is intended to hold unsigned values in the range from 0 to 3, you can change the declaration type to `unsigned`. If the field is intended to hold values in the range -4 to 3, then you can change the bit-field size to 3.
+To fix this issue, you can change the assigned value to something in the allowed range. If the bit-field is intended to hold unsigned values in the range from 0 to 3, you can change the declaration type to **`unsigned`**. If the field is intended to hold values in the range -4 to 3, then you can change the bit-field size to 3.
 
 ```cpp
 // C4463_overflow.cpp

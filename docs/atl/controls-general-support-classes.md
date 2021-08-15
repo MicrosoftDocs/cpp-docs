@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Controls: General Support Classes"
 title: "ATL Controls: General Support Classes"
 ms.date: "11/04/2016"
 ms.topic: "reference"

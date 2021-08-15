@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Ellipsis and Variadic Templates"
 title: "Ellipsis and Variadic Templates"
 ms.date: "11/04/2016"
 ms.assetid: f20967d9-c967-4fd2-b902-2bb1d5ed87e3
@@ -31,7 +32,7 @@ Or this:
 template<typename ... Arguments> class classname;
 ```
 
-Notice that this article uses the convention that's shown in the first example (the ellipsis is attached to `typename`).
+Notice that this article uses the convention that's shown in the first example (the ellipsis is attached to **`typename`**).
 
 In the preceding examples, *Arguments* is a parameter pack. The class `classname` can accept a variable number of arguments, as in these examples:
 
@@ -66,7 +67,7 @@ template <typename... Arguments> returntype functionname(Arguments&&... args);
 template <typename... Arguments> returntype functionname(Arguments*... args);
 ```
 
-Specifiers like **const** are also allowed:
+Specifiers like **`const`** are also allowed:
 
 ```cpp
 template <typename... Arguments> returntype functionname(const Arguments&... args);

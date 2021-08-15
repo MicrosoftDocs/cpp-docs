@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: recursive_mutex Class"
 title: "recursive_mutex Class"
 ms.date: "11/04/2016"
 f1_keywords: ["mutex/std::recursive_mutex", "mutex/std::recursive_mutex::recursive_mutex", "mutex/std::recursive_mutex::lock", "mutex/std::recursive_mutex::try_lock", "mutex/std::recursive_mutex::unlock"]
@@ -80,11 +81,11 @@ bool try_lock() noexcept;
 
 ### Return Value
 
-**true** if the method successfully obtains ownership of the `mutex` or if the calling thread already owns the `mutex**; otherwise, **false`.
+**`true`** if the method successfully obtains ownership of the `mutex` or if the calling thread already owns the `mutex**; otherwise, **false`.
 
 ### Remarks
 
-If the calling thread already owns the `mutex`, the function immediately returns **true**, and the previous lock remains in effect.
+If the calling thread already owns the `mutex`, the function immediately returns **`true`**, and the previous lock remains in effect.
 
 ## <a name="unlock"></a> unlock
 

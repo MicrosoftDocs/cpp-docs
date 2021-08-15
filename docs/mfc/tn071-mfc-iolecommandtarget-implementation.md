@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN071: MFC IOleCommandTarget Implementation"
 title: "TN071: MFC IOleCommandTarget Implementation"
 ms.date: "06/28/2018"
 helpviewer_keywords: ["TN071 [MFC]", "IOleCommandTarget interface [MFC]"]

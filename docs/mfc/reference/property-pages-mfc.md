@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Property Pages (MFC)"
 title: "Property Pages (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["property page data transfer functions in MFC", "property pages [MFC], global MFC functions"]
@@ -12,7 +13,7 @@ This data-mapping mechanism maps property page controls to the individual proper
 
 ### Property Page Data Transfer
 
-|||
+|Name|Description|
 |-|-|
 |[DDP_CBIndex](#ddp_cbindex)|Links the selected string's index in a combo box with a control's property.|
 |[DDP_CBString](#ddp_cbstring)|Links the selected string in a combo box with a control's property. The selected string can begin with the same letters as the property's value but does not need to match it fully.|
@@ -23,7 +24,7 @@ This data-mapping mechanism maps property page controls to the individual proper
 |[DDP_LBStringExact](#ddp_lbstringexact)|Links the selected string in a list box with a control's property. The selected string and the property's string value must match exactly.|
 |[DDP_PostProcessing](#ddp_postprocessing)|Finishes the transfer of property values from your control.|
 |[DDP_Radio](#ddp_radio)|Links a radio button group in the control's property page with a control's property.|
-|[DDP_Text](#ddp_text)|Links a control in the control's property page with a control's property. This function handles several different types of properties, such as **double**, **short**, BSTR, and **long**.|
+|[DDP_Text](#ddp_text)|Links a control in the control's property page with a control's property. This function handles several different types of properties, such as **`double`**, **`short`**, BSTR, and **`long`**.|
 
 For more information about the `DoDataExchange` function and property pages, see the article [ActiveX Controls: Property Pages](../../mfc/mfc-activex-controls-property-pages.md).
 
@@ -31,7 +32,7 @@ The following is a list of macros used to create and manage property pages for a
 
 ### Property Pages
 
-|||
+|Name|Description|
 |-|-|
 |[BEGIN_PROPPAGEIDS](#begin_proppageids)|Begins the list of property page IDs.|
 |[END_PROPPAGEIDS](#end_proppageids)|Ends the list of property page IDs.|

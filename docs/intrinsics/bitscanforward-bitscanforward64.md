@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _BitScanForward, _BitScanForward64"
 title: "_BitScanForward, _BitScanForward64"
 ms.date: "09/02/2019"
 f1_keywords: ["_BitScanForward", "_BitScanForward_cpp", "_BitScanForward64_cpp", "_BitScanForward64"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_floating_point Class"
 title: "is_floating_point Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_floating_point"]
@@ -25,7 +26,7 @@ The type to query.
 
 An instance of the type predicate holds true if the type *Ty* is a floating point type or a `cv-qualified` form of a floating point type, otherwise it holds false.
 
-A floating point type is one of **float**, **double**, or **long double**.
+A floating point type is one of **`float`**, **`double`**, or **`long double`**.
 
 ## Example
 

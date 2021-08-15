@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tree Control Item Labels"
 title: "Tree Control Item Labels"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["tree controls [MFC], item labels", "labels, CTreeCtrl items", "CTreeCtrl class [MFC], item labels", "item labels, tree controls", "item labels"]

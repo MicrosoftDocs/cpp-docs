@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;vector&gt; operators"
 title: "&lt;vector&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["vector/std::operator!=", "vector/std::operator&gt;", "vector/std::operator&gt;=", "vector/std::operator&lt;", "vector/std::operator&lt;=", "vector/std::operator=="]
@@ -25,7 +26,7 @@ An object of type `vector`.
 
 ### Return Value
 
-**true** if the vectors are not equal; **false** if the vectors are equal.
+**`true`** if the vectors are not equal; **`false`** if the vectors are equal.
 
 ### Remarks
 
@@ -76,7 +77,7 @@ An object of type `vector`.
 
 ### Return Value
 
-**true** if the vector on the left side of the operator is less than the vector on the right side of the operator; otherwise **false**.
+**`true`** if the vector on the left side of the operator is less than the vector on the right side of the operator; otherwise **`false`**.
 
 ### Example
 
@@ -127,7 +128,7 @@ An object of type `vector`.
 
 ### Return Value
 
-**true** if the vector on the left side of the operator is less than or equal to the vector on the right side of the operator; otherwise **false**.
+**`true`** if the vector on the left side of the operator is less than or equal to the vector on the right side of the operator; otherwise **`false`**.
 
 ### Example
 
@@ -178,7 +179,7 @@ An object of type `vector`.
 
 ### Return Value
 
-**true** if the vector on the left side of the operator is equal to the vector on the right side of the operator; otherwise **false**.
+**`true`** if the vector on the left side of the operator is equal to the vector on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -229,7 +230,7 @@ An object of type `vector`.
 
 ### Return Value
 
-**true** if the vector on the left side of the operator is greater than the vector on the right side of the operator; otherwise **false**.
+**`true`** if the vector on the left side of the operator is greater than the vector on the right side of the operator; otherwise **`false`**.
 
 ### Example
 
@@ -281,7 +282,7 @@ An object of type `vector`.
 
 ### Return Value
 
-**true** if the vector on the left side of the operator is greater than or equal to the vector on the right side of the vector; otherwise **false**.
+**`true`** if the vector on the left side of the operator is greater than or equal to the vector on the right side of the vector; otherwise **`false`**.
 
 ### Example
 

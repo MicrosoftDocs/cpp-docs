@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Error LNK1312"
 title: "Linker Tools Error LNK1312"
 ms.date: "11/04/2016"
 f1_keywords: ["LNK1312"]
@@ -11,7 +12,7 @@ invalid or corrupt file: unable to import assembly
 
 When building an assembly, a file other than a module or assembly compiled with **/clr** was passed to the **/ASSEMBLYMODULE** linker option.  If you passed an object file to **/ASSEMBLYMODULE**, just pass the object directly to the linker, instead of to **/ASSEMBLYMODULE**.
 
-## Example
+## Examples
 
 The following sample created the .obj file.
 
@@ -23,8 +24,6 @@ public:
    int i;
 };
 ```
-
-## Example
 
 The following sample generates LNK1312.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Walkthrough: Removing Work from a User-Interface Thread"
 title: "Walkthrough: Removing Work from a User-Interface Thread"
 ms.date: "08/19/2019"
 helpviewer_keywords: ["user-interface threads, removing work from [Concurrency Runtime]", "removing work from user-interface threads [Concurrency Runtime]"]
@@ -70,7 +71,7 @@ This section describes how to draw the Mandelbrot fractal. This version draws th
 
    [!code-cpp[concrt-mandelbrot#2](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_2.h)]
 
-1. In ChildView.h, add the following code to the `protected` section of the `CChildView` class:
+1. In ChildView.h, add the following code to the **`protected`** section of the `CChildView` class:
 
    [!code-cpp[concrt-mandelbrot#3](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_3.h)]
 
@@ -80,7 +81,7 @@ This section describes how to draw the Mandelbrot fractal. This version draws th
 
    In Debug builds, this step prevents the application from using the `DEBUG_NEW` allocator, which is incompatible with GDI+.
 
-1. In ChildView.cpp, add a `using` directive to the `Gdiplus` namespace.
+1. In ChildView.cpp, add a **`using`** directive to the `Gdiplus` namespace.
 
    [!code-cpp[concrt-mandelbrot#5](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_5.cpp)]
 
@@ -100,7 +101,7 @@ This section describes how to draw the Mandelbrot fractal. This version draws th
 
 The following illustration shows the results of the Mandelbrot application.
 
-![The Mandelbrot Application](../../parallel/concrt/media/mandelbrot.png "The Mandelbrot Application")
+![The Mandelbrot Application.](../../parallel/concrt/media/mandelbrot.png "The Mandelbrot Application")
 
 Because the computation for each pixel is computationally expensive, the UI thread cannot process additional messages until the overall computation finishes. This could decrease responsiveness in the application. However, you can relieve this problem by removing work from the UI thread.
 
@@ -120,11 +121,11 @@ This example also uses a [concurrency::unbounded_buffer](reference/unbounded-buf
 
    [!code-cpp[concrt-mandelbrot#101](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_9.h)]
 
-1. In ChildView.h, add `task_group` and `unbounded_buffer` member variables to the `protected` section of the `CChildView` class. The `task_group` object holds the tasks that perform drawing; the `unbounded_buffer` object holds the completed Mandelbrot image.
+1. In ChildView.h, add `task_group` and `unbounded_buffer` member variables to the **`protected`** section of the `CChildView` class. The `task_group` object holds the tasks that perform drawing; the `unbounded_buffer` object holds the completed Mandelbrot image.
 
    [!code-cpp[concrt-mandelbrot#102](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_10.h)]
 
-1. In ChildView.cpp, add a `using` directive to the `concurrency` namespace.
+1. In ChildView.cpp, add a **`using`** directive to the `concurrency` namespace.
 
    [!code-cpp[concrt-mandelbrot#103](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_11.cpp)]
 
@@ -146,7 +147,7 @@ The UI is now more responsive because the drawing work is performed in the backg
 
 ## <a name="performance"></a> Improving Drawing Performance
 
-The generation of the Mandelbrot fractal is a good candidate for parallelization because the computation of each pixel is independent of all other computations. To parallelize the drawing procedure, convert the outer `for` loop in the `CChildView::DrawMandelbrot` method to a call to the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm, as follows.
+The generation of the Mandelbrot fractal is a good candidate for parallelization because the computation of each pixel is independent of all other computations. To parallelize the drawing procedure, convert the outer **`for`** loop in the `CChildView::DrawMandelbrot` method to a call to the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm, as follows.
 
 [!code-cpp[concrt-mandelbrot#301](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_14.cpp)]
 
@@ -174,7 +175,7 @@ The `CChildView::DrawMandelbrot` method, which performs the drawing task, must r
 
 ##### To add support for cancellation in the Mandelbrot application
 
-1. In ChildView.h, in the `protected` section of the `CChildView` class, add declarations for the `OnSize`, `OnSizing`, and `OnDestroy` message map functions.
+1. In ChildView.h, in the **`protected`** section of the `CChildView` class, add declarations for the `OnSize`, `OnSizing`, and `OnDestroy` message map functions.
 
    [!code-cpp[concrt-mandelbrot#201](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_15.h)]
 

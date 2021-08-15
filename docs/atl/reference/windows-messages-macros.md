@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Windows Messages Macros"
 title: "Windows Messages Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlbase/ATL::WM_FORWARDMSG"]
@@ -8,7 +9,7 @@ ms.assetid: 63abd22c-372d-4148-bb04-c605950ae64f
 
 This macro forwards window messages.
 
-|||
+|Name|Description|
 |-|-|
 |[WM_FORWARDMSG](#wm_forwardmsg)|Use to forward a message received by a window to another window for processing.|
 

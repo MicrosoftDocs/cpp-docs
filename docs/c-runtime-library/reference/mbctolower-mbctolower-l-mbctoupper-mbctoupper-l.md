@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l"
 title: "_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l"
 ms.date: "4/2/2020"
 api_name: ["_mbctolower_l", "_mbctoupper_l", "_mbctoupper", "_mbctolower", "_o__mbctolower", "_o__mbctolower_l", "_o__mbctoupper", "_o__mbctoupper_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["mbctoupper_l", "mbctolower_l", "_mbctolower", "_mbctolower_l", "_mbctoupper", "mbctoupper", "mbctolower", "_mbctoupper_l"]

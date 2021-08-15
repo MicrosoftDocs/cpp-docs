@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: regex_iterator Class"
 title: "regex_iterator Class"
 ms.date: "09/10/2018"
 f1_keywords: ["regex/std::regex_iterator", "regex/std::regex_iterator::operator==", "regex/std::regex_iterator::operator!=", "regex/std::regex_iterator::operator*", "regex/std::regex_iterator::operator->", "regex/std::regex_iterator::operator++"]
@@ -202,7 +203,7 @@ The iterator to compare to.
 
 ### Remarks
 
-The member function returns true if `*this` and *right* are both end-of-sequence iterators or if neither is an end-of-sequence iterator and `begin == right.begin`, `end == right.end`, `pregex == right.pregex`, and `flags == right.flags`. Otherwise it returns false.
+The member function returns true if **`*this`** and *right* are both end-of-sequence iterators or if neither is an end-of-sequence iterator and `begin == right.begin`, `end == right.end`, `pregex == right.pregex`, and `flags == right.flags`. Otherwise it returns false.
 
 ## <a name="op_arrow"></a> regex_iterator::operator-&gt;
 

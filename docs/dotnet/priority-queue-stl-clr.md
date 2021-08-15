@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: priority_queue (STL/CLR)"
 title: "priority_queue (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -83,9 +84,9 @@ The type of the underlying container.
 
 The object allocates and frees storage for the sequence it controls through an underlying container, of type `Container`, that stores `Value` elements and grows on demand. It keeps the sequence ordered as a heap, with the highest-priority element (the top element) readily accessible and removable. The object restricts access to pushing new elements and popping just the highest-priority element, implementing a priority queue.
 
-The object orders the sequence it controls by calling a stored delegate object of type [priority_queue::value_compare (STL/CLR)](../dotnet/priority-queue-value-compare-stl-clr.md). You can specify the stored delegate object when you construct the priority_queue; if you specify no delegate object, the default is the comparison `operator<(value_type, value_type)`. You access this stored object by calling the member function [priority_queue::value_comp (STL/CLR)](../dotnet/priority-queue-value-comp-stl-clr.md)`()`.
+The object orders the sequence it controls by calling a stored delegate object of type [priority_queue::value_compare (STL/CLR)](#value_compare). You can specify the stored delegate object when you construct the priority_queue; if you specify no delegate object, the default is the comparison `operator<(value_type, value_type)`. You access this stored object by calling the member function [priority_queue::value_comp (STL/CLR)](#value_comp)`()`.
 
-Such a delegate object must impose a strict weak ordering on values of type [priority_queue::value_type (STL/CLR)](../dotnet/priority-queue-value-type-stl-clr.md). That means, for any two keys `X` and `Y`:
+Such a delegate object must impose a strict weak ordering on values of type [priority_queue::value_type (STL/CLR)](#value_type). That means, for any two keys `X` and `Y`:
 
 `value_comp()(X, Y)` returns the same Boolean result on every call.
 
@@ -319,7 +320,7 @@ bool empty();
 
 ### Remarks
 
-The member function returns true for an empty controlled sequence. It is equivalent to [priority_queue::size (STL/CLR)](../dotnet/priority-queue-size-stl-clr.md)`() == 0`. You use it to test whether the priority_queue is empty.
+The member function returns true for an empty controlled sequence. It is equivalent to [priority_queue::size (STL/CLR)](#size)`() == 0`. You use it to test whether the priority_queue is empty.
 
 ### Example
 
@@ -540,7 +541,7 @@ Container adapter to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
+The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
 
 ### Example
 
@@ -914,7 +915,7 @@ size_type size();
 
 ### Remarks
 
-The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [priority_queue::empty (STL/CLR)](../dotnet/priority-queue-empty-stl-clr.md)`()`.
+The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [priority_queue::empty (STL/CLR)](#empty)`()`.
 
 ### Example
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Decorated Names"
 title: "Decorated Names"
 ms.date: "09/05/2018"
 helpviewer_keywords: ["decorated names, definition", "name decoration [C++]", "names [C++], decorated"]
@@ -46,14 +47,14 @@ The function and class names are encoded in the decorated name. The rest of the 
 
 ## <a name="FormatC"></a> Format of a C decorated name
 
-The form of decoration for a C function depends on the calling convention used in its declaration, as shown in the following table. This is also the decoration format that is used when C++ code is declared to have `extern "C"` linkage. The default calling convention is `__cdecl`. Note that in a 64-bit environment, functions are not decorated.
+The form of decoration for a C function depends on the calling convention used in its declaration, as shown in the following table. This is also the decoration format that is used when C++ code is declared to have `extern "C"` linkage. The default calling convention is **`__cdecl`**. Note that in a 64-bit environment, functions are not decorated.
 
 |Calling convention|Decoration|
 |------------------------|----------------|
-|`__cdecl`|Leading underscore (**_**)|
-|`__stdcall`|Leading underscore (**_**) and a trailing at sign (**\@**) followed by the number of bytes in the parameter list in decimal|
-|`__fastcall`|Leading and trailing at signs (**\@**) followed by a decimal number representing the number of bytes in the parameter list|
-|`__vectorcall`|Two trailing at signs (**\@\@**) followed by a decimal number of bytes in the parameter list|
+|**`__cdecl`**|Leading underscore (**`_`**)|
+|**`__stdcall`**|Leading underscore (**`_`**) and a trailing at sign (**`@`**) followed by the number of bytes in the parameter list in decimal|
+|**`__fastcall`**|Leading and trailing at signs (**`@`**) followed by a decimal number representing the number of bytes in the parameter list|
+|**`__vectorcall`**|Two trailing at signs (**`@@`**) followed by a decimal number of bytes in the parameter list|
 
 ## <a name="Viewing"></a> Viewing decorated names
 
@@ -69,9 +70,9 @@ You can get the decorated form of a symbol name after you compile the source fil
 
 #### To use DUMPBIN to view decorated names
 
-1. To see the exported symbols in an .obj or .lib file, enter `dumpbin /symbols` `objfile` at a developer command prompt.
+1. To see the exported symbols in an .obj or .lib file, enter `dumpbin /exports <obj-or-lib-file>` at a developer command prompt.
 
-2. To find the decorated form of a symbol, look for the undecorated name in parentheses. The decorated name is on the same line, after a pipe (&#124;) character and before the undecorated name.
+2. To find the decorated form of a symbol, look for the undecorated name in parentheses. The decorated name is on the same line, before the undecorated name.
 
 ## <a name="Undecorated"></a> Viewing undecorated names
 
@@ -89,4 +90,4 @@ is :- "private: void __thiscall a::func1(int)"
 ## See also
 
 [Additional MSVC Build Tools](c-cpp-build-tools.md)<br/>
-[Using extern to Specify Linkage](../../cpp/using-extern-to-specify-linkage.md)
+[Using extern to Specify Linkage](../../cpp/extern-cpp.md)

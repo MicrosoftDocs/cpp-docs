@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: rdx"
 title: "rdx (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.rdx"]
@@ -34,11 +35,9 @@ This attribute can be used in conjunction with the [coclass](coclass.md), [progi
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class** or **struct** member|
+|**Applies to**|**`class`** or **`struct`** member|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

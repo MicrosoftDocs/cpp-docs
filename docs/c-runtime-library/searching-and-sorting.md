@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Searching and Sorting"
 title: "Searching and Sorting"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["sorting data", "data [CRT], searching", "searching [C++], CRT search functions", "searching [C++]"]

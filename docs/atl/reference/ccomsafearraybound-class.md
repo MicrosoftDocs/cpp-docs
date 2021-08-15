@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComSafeArrayBound Class"
 title: "CComSafeArrayBound Class"
 ms.date: "05/06/2019"
 f1_keywords: ["CComSafeArrayBound", "ATLSAFE/ATL::CComSafeArrayBound", "ATLSAFE/ATL::GetCount", "ATLSAFE/ATL::GetLowerBound", "ATLSAFE/ATL::GetUpperBound", "ATLSAFE/ATL::SetCount", "ATLSAFE/ATL::SetLowerBound"]
@@ -19,7 +20,7 @@ class CComSafeArrayBound : public SAFEARRAYBOUND
 
 ### Methods
 
-|||
+|Function|Description|
 |-|-|
 |[CComSafeArrayBound](#ccomsafearraybound)|The constructor.|
 |[GetCount](#getcount)|Call this method to return the number of elements.|
@@ -30,7 +31,7 @@ class CComSafeArrayBound : public SAFEARRAYBOUND
 
 ### Operators
 
-|||
+|Operator|Description|
 |-|-|
 |[operator =](#operator_eq)|Sets the `CComSafeArrayBound` to a new value.|
 

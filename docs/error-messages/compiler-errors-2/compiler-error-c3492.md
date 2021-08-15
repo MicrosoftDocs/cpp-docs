@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3492"
 title: "Compiler Error C3492"
 ms.date: "11/04/2016"
 f1_keywords: ["C3492"]
@@ -15,7 +16,7 @@ You cannot capture a member of an unnamed union.
 
 - Give the union a name and pass the complete union structure to the capture list of the lambda expression.
 
-## Example
+## Examples
 
 The following example generates C3492 because it captures a member of an anonymous union:
 
@@ -34,8 +35,6 @@ int main()
    [&x](char ch) { x = ch; }(ch); // C3492
 }
 ```
-
-## Example
 
 The following example resolves C3492 by giving the union a name and by passing the complete union structure to the capture list of the lambda expression:
 

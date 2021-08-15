@@ -1,0 +1,206 @@
+### YamlMime:Hub
+title: Microsoft C++, C, and Assembler documentation
+summary: Learn how to use C++, C, and assembly language to develop applications, services, and tools for your platforms and devices.
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: visual-studio
+metadata:
+  title: Microsoft C/C++ Documentation
+  description: Learn how to use C++ to develop applications, services, and tools for your platforms and devices.
+  ms.prod: visual-cpp
+  ms.topic: hub-page
+  author: corob-msft
+  ms.author: corob
+  ms.date: 06/04/2020
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Install Visual Studio and choose your C++ workloads
+      itemType: download
+      url: build/vscpp-step-0-installation.md
+    # Card
+    - title: Welcome to C++ in Visual Studio
+      itemType: overview
+      url: overview/visual-cpp-in-visual-studio.md
+    # Card
+    - title: Get started with Visual Studio and C++
+      itemType: get-started
+      url: get-started/tutorial-console-cpp.md
+    # Card
+    - title: What's new for C++ in Visual Studio
+      itemType: whats-new
+      url: overview/what-s-new-for-visual-cpp-in-visual-studio.md
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  title: Get started with C++ and C
+  items:
+    # Card
+    - title: Learn to use the Visual Studio IDE
+      links:
+        - text: Start a guided tour of Visual Studio
+          url: /visualstudio/ide/visual-studio-ide
+          itemType: overview
+        - text: Open code from a repo
+          url: /visualstudio/get-started/tutorial-open-project-from-repo
+          itemType: tutorial
+        - text: Write and edit code
+          url: /visualstudio/ide/index-writing-code
+          itemType: tutorial
+        - text: Build your code
+          url: /visualstudio/ide/compiling-and-building-in-visual-studio
+          itemType: tutorial 
+        - text: Debug your code
+          itemType: tutorial
+          url: /visualstudio/debugger/quickstart-debug-with-cplusplus
+        - text: Test your code
+          itemType: tutorial 
+          url: /visualstudio/test/writing-unit-tests-for-c-cpp
+    # Card
+    - title: Write C++ and C apps in Visual Studio
+      links:
+        - text: Create a console calculator app 
+          url: get-started/tutorial-console-cpp.md
+          itemType: tutorial
+        - text: Create a Windows Desktop app with Win32
+          url: windows/walkthrough-creating-windows-desktop-applications-cpp.md
+          itemType: tutorial
+        - text: Create a Windows Desktop app with MFC
+          url: mfc/reference/creating-an-mfc-application.md
+          itemType: tutorial
+        - text: Create a Windows DLL
+          url: build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md
+          itemType: tutorial
+        - text: Create a static library
+          url: build/walkthrough-creating-and-using-a-static-library-cpp.md
+          itemType: tutorial
+        - text: Create a .NET component
+          url: dotnet/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md
+          itemType: tutorial
+        - text: Create a Universal Windows Platform app
+          url: /windows/uwp/cpp-and-winrt-apis/get-started
+          itemType: tutorial
+    # Card
+    - title: Use the command-line tools
+      links:
+        - text: Compile C++ code 
+          url: build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md
+          itemType: tutorial
+        - text: Compile C code 
+          url: build/walkthrough-compile-a-c-program-on-the-command-line.md
+          itemType: tutorial
+        - text: Compile C++/CX 
+          url: build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md
+          itemType: tutorial
+        - text: Compile C++/CLI 
+          url: build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md
+          itemType: tutorial
+    # Card
+    - title: Use C++ and C in Visual Studio Code
+      links:
+        - text: Get started with Visual Studio Code 
+          url: https://code.visualstudio.com/docs
+          itemType: tutorial
+        - text: Install the Microsoft C/C++ extension 
+          url: https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
+          itemType: tutorial
+        - text: Use Microsoft C/C++ in Windows
+          url: https://code.visualstudio.com/docs/cpp/config-msvc
+          itemType: tutorial
+        - text: Use C++ in the Windows Subsystem for Linux 
+          url: https://code.visualstudio.com/docs/cpp/config-wsl
+          itemType: tutorial
+        - text: Use C++ on Linux
+          url: https://code.visualstudio.com/docs/cpp/config-linux
+          itemType: tutorial
+        - text: Use C++ on MacOS
+          url: https://code.visualstudio.com/docs/cpp/config-clang-mac
+          itemType: tutorial
+
+
+tools:
+  title: Languages and frameworks
+  items:
+    - title: C++
+      imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
+      url: cpp/index.yml
+    - title: C
+      imageSrc: https://docs.microsoft.com/media/logos/logo_C.svg
+      url: c-language/index.yml
+    - title: Microsoft Assembler
+      imageSrc: media/index/logo-asm.svg
+      url: intrinsics/index.yml
+    - title: C++/CX for Windows Runtime
+      imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
+      url: cppcx/visual-c-language-reference-c-cx.md
+    - title: C++/CLI for .NET
+      imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
+      url: dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md
+    - title: Active Template Library (ATL)
+      imageSrc: media/index/logo-atl.svg
+      url: atl/atl-com-desktop-components.md
+    - title: Microsoft Foundation Classes (MFC)
+      imageSrc: media/index/logo-mfc.svg
+      url: mfc/mfc-desktop-applications.md
+    - title: C++/WinRT for Windows Runtime
+      imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
+      url: /windows/uwp/cpp-and-winrt-apis/
+
+# additionalContent section (optional)
+# Card with links style
+additionalContent:
+  sections:  
+    - title: C++ and C workloads, features, and libraries
+      summary: Develop for your choice of platforms with Visual Studio tools.
+      items:
+        # Card
+        - title: Workloads
+          links:
+            - text: Universal Windows Platform development
+              url: cppcx/universal-windows-apps-cpp.md
+            - text: Windows Desktop development
+              url: ./windows/desktop-applications-visual-cpp.md
+            - text: Linux development
+              url: linux/index.yml
+            - text: Mobile development
+              url: cross-platform/index.yml
+            - text: Game development
+              url: /windows/uwp/gaming/e2e/
+        # Card
+        - title: Features
+          links:
+            - text: Edit and refactor code
+              url: ide/writing-and-refactoring-code-cpp.md
+            - text: Build code projects
+              url: build/projects-and-build-systems-cpp.md
+            - text: Debug your code
+              url: /visualstudio/debugger/debugging-native-code
+            - text: Analyze your code
+              url: code-quality/index.yml
+            - text: Profile app performance
+              url: /visualstudio/profiling
+            - text: Port and upgrade code
+              url: porting/visual-cpp-porting-and-upgrading-guide.md
+            - text: Sanitize code for bugs
+              url: sanitizers/index.yml
+        # Card
+        - title: Libraries
+          links:
+            - text: C++ standard library reference
+              url: standard-library/cpp-standard-library-reference.md
+            - text: C runtime library reference
+              url: c-runtime-library/c-run-time-library-reference.md
+            - text: MFC and ATL Windows Desktop libraries
+              url: mfc/mfc-and-atl.md
+            - text: Parallel programming libraries
+              url: parallel/parallel-programming-in-visual-cpp.md
+            - text: Cloud and networking libraries
+              url: cloud/cloud-and-web-programming-in-visual-cpp.md
+            - text: Universal Windows Platform libraries
+              url: cppcx/namespaces-reference-c-cx.md
+  # footer (optional)
+  footer: "[Microsoft Docs Q&A](/answers/topics/c%2B%2B.html) - [C++ Team Blog](https://devblogs.microsoft.com/cppblog/) - [Twitter](https://twitter.com/visualc) - [Developer Community](https://aka.ms/vsfeedback/browsecpp) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-c++) - [How to report an issue](overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md) - [Suggest a feature](https://aka.ms/feedback/suggest?space=62) - Contribute to C++ docs: Read our [contributor guide](/contribute/)."

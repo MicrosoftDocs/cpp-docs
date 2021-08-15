@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binary Editor (C++)"
 title: "Binary Editor (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vc.editors.binary.F1", "vc.editors.binary"]
@@ -16,7 +17,7 @@ The **Binary Editor** allows you to edit any resource at the binary level in eit
 
 - To open the **Binary Editor** on an existing file, go to menu **File** > **Open** > **File**, select the file you want to edit, then select the drop arrow next to the **Open** button, and choose **Open With** > **Binary Editor**.
 
-   ![Binary Editor](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
+   ![Binary Editor.](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
    Binary data for a dialog box displayed in the **Binary Editor**
 
 Only certain ASCII values are represented in the **Binary Editor** (0x20 through 0x7E). Extended characters are displayed as periods in the right panel ASCII value section of the **Binary Editor**. The printable characters are ASCII values 32 through 126.
@@ -46,7 +47,7 @@ The **Binary Editor** enables you:
 1. In the **Open With** dialog box, choose **Binary Editor**.
 
 > [!NOTE]
-> You can use the [Image Editor](../windows/image-editor-for-icons.md) and the **Binary Editor** to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.
+> You can use the [Image Editor](image-editor-for-icons.md) and the **Binary Editor** to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.
 
 ### To edit a resource
 
@@ -77,7 +78,7 @@ You can search for either ASCII strings or hexadecimal bytes. For example, to fi
 
 You can create a new custom or data resource by placing the resource in a separate file using normal resource script (.rc) file syntax, and then including that file by right-clicking your project in **Solution Explorer** and selecting **Resource Includes**.
 
-1. [Create a .rc file](../windows/how-to-create-a-resource-script-file.md) that contains the custom or data resource.
+1. [Create a .rc file](how-to-create-a-resource-script-file.md) that contains the custom or data resource.
 
    You can type custom data in a .rc file as null-terminated quoted strings, or as integers in decimal, hexadecimal, or octal format.
 
@@ -93,7 +94,7 @@ You can create a new custom or data resource by placing the resource in a separa
 
 1. Select **OK** to record your changes.
 
-Another way to create a custom resource is to import an external file as the custom resource, see [How to: Manage Resources](../windows/how-to-import-and-export-resources.md).
+Another way to create a custom resource is to import an external file as the custom resource, see [How to: Manage Resources](./how-to-copy-resources.md).
 
 > [!NOTE]
 > Creating new custom or data resources requires Win32.
@@ -104,4 +105,4 @@ None
 
 ## See also
 
-[Resource Editors](../windows/resource-editors.md)
+[Resource Editors](resource-editors.md)

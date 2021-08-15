@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CRBMultiMap Class"
 title: "CRBMultiMap Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CRBMultiMap", "ATLCOLL/ATL::CRBMultiMap", "ATLCOLL/ATL::CRBMultiMap::CRBMultiMap", "ATLCOLL/ATL::CRBMultiMap::FindFirstWithKey", "ATLCOLL/ATL::CRBMultiMap::GetNextValueWithKey", "ATLCOLL/ATL::CRBMultiMap::GetNextWithKey", "ATLCOLL/ATL::CRBMultiMap::Insert", "ATLCOLL/ATL::CRBMultiMap::RemoveKey"]

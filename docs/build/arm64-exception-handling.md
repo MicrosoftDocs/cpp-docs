@@ -47,7 +47,7 @@ These assumptions are made in the exception handling description:
 
 ## ARM64 stack frame layout
 
-![stack frame layout](media/arm64-exception-handling-stack-frame.png "stack frame layout")
+![Diagram that shows the stack frame layout for functions.](media/arm64-exception-handling-stack-frame.png "stack frame layout")
 
 For frame chained functions, the fp and lr pair can be saved at any position in the local variable area, depending on optimization considerations. The goal is to maximize the number of locals that can be reached by a single instruction based on the frame pointer (x29) or stack pointer (sp). However, for `alloca` functions, it must be chained, and x29 must point to the bottom of stack. To allow for better register-pair-addressing-mode coverage, nonvolatile register save areas are positioned at the top of the Local area stack. Here are examples that illustrate several of the most efficient prolog sequences. For the sake of clarity and better cache locality, the order of storing callee-saved registers in all canonical prologs is in "growing up" order. `#framesz` below represents the size of entire stack (excluding alloca area). `#localsz` and `#outsz` denote local area size (including the save area for the \<x29, lr> pair) and outgoing parameter size, respectively.
 
@@ -182,7 +182,7 @@ The .pdata records are an ordered array of fixed-length items that describe ever
 
 Each .pdata record for ARM64 is 8 bytes in length. The general format of each record places the 32-bit RVA of the function start in the first word, followed by a second word that contains either a pointer to a variable-length .xdata block, or a packed word describing a canonical function unwinding sequence.
 
-![.pdata record layout](media/arm64-exception-handling-pdata-record.png ".pdata record layout")
+![.pdata record layout.](media/arm64-exception-handling-pdata-record.png ".pdata record layout")
 
 The fields are as follows:
 
@@ -198,7 +198,7 @@ The fields are as follows:
 
 When the packed unwind format is insufficient to describe the unwinding of a function, a variable-length .xdata record must be created. The address of this record is stored in the second word of the .pdata record. The format of the .xdata is a packed variable-length set of words:
 
-![.xdata record layout](media/arm64-exception-handling-xdata-record.png ".xdata record layout")
+![.xdata record layout.](media/arm64-exception-handling-xdata-record.png ".xdata record layout")
 
 This data is broken into four sections:
 
@@ -237,27 +237,32 @@ This data is broken into four sections:
 The .xdata record is designed so it's possible to fetch the first 8 bytes, and use them to compute the full size of the record, minus the length of the variable-sized exception data that follows. The following code snippet computes the record size:
 
 ```cpp
-ULONG ComputeXdataSize(PULONG *Xdata)
+ULONG ComputeXdataSize(PULONG Xdata)
 {
-    ULONG EpilogScopes;
     ULONG Size;
+    ULONG EpilogScopes;
     ULONG UnwindWords;
 
-    if ((Xdata[0] >> 27) != 0) {
+    if ((Xdata[0] >> 22) != 0) {
         Size = 4;
         EpilogScopes = (Xdata[0] >> 22) & 0x1f;
-        UnwindWords = (Xdata[0] >> 27) & 0x0f;
+        UnwindWords = (Xdata[0] >> 27) & 0x1f;
     } else {
         Size = 8;
         EpilogScopes = Xdata[1] & 0xffff;
         UnwindWords = (Xdata[1] >> 16) & 0xff;
     }
 
-    Size += 4 * EpilogScopes;
-    Size += 4 * UnwindWords;
-    if (Xdata[0] & (1 << 20)) {
-        Size += 4;        // exception handler RVA
+    if (!(Xdata[0] & (1 << 21))) {
+        Size += 4 * EpilogScopes;
     }
+
+    Size += 4 * UnwindWords;
+
+    if (Xdata[0] & (1 << 20)) {
+        Size += 4;  // Exception handler RVA
+    }
+
     return Size;
 }
 ```
@@ -301,12 +306,7 @@ The unwind codes are encoded according to the table below. All unwind codes are 
 |`end`|            11100100: end of unwind code. Implies ret in epilog. |
 |`end_c`|        11100101: end of unwind code in current chained scope. |
 |`save_next`|        11100110: save next non-volatile Int or FP register pair. |
-|`arithmetic(add)`|    11100111'000zxxxx: add cookie reg(z) to lr (0=x28, 1=sp); `add lr, lr, reg(z)` |
-|`arithmetic(sub)`|    11100111'001zxxxx: sub cookie reg(z) from lr (0=x28, 1=sp); `sub lr, lr, reg(z)` |
-|`arithmetic(eor)`|    11100111'010zxxxx: eor lr with cookie reg(z) (0=x28, 1=sp); `eor lr, lr, reg(z)` |
-|`arithmetic(rol)`|    11100111'0110xxxx: simulated rol of lr with cookie reg (x28); xip0 = neg x28; `ror lr, xip0` |
-|`arithmetic(ror)`|    11100111'100zxxxx: ror lr with cookie reg(z) (0=x28, 1=sp); `ror lr, lr, reg(z)` |
-| |            11100111: xxxz----: ---- reserved |
+| |            11100111: reserved |
 | |              11101xxx: reserved for custom stack cases below only generated for asm routines |
 | |              11101000: Custom stack for MSFT_OP_TRAP_FRAME |
 | |              11101001: Custom stack for MSFT_OP_MACHINE_FRAME |
@@ -330,7 +330,7 @@ For functions whose prologs and epilogs follow the canonical form described belo
 
 The format of a .pdata record with packed unwind data looks like this:
 
-![.pdata record with packed unwind data](media/arm64-exception-handling-packed-unwind-data.png ".pdata record with packed unwind data")
+![.pdata record with packed unwind data.](media/arm64-exception-handling-packed-unwind-data.png ".pdata record with packed unwind data")
 
 The fields are as follows:
 

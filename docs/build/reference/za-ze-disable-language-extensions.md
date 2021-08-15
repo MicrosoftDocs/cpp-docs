@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /Za, /Ze (Disable Language Extensions)"
 title: "/Za, /Ze (Disable Language Extensions)"
 ms.date: "02/19/2019"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.DisableLanguageExtensions", "/za", "/ze", "VC.Project.VCCLCompilerTool.DisableLanguageExtensions"]
@@ -11,7 +12,7 @@ The **/Za** compiler option disables and emits errors for Microsoft extensions t
 
 ## Syntax
 
-> **/Za**<br/>
+> **/Za**\
 > **/Ze**
 
 ## Remarks
@@ -33,7 +34,7 @@ For more information about conformance issues with Visual C++, see [Nonstandard 
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. In the navigation pane, choose **Configuration Properties** > **C/C++** > **Language**.
+1. Select the **Configuration Properties** > **C/C++** > **Language** property page.
 
 1. Modify the **Disable Language Extensions** property.
 

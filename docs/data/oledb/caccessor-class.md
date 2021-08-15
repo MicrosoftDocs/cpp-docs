@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAccessor Class"
 title: "CAccessor Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL.CAccessor<T>", "ATL::CAccessor", "CAccessor", "ATL::CAccessor<T>", "ATL.CAccessor"]
@@ -27,7 +28,7 @@ It is used when a record is statically bound to a data source. The record contai
 
 Use this accessor type when you know the structure and the type of the database.
 
-If your accessor contains fields that point to memory (such as a `BSTR` or interface) that must be freed, call the member function [CAccessorRowset::FreeRecordMemory](../../data/oledb/caccessorrowset-freerecordmemory.md) before the next record is read.
+If your accessor contains fields that point to memory (such as a `BSTR` or interface) that must be freed, call the member function [CAccessorRowset::FreeRecordMemory](./caccessorrowset-class.md#freerecordmemory) before the next record is read.
 
 ## Requirements
 

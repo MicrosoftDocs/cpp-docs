@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Define and consume enums in C++/CLI"
 title: "How to: Define and consume enums in C++/CLI"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["enum class, specifying underlying types"]
@@ -10,7 +11,7 @@ This topic discusses enums in C++/CLI.
 
 ## Specifying the underlying type of an enum
 
-By default, the underlying type of an enumeration is `int`.  However, you can specify the type to be signed or unsigned forms of `int`, `short`, `long`, `__int32`, or `__int64`.  You can also use `char`.
+By default, the underlying type of an enumeration is **`int`**.  However, you can specify the type to be signed or unsigned forms of **`int`**, **`short`**, **`long`**, **`__int32`**, or **`__int64`**.  You can also use **`char`**.
 
 ```cpp
 // mcppv2_enum_3.cpp

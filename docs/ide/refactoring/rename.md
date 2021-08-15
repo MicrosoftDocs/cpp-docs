@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Rename"
 title: "Rename"
 ms.date: "11/16/2016"
 ms.assetid: 64b42a88-3bd9-4399-8b96-75bceffc353b
@@ -15,7 +16,7 @@ ms.assetid: 64b42a88-3bd9-4399-8b96-75bceffc353b
 
 1. Highlight or place the text cursor inside the item to be renamed:
 
-   ![Highlighted code](images/rename_highlight.png)
+   ![Screenshot showing highlighted code.](images/rename_highlight.png)
 
 1. Next, do one of the following:
    * **Keyboard**
@@ -26,13 +27,13 @@ ms.assetid: 64b42a88-3bd9-4399-8b96-75bceffc353b
 
 1. In the **Rename** window that pops up, enter the new name for the selected item and click the **Preview** button.  Change the **Search scope** if you need to widen or narrow the scope of the renaming.
 
-   ![Rename dialog](images/rename_dialog.png)
+   ![Rename dialog.](images/rename_dialog.png)
 
    > [!TIP]
    > You can skip the preview by checking the **Skip preview changes if references are all confirmed** option.
 
 1. When the **Preview Changes - Rename** window appears, ensure that the changes you are requesting are being made appropriately.  Use the checkboxes in the top half of the window to enable or disable the renaming of any item.
 
-   ![Rename preview](images/rename_preview.png)
+   ![Rename preview.](images/rename_preview.png)
 
 1. When everything looks good, click the **Apply** button and the item will be renamed in your source code.

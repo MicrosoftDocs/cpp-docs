@@ -33,13 +33,13 @@ When you upgrade a project, you get an upgrade report. The report is also saved 
 
 - Runtime errors or unexpected results because of behavior changes.
 
-- Errors that were introduced in the tools. If you find an issue, report it to the Visual C++ team through your normal support channels or by using the [Visual Studio C++ Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html) page.
+- Errors that were introduced in the tools. If you find an issue, report it to the Visual C++ team through your normal support channels or by using the [Visual Studio C++ Developer Community](https://aka.ms/feedback/report?space=62) page.
 
 Some upgraded projects and solutions can be built successfully without modification. However, most projects will likely require changes to both project settings and your source code. There's no single correct way to go about fixing these issues, but we recommend using a phased approach. Before you start, review [Overview of potential upgrade issues](../porting/overview-of-potential-upgrade-issues-visual-cpp.md) for more information on many kinds of common errors.
 
 1. Set the Platform Toolset, C++ Language Standard, and Windows SDK version (if applicable) to the preferred versions. (**Project** > **Properties** > **Configuration Properties** > **General**)
 
-1. If you have lots of errors, you can temporarily turn off some options while you fix them. To turn off the [/permissive-](../build/reference/permissive-standards-conformance.md) option, use **Project** > **Properties** > **Configuration Properties** > **C/C++** > **Language**. To turn off the [code analysis](/cpp/code-quality/code-analysis-for-c-cpp-overview) option, use **Project** > **Properties** > **Configuration Properties** > **Code Analysis**.
+1. If you have lots of errors, you can temporarily turn off some options while you fix them. To turn off the [`/permissive-`](../build/reference/permissive-standards-conformance.md) option, use **Project** > **Properties** > **Configuration Properties** > **C/C++** > **Language**. To turn off the [code analysis](../code-quality/code-analysis-for-c-cpp-overview.md) option, use **Project** > **Properties** > **Configuration Properties** > **Code Analysis**.
 
 1. Ensure that all dependencies are present and that the include paths or library locations are correct. (**Project** > **Properties** > **Configuration Properties** > **VC++ Directories**)
 
@@ -47,13 +47,13 @@ Some upgraded projects and solutions can be built successfully without modificat
 
 1. Fix any remaining errors that prevent compilation. Refer to [Overview of potential upgrade issues](../porting/overview-of-potential-upgrade-issues-visual-cpp.md) for fixes for common errors.
 
-1. Turn **/permissive-** back on and fix any new errors caused by non-conformant code that previously compiled in MSVC.
+1. Turn **`/permissive-`** back on and fix any new errors caused by non-conforming code that previously compiled in MSVC.
 
 1. Turn on code analysis to identify potential problems or outdated coding patterns that are no longer considered acceptable. If code analysis flags many errors, you can turn off some of the warnings to focus on the most important ones first. The IDE can help with Quick Fixes for some kinds of issues.
 
 1. Consider other opportunities for modernizing the code. For example, replace custom data structures and algorithms with ones from the C++ standard library, or the Boost open-source library. By using standard features, you make it easier for others to maintain the code. You can be confident that this code has been well-tested and reviewed by many experts on the standards committee and the broader C++ community.
 
-For hard-to-fix errors, try searching or posting a question on Stack Overflow or [C++ Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html).
+For hard-to-fix errors, you can search for solutions or post a question on [Microsoft Docs Q&A](/answers/topics/c%2B%2B.html). For problems in the C++ compiler and tools, try the [C++ Developer Community](https://aka.ms/vsfeedback/browsecpp) website.
 
 ## In this section
 

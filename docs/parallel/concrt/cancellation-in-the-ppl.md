@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cancellation in the PPL"
 title: "Cancellation in the PPL"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["parallel algorithms, canceling [Concurrency Runtime]", "canceling parallel algorithms [Concurrency Runtime]", "parallel tasks, canceling [Concurrency Runtime]", "cancellation in the PPL", "parallel work trees [Concurrency Runtime]", "canceling parallel tasks [Concurrency Runtime]"]
@@ -45,7 +46,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
 
 The PPL uses tasks and task groups to manage fine-grained tasks and computations. You can nest task groups to form *trees* of parallel work. The following illustration shows a parallel work tree. In this illustration, `tg1` and `tg2` represent task groups; `t1`, `t2`, `t3`, `t4`, and `t5` represent the work that the task groups perform.
 
-![A parallel work tree](../../parallel/concrt/media/parallelwork_trees.png "A parallel work tree")
+![A parallel work tree.](../../parallel/concrt/media/parallelwork_trees.png "A parallel work tree")
 
 The following example shows the code that is required to create the tree in the illustration. In this example, `tg1` and `tg2` are [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) objects; `t1`, `t2`, `t3`, `t4`, and `t5` are [concurrency::task_handle](../../parallel/concrt/reference/task-handle-class.md) objects.
 
@@ -69,7 +70,7 @@ To initiate cancellation, call the [concurrency::cancellation_token_source::canc
 
 - For `task` objects, use the [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) function. `cancel_current_task` cancels the current task and any of its value-based continuations. (It does not cancel the cancellation *token* that is associated with the task or its continuations.)
 
-- For task groups and parallel algorithms, use the [concurrency::is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) function to detect cancellation and return as soon as possible from the task body when this function returns **true**. (Do not call `cancel_current_task` from a task group.)
+- For task groups and parallel algorithms, use the [concurrency::is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) function to detect cancellation and return as soon as possible from the task body when this function returns **`true`**. (Do not call `cancel_current_task` from a task group.)
 
 The following example shows the first basic pattern for task cancellation. The task body occasionally checks for cancellation inside a loop.
 
@@ -172,7 +173,7 @@ The use of cancellation tokens and the `cancel` method are more efficient than e
 
 When you throw an exception in the body of a work function that you pass to a task group, the runtime stores that exception and marshals the exception to the context that waits for the task group to finish. As with the `cancel` method, the runtime discards any tasks that have not yet started, and does not accept new tasks.
 
-This third example resembles the second one, except that task `t4` throws an exception to cancel the task group `tg2`. This example uses a `try`-`catch` block to check for cancellation when the task group `tg2` waits for its child tasks to finish. Like the first example, this causes the task group `tg2` to enter the canceled state, but it does not cancel task group `tg1`.
+This third example resembles the second one, except that task `t4` throws an exception to cancel the task group `tg2`. This example uses a **`try`**-**`catch`** block to check for cancellation when the task group `tg2` waits for its child tasks to finish. Like the first example, this causes the task group `tg2` to enter the canceled state, but it does not cancel task group `tg1`.
 
 [!code-cpp[concrt-task-tree#4](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_9.cpp)]
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_assignable Class"
 title: "is_assignable Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_assignable"]
@@ -26,7 +27,7 @@ The type of the object that provides the value.
 
 ## Remarks
 
-The unevaluated expression `declval<To>() = declval<From>()` must be well-formed. Both `From` and `To` must be complete types, **void**, or arrays of unknown bound.
+The unevaluated expression `declval<To>() = declval<From>()` must be well-formed. Both `From` and `To` must be complete types, **`void`**, or arrays of unknown bound.
 
 ## Requirements
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Programmatic Printing"
 title: "Programmatic Printing"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["printing [MFC], active documents", "active documents [MFC], printing", "printing [MFC], programmatic", "IPrint interface", "printing [MFC]"]

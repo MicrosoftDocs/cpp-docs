@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Console and Port I/O"
 title: "Console and Port I/O"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["routines, console and port I/O", "routines", "ports, I/O routines", "I/O [CRT], console", "I/O [CRT], port", "I/O routines, console and port I/O"]

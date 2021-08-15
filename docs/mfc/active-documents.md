@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Active Documents"
 title: "Active Documents"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["active documents [MFC]", "active documents [MFC], requirements", "view objects [MFC], requirements", "OLE [MFC], active documents", "views [MFC], active documents", "active documents [MFC], views"]
@@ -80,12 +81,12 @@ interface IOleDocumentView : IUnknown
 
 Every view has an associated view site, which encapsulates the view frame and the view port (HWND and a rectangular area in that window). The site exposes this functionality though the standard `IOleInPlaceSite` interface. Note that it is possible to have more than one view port on a single HWND.
 
-Typically, each type of view has a different printed representation. Hence views and the corresponding view sites should implement the printing interfaces if `IPrint` and `IContinueCallback`, respectively. The view frame must negotiate with the view provider through `IPrint` when printing begins, so that headers, footers, margins, and related elements are printed correctly. The view provider notifies the frame of printing-related events through `IContinueCallback`. For more information on the use of these interfaces, see [Programmatic Printing](../mfc/programmatic-printing.md).
+Typically, each type of view has a different printed representation. Hence views and the corresponding view sites should implement the printing interfaces if `IPrint` and `IContinueCallback`, respectively. The view frame must negotiate with the view provider through `IPrint` when printing begins, so that headers, footers, margins, and related elements are printed correctly. The view provider notifies the frame of printing-related events through `IContinueCallback`. For more information on the use of these interfaces, see [Programmatic Printing](programmatic-printing.md).
 
 Note that if an active document only supports a single view, then the active document and that single view can be implemented using a single concrete class. `IOleDocument::CreateView` simply returns the same object's `IOleDocumentView` interface pointer. In short, it is not necessary that there be two separate object instances when only one view is required.
 
-A view object can also be a command target. By implementing `IOleCommandTarget` a view can receive commands that originate in the container's user interface (such as **New**, **Open**, **Save As**, **Print** on the **File** menu; and **Copy**, **Paste**, **Undo** on the **Edit** menu). For more information, see [Message Handling and Command Targets](../mfc/message-handling-and-command-targets.md).
+A view object can also be a command target. By implementing `IOleCommandTarget` a view can receive commands that originate in the container's user interface (such as **New**, **Open**, **Save As**, **Print** on the **File** menu; and **Copy**, **Paste**, **Undo** on the **Edit** menu). For more information, see [Message Handling and Command Targets](message-handling-and-command-targets.md).
 
 ## See also
 
-[Active Document Containment](../mfc/active-document-containment.md)
+[Active Document Containment](active-document-containment.md)

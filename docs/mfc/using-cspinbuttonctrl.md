@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using CSpinButtonCtrl"
 title: "Using CSpinButtonCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["up-down controls [MFC], spin button control", "up-down controls", "spin button control", "CSpinButtonCtrl class [MFC], using"]

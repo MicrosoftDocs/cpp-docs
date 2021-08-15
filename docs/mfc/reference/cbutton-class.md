@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CButton Class"
 title: "CButton Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CButton", "AFXWIN/CButton", "AFXWIN/CButton::CButton", "AFXWIN/CButton::Create", "AFXWIN/CButton::DrawItem", "AFXWIN/CButton::GetBitmap", "AFXWIN/CButton::GetButtonStyle", "AFXWIN/CButton::GetCheck", "AFXWIN/CButton::GetCursor", "AFXWIN/CButton::GetIcon", "AFXWIN/CButton::GetIdealSize", "AFXWIN/CButton::GetImageList", "AFXWIN/CButton::GetNote", "AFXWIN/CButton::GetNoteLength", "AFXWIN/CButton::GetSplitGlyph", "AFXWIN/CButton::GetSplitImageList", "AFXWIN/CButton::GetSplitInfo", "AFXWIN/CButton::GetSplitSize", "AFXWIN/CButton::GetSplitStyle", "AFXWIN/CButton::GetState", "AFXWIN/CButton::GetTextMargin", "AFXWIN/CButton::SetBitmap", "AFXWIN/CButton::SetButtonStyle", "AFXWIN/CButton::SetCheck", "AFXWIN/CButton::SetCursor", "AFXWIN/CButton::SetDropDownState", "AFXWIN/CButton::SetIcon", "AFXWIN/CButton::SetImageList", "AFXWIN/CButton::SetNote", "AFXWIN/CButton::SetSplitGlyph", "AFXWIN/CButton::SetSplitImageList", "AFXWIN/CButton::SetSplitInfo", "AFXWIN/CButton::SetSplitSize", "AFXWIN/CButton::SetSplitStyle", "AFXWIN/CButton::SetState", "AFXWIN/CButton::SetTextMargin"]
@@ -94,7 +95,7 @@ Potential message-map entries are as follows:
 
 If you create a `CButton` object from a dialog resource, the `CButton` object is automatically destroyed when the user closes the dialog box.
 
-If you create a `CButton` object within a window, you may need to destroy it. If you create the `CButton` object on the heap by using the **new** function, you must call **delete** on the object to destroy it when the user closes the Windows button control. If you create the `CButton` object on the stack, or it is embedded in the parent dialog object, it is destroyed automatically.
+If you create a `CButton` object within a window, you may need to destroy it. If you create the `CButton` object on the heap by using the **`new`** function, you must call **`delete`** on the object to destroy it when the user closes the Windows button control. If you create the `CButton` object on the stack, or it is embedded in the parent dialog object, it is destroyed automatically.
 
 ## Inheritance Hierarchy
 
@@ -345,10 +346,11 @@ BOOL GetNote(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpszNote*|[out] Pointer to a buffer, which the caller is responsible for allocating and deallocating. If the return value is TRUE, the buffer contains the note text that is associated with the current command link control; otherwise, the buffer is unchanged.|
-|*cchNote*|[in, out] A pointer to an unsigned integer variable.<br /><br /> When this method is called, the variable contains the size of the buffer specified by the *lpszNote* parameter.<br /><br /> When this method returns, if the return value is TRUE the variable contains the size of the note associated with the current command link control. If the return value is FALSE, the variable contains the buffer size required to contain the note.|
+*lpszNote*\
+[out] Pointer to a buffer, which the caller is responsible for allocating and deallocating. If the return value is TRUE, the buffer contains the note text that is associated with the current command link control; otherwise, the buffer is unchanged.
+
+*cchNote*\
+[in, out] A pointer to an unsigned integer variable. When this method is called, the variable contains the size of the buffer specified by the *lpszNote* parameter. When this method returns, if the return value is TRUE the variable contains the size of the note associated with the current command link control. If the return value is FALSE, the variable contains the buffer size required to contain the note.
 
 ### Return Value
 
@@ -430,9 +432,8 @@ BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pInfo*|[out] Pointer to a [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) structure that receives information about the current split button control. The caller is responsible for allocating the structure.|
+*pInfo*\
+[out] Pointer to a [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) structure that receives information about the current split button control. The caller is responsible for allocating the structure.
 
 ### Return Value
 
@@ -454,9 +455,8 @@ BOOL GetSplitSize(LPSIZE pSize) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pSize*|[out] Pointer to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure that receives the description of a rectangle.|
+*pSize*\
+[out] Pointer to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure that receives the description of a rectangle.
 
 ### Return Value
 
@@ -533,11 +533,7 @@ A pointer to the text margin of the `CButton` object.
 
 ### Return Value
 
-Returns the text margin.
-
-### Remarks
-
-Nonzero if successful; otherwise 0.
+Returns the text margin. Nonzero if successful; otherwise 0.
 
 ### Remarks
 
@@ -686,9 +682,8 @@ BOOL SetDropDownState(BOOL fDropDown);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*fDropDown*|[in] TRUE to set BST_DROPDOWNPUSHED state; otherwise, FALSE.|
+*fDropDown*\
+[in] TRUE to set BST_DROPDOWNPUSHED state; otherwise, FALSE.
 
 ### Return Value
 
@@ -702,13 +697,11 @@ This method sends the [BCM_SETDROPDOWNSTATE](/windows/win32/Controls/bcm-setdrop
 
 ### Example
 
-The following code example defines the variable, *m_splitButton*, that is used to programmatically access the split button control. This variable is used in the following example.
+The first code example defines the variable, `m_splitButton`, that is used to programmatically access the split button control. This variable is used in the following example.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 
-### Example
-
-The following code example sets the state of the split button control to indicate that the drop-down arrow is pushed.
+The next code example sets the state of the split button control to indicate that the drop-down arrow is pushed.
 
 [!code-cpp[NVC_MFC_CButton_s1#6](../../mfc/reference/codesnippet/cpp/cbutton-class_11.cpp)]
 
@@ -722,9 +715,8 @@ BOOL SetElevationRequired(BOOL fElevationRequired);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*fElevationRequired*|[in] TRUE to set `elevation required` state; otherwise, FALSE.|
+*fElevationRequired*\
+[in] TRUE to set `elevation required` state; otherwise, FALSE.
 
 ### Return Value
 
@@ -732,7 +724,7 @@ TRUE if this method is successful; otherwise, FALSE.
 
 ### Remarks
 
-If a button or command link control requires elevated security permission to perform an action, set the control to `elevation required` state. Subsequently, Windows displays the User Account Control (UAC) shield icon on the control. For more information, see "User Account Control" at [MSDN](https://go.microsoft.com/fwlink/p/?linkid=18507).
+If a button or command link control requires elevated security permission to perform an action, set the control to `elevation required` state. Subsequently, Windows displays the User Account Control (UAC) shield icon on the control. For more information, see [User Account Control](/windows/win32/uxguide/winenv-uac).
 
 This method sends the [BCM_SETSHIELD](/windows/win32/Controls/bcm-setshield) message, which is described in the Windows SDK.
 
@@ -806,9 +798,8 @@ BOOL SetNote(LPCTSTR lpszNote);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*lpszNote*|[in] Pointer to a Unicode string that is set as the note text for the command link control.|
+*lpszNote*\
+[in] Pointer to a Unicode string that is set as the note text for the command link control.
 
 ### Return Value
 
@@ -822,13 +813,11 @@ This method sends the [BCM_SETNOTE](/windows/win32/Controls/bcm-setnote) message
 
 ### Example
 
-The following code example defines the variable, *m_cmdLink*, that is used to programmatically access the command link control. This variable is used in the following example.
+The first code example defines the variable, `m_cmdLink`, that is used to programmatically access the command link control. This variable is used in the following example.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 
-### Example
-
-The following code example sets the note text for the command link control.
+The next code example sets the note text for the command link control.
 
 [!code-cpp[NVC_MFC_CButton_s1#7](../../mfc/reference/codesnippet/cpp/cbutton-class_12.cpp)]
 
@@ -842,9 +831,8 @@ BOOL SetSplitGlyph(TCHAR chGlyph);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*chGlyph*|[in] A character that specifies the glyph to use as the split button drop-down arrow.|
+*chGlyph*\
+[in] A character that specifies the glyph to use as the split button drop-down arrow.
 
 ### Return Value
 
@@ -868,9 +856,8 @@ BOOL SetSplitImageList(CImageList* pSplitImageList);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pSplitImageList*|[in] Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object to assign to the current split button control.|
+*pSplitImageList*\
+[in] Pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object to assign to the current split button control.
 
 ### Return Value
 
@@ -892,9 +879,8 @@ BOOL SetSplitInfo(PBUTTON_SPLITINFO pInfo);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pInfo*|[in] Pointer to a [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) structure that defines the current split button control.|
+*pInfo*\
+[in] Pointer to a [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) structure that defines the current split button control.
 
 ### Return Value
 
@@ -908,13 +894,11 @@ This method sends the [BCM_SETSPLITINFO](/windows/win32/Controls/bcm-setsplitinf
 
 ### Example
 
-The following code example defines the variable, `m_splitButton`, that is used to programmatically access the split button control.
+The first code example defines the variable, `m_splitButton`, that is used to programmatically access the split button control.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 
-### Example
-
-The following code example changes the glyph that is used for the split button drop-down arrow. The example substitutes an up-pointing triangle glyph for the default down-pointing triangle glyph. The glyph that is displayed depends on the character that you specify in the `himlGlyph` member of the `BUTTON_SPLITINFO` structure. The down-pointing triangle glyph is specified by a character '6' and the up-pointing triangle glyph is specified by a character '5'. For comparison, see the convenience method, [CButton::SetSplitGlyph](#setsplitglyph).
+The next code example changes the glyph that is used for the split button drop-down arrow. The example substitutes an up-pointing triangle glyph for the default down-pointing triangle glyph. The glyph that is displayed depends on the character that you specify in the `himlGlyph` member of the `BUTTON_SPLITINFO` structure. The down-pointing triangle glyph is specified by a character '6' and the up-pointing triangle glyph is specified by a character '5'. For comparison, see the convenience method, [CButton::SetSplitGlyph](#setsplitglyph).
 
 [!code-cpp[NVC_MFC_CButton_s1#4](../../mfc/reference/codesnippet/cpp/cbutton-class_13.cpp)]
 
@@ -928,9 +912,8 @@ BOOL SetSplitSize(LPSIZE pSize);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pSize*|[in] Pointer to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure that describes a bounding rectangle.|
+*pSize*\
+[in] Pointer to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure that describes a bounding rectangle.
 
 ### Return Value
 
@@ -946,13 +929,11 @@ This method initializes the `mask` member of a [BUTTON_SPLITINFO](/windows/win32
 
 ### Example
 
-The following code example defines the variable, `m_splitButton`, that is used to programmatically access the split button control. This variable is used in the following example.
+The first code example defines the variable, `m_splitButton`, that is used to programmatically access the split button control. This variable is used in the following example.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 
-### Example
-
-The following code example doubles the size of the split button drop-down arrow.
+The next code example doubles the size of the split button drop-down arrow.
 
 [!code-cpp[NVC_MFC_CButton_s1#5](../../mfc/reference/codesnippet/cpp/cbutton-class_14.cpp)]
 
@@ -966,9 +947,8 @@ BOOL SetSplitStyle(UINT uSplitStyle);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*uSplitStyle*|[in] A bitwise combination of split button styles. For more information, see the `uSplitStyle` member of the [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) structure.|
+*uSplitStyle*\
+[in] A bitwise combination of split button styles. For more information, see the `uSplitStyle` member of the [BUTTON_SPLITINFO](/windows/win32/api/commctrl/ns-commctrl-button_splitinfo) structure.
 
 ### Return Value
 
@@ -984,13 +964,11 @@ This method initializes the `mask` member of a [BUTTON_SPLITINFO](/windows/win32
 
 ### Example
 
-The following code example defines the variable, `m_splitButton`, that is used to programmatically access the split button control.
+The first code example defines the variable, `m_splitButton`, that is used to programmatically access the split button control.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 
-### Example
-
-The following code example sets the style of the split button drop-down arrow. The BCSS_ALIGNLEFT style displays the arrow on the left side of the button, and the BCSS_STRETCH style retains the drop-down arrow's proportions when you resize the button.
+The next code example sets the style of the split button drop-down arrow. The BCSS_ALIGNLEFT style displays the arrow on the left side of the button, and the BCSS_STRETCH style retains the drop-down arrow's proportions when you resize the button.
 
 [!code-cpp[NVC_MFC_CButton_s1#3](../../mfc/reference/codesnippet/cpp/cbutton-class_15.cpp)]
 

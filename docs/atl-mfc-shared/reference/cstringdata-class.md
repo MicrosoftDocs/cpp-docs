@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CStringData Class"
 title: "CStringData Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CStringData", "ATLSIMPSTR/ATL::CStringData", "ATLSIMPSTR/ATL::AddRef", "ATLSIMPSTR/ATL::data", "ATLSIMPSTR/ATL::IsLocked", "ATLSIMPSTR/ATL::IsShared", "ATLSIMPSTR/ATL::Lock", "ATLSIMPSTR/ATL::Release", "ATLSIMPSTR/ATL::Unlock", "ATLSIMPSTR/ATL::nAllocLength", "ATLSIMPSTR/ATL::nDataLength", "ATLSIMPSTR/ATL::nRefs", "ATLSIMPSTR/ATL::pStringMgr"]
@@ -19,7 +20,7 @@ struct CStringData
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[AddRef](#addref)|Increments the reference count of the string data object.|
 |[data](#data)|Retrieves the character data of a string object.|
@@ -31,7 +32,7 @@ struct CStringData
 
 ### Data Members
 
-|||
+|Name|Description|
 |-|-|
 |[nAllocLength](#nalloclength)|Length of allocated data in `XCHAR`s (not including terminating null)|
 |[nDataLength](#ndatalength)|Length of currently used data in `XCHAR`s (not including terminating null)|

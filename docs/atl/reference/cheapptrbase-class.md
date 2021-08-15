@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CHeapPtrBase Class"
 title: "CHeapPtrBase Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHeapPtrBase", "ATLCORE/ATL::CHeapPtrBase", "ATLCORE/ATL::CHeapPtrBase::AllocateBytes", "ATLCORE/ATL::CHeapPtrBase::Attach", "ATLCORE/ATL::CHeapPtrBase::Detach", "ATLCORE/ATL::CHeapPtrBase::Free", "ATLCORE/ATL::CHeapPtrBase::ReallocateBytes", "ATLCORE/ATL::CHeapPtrBase::m_pData"]

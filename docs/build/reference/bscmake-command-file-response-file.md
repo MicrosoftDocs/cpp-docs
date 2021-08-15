@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: BSCMAKE Command File (Response File)"
 title: "BSCMAKE Command File (Response File)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["BSCMAKE, response file", "BSCMAKE, command file", "response files, BSCMAKE", "command files, BSCMAKE", "response files", "command files"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _crtDbgFlag"
 title: "_crtDbgFlag"
 ms.date: "11/04/2016"
 f1_keywords: ["_crtDbgFlag", "crtDbgFlag"]

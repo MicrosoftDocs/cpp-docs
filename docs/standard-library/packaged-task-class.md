@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: packaged_task Class"
 title: "packaged_task Class"
 ms.date: "11/04/2016"
 f1_keywords: ["future/std::packaged_task", "future/std::packaged_task::packaged_task", "future/std::packaged_task::get_future", "future/std::packaged_task::make_ready_at_thread_exit", "future/std::packaged_task::reset", "future/std::packaged_task::swap", "future/std::packaged_task::valid", "future/std::packaged_task::operator()", "future/std::packaged_task::operator bool"]
@@ -128,7 +129,7 @@ operator bool() const noexcept;
 
 ### Return Value
 
-**true** if the object has an associated asynchronous state; otherwise, **false**.
+**`true`** if the object has an associated asynchronous state; otherwise, **`false`**.
 
 ## <a name="packaged_task"></a> packaged_task::packaged_task Constructor
 
@@ -213,7 +214,7 @@ bool valid() const;
 
 ### Return Value
 
-**true** if the object has an associated asynchronous state; otherwise, **false**.
+**`true`** if the object has an associated asynchronous state; otherwise, **`false`**.
 
 ## See also
 

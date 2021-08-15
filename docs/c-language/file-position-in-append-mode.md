@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: File Position in Append Mode"
 title: "File Position in Append Mode"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["file pointers [C++], append mode"]

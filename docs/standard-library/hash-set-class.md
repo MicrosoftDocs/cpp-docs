@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: hash_set Class"
 title: "hash_set Class"
 ms.date: "11/04/2016"
 f1_keywords: ["hash_set/stdext::hash_set", "hash_set/stdext::hash_set::allocator_type", "hash_set/stdext::hash_set::const_iterator", "hash_set/stdext::hash_set::const_pointer", "hash_set/stdext::hash_set::const_reference", "hash_set/stdext::hash_set::const_reverse_iterator", "hash_set/stdext::hash_set::difference_type", "hash_set/stdext::hash_set::iterator", "hash_set/stdext::hash_set::key_compare", "hash_set/stdext::hash_set::key_type", "hash_set/stdext::hash_set::pointer", "hash_set/stdext::hash_set::reference", "hash_set/stdext::hash_set::reverse_iterator", "hash_set/stdext::hash_set::size_type", "hash_set/stdext::hash_set::value_compare", "hash_set/stdext::hash_set::value_type", "hash_set/stdext::hash_set::begin", "hash_set/stdext::hash_set::cbegin", "hash_set/stdext::hash_set::cend", "hash_set/stdext::hash_set::clear", "hash_set/stdext::hash_set::count", "hash_set/stdext::hash_set::crbegin", "hash_set/stdext::hash_set::crend", "hash_set/stdext::hash_set::emplace", "hash_set/stdext::hash_set::emplace_hint", "hash_set/stdext::hash_set::empty", "hash_set/stdext::hash_set::end", "hash_set/stdext::hash_set::equal_range", "hash_set/stdext::hash_set::erase", "hash_set/stdext::hash_set::find", "hash_set/stdext::hash_set::get_allocator", "hash_set/stdext::hash_set::insert", "hash_set/stdext::hash_set::key_comp", "hash_set/stdext::hash_set::lower_bound", "hash_set/stdext::hash_set::max_size", "hash_set/stdext::hash_set::rbegin", "hash_set/stdext::hash_set::rend", "hash_set/stdext::hash_set::size", "hash_set/stdext::hash_set::swap", "hash_set/stdext::hash_set::upper_bound", "hash_set/stdext::hash_set::value_comp"]
@@ -71,10 +72,10 @@ The iterator provided by the hash_set class is a bidirectional iterator, but the
 |Type name|Description|
 |-|-|
 |[allocator_type](#allocator_type)|A type that represents the `allocator` class for the `hash_set` object.|
-|[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a `const` element in the `hash_set`.|
-|[const_pointer](#const_pointer)|A type that provides a pointer to a **const** element in a `hash_set`.|
-|[const_reference](#const_reference)|A type that provides a reference to a **const** element stored in a `hash_set` for reading and performing **const** operations.|
-|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any **const** element in the `hash_set`.|
+|[const_iterator](#const_iterator)|A type that provides a bidirectional iterator that can read a **`const`** element in the `hash_set`.|
+|[const_pointer](#const_pointer)|A type that provides a pointer to a **`const`** element in a `hash_set`.|
+|[const_reference](#const_reference)|A type that provides a reference to a **`const`** element stored in a `hash_set` for reading and performing **`const`** operations.|
+|[const_reverse_iterator](#const_reverse_iterator)|A type that provides a bidirectional iterator that can read any **`const`** element in the `hash_set`.|
 |[difference_type](#difference_type)|A signed integer type that can be used to represent the number of elements of a `hash_set` in a range between elements pointed to by iterators.|
 |[iterator](#iterator)|A type that provides a bidirectional iterator that can read or modify any element in a `hash_set`.|
 |[key_compare](#key_compare)|A type that provides a function object that can compare two sort keys to determine the relative order of two elements in the `hash_set`.|
@@ -354,7 +355,7 @@ The size of the hash_set after clearing is 0.
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
 
-A type that provides a bidirectional iterator that can read a **const** element in the hash_set.
+A type that provides a bidirectional iterator that can read a **`const`** element in the hash_set.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_iterator const_iterator;
@@ -373,7 +374,7 @@ See example for [begin](#begin) for an example that uses `const_iterator`.
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
 
-A type that provides a pointer to a **const** element in a hash_set.
+A type that provides a pointer to a **`const`** element in a hash_set.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_pointer const_pointer;
@@ -383,14 +384,14 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 A type `const_pointer` cannot be used to modify the value of an element.
 
-In most cases, a [const_iterator](#const_iterator) should be used to access the elements in a **const** hash_set object.
+In most cases, a [const_iterator](#const_iterator) should be used to access the elements in a **`const`** hash_set object.
 
 ## <a name="const_reference"></a> hash_set::const_reference
 
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
 
-A type that provides a reference to a **const** element stored in a hash_set for reading and performing **const** operations.
+A type that provides a reference to a **`const`** element stored in a hash_set for reading and performing **`const`** operations.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_reference const_reference;
@@ -437,7 +438,7 @@ The first element in the hash_set is 10.
 > [!NOTE]
 > This API is obsolete. The alternative is [unordered_set Class](../standard-library/unordered-set-class.md).
 
-A type that provides a bidirectional iterator that can read any **const** element in the hash_set.
+A type that provides a bidirectional iterator that can read any **`const`** element in the hash_set.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_reverse_iterator const_reverse_iterator;
@@ -713,13 +714,12 @@ emplace(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.|
+*val*\
+The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.
 
 ### Return Value
 
-The `emplace` member function returns a pair whose **bool** component returns **true** if an insertion was make and **false** if the `hash_set` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
+The `emplace` member function returns a pair whose **`bool`** component returns **`true`** if an insertion was make and **`false`** if the `hash_set` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
 
 ### Remarks
 
@@ -765,10 +765,11 @@ iterator emplace(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*val*|The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.|
-|*_Where*|The place to start searching for the correct point of insertion. (Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows *_Where*.)|
+*val*\
+The value of an element to be inserted into the [hash_set](../standard-library/hash-set-class.md) unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.
+
+*_Where*\
+The place to start searching for the correct point of insertion. (Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows *_Where*.)
 
 ### Return Value
 
@@ -817,7 +818,7 @@ bool empty() const;
 
 ### Return Value
 
-**true** if the hash_set is empty; **false** if the hash_set is nonempty.
+**`true`** if the hash_set is empty; **`false`** if the hash_set is nonempty.
 
 ### Remarks
 
@@ -1331,13 +1332,20 @@ hash_set(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Al*|The storage allocator class to be used for this `hash_set` object, which defaults to `Allocator`.|
-|*Comp*|The comparison function of type `const Traits` used to order the elements in the `hash_set`, which defaults to `hash_compare`.|
-|*Right*|The `hash_set` of which the constructed `hash_set` is to be a copy.|
-|*First*|The position of the first element in the range of elements to be copied.|
-|*Last*|The position of the first element beyond the range of elements to be copied.|
+*Al*\
+The storage allocator class to be used for this `hash_set` object, which defaults to `Allocator`.
+
+*Comp*\
+The comparison function of type `const Traits` used to order the elements in the `hash_set`, which defaults to `hash_compare`.
+
+*Right*\
+The `hash_set` of which the constructed `hash_set` is to be a copy.
+
+*First*\
+The position of the first element in the range of elements to be copied.
+
+*Last*\
+The position of the first element beyond the range of elements to be copied.
 
 ### Remarks
 
@@ -1347,7 +1355,7 @@ All constructors initialize their hash_sets.
 
 All constructors store a function object of type `Traits` that is used to establish an order among the keys of the `hash_set` and that can later be returned by calling [hash_set::key_comp](#key_comp). For more information on `Traits` see the [hash_set Class](../standard-library/hash-set-class.md) topic.
 
-The first constructor creates an empty initial `hash_set` The second specifies the type of comparison function ( `Comp`) to be used in establishing the order of the elements, and the third explicitly specifies the allocator type ( `Al`) to be used. The key word `explicit` suppresses certain kinds of automatic type conversion.
+The first constructor creates an empty initial `hash_set` The second specifies the type of comparison function ( `Comp`) to be used in establishing the order of the elements, and the third explicitly specifies the allocator type ( `Al`) to be used. The key word **`explicit`** suppresses certain kinds of automatic type conversion.
 
 The fourth and fifth constructors specify a copy of the `hash_set` `Right`.
 
@@ -1384,19 +1392,26 @@ void insert(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*Val*|The value of an element to be inserted into the `hash_set` unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.|
-|*Where*|The place to start searching for the correct point of insertion. (Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows `_Where`.)|
-|*First*|The position of the first element to be copied from a `hash_set`.|
-|*Last*|The position just beyond the last element to be copied from a `hash_set`.|
-|*IList*|The initializer_list from which to copy the elements.|
+*Val*\
+The value of an element to be inserted into the `hash_set` unless the `hash_set` already contains that element or, more generally, an element whose key is equivalently ordered.
+
+*Where*\
+The place to start searching for the correct point of insertion. (Insertion can occur in amortized constant time, instead of logarithmic time, if the insertion point immediately follows `_Where`.)
+
+*First*\
+The position of the first element to be copied from a `hash_set`.
+
+*Last*\
+The position just beyond the last element to be copied from a `hash_set`.
+
+*IList*\
+The initializer_list from which to copy the elements.
 
 ### Return Value
 
-The first `insert` member function returns a pair whose **bool** component returns **true** if an insertion was make and **false** if the `hash_set` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
+The first `insert` member function returns a pair whose **`bool`** component returns **`true`** if an insertion was make and **`false`** if the `hash_set` already contained an element whose key had an equivalent value in the ordering, and whose iterator component returns the address where a new element was inserted or where the element was already located.
 
-To access the iterator component of a pair `pr` returned by this member function, use `pr.first` and to dereference it, use `*(pr.first)`. To access the **bool** component of a pair `pr` returned by this member function, use `pr.second`, and to dereference it, use `*(pr.second)`.
+To access the iterator component of a pair `pr` returned by this member function, use `pr.first` and to dereference it, use `*(pr.first)`. To access the **`bool`** component of a pair `pr` returned by this member function, use `pr.second`, and to dereference it, use `*(pr.second)`.
 
 The second `insert` member function returns an iterator that points to the position where the new element was inserted into the `hash_set`.
 
@@ -1448,7 +1463,7 @@ The stored object defines the member function:
 
 `bool operator( const Key& _xVal, const Key& _yVal );`
 
-which returns **true** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
+which returns **`true`** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
 
 Note that both [key_compare](#key_compare) and [value_compare](#value_compare) are synonyms for the template parameter *Traits*. Both types are provided for the hash_set and hash_multiset classes, where they are identical, for compatibility with the hash_map and hash_multimap classes, where they are distinct.
 
@@ -1674,9 +1689,8 @@ hash_set& operator=(hash_set&& right);
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [hash_set](../standard-library/hash-set-class.md) being copied into the `hash_set`.|
+*right*\
+The [hash_set](../standard-library/hash-set-class.md) being copied into the `hash_set`.
 
 ### Remarks
 
@@ -2210,7 +2224,7 @@ The stored object defines the member function:
 
 `bool operator( const Key& _xVal, const Key& _yVal );`
 
-which returns **true** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
+which returns **`true`** if `_xVal` precedes and is not equal to `_yVal` in the sort order.
 
 Note that both [value_compare](../standard-library/set-class.md#value_compare) and [key_compare](../standard-library/set-class.md#key_compare) are synonyms for the template parameter *Compare*. Both types are provided for the hash_set and hash_multiset classes, where they are identical, for compatibility with the hash_map and hash_multimap classes, where they are distinct.
 

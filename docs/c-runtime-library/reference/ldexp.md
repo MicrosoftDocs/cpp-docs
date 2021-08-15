@@ -1,8 +1,9 @@
 ---
 title: "ldexp, ldexpf, ldexpl"
-ms.date: "4/2/2020"
+description: "API reference for ldexp, ldexpf, and ldexpl; which multiplies a floating-point number by an integral power of two."
+ms.date: "9/1/2020"
 api_name: ["ldexp", "ldexpf", "ldexpl", "_ldexpl", "_o_ldexp"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-math-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["ldexp", "ldexpf", "ldexpl", "_ldexpl"]
@@ -20,14 +21,6 @@ double ldexp(
    double x,
    int exp
 );
-float ldexp(
-   float x,
-   int exp
-);  // C++ only
-long double ldexp(
-   long double x,
-   int exp
-);  // C++ only
 float ldexpf(
    float x,
    int exp
@@ -36,14 +29,24 @@ long double ldexpl(
    long double x,
    int exp
 );
+#define ldexp(X, INT) // Requires C11 or higher
+
+float ldexp(
+   float x,
+   int exp
+);  // C++ only
+long double ldexp(
+   long double x,
+   int exp
+);  // C++ only
 ```
 
 ### Parameters
 
-*x*<br/>
+*x*\
 Floating-point value.
 
-*exp*<br/>
+*exp*\
 Integer exponent.
 
 ## Return Value
@@ -54,7 +57,9 @@ For more information about **errno** and possible error return values, see [errn
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **ldexp** that take **float** or **long** **double** types. In a C program, **ldexp** always takes a **double** and an **int** and returns a **double**.
+Because C++ allows overloading, you can call overloads of **ldexp** that take **`float`** or **`long double`** types. In a C program, unless you're using the \<tgmath.h> macro to call this function, **ldexp** always takes a **`double`** and an **`int`** and returns a **`double`**.
+
+If you use the \<tgmath.h> `ldexp()` macro, the type of the argument determines which version of the function is selected. See [Type-generic math](../../c-runtime-library/tgmath.md) for details.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -63,6 +68,7 @@ By default, this function's global state is scoped to the application. To change
 |Routine|C header|C++ header|
 |-------------|--------------|------------------|
 |**ldexp**, **ldexpf**, **ldexpl**|\<math.h>|\<cmath>|
+|**ldexp** macro | \<tgmath.h> ||
 
 For compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

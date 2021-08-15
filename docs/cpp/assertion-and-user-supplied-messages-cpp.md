@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Assertion and User-Supplied Messages (C++)"
 title: "Assertion and User-Supplied Messages (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["user-supplied messages [C++], run time", "user-supplied messages [C++], preprocessor time", "#error%2C assert%2C static_assert [C++]", "user-supplied messages [C++], compile time"]
@@ -16,7 +17,7 @@ The lifetime of your application consists of a preprocessing, compile, and run t
 
 - The [static_assert](../cpp/static-assert.md) declaration is in effect at compile time. It tests a software assertion that is represented by a user-specified integral expression that can be converted to a Boolean. If the expression evaluates to zero (false), the compiler issues the user-specified message and the compilation fails with an error.
 
-   The `static_assert` declaration is especially useful for debugging templates because template arguments can be included in the user-specified expression.
+   The **`static_assert`** declaration is especially useful for debugging templates because template arguments can be included in the user-specified expression.
 
 - The [assert Macro, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) macro is in effect at run time. It evaluates a user-specified expression, and if the result is zero, the system issues a diagnostic message and closes your application. Many other macros, such as[_ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) and _ASSERTE, resemble this macro but issue different system-defined or user-defined diagnostic messages.
 

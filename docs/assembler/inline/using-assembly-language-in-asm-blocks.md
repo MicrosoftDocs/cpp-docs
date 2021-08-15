@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Using Assembly Language in __asm Blocks"
 title: "Using Assembly Language in __asm Blocks"
 ms.date: "08/30/2018"
 helpviewer_keywords: ["assembly language [C++], features", "assembly language [C++]", "__asm keyword [C++], assembly language in"]
@@ -8,7 +9,7 @@ ms.assetid: ad699356-1d16-4984-871f-c5fd7797c1fb
 
 **Microsoft Specific**
 
-The inline assembler has much in common with other assemblers. For example, it accepts any expression that is legal in MASM. This section describes the use of assembly-language features in `__asm` blocks.
+The inline assembler has much in common with other assemblers. For example, it accepts any expression that is legal in MASM. This section describes the use of assembly-language features in **`__asm`** blocks.
 
 ## What do you want to know more about?
 

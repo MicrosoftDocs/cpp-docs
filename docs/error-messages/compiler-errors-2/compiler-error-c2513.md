@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2513"
 title: "Compiler Error C2513"
 ms.date: "11/04/2016"
 f1_keywords: ["C2513"]
@@ -33,4 +34,4 @@ typedef struct S {
 // } S;
 ```
 
-An alternative would be to delete `typedef` to define a variable with aggregate initializer list, but this is not recommended because it will create a variable with the same name as the type and hide the type name.
+An alternative would be to delete **`typedef`** to define a variable with aggregate initializer list, but this is not recommended because it will create a variable with the same name as the type and hide the type name.

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: any Class"
 title: "any Class"
 ms.date: "04/04/2019"
 f1_keywords: ["any/std::any", "any/std::any::emplace", "any/std::any::has_value", "any/std::any::reset", "any/std::any::swap", "any/std::any::type"]
@@ -20,23 +21,23 @@ class any
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[any](#any)|Constructs an object of type `any`.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[emplace](#emplace)|Sets an any value.|
-|[has_value](#has_value)|Returns **true** if any has a value.|
+|[has_value](#has_value)|Returns **`true`** if any has a value.|
 |[reset](#reset)|Resets an any.|
 |[swap](#swap)|Swaps two any objects.|
 |[type](#type)|Returns the any type.|
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator=](#op_eq)|Replaces the any with a copy of another any.|
 
@@ -71,7 +72,7 @@ template <class T, class U, class... Args>
 
 ## <a name="has_value"></a> has_value
 
-Returns **true** if any has a value.
+Returns **`true`** if any has a value.
 
 ```cpp
 bool has_value() const noexcept;

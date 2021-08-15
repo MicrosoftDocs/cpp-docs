@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Declare Value Types with the interior_ptr Keyword (C++/CLI)"
 title: "How to: Declare Value Types with the interior_ptr Keyword (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
@@ -12,7 +13,7 @@ An **interior_ptr** can be used with a value type.
 > [!IMPORTANT]
 > This language feature is supported by the `/clr` compiler option, but not by the `/ZW` compiler option.
 
-## Example
+## Example: interior_ptr with value type
 
 ### Description
 
@@ -57,13 +58,13 @@ int main() {
 3
 ```
 
-## Example
+## Example: this pointer
 
 ### Description
 
-In a value type, the **this** pointer evaluates to an interior_ptr.
+In a value type, the **`this`** pointer evaluates to an interior_ptr.
 
-In the body of a non-static member-function of a value type `V`, **this** is an expression of type `interior_ptr<V>` whose value is the address of the object for which the function is called.
+In the body of a non-static member-function of a value type `V`, **`this`** is an expression of type `interior_ptr<V>` whose value is the address of the object for which the function is called.
 
 ### Code
 
@@ -79,7 +80,7 @@ value struct V {
 };
 ```
 
-## Example
+## Example: address-of operator
 
 ### Description
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2046"
 title: "Compiler Error C2046"
 ms.date: "11/04/2016"
 f1_keywords: ["C2046"]
@@ -9,7 +10,7 @@ ms.assetid: f0c8f9dd-dbd7-4c4a-8838-fde54208ec71
 
 illegal case
 
-The keyword `case` can appear only in a `switch` statement.
+The keyword `case` can appear only in a **`switch`** statement.
 
 The following sample generates C2046:
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2249"
 title: "Compiler Error C2249"
 ms.date: "11/04/2016"
 f1_keywords: ["C2249"]
@@ -9,9 +10,9 @@ ms.assetid: bdd6697c-e04b-49b9-8e40-d9eb6d74f2b6
 
 'member' : no accessible path to access member declared in virtual base 'class'
 
-The `member` is inherited from a nonpublic `virtual` base class or structure.
+The `member` is inherited from a nonpublic **`virtual`** base class or structure.
 
-## Example
+## Examples
 
 The following sample generates C2249.
 
@@ -31,8 +32,6 @@ int main() {
    b.pubFunc();    // OK
 }
 ```
-
-## Example
 
 C2249 can also occur if you try to assign a stream from the C++ Standard Library to another stream.  The following sample generates C2249.
 

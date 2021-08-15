@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: isfinite, _finite, _finitef"
 title: "isfinite, _finite, _finitef"
 ms.date: "01/31/2019"
 api_name: ["_finite", "_finitef"]
@@ -41,7 +42,7 @@ The floating-point value to test.
 
 ## Return value
 
-The `isfinite` macro and the `_finite` and `_finitef` functions return a non-zero value if *x* is either a normal or subnormal finite value. They return 0 if the argument is infinite or a NaN. The C++ inline template function `isfinite` behaves the same way, but returns **true** or **false**.
+The `isfinite` macro and the `_finite` and `_finitef` functions return a non-zero value if *x* is either a normal or subnormal finite value. They return 0 if the argument is infinite or a NaN. The C++ inline template function `isfinite` behaves the same way, but returns **`true`** or **`false`**.
 
 ## Remarks
 

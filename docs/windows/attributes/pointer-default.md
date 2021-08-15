@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: pointer_default"
 title: "pointer_default (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.pointer_default"]
@@ -30,9 +31,7 @@ See the example for [defaultvalue](defaultvalue.md) for a sample use of **pointe
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**interface**|
 |**Repeatable**|No|

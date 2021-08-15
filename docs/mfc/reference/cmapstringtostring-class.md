@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMapStringToString Class"
 title: "CMapStringToString Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMapStringToString", "AFXCOLL/CMapStringToString", "AFXCOLL/CMapStringToString::CPair", "AFXCOLL/CMapStringToString::CMapStringToString", "AFXCOLL/CMapStringToString::GetCount", "AFXCOLL/CMapStringToString::GetHashTableSize", "AFXCOLL/CMapStringToString::GetNextAssoc", "AFXCOLL/CMapStringToString::GetSize", "AFXCOLL/CMapStringToString::GetStartPosition", "AFXCOLL/CMapStringToString::HashKey", "AFXCOLL/CMapStringToString::InitHashTable", "AFXCOLL/CMapStringToString::IsEmpty", "AFXCOLL/CMapStringToString::Lookup", "AFXCOLL/CMapStringToString::LookupKey", "AFXCOLL/CMapStringToString::PGetFirstAssoc", "AFXCOLL/CMapStringToString::PGetNextAssoc", "AFXCOLL/CMapStringToString::PLookup", "AFXCOLL/CMapStringToString::RemoveAll", "AFXCOLL/CMapStringToString::RemoveKey", "AFXCOLL/CMapStringToString::SetAt"]
@@ -17,7 +18,7 @@ class CMapStringToString : public CObject
 
 ## Members
 
-The member functions of `CMapStringToString` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a return value or "output" function parameter, substitute a pointer to **char**. Wherever you see a `CObject` pointer as an "input" function parameter, substitute a pointer to **char**.
+The member functions of `CMapStringToString` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a return value or "output" function parameter, substitute a pointer to **`char`**. Wherever you see a `CObject` pointer as an "input" function parameter, substitute a pointer to **`char`**.
 
 `BOOL CMapStringToString::Lookup(LPCTSTR<key>, CString&<rValue>) const;`
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _variant_t Relational Operators"
 title: "_variant_t Relational Operators"
 ms.date: "11/04/2016"
 f1_keywords: ["_variant_t::operator==", "_variant_t::operator!="]
@@ -34,7 +35,7 @@ Pointer to the `VARIANT` to be compared with the `_variant_t` object.
 
 ## Return Value
 
-Returns **true** if comparison holds, **false** if not.
+Returns **`true`** if comparison holds, **`false`** if not.
 
 ## Remarks
 

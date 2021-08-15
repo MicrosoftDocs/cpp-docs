@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: nonextensible"
 title: "nonextensible (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.nonextensible"]
@@ -42,9 +43,7 @@ __interface IFireTabCtrl
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**interface**|
 |**Repeatable**|No|

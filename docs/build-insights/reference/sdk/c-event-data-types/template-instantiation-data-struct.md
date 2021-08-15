@@ -6,12 +6,12 @@ helpviewer_keywords: ["C++ Build Insights", "C++ Build Insights SDK", "TEMPLATE_
 ---
 # TEMPLATE_INSTANTIATION_DATA structure
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 The C++ Build Insights SDK is compatible with Visual Studio 2017 and above. To see the documentation for these versions, set the Visual Studio **Version** selector control for this article to Visual Studio 2017 or Visual Studio 2019. It's found at the top of the table of contents on this page.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 The `TEMPLATE_INSTANTIATION_DATA` structure describes a template instantiation.
 
@@ -29,7 +29,7 @@ typedef struct TEMPLATE_INSTANTIATION_DATA_TAG
 
 ## Members
 
-|  |  |
+| Name | Description |
 |--|--|
 | `SpecializationSymbolKey` | The key for the template specialization's type. This value is unique within the trace being analyzed. |
 | `PrimaryTemplateSymbolKey` | The key for the primary template type that was specialized. This value is unique within the trace being analyzed. |

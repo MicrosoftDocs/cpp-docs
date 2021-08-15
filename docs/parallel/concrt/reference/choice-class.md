@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: choice Class"
 title: "choice Class"
 ms.date: "11/04/2016"
 f1_keywords: ["choice", "AGENTS/concurrency::choice", "AGENTS/concurrency::choice::choice", "AGENTS/concurrency::choice::accept", "AGENTS/concurrency::choice::acquire_ref", "AGENTS/concurrency::choice::consume", "AGENTS/concurrency::choice::has_value", "AGENTS/concurrency::choice::index", "AGENTS/concurrency::choice::link_target", "AGENTS/concurrency::choice::release", "AGENTS/concurrency::choice::release_ref", "AGENTS/concurrency::choice::reserve", "AGENTS/concurrency::choice::unlink_target", "AGENTS/concurrency::choice::unlink_targets", "AGENTS/concurrency::choice::value"]
@@ -184,7 +185,7 @@ A pointer to the `message` object that the caller now has ownership of.
 
 ### Remarks
 
-The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned **true**.
+The `consume` method is similar to `accept`, but must always be preceded by a call to `reserve` that returned **`true`**.
 
 ## <a name="has_value"></a> has_value
 
@@ -196,7 +197,7 @@ bool has_value() const;
 
 ### Return Value
 
-**true** if the block has received a value, **false** otherwise.
+**`true`** if the block has received a value, **`false`** otherwise.
 
 ## <a name="index"></a> index
 
@@ -282,7 +283,7 @@ A pointer to the target block that is calling the `reserve` method.
 
 ### Return Value
 
-**true** if the message was successfully reserved, **false** otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.
+**`true`** if the message was successfully reserved, **`false`** otherwise. Reservations can fail for many reasons, including: the message was already reserved or accepted by another target, the source could deny reservations, and so forth.
 
 ### Remarks
 

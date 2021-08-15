@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Customizing the Appearance of a Toolbar Control"
 title: "Customizing the Appearance of a Toolbar Control"
 ms.date: "11/04/2016"
 f1_keywords: ["TBSTYLE_"]
@@ -41,5 +42,5 @@ For a complete listing of toolbar styles and extended styles, see [Toolbar Contr
 
 ## See also
 
-[Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CToolBarCtrl](using-ctoolbarctrl.md)<br/>
+[Controls](controls-mfc.md)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3340"
 title: "Compiler Error C3340"
 ms.date: "11/04/2016"
 f1_keywords: ["C3340"]
@@ -9,7 +10,7 @@ ms.assetid: 23b12298-b92a-4717-8380-f165c998cb8a
 
 'interface': interface cannot be both 'restricted' and 'default' in coclass 'class'
 
-The [restricted](../../windows/restricted.md) attribute and the [default](../../windows/default-cpp.md) attribute are mutually exclusive.
+The [restricted](../../windows/attributes/restricted.md) attribute and the [default](../../windows/attributes/default-cpp.md) attribute are mutually exclusive.
 
 The following sample generates C3340:
 

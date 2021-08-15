@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: underlying_type Class"
 title: "underlying_type Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::underlying_type"]

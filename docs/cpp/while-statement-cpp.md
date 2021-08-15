@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: while Statement (C++)"
 title: "while Statement (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["while_cpp"]
@@ -18,11 +19,11 @@ while ( expression )
 
 ## Remarks
 
-The test of *expression* takes place before each execution of the loop; therefore, a **while** loop executes zero or more times. *expression* must be of an integral type, a pointer type, or a class type with an unambiguous conversion to an integral or pointer type.
+The test of *expression* takes place before each execution of the loop; therefore, a **`while`** loop executes zero or more times. *expression* must be of an integral type, a pointer type, or a class type with an unambiguous conversion to an integral or pointer type.
 
-A **while** loop can also terminate when a [break](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md), or [return](../cpp/return-statement-cpp.md) within the statement body is executed. Use [continue](../cpp/continue-statement-cpp.md) to terminate the current iteration without exiting the **while** loop. **continue** passes control to the next iteration of the **while** loop.
+A **`while`** loop can also terminate when a [break](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md), or [return](../cpp/return-statement-cpp.md) within the statement body is executed. Use [continue](../cpp/continue-statement-cpp.md) to terminate the current iteration without exiting the **`while`** loop. **`continue`** passes control to the next iteration of the **`while`** loop.
 
-The following code uses a **while** loop to trim trailing underscores from a string:
+The following code uses a **`while`** loop to trim trailing underscores from a string:
 
 ```cpp
 // while_statement.cpp

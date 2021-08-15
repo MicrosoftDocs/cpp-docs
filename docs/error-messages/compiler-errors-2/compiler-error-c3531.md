@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3531"
 title: "Compiler Error C3531"
 ms.date: "11/04/2016"
 f1_keywords: ["C3531"]
@@ -33,4 +34,4 @@ int main()
 
 ## See also
 
-[auto Keyword](../../cpp/auto-keyword.md)
+[auto Keyword](../../cpp/auto-cpp.md)

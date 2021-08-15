@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Design and Create an ODBC Database Application"
 title: "Design and Create an ODBC Database Application"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application design [C++], database applications"]

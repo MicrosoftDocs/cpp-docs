@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: vi_progid"
 title: "vi_progid (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.vi_progid"]
@@ -38,11 +39,9 @@ See the [coclass](coclass.md) example for a sample use of **vi_progid**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**|
+|**Applies to**|**`class`**, **`struct`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

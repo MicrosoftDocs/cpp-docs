@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;hash_map&gt; operators"
 title: "&lt;hash_map&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["hash_map/std::operator!=", "hash_map/std::operator=="]
@@ -6,10 +7,10 @@ ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
 ---
 # &lt;hash_map&gt; operators
 
-|||
-|-|-|
-|[operator!=](#op_neq)|[operator!= (multimap)](#op_neq_mm)|
-|[operator==](#op_eq_eq)|[operator== (multimap)](#op_eq_eq_mm)|
+[operator!=](#op_neq)\
+[operator!= (multimap)](#op_neq_mm)\
+[operator==](#op_eq_eq)\
+[operator== (multimap)](#op_eq_eq_mm)
 
 ## <a name="op_neq"></a> operator!=
 
@@ -32,7 +33,7 @@ An object of type `hash_map`.
 
 ### Return Value
 
-**true** if the hash_maps are not equal; **false** if hash_maps are equal.
+**`true`** if the hash_maps are not equal; **`false`** if hash_maps are equal.
 
 ### Remarks
 
@@ -101,7 +102,7 @@ An object of type `hash_map`.
 
 ### Return Value
 
-**true** if the hash_map on the left side of the operator is equal to the hash_map on the right side of the operator; otherwise **false**.
+**`true`** if the hash_map on the left side of the operator is equal to the hash_map on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -168,7 +169,7 @@ An object of type `hash_multimap`.
 
 ### Return Value
 
-**true** if the hash_multimaps are not equal; **false** if hash_multimaps are equal.
+**`true`** if the hash_multimaps are not equal; **`false`** if hash_multimaps are equal.
 
 ### Remarks
 
@@ -235,7 +236,7 @@ An object of type `hash_multimap`.
 
 ### Return Value
 
-**true** if the hash_multimap on the left side of the operator is equal to the hash_multimap on the right side of the operator; otherwise **false**.
+**`true`** if the hash_multimap on the left side of the operator is equal to the hash_multimap on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 

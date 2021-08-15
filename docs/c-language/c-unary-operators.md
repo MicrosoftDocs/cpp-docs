@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: C Unary Operators"
 title: "C Unary Operators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operators [C], unary", "unary operators"]
@@ -19,7 +20,7 @@ Unary operators appear before their operand and associate from right to left.
 
 *unary-operator cast-expression*
 
-**sizeof**  *unary-expression*
+**`sizeof`**  *unary-expression*
 
 **sizeof (**  *type-name*  **)**
 

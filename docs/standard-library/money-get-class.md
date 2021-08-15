@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: money_get Class"
 title: "money_get Class"
 ms.date: "11/04/2016"
 f1_keywords: ["xlocmon/std::money_get", "xlocmon/std::money_get::char_type", "xlocmon/std::money_get::iter_type", "xlocmon/std::money_get::string_type", "xlocmon/std::money_get::do_get", "xlocmon/std::money_get::get"]
@@ -94,7 +95,7 @@ Input iterator addressing the beginning of the sequence to be converted.
 Input iterator addressing the end of the sequence to be converted.
 
 *Intl*\
-A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
+A Boolean value indicating the type of currency symbol expected in the sequence: **`true`** if international, **`false`** if domestic.
 
 *Iosbase*\
 A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
@@ -113,7 +114,7 @@ An input iterator addressing the first element beyond the monetary input field.
 
 The first virtual protected member function tries to match sequential elements beginning at first in the sequence [ `first`, `last`) until it has recognized a complete, nonempty monetary input field. If successful, it converts this field to a sequence of one or more decimal digits, optionally preceded by a minus sign ( `-`), to represent the amount and stores the result in the [string_type](#string_type) object *val*. It returns an iterator designating the first element beyond the monetary input field. Otherwise, the function stores an empty sequence in *val* and sets `ios_base::failbit` in *State*. It returns an iterator designating the first element beyond any prefix of a valid monetary input field. In either case, if the return value equals `last`, the function sets `ios_base::eofbit` in `State`.
 
-The second virtual protected member function behaves the same as the first, except that if successful it converts the optionally signed digit sequence to a value of type **long double** and stores that value in *val*.
+The second virtual protected member function behaves the same as the first, except that if successful it converts the optionally signed digit sequence to a value of type **`long double`** and stores that value in *val*.
 
 The format of a monetary input field is determined by the [locale facet](../standard-library/locale-class.md#facet_class)**fac** returned by the effective call [use_facet](../standard-library/locale-functions.md#use_facet) < [moneypunct](../standard-library/moneypunct-class.md)\< **CharType**, **intl**>>( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)).
 
@@ -141,7 +142,7 @@ If **iosbase**. [flags](../standard-library/ios-base-class.md#flags) & [showbase
 
 If no instances of **fac**. `thousands_sep` occur in the value portion of the monetary input field (where the element equal to **money_base::value** appears in the format pattern), no grouping constraint is imposed. Otherwise, any grouping constraints imposed by **fac**. **grouping** is enforced. Note that the resulting digit sequence represents an integer whose low-order **fac**. `frac_digits` decimal digits are considered to the right of the decimal point.
 
-Arbitrary white space is matched where the element equal to **money_base::space** appears in the format pattern, if it appears other than at the end of the format pattern. Otherwise, no internal white space is matched. An element *ch* is considered white space if [use_facet](../standard-library/locale-functions.md#use_facet) < [ctype](../standard-library/ctype-class.md)\< **CharType**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)). [is](../standard-library/ctype-class.md#is)( **ctype_base::space**, *ch*) is **true**.
+Arbitrary white space is matched where the element equal to **money_base::space** appears in the format pattern, if it appears other than at the end of the format pattern. Otherwise, no internal white space is matched. An element *ch* is considered white space if [use_facet](../standard-library/locale-functions.md#use_facet) < [ctype](../standard-library/ctype-class.md)\< **CharType**> >( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)). [is](../standard-library/ctype-class.md#is)( **ctype_base::space**, *ch*) is **`true`**.
 
 ### Example
 
@@ -176,7 +177,7 @@ Input iterator addressing the beginning of the sequence to be converted.
 Input iterator addressing the end of the sequence to be converted.
 
 *Intl*\
-A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
+A Boolean value indicating the type of currency symbol expected in the sequence: **`true`** if international, **`false`** if domestic.
 
 *Iosbase*\
 A format flag which when set indicates that the currency symbol is optional; otherwise, it is required

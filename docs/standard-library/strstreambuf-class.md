@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strstreambuf Class"
 title: "strstreambuf Class"
 ms.date: "11/04/2016"
 f1_keywords: ["strstream/std::strstreambuf::freeze", "strstream/std::strstreambuf::overflow", "strstream/std::strstreambuf::pbackfail", "strstream/std::strstreambuf::pcount", "strstream/std::strstreambuf::seekoff", "strstream/std::strstreambuf::seekpos", "strstream/std::strstreambuf::str", "strstream/std::strstreambuf::underflow"]
@@ -7,7 +8,7 @@ ms.assetid: b040b8ea-0669-4eba-8908-6a9cc159c54b
 ---
 # strstreambuf Class
 
-Describes a stream buffer that controls the transmission of elements to and from a sequence of elements stored in a **char** array object.
+Describes a stream buffer that controls the transmission of elements to and from a sequence of elements stored in a **`char`** array object.
 
 ## Syntax
 
@@ -72,7 +73,7 @@ void freeze(bool _Freezeit = true);
 ### Parameters
 
 *_Freezeit*\
-A **bool** indicating whether you want the stream to be frozen.
+A **`bool`** indicating whether you want the stream to be frozen.
 
 ### Remarks
 
@@ -330,116 +331,116 @@ Constructs an object of type `strstreambuf`.
 ```cpp
 explicit strstreambuf(streamsize count = 0);
 
-strstreambuf(void (* _Allocfunc)(size_t),
-    void (* _Freefunc)(void*));
+strstreambuf(void (* alloc_func)(size_t),
+    void (* free_func)(void*));
 
-strstreambuf(char* _Getptr,
+strstreambuf(char* getptr,
     streamsize count,
-    char* _Putptr = 0);
+    char* putptr = 0);
 
-strstreambuf(signed char* _Getptr,
+strstreambuf(signed char* getptr,
     streamsize count,
-    signed char* _Putptr = 0);
+    signed char* putptr = 0);
 
-strstreambuf(unsigned char* _Getptr,
+strstreambuf(unsigned char* getptr,
     streamsize count,
-    unsigned char* _Putptr = 0);
+    unsigned char* putptr = 0);
 
-strstreambuf(const char* _Getptr,
+strstreambuf(const char* getptr,
     streamsize count);
 
-strstreambuf(const signed char* _Getptr,
+strstreambuf(const signed char* getptr,
     streamsize count);
 
-strstreambuf(const unsigned char* _Getptr,
+strstreambuf(const unsigned char* getptr,
     streamsize count);
 ```
 
 ### Parameters
 
-*_Allocfunc*\
+*alloc_func*\
 The function used to allocate buffer memory.
 
 *count*\
-Determines the length of the buffer pointed to by *_Getptr*. If *_Getptr* is not an argument (first constructor form), a suggested allocation size for the buffers.
+Determines the length of the buffer pointed to by *getptr*. If *getptr* is not an argument (first constructor form), a suggested allocation size for the buffers.
 
 *_Freefunc*\
 The function used to free buffer memory.
 
-*_Getptr*\
+*getptr*\
 A buffer used for input.
 
-*_Putptr*\
+*putptr*\
 A buffer used for output.
 
 ### Remarks
 
 The first constructor stores a null pointer in all the pointers controlling the input buffer, the output buffer, and strstreambuf allocation. It sets the stored strstreambuf mode to make the controlled sequence modifiable and extendable. It also accepts *count* as a suggested initial allocation size.
 
-The second constructor behaves like the first, except that it stores *\_Allocfunc* as the pointer to the function to call to allocate storage and *\_Freefunc* as the pointer to the function to call to free that storage.
+The second constructor behaves like the first, except that it stores *alloc_func* as the pointer to the function to call to allocate storage and *free_func* as the pointer to the function to call to free that storage.
 
 The three constructors:
 
 ```cpp
-strstreambuf(char *_Getptr,
+strstreambuf(char *getptr,
     streamsize count,
     char *putptr = 0);
 
-strstreambuf(signed char *_Getptr,
+strstreambuf(signed char *getptr,
     streamsize count,
     signed char *putptr = 0);
 
-strstreambuf(unsigned char *_Getptr,
+strstreambuf(unsigned char *getptr,
     streamsize count,
     unsigned char *putptr = 0);
 ```
 
-also behave like the first, except that `_Getptr` designates the array object used to hold the controlled sequence. (Hence, it must not be a null pointer.) The number of elements *N* in the array is determined as follows:
+also behave like the first, except that *getptr* designates the array object used to hold the controlled sequence. (Hence, it must not be a null pointer.) The number of elements *N* in the array is determined as follows:
 
-- If (`count` > 0), then *N* is `count`.
+- If (*count* > 0), then *N* is *count*.
 
-- If (`count` == 0), then *N* is `strlen`( ( **const** `char` *) `_Getptr` ).
+- If (*count* == 0), then *N* is `strlen((const char *) getptr )`.
 
-- If (`count` < 0), then *N* is **INT_MAX**.
+- If (*count* < 0), then *N* is **INT_MAX**.
 
-If `_Putptr` is a null pointer, the function establishes just an input buffer by executing:
+If *putptr* is a null pointer, the function establishes just an input buffer by executing:
 
 ```cpp
-setg(_Getptr,
-    _Getptr,
-    _Getptr + N);
+setg(getptr,
+    getptr,
+    getptr + N);
 ```
 
 Otherwise, it establishes both input and output buffers by executing:
 
 ```cpp
-setg(_Getptr,
-    _Getptr,
-    _Putptr);
+setg(getptr,
+    getptr,
+    putptr);
 
-setp(_Putptr,
-    _Getptr + N);
+setp(putptr,
+    getptr + N);
 ```
 
-In this case, `_Putptr` must be in the interval [ `_Getptr`, `_Getptr` + *N*].
+In this case, *putptr* must be in the interval [ *getptr*, *getptr* + *N*].
 
 Finally, the three constructors:
 
 ```cpp
-strstreambuf(const char *_Getptr,
+strstreambuf(const char *getptr,
     streamsize count);
 
-strstreambuf(const signed char *_Getptr,
+strstreambuf(const signed char *getptr,
     streamsize count);
 
-strstreambuf(const unsigned char *_Getptr,
+strstreambuf(const unsigned char *getptr,
     streamsize count);
 ```
 
 all behave the same as:
 
 ```cpp
-streambuf((char *)_Getptr, count);
+streambuf((char *)getptr, count);
 ```
 
 except that the stored mode makes the controlled sequence neither modifiable nor extendable.
@@ -458,7 +459,7 @@ If the function cannot succeed, it returns `EOF`. Otherwise, it returns the curr
 
 ### Remarks
 
-The protected virtual member function endeavors to extract the current element `ch` from the input buffer, then advance the current stream position, and return the element as (`int`)(`unsigned char`) **ch**. It can do so in only one way: if a read position is available, it takes `ch` as the element stored in the read position and advances the next pointer for the input buffer.
+The protected virtual member function endeavors to extract the current element `ch` from the input buffer, then advance the current stream position, and return the element as `(int)(unsigned char)ch`. It can do so in only one way: if a read position is available, it takes `ch` as the element stored in the read position and advances the next pointer for the input buffer.
 
 ## See also
 

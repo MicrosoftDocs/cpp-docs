@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3737"
 title: "Compiler Error C3737"
 ms.date: "11/04/2016"
 f1_keywords: ["C3737"]
@@ -9,7 +10,7 @@ ms.assetid: ca2aeb23-2491-4ccb-8838-884abf7065c8
 
 'delegate': a delegate may not have an explicit calling convention
 
-You cannot specify the [calling convention](../../cpp/calling-conventions.md) for a `delegate`.
+You cannot specify the [calling convention](../../cpp/calling-conventions.md) for a **`delegate`**.
 
 ## Example
 

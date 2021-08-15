@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2897"
 title: "Compiler Error C2897"
 ms.date: "11/04/2016"
 f1_keywords: ["C2897"]
@@ -11,9 +12,7 @@ a destructor/finalizer cannot be a function template
 
 Destructors or finalizers cannot be overloaded, so declaring a destructor as a template (which would define a set of destructors) is not allowed.
 
-The following sample generates C2897:
-
-## Example
+## Examples
 
 The following sample generates C2897.
 
@@ -25,8 +24,6 @@ public:
    template<typename T> ~X() {}   // C2897
 };
 ```
-
-## Example
 
 The following sample generates C2897.
 

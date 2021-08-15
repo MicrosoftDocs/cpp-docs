@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l"
 title: "_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l"
 ms.date: "4/2/2020"
 api_name: ["_mbsnset", "_strnset", "_mbsnset_l", "_wcsnset_l", "_wcsnset", "_strnset_l", "_o__mbsnset", "_o__mbsnset_l", "_o__wcsnset"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_tcsncset_l", "mbsnset_l", "_tcsnset_l", "_fstrnset", "_wcsnset_l", "_ftcsnset", "wcsnset_l", "_mbsnset_l", "_strnset", "_tcsnset", "_strnset_l", "mbsnset", "strnset_l", "_mbsnset", "_wcsnset", "_tcsncset"]
@@ -74,7 +75,7 @@ Returns a pointer to the altered string.
 
 ## Remarks
 
-The **_strnset** function sets, at most, the first *count* characters of *str* to *c* (converted to **char**). If *count* is greater than the length of *str*, the length of *str* is used instead of *count*.
+The **_strnset** function sets, at most, the first *count* characters of *str* to *c* (converted to **`char`**). If *count* is greater than the length of *str*, the length of *str* is used instead of *count*.
 
 **_wcsnset** and **_mbsnset** are wide-character and multibyte-character versions of **_strnset**. The string arguments and return value of **_wcsnset** are wide-character strings; those of **_mbsnset** are multibyte-character strings. These three functions behave identically otherwise.
 

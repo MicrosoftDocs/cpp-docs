@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IsSame Structure"
 title: "IsSame Structure"
 ms.date: "10/03/2018"
 ms.topic: "reference"
@@ -72,4 +73,4 @@ struct IsSame<T1, T1>
 
 Indicates whether one type is the same as another.
 
-`value` is **true** if the template parameters are the same, and **false** if the template parameters are different.
+`value` is **`true`** if the template parameters are the same, and **`false`** if the template parameters are different.

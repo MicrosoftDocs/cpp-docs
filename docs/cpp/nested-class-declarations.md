@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Nested Class Declarations"
 title: "Nested Class Declarations"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["classes [C++], declaring", "declarations, class", "nested classes [C++]", "nested classes [C++], declaring", "declaring classes [C++]", "declarations, nested classes"]
@@ -136,7 +137,7 @@ typedef BufferedIO::BufferedInput BIO_INPUT;
 int BIO_INPUT::read()
 ```
 
-The preceding declaration is equivalent to the previous one, but it uses a **typedef** name in place of the class names.
+The preceding declaration is equivalent to the previous one, but it uses a **`typedef`** name in place of the class names.
 
 ## Friend functions in nested classes
 

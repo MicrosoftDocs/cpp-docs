@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE (MFC)"
 title: "OLE (MFC)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["OLE [MFC], user-interface topics", "OLE applications [MFC], user interface", "user interfaces, OLE", "applications [OLE], user interface"]
@@ -16,14 +17,14 @@ Implementing OLE functionality in your program affects your user interface in se
 
 For more information, see:
 
-- [OLE and MFC](../mfc/ole-in-mfc.md)
+- [OLE and MFC](ole-in-mfc.md)
 
-- [Visual Editing (Activation)](../mfc/activation-cpp.md)
+- [Visual Editing (Activation)](activation-cpp.md)
 
-- [Drag and Drop](../mfc/drag-and-drop-ole.md)
+- [Drag and Drop](drag-and-drop-ole.md)
 
-- [Trackers](../mfc/trackers.md)
+- [Trackers](trackers.md)
 
 ## See also
 
-[User Interface Elements](../mfc/user-interface-elements-mfc.md)
+[User Interface Elements](user-interface-elements-mfc.md)

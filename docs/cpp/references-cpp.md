@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: References (C++)"
 title: "References (C++)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["objects [C++], referencing", "references [C++]", "references, to pointers", "declarations, references", "references, declaring", "referencing objects, declarator syntax"]
@@ -22,7 +23,7 @@ References are declared using the following sequence:
 
    - An optional storage class specifier.
 
-   - Optional **const** and/or **volatile** qualifiers.
+   - Optional **`const`** and/or **`volatile`** qualifiers.
 
    - The type specifier: the name of a type.
 
@@ -32,7 +33,7 @@ References are declared using the following sequence:
 
    - The **&** operator or **&&** operator.
 
-   - Optional **const** and/or **volatile** qualifers.
+   - Optional **`const`** and/or **`volatile`** qualifers.
 
    - The identifier.
 

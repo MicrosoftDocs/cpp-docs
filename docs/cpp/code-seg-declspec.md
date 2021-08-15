@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: code_seg (__declspec)"
 title: "code_seg (__declspec)"
 ms.date: "11/04/2016"
 f1_keywords: ["code_seg_cpp"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: multiset (STL/CLR)"
 title: "multiset (STL/CLR)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -108,9 +109,9 @@ The type of the key component of an element in the controlled sequence.
 
 The object allocates and frees storage for the sequence it controls as individual nodes. It inserts elements into a (nearly) balanced tree that it keeps ordered by altering the links between nodes, never by copying the contents of one node to another. That means you can insert and remove elements freely without disturbing remaining elements.
 
-The object orders the sequence it controls by calling a stored delegate object of type [multiset::key_compare (STL/CLR)](../dotnet/multiset-key-compare-stl-clr.md). You can specify the stored delegate object when you construct the multiset; if you specify no delegate object, the default is the comparison `operator<(key_type, key_type)`. You access this stored object by calling the member function [multiset::key_comp (STL/CLR)](../dotnet/multiset-key-comp-stl-clr.md)`()`.
+The object orders the sequence it controls by calling a stored delegate object of type [multiset::key_compare (STL/CLR)](#key_compare). You can specify the stored delegate object when you construct the multiset; if you specify no delegate object, the default is the comparison `operator<(key_type, key_type)`. You access this stored object by calling the member function [multiset::key_comp (STL/CLR)](#key_comp)`()`.
 
-Such a delegate object must impose a strict weak ordering on keys of type [multiset::key_type (STL/CLR)](../dotnet/multiset-key-type-stl-clr.md). That means, for any two keys `X` and `Y`:
+Such a delegate object must impose a strict weak ordering on keys of type [multiset::key_type (STL/CLR)](#key_type). That means, for any two keys `X` and `Y`:
 
 `key_comp()(X, Y)` returns the same Boolean result on every call.
 
@@ -124,7 +125,7 @@ For any element `X` that precedes `Y` in the controlled sequence, `key_comp()(Y,
 
 Each element serves as both a ey and a value. The sequence is represented in a way that permits lookup, insertion, and removal of an arbitrary element with a number of operations proportional to the logarithm of the number of elements in the sequence (logarithmic time). Moreover, inserting an element invalidates no iterators, and removing an element invalidates only those iterators which point at the removed element.
 
-A multiset supports bidirectional iterators, which means you can step to adjacent elements given an iterator that designates an element in the controlled sequence. A special head node corresponds to the iterator returned by [multiset::end (STL/CLR)](../dotnet/multiset-end-stl-clr.md)`()`. You can decrement this iterator to reach the last element in the controlled sequence, if present. You can increment a multiset iterator to reach the head node, and it will then compare equal to `end()`. But you cannot dereference the iterator returned by `end()`.
+A multiset supports bidirectional iterators, which means you can step to adjacent elements given an iterator that designates an element in the controlled sequence. A special head node corresponds to the iterator returned by [multiset::end (STL/CLR)](#end)`()`. You can decrement this iterator to reach the last element in the controlled sequence, if present. You can increment a multiset iterator to reach the head node, and it will then compare equal to `end()`. But you cannot dereference the iterator returned by `end()`.
 
 Note that you cannot refer to a multiset element directly given its numerical position -- that requires a random-access iterator.
 
@@ -194,7 +195,7 @@ void clear();
 
 ### Remarks
 
-The member function effectively calls [multiset::erase (STL/CLR)](../dotnet/multiset-erase-stl-clr.md)`(` [multiset::begin (STL/CLR)](../dotnet/multiset-begin-stl-clr.md)`(),` [multiset::end (STL/CLR)](../dotnet/multiset-end-stl-clr.md)`())`. You use it to ensure that the controlled sequence is empty.
+The member function effectively calls [multiset::erase (STL/CLR)](#erase)`(` [multiset::begin (STL/CLR)](#begin)`(),` [multiset::end (STL/CLR)](#end)`())`. You use it to ensure that the controlled sequence is empty.
 
 ### Example
 
@@ -489,7 +490,7 @@ bool empty();
 
 ### Remarks
 
-The member function returns true for an empty controlled sequence. It is equivalent to [multiset::size (STL/CLR)](../dotnet/multiset-size-stl-clr.md)`() == 0`. You use it to test whether the multiset is empty.
+The member function returns true for an empty controlled sequence. It is equivalent to [multiset::size (STL/CLR)](#size)`() == 0`. You use it to test whether the multiset is empty.
 
 ### Example
 
@@ -595,7 +596,7 @@ Key value to search for.
 
 ### Remarks
 
-The member function returns a pair of iterators `cliext::pair<iterator, iterator>(` [multiset::lower_bound (STL/CLR)](../dotnet/multiset-lower-bound-stl-clr.md)`(key),` [multiset::upper_bound (STL/CLR)](../dotnet/multiset-upper-bound-stl-clr.md)`(key))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.
+The member function returns a pair of iterators `cliext::pair<iterator, iterator>(` [multiset::lower_bound (STL/CLR)](#lower_bound)`(key),` [multiset::upper_bound (STL/CLR)](#upper_bound)`(key))`. You use it to determine the range of elements currently in the controlled sequence that match a specified key.
 
 ### Example
 
@@ -666,7 +667,7 @@ Element to erase.
 
 ### Remarks
 
-The first member function removes the element of the controlled sequence pointed to by *where*, and returns an iterator that designates the first element remaining beyond the element removed, or [multiset::end (STL/CLR)](../dotnet/multiset-end-stl-clr.md)`()` if no such element exists. You use it to remove a single element.
+The first member function removes the element of the controlled sequence pointed to by *where*, and returns an iterator that designates the first element remaining beyond the element removed, or [multiset::end (STL/CLR)](#end)`()` if no such element exists. You use it to remove a single element.
 
 The second member function removes the elements of the controlled sequence in the range [`first`, `last`), and returns an iterator that designates the first element remaining beyond any elements removed, or `end()` if no such element exists.. You use it to remove zero or more contiguous elements.
 
@@ -739,7 +740,7 @@ Key value to search for.
 
 ### Remarks
 
-If at least one element in the controlled sequence has equivalent ordering with *key*, the member function returns an iterator designating one of those elements; otherwise it returns [multiset::end (STL/CLR)](../dotnet/multiset-end-stl-clr.md)`()`. You use it to locate an element currently in the controlled sequence that matches a specified key.
+If at least one element in the controlled sequence has equivalent ordering with *key*, the member function returns an iterator designating one of those elements; otherwise it returns [multiset::end (STL/CLR)](#end)`()`. You use it to locate an element currently in the controlled sequence that matches a specified key.
 
 ### Example
 
@@ -1344,7 +1345,7 @@ Key value to search for.
 
 ### Remarks
 
-The member function determines the first element `X` in the controlled sequence that has equivalent ordering to *key*. If no such element exists, it returns [multiset::end (STL/CLR)](../dotnet/multiset-end-stl-clr.md)`()`; otherwise it returns an iterator that designates `X`. You use it to locate the beginning of a sequence of elements currently in the controlled sequence that match a specified key.
+The member function determines the first element `X` in the controlled sequence that has equivalent ordering to *key*. If no such element exists, it returns [multiset::end (STL/CLR)](#end)`()`; otherwise it returns an iterator that designates `X`. You use it to locate the beginning of a sequence of elements currently in the controlled sequence that match a specified key.
 
 ### Example
 
@@ -1618,7 +1619,7 @@ Container to copy.
 
 ### Remarks
 
-The member operator copies *right* to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
+The member operator copies *right* to the object, then returns **`*this`**. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.
 
 ### Example
 
@@ -1852,7 +1853,7 @@ size_type size();
 
 ### Remarks
 
-The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [multiset::empty (STL/CLR)](../dotnet/multiset-empty-stl-clr.md)`()`.
+The member function returns the length of the controlled sequence. You use it to determine the number of elements currently in the controlled sequence. If all you care about is whether the sequence has nonzero size, see [multiset::empty (STL/CLR)](#empty)`()`.
 
 ### Example
 
@@ -1959,7 +1960,7 @@ Container to swap contents with.
 
 ### Remarks
 
-The member function swaps the controlled sequences between `this` and *right*. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.
+The member function swaps the controlled sequences between **`this`** and *right*. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.
 
 ### Example
 
@@ -2077,7 +2078,7 @@ Key value to search for.
 
 ### Remarks
 
-The member function determines the last element `X` in the controlled sequence that has equivalent ordering to *key*. If no such element exists, or if `X` is the last element in the controlled sequence, it returns [multiset::end (STL/CLR)](../dotnet/multiset-end-stl-clr.md)`()`; otherwise it returns an iterator that designates the first element beyond `X`. You use it to locate the end of a sequence of elements currently in the controlled sequence that match a specified key.
+The member function determines the last element `X` in the controlled sequence that has equivalent ordering to *key*. If no such element exists, or if `X` is the last element in the controlled sequence, it returns [multiset::end (STL/CLR)](#end)`()`; otherwise it returns an iterator that designates the first element beyond `X`. You use it to locate the end of a sequence of elements currently in the controlled sequence that match a specified key.
 
 ### Example
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWinFormsDialog Class"
 title: "CWinFormsDialog Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog::CWinFormsDialog", "AFXWINFORMS/CWinFormsDialog::GetControl", "AFXWINFORMS/CWinFormsDialog::GetControlHandle", "AFXWINFORMS/CWinFormsDialog::OnInitDialog"]
@@ -40,7 +41,7 @@ The .NET Framework user control to be displayed in the MFC application.
 
 ### Public Operators
 
-|Name||
+|Name|Description|
 |----------|-|
 |[CWinFormsDialog::operator -&gt;](#operator_-_gt)|Replaces [CWinFormsDialog::GetControl](#getcontrol) in expressions.|
 |[CWinFormsDialog::operator TManagedControl^](#operator-tmanagedcontrol-hat)|Casts a type as a reference to a Windows Forms user control.|

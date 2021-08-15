@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: strdup, wcsdup"
 title: "strdup, wcsdup"
 ms.date: "12/16/2019"
 api_name: ["wcsdup", "strdup"]

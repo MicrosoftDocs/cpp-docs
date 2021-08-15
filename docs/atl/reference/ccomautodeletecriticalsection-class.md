@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CComAutoDeleteCriticalSection Class"
 title: "CComAutoDeleteCriticalSection Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CComAutoDeleteCriticalSection", "atlcore/ATL::CComAutoDeleteCriticalSection"]
@@ -17,7 +18,7 @@ class CComAutoDeleteCriticalSection : public CComSafeDeleteCriticalSection
 
 ## Remarks
 
-`CComAutoDeleteCriticalSection` derives from the class [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md). However, `CComAutoDeleteCriticalSection` overrides the [Term](ccomsafedeletecriticalsection-class.md#term) method to **private** access, which forces internal memory cleanup to occur only when instances of this class go out of scope or are explicitly deleted from memory.
+`CComAutoDeleteCriticalSection` derives from the class [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md). However, `CComAutoDeleteCriticalSection` overrides the [Term](ccomsafedeletecriticalsection-class.md#term) method to **`private`** access, which forces internal memory cleanup to occur only when instances of this class go out of scope or are explicitly deleted from memory.
 
 This class introduces no additional methods over its base class. See [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md) and [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) for more information on critical section helper classes.
 

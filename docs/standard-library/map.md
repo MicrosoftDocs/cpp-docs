@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;map&gt;"
 title: "&lt;map&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<map>"]
@@ -39,7 +40,7 @@ Defines the container class templates map and multimap and their supporting temp
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[value_compare Class](../standard-library/value-compare-class-map.md)|Provides a function object that can compare the elements of a map by comparing the values of their keys to determine their relative order in the map.|
 |[map Class](../standard-library/map-class.md)|Used for the storage and retrieval of data from a collection in which the each of the elements has a unique key with which the data is automatically ordered.|

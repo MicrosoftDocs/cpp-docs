@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /IGNORE (Ignore Specific Warnings)"
 title: "/IGNORE (Ignore Specific Warnings)"
 ms.date: "11/04/2016"
 f1_keywords: ["/OVERWRITE"]
@@ -22,7 +23,7 @@ By default, LINK reports all warnings. Specify **/IGNORE:**`warning` to tell the
 
 The linker does not allow some warnings to be ignored. This table lists the warnings that are not suppressed by **/IGNORE**:
 
-|Linker Warning||
+| Linker Warning | Message |
 |--------------------|-|
 |LNK4017|`keyword` statement not supported for the target platform; ignored|
 |[LNK4044](../../error-messages/tool-errors/linker-tools-warning-lnk4044.md)|unrecognized option '`option`'; ignored|
@@ -48,7 +49,7 @@ In general, linker warnings that can't be ignored represent build failures, comm
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. In the **Linker** folder, select the **Command Line** property page.
+1. Select the **Configuration Properties** > **Linker** > **Command Line** property page.
 
 1. Modify the **Additional Options** property.
 

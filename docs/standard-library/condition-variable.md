@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;condition_variable&gt;"
 title: "&lt;condition_variable&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<condition_variable>"]
@@ -42,9 +43,9 @@ The `condition_variable_any` and `condition_variable` classes each have three me
 
 - `wait_for` waits for a specified `time interval`.
 
-Each of these methods has two overloaded versions. One just waits and can wake up spuriously. The other takes an additional template argument that defines a predicate. The method does not return until the predicate is **true**.
+Each of these methods has two overloaded versions. One just waits and can wake up spuriously. The other takes an additional template argument that defines a predicate. The method does not return until the predicate is **`true`**.
 
-Each class also has two methods that are used to notify a condition variable that its condition is **true**.
+Each class also has two methods that are used to notify a condition variable that its condition is **`true`**.
 
 - `notify_one` wakes up one of the threads that is waiting for the condition variable.
 

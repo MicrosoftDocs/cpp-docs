@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Allocators"
 title: "Allocators"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["allocators", "C++ Standard Library, allocators"]
@@ -16,11 +17,11 @@ template <
 class vector
 ```
 
-The C++ Standard Library provides a default implementation for an allocator. In C++11 and later, the default allocator is updated to expose a smaller interface; the new allocator is called a *minimal allocator*. In particular, the minimal allocator's `construct()` member supports move semantics, which can greatly improve performance. In most cases, this default allocator should be sufficient. In C++11 all the Standard Library types and functions that take an allocator type parameter support the minimal allocator interface, including `std::function`, `shared_ptr, allocate_shared()`, and `basic_string`.  For more information on the default allocator, see [allocator Class](../standard-library/allocator-class.md).
+The C++ Standard Library provides a default implementation for an allocator. In C++11 and later, the default allocator is updated to expose a smaller interface; the new allocator is called a *minimal allocator*. In particular, the minimal allocator's `construct()` member supports move semantics, which can greatly improve performance. In most cases, this default allocator should be sufficient. In C++11 all the Standard Library types and functions that take an allocator type parameter support the minimal allocator interface, including `std::function`, `shared_ptr, allocate_shared()`, and `basic_string`.  For more information on the default allocator, see [allocator Class](allocator-class.md).
 
 ## Writing Your Own Allocator (C++11)
 
-The default allocator uses **new** and **delete** to allocate and deallocate memory. If you want to use a different method of memory allocation, such as using shared memory, then you must create your own allocator. If you are targeting C++11 and you need to write a new custom allocator, make it a minimal allocator if possible. Even if you have already implemented an old-style allocator, consider modifying it to be a *minimal allocator* in order to take advantage of the more efficient `construct()` method that will be provided for you automatically.
+The default allocator uses **`new`** and **`delete`** to allocate and deallocate memory. If you want to use a different method of memory allocation, such as using shared memory, then you must create your own allocator. If you are targeting C++11 and you need to write a new custom allocator, make it a minimal allocator if possible. Even if you have already implemented an old-style allocator, consider modifying it to be a *minimal allocator* in order to take advantage of the more efficient `construct()` method that will be provided for you automatically.
 
 A minimal allocator requires much less boilerplate and enable you to focus on the `allocate` and `deallocate` member functions which do all of the work. When creating a minimal allocator, do not implement any members except the ones shown in the example below:
 
@@ -93,26 +94,51 @@ void Mallocator<T>::deallocate(T * const p, size_t) const noexcept
 
 In C++03, any allocator used with C++ Standard Library containers must implement the following type definitions:
 
-|||
-|-|-|
-|`const_pointer`|`rebind`|
-|`const_reference`|`reference`|
-|`difference_type`|`size_type`|
-|`pointer`|`value_type`|
+:::row:::
+   :::column:::
+      `const_pointer`\
+      `const_reference`
+   :::column-end:::
+   :::column:::
+      `difference_type`\
+      `pointer`
+   :::column-end:::
+   :::column:::
+      `rebind`\
+      `reference`
+   :::column-end:::
+   :::column:::
+      `size_type`\
+      `value_type`
+   :::column-end:::
+:::row-end:::
 
 In addition, any allocator used with C++ Standard Library containers must implement the following methods:
 
-|||
-|-|-|
-|Constructor|`deallocate`|
-|Copy constructor|`destroy`|
-|Destructor|`max_size`|
-|`address`|`operator==`|
-|`allocate`|`operator!=`|
-|`construct`||
+:::row:::
+   :::column:::
+      Constructor\
+      Copy constructor\
+      Destructor
+   :::column-end:::
+   :::column:::
+      `address`\
+      `allocate`\
+      `construct`
+   :::column-end:::
+   :::column:::
+      `deallocate`\
+      `destroy`\
+      `max_size`
+   :::column-end:::
+   :::column:::
+      `operator!=`\
+      `operator==`
+   :::column-end:::
+:::row-end:::
 
-For more information on these type definitions and methods, see [allocator Class](../standard-library/allocator-class.md).
+For more information on these type definitions and methods, see [allocator Class](allocator-class.md).
 
 ## See also
 
-[C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)
+[C++ Standard Library Reference](cpp-standard-library-reference.md)

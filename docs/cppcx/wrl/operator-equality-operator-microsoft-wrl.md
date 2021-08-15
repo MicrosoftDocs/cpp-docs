@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: operator== Operator (Microsoft::WRL)"
 title: "operator== Operator (Microsoft::WRL)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -56,7 +57,7 @@ The right object.
 
 ## Return Value
 
-**true** if the objects are equal; otherwise, **false**.
+**`true`** if the objects are equal; otherwise, **`false`**.
 
 ## Requirements
 

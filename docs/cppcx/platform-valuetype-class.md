@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::ValueType Class"
 title: "Platform::ValueType Class"
 ms.date: "02/03/2017"
 ms.topic: "reference"
@@ -18,9 +19,9 @@ public ref class ValueType : Object
 
 ## Public methods
 
-|||
-|-|-|
-|[ValueType::ToString](#tostring)|Returns a string representation of the object. Inherited from [Platform::Object](../cppcx/platform-object-class.md).|
+| Name | Description |
+|--|--|
+| [ValueType::ToString](#tostring) | Returns a string representation of the object. Inherited from [Platform::Object](../cppcx/platform-object-class.md). |
 
 ### Remarks
 

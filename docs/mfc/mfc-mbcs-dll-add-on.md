@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC MBCS DLL Add-on"
 title: "MFC MBCS DLL Add-on"
 ms.date: "12/02/2019"
 helpviewer_keywords: ["MBCS", "MFC"]
@@ -15,4 +16,4 @@ Support for MFC and its multibyte character set (MBCS) libraries requires an add
 
 ## See also
 
-[MFC Library Versions](../mfc/mfc-library-versions.md)
+[MFC Library Versions](mfc-library-versions.md)

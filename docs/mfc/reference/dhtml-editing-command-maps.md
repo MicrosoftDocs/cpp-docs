@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: DHTML Editing Command Maps"
 title: "DHTML Editing Command Maps"
 ms.date: "11/04/2016"
 ms.assetid: c1b49876-039e-4a26-bb24-ea98ccf254a1
@@ -9,7 +10,7 @@ The following macros can be used to map DHTML editing commands in [CHtmlEditView
 
 ### DHTML Editing Command Map Macros
 
-|||
+|Name|Description|
 |-|-|
 |[DECLARE_DHTMLEDITING_CMDMAP](#declare_dhtmlediting_cmdmap)|Declares a DHTML editing command map in a class.|
 |[BEGIN_DHTMLEDITING_CMDMAP](#begin_dhtmlediting_cmdmap)|Starts the definition of a DHTML editing command map within a class.|

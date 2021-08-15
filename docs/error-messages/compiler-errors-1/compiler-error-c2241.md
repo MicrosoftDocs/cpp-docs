@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2241"
 title: "Compiler Error C2241"
 ms.date: "11/04/2016"
 f1_keywords: ["C2241"]
@@ -15,4 +16,4 @@ Code attempts to access a private or protected member.
 
 1. Change the access level of the member.
 
-1. Declare the member a `friend` of the accessing function.
+1. Declare the member a **`friend`** of the accessing function.

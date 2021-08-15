@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: tuple_element Class"
 title: "tuple_element Class"
 ms.date: "11/04/2016"
 f1_keywords: ["utility/std::tuple_element"]
@@ -78,7 +79,7 @@ The template specializations for `pair` types each provide a single member typed
 
 Use the [get Function &lt;utility&gt;](../standard-library/utility-functions.md#get) to return the element at a specified position, or of a specified type.
 
-## Example
+## Example: Get an element from a tuple
 
 ```cpp
 #include <tuple>
@@ -103,7 +104,7 @@ int main() {
 0 1.5 Tail
 ```
 
-## Example
+## Example: Get an element from an array
 
 ```cpp
 #include <array>
@@ -133,7 +134,7 @@ int main()
 0
 ```
 
-## Example
+## Example: Get an element from a pair
 
 ```cpp
 #include <utility>

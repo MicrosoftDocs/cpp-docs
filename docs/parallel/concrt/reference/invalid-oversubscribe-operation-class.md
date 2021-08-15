@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: invalid_oversubscribe_operation Class"
 title: "invalid_oversubscribe_operation Class"
 ms.date: "11/04/2016"
 f1_keywords: ["invalid_oversubscribe_operation", "CONCRT/concurrency::invalid_oversubscribe_operation", "CONCRT/concurrency::invalid_oversubscribe_operation::invalid_oversubscribe_operation"]
@@ -7,7 +8,7 @@ ms.assetid: 0a9c5f08-d5e6-4ad0-90a9-517472b3ac28
 ---
 # invalid_oversubscribe_operation Class
 
-This class describes an exception thrown when the `Context::Oversubscribe` method is called with the `_BeginOversubscription` parameter set to **false** without a prior call to the `Context::Oversubscribe` method with the `_BeginOversubscription` parameter set to **true**.
+This class describes an exception thrown when the `Context::Oversubscribe` method is called with the `_BeginOversubscription` parameter set to **`false`** without a prior call to the `Context::Oversubscribe` method with the `_BeginOversubscription` parameter set to **`true`**.
 
 ## Syntax
 

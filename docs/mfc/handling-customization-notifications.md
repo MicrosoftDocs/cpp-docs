@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Handling Customization Notifications"
 title: "Handling Customization Notifications"
 ms.date: "11/04/2016"
 f1_keywords: ["TBN_CUSTHELP", "TBN_QUERYINSERT", "TBNOTIFY", "NMHDR", "TBN_TOOLBARCHANGE", "TBN_ENDDRAG", "NM_SETFOCUS", "TBN_RESET", "NM_RETURN", "NM_ENDWAIT", "NM_STARTWAIT", "TBN_BEGINDRAG", "NM_OUTOFMEMORY", "TBN_QUERYDELETE", "NM_DBLCLK", "TBN_ENDADJUST", "NM_KILLFOCUS", "NM_RCLICK", "TBN_BEGINADJUST", "NM_CLICK"]
@@ -9,7 +10,7 @@ ms.assetid: 219ea08e-7515-4b98-85cb-47120f08c0a2
 
 A Windows toolbar common control has built-in customization features, including a system-defined customization dialog box, which allow the user to insert, delete, or rearrange toolbar buttons. The application determines whether the customization features are available and controls the extent to which the user can customize the toolbar.
 
-You can make these customization features available to the user by giving the toolbar the **CCS_ADJUSTABLE** style. The customization features allow the user to drag a button to a new position or to remove a button by dragging it off the toolbar. In addition, the user can double-click the toolbar to display the **Customize Toolbar** dialog box, which allows the user to add, delete, and rearrange toolbar buttons. The application can display the dialog box by using the [Customize](../mfc/reference/ctoolbarctrl-class.md#customize) member function.
+You can make these customization features available to the user by giving the toolbar the **CCS_ADJUSTABLE** style. The customization features allow the user to drag a button to a new position or to remove a button by dragging it off the toolbar. In addition, the user can double-click the toolbar to display the **Customize Toolbar** dialog box, which allows the user to add, delete, and rearrange toolbar buttons. The application can display the dialog box by using the [Customize](reference/ctoolbarctrl-class.md#customize) member function.
 
 The toolbar control sends notification messages to the parent window at each step in the customization process. If the user holds the SHIFT key down and begins dragging a button, the toolbar automatically handles the drag operation. The toolbar sends the **TBN_QUERYDELETE** notification message to the parent window to determine whether the button may be deleted. The drag operation ends if the parent window returns **FALSE**. Otherwise, the toolbar captures mouse input and waits for the user to release the mouse button.
 
@@ -65,7 +66,7 @@ typedef struct tagNMHDR {
 
 - **hwndFrom**
 
-   Window handle of the control that is sending the notification. To convert this handle to a `CWnd` pointer, use [CWnd::FromHandle](../mfc/reference/cwnd-class.md#fromhandle).
+   Window handle of the control that is sending the notification. To convert this handle to a `CWnd` pointer, use [CWnd::FromHandle](reference/cwnd-class.md#fromhandle).
 
 - **idFrom**
 
@@ -167,5 +168,5 @@ The notifications the toolbar sends are as follows:
 
 ## See also
 
-[Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)<br/>
-[Controls](../mfc/controls-mfc.md)
+[Using CToolBarCtrl](using-ctoolbarctrl.md)<br/>
+[Controls](controls-mfc.md)

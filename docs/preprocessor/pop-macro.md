@@ -1,21 +1,22 @@
 ---
+description: "Learn more about the pop_macro pragma directive in Microsoft C/C++"
 title: "pop_macro pragma"
-ms.date: "08/29/2019"
+ms.date: 01/22/2021
 f1_keywords: ["vc-pragma.pop_macro", "pop_macro_CPP"]
-helpviewer_keywords: ["pop_macro pragma", "pragmas, pop_macro"]
-ms.assetid: 3b5489d0-69ba-4c66-b572-2748af0f12bb
+helpviewer_keywords: ["pop_macro pragma", "pragma, pop_macro"]
+no-loc: ["pragma"]
 ---
-# pop_macro pragma
+# `pop_macro` pragma
 
 Sets the value of the *macro-name* macro to the value on the top of the stack for this macro.
 
 ## Syntax
 
-> **#pragma pop_macro(** "*macro-name*" **)**
+> **`#pragma pop_macro(`** "*macro-name*" **`)`**
 
 ## Remarks
 
-A [push_macro](../preprocessor/push-macro.md) for *macro-name* must be issued before you can do a **pop_macro**.
+A [`push_macro`](../preprocessor/push-macro.md) for *macro-name* must be issued before you can do a **`pop_macro`**.
 
 ## Example
 
@@ -53,4 +54,4 @@ int main() {
 
 ## See also
 
-[Pragma directives and the __pragma keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Pragma directives and the `__pragma` and `_Pragma` keywords](./pragma-directives-and-the-pragma-keyword.md)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: subtract_with_carry_engine Class"
 title: "subtract_with_carry_engine Class"
 ms.date: "11/04/2016"
 f1_keywords: ["random/std::subtract_with_carry_engine", "random/std::subtract_with_carry_engine::default_seed", "random/std::subtract_with_carry_engine::discard", "random/std::subtract_with_carry_engine::min", "random/std::subtract_with_carry_engine::max", "random/std::subtract_with_carry_engine::seed"]
@@ -32,11 +33,14 @@ The unsigned integer result type. For possible types, see [\<random>](../standar
 
 ## Members
 
-||||
-|-|-|-|
-|`subtract_with_carry_engine::subtract_with_carry_engine`|`subtract_with_carry_engine::min`|`subtract_with_carry_engine::discard`|
-|`subtract_with_carry_engine::operator()`|`subtract_with_carry_engine::max`|`subtract_with_carry_engine::seed`|
-|`default_seed` is a member constant, defined as `19780503u`, used as the default parameter value for `subtract_with_carry_engine::seed` and the single value constructor.|||
+`subtract_with_carry_engine::subtract_with_carry_engine`
+`subtract_with_carry_engine::max`\
+`subtract_with_carry_engine::min`\
+`subtract_with_carry_engine::discard`\
+`subtract_with_carry_engine::operator()`\
+`subtract_with_carry_engine::seed`
+
+`default_seed` is a member constant, defined as `19780503u`, used as the default parameter value for `subtract_with_carry_engine::seed` and the single value constructor.
 
 For more information about engine members, see [\<random>](../standard-library/random.md).
 

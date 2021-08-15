@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CHeapPtrList Class"
 title: "CHeapPtrList Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CHeapPtrList", "ATLCOLL/ATL::CHeapPtrList", "ATLCOLL/ATL::CHeapPtrList::CHeapPtrList"]

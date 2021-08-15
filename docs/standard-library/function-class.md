@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: function Class"
 title: "function Class"
 ms.date: "11/04/2016"
 f1_keywords: ["functional/std::function", "functional/std::function::result_type", "functional/std::function::assign", "functional/std::function::swap", "functional/std::function::target", "functional/std::function::target_type", "functional/std::function::operator unspecified", "functional/std::function::operator()"]
@@ -87,19 +88,19 @@ An empty `function` object does not hold a callable object or a reference to a c
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[function](#function)|Constructs a wrapper that either is empty or stores a callable object of arbitrary type with a fixed signature.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[result_type](#result_type)|The return type of the stored callable object.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[assign](#assign)|Assigns a callable object to this function object.|
 |[swap](#swap)|Swap two callable objects.|
@@ -108,7 +109,7 @@ An empty `function` object does not hold a callable object or a reference to a c
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator unspecified](#op_unspecified)|Tests if stored callable object exists.|
 |[operator()](#op_call)|Calls a callable object.|
@@ -143,7 +144,7 @@ An allocator object.
 
 ### Remarks
 
-The member functions each replace the `callable object` held by `*this` with the callable object passed as the `operand`. Both allocate storage with the allocator object *Ax*.
+The member functions each replace the `callable object` held by **`*this`** with the callable object passed as the `operand`. Both allocate storage with the allocator object *Ax*.
 
 ## <a name="function"></a> function
 
@@ -272,7 +273,7 @@ operator unspecified();
 
 ### Remarks
 
-The operator returns a value that is convertible to **bool** with a true value only if the object is not empty. You use it to test whether the object is empty.
+The operator returns a value that is convertible to **`bool`** with a true value only if the object is not empty. You use it to test whether the object is empty.
 
 ### Example
 
@@ -325,7 +326,7 @@ The Nth call argument.
 
 ### Remarks
 
-The member function returns `INVOKE(fn, t1, t2, ..., tN, Ret)`, where `fn` is the target object stored in `*this`. You use it to call the wrapped callable object.
+The member function returns `INVOKE(fn, t1, t2, ..., tN, Ret)`, where `fn` is the target object stored in **`*this`**. You use it to call the wrapped callable object.
 
 ### Example
 
@@ -384,7 +385,7 @@ The callable object reference to wrap.
 
 ### Remarks
 
-The operators each replace the callable object held by `*this` with the callable object passed as the operand.
+The operators each replace the callable object held by **`*this`** with the callable object passed as the operand.
 
 ### Example
 
@@ -494,7 +495,7 @@ The function object to swap with.
 
 ### Remarks
 
-The member function swaps the target objects between `*this` and *right*. It does so in constant time and throws no exceptions.
+The member function swaps the target objects between **`*this`** and *right*. It does so in constant time and throws no exceptions.
 
 ### Example
 
@@ -558,7 +559,7 @@ The target callable object type to test.
 
 The type *Fty2* must be callable for the argument types `T1, T2, ..., TN` and the return type `Ret`. If `target_type() == typeid(Fty2)`, the member template function returns the address of the target object; otherwise, it returns 0.
 
-A type *Fty2* is callable for the argument types `T1, T2, ..., TN` and the return type `Ret` if, for lvalues `fn, t1, t2, ..., tN` of types `Fty2, T1, T2, ..., TN`, respectively, `INVOKE(fn, t1, t2, ..., tN)` is well-formed and, if `Ret` is not **void**, convertible to `Ret`.
+A type *Fty2* is callable for the argument types `T1, T2, ..., TN` and the return type `Ret` if, for lvalues `fn, t1, t2, ..., tN` of types `Fty2, T1, T2, ..., TN`, respectively, `INVOKE(fn, t1, t2, ..., tN)` is well-formed and, if `Ret` is not **`void`**, convertible to `Ret`.
 
 ### Example
 
@@ -609,7 +610,7 @@ const std::type_info& target_type() const;
 
 ### Remarks
 
-The member function returns `typeid(void)` if `*this` is empty, otherwise it returns `typeid(T)`, where `T` is the type of the target object.
+The member function returns `typeid(void)` if **`*this`** is empty, otherwise it returns `typeid(T)`, where `T` is the type of the target object.
 
 ### Example
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2150"
 title: "Compiler Error C2150"
 ms.date: "11/04/2016"
 f1_keywords: ["C2150"]
@@ -9,7 +10,7 @@ ms.assetid: 21e82a10-c1d4-4c0d-9dc6-c5d92ea42a31
 
 > '*identifier*' : bit field must have type 'int', 'signed int', or 'unsigned int'
 
-The base type for a bit-field is required to be `int`, `signed int`, or `unsigned int`.
+The base type for a bit-field is required to be **`int`**, **`signed int`**, or **`unsigned int`**.
 
 ## Example
 

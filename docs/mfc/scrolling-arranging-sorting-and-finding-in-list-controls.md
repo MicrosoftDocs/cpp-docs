@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Scrolling, Arranging, Sorting, and Finding in List Controls"
 title: "Scrolling, Arranging, Sorting, and Finding in List Controls"
 ms.date: "06/03/2019"
 helpviewer_keywords: ["image lists [MFC], sorting", "image lists [MFC], arranging", "image lists [MFC], scrolling", "CListCtrl class [MFC], finding items in", "image lists [MFC], finding items", "CListCtrl class [MFC], scrolling", "CListCtrl class [MFC], sorting", "CListCtrl class [MFC], arranging the list"]

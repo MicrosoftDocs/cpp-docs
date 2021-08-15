@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Tips for Improving Time-Critical Code"
 title: "Tips for Improving Time-Critical Code"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["_lsearch function", "qsort function", "background tasks", "standard sort routines", "clock cycle losses", "code, time-critical", "memory [C++], monitoring usage", "execution, speed improvements", "local heap performance", "optimization [C++], time-critical code", "performance [C++], time-critical code", "threading [C++], performance", "cache [C++], hits and misses", "linear search performance", "page faults", "best practices, time-critical code", "searching [C++], improving performance", "sorting data, improving performance", "threading [C++], best practices", "threading [C++], background tasks", "lists, sorting", "bsearch function", "MFC [C++], performance", "sort routines", "programs [C++], performance", "_lfind function", "heap allocation, time-critical code performance"]
@@ -74,7 +75,7 @@ There are fewer alternatives for searches than for sorting. If the search is tim
 
 The Microsoft Foundation Classes (MFC) can greatly simplify writing code. When writing time-critical code, you should be aware of the overhead inherent in some of the classes. Examine the MFC code that your time-critical code uses to see if it meets your performance requirements. The following list identifies MFC classes and functions you should be aware of:
 
-- `CString` MFC calls the C run-time library to allocate memory for a [CString](../atl-mfc-shared/reference/cstringt-class.md) dynamically. Generally speaking, `CString` is as efficient as any other dynamically-allocated string. As with any dynamically allocated string, it has the overhead of dynamic allocation and release. Often, a simple `char` array on the stack can serve the same purpose and is faster. Don't use a `CString` to store a constant string. Use `const char *` instead. Any operation you perform with a `CString` object has some overhead. Using the run-time library [string functions](../c-runtime-library/string-manipulation-crt.md) may be faster.
+- `CString` MFC calls the C run-time library to allocate memory for a [CString](../atl-mfc-shared/reference/cstringt-class.md) dynamically. Generally speaking, `CString` is as efficient as any other dynamically-allocated string. As with any dynamically allocated string, it has the overhead of dynamic allocation and release. Often, a simple **`char`** array on the stack can serve the same purpose and is faster. Don't use a `CString` to store a constant string. Use `const char *` instead. Any operation you perform with a `CString` object has some overhead. Using the run-time library [string functions](../c-runtime-library/string-manipulation-crt.md) may be faster.
 
 - `CArray` A [CArray](../mfc/reference/carray-class.md) provides flexibility that a regular array doesn't, but your program may not need that. If you know the specific limits for the array, you can use a global fixed array instead. If you use `CArray`, use `CArray::SetSize` to establish its size and specify the number of elements by which it grows when a reallocation is necessary. Otherwise, adding elements can cause your array to be frequently reallocated and copied, which is inefficient and can fragment memory. Also be aware that if you insert an item into an array, `CArray` moves subsequent items in memory and may need to grow the array. These actions can cause cache misses and page faults. If you look through the code that MFC uses, you may see that you can write something more specific to your scenario to improve performance. Since `CArray` is a template, for example, you might provide `CArray` specializations for specific types.
 
@@ -118,9 +119,9 @@ For more information, see [Idle Loop Processing](../mfc/idle-loop-processing.md)
 
 Smaller working sets mean better locality of reference, fewer page faults, and more cache hits. The process working set is the closest metric the operating system directly provides for measuring locality of reference.
 
-- To set the upper and lower limits of the working set, use [SetProcessWorkingSetSize](/windows/win32/api/winbase/nf-winbase-getprocessworkingsetsize).
+- To set the upper and lower limits of the working set, use [`SetProcessWorkingSetSize`](/windows/win32/api/memoryapi/nf-memoryapi-setprocessworkingsetsize).
 
-- To get the upper and lower limits of the working set, use [GetProcessWorkingSetSize](/windows/win32/api/winbase/nf-winbase-setprocessworkingsetsize).
+- To get the upper and lower limits of the working set, use [`GetProcessWorkingSetSize`](/windows/win32/api/memoryapi/nf-memoryapi-getprocessworkingsetsize).
 
 - To view the size of the working set, use Spy++.
 

@@ -1,11 +1,12 @@
 ---
+description: "Learn more about: `__super`"
 title: "__super"
 ms.date: "11/04/2016"
 f1_keywords: ["__super_cpp"]
 helpviewer_keywords: ["__super keyword [C++]"]
 ms.assetid: f0957c31-9256-405b-b402-cad182404b5f
 ---
-# __super
+# `__super`
 
 **Microsoft Specific**
 
@@ -21,9 +22,9 @@ __super::member_function();
 
 All accessible base-class methods are considered during the overload resolution phase, and the function that provides the best match is the one that is called.
 
-**__super** can only appear within the body of a member function.
+**`__super`** can only appear within the body of a member function.
 
-**__super** cannot be used with a using declaration. See [using Declaration](../cpp/using-declaration.md) for more information.
+**`__super`** cannot be used with a using declaration. See [using Declaration](../cpp/using-declaration.md) for more information.
 
 With the introduction of [attributes](../windows/attributes/attributes-alphabetical-reference.md) that inject code, your code might contain one or more base classes whose names you may not know but that contain methods that you wish to call.
 

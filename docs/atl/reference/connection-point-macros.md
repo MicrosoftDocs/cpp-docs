@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Connection Point Macros"
 title: "Connection Point Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atlcom/ATL::BEGIN_CONNECTION_POINT_MAP", "atlcom/ATL::END_CONNECTION_POINT_MAP"]
@@ -9,7 +10,7 @@ ms.assetid: cc3a6dd3-5538-45df-b027-1f34963c31e5
 
 These macros define connection point maps and entries.
 
-|||
+|Macro|Description|
 |-|-|
 |[BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map)|Marks the beginning of the connection point map entries.|
 |[CONNECTION_POINT_ENTRY](#connection_point_entry)|Enters connection points into the map.|

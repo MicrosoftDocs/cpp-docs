@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2660"
 title: "Compiler Error C2660"
 ms.date: "11/04/2016"
 f1_keywords: ["C2660"]
@@ -17,7 +18,7 @@ C2660 can occur if you accidentally call a Windows API function rather than an M
 
 - Use the scope resolution operator (`::`) to tell the compiler to seek the function name in the global name space.
 
-## Example
+## Examples
 
 The following sample generates C2660.
 
@@ -30,8 +31,6 @@ int main() {
    func( 1, 0 );   // OK
 }
 ```
-
-## Example
 
 C2660 can also occur if you attempt to directly call the Dispose method of a managed type. For more information, see [Destructors and finalizers](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers). The following sample generates C2660.
 
@@ -52,8 +51,6 @@ int main() {
    stateTimer->~Timer();   // OK
 }
 ```
-
-## Example
 
 C2660 will occur if a derived class hides a function.
 
@@ -84,8 +81,6 @@ int main() {
 }
 ```
 
-## Example
-
 C2660 can occur if you invoke an indexed property incorrectly.
 
 ```cpp
@@ -109,8 +104,6 @@ int main() {
 }
 ```
 
-## Example
-
 C2660 can occur if you invoke an indexed property incorrectly.
 
 ```cpp
@@ -131,8 +124,6 @@ int main() {
    int x2 = a[3,5];   // OK
 }
 ```
-
-## Example
 
 C2660 can occur if you define a new operator in a template class, but where the new operator creates an object whose type is other than the enclosing type.
 

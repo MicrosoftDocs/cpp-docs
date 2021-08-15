@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Platform::Collections::BackInsertIterator Class"
 title: "Platform::Collections::BackInsertIterator Class"
 ms.date: "03/27/2019"
 ms.topic: "reference"
@@ -57,7 +58,7 @@ The BackInsertIterator class implements the rules required by the [back_insert_i
 
 Initializes a new instance of the `BackInsertIterator` class.
 
-## Syntax
+### Syntax
 
 ```
 explicit BackInsertIterator(
@@ -77,7 +78,7 @@ A `BackInsertIterator` inserts elements after the last element of the object spe
 
 Appends the specified object to the end of the current sequential collection.
 
-## Syntax
+### Syntax
 
 ```
 BackInsertIterator& operator=( const T& t);
@@ -96,7 +97,7 @@ A reference to the current BackInsertIterator.
 
 Retrieves a reference to the current BackInsertIterator.
 
-## Syntax
+### Syntax
 
 ```
 BackInsertIterator& operator*();
@@ -114,7 +115,7 @@ This operator returns a reference to the current BackInsertIterator; not to any 
 
 Returns a reference to the current BackInsertIterator. The iterator is unmodified.
 
-## Syntax
+### Syntax
 
 ```
 BackInsertIterator& operator++();
@@ -128,7 +129,7 @@ A reference to the current BackInsertIterator.
 
 ### Remarks
 
-By design, the first syntax example pre-increments the current BackInsertIterator, and the second syntax post-increments the current BackInsertIterator. The `int` type in the second syntax indicates a post-increment operation, not an actual integer operand.
+By design, the first syntax example pre-increments the current BackInsertIterator, and the second syntax post-increments the current BackInsertIterator. The **`int`** type in the second syntax indicates a post-increment operation, not an actual integer operand.
 
 However, this operator does not actually modify the BackInsertIterator. Instead, this operator returns a reference to the unmodified, current iterator. This is the same behavior as [operator*](#operator-dereference).
 

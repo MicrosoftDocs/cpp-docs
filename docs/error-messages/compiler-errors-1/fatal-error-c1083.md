@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Fatal Error C1083"
 title: "Fatal Error C1083"
 ms.date: "09/01/2017"
 f1_keywords: ["C1083"]
@@ -21,7 +22,7 @@ might not find the file you intend. Most C++ Standard Library header files do no
 
 `#include <algorithm>`
 
-Certain C Runtime Library headers are located in a subdirectory of the standard include directory. For example, to include sys/types.h, you must include the sys subdirectory name in the `#include` directive:
+Certain C Runtime Library headers are located in a subdirectory of the standard include directory. For example, to include *`sys/types.h`*, you must include the *`sys`* subdirectory name in the `#include` directive:
 
 `#include <sys/types.h>`
 
@@ -37,9 +38,9 @@ If the name is enclosed by angle brackets,
 
 `#include <stdio.h>`
 
-the compiler follows a search path that is defined by the build environment, the **/I** compiler option, the **/X** compiler option, and the **INCLUDE** environment variable. For more information, including specific details about the search order used to find a file, see [#include Directive (C/C++)](../../preprocessor/hash-include-directive-c-cpp.md) and [#import Directive](../../preprocessor/hash-import-directive-cpp.md).
+the compiler follows a search path that is defined by the build environment, the **`/I`** compiler option, the **`/X`** compiler option, and the **INCLUDE** environment variable. For more information, including specific details about the search order used to find a file, see [#include Directive (C/C++)](../../preprocessor/hash-include-directive-c-cpp.md) and [#import Directive](../../preprocessor/hash-import-directive-cpp.md).
 
-If your include files are in another directory relative to your source directory, and you use a relative path in your include directives, you must use double quotes instead of angle brackets. For example, if your header file myheader.h is in a subdirectory of your project sources named headers, then this example fails to find the file and causes C1083:
+If your include files are in another directory relative to your source directory, and you use a relative path in your include directives, you must use double quotes instead of angle brackets. For example, if your header file *`myheader.h`* is in a subdirectory of your project sources named headers, then this example fails to find the file and causes C1083:
 
 `#include <headers\myheader.h>`
 
@@ -47,23 +48,23 @@ but this example works:
 
 `#include "headers\myheader.h"`
 
-Relative paths can also be used with directories on the include search path. If you add a directory to the **INCLUDE** environment variable or to your **Include Directories** path in Visual Studio, do not also add part of the path to the include directives. For example, if your header is located at \path\example\headers\myheader.h, and you add \path\example\headers\ to your **Include Directories** path in Visual Studio, but your `#include` directive refers to the file as
+Relative paths can also be used with directories on the include search path. If you add a directory to the **INCLUDE** environment variable or to your **Include Directories** path in Visual Studio, do not also add part of the path to the include directives. For example, if your header is located at *`\path\example\headers\myheader.h`*, and you add *`\path\example\headers\`* to your **Include Directories** path in Visual Studio, but your `#include` directive refers to the file as
 
 `#include <headers\myheader.h>`
 
-then the file is not found. Use the correct path relative to the directory specified in the include search path. In this example, you could change the include search path to \path\example\, or remove the headers\ path segment from the `#include` directive.
+then the file is not found. Use the correct path relative to the directory specified in the include search path. In this example, you could change the include search path to *`\path\example\`*, or remove the *`headers\`* path segment from the `#include` directive.
 
-## Third-party library issues and Vcpkg
+## Third-party library issues and vcpkg
 
-If you see this error when you are trying to configure a third-party library as part of your build, consider using [Vcpkg](../../vcpkg.md), the Visual C++ Package Manager, to install and build the library. Vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports), and sets all the configuration properties and dependencies required for successful builds as part of your project. For more information, see the related [Visual C++ Blog](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) post.
+If you see this error when you are trying to configure a third-party library as part of your build, consider using [vcpkg](https://vcpkg.io/), a C++ package manager, to install and build the library. vcpkg supports a large and growing [list of third-party libraries](https://github.com/Microsoft/vcpkg/tree/master/ports), and sets all the configuration properties and dependencies required for successful builds as part of your project.
 
 ## The file is in your project, but not the include search path
 
-Even when header files are listed in **Solution Explorer** as part of a project, the files are only found by the compiler when they are referred to by an `#include` or `#import` directive in a source file, and are located in an include search path. Different kinds of builds might use different search paths. The **/X** compiler option can be used to exclude directories from the include search path. This enables different builds to use different include files that have the same name, but are kept in different directories. This is an alternative to conditional compilation by using preprocessor commands. For more information about the **/X** compiler option, see [/X (Ignore Standard Include Paths)](../../build/reference/x-ignore-standard-include-paths.md).
+Even when header files are listed in **Solution Explorer** as part of a project, the files are only found by the compiler when they are referred to by an `#include` or `#import` directive in a source file, and are located in an include search path. Different kinds of builds might use different search paths. The **`/X`** compiler option can be used to exclude directories from the include search path. This enables different builds to use different include files that have the same name, but are kept in different directories. This is an alternative to conditional compilation by using preprocessor commands. For more information about the **`/X`** compiler option, see [`/X` (Ignore Standard Include Paths)](../../build/reference/x-ignore-standard-include-paths.md).
 
-To fix this issue, correct the path that the compiler uses to search for the included or imported file. A new project uses default include search paths. You may have to modify the include search path to add a directory for your project. If you are compiling on the command line, add the path to the **INCLUDE** environment variable or the **/I** compiler option to specify the path to the file.
+To fix this issue, correct the path that the compiler uses to search for the included or imported file. A new project uses default include search paths. You may have to modify the include search path to add a directory for your project. If you are compiling on the command line, add the path to the **INCLUDE** environment variable or the **`/I`** compiler option to specify the path to the file.
 
-To set the include directory path in Visual Studio, open the project’s **Property Pages** dialog box. Select **VC++ Directories** under **Configuration Properties** in the left pane, and then edit the **Include Directories** property. For more information about the per-user and per-project directories searched by the compiler in Visual Studio, see [VC++ Directories Property Page](../../build/reference/vcpp-directories-property-page.md). For more information about the **/I** compiler option, see [/I (Additional Include Directories)](../../build/reference/i-additional-include-directories.md).
+To set the include directory path in Visual Studio, open the project’s **Property Pages** dialog box. Select **VC++ Directories** under **Configuration Properties** in the left pane, and then edit the **Include Directories** property. For more information about the per-user and per-project directories searched by the compiler in Visual Studio, see [VC++ Directories Property Page](../../build/reference/vcpp-directories-property-page.md). For more information about the **`/I`** compiler option, see [`/I` (Additional Include Directories)](../../build/reference/i-additional-include-directories.md).
 
 ## The command line INCLUDE or LIB environment is not set
 
@@ -79,15 +80,15 @@ A C1083 error can also indicate that the wrong version of a file is included. Fo
 
 ## The precompiled headers are not yet precompiled
 
-When a project is configured to use precompiled headers, the relevant .pch files have to be created so that files that use the header contents can be compiled. For example, the *pch.cpp* file (*stdafx.cpp* in Visual Studio 2017 and earlier) is automatically created in the project directory for new projects. Compile that file first to create the precompiled header files. In the typical build process design, this is done automatically. For more information, see [Creating Precompiled Header Files](../../build/creating-precompiled-header-files.md).
+When a project is configured to use precompiled headers, the relevant *`.pch`* files have to be created so that files that use the header contents can be compiled. For example, the *`pch.cpp`* file (*`stdafx.cpp`* in Visual Studio 2017 and earlier) is automatically created in the project directory for new projects. Compile that file first to create the precompiled header files. In the typical build process design, this is done automatically. For more information, see [Creating Precompiled Header Files](../../build/creating-precompiled-header-files.md).
 
 ## Additional causes
 
 - You have installed an SDK or third-party library, but you have not opened a new developer command prompt window after the SDK or library is installed. If the SDK or library adds files to the **INCLUDE** path, you may need to open a new developer command prompt window to pick up these environment variable changes.
 
-- The file uses managed code, but the compiler option **/clr** is not specified. For more information, see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).
+- The file uses managed code, but the compiler option **`/clr`** is not specified. For more information, see [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).
 
-- The file is compiled by using a different **/analyze** compiler option setting than is used to precompile the headers. When the headers for a project are precompiled, all should use the same **/analyze** settings. For more information, see [/analyze (Code Analysis)](../../build/reference/analyze-code-analysis.md).
+- The file is compiled by using a different **`/analyze`** compiler option setting than is used to precompile the headers. When the headers for a project are precompiled, all should use the same **`/analyze`** settings. For more information, see [`/analyze` (Code Analysis)](../../build/reference/analyze-code-analysis.md).
 
 - The file or directory was created by the Windows Subsystem for Linux, per-directory case sensitivity is enabled, and the specified case of a path or file does not match the case of the path or file on disk.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Example: Implementing a Property Page"
 title: "Implementing a Property Page (ATL)"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["property pages, implementing"]
@@ -6,13 +7,13 @@ ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
 ---
 # Example: Implementing a Property Page
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The ATL Property Page wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 This example shows how to build a property page that displays (and allows you to change) properties of the [Document Classes](../mfc/document-classes.md) interface.
 
@@ -59,7 +60,7 @@ Click **OK** to have the wizard generate your property page.
 
 Now that your property page has been generated, you'll need to add a few controls to the dialog resource representing your page. Add an edit box, a static text control, and a check box and set their IDs as shown below:
 
-![Editing a dialog resource](../atl/media/ppgresourcelabeled.gif "Editing a dialog resource")
+![Screenshot of a dialog resource in the visual editor.](../atl/media/ppgresourcelabeled.gif "Editing a dialog resource")
 
 These controls will be used to display the file name of the document and its read-only status.
 
@@ -83,7 +84,7 @@ Now add a couple of `#import` statements to DocProperties.h so that the compiler
 
 [!code-cpp[NVC_ATL_Windowing#74](../atl/codesnippet/cpp/example-implementing-a-property-page_2.h)]
 
-You'll also need to refer to the `IPropertyPageImpl` base class; add the following **typedef** to the `CDocProperties` class:
+You'll also need to refer to the `IPropertyPageImpl` base class; add the following **`typedef`** to the `CDocProperties` class:
 
 [!code-cpp[NVC_ATL_Windowing#75](../atl/codesnippet/cpp/example-implementing-a-property-page_3.h)]
 
@@ -126,7 +127,7 @@ When users want to apply their changes to the objects, the property page site wi
 
 To display this page, you need to create a simple helper object. The helper object will provide a method that simplifies the `OleCreatePropertyFrame` API for displaying a single page connected to a single object. This helper will be designed so that it can be used from Visual Basic.
 
-Use the [Add Class dialog box](../ide/add-class-dialog-box.md) and the [ATL Simple Object Wizard](../atl/reference/atl-simple-object-wizard.md) to generate a new class and use `Helper` as its short name. Once created, add a method as shown in the table below.
+Use the [Add Class dialog box](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) and the [ATL Simple Object Wizard](../atl/reference/atl-simple-object-wizard.md) to generate a new class and use `Helper` as its short name. Once created, add a method as shown in the table below.
 
 |Item|Value|
 |----------|-----------|

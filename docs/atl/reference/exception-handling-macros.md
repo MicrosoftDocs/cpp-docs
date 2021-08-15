@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exception Handling Macros"
 title: "Exception Handling Macros"
 ms.date: "11/04/2016"
 f1_keywords: ["atldef/ATL::_ATLCATCH", "atldef/ATL::_ATLCATCHALL", "atldef/ATL::_ATLTRY"]
@@ -9,7 +10,7 @@ ms.assetid: a8385d34-3fb0-4006-a42a-de045cacf0f4
 
 These macros provide support for exception handling.
 
-|||
+|Name|Description|
 |-|-|
 |[_ATLCATCH](#_atlcatch)|Statement(s) to handle errors occurring in the associated `_ATLTRY`.|
 |[_ATLCATCHALL](#_atlcatchall)|Statement(s) to handle errors occurring in the associated `_ATLTRY`.|

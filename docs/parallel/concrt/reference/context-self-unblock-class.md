@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: context_self_unblock Class"
 title: "context_self_unblock Class"
 ms.date: "11/04/2016"
 f1_keywords: ["context_self_unblock", "CONCRT/concurrency::context_self_unblock", "CONCRT/concurrency::context_self_unblock::context_self_unblock"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDateTimeCtrl Class"
 title: "CDateTimeCtrl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CDateTimeCtrl", "AFXDTCTL/CDateTimeCtrl", "AFXDTCTL/CDateTimeCtrl::CDateTimeCtrl", "AFXDTCTL/CDateTimeCtrl::CloseMonthCal", "AFXDTCTL/CDateTimeCtrl::Create", "AFXDTCTL/CDateTimeCtrl::GetDateTimePickerInfo", "AFXDTCTL/CDateTimeCtrl::GetIdealSize", "AFXDTCTL/CDateTimeCtrl::GetMonthCalColor", "AFXDTCTL/CDateTimeCtrl::GetMonthCalCtrl", "AFXDTCTL/CDateTimeCtrl::GetMonthCalFont", "AFXDTCTL/CDateTimeCtrl::GetMonthCalStyle", "AFXDTCTL/CDateTimeCtrl::GetRange", "AFXDTCTL/CDateTimeCtrl::GetTime", "AFXDTCTL/CDateTimeCtrl::SetFormat", "AFXDTCTL/CDateTimeCtrl::SetMonthCalColor", "AFXDTCTL/CDateTimeCtrl::SetMonthCalFont", "AFXDTCTL/CDateTimeCtrl::SetMonthCalStyle", "AFXDTCTL/CDateTimeCtrl::SetRange", "AFXDTCTL/CDateTimeCtrl::SetTime"]
@@ -88,13 +89,11 @@ This method sends the [DTM_CLOSEMONTHCAL](/windows/win32/Controls/dtm-closemonth
 
 ### Example
 
-The following code example defines the variable, *m_dateTimeCtrl*, that is used to programmatically access the date and time picker control. This variable is used in the next example.
+The first code example defines the variable, `m_dateTimeCtrl`, that is used to programmatically access the date and time picker control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
-### Example
-
-The following code example closes the drop-down calendar for the current date and time picker control.
+The next code example closes the drop-down calendar for the current date and time picker control.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#5](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_2.cpp)]
 
@@ -152,9 +151,8 @@ BOOL GetDateTimePickerInfo(LPDATETIMEPICKERINFO pDateTimePickerInfo) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pDateTimePickerInfo*|[out] A pointer to a [DATETIMEPICKERINFO](/windows/win32/api/commctrl/ns-commctrl-datetimepickerinfo) structure that receives a description of the current date and time picker control.<br /><br /> The caller is responsible for allocating this structure. However, this method initializes the *cbSize* member of the structure.|
+*pDateTimePickerInfo*\
+[out] A pointer to a [DATETIMEPICKERINFO](/windows/win32/api/commctrl/ns-commctrl-datetimepickerinfo) structure that receives a description of the current date and time picker control. The caller is responsible for allocating this structure. However, this method initializes the *cbSize* member of the structure.
 
 ### Return Value
 
@@ -166,13 +164,11 @@ This method sends the [DTM_GETDATETIMEPICKERINFO](/windows/win32/Controls/dtm-ge
 
 ### Example
 
-The following code example defines the variable, *m_dateTimeCtrl*, that is used to programmatically access the date and time picker control. This variable is used in the next example.
+The first code example defines the variable, `m_dateTimeCtrl`, that is used to programmatically access the date and time picker control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
-### Example
-
-The following code example indicates whether it successfully retrieves information about the current date and time picker control.
+The next code example indicates whether it successfully retrieves information about the current date and time picker control.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#4](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_4.cpp)]
 
@@ -187,7 +183,7 @@ COLORREF GetMonthCalColor(int iColor) const;
 ### Parameters
 
 *iColor*<br/>
-An **int** value specifying which color area of the month calendar to retrieve. For a list of values, see the *iColor* parameter for [SetMonthCalColor](#setmonthcalcolor).
+An **`int`** value specifying which color area of the month calendar to retrieve. For a list of values, see the *iColor* parameter for [SetMonthCalColor](#setmonthcalcolor).
 
 ### Return Value
 
@@ -337,9 +333,8 @@ BOOL GetIdealSize(LPSIZE psize) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*psize*|[out] Pointer to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure that contains the ideal size for the control.|
+*psize*\
+[out] Pointer to a [SIZE](/windows/win32/api/windef/ns-windef-size) structure that contains the ideal size for the control.
 
 ### Return Value
 
@@ -351,13 +346,11 @@ This method sends the [DTM_GETIDEALSIZE](/windows/win32/Controls/dtm-getidealsiz
 
 ### Example
 
-The following code example defines the variable, *m_dateTimeCtrl*, that is used to programmatically access the date and time picker control. This variable is used in the next example.
+The first code example defines the variable, `m_dateTimeCtrl`, that is used to programmatically access the date and time picker control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
-### Example
-
-The following code example retrieves the ideal size to display the date and time picker control.
+The next code example retrieves the ideal size to display the date and time picker control.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_9.cpp)]
 
@@ -402,7 +395,7 @@ COLORREF SetMonthCalColor(
 ### Parameters
 
 *iColor*<br/>
-**int** value specifying which area of the month calendar control to set. This value can be one of the following.
+**`int`** value specifying which area of the month calendar control to set. This value can be one of the following.
 
 |Value|Meaning|
 |-----------|-------------|
@@ -467,9 +460,8 @@ DWORD SetMonthCalStyle(DWORD dwStyle);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*dwStyle*|[in] A new month calendar control style, which is a bitwise combination (OR) of month calendar control styles. For more information, see [Month Calendar Control Styles](/windows/win32/Controls/month-calendar-control-styles).|
+*dwStyle*\
+[in] A new month calendar control style, which is a bitwise combination (OR) of month calendar control styles. For more information, see [Month Calendar Control Styles](/windows/win32/Controls/month-calendar-control-styles).
 
 ### Return Value
 
@@ -481,13 +473,11 @@ This method sends the [DTM_SETMCSTYLE](/windows/win32/Controls/dtm-setmcstyle) m
 
 ### Example
 
-The following code example defines the variable, *m_dateTimeCtrl*, that is used to programmatically access the date and time picker control. This variable is used in the next example.
+The first code example defines the variable, `m_dateTimeCtrl`, that is used to programmatically access the date and time picker control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
-### Example
-
-The following code example sets the date and time picker control to display week numbers, abbreviated names of days of the week, and no today indicator.
+The next code example sets the date and time picker control to display week numbers, abbreviated names of days of the week, and no today indicator.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_12.cpp)]
 

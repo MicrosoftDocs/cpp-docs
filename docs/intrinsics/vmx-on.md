@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: __vmx_on"
 title: "__vmx_on"
 ms.date: "09/02/2019"
 f1_keywords: ["__vmx_on"]

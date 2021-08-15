@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Inline Files in a Makefile"
 title: "Inline Files in a Makefile"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["inline files [C++], in makefiles", "inline files [C++]", "NMAKE program, inline files", "makefiles, inline files", "files [C++], inline"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3755"
 title: "Compiler Error C3755"
 ms.date: "11/04/2016"
 f1_keywords: ["C3755"]
@@ -11,7 +12,7 @@ ms.assetid: 9317b55e-a52e-4b87-b915-5a208d6eda38
 
 A [delegate  (C++ Component Extensions)](../../extensions/delegate-cpp-component-extensions.md) can be declared but not defined.
 
-## Example
+## Examples
 
 The following sample generates C3755.
 
@@ -20,8 +21,6 @@ The following sample generates C3755.
 // compile with: /clr /c
 delegate void MyDel() {};   // C3755
 ```
-
-## Example
 
 C3755 can also occur if you attempt to create a delegate template. The following sample generates C3755.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C2400 Through C2499"
 title: "Compiler errors C2400 Through C2499"
 ms.date: "04/21/2019"
 f1_keywords: ["C2416", "C2442", "C2453", "C2454", "C2455", "C2456", "C2468", "C2475", "C2478", "C2481", "C2497"]
@@ -115,4 +116,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

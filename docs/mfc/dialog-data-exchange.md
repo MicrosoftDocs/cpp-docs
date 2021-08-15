@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Dialog Data Exchange"
 title: "Dialog Data Exchange"
 ms.date: "11/19/2018"
 helpviewer_keywords: ["initializing dialog boxes", "canceling data exchange", "dialog box data, retrieving", "DDX (dialog data exchange), data exchange mechanism", "dialog boxes [MFC], initializing", "dialog boxes [MFC], retrieving user input using DDX", "dialog box data", "dialog boxes [MFC], data exchange", "CDataExchange class [MFC], using DDX", "DoDataExchange method [MFC]", "user input [MFC], retrieving from MFC dialog boxes", "capturing user input [MFC]", "transferring dialog box data", "DDX (dialog data exchange), canceling", "UpdateData method [MFC]", "retrieving dialog box data [MFC]"]
@@ -12,7 +13,7 @@ The same mechanism transfers values from the controls to the member variables wh
 
 The following figure illustrates dialog data exchange.
 
-![Dialog box data exchange](../mfc/media/vc379d1.gif "Dialog box data exchange") <br/>
+![Diagram of data model and on screen dialog box data exchange.](../mfc/media/vc379d1.gif "Dialog box data exchange") <br/>
 Dialog Data Exchange
 
 `UpdateData` works in both directions, as specified by the **BOOL** parameter passed to it. To carry out the exchange, `UpdateData` sets up a `CDataExchange` object and calls your dialog class's override of `CDialog`'s `DoDataExchange` member function. `DoDataExchange` takes an argument of type `CDataExchange`. The `CDataExchange` object passed to `UpdateData` represents the context of the exchange, defining such information as the direction of the exchange.
@@ -21,7 +22,7 @@ When you (or a Code wizard) override `DoDataExchange`, you specify a call to one
 
 MFC provides many DDX functions for different kinds of exchange. The following example shows a `DoDataExchange` override in which two DDX functions and one DDV function are called:
 
-[!code-cpp[NVC_MFCControlLadenDialog#49](../mfc/codesnippet/cpp/dialog-data-exchange_1.cpp)]
+[!code-cpp[NVC_MFCControlLadenDialog#49](codesnippet/cpp/dialog-data-exchange_1.cpp)]
 
 The `DDX_` and `DDV_` lines are a data map. The sample DDX and DDV functions shown are for a check-box control and an edit-box control, respectively.
 
@@ -29,6 +30,6 @@ If the user cancels a modal dialog box, the `OnCancel` member function terminate
 
 ## See also
 
-[Dialog Data Exchange and Validation](../mfc/dialog-data-exchange-and-validation.md)<br/>
-[Working with Dialog Boxes in MFC](../mfc/life-cycle-of-a-dialog-box.md)<br/>
-[Dialog Data Validation](../mfc/dialog-data-validation.md)
+[Dialog Data Exchange and Validation](dialog-data-exchange-and-validation.md)<br/>
+[Working with Dialog Boxes in MFC](life-cycle-of-a-dialog-box.md)<br/>
+[Dialog Data Validation](dialog-data-validation.md)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: OLE DB Templates"
 title: "OLE DB Templates"
 ms.date: "05/09/2019"
 f1_keywords: ["vc.templates.ole"]
@@ -43,7 +44,7 @@ Describes creating a simple read-only provider that reads a pair of strings.
 [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md)<br/>
 Describes creating providers that can write to the data store.
 
-[OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)<br/>
+[OLE DB Consumer Attributes](../../windows/attributes/ole-db-consumer-attributes.md)<br/>
 Discusses a simplified interface to inject code based on the OLE DB Consumer Templates to create working OLE DB consumers.
 
 [Active Template Library (ATL) Reference](../../atl/atl-com-desktop-components.md)<br/>

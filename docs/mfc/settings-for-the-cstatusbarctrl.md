@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Settings for the CStatusBarCtrl"
 title: "Settings for the CStatusBarCtrl"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["status bar controls [MFC], settings", "CStatusBarCtrl class [MFC], settings"]

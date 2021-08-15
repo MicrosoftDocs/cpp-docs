@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CWinApp: The Application Class"
 title: "CWinApp: The Application Class"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application class [MFC]", "CWinApp class [MFC], CWinThread", "MFC, WinMain and", "CWinApp class [MFC], multithreading", "CWinThread class [MFC], and CWinApp", "InitApplication method [MFC]", "WinMain method [MFC]", "WinMain method [MFC], in MFC", "CWinApp class [MFC], WinMain"]
@@ -6,7 +7,7 @@ ms.assetid: 935822bb-d463-481b-a5f6-9719d68ed1d5
 ---
 # CWinApp: The Application Class
 
-The main application class in MFC encapsulates the initialization, running, and termination of an application for the Windows operating system. An application built on the framework must have one and only one object of a class derived from [CWinApp](../mfc/reference/cwinapp-class.md). This object is constructed before windows are created.
+The main application class in MFC encapsulates the initialization, running, and termination of an application for the Windows operating system. An application built on the framework must have one and only one object of a class derived from [CWinApp](reference/cwinapp-class.md). This object is constructed before windows are created.
 
 `CWinApp` is derived from `CWinThread`, which represents the main thread of execution for your application, which might have one or more threads. In recent versions of MFC, the `InitInstance`, **Run**, `ExitInstance`, and `OnIdle` member functions are actually in class `CWinThread`. These functions are discussed here as if they were `CWinApp` members instead, because the discussion concerns the object's role as application object rather than as primary thread.
 
@@ -22,7 +23,7 @@ To initialize the application, `WinMain` calls your application object's `InitAp
 
 ## See also
 
-[General MFC Topics](../mfc/general-mfc-topics.md)<br/>
-[CWinApp and the MFC Application Wizard](../mfc/cwinapp-and-the-mfc-application-wizard.md)<br/>
-[Overridable CWinApp Member Functions](../mfc/overridable-cwinapp-member-functions.md)<br/>
-[Special CWinApp Services](../mfc/special-cwinapp-services.md)
+[General MFC Topics](general-mfc-topics.md)<br/>
+[CWinApp and the MFC Application Wizard](cwinapp-and-the-mfc-application-wizard.md)<br/>
+[Overridable CWinApp Member Functions](overridable-cwinapp-member-functions.md)<br/>
+[Special CWinApp Services](special-cwinapp-services.md)

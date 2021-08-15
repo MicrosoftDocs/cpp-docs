@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Declare Override Specifiers in Native Compilations (C++/CLI)"
 title: "How to: Declare Override Specifiers (C++/CLI)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["override specifiers in native compilation, overriding"]
@@ -9,13 +10,13 @@ ms.assetid: d0551836-9ac7-41eb-a6e9-a4b3ef60767d
 [sealed](../extensions/sealed-cpp-component-extensions.md), [abstract](../extensions/abstract-cpp-component-extensions.md), and [override](../extensions/override-cpp-component-extensions.md) are available in compilations that do not use **/ZW** or [/clr](../build/reference/clr-common-language-runtime-compilation.md).
 
 > [!NOTE]
-> The ISO C++11 Standard language has the [override](../cpp/override-specifier.md) identifier and the [final](../cpp/final-specifier.md) identifier, and both are supported in Visual Studio  Use `final` instead of `sealed` in code that is meant to be compiled as native-only.
+> The ISO C++11 Standard language has the [override](../cpp/override-specifier.md) identifier and the [final](../cpp/final-specifier.md) identifier, and both are supported in Visual Studio  Use `final` instead of **`sealed`** in code that is meant to be compiled as native-only.
 
-## Example
+## Example: sealed is valid
 
 ### Description
 
-The following example shows that `sealed` is valid in native compilations.
+The following example shows that **`sealed`** is valid in native compilations.
 
 ### Code
 
@@ -40,7 +41,7 @@ public:
 };
 ```
 
-## Example
+## Example: override is valid
 
 ### Description
 
@@ -62,11 +63,11 @@ public:
 };
 ```
 
-## Example
+## Example: abstract is valid
 
 ### Description
 
-This example shows that `abstract` is valid in native compilations.
+This example shows that **`abstract`** is valid in native compilations.
 
 ### Code
 

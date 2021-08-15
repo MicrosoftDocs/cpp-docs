@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: fgetc, fgetwc"
 title: "fgetc, fgetwc"
 ms.date: "4/2/2020"
 api_name: ["fgetwc", "fgetc", "_o_fgetc", "_o_fgetwc"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_fgettc", "fgetwc", "fgetc"]
@@ -31,7 +32,7 @@ Pointer to **FILE** structure.
 
 ## Return Value
 
-**fgetc** returns the character read as an **int** or returns **EOF** to indicate an error or end of file. **fgetwc** returns, as a [wint_t](../../c-runtime-library/standard-types.md), the wide character that corresponds to the character read or returns **WEOF** to indicate an error or end of file. For both functions, use **feof** or **ferror** to distinguish between an error and an end-of-file condition. If a read error occurs, the error indicator for the stream is set. If *stream* is **NULL**, **fgetc** and **fgetwc** invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EOF**.
+**fgetc** returns the character read as an **`int`** or returns **EOF** to indicate an error or end of file. **fgetwc** returns, as a [wint_t](../../c-runtime-library/standard-types.md), the wide character that corresponds to the character read or returns **WEOF** to indicate an error or end of file. For both functions, use **feof** or **ferror** to distinguish between an error and an end-of-file condition. If a read error occurs, the error indicator for the stream is set. If *stream* is **NULL**, **fgetc** and **fgetwc** invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set **errno** to **EINVAL** and return **EOF**.
 
 ## Remarks
 

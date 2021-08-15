@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: SUBSTR"
 title: "SUBSTR"
 ms.date: "12/16/2019"
 f1_keywords: ["substr"]

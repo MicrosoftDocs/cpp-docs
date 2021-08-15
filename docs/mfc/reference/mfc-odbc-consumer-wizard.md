@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MFC ODBC Consumer Wizard"
 title: "MFC ODBC Consumer Wizard"
 ms.date: "08/29/2019"
 helpviewer_keywords: ["wizards [MFC]"]
@@ -6,13 +7,13 @@ ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
 ---
 # MFC ODBC Consumer Wizard
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 This wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 This wizard sets up an ODBC recordset class and the data bindings necessary to access the specified data source.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: What a Stream Is"
 title: "What a Stream Is"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["reading data [C++], iostream programming", "data [C++], reading", "streams [C++], in iostream classes", "streams [C++]"]

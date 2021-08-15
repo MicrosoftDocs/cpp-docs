@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: islower, iswlower, _islower_l, _iswlower_l"
 title: "islower, iswlower, _islower_l, _iswlower_l"
 ms.date: "4/2/2020"
 api_name: ["iswlower", "_islower_l", "islower", "_iswlower_l", "_o_islower", "_o_iswlower"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_istlower", "islower", "_ismbclower_l", "_liswlower_l", "_istlower_l", "_iswlower_l", "_islower _l", "_islower_l", "iswlower"]

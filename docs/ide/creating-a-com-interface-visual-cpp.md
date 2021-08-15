@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Create a COM interface"
 title: "Create a COM interface"
 ms.date: "05/14/2019"
 helpviewer_keywords: ["COM interfaces, creating", "methods [C++], adding to COM interfaces", "COM interfaces, editing", "properties [C++], adding to COM interfaces"]
@@ -26,14 +27,14 @@ You can use these wizards to do the following three common tasks:
 
   This wizard generates IDL source and a COM map in the project classes.
 
-Once you've an ATL project open, the [Add Class](../ide/add-class-dialog-box.md) dialog box gives you the choice of additional wizards and templates to add COM interfaces to your project. The following wizards allow you to establish one or more interfaces for the object:
+Once you've an ATL project open, the [Add Class](./adding-a-class-visual-cpp.md#add-class-dialog-box) dialog box gives you the choice of additional wizards and templates to add COM interfaces to your project. The following wizards allow you to establish one or more interfaces for the object:
 
 - [ATL COM+ 1.0 component wizard](../atl/reference/atl-com-plus-1-0-component-wizard.md)
 - [ATL simple object wizard](../atl/reference/atl-simple-object-wizard.md)
 - [ATL active server page component wizard](../atl/reference/atl-active-server-page-component-wizard.md)
 - [ATL control wizard](../atl/reference/atl-control-wizard.md)
 
-Additionally, you can implement new interfaces on your COM control. Just right-click the object's control class in Class View and choose [Implement Interface](../ide/implement-interface-wizard.md).
+Additionally, you can implement new interfaces on your COM control. Just right-click the object's control class in Class View and choose [Implement Interface](./implementing-an-interface-visual-cpp.md#implement-interface-wizard).
 
 > [!NOTE]
 > Visual Studio doesn't provide a wizard to add an interface to a project. You can add an interface to an ATL project or to an [Add ATL support to your MFC project](../mfc/reference/adding-atl-support-to-your-mfc-project.md) by adding a simple object using the [ATL simple object wizard](../atl/reference/atl-simple-object-wizard.md). Alternately, open the project's .idl file and create the interface by typing:
@@ -72,7 +73,7 @@ The following three wizards help you customize existing interfaces. They're avai
 
 |Wizard|Project type|
 |------------|------------------|
-|[Add property wizard](../ide/names-add-property-wizard.md)|ATL or MFC projects supporting ATL. Right-click the interface to which you want to add the property.<br /><br />Visual C++ detects the project type and modifies the options in the Add Property Wizard as necessary:<br /><br />- For dispinterfaces in projects created by using the [MFC application wizard](../mfc/reference/mfc-application-wizard.md), invoking the Add Property Wizard provides options specific to MFC.<br />- For MFC ActiveX control interfaces, the Add Property Wizard provides a list of stock methods and properties that you can use as provided or customize for your control.<br />- For all other interfaces, the Add Property Wizards provide options useful in most situations.|
-|[Add method wizard](../ide/add-method-wizard.md)|ATL or MFC projects supporting ATL. Right-click the interface to which you want to add the method.<br /><br />Visual C++ detects the project type and modifies the options in the Add Method Wizard as necessary:<br /><br />- For dispinterfaces in projects created by using the [MFC application wizard](../mfc/reference/mfc-application-wizard.md), using the Add Method Wizard provides options specific to MFC.<br />- For MFC ActiveX control interfaces, the Add Method Wizard provides a list of stock methods and properties that you can use as provided or customize for your control.<br />- For all other interfaces, the **Add Method** wizards provide options useful in most situations.|
+|[Add property wizard](./adding-a-property-visual-cpp.md#names-add-property-wizard)|ATL or MFC projects supporting ATL. Right-click the interface to which you want to add the property.<br /><br />Visual C++ detects the project type and modifies the options in the Add Property Wizard as necessary:<br /><br />- For dispinterfaces in projects created by using the [MFC application wizard](../mfc/reference/mfc-application-wizard.md), invoking the Add Property Wizard provides options specific to MFC.<br />- For MFC ActiveX control interfaces, the Add Property Wizard provides a list of stock methods and properties that you can use as provided or customize for your control.<br />- For all other interfaces, the Add Property Wizards provide options useful in most situations.|
+|[Add method wizard](./adding-a-method-visual-cpp.md#add-method-wizard)|ATL or MFC projects supporting ATL. Right-click the interface to which you want to add the method.<br /><br />Visual C++ detects the project type and modifies the options in the Add Method Wizard as necessary:<br /><br />- For dispinterfaces in projects created by using the [MFC application wizard](../mfc/reference/mfc-application-wizard.md), using the Add Method Wizard provides options specific to MFC.<br />- For MFC ActiveX control interfaces, the Add Method Wizard provides a list of stock methods and properties that you can use as provided or customize for your control.<br />- For all other interfaces, the **Add Method** wizards provide options useful in most situations.|
 
-Additionally, you can implement new interfaces on your COM control. Just right-click the object's control class in Class View and choose [Implement Interface](../ide/implement-interface-wizard.md).
+Additionally, you can implement new interfaces on your COM control. Just right-click the object's control class in Class View and choose [Implement Interface](./implementing-an-interface-visual-cpp.md#implement-interface-wizard).

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: adopt_d3d_access_lock_t Structure"
 title: "adopt_d3d_access_lock_t Structure"
 ms.date: "11/04/2016"
 f1_keywords: ["amprt/concurrency::direct3d::adopt_d3d_access_lock_t"]

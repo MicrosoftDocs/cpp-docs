@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Linker Tools Error LNK2022"
 title: "Linker Tools Error LNK2022"
 ms.date: "11/04/2016"
 f1_keywords: ["LNK2022"]
@@ -19,7 +20,7 @@ Another possible cause for LNK2022 is when the linker finds a metadata file in a
 
 When building an ATL application, the use of the macro `_ATL_MIXED` is required in all compilands, if it is used in at least one.
 
-## Example
+## Examples
 
 The following sample defines an empty type.
 
@@ -28,8 +29,6 @@ The following sample defines an empty type.
 // compile with: /clr /c
 public ref class Test {};
 ```
-
-## Example
 
 This sample shows that you cannot link two source code files that contain types of the same name but different definitions.
 

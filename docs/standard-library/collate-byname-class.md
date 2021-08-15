@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: collate_byname Class"
 title: "collate_byname Class"
 ms.date: "11/04/2016"
 f1_keywords: ["locale/std::collate_byname"]

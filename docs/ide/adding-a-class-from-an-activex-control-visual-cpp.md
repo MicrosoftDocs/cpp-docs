@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add a class from an ActiveX control"
 title: "Add a class from an ActiveX control"
 ms.date: "11/08/2018"
 f1_keywords: ["vc.codewiz.class.axcontrol"]
@@ -23,7 +24,7 @@ An ActiveX control is a reusable software component based on the Component Objec
 
 1. From the shortcut menu, choose **Add**, and then choose **Add Class**.
 
-1. In the [Add Class](../ide/add-class-dialog-box.md) dialog box, in the **Templates** pane, choose **MFC Class from ActiveX Control**, and then choose **Open** to display the [add class from ActiveX control wizard](#add-class-from-activex-control-wizard).
+1. In the [Add Class](./adding-a-class-visual-cpp.md#add-class-dialog-box) dialog box, in the **Templates** pane, choose **MFC Class from ActiveX Control**, and then choose **Open** to display the [add class from ActiveX control wizard](#add-class-from-activex-control-wizard).
 
 In the wizard, you can add more than one interface in an ActiveX control. You can also create classes from more than one ActiveX control in a single wizard session.
 

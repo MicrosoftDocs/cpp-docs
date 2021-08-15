@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ref class and ref struct  (C++/CLI and C++/CX)"
 title: "ref class and ref struct (C++/CLI and C++/CX)"
 ms.date: "05/30/2019"
 ms.topic: "reference"
@@ -15,19 +16,16 @@ The **ref class** or **ref struct** extensions declare a class or struct whose *
 ### Syntax
 
 ```cpp
-      class_access
-      ref class
-      name
-      modifier :  inherit_accessbase_type {};
-class_accessref structnamemodifier :  inherit_accessbase_type {};
-class_accessvalue classnamemodifier :  inherit_accessbase_type {};
-class_accessvalue structnamemodifier :  inherit_accessbase_type {};
+class_access ref class name modifier : inherit_access base_type {};
+class_access ref struct name modifier : inherit_access base_type {};
+class_access value class name modifier : inherit_access base_type {};
+class_access value struct name modifier : inherit_access base_type {};
 ```
 
 ### Parameters
 
 *class_access*<br/>
-(Optional) The accessibility of the class or struct outside the assembly. Possible values are **public** and **private** (**private** is the default). Nested classes or structs cannot have a *class_access* specifier.
+(Optional) The accessibility of the class or struct outside the assembly. Possible values are **`public`** and **`private`** (**`private`** is the default). Nested classes or structs cannot have a *class_access* specifier.
 
 *name*<br/>
 The name of the class or struct.
@@ -36,7 +34,7 @@ The name of the class or struct.
 (Optional) [abstract](abstract-cpp-component-extensions.md) and [sealed](sealed-cpp-component-extensions.md) are valid modifiers.
 
 *inherit_access*<br/>
-(Optional) The accessibility of *base_type*. The only permitted accessibility is **public** (**public** is the default).
+(Optional) The accessibility of *base_type*. The only permitted accessibility is **`public`** (**`public`** is the default).
 
 *base_type*<br/>
 (Optional) A base type. However, a value type cannot act as a base type.
@@ -45,9 +43,9 @@ For more information, see the language-specific descriptions of this parameter i
 
 ### Remarks
 
-The default member accessibility of an object declared with **ref class** or **value class** is **private**. And the default member accessibility of an object declared with **ref struct** or **value struct** is **public**.
+The default member accessibility of an object declared with **ref class** or **value class** is **`private`**. And the default member accessibility of an object declared with **ref struct** or **value struct** is **`public`**.
 
-When a reference type inherits from another reference type, virtual functions in the base class must explicitly be overridden (with [override](override-cpp-component-extensions.md)) or hidden (with [new (new slot in vtable)](new-new-slot-in-vtable-cpp-component-extensions.md)). The derived class functions must also be explicitly marked as **virtual**.
+When a reference type inherits from another reference type, virtual functions in the base class must explicitly be overridden (with [override](override-cpp-component-extensions.md)) or hidden (with [new (new slot in vtable)](new-new-slot-in-vtable-cpp-component-extensions.md)). The derived class functions must also be explicitly marked as **`virtual`**.
 
 To detect at compile time whether a type is a **ref class** or **ref struct**, or a **value class** or **value struct**, use `__is_ref_class (type)`, `__is_value_class (type)`, or `__is_simple_value_class (type)`. For more information, see [Compiler Support for Type Traits](compiler-support-for-type-traits-cpp-component-extensions.md).
 

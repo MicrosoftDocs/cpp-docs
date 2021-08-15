@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4503"
 title: "Compiler Warning (level 1) C4503"
 ms.date: "05/14/2018"
 f1_keywords: ["C4503"]
@@ -15,7 +16,7 @@ This compiler warning is obsolete and is not generated in Visual Studio 2017 and
 
 The decorated name was longer than the compiler limit (4096), and was truncated. To avoid this warning and the truncation, reduce the number of arguments or the name lengths of identifiers used. Decorated names that are longer than the compiler limit have a hash applied and are not in danger of a name collision.
 
-When using an older version of Visual Studio, this warning can be issued when your code contains templates specialized on templates repeatedly. For example, a map of maps (from the C++ Standard Library). In this situation, you can make your typedefs a type (a **struct**, for example) that contains the map.
+When using an older version of Visual Studio, this warning can be issued when your code contains templates specialized on templates repeatedly. For example, a map of maps (from the C++ Standard Library). In this situation, you can make your typedefs a type (a **`struct`**, for example) that contains the map.
 
 You might, however, decide to not restructure your code.  It is possible to ship an application that generates C4503, but if you get link time errors on a truncated symbol, it can be more difficult to determine the type of the symbol in the error. Debugging may also be more difficult; the debugger may have difficultly mapping the symbol name to the type name. The correctness of the program, however, is unaffected by the truncated name.
 

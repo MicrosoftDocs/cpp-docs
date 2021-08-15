@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /PDB (Use Program Database)"
 title: "/PDB (Use Program Database)"
 ms.date: "11/04/2016"
 f1_keywords: ["/pdb", "VC.Project.VCLinkerTool.ProgramDatabaseFile"]
@@ -30,9 +31,7 @@ For more information, see [.pdb Files as Linker Input](dot-pdb-files-as-linker-i
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **Linker** folder.
-
-1. Click the **Debug** property page.
+1. Select the **Configuration Properties** > **Linker** > **Debug** property page.
 
 1. Modify the **Generate Program Database File** property.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: swap Function (auto_handle)"
 title: "swap Function (auto_handle)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -63,4 +64,4 @@ s1 = 'string two', s2 = 'string one'
 ## See also
 
 [auto_handle](../dotnet/auto-handle.md)<br/>
-[auto_handle::swap](../dotnet/auto-handle-swap.md)
+[auto_handle::swap](./auto-handle-class.md#swap)

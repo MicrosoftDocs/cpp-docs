@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CDataRecoveryHandler Class"
 title: "CDataRecoveryHandler Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CDataRecoveryHandler", "AFXDATARECOVERY/CDataRecoveryHandler", "AFXDATARECOVERY/CDataRecoveryHandler::CDataRecoveryHandler", "AFXDATARECOVERY/CDataRecoveryHandler::AutosaveAllDocumentInfo", "AFXDATARECOVERY/CDataRecoveryHandler::AutosaveDocumentInfo", "AFXDATARECOVERY/CDataRecoveryHandler::CreateDocumentInfo", "AFXDATARECOVERY/CDataRecoveryHandler::DeleteAllAutosavedFiles", "AFXDATARECOVERY/CDataRecoveryHandler::DeleteAutosavedFile", "AFXDATARECOVERY/CDataRecoveryHandler::GenerateAutosaveFileName", "AFXDATARECOVERY/CDataRecoveryHandler::GetAutosaveInterval", "AFXDATARECOVERY/CDataRecoveryHandler::GetAutosavePath", "AFXDATARECOVERY/CDataRecoveryHandler::GetDocumentListName", "AFXDATARECOVERY/CDataRecoveryHandler::GetNormalDocumentTitle", "AFXDATARECOVERY/CDataRecoveryHandler::GetRecoveredDocumentTitle", "AFXDATARECOVERY/CDataRecoveryHandler::GetRestartIdentifier", "AFXDATARECOVERY/CDataRecoveryHandler::GetSaveDocumentInfoOnIdle", "AFXDATARECOVERY/CDataRecoveryHandler::GetShutdownByRestartManager", "AFXDATARECOVERY/CDataRecoveryHandler::Initialize", "AFXDATARECOVERY/CDataRecoveryHandler::QueryRestoreAutosavedDocuments", "AFXDATARECOVERY/CDataRecoveryHandler::ReadOpenDocumentList", "AFXDATARECOVERY/CDataRecoveryHandler::RemoveDocumentInfo", "AFXDATARECOVERY/CDataRecoveryHandler::ReopenPreviousDocuments", "AFXDATARECOVERY/CDataRecoveryHandler::RestoreAutosavedDocuments", "AFXDATARECOVERY/CDataRecoveryHandler::SaveOpenDocumentList", "AFXDATARECOVERY/CDataRecoveryHandler::SetAutosaveInterval", "AFXDATARECOVERY/CDataRecoveryHandler::SetAutosavePath", "AFXDATARECOVERY/CDataRecoveryHandler::SetRestartIdentifier", "AFXDATARECOVERY/CDataRecoveryHandler::SetSaveDocumentInfoOnIdle", "AFXDATARECOVERY/CDataRecoveryHandler::SetShutdownByRestartManager", "AFXDATARECOVERY/CDataRecoveryHandler::UpdateDocumentInfo"]
@@ -19,13 +20,13 @@ class CDataRecoveryHandler : public CObject
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[CDataRecoveryHandler::CDataRecoveryHandler](#cdatarecoveryhandler)|Constructs a `CDataRecoveryHandler` object.|
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[CDataRecoveryHandler::AutosaveAllDocumentInfo](#autosavealldocumentinfo)|Autosaves each file registered with the `CDataRecoveryHandler` class.|
 |[CDataRecoveryHandler::AutosaveDocumentInfo](#autosavedocumentinfo)|Autosaves the specified document.|
@@ -57,7 +58,7 @@ class CDataRecoveryHandler : public CObject
 
 ### Data Members
 
-|||
+|Name|Description|
 |-|-|
 |m_bRestoringPreviousOpenDocs|Indicates whether the data recovery handler reopens previously open documents.|
 |m_bSaveDocumentInfoOnIdle|Indicates whether the data recovery handler autosaves documents on the next idle loop.|
@@ -118,11 +119,11 @@ virtual BOOL AutosaveDocumentInfo(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pDocument*|[in] A pointer to the `CDocument` to save.|
-|*bResetModifiedFlag*|[in] TRUE indicates that the `CDataRecoveryHandler` considers *pDocument* to be modified; FALSE indicates that the framework considers *pDocument* to be unmodified. See the Remarks section for more information about the effect of this flag.|
+*pDocument*\
+[in] A pointer to the `CDocument` to save.
+
+*bResetModifiedFlag*\
+[in] TRUE indicates that the `CDataRecoveryHandler` considers *pDocument* to be modified; FALSE indicates that the framework considers *pDocument* to be unmodified. See the Remarks section for more information about the effect of this flag.
 
 ### Return Value
 
@@ -151,11 +152,11 @@ CDataRecoveryHandler(
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*dwRestartManagerSupportFlags*|[in] Indicates which options of the restart manager are supported.|
-|*nAutosaveInterval*|[in] The time between autosaves. This parameter is in milliseconds.|
+*dwRestartManagerSupportFlags*\
+[in] Indicates which options of the restart manager are supported.
+
+*nAutosaveInterval*\
+[in] The time between autosaves. This parameter is in milliseconds.
 
 ### Remarks
 
@@ -171,10 +172,8 @@ virtual BOOL CreateDocumentInfo(CDocument* pDocument);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pDocument*|[in] A pointer to a `CDocument`. This method creates the document information for this `CDocument`.|
+*pDocument*\
+[in] A pointer to a `CDocument`. This method creates the document information for this `CDocument`.
 
 ### Return Value
 
@@ -208,10 +207,8 @@ virtual BOOL DeleteAutosavedFile(const CString& strAutosavedFile);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*strAutosavedFile*|[in] A string that contains the autosaved file name.|
+*strAutosavedFile*\
+[in] A string that contains the autosaved file name.
 
 ### Return Value
 
@@ -276,10 +273,8 @@ virtual CString GetDocumentListName(CDocument* pDocument) const;
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pDocument*|[in] A pointer to a `CDocument`. `GetDocumentListName` retrieves the document name from this `CDocument`.|
+*pDocument*\
+[in] A pointer to a `CDocument`. `GetDocumentListName` retrieves the document name from this `CDocument`.
 
 ### Return Value
 
@@ -299,10 +294,8 @@ virtual CString GetNormalDocumentTitle(CDocument* pDocument);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pDocument*|[in] A pointer to a `CDocument`.|
+*pDocument*\
+[in] A pointer to a `CDocument`.
 
 ### Return Value
 
@@ -437,10 +430,8 @@ virtual BOOL RemoveDocumentInfo(CDocument* pDocument);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pDocument*|[in] A pointer to the document to remove.|
+*pDocument*\
+[in] A pointer to the document to remove.
 
 ### Return Value
 
@@ -533,10 +524,8 @@ virtual void SetAutosavePath(const CString& strAutosavePath);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*strAutosavePath*|[in] The path where autosave files are stored.|
+*strAutosavePath*\
+[in] The path where autosave files are stored.
 
 ### Remarks
 
@@ -552,10 +541,8 @@ virtual void SetRestartIdentifier(const CString& strRestartIdentifier);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*strRestartIdentifier*|[in] The unique identifier for the restart manager.|
+*strRestartIdentifier*\
+[in] The unique identifier for the restart manager.
 
 ### Remarks
 
@@ -571,10 +558,8 @@ virtual void SetSaveDocumentInfoOnIdle(BOOL bSaveOnIdle);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*bSaveOnIdle*|[in] TRUE to save document information during the current idle cycle; FALSE to not perform a save.|
+*bSaveOnIdle*\
+[in] TRUE to save document information during the current idle cycle; FALSE to not perform a save.
 
 ## <a name="setshutdownbyrestartmanager"></a> CDataRecoveryHandler::SetShutdownByRestartManager
 
@@ -586,10 +571,8 @@ virtual void SetShutdownByRestartManager(BOOL bShutdownByRestartManager);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*bShutdownByRestartManager*|[in] TRUE to indicate that the restart manager caused the application to exit; FALSE to indicate that the application exited for another reason.|
+*bShutdownByRestartManager*\
+[in] TRUE to indicate that the restart manager caused the application to exit; FALSE to indicate that the application exited for another reason.
 
 ### Remarks
 
@@ -605,10 +588,8 @@ virtual BOOL UpdateDocumentInfo(CDocument* pDocument);
 
 ### Parameters
 
-|||
-|-|-|
-|Parameter|Description|
-|*pDocument*|[in] A pointer to the saved document.|
+*pDocument*\
+[in] A pointer to the saved document.
 
 ### Return Value
 

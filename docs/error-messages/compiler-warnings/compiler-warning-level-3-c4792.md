@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 3) C4792"
 title: "Compiler Warning (level 3) C4792"
 ms.date: "11/04/2016"
 f1_keywords: ["C4792"]

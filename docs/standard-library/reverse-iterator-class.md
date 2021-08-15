@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: reverse_iterator Class"
 title: "reverse_iterator Class"
 ms.date: "03/27/2019"
 f1_keywords: ["xutility/std::reverse_iterator", "iterator/std::reverse_iterator::difference_type", "iterator/std::reverse_iterator::iterator_type", "iterator/std::reverse_iterator::pointer", "iterator/std::reverse_iterator::reference", "iterator/std::reverse_iterator::base", "iterator/std::reverse_iterator::operator_star"]

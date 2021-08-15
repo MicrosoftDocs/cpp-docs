@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: pointer_traits Struct"
 title: "pointer_traits Struct"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::pointer_traits::element_type", "memory/std::pointer_traits::pointer", "memory/std::pointer_traits", "memory/std::pointer_traits::difference_type", "memory/std::pointer_traits::rebind", "xmemory0/std::pointer_traits::element_type", "xmemory0/std::pointer_traits::pointer", "xmemory0/std::pointer_traits", "xmemory0/std::pointer_traits::difference_type", "xmemory0/std::pointer_traits::rebind", "memory/std::pointer_traits::pointer_to"]
@@ -35,7 +36,7 @@ struct Ptr
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |`typedef T2 difference_type`|The type `T2` is `Ptr::difference_type` if that type exists, otherwise `ptrdiff_t`. If `Ptr` is a raw pointer, the type is `ptrdiff_t`.|
 |`typedef T1 element_type`|The type `T1` is `Ptr::element_type` if that type exists, otherwise `Ty`. If `Ptr` is a raw pointer, the type is `Ty`.|
@@ -43,7 +44,7 @@ struct Ptr
 
 ### Structs
 
-|||
+|Name|Description|
 |-|-|
 |`rebind`|Attempts to convert the underlying pointer type to a specified type.|
 

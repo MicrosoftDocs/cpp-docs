@@ -1,0 +1,58 @@
+- name: "Code Sanitizers"
+  href: ../sanitizers/index.yml
+- name: "AddressSanitizer"
+  expanded: true
+  items:
+    - name: "AddressSanitizer overview"
+      href: ../sanitizers/asan.md
+    - name: "Build and language reference"
+      href: ../sanitizers/asan-building.md
+    - name: "Runtime reference"
+      href: ../sanitizers/asan-runtime.md
+    - name: "Debugger integration"
+      href: ../sanitizers/asan-debugger-integration.md
+    - name: "Shadow bytes"
+      href: ../sanitizers/asan-shadow-bytes.md
+    - name: "Cloud or distributed testing"
+      href: ../sanitizers/asan-offline-crash-dumps.md
+    - name: "AddressSanitizer error examples"
+      expanded: true
+      items:
+        - name: "AddressSanitizer error examples"
+          href: ../sanitizers/asan-error-examples.md
+        - name: "alloc-dealloc-mismatch error"
+          href: ../sanitizers/error-alloc-dealloc-mismatch.md
+        - name: "allocation-size-too-big error"
+          href: ../sanitizers/error-allocation-size-too-big.md
+        - name: "calloc-overflow error"
+          href: ../sanitizers/error-calloc-overflow.md
+        - name: "double-free error"
+          href: ../sanitizers/error-double-free.md
+        - name: "dynamic-stack-buffer-overflow error"
+          href: ../sanitizers/error-dynamic-stack-buffer-overflow.md
+        - name: "global-buffer-overflow error"
+          href: ../sanitizers/error-global-buffer-overflow.md
+        - name: "heap-buffer-overflow error"
+          href: ../sanitizers/error-heap-buffer-overflow.md
+        - name: "heap-use-after-free error"
+          href: ../sanitizers/error-heap-use-after-free.md
+        - name: "invalid-allocation-alignment error"
+          href: ../sanitizers/error-invalid-allocation-alignment.md
+        - name: "memcpy-param-overlap error"
+          href: ../sanitizers/error-memcpy-param-overlap.md
+        - name: "new-delete-type-mismatch error"
+          href: ../sanitizers/error-new-delete-type-mismatch.md
+        - name: "stack-buffer-overflow error"
+          href: ../sanitizers/error-stack-buffer-overflow.md
+        - name: "stack-buffer-underflow error"
+          href: ../sanitizers/error-stack-buffer-underflow.md
+        - name: "stack-use-after-return error"
+          href: ../sanitizers/error-stack-use-after-return.md
+        - name: "stack-use-after-scope error"
+          href: ../sanitizers/error-stack-use-after-scope.md
+        - name: "strcat-param-overlap error"
+          href: ../sanitizers/error-strncat-param-overlap.md
+        - name: "use-after-poison error"
+          href: ../sanitizers/error-use-after-poison.md
+    - name: "Known issues"
+      href: ../sanitizers/asan-known-issues.md

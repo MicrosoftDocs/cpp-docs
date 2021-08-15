@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Settings for the Toolbar Control"
 title: "Settings for the Toolbar Control"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["toolbar controls [MFC], about toolbar controls", "CToolBarCtrl class [MFC], settings"]

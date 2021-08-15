@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Storage of String Literals"
 title: "Storage of String Literals"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["string literals, storage"]

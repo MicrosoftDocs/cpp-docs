@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: override  (C++/CLI and C++/CX)"
 title: "override  (C++/CLI and C++/CX)"
 ms.date: "11/04/2016"
 ms.topic: "reference"
@@ -33,7 +34,7 @@ struct X : public I1 {
 };
 ```
 
-### Example
+### Windows Runtime example
 
 The following code example shows that **override** can be used in Windows Runtime compilations.
 
@@ -53,7 +54,7 @@ ref struct X : public I1 {
 
 Compiler option: `/ZW`
 
-### Example
+### C++/CLI example
 
 The following code example shows that **override** can be used in common language runtime compilations.
 

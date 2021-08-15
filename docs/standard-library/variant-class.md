@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: variant Class"
 title: "variant Class"
 ms.date: "04/04/2019"
 f1_keywords: ["variant/std::variant", "variant/std::variant::emplace", "variant/std::variant::index", "variant/std::variant::valueless_by_exception"]
@@ -19,22 +20,22 @@ template <class... Types>
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[variant](#variant)|Constructs an object of type `variant`.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[emplace](#emplace)|Creates a new contained value.|
 |[index](#index)|Returns the index of a contained value.|
 |[swap](#swap)||
-|[valueless_by_exception](#emplace)|Returns **false** if the variant holds a value.|
+|[valueless_by_exception](#emplace)|Returns **`false`** if the variant holds a value.|
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator=](#op_eq)|Replaces the variant with a copy of another variant.|
 
@@ -124,7 +125,7 @@ void swap(variant&) noexcept(see below);
 
 ## <a name="valueless"></a> valueless_by_exception
 
-Returns **false** if the variant holds a value.
+Returns **`false`** if the variant holds a value.
 
 ```cpp
 constexpr bool valueless_by_exception() const noexcept;

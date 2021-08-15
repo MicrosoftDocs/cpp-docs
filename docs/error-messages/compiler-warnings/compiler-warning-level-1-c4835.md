@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4835"
 title: "Compiler Warning (level 1) C4835"
 ms.date: "11/04/2016"
 f1_keywords: ["C4835"]
@@ -11,7 +12,7 @@ ms.assetid: d2e44c62-7b0e-4a45-943d-97903e27ed9d
 
 When accessing data between managed components, it is recommended that you not use native C++ import and export mechanisms. Instead, declare your data members inside a managed type and reference the metadata with `#using` in the client. For more information, see [#using Directive](../../preprocessor/hash-using-directive-cpp.md).
 
-## Example
+## Examples
 
 The following sample generates C4835.
 
@@ -24,8 +25,6 @@ int n = 9;
 __declspec(dllexport) int m = f();   // C4835
 __declspec(dllexport) int *p = &n;   // C4835
 ```
-
-## Example
 
 The following sample consumes the component built in the previous sample, showing that the value of the variables is not as expected.
 

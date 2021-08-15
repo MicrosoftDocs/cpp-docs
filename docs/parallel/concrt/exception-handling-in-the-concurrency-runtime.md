@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exception Handling in the Concurrency Runtime"
 title: "Exception Handling in the Concurrency Runtime"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["lightweight tasks, exception handling [Concurrency Runtime]", "exception handling [Concurrency Runtime]", "structured task groups, exception handling [Concurrency Runtime]", "agents, exception handling [Concurrency Runtime]", "task groups, exception handling [Concurrency Runtime]"]
@@ -12,7 +13,7 @@ The Concurrency Runtime uses C++ exception handling to communicate many kinds of
 
 - When a task or task group throws an exception, the runtime holds that exception and marshals it to the context that waits for the task or task group to finish.
 
-- When possible, surround every call to [concurrency::task::get](reference/task-class.md#get) and [concurrency::task::wait](reference/task-class.md#wait) with a `try`/`catch` block to handle errors that you can recover from. The runtime terminates the app if a task throws an exception and that exception is not caught by the task, one of its continuations, or the main app.
+- When possible, surround every call to [concurrency::task::get](reference/task-class.md#get) and [concurrency::task::wait](reference/task-class.md#wait) with a **`try`**/**`catch`** block to handle errors that you can recover from. The runtime terminates the app if a task throws an exception and that exception is not caught by the task, one of its continuations, or the main app.
 
 - A task-based continuation always runs; it does not matter whether the antecedent task completed successfully, threw an exception, or was canceled. A value-based continuation does not run if the antecedent task throws or cancels.
 
@@ -149,7 +150,7 @@ Like lightweight tasks, the runtime does not manage exceptions that are thrown b
 
 The following example shows one way to handle exceptions in a class that derives from [concurrency::agent](../../parallel/concrt/reference/agent-class.md). This example defines the `points_agent` class. The `points_agent::run` method reads `point` objects from the message buffer and prints them to the console. The `run` method throws an exception if it receives a `NULL` pointer.
 
-The `run` method surrounds all work in a `try`-`catch` block. The `catch` block stores the exception in a message buffer. The application checks whether the agent encountered an error by reading from this buffer after the agent finishes.
+The `run` method surrounds all work in a **`try`**-**`catch`** block. The **`catch`** block stores the exception in a message buffer. The application checks whether the agent encountered an error by reading from this buffer after the agent finishes.
 
 [!code-cpp[concrt-eh-agents#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_7.cpp)]
 
@@ -162,7 +163,7 @@ error occurred in agent: point must not be NULL
 the status of the agent is: done
 ```
 
-Because the `try`-`catch` block exists outside the `while` loop, the agent ends processing when it encounters the first error. If the `try`-`catch` block was inside the `while` loop, the agent would continue after an error occurs.
+Because the **`try`**-**`catch`** block exists outside the **`while`** loop, the agent ends processing when it encounters the first error. If the **`try`**-**`catch`** block was inside the **`while`** loop, the agent would continue after an error occurs.
 
 This example stores exceptions in a message buffer so that another component can monitor the agent for errors as it runs. This example uses a [concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) object to store the error. In the case where an agent handles multiple exceptions, the `single_assignment` class stores only the first message that is passed to it. To store only the last exception, use the [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) class. To store all exceptions, use the [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) class. For more information about these message blocks, see [Asynchronous Message Blocks](../../parallel/concrt/asynchronous-message-blocks.md).
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: What Does it Cost me to Derive a Class from CObject?"
 title: "What Does it Cost me to Derive a Class from CObject?"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CObject class [MFC], overhead of derived classes [MFC]"]

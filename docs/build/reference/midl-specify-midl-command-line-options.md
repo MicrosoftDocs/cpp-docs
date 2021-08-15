@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /MIDL (Specify MIDL Command Line Options)"
 title: "/MIDL (Specify MIDL Command Line Options)"
 ms.date: "09/05/2018"
 f1_keywords: ["/midl", "VC.Project.VCLinkerTool.MidlCommandFile"]
@@ -43,4 +44,4 @@ The file should contain one MIDL command-line option per line.
 [/IDLOUT (Name MIDL Output Files)](idlout-name-midl-output-files.md)<br/>
 [/IGNOREIDL (Don't Process Attributes into MIDL)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
 [/TLBOUT (Name .TLB File)](tlbout-name-dot-tlb-file.md)<br/>
-[Building an Attributed Program](../../windows/building-an-attributed-program.md)
+[Building an Attributed Program](../../windows/attributes/cpp-attributes-com-net.md)

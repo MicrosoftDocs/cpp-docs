@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: marshal_context Class"
 title: "marshal_context Class"
 ms.date: "01/16/2019"
 ms.topic: "reference"
@@ -57,7 +58,7 @@ Some data conversions require a marshal context. For more information about whic
 
 ### Example
 
-See the example for [marshal_context::marshal_as](../dotnet/marshal-context-marshal-as.md).
+See the example for [marshal_context::marshal_as](#marshal-as).
 
 ## <a name="tilde-marshal-context"></a> marshal_context::~marshal_context
 

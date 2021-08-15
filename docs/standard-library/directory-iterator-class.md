@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: directory_iterator Class"
 title: "directory_iterator Class"
 ms.date: "09/10/2018"
 f1_keywords: ["filesystem/std::experimental::filesystem::directory_iterator", "filesystem/std::experimental::filesystem::_Directory_iterator::_Directory_iterator", "filesystem/std::experimental::filesystem::directory_iterator::directory_iterator", "filesystem/std::experimental::filesystem::directory_iterator::increment", "filesystem/std::experimental::filesystem::directory_iterator::operator=", "filesystem/std::experimental::filesystem::directory_iterator::operator==", "filesystem/std::experimental::filesystem::directory_iterator::operator!=", "filesystem/std::experimental::filesystem::directory_iterator::operator*", "filesystem/std::experimental::filesystem::directory_iterator::operator-&gt;", "filesystem/std::experimental::filesystem::directory_iterator::operator++"]
@@ -43,10 +44,10 @@ class directory_iterator;
 |-|-|
 |[operator!=](#op_neq)|Returns `!(*this == right)`.|
 |[operator=](#op_as)|The defaulted member assignment operators behave as expected.|
-|[operator==](#op_eq)|Returns **true** only if both `*this` and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.|
+|[operator==](#op_eq)|Returns **`true`** only if both **`*this`** and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.|
 |[operator*](#op_star)|Returns `myentry`.|
 |[operator->](#op_cast)|Returns `&**this`.|
-|[operator++](#op_increment)|Calls `increment()`, then returns `*this`, or makes a copy of the object, calls `increment()`, then returns the copy.|
+|[operator++](#op_increment)|Calls `increment()`, then returns **`*this`**, or makes a copy of the object, calls `increment()`, then returns the copy.|
 
 ## Requirements
 
@@ -117,7 +118,7 @@ The [directory_iterator](../standard-library/directory-iterator-class.md) being 
 
 ## <a name="op_eq"></a> directory_iterator::operator==
 
-The member operator returns **true** only if both `*this` and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.
+The member operator returns **`true`** only if both **`*this`** and *right* are end-of-sequence iterators or both are not end-of-sequence-iterators.
 
 ```cpp
 bool operator==(const directory_iterator& right) const;
@@ -146,7 +147,7 @@ const directory_entry * operator->() const;
 
 ## <a name="op_increment"></a> directory_iterator::operator++
 
-The first member function calls `increment()`, then returns `*this`. The second member function makes a copy of the object, calls `increment()`, then returns the copy.
+The first member function calls `increment()`, then returns **`*this`**. The second member function makes a copy of the object, calls `increment()`, then returns the copy.
 
 ```cpp
 directory_iterator& operator++();

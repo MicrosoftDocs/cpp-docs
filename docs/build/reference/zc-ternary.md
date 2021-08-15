@@ -1,28 +1,29 @@
 ---
+description: "Learn more about: `/Zc:ternary` (Enforce conditional operator rules)"
 title: "/Zc:ternary (Enforce conditional operator rules)"
 ms.date: "09/12/2019"
 f1_keywords: ["/Zc:ternary"]
 helpviewer_keywords: ["/Zc:ternary", "Zc:ternary", "-Zc:ternary"]
 ---
-# /Zc:ternary (Enforce conditional operator rules)
+# `/Zc:ternary` (Enforce conditional operator rules)
 
 Enable enforcement of C++ Standard rules for the types and const or volatile (cv) qualification of the second and third operands in a conditional operator expression.
 
 ## Syntax
 
-> **/Zc:ternary**[**-**]
+> **`/Zc:ternary`**[**`-`**]
 
 ## Remarks
 
-Starting in Visual Studio 2017, the compiler supports C++ standard *conditional operator* (**?:**) behavior. It's also known as the *ternary operator*. The C++ Standard requires ternary operands satisfy one of three conditions: The operands must be of the same type and **const** or **volatile** qualification (cv-qualification), or only one operand must be unambiguously convertible to the same type and cv-qualification as the other. Or, one or both operands must be a throw expression. In versions before Visual Studio 2017 version 15.5, the compiler allowed conversions that are considered ambiguous by the standard.
+Starting in Visual Studio 2017, the compiler supports C++ standard *conditional operator* (**`?:`**) behavior. It's also known as the *ternary operator*. The C++ Standard requires ternary operands satisfy one of three conditions: The operands must be of the same type and **`const`** or **`volatile`** qualification (cv-qualification), or only one operand must be unambiguously convertible to the same type and cv-qualification as the other. Or, one or both operands must be a throw expression. In versions before Visual Studio 2017 version 15.5, the compiler allowed conversions that are considered ambiguous by the standard.
 
-When the **/Zc:ternary** option is specified, the compiler conforms to the standard. It rejects code that doesn't satisfy the rules for matched types and cv-qualification of the second and third operands.
+When the **`/Zc:ternary`** option is specified, the compiler conforms to the standard. It rejects code that doesn't satisfy the rules for matched types and cv-qualification of the second and third operands.
 
-The **/Zc:ternary** option is off by default in Visual Studio 2017. Use **/Zc:ternary** to enable conforming behavior, or **/Zc:ternary-** to explicitly specify the previous non-conforming compiler behavior. The [/permissive-](permissive-standards-conformance.md) option implicitly enables this option, but it can be overridden by using **/Zc:ternary-**.
+The **`/Zc:ternary`** option is off by default in Visual Studio 2017. Use **`/Zc:ternary`** to enable conforming behavior, or **`/Zc:ternary-`** to explicitly specify the previous non-conforming compiler behavior. The [`/permissive-`](permissive-standards-conformance.md) option implicitly enables this option, but it can be overridden by using **`/Zc:ternary-`**.
 
 ### Examples
 
-This sample shows how a class that provides both non-explicit initialization from a type, and conversion to a type, can lead to ambiguous conversions. This code is accepted by the compiler by default, but rejected when **/Zc:ternary** or **/permissive-** is specified.
+This sample shows how a class that provides both non-explicit initialization from a type, and conversion to a type, can lead to ambiguous conversions. This code is accepted by the compiler by default, but rejected when **/`Zc:ternary`** or **`/permissive-`** is specified.
 
 ```cpp
 // zcternary1.cpp
@@ -48,7 +49,7 @@ int main()
 
 To fix this code, make an explicit cast to the preferred common type, or prevent one direction of type conversion. You can keep the compiler from matching a type conversion by making the conversion explicit.
 
-An important exception to this common pattern is when the type of the operands is one of the null-terminated string types, such as `const char*`, `const char16_t*`, and so on. You can also reproduce the effect with array types and the pointer types they decay to. The behavior when the actual second or third operand to `?:` is a string literal of corresponding type depends on the language standard used. C++17 has changed semantics for this case from C++14. As a result, the compiler accepts the code in the following example under the default **/std:c++14**, but rejects it when you specify **/std:c++17**.
+An important exception to this common pattern is when the type of the operands is one of the null-terminated string types, such as `const char*`, `const char16_t*`, and so on. You can also reproduce the effect with array types and the pointer types they decay to. The behavior when the actual second or third operand to `?:` is a string literal of corresponding type depends on the language standard used. C++17 has changed semantics for this case from C++14. As a result, the compiler accepts the code in the following example under the default **`/std:c++14`**, but rejects it when you specify **`/std:c++17`**.
 
 ```cpp
 // zcternary2.cpp
@@ -70,7 +71,7 @@ int main()
 
 To fix this code, cast one of the operands explicitly.
 
-Under **/Zc:ternary**, the compiler rejects conditional operators where one of the arguments is of type **void**, and the other isn't a throw expression. A common use of this pattern is in ASSERT-like macros:
+Under **`/Zc:ternary`**, the compiler rejects conditional operators where one of the arguments is of type **`void`**, and the other isn't a **`throw`** expression. A common use of this pattern is in ASSERT-like macros:
 
 ```cpp
 // zcternary3.cpp
@@ -89,7 +90,7 @@ int main()
 
 The typical solution is to replace the non-void argument with `void()`.
 
-This sample shows code that generates an error under both **/Zc:ternary** and **/Zc:ternary-**:
+This sample shows code that generates an error under both **`/Zc:ternary`** and **`/Zc:ternary-`**:
 
 ```cpp
 // zcternary4.cpp
@@ -111,7 +112,7 @@ error C2446: ':': no conversion from 'foo::<lambda_f6cd18702c42f6cd636bfee362b37
 note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
 ```
 
-With **/Zc:ternary**, the reason for failure becomes clearer. Any of several implementation-defined calling conventions could be used to generate each lambda. However, the compiler has no preference rule to disambiguate the possible lambda signatures. The new output looks like this:
+With **`/Zc:ternary`**, the reason for failure becomes clearer. Any of several implementation-defined calling conventions could be used to generate each lambda. However, the compiler has no preference rule to disambiguate the possible lambda signatures. The new output looks like this:
 
 ```Output
 error C2593: 'operator ?' is ambiguous
@@ -122,7 +123,7 @@ note: or       'built-in C++ operator?(bool (__vectorcall *)(int,int), bool (__v
 note: while trying to match the argument list '(foo::<lambda_717fca3fc65510deea10bc47e2b06be4>, foo::<lambda_f6cd18702c42f6cd636bfee362b37033>)'
 ```
 
-A common source of problems found by **/Zc:ternary** comes from conditional operators used in template meta-programming. Some of the result types change under this switch. The following example demonstrates two cases where **/Zc:ternary** changes a conditional expression's result type in a non-meta-programming context:
+A common source of problems found by **`/Zc:ternary`** comes from conditional operators used in template meta-programming. Some of the result types change under this switch. The following example demonstrates two cases where **`/Zc:ternary`** changes a conditional expression's result type in a non-meta-programming context:
 
 ```cpp
 // zcternary5.cpp
@@ -147,8 +148,8 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. Modify the **Additional Options** property to include **/Zc:ternary** or **/Zc:ternary-** and then choose **OK**.
+1. Modify the **Additional Options** property to include **`/Zc:ternary`** or **`/Zc:ternary-`** and then choose **OK**.
 
 ## See also
 
-[/Zc (Conformance)](zc-conformance.md)
+[`/Zc` (Conformance)](zc-conformance.md)

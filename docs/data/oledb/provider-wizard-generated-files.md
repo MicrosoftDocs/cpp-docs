@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Provider Wizard-Generated Files"
 title: "Provider Wizard-Generated Files"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["OLE DB providers, wizard-generated files"]
@@ -6,13 +7,13 @@ ms.assetid: 6e1ac94b-eb90-4abf-82b3-06944b947ebc
 ---
 # Provider Wizard-Generated Files
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The ATL OLE DB Provider wizard is not available in Visual Studio 2019 and later.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 The **ATL OLE DB Provider Wizard** generates the following files. The following topics use the short name *Custom*, but the exact file names depend on the choice you made when creating the provider.
 

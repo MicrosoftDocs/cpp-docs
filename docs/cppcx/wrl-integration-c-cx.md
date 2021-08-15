@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WRL integration (C++/CX)"
 title: "WRL integration (C++/CX)"
 ms.date: "01/22/2017"
 ms.assetid: 3ad43894-c574-477c-ad3e-240301f381d4
@@ -9,7 +10,7 @@ You freely can mix WRL code with Windows Runtime C++ Template Library (WRL) code
 
 ## WRL development
 
-For more information about authoring and consuming WRL components, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
+For more information about authoring and consuming WRL components, see [Windows Runtime C++ Template Library (WRL)](./wrl/windows-runtime-cpp-template-library-wrl.md).
 
 ### Example
 

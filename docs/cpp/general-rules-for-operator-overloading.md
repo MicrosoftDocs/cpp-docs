@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: General Rules for Operator Overloading"
 title: "General Rules for Operator Overloading"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["operator overloading [C++], rules"]
@@ -31,7 +32,7 @@ The following rules constrain how overloaded operators are implemented. However,
     }
     ```
 
-   The preceding code sample declares the less-than operator as a member function; however, the addition operators are declared as global functions that have friend access. Note that more than one implementation can be provided for a given operator. In the case of the preceding addition operator, the two implementations are provided to facilitate commutativity. It is just as likely that operators that add a `Point` to a `Point`, **int** to a `Point`, and so on, might be implemented.
+   The preceding code sample declares the less-than operator as a member function; however, the addition operators are declared as global functions that have friend access. Note that more than one implementation can be provided for a given operator. In the case of the preceding addition operator, the two implementations are provided to facilitate commutativity. It is just as likely that operators that add a `Point` to a `Point`, **`int`** to a `Point`, and so on, might be implemented.
 
 - Operators obey the precedence, grouping, and number of operands dictated by their typical use with built-in types. Therefore, there is no way to express the concept "add 2 and 3 to an object of type `Point`," expecting 2 to be added to the *x* coordinate and 3 to be added to the *y* coordinate.
 

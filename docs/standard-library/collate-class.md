@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: collate Class"
 title: "collate Class"
 ms.date: "11/04/2016"
 f1_keywords: ["locale/std::collate", "locale/std::collate::char_type", "locale/std::collate::string_type", "locale/std::collate::compare", "locale/std::collate::do_compare", "locale/std::collate::do_hash", "locale/std::collate::do_transform", "locale/std::collate::hash", "locale/std::collate::transform"]
@@ -229,7 +230,7 @@ A pointer to the last character in the sequence whose has value is to be determi
 
 ### Return Value
 
-A hash value of type **long** for the sequence.
+A hash value of type **`long`** for the sequence.
 
 ### Remarks
 
@@ -285,7 +286,7 @@ A pointer to the last character in the sequence whose has value is to be determi
 
 ### Return Value
 
-A hash value of type **long** for the sequence.
+A hash value of type **`long`** for the sequence.
 
 ### Remarks
 

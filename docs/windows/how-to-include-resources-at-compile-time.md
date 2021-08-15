@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Include Resources at Compile Time (C++)"
 title: "How to: Include Resources at Compile Time (C++)"
 ms.date: "02/14/2019"
 f1_keywords: ["vs.resvw.resource.including", "vc.resvw.resource.including", "vc.editors.resourceincludes"]
@@ -27,8 +28,8 @@ To get started, open the **Resource Includes** dialog box by right-clicking an .
 
 | Property | Description |
 |---|---|
-| **Symbol header file** | Allows you to change the name of the header file where symbol definitions for your resource files are stored.<br/><br/>For more information, see [Changing the Names of Symbol Header Files](../windows/changing-the-names-of-symbol-header-files.md). |
-| **Read-only symbol directives** | Enables you to include header files that contain symbols that shouldn't be modified.<br/><br/>For example, symbol files to be shared with other projects. This can also include MFC .h files. For more information, see [Including Shared (Read-Only) or Calculated Symbols](../windows/including-shared-read-only-or-calculated-symbols.md). |
+| **Symbol header file** | Allows you to change the name of the header file where symbol definitions for your resource files are stored.<br/><br/>For more information, see [Changing the Names of Symbol Header Files](./changing-a-symbol-or-symbol-name-id.md). |
+| **Read-only symbol directives** | Enables you to include header files that contain symbols that shouldn't be modified.<br/><br/>For example, symbol files to be shared with other projects. This can also include MFC .h files. For more information, see [Including Shared (Read-Only) or Calculated Symbols](./changing-a-symbol-or-symbol-name-id.md). |
 | **Compile-time directives** | Allows you to include resource files that are created and edited separately from the resources in your main resource file, contain compile-time directives (such as those directives that conditionally include resources), or contain resources in a custom format.<br/><br/>You can also use the **Compile-time directives box** to include standard MFC resource files. |
 
 > [!NOTE]

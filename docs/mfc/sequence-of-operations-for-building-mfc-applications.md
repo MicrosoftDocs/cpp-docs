@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Sequence of Operations for Building MFC Applications"
 title: "Sequence of Operations for Building MFC Applications"
 ms.date: "09/09/2019"
 helpviewer_keywords: ["applications [MFC], developing"]

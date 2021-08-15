@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Binary Operators"
 title: "Binary Operators"
 ms.date: "06/14/2018"
 helpviewer_keywords: ["member-selection operators [C++]", "operators [C++], binary", "binary operators [C++]"]
@@ -47,13 +48,13 @@ The following table shows a list of operators that can be overloaded.
 
 To declare a binary operator function as a nonstatic member, you must declare it in the form:
 
-> *ret-type* **operator** *op* **(** *arg* **)**
+> *ret-type* **`operator`** *op* **(** *arg* **)**
 
 where *ret-type* is the return type, *op* is one of the operators listed in the preceding table, and *arg* is an argument of any type.
 
 To declare a binary operator function as a global function, you must declare it in the form:
 
-> *ret-type* **operator** *op* **(** _arg1_**,** _arg2_ **)**
+> *ret-type* **`operator`** *op* **(** _arg1_**,** _arg2_ **)**
 
 where *ret-type* and *op* are as described for member operator functions and *arg1* and *arg2* are arguments. At least one of the arguments must be of class type.
 

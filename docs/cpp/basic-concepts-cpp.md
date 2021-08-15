@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Basic Concepts  (C++)"
 title: "Basic Concepts  (C++)"
 ms.custom: "index-page"
 ms.date: "12/11/2019"

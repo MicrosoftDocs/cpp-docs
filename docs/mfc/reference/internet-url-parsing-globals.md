@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Internet URL Parsing Globals and Helpers"
 title: "Internet URL Parsing Globals and Helpers"
 ms.date: "04/03/2017"
 helpviewer_keywords: ["parsing, URLs", "URLs, parsing"]
@@ -10,14 +11,14 @@ When a client sends a query to the Internet server, you can use one of the URL p
 
 ## Internet URL Parsing Globals
 
-|||
+|Name|Description|
 |-|-|
 |[AfxParseURL](#afxparseurl)|Parses a URL string and returns the type of service and its components.|
 |[AfxParseURLEx](#afxparseurlex)|Parses a URL string and returns the type of service and its components, as well as providing the user name and password.|
 
 ## Other Internet Helpers
 
-|||
+|Name|Description|
 |-|-|
 |[AfxThrowInternetException](#afxthrowinternetexception)|Throws an exception related to the internet connection.|
 |[AfxGetInternetHandleType](#afxgetinternethandletype)|Determines the type of an Internet handle.|

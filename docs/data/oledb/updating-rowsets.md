@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Updating Rowsets"
 title: "Updating Rowsets"
 ms.date: "05/09/2019"
 helpviewer_keywords: ["rowsets, updating data", "updating data, rowsets", "updating rowsets", "rowsets"]
@@ -10,11 +11,11 @@ A basic database operation is to update, or write data to, the data store. In OL
 
 Consumers can complete the following kinds of updates on rowset data: setting column values within a row, inserting a row, and deleting a row. To complete these operations, the OLE DB Template class [CRowset](../../data/oledb/crowset-class.md) implements the [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)) interface and overrides the following interface methods:
 
-- [SetData](../../data/oledb/crowset-setdata.md) changes column values in a row of a rowset; it equates to the SQL UPDATE command.
+- [SetData](./crowset-class.md#setdata) changes column values in a row of a rowset; it equates to the SQL UPDATE command.
 
-- [Insert](../../data/oledb/crowset-insert.md) inserts a row into a rowset; it equates to the SQL INSERT command.
+- [Insert](./crowset-class.md#insert) inserts a row into a rowset; it equates to the SQL INSERT command.
 
-- [Delete](../../data/oledb/crowset-delete.md) deletes rows from a rowset; it equates to the SQL DELETE command.
+- [Delete](./crowset-class.md#delete) deletes rows from a rowset; it equates to the SQL DELETE command.
 
 ## Supporting Update Operations
 
@@ -42,7 +43,7 @@ Change, insert, or delete operations might fail if one or more columns isn't wri
 
 ## Setting Data in Rows
 
-[CRowset::SetData](../../data/oledb/crowset-setdata.md) sets data values in one or more columns of the current row. The following code sets the values of data members bound to the columns `Name` and `Units in Stock` of the table `Products` and then calls `SetData` to write those values to the 100th row of the rowset:
+[CRowset::SetData](./crowset-class.md#setdata) sets data values in one or more columns of the current row. The following code sets the values of data members bound to the columns `Name` and `Units in Stock` of the table `Products` and then calls `SetData` to write those values to the 100th row of the rowset:
 
 ```cpp
 // Instantiate a rowset based on the user record class
@@ -64,15 +65,15 @@ HRESULT hr = product.SetData();
 
 ## Inserting Rows into Rowsets
 
-[CRowset::Insert](../../data/oledb/crowset-insert.md) creates and initializes a new row using data from the accessor. `Insert` creates an entirely new row after the current row; you need to specify whether to increment the current row to the next row or leave it unchanged. You do this by setting the *bGetRow* parameter:
+[CRowset::Insert](./crowset-class.md#insert) creates and initializes a new row using data from the accessor. `Insert` creates an entirely new row after the current row; you need to specify whether to increment the current row to the next row or leave it unchanged. You do this by setting the *bGetRow* parameter:
 
 ```cpp
 HRESULT Insert(int nAccessor = 0, bool bGetRow = false)
 ```
 
-- **false** (the default value) specifies that the current row increment to the next row (in which case it points to the inserted row).
+- **`false`** (the default value) specifies that the current row increment to the next row (in which case it points to the inserted row).
 
-- **true** specifies that the current row stay where it is.
+- **`true`** specifies that the current row stay where it is.
 
 The following code sets the values of data members bound to the columns of the table `Products` and then calls `Insert` to insert a new row with those values after the 100th row of the rowset. It's recommended that you set all column values to avoid undefined data in the new row:
 
@@ -121,13 +122,13 @@ m_dwQuantityPerUnitLength = 10;        // "Pack of 10" has 10 characters
 HRESULT hr = product.Insert();
 ```
 
-For a more detailed example, see [CRowset::Insert](../../data/oledb/crowset-insert.md).
+For a more detailed example, see [CRowset::Insert](./crowset-class.md#insert).
 
 For more information about setting the status and length data members, see [Field Status Data Members in Wizard-Generated Accessors](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md).
 
 ## Deleting Rows from Rowsets
 
-[CRowset::Delete](../../data/oledb/crowset-delete.md) deletes the current row from the rowset. The following code calls `Delete` to remove the 100th row of the rowset:
+[CRowset::Delete](./crowset-class.md#delete) deletes the current row from the rowset. The following code calls `Delete` to remove the 100th row of the rowset:
 
 ```cpp
 // Instantiate a rowset based on the user record class
@@ -146,9 +147,9 @@ HRESULT hr = product.Delete();
 
 Unless you specify otherwise, calls to the `SetData`, `Insert`, and `Delete` methods update the data store immediately. You can, however, defer updates so that the consumer stores all changes in a local cache and then transfers them to the data store when you call one of the following update methods:
 
-- [CRowset::Update](../../data/oledb/crowset-update.md) transfers any pending changes made to the current row since the last fetch or `Update` call on it.
+- [CRowset::Update](./crowset-class.md#update) transfers any pending changes made to the current row since the last fetch or `Update` call on it.
 
-- [CRowset::UpdateAll](../../data/oledb/crowset-updateall.md) transfers any pending changes made to all rows since the last fetch or `Update` call on it.
+- [CRowset::UpdateAll](./crowset-class.md#updateall) transfers any pending changes made to all rows since the last fetch or `Update` call on it.
 
 Update, as used by the update methods, has the specific meaning of making changes on command and isn't to be confused with the SQL **UPDATE** command (`SetData` is equivalent to the SQL **UPDATE** command).
 
@@ -194,7 +195,7 @@ To ensure that pending changes are transferred, you should call `Update` before 
 
 For example, if the first `Update` call were missing from the above code, row 100 would stay unchanged, while row 101 would be changed. After that point, your application would either have to call `UpdateAll` or move back to row 100 and call `Update` for that row to be updated.
 
-Finally, one main reason to defer changes is to be able to undo them. Calling [CRowset::Undo](../../data/oledb/crowset-undo.md) rolls back the state of the local change cache to the state of the data store before any pending changes were made. It's important to note that `Undo` doesn't roll back the state of the local cache by one step (the state before only the latest change); instead, it clears the local cache for that row. Also, `Undo` affects only the current row.
+Finally, one main reason to defer changes is to be able to undo them. Calling [CRowset::Undo](./crowset-class.md#undo) rolls back the state of the local change cache to the state of the data store before any pending changes were made. It's important to note that `Undo` doesn't roll back the state of the local cache by one step (the state before only the latest change); instead, it clears the local cache for that row. Also, `Undo` affects only the current row.
 
 ## See also
 

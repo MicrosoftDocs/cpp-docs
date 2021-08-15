@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4868"
 title: "Compiler Warning C4868"
 ms.date: "10/26/2017"
 f1_keywords: ["C4868"]
@@ -17,7 +18,7 @@ This warning is off by default. Use `/Wall` to activate this warning.
 
 To resolve this warning, first consider whether left-to-right evaluation of the initializer list elements is necessary, such as when evaluation of the elements might produce order-dependent side-effects. In many cases, the order in which elements are evaluated does not have an observable effect.
 
-If the order of evaluation must be left-to-right, consider if it's possible to pass the elements by `const` reference instead. A change such as this eliminates the warning in the following code sample.
+If the order of evaluation must be left-to-right, consider if it's possible to pass the elements by **`const`** reference instead. A change such as this eliminates the warning in the following code sample.
 
 ## Example
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Resource Compiler Error RC2103"
 title: "Resource Compiler Error RC2103"
 ms.date: "11/04/2016"
 f1_keywords: ["RC2103"]

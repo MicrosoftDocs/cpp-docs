@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: allocator_traits Class"
 title: "allocator_traits Class"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::allocator_traits", "memory/std::allocator_traits::propagate_on_container_move_assignment", "memory/std::allocator_traits::const_pointer", "memory/std::allocator_traits::propagate_on_container_swap", "memory/std::allocator_traits::propagate_on_container_copy_assignment", "memory/std::allocator_traits::difference_type", "memory/std::allocator_traits::allocator_type", "memory/std::allocator_traits::value_type", "memory/std::allocator_traits::pointer", "memory/std::allocator_traits::size_type", "memory/std::allocator_traits::const_void_pointer", "memory/std::allocator_traits::void_pointer", "memory/std::allocator_traits::allocate", "memory/std::allocator_traits::construct", "memory/std::allocator_traits::deallocate", "memory/std::allocator_traits::destroy", "memory/std::allocator_traits::max_size", "memory/std::allocator_traits::select_on_container_copy_construction"]
@@ -7,7 +8,7 @@ helpviewer_keywords: ["std::allocator_traits [C++]", "std::allocator_traits [C++
 ---
 # allocator_traits Class
 
-The class template describes an object that supplements an *allocator type*. An allocator type is any type that describes an allocator object that is used for managing allocated storage. Specifically, for any allocator type `Alloc`, you can use `allocator_traits<Alloc>` to determine all the information that is needed by an allocator-enabled container. For more information, see the default [allocator Class](../standard-library/allocator-class.md).
+The class template describes an object that supplements an *allocator type*. An allocator type is any type that describes an allocator object that is used for managing allocated storage. Specifically, for any allocator type `Alloc`, you can use `allocator_traits<Alloc>` to determine all the information that is needed by an allocator-enabled container. For more information, see the default [allocator Class](allocator-class.md).
 
 ## Syntax
 
@@ -20,7 +21,7 @@ template <class Alloc>
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |`allocator_type`|This type is a synonym for the template parameter `Alloc`.|
 |`const_pointer`|This type is `Alloc::const_pointer`, if that type is well-formed; otherwise, this type is `pointer_traits<pointer>::rebind<const value_type>`.|
@@ -38,7 +39,7 @@ template <class Alloc>
 
 The following static methods call the corresponding method on a given allocator parameter.
 
-|||
+|Name|Description|
 |-|-|
 |[allocate](#allocate)|Static method that allocates memory by using the given allocator parameter.|
 |[construct](#construct)|Static method that uses a specified allocator to construct an object.|

@@ -22,11 +22,11 @@ The `type-id` must be a pointer or a reference to a previously defined class typ
 
 See [static_cast](../cpp/static-cast-operator.md) for an explanation of the difference between static and dynamic casting conversions, and when it is appropriate to use each.
 
-There are two breaking changes in the behavior of **dynamic_cast** in managed code:
+There are two breaking changes in the behavior of **`dynamic_cast`** in managed code:
 
-- **dynamic_cast** to a pointer to the underlying type of a boxed enum will fail at runtime, returning 0 instead of the converted pointer.
+- **`dynamic_cast`** to a pointer to the underlying type of a boxed enum will fail at runtime, returning 0 instead of the converted pointer.
 
-- **dynamic_cast** will no longer throw an exception when `type-id` is an interior pointer to a value type, with the cast failing at runtime.  The cast will now return the 0 pointer value instead of throwing.
+- **`dynamic_cast`** will no longer throw an exception when `type-id` is an interior pointer to a value type, with the cast failing at runtime.  The cast will now return the 0 pointer value instead of throwing.
 
 If `type-id` is a pointer to an unambiguous accessible direct or indirect base class of `expression`, a pointer to the unique subobject of type `type-id` is the result. For example:
 
@@ -89,9 +89,9 @@ This type of conversion is called a "downcast" because it moves a pointer down a
 
 In cases of multiple inheritance, possibilities for ambiguity are introduced. Consider the class hierarchy shown in the following figure.
 
-For CLR types, **dynamic_cast** results in either a no-op if the conversion can be performed implicitly, or an MSIL `isinst` instruction, which performs a dynamic check and returns **nullptr** if the conversion fails.
+For CLR types, **`dynamic_cast`** results in either a no-op if the conversion can be performed implicitly, or an MSIL `isinst` instruction, which performs a dynamic check and returns **`nullptr`** if the conversion fails.
 
-The following sample uses **dynamic_cast** to determine if a class is an instance of particular type:
+The following sample uses **`dynamic_cast`** to determine if a class is an instance of particular type:
 
 ```cpp
 // dynamic_cast_clr.cpp
@@ -114,7 +114,7 @@ int main() {
 }
 ```
 
-![Class hierarchy that shows multiple inheritance](../cpp/media/vc39011.gif "Class hierarchy that shows multiple inheritance") <br/>
+![Class hierarchy that shows multiple inheritance.](../cpp/media/vc39011.gif "Class hierarchy that shows multiple inheritance") <br/>
 Class hierarchy that shows multiple inheritance
 
 A pointer to an object of type `D` can be safely cast to `B` or `C`. However, if `D` is cast to point to an `A` object, which instance of `A` would result? This would result in an ambiguous casting error. To get around this problem, you can perform two unambiguous casts. For example:
@@ -137,17 +137,17 @@ void f() {
 
 Further ambiguities can be introduced when you use virtual base classes. Consider the class hierarchy shown in the following figure.
 
-![Class hierarchy that shows virtual base classes](../cpp/media/vc39012.gif "Class hierarchy that shows virtual base classes") <br/>
+![Class hierarchy that shows virtual base classes.](../cpp/media/vc39012.gif "Class hierarchy that shows virtual base classes") <br/>
 Class hierarchy that shows virtual base classes
 
-In this hierarchy, `A` is a virtual base class. Given an instance of class `E` and a pointer to the `A` subobject, a **dynamic_cast** to a pointer to `B` will fail due to ambiguity. You must first cast back to the complete `E` object, then work your way back up the hierarchy, in an unambiguous manner, to reach the correct `B` object.
+In this hierarchy, `A` is a virtual base class. Given an instance of class `E` and a pointer to the `A` subobject, a **`dynamic_cast`** to a pointer to `B` will fail due to ambiguity. You must first cast back to the complete `E` object, then work your way back up the hierarchy, in an unambiguous manner, to reach the correct `B` object.
 
 Consider the class hierarchy shown in the following figure.
 
-![Class hierarchy that shows duplicate base classes](../cpp/media/vc39013.gif "Class hierarchy that shows duplicate base classes") <br/>
+![Class hierarchy that shows duplicate base classes.](../cpp/media/vc39013.gif "Class hierarchy that shows duplicate base classes") <br/>
 Class hierarchy that shows duplicate base classes
 
-Given an object of type `E` and a pointer to the `D` subobject, to navigate from the `D` subobject to the left-most `A` subobject, three conversions can be made. You can perform a **dynamic_cast** conversion from the `D` pointer to an `E` pointer, then a conversion (either **dynamic_cast** or an implicit conversion) from `E` to `B`, and finally an implicit conversion from `B` to `A`. For example:
+Given an object of type `E` and a pointer to the `D` subobject, to navigate from the `D` subobject to the left-most `A` subobject, three conversions can be made. You can perform a **`dynamic_cast`** conversion from the `D` pointer to an `E` pointer, then a conversion (either **`dynamic_cast`** or an implicit conversion) from `E` to `B`, and finally an implicit conversion from `B` to `A`. For example:
 
 ```cpp
 // dynamic_cast_5.cpp
@@ -165,7 +165,7 @@ void f(D* pd) {
 }
 ```
 
-The **dynamic_cast** operator can also be used to perform a "cross cast." Using the same class hierarchy, it is possible to cast a pointer, for example, from the `B` subobject to the `D` subobject, as long as the complete object is of type `E`.
+The **`dynamic_cast`** operator can also be used to perform a "cross cast." Using the same class hierarchy, it is possible to cast a pointer, for example, from the `B` subobject to the `D` subobject, as long as the complete object is of type `E`.
 
 Considering cross casts, it is actually possible to do the conversion from a pointer to `D` to a pointer to the left-most `A` subobject in just two steps. You can perform a cross cast from `D` to `B`, then an implicit conversion from `B` to `A`. For example:
 
@@ -184,7 +184,7 @@ void f(D* pd) {
 }
 ```
 
-A null pointer value is converted to the null pointer value of the destination type by **dynamic_cast**.
+A null pointer value is converted to the null pointer value of the destination type by **`dynamic_cast`**.
 
 When you use `dynamic_cast < type-id > ( expression )`, if `expression` cannot be safely converted to type `type-id`, the run-time check causes the cast to fail. For example:
 

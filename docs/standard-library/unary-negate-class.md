@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: unary_negate Class"
 title: "unary_negate Class"
 ms.date: "02/21/2019"
 f1_keywords: ["functional/std::unary_negate"]

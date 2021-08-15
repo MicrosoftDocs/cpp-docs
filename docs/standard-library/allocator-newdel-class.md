@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: allocator_newdel Class"
 title: "allocator_newdel Class"
 ms.date: "11/04/2016"
 f1_keywords: ["allocators/stdext::allocators::allocator_newdel", "allocators/stdext::allocator_newdel", "stdext::allocators::allocator_newdel"]
@@ -18,13 +19,12 @@ class allocator_newdel;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*Type*|The type of elements allocated by the allocator.|
+*Type*\
+The type of elements allocated by the allocator.
 
 ## Remarks
 
-The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) macro passes this class as the *name* parameter in the following statement: `ALLOCATOR_DECL(CACHE_FREELIST stdext::allocators::max_none), SYNC_DEFAULT, allocator_newdel);`
+The [ALLOCATOR_DECL](allocators-functions.md#allocator_decl) macro passes this class as the *name* parameter in the following statement: `ALLOCATOR_DECL(CACHE_FREELIST stdext::allocators::max_none), SYNC_DEFAULT, allocator_newdel);`
 
 ## Requirements
 
@@ -34,4 +34,4 @@ The [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl)
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)
+[\<allocators>](allocators-header.md)

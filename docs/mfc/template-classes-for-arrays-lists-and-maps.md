@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Template Classes for Arrays, Lists, and Maps"
 title: "Template Classes for Arrays, Lists, and Maps"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.classes.template"]

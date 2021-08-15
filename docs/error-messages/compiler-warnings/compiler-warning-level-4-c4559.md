@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4559"
 title: "Compiler Warning (level 4) C4559"
 ms.date: "08/27/2018"
 f1_keywords: ["C4559"]
@@ -11,7 +12,7 @@ ms.assetid: ed542f60-454d-45cb-85da-987ede61b1ab
 
 ## Remarks
 
-A function was redefined or redeclared and the second definition or declaration added a **__declspec** modifier (*modifier*). This warning is informational. To fix this warning, delete one of the definitions.
+A function was redefined or redeclared and the second definition or declaration added a **`__declspec`** modifier (*modifier*). This warning is informational. To fix this warning, delete one of the definitions.
 
 ## Example
 

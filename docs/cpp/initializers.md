@@ -75,7 +75,7 @@ Zero initialization is the setting of a variable to a zero value implicitly conv
 
 - Char variables are initialized to `'\0'`.
 
-- Pointers are initialized to **nullptr**.
+- Pointers are initialized to **`nullptr`**.
 
 - Arrays, [POD](../standard-library/is-pod-class.md) classes, structs, and unions have their members initialized to a zero value.
 
@@ -108,7 +108,7 @@ int main() {
 
 ### <a name="default_initialization"></a> Default initialization
 
-Default initialization for classes, structs, and unions is initialization with a default constructor. The default constructor can be called with no initialization expression or with the **new** keyword:
+Default initialization for classes, structs, and unions is initialization with a default constructor. The default constructor can be called with no initialization expression or with the **`new`** keyword:
 
 ```cpp
 MyClass mc1;
@@ -175,7 +175,7 @@ Value initialization occurs in the following cases:
 
 - an anonymous temporary object is initialized using empty parentheses or braces
 
-- an object is initialized with the **new** keyword plus empty parentheses or braces
+- an object is initialized with the **`new`** keyword plus empty parentheses or braces
 
 Value initialization does the following:
 
@@ -266,9 +266,9 @@ Direct initialization is initialization using (non-empty) braces or parentheses.
 
 - a variable is initialized with non-empty braces or parentheses
 
-- a variable is initialized with the **new** keyword plus non-empty braces or parentheses
+- a variable is initialized with the **`new`** keyword plus non-empty braces or parentheses
 
-- a variable is initialized with **static_cast**
+- a variable is initialized with **`static_cast`**
 
 - in a constructor, base classes and non-static members are initialized with an initializer list
 
@@ -309,7 +309,7 @@ List initialization occurs when a variable is initialized using a braced initial
 
 - a variable is initialized
 
-- a class is initialized with the **new** keyword
+- a class is initialized with the **`new`** keyword
 
 - an object is returned from a function
 
@@ -515,7 +515,7 @@ Reference-type variables can be declared without initializers only in the follow
     class c {public:   int& i;};
     ```
 
-- Declaration of a variable explicitly specified as **extern**. For example:
+- Declaration of a variable explicitly specified as **`extern`**. For example:
 
     ```cpp
     extern int& iVal;
@@ -523,13 +523,13 @@ Reference-type variables can be declared without initializers only in the follow
 
 When initializing a reference-type variable, the compiler uses the decision graph shown in the following figure to select between creating a reference to an object or creating a temporary object to which the reference points.
 
-![Decision graph for initialization of reference types](../cpp/media/vc38s71.gif "Decision graph for initialization of reference types") <br/>
+![Decision graph for initialization of reference types.](../cpp/media/vc38s71.gif "Decision graph for initialization of reference types") <br/>
 Decision graph for initialization of reference types
 
-References to **volatile** types (declared as **volatile** *typename*<strong>&</strong> *identifier*) can be initialized with **volatile** objects of the same type or with objects that have not been declared as **volatile**. They cannot, however, be initialized with **const** objects of that type. Similarly, references to **const** types (declared as **const** *typename*<strong>&</strong> *identifier*) can be initialized with **const** objects of the same type (or anything that has a conversion to that type or with objects that have not been declared as **const**). They cannot, however, be initialized with **volatile** objects of that type.
+References to **`volatile`** types (declared as **`volatile`** *typename*<strong>&</strong> *identifier*) can be initialized with **`volatile`** objects of the same type or with objects that have not been declared as **`volatile`**. They cannot, however, be initialized with **`const`** objects of that type. Similarly, references to **`const`** types (declared as **`const`** *typename*<strong>&</strong> *identifier*) can be initialized with **`const`** objects of the same type (or anything that has a conversion to that type or with objects that have not been declared as **`const`**). They cannot, however, be initialized with **`volatile`** objects of that type.
 
-References that are not qualified with either the **const** or **volatile** keyword can be initialized only with objects declared as neither **const** nor **volatile**.
+References that are not qualified with either the **`const`** or **`volatile`** keyword can be initialized only with objects declared as neither **`const`** nor **`volatile`**.
 
 ### Initialization of external variables
 
-Declarations of automatic, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as **extern**.
+Declarations of automatic, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as **`extern`**.

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: filesystem_error Class"
 title: "filesystem_error Class"
 ms.date: "09/10/2018"
 f1_keywords: ["filesystem/std::experimental::filesystem::filesystem_error"]
@@ -22,13 +23,13 @@ The class serves as the base class for all exceptions thrown to report an error 
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[filesystem_error](#filesystem_error)|Constructs a `filesystem_error` message.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[path1](#path1)|Returns `mypval1`|
 |[path2](#path2)|Returns `mypval2`|

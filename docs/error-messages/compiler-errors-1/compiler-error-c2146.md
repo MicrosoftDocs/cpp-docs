@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2146"
 title: "Compiler Error C2146"
 ms.date: "11/04/2016"
 f1_keywords: ["C2146"]
@@ -17,7 +18,7 @@ The compiler expected `token` and found `identifier` instead.  Possible causes:
 
 This error may be caused by a typographical error. Error [C2065](../../error-messages/compiler-errors-1/compiler-error-c2065.md) usually precedes this error.
 
-## Example
+## Examples
 
 The following sample generates C2146.
 
@@ -36,9 +37,7 @@ int main() {
 }
 ```
 
-## Example
-
-This error can also be generated as a result of compiler conformance work that was done for Visual Studio .NET 2003: missing `typename` keyword.
+This error can also be generated as a result of compiler conformance work that was done for Visual Studio .NET 2003: missing **`typename`** keyword.
 
 The following sample compiles in Visual Studio .NET 2002 but will fail in Visual Studio .NET 2003:
 
@@ -60,8 +59,6 @@ X<T>::Y func() { }   // C2146
 template <typename T>
 typename X<T>::Y func() { }
 ```
-
-## Example
 
 You will also see this error as a result of compiler conformance work that was done for Visual Studio .NET 2003: explicit specializations no longer find template parameters from primary template.
 

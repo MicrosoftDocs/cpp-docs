@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Providing Flicker-Free Activation"
 title: "Providing Flicker-Free Activation"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["MFC ActiveX controls [MFC], flicker-free", "flicker, MFC ActiveX controls", "activation [MFC], flicker-free"]

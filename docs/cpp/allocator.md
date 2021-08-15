@@ -1,20 +1,19 @@
 ---
+description: "Learn more about: `allocator`"
 title: "allocator"
 ms.date: "03/21/2019"
 f1_keywords: ["allocator_cpp"]
 helpviewer_keywords: ["__declspec keyword [C++], allocator", "allocator __declspec keyword"]
 ---
-# allocator
+# `allocator`
 
 **Microsoft Specific**
 
-The **allocator** declaration specifier can be applied to custom memory-allocation functions to make the allocations visible via Event Tracing for Windows (ETW).
+The **`allocator`** declaration specifier can be applied to custom memory-allocation functions to make the allocations visible via Event Tracing for Windows (ETW).
 
 ## Syntax
 
-```
-   __declspec(allocator)
-```
+> **`__declspec(allocator)`**
 
 ## Remarks
 

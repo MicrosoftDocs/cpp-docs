@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler fatal errors C999 through C1999"
 title: "Compiler fatal errors C999 through C1999"
 ms.date: "04/21/2019"
 f1_keywords: ["C1034", "C1036", "C1041", "C1048", "C1063", "C1069", "C1101", "C1102", "C1105", "C1110", "C1111", "C1112", "C1114", "C1193", "C1195", "C1300", "C1301", "C1302", "C1306",  "C1384", "C1451", "C1505", "C1901"]
@@ -81,7 +82,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Fatal error C1087](fatal-error-c1087.md)|cannot tell *type* file: '*file*': *message*|
 |[Fatal error C1088](fatal-error-c1088.md)|cannot flush *type* file: '*file*': *message*|
 |[Fatal error C1089](fatal-error-c1089.md)|cannot truncate *type* file: '*file*': *message*|
-|Fatal error C1090|PDB API call failed, error code '*code*': '*message*'|
+|[Fatal error C1090](fatal-error-c1090.md)|PDB API call failed, error code '*code*': '*message*'|
 |[Fatal error C1091](fatal-error-c1091.md)|compiler limit: string exceeds *number* bytes in length|
 |[Fatal error C1092](../../error-messages/compiler-errors-1/fatal-error-c1092.md)|Edit and Continue does not support changes to data types; build required|
 |[Fatal error C1093](../../error-messages/compiler-errors-1/fatal-error-c1093.md)|API call '*function*' failed '*HRESULT*' : '*description*'|
@@ -99,7 +100,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Fatal error C1109](fatal-error-c1109.md)|unable to find '*symbol*' in DLL '*file*'|
 |Fatal error C1110|too many nested template/generic definitions|
 |Fatal error C1111|too many template/generic parameters|
-|Fatal error C1112|compiler limit: `'number`' too many macro arguments, only *number* allowed|
+|Fatal error C1112|compiler limit: '*number*' too many macro arguments, only *number* allowed|
 |[Fatal error C1113](../../error-messages/compiler-errors-1/fatal-error-c1113.md)|#using failed on '*file*'|
 |Fatal error C1114|'*file*': WinRT does not support #using of a managed assembly|
 |[Fatal error C1120](../../error-messages/compiler-errors-1/fatal-error-c1120.md)|call to GetProcAddress failed for '*function*'|

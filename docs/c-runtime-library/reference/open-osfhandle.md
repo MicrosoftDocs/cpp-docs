@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _open_osfhandle"
 title: "_open_osfhandle"
 ms.date: "4/2/2020"
 api_name: ["_open_osfhandle", "_o__open_osfhandle"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_open_osfhandle", "open_osfhandle"]
@@ -40,8 +41,8 @@ The **_open_osfhandle** function allocates a C run-time file descriptor. It asso
 
 These manifest constants are defined in \<fcntl.h>:
 
-|||
-|-|-|
+| Constant | Description |
+|--|--|
 | **\_O\_APPEND** | Positions a file pointer to the end of the file before every write operation. |
 | **\_O\_RDONLY** | Opens the file for reading only. |
 | **\_O\_TEXT** | Opens the file in text (translated) mode. |

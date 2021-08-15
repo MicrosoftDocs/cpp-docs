@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;regex&gt; functions"
 title: "&lt;regex&gt; functions"
 ms.date: "09/10/2018"
 f1_keywords: ["regex/std::regex_match", "regex/std::regex_replace", "regex/std::regex_search", "regex/std::swap"]
@@ -7,7 +8,7 @@ helpviewer_keywords: ["std::regex_match [C++]", "std::regex_replace [C++]", "std
 ---
 # &lt;regex&gt; functions
 
-|||
+|Name|Description|
 |-|-|
 |[regex_match](#regex_match)|Tests whether a regular expression matches the entire target string.|
 |[regex_replace](#regex_replace)|Replaces matched regular expressions.|

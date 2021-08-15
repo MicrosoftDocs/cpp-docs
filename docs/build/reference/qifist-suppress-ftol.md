@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /QIfist (Suppress _ftol)"
 title: "/QIfist (Suppress _ftol)"
 ms.date: "11/04/2016"
 f1_keywords: ["/qifist"]
@@ -43,9 +44,7 @@ The **/QIfist** option is deprecated starting in Visual Studio 2005. The compile
 
 1. Open the project's **Property Pages** dialog box. For details, see [Set C++ compiler and build properties in Visual Studio](../working-with-project-properties.md).
 
-1. Click the **C/C++** folder.
-
-1. Click the **Command Line** property page.
+1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
 1. Type the compiler option in the **Additional Options** box.
 

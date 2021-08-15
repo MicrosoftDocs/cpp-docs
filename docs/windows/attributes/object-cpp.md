@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: object (C++)"
 title: "object  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.object"]
@@ -27,9 +28,7 @@ See [nonbrowsable](nonbrowsable.md) for an example of how to use **object**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**interface**|
 |**Repeatable**|No|

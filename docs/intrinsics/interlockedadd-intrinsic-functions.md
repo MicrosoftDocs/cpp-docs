@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _InterlockedAdd intrinsic functions"
 title: "_InterlockedAdd intrinsic functions"
 ms.date: "09/02/2019"
 f1_keywords: ["_InterlockedAdd64_acq_cpp", "_InterlockedAdd64_acq", "_InterlockedAdd_acq", "_InterlockedAdd_nf", "_InterlockedAdd64_rel", "_InterlockedAdd64", "_InterlockedAdd_cpp", "_InterlockedAdd_rel_cpp", "_InterlockedAdd_rel", "_InterlockedAdd64_rel_cpp", "_InterlockedAdd64_cpp", "_InterlockedAdd_acq_cpp", "_InterlockedAdd64_nf", "_InterlockedAdd"]
@@ -81,7 +82,7 @@ The versions of these functions with the `_acq` or `_rel` suffixes perform an in
 
 These routines are only available as intrinsics.
 
-## Example
+## Example: `_InterlockedAdd`
 
 ```cpp
 // interlockedadd.cpp
@@ -102,13 +103,13 @@ int main()
 }
 ```
 
-## Output
+## Output: `_InterlockedAdd`
 
 ```Output
 0xffffff00 0xff0000 0xffffff00
 ```
 
-## Example
+## Example: `_InterlockedAdd64`
 
 ```cpp
 // interlockedadd64.cpp
@@ -132,7 +133,7 @@ int main()
 }
 ```
 
-## Output
+## Output: `_InterlockedAdd64`
 
 ```Output
 ff0000000000 + ff0000ffffffff = ffff00ffffffff

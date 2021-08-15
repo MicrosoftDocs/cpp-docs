@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCMenuButton Class"
 title: "CMFCMenuButton Class"
 ms.date: "07/15/2019"
 f1_keywords: ["CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton::CMFCMenuButton", "AFXMENUBUTTON/CMFCMenuButton::PreTranslateMessage", "AFXMENUBUTTON/CMFCMenuButton::SizeToContent", "AFXMENUBUTTON/CMFCMenuButton::m_bOSMenu", "AFXMENUBUTTON/CMFCMenuButton::m_bRightArrow", "AFXMENUBUTTON/CMFCMenuButton::m_bStayPressed", "AFXMENUBUTTON/CMFCMenuButton::m_hMenu", "AFXMENUBUTTON/CMFCMenuButton::m_nMenuResult", "AFXMENUBUTTON/CMFCMenuButton::m_bDefaultClick"]
@@ -153,16 +154,6 @@ BOOL  m_bDefaultClick;
 ### Remarks
 
 Setting m_bDefaultClick to false causes the button to show the menu when you click anywhere on the button.
-
-## <a name="m_nmenuresult"></a> CMFCMenuButton::m_nMenuResult
-
-An integer that indicates which item the user selects from the pop-up menu.
-
-```
-int m_nMenuResult;
-```
-
-### Remarks
 
 ## <a name="pretranslatemessage"></a> CMFCMenuButton::PreTranslateMessage
 

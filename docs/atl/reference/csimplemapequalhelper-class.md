@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSimpleMapEqualHelper Class"
 title: "CSimpleMapEqualHelper Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CSimpleMapEqualHelper", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelper", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualKey", "ATLSIMPCOLL/ATL::CSimpleMapEqualHelper::IsEqualValue"]

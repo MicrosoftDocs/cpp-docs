@@ -8,7 +8,7 @@ ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
 
 Visual Studio supports multiple platform toolsets. That means it's possible to target operating systems and runtime libraries that aren't supported by the default toolset. For example, by switching the platform toolset, you can use the Visual Studio 2017 C++ compiler to create apps that target Windows XP and Windows Server 2003. You can also use older platform toolsets to maintain binary-compatible legacy code and still take advantage of the latest features of the Visual Studio IDE.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 The v142 toolset supplied in Visual Studio 2019 doesn't include support for creating code for Windows XP. Support for Windows XP development by using the Visual Studio 2017 v141_xp toolset is available as an individual component option in the Visual Studio Installer.
 
@@ -16,13 +16,13 @@ The v142 toolset supplied in Visual Studio 2019 doesn't include support for crea
 
 ## Install the Windows XP platform toolset
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 To get the Visual Studio 2017 platform toolset and components to target Windows XP and Windows Server 2003, run the Visual Studio Installer. When you initially install Visual Studio or when you modify an existing installation, make sure the **Desktop development with C++** workload is selected. In the list of optional components for this workload, choose **Windows XP support for C++**, and then choose **Install** or **Modify**.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 To get the v141_xp platform toolset and components to target Windows XP and Windows Server 2003, run the Visual Studio Installer. When you initially install Visual Studio, or when you modify an existing installation, make sure the **Desktop development with C++** workload is selected. In the **Individual components** tab, under **Compilers, build tools, and runtimes**, choose **C++ Windows XP Support for VS 2017 (v141) tools \[Deprecated]**, and then choose **Install** or **Modify**.
 
@@ -78,4 +78,4 @@ Because of differences in platform and library support, the development experien
 
 - **Building HLSL**
 
-   The Windows XP toolset doesn't compile HLSL source code files by default. To compile HLSL files, download and install the June 2010 DirectX SDK, and then set the project's VC directories to include it. For more information, see the "DirectX SDK Does Not Register Include/Library Paths with Visual Studio 2010" section of the [June 2010 DirectX SDK download page](https://www.microsoft.com/download/details.aspx?displaylang=en&id=6812).
+   The Windows XP toolset doesn't compile HLSL source code files by default. To compile HLSL files, download and install the June 2010 DirectX SDK, and then set the project's VC directories to include it. For more information, see the "DirectX SDK Does Not Register Include/Library Paths with Visual Studio 2010" section of the [June 2010 DirectX SDK download page](https://web.archive.org/web/20161026183606/https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=6812) (Archived link).

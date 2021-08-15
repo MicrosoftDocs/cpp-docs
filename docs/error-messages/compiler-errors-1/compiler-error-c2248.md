@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2248"
 title: "Compiler Error C2248"
 ms.date: "11/04/2016"
 f1_keywords: ["C2248"]
@@ -9,7 +10,7 @@ ms.assetid: 7a3ba0e8-d3b9-4bb9-95db-81ef17e31d23
 
 '*member*' : cannot access '*access_level*' member declared in class '*class*'
 
-Members of a derived class cannot access `private` members of a base class. You cannot access `private` or `protected` members of class instances.
+Members of a derived class cannot access **`private`** members of a base class. You cannot access **`private`** or **`protected`** members of class instances.
 
 ## Example
 

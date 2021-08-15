@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCToolBarsCustomizeDialog Class"
 title: "CMFCToolBarsCustomizeDialog Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCToolBarsCustomizeDialog", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::CMFCToolBarsCustomizeDialog", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::FillAllCommandsList", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::FillCategoriesComboBox", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::FillCategoriesListBox", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::GetCommandName", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::GetCountInCategory", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::GetFlags", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::OnInitDialog", "AFXTOOLBARSCUSTOMIZEDIALOG/CMFCToolBarsCustomizeDialog::PostNcDestroy"]
@@ -476,7 +477,7 @@ The set of flags that affect the behavior of the dialog box.
 
 This method retrieves the value of the *uiFlags* parameter that is passed to the constructor. The return value can be one or more of the following values:
 
-|||
+|Name|Description|
 |-|-|
 |AFX_CUSTOMIZE_MENU_SHADOWS|Allows the user to specify the shadow appearance of the menu.  |
 |AFX_CUSTOMIZE_TEXT_LABELS|Allows the user to specify whether text labels are shown underneath the toolbar button images.  |
@@ -691,7 +692,7 @@ void ReplaceButton(
 [in] Specifies the command of the button to be replaced.
 
 *button*<br/>
-[in] A **const** reference to the toolbar button object that replaces the old button.
+[in] A **`const`** reference to the toolbar button object that replaces the old button.
 
 ### Remarks
 

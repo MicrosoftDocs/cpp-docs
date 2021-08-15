@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Code analysis for C/C++ overview"
 title: Code analysis for C/C++ overview
 ms.date: 04/28/2018
 ms.topic: conceptual
@@ -39,7 +40,7 @@ C:\>cl /analyze Sample.cpp
 
 ## #pragma support
 
-You can use the `#pragma` directive to treat warnings as errors; enable or disable warnings, and suppress warnings for individual lines of code. For more information, see [Pragma Directives and the __Pragma Keyword](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
+You can use the `#pragma` directive to treat warnings as errors; enable or disable warnings, and suppress warnings for individual lines of code. For more information, see [Pragma directives and the `__pragma` and `_Pragma` keywords](../preprocessor/pragma-directives-and-the-pragma-keyword.md).
 
 ## Annotation support
 
@@ -51,7 +52,7 @@ You might want to require that all source code check-ins satisfy certain policie
 
 ## Team Build integration
 
-You can use the integrated features of the build system to run code analysis tool as a step of the Azure DevOps build process. For more information, see [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+You can use the integrated features of the build system to run code analysis tool as a step of the Azure DevOps build process. For more information, see [Azure Pipelines](/azure/devops/pipelines/index).
 
 ## See also
 

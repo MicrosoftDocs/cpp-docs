@@ -1,8 +1,8 @@
 ---
+description: "Learn more about: Compiler Options"
 title: "MSVC Compiler Options"
-ms.date: "05/06/2019"
+ms.date: "12/14/2020"
 helpviewer_keywords: ["cl.exe compiler", "x86 MSVC compiler", "ARM MSVC compiler", "compiler options, C++", "x64 MSVC compiler"]
-ms.assetid: ed3376c8-bef4-4c9a-80e9-3b5da232644c
 ---
 # Compiler Options
 
@@ -13,7 +13,7 @@ cl.exe is a tool that controls the Microsoft C++ (MSVC) C and C++ compilers and 
 
 The compilers produce Common Object File Format (COFF) object (.obj) files. The linker produces executable (.exe) files or dynamic-link libraries (DLLs).
 
-Note that all compiler options are case sensitive. You may use either a forward slash (`/`) or a dash (`-`) to specify a compiler option.
+All compiler options are case-sensitive. You may use either a forward slash (`/`) or a dash (`-`) to specify a compiler option.
 
 To compile without linking, use the [/c](c-compile-without-linking.md) option.
 

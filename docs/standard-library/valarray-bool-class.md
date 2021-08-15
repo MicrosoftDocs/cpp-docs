@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: valarray&lt;bool&gt; Class"
 title: "valarray&lt;bool&gt; Class"
 ms.date: "11/04/2016"
 f1_keywords: ["valarray<bool>", "valarray/std::valarray<bool>"]
@@ -7,7 +8,7 @@ ms.assetid: fc0e7121-4758-4ea5-86c3-f04448f04acf
 ---
 # valarray&lt;bool&gt; Class
 
-A specialized version of the class template **valarray\<Type>** to elements of type **bool**.
+A specialized version of the class template **valarray\<Type>** to elements of type **`bool`**.
 
 ## Syntax
 

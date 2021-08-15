@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IRowsetChangeImpl Class"
 title: "IRowsetChangeImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["ATL::IRowsetChangeImpl", "IRowsetChangeImpl", "ATL.IRowsetChangeImpl", "ATL.IRowsetChangeImpl.DeleteRows", "ATL::IRowsetChangeImpl::DeleteRows", "IRowsetChangeImpl.DeleteRows", "DeleteRows", "IRowsetChangeImpl::DeleteRows", "ATL.IRowsetChangeImpl.InsertRow", "InsertRow", "IRowsetChangeImpl.InsertRow", "ATL::IRowsetChangeImpl::InsertRow", "IRowsetChangeImpl::InsertRow", "IRowsetChangeImpl::SetData", "ATL.IRowsetChangeImpl.SetData", "IRowsetChangeImpl.SetData", "ATL::IRowsetChangeImpl::SetData", "IRowsetChangeImpl::FlushData", "IRowsetChangeImpl.FlushData", "FlushData"]
@@ -46,7 +47,7 @@ The storage unit for all row handles held by the provider.
 
 ### Interface Methods (Used with IRowsetChange)
 
-|||
+| Name | Description |
 |-|-|
 |[DeleteRows](#deleterows)|Deletes rows from the rowset.|
 |[InsertRow](#insertrow)|Inserts a row into the rowset.|
@@ -54,7 +55,7 @@ The storage unit for all row handles held by the provider.
 
 ### Implementation Method (Callback)
 
-|||
+| Name | Description |
 |-|-|
 |[FlushData](#flushdata)|Overridden by provider to commit data to its store.|
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3225"
 title: "Compiler Error C3225"
 ms.date: "11/04/2016"
 f1_keywords: ["C3225"]
@@ -13,7 +14,7 @@ The generic type argument was not of the correct type.
 
 For more information, see [Generics](../../extensions/generics-cpp-component-extensions.md).
 
-## Example
+## Examples
 
 You cannot instantiate a generic type with a native type. The following sample generates C3225.
 
@@ -33,8 +34,6 @@ int main() {
 }
 ```
 
-## Example
-
 The following sample creates a component using C#. Notice that the constraint specifies that the generic type can only be instantiated with a value type.
 
 ```
@@ -43,8 +42,6 @@ The following sample creates a component using C#. Notice that the constraint sp
 // a C# program
 public class MyList<T> where T: struct {}
 ```
-
-## Example
 
 This sample consumes the C#-authored component, and violates the constraint that MyList can only be instantiated with a value type other than <xref:System.Nullable>. The following sample generates C3225.
 

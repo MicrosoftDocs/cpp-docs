@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: boyer_moore_horspool_searcher class"
 title: "boyer_moore_horspool_searcher class"
 ms.date: "08/03/2019"
 f1_keywords: ["functional/std::boyer_moore_horspool_searcher"]
@@ -32,12 +33,12 @@ class boyer_moore_horspool_searcher
 
 ## Members
 
-| | |
+| Member | Description |
 | - | - |
 | **Constructor** | |
-| [boyer_moore_horspool_searcher](#boyer-moore-horspool-searcher-constructor) | |
+| [boyer_moore_horspool_searcher](#boyer-moore-horspool-searcher-constructor) | Constructs a searcher instance. |
 | **Operators** | |
-| [operator()](#operator-call) | |
+| [operator()](#operator-call) | Invokes the operation on the sequence. |
 
 ## <a name="boyer-moore-horspool-searcher-constructor"></a> boyer_moore_horspool_searcher constructor
 

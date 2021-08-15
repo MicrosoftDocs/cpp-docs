@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: out_of_range Class"
 title: "out_of_range Class"
 ms.date: "11/04/2016"
 f1_keywords: ["stdexcept/std::out_of_range"]
@@ -23,7 +24,7 @@ public:
 
 ## Remarks
 
-The value returned by [what](../standard-library/exception-class.md) is a copy of **message**`.`[data](../standard-library/basic-string-class.md#data).
+The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](../standard-library/exception-class.md) and [`data`](../standard-library/basic-string-class.md#data).
 
 ## Example
 

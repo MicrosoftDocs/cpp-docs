@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 3) C4191"
 title: "Compiler Warning (level 3) C4191"
 ms.date: "11/04/2016"
 f1_keywords: ["C4191"]
@@ -17,11 +18,11 @@ Several operations involving function pointers are considered unsafe:
 
 - Argument or return types with different sizes, type categories, or classifications.
 
-- Differing argument list lengths (on `__cdecl`, only on cast from longer list to shorter list, even if shorter is varargs).
+- Differing argument list lengths (on **`__cdecl`**, only on cast from longer list to shorter list, even if shorter is varargs).
 
-- Pointer to data (other than **void**<strong>\*</strong>) aliased against a pointer to function.
+- Pointer to data (other than **`void`**<strong>\*</strong>) aliased against a pointer to function.
 
-- Any other type difference that would yield an error or warning on a `reinterpret_cast`.
+- Any other type difference that would yield an error or warning on a **`reinterpret_cast`**.
 
 Calling this function through the result pointer might cause your program to crash.
 

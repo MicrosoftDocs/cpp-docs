@@ -1,0 +1,60 @@
+### YamlMime:Landing
+title: Linux development with C++ | Create and debug applications for Linux # < 60 chars
+summary: Use C++ in Visual Studio 2017 and later to create and debug applications for Linux. # < 160 chars
+
+metadata:
+  title: Linux development with C++ # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to use C++ in Visual Studio 2017 and later to create and debug applications for Linux.
+  ms.topic: landing-page
+  author: corob-msft
+  ms.author: corob
+  ms.date: 04/26/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Create Linux C++ apps in Visual Studio
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Download, install, and set up the Linux workload
+            url: download-install-and-setup-the-linux-development-workload.md
+      - linkListType: how-to-guide
+        links:
+          - text: Connect to your target Linux system
+            url: connect-to-your-remote-linux-computer.md
+      - linkListType: reference
+        links:
+          - text: ConnectionManager reference
+            url: connectionmanager-reference.md
+
+  # Card (optional)
+  - title: Build Linux projects in Visual Studio
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Create a new Linux project
+            url: create-a-new-linux-project.md
+          - text: Configure a Linux project
+            url: configure-a-linux-project.md
+          - text: Deploy, run, and debug your Linux project
+            url: deploy-run-and-debug-your-linux-project.md
+      - linkListType: reference
+        links:
+          - text: Linux Project Property Page Reference
+            url: prop-pages-linux.md
+
+  # Card
+  - title: Build Linux CMake projects in Visual Studio
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Create and configure a Linux CMake project
+            url: cmake-linux-project.md
+      - linkListType: tutorial
+        links:
+          - text: Create C++ cross-platform projects in Visual Studio
+            url: ../build/get-started-linux-cmake.md

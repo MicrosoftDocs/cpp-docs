@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Provider Support for Bookmarks"
 title: "Provider Support for Bookmarks"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["IRowsetLocate class, provider support for bookmarks", "OLE DB provider templates, bookmarks", "bookmarks, OLE DB", "IRowsetLocate class", "OLE DB providers, bookmark support"]
@@ -139,7 +140,7 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(RUpdateRowset* pThis, ULONG* pcCols)
 
 `GetColumnInfo` first checks to see whether a property called `DBPROP_IRowsetLocate` is set. OLE DB has properties for each of the optional interfaces off the rowset object. If the consumer wants to use one of these optional interfaces, it sets a property to true. The provider can then check this property and take special action based on it.
 
-In your implementation, you get the property by using the pointer to the command object. The `pThis` pointer represents the rowset or command class. Because you use templates here, you have to pass this in as a **void** pointer or the code doesn't compile.
+In your implementation, you get the property by using the pointer to the command object. The `pThis` pointer represents the rowset or command class. Because you use templates here, you have to pass this in as a **`void`** pointer or the code doesn't compile.
 
 Specify a static array to hold the column information. If the consumer doesn't want the bookmark column, an entry in the array is wasted. You can dynamically allocate this array, but you would need to make sure to destroy it properly. This example defines and uses the macros ADD_COLUMN_ENTRY and ADD_COLUMN_ENTRY_EX to insert the information into the array. You can add the macros to the *Custom*RS.H file as shown in the following code:
 
@@ -224,7 +225,7 @@ HRESULT hr = table.Compare(table.dwBookmark, table.dwBookmark,
 }
 ```
 
-The **while** loop contains code to call the `Compare` method in the `IRowsetLocate` interface. The code you have should always pass because you're comparing the exact same bookmarks. Also, store one bookmark in a temporary variable so that you can use it after the **while** loop finishes to call the `MoveToBookmark` function in the consumer templates. The `MoveToBookmark` function calls the `GetRowsAt` method in `IRowsetLocate`.
+The **`while`** loop contains code to call the `Compare` method in the `IRowsetLocate` interface. The code you have should always pass because you're comparing the exact same bookmarks. Also, store one bookmark in a temporary variable so that you can use it after the **`while`** loop finishes to call the `MoveToBookmark` function in the consumer templates. The `MoveToBookmark` function calls the `GetRowsAt` method in `IRowsetLocate`.
 
 You also need to update the user record in the consumer. Add an entry in the class to handle a bookmark and an entry in the COLUMN_MAP:
 

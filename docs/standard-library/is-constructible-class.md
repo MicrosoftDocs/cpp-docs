@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: is_constructible Class"
 title: "is_constructible Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::is_constructible"]
@@ -26,7 +27,7 @@ The argument types to match in a constructor of *T*.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type *T* is constructible by using the argument types in *Args*, otherwise it holds false. Type *T* is constructible if the variable definition `T t(std::declval<Args>()...);` is well-formed. Both *T* and all the types in *Args* must be complete types, **void**, or arrays of unknown bound.
+An instance of the type predicate holds true if the type *T* is constructible by using the argument types in *Args*, otherwise it holds false. Type *T* is constructible if the variable definition `T t(std::declval<Args>()...);` is well-formed. Both *T* and all the types in *Args* must be complete types, **`void`**, or arrays of unknown bound.
 
 ## Requirements
 

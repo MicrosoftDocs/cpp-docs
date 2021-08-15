@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;vector&gt;"
 title: "&lt;vector&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<vector>"]
@@ -85,7 +86,7 @@ The second (right) vector in a compare operation.
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator! =](../standard-library/vector-operators.md#op_neq)|Tests if the vector object on the left side of the operator is not equal to the vector object on the right side.|
 |[operator<](../standard-library/vector-operators.md#op_lt)|Tests if the vector object on the left side of the operator is less than the vector object on the right side.|
@@ -96,16 +97,16 @@ The second (right) vector in a compare operation.
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[vector Class](../standard-library/vector-class.md)|A class template of sequence containers that arrange elements of a given type in a linear arrangement and allow fast random access to any element.|
 
 ### Specializations
 
-|||
+|Name|Description|
 |-|-|
 |hash|Returns a hash of the vector.|
-|[vector\<bool> Class](../standard-library/vector-bool-class.md)|A full specialization of the class template vector for elements of type `bool` with an allocator for the underlying type used by the specialization.|
+|[vector\<bool> Class](../standard-library/vector-bool-class.md)|A full specialization of the class template vector for elements of type **`bool`** with an allocator for the underlying type used by the specialization.|
 
 ## Requirements
 

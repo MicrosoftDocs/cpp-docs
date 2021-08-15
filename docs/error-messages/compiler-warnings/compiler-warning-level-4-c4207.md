@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4207"
 title: "Compiler Warning (level 4) C4207"
 ms.date: "11/04/2016"
 f1_keywords: ["C4207"]
@@ -9,7 +10,7 @@ ms.assetid: f4e09e3e-ac87-4489-8e3f-c8f76b82e721
 
 nonstandard extension used : extended initializer form
 
-With Microsoft extensions (/Ze), you can initialize an unsized array of `char` using a string within braces.
+With Microsoft extensions (/Ze), you can initialize an unsized array of **`char`** using a string within braces.
 
 ## Example
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: default_searcher Class"
 title: "default_searcher class"
 ms.date: "08/03/2019"
 f1_keywords: ["functional/std::default_searcher"]
@@ -28,12 +29,12 @@ class default_searcher
 
 ## Members
 
-| | |
+| Member | Description |
 | - | - |
 | **Constructor** | |
-| [default_searcher](#default-searcher-constructor) | |
+| [default_searcher](#default-searcher-constructor) | Constructs a searcher instance. |
 | **Operators** | |
-| [operator()](#operator-call) | |
+| [operator()](#operator-call) | Invokes the operation on the sequence. |
 
 ## <a name="default-searcher-constructor"></a> default_searcher constructor
 
@@ -66,7 +67,7 @@ The optional equality comparison predicate for sequence elements. If an equality
 
 Throws any exception thrown by the copy constructor of the *BinaryPredicate* or *ForwardIterator* types.
 
-This class is new in C++17. C++20 made the constructor `constexpr`.
+This class is new in C++17. C++20 made the constructor **`constexpr`**.
 
 ## <a name="operator-call"></a> operator()
 
@@ -102,7 +103,7 @@ The second iterator of the pair is *last* if *i** is *last*. Otherwise, it's the
 
 `std::next( i, std::distance( pat_first, pat_last ))`.
 
-This class is new in C++17. C++20 made the call operator `constexpr`.
+This class is new in C++17. C++20 made the call operator **`constexpr`**.
 
 ## See also
 

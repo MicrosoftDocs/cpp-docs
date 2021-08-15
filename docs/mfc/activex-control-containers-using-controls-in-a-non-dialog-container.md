@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ActiveX Control Containers: Using Controls in a Non-Dialog Container"
 title: "ActiveX Control Containers: Using Controls in a Non-Dialog Container"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Create method [MFC], ActiveX controls", "CreateControl method [MFC]", "ActiveX controls [MFC], creating", "ActiveX control containers [MFC], non-dialog containers", "ActiveX control containers [MFC], inserting controls"]
@@ -14,7 +15,7 @@ The **Create** member function has the following parameters:
 A pointer to the text to be displayed in the control's Text or Caption property (if any).
 
 *dwStyle*<br/>
-Windows styles. For a complete list, see [CWnd::CreateControl](../mfc/reference/cwnd-class.md#createcontrol).
+Windows styles. For a complete list, see [CWnd::CreateControl](reference/cwnd-class.md#createcontrol).
 
 *rect*<br/>
 Specifies the control's size and position.
@@ -35,21 +36,21 @@ Implementing this feature is a four-step process.
 
 1. Insert CIRC.H in CMYVIEW.H, just before the `CMyView` class definition:
 
-   [!code-cpp[NVC_MFC_AxCont#12](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_1.h)]
+   [!code-cpp[NVC_MFC_AxCont#12](codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_1.h)]
 
 1. Add a member variable (of type `CCirc`) to the protected section of the `CMyView` class definition located in CMYVIEW.H:
 
-   [!code-cpp[NVC_MFC_AxCont#13](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_2.h)]
-    [!code-cpp[NVC_MFC_AxCont#14](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_3.h)]
+   [!code-cpp[NVC_MFC_AxCont#13](codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_2.h)]
+    [!code-cpp[NVC_MFC_AxCont#14](codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_3.h)]
 
 1. Add a `WM_CREATE` message handler to class `CMyView`.
 
-1. In the handler function, `CMyView::OnCreate`, make a call to the control's `Create` function using the **this** pointer as the parent window:
+1. In the handler function, `CMyView::OnCreate`, make a call to the control's `Create` function using the **`this`** pointer as the parent window:
 
-   [!code-cpp[NVC_MFC_AxCont#15](../mfc/codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_4.cpp)]
+   [!code-cpp[NVC_MFC_AxCont#15](codesnippet/cpp/activex-control-containers-using-controls-in-a-non-dialog-container_4.cpp)]
 
 1. Rebuild the project. A Circ control will be created dynamically whenever the application's view is created.
 
 ## See also
 
-[ActiveX Control Containers](../mfc/activex-control-containers.md)
+[ActiveX Control Containers](activex-control-containers.md)

@@ -1,6 +1,8 @@
 ---
 title: "Recommendations for Choosing Between Functions and Macros"
+description: "Explains the differences between using macros vs functions in the Microsoft C runtime library (CRT)"
 ms.date: "11/04/2016"
+ms.topic: "conceptual"
 f1_keywords: ["c.functions"]
 helpviewer_keywords: ["functions [CRT], vs. macros", "macros, vs. functions"]
 ms.assetid: 18a633d6-cf1c-470c-a649-fa7677473e2b
@@ -35,4 +37,5 @@ If you need to choose between a function and a macro implementation of a library
 
 ## See also
 
-[CRT Library Features](../c-runtime-library/crt-library-features.md)
+[Type-generic math](tgmath.md)\
+[C runtime (CRT) and C++ Standard Library (STL) `.lib` files](../c-runtime-library/crt-library-features.md)

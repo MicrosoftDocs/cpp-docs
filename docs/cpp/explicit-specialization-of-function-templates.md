@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Explicit Specialization of Function Templates"
 title: "Explicit Specialization of Function Templates"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["overriding, functions", "function templates, specialization", "explicit specialization of function templates", "declaring functions [C++], specialization of function template", "specialization of function templates"]
@@ -12,7 +13,7 @@ With a function template, you can define special behavior for a specific type by
 template<> void MySwap(double a, double b);
 ```
 
-This declaration enables you to define a different function for **double** variables. Like non-template functions, standard type conversions (such as promoting a variable of type **float** to **double**) are applied.
+This declaration enables you to define a different function for **`double`** variables. Like non-template functions, standard type conversions (such as promoting a variable of type **`float`** to **`double`**) are applied.
 
 ## Example
 

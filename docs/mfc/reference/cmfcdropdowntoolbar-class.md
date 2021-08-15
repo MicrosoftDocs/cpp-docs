@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCDropDownToolBar Class"
 title: "CMFCDropDownToolBar Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CMFCDropDownToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::AllowShowOnPaneMenu", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadBitmap", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnLButtonUp", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnMouseMove", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnSendCommand", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnUpdateCmdUI"]
@@ -39,7 +40,7 @@ A drop-down toolbar cannot be customized or docked, and it does not have a tear-
 
 The following illustration shows a `CMFCDropDownToolBar` object:
 
-![Example of CMFCDropDownToolbar](../../mfc/reference/media/cmfcdropdown.png "Example of CMFCDropDownToolbar")
+![Example of CMFCDropDownToolbar.](../../mfc/reference/media/cmfcdropdown.png "Example of CMFCDropDownToolbar")
 
 You create a `CMFCDropDownToolBar` object the same way you create an ordinary toolbar (see [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md)).
 

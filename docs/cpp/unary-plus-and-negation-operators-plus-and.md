@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Unary Plus and Negation Operators: + and -"
 title: "Unary Plus and Negation Operators: + and -"
 ms.date: "11/04/2016"
 f1_keywords: ["+", "-"]
@@ -18,7 +19,7 @@ ms.assetid: 2c58c4f4-0d92-4ae3-9d0c-1a6157875cc1
 
 The result of the unary plus operator (**+**) is the value of its operand. The operand to the unary plus operator must be of an arithmetic type.
 
-Integral promotion is performed on integral operands. The resultant type is the type to which the operand is promoted. Thus, the expression `+ch`, where `ch` is of type **char**, results in type **int**; the value is unmodified. See [Standard Conversions](standard-conversions.md) for more information about how the promotion is done.
+Integral promotion is performed on integral operands. The resultant type is the type to which the operand is promoted. Thus, the expression `+ch`, where `ch` is of type **`char`**, results in type **`int`**; the value is unmodified. See [Standard Conversions](standard-conversions.md) for more information about how the promotion is done.
 
 ## - operator
 

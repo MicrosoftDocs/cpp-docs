@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ATL HTTP Utility Functions"
 title: "ATL HTTP Utility Functions"
 ms.date: "11/04/2016"
 ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
@@ -7,7 +8,7 @@ ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
 
 These functions support manipulation of URLs.
 
-|||
+|Function|Description|
 |-|-|
 |[AtlCanonicalizeUrl](#atlcanonicalizeurl)|Canonicalizes a URL, which includes converting unsafe characters and spaces into escape sequences.|
 |[AtlCombineUrl](#atlcombineurl)|Combines a base URL and a relative URL into a single, canonical URL.|

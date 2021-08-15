@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Recommended Tags for Documentation Comments"
 title: "Recommended Tags for Documentation Comments (C++ documentation comments)"
 ms.date: "11/04/2016"
 ms.assetid: 6548e798-5235-4a38-9482-bdc7b88f40a9
@@ -16,14 +17,22 @@ Tags must immediately precede types or members.
 
 The compiler will process any tag that is valid XML. The following tags provide commonly used functionality in user documentation:
 
-||||
-|-|-|-|
-|[\<c>](c-visual-cpp.md)|[\<code>](code-visual-cpp.md)|[\<example>](example-visual-cpp.md)|
-|[\<exception>](exception-visual-cpp.md)1|[\<include>](include-visual-cpp.md)1|[\<list>](list-visual-cpp.md)|
-|[\<para>](para-visual-cpp.md)|[\<param>](param-visual-cpp.md)1|[\<paramref>](paramref-visual-cpp.md)1|
-|[\<permission>](permission-visual-cpp.md)1|[\<remarks>](remarks-visual-cpp.md)|[\<returns>](returns-visual-cpp.md)|
-|[\<see>](see-visual-cpp.md)1|[\<seealso>](seealso-visual-cpp.md)1|[\<summary>](summary-visual-cpp.md)|
-|[\<value>](value-visual-cpp.md)|||
+[`<c>`](c-visual-cpp.md)
+[`<code>`](code-visual-cpp.md)
+[`<example>`](example-visual-cpp.md)
+[`<exception>`](exception-visual-cpp.md)<sup>1</sup>
+[`<include>`](include-visual-cpp.md)<sup>1</sup>
+[`<list>`](list-visual-cpp.md)
+[`<para>`](para-visual-cpp.md)
+[`<param>`](param-visual-cpp.md)<sup>1</sup>
+[`<paramref>`](paramref-visual-cpp.md)<sup>1</sup>
+[`<permission>`](permission-visual-cpp.md)<sup>1</sup>
+[`<remarks>`](remarks-visual-cpp.md)
+[`<returns>`](returns-visual-cpp.md)
+[`<see>`](see-visual-cpp.md)<sup>1</sup>
+[`<seealso>`](seealso-visual-cpp.md)<sup>1</sup>
+[`<summary>`](summary-visual-cpp.md)
+[`<value>`](value-visual-cpp.md)
 
 1. Compiler verifies syntax.
 

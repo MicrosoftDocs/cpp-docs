@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C3100 Through C3199"
 title: "Compiler errors C3100 Through C3199"
 ms.date: "04/21/2019"
 f1_keywords: ["C3102", "C3105", "C3107", "C3108", "C3109", "C3111", "C3112", "C3119", "C3122", "C3123", "C3124", "C3125", "C3127", "C3128", "C3129", "C3143", "C3144", "C3146", "C3147", "C3148", "C3151", "C3158", "C3164", "C3165", "C3169", "C3177", "C3178", "C3184", "C3188", "C3191", "C3193"]
@@ -119,4 +120,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

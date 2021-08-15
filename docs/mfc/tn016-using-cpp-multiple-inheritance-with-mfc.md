@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN016: Using C++ Multiple Inheritance with MFC"
 title: "TN016: Using C++ Multiple Inheritance with MFC"
 ms.date: "06/28/2018"
 f1_keywords: ["vc.inheritance"]
@@ -21,7 +22,7 @@ The current implementation of `CRuntimeClass` does not support MI runtime type i
 
 The [CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) method will not correctly determine the type of an object if it has multiple base classes. Therefore, you cannot use [CObject](../mfc/reference/cobject-class.md) as a virtual base class, and all calls to `CObject` member functions such as [CObject::Serialize](../mfc/reference/cobject-class.md#serialize) and [CObject::operator new](../mfc/reference/cobject-class.md#operator_new) must have scope qualifiers so that C++ can disambiguate the appropriate function call. When a program uses MI within MFC, the class that contains the `CObject` base class needs to be the left-most class in the list of base classes.
 
-An alternative is to use the `dynamic_cast` operator. Casting an object with MI to one of its base classes will force the compiler to use the functions in the supplied base class. For more information, see [dynamic_cast Operator](../cpp/dynamic-cast-operator.md).
+An alternative is to use the **`dynamic_cast`** operator. Casting an object with MI to one of its base classes will force the compiler to use the functions in the supplied base class. For more information, see [dynamic_cast Operator](../cpp/dynamic-cast-operator.md).
 
 ## CObject - The Root of all Classes
 
@@ -43,7 +44,7 @@ myListWnd.Dump(afxDump); // compile time error, CFrameWnd::Dump or CObList::Dump
 
 ## Reimplementing CObject Methods
 
-When you create a new class that has two or more `CObject` derived base classes, you should reimplement the `CObject` methods that you want other people to use. Operators **new** and **delete** are mandatory and [Dump](../mfc/reference/cobject-class.md#dump) is recommended. The following example reimplements the **new** and **delete** operators and the `Dump` method:
+When you create a new class that has two or more `CObject` derived base classes, you should reimplement the `CObject` methods that you want other people to use. Operators **`new`** and **`delete`** are mandatory and [Dump](../mfc/reference/cobject-class.md#dump) is recommended. The following example reimplements the **`new`** and **`delete`** operators and the `Dump` method:
 
 ```cpp
 class CListWnd : public CFrameWnd, public CObList

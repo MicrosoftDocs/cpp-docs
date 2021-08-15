@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Precedence and order of evaluation"
 title: "Precedence and order of evaluation"
 ms.date: "07/11/2019"
 helpviewer_keywords: ["associativity of operators [C++]", "precedence [C++], operators", "data binding [C++], operator precedence", "operators [C++], precedence"]
@@ -15,7 +16,7 @@ The following table summarizes the precedence and associativity (the order in wh
 | Symbol <sup>1</sup> | Type of operation | Associativity |
 |-------------|-----------------------|-------------------|
 | `[` `]` `(` `)` `.` `->`<br/>`++` `--` (postfix) | Expression | Left to right |
-| **sizeof** `&` `*` `+` `-` `~` `!`<br/>`++` `--` (prefix) | Unary | Right to left |
+| **`sizeof`** `&` `*` `+` `-` `~` `!`<br/>`++` `--` (prefix) | Unary | Right to left |
 | *typecasts* | Unary | Right to left |
 | `*` `/` `%` | Multiplicative | Left to right |
 | `+` `-` | Additive | Left to right |

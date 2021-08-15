@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IAxWinHostWindow Interface"
 title: "IAxWinHostWindow Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IAxWinHostWindow", "ATLIFACE/ATL::IAxWinHostWindow", "ATLIFACE/ATL::AttachControl", "ATLIFACE/ATL::CreateControl", "ATLIFACE/ATL::CreateControlEx", "ATLIFACE/ATL::QueryControl", "ATLIFACE/ATL::SetExternalDispatch", "ATLIFACE/ATL::SetExternalUIHandler"]
@@ -22,7 +23,7 @@ interface IAxWinHostWindow : IUnknown
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[AttachControl](#attachcontrol)|Attaches an existing control to the host object.|
 |[CreateControl](#createcontrol)|Creates a control and attaches it to the host object.|

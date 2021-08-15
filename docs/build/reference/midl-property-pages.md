@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: MIDL Property Pages"
 title: "MIDL Compiler Property Pages"
 ms.date: "07/24/2019"
 ms.topic: "article"

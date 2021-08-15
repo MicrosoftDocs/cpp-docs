@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: oleautomation"
 title: "oleautomation (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.oleautomation"]
@@ -25,9 +26,7 @@ See the examples for [defaultvalue](defaultvalue.md) and [nonextensible](nonexte
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|**interface**|
 |**Repeatable**|No|

@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: _ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l"
 title: "_ismbclegal, _ismbclegal_l, _ismbcsymbol, _ismbcsymbol_l"
 ms.date: "4/2/2020"
 api_name: ["_ismbclegal_l", "_ismbclegal", "_ismbcsymbol", "_ismbcsymbol_l", "_o__ismbclegal", "_o__ismbclegal_l", "_o__ismbcsymbol", "_o__ismbcsymbol_l"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-multibyte-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["ismbcsymbol_l", "_ismbcsymbol_l", "_ismbcsymbol", "_ismbclegal_l", "_ismbclegal", "ismbclegal_l", "ismbcsymbol", "ismbclegal"]

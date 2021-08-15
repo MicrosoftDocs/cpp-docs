@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;memory&gt; operators"
 title: "&lt;memory&gt; operators"
 ms.date: "11/04/2016"
 f1_keywords: ["memory/std::operator!=", "memory/std::operator>", "memory/std::operator>=", "memory/std::operator<", "memory/std::operator<=", "memory/std::operator<<", "memory/std::operator=="]
@@ -43,7 +44,7 @@ The type controlled by the right shared pointer.
 
 ### Return Value
 
-**true** if the objects are not equal; **false** if objects are equal.
+**`true`** if the objects are not equal; **`false`** if objects are equal.
 
 ### Remarks
 
@@ -52,6 +53,8 @@ The first template operator returns false. (All default allocators are equal.)
 The second and third template operators return `!(left == right)`.
 
 ### Example
+
+The first code example shows the results of comparing allocator objects.
 
 ```cpp
 // memory_op_me.cpp
@@ -80,7 +83,7 @@ int main( )
 The allocator objects Alloc & v1Alloc are equal.
 ```
 
-### Example
+The next code example compares shared pointers to allocated objects:
 
 ```cpp
 // std__memory__operator_ne.cpp
@@ -144,7 +147,7 @@ The type controlled by the right shared pointer.
 
 ### Return Value
 
-**true** if the objects are equal, **false** if objects are not equal.
+**`true`** if the objects are equal, **`false`** if objects are not equal.
 
 ### Remarks
 
@@ -153,6 +156,8 @@ The first template operator returns true. (All default allocators are equal.)
 The second and third template operators return `left.get() ==  right.get()`.
 
 ### Example
+
+The first code example shows the results of comparing allocator objects constructed in different ways.
 
 ```cpp
 // memory_op_eq.cpp
@@ -192,7 +197,7 @@ The allocator objects cv1Alloc & v1Alloc are equal.
 The allocator objects cAlloc & Alloc are equal.
 ```
 
-### Example
+The next code example compares shared pointers to allocated objects:
 
 ```cpp
 // std__memory__operator_eq.cpp

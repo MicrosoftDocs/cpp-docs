@@ -1,17 +1,18 @@
 ---
+description: "Learn more about: &lt;list&gt; and &lt;listheader&gt;"
 title: "&lt;list> (C++ documentation comments)"
 ms.date: "11/04/2016"
 f1_keywords: ["list"]
 helpviewer_keywords: ["list C++ XML tag", "<list> C++ XML tag"]
 ms.assetid: c792a10b-0451-422c-9aa0-604116e69d64
 ---
-# &lt;list&gt;
+# &lt;list&gt; and &lt;listheader&gt;
 
 The \<listheader> block is used to define the heading row of either a table or definition list. When defining a table, you only need to supply an entry for term in the heading.
 
 ## Syntax
 
-```
+```xml
 <list type="bullet" | "number" | "table">
    <listheader>
       <term>term</term>

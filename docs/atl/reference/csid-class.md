@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CSid Class"
 title: "CSid Class"
 ms.date: "03/27/2019"
 f1_keywords: ["CSid", "ATLSECURITY/ATL::CSid", "ATLSECURITY/ATL::CSid::CSidArray", "ATLSECURITY/ATL::CSid::CSid", "ATLSECURITY/ATL::CSid::AccountName", "ATLSECURITY/ATL::CSid::Domain", "ATLSECURITY/ATL::CSid::EqualPrefix", "ATLSECURITY/ATL::CSid::GetLength", "ATLSECURITY/ATL::CSid::GetPSID", "ATLSECURITY/ATL::CSid::GetPSID_IDENTIFIER_AUTHORITY", "ATLSECURITY/ATL::CSid::GetSubAuthority", "ATLSECURITY/ATL::CSid::GetSubAuthorityCount", "ATLSECURITY/ATL::CSid::IsValid", "ATLSECURITY/ATL::CSid::LoadAccount", "ATLSECURITY/ATL::CSid::Sid", "ATLSECURITY/ATL::CSid::SidNameUse"]
@@ -52,14 +53,14 @@ class CSid
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator =](#operator_eq)|Assignment operator.|
 |[operator const SID *](#operator_const_sid__star)|Casts a `CSid` object to a pointer to a `SID` structure.|
 
 ### Global Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator ==](#operator_eq_eq)|Tests two security descriptor objects for equality|
 |[operator !=](#operator_neq)|Tests two security descriptor objects for inequality|

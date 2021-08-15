@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCColorBar Class"
 title: "CMFCColorBar Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMFCColorBar", "AFXCOLORBAR/CMFCColorBar", "AFXCOLORBAR/CMFCColorBar::CMFCColorBar", "AFXCOLORBAR/CMFCColorBar::ContextToSize", "AFXCOLORBAR/CMFCColorBar::CreateControl", "AFXCOLORBAR/CMFCColorBar::Create", "AFXCOLORBAR/CMFCColorBar::EnableAutomaticButton", "AFXCOLORBAR/CMFCColorBar::EnableOtherButton", "AFXCOLORBAR/CMFCColorBar::GetColor", "AFXCOLORBAR/CMFCColorBar::GetCommandID", "AFXCOLORBAR/CMFCColorBar::GetHighlightedColor", "AFXCOLORBAR/CMFCColorBar::GetHorzMargin", "AFXCOLORBAR/CMFCColorBar::GetVertMargin", "AFXCOLORBAR/CMFCColorBar::IsTearOff", "AFXCOLORBAR/CMFCColorBar::SetColor", "AFXCOLORBAR/CMFCColorBar::SetColorName", "AFXCOLORBAR/CMFCColorBar::SetCommandID", "AFXCOLORBAR/CMFCColorBar::SetDocumentColors", "AFXCOLORBAR/CMFCColorBar::SetHorzMargin", "AFXCOLORBAR/CMFCColorBar::SetVertMargin", "AFXCOLORBAR/CMFCColorBar::AdjustLocations", "AFXCOLORBAR/CMFCColorBar::AllowChangeTextLabels", "AFXCOLORBAR/CMFCColorBar::AllowShowOnList", "AFXCOLORBAR/CMFCColorBar::CalcSize", "AFXCOLORBAR/CMFCColorBar::CreatePalette", "AFXCOLORBAR/CMFCColorBar::GetColorGridSize", "AFXCOLORBAR/CMFCColorBar::GetExtraHeight", "AFXCOLORBAR/CMFCColorBar::InitColors", "AFXCOLORBAR/CMFCColorBar::OnKey", "AFXCOLORBAR/CMFCColorBar::OnSendCommand", "AFXCOLORBAR/CMFCColorBar::OnUpdateCmdUI", "AFXCOLORBAR/CMFCColorBar::OpenColorDialog", "AFXCOLORBAR/CMFCColorBar::Rebuild", "AFXCOLORBAR/CMFCColorBar::SelectPalette", "AFXCOLORBAR/CMFCColorBar::SetPropList", "AFXCOLORBAR/CMFCColorBar::ShowCommandMessageString"]
@@ -312,10 +313,11 @@ void ContextToSize(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*bSquareButtons*|[in] TRUE to specify that the shape of the buttons on a color bar control are square; otherwise, FALSE. The default value is TRUE.|
-|*bCenterButtons*|[in] TRUE to specify that the content on the face of a color bar control button is centered; otherwise, FALSE. The default value is TRUE.|
+*bSquareButtons*\
+[in] TRUE to specify that the shape of the buttons on a color bar control are square; otherwise, FALSE. The default value is TRUE.
+
+*bCenterButtons*\
+[in] TRUE to specify that the content on the face of a color bar control button is centered; otherwise, FALSE. The default value is TRUE.
 
 ### Remarks
 
@@ -415,10 +417,11 @@ static BOOL CreatePalette(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*arColors*|[in] An array of colors.|
-|*palette*|[in] A palette of colors.|
+*arColors*\
+[in] An array of colors.
+
+*palette*\
+[in] A palette of colors.
 
 ### Return Value
 
@@ -498,9 +501,8 @@ CSize GetColorGridSize(BOOL bVertDock) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*bVertDock*|[in] TRUE to perform the calculation for a vertically docked color bar control; otherwise, perform the calculation for a horizontally docked control.|
+*bVertDock*\
+[in] TRUE to perform the calculation for a vertically docked color bar control; otherwise, perform the calculation for a horizontally docked control.
 
 ### Return Value
 
@@ -532,9 +534,8 @@ int GetExtraHeight(int nNumColumns) const;
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*nNumColumns*|[in] If the color bar control contains document colors, the number of columns to display in the grid of document colors. Otherwise, this value is not used.|
+*nNumColumns*\
+[in] If the color bar control contains document colors, the number of columns to display in the grid of document colors. Otherwise, this value is not used.
 
 ### Return Value
 
@@ -590,10 +591,11 @@ static int InitColors(
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pPalette*|[in] A pointer to a palette object, or NULL. If this parameter is NULL, this method uses the default palette of the operating system.|
-|*arColors*|[in] An array of colors.|
+*pPalette*\
+[in] A pointer to a palette object, or NULL. If this parameter is NULL, this method uses the default palette of the operating system.
+
+*arColors*\
+[in] An array of colors.
 
 ### Return Value
 
@@ -642,9 +644,8 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pButton*|[in] Pointer to a control that resides on a toolbar.|
+*pButton*\
+[in] Pointer to a control that resides on a toolbar.
 
 ### Return Value
 
@@ -714,9 +715,8 @@ CPalette* SelectPalette(CDC* pDC);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pDC*|[in] Pointer to the device context of the parent button of the current color bar control.|
+*pDC*\
+[in] Pointer to the device context of the parent button of the current color bar control.
 
 ### Return Value
 
@@ -827,9 +827,8 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 
 ### Parameters
 
-|Parameter|Description|
-|---------------|-----------------|
-|*pWndList*|[in] Pointer to property grid control object.|
+*pWndList*\
+[in] Pointer to property grid control object.
 
 ## <a name="setvertmargin"></a> CMFCColorBar::SetVertMargin
 

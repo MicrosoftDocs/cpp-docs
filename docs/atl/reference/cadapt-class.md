@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CAdapt Class"
 title: "CAdapt Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CAdapt", "ATLCOMCLI/ATL::CAdapt", "ATLCOMCLI/ATL::CAdapt::CAdapt", "ATLCOMCLI/ATL::CAdapt::m_T"]
@@ -33,7 +34,7 @@ The adapted type.
 
 |Name|Description|
 |----------|-----------------|
-|[CAdapt::operator const T&](#operator_const_t_amp)|Returns a **const** reference to `m_T`.|
+|[CAdapt::operator const T&](#operator_const_t_amp)|Returns a **`const`** reference to `m_T`.|
 |[CAdapt::operator T&](#operator_t_amp)|Returns a reference to `m_T`.|
 |[CAdapt::operator <](#operator_lt)|Compares an object of the adapted type with `m_T`.|
 |[CAdapt::operator =](#operator_eq)|Assigns an object of the adapted type to `m_T`.|
@@ -89,11 +90,11 @@ T m_T;
 
 ### Remarks
 
-This **public** data member can be accessed directly or indirectly with [operator const T&](#operator_const_t_amp) and [operator T&](#operator_t_amp).
+This **`public`** data member can be accessed directly or indirectly with [operator const T&](#operator_const_t_amp) and [operator T&](#operator_t_amp).
 
 ## <a name="operator_const_t_amp"></a> CAdapt::operator const T&amp;
 
-Returns a **const** reference to the [m_T](#m_t) member, allowing the adapter object to be treated as if it were an object of type *T*.
+Returns a **`const`** reference to the [m_T](#m_t) member, allowing the adapter object to be treated as if it were an object of type *T*.
 
 ```cpp
 operator const T&() const;
@@ -101,7 +102,7 @@ operator const T&() const;
 
 ### Return Value
 
-A **const** reference to `m_T`.
+A **`const`** reference to `m_T`.
 
 ## <a name="operator_t_amp"></a> CAdapt::operator T&amp;
 

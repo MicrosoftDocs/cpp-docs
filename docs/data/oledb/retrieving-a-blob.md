@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Retrieving a BLOB"
 title: "Retrieving a BLOB"
 ms.date: "10/24/2018"
 helpviewer_keywords: ["retrieving BLOBs", "BLOB (binary large object), retrieving", "OLE DB, BLOBs (binary large objects)"]
@@ -8,7 +9,7 @@ ms.assetid: 2893eb0a-5c05-4016-8914-1e40ccbaf0b3
 
 You can retrieve a binary large object (BLOB) in various ways. You can use `DBTYPE_BYTES` to retrieve the BLOB as a sequence of bytes or use an interface like `ISequentialStream`. For more information, see [BLOBS and OLE Objects](/previous-versions/windows/desktop/ms711511(v=vs.85)) in the **OLE DB Programmer's Reference**.
 
-The following code shows how to retrieve a BLOB using `ISequentialStream`. The macro [BLOB_ENTRY](../../data/oledb/blob-entry.md) allows you to specify the interface and the flags used for the interface. After opening the table, the code calls `Read` repeatedly on `ISequentialStream` to read bytes from the BLOB. The code calls `Release` to dispose of the interface pointer before calling `MoveNext` to get the next record.
+The following code shows how to retrieve a BLOB using `ISequentialStream`. The macro [BLOB_ENTRY](./macros-and-global-functions-for-ole-db-consumer-templates.md#blob_entry) allows you to specify the interface and the flags used for the interface. After opening the table, the code calls `Read` repeatedly on `ISequentialStream` to read bytes from the BLOB. The code calls `Release` to dispose of the interface pointer before calling `MoveNext` to get the next record.
 
 ```cpp
 class CCategories

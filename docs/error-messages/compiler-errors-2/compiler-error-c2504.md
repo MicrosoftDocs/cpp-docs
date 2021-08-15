@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C2504"
 title: "Compiler Error C2504"
 ms.date: "11/04/2016"
 f1_keywords: ["C2504"]
@@ -13,7 +14,7 @@ The base class is declared but never defined.  Possible causes:
 
 1. Missing include file.
 
-1. External base class not declared with [extern](../../cpp/using-extern-to-specify-linkage.md).
+1. External base class not declared with [extern](../../cpp/extern-cpp.md).
 
 The following sample generates C2504:
 

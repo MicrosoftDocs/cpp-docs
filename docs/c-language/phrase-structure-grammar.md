@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Phrase Structure Grammar"
 title: "Phrase Structure Grammar"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["phrase structure grammar", "grammar, phrase structure"]

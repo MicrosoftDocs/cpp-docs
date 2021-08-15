@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMFCPropertySheet Class"
 title: "CMFCPropertySheet Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet::CMFCPropertySheet", "AFXPROPERTYSHEET/CMFCPropertySheet::AddPage", "AFXPROPERTYSHEET/CMFCPropertySheet::AddPageToTree", "AFXPROPERTYSHEET/CMFCPropertySheet::AddTreeCategory", "AFXPROPERTYSHEET/CMFCPropertySheet::EnablePageHeader", "AFXPROPERTYSHEET/CMFCPropertySheet::GetHeaderHeight", "AFXPROPERTYSHEET/CMFCPropertySheet::GetLook", "AFXPROPERTYSHEET/CMFCPropertySheet::GetNavBarWidth", "AFXPROPERTYSHEET/CMFCPropertySheet::GetTab", "AFXPROPERTYSHEET/CMFCPropertySheet::InitNavigationControl", "AFXPROPERTYSHEET/CMFCPropertySheet::OnActivatePage", "AFXPROPERTYSHEET/CMFCPropertySheet::OnDrawPageHeader", "AFXPROPERTYSHEET/CMFCPropertySheet::OnRemoveTreePage", "AFXPROPERTYSHEET/CMFCPropertySheet::RemoveCategory", "AFXPROPERTYSHEET/CMFCPropertySheet::RemovePage", "AFXPROPERTYSHEET/CMFCPropertySheet::SetIconsList", "AFXPROPERTYSHEET/CMFCPropertySheet::SetLook"]
@@ -70,15 +71,15 @@ Perform the following steps to use the `CMFCPropertySheet` class in your applica
 
 The following illustration depicts a property sheet that is in the style of an embedded Microsoft Outlook toolbar. The Outlook toolbar appears on the left side of the property sheet.
 
-![CMFCPropertySheet color controls](../../mfc/reference/media/cmfcpropertysheet_color.png "CMFCPropertySheet color controls")
+![CMFCPropertySheet color controls.](../../mfc/reference/media/cmfcpropertysheet_color.png "CMFCPropertySheet color controls")
 
 The following illustration depicts a property sheet that contains a [CMFCPropertyGridCtrl Class](../../mfc/reference/cmfcpropertygridctrl-class.md) object. That object is a property sheet in the style of a standard common controls property sheet.
 
-![CMFCPropertySheet list and property controls](../../mfc/reference/media/cmfcpropertysheet_list.png "CMFCPropertySheet list and property controls")
+![CMFCPropertySheet list and property controls.](../../mfc/reference/media/cmfcpropertysheet_list.png "CMFCPropertySheet list and property controls")
 
 The following illustration depicts a property sheet that is in the style of a tree control.
 
-![Property Tree](../../mfc/reference/media/proptree.png "Property Tree")
+![Property Tree.](../../mfc/reference/media/proptree.png "Property Tree")
 
 ## Inheritance Hierarchy
 

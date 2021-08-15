@@ -1,8 +1,9 @@
 ---
+description: "Learn more about: tolower, _tolower, towlower, _tolower_l, _towlower_l"
 title: "tolower, _tolower, towlower, _tolower_l, _towlower_l"
 ms.date: "4/2/2020"
 api_name: ["_tolower_l", "towlower", "tolower", "_tolower", "_towlower_l", "_o__tolower", "_o__tolower_l", "_o__towlower_l", "_o_tolower", "_o_towlower"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ntdll.dll", "ucrtbase.dll", "api-ms-win-crt-string-l1-1-0.dll", "ntoskrnl.exe", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_totlower", "tolower", "_tolower", "towlower"]

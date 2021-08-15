@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Checked Iterators"
 title: "Checked Iterators"
 ms.date: "11/04/2016"
 f1_keywords: ["_SECURE_SCL_THROWS"]
@@ -28,11 +29,26 @@ When _ITERATOR_DEBUG_LEVEL is defined as 1 or 2, these iterator checks are perfo
 
 - The following functions generate a runtime error if there is an access that is outside the bounds of the container:
 
-|||||
-|-|-|-|-|
-|[basic_string::operator\[\]](../standard-library/basic-string-class.md#op_at)|[bitset::operator\[\]](../standard-library/bitset-class.md#op_at)|[back](../standard-library/deque-class.md#back)|[front](../standard-library/deque-class.md#front)|
-|[deque::operator\[\]](../standard-library/deque-class.md#op_at)|[back](../standard-library/list-class.md#back)|[front](../standard-library/list-class.md#front)|[back](../standard-library/queue-class.md#back)|
-|[front](../standard-library/queue-class.md#front)|[vector::operator\[\]](../standard-library/vector-class.md#op_at)|[back](../standard-library/vector-class.md#back)|[front](../standard-library/vector-class.md#front)|
+:::row:::
+   :::column span="":::
+      &emsp;&emsp;[`basic_string::operator[]`](../standard-library/basic-string-class.md#op_at)\
+      &emsp;&emsp;[`bitset::operator[]`](../standard-library/bitset-class.md#op_at)\
+      &emsp;&emsp;[`deque::back`](../standard-library/deque-class.md#back)\
+      &emsp;&emsp;[`deque::front`](../standard-library/deque-class.md#front)
+   :::column-end:::
+   :::column span="":::
+      [`deque::operator[]`](../standard-library/deque-class.md#op_at)\
+      [`list::back`](../standard-library/list-class.md#back)\
+      [`list::front`](../standard-library/list-class.md#front)\
+      [`queue::back`](../standard-library/queue-class.md#back)
+   :::column-end:::
+   :::column span="":::
+      [`queue::front`](../standard-library/queue-class.md#front)\
+      [`vector::back`](../standard-library/vector-class.md#back)\
+      [`vector::front`](../standard-library/vector-class.md#front)\
+      [`vector::operator[]`](../standard-library/vector-class.md#op_at)
+   :::column-end:::
+:::row-end:::
 
 When _ITERATOR_DEBUG_LEVEL is defined as 0:
 
@@ -46,7 +62,7 @@ A checked iterator refers to an iterator that calls `invalid_parameter_handler` 
 
 The iterator adaptors that support checked iterators are [checked_array_iterator Class](../standard-library/checked-array-iterator-class.md) and [unchecked_array_iterator Class](../standard-library/unchecked-array-iterator-class.md).
 
-## Example
+## Examples
 
 When you compile by using _ITERATOR_DEBUG_LEVEL set to 1 or 2, a runtime error will occur if you attempt to access an element that is outside the bounds of the container by using the indexing operator of certain classes.
 
@@ -75,8 +91,6 @@ int main()
 
 This program prints "67" then pops up an assertion failure dialog box with additional information about the failure.
 
-## Example
-
 Similarly, when you compile by using _ITERATOR_DEBUG_LEVEL set to 1 or 2, a runtime error will occur if you attempt to access an element by using `front` or `back` in container classes when the container is empty.
 
 ```cpp
@@ -98,8 +112,6 @@ int main()
 ```
 
 This program pops up an assertion failure dialog box with additional information about the failure.
-
-## Example
 
 The following code demonstrates various iterator use-case scenarios with comments about each. By default, _ITERATOR_DEBUG_LEVEL is set to 2 in Debug builds, and to 0 in Retail builds.
 

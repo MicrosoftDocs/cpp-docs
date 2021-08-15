@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IRowsetLocateImpl Class"
 title: "IRowsetLocateImpl Class"
 ms.date: "11/04/2016"
 f1_keywords: ["IRowsetLocateImpl", "ATL.IRowsetLocateImpl.Compare", "IRowsetLocateImpl::Compare", "IRowsetLocateImpl.Compare", "ATL::IRowsetLocateImpl::Compare", "GetRowsAt", "IRowsetLocateImpl.GetRowsAt", "ATL::IRowsetLocateImpl::GetRowsAt", "IRowsetLocateImpl::GetRowsAt", "ATL.IRowsetLocateImpl.GetRowsAt", "IRowsetLocateImpl::GetRowsByBookmark", "IRowsetLocateImpl.GetRowsByBookmark", "GetRowsByBookmark", "IRowsetLocateImpl::Hash", "IRowsetLocateImpl.Hash", "m_rgBookmarks", "IRowsetLocateImpl::m_rgBookmarks", "ATL.IRowsetLocateImpl.m_rgBookmarks", "ATL::IRowsetLocateImpl::m_rgBookmarks", "IRowsetLocateImpl.m_rgBookmarks"]
@@ -58,7 +59,7 @@ The storage unit for all row handles held by the bookmark.
 
 ### Interface Methods
 
-|||
+| Name | Description |
 |-|-|
 |[Compare](#compare)|Compares two bookmarks.|
 |[GetRowsAt](#getrowsat)|Fetches rows starting with the row specified by an offset from a bookmark.|
@@ -67,7 +68,7 @@ The storage unit for all row handles held by the bookmark.
 
 ### Data Members
 
-|||
+| Name | Description |
 |-|-|
 |[m_rgBookmarks](#rgbookmarks)|An array of bookmarks.|
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CTaskDialog Class"
 title: "CTaskDialog Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CTaskDialog", "AFXTASKDIALOG/CTaskDialog", "AFXTASKDIALOG/CTaskDialog::CTaskDialog", "AFXTASKDIALOG/CTaskDialog::AddCommandControl", "AFXTASKDIALOG/CTaskDialog::AddRadioButton", "AFXTASKDIALOG/CTaskDialog::ClickCommandControl", "AFXTASKDIALOG/CTaskDialog::ClickRadioButton", "AFXTASKDIALOG/CTaskDialog::DoModal", "AFXTASKDIALOG/CTaskDialog::GetCommonButtonCount", "AFXTASKDIALOG/CTaskDialog::GetCommonButtonFlag", "AFXTASKDIALOG/CTaskDialog::GetCommonButtonId", "AFXTASKDIALOG/CTaskDialog::GetOptions", "AFXTASKDIALOG/CTaskDialog::GetSelectedCommandControlID", "AFXTASKDIALOG/CTaskDialog::GetSelectedRadioButtonID", "AFXTASKDIALOG/CTaskDialog::GetVerificationCheckboxState", "AFXTASKDIALOG/CTaskDialog::IsCommandControlEnabled", "AFXTASKDIALOG/CTaskDialog::IsRadioButtonEnabled", "AFXTASKDIALOG/CTaskDialog::IsSupported", "AFXTASKDIALOG/CTaskDialog::LoadCommandControls", "AFXTASKDIALOG/CTaskDialog::LoadRadioButtons", "AFXTASKDIALOG/CTaskDialog::NavigateTo", "AFXTASKDIALOG/CTaskDialog::OnCommandControlClick", "AFXTASKDIALOG/CTaskDialog::OnCreate", "AFXTASKDIALOG/CTaskDialog::OnDestroy", "AFXTASKDIALOG/CTaskDialog::OnExpandButtonClick", "AFXTASKDIALOG/CTaskDialog::OnHelp", "AFXTASKDIALOG/CTaskDialog::OnHyperlinkClick", "AFXTASKDIALOG/CTaskDialog::OnInit", "AFXTASKDIALOG/CTaskDialog::OnNavigatePage", "AFXTASKDIALOG/CTaskDialog::OnRadioButtonClick", "AFXTASKDIALOG/CTaskDialog::OnTimer", "AFXTASKDIALOG/CTaskDialog::OnVerificationCheckboxClick", "AFXTASKDIALOG/CTaskDialog::RemoveAllCommandControls", "AFXTASKDIALOG/CTaskDialog::RemoveAllRadioButtons", "AFXTASKDIALOG/CTaskDialog::SetCommandControlOptions", "AFXTASKDIALOG/CTaskDialog::SetCommonButtonOptions", "AFXTASKDIALOG/CTaskDialog::SetCommonButtons", "AFXTASKDIALOG/CTaskDialog::SetContent", "AFXTASKDIALOG/CTaskDialog::SetDefaultCommandControl", "AFXTASKDIALOG/CTaskDialog::SetDefaultRadioButton", "AFXTASKDIALOG/CTaskDialog::SetDialogWidth", "AFXTASKDIALOG/CTaskDialog::SetExpansionArea", "AFXTASKDIALOG/CTaskDialog::SetFooterIcon", "AFXTASKDIALOG/CTaskDialog::SetFooterText", "AFXTASKDIALOG/CTaskDialog::SetMainIcon", "AFXTASKDIALOG/CTaskDialog::SetMainInstruction", "AFXTASKDIALOG/CTaskDialog::SetOptions", "AFXTASKDIALOG/CTaskDialog::SetProgressBarMarquee", "AFXTASKDIALOG/CTaskDialog::SetProgressBarPosition", "AFXTASKDIALOG/CTaskDialog::SetProgressBarRange", "AFXTASKDIALOG/CTaskDialog::SetProgressBarState", "AFXTASKDIALOG/CTaskDialog::SetRadioButtonOptions", "AFXTASKDIALOG/CTaskDialog::SetVerificationCheckbox", "AFXTASKDIALOG/CTaskDialog::SetVerificationCheckboxText", "AFXTASKDIALOG/CTaskDialog::SetWindowTitle", "AFXTASKDIALOG/CTaskDialog::ShowDialog", "AFXTASKDIALOG/CTaskDialog::TaskDialogCallback"]
@@ -19,13 +20,13 @@ class CTaskDialog : public CObject
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[CTaskDialog::CTaskDialog](#ctaskdialog)|Constructs a `CTaskDialog` object.|
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[CTaskDialog::AddCommandControl](#addcommandcontrol)|Adds a command button control to the `CTaskDialog`.|
 |[CTaskDialog::AddRadioButton](#addradiobutton)|Adds a radio button to the `CTaskDialog`.|
@@ -84,7 +85,7 @@ class CTaskDialog : public CObject
 
 ### Data Members
 
-|||
+|Name|Description|
 |-|-|
 |`m_aButtons`|The array of command button controls for the `CTaskDialog`.|
 |`m_aRadioButtons`|The array of radio button controls for the `CTaskDialog`.|
@@ -124,7 +125,7 @@ The `CTaskDialog` has two different constructors. One constructor enables you to
 
 The following image shows a sample `CTaskDialog` to illustrate the location of some of the controls.
 
-![Example of CTaskDialog](../../mfc/reference/media/ctaskdialogsample.png "Example of CTaskDialog") <br/>
+![Example of CTaskDialog.](../../mfc/reference/media/ctaskdialogsample.png "Example of CTaskDialog") <br/>
 CTaskDialog Sample
 
 ## Requirements
@@ -1167,7 +1168,7 @@ This method clears all the current options for the `CTaskDialog`. To preserve th
 
 The following table lists all the valid options.
 
-|||
+|Name|Description|
 |-|-|
 |TDF_ENABLE_HYPERLINKS|Enables hyperlinks in the `CTaskDialog`.|
 |TDF_USE_HICON_MAIN|Configures the `CTaskDialog` to use a `HICON` for the main icon. The alternative is to use a `LPCWSTR`.|
@@ -1290,7 +1291,7 @@ This method throws an exception with the [ENSURE](diagnostic-services.md#ensure)
 
 The following table lists the possible values for *nState*. In all these cases, the progress bar will fill with the regular color until it reaches the designated stop position. At that point it will change color based on the state.
 
-|||
+|Name|Description|
 |-|-|
 |PBST_NORMAL|After the progress bar fills, the `CTaskDialog` does not change the color of the bar. By default, the regular color is green.|
 |PBST_ERROR|After the progress bar fills, the `CTaskDialog` changes the color of the bar to the error color. By default, this is red.|

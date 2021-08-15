@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: valarray Class"
 title: "valarray Class"
 ms.date: "03/27/2019"
 f1_keywords: ["valarray/std::valarray", "valarray/std::valarray::value_type", "valarray/std::valarray::apply", "valarray/std::valarray::cshift", "valarray/std::valarray::free", "valarray/std::valarray::max", "valarray/std::valarray::min", "valarray/std::valarray::resize", "valarray/std::valarray::shift", "valarray/std::valarray::size", "valarray/std::valarray::sum", "valarray/std::valarray::swap"]
@@ -29,19 +30,19 @@ In particular, no subtle differences may exist between copy construction and def
 
 ### Constructors
 
-|||
+|Name|Description|
 |-|-|
 |[valarray](#valarray)|Constructs a `valarray` of a specific size or with elements of a specific value or as a copy of another `valarray` or subset of another `valarray`.|
 
 ### Typedefs
 
-|||
+|Name|Description|
 |-|-|
 |[value_type](#value_type)|A type that represents the type of element stored in a `valarray`.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[apply](#apply)|Applies a specified function to each element of a `valarray`.|
 |[cshift](#cshift)|Cyclically shifts all the elements in a `valarray` by a specified number of positions.|
@@ -56,7 +57,7 @@ In particular, no subtle differences may exist between copy construction and def
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
 |[operator!](#op_not)|A unary operator that obtains the logical `NOT` values of each element in a `valarray`.|
 |[operator%=](#op_mod_eq)|Obtains the remainder of dividing the elements of an array element-wise either by a specified `valarray` or by a value of the element type.|
@@ -369,7 +370,7 @@ The valarray of Boolean values that are the negation of the element values of th
 
 The logical operation **NOT** negates the elements because it converts all zeros into ones and regards all nonzero values as ones and converts them into zeros. The returned valarray of Boolean values is of the same size as the operand valarray.
 
-There is also a bitwise **NOT**[valarray::operator~](#op_dtor) that negates on the level of individual bits within the binary representation of **char** and **int** elements of a valarray.
+There is also a bitwise **NOT**[valarray::operator~](#op_dtor) that negates on the level of individual bits within the binary representation of **`char`** and **`int`** elements of a valarray.
 
 ### Example
 
@@ -500,9 +501,9 @@ A valarray whose elements are the element-wise logical `AND` of the operand vala
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in **char** and **int** data types and variants and not on **float**, **double**, **longdouble**, **void**, **bool**, or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **`char`** and **`int`** data types and variants and not on **`float`**, **`double`**, **longdouble**, **`void`**, **`bool`**, or other, more complex data types.
 
-The bitwise AND has the same truth table as the logical `AND` but applies to the data type on the level of the individual bits. Given bits *b*1 and *b*2, *b*1 `AND` *b*2 is **true** if both bits are true; **false** if at least one is false.
+The bitwise AND has the same truth table as the logical `AND` but applies to the data type on the level of the individual bits. Given bits *b*1 and *b*2, *b*1 `AND` *b*2 is **`true`** if both bits are true; **`false`** if at least one is false.
 
 ### Example
 
@@ -1257,7 +1258,7 @@ A valarray whose elements are the element-wise, exclusive logical **XOR** of the
 
 ### Remarks
 
-The exclusive logical or, referred to as **XOR**, has the following semantics: Given elements *e*1 and *e*2, *e*1 **XOR** *e*2 is **true** if exactly one of the elements is true; **false** if both elements are false or if both elements are true.
+The exclusive logical or, referred to as **XOR**, has the following semantics: Given elements *e*1 and *e*2, *e*1 **XOR** *e*2 is **`true`** if exactly one of the elements is true; **`false`** if both elements are false or if both elements are true.
 
 ### Example
 
@@ -1332,9 +1333,9 @@ A valarray whose elements are the element-wise bitwise `OR` of the operand valar
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in **char** and **int** data types and variants and not on **float**, **double**, **longdouble**, **void**, **bool**, or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **`char`** and **`int`** data types and variants and not on **`float`**, **`double`**, **longdouble**, **`void`**, **`bool`**, or other, more complex data types.
 
-The bitwise `OR` has the same truth table as the logical `OR` but applies to the data type on the level of the individual bits. Given bits *b*1 and *b*2, *b*1 `OR` *b*2 is **true** if at least one of the bits is true; **false** if both bits are false.
+The bitwise `OR` has the same truth table as the logical `OR` but applies to the data type on the level of the individual bits. Given bits *b*1 and *b*2, *b*1 `OR` *b*2 is **`true`** if at least one of the bits is true; **`false`** if both bits are false.
 
 ### Example
 
@@ -1408,9 +1409,9 @@ The valarray of Boolean values that are the bitwise `NOT` of the element values 
 
 ### Remarks
 
-A bitwise operation can only be used to manipulate bits in **char** and **int** data types and variants and not on **float**, **double**, **longdouble**, **void**, **bool** or other, more complex data types.
+A bitwise operation can only be used to manipulate bits in **`char`** and **`int`** data types and variants and not on **`float`**, **`double`**, **longdouble**, **`void`**, **`bool`** or other, more complex data types.
 
-The bitwise `NOT` has the same truth table as the logical `NOT` but applies to the data type on the level of the individual bits. Given bit *b*, ~ *b* is true if *b* is false and false if *b* is true. The logical **NOT**[operator!](#op_not) applies on an element level, counting all nonzero values as **true**, and the result is a valarray of Boolean values. The bitwise `NOToperator~`, by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.
+The bitwise `NOT` has the same truth table as the logical `NOT` but applies to the data type on the level of the individual bits. Given bit *b*, ~ *b* is true if *b* is false and false if *b* is true. The logical **NOT**[operator!](#op_not) applies on an element level, counting all nonzero values as **`true`**, and the result is a valarray of Boolean values. The bitwise `NOToperator~`, by contrast, can result in a valarray of values other than 0 or 1, depending on outcome of the bitwise operation.
 
 ### Example
 
@@ -1786,7 +1787,7 @@ A `valarray` providing the elements to be swapped.
 
 ### Remarks
 
-The member function swaps the controlled sequences between `*this` and *right*. It does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences.
+The member function swaps the controlled sequences between **`*this`** and *right*. It does so in constant time, it throws no exceptions, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences.
 
 ## <a name="valarray"></a> valarray
 

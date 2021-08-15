@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: integer_sequence Class"
 title: "integer_sequence Class"
 ms.date: "11/04/2016"
 f1_keywords: ["type_traits/std::index_sequence", "type_traits/std::make_index_sequence", "type_traits/std::integer_sequence", "type_traits/std::make_integer_sequence", "type_traits/std::index_sequence_for"]
@@ -26,7 +27,7 @@ A non-type parameter pack that represents a sequence of values of integral type 
 
 ## Members
 
-|||
+|Name|Description|
 |-|-|
 |`static size_t size() noexcept`|The number of elements in the sequence.|
 |`typedef T value_type`|The type of each element in the sequence. Must be an integral type.|

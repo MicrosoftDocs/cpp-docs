@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C2900 Through C2999"
 title: "Compiler errors C2900 Through C2999"
 ms.date: "04/21/2019"
 f1_keywords: ["C2900", "C2901", "C2905", "C2907", "C2915", "C2916", "C2922", "C2924", "C2925", "C2926", "C2938", "C2949", "C2950", "C2954", "C2956", "C2960", "C2961", "C2963", "C2964", "C2965", "C2966", "C2967", "C2968", "C2972", "C2980", "C2981", "C2982", "C2983", "C2984", "C2985", "C2986", "C2987", "C2997", "C2999"]
@@ -119,4 +120,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

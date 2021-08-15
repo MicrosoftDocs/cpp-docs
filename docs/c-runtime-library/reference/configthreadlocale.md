@@ -1,15 +1,16 @@
 ---
 title: "_configthreadlocale"
-ms.date: "4/2/2020"
+ms.date: "10/29/2020"
+description: "Describes the Microsoft C runtime function `_configthreadlocale`  used to  configure per-thread locale options."
 api_name: ["_configthreadlocale", "_o__configthreadlocale"]
-api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0"]
+api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-locale-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_configthreadlocale", "configthreadlocale"]
 helpviewer_keywords: ["configthreadlocale function", "locales, per-thread", "_configthreadlocale function", "per-thread locale", "thread locale"]
 ms.assetid: 10e4050e-b587-4f30-80bc-6c76b35fc770
 ---
-# _configthreadlocale
+# `_configthreadlocale`
 
 Configures per-thread locale options.
 
@@ -21,28 +22,28 @@ int _configthreadlocale( int per_thread_locale_type );
 
 ### Parameters
 
-*per_thread_locale_type*<br/>
+*`per_thread_locale_type`*\
 The option to set. One of the options listed in the following table.
 
 ## Return Value
 
-The previous per-thread locale status (**_DISABLE_PER_THREAD_LOCALE** or **_ENABLE_PER_THREAD_LOCALE**), or -1 on failure.
+The previous per-thread locale status (**`_DISABLE_PER_THREAD_LOCALE`** or **`_ENABLE_PER_THREAD_LOCALE`**), or -1 on failure.
 
 ## Remarks
 
-The **_configurethreadlocale** function is used to control the use of thread-specific locales. Use one of these *per_thread_locale_type* options to specify or determine the per-thread locale status:
+The **`_configthreadlocale`** function is used to control the use of thread-specific locales. Use one of these *`per_thread_locale_type`* options to specify or determine the per-thread locale status:
 
 | Option | Description |
 |-|-|
-| **_ENABLE_PER_THREAD_LOCALE** | Make the current thread use a thread-specific locale. Subsequent calls to **setlocale** in this thread affect only the thread's own locale. |
-| **_DISABLE_PER_THREAD_LOCALE** | Make the current thread use the global locale. Subsequent calls to **setlocale** in this thread affect other threads using the global locale. |
+| **`_ENABLE_PER_THREAD_LOCALE`** | Make the current thread use a thread-specific locale. Subsequent calls to **`setlocale`** in this thread affect only the thread's own locale. |
+| **`_DISABLE_PER_THREAD_LOCALE`** | Make the current thread use the global locale. Subsequent calls to **`setlocale`** in this thread affect other threads using the global locale. |
 | **0** | Retrieves the current setting for this particular thread. |
 
-These functions affect the behavior of **setlocale**, **_tsetlocale**, **_wsetlocale**, and **_setmbcp**. When per-thread locale is disabled, any subsequent call to **setlocale** or **_wsetlocale** changes the locale of all threads that use the global locale. When per-thread locale is enabled, **setlocale** or **_wsetlocale** only affects the current thread's locale.
+These functions affect the behavior of **`setlocale`**, **`_tsetlocale`**, **`_wsetlocale`**, and **`_setmbcp`**. When per-thread locale is disabled, any subsequent call to **`setlocale`** or **`_wsetlocale`** changes the locale of all threads that use the global locale. When per-thread locale is enabled, **`setlocale`** or **`_wsetlocale`** only affects the current thread's locale.
 
-If you use **_configurethreadlocale** to enable a per-thread locale, we recommend that you call **setlocale** or **_wsetlocale** to set the preferred locale in that thread immediately afterward.
+If you use **`_configthreadlocale`** to enable a per-thread locale, we recommend that you call **`setlocale`** or **`_wsetlocale`** to set the preferred locale in that thread immediately afterward.
 
-If *per_thread_locale_type* is not one of the values listed in the table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **errno** to **EINVAL** and returns -1.
+If *`per_thread_locale_type`* isn't one of the values listed in the table, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function sets **`errno`** to **`EINVAL`** and returns -1.
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 
@@ -50,7 +51,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_configthreadlocale**|\<locale.h>|
+|**`_configthreadlocale`**|\`<locale.h>`|
 
 ## Example
 
@@ -163,7 +164,7 @@ The time in German locale is: 'Mittwoch, 12. Mai 2004'
 
 ## See also
 
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[_beginthread, _beginthreadex](beginthread-beginthreadex.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Multithreading and Locales](../../parallel/multithreading-and-locales.md)<br/>
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
+[`_beginthread`, `_beginthreadex`](beginthread-beginthreadex.md)\
+[Locale](../../c-runtime-library/locale.md)\
+[Multithreading and locales](../../parallel/multithreading-and-locales.md)

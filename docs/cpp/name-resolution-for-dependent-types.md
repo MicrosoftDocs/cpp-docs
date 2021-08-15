@@ -1,11 +1,12 @@
 ---
+description: "Learn more about: Name Resolution for Dependent Types"
 title: "Name Resolution for Dependent Types"
 ms.date: "11/04/2016"
 ms.assetid: 34066bb4-0c79-4fd8-bda7-539a60a277ab
 ---
 # Name Resolution for Dependent Types
 
-Use **typename** for qualified names in template definitions to tell the compiler that the given qualified name identifies a type. For more information, see [typename](../cpp/typename.md).
+Use **`typename`** for qualified names in template definitions to tell the compiler that the given qualified name identifies a type. For more information, see [typename](../cpp/typename.md).
 
 ```cpp
 // template_name_resolution1.cpp

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: TN017: Destroying Window Objects"
 title: "TN017: Destroying Window Objects"
 ms.date: "11/04/2016"
 f1_keywords: ["vc.objects"]
@@ -7,7 +8,7 @@ ms.assetid: 5bf208a5-5683-439b-92a1-547c5ded26cd
 ---
 # TN017: Destroying Window Objects
 
-This note describes the use of the [CWnd::PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy) method. Use this method if you want to do customized allocation of `CWnd`-derived objects. This note also explains why you should use [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow) to destroy a C++ Windows object instead of the **delete** operator.
+This note describes the use of the [CWnd::PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy) method. Use this method if you want to do customized allocation of `CWnd`-derived objects. This note also explains why you should use [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow) to destroy a C++ Windows object instead of the **`delete`** operator.
 
 If you follow the guidelines in this topic, you will have few cleanup problems. These problems can result from issues such as forgetting to delete/free C++ memory, forgetting to free system resources like `HWND`s, or freeing objects too many times.
 
@@ -21,11 +22,11 @@ The following are the two permitted ways to destroy a Windows object:
 
 - Calling `CWnd::DestroyWindow` or the Windows API `DestroyWindow`.
 
-- Explicitly deleting with the **delete** operator.
+- Explicitly deleting with the **`delete`** operator.
 
 The first case is by far the most common. This case applies even if your code does not call `DestroyWindow` directly. When the user directly closes a frame window, this action generates the WM_CLOSE message, and the default response to this message is to call `DestroyWindow.` When a parent window is destroyed, Windows calls `DestroyWindow` for all its children.
 
-The second case, the use of the **delete** operator on Windows objects, should be rare. The following are some cases where using **delete** is the correct choice.
+The second case, the use of the **`delete`** operator on Windows objects, should be rare. The following are some cases where using **`delete`** is the correct choice.
 
 ## Auto Cleanup with CWnd::PostNcDestroy
 
@@ -72,14 +73,14 @@ We recommend that you call `DestroyWindow` to destroy a Windows object, either t
 
 Do not call the global `DestroyWindow` API to destroy a MDI Child window. You should use the virtual method `CWnd::DestroyWindow` instead.
 
-For C++ Window objects that do not perform auto-cleanup, using the **delete** operator can cause a memory leak when you try to call `DestroyWindow` in the `CWnd::~CWnd` destructor if the VTBL does not point to the correctly derived class. This occurs because the system cannot find the appropriate destroy method to call. Using `DestroyWindow` instead of **delete** avoids these problems. Because this can be a subtle error, compiling in debug mode will generate the following warning if you are at risk.
+For C++ Window objects that do not perform auto-cleanup, using the **`delete`** operator can cause a memory leak when you try to call `DestroyWindow` in the `CWnd::~CWnd` destructor if the VTBL does not point to the correctly derived class. This occurs because the system cannot find the appropriate destroy method to call. Using `DestroyWindow` instead of **`delete`** avoids these problems. Because this can be a subtle error, compiling in debug mode will generate the following warning if you are at risk.
 
 ```
 Warning: calling DestroyWindow in CWnd::~CWnd
     OnDestroy or PostNcDestroy in derived class will not be called
 ```
 
-In the case of C++ Windows objects that do perform auto-cleanup, you must call `DestroyWindow`. If you use the **delete** operator directly, the MFC diagnostic memory allocator will notify you that you are freeing memory two times. The two occurrences are your first explicit call and the indirect call to **delete this** in the auto-cleanup implementation of `PostNcDestroy`.
+In the case of C++ Windows objects that do perform auto-cleanup, you must call `DestroyWindow`. If you use the **`delete`** operator directly, the MFC diagnostic memory allocator will notify you that you are freeing memory two times. The two occurrences are your first explicit call and the indirect call to **delete this** in the auto-cleanup implementation of `PostNcDestroy`.
 
 After calling `DestroyWindow` on a non-auto-cleanup object, the C++ object will still be around, but *m_hWnd* will be NULL. After calling `DestroyWindow` on an auto-cleanup object, the C++ object will be gone, freed by the C++ delete operator in the auto-cleanup implementation of `PostNcDestroy`.
 

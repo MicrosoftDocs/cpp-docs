@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: agent Class"
 title: "agent Class"
 ms.date: "11/04/2016"
 f1_keywords: ["agent", "AGENTS/concurrency::agent", "AGENTS/concurrency::agent::agent", "AGENTS/concurrency::agent::cancel", "AGENTS/concurrency::agent::start", "AGENTS/concurrency::agent::status", "AGENTS/concurrency::agent::status_port", "AGENTS/concurrency::agent::wait", "AGENTS/concurrency::agent::wait_for_all", "AGENTS/concurrency::agent::wait_for_one", "AGENTS/concurrency::agent::done", "AGENTS/concurrency::agent::run"]
@@ -103,7 +104,7 @@ bool cancel();
 
 ### Return Value
 
-**true** if the agent was canceled, **false** otherwise. An agent cannot be canceled if it has already started running or has already completed.
+**`true`** if the agent was canceled, **`false`** otherwise. An agent cannot be canceled if it has already started running or has already completed.
 
 ## <a name="done"></a> done
 
@@ -115,7 +116,7 @@ bool done();
 
 ### Return Value
 
-**true** if the agent is moved to the `agent_done` state, **false** otherwise. An agent that has been canceled cannot be moved to the `agent_done` state.
+**`true`** if the agent is moved to the `agent_done` state, **`false`** otherwise. An agent that has been canceled cannot be moved to the `agent_done` state.
 
 ### Remarks
 
@@ -143,7 +144,7 @@ bool start();
 
 ### Return Value
 
-**true** if the agent started correctly, **false** otherwise. An agent that has been canceled cannot be started.
+**`true`** if the agent started correctly, **`false`** otherwise. An agent that has been canceled cannot be started.
 
 ## <a name="status"></a> status
 

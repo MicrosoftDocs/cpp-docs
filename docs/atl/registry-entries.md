@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Registry Entries"
 title: "Registry Entries (ATL)"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["registry, ATL services entries", "registry, application IDs"]

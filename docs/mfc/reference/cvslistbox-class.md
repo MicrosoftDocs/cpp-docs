@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CVSListBox Class"
 title: "CVSListBox Class"
 ms.date: "11/19/2018"
 f1_keywords: ["CVSListBox", "AFXVSLISTBOX/CVSListBox", "AFXVSLISTBOX/CVSListBox::CVSListBox", "AFXVSLISTBOX/CVSListBox::AddItem", "AFXVSLISTBOX/CVSListBox::EditItem", "AFXVSLISTBOX/CVSListBox::GetCount", "AFXVSLISTBOX/CVSListBox::GetItemData", "AFXVSLISTBOX/CVSListBox::GetItemText", "AFXVSLISTBOX/CVSListBox::GetSelItem", "AFXVSLISTBOX/CVSListBox::RemoveItem", "AFXVSLISTBOX/CVSListBox::SelectItem", "AFXVSLISTBOX/CVSListBox::SetItemData", "AFXVSLISTBOX/CVSListBox::GetListHwnd"]
@@ -51,7 +52,7 @@ The `CVSListBox` class provides a set of edit buttons that enable the user to cr
 
 The following is a picture of the editable list control. The second list entry, which is titled "Item2", is selected for editing.
 
-![CVSListBox control](../../mfc/reference/media/cvslistbox.png "CVSListBox control")
+![CVSListBox control.](../../mfc/reference/media/cvslistbox.png "CVSListBox control")
 
 If you use the resource editor to add an editable list control, notice that the **Toolbox** pane of the editor does not provide a predefined editable list control. Instead, add a static control such as the **Group Box** control. The framework uses the static control as a placeholder to specify the size and position of the editable list control.
 

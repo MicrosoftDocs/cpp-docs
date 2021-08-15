@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Reusing Inline Files"
 title: "Reusing Inline Files"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["inline files, reusing NMAKE", "revising inline files", "NMAKE program, inline files"]

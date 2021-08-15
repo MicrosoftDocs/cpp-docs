@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: ptr"
 title: "ptr (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.ptr"]
@@ -25,11 +26,9 @@ See the example for [defaultvalue](defaultvalue.md) for a sample use of **ptr**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|Interface parameter, interface method, **typedef**|
+|**Applies to**|Interface parameter, interface method, **`typedef`**|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler errors C3000 Through C3099"
 title: "Compiler errors C3000 Through C3099"
 ms.date: "04/21/2019"
 f1_keywords: ["C3051", "C3061", "C3064", "C3067", "C3074", "C3078", "C3079", "C3081", "C3082", "C3086", "C3088", "C3089", "C3090", "C3091", "C3092", "C3093", "C3098"]
@@ -119,4 +120,4 @@ The articles in this section of the documentation explain a subset of the error 
 ## See also
 
 [C/C++ Compiler and build tools errors and warnings](../compiler-errors-1/c-cpp-build-errors.md) \
-[Compiler errors C2000 - C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[Compiler errors C2000 - C3999, C7000 - C7999](../compiler-errors-1/compiler-errors-c2000-c3999.md)

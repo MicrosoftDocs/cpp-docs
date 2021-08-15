@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Namespaces and Type Visibility (C++/CX )"
 title: "Namespaces and Type Visibility (C++/CX )"
 ms.date: "12/30/2016"
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
@@ -22,15 +23,14 @@ In a private ref class, interface, or delegate, no members are emitted to metada
 
 Use the following access modifiers to control both metadata visibility and source code accessibility.
 
-||||
-|-|-|-|
-|Modifier|Meaning|Emitted to metadata?|
-|private|The default accessibility. Same meaning as in standard C++.|No|
-|protected|Same meaning as in standard C++, both within the app or component and in metadata.|Yes|
-|public|Same meaning as in standard C++.|Yes|
-|`public protected` -or- `protected public`|Protected accessibility in metadata, public within the app or component.|Yes|
-|`protected private` or `private protected`|Not visible in metadata; protected accessibility within the app or component.||
-|`internal` or `private public`|The member is public within the app or component, but is not visible in metadata.|No|
+| Modifier | Meaning | Emitted to metadata? |
+|--|--|--|
+| **`private`** | The default accessibility. Same meaning as in standard C++. | No |
+| **`protected`** | Same meaning as in standard C++, both within the app or component and in metadata. | Yes |
+| **`public`** | Same meaning as in standard C++. | Yes |
+| **`public protected`** -or- **`protected public`** | Protected accessibility in metadata, public within the app or component. | Yes |
+| **`protected private`** or **`private protected`** | Not visible in metadata; protected accessibility within the app or component. |  |
+| **`internal`** or **`private public`** | The member is public within the app or component, but is not visible in metadata. | No |
 
 ## Windows Runtime namespaces
 
@@ -40,13 +40,12 @@ The Windows API consists of types that are declared in the Windows::\* namespace
 
 The C++/CX define certain types in these namespaces as part of the projection of the Windows Runtime type system.
 
-|||
-|-|-|
-|**Namespace**|**Description**|
-|default|Contains the built-in numeric and char16 types. These types are in scope in every namespace and a `using` statement is never required.|
-|Platform|Contains primarily public types that correspond to Windows Runtime types such as `Array<T>`, `String`, `Guid`, and `Boolean`. Also includes specialized helper types such as `Platform::Agile<T>` and `Platform::Box<T>`.|
-|Platform::Collections|Contains the concrete collection classes that implement the Windows Runtime collection interfaces `IVector`, `IMap`, and so on. These types are defined in a header file, collection.h, not in platform.winmd.|
-|Platform::Details|Contains types that are used by the compiler and are not meant for public consumption.|
+| Namespace | Description |
+|--|--|
+| default | Contains the built-in numeric and char16 types. These types are in scope in every namespace and a **`using`** statement is never required. |
+| `Platform` | Contains primarily public types that correspond to Windows Runtime types such as `Array<T>`, `String`, `Guid`, and `Boolean`. Also includes specialized helper types such as `Platform::Agile<T>` and `Platform::Box<T>`. |
+| `Platform::Collections` | Contains the concrete collection classes that implement the Windows Runtime collection interfaces `IVector`, `IMap`, and so on. These types are defined in a header file, collection.h, not in platform.winmd. |
+| `Platform::Details` | Contains types that are used by the compiler and are not meant for public consumption. |
 
 ## See also
 

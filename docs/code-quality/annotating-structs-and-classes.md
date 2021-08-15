@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Annotating Structs and Classes"
 title: Annotating Structs and Classes
 ms.date: 06/28/2019
 ms.topic: "conceptual"
@@ -87,7 +88,7 @@ struct MyBuffer
     _Field_range_(1, MaxBufferSize)
     int bufferSize;
 
-    _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
+    _Field_size_(bufferSize)        // Preferred way - easier to read and maintain.
     int buffer[]; // Using C99 Flexible array member
 };
 ```

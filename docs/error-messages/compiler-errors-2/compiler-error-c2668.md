@@ -1,19 +1,20 @@
 ---
+description: "Learn more about: Compiler Error C2668"
 title: "Compiler Error C2668"
-ms.date: "03/28/2017"
+ms.date: 05/03/2021
 f1_keywords: ["C2668"]
 helpviewer_keywords: ["C2668"]
 ms.assetid: 041e9627-1c76-420e-a653-cfc83f933bd3
 ---
 # Compiler Error C2668
 
-'function' : ambiguous call to overloaded function
+> 'function' : ambiguous call to overloaded function
 
-The specified overloaded function call could not be resolved. You may want to explicitly cast one or more of the actual parameters.
+The specified overloaded function call couldn't be resolved. You may want to explicitly cast one or more of the actual parameters.
 
-You can also get this error through template use. If, in the same class, you have a regular member function and a templated member function with the same signature, the templated one must come first. This is a limitation of the current implementation of Visual C++.
+You can also get this error through template use. If, in the same class, you have a regular member function and a templated member function with the same signature, the templated one must come first. This limitation remains in the current implementation of Visual C++.
 
-## Example
+## Examples
 
 The following sample generates C2668:
 
@@ -33,9 +34,7 @@ int main() {
 }
 ```
 
-## Example
-
-Another way to resolve this error is with a [using declaration](../../cpp/using-declaration.md):
+Another way to resolve this error is with a [`using` declaration](../../cpp/using-declaration.md):
 
 ```cpp
 // C2668b.cpp
@@ -76,11 +75,7 @@ class MyTestCase : public AppTestCase {
 };
 ```
 
-## Example
-
-This error can also be generated as a result of compiler conformance work that was done for Visual Studio .NET 2003: ambiguous conversion on cast of constant 0.
-
-Conversion on a cast using constant 0 is ambiguous since int requires a conversion both to long and to void*. To resolve this error, cast 0 to the exact type of the function parameter it is being used for so that no conversions need to take place (this code will be valid in the Visual Studio .NET 2003 and Visual Studio .NET versions of Visual C++).
+Conversion on a cast using constant 0 is ambiguous since **`int`** requires a conversion both to **`long`** and to `void*`. To resolve this error, cast 0 to the exact type of the function parameter it's being used for. Then no conversions need to take place.
 
 ```cpp
 // C2668c.cpp
@@ -100,9 +95,7 @@ int main() {
 }
 ```
 
-## Example
-
-This error can occur because the CRT now has float and double forms of all math functions.
+This error can occur because the CRT now has **`float`** and **`double`** forms of all math functions.
 
 ```cpp
 // C2668d.cpp
@@ -115,9 +108,7 @@ int main() {
 }
 ```
 
-## Example
-
-This error can occur because the pow(int, int) was removed from math.h in the CRT.
+This error can occur because the `pow(int, int)` was removed from *`math.h`* in the CRT.
 
 ```cpp
 // C2668e.cpp
@@ -128,9 +119,7 @@ int main() {
 }
 ```
 
-## Example
-
-This code succeeds in Visual Studio 2015 but fails in Visual Studio 2017 and later with C2668. In Visual Studio 2015, the compiler erroneously treated copy-list-initialization in the same way as regular copy-initialization; it considered only converting constructors for overload resolution.
+This code succeeds in Visual Studio 2015 but fails in Visual Studio 2017 and later with C2668. In Visual Studio 2015, the compiler erroneously treated copy-list-initialization in the same way as regular copy-initialization. It considered only converting constructors for overload resolution.
 
 ```cpp
 struct A {

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: bad_target Class"
 title: "bad_target Class"
 ms.date: "11/04/2016"
 f1_keywords: ["bad_target", "CONCRT/concurrency::bad_target", "CONCRT/concurrency::bad_target::bad_target"]

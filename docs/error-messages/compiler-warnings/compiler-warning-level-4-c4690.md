@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 4) C4690"
 title: "Compiler Warning (level 4) C4690"
 ms.date: "07/03/2018"
 f1_keywords: ["C4690"]
@@ -11,7 +12,7 @@ ms.assetid: 080a0ea1-458b-477b-a37a-4a34c94709ff
 
 ## Remarks
 
-The [emitidl](../../windows/emitidl.md) attribute was popped one more time that it was pushed.
+The [emitidl](../../windows/attributes/emitidl.md) attribute was popped one more time that it was pushed.
 
 ## Example
 

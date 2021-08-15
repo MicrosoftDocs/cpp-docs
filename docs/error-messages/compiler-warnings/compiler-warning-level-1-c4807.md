@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4807"
 title: "Compiler Warning (level 1) C4807"
 ms.date: "11/04/2016"
 f1_keywords: ["C4807"]
@@ -9,7 +10,7 @@ ms.assetid: 089c9f87-fd81-402e-9826-66a8ef1ef1fe
 
 'operation' : unsafe mix of type 'type' and signed bitfield of type 'type'
 
-This warning is generated when comparing a one-bit signed bit field to a `bool` variable. Because a one-bit, signed bit field can only contain the values -1 or 0, it is dangerous to compare it to `bool`. No warnings are generated about mixing `bool` and one-bit, unsigned bitfields since they are identical to `bool` and can only hold 0 or 1.
+This warning is generated when comparing a one-bit signed bit field to a **`bool`** variable. Because a one-bit, signed bit field can only contain the values -1 or 0, it is dangerous to compare it to **`bool`**. No warnings are generated about mixing **`bool`** and one-bit, unsigned bitfields since they are identical to **`bool`** and can only hold 0 or 1.
 
 ## Example
 

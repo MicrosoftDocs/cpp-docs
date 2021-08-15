@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: /IMPORTS (DUMPBIN)"
 title: "/IMPORTS (DUMPBIN)"
 ms.date: "11/04/2016"
 f1_keywords: ["/imports"]

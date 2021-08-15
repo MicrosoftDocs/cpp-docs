@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Create Declaration / Definition"
 title: "Create Declaration / Definition"
 ms.date: "10/19/2018"
 ms.assetid: 6b1cdcb2-765e-4b93-8cef-92b861f64eba
@@ -15,7 +16,7 @@ ms.assetid: 6b1cdcb2-765e-4b93-8cef-92b861f64eba
 
 1. Place your text or mouse cursor over the function for which you want to create the declaration or definition.
 
-   ![Highlighted code](images/createdefinition_highlight.png)
+   ![Screenshot showing highlighted code.](images/createdefinition_highlight.png)
 
 1. Next, do one of the following:
    * **Keyboard**
@@ -25,4 +26,4 @@ ms.assetid: 6b1cdcb2-765e-4b93-8cef-92b861f64eba
 
 1. The function's declaration/definition will be created in the source or header file, which you will see in a popup preview window.  If the source or header file does not exist, it will also be created and placed in the project.
 
-   ![Create Declaration / Definition result](images/createdefinition_result.png)
+   ![Create Declaration / Definition result.](images/createdefinition_result.png)

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: uuid (C++)"
 title: "uuid (C++)"
 ms.date: "11/04/2016"
 f1_keywords: ["uuid_cpp"]
@@ -9,7 +10,7 @@ ms.assetid: 9d004621-09bc-4a8d-871b-648f5d5102d7
 
 **Microsoft Specific**
 
-The compiler attaches a GUID to a class or structure declared or defined (full COM object definitions only) with the **uuid** attribute.
+The compiler attaches a GUID to a class or structure declared or defined (full COM object definitions only) with the **`uuid`** attribute.
 
 ## Syntax
 
@@ -19,7 +20,7 @@ __declspec( uuid("ComObjectGUID") ) declarator
 
 ## Remarks
 
-The **uuid** attribute takes a string as its argument. This string names a GUID in normal registry format with or without the **{ }** delimiters. For example:
+The **`uuid`** attribute takes a string as its argument. This string names a GUID in normal registry format with or without the **{ }** delimiters. For example:
 
 ```cpp
 struct __declspec(uuid("00000000-0000-0000-c000-000000000046")) IUnknown;

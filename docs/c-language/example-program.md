@@ -1,11 +1,12 @@
 ---
+description: "Learn more about: Example Program"
 title: "Example Program"
 ms.date: "11/04/2016"
 ms.assetid: fc22ef82-9caa-425f-b201-2891bc123d1f
 ---
 # Example Program
 
-The following C source program consists of two source files. It gives an overview of some of the various declarations and definitions possible in a C program. Later sections in this book describe how to write these declarations, definitions, and initializations, and how to use C keywords such as **static** and `extern`. The `printf` function is declared in the C header file STDIO.H.
+The following C source program consists of two source files. It gives an overview of some of the various declarations and definitions possible in a C program. Later sections in this book describe how to write these declarations, definitions, and initializations, and how to use C keywords such as **`static`** and **`extern`**. The `printf` function is declared in the C header file STDIO.H.
 
 The `main` and `max` functions are assumed to be in separate files, and execution of the program begins with the `main` function. No explicit user functions are executed before `main`.
 

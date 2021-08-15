@@ -1,11 +1,12 @@
 ---
+description: "Learn more about: _1 Object"
 title: "_1 Object"
-ms.date: "11/04/2016"
-f1_keywords: ["_1", "std::_1", "functional/std::_1"]
+ms.date: "01/15/2021"
+f1_keywords: ["_1", "std::_1", "functional/std::_1", "std::_2", "functional/std::_2", "std::_3", "functional/std::_3", "std::_4", "functional/std::_4", "std::_5", "functional/std::_5", "std::_6", "functional/std::_6", "std::_7", "functional/std::_7", "std::_8", "functional/std::_8", "std::_9", "functional/std::_9", "std::_10", "functional/std::_10", "std::_11", "functional/std::_11", "std::_12", "functional/std::_12", "std::_13", "functional/std::_13", "std::_14", "functional/std::_14", "std::_15", "functional/std::_15", "std::_16", "functional/std::_16", "std::_17", "functional/std::_17", "std::_18", "functional/std::_18", "std::_19", "functional/std::_19", "std::_20", "functional/std::_20", "functional/std::placeholders", "std::placeholders"]
 helpviewer_keywords: ["_1 object"]
 ms.assetid: 30c3c480-ff31-4708-94be-7d0d65f243c9
 ---
-# _1 Object
+# `_1` Object
 
 Placeholders for replaceable arguments.
 
@@ -13,15 +14,15 @@ Placeholders for replaceable arguments.
 
 ```cpp
 namespace placeholders {
-    extern unspecified _1, _2, ... _M
+    extern unspecified _1, _2, ... _N
 } // namespace placeholders (within std)
 ```
 
 ## Remarks
 
-The objects `_1, _2, ... _M` are placeholders designating the first, second, ..., Mth argument, respectively in a function call to an object returned by [bind](../standard-library/functional-functions.md#bind). You use `_N` to specify where the Nth argument should be inserted when the bind expression is evaluated.
+The objects `_1, _2, ... _N` are placeholders that represent the first, second, ..., through Nth argument, respectively in a function call to an object returned by [`bind`](functional-functions.md#bind). For example, you use `_6` to specify where the sixth argument should be inserted when the `bind` expression is evaluated.
 
-In this implementation the value of `M` is 20.
+In the Microsoft implementation, the value of `_N` is 20.
 
 ## Example
 

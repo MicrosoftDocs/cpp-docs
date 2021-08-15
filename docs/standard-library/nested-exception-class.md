@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: nested_exception Class"
 title: "nested_exception Class"
 ms.date: "11/04/2016"
 f1_keywords: ["exception/std::nested_exception"]
@@ -24,13 +25,13 @@ class nested_exception {
 
 ### Operators
 
-|||
+|Name|Description|
 |-|-|
-|[operator=](#op_as)||
+|[operator=](#op_as)|Assignment operator.|
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[rethrow_nested](#rethrow_nested)|Throws the stored exception.|
 |[nested_ptr](#nested_ptr)|Returns the stored exception.|
@@ -59,7 +60,7 @@ The stored exception captured by this `nested_exception` object.
 
 #### Remarks
 
-If `nested_ptr()` returns a null pointer, the function calls `std::terminate()`. Otherwise, it throws the stored exception captured by `*this`.
+If `nested_ptr()` returns a null pointer, the function calls `std::terminate()`. Otherwise, it throws the stored exception captured by **`*this`**.
 
 ## Requirements
 

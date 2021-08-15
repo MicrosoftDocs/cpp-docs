@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: front_insert_iterator Class"
 title: "front_insert_iterator Class"
 ms.date: "11/04/2016"
 f1_keywords: ["iterator/std::front_insert_iterator", "iterator/std::front_insert_iterator::container_type", "iterator/std::front_insert_iterator::reference"]
@@ -290,13 +291,13 @@ A reference to the last element inserted at the front of the container.
 
 ### Remarks
 
-The first member operator evaluates `container.push_front( val)`, then returns `*this`.
+The first member operator evaluates `container.push_front( val)`, then returns **`*this`**.
 
 The second member operator evaluates
 
 `container->push_front((typename Container::value_type&&) val)`,
 
-then returns `*this`.
+then returns **`*this`**.
 
 ### Example
 

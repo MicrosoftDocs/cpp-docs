@@ -1,21 +1,22 @@
 ---
+description: "Learn more about: Customize CMake build settings"
 title: "Customize CMake build settings in Visual Studio"
 ms.date: "08/20/2019"
 helpviewer_keywords: ["CMake build settings"]
 ---
 # Customize CMake build settings
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 In Visual Studio 2019 and later, you can add configurations and customize their settings by using the **CMake settings editor**. The editor is intended to be a simpler alternative to manually editing the *CMakeSettings.json* file, but if you prefer to edit the file directly, you can click the **Edit JSON** link in the upper right of the editor.
 
 To open the editor, click on the **Configuration** drop-down in the main toolbar and choose **Manage Configurations**.
 
-![CMake configurations drop-down](media/vs2019-cmake-manage-configurations.png)
+![Screenshot of the CMake configuration drop-down that highlights the Manage Configurations selection.](media/vs2019-cmake-manage-configurations.png)
 
 Now you see the **Settings Editor** with the installed configurations on the left.
 
-![CMake settings editor](media/cmake-settings-editor.png)
+![Screenshot of the CMake settings editor.](media/cmake-settings-editor.png)
 
 Visual Studio provides one `x64-Debug` configuration by default. You can add additional configurations by clicking the green plus sign. The settings that you see in the editor might vary depending on which configuration is selected.
 
@@ -143,7 +144,7 @@ The following example shows a sample configuration, which you can use as a start
 
 JSON IntelliSense helps you edit the *CMakeSettings.json* file:
 
-   ![CMake JSON IntelliSense](media/cmake-json-intellisense.png "CMake JSON IntelliSense")
+   ![Screenshot of the CMake JSON IntelliSense pop-up in the editor.](media/cmake-json-intellisense.png "CMake JSON IntelliSense")
 
 The JSON editor also informs you when you choose incompatible settings.
 
@@ -151,21 +152,21 @@ For more information about each of the properties in the file, see [CMakeSetting
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Visual Studio 2017 provides several CMake configurations that define how CMake.exe is invoked to create the CMake cache for a given project. To add a new configuration, click the configuration drop-down in the toolbar and choose **Manage Configurations**:
 
-   ![CMake manage configurations](media/cmake-manage-configurations.png)
+   ![Screenshot of Manage configurations selected in the drop-down.](media/cmake-manage-configurations.png)
 
 You can choose from the list of predefined configurations:
 
-   ![CMake predefined configurations](media/cmake-configurations.png)
+   ![Add Configuration to CMake Settings dialog list of predefined configurations.](media/cmake-configurations.png)
 
 The first time you select a configuration, Visual Studio creates a *CMakeSettings.json* file in your project's root folder. This file is used to re-create the CMake cache file, for example after a **Clean** operation.
 
 To add an additional configuration, right click *CMakeSettings.json* and choose **Add Configuration**.
 
-   ![CMake Add configuration](media/cmake-add-configuration.png "CMake Add Configuration")
+   ![Screenshot of the shortcut menu with Add configuration selected.](media/cmake-add-configuration.png "CMake Add Configuration")
 
 You can also edit the file using the **CMake Settings Editor**. Right-click on *CMakeSettings.json* in **Solution Explorer** and choose **Edit CMake Settings**. Or, select **Manage Configurations** from the configuration drop-down at the top of the editor window.
 
@@ -187,7 +188,7 @@ You can also directly edit *CMakeSettings.json* to create custom configurations.
 
 JSON IntelliSense helps you edit the *CMakeSettings.json* file:
 
-   ![CMake JSON IntelliSense](media/cmake-json-intellisense.png "CMake JSON IntelliSense")
+   ![Screenshot of the CMake JSON IntelliSense pop-up in the editor.](media/cmake-json-intellisense.png "CMake JSON IntelliSense")
 
 For more information about each of the properties in the file, see [CMakeSettings.json schema reference](cmakesettings-reference.md).
 

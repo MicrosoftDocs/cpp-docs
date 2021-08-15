@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;mutex&gt;"
 title: "&lt;mutex&gt;"
 ms.date: "11/04/2016"
 f1_keywords: ["<mutex>"]
@@ -26,17 +27,17 @@ The classes `mutex` and `recursive_mutex` are *mutex types*. A mutex type has a 
 
 - The `lock` method blocks the calling thread until the thread obtains ownership of the mutex. Its return value is ignored.
 
-- The `try_lock` method tries to obtain ownership of the mutex without blocking. Its return type is convertible to **bool** and is **true** if the method obtains ownership, but is otherwise **false**.
+- The `try_lock` method tries to obtain ownership of the mutex without blocking. Its return type is convertible to **`bool`** and is **`true`** if the method obtains ownership, but is otherwise **`false`**.
 
 - The `unlock` method releases the ownership of the mutex from the calling thread.
 
 You can use mutex types as type arguments to instantiate the templates `lock_guard` and `unique_lock`. You can use objects of these types as the `Lock` argument to the wait member functions in the template [condition_variable_any](../standard-library/condition-variable-any-class.md).
 
-A *timed mutex type* satisfies the requirements for a mutex type. In addition, it has the `try_lock_for` and `try_lock_until` methods that must be callable by using one argument and must return a type that is convertible to **bool**. A timed mutex type can define these functions by using additional arguments, provided that those additional arguments all have default values.
+A *timed mutex type* satisfies the requirements for a mutex type. In addition, it has the `try_lock_for` and `try_lock_until` methods that must be callable by using one argument and must return a type that is convertible to **`bool`**. A timed mutex type can define these functions by using additional arguments, provided that those additional arguments all have default values.
 
-- The `try_lock_for` method must be callable by using one argument, `Rel_time`, whose type is an instantiation of [chrono::duration](../standard-library/duration-class.md). The method tries to obtain ownership of the mutex, but returns within the time that is designated by `Rel_time`, regardless of success. The return value converts to **true** if the method obtains ownership; otherwise, the return value converts to **false**.
+- The `try_lock_for` method must be callable by using one argument, `Rel_time`, whose type is an instantiation of [chrono::duration](../standard-library/duration-class.md). The method tries to obtain ownership of the mutex, but returns within the time that is designated by `Rel_time`, regardless of success. The return value converts to **`true`** if the method obtains ownership; otherwise, the return value converts to **`false`**.
 
-- The `try_lock_until` method must be callable by using one argument, `Abs_time`, whose type is an instantiation of [chrono::time_point](../standard-library/time-point-class.md). The method tries to obtain ownership of the mutex, but returns no later than the time that is designated by `Abs_time`, regardless of success. The return value converts to **true** if the method obtains ownership; otherwise, the return value converts to **false**.
+- The `try_lock_until` method must be callable by using one argument, `Abs_time`, whose type is an instantiation of [chrono::time_point](../standard-library/time-point-class.md). The method tries to obtain ownership of the mutex, but returns no later than the time that is designated by `Abs_time`, regardless of success. The return value converts to **`true`** if the method obtains ownership; otherwise, the return value converts to **`false`**.
 
 A mutex type is also known as a *lockable type*. If it does not provide the member function `try_lock`, it is a *basic lockable type*. A timed mutex type is also known as a *timed lockable type*.
 
@@ -44,7 +45,7 @@ A mutex type is also known as a *lockable type*. If it does not provide the memb
 
 ### Classes
 
-|||
+|Name|Description|
 |-|-|
 |[lock_guard Class](../standard-library/lock-guard-class.md)|Represents a template that can be instantiated to create an object whose destructor unlocks a `mutex`.|
 |[mutex Class (C++ Standard Library)](../standard-library/mutex-class-stl.md)|Represents a mutex type. Use objects of this type to enforce mutual exclusion within a program.|
@@ -56,7 +57,7 @@ A mutex type is also known as a *lockable type*. If it does not provide the memb
 
 ### Functions
 
-|||
+|Name|Description|
 |-|-|
 |[call_once](../standard-library/mutex-functions.md#call_once)|Provides a mechanism for calling a specified callable object exactly once during execution.|
 |[lock](../standard-library/mutex-functions.md#lock)|Attempts to lock all arguments without deadlock.|
@@ -65,16 +66,16 @@ A mutex type is also known as a *lockable type*. If it does not provide the memb
 
 ### Structs
 
-|||
+|Name|Description|
 |-|-|
 |[adopt_lock_t Structure](../standard-library/adopt-lock-t-structure.md)|Represents a type that is used to define an `adopt_lock`.|
 |[defer_lock_t Structure](../standard-library/defer-lock-t-structure.md)|Represents a type that defines a `defer_lock` object that is used to select one of the overloaded constructors of `unique_lock`.|
-|[once_flag Structure](../standard-library/once-flag-structure.md)|Represents a **struct** that is used with the template function `call_once` to ensure that initialization code is called only once, even in the presence of multiple threads of execution.|
-|[try_to_lock_t Structure](../standard-library/try-to-lock-t-structure.md)|Represents a **struct** that defines a `try_to_lock` object and is used to select one of the overloaded constructors of `unique_lock`.|
+|[once_flag Structure](../standard-library/once-flag-structure.md)|Represents a **`struct`** that is used with the template function `call_once` to ensure that initialization code is called only once, even in the presence of multiple threads of execution.|
+|[try_to_lock_t Structure](../standard-library/try-to-lock-t-structure.md)|Represents a **`struct`** that defines a `try_to_lock` object and is used to select one of the overloaded constructors of `unique_lock`.|
 
 ### Variables
 
-|||
+|Name|Description|
 |-|-|
 |[adopt_lock](../standard-library/mutex-functions.md#adopt_lock)|Represents an object that can be passed to constructors for `lock_guard` and `unique_lock` to indicate that the mutex object that is also being passed to the constructor is locked.|
 |[defer_lock](../standard-library/mutex-functions.md#defer_lock)|Represents an object that can be passed to the constructor for `unique_lock`, to indicate that the constructor should not lock the mutex object that is also being passed to it.|

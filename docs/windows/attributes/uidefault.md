@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: uidefault"
 title: "uidefault (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.uidefault"]
@@ -42,9 +43,7 @@ __interface ICustom{
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
 |**Applies to**|Interface method|
 |**Repeatable**|No|

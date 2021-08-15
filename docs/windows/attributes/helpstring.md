@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: helpstring"
 title: "helpstring (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.helpstring"]
@@ -30,11 +31,9 @@ See the example for [defaultvalue](defaultvalue.md) for an example of how to use
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**interface**, **typedef**, **class**, method, property|
+|**Applies to**|**interface**, **`typedef`**, **`class`**, method, property|
 |**Repeatable**|No|
 |**Required attributes**|None|
 |**Invalid attributes**|None|

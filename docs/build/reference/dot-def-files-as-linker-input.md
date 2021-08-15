@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: .Def Files as Linker Input"
 title: ".Def Files as Linker Input"
 ms.date: "11/04/2016"
 helpviewer_keywords: [".def files, as linker input", "def files, as linker input"]

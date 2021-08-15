@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Add a property"
 title: "Add a property"
 ms.date: "11/09/2018"
 f1_keywords: ["vc.codewiz.prop.overview", "vc.codewiz.prop.idlattributes"]
@@ -93,8 +94,8 @@ Use this wizard to add a property to an interface.
 
   |Option|Description|
   |------------|-----------------|
-  |**PropPut**|The [PropPut](../windows/propput.md) function returns a copy of the object. This is the default and the most common way to make the property writable.|
-  |**PropPutRef**|The [PropPutRef](../windows/propputref.md) function returns a reference to the object, rather than returning the copy of the object itself. Consider using this option for objects, such as large structs or arrays, that may have initialization overhead.|
+  |**PropPut**|The [PropPut](../windows/attributes/propput.md) function returns a copy of the object. This is the default and the most common way to make the property writable.|
+  |**PropPutRef**|The [PropPutRef](../windows/attributes/propputref.md) function returns a reference to the object, rather than returning the copy of the object itself. Consider using this option for objects, such as large structs or arrays, that may have initialization overhead.|
 
 - **Parameter attributes**
 
@@ -143,7 +144,7 @@ Use this page of the Add Property Wizard to specify any interface definition lan
 
 - `helpstring`
 
-  Specifies a character string that's used to describe the element to which it applies. By default, it's set to `property`&nbsp;*Property&nbsp;name*. See [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
+  Specifies a character string that's used to describe the element to which it applies. By default, it's set to **`property`**&nbsp;*Property&nbsp;name*. See [helpstring](/windows/win32/Midl/helpstring) in the *MIDL Reference*.
 
 ### Other options
 
@@ -165,7 +166,7 @@ Not all options are available to all property types.
 
 ## Stock properties
 
-If you're adding a property to an MFC dispinterface using the [add property wizard](#idl-attributes-add-property-wizard), you can choose a stock property from the **Property name** list in the [Names](../ide/names-add-property-wizard.md) page of the wizard. These properties are as follows:
+If you're adding a property to an MFC dispinterface using the [add property wizard](#idl-attributes-add-property-wizard), you can choose a stock property from the **Property name** list in the [Names](#names-add-property-wizard) page of the wizard. These properties are as follows:
 
 |Property name|Description|
 |-------------------|-----------------|

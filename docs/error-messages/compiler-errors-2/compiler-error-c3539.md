@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Error C3539"
 title: "Compiler Error C3539"
 ms.date: "11/04/2016"
 f1_keywords: ["C3539"]
@@ -9,11 +10,11 @@ ms.assetid: 34a33a0f-d1b6-498f-b312-ffad2d4799b3
 
 'type': a template-argument cannot be a type that contains 'auto'
 
-The indicated template argument type cannot contain a usage of the `auto` keyword.
+The indicated template argument type cannot contain a usage of the **`auto`** keyword.
 
 ### To correct this error
 
-1. Do not specify the template argument with the `auto` keyword.
+1. Do not specify the template argument with the **`auto`** keyword.
 
 ## Example
 
@@ -32,4 +33,4 @@ int main()
 
 ## See also
 
-[auto Keyword](../../cpp/auto-keyword.md)
+[auto Keyword](../../cpp/auto-cpp.md)

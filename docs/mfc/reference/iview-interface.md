@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IView Interface"
 title: "IView Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IView", "AFXWINFORMS/IView", "AFXWINFORMS/IView::OnActivateView", "AFXWINFORMS/IView::OnInitialUpdate", "AFXWINFORMS/IView::OnUpdate"]
@@ -25,7 +26,7 @@ interface class IView
 |[IView::OnInitialUpdate](#oninitialupdate)|Called by the framework after the view is first attached to the document, but before the view is initially displayed.|
 |[IView::OnUpdate](#onupdate)|Called by MFC after the view's document has been modified; this function allows the view to update its display to reflect modifications.|
 
-## Remarks
+### Remarks
 
 `IView` implements several methods that `CWinFormsView` uses to forward common view notifications to a hosted managed control. These are [OnInitialUpdate](#oninitialupdate), [OnUpdate](#onupdate) and [OnActivateView](#onactivateview).
 
@@ -66,7 +67,7 @@ Called by MFC after the view's document has been modified.
 void OnUpdate();
 ```
 
-## Remarks
+### Remarks
 
 This function allows the view to update its display to reflect modifications.
 

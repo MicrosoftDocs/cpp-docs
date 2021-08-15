@@ -1,50 +1,56 @@
 - name: Linux with Visual Studio C++ documentation
-  href: index.md
+  href: ../linux/index.yml
 - name: Download, install, and set up the Linux Development workload
-  href: download-install-and-setup-the-linux-development-workload.md
+  href: ../linux/download-install-and-setup-the-linux-development-workload.md
 - name: Connect to your remote Linux computer
-  expanded: true
   items:
     - name: Connect to your remote Linux computer
-      href: connect-to-your-remote-linux-computer.md
+      href: ../linux/connect-to-your-remote-linux-computer.md
     - name: Set up FIPS-compliant secure remote Linux development
-      href: set-up-fips-compliant-secure-remote-linux-development.md
+      href: ../linux/set-up-fips-compliant-secure-remote-linux-development.md
     - name: ConnectionManager reference
-      href: connectionmanager-reference.md
-- name: Create a new Linux project
-  href: create-a-new-linux-project.md
-- name: Configure a Linux project
-  href: configure-a-linux-project.md
-- name: Create and configure a Linux CMake project
-  href: cmake-linux-project.md
-- name: Configure Linux projects to use Address Sanitizer
-  href: linux-asan-configuration.md
-- name: Deploy, run, and debug your Linux project
-  href: deploy-run-and-debug-your-linux-project.md
-- name: "Tutorial: Create C++ cross-platform projects in Visual Studio"
-  href: ../build/get-started-linux-cmake.md
-- name: Linux Project Property Page reference
-  expanded: false
+      href: ../linux/connectionmanager-reference.md
+- name: Build Linux projects with MSBuild in Visual Studio
   items:
-    - name: Linux Project Property Page reference
-      href: prop-pages-linux.md
-    - name: General Properties (Linux)
-      href: prop-pages/general-linux.md
-    - name: Debugging Properties (Linux)
-      href: prop-pages/debugging-linux.md
-    - name: VC++ Directories Properties (Linux)
-      href: prop-pages/directories-linux.md
-    - name: Copy Sources Properties (Linux)
-      href: prop-pages/copy-sources-project.md
-    - name: C/C++ Properties (Linux)
-      href: prop-pages/c-cpp-linux.md
-    - name: Linker Properties (Linux)
-      href: prop-pages/linker-linux.md
-    - name: Build Event Properties (Linux)
-      href: prop-pages/build-events-linux.md
-    - name: Custom Build Step Properties (Linux)
-      href: prop-pages/custom-build-step-linux.md
-    - name: Makefile Project Properties (Linux)
-      href: prop-pages/makefile-linux.md
-    - name: Remote Archive Properties (Linux)
-      href: prop-pages/remote-ar-linux.md
+  - name: Create a Linux MSBuild project
+    href: ../linux/create-a-new-linux-project.md
+  - name: Configure a Linux MSBuild project
+    href: ../linux/configure-a-linux-project.md
+  - name: Deploy, run, and debug your Linux MSBuild project
+    href: ../linux/deploy-run-and-debug-your-linux-project.md
+  - name: Linux Project Property Page reference
+    items:
+      - name: Linux Project Property Page reference
+        href: ../linux/prop-pages-linux.md
+      - name: General Properties (Linux)
+        href: ../linux/prop-pages/general-linux.md
+      - name: Debugging Properties (Linux)
+        href: ../linux/prop-pages/debugging-linux.md
+      - name: VC++ Directories Properties (Linux)
+        href: ../linux/prop-pages/directories-linux.md
+      - name: Copy Sources Properties (Linux)
+        href: ../linux/prop-pages/copy-sources-project.md
+      - name: C/C++ Properties (Linux)
+        href: ../linux/prop-pages/c-cpp-linux.md
+      - name: Linker Properties (Linux)
+        href: ../linux/prop-pages/linker-linux.md
+      - name: Build Event Properties (Linux)
+        href: ../linux/prop-pages/build-events-linux.md
+      - name: Custom Build Step Properties (Linux)
+        href: ../linux/prop-pages/custom-build-step-linux.md
+      - name: Makefile Project Properties (Linux)
+        href: ../linux/prop-pages/makefile-linux.md
+      - name: Remote Archive Properties (Linux)
+        href: ../linux/prop-pages/remote-ar-linux.md
+- name: Build Linux projects with CMake in Visual Studio
+  items:
+  - name: Create a Linux CMake project
+    href: ../linux/cmake-linux-project.md
+  - name: Configure a Linux CMake project
+    href: ../linux/cmake-linux-configure.md
+  - name: Configure CMake debugging sessions
+    href: ../build/configure-cmake-debugging-sessions.md?toc=/cpp/linux/toc.json&bc=/cpp/_breadcrumb/toc.json
+  - name: "Tutorial: Create C++ cross-platform projects in Visual Studio"
+    href: ../build/get-started-linux-cmake.md
+- name: Configure Linux projects to use Address Sanitizer
+  href: ../linux/linux-asan-configuration.md

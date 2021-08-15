@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: CMapPtrToPtr Class"
 title: "CMapPtrToPtr Class"
 ms.date: "11/04/2016"
 f1_keywords: ["CMapPtrToPtr", "AFXCOLL/CMapPtrToPtr", "AFXCOLL/CMapPtrToPtr::CMapPtrToPtr", "AFXCOLL/CMapPtrToPtr::GetCount", "AFXCOLL/CMapPtrToPtr::GetHashTableSize", "AFXCOLL/CMapPtrToPtr::GetNextAssoc", "AFXCOLL/CMapPtrToPtr::GetSize", "AFXCOLL/CMapPtrToPtr::GetStartPosition", "AFXCOLL/CMapPtrToPtr::HashKey", "AFXCOLL/CMapPtrToPtr::InitHashTable", "AFXCOLL/CMapPtrToPtr::IsEmpty", "AFXCOLL/CMapPtrToPtr::Lookup", "AFXCOLL/CMapPtrToPtr::LookupKey", "AFXCOLL/CMapPtrToPtr::RemoveAll", "AFXCOLL/CMapPtrToPtr::RemoveKey", "AFXCOLL/CMapPtrToPtr::SetAt"]
@@ -17,7 +18,7 @@ class CMapPtrToPtr : public CObject
 
 ## Members
 
-The member functions of `CMapPtrToPtr` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a function parameter or return value, substitute a pointer to **void**. Wherever you see a `CString` or a **const** pointer to **char** as a function parameter or return value, substitute a pointer to **void**.
+The member functions of `CMapPtrToPtr` are similar to the member functions of class [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Because of this similarity, you can use the `CMapStringToOb` reference documentation for member function specifics. Wherever you see a `CObject` pointer as a function parameter or return value, substitute a pointer to **`void`**. Wherever you see a `CString` or a **`const`** pointer to **`char`** as a function parameter or return value, substitute a pointer to **`void`**.
 
 `BOOL CMapPtrToPtr::Lookup( void* <key>, void*& <rValue> ) const;`
 

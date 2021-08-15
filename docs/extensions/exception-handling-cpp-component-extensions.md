@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Exception Handling  (C++/CLI and C++/CX)"
 title: "Exception Handling  (C++/CLI and C++/CX)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
@@ -12,7 +13,7 @@ Applications compiled with the `/ZW` compiler option or `/clr` compiler option b
 ## In This Section
 
 [Basic Concepts in Using Managed Exceptions](../dotnet/basic-concepts-in-using-managed-exceptions.md)<br/>
-Describes throwing exceptions and using **try**/**catch** blocks.
+Describes throwing exceptions and using **`try`**/**`catch`** blocks.
 
 [Differences in Exception Handling Behavior Under /clr](../dotnet/differences-in-exception-handling-behavior-under-clr.md)<br/>
 Discusses the differences from the standard behavior of C++ exception handling.

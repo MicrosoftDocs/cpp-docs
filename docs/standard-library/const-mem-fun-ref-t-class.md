@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: const_mem_fun_ref_t Class"
 title: "const_mem_fun_ref_t Class"
 ms.date: "02/21/2019"
 f1_keywords: ["functional/std::const_mem_fun_ref_t"]
@@ -7,7 +8,7 @@ ms.assetid: 316ddbaa-9f46-4931-8eba-ea4ca66360ef
 ---
 # const_mem_fun_ref_t Class
 
-An adapter class that allows a **const** member function that takes no arguments to be called as a unary function object when initialized with a reference argument. Deprecated in C++11, removed in C++17.
+An adapter class that allows a **`const`** member function that takes no arguments to be called as a unary function object when initialized with a reference argument. Deprecated in C++11, removed in C++17.
 
 ## Syntax
 
@@ -35,7 +36,7 @@ An adaptable unary function.
 
 ## Remarks
 
-The class template stores a copy of *Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning (**left**.\* `Pm`)() **const**.
+The class template stores a copy of *Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning (**left**.\* `Pm`)() **`const`**.
 
 ## Example
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: &lt;map&gt; operators"
 title: "&lt;map&gt; operators"
 ms.date: "03/27/2019"
 f1_keywords: ["map/std::operator!=", "map/std::operator&gt;", "map/std::operator&gt;=", "map/std::operator&lt;", "map/std::operator&lt;=", "map/std::operator=="]
@@ -27,7 +28,7 @@ An object of type `map`.
 
 ### Return Value
 
-**true** if the maps are not equal; **false** if maps are equal.
+**`true`** if the maps are not equal; **`false`** if maps are equal.
 
 ### Remarks
 
@@ -92,7 +93,7 @@ An object of type `map`.
 
 ### Return Value
 
-**true** if the map on the left side of the operator is strictly less than the map on the right side of the operator; otherwise **false**.
+**`true`** if the map on the left side of the operator is strictly less than the map on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -157,7 +158,7 @@ An object of type `map`.
 
 ### Return Value
 
-**true** if the map on the left side of the operator is less than or equal to the map on the right side of the operator; otherwise **false**.
+**`true`** if the map on the left side of the operator is less than or equal to the map on the right side of the operator; otherwise **`false`**.
 
 ### Example
 
@@ -225,7 +226,7 @@ An object of type `map`.
 
 ### Return Value
 
-**true** if the map on the left side of the operator is equal to the map on the right side of the operator; otherwise **false**.
+**`true`** if the map on the left side of the operator is equal to the map on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -290,7 +291,7 @@ An object of type `map`.
 
 ### Return Value
 
-**true** if the map on the left side of the operator is greater than the map on the right side of the operator; otherwise **false**.
+**`true`** if the map on the left side of the operator is greater than the map on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -354,7 +355,7 @@ An object of type `map`.
 
 ### Return Value
 
-**true** if the map on the left side of the operator is greater than or equal to the map on the right side of the list; otherwise **false**.
+**`true`** if the map on the left side of the operator is greater than or equal to the map on the right side of the list; otherwise **`false`**.
 
 ### Example
 
@@ -422,7 +423,7 @@ An object of type `multimap`.
 
 ### Return Value
 
-**true** if the multimaps are not equal; **false** if multimaps are equal.
+**`true`** if the multimaps are not equal; **`false`** if multimaps are equal.
 
 ### Remarks
 
@@ -467,7 +468,7 @@ The multimaps m1 and m2 are not equal.
 The multimaps m1 and m3 are equal.
 ```
 
-## <a name="op_lt_multimap"></a> operator&lt;
+## <a name="op_lt_multimap"></a> operator&lt; (multimap)
 
 Tests if the multimap object on the left side of the operator is less than the multimap object on the right side.
 
@@ -487,7 +488,7 @@ An object of type `multimap`.
 
 ### Return Value
 
-**true** if the multimap on the left side of the operator is strictly less than the multimap on the right side of the operator; otherwise **false**.
+**`true`** if the multimap on the left side of the operator is strictly less than the multimap on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -532,7 +533,7 @@ The multimap m1 is less than the multimap m2.
 The multimap m1 is not less than the multimap m3.
 ```
 
-## <a name="op_lt_eq_multimap"></a> operator&lt;=
+## <a name="op_lt_eq_multimap"></a> operator&lt;= (multimap)
 
 Tests if the multimap object on the left side of the operator is less than or equal to the multimap object on the right side.
 
@@ -552,7 +553,7 @@ An object of type `multimap`.
 
 ### Return Value
 
-**true** if the multimap on the left side of the operator is less than or equal to the multimap on the right side of the operator; otherwise **false**.
+**`true`** if the multimap on the left side of the operator is less than or equal to the multimap on the right side of the operator; otherwise **`false`**.
 
 ### Example
 
@@ -600,7 +601,7 @@ m1 is greater than m3
 m1 is less than or equal to m4
 ```
 
-## <a name="op_eq_eq_multimap"></a> operator==
+## <a name="op_eq_eq_multimap"></a> operator== (multimap)
 
 Tests if the multimap object on the left side of the operator is equal to the multimap object on the right side.
 
@@ -620,7 +621,7 @@ An object of type `multimap`.
 
 ### Return Value
 
-**true** if the multimap on the left side of the operator is equal to the multimap on the right side of the operator; otherwise **false**.
+**`true`** if the multimap on the left side of the operator is equal to the multimap on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -665,7 +666,7 @@ m1 and m2 are not equal
 m1 and m3 are equal
 ```
 
-## <a name="op_gt_multimap"></a> operator&gt;
+## <a name="op_gt_multimap"></a> operator&gt; (multimap)
 
 Tests if the multimap object on the left side of the operator is greater than the multimap object on the right side.
 
@@ -685,7 +686,7 @@ An object of type `multimap`.
 
 ### Return Value
 
-**true** if the multimap on the left side of the operator is greater than the multimap on the right side of the operator; otherwise **false**.
+**`true`** if the multimap on the left side of the operator is greater than the multimap on the right side of the operator; otherwise **`false`**.
 
 ### Remarks
 
@@ -730,7 +731,7 @@ Multimap m1 is not greater than multimap m2.
 The multimap m1 is greater than the multimap m3.
 ```
 
-## <a name="op_gt_eq_multimap"></a> operator&gt;=
+## <a name="op_gt_eq_multimap"></a> operator&gt;= (multimap)
 
 Tests if the multimap object on the left side of the operator is greater than or equal to the multimap object on the right side.
 
@@ -750,7 +751,7 @@ An object of type `multimap`.
 
 ### Return Value
 
-**true** if the multimap on the left side of the operator is greater than or equal to the multimap on the right side of the list; otherwise **false**.
+**`true`** if the multimap on the left side of the operator is greater than or equal to the multimap on the right side of the list; otherwise **`false`**.
 
 ### Example
 

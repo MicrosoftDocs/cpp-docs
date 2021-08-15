@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: WeakReference Class"
 title: "WeakReference Class"
 ms.date: "09/24/2018"
 ms.topic: "reference"
@@ -80,7 +81,7 @@ ULONG DecrementStrongReference();
 
 Decrements the strong reference count of the current `WeakReference` object.
 
-When the strong reference count becomes zero, the strong reference is set to `nullptr`.
+When the strong reference count becomes zero, the strong reference is set to **`nullptr`**.
 
 ### Return Value
 
@@ -123,7 +124,7 @@ When this operation completes, a copy of the current strong reference if the str
 
 ### Return Value
 
-- S_OK if this operation is successful and the strong reference count is zero. The *ppvObject* parameter is set to `nullptr`.
+- S_OK if this operation is successful and the strong reference count is zero. The *ppvObject* parameter is set to **`nullptr`**.
 
 - S_OK if this operation is successful and the strong reference count is nonzero. The *ppvObject* parameter is set to the strong reference.
 
@@ -164,4 +165,4 @@ WeakReference();
 
 Initializes a new instance of the `WeakReference` class.
 
-The strong reference pointer for the `WeakReference` object is initialized to `nullptr`, and the strong reference count is initialized to 1.
+The strong reference pointer for the `WeakReference` object is initialized to **`nullptr`**, and the strong reference count is initialized to 1.

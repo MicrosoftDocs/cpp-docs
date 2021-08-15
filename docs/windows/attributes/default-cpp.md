@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: default (C++)"
 title: "default  (C++ COM Attribute)"
 ms.date: "10/02/2018"
 f1_keywords: ["vc-attr.default"]
@@ -18,7 +19,7 @@ Indicates that the custom or dispinterface defined within a coclass represents t
 ### Parameters
 
 *interface1*<br/>
-The default interface that will be made available to scripting environments that create an object based on the class defined with the **default** attribute.
+The default interface that will be made available to scripting environments that create an object based on the class defined with the **`default`** attribute.
 
 If no default interface is specified, the first occurrence of a nonsource interface is used as the default.
 
@@ -29,11 +30,11 @@ If no default source interface is specified, the first source interface is used 
 
 ## Remarks
 
-The **default** C++ attribute has the same functionality as the [default](/windows/win32/Midl/default) MIDL attribute. The **default** attribute is also used with the [case](case-cpp.md) attribute.
+The **`default`** C++ attribute has the same functionality as the [default](/windows/win32/Midl/default) MIDL attribute. The **`default`** attribute is also used with the [case](case-cpp.md) attribute.
 
 ## Example
 
-The following code shows how **default** is used on the definition of a coclass to specify `ICustomDispatch` as the default programmability interface:
+The following code shows how **`default`** is used on the definition of a coclass to specify `ICustomDispatch` as the default programmability interface:
 
 ```cpp
 // cpp_attr_ref_default.cpp
@@ -81,17 +82,15 @@ int main() {
 }
 ```
 
-The [source](source-cpp.md) attribute also has an example of how to use **default**.
+The [source](source-cpp.md) attribute also has an example of how to use **`default`**.
 
 ## Requirements
 
-### Attribute Context
-
-|||
+| Attribute context | Value |
 |-|-|
-|**Applies to**|**class**, **struct**, data member|
+|**Applies to**|**`class`**, **`struct`**, data member|
 |**Repeatable**|No|
-|**Required attributes**|**coclass** (when applied to **class** or **struct**)|
+|**Required attributes**|**coclass** (when applied to **`class`** or **`struct`**)|
 |**Invalid attributes**|None|
 
 For more information, see [Attribute Contexts](cpp-attributes-com-net.md#contexts).

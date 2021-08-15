@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: cacos, cacosf, cacosl"
 title: "cacos, cacosf, cacosl"
 ms.date: "11/04/2016"
 api_name: ["cacos", "cacosf", "cacosl"]

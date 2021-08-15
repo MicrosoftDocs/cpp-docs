@@ -1,11 +1,12 @@
 ---
+description: "Learn more about: `selectany`"
 title: "selectany"
 ms.date: "11/04/2016"
 f1_keywords: ["selectany_cpp"]
 helpviewer_keywords: ["__declspec keyword [C++], selectany", "selectany __declspec keyword"]
 ms.assetid: 9c353017-5a42-4f50-b741-bd13da1ce84d
 ---
-# selectany
+# `selectany`
 
 **Microsoft Specific**
 
@@ -13,26 +14,24 @@ Tells the compiler that the declared global data item (variable or object) is a 
 
 ## Syntax
 
-```
-__declspec( selectany ) declarator
-```
+> **`__declspec( selectany )`** *declarator*
 
 ## Remarks
 
-At link time, if multiple definitions of a COMDAT are seen, the linker picks one and discards the rest. If the linker option [/OPT:REF](../build/reference/opt-optimizations.md) (Optimizations) is selected, then COMDAT elimination will occur to remove all the unreferenced data items in the linker output.
+At link time, if multiple definitions of a COMDAT are seen, the linker picks one and discards the rest. If the linker option [`/OPT:REF`](../build/reference/opt-optimizations.md) (Optimizations) is selected, then COMDAT elimination will occur to remove all the unreferenced data items in the linker output.
 
 Constructors and assignment by global function or static methods in the declaration do not create a reference and will not prevent /OPT:REF elimination. Side effects from such code should not be depended on when no other references to the data exist.
 
-For dynamically initialized, global objects, **selectany** will discard an unreferenced object's initialization code, as well.
+For dynamically initialized, global objects, **`selectany`** will discard an unreferenced object's initialization code, as well.
 
-A global data item can normally be initialized only once in an EXE or DLL project. **selectany** can be used in initializing global data defined by headers, when the same header appears in more than one source file. **selectany** is available in both the C and C++ compilers.
+A global data item can normally be initialized only once in an EXE or DLL project. **`selectany`** can be used in initializing global data defined by headers, when the same header appears in more than one source file. **`selectany`** is available in both the C and C++ compilers.
 
 > [!NOTE]
-> **selectany** can only be applied to the actual initialization of global data items that are externally visible.
+> **`selectany`** can only be applied to the actual initialization of global data items that are externally visible.
 
-## Example
+## Example: `selectany` attribute
 
-This code shows how to use the **selectany** attribute:
+This code shows how to use the **`selectany`** attribute:
 
 ```cpp
 //Correct - x1 is initialized and externally visible
@@ -64,9 +63,9 @@ int i;
 __declspec(selectany) X x(1);
 ```
 
-## Example
+## Example: Use `selectany` attribute to ensure data COMDAT folding
 
-This code shows how to use the **selectany** attribute to ensure data COMDAT folding when you also use the [/OPT:ICF](../build/reference/opt-optimizations.md) linker option. Note that data must be marked with **selectany** and placed in a **const** (readonly) section. You must explicitly specify the read-only section.
+This code shows how to use the **`selectany`** attribute to ensure data COMDAT folding when you also use the [`/OPT:ICF`](../build/reference/opt-optimizations.md) linker option. Note that data must be marked with **`selectany`** and placed in a **`const`** (readonly) section. You must explicitly specify the read-only section.
 
 ```cpp
 // selectany2.cpp
@@ -83,5 +82,5 @@ int main() {
 
 ## See also
 
-[__declspec](../cpp/declspec.md)<br/>
+[`__declspec`](../cpp/declspec.md)<br/>
 [Keywords](../cpp/keywords-cpp.md)

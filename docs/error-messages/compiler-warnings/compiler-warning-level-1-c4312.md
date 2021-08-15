@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Compiler Warning (level 1) C4312"
 title: "Compiler Warning (level 1) C4312"
 ms.date: "11/04/2016"
 f1_keywords: ["C4312"]
@@ -9,7 +10,7 @@ ms.assetid: 541906ed-4f62-4bcb-947f-cf9ae7411bcb
 
 'operation' : conversion from 'type1' to 'type2' of greater size
 
-This warning detects an attempt to assign a 32-bit value to a 64-bit pointer type, for example, casting a 32-bit `int` or `long` to a 64-bit pointer.
+This warning detects an attempt to assign a 32-bit value to a 64-bit pointer type, for example, casting a 32-bit **`int`** or **`long`** to a 64-bit pointer.
 
 This can be an unsafe conversion even for pointer values that fit in 32 bits when sign extension occurs. If a negative 32-bit integer is assigned to a 64-bit pointer type, sign extension causes the pointer value to reference a memory address different from the value of the integer.
 

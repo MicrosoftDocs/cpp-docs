@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: IThreadPoolConfig Interface"
 title: "IThreadPoolConfig Interface"
 ms.date: "11/04/2016"
 f1_keywords: ["IThreadPoolConfig", "ATLUTIL/ATL::IThreadPoolConfig", "ATLUTIL/ATL::GetSize", "ATLUTIL/ATL::GetTimeout", "ATLUTIL/ATL::SetSize", "ATLUTIL/ATL::SetTimeout"]
@@ -23,7 +24,7 @@ __interface
 
 ### Methods
 
-|||
+|Name|Description|
 |-|-|
 |[GetSize](#getsize)|Call this method to get the number of threads in the pool.|
 |[GetTimeout](#gettimeout)|Call this method to get the maximum time in milliseconds that the thread pool will wait for a thread to shut down.|

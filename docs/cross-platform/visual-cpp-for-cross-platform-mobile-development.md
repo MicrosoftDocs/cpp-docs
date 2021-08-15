@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Cross-platform mobile development with C++"
 title: "Cross-platform mobile development with C++"
 ms.date: "11/14/2019"
 ms.assetid: 0bb872d6-981b-4c96-9143-fcec5336bf0d

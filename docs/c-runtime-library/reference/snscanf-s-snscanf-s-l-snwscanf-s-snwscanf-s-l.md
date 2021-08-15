@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: _snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l"
 title: "_snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l"
 ms.date: "11/04/2016"
 api_name: ["_snwscanf_s_l", "_snwscanf_s", "_snscanf_s", "_snscanf_s_l"]
@@ -72,7 +73,7 @@ This function is like **sscanf_s** except that it provides the ability to specif
 The buffer size parameter is required with the type field characters **c**, **C**, **s**, **S**, and **[**. For more information, see [scanf Type Field Characters](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
-> The size parameter is of type **unsigned**, not **size_t**.
+> The size parameter is of type **`unsigned`**, not **size_t**.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: NMake Property Page"
 title: "NMake Property Page (Windows C++)| Microsoft Docs"
 ms.date: "11/04/2016"
 f1_keywords: ["VC.Project.VCNMakeTool.ReBuildCommandLine", "VC.Project.VCNMakeTool.CleanCommandLine", "VC.Project.VCNMakeTool.Output", "VC.Project.VCNMakeTool.BuildCommandLine"]

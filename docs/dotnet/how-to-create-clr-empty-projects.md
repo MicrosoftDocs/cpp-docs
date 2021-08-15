@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: How to: Create CLR Empty Projects"
 title: "How to: Create CLR Empty Projects"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["CLR empty projects", "CLR empty projects, creating"]

@@ -1,4 +1,5 @@
 ---
+description: "Learn more about: Generic Interfaces (C++/CLI)"
 title: "Generic Interfaces (C++/CLI)"
 ms.date: "10/12/2018"
 ms.topic: "reference"
@@ -28,7 +29,7 @@ For more information on interfaces, see [interface class](interface-class-cpp-co
 (Optional) Additional declarative information. For more information on attributes and attribute classes, see **Attributes**.
 
 *class-key*<br/>
-**class** or **typename**
+**`class`** or **`typename`**
 
 *type-parameter-identifier(s)*<br/>
 Comma-separated identifiers list.
@@ -51,7 +52,7 @@ Declarations of the interface members.
 *declarators*<br/>
 (Optional) Declarations of variables based on this type.
 
-## Example
+## Example: How to declare and instantiate a generic interface
 
 The following example demonstrates how to declare and instantiate a generic interface. In the example, the generic interface `IList<ItemType>` is declared. It is then implemented by two generic classes, `List1<ItemType>` and `List2<ItemType>`, with different implementations.
 
@@ -228,7 +229,7 @@ Array List
 List2
 ```
 
-## Example
+## Example: Declare a generic interface
 
 This example declares a generic interface, `IMyGenIface`, and two non-generic interfaces, `IMySpecializedInt` and `ImySpecializedString`, that specialize `IMyGenIface`. The two specialized interfaces are then implemented by two classes, `MyIntClass` and `MyStringClass`. The example shows how to specialize generic interfaces, instantiate generic and non-generic interfaces, and call the explicitly implemented members on the interfaces.
 
