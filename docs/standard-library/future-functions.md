@@ -61,7 +61,7 @@ In all cases, the associated asynchronous state of the `future` object is not se
 The pseudo-function `INVOKE` is defined in [\<functional>](../standard-library/functional.md).
 
 ### Microsoft Specific
-When the passed function is executed asynchronously, it is executed on Windows Thread Pool. See [Thread Pools](https://docs.microsoft.com/en-us/windows/win32/procthread/thread-pools). Number of concurrent threads is limited to thread pool defaults (currently 500). Number of threads concurrently executing on hardware is currently limited by number of logical processor in the process's processor group, so effectively limited to 64. See [Processor Groups](https://docs.microsoft.com/en-us/windows/win32/procthread/processor-groups).
+When the passed function is executed asynchronously, it is executed on Windows Thread Pool; see [Thread Pools](https://docs.microsoft.com/en-us/windows/win32/procthread/thread-pools). The number of concurrent threads is limited to the thread pool default (currently 500). The number of threads concurrently executing on hardware is currently limited by the number of logical processor in the process's processor group, so it is effectively limited to 64; see [Processor Groups](https://docs.microsoft.com/en-us/windows/win32/procthread/processor-groups).
 
 ## <a name="future_category"></a> future_category
 
