@@ -28,8 +28,8 @@ The value that is returned by a first call to `now` is always less than or equal
 
 |Name|Description|
 |----------|-----------------|
-|`steady_clock::duration`|A synonym for `nanoseconds`, defined in \<chrono>. The duration specified for this clock. It represents the time in seconds (a billionth) between each integral value stored in the duration.|
-|`steady_clock::period`|A synonym for `nano`, defined in \<ratio> . It represents the time in seconds between two integral values in the duration.|
+|`steady_clock::duration`|A synonym for `nanoseconds`, defined in `<chrono>`. The duration specified for this clock. It represents the time in billionths of a second between each integral value stored in the duration.|
+|`steady_clock::period`|A synonym for `nano`, defined in `<ratio>` . It represents the time in billionths of a second between two integral values in the duration.|
 |`steady_clock::rep`|A synonym for **`long long`**, which is the type that is used to represent the number of clock ticks in the `steady_clock::duration`|
 |`steady_clock::time_point`|A synonym for `chrono::time_point<steady_clock>`.|
 
@@ -53,6 +53,6 @@ The value that is returned by a first call to `now` is always less than or equal
 
 ## See also
 
-- [`<chrono>`](../standard-library/chrono.md)
-- [system_clock Structure](../standard-library/system-clock-structure.md)
-- [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+- [`<chrono>`](chrono.md)
+- [system_clock Structure](system-clock-structure.md)
+- [Header Files Reference](cpp-standard-library-header-files.md)

@@ -17,9 +17,11 @@ class tai_clock; // C++20
 
 ## Remarks
 
-This clock reports International Atomic Time (TAI, from the French *temps atomique international*). International Atomic Time uses a weighted average of many atomic clocks to track time.
+This clock reports International Atomic Time (TAI, from the French *temps atomique international*). International Atomic Time uses a weighted average of many atomic clocks to track time. TAI time is useful in the scientific community.
 
-It's different from UTC time because a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 second. A discrepancy gradually occurs between the time kept by atomic clocks, and the time kept by tracking the rotation speed of the earth, because the earth's rotation speed is irregular and in general is slowing down over time by about one second every 1.5 years. TAI time doesn't keep track of this discrepancy, and as of this writing, it's now 37 seconds ahead of UTC time because of an addition of 10 seconds at the start of 1972 and the leap seconds that have been inserted since 1972.
+This clock is different from UTC time because a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds. A discrepancy gradually accrues between the time kept by atomic clocks and the time kept by measuring the rotation speed of the earth. The discrepancy is because the earth's rotation speed is irregular. It slows down over time by about one second every 1.5 years, and sometimes speeds up. TAI time doesn't keep track of this discrepancy. As of this writing, TAI time is 37 seconds ahead of UTC time of the leap seconds that have been inserted since 1972, and the addition of 10 seconds at the start of 1972.
+
+The epoch is `1958-01-01 00:00:00`.
 
 `is_clock(tai_clock)` returns **true**.
 

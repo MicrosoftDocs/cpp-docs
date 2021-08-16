@@ -19,15 +19,13 @@ class utc_clock; // C++20
 
 This clock measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds and is the basis for civil time around the world.
 
-UTC time is based on International Atomic Time (TAI) which uses atomic clocks to track time. However, a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds.
+The rate of UTC time is based on International Atomic Time (TAI) which uses atomic clocks to track time. However, a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds.
 
-There's a discrepancy between the time kept by atomic clocks, and the time kept by tracking the rotation of the earth because the earth's rotation speed is irregular, and in general is slowing down over time by about one second every 1.5 years. A leap second adjustment keeps UTC tracking time within a second of the average length of a day.
+There's a discrepancy between the time kept by atomic clocks, and the time kept by tracking the rotation of the earth. That's because the earth's rotation speed is irregular, and in general is slowing down over time by about one second every 1.5 years. A leap second adjustment keeps UTC tracking time within a second of the average length of a day.
 
-An atomic clock is almost too accurate in the sense that a day isn't exactly 24 hours, in part because of changes in the earth's rotational speed. To keep UTC time in sync with the sun and the stars, a leap second is occasionally added, and theoretically could be subtracted if the earth's rotation speed increases (which it has done).  
+At the time of this writing, 27 leap seconds have been added since the practice of inserting leap seconds began in 1972. The International Earth Rotation and Reference Systems Service (IERS) determines when a leap second will be added. Adding a leap second is referred to as a "leap second insertion". When a leap second is inserted, the time, as it nears midnight, proceeds from 23 hours 59 minutes 59 seconds to 23 hours 59 minutes 60 seconds (the inserted leap second), and then to 0 hours 0 minutes 0 seconds (midnight). In the past, leap seconds have been added on June 30 or December 31.
 
-At the time of this writing, 27 leap seconds have been added since the practice began in 1972. The International Earth Rotation and Reference Systems Service (IERS) determines when a leap second will be added. Adding a leap second is referred to as a "leap second insertion". When a leap second is inserted, the time as it nears midnight proceeds from 23 hours 59 minutes 59 seconds to 23 hours 59 minutes 60 seconds (the inserted leap second), and then to 0 hours 0 minutes 0 seconds (midnight). In the past, leap seconds have been added either on June 30 or December 31.
-
-UTC time, by definition, starts out 10 seconds behind TAI (atomic time). Given the insertion of 27 leap seconds since then, UTC time is currently 37 seconds behind TAI (atomic clock) time.
+UTC time, by definition, starts out 10 seconds behind TAI (atomic time). Ten seconds was added in 1972 to TAI time to accomodate for the leap seconds the had accumulated by that point. Given the insertion of an additional 27 leap seconds since then, UTC time is currently 37 seconds behind TAI (atomic clock) time.
 
 `is_clock(utc_clock)` returns **true**.
 

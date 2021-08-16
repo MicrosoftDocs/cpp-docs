@@ -2,7 +2,7 @@
 description: "Learn more about: &lt;chrono&gt; operators"
 title: "&lt;chrono&gt; operators"
 ms.date: "08/13/2021"
-f1_keywords: ["chrono/std::operator modulo", "chrono/std::operator+", "chrono/std::chrono::day::operator+", "chrono/std::chrono::duration::operator+", "chrono/std::chrono::month::operator+", "chrono/std::chrono::time_point::operator+", "chrono/std::chrono::weekday::operator+", "chrono/std::chrono::year_month::operator+", "chrono/std::chrono::year::operator+", "chrono/std::chrono::year_month_day::operator+", "chrono/std::chrono::year_month_day_last::operator+", "chrono/std::chrono::year_month_weekday::operator+", "chrono/std::chrono::year_month_weekday_last::operator+", "chrono/std::operator!=", "chrono/std::operator*", "chrono/std::operator/", "chrono/std::operator-", "chrono/std::operator<", "chrono/std::operator<=", "chrono/std::operator<", "chrono/std::operator==", "chrono/std::operator>>", "chrono/std::operator<=>", "chrono/std::chrono::day::operator<=>", "chrono/std::chrono::month::operator<=>", "chrono/std::chrono::year::operator<=>", "chrono/std::chrono::year_month::operator<=>", "chrono/std::chrono::time_point::operator<=>", "chrono/std::chrono::duration::operator<=>", "chrono/std::chrono::month_day_last::operator<=>", "chrono/std::chrono::year_month_day_last::operator<=>", "chrono/std::operator==", "chrono/std::chrono::year::operator<==>", "chrono/std::chrono::day::operator==", "chrono/std::chrono::duration::operator==", "chrono/std::chrono::month::operator==", "chrono/std::chrono::month_day::operator==", "chrono/std::chrono::month_day_last::operator==", "chrono/std::chrono::month_weekday::operator==", "chrono/std::chrono::month_weekday_last::operator==", "chrono/std::chrono::time_point::operator==", "chrono/std::chrono::weekday::operator==", "chrono/std::chrono::year_month::operator==", "chrono/std::chrono::year::operator==", "chrono/std::chrono::year_month_day::operator==", "chrono/std::chrono::year_month_day_last::operator==", "chrono/std::chrono::year_month_weekday_last::operator==", "chrono/std::chrono::year_month_weekday::operator==", "chrono/std::chrono::month_weekday_last::operator==", "chrono/std::chrono::weekday::operator==", "chrono/std::chrono::weekday_last::operator==", "chrono/std::chrono::year_month_weekday_indexed::operator==", "chrono/std::chrono::year_month_weekday_last::operator==", "chrono/std::chrono::year::operator==", "chrono/std::chrono::year_month::operator==",  "chrono/std::chrono::year_month_day::operator==", "chrono/std::chrono::year_month_day_last::operator==", "chrono/std::operator-", "chrono/std::chrono::day::operator-", "chrono/std::chrono::duration::operator-", "chrono/std::chrono::month::operator-", "chrono/std::chrono::time_point::operator-", "chrono/std::chrono::weekday::operator-", "chrono/std::chrono::year_month::operator-", "chrono/std::chrono::year::operator-", "chrono/std::chrono::year_month_day::operator-", "chrono/std::chrono::year_month_day_last::operator-", "chrono/std::chrono::year_month_weekday::operator-", "chrono/std::chrono::year_month_weekday_last::operator-", "chrono/std::chrono::day::operator<<", "chrono/std::chrono::hh_mm_ss::operator<<", "chrono/std::chrono::month_day::operator<<", "chrono/std::chrono::month_day_last::operator<<", "chrono/std::chrono::month_weekday::operator<<", "chrono/std::chrono::month_weekday_last::operator<<", "chrono/std::chrono::weekday::operator<<", "chrono/std::chrono::weekday_indexed::operator<<", "chrono/std::chrono::weekday_last::operator<<", "chrono/std::chrono::year::operator<<", "chrono/std::chrono::year_month_day::operator<<", "chrono/std::chrono::year_month_day_last::operator<<", "chrono/std::chrono::year_month_weekday::operator<<", "chrono/std::chrono::utc_clock::operator<<"]
+f1_keywords: ["chrono/std::operator modulo", "chrono/std::operator+", "chrono/std::chrono::day::operator+", "chrono/std::chrono::duration::operator+", "chrono/std::chrono::month::operator+", "chrono/std::chrono::time_point::operator+", "chrono/std::chrono::weekday::operator+", "chrono/std::chrono::year_month::operator+", "chrono/std::chrono::year::operator+", "chrono/std::chrono::year_month_day::operator+", "chrono/std::chrono::year_month_day_last::operator+", "chrono/std::chrono::year_month_weekday::operator+", "chrono/std::chrono::year_month_weekday_last::operator+", "chrono/std::operator!=", "chrono/std::operator*", "chrono/std::operator/", "chrono/std::operator-", "chrono/std::operator<", "chrono/std::operator<=", "chrono/std::operator<", "chrono/std::operator==", "chrono/std::operator>>", "chrono/std::operator<=>", "chrono/std::chrono::day::operator<=>", "chrono/std::chrono::month::operator<=>", "chrono/std::chrono::year::operator<=>", "chrono/std::chrono::year_month::operator<=>", "chrono/std::chrono::time_point::operator<=>", "chrono/std::chrono::duration::operator<=>", "chrono/std::chrono::month_day_last::operator<=>", "chrono/std::chrono::year_month_day_last::operator<=>", "chrono/std::operator==", "chrono/std::chrono::year::operator<==>", "chrono/std::chrono::day::operator==", "chrono/std::chrono::duration::operator==", "chrono/std::chrono::month::operator==", "chrono/std::chrono::month_day::operator==", "chrono/std::chrono::month_day_last::operator==", "chrono/std::chrono::month_weekday::operator==", "chrono/std::chrono::month_weekday_last::operator==", "chrono/std::chrono::time_point::operator==", "chrono/std::chrono::weekday::operator==", "chrono/std::chrono::year_month::operator==", "chrono/std::chrono::year::operator==", "chrono/std::chrono::year_month_day::operator==", "chrono/std::chrono::year_month_day_last::operator==", "chrono/std::chrono::year_month_weekday_last::operator==", "chrono/std::chrono::year_month_weekday::operator==", "chrono/std::chrono::month_weekday_last::operator==", "chrono/std::chrono::weekday::operator==", "chrono/std::chrono::weekday_last::operator==", "chrono/std::chrono::year_month_weekday_indexed::operator==", "chrono/std::chrono::year_month_weekday_last::operator==", "chrono/std::chrono::year::operator==", "chrono/std::chrono::year_month::operator==",  "chrono/std::chrono::year_month_day::operator==", "chrono/std::chrono::year_month_day_last::operator==", "chrono/std::operator-", "chrono/std::chrono::day::operator-", "chrono/std::chrono::duration::operator-", "chrono/std::chrono::month::operator-", "chrono/std::chrono::time_point::operator-", "chrono/std::chrono::weekday::operator-", "chrono/std::chrono::year_month::operator-", "chrono/std::chrono::year::operator-", "chrono/std::chrono::year_month_day::operator-", "chrono/std::chrono::year_month_day_last::operator-", "chrono/std::chrono::year_month_weekday::operator-", "chrono/std::chrono::year_month_weekday_last::operator-", "chrono/std::chrono::day::operator<<", "chrono/std::chrono::hh_mm_ss::operator<<", "chrono/std::chrono::month_day::operator<<", "chrono/std::chrono::month_day_last::operator<<", "chrono/std::chrono::month_weekday::operator<<", "chrono/std::chrono::month_weekday_last::operator<<", "chrono/std::chrono::weekday::operator<<", "chrono/std::chrono::weekday_indexed::operator<<", "chrono/std::chrono::weekday_last::operator<<", "chrono/std::chrono::year::operator<<", "chrono/std::chrono::year_month_day::operator<<", "chrono/std::chrono::year_month_day_last::operator<<", "chrono/std::chrono::year_month_weekday::operator<<", "std::chrono::utc_time::operator<<"]
 ---
 # `<chrono>` operators
 
@@ -1020,6 +1020,31 @@ The output stream you passed in, `os`
 17\) The `tai_time` is output in the form yyyy-mm-dd hh:mm:ss. For example, `2021-07-26 00:00:37`
 
 18\) The `utc_time` is output in the form yyyy-mm-dd hh:mm:ss:xxxxxxx (fractions of a second). For example, `2021-08-13 23:23:08.4358666`
+
+### Example: `operator<<`
+
+```cpp
+// compile using: /std:c++latest
+#include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
+
+int main()
+{
+    auto utcTime = utc_clock::now();
+    std::cout << '\n' << utcTime << '\n';
+
+    year_month ym{ 2021y / April };
+    std::cout << ym;
+    return 0;
+}
+```
+
+```output
+2021-08-16 20:47:05.6299822
+2021/Apr
+```
 
 ## <a name="op_modulo"></a> `operator modulo`
 
