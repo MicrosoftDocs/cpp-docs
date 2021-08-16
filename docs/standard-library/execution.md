@@ -33,7 +33,7 @@ namespace std::execution {
 
 ### Microsoft Specific
  
-When `parallel_policy` or `parallel_unsequenced_policy` cause the algorithm to be parallelized, the parallel execution uses Windows Thread Pool. See [Thread Pools](https://docs.microsoft.com/en-us/windows/win32/procthread/thread-pools). Number of concurrent threads is limited to thread pool defaults (currently 500). Number of threads concurrently executing on hardware is currently limited by number of logical processor in the process's processor group, so effectively limited to 64. See [Processor Groups](https://docs.microsoft.com/en-us/windows/win32/procthread/processor-groups). Maximum number of chunks for data partitioning is also currently based on number of logical processor in the process's processor group.
+When `parallel_policy` or `parallel_unsequenced_policy` cause the algorithm to be parallelized, the parallel execution uses Windows Thread Pool; see [Thread Pools](https://docs.microsoft.com/en-us/windows/win32/procthread/thread-pools). The number of concurrent threads is limited to the thread pool default (currently 500). The number of threads concurrently executing on hardware is currently limited by the number of logical processors in the current process's processor group, so it is effectively limited to 64; see [Processor Groups](https://docs.microsoft.com/en-us/windows/win32/procthread/processor-groups). The maximum number of chunks for data partitioning is also currently based on the number of logical processors in the current process's processor group.
 
 ## Requirements
 
