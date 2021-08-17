@@ -2,7 +2,7 @@
 description: "Learn more about: tai_clock class"
 title: "tai_clock class"
 ms.date: 08/13/2021
-f1_keywords: ["chrono/std::chrono::tai_clock", "chrono/std::chrono::tai_clock::from_stream", "chrono/std::chrono::tai_clock::now", "chrono/std::chrono::tai_clock::to_sys", "chrono/std::chrono::tai_clock::from_sys", "chrono/std::chrono::tai_clock::is_steady Constant"]
+f1_keywords: ["chrono/std::chrono::tai_clock", "chrono/std::chrono::tai_clock::from_stream", "chrono/std::chrono::tai_clock::now", "chrono/std::chrono::tai_clock::to_utc", "chrono/std::chrono::tai_clock::from_utc", "chrono/std::chrono::tai_clock::is_steady Constant", "std::chrono::tai_clock::get_leap_second_info"]
 ---
 
 # tai_clock class

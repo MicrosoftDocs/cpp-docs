@@ -5,7 +5,7 @@ ms.custom: ""
 ms.date: "06/09/2021"
 ms.technology: "cpp-standard-libraries"
 ms.topic: "reference"
-f1_keywords: ["chrono/std::chrono::high_resolution_clock"]
+f1_keywords: ["chrono/std::chrono::high_resolution_clock", chrono/std::chrono::high_resolution_clock::now", "chrono/std::chrono::high_resolution_clock::is_steady Constant"]
 dev_langs: ["C++"]
 author: "corob-msft"
 ms.author: "corob"
