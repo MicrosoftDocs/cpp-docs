@@ -516,9 +516,9 @@ These algorithms aren't presently parallelized:
 
 <a name="note_14"></a> __14__ These C++17 and C++20 features are always enabled, even when [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) (the default) is specified. The reason is either because the feature was implemented before the introduction of the **`/std`** options, or because conditional implementation was undesirably complex.
 
-<a name="note_17"></a> __17__ These features are enabled by the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) (or [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)) compiler option.
+<a name="note_17"></a> __17__ These features are enabled by the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
-<a name="note_20"></a> __20__ In versions through Visual Studio 2019 version 16.10, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option. When the C++20 implementation is complete, we'll add a new **`/std:c++20`** compiler option to enable these features.
+<a name="note_20"></a> __20__ In versions through Visual Studio 2019 version 16.10, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option. Visual Studio 2019 version 16.11 added the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler option to enable these features.
 
 <a name="note_DR"></a> __DR__ These features are enabled in all C++ [`/std`](../build/reference/std-specify-language-standard-version.md) compiler option modes. The C++ Standard committee adopted this change as a retroactive Defect Report to C++11 and all later versions.
 

@@ -232,7 +232,7 @@ int main()
 
 **Namespace:** std
 
-/std:c++17, or later, is required.
+[`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later is required.
 
 ## See also
 

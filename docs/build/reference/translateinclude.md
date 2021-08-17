@@ -17,7 +17,7 @@ Instructs the compiler to treat `#include` as `import` for those headers that ha
 
 ## Remarks
 
-The **`/translateInclude`** compiler option requires you enable the [/std:c++latest](std-specify-language-standard-version.md) option. `/translateInclude` is available starting in Visual Studio 2019 version 16.10 Preview 2.
+The **`/translateInclude`** compiler option requires you enable the [/std:c++20](std-specify-language-standard-version.md) or later option (such as **`/std:c++latest`**). `/translateInclude` is available starting in Visual Studio 2019 version 16.10.
 
 The **`/translateInclude`** option effectively makes the following transformation, where the example `<vector>` has been prebuilt into an importable header unit:
 

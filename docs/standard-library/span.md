@@ -44,7 +44,8 @@ int main()
 
 **Namespace:** std
 
-**Compiler option:** [/std:c++latest](../build/reference/std-specify-language-standard-version.md)
+**Compiler option:** [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later is required.
+
 
 ## Members
 
