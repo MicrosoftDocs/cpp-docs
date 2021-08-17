@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: thread Class"
 title: "thread Class"
-ms.date: "11/04/2016"
+ms.date: "08/17/2021"
 f1_keywords: ["thread/std::thread", "thread/std::thread::id Class", "thread/std::thread::thread", "thread/std::thread::detach", "thread/std::thread::get_id", "thread/std::thread::hardware_concurrency", "thread/std::thread::join", "thread/std::thread::joinable", "thread/std::thread::native_handle", "thread/std::thread::swap"]
 ms.assetid: df249bc7-ff81-4ff9-a6d6-5e3d9a8f56a1
 helpviewer_keywords: ["std::thread [C++]", "std::thread [C++], thread", "std::thread [C++], detach", "std::thread [C++], get_id", "std::thread [C++], hardware_concurrency", "std::thread [C++], join", "std::thread [C++], joinable", "std::thread [C++], native_handle", "std::thread [C++], swap"]
