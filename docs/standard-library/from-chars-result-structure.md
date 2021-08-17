@@ -37,7 +37,8 @@ If the parsed value won't fit the range for the type of conversion being done, `
 
 **Namespace:** std
 
-**Compiler option:** /std:c++17, or later, is required
+**Compiler option:** [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later is required.
+
 
 ## See also
 

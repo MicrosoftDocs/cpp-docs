@@ -130,7 +130,7 @@ kr->add_d({ 4.5 });
 return { 4.5 };
 ```
 
-In **/std:c++17** mode, the rules for empty brace initialization are slightly more restrictive. See [Derived constructors and extended aggregate initialization](constructors-cpp.md#extended_aggregate).
+In **`/std:c++17`** mode and later, the rules for empty brace initialization are slightly more restrictive. See [Derived constructors and extended aggregate initialization](constructors-cpp.md#extended_aggregate).
 
 ## initializer_list constructors
 
