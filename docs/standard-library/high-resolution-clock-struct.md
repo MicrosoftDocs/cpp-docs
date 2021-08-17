@@ -43,4 +43,14 @@ class high_resolution_clock
 
 |Name|Description|
 |----------|-----------------|
-|`is_steady`|Holds **`true`**. A `high_resolution_clock` is *steady*.|
+|`is_steady`|Holds **`true`**. A `high_resolution_clock` is *steady*. That means you can use this clock to take the time before an event, the time after an event, and reliably subtract them to get the duration of the event because the clock won't be adjusted during that time. |
+
+## See also
+
+[`<chrono>`](chrono.md)\
+[`file_clock class`](file-clock-class.md)\
+[`steady_clock` struct](steady-clock-struct.md)\
+[`system_clock` struct](system-clock-structure.md)\
+[`tai_clock` class](tai-clock-class.md)\
+[`utc_clock` class](utc-clock-class.md)\
+[Header Files Reference](cpp-standard-library-header-files.md)

@@ -43,7 +43,7 @@ The value that is returned by a first call to `now` is always less than or equal
 
 |Name|Description|
 |----------|-----------------|
-|`steady_clock::is_steady`|Holds **`true`**. A `steady_clock` is *steady*.|
+|`steady_clock::is_steady`|Holds **`true`**. A `steady_clock` is *steady*. That means you can use this clock to take the time before an event, the time after an event, and reliably subtract them to get the duration of the event because the clock won't be adjusted during that time.|
 
 ## Requirements
 
@@ -51,8 +51,10 @@ The value that is returned by a first call to `now` is always less than or equal
 
 **Namespace:** `std::chrono`
 
-## See also
-
-- [`<chrono>`](chrono.md)
-- [system_clock Structure](system-clock-structure.md)
-- [Header Files Reference](cpp-standard-library-header-files.md)
+[`<chrono>`](chrono.md)\
+[`file_clock class`](file-clock-class.md)\
+[`high_resolution_clock`](high-resolution-clock-struct.md)\
+[`system_clock` struct](system-clock-structure.md)\
+[`tai_clock` class](tai-clock-class.md)\
+[`utc_clock` class](utc-clock-class.md)\
+[Header Files Reference](cpp-standard-library-header-files.md)

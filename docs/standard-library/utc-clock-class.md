@@ -43,7 +43,7 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). Ten sec
 |--|--|
 | [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `utc_time` from the given stream using the specified format. |
 | [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info) | Gets a [leap_second_info](leap-second-info-struct.md) that indicates whether the supplied time specifies a time when a leap second was inserted. It also includes  the sum of all the leap seconds between January 1, 1970 and the specified duration. |
-| [`operator<<`](chrono-operators.md#op_left_shift) | Output a `utc_clock` to the given stream. |
+| [`operator<<`](chrono-operators.md#op_left_shift) | Output `utc_clock::now()` to the given stream. |
 
 ## Public typedefs
 
@@ -108,7 +108,7 @@ The `sys_time` set to the equivalent point in time as `t`. If a direct mapping d
 
 ## <a name="is_steady_constant"></a> is_steady
 
-Static value that specifies whether the clock type is *steady*. In Microsoft's implementation, `is_steady_constant` is always **`false`**.
+Static value that specifies whether the clock type is *steady*. In Microsoft's implementation, `is_steady_constant` is always **`false`**. Because the `utc_clock` is not steady, you can't reliably use this clock to take the time before an event, the time after an event, and subtract them to get the duration of the event because the clock may be adjusted during that time.
 
 ```cpp
 static const bool is_steady = false;
@@ -126,8 +126,10 @@ static time_point now() noexcept;
 
 A [time_point](../standard-library/time-point-class.md) object that represents the current time. The returned time point is effectively `from_sys(system_clock::now())`.
 
-## See also
-
-[`<chrono>`](../standard-library/chrono.md)\
-[`steady_clock` struct](../standard-library/steady-clock-struct.md)\
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+[`<chrono>`](chrono.md)\
+[`file_clock class`](file-clock-class.md)\
+[`high_resolution_clock`](high-resolution-clock-struct.md)\
+[`steady_clock` struct](steady-clock-struct.md)\
+[`system_clock` struct](system-clock-structure.md)\
+[`tai_clock` class](tai-clock-class.md)\
+[Header Files Reference](cpp-standard-library-header-files.md)

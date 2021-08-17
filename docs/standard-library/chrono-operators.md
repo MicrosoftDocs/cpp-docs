@@ -1032,8 +1032,7 @@ using namespace std::chrono;
 
 int main()
 {
-    auto utcTime = utc_clock::now();
-    std::cout << '\n' << utcTime << '\n';
+    std::cout << '\n' << utc_clock::now() << '\n';
 
     year_month ym{ 2021y / April };
     std::cout << ym;

@@ -49,6 +49,7 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 | Name | Description |
 |--|--|
+|[`file_clock` class](file-clock-class.md)| A clock that is an alias for the clocked used by std::f|
 |[`high_resolution_clock` struct](high-resolution-clock-struct.md)| A clock with a nanosecond tick period. |
 |[`steady_clock` struct](steady-clock-struct.md)|A `steady` clock. Preferred for measuring time intervals. |
 |[`system_clock` struct](system-clock-structure.md)|A *`clock type`* that is based on the real-time clock of the system.|

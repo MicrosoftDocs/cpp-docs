@@ -20,9 +20,9 @@ This clock represents the system-wide wall clock.
 
 The `system_clock` is neither *monotonic* nor *steady*.
 
-A clock is *monotonic* if the value that is returned by a first call to `now()` is always less than or equal to the value that is returned by a subsequent call to `now()`. The `system_clock` is not monotonic because the system time can be adjusted without notice.
+A clock is *monotonic* if the value that is returned by a first call to `now()` is always less than or equal to the value that is returned by a subsequent call to `now()`. The `system_clock` is not monotonic because the system time may be adjusted without notice.
 
-A clock is *steady* if it is *monotonic* and if the time between clock ticks is constant. Because the `system_clock` is not monotonic, it isn't steady, though the time between clock ticks is constant.
+A clock is *steady* if it is *monotonic* and if the time between clock ticks is constant. Because the `system_clock` is not monotonic, it isn't steady, though the time between clock ticks is constant. You can only use a steady clock to take the time before an event, the time after an event, and reliably subtract them to get the duration of the event because the clock won't be adjusted during that time.
 
 ## Members
 
@@ -33,7 +33,7 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 |`system_clock::duration`|A synonym for `duration<rep, period>`, which represents a duration of time, and a fraction that represents the time in seconds between each integral value stored in the duration.|
 |`system_clock::period`|A fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 second between ticks, and so on.|
 |`system_clock::rep`|A synonym for the type used to represent the integral units in this clock's `system_clock::duration`.|
-|`system_clock::time_point`|A synonym for `time_point<Clock, duration>`, where `Clock` is a synonym for either the clock type itself or another clock type that is based on the same epoch and has the same nested `duration` type.|
+|`system_clock::time_point`|A synonym for `time_point<Clock, duration>`, where `Clock` is a synonym for either the clock type itself or another clock type that is based on the same epoch (or date and time from which the clock starts measuring time) and has the same nested `duration` type.|
 
 ### Public methods
 
@@ -71,7 +71,7 @@ A [time_t](../c-runtime-library/standard-types.md) object.
 
 ## <a name="is_steady_constant"></a>is_steady
 
-Static value that specifies whether the clock type is *steady*.
+Static value that specifies whether the clock type is *steady*. Because the `system_clock` is not steady, you can't use this clock to take the time before an event, the time after an event, and reliably subtract them to get the duration of the event because the clock may be adjusted during that time.
 
 ```cpp
 static const bool is_steady = false;
@@ -112,6 +112,10 @@ A [time_point](../standard-library/time-point-class.md) object.
 
 ## See also
 
-[`<chrono>`](../standard-library/chrono.md)\
-[`steady_clock` struct](../standard-library/steady-clock-struct.md)\
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+[`<chrono>`](chrono.md)\
+[`file_clock class`](file-clock-class.md)\
+[`high_resolution_clock`](high-resolution-clock-struct.md)\
+[`steady_clock` struct](steady-clock-struct.md)\
+[`tai_clock` class](tai-clock-class.md)\
+[`utc_clock` class](utc-clock-class.md)\
+[Header Files Reference](cpp-standard-library-header-files.md)

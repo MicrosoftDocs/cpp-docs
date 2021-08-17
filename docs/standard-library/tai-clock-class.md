@@ -19,11 +19,9 @@ class tai_clock; // C++20
 
 This clock reports International Atomic Time (TAI, from the French *temps atomique international*). International Atomic Time uses a weighted average of many atomic clocks to track time. TAI time is useful in the scientific community.
 
-This clock is different from UTC time because a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds. A discrepancy gradually accrues between the time kept by atomic clocks and the time kept by measuring the rotation speed of the earth. The discrepancy is because the earth's rotation speed is irregular. It slows down over time by about one second every 1.5 years, and sometimes speeds up. TAI time doesn't keep track of this discrepancy. As of this writing, TAI time is 37 seconds ahead of UTC time of the leap seconds that have been inserted since 1972, and the addition of 10 seconds at the start of 1972.
+This clock is different from UTC time. The difference is that a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds. A discrepancy gradually accrues between the time kept by an atomic clock and the time kept by measuring the rotation speed of the earth. The discrepancy is because the earth's rotation speed is irregular. It slows down over time by about one second every 1.5 years, and sometimes speeds up. TAI time doesn't keep track of this discrepancy. As of this writing, TAI time is 37 seconds ahead of UTC time. That's due to the leap seconds that have been inserted since 1972, and the initial difference of 10 seconds at the start of 1972.
 
-The epoch is `1958-01-01 00:00:00`.
-
-`is_clock(tai_clock)` returns **true**.
+The clock's epoch, or the date and time from which it starts measuring time, is `1958-01-01 00:00:00`.
 
 ## Members
 
@@ -39,7 +37,7 @@ The epoch is `1958-01-01 00:00:00`.
 |--|--|
 | [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `tai_clock` from the given stream using the specified format. |
 | [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info) | Get information about whether the supplied time specifies a time when a leap second was inserted, and the sum of all the leap seconds between January 1, 1970 and the specified duration. |
-| [`operator<<`](chrono-operators.md#op_left_shift) | Output a `tai_clock` to the given stream. |
+| [`operator<<`](chrono-operators.md#op_left_shift) | Output `tai_clock::now()` to the given stream. |
 
 ## Public typedefs
 
@@ -81,7 +79,7 @@ The `utc_time` to convert.
 
 ### Return value
 
-A `tai_time` that represents the equivalent `utc_time` as *`t`*. It's calculated by taking the time since the epoch of the UTC clock and adding `378691210s`. Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
+A `tai_time` that represents the equivalent `utc_time` as *`t`*. It's calculated by taking the time since the epoch of the UTC clock and adding `378691210s` where `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
 
 ## <a name="to_utc"></a> to_utc
 
@@ -100,11 +98,11 @@ The `tai_time` to convert.
 
 ### Return Value
 
-A `utc_time` that represents the equivalent `tai_time` as *`t`*. It's calculated as `utc_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 378691210s`. Note that `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
+A `utc_time` that represents the equivalent `tai_time` as *`t`*. It's calculated as `utc_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 378691210s` where `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
 
 ## <a name="is_steady_constant"></a> is_steady
 
-Static value that specifies whether the clock type is *steady*. In the Microsoft implementation, `is_steady_constant` is **`false`**.
+Static value that specifies whether the clock type is *steady*. In the Microsoft implementation, `is_steady_constant` is **`false`**. Because `tai_clock` is not steady, you can't use this clock to take the time before an event, the time after an event, and reliably subtract them to get the duration of the event because the clock may be adjusted during that time.
 
 ```cpp
 static const bool is_steady = false;
@@ -122,8 +120,10 @@ static time_point now() noexcept;
 
 A [time_point](../standard-library/time-point-class.md) object that represents the current time. The returned time point is effectively `from_sys(system_clock::now())`.
 
-## See also
-
-[`<chrono>`](../standard-library/chrono.md)\
-[`steady_clock` struct](../standard-library/steady-clock-struct.md)\
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+[`<chrono>`](chrono.md)\
+[`file_clock class`](file-clock-class.md)\
+[`high_resolution_clock`](high-resolution-clock-struct.md)\
+[`steady_clock` struct](steady-clock-struct.md)\
+[`system_clock` struct](system-clock-structure.md)\
+[`utc_clock` class](utc-clock-class.md)\
+[Header Files Reference](cpp-standard-library-header-files.md)
