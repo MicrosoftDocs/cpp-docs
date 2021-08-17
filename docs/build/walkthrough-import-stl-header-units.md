@@ -25,7 +25,7 @@ A similarity is that everything visible from a header file is also visible from 
 
 ## Prerequisites
 
-To use header units, you need Visual Studio 2019 16.10.0 Preview 2 or later.
+To use header units, you need Visual Studio 2019 16.10 or later.
 
 ## Two approaches
 
@@ -85,12 +85,11 @@ Follow these steps to set the options that cause the build system to scan for im
 1. In the left pane of the project property pages, select **C/C++** > **General**.
 1. Set **Scan Sources for Module Dependencies** to **Yes**. Because we're setting the project property, all sources in this project will be scanned.
 
-Change the C++ language standard for the compiler. The [`/std:c++latest`](./reference/std-specify-language-standard-version.md) switch is required if you're using header units.
+Change the C++ language standard for the compiler. The [`/std:c++20`](./reference/std-specify-language-standard-version.md) or later option is required if you're using header units.
 
 1. In the left pane of the project property pages, select **Configuration Properties** > **General**.
-1. In the **C++ Language Standard** list, select **Preview - Features from the Latest C++ Working Draft (/std:c++latest)**:
-:::image type="content" source="media/set-cpp-language-latest.png" alt-text="Screenshot that shows where to set the language standard.":::
-1. Select **OK** to close the project property pages. Build the solution by selecting **Build** > **Build Solution** on the main menu.
+1. In the **C++ Language Standard** list, select **ISO C++20 Standard (/std:c++20)** or later. (In versions before Visual Studio 2019 version 16.11, select **Preview - Features from the Latest C++ Working Draft (/std:c++latest)**.)
+1. Choose **OK** to close the project property pages. Build the solution by selecting **Build** > **Build Solution** on the main menu.
 
 You can run the solution to verify that it produces the expected output: `1`
 
@@ -100,7 +99,7 @@ You can fine-tune this balance by not scanning for import dependencies. Instead,
 
 ## <a name="approach2"></a>Approach 2: Build a static library project
 
-The more flexible way to consume STL headers is to create one or more static library projects that build the header units from the STL headers you want to reuse. Then reference the library project or projects from the projects that need those STL headers. Modules and header units built in a static library project are automatically available to referencing projects. The project system automatically adds the appropriate [/headerUnit](./reference/headerunit.md) switches to the command line so that the referencing projects can import the header units.
+The more flexible way to consume STL headers is to create one or more static library projects that build the header units from the STL headers you want to reuse. Then reference the library project or projects from the projects that need those STL headers. Modules and header units built in a static library project are automatically available to referencing projects. The project system automatically adds the appropriate [`/headerUnit`](./reference/headerunit.md) options to the command line so that the referencing projects can import the header units.
 
 This option ensures that header units for a particular header will be built only once. It's similar to using a shared precompiled header file, but it's much easier.
 
@@ -131,12 +130,12 @@ Set project properties to share the header units from this project.
 1. You might want to select **All Configurations** in the **Configuration** list and **All Platforms** in the **Platform** list. Doing so ensures the settings you change apply whether you're building for debug or retail, and so on.
 1. In the left pane of the project property pages, select **General**.
 1. Change the **Configuration Type** option to **Static library (.lib)**.
-1. Change **C++ Language Standard** to **Preview - Features from the Latest C++ Working Draft (/std:c++latest)**.
+1. Change **C++ Language Standard** to **ISO C++20 Standard (/std:c++20)** or later. (In versions before Visual Studio 2019 version 16.11, select **Preview - Features from the Latest C++ Working Draft (/std:c++latest)**.)
 1. In the left pane of the project property pages, select **C/C++** > **General**.
 
 1. In the **Scan Sources for Module Dependencies** list, select **Yes**:
 :::image type="content" source="media/vs2019-scan-module-dependencies.png" alt-text="Screenshot that shows the scan module dependencies property setting.":::
-1. Select **OK** to close the project property pages. Build the solution by selecting **Build** > **Build Solution** on the main menu.
+1. Choose **OK** to close the project property pages. Build the solution by selecting **Build** > **Build Solution** on the main menu.
 
 ## Reference the shared header unit project
 
@@ -157,12 +156,12 @@ Next, create a project that will use the built `<vector>` and `<iostream>` share
     }
     ```
 
-Change the **C++ Language Standard** for the compiler. To use header units, you need the [`/std:c++latest`](./reference/std-specify-language-standard-version.md) switch.
+Change the **C++ Language Standard** for the compiler. To use header units, you need the [`/std:c++20`](./reference/std-specify-language-standard-version.md) or later option. (In versions before Visual Studio 2019 version 16.11, use **`/std:c++latest`**.)
 
 1. In **Solution Explorer**, right-click the **Walkthrough** project and select **Properties**. The project property pages open:
 :::image type="content" source="media/set-cpp-language-latest.png" alt-text="Screenshot that shows setting the language standard to the preview version.":::
 1. In the left pane of the **Walkthrough** project property pages, select **Configuration Properties** > **General**.
-1. In the **C++ Language Standard** list, select **Preview - Features from the Latest C++ Working Draft (/std:c++latest)**.
+1. In the **C++ Language Standard** list, select **ISO C++20 Standard (/std:c++20)** or later. (In versions before Visual Studio 2019 version 16.11, select **Preview - Features from the Latest C++ Working Draft (/std:c++latest)**.)
 1. Select **OK** to close the project property pages.
 
 In the **Walkthrough** project, add a reference to the **SharedPrj** project.
@@ -181,11 +180,11 @@ You can make a monolithic static library project that contains all the commonly 
 
 The result should be increased build throughput because importing a header unit significantly reduces the work the compiler needs to do.
 
-When you use this approach with your own projects, build the static library project with compiler switches that are compatible with the project that will reference it. For example, STL projects should be built with the `/EHsc` compiler switch to turn on exception handling, and so should the projects that reference the static library project.
+When you use this approach with your own projects, build the static library project with compiler options that are compatible with the project that will reference it. For example, STL projects should be built with the **`/EHsc`** compiler option to turn on exception handling, and so should the projects that reference the static library project.
 
 ## `/translateInclude`
 
-The [`/translateInclude`](./reference/translateinclude.md) compiler switch can make it easier for you to use a referenced shared header unit project from your project.
+The [`/translateInclude`](./reference/translateinclude.md) compiler option can make it easier for you to use a referenced shared header unit project from your project.
 
 It's useful because you don't have to modify the `#include` directives in your project to take advantage of importing built header units from the referenced shared header unit project.
 

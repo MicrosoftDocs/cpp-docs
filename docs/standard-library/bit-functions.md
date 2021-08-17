@@ -703,7 +703,7 @@ This template function only participates in overload resolution if `T` is an uns
 
 **Namespace:** std
 
-[/std:c++latest](../build/reference/std-specify-language-standard-version.md) is required.
+[`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later is required.
 
 ## See also
 

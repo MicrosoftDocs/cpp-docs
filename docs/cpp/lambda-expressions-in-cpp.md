@@ -94,7 +94,7 @@ void f(Args... args) {
 
 To use lambda expressions in the body of a class member function, pass the **`this`** pointer to the capture clause to provide access to the member functions and data members of the enclosing class.
 
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **`this`** pointer may be captured by value by specifying **`*this`** in the capture clause. Capture by value copies the entire closure to every call site where the lambda is invoked. (A closure is the anonymous function object that encapsulates the lambda expression.) Capture by value is useful when the lambda executes in parallel or asynchronous operations. It's especially useful on certain hardware architectures, such as NUMA.
+**Visual Studio 2017 version 15.3 and later** (available in [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode and later): The **`this`** pointer may be captured by value by specifying **`*this`** in the capture clause. Capture by value copies the entire closure to every call site where the lambda is invoked. (A closure is the anonymous function object that encapsulates the lambda expression.) Capture by value is useful when the lambda executes in parallel or asynchronous operations. It's especially useful on certain hardware architectures, such as NUMA.
 
 For an example that shows how to use lambda expressions with class member functions, see "Example: Using a lambda expression in a method" in [Examples of lambda expressions](../cpp/examples-of-lambda-expressions.md).
 
@@ -316,7 +316,7 @@ For more information, see [generate_n](../standard-library/algorithm-functions.m
 
 ## `constexpr` lambda expressions
 
-**Visual Studio 2017 version 15.3 and later** (available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)): You may declare a lambda expression as **`constexpr`** (or use it in a constant expression) when the initialization of each captured or introduced data member is allowed within a constant expression.
+**Visual Studio 2017 version 15.3 and later** (available in [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode and later): You may declare a lambda expression as **`constexpr`** (or use it in a constant expression) when the initialization of each captured or introduced data member is allowed within a constant expression.
 
 ```cpp
     int y = 32;

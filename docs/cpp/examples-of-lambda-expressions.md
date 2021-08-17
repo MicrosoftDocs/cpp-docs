@@ -253,7 +253,7 @@ The example produces this output:
 ### Example
 
 You can use lambda expressions in the body of a function. The lambda expression can access any function or data member that the enclosing function can access. You can explicitly or implicitly capture the **`this`** pointer to provide access to functions and data members of the enclosing class.
-**Visual Studio 2017 version 15.3 and later** (available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)): Capture **`this`** by value (`[*this]`) when the lambda will be used in asynchronous or parallel operations where the code might execute after the original object goes out of scope.
+**Visual Studio 2017 version 15.3 and later** (Available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and later): Capture **`this`** by value (`[*this]`) when the lambda will be used in asynchronous or parallel operations where the code might execute after the original object goes out of scope.
 
 You can use the **`this`** pointer explicitly in a function, as shown here:
 

@@ -23,13 +23,13 @@ The argument to `/exportHeader` is a `/headerName` command-line option that spec
 
 ## Remarks
 
-**`/exportHeader`** is available starting in Visual Studio 2019 version 16.10 Preview 2.
+**`/exportHeader`** is available starting in Visual Studio 2019 version 16.10.
 
-The **`/exportHeader`** compiler option requires you enable the [`/std:c++latest`](std-specify-language-standard-version.md) option.
+The **`/exportHeader`** compiler option requires you enable the [`/std:c++20`](std-specify-language-standard-version.md) or later compiler option (such as **`/std:c++latest`**).
 
 One **`/exportHeader`** compiler option can specify as many header-name arguments as your build requires. You don't need to specify them separately.
 
-The compiler implicitly enables the new preprocessor when this switch is used. That is, [`/Zc:preprocessor`](zc-preprocessor.md) is added to the command line by the compiler if any form of `/exportHeader` is used on the command line. To opt out of the implicit `/Zc:preprocessor`, use: `/Zc:preprocessor-`
+The compiler implicitly enables the new preprocessor when this option is used. That is, [`/Zc:preprocessor`](zc-preprocessor.md) is added to the command line by the compiler if any form of `/exportHeader` is used on the command line. To opt out of the implicit `/Zc:preprocessor`, use: `/Zc:preprocessor-`
 
 By default, the compiler doesn't produce an object file when a header unit is compiled. To produce an object file, specify the **`/Fo`** compiler option. For more information, see [`/Fo` (Object File Name)](fo-object-file-name.md).
 
@@ -57,7 +57,7 @@ You normally shouldn't set this in the Visual Studio development environment. It
 
 ## See also
 
-[`/headerName (Build a header unit from the specified header)`](headername.md) \
+[`/headerName (Build a header unit from the specified header)`](headername.md)\
 [`/headerUnit` (Use header unit IFC)](headerunit.md)\
 [`/reference` (Use named module IFC)](module-reference.md)\
 [`/translateInclude` (Translate include directives into import directives)](translateinclude.md)
