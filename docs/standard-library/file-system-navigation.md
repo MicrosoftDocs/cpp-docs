@@ -49,7 +49,7 @@ The path class has several methods that return information about various parts o
 
 ```cpp
 // filesystem_path_example.cpp
-// compile by using: /EHsc /W4 /permissive- /std:c++17 (or /std:c++latest)
+// compile by using: /EHsc /W4 /permissive- /std:c++17 (or later)
 #include <string>
 #include <iostream>
 #include <sstream>
@@ -153,7 +153,7 @@ A `path` object is implicitly convertible to `std::wstring` or `std::string`. It
 
 ```cpp
 // filesystem_path_conversion.cpp
-// compile by using: /EHsc /W4 /permissive- /std:c++17 (or /std:c++latest)
+// compile by using: /EHsc /W4 /permissive- /std:c++17 (or later)
 #include <string>
 #include <iostream>
 #include <fstream>

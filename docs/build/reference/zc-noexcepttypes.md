@@ -6,7 +6,7 @@ f1_keywords: ["/Zc:noexceptTypes"]
 helpviewer_keywords: ["/Zc:noexceptTypes", "Zc:noexceptTypes", "-Zc:noexceptTypes"]
 ms.assetid: 1cbf7e3c-0f82-4f91-84dd-612bcf26d2c6
 ---
-# /Zc:noexceptTypes (C++17 noexcept rules)
+# `/Zc:noexceptTypes` (C++17 noexcept rules)
 
 The C++17 standard makes `throw()` an alias for **`noexcept`**, removes `throw(`*`type-list`*`)` and `throw(...)`, and allows certain types to include **`noexcept`**. This change can cause a number of source compatibility issues in code that conforms to C++14 or earlier. The **`/Zc:noexceptTypes`** option specifies conformance to the C++17 standard. **`/Zc:noexceptTypes-`**  allows the C++14 and earlier behavior when code is compiled in C++17 mode.
 
@@ -16,7 +16,7 @@ The C++17 standard makes `throw()` an alias for **`noexcept`**, removes `throw(`
 
 ## Remarks
 
-When the **`/Zc:noexceptTypes`** option is specified, the compiler conforms to the C++17 standard and treats [`throw()`](../../cpp/exception-specifications-throw-cpp.md) as an alias for [`noexcept`](../../cpp/noexcept-cpp.md), removes `throw(`*`type-list`*`)` and `throw(...)`, and allows certain types to include **`noexcept`**. The **`/Zc:noexceptTypes`** option is only available when [`/std:c++17`](std-specify-language-standard-version.md) or [`/std:c++latest`](std-specify-language-standard-version.md) is enabled. **`/Zc:noexceptTypes`** is enabled by default to conform to the ISO C++17 standard. The [`/permissive-`](permissive-standards-conformance.md) option doesn't affect **`/Zc:noexceptTypes`**. Turn off this option by specifying **`/Zc:noexceptTypes-`** to revert to the C++14 behavior of **`noexcept`** when **`/std:c++17`** or **`/std:c++latest`** is specified.
+When the **`/Zc:noexceptTypes`** option is specified, the compiler conforms to the C++17 standard and treats [`throw()`](../../cpp/exception-specifications-throw-cpp.md) as an alias for [`noexcept`](../../cpp/noexcept-cpp.md), removes `throw(`*`type-list`*`)` and `throw(...)`, and allows certain types to include **`noexcept`**. The **`/Zc:noexceptTypes`** option is only available when [`/std:c++17`](std-specify-language-standard-version.md) or later is enabled. **`/Zc:noexceptTypes`** is enabled by default to conform to the ISO C++17 and later standards. The [`/permissive-`](permissive-standards-conformance.md) option doesn't affect **`/Zc:noexceptTypes`**. Turn off this option by specifying **`/Zc:noexceptTypes-`** to revert to the C++14 behavior of **`noexcept`** when **`/std:c++17`** or later is specified.
 
 Beginning in Visual Studio 2017 version 15.5, the C++ compiler diagnoses more mismatched exception specifications in declarations in C++17 mode, or when you specify the [`/permissive-`](permissive-standards-conformance.md) option.
 
@@ -68,10 +68,10 @@ For more information about conformance issues in Visual C++, see [Nonstandard Be
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. Modify the **Additional Options** property to include *`/Zc:noexceptTypes`* or *`/Zc:noexceptTypes-`* and then choose **OK**.
+1. Modify the **Additional Options** property to include **`/Zc:noexceptTypes`** or **`/Zc:noexceptTypes-`** and then choose **OK**.
 
 ## See also
 
 [`/Zc` (Conformance)](zc-conformance.md)\
-[noexcept](../../cpp/noexcept-cpp.md)\
+[`noexcept`](../../cpp/noexcept-cpp.md)\
 [Exception specifications (throw)](../../cpp/exception-specifications-throw-cpp.md)

@@ -113,7 +113,7 @@ To programmatically access this property, see <xref:Microsoft.VisualStudio.VCPro
 
 ### C++ Language Standard
 
-Specifies which C++ language standard to use. The default is **`/std:c++14`**. Specify **`/std:c++17`** to use C++17 features, and **`/std:c++latest`** to use C++20 or other experimental features. For more information, see [`/std` (Specify language standard version)](std-specify-language-standard-version.md)
+Specifies which C++ language standard to use. The default is **`/std:c++14`**. Specify **`/std:c++17`** to use C++17 features, **`/std:c++20`** to use C++20 features, and **`/std:c++latest`** to use proposed C++23 features or other experimental features. For more information, see [`/std` (Specify language standard version)](std-specify-language-standard-version.md).
 
 ### C Language Standard
 

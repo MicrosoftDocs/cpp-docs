@@ -12,6 +12,7 @@ Enable supported C and C++ language features from the specified version of the C
 
 > **`/std:c++14`**\
 > **`/std:c++17`**\
+> **`/std:c++20`**\
 > **`/std:c++latest`**\
 > **`/std:c11`**\
 > **`/std:c17`**
@@ -40,19 +41,24 @@ The following features remain enabled when the **`/std:c++14`** option is specif
 **`/std:c++17`**\
 The **`/std:c++17`** option enables C++17 standard-specific features and behavior. It enables the full set of C++17 features implemented by the MSVC compiler. This option disables compiler and standard library support for features that are new or changed after C++17. It specifically disables post-C++17 changes in the C++ Standard and versions of the Working Draft. It does not disable retroactive defect updates of the C++ Standard. This option is available starting in Visual Studio 2017 version 15.3.
 
-Depending on the MSVC compiler version or update level, C++17 features may not be fully implemented or fully conforming when you specify the **`/std:c++17`** options. For an overview of C++ language conformance in Visual C++ by release version, see [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md).
+Depending on the MSVC compiler version or update level, C++17 features may not be fully implemented or fully conforming when you specify the **`/std:c++17`** option. For an overview of C++ language conformance in Visual C++ by release version, see [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md).
+
+**`/std:c++20`**\
+The **`/std:c++20`** option enables C++20 standard-specific features and behavior. Available starting in Visual Studio 2019 version 16.11, it enables the full set of C++20 features implemented by the MSVC compiler, with the exception of `std::format` and the C++20 `<chrono>` extensions. These features are still only available under **`/std:c++latest`**. The **`/std:c++20`** option disables compiler and standard library support for features that are new or changed after C++20. It specifically disables post-C++20 changes in the C++ Standard and versions of the Working Draft. It doesn't disable retroactive defect updates of the C++ Standard.
 
 **`/std:c++latest`**\
-The **`/std:c++latest`** option enables all currently implemented compiler and standard library features proposed for the next draft standard, as well as some experimental features. This option is available starting in Visual Studio 2015 Update 3.
+The **`/std:c++latest`** option enables all currently implemented compiler and standard library features proposed for the next draft standard, as well as some in-progress and experimental features. This option is available starting in Visual Studio 2015 Update 3.
 
-As of Visual Studio 2019 version 16.10, **`/std:c++latest`** is required to enable all the compiler and standard library features of C++20. There will be a **`/std:c++20`** option that does not include later proposed or experimental features in a future version of Visual Studio.
+Depending on the MSVC compiler version or update level, C++17 or C++20 features may not be fully implemented or fully conforming when you specify the **`/std:c++latest`** option. For an overview of C++ language conformance in Visual C++ by release version, see [Microsoft C/C++ language conformance](../../overview/visual-cpp-language-conformance.md).
+
+In versions of Visual Studio 2019 before version 16.11, **`/std:c++latest`** is required to enable all the compiler and standard library features of C++20.
 
 For a list of supported language and library features, see [What's New for C++ in Visual Studio](../../overview/what-s-new-for-visual-cpp-in-visual-studio.md).
 
 The **`/std:c++latest`** option doesn't enable features guarded by the **`/experimental`** switch, but may be required to enable them.
 
 > [!NOTE]
-> The compiler and library features enabled by **`/std:c++latest`** may appear in a future C++ standard, as well as approved C++20 features. Features that have not been approved are subject to breaking changes or removal without notice and are provided on an as-is basis.
+> The compiler and library features enabled by **`/std:c++latest`** may appear in a future C++ standard. Features that have not been approved are subject to breaking changes or removal without notice and are provided on an as-is basis.
 
 ### C standards support
 
