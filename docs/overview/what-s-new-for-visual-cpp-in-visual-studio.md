@@ -66,7 +66,7 @@ For a summary of new features and bug fixes in Visual Studio version 16.9, see [
 
 For a summary of new features and bug fixes in Visual Studio version 16.8, see [What's New in Visual Studio 2019 version 16.8](/visualstudio/releases/2019/release-notes-v16.8).
 
-- C++20 Coroutines are now supported under [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) and the \<coroutine> header.
+- C++20 Coroutines are now supported under [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11) and the \<coroutine> header.
 
 - IntelliSense now provides support for C++20 \<concepts> and \<ranges> headers, and rename and browsing for concept definitions.
 
@@ -178,7 +178,7 @@ For a summary of new features and bug fixes in Visual Studio version 16.4, see [
 
 - Updates to MSVC's C++ Standard Library:
   - C++17: Implemented `to_chars()` general precision, completing [P0067R5](https://wg21.link/P0067R5) Elementary String Conversions (charconv). This completes implementation of all library features in the C++17 Standard.
-  - C++20: Implemented [P1754R1](https://wg21.link/P1754R1) Rename concepts to standard_case. To include preview features from the latest C++ Working Draft, use the **`/std:c++latest`** compiler option. The option can also be set in the **Configuration Properties > C/C++ > Language** project property page using the **C++ Language Standard** property.
+  - C++20: Implemented [P1754R1](https://wg21.link/P1754R1) Rename concepts to standard_case. To include these features, use the **`/std:c++latest`** compiler option (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11). The option can also be set in the **Configuration Properties > C/C++ > Language** project property page using the **C++ Language Standard** property.
 
 - A new collection of tools named [C++ Build Insights](../build-insights/get-started-with-cpp-build-insights.md) is now available. For more information about the announcement, see the [C++ Team Blog](https://devblogs.microsoft.com/cppblog/introducing-c-build-insights/).
 
@@ -190,7 +190,7 @@ For a summary of new features and bug fixes in Visual Studio version 16.3, see [
 
 - IntelliSense member lists are now filtered based on type qualifiers, for example, `const std::vector` now filters out methods such as `push_back`.
 
-- We added these C++20 Standard Library preview features (available under **`/std:c++latest`**):
+- We added these C++20 Standard Library features (available under **`/std:c++latest`**, or **`/std:c++20`** starting in Visual Studio 2019 version 16.11):
   - [P0487R1](https://wg21.link/P0487R1): Fixing `operator>>(basic_istream&, CharT*)`
   - [P0616R0](https://wg21.link/P0616R0): Using `move()` In `<numeric>`
   - [P0758R1](https://wg21.link/P0758R1): `is_nothrow_convertible`
@@ -226,13 +226,13 @@ For a summary of new features and bug fixes in Visual Studio version 16.2, see [
   - Added floating-point `to_chars()` overloads for `chars_format::fixed` and `chars_format::scientific` precision (`chars_format::general precision` is the only part not yet implemented)
   - Optimized `chars_format::fixed` shortest
 
-- Added these C++20 Standard Library preview features:
-  - Available under **`/std:c++latest`**:
+- Added these C++20 Standard Library features:
+  - Available under **`/std:c++latest`** (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11):
     - [P0020R6](https://wg21.link/P0020R6): `atomic<floating-point>`
     - [P0463R1](https://wg21.link/P0463R1): endian enumeration
     - [P0482R6](https://wg21.link/P0482R6): `char8_t` type for UTF-8 characters and strings
     - [P0653R2](https://wg21.link/P0653R2): `to_address()` for converting a pointer to a raw pointer
-  - Available under `/std:c++17` and `/std:c++latest`:
+  - Available under `/std:c++17` and `/std:c++latest` (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11):
     - [P0600R1](https://wg21.link/P0600R1): `[[nodiscard]]` in the library
   - Available unconditionally:
     - [P0754R2](https://wg21.link/P0754R2): `<version>` header
@@ -248,7 +248,7 @@ For a summary of new features and bug fixes in Visual Studio version 16.1, see [
 
 ### C++ compiler
 
-- These C++20 preview features have been implemented in the C++ compiler, available under **`/std:c++latest`**:
+- These C++20 features have been implemented in the C++ compiler, available under **`/std:c++latest`** (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11):
   - Increased ability to find function templates via argument-dependent lookup for function call expressions with explicit template arguments ([P0846R0](http://wg21.link/p0846r0)).
   - Designated initialization ([P0329R4](https://wg21.link/p0329r4)), which allows specific members to be selected in aggregate initialization, for example, by using the `Type t { .member = expr }` syntax.
 
@@ -256,7 +256,7 @@ For a summary of new features and bug fixes in Visual Studio version 16.1, see [
 
 ### C++ standard library improvements
 
-- These C++20 preview features have been added to our implementation of the C++ Standard Library, available under **`/std:c++latest`**:
+- These C++20 features have been added to our implementation of the C++ Standard Library, available under **`/std:c++latest`**:
   - `starts_with` and `ends_with` for `basic_string` and `basic_string_view`.
   - `contains` for associative containers.
   - `remove`, `remove_if`, and `unique` for `list` and `forward_list` now return `size_type`.
@@ -270,7 +270,7 @@ IntelliCode now ships as an optional component in the **Desktop Development with
 
 IntelliCode uses its own extensive training and your code context to put what you're most likely to use at the top of your completion list. It can often eliminate the need to scroll down through the list. For C++, IntelliCode offers the most help when using popular libraries such as the standard library.
 
-Preview IntelliCode features (Custom Models, C++ support, and EditorConfig inference) are disabled by default. To enable them, go to **Tools > Options > IntelliCode > General**. This version of IntelliCode has improved accuracy and includes support for free-functions. For more information, see [AI-Assisted Code Completion Suggestions Come to C++ via IntelliCode](https://devblogs.microsoft.com/cppblog/cppintellicode/).
+The new IntelliCode features (Custom Models, C++ support, and EditorConfig inference) are disabled by default. To enable them, go to **Tools > Options > IntelliCode > General**. This version of IntelliCode has improved accuracy and includes support for free-functions. For more information, see [AI-Assisted Code Completion Suggestions Come to C++ via IntelliCode](https://devblogs.microsoft.com/cppblog/cppintellicode/).
 
 #### Quick Info improvements
 

@@ -29,7 +29,8 @@ struct to_chars_result {
 
 **Namespace:** std
 
-**Compiler option:** /std:c++17, or later, is required
+**Compiler option:** [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later is required.
+
 
 ## See also
 

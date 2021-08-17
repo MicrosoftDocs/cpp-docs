@@ -14,7 +14,7 @@ A *storage class* in the context of C++ variable declarations is a type specifie
 
 1. The [mutable](../cpp/mutable-data-members-cpp.md) keyword may be considered a storage class specifier. However, it is only available in the member list of a class definition.
 
-1. **Visual Studio 2010 and later:** The **`auto`** keyword is no longer a C++ storage-class specifier, and the **`register`** keyword is deprecated. **Visual Studio 2017 version 15.7 and later:** (available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)): The **`register`** keyword is removed from the C++ language.
+1. **Visual Studio 2010 and later:** The **`auto`** keyword is no longer a C++ storage-class specifier, and the **`register`** keyword is deprecated. **Visual Studio 2017 version 15.7 and later:** (available in [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode and later): The **`register`** keyword is removed from the C++ language.
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class
@@ -186,7 +186,7 @@ On Windows, **`thread_local`** is functionally equivalent to  [`__declspec(threa
 
 ## <a name="register"></a> register
 
-**Visual Studio 2017 version 15.3 and later** (available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)): The **`register`** keyword is no longer a supported storage class. The keyword is still reserved in the standard for future use.
+**Visual Studio 2017 version 15.3 and later** (available in [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode and later): The **`register`** keyword is no longer a supported storage class. The keyword is still reserved in the standard for future use.
 
 ```cpp
    register int val; // warning C5033: 'register' is no longer a supported storage class
