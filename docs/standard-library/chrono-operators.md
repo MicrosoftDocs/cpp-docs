@@ -906,12 +906,17 @@ operator<<(basic_ostream<CharT, Traits>& os, const year_month_weekday_last& ymwd
 // 17) tai_time
 template<class CharT, class Traits, class Duration>
 basic_ostream<CharT, Traits>&
-operator<<(basic_ostream<CharT, Traits>& os, const tai_time<Duration>& tt); // C++ 20
+operator<<(basic_ostream<CharT, Traits>& os, const tai_time<Duration>& t); // C++ 20
 
 // 18) utc_time
 template<class CharT, class Traits, class Duration>
 basic_ostream<CharT, traits>&
 operator<<(basic_ostream<CharT, Traits>& os, const utc_time<Duration>& t); // C++ 20
+
+// 19) gps_time
+template<class CharT, class Traits, class Duration>
+basic_ostream<CharT, Traits>&
+operator<<(basic_ostream<CharT, Traits>& os, const gps_time<Duration>& t); // C++ 20
 ```
 
 ### Parameters
@@ -947,10 +952,7 @@ The `month_weekday` to output.
 The `month_weekday_last` to output.
 
 *`t`*\
-The `utc_time` to output.
-
-*`tt`*\
-The `tai_time` to output.
+The `gps_time`, `tai_time`, or `utc_time` to output.
 
 *`wd`*\
 The `weekday` to output.
@@ -1020,6 +1022,8 @@ The output stream you passed in, `os`
 17\) The `tai_time` is output in the form yyyy-mm-dd hh:mm:ss. For example, `2021-07-26 00:00:37`
 
 18\) The `utc_time` is output in the form yyyy-mm-dd hh:mm:ss:xxxxxxx (fractions of a second). For example, `2021-08-13 23:23:08.4358666`
+
+19\) The `gps_time` is output in the form yyyy-mm-dd hh:mm:ss:xxxxxxx (fractions of a second). For example, `2021-08-17 23:22:31.3048628`
 
 ### Example: `operator<<`
 

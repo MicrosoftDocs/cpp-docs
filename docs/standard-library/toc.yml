@@ -158,6 +158,8 @@
           href: duration-values-structure.md
         - name: file_clock class
           href: file-clock-class.md
+        - name: gps_clock class
+          href: gps-clock-class.md
         - name: hh_mm_ss class
           href: hhmmss-class.md
         - name: high_resolution_clock struct 
