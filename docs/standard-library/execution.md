@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: &lt;execution&gt;"
 title: "&lt;execution&gt;"
-ms.date: "01/15/2021"
+ms.date: "08/17/2021"
 f1_keywords: ["<execution>", "execution/std::execution", "std::execution"]
 helpviewer_keywords: ["execution header"]
 ---
