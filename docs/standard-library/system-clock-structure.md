@@ -71,7 +71,7 @@ A [time_t](../c-runtime-library/standard-types.md) object.
 
 ## <a name="is_steady_constant"></a>is_steady
 
-Static value that specifies whether the clock type is *steady*. Because the `system_clock` is not steady, you can't use this clock to take the time before an event, the time after an event, and reliably subtract them to get the duration of the event because the clock may be adjusted during that time.
+Static value that specifies whether the clock type is *steady*. Because the `system_clock` isn't steady, you can't use this clock to take the time before an event, the time after an event, and reliably subtract them to get the duration of the event because the clock may be adjusted during that time.
 
 ```cpp
 static const bool is_steady = false;

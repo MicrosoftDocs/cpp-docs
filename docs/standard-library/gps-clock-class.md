@@ -19,9 +19,9 @@ class gps_clock; // C++20
 
 This clock measures time since Sunday, 6 January 1980 00:00:00 UTC.
 
-This clock does not account for leap seconds. Whenever a leap second is added into UTC time, UTC falls another second behind GPS time.
+This clock doesn't account for leap seconds. Whenever a leap second is added into UTC time, UTC falls another second behind GPS time.
 
-GPS time is behind TAI time by 19 seconds because ten seconds was added to TAI time in 1972 to account for for the leap seconds that had accumulated to that point. And 9 more leap leap seconds were added to TAI time between 1970 and 1980. 
+GPS time is behind TAI time by 19 seconds because 10 seconds were added to TAI time in 1972 to account for the leap seconds that had accumulated to that point. And 9 more leap seconds were added to TAI time between 1970 and 1980. 
 
 ## Members
 
@@ -78,7 +78,7 @@ The `utc_time` to convert.
 
 ### Return value
 
-A `gps_time` set to the same point in time as the `utc_time` *`t`*.  It is computed as `gps_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 315964809s` where `315964809s == sys_days{1980y/January/Sunday[1]} - sys_days{1970y/January/1} + 9s`. Which is the number of seconds between the epochs of the `utc_clock` and the `gps_clock`.
+A `gps_time` set to the same point in time as the `utc_time` *`t`*.  It's computed as `gps_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 315964809s` where `315964809s == sys_days{1980y/January/Sunday[1]} - sys_days{1970y/January/1} + 9s`. That's the number of seconds between the `utc_clock` epoch and the `gps_clock` epoch.
 
 ## <a name="to_utc"></a> to_utc
 
@@ -97,11 +97,11 @@ The `gps_time` to convert.
 
 ### Return Value
 
-A `utc_time` set to the same point in time as the `gps_time`. Is is computed as `gps_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} + 315964809s` where  `315964809s == sys_days{1980y/January/Sunday[1]} - sys_days{1970y/January/1} + 9s`. Which is the number of seconds between the epochs of the `utc_clock` and the `gps_clock`.
+A `utc_time` set to the same point in time as the `gps_time`. It's computed as `gps_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} + 315964809s` where  `315964809s == sys_days{1980y/January/Sunday[1]} - sys_days{1970y/January/1} + 9s`. Which is the number of seconds between the epochs of the `utc_clock` and the `gps_clock`.
 
 ## <a name="is_steady_constant"></a> is_steady
 
-Static value that specifies whether the clock type is *steady*. In Microsoft's implementation, `is_steady_constant` is always **`false`**. Because the `gps_clock` is not steady, you can't reliably use this clock to take the time before an event, the time after an event, and subtract them to get the duration of the event because the clock may be adjusted during that time.
+Static value that specifies whether the clock type is *steady*. In Microsoft's implementation, `is_steady_constant` is always **`false`**. Because the `gps_clock` isn't steady, you can't reliably use this clock to take the time before an event, the time after an event, and subtract them to get the duration of the event because the clock may be adjusted during that time.
 
 ```cpp
 static const bool is_steady = system_clock::is_steady; // system_clock::is_steady equals false

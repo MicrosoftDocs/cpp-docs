@@ -19,7 +19,7 @@ class tai_clock; // C++20
 
 This clock reports International Atomic Time (TAI, from the French *temps atomique international*). International Atomic Time uses a weighted average of many atomic clocks to track time. TAI time is useful in the scientific community.
 
-This clock is different from UTC time. The difference is that a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds. A discrepancy gradually accrues between the time kept by an atomic clock and the time kept by measuring the rotation speed of the earth. The discrepancy is because the earth's rotation speed is irregular. It slows down over time by about one second every 1.5 years, and sometimes speeds up. TAI time doesn't keep track of this discrepancy. As of this writing, TAI time is 37 seconds ahead of UTC time. That's due to the leap seconds that have been inserted since 1972, and the initial difference of 10 seconds at the start of 1972.
+This clock is different from UTC time. The difference is that a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds. A discrepancy gradually accrues between the time kept by an atomic clock and the time kept by measuring the rotation speed of the earth. The discrepancy is because the earth's rotation speed is irregular. It slows down over time by about one second every 1.5 years, and sometimes speeds up. TAI time doesn't keep track of this discrepancy. As of this writing, TAI time is 37 seconds ahead of UTC time. That's because of the leap seconds that have been inserted since 1972, and the initial difference of 10 seconds at the start of 1972.
 
 The clock's epoch, or the date and time from which it starts measuring time, is `1958-01-01 00:00:00`.
 
@@ -102,7 +102,7 @@ A `utc_time` that represents the equivalent `tai_time` as *`t`*. It's calculated
 
 ## <a name="is_steady_constant"></a> is_steady
 
-Static value that specifies whether the clock type is *steady*. In the Microsoft implementation, `is_steady_constant` is **`false`**. Because `tai_clock` is not steady, you can't use this clock to take the time before an event, the time after an event, and reliably subtract them to get the duration of the event because the clock may be adjusted during that time.
+Static value that specifies whether the clock type is *steady*. In the Microsoft implementation, `is_steady_constant` is **`false`**. Because `tai_clock` isn't steady, you can't use this clock to take the time before an event, the time after an event, and reliably subtract them to get the duration of the event because the clock may be adjusted during that time.
 
 ```cpp
 static const bool is_steady = false;

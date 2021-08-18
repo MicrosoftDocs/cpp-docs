@@ -1035,7 +1035,7 @@ The output stream you passed in, `os`
 
 19\) The `gps_time` is output in the form yyyy-mm-dd hh:mm:ss:xxxxxxx (fractions of a second). For example, `2021-08-17 23:22:31.3048628`
 
-20\) The `local_time` is output in the form of seconds since epoch, as though by `os << std::chrono::sys_time<Duration>(a_time_t.time_since_epoch());`. For example, a `local_t` for August 18, 2021 3:13pm outputs `1597792380`.
+20\) The `local_time` is output in the form of seconds since epoch, as though by `os << std::chrono::sys_time<Duration>(some_local_time.time_since_epoch());`. For example, if `some_local_time` is set to August 18, 2021 3:13pm, the output is `1597792380`.
 
 ### Example: `operator<<`
 
