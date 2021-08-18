@@ -54,6 +54,7 @@ The value that is returned by a first call to `now` is always less than or equal
 [`<chrono>`](chrono.md)\
 [`file_clock class`](file-clock-class.md)\
 [`high_resolution_clock`](high-resolution-clock-struct.md)\
+[`local_t` struct](local_t.md)\
 [`system_clock` struct](system-clock-structure.md)\
 [`tai_clock` class](tai-clock-class.md)\
 [`utc_clock` class](utc-clock-class.md)\

@@ -2,7 +2,7 @@
 description: "Learn more about: tai_clock class"
 title: "tai_clock class"
 ms.date: 08/13/2021
-f1_keywords: ["chrono/std::chrono::tai_clock", "chrono/std::chrono::tai_clock::from_stream", "chrono/std::chrono::tai_clock::now", "chrono/std::chrono::tai_clock::to_utc", "chrono/std::chrono::tai_clock::from_utc", "chrono/std::chrono::tai_clock::is_steady Constant", "std::chrono::tai_clock::get_leap_second_info"]
+f1_keywords: ["chrono/std::chrono::tai_clock", "chrono/std::chrono::tai_clock::now", "chrono/std::chrono::tai_clock::to_utc", "chrono/std::chrono::tai_clock::from_utc", "chrono/std::chrono::tai_clock::is_steady Constant", "std::chrono::tai_clock::get_leap_second_info"]
 ---
 
 # tai_clock class
@@ -123,6 +123,7 @@ A [time_point](../standard-library/time-point-class.md) object that represents t
 [`<chrono>`](chrono.md)\
 [`file_clock class`](file-clock-class.md)\
 [`high_resolution_clock`](high-resolution-clock-struct.md)\
+[`local_t` struct](local_t.md)\
 [`steady_clock` struct](steady-clock-struct.md)\
 [`system_clock` struct](system-clock-structure.md)\
 [`utc_clock` class](utc-clock-class.md)\

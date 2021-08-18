@@ -2,7 +2,7 @@
 description: "Learn more about: utc_clock class"
 title: "utc_clock class"
 ms.date: 07/27/2021
-f1_keywords: ["chrono/std::chrono::utc_clock", "chrono/std::chrono::utc_clock::from_stream", "chrono/std::chrono::utc_clock::now", "chrono/std::chrono::utc_clock::to_sys", "chrono/std::chrono::utc_clock::from_sys", "chrono/std::chrono::utc_clock::is_steady Constant"]
+f1_keywords: ["chrono/std::chrono::utc_clock", "chrono/std::chrono::utc_clock::now", "chrono/std::chrono::utc_clock::to_sys", "chrono/std::chrono::utc_clock::from_sys", "chrono/std::chrono::utc_clock::is_steady Constant"]
 ---
 
 # utc_clock class
@@ -126,9 +126,13 @@ static time_point now() noexcept;
 
 A [time_point](../standard-library/time-point-class.md) object that represents the current time. The returned time point is effectively `from_sys(system_clock::now())`.
 
+## See also
+
 [`<chrono>`](chrono.md)\
 [`file_clock class`](file-clock-class.md)\
+[`gps_clock class`](gps-clock-class.md)\
 [`high_resolution_clock`](high-resolution-clock-struct.md)\
+[`local_t` struct](local_t.md)\
 [`steady_clock` struct](steady-clock-struct.md)\
 [`system_clock` struct](system-clock-structure.md)\
 [`tai_clock` class](tai-clock-class.md)\

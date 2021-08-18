@@ -311,7 +311,7 @@ basic_istream<charT, traits>&
 from_stream(
     basic_istream<charT, traits>& is, const charT* fmt,
     year_month_day& ymd, basic_string<charT, traits, Alloc>* abbrev = nullptr,
-    minutes* offset = nullptr);   
+    minutes* offset = nullptr);
 ```
 
 ### Template parameters

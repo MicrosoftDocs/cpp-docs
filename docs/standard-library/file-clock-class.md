@@ -2,7 +2,7 @@
 description: "Learn more about: fiile_clock class"
 title: "fiie_clock class"
 ms.date: 08/16/2021
-f1_keywords: ["chrono/std::chrono::file_clock", "chrono/std::chrono::file_clock::from_stream", "chrono/std::chrono::file_clock::now", "chrono/std::chrono::file_clock::to_utc", "chrono/std::chrono::file_clock::from_utc", "chrono/std::chrono::file_clock::is_steady Constant"]
+f1_keywords: ["chrono/std::chrono::file_clock", "chrono/std::chrono::file_clock::now", "chrono/std::chrono::file_clock::to_utc", "chrono/std::chrono::file_clock::from_utc", "chrono/std::chrono::file_clock::is_steady Constant"]
 ---
 
 # file_clock class
@@ -161,7 +161,9 @@ A [time_point](time-point-class.md) object that represents the current time. The
 ## See also
 
 [`<chrono>`](chrono.md)\
+[`gps_clock class`](gps-clock-class.md)\
 [`high_resolution_clock`](high-resolution-clock-struct.md)\
+[`local_t` struct](local_t.md)\
 [`steady_clock` struct](steady-clock-struct.md)\
 [`system_clock` struct](system-clock-structure.md)\
 [`tai_clock` class](tai-clock-class.md)\

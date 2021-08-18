@@ -49,6 +49,8 @@ class high_resolution_clock
 
 [`<chrono>`](chrono.md)\
 [`file_clock class`](file-clock-class.md)\
+[`gps_clock class`](gps-clock-class.md)\
+[`local_t` struct](local_t.md)\
 [`steady_clock` struct](steady-clock-struct.md)\
 [`system_clock` struct](system-clock-structure.md)\
 [`tai_clock` class](tai-clock-class.md)\
