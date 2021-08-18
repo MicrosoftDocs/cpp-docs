@@ -68,7 +68,7 @@ int main()
 
 ```Output
 float f = inf
-std::bit_cat<int>(f) = 7f800000
+std::bit_cast<int>(f) = 7f800000
 ```
 
 ### Remarks
