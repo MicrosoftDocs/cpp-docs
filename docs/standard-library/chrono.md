@@ -50,7 +50,7 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 | Name | Description |
 |--|--|
 |[`file_clock` class](file-clock-class.md)| A clock that is an alias for the clock used for  `std::filesystem::file_time_type` used to express file timestamps.|
-|[`gps_clock` class](gps-clock-class.md)| A clock that keeps GPS time.|
+|[`gps_clock` class](gps-clock-class.md)| A clock that keeps GPS time. Measures time starting from the first Sunday of January, 1980 at 00:00:00 UTC.|
 |[`high_resolution_clock` struct](high-resolution-clock-struct.md)| A clock with a nanosecond tick period. |
 |[`local_t` struct](high-resolution-clock-struct.md)|  |
 |[`steady_clock` struct](steady-clock-struct.md)|A `steady` clock. Preferred for measuring time intervals. |

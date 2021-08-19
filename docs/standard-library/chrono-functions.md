@@ -542,7 +542,7 @@ In ISO 8601, weeks begin with Monday. The first week of the year must include Ja
 
 ## <a name="std-chrono-get-leap-second-info"></a> `get_leap_second_info`
 
-Returns a [`leap_second_info`](./leap-second-info-struct.md) for the specified time which provides information about whether the supplied time occurs during a leap second insertion, and the sum of all the leap seconds between January 1, 1970 and the specified time. A leap second insertion occurs when the International Earth Rotation and Reference Systems Service (IERS) declares that a leap second needs to be added (resulting in a 61 second minute) in order to account for the difference between atomic time and time tracked by measuring the rotation of the earth, which is irregular, and is generally very gradually slowing.
+Returns a [`leap_second_info`](./leap-second-info-struct.md) for the specified time. This provides info about whether the supplied time occurs during a leap second insertion. It also provides the number of leap seconds that have been added between January 1, 1970 and the specified time. A leap second insertion occurs when the International Earth Rotation and Reference Systems Service (IERS) declares that a leap second needs to be added (resulting in a 61 second minute) in order to account for the difference between atomic time and time tracked by measuring the rotation of the earth, which is irregular, and is generally very gradually slowing.
 
 ### Syntax
 

@@ -25,7 +25,7 @@ There's a discrepancy between the time kept by atomic clocks, and the time kept 
 
 At the time of this writing, 27 leap seconds have been added since the practice of inserting leap seconds began in 1972. The International Earth Rotation and Reference Systems Service (IERS) determines when a leap second will be added. Adding a leap second is referred to as a "leap second insertion". When a leap second is inserted, the time, as it nears midnight, proceeds from 23 hours 59 minutes 59 seconds to 23 hours 59 minutes 60 seconds (the inserted leap second), and then to 0 hours 0 minutes 0 seconds (midnight). In the past, leap seconds have been added on June 30 or December 31.
 
-UTC time, by definition, starts out 10 seconds behind TAI (atomic time). 10 seconds were added in 1972 to TAI time to accommodate for the leap seconds the had accumulated by that point. Given the insertion of an another 27 leap seconds since then, UTC time is currently 37 seconds behind TAI (atomic clock) time.
+UTC time, by definition, starts out 10 seconds behind TAI (atomic time). 10 seconds were added in 1972 to TAI time to accommodate for the leap seconds that had accumulated by that point. Given the insertion of an another 27 leap seconds since then, UTC time is currently 37 seconds behind TAI (atomic clock) time.
 
 `is_clock(utc_clock)` returns **true**.
 
@@ -43,16 +43,16 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). 10 seco
 |--|--|
 | [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `utc_time` from the given stream using the specified format. |
 | [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info) | Gets a [leap_second_info](leap-second-info-struct.md) that indicates whether the supplied time specifies a time when a leap second was inserted. It also includes  the sum of all the leap seconds between January 1, 1970 and the specified duration. |
-| [`operator<<`](chrono-operators.md#op_left_shift) | Output `utc_clock::now()` to the given stream. |
+| [`operator<<`](chrono-operators.md#op_left_shift) | Output  a `utc_time` to the given stream. |
 
 ## Public typedefs
 
 |Name|Description|
 |----------|-----------------|
-|`utc_clock::duration`|A synonym for `duration<rep, period>`, which represents a duration of time in user-defined units, and a fraction that represents the time in seconds between each integral value stored in the duration.|
-|`utc_clock::period`|Microsoft's implementation defines this as a synonym for `system_clock::period`, which is a fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 second between ticks, and so on. |
-|`utc_clock::rep`|A synonym for the type used to represent the integral units in this clock's `utc_clock::duration`.|
-|`utc_clock::time_point`|A synonym for `time_point<utc_clock>`.|
+|`utc_clock::duration`|In Microsoft's implementation, it is a synonym for `duration<system_clock::rep, system_clock::period>`. It represents a duration of time measured in units of 100 nanoseconds.|
+|`utc_clock::period`|Microsoft's implementation defines this as a synonym for `system_clock::period`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
+|`utc_clock::rep`|A synonym for the type used to represent the integral units in this clock's `utc_clock::duration`. It is a `long long`.|
+|`utc_clock::time_point`|A synonym for `time_point<system_clock>`. Useful for representing a `time_point` for this clock.|
 
 ## Public Constants
 

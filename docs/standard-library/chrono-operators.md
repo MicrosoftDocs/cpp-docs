@@ -804,6 +804,7 @@ true true false
 Output the following types to a stream:
 
 - [`day`](day-class.md)
+- [`file_time`](file-clock-class.md)
 - [`gps_time`](gps-clock-class.md)
 - [`hh_mm_ss`](hhmmss-class.md)
 - [`local_time`](local_t.md)
@@ -1029,11 +1030,11 @@ The output stream you passed in, `os`
 
 16\) The `year_month_weekday_last` is output in the form yyyy/month/weekday[last]. For example, `1996/Jan/Wed[last]`
 
-17\) The `tai_time` is output in the form yyyy-mm-dd hh:mm:ss. For example, `2021-07-26 00:00:37`
+17\) The `tai_time` is output in the form yyyy-mm-dd hh:mm:ss.sssssss. For example, `2021-08-13 23:23:08.4358666`
 
-18\) The `utc_time` is output in the form yyyy-mm-dd hh:mm:ss:xxxxxxx (fractions of a second). For example, `2021-08-13 23:23:08.4358666`
+18\) The `utc_time` is output in the form yyyy-mm-dd hh:mm:ss.sssssss. For example, `2021-08-13 23:23:08.4358666`
 
-19\) The `gps_time` is output in the form yyyy-mm-dd hh:mm:ss:xxxxxxx (fractions of a second). For example, `2021-08-17 23:22:31.3048628`
+19\) The `gps_time` is output in the form yyyy-mm-dd hh:mm:ss.sssssss. For example, `2021-08-13 23:23:08.4358666`
 
 20\) The `local_time` is output in the form of seconds since epoch, as though by `os << std::chrono::sys_time<Duration>(some_local_time.time_since_epoch());`. For example, if `some_local_time` is set to August 18, 2021 3:13pm, the output is `1597792380`.
 
@@ -1048,7 +1049,7 @@ using namespace std::chrono;
 
 int main()
 {
-    std::cout << '\n' << utc_clock::now() << '\n';
+    std::cout << utc_clock::now() << '\n';
 
     year_month ym{ 2021y / April };
     std::cout << ym;

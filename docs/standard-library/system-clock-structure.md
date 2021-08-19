@@ -30,10 +30,10 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 |Name|Description|
 |----------|-----------------|
-|`system_clock::duration`|A synonym for `duration<rep, period>`, which represents a duration of time, and a fraction that represents the time in seconds between each integral value stored in the duration.|
-|`system_clock::period`|A fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 second between ticks, and so on.|
-|`system_clock::rep`|A synonym for the type used to represent the integral units in this clock's `system_clock::duration`.|
-|`system_clock::time_point`|A synonym for `time_point<Clock, duration>`, where `Clock` is a synonym for either the clock type itself or another clock type that is based on the same epoch (or date and time from which the clock starts measuring time) and has the same nested `duration` type.|
+|`system_clock::duration`|In Microsoft's implementation, it is a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time measured in units of 100 nanoseconds.|
+|`system_clock::period`|In Microsoft's implementation, it is a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
+|`system_clock::rep`|A synonym for the type used to represent the integral units in this clock's `system_clock::duration`. It is a `long long`.|
+|`system_clock::time_point`|A synonym for `time_point<system_clock>`. Useful for representing a `time_point` for this clock.|
 
 ### Public methods
 

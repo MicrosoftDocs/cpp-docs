@@ -145,7 +145,7 @@ The third constructor initializes its `duration` value by using `Tp.time_since_e
 
 ## <a name="time_since_epoch"></a> time_since_epoch
 
-Returns the amount of time between this `time_point` and the clock's epoch (or time and date that the clock starts measuring time). Returned as a [`duration`](../standard-library/duration-class.md) value.
+Returns the amount of time between this `time_point` and the clock's epoch. (A clock's epoch is the time from which the clock starts measuring time, such as midnight 1/1/1970). It is returned as a [`duration`](../standard-library/duration-class.md) value.
 
 ```cpp
 constexpr duration time_since_epoch() const;

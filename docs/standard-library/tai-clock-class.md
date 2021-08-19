@@ -19,7 +19,7 @@ class tai_clock; // C++20
 
 This clock reports International Atomic Time (TAI, from the French *temps atomique international*). International Atomic Time uses a weighted average of many atomic clocks to track time. TAI time is useful in the scientific community.
 
-This clock is different from UTC time. The difference is that a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds. A discrepancy gradually accrues between the time kept by an atomic clock and the time kept by measuring the rotation speed of the earth. The discrepancy is because the earth's rotation speed is irregular. It slows down over time by about one second every 1.5 years, and sometimes speeds up. TAI time doesn't keep track of this discrepancy. As of this writing, TAI time is 37 seconds ahead of UTC time. That's because of the leap seconds that have been inserted since 1972, and the initial difference of 10 seconds at the start of 1972.
+This clock is different from UTC time. The difference is that a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds. A discrepancy gradually accrues between the time kept by an atomic clock and the time kept by measuring the rotation speed of the earth. The discrepancy is because the earth's rotation speed is irregular. It slows down over time by about one second every 1.5 years, and sometimes speeds up. TAI time doesn't track this discrepancy. As of this writing, TAI time is 37 seconds ahead of UTC time. That's because of the leap seconds that have been inserted since 1972, and the initial difference of 10 seconds at the start of 1972.
 
 The clock's epoch, or the date and time from which it starts measuring time, is `1958-01-01 00:00:00`.
 
@@ -37,16 +37,16 @@ The clock's epoch, or the date and time from which it starts measuring time, is 
 |--|--|
 | [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `tai_clock` from the given stream using the specified format. |
 | [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info) | Get information about whether the supplied time specifies a time when a leap second was inserted, and the sum of all the leap seconds between January 1, 1970 and the specified duration. |
-| [`operator<<`](chrono-operators.md#op_left_shift) | Output `tai_clock::now()` to the given stream. |
+| [`operator<<`](chrono-operators.md#op_left_shift) | Output a `tai_time` to the given stream. |
 
 ## Public typedefs
 
 |Name|Description|
 |----------|-----------------|
-|`tai_clock::duration`|A synonym for `duration<rep, period>`, which is a fraction that represents the time in seconds between each integral value stored in the duration.|
-|`tai_clock::period`| Microsoft's implementation defines this as a synonym for `system_clock::period`, which defines a fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 seconds between ticks, and so on. |
-|`tai_clock::rep`|A synonym for the type used to represent the integral units in this clock's `tai_clock::duration`. |
-|`tai_clock::time_point`|A synonym for `chrono::time_point<tai_clock>`|
+|`tai_clock::duration`|In Microsoft's implementation, it is a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time measured in units of 100 nanoseconds.|
+|`tai_clock::period`| In Microsoft's implementation, it is a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
+|`tai_clock::rep`|A synonym for the type used to represent the integral units in this clock's `tai_clock::duration`. It is a `long long`. |
+|`tai_clock::time_point`|A synonym for `time_point<tai_clock>`. Useful for representing a `time_point` for this clock.|
 
 ## Public constants
 

@@ -19,7 +19,7 @@ Specifically, the period is `ratio<1, 1000000000>`
 ## Syntax
 
 ```cpp
-class high_resolution_clock
+using high_resolution_clock = steady_clock;
 ```
 
 ## Members
@@ -28,10 +28,10 @@ class high_resolution_clock
 
 |Name|Description|
 |----------|-----------------|
-|`duration`|A synonym for `nanoseconds`, defined in `<chrono>`.|
-|`period`|A synonym for `nano`, defined in `<ratio>`.|
-|`rep`|A synonym for **`long long`**, the type that is used to represent the number of clock ticks in the contained instantiation of `duration`.|
-|`time_point`|A synonym for `chrono::time_point<high_resolution_clock>`.|
+|`high_resolution_clock::duration`|In Microsoft's implementation, it is a synonym for `nanoseconds` which is defined as `duration<long long, nano>`. It represents a duration of time measured as billionths of a second.|
+|`high_resolution_clock::period`|In Microsoft's implementation, it is a synonym for `nano` which is defined as `std::ratio<1i64, 1000000000i64>` . It represents the time in seconds (one billionth of a second) between each tick in the duration.|
+|`high_resolution_clock::rep`|A synonym for **`long long`**, which is the type used in the Microsoft implementation to represent the number of clock ticks in a `high_resolution_clock::duration`.|
+|`high_resolution_clock::time_point`|A synonym for `time_point<steady_clock>`. Useful for representing a `time_point` for this clock.|
 
 ## Functions
 

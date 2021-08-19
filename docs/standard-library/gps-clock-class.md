@@ -36,16 +36,15 @@ GPS time is behind TAI time by 19 seconds because 10 seconds were added to TAI t
 | Name | Description |
 |--|--|
 | [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `gps_time` from the given stream using the specified format. |
-| [`operator<<`](chrono-operators.md#op_left_shift) | Output `gps_clock::now()` to the given stream. |
+| [`operator<<`](chrono-operators.md#op_left_shift) | Output a `gps_time` to the given stream. |
 
 ## Public typedefs
 
 |Name|Description|
 |----------|-----------------|
-|`gps_clock::duration`|A synonym for `duration<rep, period>`, which represents a duration of time in user-defined units, and a fraction that represents the time in seconds between each integral value stored in the duration.|
-|`gps_clock::period`|Microsoft's implementation defines this as a synonym for `system_clock::period`, which is a fraction that represents the time in seconds between two integral values in the representation. For example, a period of 1/1 means one second between ticks, 1/2 means 0.5 second between ticks, and so on.|
-|`gps_clock::rep`|A synonym for the type used to represent the number of ticks in this clock's `gps_clock::duration`.|
-|`gps_clock::time_point`|A synonym for `time_point<gps_clock>`.|
+|`gps_clock::duration`|In Microsoft's implementation, it is a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time measured in units of 100 nanoseconds.|
+|`gps_clock::period`|In Microsoft's implementation, it is a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
+|`gps_clock::time_point`|A synonym for `time_point<gps_clock>`. Useful for representing a `time_point` for this clock.|
 
 ## Public Constants
 
@@ -109,7 +108,7 @@ static const bool is_steady = system_clock::is_steady; // system_clock::is_stead
 
 ## <a name="now"></a> now
 
-Static method that returns the current UTC time.
+Static method that returns the current GPS time.
 
 ```cpp
 static time_point now() noexcept;

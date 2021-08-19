@@ -24,15 +24,15 @@ This struct is a pseudo-clock. Use it as an argument to the `time_point` templat
 | Name | Description |
 |--|--|
 | [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `gps_time` from the given stream using the specified format. |
-| [`operator<<`](chrono-operators.md#op_left_shift) | Output `local_t::now()` to the given stream. |
+| [`operator<<`](chrono-operators.md#op_left_shift) | Output a `local_time` to the given stream. |
 
 ## Public typedefs
 
 |Name|Description|
 |----------|-----------------|
-|`local_time`|A synonym for `time_point<std::chrono::local_t, Duration>`, which represents the local time.|
-|`local_seconds`|A synonym for `local_time<std::chrono::seconds>`|
-|`local_days`|A synonym for l`local_time<std::chrono::days>`|
+|`local_time`|A synonym for `template <class Duration> time_point<local_t, Duration>`. Useful for representing a `time_point` for this clock.|
+|`local_seconds`|A synonym for `local_time<seconds>`|
+|`local_days`|A synonym for l`local_time<days>`|
 
 ## Requirements
 
