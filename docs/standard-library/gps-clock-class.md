@@ -42,8 +42,9 @@ GPS time is behind TAI time by 19 seconds because 10 seconds were added to TAI t
 
 |Name|Description|
 |----------|-----------------|
-|`gps_clock::duration`|In Microsoft's implementation, it is a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time measured in units of 100 nanoseconds.|
-|`gps_clock::period`|In Microsoft's implementation, it is a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
+|`gps_clock::duration`|In Microsoft's implementation, it's a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time, as measured in units of 100 nanoseconds.|
+|`gps_clock::period`|In Microsoft's implementation, it's a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each clock tick in the duration.|
+|`gps_clock::rep`|A synonym for the type used to represent the integral units in this clock's `gps_clock::duration`. It is a `long long`.|
 |`gps_clock::time_point`|A synonym for `time_point<gps_clock>`. Useful for representing a `time_point` for this clock.|
 
 ## Public Constants

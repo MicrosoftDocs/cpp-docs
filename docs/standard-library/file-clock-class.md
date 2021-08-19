@@ -40,11 +40,10 @@ The ISO C++ Standard provides a choice between providing `to_sys()`and `from_sys
 
 |Name|Description|
 |----------|-----------------|
-
-|`file_clock::duration`|In Microsoft's implementation, it is a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time measured in units of 100 nanoseconds.|
-|`file_time` | A synonym for `time_point<file_clock, _Duration>`. Useful for representing a `time_point` for this clock.|
+|`file_clock::duration`|In Microsoft's implementation, it's a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time measured in units of 100 nanoseconds.|
+|`file_time`|A synonym for `time_point<file_clock, _Duration>`. Useful for representing a `time_point` for this clock.|
 |`file_clock::time_point`| A synonym for `time_point<File_time_clock>`. Useful for representing a `time_point` for this clock.|
-|`file_clock::period`|In Microsoft's implementation, it is a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
+|`file_clock::period`|In Microsoft's implementation, it's a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
 |`file_clock::rep`|A synonym for the type used to represent the integral units in this clock's `file_clock::duration`. It is a `long long`.|
 
 ## Public constants

@@ -30,8 +30,8 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 |Name|Description|
 |----------|-----------------|
-|`system_clock::duration`|In Microsoft's implementation, it is a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time measured in units of 100 nanoseconds.|
-|`system_clock::period`|In Microsoft's implementation, it is a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
+|`system_clock::duration`|In Microsoft's implementation, it's a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time measured in units of 100 nanoseconds.|
+|`system_clock::period`|In Microsoft's implementation, it's a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
 |`system_clock::rep`|A synonym for the type used to represent the integral units in this clock's `system_clock::duration`. It is a `long long`.|
 |`system_clock::time_point`|A synonym for `time_point<system_clock>`. Useful for representing a `time_point` for this clock.|
 
