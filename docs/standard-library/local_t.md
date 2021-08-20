@@ -44,6 +44,8 @@ As an example of how `local_t` is used, consider the declaration `local_days ld{
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
+## See also
+
 [`<chrono>`](chrono.md)\
 [`file_clock class`](file-clock-class.md)\
 [`gps_clock class`](gps-clock-class.md)\
