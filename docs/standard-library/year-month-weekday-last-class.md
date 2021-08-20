@@ -18,7 +18,7 @@ class year_month_weekday_last; // C++ 20
 
 ## Remarks
 
-`year_month_weekday_last` supports years- and months-oriented arithmetic, but not days-oriented arithmetic. For days-oriented arithmetic, use the `sys_days` conversion to convert to a [`sys_days`](chrono.md#alias-declarations), which supports days-oriented arithmetic.
+`year_month_weekday_last` supports years- and months-oriented arithmetic, but not days-oriented arithmetic. For days-oriented arithmetic, use the `sys_days` conversion to convert to a [`sys_days`](chrono.md#typedefs), which supports days-oriented arithmetic.
 
 `year_month_weekday_last` is a trivially copyable and standard-layout class type.
 
@@ -31,8 +31,8 @@ class year_month_weekday_last; // C++ 20
 | [`ok`](#ok) | Check if the `year_month_weekday_last` is valid. |
 | [`operator+=`](#op_+=) | Add the specified number of months or years. |
 | [`operator-=`](#op_-=) | Subtract the specified number of months or years. |
-| [`operator local_days`](#local_days) | Get the count of days from the `system_clock` epoch to this `year_month_weekday_last` as [`local_days`](chrono.md#alias-declarations). |
-| [`operator sys_days`](#sys_days) | Get the count of days from the `system_clock` epoch to this `year_month_weekday_last` as [`sys_days`](chrono.md#alias-declarations). |
+| [`operator local_days`](#local_days) | Get the count of days from the `system_clock` epoch to this `year_month_weekday_last` as [`local_days`](chrono.md#typedefs). |
+| [`operator sys_days`](#sys_days) | Get the count of days from the `system_clock` epoch to this `year_month_weekday_last` as [`sys_days`](chrono.md#typedefs). |
 | [`weekday`](#weekday) | Get the weekday. |
 | [`weekday_last`](#weekday_last) | Get the `weekday_last` stored in this `year_month_weekday_last`. |
 | [`year`](#year) | Get the year. |
@@ -222,7 +222,7 @@ int main()
 
 ## <a name="local_days"></a> `operator local_days`
 
-Get the count of days from the `system_clock` epoch (1/1/1970) to this `year_month_weekday_last` as [`local_days`](chrono.md#alias-declarations)
+Get the count of days from the `system_clock` epoch (1/1/1970) to this `year_month_weekday_last` as [`local_days`](chrono.md#typedefs)
 
 ```cpp
 constexpr explicit operator local_days() const noexcept;
@@ -234,7 +234,7 @@ If `ok()`, returns a count of days as `local_days{sys_days{*this}.time_since_epo
 
 ## <a name="sys_days"></a> `operator sys_days`
 
-Get the count of days from the `system_clock` epoch (1/1/1970) to this `year_month_day` as [`sys_days`](chrono.md#alias-declarations).
+Get the count of days from the `system_clock` epoch (1/1/1970) to this `year_month_day` as [`sys_days`](chrono.md#typedefs).
 
 ```cpp
 constexpr operator sys_days() const noexcept;

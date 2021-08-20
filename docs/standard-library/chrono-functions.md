@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: &lt;chrono&gt; functions"
 title: "&lt;chrono&gt; functions"
-ms.date: 6/16/2021
+ms.date: "08/13/2021"
 f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast", "chrono/std::chrono::duration_cast", "chrono/std::chrono::time_point_cast", "chrono/std::chrono::from_stream", "chrono/std::chrono::floor", "chrono/std::chrono::ceil", "chrono/std::chrono::round", "chrono/std::chrono::is_am", "chrono/std::chrono::is_pm", "chrono/std::chrono::make12", "chrono/std::chrono::make24", "chrono/std::chrono::get_leap_second_info", "chrono/std::chrono::get_tzdb", "chrono/std::chrono::get_tzdb_list", "chrono/std::chrono::locate_zone", "chrono/std::chrono::current_zone", "chrono/std::chrono::reload_tzdb", "chrono/std::chrono::remote_version"]
 helpviewer_keywords: ["std::duration_cast function", "std::time_point_cast function", "std::chrono::duration_cast function", "std::chrono::time_point_cast function", "std::chrono::from_stream function", "std::chrono::floor function", "std::chrono::ceil function", "std::chrono::round function", "std::chrono::is_am function", "std::chrono::is_pm function", "std::chrono::make12 function", "std::chrono::make24 function", "std::chrono::get_leap_second_info function", "std::chrono::get_tzdb function", "std::chrono::get_tzdb_list function", "std::chrono::locate_zone function", "std::chrono::current_zone function", "std::chrono::reload_tzdb function", "std::chrono::remote_version function"]
 ---
@@ -352,13 +352,13 @@ The format string used to match the input. See [Parse format strings](#parse-for
 The `file_time` parsed from the stream.
 
 *`gt`*\
-The `gps_time` parsed from the stream.
+The [`gps_time`](chrono.md#typedefs)  parsed from the stream.
 
 *`is`*\
 The input stream to parse.
 
 *`lt`*\
-The `local_time` parsed from the stream.
+The [`local_time`](chrono.md#typedefs) parsed from the stream.
 
 *`m`*\
 The `month` parsed from the stream.
@@ -370,13 +370,13 @@ The `month_day` parsed from the stream.
 If *`offset`* isn't `nullptr`, and the format specifier `%z` or modified variant such as `%Ez` or `%0z` is specified, and the parse is successful, then *`offset`* points to the parsed value.
 
 *`st`*\
-The `system_time` parsed from the stream.
+The [`sys_time`](chrono.md#typedefs) parsed from the stream.
 
 *`tt`*\
-The `tai_time` parsed from the stream.
+The [`tai_time`](chrono.md#typedefs) parsed from the stream.
 
 *`ut`*\
-The `utc_time` parsed from the stream.
+The [`utc_time`](chrono.md#typedefs) parsed from the stream.
 
 *`wd`*\
 The `weekday` parsed from the stream.
@@ -538,12 +538,11 @@ In ISO 8601, weeks begin with Monday. The first week of the year must include Ja
 | `year_month_weekday_last` | D, F, g, G, j, U, V, W, Y, y, C, b, h, B, m, d, e, a, A, u, w |
 | `zoned_time` | z, Z, c, x, X, D, F, Y, C, y, b, B, h, m, d, e, a, A, u, w, H, I, M, S, r, R, T, p, g, G, U, V, W |
 
-<a name="notice"></a><sup>1</sup>The implementation is currently consistent with [strftime](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) in that although `O` (letter O) and `e` are accepted, they are ignored. That is, `"%Od"` is interpreted as `"%d"`.
+<a name="notice"></a><sup>1</sup>The implementation is currently consistent with [strftime](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) in that although `O` (letter O) and `e` are accepted, they're ignored. That is, `"%Od"` is interpreted as `"%d"`.
 
 ## <a name="std-chrono-get-leap-second-info"></a> `get_leap_second_info`
 
-Returns a [`leap_second_info`](./leap-second-info-struct.md)\
- for the specified time.
+Returns a [`leap_second_info`](./leap-second-info-struct.md) for the specified time. This provides info about whether the supplied time occurs during a leap second insertion. It also provides the number of leap seconds that have been added between January 1, 1970 and the specified time. A leap second insertion occurs when the International Earth Rotation and Reference Systems Service (IERS) declares that a leap second will be added (resulting in a 61 second minute) to account for the difference between atomic time and time tracked by measuring the rotation of the earth, which is irregular, and is gradually slowing.
 
 ### Syntax
 

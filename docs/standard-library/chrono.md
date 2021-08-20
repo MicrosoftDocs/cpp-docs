@@ -17,16 +17,19 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 **Namespace:** `std`
 
-## Classes
+## Calendrical types
 
 | Name | Description |
 |--|--|
+|[`common_type` struct](common-type-structure.md)|Describes specializations of class template [`common_type`](common-type-class.md) for instantiations of `duration` and `time_point`.|
 | [`day` class](day-class.md) | A day of the month. For example, the 25th day of the month. |
 | [`duration` class](duration-class.md) | A time interval. |
+|[`duration_values` struct](duration-values-structure.md)|Provides specific values for the `duration` template parameter `Rep`.|
 | [`hh_mm_ss` class](hhmmss-class.md) | Splits a [`duration`](duration-class.md) into hours:minutes:seconds. |
 | [`leap_second` class](leap-second-class.md) | A date and a value for an inserted leap second. |
+|[`leap_second_info` struct](leap-second-info-struct.md) | The data returned by [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info). |
 | [`month` class](month-class.md) | A month of a year. For example, July. |
-| [`month_day` class](month-day-class.md) | A specific day of a specific month. For example, July 30th. |
+| [`month_day` class](month-day-class.md) | A specific day of a specific month. For example, July 30. |
 | [`month_day_last` class](month-day-last-class.md) | The last day of a month. |
 | [`month_weekday` class](month-day-last-class.md) | The nth weekday of a specific month. |
 | [`month_weekday_last` class](month-weekday-last-class.md) | The nth weekday of a specific month. |
@@ -42,16 +45,18 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 | [`year_month_weekday` class](year-month-weekday-class.md) | A specific year, month, and nth weekday of the month. |
 | [`year_month_weekday_last` class](year-month-weekday-last-class.md) |  A specific year, month, and last weekday of the month. |
 
-## Structs
+**Clocks**
 
-|Name|Description|
-|-|-|
-|[`common_type` struct](common-type-structure.md)|Describes specializations of class template [`common_type`](common-type-class.md) for instantiations of `duration` and `time_point`.|
-|[`duration_values` struct](duration-values-structure.md)|Provides specific values for the `duration` template parameter `Rep`.|
+| Name | Description |
+|--|--|
+|[`file_clock` class](file-clock-class.md)| A clock that is an alias for the clock used for  `std::filesystem::file_time_type` used to express file timestamps.|
+|[`gps_clock` class](gps-clock-class.md)| A clock that keeps GPS time. Measures time starting from the first Sunday of January 1980 at 00:00:00 UTC.|
 |[`high_resolution_clock` struct](high-resolution-clock-struct.md)| A clock with a nanosecond tick period. |
-|[`leap_second_info` struct](leap-second-info-struct.md) | The data returned by [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info). |
+|[`local_t` struct](local_t.md)| A pseudo-clock used as an argument to the `time_point` template argument to indicate that the time_point represents local time. |
 |[`steady_clock` struct](steady-clock-struct.md)|A `steady` clock. Preferred for measuring time intervals. |
 |[`system_clock` struct](system-clock-structure.md)|A *`clock type`* that is based on the real-time clock of the system.|
+|[`tai_clock` class](tai-clock-class.md)| Measures International Atomic Time (TAI) starting from Thursday, January 1, 1958 at 00:00:00. Doesn't account for leap seconds.|
+|[`utc_clock` class](utc-clock-class.md)| Measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds and is the time standard used around the world.|
 
 ## Functions
 
@@ -95,51 +100,64 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 |[`operator>`](chrono-operators.md#op_gt)|Determines whether various `<chrono>` objects are greater than another.|
 |[`operator>=`](chrono-operators.md#op_gt_eq)|Determines whether various `<chrono>` objects are greater than or equal to another.|
 
-## Typedefs (Predefined duration types)
+## Typedefs
 
 For more information about ratio types that are used in the following typedefs, see [`<ratio>`](ratio.md).
 
-|Name|Description|
-|-|-|
-|`typedef duration<long long, nano> nanoseconds;`|Synonym for a `duration` type that has a tick period of 1 nanosecond.|
-|`typedef duration<long long, micro> microseconds;`|Synonym for a `duration` type that has a tick period of 1 microsecond.|
-|`typedef duration<long long, milli> milliseconds;`|Synonym for a `duration` type that has a tick period of 1 millisecond.|
-|`typedef duration<long long> seconds;`|Synonym for a `duration` type that has a tick period of 1 second.|
-|`typedef duration<int, ratio<60>> minutes;`|Synonym for a `duration` type that has a tick period of 1 minute.|
-|`typedef duration<int, ratio<3600>> hours;`|Synonym for a `duration` type that has a tick period of 1 hour.|
+**Convenience `duration`  types**
+
+| Name | Description |
+|--|--|
+| `typedef duration<long long, nano> nanoseconds;` | Synonym for a `duration` type that has a tick period of one billionth (1/1,000,000,000) of a second. |
+| `typedef duration<long long, micro> microseconds;` | Synonym for a `duration` type that has a tick period of one millionth (1/1,000,000) of a second. |
+| `typedef duration<long long, milli> milliseconds;` | Synonym for a `duration` type that has a tick period of one thousandth (1/1,000) of a second. |
+| `typedef duration<long long> seconds;` | Synonym for a `duration` type that has a tick period of 1 second. |
+| `typedef duration<int, ratio<60>> minutes;` | Synonym for a `duration` type that has a tick period of 1 minute. |
+| `typedef duration<int, ratio<3600>> hours;` | Synonym for a `duration` type that has a tick period of 1 hour. |
+
+**Convenience `time_point` types**
+
+| Name | Description |
+|--|--|
+| `file_time` | A synonym for `template <class Duration> using file_time = time_point<file_clock, Duration>`. Represents a [`time_point`](time-point-class.md) for a [`file_clock`](file-clock-class.md). You specify the `Duration`. |
+| `gps_seconds` | A synonym for `using gps_seconds = gps_time<seconds>;` A count of seconds, represented by a `time_point` that is associated with a [`gps_clock`](tai-clock-class.md). |
+| `gps_time` | A synonym for `template <class Duration> using gps_time = time_point<gps_clock, Duration>`. Represents a `time_point` for a [`gps_clock`](gps-clock-class.md). You specify the `Duration`. |
+| `local_days` | A synonym for `using local_days = local_time<days>`. A count of days, represented by a [`time_point`](time-point-class.md) that isn't associated with any time zone. |
+| `local_seconds` | A synonym for `local_time<seconds>`. Defined in `std::chrono`. |
+| `local_time` | A synonym for `template <class Duration> using local_time = time_point<local_t, Duration>`. Represents a `time_point` for a local time. You specify the `Duration`. |
+| `sys_days` | A synonym for `using sys_days = sys_time<days>`. A count of days, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
+| `sys_seconds` | A synonym for `using sys_seconds = sys_time<seconds>`. A count of seconds, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
+| `sys_time` | A synonym for `template <class Duration> using sys_time = time_point<system_clock, Duration>`. Represents a `time_point` for a [`system_clock`](system-clock-structure.md). You specify the `Duration`. |
+| `tai_seconds` | A synonym for `using tai_seconds = tai_time<seconds>` A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md). |
+| `tai_time` | A synonym for `template <class Duration> using tai_time = time_point<tai_clock, Duration>`. Represents a `time_point` for a [`tai_clock`](tai-clock-class.md). You specify the `Duration`. |
+| `utc_seconds` | A synonym for `using utc_seconds = utc_time<seconds>;` |
+| `utc_time` | A synonym for `template<class Duration> using utc_time = time_point<utc_clock, Duration>`. Represents a `time_point`for a [`utc_clock`](utc-clock-class.md). You specify the `Duration`. |
 
 ## Type traits
 
-|Name|Description|
-|-|-|
-|[is_clock](is-clock-struct.md) | See if a type is a clock. |
-|[treat_as_floating_point](treat-as-floating-point-structure.md) | See if a `duration` can be converted to another `duration` that has a different tick period.|
-
-## Alias declarations
-
-|Name|Description|
-|-|-|
-|`using local_days = local_time<days>;` | A count of days, represented by a [`time_point`](time-point-class.md) that is not associated with any time zone. |
-|`using sys_days = sys_time<days>;` | A count of days, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md), which has a 1/1/1970 epoch. |
+| Name | Description |
+|--|--|
+| [is_clock](is-clock-struct.md) | Check if a type is a clock. |
+| [treat_as_floating_point](treat-as-floating-point-structure.md) | Check if a `duration` can be converted to another `duration` that has a different tick period. |
 
 ## Literals
 
 **(C++11)** The `<chrono>` header defines the following [user-defined literals](../cpp/user-defined-literals-cpp.md) that you can use for greater convenience, type-safety, and maintainability of your code. These literals are defined in the `literals::chrono_literals` inline namespace and are in scope when `std::chrono` is in scope.
 
-|Declaration|Description|
-|-|-|
-|`hours operator "" h(unsigned long long Val)`|Specifies hours as an integral value.|
-|`duration<double, ratio<3600>> operator "" h(long double Val)`|Specifies hours as a floating-point value.|
-|`minutes (operator "" min)(unsigned long long Val)`|Specifies minutes as an integral value.|
-|`duration<double, ratio<60>> (operator "" min)( long double Val)`|Specifies minutes as a floating-point value.|
-|`seconds operator "" s(unsigned long long Val)`|Specifies minutes as an integral value.|
-|`duration<double> operator "" s(long double Val)`|Specifies seconds as a floating-point value.|
-|`milliseconds operator "" ms(unsigned long long Val)`|Specifies milliseconds as an integral value.|
-|`duration<double, milli> operator "" ms(long double Val)`|Specifies milliseconds as a floating-point value.|
-|`microseconds operator "" us(unsigned long long Val)`|Specifies microseconds as an integral value.|
-|`duration<double, micro> operator "" us(long double Val)`|Specifies microseconds as a floating-point value.|
-|`nanoseconds operator "" ns(unsigned long long Val)`|Specifies nanoseconds as an integral value.|
-|`duration<double, nano> operator "" ns(long double Val)`|Specifies nanoseconds as a floating-point value.|
+| Declaration | Description |
+|--|--|
+| `hours operator "" h(unsigned long long Val)` | Specifies hours as an integral value. |
+| `duration<double, ratio<3600>> operator "" h(long double Val)` | Specifies hours as a floating-point value. |
+| `minutes (operator "" min)(unsigned long long Val)` | Specifies minutes as an integral value. |
+| `duration<double, ratio<60>> (operator "" min)( long double Val)` | Specifies minutes as a floating-point value. |
+| `seconds operator "" s(unsigned long long Val)` | Specifies minutes as an integral value. |
+| `duration<double> operator "" s(long double Val)` | Specifies seconds as a floating-point value. |
+| `milliseconds operator "" ms(unsigned long long Val)` | Specifies milliseconds as an integral value. |
+| `duration<double, milli> operator "" ms(long double Val)` | Specifies milliseconds as a floating-point value. |
+| `microseconds operator "" us(unsigned long long Val)` | Specifies microseconds as an integral value. |
+| `duration<double, micro> operator "" us(long double Val)` | Specifies microseconds as a floating-point value. |
+| `nanoseconds operator "" ns(unsigned long long Val)` | Specifies nanoseconds as an integral value. |
+| `duration<double, nano> operator "" ns(long double Val)` | Specifies nanoseconds as a floating-point value. |
 
 The following examples show how to use `<chrono>` literals.
 
