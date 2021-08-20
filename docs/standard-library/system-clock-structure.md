@@ -37,6 +37,8 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 
 **Related**
 
+|Name|Description|
+|-|-|
 |`template <class Duration> using sys_time = time_point<system_clock, Duration>`| Useful for representing a [`time_point`](time-point-class.md) for a `system_clock` and allows you to specify the duration. Defined in `std::chrono`|
 |`using sys_days = sys_time<days>` | A count of days, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). Defined in `std::chrono`|
 |`using sys_seconds = sys_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md) Defined in `std::chrono`|

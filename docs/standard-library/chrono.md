@@ -117,6 +117,8 @@ For more information about ratio types that are used in the following typedefs, 
 
 **Convenience `time_point` types**
 
+|Name|Description|
+|-|-|
 |`template <class Duration> using file_time = time_point<file_clock, Duration>`|Useful for representing a [`time_point`](time-point-class.md) for a [`file_clock`](file-clock-class.md). You specify the `Duration`.|
 |`template <class Duration> using gps_time = time_point<gps_clock, Duration>`| Useful for representing a [`time_point`](time-point-class.md) for a [`gps_clock`](gps-clock-class.md). You specify the `Duration`.|
 |`local_time`|A synonym for `template <class Duration> using local_time = time_point<local_t, Duration>`. Useful for representing a `time_point` for this clock. You specify the `Duration`. Defined in `std::chrono`.|
