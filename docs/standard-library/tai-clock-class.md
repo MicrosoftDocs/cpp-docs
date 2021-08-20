@@ -52,8 +52,8 @@ The clock's epoch, or the date and time from which it starts measuring time, is 
 
 |Name|Description|
 |----------|-----------------|
-|`tai_time`|A synonym for `template <class Duration> using tai_time = time_point<tai_clock, Duration>`| Represents a [`time_point`](time-point-class.md) for a `tai_clock`. You specify the `Duration`. Defined in `std::chrono`|
-|`tai_seconds`|A synonym for `using tai_seconds = tai_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md). Defined in `std::chrono`|
+|`tai_time`|A synonym for `template <class Duration> using tai_time = time_point<tai_clock, Duration>`. Represents a [`time_point`](time-point-class.md) for a `tai_clock`. You specify the `Duration`. Defined in `std::chrono`|
+|`tai_seconds`|A synonym for `using tai_seconds = tai_time<seconds>` A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md). Defined in `std::chrono`|
 
 ## Public constants
 
