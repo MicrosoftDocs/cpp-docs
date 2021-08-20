@@ -52,7 +52,7 @@ GPS time is behind TAI time by 19 seconds because 10 seconds were added to TAI t
 | Name | Description |
 |--|--|
 | `gps_time` | A synonym for `template <class Duration> using gps_time = time_point<gps_clock, Duration>`. Used to represent a [`time_point`](time-point-class.md) for a `gps_clock`. You specify the `Duration`. Defined in `std::chrono` |
-| `gps_seconds` | A synonym for `using gps_seconds = gps_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a `gps_clock`. Defined in `std::chrono` |
+| `gps_seconds` | A synonym for `using gps_seconds = gps_time<seconds>;` A count of seconds, represented by a `time_point` that is associated with a `gps_clock`. Defined in `std::chrono` |
 
 ## Public Constants
 

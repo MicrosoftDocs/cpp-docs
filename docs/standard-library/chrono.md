@@ -120,7 +120,7 @@ For more information about ratio types that are used in the following typedefs, 
 | Name | Description |
 |--|--|
 | `file_time` | A synonym for `template <class Duration> using file_time = time_point<file_clock, Duration>`. Represents a [`time_point`](time-point-class.md) for a [`file_clock`](file-clock-class.md). You specify the `Duration`. |
-| `gps_seconds` | A synonym for `using gps_seconds = gps_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`gps_clock`](tai-clock-class.md). |
+| `gps_seconds` | A synonym for `using gps_seconds = gps_time<seconds>;` A count of seconds, represented by a `time_point` that is associated with a [`gps_clock`](tai-clock-class.md). |
 | `gps_time` | A synonym for `template <class Duration> using gps_time = time_point<gps_clock, Duration>`. Represents a `time_point` for a [`gps_clock`](gps-clock-class.md). You specify the `Duration`. |
 | `local_days` | A synonym for `using local_days = local_time<days>`. A count of days, represented by a [`time_point`](time-point-class.md) that isn't associated with any time zone. |
 | `local_seconds` | A synonym for `local_time<seconds>`. Defined in `std::chrono`. |
