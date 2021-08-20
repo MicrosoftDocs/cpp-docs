@@ -17,9 +17,9 @@ class tai_clock; // C++20
 
 ## Remarks
 
-This clock reports International Atomic Time (TAI, from the French *temps atomique international*). International Atomic Time uses a weighted average of many atomic clocks to track time. TAI time is useful in the scientific community.
+This clock reports International Atomic Time (TAI, from the French *temps atomique international*). International Atomic Time uses a weighted average of many atomic clocks to track time.
 
-This clock is different from UTC time. The difference is that a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds. A discrepancy gradually accrues between the time kept by an atomic clock and the time kept by measuring the rotation speed of the earth. The discrepancy is because the earth's rotation speed is irregular. It slows down over time by about one second every 1.5 years, and sometimes speeds up. TAI time doesn't track this discrepancy. As of this writing, TAI time is 37 seconds ahead of UTC time. That's because of the leap seconds that have been inserted since 1972, and the initial difference of 10 seconds at the start of 1972.
+Time kept by the TAI clock is different from UTC time. The difference is that a leap second is occasionally added to UTC time to keep the difference between UTC time and UT1 (solar time) within +- 0.9 seconds of each other. A discrepancy gradually accrues between the time kept by an atomic clock and the time kept by measuring the rotation of the earth. A discrepancy accrues because the earth's rotation speed is irregular. It slows down over time by about one second every 1.5 years, thought it also sometimes speeds up. TAI time doesn't track this discrepancy. As of this writing, TAI time is 37 seconds ahead of UTC time. That's because of an initial difference of 10 seconds at the start of 1972, plus the leap seconds that have been inserted since 1972.
 
 The clock's epoch, or the date and time from which it starts measuring time, is `1958-01-01 00:00:00`.
 
@@ -45,21 +45,21 @@ The clock's epoch, or the date and time from which it starts measuring time, is 
 |----------|-----------------|
 |`tai_clock::duration`|In Microsoft's implementation, it's a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time measured in units of 100 nanoseconds.|
 |`tai_clock::period`| In Microsoft's implementation, it's a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
-|`tai_clock::rep`|A synonym for the type used to represent the integral units in this clock's `tai_clock::duration`. It's a `long long`. |
-|`tai_clock::time_point`|A synonym for `time_point<tai_clock>`. Useful for representing a `time_point` for this clock.|
+|`tai_clock::rep`|A synonym for the type (`long long`)used to represent the integral units in this clock's `tai_clock::duration`. |
+|`tai_clock::time_point`|A synonym for `time_point<tai_clock>`. Used to represent a `time_point` for this clock.|
 
 **Related**
 
 |Name|Description|
 |----------|-----------------|
-|`template <class Duration> using tai_time = time_point<tai_clock, Duration>`| Useful for representing a [`time_point`](time-point-class.md) for a `tai_clock`. You specify the `Duration`. Defined in `std::chrono`|
-|`using tai_seconds = tai_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md). Defined in `std::chrono`|
+|`tai_time`|A synonym for `template <class Duration> using tai_time = time_point<tai_clock, Duration>`| Represents a [`time_point`](time-point-class.md) for a `tai_clock`. You specify the `Duration`. Defined in `std::chrono`|
+|`tai_seconds`|A synonym for `using tai_seconds = tai_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md). Defined in `std::chrono`|
 
 ## Public constants
 
 |Name|Description|
 |----------|-----------------|
-|[tai_clock::is_steady constant](#is_steady_constant)|Indicates whether the clock type is steady.|
+|[tai_clock::is_steady constant](#is_steady_constant)|Indicates whether the clock type is steady. Its value is `false`.|
 
 ## Requirements
 
@@ -109,7 +109,7 @@ A `utc_time` that represents the equivalent `tai_time` as *`t`*. It's calculated
 
 ## <a name="is_steady_constant"></a> is_steady
 
-Static value that specifies whether the clock type is *steady*. In the Microsoft implementation, `is_steady_constant` is **`false`**. Because `tai_clock` isn't steady, you can't use this clock to take the time before an event, the time after an event, and reliably subtract them to get the duration of the event because the clock may be adjusted during that time.
+Static value that specifies whether the clock type is *steady*. In the Microsoft implementation, `is_steady_constant` is **`false`**. Because `tai_clock` isn't steady, you can't use this clock to take the time before an event, the time after an event, and subtract them to get the duration of the event because the clock may be adjusted during that time.
 
 ```cpp
 static const bool is_steady = false;
@@ -117,7 +117,7 @@ static const bool is_steady = false;
 
 ## <a name="now"></a> now
 
-Static method that returns the current UTC time, accounting for leap seconds.
+Static method that returns the current TAI time.
 
 ```cpp
 static time_point now() noexcept;
@@ -125,7 +125,7 @@ static time_point now() noexcept;
 
 ### Return Value
 
-A [time_point](../standard-library/time-point-class.md) object that represents the current time. The returned time point is effectively `from_sys(system_clock::now())`.
+A [time_point](../standard-library/time-point-class.md) object that represents the current time. The returned time point is effectively `from_utc(utc_clock::now())`.
 
 [`<chrono>`](chrono.md)\
 [`file_clock class`](file-clock-class.md)\

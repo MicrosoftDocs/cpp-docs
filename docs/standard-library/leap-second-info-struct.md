@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::chrono [C++], leap_second_info struct", "std::chrono
 ---
 # `leap_second_info` struct
 
-A `leap_second_info` represents the result of a call to [`get_leap_second_info`](./chrono-functions.md#std-chrono-get-leap-second-info). The type `leap_second_info` only has public data members. It doesn't have base classes or members other than the ones specified.
+Call [`get_leap_second_info`](./chrono-functions.md#std-chrono-get-leap-second-info) to get a `leap_second_info`. This type only has public data members. It doesn't have base classes or members other than the ones specified.
 
 Microsoft C++ supports the `leap_second_info` struct starting in Visual Studio 2019 version 16.10. The `leap_second_info` struct is a C++20 feature. The [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option is required.
 

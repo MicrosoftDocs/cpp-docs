@@ -36,10 +36,6 @@ As an example of how `local_t` is used, consider the declaration `local_days ld{
 |`local_seconds`|A synonym for `local_time<seconds>`. Defined in `std::chrono`.|
 |`local_days`|A synonym for l`local_time<days>`. Defined in `std::chrono`.|
 
-|`template <class Duration> using tai_time = time_point<tai_clock, Duration>`| Useful for representing a [`time_point`](time-point-class.md) for a `tai_clock`. You specify the `Duration`. Defined in `std::chrono`|
-
-
-
 ## Requirements
 
 **Header:** `<chrono>` (since C++20)

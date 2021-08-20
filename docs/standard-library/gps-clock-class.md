@@ -21,14 +21,14 @@ This clock measures time since Sunday, 6 January 1980 00:00:00 UTC.
 
 This clock doesn't account for leap seconds. Whenever a leap second is added into UTC time, UTC falls another second behind GPS time.
 
-GPS time is behind TAI time by 19 seconds because 10 seconds were added to TAI time in 1972 to account for the leap seconds that had accumulated to that point. And 9 more leap seconds were added to TAI time between 1970 and 1980. 
+GPS time is behind TAI time by 19 seconds because 10 seconds were added to TAI time in 1972 to account for the leap seconds that had accumulated to that point, and 9 more leap seconds were added to TAI time between 1970 and 1980.
 
 ## Members
 
 |Name|Description|
 |----------|-----------------|
 |[from_utc](#from_utc)| Static. Converts a `utc_time` to a `gps_time`.|
-|[now](#now)| Static. Returns the current time.|
+|[now](#now)| Static. Returns the GPS current time.|
 |[to_utc](#to_utc)| Static. Converts a `gps_time` to a `utc_time`.|
 
 ## Non-members
@@ -43,22 +43,22 @@ GPS time is behind TAI time by 19 seconds because 10 seconds were added to TAI t
 |Name|Description|
 |----------|-----------------|
 |`gps_clock::duration`|In Microsoft's implementation, it's a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time, as measured in units of 100 nanoseconds.|
-|`gps_clock::period`|In Microsoft's implementation, it's a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each clock tick in the duration.|
-|`gps_clock::rep`|A synonym for the type used to represent the integral units in this clock's `gps_clock::duration`. It's a `long long`.|
-|`gps_clock::time_point`|A synonym for `time_point<gps_clock>`. Useful for representing a `time_point` for this clock.|
+|`gps_clock::period`|In Microsoft's implementation, it's a synonym for `ratio<1, 10'000'000>`. It represents the time in fractions of a second (100 nanoseconds) between each clock tick in the duration.|
+|`gps_clock::rep`|A synonym for the type (`long long`) used to represent the integral units in this clock's `gps_clock::duration`.|
+|`gps_clock::time_point`|A synonym for `time_point<gps_clock>`. Used to represent a `time_point` for this clock.|
 
 **Related**
 
 |Name|Description|
 |-|-|
-|`template <class Duration> using gps_time = time_point<gps_clock, Duration>`| Useful for representing a [`time_point`](time-point-class.md) for a `gps_clock`. You specify the `Duration`. Defined in `std::chrono`|
-|`using gps_seconds = gps_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a `gps_clock`. Defined in `std::chrono`|
+|`gps_time`|A synonym for `template <class Duration> using gps_time = time_point<gps_clock, Duration>`. Used to represent a [`time_point`](time-point-class.md) for a `gps_clock`. You specify the `Duration`. Defined in `std::chrono`|
+|`gps_seconds`|A synonym for `using gps_seconds = gps_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a `gps_clock`. Defined in `std::chrono`|
 
 ## Public Constants
 
 |Name|Description|
 |----------|-----------------|
-|[gps_clock::is_steady constant](#is_steady_constant)|Indicates whether the clock type is steady.|
+|[gps_clock::is_steady constant](#is_steady_constant)|Indicates whether the clock type is steady. Its value is `false`.|
 
 ## Requirements
 
@@ -85,7 +85,7 @@ The `utc_time` to convert.
 
 ### Return value
 
-A `gps_time` set to the same point in time as the `utc_time` *`t`*.  It's computed as `gps_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 315964809s` where `315964809s == sys_days{1980y/January/Sunday[1]} - sys_days{1970y/January/1} + 9s`. That's the number of seconds between the `utc_clock` epoch and the `gps_clock` epoch.
+A `gps_time` set to the same point in time as the `utc_time` *`t`*.  It's computed as `gps_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 315964809s` where `315964809s == sys_days{1980y/January/Sunday[1]} - sys_days{1970y/January/1} + 9s`. Which is the number of seconds between the `utc_clock` epoch and the `gps_clock` epoch.
 
 ## <a name="to_utc"></a> to_utc
 
@@ -104,7 +104,7 @@ The `gps_time` to convert.
 
 ### Return Value
 
-A `utc_time` set to the same point in time as the `gps_time`. It's computed as `gps_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} + 315964809s` where  `315964809s == sys_days{1980y/January/Sunday[1]} - sys_days{1970y/January/1} + 9s`. Which is the number of seconds between the epochs of the `utc_clock` and the `gps_clock`.
+A `utc_time` set to the same point in time as the `gps_time`. It's computed as `gps_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} + 315964809s` where  `315964809s == sys_days{1980y/January/Sunday[1]} - sys_days{1970y/January/1} + 9s`. That's the number of seconds between the epochs of the `utc_clock` and the `gps_clock`.
 
 ## <a name="is_steady_constant"></a> is_steady
 

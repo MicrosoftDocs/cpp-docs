@@ -52,7 +52,7 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 |[`file_clock` class](file-clock-class.md)| A clock that is an alias for the clock used for  `std::filesystem::file_time_type` used to express file timestamps.|
 |[`gps_clock` class](gps-clock-class.md)| A clock that keeps GPS time. Measures time starting from the first Sunday of January 1980 at 00:00:00 UTC.|
 |[`high_resolution_clock` struct](high-resolution-clock-struct.md)| A clock with a nanosecond tick period. |
-|[`local_t` struct](high-resolution-clock-struct.md)|  |
+|[`local_t` struct](local_t.md)| A pseudo-clock used as an argument to the `time_point` template argument to indicate that the time_point represents local time. |
 |[`steady_clock` struct](steady-clock-struct.md)|A `steady` clock. Preferred for measuring time intervals. |
 |[`system_clock` struct](system-clock-structure.md)|A *`clock type`* that is based on the real-time clock of the system.|
 |[`tai_clock` class](tai-clock-class.md)| Measures International Atomic Time (TAI) starting from Thursday, January 1, 1958 at 00:00:00. Doesn't account for leap seconds.|
@@ -108,9 +108,9 @@ For more information about ratio types that are used in the following typedefs, 
 
 |Name|Description|
 |-|-|
-|`typedef duration<long long, nano> nanoseconds;`|Synonym for a `duration` type that has a tick period of 1 nanosecond.|
-|`typedef duration<long long, micro> microseconds;`|Synonym for a `duration` type that has a tick period of 1 microsecond.|
-|`typedef duration<long long, milli> milliseconds;`|Synonym for a `duration` type that has a tick period of 1 millisecond.|
+|`typedef duration<long long, nano> nanoseconds;`|Synonym for a `duration` type that has a tick period of one billionth (1/1,000,000,000) of a second.|
+|`typedef duration<long long, micro> microseconds;`|Synonym for a `duration` type that has a tick period of one millionth (1/1,000,000) of a second.|
+|`typedef duration<long long, milli> milliseconds;`|Synonym for a `duration` type that has a tick period of one thousandth (1/1,000) of a second.|
 |`typedef duration<long long> seconds;`|Synonym for a `duration` type that has a tick period of 1 second.|
 |`typedef duration<int, ratio<60>> minutes;`|Synonym for a `duration` type that has a tick period of 1 minute.|
 |`typedef duration<int, ratio<3600>> hours;`|Synonym for a `duration` type that has a tick period of 1 hour.|
@@ -119,29 +119,24 @@ For more information about ratio types that are used in the following typedefs, 
 
 |Name|Description|
 |-|-|
-|`template <class Duration> using file_time = time_point<file_clock, Duration>`|Useful for representing a [`time_point`](time-point-class.md) for a [`file_clock`](file-clock-class.md). You specify the `Duration`.|
-|`template <class Duration> using gps_time = time_point<gps_clock, Duration>`| Useful for representing a [`time_point`](time-point-class.md) for a [`gps_clock`](gps-clock-class.md). You specify the `Duration`.|
-|`local_time`|A synonym for `template <class Duration> using local_time = time_point<local_t, Duration>`. Useful for representing a `time_point` for this clock. You specify the `Duration`. Defined in `std::chrono`.|
-|`template <class Duration> using sys_time = time_point<system_clock, Duration>`| Useful for representing a [`time_point`](time-point-class.md) for a [`system_clock`](system-clock-structure.md). You specify the `Duration`.|
-|`template <class Duration> using tai_time = time_point<tai_clock, Duration>`| Useful for representing a [`time_point`](time-point-class.md) for a [`tai_clock`](tai-clock-class.md). You specify the `Duration`.|
-|`template<class Duration> using utc_time = std::chrono::time_point<std::chrono::utc_clock, Duration>`|Useful for representing a [`time_point`](time-point-class.md) for a [`utc_clock`](utc-clock-class.md). You specify the `Duration`.|
+|`file_time`| A synonym for `template <class Duration> using file_time = time_point<file_clock, Duration>`. Represents a [`time_point`](time-point-class.md) for a [`file_clock`](file-clock-class.md). You specify the `Duration`.|
+|`gps_seconds`| A synonym for `using gps_seconds = gps_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`gps_clock`](tai-clock-class.md).|
+|`gps_time`| A synonym for `template <class Duration> using gps_time = time_point<gps_clock, Duration>`. Represents a `time_point` for a [`gps_clock`](gps-clock-class.md). You specify the `Duration`.|
+|`local_days`|A synonym for `using local_days = local_time<days>`. A count of days, represented by a [`time_point`](time-point-class.md) that isn't associated with any time zone. |
+|`local_time`|A synonym for `template <class Duration> using local_time = time_point<local_t, Duration>`. Represents a `time_point` for a local time. You specify the `Duration`.|
+|`sys_days` |A synonym for `using sys_days = sys_time<days>`. A count of days, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
+|`sys_seconds`|A synonym for `using sys_seconds = sys_time<seconds>`. A count of seconds, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
+|`sys_time`|A synonym for `template <class Duration> using sys_time = time_point<system_clock, Duration>`. Represents a `time_point` for a [`system_clock`](system-clock-structure.md). You specify the `Duration`.|
+|`tai_seconds`|A synonym for `using tai_seconds = tai_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md).|
+|`tai_time`|A synonym for `template <class Duration> using tai_time = time_point<tai_clock, Duration>`. Represents a `time_point` for a [`tai_clock`](tai-clock-class.md). You specify the `Duration`.|
+|`utc_time`|A synonym for `template<class Duration> using utc_time = time_point<utc_clock, Duration>`. Represents a `time_point`for a [`utc_clock`](utc-clock-class.md). You specify the `Duration`.|
 
 ## Type traits
 
 |Name|Description|
 |-|-|
-|[is_clock](is-clock-struct.md) | See if a type is a clock. |
-|[treat_as_floating_point](treat-as-floating-point-structure.md) | See if a `duration` can be converted to another `duration` that has a different tick period.|
-
-## Alias declarations
-
-|Name|Description|
-|-|-|
-|`using gps_seconds = gps_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`gps_clock`](tai-clock-class.md).|
-|`using local_days = local_time<days>` | A count of days, represented by a [`time_point`](time-point-class.md) that isn't associated with any time zone. |
-|`using sys_days = sys_time<days>` | A count of days, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
-|`using sys_seconds = sys_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
-|`using tai_seconds = tai_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md).|
+|[is_clock](is-clock-struct.md) | Check if a type is a clock. |
+|[treat_as_floating_point](treat-as-floating-point-structure.md) | Check if a `duration` can be converted to another `duration` that has a different tick period.|
 
 ## Literals
 
