@@ -106,58 +106,58 @@ For more information about ratio types that are used in the following typedefs, 
 
 **Convenience `duration`  types**
 
-|Name|Description|
-|-|-|
-|`typedef duration<long long, nano> nanoseconds;`|Synonym for a `duration` type that has a tick period of one billionth (1/1,000,000,000) of a second.|
-|`typedef duration<long long, micro> microseconds;`|Synonym for a `duration` type that has a tick period of one millionth (1/1,000,000) of a second.|
-|`typedef duration<long long, milli> milliseconds;`|Synonym for a `duration` type that has a tick period of one thousandth (1/1,000) of a second.|
-|`typedef duration<long long> seconds;`|Synonym for a `duration` type that has a tick period of 1 second.|
-|`typedef duration<int, ratio<60>> minutes;`|Synonym for a `duration` type that has a tick period of 1 minute.|
-|`typedef duration<int, ratio<3600>> hours;`|Synonym for a `duration` type that has a tick period of 1 hour.|
+| Name | Description |
+|--|--|
+| `typedef duration<long long, nano> nanoseconds;` | Synonym for a `duration` type that has a tick period of one billionth (1/1,000,000,000) of a second. |
+| `typedef duration<long long, micro> microseconds;` | Synonym for a `duration` type that has a tick period of one millionth (1/1,000,000) of a second. |
+| `typedef duration<long long, milli> milliseconds;` | Synonym for a `duration` type that has a tick period of one thousandth (1/1,000) of a second. |
+| `typedef duration<long long> seconds;` | Synonym for a `duration` type that has a tick period of 1 second. |
+| `typedef duration<int, ratio<60>> minutes;` | Synonym for a `duration` type that has a tick period of 1 minute. |
+| `typedef duration<int, ratio<3600>> hours;` | Synonym for a `duration` type that has a tick period of 1 hour. |
 
 **Convenience `time_point` types**
 
-|Name|Description|
-|----------|------------|
-|`file_time`| A synonym for `template <class Duration> using file_time = time_point<file_clock, Duration>`. Represents a [`time_point`](time-point-class.md) for a [`file_clock`](file-clock-class.md). You specify the `Duration`.|
-|`gps_seconds`| A synonym for `using gps_seconds = gps_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`gps_clock`](tai-clock-class.md).|
-|`gps_time`| A synonym for `template <class Duration> using gps_time = time_point<gps_clock, Duration>`. Represents a `time_point` for a [`gps_clock`](gps-clock-class.md). You specify the `Duration`.|
-|`local_days`|A synonym for `using local_days = local_time<days>`. A count of days, represented by a [`time_point`](time-point-class.md) that isn't associated with any time zone. |
-|`local_seconds`|A synonym for `local_time<seconds>`. Defined in `std::chrono`.|
-|`local_time`|A synonym for `template <class Duration> using local_time = time_point<local_t, Duration>`. Represents a `time_point` for a local time. You specify the `Duration`.|
-|`sys_days` |A synonym for `using sys_days = sys_time<days>`. A count of days, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
-|`sys_seconds`|A synonym for `using sys_seconds = sys_time<seconds>`. A count of seconds, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
-|`sys_time`|A synonym for `template <class Duration> using sys_time = time_point<system_clock, Duration>`. Represents a `time_point` for a [`system_clock`](system-clock-structure.md). You specify the `Duration`.|
-|`tai_seconds`|A synonym for `using tai_seconds = tai_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md).|
-|`tai_time`|A synonym for `template <class Duration> using tai_time = time_point<tai_clock, Duration>`. Represents a `time_point` for a [`tai_clock`](tai-clock-class.md). You specify the `Duration`.|
-|`utc_seconds`| A synonym for `using utc_seconds = utc_time<seconds>;`|
-|`utc_time`|A synonym for `template<class Duration> using utc_time = time_point<utc_clock, Duration>`. Represents a `time_point`for a [`utc_clock`](utc-clock-class.md). You specify the `Duration`.|
+| Name | Description |
+|--|--|
+| `file_time` | A synonym for `template <class Duration> using file_time = time_point<file_clock, Duration>`. Represents a [`time_point`](time-point-class.md) for a [`file_clock`](file-clock-class.md). You specify the `Duration`. |
+| `gps_seconds` | A synonym for `using gps_seconds = gps_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`gps_clock`](tai-clock-class.md). |
+| `gps_time` | A synonym for `template <class Duration> using gps_time = time_point<gps_clock, Duration>`. Represents a `time_point` for a [`gps_clock`](gps-clock-class.md). You specify the `Duration`. |
+| `local_days` | A synonym for `using local_days = local_time<days>`. A count of days, represented by a [`time_point`](time-point-class.md) that isn't associated with any time zone. |
+| `local_seconds` | A synonym for `local_time<seconds>`. Defined in `std::chrono`. |
+| `local_time` | A synonym for `template <class Duration> using local_time = time_point<local_t, Duration>`. Represents a `time_point` for a local time. You specify the `Duration`. |
+| `sys_days` | A synonym for `using sys_days = sys_time<days>`. A count of days, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
+| `sys_seconds` | A synonym for `using sys_seconds = sys_time<seconds>`. A count of seconds, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
+| `sys_time` | A synonym for `template <class Duration> using sys_time = time_point<system_clock, Duration>`. Represents a `time_point` for a [`system_clock`](system-clock-structure.md). You specify the `Duration`. |
+| `tai_seconds` | A synonym for `using tai_seconds = tai_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md). |
+| `tai_time` | A synonym for `template <class Duration> using tai_time = time_point<tai_clock, Duration>`. Represents a `time_point` for a [`tai_clock`](tai-clock-class.md). You specify the `Duration`. |
+| `utc_seconds` | A synonym for `using utc_seconds = utc_time<seconds>;` |
+| `utc_time` | A synonym for `template<class Duration> using utc_time = time_point<utc_clock, Duration>`. Represents a `time_point`for a [`utc_clock`](utc-clock-class.md). You specify the `Duration`. |
 
 ## Type traits
 
-|Name|Description|
-|-|-|
-|[is_clock](is-clock-struct.md) | Check if a type is a clock. |
-|[treat_as_floating_point](treat-as-floating-point-structure.md) | Check if a `duration` can be converted to another `duration` that has a different tick period.|
+| Name | Description |
+|--|--|
+| [is_clock](is-clock-struct.md) | Check if a type is a clock. |
+| [treat_as_floating_point](treat-as-floating-point-structure.md) | Check if a `duration` can be converted to another `duration` that has a different tick period. |
 
 ## Literals
 
 **(C++11)** The `<chrono>` header defines the following [user-defined literals](../cpp/user-defined-literals-cpp.md) that you can use for greater convenience, type-safety, and maintainability of your code. These literals are defined in the `literals::chrono_literals` inline namespace and are in scope when `std::chrono` is in scope.
 
-|Declaration|Description|
-|-|-|
-|`hours operator "" h(unsigned long long Val)`|Specifies hours as an integral value.|
-|`duration<double, ratio<3600>> operator "" h(long double Val)`|Specifies hours as a floating-point value.|
-|`minutes (operator "" min)(unsigned long long Val)`|Specifies minutes as an integral value.|
-|`duration<double, ratio<60>> (operator "" min)( long double Val)`|Specifies minutes as a floating-point value.|
-|`seconds operator "" s(unsigned long long Val)`|Specifies minutes as an integral value.|
-|`duration<double> operator "" s(long double Val)`|Specifies seconds as a floating-point value.|
-|`milliseconds operator "" ms(unsigned long long Val)`|Specifies milliseconds as an integral value.|
-|`duration<double, milli> operator "" ms(long double Val)`|Specifies milliseconds as a floating-point value.|
-|`microseconds operator "" us(unsigned long long Val)`|Specifies microseconds as an integral value.|
-|`duration<double, micro> operator "" us(long double Val)`|Specifies microseconds as a floating-point value.|
-|`nanoseconds operator "" ns(unsigned long long Val)`|Specifies nanoseconds as an integral value.|
-|`duration<double, nano> operator "" ns(long double Val)`|Specifies nanoseconds as a floating-point value.|
+| Declaration | Description |
+|--|--|
+| `hours operator "" h(unsigned long long Val)` | Specifies hours as an integral value. |
+| `duration<double, ratio<3600>> operator "" h(long double Val)` | Specifies hours as a floating-point value. |
+| `minutes (operator "" min)(unsigned long long Val)` | Specifies minutes as an integral value. |
+| `duration<double, ratio<60>> (operator "" min)( long double Val)` | Specifies minutes as a floating-point value. |
+| `seconds operator "" s(unsigned long long Val)` | Specifies minutes as an integral value. |
+| `duration<double> operator "" s(long double Val)` | Specifies seconds as a floating-point value. |
+| `milliseconds operator "" ms(unsigned long long Val)` | Specifies milliseconds as an integral value. |
+| `duration<double, milli> operator "" ms(long double Val)` | Specifies milliseconds as a floating-point value. |
+| `microseconds operator "" us(unsigned long long Val)` | Specifies microseconds as an integral value. |
+| `duration<double, micro> operator "" us(long double Val)` | Specifies microseconds as a floating-point value. |
+| `nanoseconds operator "" ns(unsigned long long Val)` | Specifies nanoseconds as an integral value. |
+| `duration<double, nano> operator "" ns(long double Val)` | Specifies nanoseconds as a floating-point value. |
 
 The following examples show how to use `<chrono>` literals.
 

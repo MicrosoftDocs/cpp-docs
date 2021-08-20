@@ -45,7 +45,7 @@ The clock's epoch, or the date and time from which it starts measuring time, is 
 |----------|-----------------|
 |`tai_clock::duration`|In Microsoft's implementation, it's a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time measured in units of 100 nanoseconds.|
 |`tai_clock::period`| In Microsoft's implementation, it's a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
-|`tai_clock::rep`|A synonym for the type (`long long`)used to represent the integral units in this clock's `tai_clock::duration`. |
+|`tai_clock::rep`|A synonym for the type (`long long`) used to represent the integral units in this clock's `tai_clock::duration`. |
 |`tai_clock::time_point`|A synonym for `time_point<tai_clock>`. Used to represent a `time_point` for this clock.|
 
 **Related**
