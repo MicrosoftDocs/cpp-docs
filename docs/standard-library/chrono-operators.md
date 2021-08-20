@@ -804,7 +804,7 @@ true true false
 Output the following types to a stream:
 
 - [`day`](day-class.md)
-- [`file_time`](file-clock-class.md)
+- [`file_time`](chrono.md)
 - [`gps_time`](gps-clock-class.md)
 - [`hh_mm_ss`](hhmmss-class.md)
 - [`local_time`](local_t.md)

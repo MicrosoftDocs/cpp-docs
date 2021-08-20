@@ -352,13 +352,13 @@ The format string used to match the input. See [Parse format strings](#parse-for
 The `file_time` parsed from the stream.
 
 *`gt`*\
-The `gps_time` parsed from the stream.
+The [`gps_time`](chrono.md#typedefs)  parsed from the stream.
 
 *`is`*\
 The input stream to parse.
 
 *`lt`*\
-The `local_time` parsed from the stream.
+The [`local_time`](chrono.md#typedefs) parsed from the stream.
 
 *`m`*\
 The `month` parsed from the stream.
@@ -370,13 +370,13 @@ The `month_day` parsed from the stream.
 If *`offset`* isn't `nullptr`, and the format specifier `%z` or modified variant such as `%Ez` or `%0z` is specified, and the parse is successful, then *`offset`* points to the parsed value.
 
 *`st`*\
-The `system_time` parsed from the stream.
+The [`sys_time`](chrono.md#typedefs) parsed from the stream.
 
 *`tt`*\
-The `tai_time` parsed from the stream.
+The [`tai_time`](chrono.md#typedefs) parsed from the stream.
 
 *`ut`*\
-The `utc_time` parsed from the stream.
+The [`utc_time`](chrono.md#typedefs) parsed from the stream.
 
 *`wd`*\
 The `weekday` parsed from the stream.

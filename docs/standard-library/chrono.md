@@ -100,9 +100,11 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 |[`operator>`](chrono-operators.md#op_gt)|Determines whether various `<chrono>` objects are greater than another.|
 |[`operator>=`](chrono-operators.md#op_gt_eq)|Determines whether various `<chrono>` objects are greater than or equal to another.|
 
-## Typedefs (Predefined duration types)
+## Typedefs
 
 For more information about ratio types that are used in the following typedefs, see [`<ratio>`](ratio.md).
+
+**Convenience `duration`  types**
 
 |Name|Description|
 |-|-|
@@ -112,6 +114,15 @@ For more information about ratio types that are used in the following typedefs, 
 |`typedef duration<long long> seconds;`|Synonym for a `duration` type that has a tick period of 1 second.|
 |`typedef duration<int, ratio<60>> minutes;`|Synonym for a `duration` type that has a tick period of 1 minute.|
 |`typedef duration<int, ratio<3600>> hours;`|Synonym for a `duration` type that has a tick period of 1 hour.|
+
+**Convenience `time_point` types**
+
+|`template <class Duration> using file_time = time_point<file_clock, Duration>`|Useful for representing a [`time_point`](time-point-class.md) for a [`file_clock`](file-clock-class.md). You specify the `Duration`.|
+|`template <class Duration> using gps_time = time_point<gps_clock, Duration>`| Useful for representing a [`time_point`](time-point-class.md) for a [`gps_clock`](gps-clock-class.md). You specify the `Duration`.|
+|`local_time`|A synonym for `template <class Duration> using local_time = time_point<local_t, Duration>`. Useful for representing a `time_point` for this clock. You specify the `Duration`. Defined in `std::chrono`.|
+|`template <class Duration> using sys_time = time_point<system_clock, Duration>`| Useful for representing a [`time_point`](time-point-class.md) for a [`system_clock`](system-clock-structure.md). You specify the `Duration`.|
+|`template <class Duration> using tai_time = time_point<tai_clock, Duration>`| Useful for representing a [`time_point`](time-point-class.md) for a [`tai_clock`](tai-clock-class.md). You specify the `Duration`.|
+|`template<class Duration> using utc_time = std::chrono::time_point<std::chrono::utc_clock, Duration>`|Useful for representing a [`time_point`](time-point-class.md) for a [`utc_clock`](utc-clock-class.md). You specify the `Duration`.|
 
 ## Type traits
 
@@ -124,8 +135,11 @@ For more information about ratio types that are used in the following typedefs, 
 
 |Name|Description|
 |-|-|
-|`using local_days = local_time<days>;` | A count of days, represented by a [`time_point`](time-point-class.md) that is not associated with any time zone. |
-|`using sys_days = sys_time<days>;` | A count of days, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md), which has a 1/1/1970 epoch. |
+|`using gps_seconds = gps_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`gps_clock`](tai-clock-class.md).|
+|`using local_days = local_time<days>` | A count of days, represented by a [`time_point`](time-point-class.md) that is not associated with any time zone. |
+|`using sys_days = sys_time<days>` | A count of days, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
+|`using sys_seconds = sys_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
+|`using tai_seconds = tai_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md).|
 
 ## Literals
 

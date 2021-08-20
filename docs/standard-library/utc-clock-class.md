@@ -52,7 +52,11 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). 10 seco
 |`utc_clock::duration`|In Microsoft's implementation, it is a synonym for `duration<system_clock::rep, system_clock::period>`. It represents a duration of time measured in units of 100 nanoseconds.|
 |`utc_clock::period`|Microsoft's implementation defines this as a synonym for `system_clock::period`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
 |`utc_clock::rep`|A synonym for the type used to represent the integral units in this clock's `utc_clock::duration`. It is a `long long`.|
-|`utc_clock::time_point`|A synonym for `time_point<system_clock>`. Useful for representing a `time_point` for this clock.|
+|`utc_clock::time_point`|A synonym for `time_point<utc_clock>`. Useful for representing a [`time_point`](time-point-class.md) for this clock.|
+
+**Related**
+
+|`template<class Duration> using utc_time = time_point<utc_clock, Duration>;`| Useful for representing a [`time_point`](time-point-class.md) for a `utc_clock` and allows you to specify the duration. Defined in `std::chrono`|
 
 ## Public Constants
 

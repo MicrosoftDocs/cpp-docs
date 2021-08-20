@@ -33,7 +33,13 @@ A clock is *steady* if it is *monotonic* and if the time between clock ticks is 
 |`system_clock::duration`|In Microsoft's implementation, it's a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time measured in units of 100 nanoseconds.|
 |`system_clock::period`|In Microsoft's implementation, it's a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
 |`system_clock::rep`|A synonym for the type used to represent the integral units in this clock's `system_clock::duration`. It is a `long long`.|
-|`system_clock::time_point`|A synonym for `time_point<system_clock>`. Useful for representing a `time_point` for this clock.|
+|`system_clock::time_point`|A synonym for `time_point<system_clock>`. Useful for representing a [`time_point`](time-point-class.md) for this clock.|
+
+**Related**
+
+|`template <class Duration> using sys_time = time_point<system_clock, Duration>`| Useful for representing a [`time_point`](time-point-class.md) for a `system_clock` and allows you to specify the duration. Defined in `std::chrono`|
+|`using sys_days = sys_time<days>` | A count of days, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). Defined in `std::chrono`|
+|`using sys_seconds = sys_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md) Defined in `std::chrono`|
 
 ### Public methods
 

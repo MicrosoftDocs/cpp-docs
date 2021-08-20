@@ -16,6 +16,8 @@ ms.workload: ["cplusplus"]
 Represents a *high_resolution* clock with a nanosecond tick period.\
 Specifically, the period is `ratio<1, 1000000000>`  
 
+In Microsoft's implementation, `high_resolution_clock` is a synonym for [steady_clock](steady-clock-struct.md).
+
 ## Syntax
 
 ```cpp

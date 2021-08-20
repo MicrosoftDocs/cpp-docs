@@ -47,6 +47,11 @@ GPS time is behind TAI time by 19 seconds because 10 seconds were added to TAI t
 |`gps_clock::rep`|A synonym for the type used to represent the integral units in this clock's `gps_clock::duration`. It is a `long long`.|
 |`gps_clock::time_point`|A synonym for `time_point<gps_clock>`. Useful for representing a `time_point` for this clock.|
 
+**Related**
+
+|`template <class Duration> using gps_time = time_point<gps_clock, Duration>`| Useful for representing a [`time_point`](time-point-class.md) for a `gps_clock`. You specify the `Duration`. Defined in `std::chrono`|
+|`using gps_seconds = gps_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a `gps_clock`. Defined in `std::chrono`|
+
 ## Public Constants
 
 |Name|Description|
