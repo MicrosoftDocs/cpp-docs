@@ -56,6 +56,7 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). 10 seco
 
 |Name|Description|
 |----------|-----------------|
+|`utc_seconds`| A synonym for `using utc_seconds = utc_time<seconds>;`|
 |`utc_time`|A synonym for `template<class Duration> using utc_time = time_point<utc_clock, Duration>;`| Used to represent a [`time_point`](time-point-class.md) for a `utc_clock`. You specify the duration. Defined in `std::chrono`|
 
 ## Public Constants
