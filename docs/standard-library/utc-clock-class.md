@@ -23,9 +23,9 @@ The rate of UTC time is based on International Atomic Time (TAI) which uses atom
 
 There's a discrepancy between the time kept by atomic clocks, and the time kept by tracking the rotation of the earth. That's because the earth's rotation speed is irregular, and in general is slowing down over time by about one second every 1.5 years. A leap second adjustment keeps UTC tracking time within a second of the average length of a day.
 
-At the time of this writing, 27 leap seconds have been added since the practice of inserting leap seconds began in 1972. The International Earth Rotation and Reference Systems Service (IERS) determines when a leap second will be added. Adding a leap second is referred to as a "leap second insertion". When a leap second is inserted, the time, as it nears midnight, proceeds from 23 hours 59 minutes 59 seconds to 23 hours 59 minutes 60 seconds (the inserted leap second), and then to 0 hours 0 minutes 0 seconds (midnight). In the past, leap seconds have been added on June 30 or December 31.
+As of this writing, 27 leap seconds have been added since the practice of inserting leap seconds began in 1972. The International Earth Rotation and Reference Systems Service (IERS) determines when a leap second will be added. Adding a leap second is referred to as a "leap second insertion". When a leap second is inserted, the time, as it nears midnight, proceeds from 23 hours 59 minutes 59 seconds to 23 hours 59 minutes 60 seconds (the inserted leap second), and then to 0 hours 0 minutes 0 seconds (midnight). In the past, leap seconds have been added on June 30 or December 31.
 
-UTC time, by definition, starts out 10 seconds behind TAI (atomic time). 10 seconds were added in 1972 to TAI time to accommodate for the leap seconds that had accumulated by that point. Given the insertion of an another 27 leap seconds since then, UTC time is currently 37 seconds behind TAI (atomic clock) time.
+UTC time, by definition, starts out 10 seconds behind TAI (atomic time). 10 seconds were added in 1972 to TAI time to accommodate for the leap seconds that had accumulated by that point. Given the insertion of another 27 leap seconds since then, UTC time is currently 37 seconds behind TAI (atomic clock) time.
 
 `is_clock(utc_clock)` returns **true**.
 
@@ -49,9 +49,9 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). 10 seco
 
 |Name|Description|
 |----------|-----------------|
-|`utc_clock::duration`|In Microsoft's implementation, it is a synonym for `duration<system_clock::rep, system_clock::period>`. It represents a duration of time measured in units of 100 nanoseconds.|
+|`utc_clock::duration`|In Microsoft's implementation, it's a synonym for `duration<system_clock::rep, system_clock::period>`. It represents a duration of time measured in units of 100 nanoseconds.|
 |`utc_clock::period`|Microsoft's implementation defines this as a synonym for `system_clock::period`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
-|`utc_clock::rep`|A synonym for the type used to represent the integral units in this clock's `utc_clock::duration`. It is a `long long`.|
+|`utc_clock::rep`|A synonym for the type used to represent the integral units in this clock's `utc_clock::duration`. It's a `long long`.|
 |`utc_clock::time_point`|A synonym for `time_point<utc_clock>`. Useful for representing a [`time_point`](time-point-class.md) for this clock.|
 
 **Related**

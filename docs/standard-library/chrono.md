@@ -29,7 +29,7 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 | [`leap_second` class](leap-second-class.md) | A date and a value for an inserted leap second. |
 |[`leap_second_info` struct](leap-second-info-struct.md) | The data returned by [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info). |
 | [`month` class](month-class.md) | A month of a year. For example, July. |
-| [`month_day` class](month-day-class.md) | A specific day of a specific month. For example, July 30th. |
+| [`month_day` class](month-day-class.md) | A specific day of a specific month. For example, July 30. |
 | [`month_day_last` class](month-day-last-class.md) | The last day of a month. |
 | [`month_weekday` class](month-day-last-class.md) | The nth weekday of a specific month. |
 | [`month_weekday_last` class](month-weekday-last-class.md) | The nth weekday of a specific month. |
@@ -50,7 +50,7 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 | Name | Description |
 |--|--|
 |[`file_clock` class](file-clock-class.md)| A clock that is an alias for the clock used for  `std::filesystem::file_time_type` used to express file timestamps.|
-|[`gps_clock` class](gps-clock-class.md)| A clock that keeps GPS time. Measures time starting from the first Sunday of January, 1980 at 00:00:00 UTC.|
+|[`gps_clock` class](gps-clock-class.md)| A clock that keeps GPS time. Measures time starting from the first Sunday of January 1980 at 00:00:00 UTC.|
 |[`high_resolution_clock` struct](high-resolution-clock-struct.md)| A clock with a nanosecond tick period. |
 |[`local_t` struct](high-resolution-clock-struct.md)|  |
 |[`steady_clock` struct](steady-clock-struct.md)|A `steady` clock. Preferred for measuring time intervals. |
@@ -138,7 +138,7 @@ For more information about ratio types that are used in the following typedefs, 
 |Name|Description|
 |-|-|
 |`using gps_seconds = gps_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`gps_clock`](tai-clock-class.md).|
-|`using local_days = local_time<days>` | A count of days, represented by a [`time_point`](time-point-class.md) that is not associated with any time zone. |
+|`using local_days = local_time<days>` | A count of days, represented by a [`time_point`](time-point-class.md) that isn't associated with any time zone. |
 |`using sys_days = sys_time<days>` | A count of days, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
 |`using sys_seconds = sys_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
 |`using tai_seconds = tai_time<seconds>` | A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md).|

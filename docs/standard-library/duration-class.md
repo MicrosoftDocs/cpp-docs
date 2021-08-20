@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::chrono [C++], duration"]
 ---
 # duration Class
 
-Describes a type that holds a *time interval*, which is the number of ticks over a time unit. For example, 5 minutes is 5 ticks, with each tick a minute apart. 42 seconds is 42 ticks, with each tick a second apart.
+Describes a type that holds a *time interval*, which is the number of ticks over a time unit. For example, five minutes is five ticks, with each tick a minute apart. 42 seconds is 42 ticks, with each tick a second apart.
 
 ## Syntax
 
@@ -290,7 +290,7 @@ static constexpr duration zero();
 
 ## <a name="op_mod_eq"></a> `duration::operator mod=`
 
-Reduces the stored tick count modulo Div or Div.count().
+Reduces the stored tick count modulo `Div` or `Div.count()`.
 
 ```cpp
 duration& operator%=(const rep& Div);

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: steady_clock struct"
 title: "steady_clock struct"
-ms.date: 07/27/2021
+ms.date: 08/19/2021
 f1_keywords: ["chrono/std::chrono::steady_clock"]
 ---
 # steady_clock struct
@@ -28,8 +28,8 @@ The value that is returned by a first call to `now` is always less than or equal
 
 |Name|Description|
 |----------|-----------------|
-|`steady_clock::duration`|In Microsoft's implementation, it's a synonym for `nanoseconds` which is defined as `duration<long long, nano>`. It represents a duration of time measured as billionths of a second. |
-|`steady_clock::period`|In Microsoft's implementation, it is a synonym for `nano` which is defined as `std::ratio<1i64, 1000000000i64>` . It represents the time in seconds (one billionth of a second) between each tick in the duration.|
+|`steady_clock::duration`|In Microsoft's implementation, it's a synonym for `nanoseconds`, which is defined as `duration<long long, nano>`. It represents a duration of time measured in billionths of a second. |
+|`steady_clock::period`|In Microsoft's implementation, it's a synonym for `nano`, which is defined as `std::ratio<1i64, 1000000000i64>` . It represents the time in seconds (one billionth of a second) between each tick in the duration.|
 |`steady_clock::rep`|A synonym for **`long long`**, which is the type used in the Microsoft implementation to represent the number of clock ticks in a `steady_clock::duration`|
 |`steady_clock::time_point`|A synonym for `time_point<steady_clock>`. Useful for representing a `time_point` for this clock. |
 

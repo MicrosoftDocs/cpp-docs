@@ -131,7 +131,7 @@ constexpr year_month_weekday_last operator+(const years& dy, const year_month_we
 
 16\) Returns `(ymwdl.year() / ymwdl.month() + dm) / ymwdl.weekday_last()`. Note: The `/` used here is not a division operator but the date operator.
 
-17\) Returns Returns: `ymwdl + dy`
+17\) Returns: `ymwdl + dy`
 
 ### Example: `operator+`
 
@@ -1000,7 +1000,7 @@ The output stream you passed in, `os`
 
 1\) The `day` value is output as a decimal number, with a leading zero if the result would be a single digit. If `!d.ok()`, then " isn't a valid day" is appended to the output.
 
-2\) The `hh_mm_ss` value is output as hours:minutes:seconds:thousands of seconds. For example, `"00:00:05.721`"
+2\) The `hh_mm_ss` value is output as hours:minutes:seconds:thousandths of seconds. For example, `"00:00:05.721`"
 
 3\) The abbreviated month name, using the locale associated with `os`, is output. For example, `Jan`. If `!m.ok()`, then `" is not a valid month"` is appended to the output.
 

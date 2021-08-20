@@ -43,7 +43,7 @@ The ISO C++ Standard provides a choice between providing `to_sys()`and `from_sys
 |`file_clock::duration`|In Microsoft's implementation, it's a synonym for `duration<long long, ratio<1, 10'000'000>`. It represents a duration of time measured in units of 100 nanoseconds.|
 |`file_clock::time_point`| A synonym for `time_point<File_time_clock>`. Useful for representing a `time_point` for this clock.|
 |`file_clock::period`|In Microsoft's implementation, it's a synonym for `ratio<1, 10'000'000>`. It represents the time in seconds (100 nanoseconds) between each tick in the duration.|
-|`file_clock::rep`|A synonym for the type used to represent the integral units in this clock's `file_clock::duration`. It is a `long long`.|
+|`file_clock::rep`|A synonym for the type used to represent the integral units in this clock's `file_clock::duration`. It's a `long long`.|
 
 **Related**
 
@@ -80,9 +80,9 @@ The `utc_time` to convert.
 
 ### Return value
 
-A `file_time` that represents the equivalent `utc_time` as *`t`*. It's calculated as `utc_clock::to_sys(utc_time).time_since_epoch()` minus the number of leap seconds prior to Jan 1, 2017 (27). Windows 10, version 1809, and Windows Server 2019 introduced support for leap seconds. That support is enabled by default, though it can be disabled. When enabled, only leap seconds after July 2018 (not the ones between Jan 1, 2017 and July 2018) are included in the time.
+A `file_time` that represents the equivalent `utc_time` as *`t`*. It's calculated as `utc_clock::to_sys(utc_time).time_since_epoch()` minus the number of leap seconds before January 1, 2017 (27). Windows 10, version 1809, and Windows Server 2019 introduced support for leap seconds. That support is enabled by default, though it can be disabled. When enabled, only leap seconds after July 2018 (not the ones between January 1, 2017 and July 2018) are included in the time.
 
-We recommend you use `std::chrono::clock_cast`, to convert time points between clocks rather than call this function directly. This is particularly relevant for `file_clock` because the standard allows either `to_utc`/`from_utc` or `to_sys`/`from_sys` be defined. Since that may vary by vendor, you can use `clock_cast` instead which is provided by all library vendors.
+We recommend you use `std::chrono::clock_cast`, to convert time points between clocks rather than call this function directly. This is particularly relevant for `file_clock` because the standard allows either `to_utc`/`from_utc` or `to_sys`/`from_sys` be defined. Since that may vary by vendor, you can use `clock_cast` instead, which is provided by all library vendors.
 
 ### Example: `from_utc`
 

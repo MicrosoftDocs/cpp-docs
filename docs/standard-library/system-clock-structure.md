@@ -18,11 +18,11 @@ struct system_clock;
 
 This clock represents the system-wide wall clock.
 
-The `system_clock` is neither *monotonic* nor *steady*.
+The `system_clock` isn't *monotonic* or *steady*.
 
-A clock is *monotonic* if the value that is returned by a first call to `now()` is always less than or equal to the value that is returned by a subsequent call to `now()`. The `system_clock` is not monotonic because the system time may be adjusted without notice.
+A clock is *monotonic* if the value that is returned by a first call to `now()` is always less than or equal to the value that is returned by a later call to `now()`. The `system_clock` isn't monotonic because the system time may be adjusted without notice.
 
-A clock is *steady* if it is *monotonic* and if the time between clock ticks is constant. Because the `system_clock` is not monotonic, it isn't steady, though the time between clock ticks is constant. You can only use a steady clock to take the time before an event, the time after an event, and reliably subtract them to get the duration of the event because the clock won't be adjusted during that time.
+A clock is *steady* if it is *monotonic* and if the time between clock ticks is constant. Because the `system_clock` isn't monotonic, it isn't steady, though the time between clock ticks is constant. You can only use a steady clock to take the time before an event, the time after an event, and reliably subtract them to get the duration of the event because the clock won't be adjusted during that time.
 
 ## Members
 
@@ -91,7 +91,7 @@ In this implementation, `system_clock::is_steady` always returns **`false`**.
 
 ### Remarks
 
-A clock is *steady* if it is monotonic and if the time between clock ticks is constant. The `system_clock` is not  monotonic because the value that is returned by a first call to `now()` is not always less than or equal to the value that is returned by a subsequent call to `now()` because the system time can be adjusted without notice.
+A clock is *steady* if it is monotonic and if the time between clock ticks is constant. The `system_clock` isn't  monotonic because the value that is returned by a first call to `now()` isn't always less than or equal to the value that is returned by a later call to `now()` because the system time can be adjusted without notice.
 
 ## <a name="now"></a> now
 
