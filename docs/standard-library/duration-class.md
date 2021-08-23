@@ -3,12 +3,11 @@ description: "Learn more about: duration Class"
 title: "duration Class"
 ms.date: "03/27/2016"
 f1_keywords: ["chrono/std::chrono::duration", "chrono/std::chrono::duration::duration", "chrono/std::chrono::duration::count", "chrono/std::chrono::duration::max", "chrono/std::chrono::duration::min", "chrono/std::chrono::duration::zero"]
-ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
 helpviewer_keywords: ["std::chrono [C++], duration"]
 ---
 # duration Class
 
-Describes a type that holds a *time interval*, which is an elapsed time between two time points.
+Describes a type that holds a *time interval*, which is the number of ticks over a time unit. For example, five minutes is five ticks, with each tick a minute apart. 42 seconds is 42 ticks, with each tick a second apart.
 
 ## Syntax
 
@@ -291,7 +290,7 @@ static constexpr duration zero();
 
 ## <a name="op_mod_eq"></a> `duration::operator mod=`
 
-Reduces the stored tick count modulo Div or Div.count().
+Reduces the stored tick count modulo `Div` or `Div.count()`.
 
 ```cpp
 duration& operator%=(const rep& Div);

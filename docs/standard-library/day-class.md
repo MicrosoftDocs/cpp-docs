@@ -2,7 +2,7 @@
 description: "Learn more about: day Class"
 title: "day class"
 ms.date: "05/21/2021"
-f1_keywords: ["chrono/std::chrono::day", "chrono/std::chrono::day::from_stream", "chrono/std::chrono::day::ok", "chrono/std::chrono::day:operator++", "chrono/std::chrono::day::operator--", "chrono/std::chorono::day::operator unsigned"]
+f1_keywords: ["chrono/std::chrono::day", "chrono/std::chrono::day::ok", "chrono/std::chrono::day:operator++", "chrono/std::chrono::day::operator--", "chrono/std::chrono::day::operator unsigned"]
 helpviewer_keywords: ["std::chrono [C++], day"]
 ---
 # `day` class  
