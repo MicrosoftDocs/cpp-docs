@@ -41,7 +41,7 @@ class time_point;
 |----------|-----------------|
 |[max](#max)|Specifies the upper limit for `ref`.|
 |[min](#min)|Specifies the lower limit for `ref`.|
-|[time_since_epoch](#time_since_epoch)|Returns the stored `duration` value.|
+|[time_since_epoch](#time_since_epoch)|Returns the amount of time between this `time_point` and the clock's epoch (or time and date that the clock starts measuring time).|
 
 ### Public Operators
 
@@ -95,7 +95,7 @@ A `duration` object.
 
 ### Return Value
 
-The `time_point` object after the addition is performed.
+The `time_point` object after the addition is done.
 
 ## <a name="operator-_eq"></a> `operator-=`
 
@@ -112,7 +112,7 @@ A `duration` object.
 
 ### Return Value
 
-The `time_point` object after the subtraction is performed.
+The `time_point` object after the subtraction is done.
 
 ## <a name="time_point"></a> `time_point Constructor`
 
@@ -139,13 +139,13 @@ A `time_point` object.
 
 The first constructor constructs an object whose stored `duration` value is equal to [`duration::zero`](../standard-library/duration-class.md#zero).
 
-The second constructor constructs an object whose stored duration value is equal to *Dur*. Unless `is_convertible<Duration2, duration>` holds true, the second constructor does not participate in overload resolution. For more information, see [`<type_traits>`](../standard-library/type-traits.md).
+The second constructor constructs an object whose stored duration value is equal to *Dur*. Unless `is_convertible<Duration2, duration>` holds true, the second constructor doesn't participate in overload resolution. For more information, see [`<type_traits>`](../standard-library/type-traits.md).
 
 The third constructor initializes its `duration` value by using `Tp.time_since_epoch()`.
 
 ## <a name="time_since_epoch"></a> time_since_epoch
 
-Retrieves the stored [`duration`](../standard-library/duration-class.md) value.
+Returns the amount of time between this `time_point` and the clock's epoch. (A clock's epoch is the time from which the clock starts measuring time, such as midnight 1/1/1970). It's returned as a [`duration`](../standard-library/duration-class.md) value.
 
 ```cpp
 constexpr duration time_since_epoch() const;
