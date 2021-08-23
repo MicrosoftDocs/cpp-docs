@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: &lt;future&gt; functions"
 title: "&lt;future&gt; functions"
-ms.date: "11/04/2016"
+ms.date: "08/17/2021"
 f1_keywords: ["future/std::async", "future/std::future_category", "future/std::make_error_code", "future/std::make_error_condition", "future/std::swap"]
 ms.assetid: 1e3acc1e-736a-42dc-ade2-b2fe69aa96bc
 helpviewer_keywords: ["std::async [C++]", "std::future_category [C++]", "std::make_error_code [C++]", "std::make_error_condition [C++]", "std::swap [C++]"]
@@ -59,6 +59,10 @@ In all cases, the associated asynchronous state of the `future` object is not se
 > For a `future`—or the last [shared_future](../standard-library/shared-future-class.md)—that's attached to a task started with `std::async`, the destructor blocks if the task has not completed; that is, it blocks if this thread did not yet call `.get()` or `.wait()` and the task is still running. If a `future` obtained from `std::async` is moved outside the local scope, other code that uses it must be aware that its destructor may block for the shared state to become ready.
 
 The pseudo-function `INVOKE` is defined in [\<functional>](../standard-library/functional.md).
+
+### Microsoft Specific
+
+When the passed function is executed asynchronously, it is executed on Windows Thread Pool; see [Thread Pools](/windows/win32/procthread/thread-pools). The number of concurrent threads is limited to the thread pool default (currently 500). The number of threads concurrently executing on hardware is currently limited by the number of logical processor in the process's processor group, so it is effectively limited to 64; see [Processor Groups](/windows/win32/procthread/processor-groups).
 
 ## <a name="future_category"></a> future_category
 

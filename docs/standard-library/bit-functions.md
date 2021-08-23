@@ -61,14 +61,14 @@ int main()
     float f = std::numeric_limits<float>::infinity();
     int i = std::bit_cast<int>(f);
     std::cout << "float f = " << std::hex << f
-              << "\nstd::bit_cat<int>(f) = " << std::hex << i << '\n';
+              << "\nstd::bit_cast<int>(f) = " << std::hex << i << '\n';
     return 0;
 }
 ```
 
 ```Output
 float f = inf
-std::bit_cat<int>(f) = 7f800000
+std::bit_cast<int>(f) = 7f800000
 ```
 
 ### Remarks
