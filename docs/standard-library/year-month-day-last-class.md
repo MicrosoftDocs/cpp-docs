@@ -29,8 +29,8 @@ class year_month_day_last; // C++20
 | [`ok`](#ok) | Verify that the [`year`](year-class.md) and [`month`](month-class.md) values are in the valid range. |
 | [`operator+=`](#op_+=) | Add months or years to this `year_month_day_last`. |
 | [`operator-=`](#op_-=) | Subtract months or years from this `year_month_day_last`. |
-| [`operator local_days`](#local_days) | Get the count of days from the `sys_days` epoch to this `year_month_day_last` as [`local_days`](chrono.md#alias-declarations). |
-| [`operator sys_days`](#sys_days) | Get the count of days from the `sys_days` epoch to this `year_month_day_last` as [`sys_days`](chrono.md#alias-declarations). |
+| [`operator local_days`](#local_days) | Get the count of days from the `sys_days` epoch to this `year_month_day_last` as [`local_days`](chrono.md#typedefs). |
+| [`operator sys_days`](#sys_days) | Get the count of days from the `sys_days` epoch to this `year_month_day_last` as [`sys_days`](chrono.md#typedefs). |
 | [`year`](#year) | Get the year. |
 
 ## Non-members
