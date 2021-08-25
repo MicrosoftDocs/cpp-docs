@@ -27,7 +27,7 @@ int __cdecl _snscanf_l(
    const char * input,
    size_t length,
    const char * format,
-   locale_t locale,
+   _locale_t locale,
    ...
 );
 int __cdecl _snwscanf(
@@ -40,7 +40,7 @@ int __cdecl _snwscanf_l(
    const wchar_t * input,
    size_t length,
    const wchar_t * format,
-   locale_t locale,
+   _locale_t locale,
    ...
 );
 ```

@@ -29,7 +29,7 @@ errno_t _strset_s_l(
    char *str,
    size_t numberOfElements,
    int c,
-   locale_t locale
+   _locale_t locale
 );
 errno_t _wcsset_s(
    wchar_t *str,
@@ -40,7 +40,7 @@ errno_t *_wcsset_s_l(
    wchar_t *str,
    size_t numberOfElements,
    wchar_t c,
-   locale_t locale
+   _locale_t locale
 );
 errno_t _mbsset_s(
    unsigned char *str,

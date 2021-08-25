@@ -25,7 +25,7 @@ int _cprintf_s(
 );
 int _cprintf_s_l(
    const char * format,
-   locale_t locale [,
+   _locale_t locale [,
    argument] ...
 );
 int _cwprintf_s(
@@ -34,7 +34,7 @@ int _cwprintf_s(
 );
 int _cwprintf_s_l(
    const wchar * format,
-   locale_t locale [,
+   _locale_t locale [,
    argument] ...
 );
 ```

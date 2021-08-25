@@ -57,7 +57,7 @@ errno_t _mbsncpy_s_l(
    size_t numberOfElements,
    const unsigned char *strSource,
    size_t count,
-   locale_t locale
+   _locale_t locale
 );
 template <size_t size>
 errno_t strncpy_s(
@@ -96,7 +96,7 @@ errno_t _mbsncpy_s_l(
    unsigned char (&strDest)[size],
    const unsigned char *strSource,
    size_t count,
-   locale_t locale
+   _locale_t locale
 ); // C++ only
 ```
 

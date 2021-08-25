@@ -25,7 +25,7 @@ int sscanf(
 int _sscanf_l(
    const char *buffer,
    const char *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument ] ...
 );
 int swscanf(
@@ -36,7 +36,7 @@ int swscanf(
 int _swscanf_l(
    const wchar_t *buffer,
    const wchar_t *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument ] ...
 );
 ```

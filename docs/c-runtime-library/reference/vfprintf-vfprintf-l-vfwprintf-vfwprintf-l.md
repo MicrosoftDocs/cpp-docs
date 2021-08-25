@@ -24,7 +24,7 @@ int vfprintf(
 int _vfprintf_l(
    FILE *stream,
    const char *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 int vfwprintf(
@@ -35,7 +35,7 @@ int vfwprintf(
 int _vfwprintf_l(
    FILE *stream,
    const wchar_t *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 ```
