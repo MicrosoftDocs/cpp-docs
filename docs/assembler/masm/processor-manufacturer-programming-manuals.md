@@ -12,7 +12,7 @@ This article provides links to websites that may contain programming info about 
 
 - [AMD Developer Guides, Manuals & ISA Documents](https://developer.amd.com/resources/developer-guides-manuals/)
 
-- [ARM Architecture Reference Manual](https://developer.arm.com/docs/ddi0487/fb)
+- [ARM Architecture Reference Manual](https://developer.arm.com/documentation/ddi0487/latest/)
 
 - [Intel 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/articles/intel-sdm)
 
