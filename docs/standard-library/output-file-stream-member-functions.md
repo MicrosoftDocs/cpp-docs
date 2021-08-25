@@ -20,7 +20,7 @@ Three common output stream situations involve mode options:
 - Creating a file. If the file already exists, the old version is deleted.
 
    ```cpp
-   ostream ofile("FILENAME");
+   ofstream ofile("FILENAME");
    // Default is ios::out
 
    ofstream ofile("FILENAME", ios::out);
