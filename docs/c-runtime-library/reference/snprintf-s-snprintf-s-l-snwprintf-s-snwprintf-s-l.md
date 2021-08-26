@@ -84,7 +84,7 @@ The locale to use.
 
 ## Return Value
 
-**`_snprintf_s`** and **`_snwprintf_s`** return the number of characters written, not including the terminating null, or a negative value if truncation of the data occurs. If an encoding error occurs during formatting, the invalid parameter handler is invoked &mdash; as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to **`EINVAL`**.
+**`_snprintf_s`** and **`_snwprintf_s`** return the number of characters written, not including the terminating null, or a negative value if truncation of the data occurs (for **`_snwprintf_s`**, this is a count of wide characters). If an encoding error occurs during formatting, the invalid parameter handler is invoked &mdash; as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to **`EINVAL`**.
 
 * If *`count`* is less than *`sizeOfBuffer`* and the number of characters of data is less than or equal to *`count`*, or *`count`* is [`_TRUNCATE`](../../c-runtime-library/truncate.md) and the number of characters of data is less than *`sizeOfBuffer`*, then all of the data is written, a terminating null is appended and the number of characters is returned.
 
