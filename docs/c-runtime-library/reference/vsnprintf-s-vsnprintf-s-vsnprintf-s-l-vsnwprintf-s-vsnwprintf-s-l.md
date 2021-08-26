@@ -115,7 +115,7 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 |-----------------|------------|-------------|
 |*`buffer`* is **`NULL`** (and either *`sizeOfBuffer`* or *`count`* != 0)|-1|**`EINVAL`**|
 |*`format`* is **`NULL`**|-1|**`EINVAL`**|
-|*`buffer`* != **`NULL`** and *`count`* == 0|-1|**`EINVAL`**|
+|*`buffer`* != **`NULL`** and *`sizeOfBuffer`* == 0|-1|**`EINVAL`**|
 |*`sizeOfBuffer`* too small (and *`count`* != **`_TRUNCATE`**)|-1 (and *`buffer`* set to an empty string)|**`ERANGE`**|
 
 ## Remarks
