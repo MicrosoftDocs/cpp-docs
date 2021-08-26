@@ -84,13 +84,32 @@ The locale to use.
 
 ## Return Value
 
-**`_snprintf_s`** returns the number of characters stored in *`buffer`*, not counting the terminating null character. **`_snwprintf_s`** returns the number of wide characters stored in *`buffer`*, not counting the terminating null wide character.
+**`_snprintf_s`** and **`_snwprintf_s`** return the number of characters written, not including the terminating null, or a negative value if truncation of the data occurs. If an encoding error occurs during formatting, the invalid parameter handler is invoked &mdash; as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to **`EINVAL`**.
 
-If the storage required to store the data and a terminating null exceeds *`sizeOfBuffer`*, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *`buffer`* to an empty string, set **`errno`** to **`ERANGE`**, and return -1.
+* If *`count`* is less than *`sizeOfBuffer`* and the number of characters of data is less than or equal to *`count`*, or *`count`* is [`_TRUNCATE`](../../c-runtime-library/truncate.md) and the number of characters of data is less than *`sizeOfBuffer`*, then all of the data is written, a terminating null is appended and the number of characters is returned.
 
-If *`buffer`* or *`format`* is a **`NULL`** pointer, or if *`count`* is less than or equal to zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return -1.
+* If *`count`* is less than *`sizeOfBuffer`* but the data exceeds *`count`* characters, then the first *`count`* characters are written. Truncation of the remaining data occurs and -1 is returned without invoking the invalid parameter handler.
+
+* If *`count`* is [`_TRUNCATE`](../../c-runtime-library/truncate.md) and the number of characters of data equals or exceeds *`sizeOfBuffer`*, then as much of the string as will fit in *`buffer`* (with terminating null) is written. Truncation of the remaining data occurs and -1 is returned without invoking the invalid parameter handler.
+
+* If *`count`* is greater than or equal to *`sizeOfBuffer`* but the number of characters of data is less than *`sizeOfBuffer`*, then all of the data is written (with terminating null) and the number of characters is returned.
+
+* If *`count`* and the number of characters of data both equal or exceed *`sizeOfBuffer`* (and *`count`* is not [`_TRUNCATE`](../../c-runtime-library/truncate.md)), the invalid parameter handler is invoked &mdash; as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution continues after the invalid parameter handler, these functions set *buffer* to an empty string, set **`errno`** to **`ERANGE`**, and return -1.
+
+* If *`buffer`* is a **`NULL`** pointer and both *`sizeOfBuffer`* and *`count`* are equal to zero, these functions return 0.
+
+* If *`format`* is a **`NULL`** pointer, or *`buffer`* is a **`NULL`** pointer and either *`sizeOfBuffer`* or *`count`* are nonzero, or if *`buffer`* is not a **`NULL`** pointer and *`sizeOfBuffer`* is zero, the invalid parameter handler is invoked. If execution is allowed to continue, these functions set **`errno`** to **`EINVAL`** and return -1.
 
 For information about these and other error codes, see [`_doserrno`, `errno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+
+### Error Conditions
+
+|**Condition**|Return|**`errno`**|
+|-----------------|------------|-------------|
+|*`buffer`* is **`NULL`** (and either *`sizeOfBuffer`* or *`count`* != 0)|-1|**`EINVAL`**|
+|*`format`* is **`NULL`**|-1|**`EINVAL`**|
+|*`buffer`* != **`NULL`** and *`count`* == 0|-1|**`EINVAL`**|
+|*`sizeOfBuffer`* too small (and *`count`* != **`_TRUNCATE`**)|-1 (and *`buffer`* set to an empty string)|**`ERANGE`**|
 
 ## Remarks
 
