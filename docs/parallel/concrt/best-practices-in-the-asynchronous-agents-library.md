@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Best Practices in the Asynchronous Agents Library"
 title: "Best Practices in the Asynchronous Agents Library"
-ms.date: "11/04/2016"
+ms.date: 08/25/2021
 helpviewer_keywords: ["best practices, Asynchronous Agents Library", "Asynchronous Agents Library, best practices", "Asynchronous Agents Library, practices to avoid", "practices to avoid, Asynchronous Agents Library"]
 ms.assetid: 85f52354-41eb-4b0d-98c5-f7344ee8a8cf
 ---

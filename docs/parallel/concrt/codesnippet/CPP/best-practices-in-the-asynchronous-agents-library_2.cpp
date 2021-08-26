@@ -45,7 +45,7 @@ public:
          Context* waiting = NULL;
          while (!_waiting_contexts.try_pop(waiting))
          {
-            Context::Yield();
+            (Context::Yield)(); // <windows.h> defines Yield as a macro. The parenthesis around Yield prevent the macro expansion so that Context::Yield() is called.  
          }
 
          // Unblock the context.
