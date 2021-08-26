@@ -109,7 +109,7 @@ For all functions, if *`buffer`* is **`NULL`** and *`count`* is zero, **`len`** 
 
 For all functions, if **`len`** < *`count`*, **`len`** characters are stored in *`buffer`*, a null-terminator is appended, and **`len`** is returned.
 
-The **`snprintf`** function truncates the output when *`count`* is nonzero and **`len`** >= *`count`*, by placing a null-terminator at `buffer[count-1]` (when *`count`* is zero, no characters are stored in *`buffer`* &mdash; whether it is **`NULL`** or not). In all cases where **`len`** >= *`count`*, the value returned by the **`snprintf`** function is **`len`** (the number of characters that would have been output if *`count`* was large enough). The **`snprintf`** function returns a negative value if an encoding error occurs.
+The **`snprintf`** function truncates the output when *`count`* is nonzero and **`len`** >= *`count`*, by placing a null-terminator at `buffer[count-1]` (when *`count`* is zero, no characters are stored in *`buffer`* &mdash; whether it is **`NULL`** or not). In all cases where **`len`** >= *`count`*, the value returned by the **`snprintf`** function is **`len`** (the number of characters that would have been output if *`count`* was large enough).
 
 For all functions other than **`snprintf`**, if **`len`** = *`count`*, **`len`** characters are stored in *`buffer`*, no null-terminator is appended, and **`len`** is returned. If **`len`** > *`count`* and *`buffer`* is not **`NULL`**, *`count`* characters are stored in *`buffer`*, no null-terminator is appended, and a negative value is returned.
 
