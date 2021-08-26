@@ -22,7 +22,7 @@ int _scprintf(
 );
 int _scprintf_l(
    const char *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument] ...
 );
 int _scwprintf(
@@ -31,7 +31,7 @@ int _scwprintf(
 );
 int _scwprintf_l(
    const wchar_t *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument] ...
 );
 ```

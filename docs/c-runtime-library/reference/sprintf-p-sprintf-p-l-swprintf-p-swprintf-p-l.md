@@ -26,7 +26,7 @@ int _sprintf_p_l(
    char *buffer,
    size_t sizeOfBuffer,
    const char *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument_list]
 );
 int _swprintf_p(
@@ -39,7 +39,7 @@ int _swprintf_p_l(
    wchar_t *buffer,
    size_t sizeOfBuffer,
    const wchar_t *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument_list]
 );
 ```

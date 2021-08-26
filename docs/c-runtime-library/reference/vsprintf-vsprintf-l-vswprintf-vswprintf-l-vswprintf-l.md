@@ -24,7 +24,7 @@ int vsprintf(
 int _vsprintf_l(
    char *buffer,
    const char *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 int vswprintf(
@@ -37,13 +37,13 @@ int _vswprintf_l(
    wchar_t *buffer,
    size_t count,
    const wchar_t *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 int __vswprintf_l(
    wchar_t *buffer,
    const wchar_t *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 template <size_t size>
@@ -56,7 +56,7 @@ template <size_t size>
 int _vsprintf_l(
    char (&buffer)[size],
    const char *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 ); // C++ only
 template <size_t size>
@@ -69,7 +69,7 @@ template <size_t size>
 int _vswprintf_l(
    wchar_t (&buffer)[size],
    const wchar_t *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 ); // C++ only
 ```

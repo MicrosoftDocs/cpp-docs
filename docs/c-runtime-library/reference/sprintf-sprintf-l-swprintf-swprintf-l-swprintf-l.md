@@ -24,7 +24,7 @@ int sprintf(
 int _sprintf_l(
    char *buffer,
    const char *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument] ...
 );
 int swprintf(
@@ -37,13 +37,13 @@ int _swprintf_l(
    wchar_t *buffer,
    size_t count,
    const wchar_t *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument] ...
 );
 int __swprintf_l(
    wchar_t *buffer,
    const wchar_t *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument] ...
 );
 template <size_t size>
@@ -56,7 +56,7 @@ template <size_t size>
 int _sprintf_l(
    char (&buffer)[size],
    const char *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument] ...
 ); // C++ only
 ```

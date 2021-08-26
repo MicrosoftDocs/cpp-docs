@@ -22,7 +22,7 @@ int printf(
 );
 int _printf_l(
    const char *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument]...
 );
 int wprintf(
@@ -31,7 +31,7 @@ int wprintf(
 );
 int _wprintf_l(
    const wchar_t *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument]...
 );
 ```

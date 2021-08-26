@@ -27,7 +27,7 @@ char *_strset(
 char *_strset_l(
    char *str,
    int c,
-   locale_t locale
+   _locale_t locale
 );
 wchar_t *_wcsset(
    wchar_t *str,
@@ -36,7 +36,7 @@ wchar_t *_wcsset(
 wchar_t *_wcsset_l(
    wchar_t *str,
    wchar_t c,
-   locale_t locale
+   _locale_t locale
 );
 unsigned char *_mbsset(
    unsigned char *str,

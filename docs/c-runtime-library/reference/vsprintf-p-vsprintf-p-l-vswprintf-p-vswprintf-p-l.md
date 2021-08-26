@@ -26,7 +26,7 @@ int _vsprintf_p_l(
    char *buffer,
    size_t sizeInBytes,
    const char *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 int _vswprintf_p(
@@ -39,7 +39,7 @@ int _vswprintf_p_l(
    wchar_t *buffer,
    size_t count,
    const wchar_t *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 ```
