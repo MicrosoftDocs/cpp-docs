@@ -24,7 +24,7 @@ int fprintf_s(
 int _fprintf_s_l(
    FILE *stream,
    const char *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument_list ]
 );
 int fwprintf_s(
@@ -35,7 +35,7 @@ int fwprintf_s(
 int _fwprintf_s_l(
    FILE *stream,
    const wchar_t *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument_list ]
 );
 ```

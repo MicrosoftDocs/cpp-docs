@@ -26,7 +26,7 @@ int _cscanf_s(
 );
 int _cscanf_s_l(
    const char *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument] ...
 );
 int _cwscanf_s(
@@ -35,7 +35,7 @@ int _cwscanf_s(
 );
 int _cwscanf_s_l(
    const wchar_t *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument] ...
 );
 ```

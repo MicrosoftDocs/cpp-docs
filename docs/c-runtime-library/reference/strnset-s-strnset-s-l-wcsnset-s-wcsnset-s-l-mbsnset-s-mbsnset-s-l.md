@@ -31,7 +31,7 @@ errno_t _strnset_s_l(
    size_t numberOfElements,
    int c,
    size_t count,
-   locale_t locale
+   _locale_t locale
 );
 errno_t _wcsnset_s(
    wchar_t *str,

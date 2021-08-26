@@ -25,7 +25,7 @@ int fscanf_s(
 int _fscanf_s_l(
    FILE *stream,
    const char *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument ]...
 );
 int fwscanf_s(
@@ -36,7 +36,7 @@ int fwscanf_s(
 int _fwscanf_s_l(
    FILE *stream,
    const wchar_t *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument ]...
 );
 ```

@@ -24,14 +24,14 @@ int _cprintf(
 );
 int _cprintf_l(
    const char * format,
-   locale_t locale [, argument_list]
+   _locale_t locale [, argument_list]
 );
 int _cwprintf(
    const wchar * format [, argument_list]
 );
 int _cwprintf_l(
    const wchar * format,
-   locale_t locale [, argument_list]
+   _locale_t locale [, argument_list]
 );
 ```
 

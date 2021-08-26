@@ -29,7 +29,7 @@ char *_strncpy_l(
    char *strDest,
    const char *strSource,
    size_t count,
-   locale_t locale
+   _locale_t locale
 );
 wchar_t *wcsncpy(
    wchar_t *strDest,
@@ -40,7 +40,7 @@ wchar_t *_wcsncpy_l(
    wchar_t *strDest,
    const wchar_t *strSource,
    size_t count,
-   locale_t locale
+   _locale_t locale
 );
 unsigned char *_mbsncpy(
    unsigned char *strDest,
@@ -64,7 +64,7 @@ char *_strncpy_l(
    char (&strDest)[size],
    const char *strSource,
    size_t count,
-   locale_t locale
+   _locale_t locale
 ); // C++ only
 template <size_t size>
 wchar_t *wcsncpy(
@@ -77,7 +77,7 @@ wchar_t *_wcsncpy_l(
    wchar_t (&strDest)[size],
    const wchar_t *strSource,
    size_t count,
-   locale_t locale
+   _locale_t locale
 ); // C++ only
 template <size_t size>
 unsigned char *_mbsncpy(

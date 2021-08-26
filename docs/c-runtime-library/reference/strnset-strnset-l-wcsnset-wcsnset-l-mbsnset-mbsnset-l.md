@@ -29,7 +29,7 @@ char *_strnset_l(
    char *str,
    int c,
    size_t count,
-   locale_t locale
+   _locale_t locale
 );
 wchar_t *_wcsnset(
    wchar_t *str,
