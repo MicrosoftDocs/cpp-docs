@@ -26,7 +26,7 @@ int _sprintf_s_l(
    char *buffer,
    size_t sizeOfBuffer,
    const char *format,
-   locale_t locale,
+   _locale_t locale,
    ...
 );
 int swprintf_s(
@@ -39,7 +39,7 @@ int _swprintf_s_l(
    wchar_t *buffer,
    size_t sizeOfBuffer,
    const wchar_t *format,
-   locale_t locale,
+   _locale_t locale,
    ...
 );
 template <size_t size>

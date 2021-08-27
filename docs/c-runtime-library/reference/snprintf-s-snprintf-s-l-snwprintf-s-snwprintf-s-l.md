@@ -28,7 +28,7 @@ int _snprintf_s_l(
    size_t sizeOfBuffer,
    size_t count,
    const char *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument] ...
 );
 int _snwprintf_s(
@@ -43,7 +43,7 @@ int _snwprintf_s_l(
    size_t sizeOfBuffer,
    size_t count,
    const wchar_t *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument] ...
 );
 template <size_t size>
