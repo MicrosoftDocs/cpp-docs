@@ -27,7 +27,7 @@ int main() {
    Console::WriteLine(str2);
 
    // alternatively
-   String^ str3 = gcnew String(str.c_str());
+   String^ str3 = gcnew String(str.data());
    Console::WriteLine(str3);
 }
 ```
