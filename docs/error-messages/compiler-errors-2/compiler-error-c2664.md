@@ -46,7 +46,7 @@ struct B : public A {
 int main() {
    B b;
    int i = 1;
-   b.f(i);   // B::F hides A::f Uncomment the using declaration in B.
+   b.f(i);   // B::f hides A::f Uncomment the using declaration in B.
 }
 ```
 
