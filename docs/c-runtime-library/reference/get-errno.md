@@ -41,11 +41,12 @@ By default, this function's global state is scoped to the application. To change
 
 ```C
 // crt_get_errno.c
-#include <stdio.h>
-#include <fcntl.h>
-#include <sys/stat.h>
-#include <share.h>
 #include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <share.h>
+#include <stdio.h>
+#include <sys/stat.h>
 
 int main()
 {
