@@ -751,12 +751,11 @@ To associate your code with Git, you start by creating a new Git repository wher
 
 1. In the status bar at the bottom-right corner of Visual Studio, select **Add to Source Control**, and then select **Git**.
 
-
-    :::image type="content" source="/visualstudio/get-started/media/vs-2022/git-add-source-control.png" alt-text="Screenshot of the Git source control buttons below the Solution Explorer pane, with the Add to Source Control button highlighted.":::
+    :::image type="content" source="media/git-add-source-control.png" alt-text="Screenshot of the Git source control buttons below the Solution Explorer pane, with the Add to Source Control button highlighted.":::
 
 1. In the **Create a Git repository** dialog box, sign in to GitHub.
 
-    :::image type="content" source="../media/vs-2022/git-create-repo.png" alt-text="Screenshot of the Create a Git Repository dialog window where you can sign in to GitHub.":::
+    :::image type="content" source="media/git-create-repo-cpp.png" alt-text="Screenshot of the Create a Git Repository dialog window where you can sign in to GitHub.":::
 
     The repository name auto-populates based on your folder location. By default, your new repository is private, which means you're the only one who can access it.
 
@@ -767,7 +766,7 @@ To associate your code with Git, you start by creating a new Git repository wher
 
     After you create your repository, you see status details in the status bar.
 
-    :::image type="content" source="../media/vs-2022/git-new-private-repo-status-details.png" alt-text="Screenshot of the repo status bar that's below the Solution Explorer pane in Visual Studio.":::
+    :::image type="content" source="media/git-new-private-repo-status-details-cpp.png" alt-text="Screenshot of the repo status bar that's below the Solution Explorer pane in Visual Studio.":::
 
     The first icon with the arrows shows how many outgoing/incoming commits are in your current branch. You can use this icon to pull any incoming commits or push any outgoing commits. You can also choose to view these commits first. To do so, select the icon, and then select **View Outgoing/Incoming**.
 
@@ -777,7 +776,7 @@ To learn more about how to use Git with your app, see the [Visual Studio version
 
 ## The finished app
 
-Congratulations! You've completed the code for the calculator app, and built and debugged it in Visual Studio.
+Congratulations! You've completed the code for the calculator app, built and debugged it, and added it to a repo, all in Visual Studio.
 
 ## Next steps
 
