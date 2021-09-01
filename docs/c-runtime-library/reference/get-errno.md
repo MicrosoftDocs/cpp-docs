@@ -44,7 +44,6 @@ By default, this function's global state is scoped to the application. To change
 #include <errno.h>
 #include <fcntl.h>
 #include <io.h>
-#include <share.h>
 #include <stdio.h>
 #include <sys/stat.h>
 
@@ -52,10 +51,10 @@ int main()
 {
    errno_t err;
    int pfh;
-   _sopen_s( &pfh, "nonexistent.file", _O_WRONLY, _SH_DENYNO, _S_IWRITE );
-   _get_errno( &err );
-   printf( "errno = %d\n", err );
-   printf( "fyi, ENOENT = %d\n", ENOENT );
+   _sopen_s(&pfh, "nonexistent.file", _O_WRONLY, _SH_DENYNO, _S_IWRITE);
+   _get_errno(&err);
+   printf("errno = %d\n", err);
+   printf("fyi, ENOENT = %d\n", ENOENT);
 }
 ```
 
