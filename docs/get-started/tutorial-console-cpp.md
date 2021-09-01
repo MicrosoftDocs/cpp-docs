@@ -772,7 +772,7 @@ To associate your code with Git, you start by creating a new Git repository wher
 
     The second icon with the pencil shows the number of uncommitted changes to your code. You can select this icon to view those changes in the **Git Changes** window.
 
-To learn more about how to use Git with your app, see the [Visual Studio version control documentation](../../version-control/index.yml).
+To learn more about how to use Git with your app, see the [Visual Studio version control documentation](/visualstudio/version-control/index.yml).
 
 ## The finished app
 
