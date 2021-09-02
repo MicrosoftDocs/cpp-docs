@@ -5,21 +5,21 @@ f1_keywords: ["module_cpp", "import_cpp", "export_cpp"]
 helpviewer_keywords: ["modules [C++]", "modules [C++], import", "modules [C++], export"]
 description: Use import and export declarations to access and to publish types and functions defined in the specified module.
 ---
-# module, import, export
+# `module`, `import`, `export`
 
-The **module**, **import**, and **`export`** declarations are available in C++20 and require the [/experimental:module](../build/reference/experimental-module.md) compiler switch along with [/std:c++latest](../build/reference/std-specify-language-standard-version.md). For more information, see [Overview of modules in C++](modules-cpp.md).
+The **`module`**, **`import`**, and **`export`** declarations are available in C++20 and require the [/experimental:module](../build/reference/experimental-module.md) compiler switch along with [/std:c++20](../build/reference/std-specify-language-standard-version.md) or later (such as **`/std:c++latest`**). For more information, see [Overview of modules in C++](modules-cpp.md).
 
-## module
+## `module`
 
-Place a **module** declaration at the beginning of a module implementation file to specify that the file contents belong to the named module.
+Place a **`module`** declaration at the beginning of a module implementation file to specify that the file contents belong to the named module.
 
 ```cpp
 module ModuleA;
 ```
 
-## export
+## `export`
 
-Use an **export module** declaration for the module's primary interface file, which must have extension **.ixx**:
+Use an **`export module`** declaration for the module's primary interface file, which must have extension *`.ixx`*:
 
 ```cpp
 export module ModuleA;

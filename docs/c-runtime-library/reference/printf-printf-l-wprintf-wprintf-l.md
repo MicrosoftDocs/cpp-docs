@@ -22,7 +22,7 @@ int printf(
 );
 int _printf_l(
    const char *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument]...
 );
 int wprintf(
@@ -31,7 +31,7 @@ int wprintf(
 );
 int _wprintf_l(
    const wchar_t *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument]...
 );
 ```
@@ -60,12 +60,6 @@ The **`printf`** function formats and prints a series of characters and values t
 **`wprintf`** is a wide-character version of **`printf`**; *`format`* is a wide-character string. **`wprintf`** and **`printf`** behave identically if the stream is opened in ANSI mode. **`printf`** does not currently support output into a UNICODE stream.
 
 The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
-
-### Generic-Text Routine Mappings
-
-|`TCHAR.H` routine|`_UNICODE` & `_MBCS` not defined|`_MBCS` defined|`_UNICODE` defined|
-|---------------------|------------------------------------|--------------------|-----------------------|
-|**`_tprintf`**|**`printf`**|**`printf`**|**`wprintf`**|
 
 The *`format`* argument consists of ordinary characters, escape sequences, and (if arguments follow *`format`*) format specifications. The ordinary characters and escape sequences are copied to **`stdout`** in order of their appearance. For example, the line:
 

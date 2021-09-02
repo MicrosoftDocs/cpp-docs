@@ -79,7 +79,7 @@ int main() {
 
 In the above example, `uppercase_A` is incremented if `c` is an uppercase `'A'`. The **`break`** statement after `uppercase_A++` terminates execution of the **`switch`** statement body and control passes to the **`while`** loop. Without the **`break`** statement, execution would "fall through" to the next labeled statement, so that `lowercase_a` and `other` would also be incremented. A similar purpose is served by the **`break`** statement for `case 'a'`. If `c` is a lowercase `'a'`, `lowercase_a` is incremented and the **`break`** statement terminates the **`switch`** statement body. If `c` isn't an `'a'` or `'A'`, the **`default`** statement is executed.
 
-**Visual Studio 2017 and later:** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)) The `[[fallthrough]]` attribute is specified in the C++17 standard. You can use it in a **`switch`** statement. It's a hint to the compiler, or anyone who reads the code, that fall-through behavior is intentional. The Microsoft C++ compiler currently doesn't warn on fallthrough behavior, so this attribute has no effect on compiler behavior. In the example, the attribute gets applied to an empty statement within the unterminated labeled statement. In other words, the semicolon is necessary.
+**Visual Studio 2017 and later** (available in [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode and later): The `[[fallthrough]]` attribute is specified in the C++17 standard. You can use it in a **`switch`** statement. It's a hint to the compiler, or anyone who reads the code, that fall-through behavior is intentional. The Microsoft C++ compiler currently doesn't warn on fallthrough behavior, so this attribute has no effect on compiler behavior. In the example, the attribute gets applied to an empty statement within the unterminated labeled statement. In other words, the semicolon is necessary.
 
 ```cpp
 int main()
@@ -107,7 +107,7 @@ int main()
 }
 ```
 
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)). A **`switch`** statement may have an *`init-statement`* clause, which ends with a semicolon. It introduces and initializes a variable whose scope is limited to the block of the **`switch`** statement:
+**Visual Studio 2017 version 15.3 and later** (available in [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) mode and later): A **`switch`** statement may have an *`init-statement`* clause, which ends with a semicolon. It introduces and initializes a variable whose scope is limited to the block of the **`switch`** statement:
 
 ```cpp
     switch (Gadget gadget(args); auto s = gadget.get_status())

@@ -173,9 +173,10 @@ The function [`_configthreadlocale`](configthreadlocale.md) is used to control w
 Starting in Windows 10 build 17134 (April 2018 Update), the Universal C Runtime supports using a UTF-8 code page. This means that `char` strings passed to C runtime functions will expect strings in the UTF-8 encoding. To enable UTF-8 mode, use `".UTF8"` as the code page when using `setlocale`. For example, `setlocale(LC_ALL, ".UTF8")` will use the current default Windows ANSI code page (ACP) for the locale and UTF-8 for the code page.
 
 The string to specify UTF-8 mode is:
+
 - case-insensitive
-- the hyphen (-) is optional
-- It must be in the code page part of the locale name, so must have a leading period '.'  For example, `"en_US.UTF8"` or `".utf8"`
+- the hyphen (`-`) is optional
+- It must be in the code page part of the locale name, so must have a leading period (`.`) as in these examples: `"en_US.UTF8"` or `".utf8"`
 
 The following examples show how to specify the UTF-8 string:
 

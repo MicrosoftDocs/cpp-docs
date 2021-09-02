@@ -1106,7 +1106,7 @@ This method sends the [`LVM_GETGROUPINFOBYINDEX`](/windows/win32/controls/lvm-ge
 
 ### Example
 
-The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.
+The first code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.
 
 ```cpp
 public:
@@ -1114,9 +1114,7 @@ public:
     CListCtrl m_listCtrl;
 ```
 
-### Example
-
-The following code example demonstrates the `GetGroupInfoByIndex` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example retrieves information about the group whose index is 0, if such a group exists.
+The next code example demonstrates the `GetGroupInfoByIndex` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example retrieves information about the group whose index is 0, if such a group exists.
 
 ```cpp
     // GetGroupInfoByIndex
@@ -1202,7 +1200,7 @@ This method sends the [`LVM_GETGROUPRECT`](/windows/win32/Controls/lvm-getgroupr
 
 ### Example
 
-The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.
+The first code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.
 
 ```cpp
 public:
@@ -1210,9 +1208,7 @@ public:
     CListCtrl m_listCtrl;
 ```
 
-### Example
-
-The following code example demonstrates the `GetGroupRect` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the group whose index is 0, if such a group exists.
+The next code example demonstrates the `GetGroupRect` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the group whose index is 0, if such a group exists.
 
 ```cpp
     // GetGroupRect
@@ -1560,7 +1556,7 @@ This method sends the [`LVM_GETITEMINDEXRECT`](/windows/win32/Controls/lvm-getit
 
 ### Example
 
-The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.
+The first code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.
 
 ```cpp
 public:
@@ -1568,9 +1564,7 @@ public:
     CListCtrl m_listCtrl;
 ```
 
-### Example
-
-The following code example demonstrates the `GetGroupRect` method. Prior to entering this code example we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the second subitem in both columns.
+The next code example demonstrates the `GetGroupRect` method. Prior to entering this code example we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example draws a 3D rectangle around the second subitem in both columns.
 
 ```cpp
     // GetItemIndexRect
@@ -2698,7 +2692,7 @@ This method sends the [`LVM_MAPINDEXTOID`](/windows/win32/Controls/lvm-mapindext
 
 ### Example
 
-The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.
+The first code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.
 
 ```cpp
 public:
@@ -2706,9 +2700,7 @@ public:
     CListCtrl m_listCtrl;
 ```
 
-### Example
-
-The following code example demonstrates the `MapIndexToID` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following example maps the index of each list-view item to an identification number, and then retrieves the index for each identification number. Finally, the example reports whether the original indexes were retrieved.
+The next code example demonstrates the `MapIndexToID` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following example maps the index of each list-view item to an identification number, and then retrieves the index for each identification number. Finally, the example reports whether the original indexes were retrieved.
 
 ```cpp
     // MapIndexToID
@@ -3464,8 +3456,6 @@ Number of items that the control will ultimately contain.
 
 To set the item count for a virtual list view control, see [`CListCtrl::SetItemCountEx`](#setitemcountex).
 
-### Remarks
-
 This member function implements the behavior of the Win32 macro, [`ListView_SetItemCount`](/windows/win32/api/commctrl/nf-commctrl-listview_setitemcount), as described in the Windows SDK.
 
 ### Example
@@ -4077,7 +4067,7 @@ This method sends the [`LVM_SORTITEMSEX`](/windows/win32/Controls/lvm-sortitemse
 
 ### Example
 
-The following code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.
+The first code example defines a variable, `m_listCtrl`, that is used to access the current list-view control. This variable is used in the next example.
 
 ```cpp
 public:
@@ -4085,9 +4075,7 @@ public:
     CListCtrl m_listCtrl;
 ```
 
-### Example
-
-The following code example demonstrates the `SortItemEx` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example sorts the table by using the values in the "Grade" column.
+The next code example demonstrates the `SortItemEx` method. In an earlier section of this code example, we created a list-view control that displays two columns titled "ClientID" and "Grade" in a report view. The following code example sorts the table by using the values in the "Grade" column.
 
 ```cpp
 // The ListCompareFunc() method is a global function used by SortItemEx().

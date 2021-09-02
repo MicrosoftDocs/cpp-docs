@@ -11,7 +11,7 @@ MFC supports user-defined tools. A user-defined tool is a special command that e
 
 If you enabled user-defined tools support, the customization dialog box automatically includes the **Tools** tab. The following illustration shows the **Tools** page.
 
-![Tools tab in the Customize dialog box](../mfc/media/custdialogboxtoolstab.png "Tools tab in the Customize dialog box") <br/>
+![Tools tab in the Customize dialog box.](../mfc/media/custdialogboxtoolstab.png "Tools tab in the Customize dialog box") <br/>
 Customization dialog box Tools tab
 
 ## Enabling user-defined tools support

@@ -1575,7 +1575,7 @@ If you modify the contents of the string returned by the `const` overload of `da
 
 Before C++11, `data` didn't guarantee the returned string was null-terminated. Since C++11, `data` and `c_str` both return a null-terminated string, and are effectively the same.
 
-The non-`const` overload is new in C++17. To use it, specify the **`/std:c++17`** or **`/std:c++latest`** compiler option.
+The non-`const` overload is new in C++17. To use it, specify the **`/std:c++17`** or later compiler option.
 
 ### Example
 
@@ -1820,14 +1820,14 @@ Null-terminated character string containing the suffix to look for.
 
 ### Remarks
 
-`ends_with()` is new in C++20. To use it, specify the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
+`ends_with()` is new in C++20. To use it, specify the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
 See [`starts_with`](#starts_with) to check if a string starts with the specified prefix.
 
 ### Example
 
 ```cpp
-// Requires /std:c++latest
+// Requires /std:c++20 or /std:c++latest
 #include <string>
 #include <iostream>
 
@@ -4641,14 +4641,14 @@ Null-terminated character string containing the prefix to look for.
 
 ### Remarks
 
-`starts_with()` is new in C++20. To use it, specify the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
+`starts_with()` is new in C++20. To use it, specify the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
 See [`ends_with`](#ends_with) to see if a string ends with the specified suffix.
 
 ### Example
 
 ```cpp
-// Requires /std:c++latest
+// Requires /std:c++20 or /std:c++latest
 #include <string>
 #include <iostream>
 

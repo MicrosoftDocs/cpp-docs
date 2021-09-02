@@ -99,11 +99,11 @@ You've successfully set up ssh, created and deployed encryption keys, and tested
 
 1. In the Connection Manager dialog, choose the **Add** button to add a new connection.
 
-   ![Connection Manager](media/settings_connectionmanager.png)
+   ![Screenshot showing the Connection Manager dialog.](media/settings_connectionmanager.png)
 
    The **Connect to Remote System** window is displayed.
 
-   ![Connect to Remote System](media/connect.png)
+   ![Screenshot showing the Connect to Remote System window.](media/connect.png)
 
 1. In the **Connect to Remote System** dialog, enter the connection details of your remote machine.
 
@@ -124,7 +124,7 @@ You've successfully set up ssh, created and deployed encryption keys, and tested
 
    If the connection fails, the entry boxes that need to be changed are outlined in red.
 
-   ![Connection Manager Error](media/settings_connectionmanagererror.png)
+   ![Screenshot showing a Connection Manager Error.](media/settings_connectionmanagererror.png)
 
    For more information on troubleshooting your connection, see [Connect to your remote Linux computer](connect-to-your-remote-linux-computer.md).
 

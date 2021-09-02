@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Increment and Decrement Operator Overloading (C++)"
 title: "Increment and Decrement Operator Overloading (C++)"
-ms.date: "11/04/2016"
+ms.date: 08/09/2021
 helpviewer_keywords: ["increment operators [C++]", "increment operators [C++], types of", "decrement operators [C++]", "decrement operators [C++], types of"]
 ms.assetid: 5423c6ce-3999-4a77-92f6-ad540add1b1d
 ---
@@ -13,7 +13,7 @@ The increment and decrement operators fall into a special category because there
 
 - Predecrement and postdecrement
 
-When you write overloaded operator functions, it can be useful to implement separate versions for the prefix and postfix versions of these operators. To distinguish between the two, the following rule is observed: The prefix form of the operator is declared exactly the same way as any other unary operator; the postfix form accepts an additional argument of type **`int`**.
+When you write overloaded operator functions, it can be useful to implement separate versions for the prefix and postfix versions of these operators. To distinguish between the two, the following rule is observed: The prefix form of the operator is declared exactly the same way as any other unary operator; the postfix form accepts an extra argument of type **`int`**.
 
 > [!NOTE]
 > When specifying an overloaded operator for the postfix form of the increment or decrement operator, the additional argument must be of type **`int`**; specifying any other type generates an error.
@@ -74,40 +74,43 @@ Point Point::operator--(int)
    --*this;
    return temp;
 }
+
 int main()
 {
 }
 ```
 
-The same operators can be defined in file scope (globally) using the following function heads:
+The same operators can be defined in file scope (globally) using the following function prototypes:
 
 ```cpp
-friend Point& operator++( Point& )      // Prefix increment
-friend Point& operator++( Point&, int ) // Postfix increment
-friend Point& operator--( Point& )      // Prefix decrement
-friend Point& operator--( Point&, int ) // Postfix decrement
+friend Point& operator++( Point& );      // Prefix increment
+friend Point operator++( Point&, int );  // Postfix increment
+friend Point& operator--( Point& );      // Prefix decrement
+friend Point operator--( Point&, int );  // Postfix decrement
 ```
 
-The argument of type **`int`** that denotes the postfix form of the increment or decrement operator is not commonly used to pass arguments. It usually contains the value 0. However, it can be used as follows:
+The argument of type **`int`** that denotes the postfix form of the increment or decrement operator isn't commonly used to pass arguments. It usually contains the value 0. However, it can be used as follows:
 
 ```cpp
 // increment_and_decrement2.cpp
 class Int
 {
 public:
-    Int &operator++( int n );
+    Int operator++( int n ); // Postfix increment operator
 private:
     int _i;
 };
 
-Int& Int::operator++( int n )
+Int Int::operator++( int n )
 {
+    Int result = *this;
     if( n != 0 )    // Handle case where an argument is passed.
         _i += n;
     else
         _i++;       // Handle case where no argument is passed.
-    return *this;
+    return result;
 }
+
 int main()
 {
    Int i;
@@ -115,7 +118,7 @@ int main()
 }
 ```
 
-There is no syntax for using the increment or decrement operators to pass these values other than explicit invocation, as shown in the preceding code. A more straightforward way to implement this functionality is to overload the addition/assignment operator (**+=**).
+There's no syntax for using the increment or decrement operators to pass these values other than explicit invocation, as shown in the preceding code. A more straightforward way to implement this functionality is to overload the addition/assignment operator (**+=**).
 
 ## See also
 

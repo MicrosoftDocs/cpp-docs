@@ -27,7 +27,7 @@ A combination of zero or more of the following options:
 - **`-predefine`** *directive*\
    Specify a SETA, SETL, or SETS directive to predefine a symbol.\
    Example: `armasm.exe -predefine "COUNT SETA 150" source.asm`\
-   For more information, see the [ARM Compiler armasm Reference Guide](http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html).
+   For more information, see the [ARM Compiler armasm Reference Guide](https://developer.arm.com/documentation/dui0802/latest/).
 
 - **`-nowarn`**\
    Disable all warning messages.

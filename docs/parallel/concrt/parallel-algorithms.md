@@ -241,7 +241,7 @@ The following table summarizes the important properties of the three parallel so
 
 The following illustration  shows the important properties of the three parallel sorting algorithms more graphically.
 
-![Comparison of the sorting algorithms](../../parallel/concrt/media/concrt_parallel_sorting.png "Comparison of the sorting algorithms")
+![Comparison of the sorting algorithms.](../../parallel/concrt/media/concrt_parallel_sorting.png "Comparison of the sorting algorithms")
 
 These parallel sorting algorithms follow the rules of cancellation and exception handling. For more information about cancellation and exception handling in the Concurrency Runtime, see [Canceling Parallel Algorithms](../../parallel/concrt/cancellation-in-the-ppl.md#algorithms) and [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
 

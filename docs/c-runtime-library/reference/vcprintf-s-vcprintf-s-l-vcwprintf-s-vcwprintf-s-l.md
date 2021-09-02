@@ -25,7 +25,7 @@ int _vcprintf(
 );
 int _vcprintf(
    const char* format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 int _vcwprintf_s(
@@ -34,7 +34,7 @@ int _vcwprintf_s(
 );
 int _vcwprintf_s_l(
    const wchar_t* format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 ```

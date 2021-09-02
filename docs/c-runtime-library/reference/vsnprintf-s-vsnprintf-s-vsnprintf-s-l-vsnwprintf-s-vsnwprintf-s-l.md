@@ -35,7 +35,7 @@ int _vsnprintf_s_l(
    size_t sizeOfBuffer,
    size_t count,
    const char *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 int _vsnwprintf_s(
@@ -50,7 +50,7 @@ int _vsnwprintf_s_l(
    size_t sizeOfBuffer,
    size_t count,
    const wchar_t *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 template <size_t size>

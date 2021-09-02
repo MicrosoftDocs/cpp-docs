@@ -24,7 +24,7 @@ int _fprintf_p(
 int _fprintf_p_l(
    FILE *stream,
    const char *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument ]...
 );
 int _fwprintf_p(
@@ -35,7 +35,7 @@ int _fwprintf_p(
 int _fwprintf_p_l(
    FILE *stream,
    const wchar_t *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument ]...
 );
 ```

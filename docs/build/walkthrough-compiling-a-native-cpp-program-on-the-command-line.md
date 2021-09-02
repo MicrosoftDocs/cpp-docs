@@ -98,7 +98,7 @@ Before you can build a C or C++ program on the command line, verify that the too
    ```
 
    The dates and other details will differ on your computer.
-   
+
    > [!NOTE]
    > If you don't see your source code file, *`hello.cpp`*, make sure the current working directory in your command prompt is the *`C:\hello`* directory you created. Also make sure that this is the directory where you saved your source file. And make sure that you saved the source code with a *`.cpp`* file name extension, not a *`.txt`* extension. Your source file gets saved in the current directory as a *`.cpp`* file automatically if you open Notepad at the command prompt by using the **`notepad hello.cpp`** command. Notepad's behavior is different if you open it another way: By default, Notepad appends a *`.txt`* extension to new files when you save them. It also defaults to saving files in your *Documents* directory. To save your file with a *`.cpp`* extension in Notepad, choose **File** > **Save As**. In the **Save As** dialog, navigate to your *`C:\hello`* folder in the directory tree view control. Then use the **Save as type** dropdown control to select **All Files (\*.\*)**. Enter *`hello.cpp`* in the **File name** edit control, and then choose **Save** to save the file.
 

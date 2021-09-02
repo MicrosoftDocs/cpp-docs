@@ -17,7 +17,7 @@ Instructs the compiler to treat `#include` as `import` for those headers that ha
 
 ## Remarks
 
-The **`/translateInclude`** compiler option requires you enable the [/std:c++latest](std-specify-language-standard-version.md) option. `/translateInclude` is available starting in Visual Studio 2019 version 16.10 Preview 2.
+The **`/translateInclude`** compiler option requires you enable the [/std:c++20](std-specify-language-standard-version.md) or later option (such as **`/std:c++latest`**). `/translateInclude` is available starting in Visual Studio 2019 version 16.10.
 
 The **`/translateInclude`** option effectively makes the following transformation, where the example `<vector>` has been prebuilt into an importable header unit:
 
@@ -67,8 +67,7 @@ To enable `/translateInclude`, set the **Translate Includes to Imports** option 
 
 1. In the left-hand pane of the project property pages, select **Configuration Properties** > **C/C++** > **General**
 1. Change the **Translate Includes to Imports** dropdown to **Yes**
-![Project properties dialog set Translate Includes to Imports](../media/vs2019-translate-includes-option.png)
-
+![Screenshot of the Property Pages dialog with the Translate Includes to Imports property highlighted.](../media/vs2019-translate-includes-option.png)
 
 ## See also
 

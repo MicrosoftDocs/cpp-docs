@@ -24,7 +24,7 @@ The **Colors** window has two parts:
 
 - The **Color Indicator**, which shows the foreground and background colors and selectors for screen and inverse color.
 
-   ![Colors window](../windows/media/vccolorswindow.gif "vcColorsWindow")<br/>
+   ![Colors window.](../windows/media/vccolorswindow.gif "vcColorsWindow")<br/>
    **Colors** window
 
 > [!NOTE]
@@ -108,7 +108,7 @@ When you move or copy a selection from an image, any pixels in the selection tha
 
 You can switch from a transparent background (the default) to an opaque background, and back again. When you use a selection tool, the **Transparent Background** and **Opaque Background** options appear in the **Option** selector on the **Image Editor** toolbar.
 
-![Background options &#45; opaque or transparent](../windows/media/vcimageeditoropaqtranspback.gif "Background options &#45; opaque or transparent")<br/>
+![Background options &#45; opaque or transparent.](../windows/media/vcimageeditoropaqtranspback.gif "Background options &#45; opaque or transparent")<br/>
 **Transparent and Opaque Options** on the **Image Editor Toolbar**
 
 #### To switch between a transparent and opaque background

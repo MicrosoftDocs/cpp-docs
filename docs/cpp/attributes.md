@@ -9,7 +9,7 @@ The C++ Standard defines a common set of attributes. It also allows compiler ven
 
 In some cases, standard attributes overlap with compiler-specific `__declspec` parameters. In Microsoft C++, you can use the `[[deprecated]]` attribute instead of using `__declspec(deprecated)`. The `[[deprecated]]` attribute is recognized by any conforming compiler. For all other `__declspec` parameters such as `dllimport` and `dllexport`, so far there's no attribute equivalent, so you must continue to use `__declspec` syntax. Attributes don't affect the type system, and they don’t change the meaning of a program. Compilers ignore attribute values they don't recognize.
 
-**Visual Studio 2017 version 15.3 and later** (available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)): In the scope of an attribute list, you can specify the namespace for all names with a single **`using`** introducer:
+**Visual Studio 2017 version 15.3 and later** (Available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and later): In the scope of an attribute list, you can specify the namespace for all names with a single **`using`** introducer:
 
 ```cpp
 void g() {
@@ -35,9 +35,9 @@ Attributes represent a standardized alternative to vendor-specific extensions su
 
 - `[[deprecated]]` **Visual Studio 2015 and later:** Specifies that a function isn't intended for use. Or, that it might not exist in future versions of a library interface. The compiler can use this attribute to generate an informational message when client code attempts to call the function. `[[deprecated]]` can be applied to declaration of a class, a typedef-name, a variable, a non-static data member, a function, a namespace, an enumeration, an enumerator, or a template specialization.
 
-- `[[fallthrough]]` **Visual Studio 2017 and later:** (available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)) The `[[fallthrough]]` attribute can be used in the context of [`switch`](switch-statement-cpp.md) statements as a hint to the compiler (or anyone reading the code) that the fallthrough behavior is intended. The Microsoft C++ compiler currently doesn't warn on fallthrough behavior, so this attribute has no effect compiler behavior.
+- `[[fallthrough]]` **Visual Studio 2017 and later:** (Available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and later.) The `[[fallthrough]]` attribute can be used in the context of [`switch`](switch-statement-cpp.md) statements as a hint to the compiler (or anyone reading the code) that the fallthrough behavior is intended. The Microsoft C++ compiler currently doesn't warn on fallthrough behavior, so this attribute has no effect compiler behavior.
 
-- `[[nodiscard]]` **Visual Studio 2017 version 15.3 and later:** (available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)) Specifies that a function's return value isn't intended to be discarded. Raises warning [C4834](../error-messages/compiler-warnings/c4834.md), as shown in this example:
+- `[[nodiscard]]` **Visual Studio 2017 version 15.3 and later:** (Available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and later.) Specifies that a function's return value isn't intended to be discarded. Raises warning [C4834](../error-messages/compiler-warnings/c4834.md), as shown in this example:
 
     ```cpp
     [[nodiscard]]
@@ -50,7 +50,7 @@ Attributes represent a standardized alternative to vendor-specific extensions su
     }
     ```
 
-- `[[maybe_unused]]` **Visual Studio 2017 version 15.3 and later:** (available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)) Specifies that a variable, function, class, typedef, non-static data member, enum, or template specialization may intentionally not be used. The compiler doesn't warn when an entity marked `[[maybe_unused]]` isn't used. An entity that's declared without the attribute can later be redeclared with the attribute and vice-versa. An entity is considered *marked* after its first declaration that's marked `[[maybe_unused]]` gets analyzed, and for the rest of the current translation unit.
+- `[[maybe_unused]]` **Visual Studio 2017 version 15.3 and later:** (Available with [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) and later.) Specifies that a variable, function, class, typedef, non-static data member, enum, or template specialization may intentionally not be used. The compiler doesn't warn when an entity marked `[[maybe_unused]]` isn't used. An entity that's declared without the attribute can later be redeclared with the attribute and vice-versa. An entity is considered *marked* after its first declaration that's marked `[[maybe_unused]]` gets analyzed, and for the rest of the current translation unit.
 
 ## Microsoft-specific attributes
 

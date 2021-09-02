@@ -275,7 +275,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>` cend`
+## <a name="cend"></a> `cend`
 
 Returns a **`const`** iterator that addresses the location just beyond the last element in a range.
 
@@ -550,14 +550,14 @@ The element's key value to look for.
 
 ### Remarks
 
-`contains()` is new in C++20. To use it, specify the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
+`contains()` is new in C++20. To use it, specify the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
 `template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent. See [Heterogeneous lookup in associative containers](./stl-containers.md#heterogeneous-lookup-in-associative-containers-c14) for more information.
 
 ### Example
 
 ```cpp
-// Requires /std:c++latest
+// Requires /std:c++20 or /std:c++latest
 #include <map>
 #include <string>
 #include <iostream>

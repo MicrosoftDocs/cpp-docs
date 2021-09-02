@@ -12,7 +12,7 @@ Microsoft provides many APIs for programming both client and server applications
 >[!IMPORTANT]
 > ActiveX is a legacy technology that should not be used for new development. For more information, see [ActiveX Controls](activex-controls.md).
 
-![Client and server applications](../mfc/media/vc38bq1.gif "Client and server applications")
+![Client and server applications.](../mfc/media/vc38bq1.gif "Client and server applications")
 
 MFC provides classes that support Internet programming. You can use [COleControl](reference/colecontrol-class.md) and [CDocObjectServer](reference/cdocobjectserver-class.md) and related MFC classes to write ActiveX controls and Active documents. You can use MFC classes such as [CInternetSession](reference/cinternetsession-class.md), [CFtpConnection](reference/cftpconnection-class.md), and [CAsyncMonikerFile](reference/casyncmonikerfile-class.md) to retrieve files and information using Internet protocols such as FTP, HTTP, and gopher.
 

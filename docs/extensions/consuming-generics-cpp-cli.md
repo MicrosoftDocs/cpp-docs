@@ -10,13 +10,9 @@ ms.assetid: e6330ef5-e907-432e-b527-7a22f5899639
 
 Generics authored in one .NET (or UWP) language may be used in other languages. Unlike templates, a generic in a compiled assembly still remains generic. Thus, one may instantiate the generic type in a different assembly and even in a different language than the assembly in which the generic type was defined.
 
-## Example: Generic class defined in C #
-
-### Description
+## Example: Generic class defined in C&#35;
 
 This example shows a generic class defined in C#.
-
-### Code
 
 ```csharp
 // consuming_generics_from_other_NET_languages.cs
@@ -74,13 +70,9 @@ public class CircularList<ItemType> {
 }
 ```
 
-## Example: Consume assembly authored in C #
-
-### Description
+## Example: Consume assembly authored in C&#35;
 
 This example consumes the assembly authored in C#.
-
-### Code
 
 ```cpp
 // consuming_generics_from_other_NET_languages_2.cpp
@@ -100,6 +92,8 @@ int main() {
    circ1->PrintAll();
 }
 ```
+
+The example produces this output:
 
 ```Output
 90

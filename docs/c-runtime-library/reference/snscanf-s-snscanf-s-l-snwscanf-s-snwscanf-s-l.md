@@ -26,7 +26,7 @@ int __cdecl _snscanf_s_l(
    const char * input,
    size_t length,
    const char * format,
-   locale_t locale [, argument_list]
+   _locale_t locale [, argument_list]
 );
 int __cdecl _snwscanf_s(
    const wchar_t * input,
@@ -37,7 +37,7 @@ int __cdecl _snwscanf_s_l(
    const wchar_t * input,
    size_t length,
    const wchar_t * format,
-   locale_t locale [, argument_list]
+   _locale_t locale [, argument_list]
 );
 ```
 

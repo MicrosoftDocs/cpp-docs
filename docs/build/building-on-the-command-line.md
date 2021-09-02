@@ -2,7 +2,7 @@
 title: "Use the Microsoft C++ toolset from the command line"
 description: "Use the Microsoft C++ (MSVC) compiler toolset from the command line outside of the Visual Studio IDE."
 ms.custom: "conceptual"
-ms.date: "04/21/2020"
+ms.date: 08/02/2021
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ---
@@ -15,7 +15,16 @@ You can build C and C++ applications on the command line by using tools that are
 
 ## Download and install the tools
 
-If you've installed Visual Studio and a C++ workload, you have all the command-line tools. For information on how to install C++ and Visual Studio, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md). If you only want the command-line toolset, download the [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019). When you run the downloaded executable, it updates and runs the Visual Studio Installer. To install only the tools you need for C++ development, select the **C++ build tools** workload. You can select optional libraries and toolsets to include under **Installation details**. To build code by using the Visual Studio 2015 or 2017 toolsets, select the optional MSVC v140 or MSVC v141 build tools. When you're satisfied with your selections, choose **Install**.
+::: moniker range=">=msvc-160"
+
+If you've installed Visual Studio and a C++ workload, you have all the command-line tools. For information on how to install C++ and Visual Studio, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md). If you only want the command-line toolset, download the [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019). When you run the downloaded executable, it updates and runs the Visual Studio Installer. To install only the tools you need for C++ development, select the **Desktop development with C++** workload. You can select optional libraries and toolsets to include under **Installation details**. To build code by using the Visual Studio 2015 or 2017 toolsets, select the optional MSVC v140 or MSVC v141 build tools. When you're satisfied with your selections, choose **Install**.
+
+::: moniker-end
+::: moniker range="<=msvc-150"
+
+If you've installed Visual Studio and a C++ workload, you have all the command-line tools. For information on how to install C++ and Visual Studio, see [Install C++ support in Visual Studio](vscpp-step-0-installation.md). If you only want the command-line toolset, download the [Build Tools for Visual Studio 2017](https://my.visualstudio.com/Downloads?q=2017). When you run the downloaded executable, it updates and runs the Visual Studio Installer. To install only the tools you need for C++ development, select the **Visual C++ build tools** workload. You can select optional libraries and toolsets to include under **Installation details**. To build code by using the Visual Studio 2015 toolset, select the optional MSVC v140 build tools. When you're satisfied with your selections, choose **Install**.
+
+::: moniker-end
 
 ## How to use the command-line tools
 

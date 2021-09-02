@@ -26,7 +26,7 @@ int _vsprintf_s_l(
    char *buffer,
    size_t numberOfElements,
    const char *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 int vswprintf_s(
@@ -39,7 +39,7 @@ int _vswprintf_s_l(
    wchar_t *buffer,
    size_t numberOfElements,
    const wchar_t *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 template <size_t size>

@@ -5,25 +5,25 @@ ms.date: "05/18/2019"
 f1_keywords: ["/Zc:alignedNew"]
 helpviewer_keywords: ["/Zc:alignedNew", "Zc:alignedNew", "-Zc:alignedNew"]
 ---
-# /Zc:alignedNew (C++17 over-aligned allocation)
+# `/Zc:alignedNew` (C++17 over-aligned allocation)
 
-Enable support for C++17 over-aligned **`new`**, dynamic memory allocation aligned on boundaries greater than the default for the maximum-sized standard aligned type, **max\_align\_t**.
+Enable support for C++17 over-aligned **`new`**, dynamic memory allocation aligned on boundaries greater than the default for the maximum-sized standard aligned type, `max_align_t`.
 
 ## Syntax
 
-> **/Zc:alignedNew**\[-]
+> **`/Zc:alignedNew`**\[**`-`**]
 
 ## Remarks
 
-The MSVC compiler and library support C++17 standard over-aligned dynamic memory allocation. When the **/Zc:alignedNew** option is specified, a dynamic allocation such as `new Example;` respects the alignment of *Example* even when it's greater than `max_align_t`, the largest alignment required for any fundamental type. When the alignment of the allocated type is no more than the alignment guaranteed by the original operator **`new`**, available as the value of the predefined macro **\_\_STDCPP\_DEFAULT\_NEW\_ALIGNMENT\_\_**, the statement `new Example;` results in a call to `::operator new(size_t)` as it did in C++14. When the alignment is greater than **\_\_STDCPP\_DEFAULT\_NEW\_ALIGNMENT\_\_**, the implementation instead obtains the memory by using `::operator new(size_t, align_val_t)`. Similarly, deletion of over-aligned types invokes `::operator delete(void*, align_val_t)` or the sized delete signature `::operator delete(void*, size_t, align_val_t)`.
+The MSVC compiler and library support C++17 standard over-aligned dynamic memory allocation. When the **`/Zc:alignedNew`** option is specified, a dynamic allocation such as `new Example;` respects the alignment of `Example` even when it's greater than `max_align_t`, the largest alignment required for any fundamental type. When the alignment of the allocated type is no more than the alignment guaranteed by the original operator **`new`**, available as the value of the predefined macro `__STDCPP_DEFAULT_NEW_ALIGNMENT__`, the statement `new Example;` results in a call to `::operator new(size_t)` as it did in C++14. When the alignment is greater than `__STDCPP_DEFAULT_NEW_ALIGNMENT__`, the implementation instead obtains the memory by using `::operator new(size_t, align_val_t)`. Similarly, deletion of over-aligned types invokes `::operator delete(void*, align_val_t)` or the sized delete signature `::operator delete(void*, size_t, align_val_t)`.
 
-The **/Zc:alignedNew** option is only available when [/std:c++17](std-specify-language-standard-version.md) or [/std:c++latest](std-specify-language-standard-version.md) is enabled. Under **/std:c++17** or **/std:c++latest**, **/Zc:alignedNew** is enabled by default to conform to the ISO C++17 standard. If the only reason you implement operator **`new`** and **`delete`** is to support over-aligned allocations, you may no longer need this code in C++17 mode. To turn off this option and revert to the C++14 behavior of **`new`** and **`delete`** when you use **/std::c++17** or **/std:c++latest**, specify **/Zc:alignedNew-**. If you implement operator **`new`** and **`delete`** but you're not ready to implement the over-aligned operator **`new`** and **`delete`** overloads that have the `align_val_t` parameter, use the **/Zc:alignedNew-** option to prevent the compiler and Standard Library from generating calls to the over-aligned overloads. The [/permissive-](permissive-standards-conformance.md) option doesn't change the default setting of **/Zc:alignedNew**.
+The **`/Zc:alignedNew`** option is only available when [`/std:c++17`](std-specify-language-standard-version.md) or later is enabled. Under **`/std:c++17`** or later, **`/Zc:alignedNew`** is enabled by default to conform to the C++ standard. If the only reason you implement operator **`new`** and **`delete`** is to support over-aligned allocations, you may no longer need this code in C++17 or later modes. To turn off this option and revert to the C++14 behavior of **`new`** and **`delete`** when you use **`/std::c++17`** or later, specify **`/Zc:alignedNew-`**. If you implement operator **`new`** and **`delete`** but you're not ready to implement the over-aligned operator **`new`** and **`delete`** overloads that have the `align_val_t` parameter, use the **`/Zc:alignedNew-`** option to prevent the compiler and Standard Library from generating calls to the over-aligned overloads. The [`/permissive-`](permissive-standards-conformance.md) option doesn't change the default setting of **`/Zc:alignedNew`**.
 
-Support for **/Zc:alignedNew** is available starting in Visual Studio 2017 version 15.5.
+Support for **`/Zc:alignedNew`** is available starting in Visual Studio 2017 version 15.5.
 
 ## Example
 
-This sample shows how operator **`new`** and operator **`delete`** behave when the **/Zc:alignedNew** option is set.
+This sample shows how operator **`new`** and operator **`delete`** behave when the **`/Zc:alignedNew`** option is set.
 
 ```cpp
 // alignedNew.cpp
@@ -94,7 +94,7 @@ For information about conformance issues in Visual C++, see [Nonstandard Behavio
 
 1. Select the **Configuration Properties** > **C/C++** > **Command Line** property page.
 
-1. Modify the **Additional Options** property to include **/Zc:alignedNew** or **/Zc:alignedNew-** and then choose **OK**.
+1. Modify the **Additional Options** property to include **`/Zc:alignedNew`** or **`/Zc:alignedNew-`** and then choose **OK**.
 
 ## See also
 

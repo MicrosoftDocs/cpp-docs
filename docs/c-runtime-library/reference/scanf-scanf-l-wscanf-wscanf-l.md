@@ -26,7 +26,7 @@ int scanf(
 );
 int _scanf_l(
    const char *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument]...
 );
 int wscanf(
@@ -35,7 +35,7 @@ int wscanf(
 );
 int _wscanf_l(
    const wchar_t *format,
-   locale_t locale [,
+   _locale_t locale [,
    argument]...
 );
 ```

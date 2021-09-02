@@ -394,15 +394,13 @@ If you used the IMPLEMENT_SERIAL macro in your class implementation, then the in
 
 The [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) insertion operator (<<) supports diagnostic dumping and storing to an archive.
 
-### Example
+### Examples
 
 This example demonstrates the use of the `CArchive` insertion operator << with the **`int`** and **`long`** types.
 
 [!code-cpp[NVC_MFCSerialization#31](../../mfc/codesnippet/cpp/carchive-class_12.cpp)]
 
-### Example
-
-This example 2 demonstrates the use of the `CArchive` insertion operator << with the `CStringT` type.
+This example demonstrates the use of the `CArchive` insertion operator << with the `CStringT` type.
 
 [!code-cpp[NVC_MFCSerialization#32](../../mfc/codesnippet/cpp/carchive-class_13.cpp)]
 
@@ -474,15 +472,13 @@ If you used the IMPLEMENT_SERIAL macro in your class implementation, then the ex
 
 The [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) extraction operator (>>) supports loading from an archive.
 
-### Example
+### Examples
 
-This example demonstrates the use of the `CArchive` extraction operator >> with the **`int`** type.
+This example demonstrates the use of the `CArchive` extraction operator `>>` with the **`int`** type.
 
 [!code-cpp[NVC_MFCSerialization#33](../../mfc/codesnippet/cpp/carchive-class_14.cpp)]
 
-### Example
-
-This example demonstrates the use of the `CArchive` insertion and extraction operators <\< and >> with the `CStringT` type.
+This example demonstrates the use of the `CArchive` insertion and extraction operators `<<` and `>>` with the `CStringT` type.
 
 [!code-cpp[NVC_MFCSerialization#34](../../mfc/codesnippet/cpp/carchive-class_15.cpp)]
 

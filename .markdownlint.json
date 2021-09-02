@@ -2,6 +2,7 @@
     "default": true,
     "DOCSMD006": false,
     "MD001": false,
+    "MD004": false,
     "MD013": false,
     "MD024": {
         "siblings_only": true

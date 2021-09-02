@@ -73,7 +73,7 @@ It isn't safe to call **`_resetstkoflw`** in a C++ catch block that is reached f
 
 There are situations where **`_resetstkoflw`** can fail even if used in a correct location, such as within an **`__except`** block. If, even after unwinding the stack, there's still not enough stack space left to execute **`_resetstkoflw`** without writing into the last page of the stack, **`_resetstkoflw`** fails to reset the last page of the stack as the guard page and returns 0, indicating failure. Safe usage of this function should include checking the return value instead of assuming that the stack is safe to use.
 
-Structured exception handling won't catch a **`STATUS_STACK_OVERFLOW`** exception when the application is compiled with **`/clr`** (see [`/clr `(Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)).
+Structured exception handling won't catch a **`STATUS_STACK_OVERFLOW`** exception when the application is compiled with **`/clr`** (see [`/clr` (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md)).
 
 By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
 

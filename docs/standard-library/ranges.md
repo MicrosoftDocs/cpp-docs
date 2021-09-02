@@ -31,7 +31,7 @@ std::transform(intermediate.begin(), intermediate.end(), std::back_inserter(outp
 With ranges, you can accomplish the same thing without needing the `intermediate` vector:
 
 ```cpp
-// requires /std:c++latest
+// requires /std:c++20 or /std:c++latest
 std::vector<int> input = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
 auto output = input | std::views::filter([](const int n) {return n % 3 == 0; }) | std::views::transform([](const int n) {return n * n; });
@@ -44,7 +44,7 @@ In the code above, each element that is divisible by three is combined with an o
 The result, `output`, is itself a type of range called a view, which is discussed next.
 
 > [!NOTE]
-> The ranges examples require the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
+> The ranges examples require the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
 ## Views
 
@@ -57,7 +57,7 @@ Views are composable. In the example above, the view of vector elements that are
 The elements of a view are evaluated lazily. That is, the transformations you apply to yield the elements in a view aren't evaluated until you ask for an element. For example, if you run the following code in a debugger, and put a breakpoint on the lines `auto divisible_by_three = ...` and `auto square =  ...`, you'll see that you hit the `divisible_by_three` lambda breakpoint as each element in `input` is tested for divisibility by three. The `square` lambda breakpoint will be hit as the elements that are divisible by three are squared.
 
 ```cpp
-// requires /std:c++latest
+// requires /std:c++20 or /std:c++latest
 #include <ranges>
 #include <vector>
 #include <iostream>
@@ -116,8 +116,6 @@ The range concepts mirror the hierarchy of iterator categories. This table lists
 | `std::ranges::bidirectional_range` | Can iterate forward and backward more than once | `std::list`<br>`std::map`<br>`std::multimap`<br>`std::multiset`<br>`std::set`|
 | `std::ranges::random_access_range` | Can access an arbitrary element (in constant time) using the `[]` operator) | `std::deque` |
 | `std::ranges::contiguous_range` | The elements are stored in memory consecutively | `std::array`<br>`std::string`<br>`std::vector` |
-
-
 
 ## See also
 

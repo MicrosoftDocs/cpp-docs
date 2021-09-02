@@ -22,7 +22,7 @@ int _vscprintf_p(
 );
 int _vscprintf_p _l(
    const char *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 int _vscwprintf_p (
@@ -31,7 +31,7 @@ int _vscwprintf_p (
 );
 int _vscwprintf_p _l(
    const wchar_t *format,
-   locale_t locale,
+   _locale_t locale,
    va_list argptr
 );
 ```
