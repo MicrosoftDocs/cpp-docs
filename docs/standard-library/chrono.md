@@ -59,6 +59,8 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 **Time Zones**
 
+| Name | Description |
+|--|--|
 | [`time_zone` class](time-zone-class.md) | All time zone transitions for a specific geographic area. |
 | [`time_zone_link` class](time-zone-link-class.md) | Specifies an alternative name for a `time_zone`. |
 

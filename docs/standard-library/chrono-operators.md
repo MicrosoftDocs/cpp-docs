@@ -568,7 +568,7 @@ Determines whether:
 15\) [`year_month_day_last`](year-month-day-last-class.md) represent the same last day of the year and month.\
 16\) [`year_month_weekday`](year-month-weekday-class.md) represent the same weekday, year, and month.\
 17\) [`year_month_weekday_last`](year-month-weekday-last-class.md) represent the same last weekday of the month, year, and month.
-18\) [`time_zone_link`](time_zone_link-class.md) have the same `name`. The `target` name is not considered.
+18\) [`time_zone_link`](time-zone-link-class.md) have the same `name`. The `target` name is not considered.
 
 ```cpp
 // 1) duration<Rep, Period>

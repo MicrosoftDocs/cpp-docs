@@ -19,7 +19,7 @@ class time_zone_link;  // Since C++20
 
 `const time_zone_link` instances are created when the time zone database is initialized. They can't be created by the developer.
 
-Although this type has a default move constructor and move assignment operator, it is not copyable because only `const` access is provided to this type. Using these functions results in undefined behavior. Therefore, the move constructor and assignment operator aren't listed here.
+Although this type has a default move constructor and move assignment operator, it is not copyable because only `const` access is provided to this type. Using those functions results in undefined behavior. Therefore, the move constructor and assignment operator aren't listed here.
 
 ## Members
 
@@ -35,7 +35,7 @@ Although this type has a default move constructor and move assignment operator, 
 | Name | Description |
 |--|--|
 | [`operator==`](chrono-operators.md#op_eq_eq) | Determine whether two `time_zone_link` objects have the same `name`. The `target` name is not considered. |
-| [`operator<=>`](chrono-operators.md#op_spaceship) | Compare this `time_zone_link` against another `time_zone_link`. The `>, >=, <=, <, !=` operators are synthesized by the compiler. Returns **`true`** if `Left.name() == Right.name()`. Otherwise, returns `*false*`. |
+| [`operator<=>`](chrono-operators.md#op_spaceship) | Compare this `time_zone_link` against another `time_zone_link`. The `>, >=, <=, <, !=` operators are synthesized by the compiler. Returns  `Left.name() <=> Right.name()`. |
 
 ## Requirements
 
@@ -45,21 +45,24 @@ Although this type has a default move constructor and move assignment operator, 
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
-## <a name="std-chrono-time-zone-name"></a> `name`
+## <a name="std-chrono-time-zone-link-name"></a> `name`
 
-Gets the name of this `time_zone_link`.
+Gets the alternate name for the time zone.
 
 ```cpp
-string_view name() const noexcept;  // Since C++20
+string_view name() const noexcept;
 ```
 
-### Return value
+## <a name="std-chrono-time-zone-link-target"></a> `target`
 
-Returns the alternative name of the time zone that this `time_zone_link` represents.
+Gets the name of the `time_zone` that this `time_zone_link` is an alternative name for.
 
+```cpp
+string_view target() const noexcept;  // Since C++20
+```
 
 ## See also
 
-[`<chrono>`](./chrono.md)\
-[`]
-[Header files reference](./cpp-standard-library-header-files.md)
+[`<chrono>`](chrono.md)\
+[`time_zone`](time-zone-class.md)\
+[Header files reference](cpp-standard-library-header-files.md)
