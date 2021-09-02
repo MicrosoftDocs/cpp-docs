@@ -761,6 +761,8 @@
                       href: ../build/reference/zc-alignednew.md
                     - name: "/Zc:auto (Deduce variable type)"
                       href: ../build/reference/zc-auto-deduce-variable-type.md
+                    - name: "/Zc:char8_t (Enable C++20 char8_t type)"
+                      href: ../build/reference/zc-char8-t.md
                     - name: "/Zc:__cplusplus (Enable updated __cplusplus macro)"
                       href: ../build/reference/zc-cplusplus.md
                     - name: "/Zc:externConstexpr (Enable extern constexpr variables)"
