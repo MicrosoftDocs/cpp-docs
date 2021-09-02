@@ -569,7 +569,7 @@ public:
     Box() {}
 
     // Initialize a Box with equal dimensions (i.e. a cube)
-    Box(int i) :  Box(i, i, i);  // delegating constructor
+    Box(int i) :  Box(i, i, i)  // delegating constructor
     {}
 
     // Initialize a Box with custom dimensions
