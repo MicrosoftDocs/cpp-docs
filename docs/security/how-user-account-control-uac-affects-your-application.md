@@ -25,7 +25,7 @@ The second option is to not embed a UAC fragment into the manifest by specifying
 
 The following flowchart describes how your application will run depending on whether UAC is enabled and whether the application has a UAC manifest:
 
-![Windows Loader behavior](media/uacflowchart.png "Windows Loader behavior")
+![Flowchart of Windows Loader behavior.](media/uacflowchart.png "Windows Loader behavior")
 
 ## See also
 

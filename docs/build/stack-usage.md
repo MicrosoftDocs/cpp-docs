@@ -22,7 +22,7 @@ The stack will always be maintained 16-byte aligned, except within the prolog (f
 
 The following is an example of the stack layout where function A calls a non-leaf function B. Function A's prolog has already allocated space for all the register and stack parameters required by B at the bottom of the stack. The call pushes the return address and B's prolog allocates space for its local variables, nonvolatile registers, and the space needed for it to call functions. If B uses `alloca`, the space is allocated between the local variable/nonvolatile register save area and the parameter stack area.
 
-![AMD conversion example](../build/media/vcamd_conv_ex_5.png "AMD conversion example")
+![Diagram of the stack layout for the x64 conversion example.](../build/media/vcamd_conv_ex_5.png "AMD conversion example")
 
 When the function B calls another function, the return address is pushed just below the home address for RCX.
 

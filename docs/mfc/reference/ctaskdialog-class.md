@@ -125,7 +125,7 @@ The `CTaskDialog` has two different constructors. One constructor enables you to
 
 The following image shows a sample `CTaskDialog` to illustrate the location of some of the controls.
 
-![Example of CTaskDialog](../../mfc/reference/media/ctaskdialogsample.png "Example of CTaskDialog") <br/>
+![Example of CTaskDialog.](../../mfc/reference/media/ctaskdialogsample.png "Example of CTaskDialog") <br/>
 CTaskDialog Sample
 
 ## Requirements

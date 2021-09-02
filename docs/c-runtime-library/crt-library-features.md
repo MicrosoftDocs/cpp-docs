@@ -102,5 +102,5 @@ Be careful if your program passes certain CRT resources across DLL boundaries. R
 
 ## See also
 
-- [C runtime library reference](../c-runtime-library/c-run-time-library-reference.md)
-- [Redistributing Visual C++ Files](../windows/redistributing-visual-cpp-files.md)
+[C runtime library reference](../c-runtime-library/c-run-time-library-reference.md)\
+[Redistributing Visual C++ Files](../windows/redistributing-visual-cpp-files.md)

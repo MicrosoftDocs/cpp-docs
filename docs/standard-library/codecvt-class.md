@@ -172,7 +172,6 @@ The possible values for the *`refs`* parameter and their significance are:
 
 - 1: The lifetime of the object must be manually managed.
 
-
 - 2: These values aren't defined.
 
 The constructor initializes its `locale::facet` base object with [`locale::facet`](../standard-library/locale-class.md#facet_class)`(refs)`.

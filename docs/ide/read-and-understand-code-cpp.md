@@ -11,11 +11,11 @@ The C++ code editor and Visual Studio IDE provide many coding aids. Some are uni
 
 Visual Studio colorizes syntax elements to differentiate between types of symbols such as language keywords, type names, variable names, function parameters, string literals, and so on.
 
-![Code colorization](../ide/media/code-outline-colorization.png "C++ colorization")
+![Screenshot showing code colorization in the editor.](../ide/media/code-outline-colorization.png "C++ colorization")
 
 Unused code (such as code under an #if 0) is more faded in color.
 
-![Inactive code](../ide/media/inactive-code-cpp.png "C++ inactive code")
+![Screenshot showing inactive code in the editor.](../ide/media/inactive-code-cpp.png "C++ inactive code")
 
 You can customize the colors by typing "Fonts" in **Quick Launch**, and then choosing **Fonts and Colors**. In the **Fonts and Colors** dialog scroll down to the C/C++ options and then choose a custom font and/or color.
 
@@ -23,7 +23,7 @@ You can customize the colors by typing "Fonts" in **Quick Launch**, and then cho
 
 Right-click anywhere in a source code file and choose **Outlining** to collapse or expand code blocks and/or custom regions to make it easier to browse only the code you are interested in. For more information, see [Outlining](/visualstudio/ide/outlining).
 
-![C&#43;&#43; Outlining](../ide/media/vs2015_cpp_outlining.png "Outlining")
+![Screenshot of C&#43;&#43; Outlining.](../ide/media/vs2015_cpp_outlining.png "Outlining")
 
 When you place your cursor in front of a curly brace, '{' or '}', the editor highlights its matching counterpart.
 
@@ -37,11 +37,11 @@ You can add line numbers to your project by going to **Tools** > **Options** > *
 
 You can zoom in or out in the editor by pressing the **Ctrl** key and scrolling with your mouse wheel. You can also zoom by using the zoom setting in the bottom left corner.
 
-![C&#43;&#43; Zoom Control](../ide/media/zoom-control.png "Zoom control")
+![Screenshot of the C&#43;&#43; Zoom Control.](../ide/media/zoom-control.png "Zoom control")
 
 Scrollbar **Map Mode** enables you to quickly scroll and browse through a code file without leaving your current location. You can click anywhere on the code map to go directly to that location.
 
-![Code Map in C&#43;&#43;](../ide/media/vs2015-cpp-code-map.png "Code Map")
+![Screenshot of the Code Map in C&#43;&#43;.](../ide/media/vs2015-cpp-code-map.png "Code Map")
 
 To turn on **Map Mode**, type "map" in the **Quick Launch** search box in the main toolbar and choose **Use scroll map mode**. For more information, see [How to: Track your code by customizing the scrollbar](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar).
 
@@ -59,7 +59,7 @@ The **Quick Info** tooltip has a **Search Online** link. Go to **Tools** > **Opt
 
 If there is an error in your code, you can hover over it and **Quick Info** will display the error message. You can also find the error message in the Error List window.
 
-![Quick Info on error](../ide/media/quickinfo-on-error.png "Quick Info on error")
+![Screenshot showing Quick Info on error.](../ide/media/quickinfo-on-error.png "Quick Info on error")
 
 ::: moniker-end
 
@@ -69,19 +69,19 @@ If there is an error in your code, you can hover over it and **Quick Info** will
 
 If there is an error in your code, you can hover over it and **Quick Info** will display the error message. You can also find the error message in the **Error List** window.
 
-![Quick Info on error](../ide/media/quickinfo-on-error.png "Quick Info on error")
+![Screenshot showing Quick Info on error.](../ide/media/quickinfo-on-error.png "Quick Info on error")
 
 ::: moniker-end
 
 When you call a function, **Parameter Info** shows the types of parameters and the order in which they are expected.
 
-![Parameter Info in C&#43;&#43;](../ide/media/parameter-info.png "Parameter Info")
+![Screenshot of Parameter Info in C&#43;&#43;.](../ide/media/parameter-info.png "Parameter Info")
 
 ## Peek Definition
 
 Hover over a variable or function declaration, right-click, then choose **Peek Definition** to see an inline view of its definition without navigating away from your current location. For more information, see [Peek Definition (Alt+F12)](/visualstudio/ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12).
 
-![C&#43;&#43; Peek Definition](../ide/media/vs2015_cpp_peek_definition.png "vs2015_cpp_peek_definition")
+![Screenshot of C&#43;&#43; Peek Definition.](../ide/media/vs2015_cpp_peek_definition.png "vs2015_cpp_peek_definition")
 
 ## F1 Help
 
@@ -91,19 +91,19 @@ Place the cursor on or just after any type, keyword or function and press **F1**
 
 **Class View** displays a searchable set of trees of all code symbols and their scope and parent/child hierarchies, organized on a per-project basis. You can configure what **Class View** displays from **Class View Settings** (click the gear box icon at the top of the window).
 
-![Class View in C&#43;&#43;](../ide/media/class-view.png "Class View")
+![Screenshot of Class View in C&#43;&#43;.](../ide/media/class-view.png "Class View")
 
 ## Generate graph of include files
 
 Right click on a code file in your project and choose **Generate graph of include files** to see a graph of which files are included by other files.
 
-![C&#43;&#43; graph of include files](../ide/media/vs2015_cpp_include_graph.png "vs2015_cpp_include_graph")
+![Screenshot of C&#43;&#43; graph of include files.](../ide/media/vs2015_cpp_include_graph.png "vs2015_cpp_include_graph")
 
 ## View Call Hierarchy
 
 Right click on any function call and view a recursive list of all the functions that it calls, and all the functions that call it. Each function in the list can be expanded in the same way. For more information, see [Call Hierarchy](/visualstudio/ide/reference/call-hierarchy).
 
-![C&#43;&#43; Call Hierarchy](../ide/media/vs2015_cpp_call_hierarchy.png "vs2015_cpp_call_hierarchy")
+![Screenshot of C&#43;&#43; Call Hierarchy.](../ide/media/vs2015_cpp_call_hierarchy.png "vs2015_cpp_call_hierarchy")
 
 ## See Also
 

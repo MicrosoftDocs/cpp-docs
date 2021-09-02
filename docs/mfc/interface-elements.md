@@ -11,7 +11,7 @@ This document describes interface elements that were introduced in Visual Studio
 
 The following illustration shows an application that was built by using the new interface elements.
 
-![MFC Feature Pack example application](../mfc/media/mfc_featurepack.png "MFC Feature Pack example application")
+![MFC Feature Pack example application.](../mfc/media/mfc_featurepack.png "MFC Feature Pack example application")
 
 ## Window Docking
 

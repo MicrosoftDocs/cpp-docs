@@ -22,7 +22,7 @@ To access the **VC++ Directories** property page:
 
 VC++ Directories properties apply to a project, not the top-level solution node. If you do not see **VC++ Directories** under **Configuration Properties**, select a C++ project node in the **Solution Explorer** window:
 
-![Select the project node](../media/vcppdir.png "Select the project node to see the VC++ Directories properties")
+![Screenshot of the Solution Explorer window with the Project node selected.](../media/vcppdir.png "Select the project node to see the VC++ Directories properties")
 
 Note that the **VC++ Directories** property page for cross-platform projects looks different. For information specific to Linux C++ projects, see [VC++ Directories (Linux C++)](../../linux/prop-pages/directories-linux.md).
 
@@ -36,11 +36,11 @@ To view the values for any of the directories:
 1. Choose the down-arrow button at the end of the property value field.
 1. In the drop-down menu, choose **Edit**.
 
-![Edit Library Directories](../media/vcppdir_libdir_edit.png "Dialog to edit library paths")
+![Detail of the Library Directories property drop-down with the Edit command highlighted.](../media/vcppdir_libdir_edit.png "Dialog to edit library paths")
 
 You now see a dialog box like this:
 
-![Show Library Directories](../media/vcppdir_libdir.png "Dialog to add or remove library paths")
+![Screenshot of the Library Directories dialog.](../media/vcppdir_libdir.png "Dialog to add or remove library paths")
 
 Use this dialog to view the current directories. However, if you want to change or add a directory, it is better to use **Property Manager** to create a property sheet or modify the default user property sheet. For more information, see [Share or reuse Visual Studio C++ project settings](../create-reusable-property-configurations.md).
 
@@ -48,7 +48,7 @@ As shown above, many of the inherited paths are given as macros.  To examine the
 
 You can search for partial or complete matches in the edit box. The following illustration shows all the macros that contain the string "WindowsSDK" and it also shows the current path that the macro evaluates to:
 
-![See macro values](../media/vcppdir_libdir_macros.png "Dialog to edit macros")
+![Screenshot of the Library Directories dialog with the list of macro values displayed.](../media/vcppdir_libdir_macros.png "Dialog to edit macros")
 
 Note: The list is populated as you type. Don't press **Enter**.
 

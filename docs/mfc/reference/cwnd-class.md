@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: CWnd Class"
 title: "CWnd Class"
-ms.date: "11/19/2018"
+ms.date: "8/25/2021"
 f1_keywords: ["CWnd", "AFXWIN/CWnd", "AFXWIN/CWnd::CWnd", "AFXWIN/CWnd::accDoDefaultAction", "AFXWIN/CWnd::accHitTest", "AFXWIN/CWnd::accLocation", "AFXWIN/CWnd::accNavigate", "AFXWIN/CWnd::accSelect", "AFXWIN/CWnd::AnimateWindow", "AFXWIN/CWnd::ArrangeIconicWindows", "AFXWIN/CWnd::Attach", "AFXWIN/CWnd::BeginModalState", "AFXWIN/CWnd::BeginPaint", "AFXWIN/CWnd::BindDefaultProperty", "AFXWIN/CWnd::BindProperty", "AFXWIN/CWnd::BringWindowToTop", "AFXWIN/CWnd::CalcWindowRect", "AFXWIN/CWnd::CancelToolTips", "AFXWIN/CWnd::CenterWindow", "AFXWIN/CWnd::ChangeClipboardChain", "AFXWIN/CWnd::CheckDlgButton", "AFXWIN/CWnd::CheckRadioButton", "AFXWIN/CWnd::ChildWindowFromPoint", "AFXWIN/CWnd::ClientToScreen", "AFXWIN/CWnd::CloseWindow", "AFXWIN/CWnd::ContinueModal", "AFXWIN/CWnd::Create", "AFXWIN/CWnd::CreateAccessibleProxy", "AFXWIN/CWnd::CreateCaret", "AFXWIN/CWnd::CreateControl", "AFXWIN/CWnd::CreateEx", "AFXWIN/CWnd::CreateGrayCaret", "AFXWIN/CWnd::CreateSolidCaret", "AFXWIN/CWnd::DeleteTempMap", "AFXWIN/CWnd::DestroyWindow", "AFXWIN/CWnd::Detach", "AFXWIN/CWnd::DlgDirList", "AFXWIN/CWnd::DlgDirListComboBox", "AFXWIN/CWnd::DlgDirSelect", "AFXWIN/CWnd::DlgDirSelectComboBox", "AFXWIN/CWnd::DragAcceptFiles", "AFXWIN/CWnd::DragDetect", "AFXWIN/CWnd::DrawAnimatedRects", "AFXWIN/CWnd::DrawCaption", "AFXWIN/CWnd::DrawMenuBar", "AFXWIN/CWnd::EnableActiveAccessibility", "AFXWIN/CWnd::EnableDynamicLayout", "AFXWIN/CWnd::EnableD2DSupport", "AFXWIN/CWnd::EnableScrollBar", "AFXWIN/CWnd::EnableScrollBarCtrl", "AFXWIN/CWnd::EnableToolTips", "AFXWIN/CWnd::EnableTrackingToolTips", "AFXWIN/CWnd::EnableWindow", "AFXWIN/CWnd::EndModalLoop", "AFXWIN/CWnd::EndModalState", "AFXWIN/CWnd::EndPaint", "AFXWIN/CWnd::ExecuteDlgInit", "AFXWIN/CWnd::FilterToolTipMessage", "AFXWIN/CWnd::FindWindow", "AFXWIN/CWnd::FindWindowEx", "AFXWIN/CWnd::FlashWindow", "AFXWIN/CWnd::FlashWindowEx", "AFXWIN/CWnd::FromHandle", "AFXWIN/CWnd::FromHandlePermanent", "AFXWIN/CWnd::get_accChild", "AFXWIN/CWnd::get_accChildCount", "AFXWIN/CWnd::get_accDefaultAction", "AFXWIN/CWnd::get_accDescription", "AFXWIN/CWnd::get_accFocus", "AFXWIN/CWnd::get_accHelp", "AFXWIN/CWnd::get_accHelpTopic", "AFXWIN/CWnd::get_accKeyboardShortcut", "AFXWIN/CWnd::get_accName", "AFXWIN/CWnd::get_accParent", "AFXWIN/CWnd::get_accRole", "AFXWIN/CWnd::get_accSelection", "AFXWIN/CWnd::get_accState", "AFXWIN/CWnd::get_accValue", "AFXWIN/CWnd::GetActiveWindow", "AFXWIN/CWnd::GetAncestor", "AFXWIN/CWnd::GetCapture", "AFXWIN/CWnd::GetCaretPos", "AFXWIN/CWnd::GetCheckedRadioButton", "AFXWIN/CWnd::GetClientRect", "AFXWIN/CWnd::GetClipboardOwner", "AFXWIN/CWnd::GetClipboardViewer", "AFXWIN/CWnd::GetControlUnknown", "AFXWIN/CWnd::GetDC", "AFXWIN/CWnd::GetDCEx", "AFXWIN/CWnd::GetDCRenderTarget", "AFXWIN/CWnd::GetDescendantWindow", "AFXWIN/CWnd::GetDesktopWindow", "AFXWIN/CWnd::GetDlgCtrlID", "AFXWIN/CWnd::GetDlgItem", "AFXWIN/CWnd::GetDlgItemInt", "AFXWIN/CWnd::GetDlgItemText", "AFXWIN/CWnd::GetDSCCursor", "AFXWIN/CWnd::GetDynamicLayout", "AFXWIN/CWnd::GetExStyle", "AFXWIN/CWnd::GetFocus", "AFXWIN/CWnd::GetFont", "AFXWIN/CWnd::GetForegroundWindow", "AFXWIN/CWnd::GetIcon", "AFXWIN/CWnd::GetLastActivePopup", "AFXWIN/CWnd::GetLayeredWindowAttributes", "AFXWIN/CWnd::GetMenu", "AFXWIN/CWnd::GetNextDlgGroupItem", "AFXWIN/CWnd::GetNextDlgTabItem", "AFXWIN/CWnd::GetNextWindow", "AFXWIN/CWnd::GetOleControlSite", "AFXWIN/CWnd::GetOpenClipboardWindow", "AFXWIN/CWnd::GetOwner", "AFXWIN/CWnd::GetParent", "AFXWIN/CWnd::GetParentFrame", "AFXWIN/CWnd::GetParentOwner", "AFXWIN/CWnd::GetProperty", "AFXWIN/CWnd::GetRenderTarget", "AFXWIN/CWnd::GetSafeHwnd", "AFXWIN/CWnd::GetSafeOwner", "AFXWIN/CWnd::GetScrollBarCtrl", "AFXWIN/CWnd::GetScrollBarInfo", "AFXWIN/CWnd::GetScrollInfo", "AFXWIN/CWnd::GetScrollLimit", "AFXWIN/CWnd::GetScrollPos", "AFXWIN/CWnd::GetScrollRange", "AFXWIN/CWnd::GetStyle", "AFXWIN/CWnd::GetSystemMenu", "AFXWIN/CWnd::GetTitleBarInfo", "AFXWIN/CWnd::GetTopLevelFrame", "AFXWIN/CWnd::GetTopLevelOwner", "AFXWIN/CWnd::GetTopLevelParent", "AFXWIN/CWnd::GetTopWindow", "AFXWIN/CWnd::GetUpdateRect", "AFXWIN/CWnd::GetUpdateRgn", "AFXWIN/CWnd::GetWindow", "AFXWIN/CWnd::GetWindowContextHelpId", "AFXWIN/CWnd::GetWindowDC", "AFXWIN/CWnd::GetWindowedChildCount", "AFXWIN/CWnd::GetWindowInfo", "AFXWIN/CWnd::GetWindowlessChildCount", "AFXWIN/CWnd::GetWindowPlacement", "AFXWIN/CWnd::GetWindowRect", "AFXWIN/CWnd::GetWindowRgn", "AFXWIN/CWnd::GetWindowText", "AFXWIN/CWnd::GetWindowTextLength", "AFXWIN/CWnd::HideCaret", "AFXWIN/CWnd::HiliteMenuItem", "AFXWIN/CWnd::HtmlHelp", "AFXWIN/CWnd::Invalidate", "AFXWIN/CWnd::InvalidateRect", "AFXWIN/CWnd::InvalidateRgn", "AFXWIN/CWnd::InvokeHelper", "AFXWIN/CWnd::IsChild", "AFXWIN/CWnd::IsD2DSupportEnabled", "AFXWIN/CWnd::IsDialogMessage", "AFXWIN/CWnd::IsDlgButtonChecked", "AFXWIN/CWnd::IsDynamicLayoutEnabled", "AFXWIN/CWnd::IsIconic", "AFXWIN/CWnd::IsTouchWindow", "AFXWIN/CWnd::IsWindowEnabled", "AFXWIN/CWnd::IsWindowVisible", "AFXWIN/CWnd::IsZoomed", "AFXWIN/CWnd::KillTimer", "AFXWIN/CWnd::LockWindowUpdate", "AFXWIN/CWnd::MapWindowPoints", "AFXWIN/CWnd::MessageBox", "AFXWIN/CWnd::ModifyStyle", "AFXWIN/CWnd::ModifyStyleEx", "AFXWIN/CWnd::MoveWindow", "AFXWIN/CWnd::NotifyWinEvent", "AFXWIN/CWnd::OnAmbientProperty", "AFXWIN/CWnd::OnDrawIconicThumbnailOrLivePreview", "AFXWIN/CWnd::OnHelp", "AFXWIN/CWnd::OnHelpFinder", "AFXWIN/CWnd::OnHelpIndex", "AFXWIN/CWnd::OnHelpUsing", "AFXWIN/CWnd::OnToolHitTest", "AFXWIN/CWnd::OpenClipboard", "AFXWIN/CWnd::PaintWindowlessControls", "AFXWIN/CWnd::PostMessage", "AFXWIN/CWnd::PreCreateWindow", "AFXWIN/CWnd::PreSubclassWindow", "AFXWIN/CWnd::PreTranslateMessage", "AFXWIN/CWnd::Print", "AFXWIN/CWnd::PrintClient", "AFXWIN/CWnd::PrintWindow", "AFXWIN/CWnd::RedrawWindow", "AFXWIN/CWnd::RegisterTouchWindow", "AFXWIN/CWnd::ReleaseDC", "AFXWIN/CWnd::RepositionBars", "AFXWIN/CWnd::RunModalLoop", "AFXWIN/CWnd::ScreenToClient", "AFXWIN/CWnd::ScrollWindow", "AFXWIN/CWnd::ScrollWindowEx", "AFXWIN/CWnd::SendChildNotifyLastMsg", "AFXWIN/CWnd::SendDlgItemMessage", "AFXWIN/CWnd::SendMessage", "AFXWIN/CWnd::SendMessageToDescendants", "AFXWIN/CWnd::SendNotifyMessage", "AFXWIN/CWnd::SetActiveWindow", "AFXWIN/CWnd::SetCapture", "AFXWIN/CWnd::SetCaretPos", "AFXWIN/CWnd::SetClipboardViewer", "AFXWIN/CWnd::SetDlgCtrlID", "AFXWIN/CWnd::SetDlgItemInt", "AFXWIN/CWnd::SetDlgItemText", "AFXWIN/CWnd::SetFocus", "AFXWIN/CWnd::SetFont", "AFXWIN/CWnd::SetForegroundWindow", "AFXWIN/CWnd::SetIcon", "AFXWIN/CWnd::SetLayeredWindowAttributes", "AFXWIN/CWnd::SetMenu", "AFXWIN/CWnd::SetOwner", "AFXWIN/CWnd::SetParent", "AFXWIN/CWnd::SetProperty", "AFXWIN/CWnd::SetRedraw", "AFXWIN/CWnd::SetScrollInfo", "AFXWIN/CWnd::SetScrollPos", "AFXWIN/CWnd::SetScrollRange", "AFXWIN/CWnd::SetTimer", "AFXWIN/CWnd::SetWindowContextHelpId", "AFXWIN/CWnd::SetWindowPlacement", "AFXWIN/CWnd::SetWindowPos", "AFXWIN/CWnd::SetWindowRgn", "AFXWIN/CWnd::SetWindowText", "AFXWIN/CWnd::ShowCaret", "AFXWIN/CWnd::ShowOwnedPopups", "AFXWIN/CWnd::ShowScrollBar", "AFXWIN/CWnd::ShowWindow", "AFXWIN/CWnd::SubclassDlgItem", "AFXWIN/CWnd::SubclassWindow", "AFXWIN/CWnd::UnlockWindowUpdate", "AFXWIN/CWnd::UnsubclassWindow", "AFXWIN/CWnd::UpdateData", "AFXWIN/CWnd::UpdateDialogControls", "AFXWIN/CWnd::UpdateLayeredWindow", "AFXWIN/CWnd::UpdateWindow", "AFXWIN/CWnd::ValidateRect", "AFXWIN/CWnd::ValidateRgn", "AFXWIN/CWnd::WindowFromPoint", "AFXWIN/CWnd::WinHelp", "AFXWIN/CWnd::Default", "AFXWIN/CWnd::DefWindowProc", "AFXWIN/CWnd::DoDataExchange", "AFXWIN/CWnd::GetCurrentMessage", "AFXWIN/CWnd::InitDynamicLayout", "AFXWIN/CWnd::LoadDynamicLayoutResource", "AFXWIN/CWnd::OnActivate", "AFXWIN/CWnd::OnActivateApp", "AFXWIN/CWnd::OnAppCommand", "AFXWIN/CWnd::OnAskCbFormatName", "AFXWIN/CWnd::OnCancelMode", "AFXWIN/CWnd::OnCaptureChanged", "AFXWIN/CWnd::OnChangeCbChain", "AFXWIN/CWnd::OnChangeUIState", "AFXWIN/CWnd::OnChar", "AFXWIN/CWnd::OnCharToItem", "AFXWIN/CWnd::OnChildActivate", "AFXWIN/CWnd::OnChildNotify", "AFXWIN/CWnd::OnClipboardUpdate", "AFXWIN/CWnd::OnClose", "AFXWIN/CWnd::OnColorizationColorChanged", "AFXWIN/CWnd::OnCommand", "AFXWIN/CWnd::OnCompacting", "AFXWIN/CWnd::OnCompareItem", "AFXWIN/CWnd::OnCompositionChanged", "AFXWIN/CWnd::OnContextMenu", "AFXWIN/CWnd::OnCopyData", "AFXWIN/CWnd::OnCreate", "AFXWIN/CWnd::OnCtlColor", "AFXWIN/CWnd::OnDeadChar", "AFXWIN/CWnd::OnDeleteItem", "AFXWIN/CWnd::OnDestroy", "AFXWIN/CWnd::OnDestroyClipboard", "AFXWIN/CWnd::OnDeviceChange", "AFXWIN/CWnd::OnDevModeChange", "AFXWIN/CWnd::OnDrawClipboard", "AFXWIN/CWnd::OnDrawItem", "AFXWIN/CWnd::OnDropFiles", "AFXWIN/CWnd::OnEnable", "AFXWIN/CWnd::OnEndSession", "AFXWIN/CWnd::OnEnterIdle", "AFXWIN/CWnd::OnEnterMenuLoop", "AFXWIN/CWnd::OnEnterSizeMove", "AFXWIN/CWnd::OnEraseBkgnd", "AFXWIN/CWnd::OnExitMenuLoop", "AFXWIN/CWnd::OnExitSizeMove", "AFXWIN/CWnd::OnFontChange", "AFXWIN/CWnd::OnGetDlgCode", "AFXWIN/CWnd::OnGetMinMaxInfo", "AFXWIN/CWnd::OnHelpInfo", "AFXWIN/CWnd::OnHotKey", "AFXWIN/CWnd::OnHScroll", "AFXWIN/CWnd::OnHScrollClipboard", "AFXWIN/CWnd::OnIconEraseBkgnd", "AFXWIN/CWnd::OnInitMenu", "AFXWIN/CWnd::OnInitMenuPopup", "AFXWIN/CWnd::OnInputDeviceChange", "AFXWIN/CWnd::OnInputLangChange", "AFXWIN/CWnd::OnInputLangChangeRequest", "AFXWIN/CWnd::OnKeyDown", "AFXWIN/CWnd::OnKeyUp", "AFXWIN/CWnd::OnKillFocus", "AFXWIN/CWnd::OnLButtonDblClk", "AFXWIN/CWnd::OnLButtonDown", "AFXWIN/CWnd::OnLButtonUp", "AFXWIN/CWnd::OnMButtonDblClk", "AFXWIN/CWnd::OnMButtonDown", "AFXWIN/CWnd::OnMButtonUp", "AFXWIN/CWnd::OnMDIActivate", "AFXWIN/CWnd::OnMeasureItem", "AFXWIN/CWnd::OnMenuChar", "AFXWIN/CWnd::OnMenuDrag", "AFXWIN/CWnd::OnMenuGetObject", "AFXWIN/CWnd::OnMenuRButtonUp", "AFXWIN/CWnd::OnMenuSelect", "AFXWIN/CWnd::OnMouseActivate", "AFXWIN/CWnd::OnMouseHover", "AFXWIN/CWnd::OnMouseHWheel", "AFXWIN/CWnd::OnMouseLeave", "AFXWIN/CWnd::OnMouseMove", "AFXWIN/CWnd::OnMouseWheel", "AFXWIN/CWnd::OnMove", "AFXWIN/CWnd::OnMoving", "AFXWIN/CWnd::OnNcActivate", "AFXWIN/CWnd::OnNcCalcSize", "AFXWIN/CWnd::OnNcCreate", "AFXWIN/CWnd::OnNcDestroy", "AFXWIN/CWnd::OnNcHitTest", "AFXWIN/CWnd::OnNcLButtonDblClk", "AFXWIN/CWnd::OnNcLButtonDown", "AFXWIN/CWnd::OnNcLButtonUp", "AFXWIN/CWnd::OnNcMButtonDblClk", "AFXWIN/CWnd::OnNcMButtonDown", "AFXWIN/CWnd::OnNcMButtonUp", "AFXWIN/CWnd::OnNcMouseHover", "AFXWIN/CWnd::OnNcMouseLeave", "AFXWIN/CWnd::OnNcMouseMove", "AFXWIN/CWnd::OnNcPaint", "AFXWIN/CWnd::OnNcRButtonDblClk", "AFXWIN/CWnd::OnNcRButtonDown", "AFXWIN/CWnd::OnNcRButtonUp", "AFXWIN/CWnd::OnNcRenderingChanged", "AFXWIN/CWnd::OnNcXButtonDblClk", "AFXWIN/CWnd::OnNcXButtonDown", "AFXWIN/CWnd::OnNcXButtonUp", "AFXWIN/CWnd::OnNextMenu", "AFXWIN/CWnd::OnNotify", "AFXWIN/CWnd::OnNotifyFormat", "AFXWIN/CWnd::OnPaint", "AFXWIN/CWnd::OnPaintClipboard", "AFXWIN/CWnd::OnPaletteChanged", "AFXWIN/CWnd::OnPaletteIsChanging", "AFXWIN/CWnd::OnParentNotify", "AFXWIN/CWnd::OnPowerBroadcast", "AFXWIN/CWnd::OnQueryDragIcon", "AFXWIN/CWnd::OnQueryEndSession", "AFXWIN/CWnd::OnQueryNewPalette", "AFXWIN/CWnd::OnQueryOpen", "AFXWIN/CWnd::OnQueryUIState", "AFXWIN/CWnd::OnRawInput", "AFXWIN/CWnd::OnRButtonDblClk", "AFXWIN/CWnd::OnRButtonDown", "AFXWIN/CWnd::OnRButtonUp", "AFXWIN/CWnd::OnRenderAllFormats", "AFXWIN/CWnd::OnRenderFormat", "AFXWIN/CWnd::OnSessionChange", "AFXWIN/CWnd::OnSetCursor", "AFXWIN/CWnd::OnSetFocus", "AFXWIN/CWnd::OnSettingChange", "AFXWIN/CWnd::OnShowWindow", "AFXWIN/CWnd::OnSize", "AFXWIN/CWnd::OnSizeClipboard", "AFXWIN/CWnd::OnSizing", "AFXWIN/CWnd::OnSpoolerStatus", "AFXWIN/CWnd::OnStyleChanged", "AFXWIN/CWnd::OnStyleChanging", "AFXWIN/CWnd::OnSysChar", "AFXWIN/CWnd::OnSysColorChange", "AFXWIN/CWnd::OnSysCommand", "AFXWIN/CWnd::OnSysDeadChar", "AFXWIN/CWnd::OnSysKeyDown", "AFXWIN/CWnd::OnSysKeyUp", "AFXWIN/CWnd::OnTCard", "AFXWIN/CWnd::OnTimeChange", "AFXWIN/CWnd::OnTimer", "AFXWIN/CWnd::OnTouchInput", "AFXWIN/CWnd::OnTouchInputs", "AFXWIN/CWnd::OnUniChar", "AFXWIN/CWnd::OnUnInitMenuPopup", "AFXWIN/CWnd::OnUpdateUIState", "AFXWIN/CWnd::OnUserChanged", "AFXWIN/CWnd::OnVKeyToItem", "AFXWIN/CWnd::OnVScroll", "AFXWIN/CWnd::OnVScrollClipboard", "AFXWIN/CWnd::OnWindowPosChanged", "AFXWIN/CWnd::OnWindowPosChanging", "AFXWIN/CWnd::OnWinIniChange", "AFXWIN/CWnd::OnWndMsg", "AFXWIN/CWnd::OnXButtonDblClk", "AFXWIN/CWnd::OnXButtonDown", "AFXWIN/CWnd::OnXButtonUp", "AFXWIN/CWnd::PostNcDestroy", "AFXWIN/CWnd::ReflectChildNotify", "AFXWIN/CWnd::ReflectLastMsg", "AFXWIN/CWnd::ResizeDynamicLayout", "AFXWIN/CWnd::WindowProc", "AFXWIN/CWnd::m_hWnd"]
 helpviewer_keywords: ["CWnd [MFC], CWnd", "CWnd [MFC], accDoDefaultAction", "CWnd [MFC], accHitTest", "CWnd [MFC], accLocation", "CWnd [MFC], accNavigate", "CWnd [MFC], accSelect", "CWnd [MFC], AnimateWindow", "CWnd [MFC], ArrangeIconicWindows", "CWnd [MFC], Attach", "CWnd [MFC], BeginModalState", "CWnd [MFC], BeginPaint", "CWnd [MFC], BindDefaultProperty", "CWnd [MFC], BindProperty", "CWnd [MFC], BringWindowToTop", "CWnd [MFC], CalcWindowRect", "CWnd [MFC], CancelToolTips", "CWnd [MFC], CenterWindow", "CWnd [MFC], ChangeClipboardChain", "CWnd [MFC], CheckDlgButton", "CWnd [MFC], CheckRadioButton", "CWnd [MFC], ChildWindowFromPoint", "CWnd [MFC], ClientToScreen", "CWnd [MFC], CloseWindow", "CWnd [MFC], ContinueModal", "CWnd [MFC], Create", "CWnd [MFC], CreateAccessibleProxy", "CWnd [MFC], CreateCaret", "CWnd [MFC], CreateControl", "CWnd [MFC], CreateEx", "CWnd [MFC], CreateGrayCaret", "CWnd [MFC], CreateSolidCaret", "CWnd [MFC], DeleteTempMap", "CWnd [MFC], DestroyWindow", "CWnd [MFC], Detach", "CWnd [MFC], DlgDirList", "CWnd [MFC], DlgDirListComboBox", "CWnd [MFC], DlgDirSelect", "CWnd [MFC], DlgDirSelectComboBox", "CWnd [MFC], DragAcceptFiles", "CWnd [MFC], DragDetect", "CWnd [MFC], DrawAnimatedRects", "CWnd [MFC], DrawCaption", "CWnd [MFC], DrawMenuBar", "CWnd [MFC], EnableActiveAccessibility", "CWnd [MFC], EnableDynamicLayout", "CWnd [MFC], EnableD2DSupport", "CWnd [MFC], EnableScrollBar", "CWnd [MFC], EnableScrollBarCtrl", "CWnd [MFC], EnableToolTips", "CWnd [MFC], EnableTrackingToolTips", "CWnd [MFC], EnableWindow", "CWnd [MFC], EndModalLoop", "CWnd [MFC], EndModalState", "CWnd [MFC], EndPaint", "CWnd [MFC], ExecuteDlgInit", "CWnd [MFC], FilterToolTipMessage", "CWnd [MFC], FindWindow", "CWnd [MFC], FindWindowEx", "CWnd [MFC], FlashWindow", "CWnd [MFC], FlashWindowEx", "CWnd [MFC], FromHandle", "CWnd [MFC], FromHandlePermanent", "CWnd [MFC], get_accChild", "CWnd [MFC], get_accChildCount", "CWnd [MFC], get_accDefaultAction", "CWnd [MFC], get_accDescription", "CWnd [MFC], get_accFocus", "CWnd [MFC], get_accHelp", "CWnd [MFC], get_accHelpTopic", "CWnd [MFC], get_accKeyboardShortcut", "CWnd [MFC], get_accName", "CWnd [MFC], get_accParent", "CWnd [MFC], get_accRole", "CWnd [MFC], get_accSelection", "CWnd [MFC], get_accState", "CWnd [MFC], get_accValue", "CWnd [MFC], GetActiveWindow", "CWnd [MFC], GetAncestor", "CWnd [MFC], GetCapture", "CWnd [MFC], GetCaretPos", "CWnd [MFC], GetCheckedRadioButton", "CWnd [MFC], GetClientRect", "CWnd [MFC], GetClipboardOwner", "CWnd [MFC], GetClipboardViewer", "CWnd [MFC], GetControlUnknown", "CWnd [MFC], GetDC", "CWnd [MFC], GetDCEx", "CWnd [MFC], GetDCRenderTarget", "CWnd [MFC], GetDescendantWindow", "CWnd [MFC], GetDesktopWindow", "CWnd [MFC], GetDlgCtrlID", "CWnd [MFC], GetDlgItem", "CWnd [MFC], GetDlgItemInt", "CWnd [MFC], GetDlgItemText", "CWnd [MFC], GetDSCCursor", "CWnd [MFC], GetDynamicLayout", "CWnd [MFC], GetExStyle", "CWnd [MFC], GetFocus", "CWnd [MFC], GetFont", "CWnd [MFC], GetForegroundWindow", "CWnd [MFC], GetIcon", "CWnd [MFC], GetLastActivePopup", "CWnd [MFC], GetLayeredWindowAttributes", "CWnd [MFC], GetMenu", "CWnd [MFC], GetNextDlgGroupItem", "CWnd [MFC], GetNextDlgTabItem", "CWnd [MFC], GetNextWindow", "CWnd [MFC], GetOleControlSite", "CWnd [MFC], GetOpenClipboardWindow", "CWnd [MFC], GetOwner", "CWnd [MFC], GetParent", "CWnd [MFC], GetParentFrame", "CWnd [MFC], GetParentOwner", "CWnd [MFC], GetProperty", "CWnd [MFC], GetRenderTarget", "CWnd [MFC], GetSafeHwnd", "CWnd [MFC], GetSafeOwner", "CWnd [MFC], GetScrollBarCtrl", "CWnd [MFC], GetScrollBarInfo", "CWnd [MFC], GetScrollInfo", "CWnd [MFC], GetScrollLimit", "CWnd [MFC], GetScrollPos", "CWnd [MFC], GetScrollRange", "CWnd [MFC], GetStyle", "CWnd [MFC], GetSystemMenu", "CWnd [MFC], GetTitleBarInfo", "CWnd [MFC], GetTopLevelFrame", "CWnd [MFC], GetTopLevelOwner", "CWnd [MFC], GetTopLevelParent", "CWnd [MFC], GetTopWindow", "CWnd [MFC], GetUpdateRect", "CWnd [MFC], GetUpdateRgn", "CWnd [MFC], GetWindow", "CWnd [MFC], GetWindowContextHelpId", "CWnd [MFC], GetWindowDC", "CWnd [MFC], GetWindowedChildCount", "CWnd [MFC], GetWindowInfo", "CWnd [MFC], GetWindowlessChildCount", "CWnd [MFC], GetWindowPlacement", "CWnd [MFC], GetWindowRect", "CWnd [MFC], GetWindowRgn", "CWnd [MFC], GetWindowText", "CWnd [MFC], GetWindowTextLength", "CWnd [MFC], HideCaret", "CWnd [MFC], HiliteMenuItem", "CWnd [MFC], HtmlHelp", "CWnd [MFC], Invalidate", "CWnd [MFC], InvalidateRect", "CWnd [MFC], InvalidateRgn", "CWnd [MFC], InvokeHelper", "CWnd [MFC], IsChild", "CWnd [MFC], IsD2DSupportEnabled", "CWnd [MFC], IsDialogMessage", "CWnd [MFC], IsDlgButtonChecked", "CWnd [MFC], IsDynamicLayoutEnabled", "CWnd [MFC], IsIconic", "CWnd [MFC], IsTouchWindow", "CWnd [MFC], IsWindowEnabled", "CWnd [MFC], IsWindowVisible", "CWnd [MFC], IsZoomed", "CWnd [MFC], KillTimer", "CWnd [MFC], LockWindowUpdate", "CWnd [MFC], MapWindowPoints", "CWnd [MFC], MessageBox", "CWnd [MFC], ModifyStyle", "CWnd [MFC], ModifyStyleEx", "CWnd [MFC], MoveWindow", "CWnd [MFC], NotifyWinEvent", "CWnd [MFC], OnAmbientProperty", "CWnd [MFC], OnDrawIconicThumbnailOrLivePreview", "CWnd [MFC], OnHelp", "CWnd [MFC], OnHelpFinder", "CWnd [MFC], OnHelpIndex", "CWnd [MFC], OnHelpUsing", "CWnd [MFC], OnToolHitTest", "CWnd [MFC], OpenClipboard", "CWnd [MFC], PaintWindowlessControls", "CWnd [MFC], PostMessage", "CWnd [MFC], PreCreateWindow", "CWnd [MFC], PreSubclassWindow", "CWnd [MFC], PreTranslateMessage", "CWnd [MFC], Print", "CWnd [MFC], PrintClient", "CWnd [MFC], PrintWindow", "CWnd [MFC], RedrawWindow", "CWnd [MFC], RegisterTouchWindow", "CWnd [MFC], ReleaseDC", "CWnd [MFC], RepositionBars", "CWnd [MFC], RunModalLoop", "CWnd [MFC], ScreenToClient", "CWnd [MFC], ScrollWindow", "CWnd [MFC], ScrollWindowEx", "CWnd [MFC], SendChildNotifyLastMsg", "CWnd [MFC], SendDlgItemMessage", "CWnd [MFC], SendMessage", "CWnd [MFC], SendMessageToDescendants", "CWnd [MFC], SendNotifyMessage", "CWnd [MFC], SetActiveWindow", "CWnd [MFC], SetCapture", "CWnd [MFC], SetCaretPos", "CWnd [MFC], SetClipboardViewer", "CWnd [MFC], SetDlgCtrlID", "CWnd [MFC], SetDlgItemInt", "CWnd [MFC], SetDlgItemText", "CWnd [MFC], SetFocus", "CWnd [MFC], SetFont", "CWnd [MFC], SetForegroundWindow", "CWnd [MFC], SetIcon", "CWnd [MFC], SetLayeredWindowAttributes", "CWnd [MFC], SetMenu", "CWnd [MFC], SetOwner", "CWnd [MFC], SetParent", "CWnd [MFC], SetProperty", "CWnd [MFC], SetRedraw", "CWnd [MFC], SetScrollInfo", "CWnd [MFC], SetScrollPos", "CWnd [MFC], SetScrollRange", "CWnd [MFC], SetTimer", "CWnd [MFC], SetWindowContextHelpId", "CWnd [MFC], SetWindowPlacement", "CWnd [MFC], SetWindowPos", "CWnd [MFC], SetWindowRgn", "CWnd [MFC], SetWindowText", "CWnd [MFC], ShowCaret", "CWnd [MFC], ShowOwnedPopups", "CWnd [MFC], ShowScrollBar", "CWnd [MFC], ShowWindow", "CWnd [MFC], SubclassDlgItem", "CWnd [MFC], SubclassWindow", "CWnd [MFC], UnlockWindowUpdate", "CWnd [MFC], UnsubclassWindow", "CWnd [MFC], UpdateData", "CWnd [MFC], UpdateDialogControls", "CWnd [MFC], UpdateLayeredWindow", "CWnd [MFC], UpdateWindow", "CWnd [MFC], ValidateRect", "CWnd [MFC], ValidateRgn", "CWnd [MFC], WindowFromPoint", "CWnd [MFC], WinHelp", "CWnd [MFC], Default", "CWnd [MFC], DefWindowProc", "CWnd [MFC], DoDataExchange", "CWnd [MFC], GetCurrentMessage", "CWnd [MFC], InitDynamicLayout", "CWnd [MFC], LoadDynamicLayoutResource", "CWnd [MFC], OnActivate", "CWnd [MFC], OnActivateApp", "CWnd [MFC], OnAppCommand", "CWnd [MFC], OnAskCbFormatName", "CWnd [MFC], OnCancelMode", "CWnd [MFC], OnCaptureChanged", "CWnd [MFC], OnChangeCbChain", "CWnd [MFC], OnChangeUIState", "CWnd [MFC], OnChar", "CWnd [MFC], OnCharToItem", "CWnd [MFC], OnChildActivate", "CWnd [MFC], OnChildNotify", "CWnd [MFC], OnClipboardUpdate", "CWnd [MFC], OnClose", "CWnd [MFC], OnColorizationColorChanged", "CWnd [MFC], OnCommand", "CWnd [MFC], OnCompacting", "CWnd [MFC], OnCompareItem", "CWnd [MFC], OnCompositionChanged", "CWnd [MFC], OnContextMenu", "CWnd [MFC], OnCopyData", "CWnd [MFC], OnCreate", "CWnd [MFC], OnCtlColor", "CWnd [MFC], OnDeadChar", "CWnd [MFC], OnDeleteItem", "CWnd [MFC], OnDestroy", "CWnd [MFC], OnDestroyClipboard", "CWnd [MFC], OnDeviceChange", "CWnd [MFC], OnDevModeChange", "CWnd [MFC], OnDrawClipboard", "CWnd [MFC], OnDrawItem", "CWnd [MFC], OnDropFiles", "CWnd [MFC], OnEnable", "CWnd [MFC], OnEndSession", "CWnd [MFC], OnEnterIdle", "CWnd [MFC], OnEnterMenuLoop", "CWnd [MFC], OnEnterSizeMove", "CWnd [MFC], OnEraseBkgnd", "CWnd [MFC], OnExitMenuLoop", "CWnd [MFC], OnExitSizeMove", "CWnd [MFC], OnFontChange", "CWnd [MFC], OnGetDlgCode", "CWnd [MFC], OnGetMinMaxInfo", "CWnd [MFC], OnHelpInfo", "CWnd [MFC], OnHotKey", "CWnd [MFC], OnHScroll", "CWnd [MFC], OnHScrollClipboard", "CWnd [MFC], OnIconEraseBkgnd", "CWnd [MFC], OnInitMenu", "CWnd [MFC], OnInitMenuPopup", "CWnd [MFC], OnInputDeviceChange", "CWnd [MFC], OnInputLangChange", "CWnd [MFC], OnInputLangChangeRequest", "CWnd [MFC], OnKeyDown", "CWnd [MFC], OnKeyUp", "CWnd [MFC], OnKillFocus", "CWnd [MFC], OnLButtonDblClk", "CWnd [MFC], OnLButtonDown", "CWnd [MFC], OnLButtonUp", "CWnd [MFC], OnMButtonDblClk", "CWnd [MFC], OnMButtonDown", "CWnd [MFC], OnMButtonUp", "CWnd [MFC], OnMDIActivate", "CWnd [MFC], OnMeasureItem", "CWnd [MFC], OnMenuChar", "CWnd [MFC], OnMenuDrag", "CWnd [MFC], OnMenuGetObject", "CWnd [MFC], OnMenuRButtonUp", "CWnd [MFC], OnMenuSelect", "CWnd [MFC], OnMouseActivate", "CWnd [MFC], OnMouseHover", "CWnd [MFC], OnMouseHWheel", "CWnd [MFC], OnMouseLeave", "CWnd [MFC], OnMouseMove", "CWnd [MFC], OnMouseWheel", "CWnd [MFC], OnMove", "CWnd [MFC], OnMoving", "CWnd [MFC], OnNcActivate", "CWnd [MFC], OnNcCalcSize", "CWnd [MFC], OnNcCreate", "CWnd [MFC], OnNcDestroy", "CWnd [MFC], OnNcHitTest", "CWnd [MFC], OnNcLButtonDblClk", "CWnd [MFC], OnNcLButtonDown", "CWnd [MFC], OnNcLButtonUp", "CWnd [MFC], OnNcMButtonDblClk", "CWnd [MFC], OnNcMButtonDown", "CWnd [MFC], OnNcMButtonUp", "CWnd [MFC], OnNcMouseHover", "CWnd [MFC], OnNcMouseLeave", "CWnd [MFC], OnNcMouseMove", "CWnd [MFC], OnNcPaint", "CWnd [MFC], OnNcRButtonDblClk", "CWnd [MFC], OnNcRButtonDown", "CWnd [MFC], OnNcRButtonUp", "CWnd [MFC], OnNcRenderingChanged", "CWnd [MFC], OnNcXButtonDblClk", "CWnd [MFC], OnNcXButtonDown", "CWnd [MFC], OnNcXButtonUp", "CWnd [MFC], OnNextMenu", "CWnd [MFC], OnNotify", "CWnd [MFC], OnNotifyFormat", "CWnd [MFC], OnPaint", "CWnd [MFC], OnPaintClipboard", "CWnd [MFC], OnPaletteChanged", "CWnd [MFC], OnPaletteIsChanging", "CWnd [MFC], OnParentNotify", "CWnd [MFC], OnPowerBroadcast", "CWnd [MFC], OnQueryDragIcon", "CWnd [MFC], OnQueryEndSession", "CWnd [MFC], OnQueryNewPalette", "CWnd [MFC], OnQueryOpen", "CWnd [MFC], OnQueryUIState", "CWnd [MFC], OnRawInput", "CWnd [MFC], OnRButtonDblClk", "CWnd [MFC], OnRButtonDown", "CWnd [MFC], OnRButtonUp", "CWnd [MFC], OnRenderAllFormats", "CWnd [MFC], OnRenderFormat", "CWnd [MFC], OnSessionChange", "CWnd [MFC], OnSetCursor", "CWnd [MFC], OnSetFocus", "CWnd [MFC], OnSettingChange", "CWnd [MFC], OnShowWindow", "CWnd [MFC], OnSize", "CWnd [MFC], OnSizeClipboard", "CWnd [MFC], OnSizing", "CWnd [MFC], OnSpoolerStatus", "CWnd [MFC], OnStyleChanged", "CWnd [MFC], OnStyleChanging", "CWnd [MFC], OnSysChar", "CWnd [MFC], OnSysColorChange", "CWnd [MFC], OnSysCommand", "CWnd [MFC], OnSysDeadChar", "CWnd [MFC], OnSysKeyDown", "CWnd [MFC], OnSysKeyUp", "CWnd [MFC], OnTCard", "CWnd [MFC], OnTimeChange", "CWnd [MFC], OnTimer", "CWnd [MFC], OnTouchInput", "CWnd [MFC], OnTouchInputs", "CWnd [MFC], OnUniChar", "CWnd [MFC], OnUnInitMenuPopup", "CWnd [MFC], OnUpdateUIState", "CWnd [MFC], OnUserChanged", "CWnd [MFC], OnVKeyToItem", "CWnd [MFC], OnVScroll", "CWnd [MFC], OnVScrollClipboard", "CWnd [MFC], OnWindowPosChanged", "CWnd [MFC], OnWindowPosChanging", "CWnd [MFC], OnWinIniChange", "CWnd [MFC], OnWndMsg", "CWnd [MFC], OnXButtonDblClk", "CWnd [MFC], OnXButtonDown", "CWnd [MFC], OnXButtonUp", "CWnd [MFC], PostNcDestroy", "CWnd [MFC], ReflectChildNotify", "CWnd [MFC], ReflectLastMsg", "CWnd [MFC], ResizeDynamicLayout", "CWnd [MFC], WindowProc", "CWnd [MFC], m_hWnd"]
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
@@ -87,7 +87,7 @@ class CWnd : public CCmdTarget
 |[`CWnd::FindWindowEx`](#findwindowex)|Returns the handle of the window, which is identified by its window name and window class.|
 |[`CWnd::FlashWindow`](#flashwindow)|Flashes the window once.|
 |[`CWnd::FlashWindowEx`](#flashwindowex)|Flashes the window with additional functionality.|
-|[`CWnd::FromHandle`](#fromhandle)|Returns a pointer to a `CWnd` object when given a handle to a window. If a `CWnd` object is not attached to the handle, a temporary `CWnd` object is created and attached.|
+|[`CWnd::FromHandle`](#fromhandle)|Returns a pointer to a `CWnd` object when given a handle to a window. If a `CWnd` object isn't attached to the handle, a temporary `CWnd` object is created and attached.|
 |[`CWnd::FromHandlePermanent`](#fromhandlepermanent)|Returns a pointer to a `CWnd` object when given a handle to a window.|
 |[`CWnd::get_accChild`](#get_accchild)|Called by the framework to retrieve the address of an `IDispatch` interface for the specified child.|
 |[`CWnd::get_accChildCount`](#get_accchildcount)|Called by the framework to retrieve the number of children belonging to this object.|
@@ -348,7 +348,7 @@ class CWnd : public CCmdTarget
 |[`CWnd::OnMenuSelect`](#onmenuselect)|Called when the user selects a menu item.|
 |[`CWnd::OnMouseActivate`](#onmouseactivate)|Called when the cursor is in an inactive window and the user presses a mouse button.|
 |[`CWnd::OnMouseHover`](#onmousehover)|Called when the cursor hovers over the client area of the window for the period of time specified in a prior call to [`TrackMouseEvent`](/windows/win32/api/winuser/nf-winuser-trackmouseevent).|
-|[`CWnd::OnMouseHWheel`](#onmousehwheel)|Called when the current window is composed by the Desktop Window Manager (DWM), and that window is maximized.|
+|[`CWnd::OnMouseHWheel`](#onmousehwheel)|Called when the mouse's horizontal scroll wheel is tilted or rotated.|
 |[`CWnd::OnMouseLeave`](#onmouseleave)|Called when the cursor leaves the client area of the window specified in a prior call to [`TrackMouseEvent`](/windows/win32/api/winuser/nf-winuser-trackmouseevent).|
 |[`CWnd::OnMouseMove`](#onmousemove)|Called when the mouse cursor moves.|
 |[`CWnd::OnMouseWheel`](#onmousewheel)|Called when a user rotates the mouse wheel. Uses Windows NT 4.0 message handling.|
@@ -397,7 +397,7 @@ class CWnd : public CCmdTarget
 |[`CWnd::OnRenderAllFormats`](#onrenderallformats)|Called when the owner application is being destroyed and needs to render all its formats.|
 |[`CWnd::OnRenderFormat`](#onrenderformat)|Called for the Clipboard owner when a particular format with delayed rendering needs to be rendered.|
 |[`CWnd::OnSessionChange`](#onsessionchange)|Called to notify an application of a change in session state.|
-|[`CWnd::OnSetCursor`](#onsetcursor)|Called if mouse input is not captured and the mouse causes cursor movement within a window.|
+|[`CWnd::OnSetCursor`](#onsetcursor)|Called if mouse input isn't captured and the mouse causes cursor movement within a window.|
 |[`CWnd::OnSetFocus`](#onsetfocus)|Called after `CWnd` gains the input focus.|
 |[`CWnd::OnSettingChange`](#onsettingchange)|Called when the Win32 `SystemParametersInfo` function changes a system-wide setting.|
 |[`CWnd::OnShowWindow`](#onshowwindow)|Called when `CWnd` is to be hidden or shown.|
@@ -433,7 +433,7 @@ class CWnd : public CCmdTarget
 |[`CWnd::OnXButtonDown`](#onxbuttondown)|Called when the user presses `XBUTTON1` or `XBUTTON2` while the cursor is in the client area of a window.|
 |[`CWnd::OnXButtonUp`](#onxbuttonup)|Called when the user releases `XBUTTON1` or `XBUTTON2` while the cursor is in the client area of a window.|
 |[`CWnd::PostNcDestroy`](#postncdestroy)|This virtual function is called by the default [OnNcDestroy](#onncdestroy) function after the window has been destroyed.|
-|[`CWnd::ReflectChildNotify`](#reflectchildnotify)|Helper function which reflects a message to its source.|
+|[`CWnd::ReflectChildNotify`](#reflectchildnotify)|Helper function, which reflects a message to its source.|
 |[`CWnd::ReflectLastMsg`](#reflectlastmsg)|Reflects the last message to the child window.|
 |[`CWnd::ResizeDynamicLayout`](#resizedynamiclayout)|Called by the framework when the window size changes to adjust the layout of child windows, if dynamic layout is enabled for the window.|
 |[`CWnd::WindowProc`](#windowproc)|Provides a window procedure for a `CWnd`. The default dispatches messages through the message map.|
@@ -443,7 +443,7 @@ class CWnd : public CCmdTarget
 |Name|Description|
 |----------|-----------------|
 |[`CWnd::operator HWND`](#operator_hwnd)|Call to get a handle to a window.|
-|[`CWnd::operator !=`](#operator_neq)|Determines if a window is not the same as the window whose handle is [`m_hWnd`](#m_hwnd).|
+|[`CWnd::operator !=`](#operator_neq)|Determines if a window isn't the same as the window whose handle is [`m_hWnd`](#m_hwnd).|
 |[`CWnd::operator ==`](#operator_eq_eq)|Determines if a window is the same as the window whose handle is [`m_hWnd`](#m_hwnd).|
 
 ### Public Data Members
@@ -739,7 +739,7 @@ Points to the [`PAINTSTRUCT`](/windows/win32/api/winuser/ns-winuser-paintstruct)
 
 ### Return Value
 
-Identifies the device context for `CWnd`. The pointer may be temporary and should not be stored beyond the scope of [`EndPaint`](#endpaint).
+Identifies the device context for `CWnd`. The pointer may be temporary and shouldn't be stored beyond the scope of [`EndPaint`](#endpaint).
 
 ### Remarks
 
@@ -771,7 +771,7 @@ void BindDefaultProperty(
 Specifies the `DISPID` of a property on a data-bound control that is to be bound to a data-source control.
 
 *`vtProp`*<br/>
-Specifies the type of the property to be bound — for example, `VT_BSTR`, `VT_VARIANT`, and so on.
+Specifies the type of the property to be bound. For example, `VT_BSTR`, `VT_VARIANT`, and so on.
 
 *`szFieldName`*<br/>
 Specifies the name of the column, in the cursor provided by the data-source control, to which the property will be bound.
@@ -900,7 +900,7 @@ Pointer to an alternate window relative to which it will be centered (other than
 
 ### Remarks
 
-Usually called from [`CDialog::OnInitDialog`](../../mfc/reference/cdialog-class.md#oninitdialog) to center dialog boxes relative to the main window of the application. By default, the function centers child windows relative to their parent window, and pop-up windows relative to their owner. If the pop-up window is not owned, it is centered relative to the screen. To center a window relative to a specific window which is not the owner or parent, the *`pAlternateOwner`* parameter may be set to a valid window. To force centering relative to the screen, pass the value returned by [`CWnd::GetDesktopWindow`](#getdesktopwindow) as *`pAlternateOwner`*.
+Usually called from [`CDialog::OnInitDialog`](../../mfc/reference/cdialog-class.md#oninitdialog) to center dialog boxes relative to the main window of the application. By default, the function centers child windows relative to their parent window, and pop-up windows relative to their owner. If the pop-up window isn't owned, it is centered relative to the screen. To center a window relative to a specific window that isn't the owner or parent, the *`pAlternateOwner`* parameter may be set to a valid window. To force centering relative to the screen, pass the value returned by [`CWnd::GetDesktopWindow`](#getdesktopwindow) as *`pAlternateOwner`*.
 
 ### Example
 
@@ -1008,13 +1008,13 @@ Specifies which child windows to skip. This parameter can be a combination of th
 
 ### Return Value
 
-Identifies the child window that contains the point. It is `NULL` if the given point lies outside of the client area. If the point is within the client area but is not contained within any child window, `CWnd` is returned.
+Identifies the child window that contains the point. It is `NULL` if the given point lies outside of the client area. If the point is within the client area but isn't contained within any child window, `CWnd` is returned.
 
 This member function will return a hidden or disabled child window that contains the specified point.
 
 More than one window may contain the given point. However, this function returns only the `CWnd`* of the first window encountered that contains the point.
 
-The `CWnd`* that is returned may be temporary and should not be stored for later use.
+The `CWnd`* that is returned may be temporary and shouldn't be stored for later use.
 
 ### Example
 
@@ -1098,7 +1098,7 @@ virtual BOOL Create(
 [in] Pointer to a null-terminated string that contains the window display name; otherwise `NULL` for no window display name.
 
 *`dwStyle`*<br/>
-[in] Bitwise combination (OR) of [window styles](styles-used-by-mfc.md#window-styles). The `WS_POPUP` option is not a valid style.
+[in] Bitwise combination (OR) of [window styles](styles-used-by-mfc.md#window-styles). The `WS_POPUP` option isn't a valid style.
 
 *`rect`*<br/>
 [in] The size and location of the window relative to the top-left corner of the parent window.
@@ -1119,11 +1119,11 @@ virtual BOOL Create(
 ### Remarks
 
 > [!WARNING]
-> `CWnd::PreCreateWindow` now assigns the `hMenu` member of its `CREATESTRUCT` parameter to the **`this`** pointer if the menu is `NULL` and the style contains `WS_CHILD`. For proper functionality, ensure that your dialog control has an ID that is not `NULL`.
+> `CWnd::PreCreateWindow` now assigns the `hMenu` member of its `CREATESTRUCT` parameter to the **`this`** pointer if the menu is `NULL` and the style contains `WS_CHILD`. For proper functionality, ensure that your dialog control has an ID that isn't `NULL`.
 >
 > This change fixes a crash in managed/native interop scenarios. A `TRACE` statement in `CWnd::Create` alerts the developer of the problem.
 
-Use the [`AfxRegisterWndClass`](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) function to register window classes. User defined window classes are available in the module where they are registered.
+Use the [`AfxRegisterWndClass`](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) function to register window classes. User-defined window classes are available in the module where they are registered.
 
 The [`CWnd::OnCreate`](#oncreate) method is called before the `Create` method returns, and before the window becomes visible.
 
@@ -1229,10 +1229,10 @@ BOOL CreateControl(
 ### Parameters
 
 *`pszClass`*<br/>
-This string may contain the OLE "short name" (`ProgID`) for the class, e.g., "`CIRC3.Circ3Ctrl.1`". The name needs to match the same name registered by the control. Alternatively, the string may contain the string form of a `CLSID`, contained in braces, e.g., "`{9DBAFCCF-592F-101B-85CE-00608CEC297B}`". In either case, `CreateControl` converts the string to the corresponding class ID.
+This string may contain the OLE "short name" (`ProgID`) for the class. For example, `"CIRC3.Circ3Ctrl.1"`. The name needs to match the same name registered by the control. Alternatively, the string may contain the string form of a `CLSID`, contained in braces. For example,  `"{9DBAFCCF-592F-101B-85CE-00608CEC297B}"`. In either case, `CreateControl` converts the string to the corresponding class ID.
 
 *`pszWindowName`*<br/>
-A pointer to the text to be displayed in the control. Sets the value of the control's Caption or Text property (if any). If `NULL`, the control's Caption or Text property is not changed.
+A pointer to the text to be displayed in the control. Sets the value of the control's Caption or Text property (if any). If `NULL`, the control's Caption or Text property isn't changed.
 
 *`dwStyle`*<br/>
 Windows styles. The available styles are listed under Remarks.
@@ -1368,13 +1368,13 @@ For a child window, the window ID; otherwise, the ID of a menu for the window.
 ### Remarks
 
 > [!WARNING]
-> `CWnd::PreCreateWindow` now assigns the `hMenu` member of its `CREATESTRUCT` parameter to the **`this`** pointer if the menu is `NULL` and the style contains `WS_CHILD`. For proper functionality, ensure that your dialog control has an ID that is not `NULL`.
+> `CWnd::PreCreateWindow` now assigns the `hMenu` member of its `CREATESTRUCT` parameter to the **`this`** pointer if the menu is `NULL` and the style contains `WS_CHILD`. For proper functionality, ensure that your dialog control has an ID that isn't `NULL`.
 >
 > This change fixes a crash in managed/native interop scenarios. A `TRACE` statement in `CWnd::Create` alerts the developer of the problem.
 
 The default extended window style is `WS_EX_LEFT`. The default window style is `WS_OVERLAPPED`.
 
-Use the [`AfxRegisterWndClass`](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) function to register window classes. User defined window classes are available in the module where they are registered.
+Use the [`AfxRegisterWndClass`](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) function to register window classes. User-defined window classes are available in the module where they are registered.
 
 Dimensions for child windows are relative to the top-left corner of the client area of the parent window. Dimensions for top-level windows are relative to the top-left corner of the screen.
 
@@ -1462,7 +1462,7 @@ CWnd();
 
 ### Remarks
 
-The Windows window is not created and attached until the [`CreateEx`](#createex) or [`Create`](#create) member function is called.
+The Windows window isn't created and attached until the [`CreateEx`](#createex) or [`Create`](#create) member function is called.
 
 ## <a name="default"></a> `CWnd::Default`
 
@@ -1546,7 +1546,7 @@ Nonzero if the window is destroyed; otherwise 0.
 
 The `DestroyWindow` member function sends appropriate messages to the window to deactivate it and remove the input focus. It also destroys the window's menu, flushes the application queue, destroys outstanding timers, removes Clipboard ownership, and breaks the Clipboard-viewer chain if `CWnd` is at the top of the viewer chain. It sends [`WM_DESTROY`](#ondestroy) and [`WM_NCDESTROY`](#onncdestroy) messages to the window. It does not destroy the `CWnd` object.
 
-`DestroyWindow` is a place holder for performing cleanup. Because `DestroyWindow` is a virtual function, it is shown in any `CWnd`-derived class in Class View. But even if you override this function in your `CWnd`-derived class, `DestroyWindow` is not necessarily called. If `DestroyWindow` is not called in the MFC code, then you have to explicitly call it in your own code if you want it to be called.
+`DestroyWindow` is a place holder for performing cleanup. Because `DestroyWindow` is a virtual function, it is shown in any `CWnd`-derived class in Class View. But even if you override this function in your `CWnd`-derived class, `DestroyWindow` isn't necessarily called. If `DestroyWindow` isn't called in the MFC code, then you have to explicitly call it in your own code if you want it to be called.
 
 Assume, for example, you have overridden `DestroyWindow` in a `CView`-derived class. Since MFC source code does not call `DestroyWindow` in any of its `CFrameWnd`-derived classes, your overridden `DestroyWindow` will not be called unless you call it explicitly.
 
@@ -1659,7 +1659,7 @@ int DlgDirListComboBox(
 ### Parameters
 
 *`lpPathSpec`*<br/>
-Points to a null-terminated string that contains the path or filename. `DlgDirListComboBox` modifies this string, so this data should not be in the form of a string literal. See the following "Remarks" section.
+Points to a null-terminated string that contains the path or filename. `DlgDirListComboBox` modifies this string, so this data shouldn't be in the form of a string literal. See the following "Remarks" section.
 
 *`nIDComboBox`*<br/>
 Specifies the identifier of a combo box in a dialog box. If *`nIDComboBox`* is 0, `DlgDirListComboBox` assumes that no combo box exists and does not attempt to fill one.
@@ -1818,7 +1818,7 @@ Flag that indicates whether dragged files are accepted.
 
 ### Remarks
 
-Only the window that calls `DragAcceptFiles` with the *`bAccept`* parameter set to `TRUE` has identified itself as able to process the Windows message `WM_DROPFILES`. For example, in an MDI application, if the `CMDIFrameWnd` window pointer is used in the `DragAcceptFiles` function call, only the `CMDIFrameWnd` window gets the `WM_DROPFILES` message. This message is not sent to all open `CMDIChildWnd` windows. For a `CMDIChildWnd` window to receive this message, you must call `DragAcceptFiles` with the `CMDIChildWnd` window pointer.
+Only the window that calls `DragAcceptFiles` with the *`bAccept`* parameter set to `TRUE` has identified itself as able to process the Windows message `WM_DROPFILES`. For example, in an MDI application, if the `CMDIFrameWnd` window pointer is used in the `DragAcceptFiles` function call, only the `CMDIFrameWnd` window gets the `WM_DROPFILES` message. This message isn't sent to all open `CMDIChildWnd` windows. For a `CMDIChildWnd` window to receive this message, you must call `DragAcceptFiles` with the `CMDIChildWnd` window pointer.
 
 To discontinue receiving dragged files, call the member function with *`bAccept`* set to `FALSE`.
 
@@ -1837,9 +1837,9 @@ Initial position of the mouse, in screen coordinates. The function determines th
 
 ### Return Value
 
-If the user moved the mouse outside of the drag rectangle while holding down the left button , the return value is nonzero.
+If the user moved the mouse outside of the drag rectangle while holding down the left button, the return value is nonzero.
 
-If the user did not move the mouse outside of the drag rectangle while holding down the left button , the return value is zero.
+If the user did not move the mouse outside of the drag rectangle while holding down the left button, the return value is zero.
 
 ### Remarks
 
@@ -2052,7 +2052,7 @@ Override [`OnToolHitTest`](#ontoolhittest) to provide the [`TOOLINFO`](/windows/
 
 See [`TOOLINFO`](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) in the Windows SDK for more information on this structure.
 
-Simply calling `EnableToolTips` is not enough to display tool tips for your child controls unless the parent window is derived from `CFrameWnd`. This is because `CFrameWnd` provides a default handler for the `TTN_NEEDTEXT` notification. If your parent window is not derived from `CFrameWnd`, that is, if it is a dialog box or a form view, tool tips for your child controls will not display correctly unless you provide a handler for the `TTN_NEEDTEXT` tool tip notification. See [Tool Tips](../../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md).
+Simply calling `EnableToolTips` isn't enough to display tool tips for your child controls unless the parent window is derived from `CFrameWnd`. This is because `CFrameWnd` provides a default handler for the `TTN_NEEDTEXT` notification. If your parent window isn't derived from `CFrameWnd`, that is, if it is a dialog box or a form view, tool tips for your child controls will not display correctly unless you provide a handler for the `TTN_NEEDTEXT` tool tip notification. See [Tool Tips](../../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md).
 
 The default tool tips provided for your windows by `EnableToolTips` do not have text associated with them. To retrieve text for the tool tip to display, the `TTN_NEEDTEXT` notification is sent to the tool tip control's parent window just before the tool tip window is displayed. If there is no handler for this message to assign some value to the *`pszText`* member of the `TOOLTIPTEXT` structure, there will be no text displayed for the tool tip.
 
@@ -2232,7 +2232,7 @@ Points to a null-terminated string that specifies the window name (the window's 
 
 Identifies the window that has the specified class name and window name. It is `NULL` if no such window is found.
 
-The `CWnd`* may be temporary and should not be stored for later use.
+The `CWnd`* may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -2301,7 +2301,7 @@ Typically, a window is flashed to inform the user that it requires attention but
 
 The *`bInvert`* parameter should be `FALSE` only when the window is getting the input focus and will no longer be flashing; it should be `TRUE` on successive calls while waiting to get the input focus.
 
-This function always returns nonzero for minimized windows. If the window is minimized, `FlashWindow` will simply flash the window's icon; *`bInvert`* is ignored for minimized windows.
+This function always returns nonzero for minimized windows. If the window is minimized, `FlashWindow` will flash the window's icon; *`bInvert`* is ignored for minimized windows.
 
 ### Example
 
@@ -2339,7 +2339,7 @@ This method emulates the functionality of the function [`FlashWindowEx`](/window
 
 ## <a name="fromhandle"></a> `CWnd::FromHandle`
 
-Returns a pointer to a `CWnd` object when given a handle to a window. If a `CWnd` object is not attached to the handle, a temporary `CWnd` object is created and attached.
+Returns a pointer to a `CWnd` object when given a handle to a window. If a `CWnd` object isn't attached to the handle, a temporary `CWnd` object is created and attached.
 
 ```
 static CWnd* PASCAL FromHandle(HWND hWnd);
@@ -2352,9 +2352,9 @@ An `HWND` of a Windows window.
 
 ### Return Value
 
-Returns a pointer to a `CWnd` object when given a handle to a window. If a `CWnd` object is not attached to the handle, a temporary `CWnd` object is created and attached.
+Returns a pointer to a `CWnd` object when given a handle to a window. If a `CWnd` object isn't attached to the handle, a temporary `CWnd` object is created and attached.
 
-The pointer may be temporary and should not be stored for later use.
+The pointer may be temporary and shouldn't be stored for later use.
 
 ## <a name="fromhandlepermanent"></a> `CWnd::FromHandlePermanent`
 
@@ -2375,7 +2375,7 @@ A pointer to a `CWnd` object.
 
 ### Remarks
 
-If a `CWnd` object is not attached to the handle, `NULL` is returned.
+If a `CWnd` object isn't attached to the handle, `NULL` is returned.
 
 This function, unlike [`FromHandle`](#fromhandle), does not create temporary objects.
 
@@ -2793,7 +2793,7 @@ static CWnd* PASCAL GetActiveWindow();
 
 ### Return Value
 
-The active window or `NULL` if no window was active at the time of the call. The pointer may be temporary and should not be stored for later use.
+The active window or `NULL` if no window was active at the time of the call. The pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -2832,7 +2832,7 @@ static CWnd* PASCAL GetCapture();
 
 Identifies the window that has the mouse capture. It is `NULL` if no window has the mouse capture.
 
-The return value may be temporary and should not be stored for later use.
+The return value may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -2909,11 +2909,11 @@ static CWnd* PASCAL GetClipboardOwner();
 
 Identifies the window that owns the Clipboard if the function is successful. Otherwise, it is `NULL`.
 
-The returned pointer may be temporary and should not be stored for later use.
+The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
-The Clipboard can still contain data even if it is not currently owned.
+The Clipboard can still contain data even if it isn't currently owned.
 
 ## <a name="getclipboardviewer"></a> `CWnd::GetClipboardViewer`
 
@@ -2927,7 +2927,7 @@ static CWnd* PASCAL GetClipboardViewer();
 
 Identifies the window currently responsible for displaying the Clipboard if successful; otherwise `NULL` (for example, if there is no viewer).
 
-The returned pointer may be temporary and should not be stored for later use.
+The returned pointer may be temporary and shouldn't be stored for later use.
 
 ## <a name="getcontrolunknown"></a> `CWnd::GetControlUnknown`
 
@@ -2943,9 +2943,9 @@ A pointer to the [`IUnknown`](/windows/win32/api/unknwn/nn-unknwn-iunknown) inte
 
 ### Remarks
 
-You should not release this `IUnknown` pointer. Typically, you would use to obtain a specific interface of the control.
+You shouldn't release this `IUnknown` pointer. Typically, you would use to obtain a specific interface of the control.
 
-The interface pointer returned by `GetControlUnknown` is not reference-counted. Do not call [`IUnknown::Release`](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) on the pointer unless you have previously called [`IUnknown::AddRef`](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) on it.
+The interface pointer returned by `GetControlUnknown` isn't reference-counted. Do not call [`IUnknown::Release`](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) on the pointer unless you have previously called [`IUnknown::AddRef`](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) on it.
 
 ### Example
 
@@ -2977,7 +2977,7 @@ CDC* GetDC();
 
 ### Return Value
 
-Identifies the device context for the `CWnd` client area if successful; otherwise, the return value is `NULL`. The pointer may be temporary and should not be stored for later use.
+Identifies the device context for the `CWnd` client area if successful; otherwise, the return value is `NULL`. The pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -3033,7 +3033,7 @@ This function, which is an extension to the [`GetDC`](/windows/win32/api/winuser
 
 Unless the device context belongs to a window class, the [`ReleaseDC`](/windows/win32/api/winuser/nf-winuser-releasedc) function must be called to release the context after drawing. Since only five common device contexts are available at any given time, failure to release a device context can prevent other applications from gaining access to a device context.
 
-To obtain a cached device context, an application must specify [`DCX_CACHE`](/windows/win32/api/winuser/nf-winuser-getdcex). If DCX_CACHE is not specified and the window is neither `CS_OWNDC` nor [`CS_CLASSDC`](/windows/win32/api/winuser/ns-winuser-wndclassw), this function returns `NULL`.
+To obtain a cached device context, an application must specify [`DCX_CACHE`](/windows/win32/api/winuser/nf-winuser-getdcex). If DCX_CACHE isn't specified and the window is neither `CS_OWNDC` nor [`CS_CLASSDC`](/windows/win32/api/winuser/ns-winuser-wndclassw), this function returns `NULL`.
 
 A device context with special characteristics is returned by the [`GetDCEx`](/windows/win32/api/winuser/nf-winuser-getdcex) function if the `CS_CLASSDC`, [`CS_OWNDC`](/windows/win32/api/winuser/ns-winuser-wndclassw), or [`CS_PARENTDC`](/windows/win32/api/winuser/ns-winuser-wndclassw) style was specified in the [`WNDCLASS`](/windows/win32/api/winuser/ns-winuser-wndclassw) structure when the class was registered.
 
@@ -3089,7 +3089,7 @@ static CWnd* PASCAL GetDesktopWindow();
 
 ### Return Value
 
-Identifies the Windows desktop window. This pointer may be temporary and should not be stored for later use.
+Identifies the Windows desktop window. This pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -3139,7 +3139,7 @@ A pointer to a child window.
 
 A pointer to the given control or child window. If no control with the integer ID given by the *`nID`* parameter exists, the value is `NULL`.
 
-The returned pointer may be temporary and should not be stored for later use.
+The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -3254,7 +3254,7 @@ CMFCDynamicLayout* GetDynamicLayout();
 
 ### Return Value
 
-A pointer to the dynamic layout manager object, or `NULL` if dynamic layout is not enabled.
+A pointer to the dynamic layout manager object, or `NULL` if dynamic layout isn't enabled.
 
 ### Remarks
 
@@ -3284,7 +3284,7 @@ static CWnd* PASCAL GetFocus();
 
 A pointer to the window that has the current focus, or `NULL` if there is no focus window.
 
-The pointer may be temporary and should not be stored for later use.
+The pointer may be temporary and shouldn't be stored for later use.
 
 ## <a name="getfont"></a> `CWnd::GetFont`
 
@@ -3351,9 +3351,9 @@ Identifies the most recently active pop-up window. The return value will be the 
 
 - The window does not own any pop-up windows.
 
-- The window is not a top-level window or is owned by another window.
+- The window isn't a top-level window or is owned by another window.
 
-The pointer may be temporary and should not be stored for later use.
+The pointer may be temporary and shouldn't be stored for later use.
 
 ### Example
 
@@ -3373,13 +3373,13 @@ BOOL GetLayeredWindowAttributes(
 ### Parameters
 
 *`pcrKey`*<br/>
-Pointer to a `COLORREF` value that receives the transparency color key to be used when composing the layered window. All pixels painted by the window in this color will be transparent. This can be `NULL` if the argument is not needed.
+Pointer to a `COLORREF` value that receives the transparency color key to be used when composing the layered window. All pixels painted by the window in this color will be transparent. This can be `NULL` if the argument isn't needed.
 
 *`pbAlpha`*<br/>
-Pointer to a `BYTE` that receives the Alpha value used to describe the opacity of the layered window. When the variable referred to by *`pbAlpha`* is 0, the window is completely transparent. When the variable referred to by *`pbAlpha`* is 255, the window is opaque. This can be `NULL` if the argument is not needed.
+Pointer to a `BYTE` that receives the Alpha value used to describe the opacity of the layered window. When the variable referred to by *`pbAlpha`* is 0, the window is completely transparent. When the variable referred to by *`pbAlpha`* is 255, the window is opaque. This can be `NULL` if the argument isn't needed.
 
 *`pdwFlags`*<br/>
-Pointer to a `DWORD` that receives a layering flag. This can be `NULL` if the argument is not needed. For a complete list of possible values, see [`GetLayeredWindowAttributes](/windows/win32/api/winuser/nf-winuser-getlayeredwindowattributes).
+Pointer to a `DWORD` that receives a layering flag. This can be `NULL` if the argument isn't needed. For a complete list of possible values, see [`GetLayeredWindowAttributes](/windows/win32/api/winuser/nf-winuser-getlayeredwindowattributes).
 
 ### Return Value
 
@@ -3401,11 +3401,11 @@ CMenu* GetMenu() const;
 
 Identifies the menu. The value is `NULL` if `CWnd` has no menu. The return value is undefined if `CWnd` is a child window.
 
-The returned pointer may be temporary and should not be stored for later use.
+The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
-This function should not be used for child windows because they do not have a menu.
+This function shouldn't be used for child windows because they do not have a menu.
 
 ### Example
 
@@ -3469,7 +3469,7 @@ Identifies the `COleControlSiteOrWnd` control. For more information about `COleC
 
 Pointer to the previous or next control in the group if the member function is successful.
 
-The returned pointer may be temporary and should not be stored for later use.
+The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -3515,7 +3515,7 @@ Specifies how the function is to search the dialog box. If `TRUE`, the function 
 
 Pointer to the previous or next control that has the `WS_TABSTOP` style, if the member function is successful.
 
-The returned pointer may be temporary and should not be stored for later use.
+The returned pointer may be temporary and shouldn't be stored for later use.
 
 For more information about `COleControlSiteOrWnd`, see [`CWnd::GetNextDlgGroupItem`](#getnextdlggroupitem).
 
@@ -3536,7 +3536,7 @@ Specifies whether the function returns a pointer to the next window or the previ
 
 Identifies the next (or the previous) window in the window manager's list if the member function is successful.
 
-The returned pointer may be temporary and should not be stored for later use.
+The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -3601,7 +3601,7 @@ See the Return Values section in [`GetParent`](/windows/win32/api/winuser/nf-win
 
 ### Remarks
 
-The `GetParent` function returns a pointer to the immediate parent (if it exists). In contrast, the [`GetParentOwner`](#getparentowner) function returns a pointer to the most immediate parent or owner window that is not a child window (does not have the `WS_CHILD` style). If you have a child window within a child window `GetParent` and `GetParentOwner` return different results.
+The `GetParent` function returns a pointer to the immediate parent (if it exists). In contrast, the [`GetParentOwner`](#getparentowner) function returns a pointer to the most immediate parent or owner window that isn't a child window (does not have the `WS_CHILD` style). If you have a child window within a child window `GetParent` and `GetParentOwner` return different results.
 
 ## <a name="getparentframe"></a> `CWnd::GetParentFrame`
 
@@ -3629,11 +3629,11 @@ CWnd* GetParentOwner() const;
 
 ### Return Value
 
-A pointer to a `CWnd` object. If a `CWnd` object is not attached to the handle, a temporary `CWnd` object is created and attached. The pointer may be temporary and should not be stored for later use.
+A pointer to a `CWnd` object. If a `CWnd` object isn't attached to the handle, a temporary `CWnd` object is created and attached. The pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
-`GetParentOwner` returns a pointer to the most immediate parent or owner window that is not a child window (does not have the `WS_CHILD` style). The current owner window can be set with [`SetOwner`](#setowner). By default, the parent of a window is its owner.
+`GetParentOwner` returns a pointer to the most immediate parent or owner window that isn't a child window (does not have the `WS_CHILD` style). The current owner window can be set with [`SetOwner`](#setowner). By default, the parent of a window is its owner.
 
 In contrast, the [`GetParent`](#getparent) function returns a pointer to the immediate parent, whether it is a child window or not. If you have a child window within a child window `GetParent` and `GetParentOwner` return different results.
 
@@ -3657,7 +3657,7 @@ Identifies the property to be retrieved.
 Specifies the type of the property to be retrieved. For possible values, see the Remarks section for [`COleDispatchDriver::InvokeHelper`](../../mfc/reference/coledispatchdriver-class.md#invokehelper).
 
 *`pvProp`*<br/>
-Address of the variable that will that will receive the property value. It must match the type specified by *`vtProp`*.
+Address of the variable that will receive the property value. It must match the type specified by *`vtProp`*.
 
 ### Remarks
 
@@ -3690,7 +3690,7 @@ HWND GetSafeHwnd() const;
 
 ### Return Value
 
-Returns the window handle for a window. Returns `NULL` if the `CWnd` is not attached to a window or if it is used with a `NULL` `CWnd` pointer.
+Returns the window handle for a window. Returns `NULL` if the `CWnd` isn't attached to a window or if it is used with a `NULL` `CWnd` pointer.
 
 ### Example
 
@@ -3723,7 +3723,7 @@ A pointer to the safe owner for the given window.
 The safe owner is the first non-child parent window of *`pParent`*. If *`pParent`* is `NULL`, the thread's main window (retrieved via [`AfxGetMainWnd`](../../mfc/reference/application-information-and-management.md#afxgetmainwnd)) is used to find an owner.
 
 > [!NOTE]
-> The framework itself uses this function to determine the correct owner window for dialog boxes and property sheets where the owner is not specified.
+> The framework itself uses this function to determine the correct owner window for dialog boxes and property sheets where the owner isn't specified.
 
 ## <a name="getscrollbarctrl"></a> `CWnd::GetScrollBarCtrl`
 
@@ -3923,7 +3923,7 @@ Specifies the action to be taken. If *`bRevert`* is `FALSE`, `GetSystemMenu` ret
 
 Identifies a copy of the Control menu if *`bRevert`* is `FALSE`. If *`bRevert`* is `TRUE`, the return value is undefined.
 
-The returned pointer may be temporary and should not be stored for later use.
+The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -3958,7 +3958,7 @@ This member function emulates the functionality of the function [`GetTitleBarInf
 
 ## <a name="gettoplevelframe"></a> `CWnd::GetTopLevelFrame`
 
-Call this member function to retrieve the window's top level frame window, if any.
+Call this member function to retrieve the window's top-level frame window, if any.
 
 ```
 CFrameWnd* GetTopLevelFrame() const;
@@ -3968,11 +3968,11 @@ CFrameWnd* GetTopLevelFrame() const;
 
 Identifies the top-level frame window of the window.
 
-The returned pointer may be temporary and should not be stored for later use.
+The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
-If `CWnd` has no attached window, or its top-level parent is not a [`CFrameWnd`](../../mfc/reference/cframewnd-class.md)-derived object, this function returns `NULL`.
+If `CWnd` has no attached window, or its top-level parent isn't a [`CFrameWnd`](../../mfc/reference/cframewnd-class.md)-derived object, this function returns `NULL`.
 
 ## <a name="gettoplevelowner"></a> `CWnd::GetTopLevelOwner`
 
@@ -3984,7 +3984,7 @@ CWnd* GetTopLevelOwner() const;
 
 ### Return Value
 
-Identifies the top-level window. The returned pointer may be temporary and should not be stored for later use.
+Identifies the top-level window. The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -4002,7 +4002,7 @@ CWnd* GetTopLevelParent() const;
 
 Identifies the top-level parent window of the window.
 
-The returned pointer may be temporary and should not be stored for later use.
+The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -4020,7 +4020,7 @@ CWnd* GetTopWindow() const;
 
 Identifies the top-level child window in a `CWnd` linked list of child windows. If no child windows exist, the value is `NULL`.
 
-The returned pointer may be temporary and should not be stored for later use.
+The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -4048,15 +4048,15 @@ Specifies whether the background in the update region is to be erased.
 
 ### Return Value
 
-Specifies the status of the update region. The value is nonzero if the update region is not empty; otherwise 0.
+Specifies the status of the update region. The value is nonzero if the update region isn't empty; otherwise 0.
 
 If the *`lpRect`* parameter is set to `NULL`, the return value is nonzero if an update region exists; otherwise 0.
 
 ### Remarks
 
-If `CWnd` was created with the `CS_OWNDC` style and the mapping mode is not `MM_TEXT`, the `GetUpdateRect` member function gives the rectangle in logical coordinates. Otherwise, `GetUpdateRect` gives the rectangle in client coordinates. If there is no update region, `GetUpdateRect` sets the rectangle to be empty (sets all coordinates to 0).
+If `CWnd` was created with the `CS_OWNDC` style and the mapping mode isn't `MM_TEXT`, the `GetUpdateRect` member function gives the rectangle in logical coordinates. Otherwise, `GetUpdateRect` gives the rectangle in client coordinates. If there is no update region, `GetUpdateRect` sets the rectangle to be empty (sets all coordinates to 0).
 
-The *`bErase`* parameter specifies whether `GetUpdateRect` should erase the background of the update region. If *`bErase`* is `TRUE` and the update region is not empty, the background is erased. To erase the background, `GetUpdateRect` sends the [`WM_ERASEBKGND`](#onerasebkgnd) message.
+The *`bErase`* parameter specifies whether `GetUpdateRect` should erase the background of the update region. If *`bErase`* is `TRUE` and the update region isn't empty, the background is erased. To erase the background, `GetUpdateRect` sends the [`WM_ERASEBKGND`](#onerasebkgnd) message.
 
 The update rectangle retrieved by the [`BeginPaint`](#beginpaint) member function is identical to that retrieved by the `GetUpdateRect` member function.
 
@@ -4125,7 +4125,7 @@ Specifies the relationship between `CWnd` and the returned window. It can take o
 
 ### Return Value
 
-The returned pointer may be temporary and should not be stored for later use.
+The returned pointer may be temporary and shouldn't be stored for later use.
 
 ## <a name="getwindowcontexthelpid"></a> `CWnd::GetWindowContextHelpId`
 
@@ -4163,7 +4163,7 @@ CDC* GetWindowDC();
 
 Identifies the display context for the given window if the function is successful; otherwise `NULL`.
 
-The returned pointer may be temporary and should not be stored for later use. [`ReleaseDC`](#releasedc) should be called once for each successful call to `GetWindowDC`.
+The returned pointer may be temporary and shouldn't be stored for later use. [`ReleaseDC`](#releasedc) should be called once for each successful call to `GetWindowDC`.
 
 ### Remarks
 
@@ -4171,7 +4171,7 @@ A window display context permits painting anywhere in `CWnd`, since the origin o
 
 Default attributes are assigned to the display context each time it retrieves the context. Previous attributes are lost.
 
-`GetWindowDC` is intended to be used for special painting effects within the `CWnd` nonclient area. Painting in nonclient areas of any window is not recommended.
+`GetWindowDC` is intended to be used for special painting effects within the `CWnd` nonclient area. Painting in nonclient areas of any window isn't recommended.
 
 The [`GetSystemMetrics`](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) Windows function can be used to retrieve the dimensions of various parts of the nonclient area, such as the caption bar, menu, and scroll bars.
 
@@ -4377,7 +4377,7 @@ Specifies whether the menu item is highlighted or the highlight is removed. It c
 
 - `MF_BYPOSITION` Interprets *`nIDHiliteItem`* as the zero-based offset of the menu item.
 
-- `MF_HILITE` Highlights the item. If this value is not given, the highlight is removed from the item.
+- `MF_HILITE` Highlights the item. If this value isn't given, the highlight is removed from the item.
 
 - `MF_UNHILITE` Removes the highlight from the item.
 
@@ -4442,7 +4442,7 @@ The client area is marked for painting when the next [`WM_PAINT`](#onpaint) mess
 
 The *`bErase`* parameter specifies whether the background within the update area is to be erased when the update region is processed. If *`bErase`* is `TRUE`, the background is erased when the [`BeginPaint`](#beginpaint) member function is called; if *`bErase`* is `FALSE`, the background remains unchanged. If *`bErase`* is `TRUE` for any part of the update region, the background in the entire region, not just in the given part, is erased.
 
-Windows sends a [`WM_PAINT`](#onpaint) message whenever the `CWnd` update region is not empty and there are no other messages in the application queue for that window.
+Windows sends a [`WM_PAINT`](#onpaint) message whenever the `CWnd` update region isn't empty and there are no other messages in the application queue for that window.
 
 ### Example
 
@@ -4472,7 +4472,7 @@ The invalidated rectangle, along with all other areas in the update region, is m
 
 The *`bErase`* parameter specifies whether the background within the update area is to be erased when the update region is processed. If *`bErase`* is `TRUE`, the background is erased when the [`BeginPaint`](#beginpaint) member function is called; if *`bErase`* is `FALSE`, the background remains unchanged. If *`bErase`* is `TRUE` for any part of the update region, the background in the entire region is erased, not just in the given part.
 
-Windows sends a [`WM_PAINT`](#onpaint) message whenever the `CWnd` update region is not empty and there are no other messages in the application queue for that window.
+Windows sends a [`WM_PAINT`](#onpaint) message whenever the `CWnd` update region isn't empty and there are no other messages in the application queue for that window.
 
 ## <a name="invalidatergn"></a> `CWnd::InvalidateRgn`
 
@@ -4498,7 +4498,7 @@ The invalidated region, along with all other areas in the update region, is mark
 
 The *`bErase`* parameter specifies whether the background within the update area is to be erased when the update region is processed. If *`bErase`* is `TRUE`, the background is erased when the [`BeginPaint`](#beginpaint) member function is called; if *`bErase`* is `FALSE`, the background remains unchanged. If *`bErase`* is `TRUE` for any part of the update region, the background in the entire region, not just in the given part, is erased.
 
-Windows sends a [`WM_PAINT`](#onpaint) message whenever the `CWnd` update region is not empty and there are no other messages in the application queue for that window.
+Windows sends a [`WM_PAINT`](#onpaint) message whenever the `CWnd` update region isn't empty and there are no other messages in the application queue for that window.
 
 The given region must have been previously created by one of the region functions.
 
@@ -4620,7 +4620,7 @@ Specifies the integer identifier of the button control.
 
 ### Return Value
 
-Nonzero if the given control is checked, and 0 if it is not checked. Only radio buttons and check boxes can be checked. For three-state buttons, the return value can be 2 if the button is indeterminate. This member function returns 0 for a pushbutton.
+Nonzero if the given control is checked, and 0 if it isn't checked. Only radio buttons and check boxes can be checked. For three-state buttons, the return value can be 2 if the button is indeterminate. This member function returns 0 for a pushbutton.
 
 ### Remarks
 
@@ -4863,10 +4863,10 @@ The following shows the various system icons that can be used in a message box:
 
 |Icon|Macro|
 |-|-|
-|![Stop &#40;x&#41; icon](../../mfc/reference/media/vc364f1.gif "Stop &#40;x&#41; icon")|`MB_ICONHAND`, `MB_ICONSTOP`, and `MB_ICONERROR`|
-|![Help &#40;?&#41; icon](../../mfc/reference/media/vc364f2.gif "Help &#40;?&#41; icon")|MB_ICONQUESTION|
-|![Important &#40;&#33;&#41; icon](../../mfc/reference/media/vc364f3.gif "Important &#40;&#33;&#41; icon")|MB_ICONEXCLAMATION and MB_ICONWARNING|
-|![Information &#40;i&#41; icon](../../mfc/reference/media/vc364f4.gif "Information &#40;i&#41; icon")|MB_ICONASTERISK and MB_ICONINFORMATION|
+|![Stop &#40;x&#41; icon.](../../mfc/reference/media/vc364f1.gif "Stop &#40;x&#41; icon")|`MB_ICONHAND`, `MB_ICONSTOP`, and `MB_ICONERROR`|
+|![Help &#40;?&#41; icon.](../../mfc/reference/media/vc364f2.gif "Help &#40;?&#41; icon")|MB_ICONQUESTION|
+|![Important &#40;&#33;&#41; icon.](../../mfc/reference/media/vc364f3.gif "Important &#40;&#33;&#41; icon")|MB_ICONEXCLAMATION and MB_ICONWARNING|
+|![Information &#40;i&#41; icon.](../../mfc/reference/media/vc364f4.gif "Information &#40;i&#41; icon")|MB_ICONASTERISK and MB_ICONINFORMATION|
 
 ### Example
 
@@ -4892,7 +4892,7 @@ Specifies window styles to be removed during style modification.
 Specifies window styles to be added during style modification.
 
 *`nFlags`*<br/>
-Flags to be passed to [`SetWindowPos`](#setwindowpos), or zero if `SetWindowPos` should not be called. The default is zero. See the Remarks section for a list of preset flags.
+Flags to be passed to [`SetWindowPos`](#setwindowpos), or zero if `SetWindowPos` shouldn't be called. The default is zero. See the Remarks section for a list of preset flags.
 
 ### Return Value
 
@@ -4941,7 +4941,7 @@ Specifies extended styles to be removed during style modification.
 Specifies extended styles to be added during style modification.
 
 *`nFlags`*<br/>
-Flags to be passed to [`SetWindowPos`](#setwindowpos), or zero if `SetWindowPos` should not be called. The default is zero. See the Remarks section for a list of preset flags.
+Flags to be passed to [`SetWindowPos`](#setwindowpos), or zero if `SetWindowPos` shouldn't be called. The default is zero. See the Remarks section for a list of preset flags.
 
 ### Return Value
 
@@ -5219,7 +5219,7 @@ A pointer to the window to gain mouse capture
 
 ### Remarks
 
-A window receives this message even if it calls [`ReleaseCapture`](/windows/win32/api/winuser/nf-winuser-releasecapture) itself. An application should not attempt to set the mouse capture in response to this message. When it receives this message, a window should redraw itself, if necessary, to reflect the new mouse-capture state.
+A window receives this message even if it calls [`ReleaseCapture`](/windows/win32/api/winuser/nf-winuser-releasecapture) itself. An application shouldn't attempt to set the mouse capture in response to this message. When it receives this message, a window should redraw itself, if necessary, to reflect the new mouse-capture state.
 
 See the Windows SDK for information on the `ReleaseCapture` Windows function.
 
@@ -5321,7 +5321,7 @@ Contains the scan code, key-transition code, previous key state, and context cod
 
 This function is called before the [`OnKeyUp`](#onkeyup) member function and after the [`OnKeyDown`](#onkeydown) member function are called. `OnChar` contains the value of the keyboard key being pressed or released.
 
-Because there is not necessarily a one-to-one correspondence between keys pressed and `OnChar` calls generated, the information in *`nFlags`* is generally not useful to applications. The information in *`nFlags`* applies only to the most recent call to the `OnKeyUp` member function or the `OnKeyDown` member function that precedes the call to `OnChar`.
+Because there isn't necessarily a one-to-one correspondence between keys pressed and `OnChar` calls generated, the information in *`nFlags`* is generally not useful to applications. The information in *`nFlags`* applies only to the most recent call to the `OnKeyUp` member function or the `OnKeyDown` member function that precedes the call to `OnChar`.
 
 For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and the right CTRL keys on the main section of the keyboard; the INS, DEL, HOME, END, PAGE UP, PAGE DOWN, and arrow keys in the clusters to the left of the numeric keypad; and the slash (/) and ENTER keys in the numeric keypad. Some other keyboards may support the extended-key bit in *`nFlags`*.
 
@@ -5441,7 +5441,7 @@ afx_msg void OnColorizationColorChanged(
 [in] Specifies the new colorization color. The color format is a hexadecimal number of the form 0xAARRGGBB, where each of the four components ranges from 0x00 through 0xFF. The AA component is the alpha value, RR is the color red, GG is green, and BB is blue.
 
 *`bOpacity`*\
-[in] `TRUE` if the new color is blended with opacity; `FALSE` if it is not.
+[in] `TRUE` if the new color is blended with opacity; `FALSE` if it isn't.
 
 ### Remarks
 
@@ -5559,7 +5559,7 @@ This method receives the [`WM_DWMCOMPOSITIONCHANGED`](/windows/win32/dwm/wm-dwmc
 
 ## <a name="oncontextmenu"></a> `CWnd::OnContextMenu`
 
-Called by the framework when the user has clicked the right mouse button (right clicked) in the window.
+Called by the framework when the user has clicked the right mouse button (right-clicked) in the window.
 
 ```
 afx_msg void OnContextMenu(
@@ -5570,7 +5570,7 @@ afx_msg void OnContextMenu(
 ### Parameters
 
 *`pWnd`*<br/>
-Handle to the window in which the user right clicked the mouse. This can be a child window of the window receiving the message. For more information about processing this message, see the Remarks section.
+Handle to the window in which the user right-clicked the mouse. This can be a child window of the window receiving the message. For more information about processing this message, see the Remarks section.
 
 *`pos`*<br/>
 Position of the cursor, in screen coordinates, at the time of the mouse click.
@@ -5609,7 +5609,7 @@ The data being passed must not contain pointers or other references to objects n
 
 While the data is being copied, it must not be changed by another thread of the sending process.
 
-The receiving application should consider the data read-only. The structure pointed to by the parameter *`pCopyDataStruct`* is valid only during the transfer of data; however, the receiving application should not free the memory associated with the structure.
+The receiving application should consider the data read-only. The structure pointed to by the parameter *`pCopyDataStruct`* is valid only during the transfer of data; however, the receiving application shouldn't free the memory associated with the structure.
 
 If the receiving application needs access to the data after this function returns, it must copy the data received to a local buffer.
 
@@ -5739,7 +5739,7 @@ This member function can be used to specify the character value of a dead key. A
 
 An application typically uses `OnDeadChar` to give the user feedback about each key pressed. For example, an application can display the accent in the current character position without moving the caret.
 
-Since there is not necessarily a one-to-one correspondence between keys pressed and `OnDeadChar` calls, the information in *`nFlags`* is generally not useful to applications. The information in *`nFlags`* applies only to the most recent call to the [`OnKeyUp`](#onkeyup) member function or the [`OnKeyDown`](#onkeydown) member function that precedes the `OnDeadChar` call.
+Since there isn't necessarily a one-to-one correspondence between keys pressed and `OnDeadChar` calls, the information in *`nFlags`* is generally not useful to applications. The information in *`nFlags`* applies only to the most recent call to the [`OnKeyUp`](#onkeyup) member function or the [`OnKeyDown`](#onkeydown) member function that precedes the `OnDeadChar` call.
 
 For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and the right CTRL keys on the main section of the keyboard; the INS, DEL, HOME, END, PAGE UP, PAGE DOWN, and arrow keys in the clusters to the left of the numeric keypad; and the slash (/) and ENTER keys in the numeric keypad. Some other keyboards may support the extended-key bit in *`nFlags`*.
 
@@ -5857,7 +5857,7 @@ Points to the device name specified in the Windows initialization file, `WIN.INI
 
 Applications that handle the `WM_DEVMODECHANGE` message may reinitialize their device-mode settings. Applications that use the Windows `ExtDeviceMode` function to save and restore device settings typically do not process this function.
 
-This function is not called when the user changes the default printer from Control Panel. In this case, the `OnWinIniChange` function is called.
+This function isn't called when the user changes the default printer from Control Panel. In this case, the `OnWinIniChange` function is called.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -5996,7 +5996,7 @@ Specifies whether or not the session is being ended. It is `TRUE` if the session
 
 The `OnEndSession` call informs the `CWnd` object whether the session is actually ending.
 
-If *`bEnding`* is `TRUE`, Windows can terminate any time after all applications have returned from processing this call. Consequently, have an application perform all tasks required for termination within `OnEndSession`.
+If *`bEnding`* is `TRUE`, Windows can terminate anytime after all applications have returned from processing this call. Consequently, have an application perform all tasks required for termination within `OnEndSession`.
 
 You do not need to call the [`DestroyWindow`](#destroywindow) member function or [`PostQuitMessage`](/windows/win32/api/winuser/nf-winuser-postquitmessage) Windows function when the session is ending.
 
@@ -6023,7 +6023,7 @@ Specifies whether the message is the result of a dialog box or a menu being disp
 - `MSGF_MENU` The system is idle because a menu is being displayed.
 
 *`pWho`*<br/>
-Specifies a pointer to the dialog box (if *`nWhy`* is `MSGF_DIALOGBOX`), or the window that contains the displayed menu (if *`nWhy`* is `MSGF_MENU`). This pointer may be temporary and should not be stored for later use.
+Specifies a pointer to the dialog box (if *`nWhy`* is `MSGF_DIALOGBOX`), or the window that contains the displayed menu (if *`nWhy`* is `MSGF_MENU`). This pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -6354,7 +6354,7 @@ Specifies a scroll-bar code that indicates the user's scrolling request. This pa
 Specifies the scroll-box position if the scroll-bar code is `SB_THUMBPOSITION` or `SB_THUMBTRACK`; otherwise, not used. Depending on the initial scroll range, *`nPos`* may be negative and should be cast to an **`int`** if necessary.
 
 *`pScrollBar`*<br/>
-If the scroll message came from a scroll-bar control, contains a pointer to the control. If the user clicked a window's scroll bar, this parameter is `NULL`. The pointer may be temporary and should not be stored for later use.
+If the scroll message came from a scroll-bar control, contains a pointer to the control. If the user clicked a window's scroll bar, this parameter is `NULL`. The pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -6383,7 +6383,7 @@ afx_msg void OnHScrollClipboard(
 ### Parameters
 
 *`pClipAppWnd`*<br/>
-Specifies a pointer to a Clipboard-viewer window. The pointer may be temporary and should not be stored for later use.
+Specifies a pointer to a Clipboard-viewer window. The pointer may be temporary and shouldn't be stored for later use.
 
 *`nSBCode`*<br/>
 Specifies one of the following scroll-bar codes in the low-order word:
@@ -6425,7 +6425,7 @@ afx_msg void OnIconEraseBkgnd(CDC* pDC);
 ### Parameters
 
 *`pDC`*<br/>
-Specifies the device-context object of the icon. May be temporary and should not be stored for later use.
+Specifies the device-context object of the icon. May be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -6447,13 +6447,13 @@ afx_msg void OnInitMenu(CMenu* pMenu);
 ### Parameters
 
 *`pMenu`*<br/>
-Specifies the menu to be initialized. May be temporary and should not be stored for later use.
+Specifies the menu to be initialized. May be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
 `OnInitMenu` is called when the user clicks an item on the menu bar or presses a menu key. Override this member function to modify the menu before it is displayed.
 
-`OnInitMenu` is only called once, when a menu is first accessed (for example, when a user clicks an item on the menu bar). This method does not provide information about menu items. As the user moves to items within the menu (for example, by moving the mouse across several menu items) the function is not called again. Once the user exits from the menu (for example, by clicking on the application client area) and later clicks an item on the menu bar, the function will be called again.
+`OnInitMenu` is only called once, when a menu is first accessed (for example, when a user clicks an item on the menu bar). This method does not provide information about menu items. As the user moves to items within the menu (for example, by moving the mouse across several menu items) the function isn't called again. Once the user exits from the menu (for example, by clicking on the application client area) and later clicks an item on the menu bar, the function will be called again.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -6472,7 +6472,7 @@ afx_msg void OnInitMenuPopup(
 ### Parameters
 
 *`pPopupMenu`*<br/>
-Specifies the menu object of the pop-up menu. May be temporary and should not be stored for later use.
+Specifies the menu object of the pop-up menu. May be temporary and shouldn't be stored for later use.
 
 *`nIndex`*<br/>
 Specifies the index of the pop-up menu in the main menu.
@@ -6596,7 +6596,7 @@ For a `WM_KEYDOWN` message, the key-transition bit (bit 15) is 0 and the context
 
 ### Remarks
 
-A nonsystem key is a keyboard key that is pressed when the ALT key is not pressed or a keyboard key that is pressed when `CWnd` has the input focus.
+A nonsystem key is a keyboard key that is pressed when the ALT key isn't pressed or a keyboard key that is pressed when `CWnd` has the input focus.
 
 Because of auto-repeat, more than one `OnKeyDown` call may occur before an [`OnKeyUp`](#onkeyup) member function call is made. The bit that indicates the previous key state can be used to determine whether the `OnKeyDown` call is the first down transition or a repeated down transition.
 
@@ -6641,7 +6641,7 @@ For a `WM_KEYUP` message, the key-transition bit (bit 15) is 1 and the context-c
 
 ### Remarks
 
-A nonsystem key is a keyboard key that is pressed when the ALT key is not pressed or a keyboard key that is pressed when the `CWnd` has the input focus.
+A nonsystem key is a keyboard key that is pressed when the ALT key isn't pressed or a keyboard key that is pressed when the `CWnd` has the input focus.
 
 For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and the right CTRL keys on the main section of the keyboard; the INS, DEL, HOME, END, PAGE UP, PAGE DOWN, and arrow keys in the clusters to the left of the numeric keypad; and the slash (/) and ENTER keys in the numeric keypad. Some other keyboards may support the extended-key bit in *nFlags*.
 
@@ -6883,10 +6883,10 @@ afx_msg void OnMDIActivate(
 `TRUE` if the child is being activated and `FALSE` if it is being deactivated.
 
 *`pActivateWnd`*<br/>
-Contains a pointer to the MDI child window to be activated. When received by an MDI child window, *`pActivateWnd`* contains a pointer to the child window being activated. This pointer may be temporary and should not be stored for later use.
+Contains a pointer to the MDI child window to be activated. When received by an MDI child window, *`pActivateWnd`* contains a pointer to the child window being activated. This pointer may be temporary and shouldn't be stored for later use.
 
 *`pDeactivateWnd`*<br/>
-Contains a pointer to the MDI child window being deactivated. This pointer may be temporary and should not be stored for later use.
+Contains a pointer to the MDI child window being deactivated. This pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -6947,7 +6947,7 @@ Depending on the build settings, specifies the ANSI or Unicode character that th
 Contains the `MF_POPUP` flag if the menu is a pop-up menu. It contains the `MF_SYSMENU` flag if the menu is a Control menu.
 
 *`pMenu`*<br/>
-Contains a pointer to the selected `CMenu`. The pointer may be temporary and should not be stored.
+Contains a pointer to the selected `CMenu`. The pointer may be temporary and shouldn't be stored.
 
 ### Return Value
 
@@ -7113,7 +7113,7 @@ afx_msg int OnMouseActivate(
 ### Parameters
 
 *`pDesktopWnd`*<br/>
-Specifies a pointer to the top-level parent window of the window being activated. The pointer may be temporary and should not be stored.
+Specifies a pointer to the top-level parent window of the window being activated. The pointer may be temporary and shouldn't be stored.
 
 *`nHitTest`*<br/>
 Specifies the [hit-test](#onnchittest) area code. A hit test is a test that determines the location of the cursor.
@@ -7185,7 +7185,7 @@ The *`nFlags`* parameter can be a combination of modifier keys listed in the fol
 
 ## <a name="onmousehwheel"></a> `CWnd::OnMouseHWheel`
 
-The framework calls this member when the current window is composed by the Desktop Window Manager (DWM), and that window is maximized.
+The framework calls this member when the mouse's horizontal scroll wheel is tilted or rotated.
 
 ```
 afx_msg void OnMouseHWheel(
@@ -7257,7 +7257,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 
 ### Remarks
 
-If the mouse is not captured, the `WM_MOUSEMOVE` message is received by the `CWnd` object beneath the mouse cursor; otherwise, the message goes to the window that has captured the mouse.
+If the mouse isn't captured, the `WM_MOUSEMOVE` message is received by the `CWnd` object beneath the mouse cursor; otherwise, the message goes to the window that has captured the mouse.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -7806,7 +7806,7 @@ void OnNcXButtonDblClk(
 
 ### Remarks
 
-This method receives the [`WM_XBUTTONDBLCLK`](/windows/win32/inputdev/wm-xbuttondblclk) notification, which is described in the Windows SDK. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message is not posted.
+This method receives the [`WM_XBUTTONDBLCLK`](/windows/win32/inputdev/wm-xbuttondblclk) notification, which is described in the Windows SDK. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message isn't posted.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -7835,7 +7835,7 @@ afx_msg void OnNcXButtonDown(
 
 ### Remarks
 
-This method receives the [`WM_NCXBUTTONDOWN`](/windows/win32/inputdev/wm-ncxbuttondown) notification, which is described in the Windows SDK. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message is not posted.
+This method receives the [`WM_NCXBUTTONDOWN`](/windows/win32/inputdev/wm-ncxbuttondown) notification, which is described in the Windows SDK. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message isn't posted.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -7864,7 +7864,7 @@ afx_msg void OnNcXButtonUp(
 
 ### Remarks
 
-This method receives the [`WM_NCXBUTTONUP`](/windows/win32/inputdev/wm-ncxbuttonup) notification, which is described in the Windows SDK. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message is not posted.
+This method receives the [`WM_NCXBUTTONUP`](/windows/win32/inputdev/wm-ncxbuttonup) notification, which is described in the Windows SDK. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message isn't posted.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -7976,7 +7976,7 @@ afx_msg void OnPaint();
 
 The [`WM_PAINT`](/windows/win32/gdi/the-wm-paint-message) message is sent when the [`UpdateWindow`](#updatewindow) or [`RedrawWindow`](#redrawwindow) member function is called.
 
-A window may receive internal paint messages as a result of calling the `RedrawWindow` member function with the `RDW_INTERNALPAINT` flag set. In this case, the window may not have an update region. An application should call the [`GetUpdateRect`](#getupdaterect) member function to determine whether the window has an update region. If `GetUpdateRect` returns 0, the application should not call the [`BeginPaint`](#beginpaint) and [`EndPaint`](#endpaint) member functions.
+A window may receive internal paint messages as a result of calling the `RedrawWindow` member function with the `RDW_INTERNALPAINT` flag set. In this case, the window may not have an update region. An application should call the [`GetUpdateRect`](#getupdaterect) member function to determine whether the window has an update region. If `GetUpdateRect` returns 0, the application shouldn't call the [`BeginPaint`](#beginpaint) and [`EndPaint`](#endpaint) member functions.
 
 It is an application's responsibility to check for any necessary internal repainting or updating by looking at its internal data structures for each `WM_PAINT` message because a `WM_PAINT` message may have been caused by both an invalid area and a call to the `RedrawWindow` member function with the `RDW_INTERNALPAINT` flag set.
 
@@ -8003,7 +8003,7 @@ afx_msg void OnPaintClipboard(
 ### Parameters
 
 *`pClipAppWnd`*<br/>
-Specifies a pointer to the Clipboard-application window. The pointer may be temporary and should not be stored for later use.
+Specifies a pointer to the Clipboard-application window. The pointer may be temporary and shouldn't be stored for later use.
 
 *`hPaintStruct`*<br/>
 Identifies a [`PAINTSTRUCT`](/windows/win32/api/winuser/ns-winuser-paintstruct) data structure that defines what part of the client area to paint.
@@ -8028,7 +8028,7 @@ afx_msg void OnPaletteChanged(CWnd* pFocusWnd);
 ### Parameters
 
 *`pFocusWnd`*<br/>
-Specifies a pointer to the window that caused the system palette to change. The pointer may be temporary and should not be stored.
+Specifies a pointer to the window that caused the system palette to change. The pointer may be temporary and shouldn't be stored.
 
 ### Remarks
 
@@ -8158,7 +8158,7 @@ Nonzero if an application can be conveniently shut down; otherwise 0.
 
 ### Remarks
 
-If any application returns 0, the Windows session is not ended. Windows stops calling `OnQueryEndSession` as soon as one application returns 0 and sends the [`WM_ENDSESSION`](#onendsession) message with a parameter value of `FALSE` for any application that has already returned nonzero.
+If any application returns 0, the Windows session isn't ended. Windows stops calling `OnQueryEndSession` as soon as one application returns 0 and sends the [`WM_ENDSESSION`](#onendsession) message with a parameter value of `FALSE` for any application that has already returned nonzero.
 
 ## <a name="onquerynewpalette"></a> `CWnd::OnQueryNewPalette`
 
@@ -8186,7 +8186,7 @@ Nonzero if the icon can be opened, or 0 to prevent the icon from being opened.
 
 ### Remarks
 
-While in `OnQueryOpen`, `CWnd` should not perform any action that would cause an activation or focus change (for example, creating a dialog box).
+While in `OnQueryOpen`, `CWnd` shouldn't perform any action that would cause an activation or focus change (for example, creating a dialog box).
 
 ## <a name="onqueryuistate"></a> `CWnd::OnQueryUIState`
 
@@ -8429,7 +8429,7 @@ The *`nSessionState`* parameter specifies that a session is connected or disconn
 
 ## <a name="onsetcursor"></a> `CWnd::OnSetCursor`
 
-The framework calls this member function if mouse input is not captured and the mouse causes cursor movement within the `CWnd` object.
+The framework calls this member function if mouse input isn't captured and the mouse causes cursor movement within the `CWnd` object.
 
 ```
 afx_msg BOOL OnSetCursor(
@@ -8441,7 +8441,7 @@ afx_msg BOOL OnSetCursor(
 ### Parameters
 
 *`pWnd`*<br/>
-Specifies a pointer to the window that contains the cursor. The pointer may be temporary and should not be stored for later use.
+Specifies a pointer to the window that contains the cursor. The pointer may be temporary and shouldn't be stored for later use.
 
 *`nHitTest`*<br/>
 Specifies the [hit-test](#onnchittest) area code. The hit test determines the cursor's location.
@@ -8457,7 +8457,7 @@ Nonzero to halt further processing, or 0 to continue.
 
 The default implementation calls the parent window's `OnSetCursor` before processing. If the parent window returns `TRUE`, further processing is halted. Calling the parent window gives the parent window control over the cursor's setting in a child window.
 
-The default implementation sets the cursor to an arrow if it is not in the client area or to the registered-class cursor if it is.
+The default implementation sets the cursor to an arrow if it isn't in the client area or to the registered-class cursor if it is.
 
 If *`nHitTest`* is `HTERROR` and *`message`* is a mouse button-down message, the `MessageBeep` member function is called.
 
@@ -8477,7 +8477,7 @@ afx_msg void OnSetFocus(CWnd* pOldWnd);
 ### Parameters
 
 *`pOldWnd`*<br/>
-Contains the `CWnd` object that loses the input focus (may be `NULL`). The pointer may be temporary and should not be stored for later use.
+Contains the `CWnd` object that loses the input focus (may be `NULL`). The pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -8601,7 +8601,7 @@ afx_msg void OnSizeClipboard(
 ### Parameters
 
 *`pClipAppWnd`*<br/>
-Identifies the Clipboard-application window. The pointer may be temporary and should not be stored.
+Identifies the Clipboard-application window. The pointer may be temporary and shouldn't be stored.
 
 *`hRect`*<br/>
 Identifies a global memory object. The memory object contains a `RECT` data structure that specifies the area for the Clipboard owner to paint.
@@ -8689,7 +8689,7 @@ Specifies whether the window's extended or nonextended styles have changed. This
 - `GWL_STYLE` The window's nonextended styles have changed.
 
 *`lpStyleStruct`*<br/>
-Points to a [`STYLESTRUCT`](/windows/win32/api/winuser/ns-winuser-stylestruct) structure that contains the new styles for the window. An application can examine the styles, but it can not change them.
+Points to a [`STYLESTRUCT`](/windows/win32/api/winuser/ns-winuser-stylestruct) structure that contains the new styles for the window. An application can examine the styles, but it can't change them.
 
 ### Remarks
 
@@ -8740,14 +8740,14 @@ afx_msg void OnSysChar(
 Specifies the ASCII-character key code of a Control-menu key.
 
 *`nRepCnt`*<br/>
-Specifies the repeat count (the number of times the keystroke is repeated as a result of the user holding down the key).
+Specifies the repeat count, that is, the number of times the keystroke is repeated as a result of the user holding down the key.
 
 *`nFlags`*<br/>
 The *`nFlags`* parameter can have these values:
 
 |Value|Meaning|
 |-----------|-------------|
-|0-15|Specifies the repeat count. The value is the number of times the keystroke is repeated as a result of the user holding down the key..|
+|0-15|Specifies the repeat count. The value is the number of times the keystroke is repeated as a result of the user holding down the key.|
 |16-23|Specifies the scan code. The value depends on the original equipment manufacturer (OEM)|
 |24|Specifies whether the key is an extended key, such as the right-hand ALT and CTRL keys that appear on an enhanced 101- or 102-key keyboard. The value is 1 if it is an extended key; otherwise, it is 0.|
 |25-28|Used internally by Windows.|
@@ -8826,7 +8826,7 @@ Specifies the type of system command requested. This parameter can be any one of
 - `SC_VSCROLL` Scroll vertically.
 
 *`lParam`*<br/>
-If a Control-menu command is chosen with the mouse, *`lParam`* contains the cursor coordinates. The low-order word contains the x coordinate, and the high-order word contains the y coordinate. Otherwise this parameter is not used.
+If a Control-menu command is chosen with the mouse, *`lParam`* contains the cursor coordinates. The low-order word contains the x coordinate, and the high-order word contains the y coordinate. Otherwise this parameter isn't used.
 
 - `SC_HOTKEY` Activate the window associated with the application-specified hot key. The low-order word of *`lParam`* identifies the window to activate.
 
@@ -9103,7 +9103,7 @@ If the tooltip control was found, the window control ID. If the tooltip control 
 
 If the point is in the rectangle, it retrieves information about the tool.
 
-If the area with which the tooltip is associated is not a button, `OnToolHitTest` sets the structure flags to `TTF_NOTBUTTON` and `TTF_CENTERTIP`.
+If the area with which the tooltip is associated isn't a button, `OnToolHitTest` sets the structure flags to `TTF_NOTBUTTON` and `TTF_CENTERTIP`.
 
 Override `OnToolHitTest` to provide different information than the default provides.
 
@@ -9182,7 +9182,7 @@ afx_msg void OnUniChar(
 [in] Specifies the character code of the pressed key.
 
 *`nRepCnt`*\
-[in] Specifies the repeat count for the current message. The value is the number of times the keystroke is autorepeated as a result of the user holding down the key. If the keystroke is held long enough, multiple messages are sent. However, the repeat count is not cumulative.
+[in] Specifies the repeat count for the current message. The value is the number of times the keystroke is autorepeated as a result of the user holding down the key. If the keystroke is held long enough, multiple messages are sent. However, the repeat count isn't cumulative.
 
 *`nFlags`*\
 [in] Flags that specify the scan code, extended key, context code, previous key state, and transition state, as shown in the following table:
@@ -9294,7 +9294,7 @@ afx_msg int OnVKeyToItem(
 Specifies the virtual key code of the key that the user pressed. For a list of standard virtual key codes, see `Winuser.h`
 
 *`pListBox`*<br/>
-Specifies a pointer to the list box. The pointer may be temporary and should not be stored for later use.
+Specifies a pointer to the list box. The pointer may be temporary and shouldn't be stored for later use.
 
 *`nIndex`*<br/>
 Specifies the current caret position.
@@ -9348,7 +9348,7 @@ Specifies a scroll-bar code that indicates the user's scrolling request. This pa
 Contains the current scroll-box position if the scroll-bar code is `SB_THUMBPOSITION` or `SB_THUMBTRACK`; otherwise not used. Depending on the initial scroll range, *`nPos`* may be negative and should be cast to an **`int`** if necessary.
 
 *`pScrollBar`*<br/>
-If the scroll message came from a scroll-bar control, contains a pointer to the control. If the user clicked a window's scroll bar, this parameter is `NULL`. The pointer may be temporary and should not be stored for later use.
+If the scroll message came from a scroll-bar control, contains a pointer to the control. If the user clicked a window's scroll bar, this parameter is `NULL`. The pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -9373,7 +9373,7 @@ afx_msg void OnVScrollClipboard(
 ### Parameters
 
 *`pClipAppWnd`*<br/>
-Specifies a pointer to a Clipboard-viewer window. The pointer may be temporary and should not be stored for later use.
+Specifies a pointer to a Clipboard-viewer window. The pointer may be temporary and shouldn't be stored for later use.
 
 *`nSBCode`*<br/>
 Specifies one of the following scroll-bar values:
@@ -9395,7 +9395,7 @@ Specifies one of the following scroll-bar values:
 - `SB_TOP` Scroll to top.
 
 *`nPos`*<br/>
-Contains the scroll-box position if the scroll-bar code is `SB_THUMBPOSITION`; otherwise *`nPos`* is not used.
+Contains the scroll-box position if the scroll-bar code is `SB_THUMBPOSITION`; otherwise *`nPos`* isn't used.
 
 ### Remarks
 
@@ -9415,7 +9415,7 @@ afx_msg void OnWindowMaximizedChanged(BOOL bIsMaximized);
 ### Parameters
 
 *`bIsMaximized`*\
-[in] `TRUE` if the current window is maximized, and `FALSE` if it is not.
+[in] `TRUE` if the current window is maximized, and `FALSE` if it isn't.
 
 ### Remarks
 
@@ -9552,7 +9552,7 @@ afx_msg void OnXButtonDblClk(
 
 ### Remarks
 
-This method receives the [`WM_XBUTTONDBLCLK`](/windows/win32/inputdev/wm-xbuttondblclk) notification, which is described in the Windows SDK. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is posted to the window that has captured the mouse.
+This method receives the [`WM_XBUTTONDBLCLK`](/windows/win32/inputdev/wm-xbuttondblclk) notification, which is described in the Windows SDK. If the mouse isn't captured, the message is posted to the window beneath the cursor. Otherwise, the message is posted to the window that has captured the mouse.
 
 The *`nFlags`* parameter can be a combination of modifier keys listed in the following table. For more information, see [About Mouse Input](/windows/win32/inputdev/about-mouse-input).
 
@@ -9593,7 +9593,7 @@ afx_msg void OnXButtonDown(
 
 ### Remarks
 
-This method receives the [`WM_XBUTTONDOWN`](/windows/win32/inputdev/wm-xbuttondown) notification, which is described in the Windows SDK. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is posted to the window that has captured the mouse.
+This method receives the [`WM_XBUTTONDOWN`](/windows/win32/inputdev/wm-xbuttondown) notification, which is described in the Windows SDK. If the mouse isn't captured, the message is posted to the window beneath the cursor. Otherwise, the message is posted to the window that has captured the mouse.
 
 The *`nFlags`* parameter can be a combination of modifier keys listed in the following table. For more information, see [About Mouse Input](/windows/win32/inputdev/about-mouse-input).
 
@@ -9634,7 +9634,7 @@ afx_msg void OnXButtonUp(
 
 ### Remarks
 
-This method receives the [`WM_XBUTTONUP`](/windows/win32/inputdev/wm-xbuttonup) notification, which is described in the Windows SDK. If the mouse is not captured, the message is posted to the window beneath the cursor. Otherwise, the message is posted to the window that has captured the mouse.
+This method receives the [`WM_XBUTTONUP`](/windows/win32/inputdev/wm-xbuttonup) notification, which is described in the Windows SDK. If the mouse isn't captured, the message is posted to the window beneath the cursor. Otherwise, the message is posted to the window that has captured the mouse.
 
 The *`nFlags`* parameter can be a combination of modifier keys listed in the following table. For more information, see [About Mouse Input](/windows/win32/inputdev/about-mouse-input).
 
@@ -9800,7 +9800,7 @@ Nonzero if the window creation should continue; 0 to indicate creation failure.
 ### Remarks
 
 > [!WARNING]
-> `CWnd::PreCreateWindow` now assigns the hMenu member of *`cs`* to the **`this`** pointer if the menu is `NULL` and the style contains `WS_CHILD`. For proper functionality, ensure that your dialog control has an ID that is not `NULL`.
+> `CWnd::PreCreateWindow` now assigns the hMenu member of *`cs`* to the **`this`** pointer if the menu is `NULL` and the style contains `WS_CHILD`. For proper functionality, ensure that your dialog control has an ID that isn't `NULL`.
 >
 > This change fixes a crash in managed/native interop scenarios. A `TRACE` statement in `CWnd::Create` alerts the developer of the problem.
 
@@ -9843,7 +9843,7 @@ Points to a [`MSG`](/windows/win32/api/winuser/ns-winuser-msg) structure that co
 
 ### Return Value
 
-Nonzero if the message was translated and should not be dispatched; 0 if the message was not translated and should be dispatched.
+Nonzero if the message was translated and shouldn't be dispatched; 0 if the message was not translated and should be dispatched.
 
 ## <a name="print"></a> `CWnd::Print`
 
@@ -9879,7 +9879,7 @@ Specifies the drawing options. This parameter can be one or more of these flags:
 
 [`CWnd::DefWindowProc`](#defwindowproc) function processes this message based on which drawing option is specified:
 
-- If `PRF_CHECKVISIBLE` is specified and the window is not visible, do nothing.
+- If `PRF_CHECKVISIBLE` is specified and the window isn't visible, do nothing.
 
 - If `PRF_NONCLIENT` is specified, draw the nonclient area in the given device context.
 
@@ -9987,7 +9987,7 @@ The following flags are used to validate the window:
 
 - `RDW_VALIDATE` Validates *`lpRectUpdate`* or *`prgnUpdate`* (only one may be not `NULL`). If both are `NULL`, the entire window is validated. This flag does not affect internal `WM_PAINT` messages.
 
-The following flags control when repainting occurs. Painting is not performed by the `RedrawWindow` function unless one of these bits is specified.
+The following flags control when repainting occurs. Painting isn't performed by the `RedrawWindow` function unless one of these bits is specified.
 
 - `RDW_ERASENOW` Causes the affected windows (as specified by the `RDW_ALLCHILDREN` and `RDW_NOCHILDREN` flags) to receive `WM_NCPAINT` and `WM_ERASEBKGND` messages, if necessary, before the function returns. `WM_PAINT` messages are deferred.
 
@@ -10124,9 +10124,9 @@ Specifies ID of pane that fills the rest of the client area.
 *`nFlag`*<br/>
 Can have one of the following values:
 
-- `CWnd::reposDefault` Performs the layout of the control bars. *`lpRectParam`* is not used and can be `NULL`.
+- `CWnd::reposDefault` Performs the layout of the control bars. *`lpRectParam`* isn't used and can be `NULL`.
 
-- `CWnd::reposQuery` The layout of the control bars is not done; instead *`lpRectParam`* is initialized with the size of the client area, as if the layout had actually been done.
+- `CWnd::reposQuery` The layout of the control bars isn't done; instead *`lpRectParam`* is initialized with the size of the client area, as if the layout had actually been done.
 
 - `CWnd::reposExtra` Adds the values of *`lpRectParam`* to the client area of *`nIDLast`* and also performs the layout.
 
@@ -10224,11 +10224,11 @@ Points to a `CRect` object or `RECT` structure that specifies the clipping recta
 
 If the caret is in the `CWnd` being scrolled, `ScrollWindow` automatically hides the caret to prevent it from being erased and then restores the caret after the scroll is finished. The caret position is adjusted accordingly.
 
-The area uncovered by the `ScrollWindow` member function is not repainted but is combined into the current `CWnd` object's update region. The application will eventually receive a [`WM_PAINT`](/windows/win32/gdi/wm-paint) message notifying it that the region needs repainting. To repaint the uncovered area at the same time the scrolling is done, call the [`UpdateWindow`](#updatewindow) member function immediately after calling `ScrollWindow`.
+The area uncovered by the `ScrollWindow` member function isn't repainted but is combined into the current `CWnd` object's update region. The application will eventually receive a [`WM_PAINT`](/windows/win32/gdi/wm-paint) message notifying it that the region needs repainting. To repaint the uncovered area at the same time the scrolling is done, call the [`UpdateWindow`](#updatewindow) member function immediately after calling `ScrollWindow`.
 
 If *`lpRect`* is `NULL`, the positions of any child windows in the window are offset by the amount specified by *`xAmount`* and *`yAmount`*, and any invalid (unpainted) areas in the `CWnd` are also offset. `ScrollWindow` is faster when *`lpRect`* is `NULL`.
 
-If *`lpRect`* is not `NULL`, the positions of child windows are not changed, and invalid areas in `CWnd` are not offset. To prevent updating problems when *`lpRect`* is not `NULL`, call the `UpdateWindow` member function to repaint `CWnd` before calling `ScrollWindow`.
+If *`lpRect`* isn't `NULL`, the positions of child windows are not changed, and invalid areas in `CWnd` are not offset. To prevent updating problems when *`lpRect`* isn't `NULL`, call the `UpdateWindow` member function to repaint `CWnd` before calling `ScrollWindow`.
 
 ## <a name="scrollwindowex"></a> `CWnd::ScrollWindowEx`
 
@@ -10282,7 +10282,7 @@ The return value is `SIMPLEREGION` (rectangular invalidated region), `COMPLEXREG
 
 This function is similar to the [`ScrollWindow`](/windows/win32/api/winuser/nf-winuser-scrollwindow) function, with some additional features.
 
-If [`SW_INVALIDATE`](/windows/win32/api/winuser/nf-winuser-scrollwindowex) and [`SW_ERASE`](/windows/win32/api/winuser/nf-winuser-scrollwindowex) are not specified, the `ScrollWindowEx` member function does not invalidate the area that is scrolled away from. If either of these flags is set, `ScrollWindowEx` invalidates this area. The area is not updated until the application calls the [`UpdateWindow`](/windows/win32/api/winuser/nf-winuser-updatewindow) member function, calls the [`RedrawWindow`](/windows/win32/api/winuser/nf-winuser-redrawwindow) member function (specifying [`RDW_UPDATENOW`](/windows/win32/api/winuser/nf-winuser-redrawwindow) or [`RDW_ERASENOW`](/windows/win32/api/winuser/nf-winuser-redrawwindow)), or retrieves the [`WM_PAINT`](/windows/win32/gdi/wm-paint) message from the application queue.
+If [`SW_INVALIDATE`](/windows/win32/api/winuser/nf-winuser-scrollwindowex) and [`SW_ERASE`](/windows/win32/api/winuser/nf-winuser-scrollwindowex) are not specified, the `ScrollWindowEx` member function does not invalidate the area that is scrolled away from. If either of these flags is set, `ScrollWindowEx` invalidates this area. The area isn't updated until the application calls the [`UpdateWindow`](/windows/win32/api/winuser/nf-winuser-updatewindow) member function, calls the [`RedrawWindow`](/windows/win32/api/winuser/nf-winuser-redrawwindow) member function (specifying [`RDW_UPDATENOW`](/windows/win32/api/winuser/nf-winuser-redrawwindow) or [`RDW_ERASENOW`](/windows/win32/api/winuser/nf-winuser-redrawwindow)), or retrieves the [`WM_PAINT`](/windows/win32/gdi/wm-paint) message from the application queue.
 
 If the window has the [`WS_CLIPCHILDREN`](/windows/win32/api/winuser/nf-winuser-createwindoww) style, the returned areas specified by *`prgnUpdate`* and *`lpRectUpdate`* represent the total area of the scrolled window that must be updated, including any areas in child windows that need updating.
 
@@ -10469,7 +10469,7 @@ CWnd* SetActiveWindow();
 
 The window that was previously active.
 
-The returned pointer may be temporary and should not be stored for later use.
+The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -10485,7 +10485,7 @@ CWnd* SetCapture();
 
 ### Return Value
 
-A pointer to the window object that previously received all mouse input. It is `NULL` if there is no such window. The returned pointer may be temporary and should not be stored for later use.
+A pointer to the window object that previously received all mouse input. It is `NULL` if there is no such window. The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -10510,7 +10510,7 @@ Specifies the new x and y coordinates (in client coordinates) of the caret.
 
 The `SetCaretPos` member function moves the caret only if it is owned by a window in the current task. `SetCaretPos` moves the caret whether or not the caret is hidden.
 
-The caret is a shared resource. A window should not move the caret if it does not own the caret.
+The caret is a shared resource. A window shouldn't move the caret if it does not own the caret.
 
 ### Example
 
@@ -10532,7 +10532,7 @@ A handle to the next window in the Clipboard-viewer chain if successful. Applica
 
 A window that is part of the Clipboard-viewer chain must respond to [`WM_DRAWCLIPBOARD`](#ondrawclipboard), [`WM_CHANGECBCHAIN`](#onchangecbchain), and [`WM_DESTROY`](#ondestroy) messages and pass the message to the next window in the chain.
 
-This member function sends a `WM_DRAWCLIPBOARD` message to the window. Since the handle to the next window in the Clipboard-viewer chain has not yet been returned, the application should not pass on the `WM_DRAWCLIPBOARD` message that it receives during the call to `SetClipboardViewer`.
+This member function sends a `WM_DRAWCLIPBOARD` message to the window. Since the handle to the next window in the Clipboard-viewer chain has not yet been returned, the application shouldn't pass on the `WM_DRAWCLIPBOARD` message that it receives during the call to `SetClipboardViewer`.
 
 To remove itself from the Clipboard-viewer chain, an application must call the [`ChangeClipboardChain`](#changeclipboardchain) member function.
 
@@ -10643,7 +10643,7 @@ CWnd* SetFocus();
 
 ### Return Value
 
-A pointer to the window object that previously had the input focus. It is `NULL` if there is no such window. The returned pointer may be temporary and should not be stored.
+A pointer to the window object that previously had the input focus. It is `NULL` if there is no such window. The returned pointer may be temporary and shouldn't be stored.
 
 ### Remarks
 
@@ -10798,7 +10798,7 @@ Identifies the new parent window.
 
 ### Return Value
 
-A pointer to the previous parent window object if successful. The returned pointer may be temporary and should not be stored for later use.
+A pointer to the previous parent window object if successful. The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 
@@ -10879,7 +10879,7 @@ Specifies whether the scroll bar is a control or part of a window's nonclient ar
 A pointer to a [`SCROLLINFO`](/windows/win32/api/winuser/ns-winuser-scrollinfo) structure. See the Windows SDK for more information about this structure.
 
 *`bRedraw`*<br/>
-Specifies whether the scroll bar should be redrawn to reflect the new position. If *`bRedraw`* is `TRUE`, the scroll bar is redrawn. If it is `FALSE`, it is not redrawn. The scroll bar is redrawn by default.
+Specifies whether the scroll bar should be redrawn to reflect the new position. If *`bRedraw`* is `TRUE`, the scroll bar is redrawn. If it is `FALSE`, it isn't redrawn. The scroll bar is redrawn by default.
 
 ### Return Value
 
@@ -10918,7 +10918,7 @@ Specifies the scroll bar to be set. This parameter can be either of the followin
 Specifies the new position of the scroll box. It must be within the scrolling range.
 
 *`bRedraw`*<br/>
-Specifies whether the scroll bar should be repainted to reflect the new scroll-box position. If this parameter is `TRUE`, the scroll bar is repainted; if `FALSE`, the scroll bar is not repainted.
+Specifies whether the scroll bar should be repainted to reflect the new scroll-box position. If this parameter is `TRUE`, the scroll bar is repainted; if `FALSE`, the scroll bar isn't repainted.
 
 ### Return Value
 
@@ -10956,13 +10956,13 @@ Specifies the minimum scrolling position.
 Specifies the maximum scrolling position.
 
 *`bRedraw`*<br/>
-Specifies whether the scroll bar should be redrawn to reflect the change. If *`bRedraw`* is `TRUE`, the scroll bar is redrawn; if `FALSE`, the scroll bar is not redrawn.
+Specifies whether the scroll bar should be redrawn to reflect the change. If *`bRedraw`* is `TRUE`, the scroll bar is redrawn; if `FALSE`, the scroll bar isn't redrawn.
 
 ### Remarks
 
 It can also be used to hide or show standard scroll bars.
 
-An application should not call this function to hide a scroll bar while processing a scroll-bar notification message.
+An application shouldn't call this function to hide a scroll bar while processing a scroll-bar notification message.
 
 If the call to `SetScrollRange` immediately follows a call to the [`SetScrollPos`](#setscrollpos) member function, the *`bRedraw`* parameter in the `SetScrollPos` member function should be 0 to prevent the scroll bar from being drawn twice.
 
@@ -11105,13 +11105,13 @@ Specifies sizing and positioning options. This parameter can be a combination of
 
 - `SWP_DRAWFRAME` Draws a frame (defined when the window was created) around the window.
 
-- `SWP_FRAMECHANGED` Sends a `WM_NCCALCSIZE` message to the window, even if the window's size is not being changed. If this flag is not specified, `WM_NCCALCSIZE` is sent only when the window's size is being changed.
+- `SWP_FRAMECHANGED` Sends a `WM_NCCALCSIZE` message to the window, even if the window's size isn't being changed. If this flag isn't specified, `WM_NCCALCSIZE` is sent only when the window's size is being changed.
 
 - `SWP_HIDEWINDOW` Hides the window.
 
-- `SWP_NOACTIVATE` Does not activate the window. If this flag is not set, the window is activated and moved to the top of either the topmost or the non-topmost group (depending on the setting of the *`pWndInsertAfter`* parameter).
+- `SWP_NOACTIVATE` Does not activate the window. If this flag isn't set, the window is activated and moved to the top of either the topmost or the non-topmost group (depending on the setting of the *`pWndInsertAfter`* parameter).
 
-- `SWP_NOCOPYBITS` Discards the entire contents of the client area. If this flag is not specified, the valid contents of the client area are saved and copied back into the client area after the window is sized or repositioned.
+- `SWP_NOCOPYBITS` Discards the entire contents of the client area. If this flag isn't specified, the valid contents of the client area are saved and copied back into the client area after the window is sized or repositioned.
 
 - `SWP_NOMOVE` Retains current position (ignores the *`x`* and *`y`* parameters).
 
@@ -11139,7 +11139,7 @@ Windows are ordered on the screen according to their Z-order; the window at the 
 
 All coordinates for child windows are client coordinates (relative to the upper-left corner of the parent window's client area).
 
-A window can be moved to the top of the Z-order either by setting the *`pWndInsertAfter`* parameter to **`&wndTopMost`** and ensuring that the `SWP_NOZORDER` flag is not set or by setting a window's Z-order so that it is above any existing topmost windows. When a non-topmost window is made topmost, its owned windows are also made topmost. Its owners are not changed.
+A window can be moved to the top of the Z-order either by setting the *`pWndInsertAfter`* parameter to **`&wndTopMost`** and ensuring that the `SWP_NOZORDER` flag isn't set or by setting a window's Z-order so that it is above any existing topmost windows. When a non-topmost window is made topmost, its owned windows are also made topmost. Its owners are not changed.
 
 A topmost window is no longer topmost if it is repositioned to the bottom (**`&wndBottom`**) of the Z-order or after any non-topmost window. When a topmost window is made non-topmost, all of its owners and its owned windows are also made non-topmost windows.
 
@@ -11147,7 +11147,7 @@ If neither `SWP_NOACTIVATE` nor `SWP_NOZORDER` is specified (that is, when the a
 
 - Neither **`&wndTopMost`** nor **`&wndNoTopMost`** is specified in the *`pWndInsertAfter`* parameter.
 
-- This window is not the active window.
+- This window isn't the active window.
 
 An application cannot activate an inactive window without also bringing it to the top of the Z-order. Applications can change the Z-order of an activated window without restrictions.
 
@@ -11228,7 +11228,7 @@ void ShowCaret();
 
 Once shown, the caret begins flashing automatically.
 
-The `ShowCaret` member function shows the caret only if it has a current shape and has not been hidden two or more times consecutively. If the caret is not owned by this window, the caret is not shown.
+The `ShowCaret` member function shows the caret only if it has a current shape and has not been hidden two or more times consecutively. If the caret isn't owned by this window, the caret isn't shown.
 
 Hiding the caret is cumulative. If the [`HideCaret`](#hidecaret) member function has been called five times consecutively, `ShowCaret` must be called five times to show the caret.
 
@@ -11281,7 +11281,7 @@ Specifies whether Windows shows or hides the scroll bar. If this parameter is `T
 
 ### Remarks
 
-An application should not call `ShowScrollBar` to hide a scroll bar while processing a scroll-bar notification message.
+An application shouldn't call `ShowScrollBar` to hide a scroll bar while processing a scroll-bar notification message.
 
 ## <a name="showwindow"></a> `CWnd::ShowWindow`
 
@@ -11487,10 +11487,10 @@ A pointer to a device context for the screen. It is used for palette color match
 If *`pDCSrc`* is `NULL`, *`pDCDst`* must be `NULL`.
 
 *`pptDst`*<br/>
-A pointer to a `POINT` structure specifying the new screen position of the layered window. If the current position is not changing, *`pptDst`* can be `NULL`.
+A pointer to a `POINT` structure specifying the new screen position of the layered window. If the current position isn't changing, *`pptDst`* can be `NULL`.
 
 *`psize`*<br/>
-Pointer to a `SIZE` structure that specifies the new size of the layered window. If the size of the window is not changing, *`psize`* can be `NULL`.
+Pointer to a `SIZE` structure that specifies the new size of the layered window. If the size of the window isn't changing, *`psize`* can be `NULL`.
 
 If *`pDCSrc`* is `NULL`, *`psize`* must be `NULL`.
 
@@ -11521,7 +11521,7 @@ This member function emulates the functionality of the function [`UpdateLayeredW
 
 ## <a name="updatewindow"></a> `CWnd::UpdateWindow`
 
-Updates the client area by sending a [`WM_PAINT`](/windows/win32/gdi/wm-paint) message if the update region is not empty.
+Updates the client area by sending a [`WM_PAINT`](/windows/win32/gdi/wm-paint) message if the update region isn't empty.
 
 ```cpp
 void UpdateWindow();
@@ -11529,7 +11529,7 @@ void UpdateWindow();
 
 ### Remarks
 
-The `UpdateWindow` member function sends a `WM_PAINT` message directly, bypassing the application queue. If the update region is empty, `WM_PAINT` is not sent.
+The `UpdateWindow` member function sends a `WM_PAINT` message directly, bypassing the application queue. If the update region is empty, `WM_PAINT` isn't sent.
 
 ### Example
 
@@ -11588,7 +11588,7 @@ Specifies a [`CPoint`](../../atl-mfc-shared/reference/cpoint-class.md) object or
 
 ### Return Value
 
-A pointer to the window object in which the point lies. It is `NULL` if no window exists at the given point. The returned pointer may be temporary and should not be stored for later use.
+A pointer to the window object in which the point lies. It is `NULL` if no window exists at the given point. The returned pointer may be temporary and shouldn't be stored for later use.
 
 ### Remarks
 

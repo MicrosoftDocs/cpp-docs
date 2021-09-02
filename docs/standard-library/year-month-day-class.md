@@ -26,8 +26,8 @@ class year_month_day; // C++ 20
 | [`ok`](#ok) | Verify that the [`year`](year-class.md) and [`month`](month-class.md) values are in the valid range. |
 | [`operator+=`](#op_+=) | Add the specified number of months or years. |
 | [`operator-=`](#op_-=) | Subtract the specified number of months or years. |
-| [`operator local_days`](#local_days) | Get the count of days from the `system_clock` epoch to this `year_month_day` as [`local_days`](chrono.md#alias-declarations). |
-| [`operator sys_days`](#sys_days) | Get the count of days from the `system_clock` epoch to this `year_month_day` as [`sys_days`](chrono.md#alias-declarations). |
+| [`operator local_days`](#local_days) | Get the count of days from the `system_clock` epoch to this `year_month_day` as [`local_days`](chrono.md#typedefs). |
+| [`operator sys_days`](#sys_days) | Get the count of days from the `system_clock` epoch to this `year_month_day` as [`sys_days`](chrono.md#typedefs). |
 | [`year`](#year) | Returns the year. |
 
 ## Non-members
@@ -67,7 +67,7 @@ Construct a `year_month_day`.
 A [`day`](day-class.md) value.
 
 *`dp`*
-A [`sys_days`](chrono.md#alias-declarations) or [`local_days`](chrono.md#alias-declarations) value.
+A [`sys_days`](chrono.md#typedefs) or [`local_days`](chrono.md#typedefs) value.
 
 *`m`*
 A [`month`](month-class.md) value.
@@ -135,7 +135,7 @@ The [`month`](month-class.md) value.
 
 ## <a name="local_days"></a> `operator local_days`
 
-Get the count of days from the `system_clock` epoch (1/1/1970) to this `year_month_day` as [`local_days`](chrono.md#alias-declarations)
+Get the count of days from the `system_clock` epoch (1/1/1970) to this `year_month_day` as [`local_days`](chrono.md#typedefs)
 
 ```cpp
 constexpr explicit operator local_days() const noexcept;
@@ -147,7 +147,7 @@ If `ok()`, returns a count of days as `local_days{sys_days{*this}.time_since_epo
 
 ## <a name="sys_days"></a> `operator sys_days`
 
-Get the count of days from the `system_clock` epoch (1/1/1970) to this `year_month_day` as [`sys_days`](chrono.md#alias-declarations).
+Get the count of days from the `system_clock` epoch (1/1/1970) to this `year_month_day` as [`sys_days`](chrono.md#typedefs).
 
 ```cpp
 constexpr operator sys_days() const noexcept;

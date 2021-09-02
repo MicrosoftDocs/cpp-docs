@@ -1099,13 +1099,11 @@ This method sends the [`CB_SETCUEBANNER`](/windows/win32/Controls/cb-setcuebanne
 
 ### Example
 
-The following code example defines the variable, *`m_combobox`*, that is used to programmatically access the combo box control. This variable is used in the next example.
+The first code example defines the variable, *`m_combobox`*, that is used to programmatically access the combo box control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CComboBox_s1#1](../../mfc/reference/codesnippet/cpp/ccombobox-class_33.h)]
 
-### Example
-
-The following code example sets the cue banner for the combo box control.
+The next code example sets the cue banner for the combo box control.
 
 [!code-cpp[NVC_MFC_CComboBox_s1#2](../../mfc/reference/codesnippet/cpp/ccombobox-class_34.cpp)]
 
@@ -1388,13 +1386,11 @@ This method sends the [`CB_SETMINVISIBLE`](/windows/win32/Controls/cb-setminvisi
 
 ### Example
 
-The following code example defines the variable, *`m_combobox`*, that is used to programmatically access the combo box control. This variable is used in the next example.
+The first code example defines the variable, `m_combobox`, that is used to programmatically access the combo box control. This variable is used in the next example.
 
 [!code-cpp[NVC_MFC_CComboBox_s1#1](../../mfc/reference/codesnippet/cpp/ccombobox-class_33.h)]
 
-### Example
-
-The following code example inserts 20 items into the drop-down list of a combo box control. Then it specifies that a minimum of 10 items be displayed when a user presses the drop-down arrow.
+The next code example inserts 20 items into the drop-down list of a combo box control. Then it specifies that a minimum of 10 items be displayed when a user presses the drop-down arrow.
 
 [!code-cpp[NVC_MFC_CComboBox_s1#2](../../mfc/reference/codesnippet/cpp/ccombobox-class_34.cpp)]
 

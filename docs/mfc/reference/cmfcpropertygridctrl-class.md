@@ -142,7 +142,7 @@ The following table lists four selection property types:
 
 The following illustrations depict a property grid control that displays properties in two ways. The first illustration displays properties hierarchically and the second displays properties alphabetically.
 
-![Property List PropertySheet](../../mfc/reference/media/proplist.png "Property List PropertySheet")
+![Property List PropertySheet.](../../mfc/reference/media/proplist.png "Property List PropertySheet")
 
 ## Example
 

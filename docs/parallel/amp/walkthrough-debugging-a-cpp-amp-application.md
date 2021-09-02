@@ -46,7 +46,7 @@ The instructions for creating a project vary depending on which version of Visua
 
 1. From the filtered list of project types, choose **Console App** then choose **Next**. In the next page, enter `AMPMapReduce` in the **Name** box to specify a name for the project, and specify the project location if you want a different one.
 
-   ![Name the project](../../build/media/mathclient-project-name-2019.png "Name the project")
+   ![Name the project.](../../build/media/mathclient-project-name-2019.png "Name the project")
 
 1. Choose the **Create** button to create the client project.
 

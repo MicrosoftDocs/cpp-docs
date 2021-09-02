@@ -313,7 +313,7 @@ using namespace literals::string_view_literals;
 
 ## Requirements
 
-[`/std:c++17`](../build/reference/std-specify-language-standard-version.md)
+[`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later.
 
 ## See also
 

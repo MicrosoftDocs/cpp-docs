@@ -15,7 +15,7 @@ This document lists the changes in Visual Studio 2019. For a guide to the change
 Visual Studio 2019 RTW contains the following conformance improvements, bug fixes, and behavior changes in the Microsoft C++ compiler.
 
 > [!NOTE]
-> C++20 features are available in **`/std:c++latest`** mode until the C++20 implementation is complete for both the compiler and IntelliSense. At that time, we'll introduce the **`/std:c++20`** compiler mode.
+> C++20 features were available only in [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) mode in Visual Studio 2019 until the C++20 implementation was considered complete. Visual Studio 2019 version 16.11 introduces the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler mode. In this article, features that originally required **`/std:c++latest`** mode now work in **`/std:c++20`** mode or later in the latest versions of Visual Studio. We've updated the documentation to mention **`/std:c++20`**, even though this option wasn't available when the features were first released.
 
 ### Improved modules support for templates and error detection
 
@@ -23,9 +23,9 @@ Modules are now officially in the C++20 standard. Improved support was added in 
 
 ### Modified specification of aggregate type
 
-The specification of an aggregate type has changed in C++20 (see [Prohibit aggregates with user-declared constructors](https://wg21.link/p1008r1)). In Visual Studio 2019, under **`/std:c++latest`**, a class with any user-declared constructor (for example, including a constructor declared `= default` or `= delete`) isn't an aggregate. Previously, only user-provided constructors would disqualify a class from being an aggregate. This change puts more restrictions on how such types can be initialized.
+The specification of an aggregate type has changed in C++20 (see [Prohibit aggregates with user-declared constructors](https://wg21.link/p1008r1)). In Visual Studio 2019, under **`/std:c++latest`** (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11), a class with any user-declared constructor (for example, including a constructor declared `= default` or `= delete`) isn't an aggregate. Previously, only user-provided constructors would disqualify a class from being an aggregate. This change puts more restrictions on how such types can be initialized.
 
-The following code compiles without errors in Visual Studio 2017 but raises errors C2280 and C2440 in Visual Studio 2019 under **`/std:c++latest`**:
+The following code compiles without errors in Visual Studio 2017 but raises errors C2280 and C2440 in Visual Studio 2019 under **`/std:c++20`** or **`/std:c++latest`**:
 
 ```cpp
 struct A
@@ -45,7 +45,7 @@ B b = { 1 }; // ill-formed in C++20, previously well-formed
 
 ### Partial support for `operator <=>`
 
-[P0515R3](https://wg21.link/p0515r3) C++20 introduces the `<=>` three-way comparison operator, also known as the "spaceship operator". Visual Studio 2019 in **`/std:c++latest`** mode introduces partial support for the operator by raising errors for syntax that is now disallowed. For example, the following code compiles without errors in Visual Studio 2017 but raises multiple errors in Visual Studio 2019 under **`/std:c++latest`**:
+[P0515R3](https://wg21.link/p0515r3) C++20 introduces the `<=>` three-way comparison operator, also known as the "spaceship operator". Visual Studio 2019 version 16.0 in **`/std:c++latest`** mode introduces partial support for the operator by raising errors for syntax that's now disallowed. For example, the following code compiles without errors in Visual Studio 2017 but raises multiple errors in Visual Studio 2019 under **`/std:c++20`** or **`/std:c++latest`**:
 
 ```cpp
 struct S
@@ -125,7 +125,7 @@ int main()
 }
 ```
 
-To avoid the error, either remove the **`constexpr`** qualifier, or else change the conformance mode to **`/std:c++17`**.
+To avoid the error, either remove the **`constexpr`** qualifier, or else change the conformance mode to **`/std:c++17`** or later.
 
 ### `std::create_directory` failure codes
 
@@ -205,7 +205,7 @@ To avoid the error in this example, use the **`+=`** operator with the `ToString
 
 ### Initializers for inline static data members
 
-Invalid member accesses within **`inline`** and **`static constexpr`** initializers are now correctly detected. The following example compiles without error in Visual Studio 2017, but in Visual Studio 2019 under **`/std:c++17`** mode it raises error C2248:
+Invalid member accesses within **`inline`** and **`static constexpr`** initializers are now correctly detected. The following example compiles without error in Visual Studio 2017, but in Visual Studio 2019 under **`/std:c++17`** mode or later it raises error C2248:
 
 ```cpp
 struct X
@@ -274,7 +274,7 @@ void example()
 
 ### Function template bodies containing `if constexpr` statements
 
-In Visual Studio 2019 under **`/std:c++latest`**, template function bodies that have **`if constexpr`** statements have extra parsing-related checks enabled. For example, in Visual Studio 2017 the following code produces [C7510](../error-messages/compiler-errors-2/compiler-error-c7510.md) only if the **`/permissive-`** option is set. In Visual Studio 2019 the same code raises errors even when the **`/permissive`** option is set:
+In Visual Studio 2019 under **`/std:c++20`** or **`/std:c++latest`**, template function bodies that have **`if constexpr`** statements have extra parsing-related checks enabled. For example, in Visual Studio 2017 the following code produces [C7510](../error-messages/compiler-errors-2/compiler-error-c7510.md) only if the **`/permissive-`** option is set. In Visual Studio 2019 the same code raises errors even when the **`/permissive`** option is set:
 
 ```cpp
 // C7510.cpp
@@ -455,7 +455,7 @@ Fixed a minor type traits bug, where `add_const_t` and related functions are sup
 
 ### char8_t
 
-[P0482r6](https://wg21.link/p0482r6). C++20 adds a new character type that is used to represent UTF-8 code units. `u8` string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case previously. Similar changes have been proposed for the C standard in [N2231](https://wg14.link/n2231). Suggestions for **`char8_t`** backward compatibility remediation are given in [P1423r3](https://wg21.link/p1423r3). The Microsoft C++ compiler adds support for **`char8_t`** in Visual Studio 2019 version 16.1 when you specify the **`/Zc:char8_t`** compiler option. In the future, it will be supported with [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md), which can be reverted to C++17 behavior via **`/Zc:char8_t-`**. The EDG compiler that powers IntelliSense doesn't yet support it. You may see spurious IntelliSense-only errors that don't affect the actual compilation.
+[P0482r6](https://wg21.link/p0482r6). C++20 adds a new character type that is used to represent UTF-8 code units. `u8` string literals in C++20 have type `const char8_t[N]` instead of `const char[N]`, which was the case previously. Similar changes have been proposed for the C standard in [N2231](https://wg14.link/n2231). Suggestions for **`char8_t`** backward compatibility remediation are given in [P1423r3](https://wg21.link/p1423r3). The Microsoft C++ compiler adds support for **`char8_t`** in Visual Studio 2019 version 16.1 when you specify the [`/Zc:char8_t`](../build/reference/zc-char8-t.md) compiler option. It can be reverted to C++17 behavior via **`/Zc:char8_t-`**. The EDG compiler that powers IntelliSense doesn't yet support it in Visual Studio 2019 version 16.1. You may see spurious IntelliSense-only errors that don't affect the actual compilation.
 
 #### Example
 
@@ -466,7 +466,7 @@ const char8_t* s = u8"Hello"; // C++20
 
 ### `std::type_identity` metafunction and `std::identity` function object
 
-[P0887R1 type_identity](https://wg21.link/p0887r1). The deprecated `std::identity` class template extension has been removed, and replaced with the C++20 `std::type_identity` metafunction and `std::identity` function object. Both are available only under [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md).
+[P0887R1 type_identity](https://wg21.link/p0887r1). The deprecated `std::identity` class template extension has been removed, and replaced with the C++20 `std::type_identity` metafunction and `std::identity` function object. Both are available only under **`/std:c++latest`** (**`/std:c++20`** starting in Visual Studio 2019 version 16.11).
 
 The following example produces deprecation warning C4996 for `std::identity` (defined in \<type_traits>) in Visual Studio 2017:
 
@@ -493,9 +493,9 @@ long j = static_cast<long>(i);
 
 ### Syntax checks for generic lambdas
 
-The new lambda processor enables some conformance-mode syntactic checks in generic lambdas, under [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) or under any other language mode with **`/experimental:newLambdaProcessor`**.
+The new lambda processor enables some conformance-mode syntactic checks in generic lambdas, under **`/std:c++latest`** (**`/std:c++20`** starting in Visual Studio 2019 version 16.11) or under any other language mode with [`/Zc:lambda`](../build/reference/zc-lambda.md) in Visual Studio 2019 version 16.9 or later (previously available as **`/experimental:newLambdaProcessor`** beginning in Visual Studio 2019 version 16.3).
 
-In Visual Studio 2017, this code compiles without warnings, but in Visual Studio 2019 it produces error C2760:
+The legacy lambda processor compiles this example without warnings, but the new lambda processor produces error C2760:
 
 ```cpp
 void f() {
@@ -505,7 +505,7 @@ void f() {
 }
 ```
 
-The following example shows the correct syntax, now enforced by the compiler:
+This example shows the correct syntax, now enforced by the compiler:
 
 ```cpp
 void f() {
@@ -517,11 +517,11 @@ void f() {
 
 ### Argument-dependent lookup for function calls
 
-[P0846R0](https://wg21.link/p0846r0) (C++20) Increased ability to find function templates via argument-dependent lookup for function-call expressions with explicit template arguments. Requires **`/std:c++latest`**.
+[P0846R0](https://wg21.link/p0846r0) (C++20) Increased ability to find function templates via argument-dependent lookup for function-call expressions with explicit template arguments. Requires **`/std:c++latest`** (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11).
 
 ### Designated initialization
 
-[P0329R4](https://wg21.link/p0329r4) (C++20) *Designated initialization* allows specific members to be selected in aggregate initialization by using the `Type t { .member = expr }` syntax. Requires **`/std:c++latest`**.
+[P0329R4](https://wg21.link/p0329r4) (C++20) *Designated initialization* allows specific members to be selected in aggregate initialization by using the `Type t { .member = expr }` syntax. Requires **`/std:c++latest`** (or **`/std:c++20`** starting in Visual Studio 2019 version 16.11).
 
 ### New and updated standard library functions (C++20)
 
@@ -564,7 +564,7 @@ C++20 has deprecated the usual arithmetic conversions on operands, where:
 
 For more information, see [P1120R0](https://wg21.link/p1120r0).
 
-In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 warning when the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
+In Visual Studio 2019 version 16.2 and later, the following code produces a level 4 warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
 
 ```cpp
 enum E1 { a };
@@ -584,7 +584,7 @@ int main() {
 }
 ```
 
-Using a binary operation between an enumeration and a floating-point type is now a warning when the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
+Using a binary operation between an enumeration and a floating-point type is now a warning when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
 
 ```cpp
 enum E1 { a };
@@ -604,7 +604,7 @@ int main() {
 
 ### Equality and relational comparisons of arrays
 
-Equality and relational comparisons between two operands of array type are deprecated in C++20 ([P1120R0](https://wg21.link/p1120r0)). In other words, a comparison operation between two arrays (despite rank and extent similarities) is now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces C5056 when the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option is enabled:
+Equality and relational comparisons between two operands of array type are deprecated in C++20 ([P1120R0](https://wg21.link/p1120r0)). In other words, a comparison operation between two arrays (despite rank and extent similarities) is now a warning. Starting in Visual Studio 2019 version 16.2, the following code produces C5056 when the **`/std:c++latest`** compiler option is enabled (**`/std:c++20`** starting in Visual Studio 2019 version 16.11):
 
 ```cpp
 int main() {
@@ -734,7 +734,7 @@ struct Comparer  {
 
 ### Stream extraction operators for `char*` removed
 
-Stream extraction operators for pointer-to-characters have been removed and replaced by extraction operators for array-of-characters (per [P0487R1](https://wg21.link/p0487r1)). WG21 considers the removed overloads to be unsafe. In [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) mode, the following example now produces C2679:
+Stream extraction operators for pointer-to-characters have been removed and replaced by extraction operators for array-of-characters (per [P0487R1](https://wg21.link/p0487r1)). WG21 considers the removed overloads to be unsafe. In **`/std:c++20`** or **`/std:c++latest`** mode, the following example now produces C2679:
 
 ```cpp
 // stream_extraction.cpp
@@ -766,7 +766,7 @@ int main() {
 
 ### New keywords `requires` and `concept`
 
-New keywords **`requires`** and **`concept`** have been added to the Microsoft C++ compiler. If you attempt to use either one as an identifier in [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) mode, the compiler will raise C2059: "syntax error".
+New keywords **`requires`** and **`concept`** have been added to the Microsoft C++ compiler. If you attempt to use either one as an identifier in **`/std:c++20`** or **`/std:c++latest`** mode, the compiler will raise C2059: "syntax error".
 
 ### Constructors as type names disallowed
 
@@ -960,7 +960,7 @@ static_assert(my_is_fundamental<S>::value, "fail");
 
 ### Changes to compiler-provided comparison operators
 
-The MSVC compiler now implements the following changes to comparison operators per [P1630R1](https://wg21.link/p1630r1) when the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) option is enabled:
+The MSVC compiler now implements the following changes to comparison operators per [P1630R1](https://wg21.link/p1630r1) when the **`/std:c++20`** or **`/std:c++latest`** option is enabled:
 
 The compiler no longer rewrites expressions using `operator==` if they involve a return type that isn't a **`bool`**. The following code now produces error C2088:
 
@@ -1244,7 +1244,7 @@ U u{ 0 };
 
 Traditionally, inserting a **`wchar_t`** into a `std::ostream`, and inserting **`char16_t`** or **`char32_t`** into a `std::ostream` or `std::wostream`, outputs its integral value. Inserting pointers to those character types outputs the pointer value. Programmers don't find either case intuitive. They often expect the standard library to transcode the character or null-terminated character string instead, and to output the result.
 
-The C++20 proposal [P1423R3](https://wg21.link/p1423r3) adds deleted stream insertion operator overloads for these combinations of stream and character or character pointer types. Under **`/std:c++latest`**, the overloads make these insertions ill-formed, instead of behaving in what is likely an unintended manner. The compiler raises error C2280 when one is found. You can define the "escape hatch" macro `_HAS_STREAM_INSERTION_OPERATORS_DELETED_IN_CXX20` to `1` to restore the old behavior. (The proposal also deletes stream insertion operators for **`char8_t`**. Our standard library implemented similar overloads when we added **`char8_t`** support, so the "wrong" behavior has never been available for **`char8_t`**.)
+The C++20 proposal [P1423R3](https://wg21.link/p1423r3) adds deleted stream insertion operator overloads for these combinations of stream and character or character pointer types. Under **`/std:c++20`** or **`/std:c++latest`**, the overloads make these insertions ill-formed, instead of behaving in what is likely an unintended manner. The compiler raises error C2280 when one is found. You can define the "escape hatch" macro `_HAS_STREAM_INSERTION_OPERATORS_DELETED_IN_CXX20` to `1` to restore the old behavior. (The proposal also deletes stream insertion operators for **`char8_t`**. Our standard library implemented similar overloads when we added **`char8_t`** support, so the "wrong" behavior has never been available for **`char8_t`**.)
 
 This sample shows the behavior with this change:
 
@@ -1363,7 +1363,7 @@ Starting in Visual Studio 2019 version 16.6, the behavior of **`typedef`** decla
 
 The same restrictions are applied recursively to each nested class. The restriction is meant to ensure the simplicity of structs that have **`typedef`** names for linkage purposes. They must be simple enough that no linkage calculations are necessary before the compiler gets to the **`typedef`** name for linkage.
 
-This change affects all standards modes of the compiler. In default (**`/std:c++14`**) and  **`/std:c++17`** modes, the compiler emits warning C5208 for non-conforming code. If **`/permissive-`** is specified, the compiler emits warning C5208 as an error under **`/std:c++14`** and emits error C7626 under **`/std:c++17`**. The compiler emits error C7626 for non-conforming code when **`/std:c++latest`** is specified.
+This change affects all standards modes of the compiler. In default (**`/std:c++14`**) and  **`/std:c++17`** modes, the compiler emits warning C5208 for non-conforming code. If **`/permissive-`** is specified, the compiler emits warning C5208 as an error under **`/std:c++14`** and emits error C7626 under **`/std:c++17`**. The compiler emits error C7626 for non-conforming code when **`/std:c++20`** or **`/std:c++latest`** is specified.
 
 The following sample shows the constructs that are no longer allowed in unnamed structs. Depending on the standards mode specified, C5208 or C7626 errors or warnings are emitted:
 
@@ -1606,7 +1606,7 @@ struct Z3 : W
 };
 ```
 
-This behavior change applies to all C++ language modes of MSVC, not just **`/std:c++latest`**.
+This behavior change applies to all C++ language modes of MSVC, not just **`/std:c++20`** or **`/std:c++latest`**.
 
 ### Narrowing conversions are more consistently diagnosed
 
@@ -1788,7 +1788,7 @@ Given that in many cases using `::f` as the function argument is what the user e
 
 ### Migrating from `/await` to C++20 coroutines
 
-Standard C++20 coroutines are now on by default under **`/std:c++latest`**. They differ from the Coroutines TS and the support under the **`/await`** option. Migrating from **`/await`** to standard coroutines may require some source changes.
+Standard C++20 coroutines are now on by default under **`/std:c++20`** and **`/std:c++latest`**. They differ from the Coroutines TS and the support under the **`/await`** option. Migrating from **`/await`** to standard coroutines may require some source changes.
 
 #### Non-standard keywords
 
@@ -1903,7 +1903,7 @@ struct promise_type {
 
 #### Return object conversion behavior
 
-If the declared return type of a coroutine doesn't match the return type of the promise `get_return_object` function, the object returned from `get_return_object` gets converted to the return type of the coroutine. Under **`/await`**, this conversion is done early, before the coroutine body has a chance to execute. In **`/std:c++latest`**, this conversion is done when the value is returned to the caller. It allows coroutines that don't suspend at the initial suspend point to make use of the object returned by `get_return_object` within the coroutine body.
+If the declared return type of a coroutine doesn't match the return type of the promise `get_return_object` function, the object returned from `get_return_object` gets converted to the return type of the coroutine. Under **`/await`**, this conversion is done early, before the coroutine body has a chance to execute. In **`/std:c++20`** or **`/std:c++latest`**, this conversion is done when the value is returned to the caller. It allows coroutines that don't suspend at the initial suspend point to make use of the object returned by `get_return_object` within the coroutine body.
 
 #### Coroutine promise parameters
 
@@ -1936,11 +1936,11 @@ coro f2(Object o);
 f2(Object{});
 ```
 
-### `/permissive-` and C++20 Modules are on by default under `/std:c++latest`
+### `/permissive-` and C++20 Modules are on by default under `/std:c++20`
 
-C++20 Modules support is on by default under **`/std:c++latest`**. For more information about this change, and the scenarios where **`module`** and **`import`** are conditionally treated as keywords, see [Standard C++20 Modules support with MSVC in Visual Studio 2019 version 16.8](https://devblogs.microsoft.com/cppblog/standard-c20-modules-support-with-msvc-in-visual-studio-2019-version-16-8/).
+C++20 Modules support is on by default under **`/std:c++20`** and **`/std:c++latest`**. For more information about this change, and the scenarios where **`module`** and **`import`** are conditionally treated as keywords, see [Standard C++20 Modules support with MSVC in Visual Studio 2019 version 16.8](https://devblogs.microsoft.com/cppblog/standard-c20-modules-support-with-msvc-in-visual-studio-2019-version-16-8/).
 
-As a prerequisite for Modules support, **`permissive-`** is now enabled when **`/std:c++latest`** is specified. For more information, see [`/permissive-`](../build/reference/permissive-standards-conformance.md).
+As a prerequisite for Modules support, **`permissive-`** is now enabled when **`/std:c++20`** or **`/std:c++latest`** is specified. For more information, see [`/permissive-`](../build/reference/permissive-standards-conformance.md).
 
 For code that previously compiled under **`/std:c++latest`** and requires non-conforming compiler behaviors, **`/permissive`** may be specified to turn off strict conformance mode in the compiler. The compiler option must appear after **`/std:c++latest`** in the command-line argument list. However, **`/permissive`** results in an error if Modules usage is detected:
 
@@ -1952,11 +1952,12 @@ The most common values for *option* are:
 |--|--|
 | **`/Zc:twoPhase-`** | Two-phase name lookup is required for C++20 Modules and implied by **`/permissive-`**. |
 | **`/Zc:hiddenFriend-`** | Standard hidden friend name lookup rules are required for C++20 Modules and implied by **`/permissive-`**. |
+| **`/Zc:lambda-`** | Standard lambda processing is required for C++20 Modules and is implied by **`/std:c++20`** mode or later. |
 | **`/Zc:preprocessor-`** | The conforming preprocessor is required for C++20 header unit usage and creation only. Named Modules don't require this option. |
 
 The [`/experimental:module`](../build/reference/experimental-module.md) option is still required to use the *`std.*`* Modules that ship with Visual Studio, because they're not standardized yet.
 
-The **`/experimental:module`** option also implies **`/Zc:twoPhase`** and **`/Zc:hiddenFriend`**. Previously, code compiled with Modules could sometimes be compiled with **`/Zc:twoPhase-`** if the Module was only consumed. This behavior is no longer supported.
+The **`/experimental:module`** option also implies **`/Zc:twoPhase`**, **`/Zc:lambda`**, and **`/Zc:hiddenFriend`**. Previously, code compiled with Modules could sometimes be compiled with **`/Zc:twoPhase-`** if the Module was only consumed. This behavior is no longer supported.
 
 ## <a name="improvements_169"></a> Conformance improvements in Visual Studio 2019 version 16.9
 

@@ -298,13 +298,13 @@ C++ now supports Ctrl+Click **Go To Definition**, making mouse navigation to def
 
 - We've added error filtering and help for IntelliSense errors in the error list. Clicking on the error column now allows for filtering. Also, clicking on the specific errors or pressing F1 will launch an online search for the error message.
 
-  ![Error List](media/ErrorList1.png "Error List")
+  ![Error List.](media/ErrorList1.png "Error List")
 
-  ![Error List Filtered](media/ErrorList2.png "Error List Filtered")
+  ![Error List Filtered.](media/ErrorList2.png "Error List Filtered")
 
 - Added the ability to filter Member List items by kind.
 
-  ![Member List Filtering](media/mlfiltering.png "Member List Filtering")
+  ![Member List Filtering.](media/mlfiltering.png "Member List Filtering")
 
 - Added a new experimental Predictive IntelliSense feature that provides contextually aware filtering of what appears in the Member List. For more information, see [C++ IntelliSense Improvements - Predictive IntelliSense & Filtering](https://devblogs.microsoft.com/cppblog/c-intellisense-improvements-predictive-intellisense-filtering/).
 - **Find All References** (Shift+F12) now helps you get around easily, even in complex codebases. It provides advanced grouping, filtering, sorting, searching within results, and (for some languages) colorization, so you can get a clear understanding of your references. For C++, the new UI includes information about whether we're reading from or writing to a variable.
@@ -340,7 +340,7 @@ Visual Studio 2017 introduces support for using CMake projects without convertin
 
 - Further configuration is supported via a CMakeSettings.json file that sits in the same folder as the CMakeLists.txt file.
 
-  ![CMake Open Folder](media/cmake-cpp.png "CMake Open Folder")
+  ![CMake Open Folder.](media/cmake-cpp.png "CMake Open Folder")
 
 ##### Visual Studio 2017 version 15.3
 
@@ -462,7 +462,7 @@ Visual Studio Graphics Diagnostics tools: You can use them to record and analyze
 
 - **Input & Output for Vertex and Geometry shaders:** The ability to view input and output of vertex shaders and geometry shaders has been one of the most requested features. It's now supported in the tools. Select the VS or GS stage in the Pipeline Stages view to start inspecting its input and output in the table below.
 
-  ![Input/Output for shaders](media/io-shaders.png)
+  ![Input/Output for shaders.](media/io-shaders.png)
 
 - **Search and filter in the object table:** Provides a quick and easy way to find the resources you're looking for.
 
@@ -470,34 +470,34 @@ Visual Studio Graphics Diagnostics tools: You can use them to record and analyze
 
 - **Resource History:** This new view provides a streamlined way of seeing the entire modification history of a resource as it was used during the rendering of a captured frame. To invoke the history for any resource, click the clock icon next to any resource hyperlink.
 
-  ![Resource history](media/resource-history.png)
+  ![Resource history.](media/resource-history.png)
 
   It displays the new **Resource History** tool window, populated with the change history of the resource.
 
-  ![Resource history change](media/resource-history-change.png)
+  ![Resource history change.](media/resource-history-change.png)
 
   You can capture frames with full call stack capturing enabled. That lets you quickly deduce the context of each change event, and inspect it within your Visual Studio project. Set the full stack capture option in the Visual Studio **Tools > Options** dialog under **Graphics Diagnostics**.
 
 - **API Statistics:** View a high-level summary of API usage in your frame. It's handy for discovering calls you may not realize you're making at all, or calls you're making too often. This window is available via **View > API Statistics** in Visual Studio Graphics Analyzer.
 
-  ![API stats](media/api-stats.png)
+  ![API stats.](media/api-stats.png)
 
 - **Memory Statistics:** View how much memory the driver allocates for the resources you create in the frame. This window is available via **View > Memory Statistics** in **Visual Studio Graphics Analyzer**. To copy data to a CSV file for viewing in a spreadsheet, right-click and choose **Copy All**.
 
-  ![Memory stats](media/memory-stats.png)
+  ![Memory stats.](media/memory-stats.png)
 
 - **Frame Validation:** The new errors and warnings list provides an easy way to navigate your event list based on potential issues detected by the Direct3D debug layer. Click **View > Frame Validation** in Visual Studio Graphics Analyzer to open the window. Then click **Run Validation** to start the analysis. It can take several minutes to complete, depending on the frame's complexity.
 
-  ![Frame validation](media/frame-validation.png)
+  ![Frame validation.](media/frame-validation.png)
 
 - **Frame Analysis for D3D12:** Use Frame Analysis to analyze draw-call performance with directed "what-if" experiments. Switch to the Frame Analysis tab and run analysis to view the report. For more details, watch the [GoingNative 25: Visual Studio Graphics Frame Analysis](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video.
 
-  ![Frame analysis](media/frame-analysis.png)
+  ![Frame analysis.](media/frame-analysis.png)
 
 - **GPU Usage Improvements:** Open traces can be taken via the Visual Studio GPU Usage profiler with either GPU View or the Windows Performance Analyzer (WPA) tool for more detailed analysis. If you have the Windows Performance Toolkit installed, there are two hyperlinks: one for WPA and another for GPU View, at the bottom right of the session overview.
 
-  ![GPU usage](media/gpu-usage.png)
+  ![GPU usage.](media/gpu-usage.png)
 
   Traces you open in GPU View via this link support synchronized VS and GPU View timeline zooming and panning. A checkbox in VS controls whether synchronization is enabled or not.
 
-  ![GPU View](media/gpu-view.png)
+  ![GPU View.](media/gpu-view.png)

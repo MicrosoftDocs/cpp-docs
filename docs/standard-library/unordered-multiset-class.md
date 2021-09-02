@@ -734,14 +734,14 @@ The element's key value to look for.
 
 ### Remarks
 
-`contains()` is new in C++20. To use it, specify the [/std:c++latest](../build/reference/std-specify-language-standard-version.md) compiler option.
+`contains()` is new in C++20. To use it, specify the [/std:c++20](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
 `template<class K> bool contains(const K& key) const` only participates in overload resolution if `key_compare` is transparent.
 
 ### Example
 
 ```cpp
-// Requires /std:c++latest
+// Requires /std:c++20 or /std:c++latest
 #include <unordered_set>
 #include <iostream>
 

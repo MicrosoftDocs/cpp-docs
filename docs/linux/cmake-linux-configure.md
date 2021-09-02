@@ -53,7 +53,7 @@ The default configuration for Linux-Debug in Visual Studio 2017 (and Visual Stud
 ::: moniker range="msvc-160"
 To change the default CMake settings in Visual Studio 2019, from the main toolbar, open the **Configuration** dropdown and choose **Manage Configurations**.
 
-![CMake Manage Configurations](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
+![Screenshot showing CMake Manage Configurations highlighted in the Configuration dropdown.](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
 
 This command opens the **CMake Settings Editor**, which you can use to edit the *CMakeSettings.json* file in your root project folder. You can also open the file with the JSON editor by clicking the **Edit JSON** button in the editor. For more information, see [Customize CMake Settings](../build/customize-cmake-settings.md).
 
@@ -104,7 +104,7 @@ If you specify a remote Linux target, your source is copied to the remote system
 
 After you select a target, CMake runs automatically on the Linux system to generate the CMake cache for your project:
 
-![Generate CMake cache on Linux](media/cmake-linux-1.png "Generate the CMake cache on Linux")
+![Screenshot of Visual Studio showing the output of Generate CMake cache on Linux.](media/cmake-linux-1.png "Generate the CMake cache on Linux")
 
 ::: moniker-end
 ::: moniker range="msvc-160"
@@ -115,11 +115,11 @@ If you're targeting Windows Subsystem for Linux (WSL), you don't need to add a r
 
 To target WSL, select **Manage Configurations** in the configuration dropdown in the main toolbar:
 
-![CMake Manage Configurations](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
+![CMake Manage Configurations.](../build/media/vs2019-cmake-manage-configurations.png "CMake configurations drop-down")
 
 The **CMakeSettings.json** window appears.
 
-![Add configuration](media/cmake-linux-configurations.png "Add a configuration to CMake settings")
+![Add configuration.](media/cmake-linux-configurations.png "Add a configuration to CMake settings")
 
 Press **Add Configuration** (the green '+' button) and then choose **Linux-GCC-Debug** or **Linux-GCC-Release** if using GCC. Use the Clang variants if you are using the Clang/LLVM toolset.  Press **Select** and then **Ctrl+S** to save the configuration.
 

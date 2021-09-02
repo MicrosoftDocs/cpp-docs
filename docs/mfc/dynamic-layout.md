@@ -34,11 +34,11 @@ You can set the dynamic layout behavior for a dialog box without having to write
 
 1. If you want a control such as a button to be at a fixed size and stay in place at the bottom right, as is common for the **OK** or **Cancel** buttons, set the **Sizing Type** to **None**, and set the **Moving Type** to **Both**. For the **Moving X** and **Moving Y** values under **Moving Type**, set 100% to cause the control to stay a fixed distance from the bottom right corner.
 
-   ![Dynamic Layout](../mfc/media/mfcdynamiclayout1.png "Dynamic Layout")
+   ![Dynamic Layout.](../mfc/media/mfcdynamiclayout1.png "Dynamic Layout")
 
 1. Suppose you also have a control that you want to expand as the dialog expands. Typically, a user might expand a dialog in order to expand a multiline editbox to increase the size of the text area, or they might expand a list control to see more data. For this case, set the **Sizing Type** to Both, and set the **Moving Type** to none. Then, set the **Sizing X** and **Sizing Y** values to 100.
 
-   ![Dynamic Layout Settings](../mfc/media/mfcdynamiclayout2.png "Dynamic Layout Settings")
+   ![Dynamic Layout Settings.](../mfc/media/mfcdynamiclayout2.png "Dynamic Layout Settings")
 
 1. Experiment with other values that might make sense for your controls. A dialog with a one-line textbox might have the **Sizing Type** set to **Horizontal** only, for example.
 

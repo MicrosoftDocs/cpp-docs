@@ -2,7 +2,7 @@
 title: "Create a console calculator in C++"
 description: "Create a Hello World console app and a calculator app in Visual C++"
 ms.custom: "acquisition, mvc"
-ms.date: 08/19/2019
+ms.date: 08/31/2021
 ms.topic: "tutorial"
 ms.devlang: "cpp"
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
@@ -23,20 +23,20 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
 1. If you've just started Visual Studio, you'll see the Visual Studio 2019 dialog box. Choose **Create a new project** to get started.
 
-   ![The Visual Studio 2019 initial dialog](./media/calc-vs2019-initial-dialog.png "The Visual Studio 2019 initial dialog")
+   ![Screenshot of the Visual Studio 2019 initial dialog.](./media/calc-vs2019-initial-dialog.png "The Visual Studio 2019 initial dialog")
 
    Otherwise, on the menubar in Visual Studio, choose **File** > **New** > **Project**. The **Create a new project** window opens.
 
 1. In the list of project templates, choose **Console App**, then choose **Next**.
 
-   ![Choose the Console App template](./media/calc-vs2019-choose-console-app.png "Choose the Console App template")
+   ![Screenshot of choosing the Console App template.](./media/calc-vs2019-choose-console-app.png "Choose the Console App template")
 
    > [!Important]
    > Make sure you choose the C++ version of the **Console App** template. It has the **C++**, **Windows**, and **Console** tags, and the icon has "++" in the corner.
 
 1. In the **Configure your new project** dialog box, select the **Project name** edit box, name your new project *CalculatorTutorial*, then choose **Create**.
 
-   ![Name your project in the Configure your new project dialog](./media/calc-vs2019-name-your-project.png "Name your project in the Configure your new project dialog")
+   ![Name your project in the Configure your new project dialog.](./media/calc-vs2019-name-your-project.png "Name your project in the Configure your new project dialog")
 
    An empty C++ Windows console application gets created. Console applications use a Windows console window to display output and accept user input. In Visual Studio, an editor window opens and shows the generated code:
 
@@ -168,7 +168,7 @@ It's time to add some math logic.
 
    A pop-up appears that gives you a peek of the code change that was made in the other file. The code was added to *Calculator.cpp*.
 
-   ![Pop-up with definition of Calculate](./media/calc-vs2019-pop-up-definition.png "Pop-up with definition of Calculate")
+   ![Pop-up with definition of Calculate.](./media/calc-vs2019-pop-up-definition.png "Pop-up with definition of Calculate")
 
    Currently, it just returns 0.0. Let's change that. Press **Esc** to close the pop-up.
 
@@ -369,9 +369,43 @@ Let's handle division by zero more gracefully, so a user can understand the prob
 
 - If it's still running, close the console window for the calculator app.
 
+## Add Git source control
+
+Now that you've created an app, you might want to add it to a Git repository. We've got you covered. Visual Studio makes that process easy with Git tools you can use directly from the IDE.
+
+> [!TIP]
+> Git is the most widely used modern version control system, so whether you're a professional developer or you're learning how to code, Git can be very useful. If you're new to Git, the [https://git-scm.com/](https://git-scm.com/) website is a good place to start. There, you can find cheat sheets, a popular online book, and Git Basics videos.
+
+To associate your code with Git, you start by creating a new Git repository where your code is located. Here's how:
+
+1. In the status bar at the bottom-right corner of Visual Studio, select **Add to Source Control**, and then select **Git**.
+
+    :::image type="content" source="media/git-add-source-control.png" alt-text="Screenshot of the Git source control buttons below the Solution Explorer pane, with the Add to Source Control button highlighted.":::
+
+1. In the **Create a Git repository** dialog box, sign in to GitHub.
+
+    :::image type="content" source="media/git-create-repo-cpp.png" alt-text="Screenshot of the Create a Git Repository dialog window where you can sign in to GitHub.":::
+
+    The repository name auto-populates based on your folder location. By default, your new repository is private, which means you're the only one who can access it.
+
+    > [!TIP]
+    > Whether your repository is public or private, it's best to have a remote backup of your code stored securely on GitHub. Even if you aren't working with a team, a remote repository makes your code available to you from any computer.
+
+1. Select **Create and Push**.
+
+    After you create your repository, you see status details in the status bar.
+
+    :::image type="content" source="media/git-new-private-repo-status-details-cpp.png" alt-text="Screenshot of the repo status bar that's below the Solution Explorer pane in Visual Studio.":::
+
+    The first icon with the arrows shows how many outgoing/incoming commits are in your current branch. You can use this icon to pull any incoming commits or push any outgoing commits. You can also choose to view these commits first. To do so, select the icon, and then select **View Outgoing/Incoming**.
+
+    The second icon with the pencil shows the number of uncommitted changes to your code. You can select this icon to view those changes in the **Git Changes** window.
+
+To learn more about how to use Git with your app, see the [Visual Studio version control documentation](/visualstudio/version-control/index).
+
 ## The finished app
 
-Congratulations! You've completed the code for the calculator app, and built and debugged it in Visual Studio.
+Congratulations! You've completed the code for the calculator app, built and debugged it, and added it to a repo, all in Visual Studio.
 
 ## Next steps
 
@@ -397,7 +431,7 @@ Visual Studio uses *projects* to organize the code for an app, and *solutions* t
 
 3. In the **Name** edit box at the bottom, name the new project *CalculatorTutorial*, then choose **OK**.
 
-   ![The New Project dialog](./media/calculator-new-project-dialog.png "The New Project dialog")
+   ![The New Project dialog.](./media/calculator-new-project-dialog.png "The New Project dialog")
 
    An empty C++ Windows console application gets created. Console applications use a Windows console window to display output and accept user input. In Visual Studio, an editor window opens and shows the generated code:
 
@@ -490,7 +524,7 @@ Now let's turn the code in this template into a calculator app.
 
 1. To run the application, press **Ctrl+F5** or go to the **Debug** menu and choose **Start Without Debugging**. If you get a pop-up that says **This project is out of date**, you may select **Do not show this dialog again**, and then choose **Yes** to build your application. You should see a console window appear that displays the text specified in the code.
 
-   ![Build and start your application](./media/calculator-first-launch.gif "Build and start your application")
+   ![Build and start your application.](./media/calculator-first-launch.gif "Build and start your application")
 
 1. Close the console window when you're done.
 
@@ -650,7 +684,7 @@ Since the user is free to type anything into the console window, let's make sure
 
 Whenever you debug your code, you may notice that some new windows appear. These windows can assist your debugging experience. Take a look at the **Autos** window. The **Autos** window shows you the current values of variables used at least three lines before and up to the current line.
 
-   ![The Autos window](./media/calculator-autos.png "The Autos window")
+   ![The Autos window.](./media/calculator-autos.png "The Autos window")
 
 To see all of the variables from that function, switch to the **Locals** window. You can actually modify the values of these variables while debugging, to see what effect they would have on the program. In this case, we'll leave them alone.
 
@@ -668,7 +702,7 @@ You can also just hover over variables in the code itself to see their current v
 
 1. Continue using **F10** to **Step Over** each line until you get back to the `main()` function in the other file, and stop on the `cout` line.
 
-   ![Step out of Calculate and check result](./media/calculator-undefined-zero.gif "Step out of Calculate and check result")
+   ![Step out of Calculate and check result.](./media/calculator-undefined-zero.gif "Step out of Calculate and check result")
 
    It looks like the program is doing what is expected: it takes the first number, and divides it by the second. On the `cout` line, hover over the `result` variable or take a look at `result` in the **Autos** window. You'll see its value is listed as "inf", which doesn't look right, so let's fix it. The `cout` line just outputs whatever value is stored in `result`, so when you step one more line forward using **F10**, the console window displays:
 
@@ -739,8 +773,6 @@ Let's handle division by zero more gracefully, so a user can understand the prob
 ### Close the app
 
 - If it's still running, close the console window for the calculator app.
-
-## The finished app
 
 Congratulations! You've completed the code for the calculator app, and built and debugged it in Visual Studio.
 

@@ -18,11 +18,11 @@ Converts a string to a double (**_atodbl**), long double (**_atoldbl**), or floa
 
 ```C
 int _atodbl( _CRT_DOUBLE * value, char * str );
-int _atodbl_l ( _CRT_DOUBLE * value, char * str, locale_t locale );
+int _atodbl_l ( _CRT_DOUBLE * value, char * str, _locale_t locale );
 int _atoldbl( _LDOUBLE * value, char * str );
-int _atoldbl_l ( _LDOUBLE * value, char * str, locale_t locale );
+int _atoldbl_l ( _LDOUBLE * value, char * str, _locale_t locale );
 int _atoflt( _CRT_FLOAT * value, const char * str );
-int _atoflt_l( _CRT_FLOAT * value, const char * str, locale_t locale );
+int _atoflt_l( _CRT_FLOAT * value, const char * str, _locale_t locale );
 ```
 
 ### Parameters

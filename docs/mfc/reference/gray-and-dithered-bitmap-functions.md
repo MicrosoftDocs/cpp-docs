@@ -12,7 +12,7 @@ ms.assetid: cb139a77-b85e-4504-9d93-24156ad77a41
 
 MFC provides two functions for giving a bitmap the appearance of a disabled control.
 
-![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "Comparison of gray and original icon versions")
+![Comparison of gray and original icon versions.](../../mfc/reference/media/vcgraybitmap.gif "Comparison of gray and original icon versions")
 
 |Name|Description|
 |-|-|
@@ -23,7 +23,7 @@ MFC provides two functions for giving a bitmap the appearance of a disabled cont
 
 MFC also provides two functions for replacing a bitmap's background with a dithered pattern.
 
-![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "Comparison of dithered and original icon versions")
+![Comparison of dithered and original icon versions.](../../mfc/reference/media/vcditheredbitmap.gif "Comparison of dithered and original icon versions")
 
 |Name|Description|
 |-|-|
@@ -64,7 +64,7 @@ The new background color (typically gray, such as COLOR_MENU).
 
 A bitmap drawn with `AfxDrawGrayBitmap` will have the appearance of a disabled control.
 
-![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "Comparison of gray and original icon versions")
+![Comparison of gray and original icon versions.](../../mfc/reference/media/vcgraybitmap.gif "Comparison of gray and original icon versions")
 
 ### Example
 
@@ -100,7 +100,7 @@ The new background color (typically gray, such as COLOR_MENU).
 
 A bitmap copied with `AfxGetGrayBitmap` will have the appearance of a disabled control.
 
-![Comparison of gray and original icon versions](../../mfc/reference/media/vcgraybitmap.gif "Comparison of gray and original icon versions")
+![Comparison of gray and original icon versions.](../../mfc/reference/media/vcgraybitmap.gif "Comparison of gray and original icon versions")
 
 ### Example
 
@@ -148,7 +148,7 @@ The other dither color, typically light gray (COLOR_MENU).
 
 The source bitmap is drawn on the destination DC with a two-color (*cr1* and *cr2*) checkered pattern replacing the bitmap's background. The background of the source bitmap is defined as its white pixels and all pixels matching the color of the pixel in the upper-left corner of the bitmap.
 
-![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "Comparison of dithered and original icon versions")
+![Comparison of dithered and original icon versions.](../../mfc/reference/media/vcditheredbitmap.gif "Comparison of dithered and original icon versions")
 
 ### Example
 
@@ -188,7 +188,7 @@ The other dither color, typically light gray (COLOR_MENU).
 
 The source bitmap is copied to the destination bitmap with a two-color (*cr1* and *cr2*) checkered pattern replacing the source bitmap's background. The background of the source bitmap is defined as its white pixels and all pixels matching the color of the pixel in the upper-left corner of the bitmap.
 
-![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "vcditheredbitmap")
+![Comparison of dithered and original icon versions.](../../mfc/reference/media/vcditheredbitmap.gif "vcditheredbitmap")
 
 ### Example
 

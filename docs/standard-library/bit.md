@@ -18,7 +18,7 @@ For example, there are functions to rotate bits, find the number of consecutive 
 
 **Namespace:** std
 
-[/std:c++latest](../build/reference/std-specify-language-standard-version.md) is required.
+[`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later is required.
 
 ## Members
 
