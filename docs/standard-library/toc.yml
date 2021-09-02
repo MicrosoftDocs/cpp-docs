@@ -192,6 +192,8 @@
           href: time-point-class.md
         - name: time_zone class
           href: time-zone-class.md
+        - name: time_zone_link class
+          href: time-zone-link-class.md
         - name: treat_as_floating_point struct
           href: treat-as-floating-point-structure.md
         - name: utc_clock class

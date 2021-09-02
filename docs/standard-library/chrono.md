@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <chrono>"
 title: "<chrono>"
-ms.date: 07/01/2021
+ms.date: 08/31/2021
 f1_keywords: ["<chrono>", "chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
 ---
 
@@ -34,7 +34,6 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 | [`month_weekday` class](month-day-last-class.md) | The nth weekday of a specific month. |
 | [`month_weekday_last` class](month-weekday-last-class.md) | The nth weekday of a specific month. |
 | [`time_point` class](time-point-class.md) | A point in time. |
-| [`time_zone` class](time-point-class.md) | All time zone transitions for a specific geographic area. |
 | [`weekday` class](weekday-class.md) | A day of the week. |
 | [`weekday_last` class](weekdaylast-class.md) | The last weekday of a month. |
 | [`weekday_indexed` class](weekdayindexed-class.md) | Combines a day of the week with an index that represents the weekday of the month. |
@@ -58,30 +57,40 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 |[`tai_clock` class](tai-clock-class.md)| Measures International Atomic Time (TAI) starting from Thursday, January 1, 1958 at 00:00:00. Doesn't account for leap seconds.|
 |[`utc_clock` class](utc-clock-class.md)| Measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds and is the time standard used around the world.|
 
+**Time Zones**
+
+| [`time_zone` class](time-point-class.md) | All time zone transitions for a specific geographic area. |
+
+
 ## Functions
 
 | Name | Description |
 |--|--|
 | [`ceil(duration)`](chrono-functions.md#std-chrono-ceil-duration) | Returns the `ceil` of a `duration` object as a specified type. |
 | [`ceil(time_point)`](chrono-functions.md#std-chrono-ceil-time-point) | Returns the `ceil` of a `time_point` object as a specified type. |
-| [`current_zone`](chrono-functions.md#std-chrono-current-zone) | Gets the current time zone. |
 | [`duration_cast`](chrono-functions.md#std-chrono-duration-cast) | Casts a `duration` object to a specified type. |
 | [`floor(duration)`](chrono-functions.md#std-chrono-floor-duration) | Returns the `floor` of a `duration` object as a specified type. |
 | [`floor(time_point)`](chrono-functions.md#std-chrono-floor-time-point) | Returns the `floor` of a `time_point` object as a specified type. |
 | [`from_stream()`](chrono-functions.md#std-chrono-from-stream) | Parse the input stream into one of the `std::chrono` time or interval types such as `day`, `month`, `weekday`, `year`, and so on, using the specified format. |
 | [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info) | Gets a [`leap_second_info` struct](leap-second-info-struct.md). |
-| [`get_tzdb_list`](chrono-functions.md#std-chrono-get-tzdb-list) | Gets the list of time zone database entries. |
-| [`get_tzdb`](chrono-functions.md#std-chrono-get-tzdb) | Gets the first time zone database entry. |
 | [`is_am`](chrono-functions.md#std-chrono-is-am) | Whether an `hours` object is AM. |
 | [`is_pm`](chrono-functions.md#std-chrono-is-pm) | Whether an `hours` object is PM. |
 | [`locate_zone`](chrono-functions.md#std-chrono-locate-zone) | Gets a specified time zone. |
 | [`make12`](chrono-functions.md#std-chrono-make12) | Returns an `hours` in 12-hour form. |
 | [`make24`](chrono-functions.md#std-chrono-make24) | Returns an `hours` in 24-hour form. |
-| [`reload_tzdb`](chrono-functions.md#std-chrono-reload-tzdb) | Gets an updated time zone database entry. |
-| [`remote_version`](chrono-functions.md#std-chrono-remote-version) | Checks for an updated time zone database entry. |
 | [`round(duration)`](chrono-functions.md#std-chrono-round-duration) | Returns a `duration` object rounded as a specified type. |
 | [`round(time_point)`](chrono-functions.md#std-chrono-round-time-point) | Returns a `time_point` object rounded as a specified type. |
 | [`time_point_cast`](chrono-functions.md#std-chrono-time-point-cast) | Casts a `time_point` object to a specified type. |
+
+**Time zone related**
+
+| Name | Description |
+|--|--|
+| [`current_zone`](chrono-functions.md#std-chrono-current-zone) | Gets the current time zone. |
+| [`get_tzdb_list`](chrono-functions.md#std-chrono-get-tzdb-list) | Gets the list of time zone database entries. |
+| [`get_tzdb`](chrono-functions.md#std-chrono-get-tzdb) | Gets the first time zone database entry. |
+| [`reload_tzdb`](chrono-functions.md#std-chrono-reload-tzdb) | Gets an updated time zone database entry. |
+| [`remote_version`](chrono-functions.md#std-chrono-remote-version) | Checks for an updated time zone database entry. |
 
 ## Operators
 
