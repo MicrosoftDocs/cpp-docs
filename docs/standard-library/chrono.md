@@ -102,6 +102,8 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 
 ## Typedefs
 
+For more information about ratio types that are used in the following typedefs, see [`<ratio>`](ratio.md).
+
 **Convenience `duration`  types**
 
 | Name | Description |
