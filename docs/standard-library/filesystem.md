@@ -1,7 +1,7 @@
 ---
 title: "&lt;filesystem&gt;"
 description: "Describes the classes, functions, and types in the filesystem header of the Standard C++ library."
-ms.date: "01/15/2021"
+ms.date: "09/02/2021"
 f1_keywords: ["<filesystem>", "filesystem/std::filesystem", "std::filesystem", "std::experimental::filesystem"]
 no-loc: [filesystem, experimental, char, wchar_t, char16_t, char32_t]
 ---
