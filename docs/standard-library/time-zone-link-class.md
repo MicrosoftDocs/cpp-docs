@@ -17,9 +17,9 @@ class time_zone_link;  // Since C++20
 
 ## Remarks
 
-`const time_zone_link` instances are created when the time zone database is initialized. They can't be created by the developer.
+`time_zone_link` instances are created when the time zone database is initialized. They can't be created by the developer. You can get them with `get_tzdb().links` as shown in the example at the end of this topic.
 
-Although this type has a default move constructor and move assignment operator, it isn't copyable because only `const` access is provided to this type. Using those functions results in undefined behavior. That's why the move constructor and assignment operator aren't listed here.
+Although this type has a default move constructor and move assignment operator, it isn't copyable because only `const` access is provided to this type. Using those functions results in undefined behavior, which is why the move constructor and assignment operator aren't listed here.
 
 ## Members
 
@@ -34,7 +34,7 @@ Although this type has a default move constructor and move assignment operator, 
 
 | Name | Description |
 |--|--|
-| [`operator==`](chrono-operators.md#op_eq_eq) | Determine whether two `time_zone_link` objects have the same `name`. The `target` name isn't considered. |
+| [`operator==`](chrono-operators.md#op_eq_eq) | Determine whether two `time_zone_link` objects have the same `name`. The `target` name isn't part of the equality check. |
 | [`operator<=>`](chrono-operators.md#op_spaceship) | Compare this `time_zone_link` against another `time_zone_link`. The `>, >=, <=, <, !=` operators are synthesized by the compiler. Returns  `Left.name() <=> Right.name()`. |
 
 ## Requirements
@@ -61,9 +61,9 @@ Gets the name of the `time_zone` that this `time_zone_link` is an alternative na
 string_view target() const noexcept;  // Since C++20
 ```
 
-## Example: show `time_zone_link` names
+## Example: show `time_zone_link` name
 
-The following example displays the names of the `time_zone_link` in the [IANA time zone database](https://www.iana.org/time-zones).
+The following example displays the names of each `time_zone_link` in the [IANA time zone database](https://www.iana.org/time-zones).
 
 ```cpp
 // compile using: /std:c++latest

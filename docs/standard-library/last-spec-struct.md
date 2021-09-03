@@ -7,7 +7,7 @@ f1_keywords: ["chrono/std::chrono::last_spec"]
 
 # last_spec struct
 
-Indicates the last item in a sequence such as the Monday of December, the last day of the month, and so on.
+Indicates the last item in a sequence, such as the last Monday of December, the last day of the month, and so on.
 
 ## Syntax
 
@@ -18,7 +18,7 @@ inline constexpr last_spec last{} // C++20
 
 ## Remarks
 
-Use this struct when creating calendar types to indicate the last item in a sequence. When you specify `last` while creating a calendrical type like `month_day_last`, you are passing a `last_spec` to indicate that you want the last day in the month. For example:
+Use this struct when creating calendrical types to indicate the last item in a sequence. When you specify `last` while creating a calendrical type like `month_day_last`, you're passing a `last_spec` to indicate that you want the last day in the month. For example:
 
 ```cpp
 // compile using: /std:c++latest
@@ -33,8 +33,8 @@ int main()
     std::cout << monthDayLast << '\n';
 
     constexpr auto yearMonthWeekDayLast{year(2021)/July/Friday[last]}; // 'last' resolves to last_spec
-
     std::cout << yearMonthWeekDayLast << '\n';
+
     return 0;
 }
 ```

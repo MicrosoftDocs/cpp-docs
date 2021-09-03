@@ -109,7 +109,7 @@ constexpr year_month_weekday_last operator+(const years& dy, const year_month_we
 
 4\) Returns the result of `d+ds.count()`. If the  result is out of the range [0, 255], then the result is unspecified.
 
-5\) Returns the result of `m+ms.count()`. If the  result is out of the range [1, 12], it's reduced modulo 12 and then +1.
+5\) Returns the result of `m+ms.count()`. If the result is out of the range [1, 12], it's reduced modulo 12 and then +1.
 
 6\) Returns the result of adding the number of days/weekdays to the `weekday`. The result will be modulo 7, so always in the range \[0,6]
 
@@ -119,7 +119,7 @@ constexpr year_month_weekday_last operator+(const years& dy, const year_month_we
 
 9\) Returns the result of adding months or years to a `year_month_day`.  If `ymd.month()` is `February` and `ymd.day()` is not in the range [1d, 28d], `ok()` may return `false` for the result of the addition.
 
-10\) Returns `(ymdl.year() / ymdl.month() + dm) / last`. Note: The `/` used here is not a division operator but the date operator.
+10\) Returns `(ymdl.year() / ymdl.month() + dm) / last`. Note: The `/` used here isn't a division operator but the date operator.
 
 11\) Returns `ymdl + dm`.
 
@@ -129,7 +129,7 @@ constexpr year_month_weekday_last operator+(const years& dy, const year_month_we
 
 14-15\) Returns `{ymwd.year()+dy, ymwd.month(), ymwd.weekday_indexed()}`.
 
-16\) Returns `(ymwdl.year() / ymwdl.month() + dm) / ymwdl.weekday_last()`. Note: The `/` used here is not a division operator but the date operator.
+16\) Returns `(ymwdl.year() / ymwdl.month() + dm) / ymwdl.weekday_last()`. Note: The `/` used here isn't a division operator but the date operator.
 
 17\) Returns: `ymwdl + dy`
 
@@ -307,9 +307,9 @@ constexpr year_month_weekday_last operator-(const year_month_weekday_last& ymwdl
 
 10\) Returns `years(int(y) - int(y2))`. Subtracting two `year` values results in a `std::chrono::years`, which represents the difference in years between `y` and `y2`. For example, `2021y-2000y` produces `years(21)`.
 
-11\) Returns the result of subtracting a number of months or years from a `year_month` value.
+11\) Returns the result of subtracting months or years from a `year_month` value.
 
-12\) Returns the result of subtracting a number of months years from a `year_month_day` value.
+12\) Returns the result of subtracting months years from a `year_month_day` value.
 
 13\) Returns the result of subtracting the number of months from the `year_month_day_last` value. Essentially: `ymdl-dm`.
 
@@ -568,7 +568,7 @@ Determines whether:
 15\) [`year_month_day_last`](year-month-day-last-class.md) represent the same last day of the year and month.\
 16\) [`year_month_weekday`](year-month-weekday-class.md) represent the same weekday, year, and month.\
 17\) [`year_month_weekday_last`](year-month-weekday-last-class.md) represent the same last weekday of the month, year, and month.
-18\) [`time_zone_link`](time-zone-link-class.md) have the same `name`. The `target` name is not considered.
+18\) [`time_zone_link`](time-zone-link-class.md) have the same `name`. The `target` name isn't considered.
 
 ```cpp
 // 1) duration<Rep, Period>
@@ -642,7 +642,7 @@ The right object to compare.
 
 ### Return value
 
-1\) Returns **`true`** if *`Left`* and *`Right`* represent time intervals that have the same length. Otherwise, the function returns **`false`**.\
+1\) Returns **`true`** if *`Left`* and *`Right`* represent time intervals that have the same length. Otherwise, returns **`false`**.\
 2\) Returns **`true`** if *`Left`* and *`Right`* represent the same point in time. Otherwise, returns **`false`**.\
 3-17\) Returns **`true`** if *`Left`* and *`Right`* have the same value. Otherwise, returns **`false`**.
 18\) Returns **`true`** if `Left.name() == Right.name()`. Otherwise, returns `*false*`.
