@@ -567,7 +567,7 @@ Determines whether:
 14\) [`year_month_day`](year-month-day-class.md) represent the same year, month, and day.\
 15\) [`year_month_day_last`](year-month-day-last-class.md) represent the same last day of the year and month.\
 16\) [`year_month_weekday`](year-month-weekday-class.md) represent the same weekday, year, and month.\
-17\) [`year_month_weekday_last`](year-month-weekday-last-class.md) represent the same last weekday of the month, year, and month.
+17\) [`year_month_weekday_last`](year-month-weekday-last-class.md) represent the same last weekday of the month, year, and month.\
 18\) [`time_zone_link`](time-zone-link-class.md) have the same `name`. The `target` name isn't considered.
 
 ```cpp
@@ -644,7 +644,7 @@ The right object to compare.
 
 1\) Returns **`true`** if *`Left`* and *`Right`* represent time intervals that have the same length. Otherwise, returns **`false`**.\
 2\) Returns **`true`** if *`Left`* and *`Right`* represent the same point in time. Otherwise, returns **`false`**.\
-3-17\) Returns **`true`** if *`Left`* and *`Right`* have the same value. Otherwise, returns **`false`**.
+3-17\) Returns **`true`** if *`Left`* and *`Right`* have the same value. Otherwise, returns **`false`**.\
 18\) Returns **`true`** if `Left.name() == Right.name()`. Otherwise, returns `*false*`.
 
 ## <a name="op_gt"></a> `operator>`

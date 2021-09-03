@@ -74,5 +74,5 @@ You typically won't create a `last_spec` instance directly. You'll use `last` as
 
 [`<chrono>`](chrono.md)\
 [`month_day_last` Class](month-day-last-class.md)\
-[`month_weekday_last` class](month-weekday-last-class.md)
+[`month_weekday_last` class](month-weekday-last-class.md)\
 [Header Files Reference](cpp-standard-library-header-files.md)
