@@ -17,7 +17,7 @@ struct local_t {}; // C++20
 
 ## Remarks
 
-Use this struct as an argument to the `time_point` template to indicate that a `time_point` represents local time. Be aware that `local_t` doesn't specify the time zone of the local time.
+Use this struct as an argument to the `time_point` template to indicate that a `time_point` represents local time. Specifying `local_t` doesn't specify the time zone of the local time.
 
 As an example of how `local_t` is used, consider the declaration `local_days ld{Sunday[1] / January / 2021};` This ultimately resolves to `time_point<local_t, duration<long long>;` where `local_t` indicates that the time_point represents local time.
 
