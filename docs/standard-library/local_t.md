@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: local_t struct"
 title: "local_t struct"
-ms.date: 08/18/2021
+ms.date: 09/02/2021
 f1_keywords: ["chrono/std::chrono::local_t"]
 ---
 
@@ -17,7 +17,7 @@ struct local_t {}; // C++20
 
 ## Remarks
 
-This struct is a pseudo-clock. Use it as an argument to the `time_point` template argument to indicate that the time_point represents local time. `local_t` doesn't specify the time zone of the local time.
+Use this struct as an argument to the `time_point` template argument to indicate that the time_point represents local time. `local_t` doesn't specify the time zone of the local time.
 
 As an example of how `local_t` is used, consider the declaration `local_days ld{Sunday[1] / January / 2021};` If you look at the declaration of `local_days`, you'll see that it ultimately resolves to `time_point<local_t, duration<long long>;`.  In this case, `local_t` is being used to indicate that the time_point represents local time.
 

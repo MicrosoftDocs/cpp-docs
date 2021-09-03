@@ -19,7 +19,7 @@ class time_zone_link;  // Since C++20
 
 `const time_zone_link` instances are created when the time zone database is initialized. They can't be created by the developer.
 
-Although this type has a default move constructor and move assignment operator, it is not copyable because only `const` access is provided to this type. Using those functions results in undefined behavior. Therefore, the move constructor and assignment operator aren't listed here.
+Although this type has a default move constructor and move assignment operator, it isn't copyable because only `const` access is provided to this type. Using those functions results in undefined behavior. That's why the move constructor and assignment operator aren't listed here.
 
 ## Members
 
@@ -34,7 +34,7 @@ Although this type has a default move constructor and move assignment operator, 
 
 | Name | Description |
 |--|--|
-| [`operator==`](chrono-operators.md#op_eq_eq) | Determine whether two `time_zone_link` objects have the same `name`. The `target` name is not considered. |
+| [`operator==`](chrono-operators.md#op_eq_eq) | Determine whether two `time_zone_link` objects have the same `name`. The `target` name isn't considered. |
 | [`operator<=>`](chrono-operators.md#op_spaceship) | Compare this `time_zone_link` against another `time_zone_link`. The `>, >=, <=, <, !=` operators are synthesized by the compiler. Returns  `Left.name() <=> Right.name()`. |
 
 ## Requirements

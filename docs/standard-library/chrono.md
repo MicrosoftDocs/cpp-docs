@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <chrono>"
 title: "<chrono>"
-ms.date: 08/31/2021
+ms.date: 09/02/2021
 f1_keywords: ["<chrono>", "chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
 ---
 
@@ -26,6 +26,7 @@ Beginning in Visual Studio 2015, the implementation of `steady_clock` has change
 | [`duration` class](duration-class.md) | A time interval. |
 |[`duration_values` struct](duration-values-structure.md)|Provides specific values for the `duration` template parameter `Rep`.|
 | [`hh_mm_ss` class](hhmmss-class.md) | Splits a [`duration`](duration-class.md) into hours:minutes:seconds. |
+| [`last_spec`](last-spec-struct.md) | Used to indicate the last item in a sequence, such as the last day of the week, when creating a calendrical type. |
 | [`leap_second` class](leap-second-class.md) | A date and a value for an inserted leap second. |
 |[`leap_second_info` struct](leap-second-info-struct.md) | The data returned by [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info). |
 | [`month` class](month-class.md) | A month of a year. For example, July. |
