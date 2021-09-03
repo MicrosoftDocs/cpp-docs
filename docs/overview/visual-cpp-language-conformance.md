@@ -379,15 +379,15 @@ A more detailed listing of Standard Library features and bug fixes by product ve
 | &emsp;[`P1135R6 The C++20 Synchronization Library`](https://wg21.link/P1135R6) | VS 2019 16.9 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1771R1 Library support for [[nodiscard]] for constructors`](https://wg21.link/P1771R1) | VS 2019 16.9 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0053R7 <syncstream>`](https://wg21.link/p0053r7)<br/>&emsp;[`P0753R2 osyncstream Manipulators`](https://wg21.link/p0753r2) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
-| &emsp;[`P0355R7 <chrono> Calendars And Time Zones`](https://wg21.link/p0355r7) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
+| &emsp;[`P0355R7 <chrono> Calendars And Time Zones`](https://wg21.link/p0355r7) | VS 2019 16.10 <sup>[20abi](#note_20abi)</sup> |
 | &emsp;[`P0408R7 Efficient access To basic_stringbuf's buffer`](https://wg21.link/p0408r7) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0466R5 Library support for layout-compatibility and pointer-interconvertibility traits`](https://wg21.link/p0466r5) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0475R1 Guaranteed Copy Elision For Piecewise Construction`](https://wg21.link/P0475R1) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0591R4 Utility Functions For Uses-Allocator Construction`](https://wg21.link/P0591R4) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P0608R3 Improving variant's Converting Constructor/Assignment`](https://wg21.link/P0608R3) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
-| &emsp;[`P0645R10 <format> Text Formatting`](https://wg21.link/p0645r10) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
+| &emsp;[`P0645R10 <format> Text Formatting`](https://wg21.link/p0645r10) | VS 2019 16.10 <sup>[20abi](#note_20abi)</sup> |
 | &emsp;[`P0784R7 Library support for more constexpr containers`](https://wg21.link/P0784R7) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
-| &emsp;[`P0896R4 <ranges>`](https://wg21.link/P0896R4) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
+| &emsp;[`P0896R4 <ranges>`](https://wg21.link/P0896R4) | VS 2019 16.10 <sup>[20abi](#note_20abi)</sup> |
 | &emsp;[`P0980R1 constexpr std::string`](https://wg21.link/P0980R1) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1004R2 constexpr std::vector`](https://wg21.link/P1004R2) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
 | &emsp;[`P1208R6 <source_location>`](https://wg21.link/P1208R6) | VS 2019 16.10 <sup>[20](#note_20)</sup> |
@@ -519,6 +519,8 @@ These algorithms aren't presently parallelized:
 <a name="note_17"></a> __17__ These features are enabled by the [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) or later compiler option.
 
 <a name="note_20"></a> __20__ In versions through Visual Studio 2019 version 16.10, these features are enabled by the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option. Visual Studio 2019 version 16.11 added the [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) compiler option to enable these features.
+
+<a name="note_20abi"></a> __20abi__ Because of ongoing post-release work on the C++20 standard, `<format>`, the formatting parts of `<chrono>` (which rely on `<format>`), and the range factories and range adaptors from `<ranges>` (everything that needs the `view` concept) are only available under **`/std:c++latest`**. We'll make these features available under **`/std:c++20`** after reaching agreement with WG21 that no further ABI-breaking changes are necessary. The remaining parts of `<chrono>` and the algorithms that apply to ranges are enabled under the **`/std:c++20`** compiler option starting in Visual Studio 2019 version 16.11.
 
 <a name="note_DR"></a> __DR__ These features are enabled in all C++ [`/std`](../build/reference/std-specify-language-standard-version.md) compiler option modes. The C++ Standard committee adopted this change as a retroactive Defect Report to C++11 and all later versions.
 
