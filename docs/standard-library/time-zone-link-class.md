@@ -61,6 +61,45 @@ Gets the name of the `time_zone` that this `time_zone_link` is an alternative na
 string_view target() const noexcept;  // Since C++20
 ```
 
+## Example: show `time_zone_link` names
+
+The following example displays the names of the `time_zone_link` in the [IANA time zone database](https://www.iana.org/time-zones).
+
+```cpp
+// compile using: /std:c++latest
+#include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
+
+int main()
+{
+    const auto& my_tzdb = get_tzdb(); // get the IANA time zone database
+    auto& links = my_tzdb.links; // get the list of time_zone_links from the database
+    std::for_each(links.begin(), links.end(), // display each time_zone_link name and target
+        [](auto& l)
+        {
+            std::cout << "Name: " << l.name() << "Target" << l.target() << '\n';
+        });
+
+    return 0;
+}
+```
+
+```output
+Name: ACT Target:Australia/Darwin
+Name: AET Target:Australia/Sydney
+Name: AGT Target:America/Buenos_Aires
+Name: ART Target:Africa/Cairo
+Name: AST Target:America/Anchorage
+Name: Africa/Asmara Target:Africa/Asmera
+Name: Africa/Timbuktu Target:Africa/Bamako
+Name: America/Argentina/Buenos_Aires Target:America/Buenos_Aires
+Name: America/Argentina/Catamarca Target:America/Catamarca
+...
+Name: Zulu Target:Etc/UTC
+```
+
 ## See also
 
 [`<chrono>`](chrono.md)\
