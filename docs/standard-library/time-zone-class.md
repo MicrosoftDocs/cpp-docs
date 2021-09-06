@@ -14,36 +14,7 @@ Microsoft C++ supports the `time_zone` class starting in Visual Studio 2019 vers
 ## Syntax
 
 ```cpp
-namespace std::chrono {
-    class time_zone {  // Since C++20
-    public:
-        time_zone(time_zone&&) = default;
-    
-        time_zone& operator=(time_zone&&) = default;
-    
-        // unspecified additional constructors
-    
-        string_view name() const noexcept;
-    
-        template<class Duration>
-        sys_info get_info(const sys_time<Duration>& st) const;
-    
-        template<class Duration>
-        local_info get_info(const local_time<Duration>& lt) const;
-    
-        template<class Duration>
-        sys_time<common_type_t<Duration, seconds>>
-        to_sys(const local_time<Duration>& lt) const;
-    
-        template<class Duration>
-        sys_time<common_type_t<Duration, seconds>>
-        to_sys(const local_time<Duration>& lt, choose z) const;
-    
-        template<class Duration>
-        local_time<common_type_t<Duration, seconds>>
-        to_local(const sys_time<Duration>& st) const;
-    };
-}
+class time_zone {  // Since C++20
 ```
 
 ## Members
@@ -52,10 +23,10 @@ namespace std::chrono {
 
 | Name | Description |
 |--|--|
-| [`time_zone::get_info`](#std-chrono-time-zone-get-info) | Gets a `sys_info` or `local_info` for this `time_zone`. |
-| [`time_zone::name`](#std-chrono-time-zone-name) | Gets the name of this `time_zone`. |
-| [`time_zone::to_local`](#std-chrono-time-zone-to-local) | Converts a `sys_time` to a `local_time` in this `time_zone`. |
-| [`time_zone::to_sys`](#std-chrono-time-zone-to-sys) | Converts a `local_time` to a `sys_time` in this `time_zone`. |
+| [`get_info`](#std-chrono-time-zone-get-info) | Gets a `sys_info` or `local_info` for this `time_zone`. |
+| [`name`](#std-chrono-time-zone-name) | Gets the name of this `time_zone`. |
+| [`to_local`](#std-chrono-time-zone-to-local) | Converts a `sys_time` to a `local_time` in this `time_zone`. |
+| [`to_sys`](#std-chrono-time-zone-to-sys) | Converts a `local_time` to a `sys_time` in this `time_zone`. |
 
 ## Requirements
 
