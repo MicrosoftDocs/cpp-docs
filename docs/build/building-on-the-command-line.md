@@ -2,7 +2,7 @@
 title: "Use the Microsoft C++ toolset from the command line"
 description: "Use the Microsoft C++ (MSVC) compiler toolset from the command line outside of the Visual Studio IDE."
 ms.custom: "conceptual"
-ms.date: 08/02/2021
+ms.date: 09/08/2021
 helpviewer_keywords: ["command-line builds [C++]", "compiling source code [C++], command line", "builds [C++], command-line", "command line [C++], building from", "command line [C++], compilers"]
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
 ---
@@ -246,20 +246,26 @@ Use the compiler (cl.exe) to compile and link source code files into apps, libra
 [`Link`](reference/linking.md)<br/>
 Use the linker (link.exe) to link compiled object files and libraries into apps and DLLs.
 
-[`NMAKE`](reference/nmake-reference.md)<br/>
-Use NMAKE (nmake.exe) on Windows to build C++ projects based on a traditional makefile.
-
 When you build on the command line, the F1 command isn't available for instant help. Instead, you can use a search engine to get information about warnings, errors, and messages. You can also download and use the offline help files. To use the search in docs.microsoft.com, enter your query in the search box at the top of any article.
 
 ## Command-line project management tools
 
-The Visual Studio IDE uses a native project build system based on MSBuild. You can invoke MSBuild directly, or use the native project system without using the IDE:
+By default, the Visual Studio IDE uses native project build systems based on MSBuild. You can invoke MSBuild directly to build projects without using the IDE. You can also use the `devenv` command to use Visual Studio to build projects and solutions. Visual Studio also supports build systems based on CMake or NMake.
 
-[`MSBuild`](msbuild-visual-cpp.md)<br/>
-Use MSBuild (msbuild.exe) and a project file (.vcxproj) to configure a build and invoke the toolset indirectly. It's equivalent to running the **Build** project or **Build Solution** command in the Visual Studio IDE. Running MSBuild from the command line is an advanced scenario and not commonly recommended. Starting in Visual Studio 2019 version 16.5, MSBuild doesn't use the command-line environment to control the toolset and libraries used.
+[`MSBuild`](msbuild-visual-cpp.md)
+Use MSBuild (msbuild.exe) and a project file (.vcxproj) to configure a build and invoke the toolset without loading the Visual Studio IDE. It's equivalent to running the **Build** project or **Build Solution** command in the Visual Studio IDE. MSBuild has advantages over the IDE when you build at the command line. You don't have to install the full IDE on all your build servers and build pipelines. You avoid the extra overhead of the IDE. MSBuild runs in containerized build environments, and supports a [binary logger](https://msbuildlog.com/).
 
-[`DEVENV`](/visualstudio/ide/reference/devenv-command-line-switches)<br/>
-Use DEVENV (devenv.exe) combined with a command-line switch such as **`/Build`** or **`/Clean`** to execute certain build commands without displaying the Visual Studio IDE. In general, DEVENV is preferred over using MSBuild directly, because you can let Visual Studio handle the complexities of MSBuild. Starting in Visual Studio 2019 version 16.5, DEVENV doesn't use the command-line environment to control the toolset and libraries used.
+[`DEVENV`](/visualstudio/ide/reference/devenv-command-line-switches)
+Use DEVENV (devenv.exe) combined with a command-line switch such as **`/Build`** or **`/Clean`** to execute certain build commands without displaying the Visual Studio IDE.
+
+[`CMake`](../build/cmake-projects-in-visual-studio.md)\
+CMake (cmake.exe) is a cross-platform, open-source tool for defining build processes that run on multiple platforms. CMake can configure and control native build tools for its supported platforms, such as MSBuild and Make. For more information about CMake, see the [CMake documentation](https://cmake.org/cmake/help/latest/index.html#).
+
+[`NMAKE`](reference/nmake-reference.md)\
+Use NMAKE (nmake.exe) to build C++ projects by using a traditional makefile.
+
+> [!NOTE]
+> Starting in Visual Studio 2019 version 16.5, MSBuild and DEVENV don't use the command-line environment to control the toolset and libraries used.
 
 ## In this section
 
