@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package"
 title: "Deploy an App By Using the Redistributable Package (C++)"
-ms.date: "04/23/2019"
+ms.date: 09/08/2021
 helpviewer_keywords: ["walkthrough, deploying a Visual C++ application by using the redistributable package"]
 ms.assetid: e59becbf-b8c6-4c8e-bab3-b69cc1ed3e5e
 ---
@@ -15,7 +15,7 @@ You must have these components to complete this walkthrough:
 
 - A computer that has Visual Studio installed.
 
-- An additional computer that does not have the Visual C++ libraries.
+- Another computer that doesn't have the Visual C++ libraries.
 
 ### To use the Visual C++ Redistributable Package to deploy an application
 
@@ -48,36 +48,38 @@ You must have these components to complete this walkthrough:
 
       - Your MFC application (.exe file).
 
-      - vcredist_x86.exe. In Visual Studio 2015, this file is located in *%VCINSTALLDIR%redist\\1033\\*. In Visual Studio 2017 and Visual Studio 2019, this file is located in *%VCToolsRedistDir%*. You can also [download the latest supported redist file from Microsoft](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
+      - vcredist_x86.exe. In Visual Studio 2015, this file is located in *%VCINSTALLDIR%redist\\1033\\*. In Visual Studio 2017 and Visual Studio 2019, this file is located in *`%VCToolsRedistDir%`*. You can also [download the latest supported redist file from Microsoft](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)*.
 
       - The setup.bat file that you created in the earlier step.
 
-   1. On the **Install Program to Launch** page, in the **Install Program** text box, enter the following command line and then choose **Next**.
+   1. On the **Install Program to Launch** page, in the **Install Program** text box, enter the following command line, and then choose **Next**.
 
-      **cmd.exe /c "setup.bat"**
+      **`cmd.exe /c "setup.bat"`**
 
    1. On the **Show window** page, select **Default** and then choose **Next**.
 
-   1. On the **Finished message** page, select **No message** and then choose **Next**.
+   1. On the **Finished message** page, select **No message**. Choose **Next**.
 
    1. On the **Package Name and Options** page, enter a name for your self-extracting setup file, select the **Store files using Long File Name inside Package** option, and then choose **Next**. The end of the file name must be Setup.exe—for example, *MyMFCApplicationSetup.exe*.
 
-   1. On the **Configure restart** page, select **No restart** and then choose **Next**.
+   1. On the **Configure restart** page, select **No restart**. Choose **Next**.
 
-   1. On the **Save Self Extraction Directive** page, select **Save Self Extraction Directive (SED) file** and then choose **Next**.
+   1. On the **Save Self Extraction Directive** page, select **Save Self Extraction Directive (SED) file**. Choose **Next**.
 
    1. On the **Create package** page, choose **Next**. Choose **Finish**.
 
-1. Test the self-extracting setup file on the other computer, which does not have the Visual C++ libraries:
+1. Test the self-extracting setup file on the other computer, which doesn't have the Visual C++ libraries:
 
-   1. On the other computer, download a copy of the setup file, and then install it by running it and following the steps that it provides. Depending on the options selected, installation might require the **Run as administrator** command.
+   1. On the other computer, download a copy of the setup file. Then, run the setup and follow the steps that it provides. Depending on the options selected, installation might require the **Run as administrator** command.
 
    1. Run the MFC application.
 
-      The self-extracting setup file installs the MFC application that is in the folder that you specified in step 2. The application runs successfully because the Visual C++ Redistributable Package installer is included in the self-extracting setup file.
+      The self-extracting setup file installs the MFC application that's in the folder you specified in step 2. The application runs successfully because the Visual C++ Redistributable Package installer is included in the self-extracting setup file.
 
       > [!IMPORTANT]
-      > To determine which version of the runtime is installed, the installer checks the registry key \\HKLM\\SOFTWARE\\Microsoft\\VisualStudio\\_version_\\VC\\Runtimes\\_platform_\\Version. If the currently installed version is newer than the version that the installer is attempting to install, the installer returns success without installing the older version and leaves an additional entry on the installed programs page in the Control Panel.
+      > To determine which version of the runtime is installed, the installer checks the registry key `\HKLM\SOFTWARE\Microsoft\VisualStudio\<version>\VC\Runtimes\<platform>\Version`. If the currently installed version is newer than the version that the installer is attempting to install, the installer returns success without installing the older version and leaves an additional entry on the installed programs page in the Control Panel.
+
+\* Apps built for Windows XP can't use a redistributable later than the one shipped in Visual Studio 2019 version 16.7. For more information, see [Configuring programs for Windows XP](../build/configuring-programs-for-windows-xp.md).
 
 ## See also
 
