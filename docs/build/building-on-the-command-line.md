@@ -252,10 +252,10 @@ When you build on the command line, the F1 command isn't available for instant h
 
 By default, the Visual Studio IDE uses native project build systems based on MSBuild. You can invoke MSBuild directly to build projects without using the IDE. You can also use the `devenv` command to use Visual Studio to build projects and solutions. Visual Studio also supports build systems based on CMake or NMake.
 
-[`MSBuild`](msbuild-visual-cpp.md)
+[`MSBuild`](msbuild-visual-cpp.md)\
 Use MSBuild (msbuild.exe) and a project file (.vcxproj) to configure a build and invoke the toolset without loading the Visual Studio IDE. It's equivalent to running the **Build** project or **Build Solution** command in the Visual Studio IDE. MSBuild has advantages over the IDE when you build at the command line. You don't have to install the full IDE on all your build servers and build pipelines. You avoid the extra overhead of the IDE. MSBuild runs in containerized build environments, and supports a [binary logger](https://msbuildlog.com/).
 
-[`DEVENV`](/visualstudio/ide/reference/devenv-command-line-switches)
+[`DEVENV`](/visualstudio/ide/reference/devenv-command-line-switches)\
 Use DEVENV (devenv.exe) combined with a command-line switch such as **`/Build`** or **`/Clean`** to execute certain build commands without displaying the Visual Studio IDE.
 
 [`CMake`](../build/cmake-projects-in-visual-studio.md)\
