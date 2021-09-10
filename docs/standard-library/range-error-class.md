@@ -8,7 +8,7 @@ ms.assetid: 8afb3e88-fc49-4213-b096-ed63d7aea37c
 ---
 # range_error Class
 
-The class serves as the base class for all exceptions thrown to report a range error.
+The class serves as the base class for all exceptions thrown to report a range error (as in mathematics, not iterators).
 
 ## Syntax
 

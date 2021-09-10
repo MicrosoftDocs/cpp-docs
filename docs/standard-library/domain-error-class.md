@@ -8,7 +8,7 @@ ms.assetid: a1d8245d-61c2-4d1e-973f-073bd5dd5fa3
 ---
 # domain_error Class
 
-The class serves as the base class for all exceptions thrown to report a domain error.
+The class serves as the base class for all exceptions thrown to report a domain error (as in mathematics, not networking).
 
 ## Syntax
 
