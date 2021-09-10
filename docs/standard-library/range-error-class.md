@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: range_error Class"
 title: "range_error Class"
-ms.date: "08/14/2018"
+ms.date: "09/09/2021"
 f1_keywords: ["stdexcept/std::range_error"]
 helpviewer_keywords: ["range_error class"]
 ms.assetid: 8afb3e88-fc49-4213-b096-ed63d7aea37c

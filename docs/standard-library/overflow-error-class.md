@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: overflow_error Class"
 title: "overflow_error Class"
-ms.date: "11/04/2016"
+ms.date: "09/09/2021"
 f1_keywords: ["stdexcept/std::overflow_error"]
 helpviewer_keywords: ["overflow_error class"]
 ms.assetid: bae7128d-e36b-4a45-84f1-2f89da441d20

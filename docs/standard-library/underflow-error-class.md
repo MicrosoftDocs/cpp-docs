@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: underflow_error Class"
 title: "underflow_error Class"
-ms.date: "11/04/2016"
+ms.date: "09/09/2021"
 f1_keywords: ["stdexcept/std::underflow_error"]
 helpviewer_keywords: ["underflow_error class"]
 ms.assetid: d632f1f9-9c6c-4954-b96b-03041bfab22d
