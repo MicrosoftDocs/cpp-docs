@@ -31,29 +31,31 @@ The value returned by `what()` is a copy of `message.data()`. For more informati
 ```cpp
 // out_of_range.cpp
 // compile with: /EHsc
-#include <string>
+#include <exception>
 #include <iostream>
-
+#include <string>
+#include <typeinfo>
 using namespace std;
 
-int main() {
-// out_of_range
-   try {
-      string str( "Micro" );
-      string rstr( "soft" );
-      str.append( rstr, 5, 3 );
+int main()
+{
+   try
+   {
+      string str("Micro");
+      string rstr("soft");
+      str.append(rstr, 5, 3);
       cout << str << endl;
    }
-   catch ( exception &e ) {
-      cerr << "Caught: " << e.what( ) << endl;
-   };
+   catch (const exception& e)
+   {
+      cerr << "Caught: " << e.what() << endl;
+      cerr << "Type: " << typeid(e).name() << endl;
+   }
 }
-```
-
-## Output
-
-```cpp
+/* Output:
 Caught: invalid string position
+Type: class std::out_of_range
+*/
 ```
 
 ## Requirements

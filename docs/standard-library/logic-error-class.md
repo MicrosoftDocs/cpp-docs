@@ -30,27 +30,29 @@ The value returned by `what()` is a copy of `message.data()`. For more informati
 
 ```cpp
 // logic_error.cpp
-// compile with: /EHsc /GR
+// compile with: /EHsc
+#include <exception>
 #include <iostream>
+#include <stdexcept>
+#include <typeinfo>
 using namespace std;
 
-int main( )
+int main()
 {
    try
    {
-      throw logic_error( "logic error" );
+      throw logic_error("Does not compute!");
    }
-   catch ( exception &e )
+   catch (const exception& e)
    {
-      cerr << "Caught: " << e.what( ) << endl;
-      cerr << "Type: " << typeid( e ).name( ) << endl;
-   };
+      cerr << "Caught: " << e.what() << endl;
+      cerr << "Type: " << typeid(e).name() << endl;
+   }
 }
-```
-
-```Output
-Caught: logic error
+/* Output:
+Caught: Does not compute!
 Type: class std::logic_error
+*/
 ```
 
 ## Requirements

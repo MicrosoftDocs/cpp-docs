@@ -29,28 +29,29 @@ The value returned by `what()` is a copy of `message.data()`. For more informati
 ## Example
 
 ```cpp
-// invalid_arg.cpp
-// compile with: /EHsc /GR
+// invalid_argument.cpp
+// compile with: /EHsc
 #include <bitset>
+#include <exception>
 #include <iostream>
-
+#include <typeinfo>
 using namespace std;
 
-int main( )
+int main()
 {
    try
    {
-      bitset< 32 > bitset( string( "11001010101100001b100101010110000") );
+      bitset<32> b("11001010101100001b100101010110000");
    }
-   catch ( exception &e )
+   catch (const exception& e)
    {
-      cerr << "Caught " << e.what( ) << endl;
-      cerr << "Type " << typeid( e ).name( ) << endl;
-   };
+      cerr << "Caught: " << e.what() << endl;
+      cerr << "Type: " << typeid(e).name() << endl;
+   }
 }
 /* Output:
-Caught invalid bitset<N> char
-Type class std::invalid_argument
+Caught: invalid bitset char
+Type: class std::invalid_argument
 */
 ```
 

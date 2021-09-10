@@ -32,21 +32,24 @@ The value returned by `what()` is a copy of `message.data()`. For more informati
 
 ```cpp
 // underflow_error.cpp
-// compile with: /EHsc /GR
+// compile with: /EHsc
+#include <exception>
 #include <iostream>
-
+#include <stdexcept>
+#include <typeinfo>
 using namespace std;
 
-int main( )
+int main()
 {
    try
    {
-      throw underflow_error( "The number's a bit small, captain!" );
+      throw underflow_error("The number's a bit small, captain!");
    }
-   catch ( exception &e ) {
-      cerr << "Caught: " << e.what( ) << endl;
-      cerr << "Type: " << typeid( e ).name( ) << endl;
-   };
+   catch (const exception& e)
+   {
+      cerr << "Caught: " << e.what() << endl;
+      cerr << "Type: " << typeid(e).name() << endl;
+   }
 }
 /* Output:
 Caught: The number's a bit small, captain!

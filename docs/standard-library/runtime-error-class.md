@@ -30,27 +30,28 @@ The value returned by `what()` is a copy of `message.data()`. For more informati
 
 ```cpp
 // runtime_error.cpp
-// compile with: /EHsc /GR
+// compile with: /EHsc
+#include <exception>
 #include <iostream>
-
+#include <locale>
+#include <typeinfo>
 using namespace std;
 
-int main( )
+int main()
 {
-// runtime_error
    try
    {
-      locale loc( "test" );
+      locale loc("test");
    }
-   catch ( exception &e )
+   catch (const exception& e)
    {
-      cerr << "Caught " << e.what( ) << endl;
-      cerr << "Type " << typeid( e ).name( ) << endl;
-   };
+      cerr << "Caught: " << e.what() << endl;
+      cerr << "Type: " << typeid(e).name() << endl;
+   }
 }
 /* Output:
-Caught bad locale name
-Type class std::runtime_error
+Caught: bad locale name
+Type: class std::runtime_error
 */
 ```
 

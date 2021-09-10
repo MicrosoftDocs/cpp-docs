@@ -30,30 +30,31 @@ The value returned by `what()` is a copy of `message.data()`. For more informati
 
 ```cpp
 // overflow_error.cpp
-// compile with: /EHsc /GR
+// compile with: /EHsc
 #include <bitset>
+#include <exception>
 #include <iostream>
-
+#include <typeinfo>
 using namespace std;
 
-int main( )
+int main()
 {
    try
    {
-      bitset< 33 > bitset;
-      bitset[32] = 1;
-      bitset[0] = 1;
-      unsigned long x = bitset.to_ulong( );
+      bitset<33> b;
+      b[32] = 1;
+      b[0] = 1;
+      unsigned long x = b.to_ulong();
    }
-   catch ( exception &e )
+   catch (const exception& e)
    {
-      cerr << "Caught " << e.what( ) << endl;
-      cerr << "Type " << typeid( e ).name( ) << endl;
-   };
+      cerr << "Caught: " << e.what() << endl;
+      cerr << "Type: " << typeid(e).name() << endl;
+   }
 }
 /* Output:
-Caught bitset<N> overflow
-Type class std::overflow_error
+Caught: bitset overflow
+Type: class std::overflow_error
 */
 ```
 

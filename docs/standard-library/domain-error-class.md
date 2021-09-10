@@ -32,22 +32,24 @@ The value returned by `what()` is a copy of `message.data()`. For more informati
 
 ```cpp
 // domain_error.cpp
-// compile with: /EHsc /GR
+// compile with: /EHsc
+#include <exception>
 #include <iostream>
-
+#include <stdexcept>
+#include <typeinfo>
 using namespace std;
 
-int main( )
+int main()
 {
    try
    {
-      throw domain_error( "Your domain is in error!" );
+      throw domain_error("Your domain is in error!");
    }
-   catch (exception &e)
+   catch (const exception& e)
    {
-      cerr << "Caught: " << e.what( ) << endl;
-      cerr << "Type: " << typeid(e).name( ) << endl;
-   };
+      cerr << "Caught: " << e.what() << endl;
+      cerr << "Type: " << typeid(e).name() << endl;
+   }
 }
 /* Output:
 Caught: Your domain is in error!

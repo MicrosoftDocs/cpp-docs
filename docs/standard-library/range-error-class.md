@@ -28,20 +28,24 @@ The value returned by [what](../standard-library/exception-class.md) is a copy o
 
 ```cpp
 // range_error.cpp
-// compile with: /EHsc /GR
+// compile with: /EHsc
+#include <exception>
 #include <iostream>
+#include <stdexcept>
+#include <typeinfo>
 using namespace std;
+
 int main()
 {
    try
    {
-      throw range_error( "The range is in error!" );
+      throw range_error("The range is in error!");
    }
-   catch (range_error &e)
+   catch (const exception& e)
    {
-      cerr << "Caught: " << e.what( ) << endl;
-      cerr << "Type: " << typeid( e ).name( ) << endl;
-   };
+      cerr << "Caught: " << e.what() << endl;
+      cerr << "Type: " << typeid(e).name() << endl;
+   }
 }
 /* Output:
 Caught: The range is in error!
