@@ -22,7 +22,7 @@ public:
 
 ## Remarks
 
-The value returned by [what](../standard-library/exception-class.md) is a copy of `message.data`. For more information, see [basic_string::data](../standard-library/basic-string-class.md#data).
+The value returned by [what](../standard-library/exception-class.md) is a copy of `message.data()`. For more information, see [basic_string::data](../standard-library/basic-string-class.md#data).
 
 ## Example
 
