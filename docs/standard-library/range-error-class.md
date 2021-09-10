@@ -1,14 +1,14 @@
 ---
 description: "Learn more about: range_error Class"
 title: "range_error Class"
-ms.date: "08/14/2018"
+ms.date: "09/09/2021"
 f1_keywords: ["stdexcept/std::range_error"]
 helpviewer_keywords: ["range_error class"]
 ms.assetid: 8afb3e88-fc49-4213-b096-ed63d7aea37c
 ---
 # range_error Class
 
-The class serves as the base class for all exceptions thrown to report a range error.
+The class serves as the base class for all exceptions thrown to report a range error (as in mathematics, not iterators).
 
 ## Syntax
 
@@ -22,26 +22,30 @@ public:
 
 ## Remarks
 
-The value returned by [what](../standard-library/exception-class.md) is a copy of `message.data`. For more information, see [basic_string::data](../standard-library/basic-string-class.md#data).
+The value returned by [what](../standard-library/exception-class.md) is a copy of `message.data()`. For more information, see [basic_string::data](../standard-library/basic-string-class.md#data).
 
 ## Example
 
 ```cpp
 // range_error.cpp
-// compile with: /EHsc /GR
+// compile with: /EHsc
+#include <exception>
 #include <iostream>
+#include <stdexcept>
+#include <typeinfo>
 using namespace std;
+
 int main()
 {
    try
    {
-      throw range_error( "The range is in error!" );
+      throw range_error("The range is in error!");
    }
-   catch (range_error &e)
+   catch (const exception& e)
    {
-      cerr << "Caught: " << e.what( ) << endl;
-      cerr << "Type: " << typeid( e ).name( ) << endl;
-   };
+      cerr << "Caught: " << e.what() << endl;
+      cerr << "Type: " << typeid(e).name() << endl;
+   }
 }
 /* Output:
 Caught: The range is in error!
