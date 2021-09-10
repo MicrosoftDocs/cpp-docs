@@ -26,7 +26,7 @@ public:
 
 The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](../standard-library/exception-class.md) and [`data`](../standard-library/basic-string-class.md#data).
 
-`underflow_error` isn't thrown by any functions in Microsoft's implementation of the C++ Standard Library, but may be thrown by third-party libraries or user code.
+`underflow_error` isn't thrown by any functions in the Microsoft implementation of the C++ Standard Library, but it might be thrown by third-party libraries or user code.
 
 ## Example
 
