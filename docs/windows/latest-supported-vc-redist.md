@@ -30,11 +30,11 @@ Below are the latest supported en-US Microsoft Visual C++ Redistributable packag
 
 Download additional languages and versions, including for long term servicing release channels (LTSC), from [My.VisualStudio.com](https://my.visualstudio.com/)
 
-| Architecture |                                                 Link                                                 |                                                                                                                                                                                                                                          Notes |
-| ------------ | :--------------------------------------------------------------------------------------------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| ARM64        | [https://aka.ms/vs/16/release/vc_redist.arm64.exe](https://aka.ms/vs/16/release/vc_redist.arm64.exe) |                                                                                                                                                                                                   Permalink for latest supported ARM64 version |
-| X86          |   [https://aka.ms/vs/16/release/vc_redist.x86.exe](https://aka.ms/vs/16/release/vc_redist.x86.exe)   |                                                                                                                                                                                                     Permalink for latest supported x86 version |
-| X64          |   [https://aka.ms/vs/16/release/vc_redist.x64.exe](https://aka.ms/vs/16/release/vc_redist.x64.exe)   | Permalink for latest supported x64 version. To facilitate installing the required Cisual C++ ARM64 binaries when the X64 redistributable is installed on an ARM64 device, the X64 redistributable package contains both ARM64 and X64 binaries |
+| Architecture |                                                 Link                                                 |                                                                                                                                                                                                                                      Notes |
+| ------------ | :--------------------------------------------------------------------------------------------------: | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| ARM64        | [https://aka.ms/vs/16/release/vc_redist.arm64.exe](https://aka.ms/vs/16/release/vc_redist.arm64.exe) |                                                                                                                                                                                               Permalink for latest supported ARM64 version |
+| X86          |   [https://aka.ms/vs/16/release/vc_redist.x86.exe](https://aka.ms/vs/16/release/vc_redist.x86.exe)   |                                                                                                                                                                                                 Permalink for latest supported x86 version |
+| X64          |   [https://aka.ms/vs/16/release/vc_redist.x64.exe](https://aka.ms/vs/16/release/vc_redist.x64.exe)   | Permalink for latest supported x64 version. To facilitate installing required Visual C++ ARM64 binaries when the X64 redistributable is installed on an ARM64 device, the X64 redistributable package contains both ARM64 and X64 binaries |
 
 ### Notes
 
@@ -44,7 +44,7 @@ Download additional languages and versions, including for long term servicing re
 ## Visual Studio 2013 (VC++ 12.0)
 
 Below are the latest supported en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2013.
-Downloaded additional versions and languages form Microsoft Visual C++ Redistributable Packages for Visual Studio 2013 or from [My.VisualStudio.com](https://my.visualstudio.com/).
+Downloaded additional versions and languages form [Update for Visual C++ 2013 Redistributable Package](https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10) or from [My.VisualStudio.com](https://my.visualstudio.com/).
 
 | Architecture |   Version    |                                                    Link |
 | ------------ | :----------: | ------------------------------------------------------: |
@@ -80,7 +80,7 @@ Download additional languages from:
 - [Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://www.microsoft.com/en-us/download/details.aspx?id=8328)
 - [Microsoft Visual C++ 2010 SP1 Redistributable Package (x64)](https://www.microsoft.com/en-us/download/details.aspx?id=13523)
 
-## Visual Studio 2008 (VC++ 10.0) SP1 (no longer supported)
+## Visual Studio 2008 (VC++ 9.0) SP1 (no longer supported)
 
 Visual Studio 2008 Service Pack 1 [reached end of extended support on April 10, 2018](https://docs.microsoft.com/en-us/lifecycle/products/visual-studio-2008). To make it easier to find the latest downloads, the links below currently work, but may be removed in the future.
 
