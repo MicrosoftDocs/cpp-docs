@@ -26,7 +26,7 @@ For details on how to install and redistribute Visual Studio components, please 
 
 ## Visual Studio 2015, 2017, and 2019
 
-Below are the latest supported en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2015-2022. The latest supported version has the most recent implemented C++ features, security and reliability bug fixes as well performance improvements. We recommend installing this version for all applications created using Visual Studio 2015, 2017, 2019 or 2022
+Below are the latest supported English (en-US) Microsoft Visual C++ Redistributable packages for Visual Studio 2015-2022. The latest supported version has the most recent implemented C++ features, security, reliability and performance improvements. It also includes the latest C++ standard language and library standards conformance updates. We recommend installing this version for all applications created using Visual Studio 2015, 2017, 2019 or 2022
 
 Download additional languages and versions, including for long term servicing release channels (LTSC), from [My.VisualStudio.com](https://my.visualstudio.com/)
 
@@ -38,13 +38,13 @@ Download additional languages and versions, including for long term servicing re
 
 ### Notes
 
-- Visual Studio 2015, 2017 and 2019 share the same redistributable files. For example, the Microsoft Visual C++ 2019 redistributable will be used by C++ programs built with the Visual Studio 2015, 2017, or 2019 toolsets. However, the version of the Microsoft Visual C++ redistributable installed on the machine must be the same or higher than the version of the Visual C++ toolset used to create your application. Please see [Determining Which DLLs to Redistribute](determining-which-dlls-to-redistribute.md) for more information about which version you need.
-- **Windows XP Support**: Microsoft ended support for Windows XP on April 8, 2014. While the current version of the C++ Redistributable for Visual Studio 2015-2019 only supports Windows Vista, 7, 8.1, 10, and 11 older versions of the C++ Redistributable 2015-2019 can be installed on Windows XP. The last version of the C++ Redistributable for Visual Studio 2015-2019 that works on Windows XP is v14.24.28127.4. Download from [My.VisualStudio.com](https://my.visualstudio.com/) or directly using the following link corresponding to your architecture: [vc_redist.86.exe](https://download.visualstudio.microsoft.com/download/pr/bc2490f7-3f8e-4a5d-a61e-12b6d331713e/E59AE3E886BD4571A811FE31A47959AE5C40D87C583F786816C60440252CD7EC/VC_redist.x86.exe) or [vc_redist.x64.exe](https://download.visualstudio.microsoft.com/download/pr/3b070396-b7fb-4eee-aa8b-102a23c3e4f4/40EA2955391C9EAE3E35619C4C24B5AAF3D17AEAA6D09424EE9672AA9372AEED/VC_redist.x64.exe)
+- Visual Studio 2015, 2017 and 2019 share the same redistributable files. For example, the Microsoft Visual C++ 2019 redistributable is used by C++ programs built with the Visual Studio 2015, 2017, or 2019 toolsets. However, the version of the Microsoft Visual C++ redistributable installed on the machine must be the same or higher than the version of the Visual C++ toolset used to create your application. Please see [Determining Which DLLs to Redistribute](determining-which-dlls-to-redistribute.md) for more information about which version you need.
+- **Windows XP Support**: Microsoft ended support for Windows XP on April 8, 2014. While the current version of the C++ Redistributable for Visual Studio 2015-2019 only supports Windows Vista, 7, 8.1, 10, and 11, older versions of the C++ Redistributable 2015-2019 can be installed on Windows XP. The last version of the C++ Redistributable for Visual Studio 2015-2019 that works on Windows XP is v14.24.28127.4. Download from [My.VisualStudio.com](https://my.visualstudio.com/) or directly using the following link corresponding to your architecture: [vc_redist.86.exe](https://download.visualstudio.microsoft.com/download/pr/bc2490f7-3f8e-4a5d-a61e-12b6d331713e/E59AE3E886BD4571A811FE31A47959AE5C40D87C583F786816C60440252CD7EC/VC_redist.x86.exe) or [vc_redist.x64.exe](https://download.visualstudio.microsoft.com/download/pr/3b070396-b7fb-4eee-aa8b-102a23c3e4f4/40EA2955391C9EAE3E35619C4C24B5AAF3D17AEAA6D09424EE9672AA9372AEED/VC_redist.x64.exe)
 
 ## Visual Studio 2013 (VC++ 12.0)
 
 Below are the latest supported en-US Microsoft Visual C++ Redistributable packages for Visual Studio 2013.
-Downloaded additional versions and languages form [Update for Visual C++ 2013 Redistributable Package](https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10) or from [My.VisualStudio.com](https://my.visualstudio.com/).
+Downloaded additional versions and languages from [Update for Visual C++ 2013 Redistributable Package](https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10) or from [My.VisualStudio.com](https://my.visualstudio.com/).
 
 | Architecture |   Version    |                                                    Link |
 | ------------ | :----------: | ------------------------------------------------------: |
@@ -68,7 +68,8 @@ Download additional versions and languages from [Microsoft Visual C++ Redistribu
 
 ## Visual Studio 2010 (VC++ 10.0) SP1 (no longer supported)
 
-Visual Studio 2010 Service Pack 1 [reached end of extended support on July 14, 2020](https://docs.microsoft.com/en-us/lifecycle/products/visual-studio-2010). To make it easy to find the latest downloads, the links below currently work, but may be removed in the future.
+> [!NOTE] 
+> Visual Studio 2010 Service Pack 1 [reached end of extended support on July 14, 2020](https://docs.microsoft.com/en-us/lifecycle/products/visual-studio-2010)
 
 | Architecture |   Version    |                                                                                                                    Link |
 | ------------ | :----------: | ----------------------------------------------------------------------------------------------------------------------: |
@@ -82,7 +83,8 @@ Download additional languages from:
 
 ## Visual Studio 2008 (VC++ 9.0) SP1 (no longer supported)
 
-Visual Studio 2008 Service Pack 1 [reached end of extended support on April 10, 2018](https://docs.microsoft.com/en-us/lifecycle/products/visual-studio-2008). To make it easier to find the latest downloads, the links below currently work, but may be removed in the future.
+> [!NOTE]
+> Visual Studio 2008 Service Pack 1 [reached end of extended support on April 10, 2018](https://docs.microsoft.com/en-us/lifecycle/products/visual-studio-2008)
 
 | Architecture |    Version     |                                                                                                                    Link |
 | ------------ | :------------: | ----------------------------------------------------------------------------------------------------------------------: |
