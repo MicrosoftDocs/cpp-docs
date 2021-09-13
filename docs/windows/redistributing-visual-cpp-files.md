@@ -8,7 +8,7 @@ ms.assetid: d201b2ce-36f1-44e5-a96c-0db81a1ba652
 # Redistributing Visual C++ Files
 
 > [!NOTE]
-> Are you here because you're looking for a download of one of the Visual C++ Runtime files? Go to the [Microsoft website](https://www.microsoft.com/) and enter **Visual C++ Redistributable** in the search box. Download and install the redistributable package for the architecture of your computer (for example, x64 if you are running 64-bit Windows) and the version of Visual C++ (for example, 2015) that you need.
+> Are you here because you're looking for a download of one of the Visual C++ Runtime files? Go to [latest supported Visual C++ downloads](latest-supported-vc-redist.md).
 
 ## Redistributable files and licensing
 
