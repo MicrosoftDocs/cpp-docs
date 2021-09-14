@@ -15,7 +15,7 @@ These macros control specific compiler features.
 |[_ATL_ALL_WARNINGS](#_atl_all_warnings)|A symbol that enables errors in projects converted from previous versions of ATL.|
 |[_ATL_APARTMENT_THREADED](#_atl_apartment_threaded)|Define if one or more of your objects use apartment threading.|
 |[_ATL_CSTRING_EXPLICIT_CONSTRUCTORS](#_atl_cstring_explicit_constructors)|Makes certain `CString` constructors explicit, preventing any unintentional conversions.|
-|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Define this macro in order to use C++ standard compliant syntax, which generates the C4867 compiler error when a non-standard syntax is used to initialize a pointer to a member function.|
+|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Define this macro in order to use C++ standard syntax, which generates the C4867 compiler error when a non-standard syntax is used to initialize a pointer to a member function.|
 |[_ATL_FREE_THREADED](#_atl_free_threaded)|Define if one or more of your objects use free or neutral threading.|
 |[_ATL_MULTI_THREADED](#_atl_multi_threaded)|A symbol that indicates the project will have objects that are marked as Both, Free or Neutral. The macro [_ATL_FREE_THREADED](#_atl_free_threaded) should be used instead.|
 |[_ATL_NO_AUTOMATIC_NAMESPACE](#_atl_no_automatic_namespace)|A symbol that prevents the default use of namespace as ATL.|
@@ -88,7 +88,7 @@ By using the _T macro on all constructor string arguments, you can define _ATL_C
 
 ## <a name="_atl_enable_ptm_warning"></a> _ATL_ENABLE_PTM_WARNING
 
-Define this macro in order to force the use of ANSI C++ standard-compliant syntax for pointer to member functions. Using this macro will cause the C4867 compiler error to be generated when non-standard syntax is used to initialize a pointer to a member function.
+Define this macro in order to force the use of ANSI C++ standard-conforming syntax for pointer to member functions. Using this macro will cause the C4867 compiler error to be generated when non-standard syntax is used to initialize a pointer to a member function.
 
 ```
 #define _ATL_ENABLE_PTM_WARNING
@@ -96,11 +96,11 @@ Define this macro in order to force the use of ANSI C++ standard-compliant synta
 
 ### Remarks
 
-The ATL and MFC libraries have been changed to match the Microsoft C++ compiler's improved standard C++ compliance. According to the ANSI C++ standard, the syntax of a pointer to a class member function should be `&CMyClass::MyFunc`.
+The ATL and MFC libraries have been changed to match the Microsoft C++ compiler's improved standard C++ conformance. According to the ANSI C++ standard, the syntax of a pointer to a class member function should be `&CMyClass::MyFunc`.
 
-When [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) is not defined (the default case), ATL/MFC disables the C4867 error in macro maps (notably message maps) so that code that was created in earlier versions can continue to build as before. If you define **_ATL_ENABLE_PTM_WARNING**, your code should be C++ standard compliant.
+When [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) is not defined (the default case), ATL/MFC disables the C4867 error in macro maps (notably message maps) so that code that was created in earlier versions can continue to build as before. If you define **_ATL_ENABLE_PTM_WARNING**, your code should conform to the C++ standard.
 
-However, the non-standard form has been deprecated. You need to move existing code to C++ standard compliant syntax. For example, the following code:
+However, the non-standard form has been deprecated. You need to move existing code to C++ standard syntax. For example, the following code:
 
 [!code-cpp[NVC_MFCListView#14](../../atl/reference/codesnippet/cpp/compiler-options-macros_2.cpp)]
 

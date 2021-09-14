@@ -60,7 +60,7 @@ int add( int a, int );
 
 The prototype can include both the type of, and an identifier for, each expression that is passed as an argument. However, such identifiers have scope only until the end of the declaration. The prototype can also reflect the fact that the number of arguments is variable, or that no arguments are passed. Without such a list, mismatches may not be revealed, so the compiler cannot generate diagnostic messages concerning them. See [Arguments](../c-language/arguments.md) for more information on type checking.
 
-Prototype scope in the Microsoft C compiler is now ANSI-compliant when compiling with the **/Za** compiler option. This means that if you declare a **`struct`** or **`union`** tag within a prototype, the tag is entered at that scope rather than at global scope. For example, when compiling with **/Za** for ANSI compliance, you can never call this function without getting a type mismatch error:
+Prototype scope in the Microsoft C compiler is now ANSI-conforming when compiling with the **/Za** compiler option. This means that if you declare a **`struct`** or **`union`** tag within a prototype, the tag is entered at that scope rather than at global scope. For example, when compiling with **/Za** for ANSI conformance, you can never call this function without getting a type mismatch error:
 
 ```C
 void func1( struct S * );

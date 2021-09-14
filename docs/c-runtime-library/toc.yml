@@ -10,7 +10,7 @@
           href: ../c-runtime-library/compatibility.md
         - name: UWP apps, the Windows Runtime, and the C Run-time
           href: ../c-runtime-library/windows-store-apps-the-windows-runtime-and-the-c-run-time.md
-        - name: ANSI C compliance
+        - name: ANSI C conformance
           href: ../c-runtime-library/ansi-c-compliance.md
         - name: UNIX
           href: ../c-runtime-library/unix.md

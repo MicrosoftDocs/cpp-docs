@@ -346,7 +346,7 @@ wchar_t* str = L"hello";
 str[2] = L'a'; // run-time error: access violation
 ```
 
-You can cause the compiler to emit an error when a string literal is converted to a non-const character pointer when you set the [`/Zc:strictStrings` (Disable string literal type conversion)](../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) compiler option. We recommend it for standards-compliant portable code. It's also a good practice to use the **`auto`** keyword to declare string literal-initialized pointers, because it resolves to the correct (const) type. For example, this code example catches an attempt to write to a string literal at compile time:
+You can cause the compiler to emit an error when a string literal is converted to a non-const character pointer when you set the [`/Zc:strictStrings` (Disable string literal type conversion)](../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) compiler option. We recommend it for standards-conformant portable code. It's also a good practice to use the **`auto`** keyword to declare string literal-initialized pointers, because it resolves to the correct (const) type. For example, this code example catches an attempt to write to a string literal at compile time:
 
 ```cpp
 auto str = L"hello";

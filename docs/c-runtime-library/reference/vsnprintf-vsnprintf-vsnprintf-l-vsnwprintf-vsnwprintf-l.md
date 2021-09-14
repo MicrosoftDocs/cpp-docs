@@ -131,7 +131,7 @@ Each of these functions takes a pointer to an argument list, then formats the da
 >
 > Because **`vsnprintf`** always writes the terminating null, the *count* parameter may be equal to the size of the buffer.
 
-Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`vsnprintf`** is no longer identical to **`_vsnprintf`**. The **`vsnprintf`** function complies with the C99 standard; **`_vnsprintf`** is kept for backward compatibility with older Visual Studio code.
+Beginning with the UCRT in Visual Studio 2015 and Windows 10, **`vsnprintf`** is no longer identical to **`_vsnprintf`**. The **`vsnprintf`** function conforms to the C99 standard; **`_vnsprintf`** is kept for backward compatibility with older Visual Studio code.
 
 The versions of these functions with the **`_l`** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 

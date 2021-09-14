@@ -103,7 +103,7 @@ This section lists additional programming constructs, and topics that pertain to
 |[.NET Framework Equivalents to C++ Native Types (C++/CLI)](../dotnet/managed-types-cpp-cli.md#dotnet)|Lists the CLR types that are used in place of C++ integral types.|
 |[appdomain](../cpp/appdomain.md) **`__declspec`** modifier|**`__declspec`** modifier that mandates that static and global variables exist per appdomain.|
 |[C-Style Casts with /clr (C++/CLI)](c-style-casts-with-clr-cpp-cli.md)|Describes how C-style casts are interpreted.|
-|[__clrcall](../cpp/clrcall.md) calling convention|Indicates the CLR-compliant calling convention.|
+|[__clrcall](../cpp/clrcall.md) calling convention|Indicates the CLR-conformant calling convention.|
 |`__cplusplus_cli`|[Predefined Macros](../preprocessor/predefined-macros.md)|
 |[Custom Attributes](user-defined-attributes-cpp-component-extensions.md)|Describes how to define your own CLR attributes.|
 |[Exception Handling](exception-handling-cpp-component-extensions.md)|Provides an overview of exception handling.|
