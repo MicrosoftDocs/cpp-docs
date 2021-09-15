@@ -15,13 +15,13 @@ These macros control specific compiler features.
 |[_ATL_ALL_WARNINGS](#_atl_all_warnings)|A symbol that enables errors in projects converted from previous versions of ATL.|
 |[_ATL_APARTMENT_THREADED](#_atl_apartment_threaded)|Define if one or more of your objects use apartment threading.|
 |[_ATL_CSTRING_EXPLICIT_CONSTRUCTORS](#_atl_cstring_explicit_constructors)|Makes certain `CString` constructors explicit, preventing any unintentional conversions.|
-|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Define this macro in order to use C++ standard syntax, which generates the C4867 compiler error when a non-standard syntax is used to initialize a pointer to a member function.|
+|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Define this macro to require C++ standard syntax. It generates the C4867 compiler error when non-standard syntax is used to initialize a pointer to a member function.|
 |[_ATL_FREE_THREADED](#_atl_free_threaded)|Define if one or more of your objects use free or neutral threading.|
 |[_ATL_MULTI_THREADED](#_atl_multi_threaded)|A symbol that indicates the project will have objects that are marked as Both, Free or Neutral. The macro [_ATL_FREE_THREADED](#_atl_free_threaded) should be used instead.|
 |[_ATL_NO_AUTOMATIC_NAMESPACE](#_atl_no_automatic_namespace)|A symbol that prevents the default use of namespace as ATL.|
 |[_ATL_NO_COM_SUPPORT](#_atl_no_com_support)|A symbol that prevents COM-related code from being compiled with your project.|
 |[ATL_NO_VTABLE](#atl_no_vtable)|A symbol that prevents the vtable pointer from being initialized in the class's constructor and destructor.|
-|[ATL_NOINLINE](#atl_noinline)|A symbol that indicates a function should not be inlined.|
+|[ATL_NOINLINE](#atl_noinline)|A symbol that indicates a function shouldn't be inlined.|
 |[_ATL_SINGLE_THREADED](#_atl_single_threaded)|Define if all of your objects use the single threading model.|
 
 ## <a name="_atl_all_warnings"></a> _ATL_ALL_WARNINGS
@@ -56,7 +56,7 @@ By adding the following line to the *pch.h* (*stdafx.h* in Visual Studio 2017 an
 
 [!code-cpp[NVC_ATL_Utilities#97](../../atl/codesnippet/cpp/compiler-options-macros_1.h)]
 
-If this `#define` is added, the ATL headers are careful to preserve the state of these warnings so that they are not disabled globally (or if the user explicitly disables individual warnings, not to enable them).
+If this `#define` is added, the ATL headers are careful to preserve the state of these warnings so that they're not disabled globally (or if the user explicitly disables individual warnings, not to enable them).
 
 New projects have this `#define` set in *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier) by default.
 
@@ -70,13 +70,13 @@ _ATL_APARTMENT_THREADED
 
 ### Remarks
 
-Specifies apartment threading. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.
+Specifies apartment threading.  For other options, and a description of the threading models available for an ATL object, see [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md).
 
 ## <a name="_atl_cstring_explicit_constructors"></a> _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
 
 Makes certain `CString` constructors explicit, preventing any unintentional conversions.
 
-```
+```cpp
 _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
 ```
 
@@ -90,7 +90,7 @@ By using the _T macro on all constructor string arguments, you can define _ATL_C
 
 Define this macro in order to force the use of ANSI C++ standard-conforming syntax for pointer to member functions. Using this macro will cause the C4867 compiler error to be generated when non-standard syntax is used to initialize a pointer to a member function.
 
-```
+```cpp
 #define _ATL_ENABLE_PTM_WARNING
 ```
 
