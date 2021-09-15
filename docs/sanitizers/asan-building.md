@@ -82,7 +82,7 @@ These libraries are added to the default library list when you specify **`/fsani
 | **`/MTd`** | *`clang_rt.fuzzer_MTd-{arch}`* |
 | **`/MDd`** | *`clang_rt.fuzzer_MDd-{arch}`* |
 
-LibFuzzer libraries that omit the **`main`** function are also available. It's your responsibility to define **`main`** and to call **`LLVMFuzzerInitialize`** and **`LLVMFuzzerTestOneInput`** when you use these libraries. Use [`/NODEFAULTLIB`](../build/reference/nodefaultlib-ignore-libraries.md) to link with one of the libraries listed below:
+LibFuzzer libraries that omit the **`main`** function are also available. It's your responsibility to define **`main`** and to call **`LLVMFuzzerInitialize`** and **`LLVMFuzzerTestOneInput`** when you use these libraries. If you wish to do this, specify [`/NODEFAULTLIB`](../build/reference/nodefaultlib-ignore-libraries.md) and explicitly link with the library below that corresponds to your runtime:
 
 | Runtime option | LibFuzzer no_main library |
 |--|--|

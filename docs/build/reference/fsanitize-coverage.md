@@ -7,7 +7,7 @@ helpviewer_keywords: ["/fsanitize-coverage [C++]", "sanitizer compiler option [C
 ---
 # `/fsanitize-coverage` (Configure Sanitizer Coverage)
 
-The **`/fsanitize-coverage`** compiler options instruct the compiler to add various kinds of instrumentation points where user-defined functions are called. These options are useful for fuzzing scenarios that use **`/fsanitize=fuzzer`**. For more information, see the [OneFuzz documentation](https://www.microsoft.com/en-us/research/project/project-onefuzz/) and [OneFuzz GitHub project](https://github.com/microsoft/onefuzz).
+The **`/fsanitize-coverage`** compiler options instruct the compiler to add various kinds of instrumentation points where user-defined functions are called. These options are useful for fuzzing scenarios that use **`/fsanitize=fuzzer`**, like OneFuzz. For more information, see the [OneFuzz documentation](https://www.microsoft.com/en-us/research/project/project-onefuzz/) and [OneFuzz GitHub project](https://github.com/microsoft/onefuzz).
 
 ## Syntax
 
@@ -29,7 +29,7 @@ In Visual Studio 2022 version 17.0, the following options have experimental supp
 - **`/fsanitize-coverage=trace-cmp`**,
 - **`/fsanitize-coverage=trace-div`**.
 
-The **`/fsanitize-coverage`** compiler options offer code coverage support and various options to modify which compiler-provided instrumentation is generated. All these options are automatically set when [`/fsanitize=fuzzer`](fsanitize.md) is specified. The **`/fsanitize=fuzzer`** option requires the same instrumentation points and callbacks mentioned in these options. You don't need to provide the callbacks mentioned below when using **`/fsanitize=fuzzer`**.
+The **`/fsanitize-coverage`** compiler options offer code coverage support and various options to modify which compiler-provided instrumentation is generated. All these options are automatically set when [`/fsanitize=fuzzer`](fsanitize.md) is specified. The **`/fsanitize=fuzzer`** option requires the same instrumentation points and callbacks mentioned in these options.
 
 The **`/fsanitize-coverage`** option doesn't allow comma-separated syntax, for example: **`/fsanitize-coverage=edge,inline-8bit-counters,trace-cmp,trace-div`**. Specify these options individually.
 
