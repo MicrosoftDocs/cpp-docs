@@ -7,7 +7,7 @@ helpviewer_keywords: ["/fsanitize [C++]", "-fsanitize=address [C++]", "address s
 ---
 # `/fsanitize` (Enable sanitizers)
 
-Use the **`/fsanitize`** compiler options to enable sanitizers. As of Visual Studio 2019 16.9, the only supported sanitizer is [AddressSanitizer](../../sanitizers/asan.md). As of Visual Studio 2022 17.0, LibFuzzer has experimental support.
+Use the **`/fsanitize`** compiler options to enable sanitizers.
 
 ## Syntax
 
@@ -18,15 +18,13 @@ Use the **`/fsanitize`** compiler options to enable sanitizers. As of Visual Stu
 
 ## Remarks
 
-The **`/fsanitize=address`** compiler option enables [AddressSanitizer](../../sanitizers/asan.md), a powerful compiler and runtime technology to light up [hard-to-find bugs](../../sanitizers/asan.md#error-types).
+The **`/fsanitize=address`** compiler option enables [AddressSanitizer](../../sanitizers/asan.md), a powerful compiler and runtime technology to uncover [hard-to-find bugs](../../sanitizers/asan.md#error-types). The option is available starting in Visual Studio 2019 version 16.9.
 
-The **`/fsanitize=fuzzer`** compiler option enables LibFuzzer (experimental), a coverage-guided fuzzing library that can be used to find bugs and crashes caused by user-provided input. It is recommended to use **`/fsanitize=address`** alongside LibFuzzer. See the OneFuzz [documentation page](https://www.microsoft.com/en-us/research/project/project-onefuzz/) and [GitHub project](https://github.com/microsoft/onefuzz) for more information.
+The **`/fsanitize=fuzzer`** compiler option enables experimental support for LibFuzzer. LibFuzzer is a coverage-guided fuzzing library that can be used to find bugs and crashes caused by user-provided input. We recommended you use **`/fsanitize=address`** with LibFuzzer. For more information, see the [OneFuzz documentation](https://www.microsoft.com/en-us/research/project/project-onefuzz/) and [OneFuzz GitHub project](https://github.com/microsoft/onefuzz). Support for the **`/fsanitize=fuzzer`** option is available starting in Visual Studio 2022 version 17.0.
 
-Currently, **`/fsanitize=`** does not allow comma-separated syntax, for example: **`/fsanitize=address,fuzzer`**. These options must be provided individually.
+The **`/fsanitize`** option doesn't allow comma-separated syntax, for example: **`/fsanitize=address,fuzzer`**. These options must be specified individually.
 
 The **`/fsanitize-address-use-after-return`** and **`/fno-sanitize-address-vcasan-lib`** compiler options, and the [`/INFERASANLIBS` (Use inferred sanitizer libs)](./inferasanlibs.md) and **`/INFERASANLIBS:NO`** linker options offer support for advanced users. For more information, see [AddressSanitizer build and language reference](../../sanitizers/asan-building.md).
-
-The **`/fsanitize`** options are available beginning in Visual Studio 2019 version 16.9.
 
 ### To set the **`/fsanitize=address`** compiler option in the Visual Studio development environment
 
@@ -67,7 +65,7 @@ The **`/fsanitize`** options are available beginning in Visual Studio 2019 versi
 [MSVC compiler options](compiler-options.md)\
 [MSVC compiler command-line syntax](compiler-command-line-syntax.md)\
 [`/INFERASANLIBS` (Use inferred sanitizer libs)](./inferasanlibs.md)\
-[`/fsanitize-coverage` (Configure Sanitizer Coverage) compiler option](fsanitize-coverage.md)\
+[`/fsanitize-coverage` (Configure Sanitizer Coverage)](fsanitize-coverage.md)\
 [AddressSanitizer overview](../../sanitizers/asan.md)\
 [AddressSanitizer known issues](../../sanitizers/asan-known-issues.md)\
 [AddressSanitizer build and language reference](../../sanitizers/asan-building.md)
