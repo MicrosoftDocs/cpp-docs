@@ -54,7 +54,7 @@ Downloaded additional versions and languages from [Update for Visual C++ 2013 Re
 ### Other versions
 
 - [Multibyte MFC Library for Visual Studio 2013](https://my.visualstudio.com/Downloads?pid=1430). This add-on for Visual Studio 2013 contains the multibyte character set (MBCS) version of the Microsoft Foundation Class (MFC) Library.
-- [Visual C++ 2013 Runtime for Sideloaded Windows 8.1 apps](http://download.microsoft.com/download/5/f/0/5f0f8404-9329-44a9-8176-ed6f7f746f25/vclibs_redist_packages.zip). For more information, see [C++ Runtime for Sideloaded Windows 8.1 apps] on the [VC++ Team Blog](https://devblogs.microsoft.com/cppblog/c-runtime-for-sideloaded-windows-8-1-apps/).
+- [Visual C++ 2013 Runtime for Sideloaded Windows 8.1 apps](https://download.microsoft.com/download/5/f/0/5f0f8404-9329-44a9-8176-ed6f7f746f25/vclibs_redist_packages.zip). For more information, see [C++ Runtime for Sideloaded Windows 8.1 apps] on the [VC++ Team Blog](https://devblogs.microsoft.com/cppblog/c-runtime-for-sideloaded-windows-8-1-apps/).
 
 ## Visual Studio 2012 (VC++ 11.0) Update 4
 
@@ -69,7 +69,7 @@ Download additional versions and languages from [Microsoft Visual C++ Redistribu
 ## Visual Studio 2010 (VC++ 10.0) SP1 (no longer supported)
 
 > [!NOTE] 
-> Visual Studio 2010 Service Pack 1 [reached end of extended support on July 14, 2020](https://docs.microsoft.com/en-us/lifecycle/products/visual-studio-2010)
+> Visual Studio 2010 Service Pack 1 [reached end of extended support on July 14, 2020](/lifecycle/products/visual-studio-2010)
 
 | Architecture |   Version    |                                                                                                                    Link |
 | ------------ | :----------: | ----------------------------------------------------------------------------------------------------------------------: |
@@ -84,7 +84,7 @@ Download additional languages from:
 ## Visual Studio 2008 (VC++ 9.0) SP1 (no longer supported)
 
 > [!NOTE]
-> Visual Studio 2008 Service Pack 1 [reached end of extended support on April 10, 2018](https://docs.microsoft.com/en-us/lifecycle/products/visual-studio-2008)
+> Visual Studio 2008 Service Pack 1 [reached end of extended support on April 10, 2018](/lifecycle/products/visual-studio-2008)
 
 | Architecture |    Version     |                                                                                                                    Link |
 | ------------ | :------------: | ----------------------------------------------------------------------------------------------------------------------: |
