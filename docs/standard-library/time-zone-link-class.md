@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: time_zone_link class"
 title: "time_zone_link class"
-ms.date: 9/1/2021
+ms.date: 9/15/2021
 f1_keywords: ["chrono/std::chrono::time_zone_link::name", "chrono/std::chrono::time_zone_link::target"]
 helpviewer_keywords: ["std::chrono [C++], time_zone_link class", "std::chrono::time_zone_link::name function", "std::chrono::time_zone_link::target function"]
 ---
@@ -17,9 +17,16 @@ class time_zone_link;  // Since C++20
 
 ## Remarks
 
-`time_zone_link` instances are created when the time zone database is initialized. They can't be created by the developer. You can get them with `get_tzdb().links` as shown in the example at the end of this topic.
+`time_zone_link` instances are created when the time zone database is initialized. They can't be created directly. Get an instance via `get_tzdb().links`, as shown in the example at the end of this topic.
 
 Although this type has a default move constructor and move assignment operator, it isn't copyable because only `const` access is provided to this type. Using those functions results in undefined behavior, which is why the move constructor and assignment operator aren't listed here.
+
+**Differences with IANA database**
+
+In Microsoft's implementation, time zone data can differ in some cases from the Internet Assigned Numbers Authority (IANA) time zone database. For example, `"America/Nuuk"` is returned instead of `"America/Godthab"` (`"America/Nuuk"` was renamed `"America/Godthab"` in April 2020). We don't supply the `"Eastern War Time EWT"` time zone at this time. See [Issue #1786](https://github.com/microsoft/STL/issues/1786) on the Microsoft STL GitHub repo for more details.
+
+> [!NOTE]
+> At this time, time-zone data is only available on Windows version 19H1, and later. If you’re running on a version earlier than 19H1, you’ll get an exception: "The specified module could not be found".
 
 ## Members
 
