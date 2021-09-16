@@ -1,11 +1,11 @@
 ---
-description: "Learn more about the /fsanitize-coverage (Configure Sanitizer Coverage) compiler option"
-title: "/fsanitize-coverage (Configure Sanitizer Coverage)"
-ms.date: 08/11/2021
+description: "Learn more about the /fsanitize-coverage (Configure sanitizer coverage) compiler option."
+title: "/fsanitize-coverage (Configure sanitizer coverage)"
+ms.date: 09/15/2021
 f1_keywords: ["/fsanitize-coverage", "-fsanitize-coverage", "/fsanitize-coverage=inline-8bit-counters", "/fsanitize-coverage=edge", "/fsanitize-coverage=trace-cmp", "/fsanitize-coverage=trace-div", "/fno-sanitize-coverage=inline-8bit-counters", "/fno-sanitize-coverage=edge", "/fno-sanitize-coverage=trace-cmp", "/fno-sanitize-coverage=trace-div"]
 helpviewer_keywords: ["/fsanitize-coverage [C++]", "sanitizer compiler option [C++]", "/fsanitize-coverage=inline-8bit-counters", "/fsanitize-coverage=edge", "/fsanitize-coverage=trace-cmp", "/fsanitize-coverage=trace-div", "/fno-sanitize-coverage=inline-8bit-counters", "/fno-sanitize-coverage=edge", "/fno-sanitize-coverage=trace-cmp", "/fno-sanitize-coverage=trace-div"]
 ---
-# `/fsanitize-coverage` (Configure Sanitizer Coverage)
+# `/fsanitize-coverage` (Configure sanitizer coverage)
 
 The **`/fsanitize-coverage`** compiler options instruct the compiler to add various kinds of instrumentation points where user-defined functions are called. These options are useful for fuzzing scenarios that use **`/fsanitize=fuzzer`**, like OneFuzz. For more information, see the [OneFuzz documentation](https://www.microsoft.com/en-us/research/project/project-onefuzz/) and [OneFuzz GitHub project](https://github.com/microsoft/onefuzz).
 
@@ -22,16 +22,9 @@ The **`/fsanitize-coverage`** compiler options instruct the compiler to add vari
 
 ## Remarks
 
-In Visual Studio 2022 version 17.0, the following options have experimental support:
+The experimental **`/fsanitize-coverage`** compiler options offer code coverage support and various options to modify which compiler-provided instrumentation is generated. All these options are automatically set when the [`/fsanitize=fuzzer`](fsanitize.md) option is specified. The **`/fsanitize=fuzzer`** option requires the same instrumentation points and callbacks mentioned in these options.
 
-- **`/fsanitize-coverage=edge`**,
-- **`/fsanitize-coverage=inline-8bit-counters`**,
-- **`/fsanitize-coverage=trace-cmp`**,
-- **`/fsanitize-coverage=trace-div`**.
-
-The **`/fsanitize-coverage`** compiler options offer code coverage support and various options to modify which compiler-provided instrumentation is generated. All these options are automatically set when [`/fsanitize=fuzzer`](fsanitize.md) is specified. The **`/fsanitize=fuzzer`** option requires the same instrumentation points and callbacks mentioned in these options.
-
-The **`/fsanitize-coverage`** option doesn't allow comma-separated syntax, for example: **`/fsanitize-coverage=edge,inline-8bit-counters,trace-cmp,trace-div`**. Specify these options individually.
+The **`/fsanitize-coverage`** options don't allow comma-separated syntax, for example: **`/fsanitize-coverage=edge,inline-8bit-counters,trace-cmp,trace-div`**. Specify these options individually.
 
 The **`/fsanitize-coverage`** options are available beginning in Visual Studio 2022 version 17.0.
 

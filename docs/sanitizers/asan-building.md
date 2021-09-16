@@ -9,7 +9,7 @@ helpviewer_keywords: ["ASan reference", "AddressSanitizer reference", "Address S
 
 The sections in this article describe the AddressSanitizer language specification, compiler options, and linker options. They also describe the options that control Visual Studio debugger integration specific to the AddressSanitizer.
 
-For more information on the AddressSanitizer runtime, intercepted functions, and how to hook custom allocators, see the [runtime reference](./asan-runtime.md). For more information on saving crash dumps from AddressSanitizer failures, see the [crash dump reference](./asan-offline-crash-dumps.md).
+For more information on the AddressSanitizer runtime, see the [runtime reference](./asan-runtime.md). It includes information on intercepted functions and how to hook custom allocators. For more information on saving crash dumps from AddressSanitizer failures, see the [crash dump reference](./asan-offline-crash-dumps.md).
 
 ## Language specification
 
@@ -64,7 +64,7 @@ For examples of code that demonstrates several kinds of error detection, see [Ad
 
 ### `/fsanitize=fuzzer` compiler option (experimental)
 
-The [`/fsanitize=fuzzer`](../build/reference/fsanitize.md) compiler option adds LibFuzzer to the default library list. It also sets the following sanitizer coverage options:
+The [`/fsanitize=fuzzer`](../build/reference/fsanitize.md) compiler option adds [LibFuzzer](https://releases.llvm.org/3.8.0/docs/LibFuzzer.html) to the default library list. It also sets the following sanitizer coverage options:
 
 - [Edge instrumentation points (**`/fsanitize-coverage=edge`**)](../build/reference/fsanitize-coverage.md),
 - [inline 8-bit counters (**`/fsanitize-coverage=inline-8bit-counters`**)](../build/reference/fsanitize-coverage.md),
@@ -82,7 +82,7 @@ These libraries are added to the default library list when you specify **`/fsani
 | **`/MTd`** | *`clang_rt.fuzzer_MTd-{arch}`* |
 | **`/MDd`** | *`clang_rt.fuzzer_MDd-{arch}`* |
 
-LibFuzzer libraries that omit the **`main`** function are also available. It's your responsibility to define **`main`** and to call **`LLVMFuzzerInitialize`** and **`LLVMFuzzerTestOneInput`** when you use these libraries. If you wish to do this, specify [`/NODEFAULTLIB`](../build/reference/nodefaultlib-ignore-libraries.md) and explicitly link with the library below that corresponds to your runtime:
+LibFuzzer libraries that omit the **`main`** function are also available. It's your responsibility to define **`main`** and to call **`LLVMFuzzerInitialize`** and **`LLVMFuzzerTestOneInput`** when you use these libraries. To use one of these libraries, specify [`/NODEFAULTLIB`](../build/reference/nodefaultlib-ignore-libraries.md) and explicitly link with the library below that corresponds to your runtime and architecture:
 
 | Runtime option | LibFuzzer no_main library |
 |--|--|
@@ -90,6 +90,8 @@ LibFuzzer libraries that omit the **`main`** function are also available. It's y
 | **`/MD`** | *`clang_rt.fuzzer_no_main_MD-{arch}`* |
 | **`/MTd`** | *`clang_rt.fuzzer_no_main_MTd-{arch}`* |
 | **`/MDd`** | *`clang_rt.fuzzer_no_main_MDd-{arch}`* |
+
+If you specify **`/NODEFAULTLIB`** and you don't specify one of these libraries, you'll get an unresolved external symbol link error.
 
 ### `/fsanitize-address-use-after-return` compiler option (experimental)
 
