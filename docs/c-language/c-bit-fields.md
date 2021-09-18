@@ -56,15 +56,16 @@ struct mybitfields
     unsigned short c : 7;
 } test;
 
-int main( void );
+int main( void )
 {
     test.a = 2;
     test.b = 31;
     test.c = 0;
+    return 0;
 }
 ```
 
-the bits would be arranged as follows:
+the bits of `test` would be arranged as follows:
 
 ```
 00000001 11110010
