@@ -73,6 +73,20 @@ cccccccb bbbbaaaa
 
 Since the 8086 family of processors stores the low byte of integer values before the high byte, the integer `0x01F2` above would be stored in physical memory as `0xF2` followed by `0x01`.
 
+The ISO C99 standard lets an implementation choose whether a bit field may straddle two storage instances. Consider this structure, which stores four bit fields that total 64 bits:
+
+```C
+struct
+{
+    unsigned int first : 9;
+    unsigned int second : 7;
+    unsigned int may_straddle : 30;
+    unsigned int last : 18;
+} tricky_bits;
+```
+
+A standard C implementation could pack these bit fields into two 32-bit integers. It might store `tricky_bits.may_straddle` as 16 bits in one 32-bit integer and 14 bits in the next 32-bit integer. The Windows ABI convention packs bit fields into single storage integers, and doesn't straddle storage units. The Microsoft compiler stores each bit field in the above example so it fits completely in a single 32-bit integer. In this case, `first` and `second` are stored in one integer, `may_straddle` is stored in a second integer, and `last` is stored in a third integer. The `sizeof` operator returns `12` on an instance of `tricky_bits`. For more information, see [Padding and alignment of structure members](padding-and-alignment-of-structure-members.md).
+
 **END Microsoft Specific**
 
 ## See also
