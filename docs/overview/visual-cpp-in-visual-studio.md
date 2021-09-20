@@ -12,9 +12,7 @@ helpviewer_keywords: ["Visual C++, home page"]
 > [!NOTE]
 > This developer documentation applies to Visual Studio 2019. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 >
-> If you're looking for a Microsoft Visual C++ 2019 redistributable package so that you can run a program, go to the Microsoft Visual Studio site's [Downloads](https://visualstudio.microsoft.com/downloads/) page. Under **All Downloads**, expand the **Other Tools, Frameworks, and Redistributables** section. Select your target architecture, then choose the **Download** button.
->
-> For older redistributables, open the [Older downloads](https://visualstudio.microsoft.com/vs/older-downloads/) page. Expand the **Other Tools, Frameworks, and Redistributables** section. Find the redistributable version you want to download, select your target architecture, then choose the **Download** button.
+> If you're looking for a Microsoft Visual C++ Redistributable package so that you can run a program, see the 
 
 :::moniker-end
 
