@@ -48,7 +48,7 @@ Bit fields defined as **`int`** are treated as **`signed`**. A Microsoft extensi
 
 Bit fields are allocated within an integer from least-significant to most-significant bit. In the following code
 
-```
+```C
 struct mybitfields
 {
     unsigned short a : 4;
@@ -56,15 +56,16 @@ struct mybitfields
     unsigned short c : 7;
 } test;
 
-int main( void );
+int main( void )
 {
     test.a = 2;
     test.b = 31;
     test.c = 0;
+    return 0;
 }
 ```
 
-the bits would be arranged as follows:
+the bits of `test` would be arranged as follows:
 
 ```
 00000001 11110010
