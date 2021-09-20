@@ -12,7 +12,7 @@ helpviewer_keywords: ["Visual C++, home page"]
 > [!NOTE]
 > This developer documentation applies to Visual Studio 2019. To see the documentation for your preferred version of Visual Studio, use the **Version** selector control. It's found at the top of the table of contents on this page.
 >
-> If you're looking for a Microsoft Visual C++ Redistributable package so that you can run a program, see the 
+> If you're looking for a Microsoft Visual C++ Redistributable package so that you can run a program, see the [latest supported Visual C++ downloads](../windows/latest-supported-vc-redist.md).
 
 :::moniker-end
 
