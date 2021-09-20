@@ -15,13 +15,13 @@ These macros control specific compiler features.
 |[_ATL_ALL_WARNINGS](#_atl_all_warnings)|A symbol that enables errors in projects converted from previous versions of ATL.|
 |[_ATL_APARTMENT_THREADED](#_atl_apartment_threaded)|Define if one or more of your objects use apartment threading.|
 |[_ATL_CSTRING_EXPLICIT_CONSTRUCTORS](#_atl_cstring_explicit_constructors)|Makes certain `CString` constructors explicit, preventing any unintentional conversions.|
-|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Define this macro in order to use C++ standard compliant syntax, which generates the C4867 compiler error when a non-standard syntax is used to initialize a pointer to a member function.|
+|[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning)|Define this macro to require C++ standard syntax. It generates the C4867 compiler error when non-standard syntax is used to initialize a pointer to a member function.|
 |[_ATL_FREE_THREADED](#_atl_free_threaded)|Define if one or more of your objects use free or neutral threading.|
 |[_ATL_MULTI_THREADED](#_atl_multi_threaded)|A symbol that indicates the project will have objects that are marked as Both, Free or Neutral. The macro [_ATL_FREE_THREADED](#_atl_free_threaded) should be used instead.|
 |[_ATL_NO_AUTOMATIC_NAMESPACE](#_atl_no_automatic_namespace)|A symbol that prevents the default use of namespace as ATL.|
 |[_ATL_NO_COM_SUPPORT](#_atl_no_com_support)|A symbol that prevents COM-related code from being compiled with your project.|
 |[ATL_NO_VTABLE](#atl_no_vtable)|A symbol that prevents the vtable pointer from being initialized in the class's constructor and destructor.|
-|[ATL_NOINLINE](#atl_noinline)|A symbol that indicates a function should not be inlined.|
+|[ATL_NOINLINE](#atl_noinline)|A symbol that indicates a function shouldn't be inlined.|
 |[_ATL_SINGLE_THREADED](#_atl_single_threaded)|Define if all of your objects use the single threading model.|
 
 ## <a name="_atl_all_warnings"></a> _ATL_ALL_WARNINGS
@@ -56,7 +56,7 @@ By adding the following line to the *pch.h* (*stdafx.h* in Visual Studio 2017 an
 
 [!code-cpp[NVC_ATL_Utilities#97](../../atl/codesnippet/cpp/compiler-options-macros_1.h)]
 
-If this `#define` is added, the ATL headers are careful to preserve the state of these warnings so that they are not disabled globally (or if the user explicitly disables individual warnings, not to enable them).
+If this `#define` is added, the ATL headers are careful to preserve the state of these warnings so that they're not disabled globally (or if the user explicitly disables individual warnings, not to enable them).
 
 New projects have this `#define` set in *pch.h* (*stdafx.h* in Visual Studio 2017 and earlier) by default.
 
@@ -70,13 +70,13 @@ _ATL_APARTMENT_THREADED
 
 ### Remarks
 
-Specifies apartment threading. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.
+Specifies apartment threading.  For other options, and a description of the threading models available for an ATL object, see [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md).
 
 ## <a name="_atl_cstring_explicit_constructors"></a> _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
 
 Makes certain `CString` constructors explicit, preventing any unintentional conversions.
 
-```
+```cpp
 _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
 ```
 
@@ -88,19 +88,19 @@ By using the _T macro on all constructor string arguments, you can define _ATL_C
 
 ## <a name="_atl_enable_ptm_warning"></a> _ATL_ENABLE_PTM_WARNING
 
-Define this macro in order to force the use of ANSI C++ standard-compliant syntax for pointer to member functions. Using this macro will cause the C4867 compiler error to be generated when non-standard syntax is used to initialize a pointer to a member function.
+Define this macro in order to force the use of ANSI C++ standard-conforming syntax for pointer to member functions. Using this macro will cause the C4867 compiler error to be generated when non-standard syntax is used to initialize a pointer to a member function.
 
-```
+```cpp
 #define _ATL_ENABLE_PTM_WARNING
 ```
 
 ### Remarks
 
-The ATL and MFC libraries have been changed to match the Microsoft C++ compiler's improved standard C++ compliance. According to the ANSI C++ standard, the syntax of a pointer to a class member function should be `&CMyClass::MyFunc`.
+The ATL and MFC libraries have been changed to match the Microsoft C++ compiler's improved standard C++ conformance. According to the ANSI C++ standard, the syntax of a pointer to a class member function should be `&CMyClass::MyFunc`.
 
-When [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) is not defined (the default case), ATL/MFC disables the C4867 error in macro maps (notably message maps) so that code that was created in earlier versions can continue to build as before. If you define **_ATL_ENABLE_PTM_WARNING**, your code should be C++ standard compliant.
+When [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) is not defined (the default case), ATL/MFC disables the C4867 error in macro maps (notably message maps) so that code that was created in earlier versions can continue to build as before. If you define **_ATL_ENABLE_PTM_WARNING**, your code should conform to the C++ standard.
 
-However, the non-standard form has been deprecated. You need to move existing code to C++ standard compliant syntax. For example, the following code:
+However, the non-standard form has been deprecated. You need to move existing code to C++ standard syntax. For example, the following code:
 
 [!code-cpp[NVC_MFCListView#14](../../atl/reference/codesnippet/cpp/compiler-options-macros_2.cpp)]
 

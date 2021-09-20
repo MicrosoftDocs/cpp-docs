@@ -38,11 +38,11 @@ Although the processor does not reorder un-cacheable memory accesses, un-cacheab
 
 Objects that are declared as **`volatile`** are not used in certain optimizations because their values can change at any time.  The system always reads the current value of a volatile object when it is requested, even if a previous instruction asked for a value from the same object.  Also, the value of the object is written immediately on assignment.
 
-## ISO Compliant
+## ISO conformant
 
 If you are familiar with the C# volatile keyword, or familiar with the behavior of **`volatile`** in earlier versions of the Microsoft C++ compiler (MSVC), be aware that the C++11 ISO Standard **`volatile`** keyword is different and is supported in MSVC when the [/volatile:iso](../build/reference/volatile-volatile-keyword-interpretation.md) compiler option is specified. (For ARM, it's specified by default). The **`volatile`** keyword in C++11 ISO Standard code is to be used only for hardware access; do not use it for inter-thread communication. For inter-thread communication, use mechanisms such as [std::atomic\<T>](../standard-library/atomic.md) from the [C++ Standard Library](../standard-library/cpp-standard-library-reference.md).
 
-## End of ISO Compliant
+## End of ISO conformant
 
 **Microsoft Specific**
 

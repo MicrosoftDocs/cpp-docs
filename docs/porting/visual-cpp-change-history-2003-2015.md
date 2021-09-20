@@ -425,7 +425,7 @@ Although these differences can affect your source code or other build artifacts,
     Command line warning  D9035: option 'Zc:forScope-' has been deprecated and will be removed in a future release
     ```
 
-   Usually, this option was used in order to allow nonstandard code that uses loop variables after the point where, according to the standard, they should have gone out of scope. It was only necessary when you compiled with the `/Za` option, since without `/Za`, use of a for loop variable after the end of the loop is always allowed. If you don't care about standards conformance (for example, if your code isn't meant to portable to other compilers), you could turn off the `/Za` option (or set the **Disable Language Extensions** property to **No**). If you do care about writing portable, standards-compliant code, you should rewrite your code so that it conforms to the standard by moving the declaration of such variables to a point outside the loop.
+   Usually, this option was used in order to allow nonstandard code that uses loop variables after the point where, according to the standard, they should have gone out of scope. It was only necessary when you compiled with the `/Za` option, since without `/Za`, use of a for loop variable after the end of the loop is always allowed. If you don't care about standards conformance (for example, if your code isn't meant to portable to other compilers), you could turn off the `/Za` option (or set the **Disable Language Extensions** property to **No**). If you do care about writing portable, standards-conformant code, you should rewrite your code so that it conforms to the standard by moving the declaration of such variables to a point outside the loop.
 
     ```cpp
     // C2065 expected
@@ -1161,7 +1161,7 @@ Although these differences can affect your source code or other build artifacts,
 
    In the example above, `MACRO` is no longer parsed as two tokens (a string followed by a macro). Now it's parsed as a single token UDL. The same applies to L""L"", which was parsed previously as L"" and L"", and is now parsed as L""L and "".
 
-   String concatenation rules were also brought into compliance with the standard, which means L"a" "b" is equivalent to L"ab". Previous editions of Visual Studio did not accept concatenation of strings with different character width.
+   String concatenation rules were also brought into conformance with the standard, which means L"a" "b" is equivalent to L"ab". Previous editions of Visual Studio did not accept concatenation of strings with different character width.
 
 - **C++11 empty character removed**
 
@@ -2791,7 +2791,7 @@ Although these differences can affect your source code or other build artifacts,
     }
     ```
 
-- Before the compiler was made compliant with ISO C++11, the following code would have compiled and caused `x` to resolve to type **`int`**:
+- Before the compiler conformed to ISO C++11, the following code would have compiled and caused `x` to resolve to type **`int`**:
 
     ```cpp
     auto x = {0};
@@ -2942,9 +2942,9 @@ The C++ compiler in Visual Studio 2013 detects mismatches in _ITERATOR_DEBUG_LEV
 
 - The C++ Standard Library doesn't support `/clr:oldSyntax`.
 
-- The C++11 specification for common_type<> had unexpected and undesired consequences; in particular, it makes common_type\<int, int>::type return int&&. Therefore, the compiler implements the Proposed Resolution for Library Working Group issue 2141, which makes common_type\<int, int="">::type return int.
+- The C++11 specification for `common_type<>` had unexpected and undesired consequences; in particular, it makes `common_type<int, int>::type` return `int&&`. Therefore, the compiler implements the Proposed Resolution for Library Working Group issue 2141, which makes `common_type<int, int="">::type` return `int`.
 
-   As a side-effect of this change, the identity case no longer works (common_type\<T> doesn't always result in type T). This behavior complies with the Proposed Resolution, but it breaks any code that relied on the previous behavior.
+   As a side-effect of this change, the identity case no longer works (`common_type<T>` doesn't always result in type `T`). This behavior conforms to the Proposed Resolution, but it breaks any code that relied on the previous behavior.
 
    If you require an identity type trait, don't use the non-standard `std::identity` that's defined in \<type_traits> because it won't work for \<void>. Instead, implement your own identity type trait to suit your needs. Here's an example:
 
@@ -2996,7 +2996,7 @@ The C++ compiler in Visual Studio 2013 detects mismatches in _ITERATOR_DEBUG_LEV
 
 - In code that's compiled by using `/clr`, the **`enum`** class keyword defines a C++11 enum, not a common language runtime (CLR) enum. To define a CLR enum, you must be explicit about its accessibility.
 
-- Use the template keyword to explicitly disambiguate a dependent name (C++ Language Standard compliance). In the following example, the highlighted template keyword is mandatory to resolve the ambiguity. For more information, see [Name Resolution for Dependent Types](../cpp/name-resolution-for-dependent-types.md).
+- Use the template keyword to explicitly disambiguate a dependent name (C++ Language Standard conformance). In the following example, the highlighted template keyword is mandatory to resolve the ambiguity. For more information, see [Name Resolution for Dependent Types](../cpp/name-resolution-for-dependent-types.md).
 
     ```cpp
     template < typename X = "", typename = "" AY = "">

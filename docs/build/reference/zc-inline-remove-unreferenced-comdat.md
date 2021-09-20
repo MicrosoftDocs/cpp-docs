@@ -22,9 +22,9 @@ By default, this option is off (**/Zc:inline-**) in command-line builds. The [/p
 
 If **/Zc:inline** is specified, the compiler enforces the C++11 requirement that all functions declared **`inline`** must have a definition available in the same translation unit if they are used. When the option is not specified, the Microsoft compiler allows non-conformant code that invokes functions declared **`inline`** even if no definition is visible. For more information, see the C++11 standard, in section 3.2 and section 7.1.2. This compiler option was introduced in Visual Studio 2013 Update 2.
 
-To use the **/Zc:inline** option, update non-compliant code.
+To use the **/Zc:inline** option, update non-conforming code.
 
-This example shows how the non-compliant use of an inline function declaration without a definition still compiles and links when the default **/Zc:inline-** option is used:
+This example shows how the non-conforming use of an inline function declaration without a definition still compiles and links when the default **/Zc:inline-** option is used:
 
 ```cpp
 // example.h
