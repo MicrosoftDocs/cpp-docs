@@ -73,17 +73,19 @@ cccccccb bbbbaaaa
 
 Since the 8086 family of processors stores the low byte of integer values before the high byte, the integer `0x01F2` above would be stored in physical memory as `0xF2` followed by `0x01`.
 
-According to the ISO/IEC 9899:1999 standard for C, also known as C99, an implementation may choose whether a bit field "straddles" two storage instances. Consider the following structure:
-```
+The ISO C99 standard lets an implementation choose whether a bit field may straddle two storage instances. Consider this structure, which stores four bit fields that total 64 bits:
+
+```C
 struct
 {
     unsigned int first : 9;
+    unsigned int second : 7;
     unsigned int may_straddle : 30;
-    unsigned int last : 25;
+    unsigned int last : 18;
 } tricky_bits;
 ```
 
-For an application binary interface where **`unsigned int`** is a 32-bit integer, a standard C implementation could decide to maximally pack these bit fields into two 32-bit integers, even though that would store `tricky_bits.may_straddle` as 23 bits in one 32-bit integer and 7 bits in the next 32-bit integer. For Windows-supported architectures, including 32-bit x86, 64-bit x86, ARM, and ARM64, the ABI convention is to place a bit field into a single storage integer. The Microsoft C/C++ Optimizing Compiler included with the Visual C++ toolset (MSVC) follows this convention, and will store each bit field in the above example in its own 32-bit integer, selecting three 32-bit integers. Using the `sizeof` operator on an instance of `tricky_bits` will return `12`.
+A standard C implementation could pack these bit fields into two 32-bit integers. It might store `tricky_bits.may_straddle` as 16 bits in one 32-bit integer and 14 bits in the next 32-bit integer. The Windows ABI convention packs bit fields into single storage integers, and doesn't straddle storage units. The Microsoft compiler stores each bit field in the above example so it fits completely in a single 32-bit integer. In this case, `first` and `second` are stored in one integer, `may_straddle` is stored in a second integer, and `last` is stored in a third integer. The `sizeof` operator returns `12` on an instance of `tricky_bits`. For more information, see [Padding and alignment of structure members](padding-and-alignment-of-structure-members.md).
 
 **END Microsoft Specific**
 
