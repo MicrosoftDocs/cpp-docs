@@ -3,6 +3,7 @@ title: Install C11 and C17 support in Visual Studio
 description: "Install Windows SDK and CRT support for C11 and C17 in Visual Studio"
 ms.date: 06/29/2021
 helpviewer_keywords: ["Install Windows SDK support for C"]
+ms.custom: intro-installation
 ---
 # Install C11 and C17 support in Visual Studio
 

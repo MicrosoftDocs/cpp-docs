@@ -61,7 +61,7 @@ Linux support is available in Visual Studio 2017 and later.
 |--|--|--|
 | Position Independent Code | Generates position-independent code (PIC) for use in a shared library. |
 | Statics are thread safe | Emits extra code to use routines specified in the C++ ABI for thread-safe initialization of local statics. | **No** - Disable thread-safe statics.<br/>**Yes** - Enable thread-safe statics. |
-| Floating Point Optimization | Enables floating-point optimizations by relaxing IEEE-754 compliance. |
+| Floating Point Optimization | Enables floating-point optimizations by relaxing IEEE-754 conformance. |
 | Inline Methods Hidden | When enabled, out-of-line copies of inline methods are declared `private extern`. |
 | Symbols Hidden By Default | All symbols are declared `private extern` unless explicitly marked for export by using the `__attribute` macro. |
 | Enable C++ Exceptions | Specifies the exception-handling model used by the compiler. | **No** - Disable exception handling.<br/>**Yes** - Enable exception handling. |

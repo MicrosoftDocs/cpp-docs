@@ -38,7 +38,7 @@ In code that is not compiled for C++17 or later standards, nested namespaces mus
 namespace a::b {int i;}   // C2653 prior to Visual Studio 2015 Update 3,
                           // C2429 thereafter. Use /std:c++17 or /std:c++latest to fix.
 
-namespace a {             // Use this form for compliant code under /std:c++14 (the default)
+namespace a {             // Use this form for conformant code under /std:c++14 (the default)
    namespace b {          // or when using compilers before Visual Studio 2015 update 3.
       int i;
    }

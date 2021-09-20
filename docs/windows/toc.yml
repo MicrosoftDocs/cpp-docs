@@ -146,6 +146,8 @@
           href: ../windows/redistributing-the-mfc-library.md
         - name: Redistribute an ATL application
           href: ../windows/redistributing-an-atl-application.md
+        - name: Latest Supported Visual C++ Redistributable Downloads
+          href: ../windows/latest-supported-vc-redist.md
     - name: Deployment examples
       expanded: false
       items: 

@@ -1,7 +1,7 @@
 ---
 title: "C++ binary compatibility 2015-2019"
 description: "Describes how binary compatibility works between compiled C++ files in Visual Studio 2015, 2017, and 2019. One Microsoft Visual C++ Redistributable package works for all three versions."
-ms.date: 02/17/2021
+ms.date: 09/17/2021
 helpviewer_keywords: ["binary compatibility, Visual C++"]
 ---
 # C++ binary compatibility between Visual Studio 2015, 2017, and 2019
@@ -12,9 +12,9 @@ We've changed this behavior in Visual Studio 2015, 2017, and 2019. The runtime l
 
 ## <a name="restrictions"></a> Restrictions on binary compatibility
 
-There are three important restrictions on binary compatibility between the the v140, v141, and v142 toolsets and minor numbered version updates:
+There are three important restrictions on binary compatibility between the v140, v141, and v142 toolsets and minor numbered version updates:
 
-- You can mix binaries built by different versions of the v140, v141, and v142 toolsets. However, you must link by using a toolset at least as recent as the most recent binary in your app. Here's an example: you can link an app compiled using any 2017 toolset (v141, versions 15.0 through 15.9) to a static library compiled using, say, Visual Studio 2019 version 16.2 (v142), if they're linked using a version 16.2 or later toolset. You can link a version 16.2 library to a version 16.4 app as long as you use a 16.4 or later toolset.
+- You can mix binaries built by different versions of the v140, v141, and v142 toolsets. However, you must link by using a toolset at least as recent as the most recent binary in your app. Here's an example: you can link an app compiled using any 2017 toolset (v141, versions 15.0 through 15.9) to a static library compiled using, say, Visual Studio 2019 version 16.2 (v142). You just have to link them by using a version 16.2 or later toolset. You can link a version 16.2 library to a version 16.4 app as long as you use a 16.4 or later toolset.
 
 - The Redistributable your app uses has a similar binary-compatibility restriction. When you mix binaries built by different supported versions of the toolset, the Redistributable version must be at least as new as the latest toolset used by any app component.
 
@@ -32,7 +32,10 @@ Similarly, you can't install an older Redistributable when a newer version is al
 
 This error is by design. We recommend you keep the newest version installed. Make sure your installer can recover from this error silently.
 
+> [!IMPORTANT]
+> Runtime library support for Windows XP is no longer available in the latest Visual C++ Redistributable for Visual Studio 2015, 2017, and 2019. The last redistributable to support Windows XP is version 16.7 (file version 14.27.29114.0). If your Windows XP apps are deployed with or updated to a later version of the redistributable, the apps won't run. For more information, and how to get a version of the redistributable that supports Windows XP, see [Configuring programs for Windows XP](../build/configuring-programs-for-windows-xp.md).
+
 ## See also
 
 [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md)\
-[The latest supported Visual C++ Redistributable downloads](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
+[The latest supported Visual C++ Redistributable downloads](../windows/latest-supported-vc-redist.md)

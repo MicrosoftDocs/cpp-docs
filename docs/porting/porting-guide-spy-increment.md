@@ -650,7 +650,7 @@ The above code produces the error:
 'n': undeclared identifier
 ```
 
-This occurs because the compiler has deprecated a compiler option that allowed code that no longer complies with the C++ standard. In the standard, declaring a variable inside a loop restricts its scope to the loop only, so the common practice of using a loop counter outside of the loop requires that the declaration of the counter also be moved outside the loop, as in the following revised code:
+This occurs because the compiler has deprecated a compiler option that allowed code that no longer conforms to the C++ standard. In the standard, declaring a variable inside a loop restricts its scope to the loop only, so the common practice of using a loop counter outside of the loop requires that the declaration of the counter also be moved outside the loop, as in the following revised code:
 
 ```cpp
 int CPerfTextDataBase::NumStrings(LPCTSTR mszStrings) const
