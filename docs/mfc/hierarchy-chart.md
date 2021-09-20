@@ -1,25 +1,25 @@
 ---
-description: "Learn more about: Hierarchy Chart"
-title: "Hierarchy Chart"
-ms.date: "11/19/2018"
+description: "See the MFC class hierarchy in chart form."
+title: "MFC class hierarchy chart"
+ms.date: 09/10/2021
 helpviewer_keywords: ["object models, MFC", "classes [MFC], MFC hierarchy", "MFC, object model"]
 ms.assetid: 19d70341-e391-4a72-94c6-35755ce975d4
 ---
-# Hierarchy Chart
+# MFC class hierarchy chart
 
 The following illustration represents the MFC classes derived from `CObject`:
 
-![Classes Derived From CObject.](../mfc/media/mfc_hierarchy_chart1of3.png  "Classes Derived From CObject")
+:::image type="content" source="../mfc/media/mfc-hierarchy-chart-part-1-of-3.png" alt-text="Chart that lists the MFC classes derived from CObject.":::
 
 The following illustration represents the MFC classes derived from `CWnd` and `CCmdTarget`:
 
-![Classes Derived From CCmdTarget or CWnd.](../mfc/media/mfc_hierarchy_chart2of3.png "Classes Derived From CCmdTarget or CWnd")
+:::image type="content" source="../mfc/media/mfc-hierarchy-chart-part-2-of-3.png" alt-text="Chart that lists the MFC classes derived from CCmdTarget or CWnd.":::
 
 The following illustration represents the MFC classes not derived from `CObject`:
 
-![Classes Not Derived From CObject.](../mfc/media/mfc_hierarchy_chart3of3.png "Classes Not Derived From CObject")
+:::image type="content" source="../mfc/media/mfc-hierarchy-chart-part-3-of-3.png" alt-text="Chart that lists the MFC classes that aren't derived from CObject.":::
 
-You can download the complete chart from the following location: [MFC Hierarchy Charts Download](https://aka.ms/hxgg8e).
+You can download the complete chart from this location: [MFC Hierarchy Charts Download](https://aka.ms/hxgg8e).
 
 ## See also
 

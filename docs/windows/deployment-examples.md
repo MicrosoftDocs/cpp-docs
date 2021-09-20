@@ -4,6 +4,7 @@ title: "Deployment Examples"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["application deployment [C++], examples", "deploying applications [C++], examples", "examples [C++], deployment"]
 ms.assetid: a2904fea-2703-48dc-881b-5bfc1f11b67f
+ms.custom: intro-deployment
 ---
 # Deployment Examples
 

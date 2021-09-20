@@ -4,6 +4,7 @@ title: "Deployment Concepts"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Windows Installer [C++]", "dependencies [C++], application deployment and", "application deployment [C++], about application deployment", "deploying applications [C++], about deploying applications", "libraries [C++], application deployment issues"]
 ms.assetid: ebd7f246-ab54-40e8-87fa-dac02c0047b3
+ms.custom: intro-deployment
 ---
 # Deployment Concepts
 

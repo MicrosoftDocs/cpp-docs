@@ -36,7 +36,7 @@ If you are upgrading to Visual Studio 2010 from a version prior to Visual Studio
 
 ### Upgrading from Visual Studio 2003
 
-Projects previous built with Visual Studio 2003 should also first be compiled without **/clr** as Visual Studio now has increased ANSI/ISO compliance and some breaking changes. The change that is likely to require the most attention is [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md). Code that uses the CRT is very likely to produce deprecation warnings. These warnings can be suppressed, but migrating to the new [Security-Enhanced Versions of CRT Functions](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) is preferred, as they provide better security and may reveal security issues in your code.
+Projects previous built with Visual Studio 2003 should also first be compiled without **/clr** as Visual Studio now has increased ANSI/ISO conformance and some breaking changes. The change that is likely to require the most attention is [Security Features in the CRT](../c-runtime-library/security-features-in-the-crt.md). Code that uses the CRT is very likely to produce deprecation warnings. These warnings can be suppressed, but migrating to the new [Security-Enhanced Versions of CRT Functions](../c-runtime-library/security-enhanced-versions-of-crt-functions.md) is preferred, as they provide better security and may reveal security issues in your code.
 
 ### Upgrading from Managed Extensions for C++
 

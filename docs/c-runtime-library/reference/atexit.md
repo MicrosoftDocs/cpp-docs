@@ -37,7 +37,7 @@ The **atexit** function is passed the address of a function *func* to be called 
 
 The code in the **atexit** function should not contain any dependency on any DLL which could have already been unloaded when the **atexit** function is called.
 
-To generate an ANSI-compliant application, use the ANSI-standard **atexit** function (rather than the similar **_onexit** function).
+To generate an ANSI-conformant application, use the ANSI-standard **atexit** function (rather than the similar **_onexit** function).
 
 ## Requirements
 

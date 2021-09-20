@@ -1,14 +1,14 @@
 ---
 description: "Learn more about: domain_error Class"
 title: "domain_error Class"
-ms.date: "11/04/2016"
+ms.date: "09/09/2021"
 f1_keywords: ["stdexcept/std::domain_error"]
 helpviewer_keywords: ["domain_error class"]
 ms.assetid: a1d8245d-61c2-4d1e-973f-073bd5dd5fa3
 ---
 # domain_error Class
 
-The class serves as the base class for all exceptions thrown to report a domain error.
+The class serves as the base class for all exceptions thrown to report a domain error (as in mathematics, not networking).
 
 ## Syntax
 
@@ -26,26 +26,30 @@ public:
 
 The value returned by `what()` is a copy of `message.data()`. For more information, see [`what`](../standard-library/exception-class.md) and [`data`](../standard-library/basic-string-class.md#data).
 
+`domain_error` isn't thrown by any functions in the Microsoft implementation of the C++ Standard Library, but it might be thrown by third-party libraries or user code.
+
 ## Example
 
 ```cpp
 // domain_error.cpp
-// compile with: /EHsc /GR
+// compile with: /EHsc
+#include <exception>
 #include <iostream>
-
+#include <stdexcept>
+#include <typeinfo>
 using namespace std;
 
-int main( )
+int main()
 {
    try
    {
-      throw domain_error( "Your domain is in error!" );
+      throw domain_error("Your domain is in error!");
    }
-   catch (exception &e)
+   catch (const exception& e)
    {
-      cerr << "Caught: " << e.what( ) << endl;
-      cerr << "Type: " << typeid(e).name( ) << endl;
-   };
+      cerr << "Caught: " << e.what() << endl;
+      cerr << "Type: " << typeid(e).name() << endl;
+   }
 }
 /* Output:
 Caught: Your domain is in error!

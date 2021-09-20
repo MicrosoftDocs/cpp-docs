@@ -4,6 +4,7 @@ description: "Upgrade Microsoft C++ code to the latest version of Visual Studio.
 ms.date: 09/10/2020
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
 ms.topic: "overview"
+ms.custom: intro-overview
 ---
 # Microsoft C++ porting and upgrading guide
 

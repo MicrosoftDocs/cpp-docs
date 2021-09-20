@@ -3,12 +3,13 @@ title: Linux development with C++ | Create and debug applications for Linux # < 
 summary: Use C++ in Visual Studio 2017 and later to create and debug applications for Linux. # < 160 chars
 
 metadata:
-  title: Linux development with C++ # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Linux development with C++
   description: Learn how to use C++ in Visual Studio 2017 and later to create and debug applications for Linux.
   ms.topic: landing-page
   author: corob-msft
   ms.author: corob
   ms.date: 04/26/2020
+  ms.custom: intro-landing-hub
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

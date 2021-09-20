@@ -930,7 +930,7 @@ void f(T (&buffer)[Size], int& size_read)
 
 ### User-provided specializations of type traits
 
-In compliance with the *meta.rqmts* subclause of the Standard, the MSVC compiler now raises an error when it finds a user-defined specialization of one of the specified `type_traits` templates in the `std` namespace. Unless otherwise specified, such specializations result in undefined behavior. The following example has undefined behavior because it violates the rule, and the **`static_assert`** fails with error C2338.
+In conformance with the *meta.rqmts* subclause of the Standard, the MSVC compiler now raises an error when it finds a user-defined specialization of one of the specified `type_traits` templates in the `std` namespace. Unless otherwise specified, such specializations result in undefined behavior. The following example has undefined behavior because it violates the rule, and the **`static_assert`** fails with error C2338.
 
 ```cpp
 #include <type_traits>

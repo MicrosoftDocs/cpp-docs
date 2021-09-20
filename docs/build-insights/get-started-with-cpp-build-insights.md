@@ -3,6 +3,7 @@ title: "Get started with C++ Build Insights"
 description: "A high-level overview of C++ Build Insights."
 ms.date: "11/03/2019"
 helpviewer_keywords: ["C++ Build Insights", "throughput analysis", "build time analysis", "vcperf.exe"]
+ms.custom: intro-get-started
 ---
 # Get started with C++ Build Insights
 
