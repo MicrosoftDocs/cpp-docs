@@ -3,6 +3,7 @@ title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio 2019."
 ms.date: 03/03/2021
 ms.technology: "cpp-ide"
+ms.custom: intro-whats-new
 ---
 # What's new for C++ in Visual Studio
 

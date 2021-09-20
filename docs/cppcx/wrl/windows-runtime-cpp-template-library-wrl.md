@@ -4,6 +4,7 @@ title: "Windows Runtime C++ Template Library (WRL)"
 ms.date: "11/04/2016"
 ms.topic: "overview"
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
+ms.custom: intro-overview
 ---
 # Windows Runtime C++ Template Library (WRL)
 

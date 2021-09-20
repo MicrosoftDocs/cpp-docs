@@ -3,12 +3,13 @@ title: C/C++ Sanitizers | Instrument code for runtime bug detection # < 60 chars
 summary: Use C and C++ sanitizers for defect reporting, analysis, and prevention. # < 160 chars
 
 metadata:
-  title: C/C++ Sanitizers # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: C/C++ Sanitizers
   description: Learn how to use sanitizers for defect reporting, analysis, and prevention.
   ms.topic: landing-page
   author: corob-msft
   ms.author: corob
   ms.date: 02/26/2021
+  ms.custom: intro-landing-hub
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

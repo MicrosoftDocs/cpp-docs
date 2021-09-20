@@ -4,6 +4,7 @@ title: "Migrating from OpenMP to the Concurrency Runtime"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["Concurrency Runtime, migrating from OpenMP", "OpenMP, migrating to the Concurrency Runtime"]
 ms.assetid: 9bab7bb1-e45d-44b2-8509-3b226be2c93b
+ms.custom: intro-migration
 ---
 # Migrating from OpenMP to the Concurrency Runtime
 

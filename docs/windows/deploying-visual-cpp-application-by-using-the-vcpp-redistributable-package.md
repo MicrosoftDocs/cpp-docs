@@ -4,6 +4,7 @@ title: "Deploy an App By Using the Redistributable Package (C++)"
 ms.date: 09/17/2021
 helpviewer_keywords: ["walkthrough, deploying a Visual C++ application by using the redistributable package"]
 ms.assetid: e59becbf-b8c6-4c8e-bab3-b69cc1ed3e5e
+ms.custom: intro-deployment
 ---
 # Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package
 
