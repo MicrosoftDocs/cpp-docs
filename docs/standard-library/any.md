@@ -1,37 +1,40 @@
 ---
-description: "Learn more about: &lt;any&gt;"
+description: "Learn more about the classes and functions declared in the <any> header in the C++ Standard Library."
 title: "&lt;any&gt;"
-ms.date: "04/04/2019"
+ms.date: 09/20/2021
 f1_keywords: ["<any>"]
 helpviewer_keywords: ["<any>"]
+no-loc: ["any", "std", "class"]
 ---
 # &lt;any&gt;
 
-Defines the class any and several supporting functions and classes.
+Defines the class `std::any` and several supporting functions and classes.
 
 ## Requirements
 
 **Header:** \<any>
 
-**Namespace:** std
+**Namespace:** `std`
+
+**Standard:** C++17 (Use at least **`/std:c++17`** to compile.)
 
 ## Members
 
 ### Functions
 
-|Name|Description|
-|-|-|
-|[any_cast](../standard-library/any-functions.md#any_cast)|Makes an object into an any.|
-|[make_any](../standard-library/any-functions.md#make_any)|Takes values and creates an any object.|
-|[swap](../standard-library/any-functions.md#swap)|Exchanges the elements of two objects any.|
+| Name | Description |
+|--|--|
+| [`any_cast`](../standard-library/any-functions.md#any_cast) | Makes an object into an `any`. |
+| [`make_any`](../standard-library/any-functions.md#make_any) | Takes values and creates an `any` object. |
+| [`swap`](../standard-library/any-functions.md#swap) | Exchanges the elements of two `any` objects. |
 
 ### Classes
 
-|Name|Description|
-|-|-|
-|[any](../standard-library/any-class.md)|Stores any type that satisfies the constructor requirements or has no value.|
-|[bad_any_cast](../standard-library/bad-any-cast-class.md)|Objects thrown by a failed `any_cast`.|
+| Name | Description |
+|--|--|
+| [`any`](../standard-library/any-class.md) | An `any` instance either stores a type that satisfies the constructor requirements or has no value. |
+| [`bad_any_cast`](../standard-library/bad-any-cast-class.md) | Objects thrown by a failed `any_cast`. |
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+[Header files reference](../standard-library/cpp-standard-library-header-files.md)
