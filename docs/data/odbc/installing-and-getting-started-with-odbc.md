@@ -4,6 +4,7 @@ title: "Installing and Getting Started with ODBC"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["installing ODBC", "ODBC, installing"]
 ms.assetid: 6b473481-1d68-468f-89f6-82b0fd7716fd
+ms.custom: intro-installation
 ---
 # Installing and Getting Started with ODBC
 

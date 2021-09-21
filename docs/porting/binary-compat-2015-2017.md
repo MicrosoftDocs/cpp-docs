@@ -1,7 +1,7 @@
 ---
 title: "C++ binary compatibility 2015-2019"
 description: "Describes how binary compatibility works between compiled C++ files in Visual Studio 2015, 2017, and 2019. One Microsoft Visual C++ Redistributable package works for all three versions."
-ms.date: 09/08/2021
+ms.date: 09/17/2021
 helpviewer_keywords: ["binary compatibility, Visual C++"]
 ---
 # C++ binary compatibility between Visual Studio 2015, 2017, and 2019
@@ -38,4 +38,4 @@ This error is by design. We recommend you keep the newest version installed. Mak
 ## See also
 
 [Visual C++ change history](../porting/visual-cpp-change-history-2003-2015.md)\
-[The latest supported Visual C++ Redistributable downloads](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
+[The latest supported Visual C++ Redistributable downloads](../windows/latest-supported-vc-redist.md)

@@ -37,7 +37,7 @@ This function currently just returns *mode*.
 
 ## Remarks
 
-The current version of this function does not comply with the Standard.
+The current version of this function doesn't conform to the C Standard.
 
 ## Requirements
 

@@ -4,6 +4,7 @@ title: "What Is a CArchive Object"
 ms.date: "11/04/2016"
 helpviewer_keywords: ["archive objects [MFC]", "archives [MFC], for serialization", "buffers, serializable objects", "CArchive class [MFC], about CArchive class [MFC]", "buffering, serializable objects"]
 ms.assetid: 843f1825-288d-4d89-a1fa-70e1f92d9b8b
+ms.custom: intro-overview
 ---
 # What Is a CArchive Object
 

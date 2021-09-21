@@ -8,6 +8,7 @@ metadata:
   description: Visual Studio includes assemblers and compiler intrinsics for low-level programming tasks.
   ms.topic: landing-page
   ms.date: 05/26/2020
+  ms.custom: intro-landing-hub
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

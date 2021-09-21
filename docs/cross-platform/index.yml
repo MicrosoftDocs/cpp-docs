@@ -3,12 +3,13 @@ title: Mobile Development with C++ | Windows UWP, Android and iOS # < 60 chars
 summary: Create native C++ apps for iOS, Android, and Windows devices with Visual Studio. # < 160 chars
 
 metadata:
-  title: Mobile development with C++ documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Mobile development with C++ documentation
   description: Create native C++ apps for iOS, Android, and Windows devices with Visual Studio.
   ms.topic: landing-page
   author: corob-msft
   ms.author: corob
   ms.date: 05/26/2020
+  ms.custom: intro-landing-hub
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

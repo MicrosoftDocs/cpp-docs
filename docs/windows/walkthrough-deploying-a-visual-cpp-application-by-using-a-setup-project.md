@@ -4,6 +4,7 @@ title: "Deploy a Visual C++ Application By Using a Setup Project"
 ms.date: "04/25/2019"
 helpviewer_keywords: ["deployment for Visual C++"]
 ms.assetid: 66735cda-8fe3-4211-a19a-2cf717a12a3f
+ms.custom: intro-deployment
 ---
 # Walkthrough: Deploying a Visual C++ Application By Using a Setup Project
 
