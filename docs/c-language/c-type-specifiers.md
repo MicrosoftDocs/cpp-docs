@@ -35,7 +35,7 @@ The keyword **`void`** has three uses: to specify a function return type, to spe
 
 **Microsoft Specific**
 
-Type checking is now ANSI-compliant, which means that type **`short`** and type **`int`** are distinct types. For example, this is a redefinition in the Microsoft C compiler that was accepted by previous versions of the compiler.
+Type checking is now ANSI-conforming, which means that type **`short`** and type **`int`** are distinct types. For example, this is a redefinition in the Microsoft C compiler that was accepted by previous versions of the compiler.
 
 ```C
 int   myfunc();

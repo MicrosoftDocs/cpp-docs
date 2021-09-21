@@ -1,18 +1,24 @@
 ---
 title: "Redistributing Visual C++ Files"
 description: "Visual Studio includes redistributable libraries and components you can deploy with your app."
-ms.date: 07/16/2020
+ms.date: 09/17/2021
 helpviewer_keywords: ["application deployment [C++], file redistributing", "redistributing applications [C++]", "deploying applications [C++], file redistributing", "file redistribution [C++]", "redistributing applications [C++], about redistributing applications"]
 ms.assetid: d201b2ce-36f1-44e5-a96c-0db81a1ba652
 ---
 # Redistributing Visual C++ Files
 
 > [!NOTE]
-> Are you here because you're looking for a download of one of the Visual C++ Runtime files? Go to [latest supported Visual C++ downloads](latest-supported-vc-redist.md).
+> Are you here because you're looking for a download of one of the Visual C++ Runtime files? Go to the [Latest supported Visual C++ Redistributable downloads](latest-supported-vc-redist.md) page.
 
 ## Redistributable files and licensing
 
 When you deploy an application, you must also deploy the files that are required to support it. If any of these files are provided by Microsoft, check whether you're permitted to redistribute them. You'll find a link to the Visual Studio license terms in the IDE. Use the License terms link in the About Microsoft Visual Studio dialog box. Or, download the relevant EULAs and licenses from the Visual Studio [License Directory](https://visualstudio.microsoft.com/license-terms/).
+
+::: moniker range="msvc-170"
+
+To view the "REDIST list" that's referenced in the "Distributable Code" section of the Visual Studio 2022 Microsoft Software License Terms, see [Distributable code files for Microsoft Visual Studio 2022](/visualstudio/releases/2022/redistribution#-distributable-code-files-for-visual-studio-2022)
+
+::: moniker-end
 
 ::: moniker range="msvc-160"
 
@@ -36,7 +42,7 @@ For more information about redistributable files, see [Determining which DLLs to
 
 ## Locate the redistributable files
 
-To deploy redistributable files, you can use the redistributable packages installed by Visual Studio. In versions of Visual Studio since 2017, these files are named *`vc_redist.arm64.exe`*, *`vc_redist.x64.exe`*, and *`vc_redist.x86.exe`*. In Visual Studio 2015, Visual Studio 2017, and Visual Studio 2019, they're also available under the names *`vcredist_x86.exe`*, *`vcredist_x64.exe`*, and *`vcredist_arm.exe`* (2015 only).
+To deploy redistributable files, you can use the redistributable packages installed by Visual Studio. In versions of Visual Studio since 2017, these files are named *`vc_redist.arm64.exe`*, *`vc_redist.x64.exe`*, and *`vc_redist.x86.exe`*. In Visual Studio 2015, 2017, 2019, and 2022, they're also available under the names *`vcredist_x86.exe`*, *`vcredist_x64.exe`*, and (2015 only) *`vcredist_arm.exe`*.
 
 The easiest way to locate the redistributable files is by using environment variables set in a developer command prompt. In the latest version of Visual Studio 2019, you'll find the redistributable files in the *`%VCINSTALLDIR%Redist\MSVC\v142`* folder. In both Visual Studio 2017 and Visual Studio 2019, they're also found in *`%VCToolsRedistDir%`*. In Visual Studio 2015, these files can be found in *`%VCINSTALLDIR%redist\<locale>`*, where *`<locale>`* is the locale of the redistributable packages.
 

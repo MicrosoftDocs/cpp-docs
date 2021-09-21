@@ -118,7 +118,7 @@ For more information, see [Format Specifications](../../c-runtime-library/format
 
 ## Remarks
 
-**`vsnprintf_s`** is identical to **`_vsnprintf_s`**. **`vsnprintf_s`** is included for compliance to the ANSI standard. **`_vnsprintf`** is retained for backward compatibility.
+**`vsnprintf_s`** is identical to **`_vsnprintf_s`**. **`vsnprintf_s`** is included for conformance to the ANSI standard. **`_vnsprintf`** is retained for backward compatibility.
 
 Each of these functions takes a pointer to an argument list, then formats and writes up to *`count`* characters of the given data to the memory pointed to by *`buffer`* and appends a terminating null.
 

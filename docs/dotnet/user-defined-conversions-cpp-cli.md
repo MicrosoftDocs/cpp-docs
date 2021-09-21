@@ -76,7 +76,7 @@ Convert-from operators create an object of the class in which the operator is de
 
 Standard C++ does not support convert-from operators; standard C++ uses constructors for this purpose. However, when using CLR types, Visual C++ provide syntactic support for calling convert-from operators.
 
-To interoperate well with other CLS-compliant languages, you may wish to wrap each user-defined unary constructor for a given class with a corresponding convert-from operator.
+To interoperate well with other CLS-conformant languages, you may wish to wrap each user-defined unary constructor for a given class with a corresponding convert-from operator.
 
 Convert-from operators:
 
