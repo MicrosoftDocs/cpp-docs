@@ -4,6 +4,7 @@ title: "Deployment in Visual C++"
 ms.date: "05/11/2018"
 helpviewer_keywords: ["deploying applications [C++]", "application deployment [C++]"]
 ms.assetid: d4b4ffc0-d2bd-4e4a-84a6-62f1c26f6a09
+ms.custom: intro-deployment
 ---
 # Deployment in Visual C++
 

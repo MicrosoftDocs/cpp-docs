@@ -1,9 +1,10 @@
 ---
 description: "Learn more about: Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package"
 title: "Deploy an App By Using the Redistributable Package (C++)"
-ms.date: 09/08/2021
+ms.date: 09/17/2021
 helpviewer_keywords: ["walkthrough, deploying a Visual C++ application by using the redistributable package"]
 ms.assetid: e59becbf-b8c6-4c8e-bab3-b69cc1ed3e5e
+ms.custom: intro-deployment
 ---
 # Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package
 
@@ -48,7 +49,7 @@ You must have these components to complete this walkthrough:
 
       - Your MFC application (.exe file).
 
-      - vcredist_x86.exe. In Visual Studio 2015, this file is located in *%VCINSTALLDIR%redist\\1033\\*. In Visual Studio 2017 and Visual Studio 2019, this file is located in *`%VCToolsRedistDir%`*. You can also [download the latest supported redist file from Microsoft](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)*.
+      - vcredist_x86.exe. In Visual Studio 2015, this file is located in *%VCINSTALLDIR%redist\\1033\\*. In Visual Studio 2017 and later, this file is located in *`%VCToolsRedistDir%`*. You can also [download the latest supported redist file from Microsoft](latest-supported-vc-redist.md).
 
       - The setup.bat file that you created in the earlier step.
 
@@ -78,8 +79,6 @@ You must have these components to complete this walkthrough:
 
       > [!IMPORTANT]
       > To determine which version of the runtime is installed, the installer checks the registry key `\HKLM\SOFTWARE\Microsoft\VisualStudio\<version>\VC\Runtimes\<platform>\Version`. If the currently installed version is newer than the version that the installer is attempting to install, the installer returns success without installing the older version and leaves an additional entry on the installed programs page in the Control Panel.
-
-\* Apps built for Windows XP can't use a redistributable later than the one shipped in Visual Studio 2019 version 16.7. For more information, see [Configuring programs for Windows XP](../build/configuring-programs-for-windows-xp.md).
 
 ## See also
 

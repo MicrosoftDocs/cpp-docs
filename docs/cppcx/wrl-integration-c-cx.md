@@ -18,7 +18,7 @@ The following code snippet demonstrates using WRL and WRL to consume Windows Run
 
 The example is taken from a code snippet in the Building Microsoft Store apps forum. The author of this code snippet offers the following disclaimers and stipulations:
 
-1. C++ doesn't provide specific APIs to reflect on Windows Runtime types, but Windows metadata files (.winmd) for a type are fully compliant with CLR metadata files. Windows provides the new metadata discovery APIs (RoGetMetaDataFile) to get to the .winmd file for a given type. However, these APIs are of limited use to C++ developers because you can't instantiate a class.
+1. C++ doesn't provide specific APIs to reflect on Windows Runtime types, but Windows metadata files (.winmd) for a type are fully compatible with CLR metadata files. Windows provides the new metadata discovery APIs (RoGetMetaDataFile) to get to the .winmd file for a given type. However, these APIs are of limited use to C++ developers because you can't instantiate a class.
 
 1. After the code is compiled, you'll also need to pass Runtimeobject.lib and Rometadata.lib to the Linker.
 

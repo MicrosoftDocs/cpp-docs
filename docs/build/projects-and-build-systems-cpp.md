@@ -5,6 +5,7 @@ ms.date: "07/17/2019"
 helpviewer_keywords: ["builds [C++]", "C++ projects, building", "projects [C++], building", "builds [C++], options", "C++, build options"]
 ms.assetid: fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008
 ms.topic: "overview"
+ms.custom: intro-overview
 ---
 # C/C++ projects and build systems in Visual Studio
 

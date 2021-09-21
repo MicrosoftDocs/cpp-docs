@@ -3,6 +3,7 @@ title: "What's new for C++ in Visual Studio"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio 2019."
 ms.date: 03/03/2021
 ms.technology: "cpp-ide"
+ms.custom: intro-whats-new
 ---
 # What's new for C++ in Visual Studio
 
@@ -44,7 +45,7 @@ For a summary of new features and bug fixes in Visual Studio version 16.9, see [
 
   - Added Go-to-definition on module imports, indexing support for `export {...}`, and more accurate module reference for modules with the same name.
 
-  - Improved the language compliance of C++ IntelliSense by adding support for [Copy-initialization of temporary in reference direct-initialization](https://wg21.link/P1358R0), `__builtin_memcpy` and `__builtin_memmove`, [Fixing inconsistencies between `constexpr` and `consteval` functions](https://wg21.link/P1937R2), [Lifetime-extended temporaries in constant expressions](https://wg21.link/P1968R0), and [Similar types and reference binding](https://wg21.link/P1358R0).
+  - Improved the language conformance of C++ IntelliSense by adding support for [Copy-initialization of temporary in reference direct-initialization](https://wg21.link/P1358R0), `__builtin_memcpy` and `__builtin_memmove`, [Fixing inconsistencies between `constexpr` and `consteval` functions](https://wg21.link/P1937R2), [Lifetime-extended temporaries in constant expressions](https://wg21.link/P1968R0), and [Similar types and reference binding](https://wg21.link/P1358R0).
 
   - Added completion for make_unique, make_shared, emplace and emplace_back which provides completion based on the type parameter specified.
 

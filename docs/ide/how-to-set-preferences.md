@@ -4,6 +4,7 @@ title: "Set your C++ coding preferences in Visual Studio"
 ms.description: "Customize C++ formatting, colors, layout, line numbers, and menus in the Visual Studio IDE."
 ms.topic: "overview"
 ms.date: "09/27/2019"
+ms.custom: intro-overview
 ---
 # Set your C++ coding preferences in Visual Studio
 

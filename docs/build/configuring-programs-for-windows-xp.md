@@ -1,7 +1,7 @@
 ---
 title: "Configuring Programs for Windows XP"
 description: "How to install and use the C++ Windows XP toolsets in Visual Studio."
-ms.date: "03/16/2020"
+ms.date: 09/17/2021
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
 ---
 # Configuring Programs for Windows XP
@@ -95,7 +95,7 @@ Because of differences in platform and library support, the development experien
 ## Windows XP deployment
 
 > [!IMPORTANT]
-> Because it lacks support for SHA-256 code signing certificates, runtime library support for Windows XP is no longer available in the [latest Visual C++ Redistributable](https://support.microsoft.com/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0) for Visual Studio 2015, 2017, and 2019. The last redistributable to support Windows XP is version 16.7 (file version 14.27.29114.0). If your Windows XP apps are deployed with or updated to a later version of the redistributable, the apps won't run.
+> Because it lacks support for SHA-256 code signing certificates, runtime library support for Windows XP is no longer available in the [latest Visual C++ Redistributable](../windows/latest-supported-vc-redist.md) for Visual Studio 2015, 2017, 2019, and 2022. The last Redistributable to support Windows XP shipped in Visual Studio 2019 version 16.7. Use a Redistributable that has a file version starting with **14.27**. If your Windows XP apps are deployed with or updated to a later version of the redistributable, the apps won't run.
 
 If you're using a version of Visual Studio later than Visual Studio 2019 version 16.7, the redistributable files won't work on Windows XP. To get a copy of the redistributable files that support Windows XP, you'll need a Visual Studio account. Use the account you use to sign in to Visual Studio. Or, you can create an account for free at [my.visualstudio.com](https://my.visualstudio.com). The redistributable file is available in the Downloads section, as [Visual C++ Redistributable for Visual Studio 2019 - Version 16.7](https://my.visualstudio.com/Downloads?q=Redistributable%20for%20Visual%20Studio%202019%20Version%2016.7). To download the files, select the platform and language you need, and then choose the Download button.
 

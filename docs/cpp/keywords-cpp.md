@@ -128,7 +128,7 @@ In C++, identifiers that contain two consecutive underscores are reserved for co
 
 Microsoft extensions are enabled by default. To ensure that your programs are fully portable, you can disable Microsoft extensions by specifying the [`/permissive-`](../build/reference/permissive-standards-conformance.md) or [`/Za` \(Disable language extensions)](../build/reference/za-ze-disable-language-extensions.md) option during compilation. These options disable some Microsoft-specific keywords.
 
-When Microsoft extensions are enabled, you can use the Microsoft-specific keywords in your programs. For ANSI compliance, these keywords are prefaced by a double underscore. For backward compatibility, single-underscore versions of many of the double-underscored keywords are supported. The **`__cdecl`** keyword is available with no leading underscore.
+When Microsoft extensions are enabled, you can use the Microsoft-specific keywords in your programs. For ANSI conformance, these keywords are prefaced by a double underscore. For backward compatibility, single-underscore versions of many of the double-underscored keywords are supported. The **`__cdecl`** keyword is available with no leading underscore.
 
 The **`__asm`** keyword replaces C++ **`asm`** syntax. **`asm`** is reserved for compatibility with other C++ implementations, but not implemented. Use **`__asm`**.
 
