@@ -78,6 +78,8 @@
       href: ../assembler/masm/microsoft-macro-assembler-reference.md
     - name: MASM for x64 (ml64.exe)
       href: ../assembler/masm/masm-for-x64-ml64-exe.md
+    - name: MASM instruction format
+      href: ../assembler/masm/instruction-format.md
     - name: ML and ML64 command-line reference
       href: ../assembler/masm/ml-and-ml64-command-line-reference.md
     - name: Directives reference (MASM)
@@ -300,6 +302,10 @@
           href: ../assembler/masm/dot-nolistmacro.md
         - name: OPTION
           href: ../assembler/masm/option-masm.md
+        - name: OPTION AVXENCODING
+          href: ../assembler/masm/option-avxencoding-masm.md
+        - name: OPTION LANGUAGE
+          href: ../assembler/masm/option-language-masm.md
         - name: ORG
           href: ../assembler/masm/org.md
         - name: "%OUT"
@@ -476,8 +482,6 @@
           href: ../assembler/masm/at-version.md
         - name: "@WordSize"
           href: ../assembler/masm/at-wordsize.md
-    - name: Processor manufacturer programming manuals
-      href: ../assembler/masm/processor-manufacturer-programming-manuals.md
     - name: Operators reference
       items: 
         - name: Operators reference
@@ -746,5 +750,7 @@
               href: ../assembler/masm/ml-warning-a4012.md
             - name: ML warning A4014
               href: ../assembler/masm/ml-warning-a4014.md
+    - name: Processor manufacturer programming manuals
+      href: ../assembler/masm/processor-manufacturer-programming-manuals.md
     - name: MASM BNF grammar
       href: ../assembler/masm/masm-bnf-grammar.md

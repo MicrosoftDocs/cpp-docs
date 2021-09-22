@@ -1,12 +1,11 @@
 ---
-description: "Learn more about: OPTION"
+description: "Learn more about: the OPTION directive"
 title: "OPTION (MASM)"
-ms.date: 07/15/2020
+ms.date: 09/21/2021
 f1_keywords: ["option"]
 helpviewer_keywords: ["OPTION directive"]
-ms.assetid: 8e10dabd-e36f-4586-ab01-ada96736b0bd
 ---
-# OPTION
+# `OPTION`
 
 Enables and disables features of the assembler.
 
@@ -20,6 +19,7 @@ Available options include:
 
 :::row:::
    :::column span="":::
+      [`AVXENCODING`](option-avxencoding-masm.md)\
       **`CASEMAP`**\
       **`DOTNAME`**\
       **`NODOTNAME`**\
@@ -30,7 +30,7 @@ Available options include:
    :::column-end:::
    :::column span="":::
       **`EXPR32`**\
-      **`LANGUAGE`**\
+      [`LANGUAGE`](option-language-masm.md)\
       **`LJMP`**\
       **`NOLJMP`**\
       **`M510`**\
@@ -57,7 +57,7 @@ Available options include:
    :::column-end:::
 :::row-end:::
 
-The syntax for LANGUAGE is **`OPTION LANGUAGE:`** _`x`_, where *`x`* is one of **`C`**, **`SYSCALL`**, **`STDCALL`**, **`PASCAL`**, **`FORTRAN`**, or **`BASIC`**. **`SYSCALL`**, **`PASCAL`**, **`FORTRAN`**, and **`BASIC`** are not supported with [`.MODEL`](dot-model.md) **`FLAT`**.
+The **`OPTION AVXENCODING`** directive is available in Visual Studio 2019 version 16.7 and later.
 
 ## See also
 
