@@ -7,7 +7,7 @@ helpviewer_keywords: ["CDCRenderTarget [MFC], CDCRenderTarget", "CDCRenderTarget
 ---
 # `CDCRenderTarget` class
 
-A wrapper for [`ID2D1DCRenderTarget`](https://docs.microsoft.com/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget).
+A wrapper for [`ID2D1DCRenderTarget`](/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget).
 
 ## Syntax
 
@@ -31,19 +31,19 @@ class CDCRenderTarget : public CRenderTarget;
 |[`CDCRenderTarget::BindDC`](#binddc)|Binds the render target to the device context to which it issues drawing commands|
 |[`CDCRenderTarget::Create`](#create)|Creates a `CDCRenderTarget`.|
 |[`CDCRenderTarget::Detach`](#detach)|Detaches render target interface from the object|
-|[`CDCRenderTarget::GetDCRenderTarget`](#getdcrendertarget)|Returns an [`ID2D1DCRenderTarget`](https://docs.microsoft.com/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) interface|
+|[`CDCRenderTarget::GetDCRenderTarget`](#getdcrendertarget)|Returns an [`ID2D1DCRenderTarget`](/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) interface|
 
 ### Public Operators
 
 |Name|Description|
 |----------|-----------------|
-|[`CDCRenderTarget::operator ID2D1DCRenderTarget*`](#operator_id2d1dcrendertarget_star)|Returns an [`ID2D1DCRenderTarget`](https://docs.microsoft.com/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) interface|
+|[`CDCRenderTarget::operator ID2D1DCRenderTarget*`](#operator_id2d1dcrendertarget_star)|Returns an [`ID2D1DCRenderTarget`](/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) interface|
 
 ### Protected Data Members
 
 |Name|Description|
 |----------|-----------------|
-|[CDCRenderTarget::m_pDCRenderTarget](#m_pdcrendertarget)|A pointer to an [`ID2D1DCRenderTarget`](https://docs.microsoft.com/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) object.|
+|[CDCRenderTarget::m_pDCRenderTarget](#m_pdcrendertarget)|A pointer to an [`ID2D1DCRenderTarget`](/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) object.|
 
 ## Inheritance Hierarchy
 
@@ -66,7 +66,7 @@ void Attach(ID2D1DCRenderTarget* pTarget);
 ### Parameters
 
 *`pTarget`*\
-Existing render target interface. Cannot be `NULL`
+Existing render target interface. Can't be `NULL`
 
 ## <a name="binddc"></a> `CDCRenderTarget::BindDC`
 
@@ -129,7 +129,7 @@ Pointer to detached render target interface.
 
 ## <a name="getdcrendertarget"></a> `CDCRenderTarget::GetDCRenderTarget`
 
-Returns an [`ID2D1DCRenderTarget`](https://docs.microsoft.com/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) interface
+Returns an [`ID2D1DCRenderTarget`](/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget)
 
 ```cpp
 ID2D1DCRenderTarget* GetDCRenderTarget();
@@ -137,11 +137,11 @@ ID2D1DCRenderTarget* GetDCRenderTarget();
 
 ### Return Value
 
-Pointer to an [`ID2D1DCRenderTarget`](https://docs.microsoft.com/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) interface or `NULL` if object is not initialized yet.
+Pointer to an [`ID2D1DCRenderTarget`](/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) interface or `NULL` if object isn't initialized yet.
 
 ## <a name="m_pdcrendertarget"></a> `CDCRenderTarget::m_pDCRenderTarget`
 
-A pointer to an `ID2D1DCRenderTarget` object.
+A pointer to an [`ID2D1DCRenderTarget`](/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) object.
 
 ```cpp
 ID2D1DCRenderTarget* m_pDCRenderTarget;
@@ -149,7 +149,7 @@ ID2D1DCRenderTarget* m_pDCRenderTarget;
 
 ## <a name="operator_id2d1dcrendertarget_star"></a> `CDCRenderTarget::operator ID2D1DCRenderTarget*`
 
-Returns an [`ID2D1DCRenderTarget`](https://docs.microsoft.com/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) interface
+Returns an [`ID2D1DCRenderTarget`](/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) interface
 
 ```cpp
 operator ID2D1DCRenderTarget*();
@@ -157,7 +157,7 @@ operator ID2D1DCRenderTarget*();
 
 ### Return Value
 
-Pointer to an `ID2D1DCRenderTarget` interface or NULL if object is not initialized yet.
+Pointer to an `[`ID2D1DCRenderTarget`](/windows/win32/api/d2d1/nn-d2d1-id2d1dcrendertarget) interface or NULL if object isn't initialized yet.
 
 ## See also
 
