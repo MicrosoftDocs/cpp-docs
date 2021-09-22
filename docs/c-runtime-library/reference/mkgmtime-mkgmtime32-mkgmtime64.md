@@ -30,7 +30,7 @@ __time64_t _mkgmtime64(
 ### Parameters
 
 *`timeptr`*\
-A pointer to the UTC time as a **`struct tm` to convert.
+A pointer to the UTC time as a **`struct tm`** to convert.
 
 ## Return Value
 
