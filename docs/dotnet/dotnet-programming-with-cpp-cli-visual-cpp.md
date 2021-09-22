@@ -17,7 +17,7 @@ In Visual Studio 2017, the default target .NET Framework is 4.6.1. The Framework
 
 ## Install C++/CLI support in Visual Studio 2017
 
-C++/CLI itself isn't installed by default when you install a Visual Studio C++ workload. To install the component after Visual Studio is installed, open the Visual Studio Installer (*`vs_setup.exe`*). Choose the **Modify** button next to your installed version of Visual Studio. Select the **Individual components** tab. Scroll down to the **Compilers, build tools, and runtimes** section, and select **C++/CLI support**. Choose **Install** to update Visual Studio.
+C++/CLI itself isn't installed by default when you install a Visual Studio C++ workload. To install the component after Visual Studio is installed, open the Visual Studio Installer by selecting the Windows **Start** menu and searching for **visual studio installer**. Choose the **Modify** button next to your installed version of Visual Studio. Select the **Individual components** tab. Scroll down to the **Compilers, build tools, and runtimes** section, and select **C++/CLI support**. Select **Modify** to download the necessary files and update Visual Studio.
 
 ::: moniker-end
 ::: moniker range="msvc-160"
@@ -26,7 +26,7 @@ In Visual Studio 2019, the default target framework for .NET Core projects is 5.
 
 ## Install C++/CLI support in Visual Studio 2019
 
-C++/CLI itself isn't installed by default when you install a Visual Studio C++ workload. To install the component after Visual Studio is installed, open the Visual Studio Installer. Choose the **Modify** button next to your installed version of Visual Studio. Select the **Individual components** tab. Scroll down to the **Compilers, build tools, and runtimes** section, and select **C++/CLI support for v142 build tools (Latest)**. Select **Close** to return to the main installer screen, and then select **Modify**.
+C++/CLI itself isn't installed by default when you install a Visual Studio C++ workload. To install the component after Visual Studio is installed, open the Visual Studio Installer by selecting the Windows **Start** menu and searching for **visual studio installer**. Choose the **Modify** button next to your installed version of Visual Studio. Select the **Individual components** tab. Scroll down to the **Compilers, build tools, and runtimes** section, and select **C++/CLI support for v142 build tools (Latest)**. Select **Modify** to download the necessary files and update Visual Studio.
 
 ::: moniker-end
 
