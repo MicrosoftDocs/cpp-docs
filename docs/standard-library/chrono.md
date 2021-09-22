@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <chrono>"
 title: "<chrono>"
-ms.date: 09/15/2021
+ms.date: 09/16/2021
 f1_keywords: ["<chrono>", "chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
 ---
 
@@ -61,12 +61,16 @@ In the Microsoft C++ implementation, `steady_clock::time_point` is now a `typede
 |[`tai_clock` class](tai-clock-class.md)| Measures International Atomic Time (TAI) starting from Thursday, January 1, 1958 at 00:00:00. This clock doesn't account for leap seconds.|
 |[`utc_clock` class](utc-clock-class.md)| Measures time since 00:00:00 UTC on Thursday, January 1, 1970. This clock accounts for leap seconds, and is the time standard used around the world.|
 
-**Time Zones**
+**Time zones**
 
 | Name | Description |
 |--|--|
+| [`choose`](choose-enum.md) | An enum that specifies how to resolve ambiguous or nonexistent local times when creating a `time_zone` | 
+| [`local_info`](local-info-struct.md) | Provides a low-level interface to time zone information about the result of converting a `local_time` to a `sys_time`. |
+| [`sys_info`](sys-info-struct.md) | Provides a low-level interface to time zone information about the result of converting a `sys_time` to a `local_time`. |
 | [`time_zone` class](time-zone-class.md) | All time zone transitions for a specific geographic area. |
 | [`time_zone_link` class](time-zone-link-class.md) | An alternative name for a `time_zone`. |
+| [`zoned_time` class](zoned-time-class.md) | A pairing of a [`time_zone`](time-zone-class.md) and a [`time_point`](time-point-class.md) with a specified precision. |
 
 ## Functions
 
@@ -134,19 +138,19 @@ For more information about ratio types that are used in the following typedefs, 
 
 | Name | Description |
 |--|--|
-| `file_time` | A synonym for `template <class Duration> using file_time = time_point<file_clock, Duration>`. Represents a [`time_point`](time-point-class.md) for a [`file_clock`](file-clock-class.md). You specify the `Duration`. |
+| `file_time` | A synonym for `time_point<file_clock, Duration>`. Represents a [`time_point`](time-point-class.md) for a [`file_clock`](file-clock-class.md). You specify the `Duration`, for example, `file_time<seconds> ft;`. |
 | `gps_seconds` | A synonym for `gps_time<seconds>;` A count of seconds, represented by a `time_point` that is associated with a [`gps_clock`](tai-clock-class.md). |
-| `gps_time` | A synonym for `template <class Duration> using gps_time = time_point<gps_clock, Duration>`. Represents a `time_point` for a [`gps_clock`](gps-clock-class.md). You specify the `Duration`. |
+| `gps_time` | A synonym for `time_point<gps_clock, Duration>`. Represents a `time_point` for a [`gps_clock`](gps-clock-class.md). You specify the `Duration`, for example, `gps_time<milliseconds> gps;`. |
 | `local_days` | A synonym for `local_time<days>`. A count of days, represented by a [`time_point`](time-point-class.md) that isn't associated with any time zone. |
-| `local_seconds` | A synonym for `local_time<seconds>`. Defined in `std::chrono`. |
-| `local_time` | A synonym for `template <class Duration> using local_time = time_point<local_t, Duration>`. Represents a `time_point` for a local time. You specify the `Duration`. A `local_time` isn't associated with a time zone yet. It isn't the current local time of your computer's clock. Only when you pair a `local_time` with a `time_zone` do you get a point in time that can be converted to UTC or other time in a specific time zone. | 
-| `sys_days` | A synonym for `sys_time<days>`. A count of days, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
-| `sys_seconds` | A synonym for `sys_time<seconds>`. A count of seconds, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
-| `sys_time` | A synonym for `template <class Duration> using sys_time = time_point<system_clock, Duration>`. Represents a `time_point` for a [`system_clock`](system-clock-structure.md). You specify the `Duration`. |
-| `tai_seconds` | A synonym for `tai_time<seconds>` A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md). |
-| `tai_time` | A synonym for `template <class Duration> using tai_time = time_point<tai_clock, Duration>`. Represents a `time_point` for a [`tai_clock`](tai-clock-class.md). You specify the `Duration`. |
+| `local_seconds` | A synonym for `local_time<seconds>`. |
+| `local_time` | A synonym for `time_point<local_t, Duration>`. Represents a `time_point` for a local time that isn't associated with a time zone yet. You specify the `Duration`, for example, `local_time<seconds> lt;`. A `local_time` is a local time *somewhere*. It isn't the current local time of your computer's clock. Only when you pair a `local_time` with a `time_zone` do you get a point in time that can be converted to UTC time, or the time in a specific time zone. |
+| `sys_days` | A synonym for `sys_time<days>`. A count of days since the system_clock's epoch, represented by a `time_point` that is associated with a [`system_clock`](system-clock-structure.md). |
+| `sys_seconds` | A synonym for `sys_time<seconds>`. A count of non-leap seconds since the epoch of [`system_clock`](system-clock-structure.md) (Jan 1, 1970 00:00:00 UTC), represented by a `time_point` that is associated with a `system_clock`. |
+| `sys_time` | A synonym for `time_point<system_clock, Duration>`. You specify the `Duration`, for example, `sys_time<seconds> st;`. Represents a `time_point` returned from [`system_clock::now()`](system-clock-structure.md#now). It represents Unix time, which closely approximates UTC time. |
+| `tai_seconds` | A synonym for `tai_time<seconds>`. A count of seconds, represented by a `time_point` that is associated with a [`tai_clock`](tai-clock-class.md). |
+| `tai_time` | A synonym for `time_point<tai_clock, Duration>`. You provide the `Duration`, for example, `tai_time<seconds> tt;`. Represents a `time_point` for a [`tai_clock`](tai-clock-class.md). |
 | `utc_seconds` | A synonym for `utc_time<seconds>;` |
-| `utc_time` | A synonym for `template<class Duration> using utc_time = time_point<utc_clock, Duration>`. Represents a `time_point`for a [`utc_clock`](utc-clock-class.md). You specify the `Duration`. |
+| `utc_time` | A synonym for `time_point<utc_clock, Duration>`. You provide the `Duration`, for example, `utc_time<seconds> ut;`. Represents a `time_point`for a [`utc_clock`](utc-clock-class.md). |
 
 ## Type traits
 

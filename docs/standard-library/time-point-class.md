@@ -1,26 +1,28 @@
 ---
 description: "Learn more about: time_point Class"
 title: "time_point Class"
-ms.date: "03/27/2019"
+ms.date: "09/15/2021"
 f1_keywords: ["chrono/std::chrono::time_point", "chrono/std::chrono::time_point::time_point", "chrono/std::chrono::time_point::max", "chrono/std::chrono::time_point::min", "chrono/std::chrono::time_point::time_since_epoch"]
-ms.assetid: 18be1e52-57b9-489a-8a9b-f58894f0aaad
 helpviewer_keywords: ["std::chrono [C++], time_point"]
 ---
-# time_point Class
+# time_point class
 
-A `time_point` describes a type that represents a point in time. It holds an object of type [duration](../standard-library/duration-class.md) that stores the elapsed time since the epoch that is represented by the template argument `Clock`.
+A `time_point` represents a point in time that is relative to the epoch of a clock.
 
 ## Syntax
 
 ```cpp
-template <class Clock,
-    class Duration = typename Clock::duration>
+template <class Clock, class Duration = typename Clock::duration>
 class time_point;
 ```
 
+## Remarks
+
+The clock that supplies the reference point for the epoch is specified by the template argument `Clock`.
+
 ## Members
 
-### Public Typedefs
+### Convenience type aliases
 
 |Name|Description|
 |----------|-----------------|
@@ -29,26 +31,26 @@ class time_point;
 |`period`|Synonym for the nested type name `duration::period`.|
 |`rep`|Synonym for the nested type name `duration::rep`.|
 
-### Public Constructors
+### Public constructors
 
 |Name|Description|
 |----------|-----------------|
-|[time_point](#time_point)|Constructs a `time_point` object.|
+|[`time_point`](#time_point)|Constructs a `time_point` object.|
 
-### Public Methods
-
-|Name|Description|
-|----------|-----------------|
-|[max](#max)|Specifies the upper limit for `ref`.|
-|[min](#min)|Specifies the lower limit for `ref`.|
-|[time_since_epoch](#time_since_epoch)|Returns the amount of time between this `time_point` and the clock's epoch (or time and date that the clock starts measuring time).|
-
-### Public Operators
+### Public methods
 
 |Name|Description|
 |----------|-----------------|
-|[operator+=](#op_add_eq)|Adds a specified value to the stored duration.|
-|[operator-=](#operator-_eq)|Subtracts a specified value from the stored duration.|
+|[`max`](#max)|Specifies the upper limit for `ref`.|
+|[`min`](#min)|Specifies the lower limit for `ref`.|
+|[`time_since_epoch`](#time_since_epoch)|Returns the amount of time between this `time_point` and the clock's epoch (or time and date that the clock starts measuring time).|
+
+### Public operators
+
+|Name|Description|
+|----------|-----------------|
+|[`operator+=`](#op_add_eq)|Adds a specified value to the stored duration.|
+|[`operator-=`](#operator-_eq)|Subtracts a specified value from the stored duration.|
 
 ## Requirements
 
@@ -64,7 +66,7 @@ Static method that returns the upper bound for values of type `ref`.
 static constexpr time_point max();
 ```
 
-### Return Value
+### Return value
 
 In effect, returns `time_point(duration::max())`.
 
@@ -76,7 +78,7 @@ Static method that returns the lower bound for values of type `ref`.
 static constexpr time_point min();
 ```
 
-### Return Value
+### Return value
 
 In effect, returns `time_point(duration::min())`.
 
@@ -90,10 +92,10 @@ time_point& operator+=(const duration& Dur);
 
 ### Parameters
 
-*Dur*\
+*`Dur`*\
 A `duration` object.
 
-### Return Value
+### Return value
 
 The `time_point` object after the addition is done.
 
@@ -107,10 +109,10 @@ time_point& operator-=(const duration& Dur);
 
 ### Parameters
 
-*Dur*\
+*`Dur`*\
 A `duration` object.
 
-### Return Value
+### Return value
 
 The `time_point` object after the subtraction is done.
 
@@ -139,7 +141,7 @@ A `time_point` object.
 
 The first constructor constructs an object whose stored `duration` value is equal to [`duration::zero`](../standard-library/duration-class.md#zero).
 
-The second constructor constructs an object whose stored duration value is equal to *Dur*. Unless `is_convertible<Duration2, duration>` holds true, the second constructor doesn't participate in overload resolution. For more information, see [`<type_traits>`](../standard-library/type-traits.md).
+The second constructor constructs an object whose stored duration value is equal to *`Dur`*. Unless `is_convertible<Duration2, duration>` holds true, the second constructor doesn't participate in overload resolution. For more information, see [`<type_traits>`](../standard-library/type-traits.md).
 
 The third constructor initializes its `duration` value by using `Tp.time_since_epoch()`.
 

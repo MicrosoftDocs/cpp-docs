@@ -5,19 +5,16 @@ ms.date: "03/27/2016"
 f1_keywords: ["chrono/std::chrono::duration", "chrono/std::chrono::duration::duration", "chrono/std::chrono::duration::count", "chrono/std::chrono::duration::max", "chrono/std::chrono::duration::min", "chrono/std::chrono::duration::zero"]
 helpviewer_keywords: ["std::chrono [C++], duration"]
 ---
-# duration Class
+# `duration` class
 
 Describes a type that holds a *time interval*, which is the number of ticks over a time unit. For example, five minutes is five ticks, with each tick a minute apart. 42 seconds is 42 ticks, with each tick a second apart.
 
 ## Syntax
 
 ```cpp
-template <class Rep, class Period = ratio<1>>
-class duration;
-template <class Rep, class Period>
-class duration;
-template <class Rep, class Period1, class Period2>
-class duration <duration<Rep, Period1>, Period2>;
+template <class Rep, class Period = ratio<1>> class duration;
+template <class Rep, class Period> class duration;
+template <class Rep, class Period1, class Period2> class duration <duration<Rep, Period1>, Period2>;
 ```
 
 ## Remarks
@@ -26,41 +23,41 @@ The template argument `Rep` describes the type that is used to hold the number o
 
 ## Members
 
-### Public Typedefs
+### Convenience type aliases
 
 |Name|Description|
 |----------|-----------------|
-|duration::period Typedef|Represents a synonym for the template parameter `Period`.|
-|duration::rep Typedef|Represents a synonym for the template parameter `Rep`.|
+|`duration::period`|Represents a synonym for the template parameter `Period`.|
+|`duration::rep` |Represents a synonym for the template parameter `Rep`.|
 
 ### Public Constructors
 
 |Name|Description|
 |----------|-----------------|
-|[duration](#duration)|Constructs a `duration` object.|
+|[`duration`](#duration)|Constructs a `duration` object.|
 
 ### Public Methods
 
 |Name|Description|
 |----------|-----------------|
-|[count](#count)|Returns the number of clock ticks in the time interval.|
-|[max](#max)|Static. Returns the maximum allowable value of template parameter `Ref`.|
-|[min](#min)|Static. Returns the lowest allowable value of template parameter `Ref`.|
-|[zero](#zero)|Static. In effect, returns `Rep`(0).|
+|[`count`](#count)|Returns the number of clock ticks in the time interval.|
+|[`max`](#max)|Static. Returns the maximum allowable value of template parameter `Ref`.|
+|[`min`](#min)|Static. Returns the lowest allowable value of template parameter `Ref`.|
+|[`zero`](#zero)|Static. In effect, returns `Rep`(0).|
 
 ### Public Operators
 
 |Name|Description|
 |----------|-----------------|
-|[duration::operator-](#operator-)|Returns a copy of the `duration` object together with a negated tick count.|
-|[duration::operator--](#operator--)|Decrements the stored tick count.|
-|[duration::operator=](#op_eq)|Reduces the stored tick count modulo a specified value.|
-|[duration::operator*=](#op_star_eq)|Multiplies the stored tick count by a specified value.|
-|[duration::operator/=](#op_div_eq)|Divides the stored tick count by the tick count of a specified `duration` object.|
-|[duration::operator+](#op_add)|Returns **`*this`**.|
-|[duration::operator++](#op_add_add)|Increments the stored tick count.|
-|[duration::operator+=](#op_add_eq)|Adds the tick count of a specified `duration` object to the stored tick count.|
-|[duration::operator-=](#operator-_eq)|Subtracts the tick count of a specified `duration` object from the stored tick count.|
+|[`duration::operator-`](#operator-)|Returns a copy of the `duration` object together with a negated tick count.|
+|[`duration::operator--`](#operator--)|Decrements the stored tick count.|
+|[`duration::operator=`](#op_eq)|Reduces the stored tick count modulo a specified value.|
+|[`duration::operator*=`](#op_star_eq)|Multiplies the stored tick count by a specified value.|
+|[`duration::operator/=`](#op_div_eq)|Divides the stored tick count by the tick count of a specified `duration` object.|
+|[`duration::operator+`](#op_add)|Returns **`*this`**.|
+|[`duration::operator++`](#op_add_add)|Increments the stored tick count.|
+|[`duration::operator+=`](#op_add_eq)|Adds the tick count of a specified `duration` object to the stored tick count.|
+|[`duration::operator-=`](#operator-_eq)|Subtracts the tick count of a specified `duration` object from the stored tick count.|
 
 ## Requirements
 

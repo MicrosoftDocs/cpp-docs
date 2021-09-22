@@ -2,10 +2,10 @@
 description: "Learn more about: gps_clock class"
 title: "gps_clock class"
 ms.date: 08/17/2021
-f1_keywords: ["chrono/std::chrono::gps_clock", "chrono/std::chrono::gps_clock::now", "chrono/std::chrono::gps_clock::to_utc", "chrono/std::chrono::gps_clock::from_utc", "chrono/std::chrono::gps_clock::is_steady Constant"]
+f1_keywords: ["chrono/std::chrono::gps_clock", "chrono/std::chrono::gps_clock::now", "chrono/std::chrono::gps_clock::to_utc", "chrono/std::chrono::gps_clock::from_utc", "chrono/std::chrono::gps_clock::is_steady constant"]
 ---
 
-# gps_clock class
+# `gps_clock` class
 
 A clock for Global Positioning System (GPS) time.
 
@@ -27,9 +27,9 @@ GPS time is behind TAI time by 19 seconds because 10 seconds were added to TAI t
 
 | Name | Description |
 |--|--|
-| [from_utc](#from_utc) | Static. Converts a `utc_time` to a `gps_time`. |
-| [now](#now) | Static. Returns the GPS current time. |
-| [to_utc](#to_utc) | Static. Converts a `gps_time` to a `utc_time`. |
+| [`from_utc`](#from_utc) | Static. Converts a `utc_time` to a `gps_time`. |
+| [`now`](#now) | Static. Returns the GPS current time. |
+| [`to_utc`](#to_utc) | Static. Converts a `gps_time` to a `utc_time`. |
 
 ## Non-members
 
@@ -38,7 +38,7 @@ GPS time is behind TAI time by 19 seconds because 10 seconds were added to TAI t
 | [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `gps_time` from the given stream using the specified format. |
 | [`operator<<`](chrono-operators.md#op_left_shift) | Output a `gps_time` to the given stream. |
 
-## Public typedefs
+## Convenience type aliases
 
 | Name | Description |
 |--|--|
@@ -58,7 +58,7 @@ GPS time is behind TAI time by 19 seconds because 10 seconds were added to TAI t
 
 | Name | Description |
 |--|--|
-| [gps_clock::is_steady constant](#is_steady_constant) | Indicates whether the clock type is steady. Its value is `false`. |
+| [`gps_clock::is_steady` constant](#is_steady_constant) | Indicates whether the clock type is steady. Its value is `false`. |
 
 ## Requirements
 
@@ -68,7 +68,7 @@ GPS time is behind TAI time by 19 seconds because 10 seconds were added to TAI t
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
-## <a name="from_utc"></a> from_utc
+## <a name="from_utc"></a> `from_utc`
 
 Static method that converts a `utc_time` to a `gps_time`.
 
@@ -87,7 +87,7 @@ The `utc_time` to convert.
 
 A `gps_time` set to the same point in time as the `utc_time` *`t`*.  It's computed as `gps_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 315964809s` where `315964809s == sys_days{1980y/January/Sunday[1]} - sys_days{1970y/January/1} + 9s`. Which is the number of seconds between the `utc_clock` epoch and the `gps_clock` epoch.
 
-## <a name="to_utc"></a> to_utc
+## <a name="to_utc"></a> `to_utc`
 
 Static method that converts a `gps_time` to a `utc_time`.
 
@@ -106,7 +106,7 @@ The `gps_time` to convert.
 
 A `utc_time` set to the same point in time as the `gps_time`. It's computed as `gps_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} + 315964809s` where  `315964809s == sys_days{1980y/January/Sunday[1]} - sys_days{1970y/January/1} + 9s`. That's the number of seconds between the epochs of the `utc_clock` and the `gps_clock`.
 
-## <a name="is_steady_constant"></a> is_steady
+## <a name="is_steady_constant"></a> `is_steady`
 
 Static value that specifies whether the clock type is *steady*. In Microsoft's implementation, `is_steady_constant` is always **`false`**. Because the `gps_clock` isn't steady, you can't reliably use this clock to take the time before an event, the time after an event, and subtract them to get the duration of the event because the clock may be adjusted during that time.
 
@@ -114,7 +114,7 @@ Static value that specifies whether the clock type is *steady*. In Microsoft's i
 static const bool is_steady = system_clock::is_steady; // system_clock::is_steady equals false
 ```
 
-## <a name="now"></a> now
+## <a name="now"></a> `now`
 
 Static method that returns the current GPS time.
 
@@ -125,6 +125,8 @@ static time_point now() noexcept;
 ### Return Value
 
 A [time_point](../standard-library/time-point-class.md) object that represents the current time. The returned time point is effectively `from_utc(utc_clock::now())`.
+
+## See also
 
 [`<chrono>`](chrono.md)\
 [`file_clock class`](file-clock-class.md)\
