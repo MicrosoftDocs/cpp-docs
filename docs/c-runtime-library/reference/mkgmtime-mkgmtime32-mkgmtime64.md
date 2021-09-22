@@ -1,18 +1,17 @@
 ---
 title: "_mkgmtime, _mkgmtime32, _mkgmtime64"
 description: "Describes the _mkgmtime, _mkgmtime32, and _mkgmtime64 C Runtime library functions, and gives examples of how to use them."
-ms.date: "4/2/2020"
+ms.date: 09/22/2021
 api_name: ["_mkgmtime32", "_mkgmtime64", "_mkgmtime", "_o__mkgmtime32", "_o__mkgmtime64"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-time-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["_mkgmtime64", "mkgmtime32", "_mkgmtime32", "mkgmtime", "mkgmtime64", "_mkgmtime"]
 helpviewer_keywords: ["mkgmtime32 function", "time functions", "mkgmtime function", "_mkgmtime function", "converting times", "mkgmtime64 function", "_mkgmtime64 function", "_mkgmtime32 function", "time, converting"]
-ms.assetid: b4ca2b67-e198-4f43-b3e2-e8ad6bd01867
 ---
-# _mkgmtime, _mkgmtime32, _mkgmtime64
+# `_mkgmtime`, `_mkgmtime32`, `_mkgmtime64`
 
-Converts a UTC time represented by a **`struct`** **tm** to a UTC time represented by a **time_t** type.
+Converts a UTC time represented by a **`struct tm`** to a UTC time represented by a **`time_t`** type.
 
 ## Syntax
 
@@ -30,26 +29,24 @@ __time64_t _mkgmtime64(
 
 ### Parameters
 
-*timeptr*\
-A pointer to the UTC time as a **`struct`** **tm** to convert.
+*`timeptr`*\
+A pointer to the UTC time as a **`struct tm` to convert.
 
 ## Return Value
 
-A quantity of type **__time32_t** or **__time64_t** representing the number of seconds elapsed since midnight, January 1, 1970, in Coordinated Universal Time (UTC). If the date is out of range (see the Remarks section) or the input can't be interpreted as a valid time, the return value is -1.
+A quantity of type **`__time32_t`** or **`__time64_t`** representing the number of seconds elapsed since midnight, January 1, 1970, in Coordinated Universal Time (UTC). If the date is out of range (see the Remarks section) or the input can't be interpreted as a valid time, the return value is -1.
 
 ## Remarks
 
-The **_mkgmtime32** and **_mkgmtime64** functions convert a UTC time to a **__time32_t** or **__time64_t** type representing the time in UTC. To convert a local time to UTC time, use **mktime**, **_mktime32**, and **_mktime64** instead.
+The **`_mkgmtime32`** and **`_mkgmtime64`** functions convert a UTC time to a **`__time32_t`** or **`__time64_t`** type representing the time in UTC. To convert a local time to UTC time, use **`mktime`**, **`_mktime32`**, and **`_mktime64`** instead.
 
-**_mkgmtime** is an inline function that evaluates to **_mkgmtime64**, and **time_t** is equivalent to **__time64_t**. If you need to force the compiler to interpret **time_t** as the old 32-bit **time_t**, you can define **_USE_32BIT_TIME_T**. We don't recommend it, because your application might fail after January 18, 2038, the maximum range of a 32-bit **time_t**. It's not allowed at all on 64-bit platforms.
+**_mkgmtime** is an inline function that evaluates to **`_mkgmtime64`**, and **`time_t`** is equivalent to **`__time64_t`**. If you need to force the compiler to interpret **`time_t`** as the old 32-bit **`time_t`**, you can define **`_USE_32BIT_TIME_T`**. We don't recommend it, because your application might fail after January 18, 2038, the maximum range of a 32-bit **`time_t`**. It's not allowed at all on 64-bit platforms.
 
-The time structure passed in is changed as follows, in the same way as it's changed by the **_mktime** functions: the **tm_wday** and **tm_yday** fields are set to new values based on the values of **tm_mday** and **tm_year**. Because the time is assumed to be UTC, the **tm_isdst** field is ignored.
+The time structure passed in is changed as follows, in the same way as it's changed by the **`_mktime`** functions: the **`tm_wday`** and **`tm_yday`** fields are set to new values based on the values of **`tm_mday`** and **`tm_year`**. Because the time is assumed to be UTC, the **`tm_isdst`** field is ignored.
 
-The range of the **_mkgmtime32** function is from midnight, January 1, 1970, UTC to 23:59:59 January 18, 2038, UTC. The range of **_mkgmtime64** is from midnight, January 1, 1970, UTC to 23:59:59, December 31, 3000, UTC. An out-of-range date results in a return value of -1. The range of **_mkgmtime** depends on whether **_USE_32BIT_TIME_T** is defined. When it's not defined, which is the default, the range is the same as **_mkgmtime64**. Otherwise, the range is limited to the 32-bit range of **_mkgmtime32**.
+The range of the **`_mkgmtime32`** function is from midnight, January 1, 1970, UTC to 23:59:59 January 18, 2038, UTC. The range of **`_mkgmtime64`** is from midnight, January 1, 1970, UTC to 23:59:59, December 31, 3000, UTC. An out-of-range date results in a return value of -1. The range of **`_mkgmtime`** depends on whether **`_USE_32BIT_TIME_T`** is defined. When it's not defined, which is the default, the range is the same as **`_mkgmtime64`**. Otherwise, the range is limited to the 32-bit range of **`_mkgmtime32`**.
 
-Both **gmtime** and **localtime** use a common static buffer for the conversion. If you supply this buffer to **_mkgmtime**, the previous contents are destroyed.
-
-By default, this function's global state is scoped to the application. To change this, see [Global state in the CRT](../global-state.md).
+Both **`gmtime`** and **`localtime`** use a common static buffer for the conversion. If you supply this buffer to **`_mkgmtime`**, the previous contents are destroyed.
 
 ## Examples
 
@@ -98,7 +95,7 @@ Local Time: Thu Feb 15 17:14:52 2007
 Greenwich Mean Time: Fri Feb 16 01:14:52 2007
 ```
 
-The following example shows how the incomplete structure is filled out by **_mkgmtime**. It computes values for both the day of the week and of the year.
+The following example shows how the incomplete structure is filled out by **`_mkgmtime`**. It computes values for both the day of the week and of the year.
 
 ```C
 // crt_mkgmtime2.c
@@ -145,10 +142,10 @@ t.tm_yday = 42
 ## See also
 
 [Time Management](../../c-runtime-library/time-management.md)\
-[asctime, _wasctime](asctime-wasctime.md)\
-[asctime_s, _wasctime_s](asctime-s-wasctime-s.md)\
-[gmtime, _gmtime32, _gmtime64](gmtime-gmtime32-gmtime64.md)\
-[gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md)\
-[localtime_s, _localtime32_s, _localtime64_s](localtime-s-localtime32-s-localtime64-s.md)\
-[mktime, _mktime32, _mktime64](mktime-mktime32-mktime64.md)\
-[time, _time32, _time64](time-time32-time64.md)
+[`asctime`, `_wasctime`](asctime-wasctime.md)\
+[`asctime_s`, `_wasctime_s`](asctime-s-wasctime-s.md)\
+[`gmtime`, `_gmtime32`, `_gmtime64`](gmtime-gmtime32-gmtime64.md)\
+[`gmtime_s`, `_gmtime32_s`, `_gmtime64_s`](gmtime-s-gmtime32-s-gmtime64-s.md)\
+[`localtime_s`, `_localtime32_s`, `_localtime64_s`](localtime-s-localtime32-s-localtime64-s.md)\
+[`mktime`, `_mktime32`, `_mktime64`](mktime-mktime32-mktime64.md)\
+[`time`, `_time32`, `_time64`](time-time32-time64.md)
