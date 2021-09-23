@@ -5,7 +5,7 @@ ms.date: 07/27/2021
 f1_keywords: ["chrono/std::chrono::utc_clock", "chrono/std::chrono::utc_clock::now", "chrono/std::chrono::utc_clock::to_sys", "chrono/std::chrono::utc_clock::from_sys", "chrono/std::chrono::utc_clock::is_steady Constant"]
 ---
 
-# utc_clock class
+# `utc_clock` class
 
 A clock for Coordinated Universal Time (UTC) which is sometimes popularly referred to as Greenwich Mean Time (GMT) or Zulu time. Local time is adjusted from UTC time depending on your time zone.
 
@@ -31,9 +31,9 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). 10 seco
 
 |Name|Description|
 |----------|-----------------|
-|[from_sys](#from_sys)| Static. Converts a `sys_time` to a `utc_time`.|
-|[now](#now)| Static. Returns the current time.|
-|[to_sys](#to_sys)| Static. Converts a `utc_time` to a `sys_time`.|
+|[`from_sys`](#from_sys)| Static. Converts a `sys_time` to a `utc_time`.|
+|[`now`](#now)| Static. Returns the current time.|
+|[`to_sys`](#to_sys)| Static. Converts a `utc_time` to a `sys_time`.|
 
 ## Non-members
 
@@ -43,7 +43,7 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). 10 seco
 | [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info) | Gets a [leap_second_info](leap-second-info-struct.md) that indicates whether the supplied time specifies a time when a leap second was inserted. It also includes  the sum of all the leap seconds between January 1, 1970 and the specified duration. |
 | [`operator<<`](chrono-operators.md#op_left_shift) | Output  a `utc_time` to the given stream. |
 
-## Public typedefs
+## Convenience type aliases
 
 |Name|Description|
 |----------|-----------------|
@@ -63,7 +63,7 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). 10 seco
 
 |Name|Description|
 |----------|-----------------|
-|[utc_clock::is_steady constant](#is_steady_constant)|Indicates whether the clock type is steady. Its value is `false`.|
+|[`utc_clock::is_steady constant]`(#is_steady_constant)|Indicates whether the clock type is steady. Its value is `false`.|
 
 ## Requirements
 
@@ -73,7 +73,7 @@ UTC time, by definition, starts out 10 seconds behind TAI (atomic time). 10 seco
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
-## <a name="from_sys"></a> from_sys
+## <a name="from_sys"></a> `from_sys`
 
 Static method that converts a `sys_time` to a `utc_time`.
 
@@ -92,7 +92,7 @@ The `sys_time` to convert.
 
 A `utc_time` set to the time that most closely approximates the `sys_time` *`t`*. If a direct mapping doesn't exist, the time_point during a leap second insertion and the last representable value of `sys_time` before the insertion of the leap second, is returned.
 
-## <a name="to_sys"></a> to_sys
+## <a name="to_sys"></a> `to_sys`
 
 Static method that converts a `utc_time` to a `sys_time`.
 
@@ -111,7 +111,7 @@ The `utc_time` to convert.
 
 The `sys_time` set to the equivalent point in time as `t`. If a direct mapping doesn't exist, it's the last representable value before the insertion of a leap second in the case that `t` represents a point in time when a leap second was inserted. Adding a leap second is referred to as a "leap second insertion". When a leap second is inserted, the time as it nears midnight proceeds from 23 hours 59 minutes 59 seconds to 23 hours 59 minutes 60 seconds (the inserted leap second), and then to 0 hours 0 minutes 0 seconds (midnight). In the past, leap seconds have been added either on June 30 or December 31.
 
-## <a name="is_steady_constant"></a> is_steady
+## <a name="is_steady_constant"></a> `is_steady`
 
 Static value that specifies whether the clock type is *steady*. In Microsoft's implementation, `is_steady_constant` is **`false`**. Because the `utc_clock` isn't steady, you can't reliably use this clock to take the time before an event, the time after an event, and subtract them to get the duration of the event because the clock may be adjusted during that time.
 
@@ -129,7 +129,7 @@ static time_point now() noexcept;
 
 ### Return Value
 
-A [time_point](../standard-library/time-point-class.md) object that represents the current time. The returned time point is effectively `from_sys(system_clock::now())`.
+A [`time_point`](../standard-library/time-point-class.md) object that represents the current time. The returned time point is effectively `from_sys(system_clock::now())`.
 
 ## See also
 

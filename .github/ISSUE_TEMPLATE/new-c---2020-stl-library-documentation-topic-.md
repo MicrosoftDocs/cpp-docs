@@ -2,10 +2,9 @@
 name: 'New C++ 2020 STL library documentation topic '
 about: Create a C++ 2020 doc tracking work item
 title: ''
-labels: STL doc work, C++20
+labels: C++20, STL doc work
 assignees: ''
-milestone: backlog
-project: C++20
+
 ---
 
 ISO paper for this feature: [PaperID]()

@@ -11,10 +11,9 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# high_resolution_clock struct
+# `high_resolution_clock` struct
 
-Represents a *high_resolution* clock with a nanosecond tick period.\
-Specifically, the period is `ratio<1, 1000000000>`  
+Represents a *high_resolution* clock with the smallest possible tick period. Specifically, the period is a nanosecond, or `ratio<1, 1000000000>`
 
 In Microsoft's implementation, `high_resolution_clock` is a synonym for [`steady_clock`](steady-clock-struct.md).
 
@@ -26,7 +25,7 @@ using high_resolution_clock = steady_clock;
 
 ## Members
 
-### Typedefs
+### Convenience type aliases
 
 |Name|Description|
 |----------|-----------------|
