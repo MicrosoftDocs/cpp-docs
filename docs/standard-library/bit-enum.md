@@ -5,7 +5,8 @@ ms.date: "08/27/2020"
 f1_keywords: ["bit/std::endian"]
 helpviewer_keywords: ["std::endian"]
 ---
-# endian enum
+
+# `endian` enum
 
 Indicates the endianness of all scalar types.
 
@@ -32,12 +33,12 @@ All native scalar types are little-endian for the platforms that Microsoft Visua
 
 ## Requirements
 
-**Header:** \<bit>
+**Header:** `<bit>`
 
-**Namespace:** std
+**Namespace:** `std`
 
-[`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later is required.
+Compiler option: [`/std:c++20`](../build/reference/std-specify-language-standard-version.md) or later is required.
 
 ## See also
 
-[\<bit>](../standard-library/bit.md)  
+[`<bit>`](../standard-library/bit.md)  

@@ -4,9 +4,9 @@ title: "steady_clock struct"
 ms.date: 08/19/2021
 f1_keywords: ["chrono/std::chrono::steady_clock"]
 ---
-# steady_clock struct
+# `steady_clock` struct
 
-Represents a *steady* clock.
+Represents a clock that is never adjusted and that moves forward at a uniform rate.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ The value that is returned by a first call to `now` is always less than or equal
 
 `high_resolution_clock` is a typedef for `steady_clock`. On Windows, `steady_clock` wraps the `QueryPerformanceCounter` function.
 
-### Public typedefs
+### Convenience type aliases
 
 |Name|Description|
 |----------|-----------------|
@@ -48,6 +48,8 @@ The value that is returned by a first call to `now` is always less than or equal
 **Header:** `<chrono>`
 
 **Namespace:** `std::chrono`
+
+## See also
 
 [`<chrono>`](chrono.md)\
 [`file_clock class`](file-clock-class.md)\
