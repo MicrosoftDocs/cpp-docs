@@ -7,7 +7,7 @@ f1_keywords: ["chrono/std::chrono::last_spec"]
 
 # last_spec struct
 
-Used to indicate the last item in a month, such as last day of the week of a month (the last Tuesday of February 2020) or the last day of a month (the last day of April 2019).
+Indicates the last item in a month, such as last day of the week of a month (the last Tuesday of February 2020) or the last day of a month (the last day of April 2019).
 
 ## Syntax
 
