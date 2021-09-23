@@ -5,7 +5,7 @@ ms.date: 08/19/2021
 f1_keywords: ["chrono/std::chrono::tai_clock", "chrono/std::chrono::tai_clock::now", "chrono/std::chrono::tai_clock::to_utc", "chrono/std::chrono::tai_clock::from_utc", "chrono/std::chrono::tai_clock::is_steady Constant", "std::chrono::tai_clock::get_leap_second_info"]
 ---
 
-# tai_clock class
+# `tai_clock` class
 
 This clock reports international atomic time since 00:00:00 on Thursday, January 1, 1958. This clock doesn't account for leap seconds.
 
@@ -27,9 +27,9 @@ The clock's epoch, or the date and time from which it starts measuring time, is 
 
 |Name|Description|
 |----------|-----------------|
-|[from_utc](#from_utc)| Static. Converts a `utc_time` to a `tai_time`.|
-|[now](#now)| Static. Returns the current International Atomic Time. |
-|[to_utc](#to_utc)| Static. Converts `tai_time` to `utc_time`.|
+|[`from_utc`](#from_utc)| Static. Converts a `utc_time` to a `tai_time`.|
+|[`now`](#now)| Static. Returns the current International Atomic Time. |
+|[`to_utc`](#to_utc)| Static. Converts `tai_time` to `utc_time`.|
 
 ## Non-members
 
@@ -39,7 +39,7 @@ The clock's epoch, or the date and time from which it starts measuring time, is 
 | [`get_leap_second_info`](chrono-functions.md#std-chrono-get-leap-second-info) | Get information about whether the supplied time specifies a time when a leap second was inserted, and the sum of all the leap seconds between January 1, 1970 and the specified duration. |
 | [`operator<<`](chrono-operators.md#op_left_shift) | Output a `tai_time` to the given stream. |
 
-## Public typedefs
+## Convenience type aliases
 
 |Name|Description|
 |----------|-----------------|
@@ -59,7 +59,7 @@ The clock's epoch, or the date and time from which it starts measuring time, is 
 
 |Name|Description|
 |----------|-----------------|
-|[tai_clock::is_steady constant](#is_steady_constant)|Indicates whether the clock type is steady. Its value is `false`.|
+|[`tai_clock::is_steady constant`](#is_steady_constant)|Indicates whether the clock type is steady. Its value is `false`.|
 
 ## Requirements
 
@@ -69,7 +69,7 @@ The clock's epoch, or the date and time from which it starts measuring time, is 
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
-## <a name="from_utc"></a> from_utc
+## <a name="from_utc"></a> `from_utc`
 
 Static method that converts a `utc_time` to a `tai_time`.
 
@@ -88,7 +88,7 @@ The `utc_time` to convert.
 
 A `tai_time` that represents the equivalent `utc_time` as *`t`*. It's calculated by taking the time since the epoch of the UTC clock and adding `378691210s` where `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
 
-## <a name="to_utc"></a> to_utc
+## <a name="to_utc"></a> `to_utc`
 
 Static method that converts a `tai_time` to a `utc_time`.
 
@@ -107,7 +107,7 @@ The `tai_time` to convert.
 
 A `utc_time` that represents the equivalent `tai_time` as *`t`*. It's calculated as `utc_time<common_type_t<Duration, seconds>>{t.time_since_epoch()} - 378691210s` where `378691210s == sys_days{1970y/January/1} - sys_days{1958y/January/1} + 10s`
 
-## <a name="is_steady_constant"></a> is_steady
+## <a name="is_steady_constant"></a> `is_steady`
 
 Static value that specifies whether the clock type is *steady*. In the Microsoft implementation, `is_steady_constant` is **`false`**. Because `tai_clock` isn't steady, you can't use this clock to take the time before an event, the time after an event, and subtract them to get the duration of the event because the clock may be adjusted during that time.
 
@@ -115,7 +115,7 @@ Static value that specifies whether the clock type is *steady*. In the Microsoft
 static const bool is_steady = false;
 ```
 
-## <a name="now"></a> now
+## <a name="now"></a> `now`
 
 Static method that returns the current TAI time.
 
@@ -126,6 +126,8 @@ static time_point now() noexcept;
 ### Return Value
 
 A [time_point](../standard-library/time-point-class.md) object that represents the current time. The returned time point is effectively `from_utc(utc_clock::now())`.
+
+## See also
 
 [`<chrono>`](chrono.md)\
 [`file_clock class`](file-clock-class.md)\

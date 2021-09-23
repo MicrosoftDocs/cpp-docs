@@ -1,21 +1,35 @@
 ---
 description: "Learn more about: time_zone class"
 title: "time_zone class"
-ms.date: 04/28/2021
+ms.date: 09/08/2021
 f1_keywords: ["chrono/std::chrono::time_zone::name", "chrono/std::chrono::time_zone::get_info", "chrono/std::chrono::time_zone::to_sys", "chrono/std::chrono::time_zone::to_local"]
 helpviewer_keywords: ["std::chrono [C++], time_zone class", "std::chrono::time_zone::name function", "std::chrono::time_zone::get_info function", "std::chrono::time_zone::to_sys function", "std::chrono::time_zone::to_local function"]
 ---
 # `time_zone` class
 
-A `time_zone` represents all the time zone transitions for a specific geographic area. The library creates `time_zone` objects as part of its time zone database initialization. It provides **`const`** access to the created objects. You can't construct or copy a `time_zone` object, and use of the default move constructor or default move assignment operator results in undefined behavior.
-
-Microsoft C++ supports the `time_zone` class starting in Visual Studio 2019 version 16.10. The `time_zone` class is a C++20 feature. The [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option is required.
+A `time_zone` represents the time zone for a specific geographic area.
 
 ## Syntax
 
 ```cpp
-class time_zone {  // Since C++20
+class time_zone;  // Since C++20
 ```
+
+## Remarks
+
+The `<chrono>` library creates `time_zone` objects as part of its time zone database initialization. It provides **`const`** access to the created objects.
+
+You can't construct or copy a `time_zone` object, and using the default move constructor or default move assignment operator results in undefined behavior.
+
+This is how you get a `time_zone` instance:
+
+```cpp
+const auto& timeZoneDatabase = get_tzdb(); // initialize the time zone database
+const auto& currentZone = timeZoneDatabase.current_zone();
+```
+
+Microsoft C++ supports the `time_zone` class starting in Visual Studio 2019 version 16.10. The `time_zone` class is a C++20 feature. The [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option is required.
+
 
 ## Members
 
@@ -109,6 +123,31 @@ The `sys_time` time point used to get a `sys_info` result.
 
 Microsoft C++ supports `time_zone::to_local` starting in Visual Studio 2019 version 16.10. The function is a C++20 feature that requires the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
 
+### Example: convert `sys_time` to `local_time`
+
+```cpp
+// compile using: /std:c++latest
+#include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
+
+int main()
+{
+    const auto& timeZoneDatabase = get_tzdb();
+    const auto& currentZone = timeZoneDatabase.current_zone();
+    local_time<system_clock::duration> lt = currentZone->to_local(system_clock::now());
+
+    std::cout << "local_time: " << lt << "\n";
+   
+    return 0;
+}
+```
+
+```output
+local_time: 2021-09-08 15:15:53.1830646
+```
+
 ## <a name="std-chrono-time-zone-to-sys"></a> `to_sys`
 
 The function template `to_sys` has two overloads that convert a `local_time` to a `sys_time` in this `time_zone`.
@@ -145,6 +184,32 @@ The two-parameter overload doesn't throw an exception in these cases. If the con
 ### Remarks
 
 Microsoft C++ supports `time_zone::to_sys` starting in Visual Studio 2019 version 16.10. The function is a C++20 feature that requires the [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option.
+
+### Example: convert `local_time` to `sys_time`
+
+```cpp
+// compile using: /std:c++latest
+#include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
+
+int main()
+{
+    const auto& timeZoneDatabase = get_tzdb();
+    const auto& currentZone = timeZoneDatabase.current_zone();
+
+    auto st = currentZone->to_sys(local_days{2021y/September/15d}+16h+45min, choose::earliest);
+
+    std::cout << "sys_time: " << st << "\n";
+   
+    return 0;
+}
+```
+
+```output
+sys_time: 2021-09-15 23:45:00.0000000
+```
 
 ## See also
 

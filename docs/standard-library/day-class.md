@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: day Class"
 title: "day class"
-ms.date: "05/21/2021"
+ms.date: 09/07/2021
 f1_keywords: ["chrono/std::chrono::day", "chrono/std::chrono::day::ok", "chrono/std::chrono::day:operator++", "chrono/std::chrono::day::operator--", "chrono/std::chrono::day::operator unsigned"]
 helpviewer_keywords: ["std::chrono [C++], day"]
 ---
@@ -81,15 +81,17 @@ using namespace std::chrono;
 
 int main()
 {
-    day d{1};
+    day d{1}; // day 1
+    day d2 = 2d; // day 2
 
-    std::cout << d;
+    std::cout << d << ", " << d2;
+
     return 0;
 }
 ```
 
 ```output
-01
+01, 02
 ```
 
 ## <a name="ok"></a> `ok`

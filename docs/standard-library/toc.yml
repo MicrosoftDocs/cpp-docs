@@ -148,6 +148,8 @@
           href: chrono-operators.md
         - name: <chrono> literals
           href: chrono-literals.md
+        - name: choose enum
+          href: choose-enum.md
         - name: common_type struct
           href: common-type-structure.md
         - name: day class
@@ -158,10 +160,6 @@
           href: duration-values-structure.md
         - name: file_clock class
           href: file-clock-class.md
-        - name: last_spec
-          href: last-spec-struct.md
-        - name: local_t
-          href: local_t.md
         - name: gps_clock class
           href: gps-clock-class.md
         - name: hh_mm_ss class
@@ -170,10 +168,16 @@
           href: high-resolution-clock-struct.md
         - name: is_clock struct 
           href: is-clock-struct.md
+        - name: last_spec
+          href: last-spec-struct.md
         - name: leap_second class
           href: leap-second-class.md
         - name: leap_second_info struct
           href: leap-second-info-struct.md
+        - name: local_info struct
+          href: local-info-struct.md
+        - name: local_t
+          href: local_t.md
         - name: month class
           href: month-class.md
         - name: month_day class
@@ -186,6 +190,8 @@
           href: month-weekday-last-class.md
         - name: steady_clock struct
           href: steady-clock-struct.md
+        - name: sys_info struct
+          href: sys-info-struct.md
         - name: system_clock struct
           href: system-clock-structure.md
         - name: tai_clock class
@@ -218,6 +224,8 @@
           href: year-month-weekday-class.md
         - name: year_month_weekday_last class
           href: year-month-weekday-last-class.md
+        - name: zoned_time class
+          href: zoned-time-class.md
     - name: <cinttypes>
       href: cinttypes.md
     - name: <ciso646>

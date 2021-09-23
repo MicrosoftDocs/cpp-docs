@@ -5,7 +5,7 @@ ms.date: 08/19/2021
 f1_keywords: ["chrono/std::chrono::file_clock", "chrono/std::chrono::file_clock::now", "chrono/std::chrono::file_clock::to_utc", "chrono/std::chrono::file_clock::from_utc", "chrono/std::chrono::file_clock::is_steady Constant"]
 ---
 
-# file_clock class
+# `file_clock` class
 
 This clock can represent the range and resolution of file time values used in the file system.
 
@@ -25,9 +25,9 @@ The ISO C++ Standard provides a choice between providing `to_sys()` and `from_sy
 
 |Name|Description|
 |----------|-----------------|
-|[from_utc](#from_utc)| Static. Converts a `utc_time` to a `file_time`.|
-|[now](#now)| Static. Returns the current International Atomic Time. |
-|[to_utc](#to_utc)| Static. Converts a `file_time` to `utc_time`.|
+|[`from_utc`](#from_utc)| Static. Converts a `utc_time` to a `file_time`.|
+|[`now`](#now)| Static. Returns the current International Atomic Time. |
+|[`to_utc`](#to_utc)| Static. Converts a `file_time` to `utc_time`.|
 
 ## Non-members
 
@@ -36,7 +36,7 @@ The ISO C++ Standard provides a choice between providing `to_sys()` and `from_sy
 | [`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `file_clock` from the given stream using the specified format. |
 | [`operator<<`](chrono-operators.md#op_left_shift) | Output  `file_time` to the given stream. |
 
-## Public typedefs
+## Convenience type aliases
 
 |Name|Description|
 |----------|-----------------|
@@ -49,13 +49,13 @@ The ISO C++ Standard provides a choice between providing `to_sys()` and `from_sy
 
 |Name|Description|
 |----------|-----------------|
-|file_time|A synonym for `template <class Duration> using file_time = time_point<file_clock, Duration>`. Represents a `time_point` for a [`file_clock`](file-clock-class.md). You specify the `Duration`. Defined in `std::chrono`|
+|`file_time`|A synonym for `time_point<file_clock, Duration>`. Represents a `time_point` for a [`file_clock`](file-clock-class.md). You specify the `Duration`. Defined in `std::chrono`|
 
 ## Public constants
 
 |Name|Description|
 |----------|-----------------|
-|[file_clock::is_steady constant](#is_steady_constant)|Indicates whether the clock type is steady. Its value is `false`.|
+|[`file_clock::is_steady constant`](#is_steady_constant)|Indicates whether the clock type is steady. Its value is `false`.|
 
 ## Requirements
 
@@ -65,7 +65,7 @@ The ISO C++ Standard provides a choice between providing `to_sys()` and `from_sy
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
-## <a name="from_utc"></a> from_utc
+## <a name="from_utc"></a> `from_utc`
 
 Static method that converts a `utc_time` to a `file_time`.
 
@@ -107,7 +107,7 @@ int main()
 2021-08-17 00:20:41.2594557
 ```
 
-## <a name="to_utc"></a> to_utc
+## <a name="to_utc"></a> `to_utc`
 
 Static method that converts a `file_time` to a `utc_time`.
 
@@ -147,7 +147,7 @@ int main()
 2021-08-17 00:20:41.2594557
 ```
 
-## <a name="is_steady_constant"></a> is_steady
+## <a name="is_steady_constant"></a> `is_steady`
 
 Static value that specifies whether the clock type is *steady*. In the Microsoft implementation, `is_steady` is **`false`**. This makes this clock unsuitable for measuring how long an operation takes because an unsteady clock can be adjusted while you're timing something so the measured time may be off or even negative. Use a [`high_resolution_clock`](high-resolution-clock-struct.md) to time events, instead.
 

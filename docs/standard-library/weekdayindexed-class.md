@@ -70,14 +70,15 @@ using namespace std::chrono;
 int main()
 {
    constexpr auto wdi = weekday_indexed{Monday, 1};
+   constexpr auto wdi2 = Monday[1];
 
-    std::cout << wdi;
+    std::cout << wdi << ", " << wdi2;
     return 0;
 }
 ```
 
 ```output
-Mon[1]
+Mon[1], Mon[1]
 ```
 
 ## <a name="ok"></a> `ok`

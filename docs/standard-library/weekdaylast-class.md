@@ -98,13 +98,12 @@ The weekday value.
 #include <iostream>
 #include <chrono>
 
-using namespace std;
 using namespace std::chrono;
 
 int main()
 {
     constexpr auto wdl{ Monday[last] }; // wdl is the last Monday of an unspecified month
-	std::cout << wdl.weekday() << "\n";
+    std::cout << wdl.weekday() << "\n";
 
     return 0;
 }
