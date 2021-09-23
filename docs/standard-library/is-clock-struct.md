@@ -72,7 +72,7 @@ true, true, true
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
-## Value
+## `Value`
 
 Get whether the specified type satisfies the requirements to be a clock.
 

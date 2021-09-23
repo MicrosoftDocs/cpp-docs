@@ -86,15 +86,17 @@ using namespace std::chrono;
 
 int main()
 {
-    year y{2021};
+    year y{2020};
+    year y2 = 2021y;
+    
+    std::cout << y << ", " << y2;
 
-    std::cout << y;
     return 0;
 }
 ```
 
 ```output
-2021
+2020, 2021
 ```
 
 ## <a name="is_leap"></a> `is_leap`
