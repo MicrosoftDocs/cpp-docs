@@ -394,6 +394,8 @@ Here are some guidelines:
 
 Or you can annotate all parameters to make your intent clear throughout and to make it easy to check that annotations have been done.
 
+Diagrams in [these slides](https://www.cs.cmu.edu/~fp/courses/15122-f10/lectures/25-sal.pdf) are very helpful for visualizing and recaling SAL concepts.
+
 ## See also
 
 - [Using SAL Annotations to Reduce C/C++ Code Defects](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
