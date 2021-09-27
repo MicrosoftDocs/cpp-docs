@@ -104,19 +104,27 @@ Pointer to list of arguments.
 *`locale`*<br/>
 The locale to use.
 
-For more information, see [Format Specifications](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+For more information, see [Format Specification Syntax: `printf` and `wprintf` Functions](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## Return Value
 
-The **`vsnprintf`** function returns the number of characters that are written, not counting the terminating null character. If the buffer size specified by *`count`* isn't sufficiently large to contain the output specified by *`format`* and *`argptr`*, the return value of **`vsnprintf`** is the number of characters that would be written, not counting the null character, if *`count`* were sufficiently large. If the return value is greater than *`count`* - 1, the output has been truncated. A return value of -1 indicates that an encoding error has occurred.
+Let **`len`** be the length of the formatted data string specified by *`format`* and *`argptr`*, not including the terminating null. Both **`len`** and *`count`* are the number of characters for **`vsnprintf`** and **`_vsnprintf`**, and the number of wide characters for **`_vsnwprintf`**.
 
-Both **`_vsnprintf`** and **`_vsnwprintf`** functions return the number of characters written if the number of characters to write is less than or equal to *`count`*. If the number of characters to write is greater than *`count`*, these functions return -1 indicating that output has been truncated.
+For all functions, if an encoding error occurs during formatting, **`errno`** is set to **`EILSEQ`**. If the encoding error occurs during formatting for a string conversion specifier (type character **`s`** , **`S`**  or **`Z`**), processing of the format specification is aborted and a negative value is returned by the function.
 
-The value returned by all these functions doesn't include the terminating null, whether one is written or not.
+**Microsoft-specific**: if an encoding error occurs during processing a character conversion specifier (type character **`c`** or **`C`**), the processing of the specifier will be aborted and the invalid character will be skipped. In particular, the character count (**`len`**) will not be incremented for this specifier, nor will output be generated for it. Processing of the format specification will continue after skipping the specifier which caused the encoding error, and the function return value will be as described further below.
 
-- If *`count`* is zero and *`buffer`* is **`NULL`**, the value returned is the number of characters the functions would write. The value does not take into account a terminating **`NULL`**. You can use this result to allocate sufficient buffer space for the string and its terminating null, and then call the function again to fill the buffer.
-- If *`count`* is zero but *`buffer`* isn't **`NULL`**, nothing is written and the function returns `-1`.
-- If *`format`* is **`NULL`**, or if *`buffer`* is **`NULL`** and *count* isn't equal to zero, these functions invoke the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to **`EINVAL`**.
+For all functions, if *`buffer`* is a null pointer and *`count`* is zero, **`len`** is returned as the count of characters required to format the output &mdash; not including the terminating null. To make a successful call with the same *`argument`* and *`locale`* parameters, allocate a buffer holding at least **`len`** + 1 characters.
+
+For all functions, if **`len`** < *`count`*, **`len`** characters are stored in *`buffer`*, a null-terminator is appended, and **`len`** is returned.
+
+The **`vsnprintf`** function truncates the output when *`count`* is nonzero and **`len`** >= *`count`*, by placing a null-terminator at `buffer[count-1]` (when *`count`* is zero, no characters are stored in *`buffer`* &mdash; whether it is a null pointer or not). In all cases where **`len`** >= *`count`*, the value returned by the **`vsnprintf`** function is **`len`** (the number of characters that would have been output if *`count`* was large enough). As a corollary, if **`vsnprintf`** returns a value > *`count`* - 1, the output has been truncated.
+
+For all functions other than **`vsnprintf`**, if **`len`** = *`count`*, **`len`** characters are stored in *`buffer`*, no null-terminator is appended, and **`len`** is returned. If **`len`** > *`count`* and *`buffer`* is not a null pointer, *`count`* characters are stored in *`buffer`*, no null-terminator is appended, and a negative value is returned.
+
+If *`buffer`* is a null pointer and *`count`* is nonzero, or if *`format`* is a null pointer, the invalid parameter handler is invoked &mdash; as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions return -1 and set **`errno`** to **`EINVAL`**.
+
+For information about these and other error codes, see [`errno`, `_doserrno`, `_sys_errlist`, and `_sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
