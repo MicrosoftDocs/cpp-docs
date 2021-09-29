@@ -145,7 +145,7 @@ int main( void )
 
     // Conversion
     wcstombs_s(&i, pMBBuffer, (size_t)BUFFER_SIZE,
-               pWCBuffer, (size_t)BUFFER_SIZE );
+               pWCBuffer, (size_t)BUFFER_SIZE - 1);
 
     // Output
     printf("   Characters converted: %u\n", i);
