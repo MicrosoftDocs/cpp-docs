@@ -1,7 +1,7 @@
 ---
 title: "Error: stack-buffer-overflow"
 description: "Source examples and live debug screenshots for Stack buffer overflow errors."
-ms.date: 03/02/2021
+ms.date: 09/28/2021
 f1_keywords: ["stack-buffer-overflow"]
 helpviewer_keywords: ["stack-buffer-overflow error", "AddressSanitizer error stack-buffer-overflow"]
 ---
@@ -92,8 +92,8 @@ public:
 int main(void) {
 
     Parent p;
-    Child *c = (Child*)&p;  // Boom !
-    c->extra_field = 42;
+    Child *c = (Child*)&p;
+    c->extra_field = 42;  // Boom !
 
     return 0;
 }
