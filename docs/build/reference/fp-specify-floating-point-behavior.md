@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: /fp (Specify floating-point behavior)"
 title: "/fp (Specify floating-point behavior)"
-ms.date: 07/15/2021
+ms.date: 09/29/2021
 f1_keywords: ["VC.Project.VCCLCompilerTool.floatingPointModel", "VC.Project.VCCLWCECompilerTool.FloatingPointExceptions", "/fp", "VC.Project.VCCLWCECompilerTool.floatingPointModel", "VC.Project.VCCLCompilerTool.FloatingPointExceptions"]
 helpviewer_keywords: ["-fp compiler option [C++]", "/fp compiler option [C++]"]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
