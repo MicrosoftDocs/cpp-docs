@@ -644,7 +644,7 @@ basic_string(
 ### Parameters
 
 *`ptr`*\
-The C-string whose characters are to be used to initialize the `string` being constructed. This value can't be a null pointer (except when count is zero).
+The C-string whose characters are to be used to initialize the `string` being constructed. This value can't be a null pointer unless *`count`* is zero.
 
 *`alloc_type`*\
 The storage allocator class for the string object being constructed.
