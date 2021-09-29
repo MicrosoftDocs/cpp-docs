@@ -92,8 +92,8 @@ public:
 int main(void) {
 
     Parent p;
-    Child *c = (Child*)&p;  // Boom !
-    c->extra_field = 42;
+    Child *c = (Child*)&p;
+    c->extra_field = 42;  // Boom !
 
     return 0;
 }
