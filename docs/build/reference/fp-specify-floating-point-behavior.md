@@ -179,13 +179,12 @@ int main()
     b = (f2 == f2);
     c = (f1 - f1);
     d = (f2 - f2);
+    e = (gf0 / f3);
     printf("INFINITY == INFINITY : %d\n", a);
     printf("NAN == NAN           : %d\n", b);
     printf("INFINITY - INFINITY  : %f\n", c);
     printf("NAN - NAN            : %f\n", d);
-
-    e = gf0 / abs(f3);
-    printf("std::signbit(-0.0/-INFINITY): %d\n", std::signbit(c));
+    printf("std::signbit(-0.0/-INFINITY): %d\n", std::signbit(e));
     return 0;
 }
 ```
@@ -196,8 +195,8 @@ When compiled by using `/O2 /fp:precise` or `/O2 /fp:strict` for x86 architectur
 INFINITY == INFINITY : 1
 NAN == NAN           : 0
 INFINITY - INFINITY  : -nan(ind)
-NAN - NAN            : -nan(ind)
-std::signbit(-0.0/-INFINITY): 1
+NAN - NAN            : nan
+std::signbit(-0.0/-INFINITY): 0
 ```
 
 When compiled by using `/O2 /fp:fast`** for x86 architecture, the outputs aren't consistent with IEEE-754:
@@ -212,7 +211,7 @@ std::signbit(-0.0/-INFINITY): 0
 
 ### Floating-point algebraic transformations
 
-Under **`/fp:precise`** and **`/fp:strict`**, the compiler doesn't perform mathematical transformations unless the transformation is guaranteed to produce a bitwise identical result. The compiler may make such transformations under **`/fp:fast`**. For example, the expression `a * b + a * c` in the sample function `algebraic_transformation` may be compiled into `a * (b + c)` under **`/fp:fast`**. Such transformations aren't done under **`/fp:precise`** or **`/fp:strict`**, and the compiler generates `a * b + a * c`.
+Under **`/fp:precise`** and **`/fp:strict`**, the compiler doesn't do any mathematical transformation unless the transformation is guaranteed to produce a bitwise identical result. The compiler may make such transformations under **`/fp:fast`**. For example, the expression `a * b + a * c` in the sample function `algebraic_transformation` may be compiled into `a * (b + c)` under **`/fp:fast`**. Such transformations aren't done under **`/fp:precise`** or **`/fp:strict`**, and the compiler generates `a * b + a * c`.
 
 ```cpp
 float algebraic_transformation (float a, float b, float c)
