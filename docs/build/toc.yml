@@ -1118,21 +1118,10 @@
               href: ../build/reference/creating-a-makefile-project.md
             - name: Running NMAKE 
               href: ../build/reference/running-nmake.md
-            - name: Contents of a makefile
-              expanded: false
-              items: 
-                - name: Contents of a makefile
-                  href: ../build/reference/contents-of-a-makefile.md
-                - name: Wildcards and NMAKE
-                  href: ../build/reference/wildcards-and-nmake.md
-                - name: Long filenames in a makefile
-                  href: ../build/reference/long-filenames-in-a-makefile.md
-                - name: Comments in a makefile
-                  href: ../build/reference/comments-in-a-makefile.md
-                - name: Special characters in a makefile
-                  href: ../build/reference/special-characters-in-a-makefile.md
-                - name: Sample makefile
-                  href: ../build/reference/sample-makefile.md
+            - name: Makefile contents and features
+              href: ../build/reference/contents-of-a-makefile.md
+            - name: Sample makefile
+              href: ../build/reference/sample-makefile.md
             - name: Description blocks
               href: ../build/reference/description-blocks.md
             - name: Commands in a makefile
@@ -1140,99 +1129,25 @@
               items: 
                 - name: Commands in a makefile
                   href: ../build/reference/commands-in-a-makefile.md
-                - name: Command modifiers
-                  href: ../build/reference/command-modifiers.md
-                - name: Filename-parts syntax
-                  href: ../build/reference/filename-parts-syntax.md
                 - name: Inline files in a makefile
-                  expanded: false
-                  items: 
-                    - name: Inline files in a makefile
-                      href: ../build/reference/inline-files-in-a-makefile.md
-                    - name: Specifying an inline file
-                      href: ../build/reference/specifying-an-inline-file.md
-                    - name: Creating inline file text
-                      href: ../build/reference/creating-inline-file-text.md
-                    - name: Reusing inline files
-                      href: ../build/reference/reusing-inline-files.md
-                    - name: Multiple inline files
-                      href: ../build/reference/multiple-inline-files.md
+                  href: ../build/reference/inline-files-in-a-makefile.md
             - name: Macros and NMAKE
               expanded: false
               items: 
                 - name: Macros and NMAKE
                   href: ../build/reference/macros-and-nmake.md
-                - name: Defining an NMAKE macro
-                  expanded: false
-                  items: 
-                    - name: Defining an NMAKE macro
-                      href: ../build/reference/defining-an-nmake-macro.md
-                    - name: Special characters in macros
-                      href: ../build/reference/special-characters-in-macros.md
-                    - name: Null and undefined macros
-                      href: ../build/reference/null-and-undefined-macros.md
-                    - name: Where to define macros
-                      href: ../build/reference/where-to-define-macros.md
-                    - name: Precedence in macro definitions
-                      href: ../build/reference/precedence-in-macro-definitions.md
-                - name: Using an NMAKE macro
-                  expanded: false
-                  items: 
-                    - name: Using an NMAKE macro
-                      href: ../build/reference/using-an-nmake-macro.md
-                    - name: Macro substitution
-                      href: ../build/reference/macro-substitution.md
+                - name: Define an NMAKE macro
+                  href: ../build/reference/defining-an-nmake-macro.md
+                - name: Use an NMAKE macro
+                  href: ../build/reference/using-an-nmake-macro.md
                 - name: Special NMAKE macros
-                  expanded: false
-                  items: 
-                    - name: Special NMAKE macros
-                      href: ../build/reference/special-nmake-macros.md
-                    - name: Filename macros
-                      href: ../build/reference/filename-macros.md
-                    - name: Recursion macros
-                      href: ../build/reference/recursion-macros.md
-                    - name: Command macros and options macros
-                      href: ../build/reference/command-macros-and-options-macros.md
-                    - name: Environment-variable macros
-                      href: ../build/reference/environment-variable-macros.md
+                  href: ../build/reference/special-nmake-macros.md
             - name: Inference rules
-              expanded: false
-              items: 
-                - name: Inference rules
-                  href: ../build/reference/inference-rules.md
-                - name: Defining a rule
-                  expanded: false
-                  items: 
-                    - name: Defining a rule
-                      href: ../build/reference/defining-a-rule.md
-                    - name: Search paths in rules
-                      href: ../build/reference/search-paths-in-rules.md
-                - name: Batch-mode rules
-                  href: ../build/reference/batch-mode-rules.md
-                - name: Predefined rules
-                  href: ../build/reference/predefined-rules.md
-                - name: Inferred dependents and rules
-                  href: ../build/reference/inferred-dependents-and-rules.md
-                - name: Precedence in inference rules
-                  href: ../build/reference/precedence-in-inference-rules.md
+              href: ../build/reference/inference-rules.md
             - name: Dot directives
               href: ../build/reference/dot-directives.md
             - name: Makefile preprocessing
-              expanded: false
-              items: 
-                - name: Makefile preprocessing
-                  href: ../build/reference/makefile-preprocessing.md
-                - name: Makefile preprocessing directives
-                  href: ../build/reference/makefile-preprocessing-directives.md
-                - name: Expressions in makefile preprocessing
-                  expanded: false
-                  items: 
-                    - name: Expressions in makefile preprocessing
-                      href: ../build/reference/expressions-in-makefile-preprocessing.md
-                    - name: Makefile preprocessing operators
-                      href: ../build/reference/makefile-preprocessing-operators.md
-                    - name: Executing a program in preprocessing
-                      href: ../build/reference/executing-a-program-in-preprocessing.md
+              href: ../build/reference/makefile-preprocessing.md
         - name: LIB reference
           expanded: false
           items: 
