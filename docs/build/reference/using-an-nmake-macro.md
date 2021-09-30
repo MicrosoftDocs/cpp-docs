@@ -1,27 +1,30 @@
 ---
-description: "Learn more about: Using an NMAKE Macro"
-title: "Using an NMAKE Macro"
-ms.date: "11/04/2016"
-helpviewer_keywords: ["macros, NMAKE", "NMAKE macros, using"]
-ms.assetid: 95c87fbc-76e6-48c0-8536-9bfe179f328e
+description: "Learn more about: Using an NMAKE macro"
+title: "Use an NMAKE macro"
+ms.date: 09/30/2021
+helpviewer_keywords: ["macros, NMAKE", "NMAKE macros, using", "NMAKE program, macro substitution", "substitution macros in NMAKE"]
 ---
-# Using an NMAKE Macro
+# Use an NMAKE macro
 
-To use a macro, enclose its name in parentheses preceded by a dollar sign ($) as follows.
+To use a macro, enclose its name in parentheses preceded by a dollar sign (**`$`**) as follows:
 
-## Syntax
-
-```
-$(macroname)
+```makefile
+$(macro_name)
 ```
 
-## Remarks
+No spaces are allowed. The parentheses are optional if *macro_name* is a single character. The definition string replaces `$(macro_name)`; an undefined macro is replaced by a null string.
 
-No spaces are allowed. The parentheses are optional if *macroname* is a single character. The definition string replaces $(*macroname*); an undefined macro is replaced by a null string.
+## <a name="macro-substitution"> Macro substitution
 
-## What do you want to know more about?
+When *macro_name* is invoked, each occurrence of *string1* in its definition string is replaced by *string2*.
 
-[Macro substitution](macro-substitution.md)
+```makefile
+$(macro_name:string1=string2)
+```
+
+Macro substitution is case sensitive and is literal; *string1* and *string2* can't invoke macros. Substitution doesn't modify the original definition. You can replace text in any predefined macro except [`$$@`](special-nmake-macros.md#filename-macros).
+
+No spaces or tabs precede the colon (**`:`**); any spaces or tabs after the colon are interpreted as literal. If *string2* is null, all occurrences of *string1* are deleted from the macro's definition string.
 
 ## See also
 
