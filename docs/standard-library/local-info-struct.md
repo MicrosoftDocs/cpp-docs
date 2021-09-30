@@ -30,7 +30,7 @@ Provides a low-level interface to time zone information about the result of conv
 |Name|Value|Description|
 |------|------|-------------|
 |`unique` | 0 | The result of the conversion is unique. |
-|`nonexistent` | 1 | The `local_time` doesn't exist. |
+|`nonexistent` | 1 | There isn't a corresponding `sys_time` for the `local_time`. |
 |`ambiguous` | 2 | The result of the conversion is ambiguous. |
 
 ## Non-members
@@ -52,7 +52,7 @@ int result;
 The result can be one of the following values: 
 - `unique`: The `local_time` was successfully converted to a `sys_time`.
 - `nonexistent`: There isn't a mapping from the `local_time` to the `sys_time`.
-- `ambiguous`: The `local_time` can resolve to multiple `sys_time` values.
+- `ambiguous`: The `local_time` lands during a daylight savings time transition and thus can resolve to two `sys_time` values.
 
 ### Remarks
 
@@ -75,7 +75,11 @@ sys_seconds end;
 |---------|-------|-------|
 |`unique`| Contains the value of `local_time` converted to `sys_time`| zero-initialized |
 |`nonexistent`| A `sys_info` that ends just before the `local_time`|A `sys_info` that begins just after the `local_time`.|
-| `ambiguous` | A `sys_info` that ends just after the `local_time` | A `sys_info` that starts just before the local_time.|
+| `ambiguous` | A `sys_info` that ends just after the `local_time` | A `sys_info` that starts just before the `local_time`.|
+
+If the `local_time` is on a daylight saving transition that is "springing forward", there’s an hour that doesn’t exist. If the `local_time` that is being paired with a time zone is within that hour, expect a `nonexistent` `result` code.
+
+If the `local_time` is on a daylight saving transition that is "falling back", there’s an extra hour that's being inserted. If the `local_time` is during that hour, should the corresponding time in the time zone be the "first" time that hour happens (which was 60 minutes before daylight savings took effect), or the "second" time that hour comes around again 60 minutes later? In this case, you'd expect an `ambiguous` `result` code and `first` and `second` will reflect the two options the `local_time` could be converted to.
 
 ## Example: get a `local_info`
 

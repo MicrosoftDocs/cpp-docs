@@ -7,7 +7,7 @@ helpviewer_keywords: ["std::chrono [C++], time_zone class", "std::chrono::time_z
 ---
 # `time_zone` class
 
-A `time_zone` represents the time zone for a specific geographic area.
+A `time_zone` represents the time zone for a specific geographic area. It has the full history of time zone rules for each area.
 
 ## Syntax
 
@@ -29,7 +29,6 @@ const auto& currentZone = timeZoneDatabase.current_zone();
 ```
 
 Microsoft C++ supports the `time_zone` class starting in Visual Studio 2019 version 16.10. The `time_zone` class is a C++20 feature. The [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) compiler option is required.
-
 
 ## Members
 
