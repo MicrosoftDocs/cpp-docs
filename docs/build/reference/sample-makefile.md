@@ -1,8 +1,7 @@
 ---
 description: "Learn more about: Sample Makefile"
 title: "Sample Makefile"
-ms.date: "11/04/2016"
-ms.assetid: 8343ce71-5556-4ae0-8d1e-7efd82673070
+ms.date: 09/30/2021
 ---
 # Sample Makefile
 
@@ -12,7 +11,7 @@ This topic contains a sample makefile.
 
 ### Code
 
-```
+```makefile
 # Sample makefile
 
 !include <win32.mak>
@@ -31,4 +30,4 @@ challeng.exe: challeng.obj md4c.obj
 
 ## See also
 
-[Contents of a Makefile](contents-of-a-makefile.md)
+[Makefile contents and features](contents-of-a-makefile.md)
