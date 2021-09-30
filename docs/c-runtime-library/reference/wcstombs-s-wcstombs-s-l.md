@@ -1,14 +1,13 @@
 ---
 description: "Learn more about: wcstombs_s, _wcstombs_s_l"
 title: "wcstombs_s, _wcstombs_s_l"
-ms.date: "4/2/2020"
+ms.date: 09/30/2021
 api_name: ["_wcstombs_s_l", "wcstombs_s", "_o__wcstombs_s_l", "_o_wcstombs_s"]
 api_location: ["msvcrt.dll", "msvcr80.dll", "msvcr90.dll", "msvcr100.dll", "msvcr100_clr0400.dll", "msvcr110.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr120_clr0400.dll", "ucrtbase.dll", "api-ms-win-crt-convert-l1-1-0.dll", "api-ms-win-crt-private-l1-1-0.dll"]
 api_type: ["DLLExport"]
 topic_type: ["apiref"]
 f1_keywords: ["wcstombs_s", "_wcstombs_s_l"]
 helpviewer_keywords: ["wcstombs_s function", "string conversion, wide characters", "wide characters, converting", "_wcstombs_s_l function", "wcstombs_s_l function", "characters, converting", "string conversion, multibyte character strings"]
-ms.assetid: 105f2d33-221a-4f6d-864c-23c1865c42af
 ---
 # `wcstombs_s`, `_wcstombs_s_l`
 
@@ -137,26 +136,27 @@ This program illustrates the behavior of the **`wcstombs_s`** function.
 
 int main( void )
 {
-    size_t   i;
-    char      *pMBBuffer = (char *)malloc( BUFFER_SIZE );
-    wchar_t*pWCBuffer = L"Hello, world.";
+    size_t i;
+    char *pMBBuffer = (char *)malloc( BUFFER_SIZE );
+    const wchar_t*pWCBuffer = L"Hello, world.";
 
     printf( "Convert wide-character string:\n" );
 
     // Conversion
     wcstombs_s(&i, pMBBuffer, (size_t)BUFFER_SIZE,
-               pWCBuffer, (size_t)BUFFER_SIZE - 1);
+               pWCBuffer, (size_t)BUFFER_SIZE - 1); // -1 so the appended NULL doesn't fall outside the allocated buffer
 
     // Output
     printf("   Characters converted: %u\n", i);
-    printf("    Multibyte character: %s\n\n",
-     pMBBuffer );
+    printf("    Multibyte character: %s\n\n", pMBBuffer );
 
     // Free multibyte character buffer
     if (pMBBuffer)
     {
-    free(pMBBuffer);
+        free(pMBBuffer);
     }
+    
+    return 0;
 }
 ```
 
