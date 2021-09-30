@@ -59,7 +59,7 @@ int main()
 |Name|Description|
 |----------|-----------------|
 | [Constructors](#ctor) | Construct a `nonexistent_local_time`. |
-| [`what`](#ok) | Gets a string describing the non-existent time. |
+| [`what`](#what) | Gets a string describing the non-existent time. |
 
 ## Requirements
 
@@ -113,4 +113,5 @@ A string describing why the time is non-existent. For example:
 
 [`<chrono>`](../standard-library/chrono.md)\
 [`to_sys` ](month-day-class.md)\
+[`ambiguous_local_time`](ambiguous-local-time.md)\
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)

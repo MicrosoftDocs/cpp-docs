@@ -58,7 +58,7 @@ int main()
 |Name|Description|
 |----------|-----------------|
 | [Constructors](#ctor) | Construct a `ambiguous_local_time`. |
-| [`what`](#ok) | Gets a string describing the ambiguity. |
+| [`what`](#what) | Gets a string describing the ambiguity. |
 
 ## Requirements
 
@@ -94,7 +94,7 @@ You typically won't create this exception. It's thrown by functions that convert
 Gets a string describing the details of the ambiguity.
 
 ```cpp
-[[nodiscard]]virtual const char* what() const noexcept;
+[nodiscard] virtual const char* what() const noexcept;
 ```
 
 ### Return value
@@ -111,4 +111,5 @@ A string describing the ambiguity. For example:
 
 [`<chrono>`](../standard-library/chrono.md)\
 [`to_sys` ](month-day-class.md)\
+[`nonexistent_local_time`](nonexistent-local-time.md)\
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
