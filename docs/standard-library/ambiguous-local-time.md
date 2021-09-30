@@ -87,7 +87,7 @@ Information about the attempted conversion. See [`local_info`](local-info-struct
 
 ### Remarks
 
-You typically won't create this exception. It is thrown by functions that convert a `local_time` to a `sys_time`.
+You typically won't create this exception. It's thrown by functions that convert a `local_time` to a `sys_time`.
 
 ## <a name="what"></a> `what`
 

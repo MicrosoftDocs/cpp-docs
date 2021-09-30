@@ -20,7 +20,7 @@ class nonexistent_local_time : public runtime_error; // c++ 20
 
 Given a `local_time` in a specific time zone, converting it to a `sys_time` could result in a time that doesn't exist.
 
-For example, if the `local_time` is during a the transition to daylight saving time, in which the clock is "springing forward", there’s an hour that doesn't exist because it is "removed" as the clocks "springs forward" an hour. If the `local_time` is during that hour, the conversion would result in a non-existent time.
+For example, if the `local_time` is during the transition to daylight saving time, in which the clock is "springing forward", there’s an hour that doesn't exist because it is "removed" as the clocks "springs forward" an hour. If the `local_time` is during that hour, the conversion would result in a non-existent time.
 
 The following example demonstrates an ambiguous conversion.
 
@@ -88,7 +88,7 @@ Information about the attempted conversion. See [`local_info`](local-info-struct
 
 ### Remarks
 
-You typically won't create this exception. It is thrown by functions that convert a `local_time` to a `sys_time`.
+You typically won't create this exception. It's thrown by functions that convert a `local_time` to a `sys_time`.
 
 ## <a name="what"></a> `what`
 
