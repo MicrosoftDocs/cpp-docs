@@ -121,6 +121,8 @@ In the Microsoft C++ implementation, `steady_clock::time_point` is now a `typede
 
 ## Typedefs
 
+For more information about ratio types that are used in the following typedefs, see [`<ratio>`](ratio.md).
+
 **Convenience `duration`  types**
 
 | Name | Description |
