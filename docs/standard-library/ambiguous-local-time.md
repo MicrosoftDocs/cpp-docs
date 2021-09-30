@@ -83,7 +83,7 @@ ambiguous_local_time(const local_time<Duration>& tp, const local_info& i);
 The local_time that failed conversion.
 
 *`i`*\
-Information about the attempted conversion. See [`local_info`](local-info-structure.md) for details.
+Information about the attempted conversion. See [`local_info`](local-info-struct.md) for details.
 
 ### Remarks
 
@@ -112,4 +112,4 @@ A string describing the ambiguity. For example:
 [`<chrono>`](../standard-library/chrono.md)\
 [`to_sys` ](month-day-class.md)\
 [`nonexistent_local_time`](nonexistent-local-time.md)\
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+[Header Files Reference](cpp-standard-library-header-files.md)

@@ -37,7 +37,7 @@ int main()
     try
     {
         // The following will throw an exception because the local time lands during the hour that is removed
-        // as clocks move forward another for daylight saving time.
+        // as clocks move forward another hour for daylight saving time.
         auto zt = zoned_time{"America/New_York", local_days{Sunday[2]/March/2016} + 2h + 30min};
     } catch (const nonexistent_local_time& e)
     {
@@ -84,7 +84,7 @@ nonexistent_local_time(const local_time<Duration>& tp, const local_info& i);
 The local_time that failed conversion.
 
 *`i`*\
-Information about the attempted conversion. See [`local_info`](local-info-structure.md) for details.
+Information about the attempted conversion. See [`local_info`](local-info-struct.md) for details.
 
 ### Remarks
 
