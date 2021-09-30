@@ -8,7 +8,7 @@ helpviewer_keywords: ["std::chrono [C++],  nonexistent_local_time"]
 
 # `nonexistent_local_time` class
 
-Represents the error thrown when a `local_time` is converted to a `sys_time` but the result would be a time that doesn't exist.
+Represents the error thrown when a `local_time` is converted to a `sys_time` and the result is a time that doesn't exist.
 
 ## Syntax
 
