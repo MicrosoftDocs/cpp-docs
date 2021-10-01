@@ -317,17 +317,32 @@
     },
     {
       "source_path": "docs/build/batch-mode-rules.md",
-      "redirect_url": "/cpp/build/reference/batch-mode-rules",
+      "redirect_url": "/cpp/build/reference/inference-rules#batch-mode-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/batch-mode-rules.md",
+      "redirect_url": "/cpp/build/reference/inference-rules#batch-mode-rules",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build/command-macros-and-options-macros.md",
-      "redirect_url": "/cpp/build/reference/command-macros-and-options-macros",
+      "redirect_url": "/cpp/build/reference/special-nmake-macros#command-macros-and-options-macros",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/command-macros-and-options-macros.md",
+      "redirect_url": "/cpp/build/reference/special-nmake-macros#command-macros-and-options-macros",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build/command-modifiers.md",
-      "redirect_url": "/cpp/build/reference/command-modifiers",
+      "redirect_url": "/cpp/build/reference/commands-in-a-makefile#command-modifiers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/command-modifiers.md",
+      "redirect_url": "/cpp/build/reference/commands-in-a-makefile#command-modifiers",
       "redirect_document_id": false
     },
     {
@@ -337,7 +352,12 @@
     },
     {
       "source_path": "docs/build/comments-in-a-makefile.md",
-      "redirect_url": "/cpp/build/reference/comments-in-a-makefile",
+      "redirect_url": "/cpp/build/reference/contents-of-a-makefile#comments-in-a-makefile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/comments-in-a-makefile.md",
+      "redirect_url": "/cpp/build/reference/contents-of-a-makefile#comments-in-a-makefile",
       "redirect_document_id": false
     },
     {
@@ -347,7 +367,12 @@
     },
     {
       "source_path": "docs/build/creating-inline-file-text.md",
-      "redirect_url": "/cpp/build/reference/creating-inline-file-text",
+      "redirect_url": "/cpp/build/reference/inline-files-in-a-makefile#creating-inline-file-text",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/creating-inline-file-text.md",
+      "redirect_url": "/cpp/build/reference/inline-files-in-a-makefile#creating-inline-file-text",
       "redirect_document_id": false
     },
     {
@@ -362,7 +387,12 @@
     },
     {
       "source_path": "docs/build/defining-a-rule.md",
-      "redirect_url": "/cpp/build/reference/defining-a-rule",
+      "redirect_url": "/cpp/build/reference/inference-rules#defining-a-rule",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/defining-a-rule.md",
+      "redirect_url": "/cpp/build/reference/inference-rules#defining-a-rule",
       "redirect_document_id": false
     },
     {
@@ -397,12 +427,12 @@
     },
     {
       "source_path": "docs/build/environment-variable-macros.md",
-      "redirect_url": "/cpp/build/reference/environment-variable-macros",
+      "redirect_url": "/cpp/build/reference/special-nmake-macros#environment-variable-macros",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/build/executing-a-program-in-preprocessing.md",
-      "redirect_url": "/cpp/build/reference/executing-a-program-in-preprocessing",
+      "source_path": "docs/build/reference/environment-variable-macros.md",
+      "redirect_url": "/cpp/build/reference/special-nmake-macros#environment-variable-macros",
       "redirect_document_id": false
     },
     {
@@ -416,18 +446,23 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/build/expressions-in-makefile-preprocessing.md",
-      "redirect_url": "/cpp/build/reference/expressions-in-makefile-preprocessing",
+      "source_path": "docs/build/filename-macros.md",
+      "redirect_url": "/cpp/build/reference/special-nmake-macros#filename-macros",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/build/filename-macros.md",
-      "redirect_url": "/cpp/build/reference/filename-macros",
+      "source_path": "docs/build/reference/filename-macros.md",
+      "redirect_url": "/cpp/build/reference/special-nmake-macros#filename-macros",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build/filename-parts-syntax.md",
-      "redirect_url": "/cpp/build/reference/filename-parts-syntax",
+      "redirect_url": "/cpp/build/reference/commands-in-a-makefile#filename-parts-syntax",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/filename-parts-syntax.md",
+      "redirect_url": "/cpp/build/reference/commands-in-a-makefile#filename-parts-syntax",
       "redirect_document_id": false
     },
     {
@@ -437,7 +472,12 @@
     },
     {
       "source_path": "docs/build/inferred-dependents-and-rules.md",
-      "redirect_url": "/cpp/build/reference/inferred-dependents-and-rules",
+      "redirect_url": "/cpp/build/reference/inference-rules#inferred-dependents-and-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/inferred-dependents-and-rules.md",
+      "redirect_url": "/cpp/build/reference/inference-rules#inferred-dependents-and-rules",
       "redirect_document_id": false
     },
     {
@@ -457,7 +497,17 @@
     },
     {
       "source_path": "docs/build/long-filenames-in-a-makefile.md",
-      "redirect_url": "/cpp/build/reference/long-filenames-in-a-makefile",
+      "redirect_url": "/cpp/build/reference/contents-of-a-makefile#long-filenames-in-a-makefile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/long-filenames-in-a-makefile.md",
+      "redirect_url": "/cpp/build/reference/contents-of-a-makefile#long-filenames-in-a-makefile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/wildcards-and-nmake.md",
+      "redirect_url": "/cpp/build/reference/contents-of-a-makefile#wildcards-and-nmake",
       "redirect_document_id": false
     },
     {
@@ -537,7 +587,12 @@
     },
     {
       "source_path": "docs/build/macro-substitution.md",
-      "redirect_url": "/cpp/build/reference/macro-substitution",
+      "redirect_url": "/cpp/build/reference/using-an-nmake-macro#macro-substitution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/macro-substitution.md",
+      "redirect_url": "/cpp/build/reference/using-an-nmake-macro#macro-substitution",
       "redirect_document_id": false
     },
     {
@@ -547,17 +602,47 @@
     },
     {
       "source_path": "docs/build/makefile-preprocessing-directives.md",
-      "redirect_url": "/cpp/build/reference/makefile-preprocessing-directives",
+      "redirect_url": "/cpp/build/reference/makefile-preprocessing#makefile-preprocessing-directives",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/makefile-preprocessing-directives.md",
+      "redirect_url": "/cpp/build/reference/makefile-preprocessing#makefile-preprocessing-directives",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build/makefile-preprocessing-operators.md",
-      "redirect_url": "/cpp/build/reference/makefile-preprocessing-operators",
+      "redirect_url": "/cpp/build/reference/makefile-preprocessing#makefile-preprocessing-operators",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/makefile-preprocessing-operators.md",
+      "redirect_url": "/cpp/build/reference/makefile-preprocessing#makefile-preprocessing-operators",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/expressions-in-makefile-preprocessing.md",
+      "redirect_url": "/cpp/build/reference/makefile-preprocessing#expressions-in-makefile-preprocessing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/expressions-in-makefile-preprocessing.md",
+      "redirect_url": "/cpp/build/reference/makefile-preprocessing#expressions-in-makefile-preprocessing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/executing-a-program-in-preprocessing.md",
+      "redirect_url": "/cpp/build/reference/makefile-preprocessing#executing-a-program-in-preprocessing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/executing-a-program-in-preprocessing.md",
+      "redirect_url": "/cpp/build/reference/makefile-preprocessing#executing-a-program-in-preprocessing",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build/makefile-preprocessing.md",
-      "redirect_url": "/cpp/build/reference/expressions-in-makefile-preprocessing",
+      "redirect_url": "/cpp/build/reference/makefile-preprocessing",
       "redirect_document_id": false
     },
     {
@@ -567,7 +652,12 @@
     },
     {
       "source_path": "docs/build/multiple-inline-files.md",
-      "redirect_url": "/cpp/build/reference/multiple-inline-files",
+      "redirect_url": "/cpp/build/reference/inline-files-in-a-makefile#multiple-inline-files",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/multiple-inline-files.md",
+      "redirect_url": "/cpp/build/reference/inline-files-in-a-makefile#multiple-inline-files",
       "redirect_document_id": false
     },
     {
@@ -597,22 +687,42 @@
     },
     {
       "source_path": "docs/build/null-and-undefined-macros.md",
-      "redirect_url": "/cpp/build/reference/null-and-undefined-macros",
+      "redirect_url": "/cpp/build/reference/defining-an-nmake-macro#null-and-undefined-macros",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/null-and-undefined-macros.md",
+      "redirect_url": "/cpp/build/reference/defining-an-nmake-macro#null-and-undefined-macros",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build/precedence-in-inference-rules.md",
-      "redirect_url": "/cpp/build/reference/precedence-in-inference-rules",
+      "redirect_url": "/cpp/build/reference/inference-rules#precedence-in-inference-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/precedence-in-inference-rules.md",
+      "redirect_url": "/cpp/build/reference/inference-rules#precedence-in-inference-rules",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build/precedence-in-macro-definitions.md",
-      "redirect_url": "/cpp/build/reference/precedence-in-macro-definitions",
+      "redirect_url": "/cpp/build/reference/defining-an-nmake-macro#precedence-in-macro-definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/precedence-in-macro-definitions.md",
+      "redirect_url": "/cpp/build/reference/defining-an-nmake-macro#precedence-in-macro-definitions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build/predefined-rules.md",
-      "redirect_url": "/cpp/build/reference/predefined-rules",
+      "redirect_url": "/cpp/build/reference/inference-rules#predefined-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/predefined-rules.md",
+      "redirect_url": "/cpp/build/reference/inference-rules#predefined-rules",
       "redirect_document_id": false
     },
     {
@@ -632,12 +742,22 @@
     },
     {
       "source_path": "docs/build/recursion-macros.md",
-      "redirect_url": "/cpp/build/reference/recursion-macros",
+      "redirect_url": "/cpp/build/reference/special-nmake-macros#recursion-macros",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/recursion-macros.md",
+      "redirect_url": "/cpp/build/reference/special-nmake-macros#recursion-macros",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build/reusing-inline-files.md",
-      "redirect_url": "/cpp/build/reference/reusing-inline-files",
+      "redirect_url": "/cpp/build/reference/inline-files-in-a-makefile#reusing-inline-files",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/reusing-inline-files.md",
+      "redirect_url": "/cpp/build/reference/inline-files-in-a-makefile#reusing-inline-files",
       "redirect_document_id": false
     },
     {
@@ -662,7 +782,12 @@
     },
     {
       "source_path": "docs/build/search-paths-in-rules.md",
-      "redirect_url": "/cpp/build/reference/search-paths-in-rules",
+      "redirect_url": "/cpp/build/reference/inference-rules#search-paths-in-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/search-paths-in-rules.md",
+      "redirect_url": "/cpp/build/reference/inference-rules#search-paths-in-rules",
       "redirect_document_id": false
     },
     {
@@ -672,12 +797,22 @@
     },
     {
       "source_path": "docs/build/special-characters-in-a-makefile.md",
-      "redirect_url": "/cpp/build/reference/special-characters-in-a-makefile",
+      "redirect_url": "/cpp/build/reference/contents-of-a-makefile#special-characters-in-a-makefile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/special-characters-in-a-makefile.md",
+      "redirect_url": "/cpp/build/reference/contents-of-a-makefile#special-characters-in-a-makefile",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build/special-characters-in-macros.md",
-      "redirect_url": "/cpp/build/reference/special-characters-in-macros",
+      "redirect_url": "/cpp/build/reference/defining-an-nmake-macro#special-characters-in-macros",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/special-characters-in-macros.md",
+      "redirect_url": "/cpp/build/reference/defining-an-nmake-macro#special-characters-in-macros",
       "redirect_document_id": false
     },
     {
@@ -687,7 +822,12 @@
     },
     {
       "source_path": "docs/build/specifying-an-inline-file.md",
-      "redirect_url": "/cpp/build/reference/specifying-an-inline-file",
+      "redirect_url": "/cpp/build/reference/inline-files-in-a-makefile#specifying-an-inline-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/specifying-an-inline-file.md",
+      "redirect_url": "/cpp/build/reference/inline-files-in-a-makefile#specifying-an-inline-file",
       "redirect_document_id": false
     },
     {
@@ -757,7 +897,12 @@
     },
     {
       "source_path": "docs/build/where-to-define-macros.md",
-      "redirect_url": "/cpp/build/reference/where-to-define-macros",
+      "redirect_url": "/cpp/build/reference/defining-an-nmake-macro#where-to-define-macros",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build/reference/where-to-define-macros.md",
+      "redirect_url": "/cpp/build/reference/defining-an-nmake-macro#where-to-define-macros",
       "redirect_document_id": false
     },
     {
