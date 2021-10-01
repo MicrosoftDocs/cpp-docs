@@ -1,9 +1,8 @@
 ---
 title: "Description blocks"
 description: "NMAKE uses description blocks to associate targets, dependencies, and commands in a makefile."
-ms.date: "10/29/2019"
+ms.date: 09/30/2021
 helpviewer_keywords: ["description blocks", "NMAKE program, description blocks", "blocks, description"]
-ms.assetid: 1321f228-d389-40ac-b0cd-4f6e9293602b
 ---
 # Description blocks
 
