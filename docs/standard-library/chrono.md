@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <chrono>"
 title: "<chrono>"
-ms.date: 09/16/2021
+ms.date: 09/30/2021
 f1_keywords: ["<chrono>", "chrono/std::chrono::nanoseconds", "chrono/std::chrono::minutes", "chrono/std::chrono::seconds", "chrono/std::chrono::hours", "chrono/std::chrono::milliseconds", "chrono/std::chrono::microseconds"]
 ---
 
@@ -65,7 +65,7 @@ In the Microsoft C++ implementation, `steady_clock::time_point` is now a `typede
 
 | Name | Description |
 |--|--|
-| [`choose`](choose-enum.md) | An enum that specifies how to resolve ambiguous conversion of a `local_time` to a `sys_time`. |
+| [`choose`](choose-enum.md) | An enum that specifies how to resolve the ambiguous conversion of a `local_time` to a `sys_time`. |
 | [`local_info`](local-info-struct.md) | Provides a low-level interface to time zone information about the result of converting a `local_time` to a `sys_time`. |
 | [`sys_info`](sys-info-struct.md) | Provides a low-level interface to time zone information about the result of converting a `sys_time` to a `local_time`. |
 | [`time_zone` class](time-zone-class.md) | All time zone transitions for a specific geographic area. |
@@ -76,8 +76,8 @@ In the Microsoft C++ implementation, `steady_clock::time_point` is now a `typede
 
 | Name | Description |
 |--|--|
-| [`ambiguous_local_time`](ambiguous-local-time.md) | The error thrown when a `local_time` is converted to a `sys_time` but the result is ambiguous. |
-| [`nonexistent_local_time`](nonexistent-local-time.md) | Represents the error thrown when a `local_time` is converted to a `sys_time` and the result is a time that doesn't exist. |
+| [`ambiguous_local_time`](ambiguous-local-time.md) | Error thrown when a `local_time` is converted to a `sys_time` and the result is ambiguous. |
+| [`nonexistent_local_time`](nonexistent-local-time.md) | Error thrown when a `local_time` is converted to a `sys_time` and the result is a time that doesn't exist. |
 
 ## Functions
 
