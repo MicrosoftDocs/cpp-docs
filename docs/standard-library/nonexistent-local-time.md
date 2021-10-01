@@ -20,9 +20,9 @@ class nonexistent_local_time : public runtime_error; // c++ 20
 
 Given a `local_time` in a specific time zone, converting it to a `sys_time` could result in a time that doesn't exist.
 
-For example, if the `local_time` is during the transition to daylight saving time, in which the clock is "springing forward", there’s an hour that doesn't exist because it is "removed" as the clocks "springs forward" an hour. If the `local_time` is during that hour, the conversion would result in a non-existent time.
+For example, if the `local_time` is during the transition to daylight saving time, in which the clock is "springing forward", there’s an hour that doesn't exist because it is "removed" as the clock "springs forward" an hour. If the `local_time` is during that hour, the conversion would result in a non-existent time.
 
-The following example demonstrates an ambiguous conversion.
+The following example demonstrates a nonexistent time conversion.
 
 ## Example: `nonexistent_local_time`
 
@@ -37,7 +37,7 @@ int main()
     try
     {
         // The following will throw an exception because the local time lands during the hour that is removed
-        // as clocks move forward another hour for daylight saving time.
+        // as the clock advances an hour for daylight saving time.
         auto zt = zoned_time{"America/New_York", local_days{Sunday[2]/March/2016} + 2h + 30min};
     } catch (const nonexistent_local_time& e)
     {
@@ -69,7 +69,7 @@ int main()
 
 **Compiler Option:** [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md)
 
-## <a name="ctor"></a> Constructors
+## <a name="ctor"></a> Constructor
 
 Constructs a `nonexistent_local_time`.
 
@@ -95,7 +95,7 @@ You typically won't create this exception. It's thrown by functions that convert
 Gets a string describing why the time is non-existent.
 
 ```cpp
-[[nodiscard]]virtual const char* what() const noexcept;
+[nodiscard] virtual const char* what() const noexcept;
 ```
 
 ### Return value
@@ -112,6 +112,6 @@ A string describing why the time is non-existent. For example:
 ## See also
 
 [`<chrono>`](../standard-library/chrono.md)\
-[`to_sys` ](month-day-class.md)\
+[`to_sys`](month-day-class.md)\
 [`ambiguous_local_time`](ambiguous-local-time.md)\
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
