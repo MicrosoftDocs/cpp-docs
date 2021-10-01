@@ -22,7 +22,7 @@ If a `local_time` lands during the gap between standard and daylight saving time
 
 For example, if the `local_time` is on the transition to daylight saving time, then the clock is "springing forward" an hour, so there’s an hour that doesn’t exist. If the `local_time` is on a transition to standard time, that is, the clock is "falling back", then there’s an extra hour that's being inserted.
 
-In either case, if the `local_time` is during that hour, should it take on the value of the hour it is in or the adjusted time? If the [`choose`](choose-enum.md) is not specified to indicate which it should be, you'll get either an `ambiguous_local_time` or [`nonexistent_local_time`](nonexistent-local-time.md) exception.
+In either case, if the `local_time` is during that hour, should it take on the value of the hour it is in or the adjusted time? If the [`choose`](choose-enum.md) isn't specified to indicate which it should be, you'll get either an `ambiguous_local_time` or [`nonexistent_local_time`](nonexistent-local-time.md) exception.
 
 The following example demonstrates an ambiguous conversion.
 

@@ -48,5 +48,5 @@ Compiler option:[`/std:c++latest`](../build/reference/std-specify-language-stand
 
 ## See also
 
-[`time_zone`](time-zone-class.md)\
-[`zoned_time`](zoned-time-class.md)
+[`time_zone::to_sys`](time-zone-class.md#std-chrono-time-zone-to-sys)\
+[`zoned_time` constructor](zoned-time-class.md#ctor)

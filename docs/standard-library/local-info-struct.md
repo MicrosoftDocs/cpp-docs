@@ -52,7 +52,7 @@ int result;
 The result can be one of the following values: 
 - `unique`: The `local_time` was successfully converted to a `sys_time`.
 - `nonexistent`: There isn't a mapping from the `local_time` to the `sys_time`.
-- `ambiguous`: The `local_time` lands during a daylight savings time transition and thus can resolve to two `sys_time` values.
+- `ambiguous`: The `local_time` lands during a transition between daylight saving time and standard time and so could resolve to two `sys_time` values.
 
 ### Remarks
 
