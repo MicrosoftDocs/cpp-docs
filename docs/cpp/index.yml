@@ -33,10 +33,6 @@ landingContent:
             url: ../build/vscpp-step-1-create.md
           - text: Create a console calculator in C++
             url: ../get-started/tutorial-console-cpp.md
-      - linkListType: video
-        links:
-          - text: "Learn C++ - A general purpose language and library"
-            url: https://channel9.msdn.com/Series/cplusplus-language-library
       - linkListType: learn
         links:
           - text: Welcome back to C++ - Modern C++
