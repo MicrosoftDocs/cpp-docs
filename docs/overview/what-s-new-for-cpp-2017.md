@@ -1,7 +1,7 @@
 ---
 title: "What's new for C++ in Visual Studio 2017"
 description: "The new features and fixes in the Microsoft C/C++ compiler and tools in Visual Studio 2017."
-ms.date: 03/08/2021
+ms.date: 10/04/2021
 ms.technology: "cpp-ide"
 ms.custom: intro-whats-new
 ---
@@ -491,7 +491,7 @@ Visual Studio Graphics Diagnostics tools: You can use them to record and analyze
 
   ![Frame validation.](media/frame-validation.png)
 
-- **Frame Analysis for D3D12:** Use Frame Analysis to analyze draw-call performance with directed "what-if" experiments. Switch to the Frame Analysis tab and run analysis to view the report. For more details, watch the [GoingNative 25: Visual Studio Graphics Frame Analysis](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) video.
+- **Frame Analysis for D3D12:** Use Frame Analysis to analyze draw-call performance with directed "what-if" experiments. Switch to the Frame Analysis tab and run analysis to view the report.
 
   ![Frame analysis.](media/frame-analysis.png)
 
