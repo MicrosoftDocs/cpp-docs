@@ -8,7 +8,7 @@ helpviewer_keywords: ["std::chrono [C++],  nonexistent_local_time"]
 
 # `nonexistent_local_time` class
 
-Represents the error thrown when a `local_time` is converted to a `sys_time` and the result is a time that doesn't exist.
+The exception thrown when attempting to convert a `local_time` to a non-existent `sys_time`.
 
 ## Syntax
 
@@ -18,11 +18,9 @@ class nonexistent_local_time : public runtime_error; // c++ 20
 
 ## Remarks
 
-Given a `local_time` in a specific time zone, converting it to a `sys_time` could result in a time that doesn't exist.
+If a `local_time` specifies a time in a time zone during the hour standard time transitioned to daylight saving time, it can't be converted to a `sys_time`. That's because that hour doesn't exist as it is "removed" when the clock "springs forward" an hour for daylight saving time.
 
-For example, if the `local_time` is during the transition to daylight saving time, in which the clock is "springing forward", there’s an hour that doesn't exist because it is "removed" as the clock "springs forward" an hour. If the `local_time` is during that hour, the conversion would result in a non-existent time.
-
-The following example demonstrates a nonexistent time conversion.
+The following example demonstrates a nonexistent time conversion. In this example, in 2016 daylight saving time started in New York at 2am. The time being converted is 2:30am. That falls during the hour standard time transitioned to daylight saving time, which hour was removed as the clock advanced an hour for daylight saving time.
 
 ## Example: `nonexistent_local_time`
 
@@ -37,7 +35,7 @@ int main()
     try
     {
         // The following will throw an exception because the local time lands during the hour that is removed
-        // as the clock advances an hour for daylight saving time.
+        // when the clock advances an hour for daylight saving time.
         auto zt = zoned_time{"America/New_York", local_days{Sunday[2]/March/2016} + 2h + 30min};
     } catch (const nonexistent_local_time& e)
     {
