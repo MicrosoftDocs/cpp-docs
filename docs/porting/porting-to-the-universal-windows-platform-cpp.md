@@ -6,7 +6,7 @@ ms.assetid: f662d2e4-8940-418d-8109-cb76cb8f8569
 ---
 # Porting to the Universal Windows Platform (C++)
 
-In this topic, you can find information on how to port existing C++ code to the Windows 10 app platform, the Universal Windows Platform. What is meant by the term *universal* is that your code can run on any of the devices that run Windows 10. You create a single project and a single XAML-base user interface that works well on any device that runs Windows 10. You can use dynamic layout features in XAML to allow the app's UI to adapt to different display sizes.
+In this topic, you can find information on how to port existing C++ code to the Windows app platform, the Universal Windows Platform. What is meant by the term *universal* is that your code can run on any of the devices that run Windows 10 or later. You create a single project and a single XAML-base user interface that works well on any device that runs Windows 10 or later. You can use dynamic layout features in XAML to allow the app's UI to adapt to different display sizes.
 
 The Windows Dev Center documentation contains a guide for porting Windows 8.1 apps to the Universal Windows Platform. See [Move from Windows Runtime 8 to UWP](/windows/uwp/porting/w8x-to-uwp-root). Although the guide focuses mostly on C# code, most of the guidance is applicable to C++. The following procedures contain more detailed information. See also [Move from a desktop application to UWP](/windows/uwp/porting/desktop-to-uwp-migrate).
 
@@ -20,7 +20,7 @@ If you have a classic desktop Win32 DLL and you want to call it from a UWP appli
 
 ## <a name="BK_81StoreApp"></a> Porting a Windows 8.1 Store App to the UWP
 
-If you have a Windows 8.1 Store App, you can use this procedure to get it working on the UWP and any device that runs Windows 10.  It's a good idea to first build the project with Visual Studio 2019 as a Windows 8.1 project, to first eliminate any issues that arise from changes in the compiler and libraries. Once you've done that, there are two ways to convert this to a Windows 10 UWP project. The easiest way (as explained in the following procedure) is to create a Universal Windows project, and copy your existing code into it. If you were using a Universal project for Windows 8.1 desktop and Windows 8.1 Phone, your project will start with two different layouts in XAML but end with a single dynamic layout that adjusts to the display size.
+If you have a Windows 8.1 Store App, you can use this procedure to get it working on the UWP and any device that runs Windows 10 or later.  It's a good idea to first build the project with Visual Studio 2019 as a Windows 8.1 project, to first eliminate any issues that arise from changes in the compiler and libraries. Once you've done that, there are two ways to convert this to a Windows UWP project. The easiest way (as explained in the following procedure) is to create a Universal Windows project, and copy your existing code into it. If you were using a Universal project for Windows 8.1 desktop and Windows 8.1 Phone, your project will start with two different layouts in XAML but end with a single dynamic layout that adjusts to the display size.
 
 ### To port a Windows 8.1 Store App to the UWP
 
@@ -32,7 +32,7 @@ If you have a Windows 8.1 Store App, you can use this procedure to get it workin
 
 1. Build the project as a Windows 8.1 project, and address any build errors. Any errors at this stage are probably due to breaking changes in the build tools and libraries. See [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md) for a detailed explanation of the changes that might affect your code.
 
-   Once your project builds cleanly, you are ready to port to Universal Windows (Windows 10).
+   Once your project builds cleanly, you are ready to port to Universal Windows Platform.
 
 1. Create a new Universal Windows App project using the Blank template. You might want to give it the same name as your existing project, although to do that the projects must be in different directories.
 
@@ -65,11 +65,11 @@ If you have a Windows 8.1 Store App, you can use this procedure to get it workin
 
 ## <a name="BK_81Component"></a> Porting a Windows 8.1 Runtime Component to the UWP
 
-If you have a DLL or a Windows Runtime Component that already works with Windows 8.1 Store apps, you can use this procedure to get the component or DLL working with the UWP and Windows 10. The basic procedure is to create a new project and copy your code into it.
+If you have a DLL or a Windows Runtime Component that already works with Windows 8.1 Store apps, you can use this procedure to get the component or DLL working with the UWP on Windows. The basic procedure is to create a new project and copy your code into it.
 
 ### To port a Windows 8.1 Runtime Component to the UWP
 
-1. In the **New Project** dialog in Visual Studio 2017, locate the **Windows Universal** node. If you don't see this node, install the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) first. Choose the **Windows Runtime Component** template, give a name for your component, and choose the **OK** button. The component name will be used as the namespace name, so you might want to use the same name as your old projects' namespace. This requires that you create the project in a different folder from the old one. If you choose a different name, you can update the namespace name in the generated code files.
+1. In the **New Project** dialog in Visual Studio 2017, locate the **Windows Universal** node. If you don't see this node, install the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk) first. Choose the **Windows Runtime Component** template, give a name for your component, and choose the **OK** button. The component name will be used as the namespace name, so you might want to use the same name as your old projects' namespace. This requires that you create the project in a different folder from the old one. If you choose a different name, you can update the namespace name in the generated code files.
 
 1. Close the project.
 

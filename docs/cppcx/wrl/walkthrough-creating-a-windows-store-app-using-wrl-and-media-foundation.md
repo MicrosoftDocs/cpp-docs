@@ -7,7 +7,7 @@ ms.topic: "reference"
 # Walkthrough: Creating a UWP app using WRL and Media Foundation
 
 > [!NOTE]
-> For new UWP apps and components, we recommend that you use [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), a new standard C++17 language projection for Windows Runtime APIs. C++/WinRT is available in the Windows 10 SDK from version 1803 onward. C++/WinRT is implemented entirely in header files, and is designed to provide you with first-class access to the modern Windows API.
+> For new UWP apps and components, we recommend that you use [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/), a new standard C++17 language projection for Windows Runtime APIs. C++/WinRT is available in the Windows SDK from version 1803 (10.0.17134.0) onward. C++/WinRT is implemented entirely in header files, and is designed to provide you with first-class access to the modern Windows API.
 
 In this tutorial, you'll learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform (UWP) app that uses [Microsoft Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk).
 

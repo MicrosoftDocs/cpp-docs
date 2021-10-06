@@ -29,9 +29,9 @@ Before you can build a C or C++ program on the command line, verify that the too
 
 ### Open a developer command prompt
 
-1. If you have installed Visual Studio 2017 or later on Windows 10, open the Start menu and choose **All apps**. Scroll down and open the **Visual Studio** folder (not the Visual Studio application). Choose **Developer Command Prompt for VS** to open the command prompt window.
+1. If you have installed Visual Studio 2017 or later on Windows 10 or later, open the Start menu and choose **All apps**. Scroll down and open the **Visual Studio** folder (not the Visual Studio application). Choose **Developer Command Prompt for VS** to open the command prompt window.
 
-   If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10, open the **Start** menu and choose **All apps**. Scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
+   If you have installed Microsoft Visual C++ Build Tools 2015 on Windows 10 or later, open the **Start** menu and choose **All apps**. Scroll down and open the **Visual C++ Build Tools** folder. Choose **Visual C++ 2015 x86 Native Tools Command Prompt** to open the command prompt window.
 
    You can also use the Windows search function to search for "developer command prompt" and choose one that matches your installed version of Visual Studio. Use the shortcut to open the command prompt window.
 

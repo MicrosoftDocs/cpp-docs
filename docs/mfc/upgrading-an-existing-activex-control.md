@@ -70,7 +70,7 @@ Cabinet files are the recommended way to package ActiveX controls that use MFC. 
 
 ### Creating CAB Files
 
-Tools to create cabinet files are now part of the [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk).
+Tools to create cabinet files are now part of the [Windows SDK](https://dev.windows.com/downloads/windows-sdk).
 
 The cabinet file pointed to by `CODEBASE` should contain the .ocx file for your ActiveX control and an .inf file to control its installation. You create the cabinet file by specifying the name of your control file and an .inf file. Do not include dependent DLLs that may already exist on the system in this cabinet file. For example, the MFC DLLs are packaged in a separate cabinet file and referred to by the controlling .inf file.
 

@@ -23,19 +23,19 @@ Windows SDK releases correspond with Windows OS releases. C11 and C17 support re
 
 - Visual Studio 2019 version 16.8 or later installed and running on your computer. We recommend you use the latest version available for the best support. If Visual Studio isn't installed yet, see [Install C++ support in Visual Studio](../build/vscpp-step-0-installation.md) for installation instructions. In the install, include the **Desktop development with C++** workload.
 
-## Step 1: Download the Windows 10 SDK
+## Step 1: Download the Windows SDK
 
-You can download the latest Windows 10 SDK from the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) page. If you see a message that says "We are sorry, the page you requested cannot be found," try changing the locale in the URL to *en-us*.
+You can download the latest Windows SDK from the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk/) page. If you see a message that says "We are sorry, the page you requested cannot be found," try changing the locale in the URL to *en-us*.
 
-Choose **Download the installer** under Windows 10 SDK version 2104 and Server development to begin the download. Later versions of the Windows SDK will also work.
+Choose **Download the installer** to begin the download. If you've already installed Windows 10 SDK version 2104 (10.0.20348.0), that version will also work.
 
 When the download completes, open the folder for the downloaded file. It's usually your Downloads folder, and the file is typically named *`winsdksetup.exe`*. Right-click on the file to open the file's **Properties** dialog box. On the **General** tab, in the **Security** section, check the **Unblock** checkbox. Choose **OK** to save your changes.
 
-## Step 2: Install the Windows 10 SDK
+## Step 2: Install the Windows SDK
 
 Run *`winsdksetup.exe`* to start the installation.
 
-On the **Specify Location** page, select **Install the Windows Software Development Kit - \<version> to this computer**, and then choose **Next**. On the **Windows Kits Privacy** page, select whether to allow Microsoft to collect insights for the Windows 10 Kits, then choose **Next**. Choose **Accept** to accept the license agreement. On the **Select the features you want to install** page, select these features:  
+On the **Specify Location** page, select **Install the Windows Software Development Kit - \<version> to this computer**, and then choose **Next**. On the **Windows Kits Privacy** page, select whether to allow Microsoft to collect insights for the Windows Kits, then choose **Next**. Choose **Accept** to accept the license agreement. On the **Select the features you want to install** page, select at least these features:  
 
 - Windows SDK Signing Tools for Desktop Apps
 
@@ -59,7 +59,7 @@ Choose **Install** to install the selected SDK components. The SDK takes a coupl
 
 In Visual Studio, open a new or existing C project, then open your project's **Property Pages** dialog.
 
-Set the project to use the Windows 10 SDK you just installed. On the **Configuration Properties** > **General** page, set the **Windows SDK Version** property either to **10.0 (latest installed version)**, or to the specific SDK version you installed.
+Set the project to use the Windows SDK you just installed. On the **Configuration Properties** > **General** page, set the **Windows SDK Version** property either to **10.0 (latest installed version)**, or to the specific SDK version you installed.
 
 You'll also see a C-specific option: **C Language Standard**. Set this property to **ISO C11 Standard (`/std:c11`)** or **ISO C17 (2018) Standard (`/std:c17`)**.  
 

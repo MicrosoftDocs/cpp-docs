@@ -8,7 +8,7 @@ helpviewer_keywords: ["deploying the CRT [C++]", "application CRT deployment [C+
 
 From Visual Studio .NET through Visual Studio 2013, each major release of the C++ compiler and tools has included a new, standalone version of the Microsoft C Runtime (CRT) library. These standalone versions of the CRT were independent from, and to various degrees, incompatible with each other. For example, the CRT library used by Visual Studio 2012 was version 11, named msvcr110.dll, and the CRT used by Visual Studio 2013 was version 12, named msvcr120.dll. Beginning in Visual Studio 2015, it's no longer the case. Visual Studio 2015 and later versions of Visual Studio all use one Universal CRT.
 
-The Universal CRT (UCRT) is a Microsoft Windows operating system component. It's included as part of the operating system in Windows 10 and Windows Server 2016 or later. The UCRT is available by using Windows Update on older operating systems that are still in extended support. Local deployment of the Universal CRT is supported, with some restrictions.
+The Universal CRT (UCRT) is a Microsoft Windows operating system component. It's included as part of the operating system in Windows 10 or later, and Windows Server 2016 or later. The UCRT is available by using Windows Update on older operating systems that are still in extended support. Local deployment of the Universal CRT is supported, with some restrictions.
 
 ## Central deployment
 
@@ -18,7 +18,7 @@ Not all Microsoft Windows computers regularly install updates by use of Windows 
 
 The Universal CRT is a fundamental dependency of the C++ libraries. The Visual C++ redistributable (VCRedist) installs the initial version of the Universal CRT (version 10.0.10240) on machines that don't already have one installed. This version is sufficient to satisfy the C++ library dependencies. If your application depends on a more recent version of the Universal CRT, you must use Windows Update to bring your machine fully up to date. Or, install that version of the UCRT explicitly. It's best to install the Universal C Runtime by using Windows Update or an MSU before you install the VCRedist. This installation order can help avoid multiple required reboots.
 
-Not all operating systems are eligible for the most recent Universal C Runtime via Windows Update. On Windows 10, the centrally deployed version matches the version of the operating system. To update the Universal C Runtime further, you must update the operating system. For Windows Vista through Windows 8.1, the latest available Universal C Runtime is based on the Windows 10 Anniversary Update (version 10.0.14393).
+Not all operating systems are eligible for the most recent Universal C Runtime via Windows Update. On Windows 10 or Windows 11, the centrally deployed version matches the version of the operating system. To update the Universal C Runtime further, you must update the operating system. For Windows Vista through Windows 8.1, the latest available Universal C Runtime is based on the Windows 10 Anniversary Update (version 10.0.14393).
 
 ## Local deployment
 
@@ -26,7 +26,7 @@ Local deployment of the Universal CRT is supported, but not recommended for both
 
 There are two restrictions on local deployment to be aware of:
 
-- On Windows 10, the Universal CRT in the system directory is always used, even if an application includes an application-local copy of the Universal CRT. It's true even when the local copy is newer, because the Universal CRT is a core operating system component on Windows 10.
+- On Windows 10 and Windows 11, the Universal CRT in the system directory is always used, even if an application includes an application-local copy of the Universal CRT. It's true even when the local copy is newer, because the Universal CRT is a core operating system component on Windows 10 and later.
 
 - Versions of Windows before Windows 8: The Universal CRT can't be packaged locally with a plugin, if it's located anywhere but the main app executable directory. The APISet forwarder DLLs are unable to resolve the ucrtbase.dll successfully in this case. Some recommended alternative solutions include:
 
