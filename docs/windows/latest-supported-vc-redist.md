@@ -77,8 +77,8 @@ These links download the latest supported en-US Microsoft Visual C++ Redistribut
 
 Download additional languages from:
 
-- [Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://www.microsoft.com/en-us/download/details.aspx?id=8328)
-- [Microsoft Visual C++ 2010 SP1 Redistributable Package (x64)](https://www.microsoft.com/en-us/download/details.aspx?id=13523)
+- [Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe)
+- [Microsoft Visual C++ 2010 SP1 Redistributable Package (x64)](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe)
 
 ## Visual Studio 2008 (VC++ 9.0) SP1 (no longer supported)
 
