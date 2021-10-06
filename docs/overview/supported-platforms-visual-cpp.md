@@ -21,6 +21,7 @@ Apps built by using Visual Studio can be targeted to various platforms, as follo
 |Windows 8|X|X|X||
 |Windows 8.1|X|X|X||
 |Windows 10|X|X|X|X|
+|Windows 11|X|X|X|X|
 |Android \*\*|X|X|X|X|
 |iOS \*\*|X|X|X|X|
 |Linux \*\*\*|X|X|X|X|

@@ -17,7 +17,7 @@ Here's where to get help and information about how to write C++ code and use the
 
 - [C++ in Visual Studio](visual-cpp-in-visual-studio.md): Contains reference and conceptual documentation about Visual C++.
 
-- [Windows Developer Center](https://developer.microsoft.com/windows/): Contains information about how to use C++ and other languages to develop apps for Windows 10.
+- [Windows Developer Center](https://developer.microsoft.com/windows/): Contains information about how to use C++ and other languages to develop apps for Windows.
 
 ### Online and offline documentation
 
