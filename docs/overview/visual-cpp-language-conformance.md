@@ -524,9 +524,9 @@ These algorithms aren't presently parallelized:
 
 <a name="note_DR"></a> __DR__ These features are enabled in all C++ [`/std`](../build/reference/std-specify-language-standard-version.md) compiler option modes. The C++ Standard committee adopted this change as a retroactive Defect Report to C++11 and all later versions.
 
-<a name="note_C11"></a> __C11__ Compiler support for C11 and C17 requires Visual Studio 2019 version 16.8 or higher. Except as noted, C11 and C17 library support requires Windows 10 SDK build 10.0.20211.0 or higher. For more information on how to install support for C11 and C17, see [Install C11 and C17 support in Visual Studio](./install-c17-support.md).
+<a name="note_C11"></a> __C11__ Compiler support for C11 and C17 requires Visual Studio 2019 version 16.8 or higher. Except as noted, C11 and C17 library support requires Windows SDK build 10.0.20211.0 or higher. For more information on how to install support for C11 and C17, see [Install C11 and C17 support in Visual Studio](./install-c17-support.md).
 
-<a name="note_2104"></a> __2104__ C11 library support for this feature requires Windows 10 SDK build 10.0.20348.0 (version 2104) or higher.
+<a name="note_2104"></a> __2104__ C11 library support for this feature requires Windows SDK build 10.0.20348.0 (version 2104) or higher.
 
 ## See also
 
