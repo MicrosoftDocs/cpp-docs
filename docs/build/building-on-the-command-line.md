@@ -69,7 +69,7 @@ The Start menu folder and shortcut names vary depending on the installed version
 ::: moniker-end
 
 > [!NOTE]
-> Several command-line tools or tool options may require Administrator permission. If you have permission issues when you use them, we recommend that you open the developer command prompt window by using the **Run as Administrator** option. On Windows 10, right-click to open the shortcut menu for the command prompt window, then choose **More**, **Run as administrator**.
+> Several command-line tools or tool options may require Administrator permission. If you have permission issues when you use them, we recommend that you open the developer command prompt window by using the **Run as Administrator** option. Right-click to open the shortcut menu for the command prompt window, then choose **More**, **Run as administrator**.
 
 ### <a name="developer_command_prompt"></a> To open a developer command prompt window
 
@@ -159,7 +159,7 @@ This optional argument specifies the host and target architecture to use. If *ar
 This optional argument allows you to specify **`store`** or **`uwp`** as the platform type. By default, the environment is set to build desktop or console apps.
 
 *`winsdk_version`*<br/>
-Optionally specifies the version of the Windows SDK to use. By default, the latest installed Windows SDK is used. To specify the Windows SDK version, you can use a full Windows 10 SDK number such as **`10.0.10240.0`**, or specify **`8.1`** to use the Windows 8.1 SDK.
+Optionally specifies the version of the Windows SDK to use. By default, the latest installed Windows SDK is used. To specify the Windows SDK version, you can use a full Windows SDK number such as **`10.0.10240.0`**, or specify **`8.1`** to use the Windows 8.1 SDK.
 
 *`vcversion`*<br/>
 Optionally specifies the Visual Studio compiler toolset to use. By default, the environment is set to use the current Visual Studio compiler toolset.

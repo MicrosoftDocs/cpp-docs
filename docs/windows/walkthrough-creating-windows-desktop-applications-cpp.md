@@ -16,7 +16,7 @@ The Windows API (also known as the Win32 API, Windows Desktop API, and Windows C
 
 ## Prerequisites
 
-- A computer that runs Microsoft Windows 7 or later versions. We recommend Windows 10 for the best development experience.
+- A computer that runs Microsoft Windows 7 or later versions. We recommend Windows 10 or later for the best development experience.
 
 - A copy of Visual Studio. For information on how to download and install Visual Studio, see [Install Visual Studio](/visualstudio/install/install-visual-studio). When you run the installer, make sure that the **Desktop development with C++** workload is checked. Don't worry if you didn't install this workload when you installed Visual Studio. You can run the installer again and install it now.
 

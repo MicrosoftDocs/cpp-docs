@@ -8,13 +8,13 @@ ms.custom: intro-overview
 ---
 # Desktop Applications (Visual C++)
 
-A *desktop application* in C++ is a native application that can access the full set of Windows APIs and either runs in a window or in the system console. Desktop applications in C++ can run on Windows XP through Windows 10 (although Windows XP is no longer officially supported and there are many Windows APIs that have been introduced since then).
+A *desktop application* in C++ is a native application that can access the full set of Windows APIs and either runs in a window or in the system console. Desktop applications in C++ can run on Windows XP through Windows 11 (although Windows XP is no longer officially supported and there are many Windows APIs that have been introduced since then).
 
-A desktop application is distinct from a Universal Windows Platform (UWP) app, which can run on PCs running Windows 10, and also on XBox, Windows Phone, Surface Hub, and other devices. For more information about desktop vs. UWP applications, see [Choose your technology](/windows/win32/choose-your-technology).
+A desktop application is distinct from a Universal Windows Platform (UWP) app, which can run on PCs running Windows 11, Windows 10, XBox, Windows Phone, Surface Hub, and other devices. For more information about desktop vs. UWP applications, see [Choose your technology](/windows/win32/choose-your-technology).
 
 ## Desktop Bridge
 
-In Windows 10 you can package your existing desktop application or COM object as a UWP app and add UWP features such as touch, or call APIs from the modern Windows API set. You can also add a UWP app to a desktop solution in Visual Studio, and package them together in a single package and use Windows APIs to communicate between them.
+In Windows 10 and later, you can package your existing desktop application or COM object as a UWP app. Apps can add UWP features such as touch, or call APIs from the modern Windows API set. You can also add a UWP app to a desktop solution in Visual Studio, and package them together in a single package and use Windows APIs to communicate between them.
 
 In Visual Studio 2017 version 15.4 and later, you can create a Windows Application Package Project to greatly simplify the work of packaging your existing desktop application. A few restrictions apply with respect to what registry calls or APIs your desktop application uses, but in many cases you can create alternate code paths to achieve similar functionality while running in an app package. For more information, see [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
 
@@ -41,7 +41,7 @@ Any desktop application in C++ can use C Runtime (CRT) and Standard Library clas
 |[Working with Resource Files](working-with-resource-files.md)|How to add images, icons, string tables, and other resources to a desktop application.|
 |[Resources for Creating a Game Using DirectX (C++)](resources-for-creating-a-game-using-directx.md)|Links to content for creating games in C++.|
 |[Walkthrough: Creating and Using a Static Library](../build/walkthrough-creating-and-using-a-static-library-cpp.md)|How to create a .lib binary file.|
-|[How to: Use the Windows 10 SDK in a Windows Desktop Application](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Contains steps for setting up your project to build using the Windows 10 SDK.|
+|[How to: Use the Windows SDK in a Windows Desktop Application](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Contains steps for setting up your project to build using the Windows SDK.|
 
 ## Related Articles
 
