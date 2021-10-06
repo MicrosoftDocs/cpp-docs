@@ -170,7 +170,7 @@ The function [`_configthreadlocale`](configthreadlocale.md) is used to control w
 
 ## UTF-8 Support
 
-Starting in Windows 10 build 17134 (April 2018 Update), the Universal C Runtime supports using a UTF-8 code page. This means that `char` strings passed to C runtime functions will expect strings in the UTF-8 encoding. To enable UTF-8 mode, use `".UTF8"` as the code page when using `setlocale`. For example, `setlocale(LC_ALL, ".UTF8")` will use the current default Windows ANSI code page (ACP) for the locale and UTF-8 for the code page.
+Starting in Windows 10 version 1803 (10.0.17134.0), the Universal C Runtime supports using a UTF-8 code page. This means that `char` strings passed to C runtime functions will expect strings in the UTF-8 encoding. To enable UTF-8 mode, use `".UTF8"` as the code page when using `setlocale`. For example, `setlocale(LC_ALL, ".UTF8")` will use the current default Windows ANSI code page (ACP) for the locale and UTF-8 for the code page.
 
 The string to specify UTF-8 mode is:
 
@@ -195,7 +195,7 @@ The following aspects of the C Runtime can't use UTF-8 because they are set duri
 
 Previous to this support, [`mbrtoc16`, `mbrtoc32`](../reference/mbrtoc16-mbrtoc323.md), [`c16rtomb`, and `c32rtomb`](../reference/c16rtomb-c32rtomb1.md) existed to translate between UTF-8 narrow strings, UTF-16 (same encoding as `wchar_t` on Windows platforms) and UTF-32. For compatibility reasons, these APIs still only translate to and from UTF-8 and not the code page set via `setlocale`.
 
-To use this feature on an OS prior to Windows 10, such as Windows 7, you must use [app-local deployment](../../windows/universal-crt-deployment.md#local-deployment) or link statically using version 17134 of the Windows SDK or later. For Windows 10 operating systems prior to 17134, only static linking is supported.
+To use this feature on an OS prior to Windows 10, you must use [app-local deployment](../../windows/universal-crt-deployment.md#local-deployment) or link statically using version 1803 (10.0.17134.0) of the Windows SDK or later. For Windows 10 operating systems prior to 1803 (10.0.17134.0), only static linking is supported.
 
 ## Requirements
 
