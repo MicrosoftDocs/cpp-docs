@@ -1,10 +1,11 @@
 ---
 description: "Learn more about: duration Class"
 title: "duration Class"
-ms.date: "03/27/2016"
+ms.date: 10/01/2021
 f1_keywords: ["chrono/std::chrono::duration", "chrono/std::chrono::duration::duration", "chrono/std::chrono::duration::count", "chrono/std::chrono::duration::max", "chrono/std::chrono::duration::min", "chrono/std::chrono::duration::zero"]
 helpviewer_keywords: ["std::chrono [C++], duration"]
 ---
+
 # `duration` class
 
 Describes a type that holds a *time interval*, which is the number of ticks over a time unit. For example, five minutes is five ticks, with each tick a minute apart. 42 seconds is 42 ticks, with each tick a second apart.
@@ -23,20 +24,13 @@ The template argument `Rep` describes the type that is used to hold the number o
 
 ## Members
 
-### Convenience type aliases
-
-|Name|Description|
-|----------|-----------------|
-|`duration::period`|Represents a synonym for the template parameter `Period`.|
-|`duration::rep` |Represents a synonym for the template parameter `Rep`.|
-
-### Public Constructors
+### Constructors
 
 |Name|Description|
 |----------|-----------------|
 |[`duration`](#duration)|Constructs a `duration` object.|
 
-### Public Methods
+### Functions
 
 |Name|Description|
 |----------|-----------------|
@@ -45,19 +39,57 @@ The template argument `Rep` describes the type that is used to hold the number o
 |[`min`](#min)|Static. Returns the lowest allowable value of template parameter `Ref`.|
 |[`zero`](#zero)|Static. In effect, returns `Rep`(0).|
 
-### Public Operators
+### Operators
 
 |Name|Description|
 |----------|-----------------|
 |[`duration::operator-`](#operator-)|Returns a copy of the `duration` object together with a negated tick count.|
-|[`duration::operator--`](#operator--)|Decrements the stored tick count.|
+|[`duration::operator--`](#operator--)|Decrements the stored tick count.| JTW - need the (int) version
 |[`duration::operator=`](#op_eq)|Reduces the stored tick count modulo a specified value.|
 |[`duration::operator*=`](#op_star_eq)|Multiplies the stored tick count by a specified value.|
 |[`duration::operator/=`](#op_div_eq)|Divides the stored tick count by the tick count of a specified `duration` object.|
 |[`duration::operator+`](#op_add)|Returns **`*this`**.|
-|[`duration::operator++`](#op_add_add)|Increments the stored tick count.|
+|[`duration::operator++`](#op_add_add)|Increments the stored tick count.| JTW - need the (int) version
 |[`duration::operator+=`](#op_add_eq)|Adds the tick count of a specified `duration` object to the stored tick count.|
 |[`duration::operator-=`](#operator-_eq)|Subtracts the tick count of a specified `duration` object from the stored tick count.|
+|[`duration::operator%=`](#operator-_JTW)||
+
+## Non-members
+
+### Functions JTW
+
+|Name|Description|
+|----------|-----------------|
+|[`abs`](#zero)|Static. | ** NOT DONE in chrono-functions
+|[`ceil`](#max)|Static. Returns the | ** ALREADY DONE in chrono-functions
+|[`floor`](#count)|Static. Returns the | ** ALREADY DONE in chrono-functions
+|[`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `duration` from the given stream using the specified format. |
+|[`round`](#min)|Static. Returns the .| ** ALREADY DONE in chrono-functions
+
+### Operators JTW ** may be done in chrono-operators. link if so
+
+| Name | Description |
+|--|--|
+| [`operator+`](chrono-operators.md#op_add) | Add specified number of days to this `day`, returning a new `day` object. |
+| [`operator-`](chrono-operators.md#op_minus) | Subtract the specified number of days from this `day`, returning a new `day` object. |
+| [`operator*`](chrono-operators.md#op_JTW) |  |
+| [`operator/`](chrono-operators.md#op_JTW) |  |
+| [`operator%`](chrono-operators.md#op_JTW) |  |
+| [`operator==`](chrono-operators.md#op_eq_eq) | Determine whether two days are equal. |
+| [`operator!=`](chrono-operators.md#op_JTW) |  |
+| [`operator<`](chrono-operators.md#op_JTW) |  |
+| [`operator<=`](chrono-operators.md#op_JTW) |  |
+| [`operator>`](chrono-operators.md#op_JTW) |  |
+| [`operator>=`](chrono-operators.md#op_JTW) |  |
+| [`operator<=>`](chrono-operators.md#op_spaceship) | Compare this `duration` against another day. The `>, >=, <=, <, !=` operators are synthesized by the compiler. |
+| [`operator<<`](chrono-operators.md#op_left_shift) | Output a `duration` to the given stream. |
+
+## Convenience type aliases
+
+|Name|Description|
+|----------|-----------------|
+|`duration::period`|A synonym for the template parameter `Period`.|
+|`duration::rep` |A synonym for the template parameter `Rep`.|
 
 ## Requirements
 
@@ -308,3 +340,6 @@ The first member function reduces the stored tick count modulo Div and returns *
 [`<chrono>`](../standard-library/chrono.md)\
 [`duration_values` structure](../standard-library/duration-values-structure.md)\
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
+
+JTW - add links to typedefs for things like nanoseconds, minutes, hours, 
+JTW - add links for operator""h, ""min, ""s, etc.
