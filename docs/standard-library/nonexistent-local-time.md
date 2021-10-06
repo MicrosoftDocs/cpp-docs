@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: nonexistent_local_time class"
 title: "nonexistent_local_time class"
-ms.date: 09/30/2021
+ms.date: 10/05/2021
 f1_keywords: ["chrono/std::chrono::nonexistent_local_time", "chrono/std::chrono::nonexistent_local_time::what"]
 helpviewer_keywords: ["std::chrono [C++],  nonexistent_local_time"]
 ---
@@ -18,9 +18,9 @@ class nonexistent_local_time : public runtime_error; // c++ 20
 
 ## Remarks
 
-If a `local_time` specifies a time in a time zone during the hour standard time transitioned to daylight saving time, it can't be converted to a `sys_time`. That's because that hour doesn't exist as it is "removed" when the clock "springs forward" an hour for daylight saving time.
+During the transition from standard time to daylight saving time in the spring, clocks effectively lose an hour. This can be confusing because doesn't the transition to daylight saving time mean gaining an hour? By "springing forward" an hour, the hour following the transition is effectively removed. Consider the change to daylight saving time in New York, which happens on the second Sunday in March at 2am. At 2am, the clock transitions to daylight savings time and now reads 3:00am. If the `local_time` being converted is 2:30am, for example, that time is during the period that was "removed" when the clock advanced past it, and so is "nonexistent".
 
-The following example demonstrates a nonexistent time conversion. In this example, in 2016 daylight saving time started in New York at 2am. The time being converted is 2:30am. That falls during the hour standard time transitioned to daylight saving time, which hour was removed as the clock advanced an hour for daylight saving time.
+The following example demonstrates a nonexistent time conversion error. In this example, daylight saving time in New York starts at 2:00am. The time being converted is 2:30am. That's during the hour that is removed during the transition from standard time to daylight saving time. So, a `nonexistent_local_time` exception is thrown.
 
 ## Example: `nonexistent_local_time`
 
@@ -34,8 +34,8 @@ int main()
 {
     try
     {
-        // The following will throw an exception because the local time lands during the hour that is removed
-        // when the clock advances an hour for daylight saving time.
+        // The following will throw an exception because the local time being converted is during
+        // the hour that is "removed" when the clock advances an hour for daylight saving time.
         auto zt = zoned_time{"America/New_York", local_days{Sunday[2]/March/2016} + 2h + 30min};
     } catch (const nonexistent_local_time& e)
     {

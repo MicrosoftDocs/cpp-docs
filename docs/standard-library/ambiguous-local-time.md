@@ -8,7 +8,7 @@ helpviewer_keywords: ["std::chrono [C++],  ambiguous_local_time"]
 
 # `ambiguous_local_time` class
 
-The error thrown when attempting to convert a `local_time` to a `sys_time`, but the result is ambiguous and neither `choose::earliest` or `choose::latest` was specified to settle the ambiguity.
+The error thrown when attempting to convert a `local_time` to a `sys_time` and the result can be one of two times and neither `choose::earliest` or `choose::latest` was specified to settle the ambiguity.
 
 ## Syntax
 
@@ -18,15 +18,13 @@ class ambiguous_local_time : public runtime_error; // C++ 20
 
 ## Remarks
 
-If a `local_time` specifies a time within an hour of the transition between standard and daylight saving time, converting it to a `sys_time` results either in two potential times that the `local_time` could be converted to, or even to a time that doesn't exist in the destination time.
+When clocks transition between daylight saving time to standard time in the fall, they effectively get an extra hour. This can be confusing because doesn't the transition to standard time mean losing an hour? By falling back an hour, the hour before the transition will be repeated after the clock adjusts for standard time. Consider the change to standard time in New York, which happens on the first Sunday in November at 2:00am. The clock notes that 1:00am goes by. At 2am, the clock transitions to standard time. Now it's 1:00am again. That means the time between 1am and 2am will be "repeated" now that the clock has adjusted, effectively adding an hour.
 
-If the `local_time` specifies a time during the transition to daylight saving time, then the clock is "springing forward" an hour, which means that there’s an hour that doesn’t exist. If the `local_time` specifies a time during the transition to standard time, then the clock is "falling back", which means that there’s an extra hour being inserted.
+If a `local_time` specifies a time during this hour, it isn't clear how to convert it. Should the converted `sys_time` be treated as being in daylight saving or standard time? If the [`choose`](choose-enum.md) isn't specified to indicate which it should be, you'll get an `ambiguous_local_time` exception.
 
-In either case, if the `local_time` is during that transition, should it take on the value of the hour it is in or the adjusted time? If the [`choose`](choose-enum.md) isn't specified to indicate which it should be, you'll get either an `ambiguous_local_time`.
+Interestingly, this problem doesn't exist when converting from standard time to daylight saving time. In that case, a different problem can arise. See [`nonexistent_local_time`](nonexistent-local-time) for details.
 
-If there converted time doesn't have a time to assign to it in `sys_time` , you'll get a [`nonexistent_local_time`](nonexistent-local-time.md) exception. For details about how that could happen, see [`nonexistent_local_time`](nonexistent-local-time.md).
-
-The following example demonstrates an ambiguous conversion.
+The following example shows an ambiguous conversion.
 
 ## Example: `ambiguous_local_time`
 
@@ -40,10 +38,10 @@ int main()
 {
     try
     {
-        // The following will throw an exception because the converted time could be interpreted as either 
-        // 1:30 EDT or 1:30 EST. Because which one to choose isn't specified for the conversion, an ambiguous_local_time
+        // The following will throw an exception because converting 1:30am local time to system time could be interpreted as either 
+        // 1:30 AM EDT or 1:30 AM EST. Which to choose isn't specified for the conversion, so an ambiguous_local_time
         // exception is thrown.
-        auto zt = zoned_time{"America/New_York", local_days{Sunday[1]/November/2016} + 1h + 30min}; // 1:30am is just before the transition from daylight saving time to standard time when the clocks go backward an hour.
+        auto zt = zoned_time{"America/New_York", local_days{Sunday[1]/November/2016} + 1h + 30min};
     } catch (const ambiguous_local_time& e)
     {
         std::cout << e.what() << '\n';
