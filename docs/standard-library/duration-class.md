@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: duration Class"
 title: "duration Class"
-ms.date: 10/01/2021
+ms.date: 10/07/2021
 f1_keywords: ["chrono/std::chrono::duration", "chrono/std::chrono::duration::duration", "chrono/std::chrono::duration::count", "chrono/std::chrono::duration::max", "chrono/std::chrono::duration::min", "chrono/std::chrono::duration::zero"]
 helpviewer_keywords: ["std::chrono [C++], duration"]
 ---
@@ -20,7 +20,7 @@ template <class Rep, class Period1, class Period2> class duration <duration<Rep,
 
 ## Remarks
 
-The template argument `Rep` describes the type that is used to hold the number of clock ticks in the interval. The template argument `Period` is an instantiation of [ratio](../standard-library/ratio.md) that describes the size of the interval that each tick represents.
+The template argument `Rep` describes the type that is used to hold the number of clock ticks in the interval. The template argument `Period` is an instantiation of [ratio](ratio.md) that describes the size of the interval that each tick represents.
 
 ## Members
 
@@ -45,10 +45,10 @@ The template argument `Rep` describes the type that is used to hold the number o
 |----------|-----------------|
 |[`duration::operator-`](#operator-)|Returns a copy of the `duration` object with a negated tick count.|
 |[`duration::operator--`](#operator--)|Decrements the stored tick count.|
-|[`duration::operator-=`](#operator-=)|Subtracts the tick count of a specified `duration` object from the stored tick count.|
+|[`duration::operator-=`](#operator-=)|Subtracts the tick count of a specified `duration` from the stored tick count.|
 |[`duration::operator+`](#op_add)|Returns **`*this`**.|
 |[`duration::operator++`](#op_++)|Increments the stored tick count.|
-|[`duration::operator+=`](#op_+=)|Adds the tick count of a specified `duration` object to the stored tick count.|
+|[`duration::operator+=`](#op_+=)|Adds the tick count of a specified `duration` to the stored tick count.|
 |[`duration::operator%=`](#op_%)|Reduces the stored tick count modulo a specified value.|
 |[`duration::operator*=`](#op_star_eq)|Multiplies the stored tick count by a specified value.|
 |[`duration::operator/=`](#op_div_eq)|Divides the stored tick count by the tick count of a specified `duration` object.|
@@ -62,7 +62,7 @@ The template argument `Rep` describes the type that is used to hold the number o
 |----------|-----------------|
 |[`abs`](#chrono-functions.md#std-chrono-abs-duration) | Returns the absolute value of the `duration` |
 |[`ceil`](#chrono-functions.md#std-chrono-ceil-duration)|Returns the smallest representable `duration` that's greater than or equal to the specified `duration`.|
-|[`duration_cast`](#chrono-functions.md#std-chrono-duration-cast)|Casts a `duration` object to a specified target `duration` type.|
+|[`duration_cast`](#chrono-functions.md#std-chrono-duration-cast)|Casts a `duration` object to a specified target `duration` type|
 |[`floor`](chrono-functions.md#std-chrono-floor-duration)|Returns the greatest representable `duration` that's less than or equal to the specified `duration`| ** ALREADY DONE in chrono-functions
 |[`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `duration` from the given stream using the specified format. |
 |[`round`](chrono-functions.md#std-chrono-round-duration)|Rounds the specified `duration` to the nearest representable `duration` in the target type.|
@@ -75,14 +75,14 @@ The template argument `Rep` describes the type that is used to hold the number o
 | [`operator-`](chrono-operators.md#op_minus) |After converting the durations being subtracted to their common type, returns a `duration` with a tick count equal to the number of ticks in the RHS `duration` subtracted from the number of ticks in the LHS `duration` |
 | [`operator*`](chrono-operators.md#op_star) | After converting the durations being multiplied to their common type, returns a `duration` with a tick count equal to the multiplication of the converted tick counts |
 | [`operator/`](chrono-operators.md#op_div) | After converting the durations being divided to their common type, returns a `duration` with a tick count equal to the division of the converted tick counts |
-| [`operator%`](chrono-operators.md#op_modulo) |After converting the duration and the divisor to their common type, returns a `duration` with a tick count equal to the remainder of the division |
-| [`operator==`](chrono-operators.md#op_eq_eq) | After converting the durations being compared to their common type, determines if the number of ticks are equal |
-| [`operator!=`](chrono-operators.md#op_neq)  |Determine whether two durations aren't equal |
-| [`operator<`](chrono-operators.md#op_lt) |  |
-| [`operator<=`](chrono-operators.md#op_JTW) |  |
-| [`operator>`](chrono-operators.md#op_JTW) |  |
-| [`operator>=`](chrono-operators.md#op_JTW) |  |
-| [`operator<=>`](chrono-operators.md#op_spaceship) | Compare this `duration` against another day. The `>, >=, <=, <, !=` operators are synthesized by the compiler. |
+| [`operator%`](chrono-operators.md#op_modulo) |After converting the `duration` and the divisor to their common type, returns a `duration` with a tick count equal to the remainder of the division |
+| [`operator==`](chrono-operators.md#op_eq_eq) | After converting the `duration`s being compared to their common type, determines if the number of ticks are equal |
+| [`operator!=`](chrono-operators.md#op_neq)  |Determine if two durations aren't equal |
+| [`operator<`](chrono-operators.md#op_lt) | Determine if one `duration` is less than another |
+| [`operator<=`](chrono-operators.md#op_lt_eq) | Determine if one `duration` is less than or equal to another |
+| [`operator>`](chrono-operators.md#op_gt) |  Determine if one `duration` is greater than another |
+| [`operator>=`](chrono-operators.md#op_gt_eq) |  Determine if one `duration` is greater than or equal to another |
+| [`operator<=>`](chrono-operators.md#op_spaceship) | Compare this `duration` against another `duration`. The `>, >=, <=, <, !=` operators are synthesized by the compiler. |
 | [`operator<<`](chrono-operators.md#op_left_shift) | Output a `duration` to the given stream. |
 
 ## Convenience type aliases
@@ -146,11 +146,40 @@ The second, one template argument constructor constructs an object that represen
 
 The third, two template argument constructor constructs an object that represents a time interval whose length is the time interval that is specified by *`Dur`*. To avoid truncation of tick counts, it's an error to construct a duration object from another duration object whose type is *incommensurable* with the target type.
 
-A duration type `D1` is *incommensurable* with another duration type `D2` if `D2` cannot be treated as a floating-point type and [ratio_divide\<D1::period, D2::period>::type::den](../standard-library/ratio.md) isn't 1.
+A duration type `D1` is *incommensurable* with another duration type `D2` if `D2` cannot be treated as a floating-point type and [ratio_divide\<D1::period, D2::period>::type::den](ratio.md) isn't 1.
 
-Unless *`Rep2`* is implicitly convertible to `rep` and either `treat_as_floating_point<rep>`*holds true* or `treat_as_floating_point<Rep2>`*holds false*, the second constructor doesn't participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
+Unless *`Rep2`* is implicitly convertible to `rep` and either `treat_as_floating_point<rep>`*holds true* or `treat_as_floating_point<Rep2>`*holds false*, the second constructor doesn't participate in overload resolution. For more information, see [<type_traits>](type-traits.md).
 
-Unless no overflow is induced in the conversion and `treat_as_floating_point<rep>`*holds true*,  or both `ratio_divide<Period2, period>::den` equals 1 and `treat_as_floating_point<Rep2>`*holds false*, the third constructor doesn't participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
+Unless no overflow is induced in the conversion and `treat_as_floating_point<rep>`*holds true*,  or both `ratio_divide<Period2, period>::den` equals 1 and `treat_as_floating_point<Rep2>`*holds false*, the third constructor doesn't participate in overload resolution. For more information, see [<type_traits>](type-traits.md).
+
+## Example: Create a `duration`
+
+```cpp
+// compile using: /std:c++latest
+#include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
+
+int main()
+{
+    // a duration that tracks ticks as 1/10ths of a second
+    duration<int, std::ratio<1, 10>> tenths{ 5 };
+    std::cout << tenths << '\n';
+
+    hours h{12}; // hours is a convenience duration typedef 
+    auto h2 = 3h; // 'h' is a convenience operator. h2 is a duration<int, std::ratio<3600,1>>
+
+    std::cout << h << ":" << h2 << '\n';
+
+    return 0;
+}
+```
+
+```output
+5ds
+3h:3h
+```
 
 ## <a name="max"></a> `duration::max`
 
@@ -337,9 +366,8 @@ The LHS `duration` object.
 
 ## See also
 
-[`<chrono>`](../standard-library/chrono.md)\
-[`duration_values` structure](../standard-library/duration-values-structure.md)\
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)
-
-JTW - add links to typedefs for things like nanoseconds, minutes, hours, 
-JTW - add links for operator""h, ""min, ""s, etc.
+[`<chrono>`](chrono.md)\
+[Convenience `duration` typedefs like `minutes`, `seconds`, and more](chrono.md#typedefs)\
+[Convenience literals for hours, minutes, and more](chrono.md#literals)\
+[`duration_values` structure](duration-values-structure.md)\
+[Header Files Reference](cpp-standard-library-header-files.md)

@@ -170,6 +170,30 @@ You don't need to use `duration_cast` to convert between `duration` types when t
 
 `duration_cast` doesn't participate in overload resolution unless `ToDuration` is an instance of [`duration`](../standard-library/duration-class.md). It does all conversions by using **`static_cast`** instead of implicit conversions. Multiplications and divisions are avoided if possible. For example, when the compiler knows that the common ratio of the target and source periods has a numerator or denominator of 1. Computations are done in the widest type available, then converted as if by **`static_cast`** to the result type when finished.
 
+### Example `duration_cast`
+
+```cpp
+// compile using: /std:c++latest
+#include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
+
+int main()
+{
+    seconds s(1);
+    std::cout << duration_cast<microseconds>(s) << '\n';
+    std::cout << duration_cast<nanoseconds>(s) << '\n';
+
+    return 0;
+}
+```
+
+```output
+1000000us
+1000000000ns
+```
+
 ## <a name="std-chrono-floor-duration"></a> `floor(duration)`
 
 Returns the greatest representable `duration` in the target type that's less than or equal to the specified `duration`.

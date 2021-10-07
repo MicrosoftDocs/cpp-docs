@@ -499,9 +499,9 @@ Unless `is_convertible<Rep1, common_type<Rep1, Rep2>>`*holds `true`*, the second
 
 ## <a name="op_lt"></a> `operator<`
 
-1) After converting the `duration`s being compared to their common type, determines if the number of ticks for `Left` is fewer than for `Right`.
+1\) After converting the `duration`s being compared to their common type, determines if the number of ticks for `Left` is fewer than for `Right`.
 
-2) Determines if the point in time since the epoch of the `Left`[`time_point`](../standard-library/time-point-class.md) is less than the time since the epoch of the `time_point` in `Right`.
+2\) Determines if the point in time since the epoch of the `Left`[`time_point`](../standard-library/time-point-class.md) is less than the time since the epoch of the `time_point` in `Right`.
 
 ```cpp
 1)
@@ -527,20 +527,24 @@ The right `duration` or `time_point` object.
 
 ### Return value
 
-1) After converting the durations being compared to their common type, returns **`true`** if number of ticks for *`Left`* is less than the number of ticks for *`Right`*. Otherwise, the function returns **`false`**.
+1) Returns **`true`** if number of ticks for *`Left`* is less than the number of ticks for *`Right`*. Otherwise, the function returns **`false`**.
 
 2) Returns **`true`** if *`Left`* precedes *`Right`*. Otherwise, returns **`false`**.
 
 ## <a name="op_lt_eq"></a> `operator<=`
 
-Determines whether one [`duration`](../standard-library/duration-class.md) or [`time_point`](../standard-library/time-point-class.md) object is less than or equal to another `duration` or `time_point` object.
+1\) After converting the `duration`s being compared to their common type, determines if the number of ticks for `Left` is fewer or the same as `Right`.
+
+2\) Determines if the point in time since the epoch of the `Left`[`time_point`](../standard-library/time-point-class.md) is less than or equal to the time since the epoch of the `time_point` in `Right`.
 
 ```cpp
+1)
 template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator<=(
     const duration<Rep1, Period1>& Left,
     const duration<Rep2, Period2>& Right);
 
+2)
 template <class Clock, class Duration1, class Duration2>
 constexpr bool operator<=(
     const time_point<Clock, Duration1>& Left,
@@ -557,7 +561,9 @@ The right `duration` or `time_point` object.
 
 ### Return value
 
-Each function returns `!(Right < Left)`.
+1\) Returns **`true`** if number of ticks for *`Left`* is less than or equal to the number of ticks for *`Right`*. Otherwise, the function returns **`false`**.
+
+2\) Returns **`true`** if *`Left`* precedes, or is equal to, *`Right`*. Otherwise, returns **`false`**.
 
 ## <a name="op_eq_eq"></a> `operator==`
 
@@ -667,14 +673,18 @@ The right object to compare.
 
 ## <a name="op_gt"></a> `operator>`
 
-Determines whether one [`duration`](../standard-library/duration-class.md) or [`time_point`](../standard-library/time-point-class.md) object is greater than another `duration` or `time_point` object.
+1\) After converting the `duration`s being compared to their common type, determines if the number of ticks for `Left` is greater than for `Right`.
+
+2\) Determines if the point in time since the epoch of the `Left`[`time_point`](../standard-library/time-point-class.md) is greater than the time since the epoch of the `time_point` in `Right`.
 
 ```cpp
+1) 
 template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator>(
     const duration<Rep1, Period1>& Left,
     const duration<Rep2, Period2>& Right);
 
+2)
 template <class Clock, class Duration1, class Duration2>
 constexpr bool operator>(
     const time_point<Clock, Duration1>& Left,
@@ -691,18 +701,24 @@ The right `duration` or `time_point` object.
 
 ### Return value
 
-Each function returns `Right < Left`.
+1) Returns **`true`** if number of ticks for *`Left`* is greater than the number of ticks for *`Right`*. Otherwise, the function returns **`false`**.
+
+2) Returns **`true`** if *`Left`* comes after *`Right`*. Otherwise, returns **`false`**.
 
 ## <a name="op_gt_eq"></a> `operator>=`
 
-Determines whether one [`duration`](../standard-library/duration-class.md) or [`time_point`](../standard-library/time-point-class.md) object is greater than or equal to another `duration` or `time_point` object.
+1\) After converting the `duration`s being compared to their common type, determines if the number of ticks for `Left` is greater than or equal to `Right`.
+
+2\) Determines if the point in time since the epoch of the `Left`[`time_point`](../standard-library/time-point-class.md) is greater than or equal to the time since the epoch of the `time_point` in `Right`.
 
 ```cpp
+1)
 template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator>=(
     const duration<Rep1, Period1>& Left,
     const duration<Rep2, Period2>& Right);
 
+2)
 template <class Clock, class Duration1, class Duration2>
 constexpr bool operator>=(
     const time_point<Clock, Duration1>& Left,
@@ -719,7 +735,9 @@ The right `duration` or `time_point` object.
 
 ### Return value
 
-Each function returns `!(Left < Right)`.
+1\) Returns **`true`** if number of ticks for *`Left`* is greater than or equal to the number of ticks for *`Right`*. Otherwise, the function returns **`false`**.
+
+2\) Returns **`true`** if *`Left`* comes after, or is equal to, *`Right`*. Otherwise, returns **`false`**.
 
 ## <a name="op_spaceship"></a> `operator<=>`
 
@@ -737,7 +755,7 @@ The spaceship operator, with `operator==`, synthesizes operators for `<`, `<=`, 
 - [`year_month_day_last`](year-month-day-last-class.md)
 
 ```cpp
-// 1)
+1)
 constexpr bool operator<=>(const day& Left, const day& Right) noexcept; // C++ 20
 
 constexpr std::strong_ordering operator<=>(const month& Left, const month& Right) noexcept; // C++ 20
@@ -755,13 +773,13 @@ template<class Rep1, class Period1, class Rep2, class Period2>
   requires three_­way_­comparable<typename CT::rep>
     constexpr auto operator<=>(const duration<Rep1, Period1>& Left, const duration<Rep2, Period2>& Right);
 
-// 2)
+2)
 constexpr strong_ordering operator<=>(const month_day_last& Left, const month_day_last& Right) noexcept;
 
-// 3)
+3)
 constexpr strong_ordering operator<=>(const year_month_day_last& Left, const year_month_day_last& Right) noexcept;
 
-//4)
+4)
 strong_ordering operator<=>(const time_zone_link& Left, const time_zone_link& Right) noexcept;
 ```
 
@@ -1173,7 +1191,7 @@ The right `duration` object.
 Division operator for [`duration`](../standard-library/chrono-operators.md#op_star) objects.
 
 ```cpp
-// 1)
+1)
 template <class Rep1, class Period1, class Rep2>
 constexpr duration<typename common_type<Rep1, Rep2>::type, Period1>
    operator/(
