@@ -1,9 +1,8 @@
 ---
 description: "Learn more about: Using Insertion Operators and Controlling Format"
 title: "Using Insertion Operators and Controlling Format"
-ms.date: "11/04/2016"
+ms.date: 10/07/2021
 helpviewer_keywords: ["insertion operators"]
-ms.assetid: cdefe986-6548-4cd1-8a67-b431d7d36a1c
 ---
 # Using Insertion Operators and Controlling Format
 
@@ -81,7 +80,7 @@ using namespace std;
 int main( )
 {
    double values[] = { 1.23, 35.36, 653.7, 4358.24 };
-   char *names[] = { "Zoot", "Jimmy", "Al", "Stan" };
+   const char *names[] = { "Zoot", "Jimmy", "Al", "Stan" };
    for( int i = 0; i < 4; i++ )
       cout << setw( 7 )  << names[i]
            << setw( 10 ) << values[i] << endl;
