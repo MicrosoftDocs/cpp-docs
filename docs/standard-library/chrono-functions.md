@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: <chrono> functions"
 title: "<chrono> functions"
-ms.date: 10/01/2021
+ms.date: 10/06/2021
 f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast", "chrono/std::chrono::duration_cast", "chrono/std::chrono::time_point_cast", "chrono/std::chrono::from_stream", "chrono/std::chrono::abs", "chrono/std::chrono::floor", "chrono/std::chrono::ceil", "chrono/std::chrono::round", "chrono/std::chrono::is_am", "chrono/std::chrono::is_pm", "chrono/std::chrono::make12", "chrono/std::chrono::make24", "chrono/std::chrono::get_leap_second_info", "chrono/std::chrono::get_tzdb", "chrono/std::chrono::get_tzdb_list", "chrono/std::chrono::locate_zone", "chrono/std::chrono::current_zone", "chrono/std::chrono::reload_tzdb", "chrono/std::chrono::remote_version"]
 helpviewer_keywords: ["std::duration_cast function", "std::time_point_cast function", "std::chrono::duration_cast function", "std::chrono::time_point_cast function", "std::chrono::from_stream function", "std::chrono::floor function", "std::chrono::ceil function", "std::chrono::round function", "std::chrono::is_am function", "std::chrono::is_pm function", "std::chrono::make12 function", "std::chrono::make24 function", "std::chrono::get_leap_second_info function", "std::chrono::get_tzdb function", "std::chrono::get_tzdb_list function", "std::chrono::locate_zone function", "std::chrono::current_zone function", "std::chrono::reload_tzdb function", "std::chrono::remote_version function"]
 ---
@@ -11,7 +11,6 @@ helpviewer_keywords: ["std::duration_cast function", "std::time_point_cast funct
 ## <a name="std-chrono-abs-duration"></a> `abs(duration)`
 
 Returns `d` if `d >= d.zero()`; otherwise returns `-d`.
-
 
 ### Syntax
 
@@ -33,11 +32,25 @@ The source `duration` object.
 
 ### Return value
 
-TBD
+The absolute value of `d`.
 
-### Remarks
+### Example: `abs(duration)`
 
-TBD
+```cpp
+// compile using: /std:c++latest
+#include <chrono>
+#include <iostream>
+
+int main()
+{
+    std::cout << abs(-24h);
+    return 0;
+}
+```
+
+```output
+24h
+```
 
 ## <a name="std-chrono-ceil-duration"></a> `ceil(duration)`
 

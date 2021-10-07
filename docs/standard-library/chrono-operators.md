@@ -23,7 +23,7 @@ Addition operator for the following types:
 - [`year_month_weekday_last`](year-month-weekday-last-class.md)
 
 ```cpp
-1)
+1) 
 template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr typename common_type<duration<Rep1, Period1>, duration<Rep2, Period2>>::type
    operator+(
@@ -103,7 +103,7 @@ constexpr year_month_weekday_last operator+(const years& dy, const year_month_we
 
 ### Return value
 
-1\) Returns a `duration` object that has a time interval that is equal to the sum of the intervals of *`Left`* and *`Right`*.
+1\) After converting *`Left`* and *`Right`* to their common type, returns a `duration` with a tick count equal to the sum of the converted tick counts.
 
 2-3\) Return a `time_point` object that represents a point in time that is displaced by the interval *`Dur`* from the point in time *`Time`*.
 
@@ -287,7 +287,7 @@ constexpr year_month_weekday_last operator-(const year_month_weekday_last& ymwdl
 
 ### Return value
 
-1\) Returns a `duration` whose interval length is the difference between *`Left`* and *`Right`*.
+1\) After converting the durations being subtracted to their common type, returns a `duration` with a tick count equal to the number of ticks in *`Right`* subtracted from the number of ticks in *`Left`*.
 
 2\) Returns a `time_point` that represents a point in time that is displaced by the negation of the time interval that is represented by *`Dur`*, from the point in time that is specified by *`Time`*.
 
@@ -428,14 +428,19 @@ int main()
 
 ## <a name="op_neq"></a> `operator!=`
 
-Inequality operator for [`duration`](duration-class.md) or [`time_point`](time-point-class.md) objects.
+Determines whether:
+
+1\) Two [`duration`](duration-class.md) objects don't represent the same number of ticks.\
+2\) Two [`time_point`](time-point-class.md) objects don't represent the same point in time.\
 
 ```cpp
+1)
 template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator!=(
     const duration<Rep1, Period1>& Left,
     const duration<Rep2, Period2>& Right);
 
+2)
 template <class Clock, class Duration1, class Duration2>
 constexpr bool operator!=(
     const time_point<Clock, Duration1>& Left,
@@ -452,19 +457,22 @@ The right `duration` or `time_point` object.
 
 ### Return value
 
-Each function returns `!(Left == Right)`.
+1) Returns **`true`** if the number of ticks for the type common to *`Left`* and *`Right`* aren't equal. Otherwise, returns **`false`**.\
+2) Returns **`true`**  if the two [`time_point`](time-point-class.md) objects don't represent the same point in time. Otherwise, returns **`false`**.\
 
 ## <a name="op_star"></a> `operator*`
 
-Multiplication operator for [`duration`](../standard-library/chrono-operators.md#op_star) objects.
+Multiplication operator for [`duration`](../standard-library/chrono-operators.md#op_star) objects. After converting the `duration`s being multiplied to their common type, returns a `duration` with a tick count equal to the multiplication of the converted tick counts.
 
 ```cpp
+1)
 template <class Rep1, class Period1, class Rep2>
 constexpr duration<typename common_type<Rep1, Rep2>::type, Period1>
    operator*(
       const duration<Rep1, Period1>& Dur,
       const Rep2& Mult);
 
+2)
 template <class Rep1, class Rep2, class Period2>
 constexpr duration<typename common_type<Rep1, Rep2>::type, Period2>
    operator*(
@@ -485,20 +493,24 @@ An integral value.
 
 Each function returns a `duration` object whose interval length is *`Mult`* multiplied by the length of *`Dur`*.
 
-Unless `is_convertible<Rep2, common_type<Rep1, Rep2>>`*holds true*, the first function doesn't participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
+Unless `is_convertible<Rep2, common_type<Rep1, Rep2>>`*holds `true`*, the first function doesn't participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
 
-Unless `is_convertible<Rep1, common_type<Rep1, Rep2>>`*holds true*, the second function doesn't participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
+Unless `is_convertible<Rep1, common_type<Rep1, Rep2>>`*holds `true`*, the second function doesn't participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
 
 ## <a name="op_lt"></a> `operator<`
 
-Determines whether one [`duration`](../standard-library/duration-class.md) or [`time_point`](../standard-library/time-point-class.md) object is less than another `duration` or `time_point` object.
+1) After converting the `duration`s being compared to their common type, determines if the number of ticks for `Left` is fewer than for `Right`.
+
+2) Determines if the point in time since the epoch of the `Left`[`time_point`](../standard-library/time-point-class.md) is less than the time since the epoch of the `time_point` in `Right`.
 
 ```cpp
+1)
 template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr bool operator<(
     const duration<Rep1, Period1>& Left,
     const duration<Rep2, Period2>& Right);
 
+2)
 template <class Clock, class Duration1, class Duration2>
 constexpr bool operator<(
     const time_point<Clock, Duration1>& Left,
@@ -515,9 +527,9 @@ The right `duration` or `time_point` object.
 
 ### Return value
 
-The first function returns **`true`** if the interval length of *`Left`* is less than the interval length of *`Right`*. Otherwise, the function returns **`false`**.
+1) After converting the durations being compared to their common type, returns **`true`** if number of ticks for *`Left`* is less than the number of ticks for *`Right`*. Otherwise, the function returns **`false`**.
 
-The second function returns **`true`** if *`Left`* precedes *`Right`*. Otherwise, the function returns **`false`**.
+2) Returns **`true`** if *`Left`* precedes *`Right`*. Otherwise, returns **`false`**.
 
 ## <a name="op_lt_eq"></a> `operator<=`
 
@@ -647,7 +659,7 @@ The right object to compare.
 
 ### Return value
 
-1\) Returns **`true`** if *`Left`* and *`Right`* represent time intervals that have the same length. Otherwise, returns **`false`**.\
+1\) Returns **`true`** if the number of ticks for the type common to *`Left`* and *`Right`* are equal. Otherwise, returns **`false`**.\
 2\) Returns **`true`** if *`Left`* and *`Right`* represent the same point in time. Otherwise, returns **`false`**.\
 3-17\) Returns **`true`** if *`Left`* and *`Right`* have the same value. Otherwise, returns **`false`**.\
 18\) Returns **`true`** if `Left.name() == Right.name()`. Otherwise, returns `*false*`.\
@@ -1118,15 +1130,17 @@ int main()
 
 ## <a name="op_modulo"></a> `operator modulo`
 
-Operator for modulo operations on [`duration`](../standard-library/duration-class.md) objects.
+Operator for modulo operations on [`duration`](../standard-library/duration-class.md).
 
 ```cpp
+1)
 template <class Rep1, class Period1, class Rep2>
 constexpr duration<Rep1, Period1, Rep2>::type
    operator%(
       const duration<Rep1, Period1>& Dur,
       const Rep2& Div);
 
+2)
 template <class Rep1, class Period1, class Rep2, class Period2>
 constexpr typename common_type<duration<Rep1, _Period1>, duration<Rep2, Period2>>::type
    operator%(
@@ -1150,9 +1164,9 @@ The right `duration` object.
 
 ### Return value
 
-The first function returns a `duration` object whose interval length is *`Dur`* modulo *`Div`*.
+1) Returns a `duration` object whose interval length is *`Dur`* modulo *`Div`*.
 
-The second function returns a value that represents *`Left`* modulo *`Right`*.
+2) Returns a value that represents *`Left`* modulo *`Right`*.
 
 ## <a name="op_div"></a> `operator/` for `duration`
 

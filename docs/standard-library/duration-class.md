@@ -43,41 +43,42 @@ The template argument `Rep` describes the type that is used to hold the number o
 
 |Name|Description|
 |----------|-----------------|
-|[`duration::operator-`](#operator-)|Returns a copy of the `duration` object together with a negated tick count.|
-|[`duration::operator--`](#operator--)|Decrements the stored tick count.| JTW - need the (int) version
-|[`duration::operator=`](#op_eq)|Reduces the stored tick count modulo a specified value.|
+|[`duration::operator-`](#operator-)|Returns a copy of the `duration` object with a negated tick count.|
+|[`duration::operator--`](#operator--)|Decrements the stored tick count.|
+|[`duration::operator-=`](#operator-=)|Subtracts the tick count of a specified `duration` object from the stored tick count.|
+|[`duration::operator+`](#op_add)|Returns **`*this`**.|
+|[`duration::operator++`](#op_++)|Increments the stored tick count.|
+|[`duration::operator+=`](#op_+=)|Adds the tick count of a specified `duration` object to the stored tick count.|
+|[`duration::operator%=`](#op_%)|Reduces the stored tick count modulo a specified value.|
 |[`duration::operator*=`](#op_star_eq)|Multiplies the stored tick count by a specified value.|
 |[`duration::operator/=`](#op_div_eq)|Divides the stored tick count by the tick count of a specified `duration` object.|
-|[`duration::operator+`](#op_add)|Returns **`*this`**.|
-|[`duration::operator++`](#op_add_add)|Increments the stored tick count.| JTW - need the (int) version
-|[`duration::operator+=`](#op_add_eq)|Adds the tick count of a specified `duration` object to the stored tick count.|
-|[`duration::operator-=`](#operator-_eq)|Subtracts the tick count of a specified `duration` object from the stored tick count.|
-|[`duration::operator%=`](#operator-_JTW)||
+|[`duration::operator=`](#op_=)|Assigns one duration to another.|
 
 ## Non-members
 
-### Functions JTW
+### Function templates
 
 |Name|Description|
 |----------|-----------------|
-|[`abs`](#zero)|Static. | ** NOT DONE in chrono-functions
-|[`ceil`](#max)|Static. Returns the | ** ALREADY DONE in chrono-functions
-|[`floor`](#count)|Static. Returns the | ** ALREADY DONE in chrono-functions
+|[`abs`](#chrono-functions.md#std-chrono-abs-duration) | Returns the absolute value of the `duration` |
+|[`ceil`](#chrono-functions.md#std-chrono-ceil-duration)|Returns the smallest representable `duration` that's greater than or equal to the specified `duration`.|
+|[`duration_cast`](#chrono-functions.md#std-chrono-duration-cast)|Casts a `duration` object to a specified target `duration` type.|
+|[`floor`](chrono-functions.md#std-chrono-floor-duration)|Returns the greatest representable `duration` that's less than or equal to the specified `duration`| ** ALREADY DONE in chrono-functions
 |[`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `duration` from the given stream using the specified format. |
-|[`round`](#min)|Static. Returns the .| ** ALREADY DONE in chrono-functions
+|[`round`](chrono-functions.md#std-chrono-round-duration)|Rounds the specified `duration` to the nearest representable `duration` in the target type.|
 
-### Operators JTW ** may be done in chrono-operators. link if so
+### Operators
 
 | Name | Description |
 |--|--|
-| [`operator+`](chrono-operators.md#op_add) | Add specified number of days to this `day`, returning a new `day` object. |
-| [`operator-`](chrono-operators.md#op_minus) | Subtract the specified number of days from this `day`, returning a new `day` object. |
-| [`operator*`](chrono-operators.md#op_JTW) |  |
-| [`operator/`](chrono-operators.md#op_JTW) |  |
-| [`operator%`](chrono-operators.md#op_JTW) |  |
-| [`operator==`](chrono-operators.md#op_eq_eq) | Determine whether two days are equal. |
-| [`operator!=`](chrono-operators.md#op_JTW) |  |
-| [`operator<`](chrono-operators.md#op_JTW) |  |
+| [`operator+`](chrono-operators.md#op_add) | After converting the durations being added to their common type, returns a `duration` with a tick count equal to the sum of the converted tick counts. |
+| [`operator-`](chrono-operators.md#op_minus) |After converting the durations being subtracted to their common type, returns a `duration` with a tick count equal to the number of ticks in the RHS `duration` subtracted from the number of ticks in the LHS `duration` |
+| [`operator*`](chrono-operators.md#op_star) | After converting the durations being multiplied to their common type, returns a `duration` with a tick count equal to the multiplication of the converted tick counts |
+| [`operator/`](chrono-operators.md#op_div) | After converting the durations being divided to their common type, returns a `duration` with a tick count equal to the division of the converted tick counts |
+| [`operator%`](chrono-operators.md#op_modulo) |After converting the duration and the divisor to their common type, returns a `duration` with a tick count equal to the remainder of the division |
+| [`operator==`](chrono-operators.md#op_eq_eq) | After converting the durations being compared to their common type, determines if the number of ticks are equal |
+| [`operator!=`](chrono-operators.md#op_neq)  |Determine whether two durations aren't equal |
+| [`operator<`](chrono-operators.md#op_lt) |  |
 | [`operator<=`](chrono-operators.md#op_JTW) |  |
 | [`operator>`](chrono-operators.md#op_JTW) |  |
 | [`operator>=`](chrono-operators.md#op_JTW) |  |
@@ -88,8 +89,8 @@ The template argument `Rep` describes the type that is used to hold the number o
 
 |Name|Description|
 |----------|-----------------|
-|`duration::period`|A synonym for the template parameter `Period`.|
-|`duration::rep` |A synonym for the template parameter `Rep`.|
+|`duration::period`|A synonym for the template parameter `Period`|
+|`duration::rep` |A synonym for the template parameter `Rep`|
 
 ## Requirements
 
@@ -199,20 +200,20 @@ The first method returns **`*this`**.
 
 The second method returns a copy of **`*this`** that is made before the decrement.
 
-## <a name="op_eq"></a> `duration::operator=`
+## <a name="op_%="></a> `duration::operator%=`
 
-Reduces the stored tick count modulo a specified value.
+Reduces the stored tick count modulo the specified value.
 
 ```cpp
-duration& operator%=(const rep& Div);
-
-duration& operator%=(const duration& Div);
+1) duration& operator%=(const rep& Div);
+2) duration& operator%=(const duration& Div);
 ```
 
 ### Parameters
 
 *`Div`*\
-For the first method, *`Div`* represents a tick count. For the second method, *`Div`* is a `duration` object that contains a tick count.
+1) *`Div`* a tick count.
+2) *`Div`* a `duration` that contains a tick count.
 
 ### Return Value
 
@@ -260,7 +261,7 @@ Returns **`*this`**.
 constexpr duration operator+() const;
 ```
 
-## <a name="op_add_add"></a> `duration::operator++`
+## <a name="op_++"></a> `duration::operator++`
 
 Increments the stored tick count.
 
@@ -275,7 +276,7 @@ The first method returns **`*this`**.
 
 The second method returns a copy of **`*this`** that is made before the increment.
 
-## <a name="op_add_eq"></a> `duration::operator+=`
+## <a name="op_+="></a> `duration::operator+=`
 
 Adds the tick count of a specified `duration` object to the stored tick count.
 
@@ -292,7 +293,7 @@ A `duration` object.
 
 The `duration` object after the addition is done.
 
-## <a name="operator-_eq"></a> `duration::operator-=`
+## <a name="operator-="></a> `duration::operator-=`
 
 Subtracts the tick count of a specified `duration` object from the stored tick count.
 
@@ -317,23 +318,22 @@ Returns `duration(duration_values<rep>::zero())`.
 static constexpr duration zero();
 ```
 
-## <a name="op_mod_eq"></a> `duration::operator mod=`
+## <a name="op_="></a> `duration::operator=`
 
-Reduces the stored tick count modulo `Div` or `Div.count()`.
+Assigns one duration to another.
 
 ```cpp
-duration& operator%=(const rep& Div);
-duration& operator%=(const duration& Div);
+duration& operator=(const duration &other) = default;
 ```
 
 ### Parameters
 
-*`Div`*\
-The divisor, which is either a duration object or a value that represents tick counts.
+*`other`*\
+The `duration` object to copy.
 
-### Remarks
+### Return Value
 
-The first member function reduces the stored tick count modulo Div and returns *this. The second member function reduces the stored tick count modulo Div.count() and returns `*this`.
+The LHS `duration` object.
 
 ## See also
 
