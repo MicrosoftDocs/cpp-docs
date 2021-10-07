@@ -87,7 +87,7 @@ int main( )
 }
 ```
 
-The `width` member function is declared in `<iostream>`. If you use `setw` or any other manipulator with arguments, you must include `<iomanip>`. In the output, strings are printed in a field of width 6 and integers in a field of width 10:
+The `width` member function is declared in `<iostream>`. If you use `setw` or any other manipulator with arguments, you must include `<iomanip>`. In the output, strings print in a field of width 6 and integers in a field of width 10:
 
 ```Output
    Zoot      1.23
@@ -96,7 +96,7 @@ The `width` member function is declared in `<iostream>`. If you use `setw` or an
    Stan   4358.24
 ```
 
-Neither `setw` nor `width` truncates values. If formatted output exceeds the width, the entire value prints, subject to the stream's precision setting. Both `setw` and `width` affect the following field only. Field width reverts to its default behavior (the necessary width) after one field has been printed. However, the other stream format options remain in effect until changed.
+`setw` and `width` don't truncate values. If formatted output exceeds the width, the entire value prints, subject to the stream's precision setting. Both `setw` and `width` affect the following field only. Field width reverts to its default behavior (the necessary width) after one field has been printed. However, the other stream format options remain in effect until changed.
 
 ## <a name="vclrfalignmentanchor4"></a> Alignment
 
@@ -176,11 +176,11 @@ Again, the program prints one digit after the decimal point. If either `ios::fix
 
 ## <a name="vclrfradixanchor6"></a> Radix
 
-The `dec`, `oct`, and `hex` manipulators set the default radix for input and output. For example, if you insert the `hex` manipulator into the output stream, the object correctly translates the internal data representation of integers into a hexadecimal output format. The numbers are displayed with digits a through f in lower case if the [`uppercase`](../standard-library/ios-functions.md#uppercase) flag is clear (the default); otherwise, they are displayed in upper case. The default radix is `dec` (decimal).
+The `dec`, `oct`, and `hex` manipulators set the default radix for input and output. For example, if you insert the `hex` manipulator into the output stream, the object correctly translates the internal data representation of integers into a hexadecimal output format. The numbers are displayed with digits a through f in lower case if the [`uppercase`](../standard-library/ios-functions.md#uppercase) flag is clear (the default); otherwise, they're displayed in upper case. The default radix is `dec` (decimal).
 
 ## Quoted strings (C++14)
 
-When you insert a string into a stream, you can easily retrieve the same string back by calling the `stringstream::str()` member function. However, if you want to use the extraction operator to insert the stream into a new string at a later point, you may get an unexpected result because the `>>` operator by default will stop when it encounters the first whitespace character.
+When you insert a string into a stream, you can easily retrieve the same string back by calling the `stringstream::str()` member function. However, if you want to use the extraction operator to insert the stream into a new string at a later point, you may get an unexpected result because the `>>` operator by default will stop when it finds the first whitespace character.
 
 ```cpp
 std::stringstream ss;
@@ -194,11 +194,11 @@ std::cout << inserted;     //  This is a sentence.
 std::cout << extracted;    //  This
 ```
 
-This behavior can be overcome manually, but to make string round-tripping more convenient, C++14 adds the `std::quoted` stream manipulator in `<iomanip>`. Upon insertion, `quoted()` surrounds the string with a delimiter (double quote ' " ' by default) and upon extraction manipulates the stream to extract all characters until the final delimiter is encountered. Any embedded quotes are escaped with an escape character ('\\\\' by default).
+This behavior can be overcome manually, but to make string round-tripping more convenient, C++14 adds the `std::quoted` stream manipulator in `<iomanip>`. Upon insertion, `quoted()` surrounds the string with a delimiter (double quote ' " ' by default) and upon extraction manipulates the stream to extract all characters until the final delimiter is found. Any embedded quotes are escaped with an escape character ('\\\\' by default).
 
-The delimiters are present only in the stream object; they are not present in the extracted string but they are present in the string returned by [`basic_stringstream::str`](../standard-library/basic-stringstream-class.md#str).
+The delimiters are present only in the stream object; they aren't present in the extracted string but they're present in the string returned by [`basic_stringstream::str`](../standard-library/basic-stringstream-class.md#str).
 
-The whitespace behavior of the insertion and extraction operations is independent of how a string is represented in code, so the quoted operator is useful regardless of whether the input string is a raw string literal or a regular string. The input string, whatever its format, can have embedded quotes, line breaks, tabs, and so on and all these will be preserved by the `quoted()` manipulator.
+The whitespace behavior of the insertion and extraction operations is independent of how a string is represented in code, so the quoted operator is useful regardless of whether the input string is a raw string literal or a regular string. The input string, whatever its format, can have embedded quotes, line breaks, tabs, and so on, and all these will be preserved by the `quoted()` manipulator.
 
 For more information and full code examples, see [`quoted`](../standard-library/iomanip-functions.md#quoted).
 
