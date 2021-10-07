@@ -23,12 +23,11 @@ C# and Visual Basic support the concept of nullable value types. In C++/CX, you 
 In a C# XAML client, you can consume it like this:
 
 ```
-
 // C# client code
-    BoxingDemo.Class1 obj = new BoxingDemo.Class1();
-    int? a = null;
-    int? b = 5;
-    var result = obj.Multiply(a,b); //result = null
+BoxingDemo.Class1 obj = new BoxingDemo.Class1();
+int? a = null;
+int? b = 5;
+var result = obj.Multiply(a, b); //result = null
 ```
 
 ## See also

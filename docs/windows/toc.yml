@@ -18,7 +18,7 @@
   href: ../text/text-and-strings-in-visual-cpp.md
 - name: Resources for creating a game Using DirectX
   href: ../windows/resources-for-creating-a-game-using-directx.md
-- name: "How to: Use the Windows 10 SDK in a Windows Desktop application"
+- name: "How to: Use the Windows SDK in a Windows Desktop application"
   href: ../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md
 - name: Work with resource files
   expanded: false
