@@ -49,7 +49,7 @@ The template argument `Rep` describes the type that is used to hold the number o
 |[`duration::operator+`](#op_add)|Returns **`*this`**.|
 |[`duration::operator++`](#op_++)|Increments the stored tick count.|
 |[`duration::operator+=`](#op_+=)|Adds the tick count of a specified `duration` to the stored tick count.|
-|[`duration::operator%=`](#op_%)|Reduces the stored tick count modulo a specified value.|
+|[`duration::operator%=`](#op_%=)|Reduces the stored tick count modulo a specified value.|
 |[`duration::operator*=`](#op_star_eq)|Multiplies the stored tick count by a specified value.|
 |[`duration::operator/=`](#op_div_eq)|Divides the stored tick count by the tick count of a specified `duration` object.|
 |[`duration::operator=`](#op_=)|Assigns one duration to another.|
@@ -60,9 +60,9 @@ The template argument `Rep` describes the type that is used to hold the number o
 
 |Name|Description|
 |----------|-----------------|
-|[`abs`](#chrono-functions.md#std-chrono-abs-duration) | Returns the absolute value of the `duration` |
-|[`ceil`](#chrono-functions.md#std-chrono-ceil-duration)|Returns the smallest representable `duration` that's greater than or equal to the specified `duration`.|
-|[`duration_cast`](#chrono-functions.md#std-chrono-duration-cast)|Casts a `duration` object to a specified target `duration` type|
+|[`abs`](chrono-functions.md#std-chrono-abs-duration) | Returns the absolute value of the `duration` |
+|[`ceil`](chrono-functions.md#std-chrono-ceil-duration)|Returns the smallest representable `duration` that's greater than or equal to the specified `duration`.|
+|[`duration_cast`](chrono-functions.md#std-chrono-duration-cast)|Casts a `duration` object to a specified target `duration` type|
 |[`floor`](chrono-functions.md#std-chrono-floor-duration)|Returns the greatest representable `duration` that's less than or equal to the specified `duration`| ** ALREADY DONE in chrono-functions
 |[`from_stream`](chrono-functions.md#std-chrono-from-stream) | Parse a `duration` from the given stream using the specified format. |
 |[`round`](chrono-functions.md#std-chrono-round-duration)|Rounds the specified `duration` to the nearest representable `duration` in the target type.|
