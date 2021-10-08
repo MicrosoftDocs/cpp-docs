@@ -26,7 +26,7 @@ The OS-specific versions of these functions are in `ucrt.osmode.lib`. For exampl
 There are two ways to isolate your component's CRT state from an app's CRT state:
 
 - Statically link your component by using compiler options `/MT` (release) or `/MTd` (debug). For details, see [/MD, /MT, /LD](../build/reference/md-mt-ld-use-run-time-library.md). Static linking can greatly increase binary size.
-- Starting with Windows 10 version 2004, dynamically link to the CRT but call the OS-mode exports (the functions that begin with _o_). To call the OS-mode exports, statically link as before, but ignore the static UCRT by using linker option `/NODEFAULTLIB:libucrt.lib` (release) or `/NODEFAULTLIB:libucrtd.lib` (debug). And add `ucrt.osmode.lib` to the linker input. See [/NODEFAULTLIB (Ignore Libraries)](../build/reference/nodefaultlib-ignore-libraries.md) for details.
+- Starting in Windows versions beginning with Windows 10 version 2004, dynamically link to the CRT but call the OS-mode exports (the functions that begin with _o_). To call the OS-mode exports, statically link as before, but ignore the static UCRT by using linker option `/NODEFAULTLIB:libucrt.lib` (release) or `/NODEFAULTLIB:libucrtd.lib` (debug). And add `ucrt.osmode.lib` to the linker input. See [/NODEFAULTLIB (Ignore Libraries)](../build/reference/nodefaultlib-ignore-libraries.md) for details.
 
 > [!Note]
 > In source code,  write `setlocale()`, not `_o_setlocale()`. When you link against `ucrt.osmode.lib`, the linker will automatically substitute the OS-specific version of the function. That is, `setlocale()` will be substituted with `_o_setlocale()`.

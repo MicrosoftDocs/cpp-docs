@@ -1,12 +1,56 @@
 ---
-description: "Learn more about: &lt;chrono&gt; functions"
-title: "&lt;chrono&gt; functions"
-ms.date: "08/13/2021"
-f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast", "chrono/std::chrono::duration_cast", "chrono/std::chrono::time_point_cast", "chrono/std::chrono::from_stream", "chrono/std::chrono::floor", "chrono/std::chrono::ceil", "chrono/std::chrono::round", "chrono/std::chrono::is_am", "chrono/std::chrono::is_pm", "chrono/std::chrono::make12", "chrono/std::chrono::make24", "chrono/std::chrono::get_leap_second_info", "chrono/std::chrono::get_tzdb", "chrono/std::chrono::get_tzdb_list", "chrono/std::chrono::locate_zone", "chrono/std::chrono::current_zone", "chrono/std::chrono::reload_tzdb", "chrono/std::chrono::remote_version"]
+description: "Learn more about: <chrono> functions"
+title: "<chrono> functions"
+ms.date: 10/06/2021
+f1_keywords: ["chrono/std::duration_cast", "chrono/std::time_point_cast", "chrono/std::chrono::duration_cast", "chrono/std::chrono::time_point_cast", "chrono/std::chrono::from_stream", "chrono/std::chrono::abs", "chrono/std::chrono::floor", "chrono/std::chrono::ceil", "chrono/std::chrono::round", "chrono/std::chrono::is_am", "chrono/std::chrono::is_pm", "chrono/std::chrono::make12", "chrono/std::chrono::make24", "chrono/std::chrono::get_leap_second_info", "chrono/std::chrono::get_tzdb", "chrono/std::chrono::get_tzdb_list", "chrono/std::chrono::locate_zone", "chrono/std::chrono::current_zone", "chrono/std::chrono::reload_tzdb", "chrono/std::chrono::remote_version"]
 helpviewer_keywords: ["std::duration_cast function", "std::time_point_cast function", "std::chrono::duration_cast function", "std::chrono::time_point_cast function", "std::chrono::from_stream function", "std::chrono::floor function", "std::chrono::ceil function", "std::chrono::round function", "std::chrono::is_am function", "std::chrono::is_pm function", "std::chrono::make12 function", "std::chrono::make24 function", "std::chrono::get_leap_second_info function", "std::chrono::get_tzdb function", "std::chrono::get_tzdb_list function", "std::chrono::locate_zone function", "std::chrono::current_zone function", "std::chrono::reload_tzdb function", "std::chrono::remote_version function"]
 ---
 
 # `<chrono>` functions
+
+## <a name="std-chrono-abs-duration"></a> `abs(duration)`
+
+Returns `d` if `d >= d.zero()`; otherwise returns `-d`.
+
+### Syntax
+
+```cpp
+template <class Rep, class Period>
+constexpr duration<Rep, Period> abs(duration<Rep, Period> d ); // C++17
+```
+
+### Parameters
+
+*`Rep`*\
+The type of the internal representation of the source `duration` *`d`*.
+
+*`Period`*\
+A [`std::ratio`](./ratio.md) type representing the ratio of one second to the source `Rep` type (that is, seconds per `Rep`).
+
+*`d`*\
+The source `duration` object.
+
+### Return value
+
+The absolute value of `d`.
+
+### Example: `abs(duration)`
+
+```cpp
+// compile using: /std:c++latest
+#include <chrono>
+#include <iostream>
+
+int main()
+{
+    std::cout << abs(-24h);
+    return 0;
+}
+```
+
+```output
+24h
+```
 
 ## <a name="std-chrono-ceil-duration"></a> `ceil(duration)`
 
@@ -92,7 +136,7 @@ Returns a pointer to a [`time_zone`](./time-zone-class.md) as if by a call to `g
 
 ## <a name="std-chrono-duration-cast"></a> `duration_cast`
 
-Casts a [`duration`](../standard-library/duration-class.md) object to a specified target `duration` type.
+Casts a [`duration`](../standard-library/duration-class.md) to the specified target `duration` type.
 
 ### Syntax
 
@@ -125,6 +169,30 @@ An object of type `ToDuration` that represents the `duration` *`d`*. It's trunca
 You don't need to use `duration_cast` to convert between `duration` types when the source period is exactly divisible by the target period, such as when you convert minutes to seconds. Also, you don't need it to convert between floating-point `duration` types. You can do both conversions by using ordinary casts or the  [`duration`](../standard-library/duration-class.md) constructors.
 
 `duration_cast` doesn't participate in overload resolution unless `ToDuration` is an instance of [`duration`](../standard-library/duration-class.md). It does all conversions by using **`static_cast`** instead of implicit conversions. Multiplications and divisions are avoided if possible. For example, when the compiler knows that the common ratio of the target and source periods has a numerator or denominator of 1. Computations are done in the widest type available, then converted as if by **`static_cast`** to the result type when finished.
+
+### Example `duration_cast`
+
+```cpp
+// compile using: /std:c++latest
+#include <iostream>
+#include <chrono>
+
+using namespace std::chrono;
+
+int main()
+{
+    seconds s(1);
+    std::cout << duration_cast<microseconds>(s) << '\n';
+    std::cout << duration_cast<nanoseconds>(s) << '\n';
+
+    return 0;
+}
+```
+
+```output
+1000000us
+1000000000ns
+```
 
 ## <a name="std-chrono-floor-duration"></a> `floor(duration)`
 

@@ -19,7 +19,7 @@ In this tutorial, you'll learn how to use *vcperf.exe* to collect a trace of you
 
 WPA is a trace viewer available in the Windows Assessment and Deployment Kit (ADK). It's a separate utility that's not part of the components you can install with the Visual Studio installer.
 
-A version of WPA that supports C++ Build Insights is currently only available in the Windows ADK Insider Preview. To access this preview, you must sign up for the [Windows Insider program](https://insider.windows.com). You don't need to install the Windows 10 Insider Preview operating system to obtain the Windows ADK preview. You only need to register your Microsoft account with the Windows Insider Program.
+A version of WPA that supports C++ Build Insights is currently only available in the most recent versions of the Windows ADK, 10.1.19041.0 or later.
 
 ### To download and install WPA
 
